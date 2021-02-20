@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Unique identifier._
   * @see https://docs.scriptable.app/uuid
   */
-@JSGlobal("UUID")
-@js.native
-object UUID extends js.Object {
+object UUID {
   
   /**
     * _Generate a UUID._
@@ -18,5 +17,7 @@ object UUID extends js.Object {
     * Used for getting the string value of a newly generated UUID.
     * @see https://docs.scriptable.app/uuid/#string
     */
+  @JSGlobal("UUID.string")
+  @js.native
   def string(): String = js.native
 }

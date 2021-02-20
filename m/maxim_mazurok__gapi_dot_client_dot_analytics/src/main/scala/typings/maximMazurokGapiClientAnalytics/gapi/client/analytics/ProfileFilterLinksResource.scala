@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientAnalytics.anon.KeyLinkId
 import typings.maximMazurokGapiClientAnalytics.anon.KeyMaxresults
 import typings.maximMazurokGapiClientAnalytics.anon.LinkIdOauthtoken
 import typings.maximMazurokGapiClientAnalytics.anon.PrettyPrintProfileId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProfileFilterLinksResource extends js.Object {
+trait ProfileFilterLinksResource extends StObject {
   
   /** Delete a profile filter link. */
   def delete(): Request[Unit] = js.native

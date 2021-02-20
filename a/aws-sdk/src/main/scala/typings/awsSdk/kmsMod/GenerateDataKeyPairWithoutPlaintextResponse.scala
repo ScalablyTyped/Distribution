@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateDataKeyPairWithoutPlaintextResponse extends js.Object {
+trait GenerateDataKeyPairWithoutPlaintextResponse extends StObject {
   
   /**
     * The Amazon Resource Name (key ARN) of the CMK that encrypted the private key.
@@ -36,42 +37,30 @@ object GenerateDataKeyPairWithoutPlaintextResponse {
   }
   
   @scala.inline
-  implicit class GenerateDataKeyPairWithoutPlaintextResponseOps[Self <: GenerateDataKeyPairWithoutPlaintextResponse] (val x: Self) extends AnyVal {
+  implicit class GenerateDataKeyPairWithoutPlaintextResponseMutableBuilder[Self <: GenerateDataKeyPairWithoutPlaintextResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPairSpec(value: DataKeyPairSpec): Self = StObject.set(x, "KeyPairSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setKeyPairSpecUndefined: Self = StObject.set(x, "KeyPairSpec", js.undefined)
     
     @scala.inline
-    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    def setPrivateKeyCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "PrivateKeyCiphertextBlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPairSpec(value: DataKeyPairSpec): Self = this.set("KeyPairSpec", value.asInstanceOf[js.Any])
+    def setPrivateKeyCiphertextBlobUndefined: Self = StObject.set(x, "PrivateKeyCiphertextBlob", js.undefined)
     
     @scala.inline
-    def deleteKeyPairSpec: Self = this.set("KeyPairSpec", js.undefined)
+    def setPublicKey(value: PublicKeyType): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKeyCiphertextBlob(value: CiphertextType): Self = this.set("PrivateKeyCiphertextBlob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateKeyCiphertextBlob: Self = this.set("PrivateKeyCiphertextBlob", js.undefined)
-    
-    @scala.inline
-    def setPublicKey(value: PublicKeyType): Self = this.set("PublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKey: Self = this.set("PublicKey", js.undefined)
+    def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
   }
 }

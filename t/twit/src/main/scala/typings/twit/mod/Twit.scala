@@ -1,11 +1,12 @@
 package typings.twit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Twit extends js.Object {
+trait Twit extends StObject {
   
   def get(path: String): js.Promise[PromiseResponse] = js.native
   /**

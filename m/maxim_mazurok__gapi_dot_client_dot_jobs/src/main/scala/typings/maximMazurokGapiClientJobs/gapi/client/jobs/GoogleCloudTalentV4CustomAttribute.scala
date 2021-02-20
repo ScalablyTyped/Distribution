@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudTalentV4CustomAttribute extends js.Object {
+trait GoogleCloudTalentV4CustomAttribute extends StObject {
   
   /**
     * If the `filterable` flag is true, the custom field values may be used for custom attribute filters JobQuery.custom_attribute_filter. If false, these values may not be used for
@@ -38,48 +39,36 @@ object GoogleCloudTalentV4CustomAttribute {
   }
   
   @scala.inline
-  implicit class GoogleCloudTalentV4CustomAttributeOps[Self <: GoogleCloudTalentV4CustomAttribute] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudTalentV4CustomAttributeMutableBuilder[Self <: GoogleCloudTalentV4CustomAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeywordSearchable(value: Boolean): Self = StObject.set(x, "keywordSearchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterable(value: Boolean): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    def setKeywordSearchableUndefined: Self = StObject.set(x, "keywordSearchable", js.undefined)
     
     @scala.inline
-    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    def setLongValues(value: js.Array[String]): Self = StObject.set(x, "longValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywordSearchable(value: Boolean): Self = this.set("keywordSearchable", value.asInstanceOf[js.Any])
+    def setLongValuesUndefined: Self = StObject.set(x, "longValues", js.undefined)
     
     @scala.inline
-    def deleteKeywordSearchable: Self = this.set("keywordSearchable", js.undefined)
+    def setLongValuesVarargs(value: String*): Self = StObject.set(x, "longValues", js.Array(value :_*))
     
     @scala.inline
-    def setLongValuesVarargs(value: String*): Self = this.set("longValues", js.Array(value :_*))
+    def setStringValues(value: js.Array[String]): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongValues(value: js.Array[String]): Self = this.set("longValues", value.asInstanceOf[js.Any])
+    def setStringValuesUndefined: Self = StObject.set(x, "stringValues", js.undefined)
     
     @scala.inline
-    def deleteLongValues: Self = this.set("longValues", js.undefined)
-    
-    @scala.inline
-    def setStringValuesVarargs(value: String*): Self = this.set("stringValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setStringValues(value: js.Array[String]): Self = this.set("stringValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValues: Self = this.set("stringValues", js.undefined)
+    def setStringValuesVarargs(value: String*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
   }
 }

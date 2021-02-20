@@ -1,11 +1,12 @@
 package typings.awsSdk.lakeformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableWithColumnsResource extends js.Object {
+trait TableWithColumnsResource extends StObject {
   
   /**
     * The identifier for the Data Catalog. By default, it is the account ID of the caller.
@@ -41,45 +42,33 @@ object TableWithColumnsResource {
   }
   
   @scala.inline
-  implicit class TableWithColumnsResourceOps[Self <: TableWithColumnsResource] (val x: Self) extends AnyVal {
+  implicit class TableWithColumnsResourceMutableBuilder[Self <: TableWithColumnsResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnNames(value: ColumnNames): Self = StObject.set(x, "ColumnNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: NameString): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setColumnNamesUndefined: Self = StObject.set(x, "ColumnNames", js.undefined)
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ColumnNames", js.Array(value :_*))
     
     @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    def setColumnWildcard(value: ColumnWildcard): Self = StObject.set(x, "ColumnWildcard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+    def setColumnWildcardUndefined: Self = StObject.set(x, "ColumnWildcard", js.undefined)
     
     @scala.inline
-    def setColumnNamesVarargs(value: NameString*): Self = this.set("ColumnNames", js.Array(value :_*))
+    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnNames(value: ColumnNames): Self = this.set("ColumnNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnNames: Self = this.set("ColumnNames", js.undefined)
-    
-    @scala.inline
-    def setColumnWildcard(value: ColumnWildcard): Self = this.set("ColumnWildcard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnWildcard: Self = this.set("ColumnWildcard", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

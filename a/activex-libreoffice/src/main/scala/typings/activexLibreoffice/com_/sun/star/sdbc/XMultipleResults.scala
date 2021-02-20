@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,36 +91,24 @@ object XMultipleResults {
   }
   
   @scala.inline
-  implicit class XMultipleResultsOps[Self <: XMultipleResults] (val x: Self) extends AnyVal {
+  implicit class XMultipleResultsMutableBuilder[Self <: XMultipleResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMoreResults(value: () => Boolean): Self = StObject.set(x, "getMoreResults", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetResultSet(value: () => XResultSet): Self = StObject.set(x, "getResultSet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetUpdateCount(value: () => Double): Self = StObject.set(x, "getUpdateCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMoreResults(value: Boolean): Self = this.set("MoreResults", value.asInstanceOf[js.Any])
+    def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSet(value: XResultSet): Self = this.set("ResultSet", value.asInstanceOf[js.Any])
+    def setResultSet(value: XResultSet): Self = StObject.set(x, "ResultSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateCount(value: Double): Self = this.set("UpdateCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetMoreResults(value: () => Boolean): Self = this.set("getMoreResults", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetResultSet(value: () => XResultSet): Self = this.set("getResultSet", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUpdateCount(value: () => Double): Self = this.set("getUpdateCount", js.Any.fromFunction0(value))
+    def setUpdateCount(value: Double): Self = StObject.set(x, "UpdateCount", value.asInstanceOf[js.Any])
   }
 }

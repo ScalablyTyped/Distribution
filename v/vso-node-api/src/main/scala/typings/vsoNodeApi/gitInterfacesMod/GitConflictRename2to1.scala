@@ -2,6 +2,7 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,39 +54,27 @@ object GitConflictRename2to1 {
   }
   
   @scala.inline
-  implicit class GitConflictRename2to1Ops[Self <: GitConflictRename2to1] (val x: Self) extends AnyVal {
+  implicit class GitConflictRename2to1MutableBuilder[Self <: GitConflictRename2to1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResolution(value: GitResolutionPathConflict): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceNewBlob(value: GitBlobRef): Self = StObject.set(x, "sourceNewBlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceOriginalBlob(value: GitBlobRef): Self = StObject.set(x, "sourceOriginalBlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: GitResolutionPathConflict): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    def setSourceOriginalPath(value: String): Self = StObject.set(x, "sourceOriginalPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceNewBlob(value: GitBlobRef): Self = this.set("sourceNewBlob", value.asInstanceOf[js.Any])
+    def setTargetNewBlob(value: GitBlobRef): Self = StObject.set(x, "targetNewBlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceOriginalBlob(value: GitBlobRef): Self = this.set("sourceOriginalBlob", value.asInstanceOf[js.Any])
+    def setTargetOriginalBlob(value: GitBlobRef): Self = StObject.set(x, "targetOriginalBlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceOriginalPath(value: String): Self = this.set("sourceOriginalPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetNewBlob(value: GitBlobRef): Self = this.set("targetNewBlob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetOriginalBlob(value: GitBlobRef): Self = this.set("targetOriginalBlob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetOriginalPath(value: String): Self = this.set("targetOriginalPath", value.asInstanceOf[js.Any])
+    def setTargetOriginalPath(value: String): Self = StObject.set(x, "targetOriginalPath", value.asInstanceOf[js.Any])
   }
 }

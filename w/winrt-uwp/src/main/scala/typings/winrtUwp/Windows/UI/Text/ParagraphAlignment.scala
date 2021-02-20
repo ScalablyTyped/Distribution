@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParagraphAlignment extends js.Object
+sealed trait ParagraphAlignment extends StObject
 /** Specifies values for aligning paragraphs. */
 @JSGlobal("Windows.UI.Text.ParagraphAlignment")
 @js.native
-object ParagraphAlignment extends js.Object {
+object ParagraphAlignment extends StObject {
   
   /** Text is centered between the margins. */
   @js.native

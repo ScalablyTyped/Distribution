@@ -1,13 +1,14 @@
 package typings.nodal.mod
 
 import typings.nodal.anon.TypeofModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "RelationshipNode")
 @js.native
-class RelationshipNode protected () extends js.Object {
+class RelationshipNode protected () extends StObject {
   def this(Graph: RelationshipGraph, mModel: TypeofModel) = this()
   
   var Graph: RelationshipGraph = js.native

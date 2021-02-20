@@ -5,6 +5,7 @@ import typings.kendoUi.JQueryPromise
 import typings.kendoUi.kendo.data.DataSource
 import typings.kendoUi.kendo.drawing.PDFOptions
 import typings.kendoUi.kendo.ui.Widget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

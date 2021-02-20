@@ -3,16 +3,15 @@ package typings.canvasRenderer
 import org.scalablytyped.runtime.StringDictionary
 import typings.canvasRenderer.canvasContextMod.CanvasContext
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("canvas-renderer/types/canvas", JSImport.Namespace)
-@js.native
-object canvasMod extends js.Object {
+object canvasMod {
   
   @js.native
-  trait Canvas extends js.Object {
+  trait Canvas extends StObject {
     
     /**
       * Specifies the background color. Default is fully transparent. Allowed values are:

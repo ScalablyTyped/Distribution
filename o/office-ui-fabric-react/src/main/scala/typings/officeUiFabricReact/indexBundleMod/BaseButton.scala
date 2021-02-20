@@ -2,6 +2,7 @@ package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.anon.PartialIBaseButtonProps
 import typings.officeUiFabricReact.baseButtonMod.IBaseButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,15 @@ class BaseButton protected ()
   def this(props: IBaseButtonProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "BaseButton")
-@js.native
-object BaseButton extends js.Object {
+object BaseButton {
   
-  var defaultProps: PartialIBaseButtonProps = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseButton")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseButton.defaultProps")
+  @js.native
+  def defaultProps: PartialIBaseButtonProps = js.native
+  @scala.inline
+  def defaultProps_=(x: PartialIBaseButtonProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

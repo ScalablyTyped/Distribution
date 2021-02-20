@@ -1,13 +1,14 @@
 package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "Mark")
 @js.native
-class Mark[S /* <: Schema[_, _] */] () extends js.Object {
+class Mark[S /* <: Schema[_, _] */] () extends StObject {
   
   /**
     * Given a set of marks, create a new set which contains this one as
@@ -51,27 +52,43 @@ class Mark[S /* <: Schema[_, _] */] () extends js.Object {
   var `type`: MarkType[S] = js.native
 }
 /* static members */
-@JSImport("prosemirror-model", "Mark")
-@js.native
-object Mark extends js.Object {
+object Mark {
   
+  @JSImport("prosemirror-model", "Mark")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("prosemirror-model", "Mark.fromJSON")
+  @js.native
   def fromJSON[S /* <: Schema[_, _] */](schema: S, json: StringDictionary[js.Any]): Mark[S] = js.native
   
   /**
     * The empty set of marks.
     */
-  var none: js.Array[Mark[_]] = js.native
+  @JSImport("prosemirror-model", "Mark.none")
+  @js.native
+  def none: js.Array[Mark[js.Any]] = js.native
+  @scala.inline
+  def none_=(x: js.Array[Mark[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
   
   /**
     * Test whether two sets of marks are identical.
     */
+  @JSImport("prosemirror-model", "Mark.sameSet")
+  @js.native
   def sameSet[S /* <: Schema[_, _] */](a: js.Array[Mark[S]], b: js.Array[Mark[S]]): Boolean = js.native
   
   /**
     * Create a properly sorted mark set from null, a single mark, or an
     * unsorted array of marks.
     */
+  @JSImport("prosemirror-model", "Mark.setFrom")
+  @js.native
   def setFrom[S /* <: Schema[_, _] */](): js.Array[Mark[S]] = js.native
+  @JSImport("prosemirror-model", "Mark.setFrom")
+  @js.native
   def setFrom[S /* <: Schema[_, _] */](marks: js.Array[Mark[S]]): js.Array[Mark[S]] = js.native
+  @JSImport("prosemirror-model", "Mark.setFrom")
+  @js.native
   def setFrom[S /* <: Schema[_, _] */](marks: Mark[S]): js.Array[Mark[S]] = js.native
 }

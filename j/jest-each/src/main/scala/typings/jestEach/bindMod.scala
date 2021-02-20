@@ -6,14 +6,15 @@ import typings.jestTypes.globalMod.EachTable
 import typings.jestTypes.globalMod.EachTestFn
 import typings.jestTypes.globalMod.TemplateData
 import typings.jestTypes.globalMod.TestCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-each/build/bind", JSImport.Namespace)
-@js.native
-object bindMod extends js.Object {
+object bindMod {
   
+  @JSImport("jest-each/build/bind", JSImport.Default)
+  @js.native
   def default[EachCallback /* <: TestCallback */](cb: GlobalCallback): js.Function2[
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
@@ -24,6 +25,8 @@ object bindMod extends js.Object {
       Unit
     ]
   ] = js.native
+  @JSImport("jest-each/build/bind", JSImport.Default)
+  @js.native
   def default[EachCallback /* <: TestCallback */](cb: GlobalCallback, supportsDone: Boolean): js.Function2[
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 

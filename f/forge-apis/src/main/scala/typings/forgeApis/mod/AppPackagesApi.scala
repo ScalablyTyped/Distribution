@@ -1,12 +1,13 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "AppPackagesApi")
 @js.native
-class AppPackagesApi () extends js.Object {
+class AppPackagesApi () extends StObject {
   
   /**
     * Creates an AppPackage module.

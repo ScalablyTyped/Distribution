@@ -3,13 +3,14 @@ package typings.highcharts.mod
 import typings.std.MouseEvent
 import typings.std.PointerEvent
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Pointer")
 @js.native
-class Pointer protected () extends js.Object {
+class Pointer protected () extends StObject {
   /**
     * The mouse and touch tracker object. Each Chart item has one assosiated
     * Pointer item that can be accessed from the Chart.pointer property.

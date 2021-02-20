@@ -13,13 +13,12 @@ import typings.makerJs.MakerJs.ISimplifyOptions
 import typings.makerJs.MakerJs.IWalkOptions
 import typings.makerJs.MakerJs.IWalkPathBooleanCallback
 import typings.makerJs.MakerJs.measure.Atlas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MakerJs.model")
-@js.native
-object model extends js.Object {
+object model {
   
   /**
     * Break a model's paths everywhere they intersect with another path.
@@ -27,7 +26,11 @@ object model extends js.Object {
     * @param modelToBreak The model containing paths to be broken.
     * @param modelToIntersect Optional model containing paths to look for intersection, or else the modelToBreak will be used.
     */
+  @JSGlobal("MakerJs.model.breakPathsAtIntersections")
+  @js.native
   def breakPathsAtIntersections(modelToBreak: IModel): Unit = js.native
+  @JSGlobal("MakerJs.model.breakPathsAtIntersections")
+  @js.native
   def breakPathsAtIntersections(modelToBreak: IModel, modelToIntersect: IModel): Unit = js.native
   
   /**
@@ -35,6 +38,8 @@ object model extends js.Object {
     *
     * @param modelToCenter The model to center.
     */
+  @JSGlobal("MakerJs.model.center")
+  @js.native
   def center(modelToCenter: IModel): IModel = js.native
   
   /**
@@ -49,7 +54,11 @@ object model extends js.Object {
     * @param keepDuplicates Flag to include paths which are duplicate in both models.
     * @param farPoint Optional point of reference which is outside the bounds of both models.
     */
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(modelA: IModel, modelB: IModel): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -59,6 +68,8 @@ object model extends js.Object {
     includeBOutsideA: js.UndefOr[scala.Nothing],
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -67,6 +78,8 @@ object model extends js.Object {
     includeBInsideA: js.UndefOr[scala.Nothing],
     includeBOutsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -76,6 +89,8 @@ object model extends js.Object {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -83,6 +98,8 @@ object model extends js.Object {
     includeAOutsideB: js.UndefOr[scala.Nothing],
     includeBInsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -92,6 +109,8 @@ object model extends js.Object {
     includeBOutsideA: js.UndefOr[scala.Nothing],
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -100,6 +119,8 @@ object model extends js.Object {
     includeBInsideA: Boolean,
     includeBOutsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -109,12 +130,16 @@ object model extends js.Object {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: js.UndefOr[scala.Nothing],
     includeAOutsideB: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -124,6 +149,8 @@ object model extends js.Object {
     includeBOutsideA: js.UndefOr[scala.Nothing],
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -132,6 +159,8 @@ object model extends js.Object {
     includeBInsideA: js.UndefOr[scala.Nothing],
     includeBOutsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -141,6 +170,8 @@ object model extends js.Object {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -148,6 +179,8 @@ object model extends js.Object {
     includeAOutsideB: Boolean,
     includeBInsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -157,6 +190,8 @@ object model extends js.Object {
     includeBOutsideA: js.UndefOr[scala.Nothing],
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -165,6 +200,8 @@ object model extends js.Object {
     includeBInsideA: Boolean,
     includeBOutsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -174,7 +211,11 @@ object model extends js.Object {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -184,6 +225,8 @@ object model extends js.Object {
     includeBOutsideA: js.UndefOr[scala.Nothing],
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -192,6 +235,8 @@ object model extends js.Object {
     includeBInsideA: js.UndefOr[scala.Nothing],
     includeBOutsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -201,6 +246,8 @@ object model extends js.Object {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -208,6 +255,8 @@ object model extends js.Object {
     includeAOutsideB: js.UndefOr[scala.Nothing],
     includeBInsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -217,6 +266,8 @@ object model extends js.Object {
     includeBOutsideA: js.UndefOr[scala.Nothing],
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -225,6 +276,8 @@ object model extends js.Object {
     includeBInsideA: Boolean,
     includeBOutsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -234,7 +287,11 @@ object model extends js.Object {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean, includeAOutsideB: Boolean): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -244,6 +301,8 @@ object model extends js.Object {
     includeBOutsideA: js.UndefOr[scala.Nothing],
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -252,6 +311,8 @@ object model extends js.Object {
     includeBInsideA: js.UndefOr[scala.Nothing],
     includeBOutsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -261,6 +322,8 @@ object model extends js.Object {
     includeBOutsideA: Boolean,
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -268,6 +331,8 @@ object model extends js.Object {
     includeAOutsideB: Boolean,
     includeBInsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -277,6 +342,8 @@ object model extends js.Object {
     includeBOutsideA: js.UndefOr[scala.Nothing],
     options: ICombineOptions
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -285,6 +352,8 @@ object model extends js.Object {
     includeBInsideA: Boolean,
     includeBOutsideA: Boolean
   ): Unit = js.native
+  @JSGlobal("MakerJs.model.combine")
+  @js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -301,6 +370,8 @@ object model extends js.Object {
     * @param modelA First model to combine.
     * @param modelB Second model to combine.
     */
+  @JSGlobal("MakerJs.model.combineIntersection")
+  @js.native
   def combineIntersection(modelA: IModel, modelB: IModel): Unit = js.native
   
   /**
@@ -309,6 +380,8 @@ object model extends js.Object {
     * @param modelA First model to combine.
     * @param modelB Second model to combine.
     */
+  @JSGlobal("MakerJs.model.combineSubtraction")
+  @js.native
   def combineSubtraction(modelA: IModel, modelB: IModel): Unit = js.native
   
   /**
@@ -317,6 +390,8 @@ object model extends js.Object {
     * @param modelA First model to combine.
     * @param modelB Second model to combine.
     */
+  @JSGlobal("MakerJs.model.combineUnion")
+  @js.native
   def combineUnion(modelA: IModel, modelB: IModel): Unit = js.native
   
   /**
@@ -326,6 +401,8 @@ object model extends js.Object {
     * @param destUnitType The unit system.
     * @returns The scaled model (for cascading).
     */
+  @JSGlobal("MakerJs.model.convertUnits")
+  @js.native
   def convertUnits(modeltoConvert: IModel, destUnitType: String): IModel = js.native
   
   /**
@@ -334,6 +411,8 @@ object model extends js.Object {
     * @param modelContext The model containing other models.
     * @returns Number of child models.
     */
+  @JSGlobal("MakerJs.model.countChildModels")
+  @js.native
   def countChildModels(modelContext: IModel): Double = js.native
   
   /**
@@ -341,6 +420,8 @@ object model extends js.Object {
     *
     * @param loopToDetach The model to search for loops.
     */
+  @JSGlobal("MakerJs.model.detachLoop")
+  @js.native
   def detachLoop(loopToDetach: IModel): Unit = js.native
   
   /**
@@ -351,14 +432,22 @@ object model extends js.Object {
     * @param joints Number of points at a joint between paths. Use 0 for round joints, 1 for pointed joints, 2 for beveled joints.
     * @returns Model which surrounds the paths of the original model.
     */
+  @JSGlobal("MakerJs.model.expandPaths")
+  @js.native
   def expandPaths(modelToExpand: IModel, distance: Double): IModel = js.native
+  @JSGlobal("MakerJs.model.expandPaths")
+  @js.native
   def expandPaths(
     modelToExpand: IModel,
     distance: Double,
     joints: js.UndefOr[scala.Nothing],
     combineOptions: ICombineOptions
   ): IModel = js.native
+  @JSGlobal("MakerJs.model.expandPaths")
+  @js.native
   def expandPaths(modelToExpand: IModel, distance: Double, joints: Double): IModel = js.native
+  @JSGlobal("MakerJs.model.expandPaths")
+  @js.native
   def expandPaths(modelToExpand: IModel, distance: Double, joints: Double, combineOptions: ICombineOptions): IModel = js.native
   
   /**
@@ -367,7 +456,11 @@ object model extends js.Object {
     * @param modelContext The model to search for chains.
     * @param options Optional options object.
     */
+  @JSGlobal("MakerJs.model.findChains")
+  @js.native
   def findChains(modelContext: IModel, callback: IChainCallback): Unit = js.native
+  @JSGlobal("MakerJs.model.findChains")
+  @js.native
   def findChains(modelContext: IModel, callback: IChainCallback, options: IFindChainsOptions): Unit = js.native
   
   /**
@@ -377,7 +470,11 @@ object model extends js.Object {
     * @param options Optional options object.
     * @returns A new model with child models ranked according to their containment within other found loops. The paths of models will be IPathDirectionalWithPrimeContext.
     */
+  @JSGlobal("MakerJs.model.findLoops")
+  @js.native
   def findLoops(modelContext: IModel): IModel = js.native
+  @JSGlobal("MakerJs.model.findLoops")
+  @js.native
   def findLoops(modelContext: IModel, options: IFindLoopsOptions): IModel = js.native
   
   /**
@@ -386,6 +483,8 @@ object model extends js.Object {
     * @param modelContext The model to search for a chain.
     * @returns A chain object or null if chains were not found.
     */
+  @JSGlobal("MakerJs.model.findSingleChain")
+  @js.native
   def findSingleChain(modelContext: IModel): IChain = js.native
   
   /**
@@ -394,6 +493,8 @@ object model extends js.Object {
     * @param modelContext The model containing the models map.
     * @param modelId The id to use directly (if unused), or as a prefix.
     */
+  @JSGlobal("MakerJs.model.getSimilarModelId")
+  @js.native
   def getSimilarModelId(modelContext: IModel, modelId: String): String = js.native
   
   /**
@@ -402,6 +503,8 @@ object model extends js.Object {
     * @param modelContext The model containing the paths map.
     * @param pathId The id to use directly (if unused), or as a prefix.
     */
+  @JSGlobal("MakerJs.model.getSimilarPathId")
+  @js.native
   def getSimilarPathId(modelContext: IModel, pathId: String): String = js.native
   
   /**
@@ -412,7 +515,11 @@ object model extends js.Object {
     * @param farPoint Optional point of reference which is outside the bounds of the modelContext.
     * @returns Boolean true if the path is inside of the modelContext.
     */
+  @JSGlobal("MakerJs.model.isPathInsideModel")
+  @js.native
   def isPathInsideModel(pathContext: IPath, modelContext: IModel): Boolean = js.native
+  @JSGlobal("MakerJs.model.isPathInsideModel")
+  @js.native
   def isPathInsideModel(
     pathContext: IPath,
     modelContext: IModel,
@@ -420,7 +527,11 @@ object model extends js.Object {
     farPoint: js.UndefOr[scala.Nothing],
     measureAtlas: Atlas
   ): Boolean = js.native
+  @JSGlobal("MakerJs.model.isPathInsideModel")
+  @js.native
   def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: js.UndefOr[scala.Nothing], farPoint: IPoint): Boolean = js.native
+  @JSGlobal("MakerJs.model.isPathInsideModel")
+  @js.native
   def isPathInsideModel(
     pathContext: IPath,
     modelContext: IModel,
@@ -428,7 +539,11 @@ object model extends js.Object {
     farPoint: IPoint,
     measureAtlas: Atlas
   ): Boolean = js.native
+  @JSGlobal("MakerJs.model.isPathInsideModel")
+  @js.native
   def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint): Boolean = js.native
+  @JSGlobal("MakerJs.model.isPathInsideModel")
+  @js.native
   def isPathInsideModel(
     pathContext: IPath,
     modelContext: IModel,
@@ -436,7 +551,11 @@ object model extends js.Object {
     farPoint: js.UndefOr[scala.Nothing],
     measureAtlas: Atlas
   ): Boolean = js.native
+  @JSGlobal("MakerJs.model.isPathInsideModel")
+  @js.native
   def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint, farPoint: IPoint): Boolean = js.native
+  @JSGlobal("MakerJs.model.isPathInsideModel")
+  @js.native
   def isPathInsideModel(
     pathContext: IPath,
     modelContext: IModel,
@@ -453,6 +572,8 @@ object model extends js.Object {
     * @param mirrorY Boolean to mirror on the y axis.
     * @returns Mirrored model.
     */
+  @JSGlobal("MakerJs.model.mirror")
+  @js.native
   def mirror(modelToMirror: IModel, mirrorX: Boolean, mirrorY: Boolean): IModel = js.native
   
   /**
@@ -462,6 +583,8 @@ object model extends js.Object {
     * @param origin The new position of the model.
     * @returns The original model (for cascading).
     */
+  @JSGlobal("MakerJs.model.move")
+  @js.native
   def move(modelToMove: IModel, origin: IPoint): IModel = js.native
   
   /**
@@ -471,6 +594,8 @@ object model extends js.Object {
     * @param delta The x & y adjustments as a point object.
     * @returns The original model (for cascading).
     */
+  @JSGlobal("MakerJs.model.moveRelative")
+  @js.native
   def moveRelative(modelToMove: IModel, delta: IPoint): IModel = js.native
   
   /**
@@ -479,7 +604,11 @@ object model extends js.Object {
     * @param modelToOriginate The model to originate.
     * @param origin Optional offset reference point.
     */
+  @JSGlobal("MakerJs.model.originate")
+  @js.native
   def originate(modelToOriginate: IModel): IModel = js.native
+  @JSGlobal("MakerJs.model.originate")
+  @js.native
   def originate(modelToOriginate: IModel, origin: IPoint): IModel = js.native
   
   /**
@@ -491,9 +620,17 @@ object model extends js.Object {
     * @param inside Optional boolean to draw lines inside the model instead of outside.
     * @returns Model which surrounds the paths outside of the original model.
     */
+  @JSGlobal("MakerJs.model.outline")
+  @js.native
   def outline(modelToOutline: IModel, distance: Double): IModel = js.native
+  @JSGlobal("MakerJs.model.outline")
+  @js.native
   def outline(modelToOutline: IModel, distance: Double, joints: js.UndefOr[scala.Nothing], inside: Boolean): IModel = js.native
+  @JSGlobal("MakerJs.model.outline")
+  @js.native
   def outline(modelToOutline: IModel, distance: Double, joints: Double): IModel = js.native
+  @JSGlobal("MakerJs.model.outline")
+  @js.native
   def outline(modelToOutline: IModel, distance: Double, joints: Double, inside: Boolean): IModel = js.native
   
   /**
@@ -503,6 +640,8 @@ object model extends js.Object {
     * @param prefix The prefix to prepend on paths ids.
     * @returns The original model (for cascading).
     */
+  @JSGlobal("MakerJs.model.prefixPathIds")
+  @js.native
   def prefixPathIds(modelToPrefix: IModel, prefix: String): IModel = js.native
   
   /**
@@ -512,13 +651,21 @@ object model extends js.Object {
     * @param options Optional options object.
     * @returns The input model (for cascading).
     */
+  @JSGlobal("MakerJs.model.removeDeadEnds")
+  @js.native
   def removeDeadEnds(modelContext: IModel): IModel = js.native
+  @JSGlobal("MakerJs.model.removeDeadEnds")
+  @js.native
   def removeDeadEnds(
     modelContext: IModel,
     pointMatchingDistance: js.UndefOr[scala.Nothing],
     keep: IWalkPathBooleanCallback
   ): IModel = js.native
+  @JSGlobal("MakerJs.model.removeDeadEnds")
+  @js.native
   def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any): IModel = js.native
+  @JSGlobal("MakerJs.model.removeDeadEnds")
+  @js.native
   def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any, keep: IWalkPathBooleanCallback): IModel = js.native
   
   /**
@@ -529,7 +676,11 @@ object model extends js.Object {
     * @param rotationOrigin The center point of rotation.
     * @returns The original model (for cascading).
     */
+  @JSGlobal("MakerJs.model.rotate")
+  @js.native
   def rotate(modelToRotate: IModel, angleInDegrees: Double): IModel = js.native
+  @JSGlobal("MakerJs.model.rotate")
+  @js.native
   def rotate(modelToRotate: IModel, angleInDegrees: Double, rotationOrigin: IPoint): IModel = js.native
   
   /**
@@ -540,7 +691,11 @@ object model extends js.Object {
     * @param scaleOrigin Optional boolean to scale the origin point. Typically false for the root model.
     * @returns The original model (for cascading).
     */
+  @JSGlobal("MakerJs.model.scale")
+  @js.native
   def scale(modelToScale: IModel, scaleValue: Double): IModel = js.native
+  @JSGlobal("MakerJs.model.scale")
+  @js.native
   def scale(modelToScale: IModel, scaleValue: Double, scaleOrigin: Boolean): IModel = js.native
   
   /**
@@ -550,7 +705,11 @@ object model extends js.Object {
     * @param options Optional options object.
     * @returns The simplified model (for cascading).
     */
+  @JSGlobal("MakerJs.model.simplify")
+  @js.native
   def simplify(modelToSimplify: IModel): IModel = js.native
+  @JSGlobal("MakerJs.model.simplify")
+  @js.native
   def simplify(modelToSimplify: IModel, options: ISimplifyOptions): IModel = js.native
   
   /**
@@ -561,6 +720,8 @@ object model extends js.Object {
     * @param modelCallbackBeforeWalk Callback for each model prior to recursion, which can cancel the recursion if it returns false.
     * @param modelCallbackAfterWalk Callback for each model after recursion.
     */
+  @JSGlobal("MakerJs.model.walk")
+  @js.native
   def walk(modelContext: IModel, options: IWalkOptions): Unit = js.native
   
   /**
@@ -569,6 +730,8 @@ object model extends js.Object {
     * @param modelContext The model to walk.
     * @param callback Callback for each path.
     */
+  @JSGlobal("MakerJs.model.walkPaths")
+  @js.native
   def walkPaths(modelContext: IModel, callback: IModelPathCallback): Unit = js.native
   
   /**
@@ -576,5 +739,7 @@ object model extends js.Object {
     *
     * @param modelToZero The model to zero.
     */
+  @JSGlobal("MakerJs.model.zero")
+  @js.native
   def zero(modelToZero: IModel): IModel = js.native
 }

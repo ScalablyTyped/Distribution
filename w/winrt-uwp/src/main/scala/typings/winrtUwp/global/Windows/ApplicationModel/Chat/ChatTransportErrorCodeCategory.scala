@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the category of a transport error. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatTransportErrorCodeCategory")
 @js.native
-object ChatTransportErrorCodeCategory extends js.Object {
+object ChatTransportErrorCodeCategory extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

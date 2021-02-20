@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.usb.DeviceFilterStrict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FiltersArray extends js.Object {
+trait FiltersArray extends StObject {
   
   /**
     * A list of USB device filters matching supported devices.
@@ -24,24 +25,12 @@ object FiltersArray {
   }
   
   @scala.inline
-  implicit class FiltersArrayOps[Self <: FiltersArray] (val x: Self) extends AnyVal {
+  implicit class FiltersArrayMutableBuilder[Self <: FiltersArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: js.Array[DeviceFilterStrict]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFiltersVarargs(value: DeviceFilterStrict*): Self = this.set("filters", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilters(value: js.Array[DeviceFilterStrict]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setFiltersVarargs(value: DeviceFilterStrict*): Self = StObject.set(x, "filters", js.Array(value :_*))
   }
 }

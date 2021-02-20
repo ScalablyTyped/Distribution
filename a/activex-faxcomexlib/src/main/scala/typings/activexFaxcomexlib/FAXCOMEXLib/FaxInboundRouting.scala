@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxInboundRouting Class */
 @js.native
-trait FaxInboundRouting extends js.Object {
+trait FaxInboundRouting extends StObject {
   
   @JSName("FAXCOMEXLib.FaxInboundRouting_typekey")
   var FAXCOMEXLibDotFaxInboundRouting_typekey: FaxInboundRouting = js.native
@@ -31,27 +32,15 @@ object FaxInboundRouting {
   }
   
   @scala.inline
-  implicit class FaxInboundRoutingOps[Self <: FaxInboundRouting] (val x: Self) extends AnyVal {
+  implicit class FaxInboundRoutingMutableBuilder[Self <: FaxInboundRouting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFAXCOMEXLibDotFaxInboundRouting_typekey(value: FaxInboundRouting): Self = StObject.set(x, "FAXCOMEXLib.FaxInboundRouting_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetExtensions(value: () => FaxInboundRoutingExtensions): Self = StObject.set(x, "GetExtensions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFAXCOMEXLibDotFaxInboundRouting_typekey(value: FaxInboundRouting): Self = this.set("FAXCOMEXLib.FaxInboundRouting_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetExtensions(value: () => FaxInboundRoutingExtensions): Self = this.set("GetExtensions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMethods(value: () => FaxInboundRoutingMethods): Self = this.set("GetMethods", js.Any.fromFunction0(value))
+    def setGetMethods(value: () => FaxInboundRoutingMethods): Self = StObject.set(x, "GetMethods", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinishingLaminating extends js.Object {
+trait FinishingLaminating extends StObject {
   
   var `laminating-sides`: js.UndefOr[FinishingSides] = js.native
   
@@ -20,30 +21,18 @@ object FinishingLaminating {
   }
   
   @scala.inline
-  implicit class FinishingLaminatingOps[Self <: FinishingLaminating] (val x: Self) extends AnyVal {
+  implicit class FinishingLaminatingMutableBuilder[Self <: FinishingLaminating] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setLaminating-sides`(value: FinishingSides): Self = StObject.set(x, "laminating-sides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setLaminating-sidesUndefined`: Self = StObject.set(x, "laminating-sides", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setLaminating-type`(value: LaminatingType): Self = StObject.set(x, "laminating-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLaminating-sides`(value: FinishingSides): Self = this.set("laminating-sides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteLaminating-sides`: Self = this.set("laminating-sides", js.undefined)
-    
-    @scala.inline
-    def `setLaminating-type`(value: LaminatingType): Self = this.set("laminating-type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteLaminating-type`: Self = this.set("laminating-type", js.undefined)
+    def `setLaminating-typeUndefined`: Self = StObject.set(x, "laminating-type", js.undefined)
   }
 }

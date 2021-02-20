@@ -1,6 +1,8 @@
 package typings.mongodb.mod
 
 import typings.mongodb.anon.IncludeArrayIndex
+import typings.node.streamMod.ReadableOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mongodb", "AggregationCursor")
 @js.native
 class AggregationCursor[T] () extends Cursor[T] {
+  def this(opts: ReadableOptions) = this()
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#each */
   def each(callback: MongoCallback[AggregationCursorResult]): Unit = js.native

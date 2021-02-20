@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataColorPalette extends js.Object {
+trait DataColorPalette extends StObject {
   
   /**
     * The hexadecimal codes for the colors.
@@ -31,42 +32,30 @@ object DataColorPalette {
   }
   
   @scala.inline
-  implicit class DataColorPaletteOps[Self <: DataColorPalette] (val x: Self) extends AnyVal {
+  implicit class DataColorPaletteMutableBuilder[Self <: DataColorPalette] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: ColorList): Self = StObject.set(x, "Colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsUndefined: Self = StObject.set(x, "Colors", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorsVarargs(value: HexColor*): Self = StObject.set(x, "Colors", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: HexColor*): Self = this.set("Colors", js.Array(value :_*))
+    def setEmptyFillColor(value: HexColor): Self = StObject.set(x, "EmptyFillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: ColorList): Self = this.set("Colors", value.asInstanceOf[js.Any])
+    def setEmptyFillColorUndefined: Self = StObject.set(x, "EmptyFillColor", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("Colors", js.undefined)
+    def setMinMaxGradient(value: ColorList): Self = StObject.set(x, "MinMaxGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyFillColor(value: HexColor): Self = this.set("EmptyFillColor", value.asInstanceOf[js.Any])
+    def setMinMaxGradientUndefined: Self = StObject.set(x, "MinMaxGradient", js.undefined)
     
     @scala.inline
-    def deleteEmptyFillColor: Self = this.set("EmptyFillColor", js.undefined)
-    
-    @scala.inline
-    def setMinMaxGradientVarargs(value: HexColor*): Self = this.set("MinMaxGradient", js.Array(value :_*))
-    
-    @scala.inline
-    def setMinMaxGradient(value: ColorList): Self = this.set("MinMaxGradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinMaxGradient: Self = this.set("MinMaxGradient", js.undefined)
+    def setMinMaxGradientVarargs(value: HexColor*): Self = StObject.set(x, "MinMaxGradient", js.Array(value :_*))
   }
 }

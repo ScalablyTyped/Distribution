@@ -1,12 +1,13 @@
 package typings.viewporter
 
 import typings.std.EventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Viewporter extends js.Object {
+trait Viewporter extends StObject {
   
   var ACTIVE: Boolean = js.native
   
@@ -42,39 +43,27 @@ object Viewporter {
   }
   
   @scala.inline
-  implicit class ViewporterOps[Self <: Viewporter] (val x: Self) extends AnyVal {
+  implicit class ViewporterMutableBuilder[Self <: Viewporter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setACTIVE(value: Boolean): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChange(value: EventListener => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceDetection(value: Boolean): Self = StObject.set(x, "forceDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setACTIVE(value: Boolean): Self = this.set("ACTIVE", value.asInstanceOf[js.Any])
+    def setIsLandscape(value: () => Boolean): Self = StObject.set(x, "isLandscape", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setREADY(value: Boolean): Self = this.set("READY", value.asInstanceOf[js.Any])
+    def setPreventPageScroll(value: Boolean): Self = StObject.set(x, "preventPageScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: EventListener => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setREADY(value: Boolean): Self = StObject.set(x, "READY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceDetection(value: Boolean): Self = this.set("forceDetection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsLandscape(value: () => Boolean): Self = this.set("isLandscape", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPreventPageScroll(value: Boolean): Self = this.set("preventPageScroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("refresh", js.Any.fromFunction0(value))
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
   }
 }

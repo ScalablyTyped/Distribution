@@ -1,11 +1,12 @@
 package typings.reactAliceCarousel.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsPrevSlideDisabled extends js.Object {
+trait IsPrevSlideDisabled extends StObject {
   
   var isNextSlideDisabled: Boolean = js.native
   
@@ -20,24 +21,12 @@ object IsPrevSlideDisabled {
   }
   
   @scala.inline
-  implicit class IsPrevSlideDisabledOps[Self <: IsPrevSlideDisabled] (val x: Self) extends AnyVal {
+  implicit class IsPrevSlideDisabledMutableBuilder[Self <: IsPrevSlideDisabled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsNextSlideDisabled(value: Boolean): Self = StObject.set(x, "isNextSlideDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsNextSlideDisabled(value: Boolean): Self = this.set("isNextSlideDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPrevSlideDisabled(value: Boolean): Self = this.set("isPrevSlideDisabled", value.asInstanceOf[js.Any])
+    def setIsPrevSlideDisabled(value: Boolean): Self = StObject.set(x, "isPrevSlideDisabled", value.asInstanceOf[js.Any])
   }
 }

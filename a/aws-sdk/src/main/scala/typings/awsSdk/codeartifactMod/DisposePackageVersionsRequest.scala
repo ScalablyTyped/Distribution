@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisposePackageVersionsRequest extends js.Object {
+trait DisposePackageVersionsRequest extends StObject {
   
   /**
     *  The name of the package with the versions you want to dispose. 
@@ -69,60 +70,48 @@ object DisposePackageVersionsRequest {
   }
   
   @scala.inline
-  implicit class DisposePackageVersionsRequestOps[Self <: DisposePackageVersionsRequest] (val x: Self) extends AnyVal {
+  implicit class DisposePackageVersionsRequestMutableBuilder[Self <: DisposePackageVersionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
     @scala.inline
-    def set_package(value: PackageName): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setExpectedStatus(value: PackageVersionStatus): Self = StObject.set(x, "expectedStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setExpectedStatusUndefined: Self = StObject.set(x, "expectedStatus", js.undefined)
     
     @scala.inline
-    def setFormat(value: PackageFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: RepositoryName): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionsVarargs(value: PackageVersion*): Self = this.set("versions", js.Array(value :_*))
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def setVersions(value: PackageVersionList): Self = this.set("versions", value.asInstanceOf[js.Any])
+    def setRepository(value: RepositoryName): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
+    def setVersionRevisions(value: PackageVersionRevisionMap): Self = StObject.set(x, "versionRevisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
+    def setVersionRevisionsUndefined: Self = StObject.set(x, "versionRevisions", js.undefined)
     
     @scala.inline
-    def setExpectedStatus(value: PackageVersionStatus): Self = this.set("expectedStatus", value.asInstanceOf[js.Any])
+    def setVersions(value: PackageVersionList): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpectedStatus: Self = this.set("expectedStatus", js.undefined)
+    def setVersionsVarargs(value: PackageVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
     
     @scala.inline
-    def setNamespace(value: PackageNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
-    
-    @scala.inline
-    def setVersionRevisions(value: PackageVersionRevisionMap): Self = this.set("versionRevisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionRevisions: Self = this.set("versionRevisions", js.undefined)
+    def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

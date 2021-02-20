@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An expansion definition. Each object respresents one set of expandable strings. For example, you could have expansions for the word `hot` in one object, and expansions for the word `cold` in another. */
 @js.native
-trait Expansion extends js.Object {
+trait Expansion extends StObject {
   
   /** A list of terms that this expansion will be expanded to. If specified without **input_terms**, it also functions as the input term list. */
   var expanded_terms: js.Array[String] = js.native
@@ -23,33 +24,21 @@ object Expansion {
   }
   
   @scala.inline
-  implicit class ExpansionOps[Self <: Expansion] (val x: Self) extends AnyVal {
+  implicit class ExpansionMutableBuilder[Self <: Expansion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpanded_terms(value: js.Array[String]): Self = StObject.set(x, "expanded_terms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpanded_termsVarargs(value: String*): Self = StObject.set(x, "expanded_terms", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInput_terms(value: js.Array[String]): Self = StObject.set(x, "input_terms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpanded_termsVarargs(value: String*): Self = this.set("expanded_terms", js.Array(value :_*))
+    def setInput_termsUndefined: Self = StObject.set(x, "input_terms", js.undefined)
     
     @scala.inline
-    def setExpanded_terms(value: js.Array[String]): Self = this.set("expanded_terms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInput_termsVarargs(value: String*): Self = this.set("input_terms", js.Array(value :_*))
-    
-    @scala.inline
-    def setInput_terms(value: js.Array[String]): Self = this.set("input_terms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput_terms: Self = this.set("input_terms", js.undefined)
+    def setInput_termsVarargs(value: String*): Self = StObject.set(x, "input_terms", js.Array(value :_*))
   }
 }

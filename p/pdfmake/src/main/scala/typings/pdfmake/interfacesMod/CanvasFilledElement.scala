@@ -1,11 +1,12 @@
 package typings.pdfmake.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasFilledElement extends js.Object {
+trait CanvasFilledElement extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -22,39 +23,27 @@ object CanvasFilledElement {
   }
   
   @scala.inline
-  implicit class CanvasFilledElementOps[Self <: CanvasFilledElement] (val x: Self) extends AnyVal {
+  implicit class CanvasFilledElementMutableBuilder[Self <: CanvasFilledElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setLinearGradient(value: js.Array[String]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    def setLinearGradientUndefined: Self = StObject.set(x, "linearGradient", js.undefined)
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
-    
-    @scala.inline
-    def setLinearGradientVarargs(value: String*): Self = this.set("linearGradient", js.Array(value :_*))
-    
-    @scala.inline
-    def setLinearGradient(value: js.Array[String]): Self = this.set("linearGradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinearGradient: Self = this.set("linearGradient", js.undefined)
+    def setLinearGradientVarargs(value: String*): Self = StObject.set(x, "linearGradient", js.Array(value :_*))
   }
 }

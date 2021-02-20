@@ -16,6 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.style.XStyle
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,27 +96,15 @@ object PluginShape {
   }
   
   @scala.inline
-  implicit class PluginShapeOps[Self <: PluginShape] (val x: Self) extends AnyVal {
+  implicit class PluginShapeMutableBuilder[Self <: PluginShape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPluginCommands(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PluginCommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPluginMimeType(value: String): Self = StObject.set(x, "PluginMimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPluginCommands(value: SafeArray[PropertyValue]): Self = this.set("PluginCommands", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPluginMimeType(value: String): Self = this.set("PluginMimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPluginURL(value: String): Self = this.set("PluginURL", value.asInstanceOf[js.Any])
+    def setPluginURL(value: String): Self = StObject.set(x, "PluginURL", value.asInstanceOf[js.Any])
   }
 }

@@ -3,13 +3,14 @@ package typings.grpc.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "Channel")
 @js.native
-class Channel protected () extends js.Object {
+class Channel protected () extends StObject {
   /**
     * This constructor API is almost identical to the Client constructor,
     * except that some of the options for the Client constructor are not valid

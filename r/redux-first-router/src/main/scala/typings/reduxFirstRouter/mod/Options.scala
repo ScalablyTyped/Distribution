@@ -3,12 +3,13 @@ package typings.reduxFirstRouter.mod
 import typings.history.mod.History
 import typings.redux.mod.Dispatch
 import typings.reduxFirstRouter.anon.Pathname
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options[TKeys, TState] extends js.Object {
+trait Options[TKeys, TState] extends StObject {
   
   /**
     * A prefix that will be prepended to the URL. For example, using a basename of '/playground',
@@ -132,129 +133,117 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options[_, _], TKeys, TState] (val x: Self with (Options[TKeys, TState])) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options[_, _], TKeys, TState] (val x: Self with (Options[TKeys, TState])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateHistory(value: () => History[typings.history.mod.LocationState]): Self = StObject.set(x, "createHistory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBasename(value: String): Self = this.set("basename", value.asInstanceOf[js.Any])
+    def setCreateHistoryUndefined: Self = StObject.set(x, "createHistory", js.undefined)
     
     @scala.inline
-    def deleteBasename: Self = this.set("basename", js.undefined)
+    def setDisplayConfirmLeave(value: (/* message */ String, /* callback */ js.Function1[/* unblock */ Boolean, Unit]) => Unit): Self = StObject.set(x, "displayConfirmLeave", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateHistory(value: () => History[typings.history.mod.LocationState]): Self = this.set("createHistory", js.Any.fromFunction0(value))
+    def setDisplayConfirmLeaveUndefined: Self = StObject.set(x, "displayConfirmLeave", js.undefined)
     
     @scala.inline
-    def deleteCreateHistory: Self = this.set("createHistory", js.undefined)
+    def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayConfirmLeave(value: (/* message */ String, /* callback */ js.Function1[/* unblock */ Boolean, Unit]) => Unit): Self = this.set("displayConfirmLeave", js.Any.fromFunction2(value))
+    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
     @scala.inline
-    def deleteDisplayConfirmLeave: Self = this.set("displayConfirmLeave", js.undefined)
+    def setInitialDispatch(value: Boolean): Self = StObject.set(x, "initialDispatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtra(value: js.Any): Self = this.set("extra", value.asInstanceOf[js.Any])
+    def setInitialDispatchUndefined: Self = StObject.set(x, "initialDispatch", js.undefined)
     
     @scala.inline
-    def deleteExtra: Self = this.set("extra", js.undefined)
+    def setInitialEntries(value: HistoryEntries): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDispatch(value: Boolean): Self = this.set("initialDispatch", value.asInstanceOf[js.Any])
+    def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
     
     @scala.inline
-    def deleteInitialDispatch: Self = this.set("initialDispatch", js.undefined)
+    def setInitialEntriesVarargs(value: Pathname*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
     
     @scala.inline
-    def setInitialEntriesVarargs(value: Pathname*): Self = this.set("initialEntries", js.Array(value :_*))
+    def setLocation(value: String | (SelectLocationState_[TKeys, TState])): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialEntries(value: HistoryEntries): Self = this.set("initialEntries", value.asInstanceOf[js.Any])
+    def setLocationFunction1(value: TState => LocationState[TKeys, TState]): Self = StObject.set(x, "location", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInitialEntries: Self = this.set("initialEntries", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setLocationFunction1(value: TState => LocationState[TKeys, TState]): Self = this.set("location", js.Any.fromFunction1(value))
+    def setNavigators(value: NavigatorsConfig[TKeys, TState]): Self = StObject.set(x, "navigators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String | (SelectLocationState_[TKeys, TState])): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNavigatorsUndefined: Self = StObject.set(x, "navigators", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setNotFoundPath(value: String): Self = StObject.set(x, "notFoundPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigators(value: NavigatorsConfig[TKeys, TState]): Self = this.set("navigators", value.asInstanceOf[js.Any])
+    def setNotFoundPathUndefined: Self = StObject.set(x, "notFoundPath", js.undefined)
     
     @scala.inline
-    def deleteNavigators: Self = this.set("navigators", js.undefined)
+    def setOnAfterChange(value: (/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setNotFoundPath(value: String): Self = this.set("notFoundPath", value.asInstanceOf[js.Any])
+    def setOnAfterChangeUndefined: Self = StObject.set(x, "onAfterChange", js.undefined)
     
     @scala.inline
-    def deleteNotFoundPath: Self = this.set("notFoundPath", js.undefined)
+    def setOnBackNext(value: (/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = StObject.set(x, "onBackNext", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnAfterChange(value: (/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = this.set("onAfterChange", js.Any.fromFunction3(value))
+    def setOnBackNextUndefined: Self = StObject.set(x, "onBackNext", js.undefined)
     
     @scala.inline
-    def deleteOnAfterChange: Self = this.set("onAfterChange", js.undefined)
+    def setOnBeforeChange(value: (/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = StObject.set(x, "onBeforeChange", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnBackNext(value: (/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = this.set("onBackNext", js.Any.fromFunction3(value))
+    def setOnBeforeChangeUndefined: Self = StObject.set(x, "onBeforeChange", js.undefined)
     
     @scala.inline
-    def deleteOnBackNext: Self = this.set("onBackNext", js.undefined)
+    def setQuerySerializer(value: QuerySerializer): Self = StObject.set(x, "querySerializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBeforeChange(value: (/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = this.set("onBeforeChange", js.Any.fromFunction3(value))
+    def setQuerySerializerUndefined: Self = StObject.set(x, "querySerializer", js.undefined)
     
     @scala.inline
-    def deleteOnBeforeChange: Self = this.set("onBeforeChange", js.undefined)
+    def setRestoreScroll(value: /* history */ History[typings.history.mod.LocationState] => ScrollBehavior_): Self = StObject.set(x, "restoreScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setQuerySerializer(value: QuerySerializer): Self = this.set("querySerializer", value.asInstanceOf[js.Any])
+    def setRestoreScrollUndefined: Self = StObject.set(x, "restoreScroll", js.undefined)
     
     @scala.inline
-    def deleteQuerySerializer: Self = this.set("querySerializer", js.undefined)
+    def setScrollTop(value: Boolean): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestoreScroll(value: /* history */ History[typings.history.mod.LocationState] => ScrollBehavior_): Self = this.set("restoreScroll", js.Any.fromFunction1(value))
+    def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
     
     @scala.inline
-    def deleteRestoreScroll: Self = this.set("restoreScroll", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollTop(value: Boolean): Self = this.set("scrollTop", value.asInstanceOf[js.Any])
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
     @scala.inline
-    def deleteScrollTop: Self = this.set("scrollTop", js.undefined)
+    def setTitle(value: String | SelectTitleState[TState]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    def setTitleFunction1(value: TState => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
-    
-    @scala.inline
-    def setTitleFunction1(value: TState => String): Self = this.set("title", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTitle(value: String | SelectTitleState[TState]): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

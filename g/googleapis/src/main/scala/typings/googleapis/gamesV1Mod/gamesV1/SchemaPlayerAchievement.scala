@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for an achievement object.
   */
 @js.native
-trait SchemaPlayerAchievement extends js.Object {
+trait SchemaPlayerAchievement extends StObject {
   
   /**
     * The state of the achievement. Possible values are:   - &quot;HIDDEN&quot;
@@ -59,60 +60,48 @@ object SchemaPlayerAchievement {
   }
   
   @scala.inline
-  implicit class SchemaPlayerAchievementOps[Self <: SchemaPlayerAchievement] (val x: Self) extends AnyVal {
+  implicit class SchemaPlayerAchievementMutableBuilder[Self <: SchemaPlayerAchievement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAchievementState(value: String): Self = StObject.set(x, "achievementState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAchievementStateUndefined: Self = StObject.set(x, "achievementState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentSteps(value: Double): Self = StObject.set(x, "currentSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAchievementState(value: String): Self = this.set("achievementState", value.asInstanceOf[js.Any])
+    def setCurrentStepsUndefined: Self = StObject.set(x, "currentSteps", js.undefined)
     
     @scala.inline
-    def deleteAchievementState: Self = this.set("achievementState", js.undefined)
+    def setExperiencePoints(value: String): Self = StObject.set(x, "experiencePoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSteps(value: Double): Self = this.set("currentSteps", value.asInstanceOf[js.Any])
+    def setExperiencePointsUndefined: Self = StObject.set(x, "experiencePoints", js.undefined)
     
     @scala.inline
-    def deleteCurrentSteps: Self = this.set("currentSteps", js.undefined)
+    def setFormattedCurrentStepsString(value: String): Self = StObject.set(x, "formattedCurrentStepsString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperiencePoints(value: String): Self = this.set("experiencePoints", value.asInstanceOf[js.Any])
+    def setFormattedCurrentStepsStringUndefined: Self = StObject.set(x, "formattedCurrentStepsString", js.undefined)
     
     @scala.inline
-    def deleteExperiencePoints: Self = this.set("experiencePoints", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedCurrentStepsString(value: String): Self = this.set("formattedCurrentStepsString", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFormattedCurrentStepsString: Self = this.set("formattedCurrentStepsString", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLastUpdatedTimestamp(value: String): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setLastUpdatedTimestamp(value: String): Self = this.set("lastUpdatedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdatedTimestamp: Self = this.set("lastUpdatedTimestamp", js.undefined)
+    def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "lastUpdatedTimestamp", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Exactly one field must be specified.
   */
 @js.native
-trait SchemaSecurityPolicyRuleMatcher extends js.Object {
+trait SchemaSecurityPolicyRuleMatcher extends StObject {
   
   /**
     * The configuration options available when specifying versioned_expr. This
@@ -35,30 +36,18 @@ object SchemaSecurityPolicyRuleMatcher {
   }
   
   @scala.inline
-  implicit class SchemaSecurityPolicyRuleMatcherOps[Self <: SchemaSecurityPolicyRuleMatcher] (val x: Self) extends AnyVal {
+  implicit class SchemaSecurityPolicyRuleMatcherMutableBuilder[Self <: SchemaSecurityPolicyRuleMatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: SchemaSecurityPolicyRuleMatcherConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersionedExpr(value: String): Self = StObject.set(x, "versionedExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: SchemaSecurityPolicyRuleMatcherConfig): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
-    
-    @scala.inline
-    def setVersionedExpr(value: String): Self = this.set("versionedExpr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionedExpr: Self = this.set("versionedExpr", js.undefined)
+    def setVersionedExprUndefined: Self = StObject.set(x, "versionedExpr", js.undefined)
   }
 }

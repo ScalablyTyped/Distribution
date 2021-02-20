@@ -2,17 +2,17 @@ package typings.cookiejar
 
 import typings.cookiejar.anon.ReadonlyArrayCookietoValu
 import typings.cookiejar.cookiejarBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cookiejar", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("cookiejar", "Cookie")
   @js.native
-  class Cookie protected () extends js.Object {
-     // number of millis since 1970 at which this should be removed
+  class Cookie protected () extends StObject {
+    // number of millis since 1970 at which this should be removed
     /**
       * It turns input into a Cookie (singleton if given a Cookie), the
       * request_domain argument is used to default the domain if it is not
@@ -41,16 +41,16 @@ object mod extends js.Object {
       */
     def collidesWith(cookie: Cookie): Boolean = js.native
     
-     // string associated with the cookie
+    // string associated with the cookie
     var domain: String = js.native
     
-     // should it only be transmitted over secure means
+    // should it only be transmitted over secure means
     var expiration_date: Double = js.native
     
-     // domain to match (on a cookie a '.' at the start means a wildcard matching anything ending in the rest)
+    // domain to match (on a cookie a '.' at the start means a wildcard matching anything ending in the rest)
     var explicit_domain: Boolean = js.native
     
-     // base path to match (matches any path starting with this '/' is root)
+    // base path to match (matches any path starting with this '/' is root)
     var explicit_path: Boolean = js.native
     
     /**
@@ -61,7 +61,7 @@ object mod extends js.Object {
     
     var name: String = js.native
     
-     // if the path was explicitly set via the cookie string
+    // if the path was explicitly set via the cookie string
     var noscript: Boolean = js.native
     
     /**
@@ -75,10 +75,10 @@ object mod extends js.Object {
     def parse(cookie: String, requestDomain: String): Cookie = js.native
     def parse(cookie: String, requestDomain: String, requestPath: String): Cookie = js.native
     
-     // if the domain was explicitly set via the cookie string
+    // if the domain was explicitly set via the cookie string
     var path: String = js.native
     
-     // if it should be kept from scripts
+    // if it should be kept from scripts
     var secure: Boolean = js.native
     
     /**
@@ -86,12 +86,13 @@ object mod extends js.Object {
       */
     def toValueString(): String = js.native
     
-     // name of the cookie
+    // name of the cookie
     var value: String = js.native
   }
   
+  @JSImport("cookiejar", "CookieAccessInfo")
   @js.native
-  class CookieAccessInfo protected () extends js.Object {
+  class CookieAccessInfo protected () extends StObject {
     /**
       * Class to determine matching qualities of a cookie
       * @param domain string domain to match
@@ -115,27 +116,35 @@ object mod extends js.Object {
     
     var domain: String = js.native
     
-     // domain to match
+    // domain to match
     var path: String = js.native
     
-     // access is secure (ssl generally)
+    // access is secure (ssl generally)
     var script: Boolean = js.native
     
-     // path to match
+    // path to match
     var secure: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object CookieAccessInfo extends js.Object {
+  object CookieAccessInfo {
     
-    var All: CookieAccessInfo = js.native
+    @JSImport("cookiejar", "CookieAccessInfo")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("cookiejar", "CookieAccessInfo.All")
+    @js.native
+    def All: CookieAccessInfo = js.native
+    @scala.inline
+    def All_=(x: CookieAccessInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("cookiejar", "CookieJar")
   @js.native
   /**
     * class to hold numerous cookies from multiple domains correctly
     */
-  class CookieJar () extends js.Object {
+  class CookieJar () extends StObject {
     
     /**
       * get a cookie with the name and access_info matching

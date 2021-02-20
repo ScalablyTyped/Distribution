@@ -1,27 +1,32 @@
 package typings.typedoc
 
-import typings.typedoc.componentMod.AbstractComponent
 import typings.typedoc.navigationItemMod.NavigationItem
+import typings.typedoc.outputComponentsMod.RendererComponent
 import typings.typedoc.reflectionsMod.Reflection
 import typings.typedoc.rendererMod.Renderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/output/plugins/TocPlugin", JSImport.Namespace)
-@js.native
-object tocPluginMod extends js.Object {
+object tocPluginMod {
   
+  @JSImport("typedoc/dist/lib/output/plugins/TocPlugin", "TocPlugin")
   @js.native
-  class TocPlugin () extends AbstractComponent[Renderer] {
+  class TocPlugin protected () extends RendererComponent {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Renderer) = this()
     
     var onRendererBeginPage: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object TocPlugin extends js.Object {
+  object TocPlugin {
     
+    @JSImport("typedoc/dist/lib/output/plugins/TocPlugin", "TocPlugin.buildToc")
+    @js.native
     def buildToc(model: Reflection, trail: js.Array[Reflection], parent: NavigationItem): Unit = js.native
+    @JSImport("typedoc/dist/lib/output/plugins/TocPlugin", "TocPlugin.buildToc")
+    @js.native
     def buildToc(
       model: Reflection,
       trail: js.Array[Reflection],

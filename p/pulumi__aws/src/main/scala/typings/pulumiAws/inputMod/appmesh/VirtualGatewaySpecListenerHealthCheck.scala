@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.appmesh
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewaySpecListenerHealthCheck extends js.Object {
+trait VirtualGatewaySpecListenerHealthCheck extends StObject {
   
   /**
     * The number of consecutive successful health checks that must occur before declaring listener healthy.
@@ -58,45 +59,33 @@ object VirtualGatewaySpecListenerHealthCheck {
   }
   
   @scala.inline
-  implicit class VirtualGatewaySpecListenerHealthCheckOps[Self <: VirtualGatewaySpecListenerHealthCheck] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewaySpecListenerHealthCheckMutableBuilder[Self <: VirtualGatewaySpecListenerHealthCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthyThreshold(value: Input[Double]): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntervalMillis(value: Input[Double]): Self = StObject.set(x, "intervalMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthyThreshold(value: Input[Double]): Self = this.set("healthyThreshold", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setIntervalMillis(value: Input[Double]): Self = this.set("intervalMillis", value.asInstanceOf[js.Any])
+    def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: Input[String]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setTimeoutMillis(value: Input[Double]): Self = this.set("timeoutMillis", value.asInstanceOf[js.Any])
+    def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnhealthyThreshold(value: Input[Double]): Self = this.set("unhealthyThreshold", value.asInstanceOf[js.Any])
+    def setTimeoutMillis(value: Input[Double]): Self = StObject.set(x, "timeoutMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setUnhealthyThreshold(value: Input[Double]): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,17 @@
 package typings.ionic
 
+import typings.ionic.definitionsMod.INamespace
 import typings.ionic.namespaceMod.Namespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/deploy", JSImport.Namespace)
-@js.native
-object deployMod extends js.Object {
+object deployMod {
   
+  @JSImport("ionic/commands/deploy", "DeployNamespace")
   @js.native
-  class DeployNamespace () extends Namespace
+  class DeployNamespace () extends Namespace {
+    def this(parent: INamespace) = this()
+  }
 }

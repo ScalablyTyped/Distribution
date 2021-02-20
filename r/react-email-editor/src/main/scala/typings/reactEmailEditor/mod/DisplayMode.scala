@@ -1,5 +1,6 @@
 package typings.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactEmailEditor.reactEmailEditorStrings.email
   - typings.reactEmailEditor.reactEmailEditorStrings.web
 */
-trait DisplayMode extends js.Object
+trait DisplayMode extends StObject
 object DisplayMode {
   
   @scala.inline

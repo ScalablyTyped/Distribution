@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * method.
   */
 @js.native
-trait CardInfo extends js.Object {
+trait CardInfo extends StObject {
   
   /**
     * The billing address associated with the card.
@@ -56,30 +57,18 @@ object CardInfo {
   }
   
   @scala.inline
-  implicit class CardInfoOps[Self <: CardInfo] (val x: Self) extends AnyVal {
+  implicit class CardInfoMutableBuilder[Self <: CardInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCardDetails(value: String): Self = StObject.set(x, "cardDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardDetails(value: String): Self = this.set("cardDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCardNetwork(value: CardNetwork): Self = this.set("cardNetwork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBillingAddress(value: Address): Self = this.set("billingAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingAddress: Self = this.set("billingAddress", js.undefined)
+    def setCardNetwork(value: CardNetwork): Self = StObject.set(x, "cardNetwork", value.asInstanceOf[js.Any])
   }
 }

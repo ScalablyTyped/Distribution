@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainId extends js.Object {
+trait DomainId extends StObject {
   
   /** The primary domain for the customer. */
   var customerPrimaryDomain: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object DomainId {
   }
   
   @scala.inline
-  implicit class DomainIdOps[Self <: DomainId] (val x: Self) extends AnyVal {
+  implicit class DomainIdMutableBuilder[Self <: DomainId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerPrimaryDomain(value: String): Self = StObject.set(x, "customerPrimaryDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomerPrimaryDomain(value: String): Self = this.set("customerPrimaryDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerPrimaryDomain: Self = this.set("customerPrimaryDomain", js.undefined)
+    def setCustomerPrimaryDomainUndefined: Self = StObject.set(x, "customerPrimaryDomain", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.knuddelsUserappsApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransferReason extends js.Object {
+trait TransferReason extends StObject {
   
   var onError: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
   
@@ -22,36 +23,24 @@ object TransferReason {
   }
   
   @scala.inline
-  implicit class TransferReasonOps[Self <: TransferReason] (val x: Self) extends AnyVal {
+  implicit class TransferReasonMutableBuilder[Self <: TransferReason] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnError(value: /* message */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnError(value: /* message */ String => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setTransferReason(value: String): Self = StObject.set(x, "transferReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSuccess(value: () => Unit): Self = this.set("onSuccess", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
-    
-    @scala.inline
-    def setTransferReason(value: String): Self = this.set("transferReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferReason: Self = this.set("transferReason", js.undefined)
+    def setTransferReasonUndefined: Self = StObject.set(x, "transferReason", js.undefined)
   }
 }

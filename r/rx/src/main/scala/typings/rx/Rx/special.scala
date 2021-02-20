@@ -1,12 +1,11 @@
 package typings.rx.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx.special")
-@js.native
-object special extends js.Object {
+object special {
   
   type FlatMapResultSelector[T1, T2, TResult] = js.Function4[
     /* value */ T1, 

@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BGPPeer extends js.Object {
+trait BGPPeer extends StObject {
   
   /**
     * The address family for the BGP peer.
@@ -61,72 +62,60 @@ object BGPPeer {
   }
   
   @scala.inline
-  implicit class BGPPeerOps[Self <: BGPPeer] (val x: Self) extends AnyVal {
+  implicit class BGPPeerMutableBuilder[Self <: BGPPeer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressFamily(value: AddressFamily): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressFamilyUndefined: Self = StObject.set(x, "addressFamily", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmazonAddress(value: AmazonAddress): Self = StObject.set(x, "amazonAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressFamily(value: AddressFamily): Self = this.set("addressFamily", value.asInstanceOf[js.Any])
+    def setAmazonAddressUndefined: Self = StObject.set(x, "amazonAddress", js.undefined)
     
     @scala.inline
-    def deleteAddressFamily: Self = this.set("addressFamily", js.undefined)
+    def setAsn(value: ASN): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmazonAddress(value: AmazonAddress): Self = this.set("amazonAddress", value.asInstanceOf[js.Any])
+    def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
     
     @scala.inline
-    def deleteAmazonAddress: Self = this.set("amazonAddress", js.undefined)
+    def setAuthKey(value: BGPAuthKey): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsn(value: ASN): Self = this.set("asn", value.asInstanceOf[js.Any])
+    def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
     
     @scala.inline
-    def deleteAsn: Self = this.set("asn", js.undefined)
+    def setAwsDeviceV2(value: AwsDeviceV2): Self = StObject.set(x, "awsDeviceV2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthKey(value: BGPAuthKey): Self = this.set("authKey", value.asInstanceOf[js.Any])
+    def setAwsDeviceV2Undefined: Self = StObject.set(x, "awsDeviceV2", js.undefined)
     
     @scala.inline
-    def deleteAuthKey: Self = this.set("authKey", js.undefined)
+    def setBgpPeerId(value: BGPPeerId): Self = StObject.set(x, "bgpPeerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsDeviceV2(value: AwsDeviceV2): Self = this.set("awsDeviceV2", value.asInstanceOf[js.Any])
+    def setBgpPeerIdUndefined: Self = StObject.set(x, "bgpPeerId", js.undefined)
     
     @scala.inline
-    def deleteAwsDeviceV2: Self = this.set("awsDeviceV2", js.undefined)
+    def setBgpPeerState(value: BGPPeerState): Self = StObject.set(x, "bgpPeerState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgpPeerId(value: BGPPeerId): Self = this.set("bgpPeerId", value.asInstanceOf[js.Any])
+    def setBgpPeerStateUndefined: Self = StObject.set(x, "bgpPeerState", js.undefined)
     
     @scala.inline
-    def deleteBgpPeerId: Self = this.set("bgpPeerId", js.undefined)
+    def setBgpStatus(value: BGPStatus): Self = StObject.set(x, "bgpStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgpPeerState(value: BGPPeerState): Self = this.set("bgpPeerState", value.asInstanceOf[js.Any])
+    def setBgpStatusUndefined: Self = StObject.set(x, "bgpStatus", js.undefined)
     
     @scala.inline
-    def deleteBgpPeerState: Self = this.set("bgpPeerState", js.undefined)
+    def setCustomerAddress(value: CustomerAddress): Self = StObject.set(x, "customerAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgpStatus(value: BGPStatus): Self = this.set("bgpStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBgpStatus: Self = this.set("bgpStatus", js.undefined)
-    
-    @scala.inline
-    def setCustomerAddress(value: CustomerAddress): Self = this.set("customerAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerAddress: Self = this.set("customerAddress", js.undefined)
+    def setCustomerAddressUndefined: Self = StObject.set(x, "customerAddress", js.undefined)
   }
 }

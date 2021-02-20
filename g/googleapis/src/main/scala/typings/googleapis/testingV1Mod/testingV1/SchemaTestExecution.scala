@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies a single test to be executed in a single environment.
   */
 @js.native
-trait SchemaTestExecution extends js.Object {
+trait SchemaTestExecution extends StObject {
   
   /**
     * Output only. How the host machine(s) are configured.
@@ -65,72 +66,60 @@ object SchemaTestExecution {
   }
   
   @scala.inline
-  implicit class SchemaTestExecutionOps[Self <: SchemaTestExecution] (val x: Self) extends AnyVal {
+  implicit class SchemaTestExecutionMutableBuilder[Self <: SchemaTestExecution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironment(value: SchemaEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: SchemaEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setMatrixId(value: String): Self = StObject.set(x, "matrixId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMatrixIdUndefined: Self = StObject.set(x, "matrixId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatrixId(value: String): Self = this.set("matrixId", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteMatrixId: Self = this.set("matrixId", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setTestDetails(value: SchemaTestDetails): Self = StObject.set(x, "testDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTestDetailsUndefined: Self = StObject.set(x, "testDetails", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTestSpecification(value: SchemaTestSpecification): Self = StObject.set(x, "testSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestDetails(value: SchemaTestDetails): Self = this.set("testDetails", value.asInstanceOf[js.Any])
+    def setTestSpecificationUndefined: Self = StObject.set(x, "testSpecification", js.undefined)
     
     @scala.inline
-    def deleteTestDetails: Self = this.set("testDetails", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestSpecification(value: SchemaTestSpecification): Self = this.set("testSpecification", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteTestSpecification: Self = this.set("testSpecification", js.undefined)
+    def setToolResultsStep(value: SchemaToolResultsStep): Self = StObject.set(x, "toolResultsStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setToolResultsStep(value: SchemaToolResultsStep): Self = this.set("toolResultsStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolResultsStep: Self = this.set("toolResultsStep", js.undefined)
+    def setToolResultsStepUndefined: Self = StObject.set(x, "toolResultsStep", js.undefined)
   }
 }

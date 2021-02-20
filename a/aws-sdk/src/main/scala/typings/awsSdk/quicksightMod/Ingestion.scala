@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ingestion extends js.Object {
+trait Ingestion extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
@@ -65,75 +66,63 @@ object Ingestion {
   }
   
   @scala.inline
-  implicit class IngestionOps[Self <: Ingestion] (val x: Self) extends AnyVal {
+  implicit class IngestionMutableBuilder[Self <: Ingestion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTime(value: timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "ErrorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setErrorInfoUndefined: Self = StObject.set(x, "ErrorInfo", js.undefined)
     
     @scala.inline
-    def setCreatedTime(value: timestamp): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setIngestionId(value: IngestionId): Self = StObject.set(x, "IngestionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngestionStatus(value: IngestionStatus): Self = this.set("IngestionStatus", value.asInstanceOf[js.Any])
+    def setIngestionIdUndefined: Self = StObject.set(x, "IngestionId", js.undefined)
     
     @scala.inline
-    def setErrorInfo(value: ErrorInfo): Self = this.set("ErrorInfo", value.asInstanceOf[js.Any])
+    def setIngestionSizeInBytes(value: long): Self = StObject.set(x, "IngestionSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorInfo: Self = this.set("ErrorInfo", js.undefined)
+    def setIngestionSizeInBytesUndefined: Self = StObject.set(x, "IngestionSizeInBytes", js.undefined)
     
     @scala.inline
-    def setIngestionId(value: IngestionId): Self = this.set("IngestionId", value.asInstanceOf[js.Any])
+    def setIngestionStatus(value: IngestionStatus): Self = StObject.set(x, "IngestionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIngestionId: Self = this.set("IngestionId", js.undefined)
+    def setIngestionTimeInSeconds(value: long): Self = StObject.set(x, "IngestionTimeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngestionSizeInBytes(value: long): Self = this.set("IngestionSizeInBytes", value.asInstanceOf[js.Any])
+    def setIngestionTimeInSecondsUndefined: Self = StObject.set(x, "IngestionTimeInSeconds", js.undefined)
     
     @scala.inline
-    def deleteIngestionSizeInBytes: Self = this.set("IngestionSizeInBytes", js.undefined)
+    def setQueueInfo(value: QueueInfo): Self = StObject.set(x, "QueueInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngestionTimeInSeconds(value: long): Self = this.set("IngestionTimeInSeconds", value.asInstanceOf[js.Any])
+    def setQueueInfoUndefined: Self = StObject.set(x, "QueueInfo", js.undefined)
     
     @scala.inline
-    def deleteIngestionTimeInSeconds: Self = this.set("IngestionTimeInSeconds", js.undefined)
+    def setRequestSource(value: IngestionRequestSource): Self = StObject.set(x, "RequestSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueInfo(value: QueueInfo): Self = this.set("QueueInfo", value.asInstanceOf[js.Any])
+    def setRequestSourceUndefined: Self = StObject.set(x, "RequestSource", js.undefined)
     
     @scala.inline
-    def deleteQueueInfo: Self = this.set("QueueInfo", js.undefined)
+    def setRequestType(value: IngestionRequestType): Self = StObject.set(x, "RequestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestSource(value: IngestionRequestSource): Self = this.set("RequestSource", value.asInstanceOf[js.Any])
+    def setRequestTypeUndefined: Self = StObject.set(x, "RequestType", js.undefined)
     
     @scala.inline
-    def deleteRequestSource: Self = this.set("RequestSource", js.undefined)
+    def setRowInfo(value: RowInfo): Self = StObject.set(x, "RowInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestType(value: IngestionRequestType): Self = this.set("RequestType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestType: Self = this.set("RequestType", js.undefined)
-    
-    @scala.inline
-    def setRowInfo(value: RowInfo): Self = this.set("RowInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowInfo: Self = this.set("RowInfo", js.undefined)
+    def setRowInfoUndefined: Self = StObject.set(x, "RowInfo", js.undefined)
   }
 }

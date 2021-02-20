@@ -4,16 +4,14 @@ import typings.heftJest.heftJestBooleans.`false`
 import typings.heftJest.heftJestBooleans.`true`
 import typings.heftJest.mocked.MaybeMocked
 import typings.heftJest.mocked.MaybeMockedDeep
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object mocked extends js.Object {
+  object mocked {
     
     /**
       * Tests can use the `mocked()` function to access additional properties that
@@ -39,8 +37,14 @@ object global extends js.Object {
       *
       * https://kulshekhar.github.io/ts-jest/user/test-helpers
       */
+    @JSGlobal("mocked")
+    @js.native
     def apply[T](item: T): MaybeMocked[T] = js.native
+    @JSGlobal("mocked")
+    @js.native
     def apply[T](item: T, deep: `false`): MaybeMocked[T] = js.native
+    @JSGlobal("mocked")
+    @js.native
     def apply[T](item: T, deep: `true`): MaybeMockedDeep[T] = js.native
   }
 }

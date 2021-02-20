@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSource extends js.Object {
+trait DataSource extends StObject {
   
   /**
     * The data source ARN.
@@ -66,78 +67,66 @@ object DataSource {
   }
   
   @scala.inline
-  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceArn(value: String): Self = StObject.set(x, "dataSourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceArnUndefined: Self = StObject.set(x, "dataSourceArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceArn(value: String): Self = this.set("dataSourceArn", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDataSourceArn: Self = this.set("dataSourceArn", js.undefined)
+    def setDynamodbConfig(value: DynamodbDataSourceConfig): Self = StObject.set(x, "dynamodbConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDynamodbConfigUndefined: Self = StObject.set(x, "dynamodbConfig", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setElasticsearchConfig(value: ElasticsearchDataSourceConfig): Self = StObject.set(x, "elasticsearchConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamodbConfig(value: DynamodbDataSourceConfig): Self = this.set("dynamodbConfig", value.asInstanceOf[js.Any])
+    def setElasticsearchConfigUndefined: Self = StObject.set(x, "elasticsearchConfig", js.undefined)
     
     @scala.inline
-    def deleteDynamodbConfig: Self = this.set("dynamodbConfig", js.undefined)
+    def setHttpConfig(value: HttpDataSourceConfig): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticsearchConfig(value: ElasticsearchDataSourceConfig): Self = this.set("elasticsearchConfig", value.asInstanceOf[js.Any])
+    def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
     
     @scala.inline
-    def deleteElasticsearchConfig: Self = this.set("elasticsearchConfig", js.undefined)
+    def setLambdaConfig(value: LambdaDataSourceConfig): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpConfig(value: HttpDataSourceConfig): Self = this.set("httpConfig", value.asInstanceOf[js.Any])
+    def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
     
     @scala.inline
-    def deleteHttpConfig: Self = this.set("httpConfig", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaConfig(value: LambdaDataSourceConfig): Self = this.set("lambdaConfig", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLambdaConfig: Self = this.set("lambdaConfig", js.undefined)
+    def setRelationalDatabaseConfig(value: RelationalDatabaseDataSourceConfig): Self = StObject.set(x, "relationalDatabaseConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRelationalDatabaseConfigUndefined: Self = StObject.set(x, "relationalDatabaseConfig", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setServiceRoleArn(value: String): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationalDatabaseConfig(value: RelationalDatabaseDataSourceConfig): Self = this.set("relationalDatabaseConfig", value.asInstanceOf[js.Any])
+    def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
     
     @scala.inline
-    def deleteRelationalDatabaseConfig: Self = this.set("relationalDatabaseConfig", js.undefined)
+    def setType(value: DataSourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRoleArn(value: String): Self = this.set("serviceRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceRoleArn: Self = this.set("serviceRoleArn", js.undefined)
-    
-    @scala.inline
-    def setType(value: DataSourceType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2Conversation extends js.Object {
+trait GoogleActionsV2Conversation extends StObject {
   
   /**
     * Unique ID for the multi-turn conversation. It's assigned for the first
@@ -35,36 +36,24 @@ object GoogleActionsV2Conversation {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2ConversationOps[Self <: GoogleActionsV2Conversation] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2ConversationMutableBuilder[Self <: GoogleActionsV2Conversation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversationId(value: String): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversationIdUndefined: Self = StObject.set(x, "conversationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversationToken(value: String): Self = StObject.set(x, "conversationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversationId(value: String): Self = this.set("conversationId", value.asInstanceOf[js.Any])
+    def setConversationTokenUndefined: Self = StObject.set(x, "conversationToken", js.undefined)
     
     @scala.inline
-    def deleteConversationId: Self = this.set("conversationId", js.undefined)
+    def setType(value: GoogleActionsV2ConversationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversationToken(value: String): Self = this.set("conversationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConversationToken: Self = this.set("conversationToken", js.undefined)
-    
-    @scala.inline
-    def setType(value: GoogleActionsV2ConversationType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateEntityToThingRequest extends js.Object {
+trait AssociateEntityToThingRequest extends StObject {
   
   /**
     * The ID of the device to be associated with the thing. The ID should be in the following format.  urn:tdm:REGION/ACCOUNT ID/default:device:DEVICENAME 
@@ -31,30 +32,18 @@ object AssociateEntityToThingRequest {
   }
   
   @scala.inline
-  implicit class AssociateEntityToThingRequestOps[Self <: AssociateEntityToThingRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateEntityToThingRequestMutableBuilder[Self <: AssociateEntityToThingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityId(value: Urn): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamespaceVersion(value: Version): Self = StObject.set(x, "namespaceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespaceVersionUndefined: Self = StObject.set(x, "namespaceVersion", js.undefined)
     
     @scala.inline
-    def setEntityId(value: Urn): Self = this.set("entityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamespaceVersion(value: Version): Self = this.set("namespaceVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaceVersion: Self = this.set("namespaceVersion", js.undefined)
+    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

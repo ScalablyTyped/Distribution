@@ -1,5 +1,6 @@
 package typings.jsonSchemaFaker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("json-schema-faker", JSImport.Namespace)
 @js.native
-object jsonSchemaFakerRequire extends js.Object
+object jsonSchemaFakerRequire extends StObject

@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageTemplateType extends js.Object {
+trait MessageTemplateType extends StObject {
   
   /**
     * The message template for email messages.
@@ -31,36 +32,24 @@ object MessageTemplateType {
   }
   
   @scala.inline
-  implicit class MessageTemplateTypeOps[Self <: MessageTemplateType] (val x: Self) extends AnyVal {
+  implicit class MessageTemplateTypeMutableBuilder[Self <: MessageTemplateType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailMessage(value: EmailVerificationMessageType): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailMessageUndefined: Self = StObject.set(x, "EmailMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailSubject(value: EmailVerificationSubjectType): Self = StObject.set(x, "EmailSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailMessage(value: EmailVerificationMessageType): Self = this.set("EmailMessage", value.asInstanceOf[js.Any])
+    def setEmailSubjectUndefined: Self = StObject.set(x, "EmailSubject", js.undefined)
     
     @scala.inline
-    def deleteEmailMessage: Self = this.set("EmailMessage", js.undefined)
+    def setSMSMessage(value: SmsVerificationMessageType): Self = StObject.set(x, "SMSMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailSubject(value: EmailVerificationSubjectType): Self = this.set("EmailSubject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmailSubject: Self = this.set("EmailSubject", js.undefined)
-    
-    @scala.inline
-    def setSMSMessage(value: SmsVerificationMessageType): Self = this.set("SMSMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSMSMessage: Self = this.set("SMSMessage", js.undefined)
+    def setSMSMessageUndefined: Self = StObject.set(x, "SMSMessage", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.vis.mod
 
 import typings.vis.anon.DrawThreshold
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionsScaling extends js.Object {
+trait OptionsScaling extends StObject {
   
   var customScalingFunction: js.UndefOr[
     js.Function4[
@@ -33,44 +34,32 @@ object OptionsScaling {
   }
   
   @scala.inline
-  implicit class OptionsScalingOps[Self <: OptionsScaling] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class OptionsScalingMutableBuilder[Self <: OptionsScaling] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCustomScalingFunction(
       value: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* total */ js.UndefOr[Double], /* value */ js.UndefOr[Double]) => Double
-    ): Self = this.set("customScalingFunction", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "customScalingFunction", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteCustomScalingFunction: Self = this.set("customScalingFunction", js.undefined)
+    def setCustomScalingFunctionUndefined: Self = StObject.set(x, "customScalingFunction", js.undefined)
     
     @scala.inline
-    def setLabel(value: Boolean | DrawThreshold): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: Boolean | DrawThreshold): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

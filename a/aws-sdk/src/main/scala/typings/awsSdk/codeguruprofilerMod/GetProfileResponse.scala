@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetProfileResponse extends js.Object {
+trait GetProfileResponse extends StObject {
   
   /**
     * The content encoding of the profile.
@@ -31,30 +32,18 @@ object GetProfileResponse {
   }
   
   @scala.inline
-  implicit class GetProfileResponseOps[Self <: GetProfileResponse] (val x: Self) extends AnyVal {
+  implicit class GetProfileResponseMutableBuilder[Self <: GetProfileResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfile(value: AggregatedProfile): Self = this.set("profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentEncoding(value: String): Self = this.set("contentEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentEncoding: Self = this.set("contentEncoding", js.undefined)
+    def setProfile(value: AggregatedProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }
 }

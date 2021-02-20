@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains settings of a tab stop.
   */
 @js.native
-trait TabSettings extends js.Object {
+trait TabSettings extends StObject {
   
   /**
     * Specifies the tab alignment type.
@@ -39,30 +40,18 @@ object TabSettings {
   }
   
   @scala.inline
-  implicit class TabSettingsOps[Self <: TabSettings] (val x: Self) extends AnyVal {
+  implicit class TabSettingsMutableBuilder[Self <: TabSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: TabAlign): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeader(value: TabLeaderType): Self = StObject.set(x, "leader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: TabAlign): Self = this.set("alignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeader(value: TabLeaderType): Self = this.set("leader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

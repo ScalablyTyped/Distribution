@@ -3,6 +3,7 @@ package typings.bingmaps.global.Microsoft.Maps
 import typings.bingmaps.Microsoft.Maps.IPolygonOptions
 import typings.bingmaps.Microsoft.Maps.IPolylineOptions
 import typings.bingmaps.Microsoft.Maps.IPushpinOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TestDataGenerator ()
   extends typings.bingmaps.Microsoft.Maps.TestDataGenerator
 /* static members */
-@JSGlobal("Microsoft.Maps.TestDataGenerator")
-@js.native
-object TestDataGenerator extends js.Object {
+object TestDataGenerator {
   
   /**
     * Generates a random hex or rgba color string. 
     * @param withAlpha A boolean indicating if the color should have an alpha value or not. if set to true, a rgba value will be returned with an alpha value of 0.5.
     * @returns A css color string, hex or rgba.
     */
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getColor")
+  @js.native
   def getColor(): String = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getColor")
+  @js.native
   def getColor(withAlpha: Boolean): String = js.native
   
   /**
@@ -30,9 +33,17 @@ object TestDataGenerator extends js.Object {
     * @param bounds The bounding box in which all the locations should fall within.
     * @returns One or more random Locations.
     */
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getLocations")
+  @js.native
   def getLocations(): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getLocations")
+  @js.native
   def getLocations(num: js.UndefOr[scala.Nothing], bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getLocations")
+  @js.native
   def getLocations(num: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getLocations")
+  @js.native
   def getLocations(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
   
   /**
@@ -45,6 +56,8 @@ object TestDataGenerator extends js.Object {
     * @param addHole A boolean indicating if the generated polygon should have a hole or not. Note that this will double the number of Location objects that are in the Polygon. Default: false
     * @returns One or more random polygons.
     */
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolygons")
+  @js.native
   def getPolygons(
     num: js.UndefOr[Double],
     bounds: js.UndefOr[typings.bingmaps.Microsoft.Maps.LocationRect],
@@ -63,7 +76,11 @@ object TestDataGenerator extends js.Object {
     * @param options The options to use for rendering the polylines. Default is random.
     * @returns One or more random Polylines.
     */
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: js.UndefOr[scala.Nothing],
@@ -71,12 +88,16 @@ object TestDataGenerator extends js.Object {
     scaleFactor: js.UndefOr[scala.Nothing],
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: js.UndefOr[scala.Nothing],
     size: js.UndefOr[scala.Nothing],
     scaleFactor: Double
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: js.UndefOr[scala.Nothing],
@@ -84,7 +105,11 @@ object TestDataGenerator extends js.Object {
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(num: js.UndefOr[scala.Nothing], bounds: js.UndefOr[scala.Nothing], size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: js.UndefOr[scala.Nothing],
@@ -92,12 +117,16 @@ object TestDataGenerator extends js.Object {
     scaleFactor: js.UndefOr[scala.Nothing],
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: js.UndefOr[scala.Nothing],
     size: Double,
     scaleFactor: Double
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: js.UndefOr[scala.Nothing],
@@ -105,7 +134,11 @@ object TestDataGenerator extends js.Object {
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(num: js.UndefOr[scala.Nothing], bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
@@ -113,12 +146,16 @@ object TestDataGenerator extends js.Object {
     scaleFactor: js.UndefOr[scala.Nothing],
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: js.UndefOr[scala.Nothing],
     scaleFactor: Double
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
@@ -126,7 +163,11 @@ object TestDataGenerator extends js.Object {
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(num: js.UndefOr[scala.Nothing], bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
@@ -134,12 +175,16 @@ object TestDataGenerator extends js.Object {
     scaleFactor: js.UndefOr[scala.Nothing],
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Double,
     scaleFactor: Double
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: js.UndefOr[scala.Nothing],
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
@@ -147,7 +192,11 @@ object TestDataGenerator extends js.Object {
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(num: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: js.UndefOr[scala.Nothing],
@@ -155,12 +204,16 @@ object TestDataGenerator extends js.Object {
     scaleFactor: js.UndefOr[scala.Nothing],
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: js.UndefOr[scala.Nothing],
     size: js.UndefOr[scala.Nothing],
     scaleFactor: Double
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: js.UndefOr[scala.Nothing],
@@ -168,7 +221,11 @@ object TestDataGenerator extends js.Object {
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(num: Double, bounds: js.UndefOr[scala.Nothing], size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: js.UndefOr[scala.Nothing],
@@ -176,7 +233,11 @@ object TestDataGenerator extends js.Object {
     scaleFactor: js.UndefOr[scala.Nothing],
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(num: Double, bounds: js.UndefOr[scala.Nothing], size: Double, scaleFactor: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: js.UndefOr[scala.Nothing],
@@ -184,7 +245,11 @@ object TestDataGenerator extends js.Object {
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
@@ -192,12 +257,16 @@ object TestDataGenerator extends js.Object {
     scaleFactor: js.UndefOr[scala.Nothing],
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: js.UndefOr[scala.Nothing],
     scaleFactor: Double
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
@@ -205,7 +274,11 @@ object TestDataGenerator extends js.Object {
     scaleFactor: Double,
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, size: Double): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
@@ -213,12 +286,16 @@ object TestDataGenerator extends js.Object {
     scaleFactor: js.UndefOr[scala.Nothing],
     options: IPolylineOptions
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     size: Double,
     scaleFactor: Double
   ): typings.bingmaps.Microsoft.Maps.Polyline | js.Array[typings.bingmaps.Microsoft.Maps.Polyline] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPolylines")
+  @js.native
   def getPolylines(
     num: Double,
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
@@ -234,16 +311,32 @@ object TestDataGenerator extends js.Object {
     * @param options The options to use for rendering the pushpins. Default is random.
     * @returns One or more random Pushpins.
     */
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPushpins")
+  @js.native
   def getPushpins(): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPushpins")
+  @js.native
   def getPushpins(num: js.UndefOr[scala.Nothing], bounds: js.UndefOr[scala.Nothing], options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPushpins")
+  @js.native
   def getPushpins(num: js.UndefOr[scala.Nothing], bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPushpins")
+  @js.native
   def getPushpins(
     num: js.UndefOr[scala.Nothing],
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     options: IPushpinOptions
   ): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPushpins")
+  @js.native
   def getPushpins(num: Double): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPushpins")
+  @js.native
   def getPushpins(num: Double, bounds: js.UndefOr[scala.Nothing], options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPushpins")
+  @js.native
   def getPushpins(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = js.native
+  @JSGlobal("Microsoft.Maps.TestDataGenerator.getPushpins")
+  @js.native
   def getPushpins(num: Double, bounds: typings.bingmaps.Microsoft.Maps.LocationRect, options: IPushpinOptions): typings.bingmaps.Microsoft.Maps.Pushpin | js.Array[typings.bingmaps.Microsoft.Maps.Pushpin] = js.native
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationPolicy extends js.Object {
+trait ApplicationPolicy extends StObject {
   
   /**
     * List of the app’s track IDs that a device belonging to the enterprise can access. If the list contains multiple track IDs, devices receive the latest version among all accessible
@@ -71,103 +72,91 @@ object ApplicationPolicy {
   }
   
   @scala.inline
-  implicit class ApplicationPolicyOps[Self <: ApplicationPolicy] (val x: Self) extends AnyVal {
+  implicit class ApplicationPolicyMutableBuilder[Self <: ApplicationPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleTrackIds(value: js.Array[String]): Self = StObject.set(x, "accessibleTrackIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibleTrackIdsUndefined: Self = StObject.set(x, "accessibleTrackIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibleTrackIdsVarargs(value: String*): Self = StObject.set(x, "accessibleTrackIds", js.Array(value :_*))
     
     @scala.inline
-    def setAccessibleTrackIdsVarargs(value: String*): Self = this.set("accessibleTrackIds", js.Array(value :_*))
+    def setConnectedWorkAndPersonalApp(value: String): Self = StObject.set(x, "connectedWorkAndPersonalApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleTrackIds(value: js.Array[String]): Self = this.set("accessibleTrackIds", value.asInstanceOf[js.Any])
+    def setConnectedWorkAndPersonalAppUndefined: Self = StObject.set(x, "connectedWorkAndPersonalApp", js.undefined)
     
     @scala.inline
-    def deleteAccessibleTrackIds: Self = this.set("accessibleTrackIds", js.undefined)
+    def setDefaultPermissionPolicy(value: String): Self = StObject.set(x, "defaultPermissionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedWorkAndPersonalApp(value: String): Self = this.set("connectedWorkAndPersonalApp", value.asInstanceOf[js.Any])
+    def setDefaultPermissionPolicyUndefined: Self = StObject.set(x, "defaultPermissionPolicy", js.undefined)
     
     @scala.inline
-    def deleteConnectedWorkAndPersonalApp: Self = this.set("connectedWorkAndPersonalApp", js.undefined)
+    def setDelegatedScopes(value: js.Array[String]): Self = StObject.set(x, "delegatedScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPermissionPolicy(value: String): Self = this.set("defaultPermissionPolicy", value.asInstanceOf[js.Any])
+    def setDelegatedScopesUndefined: Self = StObject.set(x, "delegatedScopes", js.undefined)
     
     @scala.inline
-    def deleteDefaultPermissionPolicy: Self = this.set("defaultPermissionPolicy", js.undefined)
+    def setDelegatedScopesVarargs(value: String*): Self = StObject.set(x, "delegatedScopes", js.Array(value :_*))
     
     @scala.inline
-    def setDelegatedScopesVarargs(value: String*): Self = this.set("delegatedScopes", js.Array(value :_*))
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegatedScopes(value: js.Array[String]): Self = this.set("delegatedScopes", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDelegatedScopes: Self = this.set("delegatedScopes", js.undefined)
+    def setInstallType(value: String): Self = StObject.set(x, "installType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setInstallTypeUndefined: Self = StObject.set(x, "installType", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setLockTaskAllowed(value: Boolean): Self = StObject.set(x, "lockTaskAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallType(value: String): Self = this.set("installType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstallType: Self = this.set("installType", js.undefined)
-    
-    @scala.inline
-    def setLockTaskAllowed(value: Boolean): Self = this.set("lockTaskAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLockTaskAllowed: Self = this.set("lockTaskAllowed", js.undefined)
+    def setLockTaskAllowedUndefined: Self = StObject.set(x, "lockTaskAllowed", js.undefined)
     
     @scala.inline
     def setManagedConfiguration(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ApplicationPolicy with TopLevel[js.Any]
-    ): Self = this.set("managedConfiguration", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "managedConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManagedConfiguration: Self = this.set("managedConfiguration", js.undefined)
+    def setManagedConfigurationTemplate(value: ManagedConfigurationTemplate): Self = StObject.set(x, "managedConfigurationTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedConfigurationTemplate(value: ManagedConfigurationTemplate): Self = this.set("managedConfigurationTemplate", value.asInstanceOf[js.Any])
+    def setManagedConfigurationTemplateUndefined: Self = StObject.set(x, "managedConfigurationTemplate", js.undefined)
     
     @scala.inline
-    def deleteManagedConfigurationTemplate: Self = this.set("managedConfigurationTemplate", js.undefined)
+    def setManagedConfigurationUndefined: Self = StObject.set(x, "managedConfiguration", js.undefined)
     
     @scala.inline
-    def setMinimumVersionCode(value: Double): Self = this.set("minimumVersionCode", value.asInstanceOf[js.Any])
+    def setMinimumVersionCode(value: Double): Self = StObject.set(x, "minimumVersionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumVersionCode: Self = this.set("minimumVersionCode", js.undefined)
+    def setMinimumVersionCodeUndefined: Self = StObject.set(x, "minimumVersionCode", js.undefined)
     
     @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     @scala.inline
-    def setPermissionGrantsVarargs(value: PermissionGrant*): Self = this.set("permissionGrants", js.Array(value :_*))
+    def setPermissionGrants(value: js.Array[PermissionGrant]): Self = StObject.set(x, "permissionGrants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionGrants(value: js.Array[PermissionGrant]): Self = this.set("permissionGrants", value.asInstanceOf[js.Any])
+    def setPermissionGrantsUndefined: Self = StObject.set(x, "permissionGrants", js.undefined)
     
     @scala.inline
-    def deletePermissionGrants: Self = this.set("permissionGrants", js.undefined)
+    def setPermissionGrantsVarargs(value: PermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value :_*))
   }
 }

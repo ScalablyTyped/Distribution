@@ -1,46 +1,40 @@
 package typings.tizenCommonWeb.tizenMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FilterMatchFlag extends js.Object
+sealed trait FilterMatchFlag extends StObject
 @JSImport("tizen-common-web/tizen", "FilterMatchFlag")
 @js.native
-object FilterMatchFlag extends js.Object {
+object FilterMatchFlag extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FilterMatchFlag with String] = js.native
   
   @js.native
   sealed trait CONTAINS extends FilterMatchFlag
-  /* "CONTAINS" */ @js.native
-  object CONTAINS extends TopLevel[CONTAINS with String]
+  /* "CONTAINS" */ val CONTAINS: typings.tizenCommonWeb.tizenMod.FilterMatchFlag.CONTAINS with String = js.native
   
   @js.native
   sealed trait ENDSWITH extends FilterMatchFlag
-  /* "ENDSWITH" */ @js.native
-  object ENDSWITH extends TopLevel[ENDSWITH with String]
+  /* "ENDSWITH" */ val ENDSWITH: typings.tizenCommonWeb.tizenMod.FilterMatchFlag.ENDSWITH with String = js.native
   
   @js.native
   sealed trait EXACTLY extends FilterMatchFlag
-  /* "EXACTLY" */ @js.native
-  object EXACTLY extends TopLevel[EXACTLY with String]
+  /* "EXACTLY" */ val EXACTLY: typings.tizenCommonWeb.tizenMod.FilterMatchFlag.EXACTLY with String = js.native
   
   @js.native
   sealed trait EXISTS extends FilterMatchFlag
-  /* "EXISTS" */ @js.native
-  object EXISTS extends TopLevel[EXISTS with String]
+  /* "EXISTS" */ val EXISTS: typings.tizenCommonWeb.tizenMod.FilterMatchFlag.EXISTS with String = js.native
   
   @js.native
   sealed trait FULLSTRING extends FilterMatchFlag
-  /* "FULLSTRING" */ @js.native
-  object FULLSTRING extends TopLevel[FULLSTRING with String]
+  /* "FULLSTRING" */ val FULLSTRING: typings.tizenCommonWeb.tizenMod.FilterMatchFlag.FULLSTRING with String = js.native
   
   @js.native
   sealed trait STARTSWITH extends FilterMatchFlag
-  /* "STARTSWITH" */ @js.native
-  object STARTSWITH extends TopLevel[STARTSWITH with String]
+  /* "STARTSWITH" */ val STARTSWITH: typings.tizenCommonWeb.tizenMod.FilterMatchFlag.STARTSWITH with String = js.native
 }

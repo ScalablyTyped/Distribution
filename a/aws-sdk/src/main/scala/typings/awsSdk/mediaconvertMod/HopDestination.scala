@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HopDestination extends js.Object {
+trait HopDestination extends StObject {
   
   /**
     * Optional. When you set up a job to use queue hopping, you can specify a different relative priority for the job in the destination queue. If you don't specify, the relative priority will remain the same as in the previous queue.
@@ -31,36 +32,24 @@ object HopDestination {
   }
   
   @scala.inline
-  implicit class HopDestinationOps[Self <: HopDestination] (val x: Self) extends AnyVal {
+  implicit class HopDestinationMutableBuilder[Self <: HopDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPriority(value: integerMinNegative50Max50): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueue(value: string): Self = StObject.set(x, "Queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: integerMinNegative50Max50): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    def setQueueUndefined: Self = StObject.set(x, "Queue", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("Priority", js.undefined)
+    def setWaitMinutes(value: integer): Self = StObject.set(x, "WaitMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueue(value: string): Self = this.set("Queue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueue: Self = this.set("Queue", js.undefined)
-    
-    @scala.inline
-    def setWaitMinutes(value: integer): Self = this.set("WaitMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitMinutes: Self = this.set("WaitMinutes", js.undefined)
+    def setWaitMinutesUndefined: Self = StObject.set(x, "WaitMinutes", js.undefined)
   }
 }

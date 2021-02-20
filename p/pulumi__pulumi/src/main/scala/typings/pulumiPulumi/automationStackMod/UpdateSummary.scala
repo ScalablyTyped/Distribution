@@ -3,12 +3,13 @@ package typings.pulumiPulumi.automationStackMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.automationConfigMod.ConfigMap
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateSummary extends js.Object {
+trait UpdateSummary extends StObject {
   
   var Deployment: js.UndefOr[RawJSON] = js.native
   
@@ -48,54 +49,42 @@ object UpdateSummary {
   }
   
   @scala.inline
-  implicit class UpdateSummaryOps[Self <: UpdateSummary] (val x: Self) extends AnyVal {
+  implicit class UpdateSummaryMutableBuilder[Self <: UpdateSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: ConfigMap): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeployment(value: RawJSON): Self = StObject.set(x, "Deployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentUndefined: Self = StObject.set(x, "Deployment", js.undefined)
     
     @scala.inline
-    def setConfig(value: ConfigMap): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Date): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: StringDictionary[String]): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setKind(value: UpdateKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: UpdateKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setResourceChanges(value: OpMap): Self = StObject.set(x, "resourceChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: UpdateResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResourceChangesUndefined: Self = StObject.set(x, "resourceChanges", js.undefined)
     
     @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setResult(value: UpdateResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployment(value: RawJSON): Self = this.set("Deployment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeployment: Self = this.set("Deployment", js.undefined)
-    
-    @scala.inline
-    def setResourceChanges(value: OpMap): Self = this.set("resourceChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceChanges: Self = this.set("resourceChanges", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

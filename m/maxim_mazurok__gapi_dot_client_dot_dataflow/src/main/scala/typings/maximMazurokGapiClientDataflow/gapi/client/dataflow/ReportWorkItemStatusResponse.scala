@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportWorkItemStatusResponse extends js.Object {
+trait ReportWorkItemStatusResponse extends StObject {
   
   /** Untranslated bag-of-bytes WorkProgressUpdateResponse for UnifiedWorker. */
   var unifiedWorkerResponse: js.UndefOr[
@@ -30,37 +31,25 @@ object ReportWorkItemStatusResponse {
   }
   
   @scala.inline
-  implicit class ReportWorkItemStatusResponseOps[Self <: ReportWorkItemStatusResponse] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ReportWorkItemStatusResponseMutableBuilder[Self <: ReportWorkItemStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setUnifiedWorkerResponse(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusResponse with TopLevel[js.Any]
-    ): Self = this.set("unifiedWorkerResponse", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unifiedWorkerResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnifiedWorkerResponse: Self = this.set("unifiedWorkerResponse", js.undefined)
+    def setUnifiedWorkerResponseUndefined: Self = StObject.set(x, "unifiedWorkerResponse", js.undefined)
     
     @scala.inline
-    def setWorkItemServiceStatesVarargs(value: WorkItemServiceState*): Self = this.set("workItemServiceStates", js.Array(value :_*))
+    def setWorkItemServiceStates(value: js.Array[WorkItemServiceState]): Self = StObject.set(x, "workItemServiceStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkItemServiceStates(value: js.Array[WorkItemServiceState]): Self = this.set("workItemServiceStates", value.asInstanceOf[js.Any])
+    def setWorkItemServiceStatesUndefined: Self = StObject.set(x, "workItemServiceStates", js.undefined)
     
     @scala.inline
-    def deleteWorkItemServiceStates: Self = this.set("workItemServiceStates", js.undefined)
+    def setWorkItemServiceStatesVarargs(value: WorkItemServiceState*): Self = StObject.set(x, "workItemServiceStates", js.Array(value :_*))
   }
 }

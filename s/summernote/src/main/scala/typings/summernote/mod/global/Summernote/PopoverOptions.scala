@@ -1,12 +1,13 @@
 package typings.summernote.mod.global.Summernote
 
 import typings.summernote.summernoteStrings.link
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopoverOptions extends js.Object {
+trait PopoverOptions extends StObject {
   
   var air: js.UndefOr[popoverAirDef] = js.native
   
@@ -23,39 +24,27 @@ object PopoverOptions {
   }
   
   @scala.inline
-  implicit class PopoverOptionsOps[Self <: PopoverOptions] (val x: Self) extends AnyVal {
+  implicit class PopoverOptionsMutableBuilder[Self <: PopoverOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAir(value: popoverAirDef): Self = StObject.set(x, "air", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAirUndefined: Self = StObject.set(x, "air", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: popoverImageDef): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAir(value: popoverAirDef): Self = this.set("air", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteAir: Self = this.set("air", js.undefined)
+    def setLink(value: popoverLinkDef): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: popoverImageDef): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
-    
-    @scala.inline
-    def setLinkVarargs(value: (js.Tuple2[link, js.Array[popoverLinkLinkOptions]])*): Self = this.set("link", js.Array(value :_*))
-    
-    @scala.inline
-    def setLink(value: popoverLinkDef): Self = this.set("link", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setLinkVarargs(value: (js.Tuple2[link, js.Array[popoverLinkLinkOptions]])*): Self = StObject.set(x, "link", js.Array(value :_*))
   }
 }

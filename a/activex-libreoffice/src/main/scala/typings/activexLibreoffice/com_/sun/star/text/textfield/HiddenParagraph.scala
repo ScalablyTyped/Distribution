@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.text.TextField_
 import typings.activexLibreoffice.com_.sun.star.text.WrapTextMode
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,24 +67,12 @@ object HiddenParagraph {
   }
   
   @scala.inline
-  implicit class HiddenParagraphOps[Self <: HiddenParagraph] (val x: Self) extends AnyVal {
+  implicit class HiddenParagraphMutableBuilder[Self <: HiddenParagraph] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCondition(value: String): Self = this.set("Condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsHidden(value: Boolean): Self = this.set("IsHidden", value.asInstanceOf[js.Any])
+    def setIsHidden(value: Boolean): Self = StObject.set(x, "IsHidden", value.asInstanceOf[js.Any])
   }
 }

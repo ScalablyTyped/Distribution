@@ -1,40 +1,98 @@
 package typings.reactPose
 
-import typings.reactPose.anon.EnterAfterExit
+import org.scalablytyped.runtime.Shortcut
 import typings.reactPose.anon.FlipMove
 import typings.reactPose.anon.PartialState
 import typings.reactPose.posedMod.Posed
 import typings.reactPose.transitionTypesMod.Props
 import typings.reactPose.transitionTypesMod.State
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-pose", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("react-pose", JSImport.Default)
+  @js.native
   val default: Posed = js.native
   
+  @JSImport("react-pose", "PoseGroup")
   @js.native
   class PoseGroup ()
     extends typings.reactPose.poseGroupMod.default
   /* static members */
-  @js.native
-  object PoseGroup extends js.Object {
+  object PoseGroup {
     
-    var defaultProps: FlipMove = js.native
+    @JSImport("react-pose", "PoseGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-pose", "PoseGroup.defaultProps")
+    @js.native
+    def defaultProps: FlipMove = js.native
+    @scala.inline
+    def defaultProps_=(x: FlipMove): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("react-pose", "Transition")
   @js.native
   class Transition ()
     extends typings.reactPose.transitionMod.default
-  /* static members */
-  @js.native
-  object Transition extends js.Object {
+  object Transition {
     
-    var defaultProps: EnterAfterExit = js.native
+    @JSImport("react-pose", "Transition")
+    @js.native
+    val ^ : js.Any = js.native
     
-    def getDerivedStateFromProps(props: Props, state: State): PartialState = js.native
+    /* static member */
+    object defaultProps {
+      
+      @JSImport("react-pose", "Transition.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("react-pose", "Transition.defaultProps.enterAfterExit")
+      @js.native
+      def enterAfterExit: Boolean = js.native
+      @scala.inline
+      def enterAfterExit_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterAfterExit")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-pose", "Transition.defaultProps.enterPose")
+      @js.native
+      def enterPose: String = js.native
+      @scala.inline
+      def enterPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterPose")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-pose", "Transition.defaultProps.exitPose")
+      @js.native
+      def exitPose: String = js.native
+      @scala.inline
+      def exitPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exitPose")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-pose", "Transition.defaultProps.flipMove")
+      @js.native
+      def flipMove: Boolean = js.native
+      @scala.inline
+      def flipMove_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flipMove")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-pose", "Transition.defaultProps.preEnterPose")
+      @js.native
+      def preEnterPose: String = js.native
+      @scala.inline
+      def preEnterPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preEnterPose")(x.asInstanceOf[js.Any])
+    }
+    
+    /* static member */
+    @JSImport("react-pose", "Transition.getDerivedStateFromProps")
+    @js.native
+    def getDerivedStateFromProps: js.Function2[/* props */ Props, /* state */ State, PartialState] = js.native
+    @scala.inline
+    def getDerivedStateFromProps_=(x: js.Function2[/* props */ Props, /* state */ State, PartialState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
   }
+  
+  type _To = Posed
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: Posed = default
 }

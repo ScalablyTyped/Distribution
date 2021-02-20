@@ -1,5 +1,6 @@
 package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Upload reference for media files.
   */
 @js.native
-trait SchemaUploadRef extends js.Object {
+trait SchemaUploadRef extends StObject {
   
   /**
     * Required. An upload reference should be unique for each user. It follows
@@ -26,24 +27,12 @@ object SchemaUploadRef {
   }
   
   @scala.inline
-  implicit class SchemaUploadRefOps[Self <: SchemaUploadRef] (val x: Self) extends AnyVal {
+  implicit class SchemaUploadRefMutableBuilder[Self <: SchemaUploadRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUploadUrl(value: String): Self = this.set("uploadUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadUrl: Self = this.set("uploadUrl", js.undefined)
+    def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
   }
 }

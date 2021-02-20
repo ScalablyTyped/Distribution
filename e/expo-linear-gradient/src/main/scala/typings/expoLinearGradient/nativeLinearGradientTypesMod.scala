@@ -3,13 +3,12 @@ package typings.expoLinearGradient
 import typings.expoLinearGradient.anon.PropsWithChildrencolorsAr
 import typings.expoLinearGradient.anon.TypeofView
 import typings.react.mod.ComponentProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo-linear-gradient/build/NativeLinearGradient.types", JSImport.Namespace)
-@js.native
-object nativeLinearGradientTypesMod extends js.Object {
+object nativeLinearGradientTypesMod {
   
   type NativeLinearGradientPoint = js.Tuple2[Double, Double]
   

@@ -1,6 +1,6 @@
 package typings.asana.mod.auth
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +26,19 @@ trait NativeFlow extends Flow {
     */
   def promptForCode(url: String): js.Any = js.native
 }
-@JSImport("asana", "auth.NativeFlow")
-@js.native
-object NativeFlow extends TopLevel[NativeFlowStatic]
+object NativeFlow {
+  
+  @JSImport("asana", "auth.NativeFlow")
+  @js.native
+  val ^ : NativeFlowStatic = js.native
+  
+  @scala.inline
+  implicit class NativeFlowMutableBuilder[Self <: NativeFlow] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAccessToken(value: String => Unit): Self = StObject.set(x, "accessToken", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setPromptForCode(value: String => js.Any): Self = StObject.set(x, "promptForCode", js.Any.fromFunction1(value))
+  }
+}

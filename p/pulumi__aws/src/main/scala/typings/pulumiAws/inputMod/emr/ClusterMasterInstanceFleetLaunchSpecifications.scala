@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.emr
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterMasterInstanceFleetLaunchSpecifications extends js.Object {
+trait ClusterMasterInstanceFleetLaunchSpecifications extends StObject {
   
   /**
     * Configuration block for on demand instances launch specifications
@@ -33,40 +34,28 @@ object ClusterMasterInstanceFleetLaunchSpecifications {
   }
   
   @scala.inline
-  implicit class ClusterMasterInstanceFleetLaunchSpecificationsOps[Self <: ClusterMasterInstanceFleetLaunchSpecifications] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnDemandSpecificationsVarargs(value: Input[ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification]*): Self = this.set("onDemandSpecifications", js.Array(value :_*))
+  implicit class ClusterMasterInstanceFleetLaunchSpecificationsMutableBuilder[Self <: ClusterMasterInstanceFleetLaunchSpecifications] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setOnDemandSpecifications(
       value: Input[
           js.Array[Input[ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification]]
         ]
-    ): Self = this.set("onDemandSpecifications", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onDemandSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnDemandSpecifications: Self = this.set("onDemandSpecifications", js.undefined)
+    def setOnDemandSpecificationsUndefined: Self = StObject.set(x, "onDemandSpecifications", js.undefined)
     
     @scala.inline
-    def setSpotSpecificationsVarargs(value: Input[ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification]*): Self = this.set("spotSpecifications", js.Array(value :_*))
+    def setOnDemandSpecificationsVarargs(value: Input[ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification]*): Self = StObject.set(x, "onDemandSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def setSpotSpecifications(value: Input[js.Array[Input[ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification]]]): Self = this.set("spotSpecifications", value.asInstanceOf[js.Any])
+    def setSpotSpecifications(value: Input[js.Array[Input[ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification]]]): Self = StObject.set(x, "spotSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpotSpecifications: Self = this.set("spotSpecifications", js.undefined)
+    def setSpotSpecificationsUndefined: Self = StObject.set(x, "spotSpecifications", js.undefined)
+    
+    @scala.inline
+    def setSpotSpecificationsVarargs(value: Input[ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification]*): Self = StObject.set(x, "spotSpecifications", js.Array(value :_*))
   }
 }

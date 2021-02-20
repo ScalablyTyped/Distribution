@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Oauthtoken
 import typings.maximMazurokGapiClientAndroidpublisher.anon.PackageName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestersResource extends js.Object {
+trait TestersResource extends StObject {
   
   /** Gets testers. */
   def get(): Request[Testers] = js.native

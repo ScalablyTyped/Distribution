@@ -1,17 +1,18 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataExecutionState extends js.Object
+sealed trait DataExecutionState extends StObject
 /**
   * An enumeration of data execution states.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.DataExecutionState")
 @js.native
-object DataExecutionState extends js.Object {
+object DataExecutionState extends StObject {
   
   @js.native
   sealed trait DATA_EXECUTION_STATE_UNSUPPORTED extends DataExecutionState

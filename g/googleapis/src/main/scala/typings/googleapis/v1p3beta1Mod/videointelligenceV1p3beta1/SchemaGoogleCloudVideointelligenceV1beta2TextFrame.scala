@@ -1,5 +1,6 @@
 package typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * containing detected OCR text snippets.
   */
 @js.native
-trait SchemaGoogleCloudVideointelligenceV1beta2TextFrame extends js.Object {
+trait SchemaGoogleCloudVideointelligenceV1beta2TextFrame extends StObject {
   
   /**
     * Bounding polygon of the detected text for this frame.
@@ -31,30 +32,18 @@ object SchemaGoogleCloudVideointelligenceV1beta2TextFrame {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1beta2TextFrameOps[Self <: SchemaGoogleCloudVideointelligenceV1beta2TextFrame] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVideointelligenceV1beta2TextFrameMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1beta2TextFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRotatedBoundingBox(value: SchemaGoogleCloudVideointelligenceV1beta2NormalizedBoundingPoly): Self = StObject.set(x, "rotatedBoundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRotatedBoundingBoxUndefined: Self = StObject.set(x, "rotatedBoundingBox", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotatedBoundingBox(value: SchemaGoogleCloudVideointelligenceV1beta2NormalizedBoundingPoly): Self = this.set("rotatedBoundingBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotatedBoundingBox: Self = this.set("rotatedBoundingBox", js.undefined)
-    
-    @scala.inline
-    def setTimeOffset(value: String): Self = this.set("timeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeOffset: Self = this.set("timeOffset", js.undefined)
+    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }
 }

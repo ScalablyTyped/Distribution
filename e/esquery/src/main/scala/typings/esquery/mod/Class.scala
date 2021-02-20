@@ -6,6 +6,7 @@ import typings.esquery.esqueryStrings.expression
 import typings.esquery.esqueryStrings.function
 import typings.esquery.esqueryStrings.pattern
 import typings.esquery.esqueryStrings.statement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,24 +31,12 @@ object Class {
   }
   
   @scala.inline
-  implicit class ClassOps[Self <: Class] (val x: Self) extends AnyVal {
+  implicit class ClassMutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: declaration | expression | function | pattern | statement): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: declaration | expression | function | pattern | statement): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `class`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

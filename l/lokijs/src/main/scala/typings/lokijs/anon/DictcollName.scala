@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.lokijs.lokijsStrings.destructured
 import typings.lokijs.lokijsStrings.normal
 import typings.lokijs.lokijsStrings.pretty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,39 +28,27 @@ object DictcollName {
   }
   
   @scala.inline
-  implicit class DictcollNameOps[Self <: DictcollName] (val x: Self) extends AnyVal {
+  implicit class DictcollNameMutableBuilder[Self <: DictcollName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRetainDirtyFlags(value: Boolean): Self = StObject.set(x, "retainDirtyFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRetainDirtyFlagsUndefined: Self = StObject.set(x, "retainDirtyFlags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSerializationMethod(value: normal | pretty | destructured): Self = StObject.set(x, "serializationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetainDirtyFlags(value: Boolean): Self = this.set("retainDirtyFlags", value.asInstanceOf[js.Any])
+    def setSerializationMethodNull: Self = StObject.set(x, "serializationMethod", null)
     
     @scala.inline
-    def deleteRetainDirtyFlags: Self = this.set("retainDirtyFlags", js.undefined)
+    def setSerializationMethodUndefined: Self = StObject.set(x, "serializationMethod", js.undefined)
     
     @scala.inline
-    def setSerializationMethod(value: normal | pretty | destructured): Self = this.set("serializationMethod", value.asInstanceOf[js.Any])
+    def setThrottledSaves(value: Boolean): Self = StObject.set(x, "throttledSaves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSerializationMethod: Self = this.set("serializationMethod", js.undefined)
-    
-    @scala.inline
-    def setSerializationMethodNull: Self = this.set("serializationMethod", null)
-    
-    @scala.inline
-    def setThrottledSaves(value: Boolean): Self = this.set("throttledSaves", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottledSaves: Self = this.set("throttledSaves", js.undefined)
+    def setThrottledSavesUndefined: Self = StObject.set(x, "throttledSaves", js.undefined)
   }
 }

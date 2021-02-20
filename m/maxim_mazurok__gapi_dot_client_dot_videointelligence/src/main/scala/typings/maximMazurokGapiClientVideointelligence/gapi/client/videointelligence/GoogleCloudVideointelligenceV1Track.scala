@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1Track extends js.Object {
+trait GoogleCloudVideointelligenceV1Track extends StObject {
   
   /** Optional. Attributes in the track level. */
   var attributes: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1DetectedAttribute]] = js.native
@@ -28,48 +29,36 @@ object GoogleCloudVideointelligenceV1Track {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1TrackOps[Self <: GoogleCloudVideointelligenceV1Track] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1TrackMutableBuilder[Self <: GoogleCloudVideointelligenceV1Track] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[GoogleCloudVideointelligenceV1DetectedAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: GoogleCloudVideointelligenceV1DetectedAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: GoogleCloudVideointelligenceV1DetectedAttribute*): Self = this.set("attributes", js.Array(value :_*))
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Array[GoogleCloudVideointelligenceV1DetectedAttribute]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setSegment(value: GoogleCloudVideointelligenceV1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setTimestampedObjects(value: js.Array[GoogleCloudVideointelligenceV1TimestampedObject]): Self = StObject.set(x, "timestampedObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegment(value: GoogleCloudVideointelligenceV1VideoSegment): Self = this.set("segment", value.asInstanceOf[js.Any])
+    def setTimestampedObjectsUndefined: Self = StObject.set(x, "timestampedObjects", js.undefined)
     
     @scala.inline
-    def deleteSegment: Self = this.set("segment", js.undefined)
-    
-    @scala.inline
-    def setTimestampedObjectsVarargs(value: GoogleCloudVideointelligenceV1TimestampedObject*): Self = this.set("timestampedObjects", js.Array(value :_*))
-    
-    @scala.inline
-    def setTimestampedObjects(value: js.Array[GoogleCloudVideointelligenceV1TimestampedObject]): Self = this.set("timestampedObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampedObjects: Self = this.set("timestampedObjects", js.undefined)
+    def setTimestampedObjectsVarargs(value: GoogleCloudVideointelligenceV1TimestampedObject*): Self = StObject.set(x, "timestampedObjects", js.Array(value :_*))
   }
 }

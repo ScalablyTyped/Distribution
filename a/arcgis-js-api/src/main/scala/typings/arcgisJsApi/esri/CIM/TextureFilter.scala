@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextureFilter extends js.Object
+sealed trait TextureFilter extends StObject
 @JSGlobal("__esri.CIM.TextureFilter")
 @js.native
-object TextureFilter extends js.Object {
+object TextureFilter extends StObject {
   
   /**
     * Low draft quality.

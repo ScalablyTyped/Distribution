@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * on any of these objects for details on accessing Property objects.
   */
 @js.native
-trait Property extends js.Object {
+trait Property extends StObject {
   
   /** Indicates whether the Property Value is read only */
   val IsReadOnly: Boolean = js.native

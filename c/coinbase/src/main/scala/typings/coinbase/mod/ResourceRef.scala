@@ -1,11 +1,12 @@
 package typings.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceRef extends js.Object {
+trait ResourceRef extends StObject {
   
   var id: String = js.native
   
@@ -22,27 +23,15 @@ object ResourceRef {
   }
   
   @scala.inline
-  implicit class ResourceRefOps[Self <: ResourceRef] (val x: Self) extends AnyVal {
+  implicit class ResourceRefMutableBuilder[Self <: ResourceRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResource(value: ResourceType): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResource(value: ResourceType): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResource_path(value: String): Self = this.set("resource_path", value.asInstanceOf[js.Any])
+    def setResource_path(value: String): Self = StObject.set(x, "resource_path", value.asInstanceOf[js.Any])
   }
 }

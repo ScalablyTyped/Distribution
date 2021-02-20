@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Media.Devices.Core
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Media.MediaProperties.IMediaEncodingProperties
 import typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the settings for a variable photo sequence. */
 @js.native
-trait VariablePhotoSequenceController extends js.Object {
+trait VariablePhotoSequenceController extends StObject {
   
   /** Gets the list of FrameController objects that determine the settings for each frame in a variable photo sequence. */
   var desiredFrameControllers: IVector[FrameController] = js.native
@@ -56,39 +57,27 @@ object VariablePhotoSequenceController {
   }
   
   @scala.inline
-  implicit class VariablePhotoSequenceControllerOps[Self <: VariablePhotoSequenceController] (val x: Self) extends AnyVal {
+  implicit class VariablePhotoSequenceControllerMutableBuilder[Self <: VariablePhotoSequenceController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredFrameControllers(value: IVector[FrameController]): Self = StObject.set(x, "desiredFrameControllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameCapabilities(value: FrameControlCapabilities): Self = StObject.set(x, "frameCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentFrameRate(value: () => MediaRatio): Self = StObject.set(x, "getCurrentFrameRate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDesiredFrameControllers(value: IVector[FrameController]): Self = this.set("desiredFrameControllers", value.asInstanceOf[js.Any])
+    def setGetHighestConcurrentFrameRate(value: IMediaEncodingProperties => MediaRatio): Self = StObject.set(x, "getHighestConcurrentFrameRate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFrameCapabilities(value: FrameControlCapabilities): Self = this.set("frameCapabilities", value.asInstanceOf[js.Any])
+    def setMaxPhotosPerSecond(value: Double): Self = StObject.set(x, "maxPhotosPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentFrameRate(value: () => MediaRatio): Self = this.set("getCurrentFrameRate", js.Any.fromFunction0(value))
+    def setPhotosPerSecondLimit(value: Double): Self = StObject.set(x, "photosPerSecondLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHighestConcurrentFrameRate(value: IMediaEncodingProperties => MediaRatio): Self = this.set("getHighestConcurrentFrameRate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMaxPhotosPerSecond(value: Double): Self = this.set("maxPhotosPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhotosPerSecondLimit(value: Double): Self = this.set("photosPerSecondLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupported(value: Boolean): Self = this.set("supported", value.asInstanceOf[js.Any])
+    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
   }
 }

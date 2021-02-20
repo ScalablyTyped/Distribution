@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Invisibles extends js.Object {
+trait Invisibles extends StObject {
   
   /**
     *  Character used to render carriage return characters (for Microsoft-style line
@@ -40,42 +41,30 @@ object Invisibles {
   }
   
   @scala.inline
-  implicit class InvisiblesOps[Self <: Invisibles] (val x: Self) extends AnyVal {
+  implicit class InvisiblesMutableBuilder[Self <: Invisibles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCr(value: Boolean | String): Self = StObject.set(x, "cr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrUndefined: Self = StObject.set(x, "cr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEol(value: Boolean | String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCr(value: Boolean | String): Self = this.set("cr", value.asInstanceOf[js.Any])
+    def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
     
     @scala.inline
-    def deleteCr: Self = this.set("cr", js.undefined)
+    def setSpace(value: Boolean | String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEol(value: Boolean | String): Self = this.set("eol", value.asInstanceOf[js.Any])
+    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def deleteEol: Self = this.set("eol", js.undefined)
+    def setTab(value: Boolean | String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpace(value: Boolean | String): Self = this.set("space", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpace: Self = this.set("space", js.undefined)
-    
-    @scala.inline
-    def setTab(value: Boolean | String): Self = this.set("tab", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTab: Self = this.set("tab", js.undefined)
+    def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergeCellsRequest extends js.Object {
+trait MergeCellsRequest extends StObject {
   
   /** How the cells should be merged. */
   var mergeType: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object MergeCellsRequest {
   }
   
   @scala.inline
-  implicit class MergeCellsRequestOps[Self <: MergeCellsRequest] (val x: Self) extends AnyVal {
+  implicit class MergeCellsRequestMutableBuilder[Self <: MergeCellsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMergeType(value: String): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMergeTypeUndefined: Self = StObject.set(x, "mergeType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeType(value: String): Self = this.set("mergeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergeType: Self = this.set("mergeType", js.undefined)
-    
-    @scala.inline
-    def setRange(value: GridRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

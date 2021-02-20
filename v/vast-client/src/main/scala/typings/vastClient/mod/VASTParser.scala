@@ -1,9 +1,11 @@
 package typings.vastClient.mod
 
 import typings.node.eventsMod.EventEmitter
+import typings.node.eventsMod.EventEmitterOptions
 import typings.std.Document
 import typings.vastClient.anon.PickVastErrorERRORCODE
 import typings.vastClient.anon.PickVastErrorExcludekeyof
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vast-client", "VASTParser")
 @js.native
 class VASTParser () extends EventEmitter {
+  def this(options: EventEmitterOptions) = this()
   
   /**
     * Add the replace function at the end of the URLTemplateFilters array.

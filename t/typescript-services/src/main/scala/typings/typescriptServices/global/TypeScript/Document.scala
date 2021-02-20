@@ -1,6 +1,7 @@
 package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.IScriptSnapshot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,11 +23,11 @@ class Document protected ()
     _topLevelDecl: typings.typescriptServices.TypeScript.PullDecl
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.Document")
-@js.native
-object Document extends js.Object {
+object Document {
   
+  /* static member */
+  @JSGlobal("TypeScript.Document.create")
+  @js.native
   def create(
     compiler: typings.typescriptServices.TypeScript.TypeScriptCompiler,
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain,

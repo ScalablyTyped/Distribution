@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Data.Text
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Permits apps to perform text queries using Advanced Query Syntax (AQS) strings, with the option of providing a language tag to be employed in the query. */
 @js.native
-trait SemanticTextQuery extends js.Object {
+trait SemanticTextQuery extends StObject {
   
   /**
     * Returns segments of a source string that match the SemanticTextQuery object's query.
@@ -36,24 +37,12 @@ object SemanticTextQuery {
   }
   
   @scala.inline
-  implicit class SemanticTextQueryOps[Self <: SemanticTextQuery] (val x: Self) extends AnyVal {
+  implicit class SemanticTextQueryMutableBuilder[Self <: SemanticTextQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFind(value: String => IVectorView[TextSegment]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFind(value: String => IVectorView[TextSegment]): Self = this.set("find", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFindInProperty(value: (String, String) => IVectorView[TextSegment]): Self = this.set("findInProperty", js.Any.fromFunction2(value))
+    def setFindInProperty(value: (String, String) => IVectorView[TextSegment]): Self = StObject.set(x, "findInProperty", js.Any.fromFunction2(value))
   }
 }

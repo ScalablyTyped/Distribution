@@ -1,8 +1,9 @@
 package typings.googleCloudTasks.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/tasks", JSImport.Default)
 @js.native
@@ -36,26 +37,37 @@ class default protected () extends CloudTasksClient {
     */
   def this(config: CloudTasksConfig) = this()
 }
-
 /* static members */
-@JSImport("@google-cloud/tasks", JSImport.Default)
-@js.native
-object default extends js.Object {
+object default {
+  
+  @JSImport("@google-cloud/tasks", JSImport.Default)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * The port for this API service.
     * @default 443
     */
+  @JSImport("@google-cloud/tasks", "default.port")
+  @js.native
   val port: Double = js.native
+  
   /**
     * The scopes needed to make gRPC calls for every method defined
     * in this service.
     * @default ["https://www.googleapis.com/auth/cloud-platform"]
     */
-  var readonlyscopes: String = js.native
+  @JSImport("@google-cloud/tasks", "default.readonlyscopes")
+  @js.native
+  def readonlyscopes: String = js.native
+  @scala.inline
+  def readonlyscopes_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readonlyscopes")(x.asInstanceOf[js.Any])
+  
   /**
     * The DNS address for this API service.
     * @default 'cloudtasks.googleapis.com'
     */
+  @JSImport("@google-cloud/tasks", "default.servicePath")
+  @js.native
   val servicePath: String = js.native
 }
-

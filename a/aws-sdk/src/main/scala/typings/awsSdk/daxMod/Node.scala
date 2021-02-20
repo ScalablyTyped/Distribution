@@ -1,11 +1,12 @@
 package typings.awsSdk.daxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node extends js.Object {
+trait Node extends StObject {
   
   /**
     * The Availability Zone (AZ) in which the node has been deployed.
@@ -46,54 +47,42 @@ object Node {
   }
   
   @scala.inline
-  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setNodeCreateTime(value: TStamp): Self = StObject.set(x, "NodeCreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: Endpoint): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    def setNodeCreateTimeUndefined: Self = StObject.set(x, "NodeCreateTime", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    def setNodeId(value: String): Self = StObject.set(x, "NodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeCreateTime(value: TStamp): Self = this.set("NodeCreateTime", value.asInstanceOf[js.Any])
+    def setNodeIdUndefined: Self = StObject.set(x, "NodeId", js.undefined)
     
     @scala.inline
-    def deleteNodeCreateTime: Self = this.set("NodeCreateTime", js.undefined)
+    def setNodeStatus(value: String): Self = StObject.set(x, "NodeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeId(value: String): Self = this.set("NodeId", value.asInstanceOf[js.Any])
+    def setNodeStatusUndefined: Self = StObject.set(x, "NodeStatus", js.undefined)
     
     @scala.inline
-    def deleteNodeId: Self = this.set("NodeId", js.undefined)
+    def setParameterGroupStatus(value: String): Self = StObject.set(x, "ParameterGroupStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeStatus(value: String): Self = this.set("NodeStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeStatus: Self = this.set("NodeStatus", js.undefined)
-    
-    @scala.inline
-    def setParameterGroupStatus(value: String): Self = this.set("ParameterGroupStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterGroupStatus: Self = this.set("ParameterGroupStatus", js.undefined)
+    def setParameterGroupStatusUndefined: Self = StObject.set(x, "ParameterGroupStatus", js.undefined)
   }
 }

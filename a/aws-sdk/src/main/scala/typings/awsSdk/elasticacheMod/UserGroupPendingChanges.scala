@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserGroupPendingChanges extends js.Object {
+trait UserGroupPendingChanges extends StObject {
   
   /**
     * The list of user IDs to add.
@@ -26,36 +27,24 @@ object UserGroupPendingChanges {
   }
   
   @scala.inline
-  implicit class UserGroupPendingChangesOps[Self <: UserGroupPendingChanges] (val x: Self) extends AnyVal {
+  implicit class UserGroupPendingChangesMutableBuilder[Self <: UserGroupPendingChanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUserIdsToAdd(value: UserIdList): Self = StObject.set(x, "UserIdsToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUserIdsToAddUndefined: Self = StObject.set(x, "UserIdsToAdd", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserIdsToAddVarargs(value: UserId*): Self = StObject.set(x, "UserIdsToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setUserIdsToAddVarargs(value: UserId*): Self = this.set("UserIdsToAdd", js.Array(value :_*))
+    def setUserIdsToRemove(value: UserIdList): Self = StObject.set(x, "UserIdsToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserIdsToAdd(value: UserIdList): Self = this.set("UserIdsToAdd", value.asInstanceOf[js.Any])
+    def setUserIdsToRemoveUndefined: Self = StObject.set(x, "UserIdsToRemove", js.undefined)
     
     @scala.inline
-    def deleteUserIdsToAdd: Self = this.set("UserIdsToAdd", js.undefined)
-    
-    @scala.inline
-    def setUserIdsToRemoveVarargs(value: UserId*): Self = this.set("UserIdsToRemove", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserIdsToRemove(value: UserIdList): Self = this.set("UserIdsToRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIdsToRemove: Self = this.set("UserIdsToRemove", js.undefined)
+    def setUserIdsToRemoveVarargs(value: UserId*): Self = StObject.set(x, "UserIdsToRemove", js.Array(value :_*))
   }
 }

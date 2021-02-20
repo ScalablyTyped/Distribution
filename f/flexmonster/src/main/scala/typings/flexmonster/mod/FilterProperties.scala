@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterProperties extends js.Object {
+trait FilterProperties extends StObject {
   
   var measure: js.UndefOr[MeasureObject] = js.native
   
@@ -25,42 +26,30 @@ object FilterProperties {
   }
   
   @scala.inline
-  implicit class FilterPropertiesOps[Self <: FilterProperties] (val x: Self) extends AnyVal {
+  implicit class FilterPropertiesMutableBuilder[Self <: FilterProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMeasure(value: MeasureObject): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembers(value: js.Array[FilterItem]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
     @scala.inline
-    def setMeasure(value: MeasureObject): Self = this.set("measure", value.asInstanceOf[js.Any])
+    def setMembersVarargs(value: FilterItem*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def deleteMeasure: Self = this.set("measure", js.undefined)
+    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembersVarargs(value: FilterItem*): Self = this.set("members", js.Array(value :_*))
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def setMembers(value: js.Array[FilterItem]): Self = this.set("members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMembers: Self = this.set("members", js.undefined)
-    
-    @scala.inline
-    def setQuantity(value: Double): Self = this.set("quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

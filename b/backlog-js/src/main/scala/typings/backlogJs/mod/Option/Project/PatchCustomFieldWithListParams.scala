@@ -1,5 +1,6 @@
 package typings.backlogJs.mod.Option.Project
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,39 +23,27 @@ object PatchCustomFieldWithListParams {
   }
   
   @scala.inline
-  implicit class PatchCustomFieldWithListParamsOps[Self <: PatchCustomFieldWithListParams] (val x: Self) extends AnyVal {
+  implicit class PatchCustomFieldWithListParamsMutableBuilder[Self <: PatchCustomFieldWithListParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAddItem(value: Boolean): Self = StObject.set(x, "allowAddItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAddItemUndefined: Self = StObject.set(x, "allowAddItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowInput(value: Boolean): Self = StObject.set(x, "allowInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAddItem(value: Boolean): Self = this.set("allowAddItem", value.asInstanceOf[js.Any])
+    def setAllowInputUndefined: Self = StObject.set(x, "allowInput", js.undefined)
     
     @scala.inline
-    def deleteAllowAddItem: Self = this.set("allowAddItem", js.undefined)
+    def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowInput(value: Boolean): Self = this.set("allowInput", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteAllowInput: Self = this.set("allowInput", js.undefined)
-    
-    @scala.inline
-    def setItemsVarargs(value: String*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[String]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

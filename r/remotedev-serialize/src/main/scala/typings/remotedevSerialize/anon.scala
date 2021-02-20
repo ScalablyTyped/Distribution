@@ -19,16 +19,15 @@ import typings.remotedevSerialize.mod.Replacer
 import typings.remotedevSerialize.mod.Reviver
 import typings.std.Iterable
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Options extends js.Object {
+  trait Options extends StObject {
     
     var options: typings.remotedevSerialize.mod.Options = js.native
     
@@ -42,7 +41,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait Parse extends js.Object {
+  trait Parse extends StObject {
     
     def parse(input: String): js.Any = js.native
     
@@ -74,7 +73,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofCollection extends js.Object {
+  trait TypeofCollection extends StObject {
     
     def apply[I /* <: Collection[_, _] */](collection: I): I = js.native
     def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
@@ -108,7 +107,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofFactory extends js.Object {
+  trait TypeofFactory extends StObject {
     
     def apply[TProps /* <: js.Object */](): Record[TProps] with TProps = js.native
     def apply[TProps /* <: js.Object */](values: Iterable[js.Tuple2[String, _]]): Record[TProps] with TProps = js.native
@@ -116,7 +115,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofImmutable extends js.Object {
+  trait TypeofImmutable extends StObject {
     
     val Collection: TypeofCollection = js.native
     
@@ -317,13 +316,13 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofIndexed extends js.Object {
+  trait TypeofIndexed extends StObject {
     
     def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
   }
   
   @js.native
-  trait TypeofIndexedOf extends js.Object {
+  trait TypeofIndexedOf extends StObject {
     
     def apply(): Indexed[_] = js.native
     def apply[T](collection: Iterable[T]): Indexed[T] = js.native
@@ -335,14 +334,14 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofKeyed extends js.Object {
+  trait TypeofKeyed extends StObject {
     
     def apply[V](obj: StringDictionary[V]): Keyed[String, V] = js.native
     def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): Keyed[K, V] = js.native
   }
   
   @js.native
-  trait TypeofKeyed0 extends js.Object {
+  trait TypeofKeyed0 extends StObject {
     
     def apply(): typings.immutable.Immutable.Seq.Keyed[_, _] = js.native
     def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Seq.Keyed[String, V] = js.native
@@ -350,7 +349,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofList extends js.Object {
+  trait TypeofList extends StObject {
     
     def apply(): List[_] = js.native
     def apply[T](collection: Iterable[T]): List[T] = js.native
@@ -390,7 +389,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofMap extends js.Object {
+  trait TypeofMap extends StObject {
     
     def apply(): Map[_, _] = js.native
     def apply[V](obj: StringDictionary[V]): Map[String, V] = js.native
@@ -428,7 +427,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofOrderedMap extends js.Object {
+  trait TypeofOrderedMap extends StObject {
     
     def apply(): OrderedMap[_, _] = js.native
     def apply[V](obj: StringDictionary[V]): OrderedMap[String, V] = js.native
@@ -441,7 +440,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofOrderedSet extends js.Object {
+  trait TypeofOrderedSet extends StObject {
     
     def apply(): OrderedSet[_] = js.native
     def apply[T](collection: Iterable[T]): OrderedSet[T] = js.native
@@ -465,7 +464,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofRecord extends js.Object {
+  trait TypeofRecord extends StObject {
     
     def apply[TProps](defaultValues: TProps): typings.immutable.Immutable.Record.Factory[TProps] = js.native
     def apply[TProps](defaultValues: TProps, name: String): typings.immutable.Immutable.Record.Factory[TProps] = js.native
@@ -478,7 +477,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofSeq extends js.Object {
+  trait TypeofSeq extends StObject {
     
     def apply(): Seq[_, _] = js.native
     def apply[T](collection: typings.immutable.Immutable.Collection.Indexed[T]): typings.immutable.Immutable.Seq.Indexed[T] = js.native
@@ -505,13 +504,13 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofSet extends js.Object {
+  trait TypeofSet extends StObject {
     
     def apply[T](collection: Iterable[T]): Set[T] = js.native
   }
   
   @js.native
-  trait TypeofSetFromKeys extends js.Object {
+  trait TypeofSetFromKeys extends StObject {
     
     def apply(): typings.immutable.Immutable.Set[_] = js.native
     def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Set[T] = js.native
@@ -565,7 +564,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofSetOf extends js.Object {
+  trait TypeofSetOf extends StObject {
     
     def apply(): typings.immutable.Immutable.Seq.Set[_] = js.native
     def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Seq.Set[T] = js.native
@@ -577,7 +576,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofStack extends js.Object {
+  trait TypeofStack extends StObject {
     
     def apply(): Stack[_] = js.native
     def apply[T](collection: Iterable[T]): Stack[T] = js.native

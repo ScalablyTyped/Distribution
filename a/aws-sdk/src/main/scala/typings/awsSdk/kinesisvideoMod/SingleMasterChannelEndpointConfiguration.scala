@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SingleMasterChannelEndpointConfiguration extends js.Object {
+trait SingleMasterChannelEndpointConfiguration extends StObject {
   
   /**
     * This property is used to determine the nature of communication over this SINGLE_MASTER signaling channel. If WSS is specified, this API returns a websocket endpoint. If HTTPS is specified, this API returns an HTTPS endpoint.
@@ -26,33 +27,21 @@ object SingleMasterChannelEndpointConfiguration {
   }
   
   @scala.inline
-  implicit class SingleMasterChannelEndpointConfigurationOps[Self <: SingleMasterChannelEndpointConfiguration] (val x: Self) extends AnyVal {
+  implicit class SingleMasterChannelEndpointConfigurationMutableBuilder[Self <: SingleMasterChannelEndpointConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProtocols(value: ListOfProtocols): Self = StObject.set(x, "Protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtocolsUndefined: Self = StObject.set(x, "Protocols", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProtocolsVarargs(value: ChannelProtocol*): Self = StObject.set(x, "Protocols", js.Array(value :_*))
     
     @scala.inline
-    def setProtocolsVarargs(value: ChannelProtocol*): Self = this.set("Protocols", js.Array(value :_*))
+    def setRole(value: ChannelRole): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocols(value: ListOfProtocols): Self = this.set("Protocols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocols: Self = this.set("Protocols", js.undefined)
-    
-    @scala.inline
-    def setRole(value: ChannelRole): Self = this.set("Role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
   }
 }

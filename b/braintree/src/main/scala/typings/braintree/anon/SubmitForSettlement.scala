@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubmitForSettlement extends js.Object {
+trait SubmitForSettlement extends StObject {
   
   var submitForSettlement: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object SubmitForSettlement {
   }
   
   @scala.inline
-  implicit class SubmitForSettlementOps[Self <: SubmitForSettlement] (val x: Self) extends AnyVal {
+  implicit class SubmitForSettlementMutableBuilder[Self <: SubmitForSettlement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSubmitForSettlement(value: Boolean): Self = this.set("submitForSettlement", value.asInstanceOf[js.Any])
+    def setSubmitForSettlement(value: Boolean): Self = StObject.set(x, "submitForSettlement", value.asInstanceOf[js.Any])
   }
 }

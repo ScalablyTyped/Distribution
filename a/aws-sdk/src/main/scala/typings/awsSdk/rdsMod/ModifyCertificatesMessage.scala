@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyCertificatesMessage extends js.Object {
+trait ModifyCertificatesMessage extends StObject {
   
   /**
     * The new default certificate identifier to override the current one with. To determine the valid values, use the describe-certificates AWS CLI command or the DescribeCertificates API operation.
@@ -26,30 +27,18 @@ object ModifyCertificatesMessage {
   }
   
   @scala.inline
-  implicit class ModifyCertificatesMessageOps[Self <: ModifyCertificatesMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyCertificatesMessageMutableBuilder[Self <: ModifyCertificatesMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateIdentifierUndefined: Self = StObject.set(x, "CertificateIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveCustomerOverride(value: BooleanOptional): Self = StObject.set(x, "RemoveCustomerOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateIdentifier(value: String): Self = this.set("CertificateIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateIdentifier: Self = this.set("CertificateIdentifier", js.undefined)
-    
-    @scala.inline
-    def setRemoveCustomerOverride(value: BooleanOptional): Self = this.set("RemoveCustomerOverride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveCustomerOverride: Self = this.set("RemoveCustomerOverride", js.undefined)
+    def setRemoveCustomerOverrideUndefined: Self = StObject.set(x, "RemoveCustomerOverride", js.undefined)
   }
 }

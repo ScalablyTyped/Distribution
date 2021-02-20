@@ -1,11 +1,12 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Prefs extends js.Object {
+trait Prefs extends StObject {
   
   var altDraw: PseudoBoolean = js.native
   
@@ -83,84 +84,72 @@ object Prefs {
   }
   
   @scala.inline
-  implicit class PrefsOps[Self <: Prefs] (val x: Self) extends AnyVal {
+  implicit class PrefsMutableBuilder[Self <: Prefs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltDraw(value: PseudoBoolean): Self = StObject.set(x, "altDraw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimate(value: PseudoBoolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAskLumps(value: PseudoBoolean): Self = StObject.set(x, "askLumps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltDraw(value: PseudoBoolean): Self = this.set("altDraw", value.asInstanceOf[js.Any])
+    def setAutosave(value: PseudoBoolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: PseudoBoolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setAutoupdate(value: PseudoBoolean): Self = StObject.set(x, "autoupdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAskLumps(value: PseudoBoolean): Self = this.set("askLumps", value.asInstanceOf[js.Any])
+    def setCursors(value: PseudoBoolean): Self = StObject.set(x, "cursors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutosave(value: PseudoBoolean): Self = this.set("autosave", value.asInstanceOf[js.Any])
+    def setCustomGrandmas(value: PseudoBoolean): Self = StObject.set(x, "customGrandmas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoupdate(value: PseudoBoolean): Self = this.set("autoupdate", value.asInstanceOf[js.Any])
+    def setExtraButtons(value: PseudoBoolean): Self = StObject.set(x, "extraButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursors(value: PseudoBoolean): Self = this.set("cursors", value.asInstanceOf[js.Any])
+    def setFancy(value: PseudoBoolean): Self = StObject.set(x, "fancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomGrandmas(value: PseudoBoolean): Self = this.set("customGrandmas", value.asInstanceOf[js.Any])
+    def setFilters(value: PseudoBoolean): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraButtons(value: PseudoBoolean): Self = this.set("extraButtons", value.asInstanceOf[js.Any])
+    def setFocus(value: PseudoBoolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFancy(value: PseudoBoolean): Self = this.set("fancy", value.asInstanceOf[js.Any])
+    def setFormat(value: PseudoBoolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: PseudoBoolean): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setMilk(value: PseudoBoolean): Self = StObject.set(x, "milk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: PseudoBoolean): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setMonospace(value: PseudoBoolean): Self = StObject.set(x, "monospace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: PseudoBoolean): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setNotifs(value: PseudoBoolean): Self = StObject.set(x, "notifs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMilk(value: PseudoBoolean): Self = this.set("milk", value.asInstanceOf[js.Any])
+    def setNumbers(value: PseudoBoolean): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonospace(value: PseudoBoolean): Self = this.set("monospace", value.asInstanceOf[js.Any])
+    def setParticles(value: PseudoBoolean): Self = StObject.set(x, "particles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifs(value: PseudoBoolean): Self = this.set("notifs", value.asInstanceOf[js.Any])
+    def setPopups(value: PseudoBoolean): Self = StObject.set(x, "popups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumbers(value: PseudoBoolean): Self = this.set("numbers", value.asInstanceOf[js.Any])
+    def setShowBackupWarning(value: PseudoBoolean): Self = StObject.set(x, "showBackupWarning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticles(value: PseudoBoolean): Self = this.set("particles", value.asInstanceOf[js.Any])
+    def setTimeout(value: PseudoBoolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopups(value: PseudoBoolean): Self = this.set("popups", value.asInstanceOf[js.Any])
+    def setWarn(value: PseudoBoolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBackupWarning(value: PseudoBoolean): Self = this.set("showBackupWarning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: PseudoBoolean): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarn(value: PseudoBoolean): Self = this.set("warn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWobbly(value: PseudoBoolean): Self = this.set("wobbly", value.asInstanceOf[js.Any])
+    def setWobbly(value: PseudoBoolean): Self = StObject.set(x, "wobbly", value.asInstanceOf[js.Any])
   }
 }

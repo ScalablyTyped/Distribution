@@ -1,14 +1,14 @@
 package typings.webdriverManager
 
 import typings.webdriverManager.configSourceMod.XmlConfigSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webdriver-manager/built/lib/binaries/standalone_xml", JSImport.Namespace)
-@js.native
-object standaloneXmlMod extends js.Object {
+object standaloneXmlMod {
   
+  @JSImport("webdriver-manager/built/lib/binaries/standalone_xml", "StandaloneXml")
   @js.native
   class StandaloneXml () extends XmlConfigSource {
     

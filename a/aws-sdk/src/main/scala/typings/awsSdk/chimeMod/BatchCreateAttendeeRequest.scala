@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchCreateAttendeeRequest extends js.Object {
+trait BatchCreateAttendeeRequest extends StObject {
   
   /**
     * The request containing the attendees to create.
@@ -26,27 +27,15 @@ object BatchCreateAttendeeRequest {
   }
   
   @scala.inline
-  implicit class BatchCreateAttendeeRequestOps[Self <: BatchCreateAttendeeRequest] (val x: Self) extends AnyVal {
+  implicit class BatchCreateAttendeeRequestMutableBuilder[Self <: BatchCreateAttendeeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttendees(value: CreateAttendeeRequestItemList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttendeesVarargs(value: CreateAttendeeRequestItem*): Self = StObject.set(x, "Attendees", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttendeesVarargs(value: CreateAttendeeRequestItem*): Self = this.set("Attendees", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttendees(value: CreateAttendeeRequestItemList): Self = this.set("Attendees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeetingId(value: GuidString): Self = this.set("MeetingId", value.asInstanceOf[js.Any])
+    def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
   }
 }

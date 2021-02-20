@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListChangeSetsResponse extends js.Object {
+trait ListChangeSetsResponse extends StObject {
   
   /**
     *  Array of ChangeSetSummaryListItem objects.
@@ -26,33 +27,21 @@ object ListChangeSetsResponse {
   }
   
   @scala.inline
-  implicit class ListChangeSetsResponseOps[Self <: ListChangeSetsResponse] (val x: Self) extends AnyVal {
+  implicit class ListChangeSetsResponseMutableBuilder[Self <: ListChangeSetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeSetSummaryList(value: ChangeSetSummaryList): Self = StObject.set(x, "ChangeSetSummaryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeSetSummaryListUndefined: Self = StObject.set(x, "ChangeSetSummaryList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeSetSummaryListVarargs(value: ChangeSetSummaryListItem*): Self = StObject.set(x, "ChangeSetSummaryList", js.Array(value :_*))
     
     @scala.inline
-    def setChangeSetSummaryListVarargs(value: ChangeSetSummaryListItem*): Self = this.set("ChangeSetSummaryList", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSetSummaryList(value: ChangeSetSummaryList): Self = this.set("ChangeSetSummaryList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChangeSetSummaryList: Self = this.set("ChangeSetSummaryList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

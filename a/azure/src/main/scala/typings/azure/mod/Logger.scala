@@ -1,13 +1,14 @@
 package typings.azure.mod
 
 import typings.azure.anon.ALERT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "Logger")
 @js.native
-class Logger () extends js.Object {
+class Logger () extends StObject {
   
   def alert(message: String): Unit = js.native
   
@@ -34,11 +35,21 @@ class Logger () extends js.Object {
   def warning(message: String): Unit = js.native
 }
 /* static members */
-@JSImport("azure", "Logger")
-@js.native
-object Logger extends js.Object {
+object Logger {
   
-  var LogLevels: ALERT = js.native
+  @JSImport("azure", "Logger")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var logPriority: js.Array[String] = js.native
+  @JSImport("azure", "Logger.LogLevels")
+  @js.native
+  def LogLevels: ALERT = js.native
+  @scala.inline
+  def LogLevels_=(x: ALERT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogLevels")(x.asInstanceOf[js.Any])
+  
+  @JSImport("azure", "Logger.logPriority")
+  @js.native
+  def logPriority: js.Array[String] = js.native
+  @scala.inline
+  def logPriority_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logPriority")(x.asInstanceOf[js.Any])
 }

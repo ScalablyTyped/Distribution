@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.extensions.v1beta1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * RuntimeClassStrategyOptions define the strategy that will dictate the allowable RuntimeClasses for a pod.
   */
 @js.native
-trait RuntimeClassStrategyOptions extends js.Object {
+trait RuntimeClassStrategyOptions extends StObject {
   
   /**
     * allowedRuntimeClassNames is a whitelist of RuntimeClass names that may be specified on a pod. A value of "*" means that any RuntimeClass name is allowed, and must be the only item in the list. An empty list requires the RuntimeClassName field to be unset.
@@ -30,30 +31,18 @@ object RuntimeClassStrategyOptions {
   }
   
   @scala.inline
-  implicit class RuntimeClassStrategyOptionsOps[Self <: RuntimeClassStrategyOptions] (val x: Self) extends AnyVal {
+  implicit class RuntimeClassStrategyOptionsMutableBuilder[Self <: RuntimeClassStrategyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedRuntimeClassNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedRuntimeClassNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedRuntimeClassNamesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedRuntimeClassNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultRuntimeClassName(value: Input[String]): Self = StObject.set(x, "defaultRuntimeClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedRuntimeClassNamesVarargs(value: Input[String]*): Self = this.set("allowedRuntimeClassNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setAllowedRuntimeClassNames(value: Input[js.Array[Input[String]]]): Self = this.set("allowedRuntimeClassNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultRuntimeClassName(value: Input[String]): Self = this.set("defaultRuntimeClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultRuntimeClassName: Self = this.set("defaultRuntimeClassName", js.undefined)
+    def setDefaultRuntimeClassNameUndefined: Self = StObject.set(x, "defaultRuntimeClassName", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.stylus.mod.Stylus.Nodes
 
 import typings.stylus.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,27 +41,15 @@ object BinOp {
   }
   
   @scala.inline
-  implicit class BinOpOps[Self <: BinOp] (val x: Self) extends AnyVal {
+  implicit class BinOpMutableBuilder[Self <: BinOp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOp(value: java.lang.String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLeft(value: Expression): Self = this.set("left", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOp(value: java.lang.String): Self = this.set("op", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRight(value: Expression): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

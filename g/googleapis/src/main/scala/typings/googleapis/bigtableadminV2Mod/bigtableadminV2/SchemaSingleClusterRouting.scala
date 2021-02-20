@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * availability.
   */
 @js.native
-trait SchemaSingleClusterRouting extends js.Object {
+trait SchemaSingleClusterRouting extends StObject {
   
   /**
     * Whether or not `CheckAndMutateRow` and `ReadModifyWriteRow` requests are
@@ -33,30 +34,18 @@ object SchemaSingleClusterRouting {
   }
   
   @scala.inline
-  implicit class SchemaSingleClusterRoutingOps[Self <: SchemaSingleClusterRouting] (val x: Self) extends AnyVal {
+  implicit class SchemaSingleClusterRoutingMutableBuilder[Self <: SchemaSingleClusterRouting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowTransactionalWrites(value: Boolean): Self = StObject.set(x, "allowTransactionalWrites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowTransactionalWritesUndefined: Self = StObject.set(x, "allowTransactionalWrites", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTransactionalWrites(value: Boolean): Self = this.set("allowTransactionalWrites", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowTransactionalWrites: Self = this.set("allowTransactionalWrites", js.undefined)
-    
-    @scala.inline
-    def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
   }
 }

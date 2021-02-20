@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TryFn[Context] extends js.Object {
+trait TryFn[Context] extends StObject {
   
   /**
   	 * Attempt to run some assertions. The result must be explicitly committed or discarded or else

@@ -1,12 +1,11 @@
 package typings.domHelpers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dom-helpers/cjs/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
   /* keyof csstype.csstype.Properties<string | 0> */ /* Rewritten from type alias, can be one of: 
     - typings.domHelpers.domHelpersStrings.alignContent
@@ -1572,7 +1571,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.typesMod.HyphenProperty
     - typings.domHelpers.typesMod.CamelProperty
   */
-  trait Property extends js.Object
+  trait Property extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.domHelpers.domHelpersStrings.alignContent
@@ -1964,5 +1963,5 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.zIndex
     - typings.domHelpers.domHelpersStrings.zoom
   */
-  trait Styles extends js.Object
+  trait Styles extends StObject
 }

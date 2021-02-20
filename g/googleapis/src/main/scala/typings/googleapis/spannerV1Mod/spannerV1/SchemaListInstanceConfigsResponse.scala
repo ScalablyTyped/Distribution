@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response for ListInstanceConfigs.
   */
 @js.native
-trait SchemaListInstanceConfigsResponse extends js.Object {
+trait SchemaListInstanceConfigsResponse extends StObject {
   
   /**
     * The list of requested instance configurations.
@@ -30,33 +31,21 @@ object SchemaListInstanceConfigsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListInstanceConfigsResponseOps[Self <: SchemaListInstanceConfigsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListInstanceConfigsResponseMutableBuilder[Self <: SchemaListInstanceConfigsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceConfigs(value: js.Array[SchemaInstanceConfig]): Self = StObject.set(x, "instanceConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceConfigsUndefined: Self = StObject.set(x, "instanceConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceConfigsVarargs(value: SchemaInstanceConfig*): Self = StObject.set(x, "instanceConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceConfigsVarargs(value: SchemaInstanceConfig*): Self = this.set("instanceConfigs", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceConfigs(value: js.Array[SchemaInstanceConfig]): Self = this.set("instanceConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceConfigs: Self = this.set("instanceConfigs", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVehicleSpec extends js.Object {
+trait IVehicleSpec extends StObject {
   
   /**
     * The unit of measurement of width, height, length. Can be one of the following values:
@@ -104,108 +105,96 @@ object IVehicleSpec {
   }
   
   @scala.inline
-  implicit class IVehicleSpecOps[Self <: IVehicleSpec] (val x: Self) extends AnyVal {
+  implicit class IVehicleSpecMutableBuilder[Self <: IVehicleSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionUnit(value: String): Self = StObject.set(x, "dimensionUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionUnitUndefined: Self = StObject.set(x, "dimensionUnit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVehicleAvoidCrossWind(value: Boolean): Self = StObject.set(x, "vehicleAvoidCrossWind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionUnit(value: String): Self = this.set("dimensionUnit", value.asInstanceOf[js.Any])
+    def setVehicleAvoidCrossWindUndefined: Self = StObject.set(x, "vehicleAvoidCrossWind", js.undefined)
     
     @scala.inline
-    def deleteDimensionUnit: Self = this.set("dimensionUnit", js.undefined)
+    def setVehicleAvoidGroundingRisk(value: Boolean): Self = StObject.set(x, "vehicleAvoidGroundingRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleAvoidCrossWind(value: Boolean): Self = this.set("vehicleAvoidCrossWind", value.asInstanceOf[js.Any])
+    def setVehicleAvoidGroundingRiskUndefined: Self = StObject.set(x, "vehicleAvoidGroundingRisk", js.undefined)
     
     @scala.inline
-    def deleteVehicleAvoidCrossWind: Self = this.set("vehicleAvoidCrossWind", js.undefined)
+    def setVehicleAxles(value: Double): Self = StObject.set(x, "vehicleAxles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleAvoidGroundingRisk(value: Boolean): Self = this.set("vehicleAvoidGroundingRisk", value.asInstanceOf[js.Any])
+    def setVehicleAxlesUndefined: Self = StObject.set(x, "vehicleAxles", js.undefined)
     
     @scala.inline
-    def deleteVehicleAvoidGroundingRisk: Self = this.set("vehicleAvoidGroundingRisk", js.undefined)
+    def setVehicleHazardousMaterials(value: String): Self = StObject.set(x, "vehicleHazardousMaterials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleAxles(value: Double): Self = this.set("vehicleAxles", value.asInstanceOf[js.Any])
+    def setVehicleHazardousMaterialsUndefined: Self = StObject.set(x, "vehicleHazardousMaterials", js.undefined)
     
     @scala.inline
-    def deleteVehicleAxles: Self = this.set("vehicleAxles", js.undefined)
+    def setVehicleHazardousPermits(value: String): Self = StObject.set(x, "vehicleHazardousPermits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleHazardousMaterials(value: String): Self = this.set("vehicleHazardousMaterials", value.asInstanceOf[js.Any])
+    def setVehicleHazardousPermitsUndefined: Self = StObject.set(x, "vehicleHazardousPermits", js.undefined)
     
     @scala.inline
-    def deleteVehicleHazardousMaterials: Self = this.set("vehicleHazardousMaterials", js.undefined)
+    def setVehicleHeight(value: Double): Self = StObject.set(x, "vehicleHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleHazardousPermits(value: String): Self = this.set("vehicleHazardousPermits", value.asInstanceOf[js.Any])
+    def setVehicleHeightUndefined: Self = StObject.set(x, "vehicleHeight", js.undefined)
     
     @scala.inline
-    def deleteVehicleHazardousPermits: Self = this.set("vehicleHazardousPermits", js.undefined)
+    def setVehicleLength(value: Double): Self = StObject.set(x, "vehicleLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleHeight(value: Double): Self = this.set("vehicleHeight", value.asInstanceOf[js.Any])
+    def setVehicleLengthUndefined: Self = StObject.set(x, "vehicleLength", js.undefined)
     
     @scala.inline
-    def deleteVehicleHeight: Self = this.set("vehicleHeight", js.undefined)
+    def setVehicleMaxGradient(value: Boolean): Self = StObject.set(x, "vehicleMaxGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleLength(value: Double): Self = this.set("vehicleLength", value.asInstanceOf[js.Any])
+    def setVehicleMaxGradientUndefined: Self = StObject.set(x, "vehicleMaxGradient", js.undefined)
     
     @scala.inline
-    def deleteVehicleLength: Self = this.set("vehicleLength", js.undefined)
+    def setVehicleMinTurnRadius(value: Double): Self = StObject.set(x, "vehicleMinTurnRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleMaxGradient(value: Boolean): Self = this.set("vehicleMaxGradient", value.asInstanceOf[js.Any])
+    def setVehicleMinTurnRadiusUndefined: Self = StObject.set(x, "vehicleMinTurnRadius", js.undefined)
     
     @scala.inline
-    def deleteVehicleMaxGradient: Self = this.set("vehicleMaxGradient", js.undefined)
+    def setVehicleSemi(value: Boolean): Self = StObject.set(x, "vehicleSemi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleMinTurnRadius(value: Double): Self = this.set("vehicleMinTurnRadius", value.asInstanceOf[js.Any])
+    def setVehicleSemiUndefined: Self = StObject.set(x, "vehicleSemi", js.undefined)
     
     @scala.inline
-    def deleteVehicleMinTurnRadius: Self = this.set("vehicleMinTurnRadius", js.undefined)
+    def setVehicleTrailers(value: Double): Self = StObject.set(x, "vehicleTrailers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleSemi(value: Boolean): Self = this.set("vehicleSemi", value.asInstanceOf[js.Any])
+    def setVehicleTrailersUndefined: Self = StObject.set(x, "vehicleTrailers", js.undefined)
     
     @scala.inline
-    def deleteVehicleSemi: Self = this.set("vehicleSemi", js.undefined)
+    def setVehicleWeight(value: Double): Self = StObject.set(x, "vehicleWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleTrailers(value: Double): Self = this.set("vehicleTrailers", value.asInstanceOf[js.Any])
+    def setVehicleWeightUndefined: Self = StObject.set(x, "vehicleWeight", js.undefined)
     
     @scala.inline
-    def deleteVehicleTrailers: Self = this.set("vehicleTrailers", js.undefined)
+    def setVehicleWidth(value: Double): Self = StObject.set(x, "vehicleWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleWeight(value: Double): Self = this.set("vehicleWeight", value.asInstanceOf[js.Any])
+    def setVehicleWidthUndefined: Self = StObject.set(x, "vehicleWidth", js.undefined)
     
     @scala.inline
-    def deleteVehicleWeight: Self = this.set("vehicleWeight", js.undefined)
+    def setWeightUnit(value: String): Self = StObject.set(x, "weightUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVehicleWidth(value: Double): Self = this.set("vehicleWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVehicleWidth: Self = this.set("vehicleWidth", js.undefined)
-    
-    @scala.inline
-    def setWeightUnit(value: String): Self = this.set("weightUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightUnit: Self = this.set("weightUnit", js.undefined)
+    def setWeightUnitUndefined: Self = StObject.set(x, "weightUnit", js.undefined)
   }
 }

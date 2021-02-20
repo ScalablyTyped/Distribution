@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadFilter extends js.Object {
+trait UploadFilter extends StObject {
   
   /**
     * the id of the file
@@ -31,45 +32,33 @@ object UploadFilter {
   }
   
   @scala.inline
-  implicit class UploadFilterOps[Self <: UploadFilter] (val x: Self) extends AnyVal {
+  implicit class UploadFilterMutableBuilder[Self <: UploadFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double | js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
     
     @scala.inline
-    def setIdVarargs(value: Double*): Self = this.set("id", js.Array(value :_*))
+    def setStatus(value: String | js.Array[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double | js.Array[Double]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value :_*))
     
     @scala.inline
-    def setStatusVarargs(value: String*): Self = this.set("status", js.Array(value :_*))
+    def setUuid(value: Double | js.Array[Double]): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String | js.Array[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setUuidVarargs(value: Double*): Self = this.set("uuid", js.Array(value :_*))
-    
-    @scala.inline
-    def setUuid(value: Double | js.Array[Double]): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUuid: Self = this.set("uuid", js.undefined)
+    def setUuidVarargs(value: Double*): Self = StObject.set(x, "uuid", js.Array(value :_*))
   }
 }

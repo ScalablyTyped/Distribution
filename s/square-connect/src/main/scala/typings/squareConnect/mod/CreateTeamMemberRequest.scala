@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateTeamMemberRequest")
 @js.native
-class CreateTeamMemberRequest () extends js.Object {
+class CreateTeamMemberRequest () extends StObject {
   
   /**
     * A unique string that identifies this CreateTeamMember request.

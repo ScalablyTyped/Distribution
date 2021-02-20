@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,51 +52,39 @@ object BuildingExplorerProperties {
   }
   
   @scala.inline
-  implicit class BuildingExplorerPropertiesOps[Self <: BuildingExplorerProperties] (val x: Self) extends AnyVal {
+  implicit class BuildingExplorerPropertiesMutableBuilder[Self <: BuildingExplorerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayers(value: CollectionProperties[BuildingSceneLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setLayersVarargs(value: BuildingSceneLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
     @scala.inline
-    def setLayersVarargs(value: BuildingSceneLayerProperties*): Self = this.set("layers", js.Array(value :_*))
+    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayers(value: CollectionProperties[BuildingSceneLayerProperties]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    def setViewModel(value: BuildingExplorerViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setView(value: SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setVisibleElements(value: BuildingExplorerVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewModel(value: BuildingExplorerViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
-    
-    @scala.inline
-    def setVisibleElements(value: BuildingExplorerVisibleElements): Self = this.set("visibleElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleElements: Self = this.set("visibleElements", js.undefined)
+    def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

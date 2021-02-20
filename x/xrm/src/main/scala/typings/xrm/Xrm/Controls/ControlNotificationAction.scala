@@ -1,5 +1,6 @@
 package typings.xrm.Xrm.Controls
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interface to define the actions on a control notification
   */
 @js.native
-trait ControlNotificationAction extends js.Object {
+trait ControlNotificationAction extends StObject {
   
   /**
     * Array of functions. The corresponding actions for the message.
@@ -29,30 +30,18 @@ object ControlNotificationAction {
   }
   
   @scala.inline
-  implicit class ControlNotificationActionOps[Self <: ControlNotificationAction] (val x: Self) extends AnyVal {
+  implicit class ControlNotificationActionMutableBuilder[Self <: ControlNotificationAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: js.Function0[Unit]*): Self = this.set("actions", js.Array(value :_*))
-    
-    @scala.inline
-    def setActions(value: js.Array[js.Function0[Unit]]): Self = this.set("actions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WriteLogEntriesRequest extends js.Object {
+trait WriteLogEntriesRequest extends StObject {
   
   /**
     * Optional. If true, the request should expect normal response, but the entries won't be persisted nor exported. Useful for checking whether the logging API endpoints are working
@@ -65,61 +66,49 @@ object WriteLogEntriesRequest {
   }
   
   @scala.inline
-  implicit class WriteLogEntriesRequestOps[Self <: WriteLogEntriesRequest] (val x: Self) extends AnyVal {
+  implicit class WriteLogEntriesRequestMutableBuilder[Self <: WriteLogEntriesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntries(value: js.Array[LogEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
-    
-    @scala.inline
-    def setEntriesVarargs(value: LogEntry*): Self = this.set("entries", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntries(value: js.Array[LogEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntries: Self = this.set("entries", js.undefined)
+    def setEntriesVarargs(value: LogEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.WriteLogEntriesRequest with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setLogName(value: String): Self = this.set("logName", value.asInstanceOf[js.Any])
+    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogName: Self = this.set("logName", js.undefined)
+    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
     
     @scala.inline
-    def setPartialSuccess(value: Boolean): Self = this.set("partialSuccess", value.asInstanceOf[js.Any])
+    def setPartialSuccess(value: Boolean): Self = StObject.set(x, "partialSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePartialSuccess: Self = this.set("partialSuccess", js.undefined)
+    def setPartialSuccessUndefined: Self = StObject.set(x, "partialSuccess", js.undefined)
     
     @scala.inline
-    def setResource(value: MonitoredResource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResource(value: MonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

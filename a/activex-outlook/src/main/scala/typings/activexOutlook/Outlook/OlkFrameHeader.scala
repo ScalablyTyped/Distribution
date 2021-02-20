@@ -3,12 +3,13 @@ package typings.activexOutlook.Outlook
 import typings.activexStdole.stdole.OLE_COLOR
 import typings.activexStdole.stdole.StdFont
 import typings.activexStdole.stdole.StdPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlkFrameHeader extends js.Object {
+trait OlkFrameHeader extends StObject {
   
   var Alignment: OlAlignment = js.native
   
@@ -46,42 +47,30 @@ object OlkFrameHeader {
   }
   
   @scala.inline
-  implicit class OlkFrameHeaderOps[Self <: OlkFrameHeader] (val x: Self) extends AnyVal {
+  implicit class OlkFrameHeaderMutableBuilder[Self <: OlkFrameHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: OlAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: OlAlignment): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    def setFont(value: StdFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("Caption", value.asInstanceOf[js.Any])
+    def setForeColor(value: OLE_COLOR): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: StdFont): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeColor(value: OLE_COLOR): Self = this.set("ForeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMouseIcon(value: StdPicture): Self = this.set("MouseIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = this.set("MousePointer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutlookDotOlkFrameHeader_typekey(value: OlkFrameHeader): Self = this.set("Outlook.OlkFrameHeader_typekey", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkFrameHeader_typekey(value: OlkFrameHeader): Self = StObject.set(x, "Outlook.OlkFrameHeader_typekey", value.asInstanceOf[js.Any])
   }
 }

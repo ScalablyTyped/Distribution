@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistogramFacets extends js.Object {
+trait HistogramFacets extends StObject {
   
   /** Optional. Specifies compensation field-based histogram requests. Duplicate values of CompensationHistogramRequest.type are not allowed. */
   var compensationHistogramFacets: js.UndefOr[js.Array[CompensationHistogramRequest]] = js.native
@@ -25,45 +26,33 @@ object HistogramFacets {
   }
   
   @scala.inline
-  implicit class HistogramFacetsOps[Self <: HistogramFacets] (val x: Self) extends AnyVal {
+  implicit class HistogramFacetsMutableBuilder[Self <: HistogramFacets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompensationHistogramFacets(value: js.Array[CompensationHistogramRequest]): Self = StObject.set(x, "compensationHistogramFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompensationHistogramFacetsUndefined: Self = StObject.set(x, "compensationHistogramFacets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompensationHistogramFacetsVarargs(value: CompensationHistogramRequest*): Self = StObject.set(x, "compensationHistogramFacets", js.Array(value :_*))
     
     @scala.inline
-    def setCompensationHistogramFacetsVarargs(value: CompensationHistogramRequest*): Self = this.set("compensationHistogramFacets", js.Array(value :_*))
+    def setCustomAttributeHistogramFacets(value: js.Array[CustomAttributeHistogramRequest]): Self = StObject.set(x, "customAttributeHistogramFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompensationHistogramFacets(value: js.Array[CompensationHistogramRequest]): Self = this.set("compensationHistogramFacets", value.asInstanceOf[js.Any])
+    def setCustomAttributeHistogramFacetsUndefined: Self = StObject.set(x, "customAttributeHistogramFacets", js.undefined)
     
     @scala.inline
-    def deleteCompensationHistogramFacets: Self = this.set("compensationHistogramFacets", js.undefined)
+    def setCustomAttributeHistogramFacetsVarargs(value: CustomAttributeHistogramRequest*): Self = StObject.set(x, "customAttributeHistogramFacets", js.Array(value :_*))
     
     @scala.inline
-    def setCustomAttributeHistogramFacetsVarargs(value: CustomAttributeHistogramRequest*): Self = this.set("customAttributeHistogramFacets", js.Array(value :_*))
+    def setSimpleHistogramFacets(value: js.Array[String]): Self = StObject.set(x, "simpleHistogramFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAttributeHistogramFacets(value: js.Array[CustomAttributeHistogramRequest]): Self = this.set("customAttributeHistogramFacets", value.asInstanceOf[js.Any])
+    def setSimpleHistogramFacetsUndefined: Self = StObject.set(x, "simpleHistogramFacets", js.undefined)
     
     @scala.inline
-    def deleteCustomAttributeHistogramFacets: Self = this.set("customAttributeHistogramFacets", js.undefined)
-    
-    @scala.inline
-    def setSimpleHistogramFacetsVarargs(value: String*): Self = this.set("simpleHistogramFacets", js.Array(value :_*))
-    
-    @scala.inline
-    def setSimpleHistogramFacets(value: js.Array[String]): Self = this.set("simpleHistogramFacets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimpleHistogramFacets: Self = this.set("simpleHistogramFacets", js.undefined)
+    def setSimpleHistogramFacetsVarargs(value: String*): Self = StObject.set(x, "simpleHistogramFacets", js.Array(value :_*))
   }
 }

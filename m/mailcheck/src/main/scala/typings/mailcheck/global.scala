@@ -1,13 +1,16 @@
 package typings.mailcheck
 
 import typings.mailcheck.MailcheckModule.Static
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var Mailcheck: Static = js.native
+  @JSGlobal("Mailcheck")
+  @js.native
+  def Mailcheck: Static = js.native
+  @scala.inline
+  def Mailcheck_=(x: Static): Unit = js.Dynamic.global.updateDynamic("Mailcheck")(x.asInstanceOf[js.Any])
 }

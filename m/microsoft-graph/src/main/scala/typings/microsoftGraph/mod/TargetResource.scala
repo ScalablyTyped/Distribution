@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetResource extends js.Object {
+trait TargetResource extends StObject {
   
   // Indicates the visible name defined for the resource. Typically specified when the resource is created.
   var displayName: js.UndefOr[NullableOption[String]] = js.native
@@ -34,75 +35,63 @@ object TargetResource {
   }
   
   @scala.inline
-  implicit class TargetResourceOps[Self <: TargetResource] (val x: Self) extends AnyVal {
+  implicit class TargetResourceMutableBuilder[Self <: TargetResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setGroupType(value: NullableOption[GroupType]): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setGroupTypeNull: Self = StObject.set(x, "groupType", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
     
     @scala.inline
-    def setGroupType(value: NullableOption[GroupType]): Self = this.set("groupType", value.asInstanceOf[js.Any])
+    def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupType: Self = this.set("groupType", js.undefined)
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setGroupTypeNull: Self = this.set("groupType", null)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setId(value: NullableOption[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setModifiedProperties(value: NullableOption[js.Array[ModifiedProperty]]): Self = StObject.set(x, "modifiedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setModifiedPropertiesNull: Self = StObject.set(x, "modifiedProperties", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setModifiedPropertiesUndefined: Self = StObject.set(x, "modifiedProperties", js.undefined)
     
     @scala.inline
-    def setModifiedPropertiesVarargs(value: ModifiedProperty*): Self = this.set("modifiedProperties", js.Array(value :_*))
+    def setModifiedPropertiesVarargs(value: ModifiedProperty*): Self = StObject.set(x, "modifiedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setModifiedProperties(value: NullableOption[js.Array[ModifiedProperty]]): Self = this.set("modifiedProperties", value.asInstanceOf[js.Any])
+    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModifiedProperties: Self = this.set("modifiedProperties", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setModifiedPropertiesNull: Self = this.set("modifiedProperties", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setType(value: NullableOption[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
     
     @scala.inline
-    def setTypeNull: Self = this.set("type", null)
-    
-    @scala.inline
-    def setUserPrincipalName(value: NullableOption[String]): Self = this.set("userPrincipalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPrincipalName: Self = this.set("userPrincipalName", js.undefined)
-    
-    @scala.inline
-    def setUserPrincipalNameNull: Self = this.set("userPrincipalName", null)
+    def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
   }
 }

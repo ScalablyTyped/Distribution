@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import typings.devtoolsProtocol.mod.Protocol.Runtime.CallFrame
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SamplingHeapProfileNode extends js.Object {
+trait SamplingHeapProfileNode extends StObject {
   
   /**
     * Function location.
@@ -38,33 +39,21 @@ object SamplingHeapProfileNode {
   }
   
   @scala.inline
-  implicit class SamplingHeapProfileNodeOps[Self <: SamplingHeapProfileNode] (val x: Self) extends AnyVal {
+  implicit class SamplingHeapProfileNodeMutableBuilder[Self <: SamplingHeapProfileNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallFrame(value: CallFrame): Self = StObject.set(x, "callFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildren(value: js.Array[SamplingHeapProfileNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: SamplingHeapProfileNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setCallFrame(value: CallFrame): Self = this.set("callFrame", value.asInstanceOf[js.Any])
+    def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: SamplingHeapProfileNode*): Self = this.set("children", js.Array(value :_*))
-    
-    @scala.inline
-    def setChildren(value: js.Array[SamplingHeapProfileNode]): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: integer): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelfSize(value: Double): Self = this.set("selfSize", value.asInstanceOf[js.Any])
+    def setSelfSize(value: Double): Self = StObject.set(x, "selfSize", value.asInstanceOf[js.Any])
   }
 }

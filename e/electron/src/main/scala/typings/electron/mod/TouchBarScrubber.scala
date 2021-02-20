@@ -1,6 +1,7 @@
 package typings.electron.mod
 
 import typings.electron.Electron.TouchBarScrubberConstructorOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

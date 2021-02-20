@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.ecs
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CapacityProviderAutoScalingGroupProvider extends js.Object {
+trait CapacityProviderAutoScalingGroupProvider extends StObject {
   
   /**
     * - The Amazon Resource Name (ARN) of the associated auto scaling group.
@@ -32,33 +33,21 @@ object CapacityProviderAutoScalingGroupProvider {
   }
   
   @scala.inline
-  implicit class CapacityProviderAutoScalingGroupProviderOps[Self <: CapacityProviderAutoScalingGroupProvider] (val x: Self) extends AnyVal {
+  implicit class CapacityProviderAutoScalingGroupProviderMutableBuilder[Self <: CapacityProviderAutoScalingGroupProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupArn(value: Input[String]): Self = StObject.set(x, "autoScalingGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagedScaling(value: Input[CapacityProviderAutoScalingGroupProviderManagedScaling]): Self = StObject.set(x, "managedScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManagedScalingUndefined: Self = StObject.set(x, "managedScaling", js.undefined)
     
     @scala.inline
-    def setAutoScalingGroupArn(value: Input[String]): Self = this.set("autoScalingGroupArn", value.asInstanceOf[js.Any])
+    def setManagedTerminationProtection(value: Input[String]): Self = StObject.set(x, "managedTerminationProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedScaling(value: Input[CapacityProviderAutoScalingGroupProviderManagedScaling]): Self = this.set("managedScaling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagedScaling: Self = this.set("managedScaling", js.undefined)
-    
-    @scala.inline
-    def setManagedTerminationProtection(value: Input[String]): Self = this.set("managedTerminationProtection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagedTerminationProtection: Self = this.set("managedTerminationProtection", js.undefined)
+    def setManagedTerminationProtectionUndefined: Self = StObject.set(x, "managedTerminationProtection", js.undefined)
   }
 }

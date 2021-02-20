@@ -2,6 +2,7 @@ package typings.extjs.Ext.chart
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.chart.series.ISeries
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,84 +58,72 @@ object IPieSeries {
   }
   
   @scala.inline
-  implicit class IPieSeriesOps[Self <: IPieSeries] (val x: Self) extends AnyVal {
+  implicit class IPieSeriesMutableBuilder[Self <: IPieSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleFieldUndefined: Self = StObject.set(x, "angleField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorSet(value: Array): Self = StObject.set(x, "colorSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngleField(value: String): Self = this.set("angleField", value.asInstanceOf[js.Any])
+    def setColorSetUndefined: Self = StObject.set(x, "colorSet", js.undefined)
     
     @scala.inline
-    def deleteAngleField: Self = this.set("angleField", js.undefined)
+    def setDonut(value: js.Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSet(value: Array): Self = this.set("colorSet", value.asInstanceOf[js.Any])
+    def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
     
     @scala.inline
-    def deleteColorSet: Self = this.set("colorSet", js.undefined)
+    def setDrawSeries(value: () => Unit): Self = StObject.set(x, "drawSeries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDonut(value: js.Any): Self = this.set("donut", value.asInstanceOf[js.Any])
+    def setDrawSeriesUndefined: Self = StObject.set(x, "drawSeries", js.undefined)
     
     @scala.inline
-    def deleteDonut: Self = this.set("donut", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawSeries(value: () => Unit): Self = this.set("drawSeries", js.Any.fromFunction0(value))
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteDrawSeries: Self = this.set("drawSeries", js.undefined)
+    def setHighlightDuration(value: Double): Self = StObject.set(x, "highlightDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setHighlightDurationUndefined: Self = StObject.set(x, "highlightDuration", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHighlightDuration(value: Double): Self = this.set("highlightDuration", value.asInstanceOf[js.Any])
+    def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
     
     @scala.inline
-    def deleteHighlightDuration: Self = this.set("highlightDuration", js.undefined)
+    def setLengthField(value: String): Self = StObject.set(x, "lengthField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = this.set("highlightItem", js.Any.fromFunction1(value))
+    def setLengthFieldUndefined: Self = StObject.set(x, "lengthField", js.undefined)
     
     @scala.inline
-    def deleteHighlightItem: Self = this.set("highlightItem", js.undefined)
+    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthField(value: String): Self = this.set("lengthField", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteLengthField: Self = this.set("lengthField", js.undefined)
+    def setUnHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "unHighlightItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setUnHighlightItemUndefined: Self = StObject.set(x, "unHighlightItem", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = this.set("unHighlightItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUnHighlightItem: Self = this.set("unHighlightItem", js.undefined)
-    
-    @scala.inline
-    def setXField(value: String): Self = this.set("xField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXField: Self = this.set("xField", js.undefined)
+    def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
   }
 }

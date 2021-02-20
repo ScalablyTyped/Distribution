@@ -1,5 +1,6 @@
 package typings.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object RouteOptionsAccessScopeObject {
   }
   
   @scala.inline
-  implicit class RouteOptionsAccessScopeObjectOps[Self <: RouteOptionsAccessScopeObject] (val x: Self) extends AnyVal {
+  implicit class RouteOptionsAccessScopeObjectMutableBuilder[Self <: RouteOptionsAccessScopeObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScope(value: RouteOptionsAccessScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
-    
-    @scala.inline
-    def setScope(value: RouteOptionsAccessScope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.phaser.Phaser.Types.Loader.FileTypes
 
 import typings.phaser.Phaser.Types.Loader.FileConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PackFileSection extends js.Object {
+trait PackFileSection extends StObject {
   
   /**
     * A URL used to resolve paths in `files`. Example: 'http://labs.phaser.io/assets/'.
@@ -42,48 +43,36 @@ object PackFileSection {
   }
   
   @scala.inline
-  implicit class PackFileSectionOps[Self <: PackFileSection] (val x: Self) extends AnyVal {
+  implicit class PackFileSectionMutableBuilder[Self <: PackFileSection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultType(value: String): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesVarargs(value: FileConfig*): Self = this.set("files", js.Array(value :_*))
+    def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
     
     @scala.inline
-    def setFiles(value: js.Array[FileConfig]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setFiles(value: js.Array[FileConfig]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseURL(value: String): Self = this.set("baseURL", value.asInstanceOf[js.Any])
+    def setFilesVarargs(value: FileConfig*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def deleteBaseURL: Self = this.set("baseURL", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultType(value: String): Self = this.set("defaultType", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteDefaultType: Self = this.set("defaultType", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

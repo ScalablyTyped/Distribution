@@ -1,11 +1,12 @@
 package typings.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUnicodeHandling extends js.Object {
+trait IUnicodeHandling extends StObject {
   
   /**
     * Getter/setter for active Unicode version.
@@ -31,30 +32,18 @@ object IUnicodeHandling {
   }
   
   @scala.inline
-  implicit class IUnicodeHandlingOps[Self <: IUnicodeHandling] (val x: Self) extends AnyVal {
+  implicit class IUnicodeHandlingMutableBuilder[Self <: IUnicodeHandling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveVersion(value: String): Self = StObject.set(x, "activeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegister(value: IUnicodeVersionProvider => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersions(value: js.Array[String]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveVersion(value: String): Self = this.set("activeVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegister(value: IUnicodeVersionProvider => Unit): Self = this.set("register", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVersionsVarargs(value: String*): Self = this.set("versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: js.Array[String]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

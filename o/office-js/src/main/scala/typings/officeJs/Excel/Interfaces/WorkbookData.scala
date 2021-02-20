@@ -1,12 +1,13 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `workbook.toJSON()`. */
 @js.native
-trait WorkbookData extends js.Object {
+trait WorkbookData extends StObject {
   
   /**
     *
@@ -212,204 +213,192 @@ object WorkbookData {
   }
   
   @scala.inline
-  implicit class WorkbookDataOps[Self <: WorkbookData] (val x: Self) extends AnyVal {
+  implicit class WorkbookDataMutableBuilder[Self <: WorkbookData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoSave(value: Boolean): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindings(value: js.Array[BindingData]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSave(value: Boolean): Self = this.set("autoSave", value.asInstanceOf[js.Any])
+    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
     @scala.inline
-    def deleteAutoSave: Self = this.set("autoSave", js.undefined)
+    def setBindingsVarargs(value: BindingData*): Self = StObject.set(x, "bindings", js.Array(value :_*))
     
     @scala.inline
-    def setBindingsVarargs(value: BindingData*): Self = this.set("bindings", js.Array(value :_*))
+    def setCalculationEngineVersion(value: Double): Self = StObject.set(x, "calculationEngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindings(value: js.Array[BindingData]): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    def setCalculationEngineVersionUndefined: Self = StObject.set(x, "calculationEngineVersion", js.undefined)
     
     @scala.inline
-    def deleteBindings: Self = this.set("bindings", js.undefined)
+    def setChartDataPointTrack(value: Boolean): Self = StObject.set(x, "chartDataPointTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculationEngineVersion(value: Double): Self = this.set("calculationEngineVersion", value.asInstanceOf[js.Any])
+    def setChartDataPointTrackUndefined: Self = StObject.set(x, "chartDataPointTrack", js.undefined)
     
     @scala.inline
-    def deleteCalculationEngineVersion: Self = this.set("calculationEngineVersion", js.undefined)
+    def setComments(value: js.Array[CommentData]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartDataPointTrack(value: Boolean): Self = this.set("chartDataPointTrack", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def deleteChartDataPointTrack: Self = this.set("chartDataPointTrack", js.undefined)
+    def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: CommentData*): Self = this.set("comments", js.Array(value :_*))
+    def setCustomXmlParts(value: js.Array[CustomXmlPartData]): Self = StObject.set(x, "customXmlParts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentData]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setCustomXmlPartsUndefined: Self = StObject.set(x, "customXmlParts", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setCustomXmlPartsVarargs(value: CustomXmlPartData*): Self = StObject.set(x, "customXmlParts", js.Array(value :_*))
     
     @scala.inline
-    def setCustomXmlPartsVarargs(value: CustomXmlPartData*): Self = this.set("customXmlParts", js.Array(value :_*))
+    def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomXmlParts(value: js.Array[CustomXmlPartData]): Self = this.set("customXmlParts", value.asInstanceOf[js.Any])
+    def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
     @scala.inline
-    def deleteCustomXmlParts: Self = this.set("customXmlParts", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDirty(value: Boolean): Self = this.set("isDirty", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIsDirty: Self = this.set("isDirty", js.undefined)
+    def setNames(value: js.Array[NamedItemData]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNamesVarargs(value: NamedItemData*): Self = StObject.set(x, "names", js.Array(value :_*))
     
     @scala.inline
-    def setNamesVarargs(value: NamedItemData*): Self = this.set("names", js.Array(value :_*))
+    def setPivotTableStyles(value: js.Array[PivotTableStyleData]): Self = StObject.set(x, "pivotTableStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: js.Array[NamedItemData]): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setPivotTableStylesUndefined: Self = StObject.set(x, "pivotTableStyles", js.undefined)
     
     @scala.inline
-    def deleteNames: Self = this.set("names", js.undefined)
+    def setPivotTableStylesVarargs(value: PivotTableStyleData*): Self = StObject.set(x, "pivotTableStyles", js.Array(value :_*))
     
     @scala.inline
-    def setPivotTableStylesVarargs(value: PivotTableStyleData*): Self = this.set("pivotTableStyles", js.Array(value :_*))
+    def setPivotTables(value: js.Array[PivotTableData]): Self = StObject.set(x, "pivotTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotTableStyles(value: js.Array[PivotTableStyleData]): Self = this.set("pivotTableStyles", value.asInstanceOf[js.Any])
+    def setPivotTablesUndefined: Self = StObject.set(x, "pivotTables", js.undefined)
     
     @scala.inline
-    def deletePivotTableStyles: Self = this.set("pivotTableStyles", js.undefined)
+    def setPivotTablesVarargs(value: PivotTableData*): Self = StObject.set(x, "pivotTables", js.Array(value :_*))
     
     @scala.inline
-    def setPivotTablesVarargs(value: PivotTableData*): Self = this.set("pivotTables", js.Array(value :_*))
+    def setPreviouslySaved(value: Boolean): Self = StObject.set(x, "previouslySaved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotTables(value: js.Array[PivotTableData]): Self = this.set("pivotTables", value.asInstanceOf[js.Any])
+    def setPreviouslySavedUndefined: Self = StObject.set(x, "previouslySaved", js.undefined)
     
     @scala.inline
-    def deletePivotTables: Self = this.set("pivotTables", js.undefined)
+    def setProperties(value: DocumentPropertiesData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviouslySaved(value: Boolean): Self = this.set("previouslySaved", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deletePreviouslySaved: Self = this.set("previouslySaved", js.undefined)
+    def setProtection(value: WorkbookProtectionData): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: DocumentPropertiesData): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtection(value: WorkbookProtectionData): Self = this.set("protection", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteProtection: Self = this.set("protection", js.undefined)
+    def setSettings(value: js.Array[SettingData]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setSettingsVarargs(value: SettingData*): Self = StObject.set(x, "settings", js.Array(value :_*))
     
     @scala.inline
-    def setSettingsVarargs(value: SettingData*): Self = this.set("settings", js.Array(value :_*))
+    def setSlicerStyles(value: js.Array[SlicerStyleData]): Self = StObject.set(x, "slicerStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettings(value: js.Array[SettingData]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    def setSlicerStylesUndefined: Self = StObject.set(x, "slicerStyles", js.undefined)
     
     @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
+    def setSlicerStylesVarargs(value: SlicerStyleData*): Self = StObject.set(x, "slicerStyles", js.Array(value :_*))
     
     @scala.inline
-    def setSlicerStylesVarargs(value: SlicerStyleData*): Self = this.set("slicerStyles", js.Array(value :_*))
+    def setSlicers(value: js.Array[SlicerData]): Self = StObject.set(x, "slicers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlicerStyles(value: js.Array[SlicerStyleData]): Self = this.set("slicerStyles", value.asInstanceOf[js.Any])
+    def setSlicersUndefined: Self = StObject.set(x, "slicers", js.undefined)
     
     @scala.inline
-    def deleteSlicerStyles: Self = this.set("slicerStyles", js.undefined)
+    def setSlicersVarargs(value: SlicerData*): Self = StObject.set(x, "slicers", js.Array(value :_*))
     
     @scala.inline
-    def setSlicersVarargs(value: SlicerData*): Self = this.set("slicers", js.Array(value :_*))
+    def setStyles(value: js.Array[StyleData]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlicers(value: js.Array[SlicerData]): Self = this.set("slicers", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteSlicers: Self = this.set("slicers", js.undefined)
+    def setStylesVarargs(value: StyleData*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def setStylesVarargs(value: StyleData*): Self = this.set("styles", js.Array(value :_*))
+    def setTableStyles(value: js.Array[TableStyleData]): Self = StObject.set(x, "tableStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Array[StyleData]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTableStylesUndefined: Self = StObject.set(x, "tableStyles", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setTableStylesVarargs(value: TableStyleData*): Self = StObject.set(x, "tableStyles", js.Array(value :_*))
     
     @scala.inline
-    def setTableStylesVarargs(value: TableStyleData*): Self = this.set("tableStyles", js.Array(value :_*))
+    def setTables(value: js.Array[TableData]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableStyles(value: js.Array[TableStyleData]): Self = this.set("tableStyles", value.asInstanceOf[js.Any])
+    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
     @scala.inline
-    def deleteTableStyles: Self = this.set("tableStyles", js.undefined)
+    def setTablesVarargs(value: TableData*): Self = StObject.set(x, "tables", js.Array(value :_*))
     
     @scala.inline
-    def setTablesVarargs(value: TableData*): Self = this.set("tables", js.Array(value :_*))
+    def setTimelineStyles(value: js.Array[TimelineStyleData]): Self = StObject.set(x, "timelineStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTables(value: js.Array[TableData]): Self = this.set("tables", value.asInstanceOf[js.Any])
+    def setTimelineStylesUndefined: Self = StObject.set(x, "timelineStyles", js.undefined)
     
     @scala.inline
-    def deleteTables: Self = this.set("tables", js.undefined)
+    def setTimelineStylesVarargs(value: TimelineStyleData*): Self = StObject.set(x, "timelineStyles", js.Array(value :_*))
     
     @scala.inline
-    def setTimelineStylesVarargs(value: TimelineStyleData*): Self = this.set("timelineStyles", js.Array(value :_*))
+    def setUsePrecisionAsDisplayed(value: Boolean): Self = StObject.set(x, "usePrecisionAsDisplayed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimelineStyles(value: js.Array[TimelineStyleData]): Self = this.set("timelineStyles", value.asInstanceOf[js.Any])
+    def setUsePrecisionAsDisplayedUndefined: Self = StObject.set(x, "usePrecisionAsDisplayed", js.undefined)
     
     @scala.inline
-    def deleteTimelineStyles: Self = this.set("timelineStyles", js.undefined)
+    def setWorksheets(value: js.Array[WorksheetData]): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsePrecisionAsDisplayed(value: Boolean): Self = this.set("usePrecisionAsDisplayed", value.asInstanceOf[js.Any])
+    def setWorksheetsUndefined: Self = StObject.set(x, "worksheets", js.undefined)
     
     @scala.inline
-    def deleteUsePrecisionAsDisplayed: Self = this.set("usePrecisionAsDisplayed", js.undefined)
-    
-    @scala.inline
-    def setWorksheetsVarargs(value: WorksheetData*): Self = this.set("worksheets", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorksheets(value: js.Array[WorksheetData]): Self = this.set("worksheets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorksheets: Self = this.set("worksheets", js.undefined)
+    def setWorksheetsVarargs(value: WorksheetData*): Self = StObject.set(x, "worksheets", js.Array(value :_*))
   }
 }

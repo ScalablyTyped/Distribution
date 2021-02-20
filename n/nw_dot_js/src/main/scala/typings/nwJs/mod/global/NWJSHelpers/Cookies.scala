@@ -1,6 +1,7 @@
 package typings.nwJs.mod.global.NWJSHelpers
 
 import typings.nwJs.anon.AddListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This includes multiple functions to manipulate the cookies.
   */
 @js.native
-trait Cookies extends js.Object {
+trait Cookies extends StObject {
   
   /**
     * Retrieves information about a single cookie.
@@ -73,37 +74,25 @@ object Cookies {
   }
   
   @scala.inline
-  implicit class CookiesOps[Self <: Cookies] (val x: Self) extends AnyVal {
+  implicit class CookiesMutableBuilder[Self <: Cookies] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet(value: (CookiesGetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit): Self = this.set("get", js.Any.fromFunction2(value))
+    def setGet(value: (CookiesGetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetAll(
       value: (CookiesGetAllDetails, js.Function1[/* cookies */ js.UndefOr[js.Array[Cookie]], Unit]) => Unit
-    ): Self = this.set("getAll", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getAll", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnChanged(value: AddListener): Self = this.set("onChanged", value.asInstanceOf[js.Any])
+    def setOnChanged(value: AddListener): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRemove(
       value: (CookiesRemoveDetails, js.Function1[/* details */ js.UndefOr[CookiesRemovedDetails], Unit]) => Unit
-    ): Self = this.set("remove", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSet(value: (CookiesSetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit): Self = this.set("set", js.Any.fromFunction2(value))
+    def setSet(value: (CookiesSetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

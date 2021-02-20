@@ -2,12 +2,13 @@ package typings.winrt.Windows.Security.Cryptography.Certificates
 
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICertificateEnrollmentManagerStatics extends js.Object {
+trait ICertificateEnrollmentManagerStatics extends StObject {
   
   def createRequestAsync(request: CertificateRequestProperties): IAsyncOperation[String] = js.native
   
@@ -35,27 +36,15 @@ object ICertificateEnrollmentManagerStatics {
   }
   
   @scala.inline
-  implicit class ICertificateEnrollmentManagerStaticsOps[Self <: ICertificateEnrollmentManagerStatics] (val x: Self) extends AnyVal {
+  implicit class ICertificateEnrollmentManagerStaticsMutableBuilder[Self <: ICertificateEnrollmentManagerStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateRequestAsync(value: CertificateRequestProperties => IAsyncOperation[String]): Self = StObject.set(x, "createRequestAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportPfxDataAsync(value: (String, String, ExportOption, KeyProtectionLevel, InstallOptions, String) => IAsyncAction): Self = StObject.set(x, "importPfxDataAsync", js.Any.fromFunction6(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateRequestAsync(value: CertificateRequestProperties => IAsyncOperation[String]): Self = this.set("createRequestAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setImportPfxDataAsync(value: (String, String, ExportOption, KeyProtectionLevel, InstallOptions, String) => IAsyncAction): Self = this.set("importPfxDataAsync", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setInstallCertificateAsync(value: (String, InstallOptions) => IAsyncAction): Self = this.set("installCertificateAsync", js.Any.fromFunction2(value))
+    def setInstallCertificateAsync(value: (String, InstallOptions) => IAsyncAction): Self = StObject.set(x, "installCertificateAsync", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddressObject extends js.Object {
+trait AddressObject extends StObject {
   
   var cityName: String = js.native
   
@@ -38,39 +39,27 @@ object AddressObject {
   }
   
   @scala.inline
-  implicit class AddressObjectOps[Self <: AddressObject] (val x: Self) extends AnyVal {
+  implicit class AddressObjectMutableBuilder[Self <: AddressObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCityName(value: String): Self = StObject.set(x, "cityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCityName(value: String): Self = this.set("cityName", value.asInstanceOf[js.Any])
+    def setProvinceCode(value: String): Self = StObject.set(x, "provinceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setProvinceName(value: String): Self = StObject.set(x, "provinceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    def setStreetAddress(value: String): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvinceCode(value: String): Self = this.set("provinceCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvinceName(value: String): Self = this.set("provinceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreetAddress(value: String): Self = this.set("streetAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreetAddress2(value: String): Self = this.set("streetAddress2", value.asInstanceOf[js.Any])
+    def setStreetAddress2(value: String): Self = StObject.set(x, "streetAddress2", value.asInstanceOf[js.Any])
   }
 }

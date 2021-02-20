@@ -3,16 +3,16 @@ package typings.winrt.global.Windows.Storage
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Storage.Search.CommonFileQuery
 import typings.winrt.Windows.Storage.Search.CommonFolderQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Search")
-@js.native
-object Search extends js.Object {
+object Search {
   
+  @JSGlobal("Windows.Storage.Search.CommonFileQuery")
   @js.native
-  object CommonFileQuery extends js.Object {
+  object CommonFileQuery extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Storage.Search.CommonFileQuery with Double] = js.native
@@ -30,8 +30,9 @@ object Search extends js.Object {
     /* 2 */ val orderByTitle: typings.winrt.Windows.Storage.Search.CommonFileQuery.orderByTitle with Double = js.native
   }
   
+  @JSGlobal("Windows.Storage.Search.CommonFolderQuery")
   @js.native
-  object CommonFolderQuery extends js.Object {
+  object CommonFolderQuery extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Storage.Search.CommonFolderQuery with Double] = js.native
@@ -63,8 +64,9 @@ object Search extends js.Object {
     /* 1 */ val groupByYear: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByYear with Double = js.native
   }
   
+  @JSGlobal("Windows.Storage.Search.DateStackOption")
   @js.native
-  object DateStackOption extends js.Object {
+  object DateStackOption extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Storage.Search.DateStackOption with Double] = js.native
@@ -76,8 +78,9 @@ object Search extends js.Object {
     /* 1 */ val year: typings.winrt.Windows.Storage.Search.DateStackOption.year with Double = js.native
   }
   
+  @JSGlobal("Windows.Storage.Search.FolderDepth")
   @js.native
-  object FolderDepth extends js.Object {
+  object FolderDepth extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Storage.Search.FolderDepth with Double] = js.native
@@ -87,8 +90,9 @@ object Search extends js.Object {
     /* 0 */ val shallow: typings.winrt.Windows.Storage.Search.FolderDepth.shallow with Double = js.native
   }
   
+  @JSGlobal("Windows.Storage.Search.IndexedState")
   @js.native
-  object IndexedState extends js.Object {
+  object IndexedState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Storage.Search.IndexedState with Double] = js.native
@@ -102,8 +106,9 @@ object Search extends js.Object {
     /* 0 */ val unknown: typings.winrt.Windows.Storage.Search.IndexedState.unknown with Double = js.native
   }
   
+  @JSGlobal("Windows.Storage.Search.IndexerOption")
   @js.native
-  object IndexerOption extends js.Object {
+  object IndexerOption extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Storage.Search.IndexerOption with Double] = js.native
@@ -115,6 +120,7 @@ object Search extends js.Object {
     /* 0 */ val useIndexerWhenAvailable: typings.winrt.Windows.Storage.Search.IndexerOption.useIndexerWhenAvailable with Double = js.native
   }
   
+  @JSGlobal("Windows.Storage.Search.QueryOptions")
   @js.native
   class QueryOptions ()
     extends typings.winrt.Windows.Storage.Search.QueryOptions {
@@ -122,18 +128,22 @@ object Search extends js.Object {
     def this(query: CommonFileQuery, fileTypeFilter: IIterable[String]) = this()
   }
   
+  @JSGlobal("Windows.Storage.Search.SortEntryVector")
   @js.native
   class SortEntryVector ()
     extends typings.winrt.Windows.Storage.Search.SortEntryVector
   
+  @JSGlobal("Windows.Storage.Search.StorageFileQueryResult")
   @js.native
   class StorageFileQueryResult ()
     extends typings.winrt.Windows.Storage.Search.StorageFileQueryResult
   
+  @JSGlobal("Windows.Storage.Search.StorageFolderQueryResult")
   @js.native
   class StorageFolderQueryResult ()
     extends typings.winrt.Windows.Storage.Search.StorageFolderQueryResult
   
+  @JSGlobal("Windows.Storage.Search.StorageItemQueryResult")
   @js.native
   class StorageItemQueryResult ()
     extends typings.winrt.Windows.Storage.Search.StorageItemQueryResult

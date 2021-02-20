@@ -1,11 +1,12 @@
 package typings.awsSdk.ramMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPermissionRequest extends js.Object {
+trait GetPermissionRequest extends StObject {
   
   /**
     * The ARN of the permission.
@@ -26,27 +27,15 @@ object GetPermissionRequest {
   }
   
   @scala.inline
-  implicit class GetPermissionRequestOps[Self <: GetPermissionRequest] (val x: Self) extends AnyVal {
+  implicit class GetPermissionRequestMutableBuilder[Self <: GetPermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermissionArn(value: String): Self = StObject.set(x, "permissionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermissionVersion(value: Integer): Self = StObject.set(x, "permissionVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPermissionArn(value: String): Self = this.set("permissionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermissionVersion(value: Integer): Self = this.set("permissionVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissionVersion: Self = this.set("permissionVersion", js.undefined)
+    def setPermissionVersionUndefined: Self = StObject.set(x, "permissionVersion", js.undefined)
   }
 }

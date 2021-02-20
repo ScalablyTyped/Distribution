@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpeechRecognitionConstraintType extends js.Object
+sealed trait SpeechRecognitionConstraintType extends StObject
 /** Specifies the type of pre-defined grammar constraint used for speech recognition. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType")
 @js.native
-object SpeechRecognitionConstraintType extends js.Object {
+object SpeechRecognitionConstraintType extends StObject {
   
   /** A constraint based on a SRGS grammar file. See SpeechRecognitionGrammarFileConstraint . */
   @js.native

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionChangeEvent[T] extends js.Object {
+trait CollectionChangeEvent[T] extends StObject {
   
   var added: js.Array[T] = js.native
   
@@ -22,36 +23,24 @@ object CollectionChangeEvent {
   }
   
   @scala.inline
-  implicit class CollectionChangeEventOps[Self <: CollectionChangeEvent[_], T] (val x: Self with CollectionChangeEvent[T]) extends AnyVal {
+  implicit class CollectionChangeEventMutableBuilder[Self <: CollectionChangeEvent[_], T] (val x: Self with CollectionChangeEvent[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdded(value: js.Array[T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedVarargs(value: T*): Self = StObject.set(x, "added", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMoved(value: js.Array[T]): Self = StObject.set(x, "moved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedVarargs(value: T*): Self = this.set("added", js.Array(value :_*))
+    def setMovedVarargs(value: T*): Self = StObject.set(x, "moved", js.Array(value :_*))
     
     @scala.inline
-    def setAdded(value: js.Array[T]): Self = this.set("added", value.asInstanceOf[js.Any])
+    def setRemoved(value: js.Array[T]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovedVarargs(value: T*): Self = this.set("moved", js.Array(value :_*))
-    
-    @scala.inline
-    def setMoved(value: js.Array[T]): Self = this.set("moved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemovedVarargs(value: T*): Self = this.set("removed", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoved(value: js.Array[T]): Self = this.set("removed", value.asInstanceOf[js.Any])
+    def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value :_*))
   }
 }

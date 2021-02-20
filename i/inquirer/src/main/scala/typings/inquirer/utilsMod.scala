@@ -5,14 +5,15 @@ import typings.inquirer.mod.DistinctQuestion
 import typings.inquirer.mod.KeyUnion
 import typings.inquirer.mod.UnionToIntersection
 import typings.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inquirer/lib/utils/utils", JSImport.Namespace)
-@js.native
-object utilsMod extends js.Object {
+object utilsMod {
   
+  @JSImport("inquirer/lib/utils/utils", "fetchAsyncQuestionPropertyQuestionProperty")
+  @js.native
   def fetchAsyncQuestionPropertyQuestionProperty(question: DistinctQuestion[Answers], prop: QuestionProperty, answers: Answers): Observable_[DistinctQuestion[Answers]] = js.native
   
   /**

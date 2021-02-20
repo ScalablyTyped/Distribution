@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentJobStepInfo extends js.Object {
+trait AgentJobStepInfo extends StObject {
   
   var appendLogToTable: Boolean = js.native
   
@@ -89,90 +90,78 @@ object AgentJobStepInfo {
   }
   
   @scala.inline
-  implicit class AgentJobStepInfoOps[Self <: AgentJobStepInfo] (val x: Self) extends AnyVal {
+  implicit class AgentJobStepInfoMutableBuilder[Self <: AgentJobStepInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendLogToTable(value: Boolean): Self = StObject.set(x, "appendLogToTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendToLogFile(value: Boolean): Self = StObject.set(x, "appendToLogFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppendToStepHist(value: Boolean): Self = StObject.set(x, "appendToStepHist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendLogToTable(value: Boolean): Self = this.set("appendLogToTable", value.asInstanceOf[js.Any])
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendToLogFile(value: Boolean): Self = this.set("appendToLogFile", value.asInstanceOf[js.Any])
+    def setCommandExecutionSuccessCode(value: Double): Self = StObject.set(x, "commandExecutionSuccessCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendToStepHist(value: Boolean): Self = this.set("appendToStepHist", value.asInstanceOf[js.Any])
+    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setDatabaseUserName(value: String): Self = StObject.set(x, "databaseUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandExecutionSuccessCode(value: Double): Self = this.set("commandExecutionSuccessCode", value.asInstanceOf[js.Any])
+    def setFailStepId(value: Double): Self = StObject.set(x, "failStepId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    def setFailureAction(value: StepCompletionAction): Self = StObject.set(x, "failureAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseUserName(value: String): Self = this.set("databaseUserName", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailStepId(value: Double): Self = this.set("failStepId", value.asInstanceOf[js.Any])
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureAction(value: StepCompletionAction): Self = this.set("failureAction", value.asInstanceOf[js.Any])
+    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOutputFileName(value: String): Self = StObject.set(x, "outputFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setProxyName(value: String): Self = StObject.set(x, "proxyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    def setRetryAttempts(value: Double): Self = StObject.set(x, "retryAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputFileName(value: String): Self = this.set("outputFileName", value.asInstanceOf[js.Any])
+    def setRetryInterval(value: Double): Self = StObject.set(x, "retryInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyName(value: String): Self = this.set("proxyName", value.asInstanceOf[js.Any])
+    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryAttempts(value: Double): Self = this.set("retryAttempts", value.asInstanceOf[js.Any])
+    def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryInterval(value: Double): Self = this.set("retryInterval", value.asInstanceOf[js.Any])
+    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript(value: String): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setStepName(value: String): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptName(value: String): Self = this.set("scriptName", value.asInstanceOf[js.Any])
+    def setSubSystem(value: AgentSubSystem): Self = StObject.set(x, "subSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
+    def setSuccessAction(value: StepCompletionAction): Self = StObject.set(x, "successAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepName(value: String): Self = this.set("stepName", value.asInstanceOf[js.Any])
+    def setSuccessStepId(value: Double): Self = StObject.set(x, "successStepId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubSystem(value: AgentSubSystem): Self = this.set("subSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccessAction(value: StepCompletionAction): Self = this.set("successAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccessStepId(value: Double): Self = this.set("successStepId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWriteLogToTable(value: Boolean): Self = this.set("writeLogToTable", value.asInstanceOf[js.Any])
+    def setWriteLogToTable(value: Boolean): Self = StObject.set(x, "writeLogToTable", value.asInstanceOf[js.Any])
   }
 }

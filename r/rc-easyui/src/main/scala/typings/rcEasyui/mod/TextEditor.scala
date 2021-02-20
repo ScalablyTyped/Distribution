@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,168 +28,217 @@ class TextEditor protected ()
   
   def setValue(e: js.Any): Unit = js.native
 }
-@JSImport("rc-easyui", "TextEditor")
-@js.native
-object TextEditor extends js.Object {
+object TextEditor {
   
-  @js.native
-  object contextTypes extends js.Object {
+  object contextTypes {
     
-    @js.native
-    object fieldAdd extends js.Object {
+    object fieldAdd {
       
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldAdd")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.contextTypes.fieldAdd
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldAdd.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldBlur extends js.Object {
+    object fieldBlur {
       
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldBlur")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.contextTypes.fieldBlur
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldBlur.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldChange extends js.Object {
+    object fieldChange {
       
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldChange")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.contextTypes.fieldChange
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldChange.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldFocus extends js.Object {
+    object fieldFocus {
       
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldFocus")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.contextTypes.fieldFocus
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldFocus.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldName extends js.Object {
+    object fieldName {
       
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldName")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.contextTypes.fieldName
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldName.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldRemove extends js.Object {
+    object fieldRemove {
       
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldRemove")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.contextTypes.fieldRemove
+      @JSImport("rc-easyui", "TextEditor.contextTypes.fieldRemove.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "TextEditor.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.contextTypes.locale
+      @JSImport("rc-easyui", "TextEditor.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "TextEditor.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.contextTypes.t
+      @JSImport("rc-easyui", "TextEditor.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
+    @JSImport("rc-easyui", "TextEditor.defaultProps.onBlur")
+    @js.native
     def onBlur(): Unit = js.native
     
+    @JSImport("rc-easyui", "TextEditor.defaultProps.onChange")
+    @js.native
     def onChange(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "TextEditor.defaultProps.onFocus")
+    @js.native
     def onFocus(): Unit = js.native
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object invalid extends js.Object {
+    object invalid {
       
+      @JSImport("rc-easyui", "TextEditor.propTypes.invalid")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.propTypes.invalid
+      @JSImport("rc-easyui", "TextEditor.propTypes.invalid.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object name extends js.Object {
+    object name {
       
+      @JSImport("rc-easyui", "TextEditor.propTypes.name")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.propTypes.name
+      @JSImport("rc-easyui", "TextEditor.propTypes.name.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onBlur extends js.Object {
+    object onBlur {
       
+      @JSImport("rc-easyui", "TextEditor.propTypes.onBlur")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.propTypes.onBlur
+      @JSImport("rc-easyui", "TextEditor.propTypes.onBlur.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onChange extends js.Object {
+    object onChange {
       
+      @JSImport("rc-easyui", "TextEditor.propTypes.onChange")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.propTypes.onChange
+      @JSImport("rc-easyui", "TextEditor.propTypes.onChange.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onFocus extends js.Object {
+    object onFocus {
       
+      @JSImport("rc-easyui", "TextEditor.propTypes.onFocus")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.propTypes.onFocus
+      @JSImport("rc-easyui", "TextEditor.propTypes.onFocus.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object validateOnBlur extends js.Object {
+    object validateOnBlur {
       
+      @JSImport("rc-easyui", "TextEditor.propTypes.validateOnBlur")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.propTypes.validateOnBlur
+      @JSImport("rc-easyui", "TextEditor.propTypes.validateOnBlur.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object validateOnChange extends js.Object {
+    object validateOnChange {
       
+      @JSImport("rc-easyui", "TextEditor.propTypes.validateOnChange")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.propTypes.validateOnChange
+      @JSImport("rc-easyui", "TextEditor.propTypes.validateOnChange.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object validateOnCreate extends js.Object {
+    object validateOnCreate {
       
+      @JSImport("rc-easyui", "TextEditor.propTypes.validateOnCreate")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.TextEditor.propTypes.validateOnCreate
+      @JSImport("rc-easyui", "TextEditor.propTypes.validateOnCreate.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

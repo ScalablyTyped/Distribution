@@ -2,12 +2,13 @@ package typings.jsrsasign.anon
 
 import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Critical extends js.Object {
+trait Critical extends StObject {
   
   var critical: js.UndefOr[Boolean] = js.native
   
@@ -26,33 +27,21 @@ object Critical {
   }
   
   @scala.inline
-  implicit class CriticalOps[Self <: Critical] (val x: Self) extends AnyVal {
+  implicit class CriticalMutableBuilder[Self <: Critical] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuer(value: StringParam): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: StringParam): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setKid(value: HexParam): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKid(value: HexParam): Self = this.set("kid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSn(value: HexParam): Self = this.set("sn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCritical(value: Boolean): Self = this.set("critical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCritical: Self = this.set("critical", js.undefined)
+    def setSn(value: HexParam): Self = StObject.set(x, "sn", value.asInstanceOf[js.Any])
   }
 }

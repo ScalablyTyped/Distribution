@@ -1,11 +1,12 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CameraContext extends js.Object {
+trait CameraContext extends StObject {
   
   /** 开始录像 */
   def startRecord(options: StartRecordOptions): Unit = js.native
@@ -29,27 +30,15 @@ object CameraContext {
   }
   
   @scala.inline
-  implicit class CameraContextOps[Self <: CameraContext] (val x: Self) extends AnyVal {
+  implicit class CameraContextMutableBuilder[Self <: CameraContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStartRecord(value: StartRecordOptions => Unit): Self = StObject.set(x, "startRecord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStopRecord(value: StopRecordOptions => Unit): Self = StObject.set(x, "stopRecord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStartRecord(value: StartRecordOptions => Unit): Self = this.set("startRecord", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStopRecord(value: StopRecordOptions => Unit): Self = this.set("stopRecord", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTakePhoto(value: TakePhotoOptions => Unit): Self = this.set("takePhoto", js.Any.fromFunction1(value))
+    def setTakePhoto(value: TakePhotoOptions => Unit): Self = StObject.set(x, "takePhoto", js.Any.fromFunction1(value))
   }
 }

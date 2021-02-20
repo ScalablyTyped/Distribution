@@ -21,6 +21,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.drag
 import typings.arcgisJsApi.arcgisJsApiStrings.focus
 import typings.arcgisJsApi.arcgisJsApiStrings.hold
 import typings.arcgisJsApi.arcgisJsApiStrings.resize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

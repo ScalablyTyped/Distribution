@@ -1,12 +1,13 @@
 package typings.expoFileSystem.fileSystemTypesMod
 
 import typings.expoFileSystem.expoFileSystemStrings.ExponentFileSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExponentFileSystemModule extends js.Object {
+trait ExponentFileSystemModule extends StObject {
   
   def addListener(eventName: String): Unit = js.native
   
@@ -65,153 +66,141 @@ object ExponentFileSystemModule {
   }
   
   @scala.inline
-  implicit class ExponentFileSystemModuleOps[Self <: ExponentFileSystemModule] (val x: Self) extends AnyVal {
+  implicit class ExponentFileSystemModuleMutableBuilder[Self <: ExponentFileSystemModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddListener(value: String => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleDirectory(value: String): Self = StObject.set(x, "bundleDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBundleDirectoryNull: Self = StObject.set(x, "bundleDirectory", null)
     
     @scala.inline
-    def setAddListener(value: String => Unit): Self = this.set("addListener", js.Any.fromFunction1(value))
+    def setBundledAssets(value: String): Self = StObject.set(x, "bundledAssets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ExponentFileSystem): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setBundledAssetsNull: Self = StObject.set(x, "bundledAssets", null)
     
     @scala.inline
-    def setRemoveListeners(value: Double => Unit): Self = this.set("removeListeners", js.Any.fromFunction1(value))
+    def setCacheDirectory(value: String): Self = StObject.set(x, "cacheDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleDirectory(value: String): Self = this.set("bundleDirectory", value.asInstanceOf[js.Any])
+    def setCacheDirectoryNull: Self = StObject.set(x, "cacheDirectory", null)
     
     @scala.inline
-    def setBundleDirectoryNull: Self = this.set("bundleDirectory", null)
+    def setCopyAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "copyAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBundledAssets(value: String): Self = this.set("bundledAssets", value.asInstanceOf[js.Any])
+    def setCopyAsyncUndefined: Self = StObject.set(x, "copyAsync", js.undefined)
     
     @scala.inline
-    def setBundledAssetsNull: Self = this.set("bundledAssets", null)
+    def setDeleteAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "deleteAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCacheDirectory(value: String): Self = this.set("cacheDirectory", value.asInstanceOf[js.Any])
+    def setDeleteAsyncUndefined: Self = StObject.set(x, "deleteAsync", js.undefined)
     
     @scala.inline
-    def setCacheDirectoryNull: Self = this.set("cacheDirectory", null)
+    def setDocumentDirectory(value: String): Self = StObject.set(x, "documentDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("copyAsync", js.Any.fromFunction1(value))
+    def setDocumentDirectoryNull: Self = StObject.set(x, "documentDirectory", null)
     
     @scala.inline
-    def deleteCopyAsync: Self = this.set("copyAsync", js.undefined)
+    def setDownloadAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "downloadAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("deleteAsync", js.Any.fromFunction1(value))
+    def setDownloadAsyncUndefined: Self = StObject.set(x, "downloadAsync", js.undefined)
     
     @scala.inline
-    def deleteDeleteAsync: Self = this.set("deleteAsync", js.undefined)
+    def setDownloadResumablePauseAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "downloadResumablePauseAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDocumentDirectory(value: String): Self = this.set("documentDirectory", value.asInstanceOf[js.Any])
+    def setDownloadResumablePauseAsyncUndefined: Self = StObject.set(x, "downloadResumablePauseAsync", js.undefined)
     
     @scala.inline
-    def setDocumentDirectoryNull: Self = this.set("documentDirectory", null)
+    def setDownloadResumableStartAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "downloadResumableStartAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDownloadAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("downloadAsync", js.Any.fromFunction1(value))
+    def setDownloadResumableStartAsyncUndefined: Self = StObject.set(x, "downloadResumableStartAsync", js.undefined)
     
     @scala.inline
-    def deleteDownloadAsync: Self = this.set("downloadAsync", js.undefined)
+    def setGetContentUriAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "getContentUriAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDownloadResumablePauseAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("downloadResumablePauseAsync", js.Any.fromFunction1(value))
+    def setGetContentUriAsyncUndefined: Self = StObject.set(x, "getContentUriAsync", js.undefined)
     
     @scala.inline
-    def deleteDownloadResumablePauseAsync: Self = this.set("downloadResumablePauseAsync", js.undefined)
+    def setGetFreeDiskStorageAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "getFreeDiskStorageAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDownloadResumableStartAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("downloadResumableStartAsync", js.Any.fromFunction1(value))
+    def setGetFreeDiskStorageAsyncUndefined: Self = StObject.set(x, "getFreeDiskStorageAsync", js.undefined)
     
     @scala.inline
-    def deleteDownloadResumableStartAsync: Self = this.set("downloadResumableStartAsync", js.undefined)
+    def setGetInfoAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "getInfoAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetContentUriAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("getContentUriAsync", js.Any.fromFunction1(value))
+    def setGetInfoAsyncUndefined: Self = StObject.set(x, "getInfoAsync", js.undefined)
     
     @scala.inline
-    def deleteGetContentUriAsync: Self = this.set("getContentUriAsync", js.undefined)
+    def setGetTotalDiskCapacityAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "getTotalDiskCapacityAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFreeDiskStorageAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("getFreeDiskStorageAsync", js.Any.fromFunction1(value))
+    def setGetTotalDiskCapacityAsyncUndefined: Self = StObject.set(x, "getTotalDiskCapacityAsync", js.undefined)
     
     @scala.inline
-    def deleteGetFreeDiskStorageAsync: Self = this.set("getFreeDiskStorageAsync", js.undefined)
+    def setMakeDirectoryAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "makeDirectoryAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetInfoAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("getInfoAsync", js.Any.fromFunction1(value))
+    def setMakeDirectoryAsyncUndefined: Self = StObject.set(x, "makeDirectoryAsync", js.undefined)
     
     @scala.inline
-    def deleteGetInfoAsync: Self = this.set("getInfoAsync", js.undefined)
+    def setMoveAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "moveAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTotalDiskCapacityAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("getTotalDiskCapacityAsync", js.Any.fromFunction1(value))
+    def setMoveAsyncUndefined: Self = StObject.set(x, "moveAsync", js.undefined)
     
     @scala.inline
-    def deleteGetTotalDiskCapacityAsync: Self = this.set("getTotalDiskCapacityAsync", js.undefined)
+    def setName(value: ExponentFileSystem): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMakeDirectoryAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("makeDirectoryAsync", js.Any.fromFunction1(value))
+    def setReadAsStringAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "readAsStringAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMakeDirectoryAsync: Self = this.set("makeDirectoryAsync", js.undefined)
+    def setReadAsStringAsyncUndefined: Self = StObject.set(x, "readAsStringAsync", js.undefined)
     
     @scala.inline
-    def setMoveAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("moveAsync", js.Any.fromFunction1(value))
+    def setReadDirectoryAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "readDirectoryAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMoveAsync: Self = this.set("moveAsync", js.undefined)
+    def setReadDirectoryAsyncUndefined: Self = StObject.set(x, "readDirectoryAsync", js.undefined)
     
     @scala.inline
-    def setReadAsStringAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("readAsStringAsync", js.Any.fromFunction1(value))
+    def setRemoveListeners(value: Double => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteReadAsStringAsync: Self = this.set("readAsStringAsync", js.undefined)
+    def setStartObserving(value: () => Unit): Self = StObject.set(x, "startObserving", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadDirectoryAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("readDirectoryAsync", js.Any.fromFunction1(value))
+    def setStartObservingUndefined: Self = StObject.set(x, "startObserving", js.undefined)
     
     @scala.inline
-    def deleteReadDirectoryAsync: Self = this.set("readDirectoryAsync", js.undefined)
+    def setStopObserving(value: () => Unit): Self = StObject.set(x, "stopObserving", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStartObserving(value: () => Unit): Self = this.set("startObserving", js.Any.fromFunction0(value))
+    def setStopObservingUndefined: Self = StObject.set(x, "stopObserving", js.undefined)
     
     @scala.inline
-    def deleteStartObserving: Self = this.set("startObserving", js.undefined)
+    def setUploadAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "uploadAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStopObserving(value: () => Unit): Self = this.set("stopObserving", js.Any.fromFunction0(value))
+    def setUploadAsyncUndefined: Self = StObject.set(x, "uploadAsync", js.undefined)
     
     @scala.inline
-    def deleteStopObserving: Self = this.set("stopObserving", js.undefined)
+    def setWriteAsStringAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "writeAsStringAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUploadAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("uploadAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUploadAsync: Self = this.set("uploadAsync", js.undefined)
-    
-    @scala.inline
-    def setWriteAsStringAsync(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = this.set("writeAsStringAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWriteAsStringAsync: Self = this.set("writeAsStringAsync", js.undefined)
+    def setWriteAsStringAsyncUndefined: Self = StObject.set(x, "writeAsStringAsync", js.undefined)
   }
 }

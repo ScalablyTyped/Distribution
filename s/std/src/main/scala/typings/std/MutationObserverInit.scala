@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MutationObserverInit extends js.Object {
+trait MutationObserverInit extends StObject {
   
   /**
     * Set to a list of attribute local names (without namespace) if not all attribute mutations need to be observed and attributes is true or omitted.
@@ -51,63 +52,51 @@ object MutationObserverInit {
   }
   
   @scala.inline
-  implicit class MutationObserverInitOps[Self <: MutationObserverInit] (val x: Self) extends AnyVal {
+  implicit class MutationObserverInitMutableBuilder[Self <: MutationObserverInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeFilter(value: js.Array[java.lang.String]): Self = StObject.set(x, "attributeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeFilterUndefined: Self = StObject.set(x, "attributeFilter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeFilterVarargs(value: java.lang.String*): Self = StObject.set(x, "attributeFilter", js.Array(value :_*))
     
     @scala.inline
-    def setAttributeFilterVarargs(value: java.lang.String*): Self = this.set("attributeFilter", js.Array(value :_*))
+    def setAttributeOldValue(value: scala.Boolean): Self = StObject.set(x, "attributeOldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeFilter(value: js.Array[java.lang.String]): Self = this.set("attributeFilter", value.asInstanceOf[js.Any])
+    def setAttributeOldValueUndefined: Self = StObject.set(x, "attributeOldValue", js.undefined)
     
     @scala.inline
-    def deleteAttributeFilter: Self = this.set("attributeFilter", js.undefined)
+    def setAttributes(value: scala.Boolean): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeOldValue(value: scala.Boolean): Self = this.set("attributeOldValue", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def deleteAttributeOldValue: Self = this.set("attributeOldValue", js.undefined)
+    def setCharacterData(value: scala.Boolean): Self = StObject.set(x, "characterData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: scala.Boolean): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setCharacterDataOldValue(value: scala.Boolean): Self = StObject.set(x, "characterDataOldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setCharacterDataOldValueUndefined: Self = StObject.set(x, "characterDataOldValue", js.undefined)
     
     @scala.inline
-    def setCharacterData(value: scala.Boolean): Self = this.set("characterData", value.asInstanceOf[js.Any])
+    def setCharacterDataUndefined: Self = StObject.set(x, "characterData", js.undefined)
     
     @scala.inline
-    def deleteCharacterData: Self = this.set("characterData", js.undefined)
+    def setChildList(value: scala.Boolean): Self = StObject.set(x, "childList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterDataOldValue(value: scala.Boolean): Self = this.set("characterDataOldValue", value.asInstanceOf[js.Any])
+    def setChildListUndefined: Self = StObject.set(x, "childList", js.undefined)
     
     @scala.inline
-    def deleteCharacterDataOldValue: Self = this.set("characterDataOldValue", js.undefined)
+    def setSubtree(value: scala.Boolean): Self = StObject.set(x, "subtree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildList(value: scala.Boolean): Self = this.set("childList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildList: Self = this.set("childList", js.undefined)
-    
-    @scala.inline
-    def setSubtree(value: scala.Boolean): Self = this.set("subtree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtree: Self = this.set("subtree", js.undefined)
+    def setSubtreeUndefined: Self = StObject.set(x, "subtree", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CredentialsContainer extends js.Object {
+trait CredentialsContainer extends StObject {
   
   def create(): js.Promise[Credential | Null] = js.native
   def create(options: CredentialCreationOptions): js.Promise[Credential | Null] = js.native

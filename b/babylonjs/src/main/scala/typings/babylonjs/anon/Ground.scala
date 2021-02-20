@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ground extends js.Object {
+trait Ground extends StObject {
   
   /**
     * Should the ground be removed (default false)
@@ -26,30 +27,18 @@ object Ground {
   }
   
   @scala.inline
-  implicit class GroundOps[Self <: Ground] (val x: Self) extends AnyVal {
+  implicit class GroundMutableBuilder[Self <: Ground] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGround(value: Boolean): Self = StObject.set(x, "ground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroundUndefined: Self = StObject.set(x, "ground", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkyBox(value: Boolean): Self = StObject.set(x, "skyBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGround(value: Boolean): Self = this.set("ground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGround: Self = this.set("ground", js.undefined)
-    
-    @scala.inline
-    def setSkyBox(value: Boolean): Self = this.set("skyBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkyBox: Self = this.set("skyBox", js.undefined)
+    def setSkyBoxUndefined: Self = StObject.set(x, "skyBox", js.undefined)
   }
 }

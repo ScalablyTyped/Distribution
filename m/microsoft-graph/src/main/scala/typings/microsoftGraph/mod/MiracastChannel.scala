@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.oneHundredSixtyOne
   - typings.microsoftGraph.microsoftGraphStrings.oneHundredSixtyFive
 */
-trait MiracastChannel extends js.Object
+trait MiracastChannel extends StObject
 object MiracastChannel {
   
   @scala.inline

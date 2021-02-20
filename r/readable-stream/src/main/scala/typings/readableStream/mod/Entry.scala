@@ -1,12 +1,13 @@
 package typings.readableStream.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ==== BufferList ====
 @js.native
-trait Entry[D] extends js.Object {
+trait Entry[D] extends StObject {
   
   var data: D = js.native
   
@@ -21,27 +22,15 @@ object Entry {
   }
   
   @scala.inline
-  implicit class EntryOps[Self <: Entry[_], D] (val x: Self with Entry[D]) extends AnyVal {
+  implicit class EntryMutableBuilder[Self <: Entry[_], D] (val x: Self with Entry[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNext(value: Entry[D]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: D): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: Entry[D]): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextNull: Self = this.set("next", null)
+    def setNextNull: Self = StObject.set(x, "next", null)
   }
 }

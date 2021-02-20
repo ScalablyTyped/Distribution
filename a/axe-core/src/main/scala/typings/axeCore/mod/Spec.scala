@@ -1,12 +1,13 @@
 package typings.axeCore.mod
 
 import typings.axeCore.anon.Application
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Spec extends js.Object {
+trait Spec extends StObject {
   
   var axeVersion: js.UndefOr[String] = js.native
   
@@ -36,78 +37,66 @@ object Spec {
   }
   
   @scala.inline
-  implicit class SpecOps[Self <: Spec] (val x: Self) extends AnyVal {
+  implicit class SpecMutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxeVersion(value: String): Self = StObject.set(x, "axeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxeVersionUndefined: Self = StObject.set(x, "axeVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranding(value: Application): Self = StObject.set(x, "branding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxeVersion(value: String): Self = this.set("axeVersion", value.asInstanceOf[js.Any])
+    def setBrandingUndefined: Self = StObject.set(x, "branding", js.undefined)
     
     @scala.inline
-    def deleteAxeVersion: Self = this.set("axeVersion", js.undefined)
+    def setChecks(value: js.Array[Check]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranding(value: Application): Self = this.set("branding", value.asInstanceOf[js.Any])
+    def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
     
     @scala.inline
-    def deleteBranding: Self = this.set("branding", js.undefined)
+    def setChecksVarargs(value: Check*): Self = StObject.set(x, "checks", js.Array(value :_*))
     
     @scala.inline
-    def setChecksVarargs(value: Check*): Self = this.set("checks", js.Array(value :_*))
+    def setDisableOtherRules(value: Boolean): Self = StObject.set(x, "disableOtherRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecks(value: js.Array[Check]): Self = this.set("checks", value.asInstanceOf[js.Any])
+    def setDisableOtherRulesUndefined: Self = StObject.set(x, "disableOtherRules", js.undefined)
     
     @scala.inline
-    def deleteChecks: Self = this.set("checks", js.undefined)
+    def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableOtherRules(value: Boolean): Self = this.set("disableOtherRules", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteDisableOtherRules: Self = this.set("disableOtherRules", js.undefined)
+    def setReporter(value: ReporterVersion): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReporter(value: ReporterVersion): Self = this.set("reporter", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteReporter: Self = this.set("reporter", js.undefined)
+    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
     @scala.inline
-    def setRulesVarargs(value: Rule*): Self = this.set("rules", js.Array(value :_*))
+    def setStandards(value: Standards): Self = StObject.set(x, "standards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: js.Array[Rule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setStandardsUndefined: Self = StObject.set(x, "standards", js.undefined)
     
     @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setVer(value: String): Self = StObject.set(x, "ver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandards(value: Standards): Self = this.set("standards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandards: Self = this.set("standards", js.undefined)
-    
-    @scala.inline
-    def setVer(value: String): Self = this.set("ver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVer: Self = this.set("ver", js.undefined)
+    def setVerUndefined: Self = StObject.set(x, "ver", js.undefined)
   }
 }

@@ -1,30 +1,31 @@
 package typings.aliApp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Appid extends js.Object {
+trait Appid extends StObject {
   
   var app_id: String = js.native
   
-              // 应用id
+  // 应用id
   var auth_code: String = js.native
   
-          // 会员卡表单信息请求Id
+  // 会员卡表单信息请求Id
   var out_string: String = js.native
   
-      // 会员卡模板Id
+  // 会员卡模板Id
   var request_id: String = js.native
   
-              // 授权的state
+  // 授权的state
   var scope: String = js.native
   
-          // 授权码，用于换取authtoken
+  // 授权码，用于换取authtoken
   var state: String = js.native
   
-              // 授权scope
+  // 授权scope
   var template_id: String = js.native
 }
 object Appid {
@@ -44,39 +45,27 @@ object Appid {
   }
   
   @scala.inline
-  implicit class AppidOps[Self <: Appid] (val x: Self) extends AnyVal {
+  implicit class AppidMutableBuilder[Self <: Appid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuth_code(value: String): Self = StObject.set(x, "auth_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOut_string(value: String): Self = StObject.set(x, "out_string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp_id(value: String): Self = this.set("app_id", value.asInstanceOf[js.Any])
+    def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth_code(value: String): Self = this.set("auth_code", value.asInstanceOf[js.Any])
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOut_string(value: String): Self = this.set("out_string", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest_id(value: String): Self = this.set("request_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplate_id(value: String): Self = this.set("template_id", value.asInstanceOf[js.Any])
+    def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
   }
 }

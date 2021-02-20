@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.codedeploy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfo extends js.Object {
+trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfo extends StObject {
   
   /**
     * Configuration block for the production traffic route (documented below).
@@ -34,33 +35,21 @@ object DeploymentGroupLoadBalancerInfoTargetGroupPairInfo {
   }
   
   @scala.inline
-  implicit class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoOps[Self <: DeploymentGroupLoadBalancerInfoTargetGroupPairInfo] (val x: Self) extends AnyVal {
+  implicit class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoMutableBuilder[Self <: DeploymentGroupLoadBalancerInfoTargetGroupPairInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProdTrafficRoute(value: DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute): Self = StObject.set(x, "prodTrafficRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetGroups(value: js.Array[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup]): Self = StObject.set(x, "targetGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetGroupsVarargs(value: DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup*): Self = StObject.set(x, "targetGroups", js.Array(value :_*))
     
     @scala.inline
-    def setProdTrafficRoute(value: DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute): Self = this.set("prodTrafficRoute", value.asInstanceOf[js.Any])
+    def setTestTrafficRoute(value: DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute): Self = StObject.set(x, "testTrafficRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroupsVarargs(value: DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup*): Self = this.set("targetGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetGroups(value: js.Array[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup]): Self = this.set("targetGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestTrafficRoute(value: DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute): Self = this.set("testTrafficRoute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestTrafficRoute: Self = this.set("testTrafficRoute", js.undefined)
+    def setTestTrafficRouteUndefined: Self = StObject.set(x, "testTrafficRoute", js.undefined)
   }
 }

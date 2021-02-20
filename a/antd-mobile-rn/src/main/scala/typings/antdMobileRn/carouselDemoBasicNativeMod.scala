@@ -1,13 +1,16 @@
 package typings.antdMobileRn
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/carousel/demo/basic.native", JSImport.Namespace)
-@js.native
-object carouselDemoBasicNativeMod extends js.Object {
+object carouselDemoBasicNativeMod {
+  
+  @JSImport("antd-mobile-rn/lib/carousel/demo/basic.native", JSImport.Default)
+  @js.native
+  class default () extends BasicCarouselExample
   
   @js.native
   trait BasicCarouselExample
@@ -17,7 +20,4 @@ object carouselDemoBasicNativeMod extends js.Object {
     
     def onVerticalSelectedIndexChange(index: Double): Unit = js.native
   }
-  
-  @js.native
-  class default () extends BasicCarouselExample
 }

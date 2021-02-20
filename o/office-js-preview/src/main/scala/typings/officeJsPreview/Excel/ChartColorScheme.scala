@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartColorScheme extends js.Object
+sealed trait ChartColorScheme extends StObject
 /**
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.ChartColorScheme")
 @js.native
-object ChartColorScheme extends js.Object {
+object ChartColorScheme extends StObject {
   
   @js.native
   sealed trait colorfulPalette1 extends ChartColorScheme

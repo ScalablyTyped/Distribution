@@ -1,5 +1,6 @@
 package typings.googleapis.composerV1Mod.composerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ImageVersion information
   */
 @js.native
-trait SchemaImageVersion extends js.Object {
+trait SchemaImageVersion extends StObject {
   
   /**
     * The string identifier of the ImageVersion, in the form:
@@ -36,39 +37,27 @@ object SchemaImageVersion {
   }
   
   @scala.inline
-  implicit class SchemaImageVersionOps[Self <: SchemaImageVersion] (val x: Self) extends AnyVal {
+  implicit class SchemaImageVersionMutableBuilder[Self <: SchemaImageVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageVersionId(value: String): Self = StObject.set(x, "imageVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageVersionIdUndefined: Self = StObject.set(x, "imageVersionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVersionId(value: String): Self = this.set("imageVersionId", value.asInstanceOf[js.Any])
+    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
     @scala.inline
-    def deleteImageVersionId: Self = this.set("imageVersionId", js.undefined)
+    def setSupportedPythonVersions(value: js.Array[String]): Self = StObject.set(x, "supportedPythonVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    def setSupportedPythonVersionsUndefined: Self = StObject.set(x, "supportedPythonVersions", js.undefined)
     
     @scala.inline
-    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
-    
-    @scala.inline
-    def setSupportedPythonVersionsVarargs(value: String*): Self = this.set("supportedPythonVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedPythonVersions(value: js.Array[String]): Self = this.set("supportedPythonVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedPythonVersions: Self = this.set("supportedPythonVersions", js.undefined)
+    def setSupportedPythonVersionsVarargs(value: String*): Self = StObject.set(x, "supportedPythonVersions", js.Array(value :_*))
   }
 }

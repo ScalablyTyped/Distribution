@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.languages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILineTokens extends js.Object {
+trait ILineTokens extends StObject {
   
   /**
     * The tokenization end state.
@@ -27,27 +28,15 @@ object ILineTokens {
   }
   
   @scala.inline
-  implicit class ILineTokensOps[Self <: ILineTokens] (val x: Self) extends AnyVal {
+  implicit class ILineTokensMutableBuilder[Self <: ILineTokens] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndState(value: IState): Self = StObject.set(x, "endState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTokens(value: js.Array[IToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndState(value: IState): Self = this.set("endState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokensVarargs(value: IToken*): Self = this.set("tokens", js.Array(value :_*))
-    
-    @scala.inline
-    def setTokens(value: js.Array[IToken]): Self = this.set("tokens", value.asInstanceOf[js.Any])
+    def setTokensVarargs(value: IToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

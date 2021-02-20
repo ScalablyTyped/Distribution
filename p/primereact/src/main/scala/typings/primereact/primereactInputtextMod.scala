@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.inputTextMod.InputTextProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/inputtext", JSImport.Namespace)
-@js.native
-object primereactInputtextMod extends js.Object {
+object primereactInputtextMod {
   
+  @JSImport("primereact/inputtext", "InputText")
   @js.native
-  class InputText ()
-    extends Component[InputTextProps, js.Any, js.Any]
+  class InputText protected ()
+    extends typings.primereact.inputTextMod.InputText {
+    def this(props: InputTextProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: InputTextProps, context: js.Any) = this()
+  }
 }

@@ -1,6 +1,7 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration and status of a managed SSL certificate.
   */
 @js.native
-trait SchemaSslCertificateManagedSslCertificate extends js.Object {
+trait SchemaSslCertificateManagedSslCertificate extends StObject {
   
   /**
     * [Output only] Detailed statuses of the domains specified for managed
@@ -37,39 +38,27 @@ object SchemaSslCertificateManagedSslCertificate {
   }
   
   @scala.inline
-  implicit class SchemaSslCertificateManagedSslCertificateOps[Self <: SchemaSslCertificateManagedSslCertificate] (val x: Self) extends AnyVal {
+  implicit class SchemaSslCertificateManagedSslCertificateMutableBuilder[Self <: SchemaSslCertificateManagedSslCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainStatus(value: StringDictionary[String]): Self = StObject.set(x, "domainStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainStatusUndefined: Self = StObject.set(x, "domainStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainStatus(value: StringDictionary[String]): Self = this.set("domainStatus", value.asInstanceOf[js.Any])
+    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
     @scala.inline
-    def deleteDomainStatus: Self = this.set("domainStatus", js.undefined)
+    def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
     
     @scala.inline
-    def setDomainsVarargs(value: String*): Self = this.set("domains", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomains(value: js.Array[String]): Self = this.set("domains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomains: Self = this.set("domains", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

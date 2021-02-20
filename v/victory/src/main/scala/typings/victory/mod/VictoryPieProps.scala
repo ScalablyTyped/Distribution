@@ -4,6 +4,7 @@ import typings.react.mod.ReactElement
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -182,141 +183,129 @@ object VictoryPieProps {
   }
   
   @scala.inline
-  implicit class VictoryPiePropsOps[Self <: VictoryPieProps] (val x: Self) extends AnyVal {
+  implicit class VictoryPiePropsMutableBuilder[Self <: VictoryPieProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorScale(value: ColorScalePropType): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorScaleVarargs(value: String*): Self = StObject.set(x, "colorScale", js.Array(value :_*))
     
     @scala.inline
-    def setColorScaleVarargs(value: String*): Self = this.set("colorScale", js.Array(value :_*))
+    def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorScale(value: ColorScalePropType): Self = this.set("colorScale", value.asInstanceOf[js.Any])
+    def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
     @scala.inline
-    def deleteColorScale: Self = this.set("colorScale", js.undefined)
+    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCornerRadius(value: Double): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
+    def setDataComponent(value: ReactElement): Self = StObject.set(x, "dataComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCornerRadius: Self = this.set("cornerRadius", js.undefined)
+    def setDataComponentUndefined: Self = StObject.set(x, "dataComponent", js.undefined)
     
     @scala.inline
-    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataComponent(value: ReactElement): Self = this.set("dataComponent", value.asInstanceOf[js.Any])
+    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
     @scala.inline
-    def deleteDataComponent: Self = this.set("dataComponent", js.undefined)
+    def setEventKey(value: StringOrNumberOrCallback): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAngle(value: Double): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "eventKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
-    
-    @scala.inline
-    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("eventKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEventKey(value: StringOrNumberOrCallback): Self = this.set("eventKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventKey: Self = this.set("eventKey", js.undefined)
-    
-    @scala.inline
-    def setEventsVarargs(
-      value: (EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback | (js.Array[Double | String])])*
-    ): Self = this.set("events", js.Array(value :_*))
+    def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
     
     @scala.inline
     def setEvents(
       value: js.Array[
           EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback | (js.Array[Double | String])]
         ]
-    ): Self = this.set("events", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setInnerRadiusFunction1(value: /* props */ VictorySliceProps => Double): Self = this.set("innerRadius", js.Any.fromFunction1(value))
+    def setEventsVarargs(
+      value: (EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback | (js.Array[Double | String])])*
+    ): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setInnerRadius(value: Double | (js.Function1[/* props */ VictorySliceProps, Double])): Self = this.set("innerRadius", value.asInstanceOf[js.Any])
+    def setInnerRadius(value: Double | (js.Function1[/* props */ VictorySliceProps, Double])): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInnerRadius: Self = this.set("innerRadius", js.undefined)
+    def setInnerRadiusFunction1(value: /* props */ VictorySliceProps => Double): Self = StObject.set(x, "innerRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabelRadius(value: Double): Self = this.set("labelRadius", value.asInstanceOf[js.Any])
+    def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
     @scala.inline
-    def deleteLabelRadius: Self = this.set("labelRadius", js.undefined)
+    def setLabelRadius(value: Double): Self = StObject.set(x, "labelRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadAngle(value: Double): Self = this.set("padAngle", value.asInstanceOf[js.Any])
+    def setLabelRadiusUndefined: Self = StObject.set(x, "labelRadius", js.undefined)
     
     @scala.inline
-    def deletePadAngle: Self = this.set("padAngle", js.undefined)
+    def setPadAngle(value: Double): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: VictoryStyleInterface): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyle(value: VictoryStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXVarargs(value: String*): Self = this.set("x", js.Array(value :_*))
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setXFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = this.set("x", js.Any.fromFunction1(value))
+    def setX(value: DataGetterPropType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: DataGetterPropType): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setXFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "x", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def setYVarargs(value: String*): Self = this.set("y", js.Array(value :_*))
+    def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value :_*))
     
     @scala.inline
-    def setYFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = this.set("y", js.Any.fromFunction1(value))
+    def setY(value: DataGetterPropType): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: DataGetterPropType): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setYFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    
+    @scala.inline
+    def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

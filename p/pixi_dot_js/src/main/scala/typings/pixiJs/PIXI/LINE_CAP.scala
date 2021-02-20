@@ -1,11 +1,12 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LINE_CAP extends js.Object
+sealed trait LINE_CAP extends StObject
 /**
   * Support line caps in `PIXI.LineStyle` for graphics.
   *
@@ -21,7 +22,7 @@ sealed trait LINE_CAP extends js.Object
   */
 @JSGlobal("PIXI.LINE_CAP")
 @js.native
-object LINE_CAP extends js.Object {
+object LINE_CAP extends StObject {
   
   @js.native
   sealed trait BUTT extends LINE_CAP

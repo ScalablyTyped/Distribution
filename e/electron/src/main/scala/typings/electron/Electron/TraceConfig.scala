@@ -5,12 +5,13 @@ import typings.electron.electronStrings.`record-continuously`
 import typings.electron.electronStrings.`record-until-full`
 import typings.electron.electronStrings.`trace-to-console`
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TraceConfig extends js.Object {
+trait TraceConfig extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/trace-config
   /**
@@ -79,86 +80,74 @@ object TraceConfig {
   }
   
   @scala.inline
-  implicit class TraceConfigOps[Self <: TraceConfig] (val x: Self) extends AnyVal {
+  implicit class TraceConfigMutableBuilder[Self <: TraceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnable_argument_filter(value: Boolean): Self = StObject.set(x, "enable_argument_filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnable_argument_filterUndefined: Self = StObject.set(x, "enable_argument_filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcluded_categories(value: js.Array[String]): Self = StObject.set(x, "excluded_categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable_argument_filter(value: Boolean): Self = this.set("enable_argument_filter", value.asInstanceOf[js.Any])
+    def setExcluded_categoriesUndefined: Self = StObject.set(x, "excluded_categories", js.undefined)
     
     @scala.inline
-    def deleteEnable_argument_filter: Self = this.set("enable_argument_filter", js.undefined)
+    def setExcluded_categoriesVarargs(value: String*): Self = StObject.set(x, "excluded_categories", js.Array(value :_*))
     
     @scala.inline
-    def setExcluded_categoriesVarargs(value: String*): Self = this.set("excluded_categories", js.Array(value :_*))
+    def setHistogram_names(value: js.Array[String]): Self = StObject.set(x, "histogram_names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcluded_categories(value: js.Array[String]): Self = this.set("excluded_categories", value.asInstanceOf[js.Any])
+    def setHistogram_namesUndefined: Self = StObject.set(x, "histogram_names", js.undefined)
     
     @scala.inline
-    def deleteExcluded_categories: Self = this.set("excluded_categories", js.undefined)
+    def setHistogram_namesVarargs(value: String*): Self = StObject.set(x, "histogram_names", js.Array(value :_*))
     
     @scala.inline
-    def setHistogram_namesVarargs(value: String*): Self = this.set("histogram_names", js.Array(value :_*))
+    def setIncluded_categories(value: js.Array[String]): Self = StObject.set(x, "included_categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistogram_names(value: js.Array[String]): Self = this.set("histogram_names", value.asInstanceOf[js.Any])
+    def setIncluded_categoriesUndefined: Self = StObject.set(x, "included_categories", js.undefined)
     
     @scala.inline
-    def deleteHistogram_names: Self = this.set("histogram_names", js.undefined)
+    def setIncluded_categoriesVarargs(value: String*): Self = StObject.set(x, "included_categories", js.Array(value :_*))
     
     @scala.inline
-    def setIncluded_categoriesVarargs(value: String*): Self = this.set("included_categories", js.Array(value :_*))
+    def setIncluded_process_ids(value: js.Array[Double]): Self = StObject.set(x, "included_process_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncluded_categories(value: js.Array[String]): Self = this.set("included_categories", value.asInstanceOf[js.Any])
+    def setIncluded_process_idsUndefined: Self = StObject.set(x, "included_process_ids", js.undefined)
     
     @scala.inline
-    def deleteIncluded_categories: Self = this.set("included_categories", js.undefined)
+    def setIncluded_process_idsVarargs(value: Double*): Self = StObject.set(x, "included_process_ids", js.Array(value :_*))
     
     @scala.inline
-    def setIncluded_process_idsVarargs(value: Double*): Self = this.set("included_process_ids", js.Array(value :_*))
+    def setMemory_dump_config(value: Record[String, _]): Self = StObject.set(x, "memory_dump_config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncluded_process_ids(value: js.Array[Double]): Self = this.set("included_process_ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncluded_process_ids: Self = this.set("included_process_ids", js.undefined)
-    
-    @scala.inline
-    def setMemory_dump_config(value: Record[String, _]): Self = this.set("memory_dump_config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemory_dump_config: Self = this.set("memory_dump_config", js.undefined)
+    def setMemory_dump_configUndefined: Self = StObject.set(x, "memory_dump_config", js.undefined)
     
     @scala.inline
     def setRecording_mode(
       value: `record-until-full` | `record-continuously` | `record-as-much-as-possible` | `trace-to-console`
-    ): Self = this.set("recording_mode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "recording_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecording_mode: Self = this.set("recording_mode", js.undefined)
+    def setRecording_modeUndefined: Self = StObject.set(x, "recording_mode", js.undefined)
     
     @scala.inline
-    def setTrace_buffer_size_in_events(value: Double): Self = this.set("trace_buffer_size_in_events", value.asInstanceOf[js.Any])
+    def setTrace_buffer_size_in_events(value: Double): Self = StObject.set(x, "trace_buffer_size_in_events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrace_buffer_size_in_events: Self = this.set("trace_buffer_size_in_events", js.undefined)
+    def setTrace_buffer_size_in_eventsUndefined: Self = StObject.set(x, "trace_buffer_size_in_events", js.undefined)
     
     @scala.inline
-    def setTrace_buffer_size_in_kb(value: Double): Self = this.set("trace_buffer_size_in_kb", value.asInstanceOf[js.Any])
+    def setTrace_buffer_size_in_kb(value: Double): Self = StObject.set(x, "trace_buffer_size_in_kb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrace_buffer_size_in_kb: Self = this.set("trace_buffer_size_in_kb", js.undefined)
+    def setTrace_buffer_size_in_kbUndefined: Self = StObject.set(x, "trace_buffer_size_in_kb", js.undefined)
   }
 }

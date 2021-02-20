@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FocusMode extends js.Object
+sealed trait FocusMode extends StObject
 /** Defines the values for focus mode. */
 @JSGlobal("Windows.Media.Devices.FocusMode")
 @js.native
-object FocusMode extends js.Object {
+object FocusMode extends StObject {
   
   /** Use autofocus. */
   @js.native

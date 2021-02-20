@@ -1,11 +1,12 @@
 package typings.yup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateOptions[C] extends js.Object {
+trait ValidateOptions[C] extends StObject {
   
   /**
     * Return from validation methods on the first error rather than after all validations run. Default - true
@@ -41,48 +42,36 @@ object ValidateOptions {
   }
   
   @scala.inline
-  implicit class ValidateOptionsOps[Self <: ValidateOptions[_], C] (val x: Self with ValidateOptions[C]) extends AnyVal {
+  implicit class ValidateOptionsMutableBuilder[Self <: ValidateOptions[_], C] (val x: Self with ValidateOptions[C]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortEarlyUndefined: Self = StObject.set(x, "abortEarly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortEarly(value: Boolean): Self = this.set("abortEarly", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteAbortEarly: Self = this.set("abortEarly", js.undefined)
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: C): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
     @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
+    def setStripUnknown(value: Boolean): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
-    
-    @scala.inline
-    def setStripUnknown(value: Boolean): Self = this.set("stripUnknown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripUnknown: Self = this.set("stripUnknown", js.undefined)
+    def setStripUnknownUndefined: Self = StObject.set(x, "stripUnknown", js.undefined)
   }
 }

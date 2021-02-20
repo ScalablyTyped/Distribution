@@ -1,6 +1,7 @@
 package typings.grammarkdown.grammarkdownMod
 
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.GreaterThanToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("grammarkdown/dist/grammarkdown", "Prose")
 @js.native
 class Prose protected ()
-  extends Node2[typings.grammarkdown.grammarkdownMod.SyntaxKind.Prose] {
+  extends LexicalSymbolBase[typings.grammarkdown.grammarkdownMod.SyntaxKind.Prose] {
   def this(greaterThanToken: Token[GreaterThanToken]) = this()
   def this(greaterThanToken: Token[GreaterThanToken], fragments: js.Array[ProseFragment]) = this()
   

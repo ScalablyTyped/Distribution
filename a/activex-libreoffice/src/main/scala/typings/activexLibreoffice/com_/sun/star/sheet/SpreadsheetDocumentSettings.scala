@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.i18n.XForbiddenCharacters
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -200,93 +201,81 @@ object SpreadsheetDocumentSettings {
   }
   
   @scala.inline
-  implicit class SpreadsheetDocumentSettingsOps[Self <: SpreadsheetDocumentSettings] (val x: Self) extends AnyVal {
+  implicit class SpreadsheetDocumentSettingsMutableBuilder[Self <: SpreadsheetDocumentSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalcAsShown(value: Boolean): Self = StObject.set(x, "CalcAsShown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharLocale(value: Locale): Self = StObject.set(x, "CharLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharLocaleAsian(value: Locale): Self = StObject.set(x, "CharLocaleAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalcAsShown(value: Boolean): Self = this.set("CalcAsShown", value.asInstanceOf[js.Any])
+    def setCharLocaleComplex(value: Locale): Self = StObject.set(x, "CharLocaleComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharLocale(value: Locale): Self = this.set("CharLocale", value.asInstanceOf[js.Any])
+    def setDefaultTabStop(value: Double): Self = StObject.set(x, "DefaultTabStop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharLocaleAsian(value: Locale): Self = this.set("CharLocaleAsian", value.asInstanceOf[js.Any])
+    def setForbiddenCharacters(value: XForbiddenCharacters): Self = StObject.set(x, "ForbiddenCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharLocaleComplex(value: Locale): Self = this.set("CharLocaleComplex", value.asInstanceOf[js.Any])
+    def setHasDrawPages(value: Boolean): Self = StObject.set(x, "HasDrawPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTabStop(value: Double): Self = this.set("DefaultTabStop", value.asInstanceOf[js.Any])
+    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "IgnoreCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForbiddenCharacters(value: XForbiddenCharacters): Self = this.set("ForbiddenCharacters", value.asInstanceOf[js.Any])
+    def setIsAdjustHeightEnabled(value: Boolean): Self = StObject.set(x, "IsAdjustHeightEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasDrawPages(value: Boolean): Self = this.set("HasDrawPages", value.asInstanceOf[js.Any])
+    def setIsExecuteLinkEnabled(value: Boolean): Self = StObject.set(x, "IsExecuteLinkEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCase(value: Boolean): Self = this.set("IgnoreCase", value.asInstanceOf[js.Any])
+    def setIsIterationEnabled(value: Boolean): Self = StObject.set(x, "IsIterationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAdjustHeightEnabled(value: Boolean): Self = this.set("IsAdjustHeightEnabled", value.asInstanceOf[js.Any])
+    def setIsLoaded(value: Boolean): Self = StObject.set(x, "IsLoaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExecuteLinkEnabled(value: Boolean): Self = this.set("IsExecuteLinkEnabled", value.asInstanceOf[js.Any])
+    def setIsRecordChangesProtected(value: Boolean): Self = StObject.set(x, "IsRecordChangesProtected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIterationEnabled(value: Boolean): Self = this.set("IsIterationEnabled", value.asInstanceOf[js.Any])
+    def setIsUndoEnabled(value: Boolean): Self = StObject.set(x, "IsUndoEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLoaded(value: Boolean): Self = this.set("IsLoaded", value.asInstanceOf[js.Any])
+    def setIterationCount(value: Double): Self = StObject.set(x, "IterationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRecordChangesProtected(value: Boolean): Self = this.set("IsRecordChangesProtected", value.asInstanceOf[js.Any])
+    def setIterationEpsilon(value: Double): Self = StObject.set(x, "IterationEpsilon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUndoEnabled(value: Boolean): Self = this.set("IsUndoEnabled", value.asInstanceOf[js.Any])
+    def setLookUpLabels(value: Boolean): Self = StObject.set(x, "LookUpLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterationCount(value: Double): Self = this.set("IterationCount", value.asInstanceOf[js.Any])
+    def setMatchWholeCell(value: Boolean): Self = StObject.set(x, "MatchWholeCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterationEpsilon(value: Double): Self = this.set("IterationEpsilon", value.asInstanceOf[js.Any])
+    def setNullDate(value: Date): Self = StObject.set(x, "NullDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookUpLabels(value: Boolean): Self = this.set("LookUpLabels", value.asInstanceOf[js.Any])
+    def setRecordChanges(value: Boolean): Self = StObject.set(x, "RecordChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchWholeCell(value: Boolean): Self = this.set("MatchWholeCell", value.asInstanceOf[js.Any])
+    def setReferenceDevice(value: XDevice): Self = StObject.set(x, "ReferenceDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullDate(value: Date): Self = this.set("NullDate", value.asInstanceOf[js.Any])
+    def setRegularExpressions(value: Boolean): Self = StObject.set(x, "RegularExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordChanges(value: Boolean): Self = this.set("RecordChanges", value.asInstanceOf[js.Any])
+    def setSpellOnline(value: Boolean): Self = StObject.set(x, "SpellOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceDevice(value: XDevice): Self = this.set("ReferenceDevice", value.asInstanceOf[js.Any])
+    def setStandardDecimals(value: Double): Self = StObject.set(x, "StandardDecimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegularExpressions(value: Boolean): Self = this.set("RegularExpressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpellOnline(value: Boolean): Self = this.set("SpellOnline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandardDecimals(value: Double): Self = this.set("StandardDecimals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWildcards(value: Boolean): Self = this.set("Wildcards", value.asInstanceOf[js.Any])
+    def setWildcards(value: Boolean): Self = StObject.set(x, "Wildcards", value.asInstanceOf[js.Any])
   }
 }

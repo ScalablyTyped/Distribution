@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListApplicationRevisionsOutput extends js.Object {
+trait ListApplicationRevisionsOutput extends StObject {
   
   /**
     * If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent list application revisions call to return the next set of application revisions in the list.
@@ -26,33 +27,21 @@ object ListApplicationRevisionsOutput {
   }
   
   @scala.inline
-  implicit class ListApplicationRevisionsOutputOps[Self <: ListApplicationRevisionsOutput] (val x: Self) extends AnyVal {
+  implicit class ListApplicationRevisionsOutputMutableBuilder[Self <: ListApplicationRevisionsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevisions(value: RevisionLocationList): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setRevisionsVarargs(value: RevisionLocation*): Self = this.set("revisions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRevisions(value: RevisionLocationList): Self = this.set("revisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisions: Self = this.set("revisions", js.undefined)
+    def setRevisionsVarargs(value: RevisionLocation*): Self = StObject.set(x, "revisions", js.Array(value :_*))
   }
 }

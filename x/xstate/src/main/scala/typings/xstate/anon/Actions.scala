@@ -5,12 +5,13 @@ import typings.xstate.typesMod.ActionTypes.NullEvent
 import typings.xstate.typesMod.EventObject
 import typings.xstate.typesMod.Guard
 import typings.xstate.xstateStrings.Asterisk
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Actions[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait Actions[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var actions: js.Array[ActionObject[TContext, TEvent]] = js.native
   
@@ -35,47 +36,35 @@ object Actions {
   }
   
   @scala.inline
-  implicit class ActionsOps[Self <: Actions[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (Actions[TContext, TEvent])) extends AnyVal {
+  implicit class ActionsMutableBuilder[Self <: Actions[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (Actions[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCond(value: Guard[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: (ActionObject[TContext, TEvent])*): Self = this.set("actions", js.Array(value :_*))
-    
-    @scala.inline
-    def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
     
     @scala.inline
     def setEventType(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
-    ): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCond(value: Guard[TContext, TEvent]): Self = this.set("cond", value.asInstanceOf[js.Any])
+    def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCond: Self = this.set("cond", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def setTargetVarargs(value: String*): Self = this.set("target", js.Array(value :_*))
-    
-    @scala.inline
-    def setTarget(value: js.Array[String]): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
   }
 }

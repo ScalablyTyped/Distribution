@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2LikelihoodAdjustment extends js.Object {
+trait GooglePrivacyDlpV2LikelihoodAdjustment extends StObject {
   
   /** Set the likelihood of a finding to a fixed value. */
   var fixedLikelihood: js.UndefOr[String] = js.native
@@ -26,30 +27,18 @@ object GooglePrivacyDlpV2LikelihoodAdjustment {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2LikelihoodAdjustmentOps[Self <: GooglePrivacyDlpV2LikelihoodAdjustment] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2LikelihoodAdjustmentMutableBuilder[Self <: GooglePrivacyDlpV2LikelihoodAdjustment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixedLikelihood(value: String): Self = StObject.set(x, "fixedLikelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixedLikelihoodUndefined: Self = StObject.set(x, "fixedLikelihood", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelativeLikelihood(value: Double): Self = StObject.set(x, "relativeLikelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedLikelihood(value: String): Self = this.set("fixedLikelihood", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixedLikelihood: Self = this.set("fixedLikelihood", js.undefined)
-    
-    @scala.inline
-    def setRelativeLikelihood(value: Double): Self = this.set("relativeLikelihood", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelativeLikelihood: Self = this.set("relativeLikelihood", js.undefined)
+    def setRelativeLikelihoodUndefined: Self = StObject.set(x, "relativeLikelihood", js.undefined)
   }
 }

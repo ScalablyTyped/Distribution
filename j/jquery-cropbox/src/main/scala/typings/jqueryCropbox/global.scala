@@ -1,18 +1,17 @@
 package typings.jqueryCropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object jQueryCropBox extends js.Object {
+  object jQueryCropBox {
     
+    @JSGlobal("jQueryCropBox.ShowControls")
     @js.native
-    object ShowControls extends js.Object {
+    object ShowControls extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.jqueryCropbox.jQueryCropBox.ShowControls with Double] = js.native

@@ -1,12 +1,11 @@
 package typings.materialUiLab
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/lab/Skeleton", JSImport.Namespace)
-@js.native
-object skeletonMod extends js.Object {
+object skeletonMod {
   
   /**
     *
@@ -18,5 +17,7 @@ object skeletonMod extends js.Object {
     *
     * - [Skeleton API](https://material-ui.com/api/skeleton/)
     */
+  @JSImport("@material-ui/lab/Skeleton", JSImport.Default)
+  @js.native
   val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverridableComponent<SkeletonTypeMap> */ js.Any = js.native
 }

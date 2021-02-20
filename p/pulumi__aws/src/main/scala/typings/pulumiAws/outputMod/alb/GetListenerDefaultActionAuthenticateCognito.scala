@@ -1,12 +1,13 @@
 package typings.pulumiAws.outputMod.alb
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetListenerDefaultActionAuthenticateCognito extends js.Object {
+trait GetListenerDefaultActionAuthenticateCognito extends StObject {
   
   var authenticationRequestExtraParams: StringDictionary[String] = js.native
   
@@ -42,42 +43,30 @@ object GetListenerDefaultActionAuthenticateCognito {
   }
   
   @scala.inline
-  implicit class GetListenerDefaultActionAuthenticateCognitoOps[Self <: GetListenerDefaultActionAuthenticateCognito] (val x: Self) extends AnyVal {
+  implicit class GetListenerDefaultActionAuthenticateCognitoMutableBuilder[Self <: GetListenerDefaultActionAuthenticateCognito] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationRequestExtraParams(value: StringDictionary[String]): Self = StObject.set(x, "authenticationRequestExtraParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnUnauthenticatedRequest(value: String): Self = StObject.set(x, "onUnauthenticatedRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationRequestExtraParams(value: StringDictionary[String]): Self = this.set("authenticationRequestExtraParams", value.asInstanceOf[js.Any])
+    def setSessionCookieName(value: String): Self = StObject.set(x, "sessionCookieName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUnauthenticatedRequest(value: String): Self = this.set("onUnauthenticatedRequest", value.asInstanceOf[js.Any])
+    def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setUserPoolArn(value: String): Self = StObject.set(x, "userPoolArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionCookieName(value: String): Self = this.set("sessionCookieName", value.asInstanceOf[js.Any])
+    def setUserPoolClientId(value: String): Self = StObject.set(x, "userPoolClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionTimeout(value: Double): Self = this.set("sessionTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserPoolArn(value: String): Self = this.set("userPoolArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserPoolClientId(value: String): Self = this.set("userPoolClientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserPoolDomain(value: String): Self = this.set("userPoolDomain", value.asInstanceOf[js.Any])
+    def setUserPoolDomain(value: String): Self = StObject.set(x, "userPoolDomain", value.asInstanceOf[js.Any])
   }
 }

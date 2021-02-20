@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bankname extends js.Object {
+trait Bankname extends StObject {
   
   var account_number: String = js.native
   
@@ -38,60 +39,48 @@ object Bankname {
   }
   
   @scala.inline
-  implicit class BanknameOps[Self <: Bankname] (val x: Self) extends AnyVal {
+  implicit class BanknameMutableBuilder[Self <: Bankname] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_number(value: String): Self = this.set("account_number", value.asInstanceOf[js.Any])
+    def setRefund_account_holder_name(value: String): Self = StObject.set(x, "refund_account_holder_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBank_name(value: String): Self = this.set("bank_name", value.asInstanceOf[js.Any])
+    def setRefund_account_holder_nameNull: Self = StObject.set(x, "refund_account_holder_name", null)
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setRefund_account_holder_nameUndefined: Self = StObject.set(x, "refund_account_holder_name", js.undefined)
     
     @scala.inline
-    def setRouting_number(value: String): Self = this.set("routing_number", value.asInstanceOf[js.Any])
+    def setRefund_account_holder_type(value: String): Self = StObject.set(x, "refund_account_holder_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwift_code(value: String): Self = this.set("swift_code", value.asInstanceOf[js.Any])
+    def setRefund_account_holder_typeNull: Self = StObject.set(x, "refund_account_holder_type", null)
     
     @scala.inline
-    def setRefund_account_holder_name(value: String): Self = this.set("refund_account_holder_name", value.asInstanceOf[js.Any])
+    def setRefund_account_holder_typeUndefined: Self = StObject.set(x, "refund_account_holder_type", js.undefined)
     
     @scala.inline
-    def deleteRefund_account_holder_name: Self = this.set("refund_account_holder_name", js.undefined)
+    def setRefund_routing_number(value: String): Self = StObject.set(x, "refund_routing_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefund_account_holder_nameNull: Self = this.set("refund_account_holder_name", null)
+    def setRefund_routing_numberNull: Self = StObject.set(x, "refund_routing_number", null)
     
     @scala.inline
-    def setRefund_account_holder_type(value: String): Self = this.set("refund_account_holder_type", value.asInstanceOf[js.Any])
+    def setRefund_routing_numberUndefined: Self = StObject.set(x, "refund_routing_number", js.undefined)
     
     @scala.inline
-    def deleteRefund_account_holder_type: Self = this.set("refund_account_holder_type", js.undefined)
+    def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefund_account_holder_typeNull: Self = this.set("refund_account_holder_type", null)
-    
-    @scala.inline
-    def setRefund_routing_number(value: String): Self = this.set("refund_routing_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefund_routing_number: Self = this.set("refund_routing_number", js.undefined)
-    
-    @scala.inline
-    def setRefund_routing_numberNull: Self = this.set("refund_routing_number", null)
+    def setSwift_code(value: String): Self = StObject.set(x, "swift_code", value.asInstanceOf[js.Any])
   }
 }

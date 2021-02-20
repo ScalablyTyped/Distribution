@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,45 +23,33 @@ object TouchEventInit {
   }
   
   @scala.inline
-  implicit class TouchEventInitOps[Self <: TouchEventInit] (val x: Self) extends AnyVal {
+  implicit class TouchEventInitMutableBuilder[Self <: TouchEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangedTouches(value: js.Array[Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedTouchesUndefined: Self = StObject.set(x, "changedTouches", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangedTouchesVarargs(value: Touch*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
     
     @scala.inline
-    def setChangedTouchesVarargs(value: Touch*): Self = this.set("changedTouches", js.Array(value :_*))
+    def setTargetTouches(value: js.Array[Touch]): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedTouches(value: js.Array[Touch]): Self = this.set("changedTouches", value.asInstanceOf[js.Any])
+    def setTargetTouchesUndefined: Self = StObject.set(x, "targetTouches", js.undefined)
     
     @scala.inline
-    def deleteChangedTouches: Self = this.set("changedTouches", js.undefined)
+    def setTargetTouchesVarargs(value: Touch*): Self = StObject.set(x, "targetTouches", js.Array(value :_*))
     
     @scala.inline
-    def setTargetTouchesVarargs(value: Touch*): Self = this.set("targetTouches", js.Array(value :_*))
+    def setTouches(value: js.Array[Touch]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetTouches(value: js.Array[Touch]): Self = this.set("targetTouches", value.asInstanceOf[js.Any])
+    def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
     
     @scala.inline
-    def deleteTargetTouches: Self = this.set("targetTouches", js.undefined)
-    
-    @scala.inline
-    def setTouchesVarargs(value: Touch*): Self = this.set("touches", js.Array(value :_*))
-    
-    @scala.inline
-    def setTouches(value: js.Array[Touch]): Self = this.set("touches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouches: Self = this.set("touches", js.undefined)
+    def setTouchesVarargs(value: Touch*): Self = StObject.set(x, "touches", js.Array(value :_*))
   }
 }

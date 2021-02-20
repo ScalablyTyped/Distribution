@@ -1,12 +1,13 @@
 package typings.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Color")
 @js.native
-class Color () extends js.Object {
+class Color () extends StObject {
   def this(r: Double) = this()
   def this(r: js.UndefOr[scala.Nothing], g: Double) = this()
   def this(r: Double, g: Double) = this()

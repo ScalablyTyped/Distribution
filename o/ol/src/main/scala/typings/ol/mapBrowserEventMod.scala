@@ -4,13 +4,38 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.pixelMod.Pixel
 import typings.ol.pluggableMapMod.FrameState
 import typings.std.UIEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/MapBrowserEvent", JSImport.Namespace)
-@js.native
-object mapBrowserEventMod extends js.Object {
+object mapBrowserEventMod {
+  
+  @JSImport("ol/MapBrowserEvent", JSImport.Default)
+  @js.native
+  class default[EVENT /* <: UIEvent */] protected () extends MapBrowserEvent[EVENT] {
+    def this(`type`: String, map: typings.ol.pluggableMapMod.default, originalEvent: EVENT) = this()
+    def this(
+      `type`: String,
+      map: typings.ol.pluggableMapMod.default,
+      originalEvent: EVENT,
+      opt_dragging: Boolean
+    ) = this()
+    def this(
+      `type`: String,
+      map: typings.ol.pluggableMapMod.default,
+      originalEvent: EVENT,
+      opt_dragging: js.UndefOr[scala.Nothing],
+      opt_frameState: FrameState
+    ) = this()
+    def this(
+      `type`: String,
+      map: typings.ol.pluggableMapMod.default,
+      originalEvent: EVENT,
+      opt_dragging: Boolean,
+      opt_frameState: FrameState
+    ) = this()
+  }
   
   @js.native
   trait MapBrowserEvent[EVENT /* <: UIEvent */]
@@ -37,30 +62,5 @@ object mapBrowserEventMod extends js.Object {
       * The map pixel relative to the viewport corresponding to the original event.
       */
     var pixel: Pixel = js.native
-  }
-  
-  @js.native
-  class default[EVENT /* <: UIEvent */] protected () extends MapBrowserEvent[EVENT] {
-    def this(`type`: String, map: typings.ol.pluggableMapMod.default, originalEvent: EVENT) = this()
-    def this(
-      `type`: String,
-      map: typings.ol.pluggableMapMod.default,
-      originalEvent: EVENT,
-      opt_dragging: Boolean
-    ) = this()
-    def this(
-      `type`: String,
-      map: typings.ol.pluggableMapMod.default,
-      originalEvent: EVENT,
-      opt_dragging: js.UndefOr[scala.Nothing],
-      opt_frameState: FrameState
-    ) = this()
-    def this(
-      `type`: String,
-      map: typings.ol.pluggableMapMod.default,
-      originalEvent: EVENT,
-      opt_dragging: Boolean,
-      opt_frameState: FrameState
-    ) = this()
   }
 }

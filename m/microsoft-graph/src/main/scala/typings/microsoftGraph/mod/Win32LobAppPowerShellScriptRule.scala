@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,78 +50,66 @@ object Win32LobAppPowerShellScriptRule {
   }
   
   @scala.inline
-  implicit class Win32LobAppPowerShellScriptRuleOps[Self <: Win32LobAppPowerShellScriptRule] (val x: Self) extends AnyVal {
+  implicit class Win32LobAppPowerShellScriptRuleMutableBuilder[Self <: Win32LobAppPowerShellScriptRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparisonValue(value: NullableOption[String]): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComparisonValueNull: Self = StObject.set(x, "comparisonValue", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
     
     @scala.inline
-    def setComparisonValue(value: NullableOption[String]): Self = this.set("comparisonValue", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComparisonValue: Self = this.set("comparisonValue", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setComparisonValueNull: Self = this.set("comparisonValue", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEnforceSignatureCheck(value: Boolean): Self = StObject.set(x, "enforceSignatureCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEnforceSignatureCheckUndefined: Self = StObject.set(x, "enforceSignatureCheck", js.undefined)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setOperationType(value: Win32LobAppPowerShellScriptRuleOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforceSignatureCheck(value: Boolean): Self = this.set("enforceSignatureCheck", value.asInstanceOf[js.Any])
+    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
     @scala.inline
-    def deleteEnforceSignatureCheck: Self = this.set("enforceSignatureCheck", js.undefined)
+    def setOperator(value: Win32LobAppRuleOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: Win32LobAppPowerShellScriptRuleOperationType): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    def setRunAs32Bit(value: Boolean): Self = StObject.set(x, "runAs32Bit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: Win32LobAppRuleOperator): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setRunAs32BitUndefined: Self = StObject.set(x, "runAs32Bit", js.undefined)
     
     @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
+    def setRunAsAccount(value: NullableOption[RunAsAccountType]): Self = StObject.set(x, "runAsAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunAs32Bit(value: Boolean): Self = this.set("runAs32Bit", value.asInstanceOf[js.Any])
+    def setRunAsAccountNull: Self = StObject.set(x, "runAsAccount", null)
     
     @scala.inline
-    def deleteRunAs32Bit: Self = this.set("runAs32Bit", js.undefined)
+    def setRunAsAccountUndefined: Self = StObject.set(x, "runAsAccount", js.undefined)
     
     @scala.inline
-    def setRunAsAccount(value: NullableOption[RunAsAccountType]): Self = this.set("runAsAccount", value.asInstanceOf[js.Any])
+    def setScriptContent(value: NullableOption[String]): Self = StObject.set(x, "scriptContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRunAsAccount: Self = this.set("runAsAccount", js.undefined)
+    def setScriptContentNull: Self = StObject.set(x, "scriptContent", null)
     
     @scala.inline
-    def setRunAsAccountNull: Self = this.set("runAsAccount", null)
-    
-    @scala.inline
-    def setScriptContent(value: NullableOption[String]): Self = this.set("scriptContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptContent: Self = this.set("scriptContent", js.undefined)
-    
-    @scala.inline
-    def setScriptContentNull: Self = this.set("scriptContent", null)
+    def setScriptContentUndefined: Self = StObject.set(x, "scriptContent", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.antvG2.mod
 import typings.antvG2.antvG2Strings.mini
 import typings.antvG2.mod.Styles.background
 import typings.antvG2.mod.Styles.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,45 +34,33 @@ object MiniTooltipConfig {
   }
   
   @scala.inline
-  implicit class MiniTooltipConfigOps[Self <: MiniTooltipConfig] (val x: Self) extends AnyVal {
+  implicit class MiniTooltipConfigMutableBuilder[Self <: MiniTooltipConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoardStyle(value: background): Self = StObject.set(x, "boardStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoardStyleUndefined: Self = StObject.set(x, "boardStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriangleHeight(value: Double): Self = StObject.set(x, "triangleHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: mini): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTriangleHeightUndefined: Self = StObject.set(x, "triangleHeight", js.undefined)
     
     @scala.inline
-    def setBoardStyle(value: background): Self = this.set("boardStyle", value.asInstanceOf[js.Any])
+    def setTriangleWidth(value: Double): Self = StObject.set(x, "triangleWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoardStyle: Self = this.set("boardStyle", js.undefined)
+    def setTriangleWidthUndefined: Self = StObject.set(x, "triangleWidth", js.undefined)
     
     @scala.inline
-    def setTriangleHeight(value: Double): Self = this.set("triangleHeight", value.asInstanceOf[js.Any])
+    def setType(value: mini): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTriangleHeight: Self = this.set("triangleHeight", js.undefined)
+    def setValueStyle(value: text): Self = StObject.set(x, "valueStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriangleWidth(value: Double): Self = this.set("triangleWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriangleWidth: Self = this.set("triangleWidth", js.undefined)
-    
-    @scala.inline
-    def setValueStyle(value: text): Self = this.set("valueStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueStyle: Self = this.set("valueStyle", js.undefined)
+    def setValueStyleUndefined: Self = StObject.set(x, "valueStyle", js.undefined)
   }
 }

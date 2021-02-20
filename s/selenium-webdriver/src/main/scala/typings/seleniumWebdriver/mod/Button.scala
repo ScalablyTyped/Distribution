@@ -1,12 +1,13 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Button")
 @js.native
-object Button extends js.Object {
+object Button extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.seleniumWebdriver.inputMod.Button with Double] = js.native

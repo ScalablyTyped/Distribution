@@ -1,11 +1,12 @@
 package typings.sequelize.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCall extends js.Object {
+trait FnCall extends StObject {
   
   def apply(`object`: js.Any, otherArgs: js.Any*): js.Any = js.native
   def apply[TObject, TSource](`object`: TObject, source: TSource): TObject with TSource = js.native

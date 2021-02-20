@@ -1,11 +1,12 @@
 package typings.reBase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushOptions extends js.Object {
+trait PushOptions extends StObject {
   
   /**
     * The data you're wanting to persist to Firebase.
@@ -28,27 +29,15 @@ object PushOptions {
   }
   
   @scala.inline
-  implicit class PushOptionsOps[Self <: PushOptions] (val x: Self) extends AnyVal {
+  implicit class PushOptionsMutableBuilder[Self <: PushOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThen(value: /* result */ js.Any => Unit): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThen(value: /* result */ js.Any => Unit): Self = this.set("then", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteThen: Self = this.set("then", js.undefined)
+    def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }
 }

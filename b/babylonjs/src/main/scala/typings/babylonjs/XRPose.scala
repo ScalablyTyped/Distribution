@@ -1,11 +1,12 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRPose extends js.Object {
+trait XRPose extends StObject {
   
   val emulatedPosition: Boolean = js.native
   
@@ -20,24 +21,12 @@ object XRPose {
   }
   
   @scala.inline
-  implicit class XRPoseOps[Self <: XRPose] (val x: Self) extends AnyVal {
+  implicit class XRPoseMutableBuilder[Self <: XRPose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmulatedPosition(value: Boolean): Self = StObject.set(x, "emulatedPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEmulatedPosition(value: Boolean): Self = this.set("emulatedPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransform(value: XRRigidTransform): Self = this.set("transform", value.asInstanceOf[js.Any])
+    def setTransform(value: XRRigidTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
   }
 }

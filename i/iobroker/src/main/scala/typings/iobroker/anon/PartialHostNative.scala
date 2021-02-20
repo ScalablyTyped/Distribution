@@ -1,12 +1,13 @@
 package typings.iobroker.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.HostNative> */
 @js.native
-trait PartialHostNative extends js.Object {
+trait PartialHostNative extends StObject {
   
   var hardware: js.UndefOr[Cpus] = js.native
   
@@ -23,36 +24,24 @@ object PartialHostNative {
   }
   
   @scala.inline
-  implicit class PartialHostNativeOps[Self <: PartialHostNative] (val x: Self) extends AnyVal {
+  implicit class PartialHostNativeMutableBuilder[Self <: PartialHostNative] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHardware(value: Cpus): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHardwareUndefined: Self = StObject.set(x, "hardware", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOs(value: Arch): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardware(value: Cpus): Self = this.set("hardware", value.asInstanceOf[js.Any])
+    def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
     
     @scala.inline
-    def deleteHardware: Self = this.set("hardware", js.undefined)
+    def setProcess(value: Env): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: Arch): Self = this.set("os", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOs: Self = this.set("os", js.undefined)
-    
-    @scala.inline
-    def setProcess(value: Env): Self = this.set("process", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcess: Self = this.set("process", js.undefined)
+    def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
   }
 }

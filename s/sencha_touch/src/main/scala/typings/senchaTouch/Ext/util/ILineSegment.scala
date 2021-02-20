@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.util
 
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object ILineSegment {
   }
   
   @scala.inline
-  implicit class ILineSegmentOps[Self <: ILineSegment] (val x: Self) extends AnyVal {
+  implicit class ILineSegmentMutableBuilder[Self <: ILineSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntersects(value: /* lineSegment */ js.UndefOr[ILineSegment] => IPoint): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntersectsUndefined: Self = StObject.set(x, "intersects", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIntersects(value: /* lineSegment */ js.UndefOr[ILineSegment] => IPoint): Self = this.set("intersects", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteIntersects: Self = this.set("intersects", js.undefined)
-    
-    @scala.inline
-    def setToString(value: () => String): Self = this.set("toString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteToString: Self = this.set("toString", js.undefined)
+    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
   }
 }

@@ -3,17 +3,16 @@ package typings.simmerjs
 import typings.simmerjs.mod.Options
 import typings.simmerjs.mod.Simmer
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   /* Inlined simmerjs.simmerjs.Simmer & {noConflict (): any} */
   @js.native
-  trait SimmernoConflictany extends js.Object {
+  trait SimmernoConflictany extends StObject {
     
     /**
       * Analyze an element and produce a unique CSS selector for it.

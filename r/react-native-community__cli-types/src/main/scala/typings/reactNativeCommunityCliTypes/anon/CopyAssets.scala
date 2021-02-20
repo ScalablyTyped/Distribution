@@ -1,11 +1,12 @@
 package typings.reactNativeCommunityCliTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyAssets[ProjectConfig, DependencyConfig] extends js.Object {
+trait CopyAssets[ProjectConfig, DependencyConfig] extends StObject {
   
   def copyAssets(assets: js.Array[String], projectConfig: ProjectConfig): Unit = js.native
   
@@ -37,33 +38,21 @@ object CopyAssets {
   }
   
   @scala.inline
-  implicit class CopyAssetsOps[Self <: CopyAssets[_, _], ProjectConfig, DependencyConfig] (val x: Self with (CopyAssets[ProjectConfig, DependencyConfig])) extends AnyVal {
+  implicit class CopyAssetsMutableBuilder[Self <: CopyAssets[_, _], ProjectConfig, DependencyConfig] (val x: Self with (CopyAssets[ProjectConfig, DependencyConfig])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyAssets(value: (js.Array[String], ProjectConfig) => Unit): Self = StObject.set(x, "copyAssets", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsInstalled(value: (ProjectConfig, String, DependencyConfig) => Boolean): Self = StObject.set(x, "isInstalled", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegister(value: (String, DependencyConfig, js.Object, ProjectConfig) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setCopyAssets(value: (js.Array[String], ProjectConfig) => Unit): Self = this.set("copyAssets", js.Any.fromFunction2(value))
+    def setUnlinkAssets(value: (js.Array[String], ProjectConfig) => Unit): Self = StObject.set(x, "unlinkAssets", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsInstalled(value: (ProjectConfig, String, DependencyConfig) => Boolean): Self = this.set("isInstalled", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRegister(value: (String, DependencyConfig, js.Object, ProjectConfig) => Unit): Self = this.set("register", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setUnlinkAssets(value: (js.Array[String], ProjectConfig) => Unit): Self = this.set("unlinkAssets", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnregister(value: (String, DependencyConfig, ProjectConfig, js.Array[DependencyConfig]) => Unit): Self = this.set("unregister", js.Any.fromFunction4(value))
+    def setUnregister(value: (String, DependencyConfig, ProjectConfig, js.Array[DependencyConfig]) => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction4(value))
   }
 }

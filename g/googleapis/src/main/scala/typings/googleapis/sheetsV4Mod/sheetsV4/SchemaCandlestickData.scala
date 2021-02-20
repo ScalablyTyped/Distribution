@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * values for a series.
   */
 @js.native
-trait SchemaCandlestickData extends js.Object {
+trait SchemaCandlestickData extends StObject {
   
   /**
     * The range data (vertical axis) for the close/final value for each candle.
@@ -46,42 +47,30 @@ object SchemaCandlestickData {
   }
   
   @scala.inline
-  implicit class SchemaCandlestickDataOps[Self <: SchemaCandlestickData] (val x: Self) extends AnyVal {
+  implicit class SchemaCandlestickDataMutableBuilder[Self <: SchemaCandlestickData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "closeSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseSeriesUndefined: Self = StObject.set(x, "closeSeries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "highSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseSeries(value: SchemaCandlestickSeries): Self = this.set("closeSeries", value.asInstanceOf[js.Any])
+    def setHighSeriesUndefined: Self = StObject.set(x, "highSeries", js.undefined)
     
     @scala.inline
-    def deleteCloseSeries: Self = this.set("closeSeries", js.undefined)
+    def setLowSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "lowSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighSeries(value: SchemaCandlestickSeries): Self = this.set("highSeries", value.asInstanceOf[js.Any])
+    def setLowSeriesUndefined: Self = StObject.set(x, "lowSeries", js.undefined)
     
     @scala.inline
-    def deleteHighSeries: Self = this.set("highSeries", js.undefined)
+    def setOpenSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "openSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowSeries(value: SchemaCandlestickSeries): Self = this.set("lowSeries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowSeries: Self = this.set("lowSeries", js.undefined)
-    
-    @scala.inline
-    def setOpenSeries(value: SchemaCandlestickSeries): Self = this.set("openSeries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenSeries: Self = this.set("openSeries", js.undefined)
+    def setOpenSeriesUndefined: Self = StObject.set(x, "openSeries", js.undefined)
   }
 }

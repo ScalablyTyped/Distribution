@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Target[DataSet /* <: IAnyObject */] extends js.Object {
+trait Target[DataSet /* <: IAnyObject */] extends StObject {
   
   /** 事件组件上由 `data-` 开头的自定义属性组成的集合 */
   var dataset: DataSet = js.native
@@ -31,36 +32,24 @@ object Target {
   }
   
   @scala.inline
-  implicit class TargetOps[Self <: Target[_], DataSet /* <: IAnyObject */] (val x: Self with Target[DataSet]) extends AnyVal {
+  implicit class TargetMutableBuilder[Self <: Target[_], DataSet /* <: IAnyObject */] (val x: Self with Target[DataSet]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataset(value: DataSet): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: DataSet): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetLeft(value: Double): Self = this.set("offsetLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsetTop(value: Double): Self = this.set("offsetTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagName: Self = this.set("tagName", js.undefined)
+    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }

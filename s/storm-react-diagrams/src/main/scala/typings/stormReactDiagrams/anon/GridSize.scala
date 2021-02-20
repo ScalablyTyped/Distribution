@@ -1,11 +1,12 @@
 package typings.stormReactDiagrams.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridSize extends js.Object {
+trait GridSize extends StObject {
   
   var gridSize: Double = js.native
   
@@ -38,45 +39,33 @@ object GridSize {
   }
   
   @scala.inline
-  implicit class GridSizeOps[Self <: GridSize] (val x: Self) extends AnyVal {
+  implicit class GridSizeMutableBuilder[Self <: GridSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinks(value: js.Array[Labels]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridSize(value: Double): Self = this.set("gridSize", value.asInstanceOf[js.Any])
+    def setLinksVarargs(value: Labels*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNodes(value: js.Array[Ports]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinksVarargs(value: Labels*): Self = this.set("links", js.Array(value :_*))
+    def setNodesVarargs(value: Ports*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setLinks(value: js.Array[Labels]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodesVarargs(value: Ports*): Self = this.set("nodes", js.Array(value :_*))
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: js.Array[Ports]): Self = this.set("nodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

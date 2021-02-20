@@ -1,12 +1,13 @@
 package typings.activexOutlook.Outlook
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarSharing extends js.Object {
+trait CalendarSharing extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -65,63 +66,51 @@ object CalendarSharing {
   }
   
   @scala.inline
-  implicit class CalendarSharingOps[Self <: CalendarSharing] (val x: Self) extends AnyVal {
+  implicit class CalendarSharingMutableBuilder[Self <: CalendarSharing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarDetail(value: OlCalendarDetail): Self = StObject.set(x, "CalendarDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setEndDate(value: VarDate): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarDetail(value: OlCalendarDetail): Self = this.set("CalendarDetail", value.asInstanceOf[js.Any])
+    def setFolder(value: Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setForwardAsICal(value: OlCalendarMailFormat => MailItem): Self = StObject.set(x, "ForwardAsICal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndDate(value: VarDate): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    def setIncludeAttachments(value: Boolean): Self = StObject.set(x, "IncludeAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolder(value: Folder): Self = this.set("Folder", value.asInstanceOf[js.Any])
+    def setIncludePrivateDetails(value: Boolean): Self = StObject.set(x, "IncludePrivateDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardAsICal(value: OlCalendarMailFormat => MailItem): Self = this.set("ForwardAsICal", js.Any.fromFunction1(value))
+    def setIncludeWholeCalendar(value: Boolean): Self = StObject.set(x, "IncludeWholeCalendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAttachments(value: Boolean): Self = this.set("IncludeAttachments", value.asInstanceOf[js.Any])
+    def setOutlookDotCalendarSharing_typekey(value: CalendarSharing): Self = StObject.set(x, "Outlook.CalendarSharing_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludePrivateDetails(value: Boolean): Self = this.set("IncludePrivateDetails", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeWholeCalendar(value: Boolean): Self = this.set("IncludeWholeCalendar", value.asInstanceOf[js.Any])
+    def setRestrictToWorkingHours(value: Boolean): Self = StObject.set(x, "RestrictToWorkingHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotCalendarSharing_typekey(value: CalendarSharing): Self = this.set("Outlook.CalendarSharing_typekey", value.asInstanceOf[js.Any])
+    def setSaveAsICal(value: String => Unit): Self = StObject.set(x, "SaveAsICal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictToWorkingHours(value: Boolean): Self = this.set("RestrictToWorkingHours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaveAsICal(value: String => Unit): Self = this.set("SaveAsICal", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartDate(value: VarDate): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+    def setStartDate(value: VarDate): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
   }
 }

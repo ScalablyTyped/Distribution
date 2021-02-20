@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgLoader extends js.Object {
+trait IgLoader extends StObject {
   
   def load(resources: String): IgLoader = js.native
   def load(resources: String, callback: js.UndefOr[scala.Nothing], preinit: js.Function): IgLoader = js.native

@@ -1,11 +1,12 @@
 package typings.uirouterCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivateViews extends js.Object {
+trait ActivateViews extends StObject {
   
   var activateViews: js.Function = js.native
   
@@ -62,63 +63,51 @@ object ActivateViews {
   }
   
   @scala.inline
-  implicit class ActivateViewsOps[Self <: ActivateViews] (val x: Self) extends AnyVal {
+  implicit class ActivateViewsMutableBuilder[Self <: ActivateViews] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivateViews(value: js.Function): Self = StObject.set(x, "activateViews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddCoreResolves(value: js.Function): Self = StObject.set(x, "addCoreResolves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEagerResolve(value: js.Function): Self = StObject.set(x, "eagerResolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivateViews(value: js.Function): Self = this.set("activateViews", value.asInstanceOf[js.Any])
+    def setIgnored(value: js.Function): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddCoreResolves(value: js.Function): Self = this.set("addCoreResolves", value.asInstanceOf[js.Any])
+    def setInvalid(value: js.Function): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEagerResolve(value: js.Function): Self = this.set("eagerResolve", value.asInstanceOf[js.Any])
+    def setLazyLoad(value: js.Function): Self = StObject.set(x, "lazyLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnored(value: js.Function): Self = this.set("ignored", value.asInstanceOf[js.Any])
+    def setLazyResolve(value: js.Function): Self = StObject.set(x, "lazyResolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalid(value: js.Function): Self = this.set("invalid", value.asInstanceOf[js.Any])
+    def setLoadViews(value: js.Function): Self = StObject.set(x, "loadViews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLazyLoad(value: js.Function): Self = this.set("lazyLoad", value.asInstanceOf[js.Any])
+    def setOnEnter(value: js.Function): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLazyResolve(value: js.Function): Self = this.set("lazyResolve", value.asInstanceOf[js.Any])
+    def setOnExit(value: js.Function): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadViews(value: js.Function): Self = this.set("loadViews", value.asInstanceOf[js.Any])
+    def setOnRetain(value: js.Function): Self = StObject.set(x, "onRetain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEnter(value: js.Function): Self = this.set("onEnter", value.asInstanceOf[js.Any])
+    def setRedirectTo(value: js.Function): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnExit(value: js.Function): Self = this.set("onExit", value.asInstanceOf[js.Any])
+    def setResolveAll(value: js.Function): Self = StObject.set(x, "resolveAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRetain(value: js.Function): Self = this.set("onRetain", value.asInstanceOf[js.Any])
+    def setUpdateGlobals(value: js.Function): Self = StObject.set(x, "updateGlobals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectTo(value: js.Function): Self = this.set("redirectTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolveAll(value: js.Function): Self = this.set("resolveAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateGlobals(value: js.Function): Self = this.set("updateGlobals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateUrl(value: js.Function): Self = this.set("updateUrl", value.asInstanceOf[js.Any])
+    def setUpdateUrl(value: js.Function): Self = StObject.set(x, "updateUrl", value.asInstanceOf[js.Any])
   }
 }

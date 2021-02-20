@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DiagramShapeType extends js.Object
+sealed trait DiagramShapeType extends StObject
 /**
   * Lists built-in shapes' types.
   */
 @JSGlobal("DiagramShapeType")
 @js.native
-object DiagramShapeType extends js.Object {
+object DiagramShapeType extends StObject {
   
   @js.native
   sealed trait ArrowBottom extends DiagramShapeType

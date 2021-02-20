@@ -3,12 +3,13 @@ package typings.algoliaClientSearch.mod
 import typings.algoliaClientSearch.anon.Avg
 import typings.algoliaClientSearch.anon.Match
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchResponse[TObject] extends js.Object {
+trait SearchResponse[TObject] extends StObject {
   
   /**
     * In case of AB test, reports the variant ID used. The variant ID is the position in the array of variants (starting at 1).
@@ -180,159 +181,147 @@ object SearchResponse {
   }
   
   @scala.inline
-  implicit class SearchResponseOps[Self <: SearchResponse[_], TObject] (val x: Self with SearchResponse[TObject]) extends AnyVal {
+  implicit class SearchResponseMutableBuilder[Self <: SearchResponse[_], TObject] (val x: Self with SearchResponse[TObject]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbTestVariantID(value: Double): Self = StObject.set(x, "abTestVariantID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbTestVariantIDUndefined: Self = StObject.set(x, "abTestVariantID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppliedRules(value: js.Array[Record[String, _]]): Self = StObject.set(x, "appliedRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExhaustiveNbHits(value: Boolean): Self = this.set("exhaustiveNbHits", value.asInstanceOf[js.Any])
+    def setAppliedRulesUndefined: Self = StObject.set(x, "appliedRules", js.undefined)
     
     @scala.inline
-    def setHitsVarargs(value: Hit[TObject]*): Self = this.set("hits", js.Array(value :_*))
+    def setAppliedRulesVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "appliedRules", js.Array(value :_*))
     
     @scala.inline
-    def setHits(value: js.Array[Hit[TObject]]): Self = this.set("hits", value.asInstanceOf[js.Any])
+    def setAroundLatLng(value: String): Self = StObject.set(x, "aroundLatLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitsPerPage(value: Double): Self = this.set("hitsPerPage", value.asInstanceOf[js.Any])
+    def setAroundLatLngUndefined: Self = StObject.set(x, "aroundLatLng", js.undefined)
     
     @scala.inline
-    def setNbHits(value: Double): Self = this.set("nbHits", value.asInstanceOf[js.Any])
+    def setAutomaticRadius(value: String): Self = StObject.set(x, "automaticRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNbPages(value: Double): Self = this.set("nbPages", value.asInstanceOf[js.Any])
+    def setAutomaticRadiusUndefined: Self = StObject.set(x, "automaticRadius", js.undefined)
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setExhaustiveFacetsCount(value: Boolean): Self = StObject.set(x, "exhaustiveFacetsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: String): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setExhaustiveFacetsCountUndefined: Self = StObject.set(x, "exhaustiveFacetsCount", js.undefined)
     
     @scala.inline
-    def setProcessingTimeMS(value: Double): Self = this.set("processingTimeMS", value.asInstanceOf[js.Any])
+    def setExhaustiveNbHits(value: Boolean): Self = StObject.set(x, "exhaustiveNbHits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setExplain(value: Match): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbTestVariantID(value: Double): Self = this.set("abTestVariantID", value.asInstanceOf[js.Any])
+    def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
     
     @scala.inline
-    def deleteAbTestVariantID: Self = this.set("abTestVariantID", js.undefined)
+    def setFacets(value: Record[String, Record[String, Double]]): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppliedRulesVarargs(value: (Record[String, js.Any])*): Self = this.set("appliedRules", js.Array(value :_*))
+    def setFacetsStats(value: Record[String, Avg]): Self = StObject.set(x, "facetsStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppliedRules(value: js.Array[Record[String, _]]): Self = this.set("appliedRules", value.asInstanceOf[js.Any])
+    def setFacetsStatsUndefined: Self = StObject.set(x, "facetsStats", js.undefined)
     
     @scala.inline
-    def deleteAppliedRules: Self = this.set("appliedRules", js.undefined)
+    def setFacetsUndefined: Self = StObject.set(x, "facets", js.undefined)
     
     @scala.inline
-    def setAroundLatLng(value: String): Self = this.set("aroundLatLng", value.asInstanceOf[js.Any])
+    def setHits(value: js.Array[Hit[TObject]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAroundLatLng: Self = this.set("aroundLatLng", js.undefined)
+    def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticRadius(value: String): Self = this.set("automaticRadius", value.asInstanceOf[js.Any])
+    def setHitsVarargs(value: Hit[TObject]*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutomaticRadius: Self = this.set("automaticRadius", js.undefined)
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExhaustiveFacetsCount(value: Boolean): Self = this.set("exhaustiveFacetsCount", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteExhaustiveFacetsCount: Self = this.set("exhaustiveFacetsCount", js.undefined)
+    def setIndexUsed(value: String): Self = StObject.set(x, "indexUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplain(value: Match): Self = this.set("explain", value.asInstanceOf[js.Any])
+    def setIndexUsedUndefined: Self = StObject.set(x, "indexUsed", js.undefined)
     
     @scala.inline
-    def deleteExplain: Self = this.set("explain", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacets(value: Record[String, Record[String, Double]]): Self = this.set("facets", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteFacets: Self = this.set("facets", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetsStats(value: Record[String, Avg]): Self = this.set("facetsStats", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteFacetsStats: Self = this.set("facetsStats", js.undefined)
+    def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setNbPages(value: Double): Self = StObject.set(x, "nbPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexUsed(value: String): Self = this.set("indexUsed", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteIndexUsed: Self = this.set("indexUsed", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setParsedQuery(value: String): Self = StObject.set(x, "parsedQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setParsedQueryUndefined: Self = StObject.set(x, "parsedQuery", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setProcessingTimeMS(value: Double): Self = StObject.set(x, "processingTimeMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setQueryAfterRemoval(value: String): Self = StObject.set(x, "queryAfterRemoval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParsedQuery(value: String): Self = this.set("parsedQuery", value.asInstanceOf[js.Any])
+    def setQueryAfterRemovalUndefined: Self = StObject.set(x, "queryAfterRemoval", js.undefined)
     
     @scala.inline
-    def deleteParsedQuery: Self = this.set("parsedQuery", js.undefined)
+    def setQueryID(value: String): Self = StObject.set(x, "queryID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryAfterRemoval(value: String): Self = this.set("queryAfterRemoval", value.asInstanceOf[js.Any])
+    def setQueryIDUndefined: Self = StObject.set(x, "queryID", js.undefined)
     
     @scala.inline
-    def deleteQueryAfterRemoval: Self = this.set("queryAfterRemoval", js.undefined)
+    def setServerUsed(value: String): Self = StObject.set(x, "serverUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryID(value: String): Self = this.set("queryID", value.asInstanceOf[js.Any])
+    def setServerUsedUndefined: Self = StObject.set(x, "serverUsed", js.undefined)
     
     @scala.inline
-    def deleteQueryID: Self = this.set("queryID", js.undefined)
+    def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerUsed(value: String): Self = this.set("serverUsed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerUsed: Self = this.set("serverUsed", js.undefined)
-    
-    @scala.inline
-    def setUserData(value: js.Any): Self = this.set("userData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserData: Self = this.set("userData", js.undefined)
+    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }
 }

@@ -1,37 +1,38 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuyProviderInfo extends js.Object {
+trait BuyProviderInfo extends StObject {
   
-   // simplex
+  // simplex
   var companyName: String = js.native
   
-   // simplex-icon.jpg
+  // simplex-icon.jpg
   var isActive: Boolean = js.native
   
-   // Simplex
+  // Simplex
   var logo: String = js.native
   
   var name: String = js.native
   
-   // ['AT', 'BE']
+  // ['AT', 'BE']
   var paymentMethods: js.Array[BuyCryptoPaymentMethod] = js.native
   
   var statusUrl: String = js.native
   
-   // https://payment-status.simplex.com/api/v1/user/payments?uuid={{paymentId}}
+  // https://payment-status.simplex.com/api/v1/user/payments?uuid={{paymentId}}
   var supportUrl: String = js.native
   
-   // ['EUR', 'USD']
+  // ['EUR', 'USD']
   var supportedCountries: js.Array[String] = js.native
   
   var tradedCoins: js.Array[String] = js.native
   
-   // ['BTC', 'BCH', 'LTC', 'XRP', 'ETH']
+  // ['BTC', 'BCH', 'LTC', 'XRP', 'ETH']
   var tradedFiatCurrencies: js.Array[String] = js.native
 }
 object BuyProviderInfo {
@@ -54,60 +55,48 @@ object BuyProviderInfo {
   }
   
   @scala.inline
-  implicit class BuyProviderInfoOps[Self <: BuyProviderInfo] (val x: Self) extends AnyVal {
+  implicit class BuyProviderInfoMutableBuilder[Self <: BuyProviderInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setPaymentMethods(value: js.Array[BuyCryptoPaymentMethod]): Self = StObject.set(x, "paymentMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: String): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setPaymentMethodsVarargs(value: BuyCryptoPaymentMethod*): Self = StObject.set(x, "paymentMethods", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStatusUrl(value: String): Self = StObject.set(x, "statusUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethodsVarargs(value: BuyCryptoPaymentMethod*): Self = this.set("paymentMethods", js.Array(value :_*))
+    def setSupportUrl(value: String): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethods(value: js.Array[BuyCryptoPaymentMethod]): Self = this.set("paymentMethods", value.asInstanceOf[js.Any])
+    def setSupportedCountries(value: js.Array[String]): Self = StObject.set(x, "supportedCountries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusUrl(value: String): Self = this.set("statusUrl", value.asInstanceOf[js.Any])
+    def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value :_*))
     
     @scala.inline
-    def setSupportUrl(value: String): Self = this.set("supportUrl", value.asInstanceOf[js.Any])
+    def setTradedCoins(value: js.Array[String]): Self = StObject.set(x, "tradedCoins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedCountriesVarargs(value: String*): Self = this.set("supportedCountries", js.Array(value :_*))
+    def setTradedCoinsVarargs(value: String*): Self = StObject.set(x, "tradedCoins", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedCountries(value: js.Array[String]): Self = this.set("supportedCountries", value.asInstanceOf[js.Any])
+    def setTradedFiatCurrencies(value: js.Array[String]): Self = StObject.set(x, "tradedFiatCurrencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTradedCoinsVarargs(value: String*): Self = this.set("tradedCoins", js.Array(value :_*))
-    
-    @scala.inline
-    def setTradedCoins(value: js.Array[String]): Self = this.set("tradedCoins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTradedFiatCurrenciesVarargs(value: String*): Self = this.set("tradedFiatCurrencies", js.Array(value :_*))
-    
-    @scala.inline
-    def setTradedFiatCurrencies(value: js.Array[String]): Self = this.set("tradedFiatCurrencies", value.asInstanceOf[js.Any])
+    def setTradedFiatCurrenciesVarargs(value: String*): Self = StObject.set(x, "tradedFiatCurrencies", js.Array(value :_*))
   }
 }

@@ -2,12 +2,13 @@ package typings.lodash.mod
 
 import typings.std.Parameters
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebouncedFunc[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends js.Object {
+trait DebouncedFunc[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends StObject {
   
   /**
     * Call the original function, but applying the debounce rules.

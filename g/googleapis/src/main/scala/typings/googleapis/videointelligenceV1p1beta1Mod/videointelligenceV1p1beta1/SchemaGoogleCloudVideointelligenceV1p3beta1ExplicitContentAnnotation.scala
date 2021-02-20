@@ -1,5 +1,6 @@
 package typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for that frame.
   */
 @js.native
-trait SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation extends js.Object {
+trait SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation extends StObject {
   
   /**
     * All video frames where explicit content was detected.
@@ -26,27 +27,15 @@ object SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotationOps[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotationMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrames(value: js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame*): Self = this.set("frames", js.Array(value :_*))
-    
-    @scala.inline
-    def setFrames(value: js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame]): Self = this.set("frames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrames: Self = this.set("frames", js.undefined)
+    def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
   }
 }

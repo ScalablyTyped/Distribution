@@ -2,12 +2,13 @@ package typings.auth0.mod
 
 import typings.auth0.anon.Alg
 import typings.auth0.anon.Cert
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Client extends js.Object {
+trait Client extends StObject {
   
   var addons: js.UndefOr[js.Any] = js.native
   
@@ -128,228 +129,216 @@ object Client {
   }
   
   @scala.inline
-  implicit class ClientOps[Self <: Client] (val x: Self) extends AnyVal {
+  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddons(value: js.Any): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddonsUndefined: Self = StObject.set(x, "addons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowed_clients(value: js.Array[String]): Self = StObject.set(x, "allowed_clients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddons(value: js.Any): Self = this.set("addons", value.asInstanceOf[js.Any])
+    def setAllowed_clientsUndefined: Self = StObject.set(x, "allowed_clients", js.undefined)
     
     @scala.inline
-    def deleteAddons: Self = this.set("addons", js.undefined)
+    def setAllowed_clientsVarargs(value: String*): Self = StObject.set(x, "allowed_clients", js.Array(value :_*))
     
     @scala.inline
-    def setAllowed_clientsVarargs(value: String*): Self = this.set("allowed_clients", js.Array(value :_*))
+    def setAllowed_logout_urls(value: js.Array[String]): Self = StObject.set(x, "allowed_logout_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowed_clients(value: js.Array[String]): Self = this.set("allowed_clients", value.asInstanceOf[js.Any])
+    def setAllowed_logout_urlsUndefined: Self = StObject.set(x, "allowed_logout_urls", js.undefined)
     
     @scala.inline
-    def deleteAllowed_clients: Self = this.set("allowed_clients", js.undefined)
+    def setAllowed_logout_urlsVarargs(value: String*): Self = StObject.set(x, "allowed_logout_urls", js.Array(value :_*))
     
     @scala.inline
-    def setAllowed_logout_urlsVarargs(value: String*): Self = this.set("allowed_logout_urls", js.Array(value :_*))
+    def setAllowed_origins(value: js.Array[String]): Self = StObject.set(x, "allowed_origins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowed_logout_urls(value: js.Array[String]): Self = this.set("allowed_logout_urls", value.asInstanceOf[js.Any])
+    def setAllowed_originsUndefined: Self = StObject.set(x, "allowed_origins", js.undefined)
     
     @scala.inline
-    def deleteAllowed_logout_urls: Self = this.set("allowed_logout_urls", js.undefined)
+    def setAllowed_originsVarargs(value: String*): Self = StObject.set(x, "allowed_origins", js.Array(value :_*))
     
     @scala.inline
-    def setAllowed_originsVarargs(value: String*): Self = this.set("allowed_origins", js.Array(value :_*))
+    def setApp_type(value: String): Self = StObject.set(x, "app_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowed_origins(value: js.Array[String]): Self = this.set("allowed_origins", value.asInstanceOf[js.Any])
+    def setApp_typeUndefined: Self = StObject.set(x, "app_type", js.undefined)
     
     @scala.inline
-    def deleteAllowed_origins: Self = this.set("allowed_origins", js.undefined)
+    def setCallbacks(value: js.Array[String]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp_type(value: String): Self = this.set("app_type", value.asInstanceOf[js.Any])
+    def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
     
     @scala.inline
-    def deleteApp_type: Self = this.set("app_type", js.undefined)
+    def setCallbacksVarargs(value: String*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
     
     @scala.inline
-    def setCallbacksVarargs(value: String*): Self = this.set("callbacks", js.Array(value :_*))
+    def setClient_aliases(value: js.Array[String]): Self = StObject.set(x, "client_aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbacks(value: js.Array[String]): Self = this.set("callbacks", value.asInstanceOf[js.Any])
+    def setClient_aliasesUndefined: Self = StObject.set(x, "client_aliases", js.undefined)
     
     @scala.inline
-    def deleteCallbacks: Self = this.set("callbacks", js.undefined)
+    def setClient_aliasesVarargs(value: String*): Self = StObject.set(x, "client_aliases", js.Array(value :_*))
     
     @scala.inline
-    def setClient_aliasesVarargs(value: String*): Self = this.set("client_aliases", js.Array(value :_*))
+    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_aliases(value: js.Array[String]): Self = this.set("client_aliases", value.asInstanceOf[js.Any])
+    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
     @scala.inline
-    def deleteClient_aliases: Self = this.set("client_aliases", js.undefined)
+    def setClient_metadata(value: js.Any): Self = StObject.set(x, "client_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    def setClient_metadataUndefined: Self = StObject.set(x, "client_metadata", js.undefined)
     
     @scala.inline
-    def deleteClient_id: Self = this.set("client_id", js.undefined)
+    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_metadata(value: js.Any): Self = this.set("client_metadata", value.asInstanceOf[js.Any])
+    def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
     
     @scala.inline
-    def deleteClient_metadata: Self = this.set("client_metadata", js.undefined)
+    def setCross_origin_auth(value: Boolean): Self = StObject.set(x, "cross_origin_auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_secret(value: String): Self = this.set("client_secret", value.asInstanceOf[js.Any])
+    def setCross_origin_authUndefined: Self = StObject.set(x, "cross_origin_auth", js.undefined)
     
     @scala.inline
-    def deleteClient_secret: Self = this.set("client_secret", js.undefined)
+    def setCross_origin_loc(value: String): Self = StObject.set(x, "cross_origin_loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCross_origin_auth(value: Boolean): Self = this.set("cross_origin_auth", value.asInstanceOf[js.Any])
+    def setCross_origin_locUndefined: Self = StObject.set(x, "cross_origin_loc", js.undefined)
     
     @scala.inline
-    def deleteCross_origin_auth: Self = this.set("cross_origin_auth", js.undefined)
+    def setCustom_login_page(value: String): Self = StObject.set(x, "custom_login_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCross_origin_loc(value: String): Self = this.set("cross_origin_loc", value.asInstanceOf[js.Any])
+    def setCustom_login_pageUndefined: Self = StObject.set(x, "custom_login_page", js.undefined)
     
     @scala.inline
-    def deleteCross_origin_loc: Self = this.set("cross_origin_loc", js.undefined)
+    def setCustom_login_page_on(value: Boolean): Self = StObject.set(x, "custom_login_page_on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_login_page(value: String): Self = this.set("custom_login_page", value.asInstanceOf[js.Any])
+    def setCustom_login_page_onUndefined: Self = StObject.set(x, "custom_login_page_on", js.undefined)
     
     @scala.inline
-    def deleteCustom_login_page: Self = this.set("custom_login_page", js.undefined)
+    def setCustom_login_page_preview(value: String): Self = StObject.set(x, "custom_login_page_preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_login_page_on(value: Boolean): Self = this.set("custom_login_page_on", value.asInstanceOf[js.Any])
+    def setCustom_login_page_previewUndefined: Self = StObject.set(x, "custom_login_page_preview", js.undefined)
     
     @scala.inline
-    def deleteCustom_login_page_on: Self = this.set("custom_login_page_on", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_login_page_preview(value: String): Self = this.set("custom_login_page_preview", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCustom_login_page_preview: Self = this.set("custom_login_page_preview", js.undefined)
+    def setEncryption_key(value: Cert): Self = StObject.set(x, "encryption_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEncryption_keyUndefined: Self = StObject.set(x, "encryption_key", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setForm_template(value: String): Self = StObject.set(x, "form_template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption_key(value: Cert): Self = this.set("encryption_key", value.asInstanceOf[js.Any])
+    def setForm_templateUndefined: Self = StObject.set(x, "form_template", js.undefined)
     
     @scala.inline
-    def deleteEncryption_key: Self = this.set("encryption_key", js.undefined)
+    def setGrant_types(value: js.Array[Grant]): Self = StObject.set(x, "grant_types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm_template(value: String): Self = this.set("form_template", value.asInstanceOf[js.Any])
+    def setGrant_typesUndefined: Self = StObject.set(x, "grant_types", js.undefined)
     
     @scala.inline
-    def deleteForm_template: Self = this.set("form_template", js.undefined)
+    def setGrant_typesVarargs(value: Grant*): Self = StObject.set(x, "grant_types", js.Array(value :_*))
     
     @scala.inline
-    def setGrant_typesVarargs(value: Grant*): Self = this.set("grant_types", js.Array(value :_*))
+    def setInitiate_login_uri(value: String): Self = StObject.set(x, "initiate_login_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrant_types(value: js.Array[Grant]): Self = this.set("grant_types", value.asInstanceOf[js.Any])
+    def setInitiate_login_uriUndefined: Self = StObject.set(x, "initiate_login_uri", js.undefined)
     
     @scala.inline
-    def deleteGrant_types: Self = this.set("grant_types", js.undefined)
+    def setIs_first_party(value: Boolean): Self = StObject.set(x, "is_first_party", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiate_login_uri(value: String): Self = this.set("initiate_login_uri", value.asInstanceOf[js.Any])
+    def setIs_first_partyUndefined: Self = StObject.set(x, "is_first_party", js.undefined)
     
     @scala.inline
-    def deleteInitiate_login_uri: Self = this.set("initiate_login_uri", js.undefined)
+    def setJwt_configuration(value: Alg): Self = StObject.set(x, "jwt_configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_first_party(value: Boolean): Self = this.set("is_first_party", value.asInstanceOf[js.Any])
+    def setJwt_configurationUndefined: Self = StObject.set(x, "jwt_configuration", js.undefined)
     
     @scala.inline
-    def deleteIs_first_party: Self = this.set("is_first_party", js.undefined)
+    def setLogo_uri(value: String): Self = StObject.set(x, "logo_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwt_configuration(value: Alg): Self = this.set("jwt_configuration", value.asInstanceOf[js.Any])
+    def setLogo_uriUndefined: Self = StObject.set(x, "logo_uri", js.undefined)
     
     @scala.inline
-    def deleteJwt_configuration: Self = this.set("jwt_configuration", js.undefined)
+    def setMobile(value: js.Any): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo_uri(value: String): Self = this.set("logo_uri", value.asInstanceOf[js.Any])
+    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
     
     @scala.inline
-    def deleteLogo_uri: Self = this.set("logo_uri", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobile(value: js.Any): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMobile: Self = this.set("mobile", js.undefined)
+    def setOidc_conformant(value: Boolean): Self = StObject.set(x, "oidc_conformant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOidc_conformantUndefined: Self = StObject.set(x, "oidc_conformant", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSigning_keys(value: js.Array[String]): Self = StObject.set(x, "signing_keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOidc_conformant(value: Boolean): Self = this.set("oidc_conformant", value.asInstanceOf[js.Any])
+    def setSigning_keysUndefined: Self = StObject.set(x, "signing_keys", js.undefined)
     
     @scala.inline
-    def deleteOidc_conformant: Self = this.set("oidc_conformant", js.undefined)
+    def setSigning_keysVarargs(value: String*): Self = StObject.set(x, "signing_keys", js.Array(value :_*))
     
     @scala.inline
-    def setSigning_keysVarargs(value: String*): Self = this.set("signing_keys", js.Array(value :_*))
+    def setSso(value: Boolean): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigning_keys(value: js.Array[String]): Self = this.set("signing_keys", value.asInstanceOf[js.Any])
+    def setSsoUndefined: Self = StObject.set(x, "sso", js.undefined)
     
     @scala.inline
-    def deleteSigning_keys: Self = this.set("signing_keys", js.undefined)
+    def setSso_disabled(value: Boolean): Self = StObject.set(x, "sso_disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSso(value: Boolean): Self = this.set("sso", value.asInstanceOf[js.Any])
+    def setSso_disabledUndefined: Self = StObject.set(x, "sso_disabled", js.undefined)
     
     @scala.inline
-    def deleteSso: Self = this.set("sso", js.undefined)
+    def setToken_endpoint_auth_method(value: String): Self = StObject.set(x, "token_endpoint_auth_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSso_disabled(value: Boolean): Self = this.set("sso_disabled", value.asInstanceOf[js.Any])
+    def setToken_endpoint_auth_methodUndefined: Self = StObject.set(x, "token_endpoint_auth_method", js.undefined)
     
     @scala.inline
-    def deleteSso_disabled: Self = this.set("sso_disabled", js.undefined)
+    def setWeb_origins(value: js.Array[String]): Self = StObject.set(x, "web_origins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken_endpoint_auth_method(value: String): Self = this.set("token_endpoint_auth_method", value.asInstanceOf[js.Any])
+    def setWeb_originsUndefined: Self = StObject.set(x, "web_origins", js.undefined)
     
     @scala.inline
-    def deleteToken_endpoint_auth_method: Self = this.set("token_endpoint_auth_method", js.undefined)
-    
-    @scala.inline
-    def setWeb_originsVarargs(value: String*): Self = this.set("web_origins", js.Array(value :_*))
-    
-    @scala.inline
-    def setWeb_origins(value: js.Array[String]): Self = this.set("web_origins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeb_origins: Self = this.set("web_origins", js.undefined)
+    def setWeb_originsVarargs(value: String*): Self = StObject.set(x, "web_origins", js.Array(value :_*))
   }
 }

@@ -1,14 +1,15 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PullElementFlags extends js.Object
+sealed trait PullElementFlags extends StObject
 @JSGlobal("TypeScript.PullElementFlags")
 @js.native
-object PullElementFlags extends js.Object {
+object PullElementFlags extends StObject {
   
   @js.native
   sealed trait Ambient extends PullElementFlags

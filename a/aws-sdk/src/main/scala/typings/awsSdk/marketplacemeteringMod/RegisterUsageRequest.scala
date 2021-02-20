@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacemeteringMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterUsageRequest extends js.Object {
+trait RegisterUsageRequest extends StObject {
   
   /**
     * (Optional) To scope down the registration to a specific running software instance and guard against replay attacks.
@@ -31,30 +32,18 @@ object RegisterUsageRequest {
   }
   
   @scala.inline
-  implicit class RegisterUsageRequestOps[Self <: RegisterUsageRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterUsageRequestMutableBuilder[Self <: RegisterUsageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNonce(value: Nonce): Self = StObject.set(x, "Nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNonceUndefined: Self = StObject.set(x, "Nonce", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCode(value: ProductCode): Self = this.set("ProductCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicKeyVersion(value: VersionInteger): Self = this.set("PublicKeyVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNonce(value: Nonce): Self = this.set("Nonce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonce: Self = this.set("Nonce", js.undefined)
+    def setPublicKeyVersion(value: VersionInteger): Self = StObject.set(x, "PublicKeyVersion", value.asInstanceOf[js.Any])
   }
 }

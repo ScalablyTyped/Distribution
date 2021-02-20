@@ -1,16 +1,16 @@
 package typings.babylonjs
 
 import typings.babylonjs.actionManagerMod.ActionManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Actions/condition", JSImport.Namespace)
-@js.native
-object conditionMod extends js.Object {
+object conditionMod {
   
+  @JSImport("babylonjs/Actions/condition", "Condition")
   @js.native
-  class Condition protected () extends js.Object {
+  class Condition protected () extends StObject {
     /**
       * Creates a new Condition
       * @param actionManager the manager of the action the condition is applied to
@@ -66,6 +66,7 @@ object conditionMod extends js.Object {
     def serialize(): js.Any = js.native
   }
   
+  @JSImport("babylonjs/Actions/condition", "PredicateCondition")
   @js.native
   class PredicateCondition protected () extends Condition {
     /**
@@ -83,6 +84,7 @@ object conditionMod extends js.Object {
     def predicate(): Boolean = js.native
   }
   
+  @JSImport("babylonjs/Actions/condition", "StateCondition")
   @js.native
   class StateCondition protected () extends Condition {
     /**
@@ -108,6 +110,7 @@ object conditionMod extends js.Object {
     var value: String = js.native
   }
   
+  @JSImport("babylonjs/Actions/condition", "ValueCondition")
   @js.native
   class ValueCondition protected () extends Condition {
     /**
@@ -165,58 +168,59 @@ object conditionMod extends js.Object {
     var value: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object ValueCondition extends js.Object {
+  object ValueCondition {
+    
+    @JSImport("babylonjs/Actions/condition", "ValueCondition")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets the name of the conditional operator for the ValueCondition
       * @param operator the conditional operator
       * @returns the name
       */
+    @JSImport("babylonjs/Actions/condition", "ValueCondition.GetOperatorName")
+    @js.native
     def GetOperatorName(operator: Double): String = js.native
     
     /**
-      * Returns the number for IsDifferent
+      * Internal only
+      * @hidden
       */
-    def IsDifferent: Double = js.native
-    
-    /**
-      * returns the number for IsEqual
-      */
-    def IsEqual: Double = js.native
-    
-    /**
-      * Returns the number for IsGreater
-      */
-    def IsGreater: Double = js.native
-    
-    /**
-      * Returns the number for IsLesser
-      */
-    def IsLesser: Double = js.native
+    @JSImport("babylonjs/Actions/condition", "ValueCondition._IsDifferent")
+    @js.native
+    def _IsDifferent: js.Any = js.native
+    @scala.inline
+    def _IsDifferent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
     
     /**
       * Internal only
       * @hidden
       */
-    var _IsDifferent: js.Any = js.native
+    @JSImport("babylonjs/Actions/condition", "ValueCondition._IsEqual")
+    @js.native
+    def _IsEqual: js.Any = js.native
+    @scala.inline
+    def _IsEqual_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
     
     /**
       * Internal only
       * @hidden
       */
-    var _IsEqual: js.Any = js.native
+    @JSImport("babylonjs/Actions/condition", "ValueCondition._IsGreater")
+    @js.native
+    def _IsGreater: js.Any = js.native
+    @scala.inline
+    def _IsGreater_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
     
     /**
       * Internal only
       * @hidden
       */
-    var _IsGreater: js.Any = js.native
-    
-    /**
-      * Internal only
-      * @hidden
-      */
-    var _IsLesser: js.Any = js.native
+    @JSImport("babylonjs/Actions/condition", "ValueCondition._IsLesser")
+    @js.native
+    def _IsLesser: js.Any = js.native
+    @scala.inline
+    def _IsLesser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsLesser")(x.asInstanceOf[js.Any])
   }
 }

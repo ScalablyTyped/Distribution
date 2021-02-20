@@ -1,55 +1,78 @@
 package typings.reactWeui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-weui", "PopupHeader")
-@js.native
-object PopupHeader extends js.Object {
+object PopupHeader {
   
+  @JSImport("react-weui", "PopupHeader")
+  @js.native
   def apply(props: js.Any): js.Any = js.native
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
-    var left: String = js.native
+    @JSImport("react-weui", "PopupHeader.defaultProps")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var right: String = js.native
+    @JSImport("react-weui", "PopupHeader.defaultProps.left")
+    @js.native
+    def left: String = js.native
+    @scala.inline
+    def left_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-weui", "PopupHeader.defaultProps.right")
+    @js.native
+    def right: String = js.native
+    @scala.inline
+    def right_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object left extends js.Object {
+    object left {
       
+      @JSImport("react-weui", "PopupHeader.propTypes.left")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "PopupHeader.propTypes.left.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object leftOnClick extends js.Object {
+    object leftOnClick {
       
+      @JSImport("react-weui", "PopupHeader.propTypes.leftOnClick")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "PopupHeader.propTypes.leftOnClick.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object right extends js.Object {
+    object right {
       
+      @JSImport("react-weui", "PopupHeader.propTypes.right")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "PopupHeader.propTypes.right.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object rightOnClick extends js.Object {
+    object rightOnClick {
       
+      @JSImport("react-weui", "PopupHeader.propTypes.rightOnClick")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "PopupHeader.propTypes.rightOnClick.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
   }

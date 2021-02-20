@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.IEntity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is triggered whenever an entity becomes a rider on another entity.
   */
 @js.native
-trait IEntityStartRidingEventData extends js.Object {
+trait IEntityStartRidingEventData extends StObject {
   
   /**
     * The rider
@@ -30,24 +31,12 @@ object IEntityStartRidingEventData {
   }
   
   @scala.inline
-  implicit class IEntityStartRidingEventDataOps[Self <: IEntityStartRidingEventData] (val x: Self) extends AnyVal {
+  implicit class IEntityStartRidingEventDataMutableBuilder[Self <: IEntityStartRidingEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntity(value: IEntity): Self = this.set("entity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRide(value: IEntity): Self = this.set("ride", value.asInstanceOf[js.Any])
+    def setRide(value: IEntity): Self = StObject.set(x, "ride", value.asInstanceOf[js.Any])
   }
 }

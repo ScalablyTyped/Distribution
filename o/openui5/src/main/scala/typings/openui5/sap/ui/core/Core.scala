@@ -5,6 +5,7 @@ import typings.openui5.sap.ui.base.Interface
 import typings.openui5.sap.ui.base.Object
 import typings.openui5.sap.ui.core.message.MessageManager
 import typings.openui5.sap.ui.model.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

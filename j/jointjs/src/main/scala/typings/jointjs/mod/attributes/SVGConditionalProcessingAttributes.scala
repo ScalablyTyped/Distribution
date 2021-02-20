@@ -1,11 +1,12 @@
 package typings.jointjs.mod.attributes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGConditionalProcessingAttributes extends js.Object {
+trait SVGConditionalProcessingAttributes extends StObject {
   
   var requiredExtensions: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object SVGConditionalProcessingAttributes {
   }
   
   @scala.inline
-  implicit class SVGConditionalProcessingAttributesOps[Self <: SVGConditionalProcessingAttributes] (val x: Self) extends AnyVal {
+  implicit class SVGConditionalProcessingAttributesMutableBuilder[Self <: SVGConditionalProcessingAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequiredExtensions(value: Boolean): Self = StObject.set(x, "requiredExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequiredExtensionsUndefined: Self = StObject.set(x, "requiredExtensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequiredFeatures(value: String): Self = StObject.set(x, "requiredFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredExtensions(value: Boolean): Self = this.set("requiredExtensions", value.asInstanceOf[js.Any])
+    def setRequiredFeaturesUndefined: Self = StObject.set(x, "requiredFeatures", js.undefined)
     
     @scala.inline
-    def deleteRequiredExtensions: Self = this.set("requiredExtensions", js.undefined)
+    def setSystemLanguage(value: String): Self = StObject.set(x, "systemLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredFeatures(value: String): Self = this.set("requiredFeatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredFeatures: Self = this.set("requiredFeatures", js.undefined)
-    
-    @scala.inline
-    def setSystemLanguage(value: String): Self = this.set("systemLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemLanguage: Self = this.set("systemLanguage", js.undefined)
+    def setSystemLanguageUndefined: Self = StObject.set(x, "systemLanguage", js.undefined)
   }
 }

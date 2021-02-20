@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.VertexFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcType extends js.Object {
+trait ArcType extends StObject {
   
   var arcType: js.UndefOr[typings.cesium.mod.ArcType] = js.native
   
@@ -34,69 +35,57 @@ object ArcType {
   }
   
   @scala.inline
-  implicit class ArcTypeOps[Self <: ArcType] (val x: Self) extends AnyVal {
+  implicit class ArcTypeMutableBuilder[Self <: ArcType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArcTypeUndefined: Self = StObject.set(x, "arcType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColors(value: js.Array[typings.cesium.mod.Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionsVarargs(value: Cartesian3*): Self = this.set("positions", js.Array(value :_*))
+    def setColorsPerVertex(value: Boolean): Self = StObject.set(x, "colorsPerVertex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositions(value: js.Array[Cartesian3]): Self = this.set("positions", value.asInstanceOf[js.Any])
+    def setColorsPerVertexUndefined: Self = StObject.set(x, "colorsPerVertex", js.undefined)
     
     @scala.inline
-    def setArcType(value: typings.cesium.mod.ArcType): Self = this.set("arcType", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteArcType: Self = this.set("arcType", js.undefined)
+    def setColorsVarargs(value: typings.cesium.mod.Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: typings.cesium.mod.Color*): Self = this.set("colors", js.Array(value :_*))
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[typings.cesium.mod.Color]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorsPerVertex(value: Boolean): Self = this.set("colorsPerVertex", value.asInstanceOf[js.Any])
+    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
     @scala.inline
-    def deleteColorsPerVertex: Self = this.set("colorsPerVertex", js.undefined)
+    def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
     @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGranularity(value: Double): Self = this.set("granularity", value.asInstanceOf[js.Any])
+    def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
     
     @scala.inline
-    def deleteGranularity: Self = this.set("granularity", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertexFormat(value: VertexFormat): Self = this.set("vertexFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertexFormat: Self = this.set("vertexFormat", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

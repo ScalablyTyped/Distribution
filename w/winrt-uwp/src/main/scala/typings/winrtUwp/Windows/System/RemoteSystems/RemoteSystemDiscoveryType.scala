@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.System.RemoteSystems
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RemoteSystemDiscoveryType extends js.Object
+sealed trait RemoteSystemDiscoveryType extends StObject
 /** Contains the values that describe how remote systems are able to be discovered. */
 @JSGlobal("Windows.System.RemoteSystems.RemoteSystemDiscoveryType")
 @js.native
-object RemoteSystemDiscoveryType extends js.Object {
+object RemoteSystemDiscoveryType extends StObject {
   
   /** Remote systems are discoverable both through a proximal connection and through cloud connection. */
   @js.native

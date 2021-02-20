@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Engines/Processors/shaderCodeInliner", JSImport.Namespace)
-@js.native
-object shaderCodeInlinerMod extends js.Object {
+object shaderCodeInlinerMod {
   
+  @JSImport("babylonjs/Engines/Processors/shaderCodeInliner", "ShaderCodeInliner")
   @js.native
-  class ShaderCodeInliner protected () extends js.Object {
+  class ShaderCodeInliner protected () extends StObject {
     /**
       * Initializes the inliner
       * @param sourceCode shader code source to inline
@@ -57,9 +57,10 @@ object shaderCodeInlinerMod extends js.Object {
     def processCode(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object ShaderCodeInliner extends js.Object {
+  object ShaderCodeInliner {
     
+    @JSImport("babylonjs/Engines/Processors/shaderCodeInliner", "ShaderCodeInliner._RegexpFindFunctionNameAndType")
+    @js.native
     val _RegexpFindFunctionNameAndType: js.Any = js.native
   }
 }

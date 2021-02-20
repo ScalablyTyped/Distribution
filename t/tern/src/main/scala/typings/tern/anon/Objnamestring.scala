@@ -4,13 +4,14 @@ import typings.tern.inferMod.ANull
 import typings.tern.inferMod.AVal
 import typings.tern.inferMod.Obj
 import typings.tern.inferMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tern.tern/lib/infer.Obj & {  name :string} */
 @js.native
-trait Objnamestring extends js.Object {
+trait Objnamestring extends StObject {
   
   def addType(args: js.Any*): Unit = js.native
   

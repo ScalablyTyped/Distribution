@@ -1,13 +1,12 @@
 package typings.emberData
 
-import typings.emberData.mod.DS.Transform
+import typings.emberData.mod.default.DateTransform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember-data/transforms/date", JSImport.Namespace)
-@js.native
-object dateMod extends js.Object {
+object dateMod {
   
   /**
     * The `DS.DateTransform` class is used to serialize and deserialize
@@ -16,6 +15,7 @@ object dateMod extends js.Object {
     * [DS.attr](../../data#method_attr) function. It uses the [`ISO 8601`](https://en.wikipedia.org/wiki/ISO_8601)
     * standard.
     */
+  @JSImport("ember-data/transforms/date", JSImport.Default)
   @js.native
-  class default () extends Transform
+  class default () extends DateTransform
 }

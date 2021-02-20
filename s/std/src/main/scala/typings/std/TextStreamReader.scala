@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,39 +71,27 @@ object TextStreamReader {
   }
   
   @scala.inline
-  implicit class TextStreamReaderOps[Self <: TextStreamReader] (val x: Self) extends AnyVal {
+  implicit class TextStreamReaderMutableBuilder[Self <: TextStreamReader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtEndOfLine(value: scala.Boolean): Self = StObject.set(x, "AtEndOfLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtEndOfStream(value: scala.Boolean): Self = StObject.set(x, "AtEndOfStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRead(value: Double => java.lang.String): Self = StObject.set(x, "Read", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAtEndOfLine(value: scala.Boolean): Self = this.set("AtEndOfLine", value.asInstanceOf[js.Any])
+    def setReadAll(value: () => java.lang.String): Self = StObject.set(x, "ReadAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAtEndOfStream(value: scala.Boolean): Self = this.set("AtEndOfStream", value.asInstanceOf[js.Any])
+    def setReadLine(value: () => java.lang.String): Self = StObject.set(x, "ReadLine", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRead(value: Double => java.lang.String): Self = this.set("Read", js.Any.fromFunction1(value))
+    def setSkip(value: Double => Unit): Self = StObject.set(x, "Skip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadAll(value: () => java.lang.String): Self = this.set("ReadAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadLine(value: () => java.lang.String): Self = this.set("ReadLine", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSkip(value: Double => Unit): Self = this.set("Skip", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSkipLine(value: () => Unit): Self = this.set("SkipLine", js.Any.fromFunction0(value))
+    def setSkipLine(value: () => Unit): Self = StObject.set(x, "SkipLine", js.Any.fromFunction0(value))
   }
 }

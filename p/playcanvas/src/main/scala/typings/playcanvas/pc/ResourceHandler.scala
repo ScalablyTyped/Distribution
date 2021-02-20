@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.playcanvas.anon.Load
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for ResourceHandlers used by {@link pc.ResourceLoader}.
   */
 @js.native
-trait ResourceHandler extends js.Object {
+trait ResourceHandler extends StObject {
   
   /**
     * Load a resource from a remote URL. When loaded (or failed),

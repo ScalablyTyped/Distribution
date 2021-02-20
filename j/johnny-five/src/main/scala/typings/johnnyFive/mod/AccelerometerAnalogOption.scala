@@ -1,5 +1,6 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,51 +27,39 @@ object AccelerometerAnalogOption {
   }
   
   @scala.inline
-  implicit class AccelerometerAnalogOptionOps[Self <: AccelerometerAnalogOption] (val x: Self) extends AnyVal {
+  implicit class AccelerometerAnalogOptionMutableBuilder[Self <: AccelerometerAnalogOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAref(value: Double): Self = StObject.set(x, "aref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArefUndefined: Self = StObject.set(x, "aref", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoCalibrate(value: Boolean): Self = StObject.set(x, "autoCalibrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinsVarargs(value: String*): Self = this.set("pins", js.Array(value :_*))
+    def setAutoCalibrateUndefined: Self = StObject.set(x, "autoCalibrate", js.undefined)
     
     @scala.inline
-    def setPins(value: js.Array[String]): Self = this.set("pins", value.asInstanceOf[js.Any])
+    def setPins(value: js.Array[String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAref(value: Double): Self = this.set("aref", value.asInstanceOf[js.Any])
+    def setPinsVarargs(value: String*): Self = StObject.set(x, "pins", js.Array(value :_*))
     
     @scala.inline
-    def deleteAref: Self = this.set("aref", js.undefined)
+    def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCalibrate(value: Boolean): Self = this.set("autoCalibrate", value.asInstanceOf[js.Any])
+    def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
     
     @scala.inline
-    def deleteAutoCalibrate: Self = this.set("autoCalibrate", js.undefined)
+    def setZeroV(value: Double | js.Array[Double]): Self = StObject.set(x, "zeroV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSensitivity(value: Double): Self = this.set("sensitivity", value.asInstanceOf[js.Any])
+    def setZeroVUndefined: Self = StObject.set(x, "zeroV", js.undefined)
     
     @scala.inline
-    def deleteSensitivity: Self = this.set("sensitivity", js.undefined)
-    
-    @scala.inline
-    def setZeroVVarargs(value: Double*): Self = this.set("zeroV", js.Array(value :_*))
-    
-    @scala.inline
-    def setZeroV(value: Double | js.Array[Double]): Self = this.set("zeroV", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZeroV: Self = this.set("zeroV", js.undefined)
+    def setZeroVVarargs(value: Double*): Self = StObject.set(x, "zeroV", js.Array(value :_*))
   }
 }

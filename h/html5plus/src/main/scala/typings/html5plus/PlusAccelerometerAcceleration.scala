@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/accelerometer.html](http://www.html5plus.org/doc/zh_cn/accelerometer.html)
   */
 @js.native
-trait PlusAccelerometerAcceleration extends js.Object {
+trait PlusAccelerometerAcceleration extends StObject {
   
   /**
     * x轴方向的加速度
@@ -46,36 +47,24 @@ object PlusAccelerometerAcceleration {
   }
   
   @scala.inline
-  implicit class PlusAccelerometerAccelerationOps[Self <: PlusAccelerometerAcceleration] (val x: Self) extends AnyVal {
+  implicit class PlusAccelerometerAccelerationMutableBuilder[Self <: PlusAccelerometerAcceleration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxis(value: Double): Self = this.set("xAxis", value.asInstanceOf[js.Any])
+    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     
     @scala.inline
-    def deleteXAxis: Self = this.set("xAxis", js.undefined)
+    def setZAxis(value: Double): Self = StObject.set(x, "zAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYAxis(value: Double): Self = this.set("yAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxis: Self = this.set("yAxis", js.undefined)
-    
-    @scala.inline
-    def setZAxis(value: Double): Self = this.set("zAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZAxis: Self = this.set("zAxis", js.undefined)
+    def setZAxisUndefined: Self = StObject.set(x, "zAxis", js.undefined)
   }
 }

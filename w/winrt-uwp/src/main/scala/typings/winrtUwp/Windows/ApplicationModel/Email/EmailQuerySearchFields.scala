@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailQuerySearchFields extends js.Object
+sealed trait EmailQuerySearchFields extends StObject
 /** Defines the field(s) by which to search a collection of email messages. Use the OR operator to combine these values together into a single bit field. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailQuerySearchFields")
 @js.native
-object EmailQuerySearchFields extends js.Object {
+object EmailQuerySearchFields extends StObject {
   
   /** Search by all searchable fields. */
   @js.native

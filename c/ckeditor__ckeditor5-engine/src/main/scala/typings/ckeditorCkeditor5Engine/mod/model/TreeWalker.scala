@@ -4,6 +4,7 @@ import typings.ckeditorCkeditor5Engine.anon.Boundaries
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.backward
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.forward
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

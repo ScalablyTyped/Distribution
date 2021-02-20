@@ -13,6 +13,7 @@ import typings.angularAnimations.angularAnimationsNumbers.`6`
 import typings.angularAnimations.angularAnimationsNumbers.`7`
 import typings.angularAnimations.angularAnimationsNumbers.`8`
 import typings.angularAnimations.angularAnimationsNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularAnimations.angularAnimationsNumbers.`11`
   - typings.angularAnimations.angularAnimationsNumbers.`12`
 */
-trait AnimationMetadataType extends js.Object
+trait AnimationMetadataType extends StObject
 object AnimationMetadataType {
   
   /**

@@ -4,24 +4,16 @@ import typings.firebaseLogger.loggerMod.LogCallback
 import typings.firebaseLogger.loggerMod.LogLevel
 import typings.firebaseLogger.loggerMod.LogLevelString
 import typings.firebaseLogger.loggerMod.LogOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/logger", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def setLogLevel(level: LogLevel): Unit = js.native
-  def setLogLevel(level: LogLevelString): Unit = js.native
-  
-  def setUserLogHandler(): Unit = js.native
-  def setUserLogHandler(logCallback: Null, options: LogOptions): Unit = js.native
-  def setUserLogHandler(logCallback: LogCallback): Unit = js.native
-  def setUserLogHandler(logCallback: LogCallback, options: LogOptions): Unit = js.native
-  
+  @JSImport("@firebase/logger", "LogLevel")
   @js.native
-  object LogLevel extends js.Object {
+  object LogLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.firebaseLogger.loggerMod.LogLevel with Double] = js.native
@@ -39,6 +31,7 @@ object mod extends js.Object {
     /* 3 */ val WARN: typings.firebaseLogger.loggerMod.LogLevel.WARN with Double = js.native
   }
   
+  @JSImport("@firebase/logger", "Logger")
   @js.native
   class Logger protected ()
     extends typings.firebaseLogger.loggerMod.Logger {
@@ -50,4 +43,24 @@ object mod extends js.Object {
       */
     def this(name: String) = this()
   }
+  
+  @JSImport("@firebase/logger", "setLogLevel")
+  @js.native
+  def setLogLevel(level: LogLevel): Unit = js.native
+  @JSImport("@firebase/logger", "setLogLevel")
+  @js.native
+  def setLogLevel(level: LogLevelString): Unit = js.native
+  
+  @JSImport("@firebase/logger", "setUserLogHandler")
+  @js.native
+  def setUserLogHandler(): Unit = js.native
+  @JSImport("@firebase/logger", "setUserLogHandler")
+  @js.native
+  def setUserLogHandler(logCallback: Null, options: LogOptions): Unit = js.native
+  @JSImport("@firebase/logger", "setUserLogHandler")
+  @js.native
+  def setUserLogHandler(logCallback: LogCallback): Unit = js.native
+  @JSImport("@firebase/logger", "setUserLogHandler")
+  @js.native
+  def setUserLogHandler(logCallback: LogCallback, options: LogOptions): Unit = js.native
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateInvoiceRequest")
 @js.native
-class CreateInvoiceRequest () extends js.Object {
+class CreateInvoiceRequest () extends StObject {
   
   /**
     * A unique string that identifies the `CreateInvoice` request.

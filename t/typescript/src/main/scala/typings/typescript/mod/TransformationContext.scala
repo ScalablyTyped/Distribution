@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,42 +76,30 @@ object TransformationContext {
   }
   
   @scala.inline
-  implicit class TransformationContextOps[Self <: TransformationContext] (val x: Self) extends AnyVal {
+  implicit class TransformationContextMutableBuilder[Self <: TransformationContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableEmitNotification(value: SyntaxKind => Unit): Self = StObject.set(x, "enableEmitNotification", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableSubstitution(value: SyntaxKind => Unit): Self = StObject.set(x, "enableSubstitution", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsEmitNotificationEnabled(value: Node => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnableEmitNotification(value: SyntaxKind => Unit): Self = this.set("enableEmitNotification", js.Any.fromFunction1(value))
+    def setIsSubstitutionEnabled(value: Node => Boolean): Self = StObject.set(x, "isSubstitutionEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnableSubstitution(value: SyntaxKind => Unit): Self = this.set("enableSubstitution", js.Any.fromFunction1(value))
+    def setOnEmitNode(value: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit): Self = StObject.set(x, "onEmitNode", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setIsEmitNotificationEnabled(value: Node => Boolean): Self = this.set("isEmitNotificationEnabled", js.Any.fromFunction1(value))
+    def setOnSubstituteNode(value: (EmitHint, Node) => Node): Self = StObject.set(x, "onSubstituteNode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsSubstitutionEnabled(value: Node => Boolean): Self = this.set("isSubstitutionEnabled", js.Any.fromFunction1(value))
+    def setReadEmitHelpers(value: () => js.UndefOr[js.Array[EmitHelper]]): Self = StObject.set(x, "readEmitHelpers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnEmitNode(value: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit): Self = this.set("onEmitNode", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setOnSubstituteNode(value: (EmitHint, Node) => Node): Self = this.set("onSubstituteNode", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setReadEmitHelpers(value: () => js.UndefOr[js.Array[EmitHelper]]): Self = this.set("readEmitHelpers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRequestEmitHelper(value: EmitHelper => Unit): Self = this.set("requestEmitHelper", js.Any.fromFunction1(value))
+    def setRequestEmitHelper(value: EmitHelper => Unit): Self = StObject.set(x, "requestEmitHelper", js.Any.fromFunction1(value))
   }
 }

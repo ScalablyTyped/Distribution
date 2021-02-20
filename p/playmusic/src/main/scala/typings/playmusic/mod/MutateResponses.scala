@@ -1,11 +1,12 @@
 package typings.playmusic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MutateResponses extends js.Object {
+trait MutateResponses extends StObject {
   
   var mutate_response: js.UndefOr[js.Array[MutateResponse]] = js.native
 }
@@ -18,27 +19,15 @@ object MutateResponses {
   }
   
   @scala.inline
-  implicit class MutateResponsesOps[Self <: MutateResponses] (val x: Self) extends AnyVal {
+  implicit class MutateResponsesMutableBuilder[Self <: MutateResponses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMutate_response(value: js.Array[MutateResponse]): Self = StObject.set(x, "mutate_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMutate_responseUndefined: Self = StObject.set(x, "mutate_response", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMutate_responseVarargs(value: MutateResponse*): Self = this.set("mutate_response", js.Array(value :_*))
-    
-    @scala.inline
-    def setMutate_response(value: js.Array[MutateResponse]): Self = this.set("mutate_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMutate_response: Self = this.set("mutate_response", js.undefined)
+    def setMutate_responseVarargs(value: MutateResponse*): Self = StObject.set(x, "mutate_response", js.Array(value :_*))
   }
 }

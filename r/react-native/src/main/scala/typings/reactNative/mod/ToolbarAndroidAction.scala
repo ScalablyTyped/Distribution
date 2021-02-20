@@ -3,12 +3,13 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.always
 import typings.reactNative.reactNativeStrings.ifRoom
 import typings.reactNative.reactNativeStrings.never
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToolbarAndroidAction extends js.Object {
+trait ToolbarAndroidAction extends StObject {
   
   /**
     * icon: the icon for this action, e.g. require('./some_icon.png')
@@ -39,39 +40,27 @@ object ToolbarAndroidAction {
   }
   
   @scala.inline
-  implicit class ToolbarAndroidActionOps[Self <: ToolbarAndroidAction] (val x: Self) extends AnyVal {
+  implicit class ToolbarAndroidActionMutableBuilder[Self <: ToolbarAndroidAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIcon(value: ImageURISource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShow(value: always | ifRoom | never): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def setIcon(value: ImageURISource): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setShowWithText(value: Boolean): Self = StObject.set(x, "showWithText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setShowWithTextUndefined: Self = StObject.set(x, "showWithText", js.undefined)
     
     @scala.inline
-    def setShow(value: always | ifRoom | never): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setShowWithText(value: Boolean): Self = this.set("showWithText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowWithText: Self = this.set("showWithText", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

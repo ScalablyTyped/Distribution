@@ -2,14 +2,15 @@ package typings.apolloProtobufjs.minimalMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@apollo/protobufjs/minimal", "common")
-@js.native
-object common extends js.Object {
+object common {
   
+  @JSImport("@apollo/protobufjs/minimal", "common")
+  @js.native
   def apply(name: String, json: StringDictionary[js.UndefOr[js.Any]]): Unit = js.native
   
   /**
@@ -27,5 +28,7 @@ object common extends js.Object {
     * @param file Proto file name
     * @returns Root definition or `null` if not defined
     */
+  @JSImport("@apollo/protobufjs/minimal", "common.get")
+  @js.native
   def get(file: String): INamespace | Null = js.native
 }

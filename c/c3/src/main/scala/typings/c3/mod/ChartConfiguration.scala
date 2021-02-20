@@ -15,12 +15,13 @@ import typings.c3.anon.Space
 import typings.c3.anon.Zerobased
 import typings.d3Selection.mod.Selection_
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartConfiguration extends js.Object {
+trait ChartConfiguration extends StObject {
   
   var area: js.UndefOr[Zerobased] = js.native
   
@@ -126,213 +127,201 @@ object ChartConfiguration {
   }
   
   @scala.inline
-  implicit class ChartConfigurationOps[Self <: ChartConfiguration] (val x: Self) extends AnyVal {
+  implicit class ChartConfigurationMutableBuilder[Self <: ChartConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: Zerobased): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxis(value: AxesOptions): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Data): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def setArea(value: Zerobased): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setBar(value: Space): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArea: Self = this.set("area", js.undefined)
+    def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
     @scala.inline
-    def setAxis(value: AxesOptions): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setBindto(value: String | HTMLElement | (Selection_[_, _, _, _])): Self = StObject.set(x, "bindto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setBindtoNull: Self = StObject.set(x, "bindto", null)
     
     @scala.inline
-    def setBar(value: Space): Self = this.set("bar", value.asInstanceOf[js.Any])
+    def setBindtoUndefined: Self = StObject.set(x, "bindto", js.undefined)
     
     @scala.inline
-    def deleteBar: Self = this.set("bar", js.undefined)
+    def setColor(value: Pattern): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindto(value: String | HTMLElement | (Selection_[_, _, _, _])): Self = this.set("bindto", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBindto: Self = this.set("bindto", js.undefined)
+    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindtoNull: Self = this.set("bindto", null)
+    def setDonut(value: Label): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Pattern): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setGauge(value: Arcs): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDonut(value: Label): Self = this.set("donut", value.asInstanceOf[js.Any])
+    def setGaugeUndefined: Self = StObject.set(x, "gauge", js.undefined)
     
     @scala.inline
-    def deleteDonut: Self = this.set("donut", js.undefined)
+    def setGrid(value: GridOptions): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGauge(value: Arcs): Self = this.set("gauge", value.asInstanceOf[js.Any])
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def deleteGauge: Self = this.set("gauge", js.undefined)
+    def setInteraction(value: Brighten): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: GridOptions): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setLegend(value: LegendOptions): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteraction(value: Brighten): Self = this.set("interaction", value.asInstanceOf[js.Any])
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteInteraction: Self = this.set("interaction", js.undefined)
+    def setLine(value: LineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegend(value: LegendOptions): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setOninit(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = StObject.set(x, "oninit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: LineOptions): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setOninitUndefined: Self = StObject.set(x, "oninit", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setOnmouseout(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOninit(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("oninit", value.asInstanceOf[js.Any])
+    def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
     
     @scala.inline
-    def deleteOninit: Self = this.set("oninit", js.undefined)
+    def setOnmouseover(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnmouseout(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("onmouseout", value.asInstanceOf[js.Any])
+    def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
     
     @scala.inline
-    def deleteOnmouseout: Self = this.set("onmouseout", js.undefined)
+    def setOnrendered(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = StObject.set(x, "onrendered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnmouseover(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("onmouseover", value.asInstanceOf[js.Any])
+    def setOnrenderedUndefined: Self = StObject.set(x, "onrendered", js.undefined)
     
     @scala.inline
-    def deleteOnmouseover: Self = this.set("onmouseover", js.undefined)
+    def setOnresize(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = StObject.set(x, "onresize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnrendered(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("onrendered", value.asInstanceOf[js.Any])
+    def setOnresizeUndefined: Self = StObject.set(x, "onresize", js.undefined)
     
     @scala.inline
-    def deleteOnrendered: Self = this.set("onrendered", js.undefined)
+    def setOnresized(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = StObject.set(x, "onresized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnresize(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("onresize", value.asInstanceOf[js.Any])
+    def setOnresizedUndefined: Self = StObject.set(x, "onresized", js.undefined)
     
     @scala.inline
-    def deleteOnresize: Self = this.set("onresize", js.undefined)
+    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnresized(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("onresized", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteOnresized: Self = this.set("onresized", js.undefined)
+    def setPie(value: Expand): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Padding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPieUndefined: Self = StObject.set(x, "pie", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPoint(value: PointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPie(value: Expand): Self = this.set("pie", value.asInstanceOf[js.Any])
+    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
     @scala.inline
-    def deletePie: Self = this.set("pie", js.undefined)
+    def setRegions(value: js.Array[RegionOptions]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: PointOptions): Self = this.set("point", value.asInstanceOf[js.Any])
+    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
     @scala.inline
-    def deletePoint: Self = this.set("point", js.undefined)
+    def setRegionsVarargs(value: RegionOptions*): Self = StObject.set(x, "regions", js.Array(value :_*))
     
     @scala.inline
-    def setRegionsVarargs(value: RegionOptions*): Self = this.set("regions", js.Array(value :_*))
+    def setResize(value: Auto): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegions(value: js.Array[RegionOptions]): Self = this.set("regions", value.asInstanceOf[js.Any])
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def deleteRegions: Self = this.set("regions", js.undefined)
+    def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResize(value: Auto): Self = this.set("resize", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setSpline(value: Interpolation): Self = StObject.set(x, "spline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Height): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSplineUndefined: Self = StObject.set(x, "spline", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setStanford(value: Colors): Self = StObject.set(x, "stanford", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpline(value: Interpolation): Self = this.set("spline", value.asInstanceOf[js.Any])
+    def setStanfordUndefined: Self = StObject.set(x, "stanford", js.undefined)
     
     @scala.inline
-    def deleteSpline: Self = this.set("spline", js.undefined)
+    def setSubchart(value: SubchartOptions): Self = StObject.set(x, "subchart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStanford(value: Colors): Self = this.set("stanford", value.asInstanceOf[js.Any])
+    def setSubchartUndefined: Self = StObject.set(x, "subchart", js.undefined)
     
     @scala.inline
-    def deleteStanford: Self = this.set("stanford", js.undefined)
+    def setSvg(value: Classname): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubchart(value: SubchartOptions): Self = this.set("subchart", value.asInstanceOf[js.Any])
+    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
     
     @scala.inline
-    def deleteSubchart: Self = this.set("subchart", js.undefined)
+    def setTitle(value: typings.c3.anon.Padding): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvg(value: Classname): Self = this.set("svg", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSvg: Self = this.set("svg", js.undefined)
+    def setTooltip(value: TooltipOptions): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: typings.c3.anon.Padding): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTransition(value: Duration): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: TooltipOptions): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setZoom(value: ZoomOptions): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: Duration): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: ZoomOptions): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

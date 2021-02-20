@@ -5,12 +5,13 @@ import typings.nodeForge.nodeForgeStrings.`3des`
 import typings.nodeForge.nodeForgeStrings.aes128
 import typings.nodeForge.nodeForgeStrings.aes192
 import typings.nodeForge.nodeForgeStrings.aes256
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Algorithm extends js.Object {
+trait Algorithm extends StObject {
   
   var algorithm: js.UndefOr[aes128 | aes192 | aes256 | `3des`] = js.native
   
@@ -35,60 +36,48 @@ object Algorithm {
   }
   
   @scala.inline
-  implicit class AlgorithmOps[Self <: Algorithm] (val x: Self) extends AnyVal {
+  implicit class AlgorithmMutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: aes128 | aes192 | aes256 | `3des`): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: aes128 | aes192 | aes256 | `3des`): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setGenerateLocalKeyId(value: Boolean): Self = StObject.set(x, "generateLocalKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setGenerateLocalKeyIdUndefined: Self = StObject.set(x, "generateLocalKeyId", js.undefined)
     
     @scala.inline
-    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
+    def setLocalKeyId(value: Hex): Self = StObject.set(x, "localKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateLocalKeyId(value: Boolean): Self = this.set("generateLocalKeyId", value.asInstanceOf[js.Any])
+    def setLocalKeyIdUndefined: Self = StObject.set(x, "localKeyId", js.undefined)
     
     @scala.inline
-    def deleteGenerateLocalKeyId: Self = this.set("generateLocalKeyId", js.undefined)
+    def setSaltSize(value: Double): Self = StObject.set(x, "saltSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalKeyId(value: Hex): Self = this.set("localKeyId", value.asInstanceOf[js.Any])
+    def setSaltSizeUndefined: Self = StObject.set(x, "saltSize", js.undefined)
     
     @scala.inline
-    def deleteLocalKeyId: Self = this.set("localKeyId", js.undefined)
+    def setUseMac(value: Boolean): Self = StObject.set(x, "useMac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaltSize(value: Double): Self = this.set("saltSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaltSize: Self = this.set("saltSize", js.undefined)
-    
-    @scala.inline
-    def setUseMac(value: Boolean): Self = this.set("useMac", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseMac: Self = this.set("useMac", js.undefined)
+    def setUseMacUndefined: Self = StObject.set(x, "useMac", js.undefined)
   }
 }

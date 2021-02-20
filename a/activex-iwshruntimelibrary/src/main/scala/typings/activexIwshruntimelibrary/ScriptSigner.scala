@@ -1,15 +1,14 @@
 package typings.activexIwshruntimelibrary
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ScriptSigner")
-@js.native
-object ScriptSigner extends js.Object {
+object ScriptSigner {
   
   @js.native
-  trait Signer extends js.Object {
+  trait Signer extends StObject {
     
     @JSName("ScriptSigner.Signer_typekey")
     var ScriptSignerDotSigner_typekey: Signer = js.native

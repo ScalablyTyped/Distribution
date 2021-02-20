@@ -1,12 +1,13 @@
 package typings.readableStream.mod
 
 import typings.node.BufferEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WritableStateOptions extends js.Object {
+trait WritableStateOptions extends StObject {
   
   var decodeStrings: js.UndefOr[Boolean] = js.native
   
@@ -29,54 +30,42 @@ object WritableStateOptions {
   }
   
   @scala.inline
-  implicit class WritableStateOptionsOps[Self <: WritableStateOptions] (val x: Self) extends AnyVal {
+  implicit class WritableStateOptionsMutableBuilder[Self <: WritableStateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecodeStrings(value: Boolean): Self = this.set("decodeStrings", value.asInstanceOf[js.Any])
+    def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
     
     @scala.inline
-    def deleteDecodeStrings: Self = this.set("decodeStrings", js.undefined)
+    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEncoding(value: BufferEncoding): Self = this.set("defaultEncoding", value.asInstanceOf[js.Any])
+    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
     @scala.inline
-    def deleteDefaultEncoding: Self = this.set("defaultEncoding", js.undefined)
+    def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighWaterMark(value: Double): Self = this.set("highWaterMark", value.asInstanceOf[js.Any])
+    def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     
     @scala.inline
-    def deleteHighWaterMark: Self = this.set("highWaterMark", js.undefined)
+    def setWritableHighWaterMark(value: Double): Self = StObject.set(x, "writableHighWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectMode(value: Boolean): Self = this.set("objectMode", value.asInstanceOf[js.Any])
+    def setWritableHighWaterMarkUndefined: Self = StObject.set(x, "writableHighWaterMark", js.undefined)
     
     @scala.inline
-    def deleteObjectMode: Self = this.set("objectMode", js.undefined)
+    def setWritableObjectMode(value: Boolean): Self = StObject.set(x, "writableObjectMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWritableHighWaterMark(value: Double): Self = this.set("writableHighWaterMark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWritableHighWaterMark: Self = this.set("writableHighWaterMark", js.undefined)
-    
-    @scala.inline
-    def setWritableObjectMode(value: Boolean): Self = this.set("writableObjectMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWritableObjectMode: Self = this.set("writableObjectMode", js.undefined)
+    def setWritableObjectModeUndefined: Self = StObject.set(x, "writableObjectMode", js.undefined)
   }
 }

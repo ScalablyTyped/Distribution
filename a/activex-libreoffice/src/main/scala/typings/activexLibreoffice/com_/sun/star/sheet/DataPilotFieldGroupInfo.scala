@@ -1,13 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains the grouping information of a {@link DataPilotField} . */
 @js.native
-trait DataPilotFieldGroupInfo extends js.Object {
+trait DataPilotFieldGroupInfo extends StObject {
   
   /** specifies the end value for the grouping if {@link HasAutoEnd} is set to `FALSE` . */
   var End: Double = js.native
@@ -91,45 +92,33 @@ object DataPilotFieldGroupInfo {
   }
   
   @scala.inline
-  implicit class DataPilotFieldGroupInfoOps[Self <: DataPilotFieldGroupInfo] (val x: Self) extends AnyVal {
+  implicit class DataPilotFieldGroupInfoMutableBuilder[Self <: DataPilotFieldGroupInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Double): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupBy(value: Double): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroups(value: XNameAccess): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("End", value.asInstanceOf[js.Any])
+    def setHasAutoEnd(value: Boolean): Self = StObject.set(x, "HasAutoEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBy(value: Double): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    def setHasAutoStart(value: Boolean): Self = StObject.set(x, "HasAutoStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: XNameAccess): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    def setHasDateValues(value: Boolean): Self = StObject.set(x, "HasDateValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAutoEnd(value: Boolean): Self = this.set("HasAutoEnd", value.asInstanceOf[js.Any])
+    def setSourceField(value: XDataPilotField): Self = StObject.set(x, "SourceField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAutoStart(value: Boolean): Self = this.set("HasAutoStart", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasDateValues(value: Boolean): Self = this.set("HasDateValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceField(value: XDataPilotField): Self = this.set("SourceField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("Start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStep(value: Double): Self = this.set("Step", value.asInstanceOf[js.Any])
+    def setStep(value: Double): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,60 +65,48 @@ object ParamsResourceCompaniesJobsList {
   }
   
   @scala.inline
-  implicit class ParamsResourceCompaniesJobsListOps[Self <: ParamsResourceCompaniesJobsList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceCompaniesJobsListMutableBuilder[Self <: ParamsResourceCompaniesJobsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setIdsOnly(value: Boolean): Self = StObject.set(x, "idsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setIdsOnlyUndefined: Self = StObject.set(x, "idsOnly", js.undefined)
     
     @scala.inline
-    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    def setIncludeJobsCount(value: Boolean): Self = StObject.set(x, "includeJobsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdsOnly(value: Boolean): Self = this.set("idsOnly", value.asInstanceOf[js.Any])
+    def setIncludeJobsCountUndefined: Self = StObject.set(x, "includeJobsCount", js.undefined)
     
     @scala.inline
-    def deleteIdsOnly: Self = this.set("idsOnly", js.undefined)
+    def setJobRequisitionId(value: String): Self = StObject.set(x, "jobRequisitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeJobsCount(value: Boolean): Self = this.set("includeJobsCount", value.asInstanceOf[js.Any])
+    def setJobRequisitionIdUndefined: Self = StObject.set(x, "jobRequisitionId", js.undefined)
     
     @scala.inline
-    def deleteIncludeJobsCount: Self = this.set("includeJobsCount", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobRequisitionId(value: String): Self = this.set("jobRequisitionId", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteJobRequisitionId: Self = this.set("jobRequisitionId", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
-    
-    @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

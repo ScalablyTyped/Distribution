@@ -1,12 +1,15 @@
 package typings.jsFixtures
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var fixtures: Fixtures = js.native
+  @JSGlobal("fixtures")
+  @js.native
+  def fixtures: Fixtures = js.native
+  @scala.inline
+  def fixtures_=(x: Fixtures): Unit = js.Dynamic.global.updateDynamic("fixtures")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchDevicesResponse extends js.Object {
+trait SearchDevicesResponse extends StObject {
   
   /**
     * The devices that meet the specified set of filter criteria, in sort order.
@@ -31,39 +32,27 @@ object SearchDevicesResponse {
   }
   
   @scala.inline
-  implicit class SearchDevicesResponseOps[Self <: SearchDevicesResponse] (val x: Self) extends AnyVal {
+  implicit class SearchDevicesResponseMutableBuilder[Self <: SearchDevicesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevices(value: DeviceDataList): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevicesVarargs(value: DeviceData*): Self = StObject.set(x, "Devices", js.Array(value :_*))
     
     @scala.inline
-    def setDevicesVarargs(value: DeviceData*): Self = this.set("Devices", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevices(value: DeviceDataList): Self = this.set("Devices", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteDevices: Self = this.set("Devices", js.undefined)
+    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatTransportInterpretedErrorCode extends js.Object
+sealed trait ChatTransportInterpretedErrorCode extends StObject
 /** Specifies an interpretation for the error code. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode")
 @js.native
-object ChatTransportInterpretedErrorCode extends js.Object {
+object ChatTransportInterpretedErrorCode extends StObject {
   
   /** An invalid recipient address */
   @js.native

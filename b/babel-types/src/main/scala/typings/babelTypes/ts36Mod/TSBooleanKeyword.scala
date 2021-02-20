@@ -1,5 +1,6 @@
 package typings.babelTypes.ts36Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,16 @@ trait TSBooleanKeyword
   @JSName("type")
   var type_TSBooleanKeyword: typings.babelTypes.babelTypesStrings.TSBooleanKeyword = js.native
 }
-@JSImport("babel-types/ts3.6", "TSBooleanKeyword")
-@js.native
-object TSBooleanKeyword extends js.Object {
+object TSBooleanKeyword {
   
+  @JSImport("babel-types/ts3.6", "TSBooleanKeyword")
+  @js.native
   def apply(): TSBooleanKeyword = js.native
+  
+  @scala.inline
+  implicit class TSBooleanKeywordMutableBuilder[Self <: TSBooleanKeyword] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setType(value: typings.babelTypes.babelTypesStrings.TSBooleanKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }

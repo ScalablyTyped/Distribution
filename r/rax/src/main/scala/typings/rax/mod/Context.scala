@@ -1,11 +1,12 @@
 package typings.rax.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context[T] extends js.Object {
+trait Context[T] extends StObject {
   
   /**
     * **NOTE**: Exotic components are not callable.

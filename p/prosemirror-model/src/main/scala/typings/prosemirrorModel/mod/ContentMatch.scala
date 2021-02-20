@@ -1,13 +1,14 @@
 package typings.prosemirrorModel.mod
 
 import typings.prosemirrorModel.anon.Next
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "ContentMatch")
 @js.native
-class ContentMatch[S /* <: Schema[_, _] */] () extends js.Object {
+class ContentMatch[S /* <: Schema[_, _] */] () extends StObject {
   
   /**
     * Get the first matching node type at this match position that can

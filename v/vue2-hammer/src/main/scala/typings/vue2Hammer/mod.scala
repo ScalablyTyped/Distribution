@@ -1,14 +1,12 @@
 package typings.vue2Hammer
 
-import org.scalablytyped.runtime.TopLevel
 import typings.vue.pluginMod.PluginObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue2-hammer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   @js.native
   trait VueHammer
@@ -16,6 +14,7 @@ object mod extends js.Object {
     
     var config: js.Any = js.native
   }
+  @JSImport("vue2-hammer", "VueHammer")
   @js.native
-  object VueHammer extends TopLevel[VueHammer]
+  val VueHammer: typings.vue2Hammer.mod.VueHammer = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRedshiftClusterClusterSnapshotCopyStatus extends js.Object {
+trait AwsRedshiftClusterClusterSnapshotCopyStatus extends StObject {
   
   /**
     * The destination Region that snapshots are automatically copied to when cross-Region snapshot copy is enabled.
@@ -36,42 +37,30 @@ object AwsRedshiftClusterClusterSnapshotCopyStatus {
   }
   
   @scala.inline
-  implicit class AwsRedshiftClusterClusterSnapshotCopyStatusOps[Self <: AwsRedshiftClusterClusterSnapshotCopyStatus] (val x: Self) extends AnyVal {
+  implicit class AwsRedshiftClusterClusterSnapshotCopyStatusMutableBuilder[Self <: AwsRedshiftClusterClusterSnapshotCopyStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationRegion(value: NonEmptyString): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationRegionUndefined: Self = StObject.set(x, "DestinationRegion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManualSnapshotRetentionPeriod(value: Integer): Self = StObject.set(x, "ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationRegion(value: NonEmptyString): Self = this.set("DestinationRegion", value.asInstanceOf[js.Any])
+    def setManualSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "ManualSnapshotRetentionPeriod", js.undefined)
     
     @scala.inline
-    def deleteDestinationRegion: Self = this.set("DestinationRegion", js.undefined)
+    def setRetentionPeriod(value: Integer): Self = StObject.set(x, "RetentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualSnapshotRetentionPeriod(value: Integer): Self = this.set("ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    def setRetentionPeriodUndefined: Self = StObject.set(x, "RetentionPeriod", js.undefined)
     
     @scala.inline
-    def deleteManualSnapshotRetentionPeriod: Self = this.set("ManualSnapshotRetentionPeriod", js.undefined)
+    def setSnapshotCopyGrantName(value: NonEmptyString): Self = StObject.set(x, "SnapshotCopyGrantName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetentionPeriod(value: Integer): Self = this.set("RetentionPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetentionPeriod: Self = this.set("RetentionPeriod", js.undefined)
-    
-    @scala.inline
-    def setSnapshotCopyGrantName(value: NonEmptyString): Self = this.set("SnapshotCopyGrantName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotCopyGrantName: Self = this.set("SnapshotCopyGrantName", js.undefined)
+    def setSnapshotCopyGrantNameUndefined: Self = StObject.set(x, "SnapshotCopyGrantName", js.undefined)
   }
 }

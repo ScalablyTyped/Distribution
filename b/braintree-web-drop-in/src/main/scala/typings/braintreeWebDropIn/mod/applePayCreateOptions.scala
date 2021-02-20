@@ -4,12 +4,13 @@ import typings.braintreeWeb.applePayMod.ApplePayPaymentRequest
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.`white-outline`
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.black
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.white
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait applePayCreateOptions extends js.Object {
+trait applePayCreateOptions extends StObject {
   
   var applePaySessionVersion: js.UndefOr[Double] = js.native
   
@@ -28,36 +29,24 @@ object applePayCreateOptions {
   }
   
   @scala.inline
-  implicit class applePayCreateOptionsOps[Self <: applePayCreateOptions] (val x: Self) extends AnyVal {
+  implicit class applePayCreateOptionsMutableBuilder[Self <: applePayCreateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplePaySessionVersion(value: Double): Self = StObject.set(x, "applePaySessionVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplePaySessionVersionUndefined: Self = StObject.set(x, "applePaySessionVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonStyle(value: black | white | `white-outline`): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
     
     @scala.inline
-    def setPaymentRequest(value: ApplePayPaymentRequest): Self = this.set("paymentRequest", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplePaySessionVersion(value: Double): Self = this.set("applePaySessionVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplePaySessionVersion: Self = this.set("applePaySessionVersion", js.undefined)
-    
-    @scala.inline
-    def setButtonStyle(value: black | white | `white-outline`): Self = this.set("buttonStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteButtonStyle: Self = this.set("buttonStyle", js.undefined)
+    def setPaymentRequest(value: ApplePayPaymentRequest): Self = StObject.set(x, "paymentRequest", value.asInstanceOf[js.Any])
   }
 }

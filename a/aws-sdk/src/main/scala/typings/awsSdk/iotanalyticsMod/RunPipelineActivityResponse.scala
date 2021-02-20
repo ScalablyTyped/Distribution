@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunPipelineActivityResponse extends js.Object {
+trait RunPipelineActivityResponse extends StObject {
   
   /**
     * In case the pipeline activity fails, the log message that is generated.
@@ -26,33 +27,21 @@ object RunPipelineActivityResponse {
   }
   
   @scala.inline
-  implicit class RunPipelineActivityResponseOps[Self <: RunPipelineActivityResponse] (val x: Self) extends AnyVal {
+  implicit class RunPipelineActivityResponseMutableBuilder[Self <: RunPipelineActivityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogResult(value: LogResult): Self = StObject.set(x, "logResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogResultUndefined: Self = StObject.set(x, "logResult", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayloads(value: MessagePayloads): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogResult(value: LogResult): Self = this.set("logResult", value.asInstanceOf[js.Any])
+    def setPayloadsUndefined: Self = StObject.set(x, "payloads", js.undefined)
     
     @scala.inline
-    def deleteLogResult: Self = this.set("logResult", js.undefined)
-    
-    @scala.inline
-    def setPayloadsVarargs(value: MessagePayload*): Self = this.set("payloads", js.Array(value :_*))
-    
-    @scala.inline
-    def setPayloads(value: MessagePayloads): Self = this.set("payloads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayloads: Self = this.set("payloads", js.undefined)
+    def setPayloadsVarargs(value: MessagePayload*): Self = StObject.set(x, "payloads", js.Array(value :_*))
   }
 }

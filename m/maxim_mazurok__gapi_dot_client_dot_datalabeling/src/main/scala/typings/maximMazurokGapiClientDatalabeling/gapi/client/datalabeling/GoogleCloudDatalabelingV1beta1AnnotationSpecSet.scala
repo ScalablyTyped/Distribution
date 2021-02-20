@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1AnnotationSpecSet extends js.Object {
+trait GoogleCloudDatalabelingV1beta1AnnotationSpecSet extends StObject {
   
   /** Required. The array of AnnotationSpecs that you define when you create the AnnotationSpecSet. These are the possible labels for the labeling task. */
   var annotationSpecs: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpec]] = js.native
@@ -31,54 +32,42 @@ object GoogleCloudDatalabelingV1beta1AnnotationSpecSet {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1AnnotationSpecSetOps[Self <: GoogleCloudDatalabelingV1beta1AnnotationSpecSet] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1AnnotationSpecSetMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1AnnotationSpecSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationSpecs(value: js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpec]): Self = StObject.set(x, "annotationSpecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationSpecsUndefined: Self = StObject.set(x, "annotationSpecs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationSpecsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpec*): Self = StObject.set(x, "annotationSpecs", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotationSpecsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpec*): Self = this.set("annotationSpecs", js.Array(value :_*))
+    def setBlockingResources(value: js.Array[String]): Self = StObject.set(x, "blockingResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationSpecs(value: js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpec]): Self = this.set("annotationSpecs", value.asInstanceOf[js.Any])
+    def setBlockingResourcesUndefined: Self = StObject.set(x, "blockingResources", js.undefined)
     
     @scala.inline
-    def deleteAnnotationSpecs: Self = this.set("annotationSpecs", js.undefined)
+    def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value :_*))
     
     @scala.inline
-    def setBlockingResourcesVarargs(value: String*): Self = this.set("blockingResources", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockingResources(value: js.Array[String]): Self = this.set("blockingResources", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBlockingResources: Self = this.set("blockingResources", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

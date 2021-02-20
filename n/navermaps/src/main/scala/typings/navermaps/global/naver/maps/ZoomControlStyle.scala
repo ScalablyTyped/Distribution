@@ -1,12 +1,13 @@
 package typings.navermaps.global.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("naver.maps.ZoomControlStyle")
 @js.native
-object ZoomControlStyle extends js.Object {
+object ZoomControlStyle extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.ZoomControlStyle with Double] = js.native

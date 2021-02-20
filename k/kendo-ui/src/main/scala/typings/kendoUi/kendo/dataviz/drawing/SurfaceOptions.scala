@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SurfaceOptions extends js.Object {
+trait SurfaceOptions extends StObject {
   
   var click: js.UndefOr[js.Function1[/* e */ SurfaceClickEvent, Unit]] = js.native
   
@@ -36,78 +37,66 @@ object SurfaceOptions {
   }
   
   @scala.inline
-  implicit class SurfaceOptionsOps[Self <: SurfaceOptions] (val x: Self) extends AnyVal {
+  implicit class SurfaceOptionsMutableBuilder[Self <: SurfaceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: /* e */ SurfaceClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: /* e */ SurfaceClickEvent => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setMouseenter(value: /* e */ SurfaceMouseenterEvent => Unit): Self = StObject.set(x, "mouseenter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMouseenterUndefined: Self = StObject.set(x, "mouseenter", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMouseleave(value: /* e */ SurfaceMouseleaveEvent => Unit): Self = StObject.set(x, "mouseleave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseenter(value: /* e */ SurfaceMouseenterEvent => Unit): Self = this.set("mouseenter", js.Any.fromFunction1(value))
+    def setMouseleaveUndefined: Self = StObject.set(x, "mouseleave", js.undefined)
     
     @scala.inline
-    def deleteMouseenter: Self = this.set("mouseenter", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseleave(value: /* e */ SurfaceMouseleaveEvent => Unit): Self = this.set("mouseleave", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMouseleave: Self = this.set("mouseleave", js.undefined)
+    def setTooltip(value: SurfaceTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTooltipClose(value: /* e */ SurfaceTooltipCloseEvent => Unit): Self = StObject.set(x, "tooltipClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTooltipCloseUndefined: Self = StObject.set(x, "tooltipClose", js.undefined)
     
     @scala.inline
-    def setTooltip(value: SurfaceTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTooltipOpen(value: /* e */ SurfaceTooltipOpenEvent => Unit): Self = StObject.set(x, "tooltipOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipOpenUndefined: Self = StObject.set(x, "tooltipOpen", js.undefined)
     
     @scala.inline
-    def setTooltipClose(value: /* e */ SurfaceTooltipCloseEvent => Unit): Self = this.set("tooltipClose", js.Any.fromFunction1(value))
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteTooltipClose: Self = this.set("tooltipClose", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipOpen(value: /* e */ SurfaceTooltipOpenEvent => Unit): Self = this.set("tooltipOpen", js.Any.fromFunction1(value))
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTooltipOpen: Self = this.set("tooltipOpen", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

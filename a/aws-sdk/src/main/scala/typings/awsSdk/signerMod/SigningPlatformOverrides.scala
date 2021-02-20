@@ -1,11 +1,12 @@
 package typings.awsSdk.signerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SigningPlatformOverrides extends js.Object {
+trait SigningPlatformOverrides extends StObject {
   
   /**
     * A signing configuration that overrides the default encryption or hash algorithm of a signing job.
@@ -26,30 +27,18 @@ object SigningPlatformOverrides {
   }
   
   @scala.inline
-  implicit class SigningPlatformOverridesOps[Self <: SigningPlatformOverrides] (val x: Self) extends AnyVal {
+  implicit class SigningPlatformOverridesMutableBuilder[Self <: SigningPlatformOverrides] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSigningConfiguration(value: SigningConfigurationOverrides): Self = StObject.set(x, "signingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSigningConfigurationUndefined: Self = StObject.set(x, "signingConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSigningImageFormat(value: ImageFormat): Self = StObject.set(x, "signingImageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningConfiguration(value: SigningConfigurationOverrides): Self = this.set("signingConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigningConfiguration: Self = this.set("signingConfiguration", js.undefined)
-    
-    @scala.inline
-    def setSigningImageFormat(value: ImageFormat): Self = this.set("signingImageFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigningImageFormat: Self = this.set("signingImageFormat", js.undefined)
+    def setSigningImageFormatUndefined: Self = StObject.set(x, "signingImageFormat", js.undefined)
   }
 }

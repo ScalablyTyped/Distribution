@@ -7,12 +7,13 @@ import typings.reactCalendarTimeline.reactCalendarTimelineStrings.both
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.left
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.right
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineItemBase[DateType] extends js.Object {
+trait TimelineItemBase[DateType] extends StObject {
   
   var canChangeGroup: js.UndefOr[Boolean] = js.native
   
@@ -45,72 +46,60 @@ object TimelineItemBase {
   }
   
   @scala.inline
-  implicit class TimelineItemBaseOps[Self <: TimelineItemBase[_], DateType] (val x: Self with TimelineItemBase[DateType]) extends AnyVal {
+  implicit class TimelineItemBaseMutableBuilder[Self <: TimelineItemBase[_], DateType] (val x: Self with TimelineItemBase[DateType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanChangeGroup(value: Boolean): Self = StObject.set(x, "canChangeGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanChangeGroupUndefined: Self = StObject.set(x, "canChangeGroup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanMove(value: Boolean): Self = StObject.set(x, "canMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_time(value: DateType): Self = this.set("end_time", value.asInstanceOf[js.Any])
+    def setCanMoveUndefined: Self = StObject.set(x, "canMove", js.undefined)
     
     @scala.inline
-    def setGroup(value: Id): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setCanResize(value: Boolean | left | right | both): Self = StObject.set(x, "canResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setCanResizeUndefined: Self = StObject.set(x, "canResize", js.undefined)
     
     @scala.inline
-    def setStart_time(value: DateType): Self = this.set("start_time", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanChangeGroup(value: Boolean): Self = this.set("canChangeGroup", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteCanChangeGroup: Self = this.set("canChangeGroup", js.undefined)
+    def setEnd_time(value: DateType): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanMove(value: Boolean): Self = this.set("canMove", value.asInstanceOf[js.Any])
+    def setGroup(value: Id): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanMove: Self = this.set("canMove", js.undefined)
+    def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanResize(value: Boolean | left | right | both): Self = this.set("canResize", value.asInstanceOf[js.Any])
+    def setItemProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "itemProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanResize: Self = this.set("canResize", js.undefined)
+    def setItemPropsUndefined: Self = StObject.set(x, "itemProps", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setStart_time(value: DateType): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemProps(value: HTMLAttributes[HTMLDivElement]): Self = this.set("itemProps", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteItemProps: Self = this.set("itemProps", js.undefined)
+    def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

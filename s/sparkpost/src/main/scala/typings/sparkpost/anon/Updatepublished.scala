@@ -1,11 +1,12 @@
 package typings.sparkpost.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Updatepublished extends js.Object {
+trait Updatepublished extends StObject {
   
   var update_published: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object Updatepublished {
   }
   
   @scala.inline
-  implicit class UpdatepublishedOps[Self <: Updatepublished] (val x: Self) extends AnyVal {
+  implicit class UpdatepublishedMutableBuilder[Self <: Updatepublished] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpdate_published(value: Boolean): Self = StObject.set(x, "update_published", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUpdate_published(value: Boolean): Self = this.set("update_published", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate_published: Self = this.set("update_published", js.undefined)
+    def setUpdate_publishedUndefined: Self = StObject.set(x, "update_published", js.undefined)
   }
 }

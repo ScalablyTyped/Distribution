@@ -1,5 +1,6 @@
 package typings.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the result of authorizing a payment request and contains encrypted payment information.
   */
 @js.native
-trait ApplePayPayment extends js.Object {
+trait ApplePayPayment extends StObject {
   
   /**
     * The billing contact selected by the user for this transaction.
@@ -34,33 +35,21 @@ object ApplePayPayment {
   }
   
   @scala.inline
-  implicit class ApplePayPaymentOps[Self <: ApplePayPayment] (val x: Self) extends AnyVal {
+  implicit class ApplePayPaymentMutableBuilder[Self <: ApplePayPayment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "billingContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingContactUndefined: Self = StObject.set(x, "billingContact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShippingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "shippingContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: ApplePayPaymentToken): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setShippingContactUndefined: Self = StObject.set(x, "shippingContact", js.undefined)
     
     @scala.inline
-    def setBillingContact(value: ApplePayPaymentContact): Self = this.set("billingContact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingContact: Self = this.set("billingContact", js.undefined)
-    
-    @scala.inline
-    def setShippingContact(value: ApplePayPaymentContact): Self = this.set("shippingContact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingContact: Self = this.set("shippingContact", js.undefined)
+    def setToken(value: ApplePayPaymentToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

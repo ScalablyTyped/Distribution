@@ -1,11 +1,12 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GETime extends js.Object {
+trait GETime extends StObject {
   
   /**
     * Returns the GETimeControl object; this is the time slider.
@@ -67,42 +68,30 @@ object GETime {
   }
   
   @scala.inline
-  implicit class GETimeOps[Self <: GETime] (val x: Self) extends AnyVal {
+  implicit class GETimeMutableBuilder[Self <: GETime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetControl(value: () => GETimeControl): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHistoricalImageryEnabled(value: () => Boolean): Self = StObject.set(x, "getHistoricalImageryEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRate(value: () => Double): Self = StObject.set(x, "getRate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetControl(value: () => GETimeControl): Self = this.set("getControl", js.Any.fromFunction0(value))
+    def setGetSystemTime(value: () => KmlTimeStamp): Self = StObject.set(x, "getSystemTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHistoricalImageryEnabled(value: () => Boolean): Self = this.set("getHistoricalImageryEnabled", js.Any.fromFunction0(value))
+    def setGetTimePrimitive(value: () => KmlTimePrimitive): Self = StObject.set(x, "getTimePrimitive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRate(value: () => Double): Self = this.set("getRate", js.Any.fromFunction0(value))
+    def setSetHistoricalImageryEnabled(value: Boolean => Unit): Self = StObject.set(x, "setHistoricalImageryEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSystemTime(value: () => KmlTimeStamp): Self = this.set("getSystemTime", js.Any.fromFunction0(value))
+    def setSetRate(value: Double => Unit): Self = StObject.set(x, "setRate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTimePrimitive(value: () => KmlTimePrimitive): Self = this.set("getTimePrimitive", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetHistoricalImageryEnabled(value: Boolean => Unit): Self = this.set("setHistoricalImageryEnabled", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRate(value: Double => Unit): Self = this.set("setRate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTimePrimitive(value: KmlTimePrimitive => Unit): Self = this.set("setTimePrimitive", js.Any.fromFunction1(value))
+    def setSetTimePrimitive(value: KmlTimePrimitive => Unit): Self = StObject.set(x, "setTimePrimitive", js.Any.fromFunction1(value))
   }
 }

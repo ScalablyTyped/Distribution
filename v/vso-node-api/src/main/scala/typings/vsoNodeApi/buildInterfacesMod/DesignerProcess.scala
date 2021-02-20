@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +20,12 @@ object DesignerProcess {
   }
   
   @scala.inline
-  implicit class DesignerProcessOps[Self <: DesignerProcess] (val x: Self) extends AnyVal {
+  implicit class DesignerProcessMutableBuilder[Self <: DesignerProcess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPhases(value: js.Array[Phase]): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPhasesVarargs(value: Phase*): Self = this.set("phases", js.Array(value :_*))
-    
-    @scala.inline
-    def setPhases(value: js.Array[Phase]): Self = this.set("phases", value.asInstanceOf[js.Any])
+    def setPhasesVarargs(value: Phase*): Self = StObject.set(x, "phases", js.Array(value :_*))
   }
 }

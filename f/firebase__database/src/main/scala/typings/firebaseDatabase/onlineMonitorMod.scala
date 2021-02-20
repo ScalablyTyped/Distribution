@@ -1,14 +1,14 @@
 package typings.firebaseDatabase
 
 import typings.firebaseDatabase.eventEmitterMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/util/OnlineMonitor", JSImport.Namespace)
-@js.native
-object onlineMonitorMod extends js.Object {
+object onlineMonitorMod {
   
+  @JSImport("@firebase/database/dist/src/core/util/OnlineMonitor", "OnlineMonitor")
   @js.native
   class OnlineMonitor () extends EventEmitter {
     
@@ -20,9 +20,10 @@ object onlineMonitorMod extends js.Object {
     var online_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object OnlineMonitor extends js.Object {
+  object OnlineMonitor {
     
+    @JSImport("@firebase/database/dist/src/core/util/OnlineMonitor", "OnlineMonitor.getInstance")
+    @js.native
     def getInstance(): OnlineMonitor = js.native
   }
 }

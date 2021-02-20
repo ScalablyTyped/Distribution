@@ -1,13 +1,13 @@
 package typings.awsSdkClientKmsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/model/_GrantConstraints", JSImport.Namespace)
-@js.native
-object grantConstraintsMod extends js.Object {
+object grantConstraintsMod {
   
-  @JSName("_GrantConstraints")
+  @JSImport("@aws-sdk/client-kms-node/model/_GrantConstraints", "_GrantConstraints")
+  @js.native
   val GrantConstraints: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.cannon.global.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +14,10 @@ class ConvexPolyhedron ()
   def this(points: js.Array[typings.cannon.CANNON.Vec3], faces: js.Array[Double]) = this()
 }
 /* static members */
-@JSGlobal("CANNON.ConvexPolyhedron")
-@js.native
-object ConvexPolyhedron extends js.Object {
+object ConvexPolyhedron {
   
+  @JSGlobal("CANNON.ConvexPolyhedron.computeNormal")
+  @js.native
   def computeNormal(
     va: typings.cannon.CANNON.Vec3,
     vb: typings.cannon.CANNON.Vec3,
@@ -24,6 +25,8 @@ object ConvexPolyhedron extends js.Object {
     target: typings.cannon.CANNON.Vec3
   ): Unit = js.native
   
+  @JSGlobal("CANNON.ConvexPolyhedron.project")
+  @js.native
   def project(
     hull: typings.cannon.CANNON.ConvexPolyhedron,
     axis: typings.cannon.CANNON.Vec3,

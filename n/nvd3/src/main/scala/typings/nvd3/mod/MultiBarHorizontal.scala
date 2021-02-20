@@ -4,6 +4,7 @@ import typings.nvd3.nvd3Strings.expand
 import typings.nvd3.nvd3Strings.silhouette
 import typings.nvd3.nvd3Strings.wiggle
 import typings.nvd3.nvd3Strings.zero
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

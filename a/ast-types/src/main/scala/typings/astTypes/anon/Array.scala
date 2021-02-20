@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.astTypes.typesMod.Type
 import typings.std.Date
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Array extends js.Object {
+trait Array extends StObject {
   
   var Date: Type[typings.std.Date] = js.native
   
@@ -53,48 +54,36 @@ object Array {
   }
   
   @scala.inline
-  implicit class ArrayOps[Self <: Array] (val x: Self) extends AnyVal {
+  implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: Type[js.Array[_]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoolean(value: Type[Boolean]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: Type[Date]): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Type[Date]): Self = this.set("Date", value.asInstanceOf[js.Any])
+    def setFunction(value: Type[js.Function]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegExp(value: Type[RegExp]): Self = this.set("RegExp", value.asInstanceOf[js.Any])
+    def setNull(value: Type[Null]): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray(value: Type[js.Array[_]]): Self = this.set("array", value.asInstanceOf[js.Any])
+    def setNumber(value: Type[Double]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolean(value: Type[Boolean]): Self = this.set("boolean", value.asInstanceOf[js.Any])
+    def setObject(value: Type[StringDictionary[_]]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: Type[js.Function]): Self = this.set("function", value.asInstanceOf[js.Any])
+    def setRegExp(value: Type[RegExp]): Self = StObject.set(x, "RegExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNull(value: Type[Null]): Self = this.set("null", value.asInstanceOf[js.Any])
+    def setString(value: Type[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Type[Double]): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObject(value: Type[StringDictionary[_]]): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setString(value: Type[String]): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndefined(value: Type[js.UndefOr[scala.Nothing]]): Self = this.set("undefined", value.asInstanceOf[js.Any])
+    def setUndefined(value: Type[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.editor
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IContentWidget extends js.Object {
+trait IContentWidget extends StObject {
   
   /**
     * Render this content widget in a location where it could overflow the editor's view dom node.
@@ -44,39 +45,27 @@ object IContentWidget {
   }
   
   @scala.inline
-  implicit class IContentWidgetOps[Self <: IContentWidget] (val x: Self) extends AnyVal {
+  implicit class IContentWidgetMutableBuilder[Self <: IContentWidget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowEditorOverflow(value: Boolean): Self = StObject.set(x, "allowEditorOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowEditorOverflowUndefined: Self = StObject.set(x, "allowEditorOverflow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDomNode(value: () => HTMLElement): Self = StObject.set(x, "getDomNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDomNode(value: () => HTMLElement): Self = this.set("getDomNode", js.Any.fromFunction0(value))
+    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetPosition(value: () => IContentWidgetPosition | Null): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPosition(value: () => IContentWidgetPosition | Null): Self = this.set("getPosition", js.Any.fromFunction0(value))
+    def setSuppressMouseDown(value: Boolean): Self = StObject.set(x, "suppressMouseDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowEditorOverflow(value: Boolean): Self = this.set("allowEditorOverflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowEditorOverflow: Self = this.set("allowEditorOverflow", js.undefined)
-    
-    @scala.inline
-    def setSuppressMouseDown(value: Boolean): Self = this.set("suppressMouseDown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressMouseDown: Self = this.set("suppressMouseDown", js.undefined)
+    def setSuppressMouseDownUndefined: Self = StObject.set(x, "suppressMouseDown", js.undefined)
   }
 }

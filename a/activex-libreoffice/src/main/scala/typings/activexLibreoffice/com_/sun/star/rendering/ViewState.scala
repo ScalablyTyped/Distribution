@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.rendering
 
 import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait ViewState extends js.Object {
+trait ViewState extends StObject {
   
   /**
     * The affine transform associated with the view.
@@ -41,24 +42,12 @@ object ViewState {
   }
   
   @scala.inline
-  implicit class ViewStateOps[Self <: ViewState] (val x: Self) extends AnyVal {
+  implicit class ViewStateMutableBuilder[Self <: ViewState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAffineTransform(value: AffineMatrix2D): Self = this.set("AffineTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClip(value: XPolyPolygon2D): Self = this.set("Clip", value.asInstanceOf[js.Any])
+    def setClip(value: XPolyPolygon2D): Self = StObject.set(x, "Clip", value.asInstanceOf[js.Any])
   }
 }

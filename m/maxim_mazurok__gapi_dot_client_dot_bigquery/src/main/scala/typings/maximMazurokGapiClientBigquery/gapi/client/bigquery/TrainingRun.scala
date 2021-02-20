@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrainingRun extends js.Object {
+trait TrainingRun extends StObject {
   
   /** Data split result of the training run. Only set when the input data is actually split. */
   var dataSplitResult: js.UndefOr[DataSplitResult] = js.native
@@ -34,60 +35,48 @@ object TrainingRun {
   }
   
   @scala.inline
-  implicit class TrainingRunOps[Self <: TrainingRun] (val x: Self) extends AnyVal {
+  implicit class TrainingRunMutableBuilder[Self <: TrainingRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSplitResult(value: DataSplitResult): Self = StObject.set(x, "dataSplitResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSplitResultUndefined: Self = StObject.set(x, "dataSplitResult", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvaluationMetrics(value: EvaluationMetrics): Self = StObject.set(x, "evaluationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSplitResult(value: DataSplitResult): Self = this.set("dataSplitResult", value.asInstanceOf[js.Any])
+    def setEvaluationMetricsUndefined: Self = StObject.set(x, "evaluationMetrics", js.undefined)
     
     @scala.inline
-    def deleteDataSplitResult: Self = this.set("dataSplitResult", js.undefined)
+    def setGlobalExplanations(value: js.Array[GlobalExplanation]): Self = StObject.set(x, "globalExplanations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationMetrics(value: EvaluationMetrics): Self = this.set("evaluationMetrics", value.asInstanceOf[js.Any])
+    def setGlobalExplanationsUndefined: Self = StObject.set(x, "globalExplanations", js.undefined)
     
     @scala.inline
-    def deleteEvaluationMetrics: Self = this.set("evaluationMetrics", js.undefined)
+    def setGlobalExplanationsVarargs(value: GlobalExplanation*): Self = StObject.set(x, "globalExplanations", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalExplanationsVarargs(value: GlobalExplanation*): Self = this.set("globalExplanations", js.Array(value :_*))
+    def setResults(value: js.Array[IterationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalExplanations(value: js.Array[GlobalExplanation]): Self = this.set("globalExplanations", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteGlobalExplanations: Self = this.set("globalExplanations", js.undefined)
+    def setResultsVarargs(value: IterationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setResultsVarargs(value: IterationResult*): Self = this.set("results", js.Array(value :_*))
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: js.Array[IterationResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setTrainingOptions(value: TrainingOptions): Self = StObject.set(x, "trainingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setTrainingOptions(value: TrainingOptions): Self = this.set("trainingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingOptions: Self = this.set("trainingOptions", js.undefined)
+    def setTrainingOptionsUndefined: Self = StObject.set(x, "trainingOptions", js.undefined)
   }
 }

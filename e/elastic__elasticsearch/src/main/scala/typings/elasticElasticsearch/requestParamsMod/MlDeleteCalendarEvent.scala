@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object MlDeleteCalendarEvent {
   }
   
   @scala.inline
-  implicit class MlDeleteCalendarEventOps[Self <: MlDeleteCalendarEvent] (val x: Self) extends AnyVal {
+  implicit class MlDeleteCalendarEventMutableBuilder[Self <: MlDeleteCalendarEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCalendar_id(value: String): Self = this.set("calendar_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent_id(value: String): Self = this.set("event_id", value.asInstanceOf[js.Any])
+    def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetHealthDescription extends js.Object {
+trait TargetHealthDescription extends StObject {
   
   /**
     * The port to use to connect with the target.
@@ -31,36 +32,24 @@ object TargetHealthDescription {
   }
   
   @scala.inline
-  implicit class TargetHealthDescriptionOps[Self <: TargetHealthDescription] (val x: Self) extends AnyVal {
+  implicit class TargetHealthDescriptionMutableBuilder[Self <: TargetHealthDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthCheckPort(value: HealthCheckPort): Self = StObject.set(x, "HealthCheckPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthCheckPortUndefined: Self = StObject.set(x, "HealthCheckPort", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: TargetDescription): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckPort(value: HealthCheckPort): Self = this.set("HealthCheckPort", value.asInstanceOf[js.Any])
+    def setTargetHealth(value: TargetHealth): Self = StObject.set(x, "TargetHealth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHealthCheckPort: Self = this.set("HealthCheckPort", js.undefined)
+    def setTargetHealthUndefined: Self = StObject.set(x, "TargetHealth", js.undefined)
     
     @scala.inline
-    def setTarget(value: TargetDescription): Self = this.set("Target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("Target", js.undefined)
-    
-    @scala.inline
-    def setTargetHealth(value: TargetHealth): Self = this.set("TargetHealth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetHealth: Self = this.set("TargetHealth", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
   }
 }

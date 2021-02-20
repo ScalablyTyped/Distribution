@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsequenceParams extends js.Object {
+trait ConsequenceParams extends StObject {
   
   /**
     * Names of facets to which automatic filtering must be applied; they must match the facet name of a facet value placeholder in the query pattern.
@@ -33,42 +34,30 @@ object ConsequenceParams {
   }
   
   @scala.inline
-  implicit class ConsequenceParamsOps[Self <: ConsequenceParams] (val x: Self) extends AnyVal {
+  implicit class ConsequenceParamsMutableBuilder[Self <: ConsequenceParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticFacetFilters(value: js.Array[AutomaticFacetFilter | String]): Self = StObject.set(x, "automaticFacetFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticFacetFiltersUndefined: Self = StObject.set(x, "automaticFacetFilters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomaticFacetFiltersVarargs(value: (AutomaticFacetFilter | String)*): Self = StObject.set(x, "automaticFacetFilters", js.Array(value :_*))
     
     @scala.inline
-    def setAutomaticFacetFiltersVarargs(value: (AutomaticFacetFilter | String)*): Self = this.set("automaticFacetFilters", js.Array(value :_*))
+    def setAutomaticOptionalFacetFilters(value: js.Array[AutomaticFacetFilter]): Self = StObject.set(x, "automaticOptionalFacetFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticFacetFilters(value: js.Array[AutomaticFacetFilter | String]): Self = this.set("automaticFacetFilters", value.asInstanceOf[js.Any])
+    def setAutomaticOptionalFacetFiltersUndefined: Self = StObject.set(x, "automaticOptionalFacetFilters", js.undefined)
     
     @scala.inline
-    def deleteAutomaticFacetFilters: Self = this.set("automaticFacetFilters", js.undefined)
+    def setAutomaticOptionalFacetFiltersVarargs(value: AutomaticFacetFilter*): Self = StObject.set(x, "automaticOptionalFacetFilters", js.Array(value :_*))
     
     @scala.inline
-    def setAutomaticOptionalFacetFiltersVarargs(value: AutomaticFacetFilter*): Self = this.set("automaticOptionalFacetFilters", js.Array(value :_*))
+    def setQuery(value: ConsequenceQuery | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticOptionalFacetFilters(value: js.Array[AutomaticFacetFilter]): Self = this.set("automaticOptionalFacetFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutomaticOptionalFacetFilters: Self = this.set("automaticOptionalFacetFilters", js.undefined)
-    
-    @scala.inline
-    def setQuery(value: ConsequenceQuery | String): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

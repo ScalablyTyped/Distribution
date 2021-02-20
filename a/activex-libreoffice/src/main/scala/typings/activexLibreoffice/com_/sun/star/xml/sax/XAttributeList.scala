@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.xml.sax
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,39 +60,27 @@ object XAttributeList {
   }
   
   @scala.inline
-  implicit class XAttributeListOps[Self <: XAttributeList] (val x: Self) extends AnyVal {
+  implicit class XAttributeListMutableBuilder[Self <: XAttributeList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNameByIndex(value: Double => String): Self = StObject.set(x, "getNameByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTypeByIndex(value: Double => String): Self = StObject.set(x, "getTypeByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("Length", value.asInstanceOf[js.Any])
+    def setGetTypeByName(value: String => String): Self = StObject.set(x, "getTypeByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
+    def setGetValueByIndex(value: Double => String): Self = StObject.set(x, "getValueByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNameByIndex(value: Double => String): Self = this.set("getNameByIndex", js.Any.fromFunction1(value))
+    def setGetValueByName(value: String => String): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTypeByIndex(value: Double => String): Self = this.set("getTypeByIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetTypeByName(value: String => String): Self = this.set("getTypeByName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetValueByIndex(value: Double => String): Self = this.set("getValueByIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetValueByName(value: String => String): Self = this.set("getValueByName", js.Any.fromFunction1(value))
+    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
   }
 }

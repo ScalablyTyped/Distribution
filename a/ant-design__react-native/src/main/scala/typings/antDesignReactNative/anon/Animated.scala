@@ -7,12 +7,13 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animated extends js.Object {
+trait Animated extends StObject {
   
   var activeTab: Double = js.native
   
@@ -51,96 +52,84 @@ object Animated {
   }
   
   @scala.inline
-  implicit class AnimatedOps[Self <: Animated] (val x: Self) extends AnyVal {
+  implicit class AnimatedMutableBuilder[Self <: Animated] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoToTab(value: js.Any): Self = StObject.set(x, "goToTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTab(value: Double): Self = this.set("activeTab", value.asInstanceOf[js.Any])
+    def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setOnTabClick(value: (/* tab */ TabData, /* index */ Double) => Unit): Self = StObject.set(x, "onTabClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGoToTab(value: js.Any): Self = this.set("goToTab", value.asInstanceOf[js.Any])
+    def setOnTabClickUndefined: Self = StObject.set(x, "onTabClick", js.undefined)
     
     @scala.inline
-    def setInstanceId(value: Double): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    def setRenderTab(value: /* tab */ TabData => ReactNode): Self = StObject.set(x, "renderTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTabsVarargs(value: TabData*): Self = this.set("tabs", js.Array(value :_*))
+    def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
     
     @scala.inline
-    def setTabs(value: js.Array[TabData]): Self = this.set("tabs", value.asInstanceOf[js.Any])
+    def setRenderUnderline(value: /* style */ js.Any => ReactNode): Self = StObject.set(x, "renderUnderline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTabClick(value: (/* tab */ TabData, /* index */ Double) => Unit): Self = this.set("onTabClick", js.Any.fromFunction2(value))
+    def setRenderUnderlineUndefined: Self = StObject.set(x, "renderUnderline", js.undefined)
     
     @scala.inline
-    def deleteOnTabClick: Self = this.set("onTabClick", js.undefined)
+    def setTabBarActiveTextColor(value: String): Self = StObject.set(x, "tabBarActiveTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderTab(value: /* tab */ TabData => ReactNode): Self = this.set("renderTab", js.Any.fromFunction1(value))
+    def setTabBarActiveTextColorUndefined: Self = StObject.set(x, "tabBarActiveTextColor", js.undefined)
     
     @scala.inline
-    def deleteRenderTab: Self = this.set("renderTab", js.undefined)
+    def setTabBarBackgroundColor(value: String): Self = StObject.set(x, "tabBarBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderUnderline(value: /* style */ js.Any => ReactNode): Self = this.set("renderUnderline", js.Any.fromFunction1(value))
+    def setTabBarBackgroundColorUndefined: Self = StObject.set(x, "tabBarBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteRenderUnderline: Self = this.set("renderUnderline", js.undefined)
+    def setTabBarInactiveTextColor(value: String): Self = StObject.set(x, "tabBarInactiveTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabBarActiveTextColor(value: String): Self = this.set("tabBarActiveTextColor", value.asInstanceOf[js.Any])
+    def setTabBarInactiveTextColorUndefined: Self = StObject.set(x, "tabBarInactiveTextColor", js.undefined)
     
     @scala.inline
-    def deleteTabBarActiveTextColor: Self = this.set("tabBarActiveTextColor", js.undefined)
+    def setTabBarPosition(value: top | bottom): Self = StObject.set(x, "tabBarPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabBarBackgroundColor(value: String): Self = this.set("tabBarBackgroundColor", value.asInstanceOf[js.Any])
+    def setTabBarPositionUndefined: Self = StObject.set(x, "tabBarPosition", js.undefined)
     
     @scala.inline
-    def deleteTabBarBackgroundColor: Self = this.set("tabBarBackgroundColor", js.undefined)
+    def setTabBarTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "tabBarTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabBarInactiveTextColor(value: String): Self = this.set("tabBarInactiveTextColor", value.asInstanceOf[js.Any])
+    def setTabBarTextStyleNull: Self = StObject.set(x, "tabBarTextStyle", null)
     
     @scala.inline
-    def deleteTabBarInactiveTextColor: Self = this.set("tabBarInactiveTextColor", js.undefined)
+    def setTabBarTextStyleUndefined: Self = StObject.set(x, "tabBarTextStyle", js.undefined)
     
     @scala.inline
-    def setTabBarPosition(value: top | bottom): Self = this.set("tabBarPosition", value.asInstanceOf[js.Any])
+    def setTabBarUnderlineStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tabBarUnderlineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabBarPosition: Self = this.set("tabBarPosition", js.undefined)
+    def setTabBarUnderlineStyleNull: Self = StObject.set(x, "tabBarUnderlineStyle", null)
     
     @scala.inline
-    def setTabBarTextStyle(value: StyleProp[TextStyle]): Self = this.set("tabBarTextStyle", value.asInstanceOf[js.Any])
+    def setTabBarUnderlineStyleUndefined: Self = StObject.set(x, "tabBarUnderlineStyle", js.undefined)
     
     @scala.inline
-    def deleteTabBarTextStyle: Self = this.set("tabBarTextStyle", js.undefined)
+    def setTabs(value: js.Array[TabData]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabBarTextStyleNull: Self = this.set("tabBarTextStyle", null)
-    
-    @scala.inline
-    def setTabBarUnderlineStyle(value: StyleProp[ViewStyle]): Self = this.set("tabBarUnderlineStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabBarUnderlineStyle: Self = this.set("tabBarUnderlineStyle", js.undefined)
-    
-    @scala.inline
-    def setTabBarUnderlineStyleNull: Self = this.set("tabBarUnderlineStyle", null)
+    def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value :_*))
   }
 }

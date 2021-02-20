@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetryPolicy extends js.Object {
+trait RetryPolicy extends StObject {
   
   /**
     * The maximum amount of time, in seconds, to continue to make retry attempts.
@@ -26,30 +27,18 @@ object RetryPolicy {
   }
   
   @scala.inline
-  implicit class RetryPolicyOps[Self <: RetryPolicy] (val x: Self) extends AnyVal {
+  implicit class RetryPolicyMutableBuilder[Self <: RetryPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumEventAgeInSeconds(value: MaximumEventAgeInSeconds): Self = StObject.set(x, "MaximumEventAgeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumEventAgeInSecondsUndefined: Self = StObject.set(x, "MaximumEventAgeInSeconds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumRetryAttempts(value: MaximumRetryAttempts): Self = StObject.set(x, "MaximumRetryAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumEventAgeInSeconds(value: MaximumEventAgeInSeconds): Self = this.set("MaximumEventAgeInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumEventAgeInSeconds: Self = this.set("MaximumEventAgeInSeconds", js.undefined)
-    
-    @scala.inline
-    def setMaximumRetryAttempts(value: MaximumRetryAttempts): Self = this.set("MaximumRetryAttempts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumRetryAttempts: Self = this.set("MaximumRetryAttempts", js.undefined)
+    def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "MaximumRetryAttempts", js.undefined)
   }
 }

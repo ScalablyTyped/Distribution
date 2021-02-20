@@ -1,15 +1,15 @@
 package typings.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ExtensionMode extends js.Object
+sealed trait ExtensionMode extends StObject
 @JSImport("vscode", "ExtensionMode")
 @js.native
-object ExtensionMode extends js.Object {
+object ExtensionMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExtensionMode with Double] = js.native
@@ -20,8 +20,7 @@ object ExtensionMode extends js.Object {
     */
   @js.native
   sealed trait Development extends ExtensionMode
-  /* 2 */ @js.native
-  object Development extends TopLevel[Development with Double]
+  /* 2 */ val Development: typings.vscode.mod.ExtensionMode.Development with Double = js.native
   
   /**
     * The extension is installed normally (for example, from the marketplace
@@ -29,8 +28,7 @@ object ExtensionMode extends js.Object {
     */
   @js.native
   sealed trait Production extends ExtensionMode
-  /* 1 */ @js.native
-  object Production extends TopLevel[Production with Double]
+  /* 1 */ val Production: typings.vscode.mod.ExtensionMode.Production with Double = js.native
   
   /**
     * The extension is running from an `--extensionTestsPath` and
@@ -38,6 +36,5 @@ object ExtensionMode extends js.Object {
     */
   @js.native
   sealed trait Test extends ExtensionMode
-  /* 3 */ @js.native
-  object Test extends TopLevel[Test with Double]
+  /* 3 */ val Test: typings.vscode.mod.ExtensionMode.Test with Double = js.native
 }

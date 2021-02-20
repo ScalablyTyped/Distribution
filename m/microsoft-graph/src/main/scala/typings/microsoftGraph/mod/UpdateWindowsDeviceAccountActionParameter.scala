@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateWindowsDeviceAccountActionParameter extends js.Object {
+trait UpdateWindowsDeviceAccountActionParameter extends StObject {
   
   // Not yet documented
   var calendarSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
@@ -34,72 +35,60 @@ object UpdateWindowsDeviceAccountActionParameter {
   }
   
   @scala.inline
-  implicit class UpdateWindowsDeviceAccountActionParameterOps[Self <: UpdateWindowsDeviceAccountActionParameter] (val x: Self) extends AnyVal {
+  implicit class UpdateWindowsDeviceAccountActionParameterMutableBuilder[Self <: UpdateWindowsDeviceAccountActionParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarSyncEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "calendarSyncEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarSyncEnabledNull: Self = StObject.set(x, "calendarSyncEnabled", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalendarSyncEnabledUndefined: Self = StObject.set(x, "calendarSyncEnabled", js.undefined)
     
     @scala.inline
-    def setCalendarSyncEnabled(value: NullableOption[Boolean]): Self = this.set("calendarSyncEnabled", value.asInstanceOf[js.Any])
+    def setDeviceAccount(value: NullableOption[WindowsDeviceAccount]): Self = StObject.set(x, "deviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendarSyncEnabled: Self = this.set("calendarSyncEnabled", js.undefined)
+    def setDeviceAccountEmail(value: NullableOption[String]): Self = StObject.set(x, "deviceAccountEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarSyncEnabledNull: Self = this.set("calendarSyncEnabled", null)
+    def setDeviceAccountEmailNull: Self = StObject.set(x, "deviceAccountEmail", null)
     
     @scala.inline
-    def setDeviceAccount(value: NullableOption[WindowsDeviceAccount]): Self = this.set("deviceAccount", value.asInstanceOf[js.Any])
+    def setDeviceAccountEmailUndefined: Self = StObject.set(x, "deviceAccountEmail", js.undefined)
     
     @scala.inline
-    def deleteDeviceAccount: Self = this.set("deviceAccount", js.undefined)
+    def setDeviceAccountNull: Self = StObject.set(x, "deviceAccount", null)
     
     @scala.inline
-    def setDeviceAccountNull: Self = this.set("deviceAccount", null)
+    def setDeviceAccountUndefined: Self = StObject.set(x, "deviceAccount", js.undefined)
     
     @scala.inline
-    def setDeviceAccountEmail(value: NullableOption[String]): Self = this.set("deviceAccountEmail", value.asInstanceOf[js.Any])
+    def setExchangeServer(value: NullableOption[String]): Self = StObject.set(x, "exchangeServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceAccountEmail: Self = this.set("deviceAccountEmail", js.undefined)
+    def setExchangeServerNull: Self = StObject.set(x, "exchangeServer", null)
     
     @scala.inline
-    def setDeviceAccountEmailNull: Self = this.set("deviceAccountEmail", null)
+    def setExchangeServerUndefined: Self = StObject.set(x, "exchangeServer", js.undefined)
     
     @scala.inline
-    def setExchangeServer(value: NullableOption[String]): Self = this.set("exchangeServer", value.asInstanceOf[js.Any])
+    def setPasswordRotationEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "passwordRotationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExchangeServer: Self = this.set("exchangeServer", js.undefined)
+    def setPasswordRotationEnabledNull: Self = StObject.set(x, "passwordRotationEnabled", null)
     
     @scala.inline
-    def setExchangeServerNull: Self = this.set("exchangeServer", null)
+    def setPasswordRotationEnabledUndefined: Self = StObject.set(x, "passwordRotationEnabled", js.undefined)
     
     @scala.inline
-    def setPasswordRotationEnabled(value: NullableOption[Boolean]): Self = this.set("passwordRotationEnabled", value.asInstanceOf[js.Any])
+    def setSessionInitiationProtocalAddress(value: NullableOption[String]): Self = StObject.set(x, "sessionInitiationProtocalAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePasswordRotationEnabled: Self = this.set("passwordRotationEnabled", js.undefined)
+    def setSessionInitiationProtocalAddressNull: Self = StObject.set(x, "sessionInitiationProtocalAddress", null)
     
     @scala.inline
-    def setPasswordRotationEnabledNull: Self = this.set("passwordRotationEnabled", null)
-    
-    @scala.inline
-    def setSessionInitiationProtocalAddress(value: NullableOption[String]): Self = this.set("sessionInitiationProtocalAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionInitiationProtocalAddress: Self = this.set("sessionInitiationProtocalAddress", js.undefined)
-    
-    @scala.inline
-    def setSessionInitiationProtocalAddressNull: Self = this.set("sessionInitiationProtocalAddress", null)
+    def setSessionInitiationProtocalAddressUndefined: Self = StObject.set(x, "sessionInitiationProtocalAddress", js.undefined)
   }
 }

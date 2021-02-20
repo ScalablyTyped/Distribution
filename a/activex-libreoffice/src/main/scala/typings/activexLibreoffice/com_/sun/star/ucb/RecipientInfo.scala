@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * RecipientInfo} can be used.
   */
 @js.native
-trait RecipientInfo extends js.Object {
+trait RecipientInfo extends StObject {
   
   /**
     * the recipient(s) of "blind carbon copy" (e.g. e-mail address/es).
@@ -91,57 +92,45 @@ object RecipientInfo {
   }
   
   @scala.inline
-  implicit class RecipientInfoOps[Self <: RecipientInfo] (val x: Self) extends AnyVal {
+  implicit class RecipientInfoMutableBuilder[Self <: RecipientInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCC(value: String): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewsgroups(value: String): Self = StObject.set(x, "Newsgroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBCC(value: String): Self = this.set("BCC", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCC(value: String): Self = this.set("CC", value.asInstanceOf[js.Any])
+    def setProtocolErrorNumber(value: Double): Self = StObject.set(x, "ProtocolErrorNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewsgroups(value: String): Self = this.set("Newsgroups", value.asInstanceOf[js.Any])
+    def setProtocolErrorString(value: String): Self = StObject.set(x, "ProtocolErrorString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setProtocolType(value: String): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolErrorNumber(value: Double): Self = this.set("ProtocolErrorNumber", value.asInstanceOf[js.Any])
+    def setSendTries(value: Double): Self = StObject.set(x, "SendTries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolErrorString(value: String): Self = this.set("ProtocolErrorString", value.asInstanceOf[js.Any])
+    def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolType(value: String): Self = this.set("ProtocolType", value.asInstanceOf[js.Any])
+    def setState(value: OutgoingMessageState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendTries(value: Double): Self = this.set("SendTries", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: String): Self = this.set("Server", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: OutgoingMessageState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("To", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVIMPostOfficePath(value: String): Self = this.set("VIMPostOfficePath", value.asInstanceOf[js.Any])
+    def setVIMPostOfficePath(value: String): Self = StObject.set(x, "VIMPostOfficePath", value.asInstanceOf[js.Any])
   }
 }

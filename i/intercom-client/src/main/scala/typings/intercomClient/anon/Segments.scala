@@ -2,12 +2,13 @@ package typings.intercomClient.anon
 
 import typings.intercomClient.intercomClientStrings.segmentDotlist
 import typings.intercomClient.userMod.Segment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Segments extends js.Object {
+trait Segments extends StObject {
   
   var segments: js.Array[Segment] = js.native
   
@@ -23,27 +24,15 @@ object Segments {
   }
   
   @scala.inline
-  implicit class SegmentsOps[Self <: Segments] (val x: Self) extends AnyVal {
+  implicit class SegmentsMutableBuilder[Self <: Segments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSegmentsVarargs(value: Segment*): Self = this.set("segments", js.Array(value :_*))
-    
-    @scala.inline
-    def setSegments(value: js.Array[Segment]): Self = this.set("segments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: segmentDotlist): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: segmentDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

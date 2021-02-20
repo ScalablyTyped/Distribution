@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartTooltipModelBody extends js.Object {
+trait ChartTooltipModelBody extends StObject {
   
   var after: js.Array[String] = js.native
   
@@ -22,36 +23,24 @@ object ChartTooltipModelBody {
   }
   
   @scala.inline
-  implicit class ChartTooltipModelBodyOps[Self <: ChartTooltipModelBody] (val x: Self) extends AnyVal {
+  implicit class ChartTooltipModelBodyMutableBuilder[Self <: ChartTooltipModelBody] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterVarargs(value: String*): Self = this.set("after", js.Array(value :_*))
+    def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
     
     @scala.inline
-    def setAfter(value: js.Array[String]): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeVarargs(value: String*): Self = this.set("before", js.Array(value :_*))
-    
-    @scala.inline
-    def setBefore(value: js.Array[String]): Self = this.set("before", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinesVarargs(value: String*): Self = this.set("lines", js.Array(value :_*))
-    
-    @scala.inline
-    def setLines(value: js.Array[String]): Self = this.set("lines", value.asInstanceOf[js.Any])
+    def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
   }
 }

@@ -1,13 +1,12 @@
 package typings.sentryTypes
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/types/dist/wrappedfunction", JSImport.Namespace)
-@js.native
-object wrappedfunctionMod extends js.Object {
+object wrappedfunctionMod {
   
   @js.native
   trait WrappedFunction

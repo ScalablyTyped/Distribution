@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,114 +92,102 @@ object Subscription {
   }
   
   @scala.inline
-  implicit class SubscriptionOps[Self <: Subscription] (val x: Self) extends AnyVal {
+  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: NullableOption[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationIdNull: Self = StObject.set(x, "applicationId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
     
     @scala.inline
-    def setApplicationId(value: NullableOption[String]): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
     
     @scala.inline
-    def setApplicationIdNull: Self = this.set("applicationId", null)
+    def setClientState(value: NullableOption[String]): Self = StObject.set(x, "clientState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: String): Self = this.set("changeType", value.asInstanceOf[js.Any])
+    def setClientStateNull: Self = StObject.set(x, "clientState", null)
     
     @scala.inline
-    def deleteChangeType: Self = this.set("changeType", js.undefined)
+    def setClientStateUndefined: Self = StObject.set(x, "clientState", js.undefined)
     
     @scala.inline
-    def setClientState(value: NullableOption[String]): Self = this.set("clientState", value.asInstanceOf[js.Any])
+    def setCreatorId(value: NullableOption[String]): Self = StObject.set(x, "creatorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientState: Self = this.set("clientState", js.undefined)
+    def setCreatorIdNull: Self = StObject.set(x, "creatorId", null)
     
     @scala.inline
-    def setClientStateNull: Self = this.set("clientState", null)
+    def setCreatorIdUndefined: Self = StObject.set(x, "creatorId", js.undefined)
     
     @scala.inline
-    def setCreatorId(value: NullableOption[String]): Self = this.set("creatorId", value.asInstanceOf[js.Any])
+    def setEncryptionCertificate(value: NullableOption[String]): Self = StObject.set(x, "encryptionCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatorId: Self = this.set("creatorId", js.undefined)
+    def setEncryptionCertificateId(value: NullableOption[String]): Self = StObject.set(x, "encryptionCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorIdNull: Self = this.set("creatorId", null)
+    def setEncryptionCertificateIdNull: Self = StObject.set(x, "encryptionCertificateId", null)
     
     @scala.inline
-    def setEncryptionCertificate(value: NullableOption[String]): Self = this.set("encryptionCertificate", value.asInstanceOf[js.Any])
+    def setEncryptionCertificateIdUndefined: Self = StObject.set(x, "encryptionCertificateId", js.undefined)
     
     @scala.inline
-    def deleteEncryptionCertificate: Self = this.set("encryptionCertificate", js.undefined)
+    def setEncryptionCertificateNull: Self = StObject.set(x, "encryptionCertificate", null)
     
     @scala.inline
-    def setEncryptionCertificateNull: Self = this.set("encryptionCertificate", null)
+    def setEncryptionCertificateUndefined: Self = StObject.set(x, "encryptionCertificate", js.undefined)
     
     @scala.inline
-    def setEncryptionCertificateId(value: NullableOption[String]): Self = this.set("encryptionCertificateId", value.asInstanceOf[js.Any])
+    def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionCertificateId: Self = this.set("encryptionCertificateId", js.undefined)
+    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
     @scala.inline
-    def setEncryptionCertificateIdNull: Self = this.set("encryptionCertificateId", null)
+    def setIncludeResourceData(value: NullableOption[Boolean]): Self = StObject.set(x, "includeResourceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDateTime(value: String): Self = this.set("expirationDateTime", value.asInstanceOf[js.Any])
+    def setIncludeResourceDataNull: Self = StObject.set(x, "includeResourceData", null)
     
     @scala.inline
-    def deleteExpirationDateTime: Self = this.set("expirationDateTime", js.undefined)
+    def setIncludeResourceDataUndefined: Self = StObject.set(x, "includeResourceData", js.undefined)
     
     @scala.inline
-    def setIncludeResourceData(value: NullableOption[Boolean]): Self = this.set("includeResourceData", value.asInstanceOf[js.Any])
+    def setLatestSupportedTlsVersion(value: NullableOption[String]): Self = StObject.set(x, "latestSupportedTlsVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeResourceData: Self = this.set("includeResourceData", js.undefined)
+    def setLatestSupportedTlsVersionNull: Self = StObject.set(x, "latestSupportedTlsVersion", null)
     
     @scala.inline
-    def setIncludeResourceDataNull: Self = this.set("includeResourceData", null)
+    def setLatestSupportedTlsVersionUndefined: Self = StObject.set(x, "latestSupportedTlsVersion", js.undefined)
     
     @scala.inline
-    def setLatestSupportedTlsVersion(value: NullableOption[String]): Self = this.set("latestSupportedTlsVersion", value.asInstanceOf[js.Any])
+    def setLifecycleNotificationUrl(value: NullableOption[String]): Self = StObject.set(x, "lifecycleNotificationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLatestSupportedTlsVersion: Self = this.set("latestSupportedTlsVersion", js.undefined)
+    def setLifecycleNotificationUrlNull: Self = StObject.set(x, "lifecycleNotificationUrl", null)
     
     @scala.inline
-    def setLatestSupportedTlsVersionNull: Self = this.set("latestSupportedTlsVersion", null)
+    def setLifecycleNotificationUrlUndefined: Self = StObject.set(x, "lifecycleNotificationUrl", js.undefined)
     
     @scala.inline
-    def setLifecycleNotificationUrl(value: NullableOption[String]): Self = this.set("lifecycleNotificationUrl", value.asInstanceOf[js.Any])
+    def setNotificationUrl(value: String): Self = StObject.set(x, "notificationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLifecycleNotificationUrl: Self = this.set("lifecycleNotificationUrl", js.undefined)
+    def setNotificationUrlUndefined: Self = StObject.set(x, "notificationUrl", js.undefined)
     
     @scala.inline
-    def setLifecycleNotificationUrlNull: Self = this.set("lifecycleNotificationUrl", null)
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationUrl(value: String): Self = this.set("notificationUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationUrl: Self = this.set("notificationUrl", js.undefined)
-    
-    @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

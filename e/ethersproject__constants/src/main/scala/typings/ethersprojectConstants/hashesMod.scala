@@ -1,12 +1,13 @@
 package typings.ethersprojectConstants
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/constants/lib/hashes", JSImport.Namespace)
-@js.native
-object hashesMod extends js.Object {
+object hashesMod {
   
+  @JSImport("@ethersproject/constants/lib/hashes", "HashZero")
+  @js.native
   val HashZero: /* "0x0000000000000000000000000000000000000000000000000000000000000000" */ String = js.native
 }

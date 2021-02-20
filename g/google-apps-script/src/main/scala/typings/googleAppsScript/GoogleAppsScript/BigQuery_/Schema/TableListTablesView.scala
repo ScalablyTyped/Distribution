@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableListTablesView extends js.Object {
+trait TableListTablesView extends StObject {
   
   var useLegacySql: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object TableListTablesView {
   }
   
   @scala.inline
-  implicit class TableListTablesViewOps[Self <: TableListTablesView] (val x: Self) extends AnyVal {
+  implicit class TableListTablesViewMutableBuilder[Self <: TableListTablesView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUseLegacySql(value: Boolean): Self = this.set("useLegacySql", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLegacySql: Self = this.set("useLegacySql", js.undefined)
+    def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
   }
 }

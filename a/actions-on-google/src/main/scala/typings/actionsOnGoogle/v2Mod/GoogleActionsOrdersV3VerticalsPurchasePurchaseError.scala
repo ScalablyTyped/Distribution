@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3VerticalsPurchasePurchaseError extends js.Object {
+trait GoogleActionsOrdersV3VerticalsPurchasePurchaseError extends StObject {
   
   /**
     * Available quantity now. Applicable in case of AVAILABILITY_CHANGED.
@@ -43,48 +44,36 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseError {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorOps[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseError] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableQuantity(value: Double): Self = StObject.set(x, "availableQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableQuantityUndefined: Self = StObject.set(x, "availableQuantity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableQuantity(value: Double): Self = this.set("availableQuantity", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAvailableQuantity: Self = this.set("availableQuantity", js.undefined)
+    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    def setUpdatedPrice(value: GoogleActionsOrdersV3PriceAttribute): Self = StObject.set(x, "updatedPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUpdatedPrice(value: GoogleActionsOrdersV3PriceAttribute): Self = this.set("updatedPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedPrice: Self = this.set("updatedPrice", js.undefined)
+    def setUpdatedPriceUndefined: Self = StObject.set(x, "updatedPrice", js.undefined)
   }
 }

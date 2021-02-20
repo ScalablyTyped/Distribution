@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhysicsJointData extends js.Object {
+trait PhysicsJointData extends StObject {
   
   /**
     * The collision of the joint
@@ -46,54 +47,42 @@ object PhysicsJointData {
   }
   
   @scala.inline
-  implicit class PhysicsJointDataOps[Self <: PhysicsJointData] (val x: Self) extends AnyVal {
+  implicit class PhysicsJointDataMutableBuilder[Self <: PhysicsJointData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollision(value: Boolean): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectedAxis(value: Vector3): Self = StObject.set(x, "connectedAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollision(value: Boolean): Self = this.set("collision", value.asInstanceOf[js.Any])
+    def setConnectedAxisUndefined: Self = StObject.set(x, "connectedAxis", js.undefined)
     
     @scala.inline
-    def deleteCollision: Self = this.set("collision", js.undefined)
+    def setConnectedPivot(value: Vector3): Self = StObject.set(x, "connectedPivot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedAxis(value: Vector3): Self = this.set("connectedAxis", value.asInstanceOf[js.Any])
+    def setConnectedPivotUndefined: Self = StObject.set(x, "connectedPivot", js.undefined)
     
     @scala.inline
-    def deleteConnectedAxis: Self = this.set("connectedAxis", js.undefined)
+    def setMainAxis(value: Vector3): Self = StObject.set(x, "mainAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedPivot(value: Vector3): Self = this.set("connectedPivot", value.asInstanceOf[js.Any])
+    def setMainAxisUndefined: Self = StObject.set(x, "mainAxis", js.undefined)
     
     @scala.inline
-    def deleteConnectedPivot: Self = this.set("connectedPivot", js.undefined)
+    def setMainPivot(value: Vector3): Self = StObject.set(x, "mainPivot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainAxis(value: Vector3): Self = this.set("mainAxis", value.asInstanceOf[js.Any])
+    def setMainPivotUndefined: Self = StObject.set(x, "mainPivot", js.undefined)
     
     @scala.inline
-    def deleteMainAxis: Self = this.set("mainAxis", js.undefined)
+    def setNativeParams(value: js.Any): Self = StObject.set(x, "nativeParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainPivot(value: Vector3): Self = this.set("mainPivot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMainPivot: Self = this.set("mainPivot", js.undefined)
-    
-    @scala.inline
-    def setNativeParams(value: js.Any): Self = this.set("nativeParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNativeParams: Self = this.set("nativeParams", js.undefined)
+    def setNativeParamsUndefined: Self = StObject.set(x, "nativeParams", js.undefined)
   }
 }

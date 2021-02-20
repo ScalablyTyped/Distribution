@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecuteBatchDmlResponse extends js.Object {
+trait ExecuteBatchDmlResponse extends StObject {
   
   /**
     * One ResultSet for each statement in the request that ran successfully, in the same order as the statements in the request. Each ResultSet does not contain any rows. The
@@ -25,33 +26,21 @@ object ExecuteBatchDmlResponse {
   }
   
   @scala.inline
-  implicit class ExecuteBatchDmlResponseOps[Self <: ExecuteBatchDmlResponse] (val x: Self) extends AnyVal {
+  implicit class ExecuteBatchDmlResponseMutableBuilder[Self <: ExecuteBatchDmlResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResultSets(value: js.Array[ResultSet]): Self = StObject.set(x, "resultSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResultSetsUndefined: Self = StObject.set(x, "resultSets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultSetsVarargs(value: ResultSet*): Self = StObject.set(x, "resultSets", js.Array(value :_*))
     
     @scala.inline
-    def setResultSetsVarargs(value: ResultSet*): Self = this.set("resultSets", js.Array(value :_*))
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSets(value: js.Array[ResultSet]): Self = this.set("resultSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultSets: Self = this.set("resultSets", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

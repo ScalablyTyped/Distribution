@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeScaleType extends js.Object
+sealed trait ShapeScaleType extends StObject
 /**
   *
   * Specifies whether the shape is scaled relative to its original or current size.
@@ -14,7 +15,7 @@ sealed trait ShapeScaleType extends js.Object
   */
 @JSGlobal("Excel.ShapeScaleType")
 @js.native
-object ShapeScaleType extends js.Object {
+object ShapeScaleType extends StObject {
   
   @js.native
   sealed trait currentSize extends ShapeScaleType

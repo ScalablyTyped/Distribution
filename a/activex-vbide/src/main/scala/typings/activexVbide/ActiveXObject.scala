@@ -10,12 +10,13 @@ import typings.activexVbide.activexVbideStrings.ItemAdded
 import typings.activexVbide.activexVbideStrings.ItemRemoved
 import typings.activexVbide.activexVbideStrings.Reference
 import typings.activexVbide.activexVbideStrings.handled
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObject extends js.Object {
+trait ActiveXObject extends StObject {
   
   def on(
     obj: CommandBarEvents,

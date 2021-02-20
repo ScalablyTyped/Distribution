@@ -14,13 +14,14 @@ import typings.plotlyJs.plotlyJsStrings.paper
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.stretch
 import typings.plotlyJs.plotlyJsStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Image> */
 @js.native
-trait PartialImage extends js.Object {
+trait PartialImage extends StObject {
   
   var layer: js.UndefOr[above | below] = js.native
   
@@ -57,96 +58,84 @@ object PartialImage {
   }
   
   @scala.inline
-  implicit class PartialImageOps[Self <: PartialImage] (val x: Self) extends AnyVal {
+  implicit class PartialImageMutableBuilder[Self <: PartialImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayer(value: above | below): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: above | below): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setSizex(value: Double): Self = StObject.set(x, "sizex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setSizexUndefined: Self = StObject.set(x, "sizex", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setSizey(value: Double): Self = StObject.set(x, "sizey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizex(value: Double): Self = this.set("sizex", value.asInstanceOf[js.Any])
+    def setSizeyUndefined: Self = StObject.set(x, "sizey", js.undefined)
     
     @scala.inline
-    def deleteSizex: Self = this.set("sizex", js.undefined)
+    def setSizing(value: fill | contain | stretch): Self = StObject.set(x, "sizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizey(value: Double): Self = this.set("sizey", value.asInstanceOf[js.Any])
+    def setSizingUndefined: Self = StObject.set(x, "sizing", js.undefined)
     
     @scala.inline
-    def deleteSizey: Self = this.set("sizey", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizing(value: fill | contain | stretch): Self = this.set("sizing", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteSizing: Self = this.set("sizing", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setXanchor(value: left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double | String): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setXanchorUndefined: Self = StObject.set(x, "xanchor", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setXref(value: paper | XAxisName): Self = StObject.set(x, "xref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXanchor(value: left | center | right): Self = this.set("xanchor", value.asInstanceOf[js.Any])
+    def setXrefUndefined: Self = StObject.set(x, "xref", js.undefined)
     
     @scala.inline
-    def deleteXanchor: Self = this.set("xanchor", js.undefined)
+    def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXref(value: paper | XAxisName): Self = this.set("xref", value.asInstanceOf[js.Any])
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def deleteXref: Self = this.set("xref", js.undefined)
+    def setYanchor(value: top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double | String): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setYanchorUndefined: Self = StObject.set(x, "yanchor", js.undefined)
     
     @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYref(value: paper | YAxisName): Self = StObject.set(x, "yref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYanchor(value: top | middle | bottom): Self = this.set("yanchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYanchor: Self = this.set("yanchor", js.undefined)
-    
-    @scala.inline
-    def setYref(value: paper | YAxisName): Self = this.set("yref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYref: Self = this.set("yref", js.undefined)
+    def setYrefUndefined: Self = StObject.set(x, "yref", js.undefined)
   }
 }

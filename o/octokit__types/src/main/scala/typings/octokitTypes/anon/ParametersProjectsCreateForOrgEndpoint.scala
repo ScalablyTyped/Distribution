@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ProjectsCreateForOrgEndpoint
 import typings.octokitTypes.endpointsMod.ProjectsCreateForOrgRequestOptions
 import typings.octokitTypes.endpointsMod.ProjectsCreateForOrgResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersProjectsCreateForOrgEndpoint extends js.Object {
+trait ParametersProjectsCreateForOrgEndpoint extends StObject {
   
   var parameters: ProjectsCreateForOrgEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersProjectsCreateForOrgEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersProjectsCreateForOrgEndpointOps[Self <: ParametersProjectsCreateForOrgEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersProjectsCreateForOrgEndpointMutableBuilder[Self <: ParametersProjectsCreateForOrgEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ProjectsCreateForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ProjectsCreateForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ProjectsCreateForOrgEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ProjectsCreateForOrgRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ProjectsCreateForOrgResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ProjectsCreateForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

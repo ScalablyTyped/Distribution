@@ -1,5 +1,6 @@
 package typings.validator.mod.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.validator.validatorStrings.`5`
   - typings.validator.validatorStrings.all
 */
-trait UUIDVersion extends js.Object
+trait UUIDVersion extends StObject
 object UUIDVersion {
   
   @scala.inline

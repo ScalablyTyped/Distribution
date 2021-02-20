@@ -1,12 +1,13 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Query
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Query.ConditionExpression")
 @js.native
-class ConditionExpression protected () extends js.Object {
+class ConditionExpression protected () extends StObject {
   /**
     * Contains a condition expression used to filter the results of the query.
     * @param name entityName The logical name of the entity in the condition expression.

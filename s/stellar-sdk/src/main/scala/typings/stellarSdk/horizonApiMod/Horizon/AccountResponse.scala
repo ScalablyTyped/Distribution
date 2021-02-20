@@ -10,6 +10,7 @@ import typings.stellarSdk.stellarSdkStrings.operations
 import typings.stellarSdk.stellarSdkStrings.payments
 import typings.stellarSdk.stellarSdkStrings.trades
 import typings.stellarSdk.stellarSdkStrings.transactions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,66 +69,54 @@ object AccountResponse {
   }
   
   @scala.inline
-  implicit class AccountResponseOps[Self <: AccountResponse] (val x: Self) extends AnyVal {
+  implicit class AccountResponseMutableBuilder[Self <: AccountResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBalances(value: js.Array[BalanceLine[AssetType]]): Self = StObject.set(x, "balances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBalancesVarargs(value: BalanceLine[AssetType]*): Self = StObject.set(x, "balances", js.Array(value :_*))
     
     @scala.inline
-    def setAccount_id(value: String): Self = this.set("account_id", value.asInstanceOf[js.Any])
+    def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalancesVarargs(value: BalanceLine[AssetType]*): Self = this.set("balances", js.Array(value :_*))
+    def setFlags(value: Flags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalances(value: js.Array[BalanceLine[AssetType]]): Self = this.set("balances", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: StringDictionary[String]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setNum_sponsored(value: Double): Self = StObject.set(x, "num_sponsored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: Flags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setNum_sponsoring(value: Double): Self = StObject.set(x, "num_sponsoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPaging_token(value: String): Self = StObject.set(x, "paging_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_sponsored(value: Double): Self = this.set("num_sponsored", value.asInstanceOf[js.Any])
+    def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_sponsoring(value: Double): Self = this.set("num_sponsoring", value.asInstanceOf[js.Any])
+    def setSigners(value: js.Array[AccountSigner]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaging_token(value: String): Self = this.set("paging_token", value.asInstanceOf[js.Any])
+    def setSignersVarargs(value: AccountSigner*): Self = StObject.set(x, "signers", js.Array(value :_*))
     
     @scala.inline
-    def setSequence(value: String): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setSponsor(value: String): Self = StObject.set(x, "sponsor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignersVarargs(value: AccountSigner*): Self = this.set("signers", js.Array(value :_*))
+    def setSponsorUndefined: Self = StObject.set(x, "sponsor", js.undefined)
     
     @scala.inline
-    def setSigners(value: js.Array[AccountSigner]): Self = this.set("signers", value.asInstanceOf[js.Any])
+    def setSubentry_count(value: Double): Self = StObject.set(x, "subentry_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubentry_count(value: Double): Self = this.set("subentry_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThresholds(value: AccountThresholds): Self = this.set("thresholds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSponsor(value: String): Self = this.set("sponsor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSponsor: Self = this.set("sponsor", js.undefined)
+    def setThresholds(value: AccountThresholds): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
   }
 }

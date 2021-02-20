@@ -1,11 +1,12 @@
 package typings.mapboxMapboxSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Config extends js.Object {
+trait Config extends StObject {
   
   var config: js.Any = js.native
   
@@ -26,42 +27,30 @@ object Config {
   }
   
   @scala.inline
-  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
     
     @scala.inline
-    def setConfig(value: js.Any): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setScrollZoom(value: Boolean): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleId(value: String): Self = this.set("styleId", value.asInstanceOf[js.Any])
+    def setScrollZoomUndefined: Self = StObject.set(x, "scrollZoom", js.undefined)
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("ownerId", value.asInstanceOf[js.Any])
+    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("ownerId", js.undefined)
+    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollZoom(value: Boolean): Self = this.set("scrollZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollZoom: Self = this.set("scrollZoom", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

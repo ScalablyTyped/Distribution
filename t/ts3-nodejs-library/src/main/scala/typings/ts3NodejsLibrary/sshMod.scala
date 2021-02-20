@@ -2,14 +2,14 @@ package typings.ts3NodejsLibrary
 
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.ConnectionParams
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.QueryProtocolInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts3-nodejs-library/lib/transport/protocols/ssh", JSImport.Namespace)
-@js.native
-object sshMod extends js.Object {
+object sshMod {
   
+  @JSImport("ts3-nodejs-library/lib/transport/protocols/ssh", "ProtocolSSH")
   @js.native
   class ProtocolSSH protected () extends QueryProtocolInterface {
     def this(config: ConnectionParams) = this()

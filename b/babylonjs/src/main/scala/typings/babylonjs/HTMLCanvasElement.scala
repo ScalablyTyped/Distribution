@@ -1,12 +1,13 @@
 package typings.babylonjs
 
 import typings.std.MediaStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLCanvasElement extends js.Object {
+trait HTMLCanvasElement extends StObject {
   
   /** Capture Stream method defined by some browsers */
   def captureStream(): MediaStream = js.native

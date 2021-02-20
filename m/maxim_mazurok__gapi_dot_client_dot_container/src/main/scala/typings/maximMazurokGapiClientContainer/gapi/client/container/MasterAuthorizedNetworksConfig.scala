@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MasterAuthorizedNetworksConfig extends js.Object {
+trait MasterAuthorizedNetworksConfig extends StObject {
   
   /** cidr_blocks define up to 50 external networks that could access Kubernetes master through HTTPS. */
   var cidrBlocks: js.UndefOr[js.Array[CidrBlock]] = js.native
@@ -22,33 +23,21 @@ object MasterAuthorizedNetworksConfig {
   }
   
   @scala.inline
-  implicit class MasterAuthorizedNetworksConfigOps[Self <: MasterAuthorizedNetworksConfig] (val x: Self) extends AnyVal {
+  implicit class MasterAuthorizedNetworksConfigMutableBuilder[Self <: MasterAuthorizedNetworksConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidrBlocks(value: js.Array[CidrBlock]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrBlocksUndefined: Self = StObject.set(x, "cidrBlocks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrBlocksVarargs(value: CidrBlock*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setCidrBlocksVarargs(value: CidrBlock*): Self = this.set("cidrBlocks", js.Array(value :_*))
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrBlocks(value: js.Array[CidrBlock]): Self = this.set("cidrBlocks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCidrBlocks: Self = this.set("cidrBlocks", js.undefined)
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

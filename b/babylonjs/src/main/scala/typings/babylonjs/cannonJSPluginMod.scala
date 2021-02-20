@@ -4,14 +4,14 @@ import typings.babylonjs.iphysicsengineMod.IPhysicsEnginePlugin
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.physicsImpostorMod.PhysicsImpostor
 import typings.babylonjs.physicsJointMod.IMotorEnabledJoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Physics/Plugins/cannonJSPlugin", JSImport.Namespace)
-@js.native
-object cannonJSPluginMod extends js.Object {
+object cannonJSPluginMod {
   
+  @JSImport("babylonjs/Physics/Plugins/cannonJSPlugin", "CannonJSPlugin")
   @js.native
   class CannonJSPlugin () extends IPhysicsEnginePlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()

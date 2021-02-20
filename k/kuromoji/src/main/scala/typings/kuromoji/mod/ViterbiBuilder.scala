@@ -1,12 +1,13 @@
 package typings.kuromoji.mod
 
 import typings.doublearray.doublearray.DoubleArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViterbiBuilder extends js.Object {
+trait ViterbiBuilder extends StObject {
   
   def build(sentence_str: String): ViterbiLattice = js.native
   
@@ -30,30 +31,18 @@ object ViterbiBuilder {
   }
   
   @scala.inline
-  implicit class ViterbiBuilderOps[Self <: ViterbiBuilder] (val x: Self) extends AnyVal {
+  implicit class ViterbiBuilderMutableBuilder[Self <: ViterbiBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: String => ViterbiLattice): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setToken_info_dictionary(value: TokenInfoDictionary): Self = StObject.set(x, "token_info_dictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrie(value: DoubleArray): Self = StObject.set(x, "trie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: String => ViterbiLattice): Self = this.set("build", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToken_info_dictionary(value: TokenInfoDictionary): Self = this.set("token_info_dictionary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrie(value: DoubleArray): Self = this.set("trie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknown_dictionary(value: UnknownDictionary): Self = this.set("unknown_dictionary", value.asInstanceOf[js.Any])
+    def setUnknown_dictionary(value: UnknownDictionary): Self = StObject.set(x, "unknown_dictionary", value.asInstanceOf[js.Any])
   }
 }

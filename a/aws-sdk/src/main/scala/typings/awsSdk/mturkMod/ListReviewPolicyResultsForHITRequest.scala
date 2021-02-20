@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReviewPolicyResultsForHITRequest extends js.Object {
+trait ListReviewPolicyResultsForHITRequest extends StObject {
   
   /**
     * The unique identifier of the HIT to retrieve review results for.
@@ -46,54 +47,42 @@ object ListReviewPolicyResultsForHITRequest {
   }
   
   @scala.inline
-  implicit class ListReviewPolicyResultsForHITRequestOps[Self <: ListReviewPolicyResultsForHITRequest] (val x: Self) extends AnyVal {
+  implicit class ListReviewPolicyResultsForHITRequestMutableBuilder[Self <: ListReviewPolicyResultsForHITRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def setHITId(value: EntityId): Self = this.set("HITId", value.asInstanceOf[js.Any])
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: ResultSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setPolicyLevels(value: ReviewPolicyLevelList): Self = StObject.set(x, "PolicyLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPolicyLevelsUndefined: Self = StObject.set(x, "PolicyLevels", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setPolicyLevelsVarargs(value: ReviewPolicyLevel*): Self = StObject.set(x, "PolicyLevels", js.Array(value :_*))
     
     @scala.inline
-    def setPolicyLevelsVarargs(value: ReviewPolicyLevel*): Self = this.set("PolicyLevels", js.Array(value :_*))
+    def setRetrieveActions(value: Boolean): Self = StObject.set(x, "RetrieveActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyLevels(value: ReviewPolicyLevelList): Self = this.set("PolicyLevels", value.asInstanceOf[js.Any])
+    def setRetrieveActionsUndefined: Self = StObject.set(x, "RetrieveActions", js.undefined)
     
     @scala.inline
-    def deletePolicyLevels: Self = this.set("PolicyLevels", js.undefined)
+    def setRetrieveResults(value: Boolean): Self = StObject.set(x, "RetrieveResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetrieveActions(value: Boolean): Self = this.set("RetrieveActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetrieveActions: Self = this.set("RetrieveActions", js.undefined)
-    
-    @scala.inline
-    def setRetrieveResults(value: Boolean): Self = this.set("RetrieveResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetrieveResults: Self = this.set("RetrieveResults", js.undefined)
+    def setRetrieveResultsUndefined: Self = StObject.set(x, "RetrieveResults", js.undefined)
   }
 }

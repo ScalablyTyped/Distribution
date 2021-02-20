@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhotoImportStage extends js.Object
+sealed trait PhotoImportStage extends StObject
 /** Specifies the stages of the photo import process. */
 @JSGlobal("Windows.Media.Import.PhotoImportStage")
 @js.native
-object PhotoImportStage extends js.Object {
+object PhotoImportStage extends StObject {
   
   /** Imported items are currently being deleted from the source. */
   @js.native

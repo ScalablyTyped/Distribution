@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NamespaceStatus is information about the current status of a Namespace.
   */
 @js.native
-trait NamespaceStatus extends js.Object {
+trait NamespaceStatus extends StObject {
   
   /**
     * Represents the latest available observations of a namespace's current state.
@@ -29,27 +30,15 @@ object NamespaceStatus {
   }
   
   @scala.inline
-  implicit class NamespaceStatusOps[Self <: NamespaceStatus] (val x: Self) extends AnyVal {
+  implicit class NamespaceStatusMutableBuilder[Self <: NamespaceStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: js.Array[NamespaceCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsVarargs(value: NamespaceCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConditionsVarargs(value: NamespaceCondition*): Self = this.set("conditions", js.Array(value :_*))
-    
-    @scala.inline
-    def setConditions(value: js.Array[NamespaceCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhase(value: String): Self = this.set("phase", value.asInstanceOf[js.Any])
+    def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "LoyaltyEvent")
 @js.native
-class LoyaltyEvent () extends js.Object {
+class LoyaltyEvent () extends StObject {
   
   /**
     * Provides metadata when the event `type` is `ACCUMULATE_POINTS`.

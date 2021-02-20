@@ -3,6 +3,7 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,48 +56,36 @@ object QueryPropertyValue {
   }
   
   @scala.inline
-  implicit class QueryPropertyValueOps[Self <: QueryPropertyValue] (val x: Self) extends AnyVal {
+  implicit class QueryPropertyValueMutableBuilder[Self <: QueryPropertyValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_boolVal(value: () => Boolean): Self = StObject.set(x, "get_boolVal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_intVal(value: () => Double): Self = StObject.set(x, "get_intVal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_queryPropertyValueTypeIndex(value: () => Double): Self = StObject.set(x, "get_queryPropertyValueTypeIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_boolVal(value: () => Boolean): Self = this.set("get_boolVal", js.Any.fromFunction0(value))
+    def setGet_strArray(value: () => js.Array[String]): Self = StObject.set(x, "get_strArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_intVal(value: () => Double): Self = this.set("get_intVal", js.Any.fromFunction0(value))
+    def setGet_strVal(value: () => String): Self = StObject.set(x, "get_strVal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_queryPropertyValueTypeIndex(value: () => Double): Self = this.set("get_queryPropertyValueTypeIndex", js.Any.fromFunction0(value))
+    def setSet_boolVal(value: Boolean => Boolean): Self = StObject.set(x, "set_boolVal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_strArray(value: () => js.Array[String]): Self = this.set("get_strArray", js.Any.fromFunction0(value))
+    def setSet_intVal(value: Double => Double): Self = StObject.set(x, "set_intVal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_strVal(value: () => String): Self = this.set("get_strVal", js.Any.fromFunction0(value))
+    def setSet_queryPropertyValueTypeIndex(value: Double => Unit): Self = StObject.set(x, "set_queryPropertyValueTypeIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_boolVal(value: Boolean => Boolean): Self = this.set("set_boolVal", js.Any.fromFunction1(value))
+    def setSet_strArray(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "set_strArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_intVal(value: Double => Double): Self = this.set("set_intVal", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_queryPropertyValueTypeIndex(value: Double => Unit): Self = this.set("set_queryPropertyValueTypeIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_strArray(value: js.Array[String] => js.Array[String]): Self = this.set("set_strArray", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_strVal(value: String => String): Self = this.set("set_strVal", js.Any.fromFunction1(value))
+    def setSet_strVal(value: String => String): Self = StObject.set(x, "set_strVal", js.Any.fromFunction1(value))
   }
 }

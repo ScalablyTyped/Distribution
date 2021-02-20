@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICLSIDs extends js.Object {
+trait ICLSIDs extends StObject {
   
   val PreviewerCtrl: String = js.native
   
@@ -20,24 +21,12 @@ object ICLSIDs {
   }
   
   @scala.inline
-  implicit class ICLSIDsOps[Self <: ICLSIDs] (val x: Self) extends AnyVal {
+  implicit class ICLSIDsMutableBuilder[Self <: ICLSIDs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreviewerCtrl(value: String): Self = StObject.set(x, "PreviewerCtrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPreviewerCtrl(value: String): Self = this.set("PreviewerCtrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShellListingCtrl(value: String): Self = this.set("ShellListingCtrl", value.asInstanceOf[js.Any])
+    def setShellListingCtrl(value: String): Self = StObject.set(x, "ShellListingCtrl", value.asInstanceOf[js.Any])
   }
 }

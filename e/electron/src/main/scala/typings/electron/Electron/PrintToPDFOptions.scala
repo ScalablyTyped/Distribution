@@ -1,12 +1,13 @@
 package typings.electron.Electron
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintToPDFOptions extends js.Object {
+trait PrintToPDFOptions extends StObject {
   
   /**
     * the header and footer for the PDF.
@@ -59,66 +60,54 @@ object PrintToPDFOptions {
   }
   
   @scala.inline
-  implicit class PrintToPDFOptionsOps[Self <: PrintToPDFOptions] (val x: Self) extends AnyVal {
+  implicit class PrintToPDFOptionsMutableBuilder[Self <: PrintToPDFOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderFooter(value: Record[String, String]): Self = StObject.set(x, "headerFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderFooterUndefined: Self = StObject.set(x, "headerFooter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderFooter(value: Record[String, String]): Self = this.set("headerFooter", value.asInstanceOf[js.Any])
+    def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
     
     @scala.inline
-    def deleteHeaderFooter: Self = this.set("headerFooter", js.undefined)
+    def setMarginsType(value: Double): Self = StObject.set(x, "marginsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandscape(value: Boolean): Self = this.set("landscape", value.asInstanceOf[js.Any])
+    def setMarginsTypeUndefined: Self = StObject.set(x, "marginsType", js.undefined)
     
     @scala.inline
-    def deleteLandscape: Self = this.set("landscape", js.undefined)
+    def setPageRanges(value: Record[String, Double]): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginsType(value: Double): Self = this.set("marginsType", value.asInstanceOf[js.Any])
+    def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
     
     @scala.inline
-    def deleteMarginsType: Self = this.set("marginsType", js.undefined)
+    def setPageSize(value: String | Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageRanges(value: Record[String, Double]): Self = this.set("pageRanges", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deletePageRanges: Self = this.set("pageRanges", js.undefined)
+    def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: String | Size): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setPrintSelectionOnly(value: Boolean): Self = StObject.set(x, "printSelectionOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintBackground(value: Boolean): Self = this.set("printBackground", value.asInstanceOf[js.Any])
+    def setPrintSelectionOnlyUndefined: Self = StObject.set(x, "printSelectionOnly", js.undefined)
     
     @scala.inline
-    def deletePrintBackground: Self = this.set("printBackground", js.undefined)
+    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintSelectionOnly(value: Boolean): Self = this.set("printSelectionOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrintSelectionOnly: Self = this.set("printSelectionOnly", js.undefined)
-    
-    @scala.inline
-    def setScaleFactor(value: Double): Self = this.set("scaleFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleFactor: Self = this.set("scaleFactor", js.undefined)
+    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
   }
 }

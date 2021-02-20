@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVpcPeeringAuthorizationsOutput extends js.Object {
+trait DescribeVpcPeeringAuthorizationsOutput extends StObject {
   
   /**
     * A collection of objects that describe all valid VPC peering operations for the current AWS account.
@@ -21,27 +22,15 @@ object DescribeVpcPeeringAuthorizationsOutput {
   }
   
   @scala.inline
-  implicit class DescribeVpcPeeringAuthorizationsOutputOps[Self <: DescribeVpcPeeringAuthorizationsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeVpcPeeringAuthorizationsOutputMutableBuilder[Self <: DescribeVpcPeeringAuthorizationsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVpcPeeringAuthorizations(value: VpcPeeringAuthorizationList): Self = StObject.set(x, "VpcPeeringAuthorizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVpcPeeringAuthorizationsUndefined: Self = StObject.set(x, "VpcPeeringAuthorizations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVpcPeeringAuthorizationsVarargs(value: VpcPeeringAuthorization*): Self = this.set("VpcPeeringAuthorizations", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpcPeeringAuthorizations(value: VpcPeeringAuthorizationList): Self = this.set("VpcPeeringAuthorizations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcPeeringAuthorizations: Self = this.set("VpcPeeringAuthorizations", js.undefined)
+    def setVpcPeeringAuthorizationsVarargs(value: VpcPeeringAuthorization*): Self = StObject.set(x, "VpcPeeringAuthorizations", js.Array(value :_*))
   }
 }

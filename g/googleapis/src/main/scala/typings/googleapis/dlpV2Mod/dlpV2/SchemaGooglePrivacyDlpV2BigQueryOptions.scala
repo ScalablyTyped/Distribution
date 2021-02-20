@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options defining BigQuery table and row identifiers.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2BigQueryOptions extends js.Object {
+trait SchemaGooglePrivacyDlpV2BigQueryOptions extends StObject {
   
   /**
     * References to fields excluded from scanning. This allows you to skip
@@ -55,60 +56,48 @@ object SchemaGooglePrivacyDlpV2BigQueryOptions {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2BigQueryOptionsOps[Self <: SchemaGooglePrivacyDlpV2BigQueryOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2BigQueryOptionsMutableBuilder[Self <: SchemaGooglePrivacyDlpV2BigQueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedFields(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "excludedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedFieldsUndefined: Self = StObject.set(x, "excludedFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedFieldsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "excludedFields", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedFieldsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = this.set("excludedFields", js.Array(value :_*))
+    def setIdentifyingFields(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "identifyingFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedFields(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = this.set("excludedFields", value.asInstanceOf[js.Any])
+    def setIdentifyingFieldsUndefined: Self = StObject.set(x, "identifyingFields", js.undefined)
     
     @scala.inline
-    def deleteExcludedFields: Self = this.set("excludedFields", js.undefined)
+    def setIdentifyingFieldsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "identifyingFields", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifyingFieldsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = this.set("identifyingFields", js.Array(value :_*))
+    def setRowsLimit(value: String): Self = StObject.set(x, "rowsLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifyingFields(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = this.set("identifyingFields", value.asInstanceOf[js.Any])
+    def setRowsLimitPercent(value: Double): Self = StObject.set(x, "rowsLimitPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifyingFields: Self = this.set("identifyingFields", js.undefined)
+    def setRowsLimitPercentUndefined: Self = StObject.set(x, "rowsLimitPercent", js.undefined)
     
     @scala.inline
-    def setRowsLimit(value: String): Self = this.set("rowsLimit", value.asInstanceOf[js.Any])
+    def setRowsLimitUndefined: Self = StObject.set(x, "rowsLimit", js.undefined)
     
     @scala.inline
-    def deleteRowsLimit: Self = this.set("rowsLimit", js.undefined)
+    def setSampleMethod(value: String): Self = StObject.set(x, "sampleMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsLimitPercent(value: Double): Self = this.set("rowsLimitPercent", value.asInstanceOf[js.Any])
+    def setSampleMethodUndefined: Self = StObject.set(x, "sampleMethod", js.undefined)
     
     @scala.inline
-    def deleteRowsLimitPercent: Self = this.set("rowsLimitPercent", js.undefined)
+    def setTableReference(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "tableReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleMethod(value: String): Self = this.set("sampleMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleMethod: Self = this.set("sampleMethod", js.undefined)
-    
-    @scala.inline
-    def setTableReference(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = this.set("tableReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableReference: Self = this.set("tableReference", js.undefined)
+    def setTableReferenceUndefined: Self = StObject.set(x, "tableReference", js.undefined)
   }
 }

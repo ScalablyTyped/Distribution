@@ -1,18 +1,15 @@
 package typings.winrtUwp.global.Windows.UI.WebUI
 
-import typings.winrtUwp.Windows.ApplicationModel.Activation.IActivatedEventArgs
-import typings.winrtUwp.Windows.ApplicationModel.ISuspendingEventArgs
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.UI.WebUI.ActivatedEventHandler
-import typings.winrtUwp.Windows.UI.WebUI.IWebUINavigatedEventArgs
 import typings.winrtUwp.Windows.UI.WebUI.NavigatedEventHandler
 import typings.winrtUwp.Windows.UI.WebUI.ResumingEventHandler
 import typings.winrtUwp.Windows.UI.WebUI.SuspendingEventHandler
-import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.activated
 import typings.winrtUwp.winrtUwpStrings.navigated
 import typings.winrtUwp.winrtUwpStrings.resuming
 import typings.winrtUwp.winrtUwpStrings.suspending
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,52 +19,83 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class WebUIApplication ()
   extends typings.winrtUwp.Windows.UI.WebUI.WebUIApplication
-/* static members */
-@JSGlobal("Windows.UI.WebUI.WebUIApplication")
-@js.native
-object WebUIApplication extends js.Object {
+object WebUIApplication {
   
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.addEventListener")
+  @js.native
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
-  @JSName("addEventListener")
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.addEventListener")
+  @js.native
   def addEventListener_activated(`type`: activated, listener: ActivatedEventHandler): Unit = js.native
-  @JSName("addEventListener")
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.addEventListener")
+  @js.native
   def addEventListener_navigated(`type`: navigated, listener: NavigatedEventHandler): Unit = js.native
-  @JSName("addEventListener")
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.addEventListener")
+  @js.native
   def addEventListener_resuming(`type`: resuming, listener: ResumingEventHandler): Unit = js.native
-  @JSName("addEventListener")
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.addEventListener")
+  @js.native
   def addEventListener_suspending(`type`: suspending, listener: SuspendingEventHandler): Unit = js.native
   
   /** Occurs when the app is activated. */
-  def onactivated(ev: IActivatedEventArgs with WinRTEvent[_]): Unit = js.native
-  /** Occurs when the app is activated. */
-  @JSName("onactivated")
-  var onactivated_Original: ActivatedEventHandler = js.native
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.onactivated")
+  @js.native
+  def onactivated: ActivatedEventHandler = js.native
+  @scala.inline
+  def onactivated_=(x: ActivatedEventHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onactivated")(x.asInstanceOf[js.Any])
   
   /** Occurs when the app is navigating. */
-  def onnavigated(ev: IWebUINavigatedEventArgs with WinRTEvent[_]): Unit = js.native
-  /** Occurs when the app is navigating. */
-  @JSName("onnavigated")
-  var onnavigated_Original: NavigatedEventHandler = js.native
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.onnavigated")
+  @js.native
+  def onnavigated: NavigatedEventHandler = js.native
+  @scala.inline
+  def onnavigated_=(x: NavigatedEventHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnavigated")(x.asInstanceOf[js.Any])
   
   /** Occurs when the app is resuming. */
-  def onresuming(ev: WinRTEvent[_]): Unit = js.native
-  /** Occurs when the app is resuming. */
-  @JSName("onresuming")
-  var onresuming_Original: ResumingEventHandler = js.native
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.onresuming")
+  @js.native
+  def onresuming: ResumingEventHandler = js.native
+  @scala.inline
+  def onresuming_=(x: ResumingEventHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onresuming")(x.asInstanceOf[js.Any])
   
   /** Occurs when the app is suspending. */
-  def onsuspending(ev: ISuspendingEventArgs with WinRTEvent[_]): Unit = js.native
-  /** Occurs when the app is suspending. */
-  @JSName("onsuspending")
-  var onsuspending_Original: SuspendingEventHandler = js.native
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.onsuspending")
+  @js.native
+  def onsuspending: SuspendingEventHandler = js.native
+  @scala.inline
+  def onsuspending_=(x: SuspendingEventHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsuspending")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.removeEventListener")
+  @js.native
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
-  @JSName("removeEventListener")
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.removeEventListener")
+  @js.native
   def removeEventListener_activated(`type`: activated, listener: ActivatedEventHandler): Unit = js.native
-  @JSName("removeEventListener")
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.removeEventListener")
+  @js.native
   def removeEventListener_navigated(`type`: navigated, listener: NavigatedEventHandler): Unit = js.native
-  @JSName("removeEventListener")
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.removeEventListener")
+  @js.native
   def removeEventListener_resuming(`type`: resuming, listener: ResumingEventHandler): Unit = js.native
-  @JSName("removeEventListener")
+  /* static member */
+  @JSGlobal("Windows.UI.WebUI.WebUIApplication.removeEventListener")
+  @js.native
   def removeEventListener_suspending(`type`: suspending, listener: SuspendingEventHandler): Unit = js.native
 }

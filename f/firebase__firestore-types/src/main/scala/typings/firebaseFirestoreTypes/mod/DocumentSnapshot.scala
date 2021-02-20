@@ -1,12 +1,13 @@
 package typings.firebaseFirestoreTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/firestore-types", "DocumentSnapshot")
 @js.native
-class DocumentSnapshot[T] protected () extends js.Object {
+class DocumentSnapshot[T] protected () extends StObject {
   
   def data(): js.UndefOr[T] = js.native
   def data(options: SnapshotOptions): js.UndefOr[T] = js.native

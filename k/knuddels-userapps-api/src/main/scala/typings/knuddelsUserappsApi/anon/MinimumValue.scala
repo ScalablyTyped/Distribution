@@ -1,12 +1,13 @@
 package typings.knuddelsUserappsApi.anon
 
 import typings.knuddelsUserappsApi.mod.global.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MinimumValue extends js.Object {
+trait MinimumValue extends StObject {
   
   var maximumValue: js.UndefOr[Double] = js.native
   
@@ -23,39 +24,27 @@ object MinimumValue {
   }
   
   @scala.inline
-  implicit class MinimumValueOps[Self <: MinimumValue] (val x: Self) extends AnyVal {
+  implicit class MinimumValueMutableBuilder[Self <: MinimumValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumValue(value: Double): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumValue(value: Double): Self = this.set("maximumValue", value.asInstanceOf[js.Any])
+    def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
     
     @scala.inline
-    def deleteMaximumValue: Self = this.set("maximumValue", js.undefined)
+    def setTargetUsers(value: js.Array[User]): Self = StObject.set(x, "targetUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumValue(value: Double): Self = this.set("minimumValue", value.asInstanceOf[js.Any])
+    def setTargetUsersUndefined: Self = StObject.set(x, "targetUsers", js.undefined)
     
     @scala.inline
-    def deleteMinimumValue: Self = this.set("minimumValue", js.undefined)
-    
-    @scala.inline
-    def setTargetUsersVarargs(value: User*): Self = this.set("targetUsers", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetUsers(value: js.Array[User]): Self = this.set("targetUsers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetUsers: Self = this.set("targetUsers", js.undefined)
+    def setTargetUsersVarargs(value: User*): Self = StObject.set(x, "targetUsers", js.Array(value :_*))
   }
 }

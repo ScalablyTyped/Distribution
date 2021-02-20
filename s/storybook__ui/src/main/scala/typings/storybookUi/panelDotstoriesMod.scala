@@ -2,27 +2,43 @@ package typings.storybookUi
 
 import typings.react.mod.global.JSX.Element
 import typings.storybookUi.anon.A11y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/ui/dist/containers/panel.stories", JSImport.Namespace)
-@js.native
-object panelDotstoriesMod extends js.Object {
+object panelDotstoriesMod {
   
-  def AllAddons(): Element = js.native
-  
-  @js.native
-  object FilteredAddons extends js.Object {
+  object default {
     
-    def apply(): Element = js.native
+    @JSImport("@storybook/ui/dist/containers/panel.stories", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var parameters: A11y = js.native
+    @JSImport("@storybook/ui/dist/containers/panel.stories", "default.title")
+    @js.native
+    def title: String = js.native
+    @scala.inline
+    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@storybook/ui/dist/containers/panel.stories", "AllAddons")
   @js.native
-  object default extends js.Object {
+  def AllAddons(): Element = js.native
+  
+  object FilteredAddons {
     
-    var title: String = js.native
+    @JSImport("@storybook/ui/dist/containers/panel.stories", "FilteredAddons")
+    @js.native
+    def apply(): Element = js.native
+    @JSImport("@storybook/ui/dist/containers/panel.stories", "FilteredAddons")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@storybook/ui/dist/containers/panel.stories", "FilteredAddons.parameters")
+    @js.native
+    def parameters: A11y = js.native
+    @scala.inline
+    def parameters_=(x: A11y): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
   }
 }

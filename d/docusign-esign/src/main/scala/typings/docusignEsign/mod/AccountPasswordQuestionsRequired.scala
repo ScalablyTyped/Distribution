@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountPasswordQuestionsRequired extends js.Object {
+trait AccountPasswordQuestionsRequired extends StObject {
   
   /**
     * The maximum number of password reset questions allowed for the account. This number must be between `0` and `4`, and equal to or greater than `minimumQuestions`.
@@ -26,30 +27,18 @@ object AccountPasswordQuestionsRequired {
   }
   
   @scala.inline
-  implicit class AccountPasswordQuestionsRequiredOps[Self <: AccountPasswordQuestionsRequired] (val x: Self) extends AnyVal {
+  implicit class AccountPasswordQuestionsRequiredMutableBuilder[Self <: AccountPasswordQuestionsRequired] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumQuestions(value: String): Self = StObject.set(x, "maximumQuestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumQuestionsUndefined: Self = StObject.set(x, "maximumQuestions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumQuestions(value: String): Self = StObject.set(x, "minimumQuestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumQuestions(value: String): Self = this.set("maximumQuestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumQuestions: Self = this.set("maximumQuestions", js.undefined)
-    
-    @scala.inline
-    def setMinimumQuestions(value: String): Self = this.set("minimumQuestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumQuestions: Self = this.set("minimumQuestions", js.undefined)
+    def setMinimumQuestionsUndefined: Self = StObject.set(x, "minimumQuestions", js.undefined)
   }
 }

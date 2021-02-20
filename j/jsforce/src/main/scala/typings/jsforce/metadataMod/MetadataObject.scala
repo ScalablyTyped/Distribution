@@ -1,11 +1,12 @@
 package typings.jsforce.metadataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetadataObject extends js.Object {
+trait MetadataObject extends StObject {
   
   var childXmlNames: js.UndefOr[js.Array[String]] = js.native
   
@@ -28,54 +29,42 @@ object MetadataObject {
   }
   
   @scala.inline
-  implicit class MetadataObjectOps[Self <: MetadataObject] (val x: Self) extends AnyVal {
+  implicit class MetadataObjectMutableBuilder[Self <: MetadataObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildXmlNames(value: js.Array[String]): Self = StObject.set(x, "childXmlNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildXmlNamesUndefined: Self = StObject.set(x, "childXmlNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildXmlNamesVarargs(value: String*): Self = StObject.set(x, "childXmlNames", js.Array(value :_*))
     
     @scala.inline
-    def setXmlName(value: String): Self = this.set("xmlName", value.asInstanceOf[js.Any])
+    def setDirectoryName(value: String): Self = StObject.set(x, "directoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildXmlNamesVarargs(value: String*): Self = this.set("childXmlNames", js.Array(value :_*))
+    def setDirectoryNameUndefined: Self = StObject.set(x, "directoryName", js.undefined)
     
     @scala.inline
-    def setChildXmlNames(value: js.Array[String]): Self = this.set("childXmlNames", value.asInstanceOf[js.Any])
+    def setInFolder(value: Boolean): Self = StObject.set(x, "inFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildXmlNames: Self = this.set("childXmlNames", js.undefined)
+    def setInFolderUndefined: Self = StObject.set(x, "inFolder", js.undefined)
     
     @scala.inline
-    def setDirectoryName(value: String): Self = this.set("directoryName", value.asInstanceOf[js.Any])
+    def setMetaFile(value: Boolean): Self = StObject.set(x, "metaFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirectoryName: Self = this.set("directoryName", js.undefined)
+    def setMetaFileUndefined: Self = StObject.set(x, "metaFile", js.undefined)
     
     @scala.inline
-    def setInFolder(value: Boolean): Self = this.set("inFolder", value.asInstanceOf[js.Any])
+    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInFolder: Self = this.set("inFolder", js.undefined)
+    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     
     @scala.inline
-    def setMetaFile(value: Boolean): Self = this.set("metaFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetaFile: Self = this.set("metaFile", js.undefined)
-    
-    @scala.inline
-    def setSuffix(value: String): Self = this.set("suffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    def setXmlName(value: String): Self = StObject.set(x, "xmlName", value.asInstanceOf[js.Any])
   }
 }

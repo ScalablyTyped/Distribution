@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeadLetterPolicy extends js.Object {
+trait DeadLetterPolicy extends StObject {
   
   /**
     * The name of the topic to which dead letter messages should be published. Format is `projects/{project}/topics/{topic}`.The Cloud Pub/Sub service account associated with the
@@ -30,30 +31,18 @@ object DeadLetterPolicy {
   }
   
   @scala.inline
-  implicit class DeadLetterPolicyOps[Self <: DeadLetterPolicy] (val x: Self) extends AnyVal {
+  implicit class DeadLetterPolicyMutableBuilder[Self <: DeadLetterPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeadLetterTopic(value: String): Self = StObject.set(x, "deadLetterTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadLetterTopicUndefined: Self = StObject.set(x, "deadLetterTopic", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDeliveryAttempts(value: Double): Self = StObject.set(x, "maxDeliveryAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetterTopic(value: String): Self = this.set("deadLetterTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeadLetterTopic: Self = this.set("deadLetterTopic", js.undefined)
-    
-    @scala.inline
-    def setMaxDeliveryAttempts(value: Double): Self = this.set("maxDeliveryAttempts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxDeliveryAttempts: Self = this.set("maxDeliveryAttempts", js.undefined)
+    def setMaxDeliveryAttemptsUndefined: Self = StObject.set(x, "maxDeliveryAttempts", js.undefined)
   }
 }

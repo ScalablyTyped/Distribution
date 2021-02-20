@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAlarmsForMetricInput extends js.Object {
+trait DescribeAlarmsForMetricInput extends StObject {
   
   /**
     * The dimensions associated with the metric. If the metric has any associated dimensions, you must specify them in order for the call to succeed.
@@ -51,57 +52,45 @@ object DescribeAlarmsForMetricInput {
   }
   
   @scala.inline
-  implicit class DescribeAlarmsForMetricInputOps[Self <: DescribeAlarmsForMetricInput] (val x: Self) extends AnyVal {
+  implicit class DescribeAlarmsForMetricInputMutableBuilder[Self <: DescribeAlarmsForMetricInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    def setExtendedStatistic(value: ExtendedStatistic): Self = StObject.set(x, "ExtendedStatistic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    def setExtendedStatisticUndefined: Self = StObject.set(x, "ExtendedStatistic", js.undefined)
     
     @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: Dimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedStatistic(value: ExtendedStatistic): Self = this.set("ExtendedStatistic", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
     
     @scala.inline
-    def deleteExtendedStatistic: Self = this.set("ExtendedStatistic", js.undefined)
+    def setStatistic(value: Statistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("Period", value.asInstanceOf[js.Any])
+    def setStatisticUndefined: Self = StObject.set(x, "Statistic", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("Period", js.undefined)
+    def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistic(value: Statistic): Self = this.set("Statistic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatistic: Self = this.set("Statistic", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: StandardUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("Unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

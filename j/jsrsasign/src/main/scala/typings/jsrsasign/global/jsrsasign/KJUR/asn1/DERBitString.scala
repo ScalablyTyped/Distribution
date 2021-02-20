@@ -5,6 +5,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.BinParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasignBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,10 +54,7 @@ class DERBitString ()
   def this(params: BinParam) = this()
   def this(params: HexParam) = this()
 }
-/* static members */
-@JSGlobal("jsrsasign.KJUR.asn1.DERBitString")
-@js.native
-object DERBitString extends js.Object {
+object DERBitString {
   
   /**
     * generate an array of falses with specified length
@@ -68,5 +66,8 @@ object DERBitString extends js.Object {
     * o = new KJUR.asn1.DERBitString();
     * o.newFalseArray(3) → [false, false, false]
     */
+  /* static member */
+  @JSGlobal("jsrsasign.KJUR.asn1.DERBitString.newFalseArray")
+  @js.native
   def newFalseArray(nLength: Double): js.Array[`false`] = js.native
 }

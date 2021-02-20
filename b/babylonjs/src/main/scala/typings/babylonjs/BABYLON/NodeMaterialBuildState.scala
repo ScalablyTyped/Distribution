@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.RemoveAttributes
 import typings.babylonjs.anon.RepeatKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeMaterialBuildState extends js.Object {
+trait NodeMaterialBuildState extends StObject {
   
   /** @hidden */
   var _attributeDeclaration: String = js.native

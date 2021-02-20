@@ -1,11 +1,12 @@
 package typings.griddleReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GriddleStyleElements[T] extends js.Object {
+trait GriddleStyleElements[T] extends StObject {
   
   var Cell: js.UndefOr[T] = js.native
   
@@ -54,132 +55,120 @@ object GriddleStyleElements {
   }
   
   @scala.inline
-  implicit class GriddleStyleElementsOps[Self <: GriddleStyleElements[_], T] (val x: Self with GriddleStyleElements[T]) extends AnyVal {
+  implicit class GriddleStyleElementsMutableBuilder[Self <: GriddleStyleElements[_], T] (val x: Self with GriddleStyleElements[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCell(value: T): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellUndefined: Self = StObject.set(x, "Cell", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: T): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCell(value: T): Self = this.set("Cell", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def deleteCell: Self = this.set("Cell", js.undefined)
+    def setLayout(value: T): Self = StObject.set(x, "Layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: T): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "Layout", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setLoading(value: T): Self = StObject.set(x, "Loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: T): Self = this.set("Layout", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "Loading", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("Layout", js.undefined)
+    def setNextButton(value: T): Self = StObject.set(x, "NextButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: T): Self = this.set("Loading", value.asInstanceOf[js.Any])
+    def setNextButtonUndefined: Self = StObject.set(x, "NextButton", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("Loading", js.undefined)
+    def setNoResults(value: T): Self = StObject.set(x, "NoResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextButton(value: T): Self = this.set("NextButton", value.asInstanceOf[js.Any])
+    def setNoResultsUndefined: Self = StObject.set(x, "NoResults", js.undefined)
     
     @scala.inline
-    def deleteNextButton: Self = this.set("NextButton", js.undefined)
+    def setPageDropdown(value: T): Self = StObject.set(x, "PageDropdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoResults(value: T): Self = this.set("NoResults", value.asInstanceOf[js.Any])
+    def setPageDropdownUndefined: Self = StObject.set(x, "PageDropdown", js.undefined)
     
     @scala.inline
-    def deleteNoResults: Self = this.set("NoResults", js.undefined)
+    def setPagination(value: T): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageDropdown(value: T): Self = this.set("PageDropdown", value.asInstanceOf[js.Any])
+    def setPaginationUndefined: Self = StObject.set(x, "Pagination", js.undefined)
     
     @scala.inline
-    def deletePageDropdown: Self = this.set("PageDropdown", js.undefined)
+    def setPreviousButton(value: T): Self = StObject.set(x, "PreviousButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagination(value: T): Self = this.set("Pagination", value.asInstanceOf[js.Any])
+    def setPreviousButtonUndefined: Self = StObject.set(x, "PreviousButton", js.undefined)
     
     @scala.inline
-    def deletePagination: Self = this.set("Pagination", js.undefined)
+    def setRow(value: T): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousButton(value: T): Self = this.set("PreviousButton", value.asInstanceOf[js.Any])
+    def setRowDefinition(value: T): Self = StObject.set(x, "RowDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreviousButton: Self = this.set("PreviousButton", js.undefined)
+    def setRowDefinitionUndefined: Self = StObject.set(x, "RowDefinition", js.undefined)
     
     @scala.inline
-    def setRow(value: T): Self = this.set("Row", value.asInstanceOf[js.Any])
+    def setRowUndefined: Self = StObject.set(x, "Row", js.undefined)
     
     @scala.inline
-    def deleteRow: Self = this.set("Row", js.undefined)
+    def setSettings(value: T): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowDefinition(value: T): Self = this.set("RowDefinition", value.asInstanceOf[js.Any])
+    def setSettingsToggle(value: T): Self = StObject.set(x, "SettingsToggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowDefinition: Self = this.set("RowDefinition", js.undefined)
+    def setSettingsToggleUndefined: Self = StObject.set(x, "SettingsToggle", js.undefined)
     
     @scala.inline
-    def setSettings(value: T): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
     
     @scala.inline
-    def deleteSettings: Self = this.set("Settings", js.undefined)
+    def setTable(value: T): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettingsToggle(value: T): Self = this.set("SettingsToggle", value.asInstanceOf[js.Any])
+    def setTableBody(value: T): Self = StObject.set(x, "TableBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettingsToggle: Self = this.set("SettingsToggle", js.undefined)
+    def setTableBodyUndefined: Self = StObject.set(x, "TableBody", js.undefined)
     
     @scala.inline
-    def setTable(value: T): Self = this.set("Table", value.asInstanceOf[js.Any])
+    def setTableHeading(value: T): Self = StObject.set(x, "TableHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTable: Self = this.set("Table", js.undefined)
+    def setTableHeadingCell(value: T): Self = StObject.set(x, "TableHeadingCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableBody(value: T): Self = this.set("TableBody", value.asInstanceOf[js.Any])
+    def setTableHeadingCellAscending(value: T): Self = StObject.set(x, "TableHeadingCellAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableBody: Self = this.set("TableBody", js.undefined)
+    def setTableHeadingCellAscendingUndefined: Self = StObject.set(x, "TableHeadingCellAscending", js.undefined)
     
     @scala.inline
-    def setTableHeading(value: T): Self = this.set("TableHeading", value.asInstanceOf[js.Any])
+    def setTableHeadingCellDescending(value: T): Self = StObject.set(x, "TableHeadingCellDescending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableHeading: Self = this.set("TableHeading", js.undefined)
+    def setTableHeadingCellDescendingUndefined: Self = StObject.set(x, "TableHeadingCellDescending", js.undefined)
     
     @scala.inline
-    def setTableHeadingCell(value: T): Self = this.set("TableHeadingCell", value.asInstanceOf[js.Any])
+    def setTableHeadingCellUndefined: Self = StObject.set(x, "TableHeadingCell", js.undefined)
     
     @scala.inline
-    def deleteTableHeadingCell: Self = this.set("TableHeadingCell", js.undefined)
+    def setTableHeadingUndefined: Self = StObject.set(x, "TableHeading", js.undefined)
     
     @scala.inline
-    def setTableHeadingCellAscending(value: T): Self = this.set("TableHeadingCellAscending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableHeadingCellAscending: Self = this.set("TableHeadingCellAscending", js.undefined)
-    
-    @scala.inline
-    def setTableHeadingCellDescending(value: T): Self = this.set("TableHeadingCellDescending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableHeadingCellDescending: Self = this.set("TableHeadingCellDescending", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
   }
 }

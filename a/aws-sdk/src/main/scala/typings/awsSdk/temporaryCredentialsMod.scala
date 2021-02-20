@@ -1,15 +1,17 @@
 package typings.awsSdk
 
 import typings.awsSdk.credentialsMod.Credentials
+import typings.awsSdk.stsMod.arnType
+import typings.awsSdk.stsMod.roleSessionNameType
 import typings.awsSdk.temporaryCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws-sdk/lib/credentials/temporary_credentials", JSImport.Namespace)
-@js.native
-object temporaryCredentialsMod extends js.Object {
+object temporaryCredentialsMod {
   
+  @JSImport("aws-sdk/lib/credentials/temporary_credentials", "TemporaryCredentials")
   @js.native
   /**
     * Creates a new temporary credentials object.
@@ -30,13 +32,26 @@ object temporaryCredentialsMod extends js.Object {
     var masterCredentials: Credentials = js.native
   }
   // Needed to expose interfaces on the class
-  @js.native
-  object TemporaryCredentials extends js.Object {
+  object TemporaryCredentials {
     
     /* Rewritten from type alias, can be one of: 
       - typings.awsSdk.stsMod.AssumeRoleRequest
       - typings.awsSdk.stsMod.GetSessionTokenRequest
     */
-    trait TemporaryCredentialsOptions extends js.Object
+    trait TemporaryCredentialsOptions extends StObject
+    object TemporaryCredentialsOptions {
+      
+      @scala.inline
+      def AssumeRoleRequest(RoleArn: arnType, RoleSessionName: roleSessionNameType): typings.awsSdk.stsMod.AssumeRoleRequest = {
+        val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], RoleSessionName = RoleSessionName.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.awsSdk.stsMod.AssumeRoleRequest]
+      }
+      
+      @scala.inline
+      def GetSessionTokenRequest(): typings.awsSdk.stsMod.GetSessionTokenRequest = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[typings.awsSdk.stsMod.GetSessionTokenRequest]
+      }
+    }
   }
 }

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,30 +69,18 @@ object XPropertyState {
   }
   
   @scala.inline
-  implicit class XPropertyStateOps[Self <: XPropertyState] (val x: Self) extends AnyVal {
+  implicit class XPropertyStateMutableBuilder[Self <: XPropertyState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPropertyDefault(value: String => js.Any): Self = StObject.set(x, "getPropertyDefault", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPropertyState(value: String => PropertyState): Self = StObject.set(x, "getPropertyState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertyDefault(value: String => js.Any): Self = this.set("getPropertyDefault", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPropertyState(value: String => PropertyState): Self = this.set("getPropertyState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = this.set("getPropertyStates", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPropertyToDefault(value: String => Unit): Self = this.set("setPropertyToDefault", js.Any.fromFunction1(value))
+    def setSetPropertyToDefault(value: String => Unit): Self = StObject.set(x, "setPropertyToDefault", js.Any.fromFunction1(value))
   }
 }

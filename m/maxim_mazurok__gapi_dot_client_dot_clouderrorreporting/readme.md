@@ -3,6 +3,24 @@
 
 Typings are for version 1.0.20201104
 
+## Library description:
+TypeScript typings for Error Reporting API v1beta1
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @maxim_mazurok/gapi.client.clouderrorreporting |
+| Keywords           | - |
+| # releases         | 8 |
+| # dependents       | 1 |
+| # downloads        | 902 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)
+- [Bugs](https://github.com/Maxim-Mazurok/google-api-typings-generator/issues)
+- [Repository](https://github.com/Maxim-Mazurok/google-api-typings-generator)
+- [Npm](https://www.npmjs.com/package/%40maxim_mazurok%2Fgapi.client.clouderrorreporting)
+    
 
 
 ## Note

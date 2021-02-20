@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberOfLevelZeroTilesX extends js.Object {
+trait NumberOfLevelZeroTilesX extends StObject {
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
   
@@ -24,42 +25,30 @@ object NumberOfLevelZeroTilesX {
   }
   
   @scala.inline
-  implicit class NumberOfLevelZeroTilesXOps[Self <: NumberOfLevelZeroTilesX] (val x: Self) extends AnyVal {
+  implicit class NumberOfLevelZeroTilesXMutableBuilder[Self <: NumberOfLevelZeroTilesX] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfLevelZeroTilesX(value: Double): Self = StObject.set(x, "numberOfLevelZeroTilesX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    def setNumberOfLevelZeroTilesXUndefined: Self = StObject.set(x, "numberOfLevelZeroTilesX", js.undefined)
     
     @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    def setNumberOfLevelZeroTilesY(value: Double): Self = StObject.set(x, "numberOfLevelZeroTilesY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfLevelZeroTilesX(value: Double): Self = this.set("numberOfLevelZeroTilesX", value.asInstanceOf[js.Any])
+    def setNumberOfLevelZeroTilesYUndefined: Self = StObject.set(x, "numberOfLevelZeroTilesY", js.undefined)
     
     @scala.inline
-    def deleteNumberOfLevelZeroTilesX: Self = this.set("numberOfLevelZeroTilesX", js.undefined)
+    def setRectangle(value: typings.cesium.mod.Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfLevelZeroTilesY(value: Double): Self = this.set("numberOfLevelZeroTilesY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfLevelZeroTilesY: Self = this.set("numberOfLevelZeroTilesY", js.undefined)
-    
-    @scala.inline
-    def setRectangle(value: typings.cesium.mod.Rectangle): Self = this.set("rectangle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
   }
 }

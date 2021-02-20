@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object CorrelationSubscription {
   }
   
   @scala.inline
-  implicit class CorrelationSubscriptionOps[Self <: CorrelationSubscription] (val x: Self) extends AnyVal {
+  implicit class CorrelationSubscriptionMutableBuilder[Self <: CorrelationSubscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrelationKeyRef(value: CorrelationKey): Self = StObject.set(x, "correlationKeyRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorrelationPropertyBinding(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationPropertyBinding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCorrelationKeyRef(value: CorrelationKey): Self = this.set("correlationKeyRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCorrelationPropertyBindingVarargs(value: CorrelationKey*): Self = this.set("correlationPropertyBinding", js.Array(value :_*))
-    
-    @scala.inline
-    def setCorrelationPropertyBinding(value: js.Array[CorrelationKey]): Self = this.set("correlationPropertyBinding", value.asInstanceOf[js.Any])
+    def setCorrelationPropertyBindingVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationPropertyBinding", js.Array(value :_*))
   }
 }

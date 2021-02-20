@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnChanges extends js.Object {
+trait OnChanges extends StObject {
   
   /**
     * A callback method that is invoked immediately after the
@@ -25,21 +26,9 @@ object OnChanges {
   }
   
   @scala.inline
-  implicit class OnChangesOps[Self <: OnChanges] (val x: Self) extends AnyVal {
+  implicit class OnChangesMutableBuilder[Self <: OnChanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNgOnChanges(value: SimpleChanges => Unit): Self = this.set("ngOnChanges", js.Any.fromFunction1(value))
+    def setNgOnChanges(value: SimpleChanges => Unit): Self = StObject.set(x, "ngOnChanges", js.Any.fromFunction1(value))
   }
 }

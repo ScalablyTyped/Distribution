@@ -3,14 +3,14 @@ package typings.three
 import typings.three.anon.Func
 import typings.three.geometryMod.Geometry
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/ParametricGeometry", JSImport.Namespace)
-@js.native
-object parametricGeometryMod extends js.Object {
+object parametricGeometryMod {
   
+  @JSImport("three/src/geometries/ParametricGeometry", "ParametricGeometry")
   @js.native
   class ParametricGeometry protected () extends Geometry {
     def this(

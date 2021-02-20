@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackageMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListOriginEndpointsResponse extends js.Object {
+trait ListOriginEndpointsResponse extends StObject {
   
   /**
     * A token that can be used to resume pagination from the end of the collection.
@@ -26,33 +27,21 @@ object ListOriginEndpointsResponse {
   }
   
   @scala.inline
-  implicit class ListOriginEndpointsResponseOps[Self <: ListOriginEndpointsResponse] (val x: Self) extends AnyVal {
+  implicit class ListOriginEndpointsResponseMutableBuilder[Self <: ListOriginEndpointsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginEndpoints(value: listOfOriginEndpoint): Self = StObject.set(x, "OriginEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setOriginEndpointsUndefined: Self = StObject.set(x, "OriginEndpoints", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setOriginEndpointsVarargs(value: OriginEndpoint*): Self = this.set("OriginEndpoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setOriginEndpoints(value: listOfOriginEndpoint): Self = this.set("OriginEndpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginEndpoints: Self = this.set("OriginEndpoints", js.undefined)
+    def setOriginEndpointsVarargs(value: OriginEndpoint*): Self = StObject.set(x, "OriginEndpoints", js.Array(value :_*))
   }
 }

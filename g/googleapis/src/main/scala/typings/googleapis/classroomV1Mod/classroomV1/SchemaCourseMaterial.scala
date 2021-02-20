@@ -1,5 +1,6 @@
 package typings.googleapis.classroomV1Mod.classroomV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A material attached to a course as part of a material set.
   */
 @js.native
-trait SchemaCourseMaterial extends js.Object {
+trait SchemaCourseMaterial extends StObject {
   
   /**
     * Google Drive file attachment.
@@ -39,42 +40,30 @@ object SchemaCourseMaterial {
   }
   
   @scala.inline
-  implicit class SchemaCourseMaterialOps[Self <: SchemaCourseMaterial] (val x: Self) extends AnyVal {
+  implicit class SchemaCourseMaterialMutableBuilder[Self <: SchemaCourseMaterial] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriveFile(value: SchemaDriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForm(value: SchemaForm): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveFile(value: SchemaDriveFile): Self = this.set("driveFile", value.asInstanceOf[js.Any])
+    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
     @scala.inline
-    def deleteDriveFile: Self = this.set("driveFile", js.undefined)
+    def setLink(value: SchemaLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm(value: SchemaForm): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteForm: Self = this.set("form", js.undefined)
+    def setYouTubeVideo(value: SchemaYouTubeVideo): Self = StObject.set(x, "youTubeVideo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: SchemaLink): Self = this.set("link", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
-    
-    @scala.inline
-    def setYouTubeVideo(value: SchemaYouTubeVideo): Self = this.set("youTubeVideo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYouTubeVideo: Self = this.set("youTubeVideo", js.undefined)
+    def setYouTubeVideoUndefined: Self = StObject.set(x, "youTubeVideo", js.undefined)
   }
 }

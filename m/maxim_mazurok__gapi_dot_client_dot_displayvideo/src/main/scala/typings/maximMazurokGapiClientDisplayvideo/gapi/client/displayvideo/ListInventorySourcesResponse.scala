@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListInventorySourcesResponse extends js.Object {
+trait ListInventorySourcesResponse extends StObject {
   
   /** The list of inventory sources. This list will be absent if empty. */
   var inventorySources: js.UndefOr[js.Array[InventorySource]] = js.native
@@ -22,33 +23,21 @@ object ListInventorySourcesResponse {
   }
   
   @scala.inline
-  implicit class ListInventorySourcesResponseOps[Self <: ListInventorySourcesResponse] (val x: Self) extends AnyVal {
+  implicit class ListInventorySourcesResponseMutableBuilder[Self <: ListInventorySourcesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInventorySources(value: js.Array[InventorySource]): Self = StObject.set(x, "inventorySources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInventorySourcesUndefined: Self = StObject.set(x, "inventorySources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInventorySourcesVarargs(value: InventorySource*): Self = StObject.set(x, "inventorySources", js.Array(value :_*))
     
     @scala.inline
-    def setInventorySourcesVarargs(value: InventorySource*): Self = this.set("inventorySources", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventorySources(value: js.Array[InventorySource]): Self = this.set("inventorySources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInventorySources: Self = this.set("inventorySources", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

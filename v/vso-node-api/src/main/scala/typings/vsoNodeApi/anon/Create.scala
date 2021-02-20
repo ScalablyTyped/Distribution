@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Create extends js.Object {
+trait Create extends StObject {
   
   var create: scala.Double = js.native
   
@@ -35,36 +36,24 @@ object Create {
   }
   
   @scala.inline
-  implicit class CreateOps[Self <: Create] (val x: Self) extends AnyVal {
+  implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: scala.Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdit(value: scala.Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: scala.Double): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setManagePermissions(value: scala.Double): Self = StObject.set(x, "managePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: scala.Double): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdit(value: scala.Double): Self = this.set("edit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManagePermissions(value: scala.Double): Self = this.set("managePermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRead(value: scala.Double): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setRead(value: scala.Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
   }
 }

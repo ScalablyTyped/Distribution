@@ -4,13 +4,14 @@ import typings.awsSdk.elasticacheMod.BooleanOptional
 import typings.awsSdk.elasticacheMod.IntegerOptional
 import typings.awsSdk.elasticacheMod.String
 import typings.awsSdk.serviceMod.WaiterConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/elasticache.DescribeCacheClustersMessage & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait DescribeCacheClustersMess extends js.Object {
+trait DescribeCacheClustersMess extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -49,54 +50,42 @@ object DescribeCacheClustersMess {
   }
   
   @scala.inline
-  implicit class DescribeCacheClustersMessOps[Self <: DescribeCacheClustersMess] (val x: Self) extends AnyVal {
+  implicit class DescribeCacheClustersMessMutableBuilder[Self <: DescribeCacheClustersMess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
     @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setShowCacheClustersNotInReplicationGroups(value: BooleanOptional): Self = StObject.set(x, "ShowCacheClustersNotInReplicationGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    def setShowCacheClustersNotInReplicationGroupsUndefined: Self = StObject.set(x, "ShowCacheClustersNotInReplicationGroups", js.undefined)
     
     @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setShowCacheNodeInfo(value: BooleanOptional): Self = StObject.set(x, "ShowCacheNodeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCacheClustersNotInReplicationGroups(value: BooleanOptional): Self = this.set("ShowCacheClustersNotInReplicationGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowCacheClustersNotInReplicationGroups: Self = this.set("ShowCacheClustersNotInReplicationGroups", js.undefined)
-    
-    @scala.inline
-    def setShowCacheNodeInfo(value: BooleanOptional): Self = this.set("ShowCacheNodeInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowCacheNodeInfo: Self = this.set("ShowCacheNodeInfo", js.undefined)
+    def setShowCacheNodeInfoUndefined: Self = StObject.set(x, "ShowCacheNodeInfo", js.undefined)
   }
 }

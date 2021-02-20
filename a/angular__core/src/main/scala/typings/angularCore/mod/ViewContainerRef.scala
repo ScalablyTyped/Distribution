@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ViewContainerRef")
 @js.native
-abstract class ViewContainerRef () extends js.Object {
+abstract class ViewContainerRef () extends StObject {
   
   /**
     * Destroys all views in this container.

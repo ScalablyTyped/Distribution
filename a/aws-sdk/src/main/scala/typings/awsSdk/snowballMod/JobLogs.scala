@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobLogs extends js.Object {
+trait JobLogs extends StObject {
   
   /**
     * A link to an Amazon S3 presigned URL where the job completion report is located.
@@ -31,36 +32,24 @@ object JobLogs {
   }
   
   @scala.inline
-  implicit class JobLogsOps[Self <: JobLogs] (val x: Self) extends AnyVal {
+  implicit class JobLogsMutableBuilder[Self <: JobLogs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobCompletionReportURI(value: String): Self = StObject.set(x, "JobCompletionReportURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobCompletionReportURIUndefined: Self = StObject.set(x, "JobCompletionReportURI", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobFailureLogURI(value: String): Self = StObject.set(x, "JobFailureLogURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobCompletionReportURI(value: String): Self = this.set("JobCompletionReportURI", value.asInstanceOf[js.Any])
+    def setJobFailureLogURIUndefined: Self = StObject.set(x, "JobFailureLogURI", js.undefined)
     
     @scala.inline
-    def deleteJobCompletionReportURI: Self = this.set("JobCompletionReportURI", js.undefined)
+    def setJobSuccessLogURI(value: String): Self = StObject.set(x, "JobSuccessLogURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobFailureLogURI(value: String): Self = this.set("JobFailureLogURI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobFailureLogURI: Self = this.set("JobFailureLogURI", js.undefined)
-    
-    @scala.inline
-    def setJobSuccessLogURI(value: String): Self = this.set("JobSuccessLogURI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobSuccessLogURI: Self = this.set("JobSuccessLogURI", js.undefined)
+    def setJobSuccessLogURIUndefined: Self = StObject.set(x, "JobSuccessLogURI", js.undefined)
   }
 }

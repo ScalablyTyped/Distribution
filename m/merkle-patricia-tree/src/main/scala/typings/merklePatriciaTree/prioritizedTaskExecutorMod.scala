@@ -1,15 +1,15 @@
 package typings.merklePatriciaTree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("merkle-patricia-tree/dist/prioritizedTaskExecutor", JSImport.Namespace)
-@js.native
-object prioritizedTaskExecutorMod extends js.Object {
+object prioritizedTaskExecutorMod {
   
+  @JSImport("merkle-patricia-tree/dist/prioritizedTaskExecutor", "PrioritizedTaskExecutor")
   @js.native
-  class PrioritizedTaskExecutor protected () extends js.Object {
+  class PrioritizedTaskExecutor protected () extends StObject {
     /**
       * Executes tasks up to maxPoolSize at a time, other items are put in a priority queue.
       * @class PrioritizedTaskExecutor

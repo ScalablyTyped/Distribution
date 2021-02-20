@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotGridMessages extends js.Object {
+trait PivotGridMessages extends StObject {
   
   var columnFields: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object PivotGridMessages {
   }
   
   @scala.inline
-  implicit class PivotGridMessagesOps[Self <: PivotGridMessages] (val x: Self) extends AnyVal {
+  implicit class PivotGridMessagesMutableBuilder[Self <: PivotGridMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnFields(value: String): Self = StObject.set(x, "columnFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnFieldsUndefined: Self = StObject.set(x, "columnFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldMenu(value: PivotGridMessagesFieldMenu): Self = StObject.set(x, "fieldMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnFields(value: String): Self = this.set("columnFields", value.asInstanceOf[js.Any])
+    def setFieldMenuUndefined: Self = StObject.set(x, "fieldMenu", js.undefined)
     
     @scala.inline
-    def deleteColumnFields: Self = this.set("columnFields", js.undefined)
+    def setMeasureFields(value: String): Self = StObject.set(x, "measureFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldMenu(value: PivotGridMessagesFieldMenu): Self = this.set("fieldMenu", value.asInstanceOf[js.Any])
+    def setMeasureFieldsUndefined: Self = StObject.set(x, "measureFields", js.undefined)
     
     @scala.inline
-    def deleteFieldMenu: Self = this.set("fieldMenu", js.undefined)
+    def setRowFields(value: String): Self = StObject.set(x, "rowFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasureFields(value: String): Self = this.set("measureFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeasureFields: Self = this.set("measureFields", js.undefined)
-    
-    @scala.inline
-    def setRowFields(value: String): Self = this.set("rowFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowFields: Self = this.set("rowFields", js.undefined)
+    def setRowFieldsUndefined: Self = StObject.set(x, "rowFields", js.undefined)
   }
 }

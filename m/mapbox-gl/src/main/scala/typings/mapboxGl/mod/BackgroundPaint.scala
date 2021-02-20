@@ -1,5 +1,6 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object BackgroundPaint {
   }
   
   @scala.inline
-  implicit class BackgroundPaintOps[Self <: BackgroundPaint] (val x: Self) extends AnyVal {
+  implicit class BackgroundPaintMutableBuilder[Self <: BackgroundPaint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setBackground-color`(value: String | Expression): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setBackground-color-transition`(value: Transition): Self = StObject.set(x, "background-color-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setBackground-color-transitionUndefined`: Self = StObject.set(x, "background-color-transition", js.undefined)
     
     @scala.inline
-    def `setBackground-color`(value: String | Expression): Self = this.set("background-color", value.asInstanceOf[js.Any])
+    def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
     
     @scala.inline
-    def `deleteBackground-color`: Self = this.set("background-color", js.undefined)
+    def `setBackground-opacity`(value: Double | Expression): Self = StObject.set(x, "background-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-color-transition`(value: Transition): Self = this.set("background-color-transition", value.asInstanceOf[js.Any])
+    def `setBackground-opacity-transition`(value: Transition): Self = StObject.set(x, "background-opacity-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBackground-color-transition`: Self = this.set("background-color-transition", js.undefined)
+    def `setBackground-opacity-transitionUndefined`: Self = StObject.set(x, "background-opacity-transition", js.undefined)
     
     @scala.inline
-    def `setBackground-opacity`(value: Double | Expression): Self = this.set("background-opacity", value.asInstanceOf[js.Any])
+    def `setBackground-opacityUndefined`: Self = StObject.set(x, "background-opacity", js.undefined)
     
     @scala.inline
-    def `deleteBackground-opacity`: Self = this.set("background-opacity", js.undefined)
+    def `setBackground-pattern`(value: String): Self = StObject.set(x, "background-pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-opacity-transition`(value: Transition): Self = this.set("background-opacity-transition", value.asInstanceOf[js.Any])
+    def `setBackground-pattern-transition`(value: Transition): Self = StObject.set(x, "background-pattern-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBackground-opacity-transition`: Self = this.set("background-opacity-transition", js.undefined)
+    def `setBackground-pattern-transitionUndefined`: Self = StObject.set(x, "background-pattern-transition", js.undefined)
     
     @scala.inline
-    def `setBackground-pattern`(value: String): Self = this.set("background-pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteBackground-pattern`: Self = this.set("background-pattern", js.undefined)
-    
-    @scala.inline
-    def `setBackground-pattern-transition`(value: Transition): Self = this.set("background-pattern-transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteBackground-pattern-transition`: Self = this.set("background-pattern-transition", js.undefined)
+    def `setBackground-patternUndefined`: Self = StObject.set(x, "background-pattern", js.undefined)
   }
 }

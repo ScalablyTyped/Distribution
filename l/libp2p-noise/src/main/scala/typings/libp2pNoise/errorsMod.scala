@@ -3,14 +3,14 @@ package typings.libp2pNoise
 import typings.bl.mod.^
 import typings.node.Buffer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("libp2p-noise/dist/src/errors", JSImport.Namespace)
-@js.native
-object errorsMod extends js.Object {
+object errorsMod {
   
+  @JSImport("libp2p-noise/dist/src/errors", "FailedIKError")
   @js.native
   class FailedIKError protected () extends Error {
     def this(initialMsg: String) = this()
@@ -20,6 +20,6 @@ object errorsMod extends js.Object {
     def this(initialMsg: ^, message: String) = this()
     def this(initialMsg: Buffer, message: String) = this()
     
-    var initialMsg: String | ^  | Buffer = js.native
+    var initialMsg: String | ^ | Buffer = js.native
   }
 }

@@ -2,12 +2,13 @@ package typings.activexWord.Word
 
 import typings.activexOffice.Office.MsoColorType
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorFormat extends js.Object {
+trait ColorFormat extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -75,72 +76,60 @@ object ColorFormat {
   }
   
   @scala.inline
-  implicit class ColorFormatOps[Self <: ColorFormat] (val x: Self) extends AnyVal {
+  implicit class ColorFormatMutableBuilder[Self <: ColorFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlack(value: Double): Self = StObject.set(x, "Black", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrightness(value: Double): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlack(value: Double): Self = this.set("Black", value.asInstanceOf[js.Any])
+    def setCyan(value: Double): Self = StObject.set(x, "Cyan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: Double): Self = this.set("Brightness", value.asInstanceOf[js.Any])
+    def setInk(value: Double => Double): Self = StObject.set(x, "Ink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setMagenta(value: Double): Self = StObject.set(x, "Magenta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan(value: Double): Self = this.set("Cyan", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInk(value: Double => Double): Self = this.set("Ink", js.Any.fromFunction1(value))
+    def setObjectThemeColor(value: WdThemeColorIndex): Self = StObject.set(x, "ObjectThemeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagenta(value: Double): Self = this.set("Magenta", value.asInstanceOf[js.Any])
+    def setOverPrint(value: MsoTriState): Self = StObject.set(x, "OverPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectThemeColor(value: WdThemeColorIndex): Self = this.set("ObjectThemeColor", value.asInstanceOf[js.Any])
+    def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverPrint(value: MsoTriState): Self = this.set("OverPrint", value.asInstanceOf[js.Any])
+    def setSchemeColor(value: Double): Self = StObject.set(x, "SchemeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSetCMYK(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "SetCMYK", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setRGB(value: Double): Self = this.set("RGB", value.asInstanceOf[js.Any])
+    def setTintAndShade(value: Double): Self = StObject.set(x, "TintAndShade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemeColor(value: Double): Self = this.set("SchemeColor", value.asInstanceOf[js.Any])
+    def setType(value: MsoColorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetCMYK(value: (Double, Double, Double, Double) => Unit): Self = this.set("SetCMYK", js.Any.fromFunction4(value))
+    def setWordDotColorFormat_typekey(value: ColorFormat): Self = StObject.set(x, "Word.ColorFormat_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintAndShade(value: Double): Self = this.set("TintAndShade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MsoColorType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotColorFormat_typekey(value: ColorFormat): Self = this.set("Word.ColorFormat_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYellow(value: Double): Self = this.set("Yellow", value.asInstanceOf[js.Any])
+    def setYellow(value: Double): Self = StObject.set(x, "Yellow", value.asInstanceOf[js.Any])
   }
 }

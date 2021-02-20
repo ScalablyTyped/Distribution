@@ -1,12 +1,13 @@
 package typings.storybookUi.anon
 
 import typings.storybookUi.mobileMod.MobileProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropsMobileProps extends js.Object {
+trait PropsMobileProps extends StObject {
   
   var props: MobileProps = js.native
 }
@@ -19,21 +20,9 @@ object PropsMobileProps {
   }
   
   @scala.inline
-  implicit class PropsMobilePropsOps[Self <: PropsMobileProps] (val x: Self) extends AnyVal {
+  implicit class PropsMobilePropsMutableBuilder[Self <: PropsMobileProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProps(value: MobileProps): Self = this.set("props", value.asInstanceOf[js.Any])
+    def setProps(value: MobileProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

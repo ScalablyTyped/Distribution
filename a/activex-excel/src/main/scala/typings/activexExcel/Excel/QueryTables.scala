@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.activexAdodb.ADODB.Recordset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryTables extends js.Object {
+trait QueryTables extends StObject {
   
   def apply(Index: String): QueryTable = js.native
   def apply(Index: Double): QueryTable = js.native

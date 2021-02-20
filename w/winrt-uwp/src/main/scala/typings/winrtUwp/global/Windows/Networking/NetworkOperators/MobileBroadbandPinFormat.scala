@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes the possible formats for a mobile broadband PIN. */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandPinFormat")
 @js.native
-object MobileBroadbandPinFormat extends js.Object {
+object MobileBroadbandPinFormat extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

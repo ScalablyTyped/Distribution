@@ -1,12 +1,13 @@
 package typings.awsSdkClientGlacierNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/model/UploadMultipartPartInput", JSImport.Namespace)
-@js.native
-object uploadMultipartPartInputMod extends js.Object {
+object uploadMultipartPartInputMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/model/UploadMultipartPartInput", "UploadMultipartPartInput")
+  @js.native
   val UploadMultipartPartInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.chrome.chrome.contentSettings
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chrome.chromeStrings.regular
   - typings.chrome.chromeStrings.incognito_session_only
 */
-trait ScopeEnum extends js.Object
+trait ScopeEnum extends StObject
 object ScopeEnum {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "ValueRange")
 @js.native
-class ValueRange protected () extends js.Object {
+class ValueRange protected () extends StObject {
   
   def checkValidIntValue(value: Double, field: TemporalField): Double = js.native
   
@@ -30,12 +31,18 @@ class ValueRange protected () extends js.Object {
   
   def smallestMaximum(): Double = js.native
 }
-/* static members */
-@JSImport("js-joda", "ValueRange")
-@js.native
-object ValueRange extends js.Object {
+object ValueRange {
   
+  /* static member */
+  @JSImport("js-joda", "ValueRange.of")
+  @js.native
   def of(minSmallest: Double, minLargest: Double, maxSmallest: Double, maxLargest: Double): ValueRange = js.native
+  /* static member */
+  @JSImport("js-joda", "ValueRange.of")
+  @js.native
   def of(min: Double, maxSmallest: Double, maxLargest: Double): ValueRange = js.native
+  /* static member */
+  @JSImport("js-joda", "ValueRange.of")
+  @js.native
   def of(min: Double, max: Double): ValueRange = js.native
 }

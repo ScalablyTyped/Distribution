@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.Midi
 
 import typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the Microsoft GS wavetable software synthesizer, included in Windows. This synthesizer provides a Roland GS sound set, which includes and extends the General MIDI sound set. */
 @js.native
-trait MidiSynthesizer extends js.Object {
+trait MidiSynthesizer extends StObject {
   
   /** Gets the audio output device being used by this instance of the Microsoft MIDI synthesizer. */
   var audioDevice: DeviceInformation = js.native
@@ -50,36 +51,24 @@ object MidiSynthesizer {
   }
   
   @scala.inline
-  implicit class MidiSynthesizerOps[Self <: MidiSynthesizer] (val x: Self) extends AnyVal {
+  implicit class MidiSynthesizerMutableBuilder[Self <: MidiSynthesizer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioDevice(value: DeviceInformation): Self = StObject.set(x, "audioDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioDevice(value: DeviceInformation): Self = this.set("audioDevice", value.asInstanceOf[js.Any])
+    def setSendBuffer(value: IBuffer => Unit): Self = StObject.set(x, "sendBuffer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setSendMessage(value: IMidiMessage => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSendBuffer(value: IBuffer => Unit): Self = this.set("sendBuffer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSendMessage(value: IMidiMessage => Unit): Self = this.set("sendMessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

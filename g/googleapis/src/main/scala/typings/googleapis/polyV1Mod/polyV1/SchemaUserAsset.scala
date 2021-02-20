@@ -1,5 +1,6 @@
 package typings.googleapis.polyV1Mod.polyV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Data about the user&#39;s asset.
   */
 @js.native
-trait SchemaUserAsset extends js.Object {
+trait SchemaUserAsset extends StObject {
   
   /**
     * An Asset.
@@ -24,24 +25,12 @@ object SchemaUserAsset {
   }
   
   @scala.inline
-  implicit class SchemaUserAssetOps[Self <: SchemaUserAsset] (val x: Self) extends AnyVal {
+  implicit class SchemaUserAssetMutableBuilder[Self <: SchemaUserAsset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsset(value: SchemaAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAsset(value: SchemaAsset): Self = this.set("asset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsset: Self = this.set("asset", js.undefined)
+    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
   }
 }

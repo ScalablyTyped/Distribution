@@ -3,14 +3,14 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.linkTypesMod.ILink
 import typings.officeUiFabricReact.linkTypesMod.ILinkProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Link/Link.base", JSImport.Namespace)
-@js.native
-object linkBaseMod extends js.Object {
+object linkBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Link/Link.base", "LinkBase")
   @js.native
   class LinkBase protected ()
     extends Component[ILinkProps, js.Object, js.Any]

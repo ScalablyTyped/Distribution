@@ -2,6 +2,7 @@ package typings.phaser.mod
 
 import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.ICollisionData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Query ()
   extends typings.phaser.MatterJS.Query
-/* static members */
-@JSImport("matter", "Query")
-@js.native
-object Query extends js.Object {
+object Query {
   
   /**
     * Returns all bodies whose vertices contain the given point, from the given set of bodies.
@@ -29,6 +27,9 @@ object Query extends js.Object {
     * @param {vector} point
     * @return {body[]} The bodies matching the query
     */
+  /* static member */
+  @JSImport("matter", "Query.point")
+  @js.native
   def point(bodies: js.Array[BodyType], point: typings.phaser.MatterJS.Vector): js.Array[BodyType] = js.native
   
   /**
@@ -40,11 +41,16 @@ object Query extends js.Object {
     * @param {number} [rayWidth]
     * @return {object[]} Collisions
     */
+  /* static member */
+  @JSImport("matter", "Query.ray")
+  @js.native
   def ray(
     bodies: js.Array[BodyType],
     startPoint: typings.phaser.MatterJS.Vector,
     endPoint: typings.phaser.MatterJS.Vector
   ): js.Array[ICollisionData] = js.native
+  @JSImport("matter", "Query.ray")
+  @js.native
   def ray(
     bodies: js.Array[BodyType],
     startPoint: typings.phaser.MatterJS.Vector,
@@ -60,6 +66,11 @@ object Query extends js.Object {
     * @param {bool} [outside=false]
     * @return {body[]} The bodies matching the query
     */
+  /* static member */
+  @JSImport("matter", "Query.region")
+  @js.native
   def region(bodies: js.Array[BodyType], bounds: typings.phaser.MatterJS.Bounds): js.Array[BodyType] = js.native
+  @JSImport("matter", "Query.region")
+  @js.native
   def region(bodies: js.Array[BodyType], bounds: typings.phaser.MatterJS.Bounds, outside: Boolean): js.Array[BodyType] = js.native
 }

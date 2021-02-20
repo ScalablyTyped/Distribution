@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,16 +40,18 @@ class SceneOptimizerOptions ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.SceneOptimizerOptions")
-@js.native
-object SceneOptimizerOptions extends js.Object {
+object SceneOptimizerOptions {
   
   /**
     * Creates a list of pre-defined optimizations aimed to have a big impact on the scene visual
     * @param targetFrameRate defines the target frame rate (60 by default)
     * @returns a SceneOptimizerOptions object
     */
+  @JSGlobal("BABYLON.SceneOptimizerOptions.HighDegradationAllowed")
+  @js.native
   def HighDegradationAllowed(): typings.babylonjs.BABYLON.SceneOptimizerOptions = js.native
+  @JSGlobal("BABYLON.SceneOptimizerOptions.HighDegradationAllowed")
+  @js.native
   def HighDegradationAllowed(targetFrameRate: Double): typings.babylonjs.BABYLON.SceneOptimizerOptions = js.native
   
   /**
@@ -56,7 +59,11 @@ object SceneOptimizerOptions extends js.Object {
     * @param targetFrameRate defines the target frame rate (60 by default)
     * @returns a SceneOptimizerOptions object
     */
+  @JSGlobal("BABYLON.SceneOptimizerOptions.LowDegradationAllowed")
+  @js.native
   def LowDegradationAllowed(): typings.babylonjs.BABYLON.SceneOptimizerOptions = js.native
+  @JSGlobal("BABYLON.SceneOptimizerOptions.LowDegradationAllowed")
+  @js.native
   def LowDegradationAllowed(targetFrameRate: Double): typings.babylonjs.BABYLON.SceneOptimizerOptions = js.native
   
   /**
@@ -64,6 +71,10 @@ object SceneOptimizerOptions extends js.Object {
     * @param targetFrameRate defines the target frame rate (60 by default)
     * @returns a SceneOptimizerOptions object
     */
+  @JSGlobal("BABYLON.SceneOptimizerOptions.ModerateDegradationAllowed")
+  @js.native
   def ModerateDegradationAllowed(): typings.babylonjs.BABYLON.SceneOptimizerOptions = js.native
+  @JSGlobal("BABYLON.SceneOptimizerOptions.ModerateDegradationAllowed")
+  @js.native
   def ModerateDegradationAllowed(targetFrameRate: Double): typings.babylonjs.BABYLON.SceneOptimizerOptions = js.native
 }

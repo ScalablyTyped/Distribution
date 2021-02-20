@@ -2,12 +2,13 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionAuditLogEntry extends js.Object {
+trait ExtensionAuditLogEntry extends StObject {
   
   /**
     * Change that was made to extension
@@ -38,30 +39,18 @@ object ExtensionAuditLogEntry {
   }
   
   @scala.inline
-  implicit class ExtensionAuditLogEntryOps[Self <: ExtensionAuditLogEntry] (val x: Self) extends AnyVal {
+  implicit class ExtensionAuditLogEntryMutableBuilder[Self <: ExtensionAuditLogEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditAction(value: String): Self = StObject.set(x, "auditAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuditDate(value: Date): Self = StObject.set(x, "auditDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditAction(value: String): Self = this.set("auditAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuditDate(value: Date): Self = this.set("auditDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedBy(value: IdentityRef): Self = this.set("updatedBy", value.asInstanceOf[js.Any])
+    def setUpdatedBy(value: IdentityRef): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
   }
 }

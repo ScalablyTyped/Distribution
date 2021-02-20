@@ -1,6 +1,7 @@
 package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A set of attributes, each in the format `[KEY]:[VALUE]`.
   */
 @js.native
-trait SchemaAttributes extends js.Object {
+trait SchemaAttributes extends StObject {
   
   /**
     * The set of attributes. Each attribute&#39;s key can be up to 128 bytes
@@ -38,30 +39,18 @@ object SchemaAttributes {
   }
   
   @scala.inline
-  implicit class SchemaAttributesOps[Self <: SchemaAttributes] (val x: Self) extends AnyVal {
+  implicit class SchemaAttributesMutableBuilder[Self <: SchemaAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeMap(value: StringDictionary[SchemaAttributeValue]): Self = StObject.set(x, "attributeMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeMapUndefined: Self = StObject.set(x, "attributeMap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDroppedAttributesCount(value: Double): Self = StObject.set(x, "droppedAttributesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeMap(value: StringDictionary[SchemaAttributeValue]): Self = this.set("attributeMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeMap: Self = this.set("attributeMap", js.undefined)
-    
-    @scala.inline
-    def setDroppedAttributesCount(value: Double): Self = this.set("droppedAttributesCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDroppedAttributesCount: Self = this.set("droppedAttributesCount", js.undefined)
+    def setDroppedAttributesCountUndefined: Self = StObject.set(x, "droppedAttributesCount", js.undefined)
   }
 }

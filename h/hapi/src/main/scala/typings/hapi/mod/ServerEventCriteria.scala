@@ -1,12 +1,13 @@
 package typings.hapi.mod
 
 import typings.hapi.anon.All
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerEventCriteria[T] extends js.Object {
+trait ServerEventCriteria[T] extends StObject {
   
   /**
     * a string or array of strings specifying the event channels to subscribe to. If the event registration specified a list of allowed channels, the channels array must match the allowed
@@ -58,63 +59,51 @@ object ServerEventCriteria {
   }
   
   @scala.inline
-  implicit class ServerEventCriteriaOps[Self <: ServerEventCriteria[_], T] (val x: Self with ServerEventCriteria[T]) extends AnyVal {
+  implicit class ServerEventCriteriaMutableBuilder[Self <: ServerEventCriteria[_], T] (val x: Self with ServerEventCriteria[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: T): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
+    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
     @scala.inline
-    def setChannels(value: String | js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def setClone(value: Boolean): Self = this.set("clone", value.asInstanceOf[js.Any])
+    def setFilter(value: String | js.Array[String] | All): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClone: Self = this.set("clone", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setName(value: T): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterVarargs(value: String*): Self = this.set("filter", js.Array(value :_*))
+    def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String | js.Array[String] | All): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setTags(value: Boolean): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpread(value: Boolean): Self = this.set("spread", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpread: Self = this.set("spread", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Boolean): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.nodeHueApi.mod
 
 import typings.nodeHueApi.anon.Address
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISchedule extends js.Object {
+trait ISchedule extends StObject {
   
   var command: Address = js.native
   
@@ -26,30 +27,18 @@ object ISchedule {
   }
   
   @scala.inline
-  implicit class IScheduleOps[Self <: ISchedule] (val x: Self) extends AnyVal {
+  implicit class IScheduleMutableBuilder[Self <: ISchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: Address): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: Address): Self = this.set("command", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Date): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

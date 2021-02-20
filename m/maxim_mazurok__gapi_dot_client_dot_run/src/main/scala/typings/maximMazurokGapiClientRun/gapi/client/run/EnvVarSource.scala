@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvVarSource extends js.Object {
+trait EnvVarSource extends StObject {
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Selects a key of a ConfigMap. */
   var configMapKeyRef: js.UndefOr[ConfigMapKeySelector] = js.native
@@ -22,30 +23,18 @@ object EnvVarSource {
   }
   
   @scala.inline
-  implicit class EnvVarSourceOps[Self <: EnvVarSource] (val x: Self) extends AnyVal {
+  implicit class EnvVarSourceMutableBuilder[Self <: EnvVarSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigMapKeyRef(value: ConfigMapKeySelector): Self = StObject.set(x, "configMapKeyRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigMapKeyRefUndefined: Self = StObject.set(x, "configMapKeyRef", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretKeyRef(value: SecretKeySelector): Self = StObject.set(x, "secretKeyRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigMapKeyRef(value: ConfigMapKeySelector): Self = this.set("configMapKeyRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigMapKeyRef: Self = this.set("configMapKeyRef", js.undefined)
-    
-    @scala.inline
-    def setSecretKeyRef(value: SecretKeySelector): Self = this.set("secretKeyRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretKeyRef: Self = this.set("secretKeyRef", js.undefined)
+    def setSecretKeyRefUndefined: Self = StObject.set(x, "secretKeyRef", js.undefined)
   }
 }

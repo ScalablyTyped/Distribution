@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSecurityState extends js.Object {
+trait FileSecurityState extends StObject {
   
   // Complex type containing file hashes (cryptographic and location-sensitive).
   var fileHash: js.UndefOr[NullableOption[FileHash]] = js.native
@@ -31,54 +32,42 @@ object FileSecurityState {
   }
   
   @scala.inline
-  implicit class FileSecurityStateOps[Self <: FileSecurityState] (val x: Self) extends AnyVal {
+  implicit class FileSecurityStateMutableBuilder[Self <: FileSecurityState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileHash(value: NullableOption[FileHash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileHashNull: Self = StObject.set(x, "fileHash", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
     
     @scala.inline
-    def setFileHash(value: NullableOption[FileHash]): Self = this.set("fileHash", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileHash: Self = this.set("fileHash", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setFileHashNull: Self = this.set("fileHash", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPath(value: NullableOption[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPathNull: Self = StObject.set(x, "path", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setPath(value: NullableOption[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setRiskScore(value: NullableOption[String]): Self = StObject.set(x, "riskScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setRiskScoreNull: Self = StObject.set(x, "riskScore", null)
     
     @scala.inline
-    def setPathNull: Self = this.set("path", null)
-    
-    @scala.inline
-    def setRiskScore(value: NullableOption[String]): Self = this.set("riskScore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiskScore: Self = this.set("riskScore", js.undefined)
-    
-    @scala.inline
-    def setRiskScoreNull: Self = this.set("riskScore", null)
+    def setRiskScoreUndefined: Self = StObject.set(x, "riskScore", js.undefined)
   }
 }

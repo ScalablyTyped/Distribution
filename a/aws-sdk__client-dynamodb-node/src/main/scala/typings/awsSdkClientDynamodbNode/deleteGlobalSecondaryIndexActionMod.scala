@@ -1,13 +1,13 @@
 package typings.awsSdkClientDynamodbNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-node/model/_DeleteGlobalSecondaryIndexAction", JSImport.Namespace)
-@js.native
-object deleteGlobalSecondaryIndexActionMod extends js.Object {
+object deleteGlobalSecondaryIndexActionMod {
   
-  @JSName("_DeleteGlobalSecondaryIndexAction")
+  @JSImport("@aws-sdk/client-dynamodb-node/model/_DeleteGlobalSecondaryIndexAction", "_DeleteGlobalSecondaryIndexAction")
+  @js.native
   val DeleteGlobalSecondaryIndexAction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.SelectedRowObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,27 +32,15 @@ object TableViewRowsselectedEvent {
   }
   
   @scala.inline
-  implicit class TableViewRowsselectedEventOps[Self <: TableViewRowsselectedEvent] (val x: Self) extends AnyVal {
+  implicit class TableViewRowsselectedEventMutableBuilder[Self <: TableViewRowsselectedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSelectedRows(value: js.Array[SelectedRowObject]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectedRowsVarargs(value: SelectedRowObject*): Self = StObject.set(x, "selectedRows", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSelectedRowsVarargs(value: SelectedRowObject*): Self = this.set("selectedRows", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedRows(value: js.Array[SelectedRowObject]): Self = this.set("selectedRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartingRow(value: SelectedRowObject): Self = this.set("startingRow", value.asInstanceOf[js.Any])
+    def setStartingRow(value: SelectedRowObject): Self = StObject.set(x, "startingRow", value.asInstanceOf[js.Any])
   }
 }

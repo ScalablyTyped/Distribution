@@ -19,12 +19,13 @@ import typings.chrome.chrome.cast.SenderPlatform
 import typings.chrome.chrome.cast.Session
 import typings.chrome.chrome.cast.SessionRequest
 import typings.chrome.chrome.cast.Volume
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofcast extends js.Object {
+trait Typeofcast extends StObject {
   
   var ApiConfig: Instantiable5[
     /* sessionRequest */ SessionRequest, 

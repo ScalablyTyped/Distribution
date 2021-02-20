@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,21 +10,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class BRDFTextureTools ()
   extends typings.babylonjs.indexMod.BRDFTextureTools
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "BRDFTextureTools")
-@js.native
-object BRDFTextureTools extends js.Object {
+object BRDFTextureTools {
+  
+  @JSImport("babylonjs/Legacy/legacy", "BRDFTextureTools")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gets a default environment BRDF for MS-BRDF Height Correlated BRDF
     * @param scene defines the hosting scene
     * @returns the environment BRDF texture
     */
+  @JSImport("babylonjs/Legacy/legacy", "BRDFTextureTools.GetEnvironmentBRDFTexture")
+  @js.native
   def GetEnvironmentBRDFTexture(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.baseTextureMod.BaseTexture = js.native
   
-  var _environmentBRDFBase64Texture: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "BRDFTextureTools._environmentBRDFBase64Texture")
+  @js.native
+  def _environmentBRDFBase64Texture: js.Any = js.native
+  @scala.inline
+  def _environmentBRDFBase64Texture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_environmentBRDFBase64Texture")(x.asInstanceOf[js.Any])
   
   /**
     * Prevents texture cache collision
     */
-  var _instanceNumber: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "BRDFTextureTools._instanceNumber")
+  @js.native
+  def _instanceNumber: js.Any = js.native
+  @scala.inline
+  def _instanceNumber_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instanceNumber")(x.asInstanceOf[js.Any])
 }

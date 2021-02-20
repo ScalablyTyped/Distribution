@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,30 +20,18 @@ object ShiftPreferences {
   }
   
   @scala.inline
-  implicit class ShiftPreferencesOps[Self <: ShiftPreferences] (val x: Self) extends AnyVal {
+  implicit class ShiftPreferencesMutableBuilder[Self <: ShiftPreferences] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailability(value: NullableOption[js.Array[ShiftAvailability]]): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityNull: Self = StObject.set(x, "availability", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
     @scala.inline
-    def setAvailabilityVarargs(value: ShiftAvailability*): Self = this.set("availability", js.Array(value :_*))
-    
-    @scala.inline
-    def setAvailability(value: NullableOption[js.Array[ShiftAvailability]]): Self = this.set("availability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailability: Self = this.set("availability", js.undefined)
-    
-    @scala.inline
-    def setAvailabilityNull: Self = this.set("availability", null)
+    def setAvailabilityVarargs(value: ShiftAvailability*): Self = StObject.set(x, "availability", js.Array(value :_*))
   }
 }

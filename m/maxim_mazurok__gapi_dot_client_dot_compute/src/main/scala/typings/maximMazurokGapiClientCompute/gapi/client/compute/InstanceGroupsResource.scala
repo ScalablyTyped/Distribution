@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientCompute.anon.FilterInstanceGroup
 import typings.maximMazurokGapiClientCompute.anon.InstanceGroupKey
 import typings.maximMazurokGapiClientCompute.anon.ProjectQuotaUserRequestIdResource
 import typings.maximMazurokGapiClientCompute.anon.UserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceGroupsResource extends js.Object {
+trait InstanceGroupsResource extends StObject {
   
   def addInstances(request: FieldsInstanceGroup, body: InstanceGroupsAddInstancesRequest): Request[Operation] = js.native
   /**

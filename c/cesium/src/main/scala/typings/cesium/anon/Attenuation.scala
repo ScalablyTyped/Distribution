@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attenuation extends js.Object {
+trait Attenuation extends StObject {
   
   var attenuation: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object Attenuation {
   }
   
   @scala.inline
-  implicit class AttenuationOps[Self <: Attenuation] (val x: Self) extends AnyVal {
+  implicit class AttenuationMutableBuilder[Self <: Attenuation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttenuation(value: Boolean): Self = StObject.set(x, "attenuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttenuationUndefined: Self = StObject.set(x, "attenuation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackFaceCulling(value: Boolean): Self = StObject.set(x, "backFaceCulling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttenuation(value: Boolean): Self = this.set("attenuation", value.asInstanceOf[js.Any])
+    def setBackFaceCullingUndefined: Self = StObject.set(x, "backFaceCulling", js.undefined)
     
     @scala.inline
-    def deleteAttenuation: Self = this.set("attenuation", js.undefined)
+    def setBaseResolution(value: Double): Self = StObject.set(x, "baseResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackFaceCulling(value: Boolean): Self = this.set("backFaceCulling", value.asInstanceOf[js.Any])
+    def setBaseResolutionUndefined: Self = StObject.set(x, "baseResolution", js.undefined)
     
     @scala.inline
-    def deleteBackFaceCulling: Self = this.set("backFaceCulling", js.undefined)
+    def setEyeDomeLighting(value: Boolean): Self = StObject.set(x, "eyeDomeLighting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseResolution(value: Double): Self = this.set("baseResolution", value.asInstanceOf[js.Any])
+    def setEyeDomeLightingRadius(value: Double): Self = StObject.set(x, "eyeDomeLightingRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaseResolution: Self = this.set("baseResolution", js.undefined)
+    def setEyeDomeLightingRadiusUndefined: Self = StObject.set(x, "eyeDomeLightingRadius", js.undefined)
     
     @scala.inline
-    def setEyeDomeLighting(value: Boolean): Self = this.set("eyeDomeLighting", value.asInstanceOf[js.Any])
+    def setEyeDomeLightingStrength(value: Double): Self = StObject.set(x, "eyeDomeLightingStrength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEyeDomeLighting: Self = this.set("eyeDomeLighting", js.undefined)
+    def setEyeDomeLightingStrengthUndefined: Self = StObject.set(x, "eyeDomeLightingStrength", js.undefined)
     
     @scala.inline
-    def setEyeDomeLightingRadius(value: Double): Self = this.set("eyeDomeLightingRadius", value.asInstanceOf[js.Any])
+    def setEyeDomeLightingUndefined: Self = StObject.set(x, "eyeDomeLighting", js.undefined)
     
     @scala.inline
-    def deleteEyeDomeLightingRadius: Self = this.set("eyeDomeLightingRadius", js.undefined)
+    def setGeometricErrorScale(value: Double): Self = StObject.set(x, "geometricErrorScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEyeDomeLightingStrength(value: Double): Self = this.set("eyeDomeLightingStrength", value.asInstanceOf[js.Any])
+    def setGeometricErrorScaleUndefined: Self = StObject.set(x, "geometricErrorScale", js.undefined)
     
     @scala.inline
-    def deleteEyeDomeLightingStrength: Self = this.set("eyeDomeLightingStrength", js.undefined)
+    def setMaximumAttenuation(value: Double): Self = StObject.set(x, "maximumAttenuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometricErrorScale(value: Double): Self = this.set("geometricErrorScale", value.asInstanceOf[js.Any])
+    def setMaximumAttenuationUndefined: Self = StObject.set(x, "maximumAttenuation", js.undefined)
     
     @scala.inline
-    def deleteGeometricErrorScale: Self = this.set("geometricErrorScale", js.undefined)
+    def setNormalShading(value: Boolean): Self = StObject.set(x, "normalShading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumAttenuation(value: Double): Self = this.set("maximumAttenuation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumAttenuation: Self = this.set("maximumAttenuation", js.undefined)
-    
-    @scala.inline
-    def setNormalShading(value: Boolean): Self = this.set("normalShading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalShading: Self = this.set("normalShading", js.undefined)
+    def setNormalShadingUndefined: Self = StObject.set(x, "normalShading", js.undefined)
   }
 }

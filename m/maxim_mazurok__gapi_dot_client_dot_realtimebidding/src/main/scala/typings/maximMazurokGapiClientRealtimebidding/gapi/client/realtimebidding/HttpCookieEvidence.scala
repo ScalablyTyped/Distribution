@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpCookieEvidence extends js.Object {
+trait HttpCookieEvidence extends StObject {
   
   /**
     * Names of cookies that violate Google policies. For TOO_MANY_COOKIES policy, this will be the cookie names of top domains with the largest number of cookies. For other policies, this
@@ -28,33 +29,21 @@ object HttpCookieEvidence {
   }
   
   @scala.inline
-  implicit class HttpCookieEvidenceOps[Self <: HttpCookieEvidence] (val x: Self) extends AnyVal {
+  implicit class HttpCookieEvidenceMutableBuilder[Self <: HttpCookieEvidence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookieNames(value: js.Array[String]): Self = StObject.set(x, "cookieNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCookieNamesUndefined: Self = StObject.set(x, "cookieNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCookieNamesVarargs(value: String*): Self = StObject.set(x, "cookieNames", js.Array(value :_*))
     
     @scala.inline
-    def setCookieNamesVarargs(value: String*): Self = this.set("cookieNames", js.Array(value :_*))
+    def setMaxCookieCount(value: Double): Self = StObject.set(x, "maxCookieCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookieNames(value: js.Array[String]): Self = this.set("cookieNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCookieNames: Self = this.set("cookieNames", js.undefined)
-    
-    @scala.inline
-    def setMaxCookieCount(value: Double): Self = this.set("maxCookieCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxCookieCount: Self = this.set("maxCookieCount", js.undefined)
+    def setMaxCookieCountUndefined: Self = StObject.set(x, "maxCookieCount", js.undefined)
   }
 }

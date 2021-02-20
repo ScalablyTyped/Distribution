@@ -10,12 +10,13 @@ import typings.chance.chanceStrings.provinces
 import typings.chance.chanceStrings.street_suffixes
 import typings.chance.chanceStrings.territories
 import typings.chance.chanceStrings.us_states_and_dc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Setter extends js.Object {
+trait Setter extends StObject {
   
   def apply(key: armed_forces, values: js.Array[String]): js.Any = js.native
   def apply(key: cc_types, values: js.Array[String]): js.Any = js.native

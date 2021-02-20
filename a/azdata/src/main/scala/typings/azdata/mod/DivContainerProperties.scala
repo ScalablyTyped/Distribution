@@ -1,5 +1,6 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,36 +33,24 @@ object DivContainerProperties {
   }
   
   @scala.inline
-  implicit class DivContainerPropertiesOps[Self <: DivContainerProperties] (val x: Self) extends AnyVal {
+  implicit class DivContainerPropertiesMutableBuilder[Self <: DivContainerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverflowY(value: String): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickable(value: Boolean): Self = this.set("clickable", value.asInstanceOf[js.Any])
+    def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
     
     @scala.inline
-    def deleteClickable: Self = this.set("clickable", js.undefined)
+    def setYOffsetChange(value: Double): Self = StObject.set(x, "yOffsetChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowY(value: String): Self = this.set("overflowY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverflowY: Self = this.set("overflowY", js.undefined)
-    
-    @scala.inline
-    def setYOffsetChange(value: Double): Self = this.set("yOffsetChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYOffsetChange: Self = this.set("yOffsetChange", js.undefined)
+    def setYOffsetChangeUndefined: Self = StObject.set(x, "yOffsetChange", js.undefined)
   }
 }

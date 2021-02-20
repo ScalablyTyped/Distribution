@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationMessage extends js.Object {
+trait ValidationMessage extends StObject {
   
   /**
     * A message describing the error or warning.
@@ -36,42 +37,30 @@ object ValidationMessage {
   }
   
   @scala.inline
-  implicit class ValidationMessageOps[Self <: ValidationMessage] (val x: Self) extends AnyVal {
+  implicit class ValidationMessageMutableBuilder[Self <: ValidationMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: ValidationMessageString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: ValidationMessageString): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setOptionName(value: ConfigurationOptionName): Self = StObject.set(x, "OptionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: OptionNamespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    def setOptionNameUndefined: Self = StObject.set(x, "OptionName", js.undefined)
     
     @scala.inline
-    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    def setSeverity(value: ValidationSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionName(value: ConfigurationOptionName): Self = this.set("OptionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionName: Self = this.set("OptionName", js.undefined)
-    
-    @scala.inline
-    def setSeverity(value: ValidationSeverity): Self = this.set("Severity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SjclEllipticalPoint extends js.Object {
+trait SjclEllipticalPoint extends StObject {
   
   def isValid(): Boolean = js.native
   
@@ -38,39 +39,27 @@ object SjclEllipticalPoint {
   }
   
   @scala.inline
-  implicit class SjclEllipticalPointOps[Self <: SjclEllipticalPoint] (val x: Self) extends AnyVal {
+  implicit class SjclEllipticalPointMutableBuilder[Self <: SjclEllipticalPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMult(value: BigNumber => SjclEllipticalPoint): Self = StObject.set(x, "mult", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMult2(value: (BigNumber, BigNumber, SjclEllipticalPoint) => SjclEllipticalPoint): Self = StObject.set(x, "mult2", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+    def setMultiples(value: () => js.Array[SjclEllipticalPoint]): Self = StObject.set(x, "multiples", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMult(value: BigNumber => SjclEllipticalPoint): Self = this.set("mult", js.Any.fromFunction1(value))
+    def setNegate(value: () => SjclEllipticalPoint): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMult2(value: (BigNumber, BigNumber, SjclEllipticalPoint) => SjclEllipticalPoint): Self = this.set("mult2", js.Any.fromFunction3(value))
+    def setToBits(value: () => BitArray_): Self = StObject.set(x, "toBits", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMultiples(value: () => js.Array[SjclEllipticalPoint]): Self = this.set("multiples", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNegate(value: () => SjclEllipticalPoint): Self = this.set("negate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToBits(value: () => BitArray_): Self = this.set("toBits", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToJac(value: () => SjclPointJacobian): Self = this.set("toJac", js.Any.fromFunction0(value))
+    def setToJac(value: () => SjclPointJacobian): Self = StObject.set(x, "toJac", js.Any.fromFunction0(value))
   }
 }

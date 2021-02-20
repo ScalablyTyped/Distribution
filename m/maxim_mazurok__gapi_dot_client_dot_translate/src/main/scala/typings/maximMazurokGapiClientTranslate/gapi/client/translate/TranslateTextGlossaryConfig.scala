@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TranslateTextGlossaryConfig extends js.Object {
+trait TranslateTextGlossaryConfig extends StObject {
   
   /**
     * Required. The `glossary` to be applied for this translation. The format depends on glossary: - User provided custom glossary:
@@ -25,30 +26,18 @@ object TranslateTextGlossaryConfig {
   }
   
   @scala.inline
-  implicit class TranslateTextGlossaryConfigOps[Self <: TranslateTextGlossaryConfig] (val x: Self) extends AnyVal {
+  implicit class TranslateTextGlossaryConfigMutableBuilder[Self <: TranslateTextGlossaryConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlossary(value: String): Self = StObject.set(x, "glossary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlossaryUndefined: Self = StObject.set(x, "glossary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlossary(value: String): Self = this.set("glossary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlossary: Self = this.set("glossary", js.undefined)
-    
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
   }
 }

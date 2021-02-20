@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Alt
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.Height
 import typings.maximMazurokGapiClientDfareporting.anon.ProfileIdQuotaUserResourceUploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SizesResource extends js.Object {
+trait SizesResource extends StObject {
   
   /** Gets one size by ID. */
   def get(): Request[Size] = js.native

@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReminderNotifyEmail extends js.Object {
+trait ReminderNotifyEmail extends StObject {
   
   var reminderNotifyEmail: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object ReminderNotifyEmail {
   }
   
   @scala.inline
-  implicit class ReminderNotifyEmailOps[Self <: ReminderNotifyEmail] (val x: Self) extends AnyVal {
+  implicit class ReminderNotifyEmailMutableBuilder[Self <: ReminderNotifyEmail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReminderNotifyEmail(value: Boolean): Self = StObject.set(x, "reminderNotifyEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReminderNotifyEmailUndefined: Self = StObject.set(x, "reminderNotifyEmail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReminderNotifyInApp(value: Boolean): Self = StObject.set(x, "reminderNotifyInApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReminderNotifyEmail(value: Boolean): Self = this.set("reminderNotifyEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReminderNotifyEmail: Self = this.set("reminderNotifyEmail", js.undefined)
-    
-    @scala.inline
-    def setReminderNotifyInApp(value: Boolean): Self = this.set("reminderNotifyInApp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReminderNotifyInApp: Self = this.set("reminderNotifyInApp", js.undefined)
+    def setReminderNotifyInAppUndefined: Self = StObject.set(x, "reminderNotifyInApp", js.undefined)
   }
 }

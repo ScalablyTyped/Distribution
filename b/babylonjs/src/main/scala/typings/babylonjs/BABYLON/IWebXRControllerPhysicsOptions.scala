@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Friction
 import typings.babylonjs.anon.ImpostorSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebXRControllerPhysicsOptions extends js.Object {
+trait IWebXRControllerPhysicsOptions extends StObject {
   
   /**
     * Should the headset get its own impostor
@@ -38,39 +39,27 @@ object IWebXRControllerPhysicsOptions {
   }
   
   @scala.inline
-  implicit class IWebXRControllerPhysicsOptionsOps[Self <: IWebXRControllerPhysicsOptions] (val x: Self) extends AnyVal {
+  implicit class IWebXRControllerPhysicsOptionsMutableBuilder[Self <: IWebXRControllerPhysicsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableHeadsetImpostor(value: Boolean): Self = StObject.set(x, "enableHeadsetImpostor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableHeadsetImpostorUndefined: Self = StObject.set(x, "enableHeadsetImpostor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadsetImpostorParams(value: Friction): Self = StObject.set(x, "headsetImpostorParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXrInput(value: WebXRInput): Self = this.set("xrInput", value.asInstanceOf[js.Any])
+    def setHeadsetImpostorParamsUndefined: Self = StObject.set(x, "headsetImpostorParams", js.undefined)
     
     @scala.inline
-    def setEnableHeadsetImpostor(value: Boolean): Self = this.set("enableHeadsetImpostor", value.asInstanceOf[js.Any])
+    def setPhysicsProperties(value: ImpostorSize): Self = StObject.set(x, "physicsProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableHeadsetImpostor: Self = this.set("enableHeadsetImpostor", js.undefined)
+    def setPhysicsPropertiesUndefined: Self = StObject.set(x, "physicsProperties", js.undefined)
     
     @scala.inline
-    def setHeadsetImpostorParams(value: Friction): Self = this.set("headsetImpostorParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeadsetImpostorParams: Self = this.set("headsetImpostorParams", js.undefined)
-    
-    @scala.inline
-    def setPhysicsProperties(value: ImpostorSize): Self = this.set("physicsProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhysicsProperties: Self = this.set("physicsProperties", js.undefined)
+    def setXrInput(value: WebXRInput): Self = StObject.set(x, "xrInput", value.asInstanceOf[js.Any])
   }
 }

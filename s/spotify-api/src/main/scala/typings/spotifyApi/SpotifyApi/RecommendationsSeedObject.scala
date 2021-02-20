@@ -3,6 +3,7 @@ package typings.spotifyApi.SpotifyApi
 import typings.spotifyApi.spotifyApiStrings.artist
 import typings.spotifyApi.spotifyApiStrings.genre
 import typings.spotifyApi.spotifyApiStrings.track
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [](https://developer.spotify.com/web-api/object-model/#recommendations-seed-object)
   */
 @js.native
-trait RecommendationsSeedObject extends js.Object {
+trait RecommendationsSeedObject extends StObject {
   
   var afterFilteringSize: Double = js.native
   
@@ -43,36 +44,24 @@ object RecommendationsSeedObject {
   }
   
   @scala.inline
-  implicit class RecommendationsSeedObjectOps[Self <: RecommendationsSeedObject] (val x: Self) extends AnyVal {
+  implicit class RecommendationsSeedObjectMutableBuilder[Self <: RecommendationsSeedObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterFilteringSize(value: Double): Self = StObject.set(x, "afterFilteringSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterRelinkingSize(value: Double): Self = StObject.set(x, "afterRelinkingSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterFilteringSize(value: Double): Self = this.set("afterFilteringSize", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterRelinkingSize(value: Double): Self = this.set("afterRelinkingSize", value.asInstanceOf[js.Any])
+    def setInitialPoolSize(value: Double): Self = StObject.set(x, "initialPoolSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialPoolSize(value: Double): Self = this.set("initialPoolSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: artist | track | genre): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: artist | track | genre): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

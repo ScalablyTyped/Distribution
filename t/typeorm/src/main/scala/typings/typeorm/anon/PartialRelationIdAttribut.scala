@@ -5,13 +5,14 @@ import typings.typeorm.queryExpressionMapMod.QueryExpressionMap
 import typings.typeorm.relationIdAttributeMod.RelationIdAttribute
 import typings.typeorm.relationMetadataMod.RelationMetadata
 import typings.typeorm.selectQueryBuilderMod.SelectQueryBuilder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<typeorm.typeorm/browser/query-builder/relation-id/RelationIdAttribute.RelationIdAttribute> */
 @js.native
-trait PartialRelationIdAttribut extends js.Object {
+trait PartialRelationIdAttribut extends StObject {
   
   var alias: js.UndefOr[String] = js.native
   
@@ -58,110 +59,98 @@ object PartialRelationIdAttribut {
   }
   
   @scala.inline
-  implicit class PartialRelationIdAttributOps[Self <: PartialRelationIdAttribut] (val x: Self) extends AnyVal {
+  implicit class PartialRelationIdAttributMutableBuilder[Self <: PartialRelationIdAttribut] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
     def setConstructor(
       value: (/* queryExpressionMap */ QueryExpressionMap, /* relationIdAttribute */ js.UndefOr[Partial[RelationIdAttribute]]) => js.Any
-    ): Self = this.set("constructor", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "constructor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteConstructor: Self = this.set("constructor", js.undefined)
+    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
     @scala.inline
-    def setDisableMixedMap(value: Boolean): Self = this.set("disableMixedMap", value.asInstanceOf[js.Any])
+    def setDisableMixedMap(value: Boolean): Self = StObject.set(x, "disableMixedMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableMixedMap: Self = this.set("disableMixedMap", js.undefined)
+    def setDisableMixedMapUndefined: Self = StObject.set(x, "disableMixedMap", js.undefined)
     
     @scala.inline
-    def setJoinInverseSideMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = this.set("joinInverseSideMetadata", value.asInstanceOf[js.Any])
+    def setJoinInverseSideMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = StObject.set(x, "joinInverseSideMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJoinInverseSideMetadata: Self = this.set("joinInverseSideMetadata", js.undefined)
+    def setJoinInverseSideMetadataUndefined: Self = StObject.set(x, "joinInverseSideMetadata", js.undefined)
     
     @scala.inline
-    def setJunctionAlias(value: String): Self = this.set("junctionAlias", value.asInstanceOf[js.Any])
+    def setJunctionAlias(value: String): Self = StObject.set(x, "junctionAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJunctionAlias: Self = this.set("junctionAlias", js.undefined)
+    def setJunctionAliasUndefined: Self = StObject.set(x, "junctionAlias", js.undefined)
     
     @scala.inline
-    def setJunctionMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = this.set("junctionMetadata", value.asInstanceOf[js.Any])
+    def setJunctionMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = StObject.set(x, "junctionMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJunctionMetadata: Self = this.set("junctionMetadata", js.undefined)
+    def setJunctionMetadataUndefined: Self = StObject.set(x, "junctionMetadata", js.undefined)
     
     @scala.inline
-    def setMapToProperty(value: String): Self = this.set("mapToProperty", value.asInstanceOf[js.Any])
+    def setMapToProperty(value: String): Self = StObject.set(x, "mapToProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMapToProperty: Self = this.set("mapToProperty", js.undefined)
+    def setMapToPropertyParentAlias(value: String): Self = StObject.set(x, "mapToPropertyParentAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapToPropertyParentAlias(value: String): Self = this.set("mapToPropertyParentAlias", value.asInstanceOf[js.Any])
+    def setMapToPropertyParentAliasUndefined: Self = StObject.set(x, "mapToPropertyParentAlias", js.undefined)
     
     @scala.inline
-    def deleteMapToPropertyParentAlias: Self = this.set("mapToPropertyParentAlias", js.undefined)
+    def setMapToPropertyPropertyPath(value: String): Self = StObject.set(x, "mapToPropertyPropertyPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapToPropertyPropertyPath(value: String): Self = this.set("mapToPropertyPropertyPath", value.asInstanceOf[js.Any])
+    def setMapToPropertyPropertyPathUndefined: Self = StObject.set(x, "mapToPropertyPropertyPath", js.undefined)
     
     @scala.inline
-    def deleteMapToPropertyPropertyPath: Self = this.set("mapToPropertyPropertyPath", js.undefined)
+    def setMapToPropertyUndefined: Self = StObject.set(x, "mapToProperty", js.undefined)
     
     @scala.inline
-    def setParentAlias(value: String): Self = this.set("parentAlias", value.asInstanceOf[js.Any])
+    def setParentAlias(value: String): Self = StObject.set(x, "parentAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentAlias: Self = this.set("parentAlias", js.undefined)
+    def setParentAliasUndefined: Self = StObject.set(x, "parentAlias", js.undefined)
     
     @scala.inline
-    def setQueryBuilderFactory(value: /* qb */ SelectQueryBuilder[_] => SelectQueryBuilder[_]): Self = this.set("queryBuilderFactory", js.Any.fromFunction1(value))
+    def setQueryBuilderFactory(value: /* qb */ SelectQueryBuilder[_] => SelectQueryBuilder[_]): Self = StObject.set(x, "queryBuilderFactory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteQueryBuilderFactory: Self = this.set("queryBuilderFactory", js.undefined)
+    def setQueryBuilderFactoryUndefined: Self = StObject.set(x, "queryBuilderFactory", js.undefined)
     
     @scala.inline
-    def setQueryExpressionMap(value: js.Any): Self = this.set("queryExpressionMap", value.asInstanceOf[js.Any])
+    def setQueryExpressionMap(value: js.Any): Self = StObject.set(x, "queryExpressionMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueryExpressionMap: Self = this.set("queryExpressionMap", js.undefined)
+    def setQueryExpressionMapUndefined: Self = StObject.set(x, "queryExpressionMap", js.undefined)
     
     @scala.inline
-    def setRelation(value: RelationMetadata): Self = this.set("relation", value.asInstanceOf[js.Any])
+    def setRelation(value: RelationMetadata): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelation: Self = this.set("relation", js.undefined)
+    def setRelationName(value: String): Self = StObject.set(x, "relationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationName(value: String): Self = this.set("relationName", value.asInstanceOf[js.Any])
+    def setRelationNameUndefined: Self = StObject.set(x, "relationName", js.undefined)
     
     @scala.inline
-    def deleteRelationName: Self = this.set("relationName", js.undefined)
+    def setRelationPropertyPath(value: String): Self = StObject.set(x, "relationPropertyPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationPropertyPath(value: String): Self = this.set("relationPropertyPath", value.asInstanceOf[js.Any])
+    def setRelationPropertyPathUndefined: Self = StObject.set(x, "relationPropertyPath", js.undefined)
     
     @scala.inline
-    def deleteRelationPropertyPath: Self = this.set("relationPropertyPath", js.undefined)
+    def setRelationUndefined: Self = StObject.set(x, "relation", js.undefined)
   }
 }

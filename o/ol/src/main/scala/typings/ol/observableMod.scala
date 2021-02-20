@@ -3,15 +3,22 @@ package typings.ol
 import typings.ol.eventsMod.EventsKey
 import typings.ol.olStrings.change
 import typings.ol.olStrings.error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/Observable", JSImport.Namespace)
-@js.native
-object observableMod extends js.Object {
+object observableMod {
   
+  @JSImport("ol/Observable", JSImport.Default)
+  @js.native
+  class default () extends Observable
+  
+  @JSImport("ol/Observable", "unByKey")
+  @js.native
   def unByKey(key: js.Array[EventsKey]): Unit = js.native
+  @JSImport("ol/Observable", "unByKey")
+  @js.native
   def unByKey(key: EventsKey): Unit = js.native
   
   @js.native
@@ -59,7 +66,4 @@ object observableMod extends js.Object {
     @JSName("un")
     def un_error(`type`: error, listener: js.Function1[/* evt */ typings.ol.eventMod.default, Unit]): Unit = js.native
   }
-  
-  @js.native
-  class default () extends Observable
 }

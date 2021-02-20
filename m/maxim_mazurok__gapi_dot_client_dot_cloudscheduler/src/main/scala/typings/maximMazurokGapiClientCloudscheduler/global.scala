@@ -3,29 +3,31 @@ package typings.maximMazurokGapiClientCloudscheduler
 import typings.maximMazurokGapiClientCloudscheduler.gapi.client.cloudscheduler.ProjectsResource
 import typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.cloudscheduler
 import typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Cloud Scheduler API v1 */
-      def load(name: cloudscheduler, version: v1): js.Thenable[Unit] = js.native
-      def load(name: cloudscheduler, version: v1, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object cloudscheduler extends js.Object {
+      object cloudscheduler {
         
+        @JSGlobal("gapi.client.cloudscheduler.projects")
+        @js.native
         val projects: ProjectsResource = js.native
       }
+      
+      /** Load Cloud Scheduler API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: cloudscheduler, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: cloudscheduler, version: v1, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

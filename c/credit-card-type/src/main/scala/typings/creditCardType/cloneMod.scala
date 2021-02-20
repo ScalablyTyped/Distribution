@@ -1,12 +1,13 @@
 package typings.creditCardType
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("credit-card-type/dist/lib/clone", JSImport.Namespace)
-@js.native
-object cloneMod extends js.Object {
+object cloneMod {
   
-  def clone[T](originalObject: T): T | Null = js.native
+  @JSImport("credit-card-type/dist/lib/clone", "clone")
+  @js.native
+  def clone_[T](originalObject: T): T | Null = js.native
 }

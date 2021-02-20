@@ -2,13 +2,14 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.Sort
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.WordType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listWords` operation. */
 @js.native
-trait ListWordsParams extends js.Object {
+trait ListWordsParams extends StObject {
   
   /** The customization ID (GUID) of the custom language model that is to be used for the request. You must make the request with credentials for the instance of the service that owns the custom model. */
   var customization_id: String = js.native
@@ -32,45 +33,33 @@ object ListWordsParams {
   }
   
   @scala.inline
-  implicit class ListWordsParamsOps[Self <: ListWordsParams] (val x: Self) extends AnyVal {
+  implicit class ListWordsParamsMutableBuilder[Self <: ListWordsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setCustomization_id(value: String): Self = this.set("customization_id", value.asInstanceOf[js.Any])
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setSort(value: Sort | String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setWord_type(value: WordType | String): Self = StObject.set(x, "word_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: Sort | String): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
-    
-    @scala.inline
-    def setWord_type(value: WordType | String): Self = this.set("word_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWord_type: Self = this.set("word_type", js.undefined)
+    def setWord_typeUndefined: Self = StObject.set(x, "word_type", js.undefined)
   }
 }

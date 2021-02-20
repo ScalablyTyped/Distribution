@@ -1,5 +1,6 @@
 package typings.googleapis.driveV3Mod.driveV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A list of changes for a user.
   */
 @js.native
-trait SchemaChangeList extends js.Object {
+trait SchemaChangeList extends StObject {
   
   /**
     * The list of changes. If nextPageToken is populated, then this list may be
@@ -45,45 +46,33 @@ object SchemaChangeList {
   }
   
   @scala.inline
-  implicit class SchemaChangeListOps[Self <: SchemaChangeList] (val x: Self) extends AnyVal {
+  implicit class SchemaChangeListMutableBuilder[Self <: SchemaChangeList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChanges(value: js.Array[SchemaChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangesVarargs(value: SchemaChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
     @scala.inline
-    def setChangesVarargs(value: SchemaChange*): Self = this.set("changes", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChanges(value: js.Array[SchemaChange]): Self = this.set("changes", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteChanges: Self = this.set("changes", js.undefined)
+    def setNewStartPageToken(value: String): Self = StObject.set(x, "newStartPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNewStartPageTokenUndefined: Self = StObject.set(x, "newStartPageToken", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewStartPageToken(value: String): Self = this.set("newStartPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewStartPageToken: Self = this.set("newStartPageToken", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

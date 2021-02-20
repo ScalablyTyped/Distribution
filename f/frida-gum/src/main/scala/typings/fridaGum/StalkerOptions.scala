@@ -1,6 +1,7 @@
 package typings.fridaGum
 
 import typings.fridaGum.anon.Block
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `onReceive` in there as an empty callback.
   */
 @js.native
-trait StalkerOptions extends js.Object {
+trait StalkerOptions extends StObject {
   
   /**
     * User data to be passed to `StalkerNativeEventCallback` and `StalkerNativeTransformCallback`.
@@ -80,59 +81,47 @@ object StalkerOptions {
   }
   
   @scala.inline
-  implicit class StalkerOptionsOps[Self <: StalkerOptions] (val x: Self) extends AnyVal {
+  implicit class StalkerOptionsMutableBuilder[Self <: StalkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: NativePointerValue): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvents(value: Block): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: NativePointerValue): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setOnCallSummary(value: /* summary */ StalkerCallSummary => Unit): Self = StObject.set(x, "onCallSummary", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEvents(value: Block): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setOnCallSummaryUndefined: Self = StObject.set(x, "onCallSummary", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setOnEvent(value: StalkerNativeEventCallback): Self = StObject.set(x, "onEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCallSummary(value: /* summary */ StalkerCallSummary => Unit): Self = this.set("onCallSummary", js.Any.fromFunction1(value))
+    def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
     
     @scala.inline
-    def deleteOnCallSummary: Self = this.set("onCallSummary", js.undefined)
+    def setOnReceive(value: /* events */ ArrayBuffer => Unit): Self = StObject.set(x, "onReceive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEvent(value: StalkerNativeEventCallback): Self = this.set("onEvent", value.asInstanceOf[js.Any])
+    def setOnReceiveUndefined: Self = StObject.set(x, "onReceive", js.undefined)
     
     @scala.inline
-    def deleteOnEvent: Self = this.set("onEvent", js.undefined)
-    
-    @scala.inline
-    def setOnReceive(value: /* events */ ArrayBuffer => Unit): Self = this.set("onReceive", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnReceive: Self = this.set("onReceive", js.undefined)
+    def setTransform(value: StalkerTransformCallback): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTransformFunction1(
       value: (/* iterator */ StalkerArm64Iterator) | StalkerArmIterator | StalkerThumbIterator | (/* iterator */ StalkerX86Iterator) => Unit
-    ): Self = this.set("transform", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransform(value: StalkerTransformCallback): Self = this.set("transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

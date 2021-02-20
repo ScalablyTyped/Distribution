@@ -1,6 +1,7 @@
 package typings.chromeApps.chrome.networking.onc
 
 import typings.chromeApps.chromeAppsStrings.Disabled_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chromeApps.chromeAppsStrings.Enabled
   - typings.chromeApps.chromeAppsStrings.Prohibited
 */
-trait DeviceState extends js.Object
+trait DeviceState extends StObject
 object DeviceState {
   
   @scala.inline

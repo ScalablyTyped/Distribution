@@ -12,14 +12,14 @@ import typings.three.loadingManagerMod.LoadingManager
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import typings.three.textureMod.Texture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/loaders/ObjectLoader", JSImport.Namespace)
-@js.native
-object objectLoaderMod extends js.Object {
+object objectLoaderMod {
   
+  @JSImport("three/src/loaders/ObjectLoader", "ObjectLoader")
   @js.native
   class ObjectLoader () extends Loader {
     def this(manager: LoadingManager) = this()
@@ -64,14 +64,14 @@ object objectLoaderMod extends js.Object {
     def parse[T /* <: Object3D */](json: js.Any): T = js.native
     def parse[T /* <: Object3D */](json: js.Any, onLoad: js.Function1[/* object */ Object3D, Unit]): T = js.native
     
-     // Array of Classes that inherits from Matrial.
+    // Array of Classes that inherits from Matrial.
     def parseAnimations(json: js.Any): js.Array[AnimationClip] = js.native
     
     def parseGeometries(json: js.Any): js.Array[_] = js.native
     
     def parseImages(json: js.Any, onLoad: js.Function0[Unit]): StringDictionary[HTMLImageElement] = js.native
     
-     // Array of BufferGeometry or Geometry or Geometry2.
+    // Array of BufferGeometry or Geometry or Geometry2.
     def parseMaterials(json: js.Any, textures: js.Array[Texture]): js.Array[Material] = js.native
     
     def parseObject[T /* <: Object3D */](data: js.Any, geometries: js.Array[_], materials: js.Array[Material]): T = js.native

@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineScatterCandleRadarConfig extends js.Object {
+trait LineScatterCandleRadarConfig extends StObject {
   
   var drawHighlightIndicators: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object LineScatterCandleRadarConfig {
   }
   
   @scala.inline
-  implicit class LineScatterCandleRadarConfigOps[Self <: LineScatterCandleRadarConfig] (val x: Self) extends AnyVal {
+  implicit class LineScatterCandleRadarConfigMutableBuilder[Self <: LineScatterCandleRadarConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrawHighlightIndicators(value: Boolean): Self = StObject.set(x, "drawHighlightIndicators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawHighlightIndicatorsUndefined: Self = StObject.set(x, "drawHighlightIndicators", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawHorizontalHighlightIndicator(value: Boolean): Self = StObject.set(x, "drawHorizontalHighlightIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawHighlightIndicators(value: Boolean): Self = this.set("drawHighlightIndicators", value.asInstanceOf[js.Any])
+    def setDrawHorizontalHighlightIndicatorUndefined: Self = StObject.set(x, "drawHorizontalHighlightIndicator", js.undefined)
     
     @scala.inline
-    def deleteDrawHighlightIndicators: Self = this.set("drawHighlightIndicators", js.undefined)
+    def setDrawVerticalHighlightIndicator(value: Boolean): Self = StObject.set(x, "drawVerticalHighlightIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawHorizontalHighlightIndicator(value: Boolean): Self = this.set("drawHorizontalHighlightIndicator", value.asInstanceOf[js.Any])
+    def setDrawVerticalHighlightIndicatorUndefined: Self = StObject.set(x, "drawVerticalHighlightIndicator", js.undefined)
     
     @scala.inline
-    def deleteDrawHorizontalHighlightIndicator: Self = this.set("drawHorizontalHighlightIndicator", js.undefined)
+    def setHighlightLineWidth(value: Double): Self = StObject.set(x, "highlightLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawVerticalHighlightIndicator(value: Boolean): Self = this.set("drawVerticalHighlightIndicator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDrawVerticalHighlightIndicator: Self = this.set("drawVerticalHighlightIndicator", js.undefined)
-    
-    @scala.inline
-    def setHighlightLineWidth(value: Double): Self = this.set("highlightLineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighlightLineWidth: Self = this.set("highlightLineWidth", js.undefined)
+    def setHighlightLineWidthUndefined: Self = StObject.set(x, "highlightLineWidth", js.undefined)
   }
 }

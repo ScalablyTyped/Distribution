@@ -1,14 +1,15 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ToolbarPosition extends js.Object
+sealed trait ToolbarPosition extends StObject
 @JSGlobal("tableau.ToolbarPosition")
 @js.native
-object ToolbarPosition extends js.Object {
+object ToolbarPosition extends StObject {
   
   /** Positions the toolbar along the bottom of the visualization. */
   @js.native

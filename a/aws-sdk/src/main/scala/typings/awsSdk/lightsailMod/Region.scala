@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Region extends js.Object {
+trait Region extends StObject {
   
   /**
     * The Availability Zones. Follows the format us-east-2a (case-sensitive).
@@ -46,60 +47,48 @@ object Region {
   }
   
   @scala.inline
-  implicit class RegionOps[Self <: Region] (val x: Self) extends AnyVal {
+  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("availabilityZones", js.Array(value :_*))
+    def setContinentCode(value: String): Self = StObject.set(x, "continentCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZones(value: AvailabilityZoneList): Self = this.set("availabilityZones", value.asInstanceOf[js.Any])
+    def setContinentCodeUndefined: Self = StObject.set(x, "continentCode", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZones: Self = this.set("availabilityZones", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinentCode(value: String): Self = this.set("continentCode", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteContinentCode: Self = this.set("continentCode", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: RegionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setRelationalDatabaseAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "relationalDatabaseAvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: RegionName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRelationalDatabaseAvailabilityZonesUndefined: Self = StObject.set(x, "relationalDatabaseAvailabilityZones", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRelationalDatabaseAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("relationalDatabaseAvailabilityZones", js.Array(value :_*))
-    
-    @scala.inline
-    def setRelationalDatabaseAvailabilityZones(value: AvailabilityZoneList): Self = this.set("relationalDatabaseAvailabilityZones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationalDatabaseAvailabilityZones: Self = this.set("relationalDatabaseAvailabilityZones", js.undefined)
+    def setRelationalDatabaseAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "relationalDatabaseAvailabilityZones", js.Array(value :_*))
   }
 }

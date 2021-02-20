@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConformancePackRuleCompliance extends js.Object {
+trait ConformancePackRuleCompliance extends StObject {
   
   /**
     * Compliance of the AWS Config rule The allowed values are COMPLIANT and NON_COMPLIANT.
@@ -26,30 +27,18 @@ object ConformancePackRuleCompliance {
   }
   
   @scala.inline
-  implicit class ConformancePackRuleComplianceOps[Self <: ConformancePackRuleCompliance] (val x: Self) extends AnyVal {
+  implicit class ConformancePackRuleComplianceMutableBuilder[Self <: ConformancePackRuleCompliance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceType(value: ConformancePackComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceType(value: ConformancePackComplianceType): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComplianceType: Self = this.set("ComplianceType", js.undefined)
-    
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigRuleName: Self = this.set("ConfigRuleName", js.undefined)
+    def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
   }
 }

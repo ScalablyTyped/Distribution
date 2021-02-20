@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhysicsUpdraftEventOptions extends js.Object {
+trait PhysicsUpdraftEventOptions extends StObject {
   
   /**
     * The height of the cylinder for the updraft.
@@ -36,30 +37,18 @@ object PhysicsUpdraftEventOptions {
   }
   
   @scala.inline
-  implicit class PhysicsUpdraftEventOptionsOps[Self <: PhysicsUpdraftEventOptions] (val x: Self) extends AnyVal {
+  implicit class PhysicsUpdraftEventOptionsMutableBuilder[Self <: PhysicsUpdraftEventOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrength(value: Double): Self = this.set("strength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdraftMode(value: PhysicsUpdraftMode): Self = this.set("updraftMode", value.asInstanceOf[js.Any])
+    def setUpdraftMode(value: PhysicsUpdraftMode): Self = StObject.set(x, "updraftMode", value.asInstanceOf[js.Any])
   }
 }

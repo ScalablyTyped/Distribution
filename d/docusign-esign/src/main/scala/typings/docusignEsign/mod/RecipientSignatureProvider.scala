@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientSignatureProvider extends js.Object {
+trait RecipientSignatureProvider extends StObject {
   
   /**
     * By default, electronic seals apply on all documents in an envelope. If any of the documents has a `signHere` tab,
@@ -55,48 +56,36 @@ object RecipientSignatureProvider {
   }
   
   @scala.inline
-  implicit class RecipientSignatureProviderOps[Self <: RecipientSignatureProvider] (val x: Self) extends AnyVal {
+  implicit class RecipientSignatureProviderMutableBuilder[Self <: RecipientSignatureProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSealDocumentsWithTabsOnly(value: String): Self = StObject.set(x, "sealDocumentsWithTabsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSealDocumentsWithTabsOnlyUndefined: Self = StObject.set(x, "sealDocumentsWithTabsOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSealName(value: String): Self = StObject.set(x, "sealName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSealDocumentsWithTabsOnly(value: String): Self = this.set("sealDocumentsWithTabsOnly", value.asInstanceOf[js.Any])
+    def setSealNameUndefined: Self = StObject.set(x, "sealName", js.undefined)
     
     @scala.inline
-    def deleteSealDocumentsWithTabsOnly: Self = this.set("sealDocumentsWithTabsOnly", js.undefined)
+    def setSignatureProviderName(value: String): Self = StObject.set(x, "signatureProviderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSealName(value: String): Self = this.set("sealName", value.asInstanceOf[js.Any])
+    def setSignatureProviderNameMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "signatureProviderNameMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSealName: Self = this.set("sealName", js.undefined)
+    def setSignatureProviderNameMetadataUndefined: Self = StObject.set(x, "signatureProviderNameMetadata", js.undefined)
     
     @scala.inline
-    def setSignatureProviderName(value: String): Self = this.set("signatureProviderName", value.asInstanceOf[js.Any])
+    def setSignatureProviderNameUndefined: Self = StObject.set(x, "signatureProviderName", js.undefined)
     
     @scala.inline
-    def deleteSignatureProviderName: Self = this.set("signatureProviderName", js.undefined)
+    def setSignatureProviderOptions(value: RecipientSignatureProviderOptions): Self = StObject.set(x, "signatureProviderOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureProviderNameMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("signatureProviderNameMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignatureProviderNameMetadata: Self = this.set("signatureProviderNameMetadata", js.undefined)
-    
-    @scala.inline
-    def setSignatureProviderOptions(value: RecipientSignatureProviderOptions): Self = this.set("signatureProviderOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignatureProviderOptions: Self = this.set("signatureProviderOptions", js.undefined)
+    def setSignatureProviderOptionsUndefined: Self = StObject.set(x, "signatureProviderOptions", js.undefined)
   }
 }

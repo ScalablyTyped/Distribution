@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The transformation to apply to the field.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2FieldTransformation extends js.Object {
+trait SchemaGooglePrivacyDlpV2FieldTransformation extends StObject {
   
   /**
     * Only apply the transformation if the condition evaluates to true for the
@@ -45,45 +46,33 @@ object SchemaGooglePrivacyDlpV2FieldTransformation {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2FieldTransformationOps[Self <: SchemaGooglePrivacyDlpV2FieldTransformation] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2FieldTransformationMutableBuilder[Self <: SchemaGooglePrivacyDlpV2FieldTransformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: SchemaGooglePrivacyDlpV2RecordCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: SchemaGooglePrivacyDlpV2RecordCondition): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setFieldsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = this.set("fields", js.Array(value :_*))
+    def setInfoTypeTransformations(value: SchemaGooglePrivacyDlpV2InfoTypeTransformations): Self = StObject.set(x, "infoTypeTransformations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setInfoTypeTransformationsUndefined: Self = StObject.set(x, "infoTypeTransformations", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setPrimitiveTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = StObject.set(x, "primitiveTransformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoTypeTransformations(value: SchemaGooglePrivacyDlpV2InfoTypeTransformations): Self = this.set("infoTypeTransformations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfoTypeTransformations: Self = this.set("infoTypeTransformations", js.undefined)
-    
-    @scala.inline
-    def setPrimitiveTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = this.set("primitiveTransformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimitiveTransformation: Self = this.set("primitiveTransformation", js.undefined)
+    def setPrimitiveTransformationUndefined: Self = StObject.set(x, "primitiveTransformation", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait StyleCollectionLoadOptions extends js.Object {
+trait StyleCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -212,162 +213,150 @@ object StyleCollectionLoadOptions {
   }
   
   @scala.inline
-  implicit class StyleCollectionLoadOptionsOps[Self <: StyleCollectionLoadOptions] (val x: Self) extends AnyVal {
+  implicit class StyleCollectionLoadOptionsMutableBuilder[Self <: StyleCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoIndent(value: Boolean): Self = StObject.set(x, "autoIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setAutoIndentUndefined: Self = StObject.set(x, "autoIndent", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setBorders(value: RangeBorderCollectionLoadOptions): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoIndent(value: Boolean): Self = this.set("autoIndent", value.asInstanceOf[js.Any])
+    def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
     @scala.inline
-    def deleteAutoIndent: Self = this.set("autoIndent", js.undefined)
+    def setBuiltIn(value: Boolean): Self = StObject.set(x, "builtIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorders(value: RangeBorderCollectionLoadOptions): Self = this.set("borders", value.asInstanceOf[js.Any])
+    def setBuiltInUndefined: Self = StObject.set(x, "builtIn", js.undefined)
     
     @scala.inline
-    def deleteBorders: Self = this.set("borders", js.undefined)
+    def setFill(value: RangeFillLoadOptions): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuiltIn(value: Boolean): Self = this.set("builtIn", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteBuiltIn: Self = this.set("builtIn", js.undefined)
+    def setFont(value: RangeFontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: RangeFillLoadOptions): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setFormulaHidden(value: Boolean): Self = StObject.set(x, "formulaHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: RangeFontLoadOptions): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFormulaHiddenUndefined: Self = StObject.set(x, "formulaHidden", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setHorizontalAlignment(value: Boolean): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulaHidden(value: Boolean): Self = this.set("formulaHidden", value.asInstanceOf[js.Any])
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     @scala.inline
-    def deleteFormulaHidden: Self = this.set("formulaHidden", js.undefined)
+    def setIncludeAlignment(value: Boolean): Self = StObject.set(x, "includeAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlignment(value: Boolean): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setIncludeAlignmentUndefined: Self = StObject.set(x, "includeAlignment", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setIncludeBorder(value: Boolean): Self = StObject.set(x, "includeBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAlignment(value: Boolean): Self = this.set("includeAlignment", value.asInstanceOf[js.Any])
+    def setIncludeBorderUndefined: Self = StObject.set(x, "includeBorder", js.undefined)
     
     @scala.inline
-    def deleteIncludeAlignment: Self = this.set("includeAlignment", js.undefined)
+    def setIncludeFont(value: Boolean): Self = StObject.set(x, "includeFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeBorder(value: Boolean): Self = this.set("includeBorder", value.asInstanceOf[js.Any])
+    def setIncludeFontUndefined: Self = StObject.set(x, "includeFont", js.undefined)
     
     @scala.inline
-    def deleteIncludeBorder: Self = this.set("includeBorder", js.undefined)
+    def setIncludeNumber(value: Boolean): Self = StObject.set(x, "includeNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeFont(value: Boolean): Self = this.set("includeFont", value.asInstanceOf[js.Any])
+    def setIncludeNumberUndefined: Self = StObject.set(x, "includeNumber", js.undefined)
     
     @scala.inline
-    def deleteIncludeFont: Self = this.set("includeFont", js.undefined)
+    def setIncludePatterns(value: Boolean): Self = StObject.set(x, "includePatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNumber(value: Boolean): Self = this.set("includeNumber", value.asInstanceOf[js.Any])
+    def setIncludePatternsUndefined: Self = StObject.set(x, "includePatterns", js.undefined)
     
     @scala.inline
-    def deleteIncludeNumber: Self = this.set("includeNumber", js.undefined)
+    def setIncludeProtection(value: Boolean): Self = StObject.set(x, "includeProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludePatterns(value: Boolean): Self = this.set("includePatterns", value.asInstanceOf[js.Any])
+    def setIncludeProtectionUndefined: Self = StObject.set(x, "includeProtection", js.undefined)
     
     @scala.inline
-    def deleteIncludePatterns: Self = this.set("includePatterns", js.undefined)
+    def setIndentLevel(value: Boolean): Self = StObject.set(x, "indentLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeProtection(value: Boolean): Self = this.set("includeProtection", value.asInstanceOf[js.Any])
+    def setIndentLevelUndefined: Self = StObject.set(x, "indentLevel", js.undefined)
     
     @scala.inline
-    def deleteIncludeProtection: Self = this.set("includeProtection", js.undefined)
+    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentLevel(value: Boolean): Self = this.set("indentLevel", value.asInstanceOf[js.Any])
+    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
     
     @scala.inline
-    def deleteIndentLevel: Self = this.set("indentLevel", js.undefined)
+    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocked: Self = this.set("locked", js.undefined)
+    def setNumberFormat(value: Boolean): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumberFormatLocal(value: Boolean): Self = StObject.set(x, "numberFormatLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNumberFormatLocalUndefined: Self = StObject.set(x, "numberFormatLocal", js.undefined)
     
     @scala.inline
-    def setNumberFormat(value: Boolean): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
     @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setReadingOrder(value: Boolean): Self = StObject.set(x, "readingOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormatLocal(value: Boolean): Self = this.set("numberFormatLocal", value.asInstanceOf[js.Any])
+    def setReadingOrderUndefined: Self = StObject.set(x, "readingOrder", js.undefined)
     
     @scala.inline
-    def deleteNumberFormatLocal: Self = this.set("numberFormatLocal", js.undefined)
+    def setShrinkToFit(value: Boolean): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadingOrder(value: Boolean): Self = this.set("readingOrder", value.asInstanceOf[js.Any])
+    def setShrinkToFitUndefined: Self = StObject.set(x, "shrinkToFit", js.undefined)
     
     @scala.inline
-    def deleteReadingOrder: Self = this.set("readingOrder", js.undefined)
+    def setTextOrientation(value: Boolean): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShrinkToFit(value: Boolean): Self = this.set("shrinkToFit", value.asInstanceOf[js.Any])
+    def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
     
     @scala.inline
-    def deleteShrinkToFit: Self = this.set("shrinkToFit", js.undefined)
+    def setVerticalAlignment(value: Boolean): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextOrientation(value: Boolean): Self = this.set("textOrientation", value.asInstanceOf[js.Any])
+    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     
     @scala.inline
-    def deleteTextOrientation: Self = this.set("textOrientation", js.undefined)
+    def setWrapText(value: Boolean): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlignment(value: Boolean): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
-    
-    @scala.inline
-    def setWrapText(value: Boolean): Self = this.set("wrapText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapText: Self = this.set("wrapText", js.undefined)
+    def setWrapTextUndefined: Self = StObject.set(x, "wrapText", js.undefined)
   }
 }

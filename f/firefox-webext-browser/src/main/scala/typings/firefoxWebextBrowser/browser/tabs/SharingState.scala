@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Tab sharing state for screen, microphone and camera. */
 @js.native
-trait SharingState extends js.Object {
+trait SharingState extends StObject {
   
   /** True if the tab is using the camera. */
   var camera: Boolean = js.native
@@ -28,30 +29,18 @@ object SharingState {
   }
   
   @scala.inline
-  implicit class SharingStateOps[Self <: SharingState] (val x: Self) extends AnyVal {
+  implicit class SharingStateMutableBuilder[Self <: SharingState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCamera(value: Boolean): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMicrophone(value: Boolean): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera(value: Boolean): Self = this.set("camera", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMicrophone(value: Boolean): Self = this.set("microphone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScreen(value: String): Self = this.set("screen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreen: Self = this.set("screen", js.undefined)
+    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
   }
 }

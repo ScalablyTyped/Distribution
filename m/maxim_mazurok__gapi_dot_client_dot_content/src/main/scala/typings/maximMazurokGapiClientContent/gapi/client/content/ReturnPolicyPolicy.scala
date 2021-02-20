@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnPolicyPolicy extends js.Object {
+trait ReturnPolicyPolicy extends StObject {
   
   /**
     * Required. Last day for returning the items. In ISO 8601 format. When specifying the return window like this, set the policy type to "lastReturnDate". Use this for seasonal overrides
@@ -37,36 +38,24 @@ object ReturnPolicyPolicy {
   }
   
   @scala.inline
-  implicit class ReturnPolicyPolicyOps[Self <: ReturnPolicyPolicy] (val x: Self) extends AnyVal {
+  implicit class ReturnPolicyPolicyMutableBuilder[Self <: ReturnPolicyPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastReturnDate(value: String): Self = StObject.set(x, "lastReturnDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastReturnDateUndefined: Self = StObject.set(x, "lastReturnDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfDays(value: String): Self = StObject.set(x, "numberOfDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastReturnDate(value: String): Self = this.set("lastReturnDate", value.asInstanceOf[js.Any])
+    def setNumberOfDaysUndefined: Self = StObject.set(x, "numberOfDays", js.undefined)
     
     @scala.inline
-    def deleteLastReturnDate: Self = this.set("lastReturnDate", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfDays(value: String): Self = this.set("numberOfDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfDays: Self = this.set("numberOfDays", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

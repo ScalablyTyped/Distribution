@@ -1,5 +1,6 @@
 package typings.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chromeApps.chromeAppsStrings.string
   - typings.chromeApps.chromeAppsStrings.number
 */
-trait JSONBasicTypes extends js.Object
+trait JSONBasicTypes extends StObject
 object JSONBasicTypes {
   
   @scala.inline

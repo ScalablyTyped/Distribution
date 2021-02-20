@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/CopyOutline", JSImport.Namespace)
-@js.native
-object copyOutlineMod extends js.Object {
+object copyOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/CopyOutline", "CopyOutline")
+  @js.native
   val CopyOutline: IconDefinition = js.native
 }

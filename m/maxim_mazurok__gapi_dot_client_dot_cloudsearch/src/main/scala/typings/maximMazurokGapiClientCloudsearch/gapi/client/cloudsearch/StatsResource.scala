@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCloudsearch.anon.FromDatemonth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatsResource extends js.Object {
+trait StatsResource extends StObject {
   
   /**
     * Gets indexed item statistics aggreggated across all data sources. This API only returns statistics for previous dates; it doesn't return statistics for the current day. **Note:**

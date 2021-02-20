@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DelayRangeStart extends js.Object {
+trait DelayRangeStart extends StObject {
   
   var delayRangeStart: scala.Double = js.native
   
@@ -104,105 +105,93 @@ object DelayRangeStart {
   }
   
   @scala.inline
-  implicit class DelayRangeStartOps[Self <: DelayRangeStart] (val x: Self) extends AnyVal {
+  implicit class DelayRangeStartMutableBuilder[Self <: DelayRangeStart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelayRangeStart(value: scala.Double): Self = StObject.set(x, "delayRangeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventPipelineTime(value: scala.Double): Self = StObject.set(x, "eventPipelineTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvents(value: scala.Double): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelayRangeStart(value: scala.Double): Self = this.set("delayRangeStart", value.asInstanceOf[js.Any])
+    def setEventsByEventType(value: scala.Double): Self = StObject.set(x, "eventsByEventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventPipelineTime(value: scala.Double): Self = this.set("eventPipelineTime", value.asInstanceOf[js.Any])
+    def setEventsByEventTypePerUser(value: scala.Double): Self = StObject.set(x, "eventsByEventTypePerUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: scala.Double): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setHourlyEventPipelineTime(value: scala.Double): Self = StObject.set(x, "hourlyEventPipelineTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsByEventType(value: scala.Double): Self = this.set("eventsByEventType", value.asInstanceOf[js.Any])
+    def setHourlyEvents(value: scala.Double): Self = StObject.set(x, "hourlyEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsByEventTypePerUser(value: scala.Double): Self = this.set("eventsByEventTypePerUser", value.asInstanceOf[js.Any])
+    def setHourlyEventsByEventTypePerUser(value: scala.Double): Self = StObject.set(x, "hourlyEventsByEventTypePerUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyEventPipelineTime(value: scala.Double): Self = this.set("hourlyEventPipelineTime", value.asInstanceOf[js.Any])
+    def setHourlyNotificationBySubscription(value: scala.Double): Self = StObject.set(x, "hourlyNotificationBySubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyEvents(value: scala.Double): Self = this.set("hourlyEvents", value.asInstanceOf[js.Any])
+    def setHourlyNotificationPipelineTime(value: scala.Double): Self = StObject.set(x, "hourlyNotificationPipelineTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyEventsByEventTypePerUser(value: scala.Double): Self = this.set("hourlyEventsByEventTypePerUser", value.asInstanceOf[js.Any])
+    def setHourlyNotifications(value: scala.Double): Self = StObject.set(x, "hourlyNotifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyNotificationBySubscription(value: scala.Double): Self = this.set("hourlyNotificationBySubscription", value.asInstanceOf[js.Any])
+    def setHourlyRangeStart(value: scala.Double): Self = StObject.set(x, "hourlyRangeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyNotificationPipelineTime(value: scala.Double): Self = this.set("hourlyNotificationPipelineTime", value.asInstanceOf[js.Any])
+    def setHourlyTotalPipelineTime(value: scala.Double): Self = StObject.set(x, "hourlyTotalPipelineTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyNotifications(value: scala.Double): Self = this.set("hourlyNotifications", value.asInstanceOf[js.Any])
+    def setHourlyUnprocessedEventDelayByPublisher(value: scala.Double): Self = StObject.set(x, "hourlyUnprocessedEventDelayByPublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyRangeStart(value: scala.Double): Self = this.set("hourlyRangeStart", value.asInstanceOf[js.Any])
+    def setHourlyUnprocessedEventsByPublisher(value: scala.Double): Self = StObject.set(x, "hourlyUnprocessedEventsByPublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyTotalPipelineTime(value: scala.Double): Self = this.set("hourlyTotalPipelineTime", value.asInstanceOf[js.Any])
+    def setHourlyUnprocessedNotificationDelayByChannelByPublisher(value: scala.Double): Self = StObject.set(x, "hourlyUnprocessedNotificationDelayByChannelByPublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyUnprocessedEventDelayByPublisher(value: scala.Double): Self = this.set("hourlyUnprocessedEventDelayByPublisher", value.asInstanceOf[js.Any])
+    def setHourlyUnprocessedNotificationsByChannelByPublisher(value: scala.Double): Self = StObject.set(x, "hourlyUnprocessedNotificationsByChannelByPublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyUnprocessedEventsByPublisher(value: scala.Double): Self = this.set("hourlyUnprocessedEventsByPublisher", value.asInstanceOf[js.Any])
+    def setNotificationByEventType(value: scala.Double): Self = StObject.set(x, "notificationByEventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyUnprocessedNotificationDelayByChannelByPublisher(value: scala.Double): Self = this.set("hourlyUnprocessedNotificationDelayByChannelByPublisher", value.asInstanceOf[js.Any])
+    def setNotificationByEventTypePerUser(value: scala.Double): Self = StObject.set(x, "notificationByEventTypePerUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyUnprocessedNotificationsByChannelByPublisher(value: scala.Double): Self = this.set("hourlyUnprocessedNotificationsByChannelByPublisher", value.asInstanceOf[js.Any])
+    def setNotificationBySubscription(value: scala.Double): Self = StObject.set(x, "notificationBySubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationByEventType(value: scala.Double): Self = this.set("notificationByEventType", value.asInstanceOf[js.Any])
+    def setNotificationFailureBySubscription(value: scala.Double): Self = StObject.set(x, "notificationFailureBySubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationByEventTypePerUser(value: scala.Double): Self = this.set("notificationByEventTypePerUser", value.asInstanceOf[js.Any])
+    def setNotificationPipelineTime(value: scala.Double): Self = StObject.set(x, "notificationPipelineTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationBySubscription(value: scala.Double): Self = this.set("notificationBySubscription", value.asInstanceOf[js.Any])
+    def setNotifications(value: scala.Double): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationFailureBySubscription(value: scala.Double): Self = this.set("notificationFailureBySubscription", value.asInstanceOf[js.Any])
+    def setTotalPipelineTime(value: scala.Double): Self = StObject.set(x, "totalPipelineTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationPipelineTime(value: scala.Double): Self = this.set("notificationPipelineTime", value.asInstanceOf[js.Any])
+    def setUnprocessedEventDelayByPublisher(value: scala.Double): Self = StObject.set(x, "unprocessedEventDelayByPublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifications(value: scala.Double): Self = this.set("notifications", value.asInstanceOf[js.Any])
+    def setUnprocessedEventsByPublisher(value: scala.Double): Self = StObject.set(x, "unprocessedEventsByPublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalPipelineTime(value: scala.Double): Self = this.set("totalPipelineTime", value.asInstanceOf[js.Any])
+    def setUnprocessedNotificationDelayByChannelByPublisher(value: scala.Double): Self = StObject.set(x, "unprocessedNotificationDelayByChannelByPublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnprocessedEventDelayByPublisher(value: scala.Double): Self = this.set("unprocessedEventDelayByPublisher", value.asInstanceOf[js.Any])
+    def setUnprocessedNotificationsByChannelByPublisher(value: scala.Double): Self = StObject.set(x, "unprocessedNotificationsByChannelByPublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnprocessedEventsByPublisher(value: scala.Double): Self = this.set("unprocessedEventsByPublisher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnprocessedNotificationDelayByChannelByPublisher(value: scala.Double): Self = this.set("unprocessedNotificationDelayByChannelByPublisher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnprocessedNotificationsByChannelByPublisher(value: scala.Double): Self = this.set("unprocessedNotificationsByChannelByPublisher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnprocessedRangeStart(value: scala.Double): Self = this.set("unprocessedRangeStart", value.asInstanceOf[js.Any])
+    def setUnprocessedRangeStart(value: scala.Double): Self = StObject.set(x, "unprocessedRangeStart", value.asInstanceOf[js.Any])
   }
 }

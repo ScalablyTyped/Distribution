@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1Mod.containerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the OpenID Connect Discovery 1.0 specification for details.
   */
 @js.native
-trait SchemaGetOpenIDConfigResponse extends js.Object {
+trait SchemaGetOpenIDConfigResponse extends StObject {
   
   /**
     * NOLINT
@@ -55,75 +56,63 @@ object SchemaGetOpenIDConfigResponse {
   }
   
   @scala.inline
-  implicit class SchemaGetOpenIDConfigResponseOps[Self <: SchemaGetOpenIDConfigResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGetOpenIDConfigResponseMutableBuilder[Self <: SchemaGetOpenIDConfigResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClaims_supported(value: js.Array[String]): Self = StObject.set(x, "claims_supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClaims_supportedUndefined: Self = StObject.set(x, "claims_supported", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClaims_supportedVarargs(value: String*): Self = StObject.set(x, "claims_supported", js.Array(value :_*))
     
     @scala.inline
-    def setClaims_supportedVarargs(value: String*): Self = this.set("claims_supported", js.Array(value :_*))
+    def setGrant_types(value: js.Array[String]): Self = StObject.set(x, "grant_types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaims_supported(value: js.Array[String]): Self = this.set("claims_supported", value.asInstanceOf[js.Any])
+    def setGrant_typesUndefined: Self = StObject.set(x, "grant_types", js.undefined)
     
     @scala.inline
-    def deleteClaims_supported: Self = this.set("claims_supported", js.undefined)
+    def setGrant_typesVarargs(value: String*): Self = StObject.set(x, "grant_types", js.Array(value :_*))
     
     @scala.inline
-    def setGrant_typesVarargs(value: String*): Self = this.set("grant_types", js.Array(value :_*))
+    def setId_token_signing_alg_values_supported(value: js.Array[String]): Self = StObject.set(x, "id_token_signing_alg_values_supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrant_types(value: js.Array[String]): Self = this.set("grant_types", value.asInstanceOf[js.Any])
+    def setId_token_signing_alg_values_supportedUndefined: Self = StObject.set(x, "id_token_signing_alg_values_supported", js.undefined)
     
     @scala.inline
-    def deleteGrant_types: Self = this.set("grant_types", js.undefined)
+    def setId_token_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "id_token_signing_alg_values_supported", js.Array(value :_*))
     
     @scala.inline
-    def setId_token_signing_alg_values_supportedVarargs(value: String*): Self = this.set("id_token_signing_alg_values_supported", js.Array(value :_*))
+    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId_token_signing_alg_values_supported(value: js.Array[String]): Self = this.set("id_token_signing_alg_values_supported", value.asInstanceOf[js.Any])
+    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
     @scala.inline
-    def deleteId_token_signing_alg_values_supported: Self = this.set("id_token_signing_alg_values_supported", js.undefined)
+    def setJwks_uri(value: String): Self = StObject.set(x, "jwks_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setJwks_uriUndefined: Self = StObject.set(x, "jwks_uri", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    def setResponse_types_supported(value: js.Array[String]): Self = StObject.set(x, "response_types_supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwks_uri(value: String): Self = this.set("jwks_uri", value.asInstanceOf[js.Any])
+    def setResponse_types_supportedUndefined: Self = StObject.set(x, "response_types_supported", js.undefined)
     
     @scala.inline
-    def deleteJwks_uri: Self = this.set("jwks_uri", js.undefined)
+    def setResponse_types_supportedVarargs(value: String*): Self = StObject.set(x, "response_types_supported", js.Array(value :_*))
     
     @scala.inline
-    def setResponse_types_supportedVarargs(value: String*): Self = this.set("response_types_supported", js.Array(value :_*))
+    def setSubject_types_supported(value: js.Array[String]): Self = StObject.set(x, "subject_types_supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse_types_supported(value: js.Array[String]): Self = this.set("response_types_supported", value.asInstanceOf[js.Any])
+    def setSubject_types_supportedUndefined: Self = StObject.set(x, "subject_types_supported", js.undefined)
     
     @scala.inline
-    def deleteResponse_types_supported: Self = this.set("response_types_supported", js.undefined)
-    
-    @scala.inline
-    def setSubject_types_supportedVarargs(value: String*): Self = this.set("subject_types_supported", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubject_types_supported(value: js.Array[String]): Self = this.set("subject_types_supported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject_types_supported: Self = this.set("subject_types_supported", js.undefined)
+    def setSubject_types_supportedVarargs(value: String*): Self = StObject.set(x, "subject_types_supported", js.Array(value :_*))
   }
 }

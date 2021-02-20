@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetApiResponse extends js.Object {
+trait GetApiResponse extends StObject {
   
   /**
     * The URI of the API, of the form {api-id}.execute-api.{region}.amazonaws.com. The stage name is typically appended to this URI to form a complete path to a deployed API stage.
@@ -96,120 +97,108 @@ object GetApiResponse {
   }
   
   @scala.inline
-  implicit class GetApiResponseOps[Self <: GetApiResponse] (val x: Self) extends AnyVal {
+  implicit class GetApiResponseMutableBuilder[Self <: GetApiResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiEndpoint(value: string): Self = StObject.set(x, "ApiEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiEndpointUndefined: Self = StObject.set(x, "ApiEndpoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiGatewayManaged(value: boolean): Self = StObject.set(x, "ApiGatewayManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiEndpoint(value: string): Self = this.set("ApiEndpoint", value.asInstanceOf[js.Any])
+    def setApiGatewayManagedUndefined: Self = StObject.set(x, "ApiGatewayManaged", js.undefined)
     
     @scala.inline
-    def deleteApiEndpoint: Self = this.set("ApiEndpoint", js.undefined)
+    def setApiId(value: Id): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiGatewayManaged(value: boolean): Self = this.set("ApiGatewayManaged", value.asInstanceOf[js.Any])
+    def setApiIdUndefined: Self = StObject.set(x, "ApiId", js.undefined)
     
     @scala.inline
-    def deleteApiGatewayManaged: Self = this.set("ApiGatewayManaged", js.undefined)
+    def setApiKeySelectionExpression(value: SelectionExpression): Self = StObject.set(x, "ApiKeySelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiId(value: Id): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    def setApiKeySelectionExpressionUndefined: Self = StObject.set(x, "ApiKeySelectionExpression", js.undefined)
     
     @scala.inline
-    def deleteApiId: Self = this.set("ApiId", js.undefined)
+    def setCorsConfiguration(value: Cors): Self = StObject.set(x, "CorsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKeySelectionExpression(value: SelectionExpression): Self = this.set("ApiKeySelectionExpression", value.asInstanceOf[js.Any])
+    def setCorsConfigurationUndefined: Self = StObject.set(x, "CorsConfiguration", js.undefined)
     
     @scala.inline
-    def deleteApiKeySelectionExpression: Self = this.set("ApiKeySelectionExpression", js.undefined)
+    def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorsConfiguration(value: Cors): Self = this.set("CorsConfiguration", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
     @scala.inline
-    def deleteCorsConfiguration: Self = this.set("CorsConfiguration", js.undefined)
+    def setDescription(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: timestampIso8601): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    def setDisableExecuteApiEndpoint(value: boolean): Self = StObject.set(x, "DisableExecuteApiEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: StringWithLengthBetween0And1024): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDisableExecuteApiEndpointUndefined: Self = StObject.set(x, "DisableExecuteApiEndpoint", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDisableSchemaValidation(value: boolean): Self = StObject.set(x, "DisableSchemaValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableExecuteApiEndpoint(value: boolean): Self = this.set("DisableExecuteApiEndpoint", value.asInstanceOf[js.Any])
+    def setDisableSchemaValidationUndefined: Self = StObject.set(x, "DisableSchemaValidation", js.undefined)
     
     @scala.inline
-    def deleteDisableExecuteApiEndpoint: Self = this.set("DisableExecuteApiEndpoint", js.undefined)
+    def setImportInfo(value: listOfString): Self = StObject.set(x, "ImportInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSchemaValidation(value: boolean): Self = this.set("DisableSchemaValidation", value.asInstanceOf[js.Any])
+    def setImportInfoUndefined: Self = StObject.set(x, "ImportInfo", js.undefined)
     
     @scala.inline
-    def deleteDisableSchemaValidation: Self = this.set("DisableSchemaValidation", js.undefined)
+    def setImportInfoVarargs(value: string*): Self = StObject.set(x, "ImportInfo", js.Array(value :_*))
     
     @scala.inline
-    def setImportInfoVarargs(value: string*): Self = this.set("ImportInfo", js.Array(value :_*))
+    def setName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportInfo(value: listOfString): Self = this.set("ImportInfo", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteImportInfo: Self = this.set("ImportInfo", js.undefined)
+    def setProtocolType(value: ProtocolType): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: StringWithLengthBetween1And128): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setProtocolTypeUndefined: Self = StObject.set(x, "ProtocolType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRouteSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "RouteSelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolType(value: ProtocolType): Self = this.set("ProtocolType", value.asInstanceOf[js.Any])
+    def setRouteSelectionExpressionUndefined: Self = StObject.set(x, "RouteSelectionExpression", js.undefined)
     
     @scala.inline
-    def deleteProtocolType: Self = this.set("ProtocolType", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteSelectionExpression(value: SelectionExpression): Self = this.set("RouteSelectionExpression", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteRouteSelectionExpression: Self = this.set("RouteSelectionExpression", js.undefined)
+    def setVersion(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setWarnings(value: listOfString): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: StringWithLengthBetween1And64): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
     
     @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
-    
-    @scala.inline
-    def setWarningsVarargs(value: string*): Self = this.set("Warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: listOfString): Self = this.set("Warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("Warnings", js.undefined)
+    def setWarningsVarargs(value: string*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
   }
 }

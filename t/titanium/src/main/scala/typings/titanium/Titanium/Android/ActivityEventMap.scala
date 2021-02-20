@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.Android
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object ActivityEventMap {
   }
   
   @scala.inline
-  implicit class ActivityEventMapOps[Self <: ActivityEventMap] (val x: Self) extends AnyVal {
+  implicit class ActivityEventMapMutableBuilder[Self <: ActivityEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewintent(value: ActivityNewintentEvent): Self = StObject.set(x, "newintent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnIntent(value: ActivityOnIntentEvent): Self = StObject.set(x, "onIntent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserinteraction(value: ActivityUserinteractionEvent): Self = StObject.set(x, "userinteraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewintent(value: ActivityNewintentEvent): Self = this.set("newintent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnIntent(value: ActivityOnIntentEvent): Self = this.set("onIntent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserinteraction(value: ActivityUserinteractionEvent): Self = this.set("userinteraction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserleavehint(value: ActivityUserleavehintEvent): Self = this.set("userleavehint", value.asInstanceOf[js.Any])
+    def setUserleavehint(value: ActivityUserleavehintEvent): Self = StObject.set(x, "userleavehint", value.asInstanceOf[js.Any])
   }
 }

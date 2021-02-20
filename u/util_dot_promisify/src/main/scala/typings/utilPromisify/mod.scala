@@ -1,15 +1,13 @@
 package typings.utilPromisify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("util", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object promisify extends js.Object {
+  object promisify {
     
     /**
       * @deprecated
@@ -17,6 +15,8 @@ object mod extends js.Object {
       *
       * Use `util.promisify.custom` instead.
       */
+    @JSImport("util", "promisify.customPromisifyArgs")
+    @js.native
     val customPromisifyArgs: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof polyfill.customPromisifyArgs */ js.Any
       ] = js.native

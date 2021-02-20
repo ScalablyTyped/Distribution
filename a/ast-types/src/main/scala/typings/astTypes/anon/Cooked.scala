@@ -1,11 +1,12 @@
 package typings.astTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cooked extends js.Object {
+trait Cooked extends StObject {
   
   var cooked: String | Null = js.native
   
@@ -20,27 +21,15 @@ object Cooked {
   }
   
   @scala.inline
-  implicit class CookedOps[Self <: Cooked] (val x: Self) extends AnyVal {
+  implicit class CookedMutableBuilder[Self <: Cooked] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCookedNull: Self = StObject.set(x, "cooked", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCooked(value: String): Self = this.set("cooked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCookedNull: Self = this.set("cooked", null)
+    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.awsSdkClientKinesisBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/model/KMSAccessDeniedException", JSImport.Namespace)
-@js.native
-object kmsaccessdeniedexceptionMod extends js.Object {
+object kmsaccessdeniedexceptionMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/model/KMSAccessDeniedException", "KMSAccessDeniedException")
+  @js.native
   val KMSAccessDeniedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

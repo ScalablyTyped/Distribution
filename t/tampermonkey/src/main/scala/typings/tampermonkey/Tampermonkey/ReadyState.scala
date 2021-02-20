@@ -1,15 +1,16 @@
 package typings.tampermonkey.Tampermonkey
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReadyState extends js.Object
+sealed trait ReadyState extends StObject
 // Response
 @JSGlobal("Tampermonkey.ReadyState")
 @js.native
-object ReadyState extends js.Object {
+object ReadyState extends StObject {
   
   @js.native
   sealed trait Done extends ReadyState

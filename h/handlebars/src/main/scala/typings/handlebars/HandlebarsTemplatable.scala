@@ -1,5 +1,6 @@
 package typings.handlebars
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 * Implement this interface on your MVW/MVVM/MVC views such as Backbone.View
 **/
 @js.native
-trait HandlebarsTemplatable extends js.Object {
+trait HandlebarsTemplatable extends StObject {
   
   def template(context: js.Any): String = js.native
   def template(context: js.Any, options: typings.handlebars.Handlebars.RuntimeOptions): String = js.native

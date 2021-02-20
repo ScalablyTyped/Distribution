@@ -1,14 +1,14 @@
 package typings.tensorflowTfjsBackendWebgl
 
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/scatter_gpu", JSImport.Namespace)
-@js.native
-object scatterGpuMod extends js.Object {
+object scatterGpuMod {
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/scatter_gpu", "ScatterProgram")
   @js.native
   class ScatterProgram protected () extends GPGPUProgram {
     def this(

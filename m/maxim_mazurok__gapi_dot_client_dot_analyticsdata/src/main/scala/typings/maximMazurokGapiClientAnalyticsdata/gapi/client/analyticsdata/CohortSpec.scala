@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CohortSpec extends js.Object {
+trait CohortSpec extends StObject {
   
   /** Settings of a cohort report. */
   var cohortReportSettings: js.UndefOr[CohortReportSettings] = js.native
@@ -25,39 +26,27 @@ object CohortSpec {
   }
   
   @scala.inline
-  implicit class CohortSpecOps[Self <: CohortSpec] (val x: Self) extends AnyVal {
+  implicit class CohortSpecMutableBuilder[Self <: CohortSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCohortReportSettings(value: CohortReportSettings): Self = StObject.set(x, "cohortReportSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCohortReportSettingsUndefined: Self = StObject.set(x, "cohortReportSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCohorts(value: js.Array[Cohort]): Self = StObject.set(x, "cohorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCohortReportSettings(value: CohortReportSettings): Self = this.set("cohortReportSettings", value.asInstanceOf[js.Any])
+    def setCohortsRange(value: CohortsRange): Self = StObject.set(x, "cohortsRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCohortReportSettings: Self = this.set("cohortReportSettings", js.undefined)
+    def setCohortsRangeUndefined: Self = StObject.set(x, "cohortsRange", js.undefined)
     
     @scala.inline
-    def setCohortsVarargs(value: Cohort*): Self = this.set("cohorts", js.Array(value :_*))
+    def setCohortsUndefined: Self = StObject.set(x, "cohorts", js.undefined)
     
     @scala.inline
-    def setCohorts(value: js.Array[Cohort]): Self = this.set("cohorts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCohorts: Self = this.set("cohorts", js.undefined)
-    
-    @scala.inline
-    def setCohortsRange(value: CohortsRange): Self = this.set("cohortsRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCohortsRange: Self = this.set("cohortsRange", js.undefined)
+    def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value :_*))
   }
 }

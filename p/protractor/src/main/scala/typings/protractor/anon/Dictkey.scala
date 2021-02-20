@@ -1,6 +1,7 @@
 package typings.protractor.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,78 +70,66 @@ object Dictkey {
   }
   
   @scala.inline
-  implicit class DictkeyOps[Self <: Dictkey] (val x: Self) extends AnyVal {
+  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowserNameUndefined: Self = StObject.set(x, "browserName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserName(value: String): Self = this.set("browserName", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteBrowserName: Self = this.set("browserName", js.undefined)
+    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeVarargs(value: String*): Self = this.set("exclude", js.Array(value :_*))
+    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: js.Array[String]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogName(value: String): Self = this.set("logName", value.asInstanceOf[js.Any])
+    def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
     
     @scala.inline
-    def deleteLogName: Self = this.set("logName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxInstances(value: Double): Self = this.set("maxInstances", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaxInstances: Self = this.set("maxInstances", js.undefined)
+    def setSeleniumAddress(value: String): Self = StObject.set(x, "seleniumAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSeleniumAddressUndefined: Self = StObject.set(x, "seleniumAddress", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setShardTestFiles(value: Boolean): Self = StObject.set(x, "shardTestFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeleniumAddress(value: String): Self = this.set("seleniumAddress", value.asInstanceOf[js.Any])
+    def setShardTestFilesUndefined: Self = StObject.set(x, "shardTestFiles", js.undefined)
     
     @scala.inline
-    def deleteSeleniumAddress: Self = this.set("seleniumAddress", js.undefined)
+    def setSpecs(value: js.Array[String]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShardTestFiles(value: Boolean): Self = this.set("shardTestFiles", value.asInstanceOf[js.Any])
+    def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
     
     @scala.inline
-    def deleteShardTestFiles: Self = this.set("shardTestFiles", js.undefined)
-    
-    @scala.inline
-    def setSpecsVarargs(value: String*): Self = this.set("specs", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpecs(value: js.Array[String]): Self = this.set("specs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecs: Self = this.set("specs", js.undefined)
+    def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
   }
 }

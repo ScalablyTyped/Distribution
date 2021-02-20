@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartNotebookExecutionInput extends js.Object {
+trait StartNotebookExecutionInput extends StObject {
   
   /**
     * The unique identifier of the EMR Notebook to use for notebook execution.
@@ -61,57 +62,45 @@ object StartNotebookExecutionInput {
   }
   
   @scala.inline
-  implicit class StartNotebookExecutionInputOps[Self <: StartNotebookExecutionInput] (val x: Self) extends AnyVal {
+  implicit class StartNotebookExecutionInputMutableBuilder[Self <: StartNotebookExecutionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEditorId(value: XmlStringMaxLen256): Self = StObject.set(x, "EditorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionEngine(value: ExecutionEngineConfig): Self = StObject.set(x, "ExecutionEngine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotebookExecutionName(value: XmlStringMaxLen256): Self = StObject.set(x, "NotebookExecutionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorId(value: XmlStringMaxLen256): Self = this.set("EditorId", value.asInstanceOf[js.Any])
+    def setNotebookExecutionNameUndefined: Self = StObject.set(x, "NotebookExecutionName", js.undefined)
     
     @scala.inline
-    def setExecutionEngine(value: ExecutionEngineConfig): Self = this.set("ExecutionEngine", value.asInstanceOf[js.Any])
+    def setNotebookInstanceSecurityGroupId(value: XmlStringMaxLen256): Self = StObject.set(x, "NotebookInstanceSecurityGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativePath(value: XmlString): Self = this.set("RelativePath", value.asInstanceOf[js.Any])
+    def setNotebookInstanceSecurityGroupIdUndefined: Self = StObject.set(x, "NotebookInstanceSecurityGroupId", js.undefined)
     
     @scala.inline
-    def setServiceRole(value: XmlString): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    def setNotebookParams(value: XmlString): Self = StObject.set(x, "NotebookParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookExecutionName(value: XmlStringMaxLen256): Self = this.set("NotebookExecutionName", value.asInstanceOf[js.Any])
+    def setNotebookParamsUndefined: Self = StObject.set(x, "NotebookParams", js.undefined)
     
     @scala.inline
-    def deleteNotebookExecutionName: Self = this.set("NotebookExecutionName", js.undefined)
+    def setRelativePath(value: XmlString): Self = StObject.set(x, "RelativePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookInstanceSecurityGroupId(value: XmlStringMaxLen256): Self = this.set("NotebookInstanceSecurityGroupId", value.asInstanceOf[js.Any])
+    def setServiceRole(value: XmlString): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotebookInstanceSecurityGroupId: Self = this.set("NotebookInstanceSecurityGroupId", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookParams(value: XmlString): Self = this.set("NotebookParams", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteNotebookParams: Self = this.set("NotebookParams", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param event - The original browser event that was fired.
   */
 @js.native
-trait KeyboardEvent extends js.Object {
+trait KeyboardEvent extends StObject {
   
   /**
     * The element that fired the keyboard event.
@@ -48,27 +49,15 @@ object KeyboardEvent {
   }
   
   @scala.inline
-  implicit class KeyboardEventOps[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
+  implicit class KeyboardEventMutableBuilder[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setElement(value: Element): Self = this.set("element", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent(value: KeyboardEvent): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: Double): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

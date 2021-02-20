@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ASPxClientSpreadsheetPopupMenuType extends js.Object
+sealed trait ASPxClientSpreadsheetPopupMenuType extends StObject
 /**
   * Lists values that identify the context menu type.
   */
 @JSGlobal("ASPxClientSpreadsheetPopupMenuType")
 @js.native
-object ASPxClientSpreadsheetPopupMenuType extends js.Object {
+object ASPxClientSpreadsheetPopupMenuType extends StObject {
   
   /**
     * Specifies a context menu which can be invoked by clicking the AutoFilter drop-down arrow.

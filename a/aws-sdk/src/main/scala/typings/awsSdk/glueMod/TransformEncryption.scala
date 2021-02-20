@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformEncryption extends js.Object {
+trait TransformEncryption extends StObject {
   
   /**
     * An MLUserDataEncryption object containing the encryption mode and customer-provided KMS key ID.
@@ -26,30 +27,18 @@ object TransformEncryption {
   }
   
   @scala.inline
-  implicit class TransformEncryptionOps[Self <: TransformEncryption] (val x: Self) extends AnyVal {
+  implicit class TransformEncryptionMutableBuilder[Self <: TransformEncryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMlUserDataEncryption(value: MLUserDataEncryption): Self = StObject.set(x, "MlUserDataEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMlUserDataEncryptionUndefined: Self = StObject.set(x, "MlUserDataEncryption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTaskRunSecurityConfigurationName(value: NameString): Self = StObject.set(x, "TaskRunSecurityConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMlUserDataEncryption(value: MLUserDataEncryption): Self = this.set("MlUserDataEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMlUserDataEncryption: Self = this.set("MlUserDataEncryption", js.undefined)
-    
-    @scala.inline
-    def setTaskRunSecurityConfigurationName(value: NameString): Self = this.set("TaskRunSecurityConfigurationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskRunSecurityConfigurationName: Self = this.set("TaskRunSecurityConfigurationName", js.undefined)
+    def setTaskRunSecurityConfigurationNameUndefined: Self = StObject.set(x, "TaskRunSecurityConfigurationName", js.undefined)
   }
 }

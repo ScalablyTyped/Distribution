@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.document
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,33 +56,21 @@ object XActionLockable {
   }
   
   @scala.inline
-  implicit class XActionLockableOps[Self <: XActionLockable] (val x: Self) extends AnyVal {
+  implicit class XActionLockableMutableBuilder[Self <: XActionLockable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddActionLock(value: () => Unit): Self = StObject.set(x, "addActionLock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsActionLocked(value: () => Boolean): Self = StObject.set(x, "isActionLocked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveActionLock(value: () => Unit): Self = StObject.set(x, "removeActionLock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddActionLock(value: () => Unit): Self = this.set("addActionLock", js.Any.fromFunction0(value))
+    def setResetActionLocks(value: () => Double): Self = StObject.set(x, "resetActionLocks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsActionLocked(value: () => Boolean): Self = this.set("isActionLocked", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveActionLock(value: () => Unit): Self = this.set("removeActionLock", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResetActionLocks(value: () => Double): Self = this.set("resetActionLocks", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetActionLocks(value: Double => Unit): Self = this.set("setActionLocks", js.Any.fromFunction1(value))
+    def setSetActionLocks(value: Double => Unit): Self = StObject.set(x, "setActionLocks", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * all live in the same project.
   */
 @js.native
-trait SchemaAuthority extends js.Object {
+trait SchemaAuthority extends StObject {
   
   /**
     * Hint hints at the purpose of the attestation authority.
@@ -32,24 +33,12 @@ object SchemaAuthority {
   }
   
   @scala.inline
-  implicit class SchemaAuthorityOps[Self <: SchemaAuthority] (val x: Self) extends AnyVal {
+  implicit class SchemaAuthorityMutableBuilder[Self <: SchemaAuthority] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHint(value: SchemaHint): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHint(value: SchemaHint): Self = this.set("hint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHint: Self = this.set("hint", js.undefined)
+    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
   }
 }

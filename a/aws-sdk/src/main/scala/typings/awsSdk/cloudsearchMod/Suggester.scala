@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Suggester extends js.Object {
+trait Suggester extends StObject {
   
   var DocumentSuggesterOptions: typings.awsSdk.cloudsearchMod.DocumentSuggesterOptions = js.native
   
@@ -20,24 +21,12 @@ object Suggester {
   }
   
   @scala.inline
-  implicit class SuggesterOps[Self <: Suggester] (val x: Self) extends AnyVal {
+  implicit class SuggesterMutableBuilder[Self <: Suggester] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentSuggesterOptions(value: DocumentSuggesterOptions): Self = StObject.set(x, "DocumentSuggesterOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocumentSuggesterOptions(value: DocumentSuggesterOptions): Self = this.set("DocumentSuggesterOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggesterName(value: StandardName): Self = this.set("SuggesterName", value.asInstanceOf[js.Any])
+    def setSuggesterName(value: StandardName): Self = StObject.set(x, "SuggesterName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSuppressedDestinationResponse extends js.Object {
+trait GetSuppressedDestinationResponse extends StObject {
   
   /**
     * An object containing information about the suppressed email address.
@@ -21,21 +22,9 @@ object GetSuppressedDestinationResponse {
   }
   
   @scala.inline
-  implicit class GetSuppressedDestinationResponseOps[Self <: GetSuppressedDestinationResponse] (val x: Self) extends AnyVal {
+  implicit class GetSuppressedDestinationResponseMutableBuilder[Self <: GetSuppressedDestinationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSuppressedDestination(value: SuppressedDestination): Self = this.set("SuppressedDestination", value.asInstanceOf[js.Any])
+    def setSuppressedDestination(value: SuppressedDestination): Self = StObject.set(x, "SuppressedDestination", value.asInstanceOf[js.Any])
   }
 }

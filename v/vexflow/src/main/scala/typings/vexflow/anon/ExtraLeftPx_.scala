@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtraLeftPx_ extends js.Object {
+trait ExtraLeftPx_ extends StObject {
   
   var extraLeftPx: Double = js.native
   
@@ -38,39 +39,27 @@ object ExtraLeftPx_ {
   }
   
   @scala.inline
-  implicit class ExtraLeftPx_Ops[Self <: ExtraLeftPx_] (val x: Self) extends AnyVal {
+  implicit class ExtraLeftPx_MutableBuilder[Self <: ExtraLeftPx_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtraLeftPx(value: Double): Self = StObject.set(x, "extraLeftPx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtraRightPx(value: Double): Self = StObject.set(x, "extraRightPx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeft_shift(value: Double): Self = StObject.set(x, "left_shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraLeftPx(value: Double): Self = this.set("extraLeftPx", value.asInstanceOf[js.Any])
+    def setModLeftPx(value: Double): Self = StObject.set(x, "modLeftPx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraRightPx(value: Double): Self = this.set("extraRightPx", value.asInstanceOf[js.Any])
+    def setModRightPx(value: Double): Self = StObject.set(x, "modRightPx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft_shift(value: Double): Self = this.set("left_shift", value.asInstanceOf[js.Any])
+    def setNoteWidth(value: Double): Self = StObject.set(x, "noteWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModLeftPx(value: Double): Self = this.set("modLeftPx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModRightPx(value: Double): Self = this.set("modRightPx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoteWidth(value: Double): Self = this.set("noteWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

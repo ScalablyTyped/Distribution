@@ -1,5 +1,6 @@
 package typings.googleapis.polyV1Mod.polyV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A response message from a request to list.
   */
 @js.native
-trait SchemaListUserAssetsResponse extends js.Object {
+trait SchemaListUserAssetsResponse extends StObject {
   
   /**
     * The continuation token for retrieving the next page. If empty, indicates
@@ -36,39 +37,27 @@ object SchemaListUserAssetsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListUserAssetsResponseOps[Self <: SchemaListUserAssetsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListUserAssetsResponseMutableBuilder[Self <: SchemaListUserAssetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setUserAssets(value: js.Array[SchemaUserAsset]): Self = StObject.set(x, "userAssets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
+    def setUserAssetsUndefined: Self = StObject.set(x, "userAssets", js.undefined)
     
     @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
-    
-    @scala.inline
-    def setUserAssetsVarargs(value: SchemaUserAsset*): Self = this.set("userAssets", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserAssets(value: js.Array[SchemaUserAsset]): Self = this.set("userAssets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAssets: Self = this.set("userAssets", js.undefined)
+    def setUserAssetsVarargs(value: SchemaUserAsset*): Self = StObject.set(x, "userAssets", js.Array(value :_*))
   }
 }

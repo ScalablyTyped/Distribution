@@ -2,12 +2,13 @@ package typings.lodash.fpMod
 
 import typings.lodash.mod.NumericDictionary
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashGetOr5x2 extends js.Object {
+trait LodashGetOr5x2 extends StObject {
   
   def apply[TDefault](defaultValue: TDefault): LodashGetOr5x3[TDefault] = js.native
   def apply[T](defaultValue: __): LodashGetOr5x6[T] = js.native

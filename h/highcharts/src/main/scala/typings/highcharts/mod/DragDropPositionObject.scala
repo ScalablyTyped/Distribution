@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragDropPositionObject extends js.Object {
+trait DragDropPositionObject extends StObject {
   
   /**
     * Chart x position
@@ -46,45 +47,33 @@ object DragDropPositionObject {
   }
   
   @scala.inline
-  implicit class DragDropPositionObjectOps[Self <: DragDropPositionObject] (val x: Self) extends AnyVal {
+  implicit class DragDropPositionObjectMutableBuilder[Self <: DragDropPositionObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartX(value: Double): Self = StObject.set(x, "chartX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartY(value: Double): Self = StObject.set(x, "chartY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGuideBox(value: BBoxObject): Self = StObject.set(x, "guideBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartX(value: Double): Self = this.set("chartX", value.asInstanceOf[js.Any])
+    def setGuideBoxUndefined: Self = StObject.set(x, "guideBox", js.undefined)
     
     @scala.inline
-    def setChartY(value: Double): Self = this.set("chartY", value.asInstanceOf[js.Any])
+    def setPoints(value: Dictionary[Dictionary[Double]]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: Dictionary[Dictionary[Double]]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setPrevdX(value: Double): Self = StObject.set(x, "prevdX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuideBox(value: BBoxObject): Self = this.set("guideBox", value.asInstanceOf[js.Any])
+    def setPrevdXUndefined: Self = StObject.set(x, "prevdX", js.undefined)
     
     @scala.inline
-    def deleteGuideBox: Self = this.set("guideBox", js.undefined)
+    def setPrevdY(value: Double): Self = StObject.set(x, "prevdY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevdX(value: Double): Self = this.set("prevdX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevdX: Self = this.set("prevdX", js.undefined)
-    
-    @scala.inline
-    def setPrevdY(value: Double): Self = this.set("prevdY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevdY: Self = this.set("prevdY", js.undefined)
+    def setPrevdYUndefined: Self = StObject.set(x, "prevdY", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateIntersectionObserverOption extends js.Object {
+trait CreateIntersectionObserverOption extends StObject {
   
   var initialRatio: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object CreateIntersectionObserverOption {
   }
   
   @scala.inline
-  implicit class CreateIntersectionObserverOptionOps[Self <: CreateIntersectionObserverOption] (val x: Self) extends AnyVal {
+  implicit class CreateIntersectionObserverOptionMutableBuilder[Self <: CreateIntersectionObserverOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialRatio(value: Double): Self = StObject.set(x, "initialRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialRatioUndefined: Self = StObject.set(x, "initialRatio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectAll(value: Boolean): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialRatio(value: Double): Self = this.set("initialRatio", value.asInstanceOf[js.Any])
+    def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
     
     @scala.inline
-    def deleteInitialRatio: Self = this.set("initialRatio", js.undefined)
+    def setThresholds(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAll(value: Boolean): Self = this.set("selectAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectAll: Self = this.set("selectAll", js.undefined)
-    
-    @scala.inline
-    def setThresholds(value: js.Tuple2[Double, Double]): Self = this.set("thresholds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThresholds: Self = this.set("thresholds", js.undefined)
+    def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
   }
 }

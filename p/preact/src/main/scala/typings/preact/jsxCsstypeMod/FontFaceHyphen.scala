@@ -1,11 +1,12 @@
 package typings.preact.jsxCsstypeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontFaceHyphen extends js.Object {
+trait FontFaceHyphen extends StObject {
   
   var `-moz-font-feature-settings`: js.UndefOr[FontFaceFontFeatureSettingsProperty] = js.native
   
@@ -38,84 +39,72 @@ object FontFaceHyphen {
   }
   
   @scala.inline
-  implicit class FontFaceHyphenOps[Self <: FontFaceHyphen] (val x: Self) extends AnyVal {
+  implicit class FontFaceHyphenMutableBuilder[Self <: FontFaceHyphen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `set-moz-font-feature-settings`(value: FontFaceFontFeatureSettingsProperty): Self = StObject.set(x, "-moz-font-feature-settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `set-moz-font-feature-settingsUndefined`: Self = StObject.set(x, "-moz-font-feature-settings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setFont-display`(value: FontFaceFontDisplayProperty): Self = StObject.set(x, "font-display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-moz-font-feature-settings`(value: FontFaceFontFeatureSettingsProperty): Self = this.set("-moz-font-feature-settings", value.asInstanceOf[js.Any])
+    def `setFont-displayUndefined`: Self = StObject.set(x, "font-display", js.undefined)
     
     @scala.inline
-    def `delete-moz-font-feature-settings`: Self = this.set("-moz-font-feature-settings", js.undefined)
+    def `setFont-family`(value: String): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-display`(value: FontFaceFontDisplayProperty): Self = this.set("font-display", value.asInstanceOf[js.Any])
+    def `setFont-familyUndefined`: Self = StObject.set(x, "font-family", js.undefined)
     
     @scala.inline
-    def `deleteFont-display`: Self = this.set("font-display", js.undefined)
+    def `setFont-feature-settings`(value: FontFaceFontFeatureSettingsProperty): Self = StObject.set(x, "font-feature-settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-family`(value: String): Self = this.set("font-family", value.asInstanceOf[js.Any])
+    def `setFont-feature-settingsUndefined`: Self = StObject.set(x, "font-feature-settings", js.undefined)
     
     @scala.inline
-    def `deleteFont-family`: Self = this.set("font-family", js.undefined)
+    def `setFont-stretch`(value: FontFaceFontStretchProperty): Self = StObject.set(x, "font-stretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-feature-settings`(value: FontFaceFontFeatureSettingsProperty): Self = this.set("font-feature-settings", value.asInstanceOf[js.Any])
+    def `setFont-stretchUndefined`: Self = StObject.set(x, "font-stretch", js.undefined)
     
     @scala.inline
-    def `deleteFont-feature-settings`: Self = this.set("font-feature-settings", js.undefined)
+    def `setFont-style`(value: FontFaceFontStyleProperty): Self = StObject.set(x, "font-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-stretch`(value: FontFaceFontStretchProperty): Self = this.set("font-stretch", value.asInstanceOf[js.Any])
+    def `setFont-styleUndefined`: Self = StObject.set(x, "font-style", js.undefined)
     
     @scala.inline
-    def `deleteFont-stretch`: Self = this.set("font-stretch", js.undefined)
+    def `setFont-variant`(value: FontFaceFontVariantProperty): Self = StObject.set(x, "font-variant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-style`(value: FontFaceFontStyleProperty): Self = this.set("font-style", value.asInstanceOf[js.Any])
+    def `setFont-variantUndefined`: Self = StObject.set(x, "font-variant", js.undefined)
     
     @scala.inline
-    def `deleteFont-style`: Self = this.set("font-style", js.undefined)
+    def `setFont-variation-settings`(value: FontFaceFontVariationSettingsProperty): Self = StObject.set(x, "font-variation-settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-variant`(value: FontFaceFontVariantProperty): Self = this.set("font-variant", value.asInstanceOf[js.Any])
+    def `setFont-variation-settingsUndefined`: Self = StObject.set(x, "font-variation-settings", js.undefined)
     
     @scala.inline
-    def `deleteFont-variant`: Self = this.set("font-variant", js.undefined)
+    def `setFont-weight`(value: FontFaceFontWeightProperty): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-variation-settings`(value: FontFaceFontVariationSettingsProperty): Self = this.set("font-variation-settings", value.asInstanceOf[js.Any])
+    def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
     
     @scala.inline
-    def `deleteFont-variation-settings`: Self = this.set("font-variation-settings", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-weight`(value: FontFaceFontWeightProperty): Self = this.set("font-weight", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def `deleteFont-weight`: Self = this.set("font-weight", js.undefined)
+    def `setUnicode-range`(value: String): Self = StObject.set(x, "unicode-range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
-    
-    @scala.inline
-    def `setUnicode-range`(value: String): Self = this.set("unicode-range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUnicode-range`: Self = this.set("unicode-range", js.undefined)
+    def `setUnicode-rangeUndefined`: Self = StObject.set(x, "unicode-range", js.undefined)
   }
 }

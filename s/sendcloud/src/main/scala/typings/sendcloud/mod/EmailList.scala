@@ -1,11 +1,12 @@
 package typings.sendcloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailList extends js.Object {
+trait EmailList extends StObject {
   
   var apiKey: String = js.native
   

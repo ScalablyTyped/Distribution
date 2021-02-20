@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Visio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OverlayVerticalAlignment extends js.Object
+sealed trait OverlayVerticalAlignment extends StObject
 /**
   *
   * Represents the Vertical Alignment of the Overlay relative to the shape.
@@ -14,7 +15,7 @@ sealed trait OverlayVerticalAlignment extends js.Object
   */
 @JSGlobal("Visio.OverlayVerticalAlignment")
 @js.native
-object OverlayVerticalAlignment extends js.Object {
+object OverlayVerticalAlignment extends StObject {
   
   /**
     *

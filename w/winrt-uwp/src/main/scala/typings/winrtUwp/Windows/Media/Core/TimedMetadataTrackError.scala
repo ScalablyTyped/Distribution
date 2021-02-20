@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Core
 
 import typings.winrtUwp.Windows.WinRTError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an error that occurred with a timed metadata track. */
 @js.native
-trait TimedMetadataTrackError extends js.Object {
+trait TimedMetadataTrackError extends StObject {
   
   /** Gets the error code associated with the timed metadata track error. */
   var errorCode: TimedMetadataTrackErrorCode = js.native
@@ -24,24 +25,12 @@ object TimedMetadataTrackError {
   }
   
   @scala.inline
-  implicit class TimedMetadataTrackErrorOps[Self <: TimedMetadataTrackError] (val x: Self) extends AnyVal {
+  implicit class TimedMetadataTrackErrorMutableBuilder[Self <: TimedMetadataTrackError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: TimedMetadataTrackErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrorCode(value: TimedMetadataTrackErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = this.set("extendedError", value.asInstanceOf[js.Any])
+    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.auth0Lock
 
 import typings.auth0Lock.anon.Hint
 import typings.auth0Lock.auth0LockStrings.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,65 +35,53 @@ object Auth0LockAdditionalTextSignUpField {
   }
   
   @scala.inline
-  implicit class Auth0LockAdditionalTextSignUpFieldOps[Self <: Auth0LockAdditionalTextSignUpField] (val x: Self) extends AnyVal {
+  implicit class Auth0LockAdditionalTextSignUpFieldMutableBuilder[Self <: Auth0LockAdditionalTextSignUpField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
-    
-    @scala.inline
-    def setOptionsVarargs(value: Auth0LockAdditionalSignUpFieldOption*): Self = this.set("options", js.Array(value :_*))
-    
-    @scala.inline
-    def setOptionsFunction1(value: /* callback */ Auth0LockAdditionalSignUpFieldOptionsCallback => Unit): Self = this.set("options", js.Any.fromFunction1(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptions(
       value: js.Array[Auth0LockAdditionalSignUpFieldOption] | Auth0LockAdditionalSignUpFieldOptionsFunction
-    ): Self = this.set("options", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsFunction1(value: /* callback */ Auth0LockAdditionalSignUpFieldOptionsCallback => Unit): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrefillFunction1(value: /* callback */ Auth0LockAdditionalSignUpFieldPrefillCallback => Unit): Self = this.set("prefill", js.Any.fromFunction1(value))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setPrefill(value: String | Auth0LockAdditionalSignUpFieldPrefillFunction): Self = this.set("prefill", value.asInstanceOf[js.Any])
+    def setOptionsVarargs(value: Auth0LockAdditionalSignUpFieldOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def deletePrefill: Self = this.set("prefill", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: text): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPrefill(value: String | Auth0LockAdditionalSignUpFieldPrefillFunction): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setPrefillFunction1(value: /* callback */ Auth0LockAdditionalSignUpFieldPrefillCallback => Unit): Self = StObject.set(x, "prefill", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValidator(value: /* input */ String => Hint): Self = this.set("validator", js.Any.fromFunction1(value))
+    def setPrefillUndefined: Self = StObject.set(x, "prefill", js.undefined)
     
     @scala.inline
-    def deleteValidator: Self = this.set("validator", js.undefined)
+    def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    @scala.inline
+    def setValidator(value: /* input */ String => Hint): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
   }
 }

@@ -1,13 +1,16 @@
 package typings.ol
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/TileCache", JSImport.Namespace)
-@js.native
-object tileCacheMod extends js.Object {
+object tileCacheMod {
+  
+  @JSImport("ol/TileCache", JSImport.Default)
+  @js.native
+  class default () extends TileCache
   
   @js.native
   trait TileCache
@@ -20,7 +23,4 @@ object tileCacheMod extends js.Object {
       */
     def pruneExceptNewestZ(): Unit = js.native
   }
-  
-  @js.native
-  class default () extends TileCache
 }

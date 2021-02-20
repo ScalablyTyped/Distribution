@@ -1,39 +1,86 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SynthesizeSpeechConfig. */
-trait ISynthesizeSpeechConfig extends js.Object {
+@js.native
+trait ISynthesizeSpeechConfig extends StObject {
+  
   /** SynthesizeSpeechConfig effectsProfileId */
-  var effectsProfileId: js.UndefOr[js.Array[String] | Null] = js.undefined
+  var effectsProfileId: js.UndefOr[js.Array[String] | Null] = js.native
+  
   /** SynthesizeSpeechConfig pitch */
-  var pitch: js.UndefOr[Double | Null] = js.undefined
+  var pitch: js.UndefOr[Double | Null] = js.native
+  
   /** SynthesizeSpeechConfig speakingRate */
-  var speakingRate: js.UndefOr[Double | Null] = js.undefined
+  var speakingRate: js.UndefOr[Double | Null] = js.native
+  
   /** SynthesizeSpeechConfig voice */
-  var voice: js.UndefOr[IVoiceSelectionParams | Null] = js.undefined
+  var voice: js.UndefOr[IVoiceSelectionParams | Null] = js.native
+  
   /** SynthesizeSpeechConfig volumeGainDb */
-  var volumeGainDb: js.UndefOr[Double | Null] = js.undefined
+  var volumeGainDb: js.UndefOr[Double | Null] = js.native
 }
-
 object ISynthesizeSpeechConfig {
+  
   @scala.inline
-  def apply(
-    effectsProfileId: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    pitch: js.UndefOr[Null | Double] = js.undefined,
-    speakingRate: js.UndefOr[Null | Double] = js.undefined,
-    voice: js.UndefOr[Null | IVoiceSelectionParams] = js.undefined,
-    volumeGainDb: js.UndefOr[Null | Double] = js.undefined
-  ): ISynthesizeSpeechConfig = {
+  def apply(): ISynthesizeSpeechConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(effectsProfileId)) __obj.updateDynamic("effectsProfileId")(effectsProfileId.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (!js.isUndefined(speakingRate)) __obj.updateDynamic("speakingRate")(speakingRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(voice)) __obj.updateDynamic("voice")(voice.asInstanceOf[js.Any])
-    if (!js.isUndefined(volumeGainDb)) __obj.updateDynamic("volumeGainDb")(volumeGainDb.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISynthesizeSpeechConfig]
   }
+  
+  @scala.inline
+  implicit class ISynthesizeSpeechConfigMutableBuilder[Self <: ISynthesizeSpeechConfig] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setEffectsProfileId(value: js.Array[String]): Self = StObject.set(x, "effectsProfileId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEffectsProfileIdNull: Self = StObject.set(x, "effectsProfileId", null)
+    
+    @scala.inline
+    def setEffectsProfileIdUndefined: Self = StObject.set(x, "effectsProfileId", js.undefined)
+    
+    @scala.inline
+    def setEffectsProfileIdVarargs(value: String*): Self = StObject.set(x, "effectsProfileId", js.Array(value :_*))
+    
+    @scala.inline
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPitchNull: Self = StObject.set(x, "pitch", null)
+    
+    @scala.inline
+    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+    
+    @scala.inline
+    def setSpeakingRate(value: Double): Self = StObject.set(x, "speakingRate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSpeakingRateNull: Self = StObject.set(x, "speakingRate", null)
+    
+    @scala.inline
+    def setSpeakingRateUndefined: Self = StObject.set(x, "speakingRate", js.undefined)
+    
+    @scala.inline
+    def setVoice(value: IVoiceSelectionParams): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVoiceNull: Self = StObject.set(x, "voice", null)
+    
+    @scala.inline
+    def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
+    
+    @scala.inline
+    def setVolumeGainDb(value: Double): Self = StObject.set(x, "volumeGainDb", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVolumeGainDbNull: Self = StObject.set(x, "volumeGainDb", null)
+    
+    @scala.inline
+    def setVolumeGainDbUndefined: Self = StObject.set(x, "volumeGainDb", js.undefined)
+  }
 }
-

@@ -42,13 +42,14 @@ import typings.std.MouseEvent
 import typings.std.Parameters
 import typings.std.ReturnType
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ P in keyof raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> ]: raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>[P] extends (args : any): any? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>[P]>, std.ReturnType<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>[P]>> : never} */
 @js.native
-trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] extends js.Object {
+trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] extends StObject {
   
   var animate: RaphaelElementPluginMethod[
     TTechnology, 
@@ -913,7 +914,7 @@ object RaphaelElementPluginRegistry {
         ]
       ]
     ],
-    clone: RaphaelElementPluginMethod[
+    clone_ : RaphaelElementPluginMethod[
       TTechnology, 
       Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
       ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
@@ -1682,25 +1683,14 @@ object RaphaelElementPluginRegistry {
       ]
     ]
   ): RaphaelElementPluginRegistry[TTechnology] = {
-    val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], animateWith = animateWith.asInstanceOf[js.Any], attr = attr.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], clone = clone.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], getBBox = getBBox.asInstanceOf[js.Any], glow = glow.asInstanceOf[js.Any], hide = hide.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], insertAfter = insertAfter.asInstanceOf[js.Any], insertBefore = insertBefore.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], onDragOver = onDragOver.asInstanceOf[js.Any], paper = paper.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], removeData = removeData.asInstanceOf[js.Any], resume = resume.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setTime = setTime.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], toBack = toBack.asInstanceOf[js.Any], toFront = toFront.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any], unclick = unclick.asInstanceOf[js.Any], undblclick = undblclick.asInstanceOf[js.Any], undrag = undrag.asInstanceOf[js.Any], unhover = unhover.asInstanceOf[js.Any], unmousedown = unmousedown.asInstanceOf[js.Any], unmousemove = unmousemove.asInstanceOf[js.Any], unmouseout = unmouseout.asInstanceOf[js.Any], unmouseover = unmouseover.asInstanceOf[js.Any], unmouseup = unmouseup.asInstanceOf[js.Any], untouchcancel = untouchcancel.asInstanceOf[js.Any], untouchend = untouchend.asInstanceOf[js.Any], untouchmove = untouchmove.asInstanceOf[js.Any], untouchstart = untouchstart.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], animateWith = animateWith.asInstanceOf[js.Any], attr = attr.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], getBBox = getBBox.asInstanceOf[js.Any], glow = glow.asInstanceOf[js.Any], hide = hide.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], insertAfter = insertAfter.asInstanceOf[js.Any], insertBefore = insertBefore.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], onDragOver = onDragOver.asInstanceOf[js.Any], paper = paper.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], removeData = removeData.asInstanceOf[js.Any], resume = resume.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setTime = setTime.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], toBack = toBack.asInstanceOf[js.Any], toFront = toFront.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any], unclick = unclick.asInstanceOf[js.Any], undblclick = undblclick.asInstanceOf[js.Any], undrag = undrag.asInstanceOf[js.Any], unhover = unhover.asInstanceOf[js.Any], unmousedown = unmousedown.asInstanceOf[js.Any], unmousemove = unmousemove.asInstanceOf[js.Any], unmouseout = unmouseout.asInstanceOf[js.Any], unmouseover = unmouseover.asInstanceOf[js.Any], unmouseup = unmouseup.asInstanceOf[js.Any], untouchcancel = untouchcancel.asInstanceOf[js.Any], untouchend = untouchend.asInstanceOf[js.Any], untouchmove = untouchmove.asInstanceOf[js.Any], untouchstart = untouchstart.asInstanceOf[js.Any])
+    __obj.updateDynamic("clone")(clone_.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaphaelElementPluginRegistry[TTechnology]]
   }
   
   @scala.inline
-  implicit class RaphaelElementPluginRegistryOps[Self <: RaphaelElementPluginRegistry[_], TTechnology /* <: RaphaelTechnology */] (val x: Self with RaphaelElementPluginRegistry[TTechnology]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class RaphaelElementPluginRegistryMutableBuilder[Self <: RaphaelElementPluginRegistry[_], TTechnology /* <: RaphaelTechnology */] (val x: Self with RaphaelElementPluginRegistry[TTechnology]) extends AnyVal {
     
     @scala.inline
     def setAnimate(
@@ -1725,7 +1715,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("animate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAnimateWith(
@@ -1760,7 +1750,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("animateWith", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animateWith", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAttr(
@@ -1785,7 +1775,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("attr", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClick(
@@ -1810,16 +1800,16 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("click", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(
+    def setClone_(
       value: RaphaelElementPluginMethod[
           TTechnology, 
           Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
           ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
         ]
-    ): Self = this.set("clone", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setData(
@@ -1828,7 +1818,7 @@ object RaphaelElementPluginRegistry {
           Parameters[js.Function1[/* key */ String, _]], 
           ReturnType[js.Function1[/* key */ String, _]]
         ]
-    ): Self = this.set("data", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDblclick(
@@ -1853,7 +1843,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDrag(
@@ -1882,7 +1872,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("drag", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGetBBox(
@@ -1895,7 +1885,7 @@ object RaphaelElementPluginRegistry {
             js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], RaphaelAxisAlignedBoundingBox]
           ]
         ]
-    ): Self = this.set("getBBox", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "getBBox", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGlow(
@@ -1908,7 +1898,7 @@ object RaphaelElementPluginRegistry {
             js.Function1[/* glow */ js.UndefOr[PartialRaphaelGlowSetting], RaphaelSet[TTechnology]]
           ]
         ]
-    ): Self = this.set("glow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "glow", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHide(
@@ -1917,7 +1907,7 @@ object RaphaelElementPluginRegistry {
           Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
           ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
         ]
-    ): Self = this.set("hide", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHover(
@@ -1954,10 +1944,10 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("hover", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: RaphaelElementPluginMethod[TTechnology, Parameters[Double], ReturnType[Double]]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: RaphaelElementPluginMethod[TTechnology, Parameters[Double], ReturnType[Double]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInsertAfter(
@@ -1982,7 +1972,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("insertAfter", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInsertBefore(
@@ -2007,12 +1997,12 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("insertBefore", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMatrix(
       value: RaphaelElementPluginMethod[TTechnology, Parameters[RaphaelMatrix], ReturnType[RaphaelMatrix]]
-    ): Self = this.set("matrix", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMousedown(
@@ -2037,7 +2027,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("mousedown", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMousemove(
@@ -2062,7 +2052,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("mousemove", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMouseout(
@@ -2087,7 +2077,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("mouseout", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMouseover(
@@ -2112,7 +2102,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("mouseover", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMouseup(
@@ -2137,7 +2127,29 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("mouseup", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNext(
+      value: RaphaelElementPluginMethod[
+          TTechnology, 
+          Parameters[
+            (RaphaelElement[
+              TTechnology, 
+              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
+            ]) | Null
+          ], 
+          ReturnType[
+            (RaphaelElement[
+              TTechnology, 
+              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
+            ]) | Null
+          ]
+        ]
+    ): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
     def setNode(
@@ -2150,7 +2162,7 @@ object RaphaelElementPluginRegistry {
             /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
           ]
         ]
-    ): Self = this.set("node", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragOver(
@@ -2175,7 +2187,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("onDragOver", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onDragOver", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPaper(
@@ -2184,7 +2196,7 @@ object RaphaelElementPluginRegistry {
           Parameters[RaphaelPaper[TTechnology]], 
           ReturnType[RaphaelPaper[TTechnology]]
         ]
-    ): Self = this.set("paper", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPause(
@@ -2197,12 +2209,46 @@ object RaphaelElementPluginRegistry {
             js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], RaphaelElementPluginRegistry[TTechnology]]
           ]
         ]
-    ): Self = this.set("pause", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPrev(
+      value: RaphaelElementPluginMethod[
+          TTechnology, 
+          Parameters[
+            (RaphaelElement[
+              TTechnology, 
+              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
+            ]) | Null
+          ], 
+          ReturnType[
+            (RaphaelElement[
+              TTechnology, 
+              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
+            ]) | Null
+          ]
+        ]
+    ): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    
+    @scala.inline
+    def setRaphael(
+      value: RaphaelElementPluginMethod[
+          TTechnology, 
+          Parameters[js.UndefOr[RaphaelStatic[SVG | VML]]], 
+          ReturnType[js.UndefOr[RaphaelStatic[SVG | VML]]]
+        ]
+    ): Self = StObject.set(x, "raphael", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRaphaelUndefined: Self = StObject.set(x, "raphael", js.undefined)
     
     @scala.inline
     def setRemove(
       value: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[Unit]], ReturnType[js.Function0[Unit]]]
-    ): Self = this.set("remove", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRemoveData(
@@ -2215,7 +2261,7 @@ object RaphaelElementPluginRegistry {
             js.Function1[/* key */ js.UndefOr[String], RaphaelElementPluginRegistry[TTechnology]]
           ]
         ]
-    ): Self = this.set("removeData", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "removeData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResume(
@@ -2228,7 +2274,7 @@ object RaphaelElementPluginRegistry {
             js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], RaphaelElementPluginRegistry[TTechnology]]
           ]
         ]
-    ): Self = this.set("resume", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRotate(
@@ -2251,7 +2297,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScale(
@@ -2276,7 +2322,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("scale", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSetTime(
@@ -2297,7 +2343,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("setTime", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "setTime", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setShow(
@@ -2306,7 +2352,7 @@ object RaphaelElementPluginRegistry {
           Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
           ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
         ]
-    ): Self = this.set("show", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStatus(
@@ -2315,7 +2361,7 @@ object RaphaelElementPluginRegistry {
           Parameters[js.Function0[js.Array[RaphaelAnimationStatus]]], 
           ReturnType[js.Function0[js.Array[RaphaelAnimationStatus]]]
         ]
-    ): Self = this.set("status", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStop(
@@ -2334,7 +2380,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("stop", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setToBack(
@@ -2343,7 +2389,7 @@ object RaphaelElementPluginRegistry {
           Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
           ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
         ]
-    ): Self = this.set("toBack", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "toBack", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setToFront(
@@ -2352,7 +2398,7 @@ object RaphaelElementPluginRegistry {
           Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
           ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
         ]
-    ): Self = this.set("toFront", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "toFront", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTouchcancel(
@@ -2377,7 +2423,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTouchend(
@@ -2402,7 +2448,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("touchend", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTouchmove(
@@ -2427,7 +2473,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("touchmove", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTouchstart(
@@ -2452,12 +2498,12 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("touchstart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTransform(
       value: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[String]], ReturnType[js.Function0[String]]]
-    ): Self = this.set("transform", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTranslate(
@@ -2470,7 +2516,7 @@ object RaphaelElementPluginRegistry {
             js.Function2[/* deltaX */ Double, /* deltaY */ Double, RaphaelElementPluginRegistry[TTechnology]]
           ]
         ]
-    ): Self = this.set("translate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setType(
@@ -2479,7 +2525,7 @@ object RaphaelElementPluginRegistry {
           Parameters[RaphaelShapeType | String], 
           ReturnType[RaphaelShapeType | String]
         ]
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnclick(
@@ -2504,7 +2550,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("unclick", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unclick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUndblclick(
@@ -2529,7 +2575,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("undblclick", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "undblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUndrag(
@@ -2538,7 +2584,7 @@ object RaphaelElementPluginRegistry {
           Parameters[js.Function0[RaphaelElementPluginRegistry[TTechnology]]], 
           ReturnType[js.Function0[RaphaelElementPluginRegistry[TTechnology]]]
         ]
-    ): Self = this.set("undrag", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "undrag", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnhover(
@@ -2559,7 +2605,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("unhover", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unhover", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnmousedown(
@@ -2584,7 +2630,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("unmousedown", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unmousedown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnmousemove(
@@ -2609,7 +2655,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("unmousemove", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unmousemove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnmouseout(
@@ -2634,7 +2680,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("unmouseout", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unmouseout", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnmouseover(
@@ -2659,7 +2705,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("unmouseover", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unmouseover", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnmouseup(
@@ -2684,7 +2730,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("unmouseup", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unmouseup", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUntouchcancel(
@@ -2709,7 +2755,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("untouchcancel", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "untouchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUntouchend(
@@ -2734,7 +2780,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("untouchend", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "untouchend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUntouchmove(
@@ -2759,7 +2805,7 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("untouchmove", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "untouchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUntouchstart(
@@ -2784,62 +2830,6 @@ object RaphaelElementPluginRegistry {
             ]
           ]
         ]
-    ): Self = this.set("untouchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            (RaphaelElement[
-              TTechnology, 
-              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-            ]) | Null
-          ], 
-          ReturnType[
-            (RaphaelElement[
-              TTechnology, 
-              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-            ]) | Null
-          ]
-        ]
-    ): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
-    
-    @scala.inline
-    def setPrev(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[
-            (RaphaelElement[
-              TTechnology, 
-              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-            ]) | Null
-          ], 
-          ReturnType[
-            (RaphaelElement[
-              TTechnology, 
-              /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
-            ]) | Null
-          ]
-        ]
-    ): Self = this.set("prev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrev: Self = this.set("prev", js.undefined)
-    
-    @scala.inline
-    def setRaphael(
-      value: RaphaelElementPluginMethod[
-          TTechnology, 
-          Parameters[js.UndefOr[RaphaelStatic[SVG | VML]]], 
-          ReturnType[js.UndefOr[RaphaelStatic[SVG | VML]]]
-        ]
-    ): Self = this.set("raphael", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaphael: Self = this.set("raphael", js.undefined)
+    ): Self = StObject.set(x, "untouchstart", value.asInstanceOf[js.Any])
   }
 }

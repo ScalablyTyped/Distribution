@@ -1,12 +1,13 @@
 package typings.googlemaps.google.maps
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectionsRendererOptions extends js.Object {
+trait DirectionsRendererOptions extends StObject {
   
   var directions: js.UndefOr[DirectionsResult] = js.native
   
@@ -45,102 +46,90 @@ object DirectionsRendererOptions {
   }
   
   @scala.inline
-  implicit class DirectionsRendererOptionsOps[Self <: DirectionsRendererOptions] (val x: Self) extends AnyVal {
+  implicit class DirectionsRendererOptionsMutableBuilder[Self <: DirectionsRendererOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirections(value: DirectionsResult): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirections(value: DirectionsResult): Self = this.set("directions", value.asInstanceOf[js.Any])
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteDirections: Self = this.set("directions", js.undefined)
+    def setHideRouteList(value: Boolean): Self = StObject.set(x, "hideRouteList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setHideRouteListUndefined: Self = StObject.set(x, "hideRouteList", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setInfoWindow(value: InfoWindow): Self = StObject.set(x, "infoWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideRouteList(value: Boolean): Self = this.set("hideRouteList", value.asInstanceOf[js.Any])
+    def setInfoWindowUndefined: Self = StObject.set(x, "infoWindow", js.undefined)
     
     @scala.inline
-    def deleteHideRouteList: Self = this.set("hideRouteList", js.undefined)
+    def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoWindow(value: InfoWindow): Self = this.set("infoWindow", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteInfoWindow: Self = this.set("infoWindow", js.undefined)
+    def setMarkerOptions(value: MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: Map[Element]): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setPanel(value: Element): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerOptions(value: MarkerOptions): Self = this.set("markerOptions", value.asInstanceOf[js.Any])
+    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
     @scala.inline
-    def deleteMarkerOptions: Self = this.set("markerOptions", js.undefined)
+    def setPolylineOptions(value: PolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanel(value: Element): Self = this.set("panel", value.asInstanceOf[js.Any])
+    def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
     
     @scala.inline
-    def deletePanel: Self = this.set("panel", js.undefined)
+    def setPreserveViewport(value: Boolean): Self = StObject.set(x, "preserveViewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylineOptions(value: PolylineOptions): Self = this.set("polylineOptions", value.asInstanceOf[js.Any])
+    def setPreserveViewportUndefined: Self = StObject.set(x, "preserveViewport", js.undefined)
     
     @scala.inline
-    def deletePolylineOptions: Self = this.set("polylineOptions", js.undefined)
+    def setRouteIndex(value: Double): Self = StObject.set(x, "routeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveViewport(value: Boolean): Self = this.set("preserveViewport", value.asInstanceOf[js.Any])
+    def setRouteIndexUndefined: Self = StObject.set(x, "routeIndex", js.undefined)
     
     @scala.inline
-    def deletePreserveViewport: Self = this.set("preserveViewport", js.undefined)
+    def setSuppressBicyclingLayer(value: Boolean): Self = StObject.set(x, "suppressBicyclingLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteIndex(value: Double): Self = this.set("routeIndex", value.asInstanceOf[js.Any])
+    def setSuppressBicyclingLayerUndefined: Self = StObject.set(x, "suppressBicyclingLayer", js.undefined)
     
     @scala.inline
-    def deleteRouteIndex: Self = this.set("routeIndex", js.undefined)
+    def setSuppressInfoWindows(value: Boolean): Self = StObject.set(x, "suppressInfoWindows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressBicyclingLayer(value: Boolean): Self = this.set("suppressBicyclingLayer", value.asInstanceOf[js.Any])
+    def setSuppressInfoWindowsUndefined: Self = StObject.set(x, "suppressInfoWindows", js.undefined)
     
     @scala.inline
-    def deleteSuppressBicyclingLayer: Self = this.set("suppressBicyclingLayer", js.undefined)
+    def setSuppressMarkers(value: Boolean): Self = StObject.set(x, "suppressMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressInfoWindows(value: Boolean): Self = this.set("suppressInfoWindows", value.asInstanceOf[js.Any])
+    def setSuppressMarkersUndefined: Self = StObject.set(x, "suppressMarkers", js.undefined)
     
     @scala.inline
-    def deleteSuppressInfoWindows: Self = this.set("suppressInfoWindows", js.undefined)
+    def setSuppressPolylines(value: Boolean): Self = StObject.set(x, "suppressPolylines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressMarkers(value: Boolean): Self = this.set("suppressMarkers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressMarkers: Self = this.set("suppressMarkers", js.undefined)
-    
-    @scala.inline
-    def setSuppressPolylines(value: Boolean): Self = this.set("suppressPolylines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressPolylines: Self = this.set("suppressPolylines", js.undefined)
+    def setSuppressPolylinesUndefined: Self = StObject.set(x, "suppressPolylines", js.undefined)
   }
 }

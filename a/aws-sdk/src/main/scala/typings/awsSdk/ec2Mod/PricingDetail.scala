@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PricingDetail extends js.Object {
+trait PricingDetail extends StObject {
   
   /**
     * The number of reservations available for the price.
@@ -26,30 +27,18 @@ object PricingDetail {
   }
   
   @scala.inline
-  implicit class PricingDetailOps[Self <: PricingDetail] (val x: Self) extends AnyVal {
+  implicit class PricingDetailMutableBuilder[Self <: PricingDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Integer): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
-    
-    @scala.inline
-    def setPrice(value: Double): Self = this.set("Price", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrice: Self = this.set("Price", js.undefined)
+    def setPriceUndefined: Self = StObject.set(x, "Price", js.undefined)
   }
 }

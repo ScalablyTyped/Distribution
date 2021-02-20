@@ -1,11 +1,12 @@
 package typings.ydnDb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoreSchemaJson extends js.Object {
+trait StoreSchemaJson extends StObject {
   
   var autoIncrement: js.UndefOr[Boolean] = js.native
   
@@ -28,57 +29,45 @@ object StoreSchemaJson {
   }
   
   @scala.inline
-  implicit class StoreSchemaJsonOps[Self <: StoreSchemaJson] (val x: Self) extends AnyVal {
+  implicit class StoreSchemaJsonMutableBuilder[Self <: StoreSchemaJson] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispatchEvents(value: Boolean): Self = StObject.set(x, "dispatchEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoIncrement(value: Boolean): Self = this.set("autoIncrement", value.asInstanceOf[js.Any])
+    def setDispatchEventsUndefined: Self = StObject.set(x, "dispatchEvents", js.undefined)
     
     @scala.inline
-    def deleteAutoIncrement: Self = this.set("autoIncrement", js.undefined)
+    def setIndexes(value: js.Array[IndexSchemaJson]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispatchEvents(value: Boolean): Self = this.set("dispatchEvents", value.asInstanceOf[js.Any])
+    def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
     @scala.inline
-    def deleteDispatchEvents: Self = this.set("dispatchEvents", js.undefined)
+    def setIndexesVarargs(value: IndexSchemaJson*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
     @scala.inline
-    def setIndexesVarargs(value: IndexSchemaJson*): Self = this.set("indexes", js.Array(value :_*))
+    def setKeyPath(value: String): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexes(value: js.Array[IndexSchemaJson]): Self = this.set("indexes", value.asInstanceOf[js.Any])
+    def setKeyPathUndefined: Self = StObject.set(x, "keyPath", js.undefined)
     
     @scala.inline
-    def deleteIndexes: Self = this.set("indexes", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPath(value: String): Self = this.set("keyPath", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKeyPath: Self = this.set("keyPath", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientEvent extends js.Object {
+trait ClientEvent extends StObject {
   
   /** Required. The timestamp of the event. */
   var createTime: js.UndefOr[String] = js.native
@@ -45,58 +46,46 @@ object ClientEvent {
   }
   
   @scala.inline
-  implicit class ClientEventOps[Self <: ClientEvent] (val x: Self) extends AnyVal {
+  implicit class ClientEventMutableBuilder[Self <: ClientEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
-    
-    @scala.inline
-    def setEventId(value: String): Self = this.set("eventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventId: Self = this.set("eventId", js.undefined)
+    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
     @scala.inline
     def setExtraInfo(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.ClientEvent with TopLevel[js.Any]
-    ): Self = this.set("extraInfo", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtraInfo: Self = this.set("extraInfo", js.undefined)
+    def setExtraInfoUndefined: Self = StObject.set(x, "extraInfo", js.undefined)
     
     @scala.inline
-    def setJobEvent(value: JobEvent): Self = this.set("jobEvent", value.asInstanceOf[js.Any])
+    def setJobEvent(value: JobEvent): Self = StObject.set(x, "jobEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJobEvent: Self = this.set("jobEvent", js.undefined)
+    def setJobEventUndefined: Self = StObject.set(x, "jobEvent", js.undefined)
     
     @scala.inline
-    def setParentEventId(value: String): Self = this.set("parentEventId", value.asInstanceOf[js.Any])
+    def setParentEventId(value: String): Self = StObject.set(x, "parentEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentEventId: Self = this.set("parentEventId", js.undefined)
+    def setParentEventIdUndefined: Self = StObject.set(x, "parentEventId", js.undefined)
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

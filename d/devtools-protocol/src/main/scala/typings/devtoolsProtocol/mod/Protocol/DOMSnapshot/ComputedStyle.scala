@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComputedStyle extends js.Object {
+trait ComputedStyle extends StObject {
   
   /**
     * Name/value pairs of computed style properties.
@@ -21,24 +22,12 @@ object ComputedStyle {
   }
   
   @scala.inline
-  implicit class ComputedStyleOps[Self <: ComputedStyle] (val x: Self) extends AnyVal {
+  implicit class ComputedStyleMutableBuilder[Self <: ComputedStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProperties(value: js.Array[NameValue]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertiesVarargs(value: NameValue*): Self = this.set("properties", js.Array(value :_*))
-    
-    @scala.inline
-    def setProperties(value: js.Array[NameValue]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setPropertiesVarargs(value: NameValue*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

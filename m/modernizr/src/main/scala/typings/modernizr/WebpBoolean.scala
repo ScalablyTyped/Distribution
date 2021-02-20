@@ -1,6 +1,7 @@
 package typings.modernizr
 
 import typings.std.Boolean
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object WebpBoolean {
   }
   
   @scala.inline
-  implicit class WebpBooleanOps[Self <: WebpBoolean] (val x: Self) extends AnyVal {
+  implicit class WebpBooleanMutableBuilder[Self <: WebpBoolean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: scala.Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimation(value: scala.Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlpha(value: scala.Boolean): Self = this.set("alpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnimation(value: scala.Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLossless(value: scala.Boolean): Self = this.set("lossless", value.asInstanceOf[js.Any])
+    def setLossless(value: scala.Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
   }
 }

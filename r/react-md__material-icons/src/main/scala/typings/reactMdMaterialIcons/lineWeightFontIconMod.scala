@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/LineWeightFontIcon", JSImport.Namespace)
-@js.native
-object lineWeightFontIconMod extends js.Object {
+object lineWeightFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/LineWeightFontIcon", "LineWeightFontIcon")
+  @js.native
   val LineWeightFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdvancedSecurityOptionsInput extends js.Object {
+trait AdvancedSecurityOptionsInput extends StObject {
   
   /**
     * True if advanced security is enabled.
@@ -36,42 +37,30 @@ object AdvancedSecurityOptionsInput {
   }
   
   @scala.inline
-  implicit class AdvancedSecurityOptionsInputOps[Self <: AdvancedSecurityOptionsInput] (val x: Self) extends AnyVal {
+  implicit class AdvancedSecurityOptionsInputMutableBuilder[Self <: AdvancedSecurityOptionsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInternalUserDatabaseEnabled(value: Boolean): Self = StObject.set(x, "InternalUserDatabaseEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setInternalUserDatabaseEnabledUndefined: Self = StObject.set(x, "InternalUserDatabaseEnabled", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setMasterUserOptions(value: MasterUserOptions): Self = StObject.set(x, "MasterUserOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalUserDatabaseEnabled(value: Boolean): Self = this.set("InternalUserDatabaseEnabled", value.asInstanceOf[js.Any])
+    def setMasterUserOptionsUndefined: Self = StObject.set(x, "MasterUserOptions", js.undefined)
     
     @scala.inline
-    def deleteInternalUserDatabaseEnabled: Self = this.set("InternalUserDatabaseEnabled", js.undefined)
+    def setSAMLOptions(value: SAMLOptionsInput): Self = StObject.set(x, "SAMLOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterUserOptions(value: MasterUserOptions): Self = this.set("MasterUserOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterUserOptions: Self = this.set("MasterUserOptions", js.undefined)
-    
-    @scala.inline
-    def setSAMLOptions(value: SAMLOptionsInput): Self = this.set("SAMLOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSAMLOptions: Self = this.set("SAMLOptions", js.undefined)
+    def setSAMLOptionsUndefined: Self = StObject.set(x, "SAMLOptions", js.undefined)
   }
 }

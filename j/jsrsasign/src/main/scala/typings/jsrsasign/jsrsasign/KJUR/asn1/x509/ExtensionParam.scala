@@ -1,12 +1,13 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionParam extends js.Object {
+trait ExtensionParam extends StObject {
   
   var accessLocation: UriParam = js.native
   
@@ -21,24 +22,12 @@ object ExtensionParam {
   }
   
   @scala.inline
-  implicit class ExtensionParamOps[Self <: ExtensionParam] (val x: Self) extends AnyVal {
+  implicit class ExtensionParamMutableBuilder[Self <: ExtensionParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLocation(value: UriParam): Self = StObject.set(x, "accessLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccessLocation(value: UriParam): Self = this.set("accessLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccessMethod(value: ObjectIdentifierParam): Self = this.set("accessMethod", value.asInstanceOf[js.Any])
+    def setAccessMethod(value: ObjectIdentifierParam): Self = StObject.set(x, "accessMethod", value.asInstanceOf[js.Any])
   }
 }

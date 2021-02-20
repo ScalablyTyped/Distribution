@@ -11,6 +11,7 @@ import typings.electron.anon.TypeofNotification
 import typings.electron.anon.TypeofSession
 import typings.electron.anon.TypeofTouchBar
 import typings.electron.anon.TypeofWebContents
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +59,7 @@ object Remote {
   @scala.inline
   def apply(
     BrowserView: Instantiable1[/* options */ js.UndefOr[BrowserViewConstructorOptions], BrowserView],
-    BrowserWindow: TypeofBrowserWindow,
+    BrowserWindow: TypeofBrowserWindow with (Instantiable1[/* options */ js.UndefOr[BrowserWindowConstructorOptions], BrowserWindow]),
     ClientRequest: Instantiable1[/* options */ ClientRequestConstructorOptions | String, ClientRequest],
     CommandLine: Instantiable0[CommandLine],
     Cookies: Instantiable0[Cookies],
@@ -66,13 +67,13 @@ object Remote {
     Dock: Instantiable0[Dock],
     DownloadItem: Instantiable0[DownloadItem],
     IncomingMessage: Instantiable0[IncomingMessage],
-    Menu: TypeofMenu,
+    Menu: TypeofMenu with Instantiable0[Menu],
     MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem],
     MessageChannelMain: Instantiable0[MessageChannelMain],
     MessagePortMain: Instantiable0[MessagePortMain],
-    Notification: TypeofNotification,
+    Notification: TypeofNotification with (Instantiable1[/* options */ js.UndefOr[NotificationConstructorOptions], Notification]),
     ServiceWorkers: Instantiable0[ServiceWorkers],
-    TouchBar: TypeofTouchBar,
+    TouchBar: TypeofTouchBar with (Instantiable1[/* options */ TouchBarConstructorOptions, TouchBar]),
     TouchBarButton: Instantiable1[/* options */ TouchBarButtonConstructorOptions, TouchBarButton],
     TouchBarColorPicker: Instantiable1[/* options */ TouchBarColorPickerConstructorOptions, TouchBarColorPicker],
     TouchBarGroup: Instantiable1[/* options */ TouchBarGroupConstructorOptions, TouchBarGroup],
@@ -98,7 +99,7 @@ object Remote {
     globalShortcut: GlobalShortcut,
     inAppPurchase: InAppPurchase,
     ipcMain: IpcMain,
-    nativeImage: TypeofNativeImage,
+    nativeImage: TypeofNativeImage with Instantiable0[NativeImage_],
     nativeTheme: NativeTheme,
     net: Net,
     netLog: NetLog,
@@ -108,43 +109,31 @@ object Remote {
     protocol: Protocol,
     require: String => js.Any,
     screen: Screen,
-    session: TypeofSession,
+    session: TypeofSession with Instantiable0[Session_],
     shell: Shell,
     systemPreferences: SystemPreferences,
-    webContents: TypeofWebContents
+    webContents: TypeofWebContents with Instantiable0[WebContents_]
   ): Remote = {
     val __obj = js.Dynamic.literal(BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], ClientRequest = ClientRequest.asInstanceOf[js.Any], CommandLine = CommandLine.asInstanceOf[js.Any], Cookies = Cookies.asInstanceOf[js.Any], Debugger = Debugger.asInstanceOf[js.Any], Dock = Dock.asInstanceOf[js.Any], DownloadItem = DownloadItem.asInstanceOf[js.Any], IncomingMessage = IncomingMessage.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], MessageChannelMain = MessageChannelMain.asInstanceOf[js.Any], MessagePortMain = MessagePortMain.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], ServiceWorkers = ServiceWorkers.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], TouchBarButton = TouchBarButton.asInstanceOf[js.Any], TouchBarColorPicker = TouchBarColorPicker.asInstanceOf[js.Any], TouchBarGroup = TouchBarGroup.asInstanceOf[js.Any], TouchBarLabel = TouchBarLabel.asInstanceOf[js.Any], TouchBarOtherItemsProxy = TouchBarOtherItemsProxy.asInstanceOf[js.Any], TouchBarPopover = TouchBarPopover.asInstanceOf[js.Any], TouchBarScrubber = TouchBarScrubber.asInstanceOf[js.Any], TouchBarSegmentedControl = TouchBarSegmentedControl.asInstanceOf[js.Any], TouchBarSlider = TouchBarSlider.asInstanceOf[js.Any], TouchBarSpacer = TouchBarSpacer.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], WebRequest = WebRequest.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], getCurrentWebContents = js.Any.fromFunction0(getCurrentWebContents), getCurrentWindow = js.Any.fromFunction0(getCurrentWindow), getGlobal = js.Any.fromFunction1(getGlobal), globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], nativeImage = nativeImage.asInstanceOf[js.Any], nativeTheme = nativeTheme.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], require = js.Any.fromFunction1(require), screen = screen.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any], webContents = webContents.asInstanceOf[js.Any])
     __obj.asInstanceOf[Remote]
   }
   
   @scala.inline
-  implicit class RemoteOps[Self <: Remote] (val x: Self) extends AnyVal {
+  implicit class RemoteMutableBuilder[Self <: Remote] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCurrentWebContents(value: () => WebContents_): Self = StObject.set(x, "getCurrentWebContents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentWindow(value: () => BrowserWindow): Self = StObject.set(x, "getCurrentWindow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetGlobal(value: String => js.Any): Self = StObject.set(x, "getGlobal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentWebContents(value: () => WebContents_): Self = this.set("getCurrentWebContents", js.Any.fromFunction0(value))
+    def setProcess(value: Process): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentWindow(value: () => BrowserWindow): Self = this.set("getCurrentWindow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetGlobal(value: String => js.Any): Self = this.set("getGlobal", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setProcess(value: Process): Self = this.set("process", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequire(value: String => js.Any): Self = this.set("require", js.Any.fromFunction1(value))
+    def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
   }
 }

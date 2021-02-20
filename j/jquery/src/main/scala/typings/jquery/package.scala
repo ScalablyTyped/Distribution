@@ -1,5 +1,6 @@
 package typings
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +12,6 @@ package object jquery {
   type Event = typings.std.Event
   
   type FocusEvent = typings.std.FocusEvent
-  
-  type JQuery[TElement] = typings.jquery.JQuery_[TElement]
   
   // tslint:disable-next-line:no-empty-interface
   type JQueryAjaxSettings = typings.jquery.JQuery.AjaxSettings[js.Any]

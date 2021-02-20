@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDeviceWatcher extends js.Object {
+trait IDeviceWatcher extends StObject {
   
   var onadded: js.Any = js.native
   
@@ -41,42 +42,30 @@ object IDeviceWatcher {
   }
   
   @scala.inline
-  implicit class IDeviceWatcherOps[Self <: IDeviceWatcher] (val x: Self) extends AnyVal {
+  implicit class IDeviceWatcherMutableBuilder[Self <: IDeviceWatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnadded(value: js.Any): Self = StObject.set(x, "onadded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnenumerationcompleted(value: js.Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnremoved(value: js.Any): Self = StObject.set(x, "onremoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnadded(value: js.Any): Self = this.set("onadded", value.asInstanceOf[js.Any])
+    def setOnstopped(value: js.Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnenumerationcompleted(value: js.Any): Self = this.set("onenumerationcompleted", value.asInstanceOf[js.Any])
+    def setOnupdated(value: js.Any): Self = StObject.set(x, "onupdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnremoved(value: js.Any): Self = this.set("onremoved", value.asInstanceOf[js.Any])
+    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnstopped(value: js.Any): Self = this.set("onstopped", value.asInstanceOf[js.Any])
+    def setStatus(value: DeviceWatcherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnupdated(value: js.Any): Self = this.set("onupdated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: () => Unit): Self = this.set("start", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStatus(value: DeviceWatcherStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

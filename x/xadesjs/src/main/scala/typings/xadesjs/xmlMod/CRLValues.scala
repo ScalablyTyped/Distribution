@@ -1,6 +1,6 @@
 package typings.xadesjs.xmlMod
 
-import typings.xmlCore.mod.XmlCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs/build/types/xml", "CRLValues")
 @js.native
 class CRLValues ()
-  extends XmlCollection[typings.xadesjs.revocationValuesMod.EncapsulatedCRLValue]
+  extends typings.xadesjs.revocationValuesMod.CRLValues {
+  def this(properties: js.Object) = this()
+}

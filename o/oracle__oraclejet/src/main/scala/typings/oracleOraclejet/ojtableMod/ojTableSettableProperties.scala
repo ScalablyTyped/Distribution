@@ -25,6 +25,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.loadMoreOnScroll
 import typings.oracleOraclejet.oracleOraclejetStrings.none
 import typings.oracleOraclejet.oracleOraclejetStrings.rowEdit
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,102 +104,90 @@ object ojTableSettableProperties {
   }
   
   @scala.inline
-  implicit class ojTableSettablePropertiesOps[Self <: ojTableSettableProperties[_, _], K, D] (val x: Self with (ojTableSettableProperties[K, D])) extends AnyVal {
+  implicit class ojTableSettablePropertiesMutableBuilder[Self <: ojTableSettableProperties[_, _], K, D] (val x: Self with (ojTableSettableProperties[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibility(value: RowHeader): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[Field[K, D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibility(value: RowHeader): Self = this.set("accessibility", value.asInstanceOf[js.Any])
+    def setColumnsDefault(value: FooterClassName[K, D]): Self = StObject.set(x, "columnsDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setColumnsNull: Self = StObject.set(x, "columns", null)
     
     @scala.inline
-    def setColumnsDefault(value: FooterClassName[K, D]): Self = this.set("columnsDefault", value.asInstanceOf[js.Any])
+    def setColumnsVarargs(value: (Field[K, D])*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setDisplay(value: list | grid): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setCurrentRow(value: CurrentRow[K]): Self = StObject.set(x, "currentRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnd(value: DropReorder[K, D]): Self = this.set("dnd", value.asInstanceOf[js.Any])
+    def setCurrentRowNull: Self = StObject.set(x, "currentRow", null)
     
     @scala.inline
-    def setEditMode(value: none | rowEdit): Self = this.set("editMode", value.asInstanceOf[js.Any])
+    def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstSelectedRow(value: js.Object): Self = this.set("firstSelectedRow", value.asInstanceOf[js.Any])
+    def setDataNull: Self = StObject.set(x, "data", null)
     
     @scala.inline
-    def setHorizontalGridVisible(value: auto | enabled | disabled): Self = this.set("horizontalGridVisible", value.asInstanceOf[js.Any])
+    def setDisplay(value: list | grid): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPolicy(value: auto | loadMoreOnScroll): Self = this.set("scrollPolicy", value.asInstanceOf[js.Any])
+    def setDnd(value: DropReorder[K, D]): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPolicyOptions(value: MaxCount): Self = this.set("scrollPolicyOptions", value.asInstanceOf[js.Any])
+    def setEditMode(value: none | rowEdit): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPosition(value: ColumnKey): Self = this.set("scrollPosition", value.asInstanceOf[js.Any])
+    def setFirstSelectedRow(value: js.Object): Self = StObject.set(x, "firstSelectedRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionVarargs(
-      value: ((RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K]))*
-    ): Self = this.set("selection", js.Array(value :_*))
+    def setHorizontalGridVisible(value: auto | enabled | disabled): Self = StObject.set(x, "horizontalGridVisible", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRowRenderer(value: /* context */ RowRendererContext[K, D] => String | HTMLElement | Unit): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setRowRendererNull: Self = StObject.set(x, "rowRenderer", null)
+    
+    @scala.inline
+    def setScrollPolicy(value: auto | loadMoreOnScroll): Self = StObject.set(x, "scrollPolicy", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScrollPolicyOptions(value: MaxCount): Self = StObject.set(x, "scrollPolicyOptions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScrollPosition(value: ColumnKey): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelection(
       value: js.Array[
           (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
         ]
-    ): Self = this.set("selection", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionMode(value: `21`): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    def setSelectionMode(value: `21`): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionRequired(value: Boolean): Self = this.set("selectionRequired", value.asInstanceOf[js.Any])
+    def setSelectionRequired(value: Boolean): Self = StObject.set(x, "selectionRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslations(value: LabelAccSelectionAffordanceBottom): Self = this.set("translations", value.asInstanceOf[js.Any])
+    def setSelectionVarargs(
+      value: ((RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K]))*
+    ): Self = StObject.set(x, "selection", js.Array(value :_*))
     
     @scala.inline
-    def setVerticalGridVisible(value: auto | enabled | disabled): Self = this.set("verticalGridVisible", value.asInstanceOf[js.Any])
+    def setTranslations(value: LabelAccSelectionAffordanceBottom): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: (Field[K, D])*): Self = this.set("columns", js.Array(value :_*))
-    
-    @scala.inline
-    def setColumns(value: js.Array[Field[K, D]]): Self = this.set("columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumnsNull: Self = this.set("columns", null)
-    
-    @scala.inline
-    def setCurrentRow(value: CurrentRow[K]): Self = this.set("currentRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentRowNull: Self = this.set("currentRow", null)
-    
-    @scala.inline
-    def setData(value: DataProvider[K, D]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataNull: Self = this.set("data", null)
-    
-    @scala.inline
-    def setRowRenderer(value: /* context */ RowRendererContext[K, D] => String | HTMLElement | Unit): Self = this.set("rowRenderer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRowRendererNull: Self = this.set("rowRenderer", null)
+    def setVerticalGridVisible(value: auto | enabled | disabled): Self = StObject.set(x, "verticalGridVisible", value.asInstanceOf[js.Any])
   }
 }

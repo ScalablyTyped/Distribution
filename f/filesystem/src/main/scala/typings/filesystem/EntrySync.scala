@@ -1,5 +1,6 @@
 package typings.filesystem
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An abstract interface representing entries in a file system, each of which may be a FileEntrySync or DirectoryEntrySync.
   */
 @js.native
-trait EntrySync extends js.Object {
+trait EntrySync extends StObject {
   
   /**
     * Copy an entry to a different location on the file system. It is an error to try to:

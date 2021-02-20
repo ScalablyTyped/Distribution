@@ -1,6 +1,7 @@
 package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import typings.googleapis.anon.Colors
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a StyleFunction within a StyleSetting
   */
 @js.native
-trait SchemaStyleFunction extends js.Object {
+trait SchemaStyleFunction extends StObject {
   
   /**
     * Bucket function that assigns a style based on the range a column value
@@ -48,45 +49,33 @@ object SchemaStyleFunction {
   }
   
   @scala.inline
-  implicit class SchemaStyleFunctionOps[Self <: SchemaStyleFunction] (val x: Self) extends AnyVal {
+  implicit class SchemaStyleFunctionMutableBuilder[Self <: SchemaStyleFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuckets(value: js.Array[SchemaBucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketsVarargs(value: SchemaBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
     @scala.inline
-    def setBucketsVarargs(value: SchemaBucket*): Self = this.set("buckets", js.Array(value :_*))
+    def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuckets(value: js.Array[SchemaBucket]): Self = this.set("buckets", value.asInstanceOf[js.Any])
+    def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
     
     @scala.inline
-    def deleteBuckets: Self = this.set("buckets", js.undefined)
+    def setGradient(value: Colors): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnName(value: String): Self = this.set("columnName", value.asInstanceOf[js.Any])
+    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
     @scala.inline
-    def deleteColumnName: Self = this.set("columnName", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradient(value: Colors): Self = this.set("gradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGradient: Self = this.set("gradient", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

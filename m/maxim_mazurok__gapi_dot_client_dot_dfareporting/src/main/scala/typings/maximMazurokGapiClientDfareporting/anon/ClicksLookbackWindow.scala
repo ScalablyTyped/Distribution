@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClicksLookbackWindow extends js.Object {
+trait ClicksLookbackWindow extends StObject {
   
   /**
     * DFA checks to see if a click interaction occurred within the specified period of time before a conversion. By default the value is pulled from Floodlight or you can manually
@@ -61,72 +62,60 @@ object ClicksLookbackWindow {
   }
   
   @scala.inline
-  implicit class ClicksLookbackWindowOps[Self <: ClicksLookbackWindow] (val x: Self) extends AnyVal {
+  implicit class ClicksLookbackWindowMutableBuilder[Self <: ClicksLookbackWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClicksLookbackWindow(value: Double): Self = StObject.set(x, "clicksLookbackWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClicksLookbackWindowUndefined: Self = StObject.set(x, "clicksLookbackWindow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImpressionsLookbackWindow(value: Double): Self = StObject.set(x, "impressionsLookbackWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClicksLookbackWindow(value: Double): Self = this.set("clicksLookbackWindow", value.asInstanceOf[js.Any])
+    def setImpressionsLookbackWindowUndefined: Self = StObject.set(x, "impressionsLookbackWindow", js.undefined)
     
     @scala.inline
-    def deleteClicksLookbackWindow: Self = this.set("clicksLookbackWindow", js.undefined)
+    def setIncludeAttributedIPConversions(value: Boolean): Self = StObject.set(x, "includeAttributedIPConversions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionsLookbackWindow(value: Double): Self = this.set("impressionsLookbackWindow", value.asInstanceOf[js.Any])
+    def setIncludeAttributedIPConversionsUndefined: Self = StObject.set(x, "includeAttributedIPConversions", js.undefined)
     
     @scala.inline
-    def deleteImpressionsLookbackWindow: Self = this.set("impressionsLookbackWindow", js.undefined)
+    def setIncludeUnattributedCookieConversions(value: Boolean): Self = StObject.set(x, "includeUnattributedCookieConversions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAttributedIPConversions(value: Boolean): Self = this.set("includeAttributedIPConversions", value.asInstanceOf[js.Any])
+    def setIncludeUnattributedCookieConversionsUndefined: Self = StObject.set(x, "includeUnattributedCookieConversions", js.undefined)
     
     @scala.inline
-    def deleteIncludeAttributedIPConversions: Self = this.set("includeAttributedIPConversions", js.undefined)
+    def setIncludeUnattributedIPConversions(value: Boolean): Self = StObject.set(x, "includeUnattributedIPConversions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeUnattributedCookieConversions(value: Boolean): Self = this.set("includeUnattributedCookieConversions", value.asInstanceOf[js.Any])
+    def setIncludeUnattributedIPConversionsUndefined: Self = StObject.set(x, "includeUnattributedIPConversions", js.undefined)
     
     @scala.inline
-    def deleteIncludeUnattributedCookieConversions: Self = this.set("includeUnattributedCookieConversions", js.undefined)
+    def setMaximumClickInteractions(value: Double): Self = StObject.set(x, "maximumClickInteractions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeUnattributedIPConversions(value: Boolean): Self = this.set("includeUnattributedIPConversions", value.asInstanceOf[js.Any])
+    def setMaximumClickInteractionsUndefined: Self = StObject.set(x, "maximumClickInteractions", js.undefined)
     
     @scala.inline
-    def deleteIncludeUnattributedIPConversions: Self = this.set("includeUnattributedIPConversions", js.undefined)
+    def setMaximumImpressionInteractions(value: Double): Self = StObject.set(x, "maximumImpressionInteractions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumClickInteractions(value: Double): Self = this.set("maximumClickInteractions", value.asInstanceOf[js.Any])
+    def setMaximumImpressionInteractionsUndefined: Self = StObject.set(x, "maximumImpressionInteractions", js.undefined)
     
     @scala.inline
-    def deleteMaximumClickInteractions: Self = this.set("maximumClickInteractions", js.undefined)
+    def setMaximumInteractionGap(value: Double): Self = StObject.set(x, "maximumInteractionGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumImpressionInteractions(value: Double): Self = this.set("maximumImpressionInteractions", value.asInstanceOf[js.Any])
+    def setMaximumInteractionGapUndefined: Self = StObject.set(x, "maximumInteractionGap", js.undefined)
     
     @scala.inline
-    def deleteMaximumImpressionInteractions: Self = this.set("maximumImpressionInteractions", js.undefined)
+    def setPivotOnInteractionPath(value: Boolean): Self = StObject.set(x, "pivotOnInteractionPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumInteractionGap(value: Double): Self = this.set("maximumInteractionGap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumInteractionGap: Self = this.set("maximumInteractionGap", js.undefined)
-    
-    @scala.inline
-    def setPivotOnInteractionPath(value: Boolean): Self = this.set("pivotOnInteractionPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePivotOnInteractionPath: Self = this.set("pivotOnInteractionPath", js.undefined)
+    def setPivotOnInteractionPathUndefined: Self = StObject.set(x, "pivotOnInteractionPath", js.undefined)
   }
 }

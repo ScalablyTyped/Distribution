@@ -1,11 +1,12 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkeletonData extends js.Object {
+trait SkeletonData extends StObject {
   
   var animations: js.Array[Animation] = js.native
   
@@ -107,132 +108,120 @@ object SkeletonData {
   }
   
   @scala.inline
-  implicit class SkeletonDataOps[Self <: SkeletonData] (val x: Self) extends AnyVal {
+  implicit class SkeletonDataMutableBuilder[Self <: SkeletonData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimations(value: js.Array[Animation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioPath(value: String): Self = StObject.set(x, "audioPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationsVarargs(value: Animation*): Self = this.set("animations", js.Array(value :_*))
+    def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimations(value: js.Array[Animation]): Self = this.set("animations", value.asInstanceOf[js.Any])
+    def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value :_*))
     
     @scala.inline
-    def setAudioPath(value: String): Self = this.set("audioPath", value.asInstanceOf[js.Any])
+    def setDefaultSkin(value: Skin): Self = StObject.set(x, "defaultSkin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBonesVarargs(value: BoneData*): Self = this.set("bones", js.Array(value :_*))
+    def setEvents(value: js.Array[EventData]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBones(value: js.Array[BoneData]): Self = this.set("bones", value.asInstanceOf[js.Any])
+    def setEventsVarargs(value: EventData*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultSkin(value: Skin): Self = this.set("defaultSkin", value.asInstanceOf[js.Any])
+    def setFindAnimation(value: String => Animation): Self = StObject.set(x, "findAnimation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEventsVarargs(value: EventData*): Self = this.set("events", js.Array(value :_*))
+    def setFindBone(value: String => BoneData): Self = StObject.set(x, "findBone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEvents(value: js.Array[EventData]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setFindBoneIndex(value: String => Double): Self = StObject.set(x, "findBoneIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindAnimation(value: String => Animation): Self = this.set("findAnimation", js.Any.fromFunction1(value))
+    def setFindEvent(value: String => EventData): Self = StObject.set(x, "findEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindBone(value: String => BoneData): Self = this.set("findBone", js.Any.fromFunction1(value))
+    def setFindIkConstraint(value: String => IkConstraintData): Self = StObject.set(x, "findIkConstraint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindBoneIndex(value: String => Double): Self = this.set("findBoneIndex", js.Any.fromFunction1(value))
+    def setFindPathConstraint(value: String => PathConstraintData): Self = StObject.set(x, "findPathConstraint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindEvent(value: String => EventData): Self = this.set("findEvent", js.Any.fromFunction1(value))
+    def setFindPathConstraintIndex(value: String => Double): Self = StObject.set(x, "findPathConstraintIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindIkConstraint(value: String => IkConstraintData): Self = this.set("findIkConstraint", js.Any.fromFunction1(value))
+    def setFindSkin(value: String => Skin): Self = StObject.set(x, "findSkin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindPathConstraint(value: String => PathConstraintData): Self = this.set("findPathConstraint", js.Any.fromFunction1(value))
+    def setFindSlot(value: String => SlotData): Self = StObject.set(x, "findSlot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindPathConstraintIndex(value: String => Double): Self = this.set("findPathConstraintIndex", js.Any.fromFunction1(value))
+    def setFindSlotIndex(value: String => Double): Self = StObject.set(x, "findSlotIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindSkin(value: String => Skin): Self = this.set("findSkin", js.Any.fromFunction1(value))
+    def setFindTransformConstraint(value: String => TransformConstraintData): Self = StObject.set(x, "findTransformConstraint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindSlot(value: String => SlotData): Self = this.set("findSlot", js.Any.fromFunction1(value))
+    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindSlotIndex(value: String => Double): Self = this.set("findSlotIndex", js.Any.fromFunction1(value))
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindTransformConstraint(value: String => TransformConstraintData): Self = this.set("findTransformConstraint", js.Any.fromFunction1(value))
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFps(value: Double): Self = this.set("fps", value.asInstanceOf[js.Any])
+    def setIkConstraints(value: js.Array[IkConstraintData]): Self = StObject.set(x, "ikConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setIkConstraintsVarargs(value: IkConstraintData*): Self = StObject.set(x, "ikConstraints", js.Array(value :_*))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setImagesPath(value: String): Self = StObject.set(x, "imagesPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIkConstraintsVarargs(value: IkConstraintData*): Self = this.set("ikConstraints", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIkConstraints(value: js.Array[IkConstraintData]): Self = this.set("ikConstraints", value.asInstanceOf[js.Any])
+    def setPathConstraints(value: js.Array[PathConstraintData]): Self = StObject.set(x, "pathConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesPath(value: String): Self = this.set("imagesPath", value.asInstanceOf[js.Any])
+    def setPathConstraintsVarargs(value: PathConstraintData*): Self = StObject.set(x, "pathConstraints", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSkins(value: js.Array[Skin]): Self = StObject.set(x, "skins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathConstraintsVarargs(value: PathConstraintData*): Self = this.set("pathConstraints", js.Array(value :_*))
+    def setSkinsVarargs(value: Skin*): Self = StObject.set(x, "skins", js.Array(value :_*))
     
     @scala.inline
-    def setPathConstraints(value: js.Array[PathConstraintData]): Self = this.set("pathConstraints", value.asInstanceOf[js.Any])
+    def setSlots(value: js.Array[SlotData]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkinsVarargs(value: Skin*): Self = this.set("skins", js.Array(value :_*))
+    def setSlotsVarargs(value: SlotData*): Self = StObject.set(x, "slots", js.Array(value :_*))
     
     @scala.inline
-    def setSkins(value: js.Array[Skin]): Self = this.set("skins", value.asInstanceOf[js.Any])
+    def setTransformConstraints(value: js.Array[TransformConstraintData]): Self = StObject.set(x, "transformConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotsVarargs(value: SlotData*): Self = this.set("slots", js.Array(value :_*))
+    def setTransformConstraintsVarargs(value: TransformConstraintData*): Self = StObject.set(x, "transformConstraints", js.Array(value :_*))
     
     @scala.inline
-    def setSlots(value: js.Array[SlotData]): Self = this.set("slots", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformConstraintsVarargs(value: TransformConstraintData*): Self = this.set("transformConstraints", js.Array(value :_*))
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformConstraints(value: js.Array[TransformConstraintData]): Self = this.set("transformConstraints", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

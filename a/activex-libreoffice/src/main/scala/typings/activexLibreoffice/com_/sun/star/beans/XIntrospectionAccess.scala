@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.reflection.XIdlMethod
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -188,57 +189,45 @@ object XIntrospectionAccess {
   }
   
   @scala.inline
-  implicit class XIntrospectionAccessOps[Self <: XIntrospectionAccess] (val x: Self) extends AnyVal {
+  implicit class XIntrospectionAccessMutableBuilder[Self <: XIntrospectionAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMethod(value: (String, Double) => XIdlMethod): Self = StObject.set(x, "getMethod", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMethods(value: Double => SafeArray[XIdlMethod]): Self = StObject.set(x, "getMethods", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetProperties(value: Double => SafeArray[Property]): Self = StObject.set(x, "getProperties", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSuppliedMethodConcepts(value: Double): Self = this.set("SuppliedMethodConcepts", value.asInstanceOf[js.Any])
+    def setGetProperty(value: (String, Double) => Property): Self = StObject.set(x, "getProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSuppliedPropertyConcepts(value: Double): Self = this.set("SuppliedPropertyConcepts", value.asInstanceOf[js.Any])
+    def setGetSuppliedMethodConcepts(value: () => Double): Self = StObject.set(x, "getSuppliedMethodConcepts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportedListeners(value: SafeArray[`type`]): Self = this.set("SupportedListeners", value.asInstanceOf[js.Any])
+    def setGetSuppliedPropertyConcepts(value: () => Double): Self = StObject.set(x, "getSuppliedPropertyConcepts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMethod(value: (String, Double) => XIdlMethod): Self = this.set("getMethod", js.Any.fromFunction2(value))
+    def setGetSupportedListeners(value: () => SafeArray[`type`]): Self = StObject.set(x, "getSupportedListeners", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMethods(value: Double => SafeArray[XIdlMethod]): Self = this.set("getMethods", js.Any.fromFunction1(value))
+    def setHasMethod(value: (String, Double) => Boolean): Self = StObject.set(x, "hasMethod", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetProperties(value: Double => SafeArray[Property]): Self = this.set("getProperties", js.Any.fromFunction1(value))
+    def setHasProperty(value: (String, Double) => Boolean): Self = StObject.set(x, "hasProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetProperty(value: (String, Double) => Property): Self = this.set("getProperty", js.Any.fromFunction2(value))
+    def setQueryAdapter(value: `type` => XInterface): Self = StObject.set(x, "queryAdapter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSuppliedMethodConcepts(value: () => Double): Self = this.set("getSuppliedMethodConcepts", js.Any.fromFunction0(value))
+    def setSuppliedMethodConcepts(value: Double): Self = StObject.set(x, "SuppliedMethodConcepts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSuppliedPropertyConcepts(value: () => Double): Self = this.set("getSuppliedPropertyConcepts", js.Any.fromFunction0(value))
+    def setSuppliedPropertyConcepts(value: Double): Self = StObject.set(x, "SuppliedPropertyConcepts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSupportedListeners(value: () => SafeArray[`type`]): Self = this.set("getSupportedListeners", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasMethod(value: (String, Double) => Boolean): Self = this.set("hasMethod", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setHasProperty(value: (String, Double) => Boolean): Self = this.set("hasProperty", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setQueryAdapter(value: `type` => XInterface): Self = this.set("queryAdapter", js.Any.fromFunction1(value))
+    def setSupportedListeners(value: SafeArray[`type`]): Self = StObject.set(x, "SupportedListeners", value.asInstanceOf[js.Any])
   }
 }

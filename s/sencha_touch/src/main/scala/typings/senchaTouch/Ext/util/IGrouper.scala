@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,54 +43,42 @@ object IGrouper {
   }
   
   @scala.inline
-  implicit class IGrouperOps[Self <: IGrouper] (val x: Self) extends AnyVal {
+  implicit class IGrouperMutableBuilder[Self <: IGrouper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetGroupFn(value: () => _): Self = StObject.set(x, "getGroupFn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetGroupFnUndefined: Self = StObject.set(x, "getGroupFn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSortProperty(value: () => String): Self = StObject.set(x, "getSortProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroupFn(value: () => _): Self = this.set("getGroupFn", js.Any.fromFunction0(value))
+    def setGetSortPropertyUndefined: Self = StObject.set(x, "getSortProperty", js.undefined)
     
     @scala.inline
-    def deleteGetGroupFn: Self = this.set("getGroupFn", js.undefined)
+    def setGroupFn(value: js.Any): Self = StObject.set(x, "groupFn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSortProperty(value: () => String): Self = this.set("getSortProperty", js.Any.fromFunction0(value))
+    def setGroupFnUndefined: Self = StObject.set(x, "groupFn", js.undefined)
     
     @scala.inline
-    def deleteGetSortProperty: Self = this.set("getSortProperty", js.undefined)
+    def setSetGroupFn(value: /* groupFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setGroupFn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGroupFn(value: js.Any): Self = this.set("groupFn", value.asInstanceOf[js.Any])
+    def setSetGroupFnUndefined: Self = StObject.set(x, "setGroupFn", js.undefined)
     
     @scala.inline
-    def deleteGroupFn: Self = this.set("groupFn", js.undefined)
+    def setSetSortProperty(value: /* sortProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSortProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetGroupFn(value: /* groupFn */ js.UndefOr[js.Any] => Unit): Self = this.set("setGroupFn", js.Any.fromFunction1(value))
+    def setSetSortPropertyUndefined: Self = StObject.set(x, "setSortProperty", js.undefined)
     
     @scala.inline
-    def deleteSetGroupFn: Self = this.set("setGroupFn", js.undefined)
+    def setSortProperty(value: String): Self = StObject.set(x, "sortProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSortProperty(value: /* sortProperty */ js.UndefOr[String] => Unit): Self = this.set("setSortProperty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetSortProperty: Self = this.set("setSortProperty", js.undefined)
-    
-    @scala.inline
-    def setSortProperty(value: String): Self = this.set("sortProperty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortProperty: Self = this.set("sortProperty", js.undefined)
+    def setSortPropertyUndefined: Self = StObject.set(x, "sortProperty", js.undefined)
   }
 }

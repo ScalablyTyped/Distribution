@@ -1,12 +1,13 @@
 package typings.gestalt.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnProps extends js.Object {
+trait ColumnProps extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.native
   
@@ -27,45 +28,33 @@ object ColumnProps {
   }
   
   @scala.inline
-  implicit class ColumnPropsOps[Self <: ColumnProps] (val x: Self) extends AnyVal {
+  implicit class ColumnPropsMutableBuilder[Self <: ColumnProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLgSpan(value: UnsignedUpTo12): Self = StObject.set(x, "lgSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpan(value: UnsignedUpTo12): Self = this.set("span", value.asInstanceOf[js.Any])
+    def setLgSpanUndefined: Self = StObject.set(x, "lgSpan", js.undefined)
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setMdSpan(value: UnsignedUpTo12): Self = StObject.set(x, "mdSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setMdSpanUndefined: Self = StObject.set(x, "mdSpan", js.undefined)
     
     @scala.inline
-    def setLgSpan(value: UnsignedUpTo12): Self = this.set("lgSpan", value.asInstanceOf[js.Any])
+    def setSmSpan(value: UnsignedUpTo12): Self = StObject.set(x, "smSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLgSpan: Self = this.set("lgSpan", js.undefined)
+    def setSmSpanUndefined: Self = StObject.set(x, "smSpan", js.undefined)
     
     @scala.inline
-    def setMdSpan(value: UnsignedUpTo12): Self = this.set("mdSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMdSpan: Self = this.set("mdSpan", js.undefined)
-    
-    @scala.inline
-    def setSmSpan(value: UnsignedUpTo12): Self = this.set("smSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmSpan: Self = this.set("smSpan", js.undefined)
+    def setSpan(value: UnsignedUpTo12): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
   }
 }

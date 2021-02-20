@@ -3,12 +3,13 @@ package typings.mongodb.mod
 import typings.mongodb.anon.MaxTimeMS
 import typings.mongodb.anon.NameOnly
 import typings.mongodb.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Admin extends js.Object {
+trait Admin extends StObject {
   
   def addUser(username: String, password: String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Admin.html#addUser */

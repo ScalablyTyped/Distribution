@@ -2,17 +2,22 @@ package typings.fileSelector
 
 import typings.std.Blob
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("file-selector/dist/file", JSImport.Namespace)
-@js.native
-object fileMod extends js.Object {
+object fileMod {
   
+  @JSImport("file-selector/dist/file", "COMMON_MIME_TYPES")
+  @js.native
   val COMMON_MIME_TYPES: Map[String, String] = js.native
   
+  @JSImport("file-selector/dist/file", "toFileWithPath")
+  @js.native
   def toFileWithPath(file: FileWithPath): FileWithPath = js.native
+  @JSImport("file-selector/dist/file", "toFileWithPath")
+  @js.native
   def toFileWithPath(file: FileWithPath, path: String): FileWithPath = js.native
   
   @js.native

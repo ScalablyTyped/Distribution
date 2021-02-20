@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIap.gapi.client.iap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OAuthSettings extends js.Object {
+trait OAuthSettings extends StObject {
   
   /**
     * Domain hint to send as hd=? parameter in OAuth request flow. Enables redirect to primary IDP by skipping Google's login screen.
@@ -23,24 +24,12 @@ object OAuthSettings {
   }
   
   @scala.inline
-  implicit class OAuthSettingsOps[Self <: OAuthSettings] (val x: Self) extends AnyVal {
+  implicit class OAuthSettingsMutableBuilder[Self <: OAuthSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoginHint(value: String): Self = this.set("loginHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoginHint: Self = this.set("loginHint", js.undefined)
+    def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
   }
 }

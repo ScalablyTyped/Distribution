@@ -1,15 +1,18 @@
 package typings.cucumberMessages.mod
 
 import typings.cucumberMessages.idGeneratorMod.NewId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cucumber-messages", "IdGenerator")
-@js.native
-object IdGenerator extends js.Object {
+object IdGenerator {
   
+  @JSImport("cucumber-messages", "IdGenerator.incrementing")
+  @js.native
   def incrementing(): NewId = js.native
   
+  @JSImport("cucumber-messages", "IdGenerator.uuid")
+  @js.native
   def uuid(): NewId = js.native
 }

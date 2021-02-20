@@ -1,11 +1,12 @@
 package typings.easeljs.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStageGLOptions extends js.Object {
+trait IStageGLOptions extends StObject {
   
   var antialias: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object IStageGLOptions {
   }
   
   @scala.inline
-  implicit class IStageGLOptionsOps[Self <: IStageGLOptions] (val x: Self) extends AnyVal {
+  implicit class IStageGLOptionsMutableBuilder[Self <: IStageGLOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoPurge(value: Double): Self = StObject.set(x, "autoPurge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAntialias(value: Boolean): Self = this.set("antialias", value.asInstanceOf[js.Any])
+    def setAutoPurgeUndefined: Self = StObject.set(x, "autoPurge", js.undefined)
     
     @scala.inline
-    def deleteAntialias: Self = this.set("antialias", js.undefined)
+    def setPremultiply(value: Boolean): Self = StObject.set(x, "premultiply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPurge(value: Double): Self = this.set("autoPurge", value.asInstanceOf[js.Any])
+    def setPremultiplyUndefined: Self = StObject.set(x, "premultiply", js.undefined)
     
     @scala.inline
-    def deleteAutoPurge: Self = this.set("autoPurge", js.undefined)
+    def setPreserveBuffer(value: Boolean): Self = StObject.set(x, "preserveBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremultiply(value: Boolean): Self = this.set("premultiply", value.asInstanceOf[js.Any])
+    def setPreserveBufferUndefined: Self = StObject.set(x, "preserveBuffer", js.undefined)
     
     @scala.inline
-    def deletePremultiply: Self = this.set("premultiply", js.undefined)
+    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveBuffer(value: Boolean): Self = this.set("preserveBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreserveBuffer: Self = this.set("preserveBuffer", js.undefined)
-    
-    @scala.inline
-    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
   }
 }

@@ -10,12 +10,13 @@ import typings.node.Buffer
 import typings.std.Date
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldValueQueryBuilder[T] extends js.Object {
+trait FieldValueQueryBuilder[T] extends StObject {
   
   def ascii[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, String, this.type] = js.native
   
@@ -101,63 +102,51 @@ object FieldValueQueryBuilder {
   }
   
   @scala.inline
-  implicit class FieldValueQueryBuilderOps[Self <: FieldValueQueryBuilder[_], T] (val x: Self with FieldValueQueryBuilder[T]) extends AnyVal {
+  implicit class FieldValueQueryBuilderMutableBuilder[Self <: FieldValueQueryBuilder[_], T] (val x: Self with FieldValueQueryBuilder[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscii(value: js.Any => TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "ascii", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBigint(value: js.Any => TypeMatchedValue[T, js.Any, Long, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "bigint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlob(value: js.Any => TypeMatchedValue[T, js.Any, Buffer, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "blob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAscii(value: js.Any => TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]]): Self = this.set("ascii", js.Any.fromFunction1(value))
+    def setBoolean(value: js.Any => TypeMatchedValue[T, js.Any, Boolean, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "boolean", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBigint(value: js.Any => TypeMatchedValue[T, js.Any, Long, FieldValueQueryBuilder[T]]): Self = this.set("bigint", js.Any.fromFunction1(value))
+    def setCounter(value: js.Any => TypeMatchedValue[T, js.Any, Long, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "counter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBlob(value: js.Any => TypeMatchedValue[T, js.Any, Buffer, FieldValueQueryBuilder[T]]): Self = this.set("blob", js.Any.fromFunction1(value))
+    def setDate(value: js.Any => TypeMatchedValue[T, js.Any, LocalDate, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBoolean(value: js.Any => TypeMatchedValue[T, js.Any, Boolean, FieldValueQueryBuilder[T]]): Self = this.set("boolean", js.Any.fromFunction1(value))
+    def setDecimal(value: js.Any => TypeMatchedValue[T, js.Any, BigDecimal, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "decimal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCounter(value: js.Any => TypeMatchedValue[T, js.Any, Long, FieldValueQueryBuilder[T]]): Self = this.set("counter", js.Any.fromFunction1(value))
+    def setDouble(value: js.Any => TypeMatchedValue[T, js.Any, Long, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "double", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDate(value: js.Any => TypeMatchedValue[T, js.Any, LocalDate, FieldValueQueryBuilder[T]]): Self = this.set("date", js.Any.fromFunction1(value))
+    def setFloat(value: js.Any => TypeMatchedValue[T, js.Any, Double, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "float", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDecimal(value: js.Any => TypeMatchedValue[T, js.Any, BigDecimal, FieldValueQueryBuilder[T]]): Self = this.set("decimal", js.Any.fromFunction1(value))
+    def setInet(value: js.Any => TypeMatchedValue[T, js.Any, InetAddress, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "inet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDouble(value: js.Any => TypeMatchedValue[T, js.Any, Long, FieldValueQueryBuilder[T]]): Self = this.set("double", js.Any.fromFunction1(value))
+    def setInt(value: js.Any => TypeMatchedValue[T, js.Any, Double, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "int", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFloat(value: js.Any => TypeMatchedValue[T, js.Any, Double, FieldValueQueryBuilder[T]]): Self = this.set("float", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInet(value: js.Any => TypeMatchedValue[T, js.Any, InetAddress, FieldValueQueryBuilder[T]]): Self = this.set("inet", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInt(value: js.Any => TypeMatchedValue[T, js.Any, Double, FieldValueQueryBuilder[T]]): Self = this.set("int", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setList(value: (js.Any, String) => TypeMatchedValue[T, js.Any, js.Array[_], FieldValueQueryBuilder[T]]): Self = this.set("list", js.Any.fromFunction2(value))
+    def setList(value: (js.Any, String) => TypeMatchedValue[T, js.Any, js.Array[_], FieldValueQueryBuilder[T]]): Self = StObject.set(x, "list", js.Any.fromFunction2(value))
     
     @scala.inline
     def setMap(
       value: (js.Any, js.Any, js.Any) => TypeMatchedValue[T, js.Any, Map[js.Any, js.Any], FieldValueQueryBuilder[T]]
-    ): Self = this.set("map", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "map", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPrimary(value: String => FieldValueQueryBuilder[T]): Self = this.set("primary", js.Any.fromFunction1(value))
+    def setPrimary(value: String => FieldValueQueryBuilder[T]): Self = StObject.set(x, "primary", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSet(
@@ -169,21 +158,21 @@ object FieldValueQueryBuilder {
           ], 
           FieldValueQueryBuilder[T]
         ]
-    ): Self = this.set("set", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setText(value: js.Any => TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]]): Self = this.set("text", js.Any.fromFunction1(value))
+    def setText(value: js.Any => TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTimestamp(value: js.Any => TypeMatchedValue[T, js.Any, Date, FieldValueQueryBuilder[T]]): Self = this.set("timestamp", js.Any.fromFunction1(value))
+    def setTimestamp(value: js.Any => TypeMatchedValue[T, js.Any, Date, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "timestamp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTimeuuid(value: js.Any => TypeMatchedValue[T, js.Any, TimeUuid, FieldValueQueryBuilder[T]]): Self = this.set("timeuuid", js.Any.fromFunction1(value))
+    def setTimeuuid(value: js.Any => TypeMatchedValue[T, js.Any, TimeUuid, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "timeuuid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUuid(value: js.Any => TypeMatchedValue[T, js.Any, Uuid, FieldValueQueryBuilder[T]]): Self = this.set("uuid", js.Any.fromFunction1(value))
+    def setUuid(value: js.Any => TypeMatchedValue[T, js.Any, Uuid, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "uuid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVarchar(value: js.Any => TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]]): Self = this.set("varchar", js.Any.fromFunction1(value))
+    def setVarchar(value: js.Any => TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "varchar", js.Any.fromFunction1(value))
   }
 }

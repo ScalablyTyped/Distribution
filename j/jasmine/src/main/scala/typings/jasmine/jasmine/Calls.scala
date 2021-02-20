@@ -1,12 +1,13 @@
 package typings.jasmine.jasmine
 
 import typings.std.Parameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Calls[Fn /* <: Func */] extends js.Object {
+trait Calls[Fn /* <: Func */] extends StObject {
   
   /** By chaining the spy with calls.all(), will return the context (the this) and arguments passed all calls */
   def all(): js.Array[CallInfo[Fn]] = js.native
@@ -54,45 +55,33 @@ object Calls {
   }
   
   @scala.inline
-  implicit class CallsOps[Self <: Calls[_], Fn /* <: Func */] (val x: Self with Calls[Fn]) extends AnyVal {
+  implicit class CallsMutableBuilder[Self <: Calls[_], Fn /* <: Func */] (val x: Self with Calls[Fn]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: () => js.Array[CallInfo[Fn]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllArgs(value: () => js.Array[Parameters[Fn]]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAll(value: () => js.Array[CallInfo[Fn]]): Self = this.set("all", js.Any.fromFunction0(value))
+    def setArgsFor(value: Double => Parameters[Fn]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllArgs(value: () => js.Array[Parameters[Fn]]): Self = this.set("allArgs", js.Any.fromFunction0(value))
+    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAny(value: () => Boolean): Self = this.set("any", js.Any.fromFunction0(value))
+    def setFirst(value: () => CallInfo[Fn]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setArgsFor(value: Double => Parameters[Fn]): Self = this.set("argsFor", js.Any.fromFunction1(value))
+    def setMostRecent(value: () => CallInfo[Fn]): Self = StObject.set(x, "mostRecent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCount(value: () => Double): Self = this.set("count", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirst(value: () => CallInfo[Fn]): Self = this.set("first", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMostRecent(value: () => CallInfo[Fn]): Self = this.set("mostRecent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSaveArgumentsByValue(value: () => Unit): Self = this.set("saveArgumentsByValue", js.Any.fromFunction0(value))
+    def setSaveArgumentsByValue(value: () => Unit): Self = StObject.set(x, "saveArgumentsByValue", js.Any.fromFunction0(value))
   }
 }

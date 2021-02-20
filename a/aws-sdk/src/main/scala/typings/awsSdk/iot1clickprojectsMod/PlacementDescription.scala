@@ -1,11 +1,12 @@
 package typings.awsSdk.iot1clickprojectsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlacementDescription extends js.Object {
+trait PlacementDescription extends StObject {
   
   /**
     * The user-defined attributes associated with the placement.
@@ -47,33 +48,21 @@ object PlacementDescription {
   }
   
   @scala.inline
-  implicit class PlacementDescriptionOps[Self <: PlacementDescription] (val x: Self) extends AnyVal {
+  implicit class PlacementDescriptionMutableBuilder[Self <: PlacementDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: PlacementAttributeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedDate(value: Time): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: PlacementAttributeMap): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Time): Self = this.set("createdDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlacementName(value: PlacementName): Self = this.set("placementName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = this.set("projectName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedDate(value: Time): Self = this.set("updatedDate", value.asInstanceOf[js.Any])
+    def setUpdatedDate(value: Time): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
   }
 }

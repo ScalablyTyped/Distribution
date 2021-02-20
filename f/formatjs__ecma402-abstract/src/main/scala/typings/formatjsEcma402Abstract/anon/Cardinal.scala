@@ -1,11 +1,12 @@
 package typings.formatjsEcma402Abstract.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cardinal extends js.Object {
+trait Cardinal extends StObject {
   
   var cardinal: js.Array[String] = js.native
   
@@ -20,30 +21,18 @@ object Cardinal {
   }
   
   @scala.inline
-  implicit class CardinalOps[Self <: Cardinal] (val x: Self) extends AnyVal {
+  implicit class CardinalMutableBuilder[Self <: Cardinal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardinal(value: js.Array[String]): Self = StObject.set(x, "cardinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardinalVarargs(value: String*): Self = StObject.set(x, "cardinal", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrdinal(value: js.Array[String]): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardinalVarargs(value: String*): Self = this.set("cardinal", js.Array(value :_*))
-    
-    @scala.inline
-    def setCardinal(value: js.Array[String]): Self = this.set("cardinal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrdinalVarargs(value: String*): Self = this.set("ordinal", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrdinal(value: js.Array[String]): Self = this.set("ordinal", value.asInstanceOf[js.Any])
+    def setOrdinalVarargs(value: String*): Self = StObject.set(x, "ordinal", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebACL extends js.Object {
+trait WebACL extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Web ACL that you want to associate with the resource.
@@ -77,78 +78,66 @@ object WebACL {
   }
   
   @scala.inline
-  implicit class WebACLOps[Self <: WebACL] (val x: Self) extends AnyVal {
+  implicit class WebACLMutableBuilder[Self <: WebACL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacity(value: ConsumedCapacity): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityUndefined: Self = StObject.set(x, "Capacity", js.undefined)
     
     @scala.inline
-    def setARN(value: ResourceArn): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    def setDefaultAction(value: DefaultAction): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultAction(value: DefaultAction): Self = this.set("DefaultAction", value.asInstanceOf[js.Any])
+    def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: EntityId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibilityConfig(value: VisibilityConfig): Self = this.set("VisibilityConfig", value.asInstanceOf[js.Any])
+    def setManagedByFirewallManager(value: Boolean): Self = StObject.set(x, "ManagedByFirewallManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacity(value: ConsumedCapacity): Self = this.set("Capacity", value.asInstanceOf[js.Any])
+    def setManagedByFirewallManagerUndefined: Self = StObject.set(x, "ManagedByFirewallManager", js.undefined)
     
     @scala.inline
-    def deleteCapacity: Self = this.set("Capacity", js.undefined)
+    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: EntityDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setPostProcessFirewallManagerRuleGroups(value: FirewallManagerRuleGroups): Self = StObject.set(x, "PostProcessFirewallManagerRuleGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setPostProcessFirewallManagerRuleGroupsUndefined: Self = StObject.set(x, "PostProcessFirewallManagerRuleGroups", js.undefined)
     
     @scala.inline
-    def setManagedByFirewallManager(value: Boolean): Self = this.set("ManagedByFirewallManager", value.asInstanceOf[js.Any])
+    def setPostProcessFirewallManagerRuleGroupsVarargs(value: FirewallManagerRuleGroup*): Self = StObject.set(x, "PostProcessFirewallManagerRuleGroups", js.Array(value :_*))
     
     @scala.inline
-    def deleteManagedByFirewallManager: Self = this.set("ManagedByFirewallManager", js.undefined)
+    def setPreProcessFirewallManagerRuleGroups(value: FirewallManagerRuleGroups): Self = StObject.set(x, "PreProcessFirewallManagerRuleGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostProcessFirewallManagerRuleGroupsVarargs(value: FirewallManagerRuleGroup*): Self = this.set("PostProcessFirewallManagerRuleGroups", js.Array(value :_*))
+    def setPreProcessFirewallManagerRuleGroupsUndefined: Self = StObject.set(x, "PreProcessFirewallManagerRuleGroups", js.undefined)
     
     @scala.inline
-    def setPostProcessFirewallManagerRuleGroups(value: FirewallManagerRuleGroups): Self = this.set("PostProcessFirewallManagerRuleGroups", value.asInstanceOf[js.Any])
+    def setPreProcessFirewallManagerRuleGroupsVarargs(value: FirewallManagerRuleGroup*): Self = StObject.set(x, "PreProcessFirewallManagerRuleGroups", js.Array(value :_*))
     
     @scala.inline
-    def deletePostProcessFirewallManagerRuleGroups: Self = this.set("PostProcessFirewallManagerRuleGroups", js.undefined)
+    def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreProcessFirewallManagerRuleGroupsVarargs(value: FirewallManagerRuleGroup*): Self = this.set("PreProcessFirewallManagerRuleGroups", js.Array(value :_*))
+    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
     @scala.inline
-    def setPreProcessFirewallManagerRuleGroups(value: FirewallManagerRuleGroups): Self = this.set("PreProcessFirewallManagerRuleGroups", value.asInstanceOf[js.Any])
+    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     
     @scala.inline
-    def deletePreProcessFirewallManagerRuleGroups: Self = this.set("PreProcessFirewallManagerRuleGroups", js.undefined)
-    
-    @scala.inline
-    def setRulesVarargs(value: Rule*): Self = this.set("Rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: Rules): Self = this.set("Rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("Rules", js.undefined)
+    def setVisibilityConfig(value: VisibilityConfig): Self = StObject.set(x, "VisibilityConfig", value.asInstanceOf[js.Any])
   }
 }

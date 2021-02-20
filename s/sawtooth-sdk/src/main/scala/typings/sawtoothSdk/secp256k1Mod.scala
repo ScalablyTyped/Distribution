@@ -5,14 +5,14 @@ import typings.sawtoothSdk.coreMod.Context
 import typings.sawtoothSdk.coreMod.PrivateKey
 import typings.sawtoothSdk.coreMod.PublicKey
 import typings.sawtoothSdk.signingMod.message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sawtooth-sdk/signing/secp256k1", JSImport.Namespace)
-@js.native
-object secp256k1Mod extends js.Object {
+object secp256k1Mod {
   
+  @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1Context")
   @js.native
   class Secp256k1Context () extends Context {
     
@@ -42,6 +42,7 @@ object secp256k1Mod extends js.Object {
     def verify(signature: String, message: message, publicKey: Secp256k1PublicKey): Boolean = js.native
   }
   
+  @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PrivateKey")
   @js.native
   class Secp256k1PrivateKey protected () extends PrivateKey {
     def this(privateKeyBytes: Buffer) = this()
@@ -50,8 +51,7 @@ object secp256k1Mod extends js.Object {
     var privateKeyBytes: Buffer = js.native
   }
   /* static members */
-  @js.native
-  object Secp256k1PrivateKey extends js.Object {
+  object Secp256k1PrivateKey {
     
     /**
       * Creates a private key from a hex encode set of bytes.
@@ -60,15 +60,20 @@ object secp256k1Mod extends js.Object {
       * @return a private key instance
       * @throws if the private key is not valid
       */
+    @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PrivateKey.fromHex")
+    @js.native
     def fromHex(privateKeyHex: String): Secp256k1PrivateKey = js.native
     
     /**
       * @return generates a random PrivateKey
       *
       */
+    @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PrivateKey.newRandom")
+    @js.native
     def newRandom(): Secp256k1PrivateKey = js.native
   }
   
+  @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PublicKey")
   @js.native
   class Secp256k1PublicKey protected () extends PublicKey {
     def this(publicKeyBytes: Buffer) = this()
@@ -77,8 +82,7 @@ object secp256k1Mod extends js.Object {
     var publicKeyBytes: Buffer = js.native
   }
   /* static members */
-  @js.native
-  object Secp256k1PublicKey extends js.Object {
+  object Secp256k1PublicKey {
     
     /**
       * Creates a public key from a hex encode set of bytes.
@@ -87,6 +91,8 @@ object secp256k1Mod extends js.Object {
       * @return a public key instance
       * @throws if the public key is not valid
       */
+    @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PublicKey.fromHex")
+    @js.native
     def fromHex(publicKeyHex: String): Secp256k1PublicKey = js.native
   }
 }

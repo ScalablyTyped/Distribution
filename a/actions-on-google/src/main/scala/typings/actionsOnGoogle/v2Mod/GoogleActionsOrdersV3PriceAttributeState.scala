@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.ESTIMATE
   - typings.actionsOnGoogle.actionsOnGoogleStrings.ACTUAL
 */
-trait GoogleActionsOrdersV3PriceAttributeState extends js.Object
+trait GoogleActionsOrdersV3PriceAttributeState extends StObject
 object GoogleActionsOrdersV3PriceAttributeState {
   
   @scala.inline

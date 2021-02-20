@@ -1,17 +1,23 @@
 package typings.playable
 
 import typings.playable.anon.Fill
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/controls/full-screen/full-screen.theme", JSImport.Namespace)
-@js.native
-object fullScreenThemeMod extends js.Object {
+object fullScreenThemeMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var fullScreenSvgFill: Fill = js.native
+    @JSImport("playable/dist/src/modules/ui/controls/full-screen/full-screen.theme", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("playable/dist/src/modules/ui/controls/full-screen/full-screen.theme", "default.fullScreenSvgFill")
+    @js.native
+    def fullScreenSvgFill: Fill = js.native
+    @scala.inline
+    def fullScreenSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullScreenSvgFill")(x.asInstanceOf[js.Any])
   }
 }

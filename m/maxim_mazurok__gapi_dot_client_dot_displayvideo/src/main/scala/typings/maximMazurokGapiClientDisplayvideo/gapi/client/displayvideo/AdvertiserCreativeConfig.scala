@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdvertiserCreativeConfig extends js.Object {
+trait AdvertiserCreativeConfig extends StObject {
   
   /** Whether or not the advertiser is enabled for dynamic creatives. */
   var dynamicCreativeEnabled: js.UndefOr[Boolean] = js.native
@@ -34,42 +35,30 @@ object AdvertiserCreativeConfig {
   }
   
   @scala.inline
-  implicit class AdvertiserCreativeConfigOps[Self <: AdvertiserCreativeConfig] (val x: Self) extends AnyVal {
+  implicit class AdvertiserCreativeConfigMutableBuilder[Self <: AdvertiserCreativeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicCreativeEnabled(value: Boolean): Self = StObject.set(x, "dynamicCreativeEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicCreativeEnabledUndefined: Self = StObject.set(x, "dynamicCreativeEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIasClientId(value: String): Self = StObject.set(x, "iasClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicCreativeEnabled(value: Boolean): Self = this.set("dynamicCreativeEnabled", value.asInstanceOf[js.Any])
+    def setIasClientIdUndefined: Self = StObject.set(x, "iasClientId", js.undefined)
     
     @scala.inline
-    def deleteDynamicCreativeEnabled: Self = this.set("dynamicCreativeEnabled", js.undefined)
+    def setObaComplianceDisabled(value: Boolean): Self = StObject.set(x, "obaComplianceDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIasClientId(value: String): Self = this.set("iasClientId", value.asInstanceOf[js.Any])
+    def setObaComplianceDisabledUndefined: Self = StObject.set(x, "obaComplianceDisabled", js.undefined)
     
     @scala.inline
-    def deleteIasClientId: Self = this.set("iasClientId", js.undefined)
+    def setVideoCreativeDataSharingAuthorized(value: Boolean): Self = StObject.set(x, "videoCreativeDataSharingAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObaComplianceDisabled(value: Boolean): Self = this.set("obaComplianceDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObaComplianceDisabled: Self = this.set("obaComplianceDisabled", js.undefined)
-    
-    @scala.inline
-    def setVideoCreativeDataSharingAuthorized(value: Boolean): Self = this.set("videoCreativeDataSharingAuthorized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoCreativeDataSharingAuthorized: Self = this.set("videoCreativeDataSharingAuthorized", js.undefined)
+    def setVideoCreativeDataSharingAuthorizedUndefined: Self = StObject.set(x, "videoCreativeDataSharingAuthorized", js.undefined)
   }
 }

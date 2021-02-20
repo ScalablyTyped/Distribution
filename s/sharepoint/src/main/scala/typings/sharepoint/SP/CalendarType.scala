@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CalendarType extends js.Object
+sealed trait CalendarType extends StObject
 @JSGlobal("SP.CalendarType")
 @js.native
-object CalendarType extends js.Object {
+object CalendarType extends StObject {
   
   @js.native
   sealed trait chineseLunar extends CalendarType

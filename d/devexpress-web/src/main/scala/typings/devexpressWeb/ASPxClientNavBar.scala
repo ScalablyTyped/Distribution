@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -142,69 +143,57 @@ object ASPxClientNavBar {
   }
   
   @scala.inline
-  implicit class ASPxClientNavBarOps[Self <: ASPxClientNavBar] (val x: Self) extends AnyVal {
+  implicit class ASPxClientNavBarMutableBuilder[Self <: ASPxClientNavBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapseAll(value: () => Unit): Self = StObject.set(x, "CollapseAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientNavBar]]): Self = this.set("BeginCallback", value.asInstanceOf[js.Any])
+    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientNavBar]]): Self = this.set("CallbackError", value.asInstanceOf[js.Any])
+    def setExpandAll(value: () => Unit): Self = StObject.set(x, "ExpandAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapseAll(value: () => Unit): Self = this.set("CollapseAll", js.Any.fromFunction0(value))
+    def setExpandedChanged(value: ASPxClientEvent[ASPxClientNavBarGroupEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "ExpandedChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientNavBar]]): Self = this.set("EndCallback", value.asInstanceOf[js.Any])
+    def setExpandedChanging(value: ASPxClientEvent[ASPxClientNavBarGroupCancelEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "ExpandedChanging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandAll(value: () => Unit): Self = this.set("ExpandAll", js.Any.fromFunction0(value))
+    def setGetActiveGroup(value: () => ASPxClientNavBarGroup): Self = StObject.set(x, "GetActiveGroup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExpandedChanged(value: ASPxClientEvent[ASPxClientNavBarGroupEventHandler[ASPxClientNavBar]]): Self = this.set("ExpandedChanged", value.asInstanceOf[js.Any])
+    def setGetGroup(value: Double => ASPxClientNavBarGroup): Self = StObject.set(x, "GetGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpandedChanging(value: ASPxClientEvent[ASPxClientNavBarGroupCancelEventHandler[ASPxClientNavBar]]): Self = this.set("ExpandedChanging", value.asInstanceOf[js.Any])
+    def setGetGroupByName(value: String => ASPxClientNavBarGroup): Self = StObject.set(x, "GetGroupByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetActiveGroup(value: () => ASPxClientNavBarGroup): Self = this.set("GetActiveGroup", js.Any.fromFunction0(value))
+    def setGetGroupCount(value: () => Double): Self = StObject.set(x, "GetGroupCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroup(value: Double => ASPxClientNavBarGroup): Self = this.set("GetGroup", js.Any.fromFunction1(value))
+    def setGetItemByName(value: String => ASPxClientNavBarItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetGroupByName(value: String => ASPxClientNavBarGroup): Self = this.set("GetGroupByName", js.Any.fromFunction1(value))
+    def setGetSelectedItem(value: () => ASPxClientNavBarItem): Self = StObject.set(x, "GetSelectedItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroupCount(value: () => Double): Self = this.set("GetGroupCount", js.Any.fromFunction0(value))
+    def setHeaderClick(value: ASPxClientEvent[ASPxClientNavBarGroupClickEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "HeaderClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItemByName(value: String => ASPxClientNavBarItem): Self = this.set("GetItemByName", js.Any.fromFunction1(value))
+    def setItemClick(value: ASPxClientEvent[ASPxClientNavBarItemEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSelectedItem(value: () => ASPxClientNavBarItem): Self = this.set("GetSelectedItem", js.Any.fromFunction0(value))
+    def setSetActiveGroup(value: ASPxClientNavBarGroup => Unit): Self = StObject.set(x, "SetActiveGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeaderClick(value: ASPxClientEvent[ASPxClientNavBarGroupClickEventHandler[ASPxClientNavBar]]): Self = this.set("HeaderClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemClick(value: ASPxClientEvent[ASPxClientNavBarItemEventHandler[ASPxClientNavBar]]): Self = this.set("ItemClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetActiveGroup(value: ASPxClientNavBarGroup => Unit): Self = this.set("SetActiveGroup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSelectedItem(value: ASPxClientNavBarItem => Unit): Self = this.set("SetSelectedItem", js.Any.fromFunction1(value))
+    def setSetSelectedItem(value: ASPxClientNavBarItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
   }
 }

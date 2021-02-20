@@ -1,18 +1,17 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/arrayTools", JSImport.Namespace)
-@js.native
-object arrayToolsMod extends js.Object {
+object arrayToolsMod {
   
+  @JSImport("babylonjs/Misc/arrayTools", "ArrayTools")
   @js.native
-  class ArrayTools () extends js.Object
+  class ArrayTools () extends StObject
   /* static members */
-  @js.native
-  object ArrayTools extends js.Object {
+  object ArrayTools {
     
     /**
       * Returns an array of the given size filled with element built from the given constructor and the paramters
@@ -20,6 +19,8 @@ object arrayToolsMod extends js.Object {
       * @param itemBuilder a callback responsible for creating new instance of item. Called once per array entry.
       * @returns a new array filled with new objects
       */
+    @JSImport("babylonjs/Misc/arrayTools", "ArrayTools.BuildArray")
+    @js.native
     def BuildArray[T](size: Double, itemBuilder: js.Function0[T]): js.Array[T] = js.native
   }
 }

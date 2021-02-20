@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Returns the errors encountered during DICOM store import.
   */
 @js.native
-trait SchemaImportDicomDataErrorDetails extends js.Object {
+trait SchemaImportDicomDataErrorDetails extends StObject {
   
   /**
     * Deprecated. Use only for debugging purposes.  Contains sample errors
@@ -26,27 +27,15 @@ object SchemaImportDicomDataErrorDetails {
   }
   
   @scala.inline
-  implicit class SchemaImportDicomDataErrorDetailsOps[Self <: SchemaImportDicomDataErrorDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaImportDicomDataErrorDetailsMutableBuilder[Self <: SchemaImportDicomDataErrorDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSampleErrors(value: js.Array[SchemaErrorDetail]): Self = StObject.set(x, "sampleErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSampleErrorsUndefined: Self = StObject.set(x, "sampleErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSampleErrorsVarargs(value: SchemaErrorDetail*): Self = this.set("sampleErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setSampleErrors(value: js.Array[SchemaErrorDetail]): Self = this.set("sampleErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleErrors: Self = this.set("sampleErrors", js.undefined)
+    def setSampleErrorsVarargs(value: SchemaErrorDetail*): Self = StObject.set(x, "sampleErrors", js.Array(value :_*))
   }
 }

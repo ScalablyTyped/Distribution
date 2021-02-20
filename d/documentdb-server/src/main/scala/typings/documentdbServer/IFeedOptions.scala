@@ -1,12 +1,13 @@
 package typings.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options associated with a read feed or query operation. */
 @js.native
-trait IFeedOptions extends js.Object {
+trait IFeedOptions extends StObject {
   
   /** Opaque token for continuing the enumeration. */
   var continuation: js.UndefOr[String] = js.native
@@ -32,42 +33,30 @@ object IFeedOptions {
   }
   
   @scala.inline
-  implicit class IFeedOptionsOps[Self <: IFeedOptions] (val x: Self) extends AnyVal {
+  implicit class IFeedOptionsMutableBuilder[Self <: IFeedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuation(value: String): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationUndefined: Self = StObject.set(x, "continuation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableLowPrecisionOrderBy(value: Boolean): Self = StObject.set(x, "enableLowPrecisionOrderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuation(value: String): Self = this.set("continuation", value.asInstanceOf[js.Any])
+    def setEnableLowPrecisionOrderByUndefined: Self = StObject.set(x, "enableLowPrecisionOrderBy", js.undefined)
     
     @scala.inline
-    def deleteContinuation: Self = this.set("continuation", js.undefined)
+    def setEnableScan(value: Boolean): Self = StObject.set(x, "enableScan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLowPrecisionOrderBy(value: Boolean): Self = this.set("enableLowPrecisionOrderBy", value.asInstanceOf[js.Any])
+    def setEnableScanUndefined: Self = StObject.set(x, "enableScan", js.undefined)
     
     @scala.inline
-    def deleteEnableLowPrecisionOrderBy: Self = this.set("enableLowPrecisionOrderBy", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableScan(value: Boolean): Self = this.set("enableScan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableScan: Self = this.set("enableScan", js.undefined)
-    
-    @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
   }
 }

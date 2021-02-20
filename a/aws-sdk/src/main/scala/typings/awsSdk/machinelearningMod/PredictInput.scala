@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PredictInput extends js.Object {
+trait PredictInput extends StObject {
   
   /**
     * A unique identifier of the MLModel.
@@ -25,27 +26,15 @@ object PredictInput {
   }
   
   @scala.inline
-  implicit class PredictInputOps[Self <: PredictInput] (val x: Self) extends AnyVal {
+  implicit class PredictInputMutableBuilder[Self <: PredictInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPredictEndpoint(value: VipURL): Self = StObject.set(x, "PredictEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPredictEndpoint(value: VipURL): Self = this.set("PredictEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecord(value: Record): Self = this.set("Record", value.asInstanceOf[js.Any])
+    def setRecord(value: Record): Self = StObject.set(x, "Record", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.knockback.Knockback
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalizedObservable extends js.Object {
+trait LocalizedObservable extends StObject {
   
   def destroy(): js.Any = js.native
   
@@ -22,27 +23,15 @@ object LocalizedObservable {
   }
   
   @scala.inline
-  implicit class LocalizedObservableOps[Self <: LocalizedObservable] (val x: Self) extends AnyVal {
+  implicit class LocalizedObservableMutableBuilder[Self <: LocalizedObservable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObservedValue(value: js.Any => js.Any): Self = StObject.set(x, "observedValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestroy(value: () => js.Any): Self = this.set("destroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setObservedValue(value: js.Any => js.Any): Self = this.set("observedValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResetToCurrent(value: () => js.Any): Self = this.set("resetToCurrent", js.Any.fromFunction0(value))
+    def setResetToCurrent(value: () => js.Any): Self = StObject.set(x, "resetToCurrent", js.Any.fromFunction0(value))
   }
 }

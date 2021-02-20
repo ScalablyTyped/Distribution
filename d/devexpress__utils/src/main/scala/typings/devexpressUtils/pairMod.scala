@@ -1,15 +1,15 @@
 package typings.devexpressUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/class/pair", JSImport.Namespace)
-@js.native
-object pairMod extends js.Object {
+object pairMod {
   
+  @JSImport("@devexpress/utils/lib/class/pair", "Pair")
   @js.native
-  class Pair[firstT, secondT] protected () extends js.Object {
+  class Pair[firstT, secondT] protected () extends StObject {
     def this(first: firstT, second: secondT) = this()
     
     var first: firstT = js.native

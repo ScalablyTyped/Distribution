@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFAutoStateTransitionMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStateTransition extends js.Object {
+trait IStateTransition extends StObject {
   
   var AccessControlList: IAccessControlList = js.native
   
@@ -60,60 +61,48 @@ object IStateTransition {
   }
   
   @scala.inline
-  implicit class IStateTransitionOps[Self <: IStateTransition] (val x: Self) extends AnyVal {
+  implicit class IStateTransitionMutableBuilder[Self <: IStateTransition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IStateTransition): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
+    def setEvaluationOrderNumber(value: Double): Self = StObject.set(x, "EvaluationOrderNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IStateTransition): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setFromState(value: Double): Self = StObject.set(x, "FromState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationOrderNumber(value: Double): Self = this.set("EvaluationOrderNumber", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromState(value: Double): Self = this.set("FromState", value.asInstanceOf[js.Any])
+    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setSignatureSettings(value: ISignatureSettings): Self = StObject.set(x, "SignatureSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setToState(value: Double): Self = StObject.set(x, "ToState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = this.set("SemanticAliases", value.asInstanceOf[js.Any])
+    def setTriggerAllowedByVBScript(value: String): Self = StObject.set(x, "TriggerAllowedByVBScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureSettings(value: ISignatureSettings): Self = this.set("SignatureSettings", value.asInstanceOf[js.Any])
+    def setTriggerCriteria(value: ISearchConditions): Self = StObject.set(x, "TriggerCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToState(value: Double): Self = this.set("ToState", value.asInstanceOf[js.Any])
+    def setTriggerInDays(value: Double): Self = StObject.set(x, "TriggerInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerAllowedByVBScript(value: String): Self = this.set("TriggerAllowedByVBScript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerCriteria(value: ISearchConditions): Self = this.set("TriggerCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerInDays(value: Double): Self = this.set("TriggerInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerMode(value: MFAutoStateTransitionMode): Self = this.set("TriggerMode", value.asInstanceOf[js.Any])
+    def setTriggerMode(value: MFAutoStateTransitionMode): Self = StObject.set(x, "TriggerMode", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkEndpointGroupsDetachEndpointsRequest extends js.Object {
+trait NetworkEndpointGroupsDetachEndpointsRequest extends StObject {
   
   /** The list of network endpoints to be detached. */
   var networkEndpoints: js.UndefOr[js.Array[NetworkEndpoint]] = js.native
@@ -19,27 +20,15 @@ object NetworkEndpointGroupsDetachEndpointsRequest {
   }
   
   @scala.inline
-  implicit class NetworkEndpointGroupsDetachEndpointsRequestOps[Self <: NetworkEndpointGroupsDetachEndpointsRequest] (val x: Self) extends AnyVal {
+  implicit class NetworkEndpointGroupsDetachEndpointsRequestMutableBuilder[Self <: NetworkEndpointGroupsDetachEndpointsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkEndpoints(value: js.Array[NetworkEndpoint]): Self = StObject.set(x, "networkEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkEndpointsUndefined: Self = StObject.set(x, "networkEndpoints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNetworkEndpointsVarargs(value: NetworkEndpoint*): Self = this.set("networkEndpoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setNetworkEndpoints(value: js.Array[NetworkEndpoint]): Self = this.set("networkEndpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkEndpoints: Self = this.set("networkEndpoints", js.undefined)
+    def setNetworkEndpointsVarargs(value: NetworkEndpoint*): Self = StObject.set(x, "networkEndpoints", js.Array(value :_*))
   }
 }

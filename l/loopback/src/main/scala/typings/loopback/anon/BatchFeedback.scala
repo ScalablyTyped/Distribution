@@ -1,11 +1,12 @@
 package typings.loopback.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchFeedback extends js.Object {
+trait BatchFeedback extends StObject {
   
   var batchFeedback: Boolean = js.native
   
@@ -24,30 +25,18 @@ object BatchFeedback {
   }
   
   @scala.inline
-  implicit class BatchFeedbackOps[Self <: BatchFeedback] (val x: Self) extends AnyVal {
+  implicit class BatchFeedbackMutableBuilder[Self <: BatchFeedback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchFeedback(value: Boolean): Self = StObject.set(x, "batchFeedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchFeedback(value: Boolean): Self = this.set("batchFeedback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGateway(value: String): Self = this.set("gateway", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

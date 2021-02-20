@@ -1,5 +1,6 @@
 package typings.googleapis.languageV1beta2Mod.languageV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * analysis types (sentiment, entities, and syntax) in one call.
   */
 @js.native
-trait SchemaAnnotateTextRequest extends js.Object {
+trait SchemaAnnotateTextRequest extends StObject {
   
   /**
     * Input document.
@@ -35,36 +36,24 @@ object SchemaAnnotateTextRequest {
   }
   
   @scala.inline
-  implicit class SchemaAnnotateTextRequestOps[Self <: SchemaAnnotateTextRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAnnotateTextRequestMutableBuilder[Self <: SchemaAnnotateTextRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument(value: SchemaDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: SchemaDocument): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
+    def setFeatures(value: SchemaFeatures): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodingType(value: String): Self = this.set("encodingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncodingType: Self = this.set("encodingType", js.undefined)
-    
-    @scala.inline
-    def setFeatures(value: SchemaFeatures): Self = this.set("features", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
   }
 }

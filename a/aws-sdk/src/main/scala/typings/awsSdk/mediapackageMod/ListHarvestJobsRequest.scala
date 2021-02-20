@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackageMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListHarvestJobsRequest extends js.Object {
+trait ListHarvestJobsRequest extends StObject {
   
   /**
     * When specified, the request will return only HarvestJobs associated with the given Channel ID.
@@ -36,42 +37,30 @@ object ListHarvestJobsRequest {
   }
   
   @scala.inline
-  implicit class ListHarvestJobsRequestOps[Self <: ListHarvestJobsRequest] (val x: Self) extends AnyVal {
+  implicit class ListHarvestJobsRequestMutableBuilder[Self <: ListHarvestJobsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeChannelId(value: string): Self = StObject.set(x, "IncludeChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeChannelIdUndefined: Self = StObject.set(x, "IncludeChannelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeStatus(value: string): Self = StObject.set(x, "IncludeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeChannelId(value: string): Self = this.set("IncludeChannelId", value.asInstanceOf[js.Any])
+    def setIncludeStatusUndefined: Self = StObject.set(x, "IncludeStatus", js.undefined)
     
     @scala.inline
-    def deleteIncludeChannelId: Self = this.set("IncludeChannelId", js.undefined)
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeStatus(value: string): Self = this.set("IncludeStatus", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteIncludeStatus: Self = this.set("IncludeStatus", js.undefined)
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

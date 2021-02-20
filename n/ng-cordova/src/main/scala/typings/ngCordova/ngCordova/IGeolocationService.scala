@@ -2,12 +2,13 @@ package typings.ngCordova.ngCordova
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeolocationService extends js.Object {
+trait IGeolocationService extends StObject {
   
   def clearWatch(watchID: StringDictionary[js.Any]): Unit = js.native
   

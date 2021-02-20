@@ -1,69 +1,85 @@
 package typings.materialSwitch
 
-import typings.materialSwitch.adapterMod.MDCSwitchAdapter
-import typings.materialSwitch.anon.ARIACHECKEDATTR
-import typings.materialSwitch.anon.CHECKED
 import typings.materialSwitch.anon.PartialMDCSwitchAdapter
+import typings.std.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/switch", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@material/switch", "MDCSwitch")
   @js.native
-  class MDCSwitch ()
-    extends typings.materialSwitch.componentMod.MDCSwitch
+  class MDCSwitch protected ()
+    extends typings.materialSwitch.componentMod.MDCSwitch {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: typings.materialSwitch.foundationMod.MDCSwitchFoundation, args: js.Any*) = this()
+  }
   /* static members */
-  @js.native
-  object MDCSwitch extends js.Object {
+  object MDCSwitch {
     
+    @JSImport("@material/switch", "MDCSwitch.attachTo")
+    @js.native
     def attachTo(root: HTMLElement): typings.materialSwitch.componentMod.MDCSwitch = js.native
   }
   
+  @JSImport("@material/switch", "MDCSwitchFoundation")
   @js.native
   class MDCSwitchFoundation ()
     extends typings.materialSwitch.foundationMod.MDCSwitchFoundation {
     def this(adapter: PartialMDCSwitchAdapter) = this()
   }
-  /* static members */
-  @js.native
-  object MDCSwitchFoundation extends js.Object {
-    
-    /** The CSS classes used by the switch. */
-    def cssClasses: CHECKED = js.native
-    
-    /** The default Adapter for the switch. */
-    def defaultAdapter: MDCSwitchAdapter = js.native
-    
-    /** The string constants used by the switch. */
-    def strings: ARIACHECKEDATTR = js.native
-  }
   
   /** CSS classes used by the switch. */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
+    
+    @JSImport("@material/switch", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** Class used for a switch that is in the "checked" (on) position. */
-    var CHECKED: String = js.native
+    @JSImport("@material/switch", "cssClasses.CHECKED")
+    @js.native
+    def CHECKED: String = js.native
+    @scala.inline
+    def CHECKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKED")(x.asInstanceOf[js.Any])
     
     /** Class used for a switch that is disabled. */
-    var DISABLED: String = js.native
+    @JSImport("@material/switch", "cssClasses.DISABLED")
+    @js.native
+    def DISABLED: String = js.native
+    @scala.inline
+    def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
   }
   
   /** String constants used by the switch. */
-  @js.native
-  object strings extends js.Object {
+  object strings {
+    
+    @JSImport("@material/switch", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** Aria attribute for checked or unchecked state of switch */
-    var ARIA_CHECKED_ATTR: String = js.native
+    @JSImport("@material/switch", "strings.ARIA_CHECKED_ATTR")
+    @js.native
+    def ARIA_CHECKED_ATTR: String = js.native
+    @scala.inline
+    def ARIA_CHECKED_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED_ATTR")(x.asInstanceOf[js.Any])
     
     /** A CSS selector used to locate the native HTML control for the switch.  */
-    var NATIVE_CONTROL_SELECTOR: String = js.native
+    @JSImport("@material/switch", "strings.NATIVE_CONTROL_SELECTOR")
+    @js.native
+    def NATIVE_CONTROL_SELECTOR: String = js.native
+    @scala.inline
+    def NATIVE_CONTROL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NATIVE_CONTROL_SELECTOR")(x.asInstanceOf[js.Any])
     
     /** A CSS selector used to locate the ripple surface element for the switch. */
-    var RIPPLE_SURFACE_SELECTOR: String = js.native
+    @JSImport("@material/switch", "strings.RIPPLE_SURFACE_SELECTOR")
+    @js.native
+    def RIPPLE_SURFACE_SELECTOR: String = js.native
+    @scala.inline
+    def RIPPLE_SURFACE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIPPLE_SURFACE_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

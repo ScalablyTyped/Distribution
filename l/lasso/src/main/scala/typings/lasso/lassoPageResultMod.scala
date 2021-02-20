@@ -1,16 +1,15 @@
 package typings.lasso
 
 import typings.lasso.lassoContextMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lasso/lib/LassoPageResult", JSImport.Namespace)
-@js.native
-object lassoPageResultMod extends js.Object {
+object lassoPageResultMod {
   
   @js.native
-  trait LassoPageResult extends js.Object {
+  trait LassoPageResult extends StObject {
     
     def addFile(filePath: String, contentType: String, isAsync: Boolean, slot: js.Any): Unit = js.native
     

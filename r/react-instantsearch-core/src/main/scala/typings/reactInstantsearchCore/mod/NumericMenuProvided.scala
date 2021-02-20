@@ -1,12 +1,13 @@
 package typings.reactInstantsearchCore.mod
 
 import typings.reactInstantsearchCore.anon.IsRefined
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumericMenuProvided extends js.Object {
+trait NumericMenuProvided extends StObject {
   
   /** a function to generate a URL for the corresponding search state */
   def createURL(args: js.Any*): js.Any = js.native
@@ -38,33 +39,21 @@ object NumericMenuProvided {
   }
   
   @scala.inline
-  implicit class NumericMenuProvidedOps[Self <: NumericMenuProvided] (val x: Self) extends AnyVal {
+  implicit class NumericMenuProvidedMutableBuilder[Self <: NumericMenuProvided] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[IsRefined]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = this.set("createURL", js.Any.fromFunction1(value))
+    def setItemsVarargs(value: IsRefined*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentRefinement(value: String): Self = this.set("currentRefinement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsVarargs(value: IsRefined*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[IsRefined]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefine(value: /* repeated */ js.Any => js.Any): Self = this.set("refine", js.Any.fromFunction1(value))
+    def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
   }
 }

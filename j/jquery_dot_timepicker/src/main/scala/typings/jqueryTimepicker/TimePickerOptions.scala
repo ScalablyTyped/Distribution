@@ -1,11 +1,12 @@
 package typings.jqueryTimepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimePickerOptions extends js.Object {
+trait TimePickerOptions extends StObject {
   
   /** Selector for an alternate field to store selected time into */
   var altField: js.UndefOr[String] = js.native
@@ -139,228 +140,216 @@ object TimePickerOptions {
   }
   
   @scala.inline
-  implicit class TimePickerOptionsOps[Self <: TimePickerOptions] (val x: Self) extends AnyVal {
+  implicit class TimePickerOptionsMutableBuilder[Self <: TimePickerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltField(value: String): Self = StObject.set(x, "altField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltFieldUndefined: Self = StObject.set(x, "altField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmPmText(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPmText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltField(value: String): Self = this.set("altField", value.asInstanceOf[js.Any])
+    def setAmPmTextUndefined: Self = StObject.set(x, "amPmText", js.undefined)
     
     @scala.inline
-    def deleteAltField: Self = this.set("altField", js.undefined)
+    def setAppendText(value: String): Self = StObject.set(x, "appendText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmPmText(value: js.Tuple2[String, String]): Self = this.set("amPmText", value.asInstanceOf[js.Any])
+    def setAppendTextUndefined: Self = StObject.set(x, "appendText", js.undefined)
     
     @scala.inline
-    def deleteAmPmText: Self = this.set("amPmText", js.undefined)
+    def setAtPosition(value: String): Self = StObject.set(x, "atPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendText(value: String): Self = this.set("appendText", value.asInstanceOf[js.Any])
+    def setAtPositionUndefined: Self = StObject.set(x, "atPosition", js.undefined)
     
     @scala.inline
-    def deleteAppendText: Self = this.set("appendText", js.undefined)
+    def setBeforeShow(value: () => _): Self = StObject.set(x, "beforeShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAtPosition(value: String): Self = this.set("atPosition", value.asInstanceOf[js.Any])
+    def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     
     @scala.inline
-    def deleteAtPosition: Self = this.set("atPosition", js.undefined)
+    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeShow(value: () => _): Self = this.set("beforeShow", js.Any.fromFunction0(value))
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def deleteBeforeShow: Self = this.set("beforeShow", js.undefined)
+    def setCloseButtonText(value: String): Self = StObject.set(x, "closeButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: String): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setCloseButtonTextUndefined: Self = StObject.set(x, "closeButtonText", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setDefaultTime(value: String): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseButtonText(value: String): Self = this.set("closeButtonText", value.asInstanceOf[js.Any])
+    def setDefaultTimeUndefined: Self = StObject.set(x, "defaultTime", js.undefined)
     
     @scala.inline
-    def deleteCloseButtonText: Self = this.set("closeButtonText", js.undefined)
+    def setDeselectButtonText(value: String): Self = StObject.set(x, "deselectButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTime(value: String): Self = this.set("defaultTime", value.asInstanceOf[js.Any])
+    def setDeselectButtonTextUndefined: Self = StObject.set(x, "deselectButtonText", js.undefined)
     
     @scala.inline
-    def deleteDefaultTime: Self = this.set("defaultTime", js.undefined)
+    def setHourText(value: String): Self = StObject.set(x, "hourText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeselectButtonText(value: String): Self = this.set("deselectButtonText", value.asInstanceOf[js.Any])
+    def setHourTextUndefined: Self = StObject.set(x, "hourText", js.undefined)
     
     @scala.inline
-    def deleteDeselectButtonText: Self = this.set("deselectButtonText", js.undefined)
+    def setHours(value: TimePickerHour): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourText(value: String): Self = this.set("hourText", value.asInstanceOf[js.Any])
+    def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
     
     @scala.inline
-    def deleteHourText: Self = this.set("hourText", js.undefined)
+    def setMinuteText(value: String): Self = StObject.set(x, "minuteText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHours(value: TimePickerHour): Self = this.set("hours", value.asInstanceOf[js.Any])
+    def setMinuteTextUndefined: Self = StObject.set(x, "minuteText", js.undefined)
     
     @scala.inline
-    def deleteHours: Self = this.set("hours", js.undefined)
+    def setMinutes(value: TimePickerMinutes): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinuteText(value: String): Self = this.set("minuteText", value.asInstanceOf[js.Any])
+    def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
     
     @scala.inline
-    def deleteMinuteText: Self = this.set("minuteText", js.undefined)
+    def setMyPosition(value: String): Self = StObject.set(x, "myPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinutes(value: TimePickerMinutes): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    def setMyPositionUndefined: Self = StObject.set(x, "myPosition", js.undefined)
     
     @scala.inline
-    def deleteMinutes: Self = this.set("minutes", js.undefined)
+    def setNowButtonText(value: String): Self = StObject.set(x, "nowButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMyPosition(value: String): Self = this.set("myPosition", value.asInstanceOf[js.Any])
+    def setNowButtonTextUndefined: Self = StObject.set(x, "nowButtonText", js.undefined)
     
     @scala.inline
-    def deleteMyPosition: Self = this.set("myPosition", js.undefined)
+    def setOnClose(value: (/* timeText */ String, /* inst */ js.Any) => _): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNowButtonText(value: String): Self = this.set("nowButtonText", value.asInstanceOf[js.Any])
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteNowButtonText: Self = this.set("nowButtonText", js.undefined)
+    def setOnHourShow(value: () => _): Self = StObject.set(x, "onHourShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnClose(value: (/* timeText */ String, /* inst */ js.Any) => _): Self = this.set("onClose", js.Any.fromFunction2(value))
+    def setOnHourShowUndefined: Self = StObject.set(x, "onHourShow", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOnMinuteShow(value: () => _): Self = StObject.set(x, "onMinuteShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnHourShow(value: () => _): Self = this.set("onHourShow", js.Any.fromFunction0(value))
+    def setOnMinuteShowUndefined: Self = StObject.set(x, "onMinuteShow", js.undefined)
     
     @scala.inline
-    def deleteOnHourShow: Self = this.set("onHourShow", js.undefined)
+    def setOnSelect(value: (/* timeText */ String, /* inst */ js.Any) => _): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnMinuteShow(value: () => _): Self = this.set("onMinuteShow", js.Any.fromFunction0(value))
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def deleteOnMinuteShow: Self = this.set("onMinuteShow", js.undefined)
+    def setOptionalMinutes(value: Boolean): Self = StObject.set(x, "optionalMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSelect(value: (/* timeText */ String, /* inst */ js.Any) => _): Self = this.set("onSelect", js.Any.fromFunction2(value))
+    def setOptionalMinutesUndefined: Self = StObject.set(x, "optionalMinutes", js.undefined)
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setPeriodSeparator(value: String): Self = StObject.set(x, "periodSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalMinutes(value: Boolean): Self = this.set("optionalMinutes", value.asInstanceOf[js.Any])
+    def setPeriodSeparatorUndefined: Self = StObject.set(x, "periodSeparator", js.undefined)
     
     @scala.inline
-    def deleteOptionalMinutes: Self = this.set("optionalMinutes", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodSeparator(value: String): Self = this.set("periodSeparator", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deletePeriodSeparator: Self = this.set("periodSeparator", js.undefined)
+    def setShowAnim(value: String): Self = StObject.set(x, "showAnim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setShowAnimUndefined: Self = StObject.set(x, "showAnim", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAnim(value: String): Self = this.set("showAnim", value.asInstanceOf[js.Any])
+    def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
     
     @scala.inline
-    def deleteShowAnim: Self = this.set("showAnim", js.undefined)
+    def setShowDeselectButton(value: Boolean): Self = StObject.set(x, "showDeselectButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCloseButton(value: Boolean): Self = this.set("showCloseButton", value.asInstanceOf[js.Any])
+    def setShowDeselectButtonUndefined: Self = StObject.set(x, "showDeselectButton", js.undefined)
     
     @scala.inline
-    def deleteShowCloseButton: Self = this.set("showCloseButton", js.undefined)
+    def setShowHours(value: Boolean): Self = StObject.set(x, "showHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDeselectButton(value: Boolean): Self = this.set("showDeselectButton", value.asInstanceOf[js.Any])
+    def setShowHoursUndefined: Self = StObject.set(x, "showHours", js.undefined)
     
     @scala.inline
-    def deleteShowDeselectButton: Self = this.set("showDeselectButton", js.undefined)
+    def setShowLeadingZero(value: Boolean): Self = StObject.set(x, "showLeadingZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHours(value: Boolean): Self = this.set("showHours", value.asInstanceOf[js.Any])
+    def setShowLeadingZeroUndefined: Self = StObject.set(x, "showLeadingZero", js.undefined)
     
     @scala.inline
-    def deleteShowHours: Self = this.set("showHours", js.undefined)
+    def setShowMinutes(value: Boolean): Self = StObject.set(x, "showMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLeadingZero(value: Boolean): Self = this.set("showLeadingZero", value.asInstanceOf[js.Any])
+    def setShowMinutesLeadingZero(value: Boolean): Self = StObject.set(x, "showMinutesLeadingZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowLeadingZero: Self = this.set("showLeadingZero", js.undefined)
+    def setShowMinutesLeadingZeroUndefined: Self = StObject.set(x, "showMinutesLeadingZero", js.undefined)
     
     @scala.inline
-    def setShowMinutes(value: Boolean): Self = this.set("showMinutes", value.asInstanceOf[js.Any])
+    def setShowMinutesUndefined: Self = StObject.set(x, "showMinutes", js.undefined)
     
     @scala.inline
-    def deleteShowMinutes: Self = this.set("showMinutes", js.undefined)
+    def setShowNowButton(value: Boolean): Self = StObject.set(x, "showNowButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMinutesLeadingZero(value: Boolean): Self = this.set("showMinutesLeadingZero", value.asInstanceOf[js.Any])
+    def setShowNowButtonUndefined: Self = StObject.set(x, "showNowButton", js.undefined)
     
     @scala.inline
-    def deleteShowMinutesLeadingZero: Self = this.set("showMinutesLeadingZero", js.undefined)
+    def setShowOn(value: String): Self = StObject.set(x, "showOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowNowButton(value: Boolean): Self = this.set("showNowButton", value.asInstanceOf[js.Any])
+    def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
     
     @scala.inline
-    def deleteShowNowButton: Self = this.set("showNowButton", js.undefined)
+    def setShowOptions(value: js.Any): Self = StObject.set(x, "showOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOn(value: String): Self = this.set("showOn", value.asInstanceOf[js.Any])
+    def setShowOptionsUndefined: Self = StObject.set(x, "showOptions", js.undefined)
     
     @scala.inline
-    def deleteShowOn: Self = this.set("showOn", js.undefined)
+    def setShowPeriod(value: Boolean): Self = StObject.set(x, "showPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOptions(value: js.Any): Self = this.set("showOptions", value.asInstanceOf[js.Any])
+    def setShowPeriodLabels(value: Boolean): Self = StObject.set(x, "showPeriodLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowOptions: Self = this.set("showOptions", js.undefined)
+    def setShowPeriodLabelsUndefined: Self = StObject.set(x, "showPeriodLabels", js.undefined)
     
     @scala.inline
-    def setShowPeriod(value: Boolean): Self = this.set("showPeriod", value.asInstanceOf[js.Any])
+    def setShowPeriodUndefined: Self = StObject.set(x, "showPeriod", js.undefined)
     
     @scala.inline
-    def deleteShowPeriod: Self = this.set("showPeriod", js.undefined)
+    def setTimeSeparator(value: String): Self = StObject.set(x, "timeSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPeriodLabels(value: Boolean): Self = this.set("showPeriodLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowPeriodLabels: Self = this.set("showPeriodLabels", js.undefined)
-    
-    @scala.inline
-    def setTimeSeparator(value: String): Self = this.set("timeSeparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSeparator: Self = this.set("timeSeparator", js.undefined)
+    def setTimeSeparatorUndefined: Self = StObject.set(x, "timeSeparator", js.undefined)
   }
 }

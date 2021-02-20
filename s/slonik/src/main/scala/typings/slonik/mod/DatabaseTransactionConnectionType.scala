@@ -1,12 +1,13 @@
 package typings.slonik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined slonik.slonik.CommonQueryMethodsType & {transaction <T>(handler : slonik.slonik.TransactionFunctionType<T>): std.Promise<T>} */
 @js.native
-trait DatabaseTransactionConnectionType extends js.Object {
+trait DatabaseTransactionConnectionType extends StObject {
   
   def any[T](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]

@@ -5,16 +5,15 @@ import typings.tablesorter.html5NumberOptionsMod.Html5NumberOptions
 import typings.tablesorter.html5RangeOptionsMod.Html5RangeOptions
 import typings.tablesorter.mod.global.HTMLElement
 import typings.tablesorter.mod.global.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/Filtering/Formatter/Html5Formatter", JSImport.Namespace)
-@js.native
-object html5FormatterMod extends js.Object {
+object html5FormatterMod {
   
   @js.native
-  trait Html5Formatter extends js.Object {
+  trait Html5Formatter extends StObject {
     
     /**
       * Creates an html5 color-control.

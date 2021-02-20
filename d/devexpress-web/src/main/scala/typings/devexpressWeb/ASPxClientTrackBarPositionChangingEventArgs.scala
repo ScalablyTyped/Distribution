@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,39 +64,27 @@ object ASPxClientTrackBarPositionChangingEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientTrackBarPositionChangingEventArgsOps[Self <: ASPxClientTrackBarPositionChangingEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientTrackBarPositionChangingEventArgsMutableBuilder[Self <: ASPxClientTrackBarPositionChangingEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPosition(value: Double): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentPositionEnd(value: Double): Self = StObject.set(x, "currentPositionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setCurrentPositionStart(value: Double): Self = StObject.set(x, "currentPositionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPosition(value: Double): Self = this.set("currentPosition", value.asInstanceOf[js.Any])
+    def setNewPosition(value: Double): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPositionEnd(value: Double): Self = this.set("currentPositionEnd", value.asInstanceOf[js.Any])
+    def setNewPositionEnd(value: Double): Self = StObject.set(x, "newPositionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPositionStart(value: Double): Self = this.set("currentPositionStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewPosition(value: Double): Self = this.set("newPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewPositionEnd(value: Double): Self = this.set("newPositionEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewPositionStart(value: Double): Self = this.set("newPositionStart", value.asInstanceOf[js.Any])
+    def setNewPositionStart(value: Double): Self = StObject.set(x, "newPositionStart", value.asInstanceOf[js.Any])
   }
 }

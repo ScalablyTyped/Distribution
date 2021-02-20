@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoInstallPolicy extends js.Object {
+trait AutoInstallPolicy extends StObject {
   
   /** The constraints for auto-installing the app. You can specify a maximum of one constraint. */
   var autoInstallConstraint: js.UndefOr[js.Array[AutoInstallConstraint]] = js.native
@@ -31,45 +32,33 @@ object AutoInstallPolicy {
   }
   
   @scala.inline
-  implicit class AutoInstallPolicyOps[Self <: AutoInstallPolicy] (val x: Self) extends AnyVal {
+  implicit class AutoInstallPolicyMutableBuilder[Self <: AutoInstallPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoInstallConstraint(value: js.Array[AutoInstallConstraint]): Self = StObject.set(x, "autoInstallConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoInstallConstraintUndefined: Self = StObject.set(x, "autoInstallConstraint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoInstallConstraintVarargs(value: AutoInstallConstraint*): Self = StObject.set(x, "autoInstallConstraint", js.Array(value :_*))
     
     @scala.inline
-    def setAutoInstallConstraintVarargs(value: AutoInstallConstraint*): Self = this.set("autoInstallConstraint", js.Array(value :_*))
+    def setAutoInstallMode(value: String): Self = StObject.set(x, "autoInstallMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoInstallConstraint(value: js.Array[AutoInstallConstraint]): Self = this.set("autoInstallConstraint", value.asInstanceOf[js.Any])
+    def setAutoInstallModeUndefined: Self = StObject.set(x, "autoInstallMode", js.undefined)
     
     @scala.inline
-    def deleteAutoInstallConstraint: Self = this.set("autoInstallConstraint", js.undefined)
+    def setAutoInstallPriority(value: Double): Self = StObject.set(x, "autoInstallPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoInstallMode(value: String): Self = this.set("autoInstallMode", value.asInstanceOf[js.Any])
+    def setAutoInstallPriorityUndefined: Self = StObject.set(x, "autoInstallPriority", js.undefined)
     
     @scala.inline
-    def deleteAutoInstallMode: Self = this.set("autoInstallMode", js.undefined)
+    def setMinimumVersionCode(value: Double): Self = StObject.set(x, "minimumVersionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoInstallPriority(value: Double): Self = this.set("autoInstallPriority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoInstallPriority: Self = this.set("autoInstallPriority", js.undefined)
-    
-    @scala.inline
-    def setMinimumVersionCode(value: Double): Self = this.set("minimumVersionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumVersionCode: Self = this.set("minimumVersionCode", js.undefined)
+    def setMinimumVersionCodeUndefined: Self = StObject.set(x, "minimumVersionCode", js.undefined)
   }
 }

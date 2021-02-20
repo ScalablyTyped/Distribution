@@ -1,12 +1,13 @@
 package typings.jqueryui.JQueryUI
 
 import typings.jqueryui.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortableUIParams extends js.Object {
+trait SortableUIParams extends StObject {
   
   var helper: JQuery = js.native
   
@@ -39,39 +40,27 @@ object SortableUIParams {
   }
   
   @scala.inline
-  implicit class SortableUIParamsOps[Self <: SortableUIParams] (val x: Self) extends AnyVal {
+  implicit class SortableUIParamsMutableBuilder[Self <: SortableUIParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelper(value: JQuery): Self = this.set("helper", value.asInstanceOf[js.Any])
+    def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: JQuery): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: JQuery): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: js.Any): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalPosition(value: js.Any): Self = this.set("originalPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaceholder(value: JQuery): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: js.Any): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSender(value: JQuery): Self = this.set("sender", value.asInstanceOf[js.Any])
+    def setSender(value: JQuery): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

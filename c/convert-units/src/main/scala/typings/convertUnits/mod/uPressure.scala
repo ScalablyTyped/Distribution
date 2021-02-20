@@ -1,9 +1,11 @@
 package typings.convertUnits.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Pace
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.Pa
   - typings.convertUnits.convertUnitsStrings.hPa
@@ -14,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.psi
   - typings.convertUnits.convertUnitsStrings.ksi
 */
-trait uPressure extends js.Object
+trait uPressure extends StObject
 object uPressure {
   
   @scala.inline

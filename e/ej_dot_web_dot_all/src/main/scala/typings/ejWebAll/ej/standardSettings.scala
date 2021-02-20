@@ -1,11 +1,12 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait standardSettings extends js.Object {
+trait standardSettings extends StObject {
   
   var AM: js.Array[String] = js.native
   
@@ -38,45 +39,33 @@ object standardSettings {
   }
   
   @scala.inline
-  implicit class standardSettingsOps[Self <: standardSettings] (val x: Self) extends AnyVal {
+  implicit class standardSettingsMutableBuilder[Self <: standardSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAM(value: js.Array[String]): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAMVarargs(value: String*): Self = StObject.set(x, "AM", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDays(value: daySettings): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAMVarargs(value: String*): Self = this.set("AM", js.Array(value :_*))
+    def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAM(value: js.Array[String]): Self = this.set("AM", value.asInstanceOf[js.Any])
+    def setMonths(value: monthSettings): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPMVarargs(value: String*): Self = this.set("PM", js.Array(value :_*))
+    def setPM(value: js.Array[String]): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPM(value: js.Array[String]): Self = this.set("PM", value.asInstanceOf[js.Any])
+    def setPMVarargs(value: String*): Self = StObject.set(x, "PM", js.Array(value :_*))
     
     @scala.inline
-    def setDays(value: daySettings): Self = this.set("days", value.asInstanceOf[js.Any])
+    def setPatterns(value: patternSettings): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDay(value: Double): Self = this.set("firstDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMonths(value: monthSettings): Self = this.set("months", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPatterns(value: patternSettings): Self = this.set("patterns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwoDigitYearMax(value: Double): Self = this.set("twoDigitYearMax", value.asInstanceOf[js.Any])
+    def setTwoDigitYearMax(value: Double): Self = StObject.set(x, "twoDigitYearMax", value.asInstanceOf[js.Any])
   }
 }

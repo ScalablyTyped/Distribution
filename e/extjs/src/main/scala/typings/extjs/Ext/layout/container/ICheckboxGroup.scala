@@ -1,6 +1,7 @@
 package typings.extjs.Ext.layout.container
 
 import typings.extjs.Ext.layout.ISizePolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,48 +44,36 @@ object ICheckboxGroup {
   }
   
   @scala.inline
-  implicit class ICheckboxGroupOps[Self <: ICheckboxGroup] (val x: Self) extends AnyVal {
+  implicit class ICheckboxGroupMutableBuilder[Self <: ICheckboxGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFlex(value: Boolean): Self = StObject.set(x, "autoFlex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFlexUndefined: Self = StObject.set(x, "autoFlex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoFlex(value: Boolean): Self = this.set("autoFlex", value.asInstanceOf[js.Any])
+    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
     @scala.inline
-    def deleteAutoFlex: Self = this.set("autoFlex", js.undefined)
+    def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("calculate", js.Any.fromFunction1(value))
+    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
     @scala.inline
-    def deleteCalculate: Self = this.set("calculate", js.undefined)
+    def setIsValidParent(value: () => Unit): Self = StObject.set(x, "isValidParent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = this.set("getItemSizePolicy", js.Any.fromFunction1(value))
+    def setIsValidParentUndefined: Self = StObject.set(x, "isValidParent", js.undefined)
     
     @scala.inline
-    def deleteGetItemSizePolicy: Self = this.set("getItemSizePolicy", js.undefined)
+    def setRenderItems(value: /* items */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "renderItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsValidParent(value: () => Unit): Self = this.set("isValidParent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteIsValidParent: Self = this.set("isValidParent", js.undefined)
-    
-    @scala.inline
-    def setRenderItems(value: /* items */ js.UndefOr[js.Any] => Unit): Self = this.set("renderItems", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRenderItems: Self = this.set("renderItems", js.undefined)
+    def setRenderItemsUndefined: Self = StObject.set(x, "renderItems", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasportal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SasPortalDpaMoveList extends js.Object {
+trait SasPortalDpaMoveList extends StObject {
   
   /** The ID of the DPA. */
   var dpaId: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object SasPortalDpaMoveList {
   }
   
   @scala.inline
-  implicit class SasPortalDpaMoveListOps[Self <: SasPortalDpaMoveList] (val x: Self) extends AnyVal {
+  implicit class SasPortalDpaMoveListMutableBuilder[Self <: SasPortalDpaMoveList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDpaId(value: String): Self = StObject.set(x, "dpaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDpaIdUndefined: Self = StObject.set(x, "dpaId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrequencyRange(value: SasPortalFrequencyRange): Self = StObject.set(x, "frequencyRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpaId(value: String): Self = this.set("dpaId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDpaId: Self = this.set("dpaId", js.undefined)
-    
-    @scala.inline
-    def setFrequencyRange(value: SasPortalFrequencyRange): Self = this.set("frequencyRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrequencyRange: Self = this.set("frequencyRange", js.undefined)
+    def setFrequencyRangeUndefined: Self = StObject.set(x, "frequencyRange", js.undefined)
   }
 }

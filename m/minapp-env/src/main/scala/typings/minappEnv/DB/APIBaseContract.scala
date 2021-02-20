@@ -2,12 +2,13 @@ package typings.minappEnv.DB
 
 import typings.minappEnv.IAPIParam
 import typings.minappEnv.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[_] */, CONTEXT] extends js.Object {
+trait APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[_] */, CONTEXT] extends StObject {
   
   /**
     * In case of callback-style invocation, this function will be called
@@ -34,30 +35,18 @@ object APIBaseContract {
   }
   
   @scala.inline
-  implicit class APIBaseContractOps[Self <: APIBaseContract[_, _, _, _], PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[_] */, CONTEXT] (val x: Self with (APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT])) extends AnyVal {
+  implicit class APIBaseContractMutableBuilder[Self <: APIBaseContract[_, _, _, _], PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[_] */, CONTEXT] (val x: Self with (APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCallbackReturn(value: (PARAM, CONTEXT) => CALLBACK_RETURN): Self = StObject.set(x, "getCallbackReturn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetContext(value: PARAM => CONTEXT): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFinalParam(value: (PARAM, CONTEXT) => js.Any): Self = StObject.set(x, "getFinalParam", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCallbackReturn(value: (PARAM, CONTEXT) => CALLBACK_RETURN): Self = this.set("getCallbackReturn", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetContext(value: PARAM => CONTEXT): Self = this.set("getContext", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetFinalParam(value: (PARAM, CONTEXT) => js.Any): Self = this.set("getFinalParam", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRun(value: js.Any => Promise[PROMISE_RETURN]): Self = this.set("run", js.Any.fromFunction1(value))
+    def setRun(value: js.Any => Promise[PROMISE_RETURN]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }
 }

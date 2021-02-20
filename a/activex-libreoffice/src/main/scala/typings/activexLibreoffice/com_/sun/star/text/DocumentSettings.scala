@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.document.Settings
 import typings.activexLibreoffice.com_.sun.star.i18n.XForbiddenCharacters
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -193,51 +194,39 @@ object DocumentSettings {
   }
   
   @scala.inline
-  implicit class DocumentSettingsOps[Self <: DocumentSettings] (val x: Self) extends AnyVal {
+  implicit class DocumentSettingsMutableBuilder[Self <: DocumentSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddParaSpacingToTableCells(value: Boolean): Self = StObject.set(x, "AddParaSpacingToTableCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddParaTableSpacing(value: Boolean): Self = StObject.set(x, "AddParaTableSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddParaTableSpacingAtStart(value: Boolean): Self = StObject.set(x, "AddParaTableSpacingAtStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddParaSpacingToTableCells(value: Boolean): Self = this.set("AddParaSpacingToTableCells", value.asInstanceOf[js.Any])
+    def setAlignTabStopPosition(value: Boolean): Self = StObject.set(x, "AlignTabStopPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddParaTableSpacing(value: Boolean): Self = this.set("AddParaTableSpacing", value.asInstanceOf[js.Any])
+    def setChartAutoUpdate(value: Boolean): Self = StObject.set(x, "ChartAutoUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddParaTableSpacingAtStart(value: Boolean): Self = this.set("AddParaTableSpacingAtStart", value.asInstanceOf[js.Any])
+    def setConsiderTextWrapOnObjPos(value: Boolean): Self = StObject.set(x, "ConsiderTextWrapOnObjPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignTabStopPosition(value: Boolean): Self = this.set("AlignTabStopPosition", value.asInstanceOf[js.Any])
+    def setIsLabelDocument(value: Boolean): Self = StObject.set(x, "IsLabelDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartAutoUpdate(value: Boolean): Self = this.set("ChartAutoUpdate", value.asInstanceOf[js.Any])
+    def setMathBaselineAlignment(value: Boolean): Self = StObject.set(x, "MathBaselineAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsiderTextWrapOnObjPos(value: Boolean): Self = this.set("ConsiderTextWrapOnObjPos", value.asInstanceOf[js.Any])
+    def setSaveGlobalDocumentLinks(value: Boolean): Self = StObject.set(x, "SaveGlobalDocumentLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLabelDocument(value: Boolean): Self = this.set("IsLabelDocument", value.asInstanceOf[js.Any])
+    def setUseFormerLineSpacing(value: Boolean): Self = StObject.set(x, "UseFormerLineSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMathBaselineAlignment(value: Boolean): Self = this.set("MathBaselineAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaveGlobalDocumentLinks(value: Boolean): Self = this.set("SaveGlobalDocumentLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseFormerLineSpacing(value: Boolean): Self = this.set("UseFormerLineSpacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseFormerObjectPositioning(value: Boolean): Self = this.set("UseFormerObjectPositioning", value.asInstanceOf[js.Any])
+    def setUseFormerObjectPositioning(value: Boolean): Self = StObject.set(x, "UseFormerObjectPositioning", value.asInstanceOf[js.Any])
   }
 }

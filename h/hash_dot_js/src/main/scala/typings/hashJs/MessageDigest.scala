@@ -1,12 +1,13 @@
 package typings.hashJs
 
 import typings.hashJs.hashJsStrings.hex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageDigest[T] extends js.Object {
+trait MessageDigest[T] extends StObject {
   
   var blockSize: Double = js.native
   

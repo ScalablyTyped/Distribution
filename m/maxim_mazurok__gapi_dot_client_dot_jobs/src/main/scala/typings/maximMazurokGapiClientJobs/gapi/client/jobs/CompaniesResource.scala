@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientJobs.anon.Callback
 import typings.maximMazurokGapiClientJobs.anon.Fields
 import typings.maximMazurokGapiClientJobs.anon.Key
 import typings.maximMazurokGapiClientJobs.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompaniesResource extends js.Object {
+trait CompaniesResource extends StObject {
   
   def create(request: Alt, body: CreateCompanyRequest): Request[Company] = js.native
   /** Creates a new company entity. */

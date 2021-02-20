@@ -2,6 +2,7 @@ package typings.babylonjs.blocksIndexMod
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes
 import typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

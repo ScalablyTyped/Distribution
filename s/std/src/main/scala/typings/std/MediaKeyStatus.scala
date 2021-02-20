@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.`status-pending`
   - typings.std.stdStrings.usable
 */
-trait MediaKeyStatus extends js.Object
+trait MediaKeyStatus extends StObject
 object MediaKeyStatus {
   
   @scala.inline

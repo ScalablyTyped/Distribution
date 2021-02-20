@@ -4,13 +4,14 @@ import typings.rcTree.interfaceMod.EventDataNode
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined rc-tree.rc-tree/es/contextTypes.NodeDragEventParams<std.HTMLDivElement> & {  dragNode :rc-tree.rc-tree/es/interface.EventDataNode,   dragNodesKeys :std.Array<rc-tree.rc-tree/es/interface.Key>,   dropPosition :number,   dropToGap :boolean} */
 @js.native
-trait NodeDragEventParamsHTMLDiDragNode extends js.Object {
+trait NodeDragEventParamsHTMLDiDragNode extends StObject {
   
   var dragNode: EventDataNode = js.native
   
@@ -40,39 +41,27 @@ object NodeDragEventParamsHTMLDiDragNode {
   }
   
   @scala.inline
-  implicit class NodeDragEventParamsHTMLDiDragNodeOps[Self <: NodeDragEventParamsHTMLDiDragNode] (val x: Self) extends AnyVal {
+  implicit class NodeDragEventParamsHTMLDiDragNodeMutableBuilder[Self <: NodeDragEventParamsHTMLDiDragNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragNode(value: EventDataNode): Self = StObject.set(x, "dragNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragNodesKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "dragNodesKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragNodesKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "dragNodesKeys", js.Array(value :_*))
     
     @scala.inline
-    def setDragNode(value: EventDataNode): Self = this.set("dragNode", value.asInstanceOf[js.Any])
+    def setDropPosition(value: Double): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragNodesKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = this.set("dragNodesKeys", js.Array(value :_*))
+    def setDropToGap(value: Boolean): Self = StObject.set(x, "dropToGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragNodesKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = this.set("dragNodesKeys", value.asInstanceOf[js.Any])
+    def setEvent(value: MouseEvent[HTMLDivElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropPosition(value: Double): Self = this.set("dropPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDropToGap(value: Boolean): Self = this.set("dropToGap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent(value: MouseEvent[HTMLDivElement, NativeMouseEvent]): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: EventDataNode): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setNode(value: EventDataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

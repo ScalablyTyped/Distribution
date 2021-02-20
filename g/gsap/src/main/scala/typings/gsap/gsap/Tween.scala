@@ -1,5 +1,6 @@
 package typings.gsap.gsap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gsap.gsap.TweenLite
   - typings.gsap.gsap.TweenMax
 */
-trait Tween extends js.Object
+trait Tween extends StObject

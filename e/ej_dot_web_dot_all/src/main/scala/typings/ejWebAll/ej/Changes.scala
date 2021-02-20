@@ -1,11 +1,12 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Changes extends js.Object {
+trait Changes extends StObject {
   
   var added: js.UndefOr[js.Array[_]] = js.native
   
@@ -22,45 +23,33 @@ object Changes {
   }
   
   @scala.inline
-  implicit class ChangesOps[Self <: Changes] (val x: Self) extends AnyVal {
+  implicit class ChangesMutableBuilder[Self <: Changes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdded(value: js.Array[_]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddedVarargs(value: js.Any*): Self = StObject.set(x, "added", js.Array(value :_*))
     
     @scala.inline
-    def setAddedVarargs(value: js.Any*): Self = this.set("added", js.Array(value :_*))
+    def setChanged(value: js.Array[_]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdded(value: js.Array[_]): Self = this.set("added", value.asInstanceOf[js.Any])
+    def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
     
     @scala.inline
-    def deleteAdded: Self = this.set("added", js.undefined)
+    def setChangedVarargs(value: js.Any*): Self = StObject.set(x, "changed", js.Array(value :_*))
     
     @scala.inline
-    def setChangedVarargs(value: js.Any*): Self = this.set("changed", js.Array(value :_*))
+    def setDeleted(value: js.Array[_]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChanged(value: js.Array[_]): Self = this.set("changed", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteChanged: Self = this.set("changed", js.undefined)
-    
-    @scala.inline
-    def setDeletedVarargs(value: js.Any*): Self = this.set("deleted", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeleted(value: js.Array[_]): Self = this.set("deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setDeletedVarargs(value: js.Any*): Self = StObject.set(x, "deleted", js.Array(value :_*))
   }
 }

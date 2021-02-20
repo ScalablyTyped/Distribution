@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchRecord extends js.Object {
+trait SearchRecord extends StObject {
   
   /**
     * The properties of an experiment.
@@ -36,42 +37,30 @@ object SearchRecord {
   }
   
   @scala.inline
-  implicit class SearchRecordOps[Self <: SearchRecord] (val x: Self) extends AnyVal {
+  implicit class SearchRecordMutableBuilder[Self <: SearchRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExperiment(value: Experiment): Self = StObject.set(x, "Experiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExperimentUndefined: Self = StObject.set(x, "Experiment", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrainingJob(value: TrainingJob): Self = StObject.set(x, "TrainingJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperiment(value: Experiment): Self = this.set("Experiment", value.asInstanceOf[js.Any])
+    def setTrainingJobUndefined: Self = StObject.set(x, "TrainingJob", js.undefined)
     
     @scala.inline
-    def deleteExperiment: Self = this.set("Experiment", js.undefined)
+    def setTrial(value: Trial): Self = StObject.set(x, "Trial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingJob(value: TrainingJob): Self = this.set("TrainingJob", value.asInstanceOf[js.Any])
+    def setTrialComponent(value: TrialComponent): Self = StObject.set(x, "TrialComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrainingJob: Self = this.set("TrainingJob", js.undefined)
+    def setTrialComponentUndefined: Self = StObject.set(x, "TrialComponent", js.undefined)
     
     @scala.inline
-    def setTrial(value: Trial): Self = this.set("Trial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrial: Self = this.set("Trial", js.undefined)
-    
-    @scala.inline
-    def setTrialComponent(value: TrialComponent): Self = this.set("TrialComponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialComponent: Self = this.set("TrialComponent", js.undefined)
+    def setTrialUndefined: Self = StObject.set(x, "Trial", js.undefined)
   }
 }

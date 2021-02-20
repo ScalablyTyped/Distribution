@@ -2,6 +2,7 @@ package typings.asana.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,8 +26,8 @@ trait DispatcherStatic
   * @option {Number} [requestTimeout] Timeout (in milliseconds) to wait for the
   *     request to finish.
   */
-Instantiable0[Dispatcher]
-     with Instantiable1[/* options */ DispatcherOptions, Dispatcher] {
+Instantiable0[typings.asana.mod.Dispatcher]
+     with Instantiable1[/* options */ DispatcherOptions, typings.asana.mod.Dispatcher] {
   
   /**
     * The relative API path for the current version of the Asana API.

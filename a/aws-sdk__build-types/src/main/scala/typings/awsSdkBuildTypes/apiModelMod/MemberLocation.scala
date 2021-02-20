@@ -1,5 +1,6 @@
 package typings.awsSdkBuildTypes.apiModelMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.uri
   - typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.querystring
 */
-trait MemberLocation extends js.Object
+trait MemberLocation extends StObject
 object MemberLocation {
   
   @scala.inline

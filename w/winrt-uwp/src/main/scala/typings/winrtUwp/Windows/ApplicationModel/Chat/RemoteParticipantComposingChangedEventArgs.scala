@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data to the RemoteParticipantComposingChanged event. */
 @js.native
-trait RemoteParticipantComposingChangedEventArgs extends js.Object {
+trait RemoteParticipantComposingChangedEventArgs extends StObject {
   
   /** Gets a Boolean value indicating if the remote participant is currently composing a message. */
   var isComposing: Boolean = js.native
@@ -26,27 +27,15 @@ object RemoteParticipantComposingChangedEventArgs {
   }
   
   @scala.inline
-  implicit class RemoteParticipantComposingChangedEventArgsOps[Self <: RemoteParticipantComposingChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class RemoteParticipantComposingChangedEventArgsMutableBuilder[Self <: RemoteParticipantComposingChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParticipantAddress(value: String): Self = StObject.set(x, "participantAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsComposing(value: Boolean): Self = this.set("isComposing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParticipantAddress(value: String): Self = this.set("participantAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportId(value: String): Self = this.set("transportId", value.asInstanceOf[js.Any])
+    def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
   }
 }

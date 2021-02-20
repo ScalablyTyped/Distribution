@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatafusion.gapi.client.datafusion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkConfig extends js.Object {
+trait NetworkConfig extends StObject {
   
   /** The IP range in CIDR notation to use for the managed Data Fusion instance nodes. This range must not overlap with any other ranges used in the customer network. */
   var ipAllocation: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object NetworkConfig {
   }
   
   @scala.inline
-  implicit class NetworkConfigOps[Self <: NetworkConfig] (val x: Self) extends AnyVal {
+  implicit class NetworkConfigMutableBuilder[Self <: NetworkConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpAllocation(value: String): Self = StObject.set(x, "ipAllocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpAllocationUndefined: Self = StObject.set(x, "ipAllocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAllocation(value: String): Self = this.set("ipAllocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpAllocation: Self = this.set("ipAllocation", js.undefined)
-    
-    @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
   }
 }

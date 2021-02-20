@@ -1,16 +1,16 @@
 package typings.tsMockito
 
 import typings.tsMockito.methodToStubMod.MethodToStub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-mockito/lib/MethodStubVerificator", JSImport.Namespace)
-@js.native
-object methodStubVerificatorMod extends js.Object {
+object methodStubVerificatorMod {
   
+  @JSImport("ts-mockito/lib/MethodStubVerificator", "MethodStubVerificator")
   @js.native
-  class MethodStubVerificator[T] protected () extends js.Object {
+  class MethodStubVerificator[T] protected () extends StObject {
     def this(methodToVerify: MethodToStub) = this()
     
     def atLeast(value: Double): Unit = js.native

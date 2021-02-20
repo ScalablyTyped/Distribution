@@ -1,6 +1,7 @@
 package typings.angularCommon.httpHttpMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @publicApi
   */
 @js.native
-trait HttpParamsOptions extends js.Object {
+trait HttpParamsOptions extends StObject {
   
   /** Encoding codec used to parse and serialize the parameters. */
   var encoder: js.UndefOr[HttpParameterCodec] = js.native
@@ -34,36 +35,24 @@ object HttpParamsOptions {
   }
   
   @scala.inline
-  implicit class HttpParamsOptionsOps[Self <: HttpParamsOptions] (val x: Self) extends AnyVal {
+  implicit class HttpParamsOptionsMutableBuilder[Self <: HttpParamsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoder(value: HttpParameterCodec): Self = StObject.set(x, "encoder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncoderUndefined: Self = StObject.set(x, "encoder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromObject(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "fromObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoder(value: HttpParameterCodec): Self = this.set("encoder", value.asInstanceOf[js.Any])
+    def setFromObjectUndefined: Self = StObject.set(x, "fromObject", js.undefined)
     
     @scala.inline
-    def deleteEncoder: Self = this.set("encoder", js.undefined)
+    def setFromString(value: String): Self = StObject.set(x, "fromString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromObject(value: StringDictionary[String | js.Array[String]]): Self = this.set("fromObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromObject: Self = this.set("fromObject", js.undefined)
-    
-    @scala.inline
-    def setFromString(value: String): Self = this.set("fromString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromString: Self = this.set("fromString", js.undefined)
+    def setFromStringUndefined: Self = StObject.set(x, "fromString", js.undefined)
   }
 }

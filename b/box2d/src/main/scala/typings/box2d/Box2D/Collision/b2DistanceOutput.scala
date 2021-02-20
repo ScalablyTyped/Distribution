@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Collision
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2DistanceOutput extends js.Object {
+trait b2DistanceOutput extends StObject {
   
   /**
     *  Calculated distance.
@@ -37,30 +38,18 @@ object b2DistanceOutput {
   }
   
   @scala.inline
-  implicit class b2DistanceOutputOps[Self <: b2DistanceOutput] (val x: Self) extends AnyVal {
+  implicit class b2DistanceOutputMutableBuilder[Self <: b2DistanceOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPointA(value: b2Vec2): Self = StObject.set(x, "pointA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointA(value: b2Vec2): Self = this.set("pointA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointB(value: b2Vec2): Self = this.set("pointB", value.asInstanceOf[js.Any])
+    def setPointB(value: b2Vec2): Self = StObject.set(x, "pointB", value.asInstanceOf[js.Any])
   }
 }

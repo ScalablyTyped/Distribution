@@ -4,14 +4,14 @@ import typings.postcss.mod.Root_
 import typings.std.Record
 import typings.stylableCore.typesMod.IStylableClassNameOptimizer
 import typings.stylableOptimizer.anon.Names
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@stylable/optimizer/cjs/classname-optimizer", JSImport.Namespace)
-@js.native
-object classnameOptimizerMod extends js.Object {
+object classnameOptimizerMod {
   
+  @JSImport("@stylable/optimizer/cjs/classname-optimizer", "StylableClassNameOptimizer")
   @js.native
   class StylableClassNameOptimizer () extends IStylableClassNameOptimizer {
     

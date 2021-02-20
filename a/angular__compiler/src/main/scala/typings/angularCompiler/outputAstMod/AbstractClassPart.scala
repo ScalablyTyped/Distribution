@@ -1,12 +1,13 @@
 package typings.angularCompiler.outputAstMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "AbstractClassPart")
 @js.native
-class AbstractClassPart () extends js.Object {
+class AbstractClassPart () extends StObject {
   def this(`type`: Type) = this()
   def this(`type`: js.UndefOr[scala.Nothing], modifiers: js.Array[StmtModifier]) = this()
   def this(`type`: Null, modifiers: js.Array[StmtModifier]) = this()

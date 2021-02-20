@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesScanInputMod.ScanInput
 import typings.awsSdkClientDynamodbBrowser.typesScanOutputMod.ScanOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/ScanCommand", JSImport.Namespace)
-@js.native
-object scanCommandMod extends js.Object {
+object scanCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/ScanCommand", "ScanCommand")
   @js.native
   class ScanCommand protected () extends Command[InputTypesUnion, ScanInput, OutputTypesUnion, ScanOutput, DynamoDBResolvedConfiguration] {
     def this(input: ScanInput) = this()

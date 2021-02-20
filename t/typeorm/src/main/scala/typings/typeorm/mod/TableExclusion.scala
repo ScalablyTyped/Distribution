@@ -2,6 +2,7 @@ package typings.typeorm.mod
 
 import typings.typeorm.metadataExclusionMetadataMod.ExclusionMetadata
 import typings.typeorm.optionsTableExclusionOptionsMod.TableExclusionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,12 @@ class TableExclusion protected ()
   def this(options: TableExclusionOptions) = this()
 }
 /* static members */
-@JSImport("typeorm", "TableExclusion")
-@js.native
-object TableExclusion extends js.Object {
+object TableExclusion {
   
   /**
     * Creates exclusions from the exclusion metadata object.
     */
+  @JSImport("typeorm", "TableExclusion.create")
+  @js.native
   def create(exclusionMetadata: ExclusionMetadata): typings.typeorm.tableTableExclusionMod.TableExclusion = js.native
 }

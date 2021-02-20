@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateDocumentVisibilityList extends js.Object {
+trait TemplateDocumentVisibilityList extends StObject {
   
   /**
     * An array of `documentVisibility` objects that specifies which documents are visible to which recipients.
@@ -25,33 +26,21 @@ object TemplateDocumentVisibilityList {
   }
   
   @scala.inline
-  implicit class TemplateDocumentVisibilityListOps[Self <: TemplateDocumentVisibilityList] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocumentVisibilityVarargs(
-      value: (/* This object configures a recipient's read/write access to a document. */ DocumentVisibility)*
-    ): Self = this.set("documentVisibility", js.Array(value :_*))
+  implicit class TemplateDocumentVisibilityListMutableBuilder[Self <: TemplateDocumentVisibilityList] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDocumentVisibility(
       value: js.Array[
           /* This object configures a recipient's read/write access to a document. */ DocumentVisibility
         ]
-    ): Self = this.set("documentVisibility", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "documentVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentVisibility: Self = this.set("documentVisibility", js.undefined)
+    def setDocumentVisibilityUndefined: Self = StObject.set(x, "documentVisibility", js.undefined)
+    
+    @scala.inline
+    def setDocumentVisibilityVarargs(
+      value: (/* This object configures a recipient's read/write access to a document. */ DocumentVisibility)*
+    ): Self = StObject.set(x, "documentVisibility", js.Array(value :_*))
   }
 }

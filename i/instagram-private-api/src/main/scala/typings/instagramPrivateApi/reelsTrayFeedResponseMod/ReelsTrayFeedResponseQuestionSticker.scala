@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReelsTrayFeedResponseQuestionSticker extends js.Object {
+trait ReelsTrayFeedResponseQuestionSticker extends StObject {
   
   var background_color: String = js.native
   
@@ -41,42 +42,30 @@ object ReelsTrayFeedResponseQuestionSticker {
   }
   
   @scala.inline
-  implicit class ReelsTrayFeedResponseQuestionStickerOps[Self <: ReelsTrayFeedResponseQuestionSticker] (val x: Self) extends AnyVal {
+  implicit class ReelsTrayFeedResponseQuestionStickerMutableBuilder[Self <: ReelsTrayFeedResponseQuestionSticker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground_color(value: String): Self = this.set("background_color", value.asInstanceOf[js.Any])
+    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_id(value: String): Self = this.set("media_id", value.asInstanceOf[js.Any])
+    def setQuestion_id(value: String): Self = StObject.set(x, "question_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
+    def setQuestion_type(value: String): Self = StObject.set(x, "question_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestion(value: String): Self = this.set("question", value.asInstanceOf[js.Any])
+    def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestion_id(value: String): Self = this.set("question_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuestion_type(value: String): Self = this.set("question_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText_color(value: String): Self = this.set("text_color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewer_can_interact(value: Boolean): Self = this.set("viewer_can_interact", value.asInstanceOf[js.Any])
+    def setViewer_can_interact(value: Boolean): Self = StObject.set(x, "viewer_can_interact", value.asInstanceOf[js.Any])
   }
 }

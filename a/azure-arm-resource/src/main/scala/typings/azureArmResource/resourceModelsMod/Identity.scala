@@ -1,12 +1,13 @@
 package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Identity extends js.Object {
+trait Identity extends StObject {
   
   /**
     * The principal ID of resource identity.
@@ -40,42 +41,30 @@ object Identity {
   }
   
   @scala.inline
-  implicit class IdentityOps[Self <: Identity] (val x: Self) extends AnyVal {
+  implicit class IdentityMutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalId(value: String): Self = this.set("principalId", value.asInstanceOf[js.Any])
+    def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
     @scala.inline
-    def deletePrincipalId: Self = this.set("principalId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTenantId(value: String): Self = this.set("tenantId", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTenantId: Self = this.set("tenantId", js.undefined)
+    def setUserAssignedIdentities(value: StringDictionary[IdentityUserAssignedIdentitiesValue]): Self = StObject.set(x, "userAssignedIdentities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUserAssignedIdentities(value: StringDictionary[IdentityUserAssignedIdentitiesValue]): Self = this.set("userAssignedIdentities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAssignedIdentities: Self = this.set("userAssignedIdentities", js.undefined)
+    def setUserAssignedIdentitiesUndefined: Self = StObject.set(x, "userAssignedIdentities", js.undefined)
   }
 }

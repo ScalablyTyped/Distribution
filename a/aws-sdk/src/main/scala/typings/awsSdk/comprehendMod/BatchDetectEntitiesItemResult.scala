@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDetectEntitiesItemResult extends js.Object {
+trait BatchDetectEntitiesItemResult extends StObject {
   
   /**
     * One or more Entity objects, one for each entity detected in the document.
@@ -26,33 +27,21 @@ object BatchDetectEntitiesItemResult {
   }
   
   @scala.inline
-  implicit class BatchDetectEntitiesItemResultOps[Self <: BatchDetectEntitiesItemResult] (val x: Self) extends AnyVal {
+  implicit class BatchDetectEntitiesItemResultMutableBuilder[Self <: BatchDetectEntitiesItemResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: ListOfEntities): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesUndefined: Self = StObject.set(x, "Entities", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
     
     @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = this.set("Entities", js.Array(value :_*))
+    def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: ListOfEntities): Self = this.set("Entities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntities: Self = this.set("Entities", js.undefined)
-    
-    @scala.inline
-    def setIndex(value: Integer): Self = this.set("Index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndex: Self = this.set("Index", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
   }
 }

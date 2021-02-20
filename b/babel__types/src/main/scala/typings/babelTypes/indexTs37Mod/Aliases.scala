@@ -1,11 +1,12 @@
 package typings.babelTypes.indexTs37Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Aliases extends js.Object {
+trait Aliases extends StObject {
   
   var Binary: typings.babelTypes.indexTs37Mod.Binary = js.native
   
@@ -152,153 +153,141 @@ object Aliases {
   }
   
   @scala.inline
-  implicit class AliasesOps[Self <: Aliases] (val x: Self) extends AnyVal {
+  implicit class AliasesMutableBuilder[Self <: Aliases] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinary(value: Binary): Self = StObject.set(x, "Binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlock(value: Block): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockParent(value: BlockParent): Self = StObject.set(x, "BlockParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: Binary): Self = this.set("Binary", value.asInstanceOf[js.Any])
+    def setClass(value: Class): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlock(value: Block): Self = this.set("Block", value.asInstanceOf[js.Any])
+    def setCompletionStatement(value: CompletionStatement): Self = StObject.set(x, "CompletionStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockParent(value: BlockParent): Self = this.set("BlockParent", value.asInstanceOf[js.Any])
+    def setConditional(value: Conditional): Self = StObject.set(x, "Conditional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: Class): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setDeclaration(value: Declaration): Self = StObject.set(x, "Declaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionStatement(value: CompletionStatement): Self = this.set("CompletionStatement", value.asInstanceOf[js.Any])
+    def setEnumBody(value: EnumBody): Self = StObject.set(x, "EnumBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditional(value: Conditional): Self = this.set("Conditional", value.asInstanceOf[js.Any])
+    def setEnumMember(value: EnumMember): Self = StObject.set(x, "EnumMember", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclaration(value: Declaration): Self = this.set("Declaration", value.asInstanceOf[js.Any])
+    def setExportDeclaration(value: ExportDeclaration): Self = StObject.set(x, "ExportDeclaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumBody(value: EnumBody): Self = this.set("EnumBody", value.asInstanceOf[js.Any])
+    def setExpression(value: Expression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumMember(value: EnumMember): Self = this.set("EnumMember", value.asInstanceOf[js.Any])
+    def setExpressionWrapper(value: ExpressionWrapper): Self = StObject.set(x, "ExpressionWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportDeclaration(value: ExportDeclaration): Self = this.set("ExportDeclaration", value.asInstanceOf[js.Any])
+    def setFlow(value: Flow): Self = StObject.set(x, "Flow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpression(value: Expression): Self = this.set("Expression", value.asInstanceOf[js.Any])
+    def setFlowBaseAnnotation(value: FlowBaseAnnotation): Self = StObject.set(x, "FlowBaseAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionWrapper(value: ExpressionWrapper): Self = this.set("ExpressionWrapper", value.asInstanceOf[js.Any])
+    def setFlowDeclaration(value: FlowDeclaration): Self = StObject.set(x, "FlowDeclaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlow(value: Flow): Self = this.set("Flow", value.asInstanceOf[js.Any])
+    def setFlowPredicate(value: FlowPredicate): Self = StObject.set(x, "FlowPredicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowBaseAnnotation(value: FlowBaseAnnotation): Self = this.set("FlowBaseAnnotation", value.asInstanceOf[js.Any])
+    def setFlowType(value: FlowType): Self = StObject.set(x, "FlowType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowDeclaration(value: FlowDeclaration): Self = this.set("FlowDeclaration", value.asInstanceOf[js.Any])
+    def setFor(value: For): Self = StObject.set(x, "For", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowPredicate(value: FlowPredicate): Self = this.set("FlowPredicate", value.asInstanceOf[js.Any])
+    def setForXStatement(value: ForXStatement): Self = StObject.set(x, "ForXStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowType(value: FlowType): Self = this.set("FlowType", value.asInstanceOf[js.Any])
+    def setFunction(value: Function): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFor(value: For): Self = this.set("For", value.asInstanceOf[js.Any])
+    def setFunctionParent(value: FunctionParent): Self = StObject.set(x, "FunctionParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForXStatement(value: ForXStatement): Self = this.set("ForXStatement", value.asInstanceOf[js.Any])
+    def setImmutable(value: Immutable): Self = StObject.set(x, "Immutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: Function): Self = this.set("Function", value.asInstanceOf[js.Any])
+    def setJSX(value: JSX): Self = StObject.set(x, "JSX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionParent(value: FunctionParent): Self = this.set("FunctionParent", value.asInstanceOf[js.Any])
+    def setLVal(value: LVal): Self = StObject.set(x, "LVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImmutable(value: Immutable): Self = this.set("Immutable", value.asInstanceOf[js.Any])
+    def setLiteral(value: Literal): Self = StObject.set(x, "Literal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJSX(value: JSX): Self = this.set("JSX", value.asInstanceOf[js.Any])
+    def setLoop(value: Loop): Self = StObject.set(x, "Loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLVal(value: LVal): Self = this.set("LVal", value.asInstanceOf[js.Any])
+    def setMethod(value: Method): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiteral(value: Literal): Self = this.set("Literal", value.asInstanceOf[js.Any])
+    def setModuleDeclaration(value: ModuleDeclaration): Self = StObject.set(x, "ModuleDeclaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Loop): Self = this.set("Loop", value.asInstanceOf[js.Any])
+    def setModuleSpecifier(value: ModuleSpecifier): Self = StObject.set(x, "ModuleSpecifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: Method): Self = this.set("Method", value.asInstanceOf[js.Any])
+    def setObjectMember(value: ObjectMember): Self = StObject.set(x, "ObjectMember", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleDeclaration(value: ModuleDeclaration): Self = this.set("ModuleDeclaration", value.asInstanceOf[js.Any])
+    def setPattern(value: Pattern): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleSpecifier(value: ModuleSpecifier): Self = this.set("ModuleSpecifier", value.asInstanceOf[js.Any])
+    def setPatternLike(value: PatternLike): Self = StObject.set(x, "PatternLike", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectMember(value: ObjectMember): Self = this.set("ObjectMember", value.asInstanceOf[js.Any])
+    def setPrivate(value: Private): Self = StObject.set(x, "Private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: Pattern): Self = this.set("Pattern", value.asInstanceOf[js.Any])
+    def setProperty(value: Property): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatternLike(value: PatternLike): Self = this.set("PatternLike", value.asInstanceOf[js.Any])
+    def setPureish(value: Pureish): Self = StObject.set(x, "Pureish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivate(value: Private): Self = this.set("Private", value.asInstanceOf[js.Any])
+    def setScopable(value: Scopable): Self = StObject.set(x, "Scopable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: Property): Self = this.set("Property", value.asInstanceOf[js.Any])
+    def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPureish(value: Pureish): Self = this.set("Pureish", value.asInstanceOf[js.Any])
+    def setTSBaseType(value: TSBaseType): Self = StObject.set(x, "TSBaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopable(value: Scopable): Self = this.set("Scopable", value.asInstanceOf[js.Any])
+    def setTSEntityName(value: TSEntityName): Self = StObject.set(x, "TSEntityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatement(value: Statement): Self = this.set("Statement", value.asInstanceOf[js.Any])
+    def setTSType(value: TSType): Self = StObject.set(x, "TSType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTSBaseType(value: TSBaseType): Self = this.set("TSBaseType", value.asInstanceOf[js.Any])
+    def setTSTypeElement(value: TSTypeElement): Self = StObject.set(x, "TSTypeElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTSEntityName(value: TSEntityName): Self = this.set("TSEntityName", value.asInstanceOf[js.Any])
+    def setTerminatorless(value: Terminatorless): Self = StObject.set(x, "Terminatorless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTSType(value: TSType): Self = this.set("TSType", value.asInstanceOf[js.Any])
+    def setUnaryLike(value: UnaryLike): Self = StObject.set(x, "UnaryLike", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTSTypeElement(value: TSTypeElement): Self = this.set("TSTypeElement", value.asInstanceOf[js.Any])
+    def setUserWhitespacable(value: UserWhitespacable): Self = StObject.set(x, "UserWhitespacable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerminatorless(value: Terminatorless): Self = this.set("Terminatorless", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnaryLike(value: UnaryLike): Self = this.set("UnaryLike", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserWhitespacable(value: UserWhitespacable): Self = this.set("UserWhitespacable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhile(value: While): Self = this.set("While", value.asInstanceOf[js.Any])
+    def setWhile(value: While): Self = StObject.set(x, "While", value.asInstanceOf[js.Any])
   }
 }

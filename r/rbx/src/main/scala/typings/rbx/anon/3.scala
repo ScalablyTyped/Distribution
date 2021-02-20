@@ -4,12 +4,13 @@ import typings.rbx.rbxStrings.centered
 import typings.rbx.rbxStrings.justified
 import typings.rbx.rbxStrings.left
 import typings.rbx.rbxStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `3` extends js.Object {
+trait `3` extends StObject {
   
   var only: js.UndefOr[Boolean] = js.native
   
@@ -24,27 +25,15 @@ object `3` {
   }
   
   @scala.inline
-  implicit class `3Ops`[Self <: `3`] (val x: Self) extends AnyVal {
+  implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValue(value: centered | justified | left | right): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnly(value: Boolean): Self = this.set("only", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnly: Self = this.set("only", js.undefined)
+    def setValue(value: centered | justified | left | right): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

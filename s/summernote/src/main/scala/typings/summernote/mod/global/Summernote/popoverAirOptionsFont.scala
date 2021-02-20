@@ -1,5 +1,6 @@
 package typings.summernote.mod.global.Summernote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.summernote.summernoteStrings.underline
   - typings.summernote.summernoteStrings.clear
 */
-trait popoverAirOptionsFont extends js.Object
+trait popoverAirOptionsFont extends StObject
 object popoverAirOptionsFont {
   
   @scala.inline

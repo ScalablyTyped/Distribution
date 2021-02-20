@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * an account already has a role in the matter, it will be overwritten.
   */
 @js.native
-trait SchemaAddMatterPermissionsRequest extends js.Object {
+trait SchemaAddMatterPermissionsRequest extends StObject {
   
   /**
     * Only relevant if send_emails is true. True to CC requestor in the email
@@ -37,36 +38,24 @@ object SchemaAddMatterPermissionsRequest {
   }
   
   @scala.inline
-  implicit class SchemaAddMatterPermissionsRequestOps[Self <: SchemaAddMatterPermissionsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAddMatterPermissionsRequestMutableBuilder[Self <: SchemaAddMatterPermissionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCcMe(value: Boolean): Self = StObject.set(x, "ccMe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCcMeUndefined: Self = StObject.set(x, "ccMe", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatterPermission(value: SchemaMatterPermission): Self = StObject.set(x, "matterPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcMe(value: Boolean): Self = this.set("ccMe", value.asInstanceOf[js.Any])
+    def setMatterPermissionUndefined: Self = StObject.set(x, "matterPermission", js.undefined)
     
     @scala.inline
-    def deleteCcMe: Self = this.set("ccMe", js.undefined)
+    def setSendEmails(value: Boolean): Self = StObject.set(x, "sendEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatterPermission(value: SchemaMatterPermission): Self = this.set("matterPermission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatterPermission: Self = this.set("matterPermission", js.undefined)
-    
-    @scala.inline
-    def setSendEmails(value: Boolean): Self = this.set("sendEmails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendEmails: Self = this.set("sendEmails", js.undefined)
+    def setSendEmailsUndefined: Self = StObject.set(x, "sendEmails", js.undefined)
   }
 }

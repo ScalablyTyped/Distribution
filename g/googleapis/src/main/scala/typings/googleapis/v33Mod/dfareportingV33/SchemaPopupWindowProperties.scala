@@ -1,5 +1,6 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Popup Window Properties.
   */
 @js.native
-trait SchemaPopupWindowProperties extends js.Object {
+trait SchemaPopupWindowProperties extends StObject {
   
   /**
     * Popup dimension for a creative. This is a read-only field. Applicable to
@@ -66,72 +67,60 @@ object SchemaPopupWindowProperties {
   }
   
   @scala.inline
-  implicit class SchemaPopupWindowPropertiesOps[Self <: SchemaPopupWindowProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaPopupWindowPropertiesMutableBuilder[Self <: SchemaPopupWindowProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimension(value: SchemaSize): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffset(value: SchemaOffsetPosition): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimension(value: SchemaSize): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteDimension: Self = this.set("dimension", js.undefined)
+    def setPositionType(value: String): Self = StObject.set(x, "positionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: SchemaOffsetPosition): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPositionTypeUndefined: Self = StObject.set(x, "positionType", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setShowAddressBar(value: Boolean): Self = StObject.set(x, "showAddressBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionType(value: String): Self = this.set("positionType", value.asInstanceOf[js.Any])
+    def setShowAddressBarUndefined: Self = StObject.set(x, "showAddressBar", js.undefined)
     
     @scala.inline
-    def deletePositionType: Self = this.set("positionType", js.undefined)
+    def setShowMenuBar(value: Boolean): Self = StObject.set(x, "showMenuBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAddressBar(value: Boolean): Self = this.set("showAddressBar", value.asInstanceOf[js.Any])
+    def setShowMenuBarUndefined: Self = StObject.set(x, "showMenuBar", js.undefined)
     
     @scala.inline
-    def deleteShowAddressBar: Self = this.set("showAddressBar", js.undefined)
+    def setShowScrollBar(value: Boolean): Self = StObject.set(x, "showScrollBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMenuBar(value: Boolean): Self = this.set("showMenuBar", value.asInstanceOf[js.Any])
+    def setShowScrollBarUndefined: Self = StObject.set(x, "showScrollBar", js.undefined)
     
     @scala.inline
-    def deleteShowMenuBar: Self = this.set("showMenuBar", js.undefined)
+    def setShowStatusBar(value: Boolean): Self = StObject.set(x, "showStatusBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowScrollBar(value: Boolean): Self = this.set("showScrollBar", value.asInstanceOf[js.Any])
+    def setShowStatusBarUndefined: Self = StObject.set(x, "showStatusBar", js.undefined)
     
     @scala.inline
-    def deleteShowScrollBar: Self = this.set("showScrollBar", js.undefined)
+    def setShowToolBar(value: Boolean): Self = StObject.set(x, "showToolBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowStatusBar(value: Boolean): Self = this.set("showStatusBar", value.asInstanceOf[js.Any])
+    def setShowToolBarUndefined: Self = StObject.set(x, "showToolBar", js.undefined)
     
     @scala.inline
-    def deleteShowStatusBar: Self = this.set("showStatusBar", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowToolBar(value: Boolean): Self = this.set("showToolBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowToolBar: Self = this.set("showToolBar", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

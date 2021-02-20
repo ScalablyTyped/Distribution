@@ -5,12 +5,13 @@ import typings.fancybox.fancyboxStrings.ajax
 import typings.fancybox.fancyboxStrings.html
 import typings.fancybox.fancyboxStrings.iframe
 import typings.fancybox.fancyboxStrings.image
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyBoxGroupItem extends js.Object {
+trait FancyBoxGroupItem extends StObject {
   
   var opts: js.UndefOr[FancyBoxOptions] = js.native
   
@@ -27,33 +28,21 @@ object FancyBoxGroupItem {
   }
   
   @scala.inline
-  implicit class FancyBoxGroupItemOps[Self <: FancyBoxGroupItem] (val x: Self) extends AnyVal {
+  implicit class FancyBoxGroupItemMutableBuilder[Self <: FancyBoxGroupItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpts(value: FancyBoxOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setType(value: image | `inline` | ajax | iframe | html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpts(value: FancyBoxOptions): Self = this.set("opts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpts: Self = this.set("opts", js.undefined)
-    
-    @scala.inline
-    def setType(value: image | `inline` | ajax | iframe | html): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

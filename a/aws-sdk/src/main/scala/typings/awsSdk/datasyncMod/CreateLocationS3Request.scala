@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLocationS3Request extends js.Object {
+trait CreateLocationS3Request extends StObject {
   
   /**
     * If you are using DataSync on an AWS Outpost, specify the Amazon Resource Names (ARNs) of the DataSync agents deployed on your Outpost. For more information about launching a DataSync agent on an AWS Outpost, see outposts-agent.
@@ -43,54 +44,42 @@ object CreateLocationS3Request {
   }
   
   @scala.inline
-  implicit class CreateLocationS3RequestOps[Self <: CreateLocationS3Request] (val x: Self) extends AnyVal {
+  implicit class CreateLocationS3RequestMutableBuilder[Self <: CreateLocationS3Request] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
     
     @scala.inline
-    def setS3BucketArn(value: S3BucketArn): Self = this.set("S3BucketArn", value.asInstanceOf[js.Any])
+    def setS3BucketArn(value: S3BucketArn): Self = StObject.set(x, "S3BucketArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Config(value: S3Config): Self = this.set("S3Config", value.asInstanceOf[js.Any])
+    def setS3Config(value: S3Config): Self = StObject.set(x, "S3Config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentArnsVarargs(value: AgentArn*): Self = this.set("AgentArns", js.Array(value :_*))
+    def setS3StorageClass(value: S3StorageClass): Self = StObject.set(x, "S3StorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentArns(value: AgentArnList): Self = this.set("AgentArns", value.asInstanceOf[js.Any])
+    def setS3StorageClassUndefined: Self = StObject.set(x, "S3StorageClass", js.undefined)
     
     @scala.inline
-    def deleteAgentArns: Self = this.set("AgentArns", js.undefined)
+    def setSubdirectory(value: S3Subdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3StorageClass(value: S3StorageClass): Self = this.set("S3StorageClass", value.asInstanceOf[js.Any])
+    def setSubdirectoryUndefined: Self = StObject.set(x, "Subdirectory", js.undefined)
     
     @scala.inline
-    def deleteS3StorageClass: Self = this.set("S3StorageClass", js.undefined)
+    def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubdirectory(value: S3Subdirectory): Self = this.set("Subdirectory", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSubdirectory: Self = this.set("Subdirectory", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: TagListEntry*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: InputTagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

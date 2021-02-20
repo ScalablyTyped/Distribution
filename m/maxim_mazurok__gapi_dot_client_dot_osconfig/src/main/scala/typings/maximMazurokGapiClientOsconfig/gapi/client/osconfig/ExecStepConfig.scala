@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecStepConfig extends js.Object {
+trait ExecStepConfig extends StObject {
   
   /** Defaults to [0]. A list of possible return values that the execution can return to indicate a success. */
   var allowedSuccessCodes: js.UndefOr[js.Array[Double]] = js.native
@@ -31,45 +32,33 @@ object ExecStepConfig {
   }
   
   @scala.inline
-  implicit class ExecStepConfigOps[Self <: ExecStepConfig] (val x: Self) extends AnyVal {
+  implicit class ExecStepConfigMutableBuilder[Self <: ExecStepConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedSuccessCodes(value: js.Array[Double]): Self = StObject.set(x, "allowedSuccessCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedSuccessCodesUndefined: Self = StObject.set(x, "allowedSuccessCodes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedSuccessCodesVarargs(value: Double*): Self = StObject.set(x, "allowedSuccessCodes", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedSuccessCodesVarargs(value: Double*): Self = this.set("allowedSuccessCodes", js.Array(value :_*))
+    def setGcsObject(value: GcsObject): Self = StObject.set(x, "gcsObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedSuccessCodes(value: js.Array[Double]): Self = this.set("allowedSuccessCodes", value.asInstanceOf[js.Any])
+    def setGcsObjectUndefined: Self = StObject.set(x, "gcsObject", js.undefined)
     
     @scala.inline
-    def deleteAllowedSuccessCodes: Self = this.set("allowedSuccessCodes", js.undefined)
+    def setInterpreter(value: String): Self = StObject.set(x, "interpreter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsObject(value: GcsObject): Self = this.set("gcsObject", value.asInstanceOf[js.Any])
+    def setInterpreterUndefined: Self = StObject.set(x, "interpreter", js.undefined)
     
     @scala.inline
-    def deleteGcsObject: Self = this.set("gcsObject", js.undefined)
+    def setLocalPath(value: String): Self = StObject.set(x, "localPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpreter(value: String): Self = this.set("interpreter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterpreter: Self = this.set("interpreter", js.undefined)
-    
-    @scala.inline
-    def setLocalPath(value: String): Self = this.set("localPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalPath: Self = this.set("localPath", js.undefined)
+    def setLocalPathUndefined: Self = StObject.set(x, "localPath", js.undefined)
   }
 }

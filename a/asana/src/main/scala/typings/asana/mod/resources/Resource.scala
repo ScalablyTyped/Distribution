@@ -1,6 +1,6 @@
 package typings.asana.mod.resources
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   */
 @js.native
-trait Resource extends js.Object {
+trait Resource extends StObject {
   
   /**
     * Dispatches a DELETE request to the API. The expected response is an
@@ -106,6 +106,3 @@ trait Resource extends js.Object {
   
   var name: String = js.native
 }
-@JSImport("asana", "resources.Resource")
-@js.native
-object Resource extends TopLevel[ResourceStatic]

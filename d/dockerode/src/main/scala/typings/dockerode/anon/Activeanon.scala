@@ -1,11 +1,12 @@
 package typings.dockerode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Activeanon extends js.Object {
+trait Activeanon extends StObject {
   
   var active_anon: Double = js.native
   
@@ -104,105 +105,93 @@ object Activeanon {
   }
   
   @scala.inline
-  implicit class ActiveanonOps[Self <: Activeanon] (val x: Self) extends AnyVal {
+  implicit class ActiveanonMutableBuilder[Self <: Activeanon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive_anon(value: Double): Self = StObject.set(x, "active_anon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActive_file(value: Double): Self = StObject.set(x, "active_file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCache(value: Double): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive_anon(value: Double): Self = this.set("active_anon", value.asInstanceOf[js.Any])
+    def setHierarchical_memory_limit(value: Double): Self = StObject.set(x, "hierarchical_memory_limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive_file(value: Double): Self = this.set("active_file", value.asInstanceOf[js.Any])
+    def setInactive_anon(value: Double): Self = StObject.set(x, "inactive_anon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: Double): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setInactive_file(value: Double): Self = StObject.set(x, "inactive_file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchical_memory_limit(value: Double): Self = this.set("hierarchical_memory_limit", value.asInstanceOf[js.Any])
+    def setMapped_file(value: Double): Self = StObject.set(x, "mapped_file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactive_anon(value: Double): Self = this.set("inactive_anon", value.asInstanceOf[js.Any])
+    def setPgfault(value: Double): Self = StObject.set(x, "pgfault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactive_file(value: Double): Self = this.set("inactive_file", value.asInstanceOf[js.Any])
+    def setPgmajfault(value: Double): Self = StObject.set(x, "pgmajfault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapped_file(value: Double): Self = this.set("mapped_file", value.asInstanceOf[js.Any])
+    def setPgpgin(value: Double): Self = StObject.set(x, "pgpgin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPgfault(value: Double): Self = this.set("pgfault", value.asInstanceOf[js.Any])
+    def setPgpgout(value: Double): Self = StObject.set(x, "pgpgout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPgmajfault(value: Double): Self = this.set("pgmajfault", value.asInstanceOf[js.Any])
+    def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPgpgin(value: Double): Self = this.set("pgpgin", value.asInstanceOf[js.Any])
+    def setRss_huge(value: Double): Self = StObject.set(x, "rss_huge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPgpgout(value: Double): Self = this.set("pgpgout", value.asInstanceOf[js.Any])
+    def setTotal_active_anon(value: Double): Self = StObject.set(x, "total_active_anon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRss(value: Double): Self = this.set("rss", value.asInstanceOf[js.Any])
+    def setTotal_active_file(value: Double): Self = StObject.set(x, "total_active_file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRss_huge(value: Double): Self = this.set("rss_huge", value.asInstanceOf[js.Any])
+    def setTotal_cache(value: Double): Self = StObject.set(x, "total_cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_active_anon(value: Double): Self = this.set("total_active_anon", value.asInstanceOf[js.Any])
+    def setTotal_inactive_anon(value: Double): Self = StObject.set(x, "total_inactive_anon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_active_file(value: Double): Self = this.set("total_active_file", value.asInstanceOf[js.Any])
+    def setTotal_inactive_file(value: Double): Self = StObject.set(x, "total_inactive_file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_cache(value: Double): Self = this.set("total_cache", value.asInstanceOf[js.Any])
+    def setTotal_mapped_file(value: Double): Self = StObject.set(x, "total_mapped_file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_inactive_anon(value: Double): Self = this.set("total_inactive_anon", value.asInstanceOf[js.Any])
+    def setTotal_pgfault(value: Double): Self = StObject.set(x, "total_pgfault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_inactive_file(value: Double): Self = this.set("total_inactive_file", value.asInstanceOf[js.Any])
+    def setTotal_pgmajfault(value: Double): Self = StObject.set(x, "total_pgmajfault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_mapped_file(value: Double): Self = this.set("total_mapped_file", value.asInstanceOf[js.Any])
+    def setTotal_pgpgin(value: Double): Self = StObject.set(x, "total_pgpgin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_pgfault(value: Double): Self = this.set("total_pgfault", value.asInstanceOf[js.Any])
+    def setTotal_pgpgout(value: Double): Self = StObject.set(x, "total_pgpgout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_pgmajfault(value: Double): Self = this.set("total_pgmajfault", value.asInstanceOf[js.Any])
+    def setTotal_rss(value: Double): Self = StObject.set(x, "total_rss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_pgpgin(value: Double): Self = this.set("total_pgpgin", value.asInstanceOf[js.Any])
+    def setTotal_rss_huge(value: Double): Self = StObject.set(x, "total_rss_huge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_pgpgout(value: Double): Self = this.set("total_pgpgout", value.asInstanceOf[js.Any])
+    def setTotal_unevictable(value: Double): Self = StObject.set(x, "total_unevictable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_rss(value: Double): Self = this.set("total_rss", value.asInstanceOf[js.Any])
+    def setTotal_writeback(value: Double): Self = StObject.set(x, "total_writeback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_rss_huge(value: Double): Self = this.set("total_rss_huge", value.asInstanceOf[js.Any])
+    def setUnevictable(value: Double): Self = StObject.set(x, "unevictable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_unevictable(value: Double): Self = this.set("total_unevictable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_writeback(value: Double): Self = this.set("total_writeback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnevictable(value: Double): Self = this.set("unevictable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWriteback(value: Double): Self = this.set("writeback", value.asInstanceOf[js.Any])
+    def setWriteback(value: Double): Self = StObject.set(x, "writeback", value.asInstanceOf[js.Any])
   }
 }

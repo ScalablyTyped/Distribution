@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.anon.P
 import typings.three.bufferGeometryMod.BufferGeometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/TorusKnotBufferGeometry", JSImport.Namespace)
-@js.native
-object torusKnotBufferGeometryMod extends js.Object {
+object torusKnotBufferGeometryMod {
   
+  @JSImport("three/src/geometries/TorusKnotBufferGeometry", "TorusKnotBufferGeometry")
   @js.native
   class TorusKnotBufferGeometry protected () extends BufferGeometry {
     /**

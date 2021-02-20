@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPullRequestsOutput extends js.Object {
+trait ListPullRequestsOutput extends StObject {
   
   /**
     * An enumeration token that allows the operation to batch the next results of the operation.
@@ -26,30 +27,18 @@ object ListPullRequestsOutput {
   }
   
   @scala.inline
-  implicit class ListPullRequestsOutputOps[Self <: ListPullRequestsOutput] (val x: Self) extends AnyVal {
+  implicit class ListPullRequestsOutputMutableBuilder[Self <: ListPullRequestsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPullRequestIds(value: PullRequestIdList): Self = StObject.set(x, "pullRequestIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequestIdsVarargs(value: PullRequestId*): Self = this.set("pullRequestIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setPullRequestIds(value: PullRequestIdList): Self = this.set("pullRequestIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setPullRequestIdsVarargs(value: PullRequestId*): Self = StObject.set(x, "pullRequestIds", js.Array(value :_*))
   }
 }

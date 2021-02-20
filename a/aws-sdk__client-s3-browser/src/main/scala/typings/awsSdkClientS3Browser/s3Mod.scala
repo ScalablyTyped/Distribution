@@ -1,6 +1,7 @@
 package typings.awsSdkClientS3Browser
 
 import typings.awsSdkClientS3Browser.s3ClientMod.S3Client
+import typings.awsSdkClientS3Browser.s3ConfigurationMod.S3Configuration
 import typings.awsSdkClientS3Browser.typesAbortMultipartUploadInputMod.AbortMultipartUploadInput
 import typings.awsSdkClientS3Browser.typesAbortMultipartUploadOutputMod.AbortMultipartUploadOutput
 import typings.awsSdkClientS3Browser.typesCompleteMultipartUploadInputMod.CompleteMultipartUploadInput
@@ -158,16 +159,17 @@ import typings.awsSdkClientS3Browser.typesUploadPartCopyOutputMod.UploadPartCopy
 import typings.awsSdkClientS3Browser.typesUploadPartInputMod.UploadPartInput
 import typings.awsSdkClientS3Browser.typesUploadPartOutputMod.UploadPartOutput
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/S3", JSImport.Namespace)
-@js.native
-object s3Mod extends js.Object {
+object s3Mod {
   
+  @JSImport("@aws-sdk/client-s3-browser/S3", "S3")
   @js.native
-  class S3 () extends S3Client {
+  class S3 protected () extends S3Client {
+    def this(configuration: S3Configuration) = this()
     
     /**
       * <p>Aborts a multipart upload.</p> <p>To verify that all parts have been removed, so you don't get charged for the part storage, you should call the List Parts operation and ensure the parts list is empty.</p>

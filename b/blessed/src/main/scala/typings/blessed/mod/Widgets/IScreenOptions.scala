@@ -6,6 +6,7 @@ import typings.blessed.mod.Widgets.Types.TPosition
 import typings.blessed.mod.Widgets.Types.TTopLeft
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -233,255 +234,243 @@ object IScreenOptions {
   }
   
   @scala.inline
-  implicit class IScreenOptionsOps[Self <: IScreenOptions] (val x: Self) extends AnyVal {
+  implicit class IScreenOptionsMutableBuilder[Self <: IScreenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbottom(value: TPosition): Self = StObject.set(x, "abottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbottomUndefined: Self = StObject.set(x, "abottom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAleft(value: TTopLeft): Self = StObject.set(x, "aleft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbottom(value: TPosition): Self = this.set("abottom", value.asInstanceOf[js.Any])
+    def setAleftUndefined: Self = StObject.set(x, "aleft", js.undefined)
     
     @scala.inline
-    def deleteAbottom: Self = this.set("abottom", js.undefined)
+    def setAright(value: TPosition): Self = StObject.set(x, "aright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAleft(value: TTopLeft): Self = this.set("aleft", value.asInstanceOf[js.Any])
+    def setArightUndefined: Self = StObject.set(x, "aright", js.undefined)
     
     @scala.inline
-    def deleteAleft: Self = this.set("aleft", js.undefined)
+    def setAtop(value: TTopLeft): Self = StObject.set(x, "atop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAright(value: TPosition): Self = this.set("aright", value.asInstanceOf[js.Any])
+    def setAtopUndefined: Self = StObject.set(x, "atop", js.undefined)
     
     @scala.inline
-    def deleteAright: Self = this.set("aright", js.undefined)
+    def setAutoPadding(value: Boolean): Self = StObject.set(x, "autoPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtop(value: TTopLeft): Self = this.set("atop", value.asInstanceOf[js.Any])
+    def setAutoPaddingUndefined: Self = StObject.set(x, "autoPadding", js.undefined)
     
     @scala.inline
-    def deleteAtop: Self = this.set("atop", js.undefined)
+    def setBottom(value: TPosition): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPadding(value: Boolean): Self = this.set("autoPadding", value.asInstanceOf[js.Any])
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def deleteAutoPadding: Self = this.set("autoPadding", js.undefined)
+    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: TPosition): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setCursor(value: TCursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteCols: Self = this.set("cols", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: TCursor): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setDockBorders(value: Boolean): Self = StObject.set(x, "dockBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setDockBordersUndefined: Self = StObject.set(x, "dockBorders", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setDump(value: String | Boolean): Self = StObject.set(x, "dump", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockBorders(value: Boolean): Self = this.set("dockBorders", value.asInstanceOf[js.Any])
+    def setDumpUndefined: Self = StObject.set(x, "dump", js.undefined)
     
     @scala.inline
-    def deleteDockBorders: Self = this.set("dockBorders", js.undefined)
+    def setFastCSR(value: Boolean): Self = StObject.set(x, "fastCSR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDump(value: String | Boolean): Self = this.set("dump", value.asInstanceOf[js.Any])
+    def setFastCSRUndefined: Self = StObject.set(x, "fastCSR", js.undefined)
     
     @scala.inline
-    def deleteDump: Self = this.set("dump", js.undefined)
+    def setFocused(value: BlessedElement): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastCSR(value: Boolean): Self = this.set("fastCSR", value.asInstanceOf[js.Any])
+    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
     @scala.inline
-    def deleteFastCSR: Self = this.set("fastCSR", js.undefined)
+    def setForceUnicode(value: Boolean): Self = StObject.set(x, "forceUnicode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: BlessedElement): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setForceUnicodeUndefined: Self = StObject.set(x, "forceUnicode", js.undefined)
     
     @scala.inline
-    def deleteFocused: Self = this.set("focused", js.undefined)
+    def setFullUnicode(value: Boolean): Self = StObject.set(x, "fullUnicode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceUnicode(value: Boolean): Self = this.set("forceUnicode", value.asInstanceOf[js.Any])
+    def setFullUnicodeUndefined: Self = StObject.set(x, "fullUnicode", js.undefined)
     
     @scala.inline
-    def deleteForceUnicode: Self = this.set("forceUnicode", js.undefined)
+    def setGrabKeys(value: Boolean): Self = StObject.set(x, "grabKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullUnicode(value: Boolean): Self = this.set("fullUnicode", value.asInstanceOf[js.Any])
+    def setGrabKeysUndefined: Self = StObject.set(x, "grabKeys", js.undefined)
     
     @scala.inline
-    def deleteFullUnicode: Self = this.set("fullUnicode", js.undefined)
+    def setHeight(value: TPosition): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrabKeys(value: Boolean): Self = this.set("grabKeys", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGrabKeys: Self = this.set("grabKeys", js.undefined)
+    def setHover(value: js.Any): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: TPosition): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setIgnoreDockContrast(value: Boolean): Self = StObject.set(x, "ignoreDockContrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: js.Any): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setIgnoreDockContrastUndefined: Self = StObject.set(x, "ignoreDockContrast", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setIgnoreLocked(value: js.Array[String]): Self = StObject.set(x, "ignoreLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreDockContrast(value: Boolean): Self = this.set("ignoreDockContrast", value.asInstanceOf[js.Any])
+    def setIgnoreLockedUndefined: Self = StObject.set(x, "ignoreLocked", js.undefined)
     
     @scala.inline
-    def deleteIgnoreDockContrast: Self = this.set("ignoreDockContrast", js.undefined)
+    def setIgnoreLockedVarargs(value: String*): Self = StObject.set(x, "ignoreLocked", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoreLockedVarargs(value: String*): Self = this.set("ignoreLocked", js.Array(value :_*))
+    def setInput(value: Writable): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreLocked(value: js.Array[String]): Self = this.set("ignoreLocked", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteIgnoreLocked: Self = this.set("ignoreLocked", js.undefined)
+    def setLeft(value: TTopLeft): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: Writable): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setLockKeys(value: Boolean): Self = StObject.set(x, "lockKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: TTopLeft): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setLockKeysUndefined: Self = StObject.set(x, "lockKeys", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockKeys(value: Boolean): Self = this.set("lockKeys", value.asInstanceOf[js.Any])
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def deleteLockKeys: Self = this.set("lockKeys", js.undefined)
+    def setOutput(value: Readable): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: String): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setProgram(value: BlessedProgram): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: Readable): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
     
     @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
+    def setResizeTimeout(value: Double): Self = StObject.set(x, "resizeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgram(value: BlessedProgram): Self = this.set("program", value.asInstanceOf[js.Any])
+    def setResizeTimeoutUndefined: Self = StObject.set(x, "resizeTimeout", js.undefined)
     
     @scala.inline
-    def deleteProgram: Self = this.set("program", js.undefined)
+    def setRight(value: TPosition): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeTimeout(value: Double): Self = this.set("resizeTimeout", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteResizeTimeout: Self = this.set("resizeTimeout", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: TPosition): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setSendFocus(value: Boolean): Self = StObject.set(x, "sendFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setSendFocusUndefined: Self = StObject.set(x, "sendFocus", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setSmartCSR(value: Boolean): Self = StObject.set(x, "smartCSR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendFocus(value: Boolean): Self = this.set("sendFocus", value.asInstanceOf[js.Any])
+    def setSmartCSRUndefined: Self = StObject.set(x, "smartCSR", js.undefined)
     
     @scala.inline
-    def deleteSendFocus: Self = this.set("sendFocus", js.undefined)
+    def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmartCSR(value: Boolean): Self = this.set("smartCSR", value.asInstanceOf[js.Any])
+    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
     
     @scala.inline
-    def deleteSmartCSR: Self = this.set("smartCSR", js.undefined)
+    def setTerminal(value: String): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabSize(value: Double): Self = this.set("tabSize", value.asInstanceOf[js.Any])
+    def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
     
     @scala.inline
-    def deleteTabSize: Self = this.set("tabSize", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerminal(value: String): Self = this.set("terminal", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTerminal: Self = this.set("terminal", js.undefined)
+    def setTop(value: TTopLeft): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTput(value: Tput): Self = StObject.set(x, "tput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: TTopLeft): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setTputUndefined: Self = StObject.set(x, "tput", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setUseBCE(value: Boolean): Self = StObject.set(x, "useBCE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTput(value: Tput): Self = this.set("tput", value.asInstanceOf[js.Any])
+    def setUseBCEUndefined: Self = StObject.set(x, "useBCE", js.undefined)
     
     @scala.inline
-    def deleteTput: Self = this.set("tput", js.undefined)
+    def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseBCE(value: Boolean): Self = this.set("useBCE", value.asInstanceOf[js.Any])
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
     @scala.inline
-    def deleteUseBCE: Self = this.set("useBCE", js.undefined)
+    def setWidth(value: TPosition): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarnings(value: Boolean): Self = this.set("warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: TPosition): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

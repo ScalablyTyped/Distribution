@@ -1,5 +1,6 @@
 package typings.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object DraggableControlProps {
   }
   
   @scala.inline
-  implicit class DraggableControlPropsOps[Self <: DraggableControlProps] (val x: Self) extends AnyVal {
+  implicit class DraggableControlPropsMutableBuilder[Self <: DraggableControlProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnDrag(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setOnDragEnd(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
     @scala.inline
-    def setOnDrag(value: /* event */ DragEvent => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    def setOnDragStart(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     @scala.inline
-    def setOnDragEnd(value: /* event */ DragEvent => Unit): Self = this.set("onDragEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
-    
-    @scala.inline
-    def setOnDragStart(value: /* event */ DragEvent => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.popmotion
 
 import typings.popmotion.libTypesMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion/lib/utils/is-point-3d", JSImport.Namespace)
-@js.native
-object isPoint3dMod extends js.Object {
+object isPoint3dMod {
   
+  @JSImport("popmotion/lib/utils/is-point-3d", "isPoint3D")
+  @js.native
   def isPoint3D(point: Point): /* is popmotion.popmotion/lib/types.Point3D */ Boolean = js.native
 }

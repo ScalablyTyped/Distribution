@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkItemTypeModel extends js.Object {
+trait WorkItemTypeModel extends StObject {
   
   /**
     * Behaviors of the work item type
@@ -90,60 +91,48 @@ object WorkItemTypeModel {
   }
   
   @scala.inline
-  implicit class WorkItemTypeModelOps[Self <: WorkItemTypeModel] (val x: Self) extends AnyVal {
+  implicit class WorkItemTypeModelMutableBuilder[Self <: WorkItemTypeModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehaviors(value: js.Array[WorkItemTypeBehavior]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehaviorsVarargs(value: WorkItemTypeBehavior*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClass(value: WorkItemTypeClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviorsVarargs(value: WorkItemTypeBehavior*): Self = this.set("behaviors", js.Array(value :_*))
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviors(value: js.Array[WorkItemTypeBehavior]): Self = this.set("behaviors", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: WorkItemTypeClass): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setInherits(value: String): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLayout(value: FormLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInherits(value: String): Self = this.set("inherits", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDisabled(value: Boolean): Self = this.set("isDisabled", value.asInstanceOf[js.Any])
+    def setStates(value: js.Array[WorkItemStateResultModel]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: FormLayout): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setStatesVarargs(value: WorkItemStateResultModel*): Self = StObject.set(x, "states", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatesVarargs(value: WorkItemStateResultModel*): Self = this.set("states", js.Array(value :_*))
-    
-    @scala.inline
-    def setStates(value: js.Array[WorkItemStateResultModel]): Self = this.set("states", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFScheduledJobType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IScheduledJob extends js.Object {
+trait IScheduledJob extends StObject {
   
   val BackupVaultJob: IBackupJob = js.native
   
@@ -60,60 +61,48 @@ object IScheduledJob {
   }
   
   @scala.inline
-  implicit class IScheduledJobOps[Self <: IScheduledJob] (val x: Self) extends AnyVal {
+  implicit class IScheduledJobMutableBuilder[Self <: IScheduledJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupVaultJob(value: IBackupJob): Self = StObject.set(x, "BackupVaultJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportContentJob(value: IExportContentJob): Self = StObject.set(x, "ExportContentJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupVaultJob(value: IBackupJob): Self = this.set("BackupVaultJob", value.asInstanceOf[js.Any])
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setImportContentJob(value: IImportContentJob): Self = StObject.set(x, "ImportContentJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportContentJob(value: IExportContentJob): Self = this.set("ExportContentJob", value.asInstanceOf[js.Any])
+    def setJobName(value: String): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setJobType(value: MFScheduledJobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportContentJob(value: IImportContentJob): Self = this.set("ImportContentJob", value.asInstanceOf[js.Any])
+    def setOptimizeVaultJob(value: IOptimizeVaultJob): Self = StObject.set(x, "OptimizeVaultJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: String): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setSetBackupVaultJob(value: IBackupJob => Unit): Self = StObject.set(x, "SetBackupVaultJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJobType(value: MFScheduledJobType): Self = this.set("JobType", value.asInstanceOf[js.Any])
+    def setSetExportContentJob(value: IExportContentJob => Unit): Self = StObject.set(x, "SetExportContentJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOptimizeVaultJob(value: IOptimizeVaultJob): Self = this.set("OptimizeVaultJob", value.asInstanceOf[js.Any])
+    def setSetImportContentJob(value: IImportContentJob => Unit): Self = StObject.set(x, "SetImportContentJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBackupVaultJob(value: IBackupJob => Unit): Self = this.set("SetBackupVaultJob", js.Any.fromFunction1(value))
+    def setSetOptimizeVaultJob(value: IOptimizeVaultJob => Unit): Self = StObject.set(x, "SetOptimizeVaultJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetExportContentJob(value: IExportContentJob => Unit): Self = this.set("SetExportContentJob", js.Any.fromFunction1(value))
+    def setTemporary(value: Boolean): Self = StObject.set(x, "Temporary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetImportContentJob(value: IImportContentJob => Unit): Self = this.set("SetImportContentJob", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOptimizeVaultJob(value: IOptimizeVaultJob => Unit): Self = this.set("SetOptimizeVaultJob", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTemporary(value: Boolean): Self = this.set("Temporary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggers(value: IScheduledJobTriggers): Self = this.set("Triggers", value.asInstanceOf[js.Any])
+    def setTriggers(value: IScheduledJobTriggers): Self = StObject.set(x, "Triggers", value.asInstanceOf[js.Any])
   }
 }

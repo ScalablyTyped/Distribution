@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,42 +48,30 @@ object ParamsResourceControllerDebuggeesBreakpointsList {
   }
   
   @scala.inline
-  implicit class ParamsResourceControllerDebuggeesBreakpointsListOps[Self <: ParamsResourceControllerDebuggeesBreakpointsList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceControllerDebuggeesBreakpointsListMutableBuilder[Self <: ParamsResourceControllerDebuggeesBreakpointsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebuggeeId(value: String): Self = StObject.set(x, "debuggeeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setDebuggeeIdUndefined: Self = StObject.set(x, "debuggeeId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setSuccessOnTimeout(value: Boolean): Self = StObject.set(x, "successOnTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebuggeeId(value: String): Self = this.set("debuggeeId", value.asInstanceOf[js.Any])
+    def setSuccessOnTimeoutUndefined: Self = StObject.set(x, "successOnTimeout", js.undefined)
     
     @scala.inline
-    def deleteDebuggeeId: Self = this.set("debuggeeId", js.undefined)
+    def setWaitToken(value: String): Self = StObject.set(x, "waitToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessOnTimeout(value: Boolean): Self = this.set("successOnTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessOnTimeout: Self = this.set("successOnTimeout", js.undefined)
-    
-    @scala.inline
-    def setWaitToken(value: String): Self = this.set("waitToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitToken: Self = this.set("waitToken", js.undefined)
+    def setWaitTokenUndefined: Self = StObject.set(x, "waitToken", js.undefined)
   }
 }

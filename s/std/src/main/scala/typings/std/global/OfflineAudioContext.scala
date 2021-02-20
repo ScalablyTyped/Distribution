@@ -1,12 +1,12 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable3
 import typings.std.OfflineAudioContextOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("OfflineAudioContext")
 @js.native
 class OfflineAudioContext protected ()
@@ -14,13 +14,3 @@ class OfflineAudioContext protected ()
   def this(contextOptions: OfflineAudioContextOptions) = this()
   def this(numberOfChannels: Double, length: Double, sampleRate: Double) = this()
 }
-@JSGlobal("OfflineAudioContext")
-@js.native
-object OfflineAudioContext
-  extends Instantiable1[/* contextOptions */ OfflineAudioContextOptions, typings.std.OfflineAudioContext]
-     with Instantiable3[
-      /* numberOfChannels */ Double, 
-      /* length */ Double, 
-      /* sampleRate */ Double, 
-      typings.std.OfflineAudioContext
-    ]

@@ -1,12 +1,13 @@
 package typings.sarif.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Invocation extends js.Object {
+trait Invocation extends StObject {
   
   /**
     * The account that ran the analysis tool.
@@ -150,189 +151,177 @@ object Invocation {
   }
   
   @scala.inline
-  implicit class InvocationOps[Self <: Invocation] (val x: Self) extends AnyVal {
+  implicit class InvocationMutableBuilder[Self <: Invocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionSuccessful(value: Boolean): Self = this.set("executionSuccessful", value.asInstanceOf[js.Any])
+    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
     @scala.inline
-    def setAccount(value: String): Self = this.set("account", value.asInstanceOf[js.Any])
+    def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
     @scala.inline
-    def deleteAccount: Self = this.set("account", js.undefined)
+    def setCommandLine(value: String): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentsVarargs(value: String*): Self = this.set("arguments", js.Array(value :_*))
+    def setCommandLineUndefined: Self = StObject.set(x, "commandLine", js.undefined)
     
     @scala.inline
-    def setArguments(value: js.Array[String]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setEndTimeUtc(value: String): Self = StObject.set(x, "endTimeUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArguments: Self = this.set("arguments", js.undefined)
+    def setEndTimeUtcUndefined: Self = StObject.set(x, "endTimeUtc", js.undefined)
     
     @scala.inline
-    def setCommandLine(value: String): Self = this.set("commandLine", value.asInstanceOf[js.Any])
+    def setEnvironmentVariables(value: StringDictionary[String]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommandLine: Self = this.set("commandLine", js.undefined)
+    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
     @scala.inline
-    def setEndTimeUtc(value: String): Self = this.set("endTimeUtc", value.asInstanceOf[js.Any])
+    def setExecutableLocation(value: ArtifactLocation): Self = StObject.set(x, "executableLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTimeUtc: Self = this.set("endTimeUtc", js.undefined)
+    def setExecutableLocationUndefined: Self = StObject.set(x, "executableLocation", js.undefined)
     
     @scala.inline
-    def setEnvironmentVariables(value: StringDictionary[String]): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    def setExecutionSuccessful(value: Boolean): Self = StObject.set(x, "executionSuccessful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutableLocation(value: ArtifactLocation): Self = this.set("executableLocation", value.asInstanceOf[js.Any])
+    def setExitCodeDescription(value: String): Self = StObject.set(x, "exitCodeDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutableLocation: Self = this.set("executableLocation", js.undefined)
+    def setExitCodeDescriptionUndefined: Self = StObject.set(x, "exitCodeDescription", js.undefined)
     
     @scala.inline
-    def setExitCode(value: Double): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
     @scala.inline
-    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    def setExitSignalName(value: String): Self = StObject.set(x, "exitSignalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitCodeDescription(value: String): Self = this.set("exitCodeDescription", value.asInstanceOf[js.Any])
+    def setExitSignalNameUndefined: Self = StObject.set(x, "exitSignalName", js.undefined)
     
     @scala.inline
-    def deleteExitCodeDescription: Self = this.set("exitCodeDescription", js.undefined)
+    def setExitSignalNumber(value: Double): Self = StObject.set(x, "exitSignalNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitSignalName(value: String): Self = this.set("exitSignalName", value.asInstanceOf[js.Any])
+    def setExitSignalNumberUndefined: Self = StObject.set(x, "exitSignalNumber", js.undefined)
     
     @scala.inline
-    def deleteExitSignalName: Self = this.set("exitSignalName", js.undefined)
+    def setMachine(value: String): Self = StObject.set(x, "machine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitSignalNumber(value: Double): Self = this.set("exitSignalNumber", value.asInstanceOf[js.Any])
+    def setMachineUndefined: Self = StObject.set(x, "machine", js.undefined)
     
     @scala.inline
-    def deleteExitSignalNumber: Self = this.set("exitSignalNumber", js.undefined)
+    def setNotificationConfigurationOverrides(value: js.Array[ConfigurationOverride]): Self = StObject.set(x, "notificationConfigurationOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMachine(value: String): Self = this.set("machine", value.asInstanceOf[js.Any])
+    def setNotificationConfigurationOverridesUndefined: Self = StObject.set(x, "notificationConfigurationOverrides", js.undefined)
     
     @scala.inline
-    def deleteMachine: Self = this.set("machine", js.undefined)
+    def setNotificationConfigurationOverridesVarargs(value: ConfigurationOverride*): Self = StObject.set(x, "notificationConfigurationOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setNotificationConfigurationOverridesVarargs(value: ConfigurationOverride*): Self = this.set("notificationConfigurationOverrides", js.Array(value :_*))
+    def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationConfigurationOverrides(value: js.Array[ConfigurationOverride]): Self = this.set("notificationConfigurationOverrides", value.asInstanceOf[js.Any])
+    def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
     
     @scala.inline
-    def deleteNotificationConfigurationOverrides: Self = this.set("notificationConfigurationOverrides", js.undefined)
+    def setProcessStartFailureMessage(value: String): Self = StObject.set(x, "processStartFailureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessId(value: Double): Self = this.set("processId", value.asInstanceOf[js.Any])
+    def setProcessStartFailureMessageUndefined: Self = StObject.set(x, "processStartFailureMessage", js.undefined)
     
     @scala.inline
-    def deleteProcessId: Self = this.set("processId", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessStartFailureMessage(value: String): Self = this.set("processStartFailureMessage", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteProcessStartFailureMessage: Self = this.set("processStartFailureMessage", js.undefined)
+    def setResponseFiles(value: js.Array[ArtifactLocation]): Self = StObject.set(x, "responseFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setResponseFilesUndefined: Self = StObject.set(x, "responseFiles", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setResponseFilesVarargs(value: ArtifactLocation*): Self = StObject.set(x, "responseFiles", js.Array(value :_*))
     
     @scala.inline
-    def setResponseFilesVarargs(value: ArtifactLocation*): Self = this.set("responseFiles", js.Array(value :_*))
+    def setRuleConfigurationOverrides(value: js.Array[ConfigurationOverride]): Self = StObject.set(x, "ruleConfigurationOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseFiles(value: js.Array[ArtifactLocation]): Self = this.set("responseFiles", value.asInstanceOf[js.Any])
+    def setRuleConfigurationOverridesUndefined: Self = StObject.set(x, "ruleConfigurationOverrides", js.undefined)
     
     @scala.inline
-    def deleteResponseFiles: Self = this.set("responseFiles", js.undefined)
+    def setRuleConfigurationOverridesVarargs(value: ConfigurationOverride*): Self = StObject.set(x, "ruleConfigurationOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setRuleConfigurationOverridesVarargs(value: ConfigurationOverride*): Self = this.set("ruleConfigurationOverrides", js.Array(value :_*))
+    def setStartTimeUtc(value: String): Self = StObject.set(x, "startTimeUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleConfigurationOverrides(value: js.Array[ConfigurationOverride]): Self = this.set("ruleConfigurationOverrides", value.asInstanceOf[js.Any])
+    def setStartTimeUtcUndefined: Self = StObject.set(x, "startTimeUtc", js.undefined)
     
     @scala.inline
-    def deleteRuleConfigurationOverrides: Self = this.set("ruleConfigurationOverrides", js.undefined)
+    def setStderr(value: ArtifactLocation): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimeUtc(value: String): Self = this.set("startTimeUtc", value.asInstanceOf[js.Any])
+    def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     
     @scala.inline
-    def deleteStartTimeUtc: Self = this.set("startTimeUtc", js.undefined)
+    def setStdin(value: ArtifactLocation): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStderr(value: ArtifactLocation): Self = this.set("stderr", value.asInstanceOf[js.Any])
+    def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     
     @scala.inline
-    def deleteStderr: Self = this.set("stderr", js.undefined)
+    def setStdout(value: ArtifactLocation): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdin(value: ArtifactLocation): Self = this.set("stdin", value.asInstanceOf[js.Any])
+    def setStdoutStderr(value: ArtifactLocation): Self = StObject.set(x, "stdoutStderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStdin: Self = this.set("stdin", js.undefined)
+    def setStdoutStderrUndefined: Self = StObject.set(x, "stdoutStderr", js.undefined)
     
     @scala.inline
-    def setStdout(value: ArtifactLocation): Self = this.set("stdout", value.asInstanceOf[js.Any])
+    def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     
     @scala.inline
-    def deleteStdout: Self = this.set("stdout", js.undefined)
+    def setToolConfigurationNotifications(value: js.Array[Notification]): Self = StObject.set(x, "toolConfigurationNotifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdoutStderr(value: ArtifactLocation): Self = this.set("stdoutStderr", value.asInstanceOf[js.Any])
+    def setToolConfigurationNotificationsUndefined: Self = StObject.set(x, "toolConfigurationNotifications", js.undefined)
     
     @scala.inline
-    def deleteStdoutStderr: Self = this.set("stdoutStderr", js.undefined)
+    def setToolConfigurationNotificationsVarargs(value: Notification*): Self = StObject.set(x, "toolConfigurationNotifications", js.Array(value :_*))
     
     @scala.inline
-    def setToolConfigurationNotificationsVarargs(value: Notification*): Self = this.set("toolConfigurationNotifications", js.Array(value :_*))
+    def setToolExecutionNotifications(value: js.Array[Notification]): Self = StObject.set(x, "toolExecutionNotifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolConfigurationNotifications(value: js.Array[Notification]): Self = this.set("toolConfigurationNotifications", value.asInstanceOf[js.Any])
+    def setToolExecutionNotificationsUndefined: Self = StObject.set(x, "toolExecutionNotifications", js.undefined)
     
     @scala.inline
-    def deleteToolConfigurationNotifications: Self = this.set("toolConfigurationNotifications", js.undefined)
+    def setToolExecutionNotificationsVarargs(value: Notification*): Self = StObject.set(x, "toolExecutionNotifications", js.Array(value :_*))
     
     @scala.inline
-    def setToolExecutionNotificationsVarargs(value: Notification*): Self = this.set("toolExecutionNotifications", js.Array(value :_*))
+    def setWorkingDirectory(value: ArtifactLocation): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolExecutionNotifications(value: js.Array[Notification]): Self = this.set("toolExecutionNotifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolExecutionNotifications: Self = this.set("toolExecutionNotifications", js.undefined)
-    
-    @scala.inline
-    def setWorkingDirectory(value: ArtifactLocation): Self = this.set("workingDirectory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkingDirectory: Self = this.set("workingDirectory", js.undefined)
+    def setWorkingDirectoryUndefined: Self = StObject.set(x, "workingDirectory", js.undefined)
   }
 }

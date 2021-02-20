@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateEventSubscriptionResult extends js.Object {
+trait CreateEventSubscriptionResult extends StObject {
   
   var EventSubscription: js.UndefOr[typings.awsSdk.redshiftMod.EventSubscription] = js.native
 }
@@ -18,24 +19,12 @@ object CreateEventSubscriptionResult {
   }
   
   @scala.inline
-  implicit class CreateEventSubscriptionResultOps[Self <: CreateEventSubscriptionResult] (val x: Self) extends AnyVal {
+  implicit class CreateEventSubscriptionResultMutableBuilder[Self <: CreateEventSubscriptionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventSubscription(value: EventSubscription): Self = StObject.set(x, "EventSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventSubscription(value: EventSubscription): Self = this.set("EventSubscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventSubscription: Self = this.set("EventSubscription", js.undefined)
+    def setEventSubscriptionUndefined: Self = StObject.set(x, "EventSubscription", js.undefined)
   }
 }

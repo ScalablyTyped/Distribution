@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MLUserDataEncryption extends js.Object {
+trait MLUserDataEncryption extends StObject {
   
   /**
     * The ID for the customer-provided KMS key.
@@ -26,27 +27,15 @@ object MLUserDataEncryption {
   }
   
   @scala.inline
-  implicit class MLUserDataEncryptionOps[Self <: MLUserDataEncryption] (val x: Self) extends AnyVal {
+  implicit class MLUserDataEncryptionMutableBuilder[Self <: MLUserDataEncryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKmsKeyId(value: NameString): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMlUserDataEncryptionMode(value: MLUserDataEncryptionModeString): Self = this.set("MlUserDataEncryptionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKmsKeyId(value: NameString): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setMlUserDataEncryptionMode(value: MLUserDataEncryptionModeString): Self = StObject.set(x, "MlUserDataEncryptionMode", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICommitToTeamServerBaseOptions extends js.Object {
+trait ICommitToTeamServerBaseOptions extends StObject {
   
   var commitMessage: String = js.native
   
@@ -22,30 +23,18 @@ object ICommitToTeamServerBaseOptions {
   }
   
   @scala.inline
-  implicit class ICommitToTeamServerBaseOptionsOps[Self <: ICommitToTeamServerBaseOptions] (val x: Self) extends AnyVal {
+  implicit class ICommitToTeamServerBaseOptionsMutableBuilder[Self <: ICommitToTeamServerBaseOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitMessage(value: String): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsWebModelerCommit(value: Boolean): Self = StObject.set(x, "isWebModelerCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsWebModelerCommitUndefined: Self = StObject.set(x, "isWebModelerCommit", js.undefined)
     
     @scala.inline
-    def setCommitMessage(value: String): Self = this.set("commitMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetBranch(value: String): Self = this.set("targetBranch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsWebModelerCommit(value: Boolean): Self = this.set("isWebModelerCommit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsWebModelerCommit: Self = this.set("isWebModelerCommit", js.undefined)
+    def setTargetBranch(value: String): Self = StObject.set(x, "targetBranch", value.asInstanceOf[js.Any])
   }
 }

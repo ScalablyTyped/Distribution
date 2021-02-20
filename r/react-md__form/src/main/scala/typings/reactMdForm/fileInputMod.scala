@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdForm.fileInputFileInputMod.FileInputProps
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/form/types/file-input", JSImport.Namespace)
-@js.native
-object fileInputMod extends js.Object {
+object fileInputMod {
   
+  @JSImport("@react-md/form/types/file-input", "FileInput")
+  @js.native
   val FileInput: ForwardRefExoticComponent[FileInputProps with RefAttributes[HTMLInputElement]] = js.native
 }

@@ -4,12 +4,13 @@ import typings.chromeApps.chromeAppsStrings.bulk_
 import typings.chromeApps.chromeAppsStrings.control_
 import typings.chromeApps.chromeAppsStrings.interrupt_
 import typings.chromeApps.chromeAppsStrings.isochronous_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BULK extends js.Object {
+trait BULK extends StObject {
   
   var BULK: bulk_ = js.native
   
@@ -28,30 +29,18 @@ object BULK {
   }
   
   @scala.inline
-  implicit class BULKOps[Self <: BULK] (val x: Self) extends AnyVal {
+  implicit class BULKMutableBuilder[Self <: BULK] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBULK(value: bulk_): Self = StObject.set(x, "BULK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCONTROL(value: control_): Self = StObject.set(x, "CONTROL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setINTERRUPT(value: interrupt_): Self = StObject.set(x, "INTERRUPT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBULK(value: bulk_): Self = this.set("BULK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCONTROL(value: control_): Self = this.set("CONTROL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setINTERRUPT(value: interrupt_): Self = this.set("INTERRUPT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setISOCHRONOUS(value: isochronous_): Self = this.set("ISOCHRONOUS", value.asInstanceOf[js.Any])
+    def setISOCHRONOUS(value: isochronous_): Self = StObject.set(x, "ISOCHRONOUS", value.asInstanceOf[js.Any])
   }
 }

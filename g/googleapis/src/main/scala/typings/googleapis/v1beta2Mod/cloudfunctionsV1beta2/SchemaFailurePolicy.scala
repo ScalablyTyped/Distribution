@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * then defaults to ignoring failures (i.e. not retrying them).
   */
 @js.native
-trait SchemaFailurePolicy extends js.Object {
+trait SchemaFailurePolicy extends StObject {
   
   /**
     * If specified, then the function will be retried in case of a failure.
@@ -25,24 +26,12 @@ object SchemaFailurePolicy {
   }
   
   @scala.inline
-  implicit class SchemaFailurePolicyOps[Self <: SchemaFailurePolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaFailurePolicyMutableBuilder[Self <: SchemaFailurePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRetry(value: SchemaRetry): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRetry(value: SchemaRetry): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.scriptableIos
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/drawcontext/#-new-drawcontext
   */
 @js.native
-trait DrawContext extends js.Object {
+trait DrawContext extends StObject {
   
   /**
     * _Adds a path to the context._
@@ -275,93 +276,81 @@ object DrawContext {
   }
   
   @scala.inline
-  implicit class DrawContextOps[Self <: DrawContext] (val x: Self) extends AnyVal {
+  implicit class DrawContextMutableBuilder[Self <: DrawContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPath(value: Path => Unit): Self = StObject.set(x, "addPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawImageAtPoint(value: (Image, Point) => Unit): Self = StObject.set(x, "drawImageAtPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawImageInRect(value: (Image, Rect) => Unit): Self = StObject.set(x, "drawImageInRect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddPath(value: Path => Unit): Self = this.set("addPath", js.Any.fromFunction1(value))
+    def setDrawText(value: (String, Point) => Unit): Self = StObject.set(x, "drawText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDrawImageAtPoint(value: (Image, Point) => Unit): Self = this.set("drawImageAtPoint", js.Any.fromFunction2(value))
+    def setDrawTextInRect(value: (String, Rect) => Unit): Self = StObject.set(x, "drawTextInRect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDrawImageInRect(value: (Image, Rect) => Unit): Self = this.set("drawImageInRect", js.Any.fromFunction2(value))
+    def setFill(value: Rect => Unit): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrawText(value: (String, Point) => Unit): Self = this.set("drawText", js.Any.fromFunction2(value))
+    def setFillEllipse(value: Rect => Unit): Self = StObject.set(x, "fillEllipse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrawTextInRect(value: (String, Rect) => Unit): Self = this.set("drawTextInRect", js.Any.fromFunction2(value))
+    def setFillPath(value: () => Unit): Self = StObject.set(x, "fillPath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFill(value: Rect => Unit): Self = this.set("fill", js.Any.fromFunction1(value))
+    def setFillRect(value: Rect => Unit): Self = StObject.set(x, "fillRect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFillEllipse(value: Rect => Unit): Self = this.set("fillEllipse", js.Any.fromFunction1(value))
+    def setGetImage(value: () => Image): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFillPath(value: () => Unit): Self = this.set("fillPath", js.Any.fromFunction0(value))
+    def setOpaque(value: Boolean): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillRect(value: Rect => Unit): Self = this.set("fillRect", js.Any.fromFunction1(value))
+    def setRespectScreenScale(value: Boolean): Self = StObject.set(x, "respectScreenScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetImage(value: () => Image): Self = this.set("getImage", js.Any.fromFunction0(value))
+    def setSetFillColor(value: Color => Unit): Self = StObject.set(x, "setFillColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpaque(value: Boolean): Self = this.set("opaque", value.asInstanceOf[js.Any])
+    def setSetFont(value: Font => Unit): Self = StObject.set(x, "setFont", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRespectScreenScale(value: Boolean): Self = this.set("respectScreenScale", value.asInstanceOf[js.Any])
+    def setSetLineWidth(value: Double => Unit): Self = StObject.set(x, "setLineWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFillColor(value: Color => Unit): Self = this.set("setFillColor", js.Any.fromFunction1(value))
+    def setSetStrokeColor(value: Color => Unit): Self = StObject.set(x, "setStrokeColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFont(value: Font => Unit): Self = this.set("setFont", js.Any.fromFunction1(value))
+    def setSetTextAlignedCenter(value: () => Unit): Self = StObject.set(x, "setTextAlignedCenter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetLineWidth(value: Double => Unit): Self = this.set("setLineWidth", js.Any.fromFunction1(value))
+    def setSetTextAlignedLeft(value: () => Unit): Self = StObject.set(x, "setTextAlignedLeft", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetStrokeColor(value: Color => Unit): Self = this.set("setStrokeColor", js.Any.fromFunction1(value))
+    def setSetTextAlignedRight(value: () => Unit): Self = StObject.set(x, "setTextAlignedRight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetTextAlignedCenter(value: () => Unit): Self = this.set("setTextAlignedCenter", js.Any.fromFunction0(value))
+    def setSetTextColor(value: Color => Unit): Self = StObject.set(x, "setTextColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTextAlignedLeft(value: () => Unit): Self = this.set("setTextAlignedLeft", js.Any.fromFunction0(value))
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTextAlignedRight(value: () => Unit): Self = this.set("setTextAlignedRight", js.Any.fromFunction0(value))
+    def setStroke(value: Rect => Unit): Self = StObject.set(x, "stroke", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTextColor(value: Color => Unit): Self = this.set("setTextColor", js.Any.fromFunction1(value))
+    def setStrokeEllipse(value: Rect => Unit): Self = StObject.set(x, "strokeEllipse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStrokePath(value: () => Unit): Self = StObject.set(x, "strokePath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStroke(value: Rect => Unit): Self = this.set("stroke", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStrokeEllipse(value: Rect => Unit): Self = this.set("strokeEllipse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStrokePath(value: () => Unit): Self = this.set("strokePath", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStrokeRect(value: Rect => Unit): Self = this.set("strokeRect", js.Any.fromFunction1(value))
+    def setStrokeRect(value: Rect => Unit): Self = StObject.set(x, "strokeRect", js.Any.fromFunction1(value))
   }
 }

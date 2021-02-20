@@ -4,12 +4,13 @@ import typings.std.HTMLElement
 import typings.std.XMLHttpRequest
 import typings.zepto.anon.Android
 import typings.zepto.anon.Chrome
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZeptoStatic extends js.Object {
+trait ZeptoStatic extends StObject {
   
   /**
     * @see ZeptoStatic();
@@ -110,7 +111,7 @@ trait ZeptoStatic extends js.Object {
     **/
   var browser: Chrome = js.native
   
-          // window and document tests break without this
+  // window and document tests break without this
   /**
     * Turn a dasherized string into “camel case”. Doesn’t affect already camel-cased strings.
     * @param str

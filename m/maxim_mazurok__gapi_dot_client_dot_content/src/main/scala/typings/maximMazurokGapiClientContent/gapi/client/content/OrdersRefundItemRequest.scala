@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrdersRefundItemRequest extends js.Object {
+trait OrdersRefundItemRequest extends StObject {
   
   /** The items that are refunded. Either Item or Shipping must be provided in the request. */
   var items: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryRefundItemItem]] = js.native
@@ -35,51 +36,39 @@ object OrdersRefundItemRequest {
   }
   
   @scala.inline
-  implicit class OrdersRefundItemRequestOps[Self <: OrdersRefundItemRequest] (val x: Self) extends AnyVal {
+  implicit class OrdersRefundItemRequestMutableBuilder[Self <: OrdersRefundItemRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[OrdersCustomBatchRequestEntryRefundItemItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: OrdersCustomBatchRequestEntryRefundItemItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: OrdersCustomBatchRequestEntryRefundItemItem*): Self = this.set("items", js.Array(value :_*))
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[OrdersCustomBatchRequestEntryRefundItemItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setShipping(value: OrdersCustomBatchRequestEntryRefundItemShipping): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonText(value: String): Self = this.set("reasonText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasonText: Self = this.set("reasonText", js.undefined)
-    
-    @scala.inline
-    def setShipping(value: OrdersCustomBatchRequestEntryRefundItemShipping): Self = this.set("shipping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipping: Self = this.set("shipping", js.undefined)
+    def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
   }
 }

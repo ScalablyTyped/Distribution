@@ -1,5 +1,6 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * User Defined Variable configuration.
   */
 @js.native
-trait SchemaUserDefinedVariableConfiguration extends js.Object {
+trait SchemaUserDefinedVariableConfiguration extends StObject {
   
   /**
     * Data type for the variable. This is a required field.
@@ -36,36 +37,24 @@ object SchemaUserDefinedVariableConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaUserDefinedVariableConfigurationOps[Self <: SchemaUserDefinedVariableConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaUserDefinedVariableConfigurationMutableBuilder[Self <: SchemaUserDefinedVariableConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportName(value: String): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setReportNameUndefined: Self = StObject.set(x, "reportName", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setVariableType(value: String): Self = StObject.set(x, "variableType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportName(value: String): Self = this.set("reportName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportName: Self = this.set("reportName", js.undefined)
-    
-    @scala.inline
-    def setVariableType(value: String): Self = this.set("variableType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariableType: Self = this.set("variableType", js.undefined)
+    def setVariableTypeUndefined: Self = StObject.set(x, "variableType", js.undefined)
   }
 }

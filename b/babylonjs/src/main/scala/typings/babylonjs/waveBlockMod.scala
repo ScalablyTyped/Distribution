@@ -1,16 +1,15 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/waveBlock", JSImport.Namespace)
-@js.native
-object waveBlockMod extends js.Object {
+object waveBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/waveBlock", "WaveBlock")
   @js.native
   class WaveBlock protected () extends NodeMaterialBlock {
     /**
@@ -36,9 +35,10 @@ object waveBlockMod extends js.Object {
   }
   
   @js.native
-  sealed trait WaveBlockKind extends js.Object
+  sealed trait WaveBlockKind extends StObject
+  @JSImport("babylonjs/Materials/Node/Blocks/waveBlock", "WaveBlockKind")
   @js.native
-  object WaveBlockKind extends js.Object {
+  object WaveBlockKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[WaveBlockKind with Double] = js.native
@@ -46,19 +46,16 @@ object waveBlockMod extends js.Object {
     /** SawTooth */
     @js.native
     sealed trait SawTooth extends WaveBlockKind
-    /* 0 */ @js.native
-    object SawTooth extends TopLevel[SawTooth with Double]
+    /* 0 */ val SawTooth: typings.babylonjs.waveBlockMod.WaveBlockKind.SawTooth with Double = js.native
     
     /** Square */
     @js.native
     sealed trait Square extends WaveBlockKind
-    /* 1 */ @js.native
-    object Square extends TopLevel[Square with Double]
+    /* 1 */ val Square: typings.babylonjs.waveBlockMod.WaveBlockKind.Square with Double = js.native
     
     /** Triangle */
     @js.native
     sealed trait Triangle extends WaveBlockKind
-    /* 2 */ @js.native
-    object Triangle extends TopLevel[Triangle with Double]
+    /* 2 */ val Triangle: typings.babylonjs.waveBlockMod.WaveBlockKind.Triangle with Double = js.native
   }
 }

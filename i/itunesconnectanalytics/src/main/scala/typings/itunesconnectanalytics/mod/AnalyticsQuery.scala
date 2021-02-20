@@ -1,12 +1,13 @@
 package typings.itunesconnectanalytics.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("itunesconnectanalytics", "AnalyticsQuery")
 @js.native
-class AnalyticsQuery protected () extends js.Object {
+class AnalyticsQuery protected () extends StObject {
   def this(`type`: String, appId: String, config: QueryConfig) = this()
   
   def date(start: QueryDateTypes, end: QueryDateTypes): AnalyticsQuery = js.native
@@ -16,11 +17,13 @@ class AnalyticsQuery protected () extends js.Object {
   def time(value: Double, unit: String): AnalyticsQuery = js.native
 }
 /* static members */
-@JSImport("itunesconnectanalytics", "AnalyticsQuery")
-@js.native
-object AnalyticsQuery extends js.Object {
+object AnalyticsQuery {
   
+  @JSImport("itunesconnectanalytics", "AnalyticsQuery.metrics")
+  @js.native
   def metrics(appId: String, config: QueryConfig): AnalyticsQuery = js.native
   
+  @JSImport("itunesconnectanalytics", "AnalyticsQuery.sources")
+  @js.native
   def sources(appId: String, config: QueryConfig): AnalyticsQuery = js.native
 }

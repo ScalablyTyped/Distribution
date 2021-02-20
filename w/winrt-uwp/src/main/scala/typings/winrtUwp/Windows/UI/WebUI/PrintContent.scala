@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.WebUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintContent extends js.Object
+sealed trait PrintContent extends StObject
 /** Specifies the content that HtmlPrintDocumentSource.content prints. */
 @JSGlobal("Windows.UI.WebUI.PrintContent")
 @js.native
-object PrintContent extends js.Object {
+object PrintContent extends StObject {
   
   /** Print all pages. */
   @js.native

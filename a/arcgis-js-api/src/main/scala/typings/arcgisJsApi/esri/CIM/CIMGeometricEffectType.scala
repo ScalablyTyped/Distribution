@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,160 +29,160 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisJsApi.esri.CIM.CIMGeometricEffectTaperedPolygon
   - typings.arcgisJsApi.esri.CIM.CIMGeometricEffectWave
 */
-trait CIMGeometricEffectType extends js.Object
+trait CIMGeometricEffectType extends StObject
 object CIMGeometricEffectType {
   
   @scala.inline
-  def CIMGeometricEffectOffsetHatch(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetHatch): CIMGeometricEffectType = {
+  def CIMGeometricEffectAddControlPoints(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectAddControlPoints): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectAddControlPoints = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectAddControlPoints]
   }
   
   @scala.inline
-  def CIMGeometricEffectReverse(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectReverse): CIMGeometricEffectType = {
+  def CIMGeometricEffectArrow(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectArrow): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectArrow = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectArrow]
   }
   
   @scala.inline
-  def CIMGeometricEffectTaperedPolygon(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectTaperedPolygon): CIMGeometricEffectType = {
+  def CIMGeometricEffectBuffer(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectBuffer): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectBuffer = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectBuffer]
   }
   
   @scala.inline
-  def CIMGeometricEffectMove(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectMove): CIMGeometricEffectType = {
+  def CIMGeometricEffectCut(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectCut): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectCut = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectCut]
   }
   
   @scala.inline
-  def CIMGeometricEffectBuffer(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectBuffer): CIMGeometricEffectType = {
+  def CIMGeometricEffectDashes(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDashes): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectDashes = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectDashes]
   }
   
   @scala.inline
-  def CIMGeometricEffectDonut(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDonut): CIMGeometricEffectType = {
+  def CIMGeometricEffectDonut(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDonut): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectDonut = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectDonut]
   }
   
   @scala.inline
-  def CIMGeometricEffectLocalizerFeather(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectLocalizerFeather): CIMGeometricEffectType = {
+  def CIMGeometricEffectEnclosingPolygon(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectEnclosingPolygon): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectEnclosingPolygon = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectEnclosingPolygon]
   }
   
   @scala.inline
-  def CIMGeometricEffectArrow(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectArrow): CIMGeometricEffectType = {
+  def CIMGeometricEffectExtension(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectExtension): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectExtension = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectExtension]
   }
   
   @scala.inline
-  def CIMGeometricEffectDashes(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDashes): CIMGeometricEffectType = {
+  def CIMGeometricEffectJog(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectJog): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectJog = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectJog]
   }
   
   @scala.inline
-  def CIMGeometricEffectScale(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectScale): CIMGeometricEffectType = {
+  def CIMGeometricEffectLocalizerFeather(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectLocalizerFeather): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectLocalizerFeather = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectLocalizerFeather]
   }
   
   @scala.inline
-  def CIMGeometricEffectRadial(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRadial): CIMGeometricEffectType = {
+  def CIMGeometricEffectMove(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectMove): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectMove = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectMove]
   }
   
   @scala.inline
-  def CIMGeometricEffectSuppress(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectSuppress): CIMGeometricEffectType = {
+  def CIMGeometricEffectOffset(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffset): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectOffset = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectOffset]
   }
   
   @scala.inline
-  def CIMGeometricEffectEnclosingPolygon(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectEnclosingPolygon): CIMGeometricEffectType = {
+  def CIMGeometricEffectOffsetHatch(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetHatch): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectOffsetHatch = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectOffsetHatch]
   }
   
   @scala.inline
-  def CIMGeometricEffectWave(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectWave): CIMGeometricEffectType = {
+  def CIMGeometricEffectOffsetTangent(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetTangent): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectOffsetTangent = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectOffsetTangent]
   }
   
   @scala.inline
-  def CIMGeometricEffectOffsetTangent(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetTangent): CIMGeometricEffectType = {
+  def CIMGeometricEffectRadial(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRadial): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectRadial = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectRadial]
   }
   
   @scala.inline
-  def CIMGeometricEffectCut(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectCut): CIMGeometricEffectType = {
+  def CIMGeometricEffectRegularPolygon(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRegularPolygon): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectRegularPolygon = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectRegularPolygon]
   }
   
   @scala.inline
-  def CIMGeometricEffectJog(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectJog): CIMGeometricEffectType = {
+  def CIMGeometricEffectReverse(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectReverse): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectReverse = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectReverse]
   }
   
   @scala.inline
-  def CIMGeometricEffectOffset(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffset): CIMGeometricEffectType = {
+  def CIMGeometricEffectRotate(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRotate): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectRotate = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectRotate]
   }
   
   @scala.inline
-  def CIMGeometricEffectAddControlPoints(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectAddControlPoints): CIMGeometricEffectType = {
+  def CIMGeometricEffectScale(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectScale): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectScale = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectScale]
   }
   
   @scala.inline
-  def CIMGeometricEffectExtension(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectExtension): CIMGeometricEffectType = {
+  def CIMGeometricEffectSuppress(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectSuppress): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectSuppress = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectSuppress]
   }
   
   @scala.inline
-  def CIMGeometricEffectRotate(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRotate): CIMGeometricEffectType = {
+  def CIMGeometricEffectTaperedPolygon(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectTaperedPolygon): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectTaperedPolygon = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectTaperedPolygon]
   }
   
   @scala.inline
-  def CIMGeometricEffectRegularPolygon(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRegularPolygon): CIMGeometricEffectType = {
+  def CIMGeometricEffectWave(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectWave): typings.arcgisJsApi.esri.CIM.CIMGeometricEffectWave = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CIMGeometricEffectType]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMGeometricEffectWave]
   }
 }

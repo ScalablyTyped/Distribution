@@ -4,19 +4,22 @@ import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.subscriptionItems.ISubscriptionItem
 import typings.stripe.mod.subscriptionItems.ISubscriptionItemCreationOptions
 import typings.stripe.mod.subscriptionItems.ISubscriptionItemDeleteOptions
 import typings.stripe.mod.subscriptionItems.ISubscriptionItemListOptions
 import typings.stripe.mod.subscriptionItems.ISubscriptionItemUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.SubscriptionItems")
 @js.native
-class SubscriptionItems () extends StripeResource {
+class SubscriptionItems protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def create(data: ISubscriptionItemCreationOptions): js.Promise[ISubscriptionItem] = js.native
   /**

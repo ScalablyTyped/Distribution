@@ -1,11 +1,12 @@
 package typings.summernote.mod.global.Summernote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodemirrorOptions extends js.Object {
+trait CodemirrorOptions extends StObject {
   
   var htmlNode: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object CodemirrorOptions {
   }
   
   @scala.inline
-  implicit class CodemirrorOptionsOps[Self <: CodemirrorOptions] (val x: Self) extends AnyVal {
+  implicit class CodemirrorOptionsMutableBuilder[Self <: CodemirrorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHtmlNode(value: Boolean): Self = StObject.set(x, "htmlNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHtmlNodeUndefined: Self = StObject.set(x, "htmlNode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineNumbers(value: Boolean): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlNode(value: Boolean): Self = this.set("htmlNode", value.asInstanceOf[js.Any])
+    def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
     
     @scala.inline
-    def deleteHtmlNode: Self = this.set("htmlNode", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumbers(value: Boolean): Self = this.set("lineNumbers", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteLineNumbers: Self = this.set("lineNumbers", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

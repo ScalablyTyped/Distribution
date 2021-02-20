@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyVersion extends js.Object {
+trait PolicyVersion extends StObject {
   
   /**
     * The date and time the policy was created.
@@ -31,36 +32,24 @@ object PolicyVersion {
   }
   
   @scala.inline
-  implicit class PolicyVersionOps[Self <: PolicyVersion] (val x: Self) extends AnyVal {
+  implicit class PolicyVersionMutableBuilder[Self <: PolicyVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDate(value: DateType): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDateUndefined: Self = StObject.set(x, "createDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDefaultVersion(value: IsDefaultVersion): Self = StObject.set(x, "isDefaultVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: DateType): Self = this.set("createDate", value.asInstanceOf[js.Any])
+    def setIsDefaultVersionUndefined: Self = StObject.set(x, "isDefaultVersion", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("createDate", js.undefined)
+    def setVersionId(value: PolicyVersionId): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefaultVersion(value: IsDefaultVersion): Self = this.set("isDefaultVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsDefaultVersion: Self = this.set("isDefaultVersion", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: PolicyVersionId): Self = this.set("versionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("versionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

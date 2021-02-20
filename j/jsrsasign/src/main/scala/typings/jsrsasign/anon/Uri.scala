@@ -1,12 +1,13 @@
 package typings.jsrsasign.anon
 
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Uri extends js.Object {
+trait Uri extends StObject {
   
   var array: js.UndefOr[js.Array[ASN1Object]] = js.native
   
@@ -21,33 +22,21 @@ object Uri {
   }
   
   @scala.inline
-  implicit class UriOps[Self <: Uri] (val x: Self) extends AnyVal {
+  implicit class UriMutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: js.Array[ASN1Object]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayVarargs(value: ASN1Object*): Self = StObject.set(x, "array", js.Array(value :_*))
     
     @scala.inline
-    def setArrayVarargs(value: ASN1Object*): Self = this.set("array", js.Array(value :_*))
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray(value: js.Array[ASN1Object]): Self = this.set("array", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

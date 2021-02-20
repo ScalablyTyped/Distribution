@@ -1,12 +1,13 @@
 package typings.ionicCliFramework.definitionsMod
 
 import typings.ionicCliFramework.ionicCliFrameworkBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationError extends js.Object {
+trait ValidationError extends StObject {
   
   var key: String = js.native
   

@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
 import typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a Wi-Fi Direct Service session request. */
 @js.native
-trait WiFiDirectServiceSessionRequest extends js.Object {
+trait WiFiDirectServiceSessionRequest extends StObject {
   
   /** Closes the session request. Your server code calls this method to reject a session request. */
   def close(): Unit = js.native
@@ -36,30 +37,18 @@ object WiFiDirectServiceSessionRequest {
   }
   
   @scala.inline
-  implicit class WiFiDirectServiceSessionRequestOps[Self <: WiFiDirectServiceSessionRequest] (val x: Self) extends AnyVal {
+  implicit class WiFiDirectServiceSessionRequestMutableBuilder[Self <: WiFiDirectServiceSessionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvisioningInfo(value: WiFiDirectServiceProvisioningInfo): Self = StObject.set(x, "provisioningInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDeviceInformation(value: DeviceInformation): Self = this.set("deviceInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvisioningInfo(value: WiFiDirectServiceProvisioningInfo): Self = this.set("provisioningInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionInfo(value: IBuffer): Self = this.set("sessionInfo", value.asInstanceOf[js.Any])
+    def setSessionInfo(value: IBuffer): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstalledExtensionState extends js.Object {
+trait InstalledExtensionState extends StObject {
   
   /**
     * States of an installed extension
@@ -36,30 +37,18 @@ object InstalledExtensionState {
   }
   
   @scala.inline
-  implicit class InstalledExtensionStateOps[Self <: InstalledExtensionState] (val x: Self) extends AnyVal {
+  implicit class InstalledExtensionStateMutableBuilder[Self <: InstalledExtensionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlags(value: ExtensionStateFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstallationIssues(value: js.Array[InstalledExtensionStateIssue]): Self = StObject.set(x, "installationIssues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstallationIssuesVarargs(value: InstalledExtensionStateIssue*): Self = StObject.set(x, "installationIssues", js.Array(value :_*))
     
     @scala.inline
-    def setFlags(value: ExtensionStateFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstallationIssuesVarargs(value: InstalledExtensionStateIssue*): Self = this.set("installationIssues", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstallationIssues(value: js.Array[InstalledExtensionStateIssue]): Self = this.set("installationIssues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastUpdated(value: Date): Self = this.set("lastUpdated", value.asInstanceOf[js.Any])
+    def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
   }
 }

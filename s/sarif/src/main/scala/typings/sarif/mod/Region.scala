@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Region extends js.Object {
+trait Region extends StObject {
   
   /**
     * The length of the region in bytes.
@@ -76,90 +77,78 @@ object Region {
   }
   
   @scala.inline
-  implicit class RegionOps[Self <: Region] (val x: Self) extends AnyVal {
+  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByteLengthUndefined: Self = StObject.set(x, "byteLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setByteOffset(value: Double): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByteLength(value: Double): Self = this.set("byteLength", value.asInstanceOf[js.Any])
+    def setByteOffsetUndefined: Self = StObject.set(x, "byteOffset", js.undefined)
     
     @scala.inline
-    def deleteByteLength: Self = this.set("byteLength", js.undefined)
+    def setCharLength(value: Double): Self = StObject.set(x, "charLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByteOffset(value: Double): Self = this.set("byteOffset", value.asInstanceOf[js.Any])
+    def setCharLengthUndefined: Self = StObject.set(x, "charLength", js.undefined)
     
     @scala.inline
-    def deleteByteOffset: Self = this.set("byteOffset", js.undefined)
+    def setCharOffset(value: Double): Self = StObject.set(x, "charOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharLength(value: Double): Self = this.set("charLength", value.asInstanceOf[js.Any])
+    def setCharOffsetUndefined: Self = StObject.set(x, "charOffset", js.undefined)
     
     @scala.inline
-    def deleteCharLength: Self = this.set("charLength", js.undefined)
+    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharOffset(value: Double): Self = this.set("charOffset", value.asInstanceOf[js.Any])
+    def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
     
     @scala.inline
-    def deleteCharOffset: Self = this.set("charOffset", js.undefined)
+    def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: Double): Self = this.set("endColumn", value.asInstanceOf[js.Any])
+    def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
     
     @scala.inline
-    def deleteEndColumn: Self = this.set("endColumn", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndLine(value: Double): Self = this.set("endLine", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteEndLine: Self = this.set("endLine", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setSnippet(value: ArtifactContent): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setSourceLanguage(value: String): Self = StObject.set(x, "sourceLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippet(value: ArtifactContent): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    def setSourceLanguageUndefined: Self = StObject.set(x, "sourceLanguage", js.undefined)
     
     @scala.inline
-    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLanguage(value: String): Self = this.set("sourceLanguage", value.asInstanceOf[js.Any])
+    def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
     
     @scala.inline
-    def deleteSourceLanguage: Self = this.set("sourceLanguage", js.undefined)
+    def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartColumn: Self = this.set("startColumn", js.undefined)
-    
-    @scala.inline
-    def setStartLine(value: Double): Self = this.set("startLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartLine: Self = this.set("startLine", js.undefined)
+    def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
   }
 }

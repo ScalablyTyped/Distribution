@@ -5,6 +5,7 @@ import typings.node.nodeStrings.inherit
 import typings.node.nodeStrings.ipc
 import typings.node.nodeStrings.pipe
 import typings.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,45 +32,33 @@ object CommonSpawnOptions {
   }
   
   @scala.inline
-  implicit class CommonSpawnOptionsOps[Self <: CommonSpawnOptions] (val x: Self) extends AnyVal {
+  implicit class CommonSpawnOptionsMutableBuilder[Self <: CommonSpawnOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgv0(value: String): Self = StObject.set(x, "argv0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgv0Undefined: Self = StObject.set(x, "argv0", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShell(value: Boolean | String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgv0(value: String): Self = this.set("argv0", value.asInstanceOf[js.Any])
+    def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
     
     @scala.inline
-    def deleteArgv0: Self = this.set("argv0", js.undefined)
+    def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShell(value: Boolean | String): Self = this.set("shell", value.asInstanceOf[js.Any])
+    def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     
     @scala.inline
-    def deleteShell: Self = this.set("shell", js.undefined)
+    def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
     
     @scala.inline
-    def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = this.set("stdio", js.Array(value :_*))
+    def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdio(value: StdioOptions): Self = this.set("stdio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdio: Self = this.set("stdio", js.undefined)
-    
-    @scala.inline
-    def setWindowsVerbatimArguments(value: Boolean): Self = this.set("windowsVerbatimArguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsVerbatimArguments: Self = this.set("windowsVerbatimArguments", js.undefined)
+    def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
   }
 }

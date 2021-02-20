@@ -1,12 +1,13 @@
 package typings.winrt.Windows.UI.Core.AnimationMetrics
 
 import typings.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAnimationDescription extends js.Object {
+trait IAnimationDescription extends StObject {
   
   var animations: IVectorView[IPropertyAnimation] = js.native
   
@@ -33,33 +34,21 @@ object IAnimationDescription {
   }
   
   @scala.inline
-  implicit class IAnimationDescriptionOps[Self <: IAnimationDescription] (val x: Self) extends AnyVal {
+  implicit class IAnimationDescriptionMutableBuilder[Self <: IAnimationDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimations(value: IVectorView[IPropertyAnimation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayLimit(value: Double): Self = StObject.set(x, "delayLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStaggerDelay(value: Double): Self = StObject.set(x, "staggerDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimations(value: IVectorView[IPropertyAnimation]): Self = this.set("animations", value.asInstanceOf[js.Any])
+    def setStaggerDelayFactor(value: Double): Self = StObject.set(x, "staggerDelayFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelayLimit(value: Double): Self = this.set("delayLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStaggerDelay(value: Double): Self = this.set("staggerDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStaggerDelayFactor(value: Double): Self = this.set("staggerDelayFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZOrder(value: Double): Self = this.set("zOrder", value.asInstanceOf[js.Any])
+    def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
   }
 }

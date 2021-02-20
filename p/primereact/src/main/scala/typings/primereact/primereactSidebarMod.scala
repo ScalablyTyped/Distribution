@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.sidebarMod.SidebarProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/sidebar", JSImport.Namespace)
-@js.native
-object primereactSidebarMod extends js.Object {
+object primereactSidebarMod {
   
+  @JSImport("primereact/sidebar", "Sidebar")
   @js.native
-  class Sidebar ()
-    extends Component[SidebarProps, js.Any, js.Any]
+  class Sidebar protected ()
+    extends typings.primereact.sidebarMod.Sidebar {
+    def this(props: SidebarProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: SidebarProps, context: js.Any) = this()
+  }
 }

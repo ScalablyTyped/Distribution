@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Basic cryptography features available in the current context. It allows access to a cryptographically strong random number generator and to cryptographic primitives. */
 @js.native
-trait Crypto extends js.Object {
+trait Crypto extends StObject {
   
   def getRandomValues(array: Null): Null = js.native
   def getRandomValues(array: DataView): DataView = js.native

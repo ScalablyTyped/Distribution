@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartAssessmentRunRequest extends js.Object {
+trait StartAssessmentRunRequest extends StObject {
   
   /**
     * You can specify the name for the assessment run. The name must be unique for the assessment template whose ARN is used to start the assessment run.
@@ -26,27 +27,15 @@ object StartAssessmentRunRequest {
   }
   
   @scala.inline
-  implicit class StartAssessmentRunRequestOps[Self <: StartAssessmentRunRequest] (val x: Self) extends AnyVal {
+  implicit class StartAssessmentRunRequestMutableBuilder[Self <: StartAssessmentRunRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssessmentRunName(value: AssessmentRunName): Self = StObject.set(x, "assessmentRunName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssessmentRunNameUndefined: Self = StObject.set(x, "assessmentRunName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssessmentTemplateArn(value: Arn): Self = this.set("assessmentTemplateArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAssessmentRunName(value: AssessmentRunName): Self = this.set("assessmentRunName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssessmentRunName: Self = this.set("assessmentRunName", js.undefined)
+    def setAssessmentTemplateArn(value: Arn): Self = StObject.set(x, "assessmentTemplateArn", value.asInstanceOf[js.Any])
   }
 }

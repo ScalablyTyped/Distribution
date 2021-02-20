@@ -1,5 +1,6 @@
 package typings.reactNativeWebrtc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected
   - typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed
 */
-trait RTCIceConnectionState extends js.Object
+trait RTCIceConnectionState extends StObject
 object RTCIceConnectionState {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.ejWebAll.global.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.TextAlign")
 @js.native
-object TextAlign extends js.Object {
+object TextAlign extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TextAlign with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowserInfo extends js.Object {
+trait BrowserInfo extends StObject {
   
   /* This lets you perform browser-specific functions. Here, choices is an object whose properties are the names of the browsers and whose values are the functions to be performed. Each function is passed one parameter, which is the MathJax.Hub.Browser object. You do not need to include every browser as one of your choices — only those for which you need to do special processing. For example:
     *MathJax.Hub.Browser.Select({
@@ -60,81 +61,69 @@ object BrowserInfo {
   }
   
   @scala.inline
-  implicit class BrowserInfoOps[Self <: BrowserInfo] (val x: Self) extends AnyVal {
+  implicit class BrowserInfoMutableBuilder[Self <: BrowserInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsChromeUndefined: Self = StObject.set(x, "isChrome", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFirefox(value: Boolean): Self = StObject.set(x, "isFirefox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: js.Any => Unit): Self = this.set("Select", js.Any.fromFunction1(value))
+    def setIsFirefoxUndefined: Self = StObject.set(x, "isFirefox", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setIsKonqueror(value: Boolean): Self = StObject.set(x, "isKonqueror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionAtLeast(value: String => Unit): Self = this.set("versionAtLeast", js.Any.fromFunction1(value))
+    def setIsKonquerorUndefined: Self = StObject.set(x, "isKonqueror", js.undefined)
     
     @scala.inline
-    def setIsChrome(value: Boolean): Self = this.set("isChrome", value.asInstanceOf[js.Any])
+    def setIsMSIE(value: Boolean): Self = StObject.set(x, "isMSIE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsChrome: Self = this.set("isChrome", js.undefined)
+    def setIsMSIEUndefined: Self = StObject.set(x, "isMSIE", js.undefined)
     
     @scala.inline
-    def setIsFirefox(value: Boolean): Self = this.set("isFirefox", value.asInstanceOf[js.Any])
+    def setIsMac(value: Boolean): Self = StObject.set(x, "isMac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsFirefox: Self = this.set("isFirefox", js.undefined)
+    def setIsMacUndefined: Self = StObject.set(x, "isMac", js.undefined)
     
     @scala.inline
-    def setIsKonqueror(value: Boolean): Self = this.set("isKonqueror", value.asInstanceOf[js.Any])
+    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsKonqueror: Self = this.set("isKonqueror", js.undefined)
+    def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
     
     @scala.inline
-    def setIsMSIE(value: Boolean): Self = this.set("isMSIE", value.asInstanceOf[js.Any])
+    def setIsOpera(value: Boolean): Self = StObject.set(x, "isOpera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsMSIE: Self = this.set("isMSIE", js.undefined)
+    def setIsOperaUndefined: Self = StObject.set(x, "isOpera", js.undefined)
     
     @scala.inline
-    def setIsMac(value: Boolean): Self = this.set("isMac", value.asInstanceOf[js.Any])
+    def setIsPC(value: Boolean): Self = StObject.set(x, "isPC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsMac: Self = this.set("isMac", js.undefined)
+    def setIsPCUndefined: Self = StObject.set(x, "isPC", js.undefined)
     
     @scala.inline
-    def setIsMobile(value: Boolean): Self = this.set("isMobile", value.asInstanceOf[js.Any])
+    def setIsSafari(value: Boolean): Self = StObject.set(x, "isSafari", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsMobile: Self = this.set("isMobile", js.undefined)
+    def setIsSafariUndefined: Self = StObject.set(x, "isSafari", js.undefined)
     
     @scala.inline
-    def setIsOpera(value: Boolean): Self = this.set("isOpera", value.asInstanceOf[js.Any])
+    def setSelect(value: js.Any => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsOpera: Self = this.set("isOpera", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPC(value: Boolean): Self = this.set("isPC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsPC: Self = this.set("isPC", js.undefined)
-    
-    @scala.inline
-    def setIsSafari(value: Boolean): Self = this.set("isSafari", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsSafari: Self = this.set("isSafari", js.undefined)
+    def setVersionAtLeast(value: String => Unit): Self = StObject.set(x, "versionAtLeast", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.BABYLON.Vector4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadiusZ extends js.Object {
+trait RadiusZ extends StObject {
   
   var backUVs: js.UndefOr[Vector4] = js.native
   
@@ -35,72 +36,60 @@ object RadiusZ {
   }
   
   @scala.inline
-  implicit class RadiusZOps[Self <: RadiusZ] (val x: Self) extends AnyVal {
+  implicit class RadiusZMutableBuilder[Self <: RadiusZ] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackUVs(value: Vector4): Self = this.set("backUVs", value.asInstanceOf[js.Any])
+    def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
     
     @scala.inline
-    def deleteBackUVs: Self = this.set("backUVs", js.undefined)
+    def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlat(value: Boolean): Self = this.set("flat", value.asInstanceOf[js.Any])
+    def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
     @scala.inline
-    def deleteFlat: Self = this.set("flat", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrontUVs(value: Vector4): Self = this.set("frontUVs", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteFrontUVs: Self = this.set("frontUVs", js.undefined)
+    def setRadiusX(value: Double): Self = StObject.set(x, "radiusX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setRadiusXUndefined: Self = StObject.set(x, "radiusX", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setRadiusY(value: Double): Self = StObject.set(x, "radiusY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusX(value: Double): Self = this.set("radiusX", value.asInstanceOf[js.Any])
+    def setRadiusYUndefined: Self = StObject.set(x, "radiusY", js.undefined)
     
     @scala.inline
-    def deleteRadiusX: Self = this.set("radiusX", js.undefined)
+    def setRadiusZ(value: Double): Self = StObject.set(x, "radiusZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusY(value: Double): Self = this.set("radiusY", value.asInstanceOf[js.Any])
+    def setRadiusZUndefined: Self = StObject.set(x, "radiusZ", js.undefined)
     
     @scala.inline
-    def deleteRadiusY: Self = this.set("radiusY", js.undefined)
+    def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusZ(value: Double): Self = this.set("radiusZ", value.asInstanceOf[js.Any])
+    def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
     @scala.inline
-    def deleteRadiusZ: Self = this.set("radiusZ", js.undefined)
+    def setSubdivisions(value: Double): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideOrientation(value: Double): Self = this.set("sideOrientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSideOrientation: Self = this.set("sideOrientation", js.undefined)
-    
-    @scala.inline
-    def setSubdivisions(value: Double): Self = this.set("subdivisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubdivisions: Self = this.set("subdivisions", js.undefined)
+    def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
   }
 }

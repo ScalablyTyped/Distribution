@@ -6,6 +6,7 @@ import typings.figma.figmaStrings.MAX
 import typings.figma.figmaStrings.MIN
 import typings.figma.figmaStrings.ROWS
 import typings.figma.figmaStrings.STRETCH
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,15 +22,15 @@ trait RowsColsLayoutGrid extends LayoutGrid {
   
   val gutterSize: Double = js.native
   
-   // Not set for alignment: "STRETCH"
+  // Not set for alignment: "STRETCH"
   val offset: js.UndefOr[Double] = js.native
   
   val pattern: ROWS | COLUMNS = js.native
   
-   // Infinity when "Auto" is set in the UI
+  // Infinity when "Auto" is set in the UI
   val sectionSize: js.UndefOr[Double] = js.native
   
-   // Not set for alignment: "CENTER"
+  // Not set for alignment: "CENTER"
   val visible: js.UndefOr[Boolean] = js.native
 }
 object RowsColsLayoutGrid {
@@ -46,54 +47,42 @@ object RowsColsLayoutGrid {
   }
   
   @scala.inline
-  implicit class RowsColsLayoutGridOps[Self <: RowsColsLayoutGrid] (val x: Self) extends AnyVal {
+  implicit class RowsColsLayoutGridMutableBuilder[Self <: RowsColsLayoutGrid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: MIN | MAX | STRETCH | CENTER): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setAlignment(value: MIN | MAX | STRETCH | CENTER): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setGutterSize(value: Double): Self = StObject.set(x, "gutterSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutterSize(value: Double): Self = this.set("gutterSize", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: ROWS | COLUMNS): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def setColor(value: RGBA): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setPattern(value: ROWS | COLUMNS): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setSectionSize(value: Double): Self = StObject.set(x, "sectionSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setSectionSizeUndefined: Self = StObject.set(x, "sectionSize", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSectionSize(value: Double): Self = this.set("sectionSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSectionSize: Self = this.set("sectionSize", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

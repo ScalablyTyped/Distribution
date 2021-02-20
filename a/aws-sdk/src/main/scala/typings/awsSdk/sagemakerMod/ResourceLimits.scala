@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceLimits extends js.Object {
+trait ResourceLimits extends StObject {
   
   /**
     * The maximum number of training jobs that a hyperparameter tuning job can launch.
@@ -26,24 +27,12 @@ object ResourceLimits {
   }
   
   @scala.inline
-  implicit class ResourceLimitsOps[Self <: ResourceLimits] (val x: Self) extends AnyVal {
+  implicit class ResourceLimitsMutableBuilder[Self <: ResourceLimits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxNumberOfTrainingJobs(value: MaxNumberOfTrainingJobs): Self = StObject.set(x, "MaxNumberOfTrainingJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxNumberOfTrainingJobs(value: MaxNumberOfTrainingJobs): Self = this.set("MaxNumberOfTrainingJobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxParallelTrainingJobs(value: MaxParallelTrainingJobs): Self = this.set("MaxParallelTrainingJobs", value.asInstanceOf[js.Any])
+    def setMaxParallelTrainingJobs(value: MaxParallelTrainingJobs): Self = StObject.set(x, "MaxParallelTrainingJobs", value.asInstanceOf[js.Any])
   }
 }

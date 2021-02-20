@@ -4,12 +4,13 @@ import typings.ipp.ippStrings.`on-error`
 import typings.ipp.ippStrings.always
 import typings.ipp.ippStrings.none
 import typings.ipp.ippStrings.standard
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobErrorSheet extends js.Object {
+trait JobErrorSheet extends StObject {
   
   var `job-error-sheet-type`: js.UndefOr[none | standard] = js.native
   
@@ -28,42 +29,30 @@ object JobErrorSheet {
   }
   
   @scala.inline
-  implicit class JobErrorSheetOps[Self <: JobErrorSheet] (val x: Self) extends AnyVal {
+  implicit class JobErrorSheetMutableBuilder[Self <: JobErrorSheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setJob-error-sheet-type`(value: none | standard): Self = StObject.set(x, "job-error-sheet-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setJob-error-sheet-typeUndefined`: Self = StObject.set(x, "job-error-sheet-type", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setJob-error-sheet-when`(value: always | `on-error`): Self = StObject.set(x, "job-error-sheet-when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-error-sheet-type`(value: none | standard): Self = this.set("job-error-sheet-type", value.asInstanceOf[js.Any])
+    def `setJob-error-sheet-whenUndefined`: Self = StObject.set(x, "job-error-sheet-when", js.undefined)
     
     @scala.inline
-    def `deleteJob-error-sheet-type`: Self = this.set("job-error-sheet-type", js.undefined)
+    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-error-sheet-when`(value: always | `on-error`): Self = this.set("job-error-sheet-when", value.asInstanceOf[js.Any])
+    def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-error-sheet-when`: Self = this.set("job-error-sheet-when", js.undefined)
+    def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
     
     @scala.inline
-    def setMedia(value: Media): Self = this.set("media", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
-    
-    @scala.inline
-    def `setMedia-col`(value: MediaInterface): Self = this.set("media-col", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteMedia-col`: Self = this.set("media-col", js.undefined)
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
   }
 }

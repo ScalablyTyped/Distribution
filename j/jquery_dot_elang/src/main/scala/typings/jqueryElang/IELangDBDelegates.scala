@@ -1,11 +1,12 @@
 package typings.jqueryElang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IELangDBDelegates extends js.Object {
+trait IELangDBDelegates extends StObject {
   
   var insertHandler: js.Function = js.native
   
@@ -29,30 +30,18 @@ object IELangDBDelegates {
   }
   
   @scala.inline
-  implicit class IELangDBDelegatesOps[Self <: IELangDBDelegates] (val x: Self) extends AnyVal {
+  implicit class IELangDBDelegatesMutableBuilder[Self <: IELangDBDelegates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsertHandler(value: js.Function): Self = StObject.set(x, "insertHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModifyHandler(value: js.Function): Self = StObject.set(x, "modifyHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveHandler(value: js.Function): Self = StObject.set(x, "removeHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertHandler(value: js.Function): Self = this.set("insertHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModifyHandler(value: js.Function): Self = this.set("modifyHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveHandler(value: js.Function): Self = this.set("removeHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectHandler(value: js.Function): Self = this.set("selectHandler", value.asInstanceOf[js.Any])
+    def setSelectHandler(value: js.Function): Self = StObject.set(x, "selectHandler", value.asInstanceOf[js.Any])
   }
 }

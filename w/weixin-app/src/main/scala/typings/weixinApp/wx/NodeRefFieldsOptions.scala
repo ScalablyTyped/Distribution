@@ -1,11 +1,12 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeRefFieldsOptions extends js.Object {
+trait NodeRefFieldsOptions extends StObject {
   
   /** 是否返回节点dataset */
   var dataset: js.UndefOr[Boolean] = js.native
@@ -37,57 +38,45 @@ object NodeRefFieldsOptions {
   }
   
   @scala.inline
-  implicit class NodeRefFieldsOptionsOps[Self <: NodeRefFieldsOptions] (val x: Self) extends AnyVal {
+  implicit class NodeRefFieldsOptionsMutableBuilder[Self <: NodeRefFieldsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataset(value: Boolean): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: Boolean): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
+    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def setPropertiesVarargs(value: String*): Self = this.set("properties", js.Array(value :_*))
+    def setRect(value: Boolean): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Array[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setScrollOffset(value: Boolean): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRect(value: Boolean): Self = this.set("rect", value.asInstanceOf[js.Any])
+    def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
     
     @scala.inline
-    def deleteRect: Self = this.set("rect", js.undefined)
+    def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollOffset(value: Boolean): Self = this.set("scrollOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollOffset: Self = this.set("scrollOffset", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Boolean): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

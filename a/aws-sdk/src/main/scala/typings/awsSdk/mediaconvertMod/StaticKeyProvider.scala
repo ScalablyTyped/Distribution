@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaticKeyProvider extends js.Object {
+trait StaticKeyProvider extends StObject {
   
   /**
     * Relates to DRM implementation. Sets the value of the KEYFORMAT attribute. Must be 'identity' or a reverse DNS string. May be omitted to indicate an implicit value of 'identity'.
@@ -36,42 +37,30 @@ object StaticKeyProvider {
   }
   
   @scala.inline
-  implicit class StaticKeyProviderOps[Self <: StaticKeyProvider] (val x: Self) extends AnyVal {
+  implicit class StaticKeyProviderMutableBuilder[Self <: StaticKeyProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyFormat(value: stringPatternIdentityAZaZ26AZaZ09163): Self = StObject.set(x, "KeyFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyFormatUndefined: Self = StObject.set(x, "KeyFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyFormatVersions(value: stringPatternDD): Self = StObject.set(x, "KeyFormatVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyFormat(value: stringPatternIdentityAZaZ26AZaZ09163): Self = this.set("KeyFormat", value.asInstanceOf[js.Any])
+    def setKeyFormatVersionsUndefined: Self = StObject.set(x, "KeyFormatVersions", js.undefined)
     
     @scala.inline
-    def deleteKeyFormat: Self = this.set("KeyFormat", js.undefined)
+    def setStaticKeyValue(value: stringPatternAZaZ0932): Self = StObject.set(x, "StaticKeyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyFormatVersions(value: stringPatternDD): Self = this.set("KeyFormatVersions", value.asInstanceOf[js.Any])
+    def setStaticKeyValueUndefined: Self = StObject.set(x, "StaticKeyValue", js.undefined)
     
     @scala.inline
-    def deleteKeyFormatVersions: Self = this.set("KeyFormatVersions", js.undefined)
+    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticKeyValue(value: stringPatternAZaZ0932): Self = this.set("StaticKeyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticKeyValue: Self = this.set("StaticKeyValue", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

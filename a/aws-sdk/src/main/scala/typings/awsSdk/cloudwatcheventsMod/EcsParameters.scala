@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EcsParameters extends js.Object {
+trait EcsParameters extends StObject {
   
   /**
     * Specifies an ECS task group for the task. The maximum length is 255 characters.
@@ -46,51 +47,39 @@ object EcsParameters {
   }
   
   @scala.inline
-  implicit class EcsParametersOps[Self <: EcsParameters] (val x: Self) extends AnyVal {
+  implicit class EcsParametersMutableBuilder[Self <: EcsParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: String): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchType(value: LaunchType): Self = StObject.set(x, "LaunchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskDefinitionArn(value: Arn): Self = this.set("TaskDefinitionArn", value.asInstanceOf[js.Any])
+    def setLaunchTypeUndefined: Self = StObject.set(x, "LaunchType", js.undefined)
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("Group", value.asInstanceOf[js.Any])
+    def setNetworkConfiguration(value: NetworkConfiguration): Self = StObject.set(x, "NetworkConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("Group", js.undefined)
+    def setNetworkConfigurationUndefined: Self = StObject.set(x, "NetworkConfiguration", js.undefined)
     
     @scala.inline
-    def setLaunchType(value: LaunchType): Self = this.set("LaunchType", value.asInstanceOf[js.Any])
+    def setPlatformVersion(value: String): Self = StObject.set(x, "PlatformVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLaunchType: Self = this.set("LaunchType", js.undefined)
+    def setPlatformVersionUndefined: Self = StObject.set(x, "PlatformVersion", js.undefined)
     
     @scala.inline
-    def setNetworkConfiguration(value: NetworkConfiguration): Self = this.set("NetworkConfiguration", value.asInstanceOf[js.Any])
+    def setTaskCount(value: LimitMin1): Self = StObject.set(x, "TaskCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetworkConfiguration: Self = this.set("NetworkConfiguration", js.undefined)
+    def setTaskCountUndefined: Self = StObject.set(x, "TaskCount", js.undefined)
     
     @scala.inline
-    def setPlatformVersion(value: String): Self = this.set("PlatformVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatformVersion: Self = this.set("PlatformVersion", js.undefined)
-    
-    @scala.inline
-    def setTaskCount(value: LimitMin1): Self = this.set("TaskCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskCount: Self = this.set("TaskCount", js.undefined)
+    def setTaskDefinitionArn(value: Arn): Self = StObject.set(x, "TaskDefinitionArn", value.asInstanceOf[js.Any])
   }
 }

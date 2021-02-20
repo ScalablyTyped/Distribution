@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Product extends js.Object {
+trait Product extends StObject {
   
   /** The tracks visible to the enterprise. */
   var appTracks: js.UndefOr[js.Array[TrackInfo]] = js.native
@@ -95,183 +96,171 @@ object Product {
   }
   
   @scala.inline
-  implicit class ProductOps[Self <: Product] (val x: Self) extends AnyVal {
+  implicit class ProductMutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppTracks(value: js.Array[TrackInfo]): Self = StObject.set(x, "appTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppTracksUndefined: Self = StObject.set(x, "appTracks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppTracksVarargs(value: TrackInfo*): Self = StObject.set(x, "appTracks", js.Array(value :_*))
     
     @scala.inline
-    def setAppTracksVarargs(value: TrackInfo*): Self = this.set("appTracks", js.Array(value :_*))
+    def setAppVersion(value: js.Array[AppVersion]): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppTracks(value: js.Array[TrackInfo]): Self = this.set("appTracks", value.asInstanceOf[js.Any])
+    def setAppVersionUndefined: Self = StObject.set(x, "appVersion", js.undefined)
     
     @scala.inline
-    def deleteAppTracks: Self = this.set("appTracks", js.undefined)
+    def setAppVersionVarargs(value: AppVersion*): Self = StObject.set(x, "appVersion", js.Array(value :_*))
     
     @scala.inline
-    def setAppVersionVarargs(value: AppVersion*): Self = this.set("appVersion", js.Array(value :_*))
+    def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersion(value: js.Array[AppVersion]): Self = this.set("appVersion", value.asInstanceOf[js.Any])
+    def setAuthorNameUndefined: Self = StObject.set(x, "authorName", js.undefined)
     
     @scala.inline
-    def deleteAppVersion: Self = this.set("appVersion", js.undefined)
+    def setAvailableCountries(value: js.Array[String]): Self = StObject.set(x, "availableCountries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorName(value: String): Self = this.set("authorName", value.asInstanceOf[js.Any])
+    def setAvailableCountriesUndefined: Self = StObject.set(x, "availableCountries", js.undefined)
     
     @scala.inline
-    def deleteAuthorName: Self = this.set("authorName", js.undefined)
+    def setAvailableCountriesVarargs(value: String*): Self = StObject.set(x, "availableCountries", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableCountriesVarargs(value: String*): Self = this.set("availableCountries", js.Array(value :_*))
+    def setAvailableTracks(value: js.Array[String]): Self = StObject.set(x, "availableTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableCountries(value: js.Array[String]): Self = this.set("availableCountries", value.asInstanceOf[js.Any])
+    def setAvailableTracksUndefined: Self = StObject.set(x, "availableTracks", js.undefined)
     
     @scala.inline
-    def deleteAvailableCountries: Self = this.set("availableCountries", js.undefined)
+    def setAvailableTracksVarargs(value: String*): Self = StObject.set(x, "availableTracks", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableTracksVarargs(value: String*): Self = this.set("availableTracks", js.Array(value :_*))
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableTracks(value: js.Array[String]): Self = this.set("availableTracks", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def deleteAvailableTracks: Self = this.set("availableTracks", js.undefined)
+    def setContentRating(value: String): Self = StObject.set(x, "contentRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setContentRatingUndefined: Self = StObject.set(x, "contentRating", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentRating(value: String): Self = this.set("contentRating", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteContentRating: Self = this.set("contentRating", js.undefined)
+    def setDetailsUrl(value: String): Self = StObject.set(x, "detailsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDetailsUrlUndefined: Self = StObject.set(x, "detailsUrl", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDistributionChannel(value: String): Self = StObject.set(x, "distributionChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailsUrl(value: String): Self = this.set("detailsUrl", value.asInstanceOf[js.Any])
+    def setDistributionChannelUndefined: Self = StObject.set(x, "distributionChannel", js.undefined)
     
     @scala.inline
-    def deleteDetailsUrl: Self = this.set("detailsUrl", js.undefined)
+    def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionChannel(value: String): Self = this.set("distributionChannel", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteDistributionChannel: Self = this.set("distributionChannel", js.undefined)
+    def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: String*): Self = this.set("features", js.Array(value :_*))
+    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[String]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setLastUpdatedTimestampMillis(value: String): Self = StObject.set(x, "lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimestampMillisUndefined: Self = StObject.set(x, "lastUpdatedTimestampMillis", js.undefined)
     
     @scala.inline
-    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    def setMinAndroidSdkVersion(value: Double): Self = StObject.set(x, "minAndroidSdkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTimestampMillis(value: String): Self = this.set("lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
+    def setMinAndroidSdkVersionUndefined: Self = StObject.set(x, "minAndroidSdkVersion", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTimestampMillis: Self = this.set("lastUpdatedTimestampMillis", js.undefined)
+    def setPermissions(value: js.Array[ProductPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinAndroidSdkVersion(value: Double): Self = this.set("minAndroidSdkVersion", value.asInstanceOf[js.Any])
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def deleteMinAndroidSdkVersion: Self = this.set("minAndroidSdkVersion", js.undefined)
+    def setPermissionsVarargs(value: ProductPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionsVarargs(value: ProductPermission*): Self = this.set("permissions", js.Array(value :_*))
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: js.Array[ProductPermission]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
+    def setProductPricing(value: String): Self = StObject.set(x, "productPricing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    def setProductPricingUndefined: Self = StObject.set(x, "productPricing", js.undefined)
     
     @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
+    def setRecentChanges(value: String): Self = StObject.set(x, "recentChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductPricing(value: String): Self = this.set("productPricing", value.asInstanceOf[js.Any])
+    def setRecentChangesUndefined: Self = StObject.set(x, "recentChanges", js.undefined)
     
     @scala.inline
-    def deleteProductPricing: Self = this.set("productPricing", js.undefined)
+    def setRequiresContainerApp(value: Boolean): Self = StObject.set(x, "requiresContainerApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecentChanges(value: String): Self = this.set("recentChanges", value.asInstanceOf[js.Any])
+    def setRequiresContainerAppUndefined: Self = StObject.set(x, "requiresContainerApp", js.undefined)
     
     @scala.inline
-    def deleteRecentChanges: Self = this.set("recentChanges", js.undefined)
+    def setScreenshotUrls(value: js.Array[String]): Self = StObject.set(x, "screenshotUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiresContainerApp(value: Boolean): Self = this.set("requiresContainerApp", value.asInstanceOf[js.Any])
+    def setScreenshotUrlsUndefined: Self = StObject.set(x, "screenshotUrls", js.undefined)
     
     @scala.inline
-    def deleteRequiresContainerApp: Self = this.set("requiresContainerApp", js.undefined)
+    def setScreenshotUrlsVarargs(value: String*): Self = StObject.set(x, "screenshotUrls", js.Array(value :_*))
     
     @scala.inline
-    def setScreenshotUrlsVarargs(value: String*): Self = this.set("screenshotUrls", js.Array(value :_*))
+    def setSigningCertificate(value: ProductSigningCertificate): Self = StObject.set(x, "signingCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenshotUrls(value: js.Array[String]): Self = this.set("screenshotUrls", value.asInstanceOf[js.Any])
+    def setSigningCertificateUndefined: Self = StObject.set(x, "signingCertificate", js.undefined)
     
     @scala.inline
-    def deleteScreenshotUrls: Self = this.set("screenshotUrls", js.undefined)
+    def setSmallIconUrl(value: String): Self = StObject.set(x, "smallIconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningCertificate(value: ProductSigningCertificate): Self = this.set("signingCertificate", value.asInstanceOf[js.Any])
+    def setSmallIconUrlUndefined: Self = StObject.set(x, "smallIconUrl", js.undefined)
     
     @scala.inline
-    def deleteSigningCertificate: Self = this.set("signingCertificate", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallIconUrl(value: String): Self = this.set("smallIconUrl", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSmallIconUrl: Self = this.set("smallIconUrl", js.undefined)
+    def setWorkDetailsUrl(value: String): Self = StObject.set(x, "workDetailsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setWorkDetailsUrl(value: String): Self = this.set("workDetailsUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkDetailsUrl: Self = this.set("workDetailsUrl", js.undefined)
+    def setWorkDetailsUrlUndefined: Self = StObject.set(x, "workDetailsUrl", js.undefined)
   }
 }

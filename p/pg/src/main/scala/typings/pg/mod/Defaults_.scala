@@ -1,5 +1,6 @@
 package typings.pg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,48 +27,36 @@ object Defaults_ {
   }
   
   @scala.inline
-  implicit class Defaults_Ops[Self <: Defaults_] (val x: Self) extends AnyVal {
+  implicit class Defaults_MutableBuilder[Self <: Defaults_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParseInt8(value: Boolean): Self = StObject.set(x, "parseInt8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setParseInt8Undefined: Self = StObject.set(x, "parseInt8", js.undefined)
     
     @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
+    def setPoolIdleTimeout(value: Double): Self = StObject.set(x, "poolIdleTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseInt8(value: Boolean): Self = this.set("parseInt8", value.asInstanceOf[js.Any])
+    def setPoolIdleTimeoutUndefined: Self = StObject.set(x, "poolIdleTimeout", js.undefined)
     
     @scala.inline
-    def deleteParseInt8: Self = this.set("parseInt8", js.undefined)
+    def setPoolSize(value: Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolIdleTimeout(value: Double): Self = this.set("poolIdleTimeout", value.asInstanceOf[js.Any])
+    def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
     
     @scala.inline
-    def deletePoolIdleTimeout: Self = this.set("poolIdleTimeout", js.undefined)
+    def setReapIntervalMillis(value: Double): Self = StObject.set(x, "reapIntervalMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolSize(value: Double): Self = this.set("poolSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoolSize: Self = this.set("poolSize", js.undefined)
-    
-    @scala.inline
-    def setReapIntervalMillis(value: Double): Self = this.set("reapIntervalMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReapIntervalMillis: Self = this.set("reapIntervalMillis", js.undefined)
+    def setReapIntervalMillisUndefined: Self = StObject.set(x, "reapIntervalMillis", js.undefined)
   }
 }

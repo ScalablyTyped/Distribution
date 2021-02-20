@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * computer.
   */
 @js.native
-trait DeviceInfo extends js.Object {
+trait DeviceInfo extends StObject {
   
   /** Establish a connection with this device and return a Device object */
   def Connect(): Device = js.native

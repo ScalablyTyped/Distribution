@@ -1,11 +1,12 @@
 package typings.jqueryBootstrapWizard
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WizardOptions extends js.Object {
+trait WizardOptions extends StObject {
   
   var firstSelector: js.UndefOr[String] = js.native
   
@@ -58,96 +59,84 @@ object WizardOptions {
   }
   
   @scala.inline
-  implicit class WizardOptionsOps[Self <: WizardOptions] (val x: Self) extends AnyVal {
+  implicit class WizardOptionsMutableBuilder[Self <: WizardOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstSelector(value: String): Self = StObject.set(x, "firstSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstSelectorUndefined: Self = StObject.set(x, "firstSelector", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastSelector(value: String): Self = StObject.set(x, "lastSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstSelector(value: String): Self = this.set("firstSelector", value.asInstanceOf[js.Any])
+    def setLastSelectorUndefined: Self = StObject.set(x, "lastSelector", js.undefined)
     
     @scala.inline
-    def deleteFirstSelector: Self = this.set("firstSelector", js.undefined)
+    def setNextSelector(value: String): Self = StObject.set(x, "nextSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSelector(value: String): Self = this.set("lastSelector", value.asInstanceOf[js.Any])
+    def setNextSelectorUndefined: Self = StObject.set(x, "nextSelector", js.undefined)
     
     @scala.inline
-    def deleteLastSelector: Self = this.set("lastSelector", js.undefined)
+    def setOnFirst(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* firstIndex */ Double) => Boolean): Self = StObject.set(x, "onFirst", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setNextSelector(value: String): Self = this.set("nextSelector", value.asInstanceOf[js.Any])
+    def setOnFirstUndefined: Self = StObject.set(x, "onFirst", js.undefined)
     
     @scala.inline
-    def deleteNextSelector: Self = this.set("nextSelector", js.undefined)
+    def setOnInit(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double) => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnFirst(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* firstIndex */ Double) => Boolean): Self = this.set("onFirst", js.Any.fromFunction3(value))
+    def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
     
     @scala.inline
-    def deleteOnFirst: Self = this.set("onFirst", js.undefined)
+    def setOnLast(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* lastIndex */ Double) => Boolean): Self = StObject.set(x, "onLast", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnInit(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double) => Unit): Self = this.set("onInit", js.Any.fromFunction3(value))
+    def setOnLastUndefined: Self = StObject.set(x, "onLast", js.undefined)
     
     @scala.inline
-    def deleteOnInit: Self = this.set("onInit", js.undefined)
+    def setOnNext(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* nextIndex */ Double) => Boolean): Self = StObject.set(x, "onNext", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnLast(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* lastIndex */ Double) => Boolean): Self = this.set("onLast", js.Any.fromFunction3(value))
+    def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
     
     @scala.inline
-    def deleteOnLast: Self = this.set("onLast", js.undefined)
+    def setOnPrevious(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* previousIndex */ Double) => Boolean): Self = StObject.set(x, "onPrevious", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnNext(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* nextIndex */ Double) => Boolean): Self = this.set("onNext", js.Any.fromFunction3(value))
+    def setOnPreviousUndefined: Self = StObject.set(x, "onPrevious", js.undefined)
     
     @scala.inline
-    def deleteOnNext: Self = this.set("onNext", js.undefined)
+    def setOnShow(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* nextIndex */ Double) => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnPrevious(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* previousIndex */ Double) => Boolean): Self = this.set("onPrevious", js.Any.fromFunction3(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnPrevious: Self = this.set("onPrevious", js.undefined)
+    def setOnTabClick(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double) => Boolean): Self = StObject.set(x, "onTabClick", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnShow(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* nextIndex */ Double) => Unit): Self = this.set("onShow", js.Any.fromFunction3(value))
+    def setOnTabClickUndefined: Self = StObject.set(x, "onTabClick", js.undefined)
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setOnTabShow(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double) => Boolean): Self = StObject.set(x, "onTabShow", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnTabClick(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double) => Boolean): Self = this.set("onTabClick", js.Any.fromFunction3(value))
+    def setOnTabShowUndefined: Self = StObject.set(x, "onTabShow", js.undefined)
     
     @scala.inline
-    def deleteOnTabClick: Self = this.set("onTabClick", js.undefined)
+    def setPreviousSelector(value: String): Self = StObject.set(x, "previousSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTabShow(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double) => Boolean): Self = this.set("onTabShow", js.Any.fromFunction3(value))
+    def setPreviousSelectorUndefined: Self = StObject.set(x, "previousSelector", js.undefined)
     
     @scala.inline
-    def deleteOnTabShow: Self = this.set("onTabShow", js.undefined)
+    def setTabClass(value: String): Self = StObject.set(x, "tabClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousSelector(value: String): Self = this.set("previousSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousSelector: Self = this.set("previousSelector", js.undefined)
-    
-    @scala.inline
-    def setTabClass(value: String): Self = this.set("tabClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabClass: Self = this.set("tabClass", js.undefined)
+    def setTabClassUndefined: Self = StObject.set(x, "tabClass", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .addWidget(textParagraph);
   */
 @js.native
-trait CardSection extends js.Object {
+trait CardSection extends StObject {
   
   def addWidget(widget: Widget): CardSection = js.native
   
@@ -43,30 +44,18 @@ object CardSection {
   }
   
   @scala.inline
-  implicit class CardSectionOps[Self <: CardSection] (val x: Self) extends AnyVal {
+  implicit class CardSectionMutableBuilder[Self <: CardSection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddWidget(value: Widget => CardSection): Self = StObject.set(x, "addWidget", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetCollapsible(value: Boolean => CardSection): Self = StObject.set(x, "setCollapsible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetHeader(value: String => CardSection): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddWidget(value: Widget => CardSection): Self = this.set("addWidget", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetCollapsible(value: Boolean => CardSection): Self = this.set("setCollapsible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetHeader(value: String => CardSection): Self = this.set("setHeader", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetNumUncollapsibleWidgets(value: Integer => CardSection): Self = this.set("setNumUncollapsibleWidgets", js.Any.fromFunction1(value))
+    def setSetNumUncollapsibleWidgets(value: Integer => CardSection): Self = StObject.set(x, "setNumUncollapsibleWidgets", js.Any.fromFunction1(value))
   }
 }

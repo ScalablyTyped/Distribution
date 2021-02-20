@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingplansMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeScalingPlansRequest extends js.Object {
+trait DescribeScalingPlansRequest extends StObject {
   
   /**
     * The sources for the applications (up to 10). If you specify scaling plan names, you cannot specify application sources.
@@ -41,54 +42,42 @@ object DescribeScalingPlansRequest {
   }
   
   @scala.inline
-  implicit class DescribeScalingPlansRequestOps[Self <: DescribeScalingPlansRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeScalingPlansRequestMutableBuilder[Self <: DescribeScalingPlansRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationSources(value: ApplicationSources): Self = StObject.set(x, "ApplicationSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationSourcesUndefined: Self = StObject.set(x, "ApplicationSources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationSourcesVarargs(value: ApplicationSource*): Self = StObject.set(x, "ApplicationSources", js.Array(value :_*))
     
     @scala.inline
-    def setApplicationSourcesVarargs(value: ApplicationSource*): Self = this.set("ApplicationSources", js.Array(value :_*))
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationSources(value: ApplicationSources): Self = this.set("ApplicationSources", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteApplicationSources: Self = this.set("ApplicationSources", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setScalingPlanNames(value: ScalingPlanNames): Self = StObject.set(x, "ScalingPlanNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setScalingPlanNamesUndefined: Self = StObject.set(x, "ScalingPlanNames", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setScalingPlanNamesVarargs(value: ScalingPlanName*): Self = StObject.set(x, "ScalingPlanNames", js.Array(value :_*))
     
     @scala.inline
-    def setScalingPlanNamesVarargs(value: ScalingPlanName*): Self = this.set("ScalingPlanNames", js.Array(value :_*))
+    def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingPlanNames(value: ScalingPlanNames): Self = this.set("ScalingPlanNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingPlanNames: Self = this.set("ScalingPlanNames", js.undefined)
-    
-    @scala.inline
-    def setScalingPlanVersion(value: ScalingPlanVersion): Self = this.set("ScalingPlanVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingPlanVersion: Self = this.set("ScalingPlanVersion", js.undefined)
+    def setScalingPlanVersionUndefined: Self = StObject.set(x, "ScalingPlanVersion", js.undefined)
   }
 }

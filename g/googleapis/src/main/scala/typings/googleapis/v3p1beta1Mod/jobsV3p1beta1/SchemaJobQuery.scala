@@ -1,5 +1,6 @@
 package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Input only.  The query required to perform a search query.
   */
 @js.native
-trait SchemaJobQuery extends js.Object {
+trait SchemaJobQuery extends StObject {
   
   /**
     * Optional.   Allows filtering jobs by commute time with different travel
@@ -142,117 +143,105 @@ object SchemaJobQuery {
   }
   
   @scala.inline
-  implicit class SchemaJobQueryOps[Self <: SchemaJobQuery] (val x: Self) extends AnyVal {
+  implicit class SchemaJobQueryMutableBuilder[Self <: SchemaJobQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommuteFilter(value: SchemaCommuteFilter): Self = StObject.set(x, "commuteFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommuteFilterUndefined: Self = StObject.set(x, "commuteFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompanyDisplayNames(value: js.Array[String]): Self = StObject.set(x, "companyDisplayNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommuteFilter(value: SchemaCommuteFilter): Self = this.set("commuteFilter", value.asInstanceOf[js.Any])
+    def setCompanyDisplayNamesUndefined: Self = StObject.set(x, "companyDisplayNames", js.undefined)
     
     @scala.inline
-    def deleteCommuteFilter: Self = this.set("commuteFilter", js.undefined)
+    def setCompanyDisplayNamesVarargs(value: String*): Self = StObject.set(x, "companyDisplayNames", js.Array(value :_*))
     
     @scala.inline
-    def setCompanyDisplayNamesVarargs(value: String*): Self = this.set("companyDisplayNames", js.Array(value :_*))
+    def setCompanyNames(value: js.Array[String]): Self = StObject.set(x, "companyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyDisplayNames(value: js.Array[String]): Self = this.set("companyDisplayNames", value.asInstanceOf[js.Any])
+    def setCompanyNamesUndefined: Self = StObject.set(x, "companyNames", js.undefined)
     
     @scala.inline
-    def deleteCompanyDisplayNames: Self = this.set("companyDisplayNames", js.undefined)
+    def setCompanyNamesVarargs(value: String*): Self = StObject.set(x, "companyNames", js.Array(value :_*))
     
     @scala.inline
-    def setCompanyNamesVarargs(value: String*): Self = this.set("companyNames", js.Array(value :_*))
+    def setCompensationFilter(value: SchemaCompensationFilter): Self = StObject.set(x, "compensationFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyNames(value: js.Array[String]): Self = this.set("companyNames", value.asInstanceOf[js.Any])
+    def setCompensationFilterUndefined: Self = StObject.set(x, "compensationFilter", js.undefined)
     
     @scala.inline
-    def deleteCompanyNames: Self = this.set("companyNames", js.undefined)
+    def setCustomAttributeFilter(value: String): Self = StObject.set(x, "customAttributeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompensationFilter(value: SchemaCompensationFilter): Self = this.set("compensationFilter", value.asInstanceOf[js.Any])
+    def setCustomAttributeFilterUndefined: Self = StObject.set(x, "customAttributeFilter", js.undefined)
     
     @scala.inline
-    def deleteCompensationFilter: Self = this.set("compensationFilter", js.undefined)
+    def setDisableSpellCheck(value: Boolean): Self = StObject.set(x, "disableSpellCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAttributeFilter(value: String): Self = this.set("customAttributeFilter", value.asInstanceOf[js.Any])
+    def setDisableSpellCheckUndefined: Self = StObject.set(x, "disableSpellCheck", js.undefined)
     
     @scala.inline
-    def deleteCustomAttributeFilter: Self = this.set("customAttributeFilter", js.undefined)
+    def setEmploymentTypes(value: js.Array[String]): Self = StObject.set(x, "employmentTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSpellCheck(value: Boolean): Self = this.set("disableSpellCheck", value.asInstanceOf[js.Any])
+    def setEmploymentTypesUndefined: Self = StObject.set(x, "employmentTypes", js.undefined)
     
     @scala.inline
-    def deleteDisableSpellCheck: Self = this.set("disableSpellCheck", js.undefined)
+    def setEmploymentTypesVarargs(value: String*): Self = StObject.set(x, "employmentTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEmploymentTypesVarargs(value: String*): Self = this.set("employmentTypes", js.Array(value :_*))
+    def setExcludedJobs(value: js.Array[String]): Self = StObject.set(x, "excludedJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmploymentTypes(value: js.Array[String]): Self = this.set("employmentTypes", value.asInstanceOf[js.Any])
+    def setExcludedJobsUndefined: Self = StObject.set(x, "excludedJobs", js.undefined)
     
     @scala.inline
-    def deleteEmploymentTypes: Self = this.set("employmentTypes", js.undefined)
+    def setExcludedJobsVarargs(value: String*): Self = StObject.set(x, "excludedJobs", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedJobsVarargs(value: String*): Self = this.set("excludedJobs", js.Array(value :_*))
+    def setJobCategories(value: js.Array[String]): Self = StObject.set(x, "jobCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedJobs(value: js.Array[String]): Self = this.set("excludedJobs", value.asInstanceOf[js.Any])
+    def setJobCategoriesUndefined: Self = StObject.set(x, "jobCategories", js.undefined)
     
     @scala.inline
-    def deleteExcludedJobs: Self = this.set("excludedJobs", js.undefined)
+    def setJobCategoriesVarargs(value: String*): Self = StObject.set(x, "jobCategories", js.Array(value :_*))
     
     @scala.inline
-    def setJobCategoriesVarargs(value: String*): Self = this.set("jobCategories", js.Array(value :_*))
+    def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobCategories(value: js.Array[String]): Self = this.set("jobCategories", value.asInstanceOf[js.Any])
+    def setLanguageCodesUndefined: Self = StObject.set(x, "languageCodes", js.undefined)
     
     @scala.inline
-    def deleteJobCategories: Self = this.set("jobCategories", js.undefined)
+    def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value :_*))
     
     @scala.inline
-    def setLanguageCodesVarargs(value: String*): Self = this.set("languageCodes", js.Array(value :_*))
+    def setLocationFilters(value: js.Array[SchemaLocationFilter]): Self = StObject.set(x, "locationFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCodes(value: js.Array[String]): Self = this.set("languageCodes", value.asInstanceOf[js.Any])
+    def setLocationFiltersUndefined: Self = StObject.set(x, "locationFilters", js.undefined)
     
     @scala.inline
-    def deleteLanguageCodes: Self = this.set("languageCodes", js.undefined)
+    def setLocationFiltersVarargs(value: SchemaLocationFilter*): Self = StObject.set(x, "locationFilters", js.Array(value :_*))
     
     @scala.inline
-    def setLocationFiltersVarargs(value: SchemaLocationFilter*): Self = this.set("locationFilters", js.Array(value :_*))
+    def setPublishTimeRange(value: SchemaTimestampRange): Self = StObject.set(x, "publishTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationFilters(value: js.Array[SchemaLocationFilter]): Self = this.set("locationFilters", value.asInstanceOf[js.Any])
+    def setPublishTimeRangeUndefined: Self = StObject.set(x, "publishTimeRange", js.undefined)
     
     @scala.inline
-    def deleteLocationFilters: Self = this.set("locationFilters", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishTimeRange(value: SchemaTimestampRange): Self = this.set("publishTimeRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishTimeRange: Self = this.set("publishTimeRange", js.undefined)
-    
-    @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

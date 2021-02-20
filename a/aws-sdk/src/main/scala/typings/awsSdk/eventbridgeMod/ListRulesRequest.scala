@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRulesRequest extends js.Object {
+trait ListRulesRequest extends StObject {
   
   /**
     * The name or ARN of the event bus to list the rules for. If you omit this, the default event bus is used.
@@ -36,42 +37,30 @@ object ListRulesRequest {
   }
   
   @scala.inline
-  implicit class ListRulesRequestOps[Self <: ListRulesRequest] (val x: Self) extends AnyVal {
+  implicit class ListRulesRequestMutableBuilder[Self <: ListRulesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventBusName(value: EventBusNameOrArn): Self = this.set("EventBusName", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteEventBusName: Self = this.set("EventBusName", js.undefined)
+    def setNamePrefix(value: RuleName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: LimitMax100): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNamePrefixUndefined: Self = StObject.set(x, "NamePrefix", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePrefix(value: RuleName): Self = this.set("NamePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamePrefix: Self = this.set("NamePrefix", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

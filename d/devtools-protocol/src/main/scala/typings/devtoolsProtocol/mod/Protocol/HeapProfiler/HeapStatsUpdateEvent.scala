@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeapStatsUpdateEvent extends js.Object {
+trait HeapStatsUpdateEvent extends StObject {
   
   /**
     * An array of triplets. Each triplet describes a fragment. The first integer is the fragment
@@ -24,24 +25,12 @@ object HeapStatsUpdateEvent {
   }
   
   @scala.inline
-  implicit class HeapStatsUpdateEventOps[Self <: HeapStatsUpdateEvent] (val x: Self) extends AnyVal {
+  implicit class HeapStatsUpdateEventMutableBuilder[Self <: HeapStatsUpdateEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatsUpdate(value: js.Array[integer]): Self = StObject.set(x, "statsUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatsUpdateVarargs(value: integer*): Self = this.set("statsUpdate", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatsUpdate(value: js.Array[integer]): Self = this.set("statsUpdate", value.asInstanceOf[js.Any])
+    def setStatsUpdateVarargs(value: integer*): Self = StObject.set(x, "statsUpdate", js.Array(value :_*))
   }
 }

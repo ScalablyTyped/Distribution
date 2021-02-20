@@ -3,13 +3,14 @@ package typings.arangodb.anon
 import typings.arangodb.Foxx.Request
 import typings.arangodb.Foxx.Response
 import typings.arangodb.arangodbBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<arangodb.Foxx.DocumentationRouterOptions> */
 @js.native
-trait PartialDocumentationRoute extends js.Object {
+trait PartialDocumentationRoute extends StObject {
   
   var before: js.UndefOr[js.Function2[/* req */ Request, /* res */ Response, Unit | `false`]] = js.native
   
@@ -28,42 +29,30 @@ object PartialDocumentationRoute {
   }
   
   @scala.inline
-  implicit class PartialDocumentationRouteOps[Self <: PartialDocumentationRoute] (val x: Self) extends AnyVal {
+  implicit class PartialDocumentationRouteMutableBuilder[Self <: PartialDocumentationRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBefore(value: (/* req */ Request, /* res */ Response) => Unit | `false`): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexFile(value: String): Self = StObject.set(x, "indexFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: (/* req */ Request, /* res */ Response) => Unit | `false`): Self = this.set("before", js.Any.fromFunction2(value))
+    def setIndexFileUndefined: Self = StObject.set(x, "indexFile", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexFile(value: String): Self = this.set("indexFile", value.asInstanceOf[js.Any])
+    def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
     
     @scala.inline
-    def deleteIndexFile: Self = this.set("indexFile", js.undefined)
+    def setSwaggerRoot(value: String): Self = StObject.set(x, "swaggerRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMount(value: String): Self = this.set("mount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMount: Self = this.set("mount", js.undefined)
-    
-    @scala.inline
-    def setSwaggerRoot(value: String): Self = this.set("swaggerRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwaggerRoot: Self = this.set("swaggerRoot", js.undefined)
+    def setSwaggerRootUndefined: Self = StObject.set(x, "swaggerRoot", js.undefined)
   }
 }

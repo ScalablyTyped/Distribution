@@ -10,12 +10,13 @@ import typings.uniApp.uniAppStrings.`zoom-fade-in`
 import typings.uniApp.uniAppStrings.`zoom-in`
 import typings.uniApp.uniAppStrings.auto
 import typings.uniApp.uniAppStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigateBackOptions extends js.Object {
+trait NavigateBackOptions extends StObject {
   
   /**
     * 窗口关闭动画的持续时间，单位为 ms
@@ -53,38 +54,26 @@ object NavigateBackOptions {
   }
   
   @scala.inline
-  implicit class NavigateBackOptionsOps[Self <: NavigateBackOptions] (val x: Self) extends AnyVal {
+  implicit class NavigateBackOptionsMutableBuilder[Self <: NavigateBackOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
     def setAnimationType(
       value: auto | none | `slide-out-right` | `slide-out-left` | `slide-out-top` | `slide-out-bottom` | `fade-out` | `zoom-in` | `zoom-fade-in` | `pop-out`
-    ): Self = this.set("animationType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationType: Self = this.set("animationType", js.undefined)
+    def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
     
     @scala.inline
-    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelta: Self = this.set("delta", js.undefined)
+    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
   }
 }

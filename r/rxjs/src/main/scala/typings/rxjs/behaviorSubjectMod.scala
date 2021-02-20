@@ -1,14 +1,14 @@
 package typings.rxjs
 
 import typings.rxjs.subjectMod.Subject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/BehaviorSubject", JSImport.Namespace)
-@js.native
-object behaviorSubjectMod extends js.Object {
+object behaviorSubjectMod {
   
+  @JSImport("rxjs/internal/BehaviorSubject", "BehaviorSubject")
   @js.native
   class BehaviorSubject[T] protected () extends Subject[T] {
     def this(_value: T) = this()

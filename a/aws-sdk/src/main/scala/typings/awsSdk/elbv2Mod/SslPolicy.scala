@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SslPolicy extends js.Object {
+trait SslPolicy extends StObject {
   
   /**
     * The ciphers.
@@ -31,42 +32,30 @@ object SslPolicy {
   }
   
   @scala.inline
-  implicit class SslPolicyOps[Self <: SslPolicy] (val x: Self) extends AnyVal {
+  implicit class SslPolicyMutableBuilder[Self <: SslPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCiphers(value: Ciphers): Self = StObject.set(x, "Ciphers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCiphersUndefined: Self = StObject.set(x, "Ciphers", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCiphersVarargs(value: Cipher*): Self = StObject.set(x, "Ciphers", js.Array(value :_*))
     
     @scala.inline
-    def setCiphersVarargs(value: Cipher*): Self = this.set("Ciphers", js.Array(value :_*))
+    def setName(value: SslPolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCiphers(value: Ciphers): Self = this.set("Ciphers", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteCiphers: Self = this.set("Ciphers", js.undefined)
+    def setSslProtocols(value: SslProtocols): Self = StObject.set(x, "SslProtocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: SslPolicyName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSslProtocolsUndefined: Self = StObject.set(x, "SslProtocols", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setSslProtocolsVarargs(value: SslProtocol*): Self = this.set("SslProtocols", js.Array(value :_*))
-    
-    @scala.inline
-    def setSslProtocols(value: SslProtocols): Self = this.set("SslProtocols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslProtocols: Self = this.set("SslProtocols", js.undefined)
+    def setSslProtocolsVarargs(value: SslProtocol*): Self = StObject.set(x, "SslProtocols", js.Array(value :_*))
   }
 }

@@ -5,13 +5,14 @@ import typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOut
 import typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOutSlots
 import typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName
 import typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateDialogNode` operation. */
 @js.native
-trait UpdateDialogNodeParams extends js.Object {
+trait UpdateDialogNodeParams extends StObject {
   
   /** The dialog node ID (for example, `get_order`). */
   var dialog_node: String = js.native
@@ -86,147 +87,135 @@ object UpdateDialogNodeParams {
   }
   
   @scala.inline
-  implicit class UpdateDialogNodeParamsOps[Self <: UpdateDialogNodeParams] (val x: Self) extends AnyVal {
+  implicit class UpdateDialogNodeParamsMutableBuilder[Self <: UpdateDialogNodeParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDialog_node(value: String): Self = StObject.set(x, "dialog_node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setDialog_node(value: String): Self = this.set("dialog_node", value.asInstanceOf[js.Any])
+    def setNew_actions(value: js.Array[DialogNodeAction]): Self = StObject.set(x, "new_actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkspace_id(value: String): Self = this.set("workspace_id", value.asInstanceOf[js.Any])
+    def setNew_actionsUndefined: Self = StObject.set(x, "new_actions", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setNew_actionsVarargs(value: DialogNodeAction*): Self = StObject.set(x, "new_actions", js.Array(value :_*))
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setNew_conditions(value: String): Self = StObject.set(x, "new_conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_actionsVarargs(value: DialogNodeAction*): Self = this.set("new_actions", js.Array(value :_*))
+    def setNew_conditionsUndefined: Self = StObject.set(x, "new_conditions", js.undefined)
     
     @scala.inline
-    def setNew_actions(value: js.Array[DialogNodeAction]): Self = this.set("new_actions", value.asInstanceOf[js.Any])
+    def setNew_context(value: js.Object): Self = StObject.set(x, "new_context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_actions: Self = this.set("new_actions", js.undefined)
+    def setNew_contextUndefined: Self = StObject.set(x, "new_context", js.undefined)
     
     @scala.inline
-    def setNew_conditions(value: String): Self = this.set("new_conditions", value.asInstanceOf[js.Any])
+    def setNew_description(value: String): Self = StObject.set(x, "new_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_conditions: Self = this.set("new_conditions", js.undefined)
+    def setNew_descriptionUndefined: Self = StObject.set(x, "new_description", js.undefined)
     
     @scala.inline
-    def setNew_context(value: js.Object): Self = this.set("new_context", value.asInstanceOf[js.Any])
+    def setNew_dialog_node(value: String): Self = StObject.set(x, "new_dialog_node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_context: Self = this.set("new_context", js.undefined)
+    def setNew_dialog_nodeUndefined: Self = StObject.set(x, "new_dialog_node", js.undefined)
     
     @scala.inline
-    def setNew_description(value: String): Self = this.set("new_description", value.asInstanceOf[js.Any])
+    def setNew_digress_in(value: DigressIn | String): Self = StObject.set(x, "new_digress_in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_description: Self = this.set("new_description", js.undefined)
+    def setNew_digress_inUndefined: Self = StObject.set(x, "new_digress_in", js.undefined)
     
     @scala.inline
-    def setNew_dialog_node(value: String): Self = this.set("new_dialog_node", value.asInstanceOf[js.Any])
+    def setNew_digress_out(value: DigressOut | String): Self = StObject.set(x, "new_digress_out", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_dialog_node: Self = this.set("new_dialog_node", js.undefined)
+    def setNew_digress_outUndefined: Self = StObject.set(x, "new_digress_out", js.undefined)
     
     @scala.inline
-    def setNew_digress_in(value: DigressIn | String): Self = this.set("new_digress_in", value.asInstanceOf[js.Any])
+    def setNew_digress_out_slots(value: DigressOutSlots | String): Self = StObject.set(x, "new_digress_out_slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_digress_in: Self = this.set("new_digress_in", js.undefined)
+    def setNew_digress_out_slotsUndefined: Self = StObject.set(x, "new_digress_out_slots", js.undefined)
     
     @scala.inline
-    def setNew_digress_out(value: DigressOut | String): Self = this.set("new_digress_out", value.asInstanceOf[js.Any])
+    def setNew_event_name(value: EventName | String): Self = StObject.set(x, "new_event_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_digress_out: Self = this.set("new_digress_out", js.undefined)
+    def setNew_event_nameUndefined: Self = StObject.set(x, "new_event_name", js.undefined)
     
     @scala.inline
-    def setNew_digress_out_slots(value: DigressOutSlots | String): Self = this.set("new_digress_out_slots", value.asInstanceOf[js.Any])
+    def setNew_metadata(value: js.Object): Self = StObject.set(x, "new_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_digress_out_slots: Self = this.set("new_digress_out_slots", js.undefined)
+    def setNew_metadataUndefined: Self = StObject.set(x, "new_metadata", js.undefined)
     
     @scala.inline
-    def setNew_event_name(value: EventName | String): Self = this.set("new_event_name", value.asInstanceOf[js.Any])
+    def setNew_next_step(value: DialogNodeNextStep): Self = StObject.set(x, "new_next_step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_event_name: Self = this.set("new_event_name", js.undefined)
+    def setNew_next_stepUndefined: Self = StObject.set(x, "new_next_step", js.undefined)
     
     @scala.inline
-    def setNew_metadata(value: js.Object): Self = this.set("new_metadata", value.asInstanceOf[js.Any])
+    def setNew_node_type(value: NodeType | String): Self = StObject.set(x, "new_node_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_metadata: Self = this.set("new_metadata", js.undefined)
+    def setNew_node_typeUndefined: Self = StObject.set(x, "new_node_type", js.undefined)
     
     @scala.inline
-    def setNew_next_step(value: DialogNodeNextStep): Self = this.set("new_next_step", value.asInstanceOf[js.Any])
+    def setNew_output(value: DialogNodeOutput): Self = StObject.set(x, "new_output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_next_step: Self = this.set("new_next_step", js.undefined)
+    def setNew_outputUndefined: Self = StObject.set(x, "new_output", js.undefined)
     
     @scala.inline
-    def setNew_node_type(value: NodeType | String): Self = this.set("new_node_type", value.asInstanceOf[js.Any])
+    def setNew_parent(value: String): Self = StObject.set(x, "new_parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_node_type: Self = this.set("new_node_type", js.undefined)
+    def setNew_parentUndefined: Self = StObject.set(x, "new_parent", js.undefined)
     
     @scala.inline
-    def setNew_output(value: DialogNodeOutput): Self = this.set("new_output", value.asInstanceOf[js.Any])
+    def setNew_previous_sibling(value: String): Self = StObject.set(x, "new_previous_sibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_output: Self = this.set("new_output", js.undefined)
+    def setNew_previous_siblingUndefined: Self = StObject.set(x, "new_previous_sibling", js.undefined)
     
     @scala.inline
-    def setNew_parent(value: String): Self = this.set("new_parent", value.asInstanceOf[js.Any])
+    def setNew_title(value: String): Self = StObject.set(x, "new_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_parent: Self = this.set("new_parent", js.undefined)
+    def setNew_titleUndefined: Self = StObject.set(x, "new_title", js.undefined)
     
     @scala.inline
-    def setNew_previous_sibling(value: String): Self = this.set("new_previous_sibling", value.asInstanceOf[js.Any])
+    def setNew_user_label(value: String): Self = StObject.set(x, "new_user_label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_previous_sibling: Self = this.set("new_previous_sibling", js.undefined)
+    def setNew_user_labelUndefined: Self = StObject.set(x, "new_user_label", js.undefined)
     
     @scala.inline
-    def setNew_title(value: String): Self = this.set("new_title", value.asInstanceOf[js.Any])
+    def setNew_variable(value: String): Self = StObject.set(x, "new_variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_title: Self = this.set("new_title", js.undefined)
+    def setNew_variableUndefined: Self = StObject.set(x, "new_variable", js.undefined)
     
     @scala.inline
-    def setNew_user_label(value: String): Self = this.set("new_user_label", value.asInstanceOf[js.Any])
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_user_label: Self = this.set("new_user_label", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def setNew_variable(value: String): Self = this.set("new_variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNew_variable: Self = this.set("new_variable", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
   }
 }

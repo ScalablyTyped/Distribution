@@ -1,6 +1,7 @@
 package typings.pgPromise.mod
 
 import typings.pgPromise.pgSubsetMod.IClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Generic Event Context interface;
 // See: http://vitaly-t.github.io/pg-promise/global.html#EventContext
 @js.native
-trait IEventContext[C /* <: IClient */] extends js.Object {
+trait IEventContext[C /* <: IClient */] extends StObject {
   
   var client: C = js.native
   
@@ -31,36 +32,24 @@ object IEventContext {
   }
   
   @scala.inline
-  implicit class IEventContextOps[Self <: IEventContext[_], C /* <: IClient */] (val x: Self with IEventContext[C]) extends AnyVal {
+  implicit class IEventContextMutableBuilder[Self <: IEventContext[_], C /* <: IClient */] (val x: Self with IEventContext[C]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: C): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCn(value: js.Any): Self = StObject.set(x, "cn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtx(value: ITaskContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: C): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setDc(value: js.Any): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCn(value: js.Any): Self = this.set("cn", value.asInstanceOf[js.Any])
+    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtx(value: ITaskContext): Self = this.set("ctx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDc(value: js.Any): Self = this.set("dc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParams(value: js.Any): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: js.Any): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

@@ -1,17 +1,18 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FieldType extends js.Object
+sealed trait FieldType extends StObject
 /**
   * An enum that defines the types that can be set for a Field.
   */
 @JSGlobal("GoogleAppsScript.Data_Studio.FieldType")
 @js.native
-object FieldType extends js.Object {
+object FieldType extends StObject {
   
   @js.native
   sealed trait BOOLEAN extends FieldType

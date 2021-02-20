@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Offers standard activities to perform on items._
   * @see https://docs.scriptable.app/sharesheet
   */
-@JSGlobal("ShareSheet")
-@js.native
-object ShareSheet extends js.Object {
+object ShareSheet {
   
   /**
     * _Presents the activity picker._
@@ -19,5 +18,7 @@ object ShareSheet extends js.Object {
     * @param activityItems - Items to perform activity on.
     * @see https://docs.scriptable.app/sharesheet/#present
     */
+  @JSGlobal("ShareSheet.present")
+  @js.native
   def present(activityItems: js.Array[_]): js.Promise[_] = js.native
 }

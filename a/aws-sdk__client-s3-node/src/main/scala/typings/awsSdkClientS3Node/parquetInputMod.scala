@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_ParquetInput", JSImport.Namespace)
-@js.native
-object parquetInputMod extends js.Object {
+object parquetInputMod {
   
-  @JSName("_ParquetInput")
+  @JSImport("@aws-sdk/client-s3-node/model/_ParquetInput", "_ParquetInput")
+  @js.native
   val ParquetInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

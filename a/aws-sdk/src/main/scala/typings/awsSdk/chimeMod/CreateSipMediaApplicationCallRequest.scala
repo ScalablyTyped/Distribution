@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSipMediaApplicationCallRequest extends js.Object {
+trait CreateSipMediaApplicationCallRequest extends StObject {
   
   /**
     * The phone number that a user calls from.
@@ -31,33 +32,21 @@ object CreateSipMediaApplicationCallRequest {
   }
   
   @scala.inline
-  implicit class CreateSipMediaApplicationCallRequestOps[Self <: CreateSipMediaApplicationCallRequest] (val x: Self) extends AnyVal {
+  implicit class CreateSipMediaApplicationCallRequestMutableBuilder[Self <: CreateSipMediaApplicationCallRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "FromPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromPhoneNumberUndefined: Self = StObject.set(x, "FromPhoneNumber", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSipMediaApplicationId(value: NonEmptyString): Self = StObject.set(x, "SipMediaApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSipMediaApplicationId(value: NonEmptyString): Self = this.set("SipMediaApplicationId", value.asInstanceOf[js.Any])
+    def setToPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "ToPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPhoneNumber(value: E164PhoneNumber): Self = this.set("FromPhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromPhoneNumber: Self = this.set("FromPhoneNumber", js.undefined)
-    
-    @scala.inline
-    def setToPhoneNumber(value: E164PhoneNumber): Self = this.set("ToPhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToPhoneNumber: Self = this.set("ToPhoneNumber", js.undefined)
+    def setToPhoneNumberUndefined: Self = StObject.set(x, "ToPhoneNumber", js.undefined)
   }
 }

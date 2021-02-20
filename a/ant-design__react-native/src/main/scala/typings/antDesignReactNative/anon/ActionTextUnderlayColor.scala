@@ -1,12 +1,13 @@
 package typings.antDesignReactNative.anon
 
 import typings.reactNative.mod.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionTextUnderlayColor extends js.Object {
+trait ActionTextUnderlayColor extends StObject {
   
   var WrapComponent: View = js.native
   
@@ -30,30 +31,18 @@ object ActionTextUnderlayColor {
   }
   
   @scala.inline
-  implicit class ActionTextUnderlayColorOps[Self <: ActionTextUnderlayColor] (val x: Self) extends AnyVal {
+  implicit class ActionTextUnderlayColorMutableBuilder[Self <: ActionTextUnderlayColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionTextUnderlayColor(value: String): Self = StObject.set(x, "actionTextUnderlayColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapComponent(value: View): Self = this.set("WrapComponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActionTextActiveOpacity(value: Double): Self = this.set("actionTextActiveOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActionTextUnderlayColor(value: String): Self = this.set("actionTextUnderlayColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerType(value: String): Self = this.set("triggerType", value.asInstanceOf[js.Any])
+    def setWrapComponent(value: View): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.vastClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,63 +42,51 @@ object VastCreativeLinear {
   }
   
   @scala.inline
-  implicit class VastCreativeLinearOps[Self <: VastCreativeLinear] (val x: Self) extends AnyVal {
+  implicit class VastCreativeLinearMutableBuilder[Self <: VastCreativeLinear] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdParameters(value: String): Self = StObject.set(x, "adParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdParametersNull: Self = StObject.set(x, "adParameters", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setIcons(value: js.Array[VastIcon]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconsVarargs(value: VastIcon*): Self = this.set("icons", js.Array(value :_*))
+    def setIconsVarargs(value: VastIcon*): Self = StObject.set(x, "icons", js.Array(value :_*))
     
     @scala.inline
-    def setIcons(value: js.Array[VastIcon]): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setMediaFiles(value: js.Array[VastMediaFile]): Self = StObject.set(x, "mediaFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaFilesVarargs(value: VastMediaFile*): Self = this.set("mediaFiles", js.Array(value :_*))
+    def setMediaFilesVarargs(value: VastMediaFile*): Self = StObject.set(x, "mediaFiles", js.Array(value :_*))
     
     @scala.inline
-    def setMediaFiles(value: js.Array[VastMediaFile]): Self = this.set("mediaFiles", value.asInstanceOf[js.Any])
+    def setSkipDelay(value: Double): Self = StObject.set(x, "skipDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoClickTrackingURLTemplatesVarargs(value: String*): Self = this.set("videoClickTrackingURLTemplates", js.Array(value :_*))
+    def setSkipDelayNull: Self = StObject.set(x, "skipDelay", null)
     
     @scala.inline
-    def setVideoClickTrackingURLTemplates(value: js.Array[String]): Self = this.set("videoClickTrackingURLTemplates", value.asInstanceOf[js.Any])
+    def setVideoClickThroughURLTemplate(value: String): Self = StObject.set(x, "videoClickThroughURLTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoCustomClickURLTemplatesVarargs(value: String*): Self = this.set("videoCustomClickURLTemplates", js.Array(value :_*))
+    def setVideoClickThroughURLTemplateNull: Self = StObject.set(x, "videoClickThroughURLTemplate", null)
     
     @scala.inline
-    def setVideoCustomClickURLTemplates(value: js.Array[String]): Self = this.set("videoCustomClickURLTemplates", value.asInstanceOf[js.Any])
+    def setVideoClickTrackingURLTemplates(value: js.Array[String]): Self = StObject.set(x, "videoClickTrackingURLTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdParameters(value: String): Self = this.set("adParameters", value.asInstanceOf[js.Any])
+    def setVideoClickTrackingURLTemplatesVarargs(value: String*): Self = StObject.set(x, "videoClickTrackingURLTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setAdParametersNull: Self = this.set("adParameters", null)
+    def setVideoCustomClickURLTemplates(value: js.Array[String]): Self = StObject.set(x, "videoCustomClickURLTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipDelay(value: Double): Self = this.set("skipDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkipDelayNull: Self = this.set("skipDelay", null)
-    
-    @scala.inline
-    def setVideoClickThroughURLTemplate(value: String): Self = this.set("videoClickThroughURLTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoClickThroughURLTemplateNull: Self = this.set("videoClickThroughURLTemplate", null)
+    def setVideoCustomClickURLTemplatesVarargs(value: String*): Self = StObject.set(x, "videoCustomClickURLTemplates", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.awsSdkXmlBodyParser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@aws-sdk/xml-body-parser", JSImport.Namespace)
 @js.native
-object awsSdkXmlBodyParserRequire extends js.Object
+object awsSdkXmlBodyParserRequire extends StObject

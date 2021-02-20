@@ -3,6 +3,7 @@ package typings.openlayers.mod.olx
 import typings.openlayers.mod.Coordinate_
 import typings.openlayers.mod.Extent_
 import typings.openlayers.mod.proj.Units
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Object literal with config options for the projection.
   */
 @js.native
-trait ProjectionOptions extends js.Object {
+trait ProjectionOptions extends StObject {
   
   var axisOrientation: js.UndefOr[String] = js.native
   
@@ -38,63 +39,51 @@ object ProjectionOptions {
   }
   
   @scala.inline
-  implicit class ProjectionOptionsOps[Self <: ProjectionOptions] (val x: Self) extends AnyVal {
+  implicit class ProjectionOptionsMutableBuilder[Self <: ProjectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisOrientation(value: String): Self = StObject.set(x, "axisOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisOrientationUndefined: Self = StObject.set(x, "axisOrientation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisOrientation(value: String): Self = this.set("axisOrientation", value.asInstanceOf[js.Any])
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def deleteAxisOrientation: Self = this.set("axisOrientation", js.undefined)
+    def setGetPointResolution(value: (/* resolution */ Double, /* coords */ Coordinate_) => Double): Self = StObject.set(x, "getPointResolution", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setExtent(value: Extent_): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setGetPointResolutionUndefined: Self = StObject.set(x, "getPointResolution", js.undefined)
     
     @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
+    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPointResolution(value: (/* resolution */ Double, /* coords */ Coordinate_) => Double): Self = this.set("getPointResolution", js.Any.fromFunction2(value))
+    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
     @scala.inline
-    def deleteGetPointResolution: Self = this.set("getPointResolution", js.undefined)
+    def setMetersPerUnit(value: Double): Self = StObject.set(x, "metersPerUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: Boolean): Self = this.set("global", value.asInstanceOf[js.Any])
+    def setMetersPerUnitUndefined: Self = StObject.set(x, "metersPerUnit", js.undefined)
     
     @scala.inline
-    def deleteGlobal: Self = this.set("global", js.undefined)
+    def setUnits(value: Units | String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetersPerUnit(value: Double): Self = this.set("metersPerUnit", value.asInstanceOf[js.Any])
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
     @scala.inline
-    def deleteMetersPerUnit: Self = this.set("metersPerUnit", js.undefined)
+    def setWorldExtent(value: Extent_): Self = StObject.set(x, "worldExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnits(value: Units | String): Self = this.set("units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
-    
-    @scala.inline
-    def setWorldExtent(value: Extent_): Self = this.set("worldExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldExtent: Self = this.set("worldExtent", js.undefined)
+    def setWorldExtentUndefined: Self = StObject.set(x, "worldExtent", js.undefined)
   }
 }

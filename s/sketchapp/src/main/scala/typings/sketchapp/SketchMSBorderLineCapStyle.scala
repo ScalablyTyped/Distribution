@@ -1,5 +1,6 @@
 package typings.sketchapp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.sketchapp.sketchappNumbers.`1`
   - typings.sketchapp.sketchappNumbers.`2`
 */
-trait SketchMSBorderLineCapStyle extends js.Object
+trait SketchMSBorderLineCapStyle extends StObject
 object SketchMSBorderLineCapStyle {
   
   @scala.inline

@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,39 +55,27 @@ object HiddenRows {
   }
   
   @scala.inline
-  implicit class HiddenRowsOps[Self <: HiddenRows] (val x: Self) extends AnyVal {
+  implicit class HiddenRowsMutableBuilder[Self <: HiddenRows] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHiddenRows(value: () => js.Array[Double]): Self = StObject.set(x, "getHiddenRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideRow(value: Double => Unit): Self = StObject.set(x, "hideRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideRows(value: js.Array[Double] => Unit): Self = StObject.set(x, "hideRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHiddenRows(value: () => js.Array[Double]): Self = this.set("getHiddenRows", js.Any.fromFunction0(value))
+    def setIsHidden(value: Double => Boolean): Self = StObject.set(x, "isHidden", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideRow(value: Double => Unit): Self = this.set("hideRow", js.Any.fromFunction1(value))
+    def setIsValidConfig(value: js.Array[Double] => Boolean): Self = StObject.set(x, "isValidConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideRows(value: js.Array[Double] => Unit): Self = this.set("hideRows", js.Any.fromFunction1(value))
+    def setShowRow(value: Double => Unit): Self = StObject.set(x, "showRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsHidden(value: Double => Boolean): Self = this.set("isHidden", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsValidConfig(value: js.Array[Double] => Boolean): Self = this.set("isValidConfig", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowRow(value: Double => Unit): Self = this.set("showRow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowRows(value: js.Array[Double] => Unit): Self = this.set("showRows", js.Any.fromFunction1(value))
+    def setShowRows(value: js.Array[Double] => Unit): Self = StObject.set(x, "showRows", js.Any.fromFunction1(value))
   }
 }

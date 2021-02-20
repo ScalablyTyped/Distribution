@@ -2,6 +2,7 @@ package typings.breeze.breeze
 
 import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,30 +36,18 @@ object MergeStrategy {
   }
   
   @scala.inline
-  implicit class MergeStrategyOps[Self <: MergeStrategy] (val x: Self) extends AnyVal {
+  implicit class MergeStrategyMutableBuilder[Self <: MergeStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisallowed(value: MergeStrategySymbol): Self = StObject.set(x, "Disallowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverwriteChanges(value: MergeStrategySymbol): Self = StObject.set(x, "OverwriteChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreserveChanges(value: MergeStrategySymbol): Self = StObject.set(x, "PreserveChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisallowed(value: MergeStrategySymbol): Self = this.set("Disallowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverwriteChanges(value: MergeStrategySymbol): Self = this.set("OverwriteChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreserveChanges(value: MergeStrategySymbol): Self = this.set("PreserveChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkipMerge(value: MergeStrategySymbol): Self = this.set("SkipMerge", value.asInstanceOf[js.Any])
+    def setSkipMerge(value: MergeStrategySymbol): Self = StObject.set(x, "SkipMerge", value.asInstanceOf[js.Any])
   }
 }

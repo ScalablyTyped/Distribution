@@ -5,12 +5,13 @@ import typings.relayRuntime.relayNetworkTypesMod.UploadableMap
 import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
 import typings.relayRuntime.relayStoreTypesMod.RecordSourceSelectorProxy
 import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptimisticResponse extends js.Object {
+trait OptimisticResponse extends StObject {
   
   var operation: OperationDescriptor = js.native
   
@@ -31,57 +32,45 @@ object OptimisticResponse {
   }
   
   @scala.inline
-  implicit class OptimisticResponseOps[Self <: OptimisticResponse] (val x: Self) extends AnyVal {
+  implicit class OptimisticResponseMutableBuilder[Self <: OptimisticResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptimisticResponse(value: StringDictionary[js.Any]): Self = StObject.set(x, "optimisticResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptimisticResponseNull: Self = StObject.set(x, "optimisticResponse", null)
     
     @scala.inline
-    def setOperation(value: OperationDescriptor): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setOptimisticResponseUndefined: Self = StObject.set(x, "optimisticResponse", js.undefined)
     
     @scala.inline
-    def setOptimisticResponse(value: StringDictionary[js.Any]): Self = this.set("optimisticResponse", value.asInstanceOf[js.Any])
+    def setOptimisticUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "optimisticUpdater", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOptimisticResponse: Self = this.set("optimisticResponse", js.undefined)
+    def setOptimisticUpdaterNull: Self = StObject.set(x, "optimisticUpdater", null)
     
     @scala.inline
-    def setOptimisticResponseNull: Self = this.set("optimisticResponse", null)
+    def setOptimisticUpdaterUndefined: Self = StObject.set(x, "optimisticUpdater", js.undefined)
     
     @scala.inline
-    def setOptimisticUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = this.set("optimisticUpdater", js.Any.fromFunction2(value))
+    def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOptimisticUpdater: Self = this.set("optimisticUpdater", js.undefined)
+    def setUpdaterNull: Self = StObject.set(x, "updater", null)
     
     @scala.inline
-    def setOptimisticUpdaterNull: Self = this.set("optimisticUpdater", null)
+    def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
     
     @scala.inline
-    def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = this.set("updater", js.Any.fromFunction2(value))
+    def setUploadables(value: UploadableMap): Self = StObject.set(x, "uploadables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdater: Self = this.set("updater", js.undefined)
+    def setUploadablesNull: Self = StObject.set(x, "uploadables", null)
     
     @scala.inline
-    def setUpdaterNull: Self = this.set("updater", null)
-    
-    @scala.inline
-    def setUploadables(value: UploadableMap): Self = this.set("uploadables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadables: Self = this.set("uploadables", js.undefined)
-    
-    @scala.inline
-    def setUploadablesNull: Self = this.set("uploadables", null)
+    def setUploadablesUndefined: Self = StObject.set(x, "uploadables", js.undefined)
   }
 }

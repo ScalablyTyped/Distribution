@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.LedgerEntryChange
 import typings.stellarBase.xdrMod.xdr.OperationMeta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Operations extends js.Object {
+trait Operations extends StObject {
   
   var operations: js.Array[OperationMeta] = js.native
   
@@ -22,30 +23,18 @@ object Operations {
   }
   
   @scala.inline
-  implicit class OperationsOps[Self <: Operations] (val x: Self) extends AnyVal {
+  implicit class OperationsMutableBuilder[Self <: Operations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperations(value: js.Array[OperationMeta]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperationsVarargs(value: OperationMeta*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTxChanges(value: js.Array[LedgerEntryChange]): Self = StObject.set(x, "txChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationsVarargs(value: OperationMeta*): Self = this.set("operations", js.Array(value :_*))
-    
-    @scala.inline
-    def setOperations(value: js.Array[OperationMeta]): Self = this.set("operations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTxChangesVarargs(value: LedgerEntryChange*): Self = this.set("txChanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setTxChanges(value: js.Array[LedgerEntryChange]): Self = this.set("txChanges", value.asInstanceOf[js.Any])
+    def setTxChangesVarargs(value: LedgerEntryChange*): Self = StObject.set(x, "txChanges", js.Array(value :_*))
   }
 }

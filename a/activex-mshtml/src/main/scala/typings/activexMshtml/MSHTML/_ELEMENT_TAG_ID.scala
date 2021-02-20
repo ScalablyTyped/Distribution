@@ -227,6 +227,7 @@ import typings.activexMshtml.activexMshtmlNumbers.`97`
 import typings.activexMshtml.activexMshtmlNumbers.`98`
 import typings.activexMshtml.activexMshtmlNumbers.`99`
 import typings.activexMshtml.activexMshtmlNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -460,7 +461,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMshtml.activexMshtmlNumbers.`223`
   - typings.activexMshtml.activexMshtmlNumbers.`107`
 */
-trait _ELEMENT_TAG_ID extends js.Object
+trait _ELEMENT_TAG_ID extends StObject
 object _ELEMENT_TAG_ID {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.aceBuilds.mod.Ace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TokenIterator extends js.Object {
+trait TokenIterator extends StObject {
   
   def getCurrentToken(): Token = js.native
   
@@ -38,39 +39,27 @@ object TokenIterator {
   }
   
   @scala.inline
-  implicit class TokenIteratorOps[Self <: TokenIterator] (val x: Self) extends AnyVal {
+  implicit class TokenIteratorMutableBuilder[Self <: TokenIterator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCurrentToken(value: () => Token): Self = StObject.set(x, "getCurrentToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentTokenColumn(value: () => Double): Self = StObject.set(x, "getCurrentTokenColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentTokenPosition(value: () => Point): Self = StObject.set(x, "getCurrentTokenPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentToken(value: () => Token): Self = this.set("getCurrentToken", js.Any.fromFunction0(value))
+    def setGetCurrentTokenRange(value: () => Range): Self = StObject.set(x, "getCurrentTokenRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentTokenColumn(value: () => Double): Self = this.set("getCurrentTokenColumn", js.Any.fromFunction0(value))
+    def setGetCurrentTokenRow(value: () => Double): Self = StObject.set(x, "getCurrentTokenRow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentTokenPosition(value: () => Point): Self = this.set("getCurrentTokenPosition", js.Any.fromFunction0(value))
+    def setStepBackward(value: () => Token): Self = StObject.set(x, "stepBackward", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentTokenRange(value: () => Range): Self = this.set("getCurrentTokenRange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetCurrentTokenRow(value: () => Double): Self = this.set("getCurrentTokenRow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStepBackward(value: () => Token): Self = this.set("stepBackward", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStepForward(value: () => Token): Self = this.set("stepForward", js.Any.fromFunction0(value))
+    def setStepForward(value: () => Token): Self = StObject.set(x, "stepForward", js.Any.fromFunction0(value))
   }
 }

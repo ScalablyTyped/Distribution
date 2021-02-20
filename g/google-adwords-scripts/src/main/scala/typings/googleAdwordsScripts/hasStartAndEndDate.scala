@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait hasStartAndEndDate extends js.Object {
+trait hasStartAndEndDate extends StObject {
   
   def getEndDate(): AdWordsDate = js.native
   

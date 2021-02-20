@@ -1,15 +1,15 @@
 package typings.appBuilderLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/targets/nsis/nsisScriptGenerator", JSImport.Namespace)
-@js.native
-object nsisScriptGeneratorMod extends js.Object {
+object nsisScriptGeneratorMod {
   
+  @JSImport("app-builder-lib/out/targets/nsis/nsisScriptGenerator", "NsisScriptGenerator")
   @js.native
-  class NsisScriptGenerator () extends js.Object {
+  class NsisScriptGenerator () extends StObject {
     
     def addIncludeDir(file: String): Unit = js.native
     

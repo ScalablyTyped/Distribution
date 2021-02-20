@@ -3,16 +3,15 @@ package typings.tablesorter
 import typings.tablesorter.mod.global.HTMLElement
 import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.select2OptionsMod.Select2Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/Filtering/Formatter/Select2Formatter", JSImport.Namespace)
-@js.native
-object select2FormatterMod extends js.Object {
+object select2FormatterMod {
   
   @js.native
-  trait Select2Formatter extends js.Object {
+  trait Select2Formatter extends StObject {
     
     /**
       * Creates a select2-control.

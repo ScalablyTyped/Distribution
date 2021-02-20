@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebDetection extends js.Object {
+trait WebDetection extends StObject {
   
   /** The service's best guess as to the topic of the request image. Inferred from similar images on the open web. */
   var bestGuessLabels: js.UndefOr[js.Array[WebLabel]] = js.native
@@ -37,72 +38,60 @@ object WebDetection {
   }
   
   @scala.inline
-  implicit class WebDetectionOps[Self <: WebDetection] (val x: Self) extends AnyVal {
+  implicit class WebDetectionMutableBuilder[Self <: WebDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBestGuessLabels(value: js.Array[WebLabel]): Self = StObject.set(x, "bestGuessLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBestGuessLabelsUndefined: Self = StObject.set(x, "bestGuessLabels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBestGuessLabelsVarargs(value: WebLabel*): Self = StObject.set(x, "bestGuessLabels", js.Array(value :_*))
     
     @scala.inline
-    def setBestGuessLabelsVarargs(value: WebLabel*): Self = this.set("bestGuessLabels", js.Array(value :_*))
+    def setFullMatchingImages(value: js.Array[WebImage]): Self = StObject.set(x, "fullMatchingImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBestGuessLabels(value: js.Array[WebLabel]): Self = this.set("bestGuessLabels", value.asInstanceOf[js.Any])
+    def setFullMatchingImagesUndefined: Self = StObject.set(x, "fullMatchingImages", js.undefined)
     
     @scala.inline
-    def deleteBestGuessLabels: Self = this.set("bestGuessLabels", js.undefined)
+    def setFullMatchingImagesVarargs(value: WebImage*): Self = StObject.set(x, "fullMatchingImages", js.Array(value :_*))
     
     @scala.inline
-    def setFullMatchingImagesVarargs(value: WebImage*): Self = this.set("fullMatchingImages", js.Array(value :_*))
+    def setPagesWithMatchingImages(value: js.Array[WebPage]): Self = StObject.set(x, "pagesWithMatchingImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullMatchingImages(value: js.Array[WebImage]): Self = this.set("fullMatchingImages", value.asInstanceOf[js.Any])
+    def setPagesWithMatchingImagesUndefined: Self = StObject.set(x, "pagesWithMatchingImages", js.undefined)
     
     @scala.inline
-    def deleteFullMatchingImages: Self = this.set("fullMatchingImages", js.undefined)
+    def setPagesWithMatchingImagesVarargs(value: WebPage*): Self = StObject.set(x, "pagesWithMatchingImages", js.Array(value :_*))
     
     @scala.inline
-    def setPagesWithMatchingImagesVarargs(value: WebPage*): Self = this.set("pagesWithMatchingImages", js.Array(value :_*))
+    def setPartialMatchingImages(value: js.Array[WebImage]): Self = StObject.set(x, "partialMatchingImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagesWithMatchingImages(value: js.Array[WebPage]): Self = this.set("pagesWithMatchingImages", value.asInstanceOf[js.Any])
+    def setPartialMatchingImagesUndefined: Self = StObject.set(x, "partialMatchingImages", js.undefined)
     
     @scala.inline
-    def deletePagesWithMatchingImages: Self = this.set("pagesWithMatchingImages", js.undefined)
+    def setPartialMatchingImagesVarargs(value: WebImage*): Self = StObject.set(x, "partialMatchingImages", js.Array(value :_*))
     
     @scala.inline
-    def setPartialMatchingImagesVarargs(value: WebImage*): Self = this.set("partialMatchingImages", js.Array(value :_*))
+    def setVisuallySimilarImages(value: js.Array[WebImage]): Self = StObject.set(x, "visuallySimilarImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialMatchingImages(value: js.Array[WebImage]): Self = this.set("partialMatchingImages", value.asInstanceOf[js.Any])
+    def setVisuallySimilarImagesUndefined: Self = StObject.set(x, "visuallySimilarImages", js.undefined)
     
     @scala.inline
-    def deletePartialMatchingImages: Self = this.set("partialMatchingImages", js.undefined)
+    def setVisuallySimilarImagesVarargs(value: WebImage*): Self = StObject.set(x, "visuallySimilarImages", js.Array(value :_*))
     
     @scala.inline
-    def setVisuallySimilarImagesVarargs(value: WebImage*): Self = this.set("visuallySimilarImages", js.Array(value :_*))
+    def setWebEntities(value: js.Array[WebEntity]): Self = StObject.set(x, "webEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisuallySimilarImages(value: js.Array[WebImage]): Self = this.set("visuallySimilarImages", value.asInstanceOf[js.Any])
+    def setWebEntitiesUndefined: Self = StObject.set(x, "webEntities", js.undefined)
     
     @scala.inline
-    def deleteVisuallySimilarImages: Self = this.set("visuallySimilarImages", js.undefined)
-    
-    @scala.inline
-    def setWebEntitiesVarargs(value: WebEntity*): Self = this.set("webEntities", js.Array(value :_*))
-    
-    @scala.inline
-    def setWebEntities(value: js.Array[WebEntity]): Self = this.set("webEntities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebEntities: Self = this.set("webEntities", js.undefined)
+    def setWebEntitiesVarargs(value: WebEntity*): Self = StObject.set(x, "webEntities", js.Array(value :_*))
   }
 }

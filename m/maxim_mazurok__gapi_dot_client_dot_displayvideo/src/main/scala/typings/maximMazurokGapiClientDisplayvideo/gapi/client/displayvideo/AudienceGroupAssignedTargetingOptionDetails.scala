@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudienceGroupAssignedTargetingOptionDetails extends js.Object {
+trait AudienceGroupAssignedTargetingOptionDetails extends StObject {
   
   /**
     * The first and third party audience ids and recencies of the excluded first and third party audience group. Used for negative targeting. Its COMPLEMENT is used to UNION other
@@ -44,57 +45,45 @@ object AudienceGroupAssignedTargetingOptionDetails {
   }
   
   @scala.inline
-  implicit class AudienceGroupAssignedTargetingOptionDetailsOps[Self <: AudienceGroupAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  implicit class AudienceGroupAssignedTargetingOptionDetailsMutableBuilder[Self <: AudienceGroupAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedFirstAndThirdPartyAudienceGroup(value: FirstAndThirdPartyAudienceGroup): Self = StObject.set(x, "excludedFirstAndThirdPartyAudienceGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedFirstAndThirdPartyAudienceGroupUndefined: Self = StObject.set(x, "excludedFirstAndThirdPartyAudienceGroup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedGoogleAudienceGroup(value: GoogleAudienceGroup): Self = StObject.set(x, "excludedGoogleAudienceGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedFirstAndThirdPartyAudienceGroup(value: FirstAndThirdPartyAudienceGroup): Self = this.set("excludedFirstAndThirdPartyAudienceGroup", value.asInstanceOf[js.Any])
+    def setExcludedGoogleAudienceGroupUndefined: Self = StObject.set(x, "excludedGoogleAudienceGroup", js.undefined)
     
     @scala.inline
-    def deleteExcludedFirstAndThirdPartyAudienceGroup: Self = this.set("excludedFirstAndThirdPartyAudienceGroup", js.undefined)
+    def setIncludedCombinedAudienceGroup(value: CombinedAudienceGroup): Self = StObject.set(x, "includedCombinedAudienceGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedGoogleAudienceGroup(value: GoogleAudienceGroup): Self = this.set("excludedGoogleAudienceGroup", value.asInstanceOf[js.Any])
+    def setIncludedCombinedAudienceGroupUndefined: Self = StObject.set(x, "includedCombinedAudienceGroup", js.undefined)
     
     @scala.inline
-    def deleteExcludedGoogleAudienceGroup: Self = this.set("excludedGoogleAudienceGroup", js.undefined)
+    def setIncludedCustomListGroup(value: CustomListGroup): Self = StObject.set(x, "includedCustomListGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedCombinedAudienceGroup(value: CombinedAudienceGroup): Self = this.set("includedCombinedAudienceGroup", value.asInstanceOf[js.Any])
+    def setIncludedCustomListGroupUndefined: Self = StObject.set(x, "includedCustomListGroup", js.undefined)
     
     @scala.inline
-    def deleteIncludedCombinedAudienceGroup: Self = this.set("includedCombinedAudienceGroup", js.undefined)
+    def setIncludedFirstAndThirdPartyAudienceGroups(value: js.Array[FirstAndThirdPartyAudienceGroup]): Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedCustomListGroup(value: CustomListGroup): Self = this.set("includedCustomListGroup", value.asInstanceOf[js.Any])
+    def setIncludedFirstAndThirdPartyAudienceGroupsUndefined: Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", js.undefined)
     
     @scala.inline
-    def deleteIncludedCustomListGroup: Self = this.set("includedCustomListGroup", js.undefined)
+    def setIncludedFirstAndThirdPartyAudienceGroupsVarargs(value: FirstAndThirdPartyAudienceGroup*): Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", js.Array(value :_*))
     
     @scala.inline
-    def setIncludedFirstAndThirdPartyAudienceGroupsVarargs(value: FirstAndThirdPartyAudienceGroup*): Self = this.set("includedFirstAndThirdPartyAudienceGroups", js.Array(value :_*))
+    def setIncludedGoogleAudienceGroup(value: GoogleAudienceGroup): Self = StObject.set(x, "includedGoogleAudienceGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedFirstAndThirdPartyAudienceGroups(value: js.Array[FirstAndThirdPartyAudienceGroup]): Self = this.set("includedFirstAndThirdPartyAudienceGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludedFirstAndThirdPartyAudienceGroups: Self = this.set("includedFirstAndThirdPartyAudienceGroups", js.undefined)
-    
-    @scala.inline
-    def setIncludedGoogleAudienceGroup(value: GoogleAudienceGroup): Self = this.set("includedGoogleAudienceGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludedGoogleAudienceGroup: Self = this.set("includedGoogleAudienceGroup", js.undefined)
+    def setIncludedGoogleAudienceGroupUndefined: Self = StObject.set(x, "includedGoogleAudienceGroup", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait BorderRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The border-right CSS property is a shorthand that sets border-right-width, border-right-style,
@@ -24,30 +25,18 @@ object BorderRightProps {
   }
   
   @scala.inline
-  implicit class BorderRightPropsOps[Self <: BorderRightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderRightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderRightPropsMutableBuilder[Self <: BorderRightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderRightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderRight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderRightNull: Self = StObject.set(x, "borderRight", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
     
     @scala.inline
-    def setBorderRightVarargs(value: (TVal | Null)*): Self = this.set("borderRight", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderRight(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderRight: Self = this.set("borderRight", js.undefined)
-    
-    @scala.inline
-    def setBorderRightNull: Self = this.set("borderRight", null)
+    def setBorderRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderRight", js.Array(value :_*))
   }
 }

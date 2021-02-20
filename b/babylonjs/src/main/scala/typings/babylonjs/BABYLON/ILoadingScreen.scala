@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILoadingScreen extends js.Object {
+trait ILoadingScreen extends StObject {
   
   /**
     * Function called to display the loading screen
@@ -41,30 +42,18 @@ object ILoadingScreen {
   }
   
   @scala.inline
-  implicit class ILoadingScreenOps[Self <: ILoadingScreen] (val x: Self) extends AnyVal {
+  implicit class ILoadingScreenMutableBuilder[Self <: ILoadingScreen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayLoadingUI(value: () => Unit): Self = StObject.set(x, "displayLoadingUI", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideLoadingUI(value: () => Unit): Self = StObject.set(x, "hideLoadingUI", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadingUIBackgroundColor(value: String): Self = StObject.set(x, "loadingUIBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLoadingUI(value: () => Unit): Self = this.set("displayLoadingUI", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHideLoadingUI(value: () => Unit): Self = this.set("hideLoadingUI", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLoadingUIBackgroundColor(value: String): Self = this.set("loadingUIBackgroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadingUIText(value: String): Self = this.set("loadingUIText", value.asInstanceOf[js.Any])
+    def setLoadingUIText(value: String): Self = StObject.set(x, "loadingUIText", value.asInstanceOf[js.Any])
   }
 }

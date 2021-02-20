@@ -13,13 +13,14 @@ import typings.hellosignEmbedded.hellosignEmbeddedStrings.reassign
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.send
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.sign
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hellosign-embedded", "HelloSign.HelloSign")
 @js.native
-class HelloSign () extends js.Object {
+class HelloSign () extends StObject {
   def this(opts: Options) = this()
   
   def close(): Unit = js.native
@@ -128,18 +129,44 @@ class HelloSign () extends js.Object {
   def open(url: String): Unit = js.native
   def open(url: String, opts: Options): Unit = js.native
 }
-/* static members */
-@JSImport("hellosign-embedded", "HelloSign.HelloSign")
-@js.native
-object HelloSign extends js.Object {
+object HelloSign {
   
-  var classNames: ClassNames = js.native
+  @JSImport("hellosign-embedded", "HelloSign.HelloSign")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var events: Events = js.native
+  /* static member */
+  @JSImport("hellosign-embedded", "HelloSign.HelloSign.classNames")
+  @js.native
+  def classNames: ClassNames = js.native
+  @scala.inline
+  def classNames_=(x: ClassNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
   
-  var locales: Locales = js.native
+  /* static member */
+  @JSImport("hellosign-embedded", "HelloSign.HelloSign.events")
+  @js.native
+  def events: Events = js.native
+  @scala.inline
+  def events_=(x: Events): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
   
-  var messages: Messages = js.native
+  /* static member */
+  @JSImport("hellosign-embedded", "HelloSign.HelloSign.locales")
+  @js.native
+  def locales: Locales = js.native
+  @scala.inline
+  def locales_=(x: Locales): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locales")(x.asInstanceOf[js.Any])
   
-  var version: String = js.native
+  /* static member */
+  @JSImport("hellosign-embedded", "HelloSign.HelloSign.messages")
+  @js.native
+  def messages: Messages = js.native
+  @scala.inline
+  def messages_=(x: Messages): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messages")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("hellosign-embedded", "HelloSign.HelloSign.version")
+  @js.native
+  def version: String = js.native
+  @scala.inline
+  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

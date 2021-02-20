@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * unsupported types, use `unknown_type_id`.
   */
 @js.native
-trait SchemaCompanyInfoSource extends js.Object {
+trait SchemaCompanyInfoSource extends StObject {
   
   /**
     * Optional.  The Google&#39;s Knowledge Graph value for the employer&#39;s
@@ -45,42 +46,30 @@ object SchemaCompanyInfoSource {
   }
   
   @scala.inline
-  implicit class SchemaCompanyInfoSourceOps[Self <: SchemaCompanyInfoSource] (val x: Self) extends AnyVal {
+  implicit class SchemaCompanyInfoSourceMutableBuilder[Self <: SchemaCompanyInfoSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFreebaseMid(value: String): Self = StObject.set(x, "freebaseMid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFreebaseMidUndefined: Self = StObject.set(x, "freebaseMid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGplusId(value: String): Self = StObject.set(x, "gplusId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreebaseMid(value: String): Self = this.set("freebaseMid", value.asInstanceOf[js.Any])
+    def setGplusIdUndefined: Self = StObject.set(x, "gplusId", js.undefined)
     
     @scala.inline
-    def deleteFreebaseMid: Self = this.set("freebaseMid", js.undefined)
+    def setMapsCid(value: String): Self = StObject.set(x, "mapsCid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGplusId(value: String): Self = this.set("gplusId", value.asInstanceOf[js.Any])
+    def setMapsCidUndefined: Self = StObject.set(x, "mapsCid", js.undefined)
     
     @scala.inline
-    def deleteGplusId: Self = this.set("gplusId", js.undefined)
+    def setUnknownTypeId(value: String): Self = StObject.set(x, "unknownTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapsCid(value: String): Self = this.set("mapsCid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMapsCid: Self = this.set("mapsCid", js.undefined)
-    
-    @scala.inline
-    def setUnknownTypeId(value: String): Self = this.set("unknownTypeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknownTypeId: Self = this.set("unknownTypeId", js.undefined)
+    def setUnknownTypeIdUndefined: Self = StObject.set(x, "unknownTypeId", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceTemplate extends js.Object {
+trait WorkspaceTemplate extends StObject {
   
   /**
     * Uri of the associated definition
@@ -48,36 +49,24 @@ object WorkspaceTemplate {
   }
   
   @scala.inline
-  implicit class WorkspaceTemplateOps[Self <: WorkspaceTemplate] (val x: Self) extends AnyVal {
+  implicit class WorkspaceTemplateMutableBuilder[Self <: WorkspaceTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitionUri(value: String): Self = StObject.set(x, "definitionUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionUri(value: String): Self = this.set("definitionUri", value.asInstanceOf[js.Any])
+    def setMappings(value: js.Array[WorkspaceMapping]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedBy(value: String): Self = this.set("lastModifiedBy", value.asInstanceOf[js.Any])
+    def setMappingsVarargs(value: WorkspaceMapping*): Self = StObject.set(x, "mappings", js.Array(value :_*))
     
     @scala.inline
-    def setLastModifiedDate(value: Date): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMappingsVarargs(value: WorkspaceMapping*): Self = this.set("mappings", js.Array(value :_*))
-    
-    @scala.inline
-    def setMappings(value: js.Array[WorkspaceMapping]): Self = this.set("mappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkspaceId(value: Double): Self = this.set("workspaceId", value.asInstanceOf[js.Any])
+    def setWorkspaceId(value: Double): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }
 }

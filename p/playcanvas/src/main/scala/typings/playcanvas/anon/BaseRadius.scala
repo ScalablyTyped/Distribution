@@ -1,11 +1,12 @@
 package typings.playcanvas.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseRadius extends js.Object {
+trait BaseRadius extends StObject {
   
   var baseRadius: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object BaseRadius {
   }
   
   @scala.inline
-  implicit class BaseRadiusOps[Self <: BaseRadius] (val x: Self) extends AnyVal {
+  implicit class BaseRadiusMutableBuilder[Self <: BaseRadius] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseRadius(value: Double): Self = StObject.set(x, "baseRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseRadiusUndefined: Self = StObject.set(x, "baseRadius", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapSegments(value: Double): Self = StObject.set(x, "capSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseRadius(value: Double): Self = this.set("baseRadius", value.asInstanceOf[js.Any])
+    def setCapSegmentsUndefined: Self = StObject.set(x, "capSegments", js.undefined)
     
     @scala.inline
-    def deleteBaseRadius: Self = this.set("baseRadius", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapSegments(value: Double): Self = this.set("capSegments", value.asInstanceOf[js.Any])
+    def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapSegments: Self = this.set("capSegments", js.undefined)
+    def setHeightSegmentsUndefined: Self = StObject.set(x, "heightSegments", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPeakRadius(value: Double): Self = StObject.set(x, "peakRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightSegments(value: Double): Self = this.set("heightSegments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeightSegments: Self = this.set("heightSegments", js.undefined)
-    
-    @scala.inline
-    def setPeakRadius(value: Double): Self = this.set("peakRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeakRadius: Self = this.set("peakRadius", js.undefined)
+    def setPeakRadiusUndefined: Self = StObject.set(x, "peakRadius", js.undefined)
   }
 }

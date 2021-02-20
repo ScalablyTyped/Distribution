@@ -3,6 +3,7 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.`raster-dem`
 import typings.mapboxGl.mapboxGlStrings.mapbox
 import typings.mapboxGl.mapboxGlStrings.terrarium
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,75 +43,63 @@ object RasterDemSource {
   }
   
   @scala.inline
-  implicit class RasterDemSourceOps[Self <: RasterDemSource] (val x: Self) extends AnyVal {
+  implicit class RasterDemSourceMutableBuilder[Self <: RasterDemSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: `raster-dem`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def setAttribution(value: String): Self = this.set("attribution", value.asInstanceOf[js.Any])
+    def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def deleteAttribution: Self = this.set("attribution", js.undefined)
+    def setEncoding(value: terrarium | mapbox): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsVarargs(value: Double*): Self = this.set("bounds", js.Array(value :_*))
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setBounds(value: js.Array[Double]): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
     
     @scala.inline
-    def setEncoding(value: terrarium | mapbox): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
     
     @scala.inline
-    def setMaxzoom(value: Double): Self = this.set("maxzoom", value.asInstanceOf[js.Any])
+    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxzoom: Self = this.set("maxzoom", js.undefined)
+    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
     @scala.inline
-    def setMinzoom(value: Double): Self = this.set("minzoom", value.asInstanceOf[js.Any])
+    def setTiles(value: js.Array[String]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinzoom: Self = this.set("minzoom", js.undefined)
+    def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
     @scala.inline
-    def setTileSize(value: Double): Self = this.set("tileSize", value.asInstanceOf[js.Any])
+    def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value :_*))
     
     @scala.inline
-    def deleteTileSize: Self = this.set("tileSize", js.undefined)
+    def setType(value: `raster-dem`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTilesVarargs(value: String*): Self = this.set("tiles", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiles(value: js.Array[String]): Self = this.set("tiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiles: Self = this.set("tiles", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

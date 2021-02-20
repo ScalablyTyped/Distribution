@@ -1,11 +1,12 @@
 package typings.clearbladejsServer.CbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Device extends js.Object {
+trait Device extends StObject {
   
   var URI: String = js.native
   
@@ -38,39 +39,27 @@ object Device {
   }
   
   @scala.inline
-  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelete(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFetch(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setURI(value: String): Self = this.set("URI", value.asInstanceOf[js.Any])
+    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: (js.Object, CbCallback) => Unit): Self = this.set("create", js.Any.fromFunction2(value))
+    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: (Query, CbCallback) => Unit): Self = this.set("delete", js.Any.fromFunction2(value))
+    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetch(value: (Query, CbCallback) => Unit): Self = this.set("fetch", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSystemKey(value: String): Self = this.set("systemKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemSecret(value: String): Self = this.set("systemSecret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: (Query, js.Object, CbCallback) => Unit): Self = this.set("update", js.Any.fromFunction3(value))
+    def setUpdate(value: (Query, js.Object, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.vscodeJsonrpc.messagesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vscodeJsonrpc.vscodeJsonrpcStrings.`send-notification`
   - typings.vscodeJsonrpc.vscodeJsonrpcStrings.`receive-notification`
 */
-trait LSPMessageType extends js.Object
+trait LSPMessageType extends StObject
 object LSPMessageType {
   
   @scala.inline

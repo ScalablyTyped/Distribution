@@ -4,20 +4,16 @@ import typings.pulumiKubernetes.v2HelmMod.ChartOpts
 import typings.pulumiKubernetes.v2HelmMod.LocalChartOpts
 import typings.pulumiKubernetes.v2HelmMod.ResolvedFetchOpts
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes", "helm")
-@js.native
-object helm extends js.Object {
+object helm {
   
-  @js.native
-  object v2 extends js.Object {
+  object v2 {
     
-    def fetch(chart: String): Unit = js.native
-    def fetch(chart: String, opts: ResolvedFetchOpts): Unit = js.native
-    
+    @JSImport("@pulumi/kubernetes", "helm.v2.Chart")
     @js.native
     class Chart protected ()
       extends typings.pulumiKubernetes.helmMod.v2.Chart {
@@ -32,11 +28,18 @@ object helm extends js.Object {
       def this(releaseName: String, config: ChartOpts, opts: ComponentResourceOptions) = this()
       def this(releaseName: String, config: LocalChartOpts, opts: ComponentResourceOptions) = this()
     }
+    
+    @JSImport("@pulumi/kubernetes", "helm.v2.fetch")
+    @js.native
+    def fetch(chart: String): Unit = js.native
+    @JSImport("@pulumi/kubernetes", "helm.v2.fetch")
+    @js.native
+    def fetch(chart: String, opts: ResolvedFetchOpts): Unit = js.native
   }
   
-  @js.native
-  object v3 extends js.Object {
+  object v3 {
     
+    @JSImport("@pulumi/kubernetes", "helm.v3.Chart")
     @js.native
     class Chart protected ()
       extends typings.pulumiKubernetes.helmMod.v3.Chart {

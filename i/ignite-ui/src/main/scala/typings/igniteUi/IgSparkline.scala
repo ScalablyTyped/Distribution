@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -386,348 +387,336 @@ object IgSparkline {
   }
   
   @scala.inline
-  implicit class IgSparklineOps[Self <: IgSparkline] (val x: Self) extends AnyVal {
+  implicit class IgSparklineMutableBuilder[Self <: IgSparkline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrush(value: String): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrushUndefined: Self = StObject.set(x, "brush", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataBinding(value: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBrush(value: String): Self = this.set("brush", value.asInstanceOf[js.Any])
+    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def deleteBrush: Self = this.set("brush", js.undefined)
+    def setDataBound(value: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDataBinding(value: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit): Self = this.set("dataBinding", js.Any.fromFunction2(value))
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit): Self = this.set("dataBound", js.Any.fromFunction2(value))
+    def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataSourceUrl(value: String): Self = StObject.set(x, "dataSourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
+    def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
     @scala.inline
-    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
+    def setDisplayNormalRangeInFront(value: Boolean): Self = StObject.set(x, "displayNormalRangeInFront", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceUrl(value: String): Self = this.set("dataSourceUrl", value.asInstanceOf[js.Any])
+    def setDisplayNormalRangeInFrontUndefined: Self = StObject.set(x, "displayNormalRangeInFront", js.undefined)
     
     @scala.inline
-    def deleteDataSourceUrl: Self = this.set("dataSourceUrl", js.undefined)
+    def setDisplayType(value: String): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayNormalRangeInFront(value: Boolean): Self = this.set("displayNormalRangeInFront", value.asInstanceOf[js.Any])
+    def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
     
     @scala.inline
-    def deleteDisplayNormalRangeInFront: Self = this.set("displayNormalRangeInFront", js.undefined)
+    def setFirstMarkerBrush(value: String): Self = StObject.set(x, "firstMarkerBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayType(value: String): Self = this.set("displayType", value.asInstanceOf[js.Any])
+    def setFirstMarkerBrushUndefined: Self = StObject.set(x, "firstMarkerBrush", js.undefined)
     
     @scala.inline
-    def deleteDisplayType: Self = this.set("displayType", js.undefined)
+    def setFirstMarkerSize(value: Double): Self = StObject.set(x, "firstMarkerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstMarkerBrush(value: String): Self = this.set("firstMarkerBrush", value.asInstanceOf[js.Any])
+    def setFirstMarkerSizeUndefined: Self = StObject.set(x, "firstMarkerSize", js.undefined)
     
     @scala.inline
-    def deleteFirstMarkerBrush: Self = this.set("firstMarkerBrush", js.undefined)
+    def setFirstMarkerVisibility(value: String): Self = StObject.set(x, "firstMarkerVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstMarkerSize(value: Double): Self = this.set("firstMarkerSize", value.asInstanceOf[js.Any])
+    def setFirstMarkerVisibilityUndefined: Self = StObject.set(x, "firstMarkerVisibility", js.undefined)
     
     @scala.inline
-    def deleteFirstMarkerSize: Self = this.set("firstMarkerSize", js.undefined)
+    def setFormatLabel(value: js.Any): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstMarkerVisibility(value: String): Self = this.set("firstMarkerVisibility", value.asInstanceOf[js.Any])
+    def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
     @scala.inline
-    def deleteFirstMarkerVisibility: Self = this.set("firstMarkerVisibility", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatLabel(value: js.Any): Self = this.set("formatLabel", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFormatLabel: Self = this.set("formatLabel", js.undefined)
+    def setHideTooltip(value: (/* event */ Event, /* ui */ HideTooltipEventUIParam) => Unit): Self = StObject.set(x, "hideTooltip", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHideTooltipUndefined: Self = StObject.set(x, "hideTooltip", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHighMarkerBrush(value: String): Self = StObject.set(x, "highMarkerBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideTooltip(value: (/* event */ Event, /* ui */ HideTooltipEventUIParam) => Unit): Self = this.set("hideTooltip", js.Any.fromFunction2(value))
+    def setHighMarkerBrushUndefined: Self = StObject.set(x, "highMarkerBrush", js.undefined)
     
     @scala.inline
-    def deleteHideTooltip: Self = this.set("hideTooltip", js.undefined)
+    def setHighMarkerSize(value: Double): Self = StObject.set(x, "highMarkerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighMarkerBrush(value: String): Self = this.set("highMarkerBrush", value.asInstanceOf[js.Any])
+    def setHighMarkerSizeUndefined: Self = StObject.set(x, "highMarkerSize", js.undefined)
     
     @scala.inline
-    def deleteHighMarkerBrush: Self = this.set("highMarkerBrush", js.undefined)
+    def setHighMarkerVisibility(value: String): Self = StObject.set(x, "highMarkerVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighMarkerSize(value: Double): Self = this.set("highMarkerSize", value.asInstanceOf[js.Any])
+    def setHighMarkerVisibilityUndefined: Self = StObject.set(x, "highMarkerVisibility", js.undefined)
     
     @scala.inline
-    def deleteHighMarkerSize: Self = this.set("highMarkerSize", js.undefined)
+    def setHorizontalAxisBrush(value: String): Self = StObject.set(x, "horizontalAxisBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighMarkerVisibility(value: String): Self = this.set("highMarkerVisibility", value.asInstanceOf[js.Any])
+    def setHorizontalAxisBrushUndefined: Self = StObject.set(x, "horizontalAxisBrush", js.undefined)
     
     @scala.inline
-    def deleteHighMarkerVisibility: Self = this.set("highMarkerVisibility", js.undefined)
+    def setHorizontalAxisLabel(value: js.Any): Self = StObject.set(x, "horizontalAxisLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAxisBrush(value: String): Self = this.set("horizontalAxisBrush", value.asInstanceOf[js.Any])
+    def setHorizontalAxisLabelUndefined: Self = StObject.set(x, "horizontalAxisLabel", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAxisBrush: Self = this.set("horizontalAxisBrush", js.undefined)
+    def setHorizontalAxisVisibility(value: String): Self = StObject.set(x, "horizontalAxisVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAxisLabel(value: js.Any): Self = this.set("horizontalAxisLabel", value.asInstanceOf[js.Any])
+    def setHorizontalAxisVisibilityUndefined: Self = StObject.set(x, "horizontalAxisVisibility", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAxisLabel: Self = this.set("horizontalAxisLabel", js.undefined)
+    def setLabelMemberPath(value: String): Self = StObject.set(x, "labelMemberPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAxisVisibility(value: String): Self = this.set("horizontalAxisVisibility", value.asInstanceOf[js.Any])
+    def setLabelMemberPathUndefined: Self = StObject.set(x, "labelMemberPath", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAxisVisibility: Self = this.set("horizontalAxisVisibility", js.undefined)
+    def setLastMarkerBrush(value: String): Self = StObject.set(x, "lastMarkerBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMemberPath(value: String): Self = this.set("labelMemberPath", value.asInstanceOf[js.Any])
+    def setLastMarkerBrushUndefined: Self = StObject.set(x, "lastMarkerBrush", js.undefined)
     
     @scala.inline
-    def deleteLabelMemberPath: Self = this.set("labelMemberPath", js.undefined)
+    def setLastMarkerSize(value: Double): Self = StObject.set(x, "lastMarkerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastMarkerBrush(value: String): Self = this.set("lastMarkerBrush", value.asInstanceOf[js.Any])
+    def setLastMarkerSizeUndefined: Self = StObject.set(x, "lastMarkerSize", js.undefined)
     
     @scala.inline
-    def deleteLastMarkerBrush: Self = this.set("lastMarkerBrush", js.undefined)
+    def setLastMarkerVisibility(value: String): Self = StObject.set(x, "lastMarkerVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastMarkerSize(value: Double): Self = this.set("lastMarkerSize", value.asInstanceOf[js.Any])
+    def setLastMarkerVisibilityUndefined: Self = StObject.set(x, "lastMarkerVisibility", js.undefined)
     
     @scala.inline
-    def deleteLastMarkerSize: Self = this.set("lastMarkerSize", js.undefined)
+    def setLineThickness(value: Double): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastMarkerVisibility(value: String): Self = this.set("lastMarkerVisibility", value.asInstanceOf[js.Any])
+    def setLineThicknessUndefined: Self = StObject.set(x, "lineThickness", js.undefined)
     
     @scala.inline
-    def deleteLastMarkerVisibility: Self = this.set("lastMarkerVisibility", js.undefined)
+    def setLowMarkerBrush(value: String): Self = StObject.set(x, "lowMarkerBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineThickness(value: Double): Self = this.set("lineThickness", value.asInstanceOf[js.Any])
+    def setLowMarkerBrushUndefined: Self = StObject.set(x, "lowMarkerBrush", js.undefined)
     
     @scala.inline
-    def deleteLineThickness: Self = this.set("lineThickness", js.undefined)
+    def setLowMarkerSize(value: Double): Self = StObject.set(x, "lowMarkerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowMarkerBrush(value: String): Self = this.set("lowMarkerBrush", value.asInstanceOf[js.Any])
+    def setLowMarkerSizeUndefined: Self = StObject.set(x, "lowMarkerSize", js.undefined)
     
     @scala.inline
-    def deleteLowMarkerBrush: Self = this.set("lowMarkerBrush", js.undefined)
+    def setLowMarkerVisibility(value: String): Self = StObject.set(x, "lowMarkerVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowMarkerSize(value: Double): Self = this.set("lowMarkerSize", value.asInstanceOf[js.Any])
+    def setLowMarkerVisibilityUndefined: Self = StObject.set(x, "lowMarkerVisibility", js.undefined)
     
     @scala.inline
-    def deleteLowMarkerSize: Self = this.set("lowMarkerSize", js.undefined)
+    def setMarkerBrush(value: String): Self = StObject.set(x, "markerBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowMarkerVisibility(value: String): Self = this.set("lowMarkerVisibility", value.asInstanceOf[js.Any])
+    def setMarkerBrushUndefined: Self = StObject.set(x, "markerBrush", js.undefined)
     
     @scala.inline
-    def deleteLowMarkerVisibility: Self = this.set("lowMarkerVisibility", js.undefined)
+    def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerBrush(value: String): Self = this.set("markerBrush", value.asInstanceOf[js.Any])
+    def setMarkerSizeUndefined: Self = StObject.set(x, "markerSize", js.undefined)
     
     @scala.inline
-    def deleteMarkerBrush: Self = this.set("markerBrush", js.undefined)
+    def setMarkerVisibility(value: String): Self = StObject.set(x, "markerVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerSize(value: Double): Self = this.set("markerSize", value.asInstanceOf[js.Any])
+    def setMarkerVisibilityUndefined: Self = StObject.set(x, "markerVisibility", js.undefined)
     
     @scala.inline
-    def deleteMarkerSize: Self = this.set("markerSize", js.undefined)
+    def setMaxRecCount(value: Double): Self = StObject.set(x, "maxRecCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerVisibility(value: String): Self = this.set("markerVisibility", value.asInstanceOf[js.Any])
+    def setMaxRecCountUndefined: Self = StObject.set(x, "maxRecCount", js.undefined)
     
     @scala.inline
-    def deleteMarkerVisibility: Self = this.set("markerVisibility", js.undefined)
+    def setNegativeBrush(value: String): Self = StObject.set(x, "negativeBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecCount(value: Double): Self = this.set("maxRecCount", value.asInstanceOf[js.Any])
+    def setNegativeBrushUndefined: Self = StObject.set(x, "negativeBrush", js.undefined)
     
     @scala.inline
-    def deleteMaxRecCount: Self = this.set("maxRecCount", js.undefined)
+    def setNegativeMarkerBrush(value: String): Self = StObject.set(x, "negativeMarkerBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeBrush(value: String): Self = this.set("negativeBrush", value.asInstanceOf[js.Any])
+    def setNegativeMarkerBrushUndefined: Self = StObject.set(x, "negativeMarkerBrush", js.undefined)
     
     @scala.inline
-    def deleteNegativeBrush: Self = this.set("negativeBrush", js.undefined)
+    def setNegativeMarkerSize(value: Double): Self = StObject.set(x, "negativeMarkerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeMarkerBrush(value: String): Self = this.set("negativeMarkerBrush", value.asInstanceOf[js.Any])
+    def setNegativeMarkerSizeUndefined: Self = StObject.set(x, "negativeMarkerSize", js.undefined)
     
     @scala.inline
-    def deleteNegativeMarkerBrush: Self = this.set("negativeMarkerBrush", js.undefined)
+    def setNegativeMarkerVisibility(value: String): Self = StObject.set(x, "negativeMarkerVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeMarkerSize(value: Double): Self = this.set("negativeMarkerSize", value.asInstanceOf[js.Any])
+    def setNegativeMarkerVisibilityUndefined: Self = StObject.set(x, "negativeMarkerVisibility", js.undefined)
     
     @scala.inline
-    def deleteNegativeMarkerSize: Self = this.set("negativeMarkerSize", js.undefined)
+    def setNormalRangeFill(value: String): Self = StObject.set(x, "normalRangeFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeMarkerVisibility(value: String): Self = this.set("negativeMarkerVisibility", value.asInstanceOf[js.Any])
+    def setNormalRangeFillUndefined: Self = StObject.set(x, "normalRangeFill", js.undefined)
     
     @scala.inline
-    def deleteNegativeMarkerVisibility: Self = this.set("negativeMarkerVisibility", js.undefined)
+    def setNormalRangeMaximum(value: Double): Self = StObject.set(x, "normalRangeMaximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalRangeFill(value: String): Self = this.set("normalRangeFill", value.asInstanceOf[js.Any])
+    def setNormalRangeMaximumUndefined: Self = StObject.set(x, "normalRangeMaximum", js.undefined)
     
     @scala.inline
-    def deleteNormalRangeFill: Self = this.set("normalRangeFill", js.undefined)
+    def setNormalRangeMinimum(value: Double): Self = StObject.set(x, "normalRangeMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalRangeMaximum(value: Double): Self = this.set("normalRangeMaximum", value.asInstanceOf[js.Any])
+    def setNormalRangeMinimumUndefined: Self = StObject.set(x, "normalRangeMinimum", js.undefined)
     
     @scala.inline
-    def deleteNormalRangeMaximum: Self = this.set("normalRangeMaximum", js.undefined)
+    def setNormalRangeVisibility(value: String): Self = StObject.set(x, "normalRangeVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalRangeMinimum(value: Double): Self = this.set("normalRangeMinimum", value.asInstanceOf[js.Any])
+    def setNormalRangeVisibilityUndefined: Self = StObject.set(x, "normalRangeVisibility", js.undefined)
     
     @scala.inline
-    def deleteNormalRangeMinimum: Self = this.set("normalRangeMinimum", js.undefined)
+    def setPixelScalingRatio(value: Double): Self = StObject.set(x, "pixelScalingRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalRangeVisibility(value: String): Self = this.set("normalRangeVisibility", value.asInstanceOf[js.Any])
+    def setPixelScalingRatioUndefined: Self = StObject.set(x, "pixelScalingRatio", js.undefined)
     
     @scala.inline
-    def deleteNormalRangeVisibility: Self = this.set("normalRangeVisibility", js.undefined)
+    def setResponseDataKey(value: String): Self = StObject.set(x, "responseDataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelScalingRatio(value: Double): Self = this.set("pixelScalingRatio", value.asInstanceOf[js.Any])
+    def setResponseDataKeyUndefined: Self = StObject.set(x, "responseDataKey", js.undefined)
     
     @scala.inline
-    def deletePixelScalingRatio: Self = this.set("pixelScalingRatio", js.undefined)
+    def setResponseTotalRecCountKey(value: String): Self = StObject.set(x, "responseTotalRecCountKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDataKey(value: String): Self = this.set("responseDataKey", value.asInstanceOf[js.Any])
+    def setResponseTotalRecCountKeyUndefined: Self = StObject.set(x, "responseTotalRecCountKey", js.undefined)
     
     @scala.inline
-    def deleteResponseDataKey: Self = this.set("responseDataKey", js.undefined)
+    def setTooltipTemplate(value: String): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseTotalRecCountKey(value: String): Self = this.set("responseTotalRecCountKey", value.asInstanceOf[js.Any])
+    def setTooltipTemplateUndefined: Self = StObject.set(x, "tooltipTemplate", js.undefined)
     
     @scala.inline
-    def deleteResponseTotalRecCountKey: Self = this.set("responseTotalRecCountKey", js.undefined)
+    def setTrendLineBrush(value: String): Self = StObject.set(x, "trendLineBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipTemplate(value: String): Self = this.set("tooltipTemplate", value.asInstanceOf[js.Any])
+    def setTrendLineBrushUndefined: Self = StObject.set(x, "trendLineBrush", js.undefined)
     
     @scala.inline
-    def deleteTooltipTemplate: Self = this.set("tooltipTemplate", js.undefined)
+    def setTrendLinePeriod(value: Double): Self = StObject.set(x, "trendLinePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrendLineBrush(value: String): Self = this.set("trendLineBrush", value.asInstanceOf[js.Any])
+    def setTrendLinePeriodUndefined: Self = StObject.set(x, "trendLinePeriod", js.undefined)
     
     @scala.inline
-    def deleteTrendLineBrush: Self = this.set("trendLineBrush", js.undefined)
+    def setTrendLineThickness(value: Double): Self = StObject.set(x, "trendLineThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrendLinePeriod(value: Double): Self = this.set("trendLinePeriod", value.asInstanceOf[js.Any])
+    def setTrendLineThicknessUndefined: Self = StObject.set(x, "trendLineThickness", js.undefined)
     
     @scala.inline
-    def deleteTrendLinePeriod: Self = this.set("trendLinePeriod", js.undefined)
+    def setTrendLineType(value: String): Self = StObject.set(x, "trendLineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrendLineThickness(value: Double): Self = this.set("trendLineThickness", value.asInstanceOf[js.Any])
+    def setTrendLineTypeUndefined: Self = StObject.set(x, "trendLineType", js.undefined)
     
     @scala.inline
-    def deleteTrendLineThickness: Self = this.set("trendLineThickness", js.undefined)
+    def setUnknownValuePlotting(value: String): Self = StObject.set(x, "unknownValuePlotting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrendLineType(value: String): Self = this.set("trendLineType", value.asInstanceOf[js.Any])
+    def setUnknownValuePlottingUndefined: Self = StObject.set(x, "unknownValuePlotting", js.undefined)
     
     @scala.inline
-    def deleteTrendLineType: Self = this.set("trendLineType", js.undefined)
+    def setUpdateTooltip(value: (/* event */ Event, /* ui */ UpdateTooltipEventUIParam) => Unit): Self = StObject.set(x, "updateTooltip", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUnknownValuePlotting(value: String): Self = this.set("unknownValuePlotting", value.asInstanceOf[js.Any])
+    def setUpdateTooltipUndefined: Self = StObject.set(x, "updateTooltip", js.undefined)
     
     @scala.inline
-    def deleteUnknownValuePlotting: Self = this.set("unknownValuePlotting", js.undefined)
+    def setValueMemberPath(value: String): Self = StObject.set(x, "valueMemberPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTooltip(value: (/* event */ Event, /* ui */ UpdateTooltipEventUIParam) => Unit): Self = this.set("updateTooltip", js.Any.fromFunction2(value))
+    def setValueMemberPathUndefined: Self = StObject.set(x, "valueMemberPath", js.undefined)
     
     @scala.inline
-    def deleteUpdateTooltip: Self = this.set("updateTooltip", js.undefined)
+    def setVerticalAxisBrush(value: String): Self = StObject.set(x, "verticalAxisBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueMemberPath(value: String): Self = this.set("valueMemberPath", value.asInstanceOf[js.Any])
+    def setVerticalAxisBrushUndefined: Self = StObject.set(x, "verticalAxisBrush", js.undefined)
     
     @scala.inline
-    def deleteValueMemberPath: Self = this.set("valueMemberPath", js.undefined)
+    def setVerticalAxisLabel(value: js.Any): Self = StObject.set(x, "verticalAxisLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAxisBrush(value: String): Self = this.set("verticalAxisBrush", value.asInstanceOf[js.Any])
+    def setVerticalAxisLabelUndefined: Self = StObject.set(x, "verticalAxisLabel", js.undefined)
     
     @scala.inline
-    def deleteVerticalAxisBrush: Self = this.set("verticalAxisBrush", js.undefined)
+    def setVerticalAxisVisibility(value: String): Self = StObject.set(x, "verticalAxisVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAxisLabel(value: js.Any): Self = this.set("verticalAxisLabel", value.asInstanceOf[js.Any])
+    def setVerticalAxisVisibilityUndefined: Self = StObject.set(x, "verticalAxisVisibility", js.undefined)
     
     @scala.inline
-    def deleteVerticalAxisLabel: Self = this.set("verticalAxisLabel", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAxisVisibility(value: String): Self = this.set("verticalAxisVisibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAxisVisibility: Self = this.set("verticalAxisVisibility", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

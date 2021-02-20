@@ -22,12 +22,13 @@ import typings.maximMazurokGapiClientContent.anon.UploadType
 import typings.maximMazurokGapiClientContent.anon.UploadTypeUploadprotocol
 import typings.maximMazurokGapiClientContent.anon.UploadTypeUploadprotocolXgafv
 import typings.maximMazurokGapiClientContent.anon.UploadprotocolXgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrdersResource extends js.Object {
+trait OrdersResource extends StObject {
   
   def acknowledge(request: OauthtokenOrderId, body: OrdersAcknowledgeRequest): Request[OrdersAcknowledgeResponse] = js.native
   /** Marks an order as acknowledged. */

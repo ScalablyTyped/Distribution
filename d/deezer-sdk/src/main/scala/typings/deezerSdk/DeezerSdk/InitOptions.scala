@@ -1,5 +1,6 @@
 package typings.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link https://developers.deezer.com/sdk/javascript/player | Initialize a player}
   */
 @js.native
-trait InitOptions extends js.Object {
+trait InitOptions extends StObject {
   
   val appId: String = js.native
   
@@ -27,30 +28,18 @@ object InitOptions {
   }
   
   @scala.inline
-  implicit class InitOptionsOps[Self <: InitOptions] (val x: Self) extends AnyVal {
+  implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelUrl(value: String): Self = StObject.set(x, "channelUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayer(value: PlayerOptions): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChannelUrl(value: String): Self = this.set("channelUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayer(value: PlayerOptions): Self = this.set("player", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayer: Self = this.set("player", js.undefined)
+    def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
   }
 }

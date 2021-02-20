@@ -1,6 +1,7 @@
 package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.FunctionTypeAnnotation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,36 +42,24 @@ object FunctionTypeAnnotation_ {
   }
   
   @scala.inline
-  implicit class FunctionTypeAnnotation_Ops[Self <: FunctionTypeAnnotation_] (val x: Self) extends AnyVal {
+  implicit class FunctionTypeAnnotation_MutableBuilder[Self <: FunctionTypeAnnotation_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParams(value: js.Array[FunctionTypeParam_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamsVarargs(value: FunctionTypeParam_ *): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRest(value: FunctionTypeParam_): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: FunctionTypeParam_ *): Self = this.set("params", js.Array(value :_*))
+    def setReturnType(value: FlowTypeAnnotation): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Array[FunctionTypeParam_]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setType(value: FunctionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRest(value: FunctionTypeParam_): Self = this.set("rest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnType(value: FlowTypeAnnotation): Self = this.set("returnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: FunctionTypeAnnotation): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration_): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
+    def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
   }
 }

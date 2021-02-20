@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibilityScreenReaderSectionOptions extends js.Object {
+trait AccessibilityScreenReaderSectionOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format for the screen reader
@@ -76,60 +77,48 @@ object AccessibilityScreenReaderSectionOptions {
   }
   
   @scala.inline
-  implicit class AccessibilityScreenReaderSectionOptionsOps[Self <: AccessibilityScreenReaderSectionOptions] (val x: Self) extends AnyVal {
+  implicit class AccessibilityScreenReaderSectionOptionsMutableBuilder[Self <: AccessibilityScreenReaderSectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterChartFormat(value: String): Self = StObject.set(x, "afterChartFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterChartFormatUndefined: Self = StObject.set(x, "afterChartFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterChartFormatter(value: Chart_ => String): Self = StObject.set(x, "afterChartFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterChartFormat(value: String): Self = this.set("afterChartFormat", value.asInstanceOf[js.Any])
+    def setAfterChartFormatterUndefined: Self = StObject.set(x, "afterChartFormatter", js.undefined)
     
     @scala.inline
-    def deleteAfterChartFormat: Self = this.set("afterChartFormat", js.undefined)
+    def setAxisRangeDateFormat(value: String): Self = StObject.set(x, "axisRangeDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterChartFormatter(value: Chart_ => String): Self = this.set("afterChartFormatter", js.Any.fromFunction1(value))
+    def setAxisRangeDateFormatUndefined: Self = StObject.set(x, "axisRangeDateFormat", js.undefined)
     
     @scala.inline
-    def deleteAfterChartFormatter: Self = this.set("afterChartFormatter", js.undefined)
+    def setBeforeChartFormat(value: String): Self = StObject.set(x, "beforeChartFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisRangeDateFormat(value: String): Self = this.set("axisRangeDateFormat", value.asInstanceOf[js.Any])
+    def setBeforeChartFormatUndefined: Self = StObject.set(x, "beforeChartFormat", js.undefined)
     
     @scala.inline
-    def deleteAxisRangeDateFormat: Self = this.set("axisRangeDateFormat", js.undefined)
+    def setBeforeChartFormatter(value: Chart_ => String): Self = StObject.set(x, "beforeChartFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeChartFormat(value: String): Self = this.set("beforeChartFormat", value.asInstanceOf[js.Any])
+    def setBeforeChartFormatterUndefined: Self = StObject.set(x, "beforeChartFormatter", js.undefined)
     
     @scala.inline
-    def deleteBeforeChartFormat: Self = this.set("beforeChartFormat", js.undefined)
+    def setOnPlayAsSoundClick(value: /* evt */ MouseEvent => Unit): Self = StObject.set(x, "onPlayAsSoundClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeChartFormatter(value: Chart_ => String): Self = this.set("beforeChartFormatter", js.Any.fromFunction1(value))
+    def setOnPlayAsSoundClickUndefined: Self = StObject.set(x, "onPlayAsSoundClick", js.undefined)
     
     @scala.inline
-    def deleteBeforeChartFormatter: Self = this.set("beforeChartFormatter", js.undefined)
+    def setOnViewDataTableClick(value: /* evt */ MouseEvent => Unit): Self = StObject.set(x, "onViewDataTableClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPlayAsSoundClick(value: /* evt */ MouseEvent => Unit): Self = this.set("onPlayAsSoundClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnPlayAsSoundClick: Self = this.set("onPlayAsSoundClick", js.undefined)
-    
-    @scala.inline
-    def setOnViewDataTableClick(value: /* evt */ MouseEvent => Unit): Self = this.set("onViewDataTableClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnViewDataTableClick: Self = this.set("onViewDataTableClick", js.undefined)
+    def setOnViewDataTableClickUndefined: Self = StObject.set(x, "onViewDataTableClick", js.undefined)
   }
 }

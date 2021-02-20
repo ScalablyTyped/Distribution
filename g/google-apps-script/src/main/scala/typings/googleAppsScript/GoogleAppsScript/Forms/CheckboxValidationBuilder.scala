@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     checkBoxItem.setValidation(checkBoxValidation);
   */
 @js.native
-trait CheckboxValidationBuilder extends js.Object {
+trait CheckboxValidationBuilder extends StObject {
   
   def requireSelectAtLeast(number: Integer): CheckboxValidationBuilder = js.native
   
@@ -44,27 +45,15 @@ object CheckboxValidationBuilder {
   }
   
   @scala.inline
-  implicit class CheckboxValidationBuilderOps[Self <: CheckboxValidationBuilder] (val x: Self) extends AnyVal {
+  implicit class CheckboxValidationBuilderMutableBuilder[Self <: CheckboxValidationBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequireSelectAtLeast(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectAtLeast", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequireSelectAtMost(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectAtMost", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequireSelectAtLeast(value: Integer => CheckboxValidationBuilder): Self = this.set("requireSelectAtLeast", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequireSelectAtMost(value: Integer => CheckboxValidationBuilder): Self = this.set("requireSelectAtMost", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequireSelectExactly(value: Integer => CheckboxValidationBuilder): Self = this.set("requireSelectExactly", js.Any.fromFunction1(value))
+    def setRequireSelectExactly(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectExactly", js.Any.fromFunction1(value))
   }
 }

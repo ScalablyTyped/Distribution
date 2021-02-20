@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Extract extends js.Object {
+trait Extract extends StObject {
   
   var extract: String = js.native
   
@@ -22,27 +23,15 @@ object Extract {
   }
   
   @scala.inline
-  implicit class ExtractOps[Self <: Extract] (val x: Self) extends AnyVal {
+  implicit class ExtractMutableBuilder[Self <: Extract] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtract(value: String): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtractAttribute(value: String): Self = StObject.set(x, "extractAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtract(value: String): Self = this.set("extract", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtractAttribute(value: String): Self = this.set("extractAttribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
   }
 }

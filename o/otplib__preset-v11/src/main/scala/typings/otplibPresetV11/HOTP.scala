@@ -1,12 +1,13 @@
 package typings.otplibPresetV11
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HOTP extends js.Object {
+trait HOTP extends StObject {
   
   var HOTP: Instantiable0[typings.otplibPresetV11.HOTP] = js.native
   
@@ -42,42 +43,30 @@ object HOTP {
   }
   
   @scala.inline
-  implicit class HOTPOps[Self <: HOTP] (val x: Self) extends AnyVal {
+  implicit class HOTPMutableBuilder[Self <: HOTP] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheck(value: (String, String, Double) => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultOptions(value: HotpOptionsInterface): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerate(value: (String, Double) => String): Self = StObject.set(x, "generate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHOTP(value: Instantiable0[HOTP]): Self = this.set("HOTP", value.asInstanceOf[js.Any])
+    def setHOTP(value: Instantiable0[HOTP]): Self = StObject.set(x, "HOTP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheck(value: (String, String, Double) => Boolean): Self = this.set("check", js.Any.fromFunction3(value))
+    def setOptions(value: HotpOptionsInterface): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOptions(value: HotpOptionsInterface): Self = this.set("defaultOptions", value.asInstanceOf[js.Any])
+    def setOptionsAll(value: HotpOptionsInterface): Self = StObject.set(x, "optionsAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerate(value: (String, Double) => String): Self = this.set("generate", js.Any.fromFunction2(value))
+    def setResetOptions(value: () => HOTP): Self = StObject.set(x, "resetOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOptions(value: HotpOptionsInterface): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptionsAll(value: HotpOptionsInterface): Self = this.set("optionsAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResetOptions(value: () => HOTP): Self = this.set("resetOptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVerify(value: HotpVerifyOptionsInterface => Boolean): Self = this.set("verify", js.Any.fromFunction1(value))
+    def setVerify(value: HotpVerifyOptionsInterface => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
   }
 }

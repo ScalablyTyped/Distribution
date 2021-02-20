@@ -1,20 +1,35 @@
 package typings.kendoUi.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.kendoUi.kendo.ui.Stepper
-import typings.kendoUi.kendo.ui.StepperOptions
-import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofStepper
-  extends Instantiable1[/* element */ Element, Stepper]
-     with Instantiable2[/* element */ Element, /* options */ StepperOptions, Stepper] {
+trait TypeofStepper extends StObject {
   
+  /* static member */
   def extend(proto: js.Object): Stepper = js.native
   
+  /* static member */
   var fn: Stepper = js.native
+}
+object TypeofStepper {
+  
+  @scala.inline
+  def apply(extend: js.Object => Stepper, fn: Stepper): TypeofStepper = {
+    val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofStepper]
+  }
+  
+  @scala.inline
+  implicit class TypeofStepperMutableBuilder[Self <: TypeofStepper] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setExtend(value: js.Object => Stepper): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setFn(value: Stepper): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+  }
 }

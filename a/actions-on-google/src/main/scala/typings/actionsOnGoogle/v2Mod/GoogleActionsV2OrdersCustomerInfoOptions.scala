@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersCustomerInfoOptions extends js.Object {
+trait GoogleActionsV2OrdersCustomerInfoOptions extends StObject {
   
   /**
     * List of customer info properties.
@@ -21,27 +22,15 @@ object GoogleActionsV2OrdersCustomerInfoOptions {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersCustomerInfoOptionsOps[Self <: GoogleActionsV2OrdersCustomerInfoOptions] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersCustomerInfoOptionsMutableBuilder[Self <: GoogleActionsV2OrdersCustomerInfoOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerInfoProperties(value: js.Array[GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties]): Self = StObject.set(x, "customerInfoProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerInfoPropertiesUndefined: Self = StObject.set(x, "customerInfoProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomerInfoPropertiesVarargs(value: GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties*): Self = this.set("customerInfoProperties", js.Array(value :_*))
-    
-    @scala.inline
-    def setCustomerInfoProperties(value: js.Array[GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties]): Self = this.set("customerInfoProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerInfoProperties: Self = this.set("customerInfoProperties", js.undefined)
+    def setCustomerInfoPropertiesVarargs(value: GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties*): Self = StObject.set(x, "customerInfoProperties", js.Array(value :_*))
   }
 }

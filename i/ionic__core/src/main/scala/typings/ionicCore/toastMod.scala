@@ -12,14 +12,14 @@ import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.toastInterfaceMod.ToastButton
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/toast/toast", JSImport.Namespace)
-@js.native
-object toastMod extends js.Object {
+object toastMod {
   
+  @JSImport("@ionic/core/dist/types/components/toast/toast", "Toast")
   @js.native
   class Toast ()
     extends ComponentInterface

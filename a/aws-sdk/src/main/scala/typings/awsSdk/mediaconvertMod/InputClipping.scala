@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputClipping extends js.Object {
+trait InputClipping extends StObject {
   
   /**
     * Set End timecode (EndTimecode) to the end of the portion of the input you are clipping. The frame corresponding to the End timecode value is included in the clip. Start timecode or End timecode may be left blank, but not both. Use the format HH:MM:SS:FF or HH:MM:SS;FF, where HH is the hour, MM is the minute, SS is the second, and FF is the frame number. When choosing this value, take into account your setting for timecode source under input settings (InputTimecodeSource). For example, if you have embedded timecodes that start at 01:00:00:00 and you want your clip to end six minutes into the video, use 01:06:00:00.
@@ -26,30 +27,18 @@ object InputClipping {
   }
   
   @scala.inline
-  implicit class InputClippingOps[Self <: InputClipping] (val x: Self) extends AnyVal {
+  implicit class InputClippingMutableBuilder[Self <: InputClipping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTimecode(value: stringPattern010920405090509092): Self = StObject.set(x, "EndTimecode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimecodeUndefined: Self = StObject.set(x, "EndTimecode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartTimecode(value: stringPattern010920405090509092): Self = StObject.set(x, "StartTimecode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimecode(value: stringPattern010920405090509092): Self = this.set("EndTimecode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTimecode: Self = this.set("EndTimecode", js.undefined)
-    
-    @scala.inline
-    def setStartTimecode(value: stringPattern010920405090509092): Self = this.set("StartTimecode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimecode: Self = this.set("StartTimecode", js.undefined)
+    def setStartTimecodeUndefined: Self = StObject.set(x, "StartTimecode", js.undefined)
   }
 }

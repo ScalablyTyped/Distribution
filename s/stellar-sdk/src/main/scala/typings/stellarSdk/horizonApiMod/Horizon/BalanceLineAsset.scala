@@ -2,12 +2,13 @@ package typings.stellarSdk.horizonApiMod.Horizon
 
 import typings.stellarBase.mod.AssetType.credit12
 import typings.stellarBase.mod.AssetType.credit4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BalanceLineAsset[T /* <: credit4 | credit12 */] extends js.Object {
+trait BalanceLineAsset[T /* <: credit4 | credit12 */] extends StObject {
   
   var asset_code: String = js.native
   
@@ -51,54 +52,42 @@ object BalanceLineAsset {
   }
   
   @scala.inline
-  implicit class BalanceLineAssetOps[Self <: BalanceLineAsset[_], T /* <: credit4 | credit12 */] (val x: Self with BalanceLineAsset[T]) extends AnyVal {
+  implicit class BalanceLineAssetMutableBuilder[Self <: BalanceLineAsset[_], T /* <: credit4 | credit12 */] (val x: Self with BalanceLineAsset[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsset_code(value: String): Self = StObject.set(x, "asset_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsset_issuer(value: String): Self = StObject.set(x, "asset_issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsset_type(value: T): Self = StObject.set(x, "asset_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset_code(value: String): Self = this.set("asset_code", value.asInstanceOf[js.Any])
+    def setBalance(value: String): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset_issuer(value: String): Self = this.set("asset_issuer", value.asInstanceOf[js.Any])
+    def setBuying_liabilities(value: String): Self = StObject.set(x, "buying_liabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset_type(value: T): Self = this.set("asset_type", value.asInstanceOf[js.Any])
+    def setIs_authorized(value: Boolean): Self = StObject.set(x, "is_authorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalance(value: String): Self = this.set("balance", value.asInstanceOf[js.Any])
+    def setIs_authorized_to_maintain_liabilities(value: Boolean): Self = StObject.set(x, "is_authorized_to_maintain_liabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuying_liabilities(value: String): Self = this.set("buying_liabilities", value.asInstanceOf[js.Any])
+    def setLast_modified_ledger(value: Double): Self = StObject.set(x, "last_modified_ledger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_authorized(value: Boolean): Self = this.set("is_authorized", value.asInstanceOf[js.Any])
+    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_authorized_to_maintain_liabilities(value: Boolean): Self = this.set("is_authorized_to_maintain_liabilities", value.asInstanceOf[js.Any])
+    def setSelling_liabilities(value: String): Self = StObject.set(x, "selling_liabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_modified_ledger(value: Double): Self = this.set("last_modified_ledger", value.asInstanceOf[js.Any])
+    def setSponsor(value: String): Self = StObject.set(x, "sponsor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelling_liabilities(value: String): Self = this.set("selling_liabilities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSponsor(value: String): Self = this.set("sponsor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSponsor: Self = this.set("sponsor", js.undefined)
+    def setSponsorUndefined: Self = StObject.set(x, "sponsor", js.undefined)
   }
 }

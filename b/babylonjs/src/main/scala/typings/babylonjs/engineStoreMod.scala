@@ -3,46 +3,55 @@ package typings.babylonjs
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Engines/engineStore", JSImport.Namespace)
-@js.native
-object engineStoreMod extends js.Object {
+object engineStoreMod {
   
+  @JSImport("babylonjs/Engines/engineStore", "EngineStore")
   @js.native
-  class EngineStore () extends js.Object
+  class EngineStore () extends StObject
   /* static members */
-  @js.native
-  object EngineStore extends js.Object {
+  object EngineStore {
+    
+    @JSImport("babylonjs/Engines/engineStore", "EngineStore")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Texture content used if a texture cannot loaded
       * @ignorenaming
       */
-    var FallbackTexture: String = js.native
+    @JSImport("babylonjs/Engines/engineStore", "EngineStore.FallbackTexture")
+    @js.native
+    def FallbackTexture: String = js.native
+    @scala.inline
+    def FallbackTexture_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FallbackTexture")(x.asInstanceOf[js.Any])
     
     /** Gets the list of created engines */
-    var Instances: js.Array[Engine] = js.native
-    
-    /**
-      * Gets the latest created engine
-      */
-    def LastCreatedEngine: Nullable[Engine] = js.native
-    
-    /**
-      * Gets the latest created scene
-      */
-    def LastCreatedScene: Nullable[Scene] = js.native
+    @JSImport("babylonjs/Engines/engineStore", "EngineStore.Instances")
+    @js.native
+    def Instances: js.Array[Engine] = js.native
+    @scala.inline
+    def Instances_=(x: js.Array[Engine]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instances")(x.asInstanceOf[js.Any])
     
     /**
       * Gets or sets a global variable indicating if fallback texture must be used when a texture cannot be loaded
       * @ignorenaming
       */
-    var UseFallbackTexture: Boolean = js.native
+    @JSImport("babylonjs/Engines/engineStore", "EngineStore.UseFallbackTexture")
+    @js.native
+    def UseFallbackTexture: Boolean = js.native
+    @scala.inline
+    def UseFallbackTexture_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UseFallbackTexture")(x.asInstanceOf[js.Any])
     
     /** @hidden */
-    var _LastCreatedScene: Nullable[Scene] = js.native
+    @JSImport("babylonjs/Engines/engineStore", "EngineStore._LastCreatedScene")
+    @js.native
+    def _LastCreatedScene: Nullable[Scene] = js.native
+    @scala.inline
+    def _LastCreatedScene_=(x: Nullable[Scene]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LastCreatedScene")(x.asInstanceOf[js.Any])
   }
 }

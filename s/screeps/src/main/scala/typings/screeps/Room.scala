@@ -20,6 +20,7 @@ import typings.screeps.screepsStrings.source
 import typings.screeps.screepsStrings.structure
 import typings.screeps.screepsStrings.terrain
 import typings.screeps.screepsStrings.tombstone
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Every object in the room contains its linked Room instance in the room property.
   */
 @js.native
-trait Room extends js.Object {
+trait Room extends StObject {
   
   /**
     * The Controller structure of this room, if present, otherwise undefined.

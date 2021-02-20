@@ -19,13 +19,24 @@ import typings.postmark.serversMod.Servers
 import typings.postmark.signatureMod.SignatureDetails
 import typings.postmark.signatureMod.Signatures
 import typings.postmark.templateMod.TemplatesPush
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark/dist/client/AccountClient", JSImport.Namespace)
-@js.native
-object accountClientMod extends js.Object {
+object accountClientMod {
+  
+  @JSImport("postmark/dist/client/AccountClient", JSImport.Default)
+  @js.native
+  class default protected () extends AccountClient {
+    /**
+      * Create a new AccountClient
+      * @param accountToken The account token that should be used with requests.
+      * @param configOptions Various options to customize client behavior.
+      */
+    def this(accountToken: String) = this()
+    def this(accountToken: String, configOptions: Configuration) = this()
+  }
   
   @js.native
   trait AccountClient
@@ -271,16 +282,5 @@ object accountClientMod extends js.Object {
       */
     def verifySenderSignatureSPF(id: Double): js.Promise[SignatureDetails] = js.native
     def verifySenderSignatureSPF(id: Double, callback: Callback[SignatureDetails]): js.Promise[SignatureDetails] = js.native
-  }
-  
-  @js.native
-  class default protected () extends AccountClient {
-    /**
-      * Create a new AccountClient
-      * @param accountToken The account token that should be used with requests.
-      * @param configOptions Various options to customize client behavior.
-      */
-    def this(accountToken: String) = this()
-    def this(accountToken: String, configOptions: Configuration) = this()
   }
 }

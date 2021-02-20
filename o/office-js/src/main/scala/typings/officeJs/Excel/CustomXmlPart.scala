@@ -5,6 +5,7 @@ import typings.officeJs.Excel.Interfaces.CustomXmlPartLoadOptions
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.anon.Expand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

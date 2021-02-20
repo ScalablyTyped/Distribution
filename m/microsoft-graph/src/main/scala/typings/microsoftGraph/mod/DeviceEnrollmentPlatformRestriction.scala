@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceEnrollmentPlatformRestriction extends js.Object {
+trait DeviceEnrollmentPlatformRestriction extends StObject {
   
   // Max OS version supported
   var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.native
@@ -28,48 +29,36 @@ object DeviceEnrollmentPlatformRestriction {
   }
   
   @scala.inline
-  implicit class DeviceEnrollmentPlatformRestrictionOps[Self <: DeviceEnrollmentPlatformRestriction] (val x: Self) extends AnyVal {
+  implicit class DeviceEnrollmentPlatformRestrictionMutableBuilder[Self <: DeviceEnrollmentPlatformRestriction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOsMaximumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMaximumVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOsMaximumVersionNull: Self = StObject.set(x, "osMaximumVersion", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOsMaximumVersionUndefined: Self = StObject.set(x, "osMaximumVersion", js.undefined)
     
     @scala.inline
-    def setOsMaximumVersion(value: NullableOption[String]): Self = this.set("osMaximumVersion", value.asInstanceOf[js.Any])
+    def setOsMinimumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMinimumVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOsMaximumVersion: Self = this.set("osMaximumVersion", js.undefined)
+    def setOsMinimumVersionNull: Self = StObject.set(x, "osMinimumVersion", null)
     
     @scala.inline
-    def setOsMaximumVersionNull: Self = this.set("osMaximumVersion", null)
+    def setOsMinimumVersionUndefined: Self = StObject.set(x, "osMinimumVersion", js.undefined)
     
     @scala.inline
-    def setOsMinimumVersion(value: NullableOption[String]): Self = this.set("osMinimumVersion", value.asInstanceOf[js.Any])
+    def setPersonalDeviceEnrollmentBlocked(value: Boolean): Self = StObject.set(x, "personalDeviceEnrollmentBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOsMinimumVersion: Self = this.set("osMinimumVersion", js.undefined)
+    def setPersonalDeviceEnrollmentBlockedUndefined: Self = StObject.set(x, "personalDeviceEnrollmentBlocked", js.undefined)
     
     @scala.inline
-    def setOsMinimumVersionNull: Self = this.set("osMinimumVersion", null)
+    def setPlatformBlocked(value: Boolean): Self = StObject.set(x, "platformBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonalDeviceEnrollmentBlocked(value: Boolean): Self = this.set("personalDeviceEnrollmentBlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersonalDeviceEnrollmentBlocked: Self = this.set("personalDeviceEnrollmentBlocked", js.undefined)
-    
-    @scala.inline
-    def setPlatformBlocked(value: Boolean): Self = this.set("platformBlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatformBlocked: Self = this.set("platformBlocked", js.undefined)
+    def setPlatformBlockedUndefined: Self = StObject.set(x, "platformBlocked", js.undefined)
   }
 }

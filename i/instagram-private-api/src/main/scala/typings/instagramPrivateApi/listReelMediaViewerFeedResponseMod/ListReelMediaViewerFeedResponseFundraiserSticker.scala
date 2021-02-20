@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReelMediaViewerFeedResponseFundraiserSticker extends js.Object {
+trait ListReelMediaViewerFeedResponseFundraiserSticker extends StObject {
   
   var button_text_color: String = js.native
   
@@ -50,51 +51,39 @@ object ListReelMediaViewerFeedResponseFundraiserSticker {
   }
   
   @scala.inline
-  implicit class ListReelMediaViewerFeedResponseFundraiserStickerOps[Self <: ListReelMediaViewerFeedResponseFundraiserSticker] (val x: Self) extends AnyVal {
+  implicit class ListReelMediaViewerFeedResponseFundraiserStickerMutableBuilder[Self <: ListReelMediaViewerFeedResponseFundraiserSticker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton_text_color(value: String): Self = StObject.set(x, "button_text_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumption_sheet_config(value: ListReelMediaViewerFeedResponseConsumptionSheetConfig): Self = StObject.set(x, "consumption_sheet_config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton_text_color(value: String): Self = this.set("button_text_color", value.asInstanceOf[js.Any])
+    def setOriginal_subtitle_height(value: Double): Self = StObject.set(x, "original_subtitle_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumption_sheet_config(value: ListReelMediaViewerFeedResponseConsumptionSheetConfig): Self = this.set("consumption_sheet_config", value.asInstanceOf[js.Any])
+    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_background_color(value: String): Self = this.set("end_background_color", value.asInstanceOf[js.Any])
+    def setSource_name(value: String): Self = StObject.set(x, "source_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_subtitle_height(value: Double): Self = this.set("original_subtitle_height", value.asInstanceOf[js.Any])
+    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setSubtitle_color(value: String): Self = StObject.set(x, "subtitle_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_name(value: String): Self = this.set("source_name", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_background_color(value: String): Self = this.set("start_background_color", value.asInstanceOf[js.Any])
+    def setTitle_color(value: String): Self = StObject.set(x, "title_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitle_color(value: String): Self = this.set("subtitle_color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle_color(value: String): Self = this.set("title_color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: ListReelMediaViewerFeedResponseUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: ListReelMediaViewerFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

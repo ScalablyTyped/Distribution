@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceRecordSet extends js.Object {
+trait ResourceRecordSet extends StObject {
   
   /**
     *  Alias resource record sets only: Information about the AWS resource, such as a CloudFront distribution or an Amazon S3 bucket, that you want to route traffic to.  If you're creating resource records sets for a private hosted zone, note the following:   You can't create an alias resource record set in a private hosted zone to route traffic to a CloudFront distribution.   Creating geolocation alias resource record sets or latency alias resource record sets in a private hosted zone is unsupported.   For information about creating failover resource record sets in a private hosted zone, see Configuring Failover in a Private Hosted Zone in the Amazon Route 53 Developer Guide.  
@@ -81,93 +82,81 @@ object ResourceRecordSet {
   }
   
   @scala.inline
-  implicit class ResourceRecordSetOps[Self <: ResourceRecordSet] (val x: Self) extends AnyVal {
+  implicit class ResourceRecordSetMutableBuilder[Self <: ResourceRecordSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasTarget(value: AliasTarget): Self = StObject.set(x, "AliasTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasTargetUndefined: Self = StObject.set(x, "AliasTarget", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailover(value: ResourceRecordSetFailover): Self = StObject.set(x, "Failover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: DNSName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setFailoverUndefined: Self = StObject.set(x, "Failover", js.undefined)
     
     @scala.inline
-    def setType(value: RRType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setGeoLocation(value: GeoLocation): Self = StObject.set(x, "GeoLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasTarget(value: AliasTarget): Self = this.set("AliasTarget", value.asInstanceOf[js.Any])
+    def setGeoLocationUndefined: Self = StObject.set(x, "GeoLocation", js.undefined)
     
     @scala.inline
-    def deleteAliasTarget: Self = this.set("AliasTarget", js.undefined)
+    def setHealthCheckId(value: HealthCheckId): Self = StObject.set(x, "HealthCheckId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailover(value: ResourceRecordSetFailover): Self = this.set("Failover", value.asInstanceOf[js.Any])
+    def setHealthCheckIdUndefined: Self = StObject.set(x, "HealthCheckId", js.undefined)
     
     @scala.inline
-    def deleteFailover: Self = this.set("Failover", js.undefined)
+    def setMultiValueAnswer(value: ResourceRecordSetMultiValueAnswer): Self = StObject.set(x, "MultiValueAnswer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoLocation(value: GeoLocation): Self = this.set("GeoLocation", value.asInstanceOf[js.Any])
+    def setMultiValueAnswerUndefined: Self = StObject.set(x, "MultiValueAnswer", js.undefined)
     
     @scala.inline
-    def deleteGeoLocation: Self = this.set("GeoLocation", js.undefined)
+    def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckId(value: HealthCheckId): Self = this.set("HealthCheckId", value.asInstanceOf[js.Any])
+    def setRegion(value: ResourceRecordSetRegion): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHealthCheckId: Self = this.set("HealthCheckId", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def setMultiValueAnswer(value: ResourceRecordSetMultiValueAnswer): Self = this.set("MultiValueAnswer", value.asInstanceOf[js.Any])
+    def setResourceRecords(value: ResourceRecords): Self = StObject.set(x, "ResourceRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiValueAnswer: Self = this.set("MultiValueAnswer", js.undefined)
+    def setResourceRecordsUndefined: Self = StObject.set(x, "ResourceRecords", js.undefined)
     
     @scala.inline
-    def setRegion(value: ResourceRecordSetRegion): Self = this.set("Region", value.asInstanceOf[js.Any])
+    def setResourceRecordsVarargs(value: ResourceRecord*): Self = StObject.set(x, "ResourceRecords", js.Array(value :_*))
     
     @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
+    def setSetIdentifier(value: ResourceRecordSetIdentifier): Self = StObject.set(x, "SetIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceRecordsVarargs(value: ResourceRecord*): Self = this.set("ResourceRecords", js.Array(value :_*))
+    def setSetIdentifierUndefined: Self = StObject.set(x, "SetIdentifier", js.undefined)
     
     @scala.inline
-    def setResourceRecords(value: ResourceRecords): Self = this.set("ResourceRecords", value.asInstanceOf[js.Any])
+    def setTTL(value: TTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceRecords: Self = this.set("ResourceRecords", js.undefined)
+    def setTTLUndefined: Self = StObject.set(x, "TTL", js.undefined)
     
     @scala.inline
-    def setSetIdentifier(value: ResourceRecordSetIdentifier): Self = this.set("SetIdentifier", value.asInstanceOf[js.Any])
+    def setTrafficPolicyInstanceId(value: TrafficPolicyInstanceId): Self = StObject.set(x, "TrafficPolicyInstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetIdentifier: Self = this.set("SetIdentifier", js.undefined)
+    def setTrafficPolicyInstanceIdUndefined: Self = StObject.set(x, "TrafficPolicyInstanceId", js.undefined)
     
     @scala.inline
-    def setTTL(value: TTL): Self = this.set("TTL", value.asInstanceOf[js.Any])
+    def setType(value: RRType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTTL: Self = this.set("TTL", js.undefined)
+    def setWeight(value: ResourceRecordSetWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrafficPolicyInstanceId(value: TrafficPolicyInstanceId): Self = this.set("TrafficPolicyInstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrafficPolicyInstanceId: Self = this.set("TrafficPolicyInstanceId", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: ResourceRecordSetWeight): Self = this.set("Weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("Weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
   }
 }

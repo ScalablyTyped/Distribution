@@ -1,12 +1,13 @@
 package typings.yup.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseTestOptions[P /* <: Record[String, _] */, C] extends js.Object {
+trait BaseTestOptions[P /* <: Record[String, _] */, C] extends StObject {
   
   /**
     * Mark the test as exclusive, meaning only one of the same can be active at once

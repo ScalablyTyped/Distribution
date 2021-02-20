@@ -1,6 +1,7 @@
 package typings.openapiTypes.mod.OpenAPIV3
 
 import typings.openapiTypes.openapiTypesStrings.http
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,36 +27,24 @@ object HttpSecurityScheme {
   }
   
   @scala.inline
-  implicit class HttpSecuritySchemeOps[Self <: HttpSecurityScheme] (val x: Self) extends AnyVal {
+  implicit class HttpSecuritySchemeMutableBuilder[Self <: HttpSecurityScheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBearerFormat(value: String): Self = StObject.set(x, "bearerFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBearerFormatUndefined: Self = StObject.set(x, "bearerFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setType(value: http): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBearerFormat(value: String): Self = this.set("bearerFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBearerFormat: Self = this.set("bearerFormat", js.undefined)
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setType(value: http): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverlayContentBackground extends js.Object {
+trait OverlayContentBackground extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object OverlayContentBackground {
   }
   
   @scala.inline
-  implicit class OverlayContentBackgroundOps[Self <: OverlayContentBackground] (val x: Self) extends AnyVal {
+  implicit class OverlayContentBackgroundMutableBuilder[Self <: OverlayContentBackground] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverlayContentBackground(value: String): Self = StObject.set(x, "overlayContentBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOverlayContentBackgroundUndefined: Self = StObject.set(x, "overlayContentBackground", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setSubtitleColor(value: String): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayContentBackground(value: String): Self = this.set("overlayContentBackground", value.asInstanceOf[js.Any])
+    def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
     
     @scala.inline
-    def deleteOverlayContentBackground: Self = this.set("overlayContentBackground", js.undefined)
+    def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitleColor(value: String): Self = this.set("subtitleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtitleColor: Self = this.set("subtitleColor", js.undefined)
-    
-    @scala.inline
-    def setTitleColor(value: String): Self = this.set("titleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleColor: Self = this.set("titleColor", js.undefined)
+    def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
   }
 }

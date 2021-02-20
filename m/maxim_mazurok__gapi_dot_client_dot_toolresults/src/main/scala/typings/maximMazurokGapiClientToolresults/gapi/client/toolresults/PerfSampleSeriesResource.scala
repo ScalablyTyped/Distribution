@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientToolresults.anon.Filter
 import typings.maximMazurokGapiClientToolresults.anon.HistoryId
 import typings.maximMazurokGapiClientToolresults.anon.Oauthtoken
 import typings.maximMazurokGapiClientToolresults.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerfSampleSeriesResource extends js.Object {
+trait PerfSampleSeriesResource extends StObject {
   
   def create(request: HistoryId, body: PerfSampleSeries): Request[PerfSampleSeries] = js.native
   /**

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergeConflict extends js.Object {
+trait MergeConflict extends StObject {
   
   /**
     * The base version entity (since the latest sync operation) that has conflicting changes compared to the workspace. If this field is missing, it means the workspace entity is deleted
@@ -25,30 +26,18 @@ object MergeConflict {
   }
   
   @scala.inline
-  implicit class MergeConflictOps[Self <: MergeConflict] (val x: Self) extends AnyVal {
+  implicit class MergeConflictMutableBuilder[Self <: MergeConflict] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityInBaseVersion(value: Entity): Self = StObject.set(x, "entityInBaseVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityInBaseVersionUndefined: Self = StObject.set(x, "entityInBaseVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityInWorkspace(value: Entity): Self = StObject.set(x, "entityInWorkspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityInBaseVersion(value: Entity): Self = this.set("entityInBaseVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityInBaseVersion: Self = this.set("entityInBaseVersion", js.undefined)
-    
-    @scala.inline
-    def setEntityInWorkspace(value: Entity): Self = this.set("entityInWorkspace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityInWorkspace: Self = this.set("entityInWorkspace", js.undefined)
+    def setEntityInWorkspaceUndefined: Self = StObject.set(x, "entityInWorkspace", js.undefined)
   }
 }

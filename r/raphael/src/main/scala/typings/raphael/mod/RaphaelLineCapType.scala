@@ -1,5 +1,6 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.raphael.raphaelStrings.square
   - typings.raphael.raphaelStrings.round
 */
-trait RaphaelLineCapType extends js.Object
+trait RaphaelLineCapType extends StObject
 object RaphaelLineCapType {
   
   @scala.inline

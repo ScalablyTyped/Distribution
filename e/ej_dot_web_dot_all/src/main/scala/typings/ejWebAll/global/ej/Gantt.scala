@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,18 @@ class Gantt protected ()
   extends typings.ejWebAll.ej.Gantt {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Gantt.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Gantt.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.Gantt")
-@js.native
-object Gantt extends js.Object {
+object Gantt {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.Gantt = js.native
-  
+  @JSGlobal("ej.Gantt")
   @js.native
-  object BeginEditAction extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.Gantt.BeginEditAction")
+  @js.native
+  object BeginEditAction extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.BeginEditAction with Double] = js.native
@@ -35,8 +34,9 @@ object Gantt extends js.Object {
     /* 0 */ val DblClick: typings.ejWebAll.ej.Gantt.BeginEditAction.DblClick with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.DurationUnit")
   @js.native
-  object DurationUnit extends js.Object {
+  object DurationUnit extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.DurationUnit with Double] = js.native
@@ -48,8 +48,16 @@ object Gantt extends js.Object {
     /* 2 */ val Minute: typings.ejWebAll.ej.Gantt.DurationUnit.Minute with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.Gantt.Locale")
   @js.native
-  object RowPosition extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.Gantt.RowPosition")
+  @js.native
+  object RowPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.RowPosition with Double] = js.native
@@ -65,8 +73,9 @@ object Gantt extends js.Object {
     /* 0 */ val Top: typings.ejWebAll.ej.Gantt.RowPosition.Top with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.ScheduleHeaderType")
   @js.native
-  object ScheduleHeaderType extends js.Object {
+  object ScheduleHeaderType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.ScheduleHeaderType with Double] = js.native
@@ -82,8 +91,9 @@ object Gantt extends js.Object {
     /* 0 */ val Year: typings.ejWebAll.ej.Gantt.ScheduleHeaderType.Year with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.SelectionMode")
   @js.native
-  object SelectionMode extends js.Object {
+  object SelectionMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.SelectionMode with Double] = js.native
@@ -93,8 +103,9 @@ object Gantt extends js.Object {
     /* 0 */ val Row: typings.ejWebAll.ej.Gantt.SelectionMode.Row with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.SelectionType")
   @js.native
-  object SelectionType extends js.Object {
+  object SelectionType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.SelectionType with Double] = js.native
@@ -104,8 +115,9 @@ object Gantt extends js.Object {
     /* 0 */ val Single: typings.ejWebAll.ej.Gantt.SelectionType.Single with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.TaskSchedulingMode")
   @js.native
-  object TaskSchedulingMode extends js.Object {
+  object TaskSchedulingMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.TaskSchedulingMode with Double] = js.native
@@ -117,8 +129,9 @@ object Gantt extends js.Object {
     /* 1 */ val Manual: typings.ejWebAll.ej.Gantt.TaskSchedulingMode.Manual with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.TaskType")
   @js.native
-  object TaskType extends js.Object {
+  object TaskType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.TaskType with Double] = js.native
@@ -130,8 +143,9 @@ object Gantt extends js.Object {
     /* 1 */ val FixedWork: typings.ejWebAll.ej.Gantt.TaskType.FixedWork with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.TimescaleRoundMode")
   @js.native
-  object TimescaleRoundMode extends js.Object {
+  object TimescaleRoundMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.TimescaleRoundMode with Double] = js.native
@@ -145,8 +159,9 @@ object Gantt extends js.Object {
     /* 3 */ val Year: typings.ejWebAll.ej.Gantt.TimescaleRoundMode.Year with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.ToolbarItems")
   @js.native
-  object ToolbarItems extends js.Object {
+  object ToolbarItems extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.ToolbarItems with Double] = js.native
@@ -182,8 +197,9 @@ object Gantt extends js.Object {
     /* 3 */ val Update: typings.ejWebAll.ej.Gantt.ToolbarItems.Update with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.ViewType")
   @js.native
-  object ViewType extends js.Object {
+  object ViewType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.ViewType with Double] = js.native
@@ -195,8 +211,9 @@ object Gantt extends js.Object {
     /* 1 */ val ResourceView: typings.ejWebAll.ej.Gantt.ViewType.ResourceView with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.WorkUnit")
   @js.native
-  object WorkUnit extends js.Object {
+  object WorkUnit extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.WorkUnit with Double] = js.native
@@ -208,8 +225,16 @@ object Gantt extends js.Object {
     /* 2 */ val Minute: typings.ejWebAll.ej.Gantt.WorkUnit.Minute with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.Gantt.fn")
   @js.native
-  object minutesPerInterval extends js.Object {
+  def fn: typings.ejWebAll.ej.Gantt = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.Gantt): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.Gantt.minutesPerInterval")
+  @js.native
+  object minutesPerInterval extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.minutesPerInterval with Double] = js.native
@@ -225,8 +250,9 @@ object Gantt extends js.Object {
     /* 4 */ val ThirtyMinutes: typings.ejWebAll.ej.Gantt.minutesPerInterval.ThirtyMinutes with Double = js.native
   }
   
+  @JSGlobal("ej.Gantt.workingTimeScale")
   @js.native
-  object workingTimeScale extends js.Object {
+  object workingTimeScale extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Gantt.workingTimeScale with Double] = js.native

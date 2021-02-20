@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.ImageData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,57 +68,45 @@ object MeshMaterialMetallicRoughnessProperties {
   }
   
   @scala.inline
-  implicit class MeshMaterialMetallicRoughnessPropertiesOps[Self <: MeshMaterialMetallicRoughnessProperties] (val x: Self) extends AnyVal {
+  implicit class MeshMaterialMetallicRoughnessPropertiesMutableBuilder[Self <: MeshMaterialMetallicRoughnessProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmissiveColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "emissiveColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmissiveColorUndefined: Self = StObject.set(x, "emissiveColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmissiveColorVarargs(value: Double*): Self = StObject.set(x, "emissiveColor", js.Array(value :_*))
     
     @scala.inline
-    def setEmissiveColorVarargs(value: Double*): Self = this.set("emissiveColor", js.Array(value :_*))
+    def setEmissiveTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "emissiveTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmissiveColor(value: Color_ | js.Array[Double] | String): Self = this.set("emissiveColor", value.asInstanceOf[js.Any])
+    def setEmissiveTextureUndefined: Self = StObject.set(x, "emissiveTexture", js.undefined)
     
     @scala.inline
-    def deleteEmissiveColor: Self = this.set("emissiveColor", js.undefined)
+    def setMetallic(value: Double): Self = StObject.set(x, "metallic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmissiveTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = this.set("emissiveTexture", value.asInstanceOf[js.Any])
+    def setMetallicRoughnessTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "metallicRoughnessTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmissiveTexture: Self = this.set("emissiveTexture", js.undefined)
+    def setMetallicRoughnessTextureUndefined: Self = StObject.set(x, "metallicRoughnessTexture", js.undefined)
     
     @scala.inline
-    def setMetallic(value: Double): Self = this.set("metallic", value.asInstanceOf[js.Any])
+    def setMetallicUndefined: Self = StObject.set(x, "metallic", js.undefined)
     
     @scala.inline
-    def deleteMetallic: Self = this.set("metallic", js.undefined)
+    def setOcclusionTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "occlusionTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetallicRoughnessTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = this.set("metallicRoughnessTexture", value.asInstanceOf[js.Any])
+    def setOcclusionTextureUndefined: Self = StObject.set(x, "occlusionTexture", js.undefined)
     
     @scala.inline
-    def deleteMetallicRoughnessTexture: Self = this.set("metallicRoughnessTexture", js.undefined)
+    def setRoughness(value: Double): Self = StObject.set(x, "roughness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOcclusionTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = this.set("occlusionTexture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOcclusionTexture: Self = this.set("occlusionTexture", js.undefined)
-    
-    @scala.inline
-    def setRoughness(value: Double): Self = this.set("roughness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoughness: Self = this.set("roughness", js.undefined)
+    def setRoughnessUndefined: Self = StObject.set(x, "roughness", js.undefined)
   }
 }

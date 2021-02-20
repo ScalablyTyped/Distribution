@@ -1,11 +1,12 @@
 package typings.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebPageTest extends js.Object {
+trait WebPageTest extends StObject {
   
   def cancelTest(id: String, callback: Callback[_]): Unit = js.native
   def cancelTest(id: String, options: Options with KeyOptions, callback: Callback[_]): Unit = js.native

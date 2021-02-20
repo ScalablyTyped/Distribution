@@ -6,16 +6,16 @@ import typings.typeorm.metadataColumnMetadataMod.ColumnMetadata
 import typings.typeorm.metadataEmbeddedMetadataMod.EmbeddedMetadata
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.namingStrategyNamingStrategyInterfaceMod.NamingStrategyInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/metadata/IndexMetadata", JSImport.Namespace)
-@js.native
-object metadataIndexMetadataMod extends js.Object {
+object metadataIndexMetadataMod {
   
+  @JSImport("typeorm/metadata/IndexMetadata", "IndexMetadata")
   @js.native
-  class IndexMetadata protected () extends js.Object {
+  class IndexMetadata protected () extends StObject {
     def this(options: ArgsColumnsEmbeddedMetadata) = this()
     
     /**

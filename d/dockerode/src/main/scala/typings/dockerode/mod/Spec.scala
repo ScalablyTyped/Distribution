@@ -1,5 +1,6 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,51 +29,39 @@ object Spec {
   }
   
   @scala.inline
-  implicit class SpecOps[Self <: Spec] (val x: Self) extends AnyVal {
+  implicit class SpecMutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAConfig(value: CAConfig): Self = StObject.set(x, "CAConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAConfigUndefined: Self = StObject.set(x, "CAConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispatcher(value: DispatcherConfig): Self = StObject.set(x, "Dispatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaft(value: RaftConfig): Self = this.set("Raft", value.asInstanceOf[js.Any])
+    def setDispatcherUndefined: Self = StObject.set(x, "Dispatcher", js.undefined)
     
     @scala.inline
-    def setCAConfig(value: CAConfig): Self = this.set("CAConfig", value.asInstanceOf[js.Any])
+    def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCAConfig: Self = this.set("CAConfig", js.undefined)
+    def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
     
     @scala.inline
-    def setDispatcher(value: DispatcherConfig): Self = this.set("Dispatcher", value.asInstanceOf[js.Any])
+    def setOrchestration(value: OrchestrationConfig): Self = StObject.set(x, "Orchestration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDispatcher: Self = this.set("Dispatcher", js.undefined)
+    def setOrchestrationUndefined: Self = StObject.set(x, "Orchestration", js.undefined)
     
     @scala.inline
-    def setEncryptionConfig(value: EncryptionConfig): Self = this.set("EncryptionConfig", value.asInstanceOf[js.Any])
+    def setRaft(value: RaftConfig): Self = StObject.set(x, "Raft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionConfig: Self = this.set("EncryptionConfig", js.undefined)
+    def setTaskDefaults(value: TaskDefaults): Self = StObject.set(x, "TaskDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrchestration(value: OrchestrationConfig): Self = this.set("Orchestration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrchestration: Self = this.set("Orchestration", js.undefined)
-    
-    @scala.inline
-    def setTaskDefaults(value: TaskDefaults): Self = this.set("TaskDefaults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskDefaults: Self = this.set("TaskDefaults", js.undefined)
+    def setTaskDefaultsUndefined: Self = StObject.set(x, "TaskDefaults", js.undefined)
   }
 }

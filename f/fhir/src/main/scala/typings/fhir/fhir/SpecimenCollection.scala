@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,60 +55,48 @@ object SpecimenCollection {
   }
   
   @scala.inline
-  implicit class SpecimenCollectionOps[Self <: SpecimenCollection] (val x: Self) extends AnyVal {
+  implicit class SpecimenCollectionMutableBuilder[Self <: SpecimenCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodySite(value: CodeableConcept): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodySiteUndefined: Self = StObject.set(x, "bodySite", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectedDateTime(value: dateTime): Self = StObject.set(x, "collectedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_collectedDateTime(value: Element): Self = this.set("_collectedDateTime", value.asInstanceOf[js.Any])
+    def setCollectedDateTimeUndefined: Self = StObject.set(x, "collectedDateTime", js.undefined)
     
     @scala.inline
-    def delete_collectedDateTime: Self = this.set("_collectedDateTime", js.undefined)
+    def setCollectedPeriod(value: Period): Self = StObject.set(x, "collectedPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodySite(value: CodeableConcept): Self = this.set("bodySite", value.asInstanceOf[js.Any])
+    def setCollectedPeriodUndefined: Self = StObject.set(x, "collectedPeriod", js.undefined)
     
     @scala.inline
-    def deleteBodySite: Self = this.set("bodySite", js.undefined)
+    def setCollector(value: Reference): Self = StObject.set(x, "collector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectedDateTime(value: dateTime): Self = this.set("collectedDateTime", value.asInstanceOf[js.Any])
+    def setCollectorUndefined: Self = StObject.set(x, "collector", js.undefined)
     
     @scala.inline
-    def deleteCollectedDateTime: Self = this.set("collectedDateTime", js.undefined)
+    def setMethod(value: CodeableConcept): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectedPeriod(value: Period): Self = this.set("collectedPeriod", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteCollectedPeriod: Self = this.set("collectedPeriod", js.undefined)
+    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollector(value: Reference): Self = this.set("collector", value.asInstanceOf[js.Any])
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def deleteCollector: Self = this.set("collector", js.undefined)
+    def set_collectedDateTime(value: Element): Self = StObject.set(x, "_collectedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: CodeableConcept): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setQuantity(value: Quantity): Self = this.set("quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def set_collectedDateTimeUndefined: Self = StObject.set(x, "_collectedDateTime", js.undefined)
   }
 }

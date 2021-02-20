@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1Mod.appengineV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Uses Google Cloud Endpoints to handle requests.
   */
 @js.native
-trait SchemaApiEndpointHandler extends js.Object {
+trait SchemaApiEndpointHandler extends StObject {
   
   /**
     * Path to the script from the application root directory.
@@ -24,24 +25,12 @@ object SchemaApiEndpointHandler {
   }
   
   @scala.inline
-  implicit class SchemaApiEndpointHandlerOps[Self <: SchemaApiEndpointHandler] (val x: Self) extends AnyVal {
+  implicit class SchemaApiEndpointHandlerMutableBuilder[Self <: SchemaApiEndpointHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScriptPath(value: String): Self = this.set("scriptPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptPath: Self = this.set("scriptPath", js.undefined)
+    def setScriptPathUndefined: Self = StObject.set(x, "scriptPath", js.undefined)
   }
 }

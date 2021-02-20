@@ -1,13 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** enables creation of redlines (change tracking). */
 @js.native
-trait XRedline extends js.Object {
+trait XRedline extends StObject {
   
   /**
     * @param RedlineType  Valid type names are:    Insert - marks an insertion    Delete - marks an deletion    Format - marks an attribute change    {@link T
@@ -24,21 +25,9 @@ object XRedline {
   }
   
   @scala.inline
-  implicit class XRedlineOps[Self <: XRedline] (val x: Self) extends AnyVal {
+  implicit class XRedlineMutableBuilder[Self <: XRedline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMakeRedline(value: (String, PropertyValues) => Unit): Self = this.set("makeRedline", js.Any.fromFunction2(value))
+    def setMakeRedline(value: (String, PropertyValues) => Unit): Self = StObject.set(x, "makeRedline", js.Any.fromFunction2(value))
   }
 }

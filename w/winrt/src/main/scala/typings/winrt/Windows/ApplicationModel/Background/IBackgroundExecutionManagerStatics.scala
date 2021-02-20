@@ -1,12 +1,13 @@
 package typings.winrt.Windows.ApplicationModel.Background
 
 import typings.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBackgroundExecutionManagerStatics extends js.Object {
+trait IBackgroundExecutionManagerStatics extends StObject {
   
   def getAccessStatus(): BackgroundAccessStatus = js.native
   def getAccessStatus(applicationId: String): BackgroundAccessStatus = js.native

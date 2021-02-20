@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.AllJoyn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AllJoynTrafficType extends js.Object
+sealed trait AllJoynTrafficType extends StObject
 /** Defines values used to indicate the type of data carried in session traffic. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynTrafficType")
 @js.native
-object AllJoynTrafficType extends js.Object {
+object AllJoynTrafficType extends StObject {
   
   /** Message traffic. */
   @js.native

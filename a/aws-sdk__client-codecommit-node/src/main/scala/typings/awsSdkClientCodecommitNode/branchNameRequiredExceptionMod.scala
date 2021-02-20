@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/BranchNameRequiredException", JSImport.Namespace)
-@js.native
-object branchNameRequiredExceptionMod extends js.Object {
+object branchNameRequiredExceptionMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/BranchNameRequiredException", "BranchNameRequiredException")
+  @js.native
   val BranchNameRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

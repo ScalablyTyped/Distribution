@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.anon
 
 import typings.devtoolsProtocol.mod.Protocol.Network.SearchInResponseBodyRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SearchInResponseBodyResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnTypeSearchInResponseBodyResponse extends js.Object {
+trait ReturnTypeSearchInResponseBodyResponse extends StObject {
   
   var paramsType: js.Array[SearchInResponseBodyRequest] = js.native
   
@@ -22,27 +23,15 @@ object ReturnTypeSearchInResponseBodyResponse {
   }
   
   @scala.inline
-  implicit class ReturnTypeSearchInResponseBodyResponseOps[Self <: ReturnTypeSearchInResponseBodyResponse] (val x: Self) extends AnyVal {
+  implicit class ReturnTypeSearchInResponseBodyResponseMutableBuilder[Self <: ReturnTypeSearchInResponseBodyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamsType(value: js.Array[SearchInResponseBodyRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamsTypeVarargs(value: SearchInResponseBodyRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParamsTypeVarargs(value: SearchInResponseBodyRequest*): Self = this.set("paramsType", js.Array(value :_*))
-    
-    @scala.inline
-    def setParamsType(value: js.Array[SearchInResponseBodyRequest]): Self = this.set("paramsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnType(value: SearchInResponseBodyResponse): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setReturnType(value: SearchInResponseBodyResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

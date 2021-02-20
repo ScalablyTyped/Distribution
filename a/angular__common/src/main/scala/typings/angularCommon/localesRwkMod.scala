@@ -1,17 +1,32 @@
 package typings.angularCommon
 
+import org.scalablytyped.runtime.Shortcut
 import typings.angularCommon.anon.TZS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common/locales/rwk", JSImport.Namespace)
-@js.native
-object localesRwkMod extends js.Object {
+object localesRwkMod extends Shortcut {
   
+  @JSImport("@angular/common/locales/rwk", JSImport.Default)
+  @js.native
   val default: js.Array[
     js.UndefOr[
       String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | TZS
     ]
   ] = js.native
+  
+  type _To = js.Array[
+    js.UndefOr[
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | TZS
+    ]
+  ]
+  
+  /* This means you don't have to write `default`, but can instead just say `localesRwkMod.foo` */
+  override def _to: js.Array[
+    js.UndefOr[
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | TZS
+    ]
+  ] = default
 }

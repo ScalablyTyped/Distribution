@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeUserProfilesRequest extends js.Object {
+trait DescribeUserProfilesRequest extends StObject {
   
   /**
     * An array of IAM or federated user ARNs that identify the users to be described.
@@ -21,27 +22,15 @@ object DescribeUserProfilesRequest {
   }
   
   @scala.inline
-  implicit class DescribeUserProfilesRequestOps[Self <: DescribeUserProfilesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeUserProfilesRequestMutableBuilder[Self <: DescribeUserProfilesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIamUserArns(value: Strings): Self = StObject.set(x, "IamUserArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIamUserArnsUndefined: Self = StObject.set(x, "IamUserArns", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIamUserArnsVarargs(value: String*): Self = this.set("IamUserArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setIamUserArns(value: Strings): Self = this.set("IamUserArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIamUserArns: Self = this.set("IamUserArns", js.undefined)
+    def setIamUserArnsVarargs(value: String*): Self = StObject.set(x, "IamUserArns", js.Array(value :_*))
   }
 }

@@ -1,14 +1,16 @@
 package typings.videoJs.mod.default
 
+import typings.videoJs.mod.videojs.TextTrackSettings
 import typings.videoJs.mod.videojs.TextTrackSettingsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "TextTrackSettings")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.TextTrackSettings")
 @js.native
-class TextTrackSettingsCls protected ()
-  extends typings.videoJs.mod.videojs.TextTrackSettings {
+class TextTrackSettingsCls protected () extends TextTrackSettings {
   /**
     * Creates an instance of this class.
     *

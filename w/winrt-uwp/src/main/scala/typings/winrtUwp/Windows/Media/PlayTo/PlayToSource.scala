@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.PlayTo
 
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media element to connect to a Play To target. */
 @js.native
-trait PlayToSource extends js.Object {
+trait PlayToSource extends StObject {
   
   /** Gets the connection to the Play To target. */
   var connection: PlayToConnection = js.native
@@ -30,30 +31,18 @@ object PlayToSource {
   }
   
   @scala.inline
-  implicit class PlayToSourceOps[Self <: PlayToSource] (val x: Self) extends AnyVal {
+  implicit class PlayToSourceMutableBuilder[Self <: PlayToSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: PlayToConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNext(value: PlayToSource): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayNext(value: () => Unit): Self = StObject.set(x, "playNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnection(value: PlayToConnection): Self = this.set("connection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: PlayToSource): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayNext(value: () => Unit): Self = this.set("playNext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPreferredSourceUri(value: Uri): Self = this.set("preferredSourceUri", value.asInstanceOf[js.Any])
+    def setPreferredSourceUri(value: Uri): Self = StObject.set(x, "preferredSourceUri", value.asInstanceOf[js.Any])
   }
 }

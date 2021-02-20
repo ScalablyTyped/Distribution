@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoFillRequest extends js.Object {
+trait AutoFillRequest extends StObject {
   
   /** The range to autofill. This will examine the range and detect the location that has data and automatically fill that data in to the rest of the range. */
   var range: js.UndefOr[GridRange] = js.native
@@ -25,36 +26,24 @@ object AutoFillRequest {
   }
   
   @scala.inline
-  implicit class AutoFillRequestOps[Self <: AutoFillRequest] (val x: Self) extends AnyVal {
+  implicit class AutoFillRequestMutableBuilder[Self <: AutoFillRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceAndDestination(value: SourceAndDestination): Self = StObject.set(x, "sourceAndDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: GridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setSourceAndDestinationUndefined: Self = StObject.set(x, "sourceAndDestination", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setUseAlternateSeries(value: Boolean): Self = StObject.set(x, "useAlternateSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceAndDestination(value: SourceAndDestination): Self = this.set("sourceAndDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceAndDestination: Self = this.set("sourceAndDestination", js.undefined)
-    
-    @scala.inline
-    def setUseAlternateSeries(value: Boolean): Self = this.set("useAlternateSeries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseAlternateSeries: Self = this.set("useAlternateSeries", js.undefined)
+    def setUseAlternateSeriesUndefined: Self = StObject.set(x, "useAlternateSeries", js.undefined)
   }
 }

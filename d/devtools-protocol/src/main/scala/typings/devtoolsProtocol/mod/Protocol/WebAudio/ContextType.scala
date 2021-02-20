@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.realtime
   - typings.devtoolsProtocol.devtoolsProtocolStrings.offline
 */
-trait ContextType extends js.Object
+trait ContextType extends StObject
 object ContextType {
   
   @scala.inline

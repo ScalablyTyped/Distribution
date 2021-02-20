@@ -1,11 +1,12 @@
 package typings.rx.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Recorded extends js.Object {
+trait Recorded extends StObject {
   
   /**
     * Checks whether the given recorded object is equal to the current instance.
@@ -22,33 +23,22 @@ trait Recorded extends js.Object {
 object Recorded {
   
   @scala.inline
-  def apply(equals: Recorded => Boolean, time: Double, value: js.Any): Recorded = {
-    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), time = time.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(equals_ : Recorded => Boolean, time: Double, value: js.Any): Recorded = {
+    val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Recorded]
   }
   
   @scala.inline
-  implicit class RecordedOps[Self <: Recorded] (val x: Self) extends AnyVal {
+  implicit class RecordedMutableBuilder[Self <: Recorded] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEquals_(value: Recorded => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEquals(value: Recorded => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

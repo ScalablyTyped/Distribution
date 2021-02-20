@@ -1,12 +1,13 @@
 package typings.elasticJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "Highlight")
 @js.native
-class Highlight protected () extends js.Object {
+class Highlight protected () extends StObject {
   /*
     Allows to highlight search results on one or more fields.
     */

@@ -6,333 +6,16 @@ import typings.std.Text
 import typings.strophe.mod.Strophe.ConnectionOptions
 import typings.strophe.mod.Strophe.LogLevel
 import typings.strophe.mod.Strophe.SASLMechanism
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("Strophe", JSImport.Namespace)
-@js.native
-object stropheAugmentingMod extends js.Object {
+object stropheAugmentingMod {
   
-  /** Constants: SASL mechanisms
-    *  Available authentication mechanisms
-    *
-    *  Strophe.SASLAnonymous - SASL Anonymous authentication.
-    *  Strophe.SASLPlain - SASL Plain authentication.
-    *  Strophe.SASLMD5 - SASL Digest-MD5 authentication
-    *  Strophe.SASLSHA1 - SASL SCRAM-SHA1 authentication
-    */
-  var SASLAnonymous: SASLMechanism = js.native
-  
-  var SASLMD5: SASLMechanism = js.native
-  
-  var SASLPlain: SASLMechanism = js.native
-  
-  var SASLSHA1: SASLMechanism = js.native
-  
-  /** Constant: VERSION
-    *  The version of the Strophe library. Unreleased builds will have
-    *  a version of head-HASH where HASH is a partial revision.
-    */
-  var VERSION: String = js.native
-  
-  /** Function: addConnectionPlugin
-    *  Extends the Strophe.Connection object with the given plugin.
-    *
-    *  Parameters:
-    *    (String) name - The name of the extension.
-    *    (Object) ptype - The plugin's prototype.
-    */
-  def addConnectionPlugin(name: String, ptype: js.Any): Unit = js.native
-  
-  /** Function: addNamespace
-    *  This function is used to extend the current namespaces in
-    *  Strophe.NS.  It takes a key and a value with the key being the
-    *  name of the new namespace, with its actual value.
-    *  For example:
-    *  Strophe.addNamespace('PUBSUB', "http://jabber.org/protocol/pubsub");
-    *
-    *  Parameters:
-    *    (String) name - The name under which the namespace will be
-    *      referenced under Strophe.NS
-    *    (String) value - The actual namespace.
-    */
-  def addNamespace(name: String, value: String): Unit = js.native
-  
-  /** Function: copyElement
-    *  Copy an XML DOM element.
-    *
-    *  This function copies a DOM element and all its descendants and returns
-    *  the new copy.
-    *
-    *  Parameters:
-    *    (XMLElement) elem - A DOM element.
-    *
-    *  Returns:
-    *    A new, copied DOM element tree.
-    */
-  def copyElement(elem: Element): Element = js.native
-  
-  /** Function: createHtml
-    *  Copy an HTML DOM element into an XML DOM.
-    *
-    *  This function copies a DOM element and all its descendants and returns
-    *  the new copy.
-    *
-    *  Parameters:
-    *    (Element) elem - A DOM element.
-    *
-    *  Returns:
-    *    A new, copied DOM element tree.
-    */
-  def createHtml(elem: Element): Element = js.native
-  
-  /** Functions: debug, info, warn, error
-    *  Log a message at the appropriate Strophe.LogLevel
-    *
-    *  Parameters:
-    *    (String) msg - The log message.
-    */
-  def debug(msg: String): Unit = js.native
-  
-  def error(msg: String): Unit = js.native
-  
-  /** Function: escapeNode
-    *  Escape the node part (also called local part) of a JID.
-    *
-    *  Parameters:
-    *    (String) node - A node (or local part).
-    *
-    *  Returns:
-    *    An escaped node (or local part).
-    */
-  def escapeNode(node: String): String = js.native
-  
-  def fatal(msg: String): Unit = js.native
-  
-  /** Function: forEachChild
-    *  Map a function over some or all child elements of a given element.
-    *
-    *  This is a small convenience function for mapping a function over
-    *  some or all of the children of an element.  If elemName is null, all
-    *  children will be passed to the function, otherwise only children
-    *  whose tag names match elemName will be passed.
-    *
-    *  Parameters:
-    *    (XMLElement) elem - The element to operate on.
-    *    (String) elemName - The child element tag name filter.
-    *    (Function) func - The function to apply to each child.  This
-    *      function should take a single argument, a DOM element.
-    */
-  def forEachChild(elem: Element, elemName: String, func: js.Function1[/* child */ Element, _]): Unit = js.native
-  
-  /** Function: getBareJidFromJid
-    *  Get the bare JID from a JID String.
-    *
-    *  Parameters:
-    *    (String) jid - A JID.
-    *
-    *  Returns:
-    *    A String containing the bare JID.
-    */
-  def getBareJidFromJid(jid: String): String = js.native
-  
-  /** Function: getDomainFromJid
-    *  Get the domain portion of a JID String.
-    *
-    *  Parameters:
-    *    (String) jid - A JID.
-    *
-    *  Returns:
-    *    A String containing the domain.
-    */
-  def getDomainFromJid(jid: String): String = js.native
-  
-  /** Function: getNodeFromJid
-    *  Get the node portion of a JID String.
-    *
-    *  Parameters:
-    *    (String) jid - A JID.
-    *
-    *  Returns:
-    *    A String containing the node.
-    */
-  def getNodeFromJid(jid: String): String = js.native
-  
-  /** Function: getResourceFromJid
-    *  Get the resource portion of a JID String.
-    *
-    *  Parameters:
-    *    (String) jid - A JID.
-    *
-    *  Returns:
-    *    A String containing the resource.
-    */
-  def getResourceFromJid(jid: String): String = js.native
-  
-  /** Function: getText
-    *  Get the concatenation of all text children of an element.
-    *
-    *  Parameters:
-    *    (XMLElement) elem - A DOM element.
-    *
-    *  Returns:
-    *    A String with the concatenated text of all text element children.
-    */
-  def getText(elem: Element): String = js.native
-  
-  def info(msg: String): Unit = js.native
-  
-  /** Function: isTagEqual
-    *  Compare an element's tag name with a string.
-    *
-    *  This function is case sensitive.
-    *
-    *  Parameters:
-    *    (XMLElement) el - A DOM element.
-    *    (String) name - The element name.
-    *
-    *  Returns:
-    *    true if the element's tag name matches _el_, and false
-    *    otherwise.
-    */
-  def isTagEqual(el: Element, name: String): Boolean = js.native
-  
-  /** Function: log
-    *  User overrideable logging function.
-    *
-    *  This function is called whenever the Strophe library calls any
-    *  of the logging functions.  The default implementation of this
-    *  function does nothing.  If client code wishes to handle the logging
-    *  messages, it should override this with
-    *  > Strophe.log = function (level, msg) {
-    *  >   (user code here)
-    *  > };
-    *
-    *  Please note that data sent and received over the wire is logged
-    *  via Strophe.Connection.rawInput() and Strophe.Connection.rawOutput().
-    *
-    *  The different levels and their meanings are
-    *
-    *    DEBUG - Messages useful for debugging purposes.
-    *    INFO - Informational messages.  This is mostly information like
-    *      'disconnect was called' or 'SASL auth succeeded'.
-    *    WARN - Warnings about potential problems.  This is mostly used
-    *      to report transient connection errors like request timeouts.
-    *    ERROR - Some error occurred.
-    *    FATAL - A non-recoverable fatal error occurred.
-    *
-    *  Parameters:
-    *    (Integer) level - The log level of the log message.  This will
-    *      be one of the values in Strophe.LogLevel.
-    *    (String) msg - The log message.
-    */
-  def log(level: LogLevel, msg: String): Unit = js.native
-  
-  /** Function: serialize
-    *  Render a DOM element and all descendants to a String.
-    *
-    *  Parameters:
-    *    (XMLElement) elem - A DOM element.
-    *
-    *  Returns:
-    *    The serialized element tree as a String.
-    */
-  def serialize(elem: Element): String = js.native
-  def serialize(elem: typings.strophe.mod.Strophe.Builder): String = js.native
-  
-  /** Function: unescapeNode
-    *  Unescape a node part (also called local part) of a JID.
-    *
-    *  Parameters:
-    *    (String) node - A node (or local part).
-    *
-    *  Returns:
-    *    An unescaped node (or local part).
-    */
-  def unescapeNode(node: String): String = js.native
-  
-  def warn(msg: String): Unit = js.native
-  
-  /** Function: xmlElement
-    *  Create an XML DOM element.
-    *
-    *  This function creates an XML DOM element correctly across all
-    *  implementations. Note that these are not HTML DOM elements, which
-    *  aren't appropriate for XMPP stanzas.
-    *
-    *  Parameters:
-    *    (String) name - The name for the element.
-    *    (Array|Object) attrs - An optional array or object containing
-    *      key/value pairs to use as element attributes. The object should
-    *      be in the format {'key': 'value'} or {key: 'value'}. The array
-    *      should have the format [['key1', 'value1'], ['key2', 'value2']].
-    *    (String) text - The text child data for the element.
-    *
-    *  Returns:
-    *    A new XML DOM element.
-    */
-  def xmlElement(name: String): Element = js.native
-  def xmlElement(name: String, attrs: js.UndefOr[scala.Nothing], text: String): Element = js.native
-  def xmlElement(name: String, attrs: js.Any): Element = js.native
-  def xmlElement(name: String, attrs: js.Any, text: String): Element = js.native
-  def xmlElement(name: String, text: js.UndefOr[scala.Nothing], attrs: js.Any): Element = js.native
-  def xmlElement(name: String, text: String): Element = js.native
-  def xmlElement(name: String, text: String, attrs: js.Any): Element = js.native
-  
-  /** Function: xmlGenerator
-    *  Get the DOM document to generate elements.
-    *
-    *  Returns:
-    *    The currently used DOM document.
-    */
-  def xmlGenerator(): Document = js.native
-  
-  /** Function: xmlHtmlNode
-    *  Creates an XML DOM html node.
-    *
-    *  Parameters:
-    *    (String) html - The content of the html node.
-    *
-    *  Returns:
-    *    A new XML DOM text node.
-    */
-  def xmlHtmlNode(html: String): Document = js.native
-  
-  /** Function: xmlTextNode
-    *  Creates an XML DOM text node.
-    *
-    *  Provides a cross implementation version of document.createTextNode.
-    *
-    *  Parameters:
-    *    (String) text - The content of the text node.
-    *
-    *  Returns:
-    *    A new XML DOM text node.
-    */
-  def xmlTextNode(text: String): Text = js.native
-  
-  /*  Function: xmlescape
-    *  Excapes invalid xml characters.
-    *
-    *  Parameters:
-    *     (String) text - text to escape.
-    *
-    *  Returns:
-    *      Escaped text.
-    */
-  def xmlescape(text: String): String = js.native
-  
-  /*  Function: xmlunescape
-    *  Unexcapes invalid xml characters.
-    *
-    *  Parameters:
-    *     (String) text - text to unescape.
-    *
-    *  Returns:
-    *      Unescaped text.
-    */
-  def xmlunescape(text: String): String = js.native
+  @JSImport("Strophe", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Class: Strophe.Builder
     *  XML DOM builder.
@@ -359,6 +42,7 @@ object stropheAugmentingMod extends js.Object {
     *  > builder.c('child1', ...).up().c('child2', ...)
     *  The next operation on the Builder will be relative to the second child.
     */
+  @JSImport("Strophe", "Builder")
   @js.native
   class Builder protected ()
     extends typings.strophe.mod.Strophe.Builder {
@@ -402,6 +86,7 @@ object stropheAugmentingMod extends js.Object {
     *
     *  To send data to the connection, use send().
     */
+  @JSImport("Strophe", "Connection")
   @js.native
   class Connection protected ()
     extends typings.strophe.mod.Strophe.Connection {
@@ -466,8 +151,9 @@ object stropheAugmentingMod extends js.Object {
     *  LogLevel.ERROR - Errors
     *  LogLevel.FATAL - Fatal errors
     */
+  @JSImport("Strophe", "LogLevel")
   @js.native
-  object LogLevel extends js.Object {
+  object LogLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.strophe.mod.Strophe.LogLevel with Double] = js.native
@@ -502,45 +188,152 @@ object stropheAugmentingMod extends js.Object {
     *  NS.XHTML_IM - XHTML-IM namespace from XEP 71.
     *  NS.XHTML - XHTML body namespace from XEP 71.
     */
-  @js.native
-  object NS extends js.Object {
+  object NS {
     
-    var AUTH: String = js.native
+    @JSImport("Strophe", "NS")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var BIND: String = js.native
+    @JSImport("Strophe", "NS.AUTH")
+    @js.native
+    def AUTH: String = js.native
+    @scala.inline
+    def AUTH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTH")(x.asInstanceOf[js.Any])
     
-    var BOSH: String = js.native
+    @JSImport("Strophe", "NS.BIND")
+    @js.native
+    def BIND: String = js.native
+    @scala.inline
+    def BIND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BIND")(x.asInstanceOf[js.Any])
     
-    var CLIENT: String = js.native
+    @JSImport("Strophe", "NS.BOSH")
+    @js.native
+    def BOSH: String = js.native
+    @scala.inline
+    def BOSH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOSH")(x.asInstanceOf[js.Any])
     
-    var DISCO_INFO: String = js.native
+    @JSImport("Strophe", "NS.CLIENT")
+    @js.native
+    def CLIENT: String = js.native
+    @scala.inline
+    def CLIENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLIENT")(x.asInstanceOf[js.Any])
     
-    var DISCO_ITEMS: String = js.native
+    @JSImport("Strophe", "NS.DISCO_INFO")
+    @js.native
+    def DISCO_INFO: String = js.native
+    @scala.inline
+    def DISCO_INFO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCO_INFO")(x.asInstanceOf[js.Any])
     
-    var FRAMING: String = js.native
+    @JSImport("Strophe", "NS.DISCO_ITEMS")
+    @js.native
+    def DISCO_ITEMS: String = js.native
+    @scala.inline
+    def DISCO_ITEMS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCO_ITEMS")(x.asInstanceOf[js.Any])
     
-    var HTTPBIND: String = js.native
+    @JSImport("Strophe", "NS.FRAMING")
+    @js.native
+    def FRAMING: String = js.native
+    @scala.inline
+    def FRAMING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAMING")(x.asInstanceOf[js.Any])
     
-    var MUC: String = js.native
+    @JSImport("Strophe", "NS.HTTPBIND")
+    @js.native
+    def HTTPBIND: String = js.native
+    @scala.inline
+    def HTTPBIND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPBIND")(x.asInstanceOf[js.Any])
     
-    var PROFILE: String = js.native
+    @JSImport("Strophe", "NS.MUC")
+    @js.native
+    def MUC: String = js.native
+    @scala.inline
+    def MUC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MUC")(x.asInstanceOf[js.Any])
     
-    var ROSTER: String = js.native
+    @JSImport("Strophe", "NS.PROFILE")
+    @js.native
+    def PROFILE: String = js.native
+    @scala.inline
+    def PROFILE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROFILE")(x.asInstanceOf[js.Any])
     
-    var SASL: String = js.native
+    @JSImport("Strophe", "NS.ROSTER")
+    @js.native
+    def ROSTER: String = js.native
+    @scala.inline
+    def ROSTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSTER")(x.asInstanceOf[js.Any])
     
-    var SESSION: String = js.native
+    @JSImport("Strophe", "NS.SASL")
+    @js.native
+    def SASL: String = js.native
+    @scala.inline
+    def SASL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SASL")(x.asInstanceOf[js.Any])
     
-    var STANZAS: String = js.native
+    @JSImport("Strophe", "NS.SESSION")
+    @js.native
+    def SESSION: String = js.native
+    @scala.inline
+    def SESSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SESSION")(x.asInstanceOf[js.Any])
     
-    var STREAM: String = js.native
+    @JSImport("Strophe", "NS.STANZAS")
+    @js.native
+    def STANZAS: String = js.native
+    @scala.inline
+    def STANZAS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STANZAS")(x.asInstanceOf[js.Any])
     
-    var VERSION: String = js.native
+    @JSImport("Strophe", "NS.STREAM")
+    @js.native
+    def STREAM: String = js.native
+    @scala.inline
+    def STREAM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STREAM")(x.asInstanceOf[js.Any])
     
-    var XHTML: String = js.native
+    @JSImport("Strophe", "NS.VERSION")
+    @js.native
+    def VERSION: String = js.native
+    @scala.inline
+    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
-    var XHTML_IM: String = js.native
+    @JSImport("Strophe", "NS.XHTML")
+    @js.native
+    def XHTML: String = js.native
+    @scala.inline
+    def XHTML_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XHTML")(x.asInstanceOf[js.Any])
+    
+    @JSImport("Strophe", "NS.XHTML_IM")
+    @js.native
+    def XHTML_IM: String = js.native
+    @scala.inline
+    def XHTML_IM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XHTML_IM")(x.asInstanceOf[js.Any])
   }
+  
+  /** Constants: SASL mechanisms
+    *  Available authentication mechanisms
+    *
+    *  Strophe.SASLAnonymous - SASL Anonymous authentication.
+    *  Strophe.SASLPlain - SASL Plain authentication.
+    *  Strophe.SASLMD5 - SASL Digest-MD5 authentication
+    *  Strophe.SASLSHA1 - SASL SCRAM-SHA1 authentication
+    */
+  @JSImport("Strophe", "SASLAnonymous")
+  @js.native
+  def SASLAnonymous: SASLMechanism = js.native
+  @scala.inline
+  def SASLAnonymous_=(x: SASLMechanism): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SASLAnonymous")(x.asInstanceOf[js.Any])
+  
+  @JSImport("Strophe", "SASLMD5")
+  @js.native
+  def SASLMD5: SASLMechanism = js.native
+  @scala.inline
+  def SASLMD5_=(x: SASLMechanism): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SASLMD5")(x.asInstanceOf[js.Any])
+  
+  @JSImport("Strophe", "SASLPlain")
+  @js.native
+  def SASLPlain: SASLMechanism = js.native
+  @scala.inline
+  def SASLPlain_=(x: SASLMechanism): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SASLPlain")(x.asInstanceOf[js.Any])
+  
+  @JSImport("Strophe", "SASLSHA1")
+  @js.native
+  def SASLSHA1: SASLMechanism = js.native
+  @scala.inline
+  def SASLSHA1_=(x: SASLMechanism): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SASLSHA1")(x.asInstanceOf[js.Any])
   
   /** Constants: Connection Status Constants
     *  Connection status constants for use by the connection handler
@@ -556,8 +349,9 @@ object stropheAugmentingMod extends js.Object {
     *  Status.DISCONNECTING - The connection is currently being terminated
     *  Status.ATTACHED - The connection has been attached
     */
+  @JSImport("Strophe", "Status")
   @js.native
-  object Status extends js.Object {
+  object Status extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.strophe.mod.Strophe.Status with Double] = js.native
@@ -584,4 +378,378 @@ object stropheAugmentingMod extends js.Object {
     
     /* 9 */ val REDIRECT: typings.strophe.mod.Strophe.Status.REDIRECT with Double = js.native
   }
+  
+  /** Constant: VERSION
+    *  The version of the Strophe library. Unreleased builds will have
+    *  a version of head-HASH where HASH is a partial revision.
+    */
+  @JSImport("Strophe", "VERSION")
+  @js.native
+  def VERSION: String = js.native
+  @scala.inline
+  def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+  
+  /** Function: addConnectionPlugin
+    *  Extends the Strophe.Connection object with the given plugin.
+    *
+    *  Parameters:
+    *    (String) name - The name of the extension.
+    *    (Object) ptype - The plugin's prototype.
+    */
+  @JSImport("Strophe", "addConnectionPlugin")
+  @js.native
+  def addConnectionPlugin(name: String, ptype: js.Any): Unit = js.native
+  
+  /** Function: addNamespace
+    *  This function is used to extend the current namespaces in
+    *  Strophe.NS.  It takes a key and a value with the key being the
+    *  name of the new namespace, with its actual value.
+    *  For example:
+    *  Strophe.addNamespace('PUBSUB', "http://jabber.org/protocol/pubsub");
+    *
+    *  Parameters:
+    *    (String) name - The name under which the namespace will be
+    *      referenced under Strophe.NS
+    *    (String) value - The actual namespace.
+    */
+  @JSImport("Strophe", "addNamespace")
+  @js.native
+  def addNamespace(name: String, value: String): Unit = js.native
+  
+  /** Function: copyElement
+    *  Copy an XML DOM element.
+    *
+    *  This function copies a DOM element and all its descendants and returns
+    *  the new copy.
+    *
+    *  Parameters:
+    *    (XMLElement) elem - A DOM element.
+    *
+    *  Returns:
+    *    A new, copied DOM element tree.
+    */
+  @JSImport("Strophe", "copyElement")
+  @js.native
+  def copyElement(elem: Element): Element = js.native
+  
+  /** Function: createHtml
+    *  Copy an HTML DOM element into an XML DOM.
+    *
+    *  This function copies a DOM element and all its descendants and returns
+    *  the new copy.
+    *
+    *  Parameters:
+    *    (Element) elem - A DOM element.
+    *
+    *  Returns:
+    *    A new, copied DOM element tree.
+    */
+  @JSImport("Strophe", "createHtml")
+  @js.native
+  def createHtml(elem: Element): Element = js.native
+  
+  /** Functions: debug, info, warn, error
+    *  Log a message at the appropriate Strophe.LogLevel
+    *
+    *  Parameters:
+    *    (String) msg - The log message.
+    */
+  @JSImport("Strophe", "debug")
+  @js.native
+  def debug(msg: String): Unit = js.native
+  
+  @JSImport("Strophe", "error")
+  @js.native
+  def error(msg: String): Unit = js.native
+  
+  /** Function: escapeNode
+    *  Escape the node part (also called local part) of a JID.
+    *
+    *  Parameters:
+    *    (String) node - A node (or local part).
+    *
+    *  Returns:
+    *    An escaped node (or local part).
+    */
+  @JSImport("Strophe", "escapeNode")
+  @js.native
+  def escapeNode(node: String): String = js.native
+  
+  @JSImport("Strophe", "fatal")
+  @js.native
+  def fatal(msg: String): Unit = js.native
+  
+  /** Function: forEachChild
+    *  Map a function over some or all child elements of a given element.
+    *
+    *  This is a small convenience function for mapping a function over
+    *  some or all of the children of an element.  If elemName is null, all
+    *  children will be passed to the function, otherwise only children
+    *  whose tag names match elemName will be passed.
+    *
+    *  Parameters:
+    *    (XMLElement) elem - The element to operate on.
+    *    (String) elemName - The child element tag name filter.
+    *    (Function) func - The function to apply to each child.  This
+    *      function should take a single argument, a DOM element.
+    */
+  @JSImport("Strophe", "forEachChild")
+  @js.native
+  def forEachChild(elem: Element, elemName: String, func: js.Function1[/* child */ Element, _]): Unit = js.native
+  
+  /** Function: getBareJidFromJid
+    *  Get the bare JID from a JID String.
+    *
+    *  Parameters:
+    *    (String) jid - A JID.
+    *
+    *  Returns:
+    *    A String containing the bare JID.
+    */
+  @JSImport("Strophe", "getBareJidFromJid")
+  @js.native
+  def getBareJidFromJid(jid: String): String = js.native
+  
+  /** Function: getDomainFromJid
+    *  Get the domain portion of a JID String.
+    *
+    *  Parameters:
+    *    (String) jid - A JID.
+    *
+    *  Returns:
+    *    A String containing the domain.
+    */
+  @JSImport("Strophe", "getDomainFromJid")
+  @js.native
+  def getDomainFromJid(jid: String): String = js.native
+  
+  /** Function: getNodeFromJid
+    *  Get the node portion of a JID String.
+    *
+    *  Parameters:
+    *    (String) jid - A JID.
+    *
+    *  Returns:
+    *    A String containing the node.
+    */
+  @JSImport("Strophe", "getNodeFromJid")
+  @js.native
+  def getNodeFromJid(jid: String): String = js.native
+  
+  /** Function: getResourceFromJid
+    *  Get the resource portion of a JID String.
+    *
+    *  Parameters:
+    *    (String) jid - A JID.
+    *
+    *  Returns:
+    *    A String containing the resource.
+    */
+  @JSImport("Strophe", "getResourceFromJid")
+  @js.native
+  def getResourceFromJid(jid: String): String = js.native
+  
+  /** Function: getText
+    *  Get the concatenation of all text children of an element.
+    *
+    *  Parameters:
+    *    (XMLElement) elem - A DOM element.
+    *
+    *  Returns:
+    *    A String with the concatenated text of all text element children.
+    */
+  @JSImport("Strophe", "getText")
+  @js.native
+  def getText(elem: Element): String = js.native
+  
+  @JSImport("Strophe", "info")
+  @js.native
+  def info(msg: String): Unit = js.native
+  
+  /** Function: isTagEqual
+    *  Compare an element's tag name with a string.
+    *
+    *  This function is case sensitive.
+    *
+    *  Parameters:
+    *    (XMLElement) el - A DOM element.
+    *    (String) name - The element name.
+    *
+    *  Returns:
+    *    true if the element's tag name matches _el_, and false
+    *    otherwise.
+    */
+  @JSImport("Strophe", "isTagEqual")
+  @js.native
+  def isTagEqual(el: Element, name: String): Boolean = js.native
+  
+  /** Function: log
+    *  User overrideable logging function.
+    *
+    *  This function is called whenever the Strophe library calls any
+    *  of the logging functions.  The default implementation of this
+    *  function does nothing.  If client code wishes to handle the logging
+    *  messages, it should override this with
+    *  > Strophe.log = function (level, msg) {
+    *  >   (user code here)
+    *  > };
+    *
+    *  Please note that data sent and received over the wire is logged
+    *  via Strophe.Connection.rawInput() and Strophe.Connection.rawOutput().
+    *
+    *  The different levels and their meanings are
+    *
+    *    DEBUG - Messages useful for debugging purposes.
+    *    INFO - Informational messages.  This is mostly information like
+    *      'disconnect was called' or 'SASL auth succeeded'.
+    *    WARN - Warnings about potential problems.  This is mostly used
+    *      to report transient connection errors like request timeouts.
+    *    ERROR - Some error occurred.
+    *    FATAL - A non-recoverable fatal error occurred.
+    *
+    *  Parameters:
+    *    (Integer) level - The log level of the log message.  This will
+    *      be one of the values in Strophe.LogLevel.
+    *    (String) msg - The log message.
+    */
+  @JSImport("Strophe", "log")
+  @js.native
+  def log(level: LogLevel, msg: String): Unit = js.native
+  
+  /** Function: serialize
+    *  Render a DOM element and all descendants to a String.
+    *
+    *  Parameters:
+    *    (XMLElement) elem - A DOM element.
+    *
+    *  Returns:
+    *    The serialized element tree as a String.
+    */
+  @JSImport("Strophe", "serialize")
+  @js.native
+  def serialize(elem: Element): String = js.native
+  @JSImport("Strophe", "serialize")
+  @js.native
+  def serialize(elem: typings.strophe.mod.Strophe.Builder): String = js.native
+  
+  /** Function: unescapeNode
+    *  Unescape a node part (also called local part) of a JID.
+    *
+    *  Parameters:
+    *    (String) node - A node (or local part).
+    *
+    *  Returns:
+    *    An unescaped node (or local part).
+    */
+  @JSImport("Strophe", "unescapeNode")
+  @js.native
+  def unescapeNode(node: String): String = js.native
+  
+  @JSImport("Strophe", "warn")
+  @js.native
+  def warn(msg: String): Unit = js.native
+  
+  /** Function: xmlElement
+    *  Create an XML DOM element.
+    *
+    *  This function creates an XML DOM element correctly across all
+    *  implementations. Note that these are not HTML DOM elements, which
+    *  aren't appropriate for XMPP stanzas.
+    *
+    *  Parameters:
+    *    (String) name - The name for the element.
+    *    (Array|Object) attrs - An optional array or object containing
+    *      key/value pairs to use as element attributes. The object should
+    *      be in the format {'key': 'value'} or {key: 'value'}. The array
+    *      should have the format [['key1', 'value1'], ['key2', 'value2']].
+    *    (String) text - The text child data for the element.
+    *
+    *  Returns:
+    *    A new XML DOM element.
+    */
+  @JSImport("Strophe", "xmlElement")
+  @js.native
+  def xmlElement(name: String): Element = js.native
+  @JSImport("Strophe", "xmlElement")
+  @js.native
+  def xmlElement(name: String, attrs: js.UndefOr[scala.Nothing], text: String): Element = js.native
+  @JSImport("Strophe", "xmlElement")
+  @js.native
+  def xmlElement(name: String, attrs: js.Any): Element = js.native
+  @JSImport("Strophe", "xmlElement")
+  @js.native
+  def xmlElement(name: String, attrs: js.Any, text: String): Element = js.native
+  @JSImport("Strophe", "xmlElement")
+  @js.native
+  def xmlElement(name: String, text: js.UndefOr[scala.Nothing], attrs: js.Any): Element = js.native
+  @JSImport("Strophe", "xmlElement")
+  @js.native
+  def xmlElement(name: String, text: String): Element = js.native
+  @JSImport("Strophe", "xmlElement")
+  @js.native
+  def xmlElement(name: String, text: String, attrs: js.Any): Element = js.native
+  
+  /** Function: xmlGenerator
+    *  Get the DOM document to generate elements.
+    *
+    *  Returns:
+    *    The currently used DOM document.
+    */
+  @JSImport("Strophe", "xmlGenerator")
+  @js.native
+  def xmlGenerator(): Document = js.native
+  
+  /** Function: xmlHtmlNode
+    *  Creates an XML DOM html node.
+    *
+    *  Parameters:
+    *    (String) html - The content of the html node.
+    *
+    *  Returns:
+    *    A new XML DOM text node.
+    */
+  @JSImport("Strophe", "xmlHtmlNode")
+  @js.native
+  def xmlHtmlNode(html: String): Document = js.native
+  
+  /** Function: xmlTextNode
+    *  Creates an XML DOM text node.
+    *
+    *  Provides a cross implementation version of document.createTextNode.
+    *
+    *  Parameters:
+    *    (String) text - The content of the text node.
+    *
+    *  Returns:
+    *    A new XML DOM text node.
+    */
+  @JSImport("Strophe", "xmlTextNode")
+  @js.native
+  def xmlTextNode(text: String): Text = js.native
+  
+  /*  Function: xmlescape
+    *  Excapes invalid xml characters.
+    *
+    *  Parameters:
+    *     (String) text - text to escape.
+    *
+    *  Returns:
+    *      Escaped text.
+    */
+  @JSImport("Strophe", "xmlescape")
+  @js.native
+  def xmlescape(text: String): String = js.native
+  
+  /*  Function: xmlunescape
+    *  Unexcapes invalid xml characters.
+    *
+    *  Parameters:
+    *     (String) text - text to unescape.
+    *
+    *  Returns:
+    *      Unescaped text.
+    */
+  @JSImport("Strophe", "xmlunescape")
+  @js.native
+  def xmlunescape(text: String): String = js.native
 }

@@ -4,6 +4,7 @@ import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.ColorsInstance
 import typings.babylonjs.anon.DashSizeGapSize
 import typings.babylonjs.anon.UseVertexAlpha
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class LinesBuilder ()
   extends typings.babylonjs.BABYLON.LinesBuilder
 /* static members */
-@JSGlobal("BABYLON.LinesBuilder")
-@js.native
-object LinesBuilder extends js.Object {
+object LinesBuilder {
   
   /**
     * Creates a dashed line mesh
@@ -35,7 +34,11 @@ object LinesBuilder extends js.Object {
     * @returns the dashed line mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#dashed-lines
     */
+  @JSGlobal("BABYLON.LinesBuilder.CreateDashedLines")
+  @js.native
   def CreateDashedLines(name: String, options: DashSizeGapSize): typings.babylonjs.BABYLON.LinesMesh = js.native
+  @JSGlobal("BABYLON.LinesBuilder.CreateDashedLines")
+  @js.native
   def CreateDashedLines(name: String, options: DashSizeGapSize, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
   
   /**
@@ -55,6 +58,8 @@ object LinesBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line system mesh
     */
+  @JSGlobal("BABYLON.LinesBuilder.CreateLineSystem")
+  @js.native
   def CreateLineSystem(name: String, options: UseVertexAlpha, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
   
   /**
@@ -73,6 +78,10 @@ object LinesBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line mesh
     */
+  @JSGlobal("BABYLON.LinesBuilder.CreateLines")
+  @js.native
   def CreateLines(name: String, options: ColorsInstance): typings.babylonjs.BABYLON.LinesMesh = js.native
+  @JSGlobal("BABYLON.LinesBuilder.CreateLines")
+  @js.native
   def CreateLines(name: String, options: ColorsInstance, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.LinesMesh = js.native
 }

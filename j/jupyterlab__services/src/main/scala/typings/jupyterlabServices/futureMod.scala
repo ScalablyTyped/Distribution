@@ -14,17 +14,29 @@ import typings.jupyterlabServices.messagesMod.MessageType
 import typings.jupyterlabServices.messagesMod.ShellMessageType
 import typings.jupyterlabServices.messagesMod.StdinMessageType
 import typings.luminoDisposable.mod.DisposableDelegate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/services/lib/kernel/future", JSImport.Namespace)
-@js.native
-object futureMod extends js.Object {
+object futureMod {
   
+  @JSImport("@jupyterlab/services/lib/kernel/future", "KernelControlFutureHandler")
   @js.native
-  class KernelControlFutureHandler[REQUEST /* <: IControlMessage[ControlMessageType] */, REPLY /* <: IControlMessage[ControlMessageType] */] () extends KernelFutureHandler[REQUEST, REPLY]
+  class KernelControlFutureHandler[REQUEST /* <: IControlMessage[ControlMessageType] */, REPLY /* <: IControlMessage[ControlMessageType] */] protected () extends KernelFutureHandler[REQUEST, REPLY] {
+    /**
+      * Construct a new KernelFutureHandler.
+      */
+    def this(
+      cb: js.Function0[Unit],
+      msg: REQUEST,
+      expectReply: Boolean,
+      disposeOnDone: Boolean,
+      kernel: IKernelConnection
+    ) = this()
+  }
   
+  @JSImport("@jupyterlab/services/lib/kernel/future", "KernelFutureHandler")
   @js.native
   abstract class KernelFutureHandler[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */] protected ()
     extends DisposableDelegate
@@ -123,6 +135,18 @@ object futureMod extends js.Object {
     def onStdin_=(cb: js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | js.Thenable[Unit]]): Unit = js.native
   }
   
+  @JSImport("@jupyterlab/services/lib/kernel/future", "KernelShellFutureHandler")
   @js.native
-  class KernelShellFutureHandler[REQUEST /* <: IShellMessage[ShellMessageType] */, REPLY /* <: IShellMessage[ShellMessageType] */] () extends KernelFutureHandler[REQUEST, REPLY]
+  class KernelShellFutureHandler[REQUEST /* <: IShellMessage[ShellMessageType] */, REPLY /* <: IShellMessage[ShellMessageType] */] protected () extends KernelFutureHandler[REQUEST, REPLY] {
+    /**
+      * Construct a new KernelFutureHandler.
+      */
+    def this(
+      cb: js.Function0[Unit],
+      msg: REQUEST,
+      expectReply: Boolean,
+      disposeOnDone: Boolean,
+      kernel: IKernelConnection
+    ) = this()
+  }
 }

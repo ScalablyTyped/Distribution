@@ -1,23 +1,24 @@
 package typings.firebaseDatabase
 
 import typings.firebaseDatabase.eventEmitterMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/util/VisibilityMonitor", JSImport.Namespace)
-@js.native
-object visibilityMonitorMod extends js.Object {
+object visibilityMonitorMod {
   
+  @JSImport("@firebase/database/dist/src/core/util/VisibilityMonitor", "VisibilityMonitor")
   @js.native
   class VisibilityMonitor () extends EventEmitter {
     
     var visible_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object VisibilityMonitor extends js.Object {
+  object VisibilityMonitor {
     
+    @JSImport("@firebase/database/dist/src/core/util/VisibilityMonitor", "VisibilityMonitor.getInstance")
+    @js.native
     def getInstance(): VisibilityMonitor = js.native
   }
 }

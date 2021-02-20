@@ -1,15 +1,16 @@
 package typings.jsuri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("jsuri")
-@js.native
-object jsuri extends js.Object {
+object jsuri {
+  
+  type Primitive = String | Double | Boolean
   
   @js.native
-  trait Uri extends js.Object {
+  trait Uri extends StObject {
     
     /**
       * adds a query parameter
@@ -140,6 +141,4 @@ object jsuri extends js.Object {
     def userInfo(): String = js.native
     def userInfo(`val`: String): String = js.native
   }
-  
-  type Primitive = String | Double | Boolean
 }

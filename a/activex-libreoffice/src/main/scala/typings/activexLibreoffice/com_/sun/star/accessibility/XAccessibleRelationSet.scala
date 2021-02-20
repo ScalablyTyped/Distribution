@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,33 +70,21 @@ object XAccessibleRelationSet {
   }
   
   @scala.inline
-  implicit class XAccessibleRelationSetOps[Self <: XAccessibleRelationSet] (val x: Self) extends AnyVal {
+  implicit class XAccessibleRelationSetMutableBuilder[Self <: XAccessibleRelationSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsRelation(value: Double => Boolean): Self = StObject.set(x, "containsRelation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRelation(value: Double => AccessibleRelation): Self = StObject.set(x, "getRelation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRelationByType(value: Double => AccessibleRelation): Self = StObject.set(x, "getRelationByType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRelationCount(value: Double): Self = this.set("RelationCount", value.asInstanceOf[js.Any])
+    def setGetRelationCount(value: () => Double): Self = StObject.set(x, "getRelationCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContainsRelation(value: Double => Boolean): Self = this.set("containsRelation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRelation(value: Double => AccessibleRelation): Self = this.set("getRelation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRelationByType(value: Double => AccessibleRelation): Self = this.set("getRelationByType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRelationCount(value: () => Double): Self = this.set("getRelationCount", js.Any.fromFunction0(value))
+    def setRelationCount(value: Double): Self = StObject.set(x, "RelationCount", value.asInstanceOf[js.Any])
   }
 }

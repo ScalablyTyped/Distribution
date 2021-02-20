@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * aborted by the Loadbalancer for a percentage of requests.
   */
 @js.native
-trait SchemaHttpFaultInjection extends js.Object {
+trait SchemaHttpFaultInjection extends StObject {
   
   /**
     * The specification for how client requests are aborted as part of fault
@@ -36,30 +37,18 @@ object SchemaHttpFaultInjection {
   }
   
   @scala.inline
-  implicit class SchemaHttpFaultInjectionOps[Self <: SchemaHttpFaultInjection] (val x: Self) extends AnyVal {
+  implicit class SchemaHttpFaultInjectionMutableBuilder[Self <: SchemaHttpFaultInjection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: SchemaHttpFaultAbort): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: SchemaHttpFaultDelay): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbort(value: SchemaHttpFaultAbort): Self = this.set("abort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAbort: Self = this.set("abort", js.undefined)
-    
-    @scala.inline
-    def setDelay(value: SchemaHttpFaultDelay): Self = this.set("delay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
   }
 }

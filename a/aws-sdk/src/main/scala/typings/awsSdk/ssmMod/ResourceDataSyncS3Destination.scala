@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceDataSyncS3Destination extends js.Object {
+trait ResourceDataSyncS3Destination extends StObject {
   
   /**
     * The ARN of an encryption key for a destination in Amazon S3. Must belong to the same Region as the destination S3 bucket.
@@ -50,45 +51,33 @@ object ResourceDataSyncS3Destination {
   }
   
   @scala.inline
-  implicit class ResourceDataSyncS3DestinationOps[Self <: ResourceDataSyncS3Destination] (val x: Self) extends AnyVal {
+  implicit class ResourceDataSyncS3DestinationMutableBuilder[Self <: ResourceDataSyncS3Destination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAWSKMSKeyARN(value: ResourceDataSyncAWSKMSKeyARN): Self = StObject.set(x, "AWSKMSKeyARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAWSKMSKeyARNUndefined: Self = StObject.set(x, "AWSKMSKeyARN", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketName(value: ResourceDataSyncS3BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: ResourceDataSyncS3BucketName): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    def setDestinationDataSharing(value: ResourceDataSyncDestinationDataSharing): Self = StObject.set(x, "DestinationDataSharing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: ResourceDataSyncS3Region): Self = this.set("Region", value.asInstanceOf[js.Any])
+    def setDestinationDataSharingUndefined: Self = StObject.set(x, "DestinationDataSharing", js.undefined)
     
     @scala.inline
-    def setSyncFormat(value: ResourceDataSyncS3Format): Self = this.set("SyncFormat", value.asInstanceOf[js.Any])
+    def setPrefix(value: ResourceDataSyncS3Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAWSKMSKeyARN(value: ResourceDataSyncAWSKMSKeyARN): Self = this.set("AWSKMSKeyARN", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
     @scala.inline
-    def deleteAWSKMSKeyARN: Self = this.set("AWSKMSKeyARN", js.undefined)
+    def setRegion(value: ResourceDataSyncS3Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationDataSharing(value: ResourceDataSyncDestinationDataSharing): Self = this.set("DestinationDataSharing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationDataSharing: Self = this.set("DestinationDataSharing", js.undefined)
-    
-    @scala.inline
-    def setPrefix(value: ResourceDataSyncS3Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    def setSyncFormat(value: ResourceDataSyncS3Format): Self = StObject.set(x, "SyncFormat", value.asInstanceOf[js.Any])
   }
 }

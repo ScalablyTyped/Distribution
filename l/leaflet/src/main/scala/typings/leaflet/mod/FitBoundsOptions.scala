@@ -1,5 +1,6 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,60 +32,48 @@ object FitBoundsOptions {
   }
   
   @scala.inline
-  implicit class FitBoundsOptionsOps[Self <: FitBoundsOptions] (val x: Self) extends AnyVal {
+  implicit class FitBoundsOptionsMutableBuilder[Self <: FitBoundsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEaseLinearity(value: Double): Self = StObject.set(x, "easeLinearity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEaseLinearityUndefined: Self = StObject.set(x, "easeLinearity", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseLinearity(value: Double): Self = this.set("easeLinearity", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteEaseLinearity: Self = this.set("easeLinearity", js.undefined)
+    def setNoMoveStart(value: Boolean): Self = StObject.set(x, "noMoveStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setNoMoveStartUndefined: Self = StObject.set(x, "noMoveStart", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setPadding(value: PointExpression): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoMoveStart(value: Boolean): Self = this.set("noMoveStart", value.asInstanceOf[js.Any])
+    def setPaddingBottomRight(value: PointExpression): Self = StObject.set(x, "paddingBottomRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoMoveStart: Self = this.set("noMoveStart", js.undefined)
+    def setPaddingBottomRightUndefined: Self = StObject.set(x, "paddingBottomRight", js.undefined)
     
     @scala.inline
-    def setPadding(value: PointExpression): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPaddingTopLeft(value: PointExpression): Self = StObject.set(x, "paddingTopLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingTopLeftUndefined: Self = StObject.set(x, "paddingTopLeft", js.undefined)
     
     @scala.inline
-    def setPaddingBottomRight(value: PointExpression): Self = this.set("paddingBottomRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingBottomRight: Self = this.set("paddingBottomRight", js.undefined)
-    
-    @scala.inline
-    def setPaddingTopLeft(value: PointExpression): Self = this.set("paddingTopLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingTopLeft: Self = this.set("paddingTopLeft", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

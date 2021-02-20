@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivitySetRepoSubscriptionEndpoint extends js.Object {
+trait ActivitySetRepoSubscriptionEndpoint extends StObject {
   
   /**
     * Determines if all notifications should be blocked from this repository.
@@ -30,36 +31,24 @@ object ActivitySetRepoSubscriptionEndpoint {
   }
   
   @scala.inline
-  implicit class ActivitySetRepoSubscriptionEndpointOps[Self <: ActivitySetRepoSubscriptionEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActivitySetRepoSubscriptionEndpointMutableBuilder[Self <: ActivitySetRepoSubscriptionEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnored(value: Boolean): Self = this.set("ignored", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnored: Self = this.set("ignored", js.undefined)
-    
-    @scala.inline
-    def setSubscribed(value: Boolean): Self = this.set("subscribed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribed: Self = this.set("subscribed", js.undefined)
+    def setSubscribedUndefined: Self = StObject.set(x, "subscribed", js.undefined)
   }
 }

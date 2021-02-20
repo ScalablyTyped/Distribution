@@ -6,20 +6,21 @@ import typings.node.tlsMod.ConnectionOptions
 import typings.rsocketCore.rsocketencodingMod.Encoders
 import typings.rsocketTypes.reactiveSocketTypesMod.ConnectionStatus
 import typings.rsocketTypes.reactiveSocketTypesMod.DuplexConnection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-tcp-client/RSocketTcpClient", JSImport.Namespace)
-@js.native
-object rsockettcpclientMod extends js.Object {
+object rsockettcpclientMod {
   
+  @JSImport("rsocket-tcp-client/RSocketTcpClient", "RSocketTcpClient")
   @js.native
   class RSocketTcpClient protected () extends RSocketTcpConnection {
     def this(options: TcpSocketConnectOpts) = this()
     def this(options: TcpSocketConnectOpts, encoders: Encoders[_]) = this()
   }
   
+  @JSImport("rsocket-tcp-client/RSocketTcpClient", "RSocketTcpConnection")
   @js.native
   class RSocketTcpConnection () extends DuplexConnection {
     def this(socket: Socket) = this()
@@ -33,6 +34,7 @@ object rsockettcpclientMod extends js.Object {
     def setupSocket(socket: Socket): Unit = js.native
   }
   
+  @JSImport("rsocket-tcp-client/RSocketTcpClient", "RSocketTlsClient")
   @js.native
   class RSocketTlsClient protected () extends RSocketTcpConnection {
     def this(options: ConnectionOptions) = this()

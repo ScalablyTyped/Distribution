@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1UserInfo extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1UserInfo extends StObject {
   
   /**
     * Optional. Indicates if the request is made directly from the end user in which case the user_agent and ip_address fields can be populated from the HTTP request. This should *not* be
@@ -44,48 +45,36 @@ object GoogleCloudRecommendationengineV1beta1UserInfo {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1UserInfoOps[Self <: GoogleCloudRecommendationengineV1beta1UserInfo] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1UserInfoMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1UserInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectUserRequest(value: Boolean): Self = StObject.set(x, "directUserRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectUserRequestUndefined: Self = StObject.set(x, "directUserRequest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectUserRequest(value: Boolean): Self = this.set("directUserRequest", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     @scala.inline
-    def deleteDirectUserRequest: Self = this.set("directUserRequest", js.undefined)
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
     @scala.inline
-    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    def setVisitorId(value: String): Self = StObject.set(x, "visitorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
-    
-    @scala.inline
-    def setVisitorId(value: String): Self = this.set("visitorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisitorId: Self = this.set("visitorId", js.undefined)
+    def setVisitorIdUndefined: Self = StObject.set(x, "visitorId", js.undefined)
   }
 }

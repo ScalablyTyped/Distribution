@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMotionControllerProfile extends js.Object {
+trait IMotionControllerProfile extends StObject {
   
   /**
     * fallback profiles for this profileId
@@ -32,30 +33,18 @@ object IMotionControllerProfile {
   }
   
   @scala.inline
-  implicit class IMotionControllerProfileOps[Self <: IMotionControllerProfile] (val x: Self) extends AnyVal {
+  implicit class IMotionControllerProfileMutableBuilder[Self <: IMotionControllerProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFallbackProfileIds(value: js.Array[String]): Self = StObject.set(x, "fallbackProfileIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFallbackProfileIdsVarargs(value: String*): Self = StObject.set(x, "fallbackProfileIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayouts(value: IMotionControllerLayoutMap): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallbackProfileIdsVarargs(value: String*): Self = this.set("fallbackProfileIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setFallbackProfileIds(value: js.Array[String]): Self = this.set("fallbackProfileIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayouts(value: IMotionControllerLayoutMap): Self = this.set("layouts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
   }
 }

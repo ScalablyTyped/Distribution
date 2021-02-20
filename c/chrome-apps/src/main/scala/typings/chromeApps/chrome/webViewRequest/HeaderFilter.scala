@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.webViewRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeaderFilter extends js.Object {
+trait HeaderFilter extends StObject {
   
   /** Matches if the header name contains all of the specified strings. */
   var nameContains: js.UndefOr[String | js.Array[String]] = js.native
@@ -40,72 +41,60 @@ object HeaderFilter {
   }
   
   @scala.inline
-  implicit class HeaderFilterOps[Self <: HeaderFilter] (val x: Self) extends AnyVal {
+  implicit class HeaderFilterMutableBuilder[Self <: HeaderFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNameContains(value: String | js.Array[String]): Self = StObject.set(x, "nameContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameContainsUndefined: Self = StObject.set(x, "nameContains", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameContainsVarargs(value: String*): Self = StObject.set(x, "nameContains", js.Array(value :_*))
     
     @scala.inline
-    def setNameContainsVarargs(value: String*): Self = this.set("nameContains", js.Array(value :_*))
+    def setNameEquals(value: String): Self = StObject.set(x, "nameEquals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameContains(value: String | js.Array[String]): Self = this.set("nameContains", value.asInstanceOf[js.Any])
+    def setNameEqualsUndefined: Self = StObject.set(x, "nameEquals", js.undefined)
     
     @scala.inline
-    def deleteNameContains: Self = this.set("nameContains", js.undefined)
+    def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameEquals(value: String): Self = this.set("nameEquals", value.asInstanceOf[js.Any])
+    def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
     
     @scala.inline
-    def deleteNameEquals: Self = this.set("nameEquals", js.undefined)
+    def setNameSuffix(value: String): Self = StObject.set(x, "nameSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePrefix(value: String): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    def setNameSuffixUndefined: Self = StObject.set(x, "nameSuffix", js.undefined)
     
     @scala.inline
-    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    def setValueContains(value: String | js.Array[String]): Self = StObject.set(x, "valueContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameSuffix(value: String): Self = this.set("nameSuffix", value.asInstanceOf[js.Any])
+    def setValueContainsUndefined: Self = StObject.set(x, "valueContains", js.undefined)
     
     @scala.inline
-    def deleteNameSuffix: Self = this.set("nameSuffix", js.undefined)
+    def setValueContainsVarargs(value: String*): Self = StObject.set(x, "valueContains", js.Array(value :_*))
     
     @scala.inline
-    def setValueContainsVarargs(value: String*): Self = this.set("valueContains", js.Array(value :_*))
+    def setValueEquals(value: String): Self = StObject.set(x, "valueEquals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueContains(value: String | js.Array[String]): Self = this.set("valueContains", value.asInstanceOf[js.Any])
+    def setValueEqualsUndefined: Self = StObject.set(x, "valueEquals", js.undefined)
     
     @scala.inline
-    def deleteValueContains: Self = this.set("valueContains", js.undefined)
+    def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueEquals(value: String): Self = this.set("valueEquals", value.asInstanceOf[js.Any])
+    def setValuePrefixUndefined: Self = StObject.set(x, "valuePrefix", js.undefined)
     
     @scala.inline
-    def deleteValueEquals: Self = this.set("valueEquals", js.undefined)
+    def setValueSuffix(value: String): Self = StObject.set(x, "valueSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuePrefix(value: String): Self = this.set("valuePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValuePrefix: Self = this.set("valuePrefix", js.undefined)
-    
-    @scala.inline
-    def setValueSuffix(value: String): Self = this.set("valueSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSuffix: Self = this.set("valueSuffix", js.undefined)
+    def setValueSuffixUndefined: Self = StObject.set(x, "valueSuffix", js.undefined)
   }
 }

@@ -50,12 +50,13 @@ import typings.semanticUiSidebar.semanticUiSidebarStrings.toggle
 import typings.semanticUiSidebar.semanticUiSidebarStrings.transition
 import typings.semanticUiSidebar.semanticUiSidebarStrings.useLegacy
 import typings.semanticUiSidebar.semanticUiSidebarStrings.verbose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def sidebar(): JQuery = js.native
   def sidebar(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native

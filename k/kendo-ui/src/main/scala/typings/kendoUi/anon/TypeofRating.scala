@@ -1,20 +1,35 @@
 package typings.kendoUi.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.kendoUi.kendo.ui.Rating
-import typings.kendoUi.kendo.ui.RatingOptions
-import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofRating
-  extends Instantiable1[/* element */ Element, Rating]
-     with Instantiable2[/* element */ Element, /* options */ RatingOptions, Rating] {
+trait TypeofRating extends StObject {
   
+  /* static member */
   def extend(proto: js.Object): Rating = js.native
   
+  /* static member */
   var fn: Rating = js.native
+}
+object TypeofRating {
+  
+  @scala.inline
+  def apply(extend: js.Object => Rating, fn: Rating): TypeofRating = {
+    val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofRating]
+  }
+  
+  @scala.inline
+  implicit class TypeofRatingMutableBuilder[Self <: TypeofRating] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setExtend(value: js.Object => Rating): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setFn(value: Rating): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+  }
 }

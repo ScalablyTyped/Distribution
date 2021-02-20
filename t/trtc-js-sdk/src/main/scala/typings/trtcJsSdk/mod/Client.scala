@@ -16,12 +16,13 @@ import typings.trtcJsSdk.trtcJsSdkStrings.`stream-updated`
 import typings.trtcJsSdk.trtcJsSdkStrings.`unmute-audio`
 import typings.trtcJsSdk.trtcJsSdkStrings.`unmute-video`
 import typings.trtcJsSdk.trtcJsSdkStrings.error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Client extends js.Object {
+trait Client extends StObject {
   
   /** 获取当前已发布本地流的音频统计数据 */
   def getLocalAudioStats(): js.Promise[LocalAudioStatsMap] = js.native

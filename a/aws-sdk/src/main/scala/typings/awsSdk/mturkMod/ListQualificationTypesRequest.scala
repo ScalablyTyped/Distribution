@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListQualificationTypesRequest extends js.Object {
+trait ListQualificationTypesRequest extends StObject {
   
   /**
     *  The maximum number of results to return in a single call. 
@@ -38,45 +39,33 @@ object ListQualificationTypesRequest {
   }
   
   @scala.inline
-  implicit class ListQualificationTypesRequestOps[Self <: ListQualificationTypesRequest] (val x: Self) extends AnyVal {
+  implicit class ListQualificationTypesRequestMutableBuilder[Self <: ListQualificationTypesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMustBeOwnedByCaller(value: Boolean): Self = StObject.set(x, "MustBeOwnedByCaller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMustBeRequestable(value: Boolean): Self = this.set("MustBeRequestable", value.asInstanceOf[js.Any])
+    def setMustBeOwnedByCallerUndefined: Self = StObject.set(x, "MustBeOwnedByCaller", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: ResultSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setMustBeRequestable(value: Boolean): Self = StObject.set(x, "MustBeRequestable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMustBeOwnedByCaller(value: Boolean): Self = this.set("MustBeOwnedByCaller", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMustBeOwnedByCaller: Self = this.set("MustBeOwnedByCaller", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setQuery(value: String): Self = this.set("Query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("Query", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "Query", js.undefined)
   }
 }

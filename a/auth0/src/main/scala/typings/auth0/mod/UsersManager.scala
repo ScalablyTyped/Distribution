@@ -1,13 +1,14 @@
 package typings.auth0.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0", "UsersManager")
 @js.native
-class UsersManager[A, U] protected () extends js.Object {
+class UsersManager[A, U] protected () extends StObject {
   def this(options: UsersOptions) = this()
   
   def getInfo(accessToken: String): js.Promise[User[A, U]] = js.native

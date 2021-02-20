@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // }
 /* Inlined std.Partial<std.Record<screeps.ExitKey, string>> */
 @js.native
-trait ExitsInformation extends js.Object {
+trait ExitsInformation extends StObject {
   
   var `1`: js.UndefOr[String] = js.native
   
@@ -29,42 +30,30 @@ object ExitsInformation {
   }
   
   @scala.inline
-  implicit class ExitsInformationOps[Self <: ExitsInformation] (val x: Self) extends AnyVal {
+  implicit class ExitsInformationMutableBuilder[Self <: ExitsInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set1Undefined: Self = StObject.set(x, "1", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set3(value: String): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1(value: String): Self = this.set("1", value.asInstanceOf[js.Any])
+    def set3Undefined: Self = StObject.set(x, "3", js.undefined)
     
     @scala.inline
-    def delete1: Self = this.set("1", js.undefined)
+    def set5(value: String): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set3(value: String): Self = this.set("3", value.asInstanceOf[js.Any])
+    def set5Undefined: Self = StObject.set(x, "5", js.undefined)
     
     @scala.inline
-    def delete3: Self = this.set("3", js.undefined)
+    def set7(value: String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set5(value: String): Self = this.set("5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete5: Self = this.set("5", js.undefined)
-    
-    @scala.inline
-    def set7(value: String): Self = this.set("7", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete7: Self = this.set("7", js.undefined)
+    def set7Undefined: Self = StObject.set(x, "7", js.undefined)
   }
 }

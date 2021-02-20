@@ -4,12 +4,13 @@ import typings.gsap.gsapStrings.both
 import typings.gsap.gsapStrings.in
 import typings.gsap.gsapStrings.none
 import typings.gsap.gsapStrings.out
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoughEaseConfig extends js.Object {
+trait RoughEaseConfig extends StObject {
   
   var clamp: js.UndefOr[Boolean] = js.native
   
@@ -32,54 +33,42 @@ object RoughEaseConfig {
   }
   
   @scala.inline
-  implicit class RoughEaseConfigOps[Self <: RoughEaseConfig] (val x: Self) extends AnyVal {
+  implicit class RoughEaseConfigMutableBuilder[Self <: RoughEaseConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClamp(value: Boolean): Self = this.set("clamp", value.asInstanceOf[js.Any])
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def deleteClamp: Self = this.set("clamp", js.undefined)
+    def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: Double): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRandomize(value: Boolean): Self = this.set("randomize", value.asInstanceOf[js.Any])
+    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
     
     @scala.inline
-    def deleteRandomize: Self = this.set("randomize", js.undefined)
+    def setTaper(value: in | out | both | none): Self = StObject.set(x, "taper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrength(value: Double): Self = this.set("strength", value.asInstanceOf[js.Any])
+    def setTaperUndefined: Self = StObject.set(x, "taper", js.undefined)
     
     @scala.inline
-    def deleteStrength: Self = this.set("strength", js.undefined)
+    def setTemplate(value: Ease): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaper(value: in | out | both | none): Self = this.set("taper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaper: Self = this.set("taper", js.undefined)
-    
-    @scala.inline
-    def setTemplate(value: Ease): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

@@ -1,14 +1,15 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CharacterCodes extends js.Object
+sealed trait CharacterCodes extends StObject
 @JSGlobal("TypeScript.CharacterCodes")
 @js.native
-object CharacterCodes extends js.Object {
+object CharacterCodes extends StObject {
   
   @js.native
   sealed trait $ extends CharacterCodes

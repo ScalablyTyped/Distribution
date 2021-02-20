@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDeliveryStreamInput extends js.Object {
+trait DescribeDeliveryStreamInput extends StObject {
   
   /**
     * The name of the delivery stream.
@@ -31,33 +32,21 @@ object DescribeDeliveryStreamInput {
   }
   
   @scala.inline
-  implicit class DescribeDeliveryStreamInputOps[Self <: DescribeDeliveryStreamInput] (val x: Self) extends AnyVal {
+  implicit class DescribeDeliveryStreamInputMutableBuilder[Self <: DescribeDeliveryStreamInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusiveStartDestinationId(value: DestinationId): Self = StObject.set(x, "ExclusiveStartDestinationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusiveStartDestinationIdUndefined: Self = StObject.set(x, "ExclusiveStartDestinationId", js.undefined)
     
     @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = this.set("DeliveryStreamName", value.asInstanceOf[js.Any])
+    def setLimit(value: DescribeDeliveryStreamInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusiveStartDestinationId(value: DestinationId): Self = this.set("ExclusiveStartDestinationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusiveStartDestinationId: Self = this.set("ExclusiveStartDestinationId", js.undefined)
-    
-    @scala.inline
-    def setLimit(value: DescribeDeliveryStreamInputLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
   }
 }

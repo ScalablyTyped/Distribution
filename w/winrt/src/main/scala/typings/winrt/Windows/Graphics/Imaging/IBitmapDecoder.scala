@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Graphics.Imaging
 
 import typings.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBitmapDecoder extends js.Object {
+trait IBitmapDecoder extends StObject {
   
   var bitmapContainerProperties: BitmapPropertiesView = js.native
   
@@ -33,33 +34,21 @@ object IBitmapDecoder {
   }
   
   @scala.inline
-  implicit class IBitmapDecoderOps[Self <: IBitmapDecoder] (val x: Self) extends AnyVal {
+  implicit class IBitmapDecoderMutableBuilder[Self <: IBitmapDecoder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitmapContainerProperties(value: BitmapPropertiesView): Self = StObject.set(x, "bitmapContainerProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecoderInformation(value: BitmapCodecInformation): Self = StObject.set(x, "decoderInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameCount(value: Double): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmapContainerProperties(value: BitmapPropertiesView): Self = this.set("bitmapContainerProperties", value.asInstanceOf[js.Any])
+    def setGetFrameAsync(value: Double => IAsyncOperation[BitmapFrame]): Self = StObject.set(x, "getFrameAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDecoderInformation(value: BitmapCodecInformation): Self = this.set("decoderInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrameCount(value: Double): Self = this.set("frameCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetFrameAsync(value: Double => IAsyncOperation[BitmapFrame]): Self = this.set("getFrameAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPreviewAsync(value: () => IAsyncOperation[ImageStream]): Self = this.set("getPreviewAsync", js.Any.fromFunction0(value))
+    def setGetPreviewAsync(value: () => IAsyncOperation[ImageStream]): Self = StObject.set(x, "getPreviewAsync", js.Any.fromFunction0(value))
   }
 }

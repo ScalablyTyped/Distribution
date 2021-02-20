@@ -1,11 +1,12 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAngularEvent extends js.Object {
+trait IAngularEvent extends StObject {
   
   /**
     * the scope that is currently handling the event. Once the event propagates through the scope hierarchy, this property is set to null.
@@ -52,39 +53,27 @@ object IAngularEvent {
   }
   
   @scala.inline
-  implicit class IAngularEventOps[Self <: IAngularEvent] (val x: Self) extends AnyVal {
+  implicit class IAngularEventMutableBuilder[Self <: IAngularEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentScope(value: IScope): Self = StObject.set(x, "currentScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentScope(value: IScope): Self = this.set("currentScope", value.asInstanceOf[js.Any])
+    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = this.set("defaultPrevented", value.asInstanceOf[js.Any])
+    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
     
     @scala.inline
-    def setPreventDefault(value: () => Unit): Self = this.set("preventDefault", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTargetScope(value: IScope): Self = this.set("targetScope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = this.set("stopPropagation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteStopPropagation: Self = this.set("stopPropagation", js.undefined)
+    def setTargetScope(value: IScope): Self = StObject.set(x, "targetScope", value.asInstanceOf[js.Any])
   }
 }

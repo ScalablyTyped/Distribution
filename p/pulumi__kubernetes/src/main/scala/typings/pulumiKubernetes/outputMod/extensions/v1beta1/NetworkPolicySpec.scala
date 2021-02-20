@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.extensions.v1beta1
 
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DEPRECATED 1.9 - This group version of NetworkPolicySpec is deprecated by networking/v1/NetworkPolicySpec.
   */
 @js.native
-trait NetworkPolicySpec extends js.Object {
+trait NetworkPolicySpec extends StObject {
   
   /**
     * List of egress rules to be applied to the selected pods. Outgoing traffic is allowed if there are no NetworkPolicies selecting the pod (and cluster policy otherwise allows the traffic), OR if the traffic matches at least one egress rule across all of the NetworkPolicy objects whose podSelector matches the pod. If this field is empty then this NetworkPolicy limits all outgoing traffic (and serves solely to ensure that the pods it selects are isolated by default). This field is beta-level in 1.8
@@ -45,39 +46,27 @@ object NetworkPolicySpec {
   }
   
   @scala.inline
-  implicit class NetworkPolicySpecOps[Self <: NetworkPolicySpec] (val x: Self) extends AnyVal {
+  implicit class NetworkPolicySpecMutableBuilder[Self <: NetworkPolicySpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEgress(value: js.Array[NetworkPolicyEgressRule]): Self = StObject.set(x, "egress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEgressVarargs(value: NetworkPolicyEgressRule*): Self = StObject.set(x, "egress", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIngress(value: js.Array[NetworkPolicyIngressRule]): Self = StObject.set(x, "ingress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEgressVarargs(value: NetworkPolicyEgressRule*): Self = this.set("egress", js.Array(value :_*))
+    def setIngressVarargs(value: NetworkPolicyIngressRule*): Self = StObject.set(x, "ingress", js.Array(value :_*))
     
     @scala.inline
-    def setEgress(value: js.Array[NetworkPolicyEgressRule]): Self = this.set("egress", value.asInstanceOf[js.Any])
+    def setPodSelector(value: LabelSelector): Self = StObject.set(x, "podSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngressVarargs(value: NetworkPolicyIngressRule*): Self = this.set("ingress", js.Array(value :_*))
+    def setPolicyTypes(value: js.Array[String]): Self = StObject.set(x, "policyTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngress(value: js.Array[NetworkPolicyIngressRule]): Self = this.set("ingress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPodSelector(value: LabelSelector): Self = this.set("podSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicyTypesVarargs(value: String*): Self = this.set("policyTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicyTypes(value: js.Array[String]): Self = this.set("policyTypes", value.asInstanceOf[js.Any])
+    def setPolicyTypesVarargs(value: String*): Self = StObject.set(x, "policyTypes", js.Array(value :_*))
   }
 }

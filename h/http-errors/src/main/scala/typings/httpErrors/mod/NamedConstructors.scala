@@ -1,6 +1,7 @@
 package typings.httpErrors.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -309,267 +310,255 @@ object NamedConstructors {
   }
   
   @scala.inline
-  implicit class NamedConstructorsOps[Self <: NamedConstructors] (val x: Self) extends AnyVal {
+  implicit class NamedConstructorsMutableBuilder[Self <: NamedConstructors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set400(value: HttpErrorConstructor): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set401(value: HttpErrorConstructor): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set402(value: HttpErrorConstructor): Self = StObject.set(x, "402", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set400(value: HttpErrorConstructor): Self = this.set("400", value.asInstanceOf[js.Any])
+    def set403(value: HttpErrorConstructor): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set401(value: HttpErrorConstructor): Self = this.set("401", value.asInstanceOf[js.Any])
+    def set404(value: HttpErrorConstructor): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set402(value: HttpErrorConstructor): Self = this.set("402", value.asInstanceOf[js.Any])
+    def set405(value: HttpErrorConstructor): Self = StObject.set(x, "405", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set403(value: HttpErrorConstructor): Self = this.set("403", value.asInstanceOf[js.Any])
+    def set406(value: HttpErrorConstructor): Self = StObject.set(x, "406", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set404(value: HttpErrorConstructor): Self = this.set("404", value.asInstanceOf[js.Any])
+    def set407(value: HttpErrorConstructor): Self = StObject.set(x, "407", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set405(value: HttpErrorConstructor): Self = this.set("405", value.asInstanceOf[js.Any])
+    def set408(value: HttpErrorConstructor): Self = StObject.set(x, "408", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set406(value: HttpErrorConstructor): Self = this.set("406", value.asInstanceOf[js.Any])
+    def set409(value: HttpErrorConstructor): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set407(value: HttpErrorConstructor): Self = this.set("407", value.asInstanceOf[js.Any])
+    def set410(value: HttpErrorConstructor): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set408(value: HttpErrorConstructor): Self = this.set("408", value.asInstanceOf[js.Any])
+    def set411(value: HttpErrorConstructor): Self = StObject.set(x, "411", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set409(value: HttpErrorConstructor): Self = this.set("409", value.asInstanceOf[js.Any])
+    def set412(value: HttpErrorConstructor): Self = StObject.set(x, "412", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set410(value: HttpErrorConstructor): Self = this.set("410", value.asInstanceOf[js.Any])
+    def set413(value: HttpErrorConstructor): Self = StObject.set(x, "413", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set411(value: HttpErrorConstructor): Self = this.set("411", value.asInstanceOf[js.Any])
+    def set414(value: HttpErrorConstructor): Self = StObject.set(x, "414", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set412(value: HttpErrorConstructor): Self = this.set("412", value.asInstanceOf[js.Any])
+    def set415(value: HttpErrorConstructor): Self = StObject.set(x, "415", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set413(value: HttpErrorConstructor): Self = this.set("413", value.asInstanceOf[js.Any])
+    def set416(value: HttpErrorConstructor): Self = StObject.set(x, "416", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set414(value: HttpErrorConstructor): Self = this.set("414", value.asInstanceOf[js.Any])
+    def set417(value: HttpErrorConstructor): Self = StObject.set(x, "417", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set415(value: HttpErrorConstructor): Self = this.set("415", value.asInstanceOf[js.Any])
+    def set418(value: HttpErrorConstructor): Self = StObject.set(x, "418", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set416(value: HttpErrorConstructor): Self = this.set("416", value.asInstanceOf[js.Any])
+    def set421(value: HttpErrorConstructor): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set417(value: HttpErrorConstructor): Self = this.set("417", value.asInstanceOf[js.Any])
+    def set422(value: HttpErrorConstructor): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set418(value: HttpErrorConstructor): Self = this.set("418", value.asInstanceOf[js.Any])
+    def set423(value: HttpErrorConstructor): Self = StObject.set(x, "423", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set421(value: HttpErrorConstructor): Self = this.set("421", value.asInstanceOf[js.Any])
+    def set424(value: HttpErrorConstructor): Self = StObject.set(x, "424", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set422(value: HttpErrorConstructor): Self = this.set("422", value.asInstanceOf[js.Any])
+    def set425(value: HttpErrorConstructor): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set423(value: HttpErrorConstructor): Self = this.set("423", value.asInstanceOf[js.Any])
+    def set426(value: HttpErrorConstructor): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set424(value: HttpErrorConstructor): Self = this.set("424", value.asInstanceOf[js.Any])
+    def set428(value: HttpErrorConstructor): Self = StObject.set(x, "428", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set425(value: HttpErrorConstructor): Self = this.set("425", value.asInstanceOf[js.Any])
+    def set429(value: HttpErrorConstructor): Self = StObject.set(x, "429", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set426(value: HttpErrorConstructor): Self = this.set("426", value.asInstanceOf[js.Any])
+    def set431(value: HttpErrorConstructor): Self = StObject.set(x, "431", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set428(value: HttpErrorConstructor): Self = this.set("428", value.asInstanceOf[js.Any])
+    def set451(value: HttpErrorConstructor): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set429(value: HttpErrorConstructor): Self = this.set("429", value.asInstanceOf[js.Any])
+    def set500(value: HttpErrorConstructor): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set431(value: HttpErrorConstructor): Self = this.set("431", value.asInstanceOf[js.Any])
+    def set501(value: HttpErrorConstructor): Self = StObject.set(x, "501", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set451(value: HttpErrorConstructor): Self = this.set("451", value.asInstanceOf[js.Any])
+    def set502(value: HttpErrorConstructor): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set500(value: HttpErrorConstructor): Self = this.set("500", value.asInstanceOf[js.Any])
+    def set503(value: HttpErrorConstructor): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set501(value: HttpErrorConstructor): Self = this.set("501", value.asInstanceOf[js.Any])
+    def set504(value: HttpErrorConstructor): Self = StObject.set(x, "504", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set502(value: HttpErrorConstructor): Self = this.set("502", value.asInstanceOf[js.Any])
+    def set505(value: HttpErrorConstructor): Self = StObject.set(x, "505", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set503(value: HttpErrorConstructor): Self = this.set("503", value.asInstanceOf[js.Any])
+    def set506(value: HttpErrorConstructor): Self = StObject.set(x, "506", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set504(value: HttpErrorConstructor): Self = this.set("504", value.asInstanceOf[js.Any])
+    def set507(value: HttpErrorConstructor): Self = StObject.set(x, "507", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set505(value: HttpErrorConstructor): Self = this.set("505", value.asInstanceOf[js.Any])
+    def set508(value: HttpErrorConstructor): Self = StObject.set(x, "508", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set506(value: HttpErrorConstructor): Self = this.set("506", value.asInstanceOf[js.Any])
+    def set509(value: HttpErrorConstructor): Self = StObject.set(x, "509", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set507(value: HttpErrorConstructor): Self = this.set("507", value.asInstanceOf[js.Any])
+    def set510(value: HttpErrorConstructor): Self = StObject.set(x, "510", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set508(value: HttpErrorConstructor): Self = this.set("508", value.asInstanceOf[js.Any])
+    def set511(value: HttpErrorConstructor): Self = StObject.set(x, "511", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set509(value: HttpErrorConstructor): Self = this.set("509", value.asInstanceOf[js.Any])
+    def setBadGateway(value: HttpErrorConstructor): Self = StObject.set(x, "BadGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set510(value: HttpErrorConstructor): Self = this.set("510", value.asInstanceOf[js.Any])
+    def setBadRequest(value: HttpErrorConstructor): Self = StObject.set(x, "BadRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set511(value: HttpErrorConstructor): Self = this.set("511", value.asInstanceOf[js.Any])
+    def setBandwidthLimitExceeded(value: HttpErrorConstructor): Self = StObject.set(x, "BandwidthLimitExceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadGateway(value: HttpErrorConstructor): Self = this.set("BadGateway", value.asInstanceOf[js.Any])
+    def setConflict(value: HttpErrorConstructor): Self = StObject.set(x, "Conflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadRequest(value: HttpErrorConstructor): Self = this.set("BadRequest", value.asInstanceOf[js.Any])
+    def setExpectationFailed(value: HttpErrorConstructor): Self = StObject.set(x, "ExpectationFailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidthLimitExceeded(value: HttpErrorConstructor): Self = this.set("BandwidthLimitExceeded", value.asInstanceOf[js.Any])
+    def setFailedDependency(value: HttpErrorConstructor): Self = StObject.set(x, "FailedDependency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflict(value: HttpErrorConstructor): Self = this.set("Conflict", value.asInstanceOf[js.Any])
+    def setForbidden(value: HttpErrorConstructor): Self = StObject.set(x, "Forbidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectationFailed(value: HttpErrorConstructor): Self = this.set("ExpectationFailed", value.asInstanceOf[js.Any])
+    def setGatewayTimeout(value: HttpErrorConstructor): Self = StObject.set(x, "GatewayTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedDependency(value: HttpErrorConstructor): Self = this.set("FailedDependency", value.asInstanceOf[js.Any])
+    def setGone(value: HttpErrorConstructor): Self = StObject.set(x, "Gone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForbidden(value: HttpErrorConstructor): Self = this.set("Forbidden", value.asInstanceOf[js.Any])
+    def setHTTPVersionNotSupported(value: HttpErrorConstructor): Self = StObject.set(x, "HTTPVersionNotSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayTimeout(value: HttpErrorConstructor): Self = this.set("GatewayTimeout", value.asInstanceOf[js.Any])
+    def setHttpError(value: HttpErrorConstructor): Self = StObject.set(x, "HttpError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGone(value: HttpErrorConstructor): Self = this.set("Gone", value.asInstanceOf[js.Any])
+    def setImATeapot(value: HttpErrorConstructor): Self = StObject.set(x, "ImATeapot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTTPVersionNotSupported(value: HttpErrorConstructor): Self = this.set("HTTPVersionNotSupported", value.asInstanceOf[js.Any])
+    def setInsufficientStorage(value: HttpErrorConstructor): Self = StObject.set(x, "InsufficientStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpError(value: HttpErrorConstructor): Self = this.set("HttpError", value.asInstanceOf[js.Any])
+    def setInternalServerError(value: HttpErrorConstructor): Self = StObject.set(x, "InternalServerError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImATeapot(value: HttpErrorConstructor): Self = this.set("ImATeapot", value.asInstanceOf[js.Any])
+    def setLengthRequired(value: HttpErrorConstructor): Self = StObject.set(x, "LengthRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsufficientStorage(value: HttpErrorConstructor): Self = this.set("InsufficientStorage", value.asInstanceOf[js.Any])
+    def setLocked(value: HttpErrorConstructor): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalServerError(value: HttpErrorConstructor): Self = this.set("InternalServerError", value.asInstanceOf[js.Any])
+    def setLoopDetected(value: HttpErrorConstructor): Self = StObject.set(x, "LoopDetected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthRequired(value: HttpErrorConstructor): Self = this.set("LengthRequired", value.asInstanceOf[js.Any])
+    def setMethodNotAllowed(value: HttpErrorConstructor): Self = StObject.set(x, "MethodNotAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: HttpErrorConstructor): Self = this.set("Locked", value.asInstanceOf[js.Any])
+    def setMisdirectedRequest(value: HttpErrorConstructor): Self = StObject.set(x, "MisdirectedRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoopDetected(value: HttpErrorConstructor): Self = this.set("LoopDetected", value.asInstanceOf[js.Any])
+    def setNetworkAuthenticationRequire(value: HttpErrorConstructor): Self = StObject.set(x, "NetworkAuthenticationRequire", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethodNotAllowed(value: HttpErrorConstructor): Self = this.set("MethodNotAllowed", value.asInstanceOf[js.Any])
+    def setNotAcceptable(value: HttpErrorConstructor): Self = StObject.set(x, "NotAcceptable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMisdirectedRequest(value: HttpErrorConstructor): Self = this.set("MisdirectedRequest", value.asInstanceOf[js.Any])
+    def setNotExtended(value: HttpErrorConstructor): Self = StObject.set(x, "NotExtended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkAuthenticationRequire(value: HttpErrorConstructor): Self = this.set("NetworkAuthenticationRequire", value.asInstanceOf[js.Any])
+    def setNotFound(value: HttpErrorConstructor): Self = StObject.set(x, "NotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAcceptable(value: HttpErrorConstructor): Self = this.set("NotAcceptable", value.asInstanceOf[js.Any])
+    def setNotImplemented(value: HttpErrorConstructor): Self = StObject.set(x, "NotImplemented", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotExtended(value: HttpErrorConstructor): Self = this.set("NotExtended", value.asInstanceOf[js.Any])
+    def setPayloadTooLarge(value: HttpErrorConstructor): Self = StObject.set(x, "PayloadTooLarge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotFound(value: HttpErrorConstructor): Self = this.set("NotFound", value.asInstanceOf[js.Any])
+    def setPaymentRequired(value: HttpErrorConstructor): Self = StObject.set(x, "PaymentRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotImplemented(value: HttpErrorConstructor): Self = this.set("NotImplemented", value.asInstanceOf[js.Any])
+    def setPreconditionFailed(value: HttpErrorConstructor): Self = StObject.set(x, "PreconditionFailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadTooLarge(value: HttpErrorConstructor): Self = this.set("PayloadTooLarge", value.asInstanceOf[js.Any])
+    def setPreconditionRequired(value: HttpErrorConstructor): Self = StObject.set(x, "PreconditionRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentRequired(value: HttpErrorConstructor): Self = this.set("PaymentRequired", value.asInstanceOf[js.Any])
+    def setProxyAuthenticationRequired(value: HttpErrorConstructor): Self = StObject.set(x, "ProxyAuthenticationRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreconditionFailed(value: HttpErrorConstructor): Self = this.set("PreconditionFailed", value.asInstanceOf[js.Any])
+    def setRangeNotSatisfiable(value: HttpErrorConstructor): Self = StObject.set(x, "RangeNotSatisfiable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreconditionRequired(value: HttpErrorConstructor): Self = this.set("PreconditionRequired", value.asInstanceOf[js.Any])
+    def setRequestHeaderFieldsTooLarge(value: HttpErrorConstructor): Self = StObject.set(x, "RequestHeaderFieldsTooLarge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyAuthenticationRequired(value: HttpErrorConstructor): Self = this.set("ProxyAuthenticationRequired", value.asInstanceOf[js.Any])
+    def setRequestTimeout(value: HttpErrorConstructor): Self = StObject.set(x, "RequestTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeNotSatisfiable(value: HttpErrorConstructor): Self = this.set("RangeNotSatisfiable", value.asInstanceOf[js.Any])
+    def setServiceUnavailable(value: HttpErrorConstructor): Self = StObject.set(x, "ServiceUnavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestHeaderFieldsTooLarge(value: HttpErrorConstructor): Self = this.set("RequestHeaderFieldsTooLarge", value.asInstanceOf[js.Any])
+    def setTooManyRequests(value: HttpErrorConstructor): Self = StObject.set(x, "TooManyRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTimeout(value: HttpErrorConstructor): Self = this.set("RequestTimeout", value.asInstanceOf[js.Any])
+    def setURITooLong(value: HttpErrorConstructor): Self = StObject.set(x, "URITooLong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUnavailable(value: HttpErrorConstructor): Self = this.set("ServiceUnavailable", value.asInstanceOf[js.Any])
+    def setUnauthorized(value: HttpErrorConstructor): Self = StObject.set(x, "Unauthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooManyRequests(value: HttpErrorConstructor): Self = this.set("TooManyRequests", value.asInstanceOf[js.Any])
+    def setUnavailableForLegalReasons(value: HttpErrorConstructor): Self = StObject.set(x, "UnavailableForLegalReasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setURITooLong(value: HttpErrorConstructor): Self = this.set("URITooLong", value.asInstanceOf[js.Any])
+    def setUnorderedCollection(value: HttpErrorConstructor): Self = StObject.set(x, "UnorderedCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnauthorized(value: HttpErrorConstructor): Self = this.set("Unauthorized", value.asInstanceOf[js.Any])
+    def setUnprocessableEntity(value: HttpErrorConstructor): Self = StObject.set(x, "UnprocessableEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnavailableForLegalReasons(value: HttpErrorConstructor): Self = this.set("UnavailableForLegalReasons", value.asInstanceOf[js.Any])
+    def setUnsupportedMediaType(value: HttpErrorConstructor): Self = StObject.set(x, "UnsupportedMediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnorderedCollection(value: HttpErrorConstructor): Self = this.set("UnorderedCollection", value.asInstanceOf[js.Any])
+    def setUpgradeRequired(value: HttpErrorConstructor): Self = StObject.set(x, "UpgradeRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnprocessableEntity(value: HttpErrorConstructor): Self = this.set("UnprocessableEntity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnsupportedMediaType(value: HttpErrorConstructor): Self = this.set("UnsupportedMediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpgradeRequired(value: HttpErrorConstructor): Self = this.set("UpgradeRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariantAlsoNegotiates(value: HttpErrorConstructor): Self = this.set("VariantAlsoNegotiates", value.asInstanceOf[js.Any])
+    def setVariantAlsoNegotiates(value: HttpErrorConstructor): Self = StObject.set(x, "VariantAlsoNegotiates", value.asInstanceOf[js.Any])
   }
 }

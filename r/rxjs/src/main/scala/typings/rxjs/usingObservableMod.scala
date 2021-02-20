@@ -1,21 +1,22 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/observable/UsingObservable", JSImport.Namespace)
-@js.native
-object usingObservableMod extends js.Object {
+object usingObservableMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs/observable/UsingObservable", "UsingObservable")
+  @js.native
   class UsingObservable[T] ()
     extends typings.rxjsCompat.usingObservableMod.UsingObservable[T]
   /* static members */
-  @js.native
-  object UsingObservable extends js.Object {
+  object UsingObservable {
     
+    @JSImport("rxjs/observable/UsingObservable", "UsingObservable.create")
+    @js.native
     def create[T](
       resourceFactory: js.Function0[
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Unsubscribable */ _) | Unit

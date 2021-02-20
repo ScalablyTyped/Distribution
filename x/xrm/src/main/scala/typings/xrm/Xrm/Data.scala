@@ -4,6 +4,7 @@ import typings.xrm.Xrm.Async.PromiseLike
 import typings.xrm.Xrm.Attributes.Attribute
 import typings.xrm.Xrm.Collection.ItemCollection
 import typings.xrm.Xrm.ProcessFlow.ProcessManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data External Link: formContext.data (Client API reference)}
   */
 @js.native
-trait Data extends js.Object {
+trait Data extends StObject {
   
   /**
     * Collection of non-entity data on the form.

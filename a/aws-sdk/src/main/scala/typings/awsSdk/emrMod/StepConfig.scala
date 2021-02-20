@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepConfig extends js.Object {
+trait StepConfig extends StObject {
   
   /**
     * The action to take when the cluster step fails. Possible values are TERMINATE_CLUSTER, CANCEL_AND_WAIT, and CONTINUE. TERMINATE_JOB_FLOW is provided for backward compatibility. We recommend using TERMINATE_CLUSTER instead.
@@ -31,30 +32,18 @@ object StepConfig {
   }
   
   @scala.inline
-  implicit class StepConfigOps[Self <: StepConfig] (val x: Self) extends AnyVal {
+  implicit class StepConfigMutableBuilder[Self <: StepConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionOnFailure(value: ActionOnFailure): Self = StObject.set(x, "ActionOnFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionOnFailureUndefined: Self = StObject.set(x, "ActionOnFailure", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHadoopJarStep(value: HadoopJarStepConfig): Self = StObject.set(x, "HadoopJarStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHadoopJarStep(value: HadoopJarStepConfig): Self = this.set("HadoopJarStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: XmlStringMaxLen256): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActionOnFailure(value: ActionOnFailure): Self = this.set("ActionOnFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActionOnFailure: Self = this.set("ActionOnFailure", js.undefined)
+    def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

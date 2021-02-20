@@ -1,11 +1,12 @@
 package typings.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Payments extends js.Object {
+trait Payments extends StObject {
   
   /**
     * Consumes a specific purchase belonging to the current player. Before provisioning a product's effects to the player,
@@ -76,33 +77,21 @@ object Payments {
   }
   
   @scala.inline
-  implicit class PaymentsOps[Self <: Payments] (val x: Self) extends AnyVal {
+  implicit class PaymentsMutableBuilder[Self <: Payments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumePurchaseAsync(value: String => js.Promise[Unit]): Self = StObject.set(x, "consumePurchaseAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCatalogAsync(value: () => js.Promise[js.Array[Product]]): Self = StObject.set(x, "getCatalogAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPurchasesAsync(value: () => js.Promise[js.Array[Purchase]]): Self = StObject.set(x, "getPurchasesAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConsumePurchaseAsync(value: String => js.Promise[Unit]): Self = this.set("consumePurchaseAsync", js.Any.fromFunction1(value))
+    def setOnReady(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCatalogAsync(value: () => js.Promise[js.Array[Product]]): Self = this.set("getCatalogAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPurchasesAsync(value: () => js.Promise[js.Array[Purchase]]): Self = this.set("getPurchasesAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnReady(value: js.Function0[Unit] => Unit): Self = this.set("onReady", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPurchaseAsync(value: PurchaseConfig => js.Promise[Purchase]): Self = this.set("purchaseAsync", js.Any.fromFunction1(value))
+    def setPurchaseAsync(value: PurchaseConfig => js.Promise[Purchase]): Self = StObject.set(x, "purchaseAsync", js.Any.fromFunction1(value))
   }
 }

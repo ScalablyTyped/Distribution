@@ -1,12 +1,13 @@
 package typings.inboxsdk.mod.Conversations
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentPanelDescriptor extends js.Object {
+trait ContentPanelDescriptor extends StObject {
   
   var appIconUrl: js.UndefOr[String] = js.native
   
@@ -33,57 +34,45 @@ object ContentPanelDescriptor {
   }
   
   @scala.inline
-  implicit class ContentPanelDescriptorOps[Self <: ContentPanelDescriptor] (val x: Self) extends AnyVal {
+  implicit class ContentPanelDescriptorMutableBuilder[Self <: ContentPanelDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppIconUrl(value: String): Self = StObject.set(x, "appIconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIconUrlUndefined: Self = StObject.set(x, "appIconUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEl(value: HTMLElement): Self = this.set("el", value.asInstanceOf[js.Any])
+    def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
     @scala.inline
-    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setHideTitleBar(value: Boolean): Self = StObject.set(x, "hideTitleBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppIconUrl(value: String): Self = this.set("appIconUrl", value.asInstanceOf[js.Any])
+    def setHideTitleBarUndefined: Self = StObject.set(x, "hideTitleBar", js.undefined)
     
     @scala.inline
-    def deleteAppIconUrl: Self = this.set("appIconUrl", js.undefined)
+    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppName: Self = this.set("appName", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setHideTitleBar(value: Boolean): Self = this.set("hideTitleBar", value.asInstanceOf[js.Any])
+    def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideTitleBar: Self = this.set("hideTitleBar", js.undefined)
+    def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setOrderHint(value: Double): Self = this.set("orderHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderHint: Self = this.set("orderHint", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

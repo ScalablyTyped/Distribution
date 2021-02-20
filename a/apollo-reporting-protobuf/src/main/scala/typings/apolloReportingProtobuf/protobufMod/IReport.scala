@@ -2,12 +2,13 @@ package typings.apolloReportingProtobuf.protobufMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloReportingProtobuf.protobufMod.google.protobuf.ITimestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IReport extends js.Object {
+trait IReport extends StObject {
   
   /** Report endTime */
   var endTime: js.UndefOr[ITimestamp | Null] = js.native
@@ -27,45 +28,33 @@ object IReport {
   }
   
   @scala.inline
-  implicit class IReportOps[Self <: IReport] (val x: Self) extends AnyVal {
+  implicit class IReportMutableBuilder[Self <: IReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: ITimestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeNull: Self = StObject.set(x, "endTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def setEndTime(value: ITimestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setHeader(value: IReportHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setHeaderNull: Self = StObject.set(x, "header", null)
     
     @scala.inline
-    def setEndTimeNull: Self = this.set("endTime", null)
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setHeader(value: IReportHeader): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setTracesPerQuery(value: StringDictionary[ITracesAndStats]): Self = StObject.set(x, "tracesPerQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setTracesPerQueryNull: Self = StObject.set(x, "tracesPerQuery", null)
     
     @scala.inline
-    def setHeaderNull: Self = this.set("header", null)
-    
-    @scala.inline
-    def setTracesPerQuery(value: StringDictionary[ITracesAndStats]): Self = this.set("tracesPerQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracesPerQuery: Self = this.set("tracesPerQuery", js.undefined)
-    
-    @scala.inline
-    def setTracesPerQueryNull: Self = this.set("tracesPerQuery", null)
+    def setTracesPerQueryUndefined: Self = StObject.set(x, "tracesPerQuery", js.undefined)
   }
 }

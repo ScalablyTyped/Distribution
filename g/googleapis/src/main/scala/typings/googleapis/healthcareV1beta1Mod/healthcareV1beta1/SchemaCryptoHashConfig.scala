@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `L7k0BHmF1ha5U3NfGykjro4xWi1MPVQPjhMAZbSV9mM=`).
   */
 @js.native
-trait SchemaCryptoHashConfig extends js.Object {
+trait SchemaCryptoHashConfig extends StObject {
   
   /**
     * An AES 128/192/256 bit key. Causes the hash to be computed based on this
@@ -29,24 +30,12 @@ object SchemaCryptoHashConfig {
   }
   
   @scala.inline
-  implicit class SchemaCryptoHashConfigOps[Self <: SchemaCryptoHashConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaCryptoHashConfigMutableBuilder[Self <: SchemaCryptoHashConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCryptoKey(value: String): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCryptoKey(value: String): Self = this.set("cryptoKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCryptoKey: Self = this.set("cryptoKey", js.undefined)
+    def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
   }
 }

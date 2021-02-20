@@ -7,13 +7,29 @@ import typings.react.mod.Component
 import typings.react.mod.Context
 import typings.std.AnimationEvent
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/_util/wave", JSImport.Namespace)
-@js.native
-object waveMod extends js.Object {
+object waveMod {
+  
+  @JSImport("antd/lib/_util/wave", JSImport.Default)
+  @js.native
+  class default () extends Wave
+  /* static members */
+  object default {
+    
+    @JSImport("antd/lib/_util/wave", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("antd/lib/_util/wave", "default.contextType")
+    @js.native
+    def contextType: Context[ConfigConsumerProps] = js.native
+    @scala.inline
+    def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait Wave
@@ -57,14 +73,5 @@ object waveMod extends js.Object {
     def renderWave(hasCsp: ConfigConsumerProps): js.UndefOr[js.Object | Null] = js.native
     
     def resetEffect(node: HTMLElement): Unit = js.native
-  }
-  
-  @js.native
-  class default () extends Wave
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var contextType: Context[ConfigConsumerProps] = js.native
   }
 }

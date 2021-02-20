@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVault.gapi.client.vault
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Query extends js.Object {
+trait Query extends StObject {
   
   /** When 'ACCOUNT' is chosen as search method, account_info needs to be specified. */
   var accountInfo: js.UndefOr[AccountInfo] = js.native
@@ -67,114 +68,102 @@ object Query {
   }
   
   @scala.inline
-  implicit class QueryOps[Self <: Query] (val x: Self) extends AnyVal {
+  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountInfo(value: AccountInfo): Self = StObject.set(x, "accountInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountInfoUndefined: Self = StObject.set(x, "accountInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountInfo(value: AccountInfo): Self = this.set("accountInfo", value.asInstanceOf[js.Any])
+    def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
     
     @scala.inline
-    def deleteAccountInfo: Self = this.set("accountInfo", js.undefined)
+    def setDataScope(value: String): Self = StObject.set(x, "dataScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorpus(value: String): Self = this.set("corpus", value.asInstanceOf[js.Any])
+    def setDataScopeUndefined: Self = StObject.set(x, "dataScope", js.undefined)
     
     @scala.inline
-    def deleteCorpus: Self = this.set("corpus", js.undefined)
+    def setDriveOptions(value: DriveOptions): Self = StObject.set(x, "driveOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataScope(value: String): Self = this.set("dataScope", value.asInstanceOf[js.Any])
+    def setDriveOptionsUndefined: Self = StObject.set(x, "driveOptions", js.undefined)
     
     @scala.inline
-    def deleteDataScope: Self = this.set("dataScope", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveOptions(value: DriveOptions): Self = this.set("driveOptions", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteDriveOptions: Self = this.set("driveOptions", js.undefined)
+    def setHangoutsChatInfo(value: HangoutsChatInfo): Self = StObject.set(x, "hangoutsChatInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setHangoutsChatInfoUndefined: Self = StObject.set(x, "hangoutsChatInfo", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setHangoutsChatOptions(value: HangoutsChatOptions): Self = StObject.set(x, "hangoutsChatOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHangoutsChatInfo(value: HangoutsChatInfo): Self = this.set("hangoutsChatInfo", value.asInstanceOf[js.Any])
+    def setHangoutsChatOptionsUndefined: Self = StObject.set(x, "hangoutsChatOptions", js.undefined)
     
     @scala.inline
-    def deleteHangoutsChatInfo: Self = this.set("hangoutsChatInfo", js.undefined)
+    def setMailOptions(value: MailOptions): Self = StObject.set(x, "mailOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHangoutsChatOptions(value: HangoutsChatOptions): Self = this.set("hangoutsChatOptions", value.asInstanceOf[js.Any])
+    def setMailOptionsUndefined: Self = StObject.set(x, "mailOptions", js.undefined)
     
     @scala.inline
-    def deleteHangoutsChatOptions: Self = this.set("hangoutsChatOptions", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailOptions(value: MailOptions): Self = this.set("mailOptions", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteMailOptions: Self = this.set("mailOptions", js.undefined)
+    def setOrgUnitInfo(value: OrgUnitInfo): Self = StObject.set(x, "orgUnitInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setOrgUnitInfoUndefined: Self = StObject.set(x, "orgUnitInfo", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setSearchMethod(value: String): Self = StObject.set(x, "searchMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgUnitInfo(value: OrgUnitInfo): Self = this.set("orgUnitInfo", value.asInstanceOf[js.Any])
+    def setSearchMethodUndefined: Self = StObject.set(x, "searchMethod", js.undefined)
     
     @scala.inline
-    def deleteOrgUnitInfo: Self = this.set("orgUnitInfo", js.undefined)
+    def setSharedDriveInfo(value: SharedDriveInfo): Self = StObject.set(x, "sharedDriveInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchMethod(value: String): Self = this.set("searchMethod", value.asInstanceOf[js.Any])
+    def setSharedDriveInfoUndefined: Self = StObject.set(x, "sharedDriveInfo", js.undefined)
     
     @scala.inline
-    def deleteSearchMethod: Self = this.set("searchMethod", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedDriveInfo(value: SharedDriveInfo): Self = this.set("sharedDriveInfo", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSharedDriveInfo: Self = this.set("sharedDriveInfo", js.undefined)
+    def setTeamDriveInfo(value: TeamDriveInfo): Self = StObject.set(x, "teamDriveInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setTeamDriveInfoUndefined: Self = StObject.set(x, "teamDriveInfo", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setTerms(value: String): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamDriveInfo(value: TeamDriveInfo): Self = this.set("teamDriveInfo", value.asInstanceOf[js.Any])
+    def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
     
     @scala.inline
-    def deleteTeamDriveInfo: Self = this.set("teamDriveInfo", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerms(value: String): Self = this.set("terms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerms: Self = this.set("terms", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

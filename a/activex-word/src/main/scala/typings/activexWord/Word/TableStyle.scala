@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableStyle extends js.Object {
+trait TableStyle extends StObject {
   
   var Alignment: WdRowAlignment = js.native
   
@@ -76,75 +77,63 @@ object TableStyle {
   }
   
   @scala.inline
-  implicit class TableStyleOps[Self <: TableStyle] (val x: Self) extends AnyVal {
+  implicit class TableStyleMutableBuilder[Self <: TableStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: WdRowAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowBreakAcrossPage(value: Double): Self = StObject.set(x, "AllowBreakAcrossPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowPageBreaks(value: Boolean): Self = StObject.set(x, "AllowPageBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: WdRowAlignment): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowBreakAcrossPage(value: Double): Self = this.set("AllowBreakAcrossPage", value.asInstanceOf[js.Any])
+    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPageBreaks(value: Boolean): Self = this.set("AllowPageBreaks", value.asInstanceOf[js.Any])
+    def setBottomPadding(value: Double): Self = StObject.set(x, "BottomPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setColumnStripe(value: Double): Self = StObject.set(x, "ColumnStripe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorders(value: Borders): Self = this.set("Borders", value.asInstanceOf[js.Any])
+    def setCondition(value: WdConditionCode => ConditionalStyle): Self = StObject.set(x, "Condition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBottomPadding(value: Double): Self = this.set("BottomPadding", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnStripe(value: Double): Self = this.set("ColumnStripe", value.asInstanceOf[js.Any])
+    def setLeftIndent(value: Double): Self = StObject.set(x, "LeftIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: WdConditionCode => ConditionalStyle): Self = this.set("Condition", js.Any.fromFunction1(value))
+    def setLeftPadding(value: Double): Self = StObject.set(x, "LeftPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIndent(value: Double): Self = this.set("LeftIndent", value.asInstanceOf[js.Any])
+    def setRightPadding(value: Double): Self = StObject.set(x, "RightPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftPadding(value: Double): Self = this.set("LeftPadding", value.asInstanceOf[js.Any])
+    def setRowStripe(value: Double): Self = StObject.set(x, "RowStripe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setShading(value: Shading): Self = StObject.set(x, "Shading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightPadding(value: Double): Self = this.set("RightPadding", value.asInstanceOf[js.Any])
+    def setSpacing(value: Double): Self = StObject.set(x, "Spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowStripe(value: Double): Self = this.set("RowStripe", value.asInstanceOf[js.Any])
+    def setTableDirection(value: WdTableDirection): Self = StObject.set(x, "TableDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShading(value: Shading): Self = this.set("Shading", value.asInstanceOf[js.Any])
+    def setTopPadding(value: Double): Self = StObject.set(x, "TopPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacing(value: Double): Self = this.set("Spacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableDirection(value: WdTableDirection): Self = this.set("TableDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopPadding(value: Double): Self = this.set("TopPadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotTableStyle_typekey(value: TableStyle): Self = this.set("Word.TableStyle_typekey", value.asInstanceOf[js.Any])
+    def setWordDotTableStyle_typekey(value: TableStyle): Self = StObject.set(x, "Word.TableStyle_typekey", value.asInstanceOf[js.Any])
   }
 }

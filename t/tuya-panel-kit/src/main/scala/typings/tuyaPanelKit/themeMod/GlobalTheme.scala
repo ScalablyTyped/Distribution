@@ -2,12 +2,13 @@ package typings.tuyaPanelKit.themeMod
 
 import typings.tuyaPanelKit.tuyaPanelKitStrings.dark
 import typings.tuyaPanelKit.tuyaPanelKitStrings.light
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalTheme extends js.Object {
+trait GlobalTheme extends StObject {
   
   var brickButton: BrickButton = js.native
   
@@ -62,60 +63,48 @@ object GlobalTheme {
   }
   
   @scala.inline
-  implicit class GlobalThemeOps[Self <: GlobalTheme] (val x: Self) extends AnyVal {
+  implicit class GlobalThemeMutableBuilder[Self <: GlobalTheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrickButton(value: BrickButton): Self = StObject.set(x, "brickButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckbox(value: Checkbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrickButton(value: BrickButton): Self = this.set("brickButton", value.asInstanceOf[js.Any])
+    def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: Button): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setGlobal(value: Global): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckbox(value: Checkbox): Self = this.set("checkbox", value.asInstanceOf[js.Any])
+    def setList(value: List): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialog(value: Dialog): Self = this.set("dialog", value.asInstanceOf[js.Any])
+    def setPicker(value: Picker): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: Global): Self = this.set("global", value.asInstanceOf[js.Any])
+    def setPopup(value: Popup): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: List): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicker(value: Picker): Self = this.set("picker", value.asInstanceOf[js.Any])
+    def setSwitchButton(value: SwitchButton): Self = StObject.set(x, "switchButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopup(value: Popup): Self = this.set("popup", value.asInstanceOf[js.Any])
+    def setText(value: Text): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlider(value: Slider): Self = this.set("slider", value.asInstanceOf[js.Any])
+    def setTips(value: Tips): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwitchButton(value: SwitchButton): Self = this.set("switchButton", value.asInstanceOf[js.Any])
+    def setTopbar(value: Topbar): Self = StObject.set(x, "topbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: Text): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTips(value: Tips): Self = this.set("tips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopbar(value: Topbar): Self = this.set("topbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: light | dark | String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: light | dark | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

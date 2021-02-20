@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerLogsOptions extends js.Object {
+trait ContainerLogsOptions extends StObject {
   
   var details: js.UndefOr[Boolean] = js.native
   
@@ -30,60 +31,48 @@ object ContainerLogsOptions {
   }
   
   @scala.inline
-  implicit class ContainerLogsOptionsOps[Self <: ContainerLogsOptions] (val x: Self) extends AnyVal {
+  implicit class ContainerLogsOptionsMutableBuilder[Self <: ContainerLogsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: Boolean): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: Boolean): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollow(value: Boolean): Self = this.set("follow", value.asInstanceOf[js.Any])
+    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
     @scala.inline
-    def deleteFollow: Self = this.set("follow", js.undefined)
+    def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince(value: Double): Self = this.set("since", value.asInstanceOf[js.Any])
+    def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     
     @scala.inline
-    def deleteSince: Self = this.set("since", js.undefined)
+    def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStderr(value: Boolean): Self = this.set("stderr", value.asInstanceOf[js.Any])
+    def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     
     @scala.inline
-    def deleteStderr: Self = this.set("stderr", js.undefined)
+    def setTail(value: Double): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdout(value: Boolean): Self = this.set("stdout", value.asInstanceOf[js.Any])
+    def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
     
     @scala.inline
-    def deleteStdout: Self = this.set("stdout", js.undefined)
+    def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTail(value: Double): Self = this.set("tail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTail: Self = this.set("tail", js.undefined)
-    
-    @scala.inline
-    def setTimestamps(value: Boolean): Self = this.set("timestamps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamps: Self = this.set("timestamps", js.undefined)
+    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
   }
 }

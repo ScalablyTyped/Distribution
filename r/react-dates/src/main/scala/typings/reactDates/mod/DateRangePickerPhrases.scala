@@ -1,11 +1,12 @@
 package typings.reactDates.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateRangePickerPhrases extends js.Object {
+trait DateRangePickerPhrases extends StObject {
   
   var calendarLabel: js.UndefOr[String] = js.native
   
@@ -80,210 +81,198 @@ object DateRangePickerPhrases {
   }
   
   @scala.inline
-  implicit class DateRangePickerPhrasesOps[Self <: DateRangePickerPhrases] (val x: Self) extends AnyVal {
+  implicit class DateRangePickerPhrasesMutableBuilder[Self <: DateRangePickerPhrases] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarLabel(value: String): Self = StObject.set(x, "calendarLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarLabelUndefined: Self = StObject.set(x, "calendarLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChooseAvailableEndDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "chooseAvailableEndDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalendarLabel(value: String): Self = this.set("calendarLabel", value.asInstanceOf[js.Any])
+    def setChooseAvailableEndDateUndefined: Self = StObject.set(x, "chooseAvailableEndDate", js.undefined)
     
     @scala.inline
-    def deleteCalendarLabel: Self = this.set("calendarLabel", js.undefined)
+    def setChooseAvailableStartDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "chooseAvailableStartDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChooseAvailableEndDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("chooseAvailableEndDate", js.Any.fromFunction1(value))
+    def setChooseAvailableStartDateUndefined: Self = StObject.set(x, "chooseAvailableStartDate", js.undefined)
     
     @scala.inline
-    def deleteChooseAvailableEndDate: Self = this.set("chooseAvailableEndDate", js.undefined)
+    def setClearDates(value: String): Self = StObject.set(x, "clearDates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChooseAvailableStartDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("chooseAvailableStartDate", js.Any.fromFunction1(value))
+    def setClearDatesUndefined: Self = StObject.set(x, "clearDates", js.undefined)
     
     @scala.inline
-    def deleteChooseAvailableStartDate: Self = this.set("chooseAvailableStartDate", js.undefined)
+    def setCloseDatePicker(value: String): Self = StObject.set(x, "closeDatePicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearDates(value: String): Self = this.set("clearDates", value.asInstanceOf[js.Any])
+    def setCloseDatePickerUndefined: Self = StObject.set(x, "closeDatePicker", js.undefined)
     
     @scala.inline
-    def deleteClearDates: Self = this.set("clearDates", js.undefined)
+    def setDateIsSelected(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloseDatePicker(value: String): Self = this.set("closeDatePicker", value.asInstanceOf[js.Any])
+    def setDateIsSelectedAsEndDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsSelectedAsEndDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCloseDatePicker: Self = this.set("closeDatePicker", js.undefined)
+    def setDateIsSelectedAsEndDateUndefined: Self = StObject.set(x, "dateIsSelectedAsEndDate", js.undefined)
     
     @scala.inline
-    def setDateIsSelected(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsSelected", js.Any.fromFunction1(value))
+    def setDateIsSelectedAsStartDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsSelectedAsStartDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDateIsSelected: Self = this.set("dateIsSelected", js.undefined)
+    def setDateIsSelectedAsStartDateUndefined: Self = StObject.set(x, "dateIsSelectedAsStartDate", js.undefined)
     
     @scala.inline
-    def setDateIsSelectedAsEndDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsSelectedAsEndDate", js.Any.fromFunction1(value))
+    def setDateIsSelectedUndefined: Self = StObject.set(x, "dateIsSelected", js.undefined)
     
     @scala.inline
-    def deleteDateIsSelectedAsEndDate: Self = this.set("dateIsSelectedAsEndDate", js.undefined)
+    def setDateIsUnavailable(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsUnavailable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateIsSelectedAsStartDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsSelectedAsStartDate", js.Any.fromFunction1(value))
+    def setDateIsUnavailableUndefined: Self = StObject.set(x, "dateIsUnavailable", js.undefined)
     
     @scala.inline
-    def deleteDateIsSelectedAsStartDate: Self = this.set("dateIsSelectedAsStartDate", js.undefined)
+    def setEnterKey(value: String): Self = StObject.set(x, "enterKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateIsUnavailable(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsUnavailable", js.Any.fromFunction1(value))
+    def setEnterKeyUndefined: Self = StObject.set(x, "enterKey", js.undefined)
     
     @scala.inline
-    def deleteDateIsUnavailable: Self = this.set("dateIsUnavailable", js.undefined)
+    def setEscape(value: String): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterKey(value: String): Self = this.set("enterKey", value.asInstanceOf[js.Any])
+    def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
     @scala.inline
-    def deleteEnterKey: Self = this.set("enterKey", js.undefined)
+    def setFocusStartDate(value: String): Self = StObject.set(x, "focusStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscape(value: String): Self = this.set("escape", value.asInstanceOf[js.Any])
+    def setFocusStartDateUndefined: Self = StObject.set(x, "focusStartDate", js.undefined)
     
     @scala.inline
-    def deleteEscape: Self = this.set("escape", js.undefined)
+    def setHideKeyboardShortcutsPanel(value: String): Self = StObject.set(x, "hideKeyboardShortcutsPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusStartDate(value: String): Self = this.set("focusStartDate", value.asInstanceOf[js.Any])
+    def setHideKeyboardShortcutsPanelUndefined: Self = StObject.set(x, "hideKeyboardShortcutsPanel", js.undefined)
     
     @scala.inline
-    def deleteFocusStartDate: Self = this.set("focusStartDate", js.undefined)
+    def setHomeEnd(value: String): Self = StObject.set(x, "homeEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideKeyboardShortcutsPanel(value: String): Self = this.set("hideKeyboardShortcutsPanel", value.asInstanceOf[js.Any])
+    def setHomeEndUndefined: Self = StObject.set(x, "homeEnd", js.undefined)
     
     @scala.inline
-    def deleteHideKeyboardShortcutsPanel: Self = this.set("hideKeyboardShortcutsPanel", js.undefined)
+    def setJumpToNextMonth(value: String): Self = StObject.set(x, "jumpToNextMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeEnd(value: String): Self = this.set("homeEnd", value.asInstanceOf[js.Any])
+    def setJumpToNextMonthUndefined: Self = StObject.set(x, "jumpToNextMonth", js.undefined)
     
     @scala.inline
-    def deleteHomeEnd: Self = this.set("homeEnd", js.undefined)
+    def setJumpToPrevMonth(value: String): Self = StObject.set(x, "jumpToPrevMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJumpToNextMonth(value: String): Self = this.set("jumpToNextMonth", value.asInstanceOf[js.Any])
+    def setJumpToPrevMonthUndefined: Self = StObject.set(x, "jumpToPrevMonth", js.undefined)
     
     @scala.inline
-    def deleteJumpToNextMonth: Self = this.set("jumpToNextMonth", js.undefined)
+    def setKeyboardBackwardNavigationInstructions(value: String): Self = StObject.set(x, "keyboardBackwardNavigationInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJumpToPrevMonth(value: String): Self = this.set("jumpToPrevMonth", value.asInstanceOf[js.Any])
+    def setKeyboardBackwardNavigationInstructionsUndefined: Self = StObject.set(x, "keyboardBackwardNavigationInstructions", js.undefined)
     
     @scala.inline
-    def deleteJumpToPrevMonth: Self = this.set("jumpToPrevMonth", js.undefined)
+    def setKeyboardForwardNavigationInstructions(value: String): Self = StObject.set(x, "keyboardForwardNavigationInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardBackwardNavigationInstructions(value: String): Self = this.set("keyboardBackwardNavigationInstructions", value.asInstanceOf[js.Any])
+    def setKeyboardForwardNavigationInstructionsUndefined: Self = StObject.set(x, "keyboardForwardNavigationInstructions", js.undefined)
     
     @scala.inline
-    def deleteKeyboardBackwardNavigationInstructions: Self = this.set("keyboardBackwardNavigationInstructions", js.undefined)
+    def setKeyboardShortcuts(value: String): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardForwardNavigationInstructions(value: String): Self = this.set("keyboardForwardNavigationInstructions", value.asInstanceOf[js.Any])
+    def setKeyboardShortcutsUndefined: Self = StObject.set(x, "keyboardShortcuts", js.undefined)
     
     @scala.inline
-    def deleteKeyboardForwardNavigationInstructions: Self = this.set("keyboardForwardNavigationInstructions", js.undefined)
+    def setLeftArrowRightArrow(value: String): Self = StObject.set(x, "leftArrowRightArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardShortcuts(value: String): Self = this.set("keyboardShortcuts", value.asInstanceOf[js.Any])
+    def setLeftArrowRightArrowUndefined: Self = StObject.set(x, "leftArrowRightArrow", js.undefined)
     
     @scala.inline
-    def deleteKeyboardShortcuts: Self = this.set("keyboardShortcuts", js.undefined)
+    def setMoveFocusByOneDay(value: String): Self = StObject.set(x, "moveFocusByOneDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftArrowRightArrow(value: String): Self = this.set("leftArrowRightArrow", value.asInstanceOf[js.Any])
+    def setMoveFocusByOneDayUndefined: Self = StObject.set(x, "moveFocusByOneDay", js.undefined)
     
     @scala.inline
-    def deleteLeftArrowRightArrow: Self = this.set("leftArrowRightArrow", js.undefined)
+    def setMoveFocusByOneMonth(value: String): Self = StObject.set(x, "moveFocusByOneMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveFocusByOneDay(value: String): Self = this.set("moveFocusByOneDay", value.asInstanceOf[js.Any])
+    def setMoveFocusByOneMonthUndefined: Self = StObject.set(x, "moveFocusByOneMonth", js.undefined)
     
     @scala.inline
-    def deleteMoveFocusByOneDay: Self = this.set("moveFocusByOneDay", js.undefined)
+    def setMoveFocusByOneWeek(value: String): Self = StObject.set(x, "moveFocusByOneWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveFocusByOneMonth(value: String): Self = this.set("moveFocusByOneMonth", value.asInstanceOf[js.Any])
+    def setMoveFocusByOneWeekUndefined: Self = StObject.set(x, "moveFocusByOneWeek", js.undefined)
     
     @scala.inline
-    def deleteMoveFocusByOneMonth: Self = this.set("moveFocusByOneMonth", js.undefined)
+    def setMoveFocustoStartAndEndOfWeek(value: String): Self = StObject.set(x, "moveFocustoStartAndEndOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveFocusByOneWeek(value: String): Self = this.set("moveFocusByOneWeek", value.asInstanceOf[js.Any])
+    def setMoveFocustoStartAndEndOfWeekUndefined: Self = StObject.set(x, "moveFocustoStartAndEndOfWeek", js.undefined)
     
     @scala.inline
-    def deleteMoveFocusByOneWeek: Self = this.set("moveFocusByOneWeek", js.undefined)
+    def setOpenThisPanel(value: String): Self = StObject.set(x, "openThisPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveFocustoStartAndEndOfWeek(value: String): Self = this.set("moveFocustoStartAndEndOfWeek", value.asInstanceOf[js.Any])
+    def setOpenThisPanelUndefined: Self = StObject.set(x, "openThisPanel", js.undefined)
     
     @scala.inline
-    def deleteMoveFocustoStartAndEndOfWeek: Self = this.set("moveFocustoStartAndEndOfWeek", js.undefined)
+    def setPageUpPageDown(value: String): Self = StObject.set(x, "pageUpPageDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenThisPanel(value: String): Self = this.set("openThisPanel", value.asInstanceOf[js.Any])
+    def setPageUpPageDownUndefined: Self = StObject.set(x, "pageUpPageDown", js.undefined)
     
     @scala.inline
-    def deleteOpenThisPanel: Self = this.set("openThisPanel", js.undefined)
+    def setQuestionMark(value: String): Self = StObject.set(x, "questionMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageUpPageDown(value: String): Self = this.set("pageUpPageDown", value.asInstanceOf[js.Any])
+    def setQuestionMarkUndefined: Self = StObject.set(x, "questionMark", js.undefined)
     
     @scala.inline
-    def deletePageUpPageDown: Self = this.set("pageUpPageDown", js.undefined)
+    def setReturnFocusToInput(value: String): Self = StObject.set(x, "returnFocusToInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestionMark(value: String): Self = this.set("questionMark", value.asInstanceOf[js.Any])
+    def setReturnFocusToInputUndefined: Self = StObject.set(x, "returnFocusToInput", js.undefined)
     
     @scala.inline
-    def deleteQuestionMark: Self = this.set("questionMark", js.undefined)
+    def setRoleDescription(value: String): Self = StObject.set(x, "roleDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnFocusToInput(value: String): Self = this.set("returnFocusToInput", value.asInstanceOf[js.Any])
+    def setRoleDescriptionUndefined: Self = StObject.set(x, "roleDescription", js.undefined)
     
     @scala.inline
-    def deleteReturnFocusToInput: Self = this.set("returnFocusToInput", js.undefined)
+    def setSelectFocusedDate(value: String): Self = StObject.set(x, "selectFocusedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleDescription(value: String): Self = this.set("roleDescription", value.asInstanceOf[js.Any])
+    def setSelectFocusedDateUndefined: Self = StObject.set(x, "selectFocusedDate", js.undefined)
     
     @scala.inline
-    def deleteRoleDescription: Self = this.set("roleDescription", js.undefined)
+    def setShowKeyboardShortcutsPanel(value: String): Self = StObject.set(x, "showKeyboardShortcutsPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectFocusedDate(value: String): Self = this.set("selectFocusedDate", value.asInstanceOf[js.Any])
+    def setShowKeyboardShortcutsPanelUndefined: Self = StObject.set(x, "showKeyboardShortcutsPanel", js.undefined)
     
     @scala.inline
-    def deleteSelectFocusedDate: Self = this.set("selectFocusedDate", js.undefined)
+    def setUpArrowDownArrow(value: String): Self = StObject.set(x, "upArrowDownArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowKeyboardShortcutsPanel(value: String): Self = this.set("showKeyboardShortcutsPanel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowKeyboardShortcutsPanel: Self = this.set("showKeyboardShortcutsPanel", js.undefined)
-    
-    @scala.inline
-    def setUpArrowDownArrow(value: String): Self = this.set("upArrowDownArrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpArrowDownArrow: Self = this.set("upArrowDownArrow", js.undefined)
+    def setUpArrowDownArrowUndefined: Self = StObject.set(x, "upArrowDownArrow", js.undefined)
   }
 }

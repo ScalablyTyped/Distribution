@@ -9,6 +9,7 @@ import typings.chromeApps.chromeAppsStrings.link_
 import typings.chromeApps.chromeAppsStrings.page_
 import typings.chromeApps.chromeAppsStrings.selection_
 import typings.chromeApps.chromeAppsStrings.video_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chromeApps.chromeAppsStrings.video_
   - typings.chromeApps.chromeAppsStrings.audio_
 */
-trait ContextType extends js.Object
+trait ContextType extends StObject
 object ContextType {
   
   @scala.inline

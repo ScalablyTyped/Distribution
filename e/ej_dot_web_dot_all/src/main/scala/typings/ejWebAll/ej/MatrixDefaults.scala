@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MatrixDefaults extends js.Object
+sealed trait MatrixDefaults extends StObject
 @JSGlobal("ej.MatrixDefaults")
 @js.native
-object MatrixDefaults extends js.Object {
+object MatrixDefaults extends StObject {
   
   @js.native
   sealed trait m11 extends MatrixDefaults

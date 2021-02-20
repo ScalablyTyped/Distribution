@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Sets the scheduling options for an Instance.
   */
 @js.native
-trait SchemaScheduling extends js.Object {
+trait SchemaScheduling extends StObject {
   
   /**
     * Specifies whether the instance should be automatically restarted if it is
@@ -55,51 +56,39 @@ object SchemaScheduling {
   }
   
   @scala.inline
-  implicit class SchemaSchedulingOps[Self <: SchemaScheduling] (val x: Self) extends AnyVal {
+  implicit class SchemaSchedulingMutableBuilder[Self <: SchemaScheduling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticRestart(value: Boolean): Self = StObject.set(x, "automaticRestart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticRestartUndefined: Self = StObject.set(x, "automaticRestart", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinNodeCpus(value: Double): Self = StObject.set(x, "minNodeCpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticRestart(value: Boolean): Self = this.set("automaticRestart", value.asInstanceOf[js.Any])
+    def setMinNodeCpusUndefined: Self = StObject.set(x, "minNodeCpus", js.undefined)
     
     @scala.inline
-    def deleteAutomaticRestart: Self = this.set("automaticRestart", js.undefined)
+    def setNodeAffinities(value: js.Array[SchemaSchedulingNodeAffinity]): Self = StObject.set(x, "nodeAffinities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinNodeCpus(value: Double): Self = this.set("minNodeCpus", value.asInstanceOf[js.Any])
+    def setNodeAffinitiesUndefined: Self = StObject.set(x, "nodeAffinities", js.undefined)
     
     @scala.inline
-    def deleteMinNodeCpus: Self = this.set("minNodeCpus", js.undefined)
+    def setNodeAffinitiesVarargs(value: SchemaSchedulingNodeAffinity*): Self = StObject.set(x, "nodeAffinities", js.Array(value :_*))
     
     @scala.inline
-    def setNodeAffinitiesVarargs(value: SchemaSchedulingNodeAffinity*): Self = this.set("nodeAffinities", js.Array(value :_*))
+    def setOnHostMaintenance(value: String): Self = StObject.set(x, "onHostMaintenance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeAffinities(value: js.Array[SchemaSchedulingNodeAffinity]): Self = this.set("nodeAffinities", value.asInstanceOf[js.Any])
+    def setOnHostMaintenanceUndefined: Self = StObject.set(x, "onHostMaintenance", js.undefined)
     
     @scala.inline
-    def deleteNodeAffinities: Self = this.set("nodeAffinities", js.undefined)
+    def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHostMaintenance(value: String): Self = this.set("onHostMaintenance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnHostMaintenance: Self = this.set("onHostMaintenance", js.undefined)
-    
-    @scala.inline
-    def setPreemptible(value: Boolean): Self = this.set("preemptible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreemptible: Self = this.set("preemptible", js.undefined)
+    def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
   }
 }

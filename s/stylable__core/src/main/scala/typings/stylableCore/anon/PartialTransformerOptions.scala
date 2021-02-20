@@ -6,13 +6,14 @@ import typings.stylableCore.stylableProcessorMod.StylableMeta
 import typings.stylableCore.stylableTransformerMod.EnvMode
 import typings.stylableCore.stylableTransformerMod.StylableResults
 import typings.stylableCore.stylableTransformerMod.StylableTransformer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@stylable/core.@stylable/core/cjs/stylable-transformer.TransformerOptions> */
 @js.native
-trait PartialTransformerOptions extends js.Object {
+trait PartialTransformerOptions extends StObject {
   
   var delimiter: js.UndefOr[String] = js.native
   
@@ -39,70 +40,58 @@ object PartialTransformerOptions {
   }
   
   @scala.inline
-  implicit class PartialTransformerOptionsOps[Self <: PartialTransformerOptions] (val x: Self) extends AnyVal {
+  implicit class PartialTransformerOptionsMutableBuilder[Self <: PartialTransformerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setFileProcessor(value: FileProcessor[StylableMeta]): Self = StObject.set(x, "fileProcessor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnostics(value: Diagnostics): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    def setFileProcessorUndefined: Self = StObject.set(x, "fileProcessor", js.undefined)
     
     @scala.inline
-    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
+    def setKeepValues(value: Boolean): Self = StObject.set(x, "keepValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileProcessor(value: FileProcessor[StylableMeta]): Self = this.set("fileProcessor", value.asInstanceOf[js.Any])
+    def setKeepValuesUndefined: Self = StObject.set(x, "keepValues", js.undefined)
     
     @scala.inline
-    def deleteFileProcessor: Self = this.set("fileProcessor", js.undefined)
+    def setMode(value: EnvMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepValues(value: Boolean): Self = this.set("keepValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeepValues: Self = this.set("keepValues", js.undefined)
-    
-    @scala.inline
-    def setMode(value: EnvMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
     def setPostProcessor(
       value: (/* stylableResults */ StylableResults, /* transformer */ StylableTransformer) => StylableResults with js.Object
-    ): Self = this.set("postProcessor", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "postProcessor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deletePostProcessor: Self = this.set("postProcessor", js.undefined)
+    def setPostProcessorUndefined: Self = StObject.set(x, "postProcessor", js.undefined)
     
     @scala.inline
     def setReplaceValueHook(
       value: (/* value */ String, /* name */ String | Args, /* isLocal */ Boolean, /* passedThrough */ js.Array[String]) => String
-    ): Self = this.set("replaceValueHook", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "replaceValueHook", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteReplaceValueHook: Self = this.set("replaceValueHook", js.undefined)
+    def setReplaceValueHookUndefined: Self = StObject.set(x, "replaceValueHook", js.undefined)
     
     @scala.inline
-    def setRequireModule(value: /* modulePath */ String => _): Self = this.set("requireModule", js.Any.fromFunction1(value))
+    def setRequireModule(value: /* modulePath */ String => _): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRequireModule: Self = this.set("requireModule", js.undefined)
+    def setRequireModuleUndefined: Self = StObject.set(x, "requireModule", js.undefined)
   }
 }

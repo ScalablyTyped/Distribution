@@ -1,13 +1,14 @@
 package typings.leafletRoutingMachine.mod.Routing_
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Routing.ItineraryBuilder")
 @js.native
-class ItineraryBuilder_ () extends js.Object {
+class ItineraryBuilder_ () extends StObject {
   
   def createContainer(): HTMLElement = js.native
   def createContainer(className: String): HTMLElement = js.native

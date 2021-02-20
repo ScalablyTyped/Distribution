@@ -1,12 +1,11 @@
 package typings.findRoot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("find-root", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Returns the path for the nearest directory to startingPath containing a package.json file. If a check function is
@@ -15,7 +14,11 @@ object mod extends js.Object {
     * @param check The check predicate
     * @throws {Error} if package.json cannot be found or if the function never returns true
     */
+  @JSImport("find-root", JSImport.Namespace)
+  @js.native
   def apply(startingPath: String): String = js.native
+  @JSImport("find-root", JSImport.Namespace)
+  @js.native
   def apply(startingPath: String, check: FindRootCheckFn): String = js.native
   
   type FindRootCheckFn = js.Function1[/* dir */ String, Boolean]

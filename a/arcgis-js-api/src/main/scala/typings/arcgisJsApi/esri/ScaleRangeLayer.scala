@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleRangeLayer extends js.Object {
+trait ScaleRangeLayer extends StObject {
   
   /**
     * The maximum scale (most zoomed in) at which the layer is visible in the view.
@@ -30,24 +31,12 @@ object ScaleRangeLayer {
   }
   
   @scala.inline
-  implicit class ScaleRangeLayerOps[Self <: ScaleRangeLayer] (val x: Self) extends AnyVal {
+  implicit class ScaleRangeLayerMutableBuilder[Self <: ScaleRangeLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxScale(value: Double): Self = this.set("maxScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinScale(value: Double): Self = this.set("minScale", value.asInstanceOf[js.Any])
+    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
   }
 }

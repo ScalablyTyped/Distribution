@@ -6,6 +6,7 @@ import typings.xlsx.xlsxStrings.binary
 import typings.xlsx.xlsxStrings.buffer
 import typings.xlsx.xlsxStrings.file
 import typings.xlsx.xlsxStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,60 +59,48 @@ object WritingOptions {
   }
   
   @scala.inline
-  implicit class WritingOptionsOps[Self <: WritingOptions] (val x: Self) extends AnyVal {
+  implicit class WritingOptionsMutableBuilder[Self <: WritingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookSST(value: Boolean): Self = StObject.set(x, "bookSST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookSSTUndefined: Self = StObject.set(x, "bookSST", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBookType(value: BookType): Self = StObject.set(x, "bookType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProps(value: Properties): Self = this.set("Props", value.asInstanceOf[js.Any])
+    def setBookTypeUndefined: Self = StObject.set(x, "bookType", js.undefined)
     
     @scala.inline
-    def deleteProps: Self = this.set("Props", js.undefined)
+    def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookSST(value: Boolean): Self = this.set("bookSST", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def deleteBookSST: Self = this.set("bookSST", js.undefined)
+    def setIgnoreEC(value: Boolean): Self = StObject.set(x, "ignoreEC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookType(value: BookType): Self = this.set("bookType", value.asInstanceOf[js.Any])
+    def setIgnoreECUndefined: Self = StObject.set(x, "ignoreEC", js.undefined)
     
     @scala.inline
-    def deleteBookType: Self = this.set("bookType", js.undefined)
+    def setProps(value: Properties): Self = StObject.set(x, "Props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: Boolean): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setPropsUndefined: Self = StObject.set(x, "Props", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setSheet(value: String): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreEC(value: Boolean): Self = this.set("ignoreEC", value.asInstanceOf[js.Any])
+    def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
     
     @scala.inline
-    def deleteIgnoreEC: Self = this.set("ignoreEC", js.undefined)
+    def setType(value: base64 | binary | buffer | file | array | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheet(value: String): Self = this.set("sheet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheet: Self = this.set("sheet", js.undefined)
-    
-    @scala.inline
-    def setType(value: base64 | binary | buffer | file | array | string): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

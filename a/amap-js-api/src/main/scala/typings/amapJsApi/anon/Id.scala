@@ -1,11 +1,12 @@
 package typings.amapJsApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Id extends js.Object {
+trait Id extends StObject {
   
   var id: Double = js.native
   
@@ -33,42 +34,30 @@ object Id {
   }
   
   @scala.inline
-  implicit class IdOps[Self <: Id] (val x: Self) extends AnyVal {
+  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: js.Tuple2[Double | String, Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
     @scala.inline
-    def setPosition(value: js.Tuple2[Double | String, Double | String]): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setTxt(value: String): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZooms(value: js.Tuple2[Double, Double]): Self = this.set("zooms", value.asInstanceOf[js.Any])
+    def setTxtUndefined: Self = StObject.set(x, "txt", js.undefined)
     
     @scala.inline
-    def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRank: Self = this.set("rank", js.undefined)
-    
-    @scala.inline
-    def setTxt(value: String): Self = this.set("txt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTxt: Self = this.set("txt", js.undefined)
+    def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
   }
 }

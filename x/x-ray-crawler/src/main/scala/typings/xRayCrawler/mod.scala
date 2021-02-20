@@ -4,19 +4,26 @@ import typings.httpContext.mod.Context
 import typings.httpContext.mod.Request
 import typings.httpContext.mod.Response
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("x-ray-crawler", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("x-ray-crawler", JSImport.Namespace)
+  @js.native
   def apply(): Instance = js.native
+  @JSImport("x-ray-crawler", JSImport.Namespace)
+  @js.native
   def apply(driver: Driver): Instance = js.native
   
+  type Callback[T] = js.Function2[/* err */ Error, /* obj */ T, Unit]
+  
+  type Driver = js.Function2[/* context */ Context, /* callback */ Callback[Context], Unit]
+  
   @js.native
-  trait Instance extends js.Object {
+  trait Instance extends StObject {
     
     def apply(url: String, callback: Callback[Context]): Unit = js.native
     
@@ -53,10 +60,6 @@ object mod extends js.Object {
     def timeout(n: String): this.type = js.native
     def timeout(n: Double): this.type = js.native
   }
-  
-  type Callback[T] = js.Function2[/* err */ Error, /* obj */ T, Unit]
-  
-  type Driver = js.Function2[/* context */ Context, /* callback */ Callback[Context], Unit]
   
   type RandomDelay = js.Function0[Double]
   

@@ -1,12 +1,13 @@
 package typings.reactBootstrapTableNext.mod
 
 import typings.reactBootstrapTableNext.anon.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SizePerPageRendererOptions extends js.Object {
+trait SizePerPageRendererOptions extends StObject {
   
   /**
     * current size per page
@@ -32,30 +33,18 @@ object SizePerPageRendererOptions {
   }
   
   @scala.inline
-  implicit class SizePerPageRendererOptionsOps[Self <: SizePerPageRendererOptions] (val x: Self) extends AnyVal {
+  implicit class SizePerPageRendererOptionsMutableBuilder[Self <: SizePerPageRendererOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentSizePerPage(value: Double): Self = StObject.set(x, "currentSizePerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnSizePerPageChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onSizePerPageChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: js.Array[Text]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSizePerPage(value: Double): Self = this.set("currentSizePerPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnSizePerPageChange(value: (Double, Double) => Unit): Self = this.set("onSizePerPageChange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOptionsVarargs(value: Text*): Self = this.set("options", js.Array(value :_*))
-    
-    @scala.inline
-    def setOptions(value: js.Array[Text]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOptionsVarargs(value: Text*): Self = StObject.set(x, "options", js.Array(value :_*))
   }
 }

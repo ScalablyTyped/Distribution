@@ -1,12 +1,13 @@
 package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
 import typings.sendgrid.anon.Posttourl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpamCheck extends js.Object {
+trait SpamCheck extends StObject {
   
   def getEnable(): Boolean = js.native
   
@@ -39,39 +40,27 @@ object SpamCheck {
   }
   
   @scala.inline
-  implicit class SpamCheckOps[Self <: SpamCheck] (val x: Self) extends AnyVal {
+  implicit class SpamCheckMutableBuilder[Self <: SpamCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPosttoUrl(value: () => String): Self = StObject.set(x, "getPosttoUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetThreshold(value: () => Double): Self = StObject.set(x, "getThreshold", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnable(value: () => Boolean): Self = this.set("getEnable", js.Any.fromFunction0(value))
+    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPosttoUrl(value: () => String): Self = this.set("getPosttoUrl", js.Any.fromFunction0(value))
+    def setSetPosttoUrl(value: String => Unit): Self = StObject.set(x, "setPosttoUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetThreshold(value: () => Double): Self = this.set("getThreshold", js.Any.fromFunction0(value))
+    def setSetThreshold(value: Double => Unit): Self = StObject.set(x, "setThreshold", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = this.set("setEnable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPosttoUrl(value: String => Unit): Self = this.set("setPosttoUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetThreshold(value: Double => Unit): Self = this.set("setThreshold", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToJSON(value: () => Posttourl): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => Posttourl): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

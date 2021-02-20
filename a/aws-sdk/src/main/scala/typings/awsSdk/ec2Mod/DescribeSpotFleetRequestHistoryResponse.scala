@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSpotFleetRequestHistoryResponse extends js.Object {
+trait DescribeSpotFleetRequestHistoryResponse extends StObject {
   
   /**
     * Information about the events in the history of the Spot Fleet request.
@@ -41,51 +42,39 @@ object DescribeSpotFleetRequestHistoryResponse {
   }
   
   @scala.inline
-  implicit class DescribeSpotFleetRequestHistoryResponseOps[Self <: DescribeSpotFleetRequestHistoryResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeSpotFleetRequestHistoryResponseMutableBuilder[Self <: DescribeSpotFleetRequestHistoryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistoryRecords(value: HistoryRecords): Self = StObject.set(x, "HistoryRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHistoryRecordsUndefined: Self = StObject.set(x, "HistoryRecords", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistoryRecordsVarargs(value: HistoryRecord*): Self = StObject.set(x, "HistoryRecords", js.Array(value :_*))
     
     @scala.inline
-    def setHistoryRecordsVarargs(value: HistoryRecord*): Self = this.set("HistoryRecords", js.Array(value :_*))
+    def setLastEvaluatedTime(value: DateTime): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryRecords(value: HistoryRecords): Self = this.set("HistoryRecords", value.asInstanceOf[js.Any])
+    def setLastEvaluatedTimeUndefined: Self = StObject.set(x, "LastEvaluatedTime", js.undefined)
     
     @scala.inline
-    def deleteHistoryRecords: Self = this.set("HistoryRecords", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEvaluatedTime(value: DateTime): Self = this.set("LastEvaluatedTime", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteLastEvaluatedTime: Self = this.set("LastEvaluatedTime", js.undefined)
+    def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotFleetRequestId(value: String): Self = this.set("SpotFleetRequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpotFleetRequestId: Self = this.set("SpotFleetRequestId", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.escpos.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.escpos.escposStrings.HT
   - typings.escpos.escposStrings.VT
 */
-trait FEED_CONTROL_TYPE extends js.Object
+trait FEED_CONTROL_TYPE extends StObject
 object FEED_CONTROL_TYPE {
   
   @scala.inline

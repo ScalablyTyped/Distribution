@@ -10,13 +10,18 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.interfacesMod.IShape
 import typings.antvGBase.typesMod.Point
 import typings.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/abstract/group-component", JSImport.Namespace)
-@js.native
-object groupComponentMod extends js.Object {
+object groupComponentMod {
+  
+  @JSImport("@antv/component/lib/abstract/group-component", JSImport.Default)
+  @js.native
+  abstract class default[T /* <: GroupComponentCfg */] () extends GroupComponent[T]
+  
+  type Callback = js.Function1[/* evt */ js.Object, Unit]
   
   @js.native
   trait GroupComponent[T /* <: GroupComponentCfg */]
@@ -144,11 +149,6 @@ object groupComponentMod extends js.Object {
     
     /* protected */ def updateElements(newGroup: js.Any, originGroup: js.Any): Unit = js.native
   }
-  
-  @js.native
-  abstract class default[T /* <: GroupComponentCfg */] () extends GroupComponent[T]
-  
-  type Callback = js.Function1[/* evt */ js.Object, Unit]
   
   type GroupComponentCtor[C /* <: GroupComponentCfg */, T /* <: GroupComponent[GroupComponentCfg] */] = Instantiable1[/* cfg */ C, T]
 }

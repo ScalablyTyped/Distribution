@@ -1,6 +1,7 @@
 package typings.knuddelsUserappsApi.mod.global
 
 import typings.knuddelsUserappsApi.anon.TransferReason
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("KnuddelAccount")
 @js.native
-class KnuddelAccount () extends js.Object {
+class KnuddelAccount () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelAccount.html#method_getKnuddelAmount

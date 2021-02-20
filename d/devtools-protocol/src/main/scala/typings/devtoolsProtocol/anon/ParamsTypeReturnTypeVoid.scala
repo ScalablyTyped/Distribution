@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.anon
 
 import typings.devtoolsProtocol.mod.Protocol.Debugger.RemoveBreakpointRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParamsTypeReturnTypeVoid extends js.Object {
+trait ParamsTypeReturnTypeVoid extends StObject {
   
   var paramsType: js.Array[RemoveBreakpointRequest] = js.native
   
@@ -21,27 +22,15 @@ object ParamsTypeReturnTypeVoid {
   }
   
   @scala.inline
-  implicit class ParamsTypeReturnTypeVoidOps[Self <: ParamsTypeReturnTypeVoid] (val x: Self) extends AnyVal {
+  implicit class ParamsTypeReturnTypeVoidMutableBuilder[Self <: ParamsTypeReturnTypeVoid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamsType(value: js.Array[RemoveBreakpointRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamsTypeVarargs(value: RemoveBreakpointRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParamsTypeVarargs(value: RemoveBreakpointRequest*): Self = this.set("paramsType", js.Array(value :_*))
-    
-    @scala.inline
-    def setParamsType(value: js.Array[RemoveBreakpointRequest]): Self = this.set("paramsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnType(value: Unit): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,33 +35,21 @@ object PersonLink {
   }
   
   @scala.inline
-  implicit class PersonLinkOps[Self <: PersonLink] (val x: Self) extends AnyVal {
+  implicit class PersonLinkMutableBuilder[Self <: PersonLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssurance(value: code): Self = StObject.set(x, "assurance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssuranceUndefined: Self = StObject.set(x, "assurance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: Reference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Reference): Self = this.set("target", value.asInstanceOf[js.Any])
+    def set_assurance(value: Element): Self = StObject.set(x, "_assurance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_assurance(value: Element): Self = this.set("_assurance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_assurance: Self = this.set("_assurance", js.undefined)
-    
-    @scala.inline
-    def setAssurance(value: code): Self = this.set("assurance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssurance: Self = this.set("assurance", js.undefined)
+    def set_assuranceUndefined: Self = StObject.set(x, "_assurance", js.undefined)
   }
 }

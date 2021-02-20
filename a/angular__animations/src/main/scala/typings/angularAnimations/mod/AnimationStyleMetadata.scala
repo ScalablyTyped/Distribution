@@ -2,6 +2,7 @@ package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularAnimations.angularAnimationsStrings.Asterisk
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,32 +33,20 @@ object AnimationStyleMetadata {
   }
   
   @scala.inline
-  implicit class AnimationStyleMetadataOps[Self <: AnimationStyleMetadata] (val x: Self) extends AnyVal {
+  implicit class AnimationStyleMetadataMutableBuilder[Self <: AnimationStyleMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStylesVarargs(value: ((StringDictionary[String | Double]) | Asterisk)*): Self = this.set("styles", js.Array(value :_*))
+    def setOffsetNull: Self = StObject.set(x, "offset", null)
     
     @scala.inline
     def setStyles(
       value: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk])
-    ): Self = this.set("styles", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsetNull: Self = this.set("offset", null)
+    def setStylesVarargs(value: ((StringDictionary[String | Double]) | Asterisk)*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

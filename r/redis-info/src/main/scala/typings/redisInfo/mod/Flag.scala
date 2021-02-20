@@ -1,26 +1,24 @@
 package typings.redisInfo.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Flag extends js.Object
+sealed trait Flag extends StObject
 @JSImport("redis-info", "Flag")
 @js.native
-object Flag extends js.Object {
+object Flag extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Flag with String] = js.native
   
   @js.native
   sealed trait OFF extends Flag
-  /* "0" */ @js.native
-  object OFF extends TopLevel[OFF with String]
+  /* "0" */ val OFF: typings.redisInfo.mod.Flag.OFF with String = js.native
   
   @js.native
   sealed trait ON extends Flag
-  /* "1" */ @js.native
-  object ON extends TopLevel[ON with String]
+  /* "1" */ val ON: typings.redisInfo.mod.Flag.ON with String = js.native
 }

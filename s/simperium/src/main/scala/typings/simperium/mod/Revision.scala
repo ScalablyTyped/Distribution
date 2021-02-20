@@ -1,11 +1,12 @@
 package typings.simperium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Revision[T] extends js.Object {
+trait Revision[T] extends StObject {
   
   var data: T = js.native
   
@@ -22,27 +23,15 @@ object Revision {
   }
   
   @scala.inline
-  implicit class RevisionOps[Self <: Revision[_], T] (val x: Self with Revision[T]) extends AnyVal {
+  implicit class RevisionMutableBuilder[Self <: Revision[_], T] (val x: Self with Revision[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: EntityId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: EntityId): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

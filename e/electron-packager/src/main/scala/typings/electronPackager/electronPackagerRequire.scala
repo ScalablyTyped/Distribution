@@ -1,5 +1,6 @@
 package typings.electronPackager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("electron-packager", JSImport.Namespace)
 @js.native
-object electronPackagerRequire extends js.Object
+object electronPackagerRequire extends StObject

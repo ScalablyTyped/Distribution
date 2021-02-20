@@ -1,21 +1,21 @@
 package typings.blueprintjsTable
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/table/lib/esm/common/clipboard", JSImport.Namespace)
-@js.native
-object clipboardMod extends js.Object {
+object clipboardMod {
   
-  @js.native
-  object Clipboard extends js.Object {
+  object Clipboard {
     
     /**
       * Overrides the inherited CSS of the element to make sure it is
       * selectable. This method also makes the element pseudo-invisible.
       */
+    @JSImport("@blueprintjs/table/lib/esm/common/clipboard", "Clipboard.applySelectableStyles")
+    @js.native
     def applySelectableStyles(elem: HTMLElement): HTMLElement = js.native
     
     /**
@@ -27,6 +27,8 @@ object clipboardMod extends js.Object {
       *
       * See `Clipboard.copy`
       */
+    @JSImport("@blueprintjs/table/lib/esm/common/clipboard", "Clipboard.copyCells")
+    @js.native
     def copyCells(cells: js.Array[js.Array[String]]): Boolean = js.native
     
     /**
@@ -47,7 +49,11 @@ object clipboardMod extends js.Object {
       * inconsistent limit at about 300KB or 40,000 cells. Depending on the on
       * the content of cells, your limits may vary.
       */
+    @JSImport("@blueprintjs/table/lib/esm/common/clipboard", "Clipboard.copyElement")
+    @js.native
     def copyElement(elem: HTMLElement): Boolean = js.native
+    @JSImport("@blueprintjs/table/lib/esm/common/clipboard", "Clipboard.copyElement")
+    @js.native
     def copyElement(elem: HTMLElement, plaintext: String): Boolean = js.native
     
     /**
@@ -56,12 +62,16 @@ object clipboardMod extends js.Object {
       *
       * See `Clipboard.copy`
       */
+    @JSImport("@blueprintjs/table/lib/esm/common/clipboard", "Clipboard.copyString")
+    @js.native
     def copyString(value: String): Boolean = js.native
     
     /**
       * Returns a boolean indicating whether the current browser nominally
       * supports the `copy` operation using the `execCommand` API.
       */
+    @JSImport("@blueprintjs/table/lib/esm/common/clipboard", "Clipboard.isCopySupported")
+    @js.native
     def isCopySupported(): Boolean = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Finding extends js.Object {
+trait Finding extends StObject {
   
   /**
     * The ARN that specifies the finding.
@@ -112,117 +113,105 @@ object Finding {
   }
   
   @scala.inline
-  implicit class FindingOps[Self <: Finding] (val x: Self) extends AnyVal {
+  implicit class FindingMutableBuilder[Self <: Finding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetAttributes(value: AssetAttributes): Self = StObject.set(x, "assetAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetAttributesUndefined: Self = StObject.set(x, "assetAttributes", js.undefined)
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setAssetType(value: AssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = this.set("attributes", js.Array(value :_*))
+    def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     
     @scala.inline
-    def setAttributes(value: AttributeList): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    def setConfidence(value: IocConfidence): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAttributesVarargs(value: Attribute*): Self = this.set("userAttributes", js.Array(value :_*))
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def setUserAttributes(value: UserAttributeList): Self = this.set("userAttributes", value.asInstanceOf[js.Any])
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetAttributes(value: AssetAttributes): Self = this.set("assetAttributes", value.asInstanceOf[js.Any])
+    def setDescription(value: Text): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssetAttributes: Self = this.set("assetAttributes", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setAssetType(value: AssetType): Self = this.set("assetType", value.asInstanceOf[js.Any])
+    def setId(value: FindingId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssetType: Self = this.set("assetType", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setConfidence(value: IocConfidence): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setIndicatorOfCompromise(value: Bool): Self = StObject.set(x, "indicatorOfCompromise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setIndicatorOfCompromiseUndefined: Self = StObject.set(x, "indicatorOfCompromise", js.undefined)
     
     @scala.inline
-    def setDescription(value: Text): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNumericSeverity(value: NumericSeverity): Self = StObject.set(x, "numericSeverity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setNumericSeverityUndefined: Self = StObject.set(x, "numericSeverity", js.undefined)
     
     @scala.inline
-    def setId(value: FindingId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRecommendation(value: Text): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setRecommendationUndefined: Self = StObject.set(x, "recommendation", js.undefined)
     
     @scala.inline
-    def setIndicatorOfCompromise(value: Bool): Self = this.set("indicatorOfCompromise", value.asInstanceOf[js.Any])
+    def setSchemaVersion(value: NumericVersion): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndicatorOfCompromise: Self = this.set("indicatorOfCompromise", js.undefined)
+    def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
     
     @scala.inline
-    def setNumericSeverity(value: NumericSeverity): Self = this.set("numericSeverity", value.asInstanceOf[js.Any])
+    def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumericSeverity: Self = this.set("numericSeverity", js.undefined)
+    def setServiceAttributes(value: InspectorServiceAttributes): Self = StObject.set(x, "serviceAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendation(value: Text): Self = this.set("recommendation", value.asInstanceOf[js.Any])
+    def setServiceAttributesUndefined: Self = StObject.set(x, "serviceAttributes", js.undefined)
     
     @scala.inline
-    def deleteRecommendation: Self = this.set("recommendation", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def setSchemaVersion(value: NumericVersion): Self = this.set("schemaVersion", value.asInstanceOf[js.Any])
+    def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchemaVersion: Self = this.set("schemaVersion", js.undefined)
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     @scala.inline
-    def setService(value: ServiceName): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setTitle(value: Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setServiceAttributes(value: InspectorServiceAttributes): Self = this.set("serviceAttributes", value.asInstanceOf[js.Any])
+    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServiceAttributes: Self = this.set("serviceAttributes", js.undefined)
+    def setUserAttributes(value: UserAttributeList): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: Severity): Self = this.set("severity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: Text): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUserAttributesVarargs(value: Attribute*): Self = StObject.set(x, "userAttributes", js.Array(value :_*))
   }
 }

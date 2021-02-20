@@ -17,14 +17,14 @@ import typings.mendixmodelsdk.unitsMod.IAbstractUnit
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
 import typings.mendixmodelsdk.versionChecksMod.Version
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/AbstractModel", JSImport.Namespace)
-@js.native
-object abstractModelMod extends js.Object {
+object abstractModelMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/AbstractModel", "AbstractModel")
   @js.native
   abstract class AbstractModel protected () extends IAbstractModel {
     def this(_client: IModelServerClient, _errorHandler: IErrorCallback) = this()
@@ -50,7 +50,7 @@ object abstractModelMod extends js.Object {
   }
   
   @js.native
-  trait IAbstractModel extends js.Object {
+  trait IAbstractModel extends StObject {
     
     /**
       * Adds the given module json to the project, which will make the module and its units read-only and unloadable.

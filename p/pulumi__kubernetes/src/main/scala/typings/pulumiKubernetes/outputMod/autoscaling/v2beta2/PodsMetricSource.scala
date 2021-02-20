@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.autoscaling.v2beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PodsMetricSource indicates how to scale on a metric describing each pod in the current scale target (for example, transactions-processed-per-second). The values will be averaged together before being compared to the target value.
   */
 @js.native
-trait PodsMetricSource extends js.Object {
+trait PodsMetricSource extends StObject {
   
   /**
     * metric identifies the target metric by name and selector
@@ -29,24 +30,12 @@ object PodsMetricSource {
   }
   
   @scala.inline
-  implicit class PodsMetricSourceOps[Self <: PodsMetricSource] (val x: Self) extends AnyVal {
+  implicit class PodsMetricSourceMutableBuilder[Self <: PodsMetricSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetric(value: MetricIdentifier): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMetric(value: MetricIdentifier): Self = this.set("metric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: MetricTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: MetricTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

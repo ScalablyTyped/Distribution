@@ -1,12 +1,13 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operators/mapTo", JSImport.Namespace)
-@js.native
-object mapToMod extends js.Object {
+object mapToMod {
   
+  @JSImport("rxjs-compat/operators/mapTo", "mapTo")
+  @js.native
   def mapTo[T, R](value: R): js.Any = js.native
 }

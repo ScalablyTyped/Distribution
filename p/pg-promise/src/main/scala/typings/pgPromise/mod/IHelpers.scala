@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.pgPromise.anon.EmptyUpdate
 import typings.pgPromise.anon.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Query Formatting Helpers
 // API: http://vitaly-t.github.io/pg-promise/helpers.html
 @js.native
-trait IHelpers extends js.Object {
+trait IHelpers extends StObject {
   
   var Column: Instantiable1[
     /* col */ String | (IColumnConfig[/* import warning: RewrittenClass.unapply cls was tparam S */ js.Any]), 

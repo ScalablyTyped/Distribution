@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaxHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait MaxHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The max-height CSS property sets the maximum height of an element. It prevents the used value of the height
@@ -24,30 +25,18 @@ object MaxHeightProps {
   }
   
   @scala.inline
-  implicit class MaxHeightPropsOps[Self <: MaxHeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (MaxHeightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class MaxHeightPropsMutableBuilder[Self <: MaxHeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (MaxHeightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def setMaxHeightVarargs(value: (TVal | Null)*): Self = this.set("maxHeight", js.Array(value :_*))
-    
-    @scala.inline
-    def setMaxHeight(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
-    
-    @scala.inline
-    def setMaxHeightNull: Self = this.set("maxHeight", null)
+    def setMaxHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
   }
 }

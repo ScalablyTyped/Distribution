@@ -1,16 +1,15 @@
 package typings.umami
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Based on https://umami.is/docs/tracker-functions
-@JSGlobal("umami")
-@js.native
-object umami extends js.Object {
+object umami {
   
   @js.native
-  trait umami extends js.Object {
+  trait umami extends StObject {
     
     def apply(event_value: String): Unit = js.native
     

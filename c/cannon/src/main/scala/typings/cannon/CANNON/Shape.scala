@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Shape extends js.Object {
+trait Shape extends StObject {
   
   var boundingSphereRadius: Double = js.native
   
@@ -36,36 +37,24 @@ object Shape {
   }
   
   @scala.inline
-  implicit class ShapeOps[Self <: Shape] (val x: Self) extends AnyVal {
+  implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingSphereRadius(value: Double): Self = StObject.set(x, "boundingSphereRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculateLocalInertia(value: (Double, Vec3) => Vec3): Self = StObject.set(x, "calculateLocalInertia", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollisionResponse(value: Boolean): Self = StObject.set(x, "collisionResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingSphereRadius(value: Double): Self = this.set("boundingSphereRadius", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculateLocalInertia(value: (Double, Vec3) => Vec3): Self = this.set("calculateLocalInertia", js.Any.fromFunction2(value))
+    def setUpdateBoundingSphereRadius(value: () => Double): Self = StObject.set(x, "updateBoundingSphereRadius", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollisionResponse(value: Boolean): Self = this.set("collisionResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateBoundingSphereRadius(value: () => Double): Self = this.set("updateBoundingSphereRadius", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVolume(value: () => Double): Self = this.set("volume", js.Any.fromFunction0(value))
+    def setVolume(value: () => Double): Self = StObject.set(x, "volume", js.Any.fromFunction0(value))
   }
 }

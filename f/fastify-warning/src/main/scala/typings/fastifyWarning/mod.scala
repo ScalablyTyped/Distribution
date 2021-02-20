@@ -1,18 +1,20 @@
 package typings.fastifyWarning
 
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fastify-warning", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("fastify-warning", JSImport.Default)
+  @js.native
   def default(): Warning = js.native
   
+  @JSImport("fastify-warning", "WarnOpts")
   @js.native
-  class WarnOpts () extends js.Object {
+  class WarnOpts () extends StObject {
     
     var code: String = js.native
     
@@ -21,8 +23,15 @@ object mod extends js.Object {
     var name: String = js.native
   }
   
+  type BuildWarnOptsFn = js.Function3[
+    /* a */ js.UndefOr[js.Any], 
+    /* b */ js.UndefOr[js.Any], 
+    /* c */ js.UndefOr[js.Any], 
+    WarnOpts
+  ]
+  
   @js.native
-  trait Warning extends js.Object {
+  trait Warning extends StObject {
     
     def create(name: String, code: String, message: String): BuildWarnOptsFn = js.native
     
@@ -37,11 +46,4 @@ object mod extends js.Object {
     
     var emitted: Map[String, Boolean] = js.native
   }
-  
-  type BuildWarnOptsFn = js.Function3[
-    /* a */ js.UndefOr[js.Any], 
-    /* b */ js.UndefOr[js.Any], 
-    /* c */ js.UndefOr[js.Any], 
-    WarnOpts
-  ]
 }

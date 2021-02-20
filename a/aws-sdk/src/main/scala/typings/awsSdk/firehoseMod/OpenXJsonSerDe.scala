@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenXJsonSerDe extends js.Object {
+trait OpenXJsonSerDe extends StObject {
   
   /**
     * When set to true, which is the default, Kinesis Data Firehose converts JSON keys to lowercase before deserializing them.
@@ -31,36 +32,24 @@ object OpenXJsonSerDe {
   }
   
   @scala.inline
-  implicit class OpenXJsonSerDeOps[Self <: OpenXJsonSerDe] (val x: Self) extends AnyVal {
+  implicit class OpenXJsonSerDeMutableBuilder[Self <: OpenXJsonSerDe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseInsensitive(value: BooleanObject): Self = StObject.set(x, "CaseInsensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseInsensitiveUndefined: Self = StObject.set(x, "CaseInsensitive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnToJsonKeyMappings(value: ColumnToJsonKeyMappings): Self = StObject.set(x, "ColumnToJsonKeyMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseInsensitive(value: BooleanObject): Self = this.set("CaseInsensitive", value.asInstanceOf[js.Any])
+    def setColumnToJsonKeyMappingsUndefined: Self = StObject.set(x, "ColumnToJsonKeyMappings", js.undefined)
     
     @scala.inline
-    def deleteCaseInsensitive: Self = this.set("CaseInsensitive", js.undefined)
+    def setConvertDotsInJsonKeysToUnderscores(value: BooleanObject): Self = StObject.set(x, "ConvertDotsInJsonKeysToUnderscores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnToJsonKeyMappings(value: ColumnToJsonKeyMappings): Self = this.set("ColumnToJsonKeyMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnToJsonKeyMappings: Self = this.set("ColumnToJsonKeyMappings", js.undefined)
-    
-    @scala.inline
-    def setConvertDotsInJsonKeysToUnderscores(value: BooleanObject): Self = this.set("ConvertDotsInJsonKeysToUnderscores", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConvertDotsInJsonKeysToUnderscores: Self = this.set("ConvertDotsInJsonKeysToUnderscores", js.undefined)
+    def setConvertDotsInJsonKeysToUnderscoresUndefined: Self = StObject.set(x, "ConvertDotsInJsonKeysToUnderscores", js.undefined)
   }
 }

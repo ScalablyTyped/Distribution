@@ -1,11 +1,12 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CameraPictureSourceTypeObject extends js.Object {
+trait CameraPictureSourceTypeObject extends StObject {
   
   var CAMERA: Double = js.native
   
@@ -22,27 +23,15 @@ object CameraPictureSourceTypeObject {
   }
   
   @scala.inline
-  implicit class CameraPictureSourceTypeObjectOps[Self <: CameraPictureSourceTypeObject] (val x: Self) extends AnyVal {
+  implicit class CameraPictureSourceTypeObjectMutableBuilder[Self <: CameraPictureSourceTypeObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAMERA(value: Double): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPHOTOLIBRARY(value: Double): Self = StObject.set(x, "PHOTOLIBRARY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCAMERA(value: Double): Self = this.set("CAMERA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPHOTOLIBRARY(value: Double): Self = this.set("PHOTOLIBRARY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSAVEDPHOTOALBUM(value: Double): Self = this.set("SAVEDPHOTOALBUM", value.asInstanceOf[js.Any])
+    def setSAVEDPHOTOALBUM(value: Double): Self = StObject.set(x, "SAVEDPHOTOALBUM", value.asInstanceOf[js.Any])
   }
 }

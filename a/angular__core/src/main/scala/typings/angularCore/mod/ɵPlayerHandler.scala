@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ɵPlayerHandler extends js.Object {
+trait ɵPlayerHandler extends StObject {
   
   /**
     * Designed to kick off the player at the end of change detection

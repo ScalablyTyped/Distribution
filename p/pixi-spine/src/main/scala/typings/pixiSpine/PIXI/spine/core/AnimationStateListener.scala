@@ -1,11 +1,12 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationStateListener extends js.Object {
+trait AnimationStateListener extends StObject {
   
   var complete: js.UndefOr[js.Function1[/* entry */ TrackEntry, Unit]] = js.native
   
@@ -28,54 +29,42 @@ object AnimationStateListener {
   }
   
   @scala.inline
-  implicit class AnimationStateListenerOps[Self <: AnimationStateListener] (val x: Self) extends AnyVal {
+  implicit class AnimationStateListenerMutableBuilder[Self <: AnimationStateListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispose(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: /* entry */ TrackEntry => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setEnd(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDispose(value: /* entry */ TrackEntry => Unit): Self = this.set("dispose", js.Any.fromFunction1(value))
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteDispose: Self = this.set("dispose", js.undefined)
+    def setEvent(value: (/* entry */ TrackEntry, /* event */ Event) => Unit): Self = StObject.set(x, "event", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEnd(value: /* entry */ TrackEntry => Unit): Self = this.set("end", js.Any.fromFunction1(value))
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setInterrupt(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEvent(value: (/* entry */ TrackEntry, /* event */ Event) => Unit): Self = this.set("event", js.Any.fromFunction2(value))
+    def setInterruptUndefined: Self = StObject.set(x, "interrupt", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setStart(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInterrupt(value: /* entry */ TrackEntry => Unit): Self = this.set("interrupt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteInterrupt: Self = this.set("interrupt", js.undefined)
-    
-    @scala.inline
-    def setStart(value: /* entry */ TrackEntry => Unit): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

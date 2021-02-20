@@ -1,6 +1,7 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,78 +44,66 @@ object IShellFrameEvent {
   }
   
   @scala.inline
-  implicit class IShellFrameEventOps[Self <: IShellFrameEvent] (val x: Self) extends AnyVal {
+  implicit class IShellFrameEventMutableBuilder[Self <: IShellFrameEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnActiveListingChanged(value: (/* oldListing */ Null | IShellListing, /* newListing */ IShellListing) => Unit): Self = StObject.set(x, "OnActiveListingChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnActiveListingChangedUndefined: Self = StObject.set(x, "OnActiveListingChanged", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnNewBottomPane(value: /* bottomPane */ IShellPaneContainer => Unit | IShellPaneContainerEvents): Self = StObject.set(x, "OnNewBottomPane", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnActiveListingChanged(value: (/* oldListing */ Null | IShellListing, /* newListing */ IShellListing) => Unit): Self = this.set("OnActiveListingChanged", js.Any.fromFunction2(value))
+    def setOnNewBottomPaneUndefined: Self = StObject.set(x, "OnNewBottomPane", js.undefined)
     
     @scala.inline
-    def deleteOnActiveListingChanged: Self = this.set("OnActiveListingChanged", js.undefined)
+    def setOnNewCommands(value: /* commands */ ICommands => Unit | ICommandsEvents): Self = StObject.set(x, "OnNewCommands", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnNewBottomPane(value: /* bottomPane */ IShellPaneContainer => Unit | IShellPaneContainerEvents): Self = this.set("OnNewBottomPane", js.Any.fromFunction1(value))
+    def setOnNewCommandsUndefined: Self = StObject.set(x, "OnNewCommands", js.undefined)
     
     @scala.inline
-    def deleteOnNewBottomPane: Self = this.set("OnNewBottomPane", js.undefined)
+    def setOnNewRightPane(value: /* rightPane */ IShellPaneContainer => Unit | IShellPaneContainerEvents): Self = StObject.set(x, "OnNewRightPane", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnNewCommands(value: /* commands */ ICommands => Unit | ICommandsEvents): Self = this.set("OnNewCommands", js.Any.fromFunction1(value))
+    def setOnNewRightPaneUndefined: Self = StObject.set(x, "OnNewRightPane", js.undefined)
     
     @scala.inline
-    def deleteOnNewCommands: Self = this.set("OnNewCommands", js.undefined)
+    def setOnNewSearchPane(value: /* searchPane */ ISearchPane => Unit | ISearchPaneEvents): Self = StObject.set(x, "OnNewSearchPane", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnNewRightPane(value: /* rightPane */ IShellPaneContainer => Unit | IShellPaneContainerEvents): Self = this.set("OnNewRightPane", js.Any.fromFunction1(value))
+    def setOnNewSearchPaneUndefined: Self = StObject.set(x, "OnNewSearchPane", js.undefined)
     
     @scala.inline
-    def deleteOnNewRightPane: Self = this.set("OnNewRightPane", js.undefined)
+    def setOnNewShellListing(value: /* shellListing */ IShellListing => Unit | IShellListingEvents): Self = StObject.set(x, "OnNewShellListing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnNewSearchPane(value: /* searchPane */ ISearchPane => Unit | ISearchPaneEvents): Self = this.set("OnNewSearchPane", js.Any.fromFunction1(value))
+    def setOnNewShellListingUndefined: Self = StObject.set(x, "OnNewShellListing", js.undefined)
     
     @scala.inline
-    def deleteOnNewSearchPane: Self = this.set("OnNewSearchPane", js.undefined)
+    def setOnNewTaskPane(value: /* taskPane */ ITaskPane => Unit | ITaskPaneEvents): Self = StObject.set(x, "OnNewTaskPane", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnNewShellListing(value: /* shellListing */ IShellListing => Unit | IShellListingEvents): Self = this.set("OnNewShellListing", js.Any.fromFunction1(value))
+    def setOnNewTaskPaneUndefined: Self = StObject.set(x, "OnNewTaskPane", js.undefined)
     
     @scala.inline
-    def deleteOnNewShellListing: Self = this.set("OnNewShellListing", js.undefined)
+    def setOnShowMainMenu(value: () => Unit): Self = StObject.set(x, "OnShowMainMenu", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnNewTaskPane(value: /* taskPane */ ITaskPane => Unit | ITaskPaneEvents): Self = this.set("OnNewTaskPane", js.Any.fromFunction1(value))
+    def setOnShowMainMenuUndefined: Self = StObject.set(x, "OnShowMainMenu", js.undefined)
     
     @scala.inline
-    def deleteOnNewTaskPane: Self = this.set("OnNewTaskPane", js.undefined)
+    def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnShowMainMenu(value: () => Unit): Self = this.set("OnShowMainMenu", js.Any.fromFunction0(value))
+    def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
     
     @scala.inline
-    def deleteOnShowMainMenu: Self = this.set("OnShowMainMenu", js.undefined)
+    def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnStarted(value: () => Unit): Self = this.set("OnStarted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnStarted: Self = this.set("OnStarted", js.undefined)
-    
-    @scala.inline
-    def setOnStop(value: () => Unit): Self = this.set("OnStop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnStop: Self = this.set("OnStop", js.undefined)
+    def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
   }
 }

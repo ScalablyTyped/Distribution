@@ -3,16 +3,16 @@ package typings.protractor
 import typings.protractor.configMod.Config
 import typings.q.mod.Promise
 import typings.seleniumWebdriver.mod.WebDriver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protractor/built/driverProviders/driverProvider", JSImport.Namespace)
-@js.native
-object driverProviderMod extends js.Object {
+object driverProviderMod {
   
+  @JSImport("protractor/built/driverProviders/driverProvider", "DriverProvider")
   @js.native
-  abstract class DriverProvider protected () extends js.Object {
+  abstract class DriverProvider protected () extends StObject {
     def this(config: Config) = this()
     
     var bpRunner: js.Any = js.native
@@ -74,14 +74,15 @@ object driverProviderMod extends js.Object {
     def updateJob(update: js.Any): Promise[_] = js.native
   }
   /* static members */
-  @js.native
-  object DriverProvider extends js.Object {
+  object DriverProvider {
     
     /**
       * Quits an array of drivers and returns a q promise instead of a webdriver one
       *
       * @param drivers {webdriver.WebDriver[]} The webdriver instances
       */
+    @JSImport("protractor/built/driverProviders/driverProvider", "DriverProvider.quitDrivers")
+    @js.native
     def quitDrivers(provider: DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = js.native
   }
 }

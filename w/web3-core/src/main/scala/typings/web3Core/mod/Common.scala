@@ -1,11 +1,12 @@
 package typings.web3Core.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Common extends js.Object {
+trait Common extends StObject {
   
   var baseChain: js.UndefOr[chain] = js.native
   
@@ -22,33 +23,21 @@ object Common {
   }
   
   @scala.inline
-  implicit class CommonOps[Self <: Common] (val x: Self) extends AnyVal {
+  implicit class CommonMutableBuilder[Self <: Common] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseChain(value: chain): Self = StObject.set(x, "baseChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseChainUndefined: Self = StObject.set(x, "baseChain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomChain(value: CustomChainParams): Self = StObject.set(x, "customChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomChain(value: CustomChainParams): Self = this.set("customChain", value.asInstanceOf[js.Any])
+    def setHardfork(value: hardfork): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseChain(value: chain): Self = this.set("baseChain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBaseChain: Self = this.set("baseChain", js.undefined)
-    
-    @scala.inline
-    def setHardfork(value: hardfork): Self = this.set("hardfork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHardfork: Self = this.set("hardfork", js.undefined)
+    def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
   }
 }

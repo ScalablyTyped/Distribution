@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutSessionResponse extends js.Object {
+trait PutSessionResponse extends StObject {
   
   /**
     * A list of active contexts for the session.
@@ -71,84 +72,72 @@ object PutSessionResponse {
   }
   
   @scala.inline
-  implicit class PutSessionResponseOps[Self <: PutSessionResponse] (val x: Self) extends AnyVal {
+  implicit class PutSessionResponseMutableBuilder[Self <: PutSessionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveContexts(value: ActiveContextsString): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioStream(value: BlobStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveContexts(value: ActiveContextsString): Self = this.set("activeContexts", value.asInstanceOf[js.Any])
+    def setAudioStreamUndefined: Self = StObject.set(x, "audioStream", js.undefined)
     
     @scala.inline
-    def deleteActiveContexts: Self = this.set("activeContexts", js.undefined)
+    def setContentType(value: HttpContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioStream(value: BlobStream): Self = this.set("audioStream", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteAudioStream: Self = this.set("audioStream", js.undefined)
+    def setDialogState(value: DialogState): Self = StObject.set(x, "dialogState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: HttpContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setDialogStateUndefined: Self = StObject.set(x, "dialogState", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialogState(value: DialogState): Self = this.set("dialogState", value.asInstanceOf[js.Any])
+    def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
     
     @scala.inline
-    def deleteDialogState: Self = this.set("dialogState", js.undefined)
+    def setMessage(value: Text): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentName(value: IntentName): Self = this.set("intentName", value.asInstanceOf[js.Any])
+    def setMessageFormat(value: MessageFormatType): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntentName: Self = this.set("intentName", js.undefined)
+    def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
     
     @scala.inline
-    def setMessage(value: Text): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setSessionAttributes(value: String): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageFormat(value: MessageFormatType): Self = this.set("messageFormat", value.asInstanceOf[js.Any])
+    def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     
     @scala.inline
-    def deleteMessageFormat: Self = this.set("messageFormat", js.undefined)
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionAttributes(value: String): Self = this.set("sessionAttributes", value.asInstanceOf[js.Any])
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
     @scala.inline
-    def deleteSessionAttributes: Self = this.set("sessionAttributes", js.undefined)
+    def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
     
     @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    def setSlots(value: String): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotToElicit(value: String): Self = this.set("slotToElicit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlotToElicit: Self = this.set("slotToElicit", js.undefined)
-    
-    @scala.inline
-    def setSlots(value: String): Self = this.set("slots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlots: Self = this.set("slots", js.undefined)
+    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }
 }

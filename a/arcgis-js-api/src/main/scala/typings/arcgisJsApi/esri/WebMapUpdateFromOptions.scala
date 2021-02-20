@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,48 +58,36 @@ object WebMapUpdateFromOptions {
   }
   
   @scala.inline
-  implicit class WebMapUpdateFromOptionsOps[Self <: WebMapUpdateFromOptions] (val x: Self) extends AnyVal {
+  implicit class WebMapUpdateFromOptionsMutableBuilder[Self <: WebMapUpdateFromOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundExcluded(value: Boolean): Self = StObject.set(x, "backgroundExcluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundExcludedUndefined: Self = StObject.set(x, "backgroundExcluded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScalePreserved(value: Boolean): Self = StObject.set(x, "scalePreserved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundExcluded(value: Boolean): Self = this.set("backgroundExcluded", value.asInstanceOf[js.Any])
+    def setScalePreservedUndefined: Self = StObject.set(x, "scalePreserved", js.undefined)
     
     @scala.inline
-    def deleteBackgroundExcluded: Self = this.set("backgroundExcluded", js.undefined)
+    def setThumbnailExcluded(value: Boolean): Self = StObject.set(x, "thumbnailExcluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalePreserved(value: Boolean): Self = this.set("scalePreserved", value.asInstanceOf[js.Any])
+    def setThumbnailExcludedUndefined: Self = StObject.set(x, "thumbnailExcluded", js.undefined)
     
     @scala.inline
-    def deleteScalePreserved: Self = this.set("scalePreserved", js.undefined)
+    def setThumbnailSize(value: WebMapUpdateFromOptionsThumbnailSize): Self = StObject.set(x, "thumbnailSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailExcluded(value: Boolean): Self = this.set("thumbnailExcluded", value.asInstanceOf[js.Any])
+    def setThumbnailSizeUndefined: Self = StObject.set(x, "thumbnailSize", js.undefined)
     
     @scala.inline
-    def deleteThumbnailExcluded: Self = this.set("thumbnailExcluded", js.undefined)
+    def setViewpointExcluded(value: Boolean): Self = StObject.set(x, "viewpointExcluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailSize(value: WebMapUpdateFromOptionsThumbnailSize): Self = this.set("thumbnailSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailSize: Self = this.set("thumbnailSize", js.undefined)
-    
-    @scala.inline
-    def setViewpointExcluded(value: Boolean): Self = this.set("viewpointExcluded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewpointExcluded: Self = this.set("viewpointExcluded", js.undefined)
+    def setViewpointExcludedUndefined: Self = StObject.set(x, "viewpointExcluded", js.undefined)
   }
 }

@@ -2,14 +2,14 @@ package typings.opentelemetryCore
 
 import typings.opentelemetryApi.samplerMod.Sampler
 import typings.opentelemetryApi.samplingResultMod.SamplingResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/core/build/src/trace/sampler/AlwaysOnSampler", JSImport.Namespace)
-@js.native
-object alwaysOnSamplerMod extends js.Object {
+object alwaysOnSamplerMod {
   
+  @JSImport("@opentelemetry/core/build/src/trace/sampler/AlwaysOnSampler", "AlwaysOnSampler")
   @js.native
   class AlwaysOnSampler () extends Sampler {
     

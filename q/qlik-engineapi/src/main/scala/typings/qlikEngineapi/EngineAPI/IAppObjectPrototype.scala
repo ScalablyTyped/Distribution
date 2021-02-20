@@ -1,11 +1,12 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAppObjectPrototype[P /* <: IGenericObjectProperties */, O /* <: IGenericObject */] extends js.Object {
+trait IAppObjectPrototype[P /* <: IGenericObjectProperties */, O /* <: IGenericObject */] extends StObject {
   
   def createObject(qProp: P): js.Promise[O] = js.native
   
@@ -20,24 +21,12 @@ object IAppObjectPrototype {
   }
   
   @scala.inline
-  implicit class IAppObjectPrototypeOps[Self <: IAppObjectPrototype[_, _], P /* <: IGenericObjectProperties */, O /* <: IGenericObject */] (val x: Self with (IAppObjectPrototype[P, O])) extends AnyVal {
+  implicit class IAppObjectPrototypeMutableBuilder[Self <: IAppObjectPrototype[_, _], P /* <: IGenericObjectProperties */, O /* <: IGenericObject */] (val x: Self with (IAppObjectPrototype[P, O])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateObject(value: P => js.Promise[O]): Self = StObject.set(x, "createObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateObject(value: P => js.Promise[O]): Self = this.set("createObject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateSessionObject(value: P => js.Promise[O]): Self = this.set("createSessionObject", js.Any.fromFunction1(value))
+    def setCreateSessionObject(value: P => js.Promise[O]): Self = StObject.set(x, "createSessionObject", js.Any.fromFunction1(value))
   }
 }

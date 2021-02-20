@@ -1,11 +1,12 @@
 package typings.spotifyApi.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserDevice extends js.Object {
+trait UserDevice extends StObject {
   
   var id: String | Null = js.native
   
@@ -29,42 +30,30 @@ object UserDevice {
   }
   
   @scala.inline
-  implicit class UserDeviceOps[Self <: UserDevice] (val x: Self) extends AnyVal {
+  implicit class UserDeviceMutableBuilder[Self <: UserDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIs_active(value: Boolean): Self = StObject.set(x, "is_active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_active(value: Boolean): Self = this.set("is_active", value.asInstanceOf[js.Any])
+    def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_restricted(value: Boolean): Self = this.set("is_restricted", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVolume_percent(value: Double): Self = StObject.set(x, "volume_percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdNull: Self = this.set("id", null)
-    
-    @scala.inline
-    def setVolume_percent(value: Double): Self = this.set("volume_percent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolume_percentNull: Self = this.set("volume_percent", null)
+    def setVolume_percentNull: Self = StObject.set(x, "volume_percent", null)
   }
 }

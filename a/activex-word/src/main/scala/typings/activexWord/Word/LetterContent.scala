@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LetterContent extends js.Object {
+trait LetterContent extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -127,126 +128,114 @@ object LetterContent {
   }
   
   @scala.inline
-  implicit class LetterContentOps[Self <: LetterContent] (val x: Self) extends AnyVal {
+  implicit class LetterContentMutableBuilder[Self <: LetterContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttentionLine(value: String): Self = StObject.set(x, "AttentionLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCCList(value: String): Self = StObject.set(x, "CCList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setClosing(value: String): Self = StObject.set(x, "Closing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttentionLine(value: String): Self = this.set("AttentionLine", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCCList(value: String): Self = this.set("CCList", value.asInstanceOf[js.Any])
+    def setDateFormat(value: String): Self = StObject.set(x, "DateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosing(value: String): Self = this.set("Closing", value.asInstanceOf[js.Any])
+    def setDuplicate(value: LetterContent): Self = StObject.set(x, "Duplicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setEnclosureNumber(value: Double): Self = StObject.set(x, "EnclosureNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("DateFormat", value.asInstanceOf[js.Any])
+    def setIncludeHeaderFooter(value: Boolean): Self = StObject.set(x, "IncludeHeaderFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicate(value: LetterContent): Self = this.set("Duplicate", value.asInstanceOf[js.Any])
+    def setInfoBlock(value: Boolean): Self = StObject.set(x, "InfoBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnclosureNumber(value: Double): Self = this.set("EnclosureNumber", value.asInstanceOf[js.Any])
+    def setLetterStyle(value: WdLetterStyle): Self = StObject.set(x, "LetterStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeHeaderFooter(value: Boolean): Self = this.set("IncludeHeaderFooter", value.asInstanceOf[js.Any])
+    def setLetterhead(value: Boolean): Self = StObject.set(x, "Letterhead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoBlock(value: Boolean): Self = this.set("InfoBlock", value.asInstanceOf[js.Any])
+    def setLetterheadLocation(value: WdLetterheadLocation): Self = StObject.set(x, "LetterheadLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterStyle(value: WdLetterStyle): Self = this.set("LetterStyle", value.asInstanceOf[js.Any])
+    def setLetterheadSize(value: Double): Self = StObject.set(x, "LetterheadSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterhead(value: Boolean): Self = this.set("Letterhead", value.asInstanceOf[js.Any])
+    def setMailingInstructions(value: String): Self = StObject.set(x, "MailingInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterheadLocation(value: WdLetterheadLocation): Self = this.set("LetterheadLocation", value.asInstanceOf[js.Any])
+    def setPageDesign(value: String): Self = StObject.set(x, "PageDesign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterheadSize(value: Double): Self = this.set("LetterheadSize", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailingInstructions(value: String): Self = this.set("MailingInstructions", value.asInstanceOf[js.Any])
+    def setRecipientAddress(value: String): Self = StObject.set(x, "RecipientAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageDesign(value: String): Self = this.set("PageDesign", value.asInstanceOf[js.Any])
+    def setRecipientCode(value: String): Self = StObject.set(x, "RecipientCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setRecipientGender(value: WdSalutationGender): Self = StObject.set(x, "RecipientGender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientAddress(value: String): Self = this.set("RecipientAddress", value.asInstanceOf[js.Any])
+    def setRecipientName(value: String): Self = StObject.set(x, "RecipientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientCode(value: String): Self = this.set("RecipientCode", value.asInstanceOf[js.Any])
+    def setRecipientReference(value: String): Self = StObject.set(x, "RecipientReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientGender(value: WdSalutationGender): Self = this.set("RecipientGender", value.asInstanceOf[js.Any])
+    def setReturnAddress(value: String): Self = StObject.set(x, "ReturnAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientName(value: String): Self = this.set("RecipientName", value.asInstanceOf[js.Any])
+    def setReturnAddressShortForm(value: String): Self = StObject.set(x, "ReturnAddressShortForm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientReference(value: String): Self = this.set("RecipientReference", value.asInstanceOf[js.Any])
+    def setSalutation(value: String): Self = StObject.set(x, "Salutation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnAddress(value: String): Self = this.set("ReturnAddress", value.asInstanceOf[js.Any])
+    def setSalutationType(value: WdSalutationType): Self = StObject.set(x, "SalutationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnAddressShortForm(value: String): Self = this.set("ReturnAddressShortForm", value.asInstanceOf[js.Any])
+    def setSenderCity(value: String): Self = StObject.set(x, "SenderCity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalutation(value: String): Self = this.set("Salutation", value.asInstanceOf[js.Any])
+    def setSenderCode(value: String): Self = StObject.set(x, "SenderCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalutationType(value: WdSalutationType): Self = this.set("SalutationType", value.asInstanceOf[js.Any])
+    def setSenderCompany(value: String): Self = StObject.set(x, "SenderCompany", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderCity(value: String): Self = this.set("SenderCity", value.asInstanceOf[js.Any])
+    def setSenderGender(value: WdSalutationGender): Self = StObject.set(x, "SenderGender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderCode(value: String): Self = this.set("SenderCode", value.asInstanceOf[js.Any])
+    def setSenderInitials(value: String): Self = StObject.set(x, "SenderInitials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderCompany(value: String): Self = this.set("SenderCompany", value.asInstanceOf[js.Any])
+    def setSenderJobTitle(value: String): Self = StObject.set(x, "SenderJobTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderGender(value: WdSalutationGender): Self = this.set("SenderGender", value.asInstanceOf[js.Any])
+    def setSenderName(value: String): Self = StObject.set(x, "SenderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderInitials(value: String): Self = this.set("SenderInitials", value.asInstanceOf[js.Any])
+    def setSenderReference(value: String): Self = StObject.set(x, "SenderReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderJobTitle(value: String): Self = this.set("SenderJobTitle", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderName(value: String): Self = this.set("SenderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSenderReference(value: String): Self = this.set("SenderReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotLetterContent_typekey(value: LetterContent): Self = this.set("Word.LetterContent_typekey", value.asInstanceOf[js.Any])
+    def setWordDotLetterContent_typekey(value: LetterContent): Self = StObject.set(x, "Word.LetterContent_typekey", value.asInstanceOf[js.Any])
   }
 }

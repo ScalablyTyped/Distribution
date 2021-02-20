@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsBackendCpu
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MaxPoolWithArgmax", JSImport.Namespace)
-@js.native
-object maxPoolWithArgmaxMod extends js.Object {
+object maxPoolWithArgmaxMod {
   
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MaxPoolWithArgmax", "maxPoolWithArgmaxConfig")
+  @js.native
   val maxPoolWithArgmaxConfig: KernelConfig = js.native
 }

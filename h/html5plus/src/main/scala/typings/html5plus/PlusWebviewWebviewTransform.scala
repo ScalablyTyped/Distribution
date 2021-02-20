@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewTransform extends js.Object {
+trait PlusWebviewWebviewTransform extends StObject {
   
   /**
     * 暂不支持
@@ -56,48 +57,36 @@ object PlusWebviewWebviewTransform {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewTransformOps[Self <: PlusWebviewWebviewTransform] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewTransformMutableBuilder[Self <: PlusWebviewWebviewTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatrix(value: String): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatrix(value: String): Self = this.set("matrix", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def deleteMatrix: Self = this.set("matrix", js.undefined)
+    def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: String): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setSkew(value: String): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: String): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setTranslate(value: String): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkew(value: String): Self = this.set("skew", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkew: Self = this.set("skew", js.undefined)
-    
-    @scala.inline
-    def setTranslate(value: String): Self = this.set("translate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslate: Self = this.set("translate", js.undefined)
+    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
   }
 }

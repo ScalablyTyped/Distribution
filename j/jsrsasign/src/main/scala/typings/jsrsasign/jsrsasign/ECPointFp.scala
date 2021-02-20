@@ -1,11 +1,12 @@
 package typings.jsrsasign.jsrsasign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ECPointFp extends js.Object {
+trait ECPointFp extends StObject {
   
   var curve: ECFieldElementFp = js.native
   
@@ -26,36 +27,24 @@ object ECPointFp {
   }
   
   @scala.inline
-  implicit class ECPointFpOps[Self <: ECPointFp] (val x: Self) extends AnyVal {
+  implicit class ECPointFpMutableBuilder[Self <: ECPointFp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurve(value: ECFieldElementFp): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setX(value: ECFieldElementFp): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setY(value: ECFieldElementFp): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurve(value: ECFieldElementFp): Self = this.set("curve", value.asInstanceOf[js.Any])
+    def setZ(value: BigInteger): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: ECFieldElementFp): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setZinv(value: BigInteger): Self = StObject.set(x, "zinv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: ECFieldElementFp): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZ(value: BigInteger): Self = this.set("z", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZinv(value: BigInteger): Self = this.set("zinv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZinvNull: Self = this.set("zinv", null)
+    def setZinvNull: Self = StObject.set(x, "zinv", null)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpContext extends js.Object {
+trait HttpContext extends StObject {
   
   /**
     * The header keys and values in an HTTP authorization request.
@@ -26,30 +27,18 @@ object HttpContext {
   }
   
   @scala.inline
-  implicit class HttpContextOps[Self <: HttpContext] (val x: Self) extends AnyVal {
+  implicit class HttpContextMutableBuilder[Self <: HttpContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryString(value: HttpQueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: HttpHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
-    
-    @scala.inline
-    def setQueryString(value: HttpQueryString): Self = this.set("queryString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryString: Self = this.set("queryString", js.undefined)
+    def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
   }
 }

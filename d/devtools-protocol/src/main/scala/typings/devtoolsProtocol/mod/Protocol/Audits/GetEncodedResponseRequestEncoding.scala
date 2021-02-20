@@ -3,6 +3,7 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 import typings.devtoolsProtocol.devtoolsProtocolStrings.jpeg
 import typings.devtoolsProtocol.devtoolsProtocolStrings.png
 import typings.devtoolsProtocol.devtoolsProtocolStrings.webp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.jpeg
   - typings.devtoolsProtocol.devtoolsProtocolStrings.png
 */
-trait GetEncodedResponseRequestEncoding extends js.Object
+trait GetEncodedResponseRequestEncoding extends StObject
 object GetEncodedResponseRequestEncoding {
   
   @scala.inline

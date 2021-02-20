@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartResetZoomButtonOptions extends js.Object {
+trait ChartResetZoomButtonOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The position of the button.
@@ -36,36 +37,24 @@ object ChartResetZoomButtonOptions {
   }
   
   @scala.inline
-  implicit class ChartResetZoomButtonOptionsOps[Self <: ChartResetZoomButtonOptions] (val x: Self) extends AnyVal {
+  implicit class ChartResetZoomButtonOptionsMutableBuilder[Self <: ChartResetZoomButtonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPosition(value: AlignObject | ChartResetZoomButtonPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelativeTo(value: ButtonRelativeToValue): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: AlignObject | ChartResetZoomButtonPositionOptions): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setTheme(value: SVGAttributes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeTo(value: ButtonRelativeToValue): Self = this.set("relativeTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelativeTo: Self = this.set("relativeTo", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: SVGAttributes): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

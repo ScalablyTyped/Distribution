@@ -1,11 +1,12 @@
 package typings.hapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bind extends js.Object {
+trait Bind extends StObject {
   
   var bind: js.Object = js.native
   
@@ -20,24 +21,12 @@ object Bind {
   }
   
   @scala.inline
-  implicit class BindOps[Self <: Bind] (val x: Self) extends AnyVal {
+  implicit class BindMutableBuilder[Self <: Bind] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBind(value: js.Object): Self = this.set("bind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFiles(value: RelativeTo): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setFiles(value: RelativeTo): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
   }
 }

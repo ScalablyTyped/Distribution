@@ -4,6 +4,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,33 +108,21 @@ object TBSCertList {
   }
   
   @scala.inline
-  implicit class TBSCertListOps[Self <: TBSCertList] (val x: Self) extends AnyVal {
+  implicit class TBSCertListMutableBuilder[Self <: TBSCertList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRevokedCert(value: (IntegerParam, StringParam) => Unit): Self = StObject.set(x, "addRevokedCert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetIssuerByParam(value: StringParam => Unit): Self = StObject.set(x, "setIssuerByParam", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetNextUpdateByParam(value: StringParam => Unit): Self = StObject.set(x, "setNextUpdateByParam", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRevokedCert(value: (IntegerParam, StringParam) => Unit): Self = this.set("addRevokedCert", js.Any.fromFunction2(value))
+    def setSetSignatureAlgByParam(value: NameParam => Unit): Self = StObject.set(x, "setSignatureAlgByParam", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIssuerByParam(value: StringParam => Unit): Self = this.set("setIssuerByParam", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetNextUpdateByParam(value: StringParam => Unit): Self = this.set("setNextUpdateByParam", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSignatureAlgByParam(value: NameParam => Unit): Self = this.set("setSignatureAlgByParam", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetThisUpdateByParam(value: StringParam => Unit): Self = this.set("setThisUpdateByParam", js.Any.fromFunction1(value))
+    def setSetThisUpdateByParam(value: StringParam => Unit): Self = StObject.set(x, "setThisUpdateByParam", js.Any.fromFunction1(value))
   }
 }

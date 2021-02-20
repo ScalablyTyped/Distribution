@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildBazelSemverSemVer extends js.Object {
+trait BuildBazelSemverSemVer extends StObject {
   
   /** The major version, e.g 10 for 10.2.3. */
   var major: js.UndefOr[Double] = js.native
@@ -31,42 +32,30 @@ object BuildBazelSemverSemVer {
   }
   
   @scala.inline
-  implicit class BuildBazelSemverSemVerOps[Self <: BuildBazelSemverSemVer] (val x: Self) extends AnyVal {
+  implicit class BuildBazelSemverSemVerMutableBuilder[Self <: BuildBazelSemverSemVer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajor(value: Double): Self = this.set("major", value.asInstanceOf[js.Any])
+    def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
     
     @scala.inline
-    def deleteMajor: Self = this.set("major", js.undefined)
+    def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinor(value: Double): Self = this.set("minor", value.asInstanceOf[js.Any])
+    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     
     @scala.inline
-    def deleteMinor: Self = this.set("minor", js.undefined)
+    def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatch(value: Double): Self = this.set("patch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatch: Self = this.set("patch", js.undefined)
-    
-    @scala.inline
-    def setPrerelease(value: String): Self = this.set("prerelease", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrerelease: Self = this.set("prerelease", js.undefined)
+    def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
   }
 }

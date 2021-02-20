@@ -1,6 +1,7 @@
 package typings.sharepoint.SP.UI
 
 import typings.microsoftAjax.Sys.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object PopoutMenu {
   }
   
   @scala.inline
-  implicit class PopoutMenuOps[Self <: PopoutMenu] (val x: Self) extends AnyVal {
+  implicit class PopoutMenuMutableBuilder[Self <: PopoutMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseMenu(value: () => Unit): Self = StObject.set(x, "closeMenu", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloseMenu(value: () => Unit): Self = this.set("closeMenu", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLaunchMenu(value: () => Unit): Self = this.set("launchMenu", js.Any.fromFunction0(value))
+    def setLaunchMenu(value: () => Unit): Self = StObject.set(x, "launchMenu", js.Any.fromFunction0(value))
   }
 }

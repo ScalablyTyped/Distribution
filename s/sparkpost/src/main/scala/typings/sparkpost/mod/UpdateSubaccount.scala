@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateSubaccount extends js.Object {
+trait UpdateSubaccount extends StObject {
   
   /** id of the default IP pool assigned to subaccount"s transmissions */
   var ip_pool: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object UpdateSubaccount {
   }
   
   @scala.inline
-  implicit class UpdateSubaccountOps[Self <: UpdateSubaccount] (val x: Self) extends AnyVal {
+  implicit class UpdateSubaccountMutableBuilder[Self <: UpdateSubaccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIp_pool(value: String): Self = this.set("ip_pool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIp_pool: Self = this.set("ip_pool", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

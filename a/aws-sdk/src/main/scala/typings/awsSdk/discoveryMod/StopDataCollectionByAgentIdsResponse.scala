@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopDataCollectionByAgentIdsResponse extends js.Object {
+trait StopDataCollectionByAgentIdsResponse extends StObject {
   
   /**
     * Information about the agents or connector that were instructed to stop collecting data. Information includes the agent/connector ID, a description of the operation performed, and whether the agent/connector configuration was updated.
@@ -21,27 +22,15 @@ object StopDataCollectionByAgentIdsResponse {
   }
   
   @scala.inline
-  implicit class StopDataCollectionByAgentIdsResponseOps[Self <: StopDataCollectionByAgentIdsResponse] (val x: Self) extends AnyVal {
+  implicit class StopDataCollectionByAgentIdsResponseMutableBuilder[Self <: StopDataCollectionByAgentIdsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentsConfigurationStatus(value: AgentConfigurationStatusList): Self = StObject.set(x, "agentsConfigurationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentsConfigurationStatusUndefined: Self = StObject.set(x, "agentsConfigurationStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAgentsConfigurationStatusVarargs(value: AgentConfigurationStatus*): Self = this.set("agentsConfigurationStatus", js.Array(value :_*))
-    
-    @scala.inline
-    def setAgentsConfigurationStatus(value: AgentConfigurationStatusList): Self = this.set("agentsConfigurationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAgentsConfigurationStatus: Self = this.set("agentsConfigurationStatus", js.undefined)
+    def setAgentsConfigurationStatusVarargs(value: AgentConfigurationStatus*): Self = StObject.set(x, "agentsConfigurationStatus", js.Array(value :_*))
   }
 }

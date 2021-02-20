@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDataflowGraphRequest extends js.Object {
+trait GetDataflowGraphRequest extends StObject {
   
   /**
     * The Python script to transform.
@@ -21,24 +22,12 @@ object GetDataflowGraphRequest {
   }
   
   @scala.inline
-  implicit class GetDataflowGraphRequestOps[Self <: GetDataflowGraphRequest] (val x: Self) extends AnyVal {
+  implicit class GetDataflowGraphRequestMutableBuilder[Self <: GetDataflowGraphRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPythonScript(value: PythonScript): Self = StObject.set(x, "PythonScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPythonScript(value: PythonScript): Self = this.set("PythonScript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePythonScript: Self = this.set("PythonScript", js.undefined)
+    def setPythonScriptUndefined: Self = StObject.set(x, "PythonScript", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1StudyConfig extends js.Object {
+trait GoogleCloudMlV1StudyConfig extends StObject {
   
   /** The search algorithm specified for the study. */
   var algorithm: js.UndefOr[String] = js.native
@@ -28,48 +29,36 @@ object GoogleCloudMlV1StudyConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1StudyConfigOps[Self <: GoogleCloudMlV1StudyConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1StudyConfigMutableBuilder[Self <: GoogleCloudMlV1StudyConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomatedStoppingConfig(value: GoogleCloudMlV1AutomatedStoppingConfig): Self = StObject.set(x, "automatedStoppingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setAutomatedStoppingConfigUndefined: Self = StObject.set(x, "automatedStoppingConfig", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setMetrics(value: js.Array[GoogleCloudMlV1StudyConfigMetricSpec]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedStoppingConfig(value: GoogleCloudMlV1AutomatedStoppingConfig): Self = this.set("automatedStoppingConfig", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteAutomatedStoppingConfig: Self = this.set("automatedStoppingConfig", js.undefined)
+    def setMetricsVarargs(value: GoogleCloudMlV1StudyConfigMetricSpec*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setMetricsVarargs(value: GoogleCloudMlV1StudyConfigMetricSpec*): Self = this.set("metrics", js.Array(value :_*))
+    def setParameters(value: js.Array[GoogleCloudMlV1StudyConfigParameterSpec]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: js.Array[GoogleCloudMlV1StudyConfigMetricSpec]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
-    
-    @scala.inline
-    def setParametersVarargs(value: GoogleCloudMlV1StudyConfigParameterSpec*): Self = this.set("parameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameters(value: js.Array[GoogleCloudMlV1StudyConfigParameterSpec]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setParametersVarargs(value: GoogleCloudMlV1StudyConfigParameterSpec*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

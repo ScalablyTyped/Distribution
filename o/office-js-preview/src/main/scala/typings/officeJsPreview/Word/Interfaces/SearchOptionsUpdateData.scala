@@ -1,12 +1,13 @@
 package typings.officeJsPreview.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the SearchOptions object, for use in `searchOptions.set({ ... })`. */
 @js.native
-trait SearchOptionsUpdateData extends js.Object {
+trait SearchOptionsUpdateData extends StObject {
   
   /**
     *
@@ -73,60 +74,48 @@ object SearchOptionsUpdateData {
   }
   
   @scala.inline
-  implicit class SearchOptionsUpdateDataOps[Self <: SearchOptionsUpdateData] (val x: Self) extends AnyVal {
+  implicit class SearchOptionsUpdateDataMutableBuilder[Self <: SearchOptionsUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnorePunct(value: Boolean): Self = StObject.set(x, "ignorePunct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnorePunctUndefined: Self = StObject.set(x, "ignorePunct", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreSpace(value: Boolean): Self = StObject.set(x, "ignoreSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnorePunct(value: Boolean): Self = this.set("ignorePunct", value.asInstanceOf[js.Any])
+    def setIgnoreSpaceUndefined: Self = StObject.set(x, "ignoreSpace", js.undefined)
     
     @scala.inline
-    def deleteIgnorePunct: Self = this.set("ignorePunct", js.undefined)
+    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreSpace(value: Boolean): Self = this.set("ignoreSpace", value.asInstanceOf[js.Any])
+    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
     
     @scala.inline
-    def deleteIgnoreSpace: Self = this.set("ignoreSpace", js.undefined)
+    def setMatchPrefix(value: Boolean): Self = StObject.set(x, "matchPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchCase(value: Boolean): Self = this.set("matchCase", value.asInstanceOf[js.Any])
+    def setMatchPrefixUndefined: Self = StObject.set(x, "matchPrefix", js.undefined)
     
     @scala.inline
-    def deleteMatchCase: Self = this.set("matchCase", js.undefined)
+    def setMatchSuffix(value: Boolean): Self = StObject.set(x, "matchSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchPrefix(value: Boolean): Self = this.set("matchPrefix", value.asInstanceOf[js.Any])
+    def setMatchSuffixUndefined: Self = StObject.set(x, "matchSuffix", js.undefined)
     
     @scala.inline
-    def deleteMatchPrefix: Self = this.set("matchPrefix", js.undefined)
+    def setMatchWholeWord(value: Boolean): Self = StObject.set(x, "matchWholeWord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchSuffix(value: Boolean): Self = this.set("matchSuffix", value.asInstanceOf[js.Any])
+    def setMatchWholeWordUndefined: Self = StObject.set(x, "matchWholeWord", js.undefined)
     
     @scala.inline
-    def deleteMatchSuffix: Self = this.set("matchSuffix", js.undefined)
+    def setMatchWildcards(value: Boolean): Self = StObject.set(x, "matchWildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchWholeWord(value: Boolean): Self = this.set("matchWholeWord", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchWholeWord: Self = this.set("matchWholeWord", js.undefined)
-    
-    @scala.inline
-    def setMatchWildcards(value: Boolean): Self = this.set("matchWildcards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchWildcards: Self = this.set("matchWildcards", js.undefined)
+    def setMatchWildcardsUndefined: Self = StObject.set(x, "matchWildcards", js.undefined)
   }
 }

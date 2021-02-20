@@ -1,9 +1,8 @@
 package typings.carbonComponents.componentsMod
 
-import typings.carbonComponents.anon.BACKWARD
-import typings.carbonComponents.anon.ClassDisabled
 import typings.carbonComponents.dropdownMod.default
 import typings.std.WeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +12,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Dropdown protected () extends default {
   def this(element: js.Any, options: js.Any) = this()
 }
-/* static members */
-@JSImport("carbon-components/globals/js/components", "Dropdown")
-@js.native
-object Dropdown extends js.Object {
+object Dropdown {
   
-  var NAVIGATE: BACKWARD = js.native
+  @JSImport("carbon-components/globals/js/components", "Dropdown")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var components: WeakMap[js.Object, _] = js.native
+  /* static member */
+  object NAVIGATE {
+    
+    @JSImport("carbon-components/globals/js/components", "Dropdown.NAVIGATE")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("carbon-components/globals/js/components", "Dropdown.NAVIGATE.BACKWARD")
+    @js.native
+    def BACKWARD: Double = js.native
+    @scala.inline
+    def BACKWARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKWARD")(x.asInstanceOf[js.Any])
+    
+    @JSImport("carbon-components/globals/js/components", "Dropdown.NAVIGATE.FORWARD")
+    @js.native
+    def FORWARD: Double = js.native
+    @scala.inline
+    def FORWARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORWARD")(x.asInstanceOf[js.Any])
+  }
   
-  def options: ClassDisabled = js.native
+  /* static member */
+  @JSImport("carbon-components/globals/js/components", "Dropdown.components")
+  @js.native
+  def components: WeakMap[js.Object, js.Any] = js.native
+  @scala.inline
+  def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

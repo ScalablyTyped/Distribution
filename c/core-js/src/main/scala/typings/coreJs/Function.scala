@@ -1,5 +1,6 @@
 package typings.coreJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Modules: core.function.part
 // #############################################################################################
 @js.native
-trait Function extends js.Object {
+trait Function extends StObject {
   
   /**
     * Non-standard.

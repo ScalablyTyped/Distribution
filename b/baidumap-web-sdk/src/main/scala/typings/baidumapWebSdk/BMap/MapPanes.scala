@@ -1,12 +1,13 @@
 package typings.baidumapWebSdk.BMap
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapPanes extends js.Object {
+trait MapPanes extends StObject {
   
   var floatPane: js.UndefOr[HTMLElement] = js.native
   
@@ -31,60 +32,48 @@ object MapPanes {
   }
   
   @scala.inline
-  implicit class MapPanesOps[Self <: MapPanes] (val x: Self) extends AnyVal {
+  implicit class MapPanesMutableBuilder[Self <: MapPanes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloatPane(value: HTMLElement): Self = StObject.set(x, "floatPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloatPaneUndefined: Self = StObject.set(x, "floatPane", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloatShadow(value: HTMLElement): Self = StObject.set(x, "floatShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatPane(value: HTMLElement): Self = this.set("floatPane", value.asInstanceOf[js.Any])
+    def setFloatShadowUndefined: Self = StObject.set(x, "floatShadow", js.undefined)
     
     @scala.inline
-    def deleteFloatPane: Self = this.set("floatPane", js.undefined)
+    def setLabelPane(value: HTMLElement): Self = StObject.set(x, "labelPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatShadow(value: HTMLElement): Self = this.set("floatShadow", value.asInstanceOf[js.Any])
+    def setLabelPaneUndefined: Self = StObject.set(x, "labelPane", js.undefined)
     
     @scala.inline
-    def deleteFloatShadow: Self = this.set("floatShadow", js.undefined)
+    def setMapPane(value: HTMLElement): Self = StObject.set(x, "mapPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelPane(value: HTMLElement): Self = this.set("labelPane", value.asInstanceOf[js.Any])
+    def setMapPaneUndefined: Self = StObject.set(x, "mapPane", js.undefined)
     
     @scala.inline
-    def deleteLabelPane: Self = this.set("labelPane", js.undefined)
+    def setMarkerMouseTarget(value: HTMLElement): Self = StObject.set(x, "markerMouseTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapPane(value: HTMLElement): Self = this.set("mapPane", value.asInstanceOf[js.Any])
+    def setMarkerMouseTargetUndefined: Self = StObject.set(x, "markerMouseTarget", js.undefined)
     
     @scala.inline
-    def deleteMapPane: Self = this.set("mapPane", js.undefined)
+    def setMarkerPane(value: HTMLElement): Self = StObject.set(x, "markerPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerMouseTarget(value: HTMLElement): Self = this.set("markerMouseTarget", value.asInstanceOf[js.Any])
+    def setMarkerPaneUndefined: Self = StObject.set(x, "markerPane", js.undefined)
     
     @scala.inline
-    def deleteMarkerMouseTarget: Self = this.set("markerMouseTarget", js.undefined)
+    def setMarkerShadow(value: HTMLElement): Self = StObject.set(x, "markerShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerPane(value: HTMLElement): Self = this.set("markerPane", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarkerPane: Self = this.set("markerPane", js.undefined)
-    
-    @scala.inline
-    def setMarkerShadow(value: HTMLElement): Self = this.set("markerShadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarkerShadow: Self = this.set("markerShadow", js.undefined)
+    def setMarkerShadowUndefined: Self = StObject.set(x, "markerShadow", js.undefined)
   }
 }

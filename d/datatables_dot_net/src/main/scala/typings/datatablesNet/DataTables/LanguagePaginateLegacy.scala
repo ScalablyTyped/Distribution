@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LanguagePaginateLegacy extends js.Object {
+trait LanguagePaginateLegacy extends StObject {
   
   var sFirst: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object LanguagePaginateLegacy {
   }
   
   @scala.inline
-  implicit class LanguagePaginateLegacyOps[Self <: LanguagePaginateLegacy] (val x: Self) extends AnyVal {
+  implicit class LanguagePaginateLegacyMutableBuilder[Self <: LanguagePaginateLegacy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSFirst(value: String): Self = StObject.set(x, "sFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSFirstUndefined: Self = StObject.set(x, "sFirst", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSLast(value: String): Self = StObject.set(x, "sLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSFirst(value: String): Self = this.set("sFirst", value.asInstanceOf[js.Any])
+    def setSLastUndefined: Self = StObject.set(x, "sLast", js.undefined)
     
     @scala.inline
-    def deleteSFirst: Self = this.set("sFirst", js.undefined)
+    def setSNext(value: String): Self = StObject.set(x, "sNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSLast(value: String): Self = this.set("sLast", value.asInstanceOf[js.Any])
+    def setSNextUndefined: Self = StObject.set(x, "sNext", js.undefined)
     
     @scala.inline
-    def deleteSLast: Self = this.set("sLast", js.undefined)
+    def setSPrevious(value: String): Self = StObject.set(x, "sPrevious", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSNext(value: String): Self = this.set("sNext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSNext: Self = this.set("sNext", js.undefined)
-    
-    @scala.inline
-    def setSPrevious(value: String): Self = this.set("sPrevious", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSPrevious: Self = this.set("sPrevious", js.undefined)
+    def setSPreviousUndefined: Self = StObject.set(x, "sPrevious", js.undefined)
   }
 }

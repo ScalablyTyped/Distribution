@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,102 +114,90 @@ object IgGridRowSelectors {
   }
   
   @scala.inline
-  implicit class IgGridRowSelectorsOps[Self <: IgGridRowSelectors] (val x: Self) extends AnyVal {
+  implicit class IgGridRowSelectorsMutableBuilder[Self <: IgGridRowSelectors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckBoxStateChanged(value: (/* event */ Event, /* ui */ CheckBoxStateChangedEventUIParam) => Unit): Self = StObject.set(x, "checkBoxStateChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckBoxStateChangedUndefined: Self = StObject.set(x, "checkBoxStateChanged", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckBoxStateChanging(value: (/* event */ Event, /* ui */ CheckBoxStateChangingEventUIParam) => Unit): Self = StObject.set(x, "checkBoxStateChanging", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCheckBoxStateChanged(value: (/* event */ Event, /* ui */ CheckBoxStateChangedEventUIParam) => Unit): Self = this.set("checkBoxStateChanged", js.Any.fromFunction2(value))
+    def setCheckBoxStateChangingUndefined: Self = StObject.set(x, "checkBoxStateChanging", js.undefined)
     
     @scala.inline
-    def deleteCheckBoxStateChanged: Self = this.set("checkBoxStateChanged", js.undefined)
+    def setDeselectAllForPagingTemplate(value: String): Self = StObject.set(x, "deselectAllForPagingTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckBoxStateChanging(value: (/* event */ Event, /* ui */ CheckBoxStateChangingEventUIParam) => Unit): Self = this.set("checkBoxStateChanging", js.Any.fromFunction2(value))
+    def setDeselectAllForPagingTemplateUndefined: Self = StObject.set(x, "deselectAllForPagingTemplate", js.undefined)
     
     @scala.inline
-    def deleteCheckBoxStateChanging: Self = this.set("checkBoxStateChanging", js.undefined)
+    def setEnableCheckBoxes(value: Boolean): Self = StObject.set(x, "enableCheckBoxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeselectAllForPagingTemplate(value: String): Self = this.set("deselectAllForPagingTemplate", value.asInstanceOf[js.Any])
+    def setEnableCheckBoxesUndefined: Self = StObject.set(x, "enableCheckBoxes", js.undefined)
     
     @scala.inline
-    def deleteDeselectAllForPagingTemplate: Self = this.set("deselectAllForPagingTemplate", js.undefined)
+    def setEnableRowNumbering(value: Boolean): Self = StObject.set(x, "enableRowNumbering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCheckBoxes(value: Boolean): Self = this.set("enableCheckBoxes", value.asInstanceOf[js.Any])
+    def setEnableRowNumberingUndefined: Self = StObject.set(x, "enableRowNumbering", js.undefined)
     
     @scala.inline
-    def deleteEnableCheckBoxes: Self = this.set("enableCheckBoxes", js.undefined)
+    def setEnableSelectAllForPaging(value: Boolean): Self = StObject.set(x, "enableSelectAllForPaging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRowNumbering(value: Boolean): Self = this.set("enableRowNumbering", value.asInstanceOf[js.Any])
+    def setEnableSelectAllForPagingUndefined: Self = StObject.set(x, "enableSelectAllForPaging", js.undefined)
     
     @scala.inline
-    def deleteEnableRowNumbering: Self = this.set("enableRowNumbering", js.undefined)
+    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSelectAllForPaging(value: Boolean): Self = this.set("enableSelectAllForPaging", value.asInstanceOf[js.Any])
+    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
     @scala.inline
-    def deleteEnableSelectAllForPaging: Self = this.set("enableSelectAllForPaging", js.undefined)
+    def setLocale(value: IgGridRowSelectorsLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInherit(value: Boolean): Self = this.set("inherit", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteInherit: Self = this.set("inherit", js.undefined)
+    def setRequireSelection(value: Boolean): Self = StObject.set(x, "requireSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: IgGridRowSelectorsLocale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setRequireSelectionUndefined: Self = StObject.set(x, "requireSelection", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setRowNumberingSeed(value: Double): Self = StObject.set(x, "rowNumberingSeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireSelection(value: Boolean): Self = this.set("requireSelection", value.asInstanceOf[js.Any])
+    def setRowNumberingSeedUndefined: Self = StObject.set(x, "rowNumberingSeed", js.undefined)
     
     @scala.inline
-    def deleteRequireSelection: Self = this.set("requireSelection", js.undefined)
+    def setRowSelectorClicked(value: (/* event */ Event, /* ui */ RowSelectorClickedEventUIParam) => Unit): Self = StObject.set(x, "rowSelectorClicked", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRowNumberingSeed(value: Double): Self = this.set("rowNumberingSeed", value.asInstanceOf[js.Any])
+    def setRowSelectorClickedUndefined: Self = StObject.set(x, "rowSelectorClicked", js.undefined)
     
     @scala.inline
-    def deleteRowNumberingSeed: Self = this.set("rowNumberingSeed", js.undefined)
+    def setRowSelectorColumnWidth(value: String | Double): Self = StObject.set(x, "rowSelectorColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowSelectorClicked(value: (/* event */ Event, /* ui */ RowSelectorClickedEventUIParam) => Unit): Self = this.set("rowSelectorClicked", js.Any.fromFunction2(value))
+    def setRowSelectorColumnWidthUndefined: Self = StObject.set(x, "rowSelectorColumnWidth", js.undefined)
     
     @scala.inline
-    def deleteRowSelectorClicked: Self = this.set("rowSelectorClicked", js.undefined)
+    def setSelectAllForPagingTemplate(value: String): Self = StObject.set(x, "selectAllForPagingTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowSelectorColumnWidth(value: String | Double): Self = this.set("rowSelectorColumnWidth", value.asInstanceOf[js.Any])
+    def setSelectAllForPagingTemplateUndefined: Self = StObject.set(x, "selectAllForPagingTemplate", js.undefined)
     
     @scala.inline
-    def deleteRowSelectorColumnWidth: Self = this.set("rowSelectorColumnWidth", js.undefined)
+    def setShowCheckBoxesOnFocus(value: Boolean): Self = StObject.set(x, "showCheckBoxesOnFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAllForPagingTemplate(value: String): Self = this.set("selectAllForPagingTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectAllForPagingTemplate: Self = this.set("selectAllForPagingTemplate", js.undefined)
-    
-    @scala.inline
-    def setShowCheckBoxesOnFocus(value: Boolean): Self = this.set("showCheckBoxesOnFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowCheckBoxesOnFocus: Self = this.set("showCheckBoxesOnFocus", js.undefined)
+    def setShowCheckBoxesOnFocusUndefined: Self = StObject.set(x, "showCheckBoxesOnFocus", js.undefined)
   }
 }

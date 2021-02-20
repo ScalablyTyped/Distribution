@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchFlexTemplateRequest extends js.Object {
+trait LaunchFlexTemplateRequest extends StObject {
   
   /** Required. Parameter to launch a job form Flex Template. */
   var launchParameter: js.UndefOr[LaunchFlexTemplateParameter] = js.native
@@ -22,30 +23,18 @@ object LaunchFlexTemplateRequest {
   }
   
   @scala.inline
-  implicit class LaunchFlexTemplateRequestOps[Self <: LaunchFlexTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class LaunchFlexTemplateRequestMutableBuilder[Self <: LaunchFlexTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLaunchParameter(value: LaunchFlexTemplateParameter): Self = StObject.set(x, "launchParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLaunchParameterUndefined: Self = StObject.set(x, "launchParameter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchParameter(value: LaunchFlexTemplateParameter): Self = this.set("launchParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchParameter: Self = this.set("launchParameter", js.undefined)
-    
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = this.set("validateOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateOnly: Self = this.set("validateOnly", js.undefined)
+    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

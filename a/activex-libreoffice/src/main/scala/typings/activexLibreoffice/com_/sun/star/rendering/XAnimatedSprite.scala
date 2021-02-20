@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,36 +113,24 @@ object XAnimatedSprite {
   }
   
   @scala.inline
-  implicit class XAnimatedSpriteOps[Self <: XAnimatedSprite] (val x: Self) extends AnyVal {
+  implicit class XAnimatedSpriteMutableBuilder[Self <: XAnimatedSprite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResetAnimation(value: () => Unit): Self = StObject.set(x, "resetAnimation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetAll(value: (RealPoint2D, ViewState, RenderState, Double, Boolean) => Unit): Self = StObject.set(x, "setAll", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetViewState(value: ViewState => Unit): Self = StObject.set(x, "setViewState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResetAnimation(value: () => Unit): Self = this.set("resetAnimation", js.Any.fromFunction0(value))
+    def setStartAnimation(value: Double => Unit): Self = StObject.set(x, "startAnimation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAll(value: (RealPoint2D, ViewState, RenderState, Double, Boolean) => Unit): Self = this.set("setAll", js.Any.fromFunction5(value))
+    def setStopAnimation(value: () => Unit): Self = StObject.set(x, "stopAnimation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetViewState(value: ViewState => Unit): Self = this.set("setViewState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartAnimation(value: Double => Unit): Self = this.set("startAnimation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStopAnimation(value: () => Unit): Self = this.set("stopAnimation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateAnimation(value: () => Unit): Self = this.set("updateAnimation", js.Any.fromFunction0(value))
+    def setUpdateAnimation(value: () => Unit): Self = StObject.set(x, "updateAnimation", js.Any.fromFunction0(value))
   }
 }

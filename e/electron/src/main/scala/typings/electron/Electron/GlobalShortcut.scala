@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalShortcut extends js.Object {
+trait GlobalShortcut extends StObject {
   
   // Docs: https://electronjs.org/docs/api/global-shortcut
   /**
@@ -81,33 +82,21 @@ object GlobalShortcut {
   }
   
   @scala.inline
-  implicit class GlobalShortcutOps[Self <: GlobalShortcut] (val x: Self) extends AnyVal {
+  implicit class GlobalShortcutMutableBuilder[Self <: GlobalShortcut] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsRegistered(value: Accelerator => Boolean): Self = StObject.set(x, "isRegistered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegister(value: (Accelerator, js.Function0[Unit]) => Boolean): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegisterAll(value: (js.Array[String], js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerAll", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsRegistered(value: Accelerator => Boolean): Self = this.set("isRegistered", js.Any.fromFunction1(value))
+    def setUnregister(value: Accelerator => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegister(value: (Accelerator, js.Function0[Unit]) => Boolean): Self = this.set("register", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRegisterAll(value: (js.Array[String], js.Function0[Unit]) => Unit): Self = this.set("registerAll", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnregister(value: Accelerator => Unit): Self = this.set("unregister", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnregisterAll(value: () => Unit): Self = this.set("unregisterAll", js.Any.fromFunction0(value))
+    def setUnregisterAll(value: () => Unit): Self = StObject.set(x, "unregisterAll", js.Any.fromFunction0(value))
   }
 }

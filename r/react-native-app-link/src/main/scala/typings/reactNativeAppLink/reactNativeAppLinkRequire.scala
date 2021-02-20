@@ -1,5 +1,6 @@
 package typings.reactNativeAppLink
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("react-native-app-link", JSImport.Namespace)
 @js.native
-object reactNativeAppLinkRequire extends js.Object
+object reactNativeAppLinkRequire extends StObject

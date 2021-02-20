@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendCommandToDeviceRequest extends js.Object {
+trait SendCommandToDeviceRequest extends StObject {
   
   /** Required. The command data to send to the device. */
   var binaryData: js.UndefOr[String] = js.native
@@ -26,30 +27,18 @@ object SendCommandToDeviceRequest {
   }
   
   @scala.inline
-  implicit class SendCommandToDeviceRequestOps[Self <: SendCommandToDeviceRequest] (val x: Self) extends AnyVal {
+  implicit class SendCommandToDeviceRequestMutableBuilder[Self <: SendCommandToDeviceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubfolder(value: String): Self = StObject.set(x, "subfolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryData(value: String): Self = this.set("binaryData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBinaryData: Self = this.set("binaryData", js.undefined)
-    
-    @scala.inline
-    def setSubfolder(value: String): Self = this.set("subfolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubfolder: Self = this.set("subfolder", js.undefined)
+    def setSubfolderUndefined: Self = StObject.set(x, "subfolder", js.undefined)
   }
 }

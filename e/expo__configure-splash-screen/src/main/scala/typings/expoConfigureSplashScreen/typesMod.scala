@@ -2,13 +2,12 @@ package typings.expoConfigureSplashScreen
 
 import org.scalablytyped.runtime.TopLevel
 import typings.std.NonNullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@expo/configure-splash-screen/build/validators/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
   type DeepRequired[T] = NonNullable[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: -? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @expo/configure-splash-screen.@expo/configure-splash-screen/build/validators/types.DeepRequired<T[K]> * / object}

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.cognito
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityPoolRoleAttachmentRoleMapping extends js.Object {
+trait IdentityPoolRoleAttachmentRoleMapping extends StObject {
   
   /**
     * Specifies the action to be taken if either no rules match the claim value for the Rules type, or there is no cognito:preferred_role claim and there are multiple cognito:roles matches for the Token type. `Required` if you specify Token or Rules as the Type.
@@ -37,39 +38,27 @@ object IdentityPoolRoleAttachmentRoleMapping {
   }
   
   @scala.inline
-  implicit class IdentityPoolRoleAttachmentRoleMappingOps[Self <: IdentityPoolRoleAttachmentRoleMapping] (val x: Self) extends AnyVal {
+  implicit class IdentityPoolRoleAttachmentRoleMappingMutableBuilder[Self <: IdentityPoolRoleAttachmentRoleMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmbiguousRoleResolution(value: String): Self = StObject.set(x, "ambiguousRoleResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "ambiguousRoleResolution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityProvider(value: String): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityProvider(value: String): Self = this.set("identityProvider", value.asInstanceOf[js.Any])
+    def setMappingRules(value: js.Array[IdentityPoolRoleAttachmentRoleMappingMappingRule]): Self = StObject.set(x, "mappingRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setMappingRulesUndefined: Self = StObject.set(x, "mappingRules", js.undefined)
     
     @scala.inline
-    def setAmbiguousRoleResolution(value: String): Self = this.set("ambiguousRoleResolution", value.asInstanceOf[js.Any])
+    def setMappingRulesVarargs(value: IdentityPoolRoleAttachmentRoleMappingMappingRule*): Self = StObject.set(x, "mappingRules", js.Array(value :_*))
     
     @scala.inline
-    def deleteAmbiguousRoleResolution: Self = this.set("ambiguousRoleResolution", js.undefined)
-    
-    @scala.inline
-    def setMappingRulesVarargs(value: IdentityPoolRoleAttachmentRoleMappingMappingRule*): Self = this.set("mappingRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setMappingRules(value: js.Array[IdentityPoolRoleAttachmentRoleMappingMappingRule]): Self = this.set("mappingRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMappingRules: Self = this.set("mappingRules", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

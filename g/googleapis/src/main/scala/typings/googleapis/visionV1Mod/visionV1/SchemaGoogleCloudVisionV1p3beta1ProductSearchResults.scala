@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Results for a product search request.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p3beta1ProductSearchResults extends js.Object {
+trait SchemaGoogleCloudVisionV1p3beta1ProductSearchResults extends StObject {
   
   /**
     * Timestamp of the index which provided these results. Changes made after
@@ -38,42 +39,30 @@ object SchemaGoogleCloudVisionV1p3beta1ProductSearchResults {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsOps[Self <: SchemaGoogleCloudVisionV1p3beta1ProductSearchResults] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1ProductSearchResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexTime(value: String): Self = StObject.set(x, "indexTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexTimeUndefined: Self = StObject.set(x, "indexTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductGroupedResults(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult]): Self = StObject.set(x, "productGroupedResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexTime(value: String): Self = this.set("indexTime", value.asInstanceOf[js.Any])
+    def setProductGroupedResultsUndefined: Self = StObject.set(x, "productGroupedResults", js.undefined)
     
     @scala.inline
-    def deleteIndexTime: Self = this.set("indexTime", js.undefined)
+    def setProductGroupedResultsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult*): Self = StObject.set(x, "productGroupedResults", js.Array(value :_*))
     
     @scala.inline
-    def setProductGroupedResultsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult*): Self = this.set("productGroupedResults", js.Array(value :_*))
+    def setResults(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductGroupedResults(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult]): Self = this.set("productGroupedResults", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteProductGroupedResults: Self = this.set("productGroupedResults", js.undefined)
-    
-    @scala.inline
-    def setResultsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setResultsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

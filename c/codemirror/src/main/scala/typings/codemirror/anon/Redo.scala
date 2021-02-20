@@ -1,11 +1,12 @@
 package typings.codemirror.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Redo extends js.Object {
+trait Redo extends StObject {
   
   var redo: Double = js.native
   
@@ -20,24 +21,12 @@ object Redo {
   }
   
   @scala.inline
-  implicit class RedoOps[Self <: Redo] (val x: Self) extends AnyVal {
+  implicit class RedoMutableBuilder[Self <: Redo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRedo(value: Double): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRedo(value: Double): Self = this.set("redo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndo(value: Double): Self = this.set("undo", value.asInstanceOf[js.Any])
+    def setUndo(value: Double): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
   }
 }

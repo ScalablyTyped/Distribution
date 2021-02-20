@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a Received event on a BluetoothLEAdvertisementWatcher . */
 @js.native
-trait BluetoothLEAdvertisementReceivedEventArgs extends js.Object {
+trait BluetoothLEAdvertisementReceivedEventArgs extends StObject {
   
   /** Gets the Bluetooth LE advertisement payload data received. */
   var advertisement: BluetoothLEAdvertisement = js.native
@@ -39,33 +40,21 @@ object BluetoothLEAdvertisementReceivedEventArgs {
   }
   
   @scala.inline
-  implicit class BluetoothLEAdvertisementReceivedEventArgsOps[Self <: BluetoothLEAdvertisementReceivedEventArgs] (val x: Self) extends AnyVal {
+  implicit class BluetoothLEAdvertisementReceivedEventArgsMutableBuilder[Self <: BluetoothLEAdvertisementReceivedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertisement(value: BluetoothLEAdvertisement): Self = StObject.set(x, "advertisement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertisementType(value: BluetoothLEAdvertisementType): Self = StObject.set(x, "advertisementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBluetoothAddress(value: Double): Self = StObject.set(x, "bluetoothAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertisement(value: BluetoothLEAdvertisement): Self = this.set("advertisement", value.asInstanceOf[js.Any])
+    def setRawSignalStrengthInDBm(value: Double): Self = StObject.set(x, "rawSignalStrengthInDBm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertisementType(value: BluetoothLEAdvertisementType): Self = this.set("advertisementType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBluetoothAddress(value: Double): Self = this.set("bluetoothAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawSignalStrengthInDBm(value: Double): Self = this.set("rawSignalStrengthInDBm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

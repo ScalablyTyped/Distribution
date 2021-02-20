@@ -11,6 +11,7 @@ import typings.minappEnv.minappEnvStrings.NFC
 import typings.minappEnv.minappEnvStrings.NFD
 import typings.minappEnv.minappEnvStrings.NFKC
 import typings.minappEnv.minappEnvStrings.NFKD
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

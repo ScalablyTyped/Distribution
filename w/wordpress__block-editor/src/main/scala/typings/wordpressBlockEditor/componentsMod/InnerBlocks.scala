@@ -4,27 +4,43 @@ import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
 import typings.wordpressBlockEditor.anon.Children
 import typings.wordpressBlockEditor.innerBlocksMod.InnerBlocks.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/block-editor/components", "InnerBlocks")
-@js.native
-object InnerBlocks extends js.Object {
+object InnerBlocks {
   
+  @JSImport("@wordpress/block-editor/components", "InnerBlocks")
+  @js.native
   def apply(props: Props): Element = js.native
+  @JSImport("@wordpress/block-editor/components", "InnerBlocks")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * display a `+` (plus) icon button that, when clicked, displays the block picker menu. No
     * default Block is inserted.
     */
-  var ButtonBlockerAppender: ComponentType[Children] = js.native
+  @JSImport("@wordpress/block-editor/components", "InnerBlocks.ButtonBlockerAppender")
+  @js.native
+  def ButtonBlockerAppender: ComponentType[Children] = js.native
+  @scala.inline
+  def ButtonBlockerAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ButtonBlockerAppender")(x.asInstanceOf[js.Any])
   
-  var Content: ComponentType[Children] = js.native
+  @JSImport("@wordpress/block-editor/components", "InnerBlocks.Content")
+  @js.native
+  def Content: ComponentType[Children] = js.native
+  @scala.inline
+  def Content_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   /**
     * display the default block appender as set by `wp.blocks.setDefaultBlockName`. Typically this
     * is the `paragraph` block.
     */
-  var DefaultBlockAppender: ComponentType[Children] = js.native
+  @JSImport("@wordpress/block-editor/components", "InnerBlocks.DefaultBlockAppender")
+  @js.native
+  def DefaultBlockAppender: ComponentType[Children] = js.native
+  @scala.inline
+  def DefaultBlockAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultBlockAppender")(x.asInstanceOf[js.Any])
 }

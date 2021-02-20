@@ -2,12 +2,13 @@ package typings.azdata.mod.nb
 
 import typings.vscode.Thenable
 import typings.vscode.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentManager extends js.Object {
+trait ContentManager extends StObject {
   
   /* Reads contents from a Uri representing a local or remote notebook and returns a
     * JSON object containing the cells and metadata about the notebook
@@ -38,24 +39,12 @@ object ContentManager {
   }
   
   @scala.inline
-  implicit class ContentManagerOps[Self <: ContentManager] (val x: Self) extends AnyVal {
+  implicit class ContentManagerMutableBuilder[Self <: ContentManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNotebookContents(value: Uri => Thenable[INotebookContents]): Self = StObject.set(x, "getNotebookContents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetNotebookContents(value: Uri => Thenable[INotebookContents]): Self = this.set("getNotebookContents", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSave(value: (Uri, INotebookContents) => Thenable[INotebookContents]): Self = this.set("save", js.Any.fromFunction2(value))
+    def setSave(value: (Uri, INotebookContents) => Thenable[INotebookContents]): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
   }
 }

@@ -2,6 +2,7 @@ package typings.pixiJs.mod
 
 import typings.pixiJs.PIXI.IFontMetrics
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,10 +34,11 @@ class TextMetrics protected ()
     fontProperties: js.Any
   ) = this()
 }
-/* static members */
-@JSImport("pixi.js", "TextMetrics")
-@js.native
-object TextMetrics extends js.Object {
+object TextMetrics {
+  
+  @JSImport("pixi.js", "TextMetrics")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Baseline multiplier for calculate font metrics.
@@ -47,7 +49,12 @@ object TextMetrics extends js.Object {
     * @type {number}
     * @default 1.4
     */
-  var BASELINE_MULTIPLIER: Double = js.native
+  /* static member */
+  @JSImport("pixi.js", "TextMetrics.BASELINE_MULTIPLIER")
+  @js.native
+  def BASELINE_MULTIPLIER: Double = js.native
+  @scala.inline
+  def BASELINE_MULTIPLIER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASELINE_MULTIPLIER")(x.asInstanceOf[js.Any])
   
   /**
     * Baseline symbol for calculate font metrics.
@@ -58,7 +65,12 @@ object TextMetrics extends js.Object {
     * @type {string}
     * @default M
     */
-  var BASELINE_SYMBOL: String = js.native
+  /* static member */
+  @JSImport("pixi.js", "TextMetrics.BASELINE_SYMBOL")
+  @js.native
+  def BASELINE_SYMBOL: String = js.native
+  @scala.inline
+  def BASELINE_SYMBOL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASELINE_SYMBOL")(x.asInstanceOf[js.Any])
   
   /**
     * String used for calculate font metrics.
@@ -70,7 +82,12 @@ object TextMetrics extends js.Object {
     * @type {string}
     * @default |ÉqÅ
     */
-  var METRICS_STRING: String = js.native
+  /* static member */
+  @JSImport("pixi.js", "TextMetrics.METRICS_STRING")
+  @js.native
+  def METRICS_STRING: String = js.native
+  @scala.inline
+  def METRICS_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METRICS_STRING")(x.asInstanceOf[js.Any])
   
   /**
     * Overridable helper method used internally by TextMetrics, exposed to allow customizing the class's behavior.
@@ -87,6 +104,9 @@ object TextMetrics extends js.Object {
     * @param  {boolean}  breakWords - The style attr break words
     * @return {boolean} whether to break word or not
     */
+  /* static member */
+  @JSImport("pixi.js", "TextMetrics.canBreakChars")
+  @js.native
   def canBreakChars(char: String, nextChar: String, token: String, index: Double, breakWords: Boolean): Boolean = js.native
   
   /**
@@ -100,6 +120,9 @@ object TextMetrics extends js.Object {
     * @param  {boolean}  breakWords - The style attr break words
     * @return {boolean} whether to break word or not
     */
+  /* static member */
+  @JSImport("pixi.js", "TextMetrics.canBreakWords")
+  @js.native
   def canBreakWords(token: String, breakWords: Boolean): Boolean = js.native
   
   /**
@@ -108,7 +131,12 @@ object TextMetrics extends js.Object {
     * @static
     * @param {string} [font] - font name. If font name not set then clear cache for all fonts.
     */
+  /* static member */
+  @JSImport("pixi.js", "TextMetrics.clearMetrics")
+  @js.native
   def clearMetrics(): Unit = js.native
+  @JSImport("pixi.js", "TextMetrics.clearMetrics")
+  @js.native
   def clearMetrics(font: String): Unit = js.native
   
   /**
@@ -118,6 +146,9 @@ object TextMetrics extends js.Object {
     * @param {string} font - String representing the style of the font
     * @return {PIXI.IFontMetrics} Font properties object
     */
+  /* static member */
+  @JSImport("pixi.js", "TextMetrics.measureFont")
+  @js.native
   def measureFont(font: String): IFontMetrics = js.native
   
   /**
@@ -129,14 +160,23 @@ object TextMetrics extends js.Object {
     * @param {HTMLCanvasElement} [canvas] - optional specification of the canvas to use for measuring.
     * @return {PIXI.TextMetrics} measured width and height of the text.
     */
+  /* static member */
+  @JSImport("pixi.js", "TextMetrics.measureText")
+  @js.native
   def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle): typings.pixiJs.PIXI.TextMetrics = js.native
+  @JSImport("pixi.js", "TextMetrics.measureText")
+  @js.native
   def measureText(
     text: String,
     style: typings.pixiJs.PIXI.TextStyle,
     wordWrap: js.UndefOr[scala.Nothing],
     canvas: HTMLCanvasElement
   ): typings.pixiJs.PIXI.TextMetrics = js.native
+  @JSImport("pixi.js", "TextMetrics.measureText")
+  @js.native
   def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean): typings.pixiJs.PIXI.TextMetrics = js.native
+  @JSImport("pixi.js", "TextMetrics.measureText")
+  @js.native
   def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean, canvas: HTMLCanvasElement): typings.pixiJs.PIXI.TextMetrics = js.native
   
   /**
@@ -153,5 +193,8 @@ object TextMetrics extends js.Object {
     * @param  {string}  token - The token to split
     * @return {string[]} The characters of the token
     */
+  /* static member */
+  @JSImport("pixi.js", "TextMetrics.wordWrapSplit")
+  @js.native
   def wordWrapSplit(token: String): js.Array[String] = js.native
 }

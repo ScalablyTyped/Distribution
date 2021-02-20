@@ -1,13 +1,12 @@
 package typings.tensorflowTfjsLayers
 
 import typings.tensorflowTfjsLayers.typesMod.PyJsonDict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-layers/dist/keras_format/node_config", JSImport.Namespace)
-@js.native
-object nodeConfigMod extends js.Object {
+object nodeConfigMod {
   
   type LayerName = String
   

@@ -3,12 +3,13 @@ package typings.knockoutTransformations
 import typings.knockoutTransformations.KnockoutTransformations.Mapping
 import typings.knockoutTransformations.KnockoutTransformations.MappingOption
 import typings.knockoutTransformations.KnockoutTransformations.MappingWithDisposeCallbackOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutObservableArrayFunctions[T] extends js.Object {
+trait KnockoutObservableArrayFunctions[T] extends StObject {
   
   def filter(predicate: js.Function1[/* value */ T, Boolean]): js.Any = js.native
   

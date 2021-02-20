@@ -1,11 +1,12 @@
 package typings.chromeApps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alwaysupdate extends js.Object {
+trait Alwaysupdate extends StObject {
   
   /**
     * If the key is specified and its value is true, it allows the app to
@@ -27,30 +28,18 @@ object Alwaysupdate {
   }
   
   @scala.inline
-  implicit class AlwaysupdateOps[Self <: Alwaysupdate] (val x: Self) extends AnyVal {
+  implicit class AlwaysupdateMutableBuilder[Self <: Alwaysupdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlways_update(value: Boolean): Self = StObject.set(x, "always_update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlways_updateUndefined: Self = StObject.set(x, "always_update", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequired_platform_version(value: String): Self = StObject.set(x, "required_platform_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlways_update(value: Boolean): Self = this.set("always_update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlways_update: Self = this.set("always_update", js.undefined)
-    
-    @scala.inline
-    def setRequired_platform_version(value: String): Self = this.set("required_platform_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired_platform_version: Self = this.set("required_platform_version", js.undefined)
+    def setRequired_platform_versionUndefined: Self = StObject.set(x, "required_platform_version", js.undefined)
   }
 }

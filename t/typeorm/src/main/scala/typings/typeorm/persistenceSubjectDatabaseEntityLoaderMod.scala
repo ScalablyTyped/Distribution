@@ -8,16 +8,16 @@ import typings.typeorm.typeormStrings.`soft-remove`
 import typings.typeorm.typeormStrings.recover
 import typings.typeorm.typeormStrings.remove
 import typings.typeorm.typeormStrings.save
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/persistence/SubjectDatabaseEntityLoader", JSImport.Namespace)
-@js.native
-object persistenceSubjectDatabaseEntityLoaderMod extends js.Object {
+object persistenceSubjectDatabaseEntityLoaderMod {
   
+  @JSImport("typeorm/persistence/SubjectDatabaseEntityLoader", "SubjectDatabaseEntityLoader")
   @js.native
-  class SubjectDatabaseEntityLoader protected () extends js.Object {
+  class SubjectDatabaseEntityLoader protected () extends StObject {
     def this(queryRunner: QueryRunner, subjects: js.Array[Subject]) = this()
     
     /* protected */ def findByPersistEntityLike(entityTarget: String, entity: ObjectLiteral): js.Array[Subject] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CapacityProviderStrategyItem extends js.Object {
+trait CapacityProviderStrategyItem extends StObject {
   
   /**
     * The base value designates how many tasks, at a minimum, to run on the specified capacity provider. Only one capacity provider in a capacity provider strategy can have a base defined.
@@ -31,33 +32,21 @@ object CapacityProviderStrategyItem {
   }
   
   @scala.inline
-  implicit class CapacityProviderStrategyItemOps[Self <: CapacityProviderStrategyItem] (val x: Self) extends AnyVal {
+  implicit class CapacityProviderStrategyItemMutableBuilder[Self <: CapacityProviderStrategyItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: CapacityProviderStrategyItemBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityProvider(value: String): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityProvider(value: String): Self = this.set("capacityProvider", value.asInstanceOf[js.Any])
+    def setWeight(value: CapacityProviderStrategyItemWeight): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: CapacityProviderStrategyItemBase): Self = this.set("base", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBase: Self = this.set("base", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: CapacityProviderStrategyItemWeight): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

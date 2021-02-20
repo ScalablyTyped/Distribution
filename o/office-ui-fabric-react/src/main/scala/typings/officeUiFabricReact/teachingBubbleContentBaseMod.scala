@@ -5,14 +5,14 @@ import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
 import typings.react.mod.Component
 import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubbleContent.base", JSImport.Namespace)
-@js.native
-object teachingBubbleContentBaseMod extends js.Object {
+object teachingBubbleContentBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubbleContent.base", "TeachingBubbleContentBase")
   @js.native
   class TeachingBubbleContentBase protected ()
     extends Component[ITeachingBubbleProps, ITeachingBubbleState, js.Any] {

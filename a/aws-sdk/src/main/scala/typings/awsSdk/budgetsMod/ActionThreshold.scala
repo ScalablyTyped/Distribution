@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionThreshold extends js.Object {
+trait ActionThreshold extends StObject {
   
   var ActionThresholdType: ThresholdType = js.native
   
@@ -20,24 +21,12 @@ object ActionThreshold {
   }
   
   @scala.inline
-  implicit class ActionThresholdOps[Self <: ActionThreshold] (val x: Self) extends AnyVal {
+  implicit class ActionThresholdMutableBuilder[Self <: ActionThreshold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionThresholdType(value: ThresholdType): Self = StObject.set(x, "ActionThresholdType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActionThresholdType(value: ThresholdType): Self = this.set("ActionThresholdType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActionThresholdValue(value: NotificationThreshold): Self = this.set("ActionThresholdValue", value.asInstanceOf[js.Any])
+    def setActionThresholdValue(value: NotificationThreshold): Self = StObject.set(x, "ActionThresholdValue", value.asInstanceOf[js.Any])
   }
 }

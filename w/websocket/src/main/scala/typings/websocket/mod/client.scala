@@ -9,6 +9,7 @@ import typings.std.Error
 import typings.websocket.websocketStrings.connect
 import typings.websocket.websocketStrings.connectFailed
 import typings.websocket.websocketStrings.httpResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

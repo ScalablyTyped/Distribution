@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectLevelStatistics extends js.Object {
+trait ObjectLevelStatistics extends StObject {
   
   /**
     * The total storage size (in bytes) or number of objects that Amazon Macie can't analyze because the objects don't have a file name extension for a supported file or storage format.
@@ -31,36 +32,24 @@ object ObjectLevelStatistics {
   }
   
   @scala.inline
-  implicit class ObjectLevelStatisticsOps[Self <: ObjectLevelStatistics] (val x: Self) extends AnyVal {
+  implicit class ObjectLevelStatisticsMutableBuilder[Self <: ObjectLevelStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileType(value: long): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorageClass(value: long): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileType(value: long): Self = this.set("fileType", value.asInstanceOf[js.Any])
+    def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
     
     @scala.inline
-    def deleteFileType: Self = this.set("fileType", js.undefined)
+    def setTotal(value: long): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageClass(value: long): Self = this.set("storageClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageClass: Self = this.set("storageClass", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: long): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.XRReferenceSpaceType
 import typings.babylonjs.XRSessionMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXREnterExitUIOptions extends js.Object {
+trait WebXREnterExitUIOptions extends StObject {
   
   /**
     * User provided buttons to enable/disable WebXR. The system will provide default if not set
@@ -55,72 +56,60 @@ object WebXREnterExitUIOptions {
   }
   
   @scala.inline
-  implicit class WebXREnterExitUIOptionsOps[Self <: WebXREnterExitUIOptions] (val x: Self) extends AnyVal {
+  implicit class WebXREnterExitUIOptionsMutableBuilder[Self <: WebXREnterExitUIOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomButtons(value: js.Array[WebXREnterExitUIButton]): Self = StObject.set(x, "customButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomButtonsUndefined: Self = StObject.set(x, "customButtons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomButtonsVarargs(value: WebXREnterExitUIButton*): Self = StObject.set(x, "customButtons", js.Array(value :_*))
     
     @scala.inline
-    def setCustomButtonsVarargs(value: WebXREnterExitUIButton*): Self = this.set("customButtons", js.Array(value :_*))
+    def setOnError(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCustomButtons(value: js.Array[WebXREnterExitUIButton]): Self = this.set("customButtons", value.asInstanceOf[js.Any])
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteCustomButtons: Self = this.set("customButtons", js.undefined)
+    def setOptionalFeatures(value: js.Array[String]): Self = StObject.set(x, "optionalFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnError(value: /* error */ js.Any => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOptionalFeaturesUndefined: Self = StObject.set(x, "optionalFeatures", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOptionalFeaturesVarargs(value: String*): Self = StObject.set(x, "optionalFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setOptionalFeaturesVarargs(value: String*): Self = this.set("optionalFeatures", js.Array(value :_*))
+    def setReferenceSpaceType(value: XRReferenceSpaceType): Self = StObject.set(x, "referenceSpaceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalFeatures(value: js.Array[String]): Self = this.set("optionalFeatures", value.asInstanceOf[js.Any])
+    def setReferenceSpaceTypeUndefined: Self = StObject.set(x, "referenceSpaceType", js.undefined)
     
     @scala.inline
-    def deleteOptionalFeatures: Self = this.set("optionalFeatures", js.undefined)
+    def setRenderTarget(value: Nullable[WebXRRenderTarget]): Self = StObject.set(x, "renderTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceSpaceType(value: XRReferenceSpaceType): Self = this.set("referenceSpaceType", value.asInstanceOf[js.Any])
+    def setRenderTargetNull: Self = StObject.set(x, "renderTarget", null)
     
     @scala.inline
-    def deleteReferenceSpaceType: Self = this.set("referenceSpaceType", js.undefined)
+    def setRenderTargetUndefined: Self = StObject.set(x, "renderTarget", js.undefined)
     
     @scala.inline
-    def setRenderTarget(value: Nullable[WebXRRenderTarget]): Self = this.set("renderTarget", value.asInstanceOf[js.Any])
+    def setRequiredFeatures(value: js.Array[String]): Self = StObject.set(x, "requiredFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderTarget: Self = this.set("renderTarget", js.undefined)
+    def setRequiredFeaturesUndefined: Self = StObject.set(x, "requiredFeatures", js.undefined)
     
     @scala.inline
-    def setRenderTargetNull: Self = this.set("renderTarget", null)
+    def setRequiredFeaturesVarargs(value: String*): Self = StObject.set(x, "requiredFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setRequiredFeaturesVarargs(value: String*): Self = this.set("requiredFeatures", js.Array(value :_*))
+    def setSessionMode(value: XRSessionMode): Self = StObject.set(x, "sessionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredFeatures(value: js.Array[String]): Self = this.set("requiredFeatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredFeatures: Self = this.set("requiredFeatures", js.undefined)
-    
-    @scala.inline
-    def setSessionMode(value: XRSessionMode): Self = this.set("sessionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionMode: Self = this.set("sessionMode", js.undefined)
+    def setSessionModeUndefined: Self = StObject.set(x, "sessionMode", js.undefined)
   }
 }

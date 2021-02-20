@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomerManagedEncryptionStatus extends js.Object {
+trait CustomerManagedEncryptionStatus extends StObject {
   
   /**
     * Required. The resource name of the Cloud KMS CryptoKeyVersion used to encrypt the secret payload, in the following format:
@@ -22,24 +23,12 @@ object CustomerManagedEncryptionStatus {
   }
   
   @scala.inline
-  implicit class CustomerManagedEncryptionStatusOps[Self <: CustomerManagedEncryptionStatus] (val x: Self) extends AnyVal {
+  implicit class CustomerManagedEncryptionStatusMutableBuilder[Self <: CustomerManagedEncryptionStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKmsKeyVersionName(value: String): Self = StObject.set(x, "kmsKeyVersionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKmsKeyVersionName(value: String): Self = this.set("kmsKeyVersionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyVersionName: Self = this.set("kmsKeyVersionName", js.undefined)
+    def setKmsKeyVersionNameUndefined: Self = StObject.set(x, "kmsKeyVersionName", js.undefined)
   }
 }

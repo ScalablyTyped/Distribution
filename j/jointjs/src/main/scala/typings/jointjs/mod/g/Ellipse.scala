@@ -1,12 +1,13 @@
 package typings.jointjs.mod.g
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "g.Ellipse")
 @js.native
-class Ellipse protected () extends js.Object {
+class Ellipse protected () extends StObject {
   def this(ellipse: Ellipse) = this()
   def this(center: String, a: Double, b: Double) = this()
   def this(center: PlainPoint, a: Double, b: Double) = this()
@@ -41,10 +42,10 @@ class Ellipse protected () extends js.Object {
   
   var y: Double = js.native
 }
-/* static members */
-@JSImport("jointjs", "g.Ellipse")
-@js.native
-object Ellipse extends js.Object {
+object Ellipse {
   
+  /* static member */
+  @JSImport("jointjs", "g.Ellipse.fromRect")
+  @js.native
   def fromRect(rect: PlainRect): Ellipse = js.native
 }

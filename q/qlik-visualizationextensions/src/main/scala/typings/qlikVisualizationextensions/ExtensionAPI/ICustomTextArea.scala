@@ -1,6 +1,7 @@
 package typings.qlikVisualizationextensions.ExtensionAPI
 
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.textarea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,36 +38,24 @@ object ICustomTextArea {
   }
   
   @scala.inline
-  implicit class ICustomTextAreaOps[Self <: ICustomTextArea] (val x: Self) extends AnyVal {
+  implicit class ICustomTextAreaMutableBuilder[Self <: ICustomTextArea] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: textarea): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setShow(value: valueOrfunc[Boolean]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxlength(value: Double): Self = this.set("maxlength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowFunction0(value: () => Boolean): Self = this.set("show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShow(value: valueOrfunc[Boolean]): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setShowFunction0(value: () => Boolean): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

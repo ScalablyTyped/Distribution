@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3DataSourceConfiguration extends js.Object {
+trait S3DataSourceConfiguration extends StObject {
   
   /**
     * Provides the path to the S3 bucket that contains the user context filtering files for the data source.
@@ -43,60 +44,48 @@ object S3DataSourceConfiguration {
   }
   
   @scala.inline
-  implicit class S3DataSourceConfigurationOps[Self <: S3DataSourceConfiguration] (val x: Self) extends AnyVal {
+  implicit class S3DataSourceConfigurationMutableBuilder[Self <: S3DataSourceConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlListConfiguration(value: AccessControlListConfiguration): Self = StObject.set(x, "AccessControlListConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlListConfigurationUndefined: Self = StObject.set(x, "AccessControlListConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketName(value: S3BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: S3BucketName): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    def setDocumentsMetadataConfiguration(value: DocumentsMetadataConfiguration): Self = StObject.set(x, "DocumentsMetadataConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlListConfiguration(value: AccessControlListConfiguration): Self = this.set("AccessControlListConfiguration", value.asInstanceOf[js.Any])
+    def setDocumentsMetadataConfigurationUndefined: Self = StObject.set(x, "DocumentsMetadataConfiguration", js.undefined)
     
     @scala.inline
-    def deleteAccessControlListConfiguration: Self = this.set("AccessControlListConfiguration", js.undefined)
+    def setExclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = StObject.set(x, "ExclusionPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentsMetadataConfiguration(value: DocumentsMetadataConfiguration): Self = this.set("DocumentsMetadataConfiguration", value.asInstanceOf[js.Any])
+    def setExclusionPatternsUndefined: Self = StObject.set(x, "ExclusionPatterns", js.undefined)
     
     @scala.inline
-    def deleteDocumentsMetadataConfiguration: Self = this.set("DocumentsMetadataConfiguration", js.undefined)
+    def setExclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = StObject.set(x, "ExclusionPatterns", js.Array(value :_*))
     
     @scala.inline
-    def setExclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("ExclusionPatterns", js.Array(value :_*))
+    def setInclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = StObject.set(x, "InclusionPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("ExclusionPatterns", value.asInstanceOf[js.Any])
+    def setInclusionPatternsUndefined: Self = StObject.set(x, "InclusionPatterns", js.undefined)
     
     @scala.inline
-    def deleteExclusionPatterns: Self = this.set("ExclusionPatterns", js.undefined)
+    def setInclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = StObject.set(x, "InclusionPatterns", js.Array(value :_*))
     
     @scala.inline
-    def setInclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("InclusionPatterns", js.Array(value :_*))
+    def setInclusionPrefixes(value: DataSourceInclusionsExclusionsStrings): Self = StObject.set(x, "InclusionPrefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("InclusionPatterns", value.asInstanceOf[js.Any])
+    def setInclusionPrefixesUndefined: Self = StObject.set(x, "InclusionPrefixes", js.undefined)
     
     @scala.inline
-    def deleteInclusionPatterns: Self = this.set("InclusionPatterns", js.undefined)
-    
-    @scala.inline
-    def setInclusionPrefixesVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("InclusionPrefixes", js.Array(value :_*))
-    
-    @scala.inline
-    def setInclusionPrefixes(value: DataSourceInclusionsExclusionsStrings): Self = this.set("InclusionPrefixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclusionPrefixes: Self = this.set("InclusionPrefixes", js.undefined)
+    def setInclusionPrefixesVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = StObject.set(x, "InclusionPrefixes", js.Array(value :_*))
   }
 }

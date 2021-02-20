@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "Dispute")
 @js.native
-class Dispute () extends js.Object {
+class Dispute () extends StObject {
   
   /**
     * The disputed amount. The amount can be less than the entire transaction amount.

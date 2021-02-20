@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientHealthcare.anon.Accesstoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancesResource extends js.Object {
+trait InstancesResource extends StObject {
   
   /**
     * DeleteInstance deletes an instance associated with the given study, series, and SOP Instance UID. Delete requests are equivalent to the GET requests specified in the Retrieve

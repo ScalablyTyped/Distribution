@@ -1,13 +1,14 @@
 package typings.semanticUiTransition.anon
 
 import typings.semanticUiTransition.semanticUiTransitionBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-transition.SemanticUI.TransitionSettings._Impl, 'displayType'> */
 @js.native
-trait PickImpldisplayType extends js.Object {
+trait PickImpldisplayType extends StObject {
   
   var displayType: `false` | String = js.native
 }
@@ -20,21 +21,9 @@ object PickImpldisplayType {
   }
   
   @scala.inline
-  implicit class PickImpldisplayTypeOps[Self <: PickImpldisplayType] (val x: Self) extends AnyVal {
+  implicit class PickImpldisplayTypeMutableBuilder[Self <: PickImpldisplayType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisplayType(value: `false` | String): Self = this.set("displayType", value.asInstanceOf[js.Any])
+    def setDisplayType(value: `false` | String): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
   }
 }

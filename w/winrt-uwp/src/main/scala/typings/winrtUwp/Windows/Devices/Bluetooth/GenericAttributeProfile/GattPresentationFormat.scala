@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of a single Presentation Format GATT Descriptor. */
 @js.native
-trait GattPresentationFormat extends js.Object {
+trait GattPresentationFormat extends StObject {
   
   /** Gets the Description of the GattPresentationFormat object. */
   var description: Double = js.native
@@ -32,33 +33,21 @@ object GattPresentationFormat {
   }
   
   @scala.inline
-  implicit class GattPresentationFormatOps[Self <: GattPresentationFormat] (val x: Self) extends AnyVal {
+  implicit class GattPresentationFormatMutableBuilder[Self <: GattPresentationFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Double): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExponent(value: Double): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatType(value: Double): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Double): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNamespace(value: Double): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExponent(value: Double): Self = this.set("exponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormatType(value: Double): Self = this.set("formatType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamespace(value: Double): Self = this.set("namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnit(value: Double): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

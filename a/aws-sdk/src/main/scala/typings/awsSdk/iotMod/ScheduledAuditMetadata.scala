@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduledAuditMetadata extends js.Object {
+trait ScheduledAuditMetadata extends StObject {
   
   /**
     * The day of the month on which the scheduled audit is run (if the frequency is "MONTHLY"). If days 29-31 are specified, and the month does not have that many days, the audit takes place on the "LAST" day of the month.
@@ -41,48 +42,36 @@ object ScheduledAuditMetadata {
   }
   
   @scala.inline
-  implicit class ScheduledAuditMetadataOps[Self <: ScheduledAuditMetadata] (val x: Self) extends AnyVal {
+  implicit class ScheduledAuditMetadataMutableBuilder[Self <: ScheduledAuditMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDayOfMonth(value: DayOfMonth): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayOfMonthUndefined: Self = StObject.set(x, "dayOfMonth", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayOfMonth(value: DayOfMonth): Self = this.set("dayOfMonth", value.asInstanceOf[js.Any])
+    def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
     
     @scala.inline
-    def deleteDayOfMonth: Self = this.set("dayOfMonth", js.undefined)
+    def setFrequency(value: AuditFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayOfWeek(value: DayOfWeek): Self = this.set("dayOfWeek", value.asInstanceOf[js.Any])
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
     @scala.inline
-    def deleteDayOfWeek: Self = this.set("dayOfWeek", js.undefined)
+    def setScheduledAuditArn(value: ScheduledAuditArn): Self = StObject.set(x, "scheduledAuditArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequency(value: AuditFrequency): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    def setScheduledAuditArnUndefined: Self = StObject.set(x, "scheduledAuditArn", js.undefined)
     
     @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    def setScheduledAuditName(value: ScheduledAuditName): Self = StObject.set(x, "scheduledAuditName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledAuditArn(value: ScheduledAuditArn): Self = this.set("scheduledAuditArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledAuditArn: Self = this.set("scheduledAuditArn", js.undefined)
-    
-    @scala.inline
-    def setScheduledAuditName(value: ScheduledAuditName): Self = this.set("scheduledAuditName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledAuditName: Self = this.set("scheduledAuditName", js.undefined)
+    def setScheduledAuditNameUndefined: Self = StObject.set(x, "scheduledAuditName", js.undefined)
   }
 }

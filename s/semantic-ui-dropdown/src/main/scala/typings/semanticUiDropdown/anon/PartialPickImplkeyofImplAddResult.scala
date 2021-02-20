@@ -1,12 +1,13 @@
 package typings.semanticUiDropdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.MessageSettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.MessageSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplAddResult extends js.Object {
+trait PartialPickImplkeyofImplAddResult extends StObject {
   
   var addResult: js.UndefOr[String] = js.native
   
@@ -25,42 +26,30 @@ object PartialPickImplkeyofImplAddResult {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplAddResultOps[Self <: PartialPickImplkeyofImplAddResult] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplAddResultMutableBuilder[Self <: PartialPickImplkeyofImplAddResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddResult(value: String): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddResultUndefined: Self = StObject.set(x, "addResult", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddResult(value: String): Self = this.set("addResult", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteAddResult: Self = this.set("addResult", js.undefined)
+    def setMaxSelections(value: String): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setMaxSelectionsUndefined: Self = StObject.set(x, "maxSelections", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setNoResults(value: String): Self = StObject.set(x, "noResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSelections(value: String): Self = this.set("maxSelections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxSelections: Self = this.set("maxSelections", js.undefined)
-    
-    @scala.inline
-    def setNoResults(value: String): Self = this.set("noResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoResults: Self = this.set("noResults", js.undefined)
+    def setNoResultsUndefined: Self = StObject.set(x, "noResults", js.undefined)
   }
 }

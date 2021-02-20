@@ -1,11 +1,12 @@
 package typings.highlightJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Emitter extends js.Object {
+trait Emitter extends StObject {
   
   def addKeyword(text: String, kind: String): Unit = js.native
   
@@ -38,39 +39,27 @@ object Emitter {
   }
   
   @scala.inline
-  implicit class EmitterOps[Self <: Emitter] (val x: Self) extends AnyVal {
+  implicit class EmitterMutableBuilder[Self <: Emitter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddKeyword(value: (String, String) => Unit): Self = StObject.set(x, "addKeyword", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSublanguage(value: (Emitter, String) => Unit): Self = StObject.set(x, "addSublanguage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddText(value: String => Unit): Self = StObject.set(x, "addText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddKeyword(value: (String, String) => Unit): Self = this.set("addKeyword", js.Any.fromFunction2(value))
+    def setCloseAllNodes(value: () => Unit): Self = StObject.set(x, "closeAllNodes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddSublanguage(value: (Emitter, String) => Unit): Self = this.set("addSublanguage", js.Any.fromFunction2(value))
+    def setCloseNode(value: () => Unit): Self = StObject.set(x, "closeNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddText(value: String => Unit): Self = this.set("addText", js.Any.fromFunction1(value))
+    def setOpenNode(value: String => Unit): Self = StObject.set(x, "openNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloseAllNodes(value: () => Unit): Self = this.set("closeAllNodes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCloseNode(value: () => Unit): Self = this.set("closeNode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpenNode(value: String => Unit): Self = this.set("openNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToHTML(value: () => String): Self = this.set("toHTML", js.Any.fromFunction0(value))
+    def setToHTML(value: () => String): Self = StObject.set(x, "toHTML", js.Any.fromFunction0(value))
   }
 }

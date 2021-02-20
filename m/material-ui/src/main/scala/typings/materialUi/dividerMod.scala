@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.DividerProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Divider", JSImport.Namespace)
-@js.native
-object dividerMod extends js.Object {
+object dividerMod {
   
+  @JSImport("material-ui/Divider", JSImport.Default)
+  @js.native
+  class default () extends Divider
+  
+  @JSImport("material-ui/Divider", "Divider")
   @js.native
   class Divider ()
-    extends Component[DividerProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[DividerProps, js.Object, js.Any]
 }

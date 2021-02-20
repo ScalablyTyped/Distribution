@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Location of a single cell within a table.
   */
 @js.native
-trait SchemaTableCellLocation extends js.Object {
+trait SchemaTableCellLocation extends StObject {
   
   /**
     * The zero-based column index. For example, the second column in the table
@@ -36,36 +37,24 @@ object SchemaTableCellLocation {
   }
   
   @scala.inline
-  implicit class SchemaTableCellLocationOps[Self <: SchemaTableCellLocation] (val x: Self) extends AnyVal {
+  implicit class SchemaTableCellLocationMutableBuilder[Self <: SchemaTableCellLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setTableStartLocation(value: SchemaLocation): Self = StObject.set(x, "tableStartLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
-    
-    @scala.inline
-    def setTableStartLocation(value: SchemaLocation): Self = this.set("tableStartLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableStartLocation: Self = this.set("tableStartLocation", js.undefined)
+    def setTableStartLocationUndefined: Self = StObject.set(x, "tableStartLocation", js.undefined)
   }
 }

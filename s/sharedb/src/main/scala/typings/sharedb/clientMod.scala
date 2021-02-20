@@ -4,25 +4,23 @@ import typings.sharedb.anon.`0`
 import typings.sharedb.sharedbMod.Types
 import typings.std.WebSocket
 import typings.ws.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sharedb/lib/client", JSImport.Namespace)
-@js.native
-object clientMod extends js.Object {
+object clientMod {
   
-  val types: Types = js.native
-  
+  @JSImport("sharedb/lib/client", "Connection")
   @js.native
-  class Connection protected () extends js.Object {
+  class Connection protected () extends StObject {
     def this(ws: WebSocket) = this()
     def this(ws: ^) = this()
     
     // This direct reference from connection to agent is not used internal to
     // ShareDB, but it is handy for server-side only user code that may cache
     // state on the agent and read it in middleware
-    var agent: typings.sharedb.agentMod.^  | Null = js.native
+    var agent: typings.sharedb.agentMod.^ | Null = js.native
     
     def createFetchQuery(
       collectionName: String,
@@ -40,6 +38,10 @@ object clientMod extends js.Object {
     
     def get(collectionName: String, documentID: String): Doc = js.native
   }
+  
+  @JSImport("sharedb/lib/client", "types")
+  @js.native
+  val types: Types = js.native
   
   type AddNumOp = typings.sharedb.sharedbMod.AddNumOp
   

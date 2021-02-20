@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,30 +49,18 @@ object IfStatement {
   }
   
   @scala.inline
-  implicit class IfStatementOps[Self <: IfStatement] (val x: Self) extends AnyVal {
+  implicit class IfStatementMutableBuilder[Self <: IfStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElseClause(value: ElseClause): Self = StObject.set(x, "elseClause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: AST): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setElseClause(value: ElseClause): Self = this.set("elseClause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatement(value: AST): Self = this.set("statement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructuralEquals(value: (IfStatement, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
+    def setStructuralEquals(value: (IfStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

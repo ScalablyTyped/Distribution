@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bookmark extends js.Object {
+trait Bookmark extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -61,60 +62,48 @@ object Bookmark {
   }
   
   @scala.inline
-  implicit class BookmarkOps[Self <: Bookmark] (val x: Self) extends AnyVal {
+  implicit class BookmarkMutableBuilder[Self <: Bookmark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumn(value: Boolean): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopy(value: String => Bookmark): Self = StObject.set(x, "Copy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Boolean): Self = this.set("Column", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopy(value: String => Bookmark): Self = this.set("Copy", js.Any.fromFunction1(value))
+    def setEmpty(value: Boolean): Self = StObject.set(x, "Empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setEnd(value: Double): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmpty(value: Boolean): Self = this.set("Empty", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("End", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setStoryType(value: WdStoryType): Self = StObject.set(x, "StoryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: () => Unit): Self = this.set("Select", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("Start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStoryType(value: WdStoryType): Self = this.set("StoryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotBookmark_typekey(value: Bookmark): Self = this.set("Word.Bookmark_typekey", value.asInstanceOf[js.Any])
+    def setWordDotBookmark_typekey(value: Bookmark): Self = StObject.set(x, "Word.Bookmark_typekey", value.asInstanceOf[js.Any])
   }
 }

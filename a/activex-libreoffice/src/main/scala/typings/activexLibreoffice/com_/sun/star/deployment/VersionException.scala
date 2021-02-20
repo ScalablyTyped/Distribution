@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.deployment
 
 import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,27 +44,15 @@ object VersionException {
   }
   
   @scala.inline
-  implicit class VersionExceptionOps[Self <: VersionException] (val x: Self) extends AnyVal {
+  implicit class VersionExceptionMutableBuilder[Self <: VersionException] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeployed(value: XPackage): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewDisplayName(value: String): Self = StObject.set(x, "NewDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeployed(value: XPackage): Self = this.set("Deployed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewDisplayName(value: String): Self = this.set("NewDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewVersion(value: String): Self = this.set("NewVersion", value.asInstanceOf[js.Any])
+    def setNewVersion(value: String): Self = StObject.set(x, "NewVersion", value.asInstanceOf[js.Any])
   }
 }

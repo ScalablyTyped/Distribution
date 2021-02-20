@@ -1,12 +1,13 @@
 package typings.awsSdkClientLambdaNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/model/UpdateEventSourceMappingOutput", JSImport.Namespace)
-@js.native
-object updateEventSourceMappingOutputMod extends js.Object {
+object updateEventSourceMappingOutputMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/model/UpdateEventSourceMappingOutput", "UpdateEventSourceMappingOutput")
+  @js.native
   val UpdateEventSourceMappingOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

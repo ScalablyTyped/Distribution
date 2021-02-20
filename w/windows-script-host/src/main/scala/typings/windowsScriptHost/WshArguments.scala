@@ -1,12 +1,13 @@
 package typings.windowsScriptHost
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the entire collection of command-line parameters, in the order in which they were originally entered. */
 @js.native
-trait WshArguments extends js.Object {
+trait WshArguments extends StObject {
   
   def apply(index: Double): String = js.native
   

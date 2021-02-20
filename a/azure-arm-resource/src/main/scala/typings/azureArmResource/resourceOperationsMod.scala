@@ -29,16 +29,15 @@ import typings.azureArmResource.resourceModelsMod.TagValue
 import typings.azureArmResource.resourceModelsMod.TagsListResult
 import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource/lib/resource/operations", JSImport.Namespace)
-@js.native
-object resourceOperationsMod extends js.Object {
+object resourceOperationsMod {
   
   @js.native
-  trait DeploymentOperations extends js.Object {
+  trait DeploymentOperations extends StObject {
     
     /**
       * Gets a deployments operation.
@@ -455,7 +454,7 @@ object resourceOperationsMod extends js.Object {
   }
   
   @js.native
-  trait Deployments extends js.Object {
+  trait Deployments extends StObject {
     
     /**
       * @summary Deploys resources to a resource group.
@@ -2857,7 +2856,7 @@ object resourceOperationsMod extends js.Object {
   }
   
   @js.native
-  trait Operations extends js.Object {
+  trait Operations extends StObject {
     
     /**
       * Lists all of the available Microsoft.Resources REST API operations.
@@ -2971,7 +2970,7 @@ object resourceOperationsMod extends js.Object {
   }
   
   @js.native
-  trait Providers extends js.Object {
+  trait Providers extends StObject {
     
     /**
       * Gets the specified resource provider.
@@ -3281,7 +3280,7 @@ object resourceOperationsMod extends js.Object {
   }
   
   @js.native
-  trait ResourceGroups extends js.Object {
+  trait ResourceGroups extends StObject {
     
     /**
       * @summary Deletes a resource group.
@@ -3936,7 +3935,7 @@ object resourceOperationsMod extends js.Object {
   }
   
   @js.native
-  trait Resources extends js.Object {
+  trait Resources extends StObject {
     
     /**
       * Creates a resource.
@@ -7015,7 +7014,7 @@ object resourceOperationsMod extends js.Object {
   }
   
   @js.native
-  trait Tags extends js.Object {
+  trait Tags extends StObject {
     
     /**
       * @summary Creates a tag in the subscription.

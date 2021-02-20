@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,114 +100,102 @@ object Attachment {
   }
   
   @scala.inline
-  implicit class AttachmentOps[Self <: Attachment] (val x: Self) extends AnyVal {
+  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: code): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreation(value: dateTime): Self = StObject.set(x, "creation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_contentType(value: Element): Self = this.set("_contentType", value.asInstanceOf[js.Any])
+    def setCreationUndefined: Self = StObject.set(x, "creation", js.undefined)
     
     @scala.inline
-    def delete_contentType: Self = this.set("_contentType", js.undefined)
+    def setData(value: base64Binary): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_creation(value: Element): Self = this.set("_creation", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def delete_creation: Self = this.set("_creation", js.undefined)
+    def setHash(value: base64Binary): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_data(value: Element): Self = this.set("_data", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def delete_data: Self = this.set("_data", js.undefined)
+    def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_hash(value: Element): Self = this.set("_hash", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def delete_hash: Self = this.set("_hash", js.undefined)
+    def setSize(value: unsignedInt): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_language(value: Element): Self = this.set("_language", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def delete_language: Self = this.set("_language", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_size(value: Element): Self = this.set("_size", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def delete_size: Self = this.set("_size", js.undefined)
+    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def delete_title: Self = this.set("_title", js.undefined)
+    def set_contentType(value: Element): Self = StObject.set(x, "_contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    def set_contentTypeUndefined: Self = StObject.set(x, "_contentType", js.undefined)
     
     @scala.inline
-    def delete_url: Self = this.set("_url", js.undefined)
+    def set_creation(value: Element): Self = StObject.set(x, "_creation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: code): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def set_creationUndefined: Self = StObject.set(x, "_creation", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def set_data(value: Element): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreation(value: dateTime): Self = this.set("creation", value.asInstanceOf[js.Any])
+    def set_dataUndefined: Self = StObject.set(x, "_data", js.undefined)
     
     @scala.inline
-    def deleteCreation: Self = this.set("creation", js.undefined)
+    def set_hash(value: Element): Self = StObject.set(x, "_hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: base64Binary): Self = this.set("data", value.asInstanceOf[js.Any])
+    def set_hashUndefined: Self = StObject.set(x, "_hash", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: base64Binary): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def set_size(value: Element): Self = StObject.set(x, "_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: code): Self = this.set("language", value.asInstanceOf[js.Any])
+    def set_sizeUndefined: Self = StObject.set(x, "_size", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: unsignedInt): Self = this.set("size", value.asInstanceOf[js.Any])
+    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
   }
 }

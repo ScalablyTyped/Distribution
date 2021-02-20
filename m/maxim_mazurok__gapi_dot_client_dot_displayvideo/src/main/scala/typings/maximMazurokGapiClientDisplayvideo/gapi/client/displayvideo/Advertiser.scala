@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Advertiser extends js.Object {
+trait Advertiser extends StObject {
   
   /** Required. Immutable. Ad server related settings of the advertiser. */
   var adServerConfig: js.UndefOr[AdvertiserAdServerConfig] = js.native
@@ -58,90 +59,78 @@ object Advertiser {
   }
   
   @scala.inline
-  implicit class AdvertiserOps[Self <: Advertiser] (val x: Self) extends AnyVal {
+  implicit class AdvertiserMutableBuilder[Self <: Advertiser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdServerConfig(value: AdvertiserAdServerConfig): Self = StObject.set(x, "adServerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdServerConfigUndefined: Self = StObject.set(x, "adServerConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdServerConfig(value: AdvertiserAdServerConfig): Self = this.set("adServerConfig", value.asInstanceOf[js.Any])
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def deleteAdServerConfig: Self = this.set("adServerConfig", js.undefined)
+    def setCreativeConfig(value: AdvertiserCreativeConfig): Self = StObject.set(x, "creativeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setCreativeConfigUndefined: Self = StObject.set(x, "creativeConfig", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setDataAccessConfig(value: AdvertiserDataAccessConfig): Self = StObject.set(x, "dataAccessConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeConfig(value: AdvertiserCreativeConfig): Self = this.set("creativeConfig", value.asInstanceOf[js.Any])
+    def setDataAccessConfigUndefined: Self = StObject.set(x, "dataAccessConfig", js.undefined)
     
     @scala.inline
-    def deleteCreativeConfig: Self = this.set("creativeConfig", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataAccessConfig(value: AdvertiserDataAccessConfig): Self = this.set("dataAccessConfig", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDataAccessConfig: Self = this.set("dataAccessConfig", js.undefined)
+    def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setGeneralConfig(value: AdvertiserGeneralConfig): Self = StObject.set(x, "generalConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityStatus(value: String): Self = this.set("entityStatus", value.asInstanceOf[js.Any])
+    def setGeneralConfigUndefined: Self = StObject.set(x, "generalConfig", js.undefined)
     
     @scala.inline
-    def deleteEntityStatus: Self = this.set("entityStatus", js.undefined)
+    def setIntegrationDetails(value: IntegrationDetails): Self = StObject.set(x, "integrationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneralConfig(value: AdvertiserGeneralConfig): Self = this.set("generalConfig", value.asInstanceOf[js.Any])
+    def setIntegrationDetailsUndefined: Self = StObject.set(x, "integrationDetails", js.undefined)
     
     @scala.inline
-    def deleteGeneralConfig: Self = this.set("generalConfig", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationDetails(value: IntegrationDetails): Self = this.set("integrationDetails", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIntegrationDetails: Self = this.set("integrationDetails", js.undefined)
+    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setServingConfig(value: AdvertiserTargetingConfig): Self = StObject.set(x, "servingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerId(value: String): Self = this.set("partnerId", value.asInstanceOf[js.Any])
+    def setServingConfigUndefined: Self = StObject.set(x, "servingConfig", js.undefined)
     
     @scala.inline
-    def deletePartnerId: Self = this.set("partnerId", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServingConfig(value: AdvertiserTargetingConfig): Self = this.set("servingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServingConfig: Self = this.set("servingConfig", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactNativeCommunityCliTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Postlink extends js.Object {
+trait Postlink extends StObject {
   
   var postlink: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object Postlink {
   }
   
   @scala.inline
-  implicit class PostlinkOps[Self <: Postlink] (val x: Self) extends AnyVal {
+  implicit class PostlinkMutableBuilder[Self <: Postlink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostlink(value: String): Self = StObject.set(x, "postlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostlinkUndefined: Self = StObject.set(x, "postlink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostunlink(value: String): Self = StObject.set(x, "postunlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlink(value: String): Self = this.set("postlink", value.asInstanceOf[js.Any])
+    def setPostunlinkUndefined: Self = StObject.set(x, "postunlink", js.undefined)
     
     @scala.inline
-    def deletePostlink: Self = this.set("postlink", js.undefined)
+    def setPrelink(value: String): Self = StObject.set(x, "prelink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostunlink(value: String): Self = this.set("postunlink", value.asInstanceOf[js.Any])
+    def setPrelinkUndefined: Self = StObject.set(x, "prelink", js.undefined)
     
     @scala.inline
-    def deletePostunlink: Self = this.set("postunlink", js.undefined)
+    def setPreunlink(value: String): Self = StObject.set(x, "preunlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrelink(value: String): Self = this.set("prelink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrelink: Self = this.set("prelink", js.undefined)
-    
-    @scala.inline
-    def setPreunlink(value: String): Self = this.set("preunlink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreunlink: Self = this.set("preunlink", js.undefined)
+    def setPreunlinkUndefined: Self = StObject.set(x, "preunlink", js.undefined)
   }
 }

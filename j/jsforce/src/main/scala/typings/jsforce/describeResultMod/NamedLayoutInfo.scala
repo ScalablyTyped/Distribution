@@ -1,12 +1,13 @@
 package typings.jsforce.describeResultMod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NamedLayoutInfo extends js.Object {
+trait NamedLayoutInfo extends StObject {
   
   var name: String = js.native
   
@@ -21,24 +22,12 @@ object NamedLayoutInfo {
   }
   
   @scala.inline
-  implicit class NamedLayoutInfoOps[Self <: NamedLayoutInfo] (val x: Self) extends AnyVal {
+  implicit class NamedLayoutInfoMutableBuilder[Self <: NamedLayoutInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrls(value: Record[String, String]): Self = this.set("urls", value.asInstanceOf[js.Any])
+    def setUrls(value: Record[String, String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.fineUploader.coreMod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PasteOptions extends js.Object {
+trait PasteOptions extends StObject {
   
   /**
     * The default name given to pasted images
@@ -31,30 +32,18 @@ object PasteOptions {
   }
   
   @scala.inline
-  implicit class PasteOptionsOps[Self <: PasteOptions] (val x: Self) extends AnyVal {
+  implicit class PasteOptionsMutableBuilder[Self <: PasteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultNameUndefined: Self = StObject.set(x, "defaultName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetElement(value: HTMLElement): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultName(value: String): Self = this.set("defaultName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultName: Self = this.set("defaultName", js.undefined)
-    
-    @scala.inline
-    def setTargetElement(value: HTMLElement): Self = this.set("targetElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetElement: Self = this.set("targetElement", js.undefined)
+    def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
   }
 }

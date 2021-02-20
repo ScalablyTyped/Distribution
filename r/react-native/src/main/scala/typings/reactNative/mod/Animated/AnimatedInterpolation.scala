@@ -1,5 +1,6 @@
 package typings.reactNative.mod.Animated
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native", "Animated.AnimatedInterpolation")
 @js.native
 class AnimatedInterpolation ()
-  extends typings.reactNative.mod.Animated.Animated
+  extends AnimatedWithChildren
      with _WithAnimatedValue[js.Any] {
   
   def interpolate(config: InterpolationConfigType): AnimatedInterpolation = js.native

@@ -1,11 +1,12 @@
 package typings.googleAuthLibrary.oauth2clientMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateAuthUrlOpts extends js.Object {
+trait GenerateAuthUrlOpts extends StObject {
   
   /**
     * Recommended. Indicates whether your application can refresh access tokens
@@ -146,93 +147,81 @@ object GenerateAuthUrlOpts {
   }
   
   @scala.inline
-  implicit class GenerateAuthUrlOptsOps[Self <: GenerateAuthUrlOpts] (val x: Self) extends AnyVal {
+  implicit class GenerateAuthUrlOptsMutableBuilder[Self <: GenerateAuthUrlOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_type(value: String): Self = StObject.set(x, "access_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccess_typeUndefined: Self = StObject.set(x, "access_type", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess_type(value: String): Self = this.set("access_type", value.asInstanceOf[js.Any])
+    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
     @scala.inline
-    def deleteAccess_type: Self = this.set("access_type", js.undefined)
+    def setCode_challenge(value: String): Self = StObject.set(x, "code_challenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    def setCode_challengeUndefined: Self = StObject.set(x, "code_challenge", js.undefined)
     
     @scala.inline
-    def deleteClient_id: Self = this.set("client_id", js.undefined)
+    def setCode_challenge_method(value: CodeChallengeMethod): Self = StObject.set(x, "code_challenge_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode_challenge(value: String): Self = this.set("code_challenge", value.asInstanceOf[js.Any])
+    def setCode_challenge_methodUndefined: Self = StObject.set(x, "code_challenge_method", js.undefined)
     
     @scala.inline
-    def deleteCode_challenge: Self = this.set("code_challenge", js.undefined)
+    def setHd(value: String): Self = StObject.set(x, "hd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode_challenge_method(value: CodeChallengeMethod): Self = this.set("code_challenge_method", value.asInstanceOf[js.Any])
+    def setHdUndefined: Self = StObject.set(x, "hd", js.undefined)
     
     @scala.inline
-    def deleteCode_challenge_method: Self = this.set("code_challenge_method", js.undefined)
+    def setInclude_granted_scopes(value: Boolean): Self = StObject.set(x, "include_granted_scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHd(value: String): Self = this.set("hd", value.asInstanceOf[js.Any])
+    def setInclude_granted_scopesUndefined: Self = StObject.set(x, "include_granted_scopes", js.undefined)
     
     @scala.inline
-    def deleteHd: Self = this.set("hd", js.undefined)
+    def setLogin_hint(value: String): Self = StObject.set(x, "login_hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_granted_scopes(value: Boolean): Self = this.set("include_granted_scopes", value.asInstanceOf[js.Any])
+    def setLogin_hintUndefined: Self = StObject.set(x, "login_hint", js.undefined)
     
     @scala.inline
-    def deleteInclude_granted_scopes: Self = this.set("include_granted_scopes", js.undefined)
+    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogin_hint(value: String): Self = this.set("login_hint", value.asInstanceOf[js.Any])
+    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
     @scala.inline
-    def deleteLogin_hint: Self = this.set("login_hint", js.undefined)
+    def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
+    def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
     
     @scala.inline
-    def deletePrompt: Self = this.set("prompt", js.undefined)
+    def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirect_uri(value: String): Self = this.set("redirect_uri", value.asInstanceOf[js.Any])
+    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
     @scala.inline
-    def deleteRedirect_uri: Self = this.set("redirect_uri", js.undefined)
+    def setScope(value: js.Array[String] | String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse_type(value: String): Self = this.set("response_type", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteResponse_type: Self = this.set("response_type", js.undefined)
+    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
     @scala.inline
-    def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: js.Array[String] | String): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -2,59 +2,89 @@ package typings.ionic
 
 import typings.ionic.ailmentsBaseMod.AilmentDeps
 import typings.ionic.definitionsMod.IAilment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/doctor", JSImport.Namespace)
-@js.native
-object libDoctorMod extends js.Object {
+object libDoctorMod {
   
-  def formatAilmentMessage(ailment: IAilment): js.Promise[String] = js.native
-  
+  @JSImport("ionic/lib/doctor", "Ailment")
   @js.native
   abstract class Ailment protected ()
     extends typings.ionic.ailmentsMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
   }
   
+  @JSImport("ionic/lib/doctor", "AilmentRegistry")
   @js.native
   class AilmentRegistry ()
-    extends typings.ionic.ailmentsBaseMod.AilmentRegistry
+    extends typings.ionic.ailmentsMod.AilmentRegistry
   
+  @JSImport("ionic/lib/doctor", "CordovaPlatformsCommitted")
   @js.native
-  class CordovaPlatformsCommitted ()
-    extends typings.ionic.ailmentsMod.CordovaPlatformsCommitted
+  class CordovaPlatformsCommitted protected ()
+    extends typings.ionic.ailmentsMod.CordovaPlatformsCommitted {
+    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+  }
   
+  @JSImport("ionic/lib/doctor", "DefaultCordovaBundleIdUsed")
   @js.native
-  class DefaultCordovaBundleIdUsed ()
-    extends typings.ionic.ailmentsMod.DefaultCordovaBundleIdUsed
+  class DefaultCordovaBundleIdUsed protected ()
+    extends typings.ionic.ailmentsMod.DefaultCordovaBundleIdUsed {
+    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+  }
   
+  @JSImport("ionic/lib/doctor", "GitConfigInvalid")
   @js.native
-  class GitConfigInvalid ()
-    extends typings.ionic.ailmentsMod.GitConfigInvalid
+  class GitConfigInvalid protected ()
+    extends typings.ionic.ailmentsMod.GitConfigInvalid {
+    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+  }
   
+  @JSImport("ionic/lib/doctor", "GitNotUsed")
   @js.native
-  class GitNotUsed ()
-    extends typings.ionic.ailmentsMod.GitNotUsed
+  class GitNotUsed protected ()
+    extends typings.ionic.ailmentsMod.GitNotUsed {
+    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+  }
   
+  @JSImport("ionic/lib/doctor", "IonicCLIInstalledLocally")
   @js.native
-  class IonicCLIInstalledLocally ()
-    extends typings.ionic.ailmentsMod.IonicCLIInstalledLocally
+  class IonicCLIInstalledLocally protected ()
+    extends typings.ionic.ailmentsMod.IonicCLIInstalledLocally {
+    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+  }
   
+  @JSImport("ionic/lib/doctor", "IonicNativeOldVersionInstalled")
   @js.native
-  class IonicNativeOldVersionInstalled ()
-    extends typings.ionic.ailmentsMod.IonicNativeOldVersionInstalled
+  class IonicNativeOldVersionInstalled protected ()
+    extends typings.ionic.ailmentsMod.IonicNativeOldVersionInstalled {
+    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+  }
   
+  @JSImport("ionic/lib/doctor", "NpmInstalledLocally")
   @js.native
-  class NpmInstalledLocally ()
-    extends typings.ionic.ailmentsMod.NpmInstalledLocally
+  class NpmInstalledLocally protected ()
+    extends typings.ionic.ailmentsMod.NpmInstalledLocally {
+    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+  }
   
+  @JSImport("ionic/lib/doctor", "UnsavedCordovaPlatforms")
   @js.native
-  class UnsavedCordovaPlatforms ()
-    extends typings.ionic.ailmentsMod.UnsavedCordovaPlatforms
+  class UnsavedCordovaPlatforms protected ()
+    extends typings.ionic.ailmentsMod.UnsavedCordovaPlatforms {
+    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+  }
   
+  @JSImport("ionic/lib/doctor", "ViewportFitNotSet")
   @js.native
-  class ViewportFitNotSet ()
-    extends typings.ionic.ailmentsMod.ViewportFitNotSet
+  class ViewportFitNotSet protected ()
+    extends typings.ionic.ailmentsMod.ViewportFitNotSet {
+    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+  }
+  
+  @JSImport("ionic/lib/doctor", "formatAilmentMessage")
+  @js.native
+  def formatAilmentMessage(ailment: IAilment): js.Promise[String] = js.native
 }

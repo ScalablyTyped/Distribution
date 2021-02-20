@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobInput extends js.Object {
+trait JobInput extends StObject {
   
   /**
     *  The aspect ratio of the input file. If you want Elastic Transcoder to automatically detect the aspect ratio of the input file, specify auto. If you want to specify the aspect ratio for the output file, enter one of the following values:   1:1, 4:3, 3:2, 16:9   If you specify a value other than auto, Elastic Transcoder disables automatic detection of the aspect ratio. 
@@ -66,78 +67,66 @@ object JobInput {
   }
   
   @scala.inline
-  implicit class JobInputOps[Self <: JobInput] (val x: Self) extends AnyVal {
+  implicit class JobInputMutableBuilder[Self <: JobInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "AspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAspectRatioUndefined: Self = StObject.set(x, "AspectRatio", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: JobContainer): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspectRatio(value: AspectRatio): Self = this.set("AspectRatio", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
     
     @scala.inline
-    def deleteAspectRatio: Self = this.set("AspectRatio", js.undefined)
+    def setDetectedProperties(value: DetectedProperties): Self = StObject.set(x, "DetectedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: JobContainer): Self = this.set("Container", value.asInstanceOf[js.Any])
+    def setDetectedPropertiesUndefined: Self = StObject.set(x, "DetectedProperties", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("Container", js.undefined)
+    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectedProperties(value: DetectedProperties): Self = this.set("DetectedProperties", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def deleteDetectedProperties: Self = this.set("DetectedProperties", js.undefined)
+    def setFrameRate(value: FrameRate): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setInputCaptions(value: InputCaptions): Self = StObject.set(x, "InputCaptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: FrameRate): Self = this.set("FrameRate", value.asInstanceOf[js.Any])
+    def setInputCaptionsUndefined: Self = StObject.set(x, "InputCaptions", js.undefined)
     
     @scala.inline
-    def deleteFrameRate: Self = this.set("FrameRate", js.undefined)
+    def setInterlaced(value: Interlaced): Self = StObject.set(x, "Interlaced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputCaptions(value: InputCaptions): Self = this.set("InputCaptions", value.asInstanceOf[js.Any])
+    def setInterlacedUndefined: Self = StObject.set(x, "Interlaced", js.undefined)
     
     @scala.inline
-    def deleteInputCaptions: Self = this.set("InputCaptions", js.undefined)
+    def setKey(value: LongKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterlaced(value: Interlaced): Self = this.set("Interlaced", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteInterlaced: Self = this.set("Interlaced", js.undefined)
+    def setResolution(value: Resolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: LongKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setTimeSpan(value: TimeSpan): Self = StObject.set(x, "TimeSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: Resolution): Self = this.set("Resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("Resolution", js.undefined)
-    
-    @scala.inline
-    def setTimeSpan(value: TimeSpan): Self = this.set("TimeSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSpan: Self = this.set("TimeSpan", js.undefined)
+    def setTimeSpanUndefined: Self = StObject.set(x, "TimeSpan", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PostProcessStageComposite")
 @js.native
-class PostProcessStageComposite protected () extends js.Object {
+class PostProcessStageComposite protected () extends StObject {
   def this(stages: js.Array[PostProcessStage]) = this()
   def this(stages: js.Array[PostProcessStage], inputPreviousStageTexture: Boolean) = this()
   def this(

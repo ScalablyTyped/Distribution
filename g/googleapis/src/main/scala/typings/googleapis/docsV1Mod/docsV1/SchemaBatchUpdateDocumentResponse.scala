@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message from a BatchUpdateDocument request.
   */
 @js.native
-trait SchemaBatchUpdateDocumentResponse extends js.Object {
+trait SchemaBatchUpdateDocumentResponse extends StObject {
   
   /**
     * The ID of the document to which the updates were applied to.
@@ -35,39 +36,27 @@ object SchemaBatchUpdateDocumentResponse {
   }
   
   @scala.inline
-  implicit class SchemaBatchUpdateDocumentResponseOps[Self <: SchemaBatchUpdateDocumentResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchUpdateDocumentResponseMutableBuilder[Self <: SchemaBatchUpdateDocumentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplies(value: js.Array[SchemaResponse]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
     @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    def setRepliesVarargs(value: SchemaResponse*): Self = StObject.set(x, "replies", js.Array(value :_*))
     
     @scala.inline
-    def setRepliesVarargs(value: SchemaResponse*): Self = this.set("replies", js.Array(value :_*))
+    def setWriteControl(value: SchemaWriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplies(value: js.Array[SchemaResponse]): Self = this.set("replies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplies: Self = this.set("replies", js.undefined)
-    
-    @scala.inline
-    def setWriteControl(value: SchemaWriteControl): Self = this.set("writeControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteControl: Self = this.set("writeControl", js.undefined)
+    def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
   }
 }

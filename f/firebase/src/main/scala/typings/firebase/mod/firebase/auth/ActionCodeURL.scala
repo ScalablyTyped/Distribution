@@ -1,6 +1,7 @@
 package typings.firebase.mod.firebase.auth
 
 import typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A utility class to parse email action URLs.
   */
 @js.native
-trait ActionCodeURL extends js.Object {
+trait ActionCodeURL extends StObject {
   
   /**
     * The API key of the email action link.
@@ -52,45 +53,33 @@ object ActionCodeURL {
   }
   
   @scala.inline
-  implicit class ActionCodeURLOps[Self <: ActionCodeURL] (val x: Self) extends AnyVal {
+  implicit class ActionCodeURLMutableBuilder[Self <: ActionCodeURL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinueUrl(value: String): Self = StObject.set(x, "continueUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKey(value: String): Self = this.set("apiKey", value.asInstanceOf[js.Any])
+    def setContinueUrlNull: Self = StObject.set(x, "continueUrl", null)
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: Operation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
     
     @scala.inline
-    def setContinueUrl(value: String): Self = this.set("continueUrl", value.asInstanceOf[js.Any])
+    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueUrlNull: Self = this.set("continueUrl", null)
+    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguageCodeNull: Self = this.set("languageCode", null)
-    
-    @scala.inline
-    def setTenantId(value: String): Self = this.set("tenantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTenantIdNull: Self = this.set("tenantId", null)
+    def setTenantIdNull: Self = StObject.set(x, "tenantId", null)
   }
 }

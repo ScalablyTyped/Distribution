@@ -1,6 +1,7 @@
 package typings.awsSdkClientKinesisBrowser
 
 import typings.awsSdkClientKinesisBrowser.kinesisClientMod.KinesisClient
+import typings.awsSdkClientKinesisBrowser.kinesisConfigurationMod.KinesisConfiguration
 import typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamInputMod.AddTagsToStreamInput
 import typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamOutputMod.AddTagsToStreamOutput
 import typings.awsSdkClientKinesisBrowser.typesCreateStreamInputMod.CreateStreamInput
@@ -55,16 +56,17 @@ import typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionInputMod.Stop
 import typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionOutputMod.StopStreamEncryptionOutput
 import typings.awsSdkClientKinesisBrowser.typesUpdateShardCountInputMod.UpdateShardCountInput
 import typings.awsSdkClientKinesisBrowser.typesUpdateShardCountOutputMod.UpdateShardCountOutput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/Kinesis", JSImport.Namespace)
-@js.native
-object kinesisMod extends js.Object {
+object kinesisMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/Kinesis", "Kinesis")
   @js.native
-  class Kinesis () extends KinesisClient {
+  class Kinesis protected () extends KinesisClient {
+    def this(configuration: KinesisConfiguration) = this()
     
     /**
       * <p>Adds or updates tags for the specified Kinesis data stream. Each time you invoke this operation, you can specify up to 10 tags. If you want to add more than 10 tags to your stream, you can invoke this operation multiple times. In total, each stream can have up to 50 tags.</p> <p>If tags have already been assigned to the stream, <code>AddTagsToStream</code> overwrites any existing tags that correspond to the specified tag keys.</p> <p> <a>AddTagsToStream</a> has a limit of five transactions per second per account.</p>

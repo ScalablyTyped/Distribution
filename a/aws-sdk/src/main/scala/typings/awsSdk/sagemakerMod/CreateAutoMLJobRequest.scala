@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAutoMLJobRequest extends js.Object {
+trait CreateAutoMLJobRequest extends StObject {
   
   /**
     * Contains CompletionCriteria and SecurityConfig.
@@ -66,66 +67,54 @@ object CreateAutoMLJobRequest {
   }
   
   @scala.inline
-  implicit class CreateAutoMLJobRequestOps[Self <: CreateAutoMLJobRequest] (val x: Self) extends AnyVal {
+  implicit class CreateAutoMLJobRequestMutableBuilder[Self <: CreateAutoMLJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoMLJobConfig(value: AutoMLJobConfig): Self = StObject.set(x, "AutoMLJobConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoMLJobConfigUndefined: Self = StObject.set(x, "AutoMLJobConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoMLJobName(value: AutoMLJobName): Self = StObject.set(x, "AutoMLJobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMLJobName(value: AutoMLJobName): Self = this.set("AutoMLJobName", value.asInstanceOf[js.Any])
+    def setAutoMLJobObjective(value: AutoMLJobObjective): Self = StObject.set(x, "AutoMLJobObjective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDataConfigVarargs(value: AutoMLChannel*): Self = this.set("InputDataConfig", js.Array(value :_*))
+    def setAutoMLJobObjectiveUndefined: Self = StObject.set(x, "AutoMLJobObjective", js.undefined)
     
     @scala.inline
-    def setInputDataConfig(value: AutoMLInputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    def setGenerateCandidateDefinitionsOnly(value: GenerateCandidateDefinitionsOnly): Self = StObject.set(x, "GenerateCandidateDefinitionsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputDataConfig(value: AutoMLOutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    def setGenerateCandidateDefinitionsOnlyUndefined: Self = StObject.set(x, "GenerateCandidateDefinitionsOnly", js.undefined)
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setInputDataConfig(value: AutoMLInputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMLJobConfig(value: AutoMLJobConfig): Self = this.set("AutoMLJobConfig", value.asInstanceOf[js.Any])
+    def setInputDataConfigVarargs(value: AutoMLChannel*): Self = StObject.set(x, "InputDataConfig", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutoMLJobConfig: Self = this.set("AutoMLJobConfig", js.undefined)
+    def setOutputDataConfig(value: AutoMLOutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMLJobObjective(value: AutoMLJobObjective): Self = this.set("AutoMLJobObjective", value.asInstanceOf[js.Any])
+    def setProblemType(value: ProblemType): Self = StObject.set(x, "ProblemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoMLJobObjective: Self = this.set("AutoMLJobObjective", js.undefined)
+    def setProblemTypeUndefined: Self = StObject.set(x, "ProblemType", js.undefined)
     
     @scala.inline
-    def setGenerateCandidateDefinitionsOnly(value: GenerateCandidateDefinitionsOnly): Self = this.set("GenerateCandidateDefinitionsOnly", value.asInstanceOf[js.Any])
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGenerateCandidateDefinitionsOnly: Self = this.set("GenerateCandidateDefinitionsOnly", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProblemType(value: ProblemType): Self = this.set("ProblemType", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteProblemType: Self = this.set("ProblemType", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

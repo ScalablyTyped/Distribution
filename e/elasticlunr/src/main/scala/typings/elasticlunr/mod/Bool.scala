@@ -1,5 +1,6 @@
 package typings.elasticlunr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.elasticlunr.elasticlunrStrings.OR
   - typings.elasticlunr.elasticlunrStrings.AND
 */
-trait Bool extends js.Object
+trait Bool extends StObject
 object Bool {
   
   @scala.inline

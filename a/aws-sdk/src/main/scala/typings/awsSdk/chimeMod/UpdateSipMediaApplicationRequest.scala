@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateSipMediaApplicationRequest extends js.Object {
+trait UpdateSipMediaApplicationRequest extends StObject {
   
   /**
     * The new set of endpoints for the specified SIP media application.
@@ -31,36 +32,24 @@ object UpdateSipMediaApplicationRequest {
   }
   
   @scala.inline
-  implicit class UpdateSipMediaApplicationRequestOps[Self <: UpdateSipMediaApplicationRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateSipMediaApplicationRequestMutableBuilder[Self <: UpdateSipMediaApplicationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoints(value: SipMediaApplicationEndpointList): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointsVarargs(value: SipMediaApplicationEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
     
     @scala.inline
-    def setSipMediaApplicationId(value: NonEmptyString): Self = this.set("SipMediaApplicationId", value.asInstanceOf[js.Any])
+    def setName(value: SipMediaApplicationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointsVarargs(value: SipMediaApplicationEndpoint*): Self = this.set("Endpoints", js.Array(value :_*))
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def setEndpoints(value: SipMediaApplicationEndpointList): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
-    
-    @scala.inline
-    def setName(value: SipMediaApplicationName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSipMediaApplicationId(value: NonEmptyString): Self = StObject.set(x, "SipMediaApplicationId", value.asInstanceOf[js.Any])
   }
 }

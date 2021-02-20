@@ -1,6 +1,7 @@
 package typings.officeJs.Office
 
 import typings.officeJs.anon.Cells
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,12 +2,13 @@ package typings.bootstrapSlider
 
 import typings.bootstrapSlider.bootstrapSliderBooleans.`false`
 import typings.bootstrapSlider.bootstrapSliderStrings.slide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * Creates a slider from the current element.

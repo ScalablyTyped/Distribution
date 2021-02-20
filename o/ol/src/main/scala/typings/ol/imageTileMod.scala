@@ -7,24 +7,14 @@ import typings.ol.tilecoordMod.TileCoord
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/ImageTile", JSImport.Namespace)
-@js.native
-object imageTileMod extends js.Object {
+object imageTileMod {
   
-  @js.native
-  trait ImageTile
-    extends typings.ol.olTileMod.default {
-    
-    /**
-      * Get the HTML image element for this tile (may be a Canvas, Image, or Video).
-      */
-    def getImage(): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
-  }
-  
+  @JSImport("ol/ImageTile", JSImport.Default)
   @js.native
   class default protected () extends ImageTile {
     def this(
@@ -42,5 +32,15 @@ object imageTileMod extends js.Object {
       tileLoadFunction: LoadFunction,
       opt_options: Options
     ) = this()
+  }
+  
+  @js.native
+  trait ImageTile
+    extends typings.ol.olTileMod.default {
+    
+    /**
+      * Get the HTML image element for this tile (may be a Canvas, Image, or Video).
+      */
+    def getImage(): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
   }
 }

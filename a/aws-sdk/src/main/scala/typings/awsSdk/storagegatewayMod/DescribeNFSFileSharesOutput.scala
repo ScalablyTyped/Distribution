@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeNFSFileSharesOutput extends js.Object {
+trait DescribeNFSFileSharesOutput extends StObject {
   
   /**
     * An array containing a description for each requested file share.
@@ -21,27 +22,15 @@ object DescribeNFSFileSharesOutput {
   }
   
   @scala.inline
-  implicit class DescribeNFSFileSharesOutputOps[Self <: DescribeNFSFileSharesOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeNFSFileSharesOutputMutableBuilder[Self <: DescribeNFSFileSharesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNFSFileShareInfoList(value: NFSFileShareInfoList): Self = StObject.set(x, "NFSFileShareInfoList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNFSFileShareInfoListUndefined: Self = StObject.set(x, "NFSFileShareInfoList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNFSFileShareInfoListVarargs(value: NFSFileShareInfo*): Self = this.set("NFSFileShareInfoList", js.Array(value :_*))
-    
-    @scala.inline
-    def setNFSFileShareInfoList(value: NFSFileShareInfoList): Self = this.set("NFSFileShareInfoList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNFSFileShareInfoList: Self = this.set("NFSFileShareInfoList", js.undefined)
+    def setNFSFileShareInfoListVarargs(value: NFSFileShareInfo*): Self = StObject.set(x, "NFSFileShareInfoList", js.Array(value :_*))
   }
 }

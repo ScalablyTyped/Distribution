@@ -7,14 +7,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureMod.Texture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/refractionPostProcess", JSImport.Namespace)
-@js.native
-object refractionPostProcessMod extends js.Object {
+object refractionPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/refractionPostProcess", "RefractionPostProcess")
   @js.native
   class RefractionPostProcess protected () extends PostProcess {
     /**
@@ -235,10 +235,11 @@ object refractionPostProcessMod extends js.Object {
     def refractionTexture_=(value: Texture): Unit = js.native
   }
   /* static members */
-  @js.native
-  object RefractionPostProcess extends js.Object {
+  object RefractionPostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/refractionPostProcess", "RefractionPostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): RefractionPostProcess = js.native
   }
 }

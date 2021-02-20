@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TableHeightUnitType extends js.Object
+sealed trait TableHeightUnitType extends StObject
 /**
   * Lists values that specify unit types for the table height.
   */
 @JSGlobal("TableHeightUnitType")
 @js.native
-object TableHeightUnitType extends js.Object {
+object TableHeightUnitType extends StObject {
   
   /**
     * The height increases automatically to accommodate the content.

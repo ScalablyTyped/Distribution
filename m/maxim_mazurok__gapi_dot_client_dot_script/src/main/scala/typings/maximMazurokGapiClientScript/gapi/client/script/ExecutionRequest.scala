@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientScript.gapi.client.script
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionRequest extends js.Object {
+trait ExecutionRequest extends StObject {
   
   /**
     * If `true` and the user is an owner of the script, the script runs at the most recently saved version rather than the version deployed for use with the Apps Script API. Optional;
@@ -42,45 +43,33 @@ object ExecutionRequest {
   }
   
   @scala.inline
-  implicit class ExecutionRequestOps[Self <: ExecutionRequest] (val x: Self) extends AnyVal {
+  implicit class ExecutionRequestMutableBuilder[Self <: ExecutionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevMode(value: Boolean): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevMode(value: Boolean): Self = this.set("devMode", value.asInstanceOf[js.Any])
+    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
     @scala.inline
-    def deleteDevMode: Self = this.set("devMode", js.undefined)
+    def setParameters(value: js.Array[_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: String): Self = this.set("function", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteFunction: Self = this.set("function", js.undefined)
+    def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setParametersVarargs(value: js.Any*): Self = this.set("parameters", js.Array(value :_*))
+    def setSessionState(value: String): Self = StObject.set(x, "sessionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Array[_]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
-    
-    @scala.inline
-    def setSessionState(value: String): Self = this.set("sessionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionState: Self = this.set("sessionState", js.undefined)
+    def setSessionStateUndefined: Self = StObject.set(x, "sessionState", js.undefined)
   }
 }

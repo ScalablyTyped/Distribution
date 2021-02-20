@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Autostem extends js.Object {
+trait Autostem extends StObject {
   
   var auto_stem: js.UndefOr[Boolean] = js.native
   
@@ -34,69 +35,57 @@ object Autostem {
   }
   
   @scala.inline
-  implicit class AutostemOps[Self <: Autostem] (val x: Self) extends AnyVal {
+  implicit class AutostemMutableBuilder[Self <: Autostem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto_stem(value: Boolean): Self = StObject.set(x, "auto_stem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuto_stemUndefined: Self = StObject.set(x, "auto_stem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClef(value: String): Self = StObject.set(x, "clef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setClefUndefined: Self = StObject.set(x, "clef", js.undefined)
     
     @scala.inline
-    def setKeysVarargs(value: String*): Self = this.set("keys", js.Array(value :_*))
+    def setDots(value: Double): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: js.Array[String]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
     
     @scala.inline
-    def setAuto_stem(value: Boolean): Self = this.set("auto_stem", value.asInstanceOf[js.Any])
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuto_stem: Self = this.set("auto_stem", js.undefined)
+    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClef(value: String): Self = this.set("clef", value.asInstanceOf[js.Any])
+    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
     @scala.inline
-    def deleteClef: Self = this.set("clef", js.undefined)
+    def setOctave_shift(value: Double): Self = StObject.set(x, "octave_shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDots(value: Double): Self = this.set("dots", value.asInstanceOf[js.Any])
+    def setOctave_shiftUndefined: Self = StObject.set(x, "octave_shift", js.undefined)
     
     @scala.inline
-    def deleteDots: Self = this.set("dots", js.undefined)
+    def setSlash(value: Boolean): Self = StObject.set(x, "slash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOctave_shift(value: Double): Self = this.set("octave_shift", value.asInstanceOf[js.Any])
+    def setSlashUndefined: Self = StObject.set(x, "slash", js.undefined)
     
     @scala.inline
-    def deleteOctave_shift: Self = this.set("octave_shift", js.undefined)
+    def setStem_direction(value: Double): Self = StObject.set(x, "stem_direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlash(value: Boolean): Self = this.set("slash", value.asInstanceOf[js.Any])
+    def setStem_directionUndefined: Self = StObject.set(x, "stem_direction", js.undefined)
     
     @scala.inline
-    def deleteSlash: Self = this.set("slash", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStem_direction(value: Double): Self = this.set("stem_direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStem_direction: Self = this.set("stem_direction", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

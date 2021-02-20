@@ -1,18 +1,16 @@
 package typings.builderUtilRuntime
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("builder-util-runtime/out/xml", JSImport.Namespace)
-@js.native
-object xmlMod extends js.Object {
+object xmlMod {
   
-  def parseXml(data: String): XElement = js.native
-  
+  @JSImport("builder-util-runtime/out/xml", "XElement")
   @js.native
-  class XElement protected () extends js.Object {
+  class XElement protected () extends StObject {
     def this(name: String) = this()
     
     def attribute(name: String): String = js.native
@@ -43,4 +41,8 @@ object xmlMod extends js.Object {
     
     var value: String = js.native
   }
+  
+  @JSImport("builder-util-runtime/out/xml", "parseXml")
+  @js.native
+  def parseXml(data: String): XElement = js.native
 }

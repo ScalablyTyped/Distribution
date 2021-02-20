@@ -6,12 +6,13 @@ import typings.chartist.chartistStrings.vertical
 import typings.chartist.chartistStrings.width
 import typings.chartist.chartistStrings.x
 import typings.chartist.chartistStrings.y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IChartUnits extends js.Object {
+trait IChartUnits extends StObject {
   
   var dir: vertical | horizontal = js.native
   
@@ -41,36 +42,24 @@ object IChartUnits {
   }
   
   @scala.inline
-  implicit class IChartUnitsOps[Self <: IChartUnits] (val x: Self) extends AnyVal {
+  implicit class IChartUnitsMutableBuilder[Self <: IChartUnits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDir(value: vertical | horizontal): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLen(value: height | width): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPos(value: typings.chartist.chartistStrings.x | y): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: vertical | horizontal): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setRectEnd(value: String): Self = StObject.set(x, "rectEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLen(value: height | width): Self = this.set("len", value.asInstanceOf[js.Any])
+    def setRectOffset(value: String): Self = StObject.set(x, "rectOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPos(value: typings.chartist.chartistStrings.x | y): Self = this.set("pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRectEnd(value: String): Self = this.set("rectEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRectOffset(value: String): Self = this.set("rectOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRectStart(value: String): Self = this.set("rectStart", value.asInstanceOf[js.Any])
+    def setRectStart(value: String): Self = StObject.set(x, "rectStart", value.asInstanceOf[js.Any])
   }
 }

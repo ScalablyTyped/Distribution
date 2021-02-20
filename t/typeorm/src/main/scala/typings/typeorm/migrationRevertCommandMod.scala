@@ -1,16 +1,16 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/commands/MigrationRevertCommand", JSImport.Namespace)
-@js.native
-object migrationRevertCommandMod extends js.Object {
+object migrationRevertCommandMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.CommandModule * / any */ @js.native
-  class MigrationRevertCommand () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.CommandModule * / any */ @JSImport("typeorm/commands/MigrationRevertCommand", "MigrationRevertCommand")
+  @js.native
+  class MigrationRevertCommand () extends StObject {
     
     var aliases: String = js.native
     

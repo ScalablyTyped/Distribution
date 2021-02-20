@@ -1,5 +1,6 @@
 package typings.saxes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +16,37 @@ package object mod {
   type CommentHandler = js.Function1[/* comment */ java.lang.String, scala.Unit]
   
   type DoctypeHandler = js.Function1[/* doctype */ java.lang.String, scala.Unit]
+  
+  @scala.inline
+  def EVENTS: js.Tuple13[
+    typings.saxes.saxesStrings.xmldecl, 
+    typings.saxes.saxesStrings.text, 
+    typings.saxes.saxesStrings.processinginstruction, 
+    typings.saxes.saxesStrings.doctype, 
+    typings.saxes.saxesStrings.comment, 
+    typings.saxes.saxesStrings.opentagstart, 
+    typings.saxes.saxesStrings.attribute, 
+    typings.saxes.saxesStrings.opentag, 
+    typings.saxes.saxesStrings.closetag, 
+    typings.saxes.saxesStrings.cdata, 
+    typings.saxes.saxesStrings.error, 
+    typings.saxes.saxesStrings.end, 
+    typings.saxes.saxesStrings.ready
+  ] = typings.saxes.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EVENTS").asInstanceOf[js.Tuple13[
+    typings.saxes.saxesStrings.xmldecl, 
+    typings.saxes.saxesStrings.text, 
+    typings.saxes.saxesStrings.processinginstruction, 
+    typings.saxes.saxesStrings.doctype, 
+    typings.saxes.saxesStrings.comment, 
+    typings.saxes.saxesStrings.opentagstart, 
+    typings.saxes.saxesStrings.attribute, 
+    typings.saxes.saxesStrings.opentag, 
+    typings.saxes.saxesStrings.closetag, 
+    typings.saxes.saxesStrings.cdata, 
+    typings.saxes.saxesStrings.error, 
+    typings.saxes.saxesStrings.end, 
+    typings.saxes.saxesStrings.ready
+  ]]
   
   type EndHandler = js.Function0[scala.Unit]
   

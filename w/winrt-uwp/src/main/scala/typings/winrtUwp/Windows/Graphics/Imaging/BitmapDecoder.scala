@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides read access to bitmap container data as well as data from the first frame. */
 @js.native
-trait BitmapDecoder extends js.Object {
+trait BitmapDecoder extends StObject {
   
   /** The default alpha mode of the first frame. */
   var bitmapAlphaMode: BitmapAlphaMode = js.native

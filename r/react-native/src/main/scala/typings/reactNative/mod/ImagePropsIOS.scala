@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImagePropsIOS extends js.Object {
+trait ImagePropsIOS extends StObject {
   
   /**
     * blurRadius: the blur radius of the blur filter added to the image
@@ -43,42 +44,30 @@ object ImagePropsIOS {
   }
   
   @scala.inline
-  implicit class ImagePropsIOSOps[Self <: ImagePropsIOS] (val x: Self) extends AnyVal {
+  implicit class ImagePropsIOSMutableBuilder[Self <: ImagePropsIOS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapInsets(value: Insets): Self = StObject.set(x, "capInsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurRadius(value: Double): Self = this.set("blurRadius", value.asInstanceOf[js.Any])
+    def setCapInsetsUndefined: Self = StObject.set(x, "capInsets", js.undefined)
     
     @scala.inline
-    def deleteBlurRadius: Self = this.set("blurRadius", js.undefined)
+    def setOnPartialLoad(value: () => Unit): Self = StObject.set(x, "onPartialLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCapInsets(value: Insets): Self = this.set("capInsets", value.asInstanceOf[js.Any])
+    def setOnPartialLoadUndefined: Self = StObject.set(x, "onPartialLoad", js.undefined)
     
     @scala.inline
-    def deleteCapInsets: Self = this.set("capInsets", js.undefined)
+    def setOnProgress(value: /* event */ NativeSyntheticEvent[ImageProgressEventDataIOS] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPartialLoad(value: () => Unit): Self = this.set("onPartialLoad", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnPartialLoad: Self = this.set("onPartialLoad", js.undefined)
-    
-    @scala.inline
-    def setOnProgress(value: /* event */ NativeSyntheticEvent[ImageProgressEventDataIOS] => Unit): Self = this.set("onProgress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
   }
 }

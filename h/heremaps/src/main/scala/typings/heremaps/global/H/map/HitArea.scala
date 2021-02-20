@@ -1,6 +1,7 @@
 package typings.heremaps.global.H.map
 
 import typings.heremaps.H.map.HitArea.ShapeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,15 +21,14 @@ class HitArea protected ()
   def this(shapeType: ShapeType) = this()
   def this(shapeType: ShapeType, opt_values: js.Array[Double]) = this()
 }
-@JSGlobal("H.map.HitArea")
-@js.native
-object HitArea extends js.Object {
+object HitArea {
   
   /**
     * Enumeration represents possible shape types that HitArea can have.
     */
+  @JSGlobal("H.map.HitArea.ShapeType")
   @js.native
-  object ShapeType extends js.Object {
+  object ShapeType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.heremaps.H.map.HitArea.ShapeType with Double] = js.native

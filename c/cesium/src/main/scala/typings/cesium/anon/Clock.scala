@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.TimeIntervalCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Clock extends js.Object {
+trait Clock extends StObject {
   
   var clock: js.UndefOr[typings.cesium.mod.Clock] = js.native
   
@@ -53,120 +54,108 @@ object Clock {
   }
   
   @scala.inline
-  implicit class ClockOps[Self <: Clock] (val x: Self) extends AnyVal {
+  implicit class ClockMutableBuilder[Self <: Clock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClock(value: typings.cesium.mod.Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: String): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setDimensions(value: js.Any): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileMatrixSetID(value: String): Self = this.set("tileMatrixSetID", value.asInstanceOf[js.Any])
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClock(value: typings.cesium.mod.Clock): Self = this.set("clock", value.asInstanceOf[js.Any])
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def deleteClock: Self = this.set("clock", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredit(value: typings.cesium.mod.Credit | String): Self = this.set("credit", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteCredit: Self = this.set("credit", js.undefined)
+    def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: js.Any): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setMaximumLevel(value: Double): Self = StObject.set(x, "maximumLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setMaximumLevelUndefined: Self = StObject.set(x, "maximumLevel", js.undefined)
     
     @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    def setMinimumLevel(value: Double): Self = StObject.set(x, "minimumLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    def setMinimumLevelUndefined: Self = StObject.set(x, "minimumLevel", js.undefined)
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setRectangle(value: typings.cesium.mod.Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
     
     @scala.inline
-    def setMaximumLevel(value: Double): Self = this.set("maximumLevel", value.asInstanceOf[js.Any])
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumLevel: Self = this.set("maximumLevel", js.undefined)
+    def setSubdomains(value: String | js.Array[String]): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumLevel(value: Double): Self = this.set("minimumLevel", value.asInstanceOf[js.Any])
+    def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
     
     @scala.inline
-    def deleteMinimumLevel: Self = this.set("minimumLevel", js.undefined)
+    def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value :_*))
     
     @scala.inline
-    def setRectangle(value: typings.cesium.mod.Rectangle): Self = this.set("rectangle", value.asInstanceOf[js.Any])
+    def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+    def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
     
     @scala.inline
-    def setSubdomainsVarargs(value: String*): Self = this.set("subdomains", js.Array(value :_*))
+    def setTileMatrixLabels(value: js.Array[_]): Self = StObject.set(x, "tileMatrixLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubdomains(value: String | js.Array[String]): Self = this.set("subdomains", value.asInstanceOf[js.Any])
+    def setTileMatrixLabelsUndefined: Self = StObject.set(x, "tileMatrixLabels", js.undefined)
     
     @scala.inline
-    def deleteSubdomains: Self = this.set("subdomains", js.undefined)
+    def setTileMatrixLabelsVarargs(value: js.Any*): Self = StObject.set(x, "tileMatrixLabels", js.Array(value :_*))
     
     @scala.inline
-    def setTileHeight(value: Double): Self = this.set("tileHeight", value.asInstanceOf[js.Any])
+    def setTileMatrixSetID(value: String): Self = StObject.set(x, "tileMatrixSetID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTileHeight: Self = this.set("tileHeight", js.undefined)
+    def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileMatrixLabelsVarargs(value: js.Any*): Self = this.set("tileMatrixLabels", js.Array(value :_*))
+    def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
     
     @scala.inline
-    def setTileMatrixLabels(value: js.Array[_]): Self = this.set("tileMatrixLabels", value.asInstanceOf[js.Any])
+    def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = StObject.set(x, "tilingScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTileMatrixLabels: Self = this.set("tileMatrixLabels", js.undefined)
+    def setTilingSchemeUndefined: Self = StObject.set(x, "tilingScheme", js.undefined)
     
     @scala.inline
-    def setTileWidth(value: Double): Self = this.set("tileWidth", value.asInstanceOf[js.Any])
+    def setTimes(value: TimeIntervalCollection): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTileWidth: Self = this.set("tileWidth", js.undefined)
+    def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
     
     @scala.inline
-    def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = this.set("tilingScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTilingScheme: Self = this.set("tilingScheme", js.undefined)
-    
-    @scala.inline
-    def setTimes(value: TimeIntervalCollection): Self = this.set("times", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimes: Self = this.set("times", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

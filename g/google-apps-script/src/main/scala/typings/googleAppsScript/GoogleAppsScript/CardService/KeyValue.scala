@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setBottomLabel("Bottom label - single line");
   */
 @js.native
-trait KeyValue extends js.Object {
+trait KeyValue extends StObject {
   
   def setAuthorizationAction(action: AuthorizationAction): KeyValue = js.native
   
@@ -79,60 +80,48 @@ object KeyValue {
   }
   
   @scala.inline
-  implicit class KeyValueOps[Self <: KeyValue] (val x: Self) extends AnyVal {
+  implicit class KeyValueMutableBuilder[Self <: KeyValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetAuthorizationAction(value: AuthorizationAction => KeyValue): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetBottomLabel(value: String => KeyValue): Self = StObject.set(x, "setBottomLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetButton(value: Button => KeyValue): Self = StObject.set(x, "setButton", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAuthorizationAction(value: AuthorizationAction => KeyValue): Self = this.set("setAuthorizationAction", js.Any.fromFunction1(value))
+    def setSetComposeAction(value: (Action, ComposedEmailType) => KeyValue): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetBottomLabel(value: String => KeyValue): Self = this.set("setBottomLabel", js.Any.fromFunction1(value))
+    def setSetContent(value: String => KeyValue): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetButton(value: Button => KeyValue): Self = this.set("setButton", js.Any.fromFunction1(value))
+    def setSetIcon(value: Icon => KeyValue): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetComposeAction(value: (Action, ComposedEmailType) => KeyValue): Self = this.set("setComposeAction", js.Any.fromFunction2(value))
+    def setSetIconAltText(value: String => KeyValue): Self = StObject.set(x, "setIconAltText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetContent(value: String => KeyValue): Self = this.set("setContent", js.Any.fromFunction1(value))
+    def setSetIconUrl(value: String => KeyValue): Self = StObject.set(x, "setIconUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIcon(value: Icon => KeyValue): Self = this.set("setIcon", js.Any.fromFunction1(value))
+    def setSetMultiline(value: Boolean => KeyValue): Self = StObject.set(x, "setMultiline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIconAltText(value: String => KeyValue): Self = this.set("setIconAltText", js.Any.fromFunction1(value))
+    def setSetOnClickAction(value: Action => KeyValue): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIconUrl(value: String => KeyValue): Self = this.set("setIconUrl", js.Any.fromFunction1(value))
+    def setSetOnClickOpenLinkAction(value: Action => KeyValue): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMultiline(value: Boolean => KeyValue): Self = this.set("setMultiline", js.Any.fromFunction1(value))
+    def setSetOpenLink(value: OpenLink => KeyValue): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOnClickAction(value: Action => KeyValue): Self = this.set("setOnClickAction", js.Any.fromFunction1(value))
+    def setSetSwitch(value: Switch => KeyValue): Self = StObject.set(x, "setSwitch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOnClickOpenLinkAction(value: Action => KeyValue): Self = this.set("setOnClickOpenLinkAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOpenLink(value: OpenLink => KeyValue): Self = this.set("setOpenLink", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSwitch(value: Switch => KeyValue): Self = this.set("setSwitch", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTopLabel(value: String => KeyValue): Self = this.set("setTopLabel", js.Any.fromFunction1(value))
+    def setSetTopLabel(value: String => KeyValue): Self = StObject.set(x, "setTopLabel", js.Any.fromFunction1(value))
   }
 }

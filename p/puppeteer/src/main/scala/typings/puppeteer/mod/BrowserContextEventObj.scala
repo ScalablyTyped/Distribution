@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowserContextEventObj extends js.Object {
+trait BrowserContextEventObj extends StObject {
   
   /** Emitted when the url of a target inside the browser context changes. */
   var targetchanged: Target = js.native
@@ -25,27 +26,15 @@ object BrowserContextEventObj {
   }
   
   @scala.inline
-  implicit class BrowserContextEventObjOps[Self <: BrowserContextEventObj] (val x: Self) extends AnyVal {
+  implicit class BrowserContextEventObjMutableBuilder[Self <: BrowserContextEventObj] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetchanged(value: Target): Self = StObject.set(x, "targetchanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetcreated(value: Target): Self = StObject.set(x, "targetcreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetchanged(value: Target): Self = this.set("targetchanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetcreated(value: Target): Self = this.set("targetcreated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetdestroyed(value: Target): Self = this.set("targetdestroyed", value.asInstanceOf[js.Any])
+    def setTargetdestroyed(value: Target): Self = StObject.set(x, "targetdestroyed", value.asInstanceOf[js.Any])
   }
 }

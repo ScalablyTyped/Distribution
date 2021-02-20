@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxRange...
   */
 @js.native
-trait INxRange extends js.Object {
+trait INxRange extends StObject {
   
   /**
     * Position in the expression of the first character of the field name.
@@ -29,24 +30,12 @@ object INxRange {
   }
   
   @scala.inline
-  implicit class INxRangeOps[Self <: INxRange] (val x: Self) extends AnyVal {
+  implicit class INxRangeMutableBuilder[Self <: INxRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQCount(value: Double): Self = this.set("qCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQFrom(value: Double): Self = this.set("qFrom", value.asInstanceOf[js.Any])
+    def setQFrom(value: Double): Self = StObject.set(x, "qFrom", value.asInstanceOf[js.Any])
   }
 }

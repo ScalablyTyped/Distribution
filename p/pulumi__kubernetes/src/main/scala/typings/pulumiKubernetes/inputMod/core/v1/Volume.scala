@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Volume represents a named volume in a pod that may be accessed by any container in the pod.
   */
 @js.native
-trait Volume extends js.Object {
+trait Volume extends StObject {
   
   /**
     * AWSElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
@@ -183,195 +184,183 @@ object Volume {
   }
   
   @scala.inline
-  implicit class VolumeOps[Self <: Volume] (val x: Self) extends AnyVal {
+  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsElasticBlockStore(value: Input[AWSElasticBlockStoreVolumeSource]): Self = StObject.set(x, "awsElasticBlockStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsElasticBlockStoreUndefined: Self = StObject.set(x, "awsElasticBlockStore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAzureDisk(value: Input[AzureDiskVolumeSource]): Self = StObject.set(x, "azureDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setAzureDiskUndefined: Self = StObject.set(x, "azureDisk", js.undefined)
     
     @scala.inline
-    def setAwsElasticBlockStore(value: Input[AWSElasticBlockStoreVolumeSource]): Self = this.set("awsElasticBlockStore", value.asInstanceOf[js.Any])
+    def setAzureFile(value: Input[AzureFileVolumeSource]): Self = StObject.set(x, "azureFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAwsElasticBlockStore: Self = this.set("awsElasticBlockStore", js.undefined)
+    def setAzureFileUndefined: Self = StObject.set(x, "azureFile", js.undefined)
     
     @scala.inline
-    def setAzureDisk(value: Input[AzureDiskVolumeSource]): Self = this.set("azureDisk", value.asInstanceOf[js.Any])
+    def setCephfs(value: Input[CephFSVolumeSource]): Self = StObject.set(x, "cephfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAzureDisk: Self = this.set("azureDisk", js.undefined)
+    def setCephfsUndefined: Self = StObject.set(x, "cephfs", js.undefined)
     
     @scala.inline
-    def setAzureFile(value: Input[AzureFileVolumeSource]): Self = this.set("azureFile", value.asInstanceOf[js.Any])
+    def setCinder(value: Input[CinderVolumeSource]): Self = StObject.set(x, "cinder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAzureFile: Self = this.set("azureFile", js.undefined)
+    def setCinderUndefined: Self = StObject.set(x, "cinder", js.undefined)
     
     @scala.inline
-    def setCephfs(value: Input[CephFSVolumeSource]): Self = this.set("cephfs", value.asInstanceOf[js.Any])
+    def setConfigMap(value: Input[ConfigMapVolumeSource]): Self = StObject.set(x, "configMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCephfs: Self = this.set("cephfs", js.undefined)
+    def setConfigMapUndefined: Self = StObject.set(x, "configMap", js.undefined)
     
     @scala.inline
-    def setCinder(value: Input[CinderVolumeSource]): Self = this.set("cinder", value.asInstanceOf[js.Any])
+    def setCsi(value: Input[CSIVolumeSource]): Self = StObject.set(x, "csi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCinder: Self = this.set("cinder", js.undefined)
+    def setCsiUndefined: Self = StObject.set(x, "csi", js.undefined)
     
     @scala.inline
-    def setConfigMap(value: Input[ConfigMapVolumeSource]): Self = this.set("configMap", value.asInstanceOf[js.Any])
+    def setDownwardAPI(value: Input[DownwardAPIVolumeSource]): Self = StObject.set(x, "downwardAPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigMap: Self = this.set("configMap", js.undefined)
+    def setDownwardAPIUndefined: Self = StObject.set(x, "downwardAPI", js.undefined)
     
     @scala.inline
-    def setCsi(value: Input[CSIVolumeSource]): Self = this.set("csi", value.asInstanceOf[js.Any])
+    def setEmptyDir(value: Input[EmptyDirVolumeSource]): Self = StObject.set(x, "emptyDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCsi: Self = this.set("csi", js.undefined)
+    def setEmptyDirUndefined: Self = StObject.set(x, "emptyDir", js.undefined)
     
     @scala.inline
-    def setDownwardAPI(value: Input[DownwardAPIVolumeSource]): Self = this.set("downwardAPI", value.asInstanceOf[js.Any])
+    def setEphemeral(value: Input[EphemeralVolumeSource]): Self = StObject.set(x, "ephemeral", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDownwardAPI: Self = this.set("downwardAPI", js.undefined)
+    def setEphemeralUndefined: Self = StObject.set(x, "ephemeral", js.undefined)
     
     @scala.inline
-    def setEmptyDir(value: Input[EmptyDirVolumeSource]): Self = this.set("emptyDir", value.asInstanceOf[js.Any])
+    def setFc(value: Input[FCVolumeSource]): Self = StObject.set(x, "fc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmptyDir: Self = this.set("emptyDir", js.undefined)
+    def setFcUndefined: Self = StObject.set(x, "fc", js.undefined)
     
     @scala.inline
-    def setEphemeral(value: Input[EphemeralVolumeSource]): Self = this.set("ephemeral", value.asInstanceOf[js.Any])
+    def setFlexVolume(value: Input[FlexVolumeSource]): Self = StObject.set(x, "flexVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEphemeral: Self = this.set("ephemeral", js.undefined)
+    def setFlexVolumeUndefined: Self = StObject.set(x, "flexVolume", js.undefined)
     
     @scala.inline
-    def setFc(value: Input[FCVolumeSource]): Self = this.set("fc", value.asInstanceOf[js.Any])
+    def setFlocker(value: Input[FlockerVolumeSource]): Self = StObject.set(x, "flocker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFc: Self = this.set("fc", js.undefined)
+    def setFlockerUndefined: Self = StObject.set(x, "flocker", js.undefined)
     
     @scala.inline
-    def setFlexVolume(value: Input[FlexVolumeSource]): Self = this.set("flexVolume", value.asInstanceOf[js.Any])
+    def setGcePersistentDisk(value: Input[GCEPersistentDiskVolumeSource]): Self = StObject.set(x, "gcePersistentDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlexVolume: Self = this.set("flexVolume", js.undefined)
+    def setGcePersistentDiskUndefined: Self = StObject.set(x, "gcePersistentDisk", js.undefined)
     
     @scala.inline
-    def setFlocker(value: Input[FlockerVolumeSource]): Self = this.set("flocker", value.asInstanceOf[js.Any])
+    def setGitRepo(value: Input[GitRepoVolumeSource]): Self = StObject.set(x, "gitRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlocker: Self = this.set("flocker", js.undefined)
+    def setGitRepoUndefined: Self = StObject.set(x, "gitRepo", js.undefined)
     
     @scala.inline
-    def setGcePersistentDisk(value: Input[GCEPersistentDiskVolumeSource]): Self = this.set("gcePersistentDisk", value.asInstanceOf[js.Any])
+    def setGlusterfs(value: Input[GlusterfsVolumeSource]): Self = StObject.set(x, "glusterfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGcePersistentDisk: Self = this.set("gcePersistentDisk", js.undefined)
+    def setGlusterfsUndefined: Self = StObject.set(x, "glusterfs", js.undefined)
     
     @scala.inline
-    def setGitRepo(value: Input[GitRepoVolumeSource]): Self = this.set("gitRepo", value.asInstanceOf[js.Any])
+    def setHostPath(value: Input[HostPathVolumeSource]): Self = StObject.set(x, "hostPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGitRepo: Self = this.set("gitRepo", js.undefined)
+    def setHostPathUndefined: Self = StObject.set(x, "hostPath", js.undefined)
     
     @scala.inline
-    def setGlusterfs(value: Input[GlusterfsVolumeSource]): Self = this.set("glusterfs", value.asInstanceOf[js.Any])
+    def setIscsi(value: Input[ISCSIVolumeSource]): Self = StObject.set(x, "iscsi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlusterfs: Self = this.set("glusterfs", js.undefined)
+    def setIscsiUndefined: Self = StObject.set(x, "iscsi", js.undefined)
     
     @scala.inline
-    def setHostPath(value: Input[HostPathVolumeSource]): Self = this.set("hostPath", value.asInstanceOf[js.Any])
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHostPath: Self = this.set("hostPath", js.undefined)
+    def setNfs(value: Input[NFSVolumeSource]): Self = StObject.set(x, "nfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIscsi(value: Input[ISCSIVolumeSource]): Self = this.set("iscsi", value.asInstanceOf[js.Any])
+    def setNfsUndefined: Self = StObject.set(x, "nfs", js.undefined)
     
     @scala.inline
-    def deleteIscsi: Self = this.set("iscsi", js.undefined)
+    def setPersistentVolumeClaim(value: Input[PersistentVolumeClaimVolumeSource]): Self = StObject.set(x, "persistentVolumeClaim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNfs(value: Input[NFSVolumeSource]): Self = this.set("nfs", value.asInstanceOf[js.Any])
+    def setPersistentVolumeClaimUndefined: Self = StObject.set(x, "persistentVolumeClaim", js.undefined)
     
     @scala.inline
-    def deleteNfs: Self = this.set("nfs", js.undefined)
+    def setPhotonPersistentDisk(value: Input[PhotonPersistentDiskVolumeSource]): Self = StObject.set(x, "photonPersistentDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistentVolumeClaim(value: Input[PersistentVolumeClaimVolumeSource]): Self = this.set("persistentVolumeClaim", value.asInstanceOf[js.Any])
+    def setPhotonPersistentDiskUndefined: Self = StObject.set(x, "photonPersistentDisk", js.undefined)
     
     @scala.inline
-    def deletePersistentVolumeClaim: Self = this.set("persistentVolumeClaim", js.undefined)
+    def setPortworxVolume(value: Input[PortworxVolumeSource]): Self = StObject.set(x, "portworxVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotonPersistentDisk(value: Input[PhotonPersistentDiskVolumeSource]): Self = this.set("photonPersistentDisk", value.asInstanceOf[js.Any])
+    def setPortworxVolumeUndefined: Self = StObject.set(x, "portworxVolume", js.undefined)
     
     @scala.inline
-    def deletePhotonPersistentDisk: Self = this.set("photonPersistentDisk", js.undefined)
+    def setProjected(value: Input[ProjectedVolumeSource]): Self = StObject.set(x, "projected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortworxVolume(value: Input[PortworxVolumeSource]): Self = this.set("portworxVolume", value.asInstanceOf[js.Any])
+    def setProjectedUndefined: Self = StObject.set(x, "projected", js.undefined)
     
     @scala.inline
-    def deletePortworxVolume: Self = this.set("portworxVolume", js.undefined)
+    def setQuobyte(value: Input[QuobyteVolumeSource]): Self = StObject.set(x, "quobyte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjected(value: Input[ProjectedVolumeSource]): Self = this.set("projected", value.asInstanceOf[js.Any])
+    def setQuobyteUndefined: Self = StObject.set(x, "quobyte", js.undefined)
     
     @scala.inline
-    def deleteProjected: Self = this.set("projected", js.undefined)
+    def setRbd(value: Input[RBDVolumeSource]): Self = StObject.set(x, "rbd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuobyte(value: Input[QuobyteVolumeSource]): Self = this.set("quobyte", value.asInstanceOf[js.Any])
+    def setRbdUndefined: Self = StObject.set(x, "rbd", js.undefined)
     
     @scala.inline
-    def deleteQuobyte: Self = this.set("quobyte", js.undefined)
+    def setScaleIO(value: Input[ScaleIOVolumeSource]): Self = StObject.set(x, "scaleIO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRbd(value: Input[RBDVolumeSource]): Self = this.set("rbd", value.asInstanceOf[js.Any])
+    def setScaleIOUndefined: Self = StObject.set(x, "scaleIO", js.undefined)
     
     @scala.inline
-    def deleteRbd: Self = this.set("rbd", js.undefined)
+    def setSecret(value: Input[SecretVolumeSource]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleIO(value: Input[ScaleIOVolumeSource]): Self = this.set("scaleIO", value.asInstanceOf[js.Any])
+    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
     @scala.inline
-    def deleteScaleIO: Self = this.set("scaleIO", js.undefined)
+    def setStorageos(value: Input[StorageOSVolumeSource]): Self = StObject.set(x, "storageos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecret(value: Input[SecretVolumeSource]): Self = this.set("secret", value.asInstanceOf[js.Any])
+    def setStorageosUndefined: Self = StObject.set(x, "storageos", js.undefined)
     
     @scala.inline
-    def deleteSecret: Self = this.set("secret", js.undefined)
+    def setVsphereVolume(value: Input[VsphereVirtualDiskVolumeSource]): Self = StObject.set(x, "vsphereVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageos(value: Input[StorageOSVolumeSource]): Self = this.set("storageos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageos: Self = this.set("storageos", js.undefined)
-    
-    @scala.inline
-    def setVsphereVolume(value: Input[VsphereVirtualDiskVolumeSource]): Self = this.set("vsphereVolume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVsphereVolume: Self = this.set("vsphereVolume", js.undefined)
+    def setVsphereVolumeUndefined: Self = StObject.set(x, "vsphereVolume", js.undefined)
   }
 }

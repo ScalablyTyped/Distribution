@@ -1,11 +1,12 @@
 package typings.hapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncludeSubdomains extends js.Object {
+trait IncludeSubdomains extends StObject {
   
   /**
     * a boolean specifying whether to add the includeSubDomains flag to the header.
@@ -31,27 +32,15 @@ object IncludeSubdomains {
   }
   
   @scala.inline
-  implicit class IncludeSubdomainsOps[Self <: IncludeSubdomains] (val x: Self) extends AnyVal {
+  implicit class IncludeSubdomainsMutableBuilder[Self <: IncludeSubdomains] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeSubdomains(value: Boolean): Self = StObject.set(x, "includeSubdomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIncludeSubdomains(value: Boolean): Self = this.set("includeSubdomains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreload(value: Boolean): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
   }
 }

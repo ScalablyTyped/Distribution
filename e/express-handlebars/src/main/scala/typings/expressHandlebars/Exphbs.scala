@@ -1,11 +1,12 @@
 package typings.expressHandlebars
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Exphbs extends js.Object {
+trait Exphbs extends StObject {
   
   var compiled: js.Object = js.native
   

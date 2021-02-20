@@ -2,16 +2,16 @@ package typings.devexpressUtils
 
 import typings.devexpressUtils.interfacesMod.IPoint
 import typings.devexpressUtils.pointMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/geometry/line-equation", JSImport.Namespace)
-@js.native
-object lineEquationMod extends js.Object {
+object lineEquationMod {
   
+  @JSImport("@devexpress/utils/lib/geometry/line-equation", "LineEquation")
   @js.native
-  class LineEquation protected () extends js.Object {
+  class LineEquation protected () extends StObject {
     def this(aParam: Double, bParam: Double, cParam: Double) = this()
     
     var aParam: js.Any = js.native
@@ -25,13 +25,18 @@ object lineEquationMod extends js.Object {
     def getIntersection(equation: LineEquation): Point | Null = js.native
   }
   /* static members */
-  @js.native
-  object LineEquation extends js.Object {
+  object LineEquation {
     
+    @JSImport("@devexpress/utils/lib/geometry/line-equation", "LineEquation.equals")
+    @js.native
     def equals(a: LineEquation, b: LineEquation): Boolean = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/line-equation", "LineEquation.fromPoints")
+    @js.native
     def fromPoints(pointA: IPoint, pointB: IPoint): LineEquation = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/line-equation", "LineEquation.getIntersection")
+    @js.native
     def getIntersection(a: LineEquation, b: LineEquation): Point | Null = js.native
   }
 }

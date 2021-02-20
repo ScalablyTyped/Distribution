@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateIsolatedWorldRequest extends js.Object {
+trait CreateIsolatedWorldRequest extends StObject {
   
   /**
     * Id of the frame in which the isolated world should be created.
@@ -32,33 +33,21 @@ object CreateIsolatedWorldRequest {
   }
   
   @scala.inline
-  implicit class CreateIsolatedWorldRequestOps[Self <: CreateIsolatedWorldRequest] (val x: Self) extends AnyVal {
+  implicit class CreateIsolatedWorldRequestMutableBuilder[Self <: CreateIsolatedWorldRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrantUniveralAccess(value: Boolean): Self = StObject.set(x, "grantUniveralAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantUniveralAccessUndefined: Self = StObject.set(x, "grantUniveralAccess", js.undefined)
     
     @scala.inline
-    def setFrameId(value: FrameId): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setWorldName(value: String): Self = StObject.set(x, "worldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantUniveralAccess(value: Boolean): Self = this.set("grantUniveralAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrantUniveralAccess: Self = this.set("grantUniveralAccess", js.undefined)
-    
-    @scala.inline
-    def setWorldName(value: String): Self = this.set("worldName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldName: Self = this.set("worldName", js.undefined)
+    def setWorldNameUndefined: Self = StObject.set(x, "worldName", js.undefined)
   }
 }

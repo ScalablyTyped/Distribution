@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowExecutionOpenCounts extends js.Object {
+trait WorkflowExecutionOpenCounts extends StObject {
   
   /**
     * The count of activity tasks whose status is OPEN.
@@ -46,36 +47,24 @@ object WorkflowExecutionOpenCounts {
   }
   
   @scala.inline
-  implicit class WorkflowExecutionOpenCountsOps[Self <: WorkflowExecutionOpenCounts] (val x: Self) extends AnyVal {
+  implicit class WorkflowExecutionOpenCountsMutableBuilder[Self <: WorkflowExecutionOpenCounts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpenActivityTasks(value: Count): Self = StObject.set(x, "openActivityTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpenChildWorkflowExecutions(value: Count): Self = StObject.set(x, "openChildWorkflowExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenDecisionTasks(value: OpenDecisionTasksCount): Self = StObject.set(x, "openDecisionTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenActivityTasks(value: Count): Self = this.set("openActivityTasks", value.asInstanceOf[js.Any])
+    def setOpenLambdaFunctions(value: Count): Self = StObject.set(x, "openLambdaFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenChildWorkflowExecutions(value: Count): Self = this.set("openChildWorkflowExecutions", value.asInstanceOf[js.Any])
+    def setOpenLambdaFunctionsUndefined: Self = StObject.set(x, "openLambdaFunctions", js.undefined)
     
     @scala.inline
-    def setOpenDecisionTasks(value: OpenDecisionTasksCount): Self = this.set("openDecisionTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpenTimers(value: Count): Self = this.set("openTimers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpenLambdaFunctions(value: Count): Self = this.set("openLambdaFunctions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenLambdaFunctions: Self = this.set("openLambdaFunctions", js.undefined)
+    def setOpenTimers(value: Count): Self = StObject.set(x, "openTimers", value.asInstanceOf[js.Any])
   }
 }

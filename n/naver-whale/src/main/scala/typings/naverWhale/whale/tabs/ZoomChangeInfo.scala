@@ -1,11 +1,12 @@
 package typings.naverWhale.whale.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZoomChangeInfo extends js.Object {
+trait ZoomChangeInfo extends StObject {
   
   var newZoomFactor: Double = js.native
   
@@ -29,30 +30,18 @@ object ZoomChangeInfo {
   }
   
   @scala.inline
-  implicit class ZoomChangeInfoOps[Self <: ZoomChangeInfo] (val x: Self) extends AnyVal {
+  implicit class ZoomChangeInfoMutableBuilder[Self <: ZoomChangeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewZoomFactor(value: Double): Self = StObject.set(x, "newZoomFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOldZoomFactor(value: Double): Self = StObject.set(x, "oldZoomFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewZoomFactor(value: Double): Self = this.set("newZoomFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldZoomFactor(value: Double): Self = this.set("oldZoomFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomSettings(value: typings.chrome.chrome.tabs.ZoomSettings): Self = this.set("zoomSettings", value.asInstanceOf[js.Any])
+    def setZoomSettings(value: typings.chrome.chrome.tabs.ZoomSettings): Self = StObject.set(x, "zoomSettings", value.asInstanceOf[js.Any])
   }
 }

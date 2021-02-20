@@ -1,18 +1,15 @@
 package typings.screeps.global
 
-import org.scalablytyped.runtime.TopLevel
 import typings.screeps.Id
-import typings.screeps.StructureLinkConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("StructureLink")
 @js.native
 class StructureLink protected ()
   extends typings.screeps.StructureLink {
   def this(id: Id[typings.screeps.StructureLink]) = this()
 }
-@JSGlobal("StructureLink")
-@js.native
-object StructureLink extends TopLevel[StructureLinkConstructor]

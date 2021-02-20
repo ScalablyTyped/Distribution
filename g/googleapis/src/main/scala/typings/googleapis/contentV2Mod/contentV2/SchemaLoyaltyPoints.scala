@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLoyaltyPoints extends js.Object {
+trait SchemaLoyaltyPoints extends StObject {
   
   /**
     * Name of loyalty points program. It is recommended to limit the name to 12
@@ -34,36 +35,24 @@ object SchemaLoyaltyPoints {
   }
   
   @scala.inline
-  implicit class SchemaLoyaltyPointsOps[Self <: SchemaLoyaltyPoints] (val x: Self) extends AnyVal {
+  implicit class SchemaLoyaltyPointsMutableBuilder[Self <: SchemaLoyaltyPoints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPointsValue(value: String): Self = StObject.set(x, "pointsValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPointsValueUndefined: Self = StObject.set(x, "pointsValue", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointsValue(value: String): Self = this.set("pointsValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointsValue: Self = this.set("pointsValue", js.undefined)
-    
-    @scala.inline
-    def setRatio(value: Double): Self = this.set("ratio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRatio: Self = this.set("ratio", js.undefined)
+    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
   }
 }

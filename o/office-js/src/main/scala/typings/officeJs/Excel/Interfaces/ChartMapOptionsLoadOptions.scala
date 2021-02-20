@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait ChartMapOptionsLoadOptions extends js.Object {
+trait ChartMapOptionsLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -52,42 +53,30 @@ object ChartMapOptionsLoadOptions {
   }
   
   @scala.inline
-  implicit class ChartMapOptionsLoadOptionsOps[Self <: ChartMapOptionsLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ChartMapOptionsLoadOptionsMutableBuilder[Self <: ChartMapOptionsLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelStrategy(value: Boolean): Self = StObject.set(x, "labelStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setLabelStrategyUndefined: Self = StObject.set(x, "labelStrategy", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStrategy(value: Boolean): Self = this.set("labelStrategy", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteLabelStrategy: Self = this.set("labelStrategy", js.undefined)
+    def setProjectionType(value: Boolean): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Boolean): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
-    
-    @scala.inline
-    def setProjectionType(value: Boolean): Self = this.set("projectionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectionType: Self = this.set("projectionType", js.undefined)
+    def setProjectionTypeUndefined: Self = StObject.set(x, "projectionType", js.undefined)
   }
 }

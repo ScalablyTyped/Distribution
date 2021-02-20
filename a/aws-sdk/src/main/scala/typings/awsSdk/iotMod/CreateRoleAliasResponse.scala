@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRoleAliasResponse extends js.Object {
+trait CreateRoleAliasResponse extends StObject {
   
   /**
     * The role alias.
@@ -26,30 +27,18 @@ object CreateRoleAliasResponse {
   }
   
   @scala.inline
-  implicit class CreateRoleAliasResponseOps[Self <: CreateRoleAliasResponse] (val x: Self) extends AnyVal {
+  implicit class CreateRoleAliasResponseMutableBuilder[Self <: CreateRoleAliasResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoleAlias(value: RoleAlias): Self = StObject.set(x, "roleAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleAliasArn(value: RoleAliasArn): Self = StObject.set(x, "roleAliasArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleAliasArnUndefined: Self = StObject.set(x, "roleAliasArn", js.undefined)
     
     @scala.inline
-    def setRoleAlias(value: RoleAlias): Self = this.set("roleAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleAlias: Self = this.set("roleAlias", js.undefined)
-    
-    @scala.inline
-    def setRoleAliasArn(value: RoleAliasArn): Self = this.set("roleAliasArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleAliasArn: Self = this.set("roleAliasArn", js.undefined)
+    def setRoleAliasUndefined: Self = StObject.set(x, "roleAlias", js.undefined)
   }
 }

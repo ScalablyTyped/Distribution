@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketReplicationConfigurationRuleDestination extends js.Object {
+trait BucketReplicationConfigurationRuleDestination extends StObject {
   
   /**
     * Specifies the overrides to use for object owners on replication. Must be used in conjunction with `accountId` owner override configuration.
@@ -43,45 +44,33 @@ object BucketReplicationConfigurationRuleDestination {
   }
   
   @scala.inline
-  implicit class BucketReplicationConfigurationRuleDestinationOps[Self <: BucketReplicationConfigurationRuleDestination] (val x: Self) extends AnyVal {
+  implicit class BucketReplicationConfigurationRuleDestinationMutableBuilder[Self <: BucketReplicationConfigurationRuleDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlTranslation(value: Input[BucketReplicationConfigurationRuleDestinationAccessControlTranslation]): Self = StObject.set(x, "accessControlTranslation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlTranslationUndefined: Self = StObject.set(x, "accessControlTranslation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: Input[String]): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def setAccessControlTranslation(value: Input[BucketReplicationConfigurationRuleDestinationAccessControlTranslation]): Self = this.set("accessControlTranslation", value.asInstanceOf[js.Any])
+    def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessControlTranslation: Self = this.set("accessControlTranslation", js.undefined)
+    def setReplicaKmsKeyId(value: Input[String]): Self = StObject.set(x, "replicaKmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: Input[String]): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setReplicaKmsKeyIdUndefined: Self = StObject.set(x, "replicaKmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaKmsKeyId(value: Input[String]): Self = this.set("replicaKmsKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaKmsKeyId: Self = this.set("replicaKmsKeyId", js.undefined)
-    
-    @scala.inline
-    def setStorageClass(value: Input[String]): Self = this.set("storageClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageClass: Self = this.set("storageClass", js.undefined)
+    def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
   }
 }

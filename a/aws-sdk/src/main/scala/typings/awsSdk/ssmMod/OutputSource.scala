@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputSource extends js.Object {
+trait OutputSource extends StObject {
   
   /**
     * The ID of the output source, for example the URL of an S3 bucket.
@@ -26,30 +27,18 @@ object OutputSource {
   }
   
   @scala.inline
-  implicit class OutputSourceOps[Self <: OutputSource] (val x: Self) extends AnyVal {
+  implicit class OutputSourceMutableBuilder[Self <: OutputSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutputSourceId(value: OutputSourceId): Self = StObject.set(x, "OutputSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutputSourceIdUndefined: Self = StObject.set(x, "OutputSourceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputSourceType(value: OutputSourceType): Self = StObject.set(x, "OutputSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputSourceId(value: OutputSourceId): Self = this.set("OutputSourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputSourceId: Self = this.set("OutputSourceId", js.undefined)
-    
-    @scala.inline
-    def setOutputSourceType(value: OutputSourceType): Self = this.set("OutputSourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputSourceType: Self = this.set("OutputSourceType", js.undefined)
+    def setOutputSourceTypeUndefined: Self = StObject.set(x, "OutputSourceType", js.undefined)
   }
 }

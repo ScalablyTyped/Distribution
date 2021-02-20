@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Artifacts extends js.Object {
+trait Artifacts extends StObject {
   
   var artifacts: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object Artifacts {
   }
   
   @scala.inline
-  implicit class ArtifactsOps[Self <: Artifacts] (val x: Self) extends AnyVal {
+  implicit class ArtifactsMutableBuilder[Self <: Artifacts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifacts(value: scala.Double): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironments(value: scala.Double): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastRelease(value: scala.Double): Self = StObject.set(x, "lastRelease", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifacts(value: scala.Double): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironments(value: scala.Double): Self = this.set("environments", value.asInstanceOf[js.Any])
+    def setTags(value: scala.Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRelease(value: scala.Double): Self = this.set("lastRelease", value.asInstanceOf[js.Any])
+    def setTriggers(value: scala.Double): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTags(value: scala.Double): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggers(value: scala.Double): Self = this.set("triggers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: scala.Double): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariables(value: scala.Double): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SystemTriggerType extends js.Object
+sealed trait SystemTriggerType extends StObject
 /** Specifies the system events that can be used to trigger a background task. */
 @JSGlobal("Windows.ApplicationModel.Background.SystemTriggerType")
 @js.native
-object SystemTriggerType extends js.Object {
+object SystemTriggerType extends StObject {
   
   /** The background task is triggered when the cost of background work changes. */
   @js.native

@@ -4,13 +4,14 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Storage.StorageFolder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about a package. */
 @js.native
-trait Package extends js.Object {
+trait Package extends StObject {
   
   /** Gets the packages on which the current package depends. */
   var dependencies: IVectorView[Package] = js.native
@@ -23,7 +24,8 @@ trait Package extends js.Object {
   
   var getAppListEntriesAsync: js.Any = js.native
   
-   /* unmapped type */ /**
+  /* unmapped type */
+  /**
     * Windows Phone only. Returns a token that can be used to retrieve the thumbnail image associated with this application package.
     * @return A token that can be used to retrieve the thumbnail image associated with this application package.
     */
@@ -94,69 +96,57 @@ object Package {
   }
   
   @scala.inline
-  implicit class PackageOps[Self <: Package] (val x: Self) extends AnyVal {
+  implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependencies(value: IVectorView[Package]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencies(value: IVectorView[Package]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setGetAppListEntriesAsync(value: js.Any): Self = StObject.set(x, "getAppListEntriesAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setGetThumbnailToken(value: () => String): Self = StObject.set(x, "getThumbnailToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setId(value: PackageId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAppListEntriesAsync(value: js.Any): Self = this.set("getAppListEntriesAsync", value.asInstanceOf[js.Any])
+    def setInstallDate(value: Date): Self = StObject.set(x, "installDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetThumbnailToken(value: () => String): Self = this.set("getThumbnailToken", js.Any.fromFunction0(value))
+    def setInstalledDate(value: Date): Self = StObject.set(x, "installedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: PackageId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInstalledLocation(value: StorageFolder): Self = StObject.set(x, "installedLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallDate(value: Date): Self = this.set("installDate", value.asInstanceOf[js.Any])
+    def setIsBundle(value: Boolean): Self = StObject.set(x, "isBundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalledDate(value: Date): Self = this.set("installedDate", value.asInstanceOf[js.Any])
+    def setIsDevelopmentMode(value: Boolean): Self = StObject.set(x, "isDevelopmentMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalledLocation(value: StorageFolder): Self = this.set("installedLocation", value.asInstanceOf[js.Any])
+    def setIsFramework(value: Boolean): Self = StObject.set(x, "isFramework", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBundle(value: Boolean): Self = this.set("isBundle", value.asInstanceOf[js.Any])
+    def setIsResourcePackage(value: Boolean): Self = StObject.set(x, "isResourcePackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDevelopmentMode(value: Boolean): Self = this.set("isDevelopmentMode", value.asInstanceOf[js.Any])
+    def setLaunch(value: String => Unit): Self = StObject.set(x, "launch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsFramework(value: Boolean): Self = this.set("isFramework", value.asInstanceOf[js.Any])
+    def setLogo(value: Uri): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsResourcePackage(value: Boolean): Self = this.set("isResourcePackage", value.asInstanceOf[js.Any])
+    def setPublisherDisplayName(value: String): Self = StObject.set(x, "publisherDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunch(value: String => Unit): Self = this.set("launch", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLogo(value: Uri): Self = this.set("logo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherDisplayName(value: String): Self = this.set("publisherDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: js.Any): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

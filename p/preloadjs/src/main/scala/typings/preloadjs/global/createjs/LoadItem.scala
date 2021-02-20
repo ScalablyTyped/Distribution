@@ -1,5 +1,6 @@
 package typings.preloadjs.global.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class LoadItem ()
   extends typings.preloadjs.createjs.LoadItem
 /* static members */
-@JSGlobal("createjs.LoadItem")
-@js.native
-object LoadItem extends js.Object {
+object LoadItem {
   
+  @JSGlobal("createjs.LoadItem.create")
+  @js.native
   def create(value: String): js.Object | typings.preloadjs.createjs.LoadItem = js.native
+  @JSGlobal("createjs.LoadItem.create")
+  @js.native
   def create(value: js.Object): js.Object | typings.preloadjs.createjs.LoadItem = js.native
   // methods
+  @JSGlobal("createjs.LoadItem.create")
+  @js.native
   def create(value: typings.preloadjs.createjs.LoadItem): js.Object | typings.preloadjs.createjs.LoadItem = js.native
 }

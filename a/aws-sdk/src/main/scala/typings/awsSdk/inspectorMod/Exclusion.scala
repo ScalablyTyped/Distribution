@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Exclusion extends js.Object {
+trait Exclusion extends StObject {
   
   /**
     * The ARN that specifies the exclusion.
@@ -46,45 +47,33 @@ object Exclusion {
   }
   
   @scala.inline
-  implicit class ExclusionOps[Self <: Exclusion] (val x: Self) extends AnyVal {
+  implicit class ExclusionMutableBuilder[Self <: Exclusion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: Text): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDescription(value: Text): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendation(value: Text): Self = this.set("recommendation", value.asInstanceOf[js.Any])
+    def setRecommendation(value: Text): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopesVarargs(value: Scope*): Self = this.set("scopes", js.Array(value :_*))
+    def setScopes(value: ScopeList): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopes(value: ScopeList): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
     @scala.inline
-    def setTitle(value: Text): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = this.set("attributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttributes(value: AttributeList): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setTitle(value: Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

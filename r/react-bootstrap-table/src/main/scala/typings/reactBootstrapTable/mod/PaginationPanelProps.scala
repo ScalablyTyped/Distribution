@@ -2,12 +2,13 @@ package typings.reactBootstrapTable.mod
 
 import typings.reactBootstrapTable.anon.PageList
 import typings.reactBootstrapTable.anon.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaginationPanelProps extends js.Object {
+trait PaginationPanelProps extends StObject {
   
   /**
     * Callback function to use to change page.
@@ -69,45 +70,33 @@ object PaginationPanelProps {
   }
   
   @scala.inline
-  implicit class PaginationPanelPropsOps[Self <: PaginationPanelProps] (val x: Self) extends AnyVal {
+  implicit class PaginationPanelPropsMutableBuilder[Self <: PaginationPanelProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangePage(value: Double => Unit): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeSizePerPage(value: Double => Unit): Self = StObject.set(x, "changeSizePerPage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponents(value: PageList): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangePage(value: Double => Unit): Self = this.set("changePage", js.Any.fromFunction1(value))
+    def setCurrPage(value: Double): Self = StObject.set(x, "currPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSizePerPage(value: Double => Unit): Self = this.set("changeSizePerPage", js.Any.fromFunction1(value))
+    def setPageStartIndex(value: Double): Self = StObject.set(x, "pageStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: PageList): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setSizePerPage(value: Double): Self = StObject.set(x, "sizePerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrPage(value: Double): Self = this.set("currPage", value.asInstanceOf[js.Any])
+    def setSizePerPageList(value: SizePerPageList): Self = StObject.set(x, "sizePerPageList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageStartIndex(value: Double): Self = this.set("pageStartIndex", value.asInstanceOf[js.Any])
+    def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
     
     @scala.inline
-    def setSizePerPage(value: Double): Self = this.set("sizePerPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizePerPageListVarargs(value: (Double | Text)*): Self = this.set("sizePerPageList", js.Array(value :_*))
-    
-    @scala.inline
-    def setSizePerPageList(value: SizePerPageList): Self = this.set("sizePerPageList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToggleDropDown(value: () => Unit): Self = this.set("toggleDropDown", js.Any.fromFunction0(value))
+    def setToggleDropDown(value: () => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction0(value))
   }
 }

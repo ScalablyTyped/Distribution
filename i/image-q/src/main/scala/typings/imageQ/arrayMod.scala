@@ -1,16 +1,15 @@
 package typings.imageQ
 
-import org.scalablytyped.runtime.TopLevel
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.commonMod.IImageDitherer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/image/array", JSImport.Namespace)
-@js.native
-object arrayMod extends js.Object {
+object arrayMod {
   
+  @JSImport("image-q/dist/image/array", "ErrorDiffusionArray")
   @js.native
   class ErrorDiffusionArray protected () extends IImageDitherer {
     def this(colorDistanceCalculator: AbstractDistanceCalculator, kernel: ErrorDiffusionArrayKernel) = this()
@@ -77,56 +76,48 @@ object arrayMod extends js.Object {
   }
   
   @js.native
-  sealed trait ErrorDiffusionArrayKernel extends js.Object
+  sealed trait ErrorDiffusionArrayKernel extends StObject
+  @JSImport("image-q/dist/image/array", "ErrorDiffusionArrayKernel")
   @js.native
-  object ErrorDiffusionArrayKernel extends js.Object {
+  object ErrorDiffusionArrayKernel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ErrorDiffusionArrayKernel with Double] = js.native
     
     @js.native
     sealed trait Atkinson extends ErrorDiffusionArrayKernel
-    /* 3 */ @js.native
-    object Atkinson extends TopLevel[Atkinson with Double]
+    /* 3 */ val Atkinson: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.Atkinson with Double = js.native
     
     @js.native
     sealed trait Burkes extends ErrorDiffusionArrayKernel
-    /* 5 */ @js.native
-    object Burkes extends TopLevel[Burkes with Double]
+    /* 5 */ val Burkes: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.Burkes with Double = js.native
     
     @js.native
     sealed trait FalseFloydSteinberg extends ErrorDiffusionArrayKernel
-    /* 1 */ @js.native
-    object FalseFloydSteinberg extends TopLevel[FalseFloydSteinberg with Double]
+    /* 1 */ val FalseFloydSteinberg: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.FalseFloydSteinberg with Double = js.native
     
     @js.native
     sealed trait FloydSteinberg extends ErrorDiffusionArrayKernel
-    /* 0 */ @js.native
-    object FloydSteinberg extends TopLevel[FloydSteinberg with Double]
+    /* 0 */ val FloydSteinberg: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.FloydSteinberg with Double = js.native
     
     @js.native
     sealed trait Jarvis extends ErrorDiffusionArrayKernel
-    /* 4 */ @js.native
-    object Jarvis extends TopLevel[Jarvis with Double]
+    /* 4 */ val Jarvis: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.Jarvis with Double = js.native
     
     @js.native
     sealed trait Sierra extends ErrorDiffusionArrayKernel
-    /* 6 */ @js.native
-    object Sierra extends TopLevel[Sierra with Double]
+    /* 6 */ val Sierra: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.Sierra with Double = js.native
     
     @js.native
     sealed trait SierraLite extends ErrorDiffusionArrayKernel
-    /* 8 */ @js.native
-    object SierraLite extends TopLevel[SierraLite with Double]
+    /* 8 */ val SierraLite: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.SierraLite with Double = js.native
     
     @js.native
     sealed trait Stucki extends ErrorDiffusionArrayKernel
-    /* 2 */ @js.native
-    object Stucki extends TopLevel[Stucki with Double]
+    /* 2 */ val Stucki: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.Stucki with Double = js.native
     
     @js.native
     sealed trait TwoSierra extends ErrorDiffusionArrayKernel
-    /* 7 */ @js.native
-    object TwoSierra extends TopLevel[TwoSierra with Double]
+    /* 7 */ val TwoSierra: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.TwoSierra with Double = js.native
   }
 }

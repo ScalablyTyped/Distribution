@@ -1,5 +1,6 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.puppeteer.puppeteerStrings.right
   - typings.puppeteer.puppeteerStrings.middle
 */
-trait MouseButtons extends js.Object
+trait MouseButtons extends StObject
 object MouseButtons {
   
   @scala.inline

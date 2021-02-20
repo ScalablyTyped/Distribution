@@ -1,11 +1,12 @@
 package typings.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WalkContext extends js.Object {
+trait WalkContext extends StObject {
   
   var atrule: Atrule | Null = js.native
   
@@ -34,69 +35,57 @@ object WalkContext {
   }
   
   @scala.inline
-  implicit class WalkContextOps[Self <: WalkContext] (val x: Self) extends AnyVal {
+  implicit class WalkContextMutableBuilder[Self <: WalkContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtrule(value: Atrule): Self = StObject.set(x, "atrule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtruleNull: Self = StObject.set(x, "atrule", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAtrulePrelude(value: AtrulePrelude): Self = StObject.set(x, "atrulePrelude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CssNode): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setAtrulePreludeNull: Self = StObject.set(x, "atrulePrelude", null)
     
     @scala.inline
-    def setAtrule(value: Atrule): Self = this.set("atrule", value.asInstanceOf[js.Any])
+    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtruleNull: Self = this.set("atrule", null)
+    def setBlockNull: Self = StObject.set(x, "block", null)
     
     @scala.inline
-    def setAtrulePrelude(value: AtrulePrelude): Self = this.set("atrulePrelude", value.asInstanceOf[js.Any])
+    def setDeclaration(value: Declaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtrulePreludeNull: Self = this.set("atrulePrelude", null)
+    def setDeclarationNull: Self = StObject.set(x, "declaration", null)
     
     @scala.inline
-    def setBlock(value: Block): Self = this.set("block", value.asInstanceOf[js.Any])
+    def setFunction(value: FunctionNode | PseudoClassSelector | PseudoElementSelector): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockNull: Self = this.set("block", null)
+    def setFunctionNull: Self = StObject.set(x, "function", null)
     
     @scala.inline
-    def setDeclaration(value: Declaration): Self = this.set("declaration", value.asInstanceOf[js.Any])
+    def setRoot(value: CssNode): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclarationNull: Self = this.set("declaration", null)
+    def setRule(value: Rule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: FunctionNode | PseudoClassSelector | PseudoElementSelector): Self = this.set("function", value.asInstanceOf[js.Any])
+    def setRuleNull: Self = StObject.set(x, "rule", null)
     
     @scala.inline
-    def setFunctionNull: Self = this.set("function", null)
+    def setSelector(value: SelectorList): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRule(value: Rule): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setSelectorNull: Self = StObject.set(x, "selector", null)
     
     @scala.inline
-    def setRuleNull: Self = this.set("rule", null)
+    def setStylesheet(value: StyleSheet): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: SelectorList): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectorNull: Self = this.set("selector", null)
-    
-    @scala.inline
-    def setStylesheet(value: StyleSheet): Self = this.set("stylesheet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStylesheetNull: Self = this.set("stylesheet", null)
+    def setStylesheetNull: Self = StObject.set(x, "stylesheet", null)
   }
 }

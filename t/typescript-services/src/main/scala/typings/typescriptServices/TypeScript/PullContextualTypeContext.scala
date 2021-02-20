@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullContextualTypeContext extends js.Object {
+trait PullContextualTypeContext extends StObject {
   
   var astSymbolMap: js.Any = js.native
   
@@ -50,54 +51,42 @@ object PullContextualTypeContext {
   }
   
   @scala.inline
-  implicit class PullContextualTypeContextOps[Self <: PullContextualTypeContext] (val x: Self) extends AnyVal {
+  implicit class PullContextualTypeContextMutableBuilder[Self <: PullContextualTypeContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAstSymbolMap(value: js.Any): Self = StObject.set(x, "astSymbolMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextualType(value: PullTypeSymbol): Self = StObject.set(x, "contextualType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSymbolForAST(value: AST => PullSymbol): Self = StObject.set(x, "getSymbolForAST", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAstSymbolMap(value: js.Any): Self = this.set("astSymbolMap", value.asInstanceOf[js.Any])
+    def setHasProvisionalErrors(value: Boolean): Self = StObject.set(x, "hasProvisionalErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextualType(value: PullTypeSymbol): Self = this.set("contextualType", value.asInstanceOf[js.Any])
+    def setInvalidateProvisionallyTypedSymbols(value: () => Unit): Self = StObject.set(x, "invalidateProvisionallyTypedSymbols", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSymbolForAST(value: AST => PullSymbol): Self = this.set("getSymbolForAST", js.Any.fromFunction1(value))
+    def setIsInferentiallyTyping(value: Boolean): Self = StObject.set(x, "isInferentiallyTyping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasProvisionalErrors(value: Boolean): Self = this.set("hasProvisionalErrors", value.asInstanceOf[js.Any])
+    def setProvisional(value: Boolean): Self = StObject.set(x, "provisional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidateProvisionallyTypedSymbols(value: () => Unit): Self = this.set("invalidateProvisionallyTypedSymbols", js.Any.fromFunction0(value))
+    def setProvisionallyTypedSymbols(value: js.Array[PullSymbol]): Self = StObject.set(x, "provisionallyTypedSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInferentiallyTyping(value: Boolean): Self = this.set("isInferentiallyTyping", value.asInstanceOf[js.Any])
+    def setProvisionallyTypedSymbolsVarargs(value: PullSymbol*): Self = StObject.set(x, "provisionallyTypedSymbols", js.Array(value :_*))
     
     @scala.inline
-    def setProvisional(value: Boolean): Self = this.set("provisional", value.asInstanceOf[js.Any])
+    def setRecordProvisionallyTypedSymbol(value: PullSymbol => Unit): Self = StObject.set(x, "recordProvisionallyTypedSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProvisionallyTypedSymbolsVarargs(value: PullSymbol*): Self = this.set("provisionallyTypedSymbols", js.Array(value :_*))
+    def setSetSymbolForAST(value: (AST, PullSymbol) => Unit): Self = StObject.set(x, "setSymbolForAST", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setProvisionallyTypedSymbols(value: js.Array[PullSymbol]): Self = this.set("provisionallyTypedSymbols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordProvisionallyTypedSymbol(value: PullSymbol => Unit): Self = this.set("recordProvisionallyTypedSymbol", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSymbolForAST(value: (AST, PullSymbol) => Unit): Self = this.set("setSymbolForAST", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTypeArgumentInferenceContext(value: TypeArgumentInferenceContext): Self = this.set("typeArgumentInferenceContext", value.asInstanceOf[js.Any])
+    def setTypeArgumentInferenceContext(value: TypeArgumentInferenceContext): Self = StObject.set(x, "typeArgumentInferenceContext", value.asInstanceOf[js.Any])
   }
 }

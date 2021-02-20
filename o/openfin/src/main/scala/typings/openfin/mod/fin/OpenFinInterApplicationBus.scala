@@ -1,5 +1,6 @@
 package typings.openfin.mod.fin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A messaging bus that allows for pub/sub messaging between different applications.
   */
 @js.native
-trait OpenFinInterApplicationBus extends js.Object {
+trait OpenFinInterApplicationBus extends StObject {
   
   /**
     * Adds a listener that gets called when applications subscribe to the current application's messages.

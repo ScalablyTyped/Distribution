@@ -1,11 +1,12 @@
 package typings.leafletGeosearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchResult[Raw] extends js.Object {
+trait SearchResult[Raw] extends StObject {
   
   var bounds: BoundsTuple = js.native
   
@@ -26,33 +27,21 @@ object SearchResult {
   }
   
   @scala.inline
-  implicit class SearchResultOps[Self <: SearchResult[_], Raw] (val x: Self with SearchResult[Raw]) extends AnyVal {
+  implicit class SearchResultMutableBuilder[Self <: SearchResult[_], Raw] (val x: Self with SearchResult[Raw]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: BoundsTuple): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRaw(value: Raw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: BoundsTuple): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRaw(value: Raw): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: String): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: String): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchMyInterests extends js.Object {
+trait MatchMyInterests extends StObject {
   
   var matchMyInterests: js.UndefOr[Optedstate] = js.native
   
@@ -26,48 +27,36 @@ object MatchMyInterests {
   }
   
   @scala.inline
-  implicit class MatchMyInterestsOps[Self <: MatchMyInterests] (val x: Self) extends AnyVal {
+  implicit class MatchMyInterestsMutableBuilder[Self <: MatchMyInterests] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchMyInterests(value: Optedstate): Self = StObject.set(x, "matchMyInterests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchMyInterestsUndefined: Self = StObject.set(x, "matchMyInterests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMoreFromAuthors(value: Optedstate): Self = StObject.set(x, "moreFromAuthors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchMyInterests(value: Optedstate): Self = this.set("matchMyInterests", value.asInstanceOf[js.Any])
+    def setMoreFromAuthorsUndefined: Self = StObject.set(x, "moreFromAuthors", js.undefined)
     
     @scala.inline
-    def deleteMatchMyInterests: Self = this.set("matchMyInterests", js.undefined)
+    def setMoreFromSeries(value: Optedstate): Self = StObject.set(x, "moreFromSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoreFromAuthors(value: Optedstate): Self = this.set("moreFromAuthors", value.asInstanceOf[js.Any])
+    def setMoreFromSeriesUndefined: Self = StObject.set(x, "moreFromSeries", js.undefined)
     
     @scala.inline
-    def deleteMoreFromAuthors: Self = this.set("moreFromAuthors", js.undefined)
+    def setPriceDrop(value: Optedstate): Self = StObject.set(x, "priceDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoreFromSeries(value: Optedstate): Self = this.set("moreFromSeries", value.asInstanceOf[js.Any])
+    def setPriceDropUndefined: Self = StObject.set(x, "priceDrop", js.undefined)
     
     @scala.inline
-    def deleteMoreFromSeries: Self = this.set("moreFromSeries", js.undefined)
+    def setRewardExpirations(value: Optedstate): Self = StObject.set(x, "rewardExpirations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceDrop(value: Optedstate): Self = this.set("priceDrop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriceDrop: Self = this.set("priceDrop", js.undefined)
-    
-    @scala.inline
-    def setRewardExpirations(value: Optedstate): Self = this.set("rewardExpirations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRewardExpirations: Self = this.set("rewardExpirations", js.undefined)
+    def setRewardExpirationsUndefined: Self = StObject.set(x, "rewardExpirations", js.undefined)
   }
 }

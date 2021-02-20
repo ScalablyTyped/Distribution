@@ -1,19 +1,14 @@
 package typings.geometryDom
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Instantiable4
-import org.scalablytyped.runtime.Instantiable6
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("DOMMatrix")
   @js.native
   class DOMMatrix ()
     extends typings.geometryDom.GeometryDom.DOMMatrix {
@@ -22,35 +17,17 @@ object global extends js.Object {
     def this(transformList: String) = this()
     def this(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double) = this()
   }
-  @js.native
-  object DOMMatrix
-    extends Instantiable0[typings.geometryDom.GeometryDom.DOMMatrix]
-       with Instantiable1[
-          (/* array */ js.Array[Double]) | (/* other */ typings.geometryDom.GeometryDom.DOMMatrixReadOnly) | (/* transformList */ String), 
-          typings.geometryDom.GeometryDom.DOMMatrix
-        ]
-       with Instantiable6[
-          /* a */ Double, 
-          /* b */ Double, 
-          /* c */ Double, 
-          /* d */ Double, 
-          /* e */ Double, 
-          /* f */ Double, 
-          typings.geometryDom.GeometryDom.DOMMatrix
-        ]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("DOMMatrixReadOnly")
   @js.native
   class DOMMatrixReadOnly protected ()
     extends typings.geometryDom.GeometryDom.DOMMatrixReadOnly {
     def this(numberSequence: js.Array[Double]) = this()
   }
-  @js.native
-  object DOMMatrixReadOnly
-    extends Instantiable1[
-          /* numberSequence */ js.Array[Double], 
-          typings.geometryDom.GeometryDom.DOMMatrixReadOnly
-        ]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("DOMPoint")
   @js.native
   class DOMPoint ()
     extends typings.geometryDom.GeometryDom.DOMPoint {
@@ -75,40 +52,17 @@ object global extends js.Object {
     def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
     def this(x: Double, y: Double, z: Double, w: Double) = this()
   }
-  @js.native
-  object DOMPoint
-    extends Instantiable0[typings.geometryDom.GeometryDom.DOMPoint]
-       with Instantiable1[/* x */ Double, typings.geometryDom.GeometryDom.DOMPoint]
-       with Instantiable2[js.UndefOr[/* x */ Double], /* y */ Double, typings.geometryDom.GeometryDom.DOMPoint]
-       with Instantiable3[
-          js.UndefOr[/* x */ Double], 
-          js.UndefOr[/* y */ Double], 
-          /* z */ Double, 
-          typings.geometryDom.GeometryDom.DOMPoint
-        ]
-       with Instantiable4[
-          js.UndefOr[/* x */ Double], 
-          js.UndefOr[/* y */ Double], 
-          js.UndefOr[/* z */ Double], 
-          /* w */ Double, 
-          typings.geometryDom.GeometryDom.DOMPoint
-        ]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("DOMPointReadOnly")
   @js.native
   class DOMPointReadOnly protected ()
     extends typings.geometryDom.GeometryDom.DOMPointReadOnly {
     def this(x: Double, y: Double, z: Double, w: Double) = this()
   }
-  @js.native
-  object DOMPointReadOnly
-    extends Instantiable4[
-          /* x */ Double, 
-          /* y */ Double, 
-          /* z */ Double, 
-          /* w */ Double, 
-          typings.geometryDom.GeometryDom.DOMPointReadOnly
-        ]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("DOMQuad")
   @js.native
   class DOMQuad ()
     extends typings.geometryDom.GeometryDom.DOMQuad {
@@ -134,59 +88,20 @@ object global extends js.Object {
     def this(p1: DOMPointInit, p2: DOMPointInit, p3: js.UndefOr[scala.Nothing], p4: DOMPointInit) = this()
     def this(p1: DOMPointInit, p2: DOMPointInit, p3: DOMPointInit, p4: DOMPointInit) = this()
   }
-  @js.native
-  object DOMQuad
-    extends Instantiable0[typings.geometryDom.GeometryDom.DOMQuad]
-       with Instantiable1[
-          (/* p1 */ DOMPointInit) | (/* rect */ DOMRectInit), 
-          typings.geometryDom.GeometryDom.DOMQuad
-        ]
-       with Instantiable2[
-          js.UndefOr[/* p1 */ DOMPointInit], 
-          /* p2 */ DOMPointInit, 
-          typings.geometryDom.GeometryDom.DOMQuad
-        ]
-       with Instantiable3[
-          js.UndefOr[/* p1 */ DOMPointInit], 
-          js.UndefOr[/* p2 */ DOMPointInit], 
-          /* p3 */ DOMPointInit, 
-          typings.geometryDom.GeometryDom.DOMQuad
-        ]
-       with Instantiable4[
-          js.UndefOr[/* p1 */ DOMPointInit], 
-          js.UndefOr[/* p2 */ DOMPointInit], 
-          js.UndefOr[/* p3 */ DOMPointInit], 
-          /* p4 */ DOMPointInit, 
-          typings.geometryDom.GeometryDom.DOMQuad
-        ]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("DOMRect")
   @js.native
   class DOMRect protected ()
     extends typings.geometryDom.GeometryDom.DOMRect {
     def this(x: Double, y: Double, width: Double, height: Double) = this()
   }
-  @js.native
-  object DOMRect
-    extends Instantiable4[
-          /* x */ Double, 
-          /* y */ Double, 
-          /* width */ Double, 
-          /* height */ Double, 
-          typings.geometryDom.GeometryDom.DOMRect
-        ]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("DOMRectReadOnly")
   @js.native
   class DOMRectReadOnly protected ()
     extends typings.geometryDom.GeometryDom.DOMRectReadOnly {
     def this(x: Double, y: Double, width: Double, height: Double) = this()
   }
-  @js.native
-  object DOMRectReadOnly
-    extends Instantiable4[
-          /* x */ Double, 
-          /* y */ Double, 
-          /* width */ Double, 
-          /* height */ Double, 
-          typings.geometryDom.GeometryDom.DOMRectReadOnly
-        ]
 }

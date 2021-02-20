@@ -1,5 +1,6 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object InteractiveLayerOptions {
   }
   
   @scala.inline
-  implicit class InteractiveLayerOptionsOps[Self <: InteractiveLayerOptions] (val x: Self) extends AnyVal {
+  implicit class InteractiveLayerOptionsMutableBuilder[Self <: InteractiveLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubblingMouseEvents(value: Boolean): Self = StObject.set(x, "bubblingMouseEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBubblingMouseEventsUndefined: Self = StObject.set(x, "bubblingMouseEvents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubblingMouseEvents(value: Boolean): Self = this.set("bubblingMouseEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBubblingMouseEvents: Self = this.set("bubblingMouseEvents", js.undefined)
-    
-    @scala.inline
-    def setInteractive(value: Boolean): Self = this.set("interactive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
   }
 }

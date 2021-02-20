@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartitionQueryRequest extends js.Object {
+trait PartitionQueryRequest extends StObject {
   
   /**
     * The maximum number of partitions to return in this call, subject to `partition_count`. For example, if `partition_count` = 10 and `page_size` = 8, the first call to PartitionQuery
@@ -44,42 +45,30 @@ object PartitionQueryRequest {
   }
   
   @scala.inline
-  implicit class PartitionQueryRequestOps[Self <: PartitionQueryRequest] (val x: Self) extends AnyVal {
+  implicit class PartitionQueryRequestMutableBuilder[Self <: PartitionQueryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setPartitionCount(value: String): Self = StObject.set(x, "partitionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setPartitionCountUndefined: Self = StObject.set(x, "partitionCount", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setStructuredQuery(value: StructuredQuery): Self = StObject.set(x, "structuredQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionCount(value: String): Self = this.set("partitionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionCount: Self = this.set("partitionCount", js.undefined)
-    
-    @scala.inline
-    def setStructuredQuery(value: StructuredQuery): Self = this.set("structuredQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructuredQuery: Self = this.set("structuredQuery", js.undefined)
+    def setStructuredQueryUndefined: Self = StObject.set(x, "structuredQuery", js.undefined)
   }
 }

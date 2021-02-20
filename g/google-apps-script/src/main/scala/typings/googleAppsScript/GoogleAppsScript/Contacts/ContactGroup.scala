@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A ContactGroup is is a group of contacts.
   */
 @js.native
-trait ContactGroup extends js.Object {
+trait ContactGroup extends StObject {
   
   def addContact(contact: Contact): ContactGroup = js.native
   
@@ -50,48 +51,36 @@ object ContactGroup {
   }
   
   @scala.inline
-  implicit class ContactGroupOps[Self <: ContactGroup] (val x: Self) extends AnyVal {
+  implicit class ContactGroupMutableBuilder[Self <: ContactGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddContact(value: Contact => ContactGroup): Self = StObject.set(x, "addContact", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteGroup(value: () => Unit): Self = StObject.set(x, "deleteGroup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetContacts(value: () => js.Array[Contact]): Self = StObject.set(x, "getContacts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddContact(value: Contact => ContactGroup): Self = this.set("addContact", js.Any.fromFunction1(value))
+    def setGetGroupName(value: () => String): Self = StObject.set(x, "getGroupName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeleteGroup(value: () => Unit): Self = this.set("deleteGroup", js.Any.fromFunction0(value))
+    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContacts(value: () => js.Array[Contact]): Self = this.set("getContacts", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroupName(value: () => String): Self = this.set("getGroupName", js.Any.fromFunction0(value))
+    def setIsSystemGroup(value: () => Boolean): Self = StObject.set(x, "isSystemGroup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setRemoveContact(value: Contact => ContactGroup): Self = StObject.set(x, "removeContact", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setSetGroupName(value: String => Unit): Self = StObject.set(x, "setGroupName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsSystemGroup(value: () => Boolean): Self = this.set("isSystemGroup", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveContact(value: Contact => ContactGroup): Self = this.set("removeContact", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetGroupName(value: String => Unit): Self = this.set("setGroupName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetName(value: String => ContactGroup): Self = this.set("setName", js.Any.fromFunction1(value))
+    def setSetName(value: String => ContactGroup): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventResult extends js.Object {
+trait EventResult extends StObject {
   
   /**
     * Date/time of the event.
@@ -36,42 +37,30 @@ object EventResult {
   }
   
   @scala.inline
-  implicit class EventResultOps[Self <: EventResult] (val x: Self) extends AnyVal {
+  implicit class EventResultMutableBuilder[Self <: EventResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventTimestamp(value: String): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventTimestampUndefined: Self = StObject.set(x, "eventTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureDescription(value: String): Self = StObject.set(x, "failureDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTimestamp(value: String): Self = this.set("eventTimestamp", value.asInstanceOf[js.Any])
+    def setFailureDescriptionUndefined: Self = StObject.set(x, "failureDescription", js.undefined)
     
     @scala.inline
-    def deleteEventTimestamp: Self = this.set("eventTimestamp", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureDescription(value: String): Self = this.set("failureDescription", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteFailureDescription: Self = this.set("failureDescription", js.undefined)
+    def setVendorFailureStatusCode(value: String): Self = StObject.set(x, "vendorFailureStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setVendorFailureStatusCode(value: String): Self = this.set("vendorFailureStatusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendorFailureStatusCode: Self = this.set("vendorFailureStatusCode", js.undefined)
+    def setVendorFailureStatusCodeUndefined: Self = StObject.set(x, "vendorFailureStatusCode", js.undefined)
   }
 }

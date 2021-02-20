@@ -1,14 +1,17 @@
 package typings.bitwise
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/buffer/nor", JSImport.Namespace)
-@js.native
-object bufferNorMod extends js.Object {
+object bufferNorMod {
   
+  @JSImport("bitwise/buffer/nor", JSImport.Default)
+  @js.native
   def default(a: Buffer, b: Buffer): Buffer = js.native
+  @JSImport("bitwise/buffer/nor", JSImport.Default)
+  @js.native
   def default(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
 }

@@ -1,5 +1,6 @@
 package typings.loopback.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "AccessRequest")
 @js.native
-class AccessRequest protected () extends js.Object {
+class AccessRequest protected () extends StObject {
   def this(model: String, property: String, accessType: String, permission: String) = this()
   
   /**

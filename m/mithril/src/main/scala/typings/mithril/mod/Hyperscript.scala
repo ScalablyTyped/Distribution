@@ -2,12 +2,13 @@ package typings.mithril.mod
 
 import typings.mithril.anon.Key
 import typings.mithril.anon.Lifecycleanyanykeystringa
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hyperscript extends js.Object {
+trait Hyperscript extends StObject {
   
   /** Creates a virtual element (Vnode). */
   def apply(selector: String, attributes: Attributes, children: Children*): Vnode[_, _] = js.native

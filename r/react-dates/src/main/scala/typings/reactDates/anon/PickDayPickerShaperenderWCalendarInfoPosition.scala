@@ -1,12 +1,13 @@
 package typings.reactDates.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-dates.react-dates.DayPickerShape, 'renderWeekHeaderElement' | 'enableOutsideDays' | 'numberOfMonths' | 'withPortal' | 'hideKeyboardShortcutsPanel' | 'daySize' | 'noBorder' | 'verticalBorderSpacing' | 'horizontalMonthPadding' | 'dayPickerNavigationInlineStyles' | 'navPosition' | 'navPrev' | 'navNext' | 'renderNavPrevButton' | 'renderNavNextButton' | 'noNavButtons' | 'noNavNextButton' | 'noNavPrevButton' | 'onOutsideClick' | 'renderCalendarDay' | 'renderDayContents' | 'renderCalendarInfo' | 'calendarInfoPosition' | 'firstDayOfWeek' | 'verticalHeight' | 'transitionDuration' | 'onBlur' | 'isFocused' | 'showKeyboardShortcuts' | 'onTab' | 'onShiftTab' | 'monthFormat' | 'weekDayFormat' | 'phrases' | 'dayAriaLabelFormat' | 'isRTL'> */
 @js.native
-trait PickDayPickerShaperenderWCalendarInfoPosition extends js.Object {
+trait PickDayPickerShaperenderWCalendarInfoPosition extends StObject {
   
   var calendarInfoPosition: js.UndefOr[js.Any] = js.native
   
@@ -89,234 +90,222 @@ object PickDayPickerShaperenderWCalendarInfoPosition {
   }
   
   @scala.inline
-  implicit class PickDayPickerShaperenderWCalendarInfoPositionOps[Self <: PickDayPickerShaperenderWCalendarInfoPosition] (val x: Self) extends AnyVal {
+  implicit class PickDayPickerShaperenderWCalendarInfoPositionMutableBuilder[Self <: PickDayPickerShaperenderWCalendarInfoPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarInfoPosition(value: js.Any): Self = StObject.set(x, "calendarInfoPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarInfoPositionUndefined: Self = StObject.set(x, "calendarInfoPosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayAriaLabelFormat(value: js.Any): Self = StObject.set(x, "dayAriaLabelFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarInfoPosition(value: js.Any): Self = this.set("calendarInfoPosition", value.asInstanceOf[js.Any])
+    def setDayAriaLabelFormatUndefined: Self = StObject.set(x, "dayAriaLabelFormat", js.undefined)
     
     @scala.inline
-    def deleteCalendarInfoPosition: Self = this.set("calendarInfoPosition", js.undefined)
+    def setDayPickerNavigationInlineStyles(value: js.Any): Self = StObject.set(x, "dayPickerNavigationInlineStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayAriaLabelFormat(value: js.Any): Self = this.set("dayAriaLabelFormat", value.asInstanceOf[js.Any])
+    def setDayPickerNavigationInlineStylesUndefined: Self = StObject.set(x, "dayPickerNavigationInlineStyles", js.undefined)
     
     @scala.inline
-    def deleteDayAriaLabelFormat: Self = this.set("dayAriaLabelFormat", js.undefined)
+    def setDaySize(value: js.Any): Self = StObject.set(x, "daySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayPickerNavigationInlineStyles(value: js.Any): Self = this.set("dayPickerNavigationInlineStyles", value.asInstanceOf[js.Any])
+    def setDaySizeUndefined: Self = StObject.set(x, "daySize", js.undefined)
     
     @scala.inline
-    def deleteDayPickerNavigationInlineStyles: Self = this.set("dayPickerNavigationInlineStyles", js.undefined)
+    def setEnableOutsideDays(value: js.Any): Self = StObject.set(x, "enableOutsideDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaySize(value: js.Any): Self = this.set("daySize", value.asInstanceOf[js.Any])
+    def setEnableOutsideDaysUndefined: Self = StObject.set(x, "enableOutsideDays", js.undefined)
     
     @scala.inline
-    def deleteDaySize: Self = this.set("daySize", js.undefined)
+    def setFirstDayOfWeek(value: js.Any): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableOutsideDays(value: js.Any): Self = this.set("enableOutsideDays", value.asInstanceOf[js.Any])
+    def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
     
     @scala.inline
-    def deleteEnableOutsideDays: Self = this.set("enableOutsideDays", js.undefined)
+    def setHideKeyboardShortcutsPanel(value: js.Any): Self = StObject.set(x, "hideKeyboardShortcutsPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDayOfWeek(value: js.Any): Self = this.set("firstDayOfWeek", value.asInstanceOf[js.Any])
+    def setHideKeyboardShortcutsPanelUndefined: Self = StObject.set(x, "hideKeyboardShortcutsPanel", js.undefined)
     
     @scala.inline
-    def deleteFirstDayOfWeek: Self = this.set("firstDayOfWeek", js.undefined)
+    def setHorizontalMonthPadding(value: js.Any): Self = StObject.set(x, "horizontalMonthPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideKeyboardShortcutsPanel(value: js.Any): Self = this.set("hideKeyboardShortcutsPanel", value.asInstanceOf[js.Any])
+    def setHorizontalMonthPaddingUndefined: Self = StObject.set(x, "horizontalMonthPadding", js.undefined)
     
     @scala.inline
-    def deleteHideKeyboardShortcutsPanel: Self = this.set("hideKeyboardShortcutsPanel", js.undefined)
+    def setIsFocused(value: js.Any): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalMonthPadding(value: js.Any): Self = this.set("horizontalMonthPadding", value.asInstanceOf[js.Any])
+    def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
     
     @scala.inline
-    def deleteHorizontalMonthPadding: Self = this.set("horizontalMonthPadding", js.undefined)
+    def setIsRTL(value: js.Any): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFocused(value: js.Any): Self = this.set("isFocused", value.asInstanceOf[js.Any])
+    def setIsRTLUndefined: Self = StObject.set(x, "isRTL", js.undefined)
     
     @scala.inline
-    def deleteIsFocused: Self = this.set("isFocused", js.undefined)
+    def setMonthFormat(value: js.Any): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRTL(value: js.Any): Self = this.set("isRTL", value.asInstanceOf[js.Any])
+    def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
     
     @scala.inline
-    def deleteIsRTL: Self = this.set("isRTL", js.undefined)
+    def setNavNext(value: js.Any): Self = StObject.set(x, "navNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthFormat(value: js.Any): Self = this.set("monthFormat", value.asInstanceOf[js.Any])
+    def setNavNextUndefined: Self = StObject.set(x, "navNext", js.undefined)
     
     @scala.inline
-    def deleteMonthFormat: Self = this.set("monthFormat", js.undefined)
+    def setNavPosition(value: js.Any): Self = StObject.set(x, "navPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavNext(value: js.Any): Self = this.set("navNext", value.asInstanceOf[js.Any])
+    def setNavPositionUndefined: Self = StObject.set(x, "navPosition", js.undefined)
     
     @scala.inline
-    def deleteNavNext: Self = this.set("navNext", js.undefined)
+    def setNavPrev(value: js.Any): Self = StObject.set(x, "navPrev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavPosition(value: js.Any): Self = this.set("navPosition", value.asInstanceOf[js.Any])
+    def setNavPrevUndefined: Self = StObject.set(x, "navPrev", js.undefined)
     
     @scala.inline
-    def deleteNavPosition: Self = this.set("navPosition", js.undefined)
+    def setNoBorder(value: js.Any): Self = StObject.set(x, "noBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavPrev(value: js.Any): Self = this.set("navPrev", value.asInstanceOf[js.Any])
+    def setNoBorderUndefined: Self = StObject.set(x, "noBorder", js.undefined)
     
     @scala.inline
-    def deleteNavPrev: Self = this.set("navPrev", js.undefined)
+    def setNoNavButtons(value: js.Any): Self = StObject.set(x, "noNavButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoBorder(value: js.Any): Self = this.set("noBorder", value.asInstanceOf[js.Any])
+    def setNoNavButtonsUndefined: Self = StObject.set(x, "noNavButtons", js.undefined)
     
     @scala.inline
-    def deleteNoBorder: Self = this.set("noBorder", js.undefined)
+    def setNoNavNextButton(value: js.Any): Self = StObject.set(x, "noNavNextButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoNavButtons(value: js.Any): Self = this.set("noNavButtons", value.asInstanceOf[js.Any])
+    def setNoNavNextButtonUndefined: Self = StObject.set(x, "noNavNextButton", js.undefined)
     
     @scala.inline
-    def deleteNoNavButtons: Self = this.set("noNavButtons", js.undefined)
+    def setNoNavPrevButton(value: js.Any): Self = StObject.set(x, "noNavPrevButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoNavNextButton(value: js.Any): Self = this.set("noNavNextButton", value.asInstanceOf[js.Any])
+    def setNoNavPrevButtonUndefined: Self = StObject.set(x, "noNavPrevButton", js.undefined)
     
     @scala.inline
-    def deleteNoNavNextButton: Self = this.set("noNavNextButton", js.undefined)
+    def setNumberOfMonths(value: js.Any): Self = StObject.set(x, "numberOfMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoNavPrevButton(value: js.Any): Self = this.set("noNavPrevButton", value.asInstanceOf[js.Any])
+    def setNumberOfMonthsUndefined: Self = StObject.set(x, "numberOfMonths", js.undefined)
     
     @scala.inline
-    def deleteNoNavPrevButton: Self = this.set("noNavPrevButton", js.undefined)
+    def setOnBlur(value: js.Any): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfMonths(value: js.Any): Self = this.set("numberOfMonths", value.asInstanceOf[js.Any])
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def deleteNumberOfMonths: Self = this.set("numberOfMonths", js.undefined)
+    def setOnOutsideClick(value: js.Any): Self = StObject.set(x, "onOutsideClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBlur(value: js.Any): Self = this.set("onBlur", value.asInstanceOf[js.Any])
+    def setOnOutsideClickUndefined: Self = StObject.set(x, "onOutsideClick", js.undefined)
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnShiftTab(value: js.Any): Self = StObject.set(x, "onShiftTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOutsideClick(value: js.Any): Self = this.set("onOutsideClick", value.asInstanceOf[js.Any])
+    def setOnShiftTabUndefined: Self = StObject.set(x, "onShiftTab", js.undefined)
     
     @scala.inline
-    def deleteOnOutsideClick: Self = this.set("onOutsideClick", js.undefined)
+    def setOnTab(value: js.Any): Self = StObject.set(x, "onTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShiftTab(value: js.Any): Self = this.set("onShiftTab", value.asInstanceOf[js.Any])
+    def setOnTabUndefined: Self = StObject.set(x, "onTab", js.undefined)
     
     @scala.inline
-    def deleteOnShiftTab: Self = this.set("onShiftTab", js.undefined)
+    def setPhrases(value: js.Any): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTab(value: js.Any): Self = this.set("onTab", value.asInstanceOf[js.Any])
+    def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
     
     @scala.inline
-    def deleteOnTab: Self = this.set("onTab", js.undefined)
+    def setRenderCalendarDay(value: js.Any): Self = StObject.set(x, "renderCalendarDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhrases(value: js.Any): Self = this.set("phrases", value.asInstanceOf[js.Any])
+    def setRenderCalendarDayUndefined: Self = StObject.set(x, "renderCalendarDay", js.undefined)
     
     @scala.inline
-    def deletePhrases: Self = this.set("phrases", js.undefined)
+    def setRenderCalendarInfo(value: js.Any): Self = StObject.set(x, "renderCalendarInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderCalendarDay(value: js.Any): Self = this.set("renderCalendarDay", value.asInstanceOf[js.Any])
+    def setRenderCalendarInfoUndefined: Self = StObject.set(x, "renderCalendarInfo", js.undefined)
     
     @scala.inline
-    def deleteRenderCalendarDay: Self = this.set("renderCalendarDay", js.undefined)
+    def setRenderDayContents(value: js.Any): Self = StObject.set(x, "renderDayContents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderCalendarInfo(value: js.Any): Self = this.set("renderCalendarInfo", value.asInstanceOf[js.Any])
+    def setRenderDayContentsUndefined: Self = StObject.set(x, "renderDayContents", js.undefined)
     
     @scala.inline
-    def deleteRenderCalendarInfo: Self = this.set("renderCalendarInfo", js.undefined)
+    def setRenderNavNextButton(value: js.Any): Self = StObject.set(x, "renderNavNextButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderDayContents(value: js.Any): Self = this.set("renderDayContents", value.asInstanceOf[js.Any])
+    def setRenderNavNextButtonUndefined: Self = StObject.set(x, "renderNavNextButton", js.undefined)
     
     @scala.inline
-    def deleteRenderDayContents: Self = this.set("renderDayContents", js.undefined)
+    def setRenderNavPrevButton(value: js.Any): Self = StObject.set(x, "renderNavPrevButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderNavNextButton(value: js.Any): Self = this.set("renderNavNextButton", value.asInstanceOf[js.Any])
+    def setRenderNavPrevButtonUndefined: Self = StObject.set(x, "renderNavPrevButton", js.undefined)
     
     @scala.inline
-    def deleteRenderNavNextButton: Self = this.set("renderNavNextButton", js.undefined)
+    def setRenderWeekHeaderElement(value: js.Any): Self = StObject.set(x, "renderWeekHeaderElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderNavPrevButton(value: js.Any): Self = this.set("renderNavPrevButton", value.asInstanceOf[js.Any])
+    def setRenderWeekHeaderElementUndefined: Self = StObject.set(x, "renderWeekHeaderElement", js.undefined)
     
     @scala.inline
-    def deleteRenderNavPrevButton: Self = this.set("renderNavPrevButton", js.undefined)
+    def setShowKeyboardShortcuts(value: js.Any): Self = StObject.set(x, "showKeyboardShortcuts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderWeekHeaderElement(value: js.Any): Self = this.set("renderWeekHeaderElement", value.asInstanceOf[js.Any])
+    def setShowKeyboardShortcutsUndefined: Self = StObject.set(x, "showKeyboardShortcuts", js.undefined)
     
     @scala.inline
-    def deleteRenderWeekHeaderElement: Self = this.set("renderWeekHeaderElement", js.undefined)
+    def setTransitionDuration(value: js.Any): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowKeyboardShortcuts(value: js.Any): Self = this.set("showKeyboardShortcuts", value.asInstanceOf[js.Any])
+    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
     @scala.inline
-    def deleteShowKeyboardShortcuts: Self = this.set("showKeyboardShortcuts", js.undefined)
+    def setVerticalBorderSpacing(value: js.Any): Self = StObject.set(x, "verticalBorderSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionDuration(value: js.Any): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    def setVerticalBorderSpacingUndefined: Self = StObject.set(x, "verticalBorderSpacing", js.undefined)
     
     @scala.inline
-    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    def setVerticalHeight(value: js.Any): Self = StObject.set(x, "verticalHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalBorderSpacing(value: js.Any): Self = this.set("verticalBorderSpacing", value.asInstanceOf[js.Any])
+    def setVerticalHeightUndefined: Self = StObject.set(x, "verticalHeight", js.undefined)
     
     @scala.inline
-    def deleteVerticalBorderSpacing: Self = this.set("verticalBorderSpacing", js.undefined)
+    def setWeekDayFormat(value: js.Any): Self = StObject.set(x, "weekDayFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalHeight(value: js.Any): Self = this.set("verticalHeight", value.asInstanceOf[js.Any])
+    def setWeekDayFormatUndefined: Self = StObject.set(x, "weekDayFormat", js.undefined)
     
     @scala.inline
-    def deleteVerticalHeight: Self = this.set("verticalHeight", js.undefined)
+    def setWithPortal(value: js.Any): Self = StObject.set(x, "withPortal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekDayFormat(value: js.Any): Self = this.set("weekDayFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekDayFormat: Self = this.set("weekDayFormat", js.undefined)
-    
-    @scala.inline
-    def setWithPortal(value: js.Any): Self = this.set("withPortal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithPortal: Self = this.set("withPortal", js.undefined)
+    def setWithPortalUndefined: Self = StObject.set(x, "withPortal", js.undefined)
   }
 }

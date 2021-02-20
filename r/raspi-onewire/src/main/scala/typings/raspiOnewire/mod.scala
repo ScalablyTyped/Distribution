@@ -3,14 +3,14 @@ package typings.raspiOnewire
 import typings.node.Buffer
 import typings.raspiPeripheral.mod.Peripheral
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("raspi-onewire", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("raspi-onewire", "OneWire")
   @js.native
   class OneWire () extends Peripheral {
     

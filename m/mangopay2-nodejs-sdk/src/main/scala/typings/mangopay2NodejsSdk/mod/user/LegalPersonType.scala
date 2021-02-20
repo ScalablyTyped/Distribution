@@ -1,5 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.user
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ORGANIZATION
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SOLETRADER
 */
-trait LegalPersonType extends js.Object
+trait LegalPersonType extends StObject
 object LegalPersonType {
   
   @scala.inline

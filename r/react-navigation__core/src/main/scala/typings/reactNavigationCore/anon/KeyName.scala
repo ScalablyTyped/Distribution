@@ -1,11 +1,12 @@
 package typings.reactNavigationCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyName[RouteName_1 /* <: String */] extends js.Object {
+trait KeyName[RouteName_1 /* <: String */] extends StObject {
   
   var key: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object KeyName {
   }
   
   @scala.inline
-  implicit class KeyNameOps[Self <: KeyName[_], RouteName_1 /* <: String */] (val x: Self with KeyName[RouteName_1]) extends AnyVal {
+  implicit class KeyNameMutableBuilder[Self <: KeyName[_], RouteName_1 /* <: String */] (val x: Self with KeyName[RouteName_1]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: RouteName_1): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: RouteName_1): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setParams(value: js.Object): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

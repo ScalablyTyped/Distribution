@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteRelationalDatabaseRequest extends js.Object {
+trait DeleteRelationalDatabaseRequest extends StObject {
   
   /**
     * The name of the database snapshot created if skip final snapshot is false, which is the default value for that parameter.  Specifying this parameter and also specifying the skip final snapshot parameter to true results in an error.  Constraints:   Must contain from 2 to 255 alphanumeric characters, or hyphens.   The first and last character must be a letter or number.  
@@ -31,33 +32,21 @@ object DeleteRelationalDatabaseRequest {
   }
   
   @scala.inline
-  implicit class DeleteRelationalDatabaseRequestOps[Self <: DeleteRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteRelationalDatabaseRequestMutableBuilder[Self <: DeleteRelationalDatabaseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinalRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "finalRelationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalRelationalDatabaseSnapshotNameUndefined: Self = StObject.set(x, "finalRelationalDatabaseSnapshotName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    def setSkipFinalSnapshot(value: Boolean): Self = StObject.set(x, "skipFinalSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalRelationalDatabaseSnapshotName(value: ResourceName): Self = this.set("finalRelationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinalRelationalDatabaseSnapshotName: Self = this.set("finalRelationalDatabaseSnapshotName", js.undefined)
-    
-    @scala.inline
-    def setSkipFinalSnapshot(value: Boolean): Self = this.set("skipFinalSnapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipFinalSnapshot: Self = this.set("skipFinalSnapshot", js.undefined)
+    def setSkipFinalSnapshotUndefined: Self = StObject.set(x, "skipFinalSnapshot", js.undefined)
   }
 }

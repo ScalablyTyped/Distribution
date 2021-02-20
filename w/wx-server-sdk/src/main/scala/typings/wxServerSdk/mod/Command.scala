@@ -1,12 +1,13 @@
 package typings.wxServerSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // collection(name: string): Collection
 @js.native
-trait Command extends js.Object {
+trait Command extends StObject {
   
   // aggregate: AggregationOperators
   var aggregate: js.Any = js.native

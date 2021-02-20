@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchEnableServicesRequest extends js.Object {
+trait BatchEnableServicesRequest extends StObject {
   
   /**
     * The identifiers of the services to enable on the project. A valid identifier would be: serviceusage.googleapis.com Enabling services requires that each service is public or is
@@ -23,27 +24,15 @@ object BatchEnableServicesRequest {
   }
   
   @scala.inline
-  implicit class BatchEnableServicesRequestOps[Self <: BatchEnableServicesRequest] (val x: Self) extends AnyVal {
+  implicit class BatchEnableServicesRequestMutableBuilder[Self <: BatchEnableServicesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServiceIds(value: js.Array[String]): Self = StObject.set(x, "serviceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceIdsUndefined: Self = StObject.set(x, "serviceIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setServiceIdsVarargs(value: String*): Self = this.set("serviceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceIds(value: js.Array[String]): Self = this.set("serviceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceIds: Self = this.set("serviceIds", js.undefined)
+    def setServiceIdsVarargs(value: String*): Self = StObject.set(x, "serviceIds", js.Array(value :_*))
   }
 }

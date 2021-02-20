@@ -1,6 +1,7 @@
 package typings.sequelize.mod
 
 import typings.sequelize.anon.Database
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Options
   */
 @js.native
-trait ReplicationOptions extends js.Object {
+trait ReplicationOptions extends StObject {
   
   var read: js.UndefOr[js.Array[Database]] = js.native
   
@@ -26,33 +27,21 @@ object ReplicationOptions {
   }
   
   @scala.inline
-  implicit class ReplicationOptionsOps[Self <: ReplicationOptions] (val x: Self) extends AnyVal {
+  implicit class ReplicationOptionsMutableBuilder[Self <: ReplicationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRead(value: js.Array[Database]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadVarargs(value: Database*): Self = StObject.set(x, "read", js.Array(value :_*))
     
     @scala.inline
-    def setReadVarargs(value: Database*): Self = this.set("read", js.Array(value :_*))
+    def setWrite(value: Database): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: js.Array[Database]): Self = this.set("read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
-    
-    @scala.inline
-    def setWrite(value: Database): Self = this.set("write", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrite: Self = this.set("write", js.undefined)
+    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

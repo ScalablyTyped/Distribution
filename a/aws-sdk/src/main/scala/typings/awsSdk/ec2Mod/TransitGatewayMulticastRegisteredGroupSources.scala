@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitGatewayMulticastRegisteredGroupSources extends js.Object {
+trait TransitGatewayMulticastRegisteredGroupSources extends StObject {
   
   /**
     * The IP address assigned to the transit gateway multicast group.
@@ -31,39 +32,27 @@ object TransitGatewayMulticastRegisteredGroupSources {
   }
   
   @scala.inline
-  implicit class TransitGatewayMulticastRegisteredGroupSourcesOps[Self <: TransitGatewayMulticastRegisteredGroupSources] (val x: Self) extends AnyVal {
+  implicit class TransitGatewayMulticastRegisteredGroupSourcesMutableBuilder[Self <: TransitGatewayMulticastRegisteredGroupSources] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupIpAddress(value: String): Self = StObject.set(x, "GroupIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupIpAddressUndefined: Self = StObject.set(x, "GroupIpAddress", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegisteredNetworkInterfaceIds(value: ValueStringList): Self = StObject.set(x, "RegisteredNetworkInterfaceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIpAddress(value: String): Self = this.set("GroupIpAddress", value.asInstanceOf[js.Any])
+    def setRegisteredNetworkInterfaceIdsUndefined: Self = StObject.set(x, "RegisteredNetworkInterfaceIds", js.undefined)
     
     @scala.inline
-    def deleteGroupIpAddress: Self = this.set("GroupIpAddress", js.undefined)
+    def setRegisteredNetworkInterfaceIdsVarargs(value: String*): Self = StObject.set(x, "RegisteredNetworkInterfaceIds", js.Array(value :_*))
     
     @scala.inline
-    def setRegisteredNetworkInterfaceIdsVarargs(value: String*): Self = this.set("RegisteredNetworkInterfaceIds", js.Array(value :_*))
+    def setTransitGatewayMulticastDomainId(value: String): Self = StObject.set(x, "TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredNetworkInterfaceIds(value: ValueStringList): Self = this.set("RegisteredNetworkInterfaceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegisteredNetworkInterfaceIds: Self = this.set("RegisteredNetworkInterfaceIds", js.undefined)
-    
-    @scala.inline
-    def setTransitGatewayMulticastDomainId(value: String): Self = this.set("TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitGatewayMulticastDomainId: Self = this.set("TransitGatewayMulticastDomainId", js.undefined)
+    def setTransitGatewayMulticastDomainIdUndefined: Self = StObject.set(x, "TransitGatewayMulticastDomainId", js.undefined)
   }
 }

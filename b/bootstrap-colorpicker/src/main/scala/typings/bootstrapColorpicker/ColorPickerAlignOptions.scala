@@ -1,5 +1,6 @@
 package typings.bootstrapColorpicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.bootstrapColorpicker.bootstrapColorpickerStrings.right
   - typings.bootstrapColorpicker.bootstrapColorpickerStrings.left
 */
-trait ColorPickerAlignOptions extends js.Object
+trait ColorPickerAlignOptions extends StObject
 object ColorPickerAlignOptions {
   
   @scala.inline

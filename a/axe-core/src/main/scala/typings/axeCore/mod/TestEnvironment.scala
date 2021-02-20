@@ -1,11 +1,12 @@
 package typings.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestEnvironment extends js.Object {
+trait TestEnvironment extends StObject {
   
   var orientationAngle: js.UndefOr[Double] = js.native
   
@@ -26,39 +27,27 @@ object TestEnvironment {
   }
   
   @scala.inline
-  implicit class TestEnvironmentOps[Self <: TestEnvironment] (val x: Self) extends AnyVal {
+  implicit class TestEnvironmentMutableBuilder[Self <: TestEnvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrientationAngle(value: Double): Self = StObject.set(x, "orientationAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrientationAngleUndefined: Self = StObject.set(x, "orientationAngle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrientationType(value: String): Self = StObject.set(x, "orientationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    def setOrientationTypeUndefined: Self = StObject.set(x, "orientationType", js.undefined)
     
     @scala.inline
-    def setWindowHeight(value: Double): Self = this.set("windowHeight", value.asInstanceOf[js.Any])
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowWidth(value: Double): Self = this.set("windowWidth", value.asInstanceOf[js.Any])
+    def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientationAngle(value: Double): Self = this.set("orientationAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientationAngle: Self = this.set("orientationAngle", js.undefined)
-    
-    @scala.inline
-    def setOrientationType(value: String): Self = this.set("orientationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientationType: Self = this.set("orientationType", js.undefined)
+    def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,36 +32,24 @@ object BigTextOptions {
   }
   
   @scala.inline
-  implicit class BigTextOptionsOps[Self <: BigTextOptions] (val x: Self) extends AnyVal {
+  implicit class BigTextOptionsMutableBuilder[Self <: BigTextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFch(value: String): Self = StObject.set(x, "fch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFchUndefined: Self = StObject.set(x, "fch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFch(value: String): Self = this.set("fch", value.asInstanceOf[js.Any])
+    def setFontBold(value: String): Self = StObject.set(x, "fontBold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFch: Self = this.set("fch", js.undefined)
+    def setFontBoldUndefined: Self = StObject.set(x, "fontBold", js.undefined)
     
     @scala.inline
-    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
-    
-    @scala.inline
-    def setFontBold(value: String): Self = this.set("fontBold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFontBold: Self = this.set("fontBold", js.undefined)
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesDeleteFunctionConcurrencyInputMod.Del
 import typings.awsSdkClientLambdaNode.typesDeleteFunctionConcurrencyOutputMod.DeleteFunctionConcurrencyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/DeleteFunctionConcurrencyCommand", JSImport.Namespace)
-@js.native
-object deleteFunctionConcurrencyCommandMod extends js.Object {
+object deleteFunctionConcurrencyCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/DeleteFunctionConcurrencyCommand", "DeleteFunctionConcurrencyCommand")
   @js.native
   class DeleteFunctionConcurrencyCommand protected () extends Command[
           InputTypesUnion, 

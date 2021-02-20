@@ -1,11 +1,12 @@
 package typings.jqueryBlockui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQBlockUIStatic extends js.Object {
+trait JQBlockUIStatic extends StObject {
   
   /** block user activity for the page */
   def apply(): Unit = js.native

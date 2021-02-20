@@ -1,11 +1,12 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragonLevel extends js.Object {
+trait DragonLevel extends StObject {
   
   /**
     * Description of the effects of leveling up the dragon, in HTML text
@@ -50,36 +51,24 @@ object DragonLevel {
   }
   
   @scala.inline
-  implicit class DragonLevelOps[Self <: DragonLevel] (val x: Self) extends AnyVal {
+  implicit class DragonLevelMutableBuilder[Self <: DragonLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuy(value: () => Unit): Self = StObject.set(x, "buy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCost(value: () => Boolean): Self = StObject.set(x, "cost", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setCostStr(value: () => String): Self = StObject.set(x, "costStr", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuy(value: () => Unit): Self = this.set("buy", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCost(value: () => Boolean): Self = this.set("cost", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCostStr(value: () => String): Self = this.set("costStr", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPic(value: Double): Self = this.set("pic", value.asInstanceOf[js.Any])
+    def setPic(value: Double): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
   }
 }

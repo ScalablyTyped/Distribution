@@ -3,6 +3,7 @@ package typings.stellarSdk.serverApiMod.ServerApi
 import org.scalablytyped.runtime.TopLevel
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
 import typings.stellarSdk.horizonApiMod.Horizon.Predicate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,258 +118,246 @@ object EffectRecord {
   }
   
   @scala.inline
-  implicit class EffectRecordOps[Self <: EffectRecord] (val x: Self) extends AnyVal {
+  implicit class EffectRecordMutableBuilder[Self <: EffectRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmount(value: js.Any): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def setAccount(value: String): Self = this.set("account", value.asInstanceOf[js.Any])
+    def setAsset(value: String): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setAsset_code(value: String): Self = StObject.set(x, "asset_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaging_token(value: String): Self = this.set("paging_token", value.asInstanceOf[js.Any])
+    def setAsset_codeUndefined: Self = StObject.set(x, "asset_code", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setAsset_issuer(value: String): Self = StObject.set(x, "asset_issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType_i(value: String): Self = this.set("type_i", value.asInstanceOf[js.Any])
+    def setAsset_issuerUndefined: Self = StObject.set(x, "asset_issuer", js.undefined)
     
     @scala.inline
-    def setAmount(value: js.Any): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setAsset_type(value: String): Self = StObject.set(x, "asset_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setAsset_typeUndefined: Self = StObject.set(x, "asset_type", js.undefined)
     
     @scala.inline
-    def setAsset(value: String): Self = this.set("asset", value.asInstanceOf[js.Any])
+    def setAuth_required_flag(value: Boolean): Self = StObject.set(x, "auth_required_flag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsset: Self = this.set("asset", js.undefined)
+    def setAuth_required_flagUndefined: Self = StObject.set(x, "auth_required_flag", js.undefined)
     
     @scala.inline
-    def setAsset_code(value: String): Self = this.set("asset_code", value.asInstanceOf[js.Any])
+    def setAuth_revokable_flag(value: Boolean): Self = StObject.set(x, "auth_revokable_flag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsset_code: Self = this.set("asset_code", js.undefined)
+    def setAuth_revokable_flagUndefined: Self = StObject.set(x, "auth_revokable_flag", js.undefined)
     
     @scala.inline
-    def setAsset_issuer(value: String): Self = this.set("asset_issuer", value.asInstanceOf[js.Any])
+    def setBalance_id(value: String): Self = StObject.set(x, "balance_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsset_issuer: Self = this.set("asset_issuer", js.undefined)
+    def setBalance_idUndefined: Self = StObject.set(x, "balance_id", js.undefined)
     
     @scala.inline
-    def setAsset_type(value: String): Self = this.set("asset_type", value.asInstanceOf[js.Any])
+    def setBought_amount(value: String): Self = StObject.set(x, "bought_amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsset_type: Self = this.set("asset_type", js.undefined)
+    def setBought_amountUndefined: Self = StObject.set(x, "bought_amount", js.undefined)
     
     @scala.inline
-    def setAuth_required_flag(value: Boolean): Self = this.set("auth_required_flag", value.asInstanceOf[js.Any])
+    def setBought_asset_code(value: String): Self = StObject.set(x, "bought_asset_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuth_required_flag: Self = this.set("auth_required_flag", js.undefined)
+    def setBought_asset_codeUndefined: Self = StObject.set(x, "bought_asset_code", js.undefined)
     
     @scala.inline
-    def setAuth_revokable_flag(value: Boolean): Self = this.set("auth_revokable_flag", value.asInstanceOf[js.Any])
+    def setBought_asset_issuer(value: String): Self = StObject.set(x, "bought_asset_issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuth_revokable_flag: Self = this.set("auth_revokable_flag", js.undefined)
+    def setBought_asset_issuerUndefined: Self = StObject.set(x, "bought_asset_issuer", js.undefined)
     
     @scala.inline
-    def setBalance_id(value: String): Self = this.set("balance_id", value.asInstanceOf[js.Any])
+    def setBought_asset_type(value: String): Self = StObject.set(x, "bought_asset_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBalance_id: Self = this.set("balance_id", js.undefined)
+    def setBought_asset_typeUndefined: Self = StObject.set(x, "bought_asset_type", js.undefined)
     
     @scala.inline
-    def setBought_amount(value: String): Self = this.set("bought_amount", value.asInstanceOf[js.Any])
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBought_amount: Self = this.set("bought_amount", js.undefined)
+    def setData_name(value: String): Self = StObject.set(x, "data_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBought_asset_code(value: String): Self = this.set("bought_asset_code", value.asInstanceOf[js.Any])
+    def setData_nameUndefined: Self = StObject.set(x, "data_name", js.undefined)
     
     @scala.inline
-    def deleteBought_asset_code: Self = this.set("bought_asset_code", js.undefined)
+    def setFormer_sponsor(value: String): Self = StObject.set(x, "former_sponsor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBought_asset_issuer(value: String): Self = this.set("bought_asset_issuer", value.asInstanceOf[js.Any])
+    def setFormer_sponsorUndefined: Self = StObject.set(x, "former_sponsor", js.undefined)
     
     @scala.inline
-    def deleteBought_asset_issuer: Self = this.set("bought_asset_issuer", js.undefined)
+    def setHigh_threshold(value: Double): Self = StObject.set(x, "high_threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBought_asset_type(value: String): Self = this.set("bought_asset_type", value.asInstanceOf[js.Any])
+    def setHigh_thresholdUndefined: Self = StObject.set(x, "high_threshold", js.undefined)
     
     @scala.inline
-    def deleteBought_asset_type: Self = this.set("bought_asset_type", js.undefined)
+    def setHome_domain(value: String): Self = StObject.set(x, "home_domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData_name(value: String): Self = this.set("data_name", value.asInstanceOf[js.Any])
+    def setHome_domainUndefined: Self = StObject.set(x, "home_domain", js.undefined)
     
     @scala.inline
-    def deleteData_name: Self = this.set("data_name", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormer_sponsor(value: String): Self = this.set("former_sponsor", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormer_sponsor: Self = this.set("former_sponsor", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setHigh_threshold(value: Double): Self = this.set("high_threshold", value.asInstanceOf[js.Any])
+    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHigh_threshold: Self = this.set("high_threshold", js.undefined)
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def setHome_domain(value: String): Self = this.set("home_domain", value.asInstanceOf[js.Any])
+    def setLow_threshold(value: Double): Self = StObject.set(x, "low_threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHome_domain: Self = this.set("home_domain", js.undefined)
+    def setLow_thresholdUndefined: Self = StObject.set(x, "low_threshold", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMed_threshold(value: Double): Self = StObject.set(x, "med_threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMed_thresholdUndefined: Self = StObject.set(x, "med_threshold", js.undefined)
     
     @scala.inline
-    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setNew_seq(value: Double | String): Self = StObject.set(x, "new_seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setNew_seqUndefined: Self = StObject.set(x, "new_seq", js.undefined)
     
     @scala.inline
-    def setLow_threshold(value: Double): Self = this.set("low_threshold", value.asInstanceOf[js.Any])
+    def setNew_sponsor(value: String): Self = StObject.set(x, "new_sponsor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLow_threshold: Self = this.set("low_threshold", js.undefined)
+    def setNew_sponsorUndefined: Self = StObject.set(x, "new_sponsor", js.undefined)
     
     @scala.inline
-    def setMed_threshold(value: Double): Self = this.set("med_threshold", value.asInstanceOf[js.Any])
+    def setOffer_id(value: Double | String): Self = StObject.set(x, "offer_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMed_threshold: Self = this.set("med_threshold", js.undefined)
+    def setOffer_idUndefined: Self = StObject.set(x, "offer_id", js.undefined)
     
     @scala.inline
-    def setNew_seq(value: Double | String): Self = this.set("new_seq", value.asInstanceOf[js.Any])
+    def setOperation(value: () => js.Promise[OperationRecord]): Self = StObject.set(x, "operation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteNew_seq: Self = this.set("new_seq", js.undefined)
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def setNew_sponsor(value: String): Self = this.set("new_sponsor", value.asInstanceOf[js.Any])
+    def setPaging_token(value: String): Self = StObject.set(x, "paging_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_sponsor: Self = this.set("new_sponsor", js.undefined)
+    def setPrecedes(value: () => js.Promise[EffectRecord]): Self = StObject.set(x, "precedes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOffer_id(value: Double | String): Self = this.set("offer_id", value.asInstanceOf[js.Any])
+    def setPrecedesUndefined: Self = StObject.set(x, "precedes", js.undefined)
     
     @scala.inline
-    def deleteOffer_id: Self = this.set("offer_id", js.undefined)
+    def setPredicate(value: Predicate): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: () => js.Promise[OperationRecord]): Self = this.set("operation", js.Any.fromFunction0(value))
+    def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecedes(value: () => js.Promise[EffectRecord]): Self = this.set("precedes", js.Any.fromFunction0(value))
+    def setPublic_keyUndefined: Self = StObject.set(x, "public_key", js.undefined)
     
     @scala.inline
-    def deletePrecedes: Self = this.set("precedes", js.undefined)
+    def setSigner(value: String): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredicate(value: Predicate): Self = this.set("predicate", value.asInstanceOf[js.Any])
+    def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
     
     @scala.inline
-    def deletePredicate: Self = this.set("predicate", js.undefined)
+    def setSold_amount(value: String): Self = StObject.set(x, "sold_amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublic_key(value: String): Self = this.set("public_key", value.asInstanceOf[js.Any])
+    def setSold_amountUndefined: Self = StObject.set(x, "sold_amount", js.undefined)
     
     @scala.inline
-    def deletePublic_key: Self = this.set("public_key", js.undefined)
+    def setSold_asset_code(value: String): Self = StObject.set(x, "sold_asset_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigner(value: String): Self = this.set("signer", value.asInstanceOf[js.Any])
+    def setSold_asset_codeUndefined: Self = StObject.set(x, "sold_asset_code", js.undefined)
     
     @scala.inline
-    def deleteSigner: Self = this.set("signer", js.undefined)
+    def setSold_asset_issuer(value: String): Self = StObject.set(x, "sold_asset_issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSold_amount(value: String): Self = this.set("sold_amount", value.asInstanceOf[js.Any])
+    def setSold_asset_issuerUndefined: Self = StObject.set(x, "sold_asset_issuer", js.undefined)
     
     @scala.inline
-    def deleteSold_amount: Self = this.set("sold_amount", js.undefined)
+    def setSold_asset_type(value: String): Self = StObject.set(x, "sold_asset_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSold_asset_code(value: String): Self = this.set("sold_asset_code", value.asInstanceOf[js.Any])
+    def setSold_asset_typeUndefined: Self = StObject.set(x, "sold_asset_type", js.undefined)
     
     @scala.inline
-    def deleteSold_asset_code: Self = this.set("sold_asset_code", js.undefined)
+    def setSponsor(value: String): Self = StObject.set(x, "sponsor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSold_asset_issuer(value: String): Self = this.set("sold_asset_issuer", value.asInstanceOf[js.Any])
+    def setSponsorUndefined: Self = StObject.set(x, "sponsor", js.undefined)
     
     @scala.inline
-    def deleteSold_asset_issuer: Self = this.set("sold_asset_issuer", js.undefined)
+    def setStarting_balance(value: String): Self = StObject.set(x, "starting_balance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSold_asset_type(value: String): Self = this.set("sold_asset_type", value.asInstanceOf[js.Any])
+    def setStarting_balanceUndefined: Self = StObject.set(x, "starting_balance", js.undefined)
     
     @scala.inline
-    def deleteSold_asset_type: Self = this.set("sold_asset_type", js.undefined)
+    def setSucceeds(value: () => js.Promise[EffectRecord]): Self = StObject.set(x, "succeeds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSponsor(value: String): Self = this.set("sponsor", value.asInstanceOf[js.Any])
+    def setSucceedsUndefined: Self = StObject.set(x, "succeeds", js.undefined)
     
     @scala.inline
-    def deleteSponsor: Self = this.set("sponsor", js.undefined)
+    def setTrustor(value: String): Self = StObject.set(x, "trustor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarting_balance(value: String): Self = this.set("starting_balance", value.asInstanceOf[js.Any])
+    def setTrustorUndefined: Self = StObject.set(x, "trustor", js.undefined)
     
     @scala.inline
-    def deleteStarting_balance: Self = this.set("starting_balance", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSucceeds(value: () => js.Promise[EffectRecord]): Self = this.set("succeeds", js.Any.fromFunction0(value))
+    def setType_i(value: String): Self = StObject.set(x, "type_i", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSucceeds: Self = this.set("succeeds", js.undefined)
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrustor(value: String): Self = this.set("trustor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustor: Self = this.set("trustor", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

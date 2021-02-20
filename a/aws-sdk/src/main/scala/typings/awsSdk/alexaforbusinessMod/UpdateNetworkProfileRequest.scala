@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateNetworkProfileRequest extends js.Object {
+trait UpdateNetworkProfileRequest extends StObject {
   
   /**
     * The ARN of the Private Certificate Authority (PCA) created in AWS Certificate Manager (ACM). This is used to issue certificates to the devices. 
@@ -51,60 +52,48 @@ object UpdateNetworkProfileRequest {
   }
   
   @scala.inline
-  implicit class UpdateNetworkProfileRequestOps[Self <: UpdateNetworkProfileRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateNetworkProfileRequestMutableBuilder[Self <: UpdateNetworkProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentPassword(value: CurrentWiFiPassword): Self = StObject.set(x, "CurrentPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkProfileArn(value: Arn): Self = this.set("NetworkProfileArn", value.asInstanceOf[js.Any])
+    def setCurrentPasswordUndefined: Self = StObject.set(x, "CurrentPassword", js.undefined)
     
     @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    def setDescription(value: NetworkProfileDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertificateAuthorityArn: Self = this.set("CertificateAuthorityArn", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCurrentPassword(value: CurrentWiFiPassword): Self = this.set("CurrentPassword", value.asInstanceOf[js.Any])
+    def setNetworkProfileArn(value: Arn): Self = StObject.set(x, "NetworkProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrentPassword: Self = this.set("CurrentPassword", js.undefined)
+    def setNetworkProfileName(value: NetworkProfileName): Self = StObject.set(x, "NetworkProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: NetworkProfileDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setNetworkProfileNameUndefined: Self = StObject.set(x, "NetworkProfileName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setNextPassword(value: NextWiFiPassword): Self = StObject.set(x, "NextPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkProfileName(value: NetworkProfileName): Self = this.set("NetworkProfileName", value.asInstanceOf[js.Any])
+    def setNextPasswordUndefined: Self = StObject.set(x, "NextPassword", js.undefined)
     
     @scala.inline
-    def deleteNetworkProfileName: Self = this.set("NetworkProfileName", js.undefined)
+    def setTrustAnchors(value: TrustAnchorList): Self = StObject.set(x, "TrustAnchors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPassword(value: NextWiFiPassword): Self = this.set("NextPassword", value.asInstanceOf[js.Any])
+    def setTrustAnchorsUndefined: Self = StObject.set(x, "TrustAnchors", js.undefined)
     
     @scala.inline
-    def deleteNextPassword: Self = this.set("NextPassword", js.undefined)
-    
-    @scala.inline
-    def setTrustAnchorsVarargs(value: TrustAnchor*): Self = this.set("TrustAnchors", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrustAnchors(value: TrustAnchorList): Self = this.set("TrustAnchors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustAnchors: Self = this.set("TrustAnchors", js.undefined)
+    def setTrustAnchorsVarargs(value: TrustAnchor*): Self = StObject.set(x, "TrustAnchors", js.Array(value :_*))
   }
 }

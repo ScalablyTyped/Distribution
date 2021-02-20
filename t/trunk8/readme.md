@@ -2,6 +2,24 @@
 # Scala.js typings for trunk8
 
 
+## Library description:
+trunk8 is an intelligent text truncation extension to jQuery
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | trunk8 |
+| Keywords           | truncate, trunk8, jquery, text, cut-off, spill-over |
+| # releases         | 0 |
+| # dependents       | 0 |
+| # downloads        | 41750 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/rviscomi/trunk8#readme)
+- [Bugs](https://github.com/rviscomi/trunk8/issues)
+- [Repository](https://github.com/rviscomi/trunk8)
+- [Npm](https://www.npmjs.com/package/trunk8)
+    
 
 
 ## Note

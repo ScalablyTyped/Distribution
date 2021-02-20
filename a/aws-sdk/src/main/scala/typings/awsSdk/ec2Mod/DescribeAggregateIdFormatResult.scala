@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAggregateIdFormatResult extends js.Object {
+trait DescribeAggregateIdFormatResult extends StObject {
   
   /**
     * Information about each resource's ID format.
@@ -26,33 +27,21 @@ object DescribeAggregateIdFormatResult {
   }
   
   @scala.inline
-  implicit class DescribeAggregateIdFormatResultOps[Self <: DescribeAggregateIdFormatResult] (val x: Self) extends AnyVal {
+  implicit class DescribeAggregateIdFormatResultMutableBuilder[Self <: DescribeAggregateIdFormatResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatuses(value: IdFormatList): Self = StObject.set(x, "Statuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatusesUndefined: Self = StObject.set(x, "Statuses", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatusesVarargs(value: IdFormat*): Self = StObject.set(x, "Statuses", js.Array(value :_*))
     
     @scala.inline
-    def setStatusesVarargs(value: IdFormat*): Self = this.set("Statuses", js.Array(value :_*))
+    def setUseLongIdsAggregated(value: Boolean): Self = StObject.set(x, "UseLongIdsAggregated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatuses(value: IdFormatList): Self = this.set("Statuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatuses: Self = this.set("Statuses", js.undefined)
-    
-    @scala.inline
-    def setUseLongIdsAggregated(value: Boolean): Self = this.set("UseLongIdsAggregated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLongIdsAggregated: Self = this.set("UseLongIdsAggregated", js.undefined)
+    def setUseLongIdsAggregatedUndefined: Self = StObject.set(x, "UseLongIdsAggregated", js.undefined)
   }
 }

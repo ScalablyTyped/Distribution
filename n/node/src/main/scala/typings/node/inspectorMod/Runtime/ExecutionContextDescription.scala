@@ -1,5 +1,6 @@
 package typings.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Description of an isolated world.
   */
 @js.native
-trait ExecutionContextDescription extends js.Object {
+trait ExecutionContextDescription extends StObject {
   
   /**
     * Embedder-specific auxiliary data.
@@ -39,33 +40,21 @@ object ExecutionContextDescription {
   }
   
   @scala.inline
-  implicit class ExecutionContextDescriptionOps[Self <: ExecutionContextDescription] (val x: Self) extends AnyVal {
+  implicit class ExecutionContextDescriptionMutableBuilder[Self <: ExecutionContextDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuxData(value: js.Object): Self = StObject.set(x, "auxData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuxDataUndefined: Self = StObject.set(x, "auxData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: ExecutionContextId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ExecutionContextId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuxData(value: js.Object): Self = this.set("auxData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuxData: Self = this.set("auxData", js.undefined)
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

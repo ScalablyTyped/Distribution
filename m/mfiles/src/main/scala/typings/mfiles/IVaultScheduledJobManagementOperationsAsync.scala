@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultScheduledJobManagementOperationsAsync extends js.Object {
+trait IVaultScheduledJobManagementOperationsAsync extends StObject {
   
   def AddScheduledJob(ScheduledJob: IScheduledJob): Unit = js.native
   def AddScheduledJob(

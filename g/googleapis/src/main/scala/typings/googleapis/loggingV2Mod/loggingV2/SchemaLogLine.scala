@@ -1,5 +1,6 @@
 package typings.googleapis.loggingV2Mod.loggingV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Application log line emitted while processing a request.
   */
 @js.native
-trait SchemaLogLine extends js.Object {
+trait SchemaLogLine extends StObject {
   
   /**
     * App-provided log message.
@@ -39,42 +40,30 @@ object SchemaLogLine {
   }
   
   @scala.inline
-  implicit class SchemaLogLineOps[Self <: SchemaLogLine] (val x: Self) extends AnyVal {
+  implicit class SchemaLogLineMutableBuilder[Self <: SchemaLogLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogMessage(value: String): Self = StObject.set(x, "logMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogMessageUndefined: Self = StObject.set(x, "logMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogMessage(value: String): Self = this.set("logMessage", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     @scala.inline
-    def deleteLogMessage: Self = this.set("logMessage", js.undefined)
+    def setSourceLocation(value: SchemaSourceLocation): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
+    def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
     
     @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLocation(value: SchemaSourceLocation): Self = this.set("sourceLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceLocation: Self = this.set("sourceLocation", js.undefined)
-    
-    @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

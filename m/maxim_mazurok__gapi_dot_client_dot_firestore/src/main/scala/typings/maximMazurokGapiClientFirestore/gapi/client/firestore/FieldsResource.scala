@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientFirestore.anon.Accesstoken
 import typings.maximMazurokGapiClientFirestore.anon.Alt
 import typings.maximMazurokGapiClientFirestore.anon.Callback
 import typings.maximMazurokGapiClientFirestore.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldsResource extends js.Object {
+trait FieldsResource extends StObject {
   
   /** Gets the metadata and configuration for a Field. */
   def get(): Request[GoogleFirestoreAdminV1Field] = js.native

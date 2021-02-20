@@ -3,14 +3,14 @@ package typings.typeorm
 import typings.typeorm.auroraDataApiPostgresConnectionOptionsMod.AuroraDataApiPostgresConnectionOptions
 import typings.typeorm.connectionMod.Connection
 import typings.typeorm.postgresDriverMod.PostgresDriver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/driver/aurora-data-api-pg/AuroraDataApiPostgresDriver", JSImport.Namespace)
-@js.native
-object auroraDataApiPostgresDriverMod extends js.Object {
+object auroraDataApiPostgresDriverMod {
   
+  @JSImport("typeorm/browser/driver/aurora-data-api-pg/AuroraDataApiPostgresDriver", "AuroraDataApiPostgresDriver")
   @js.native
   class AuroraDataApiPostgresDriver protected () extends PostgresWrapper {
     def this(connection: Connection) = this()

@@ -4,12 +4,13 @@ import typings.popperjsCore.enumsMod.BasePlacement
 import typings.popperjsCore.typesMod.PositioningStrategy
 import typings.popperjsCore.typesMod.Rect
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Adaptive extends js.Object {
+trait Adaptive extends StObject {
   
   var adaptive: Boolean = js.native
   
@@ -42,39 +43,27 @@ object Adaptive {
   }
   
   @scala.inline
-  implicit class AdaptiveOps[Self <: Adaptive] (val x: Self) extends AnyVal {
+  implicit class AdaptiveMutableBuilder[Self <: Adaptive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdaptive(value: Boolean): Self = StObject.set(x, "adaptive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsets(value: Partialxnumberynumbercent): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdaptive(value: Boolean): Self = this.set("adaptive", value.asInstanceOf[js.Any])
+    def setPlacement(value: BasePlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGpuAcceleration(value: Boolean): Self = this.set("gpuAcceleration", value.asInstanceOf[js.Any])
+    def setPopper(value: HTMLElement): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsets(value: Partialxnumberynumbercent): Self = this.set("offsets", value.asInstanceOf[js.Any])
+    def setPopperRect(value: Rect): Self = StObject.set(x, "popperRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: BasePlacement): Self = this.set("placement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopper(value: HTMLElement): Self = this.set("popper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopperRect(value: Rect): Self = this.set("popperRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: PositioningStrategy): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: PositioningStrategy): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

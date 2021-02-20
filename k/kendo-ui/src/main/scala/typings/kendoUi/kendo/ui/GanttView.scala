@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttView extends js.Object {
+trait GanttView extends StObject {
   
   var date: js.UndefOr[Date] = js.native
   
@@ -39,84 +40,72 @@ object GanttView {
   }
   
   @scala.inline
-  implicit class GanttViewOps[Self <: GanttView] (val x: Self) extends AnyVal {
+  implicit class GanttViewMutableBuilder[Self <: GanttView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "dayHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDayHeaderTemplateUndefined: Self = StObject.set(x, "dayHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setMonthHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "monthHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayHeaderTemplate(value: String | js.Function): Self = this.set("dayHeaderTemplate", value.asInstanceOf[js.Any])
+    def setMonthHeaderTemplateUndefined: Self = StObject.set(x, "monthHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteDayHeaderTemplate: Self = this.set("dayHeaderTemplate", js.undefined)
+    def setRange(value: GanttViewRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthHeaderTemplate(value: String | js.Function): Self = this.set("monthHeaderTemplate", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteMonthHeaderTemplate: Self = this.set("monthHeaderTemplate", js.undefined)
+    def setResizeTooltipFormat(value: String): Self = StObject.set(x, "resizeTooltipFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: GanttViewRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setResizeTooltipFormatUndefined: Self = StObject.set(x, "resizeTooltipFormat", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeTooltipFormat(value: String): Self = this.set("resizeTooltipFormat", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteResizeTooltipFormat: Self = this.set("resizeTooltipFormat", js.undefined)
+    def setSlotSize(value: Double | String): Self = StObject.set(x, "slotSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSlotSizeUndefined: Self = StObject.set(x, "slotSize", js.undefined)
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setTimeHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "timeHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotSize(value: Double | String): Self = this.set("slotSize", value.asInstanceOf[js.Any])
+    def setTimeHeaderTemplateUndefined: Self = StObject.set(x, "timeHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteSlotSize: Self = this.set("slotSize", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeHeaderTemplate(value: String | js.Function): Self = this.set("timeHeaderTemplate", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTimeHeaderTemplate: Self = this.set("timeHeaderTemplate", js.undefined)
+    def setWeekHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "weekHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setWeekHeaderTemplateUndefined: Self = StObject.set(x, "weekHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setYearHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "yearHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekHeaderTemplate(value: String | js.Function): Self = this.set("weekHeaderTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekHeaderTemplate: Self = this.set("weekHeaderTemplate", js.undefined)
-    
-    @scala.inline
-    def setYearHeaderTemplate(value: String | js.Function): Self = this.set("yearHeaderTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYearHeaderTemplate: Self = this.set("yearHeaderTemplate", js.undefined)
+    def setYearHeaderTemplateUndefined: Self = StObject.set(x, "yearHeaderTemplate", js.undefined)
   }
 }

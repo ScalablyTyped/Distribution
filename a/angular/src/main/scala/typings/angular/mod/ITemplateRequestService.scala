@@ -1,5 +1,6 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see http://docs.angularjs.org/api/ng/service/$templateRequest
   */
 @js.native
-trait ITemplateRequestService extends js.Object {
+trait ITemplateRequestService extends StObject {
   
   /**
     * Downloads a template using $http and, upon success, stores the

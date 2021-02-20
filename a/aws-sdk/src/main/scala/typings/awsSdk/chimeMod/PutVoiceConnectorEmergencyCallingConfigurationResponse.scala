@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutVoiceConnectorEmergencyCallingConfigurationResponse extends js.Object {
+trait PutVoiceConnectorEmergencyCallingConfigurationResponse extends StObject {
   
   /**
     * The emergency calling configuration details.
@@ -21,24 +22,12 @@ object PutVoiceConnectorEmergencyCallingConfigurationResponse {
   }
   
   @scala.inline
-  implicit class PutVoiceConnectorEmergencyCallingConfigurationResponseOps[Self <: PutVoiceConnectorEmergencyCallingConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class PutVoiceConnectorEmergencyCallingConfigurationResponseMutableBuilder[Self <: PutVoiceConnectorEmergencyCallingConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmergencyCallingConfiguration(value: EmergencyCallingConfiguration): Self = StObject.set(x, "EmergencyCallingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEmergencyCallingConfiguration(value: EmergencyCallingConfiguration): Self = this.set("EmergencyCallingConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmergencyCallingConfiguration: Self = this.set("EmergencyCallingConfiguration", js.undefined)
+    def setEmergencyCallingConfigurationUndefined: Self = StObject.set(x, "EmergencyCallingConfiguration", js.undefined)
   }
 }

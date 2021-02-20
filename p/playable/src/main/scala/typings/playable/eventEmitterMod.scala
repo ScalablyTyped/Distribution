@@ -4,13 +4,29 @@ import typings.eventemitter3.mod.EventEmitter
 import typings.eventemitter3.mod.ListenerFn
 import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.eventEmitterTypesMod.IEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/event-emitter/event-emitter", JSImport.Namespace)
-@js.native
-object eventEmitterMod extends js.Object {
+object eventEmitterMod {
+  
+  @JSImport("playable/dist/src/modules/event-emitter/event-emitter", JSImport.Default)
+  @js.native
+  class default () extends EventEmitterModule
+  object default {
+    
+    @JSImport("playable/dist/src/modules/event-emitter/event-emitter", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("playable/dist/src/modules/event-emitter/event-emitter", "default.moduleName")
+    @js.native
+    def moduleName: String = js.native
+    @scala.inline
+    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait EventEmitterModule
@@ -36,14 +52,5 @@ object eventEmitterMod extends js.Object {
       */
     def once(event: String, fn: ListenerFn[js.Array[_]]): this.type = js.native
     def once(event: String, fn: ListenerFn[js.Array[_]], context: js.Any): this.type = js.native
-  }
-  
-  @js.native
-  class default () extends EventEmitterModule
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var moduleName: String = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutExternalModelRequest extends js.Object {
+trait PutExternalModelRequest extends StObject {
   
   /**
     * The model endpoint input configuration.
@@ -58,45 +59,33 @@ object PutExternalModelRequest {
   }
   
   @scala.inline
-  implicit class PutExternalModelRequestOps[Self <: PutExternalModelRequest] (val x: Self) extends AnyVal {
+  implicit class PutExternalModelRequestMutableBuilder[Self <: PutExternalModelRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputConfiguration(value: ModelInputConfiguration): Self = StObject.set(x, "inputConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvokeModelEndpointRoleArn(value: String): Self = StObject.set(x, "invokeModelEndpointRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelEndpoint(value: sageMakerEndpointIdentifier): Self = StObject.set(x, "modelEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfiguration(value: ModelInputConfiguration): Self = this.set("inputConfiguration", value.asInstanceOf[js.Any])
+    def setModelEndpointStatus(value: ModelEndpointStatus): Self = StObject.set(x, "modelEndpointStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvokeModelEndpointRoleArn(value: String): Self = this.set("invokeModelEndpointRoleArn", value.asInstanceOf[js.Any])
+    def setModelSource(value: ModelSource): Self = StObject.set(x, "modelSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelEndpoint(value: sageMakerEndpointIdentifier): Self = this.set("modelEndpoint", value.asInstanceOf[js.Any])
+    def setOutputConfiguration(value: ModelOutputConfiguration): Self = StObject.set(x, "outputConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelEndpointStatus(value: ModelEndpointStatus): Self = this.set("modelEndpointStatus", value.asInstanceOf[js.Any])
+    def setTags(value: tagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelSource(value: ModelSource): Self = this.set("modelSource", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setOutputConfiguration(value: ModelOutputConfiguration): Self = this.set("outputConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: tagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

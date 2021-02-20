@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminateRecommendationDetail extends js.Object {
+trait TerminateRecommendationDetail extends StObject {
   
   /**
     *  The currency code that AWS used to calculate the costs for this instance.
@@ -26,30 +27,18 @@ object TerminateRecommendationDetail {
   }
   
   @scala.inline
-  implicit class TerminateRecommendationDetailOps[Self <: TerminateRecommendationDetail] (val x: Self) extends AnyVal {
+  implicit class TerminateRecommendationDetailMutableBuilder[Self <: TerminateRecommendationDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEstimatedMonthlySavings(value: GenericString): Self = StObject.set(x, "EstimatedMonthlySavings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: GenericString): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
-    
-    @scala.inline
-    def setEstimatedMonthlySavings(value: GenericString): Self = this.set("EstimatedMonthlySavings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEstimatedMonthlySavings: Self = this.set("EstimatedMonthlySavings", js.undefined)
+    def setEstimatedMonthlySavingsUndefined: Self = StObject.set(x, "EstimatedMonthlySavings", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProcessingJobRequest extends js.Object {
+trait CreateProcessingJobRequest extends StObject {
   
   /**
     * Configures the processing job to run a specified Docker container image.
@@ -73,78 +74,66 @@ object CreateProcessingJobRequest {
   }
   
   @scala.inline
-  implicit class CreateProcessingJobRequestOps[Self <: CreateProcessingJobRequest] (val x: Self) extends AnyVal {
+  implicit class CreateProcessingJobRequestMutableBuilder[Self <: CreateProcessingJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppSpecification(value: AppSpecification): Self = StObject.set(x, "AppSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironment(value: ProcessingEnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
     @scala.inline
-    def setAppSpecification(value: AppSpecification): Self = this.set("AppSpecification", value.asInstanceOf[js.Any])
+    def setExperimentConfig(value: ExperimentConfig): Self = StObject.set(x, "ExperimentConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingJobName(value: ProcessingJobName): Self = this.set("ProcessingJobName", value.asInstanceOf[js.Any])
+    def setExperimentConfigUndefined: Self = StObject.set(x, "ExperimentConfig", js.undefined)
     
     @scala.inline
-    def setProcessingResources(value: ProcessingResources): Self = this.set("ProcessingResources", value.asInstanceOf[js.Any])
+    def setNetworkConfig(value: NetworkConfig): Self = StObject.set(x, "NetworkConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setNetworkConfigUndefined: Self = StObject.set(x, "NetworkConfig", js.undefined)
     
     @scala.inline
-    def setEnvironment(value: ProcessingEnvironmentMap): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    def setProcessingInputs(value: ProcessingInputs): Self = StObject.set(x, "ProcessingInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    def setProcessingInputsUndefined: Self = StObject.set(x, "ProcessingInputs", js.undefined)
     
     @scala.inline
-    def setExperimentConfig(value: ExperimentConfig): Self = this.set("ExperimentConfig", value.asInstanceOf[js.Any])
+    def setProcessingInputsVarargs(value: ProcessingInput*): Self = StObject.set(x, "ProcessingInputs", js.Array(value :_*))
     
     @scala.inline
-    def deleteExperimentConfig: Self = this.set("ExperimentConfig", js.undefined)
+    def setProcessingJobName(value: ProcessingJobName): Self = StObject.set(x, "ProcessingJobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkConfig(value: NetworkConfig): Self = this.set("NetworkConfig", value.asInstanceOf[js.Any])
+    def setProcessingOutputConfig(value: ProcessingOutputConfig): Self = StObject.set(x, "ProcessingOutputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetworkConfig: Self = this.set("NetworkConfig", js.undefined)
+    def setProcessingOutputConfigUndefined: Self = StObject.set(x, "ProcessingOutputConfig", js.undefined)
     
     @scala.inline
-    def setProcessingInputsVarargs(value: ProcessingInput*): Self = this.set("ProcessingInputs", js.Array(value :_*))
+    def setProcessingResources(value: ProcessingResources): Self = StObject.set(x, "ProcessingResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingInputs(value: ProcessingInputs): Self = this.set("ProcessingInputs", value.asInstanceOf[js.Any])
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProcessingInputs: Self = this.set("ProcessingInputs", js.undefined)
+    def setStoppingCondition(value: ProcessingStoppingCondition): Self = StObject.set(x, "StoppingCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingOutputConfig(value: ProcessingOutputConfig): Self = this.set("ProcessingOutputConfig", value.asInstanceOf[js.Any])
+    def setStoppingConditionUndefined: Self = StObject.set(x, "StoppingCondition", js.undefined)
     
     @scala.inline
-    def deleteProcessingOutputConfig: Self = this.set("ProcessingOutputConfig", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoppingCondition(value: ProcessingStoppingCondition): Self = this.set("StoppingCondition", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStoppingCondition: Self = this.set("StoppingCondition", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

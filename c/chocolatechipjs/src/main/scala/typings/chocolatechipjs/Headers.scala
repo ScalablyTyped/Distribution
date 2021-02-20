@@ -1,5 +1,6 @@
 package typings.chocolatechipjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Headers Interface. This defines the methods exposed by the Headers object.
   */
 @js.native
-trait Headers extends js.Object {
+trait Headers extends StObject {
   
   def apply(): Unit = js.native
   def apply(headers: js.Any): Unit = js.native

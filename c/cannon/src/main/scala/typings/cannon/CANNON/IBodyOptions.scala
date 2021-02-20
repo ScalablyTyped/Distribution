@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBodyOptions extends js.Object {
+trait IBodyOptions extends StObject {
   
   var allowSleep: js.UndefOr[Boolean] = js.native
   
@@ -48,114 +49,102 @@ object IBodyOptions {
   }
   
   @scala.inline
-  implicit class IBodyOptionsOps[Self <: IBodyOptions] (val x: Self) extends AnyVal {
+  implicit class IBodyOptionsMutableBuilder[Self <: IBodyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSleep(value: Boolean): Self = StObject.set(x, "allowSleep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSleepUndefined: Self = StObject.set(x, "allowSleep", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAngularDamping(value: Double): Self = StObject.set(x, "angularDamping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSleep(value: Boolean): Self = this.set("allowSleep", value.asInstanceOf[js.Any])
+    def setAngularDampingUndefined: Self = StObject.set(x, "angularDamping", js.undefined)
     
     @scala.inline
-    def deleteAllowSleep: Self = this.set("allowSleep", js.undefined)
+    def setAngularVelocity(value: Vec3): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngularDamping(value: Double): Self = this.set("angularDamping", value.asInstanceOf[js.Any])
+    def setAngularVelocityUndefined: Self = StObject.set(x, "angularVelocity", js.undefined)
     
     @scala.inline
-    def deleteAngularDamping: Self = this.set("angularDamping", js.undefined)
+    def setCollisionFilterGroup(value: Double): Self = StObject.set(x, "collisionFilterGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngularVelocity(value: Vec3): Self = this.set("angularVelocity", value.asInstanceOf[js.Any])
+    def setCollisionFilterGroupUndefined: Self = StObject.set(x, "collisionFilterGroup", js.undefined)
     
     @scala.inline
-    def deleteAngularVelocity: Self = this.set("angularVelocity", js.undefined)
+    def setCollisionFilterMask(value: Double): Self = StObject.set(x, "collisionFilterMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollisionFilterGroup(value: Double): Self = this.set("collisionFilterGroup", value.asInstanceOf[js.Any])
+    def setCollisionFilterMaskUndefined: Self = StObject.set(x, "collisionFilterMask", js.undefined)
     
     @scala.inline
-    def deleteCollisionFilterGroup: Self = this.set("collisionFilterGroup", js.undefined)
+    def setFixedRotation(value: Boolean): Self = StObject.set(x, "fixedRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollisionFilterMask(value: Double): Self = this.set("collisionFilterMask", value.asInstanceOf[js.Any])
+    def setFixedRotationUndefined: Self = StObject.set(x, "fixedRotation", js.undefined)
     
     @scala.inline
-    def deleteCollisionFilterMask: Self = this.set("collisionFilterMask", js.undefined)
+    def setLinearDamping(value: Double): Self = StObject.set(x, "linearDamping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedRotation(value: Boolean): Self = this.set("fixedRotation", value.asInstanceOf[js.Any])
+    def setLinearDampingUndefined: Self = StObject.set(x, "linearDamping", js.undefined)
     
     @scala.inline
-    def deleteFixedRotation: Self = this.set("fixedRotation", js.undefined)
+    def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearDamping(value: Double): Self = this.set("linearDamping", value.asInstanceOf[js.Any])
+    def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
     
     @scala.inline
-    def deleteLinearDamping: Self = this.set("linearDamping", js.undefined)
+    def setMaterial(value: Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMass(value: Double): Self = this.set("mass", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteMass: Self = this.set("mass", js.undefined)
+    def setPosition(value: Vec3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: Material): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setQuaternion(value: Quaternion): Self = StObject.set(x, "quaternion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Vec3): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setQuaternionUndefined: Self = StObject.set(x, "quaternion", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuaternion(value: Quaternion): Self = this.set("quaternion", value.asInstanceOf[js.Any])
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def deleteQuaternion: Self = this.set("quaternion", js.undefined)
+    def setSleepSpeedLimit(value: Double): Self = StObject.set(x, "sleepSpeedLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: Shape): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setSleepSpeedLimitUndefined: Self = StObject.set(x, "sleepSpeedLimit", js.undefined)
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setSleepTimeLimit(value: Double): Self = StObject.set(x, "sleepTimeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSleepSpeedLimit(value: Double): Self = this.set("sleepSpeedLimit", value.asInstanceOf[js.Any])
+    def setSleepTimeLimitUndefined: Self = StObject.set(x, "sleepTimeLimit", js.undefined)
     
     @scala.inline
-    def deleteSleepSpeedLimit: Self = this.set("sleepSpeedLimit", js.undefined)
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSleepTimeLimit(value: Double): Self = this.set("sleepTimeLimit", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSleepTimeLimit: Self = this.set("sleepTimeLimit", js.undefined)
+    def setVelocity(value: Vec3): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVelocity(value: Vec3): Self = this.set("velocity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVelocity: Self = this.set("velocity", js.undefined)
+    def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
   }
 }

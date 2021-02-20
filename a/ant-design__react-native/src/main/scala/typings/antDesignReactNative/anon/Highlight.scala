@@ -2,12 +2,13 @@ package typings.antDesignReactNative.anon
 
 import typings.antDesignReactNative.antDesignReactNativeStrings.leading
 import typings.antDesignReactNative.antDesignReactNativeStrings.trailing
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Highlight extends js.Object {
+trait Highlight extends StObject {
   
   def highlight(): Unit = js.native
   

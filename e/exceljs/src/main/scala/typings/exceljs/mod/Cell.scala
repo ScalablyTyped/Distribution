@@ -2,6 +2,7 @@ package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialStyle
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,7 +89,7 @@ trait Cell
   	 */
   var style: PartialStyle = js.native
   
-  	// todo
+  // todo
   val text: String = js.native
   
   def toCsvString(): String = js.native

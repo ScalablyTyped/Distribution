@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureTemplatesViewModelProperties extends js.Object {
+trait FeatureTemplatesViewModelProperties extends StObject {
   
   /**
     * [Function](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#FilterFunction) can be defined to help filter [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) within the widget.
@@ -37,42 +38,30 @@ object FeatureTemplatesViewModelProperties {
   }
   
   @scala.inline
-  implicit class FeatureTemplatesViewModelPropertiesOps[Self <: FeatureTemplatesViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class FeatureTemplatesViewModelPropertiesMutableBuilder[Self <: FeatureTemplatesViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterFunction(value: /* filterName */ js.Any => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterFunctionUndefined: Self = StObject.set(x, "filterFunction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupBy(value: String | GroupByFunction): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterFunction(value: /* filterName */ js.Any => Boolean): Self = this.set("filterFunction", js.Any.fromFunction1(value))
+    def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFilterFunction: Self = this.set("filterFunction", js.undefined)
+    def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
     @scala.inline
-    def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = this.set("groupBy", js.Any.fromFunction1(value))
+    def setLayers(value: js.Array[FeatureLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBy(value: String | GroupByFunction): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def deleteGroupBy: Self = this.set("groupBy", js.undefined)
-    
-    @scala.inline
-    def setLayersVarargs(value: FeatureLayerProperties*): Self = this.set("layers", js.Array(value :_*))
-    
-    @scala.inline
-    def setLayers(value: js.Array[FeatureLayerProperties]): Self = this.set("layers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setLayersVarargs(value: FeatureLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

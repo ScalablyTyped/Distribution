@@ -1,13 +1,20 @@
 package typings.materialUiCore
 
+import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.mod.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/colors/amber", JSImport.Namespace)
-@js.native
-object amberMod extends js.Object {
+object amberMod extends Shortcut {
   
+  @JSImport("@material-ui/core/colors/amber", JSImport.Default)
+  @js.native
   val default: Color = js.native
+  
+  type _To = Color
+  
+  /* This means you don't have to write `default`, but can instead just say `amberMod.foo` */
+  override def _to: Color = default
 }

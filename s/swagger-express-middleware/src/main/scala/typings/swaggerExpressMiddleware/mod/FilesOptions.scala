@@ -1,11 +1,12 @@
 package typings.swaggerExpressMiddleware.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilesOptions extends js.Object {
+trait FilesOptions extends StObject {
   
   var apiPath: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object FilesOptions {
   }
   
   @scala.inline
-  implicit class FilesOptionsOps[Self <: FilesOptions] (val x: Self) extends AnyVal {
+  implicit class FilesOptionsMutableBuilder[Self <: FilesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiPath(value: String): Self = StObject.set(x, "apiPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiPathUndefined: Self = StObject.set(x, "apiPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRawFilesPath(value: String): Self = StObject.set(x, "rawFilesPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiPath(value: String): Self = this.set("apiPath", value.asInstanceOf[js.Any])
+    def setRawFilesPathUndefined: Self = StObject.set(x, "rawFilesPath", js.undefined)
     
     @scala.inline
-    def deleteApiPath: Self = this.set("apiPath", js.undefined)
+    def setUseBasePath(value: Boolean): Self = StObject.set(x, "useBasePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawFilesPath(value: String): Self = this.set("rawFilesPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRawFilesPath: Self = this.set("rawFilesPath", js.undefined)
-    
-    @scala.inline
-    def setUseBasePath(value: Boolean): Self = this.set("useBasePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseBasePath: Self = this.set("useBasePath", js.undefined)
+    def setUseBasePathUndefined: Self = StObject.set(x, "useBasePath", js.undefined)
   }
 }

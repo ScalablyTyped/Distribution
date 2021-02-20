@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ENoteConfigurations extends js.Object {
+trait ENoteConfigurations extends StObject {
   
   var connectConfigured: js.UndefOr[String] = js.native
   
@@ -32,48 +33,36 @@ object ENoteConfigurations {
   }
   
   @scala.inline
-  implicit class ENoteConfigurationsOps[Self <: ENoteConfigurations] (val x: Self) extends AnyVal {
+  implicit class ENoteConfigurationsMutableBuilder[Self <: ENoteConfigurations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectConfigured(value: String): Self = StObject.set(x, "connectConfigured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectConfiguredUndefined: Self = StObject.set(x, "connectConfigured", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setENoteConfigured(value: String): Self = StObject.set(x, "eNoteConfigured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectConfigured(value: String): Self = this.set("connectConfigured", value.asInstanceOf[js.Any])
+    def setENoteConfiguredUndefined: Self = StObject.set(x, "eNoteConfigured", js.undefined)
     
     @scala.inline
-    def deleteConnectConfigured: Self = this.set("connectConfigured", js.undefined)
+    def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setENoteConfigured(value: String): Self = this.set("eNoteConfigured", value.asInstanceOf[js.Any])
+    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
     @scala.inline
-    def deleteENoteConfigured: Self = this.set("eNoteConfigured", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: String): Self = this.set("organization", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteOrganization: Self = this.set("organization", js.undefined)
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("userName", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.diff.mod
 
 import typings.diff.diffStrings.Space
 import typings.diff.diffStrings.`-_`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplyPatchOptions extends js.Object {
+trait ApplyPatchOptions extends StObject {
   
   /**
     * Callback used to compare to given lines to determine if they should be considered equal when patching.
@@ -40,32 +41,20 @@ object ApplyPatchOptions {
   }
   
   @scala.inline
-  implicit class ApplyPatchOptionsOps[Self <: ApplyPatchOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ApplyPatchOptionsMutableBuilder[Self <: ApplyPatchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCompareLine(
       value: (/* lineNumber */ Double, /* line */ String, /* operation */ `-_` | Space, /* patchContent */ String) => Boolean
-    ): Self = this.set("compareLine", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "compareLine", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteCompareLine: Self = this.set("compareLine", js.undefined)
+    def setCompareLineUndefined: Self = StObject.set(x, "compareLine", js.undefined)
     
     @scala.inline
-    def setFuzzFactor(value: Double): Self = this.set("fuzzFactor", value.asInstanceOf[js.Any])
+    def setFuzzFactor(value: Double): Self = StObject.set(x, "fuzzFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFuzzFactor: Self = this.set("fuzzFactor", js.undefined)
+    def setFuzzFactorUndefined: Self = StObject.set(x, "fuzzFactor", js.undefined)
   }
 }

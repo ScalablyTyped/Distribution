@@ -1,11 +1,12 @@
 package typings.kuromoji.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TokenizerBuilderOption extends js.Object {
+trait TokenizerBuilderOption extends StObject {
   
   var dicPath: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object TokenizerBuilderOption {
   }
   
   @scala.inline
-  implicit class TokenizerBuilderOptionOps[Self <: TokenizerBuilderOption] (val x: Self) extends AnyVal {
+  implicit class TokenizerBuilderOptionMutableBuilder[Self <: TokenizerBuilderOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDicPath(value: String): Self = StObject.set(x, "dicPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDicPath(value: String): Self = this.set("dicPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDicPath: Self = this.set("dicPath", js.undefined)
+    def setDicPathUndefined: Self = StObject.set(x, "dicPath", js.undefined)
   }
 }

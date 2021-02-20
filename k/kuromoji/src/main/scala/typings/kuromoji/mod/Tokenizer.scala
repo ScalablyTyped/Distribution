@@ -1,11 +1,12 @@
 package typings.kuromoji.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tokenizer[T] extends js.Object {
+trait Tokenizer[T] extends StObject {
   
   var formatter: Formatter[T] = js.native
   
@@ -38,39 +39,27 @@ object Tokenizer {
   }
   
   @scala.inline
-  implicit class TokenizerOps[Self <: Tokenizer[_], T] (val x: Self with Tokenizer[T]) extends AnyVal {
+  implicit class TokenizerMutableBuilder[Self <: Tokenizer[_], T] (val x: Self with Tokenizer[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatter(value: Formatter[T]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLattice(value: String => ViterbiLattice): Self = StObject.set(x, "getLattice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToken_info_dictionary(value: TokenInfoDictionary): Self = StObject.set(x, "token_info_dictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatter(value: Formatter[T]): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    def setTokenize(value: String => js.Array[T]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLattice(value: String => ViterbiLattice): Self = this.set("getLattice", js.Any.fromFunction1(value))
+    def setUnknown_dictionary(value: UnknownDictionary): Self = StObject.set(x, "unknown_dictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken_info_dictionary(value: TokenInfoDictionary): Self = this.set("token_info_dictionary", value.asInstanceOf[js.Any])
+    def setViterbi_builder(value: ViterbiBuilder): Self = StObject.set(x, "viterbi_builder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenize(value: String => js.Array[T]): Self = this.set("tokenize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnknown_dictionary(value: UnknownDictionary): Self = this.set("unknown_dictionary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViterbi_builder(value: ViterbiBuilder): Self = this.set("viterbi_builder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViterbi_searcher(value: ViterbiSearcher): Self = this.set("viterbi_searcher", value.asInstanceOf[js.Any])
+    def setViterbi_searcher(value: ViterbiSearcher): Self = StObject.set(x, "viterbi_searcher", value.asInstanceOf[js.Any])
   }
 }

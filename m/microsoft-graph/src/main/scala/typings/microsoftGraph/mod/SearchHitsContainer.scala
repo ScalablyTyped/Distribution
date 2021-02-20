@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchHitsContainer extends js.Object {
+trait SearchHitsContainer extends StObject {
   
   var hits: js.UndefOr[NullableOption[js.Array[SearchHit]]] = js.native
   
@@ -22,48 +23,36 @@ object SearchHitsContainer {
   }
   
   @scala.inline
-  implicit class SearchHitsContainerOps[Self <: SearchHitsContainer] (val x: Self) extends AnyVal {
+  implicit class SearchHitsContainerMutableBuilder[Self <: SearchHitsContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHits(value: NullableOption[js.Array[SearchHit]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHitsNull: Self = StObject.set(x, "hits", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHitsUndefined: Self = StObject.set(x, "hits", js.undefined)
     
     @scala.inline
-    def setHitsVarargs(value: SearchHit*): Self = this.set("hits", js.Array(value :_*))
+    def setHitsVarargs(value: SearchHit*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
     @scala.inline
-    def setHits(value: NullableOption[js.Array[SearchHit]]): Self = this.set("hits", value.asInstanceOf[js.Any])
+    def setMoreResultsAvailable(value: NullableOption[Boolean]): Self = StObject.set(x, "moreResultsAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHits: Self = this.set("hits", js.undefined)
+    def setMoreResultsAvailableNull: Self = StObject.set(x, "moreResultsAvailable", null)
     
     @scala.inline
-    def setHitsNull: Self = this.set("hits", null)
+    def setMoreResultsAvailableUndefined: Self = StObject.set(x, "moreResultsAvailable", js.undefined)
     
     @scala.inline
-    def setMoreResultsAvailable(value: NullableOption[Boolean]): Self = this.set("moreResultsAvailable", value.asInstanceOf[js.Any])
+    def setTotal(value: NullableOption[Double]): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMoreResultsAvailable: Self = this.set("moreResultsAvailable", js.undefined)
+    def setTotalNull: Self = StObject.set(x, "total", null)
     
     @scala.inline
-    def setMoreResultsAvailableNull: Self = this.set("moreResultsAvailable", null)
-    
-    @scala.inline
-    def setTotal(value: NullableOption[Double]): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
-    
-    @scala.inline
-    def setTotalNull: Self = this.set("total", null)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

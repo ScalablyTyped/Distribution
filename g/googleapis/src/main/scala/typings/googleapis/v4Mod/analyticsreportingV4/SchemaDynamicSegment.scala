@@ -1,5 +1,6 @@
 package typings.googleapis.v4Mod.analyticsreportingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * segment can select users, sessions or both.
   */
 @js.native
-trait SchemaDynamicSegment extends js.Object {
+trait SchemaDynamicSegment extends StObject {
   
   /**
     * The name of the dynamic segment.
@@ -35,36 +36,24 @@ object SchemaDynamicSegment {
   }
   
   @scala.inline
-  implicit class SchemaDynamicSegmentOps[Self <: SchemaDynamicSegment] (val x: Self) extends AnyVal {
+  implicit class SchemaDynamicSegmentMutableBuilder[Self <: SchemaDynamicSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSessionSegment(value: SchemaSegmentDefinition): Self = StObject.set(x, "sessionSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSessionSegmentUndefined: Self = StObject.set(x, "sessionSegment", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setUserSegment(value: SchemaSegmentDefinition): Self = StObject.set(x, "userSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionSegment(value: SchemaSegmentDefinition): Self = this.set("sessionSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionSegment: Self = this.set("sessionSegment", js.undefined)
-    
-    @scala.inline
-    def setUserSegment(value: SchemaSegmentDefinition): Self = this.set("userSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserSegment: Self = this.set("userSegment", js.undefined)
+    def setUserSegmentUndefined: Self = StObject.set(x, "userSegment", js.undefined)
   }
 }

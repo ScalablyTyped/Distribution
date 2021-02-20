@@ -2,12 +2,13 @@ package typings.activexWord.Word
 
 import typings.activexOffice.Office.MsoChartElementType
 import typings.activexOffice.Office.XlChartType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Chart extends js.Object {
+trait Chart extends StObject {
   
   val Application: js.Any = js.native
   

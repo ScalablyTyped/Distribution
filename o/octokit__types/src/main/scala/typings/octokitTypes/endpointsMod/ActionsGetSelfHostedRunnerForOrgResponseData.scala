@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsGetSelfHostedRunnerForOrgResponseData extends js.Object {
+trait ActionsGetSelfHostedRunnerForOrgResponseData extends StObject {
   
   var busy: Boolean = js.native
   
@@ -29,39 +30,27 @@ object ActionsGetSelfHostedRunnerForOrgResponseData {
   }
   
   @scala.inline
-  implicit class ActionsGetSelfHostedRunnerForOrgResponseDataOps[Self <: ActionsGetSelfHostedRunnerForOrgResponseData] (val x: Self) extends AnyVal {
+  implicit class ActionsGetSelfHostedRunnerForOrgResponseDataMutableBuilder[Self <: ActionsGetSelfHostedRunnerForOrgResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabels(value: js.Array[Id]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusy(value: Boolean): Self = this.set("busy", value.asInstanceOf[js.Any])
+    def setLabelsVarargs(value: Id*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsVarargs(value: Id*): Self = this.set("labels", js.Array(value :_*))
+    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[Id]): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOs(value: String): Self = this.set("os", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

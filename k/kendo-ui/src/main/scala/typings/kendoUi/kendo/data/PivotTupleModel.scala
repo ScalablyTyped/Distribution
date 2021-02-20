@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotTupleModel extends js.Object {
+trait PivotTupleModel extends StObject {
   
   var caption: js.UndefOr[String] = js.native
   
@@ -30,54 +31,42 @@ object PivotTupleModel {
   }
   
   @scala.inline
-  implicit class PivotTupleModelOps[Self <: PivotTupleModel] (val x: Self) extends AnyVal {
+  implicit class PivotTupleModelMutableBuilder[Self <: PivotTupleModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: js.Array[PivotTupleModel]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: PivotTupleModel*): Self = this.set("children", js.Array(value :_*))
+    def setChildrenVarargs(value: PivotTupleModel*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildren(value: js.Array[PivotTupleModel]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelNum(value: Double): Self = this.set("levelNum", value.asInstanceOf[js.Any])
+    def setHasChildrenUndefined: Self = StObject.set(x, "hasChildren", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setHierarchy(value: String): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setLevelName(value: String): Self = StObject.set(x, "levelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasChildren(value: Boolean): Self = this.set("hasChildren", value.asInstanceOf[js.Any])
+    def setLevelNameUndefined: Self = StObject.set(x, "levelName", js.undefined)
     
     @scala.inline
-    def deleteHasChildren: Self = this.set("hasChildren", js.undefined)
+    def setLevelNum(value: Double): Self = StObject.set(x, "levelNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchy(value: String): Self = this.set("hierarchy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHierarchy: Self = this.set("hierarchy", js.undefined)
-    
-    @scala.inline
-    def setLevelName(value: String): Self = this.set("levelName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevelName: Self = this.set("levelName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

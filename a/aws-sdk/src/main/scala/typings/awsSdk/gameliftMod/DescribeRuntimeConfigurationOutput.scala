@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRuntimeConfigurationOutput extends js.Object {
+trait DescribeRuntimeConfigurationOutput extends StObject {
   
   /**
     * Instructions describing how server processes should be launched and maintained on each instance in the fleet.
@@ -21,24 +22,12 @@ object DescribeRuntimeConfigurationOutput {
   }
   
   @scala.inline
-  implicit class DescribeRuntimeConfigurationOutputOps[Self <: DescribeRuntimeConfigurationOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeRuntimeConfigurationOutputMutableBuilder[Self <: DescribeRuntimeConfigurationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRuntimeConfiguration(value: RuntimeConfiguration): Self = StObject.set(x, "RuntimeConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRuntimeConfiguration(value: RuntimeConfiguration): Self = this.set("RuntimeConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuntimeConfiguration: Self = this.set("RuntimeConfiguration", js.undefined)
+    def setRuntimeConfigurationUndefined: Self = StObject.set(x, "RuntimeConfiguration", js.undefined)
   }
 }

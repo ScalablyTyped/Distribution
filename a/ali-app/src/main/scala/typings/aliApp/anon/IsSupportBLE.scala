@@ -1,11 +1,12 @@
 package typings.aliApp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsSupportBLE extends js.Object {
+trait IsSupportBLE extends StObject {
   
   /**
     * 是否支持 BLE
@@ -21,21 +22,9 @@ object IsSupportBLE {
   }
   
   @scala.inline
-  implicit class IsSupportBLEOps[Self <: IsSupportBLE] (val x: Self) extends AnyVal {
+  implicit class IsSupportBLEMutableBuilder[Self <: IsSupportBLE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsSupportBLE(value: Boolean): Self = this.set("isSupportBLE", value.asInstanceOf[js.Any])
+    def setIsSupportBLE(value: Boolean): Self = StObject.set(x, "isSupportBLE", value.asInstanceOf[js.Any])
   }
 }

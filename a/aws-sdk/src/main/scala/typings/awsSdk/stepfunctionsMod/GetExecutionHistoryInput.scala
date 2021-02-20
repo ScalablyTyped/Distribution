@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetExecutionHistoryInput extends js.Object {
+trait GetExecutionHistoryInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the execution.
@@ -41,45 +42,33 @@ object GetExecutionHistoryInput {
   }
   
   @scala.inline
-  implicit class GetExecutionHistoryInputOps[Self <: GetExecutionHistoryInput] (val x: Self) extends AnyVal {
+  implicit class GetExecutionHistoryInputMutableBuilder[Self <: GetExecutionHistoryInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeExecutionData(value: IncludeExecutionDataGetExecutionHistory): Self = StObject.set(x, "includeExecutionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeExecutionDataUndefined: Self = StObject.set(x, "includeExecutionData", js.undefined)
     
     @scala.inline
-    def setExecutionArn(value: Arn): Self = this.set("executionArn", value.asInstanceOf[js.Any])
+    def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeExecutionData(value: IncludeExecutionDataGetExecutionHistory): Self = this.set("includeExecutionData", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteIncludeExecutionData: Self = this.set("includeExecutionData", js.undefined)
+    def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: PageSize): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setReverseOrder(value: ReverseOrder): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PageToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setReverseOrder(value: ReverseOrder): Self = this.set("reverseOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReverseOrder: Self = this.set("reverseOrder", js.undefined)
+    def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
   }
 }

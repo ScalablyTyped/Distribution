@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitosyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityPoolUsage extends js.Object {
+trait IdentityPoolUsage extends StObject {
   
   /**
     * Data storage information for the identity pool.
@@ -36,42 +37,30 @@ object IdentityPoolUsage {
   }
   
   @scala.inline
-  implicit class IdentityPoolUsageOps[Self <: IdentityPoolUsage] (val x: Self) extends AnyVal {
+  implicit class IdentityPoolUsageMutableBuilder[Self <: IdentityPoolUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataStorage(value: Long): Self = StObject.set(x, "DataStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataStorageUndefined: Self = StObject.set(x, "DataStorage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataStorage(value: Long): Self = this.set("DataStorage", value.asInstanceOf[js.Any])
+    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
     
     @scala.inline
-    def deleteDataStorage: Self = this.set("DataStorage", js.undefined)
+    def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = this.set("IdentityPoolId", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteIdentityPoolId: Self = this.set("IdentityPoolId", js.undefined)
+    def setSyncSessionsCount(value: Long): Self = StObject.set(x, "SyncSessionsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: Date): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
-    
-    @scala.inline
-    def setSyncSessionsCount(value: Long): Self = this.set("SyncSessionsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncSessionsCount: Self = this.set("SyncSessionsCount", js.undefined)
+    def setSyncSessionsCountUndefined: Self = StObject.set(x, "SyncSessionsCount", js.undefined)
   }
 }

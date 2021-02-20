@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryOperator extends js.Object {
+trait QueryOperator extends StObject {
   
   /** Display name of the operator */
   var displayName: js.UndefOr[String] = js.native
@@ -52,93 +53,81 @@ object QueryOperator {
   }
   
   @scala.inline
-  implicit class QueryOperatorOps[Self <: QueryOperator] (val x: Self) extends AnyVal {
+  implicit class QueryOperatorMutableBuilder[Self <: QueryOperator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnumValues(value: js.Array[String]): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEnumValuesUndefined: Self = StObject.set(x, "enumValues", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEnumValuesVarargs(value: String*): Self = StObject.set(x, "enumValues", js.Array(value :_*))
     
     @scala.inline
-    def setEnumValuesVarargs(value: String*): Self = this.set("enumValues", js.Array(value :_*))
+    def setGreaterThanOperatorName(value: String): Self = StObject.set(x, "greaterThanOperatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumValues(value: js.Array[String]): Self = this.set("enumValues", value.asInstanceOf[js.Any])
+    def setGreaterThanOperatorNameUndefined: Self = StObject.set(x, "greaterThanOperatorName", js.undefined)
     
     @scala.inline
-    def deleteEnumValues: Self = this.set("enumValues", js.undefined)
+    def setIsFacetable(value: Boolean): Self = StObject.set(x, "isFacetable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreaterThanOperatorName(value: String): Self = this.set("greaterThanOperatorName", value.asInstanceOf[js.Any])
+    def setIsFacetableUndefined: Self = StObject.set(x, "isFacetable", js.undefined)
     
     @scala.inline
-    def deleteGreaterThanOperatorName: Self = this.set("greaterThanOperatorName", js.undefined)
+    def setIsRepeatable(value: Boolean): Self = StObject.set(x, "isRepeatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFacetable(value: Boolean): Self = this.set("isFacetable", value.asInstanceOf[js.Any])
+    def setIsRepeatableUndefined: Self = StObject.set(x, "isRepeatable", js.undefined)
     
     @scala.inline
-    def deleteIsFacetable: Self = this.set("isFacetable", js.undefined)
+    def setIsReturnable(value: Boolean): Self = StObject.set(x, "isReturnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRepeatable(value: Boolean): Self = this.set("isRepeatable", value.asInstanceOf[js.Any])
+    def setIsReturnableUndefined: Self = StObject.set(x, "isReturnable", js.undefined)
     
     @scala.inline
-    def deleteIsRepeatable: Self = this.set("isRepeatable", js.undefined)
+    def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReturnable(value: Boolean): Self = this.set("isReturnable", value.asInstanceOf[js.Any])
+    def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
     
     @scala.inline
-    def deleteIsReturnable: Self = this.set("isReturnable", js.undefined)
+    def setIsSuggestable(value: Boolean): Self = StObject.set(x, "isSuggestable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSortable(value: Boolean): Self = this.set("isSortable", value.asInstanceOf[js.Any])
+    def setIsSuggestableUndefined: Self = StObject.set(x, "isSuggestable", js.undefined)
     
     @scala.inline
-    def deleteIsSortable: Self = this.set("isSortable", js.undefined)
+    def setLessThanOperatorName(value: String): Self = StObject.set(x, "lessThanOperatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSuggestable(value: Boolean): Self = this.set("isSuggestable", value.asInstanceOf[js.Any])
+    def setLessThanOperatorNameUndefined: Self = StObject.set(x, "lessThanOperatorName", js.undefined)
     
     @scala.inline
-    def deleteIsSuggestable: Self = this.set("isSuggestable", js.undefined)
+    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLessThanOperatorName(value: String): Self = this.set("lessThanOperatorName", value.asInstanceOf[js.Any])
+    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
     @scala.inline
-    def deleteLessThanOperatorName: Self = this.set("lessThanOperatorName", js.undefined)
+    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
     
     @scala.inline
-    def deleteObjectType: Self = this.set("objectType", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,25 +1,21 @@
 package typings.azureSb
 
 import typings.azureSb.anon._empty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-sb/lib/models/resourceresult", JSImport.Namespace)
-@js.native
-object resourceresultMod extends js.Object {
+object resourceresultMod {
   
-  @js.native
-  object Azure extends js.Object {
+  object Azure {
     
-    @js.native
-    object ServiceBus extends js.Object {
+    object ServiceBus {
       
-      @js.native
-      object Results extends js.Object {
+      object Results {
         
         @js.native
-        trait ResourceResult extends js.Object {
+        trait ResourceResult extends StObject {
           
           def parse(resourceName: String, nameProperty: String, xml: js.Object): js.Object | js.Array[js.Object] = js.native
           

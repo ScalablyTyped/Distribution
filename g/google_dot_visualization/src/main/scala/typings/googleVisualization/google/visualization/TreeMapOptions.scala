@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeMapOptions extends js.Object {
+trait TreeMapOptions extends StObject {
   
   var fontColor: js.UndefOr[String] = js.native
   
@@ -64,162 +65,150 @@ object TreeMapOptions {
   }
   
   @scala.inline
-  implicit class TreeMapOptionsOps[Self <: TreeMapOptions] (val x: Self) extends AnyVal {
+  implicit class TreeMapOptionsMutableBuilder[Self <: TreeMapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteFontColor: Self = this.set("fontColor", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setForceIFrame(value: Boolean): Self = StObject.set(x, "forceIFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setForceIFrameUndefined: Self = StObject.set(x, "forceIFrame", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setHeaderColor(value: String): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceIFrame(value: Boolean): Self = this.set("forceIFrame", value.asInstanceOf[js.Any])
+    def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
     
     @scala.inline
-    def deleteForceIFrame: Self = this.set("forceIFrame", js.undefined)
+    def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderColor(value: String): Self = this.set("headerColor", value.asInstanceOf[js.Any])
+    def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
     
     @scala.inline
-    def deleteHeaderColor: Self = this.set("headerColor", js.undefined)
+    def setHeaderHighlightColor(value: String): Self = StObject.set(x, "headerHighlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderHeight(value: Double): Self = this.set("headerHeight", value.asInstanceOf[js.Any])
+    def setHeaderHighlightColorUndefined: Self = StObject.set(x, "headerHighlightColor", js.undefined)
     
     @scala.inline
-    def deleteHeaderHeight: Self = this.set("headerHeight", js.undefined)
+    def setHintOpacity(value: Double): Self = StObject.set(x, "hintOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderHighlightColor(value: String): Self = this.set("headerHighlightColor", value.asInstanceOf[js.Any])
+    def setHintOpacityUndefined: Self = StObject.set(x, "hintOpacity", js.undefined)
     
     @scala.inline
-    def deleteHeaderHighlightColor: Self = this.set("headerHighlightColor", js.undefined)
+    def setMaxColor(value: String): Self = StObject.set(x, "maxColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHintOpacity(value: Double): Self = this.set("hintOpacity", value.asInstanceOf[js.Any])
+    def setMaxColorUndefined: Self = StObject.set(x, "maxColor", js.undefined)
     
     @scala.inline
-    def deleteHintOpacity: Self = this.set("hintOpacity", js.undefined)
+    def setMaxColorValue(value: Double): Self = StObject.set(x, "maxColorValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxColor(value: String): Self = this.set("maxColor", value.asInstanceOf[js.Any])
+    def setMaxColorValueUndefined: Self = StObject.set(x, "maxColorValue", js.undefined)
     
     @scala.inline
-    def deleteMaxColor: Self = this.set("maxColor", js.undefined)
+    def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxColorValue(value: Double): Self = this.set("maxColorValue", value.asInstanceOf[js.Any])
+    def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
     
     @scala.inline
-    def deleteMaxColorValue: Self = this.set("maxColorValue", js.undefined)
+    def setMaxHighlightColor(value: String): Self = StObject.set(x, "maxHighlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDepth(value: Double): Self = this.set("maxDepth", value.asInstanceOf[js.Any])
+    def setMaxHighlightColorUndefined: Self = StObject.set(x, "maxHighlightColor", js.undefined)
     
     @scala.inline
-    def deleteMaxDepth: Self = this.set("maxDepth", js.undefined)
+    def setMaxPostDepth(value: Double): Self = StObject.set(x, "maxPostDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHighlightColor(value: String): Self = this.set("maxHighlightColor", value.asInstanceOf[js.Any])
+    def setMaxPostDepthUndefined: Self = StObject.set(x, "maxPostDepth", js.undefined)
     
     @scala.inline
-    def deleteMaxHighlightColor: Self = this.set("maxHighlightColor", js.undefined)
+    def setMidColor(value: String): Self = StObject.set(x, "midColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPostDepth(value: Double): Self = this.set("maxPostDepth", value.asInstanceOf[js.Any])
+    def setMidColorUndefined: Self = StObject.set(x, "midColor", js.undefined)
     
     @scala.inline
-    def deleteMaxPostDepth: Self = this.set("maxPostDepth", js.undefined)
+    def setMidHighlightColor(value: String): Self = StObject.set(x, "midHighlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMidColor(value: String): Self = this.set("midColor", value.asInstanceOf[js.Any])
+    def setMidHighlightColorUndefined: Self = StObject.set(x, "midHighlightColor", js.undefined)
     
     @scala.inline
-    def deleteMidColor: Self = this.set("midColor", js.undefined)
+    def setMinColor(value: String): Self = StObject.set(x, "minColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMidHighlightColor(value: String): Self = this.set("midHighlightColor", value.asInstanceOf[js.Any])
+    def setMinColorUndefined: Self = StObject.set(x, "minColor", js.undefined)
     
     @scala.inline
-    def deleteMidHighlightColor: Self = this.set("midHighlightColor", js.undefined)
+    def setMinColorValue(value: Double): Self = StObject.set(x, "minColorValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinColor(value: String): Self = this.set("minColor", value.asInstanceOf[js.Any])
+    def setMinColorValueUndefined: Self = StObject.set(x, "minColorValue", js.undefined)
     
     @scala.inline
-    def deleteMinColor: Self = this.set("minColor", js.undefined)
+    def setMinHighlightColor(value: String): Self = StObject.set(x, "minHighlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinColorValue(value: Double): Self = this.set("minColorValue", value.asInstanceOf[js.Any])
+    def setMinHighlightColorUndefined: Self = StObject.set(x, "minHighlightColor", js.undefined)
     
     @scala.inline
-    def deleteMinColorValue: Self = this.set("minColorValue", js.undefined)
+    def setShowScale(value: Boolean): Self = StObject.set(x, "showScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinHighlightColor(value: String): Self = this.set("minHighlightColor", value.asInstanceOf[js.Any])
+    def setShowScaleUndefined: Self = StObject.set(x, "showScale", js.undefined)
     
     @scala.inline
-    def deleteMinHighlightColor: Self = this.set("minHighlightColor", js.undefined)
+    def setShowTooltips(value: Boolean): Self = StObject.set(x, "showTooltips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowScale(value: Boolean): Self = this.set("showScale", value.asInstanceOf[js.Any])
+    def setShowTooltipsUndefined: Self = StObject.set(x, "showTooltips", js.undefined)
     
     @scala.inline
-    def deleteShowScale: Self = this.set("showScale", js.undefined)
+    def setTextStyle(value: ChartTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTooltips(value: Boolean): Self = this.set("showTooltips", value.asInstanceOf[js.Any])
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def deleteShowTooltips: Self = this.set("showTooltips", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextStyle(value: ChartTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    def setTitleTextStyle(value: ChartTextStyle): Self = StObject.set(x, "titleTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTitleTextStyleUndefined: Self = StObject.set(x, "titleTextStyle", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUseWeightedAverageForAggregation(value: Boolean): Self = StObject.set(x, "useWeightedAverageForAggregation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleTextStyle(value: ChartTextStyle): Self = this.set("titleTextStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleTextStyle: Self = this.set("titleTextStyle", js.undefined)
-    
-    @scala.inline
-    def setUseWeightedAverageForAggregation(value: Boolean): Self = this.set("useWeightedAverageForAggregation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseWeightedAverageForAggregation: Self = this.set("useWeightedAverageForAggregation", js.undefined)
+    def setUseWeightedAverageForAggregationUndefined: Self = StObject.set(x, "useWeightedAverageForAggregation", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafregional
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupActivatedRule extends js.Object {
+trait RuleGroupActivatedRule extends StObject {
   
   /**
     * Specifies the action that CloudFront or AWS WAF takes when a web request matches the conditions in the rule.
@@ -37,33 +38,21 @@ object RuleGroupActivatedRule {
   }
   
   @scala.inline
-  implicit class RuleGroupActivatedRuleOps[Self <: RuleGroupActivatedRule] (val x: Self) extends AnyVal {
+  implicit class RuleGroupActivatedRuleMutableBuilder[Self <: RuleGroupActivatedRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Input[RuleGroupActivatedRuleAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleId(value: Input[String]): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: Input[RuleGroupActivatedRuleAction]): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleId(value: Input[String]): Self = this.set("ruleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

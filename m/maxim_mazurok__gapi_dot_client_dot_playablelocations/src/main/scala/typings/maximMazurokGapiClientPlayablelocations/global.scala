@@ -3,27 +3,29 @@ package typings.maximMazurokGapiClientPlayablelocations
 import typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations.V3Resource
 import typings.maximMazurokGapiClientPlayablelocations.maximMazurokGapiClientPlayablelocationsStrings.playablelocations
 import typings.maximMazurokGapiClientPlayablelocations.maximMazurokGapiClientPlayablelocationsStrings.v3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load Playable Locations API v3 */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: playablelocations, version: v3): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: playablelocations, version: v3, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object playablelocations extends js.Object {
+      object playablelocations {
         
+        @JSGlobal("gapi.client.playablelocations.v3")
+        @js.native
         val v3: V3Resource = js.native
       }
     }

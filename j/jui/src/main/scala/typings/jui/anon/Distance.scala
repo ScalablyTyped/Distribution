@@ -6,12 +6,13 @@ import typings.jui.juiStrings.`top-lefet`
 import typings.jui.juiStrings.`top-right`
 import typings.jui.juiStrings.bottom
 import typings.jui.juiStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distance extends js.Object {
+trait Distance extends StObject {
   
   /**
     * @cfg {Integer} [distance=5]
@@ -74,78 +75,66 @@ object Distance {
   }
   
   @scala.inline
-  implicit class DistanceOps[Self <: Distance] (val x: Self) extends AnyVal {
+  implicit class DistanceMutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setHideDuration(value: Double): Self = StObject.set(x, "hideDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: js.Any): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setHideDurationUndefined: Self = StObject.set(x, "hideDuration", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setHideEasing(value: String): Self = StObject.set(x, "hideEasing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDuration(value: Double): Self = this.set("hideDuration", value.asInstanceOf[js.Any])
+    def setHideEasingUndefined: Self = StObject.set(x, "hideEasing", js.undefined)
     
     @scala.inline
-    def deleteHideDuration: Self = this.set("hideDuration", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideEasing(value: String): Self = this.set("hideEasing", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteHideEasing: Self = this.set("hideEasing", js.undefined)
+    def setPosition(value: top | `top-lefet` | `top-right` | bottom | `bottom-left` | `bottom-right`): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setShowDuration(value: Double): Self = StObject.set(x, "showDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: top | `top-lefet` | `top-right` | bottom | `bottom-left` | `bottom-right`): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setShowDurationUndefined: Self = StObject.set(x, "showDuration", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShowEasing(value: String): Self = StObject.set(x, "showEasing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDuration(value: Double): Self = this.set("showDuration", value.asInstanceOf[js.Any])
+    def setShowEasingUndefined: Self = StObject.set(x, "showEasing", js.undefined)
     
     @scala.inline
-    def deleteShowDuration: Self = this.set("showDuration", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEasing(value: String): Self = this.set("showEasing", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteShowEasing: Self = this.set("showEasing", js.undefined)
+    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setTpl(value: js.Any): Self = this.set("tpl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTpl: Self = this.set("tpl", js.undefined)
+    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

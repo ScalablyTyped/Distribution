@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildBazelRemoteExecutionV2RequestMetadata extends js.Object {
+trait BuildBazelRemoteExecutionV2RequestMetadata extends StObject {
   
   /** An identifier that ties multiple requests to the same action. For example, multiple requests to the CAS, Action Cache, and Execution API are used in order to compile foo.cc. */
   var actionId: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object BuildBazelRemoteExecutionV2RequestMetadata {
   }
   
   @scala.inline
-  implicit class BuildBazelRemoteExecutionV2RequestMetadataOps[Self <: BuildBazelRemoteExecutionV2RequestMetadata] (val x: Self) extends AnyVal {
+  implicit class BuildBazelRemoteExecutionV2RequestMetadataMutableBuilder[Self <: BuildBazelRemoteExecutionV2RequestMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCorrelatedInvocationsId(value: String): Self = StObject.set(x, "correlatedInvocationsId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionId(value: String): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    def setCorrelatedInvocationsIdUndefined: Self = StObject.set(x, "correlatedInvocationsId", js.undefined)
     
     @scala.inline
-    def deleteActionId: Self = this.set("actionId", js.undefined)
+    def setToolDetails(value: BuildBazelRemoteExecutionV2ToolDetails): Self = StObject.set(x, "toolDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrelatedInvocationsId(value: String): Self = this.set("correlatedInvocationsId", value.asInstanceOf[js.Any])
+    def setToolDetailsUndefined: Self = StObject.set(x, "toolDetails", js.undefined)
     
     @scala.inline
-    def deleteCorrelatedInvocationsId: Self = this.set("correlatedInvocationsId", js.undefined)
+    def setToolInvocationId(value: String): Self = StObject.set(x, "toolInvocationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolDetails(value: BuildBazelRemoteExecutionV2ToolDetails): Self = this.set("toolDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolDetails: Self = this.set("toolDetails", js.undefined)
-    
-    @scala.inline
-    def setToolInvocationId(value: String): Self = this.set("toolInvocationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolInvocationId: Self = this.set("toolInvocationId", js.undefined)
+    def setToolInvocationIdUndefined: Self = StObject.set(x, "toolInvocationId", js.undefined)
   }
 }

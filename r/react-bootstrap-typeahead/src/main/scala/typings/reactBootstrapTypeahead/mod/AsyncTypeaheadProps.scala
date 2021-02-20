@@ -1,6 +1,7 @@
 package typings.reactBootstrapTypeahead.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,48 +37,36 @@ object AsyncTypeaheadProps {
   }
   
   @scala.inline
-  implicit class AsyncTypeaheadPropsOps[Self <: AsyncTypeaheadProps[_], T /* <: TypeaheadModel */] (val x: Self with AsyncTypeaheadProps[T]) extends AnyVal {
+  implicit class AsyncTypeaheadPropsMutableBuilder[Self <: AsyncTypeaheadProps[_], T /* <: TypeaheadModel */] (val x: Self with AsyncTypeaheadProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLoading(value: Boolean): Self = this.set("isLoading", value.asInstanceOf[js.Any])
+    def setOnSearch(value: String => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSearch(value: String => Unit): Self = this.set("onSearch", js.Any.fromFunction1(value))
+    def setPromptText(value: ReactNode): Self = StObject.set(x, "promptText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setPromptTextUndefined: Self = StObject.set(x, "promptText", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setSearchText(value: ReactNode): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromptText(value: ReactNode): Self = this.set("promptText", value.asInstanceOf[js.Any])
+    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
     @scala.inline
-    def deletePromptText: Self = this.set("promptText", js.undefined)
+    def setUseCache(value: Boolean): Self = StObject.set(x, "useCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchText(value: ReactNode): Self = this.set("searchText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchText: Self = this.set("searchText", js.undefined)
-    
-    @scala.inline
-    def setUseCache(value: Boolean): Self = this.set("useCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseCache: Self = this.set("useCache", js.undefined)
+    def setUseCacheUndefined: Self = StObject.set(x, "useCache", js.undefined)
   }
 }

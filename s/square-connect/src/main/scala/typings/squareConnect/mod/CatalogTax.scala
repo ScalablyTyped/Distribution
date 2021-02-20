@@ -2,13 +2,14 @@ package typings.squareConnect.mod
 
 import typings.squareConnect.squareConnectStrings.TAX_SUBTOTAL_PHASE
 import typings.squareConnect.squareConnectStrings.TAX_TOTAL_PHASE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogTax")
 @js.native
-class CatalogTax () extends js.Object {
+class CatalogTax () extends StObject {
   
   /**
     * If `true`, the fee applies to custom amounts entered into the Square Point of Sale app that are not associated

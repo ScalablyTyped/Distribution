@@ -1,5 +1,6 @@
 package typings.activexInterop
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Enables reading from a COM safe array, which might have an alternate lower bound, or multiple dimensions.
   */
 @js.native
-trait VBArray[T] extends js.Object {
+trait VBArray[T] extends StObject {
   
   /**
     * Returns the number of dimensions (1-based).

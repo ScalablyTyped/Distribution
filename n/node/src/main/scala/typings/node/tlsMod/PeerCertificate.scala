@@ -2,12 +2,13 @@ package typings.node.tlsMod
 
 import typings.node.Buffer
 import typings.node.NodeJS.Dict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PeerCertificate extends js.Object {
+trait PeerCertificate extends StObject {
   
   var exponent: String = js.native
   
@@ -58,60 +59,48 @@ object PeerCertificate {
   }
   
   @scala.inline
-  implicit class PeerCertificateOps[Self <: PeerCertificate] (val x: Self) extends AnyVal {
+  implicit class PeerCertificateMutableBuilder[Self <: PeerCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExponent(value: String): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExt_key_usage(value: js.Array[String]): Self = StObject.set(x, "ext_key_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExt_key_usageVarargs(value: String*): Self = StObject.set(x, "ext_key_usage", js.Array(value :_*))
     
     @scala.inline
-    def setExponent(value: String): Self = this.set("exponent", value.asInstanceOf[js.Any])
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt_key_usageVarargs(value: String*): Self = this.set("ext_key_usage", js.Array(value :_*))
+    def setFingerprint256(value: String): Self = StObject.set(x, "fingerprint256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt_key_usage(value: js.Array[String]): Self = this.set("ext_key_usage", value.asInstanceOf[js.Any])
+    def setInfoAccess(value: Dict[js.Array[String]]): Self = StObject.set(x, "infoAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setIssuer(value: Certificate): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint256(value: String): Self = this.set("fingerprint256", value.asInstanceOf[js.Any])
+    def setModulus(value: String): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoAccess(value: Dict[js.Array[String]]): Self = this.set("infoAccess", value.asInstanceOf[js.Any])
+    def setRaw(value: Buffer): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: Certificate): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModulus(value: String): Self = this.set("modulus", value.asInstanceOf[js.Any])
+    def setSubject(value: Certificate): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: Buffer): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setSubjectaltname(value: String): Self = StObject.set(x, "subjectaltname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    def setValid_from(value: String): Self = StObject.set(x, "valid_from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: Certificate): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubjectaltname(value: String): Self = this.set("subjectaltname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValid_from(value: String): Self = this.set("valid_from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValid_to(value: String): Self = this.set("valid_to", value.asInstanceOf[js.Any])
+    def setValid_to(value: String): Self = StObject.set(x, "valid_to", value.asInstanceOf[js.Any])
   }
 }

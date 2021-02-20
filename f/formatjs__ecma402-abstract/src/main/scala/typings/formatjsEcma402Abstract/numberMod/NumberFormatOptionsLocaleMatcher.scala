@@ -1,5 +1,6 @@
 package typings.formatjsEcma402Abstract.numberMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.lookup
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`best fit`
 */
-trait NumberFormatOptionsLocaleMatcher extends js.Object
+trait NumberFormatOptionsLocaleMatcher extends StObject
 object NumberFormatOptionsLocaleMatcher {
   
   @scala.inline

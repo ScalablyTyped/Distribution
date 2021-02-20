@@ -7,19 +7,21 @@ import typings.instagramPrivateApi.accountRepositoryLoginResponseMod.AccountRepo
 import typings.instagramPrivateApi.accountTwoFactorLoginOptionsMod.AccountTwoFactorLoginOptions
 import typings.instagramPrivateApi.anon.Email
 import typings.instagramPrivateApi.anon.Encrypted
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.statusResponseMod.StatusResponse
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/account.repository", JSImport.Namespace)
-@js.native
-object accountRepositoryMod extends js.Object {
+object accountRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/account.repository", "AccountRepository")
   @js.native
-  class AccountRepository () extends Repository {
+  class AccountRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def changePassword(oldPassword: String, newPassword: String): js.Promise[_] = js.native
     
@@ -65,11 +67,20 @@ object accountRepositoryMod extends js.Object {
     def twoFactorLogin(options: AccountTwoFactorLoginOptions): js.Promise[AccountRepositoryLoginResponseLoggedInUser] = js.native
   }
   /* static members */
-  @js.native
-  object AccountRepository extends js.Object {
+  object AccountRepository {
     
-    var accountDebug: js.Any = js.native
+    @JSImport("instagram-private-api/dist/repositories/account.repository", "AccountRepository")
+    @js.native
+    val ^ : js.Any = js.native
     
+    @JSImport("instagram-private-api/dist/repositories/account.repository", "AccountRepository.accountDebug")
+    @js.native
+    def accountDebug: js.Any = js.native
+    @scala.inline
+    def accountDebug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountDebug")(x.asInstanceOf[js.Any])
+    
+    @JSImport("instagram-private-api/dist/repositories/account.repository", "AccountRepository.createJazoest")
+    @js.native
     def createJazoest(input: String): String = js.native
   }
 }

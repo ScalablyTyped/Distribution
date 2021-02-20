@@ -8,13 +8,14 @@ import typings.activexMsxml2.activexMsxml2Numbers.`4`
 import typings.activexMsxml2.activexMsxml2Numbers.`5`
 import typings.activexMsxml2.activexMsxml2Numbers.`7`
 import typings.activexMsxml2.activexMsxml2Numbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** W3C-DOM XML Document 6.0 (Apartment) */
 @js.native
-trait DOMDocument60 extends js.Object {
+trait DOMDocument60 extends StObject {
   
   @JSName("MSXML2.DOMDocument60_typekey")
   var MSXML2DotDOMDocument60_typekey: DOMDocument60 = js.native

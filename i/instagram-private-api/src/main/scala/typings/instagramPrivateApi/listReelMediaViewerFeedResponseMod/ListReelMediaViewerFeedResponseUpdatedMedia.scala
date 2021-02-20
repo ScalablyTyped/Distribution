@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReelMediaViewerFeedResponseUpdatedMedia extends js.Object {
+trait ListReelMediaViewerFeedResponseUpdatedMedia extends StObject {
   
   var can_reply: Boolean = js.native
   
@@ -143,171 +144,159 @@ object ListReelMediaViewerFeedResponseUpdatedMedia {
   }
   
   @scala.inline
-  implicit class ListReelMediaViewerFeedResponseUpdatedMediaOps[Self <: ListReelMediaViewerFeedResponseUpdatedMedia] (val x: Self) extends AnyVal {
+  implicit class ListReelMediaViewerFeedResponseUpdatedMediaMutableBuilder[Self <: ListReelMediaViewerFeedResponseUpdatedMedia] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCan_reply(value: Boolean): Self = StObject.set(x, "can_reply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCan_reshare(value: Boolean): Self = StObject.set(x, "can_reshare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCan_viewer_save(value: Boolean): Self = StObject.set(x, "can_viewer_save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_reply(value: Boolean): Self = this.set("can_reply", value.asInstanceOf[js.Any])
+    def setCaption(value: Null): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_reshare(value: Boolean): Self = this.set("can_reshare", value.asInstanceOf[js.Any])
+    def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_viewer_save(value: Boolean): Self = this.set("can_viewer_save", value.asInstanceOf[js.Any])
+    def setCaption_position(value: Double): Self = StObject.set(x, "caption_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: Null): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setClient_cache_key(value: String): Self = StObject.set(x, "client_cache_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption_is_edited(value: Boolean): Self = this.set("caption_is_edited", value.asInstanceOf[js.Any])
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption_position(value: Double): Self = this.set("caption_position", value.asInstanceOf[js.Any])
+    def setCreative_config(value: ListReelMediaViewerFeedResponseCreativeConfig): Self = StObject.set(x, "creative_config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_cache_key(value: String): Self = this.set("client_cache_key", value.asInstanceOf[js.Any])
+    def setDevice_timestamp(value: Double): Self = StObject.set(x, "device_timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setExpiring_at(value: Double): Self = StObject.set(x, "expiring_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreative_config(value: ListReelMediaViewerFeedResponseCreativeConfig): Self = this.set("creative_config", value.asInstanceOf[js.Any])
+    def setFb_user_tags(value: ListReelMediaViewerFeedResponseFbUserTags): Self = StObject.set(x, "fb_user_tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice_timestamp(value: Double): Self = this.set("device_timestamp", value.asInstanceOf[js.Any])
+    def setFilter_type(value: Double): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiring_at(value: Double): Self = this.set("expiring_at", value.asInstanceOf[js.Any])
+    def setHas_shared_to_fb(value: Double): Self = StObject.set(x, "has_shared_to_fb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFb_user_tags(value: ListReelMediaViewerFeedResponseFbUserTags): Self = this.set("fb_user_tags", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter_type(value: Double): Self = this.set("filter_type", value.asInstanceOf[js.Any])
+    def setImage_versions2(value: ListReelMediaViewerFeedResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_shared_to_fb(value: Double): Self = this.set("has_shared_to_fb", value.asInstanceOf[js.Any])
+    def setIs_pride_media(value: Boolean): Self = StObject.set(x, "is_pride_media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIs_reel_media(value: Boolean): Self = StObject.set(x, "is_reel_media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage_versions2(value: ListReelMediaViewerFeedResponseImageVersions2): Self = this.set("image_versions2", value.asInstanceOf[js.Any])
+    def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_pride_media(value: Boolean): Self = this.set("is_pride_media", value.asInstanceOf[js.Any])
+    def setMulti_author_reel_names(value: js.Array[_]): Self = StObject.set(x, "multi_author_reel_names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_reel_media(value: Boolean): Self = this.set("is_reel_media", value.asInstanceOf[js.Any])
+    def setMulti_author_reel_namesVarargs(value: js.Any*): Self = StObject.set(x, "multi_author_reel_names", js.Array(value :_*))
     
     @scala.inline
-    def setMedia_type(value: Double): Self = this.set("media_type", value.asInstanceOf[js.Any])
+    def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulti_author_reel_namesVarargs(value: js.Any*): Self = this.set("multi_author_reel_names", js.Array(value :_*))
+    def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulti_author_reel_names(value: js.Array[_]): Self = this.set("multi_author_reel_names", value.asInstanceOf[js.Any])
+    def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganic_tracking_token(value: String): Self = this.set("organic_tracking_token", value.asInstanceOf[js.Any])
+    def setPhoto_of_you(value: Boolean): Self = StObject.set(x, "photo_of_you", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_height(value: Double): Self = this.set("original_height", value.asInstanceOf[js.Any])
+    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_width(value: Double): Self = this.set("original_width", value.asInstanceOf[js.Any])
+    def setReel_mentions(value: js.Array[ListReelMediaViewerFeedResponseReelMentionsItem]): Self = StObject.set(x, "reel_mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoto_of_you(value: Boolean): Self = this.set("photo_of_you", value.asInstanceOf[js.Any])
+    def setReel_mentionsVarargs(value: ListReelMediaViewerFeedResponseReelMentionsItem*): Self = StObject.set(x, "reel_mentions", js.Array(value :_*))
     
     @scala.inline
-    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setShow_one_tap_fb_share_tooltip(value: Boolean): Self = StObject.set(x, "show_one_tap_fb_share_tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReel_mentionsVarargs(value: ListReelMediaViewerFeedResponseReelMentionsItem*): Self = this.set("reel_mentions", js.Array(value :_*))
+    def setStory_chat_request_infos(value: js.Array[ListReelMediaViewerFeedResponseStoryChatRequestInfosItem]): Self = StObject.set(x, "story_chat_request_infos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReel_mentions(value: js.Array[ListReelMediaViewerFeedResponseReelMentionsItem]): Self = this.set("reel_mentions", value.asInstanceOf[js.Any])
+    def setStory_chat_request_infosVarargs(value: ListReelMediaViewerFeedResponseStoryChatRequestInfosItem*): Self = StObject.set(x, "story_chat_request_infos", js.Array(value :_*))
     
     @scala.inline
-    def setShow_one_tap_fb_share_tooltip(value: Boolean): Self = this.set("show_one_tap_fb_share_tooltip", value.asInstanceOf[js.Any])
+    def setStory_chats(value: js.Array[ListReelMediaViewerFeedResponseStoryChatsItem]): Self = StObject.set(x, "story_chats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_chat_request_infosVarargs(value: ListReelMediaViewerFeedResponseStoryChatRequestInfosItem*): Self = this.set("story_chat_request_infos", js.Array(value :_*))
+    def setStory_chatsVarargs(value: ListReelMediaViewerFeedResponseStoryChatsItem*): Self = StObject.set(x, "story_chats", js.Array(value :_*))
     
     @scala.inline
-    def setStory_chat_request_infos(value: js.Array[ListReelMediaViewerFeedResponseStoryChatRequestInfosItem]): Self = this.set("story_chat_request_infos", value.asInstanceOf[js.Any])
+    def setStory_fundraiser_donation_infos(value: js.Array[ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem]): Self = StObject.set(x, "story_fundraiser_donation_infos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_chatsVarargs(value: ListReelMediaViewerFeedResponseStoryChatsItem*): Self = this.set("story_chats", js.Array(value :_*))
+    def setStory_fundraiser_donation_infosVarargs(value: ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem*): Self = StObject.set(x, "story_fundraiser_donation_infos", js.Array(value :_*))
     
     @scala.inline
-    def setStory_chats(value: js.Array[ListReelMediaViewerFeedResponseStoryChatsItem]): Self = this.set("story_chats", value.asInstanceOf[js.Any])
+    def setStory_fundraisers(value: js.Array[ListReelMediaViewerFeedResponseStoryFundraisersItem]): Self = StObject.set(x, "story_fundraisers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_fundraiser_donation_infosVarargs(value: ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem*): Self = this.set("story_fundraiser_donation_infos", js.Array(value :_*))
+    def setStory_fundraisersVarargs(value: ListReelMediaViewerFeedResponseStoryFundraisersItem*): Self = StObject.set(x, "story_fundraisers", js.Array(value :_*))
     
     @scala.inline
-    def setStory_fundraiser_donation_infos(value: js.Array[ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem]): Self = this.set("story_fundraiser_donation_infos", value.asInstanceOf[js.Any])
+    def setStory_hashtags(value: js.Array[ListReelMediaViewerFeedResponseStoryHashtagsItem]): Self = StObject.set(x, "story_hashtags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_fundraisersVarargs(value: ListReelMediaViewerFeedResponseStoryFundraisersItem*): Self = this.set("story_fundraisers", js.Array(value :_*))
+    def setStory_hashtagsVarargs(value: ListReelMediaViewerFeedResponseStoryHashtagsItem*): Self = StObject.set(x, "story_hashtags", js.Array(value :_*))
     
     @scala.inline
-    def setStory_fundraisers(value: js.Array[ListReelMediaViewerFeedResponseStoryFundraisersItem]): Self = this.set("story_fundraisers", value.asInstanceOf[js.Any])
+    def setStory_is_saved_to_archive(value: Boolean): Self = StObject.set(x, "story_is_saved_to_archive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_hashtagsVarargs(value: ListReelMediaViewerFeedResponseStoryHashtagsItem*): Self = this.set("story_hashtags", js.Array(value :_*))
+    def setStory_locations(value: js.Array[ListReelMediaViewerFeedResponseStoryLocationsItem]): Self = StObject.set(x, "story_locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_hashtags(value: js.Array[ListReelMediaViewerFeedResponseStoryHashtagsItem]): Self = this.set("story_hashtags", value.asInstanceOf[js.Any])
+    def setStory_locationsVarargs(value: ListReelMediaViewerFeedResponseStoryLocationsItem*): Self = StObject.set(x, "story_locations", js.Array(value :_*))
     
     @scala.inline
-    def setStory_is_saved_to_archive(value: Boolean): Self = this.set("story_is_saved_to_archive", value.asInstanceOf[js.Any])
+    def setSupports_reel_reactions(value: Boolean): Self = StObject.set(x, "supports_reel_reactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_locationsVarargs(value: ListReelMediaViewerFeedResponseStoryLocationsItem*): Self = this.set("story_locations", js.Array(value :_*))
+    def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_locations(value: js.Array[ListReelMediaViewerFeedResponseStoryLocationsItem]): Self = this.set("story_locations", value.asInstanceOf[js.Any])
+    def setTimezone_offset(value: Double): Self = StObject.set(x, "timezone_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupports_reel_reactions(value: Boolean): Self = this.set("supports_reel_reactions", value.asInstanceOf[js.Any])
+    def setTotal_viewer_count(value: Double): Self = StObject.set(x, "total_viewer_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaken_at(value: Double): Self = this.set("taken_at", value.asInstanceOf[js.Any])
+    def setUser(value: ListReelMediaViewerFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone_offset(value: Double): Self = this.set("timezone_offset", value.asInstanceOf[js.Any])
+    def setViewer_count(value: Double): Self = StObject.set(x, "viewer_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_viewer_count(value: Double): Self = this.set("total_viewer_count", value.asInstanceOf[js.Any])
+    def setViewer_cursor(value: Null): Self = StObject.set(x, "viewer_cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: ListReelMediaViewerFeedResponseUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setViewers(value: js.Array[ListReelMediaViewerFeedResponseViewersItem]): Self = StObject.set(x, "viewers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewer_count(value: Double): Self = this.set("viewer_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewer_cursor(value: Null): Self = this.set("viewer_cursor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewersVarargs(value: ListReelMediaViewerFeedResponseViewersItem*): Self = this.set("viewers", js.Array(value :_*))
-    
-    @scala.inline
-    def setViewers(value: js.Array[ListReelMediaViewerFeedResponseViewersItem]): Self = this.set("viewers", value.asInstanceOf[js.Any])
+    def setViewersVarargs(value: ListReelMediaViewerFeedResponseViewersItem*): Self = StObject.set(x, "viewers", js.Array(value :_*))
   }
 }

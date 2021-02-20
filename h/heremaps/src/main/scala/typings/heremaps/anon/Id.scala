@@ -1,11 +1,12 @@
 package typings.heremaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Id extends js.Object {
+trait Id extends StObject {
   
   var _type: String = js.native
   
@@ -41,48 +42,36 @@ object Id {
   }
   
   @scala.inline
-  implicit class IdOps[Self <: Id] (val x: Self) extends AnyVal {
+  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: String): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setNote(value: js.Array[String]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNoteVarargs(value: String*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def setInstruction(value: String): Self = this.set("instruction", value.asInstanceOf[js.Any])
+    def setPosition(value: Latitude): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setShape(value: js.Array[String]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteVarargs(value: String*): Self = this.set("note", js.Array(value :_*))
+    def setShapeVarargs(value: String*): Self = StObject.set(x, "shape", js.Array(value :_*))
     
     @scala.inline
-    def setNote(value: js.Array[String]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setTravelTime(value: Double): Self = StObject.set(x, "travelTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Latitude): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShapeVarargs(value: String*): Self = this.set("shape", js.Array(value :_*))
-    
-    @scala.inline
-    def setShape(value: js.Array[String]): Self = this.set("shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTravelTime(value: Double): Self = this.set("travelTime", value.asInstanceOf[js.Any])
+    def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
   }
 }

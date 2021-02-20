@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import typings.bingmaps.Microsoft.Maps.Polygon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeoDataResult extends js.Object {
+trait IGeoDataResult extends StObject {
   
   /** Copyright information for the returned boundary data. */
   var Copyright: ICopyright = js.native
@@ -45,42 +46,30 @@ object IGeoDataResult {
   }
   
   @scala.inline
-  implicit class IGeoDataResultOps[Self <: IGeoDataResult] (val x: Self) extends AnyVal {
+  implicit class IGeoDataResultMutableBuilder[Self <: IGeoDataResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: ICopyright): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityID(value: String): Self = StObject.set(x, "EntityID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityMetadata(value: IMetadata): Self = StObject.set(x, "EntityMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: ICopyright): Self = this.set("Copyright", value.asInstanceOf[js.Any])
+    def setName(value: IName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityID(value: String): Self = this.set("EntityID", value.asInstanceOf[js.Any])
+    def setPolygons(value: js.Array[Polygon]): Self = StObject.set(x, "Polygons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityMetadata(value: IMetadata): Self = this.set("EntityMetadata", value.asInstanceOf[js.Any])
+    def setPolygonsVarargs(value: Polygon*): Self = StObject.set(x, "Polygons", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: IName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPrimitives(value: js.Array[IGeoDataPrimitive]): Self = StObject.set(x, "Primitives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonsVarargs(value: Polygon*): Self = this.set("Polygons", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolygons(value: js.Array[Polygon]): Self = this.set("Polygons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrimitivesVarargs(value: IGeoDataPrimitive*): Self = this.set("Primitives", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrimitives(value: js.Array[IGeoDataPrimitive]): Self = this.set("Primitives", value.asInstanceOf[js.Any])
+    def setPrimitivesVarargs(value: IGeoDataPrimitive*): Self = StObject.set(x, "Primitives", js.Array(value :_*))
   }
 }

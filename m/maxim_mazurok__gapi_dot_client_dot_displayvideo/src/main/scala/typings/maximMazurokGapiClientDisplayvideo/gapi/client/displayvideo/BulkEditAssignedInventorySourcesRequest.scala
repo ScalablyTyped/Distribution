@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkEditAssignedInventorySourcesRequest extends js.Object {
+trait BulkEditAssignedInventorySourcesRequest extends StObject {
   
   /** The ID of the advertiser that owns the parent inventory source group. The parent partner does not have access to these assigned inventory sources. */
   var advertiserId: js.UndefOr[String] = js.native
@@ -28,48 +29,36 @@ object BulkEditAssignedInventorySourcesRequest {
   }
   
   @scala.inline
-  implicit class BulkEditAssignedInventorySourcesRequestOps[Self <: BulkEditAssignedInventorySourcesRequest] (val x: Self) extends AnyVal {
+  implicit class BulkEditAssignedInventorySourcesRequestMutableBuilder[Self <: BulkEditAssignedInventorySourcesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAssignedInventorySources(value: js.Array[AssignedInventorySource]): Self = StObject.set(x, "createdAssignedInventorySources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setCreatedAssignedInventorySourcesUndefined: Self = StObject.set(x, "createdAssignedInventorySources", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setCreatedAssignedInventorySourcesVarargs(value: AssignedInventorySource*): Self = StObject.set(x, "createdAssignedInventorySources", js.Array(value :_*))
     
     @scala.inline
-    def setCreatedAssignedInventorySourcesVarargs(value: AssignedInventorySource*): Self = this.set("createdAssignedInventorySources", js.Array(value :_*))
+    def setDeletedAssignedInventorySources(value: js.Array[String]): Self = StObject.set(x, "deletedAssignedInventorySources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAssignedInventorySources(value: js.Array[AssignedInventorySource]): Self = this.set("createdAssignedInventorySources", value.asInstanceOf[js.Any])
+    def setDeletedAssignedInventorySourcesUndefined: Self = StObject.set(x, "deletedAssignedInventorySources", js.undefined)
     
     @scala.inline
-    def deleteCreatedAssignedInventorySources: Self = this.set("createdAssignedInventorySources", js.undefined)
+    def setDeletedAssignedInventorySourcesVarargs(value: String*): Self = StObject.set(x, "deletedAssignedInventorySources", js.Array(value :_*))
     
     @scala.inline
-    def setDeletedAssignedInventorySourcesVarargs(value: String*): Self = this.set("deletedAssignedInventorySources", js.Array(value :_*))
+    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedAssignedInventorySources(value: js.Array[String]): Self = this.set("deletedAssignedInventorySources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletedAssignedInventorySources: Self = this.set("deletedAssignedInventorySources", js.undefined)
-    
-    @scala.inline
-    def setPartnerId(value: String): Self = this.set("partnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartnerId: Self = this.set("partnerId", js.undefined)
+    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
   }
 }

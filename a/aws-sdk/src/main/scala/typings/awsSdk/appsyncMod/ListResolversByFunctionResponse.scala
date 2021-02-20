@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListResolversByFunctionResponse extends js.Object {
+trait ListResolversByFunctionResponse extends StObject {
   
   /**
     * An identifier that can be used to return the next set of items in the list.
@@ -26,33 +27,21 @@ object ListResolversByFunctionResponse {
   }
   
   @scala.inline
-  implicit class ListResolversByFunctionResponseOps[Self <: ListResolversByFunctionResponse] (val x: Self) extends AnyVal {
+  implicit class ListResolversByFunctionResponseMutableBuilder[Self <: ListResolversByFunctionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolvers(value: Resolvers): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setResolversUndefined: Self = StObject.set(x, "resolvers", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setResolversVarargs(value: Resolver*): Self = this.set("resolvers", js.Array(value :_*))
-    
-    @scala.inline
-    def setResolvers(value: Resolvers): Self = this.set("resolvers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolvers: Self = this.set("resolvers", js.undefined)
+    def setResolversVarargs(value: Resolver*): Self = StObject.set(x, "resolvers", js.Array(value :_*))
   }
 }

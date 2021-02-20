@@ -1,5 +1,6 @@
 package typings.reactNativeMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent react-native.react-native.Animated.AnimationConfig */
 /* Inlined parent std.Partial<react-native-maps.react-native-maps.Region> */
 @js.native
-trait AnimatedRegionTimingConfig extends js.Object {
+trait AnimatedRegionTimingConfig extends StObject {
   
   var delay: js.UndefOr[Double] = js.native
   
@@ -39,69 +40,57 @@ object AnimatedRegionTimingConfig {
   }
   
   @scala.inline
-  implicit class AnimatedRegionTimingConfigOps[Self <: AnimatedRegionTimingConfig] (val x: Self) extends AnyVal {
+  implicit class AnimatedRegionTimingConfigMutableBuilder[Self <: AnimatedRegionTimingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseNativeDriver(value: Boolean): Self = this.set("useNativeDriver", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setEasing(value: /* value */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setIsInteraction(value: Boolean): Self = StObject.set(x, "isInteraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setIsInteractionUndefined: Self = StObject.set(x, "isInteraction", js.undefined)
     
     @scala.inline
-    def setEasing(value: /* value */ Double => Double): Self = this.set("easing", js.Any.fromFunction1(value))
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setLatitudeDelta(value: Double): Self = StObject.set(x, "latitudeDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInteraction(value: Boolean): Self = this.set("isInteraction", value.asInstanceOf[js.Any])
+    def setLatitudeDeltaUndefined: Self = StObject.set(x, "latitudeDelta", js.undefined)
     
     @scala.inline
-    def deleteIsInteraction: Self = this.set("isInteraction", js.undefined)
+    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    def setLongitudeDelta(value: Double): Self = StObject.set(x, "longitudeDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitudeDelta(value: Double): Self = this.set("latitudeDelta", value.asInstanceOf[js.Any])
+    def setLongitudeDeltaUndefined: Self = StObject.set(x, "longitudeDelta", js.undefined)
     
     @scala.inline
-    def deleteLatitudeDelta: Self = this.set("latitudeDelta", js.undefined)
+    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLongitude: Self = this.set("longitude", js.undefined)
-    
-    @scala.inline
-    def setLongitudeDelta(value: Double): Self = this.set("longitudeDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLongitudeDelta: Self = this.set("longitudeDelta", js.undefined)
+    def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
   }
 }

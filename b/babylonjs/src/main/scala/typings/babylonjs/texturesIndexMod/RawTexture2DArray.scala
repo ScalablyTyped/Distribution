@@ -2,6 +2,7 @@ package typings.babylonjs.texturesIndexMod
 
 import typings.babylonjs.sceneMod.Scene
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

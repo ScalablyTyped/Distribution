@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeaderObject extends js.Object {
+trait HeaderObject extends StObject {
   
   /**
     * The specific headers to forward to your distribution's origin.
@@ -26,33 +27,21 @@ object HeaderObject {
   }
   
   @scala.inline
-  implicit class HeaderObjectOps[Self <: HeaderObject] (val x: Self) extends AnyVal {
+  implicit class HeaderObjectMutableBuilder[Self <: HeaderObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeadersAllowList(value: HeaderForwardList): Self = StObject.set(x, "headersAllowList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersAllowListUndefined: Self = StObject.set(x, "headersAllowList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersAllowListVarargs(value: HeaderEnum*): Self = StObject.set(x, "headersAllowList", js.Array(value :_*))
     
     @scala.inline
-    def setHeadersAllowListVarargs(value: HeaderEnum*): Self = this.set("headersAllowList", js.Array(value :_*))
+    def setOption(value: ForwardValues): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersAllowList(value: HeaderForwardList): Self = this.set("headersAllowList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeadersAllowList: Self = this.set("headersAllowList", js.undefined)
-    
-    @scala.inline
-    def setOption(value: ForwardValues): Self = this.set("option", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOption: Self = this.set("option", js.undefined)
+    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
   }
 }

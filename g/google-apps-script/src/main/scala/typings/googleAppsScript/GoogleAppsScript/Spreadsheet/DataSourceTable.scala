@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     Logger.log("Data execution state: %s.", dataSourceTable.getStatus().getExecutionState());
   */
 @js.native
-trait DataSourceTable extends js.Object {
+trait DataSourceTable extends StObject {
   
   def forceRefreshData(): DataSourceTable = js.native
   
@@ -80,36 +81,24 @@ object DataSourceTable {
   }
   
   @scala.inline
-  implicit class DataSourceTableOps[Self <: DataSourceTable] (val x: Self) extends AnyVal {
+  implicit class DataSourceTableMutableBuilder[Self <: DataSourceTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceRefreshData(value: () => DataSourceTable): Self = StObject.set(x, "forceRefreshData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDataSource(value: () => DataSource): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRange(value: () => Range): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceRefreshData(value: () => DataSourceTable): Self = this.set("forceRefreshData", js.Any.fromFunction0(value))
+    def setGetStatus(value: () => DataExecutionStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDataSource(value: () => DataSource): Self = this.set("getDataSource", js.Any.fromFunction0(value))
+    def setRefreshData(value: () => DataSourceTable): Self = StObject.set(x, "refreshData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRange(value: () => Range): Self = this.set("getRange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStatus(value: () => DataExecutionStatus): Self = this.set("getStatus", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRefreshData(value: () => DataSourceTable): Self = this.set("refreshData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWaitForCompletion(value: Integer => DataExecutionStatus): Self = this.set("waitForCompletion", js.Any.fromFunction1(value))
+    def setWaitForCompletion(value: Integer => DataExecutionStatus): Self = StObject.set(x, "waitForCompletion", js.Any.fromFunction1(value))
   }
 }

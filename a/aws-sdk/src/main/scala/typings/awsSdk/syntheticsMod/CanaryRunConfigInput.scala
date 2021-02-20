@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanaryRunConfigInput extends js.Object {
+trait CanaryRunConfigInput extends StObject {
   
   /**
     * Specifies whether this canary is to use active AWS X-Ray tracing when it runs. Active tracing enables this canary run to be displayed in the ServiceLens and X-Ray service maps even if the canary does not hit an endpoint that has X-ray tracing enabled. Using X-Ray tracing incurs charges. For more information, see  Canaries and X-Ray tracing. You can enable active tracing only for canaries that use version syn-nodejs-2.0 or later for their canary runtime.
@@ -36,42 +37,30 @@ object CanaryRunConfigInput {
   }
   
   @scala.inline
-  implicit class CanaryRunConfigInputOps[Self <: CanaryRunConfigInput] (val x: Self) extends AnyVal {
+  implicit class CanaryRunConfigInputMutableBuilder[Self <: CanaryRunConfigInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTracing(value: NullableBoolean): Self = StObject.set(x, "ActiveTracing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveTracingUndefined: Self = StObject.set(x, "ActiveTracing", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironmentVariables(value: EnvironmentVariablesMap): Self = StObject.set(x, "EnvironmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTracing(value: NullableBoolean): Self = this.set("ActiveTracing", value.asInstanceOf[js.Any])
+    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "EnvironmentVariables", js.undefined)
     
     @scala.inline
-    def deleteActiveTracing: Self = this.set("ActiveTracing", js.undefined)
+    def setMemoryInMB(value: MaxSize3008): Self = StObject.set(x, "MemoryInMB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentVariables(value: EnvironmentVariablesMap): Self = this.set("EnvironmentVariables", value.asInstanceOf[js.Any])
+    def setMemoryInMBUndefined: Self = StObject.set(x, "MemoryInMB", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentVariables: Self = this.set("EnvironmentVariables", js.undefined)
+    def setTimeoutInSeconds(value: MaxFifteenMinutesInSeconds): Self = StObject.set(x, "TimeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemoryInMB(value: MaxSize3008): Self = this.set("MemoryInMB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemoryInMB: Self = this.set("MemoryInMB", js.undefined)
-    
-    @scala.inline
-    def setTimeoutInSeconds(value: MaxFifteenMinutesInSeconds): Self = this.set("TimeoutInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInSeconds: Self = this.set("TimeoutInSeconds", js.undefined)
+    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "TimeoutInSeconds", js.undefined)
   }
 }

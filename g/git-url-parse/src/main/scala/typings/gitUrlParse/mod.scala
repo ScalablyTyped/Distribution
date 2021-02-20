@@ -1,20 +1,25 @@
 package typings.gitUrlParse
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("git-url-parse", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("git-url-parse", JSImport.Namespace)
+  @js.native
   def apply(url: String): GitUrl = js.native
   
+  @JSImport("git-url-parse", "stringify")
+  @js.native
   def stringify(url: GitUrl): String = js.native
+  @JSImport("git-url-parse", "stringify")
+  @js.native
   def stringify(url: GitUrl, `type`: String): String = js.native
   
   @js.native
-  trait GitUrl extends js.Object {
+  trait GitUrl extends StObject {
     
     /** A filepath relative to the repository root. */
     var filepath: String = js.native

@@ -7,14 +7,14 @@ import typings.awsSdkClientSqsNode.typesReceiveMessageInputMod.ReceiveMessageInp
 import typings.awsSdkClientSqsNode.typesReceiveMessageOutputMod.ReceiveMessageOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/commands/ReceiveMessageCommand", JSImport.Namespace)
-@js.native
-object receiveMessageCommandMod extends js.Object {
+object receiveMessageCommandMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/commands/ReceiveMessageCommand", "ReceiveMessageCommand")
   @js.native
   class ReceiveMessageCommand protected () extends Command[
           InputTypesUnion, 

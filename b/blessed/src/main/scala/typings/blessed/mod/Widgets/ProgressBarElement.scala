@@ -2,6 +2,7 @@ package typings.blessed.mod.Widgets
 
 import typings.blessed.blessedStrings.complete
 import typings.blessed.blessedStrings.reset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDashboardEmbedUrlRequest extends js.Object {
+trait GetDashboardEmbedUrlRequest extends StObject {
   
   /**
     * The ID for the AWS account that contains the dashboard that you're embedding.
@@ -56,57 +57,45 @@ object GetDashboardEmbedUrlRequest {
   }
   
   @scala.inline
-  implicit class GetDashboardEmbedUrlRequestOps[Self <: GetDashboardEmbedUrlRequest] (val x: Self) extends AnyVal {
+  implicit class GetDashboardEmbedUrlRequestMutableBuilder[Self <: GetDashboardEmbedUrlRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setResetDisabled(value: Boolean): Self = StObject.set(x, "ResetDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardId(value: RestrictiveResourceId): Self = this.set("DashboardId", value.asInstanceOf[js.Any])
+    def setResetDisabledUndefined: Self = StObject.set(x, "ResetDisabled", js.undefined)
     
     @scala.inline
-    def setIdentityType(value: IdentityType): Self = this.set("IdentityType", value.asInstanceOf[js.Any])
+    def setSessionLifetimeInMinutes(value: SessionLifetimeInMinutes): Self = StObject.set(x, "SessionLifetimeInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetDisabled(value: Boolean): Self = this.set("ResetDisabled", value.asInstanceOf[js.Any])
+    def setSessionLifetimeInMinutesUndefined: Self = StObject.set(x, "SessionLifetimeInMinutes", js.undefined)
     
     @scala.inline
-    def deleteResetDisabled: Self = this.set("ResetDisabled", js.undefined)
+    def setStatePersistenceEnabled(value: Boolean): Self = StObject.set(x, "StatePersistenceEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionLifetimeInMinutes(value: SessionLifetimeInMinutes): Self = this.set("SessionLifetimeInMinutes", value.asInstanceOf[js.Any])
+    def setStatePersistenceEnabledUndefined: Self = StObject.set(x, "StatePersistenceEnabled", js.undefined)
     
     @scala.inline
-    def deleteSessionLifetimeInMinutes: Self = this.set("SessionLifetimeInMinutes", js.undefined)
+    def setUndoRedoDisabled(value: Boolean): Self = StObject.set(x, "UndoRedoDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatePersistenceEnabled(value: Boolean): Self = this.set("StatePersistenceEnabled", value.asInstanceOf[js.Any])
+    def setUndoRedoDisabledUndefined: Self = StObject.set(x, "UndoRedoDisabled", js.undefined)
     
     @scala.inline
-    def deleteStatePersistenceEnabled: Self = this.set("StatePersistenceEnabled", js.undefined)
+    def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndoRedoDisabled(value: Boolean): Self = this.set("UndoRedoDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUndoRedoDisabled: Self = this.set("UndoRedoDisabled", js.undefined)
-    
-    @scala.inline
-    def setUserArn(value: Arn): Self = this.set("UserArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserArn: Self = this.set("UserArn", js.undefined)
+    def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
   }
 }

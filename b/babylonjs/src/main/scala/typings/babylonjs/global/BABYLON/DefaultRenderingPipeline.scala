@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -189,9 +190,7 @@ class DefaultRenderingPipeline ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.DefaultRenderingPipeline")
-@js.native
-object DefaultRenderingPipeline extends js.Object {
+object DefaultRenderingPipeline {
   
   /**
     * Parse the serialized pipeline
@@ -200,5 +199,7 @@ object DefaultRenderingPipeline extends js.Object {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
+  @JSGlobal("BABYLON.DefaultRenderingPipeline.Parse")
+  @js.native
   def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.DefaultRenderingPipeline = js.native
 }

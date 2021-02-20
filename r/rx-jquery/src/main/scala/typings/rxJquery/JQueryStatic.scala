@@ -2,12 +2,13 @@ package typings.rxJquery
 
 import typings.jquery.JQueryAjaxSettings
 import typings.rx.Rx.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
   
   def ajaxAsObservable[T](settings: JQueryAjaxSettings): Observable[RxJQueryAjaxResult[T]] = js.native
   
@@ -34,33 +35,21 @@ object JQueryStatic {
   }
   
   @scala.inline
-  implicit class JQueryStaticOps[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjaxAsObservable(value: JQueryAjaxSettings => Observable[RxJQueryAjaxResult[js.Any]]): Self = StObject.set(x, "ajaxAsObservable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAsObservable(value: (String, js.Any, String) => Observable[RxJQueryAjaxResult[js.Any]]): Self = StObject.set(x, "getAsObservable", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetJSONAsObservable(value: (String, js.Any) => Observable[RxJQueryAjaxResult[js.Any]]): Self = StObject.set(x, "getJSONAsObservable", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAjaxAsObservable(value: JQueryAjaxSettings => Observable[RxJQueryAjaxResult[js.Any]]): Self = this.set("ajaxAsObservable", js.Any.fromFunction1(value))
+    def setGetScriptAsObservable(value: (String, js.Any) => Observable[RxJQueryAjaxResult[js.Any]]): Self = StObject.set(x, "getScriptAsObservable", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAsObservable(value: (String, js.Any, String) => Observable[RxJQueryAjaxResult[js.Any]]): Self = this.set("getAsObservable", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetJSONAsObservable(value: (String, js.Any) => Observable[RxJQueryAjaxResult[js.Any]]): Self = this.set("getJSONAsObservable", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetScriptAsObservable(value: (String, js.Any) => Observable[RxJQueryAjaxResult[js.Any]]): Self = this.set("getScriptAsObservable", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPostAsObservable(value: (String, js.Any, String) => Observable[RxJQueryAjaxResult[js.Any]]): Self = this.set("postAsObservable", js.Any.fromFunction3(value))
+    def setPostAsObservable(value: (String, js.Any, String) => Observable[RxJQueryAjaxResult[js.Any]]): Self = StObject.set(x, "postAsObservable", js.Any.fromFunction3(value))
   }
 }

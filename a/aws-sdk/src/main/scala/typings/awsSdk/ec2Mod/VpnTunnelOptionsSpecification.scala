@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpnTunnelOptionsSpecification extends js.Object {
+trait VpnTunnelOptionsSpecification extends StObject {
   
   /**
     * The action to take after DPD timeout occurs. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid Values: clear | none | restart  Default: clear 
@@ -106,147 +107,135 @@ object VpnTunnelOptionsSpecification {
   }
   
   @scala.inline
-  implicit class VpnTunnelOptionsSpecificationOps[Self <: VpnTunnelOptionsSpecification] (val x: Self) extends AnyVal {
+  implicit class VpnTunnelOptionsSpecificationMutableBuilder[Self <: VpnTunnelOptionsSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDPDTimeoutAction(value: String): Self = StObject.set(x, "DPDTimeoutAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDPDTimeoutActionUndefined: Self = StObject.set(x, "DPDTimeoutAction", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDPDTimeoutSeconds(value: Integer): Self = StObject.set(x, "DPDTimeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDPDTimeoutAction(value: String): Self = this.set("DPDTimeoutAction", value.asInstanceOf[js.Any])
+    def setDPDTimeoutSecondsUndefined: Self = StObject.set(x, "DPDTimeoutSeconds", js.undefined)
     
     @scala.inline
-    def deleteDPDTimeoutAction: Self = this.set("DPDTimeoutAction", js.undefined)
+    def setIKEVersions(value: IKEVersionsRequestList): Self = StObject.set(x, "IKEVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDPDTimeoutSeconds(value: Integer): Self = this.set("DPDTimeoutSeconds", value.asInstanceOf[js.Any])
+    def setIKEVersionsUndefined: Self = StObject.set(x, "IKEVersions", js.undefined)
     
     @scala.inline
-    def deleteDPDTimeoutSeconds: Self = this.set("DPDTimeoutSeconds", js.undefined)
+    def setIKEVersionsVarargs(value: IKEVersionsRequestListValue*): Self = StObject.set(x, "IKEVersions", js.Array(value :_*))
     
     @scala.inline
-    def setIKEVersionsVarargs(value: IKEVersionsRequestListValue*): Self = this.set("IKEVersions", js.Array(value :_*))
+    def setPhase1DHGroupNumbers(value: Phase1DHGroupNumbersRequestList): Self = StObject.set(x, "Phase1DHGroupNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIKEVersions(value: IKEVersionsRequestList): Self = this.set("IKEVersions", value.asInstanceOf[js.Any])
+    def setPhase1DHGroupNumbersUndefined: Self = StObject.set(x, "Phase1DHGroupNumbers", js.undefined)
     
     @scala.inline
-    def deleteIKEVersions: Self = this.set("IKEVersions", js.undefined)
+    def setPhase1DHGroupNumbersVarargs(value: Phase1DHGroupNumbersRequestListValue*): Self = StObject.set(x, "Phase1DHGroupNumbers", js.Array(value :_*))
     
     @scala.inline
-    def setPhase1DHGroupNumbersVarargs(value: Phase1DHGroupNumbersRequestListValue*): Self = this.set("Phase1DHGroupNumbers", js.Array(value :_*))
+    def setPhase1EncryptionAlgorithms(value: Phase1EncryptionAlgorithmsRequestList): Self = StObject.set(x, "Phase1EncryptionAlgorithms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase1DHGroupNumbers(value: Phase1DHGroupNumbersRequestList): Self = this.set("Phase1DHGroupNumbers", value.asInstanceOf[js.Any])
+    def setPhase1EncryptionAlgorithmsUndefined: Self = StObject.set(x, "Phase1EncryptionAlgorithms", js.undefined)
     
     @scala.inline
-    def deletePhase1DHGroupNumbers: Self = this.set("Phase1DHGroupNumbers", js.undefined)
+    def setPhase1EncryptionAlgorithmsVarargs(value: Phase1EncryptionAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase1EncryptionAlgorithms", js.Array(value :_*))
     
     @scala.inline
-    def setPhase1EncryptionAlgorithmsVarargs(value: Phase1EncryptionAlgorithmsRequestListValue*): Self = this.set("Phase1EncryptionAlgorithms", js.Array(value :_*))
+    def setPhase1IntegrityAlgorithms(value: Phase1IntegrityAlgorithmsRequestList): Self = StObject.set(x, "Phase1IntegrityAlgorithms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase1EncryptionAlgorithms(value: Phase1EncryptionAlgorithmsRequestList): Self = this.set("Phase1EncryptionAlgorithms", value.asInstanceOf[js.Any])
+    def setPhase1IntegrityAlgorithmsUndefined: Self = StObject.set(x, "Phase1IntegrityAlgorithms", js.undefined)
     
     @scala.inline
-    def deletePhase1EncryptionAlgorithms: Self = this.set("Phase1EncryptionAlgorithms", js.undefined)
+    def setPhase1IntegrityAlgorithmsVarargs(value: Phase1IntegrityAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase1IntegrityAlgorithms", js.Array(value :_*))
     
     @scala.inline
-    def setPhase1IntegrityAlgorithmsVarargs(value: Phase1IntegrityAlgorithmsRequestListValue*): Self = this.set("Phase1IntegrityAlgorithms", js.Array(value :_*))
+    def setPhase1LifetimeSeconds(value: Integer): Self = StObject.set(x, "Phase1LifetimeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase1IntegrityAlgorithms(value: Phase1IntegrityAlgorithmsRequestList): Self = this.set("Phase1IntegrityAlgorithms", value.asInstanceOf[js.Any])
+    def setPhase1LifetimeSecondsUndefined: Self = StObject.set(x, "Phase1LifetimeSeconds", js.undefined)
     
     @scala.inline
-    def deletePhase1IntegrityAlgorithms: Self = this.set("Phase1IntegrityAlgorithms", js.undefined)
+    def setPhase2DHGroupNumbers(value: Phase2DHGroupNumbersRequestList): Self = StObject.set(x, "Phase2DHGroupNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase1LifetimeSeconds(value: Integer): Self = this.set("Phase1LifetimeSeconds", value.asInstanceOf[js.Any])
+    def setPhase2DHGroupNumbersUndefined: Self = StObject.set(x, "Phase2DHGroupNumbers", js.undefined)
     
     @scala.inline
-    def deletePhase1LifetimeSeconds: Self = this.set("Phase1LifetimeSeconds", js.undefined)
+    def setPhase2DHGroupNumbersVarargs(value: Phase2DHGroupNumbersRequestListValue*): Self = StObject.set(x, "Phase2DHGroupNumbers", js.Array(value :_*))
     
     @scala.inline
-    def setPhase2DHGroupNumbersVarargs(value: Phase2DHGroupNumbersRequestListValue*): Self = this.set("Phase2DHGroupNumbers", js.Array(value :_*))
+    def setPhase2EncryptionAlgorithms(value: Phase2EncryptionAlgorithmsRequestList): Self = StObject.set(x, "Phase2EncryptionAlgorithms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase2DHGroupNumbers(value: Phase2DHGroupNumbersRequestList): Self = this.set("Phase2DHGroupNumbers", value.asInstanceOf[js.Any])
+    def setPhase2EncryptionAlgorithmsUndefined: Self = StObject.set(x, "Phase2EncryptionAlgorithms", js.undefined)
     
     @scala.inline
-    def deletePhase2DHGroupNumbers: Self = this.set("Phase2DHGroupNumbers", js.undefined)
+    def setPhase2EncryptionAlgorithmsVarargs(value: Phase2EncryptionAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase2EncryptionAlgorithms", js.Array(value :_*))
     
     @scala.inline
-    def setPhase2EncryptionAlgorithmsVarargs(value: Phase2EncryptionAlgorithmsRequestListValue*): Self = this.set("Phase2EncryptionAlgorithms", js.Array(value :_*))
+    def setPhase2IntegrityAlgorithms(value: Phase2IntegrityAlgorithmsRequestList): Self = StObject.set(x, "Phase2IntegrityAlgorithms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase2EncryptionAlgorithms(value: Phase2EncryptionAlgorithmsRequestList): Self = this.set("Phase2EncryptionAlgorithms", value.asInstanceOf[js.Any])
+    def setPhase2IntegrityAlgorithmsUndefined: Self = StObject.set(x, "Phase2IntegrityAlgorithms", js.undefined)
     
     @scala.inline
-    def deletePhase2EncryptionAlgorithms: Self = this.set("Phase2EncryptionAlgorithms", js.undefined)
+    def setPhase2IntegrityAlgorithmsVarargs(value: Phase2IntegrityAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase2IntegrityAlgorithms", js.Array(value :_*))
     
     @scala.inline
-    def setPhase2IntegrityAlgorithmsVarargs(value: Phase2IntegrityAlgorithmsRequestListValue*): Self = this.set("Phase2IntegrityAlgorithms", js.Array(value :_*))
+    def setPhase2LifetimeSeconds(value: Integer): Self = StObject.set(x, "Phase2LifetimeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase2IntegrityAlgorithms(value: Phase2IntegrityAlgorithmsRequestList): Self = this.set("Phase2IntegrityAlgorithms", value.asInstanceOf[js.Any])
+    def setPhase2LifetimeSecondsUndefined: Self = StObject.set(x, "Phase2LifetimeSeconds", js.undefined)
     
     @scala.inline
-    def deletePhase2IntegrityAlgorithms: Self = this.set("Phase2IntegrityAlgorithms", js.undefined)
+    def setPreSharedKey(value: String): Self = StObject.set(x, "PreSharedKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase2LifetimeSeconds(value: Integer): Self = this.set("Phase2LifetimeSeconds", value.asInstanceOf[js.Any])
+    def setPreSharedKeyUndefined: Self = StObject.set(x, "PreSharedKey", js.undefined)
     
     @scala.inline
-    def deletePhase2LifetimeSeconds: Self = this.set("Phase2LifetimeSeconds", js.undefined)
+    def setRekeyFuzzPercentage(value: Integer): Self = StObject.set(x, "RekeyFuzzPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreSharedKey(value: String): Self = this.set("PreSharedKey", value.asInstanceOf[js.Any])
+    def setRekeyFuzzPercentageUndefined: Self = StObject.set(x, "RekeyFuzzPercentage", js.undefined)
     
     @scala.inline
-    def deletePreSharedKey: Self = this.set("PreSharedKey", js.undefined)
+    def setRekeyMarginTimeSeconds(value: Integer): Self = StObject.set(x, "RekeyMarginTimeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRekeyFuzzPercentage(value: Integer): Self = this.set("RekeyFuzzPercentage", value.asInstanceOf[js.Any])
+    def setRekeyMarginTimeSecondsUndefined: Self = StObject.set(x, "RekeyMarginTimeSeconds", js.undefined)
     
     @scala.inline
-    def deleteRekeyFuzzPercentage: Self = this.set("RekeyFuzzPercentage", js.undefined)
+    def setReplayWindowSize(value: Integer): Self = StObject.set(x, "ReplayWindowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRekeyMarginTimeSeconds(value: Integer): Self = this.set("RekeyMarginTimeSeconds", value.asInstanceOf[js.Any])
+    def setReplayWindowSizeUndefined: Self = StObject.set(x, "ReplayWindowSize", js.undefined)
     
     @scala.inline
-    def deleteRekeyMarginTimeSeconds: Self = this.set("RekeyMarginTimeSeconds", js.undefined)
+    def setStartupAction(value: String): Self = StObject.set(x, "StartupAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplayWindowSize(value: Integer): Self = this.set("ReplayWindowSize", value.asInstanceOf[js.Any])
+    def setStartupActionUndefined: Self = StObject.set(x, "StartupAction", js.undefined)
     
     @scala.inline
-    def deleteReplayWindowSize: Self = this.set("ReplayWindowSize", js.undefined)
+    def setTunnelInsideCidr(value: String): Self = StObject.set(x, "TunnelInsideCidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartupAction(value: String): Self = this.set("StartupAction", value.asInstanceOf[js.Any])
+    def setTunnelInsideCidrUndefined: Self = StObject.set(x, "TunnelInsideCidr", js.undefined)
     
     @scala.inline
-    def deleteStartupAction: Self = this.set("StartupAction", js.undefined)
+    def setTunnelInsideIpv6Cidr(value: String): Self = StObject.set(x, "TunnelInsideIpv6Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTunnelInsideCidr(value: String): Self = this.set("TunnelInsideCidr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTunnelInsideCidr: Self = this.set("TunnelInsideCidr", js.undefined)
-    
-    @scala.inline
-    def setTunnelInsideIpv6Cidr(value: String): Self = this.set("TunnelInsideIpv6Cidr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTunnelInsideIpv6Cidr: Self = this.set("TunnelInsideIpv6Cidr", js.undefined)
+    def setTunnelInsideIpv6CidrUndefined: Self = StObject.set(x, "TunnelInsideIpv6Cidr", js.undefined)
   }
 }

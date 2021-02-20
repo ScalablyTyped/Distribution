@@ -1,11 +1,12 @@
 package typings.kefir.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Value[U] extends js.Object {
+trait Value[U] extends StObject {
   
   var convert: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Value {
   }
   
   @scala.inline
-  implicit class ValueOps[Self <: Value[_], U] (val x: Self with Value[U]) extends AnyVal {
+  implicit class ValueMutableBuilder[Self <: Value[_], U] (val x: Self with Value[U]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConvert(value: Boolean): Self = this.set("convert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: U): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: U): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

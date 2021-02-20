@@ -11,12 +11,13 @@ import typings.openlayers.mod.geom.GeometryType
 import typings.openlayers.mod.geom.SimpleGeometry
 import typings.openlayers.mod.source.Vector
 import typings.openlayers.mod.style.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrawOptions extends js.Object {
+trait DrawOptions extends StObject {
   
   var clickTolerance: js.UndefOr[Double] = js.native
   
@@ -60,121 +61,109 @@ object DrawOptions {
   }
   
   @scala.inline
-  implicit class DrawOptionsOps[Self <: DrawOptions] (val x: Self) extends AnyVal {
+  implicit class DrawOptionsMutableBuilder[Self <: DrawOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickTolerance(value: Double): Self = StObject.set(x, "clickTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickToleranceUndefined: Self = StObject.set(x, "clickTolerance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setType(value: GeometryType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def setClickTolerance(value: Double): Self = this.set("clickTolerance", value.asInstanceOf[js.Any])
+    def setFeatures(value: Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickTolerance: Self = this.set("clickTolerance", js.undefined)
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = this.set("condition", js.Any.fromFunction1(value))
+    def setFinishCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "finishCondition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setFinishConditionUndefined: Self = StObject.set(x, "finishCondition", js.undefined)
     
     @scala.inline
-    def setFeatures(value: Collection[Feature]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setFreehand(value: Boolean): Self = StObject.set(x, "freehand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setFreehandCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "freehandCondition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFinishCondition(value: /* event */ MapBrowserEvent => Boolean): Self = this.set("finishCondition", js.Any.fromFunction1(value))
+    def setFreehandConditionUndefined: Self = StObject.set(x, "freehandCondition", js.undefined)
     
     @scala.inline
-    def deleteFinishCondition: Self = this.set("finishCondition", js.undefined)
-    
-    @scala.inline
-    def setFreehand(value: Boolean): Self = this.set("freehand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFreehand: Self = this.set("freehand", js.undefined)
-    
-    @scala.inline
-    def setFreehandCondition(value: /* event */ MapBrowserEvent => Boolean): Self = this.set("freehandCondition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFreehandCondition: Self = this.set("freehandCondition", js.undefined)
+    def setFreehandUndefined: Self = StObject.set(x, "freehand", js.undefined)
     
     @scala.inline
     def setGeometryFunction(
       value: (/* coords */ Coordinate_ | (js.Array[js.Array[Coordinate_] | Coordinate_]), /* geo */ js.UndefOr[SimpleGeometry]) => SimpleGeometry
-    ): Self = this.set("geometryFunction", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "geometryFunction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGeometryFunction: Self = this.set("geometryFunction", js.undefined)
+    def setGeometryFunctionUndefined: Self = StObject.set(x, "geometryFunction", js.undefined)
     
     @scala.inline
-    def setGeometryName(value: String): Self = this.set("geometryName", value.asInstanceOf[js.Any])
+    def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeometryName: Self = this.set("geometryName", js.undefined)
+    def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
     
     @scala.inline
-    def setMaxPoints(value: Double): Self = this.set("maxPoints", value.asInstanceOf[js.Any])
+    def setMaxPoints(value: Double): Self = StObject.set(x, "maxPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxPoints: Self = this.set("maxPoints", js.undefined)
+    def setMaxPointsUndefined: Self = StObject.set(x, "maxPoints", js.undefined)
     
     @scala.inline
-    def setMinPoints(value: Double): Self = this.set("minPoints", value.asInstanceOf[js.Any])
+    def setMinPoints(value: Double): Self = StObject.set(x, "minPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinPoints: Self = this.set("minPoints", js.undefined)
+    def setMinPointsUndefined: Self = StObject.set(x, "minPoints", js.undefined)
     
     @scala.inline
-    def setSnapTolerance(value: Double): Self = this.set("snapTolerance", value.asInstanceOf[js.Any])
+    def setSnapTolerance(value: Double): Self = StObject.set(x, "snapTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSnapTolerance: Self = this.set("snapTolerance", js.undefined)
+    def setSnapToleranceUndefined: Self = StObject.set(x, "snapTolerance", js.undefined)
     
     @scala.inline
-    def setSource(value: Vector): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setStopClick(value: Boolean): Self = this.set("stopClick", value.asInstanceOf[js.Any])
+    def setStopClick(value: Boolean): Self = StObject.set(x, "stopClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStopClick: Self = this.set("stopClick", js.undefined)
+    def setStopClickUndefined: Self = StObject.set(x, "stopClick", js.undefined)
+    
+    @scala.inline
+    def setStyle(value: Style | js.Array[Style] | StyleFunction): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStyleFunction2(
       value: (/* feature */ Feature | typings.openlayers.mod.render.Feature, /* resolution */ Double) => Style | js.Array[Style] | Null
-    ): Self = this.set("style", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStyleVarargs(value: Style*): Self = this.set("style", js.Array(value :_*))
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: Style | js.Array[Style] | StyleFunction): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setType(value: GeometryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapX(value: Boolean): Self = this.set("wrapX", value.asInstanceOf[js.Any])
+    def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWrapX: Self = this.set("wrapX", js.undefined)
+    def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
   }
 }

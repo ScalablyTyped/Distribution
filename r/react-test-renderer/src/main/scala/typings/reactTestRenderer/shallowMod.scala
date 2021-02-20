@@ -2,18 +2,19 @@ package typings.reactTestRenderer
 
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-test-renderer/shallow", JSImport.Namespace)
-@js.native
-object shallowMod extends js.Object {
+object shallowMod {
   
+  @JSImport("react-test-renderer/shallow", "createRenderer")
+  @js.native
   def createRenderer(): ShallowRenderer = js.native
   
   @js.native
-  trait ShallowRenderer extends js.Object {
+  trait ShallowRenderer extends StObject {
     
     /**
       * After `shallowRenderer.render()` has been called, returns mounted instance.

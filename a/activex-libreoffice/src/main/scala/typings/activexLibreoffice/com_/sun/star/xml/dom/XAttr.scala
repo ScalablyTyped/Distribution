@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.xml.dom
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,45 +97,33 @@ object XAttr {
   }
   
   @scala.inline
-  implicit class XAttrOps[Self <: XAttr] (val x: Self) extends AnyVal {
+  implicit class XAttrMutableBuilder[Self <: XAttr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetOwnerElement(value: () => XElement): Self = StObject.set(x, "getOwnerElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSpecified(value: () => Boolean): Self = StObject.set(x, "getSpecified", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOwnerElement(value: XElement): Self = this.set("OwnerElement", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecified(value: Boolean): Self = this.set("Specified", value.asInstanceOf[js.Any])
+    def setOwnerElement(value: XElement): Self = StObject.set(x, "OwnerElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setSpecified(value: Boolean): Self = StObject.set(x, "Specified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetOwnerElement(value: () => XElement): Self = this.set("getOwnerElement", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSpecified(value: () => Boolean): Self = this.set("getSpecified", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetValue(value: () => String): Self = this.set("getValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetValue(value: String => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

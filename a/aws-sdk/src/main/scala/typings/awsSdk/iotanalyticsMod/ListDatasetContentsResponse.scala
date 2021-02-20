@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDatasetContentsResponse extends js.Object {
+trait ListDatasetContentsResponse extends StObject {
   
   /**
     * Summary information about data set contents that have been created.
@@ -26,33 +27,21 @@ object ListDatasetContentsResponse {
   }
   
   @scala.inline
-  implicit class ListDatasetContentsResponseOps[Self <: ListDatasetContentsResponse] (val x: Self) extends AnyVal {
+  implicit class ListDatasetContentsResponseMutableBuilder[Self <: ListDatasetContentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasetContentSummaries(value: DatasetContentSummaries): Self = StObject.set(x, "datasetContentSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetContentSummariesUndefined: Self = StObject.set(x, "datasetContentSummaries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatasetContentSummariesVarargs(value: DatasetContentSummary*): Self = StObject.set(x, "datasetContentSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setDatasetContentSummariesVarargs(value: DatasetContentSummary*): Self = this.set("datasetContentSummaries", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetContentSummaries(value: DatasetContentSummaries): Self = this.set("datasetContentSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDatasetContentSummaries: Self = this.set("datasetContentSummaries", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

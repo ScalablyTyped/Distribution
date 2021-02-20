@@ -1,11 +1,12 @@
 package typings.filesystem
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalFileSystem extends js.Object {
+trait LocalFileSystem extends StObject {
   
   /**
     * Used for storage that should not be removed by the user agent without application or user permission.

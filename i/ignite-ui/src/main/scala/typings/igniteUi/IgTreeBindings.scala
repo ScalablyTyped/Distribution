@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,120 +131,108 @@ object IgTreeBindings {
   }
   
   @scala.inline
-  implicit class IgTreeBindingsOps[Self <: IgTreeBindings] (val x: Self) extends AnyVal {
+  implicit class IgTreeBindingsMutableBuilder[Self <: IgTreeBindings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindings(value: IgTreeBindingsBindings): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckedKey(value: String): Self = StObject.set(x, "checkedKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindings(value: IgTreeBindingsBindings): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    def setCheckedKeyUndefined: Self = StObject.set(x, "checkedKey", js.undefined)
     
     @scala.inline
-    def deleteBindings: Self = this.set("bindings", js.undefined)
+    def setChildDataProperty(value: String): Self = StObject.set(x, "childDataProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedKey(value: String): Self = this.set("checkedKey", value.asInstanceOf[js.Any])
+    def setChildDataPropertyUndefined: Self = StObject.set(x, "childDataProperty", js.undefined)
     
     @scala.inline
-    def deleteCheckedKey: Self = this.set("checkedKey", js.undefined)
+    def setChildDataXPath(value: String): Self = StObject.set(x, "childDataXPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDataProperty(value: String): Self = this.set("childDataProperty", value.asInstanceOf[js.Any])
+    def setChildDataXPathUndefined: Self = StObject.set(x, "childDataXPath", js.undefined)
     
     @scala.inline
-    def deleteChildDataProperty: Self = this.set("childDataProperty", js.undefined)
+    def setExpandedKey(value: String): Self = StObject.set(x, "expandedKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDataXPath(value: String): Self = this.set("childDataXPath", value.asInstanceOf[js.Any])
+    def setExpandedKeyUndefined: Self = StObject.set(x, "expandedKey", js.undefined)
     
     @scala.inline
-    def deleteChildDataXPath: Self = this.set("childDataXPath", js.undefined)
+    def setImageUrlKey(value: String): Self = StObject.set(x, "imageUrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedKey(value: String): Self = this.set("expandedKey", value.asInstanceOf[js.Any])
+    def setImageUrlKeyUndefined: Self = StObject.set(x, "imageUrlKey", js.undefined)
     
     @scala.inline
-    def deleteExpandedKey: Self = this.set("expandedKey", js.undefined)
+    def setImageUrlXPath(value: String): Self = StObject.set(x, "imageUrlXPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrlKey(value: String): Self = this.set("imageUrlKey", value.asInstanceOf[js.Any])
+    def setImageUrlXPathUndefined: Self = StObject.set(x, "imageUrlXPath", js.undefined)
     
     @scala.inline
-    def deleteImageUrlKey: Self = this.set("imageUrlKey", js.undefined)
+    def setNavigateUrlKey(value: String): Self = StObject.set(x, "navigateUrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrlXPath(value: String): Self = this.set("imageUrlXPath", value.asInstanceOf[js.Any])
+    def setNavigateUrlKeyUndefined: Self = StObject.set(x, "navigateUrlKey", js.undefined)
     
     @scala.inline
-    def deleteImageUrlXPath: Self = this.set("imageUrlXPath", js.undefined)
+    def setNavigateUrlXPath(value: String): Self = StObject.set(x, "navigateUrlXPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigateUrlKey(value: String): Self = this.set("navigateUrlKey", value.asInstanceOf[js.Any])
+    def setNavigateUrlXPathUndefined: Self = StObject.set(x, "navigateUrlXPath", js.undefined)
     
     @scala.inline
-    def deleteNavigateUrlKey: Self = this.set("navigateUrlKey", js.undefined)
+    def setNodeContentTemplate(value: String): Self = StObject.set(x, "nodeContentTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigateUrlXPath(value: String): Self = this.set("navigateUrlXPath", value.asInstanceOf[js.Any])
+    def setNodeContentTemplateUndefined: Self = StObject.set(x, "nodeContentTemplate", js.undefined)
     
     @scala.inline
-    def deleteNavigateUrlXPath: Self = this.set("navigateUrlXPath", js.undefined)
+    def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeContentTemplate(value: String): Self = this.set("nodeContentTemplate", value.asInstanceOf[js.Any])
+    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
     @scala.inline
-    def deleteNodeContentTemplate: Self = this.set("nodeContentTemplate", js.undefined)
+    def setSearchFieldXPath(value: String): Self = StObject.set(x, "searchFieldXPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryKey(value: String): Self = this.set("primaryKey", value.asInstanceOf[js.Any])
+    def setSearchFieldXPathUndefined: Self = StObject.set(x, "searchFieldXPath", js.undefined)
     
     @scala.inline
-    def deletePrimaryKey: Self = this.set("primaryKey", js.undefined)
+    def setTargetKey(value: String): Self = StObject.set(x, "targetKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchFieldXPath(value: String): Self = this.set("searchFieldXPath", value.asInstanceOf[js.Any])
+    def setTargetKeyUndefined: Self = StObject.set(x, "targetKey", js.undefined)
     
     @scala.inline
-    def deleteSearchFieldXPath: Self = this.set("searchFieldXPath", js.undefined)
+    def setTextKey(value: String): Self = StObject.set(x, "textKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetKey(value: String): Self = this.set("targetKey", value.asInstanceOf[js.Any])
+    def setTextKeyUndefined: Self = StObject.set(x, "textKey", js.undefined)
     
     @scala.inline
-    def deleteTargetKey: Self = this.set("targetKey", js.undefined)
+    def setTextXPath(value: String): Self = StObject.set(x, "textXPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextKey(value: String): Self = this.set("textKey", value.asInstanceOf[js.Any])
+    def setTextXPathUndefined: Self = StObject.set(x, "textXPath", js.undefined)
     
     @scala.inline
-    def deleteTextKey: Self = this.set("textKey", js.undefined)
+    def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextXPath(value: String): Self = this.set("textXPath", value.asInstanceOf[js.Any])
+    def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
     
     @scala.inline
-    def deleteTextXPath: Self = this.set("textXPath", js.undefined)
+    def setValueXPath(value: String): Self = StObject.set(x, "valueXPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueKey(value: String): Self = this.set("valueKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueKey: Self = this.set("valueKey", js.undefined)
-    
-    @scala.inline
-    def setValueXPath(value: String): Self = this.set("valueXPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueXPath: Self = this.set("valueXPath", js.undefined)
+    def setValueXPathUndefined: Self = StObject.set(x, "valueXPath", js.undefined)
   }
 }

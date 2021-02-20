@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggingConfiguration extends js.Object {
+trait LoggingConfiguration extends StObject {
   
   /**
     * The Amazon Kinesis Data Firehose Amazon Resource Name (ARNs) that you want to associate with the web ACL.
@@ -36,42 +37,30 @@ object LoggingConfiguration {
   }
   
   @scala.inline
-  implicit class LoggingConfigurationOps[Self <: LoggingConfiguration] (val x: Self) extends AnyVal {
+  implicit class LoggingConfigurationMutableBuilder[Self <: LoggingConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogDestinationConfigs(value: LogDestinationConfigs): Self = StObject.set(x, "LogDestinationConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogDestinationConfigsVarargs(value: ResourceArn*): Self = StObject.set(x, "LogDestinationConfigs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManagedByFirewallManager(value: Boolean): Self = StObject.set(x, "ManagedByFirewallManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogDestinationConfigsVarargs(value: ResourceArn*): Self = this.set("LogDestinationConfigs", js.Array(value :_*))
+    def setManagedByFirewallManagerUndefined: Self = StObject.set(x, "ManagedByFirewallManager", js.undefined)
     
     @scala.inline
-    def setLogDestinationConfigs(value: LogDestinationConfigs): Self = this.set("LogDestinationConfigs", value.asInstanceOf[js.Any])
+    def setRedactedFields(value: RedactedFields): Self = StObject.set(x, "RedactedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArn(value: ResourceArn): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    def setRedactedFieldsUndefined: Self = StObject.set(x, "RedactedFields", js.undefined)
     
     @scala.inline
-    def setManagedByFirewallManager(value: Boolean): Self = this.set("ManagedByFirewallManager", value.asInstanceOf[js.Any])
+    def setRedactedFieldsVarargs(value: FieldToMatch*): Self = StObject.set(x, "RedactedFields", js.Array(value :_*))
     
     @scala.inline
-    def deleteManagedByFirewallManager: Self = this.set("ManagedByFirewallManager", js.undefined)
-    
-    @scala.inline
-    def setRedactedFieldsVarargs(value: FieldToMatch*): Self = this.set("RedactedFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setRedactedFields(value: RedactedFields): Self = this.set("RedactedFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedactedFields: Self = this.set("RedactedFields", js.undefined)
+    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.dynatable.JQueryDynatable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Queries extends js.Object {
+trait Queries extends StObject {
   
   /**
     * Add a new condition in the queries
@@ -68,42 +69,30 @@ object Queries {
   }
   
   @scala.inline
-  implicit class QueriesOps[Self <: Queries] (val x: Self) extends AnyVal {
+  implicit class QueriesMutableBuilder[Self <: Queries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (String, js.Any) => Dynatable): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunctions(value: QueriesFunctions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: (String, js.Any) => Dynatable): Self = this.set("add", js.Any.fromFunction2(value))
+    def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFunctions(value: QueriesFunctions): Self = this.set("functions", value.asInstanceOf[js.Any])
+    def setRemove(value: String => Dynatable): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
+    def setRun(value: () => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitOnLoad(value: () => Boolean): Self = this.set("initOnLoad", js.Any.fromFunction0(value))
+    def setRunSearch(value: js.Any => Unit): Self = StObject.set(x, "runSearch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: String => Dynatable): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRun(value: () => js.Any): Self = this.set("run", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRunSearch(value: js.Any => Unit): Self = this.set("runSearch", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetupInputs(value: () => Unit): Self = this.set("setupInputs", js.Any.fromFunction0(value))
+    def setSetupInputs(value: () => Unit): Self = StObject.set(x, "setupInputs", js.Any.fromFunction0(value))
   }
 }

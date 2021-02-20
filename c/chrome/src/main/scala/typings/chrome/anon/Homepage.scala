@@ -1,12 +1,13 @@
 package typings.chrome.anon
 
 import typings.chrome.chrome.runtime.SearchProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Homepage extends js.Object {
+trait Homepage extends StObject {
   
   var homepage: js.UndefOr[String] = js.native
   
@@ -23,39 +24,27 @@ object Homepage {
   }
   
   @scala.inline
-  implicit class HomepageOps[Self <: Homepage] (val x: Self) extends AnyVal {
+  implicit class HomepageMutableBuilder[Self <: Homepage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearch_provider(value: SearchProvider): Self = StObject.set(x, "search_provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomepage(value: String): Self = this.set("homepage", value.asInstanceOf[js.Any])
+    def setSearch_providerUndefined: Self = StObject.set(x, "search_provider", js.undefined)
     
     @scala.inline
-    def deleteHomepage: Self = this.set("homepage", js.undefined)
+    def setStartup_pages(value: js.Array[String]): Self = StObject.set(x, "startup_pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_provider(value: SearchProvider): Self = this.set("search_provider", value.asInstanceOf[js.Any])
+    def setStartup_pagesUndefined: Self = StObject.set(x, "startup_pages", js.undefined)
     
     @scala.inline
-    def deleteSearch_provider: Self = this.set("search_provider", js.undefined)
-    
-    @scala.inline
-    def setStartup_pagesVarargs(value: String*): Self = this.set("startup_pages", js.Array(value :_*))
-    
-    @scala.inline
-    def setStartup_pages(value: js.Array[String]): Self = this.set("startup_pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartup_pages: Self = this.set("startup_pages", js.undefined)
+    def setStartup_pagesVarargs(value: String*): Self = StObject.set(x, "startup_pages", js.Array(value :_*))
   }
 }

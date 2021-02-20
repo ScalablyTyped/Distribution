@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Animations/animationEvent", JSImport.Namespace)
-@js.native
-object animationEventMod extends js.Object {
+object animationEventMod {
   
+  @JSImport("babylonjs/Animations/animationEvent", "AnimationEvent")
   @js.native
-  class AnimationEvent protected () extends js.Object {
+  class AnimationEvent protected () extends StObject {
     /**
       * Initializes the animation event
       * @param frame The frame for which the event is triggered

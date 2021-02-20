@@ -1,9 +1,10 @@
 package typings.ddTrace.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Span
-  extends typings.opentracing.spanMod.Span
+  extends typings.opentracing.mod.Span

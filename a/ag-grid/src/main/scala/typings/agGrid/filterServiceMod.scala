@@ -1,16 +1,16 @@
 package typings.agGrid
 
 import typings.agGrid.rowNodeMod.RowNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowNodes/filterService", JSImport.Namespace)
-@js.native
-object filterServiceMod extends js.Object {
+object filterServiceMod {
   
+  @JSImport("ag-grid/dist/lib/rowNodes/filterService", "FilterService")
   @js.native
-  class FilterService () extends js.Object {
+  class FilterService () extends StObject {
     
     var doingTreeData: js.Any = js.native
     

@@ -2,12 +2,13 @@ package typings.popperjsCore.typesMod
 
 import typings.popperjsCore.anon.PartialState
 import typings.popperjsCore.enumsMod.Placement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionsGeneric[TModifier] extends js.Object {
+trait OptionsGeneric[TModifier] extends StObject {
   
   var modifiers: js.Array[TModifier] = js.native
   
@@ -26,36 +27,24 @@ object OptionsGeneric {
   }
   
   @scala.inline
-  implicit class OptionsGenericOps[Self <: OptionsGeneric[_], TModifier] (val x: Self with OptionsGeneric[TModifier]) extends AnyVal {
+  implicit class OptionsGenericMutableBuilder[Self <: OptionsGeneric[_], TModifier] (val x: Self with OptionsGeneric[TModifier]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModifiers(value: js.Array[TModifier]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModifiersVarargs(value: TModifier*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModifiersVarargs(value: TModifier*): Self = this.set("modifiers", js.Array(value :_*))
+    def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
     
     @scala.inline
-    def setModifiers(value: js.Array[TModifier]): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: Placement): Self = this.set("placement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrategy(value: PositioningStrategy): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = this.set("onFirstUpdate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFirstUpdate: Self = this.set("onFirstUpdate", js.undefined)
+    def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
   }
 }

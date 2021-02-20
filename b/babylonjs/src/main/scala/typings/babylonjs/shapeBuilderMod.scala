@@ -5,19 +5,22 @@ import typings.babylonjs.anon.Path
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/Builders/shapeBuilder", JSImport.Namespace)
-@js.native
-object shapeBuilderMod extends js.Object {
+object shapeBuilderMod {
   
+  @JSImport("babylonjs/Meshes/Builders/shapeBuilder", "ShapeBuilder")
   @js.native
-  class ShapeBuilder () extends js.Object
+  class ShapeBuilder () extends StObject
   /* static members */
-  @js.native
-  object ShapeBuilder extends js.Object {
+  object ShapeBuilder {
+    
+    @JSImport("babylonjs/Meshes/Builders/shapeBuilder", "ShapeBuilder")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates an extruded shape mesh. The extrusion is a parametric shape. It has no predefined shape. Its final shape will depend on the input parameters.
@@ -39,7 +42,11 @@ object shapeBuilderMod extends js.Object {
       * @see https://doc.babylonjs.com/how_to/parametric_shapes
       * @see https://doc.babylonjs.com/how_to/parametric_shapes#extruded-shapes
       */
+    @JSImport("babylonjs/Meshes/Builders/shapeBuilder", "ShapeBuilder.ExtrudeShape")
+    @js.native
     def ExtrudeShape(name: String, options: InvertUV): Mesh = js.native
+    @JSImport("babylonjs/Meshes/Builders/shapeBuilder", "ShapeBuilder.ExtrudeShape")
+    @js.native
     def ExtrudeShape(name: String, options: InvertUV, scene: Nullable[Scene]): Mesh = js.native
     
     /**
@@ -68,9 +75,17 @@ object shapeBuilderMod extends js.Object {
       * @see https://doc.babylonjs.com/how_to/parametric_shapes
       * @see https://doc.babylonjs.com/how_to/parametric_shapes#extruded-shapes
       */
+    @JSImport("babylonjs/Meshes/Builders/shapeBuilder", "ShapeBuilder.ExtrudeShapeCustom")
+    @js.native
     def ExtrudeShapeCustom(name: String, options: Path): Mesh = js.native
+    @JSImport("babylonjs/Meshes/Builders/shapeBuilder", "ShapeBuilder.ExtrudeShapeCustom")
+    @js.native
     def ExtrudeShapeCustom(name: String, options: Path, scene: Nullable[Scene]): Mesh = js.native
     
-    var _ExtrudeShapeGeneric: js.Any = js.native
+    @JSImport("babylonjs/Meshes/Builders/shapeBuilder", "ShapeBuilder._ExtrudeShapeGeneric")
+    @js.native
+    def _ExtrudeShapeGeneric: js.Any = js.native
+    @scala.inline
+    def _ExtrudeShapeGeneric_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ExtrudeShapeGeneric")(x.asInstanceOf[js.Any])
   }
 }

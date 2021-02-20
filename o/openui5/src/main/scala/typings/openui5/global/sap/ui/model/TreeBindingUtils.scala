@@ -1,12 +1,11 @@
 package typings.openui5.global.sap.ui.model
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.TreeBindingUtils")
-@js.native
-object TreeBindingUtils extends js.Object {
+object TreeBindingUtils {
   
   /**
     * Merges together oNewSection into a set of other sections (aSections)The array/objects are not
@@ -15,5 +14,7 @@ object TreeBindingUtils extends js.Object {
     * @param oNewSection the section which should be merged into aNewSections
     * @returns a new array containing all sections from aSections merged with oNewSection
     */
+  @JSGlobal("sap.ui.model.TreeBindingUtils.mergeSections")
+  @js.native
   def mergeSections(aSections: js.Array[_], oNewSection: js.Any): js.Array[_] = js.native
 }

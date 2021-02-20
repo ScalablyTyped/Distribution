@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,72 +97,60 @@ object dotDensityCreateRendererParams {
   }
   
   @scala.inline
-  implicit class dotDensityCreateRendererParamsOps[Self <: dotDensityCreateRendererParams] (val x: Self) extends AnyVal {
+  implicit class dotDensityCreateRendererParamsMutableBuilder[Self <: dotDensityCreateRendererParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[dotDensityCreateRendererParamsAttributes]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesVarargs(value: dotDensityCreateRendererParamsAttributes*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: dotDensityCreateRendererParamsAttributes*): Self = this.set("attributes", js.Array(value :_*))
+    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     @scala.inline
-    def setAttributes(value: js.Array[dotDensityCreateRendererParamsAttributes]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setDotBlendingEnabled(value: Boolean): Self = StObject.set(x, "dotBlendingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: FeatureLayer | GeoJSONLayer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setDotBlendingEnabledUndefined: Self = StObject.set(x, "dotBlendingEnabled", js.undefined)
     
     @scala.inline
-    def setView(value: MapView): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setDotDensityScheme(value: DotDensityScheme): Self = StObject.set(x, "dotDensityScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemap(value: String | Basemap): Self = this.set("basemap", value.asInstanceOf[js.Any])
+    def setDotDensitySchemeUndefined: Self = StObject.set(x, "dotDensityScheme", js.undefined)
     
     @scala.inline
-    def deleteBasemap: Self = this.set("basemap", js.undefined)
+    def setDotValueOptimizationEnabled(value: Boolean): Self = StObject.set(x, "dotValueOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotBlendingEnabled(value: Boolean): Self = this.set("dotBlendingEnabled", value.asInstanceOf[js.Any])
+    def setDotValueOptimizationEnabledUndefined: Self = StObject.set(x, "dotValueOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def deleteDotBlendingEnabled: Self = this.set("dotBlendingEnabled", js.undefined)
+    def setLayer(value: FeatureLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotDensityScheme(value: DotDensityScheme): Self = this.set("dotDensityScheme", value.asInstanceOf[js.Any])
+    def setLegendOptions(value: dotDensityCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDotDensityScheme: Self = this.set("dotDensityScheme", js.undefined)
+    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
     @scala.inline
-    def setDotValueOptimizationEnabled(value: Boolean): Self = this.set("dotValueOptimizationEnabled", value.asInstanceOf[js.Any])
+    def setOutlineOptimizationEnabled(value: Boolean): Self = StObject.set(x, "outlineOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDotValueOptimizationEnabled: Self = this.set("dotValueOptimizationEnabled", js.undefined)
+    def setOutlineOptimizationEnabledUndefined: Self = StObject.set(x, "outlineOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def setLegendOptions(value: dotDensityCreateRendererParamsLegendOptions): Self = this.set("legendOptions", value.asInstanceOf[js.Any])
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLegendOptions: Self = this.set("legendOptions", js.undefined)
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def setOutlineOptimizationEnabled(value: Boolean): Self = this.set("outlineOptimizationEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutlineOptimizationEnabled: Self = this.set("outlineOptimizationEnabled", js.undefined)
-    
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

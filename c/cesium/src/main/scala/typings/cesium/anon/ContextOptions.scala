@@ -4,12 +4,13 @@ import typings.cesium.mod.MapMode2D
 import typings.cesium.mod.MapProjection
 import typings.std.Element
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextOptions extends js.Object {
+trait ContextOptions extends StObject {
   
   var canvas: HTMLCanvasElement = js.native
   
@@ -44,87 +45,75 @@ object ContextOptions {
   }
   
   @scala.inline
-  implicit class ContextOptionsOps[Self <: ContextOptions] (val x: Self) extends AnyVal {
+  implicit class ContextOptionsMutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextOptions(value: js.Any): Self = StObject.set(x, "contextOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextOptionsUndefined: Self = StObject.set(x, "contextOptions", js.undefined)
     
     @scala.inline
-    def setCanvas(value: HTMLCanvasElement): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setCreditContainer(value: Element): Self = StObject.set(x, "creditContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextOptions(value: js.Any): Self = this.set("contextOptions", value.asInstanceOf[js.Any])
+    def setCreditContainerUndefined: Self = StObject.set(x, "creditContainer", js.undefined)
     
     @scala.inline
-    def deleteContextOptions: Self = this.set("contextOptions", js.undefined)
+    def setCreditViewport(value: Element): Self = StObject.set(x, "creditViewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreditContainer(value: Element): Self = this.set("creditContainer", value.asInstanceOf[js.Any])
+    def setCreditViewportUndefined: Self = StObject.set(x, "creditViewport", js.undefined)
     
     @scala.inline
-    def deleteCreditContainer: Self = this.set("creditContainer", js.undefined)
+    def setMapMode2D(value: MapMode2D): Self = StObject.set(x, "mapMode2D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreditViewport(value: Element): Self = this.set("creditViewport", value.asInstanceOf[js.Any])
+    def setMapMode2DUndefined: Self = StObject.set(x, "mapMode2D", js.undefined)
     
     @scala.inline
-    def deleteCreditViewport: Self = this.set("creditViewport", js.undefined)
+    def setMapProjection(value: MapProjection): Self = StObject.set(x, "mapProjection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapMode2D(value: MapMode2D): Self = this.set("mapMode2D", value.asInstanceOf[js.Any])
+    def setMapProjectionUndefined: Self = StObject.set(x, "mapProjection", js.undefined)
     
     @scala.inline
-    def deleteMapMode2D: Self = this.set("mapMode2D", js.undefined)
+    def setMaximumRenderTimeChange(value: Double): Self = StObject.set(x, "maximumRenderTimeChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapProjection(value: MapProjection): Self = this.set("mapProjection", value.asInstanceOf[js.Any])
+    def setMaximumRenderTimeChangeUndefined: Self = StObject.set(x, "maximumRenderTimeChange", js.undefined)
     
     @scala.inline
-    def deleteMapProjection: Self = this.set("mapProjection", js.undefined)
+    def setOrderIndependentTranslucency(value: Boolean): Self = StObject.set(x, "orderIndependentTranslucency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumRenderTimeChange(value: Double): Self = this.set("maximumRenderTimeChange", value.asInstanceOf[js.Any])
+    def setOrderIndependentTranslucencyUndefined: Self = StObject.set(x, "orderIndependentTranslucency", js.undefined)
     
     @scala.inline
-    def deleteMaximumRenderTimeChange: Self = this.set("maximumRenderTimeChange", js.undefined)
+    def setRequestRenderMode(value: Boolean): Self = StObject.set(x, "requestRenderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderIndependentTranslucency(value: Boolean): Self = this.set("orderIndependentTranslucency", value.asInstanceOf[js.Any])
+    def setRequestRenderModeUndefined: Self = StObject.set(x, "requestRenderMode", js.undefined)
     
     @scala.inline
-    def deleteOrderIndependentTranslucency: Self = this.set("orderIndependentTranslucency", js.undefined)
+    def setScene3DOnly(value: Boolean): Self = StObject.set(x, "scene3DOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestRenderMode(value: Boolean): Self = this.set("requestRenderMode", value.asInstanceOf[js.Any])
+    def setScene3DOnlyUndefined: Self = StObject.set(x, "scene3DOnly", js.undefined)
     
     @scala.inline
-    def deleteRequestRenderMode: Self = this.set("requestRenderMode", js.undefined)
+    def setShadows(value: Boolean): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScene3DOnly(value: Boolean): Self = this.set("scene3DOnly", value.asInstanceOf[js.Any])
+    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
     @scala.inline
-    def deleteScene3DOnly: Self = this.set("scene3DOnly", js.undefined)
+    def setTerrainExaggeration(value: Double): Self = StObject.set(x, "terrainExaggeration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadows(value: Boolean): Self = this.set("shadows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadows: Self = this.set("shadows", js.undefined)
-    
-    @scala.inline
-    def setTerrainExaggeration(value: Double): Self = this.set("terrainExaggeration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerrainExaggeration: Self = this.set("terrainExaggeration", js.undefined)
+    def setTerrainExaggerationUndefined: Self = StObject.set(x, "terrainExaggeration", js.undefined)
   }
 }

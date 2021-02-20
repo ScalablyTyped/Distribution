@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "CancellationTokenSource")
 @js.native
-class CancellationTokenSource () extends js.Object {
+class CancellationTokenSource () extends StObject {
   
   /**
     * Signal cancellation on the token.

@@ -1,15 +1,23 @@
 package typings.doubleclickGpt
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.doubleclickGpt.googletag.Googletag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object googletag extends TopLevel[Googletag]
+  object googletag extends Shortcut {
+    
+    @JSGlobal("googletag")
+    @js.native
+    val ^ : Googletag = js.native
+    
+    type _To = Googletag
+    
+    /* This means you don't have to write `^`, but can instead just say `googletag.foo` */
+    override def _to: Googletag = ^
+  }
 }

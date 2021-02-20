@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnPremisesProvisioningError extends js.Object {
+trait OnPremisesProvisioningError extends StObject {
   
   /**
     * Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict
@@ -31,54 +32,42 @@ object OnPremisesProvisioningError {
   }
   
   @scala.inline
-  implicit class OnPremisesProvisioningErrorOps[Self <: OnPremisesProvisioningError] (val x: Self) extends AnyVal {
+  implicit class OnPremisesProvisioningErrorMutableBuilder[Self <: OnPremisesProvisioningError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: NullableOption[String]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryNull: Self = StObject.set(x, "category", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def setCategory(value: NullableOption[String]): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setOccurredDateTime(value: NullableOption[String]): Self = StObject.set(x, "occurredDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setOccurredDateTimeNull: Self = StObject.set(x, "occurredDateTime", null)
     
     @scala.inline
-    def setCategoryNull: Self = this.set("category", null)
+    def setOccurredDateTimeUndefined: Self = StObject.set(x, "occurredDateTime", js.undefined)
     
     @scala.inline
-    def setOccurredDateTime(value: NullableOption[String]): Self = this.set("occurredDateTime", value.asInstanceOf[js.Any])
+    def setPropertyCausingError(value: NullableOption[String]): Self = StObject.set(x, "propertyCausingError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOccurredDateTime: Self = this.set("occurredDateTime", js.undefined)
+    def setPropertyCausingErrorNull: Self = StObject.set(x, "propertyCausingError", null)
     
     @scala.inline
-    def setOccurredDateTimeNull: Self = this.set("occurredDateTime", null)
+    def setPropertyCausingErrorUndefined: Self = StObject.set(x, "propertyCausingError", js.undefined)
     
     @scala.inline
-    def setPropertyCausingError(value: NullableOption[String]): Self = this.set("propertyCausingError", value.asInstanceOf[js.Any])
+    def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePropertyCausingError: Self = this.set("propertyCausingError", js.undefined)
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def setPropertyCausingErrorNull: Self = this.set("propertyCausingError", null)
-    
-    @scala.inline
-    def setValue(value: NullableOption[String]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

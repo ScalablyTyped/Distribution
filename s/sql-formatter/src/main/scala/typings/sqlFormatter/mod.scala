@@ -1,18 +1,20 @@
 package typings.sqlFormatter
 
 import typings.sqlFormatter.anon.Indent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sql-formatter", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("sql-formatter", "default.format")
+    @js.native
     def format(query: String): String = js.native
+    @JSImport("sql-formatter", "default.format")
+    @js.native
     def format(query: String, cfg: Indent): String = js.native
   }
 }

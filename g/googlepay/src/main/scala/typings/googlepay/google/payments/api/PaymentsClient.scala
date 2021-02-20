@@ -1,6 +1,7 @@
 package typings.googlepay.google.payments.api
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * implement the Google Pay API in your web applications.
   */
 @js.native
-trait PaymentsClient extends js.Object {
+trait PaymentsClient extends StObject {
   
   /**
     * The convenience method is used to generate a Google Pay payment
@@ -133,30 +134,18 @@ object PaymentsClient {
   }
   
   @scala.inline
-  implicit class PaymentsClientOps[Self <: PaymentsClient] (val x: Self) extends AnyVal {
+  implicit class PaymentsClientMutableBuilder[Self <: PaymentsClient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateButton(value: ButtonOptions => HTMLElement): Self = StObject.set(x, "createButton", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsReadyToPay(value: IsReadyToPayRequest => js.Promise[IsReadyToPayResponse]): Self = StObject.set(x, "isReadyToPay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadPaymentData(value: PaymentDataRequest => js.Promise[PaymentData]): Self = StObject.set(x, "loadPaymentData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateButton(value: ButtonOptions => HTMLElement): Self = this.set("createButton", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsReadyToPay(value: IsReadyToPayRequest => js.Promise[IsReadyToPayResponse]): Self = this.set("isReadyToPay", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLoadPaymentData(value: PaymentDataRequest => js.Promise[PaymentData]): Self = this.set("loadPaymentData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPrefetchPaymentData(value: PaymentDataRequest => Unit): Self = this.set("prefetchPaymentData", js.Any.fromFunction1(value))
+    def setPrefetchPaymentData(value: PaymentDataRequest => Unit): Self = StObject.set(x, "prefetchPaymentData", js.Any.fromFunction1(value))
   }
 }

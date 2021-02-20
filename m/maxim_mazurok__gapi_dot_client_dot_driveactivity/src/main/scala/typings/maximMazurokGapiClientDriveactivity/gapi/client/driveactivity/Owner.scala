@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Owner extends js.Object {
+trait Owner extends StObject {
   
   /** The domain of the Drive item owner. */
   var domain: js.UndefOr[Domain] = js.native
@@ -28,42 +29,30 @@ object Owner {
   }
   
   @scala.inline
-  implicit class OwnerOps[Self <: Owner] (val x: Self) extends AnyVal {
+  implicit class OwnerMutableBuilder[Self <: Owner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrive(value: DriveReference): Self = StObject.set(x, "drive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: Domain): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setDriveUndefined: Self = StObject.set(x, "drive", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setTeamDrive(value: TeamDriveReference): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrive(value: DriveReference): Self = this.set("drive", value.asInstanceOf[js.Any])
+    def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
     
     @scala.inline
-    def deleteDrive: Self = this.set("drive", js.undefined)
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamDrive(value: TeamDriveReference): Self = this.set("teamDrive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeamDrive: Self = this.set("teamDrive", js.undefined)
-    
-    @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EbsOptimizedInfo extends js.Object {
+trait EbsOptimizedInfo extends StObject {
   
   /**
     * The baseline bandwidth performance for an EBS-optimized instance type, in Mbps.
@@ -46,54 +47,42 @@ object EbsOptimizedInfo {
   }
   
   @scala.inline
-  implicit class EbsOptimizedInfoOps[Self <: EbsOptimizedInfo] (val x: Self) extends AnyVal {
+  implicit class EbsOptimizedInfoMutableBuilder[Self <: EbsOptimizedInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaselineBandwidthInMbps(value: BaselineBandwidthInMbps): Self = StObject.set(x, "BaselineBandwidthInMbps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaselineBandwidthInMbpsUndefined: Self = StObject.set(x, "BaselineBandwidthInMbps", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaselineIops(value: BaselineIops): Self = StObject.set(x, "BaselineIops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineBandwidthInMbps(value: BaselineBandwidthInMbps): Self = this.set("BaselineBandwidthInMbps", value.asInstanceOf[js.Any])
+    def setBaselineIopsUndefined: Self = StObject.set(x, "BaselineIops", js.undefined)
     
     @scala.inline
-    def deleteBaselineBandwidthInMbps: Self = this.set("BaselineBandwidthInMbps", js.undefined)
+    def setBaselineThroughputInMBps(value: BaselineThroughputInMBps): Self = StObject.set(x, "BaselineThroughputInMBps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineIops(value: BaselineIops): Self = this.set("BaselineIops", value.asInstanceOf[js.Any])
+    def setBaselineThroughputInMBpsUndefined: Self = StObject.set(x, "BaselineThroughputInMBps", js.undefined)
     
     @scala.inline
-    def deleteBaselineIops: Self = this.set("BaselineIops", js.undefined)
+    def setMaximumBandwidthInMbps(value: MaximumBandwidthInMbps): Self = StObject.set(x, "MaximumBandwidthInMbps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineThroughputInMBps(value: BaselineThroughputInMBps): Self = this.set("BaselineThroughputInMBps", value.asInstanceOf[js.Any])
+    def setMaximumBandwidthInMbpsUndefined: Self = StObject.set(x, "MaximumBandwidthInMbps", js.undefined)
     
     @scala.inline
-    def deleteBaselineThroughputInMBps: Self = this.set("BaselineThroughputInMBps", js.undefined)
+    def setMaximumIops(value: MaximumIops): Self = StObject.set(x, "MaximumIops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumBandwidthInMbps(value: MaximumBandwidthInMbps): Self = this.set("MaximumBandwidthInMbps", value.asInstanceOf[js.Any])
+    def setMaximumIopsUndefined: Self = StObject.set(x, "MaximumIops", js.undefined)
     
     @scala.inline
-    def deleteMaximumBandwidthInMbps: Self = this.set("MaximumBandwidthInMbps", js.undefined)
+    def setMaximumThroughputInMBps(value: MaximumThroughputInMBps): Self = StObject.set(x, "MaximumThroughputInMBps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumIops(value: MaximumIops): Self = this.set("MaximumIops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumIops: Self = this.set("MaximumIops", js.undefined)
-    
-    @scala.inline
-    def setMaximumThroughputInMBps(value: MaximumThroughputInMBps): Self = this.set("MaximumThroughputInMBps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumThroughputInMBps: Self = this.set("MaximumThroughputInMBps", js.undefined)
+    def setMaximumThroughputInMBpsUndefined: Self = StObject.set(x, "MaximumThroughputInMBps", js.undefined)
   }
 }

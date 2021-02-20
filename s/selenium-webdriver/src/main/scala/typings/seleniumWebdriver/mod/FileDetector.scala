@@ -1,5 +1,6 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("selenium-webdriver", "FileDetector")
 @js.native
 /** @constructor */
-class FileDetector () extends js.Object {
+class FileDetector () extends StObject {
   
   /**
     * Handles the file specified by the given path, preparing it for use with

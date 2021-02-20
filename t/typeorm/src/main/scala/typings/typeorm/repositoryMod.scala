@@ -18,16 +18,16 @@ import typings.typeorm.saveOptionsMod.SaveOptions
 import typings.typeorm.selectQueryBuilderMod.SelectQueryBuilder
 import typings.typeorm.typingsMod.ObjectID
 import typings.typeorm.updateResultMod.UpdateResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/repository/Repository", JSImport.Namespace)
-@js.native
-object repositoryMod extends js.Object {
+object repositoryMod {
   
+  @JSImport("typeorm/browser/repository/Repository", "Repository")
   @js.native
-  class Repository[Entity /* <: ObjectLiteral */] () extends js.Object {
+  class Repository[Entity /* <: ObjectLiteral */] () extends StObject {
     
     /**
       * Clears all the data from the given table/collection (truncates/drops it).

@@ -1,12 +1,13 @@
 package typings.freedom.freedom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // See |Core_unprivileged| in |core.unprivileged.js|
 @js.native
-trait Core extends js.Object {
+trait Core extends StObject {
   
   // Given an ChannelEndpointIdentifier for a channel, create a proxy event
   // interface for it.
@@ -34,30 +35,18 @@ object Core {
   }
   
   @scala.inline
-  implicit class CoreOps[Self <: Core] (val x: Self) extends AnyVal {
+  implicit class CoreMutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindChannel(value: String => js.Promise[Channel]): Self = StObject.set(x, "bindChannel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateChannel(value: () => js.Promise[ChannelSpecifier]): Self = StObject.set(x, "createChannel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetId(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBindChannel(value: String => js.Promise[Channel]): Self = this.set("bindChannel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateChannel(value: () => js.Promise[ChannelSpecifier]): Self = this.set("createChannel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetId(value: () => js.Promise[js.Array[String]]): Self = this.set("getId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLogger(value: String => js.Promise[Logger]): Self = this.set("getLogger", js.Any.fromFunction1(value))
+    def setGetLogger(value: String => js.Promise[Logger]): Self = StObject.set(x, "getLogger", js.Any.fromFunction1(value))
   }
 }

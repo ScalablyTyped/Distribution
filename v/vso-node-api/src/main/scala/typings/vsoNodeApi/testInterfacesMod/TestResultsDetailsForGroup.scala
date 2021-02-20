@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestResultsDetailsForGroup extends js.Object {
+trait TestResultsDetailsForGroup extends StObject {
   
   var groupByValue: js.Any = js.native
   
@@ -27,30 +28,18 @@ object TestResultsDetailsForGroup {
   }
   
   @scala.inline
-  implicit class TestResultsDetailsForGroupOps[Self <: TestResultsDetailsForGroup] (val x: Self) extends AnyVal {
+  implicit class TestResultsDetailsForGroupMutableBuilder[Self <: TestResultsDetailsForGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupByValue(value: js.Any): Self = StObject.set(x, "groupByValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResults(value: js.Array[TestCaseResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultsCountByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "resultsCountByOutcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByValue(value: js.Any): Self = this.set("groupByValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsVarargs(value: TestCaseResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[TestCaseResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsCountByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = this.set("resultsCountByOutcome", value.asInstanceOf[js.Any])
+    def setResultsVarargs(value: TestCaseResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

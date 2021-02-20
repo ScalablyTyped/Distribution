@@ -1,11 +1,12 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointBoundsObjectLiteral extends js.Object {
+trait PointBoundsObjectLiteral extends StObject {
   
   var maxX: Double = js.native
   
@@ -24,30 +25,18 @@ object PointBoundsObjectLiteral {
   }
   
   @scala.inline
-  implicit class PointBoundsObjectLiteralOps[Self <: PointBoundsObjectLiteral] (val x: Self) extends AnyVal {
+  implicit class PointBoundsObjectLiteralMutableBuilder[Self <: PointBoundsObjectLiteral] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxX(value: Double): Self = this.set("maxX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxY(value: Double): Self = this.set("maxY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinX(value: Double): Self = this.set("minX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinY(value: Double): Self = this.set("minY", value.asInstanceOf[js.Any])
+    def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
   }
 }

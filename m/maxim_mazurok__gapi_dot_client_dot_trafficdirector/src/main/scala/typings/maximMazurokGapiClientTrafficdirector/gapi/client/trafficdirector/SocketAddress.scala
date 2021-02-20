@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocketAddress extends js.Object {
+trait SocketAddress extends StObject {
   
   /**
     * The address for this socket. :ref:`Listeners ` will bind to the address. An empty address is not allowed. Specify ``0.0.0.0`` or ``::`` to bind to any address.
@@ -44,54 +45,42 @@ object SocketAddress {
   }
   
   @scala.inline
-  implicit class SocketAddressOps[Self <: SocketAddress] (val x: Self) extends AnyVal {
+  implicit class SocketAddressMutableBuilder[Self <: SocketAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpv4Compat(value: Boolean): Self = StObject.set(x, "ipv4Compat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setIpv4CompatUndefined: Self = StObject.set(x, "ipv4Compat", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setNamedPort(value: String): Self = StObject.set(x, "namedPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv4Compat(value: Boolean): Self = this.set("ipv4Compat", value.asInstanceOf[js.Any])
+    def setNamedPortUndefined: Self = StObject.set(x, "namedPort", js.undefined)
     
     @scala.inline
-    def deleteIpv4Compat: Self = this.set("ipv4Compat", js.undefined)
+    def setPortValue(value: Double): Self = StObject.set(x, "portValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedPort(value: String): Self = this.set("namedPort", value.asInstanceOf[js.Any])
+    def setPortValueUndefined: Self = StObject.set(x, "portValue", js.undefined)
     
     @scala.inline
-    def deleteNamedPort: Self = this.set("namedPort", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortValue(value: Double): Self = this.set("portValue", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deletePortValue: Self = this.set("portValue", js.undefined)
+    def setResolverName(value: String): Self = StObject.set(x, "resolverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
-    
-    @scala.inline
-    def setResolverName(value: String): Self = this.set("resolverName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolverName: Self = this.set("resolverName", js.undefined)
+    def setResolverNameUndefined: Self = StObject.set(x, "resolverName", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountIdentityVerificationWorkflow extends js.Object {
+trait AccountIdentityVerificationWorkflow extends StObject {
   
   /**
     * Text describing the purpose of the Identity Verification workflow.
@@ -44,57 +45,45 @@ object AccountIdentityVerificationWorkflow {
   }
   
   @scala.inline
-  implicit class AccountIdentityVerificationWorkflowOps[Self <: AccountIdentityVerificationWorkflow] (val x: Self) extends AnyVal {
+  implicit class AccountIdentityVerificationWorkflowMutableBuilder[Self <: AccountIdentityVerificationWorkflow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultDescription(value: String): Self = StObject.set(x, "defaultDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultDescriptionUndefined: Self = StObject.set(x, "defaultDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDescription(value: String): Self = this.set("defaultDescription", value.asInstanceOf[js.Any])
+    def setDefaultNameUndefined: Self = StObject.set(x, "defaultName", js.undefined)
     
     @scala.inline
-    def deleteDefaultDescription: Self = this.set("defaultDescription", js.undefined)
+    def setInputOptions(value: js.Array[AccountIdentityInputOption]): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultName(value: String): Self = this.set("defaultName", value.asInstanceOf[js.Any])
+    def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
     
     @scala.inline
-    def deleteDefaultName: Self = this.set("defaultName", js.undefined)
+    def setInputOptionsVarargs(value: AccountIdentityInputOption*): Self = StObject.set(x, "inputOptions", js.Array(value :_*))
     
     @scala.inline
-    def setInputOptionsVarargs(value: AccountIdentityInputOption*): Self = this.set("inputOptions", js.Array(value :_*))
+    def setSignatureProvider(value: AccountSignatureProvider): Self = StObject.set(x, "signatureProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputOptions(value: js.Array[AccountIdentityInputOption]): Self = this.set("inputOptions", value.asInstanceOf[js.Any])
+    def setSignatureProviderUndefined: Self = StObject.set(x, "signatureProvider", js.undefined)
     
     @scala.inline
-    def deleteInputOptions: Self = this.set("inputOptions", js.undefined)
+    def setWorkflowId(value: String): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureProvider(value: AccountSignatureProvider): Self = this.set("signatureProvider", value.asInstanceOf[js.Any])
+    def setWorkflowIdUndefined: Self = StObject.set(x, "workflowId", js.undefined)
     
     @scala.inline
-    def deleteSignatureProvider: Self = this.set("signatureProvider", js.undefined)
+    def setWorkflowResourceKey(value: String): Self = StObject.set(x, "workflowResourceKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkflowId(value: String): Self = this.set("workflowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflowId: Self = this.set("workflowId", js.undefined)
-    
-    @scala.inline
-    def setWorkflowResourceKey(value: String): Self = this.set("workflowResourceKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflowResourceKey: Self = this.set("workflowResourceKey", js.undefined)
+    def setWorkflowResourceKeyUndefined: Self = StObject.set(x, "workflowResourceKey", js.undefined)
   }
 }

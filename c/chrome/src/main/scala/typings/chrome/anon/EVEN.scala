@@ -3,12 +3,13 @@ package typings.chrome.anon
 import typings.chrome.chromeStrings.even
 import typings.chrome.chromeStrings.no
 import typings.chrome.chromeStrings.odd
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EVEN extends js.Object {
+trait EVEN extends StObject {
   
   var EVEN: even = js.native
   
@@ -25,27 +26,15 @@ object EVEN {
   }
   
   @scala.inline
-  implicit class EVENOps[Self <: EVEN] (val x: Self) extends AnyVal {
+  implicit class EVENMutableBuilder[Self <: EVEN] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEVEN(value: even): Self = StObject.set(x, "EVEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNO(value: no): Self = StObject.set(x, "NO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEVEN(value: even): Self = this.set("EVEN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNO(value: no): Self = this.set("NO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setODD(value: odd): Self = this.set("ODD", value.asInstanceOf[js.Any])
+    def setODD(value: odd): Self = StObject.set(x, "ODD", value.asInstanceOf[js.Any])
   }
 }

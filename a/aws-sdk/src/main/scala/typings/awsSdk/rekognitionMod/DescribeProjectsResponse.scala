@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeProjectsResponse extends js.Object {
+trait DescribeProjectsResponse extends StObject {
   
   /**
     * If the previous response was incomplete (because there is more results to retrieve), Amazon Rekognition Custom Labels returns a pagination token in the response. You can use this pagination token to retrieve the next set of results. 
@@ -26,33 +27,21 @@ object DescribeProjectsResponse {
   }
   
   @scala.inline
-  implicit class DescribeProjectsResponseOps[Self <: DescribeProjectsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeProjectsResponseMutableBuilder[Self <: DescribeProjectsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: ExtendedPaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectDescriptions(value: ProjectDescriptions): Self = StObject.set(x, "ProjectDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: ExtendedPaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setProjectDescriptionsUndefined: Self = StObject.set(x, "ProjectDescriptions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setProjectDescriptionsVarargs(value: ProjectDescription*): Self = this.set("ProjectDescriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setProjectDescriptions(value: ProjectDescriptions): Self = this.set("ProjectDescriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectDescriptions: Self = this.set("ProjectDescriptions", js.undefined)
+    def setProjectDescriptionsVarargs(value: ProjectDescription*): Self = StObject.set(x, "ProjectDescriptions", js.Array(value :_*))
   }
 }

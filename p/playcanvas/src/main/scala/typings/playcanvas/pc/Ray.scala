@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defaults to a direction down the world negative Z axis (0, 0, -1).
   */
 @js.native
-trait Ray extends js.Object {
+trait Ray extends StObject {
   
   /**
     * The direction of the ray.
@@ -47,27 +48,15 @@ object Ray {
   }
   
   @scala.inline
-  implicit class RayOps[Self <: Ray] (val x: Self) extends AnyVal {
+  implicit class RayMutableBuilder[Self <: Ray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: Vec3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrigin(value: Vec3): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirection(value: Vec3): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrigin(value: Vec3): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSet(value: (Vec3, Vec3) => Ray): Self = this.set("set", js.Any.fromFunction2(value))
+    def setSet(value: (Vec3, Vec3) => Ray): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

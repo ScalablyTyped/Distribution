@@ -1,6 +1,7 @@
 package typings.recharts.mod
 
 import typings.recharts.rechartsStrings.radial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,54 +30,42 @@ object RadialBarChartProps {
   }
   
   @scala.inline
-  implicit class RadialBarChartPropsOps[Self <: RadialBarChartProps] (val x: Self) extends AnyVal {
+  implicit class RadialBarChartPropsMutableBuilder[Self <: RadialBarChartProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCx(value: String | Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCy(value: String | Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCx(value: String | Double): Self = this.set("cx", value.asInstanceOf[js.Any])
+    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
     @scala.inline
-    def deleteCx: Self = this.set("cx", js.undefined)
+    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCy(value: String | Double): Self = this.set("cy", value.asInstanceOf[js.Any])
+    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
     @scala.inline
-    def deleteCy: Self = this.set("cy", js.undefined)
+    def setInnerRadius(value: String | Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAngle(value: Double): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
     @scala.inline
-    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    def setOuterRadius(value: String | Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerRadius(value: String | Double): Self = this.set("innerRadius", value.asInstanceOf[js.Any])
+    def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
     
     @scala.inline
-    def deleteInnerRadius: Self = this.set("innerRadius", js.undefined)
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterRadius(value: String | Double): Self = this.set("outerRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOuterRadius: Self = this.set("outerRadius", js.undefined)
-    
-    @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
   }
 }

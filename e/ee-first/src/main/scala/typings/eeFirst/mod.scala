@@ -1,13 +1,12 @@
 package typings.eeFirst
 
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ee-first", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Get the first event in a set of event emitters and event pairs, then clean up after itself.
@@ -22,10 +21,20 @@ object mod extends js.Object {
     * - `event`: the string event name that fired
     * - `args`: an array of the arguments that were emitted on the event
     */
+  @JSImport("ee-first", JSImport.Namespace)
+  @js.native
   def apply[TEmitter /* <: EventEmitter */](eventSpec: js.Array[Array[TEmitter | String]], listener: Listener[TEmitter]): Thunk[TEmitter] = js.native
   
+  type Listener[TEmitter /* <: EventEmitter */] = js.Function4[
+    /* err */ js.Any, 
+    /* ee */ TEmitter, 
+    /* event */ js.Array[String], 
+    /* args */ js.Array[js.Any], 
+    Unit
+  ]
+  
   @js.native
-  trait Thunk[TEmitter /* <: EventEmitter */] extends js.Object {
+  trait Thunk[TEmitter /* <: EventEmitter */] extends StObject {
     
     def apply(listener: Listener[TEmitter]): Unit = js.native
     
@@ -35,12 +44,4 @@ object mod extends js.Object {
       */
     def cancel(): Unit = js.native
   }
-  
-  type Listener[TEmitter /* <: EventEmitter */] = js.Function4[
-    /* err */ js.Any, 
-    /* ee */ TEmitter, 
-    /* event */ js.Array[String], 
-    /* args */ js.Array[js.Any], 
-    Unit
-  ]
 }

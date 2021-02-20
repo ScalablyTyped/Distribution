@@ -3,12 +3,13 @@ package typings.isMyJsonValid.mod
 import typings.isMyJsonValid.isMyJsonValidStrings.`null`
 import typings.isMyJsonValid.isMyJsonValidStrings.`object`
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NullableObjectSchema[Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */] extends js.Object {
+trait NullableObjectSchema[Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */] extends StObject {
   
   var additionalProperties: js.UndefOr[Boolean] = js.native
   
@@ -28,39 +29,27 @@ object NullableObjectSchema {
   }
   
   @scala.inline
-  implicit class NullableObjectSchemaOps[Self <: NullableObjectSchema[_, _], Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */] (val x: Self with (NullableObjectSchema[Properties, Required])) extends AnyVal {
+  implicit class NullableObjectSchemaMutableBuilder[Self <: NullableObjectSchema[_, _], Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */] (val x: Self with (NullableObjectSchema[Properties, Required])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: Properties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setRequired(value: js.Array[Required]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredVarargs(value: Required*): Self = this.set("required", js.Array(value :_*))
+    def setRequiredVarargs(value: Required*): Self = StObject.set(x, "required", js.Array(value :_*))
     
     @scala.inline
-    def setRequired(value: js.Array[Required]): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setType(value: js.Array[`object` | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeVarargs(value: (`object` | `null`)*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: js.Array[`object` | `null`]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAdditionalProperties(value: Boolean): Self = this.set("additionalProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdditionalProperties: Self = this.set("additionalProperties", js.undefined)
+    def setTypeVarargs(value: (`object` | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

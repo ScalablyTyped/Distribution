@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,90 +76,78 @@ object VisionPrescription {
   }
   
   @scala.inline
-  implicit class VisionPrescriptionOps[Self <: VisionPrescription] (val x: Self) extends AnyVal {
+  implicit class VisionPrescriptionMutableBuilder[Self <: VisionPrescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateWritten(value: dateTime): Self = StObject.set(x, "dateWritten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateWrittenUndefined: Self = StObject.set(x, "dateWritten", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispense(value: js.Array[VisionPrescriptionDispense]): Self = StObject.set(x, "dispense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_dateWritten(value: Element): Self = this.set("_dateWritten", value.asInstanceOf[js.Any])
+    def setDispenseUndefined: Self = StObject.set(x, "dispense", js.undefined)
     
     @scala.inline
-    def delete_dateWritten: Self = this.set("_dateWritten", js.undefined)
+    def setDispenseVarargs(value: VisionPrescriptionDispense*): Self = StObject.set(x, "dispense", js.Array(value :_*))
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
     @scala.inline
-    def setDateWritten(value: dateTime): Self = this.set("dateWritten", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateWritten: Self = this.set("dateWritten", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setDispenseVarargs(value: VisionPrescriptionDispense*): Self = this.set("dispense", js.Array(value :_*))
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def setDispense(value: js.Array[VisionPrescriptionDispense]): Self = this.set("dispense", value.asInstanceOf[js.Any])
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDispense: Self = this.set("dispense", js.undefined)
+    def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
     
     @scala.inline
-    def setEncounter(value: Reference): Self = this.set("encounter", value.asInstanceOf[js.Any])
+    def setPrescriber(value: Reference): Self = StObject.set(x, "prescriber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncounter: Self = this.set("encounter", js.undefined)
+    def setPrescriberUndefined: Self = StObject.set(x, "prescriber", js.undefined)
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setReasonCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "reasonCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setReasonCodeableConceptUndefined: Self = StObject.set(x, "reasonCodeableConcept", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setReasonReference(value: Reference): Self = StObject.set(x, "reasonReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def setReasonReferenceUndefined: Self = StObject.set(x, "reasonReference", js.undefined)
     
     @scala.inline
-    def deletePatient: Self = this.set("patient", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrescriber(value: Reference): Self = this.set("prescriber", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deletePrescriber: Self = this.set("prescriber", js.undefined)
+    def set_dateWritten(value: Element): Self = StObject.set(x, "_dateWritten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonCodeableConcept(value: CodeableConcept): Self = this.set("reasonCodeableConcept", value.asInstanceOf[js.Any])
+    def set_dateWrittenUndefined: Self = StObject.set(x, "_dateWritten", js.undefined)
     
     @scala.inline
-    def deleteReasonCodeableConcept: Self = this.set("reasonCodeableConcept", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonReference(value: Reference): Self = this.set("reasonReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasonReference: Self = this.set("reasonReference", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

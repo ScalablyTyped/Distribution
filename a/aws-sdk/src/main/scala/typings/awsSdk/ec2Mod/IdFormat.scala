@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdFormat extends js.Object {
+trait IdFormat extends StObject {
   
   /**
     * The date in UTC at which you are permanently switched over to using longer IDs. If a deadline is not yet available for this resource type, this field is not returned.
@@ -31,36 +32,24 @@ object IdFormat {
   }
   
   @scala.inline
-  implicit class IdFormatOps[Self <: IdFormat] (val x: Self) extends AnyVal {
+  implicit class IdFormatMutableBuilder[Self <: IdFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeadline(value: DateTime): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadlineUndefined: Self = StObject.set(x, "Deadline", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadline(value: DateTime): Self = this.set("Deadline", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
     
     @scala.inline
-    def deleteDeadline: Self = this.set("Deadline", js.undefined)
+    def setUseLongIds(value: Boolean): Self = StObject.set(x, "UseLongIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: String): Self = this.set("Resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("Resource", js.undefined)
-    
-    @scala.inline
-    def setUseLongIds(value: Boolean): Self = this.set("UseLongIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLongIds: Self = this.set("UseLongIds", js.undefined)
+    def setUseLongIdsUndefined: Self = StObject.set(x, "UseLongIds", js.undefined)
   }
 }

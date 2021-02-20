@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugSession extends js.Object {
+trait DebugSession extends StObject {
   
   /**
     * Specifies if session debugging is enabled for this build.
@@ -26,30 +27,18 @@ object DebugSession {
   }
   
   @scala.inline
-  implicit class DebugSessionOps[Self <: DebugSession] (val x: Self) extends AnyVal {
+  implicit class DebugSessionMutableBuilder[Self <: DebugSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSessionEnabled(value: WrapperBoolean): Self = StObject.set(x, "sessionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSessionEnabledUndefined: Self = StObject.set(x, "sessionEnabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSessionTarget(value: NonEmptyString): Self = StObject.set(x, "sessionTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionEnabled(value: WrapperBoolean): Self = this.set("sessionEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionEnabled: Self = this.set("sessionEnabled", js.undefined)
-    
-    @scala.inline
-    def setSessionTarget(value: NonEmptyString): Self = this.set("sessionTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionTarget: Self = this.set("sessionTarget", js.undefined)
+    def setSessionTargetUndefined: Self = StObject.set(x, "sessionTarget", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChallengeAnswer extends js.Object {
+trait ChallengeAnswer extends StObject {
   
   var challengeAnswer: js.UndefOr[String] = js.native
   
@@ -43,96 +44,84 @@ object ChallengeAnswer {
   }
   
   @scala.inline
-  implicit class ChallengeAnswerOps[Self <: ChallengeAnswer] (val x: Self) extends AnyVal {
+  implicit class ChallengeAnswerMutableBuilder[Self <: ChallengeAnswer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChallengeAnswer(value: String): Self = StObject.set(x, "challengeAnswer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChallengeAnswerUndefined: Self = StObject.set(x, "challengeAnswer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChallengeName(value: String): Self = StObject.set(x, "challengeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAttributes(value: StringDictionary[String]): Self = this.set("userAttributes", value.asInstanceOf[js.Any])
+    def setChallengeNameUndefined: Self = StObject.set(x, "challengeName", js.undefined)
     
     @scala.inline
-    def setChallengeAnswer(value: String): Self = this.set("challengeAnswer", value.asInstanceOf[js.Any])
+    def setClientMetadata(value: StringDictionary[String]): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChallengeAnswer: Self = this.set("challengeAnswer", js.undefined)
+    def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
     
     @scala.inline
-    def setChallengeName(value: String): Self = this.set("challengeName", value.asInstanceOf[js.Any])
+    def setCodeParameter(value: String): Self = StObject.set(x, "codeParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChallengeName: Self = this.set("challengeName", js.undefined)
+    def setCodeParameterUndefined: Self = StObject.set(x, "codeParameter", js.undefined)
     
     @scala.inline
-    def setClientMetadata(value: StringDictionary[String]): Self = this.set("clientMetadata", value.asInstanceOf[js.Any])
+    def setLinkParameter(value: String): Self = StObject.set(x, "linkParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientMetadata: Self = this.set("clientMetadata", js.undefined)
+    def setLinkParameterUndefined: Self = StObject.set(x, "linkParameter", js.undefined)
     
     @scala.inline
-    def setCodeParameter(value: String): Self = this.set("codeParameter", value.asInstanceOf[js.Any])
+    def setNewDeviceUsed(value: Boolean): Self = StObject.set(x, "newDeviceUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodeParameter: Self = this.set("codeParameter", js.undefined)
+    def setNewDeviceUsedUndefined: Self = StObject.set(x, "newDeviceUsed", js.undefined)
     
     @scala.inline
-    def setLinkParameter(value: String): Self = this.set("linkParameter", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinkParameter: Self = this.set("linkParameter", js.undefined)
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def setNewDeviceUsed(value: Boolean): Self = this.set("newDeviceUsed", value.asInstanceOf[js.Any])
+    def setPrivateChallengeParameters(value: StringDictionary[String]): Self = StObject.set(x, "privateChallengeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNewDeviceUsed: Self = this.set("newDeviceUsed", js.undefined)
+    def setPrivateChallengeParametersUndefined: Self = StObject.set(x, "privateChallengeParameters", js.undefined)
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setSession(value: js.Array[ChallengeResult]): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
     @scala.inline
-    def setPrivateChallengeParameters(value: StringDictionary[String]): Self = this.set("privateChallengeParameters", value.asInstanceOf[js.Any])
+    def setSessionVarargs(value: ChallengeResult*): Self = StObject.set(x, "session", js.Array(value :_*))
     
     @scala.inline
-    def deletePrivateChallengeParameters: Self = this.set("privateChallengeParameters", js.undefined)
+    def setUserAttributes(value: StringDictionary[String]): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionVarargs(value: ChallengeResult*): Self = this.set("session", js.Array(value :_*))
+    def setUserNotFound(value: Boolean): Self = StObject.set(x, "userNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: js.Array[ChallengeResult]): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setUserNotFoundUndefined: Self = StObject.set(x, "userNotFound", js.undefined)
     
     @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setUsernameParameter(value: String): Self = StObject.set(x, "usernameParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserNotFound(value: Boolean): Self = this.set("userNotFound", value.asInstanceOf[js.Any])
+    def setUsernameParameterUndefined: Self = StObject.set(x, "usernameParameter", js.undefined)
     
     @scala.inline
-    def deleteUserNotFound: Self = this.set("userNotFound", js.undefined)
+    def setValidationData(value: StringDictionary[String]): Self = StObject.set(x, "validationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsernameParameter(value: String): Self = this.set("usernameParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsernameParameter: Self = this.set("usernameParameter", js.undefined)
-    
-    @scala.inline
-    def setValidationData(value: StringDictionary[String]): Self = this.set("validationData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationData: Self = this.set("validationData", js.undefined)
+    def setValidationDataUndefined: Self = StObject.set(x, "validationData", js.undefined)
   }
 }

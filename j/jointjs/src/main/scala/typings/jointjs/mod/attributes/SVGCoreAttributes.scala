@@ -1,11 +1,12 @@
 package typings.jointjs.mod.attributes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGCoreAttributes extends js.Object {
+trait SVGCoreAttributes extends StObject {
   
   var id: js.UndefOr[String] = js.native
   
@@ -29,48 +30,36 @@ object SVGCoreAttributes {
   }
   
   @scala.inline
-  implicit class SVGCoreAttributesOps[Self <: SVGCoreAttributes] (val x: Self) extends AnyVal {
+  implicit class SVGCoreAttributesMutableBuilder[Self <: SVGCoreAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setXmlColonbase(value: String): Self = StObject.set(x, "xml:base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabindex(value: Double): Self = this.set("tabindex", value.asInstanceOf[js.Any])
+    def setXmlColonbaseUndefined: Self = StObject.set(x, "xml:base", js.undefined)
     
     @scala.inline
-    def deleteTabindex: Self = this.set("tabindex", js.undefined)
+    def setXmlColonlang(value: String): Self = StObject.set(x, "xml:lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXmlColonbase(value: String): Self = this.set("xml:base", value.asInstanceOf[js.Any])
+    def setXmlColonlangUndefined: Self = StObject.set(x, "xml:lang", js.undefined)
     
     @scala.inline
-    def deleteXmlColonbase: Self = this.set("xml:base", js.undefined)
+    def setXmlColonspace(value: String): Self = StObject.set(x, "xml:space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXmlColonlang(value: String): Self = this.set("xml:lang", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXmlColonlang: Self = this.set("xml:lang", js.undefined)
-    
-    @scala.inline
-    def setXmlColonspace(value: String): Self = this.set("xml:space", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXmlColonspace: Self = this.set("xml:space", js.undefined)
+    def setXmlColonspaceUndefined: Self = StObject.set(x, "xml:space", js.undefined)
   }
 }

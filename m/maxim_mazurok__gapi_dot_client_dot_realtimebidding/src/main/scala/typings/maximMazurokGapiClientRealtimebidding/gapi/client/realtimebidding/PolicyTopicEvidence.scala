@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyTopicEvidence extends js.Object {
+trait PolicyTopicEvidence extends StObject {
   
   /** The creative's destination URL was not crawlable by Google. */
   var destinationNotCrawlable: js.UndefOr[DestinationNotCrawlableEvidence] = js.native
@@ -37,60 +38,48 @@ object PolicyTopicEvidence {
   }
   
   @scala.inline
-  implicit class PolicyTopicEvidenceOps[Self <: PolicyTopicEvidence] (val x: Self) extends AnyVal {
+  implicit class PolicyTopicEvidenceMutableBuilder[Self <: PolicyTopicEvidence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationNotCrawlable(value: DestinationNotCrawlableEvidence): Self = StObject.set(x, "destinationNotCrawlable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationNotCrawlableUndefined: Self = StObject.set(x, "destinationNotCrawlable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationNotWorking(value: DestinationNotWorkingEvidence): Self = StObject.set(x, "destinationNotWorking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationNotCrawlable(value: DestinationNotCrawlableEvidence): Self = this.set("destinationNotCrawlable", value.asInstanceOf[js.Any])
+    def setDestinationNotWorkingUndefined: Self = StObject.set(x, "destinationNotWorking", js.undefined)
     
     @scala.inline
-    def deleteDestinationNotCrawlable: Self = this.set("destinationNotCrawlable", js.undefined)
+    def setDestinationUrl(value: DestinationUrlEvidence): Self = StObject.set(x, "destinationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationNotWorking(value: DestinationNotWorkingEvidence): Self = this.set("destinationNotWorking", value.asInstanceOf[js.Any])
+    def setDestinationUrlUndefined: Self = StObject.set(x, "destinationUrl", js.undefined)
     
     @scala.inline
-    def deleteDestinationNotWorking: Self = this.set("destinationNotWorking", js.undefined)
+    def setDomainCall(value: DomainCallEvidence): Self = StObject.set(x, "domainCall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationUrl(value: DestinationUrlEvidence): Self = this.set("destinationUrl", value.asInstanceOf[js.Any])
+    def setDomainCallUndefined: Self = StObject.set(x, "domainCall", js.undefined)
     
     @scala.inline
-    def deleteDestinationUrl: Self = this.set("destinationUrl", js.undefined)
+    def setDownloadSize(value: DownloadSizeEvidence): Self = StObject.set(x, "downloadSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainCall(value: DomainCallEvidence): Self = this.set("domainCall", value.asInstanceOf[js.Any])
+    def setDownloadSizeUndefined: Self = StObject.set(x, "downloadSize", js.undefined)
     
     @scala.inline
-    def deleteDomainCall: Self = this.set("domainCall", js.undefined)
+    def setHttpCall(value: HttpCallEvidence): Self = StObject.set(x, "httpCall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadSize(value: DownloadSizeEvidence): Self = this.set("downloadSize", value.asInstanceOf[js.Any])
+    def setHttpCallUndefined: Self = StObject.set(x, "httpCall", js.undefined)
     
     @scala.inline
-    def deleteDownloadSize: Self = this.set("downloadSize", js.undefined)
+    def setHttpCookie(value: HttpCookieEvidence): Self = StObject.set(x, "httpCookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpCall(value: HttpCallEvidence): Self = this.set("httpCall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpCall: Self = this.set("httpCall", js.undefined)
-    
-    @scala.inline
-    def setHttpCookie(value: HttpCookieEvidence): Self = this.set("httpCookie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpCookie: Self = this.set("httpCookie", js.undefined)
+    def setHttpCookieUndefined: Self = StObject.set(x, "httpCookie", js.undefined)
   }
 }

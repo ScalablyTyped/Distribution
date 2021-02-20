@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/twotone/FileTwoTone", JSImport.Namespace)
-@js.native
-object fileTwoToneMod extends js.Object {
+object fileTwoToneMod {
   
+  @JSImport("@ant-design/icons-angular/icons/twotone/FileTwoTone", "FileTwoTone")
+  @js.native
   val FileTwoTone: IconDefinition = js.native
 }

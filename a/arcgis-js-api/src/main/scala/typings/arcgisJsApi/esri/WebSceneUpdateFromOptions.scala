@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,42 +51,30 @@ object WebSceneUpdateFromOptions {
   }
   
   @scala.inline
-  implicit class WebSceneUpdateFromOptionsOps[Self <: WebSceneUpdateFromOptions] (val x: Self) extends AnyVal {
+  implicit class WebSceneUpdateFromOptionsMutableBuilder[Self <: WebSceneUpdateFromOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentExcluded(value: Boolean): Self = StObject.set(x, "environmentExcluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentExcludedUndefined: Self = StObject.set(x, "environmentExcluded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThumbnailExcluded(value: Boolean): Self = StObject.set(x, "thumbnailExcluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentExcluded(value: Boolean): Self = this.set("environmentExcluded", value.asInstanceOf[js.Any])
+    def setThumbnailExcludedUndefined: Self = StObject.set(x, "thumbnailExcluded", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentExcluded: Self = this.set("environmentExcluded", js.undefined)
+    def setThumbnailSize(value: WebSceneUpdateFromOptionsThumbnailSize): Self = StObject.set(x, "thumbnailSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailExcluded(value: Boolean): Self = this.set("thumbnailExcluded", value.asInstanceOf[js.Any])
+    def setThumbnailSizeUndefined: Self = StObject.set(x, "thumbnailSize", js.undefined)
     
     @scala.inline
-    def deleteThumbnailExcluded: Self = this.set("thumbnailExcluded", js.undefined)
+    def setViewpointExcluded(value: Boolean): Self = StObject.set(x, "viewpointExcluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailSize(value: WebSceneUpdateFromOptionsThumbnailSize): Self = this.set("thumbnailSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailSize: Self = this.set("thumbnailSize", js.undefined)
-    
-    @scala.inline
-    def setViewpointExcluded(value: Boolean): Self = this.set("viewpointExcluded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewpointExcluded: Self = this.set("viewpointExcluded", js.undefined)
+    def setViewpointExcludedUndefined: Self = StObject.set(x, "viewpointExcluded", js.undefined)
   }
 }

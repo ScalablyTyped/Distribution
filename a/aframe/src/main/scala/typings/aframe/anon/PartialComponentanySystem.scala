@@ -6,13 +6,14 @@ import typings.aframe.mod.ObjectMap
 import typings.aframe.mod.Schema_
 import typings.aframe.mod.System
 import typings.three.mod.Camera
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<aframe.aframe.Component<any, aframe.aframe.System<any>>> */
 @js.native
-trait PartialComponentanySystem extends js.Object {
+trait PartialComponentanySystem extends StObject {
   
   var attrName: js.UndefOr[String] = js.native
   
@@ -67,147 +68,135 @@ object PartialComponentanySystem {
   }
   
   @scala.inline
-  implicit class PartialComponentanySystemOps[Self <: PartialComponentanySystem] (val x: Self) extends AnyVal {
+  implicit class PartialComponentanySystemMutableBuilder[Self <: PartialComponentanySystem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrName(value: String): Self = StObject.set(x, "attrName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttrNameUndefined: Self = StObject.set(x, "attrName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttrName(value: String): Self = this.set("attrName", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteAttrName: Self = this.set("attrName", js.undefined)
+    def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
     @scala.inline
-    def setDependenciesVarargs(value: String*): Self = this.set("dependencies", js.Array(value :_*))
+    def setEl(value: Entity[ObjectMap[Component[_, System[_]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencies(value: js.Array[String]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     
     @scala.inline
-    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEl(value: Entity[ObjectMap[Component[_, System[_]]]]): Self = this.set("el", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteEl: Self = this.set("el", js.undefined)
+    def setExtendSchema(value: /* update */ Schema_[js.Object] => Unit): Self = StObject.set(x, "extendSchema", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEvents(value: js.Any): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setExtendSchemaUndefined: Self = StObject.set(x, "extendSchema", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setFlushToDOM(value: () => Unit): Self = StObject.set(x, "flushToDOM", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExtendSchema(value: /* update */ Schema_[js.Object] => Unit): Self = this.set("extendSchema", js.Any.fromFunction1(value))
+    def setFlushToDOMUndefined: Self = StObject.set(x, "flushToDOM", js.undefined)
     
     @scala.inline
-    def deleteExtendSchema: Self = this.set("extendSchema", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlushToDOM(value: () => Unit): Self = this.set("flushToDOM", js.Any.fromFunction0(value))
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFlushToDOM: Self = this.set("flushToDOM", js.undefined)
+    def setInit(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInitialized(value: Boolean): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: /* data */ js.UndefOr[js.Any] => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setInitializedUndefined: Self = StObject.set(x, "initialized", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialized(value: Boolean): Self = this.set("initialized", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteInitialized: Self = this.set("initialized", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
     
     @scala.inline
-    def deletePause: Self = this.set("pause", js.undefined)
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("play", js.Any.fromFunction0(value))
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deletePlay: Self = this.set("play", js.undefined)
+    def setSchema(value: Schema_[_]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setSystem(value: System[_]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: Schema_[_]): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setTick(value: (/* time */ Double, /* timeDelta */ Double) => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSystem(value: System[_]): Self = this.set("system", value.asInstanceOf[js.Any])
+    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
     @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
+    def setTock(value: (/* time */ Double, /* timeDelta */ Double, /* camera */ Camera) => Unit): Self = StObject.set(x, "tock", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setTick(value: (/* time */ Double, /* timeDelta */ Double) => Unit): Self = this.set("tick", js.Any.fromFunction2(value))
+    def setTockUndefined: Self = StObject.set(x, "tock", js.undefined)
     
     @scala.inline
-    def deleteTick: Self = this.set("tick", js.undefined)
+    def setUpdate(value: /* oldData */ js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTock(value: (/* time */ Double, /* timeDelta */ Double, /* camera */ Camera) => Unit): Self = this.set("tock", js.Any.fromFunction3(value))
+    def setUpdateSchema(value: () => Unit): Self = StObject.set(x, "updateSchema", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteTock: Self = this.set("tock", js.undefined)
+    def setUpdateSchemaUndefined: Self = StObject.set(x, "updateSchema", js.undefined)
     
     @scala.inline
-    def setUpdate(value: /* oldData */ js.Any => Unit): Self = this.set("update", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
-    
-    @scala.inline
-    def setUpdateSchema(value: () => Unit): Self = this.set("updateSchema", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteUpdateSchema: Self = this.set("updateSchema", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

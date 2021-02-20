@@ -1,11 +1,12 @@
 package typings.inversify.interfacesMod.interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindingWhenSyntax[T] extends js.Object {
+trait BindingWhenSyntax[T] extends StObject {
   
   def when(constraint: js.Function1[/* request */ Request, Boolean]): BindingOnSyntax[T] = js.native
   

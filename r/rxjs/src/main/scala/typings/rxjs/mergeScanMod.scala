@@ -5,24 +5,14 @@ import typings.rxjs.operatorMod.Operator
 import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.OperatorFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/operators/mergeScan", JSImport.Namespace)
-@js.native
-object mergeScanMod extends js.Object {
+object mergeScanMod {
   
-  def mergeScan[T, R](
-    accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, ObservableInput[R]],
-    seed: R
-  ): OperatorFunction[T, R] = js.native
-  def mergeScan[T, R](
-    accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, ObservableInput[R]],
-    seed: R,
-    concurrent: Double
-  ): OperatorFunction[T, R] = js.native
-  
+  @JSImport("rxjs/internal/operators/mergeScan", "MergeScanOperator")
   @js.native
   class MergeScanOperator[T, R] protected () extends Operator[T, R] {
     def this(
@@ -38,6 +28,7 @@ object mergeScanMod extends js.Object {
     var seed: js.Any = js.native
   }
   
+  @JSImport("rxjs/internal/operators/mergeScan", "MergeScanSubscriber")
   @js.native
   class MergeScanSubscriber[T, R] protected () extends SimpleOuterSubscriber[T, R] {
     def this(
@@ -67,4 +58,18 @@ object mergeScanMod extends js.Object {
     
     var index: Double = js.native
   }
+  
+  @JSImport("rxjs/internal/operators/mergeScan", "mergeScan")
+  @js.native
+  def mergeScan[T, R](
+    accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, ObservableInput[R]],
+    seed: R
+  ): OperatorFunction[T, R] = js.native
+  @JSImport("rxjs/internal/operators/mergeScan", "mergeScan")
+  @js.native
+  def mergeScan[T, R](
+    accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, ObservableInput[R]],
+    seed: R,
+    concurrent: Double
+  ): OperatorFunction[T, R] = js.native
 }

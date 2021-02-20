@@ -1,11 +1,10 @@
 package typings.activexLibreoffice.com_.sun.star.frame
 
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessible
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleContext
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.awt.Size
-import typings.activexLibreoffice.com_.sun.star.awt.XControl
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControl
 import typings.activexLibreoffice.com_.sun.star.awt.XControlModel
 import typings.activexLibreoffice.com_.sun.star.awt.XFocusListener
 import typings.activexLibreoffice.com_.sun.star.awt.XGraphics
@@ -15,11 +14,11 @@ import typings.activexLibreoffice.com_.sun.star.awt.XMouseMotionListener
 import typings.activexLibreoffice.com_.sun.star.awt.XPaintListener
 import typings.activexLibreoffice.com_.sun.star.awt.XToolkit
 import typings.activexLibreoffice.com_.sun.star.awt.XView
-import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.awt.XWindowListener
 import typings.activexLibreoffice.com_.sun.star.awt.XWindowPeer
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,11 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * used for preview functionality inside any UI.
   */
 @js.native
-trait FrameControl
-  extends XControl
-     with XWindow
-     with XView
-     with XAccessible {
+trait FrameControl extends UnoControl {
   
   /** contains the type of the component which is loaded into the frame, or the document which implicitly specifies the type */
   var ComponentUrl: String = js.native
@@ -106,24 +101,12 @@ object FrameControl {
   }
   
   @scala.inline
-  implicit class FrameControlOps[Self <: FrameControl] (val x: Self) extends AnyVal {
+  implicit class FrameControlMutableBuilder[Self <: FrameControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentUrl(value: String): Self = StObject.set(x, "ComponentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentUrl(value: String): Self = this.set("ComponentUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrame(value: String): Self = this.set("Frame", value.asInstanceOf[js.Any])
+    def setFrame(value: String): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILicenseStatus extends js.Object {
+trait ILicenseStatus extends StObject {
   
   def ClearLicenseCode(): Unit = js.native
   
@@ -44,45 +45,33 @@ object ILicenseStatus {
   }
   
   @scala.inline
-  implicit class ILicenseStatusOps[Self <: ILicenseStatus] (val x: Self) extends AnyVal {
+  implicit class ILicenseStatusMutableBuilder[Self <: ILicenseStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearLicenseCode(value: () => Unit): Self = StObject.set(x, "ClearLicenseCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvaluationDaysLeft(value: Double): Self = StObject.set(x, "EvaluationDaysLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvaluationMode(value: Boolean): Self = StObject.set(x, "EvaluationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearLicenseCode(value: () => Unit): Self = this.set("ClearLicenseCode", js.Any.fromFunction0(value))
+    def setExpired(value: Boolean): Self = StObject.set(x, "Expired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationDaysLeft(value: Double): Self = this.set("EvaluationDaysLeft", value.asInstanceOf[js.Any])
+    def setLicenseCode(value: String): Self = StObject.set(x, "LicenseCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationMode(value: Boolean): Self = this.set("EvaluationMode", value.asInstanceOf[js.Any])
+    def setNumOfConcurrentUserLicenses(value: Double): Self = StObject.set(x, "NumOfConcurrentUserLicenses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpired(value: Boolean): Self = this.set("Expired", value.asInstanceOf[js.Any])
+    def setNumOfNamedUserLicenses(value: Double): Self = StObject.set(x, "NumOfNamedUserLicenses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseCode(value: String): Self = this.set("LicenseCode", value.asInstanceOf[js.Any])
+    def setNumOfReadonlyLicenses(value: Double): Self = StObject.set(x, "NumOfReadonlyLicenses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumOfConcurrentUserLicenses(value: Double): Self = this.set("NumOfConcurrentUserLicenses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumOfNamedUserLicenses(value: Double): Self = this.set("NumOfNamedUserLicenses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumOfReadonlyLicenses(value: Double): Self = this.set("NumOfReadonlyLicenses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSerialNumber(value: String): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    def setSerialNumber(value: String): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
   }
 }

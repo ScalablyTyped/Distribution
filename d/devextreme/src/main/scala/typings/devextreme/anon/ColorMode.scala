@@ -4,12 +4,13 @@ import typings.devextreme.devextremeStrings.gradient
 import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.source
 import typings.devextreme.devextremeStrings.target
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorMode extends js.Object {
+trait ColorMode extends StObject {
   
   var border: js.UndefOr[ColorVisible] = js.native
   
@@ -30,48 +31,36 @@ object ColorMode {
   }
   
   @scala.inline
-  implicit class ColorModeOps[Self <: ColorMode] (val x: Self) extends AnyVal {
+  implicit class ColorModeMutableBuilder[Self <: ColorMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: ColorVisible): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setColorMode(value: none | source | target | gradient): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setColorModeUndefined: Self = StObject.set(x, "colorMode", js.undefined)
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setHoverStyle(value: ColorHatching): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMode(value: none | source | target | gradient): Self = this.set("colorMode", value.asInstanceOf[js.Any])
+    def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
     
     @scala.inline
-    def deleteColorMode: Self = this.set("colorMode", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverStyle(value: ColorHatching): Self = this.set("hoverStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHoverStyle: Self = this.set("hoverStyle", js.undefined)
-    
-    @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

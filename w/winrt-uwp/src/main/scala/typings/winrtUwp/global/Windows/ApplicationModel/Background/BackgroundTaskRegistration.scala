@@ -2,6 +2,7 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import typings.winrtUwp.Windows.ApplicationModel.Background.IBackgroundTaskRegistration
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class BackgroundTaskRegistration ()
   extends typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundTaskRegistration
-/* static members */
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskRegistration")
-@js.native
-object BackgroundTaskRegistration extends js.Object {
+object BackgroundTaskRegistration {
+  
+  @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskRegistration")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Enumerates an application's registered background tasks. */
-  var allTasks: IMapView[String, IBackgroundTaskRegistration] = js.native
+  /* static member */
+  @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskRegistration.allTasks")
+  @js.native
+  def allTasks: IMapView[String, IBackgroundTaskRegistration] = js.native
+  @scala.inline
+  def allTasks_=(x: IMapView[String, IBackgroundTaskRegistration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allTasks")(x.asInstanceOf[js.Any])
 }

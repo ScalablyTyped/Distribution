@@ -1,14 +1,15 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BootstrapSchedulerRecurrenceType extends js.Object
+sealed trait BootstrapSchedulerRecurrenceType extends StObject
 @JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType")
 @js.native
-object BootstrapSchedulerRecurrenceType extends js.Object {
+object BootstrapSchedulerRecurrenceType extends StObject {
   
   @js.native
   sealed trait Daily extends BootstrapSchedulerRecurrenceType

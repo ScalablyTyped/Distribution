@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Croporiginalsize extends js.Object {
+trait Croporiginalsize extends StObject {
   
   var crop_center: js.UndefOr[js.Tuple2[Double, Double]] = js.native
   
@@ -22,36 +23,24 @@ object Croporiginalsize {
   }
   
   @scala.inline
-  implicit class CroporiginalsizeOps[Self <: Croporiginalsize] (val x: Self) extends AnyVal {
+  implicit class CroporiginalsizeMutableBuilder[Self <: Croporiginalsize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrop_center(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "crop_center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrop_centerUndefined: Self = StObject.set(x, "crop_center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrop_original_size(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "crop_original_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrop_center(value: js.Tuple2[Double, Double]): Self = this.set("crop_center", value.asInstanceOf[js.Any])
+    def setCrop_original_sizeUndefined: Self = StObject.set(x, "crop_original_size", js.undefined)
     
     @scala.inline
-    def deleteCrop_center: Self = this.set("crop_center", js.undefined)
+    def setCrop_zoom(value: Double | String): Self = StObject.set(x, "crop_zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrop_original_size(value: js.Tuple2[Double, Double]): Self = this.set("crop_original_size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrop_original_size: Self = this.set("crop_original_size", js.undefined)
-    
-    @scala.inline
-    def setCrop_zoom(value: Double | String): Self = this.set("crop_zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrop_zoom: Self = this.set("crop_zoom", js.undefined)
+    def setCrop_zoomUndefined: Self = StObject.set(x, "crop_zoom", js.undefined)
   }
 }

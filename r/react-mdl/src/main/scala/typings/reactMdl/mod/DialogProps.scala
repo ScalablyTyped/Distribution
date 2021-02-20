@@ -1,15 +1,14 @@
 package typings.reactMdl.mod
 
-import typings.react.mod.AllHTMLAttributes
-import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DialogProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any] {
+  extends HTMLProps[js.Any] {
   
   var onCancel: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
 }
@@ -22,24 +21,12 @@ object DialogProps {
   }
   
   @scala.inline
-  implicit class DialogPropsOps[Self <: DialogProps] (val x: Self) extends AnyVal {
+  implicit class DialogPropsMutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnCancel(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnCancel(value: /* e */ js.Any => Unit): Self = this.set("onCancel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnCancel: Self = this.set("onCancel", js.undefined)
+    def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
   }
 }

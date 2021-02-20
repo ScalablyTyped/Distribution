@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/RemoveCircleOutlineSVGIcon", JSImport.Namespace)
-@js.native
-object removeCircleOutlineSVGIconMod extends js.Object {
+object removeCircleOutlineSVGIconMod {
   
+  @JSImport("@react-md/material-icons/types/RemoveCircleOutlineSVGIcon", "RemoveCircleOutlineSVGIcon")
+  @js.native
   val RemoveCircleOutlineSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
 }

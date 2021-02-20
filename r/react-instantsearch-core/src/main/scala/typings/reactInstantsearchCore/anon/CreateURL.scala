@@ -1,11 +1,12 @@
 package typings.reactInstantsearchCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateURL extends js.Object {
+trait CreateURL extends StObject {
   
   def createURL(args: js.Any*): String = js.native
   
@@ -26,27 +27,15 @@ object CreateURL {
   }
   
   @scala.inline
-  implicit class CreateURLOps[Self <: CreateURL] (val x: Self) extends AnyVal {
+  implicit class CreateURLMutableBuilder[Self <: CreateURL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateURL(value: /* repeated */ js.Any => String): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateURL(value: /* repeated */ js.Any => String): Self = this.set("createURL", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRefine(value: /* repeated */ js.Any => js.Any): Self = this.set("refine", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSearchForItems(value: /* repeated */ js.Any => js.Any): Self = this.set("searchForItems", js.Any.fromFunction1(value))
+    def setSearchForItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "searchForItems", js.Any.fromFunction1(value))
   }
 }

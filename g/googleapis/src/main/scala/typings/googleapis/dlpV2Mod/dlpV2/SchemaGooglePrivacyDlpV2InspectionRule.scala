@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `InspectionRuleSet`.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2InspectionRule extends js.Object {
+trait SchemaGooglePrivacyDlpV2InspectionRule extends StObject {
   
   /**
     * Exclusion rule.
@@ -30,30 +31,18 @@ object SchemaGooglePrivacyDlpV2InspectionRule {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2InspectionRuleOps[Self <: SchemaGooglePrivacyDlpV2InspectionRule] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2InspectionRuleMutableBuilder[Self <: SchemaGooglePrivacyDlpV2InspectionRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusionRule(value: SchemaGooglePrivacyDlpV2ExclusionRule): Self = StObject.set(x, "exclusionRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusionRuleUndefined: Self = StObject.set(x, "exclusionRule", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHotwordRule(value: SchemaGooglePrivacyDlpV2HotwordRule): Self = StObject.set(x, "hotwordRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusionRule(value: SchemaGooglePrivacyDlpV2ExclusionRule): Self = this.set("exclusionRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusionRule: Self = this.set("exclusionRule", js.undefined)
-    
-    @scala.inline
-    def setHotwordRule(value: SchemaGooglePrivacyDlpV2HotwordRule): Self = this.set("hotwordRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHotwordRule: Self = this.set("hotwordRule", js.undefined)
+    def setHotwordRuleUndefined: Self = StObject.set(x, "hotwordRule", js.undefined)
   }
 }

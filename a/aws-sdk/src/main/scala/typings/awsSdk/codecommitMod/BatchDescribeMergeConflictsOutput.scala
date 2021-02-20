@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDescribeMergeConflictsOutput extends js.Object {
+trait BatchDescribeMergeConflictsOutput extends StObject {
   
   /**
     * The commit ID of the merge base.
@@ -46,51 +47,39 @@ object BatchDescribeMergeConflictsOutput {
   }
   
   @scala.inline
-  implicit class BatchDescribeMergeConflictsOutputOps[Self <: BatchDescribeMergeConflictsOutput] (val x: Self) extends AnyVal {
+  implicit class BatchDescribeMergeConflictsOutputMutableBuilder[Self <: BatchDescribeMergeConflictsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseCommitIdUndefined: Self = StObject.set(x, "baseCommitId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConflicts(value: Conflicts): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflictsVarargs(value: Conflict*): Self = this.set("conflicts", js.Array(value :_*))
+    def setConflictsVarargs(value: Conflict*): Self = StObject.set(x, "conflicts", js.Array(value :_*))
     
     @scala.inline
-    def setConflicts(value: Conflicts): Self = this.set("conflicts", value.asInstanceOf[js.Any])
+    def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationCommitId(value: ObjectId): Self = this.set("destinationCommitId", value.asInstanceOf[js.Any])
+    def setErrors(value: BatchDescribeMergeConflictsErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCommitId(value: ObjectId): Self = this.set("sourceCommitId", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def setBaseCommitId(value: ObjectId): Self = this.set("baseCommitId", value.asInstanceOf[js.Any])
+    def setErrorsVarargs(value: BatchDescribeMergeConflictsError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def deleteBaseCommitId: Self = this.set("baseCommitId", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsVarargs(value: BatchDescribeMergeConflictsError*): Self = this.set("errors", js.Array(value :_*))
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def setErrors(value: BatchDescribeMergeConflictsErrors): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,21 +12,22 @@ import typings.mapsjs.anon.GeometryFieldName
 import typings.mapsjs.anon.RenderBitmap
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mapsjs", "tile")
-@js.native
-object tile extends js.Object {
+object tile {
   
+  @JSImport("mapsjs", "tile.descriptorLocal")
   @js.native
-  class descriptorLocal protected () extends js.Object {
+  class descriptorLocal protected () extends StObject {
     def this(options: GeometryFieldName) = this()
   }
   
+  @JSImport("mapsjs", "tile.descriptorMDNRestFeature")
   @js.native
-  class descriptorMDNRestFeature protected () extends js.Object {
+  class descriptorMDNRestFeature protected () extends StObject {
     def this(mapId: String, layerId: String) = this()
     def this(mapId: String, layerId: String, options: BleedRatio) = this()
     
@@ -120,8 +121,9 @@ object tile extends js.Object {
     def setVersion(v: String): Unit = js.native
   }
   
+  @JSImport("mapsjs", "tile.descriptorMDNRestMap")
   @js.native
-  class descriptorMDNRestMap protected () extends js.Object {
+  class descriptorMDNRestMap protected () extends StObject {
     def this(mapId: String) = this()
     def this(mapId: String, options: BackgroundColorStr) = this()
     
@@ -353,8 +355,9 @@ object tile extends js.Object {
     def setVersion(v: String): Unit = js.native
   }
   
+  @JSImport("mapsjs", "tile.layer")
   @js.native
-  class layer protected () extends js.Object {
+  class layer protected () extends StObject {
     def this(id: String) = this()
     def this(id: String, useBackdrop: Boolean) = this()
     def this(id: String, useBackdrop: js.UndefOr[scala.Nothing], maxConcurrentRequests: Double) = this()
@@ -588,8 +591,9 @@ object tile extends js.Object {
     def setTileBleedPix(bleed: Double): Unit = js.native
   }
   
+  @JSImport("mapsjs", "tile.layerOptions")
   @js.native
-  class layerOptions protected () extends js.Object {
+  class layerOptions protected () extends StObject {
     def this(id: String, options: Descriptor) = this()
     
     /**
@@ -610,8 +614,9 @@ object tile extends js.Object {
     def getTileLayer(): layer = js.native
   }
   
+  @JSImport("mapsjs", "tile.quad")
   @js.native
-  class quad () extends js.Object {
+  class quad () extends StObject {
     
     /** 
       * Compares this quad tile with another quad tile and determines
@@ -660,14 +665,16 @@ object tile extends js.Object {
       */
     def getY(): Double = js.native
   }
-  @js.native
-  object quad extends js.Object {
+  object quad {
     
+    @JSImport("mapsjs", "tile.quad.factoryQuadFromKey")
+    @js.native
     def factoryQuadFromKey(key: String): quad = js.native
   }
   
+  @JSImport("mapsjs", "tile.renderer")
   @js.native
-  class renderer () extends js.Object {
+  class renderer () extends StObject {
     def this(options: RenderBitmap) = this()
     
     /**
@@ -711,8 +718,9 @@ object tile extends js.Object {
     def setRenderPoint(func: js.Function2[/* pt */ point, /* context */ CanvasRenderingContext2D, Unit]): Unit = js.native
   }
   
+  @JSImport("mapsjs", "tile.rendererDensityMap")
   @js.native
-  class rendererDensityMap () extends js.Object {
+  class rendererDensityMap () extends StObject {
     
     /**
       * Tells renderer to re-render density map and recompute ranges. 
@@ -776,8 +784,9 @@ object tile extends js.Object {
     def setRowAction(action: js.Function1[/* row */ js.Any, Double]): Unit = js.native
   }
   
+  @JSImport("mapsjs", "tile.requestor")
   @js.native
-  class requestor () extends js.Object {
+  class requestor () extends StObject {
     
     /**
       * Returns whether or not caching is enabled for vector-based 
@@ -898,6 +907,7 @@ object tile extends js.Object {
     def setUsesEndpoint(flag: Boolean): Unit = js.native
   }
   
+  @JSImport("mapsjs", "tile.requestorBing")
   @js.native
   class requestorBing () extends requestor {
     def this(options: DataFormat) = this()
@@ -961,6 +971,7 @@ object tile extends js.Object {
     def setScheme(s: String): Unit = js.native
   }
   
+  @JSImport("mapsjs", "tile.requestorLocal")
   @js.native
   class requestorLocal () extends requestor {
     def this(options: Data) = this()
@@ -989,6 +1000,7 @@ object tile extends js.Object {
     def setSource(data: js.Array[js.Object]): Unit = js.native
   }
   
+  @JSImport("mapsjs", "tile.requestorMDNRest")
   @js.native
   class requestorMDNRest protected () extends requestor {
     def this(endpoint: String) = this()
@@ -1001,6 +1013,7 @@ object tile extends js.Object {
     def getEndpoint(): String = js.native
   }
   
+  @JSImport("mapsjs", "tile.requestorOpen")
   @js.native
   class requestorOpen protected () extends requestor {
     def this(endpoint: String, subdomains: js.Array[String]) = this()

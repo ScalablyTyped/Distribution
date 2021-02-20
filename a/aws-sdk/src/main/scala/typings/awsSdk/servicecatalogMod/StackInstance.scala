@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackInstance extends js.Object {
+trait StackInstance extends StObject {
   
   /**
     * The name of the AWS account that the stack instance is associated with.
@@ -31,36 +32,24 @@ object StackInstance {
   }
   
   @scala.inline
-  implicit class StackInstanceOps[Self <: StackInstance] (val x: Self) extends AnyVal {
+  implicit class StackInstanceMutableBuilder[Self <: StackInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount(value: AccountId): Self = this.set("Account", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def deleteAccount: Self = this.set("Account", js.undefined)
+    def setStackInstanceStatus(value: StackInstanceStatus): Self = StObject.set(x, "StackInstanceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: Region): Self = this.set("Region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
-    
-    @scala.inline
-    def setStackInstanceStatus(value: StackInstanceStatus): Self = this.set("StackInstanceStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackInstanceStatus: Self = this.set("StackInstanceStatus", js.undefined)
+    def setStackInstanceStatusUndefined: Self = StObject.set(x, "StackInstanceStatus", js.undefined)
   }
 }

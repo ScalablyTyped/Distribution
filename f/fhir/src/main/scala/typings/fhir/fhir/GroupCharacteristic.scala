@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,66 +65,54 @@ object GroupCharacteristic {
   }
   
   @scala.inline
-  implicit class GroupCharacteristicOps[Self <: GroupCharacteristic] (val x: Self) extends AnyVal {
+  implicit class GroupCharacteristicMutableBuilder[Self <: GroupCharacteristic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclude(value: Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def setExclude(value: Boolean): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_exclude(value: Element): Self = this.set("_exclude", value.asInstanceOf[js.Any])
+    def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
     
     @scala.inline
-    def delete_exclude: Self = this.set("_exclude", js.undefined)
+    def setValueCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "valueCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueBoolean(value: Element): Self = this.set("_valueBoolean", value.asInstanceOf[js.Any])
+    def setValueCodeableConceptUndefined: Self = StObject.set(x, "valueCodeableConcept", js.undefined)
     
     @scala.inline
-    def delete_valueBoolean: Self = this.set("_valueBoolean", js.undefined)
+    def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueBoolean(value: Boolean): Self = this.set("valueBoolean", value.asInstanceOf[js.Any])
+    def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
     
     @scala.inline
-    def deleteValueBoolean: Self = this.set("valueBoolean", js.undefined)
+    def set_exclude(value: Element): Self = StObject.set(x, "_exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueCodeableConcept(value: CodeableConcept): Self = this.set("valueCodeableConcept", value.asInstanceOf[js.Any])
+    def set_excludeUndefined: Self = StObject.set(x, "_exclude", js.undefined)
     
     @scala.inline
-    def deleteValueCodeableConcept: Self = this.set("valueCodeableConcept", js.undefined)
+    def set_valueBoolean(value: Element): Self = StObject.set(x, "_valueBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueQuantity(value: Quantity): Self = this.set("valueQuantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueQuantity: Self = this.set("valueQuantity", js.undefined)
-    
-    @scala.inline
-    def setValueRange(value: Range): Self = this.set("valueRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueRange: Self = this.set("valueRange", js.undefined)
+    def set_valueBooleanUndefined: Self = StObject.set(x, "_valueBoolean", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.apiV2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2QueryResult extends js.Object {
+trait GoogleCloudDialogflowV2QueryResult extends StObject {
   
   var action: js.UndefOr[String] = js.native
   
@@ -45,108 +46,96 @@ object GoogleCloudDialogflowV2QueryResult {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2QueryResultOps[Self <: GoogleCloudDialogflowV2QueryResult] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2QueryResultMutableBuilder[Self <: GoogleCloudDialogflowV2QueryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllRequiredParamsPresent(value: Boolean): Self = StObject.set(x, "allRequiredParamsPresent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setAllRequiredParamsPresentUndefined: Self = StObject.set(x, "allRequiredParamsPresent", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setDiagnosticInfo(value: ApiClientObjectMap[_]): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllRequiredParamsPresent(value: Boolean): Self = this.set("allRequiredParamsPresent", value.asInstanceOf[js.Any])
+    def setDiagnosticInfoUndefined: Self = StObject.set(x, "diagnosticInfo", js.undefined)
     
     @scala.inline
-    def deleteAllRequiredParamsPresent: Self = this.set("allRequiredParamsPresent", js.undefined)
+    def setFulfillmentMessages(value: js.Array[GoogleCloudDialogflowV2IntentMessage]): Self = StObject.set(x, "fulfillmentMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnosticInfo(value: ApiClientObjectMap[_]): Self = this.set("diagnosticInfo", value.asInstanceOf[js.Any])
+    def setFulfillmentMessagesUndefined: Self = StObject.set(x, "fulfillmentMessages", js.undefined)
     
     @scala.inline
-    def deleteDiagnosticInfo: Self = this.set("diagnosticInfo", js.undefined)
+    def setFulfillmentMessagesVarargs(value: GoogleCloudDialogflowV2IntentMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value :_*))
     
     @scala.inline
-    def setFulfillmentMessagesVarargs(value: GoogleCloudDialogflowV2IntentMessage*): Self = this.set("fulfillmentMessages", js.Array(value :_*))
+    def setFulfillmentText(value: String): Self = StObject.set(x, "fulfillmentText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFulfillmentMessages(value: js.Array[GoogleCloudDialogflowV2IntentMessage]): Self = this.set("fulfillmentMessages", value.asInstanceOf[js.Any])
+    def setFulfillmentTextUndefined: Self = StObject.set(x, "fulfillmentText", js.undefined)
     
     @scala.inline
-    def deleteFulfillmentMessages: Self = this.set("fulfillmentMessages", js.undefined)
+    def setIntent(value: GoogleCloudDialogflowV2Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFulfillmentText(value: String): Self = this.set("fulfillmentText", value.asInstanceOf[js.Any])
+    def setIntentDetectionConfidence(value: Double): Self = StObject.set(x, "intentDetectionConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFulfillmentText: Self = this.set("fulfillmentText", js.undefined)
+    def setIntentDetectionConfidenceUndefined: Self = StObject.set(x, "intentDetectionConfidence", js.undefined)
     
     @scala.inline
-    def setIntent(value: GoogleCloudDialogflowV2Intent): Self = this.set("intent", value.asInstanceOf[js.Any])
+    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
     @scala.inline
-    def deleteIntent: Self = this.set("intent", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentDetectionConfidence(value: Double): Self = this.set("intentDetectionConfidence", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteIntentDetectionConfidence: Self = this.set("intentDetectionConfidence", js.undefined)
+    def setOutputContexts(value: js.Array[GoogleCloudDialogflowV2Context]): Self = StObject.set(x, "outputContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setOutputContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
     
     @scala.inline
-    def setOutputContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = this.set("outputContexts", js.Array(value :_*))
+    def setParameters(value: ApiClientObjectMap[_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputContexts(value: js.Array[GoogleCloudDialogflowV2Context]): Self = this.set("outputContexts", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteOutputContexts: Self = this.set("outputContexts", js.undefined)
+    def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ApiClientObjectMap[_]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setQueryTextUndefined: Self = StObject.set(x, "queryText", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setSpeechRecognitionConfidence(value: Double): Self = StObject.set(x, "speechRecognitionConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryText(value: String): Self = this.set("queryText", value.asInstanceOf[js.Any])
+    def setSpeechRecognitionConfidenceUndefined: Self = StObject.set(x, "speechRecognitionConfidence", js.undefined)
     
     @scala.inline
-    def deleteQueryText: Self = this.set("queryText", js.undefined)
+    def setWebhookPayload(value: ApiClientObjectMap[_]): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeechRecognitionConfidence(value: Double): Self = this.set("speechRecognitionConfidence", value.asInstanceOf[js.Any])
+    def setWebhookPayloadUndefined: Self = StObject.set(x, "webhookPayload", js.undefined)
     
     @scala.inline
-    def deleteSpeechRecognitionConfidence: Self = this.set("speechRecognitionConfidence", js.undefined)
+    def setWebhookSource(value: String): Self = StObject.set(x, "webhookSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebhookPayload(value: ApiClientObjectMap[_]): Self = this.set("webhookPayload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebhookPayload: Self = this.set("webhookPayload", js.undefined)
-    
-    @scala.inline
-    def setWebhookSource(value: String): Self = this.set("webhookSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebhookSource: Self = this.set("webhookSource", js.undefined)
+    def setWebhookSourceUndefined: Self = StObject.set(x, "webhookSource", js.undefined)
   }
 }

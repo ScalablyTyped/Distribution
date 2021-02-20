@@ -2,15 +2,18 @@ package typings.tensorflowTfjsBackendCpu
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelFunc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Atan", JSImport.Namespace)
-@js.native
-object atanMod extends js.Object {
+object atanMod {
   
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Atan", "atan")
+  @js.native
   val atan: KernelFunc = js.native
   
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Atan", "atanConfig")
+  @js.native
   val atanConfig: KernelConfig = js.native
 }

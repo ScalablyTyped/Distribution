@@ -5,12 +5,13 @@ import typings.sharepoint.sharepointStrings.AND
 import typings.sharepoint.sharepointStrings.OR
 import typings.sharepoint.sharepointStrings.and_
 import typings.sharepoint.sharepointStrings.or_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefinementCategory extends js.Object {
+trait RefinementCategory extends StObject {
   
   /** Use KQL */
   var k: Boolean = js.native
@@ -35,39 +36,27 @@ object RefinementCategory {
   }
   
   @scala.inline
-  implicit class RefinementCategoryOps[Self <: RefinementCategory] (val x: Self) extends AnyVal {
+  implicit class RefinementCategoryMutableBuilder[Self <: RefinementCategory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setK(value: Boolean): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setM(value: StringDictionary[String]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMNull: Self = StObject.set(x, "m", null)
     
     @scala.inline
-    def setK(value: Boolean): Self = this.set("k", value.asInstanceOf[js.Any])
+    def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: String): Self = this.set("n", value.asInstanceOf[js.Any])
+    def setO(value: String | and_ | or_ | AND | OR): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setO(value: String | and_ | or_ | AND | OR): Self = this.set("o", value.asInstanceOf[js.Any])
+    def setT(value: js.Array[String]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTVarargs(value: String*): Self = this.set("t", js.Array(value :_*))
-    
-    @scala.inline
-    def setT(value: js.Array[String]): Self = this.set("t", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM(value: StringDictionary[String]): Self = this.set("m", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMNull: Self = this.set("m", null)
+    def setTVarargs(value: String*): Self = StObject.set(x, "t", js.Array(value :_*))
   }
 }

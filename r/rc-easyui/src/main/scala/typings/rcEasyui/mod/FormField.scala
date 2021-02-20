@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,133 +21,176 @@ class FormField protected ()
   def renderLabel(e: js.Any): js.Any = js.native
 }
 /* static members */
-@JSImport("rc-easyui", "FormField")
-@js.native
-object FormField extends js.Object {
+object FormField {
   
-  var idIndex: Double = js.native
-  
+  @JSImport("rc-easyui", "FormField")
   @js.native
-  object contextTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  object contextTypes {
     
-    @js.native
-    object floatingLabel extends js.Object {
+    object floatingLabel {
       
+      @JSImport("rc-easyui", "FormField.contextTypes.floatingLabel")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.contextTypes.floatingLabel
+      @JSImport("rc-easyui", "FormField.contextTypes.floatingLabel.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object labelAlign extends js.Object {
+    object labelAlign {
       
+      @JSImport("rc-easyui", "FormField.contextTypes.labelAlign")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.contextTypes.labelAlign
+      @JSImport("rc-easyui", "FormField.contextTypes.labelAlign.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object labelPosition extends js.Object {
+    object labelPosition {
       
+      @JSImport("rc-easyui", "FormField.contextTypes.labelPosition")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.contextTypes.labelPosition
+      @JSImport("rc-easyui", "FormField.contextTypes.labelPosition.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object labelWidth extends js.Object {
+    object labelWidth {
       
+      @JSImport("rc-easyui", "FormField.contextTypes.labelWidth")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.contextTypes.labelWidth
+      @JSImport("rc-easyui", "FormField.contextTypes.labelWidth.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "FormField.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.contextTypes.locale
+      @JSImport("rc-easyui", "FormField.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "FormField.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.contextTypes.t
+      @JSImport("rc-easyui", "FormField.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
+  @JSImport("rc-easyui", "FormField.idIndex")
   @js.native
-  object propTypes extends js.Object {
+  def idIndex: Double = js.native
+  @scala.inline
+  def idIndex_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idIndex")(x.asInstanceOf[js.Any])
+  
+  object propTypes {
     
-    @js.native
-    object className extends js.Object {
+    object className {
       
+      @JSImport("rc-easyui", "FormField.propTypes.className")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.propTypes.className
+      @JSImport("rc-easyui", "FormField.propTypes.className.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object label extends js.Object {
+    object label {
       
+      @JSImport("rc-easyui", "FormField.propTypes.label")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.propTypes.label
+      @JSImport("rc-easyui", "FormField.propTypes.label.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object labelAlign extends js.Object {
+    object labelAlign {
       
+      @JSImport("rc-easyui", "FormField.propTypes.labelAlign")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.propTypes.labelAlign
+      @JSImport("rc-easyui", "FormField.propTypes.labelAlign.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object labelPosition extends js.Object {
+    object labelPosition {
       
+      @JSImport("rc-easyui", "FormField.propTypes.labelPosition")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.propTypes.labelPosition
+      @JSImport("rc-easyui", "FormField.propTypes.labelPosition.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object labelWidth extends js.Object {
+    object labelWidth {
       
+      @JSImport("rc-easyui", "FormField.propTypes.labelWidth")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.propTypes.labelWidth
+      @JSImport("rc-easyui", "FormField.propTypes.labelWidth.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object name extends js.Object {
+    object name {
       
+      @JSImport("rc-easyui", "FormField.propTypes.name")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.propTypes.name
+      @JSImport("rc-easyui", "FormField.propTypes.name.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object style extends js.Object {
+    object style {
       
+      @JSImport("rc-easyui", "FormField.propTypes.style")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FormField.propTypes.style
+      @JSImport("rc-easyui", "FormField.propTypes.style.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

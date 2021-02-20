@@ -1,5 +1,6 @@
 package typings.fridaGum.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,22 +10,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Backtracer ()
   extends typings.fridaGum.Backtracer
-/* static members */
-@JSGlobal("Backtracer")
-@js.native
-object Backtracer extends js.Object {
+object Backtracer {
+  
+  @JSGlobal("Backtracer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The accurate kind of backtracers rely on debugger-friendly binaries or
     * presence of debug information to do a good job, but avoid false
     * positives.
     */
-  var ACCURATE: typings.fridaGum.Backtracer = js.native
+  /* static member */
+  @JSGlobal("Backtracer.ACCURATE")
+  @js.native
+  def ACCURATE: typings.fridaGum.Backtracer = js.native
+  @scala.inline
+  def ACCURATE_=(x: typings.fridaGum.Backtracer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCURATE")(x.asInstanceOf[js.Any])
   
   /**
     * The fuzzy backtracers perform forensics on the stack in order to guess
     * the return addresses, which means you will get false positives, but it
     * will work on any binary.
     */
-  var FUZZY: typings.fridaGum.Backtracer = js.native
+  /* static member */
+  @JSGlobal("Backtracer.FUZZY")
+  @js.native
+  def FUZZY: typings.fridaGum.Backtracer = js.native
+  @scala.inline
+  def FUZZY_=(x: typings.fridaGum.Backtracer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FUZZY")(x.asInstanceOf[js.Any])
 }

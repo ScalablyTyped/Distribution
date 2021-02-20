@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.form
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object XGridPeer {
   }
   
   @scala.inline
-  implicit class XGridPeerOps[Self <: XGridPeer] (val x: Self) extends AnyVal {
+  implicit class XGridPeerMutableBuilder[Self <: XGridPeer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: XIndexContainer): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetColumns(value: () => XIndexContainer): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumns(value: XIndexContainer): Self = this.set("Columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetColumns(value: () => XIndexContainer): Self = this.set("getColumns", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetColumns(value: XIndexContainer => Unit): Self = this.set("setColumns", js.Any.fromFunction1(value))
+    def setSetColumns(value: XIndexContainer => Unit): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
   }
 }

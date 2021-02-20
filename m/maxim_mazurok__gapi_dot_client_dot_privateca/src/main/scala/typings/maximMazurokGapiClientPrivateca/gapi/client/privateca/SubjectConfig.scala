@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubjectConfig extends js.Object {
+trait SubjectConfig extends StObject {
   
   /** Optional. The "common name" of the distinguished name. */
   var commonName: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object SubjectConfig {
   }
   
   @scala.inline
-  implicit class SubjectConfigOps[Self <: SubjectConfig] (val x: Self) extends AnyVal {
+  implicit class SubjectConfigMutableBuilder[Self <: SubjectConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubject(value: Subject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonName(value: String): Self = this.set("commonName", value.asInstanceOf[js.Any])
+    def setSubjectAltName(value: SubjectAltNames): Self = StObject.set(x, "subjectAltName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommonName: Self = this.set("commonName", js.undefined)
+    def setSubjectAltNameUndefined: Self = StObject.set(x, "subjectAltName", js.undefined)
     
     @scala.inline
-    def setSubject(value: Subject): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setSubjectAltName(value: SubjectAltNames): Self = this.set("subjectAltName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectAltName: Self = this.set("subjectAltName", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

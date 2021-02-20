@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLStyleSheetRulesCollection extends js.Object {
+trait HTMLStyleSheetRulesCollection extends StObject {
   
   def apply(index: Double): IHTMLStyleSheetRule = js.native
   

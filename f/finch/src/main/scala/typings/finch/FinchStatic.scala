@@ -1,11 +1,12 @@
 package typings.finch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinchStatic extends js.Object {
+trait FinchStatic extends StObject {
   
   def abort(): Unit = js.native
   

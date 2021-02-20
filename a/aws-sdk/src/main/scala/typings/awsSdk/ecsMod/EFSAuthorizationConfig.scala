@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EFSAuthorizationConfig extends js.Object {
+trait EFSAuthorizationConfig extends StObject {
   
   /**
     * The Amazon EFS access point ID to use. If an access point is specified, the root directory value specified in the EFSVolumeConfiguration must either be omitted or set to / which will enforce the path set on the EFS access point. If an access point is used, transit encryption must be enabled in the EFSVolumeConfiguration. For more information, see Working with Amazon EFS Access Points in the Amazon Elastic File System User Guide.
@@ -26,30 +27,18 @@ object EFSAuthorizationConfig {
   }
   
   @scala.inline
-  implicit class EFSAuthorizationConfigOps[Self <: EFSAuthorizationConfig] (val x: Self) extends AnyVal {
+  implicit class EFSAuthorizationConfigMutableBuilder[Self <: EFSAuthorizationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPointId(value: String): Self = StObject.set(x, "accessPointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessPointIdUndefined: Self = StObject.set(x, "accessPointId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIam(value: EFSAuthorizationConfigIAM): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPointId(value: String): Self = this.set("accessPointId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessPointId: Self = this.set("accessPointId", js.undefined)
-    
-    @scala.inline
-    def setIam(value: EFSAuthorizationConfigIAM): Self = this.set("iam", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIam: Self = this.set("iam", js.undefined)
+    def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
   }
 }

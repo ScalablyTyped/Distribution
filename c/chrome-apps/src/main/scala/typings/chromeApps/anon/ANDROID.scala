@@ -6,12 +6,13 @@ import typings.chromeApps.chromeAppsStrings.linux_
 import typings.chromeApps.chromeAppsStrings.mac_
 import typings.chromeApps.chromeAppsStrings.openbsd_
 import typings.chromeApps.chromeAppsStrings.win_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ANDROID extends js.Object {
+trait ANDROID extends StObject {
   
   var ANDROID: android_ = js.native
   
@@ -34,36 +35,24 @@ object ANDROID {
   }
   
   @scala.inline
-  implicit class ANDROIDOps[Self <: ANDROID] (val x: Self) extends AnyVal {
+  implicit class ANDROIDMutableBuilder[Self <: ANDROID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setANDROID(value: android_): Self = StObject.set(x, "ANDROID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCROS(value: cros_): Self = StObject.set(x, "CROS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLINUX(value: linux_): Self = StObject.set(x, "LINUX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setANDROID(value: android_): Self = this.set("ANDROID", value.asInstanceOf[js.Any])
+    def setMAC(value: mac_): Self = StObject.set(x, "MAC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCROS(value: cros_): Self = this.set("CROS", value.asInstanceOf[js.Any])
+    def setOPENBSD(value: openbsd_): Self = StObject.set(x, "OPENBSD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLINUX(value: linux_): Self = this.set("LINUX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMAC(value: mac_): Self = this.set("MAC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOPENBSD(value: openbsd_): Self = this.set("OPENBSD", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIN(value: win_): Self = this.set("WIN", value.asInstanceOf[js.Any])
+    def setWIN(value: win_): Self = StObject.set(x, "WIN", value.asInstanceOf[js.Any])
   }
 }

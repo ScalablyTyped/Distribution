@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,159 +131,147 @@ object Coverage {
   }
   
   @scala.inline
-  implicit class CoverageOps[Self <: Coverage] (val x: Self) extends AnyVal {
+  implicit class CoverageMutableBuilder[Self <: Coverage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeneficiary(value: Reference): Self = StObject.set(x, "beneficiary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeneficiaryUndefined: Self = StObject.set(x, "beneficiary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContract(value: js.Array[Reference]): Self = StObject.set(x, "contract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_dependent(value: Element): Self = this.set("_dependent", value.asInstanceOf[js.Any])
+    def setContractUndefined: Self = StObject.set(x, "contract", js.undefined)
     
     @scala.inline
-    def delete_dependent: Self = this.set("_dependent", js.undefined)
+    def setContractVarargs(value: Reference*): Self = StObject.set(x, "contract", js.Array(value :_*))
     
     @scala.inline
-    def set_network(value: Element): Self = this.set("_network", value.asInstanceOf[js.Any])
+    def setDependent(value: String): Self = StObject.set(x, "dependent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_network: Self = this.set("_network", js.undefined)
+    def setDependentUndefined: Self = StObject.set(x, "dependent", js.undefined)
     
     @scala.inline
-    def set_order(value: Element): Self = this.set("_order", value.asInstanceOf[js.Any])
+    def setGrouping(value: CoverageGrouping): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_order: Self = this.set("_order", js.undefined)
+    def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
     
     @scala.inline
-    def set_sequence(value: Element): Self = this.set("_sequence", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sequence: Self = this.set("_sequence", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_subscriberId(value: Element): Self = this.set("_subscriberId", value.asInstanceOf[js.Any])
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def delete_subscriberId: Self = this.set("_subscriberId", js.undefined)
+    def setOrder(value: positiveInt): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeneficiary(value: Reference): Self = this.set("beneficiary", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteBeneficiary: Self = this.set("beneficiary", js.undefined)
+    def setPayor(value: js.Array[Reference]): Self = StObject.set(x, "payor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContractVarargs(value: Reference*): Self = this.set("contract", js.Array(value :_*))
+    def setPayorUndefined: Self = StObject.set(x, "payor", js.undefined)
     
     @scala.inline
-    def setContract(value: js.Array[Reference]): Self = this.set("contract", value.asInstanceOf[js.Any])
+    def setPayorVarargs(value: Reference*): Self = StObject.set(x, "payor", js.Array(value :_*))
     
     @scala.inline
-    def deleteContract: Self = this.set("contract", js.undefined)
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependent(value: String): Self = this.set("dependent", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def deleteDependent: Self = this.set("dependent", js.undefined)
+    def setPolicyHolder(value: Reference): Self = StObject.set(x, "policyHolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrouping(value: CoverageGrouping): Self = this.set("grouping", value.asInstanceOf[js.Any])
+    def setPolicyHolderUndefined: Self = StObject.set(x, "policyHolder", js.undefined)
     
     @scala.inline
-    def deleteGrouping: Self = this.set("grouping", js.undefined)
+    def setRelationship(value: CodeableConcept): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setOrder(value: positiveInt): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setSubscriber(value: Reference): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setSubscriberId(value: String): Self = StObject.set(x, "subscriberId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayorVarargs(value: Reference*): Self = this.set("payor", js.Array(value :_*))
+    def setSubscriberIdUndefined: Self = StObject.set(x, "subscriberId", js.undefined)
     
     @scala.inline
-    def setPayor(value: js.Array[Reference]): Self = this.set("payor", value.asInstanceOf[js.Any])
+    def setSubscriberUndefined: Self = StObject.set(x, "subscriber", js.undefined)
     
     @scala.inline
-    def deletePayor: Self = this.set("payor", js.undefined)
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def set_dependent(value: Element): Self = StObject.set(x, "_dependent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyHolder(value: Reference): Self = this.set("policyHolder", value.asInstanceOf[js.Any])
+    def set_dependentUndefined: Self = StObject.set(x, "_dependent", js.undefined)
     
     @scala.inline
-    def deletePolicyHolder: Self = this.set("policyHolder", js.undefined)
+    def set_network(value: Element): Self = StObject.set(x, "_network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationship(value: CodeableConcept): Self = this.set("relationship", value.asInstanceOf[js.Any])
+    def set_networkUndefined: Self = StObject.set(x, "_network", js.undefined)
     
     @scala.inline
-    def deleteRelationship: Self = this.set("relationship", js.undefined)
+    def set_order(value: Element): Self = StObject.set(x, "_order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: String): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def set_orderUndefined: Self = StObject.set(x, "_order", js.undefined)
     
     @scala.inline
-    def deleteSequence: Self = this.set("sequence", js.undefined)
+    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriber(value: Reference): Self = this.set("subscriber", value.asInstanceOf[js.Any])
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
     @scala.inline
-    def deleteSubscriber: Self = this.set("subscriber", js.undefined)
+    def set_subscriberId(value: Element): Self = StObject.set(x, "_subscriberId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriberId(value: String): Self = this.set("subscriberId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriberId: Self = this.set("subscriberId", js.undefined)
-    
-    @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_subscriberIdUndefined: Self = StObject.set(x, "_subscriberId", js.undefined)
   }
 }

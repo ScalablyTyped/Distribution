@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,48 +45,36 @@ object ValueSetComposeIncludeConcept {
   }
   
   @scala.inline
-  implicit class ValueSetComposeIncludeConceptOps[Self <: ValueSetComposeIncludeConcept] (val x: Self) extends AnyVal {
+  implicit class ValueSetComposeIncludeConceptMutableBuilder[Self <: ValueSetComposeIncludeConcept] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesignation(value: js.Array[ValueSetComposeIncludeConceptDesignation]): Self = StObject.set(x, "designation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesignationUndefined: Self = StObject.set(x, "designation", js.undefined)
     
     @scala.inline
-    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setDesignationVarargs(value: ValueSetComposeIncludeConceptDesignation*): Self = StObject.set(x, "designation", js.Array(value :_*))
     
     @scala.inline
-    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_code: Self = this.set("_code", js.undefined)
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def set_display(value: Element): Self = this.set("_display", value.asInstanceOf[js.Any])
+    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_display: Self = this.set("_display", js.undefined)
+    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
     @scala.inline
-    def setDesignationVarargs(value: ValueSetComposeIncludeConceptDesignation*): Self = this.set("designation", js.Array(value :_*))
+    def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesignation(value: js.Array[ValueSetComposeIncludeConceptDesignation]): Self = this.set("designation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesignation: Self = this.set("designation", js.undefined)
-    
-    @scala.inline
-    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
   }
 }

@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/model/_AnalyticsAndOperator", JSImport.Namespace)
-@js.native
-object analyticsAndOperatorMod extends js.Object {
+object analyticsAndOperatorMod {
   
-  @JSName("_AnalyticsAndOperator")
+  @JSImport("@aws-sdk/client-s3-browser/model/_AnalyticsAndOperator", "_AnalyticsAndOperator")
+  @js.native
   val AnalyticsAndOperator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

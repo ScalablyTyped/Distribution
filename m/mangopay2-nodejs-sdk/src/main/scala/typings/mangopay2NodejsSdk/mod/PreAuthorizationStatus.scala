@@ -1,5 +1,6 @@
 package typings.mangopay2NodejsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SUCCEEDED
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FAILED
 */
-trait PreAuthorizationStatus extends js.Object
+trait PreAuthorizationStatus extends StObject
 object PreAuthorizationStatus {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.sharepoint.global.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CUI.ImgContainerSize")
 @js.native
-object ImgContainerSize extends js.Object {
+object ImgContainerSize extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.CUI.ImgContainerSize with Double] = js.native

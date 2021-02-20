@@ -1,12 +1,13 @@
 package typings.jstree
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSTreeStatic extends js.Object {
+trait JSTreeStatic extends StObject {
   
   /**
     * the jstree class constructor, used only internally

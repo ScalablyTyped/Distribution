@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationConfiguration extends js.Object {
+trait NotificationConfiguration extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that identifies the topic.
@@ -26,30 +27,18 @@ object NotificationConfiguration {
   }
   
   @scala.inline
-  implicit class NotificationConfigurationOps[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
+  implicit class NotificationConfigurationMutableBuilder[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTopicArn(value: String): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTopicStatus(value: String): Self = StObject.set(x, "TopicStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicArn(value: String): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
-    
-    @scala.inline
-    def setTopicStatus(value: String): Self = this.set("TopicStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicStatus: Self = this.set("TopicStatus", js.undefined)
+    def setTopicStatusUndefined: Self = StObject.set(x, "TopicStatus", js.undefined)
   }
 }

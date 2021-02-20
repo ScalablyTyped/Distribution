@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * some image effects from the existing image.
   */
 @js.native
-trait SchemaReplaceImageRequest extends js.Object {
+trait SchemaReplaceImageRequest extends StObject {
   
   /**
     * The ID of the existing image that will be replaced.
@@ -40,36 +41,24 @@ object SchemaReplaceImageRequest {
   }
   
   @scala.inline
-  implicit class SchemaReplaceImageRequestOps[Self <: SchemaReplaceImageRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaReplaceImageRequestMutableBuilder[Self <: SchemaReplaceImageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageObjectId(value: String): Self = StObject.set(x, "imageObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageObjectIdUndefined: Self = StObject.set(x, "imageObjectId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageReplaceMethod(value: String): Self = StObject.set(x, "imageReplaceMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageObjectId(value: String): Self = this.set("imageObjectId", value.asInstanceOf[js.Any])
+    def setImageReplaceMethodUndefined: Self = StObject.set(x, "imageReplaceMethod", js.undefined)
     
     @scala.inline
-    def deleteImageObjectId: Self = this.set("imageObjectId", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageReplaceMethod(value: String): Self = this.set("imageReplaceMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageReplaceMethod: Self = this.set("imageReplaceMethod", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

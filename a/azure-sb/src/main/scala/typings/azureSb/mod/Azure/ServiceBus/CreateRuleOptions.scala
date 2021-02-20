@@ -1,12 +1,13 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.ICreateRuleOptions> */
 @js.native
-trait CreateRuleOptions extends js.Object {
+trait CreateRuleOptions extends StObject {
   
   var correlationIdFilter: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object CreateRuleOptions {
   }
   
   @scala.inline
-  implicit class CreateRuleOptionsOps[Self <: CreateRuleOptions] (val x: Self) extends AnyVal {
+  implicit class CreateRuleOptionsMutableBuilder[Self <: CreateRuleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrelationIdFilter(value: String): Self = StObject.set(x, "correlationIdFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorrelationIdFilterUndefined: Self = StObject.set(x, "correlationIdFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFalseFilter(value: String): Self = StObject.set(x, "falseFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrelationIdFilter(value: String): Self = this.set("correlationIdFilter", value.asInstanceOf[js.Any])
+    def setFalseFilterUndefined: Self = StObject.set(x, "falseFilter", js.undefined)
     
     @scala.inline
-    def deleteCorrelationIdFilter: Self = this.set("correlationIdFilter", js.undefined)
+    def setSqlExpressionFilter(value: String): Self = StObject.set(x, "sqlExpressionFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFalseFilter(value: String): Self = this.set("falseFilter", value.asInstanceOf[js.Any])
+    def setSqlExpressionFilterUndefined: Self = StObject.set(x, "sqlExpressionFilter", js.undefined)
     
     @scala.inline
-    def deleteFalseFilter: Self = this.set("falseFilter", js.undefined)
+    def setSqlRuleAction(value: String): Self = StObject.set(x, "sqlRuleAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlExpressionFilter(value: String): Self = this.set("sqlExpressionFilter", value.asInstanceOf[js.Any])
+    def setSqlRuleActionUndefined: Self = StObject.set(x, "sqlRuleAction", js.undefined)
     
     @scala.inline
-    def deleteSqlExpressionFilter: Self = this.set("sqlExpressionFilter", js.undefined)
+    def setTrueFilter(value: String): Self = StObject.set(x, "trueFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlRuleAction(value: String): Self = this.set("sqlRuleAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqlRuleAction: Self = this.set("sqlRuleAction", js.undefined)
-    
-    @scala.inline
-    def setTrueFilter(value: String): Self = this.set("trueFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrueFilter: Self = this.set("trueFilter", js.undefined)
+    def setTrueFilterUndefined: Self = StObject.set(x, "trueFilter", js.undefined)
   }
 }

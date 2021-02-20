@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.Authentication.Web
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebAuthenticationOptions extends js.Object
+sealed trait WebAuthenticationOptions extends StObject
 /** Contains the options available to the asynchronous operation. */
 @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationOptions")
 @js.native
-object WebAuthenticationOptions extends js.Object {
+object WebAuthenticationOptions extends StObject {
   
   /** No options are requested. */
   @js.native

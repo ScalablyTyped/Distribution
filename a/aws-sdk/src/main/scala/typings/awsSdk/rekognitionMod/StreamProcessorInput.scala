@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamProcessorInput extends js.Object {
+trait StreamProcessorInput extends StObject {
   
   /**
     * The Kinesis video stream input stream for the source streaming video.
@@ -21,24 +22,12 @@ object StreamProcessorInput {
   }
   
   @scala.inline
-  implicit class StreamProcessorInputOps[Self <: StreamProcessorInput] (val x: Self) extends AnyVal {
+  implicit class StreamProcessorInputMutableBuilder[Self <: StreamProcessorInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKinesisVideoStream(value: KinesisVideoStream): Self = StObject.set(x, "KinesisVideoStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKinesisVideoStream(value: KinesisVideoStream): Self = this.set("KinesisVideoStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisVideoStream: Self = this.set("KinesisVideoStream", js.undefined)
+    def setKinesisVideoStreamUndefined: Self = StObject.set(x, "KinesisVideoStream", js.undefined)
   }
 }

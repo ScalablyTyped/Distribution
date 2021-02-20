@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistogramSeries extends js.Object {
+trait HistogramSeries extends StObject {
   
   /** The color of the column representing this series in each bucket. This field is optional. */
   var barColor: js.UndefOr[Color] = js.native
@@ -25,36 +26,24 @@ object HistogramSeries {
   }
   
   @scala.inline
-  implicit class HistogramSeriesOps[Self <: HistogramSeries] (val x: Self) extends AnyVal {
+  implicit class HistogramSeriesMutableBuilder[Self <: HistogramSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarColor(value: Color): Self = StObject.set(x, "barColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarColorStyle(value: ColorStyle): Self = StObject.set(x, "barColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBarColorStyleUndefined: Self = StObject.set(x, "barColorStyle", js.undefined)
     
     @scala.inline
-    def setBarColor(value: Color): Self = this.set("barColor", value.asInstanceOf[js.Any])
+    def setBarColorUndefined: Self = StObject.set(x, "barColor", js.undefined)
     
     @scala.inline
-    def deleteBarColor: Self = this.set("barColor", js.undefined)
+    def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarColorStyle(value: ColorStyle): Self = this.set("barColorStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBarColorStyle: Self = this.set("barColorStyle", js.undefined)
-    
-    @scala.inline
-    def setData(value: ChartData): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

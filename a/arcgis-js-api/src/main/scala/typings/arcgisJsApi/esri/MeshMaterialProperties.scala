@@ -7,12 +7,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.opaque
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.ImageData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeshMaterialProperties extends js.Object {
+trait MeshMaterialProperties extends StObject {
   
   /**
     * Specifies how transparency on the object is handled.
@@ -69,57 +70,45 @@ object MeshMaterialProperties {
   }
   
   @scala.inline
-  implicit class MeshMaterialPropertiesOps[Self <: MeshMaterialProperties] (val x: Self) extends AnyVal {
+  implicit class MeshMaterialPropertiesMutableBuilder[Self <: MeshMaterialProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphaCutoff(value: Double): Self = StObject.set(x, "alphaCutoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaCutoffUndefined: Self = StObject.set(x, "alphaCutoff", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlphaMode(value: auto | blend | opaque | mask): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaCutoff(value: Double): Self = this.set("alphaCutoff", value.asInstanceOf[js.Any])
+    def setAlphaModeUndefined: Self = StObject.set(x, "alphaMode", js.undefined)
     
     @scala.inline
-    def deleteAlphaCutoff: Self = this.set("alphaCutoff", js.undefined)
+    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaMode(value: auto | blend | opaque | mask): Self = this.set("alphaMode", value.asInstanceOf[js.Any])
+    def setColorTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "colorTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlphaMode: Self = this.set("alphaMode", js.undefined)
+    def setColorTextureUndefined: Self = StObject.set(x, "colorTexture", js.undefined)
     
     @scala.inline
-    def setColorVarargs(value: Double*): Self = this.set("color", js.Array(value :_*))
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDoubleSided(value: Boolean): Self = StObject.set(x, "doubleSided", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = this.set("colorTexture", value.asInstanceOf[js.Any])
+    def setDoubleSidedUndefined: Self = StObject.set(x, "doubleSided", js.undefined)
     
     @scala.inline
-    def deleteColorTexture: Self = this.set("colorTexture", js.undefined)
+    def setNormalTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "normalTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleSided(value: Boolean): Self = this.set("doubleSided", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDoubleSided: Self = this.set("doubleSided", js.undefined)
-    
-    @scala.inline
-    def setNormalTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = this.set("normalTexture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalTexture: Self = this.set("normalTexture", js.undefined)
+    def setNormalTextureUndefined: Self = StObject.set(x, "normalTexture", js.undefined)
   }
 }

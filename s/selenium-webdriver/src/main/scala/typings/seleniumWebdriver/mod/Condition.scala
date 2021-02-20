@@ -1,12 +1,13 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Condition")
 @js.native
-class Condition[T] protected () extends js.Object {
+class Condition[T] protected () extends StObject {
   /**
     * @param {string} message A descriptive error message. Should complete the
     *     sentence 'Waiting [...]'

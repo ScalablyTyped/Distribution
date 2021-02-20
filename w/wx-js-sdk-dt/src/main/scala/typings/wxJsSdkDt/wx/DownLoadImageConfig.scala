@@ -1,6 +1,7 @@
 package typings.wxJsSdkDt.wx
 
 import typings.wxJsSdkDt.anon.LocalId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,33 +31,21 @@ object DownLoadImageConfig {
   }
   
   @scala.inline
-  implicit class DownLoadImageConfigOps[Self <: DownLoadImageConfig] (val x: Self) extends AnyVal {
+  implicit class DownLoadImageConfigMutableBuilder[Self <: DownLoadImageConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsShowProgressTipsUndefined: Self = StObject.set(x, "isShowProgressTips", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerId(value: String): Self = this.set("serverId", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* res */ LocalId => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsShowProgressTips(value: Double): Self = this.set("isShowProgressTips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsShowProgressTips: Self = this.set("isShowProgressTips", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ LocalId => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

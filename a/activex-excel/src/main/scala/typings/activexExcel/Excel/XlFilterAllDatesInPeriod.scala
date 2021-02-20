@@ -6,6 +6,7 @@ import typings.activexExcel.activexExcelNumbers.`2`
 import typings.activexExcel.activexExcelNumbers.`3`
 import typings.activexExcel.activexExcelNumbers.`4`
 import typings.activexExcel.activexExcelNumbers.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.activexExcelNumbers.`5`
   - typings.activexExcel.activexExcelNumbers.`0`
 */
-trait XlFilterAllDatesInPeriod extends js.Object
+trait XlFilterAllDatesInPeriod extends StObject
 object XlFilterAllDatesInPeriod {
   
   @scala.inline

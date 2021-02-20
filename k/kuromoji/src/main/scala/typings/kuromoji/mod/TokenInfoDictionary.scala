@@ -2,12 +2,13 @@ package typings.kuromoji.mod
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TokenInfoDictionary extends js.Object {
+trait TokenInfoDictionary extends StObject {
   
   def addMapping(source: Double, target: Double): Unit = js.native
   
@@ -43,42 +44,30 @@ object TokenInfoDictionary {
   }
   
   @scala.inline
-  implicit class TokenInfoDictionaryOps[Self <: TokenInfoDictionary] (val x: Self) extends AnyVal {
+  implicit class TokenInfoDictionaryMutableBuilder[Self <: TokenInfoDictionary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddMapping(value: (Double, Double) => Unit): Self = StObject.set(x, "addMapping", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildDictionary(value: js.Array[js.Array[_]] => NumberDictionary[String]): Self = StObject.set(x, "buildDictionary", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFeatures(value: String => String): Self = StObject.set(x, "getFeatures", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddMapping(value: (Double, Double) => Unit): Self = this.set("addMapping", js.Any.fromFunction2(value))
+    def setLoadDictionary(value: Uint8Array => TokenInfoDictionary): Self = StObject.set(x, "loadDictionary", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuildDictionary(value: js.Array[js.Array[_]] => NumberDictionary[String]): Self = this.set("buildDictionary", js.Any.fromFunction1(value))
+    def setLoadPosVector(value: Uint8Array => TokenInfoDictionary): Self = StObject.set(x, "loadPosVector", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFeatures(value: String => String): Self = this.set("getFeatures", js.Any.fromFunction1(value))
+    def setLoadTargetMap(value: Uint8Array => TokenInfoDictionary): Self = StObject.set(x, "loadTargetMap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadDictionary(value: Uint8Array => TokenInfoDictionary): Self = this.set("loadDictionary", js.Any.fromFunction1(value))
+    def setPut(value: (Double, Double, Double, String, String) => Double): Self = StObject.set(x, "put", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setLoadPosVector(value: Uint8Array => TokenInfoDictionary): Self = this.set("loadPosVector", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLoadTargetMap(value: Uint8Array => TokenInfoDictionary): Self = this.set("loadTargetMap", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPut(value: (Double, Double, Double, String, String) => Double): Self = this.set("put", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setTargetMapToBuffer(value: () => Uint8Array): Self = this.set("targetMapToBuffer", js.Any.fromFunction0(value))
+    def setTargetMapToBuffer(value: () => Uint8Array): Self = StObject.set(x, "targetMapToBuffer", js.Any.fromFunction0(value))
   }
 }

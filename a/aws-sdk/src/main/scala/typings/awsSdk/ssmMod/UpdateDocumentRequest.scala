@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDocumentRequest extends js.Object {
+trait UpdateDocumentRequest extends StObject {
   
   /**
     * A list of key and value pairs that describe attachments to a version of a document.
@@ -51,57 +52,45 @@ object UpdateDocumentRequest {
   }
   
   @scala.inline
-  implicit class UpdateDocumentRequestOps[Self <: UpdateDocumentRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDocumentRequestMutableBuilder[Self <: UpdateDocumentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: AttachmentsSourceList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentsVarargs(value: AttachmentsSource*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
     
     @scala.inline
-    def setContent(value: DocumentContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setContent(value: DocumentContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: DocumentName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "DocumentFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsVarargs(value: AttachmentsSource*): Self = this.set("Attachments", js.Array(value :_*))
+    def setDocumentFormatUndefined: Self = StObject.set(x, "DocumentFormat", js.undefined)
     
     @scala.inline
-    def setAttachments(value: AttachmentsSourceList): Self = this.set("Attachments", value.asInstanceOf[js.Any])
+    def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachments: Self = this.set("Attachments", js.undefined)
+    def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
     
     @scala.inline
-    def setDocumentFormat(value: DocumentFormat): Self = this.set("DocumentFormat", value.asInstanceOf[js.Any])
+    def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentFormat: Self = this.set("DocumentFormat", js.undefined)
+    def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
     
     @scala.inline
-    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    def setVersionName(value: DocumentVersionName): Self = StObject.set(x, "VersionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetType(value: TargetType): Self = this.set("TargetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetType: Self = this.set("TargetType", js.undefined)
-    
-    @scala.inline
-    def setVersionName(value: DocumentVersionName): Self = this.set("VersionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionName: Self = this.set("VersionName", js.undefined)
+    def setVersionNameUndefined: Self = StObject.set(x, "VersionName", js.undefined)
   }
 }

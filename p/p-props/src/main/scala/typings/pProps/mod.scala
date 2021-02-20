@@ -5,32 +5,39 @@ import org.scalablytyped.runtime.TopLevel
 import typings.pProps.pPropsStrings.^
 import typings.std.Map
 import typings.std.ReadonlyMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-props", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("p-props", JSImport.Namespace)
+  @js.native
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ ^  with TopLevel[js.Any]
+    */ ^ with TopLevel[js.Any]
   ] = js.native
+  @JSImport("p-props", JSImport.Namespace)
+  @js.native
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: js.UndefOr[scala.Nothing], options: Options): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ ^  with TopLevel[js.Any]
+    */ ^ with TopLevel[js.Any]
   ] = js.native
+  @JSImport("p-props", JSImport.Namespace)
+  @js.native
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
     mapper: Mapper[PromiseResult[ValueType], /* keyof InputType */ String, MappedValueType]
   ): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ ^  with TopLevel[js.Any]
+    */ ^ with TopLevel[js.Any]
   ] = js.native
+  @JSImport("p-props", JSImport.Namespace)
+  @js.native
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
     mapper: Mapper[PromiseResult[ValueType], /* keyof InputType */ String, MappedValueType],
@@ -38,7 +45,7 @@ object mod extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ ^  with TopLevel[js.Any]
+    */ ^ with TopLevel[js.Any]
   ] = js.native
   /**
   Like [`Promise.all()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) but for `Map` and `Object`.
@@ -71,21 +78,29 @@ object mod extends js.Object {
   })();
   ```
   */
+  @JSImport("p-props", JSImport.Namespace)
+  @js.native
   def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType]
   ): js.Promise[Map[KeyType, MappedValueType]] = js.native
+  @JSImport("p-props", JSImport.Namespace)
+  @js.native
   def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType],
     mapper: js.UndefOr[scala.Nothing],
     options: Options
   ): js.Promise[Map[KeyType, MappedValueType]] = js.native
+  @JSImport("p-props", JSImport.Namespace)
+  @js.native
   def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType],
     mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType]
   ): js.Promise[Map[KeyType, MappedValueType]] = js.native
+  @JSImport("p-props", JSImport.Namespace)
+  @js.native
   def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType],

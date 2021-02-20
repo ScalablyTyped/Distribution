@@ -1,13 +1,14 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "SVGRenderer")
 @js.native
-class SVGRenderer protected () extends js.Object {
+class SVGRenderer protected () extends StObject {
   /**
     * Allows direct access to the Highcharts rendering layer in order to draw
     * primitive shapes like circles, rectangles, paths or text directly on a

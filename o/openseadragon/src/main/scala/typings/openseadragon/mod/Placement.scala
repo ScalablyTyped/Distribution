@@ -1,61 +1,52 @@
 package typings.openseadragon.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Placement extends js.Object
+sealed trait Placement extends StObject
 @JSImport("openseadragon", "Placement")
 @js.native
-object Placement extends js.Object {
+object Placement extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Placement with Double] = js.native
   
   @js.native
   sealed trait BOTTOM extends Placement
-  /* 6 */ @js.native
-  object BOTTOM extends TopLevel[BOTTOM with Double]
+  /* 6 */ val BOTTOM: typings.openseadragon.mod.Placement.BOTTOM with Double = js.native
   
   @js.native
   sealed trait BOTTOM_LEFT extends Placement
-  /* 7 */ @js.native
-  object BOTTOM_LEFT extends TopLevel[BOTTOM_LEFT with Double]
+  /* 7 */ val BOTTOM_LEFT: typings.openseadragon.mod.Placement.BOTTOM_LEFT with Double = js.native
   
   @js.native
   sealed trait BOTTOM_RIGHT extends Placement
-  /* 5 */ @js.native
-  object BOTTOM_RIGHT extends TopLevel[BOTTOM_RIGHT with Double]
+  /* 5 */ val BOTTOM_RIGHT: typings.openseadragon.mod.Placement.BOTTOM_RIGHT with Double = js.native
   
   @js.native
   sealed trait CENTER extends Placement
-  /* 0 */ @js.native
-  object CENTER extends TopLevel[CENTER with Double]
+  /* 0 */ val CENTER: typings.openseadragon.mod.Placement.CENTER with Double = js.native
   
   @js.native
   sealed trait LEFT extends Placement
-  /* 8 */ @js.native
-  object LEFT extends TopLevel[LEFT with Double]
+  /* 8 */ val LEFT: typings.openseadragon.mod.Placement.LEFT with Double = js.native
   
   @js.native
   sealed trait RIGHT extends Placement
-  /* 4 */ @js.native
-  object RIGHT extends TopLevel[RIGHT with Double]
+  /* 4 */ val RIGHT: typings.openseadragon.mod.Placement.RIGHT with Double = js.native
   
   @js.native
   sealed trait TOP extends Placement
-  /* 2 */ @js.native
-  object TOP extends TopLevel[TOP with Double]
+  /* 2 */ val TOP: typings.openseadragon.mod.Placement.TOP with Double = js.native
   
   @js.native
   sealed trait TOP_LEFT extends Placement
-  /* 1 */ @js.native
-  object TOP_LEFT extends TopLevel[TOP_LEFT with Double]
+  /* 1 */ val TOP_LEFT: typings.openseadragon.mod.Placement.TOP_LEFT with Double = js.native
   
   @js.native
   sealed trait TOP_RIGHT extends Placement
-  /* 3 */ @js.native
-  object TOP_RIGHT extends TopLevel[TOP_RIGHT with Double]
+  /* 3 */ val TOP_RIGHT: typings.openseadragon.mod.Placement.TOP_RIGHT with Double = js.native
 }

@@ -1,5 +1,6 @@
 package typings.mapbox.mod.global.L.mapbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object ControlOptions {
   }
   
   @scala.inline
-  implicit class ControlOptionsOps[Self <: ControlOptions] (val x: Self) extends AnyVal {
+  implicit class ControlOptionsMutableBuilder[Self <: ControlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSanitizer(value: /* template */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSanitizer(value: /* template */ String => String): Self = this.set("sanitizer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSanitizer: Self = this.set("sanitizer", js.undefined)
+    def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
   }
 }

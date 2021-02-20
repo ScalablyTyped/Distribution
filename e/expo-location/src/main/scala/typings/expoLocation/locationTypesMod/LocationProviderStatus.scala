@@ -1,11 +1,12 @@
 package typings.expoLocation.locationTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationProviderStatus extends js.Object {
+trait LocationProviderStatus extends StObject {
   
   var backgroundModeEnabled: Boolean = js.native
   
@@ -26,42 +27,30 @@ object LocationProviderStatus {
   }
   
   @scala.inline
-  implicit class LocationProviderStatusOps[Self <: LocationProviderStatus] (val x: Self) extends AnyVal {
+  implicit class LocationProviderStatusMutableBuilder[Self <: LocationProviderStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundModeEnabled(value: Boolean): Self = StObject.set(x, "backgroundModeEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGpsAvailable(value: Boolean): Self = StObject.set(x, "gpsAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGpsAvailableUndefined: Self = StObject.set(x, "gpsAvailable", js.undefined)
     
     @scala.inline
-    def setBackgroundModeEnabled(value: Boolean): Self = this.set("backgroundModeEnabled", value.asInstanceOf[js.Any])
+    def setLocationServicesEnabled(value: Boolean): Self = StObject.set(x, "locationServicesEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationServicesEnabled(value: Boolean): Self = this.set("locationServicesEnabled", value.asInstanceOf[js.Any])
+    def setNetworkAvailable(value: Boolean): Self = StObject.set(x, "networkAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGpsAvailable(value: Boolean): Self = this.set("gpsAvailable", value.asInstanceOf[js.Any])
+    def setNetworkAvailableUndefined: Self = StObject.set(x, "networkAvailable", js.undefined)
     
     @scala.inline
-    def deleteGpsAvailable: Self = this.set("gpsAvailable", js.undefined)
+    def setPassiveAvailable(value: Boolean): Self = StObject.set(x, "passiveAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkAvailable(value: Boolean): Self = this.set("networkAvailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkAvailable: Self = this.set("networkAvailable", js.undefined)
-    
-    @scala.inline
-    def setPassiveAvailable(value: Boolean): Self = this.set("passiveAvailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassiveAvailable: Self = this.set("passiveAvailable", js.undefined)
+    def setPassiveAvailableUndefined: Self = StObject.set(x, "passiveAvailable", js.undefined)
   }
 }

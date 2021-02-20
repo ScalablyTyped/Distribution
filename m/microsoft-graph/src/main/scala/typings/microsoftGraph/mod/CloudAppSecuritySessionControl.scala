@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object CloudAppSecuritySessionControl {
   }
   
   @scala.inline
-  implicit class CloudAppSecuritySessionControlOps[Self <: CloudAppSecuritySessionControl] (val x: Self) extends AnyVal {
+  implicit class CloudAppSecuritySessionControlMutableBuilder[Self <: CloudAppSecuritySessionControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudAppSecurityType(value: NullableOption[CloudAppSecuritySessionControlType]): Self = StObject.set(x, "cloudAppSecurityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudAppSecurityTypeNull: Self = StObject.set(x, "cloudAppSecurityType", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloudAppSecurityType(value: NullableOption[CloudAppSecuritySessionControlType]): Self = this.set("cloudAppSecurityType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudAppSecurityType: Self = this.set("cloudAppSecurityType", js.undefined)
-    
-    @scala.inline
-    def setCloudAppSecurityTypeNull: Self = this.set("cloudAppSecurityType", null)
+    def setCloudAppSecurityTypeUndefined: Self = StObject.set(x, "cloudAppSecurityType", js.undefined)
   }
 }

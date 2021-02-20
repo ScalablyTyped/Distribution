@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.devextremeStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowColumnDragging extends js.Object {
+trait AllowColumnDragging extends StObject {
   
   var allowColumnDragging: js.UndefOr[Boolean] = js.native
   
@@ -23,36 +24,24 @@ object AllowColumnDragging {
   }
   
   @scala.inline
-  implicit class AllowColumnDraggingOps[Self <: AllowColumnDragging] (val x: Self) extends AnyVal {
+  implicit class AllowColumnDraggingMutableBuilder[Self <: AllowColumnDragging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowColumnDragging(value: Boolean): Self = StObject.set(x, "allowColumnDragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowColumnDraggingUndefined: Self = StObject.set(x, "allowColumnDragging", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmptyPanelText(value: String): Self = StObject.set(x, "emptyPanelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowColumnDragging(value: Boolean): Self = this.set("allowColumnDragging", value.asInstanceOf[js.Any])
+    def setEmptyPanelTextUndefined: Self = StObject.set(x, "emptyPanelText", js.undefined)
     
     @scala.inline
-    def deleteAllowColumnDragging: Self = this.set("allowColumnDragging", js.undefined)
+    def setVisible(value: Boolean | auto): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyPanelText(value: String): Self = this.set("emptyPanelText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmptyPanelText: Self = this.set("emptyPanelText", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean | auto): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

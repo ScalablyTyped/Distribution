@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionMatrixDropdownRenderedCell")
 @js.native
-class QuestionMatrixDropdownRenderedCell () extends js.Object {
+class QuestionMatrixDropdownRenderedCell () extends StObject {
   
   var cell: MatrixDropdownCell = js.native
   

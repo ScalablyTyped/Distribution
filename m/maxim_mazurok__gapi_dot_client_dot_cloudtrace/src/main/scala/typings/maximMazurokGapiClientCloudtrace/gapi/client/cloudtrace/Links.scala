@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Links extends js.Object {
+trait Links extends StObject {
   
   /** The number of dropped links after the maximum size was enforced. If this value is 0, then no links were dropped. */
   var droppedLinksCount: js.UndefOr[Double] = js.native
@@ -22,33 +23,21 @@ object Links {
   }
   
   @scala.inline
-  implicit class LinksOps[Self <: Links] (val x: Self) extends AnyVal {
+  implicit class LinksMutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDroppedLinksCount(value: Double): Self = StObject.set(x, "droppedLinksCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDroppedLinksCountUndefined: Self = StObject.set(x, "droppedLinksCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLink(value: js.Array[Link]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDroppedLinksCount(value: Double): Self = this.set("droppedLinksCount", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteDroppedLinksCount: Self = this.set("droppedLinksCount", js.undefined)
-    
-    @scala.inline
-    def setLinkVarargs(value: Link*): Self = this.set("link", js.Array(value :_*))
-    
-    @scala.inline
-    def setLink(value: js.Array[Link]): Self = this.set("link", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setLinkVarargs(value: Link*): Self = StObject.set(x, "link", js.Array(value :_*))
   }
 }

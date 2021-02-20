@@ -2,12 +2,13 @@ package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.mod.IMarkdownString
 import typings.monacoEditor.mod.IRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hover extends js.Object {
+trait Hover extends StObject {
   
   /**
     * The contents of this hover.
@@ -30,30 +31,18 @@ object Hover {
   }
   
   @scala.inline
-  implicit class HoverOps[Self <: Hover] (val x: Self) extends AnyVal {
+  implicit class HoverMutableBuilder[Self <: Hover] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContents(value: js.Array[IMarkdownString]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentsVarargs(value: IMarkdownString*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentsVarargs(value: IMarkdownString*): Self = this.set("contents", js.Array(value :_*))
-    
-    @scala.inline
-    def setContents(value: js.Array[IMarkdownString]): Self = this.set("contents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRange(value: IRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

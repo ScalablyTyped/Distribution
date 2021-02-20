@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RdsHttpEndpointConfig extends js.Object {
+trait RdsHttpEndpointConfig extends StObject {
   
   /**
     * AWS Region for RDS HTTP endpoint.
@@ -41,48 +42,36 @@ object RdsHttpEndpointConfig {
   }
   
   @scala.inline
-  implicit class RdsHttpEndpointConfigOps[Self <: RdsHttpEndpointConfig] (val x: Self) extends AnyVal {
+  implicit class RdsHttpEndpointConfigMutableBuilder[Self <: RdsHttpEndpointConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsSecretStoreArn(value: String): Self = StObject.set(x, "awsSecretStoreArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRegion(value: String): Self = this.set("awsRegion", value.asInstanceOf[js.Any])
+    def setAwsSecretStoreArnUndefined: Self = StObject.set(x, "awsSecretStoreArn", js.undefined)
     
     @scala.inline
-    def deleteAwsRegion: Self = this.set("awsRegion", js.undefined)
+    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsSecretStoreArn(value: String): Self = this.set("awsSecretStoreArn", value.asInstanceOf[js.Any])
+    def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
     
     @scala.inline
-    def deleteAwsSecretStoreArn: Self = this.set("awsSecretStoreArn", js.undefined)
+    def setDbClusterIdentifier(value: String): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    def setDbClusterIdentifierUndefined: Self = StObject.set(x, "dbClusterIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDatabaseName: Self = this.set("databaseName", js.undefined)
+    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbClusterIdentifier(value: String): Self = this.set("dbClusterIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDbClusterIdentifier: Self = this.set("dbClusterIdentifier", js.undefined)
-    
-    @scala.inline
-    def setSchema(value: String): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveTime extends js.Object {
+trait ActiveTime extends StObject {
   
   var activeTime: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object ActiveTime {
   }
   
   @scala.inline
-  implicit class ActiveTimeOps[Self <: ActiveTime] (val x: Self) extends AnyVal {
+  implicit class ActiveTimeMutableBuilder[Self <: ActiveTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTime(value: Double): Self = StObject.set(x, "activeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveTimeUndefined: Self = StObject.set(x, "activeTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTime(value: Double): Self = this.set("activeTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActiveTime: Self = this.set("activeTime", js.undefined)
-    
-    @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
   }
 }

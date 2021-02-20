@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationautoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutScalingPolicyResponse extends js.Object {
+trait PutScalingPolicyResponse extends StObject {
   
   /**
     * The CloudWatch alarms created for the target tracking scaling policy.
@@ -26,30 +27,18 @@ object PutScalingPolicyResponse {
   }
   
   @scala.inline
-  implicit class PutScalingPolicyResponseOps[Self <: PutScalingPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class PutScalingPolicyResponseMutableBuilder[Self <: PutScalingPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlarms(value: Alarms): Self = StObject.set(x, "Alarms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlarmsUndefined: Self = StObject.set(x, "Alarms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "Alarms", js.Array(value :_*))
     
     @scala.inline
-    def setPolicyARN(value: ResourceIdMaxLen1600): Self = this.set("PolicyARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAlarmsVarargs(value: Alarm*): Self = this.set("Alarms", js.Array(value :_*))
-    
-    @scala.inline
-    def setAlarms(value: Alarms): Self = this.set("Alarms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlarms: Self = this.set("Alarms", js.undefined)
+    def setPolicyARN(value: ResourceIdMaxLen1600): Self = StObject.set(x, "PolicyARN", value.asInstanceOf[js.Any])
   }
 }

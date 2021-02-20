@@ -2,6 +2,7 @@ package typings.zchatBrowser.anon
 
 import typings.zchatBrowser.mod.ChatEvent.ChatEventData
 import typings.zchatBrowser.zchatBrowserStrings.chatDotrating
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,42 +33,30 @@ object BaseChatEventDatatypechatNewrating {
   }
   
   @scala.inline
-  implicit class BaseChatEventDatatypechatNewratingOps[Self <: BaseChatEventDatatypechatNewrating] (val x: Self) extends AnyVal {
+  implicit class BaseChatEventDatatypechatNewratingMutableBuilder[Self <: BaseChatEventDatatypechatNewrating] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNew_rating(value: String): Self = StObject.set(x, "new_rating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNew_ratingUndefined: Self = StObject.set(x, "new_rating", js.undefined)
     
     @scala.inline
-    def setDisplay_name(value: String): Self = this.set("display_name", value.asInstanceOf[js.Any])
+    def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNick(value: String): Self = this.set("nick", value.asInstanceOf[js.Any])
+    def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime_stamp(value: Double): Self = this.set("time_stamp", value.asInstanceOf[js.Any])
+    def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
     
     @scala.inline
-    def setType(value: chatDotrating): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTime_stamp(value: Double): Self = StObject.set(x, "time_stamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_rating(value: String): Self = this.set("new_rating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNew_rating: Self = this.set("new_rating", js.undefined)
-    
-    @scala.inline
-    def setRating(value: String): Self = this.set("rating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRating: Self = this.set("rating", js.undefined)
+    def setType(value: chatDotrating): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

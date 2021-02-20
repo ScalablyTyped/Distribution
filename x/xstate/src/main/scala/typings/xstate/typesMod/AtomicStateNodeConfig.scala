@@ -1,6 +1,7 @@
 package typings.xstate.typesMod
 
 import typings.xstate.xstateBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,24 +32,12 @@ object AtomicStateNodeConfig {
   }
   
   @scala.inline
-  implicit class AtomicStateNodeConfigOps[Self <: AtomicStateNodeConfig[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (AtomicStateNodeConfig[TContext, TEvent])) extends AnyVal {
+  implicit class AtomicStateNodeConfigMutableBuilder[Self <: AtomicStateNodeConfig[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (AtomicStateNodeConfig[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParallel(value: `false`): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParallel(value: `false`): Self = this.set("parallel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParallel: Self = this.set("parallel", js.undefined)
+    def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
   }
 }

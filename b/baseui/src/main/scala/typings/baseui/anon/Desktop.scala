@@ -2,12 +2,13 @@ package typings.baseui.anon
 
 import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Desktop extends js.Object {
+trait Desktop extends StObject {
   
   var desktop: js.UndefOr[horizontal | vertical] = js.native
   
@@ -22,30 +23,18 @@ object Desktop {
   }
   
   @scala.inline
-  implicit class DesktopOps[Self <: Desktop] (val x: Self) extends AnyVal {
+  implicit class DesktopMutableBuilder[Self <: Desktop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesktop(value: horizontal | vertical): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMobile(value: horizontal | vertical): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesktop(value: horizontal | vertical): Self = this.set("desktop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesktop: Self = this.set("desktop", js.undefined)
-    
-    @scala.inline
-    def setMobile(value: horizontal | vertical): Self = this.set("mobile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMobile: Self = this.set("mobile", js.undefined)
+    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
   }
 }

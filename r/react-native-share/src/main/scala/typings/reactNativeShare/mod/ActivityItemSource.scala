@@ -1,12 +1,13 @@
 package typings.reactNativeShare.mod
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityItemSource extends js.Object {
+trait ActivityItemSource extends StObject {
   
   var dataTypeIdentifier: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -48,64 +49,52 @@ object ActivityItemSource {
   }
   
   @scala.inline
-  implicit class ActivityItemSourceOps[Self <: ActivityItemSource] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItem(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in react-native-share.react-native-share.ActivityType | string ]: react-native-share.react-native-share.ActivityItem | null | undefined}
-      */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource with TopLevel[js.Any]
-    ): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaceholderItem(value: ActivityItem): Self = this.set("placeholderItem", value.asInstanceOf[js.Any])
+  implicit class ActivityItemSourceMutableBuilder[Self <: ActivityItemSource] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDataTypeIdentifier(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in react-native-share.react-native-share.ActivityType | string ]: string}
       */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource with TopLevel[js.Any]
-    ): Self = this.set("dataTypeIdentifier", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dataTypeIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataTypeIdentifier: Self = this.set("dataTypeIdentifier", js.undefined)
+    def setDataTypeIdentifierUndefined: Self = StObject.set(x, "dataTypeIdentifier", js.undefined)
     
     @scala.inline
-    def setLinkMetadata(value: LinkMetadata): Self = this.set("linkMetadata", value.asInstanceOf[js.Any])
+    def setItem(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ key in react-native-share.react-native-share.ActivityType | string ]: react-native-share.react-native-share.ActivityItem | null | undefined}
+      */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource with TopLevel[js.Any]
+    ): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinkMetadata: Self = this.set("linkMetadata", js.undefined)
+    def setLinkMetadata(value: LinkMetadata): Self = StObject.set(x, "linkMetadata", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLinkMetadataUndefined: Self = StObject.set(x, "linkMetadata", js.undefined)
+    
+    @scala.inline
+    def setPlaceholderItem(value: ActivityItem): Self = StObject.set(x, "placeholderItem", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSubject(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in react-native-share.react-native-share.ActivityType | string ]: string}
       */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource with TopLevel[js.Any]
-    ): Self = this.set("subject", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
     def setThumbnailImage(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in react-native-share.react-native-share.ActivityType | string ]: string}
       */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource with TopLevel[js.Any]
-    ): Self = this.set("thumbnailImage", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "thumbnailImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThumbnailImage: Self = this.set("thumbnailImage", js.undefined)
+    def setThumbnailImageUndefined: Self = StObject.set(x, "thumbnailImage", js.undefined)
   }
 }

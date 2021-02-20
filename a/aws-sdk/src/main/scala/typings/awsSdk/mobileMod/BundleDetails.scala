@@ -1,11 +1,12 @@
 package typings.awsSdk.mobileMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BundleDetails extends js.Object {
+trait BundleDetails extends StObject {
   
   var availablePlatforms: js.UndefOr[Platforms] = js.native
   
@@ -28,57 +29,45 @@ object BundleDetails {
   }
   
   @scala.inline
-  implicit class BundleDetailsOps[Self <: BundleDetails] (val x: Self) extends AnyVal {
+  implicit class BundleDetailsMutableBuilder[Self <: BundleDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailablePlatforms(value: Platforms): Self = StObject.set(x, "availablePlatforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailablePlatformsUndefined: Self = StObject.set(x, "availablePlatforms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailablePlatformsVarargs(value: Platform*): Self = StObject.set(x, "availablePlatforms", js.Array(value :_*))
     
     @scala.inline
-    def setAvailablePlatformsVarargs(value: Platform*): Self = this.set("availablePlatforms", js.Array(value :_*))
+    def setBundleId(value: BundleId): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailablePlatforms(value: Platforms): Self = this.set("availablePlatforms", value.asInstanceOf[js.Any])
+    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
     @scala.inline
-    def deleteAvailablePlatforms: Self = this.set("availablePlatforms", js.undefined)
+    def setDescription(value: BundleDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: BundleId): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    def setIconUrl(value: IconUrl): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: BundleDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setTitle(value: BundleTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: IconUrl): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    def setVersion(value: BundleVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: BundleTitle): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: BundleVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.nodeRsa.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,42 +43,30 @@ object KeyComponentsPrivate {
   }
   
   @scala.inline
-  implicit class KeyComponentsPrivateOps[Self <: KeyComponentsPrivate] (val x: Self) extends AnyVal {
+  implicit class KeyComponentsPrivateMutableBuilder[Self <: KeyComponentsPrivate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoeff(value: Buffer): Self = StObject.set(x, "coeff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setD(value: Buffer): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDmp1(value: Buffer): Self = StObject.set(x, "dmp1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoeff(value: Buffer): Self = this.set("coeff", value.asInstanceOf[js.Any])
+    def setDmq1(value: Buffer): Self = StObject.set(x, "dmq1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: Buffer): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setE(value: Buffer | Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDmp1(value: Buffer): Self = this.set("dmp1", value.asInstanceOf[js.Any])
+    def setN(value: Buffer): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDmq1(value: Buffer): Self = this.set("dmq1", value.asInstanceOf[js.Any])
+    def setP(value: Buffer): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: Buffer | Double): Self = this.set("e", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setN(value: Buffer): Self = this.set("n", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP(value: Buffer): Self = this.set("p", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQ(value: Buffer): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setQ(value: Buffer): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
   }
 }

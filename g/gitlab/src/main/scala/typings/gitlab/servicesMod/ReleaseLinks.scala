@@ -1,5 +1,7 @@
 package typings.gitlab.servicesMod
 
+import typings.gitlab.baseServiceMod.BaseServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("gitlab/dist/types/core/services", "ReleaseLinks")
 @js.native
 class ReleaseLinks ()
-  extends typings.gitlab.releaseLinksMod.ReleaseLinks
+  extends typings.gitlab.releaseLinksMod.ReleaseLinks {
+  def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+}

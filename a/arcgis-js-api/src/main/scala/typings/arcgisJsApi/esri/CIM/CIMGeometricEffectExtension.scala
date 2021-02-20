@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,41 +40,29 @@ object CIMGeometricEffectExtension {
   }
   
   @scala.inline
-  implicit class CIMGeometricEffectExtensionOps[Self <: CIMGeometricEffectExtension] (val x: Self) extends AnyVal {
+  implicit class CIMGeometricEffectExtensionMutableBuilder[Self <: CIMGeometricEffectExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeflection(value: Double): Self = StObject.set(x, "deflection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeflectionUndefined: Self = StObject.set(x, "deflection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectExtension): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeflection(value: Double): Self = this.set("deflection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeflection: Self = this.set("deflection", js.undefined)
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
     def setOrigin(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectExtensionOrigin * / any */ String
-    ): Self = this.set("origin", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
+    @scala.inline
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectExtension): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

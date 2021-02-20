@@ -1,7 +1,7 @@
 package typings.reactBootstrap.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.reactBootstrap.formControlFeedbackMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +10,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class FormControl ()
   extends typings.reactBootstrap.libMod.FormControl
-/* static members */
-@JSImport("react-bootstrap", "FormControl")
-@js.native
-object FormControl extends js.Object {
+object FormControl {
   
-  var Feedback: Instantiable0[^] = js.native
+  @JSImport("react-bootstrap", "FormControl")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Static: Instantiable0[typings.reactBootstrap.formControlStaticMod.^] = js.native
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap", "FormControl.Feedback")
+  @js.native
+  class Feedback ()
+    extends typings.reactBootstrap.formControlFeedbackMod.^
+  /* static member */
+  @JSImport("react-bootstrap", "FormControl.Feedback")
+  @js.native
+  def Feedback: Instantiable0[typings.reactBootstrap.formControlFeedbackMod.^] = js.native
+  @scala.inline
+  def Feedback_=(x: Instantiable0[typings.reactBootstrap.formControlFeedbackMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Feedback")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap", "FormControl.Static")
+  @js.native
+  class Static ()
+    extends typings.reactBootstrap.formControlStaticMod.^
+  /* static member */
+  @JSImport("react-bootstrap", "FormControl.Static")
+  @js.native
+  def Static: Instantiable0[typings.reactBootstrap.formControlStaticMod.^] = js.native
+  @scala.inline
+  def Static_=(x: Instantiable0[typings.reactBootstrap.formControlStaticMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Static")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationStateData extends js.Object {
+trait AnimationStateData extends StObject {
   
   var animationToMixTime: Map[Double] = js.native
   
@@ -38,39 +39,27 @@ object AnimationStateData {
   }
   
   @scala.inline
-  implicit class AnimationStateDataOps[Self <: AnimationStateData] (val x: Self) extends AnyVal {
+  implicit class AnimationStateDataMutableBuilder[Self <: AnimationStateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationToMixTime(value: Map[Double]): Self = StObject.set(x, "animationToMixTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultMix(value: Double): Self = StObject.set(x, "defaultMix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMix(value: (Animation, Animation) => Double): Self = StObject.set(x, "getMix", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAnimationToMixTime(value: Map[Double]): Self = this.set("animationToMixTime", value.asInstanceOf[js.Any])
+    def setSetMix(value: (String, String, Double) => Unit): Self = StObject.set(x, "setMix", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDefaultMix(value: Double): Self = this.set("defaultMix", value.asInstanceOf[js.Any])
+    def setSetMixByName(value: (String, String, Double) => Unit): Self = StObject.set(x, "setMixByName", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetMix(value: (Animation, Animation) => Double): Self = this.set("getMix", js.Any.fromFunction2(value))
+    def setSetMixWith(value: (Animation, Animation, Double) => Unit): Self = StObject.set(x, "setMixWith", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetMix(value: (String, String, Double) => Unit): Self = this.set("setMix", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetMixByName(value: (String, String, Double) => Unit): Self = this.set("setMixByName", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetMixWith(value: (Animation, Animation, Double) => Unit): Self = this.set("setMixWith", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSkeletonData(value: SkeletonData): Self = this.set("skeletonData", value.asInstanceOf[js.Any])
+    def setSkeletonData(value: SkeletonData): Self = StObject.set(x, "skeletonData", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.stripeV3.anon
 
 import typings.stripeV3.stripe.OwnerAddress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Address extends js.Object {
+trait Address extends StObject {
   
   var address: OwnerAddress | Null = js.native
   
@@ -33,66 +34,54 @@ object Address {
   }
   
   @scala.inline
-  implicit class AddressOps[Self <: Address] (val x: Self) extends AnyVal {
+  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: OwnerAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressNull: Self = StObject.set(x, "address", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: OwnerAddress): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setEmailNull: Self = StObject.set(x, "email", null)
     
     @scala.inline
-    def setAddressNull: Self = this.set("address", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setEmailNull: Self = this.set("email", null)
+    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPhoneNull: Self = StObject.set(x, "phone", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setVerified_address(value: String): Self = StObject.set(x, "verified_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    def setVerified_addressNull: Self = StObject.set(x, "verified_address", null)
     
     @scala.inline
-    def setPhoneNull: Self = this.set("phone", null)
+    def setVerified_email(value: String): Self = StObject.set(x, "verified_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerified_address(value: String): Self = this.set("verified_address", value.asInstanceOf[js.Any])
+    def setVerified_emailNull: Self = StObject.set(x, "verified_email", null)
     
     @scala.inline
-    def setVerified_addressNull: Self = this.set("verified_address", null)
+    def setVerified_name(value: String): Self = StObject.set(x, "verified_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerified_email(value: String): Self = this.set("verified_email", value.asInstanceOf[js.Any])
+    def setVerified_nameNull: Self = StObject.set(x, "verified_name", null)
     
     @scala.inline
-    def setVerified_emailNull: Self = this.set("verified_email", null)
+    def setVerified_phone(value: String): Self = StObject.set(x, "verified_phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerified_name(value: String): Self = this.set("verified_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerified_nameNull: Self = this.set("verified_name", null)
-    
-    @scala.inline
-    def setVerified_phone(value: String): Self = this.set("verified_phone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerified_phoneNull: Self = this.set("verified_phone", null)
+    def setVerified_phoneNull: Self = StObject.set(x, "verified_phone", null)
   }
 }

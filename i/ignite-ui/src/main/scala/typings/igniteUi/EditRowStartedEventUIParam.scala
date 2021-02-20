@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditRowStartedEventUIParam extends js.Object {
+trait EditRowStartedEventUIParam extends StObject {
   
   /**
     * Gets a reference to GridUpdating.
@@ -31,36 +32,24 @@ object EditRowStartedEventUIParam {
   }
   
   @scala.inline
-  implicit class EditRowStartedEventUIParamOps[Self <: EditRowStartedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class EditRowStartedEventUIParamMutableBuilder[Self <: EditRowStartedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowAdding(value: Boolean): Self = StObject.set(x, "rowAdding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRowAddingUndefined: Self = StObject.set(x, "rowAdding", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setRowID(value: js.Any): Self = StObject.set(x, "rowID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowAdding(value: Boolean): Self = this.set("rowAdding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowAdding: Self = this.set("rowAdding", js.undefined)
-    
-    @scala.inline
-    def setRowID(value: js.Any): Self = this.set("rowID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowID: Self = this.set("rowID", js.undefined)
+    def setRowIDUndefined: Self = StObject.set(x, "rowID", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.dashjs.mod
 
 import typings.dashjs.dashjsStrings.streamInitialized
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object StreamInitializedEvent {
   }
   
   @scala.inline
-  implicit class StreamInitializedEventOps[Self <: StreamInitializedEvent] (val x: Self) extends AnyVal {
+  implicit class StreamInitializedEventMutableBuilder[Self <: StreamInitializedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamInfo(value: StreamInfo): Self = StObject.set(x, "streamInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamInfo(value: StreamInfo): Self = this.set("streamInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: streamInitialized): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setType(value: streamInitialized): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

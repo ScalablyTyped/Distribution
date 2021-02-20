@@ -1,5 +1,6 @@
 package typings.mmdbLib.responseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,48 +27,36 @@ object CountryResponse {
   }
   
   @scala.inline
-  implicit class CountryResponseOps[Self <: CountryResponse] (val x: Self) extends AnyVal {
+  implicit class CountryResponseMutableBuilder[Self <: CountryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinent(value: ContinentRecord): Self = StObject.set(x, "continent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinentUndefined: Self = StObject.set(x, "continent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: CountryRecord): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinent(value: ContinentRecord): Self = this.set("continent", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteContinent: Self = this.set("continent", js.undefined)
+    def setRegistered_country(value: RegisteredCountryRecord): Self = StObject.set(x, "registered_country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: CountryRecord): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setRegistered_countryUndefined: Self = StObject.set(x, "registered_country", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setRepresented_country(value: RepresentedCountryRecord): Self = StObject.set(x, "represented_country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistered_country(value: RegisteredCountryRecord): Self = this.set("registered_country", value.asInstanceOf[js.Any])
+    def setRepresented_countryUndefined: Self = StObject.set(x, "represented_country", js.undefined)
     
     @scala.inline
-    def deleteRegistered_country: Self = this.set("registered_country", js.undefined)
+    def setTraits(value: TraitsRecord): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepresented_country(value: RepresentedCountryRecord): Self = this.set("represented_country", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepresented_country: Self = this.set("represented_country", js.undefined)
-    
-    @scala.inline
-    def setTraits(value: TraitsRecord): Self = this.set("traits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraits: Self = this.set("traits", js.undefined)
+    def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
   }
 }

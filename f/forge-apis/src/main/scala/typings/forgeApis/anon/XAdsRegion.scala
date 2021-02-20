@@ -1,11 +1,12 @@
 package typings.forgeApis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XAdsRegion extends js.Object {
+trait XAdsRegion extends StObject {
   
   var xAdsRegion: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object XAdsRegion {
   }
   
   @scala.inline
-  implicit class XAdsRegionOps[Self <: XAdsRegion] (val x: Self) extends AnyVal {
+  implicit class XAdsRegionMutableBuilder[Self <: XAdsRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setXAdsRegion(value: String): Self = StObject.set(x, "xAdsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setXAdsRegion(value: String): Self = this.set("xAdsRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAdsRegion: Self = this.set("xAdsRegion", js.undefined)
+    def setXAdsRegionUndefined: Self = StObject.set(x, "xAdsRegion", js.undefined)
   }
 }

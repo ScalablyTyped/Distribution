@@ -1,14 +1,15 @@
 package typings.googleGax.mod.protobuf
 
 import typings.protobufjs.mod.RPCImpl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-gax", "protobuf.rpc")
-@js.native
-object rpc extends js.Object {
+object rpc {
+  
   /** An RPC service as returned by {@link Service#create}. */
+  @JSImport("google-gax", "protobuf.rpc.Service")
   @js.native
   class Service protected ()
     extends typings.protobufjs.mod.rpc.Service {
@@ -20,8 +21,7 @@ object rpc extends js.Object {
       */
     def this(rpcImpl: RPCImpl) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
+    def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
   }
-  
 }
-

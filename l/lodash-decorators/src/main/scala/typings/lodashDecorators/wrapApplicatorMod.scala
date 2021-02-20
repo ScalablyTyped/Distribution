@@ -1,14 +1,14 @@
 package typings.lodashDecorators
 
 import typings.lodashDecorators.applicatorMod.Applicator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/applicators/WrapApplicator", JSImport.Namespace)
-@js.native
-object wrapApplicatorMod extends js.Object {
+object wrapApplicatorMod {
   
+  @JSImport("lodash-decorators/applicators/WrapApplicator", "WrapApplicator")
   @js.native
   class WrapApplicator () extends Applicator
 }

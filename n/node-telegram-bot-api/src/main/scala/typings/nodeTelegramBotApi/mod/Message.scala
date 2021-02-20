@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Message extends js.Object {
+trait Message extends StObject {
   
   var animation: js.UndefOr[Animation] = js.native
   
@@ -110,306 +111,294 @@ object Message {
   }
   
   @scala.inline
-  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChat(value: Chat): Self = this.set("chat", value.asInstanceOf[js.Any])
+    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
     @scala.inline
-    def setDate(value: Double): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setAuthor_signature(value: String): Self = StObject.set(x, "author_signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage_id(value: Double): Self = this.set("message_id", value.asInstanceOf[js.Any])
+    def setAuthor_signatureUndefined: Self = StObject.set(x, "author_signature", js.undefined)
     
     @scala.inline
-    def setAnimation(value: Animation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def setAudio(value: Audio): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setCaption_entities(value: js.Array[MessageEntity]): Self = StObject.set(x, "caption_entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAudio: Self = this.set("audio", js.undefined)
+    def setCaption_entitiesUndefined: Self = StObject.set(x, "caption_entities", js.undefined)
     
     @scala.inline
-    def setAuthor_signature(value: String): Self = this.set("author_signature", value.asInstanceOf[js.Any])
+    def setCaption_entitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "caption_entities", js.Array(value :_*))
     
     @scala.inline
-    def deleteAuthor_signature: Self = this.set("author_signature", js.undefined)
+    def setChannel_chat_created(value: Boolean): Self = StObject.set(x, "channel_chat_created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setChannel_chat_createdUndefined: Self = StObject.set(x, "channel_chat_created", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setChat(value: Chat): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption_entitiesVarargs(value: MessageEntity*): Self = this.set("caption_entities", js.Array(value :_*))
+    def setConnected_website(value: String): Self = StObject.set(x, "connected_website", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption_entities(value: js.Array[MessageEntity]): Self = this.set("caption_entities", value.asInstanceOf[js.Any])
+    def setConnected_websiteUndefined: Self = StObject.set(x, "connected_website", js.undefined)
     
     @scala.inline
-    def deleteCaption_entities: Self = this.set("caption_entities", js.undefined)
+    def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel_chat_created(value: Boolean): Self = this.set("channel_chat_created", value.asInstanceOf[js.Any])
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def deleteChannel_chat_created: Self = this.set("channel_chat_created", js.undefined)
+    def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnected_website(value: String): Self = this.set("connected_website", value.asInstanceOf[js.Any])
+    def setDelete_chat_photo(value: Boolean): Self = StObject.set(x, "delete_chat_photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnected_website: Self = this.set("connected_website", js.undefined)
+    def setDelete_chat_photoUndefined: Self = StObject.set(x, "delete_chat_photo", js.undefined)
     
     @scala.inline
-    def setContact(value: Contact): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def setDelete_chat_photo(value: Boolean): Self = this.set("delete_chat_photo", value.asInstanceOf[js.Any])
+    def setEdit_date(value: Double): Self = StObject.set(x, "edit_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelete_chat_photo: Self = this.set("delete_chat_photo", js.undefined)
+    def setEdit_dateUndefined: Self = StObject.set(x, "edit_date", js.undefined)
     
     @scala.inline
-    def setDocument(value: Document): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setEntities(value: js.Array[MessageEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def setEdit_date(value: Double): Self = this.set("edit_date", value.asInstanceOf[js.Any])
+    def setEntitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def deleteEdit_date: Self = this.set("edit_date", js.undefined)
+    def setForward_date(value: Double): Self = StObject.set(x, "forward_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitiesVarargs(value: MessageEntity*): Self = this.set("entities", js.Array(value :_*))
+    def setForward_dateUndefined: Self = StObject.set(x, "forward_date", js.undefined)
     
     @scala.inline
-    def setEntities(value: js.Array[MessageEntity]): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setForward_from(value: User): Self = StObject.set(x, "forward_from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntities: Self = this.set("entities", js.undefined)
+    def setForward_fromUndefined: Self = StObject.set(x, "forward_from", js.undefined)
     
     @scala.inline
-    def setForward_date(value: Double): Self = this.set("forward_date", value.asInstanceOf[js.Any])
+    def setForward_from_chat(value: Chat): Self = StObject.set(x, "forward_from_chat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForward_date: Self = this.set("forward_date", js.undefined)
+    def setForward_from_chatUndefined: Self = StObject.set(x, "forward_from_chat", js.undefined)
     
     @scala.inline
-    def setForward_from(value: User): Self = this.set("forward_from", value.asInstanceOf[js.Any])
+    def setForward_from_message_id(value: Double): Self = StObject.set(x, "forward_from_message_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForward_from: Self = this.set("forward_from", js.undefined)
+    def setForward_from_message_idUndefined: Self = StObject.set(x, "forward_from_message_id", js.undefined)
     
     @scala.inline
-    def setForward_from_chat(value: Chat): Self = this.set("forward_from_chat", value.asInstanceOf[js.Any])
+    def setForward_sender_name(value: String): Self = StObject.set(x, "forward_sender_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForward_from_chat: Self = this.set("forward_from_chat", js.undefined)
+    def setForward_sender_nameUndefined: Self = StObject.set(x, "forward_sender_name", js.undefined)
     
     @scala.inline
-    def setForward_from_message_id(value: Double): Self = this.set("forward_from_message_id", value.asInstanceOf[js.Any])
+    def setForward_signature(value: String): Self = StObject.set(x, "forward_signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForward_from_message_id: Self = this.set("forward_from_message_id", js.undefined)
+    def setForward_signatureUndefined: Self = StObject.set(x, "forward_signature", js.undefined)
     
     @scala.inline
-    def setForward_sender_name(value: String): Self = this.set("forward_sender_name", value.asInstanceOf[js.Any])
+    def setFrom(value: User): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForward_sender_name: Self = this.set("forward_sender_name", js.undefined)
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def setForward_signature(value: String): Self = this.set("forward_signature", value.asInstanceOf[js.Any])
+    def setGame(value: Game): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForward_signature: Self = this.set("forward_signature", js.undefined)
+    def setGameUndefined: Self = StObject.set(x, "game", js.undefined)
     
     @scala.inline
-    def setFrom(value: User): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setGroup_chat_created(value: Boolean): Self = StObject.set(x, "group_chat_created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setGroup_chat_createdUndefined: Self = StObject.set(x, "group_chat_created", js.undefined)
     
     @scala.inline
-    def setGame(value: Game): Self = this.set("game", value.asInstanceOf[js.Any])
+    def setInvoice(value: Invoice): Self = StObject.set(x, "invoice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGame: Self = this.set("game", js.undefined)
+    def setInvoiceUndefined: Self = StObject.set(x, "invoice", js.undefined)
     
     @scala.inline
-    def setGroup_chat_created(value: Boolean): Self = this.set("group_chat_created", value.asInstanceOf[js.Any])
+    def setLeft_chat_member(value: User): Self = StObject.set(x, "left_chat_member", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup_chat_created: Self = this.set("group_chat_created", js.undefined)
+    def setLeft_chat_memberUndefined: Self = StObject.set(x, "left_chat_member", js.undefined)
     
     @scala.inline
-    def setInvoice(value: Invoice): Self = this.set("invoice", value.asInstanceOf[js.Any])
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvoice: Self = this.set("invoice", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setLeft_chat_member(value: User): Self = this.set("left_chat_member", value.asInstanceOf[js.Any])
+    def setMedia_group_id(value: String): Self = StObject.set(x, "media_group_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeft_chat_member: Self = this.set("left_chat_member", js.undefined)
+    def setMedia_group_idUndefined: Self = StObject.set(x, "media_group_id", js.undefined)
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMessage_id(value: Double): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMigrate_from_chat_id(value: Double): Self = StObject.set(x, "migrate_from_chat_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_group_id(value: String): Self = this.set("media_group_id", value.asInstanceOf[js.Any])
+    def setMigrate_from_chat_idUndefined: Self = StObject.set(x, "migrate_from_chat_id", js.undefined)
     
     @scala.inline
-    def deleteMedia_group_id: Self = this.set("media_group_id", js.undefined)
+    def setMigrate_to_chat_id(value: Double): Self = StObject.set(x, "migrate_to_chat_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrate_from_chat_id(value: Double): Self = this.set("migrate_from_chat_id", value.asInstanceOf[js.Any])
+    def setMigrate_to_chat_idUndefined: Self = StObject.set(x, "migrate_to_chat_id", js.undefined)
     
     @scala.inline
-    def deleteMigrate_from_chat_id: Self = this.set("migrate_from_chat_id", js.undefined)
+    def setNew_chat_members(value: js.Array[User]): Self = StObject.set(x, "new_chat_members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrate_to_chat_id(value: Double): Self = this.set("migrate_to_chat_id", value.asInstanceOf[js.Any])
+    def setNew_chat_membersUndefined: Self = StObject.set(x, "new_chat_members", js.undefined)
     
     @scala.inline
-    def deleteMigrate_to_chat_id: Self = this.set("migrate_to_chat_id", js.undefined)
+    def setNew_chat_membersVarargs(value: User*): Self = StObject.set(x, "new_chat_members", js.Array(value :_*))
     
     @scala.inline
-    def setNew_chat_membersVarargs(value: User*): Self = this.set("new_chat_members", js.Array(value :_*))
+    def setNew_chat_photo(value: js.Array[PhotoSize]): Self = StObject.set(x, "new_chat_photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_chat_members(value: js.Array[User]): Self = this.set("new_chat_members", value.asInstanceOf[js.Any])
+    def setNew_chat_photoUndefined: Self = StObject.set(x, "new_chat_photo", js.undefined)
     
     @scala.inline
-    def deleteNew_chat_members: Self = this.set("new_chat_members", js.undefined)
+    def setNew_chat_photoVarargs(value: PhotoSize*): Self = StObject.set(x, "new_chat_photo", js.Array(value :_*))
     
     @scala.inline
-    def setNew_chat_photoVarargs(value: PhotoSize*): Self = this.set("new_chat_photo", js.Array(value :_*))
+    def setNew_chat_title(value: String): Self = StObject.set(x, "new_chat_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_chat_photo(value: js.Array[PhotoSize]): Self = this.set("new_chat_photo", value.asInstanceOf[js.Any])
+    def setNew_chat_titleUndefined: Self = StObject.set(x, "new_chat_title", js.undefined)
     
     @scala.inline
-    def deleteNew_chat_photo: Self = this.set("new_chat_photo", js.undefined)
+    def setPassport_data(value: PassportData): Self = StObject.set(x, "passport_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_chat_title(value: String): Self = this.set("new_chat_title", value.asInstanceOf[js.Any])
+    def setPassport_dataUndefined: Self = StObject.set(x, "passport_data", js.undefined)
     
     @scala.inline
-    def deleteNew_chat_title: Self = this.set("new_chat_title", js.undefined)
+    def setPhoto(value: js.Array[PhotoSize]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassport_data(value: PassportData): Self = this.set("passport_data", value.asInstanceOf[js.Any])
+    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
     @scala.inline
-    def deletePassport_data: Self = this.set("passport_data", js.undefined)
+    def setPhotoVarargs(value: PhotoSize*): Self = StObject.set(x, "photo", js.Array(value :_*))
     
     @scala.inline
-    def setPhotoVarargs(value: PhotoSize*): Self = this.set("photo", js.Array(value :_*))
+    def setPinned_message(value: Message): Self = StObject.set(x, "pinned_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoto(value: js.Array[PhotoSize]): Self = this.set("photo", value.asInstanceOf[js.Any])
+    def setPinned_messageUndefined: Self = StObject.set(x, "pinned_message", js.undefined)
     
     @scala.inline
-    def deletePhoto: Self = this.set("photo", js.undefined)
+    def setPoll(value: Poll): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinned_message(value: Message): Self = this.set("pinned_message", value.asInstanceOf[js.Any])
+    def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
     
     @scala.inline
-    def deletePinned_message: Self = this.set("pinned_message", js.undefined)
+    def setReply_markup(value: InlineKeyboardMarkup): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoll(value: Poll): Self = this.set("poll", value.asInstanceOf[js.Any])
+    def setReply_markupUndefined: Self = StObject.set(x, "reply_markup", js.undefined)
     
     @scala.inline
-    def deletePoll: Self = this.set("poll", js.undefined)
+    def setReply_to_message(value: Message): Self = StObject.set(x, "reply_to_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReply_markup(value: InlineKeyboardMarkup): Self = this.set("reply_markup", value.asInstanceOf[js.Any])
+    def setReply_to_messageUndefined: Self = StObject.set(x, "reply_to_message", js.undefined)
     
     @scala.inline
-    def deleteReply_markup: Self = this.set("reply_markup", js.undefined)
+    def setSticker(value: Sticker): Self = StObject.set(x, "sticker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReply_to_message(value: Message): Self = this.set("reply_to_message", value.asInstanceOf[js.Any])
+    def setStickerUndefined: Self = StObject.set(x, "sticker", js.undefined)
     
     @scala.inline
-    def deleteReply_to_message: Self = this.set("reply_to_message", js.undefined)
+    def setSuccessful_payment(value: SuccessfulPayment): Self = StObject.set(x, "successful_payment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSticker(value: Sticker): Self = this.set("sticker", value.asInstanceOf[js.Any])
+    def setSuccessful_paymentUndefined: Self = StObject.set(x, "successful_payment", js.undefined)
     
     @scala.inline
-    def deleteSticker: Self = this.set("sticker", js.undefined)
+    def setSupergroup_chat_created(value: Boolean): Self = StObject.set(x, "supergroup_chat_created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessful_payment(value: SuccessfulPayment): Self = this.set("successful_payment", value.asInstanceOf[js.Any])
+    def setSupergroup_chat_createdUndefined: Self = StObject.set(x, "supergroup_chat_created", js.undefined)
     
     @scala.inline
-    def deleteSuccessful_payment: Self = this.set("successful_payment", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupergroup_chat_created(value: Boolean): Self = this.set("supergroup_chat_created", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSupergroup_chat_created: Self = this.set("supergroup_chat_created", js.undefined)
+    def setVenue(value: Venue): Self = StObject.set(x, "venue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setVenueUndefined: Self = StObject.set(x, "venue", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setVideo(value: Video): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVenue(value: Venue): Self = this.set("venue", value.asInstanceOf[js.Any])
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
     @scala.inline
-    def deleteVenue: Self = this.set("venue", js.undefined)
+    def setVideo_note(value: VideoNote): Self = StObject.set(x, "video_note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo(value: Video): Self = this.set("video", value.asInstanceOf[js.Any])
+    def setVideo_noteUndefined: Self = StObject.set(x, "video_note", js.undefined)
     
     @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
+    def setVoice(value: Voice): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_note(value: VideoNote): Self = this.set("video_note", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo_note: Self = this.set("video_note", js.undefined)
-    
-    @scala.inline
-    def setVoice(value: Voice): Self = this.set("voice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoice: Self = this.set("voice", js.undefined)
+    def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
   }
 }

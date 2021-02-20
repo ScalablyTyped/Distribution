@@ -1,12 +1,13 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticsearch", "Snapshot")
 @js.native
-class Snapshot () extends js.Object {
+class Snapshot () extends StObject {
   
   def create(params: SnapshotCreateParams): js.Promise[_] = js.native
   def create(

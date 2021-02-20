@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GatewayInfo extends js.Object {
+trait GatewayInfo extends StObject {
   
   /**
     * The ID of the Amazon EC2 instance that was used to launch the gateway.
@@ -51,60 +52,48 @@ object GatewayInfo {
   }
   
   @scala.inline
-  implicit class GatewayInfoOps[Self <: GatewayInfo] (val x: Self) extends AnyVal {
+  implicit class GatewayInfoMutableBuilder[Self <: GatewayInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEc2InstanceId(value: Ec2InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEc2InstanceIdUndefined: Self = StObject.set(x, "Ec2InstanceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEc2InstanceRegion(value: Ec2InstanceRegion): Self = StObject.set(x, "Ec2InstanceRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2InstanceId(value: Ec2InstanceId): Self = this.set("Ec2InstanceId", value.asInstanceOf[js.Any])
+    def setEc2InstanceRegionUndefined: Self = StObject.set(x, "Ec2InstanceRegion", js.undefined)
     
     @scala.inline
-    def deleteEc2InstanceId: Self = this.set("Ec2InstanceId", js.undefined)
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2InstanceRegion(value: Ec2InstanceRegion): Self = this.set("Ec2InstanceRegion", value.asInstanceOf[js.Any])
+    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
     @scala.inline
-    def deleteEc2InstanceRegion: Self = this.set("Ec2InstanceRegion", js.undefined)
+    def setGatewayId(value: GatewayId): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
     
     @scala.inline
-    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    def setGatewayName(value: String): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayId(value: GatewayId): Self = this.set("GatewayId", value.asInstanceOf[js.Any])
+    def setGatewayNameUndefined: Self = StObject.set(x, "GatewayName", js.undefined)
     
     @scala.inline
-    def deleteGatewayId: Self = this.set("GatewayId", js.undefined)
+    def setGatewayOperationalState(value: GatewayOperationalState): Self = StObject.set(x, "GatewayOperationalState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayName(value: String): Self = this.set("GatewayName", value.asInstanceOf[js.Any])
+    def setGatewayOperationalStateUndefined: Self = StObject.set(x, "GatewayOperationalState", js.undefined)
     
     @scala.inline
-    def deleteGatewayName: Self = this.set("GatewayName", js.undefined)
+    def setGatewayType(value: GatewayType): Self = StObject.set(x, "GatewayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayOperationalState(value: GatewayOperationalState): Self = this.set("GatewayOperationalState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGatewayOperationalState: Self = this.set("GatewayOperationalState", js.undefined)
-    
-    @scala.inline
-    def setGatewayType(value: GatewayType): Self = this.set("GatewayType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGatewayType: Self = this.set("GatewayType", js.undefined)
+    def setGatewayTypeUndefined: Self = StObject.set(x, "GatewayType", js.undefined)
   }
 }

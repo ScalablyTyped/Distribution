@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolygonRings extends js.Object {
+trait PolygonRings extends StObject {
   
   def add(ring: js.Array[LinearRing]): Unit = js.native
   def add(ring: LinearRing): Unit = js.native

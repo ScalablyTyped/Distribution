@@ -1,11 +1,12 @@
 package typings.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetrievalOptions extends js.Object {
+trait RetrievalOptions extends StObject {
   
   var exprs: js.UndefOr[AnyObject[String]] = js.native
   
@@ -28,60 +29,48 @@ object RetrievalOptions {
   }
   
   @scala.inline
-  implicit class RetrievalOptionsOps[Self <: RetrievalOptions] (val x: Self) extends AnyVal {
+  implicit class RetrievalOptionsMutableBuilder[Self <: RetrievalOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExprs(value: AnyObject[String]): Self = StObject.set(x, "exprs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExprsUndefined: Self = StObject.set(x, "exprs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExprs(value: AnyObject[String]): Self = this.set("exprs", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteExprs: Self = this.set("exprs", js.undefined)
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setOrder(value: js.Array[OrderingOptions]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOrderVarargs(value: OrderingOptions*): Self = StObject.set(x, "order", js.Array(value :_*))
     
     @scala.inline
-    def setOrderVarargs(value: OrderingOptions*): Self = this.set("order", js.Array(value :_*))
+    def setPageLength(value: Double): Self = StObject.set(x, "pageLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: js.Array[OrderingOptions]): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
-    
-    @scala.inline
-    def setPageLength(value: Double): Self = this.set("pageLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageLength: Self = this.set("pageLength", js.undefined)
+    def setPageLengthUndefined: Self = StObject.set(x, "pageLength", js.undefined)
   }
 }

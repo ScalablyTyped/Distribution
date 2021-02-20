@@ -1,12 +1,13 @@
 package typings.atom.anon
 
 import typings.atom.mod.Range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewRange extends js.Object {
+trait NewRange extends StObject {
   
   /** The Range of the inserted text in the current contents of the buffer. */
   var newRange: Range = js.native
@@ -26,24 +27,12 @@ object NewRange {
   }
   
   @scala.inline
-  implicit class NewRangeOps[Self <: NewRange] (val x: Self) extends AnyVal {
+  implicit class NewRangeMutableBuilder[Self <: NewRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewRange(value: Range): Self = this.set("newRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldRange(value: Range): Self = this.set("oldRange", value.asInstanceOf[js.Any])
+    def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
   }
 }

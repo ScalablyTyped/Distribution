@@ -10,25 +10,26 @@ import typings.qiniuJs.qiniuJsStrings.gif
 import typings.qiniuJs.qiniuJsStrings.jpg
 import typings.qiniuJs.qiniuJsStrings.png
 import typings.qiniuJs.qiniuJsStrings.webp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageView2Options extends js.Object {
+trait ImageView2Options extends StObject {
   
-      // 新图的图像质量，取值范围：1-100
+  // 新图的图像质量，取值范围：1-100
   var format: jpg | gif | png | webp | String = js.native
   
-      // 具体含义由缩略模式决定
+  // 具体含义由缩略模式决定
   var h: Double = js.native
   
   var mode: `0` | `1` | `2` | `3` | `4` | `5` = js.native
   
-      // 具体含义由缩略模式决定
+  // 具体含义由缩略模式决定
   var q: Double = js.native
   
-      // 缩略模式，共6种[0-5]
+  // 缩略模式，共6种[0-5]
   var w: Double = js.native
 }
 object ImageView2Options {
@@ -46,33 +47,21 @@ object ImageView2Options {
   }
   
   @scala.inline
-  implicit class ImageView2OptionsOps[Self <: ImageView2Options] (val x: Self) extends AnyVal {
+  implicit class ImageView2OptionsMutableBuilder[Self <: ImageView2Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: jpg | gif | png | webp | String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: `0` | `1` | `2` | `3` | `4` | `5`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: jpg | gif | png | webp | String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setQ(value: Double): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH(value: Double): Self = this.set("h", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: `0` | `1` | `2` | `3` | `4` | `5`): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQ(value: Double): Self = this.set("q", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setW(value: Double): Self = this.set("w", value.asInstanceOf[js.Any])
+    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
   }
 }

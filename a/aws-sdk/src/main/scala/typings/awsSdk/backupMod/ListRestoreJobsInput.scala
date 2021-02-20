@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRestoreJobsInput extends js.Object {
+trait ListRestoreJobsInput extends StObject {
   
   /**
     * The account ID to list the jobs from. Returns only restore jobs associated with the specified account ID.
@@ -46,54 +47,42 @@ object ListRestoreJobsInput {
   }
   
   @scala.inline
-  implicit class ListRestoreJobsInputOps[Self <: ListRestoreJobsInput] (val x: Self) extends AnyVal {
+  implicit class ListRestoreJobsInputMutableBuilder[Self <: ListRestoreJobsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByAccountId(value: AccountId): Self = StObject.set(x, "ByAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByAccountIdUndefined: Self = StObject.set(x, "ByAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setByCreatedAfter(value: timestamp): Self = StObject.set(x, "ByCreatedAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByAccountId(value: AccountId): Self = this.set("ByAccountId", value.asInstanceOf[js.Any])
+    def setByCreatedAfterUndefined: Self = StObject.set(x, "ByCreatedAfter", js.undefined)
     
     @scala.inline
-    def deleteByAccountId: Self = this.set("ByAccountId", js.undefined)
+    def setByCreatedBefore(value: timestamp): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByCreatedAfter(value: timestamp): Self = this.set("ByCreatedAfter", value.asInstanceOf[js.Any])
+    def setByCreatedBeforeUndefined: Self = StObject.set(x, "ByCreatedBefore", js.undefined)
     
     @scala.inline
-    def deleteByCreatedAfter: Self = this.set("ByCreatedAfter", js.undefined)
+    def setByStatus(value: RestoreJobStatus): Self = StObject.set(x, "ByStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByCreatedBefore(value: timestamp): Self = this.set("ByCreatedBefore", value.asInstanceOf[js.Any])
+    def setByStatusUndefined: Self = StObject.set(x, "ByStatus", js.undefined)
     
     @scala.inline
-    def deleteByCreatedBefore: Self = this.set("ByCreatedBefore", js.undefined)
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByStatus(value: RestoreJobStatus): Self = this.set("ByStatus", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteByStatus: Self = this.set("ByStatus", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

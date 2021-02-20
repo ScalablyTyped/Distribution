@@ -1,11 +1,12 @@
 package typings.systeminformation.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Flags extends js.Object {
+trait Flags extends StObject {
   
   var flags: Autokeep = js.native
   
@@ -41,42 +42,30 @@ object Flags {
   }
   
   @scala.inline
-  implicit class FlagsOps[Self <: Flags] (val x: Self) extends AnyVal {
+  implicit class FlagsMutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlags(value: Autokeep): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: Autokeep): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setThresh(value: Double): Self = StObject.set(x, "thresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setWhen_failed(value: java.lang.String): Self = StObject.set(x, "when_failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThresh(value: Double): Self = this.set("thresh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhen_failed(value: java.lang.String): Self = this.set("when_failed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorst(value: Double): Self = this.set("worst", value.asInstanceOf[js.Any])
+    def setWorst(value: Double): Self = StObject.set(x, "worst", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricHeader extends js.Object {
+trait MetricHeader extends StObject {
   
   /** Headers for the metrics in the response. */
   var metricHeaderEntries: js.UndefOr[js.Array[MetricHeaderEntry]] = js.native
@@ -22,36 +23,24 @@ object MetricHeader {
   }
   
   @scala.inline
-  implicit class MetricHeaderOps[Self <: MetricHeader] (val x: Self) extends AnyVal {
+  implicit class MetricHeaderMutableBuilder[Self <: MetricHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricHeaderEntries(value: js.Array[MetricHeaderEntry]): Self = StObject.set(x, "metricHeaderEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricHeaderEntriesUndefined: Self = StObject.set(x, "metricHeaderEntries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricHeaderEntriesVarargs(value: MetricHeaderEntry*): Self = StObject.set(x, "metricHeaderEntries", js.Array(value :_*))
     
     @scala.inline
-    def setMetricHeaderEntriesVarargs(value: MetricHeaderEntry*): Self = this.set("metricHeaderEntries", js.Array(value :_*))
+    def setPivotHeaders(value: js.Array[PivotHeader]): Self = StObject.set(x, "pivotHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricHeaderEntries(value: js.Array[MetricHeaderEntry]): Self = this.set("metricHeaderEntries", value.asInstanceOf[js.Any])
+    def setPivotHeadersUndefined: Self = StObject.set(x, "pivotHeaders", js.undefined)
     
     @scala.inline
-    def deleteMetricHeaderEntries: Self = this.set("metricHeaderEntries", js.undefined)
-    
-    @scala.inline
-    def setPivotHeadersVarargs(value: PivotHeader*): Self = this.set("pivotHeaders", js.Array(value :_*))
-    
-    @scala.inline
-    def setPivotHeaders(value: js.Array[PivotHeader]): Self = this.set("pivotHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePivotHeaders: Self = this.set("pivotHeaders", js.undefined)
+    def setPivotHeadersVarargs(value: PivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value :_*))
   }
 }

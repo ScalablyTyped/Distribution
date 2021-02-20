@@ -2,12 +2,13 @@ package typings.activexShell
 
 import typings.activexShell.Shell32.Shell
 import typings.activexShell.Shell32.ShellFolderViewOC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   @JSName("Shell.Application")
   var ShellDotApplication: Shell = js.native
@@ -26,24 +27,12 @@ object ActiveXObjectNameMap {
   }
   
   @scala.inline
-  implicit class ActiveXObjectNameMapOps[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShellDotApplication(value: Shell): Self = StObject.set(x, "Shell.Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShellDotApplication(value: Shell): Self = this.set("Shell.Application", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShellDotFolderView(value: ShellFolderViewOC): Self = this.set("Shell.FolderView", value.asInstanceOf[js.Any])
+    def setShellDotFolderView(value: ShellFolderViewOC): Self = StObject.set(x, "Shell.FolderView", value.asInstanceOf[js.Any])
   }
 }

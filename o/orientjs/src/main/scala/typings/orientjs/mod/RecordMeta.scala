@@ -1,11 +1,12 @@
 package typings.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordMeta extends js.Object {
+trait RecordMeta extends StObject {
   
   var `@rid`: ORID = js.native
   
@@ -22,24 +23,12 @@ object RecordMeta {
   }
   
   @scala.inline
-  implicit class RecordMetaOps[Self <: RecordMeta] (val x: Self) extends AnyVal {
+  implicit class RecordMetaMutableBuilder[Self <: RecordMeta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `set@rid`(value: ORID): Self = StObject.set(x, "@rid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def `set@rid`(value: ORID): Self = this.set("@rid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `set@version`(value: Version): Self = this.set("@version", value.asInstanceOf[js.Any])
+    def `set@version`(value: Version): Self = StObject.set(x, "@version", value.asInstanceOf[js.Any])
   }
 }

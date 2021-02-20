@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.editor
 
 import typings.monacoEditor.mod.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICursorPositionChangedEvent extends js.Object {
+trait ICursorPositionChangedEvent extends StObject {
   
   /**
     * Primary cursor's position.
@@ -42,33 +43,21 @@ object ICursorPositionChangedEvent {
   }
   
   @scala.inline
-  implicit class ICursorPositionChangedEventOps[Self <: ICursorPositionChangedEvent] (val x: Self) extends AnyVal {
+  implicit class ICursorPositionChangedEventMutableBuilder[Self <: ICursorPositionChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReason(value: CursorChangeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecondaryPositions(value: js.Array[Position]): Self = StObject.set(x, "secondaryPositions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Position): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setSecondaryPositionsVarargs(value: Position*): Self = StObject.set(x, "secondaryPositions", js.Array(value :_*))
     
     @scala.inline
-    def setReason(value: CursorChangeReason): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondaryPositionsVarargs(value: Position*): Self = this.set("secondaryPositions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecondaryPositions(value: js.Array[Position]): Self = this.set("secondaryPositions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

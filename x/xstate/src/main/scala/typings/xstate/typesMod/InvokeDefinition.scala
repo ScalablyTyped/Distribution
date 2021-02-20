@@ -1,5 +1,6 @@
 package typings.xstate.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,42 +45,30 @@ object InvokeDefinition {
   }
   
   @scala.inline
-  implicit class InvokeDefinitionOps[Self <: InvokeDefinition[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (InvokeDefinition[TContext, TEvent])) extends AnyVal {
+  implicit class InvokeDefinitionMutableBuilder[Self <: InvokeDefinition[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (InvokeDefinition[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoForwardUndefined: Self = StObject.set(x, "autoForward", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: (Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String | InvokeSourceDefinition): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setDataFunction2(value: (TContext, TEvent) => _): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAutoForward(value: Boolean): Self = this.set("autoForward", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteAutoForward: Self = this.set("autoForward", js.undefined)
+    def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFunction2(value: (TContext, TEvent) => _): Self = this.set("data", js.Any.fromFunction2(value))
+    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
     @scala.inline
-    def setData(value: (Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setForward(value: Boolean): Self = this.set("forward", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForward: Self = this.set("forward", js.undefined)
+    def setSrc(value: String | InvokeSourceDefinition): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

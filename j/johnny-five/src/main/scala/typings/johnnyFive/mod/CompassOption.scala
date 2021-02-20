@@ -1,11 +1,12 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompassOption extends js.Object {
+trait CompassOption extends StObject {
   
   var controller: String = js.native
   
@@ -20,27 +21,15 @@ object CompassOption {
   }
   
   @scala.inline
-  implicit class CompassOptionOps[Self <: CompassOption] (val x: Self) extends AnyVal {
+  implicit class CompassOptionMutableBuilder[Self <: CompassOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGauss(value: Double): Self = StObject.set(x, "gauss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setController(value: String): Self = this.set("controller", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGauss(value: Double): Self = this.set("gauss", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGauss: Self = this.set("gauss", js.undefined)
+    def setGaussUndefined: Self = StObject.set(x, "gauss", js.undefined)
   }
 }

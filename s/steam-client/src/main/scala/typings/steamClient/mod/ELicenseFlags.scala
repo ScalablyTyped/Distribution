@@ -1,81 +1,68 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ELicenseFlags extends js.Object
+sealed trait ELicenseFlags extends StObject
 @JSImport("steam-client", "ELicenseFlags")
 @js.native
-object ELicenseFlags extends js.Object {
+object ELicenseFlags extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ELicenseFlags with Double] = js.native
   
   @js.native
   sealed trait CancelledByAdmin extends ELicenseFlags
-  /* 0x20 */ @js.native
-  object CancelledByAdmin extends TopLevel[CancelledByAdmin with Double]
+  /* 0x20 */ val CancelledByAdmin: typings.steamClient.mod.ELicenseFlags.CancelledByAdmin with Double = js.native
   
   @js.native
   sealed trait CancelledByFriendlyFraudLock extends ELicenseFlags
-  /* 0x400 */ @js.native
-  object CancelledByFriendlyFraudLock extends TopLevel[CancelledByFriendlyFraudLock with Double]
+  /* 0x400 */ val CancelledByFriendlyFraudLock: typings.steamClient.mod.ELicenseFlags.CancelledByFriendlyFraudLock with Double = js.native
   
   @js.native
   sealed trait CancelledByUser extends ELicenseFlags
-  /* 0x10 */ @js.native
-  object CancelledByUser extends TopLevel[CancelledByUser with Double]
+  /* 0x10 */ val CancelledByUser: typings.steamClient.mod.ELicenseFlags.CancelledByUser with Double = js.native
   
   @js.native
   sealed trait Expired extends ELicenseFlags
-  /* 0x08 */ @js.native
-  object Expired extends TopLevel[Expired with Double]
+  /* 0x08 */ val Expired: typings.steamClient.mod.ELicenseFlags.Expired with Double = js.native
   
   @js.native
   sealed trait ForceRunRestriction extends ELicenseFlags
-  /* 0x100 */ @js.native
-  object ForceRunRestriction extends TopLevel[ForceRunRestriction with Double]
+  /* 0x100 */ val ForceRunRestriction: typings.steamClient.mod.ELicenseFlags.ForceRunRestriction with Double = js.native
   
   @js.native
   sealed trait ImportedFromSteam2 extends ELicenseFlags
-  /* 0x80 */ @js.native
-  object ImportedFromSteam2 extends TopLevel[ImportedFromSteam2 with Double]
+  /* 0x80 */ val ImportedFromSteam2: typings.steamClient.mod.ELicenseFlags.ImportedFromSteam2 with Double = js.native
   
   @js.native
   sealed trait LowViolenceContent extends ELicenseFlags
-  /* 0x40 */ @js.native
-  object LowViolenceContent extends TopLevel[LowViolenceContent with Double]
+  /* 0x40 */ val LowViolenceContent: typings.steamClient.mod.ELicenseFlags.LowViolenceContent with Double = js.native
   
   @js.native
   sealed trait None extends ELicenseFlags
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.steamClient.mod.ELicenseFlags.None with Double = js.native
   
   @js.native
   sealed trait NotActivated extends ELicenseFlags
-  /* 0x800 */ @js.native
-  object NotActivated extends TopLevel[NotActivated with Double]
+  /* 0x800 */ val NotActivated: typings.steamClient.mod.ELicenseFlags.NotActivated with Double = js.native
   
   @js.native
   sealed trait Pending extends ELicenseFlags
-  /* 0x04 */ @js.native
-  object Pending extends TopLevel[Pending with Double]
+  /* 0x04 */ val Pending: typings.steamClient.mod.ELicenseFlags.Pending with Double = js.native
   
   @js.native
   sealed trait RegionRestrictionExpired extends ELicenseFlags
-  /* 0x200 */ @js.native
-  object RegionRestrictionExpired extends TopLevel[RegionRestrictionExpired with Double]
+  /* 0x200 */ val RegionRestrictionExpired: typings.steamClient.mod.ELicenseFlags.RegionRestrictionExpired with Double = js.native
   
   @js.native
   sealed trait Renew extends ELicenseFlags
-  /* 0x01 */ @js.native
-  object Renew extends TopLevel[Renew with Double]
+  /* 0x01 */ val Renew: typings.steamClient.mod.ELicenseFlags.Renew with Double = js.native
   
   @js.native
   sealed trait RenewalFailed extends ELicenseFlags
-  /* 0x02 */ @js.native
-  object RenewalFailed extends TopLevel[RenewalFailed with Double]
+  /* 0x02 */ val RenewalFailed: typings.steamClient.mod.ELicenseFlags.RenewalFailed with Double = js.native
 }

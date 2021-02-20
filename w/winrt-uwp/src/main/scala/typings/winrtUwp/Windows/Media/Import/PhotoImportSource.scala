@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Media.Import
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the source device for a photo import session. */
 @js.native
-trait PhotoImportSource extends js.Object {
+trait PhotoImportSource extends StObject {
   
   /** The battery level of the source device. */
   var batteryLevelPercent: Double = js.native
@@ -93,69 +94,57 @@ object PhotoImportSource {
   }
   
   @scala.inline
-  implicit class PhotoImportSourceOps[Self <: PhotoImportSource] (val x: Self) extends AnyVal {
+  implicit class PhotoImportSourceMutableBuilder[Self <: PhotoImportSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatteryLevelPercent(value: Double): Self = StObject.set(x, "batteryLevelPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionProtocol(value: String): Self = StObject.set(x, "connectionProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionTransport(value: PhotoImportConnectionTransport): Self = StObject.set(x, "connectionTransport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatteryLevelPercent(value: Double): Self = this.set("batteryLevelPercent", value.asInstanceOf[js.Any])
+    def setCreateImportSession(value: () => PhotoImportSession): Self = StObject.set(x, "createImportSession", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnectionProtocol(value: String): Self = this.set("connectionProtocol", value.asInstanceOf[js.Any])
+    def setDateTime(value: Date): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionTransport(value: PhotoImportConnectionTransport): Self = this.set("connectionTransport", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateImportSession(value: () => PhotoImportSession): Self = this.set("createImportSession", js.Any.fromFunction0(value))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTime(value: Date): Self = this.set("dateTime", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIsMassStorage(value: Boolean): Self = StObject.set(x, "isMassStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLocked(value: Boolean): Self = this.set("isLocked", value.asInstanceOf[js.Any])
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMassStorage(value: Boolean): Self = this.set("isMassStorage", value.asInstanceOf[js.Any])
+    def setPowerSource(value: PhotoImportPowerSource): Self = StObject.set(x, "powerSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setStorageMedia(value: IVectorView[PhotoImportStorageMedium]): Self = StObject.set(x, "storageMedia", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerSource(value: PhotoImportPowerSource): Self = this.set("powerSource", value.asInstanceOf[js.Any])
+    def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageMedia(value: IVectorView[PhotoImportStorageMedium]): Self = this.set("storageMedia", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnail(value: IRandomAccessStreamReference): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: PhotoImportSourceType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: PhotoImportSourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

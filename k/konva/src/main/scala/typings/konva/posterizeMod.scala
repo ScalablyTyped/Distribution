@@ -1,13 +1,14 @@
 package typings.konva
 
 import typings.konva.nodeMod.Filter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("konva/types/filters/Posterize", JSImport.Namespace)
-@js.native
-object posterizeMod extends js.Object {
+object posterizeMod {
   
+  @JSImport("konva/types/filters/Posterize", "Posterize")
+  @js.native
   val Posterize: Filter = js.native
 }

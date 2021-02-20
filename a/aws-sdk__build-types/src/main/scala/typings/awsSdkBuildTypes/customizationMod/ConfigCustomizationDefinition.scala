@@ -1,6 +1,7 @@
 package typings.awsSdkBuildTypes.customizationMod
 
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.Configuration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object ConfigCustomizationDefinition {
   }
   
   @scala.inline
-  implicit class ConfigCustomizationDefinitionOps[Self <: ConfigCustomizationDefinition] (val x: Self) extends AnyVal {
+  implicit class ConfigCustomizationDefinitionMutableBuilder[Self <: ConfigCustomizationDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: ConfigurationDefinition): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfiguration(value: ConfigurationDefinition): Self = this.set("configuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Configuration): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Configuration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

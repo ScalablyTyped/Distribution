@@ -1,11 +1,12 @@
 package typings.pkcs11js.Pkcs11Js
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlotInfo extends js.Object {
+trait SlotInfo extends StObject {
   
   var firmwareVersion: Version = js.native
   
@@ -32,33 +33,21 @@ object SlotInfo {
   }
   
   @scala.inline
-  implicit class SlotInfoOps[Self <: SlotInfo] (val x: Self) extends AnyVal {
+  implicit class SlotInfoMutableBuilder[Self <: SlotInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirmwareVersion(value: Version): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHardwareVersion(value: Version): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirmwareVersion(value: Version): Self = this.set("firmwareVersion", value.asInstanceOf[js.Any])
+    def setManufacturerID(value: String): Self = StObject.set(x, "manufacturerID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: Double): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHardwareVersion(value: Version): Self = this.set("hardwareVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManufacturerID(value: String): Self = this.set("manufacturerID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlotDescription(value: String): Self = this.set("slotDescription", value.asInstanceOf[js.Any])
+    def setSlotDescription(value: String): Self = StObject.set(x, "slotDescription", value.asInstanceOf[js.Any])
   }
 }

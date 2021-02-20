@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,9 +35,7 @@ class AsyncLoop protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.AsyncLoop")
-@js.native
-object AsyncLoop extends js.Object {
+object AsyncLoop {
   
   /**
     * Create and run an async loop.
@@ -46,11 +45,15 @@ object AsyncLoop extends js.Object {
     * @param offset starting offset.
     * @returns the created async loop object
     */
+  @JSGlobal("BABYLON.AsyncLoop.Run")
+  @js.native
   def Run(
     iterations: Double,
     fn: js.Function1[/* asyncLoop */ this.type, Unit],
     successCallback: js.Function0[Unit]
   ): typings.babylonjs.BABYLON.AsyncLoop = js.native
+  @JSGlobal("BABYLON.AsyncLoop.Run")
+  @js.native
   def Run(
     iterations: Double,
     fn: js.Function1[/* asyncLoop */ this.type, Unit],
@@ -68,12 +71,16 @@ object AsyncLoop extends js.Object {
     * @param timeout timeout settings for the setTimeout function. default - 0.
     * @returns the created async loop object
     */
+  @JSGlobal("BABYLON.AsyncLoop.SyncAsyncForLoop")
+  @js.native
   def SyncAsyncForLoop(
     iterations: Double,
     syncedIterations: Double,
     fn: js.Function1[/* iteration */ Double, Unit],
     callback: js.Function0[Unit]
   ): typings.babylonjs.BABYLON.AsyncLoop = js.native
+  @JSGlobal("BABYLON.AsyncLoop.SyncAsyncForLoop")
+  @js.native
   def SyncAsyncForLoop(
     iterations: Double,
     syncedIterations: Double,
@@ -82,6 +89,8 @@ object AsyncLoop extends js.Object {
     breakFunction: js.UndefOr[scala.Nothing],
     timeout: Double
   ): typings.babylonjs.BABYLON.AsyncLoop = js.native
+  @JSGlobal("BABYLON.AsyncLoop.SyncAsyncForLoop")
+  @js.native
   def SyncAsyncForLoop(
     iterations: Double,
     syncedIterations: Double,
@@ -89,6 +98,8 @@ object AsyncLoop extends js.Object {
     callback: js.Function0[Unit],
     breakFunction: js.Function0[Boolean]
   ): typings.babylonjs.BABYLON.AsyncLoop = js.native
+  @JSGlobal("BABYLON.AsyncLoop.SyncAsyncForLoop")
+  @js.native
   def SyncAsyncForLoop(
     iterations: Double,
     syncedIterations: Double,

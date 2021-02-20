@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Perception
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Event data for infrared frame source added events. */
 @js.native
-trait PerceptionInfraredFrameSourceAddedEventArgs extends js.Object {
+trait PerceptionInfraredFrameSourceAddedEventArgs extends StObject {
   
   /** Gets the infrared frame source that was added. */
   var frameSource: PerceptionInfraredFrameSource = js.native
@@ -20,21 +21,9 @@ object PerceptionInfraredFrameSourceAddedEventArgs {
   }
   
   @scala.inline
-  implicit class PerceptionInfraredFrameSourceAddedEventArgsOps[Self <: PerceptionInfraredFrameSourceAddedEventArgs] (val x: Self) extends AnyVal {
+  implicit class PerceptionInfraredFrameSourceAddedEventArgsMutableBuilder[Self <: PerceptionInfraredFrameSourceAddedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFrameSource(value: PerceptionInfraredFrameSource): Self = this.set("frameSource", value.asInstanceOf[js.Any])
+    def setFrameSource(value: PerceptionInfraredFrameSource): Self = StObject.set(x, "frameSource", value.asInstanceOf[js.Any])
   }
 }

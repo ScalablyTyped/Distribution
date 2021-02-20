@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cancel extends js.Object {
+trait Cancel extends StObject {
   
   var cancel: js.UndefOr[String] = js.native
   
@@ -44,102 +45,90 @@ object Cancel {
   }
   
   @scala.inline
-  implicit class CancelOps[Self <: Cancel] (val x: Self) extends AnyVal {
+  implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentText(value: String): Self = StObject.set(x, "currentText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setCurrentTextUndefined: Self = StObject.set(x, "currentText", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setDateRestriction(value: Hint): Self = StObject.set(x, "dateRestriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentText(value: String): Self = this.set("currentText", value.asInstanceOf[js.Any])
+    def setDateRestrictionUndefined: Self = StObject.set(x, "dateRestriction", js.undefined)
     
     @scala.inline
-    def deleteCurrentText: Self = this.set("currentText", js.undefined)
+    def setDateTimeRange(value: MessageDetail): Self = StObject.set(x, "dateTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateRestriction(value: Hint): Self = this.set("dateRestriction", value.asInstanceOf[js.Any])
+    def setDateTimeRangeUndefined: Self = StObject.set(x, "dateTimeRange", js.undefined)
     
     @scala.inline
-    def deleteDateRestriction: Self = this.set("dateRestriction", js.undefined)
+    def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeRange(value: MessageDetail): Self = this.set("dateTimeRange", value.asInstanceOf[js.Any])
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def deleteDateTimeRange: Self = this.set("dateTimeRange", js.undefined)
+    def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDone(value: String): Self = this.set("done", value.asInstanceOf[js.Any])
+    def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
     
     @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
+    def setPrevText(value: String): Self = StObject.set(x, "prevText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextText(value: String): Self = this.set("nextText", value.asInstanceOf[js.Any])
+    def setPrevTextUndefined: Self = StObject.set(x, "prevText", js.undefined)
     
     @scala.inline
-    def deleteNextText: Self = this.set("nextText", js.undefined)
+    def setRegexp(value: MessageSummary): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevText(value: String): Self = this.set("prevText", value.asInstanceOf[js.Any])
+    def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
     
     @scala.inline
-    def deletePrevText: Self = this.set("prevText", js.undefined)
+    def setRequired(value: Hint): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegexp(value: MessageSummary): Self = this.set("regexp", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteRegexp: Self = this.set("regexp", js.undefined)
+    def setTooltipCalendar(value: String): Self = StObject.set(x, "tooltipCalendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Hint): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setTooltipCalendarDisabled(value: String): Self = StObject.set(x, "tooltipCalendarDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setTooltipCalendarDisabledUndefined: Self = StObject.set(x, "tooltipCalendarDisabled", js.undefined)
     
     @scala.inline
-    def setTooltipCalendar(value: String): Self = this.set("tooltipCalendar", value.asInstanceOf[js.Any])
+    def setTooltipCalendarTime(value: String): Self = StObject.set(x, "tooltipCalendarTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltipCalendar: Self = this.set("tooltipCalendar", js.undefined)
+    def setTooltipCalendarTimeDisabled(value: String): Self = StObject.set(x, "tooltipCalendarTimeDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipCalendarDisabled(value: String): Self = this.set("tooltipCalendarDisabled", value.asInstanceOf[js.Any])
+    def setTooltipCalendarTimeDisabledUndefined: Self = StObject.set(x, "tooltipCalendarTimeDisabled", js.undefined)
     
     @scala.inline
-    def deleteTooltipCalendarDisabled: Self = this.set("tooltipCalendarDisabled", js.undefined)
+    def setTooltipCalendarTimeUndefined: Self = StObject.set(x, "tooltipCalendarTime", js.undefined)
     
     @scala.inline
-    def setTooltipCalendarTime(value: String): Self = this.set("tooltipCalendarTime", value.asInstanceOf[js.Any])
+    def setTooltipCalendarUndefined: Self = StObject.set(x, "tooltipCalendar", js.undefined)
     
     @scala.inline
-    def deleteTooltipCalendarTime: Self = this.set("tooltipCalendarTime", js.undefined)
+    def setWeekHeader(value: String): Self = StObject.set(x, "weekHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipCalendarTimeDisabled(value: String): Self = this.set("tooltipCalendarTimeDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipCalendarTimeDisabled: Self = this.set("tooltipCalendarTimeDisabled", js.undefined)
-    
-    @scala.inline
-    def setWeekHeader(value: String): Self = this.set("weekHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekHeader: Self = this.set("weekHeader", js.undefined)
+    def setWeekHeaderUndefined: Self = StObject.set(x, "weekHeader", js.undefined)
   }
 }

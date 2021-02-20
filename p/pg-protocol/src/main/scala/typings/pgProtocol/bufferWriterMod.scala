@@ -1,16 +1,16 @@
 package typings.pgProtocol
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pg-protocol/dist/buffer-writer", JSImport.Namespace)
-@js.native
-object bufferWriterMod extends js.Object {
+object bufferWriterMod {
   
+  @JSImport("pg-protocol/dist/buffer-writer", "Writer")
   @js.native
-  class Writer () extends js.Object {
+  class Writer () extends StObject {
     def this(size: Double) = this()
     
     def add(otherBuffer: Buffer): Writer = js.native

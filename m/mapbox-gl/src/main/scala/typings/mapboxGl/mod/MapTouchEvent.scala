@@ -4,6 +4,7 @@ import typings.mapboxGl.mapboxGlStrings.touchcancel
 import typings.mapboxGl.mapboxGlStrings.touchend
 import typings.mapboxGl.mapboxGlStrings.touchstart
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

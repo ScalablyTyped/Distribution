@@ -1,12 +1,13 @@
 package typings.svgo.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Js2SvgOptions extends js.Object {
+trait Js2SvgOptions extends StObject {
   
   /** @default '"' */
   var attrEnd: js.UndefOr[String] = js.native
@@ -89,162 +90,150 @@ object Js2SvgOptions {
   }
   
   @scala.inline
-  implicit class Js2SvgOptionsOps[Self <: Js2SvgOptions] (val x: Self) extends AnyVal {
+  implicit class Js2SvgOptionsMutableBuilder[Self <: Js2SvgOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrEnd(value: String): Self = StObject.set(x, "attrEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttrEndUndefined: Self = StObject.set(x, "attrEnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttrStart(value: String): Self = StObject.set(x, "attrStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttrEnd(value: String): Self = this.set("attrEnd", value.asInstanceOf[js.Any])
+    def setAttrStartUndefined: Self = StObject.set(x, "attrStart", js.undefined)
     
     @scala.inline
-    def deleteAttrEnd: Self = this.set("attrEnd", js.undefined)
+    def setCdataEnd(value: String): Self = StObject.set(x, "cdataEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttrStart(value: String): Self = this.set("attrStart", value.asInstanceOf[js.Any])
+    def setCdataEndUndefined: Self = StObject.set(x, "cdataEnd", js.undefined)
     
     @scala.inline
-    def deleteAttrStart: Self = this.set("attrStart", js.undefined)
+    def setCdataStart(value: String): Self = StObject.set(x, "cdataStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCdataEnd(value: String): Self = this.set("cdataEnd", value.asInstanceOf[js.Any])
+    def setCdataStartUndefined: Self = StObject.set(x, "cdataStart", js.undefined)
     
     @scala.inline
-    def deleteCdataEnd: Self = this.set("cdataEnd", js.undefined)
+    def setCommentEnd(value: String): Self = StObject.set(x, "commentEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCdataStart(value: String): Self = this.set("cdataStart", value.asInstanceOf[js.Any])
+    def setCommentEndUndefined: Self = StObject.set(x, "commentEnd", js.undefined)
     
     @scala.inline
-    def deleteCdataStart: Self = this.set("cdataStart", js.undefined)
+    def setCommentStart(value: String): Self = StObject.set(x, "commentStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentEnd(value: String): Self = this.set("commentEnd", value.asInstanceOf[js.Any])
+    def setCommentStartUndefined: Self = StObject.set(x, "commentStart", js.undefined)
     
     @scala.inline
-    def deleteCommentEnd: Self = this.set("commentEnd", js.undefined)
+    def setDoctypeEnd(value: String): Self = StObject.set(x, "doctypeEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentStart(value: String): Self = this.set("commentStart", value.asInstanceOf[js.Any])
+    def setDoctypeEndUndefined: Self = StObject.set(x, "doctypeEnd", js.undefined)
     
     @scala.inline
-    def deleteCommentStart: Self = this.set("commentStart", js.undefined)
+    def setDoctypeStart(value: String): Self = StObject.set(x, "doctypeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoctypeEnd(value: String): Self = this.set("doctypeEnd", value.asInstanceOf[js.Any])
+    def setDoctypeStartUndefined: Self = StObject.set(x, "doctypeStart", js.undefined)
     
     @scala.inline
-    def deleteDoctypeEnd: Self = this.set("doctypeEnd", js.undefined)
+    def setEncodeEntity(value: /* char */ js.UndefOr[String] => String): Self = StObject.set(x, "encodeEntity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDoctypeStart(value: String): Self = this.set("doctypeStart", value.asInstanceOf[js.Any])
+    def setEncodeEntityUndefined: Self = StObject.set(x, "encodeEntity", js.undefined)
     
     @scala.inline
-    def deleteDoctypeStart: Self = this.set("doctypeStart", js.undefined)
+    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodeEntity(value: /* char */ js.UndefOr[String] => String): Self = this.set("encodeEntity", js.Any.fromFunction1(value))
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def deleteEncodeEntity: Self = this.set("encodeEntity", js.undefined)
+    def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Double): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
     
     @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setProcInstEnd(value: String): Self = StObject.set(x, "procInstEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPretty(value: Boolean): Self = this.set("pretty", value.asInstanceOf[js.Any])
+    def setProcInstEndUndefined: Self = StObject.set(x, "procInstEnd", js.undefined)
     
     @scala.inline
-    def deletePretty: Self = this.set("pretty", js.undefined)
+    def setProcInstStart(value: String): Self = StObject.set(x, "procInstStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcInstEnd(value: String): Self = this.set("procInstEnd", value.asInstanceOf[js.Any])
+    def setProcInstStartUndefined: Self = StObject.set(x, "procInstStart", js.undefined)
     
     @scala.inline
-    def deleteProcInstEnd: Self = this.set("procInstEnd", js.undefined)
+    def setRegEntities(value: RegExp): Self = StObject.set(x, "regEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcInstStart(value: String): Self = this.set("procInstStart", value.asInstanceOf[js.Any])
+    def setRegEntitiesUndefined: Self = StObject.set(x, "regEntities", js.undefined)
     
     @scala.inline
-    def deleteProcInstStart: Self = this.set("procInstStart", js.undefined)
+    def setRegValEntities(value: RegExp): Self = StObject.set(x, "regValEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegEntities(value: RegExp): Self = this.set("regEntities", value.asInstanceOf[js.Any])
+    def setRegValEntitiesUndefined: Self = StObject.set(x, "regValEntities", js.undefined)
     
     @scala.inline
-    def deleteRegEntities: Self = this.set("regEntities", js.undefined)
+    def setTagCloseEnd(value: String): Self = StObject.set(x, "tagCloseEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegValEntities(value: RegExp): Self = this.set("regValEntities", value.asInstanceOf[js.Any])
+    def setTagCloseEndUndefined: Self = StObject.set(x, "tagCloseEnd", js.undefined)
     
     @scala.inline
-    def deleteRegValEntities: Self = this.set("regValEntities", js.undefined)
+    def setTagCloseStart(value: String): Self = StObject.set(x, "tagCloseStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagCloseEnd(value: String): Self = this.set("tagCloseEnd", value.asInstanceOf[js.Any])
+    def setTagCloseStartUndefined: Self = StObject.set(x, "tagCloseStart", js.undefined)
     
     @scala.inline
-    def deleteTagCloseEnd: Self = this.set("tagCloseEnd", js.undefined)
+    def setTagOpenEnd(value: String): Self = StObject.set(x, "tagOpenEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagCloseStart(value: String): Self = this.set("tagCloseStart", value.asInstanceOf[js.Any])
+    def setTagOpenEndUndefined: Self = StObject.set(x, "tagOpenEnd", js.undefined)
     
     @scala.inline
-    def deleteTagCloseStart: Self = this.set("tagCloseStart", js.undefined)
+    def setTagOpenStart(value: String): Self = StObject.set(x, "tagOpenStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagOpenEnd(value: String): Self = this.set("tagOpenEnd", value.asInstanceOf[js.Any])
+    def setTagOpenStartUndefined: Self = StObject.set(x, "tagOpenStart", js.undefined)
     
     @scala.inline
-    def deleteTagOpenEnd: Self = this.set("tagOpenEnd", js.undefined)
+    def setTagShortEnd(value: String): Self = StObject.set(x, "tagShortEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagOpenStart(value: String): Self = this.set("tagOpenStart", value.asInstanceOf[js.Any])
+    def setTagShortEndUndefined: Self = StObject.set(x, "tagShortEnd", js.undefined)
     
     @scala.inline
-    def deleteTagOpenStart: Self = this.set("tagOpenStart", js.undefined)
+    def setTagShortStart(value: String): Self = StObject.set(x, "tagShortStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagShortEnd(value: String): Self = this.set("tagShortEnd", value.asInstanceOf[js.Any])
+    def setTagShortStartUndefined: Self = StObject.set(x, "tagShortStart", js.undefined)
     
     @scala.inline
-    def deleteTagShortEnd: Self = this.set("tagShortEnd", js.undefined)
+    def setTextEnd(value: String): Self = StObject.set(x, "textEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagShortStart(value: String): Self = this.set("tagShortStart", value.asInstanceOf[js.Any])
+    def setTextEndUndefined: Self = StObject.set(x, "textEnd", js.undefined)
     
     @scala.inline
-    def deleteTagShortStart: Self = this.set("tagShortStart", js.undefined)
+    def setTextStart(value: String): Self = StObject.set(x, "textStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextEnd(value: String): Self = this.set("textEnd", value.asInstanceOf[js.Any])
+    def setTextStartUndefined: Self = StObject.set(x, "textStart", js.undefined)
     
     @scala.inline
-    def deleteTextEnd: Self = this.set("textEnd", js.undefined)
+    def setUseShortTags(value: Boolean): Self = StObject.set(x, "useShortTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextStart(value: String): Self = this.set("textStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStart: Self = this.set("textStart", js.undefined)
-    
-    @scala.inline
-    def setUseShortTags(value: Boolean): Self = this.set("useShortTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseShortTags: Self = this.set("useShortTags", js.undefined)
+    def setUseShortTagsUndefined: Self = StObject.set(x, "useShortTags", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ReposGetBranchEndpoint
 import typings.octokitTypes.endpointsMod.ReposGetBranchRequestOptions
 import typings.octokitTypes.endpointsMod.ReposGetBranchResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReposGetBranchEndpoint extends js.Object {
+trait ParametersReposGetBranchEndpoint extends StObject {
   
   var parameters: ReposGetBranchEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersReposGetBranchEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReposGetBranchEndpointOps[Self <: ParametersReposGetBranchEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReposGetBranchEndpointMutableBuilder[Self <: ParametersReposGetBranchEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReposGetBranchEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ReposGetBranchRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReposGetBranchEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ReposGetBranchRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetBranchResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ReposGetBranchResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

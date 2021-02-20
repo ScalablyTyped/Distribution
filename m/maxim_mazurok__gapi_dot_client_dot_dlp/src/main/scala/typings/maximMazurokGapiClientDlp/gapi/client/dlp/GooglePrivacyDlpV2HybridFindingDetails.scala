@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2HybridFindingDetails extends js.Object {
+trait GooglePrivacyDlpV2HybridFindingDetails extends StObject {
   
   /** Details about the container where the content being inspected is from. */
   var containerDetails: js.UndefOr[GooglePrivacyDlpV2Container] = js.native
@@ -47,52 +48,40 @@ object GooglePrivacyDlpV2HybridFindingDetails {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2HybridFindingDetailsOps[Self <: GooglePrivacyDlpV2HybridFindingDetails] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2HybridFindingDetailsMutableBuilder[Self <: GooglePrivacyDlpV2HybridFindingDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerDetails(value: GooglePrivacyDlpV2Container): Self = StObject.set(x, "containerDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerDetailsUndefined: Self = StObject.set(x, "containerDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileOffset(value: String): Self = StObject.set(x, "fileOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerDetails(value: GooglePrivacyDlpV2Container): Self = this.set("containerDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerDetails: Self = this.set("containerDetails", js.undefined)
-    
-    @scala.inline
-    def setFileOffset(value: String): Self = this.set("fileOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileOffset: Self = this.set("fileOffset", js.undefined)
+    def setFileOffsetUndefined: Self = StObject.set(x, "fileOffset", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridFindingDetails with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setRowOffset(value: String): Self = this.set("rowOffset", value.asInstanceOf[js.Any])
+    def setRowOffset(value: String): Self = StObject.set(x, "rowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowOffset: Self = this.set("rowOffset", js.undefined)
+    def setRowOffsetUndefined: Self = StObject.set(x, "rowOffset", js.undefined)
     
     @scala.inline
-    def setTableOptions(value: GooglePrivacyDlpV2TableOptions): Self = this.set("tableOptions", value.asInstanceOf[js.Any])
+    def setTableOptions(value: GooglePrivacyDlpV2TableOptions): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableOptions: Self = this.set("tableOptions", js.undefined)
+    def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,156 +65,144 @@ object ManagedAppRegistration {
   }
   
   @scala.inline
-  implicit class ManagedAppRegistrationOps[Self <: ManagedAppRegistration] (val x: Self) extends AnyVal {
+  implicit class ManagedAppRegistrationMutableBuilder[Self <: ManagedAppRegistration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppIdentifier(value: NullableOption[MobileAppIdentifier]): Self = StObject.set(x, "appIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdentifierNull: Self = StObject.set(x, "appIdentifier", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppIdentifierUndefined: Self = StObject.set(x, "appIdentifier", js.undefined)
     
     @scala.inline
-    def setAppIdentifier(value: NullableOption[MobileAppIdentifier]): Self = this.set("appIdentifier", value.asInstanceOf[js.Any])
+    def setApplicationVersion(value: NullableOption[String]): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppIdentifier: Self = this.set("appIdentifier", js.undefined)
+    def setApplicationVersionNull: Self = StObject.set(x, "applicationVersion", null)
     
     @scala.inline
-    def setAppIdentifierNull: Self = this.set("appIdentifier", null)
+    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
     
     @scala.inline
-    def setApplicationVersion(value: NullableOption[String]): Self = this.set("applicationVersion", value.asInstanceOf[js.Any])
+    def setAppliedPolicies(value: NullableOption[js.Array[ManagedAppPolicy]]): Self = StObject.set(x, "appliedPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationVersion: Self = this.set("applicationVersion", js.undefined)
+    def setAppliedPoliciesNull: Self = StObject.set(x, "appliedPolicies", null)
     
     @scala.inline
-    def setApplicationVersionNull: Self = this.set("applicationVersion", null)
+    def setAppliedPoliciesUndefined: Self = StObject.set(x, "appliedPolicies", js.undefined)
     
     @scala.inline
-    def setAppliedPoliciesVarargs(value: ManagedAppPolicy*): Self = this.set("appliedPolicies", js.Array(value :_*))
+    def setAppliedPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "appliedPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setAppliedPolicies(value: NullableOption[js.Array[ManagedAppPolicy]]): Self = this.set("appliedPolicies", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppliedPolicies: Self = this.set("appliedPolicies", js.undefined)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setAppliedPoliciesNull: Self = this.set("appliedPolicies", null)
+    def setDeviceName(value: NullableOption[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setDeviceNameNull: Self = StObject.set(x, "deviceName", null)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
     @scala.inline
-    def setDeviceName(value: NullableOption[String]): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    def setDeviceTag(value: NullableOption[String]): Self = StObject.set(x, "deviceTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
+    def setDeviceTagNull: Self = StObject.set(x, "deviceTag", null)
     
     @scala.inline
-    def setDeviceNameNull: Self = this.set("deviceName", null)
+    def setDeviceTagUndefined: Self = StObject.set(x, "deviceTag", js.undefined)
     
     @scala.inline
-    def setDeviceTag(value: NullableOption[String]): Self = this.set("deviceTag", value.asInstanceOf[js.Any])
+    def setDeviceType(value: NullableOption[String]): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceTag: Self = this.set("deviceTag", js.undefined)
+    def setDeviceTypeNull: Self = StObject.set(x, "deviceType", null)
     
     @scala.inline
-    def setDeviceTagNull: Self = this.set("deviceTag", null)
+    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
     
     @scala.inline
-    def setDeviceType(value: NullableOption[String]): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    def setFlaggedReasons(value: js.Array[ManagedAppFlaggedReason]): Self = StObject.set(x, "flaggedReasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
+    def setFlaggedReasonsUndefined: Self = StObject.set(x, "flaggedReasons", js.undefined)
     
     @scala.inline
-    def setDeviceTypeNull: Self = this.set("deviceType", null)
+    def setFlaggedReasonsVarargs(value: ManagedAppFlaggedReason*): Self = StObject.set(x, "flaggedReasons", js.Array(value :_*))
     
     @scala.inline
-    def setFlaggedReasonsVarargs(value: ManagedAppFlaggedReason*): Self = this.set("flaggedReasons", js.Array(value :_*))
+    def setIntendedPolicies(value: NullableOption[js.Array[ManagedAppPolicy]]): Self = StObject.set(x, "intendedPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlaggedReasons(value: js.Array[ManagedAppFlaggedReason]): Self = this.set("flaggedReasons", value.asInstanceOf[js.Any])
+    def setIntendedPoliciesNull: Self = StObject.set(x, "intendedPolicies", null)
     
     @scala.inline
-    def deleteFlaggedReasons: Self = this.set("flaggedReasons", js.undefined)
+    def setIntendedPoliciesUndefined: Self = StObject.set(x, "intendedPolicies", js.undefined)
     
     @scala.inline
-    def setIntendedPoliciesVarargs(value: ManagedAppPolicy*): Self = this.set("intendedPolicies", js.Array(value :_*))
+    def setIntendedPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "intendedPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setIntendedPolicies(value: NullableOption[js.Array[ManagedAppPolicy]]): Self = this.set("intendedPolicies", value.asInstanceOf[js.Any])
+    def setLastSyncDateTime(value: String): Self = StObject.set(x, "lastSyncDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntendedPolicies: Self = this.set("intendedPolicies", js.undefined)
+    def setLastSyncDateTimeUndefined: Self = StObject.set(x, "lastSyncDateTime", js.undefined)
     
     @scala.inline
-    def setIntendedPoliciesNull: Self = this.set("intendedPolicies", null)
+    def setManagementSdkVersion(value: NullableOption[String]): Self = StObject.set(x, "managementSdkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSyncDateTime(value: String): Self = this.set("lastSyncDateTime", value.asInstanceOf[js.Any])
+    def setManagementSdkVersionNull: Self = StObject.set(x, "managementSdkVersion", null)
     
     @scala.inline
-    def deleteLastSyncDateTime: Self = this.set("lastSyncDateTime", js.undefined)
+    def setManagementSdkVersionUndefined: Self = StObject.set(x, "managementSdkVersion", js.undefined)
     
     @scala.inline
-    def setManagementSdkVersion(value: NullableOption[String]): Self = this.set("managementSdkVersion", value.asInstanceOf[js.Any])
+    def setOperations(value: NullableOption[js.Array[ManagedAppOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManagementSdkVersion: Self = this.set("managementSdkVersion", js.undefined)
+    def setOperationsNull: Self = StObject.set(x, "operations", null)
     
     @scala.inline
-    def setManagementSdkVersionNull: Self = this.set("managementSdkVersion", null)
+    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
     @scala.inline
-    def setOperationsVarargs(value: ManagedAppOperation*): Self = this.set("operations", js.Array(value :_*))
+    def setOperationsVarargs(value: ManagedAppOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
     @scala.inline
-    def setOperations(value: NullableOption[js.Array[ManagedAppOperation]]): Self = this.set("operations", value.asInstanceOf[js.Any])
+    def setPlatformVersion(value: NullableOption[String]): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperations: Self = this.set("operations", js.undefined)
+    def setPlatformVersionNull: Self = StObject.set(x, "platformVersion", null)
     
     @scala.inline
-    def setOperationsNull: Self = this.set("operations", null)
+    def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
     
     @scala.inline
-    def setPlatformVersion(value: NullableOption[String]): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    def setUserId(value: NullableOption[String]): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    def setUserIdNull: Self = StObject.set(x, "userId", null)
     
     @scala.inline
-    def setPlatformVersionNull: Self = this.set("platformVersion", null)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
     @scala.inline
-    def setUserId(value: NullableOption[String]): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setVersionNull: Self = StObject.set(x, "version", null)
     
     @scala.inline
-    def setUserIdNull: Self = this.set("userId", null)
-    
-    @scala.inline
-    def setVersion(value: NullableOption[String]): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionNull: Self = this.set("version", null)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

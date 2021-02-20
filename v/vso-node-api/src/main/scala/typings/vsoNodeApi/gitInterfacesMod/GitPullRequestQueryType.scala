@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GitPullRequestQueryType extends js.Object
+sealed trait GitPullRequestQueryType extends StObject
 @JSImport("vso-node-api/interfaces/GitInterfaces", "GitPullRequestQueryType")
 @js.native
-object GitPullRequestQueryType extends js.Object {
+object GitPullRequestQueryType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitPullRequestQueryType with Double] = js.native
@@ -19,22 +19,19 @@ object GitPullRequestQueryType extends js.Object {
     */
   @js.native
   sealed trait Commit extends GitPullRequestQueryType
-  /* 2 */ @js.native
-  object Commit extends TopLevel[Commit with Double]
+  /* 2 */ val Commit: typings.vsoNodeApi.gitInterfacesMod.GitPullRequestQueryType.Commit with Double = js.native
   
   /**
     * Search for pull requests that created the supplied merge commits.
     */
   @js.native
   sealed trait LastMergeCommit extends GitPullRequestQueryType
-  /* 1 */ @js.native
-  object LastMergeCommit extends TopLevel[LastMergeCommit with Double]
+  /* 1 */ val LastMergeCommit: typings.vsoNodeApi.gitInterfacesMod.GitPullRequestQueryType.LastMergeCommit with Double = js.native
   
   /**
     * No query type set.
     */
   @js.native
   sealed trait NotSet extends GitPullRequestQueryType
-  /* 0 */ @js.native
-  object NotSet extends TopLevel[NotSet with Double]
+  /* 0 */ val NotSet: typings.vsoNodeApi.gitInterfacesMod.GitPullRequestQueryType.NotSet with Double = js.native
 }

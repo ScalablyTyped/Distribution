@@ -5,16 +5,16 @@ import typings.angularCompiler.cssLexerMod.CssTokenType
 import typings.angularCompiler.srcParseUtilMod.ParseError
 import typings.angularCompiler.srcParseUtilMod.ParseSourceFile
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/css_parser/css_parser", JSImport.Namespace)
-@js.native
-object cssParserMod extends js.Object {
+object cssParserMod {
   
+  @JSImport("@angular/compiler/src/css_parser/css_parser", "BlockType")
   @js.native
-  object BlockType extends js.Object {
+  object BlockType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.angularCompiler.cssAstMod.BlockType with Double] = js.native
@@ -44,19 +44,22 @@ object cssParserMod extends js.Object {
     /* 10 */ val Viewport: typings.angularCompiler.cssAstMod.BlockType.Viewport with Double = js.native
   }
   
+  @JSImport("@angular/compiler/src/css_parser/css_parser", "CssParseError")
   @js.native
   class CssParseError protected () extends ParseError {
     def this(span: ParseSourceSpan, message: String) = this()
   }
   /* static members */
-  @js.native
-  object CssParseError extends js.Object {
+  object CssParseError {
     
+    @JSImport("@angular/compiler/src/css_parser/css_parser", "CssParseError.create")
+    @js.native
     def create(file: ParseSourceFile, offset: Double, line: Double, col: Double, length: Double, errMsg: String): CssParseError = js.native
   }
   
+  @JSImport("@angular/compiler/src/css_parser/css_parser", "CssParser")
   @js.native
-  class CssParser () extends js.Object {
+  class CssParser () extends StObject {
     
     var _errors: js.Any = js.native
     
@@ -73,14 +76,16 @@ object cssParserMod extends js.Object {
     def parse(css: String, url: String): ParsedCssResult = js.native
   }
   
+  @JSImport("@angular/compiler/src/css_parser/css_parser", "CssToken")
   @js.native
   class CssToken protected ()
     extends typings.angularCompiler.cssLexerMod.CssToken {
     def this(index: Double, column: Double, line: Double, `type`: CssTokenType, strValue: String) = this()
   }
   
+  @JSImport("@angular/compiler/src/css_parser/css_parser", "ParsedCssResult")
   @js.native
-  class ParsedCssResult protected () extends js.Object {
+  class ParsedCssResult protected () extends StObject {
     def this(errors: js.Array[CssParseError], ast: CssStyleSheetAst) = this()
     
     var ast: CssStyleSheetAst = js.native

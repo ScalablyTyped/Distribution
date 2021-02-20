@@ -11,6 +11,7 @@ import typings.activexShell.activexShellNumbers.`512`
 import typings.activexShell.activexShellNumbers.`64`
 import typings.activexShell.activexShellNumbers.`8192`
 import typings.activexShell.activexShellNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShell.activexShellNumbers.`4`
   - typings.activexShell.activexShellNumbers.`256`
 */
-trait FileOperationFlag extends js.Object
+trait FileOperationFlag extends StObject
 object FileOperationFlag {
   
   /** Preserve undo information, if possible. */

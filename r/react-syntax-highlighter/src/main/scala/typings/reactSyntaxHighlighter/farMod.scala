@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/styles/hljs/far", JSImport.Namespace)
-@js.native
-object farMod extends js.Object {
+object farMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/styles/hljs/far", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

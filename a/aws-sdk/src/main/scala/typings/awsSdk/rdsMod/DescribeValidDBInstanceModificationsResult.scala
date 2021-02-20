@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeValidDBInstanceModificationsResult extends js.Object {
+trait DescribeValidDBInstanceModificationsResult extends StObject {
   
   var ValidDBInstanceModificationsMessage: js.UndefOr[typings.awsSdk.rdsMod.ValidDBInstanceModificationsMessage] = js.native
 }
@@ -18,24 +19,12 @@ object DescribeValidDBInstanceModificationsResult {
   }
   
   @scala.inline
-  implicit class DescribeValidDBInstanceModificationsResultOps[Self <: DescribeValidDBInstanceModificationsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeValidDBInstanceModificationsResultMutableBuilder[Self <: DescribeValidDBInstanceModificationsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValidDBInstanceModificationsMessage(value: ValidDBInstanceModificationsMessage): Self = StObject.set(x, "ValidDBInstanceModificationsMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValidDBInstanceModificationsMessage(value: ValidDBInstanceModificationsMessage): Self = this.set("ValidDBInstanceModificationsMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidDBInstanceModificationsMessage: Self = this.set("ValidDBInstanceModificationsMessage", js.undefined)
+    def setValidDBInstanceModificationsMessageUndefined: Self = StObject.set(x, "ValidDBInstanceModificationsMessage", js.undefined)
   }
 }

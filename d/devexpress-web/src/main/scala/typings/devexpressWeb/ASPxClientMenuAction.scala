@@ -1,11 +1,12 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASPxClientMenuAction extends js.Object {
+trait ASPxClientMenuAction extends StObject {
   
   var clickAction: js.Function = js.native
   
@@ -44,45 +45,33 @@ object ASPxClientMenuAction {
   }
   
   @scala.inline
-  implicit class ASPxClientMenuActionOps[Self <: ASPxClientMenuAction] (val x: Self) extends AnyVal {
+  implicit class ASPxClientMenuActionMutableBuilder[Self <: ASPxClientMenuAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickAction(value: js.Function): Self = StObject.set(x, "clickAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickAction(value: js.Function): Self = this.set("clickAction", value.asInstanceOf[js.Any])
+    def setHasSeparator(value: Boolean): Self = StObject.set(x, "hasSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setHotKey(value: ASPxClientMenuActionHotKey): Self = StObject.set(x, "hotKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setImageClassName(value: String): Self = StObject.set(x, "imageClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSeparator(value: Boolean): Self = this.set("hasSeparator", value.asInstanceOf[js.Any])
+    def setImageTemplateName(value: String): Self = StObject.set(x, "imageTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotKey(value: ASPxClientMenuActionHotKey): Self = this.set("hotKey", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageClassName(value: String): Self = this.set("imageClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImageTemplateName(value: String): Self = this.set("imageTemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

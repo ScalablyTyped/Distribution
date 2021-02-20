@@ -2,13 +2,20 @@ package typings.ol
 
 import typings.ol.eventsMod.Listener
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/events/Target", JSImport.Namespace)
-@js.native
-object targetMod extends js.Object {
+object targetMod {
+  
+  @JSImport("ol/events/Target", JSImport.Default)
+  @js.native
+  class default () extends Target {
+    def this(opt_target: js.Any) = this()
+  }
+  
+  type EventTargetLike = EventTarget | Target
   
   @js.native
   trait Target
@@ -35,11 +42,4 @@ object targetMod extends js.Object {
     
     def removeEventListener(`type`: String, listener: Listener): Unit = js.native
   }
-  
-  @js.native
-  class default () extends Target {
-    def this(opt_target: js.Any) = this()
-  }
-  
-  type EventTargetLike = EventTarget | Target
 }

@@ -2,16 +2,16 @@ package typings.reactNativeNavigation
 
 import typings.reactNativeNavigation.processorSubscriptionMod.ProcessorSubscription
 import typings.reactNativeNavigation.processorsMod.OptionsProcessor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-navigation/lib/dist/processors/OptionProcessorsStore", JSImport.Namespace)
-@js.native
-object optionProcessorsStoreMod extends js.Object {
+object optionProcessorsStoreMod {
   
+  @JSImport("react-native-navigation/lib/dist/processors/OptionProcessorsStore", "OptionProcessorsStore")
   @js.native
-  class OptionProcessorsStore () extends js.Object {
+  class OptionProcessorsStore () extends StObject {
     
     def addProcessor[T](optionPath: String, processor: OptionsProcessor[T]): ProcessorSubscription = js.native
     

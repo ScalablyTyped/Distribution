@@ -1,5 +1,6 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleVisualization.googleVisualizationStrings.out
   - typings.googleVisualization.googleVisualizationStrings.none
 */
-trait ChartAxisTitlesPosition extends js.Object
+trait ChartAxisTitlesPosition extends StObject
 object ChartAxisTitlesPosition {
   
   @scala.inline

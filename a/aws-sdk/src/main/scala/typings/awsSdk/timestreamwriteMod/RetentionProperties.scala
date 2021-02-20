@@ -1,11 +1,12 @@
 package typings.awsSdk.timestreamwriteMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetentionProperties extends js.Object {
+trait RetentionProperties extends StObject {
   
   /**
     * The duration for which data must be stored in the magnetic store. 
@@ -29,24 +30,12 @@ object RetentionProperties {
   }
   
   @scala.inline
-  implicit class RetentionPropertiesOps[Self <: RetentionProperties] (val x: Self) extends AnyVal {
+  implicit class RetentionPropertiesMutableBuilder[Self <: RetentionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMagneticStoreRetentionPeriodInDays(value: MagneticStoreRetentionPeriodInDays): Self = StObject.set(x, "MagneticStoreRetentionPeriodInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMagneticStoreRetentionPeriodInDays(value: MagneticStoreRetentionPeriodInDays): Self = this.set("MagneticStoreRetentionPeriodInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMemoryStoreRetentionPeriodInHours(value: MemoryStoreRetentionPeriodInHours): Self = this.set("MemoryStoreRetentionPeriodInHours", value.asInstanceOf[js.Any])
+    def setMemoryStoreRetentionPeriodInHours(value: MemoryStoreRetentionPeriodInHours): Self = StObject.set(x, "MemoryStoreRetentionPeriodInHours", value.asInstanceOf[js.Any])
   }
 }

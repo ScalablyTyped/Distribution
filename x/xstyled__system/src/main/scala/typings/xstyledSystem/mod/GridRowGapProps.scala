@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridRowGapProps[TLength] extends js.Object {
+trait GridRowGapProps[TLength] extends StObject {
   
   val gridRowGap: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object GridRowGapProps {
   }
   
   @scala.inline
-  implicit class GridRowGapPropsOps[Self <: GridRowGapProps[_], TLength] (val x: Self with GridRowGapProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGridRowGapVarargs(value: js.Any*): Self = this.set("gridRowGap", js.Array(value :_*))
+  implicit class GridRowGapPropsMutableBuilder[Self <: GridRowGapProps[_], TLength] (val x: Self with GridRowGapProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setGridRowGap(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ _
         ]
-    ): Self = this.set("gridRowGap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridRowGap: Self = this.set("gridRowGap", js.undefined)
+    def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
+    
+    @scala.inline
+    def setGridRowGapVarargs(value: js.Any*): Self = StObject.set(x, "gridRowGap", js.Array(value :_*))
   }
 }

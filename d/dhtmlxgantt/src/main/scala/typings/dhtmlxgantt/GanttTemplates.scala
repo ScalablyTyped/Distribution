@@ -1,12 +1,13 @@
 package typings.dhtmlxgantt
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttTemplates extends js.Object {
+trait GanttTemplates extends StObject {
   
   /**
     * specifies the content of start date or end date columns in grid

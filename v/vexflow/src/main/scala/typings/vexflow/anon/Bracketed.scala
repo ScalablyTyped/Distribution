@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bracketed extends js.Object {
+trait Bracketed extends StObject {
   
   var bracketed: js.UndefOr[Boolean] = js.native
   
@@ -28,51 +29,39 @@ object Bracketed {
   }
   
   @scala.inline
-  implicit class BracketedOps[Self <: Bracketed] (val x: Self) extends AnyVal {
+  implicit class BracketedMutableBuilder[Self <: Bracketed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBracketed(value: Boolean): Self = StObject.set(x, "bracketed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBracketedUndefined: Self = StObject.set(x, "bracketed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatioed(value: Boolean): Self = this.set("ratioed", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setBracketed(value: Boolean): Self = this.set("bracketed", value.asInstanceOf[js.Any])
+    def setNotes_occupied(value: Double): Self = StObject.set(x, "notes_occupied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBracketed: Self = this.set("bracketed", js.undefined)
+    def setNotes_occupiedUndefined: Self = StObject.set(x, "notes_occupied", js.undefined)
     
     @scala.inline
-    def setLocation(value: Double): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNum_notes(value: Double): Self = StObject.set(x, "num_notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setNum_notesUndefined: Self = StObject.set(x, "num_notes", js.undefined)
     
     @scala.inline
-    def setNotes_occupied(value: Double): Self = this.set("notes_occupied", value.asInstanceOf[js.Any])
+    def setRatioed(value: Boolean): Self = StObject.set(x, "ratioed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotes_occupied: Self = this.set("notes_occupied", js.undefined)
+    def setY_offset(value: Double): Self = StObject.set(x, "y_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_notes(value: Double): Self = this.set("num_notes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNum_notes: Self = this.set("num_notes", js.undefined)
-    
-    @scala.inline
-    def setY_offset(value: Double): Self = this.set("y_offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY_offset: Self = this.set("y_offset", js.undefined)
+    def setY_offsetUndefined: Self = StObject.set(x, "y_offset", js.undefined)
   }
 }

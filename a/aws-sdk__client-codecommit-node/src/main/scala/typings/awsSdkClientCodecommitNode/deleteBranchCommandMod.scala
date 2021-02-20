@@ -7,14 +7,14 @@ import typings.awsSdkClientCodecommitNode.typesDeleteBranchInputMod.DeleteBranch
 import typings.awsSdkClientCodecommitNode.typesDeleteBranchOutputMod.DeleteBranchOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/commands/DeleteBranchCommand", JSImport.Namespace)
-@js.native
-object deleteBranchCommandMod extends js.Object {
+object deleteBranchCommandMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/commands/DeleteBranchCommand", "DeleteBranchCommand")
   @js.native
   class DeleteBranchCommand protected () extends Command[
           InputTypesUnion, 

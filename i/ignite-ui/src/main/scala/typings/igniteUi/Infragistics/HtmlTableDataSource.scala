@@ -1,12 +1,13 @@
 package typings.igniteUi.Infragistics
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HtmlTableDataSource extends js.Object {
+trait HtmlTableDataSource extends StObject {
   
   /**
     * Adds a new node to the tree data source. Creates a transaction that can be committed / rolled back

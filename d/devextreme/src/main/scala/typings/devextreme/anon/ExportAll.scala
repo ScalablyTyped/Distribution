@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportAll extends js.Object {
+trait ExportAll extends StObject {
   
   var exportAll: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object ExportAll {
   }
   
   @scala.inline
-  implicit class ExportAllOps[Self <: ExportAll] (val x: Self) extends AnyVal {
+  implicit class ExportAllMutableBuilder[Self <: ExportAll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportAll(value: String): Self = StObject.set(x, "exportAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportAllUndefined: Self = StObject.set(x, "exportAll", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportSelectedRows(value: String): Self = StObject.set(x, "exportSelectedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportAll(value: String): Self = this.set("exportAll", value.asInstanceOf[js.Any])
+    def setExportSelectedRowsUndefined: Self = StObject.set(x, "exportSelectedRows", js.undefined)
     
     @scala.inline
-    def deleteExportAll: Self = this.set("exportAll", js.undefined)
+    def setExportTo(value: String): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportSelectedRows(value: String): Self = this.set("exportSelectedRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportSelectedRows: Self = this.set("exportSelectedRows", js.undefined)
-    
-    @scala.inline
-    def setExportTo(value: String): Self = this.set("exportTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportTo: Self = this.set("exportTo", js.undefined)
+    def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
   }
 }

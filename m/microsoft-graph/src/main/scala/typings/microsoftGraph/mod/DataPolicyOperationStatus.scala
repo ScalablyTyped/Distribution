@@ -3,6 +3,7 @@ package typings.microsoftGraph.mod
 import typings.microsoftGraph.microsoftGraphStrings.failed_
 import typings.microsoftGraph.microsoftGraphStrings.notStarted_
 import typings.microsoftGraph.microsoftGraphStrings.running_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.failed_
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
-trait DataPolicyOperationStatus extends js.Object
+trait DataPolicyOperationStatus extends StObject
 object DataPolicyOperationStatus {
   
   @scala.inline

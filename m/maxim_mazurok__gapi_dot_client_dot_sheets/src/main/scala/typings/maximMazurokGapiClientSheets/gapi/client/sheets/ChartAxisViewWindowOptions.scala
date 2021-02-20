@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartAxisViewWindowOptions extends js.Object {
+trait ChartAxisViewWindowOptions extends StObject {
   
   /** The maximum numeric value to be shown in this view window. If unset, will automatically determine a maximum value that looks good for the data. */
   var viewWindowMax: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object ChartAxisViewWindowOptions {
   }
   
   @scala.inline
-  implicit class ChartAxisViewWindowOptionsOps[Self <: ChartAxisViewWindowOptions] (val x: Self) extends AnyVal {
+  implicit class ChartAxisViewWindowOptionsMutableBuilder[Self <: ChartAxisViewWindowOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setViewWindowMax(value: Double): Self = StObject.set(x, "viewWindowMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setViewWindowMaxUndefined: Self = StObject.set(x, "viewWindowMax", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setViewWindowMin(value: Double): Self = StObject.set(x, "viewWindowMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewWindowMax(value: Double): Self = this.set("viewWindowMax", value.asInstanceOf[js.Any])
+    def setViewWindowMinUndefined: Self = StObject.set(x, "viewWindowMin", js.undefined)
     
     @scala.inline
-    def deleteViewWindowMax: Self = this.set("viewWindowMax", js.undefined)
+    def setViewWindowMode(value: String): Self = StObject.set(x, "viewWindowMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewWindowMin(value: Double): Self = this.set("viewWindowMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewWindowMin: Self = this.set("viewWindowMin", js.undefined)
-    
-    @scala.inline
-    def setViewWindowMode(value: String): Self = this.set("viewWindowMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewWindowMode: Self = this.set("viewWindowMode", js.undefined)
+    def setViewWindowModeUndefined: Self = StObject.set(x, "viewWindowMode", js.undefined)
   }
 }

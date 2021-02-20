@@ -1,11 +1,12 @@
 package typings.playcanvas.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Exposure extends js.Object {
+trait Exposure extends StObject {
   
   var exposure: Double = js.native
   
@@ -64,81 +65,69 @@ object Exposure {
   }
   
   @scala.inline
-  implicit class ExposureOps[Self <: Exposure] (val x: Self) extends AnyVal {
+  implicit class ExposureMutableBuilder[Self <: Exposure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExposure(value: Double): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFog(value: String): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFog_color(value: js.Array[Double]): Self = StObject.set(x, "fog_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposure(value: Double): Self = this.set("exposure", value.asInstanceOf[js.Any])
+    def setFog_colorVarargs(value: Double*): Self = StObject.set(x, "fog_color", js.Array(value :_*))
     
     @scala.inline
-    def setFog(value: String): Self = this.set("fog", value.asInstanceOf[js.Any])
+    def setFog_density(value: Double): Self = StObject.set(x, "fog_density", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFog_colorVarargs(value: Double*): Self = this.set("fog_color", js.Array(value :_*))
+    def setFog_end(value: Double): Self = StObject.set(x, "fog_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFog_color(value: js.Array[Double]): Self = this.set("fog_color", value.asInstanceOf[js.Any])
+    def setFog_start(value: Double): Self = StObject.set(x, "fog_start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFog_density(value: Double): Self = this.set("fog_density", value.asInstanceOf[js.Any])
+    def setGamma_correction(value: Double): Self = StObject.set(x, "gamma_correction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFog_end(value: Double): Self = this.set("fog_end", value.asInstanceOf[js.Any])
+    def setGlobal_ambient(value: js.Array[Double]): Self = StObject.set(x, "global_ambient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFog_start(value: Double): Self = this.set("fog_start", value.asInstanceOf[js.Any])
+    def setGlobal_ambientVarargs(value: Double*): Self = StObject.set(x, "global_ambient", js.Array(value :_*))
     
     @scala.inline
-    def setGamma_correction(value: Double): Self = this.set("gamma_correction", value.asInstanceOf[js.Any])
+    def setLightmapMaxResolution(value: Double): Self = StObject.set(x, "lightmapMaxResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal_ambientVarargs(value: Double*): Self = this.set("global_ambient", js.Array(value :_*))
+    def setLightmapMode(value: Double): Self = StObject.set(x, "lightmapMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal_ambient(value: js.Array[Double]): Self = this.set("global_ambient", value.asInstanceOf[js.Any])
+    def setLightmapSizeMultiplier(value: Double): Self = StObject.set(x, "lightmapSizeMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightmapMaxResolution(value: Double): Self = this.set("lightmapMaxResolution", value.asInstanceOf[js.Any])
+    def setSkybox(value: Double): Self = StObject.set(x, "skybox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightmapMode(value: Double): Self = this.set("lightmapMode", value.asInstanceOf[js.Any])
+    def setSkyboxIntensity(value: Double): Self = StObject.set(x, "skyboxIntensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightmapSizeMultiplier(value: Double): Self = this.set("lightmapSizeMultiplier", value.asInstanceOf[js.Any])
+    def setSkyboxMip(value: Double): Self = StObject.set(x, "skyboxMip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkyboxIntensity(value: Double): Self = this.set("skyboxIntensity", value.asInstanceOf[js.Any])
+    def setSkyboxNull: Self = StObject.set(x, "skybox", null)
     
     @scala.inline
-    def setSkyboxMip(value: Double): Self = this.set("skyboxMip", value.asInstanceOf[js.Any])
+    def setSkyboxRotation(value: js.Array[Double]): Self = StObject.set(x, "skyboxRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkyboxRotationVarargs(value: Double*): Self = this.set("skyboxRotation", js.Array(value :_*))
+    def setSkyboxRotationVarargs(value: Double*): Self = StObject.set(x, "skyboxRotation", js.Array(value :_*))
     
     @scala.inline
-    def setSkyboxRotation(value: js.Array[Double]): Self = this.set("skyboxRotation", value.asInstanceOf[js.Any])
+    def setSkyboxUndefined: Self = StObject.set(x, "skybox", js.undefined)
     
     @scala.inline
-    def setTonemapping(value: Double): Self = this.set("tonemapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkybox(value: Double): Self = this.set("skybox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkybox: Self = this.set("skybox", js.undefined)
-    
-    @scala.inline
-    def setSkyboxNull: Self = this.set("skybox", null)
+    def setTonemapping(value: Double): Self = StObject.set(x, "tonemapping", value.asInstanceOf[js.Any])
   }
 }

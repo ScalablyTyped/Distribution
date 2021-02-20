@@ -1,20 +1,35 @@
 package typings.kendoUi.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.kendoUi.kendo.ui.TabStrip
-import typings.kendoUi.kendo.ui.TabStripOptions
-import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofTabStrip
-  extends Instantiable1[/* element */ Element, TabStrip]
-     with Instantiable2[/* element */ Element, /* options */ TabStripOptions, TabStrip] {
+trait TypeofTabStrip extends StObject {
   
+  /* static member */
   def extend(proto: js.Object): TabStrip = js.native
   
+  /* static member */
   var fn: TabStrip = js.native
+}
+object TypeofTabStrip {
+  
+  @scala.inline
+  def apply(extend: js.Object => TabStrip, fn: TabStrip): TypeofTabStrip = {
+    val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofTabStrip]
+  }
+  
+  @scala.inline
+  implicit class TypeofTabStripMutableBuilder[Self <: TypeofTabStrip] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setExtend(value: js.Object => TabStrip): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setFn(value: TabStrip): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+  }
 }

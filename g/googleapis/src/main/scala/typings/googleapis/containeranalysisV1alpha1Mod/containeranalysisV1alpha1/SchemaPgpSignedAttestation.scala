@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * included alongside the signature itself in the same file.
   */
 @js.native
-trait SchemaPgpSignedAttestation extends js.Object {
+trait SchemaPgpSignedAttestation extends StObject {
   
   /**
     * Type (for example schema) of the attestation payload that was signed. The
@@ -59,36 +60,24 @@ object SchemaPgpSignedAttestation {
   }
   
   @scala.inline
-  implicit class SchemaPgpSignedAttestationOps[Self <: SchemaPgpSignedAttestation] (val x: Self) extends AnyVal {
+  implicit class SchemaPgpSignedAttestationMutableBuilder[Self <: SchemaPgpSignedAttestation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPgpKeyId(value: String): Self = StObject.set(x, "pgpKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setPgpKeyIdUndefined: Self = StObject.set(x, "pgpKeyId", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPgpKeyId(value: String): Self = this.set("pgpKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePgpKeyId: Self = this.set("pgpKeyId", js.undefined)
-    
-    @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

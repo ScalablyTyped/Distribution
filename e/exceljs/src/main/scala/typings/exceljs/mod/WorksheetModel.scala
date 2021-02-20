@@ -2,12 +2,13 @@ package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialHeaderFooter
 import typings.exceljs.anon.PartialPageSetup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorksheetModel extends js.Object {
+trait WorksheetModel extends StObject {
   
   var autoFilter: AutoFilter = js.native
   
@@ -47,54 +48,42 @@ object WorksheetModel {
   }
   
   @scala.inline
-  implicit class WorksheetModelOps[Self <: WorksheetModel] (val x: Self) extends AnyVal {
+  implicit class WorksheetModelMutableBuilder[Self <: WorksheetModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFilter(value: AutoFilter): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderFooter(value: PartialHeaderFooter): Self = StObject.set(x, "headerFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFilter(value: AutoFilter): Self = this.set("autoFilter", value.asInstanceOf[js.Any])
+    def setMedia(value: js.Array[Media]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderFooter(value: PartialHeaderFooter): Self = this.set("headerFooter", value.asInstanceOf[js.Any])
+    def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaVarargs(value: Media*): Self = this.set("media", js.Array(value :_*))
+    def setPageSetup(value: PartialPageSetup): Self = StObject.set(x, "pageSetup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: js.Array[Media]): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setProperties(value: WorksheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRowBreaks(value: js.Array[RowBreak]): Self = StObject.set(x, "rowBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSetup(value: PartialPageSetup): Self = this.set("pageSetup", value.asInstanceOf[js.Any])
+    def setRowBreaksVarargs(value: RowBreak*): Self = StObject.set(x, "rowBreaks", js.Array(value :_*))
     
     @scala.inline
-    def setProperties(value: WorksheetProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setViews(value: js.Array[WorksheetView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowBreaksVarargs(value: RowBreak*): Self = this.set("rowBreaks", js.Array(value :_*))
-    
-    @scala.inline
-    def setRowBreaks(value: js.Array[RowBreak]): Self = this.set("rowBreaks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewsVarargs(value: WorksheetView*): Self = this.set("views", js.Array(value :_*))
-    
-    @scala.inline
-    def setViews(value: js.Array[WorksheetView]): Self = this.set("views", value.asInstanceOf[js.Any])
+    def setViewsVarargs(value: WorksheetView*): Self = StObject.set(x, "views", js.Array(value :_*))
   }
 }

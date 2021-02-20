@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ListTemplateType extends js.Object
+sealed trait ListTemplateType extends StObject
 @JSGlobal("SP.ListTemplateType")
 @js.native
-object ListTemplateType extends js.Object {
+object ListTemplateType extends StObject {
   
   @js.native
   sealed trait accessRequest extends ListTemplateType

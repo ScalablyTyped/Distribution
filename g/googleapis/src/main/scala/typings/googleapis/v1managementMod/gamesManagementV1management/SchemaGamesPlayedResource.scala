@@ -1,5 +1,6 @@
 package typings.googleapis.v1managementMod.gamesManagementV1management
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * currently authenticated user.
   */
 @js.native
-trait SchemaGamesPlayedResource extends js.Object {
+trait SchemaGamesPlayedResource extends StObject {
   
   /**
     * True if the player was auto-matched with the currently authenticated
@@ -32,30 +33,18 @@ object SchemaGamesPlayedResource {
   }
   
   @scala.inline
-  implicit class SchemaGamesPlayedResourceOps[Self <: SchemaGamesPlayedResource] (val x: Self) extends AnyVal {
+  implicit class SchemaGamesPlayedResourceMutableBuilder[Self <: SchemaGamesPlayedResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoMatched(value: Boolean): Self = StObject.set(x, "autoMatched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoMatchedUndefined: Self = StObject.set(x, "autoMatched", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeMillis(value: String): Self = StObject.set(x, "timeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMatched(value: Boolean): Self = this.set("autoMatched", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoMatched: Self = this.set("autoMatched", js.undefined)
-    
-    @scala.inline
-    def setTimeMillis(value: String): Self = this.set("timeMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeMillis: Self = this.set("timeMillis", js.undefined)
+    def setTimeMillisUndefined: Self = StObject.set(x, "timeMillis", js.undefined)
   }
 }

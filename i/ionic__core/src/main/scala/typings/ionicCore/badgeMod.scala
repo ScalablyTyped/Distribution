@@ -2,14 +2,14 @@ package typings.ionicCore
 
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/badge/badge", JSImport.Namespace)
-@js.native
-object badgeMod extends js.Object {
+object badgeMod {
   
+  @JSImport("@ionic/core/dist/types/components/badge/badge", "Badge")
   @js.native
   class Badge () extends ComponentInterface {
     

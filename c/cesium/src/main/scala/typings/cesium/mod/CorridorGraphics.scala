@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.Fill
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CorridorGraphics")
 @js.native
-class CorridorGraphics () extends js.Object {
+class CorridorGraphics () extends StObject {
   def this(options: Fill) = this()
   
   def clone(result: CorridorGraphics): CorridorGraphics = js.native

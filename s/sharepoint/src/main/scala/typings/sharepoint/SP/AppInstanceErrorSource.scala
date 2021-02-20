@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppInstanceErrorSource extends js.Object
+sealed trait AppInstanceErrorSource extends StObject
 @JSGlobal("SP.AppInstanceErrorSource")
 @js.native
-object AppInstanceErrorSource extends js.Object {
+object AppInstanceErrorSource extends StObject {
   
   @js.native
   sealed trait appWeb extends AppInstanceErrorSource

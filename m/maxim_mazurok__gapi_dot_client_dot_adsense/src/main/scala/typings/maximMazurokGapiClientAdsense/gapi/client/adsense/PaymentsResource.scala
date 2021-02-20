@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAdsense.anon.AccountIdAlt
 import typings.maximMazurokGapiClientAdsense.anon.FieldsKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentsResource extends js.Object {
+trait PaymentsResource extends StObject {
   
   /** List the payments for the specified AdSense account. */
   def list(): Request[Payments] = js.native

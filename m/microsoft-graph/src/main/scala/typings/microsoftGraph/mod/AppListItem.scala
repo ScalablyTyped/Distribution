@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppListItem extends js.Object {
+trait AppListItem extends StObject {
   
   // The application or bundle identifier of the application
   var appId: js.UndefOr[NullableOption[String]] = js.native
@@ -28,51 +29,39 @@ object AppListItem {
   }
   
   @scala.inline
-  implicit class AppListItemOps[Self <: AppListItem] (val x: Self) extends AnyVal {
+  implicit class AppListItemMutableBuilder[Self <: AppListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdNull: Self = StObject.set(x, "appId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def setAppId(value: NullableOption[String]): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setAppStoreUrl(value: NullableOption[String]): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setAppStoreUrlNull: Self = StObject.set(x, "appStoreUrl", null)
     
     @scala.inline
-    def setAppIdNull: Self = this.set("appId", null)
+    def setAppStoreUrlUndefined: Self = StObject.set(x, "appStoreUrl", js.undefined)
     
     @scala.inline
-    def setAppStoreUrl(value: NullableOption[String]): Self = this.set("appStoreUrl", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppStoreUrl: Self = this.set("appStoreUrl", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setAppStoreUrlNull: Self = this.set("appStoreUrl", null)
+    def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPublisherNull: Self = StObject.set(x, "publisher", null)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setPublisher(value: NullableOption[String]): Self = this.set("publisher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublisher: Self = this.set("publisher", js.undefined)
-    
-    @scala.inline
-    def setPublisherNull: Self = this.set("publisher", null)
+    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
   }
 }

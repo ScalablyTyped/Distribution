@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chromeAppsStrings.no_update_
 import typings.chromeApps.chromeAppsStrings.throttled_
 import typings.chromeApps.chromeAppsStrings.update_available_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NOUPDATE extends js.Object {
+trait NOUPDATE extends StObject {
   
   var NO_UPDATE: no_update_ = js.native
   
@@ -25,27 +26,15 @@ object NOUPDATE {
   }
   
   @scala.inline
-  implicit class NOUPDATEOps[Self <: NOUPDATE] (val x: Self) extends AnyVal {
+  implicit class NOUPDATEMutableBuilder[Self <: NOUPDATE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNO_UPDATE(value: no_update_): Self = StObject.set(x, "NO_UPDATE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTHROTTLED(value: throttled_): Self = StObject.set(x, "THROTTLED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNO_UPDATE(value: no_update_): Self = this.set("NO_UPDATE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTHROTTLED(value: throttled_): Self = this.set("THROTTLED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUPDATE_AVAILABLE(value: update_available_): Self = this.set("UPDATE_AVAILABLE", value.asInstanceOf[js.Any])
+    def setUPDATE_AVAILABLE(value: update_available_): Self = StObject.set(x, "UPDATE_AVAILABLE", value.asInstanceOf[js.Any])
   }
 }

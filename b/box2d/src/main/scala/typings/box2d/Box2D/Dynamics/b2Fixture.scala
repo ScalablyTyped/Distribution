@@ -6,12 +6,13 @@ import typings.box2d.Box2D.Collision.b2AABB
 import typings.box2d.Box2D.Collision.b2RayCastInput
 import typings.box2d.Box2D.Collision.b2RayCastOutput
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2Fixture extends js.Object {
+trait b2Fixture extends StObject {
   
   /**
     * Get the fixture's AABB. This AABB may be enlarge and/or stale. If you need a more accurate AABB, compute it using the shape and the body transform.

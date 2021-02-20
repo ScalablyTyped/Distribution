@@ -1,11 +1,12 @@
 package typings.wepy.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnlyFromCamera extends js.Object {
+trait OnlyFromCamera extends StObject {
   
   var onlyFromCamera: js.UndefOr[Boolean] = js.native
   
@@ -20,33 +21,21 @@ object OnlyFromCamera {
   }
   
   @scala.inline
-  implicit class OnlyFromCameraOps[Self <: OnlyFromCamera] (val x: Self) extends AnyVal {
+  implicit class OnlyFromCameraMutableBuilder[Self <: OnlyFromCamera] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnlyFromCamera(value: Boolean): Self = StObject.set(x, "onlyFromCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnlyFromCameraUndefined: Self = StObject.set(x, "onlyFromCamera", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScanType(value: js.Array[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyFromCamera(value: Boolean): Self = this.set("onlyFromCamera", value.asInstanceOf[js.Any])
+    def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
     
     @scala.inline
-    def deleteOnlyFromCamera: Self = this.set("onlyFromCamera", js.undefined)
-    
-    @scala.inline
-    def setScanTypeVarargs(value: String*): Self = this.set("scanType", js.Array(value :_*))
-    
-    @scala.inline
-    def setScanType(value: js.Array[String]): Self = this.set("scanType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanType: Self = this.set("scanType", js.undefined)
+    def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value :_*))
   }
 }

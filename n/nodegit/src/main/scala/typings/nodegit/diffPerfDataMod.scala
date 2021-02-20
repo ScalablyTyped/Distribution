@@ -1,15 +1,15 @@
 package typings.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/diff-perf-data", JSImport.Namespace)
-@js.native
-object diffPerfDataMod extends js.Object {
+object diffPerfDataMod {
   
+  @JSImport("nodegit/diff-perf-data", "DiffPerfdata")
   @js.native
-  class DiffPerfdata () extends js.Object {
+  class DiffPerfdata () extends StObject {
     
     var oidCalculations: Double = js.native
     

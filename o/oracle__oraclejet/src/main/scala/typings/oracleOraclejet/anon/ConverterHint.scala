@@ -4,12 +4,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.`inline`
 import typings.oracleOraclejet.oracleOraclejetStrings.none
 import typings.oracleOraclejet.oracleOraclejetStrings.notewindow
 import typings.oracleOraclejet.oracleOraclejetStrings.placeholder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConverterHint extends js.Object {
+trait ConverterHint extends StObject {
   
   var converterHint: (js.Array[placeholder | notewindow | none]) | placeholder | notewindow | none = js.native
   
@@ -33,42 +34,30 @@ object ConverterHint {
   }
   
   @scala.inline
-  implicit class ConverterHintOps[Self <: ConverterHint] (val x: Self) extends AnyVal {
+  implicit class ConverterHintMutableBuilder[Self <: ConverterHint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConverterHint(value: (js.Array[placeholder | notewindow | none]) | placeholder | notewindow | none): Self = StObject.set(x, "converterHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConverterHintVarargs(value: (placeholder | notewindow | none)*): Self = StObject.set(x, "converterHint", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHelpInstruction(value: (js.Array[notewindow | none]) | notewindow | none): Self = StObject.set(x, "helpInstruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConverterHintVarargs(value: (placeholder | notewindow | none)*): Self = this.set("converterHint", js.Array(value :_*))
+    def setHelpInstructionVarargs(value: (notewindow | none)*): Self = StObject.set(x, "helpInstruction", js.Array(value :_*))
     
     @scala.inline
-    def setConverterHint(value: (js.Array[placeholder | notewindow | none]) | placeholder | notewindow | none): Self = this.set("converterHint", value.asInstanceOf[js.Any])
+    def setMessages(value: (js.Array[`inline` | notewindow | none]) | `inline` | notewindow | none): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpInstructionVarargs(value: (notewindow | none)*): Self = this.set("helpInstruction", js.Array(value :_*))
+    def setMessagesVarargs(value: (`inline` | notewindow | none)*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setHelpInstruction(value: (js.Array[notewindow | none]) | notewindow | none): Self = this.set("helpInstruction", value.asInstanceOf[js.Any])
+    def setValidatorHint(value: (js.Array[notewindow | none]) | notewindow | none): Self = StObject.set(x, "validatorHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesVarargs(value: (`inline` | notewindow | none)*): Self = this.set("messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: (js.Array[`inline` | notewindow | none]) | `inline` | notewindow | none): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidatorHintVarargs(value: (notewindow | none)*): Self = this.set("validatorHint", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidatorHint(value: (js.Array[notewindow | none]) | notewindow | none): Self = this.set("validatorHint", value.asInstanceOf[js.Any])
+    def setValidatorHintVarargs(value: (notewindow | none)*): Self = StObject.set(x, "validatorHint", js.Array(value :_*))
   }
 }

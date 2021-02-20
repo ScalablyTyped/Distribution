@@ -1,16 +1,14 @@
 package typings.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ddTrace.mod.Analyzable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
 @js.native
-trait Grpc_
-  extends Integration
-     with Analyzable {
+trait Grpc_ extends Instrumentation {
   
   /**
     * An array of metadata entries to record. Can also be a callback that returns
@@ -30,32 +28,20 @@ object Grpc_ {
   }
   
   @scala.inline
-  implicit class Grpc_Ops[Self <: Grpc_] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMetadataVarargs(value: String*): Self = this.set("metadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetadataFunction1(value: /* variables */ StringDictionary[js.Any] => StringDictionary[_]): Self = this.set("metadata", js.Any.fromFunction1(value))
+  implicit class Grpc_MutableBuilder[Self <: Grpc_] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setMetadata(
       value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[_]])
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataFunction1(value: /* variables */ StringDictionary[js.Any] => StringDictionary[_]): Self = StObject.set(x, "metadata", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    @scala.inline
+    def setMetadataVarargs(value: String*): Self = StObject.set(x, "metadata", js.Array(value :_*))
   }
 }

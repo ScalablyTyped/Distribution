@@ -2,16 +2,19 @@ package typings.stripe.mod.resources
 
 import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.checkouts.sessions.ICheckoutCreationOptions
 import typings.stripe.mod.checkouts.sessions.ICheckoutSession
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Sessions")
 @js.native
-class Sessions () extends StripeResource {
+class Sessions protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def create(data: ICheckoutCreationOptions): js.Promise[ICheckoutSession] = js.native
   def create(data: ICheckoutCreationOptions, options: HeaderOptions): js.Promise[ICheckoutSession] = js.native

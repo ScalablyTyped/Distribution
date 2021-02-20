@@ -1,11 +1,12 @@
 package typings.awsSdk.acmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filters extends js.Object {
+trait Filters extends StObject {
   
   /**
     * Specify one or more ExtendedKeyUsage extension values.
@@ -31,45 +32,33 @@ object Filters {
   }
   
   @scala.inline
-  implicit class FiltersOps[Self <: Filters] (val x: Self) extends AnyVal {
+  implicit class FiltersMutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtendedKeyUsage(value: ExtendedKeyUsageFilterList): Self = StObject.set(x, "extendedKeyUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtendedKeyUsageUndefined: Self = StObject.set(x, "extendedKeyUsage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtendedKeyUsageVarargs(value: ExtendedKeyUsageName*): Self = StObject.set(x, "extendedKeyUsage", js.Array(value :_*))
     
     @scala.inline
-    def setExtendedKeyUsageVarargs(value: ExtendedKeyUsageName*): Self = this.set("extendedKeyUsage", js.Array(value :_*))
+    def setKeyTypes(value: KeyAlgorithmList): Self = StObject.set(x, "keyTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedKeyUsage(value: ExtendedKeyUsageFilterList): Self = this.set("extendedKeyUsage", value.asInstanceOf[js.Any])
+    def setKeyTypesUndefined: Self = StObject.set(x, "keyTypes", js.undefined)
     
     @scala.inline
-    def deleteExtendedKeyUsage: Self = this.set("extendedKeyUsage", js.undefined)
+    def setKeyTypesVarargs(value: KeyAlgorithm*): Self = StObject.set(x, "keyTypes", js.Array(value :_*))
     
     @scala.inline
-    def setKeyTypesVarargs(value: KeyAlgorithm*): Self = this.set("keyTypes", js.Array(value :_*))
+    def setKeyUsage(value: KeyUsageFilterList): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyTypes(value: KeyAlgorithmList): Self = this.set("keyTypes", value.asInstanceOf[js.Any])
+    def setKeyUsageUndefined: Self = StObject.set(x, "keyUsage", js.undefined)
     
     @scala.inline
-    def deleteKeyTypes: Self = this.set("keyTypes", js.undefined)
-    
-    @scala.inline
-    def setKeyUsageVarargs(value: KeyUsageName*): Self = this.set("keyUsage", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeyUsage(value: KeyUsageFilterList): Self = this.set("keyUsage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyUsage: Self = this.set("keyUsage", js.undefined)
+    def setKeyUsageVarargs(value: KeyUsageName*): Self = StObject.set(x, "keyUsage", js.Array(value :_*))
   }
 }

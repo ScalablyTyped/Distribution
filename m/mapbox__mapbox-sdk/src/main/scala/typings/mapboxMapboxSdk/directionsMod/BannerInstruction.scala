@@ -1,11 +1,12 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BannerInstruction extends js.Object {
+trait BannerInstruction extends StObject {
   
   /**
     * Float indicating in meters, how far from the upcoming maneuver
@@ -41,45 +42,33 @@ object BannerInstruction {
   }
   
   @scala.inline
-  implicit class BannerInstructionOps[Self <: BannerInstruction] (val x: Self) extends AnyVal {
+  implicit class BannerInstructionMutableBuilder[Self <: BannerInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistanceAlongGeometry(value: Double): Self = StObject.set(x, "distanceAlongGeometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrimary(value: Instruction): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecondary(value: js.Array[Instruction]): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceAlongGeometry(value: Double): Self = this.set("distanceAlongGeometry", value.asInstanceOf[js.Any])
+    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
     @scala.inline
-    def setPrimary(value: Instruction): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setSecondaryVarargs(value: Instruction*): Self = StObject.set(x, "secondary", js.Array(value :_*))
     
     @scala.inline
-    def setSecondaryVarargs(value: Instruction*): Self = this.set("secondary", js.Array(value :_*))
+    def setSub(value: Sub): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondary(value: js.Array[Instruction]): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     
     @scala.inline
-    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    def setThen(value: js.Any): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSub(value: Sub): Self = this.set("sub", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSub: Self = this.set("sub", js.undefined)
-    
-    @scala.inline
-    def setThen(value: js.Any): Self = this.set("then", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThen: Self = this.set("then", js.undefined)
+    def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }
 }

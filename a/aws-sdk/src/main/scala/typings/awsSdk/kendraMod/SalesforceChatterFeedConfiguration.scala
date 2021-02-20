@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SalesforceChatterFeedConfiguration extends js.Object {
+trait SalesforceChatterFeedConfiguration extends StObject {
   
   /**
     * The name of the column in the Salesforce FeedItem table that contains the content to index. Typically this is the Body column.
@@ -36,45 +37,33 @@ object SalesforceChatterFeedConfiguration {
   }
   
   @scala.inline
-  implicit class SalesforceChatterFeedConfigurationOps[Self <: SalesforceChatterFeedConfiguration] (val x: Self) extends AnyVal {
+  implicit class SalesforceChatterFeedConfigurationMutableBuilder[Self <: SalesforceChatterFeedConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentDataFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DocumentDataFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentTitleFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DocumentTitleFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentTitleFieldNameUndefined: Self = StObject.set(x, "DocumentTitleFieldName", js.undefined)
     
     @scala.inline
-    def setDocumentDataFieldName(value: DataSourceFieldName): Self = this.set("DocumentDataFieldName", value.asInstanceOf[js.Any])
+    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "FieldMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentTitleFieldName(value: DataSourceFieldName): Self = this.set("DocumentTitleFieldName", value.asInstanceOf[js.Any])
+    def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
     
     @scala.inline
-    def deleteDocumentTitleFieldName: Self = this.set("DocumentTitleFieldName", js.undefined)
+    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
     
     @scala.inline
-    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = this.set("FieldMappings", js.Array(value :_*))
+    def setIncludeFilterTypes(value: SalesforceChatterFeedIncludeFilterTypes): Self = StObject.set(x, "IncludeFilterTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = this.set("FieldMappings", value.asInstanceOf[js.Any])
+    def setIncludeFilterTypesUndefined: Self = StObject.set(x, "IncludeFilterTypes", js.undefined)
     
     @scala.inline
-    def deleteFieldMappings: Self = this.set("FieldMappings", js.undefined)
-    
-    @scala.inline
-    def setIncludeFilterTypesVarargs(value: SalesforceChatterFeedIncludeFilterType*): Self = this.set("IncludeFilterTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncludeFilterTypes(value: SalesforceChatterFeedIncludeFilterTypes): Self = this.set("IncludeFilterTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeFilterTypes: Self = this.set("IncludeFilterTypes", js.undefined)
+    def setIncludeFilterTypesVarargs(value: SalesforceChatterFeedIncludeFilterType*): Self = StObject.set(x, "IncludeFilterTypes", js.Array(value :_*))
   }
 }

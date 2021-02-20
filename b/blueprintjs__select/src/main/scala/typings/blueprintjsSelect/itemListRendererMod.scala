@@ -4,20 +4,25 @@ import typings.blueprintjsSelect.listItemsUtilsMod.ICreateNewItem
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/select/lib/esm/common/itemListRenderer", JSImport.Namespace)
-@js.native
-object itemListRendererMod extends js.Object {
+object itemListRendererMod {
   
+  @JSImport("@blueprintjs/select/lib/esm/common/itemListRenderer", "renderFilteredItems")
+  @js.native
   def renderFilteredItems(props: IItemListRendererProps[_]): ReactNode = js.native
+  @JSImport("@blueprintjs/select/lib/esm/common/itemListRenderer", "renderFilteredItems")
+  @js.native
   def renderFilteredItems(props: IItemListRendererProps[_], noResults: js.UndefOr[ReactNode], initialContent: ReactNode): ReactNode = js.native
+  @JSImport("@blueprintjs/select/lib/esm/common/itemListRenderer", "renderFilteredItems")
+  @js.native
   def renderFilteredItems(props: IItemListRendererProps[_], noResults: ReactNode): ReactNode = js.native
   
   @js.native
-  trait IItemListRendererProps[T] extends js.Object {
+  trait IItemListRendererProps[T] extends StObject {
     
     /**
       * The currently focused item (for keyboard interactions), or `null` to

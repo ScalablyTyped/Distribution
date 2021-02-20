@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait ChartPivotOptionsLoadOptions extends js.Object {
+trait ChartPivotOptionsLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -60,48 +61,36 @@ object ChartPivotOptionsLoadOptions {
   }
   
   @scala.inline
-  implicit class ChartPivotOptionsLoadOptionsOps[Self <: ChartPivotOptionsLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ChartPivotOptionsLoadOptionsMutableBuilder[Self <: ChartPivotOptionsLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowAxisFieldButtons(value: Boolean): Self = StObject.set(x, "showAxisFieldButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setShowAxisFieldButtonsUndefined: Self = StObject.set(x, "showAxisFieldButtons", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setShowLegendFieldButtons(value: Boolean): Self = StObject.set(x, "showLegendFieldButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAxisFieldButtons(value: Boolean): Self = this.set("showAxisFieldButtons", value.asInstanceOf[js.Any])
+    def setShowLegendFieldButtonsUndefined: Self = StObject.set(x, "showLegendFieldButtons", js.undefined)
     
     @scala.inline
-    def deleteShowAxisFieldButtons: Self = this.set("showAxisFieldButtons", js.undefined)
+    def setShowReportFilterFieldButtons(value: Boolean): Self = StObject.set(x, "showReportFilterFieldButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLegendFieldButtons(value: Boolean): Self = this.set("showLegendFieldButtons", value.asInstanceOf[js.Any])
+    def setShowReportFilterFieldButtonsUndefined: Self = StObject.set(x, "showReportFilterFieldButtons", js.undefined)
     
     @scala.inline
-    def deleteShowLegendFieldButtons: Self = this.set("showLegendFieldButtons", js.undefined)
+    def setShowValueFieldButtons(value: Boolean): Self = StObject.set(x, "showValueFieldButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowReportFilterFieldButtons(value: Boolean): Self = this.set("showReportFilterFieldButtons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowReportFilterFieldButtons: Self = this.set("showReportFilterFieldButtons", js.undefined)
-    
-    @scala.inline
-    def setShowValueFieldButtons(value: Boolean): Self = this.set("showValueFieldButtons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowValueFieldButtons: Self = this.set("showValueFieldButtons", js.undefined)
+    def setShowValueFieldButtonsUndefined: Self = StObject.set(x, "showValueFieldButtons", js.undefined)
   }
 }

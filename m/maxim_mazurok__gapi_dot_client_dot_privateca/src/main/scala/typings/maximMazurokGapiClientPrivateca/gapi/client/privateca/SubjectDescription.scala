@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubjectDescription extends js.Object {
+trait SubjectDescription extends StObject {
   
   /** The "common name" of the distinguished name. */
   var commonName: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object SubjectDescription {
   }
   
   @scala.inline
-  implicit class SubjectDescriptionOps[Self <: SubjectDescription] (val x: Self) extends AnyVal {
+  implicit class SubjectDescriptionMutableBuilder[Self <: SubjectDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHexSerialNumber(value: String): Self = StObject.set(x, "hexSerialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonName(value: String): Self = this.set("commonName", value.asInstanceOf[js.Any])
+    def setHexSerialNumberUndefined: Self = StObject.set(x, "hexSerialNumber", js.undefined)
     
     @scala.inline
-    def deleteCommonName: Self = this.set("commonName", js.undefined)
+    def setLifetime(value: String): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHexSerialNumber(value: String): Self = this.set("hexSerialNumber", value.asInstanceOf[js.Any])
+    def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
     
     @scala.inline
-    def deleteHexSerialNumber: Self = this.set("hexSerialNumber", js.undefined)
+    def setNotAfterTime(value: String): Self = StObject.set(x, "notAfterTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifetime(value: String): Self = this.set("lifetime", value.asInstanceOf[js.Any])
+    def setNotAfterTimeUndefined: Self = StObject.set(x, "notAfterTime", js.undefined)
     
     @scala.inline
-    def deleteLifetime: Self = this.set("lifetime", js.undefined)
+    def setNotBeforeTime(value: String): Self = StObject.set(x, "notBeforeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAfterTime(value: String): Self = this.set("notAfterTime", value.asInstanceOf[js.Any])
+    def setNotBeforeTimeUndefined: Self = StObject.set(x, "notBeforeTime", js.undefined)
     
     @scala.inline
-    def deleteNotAfterTime: Self = this.set("notAfterTime", js.undefined)
+    def setSubject(value: Subject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotBeforeTime(value: String): Self = this.set("notBeforeTime", value.asInstanceOf[js.Any])
+    def setSubjectAltName(value: SubjectAltNames): Self = StObject.set(x, "subjectAltName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotBeforeTime: Self = this.set("notBeforeTime", js.undefined)
+    def setSubjectAltNameUndefined: Self = StObject.set(x, "subjectAltName", js.undefined)
     
     @scala.inline
-    def setSubject(value: Subject): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setSubjectAltName(value: SubjectAltNames): Self = this.set("subjectAltName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectAltName: Self = this.set("subjectAltName", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

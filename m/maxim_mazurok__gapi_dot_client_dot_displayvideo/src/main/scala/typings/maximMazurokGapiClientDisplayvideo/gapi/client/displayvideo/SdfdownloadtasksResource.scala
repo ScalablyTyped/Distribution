@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDisplayvideo.anon.PrettyPrintQuotaUserResource
 import typings.maximMazurokGapiClientDisplayvideo.anon.QuotaUserUploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SdfdownloadtasksResource extends js.Object {
+trait SdfdownloadtasksResource extends StObject {
   
   /**
     * Creates an SDF Download Task. Returns an Operation. An SDF Download Task is a long-running, asynchronous operation. The metadata type of this operation is SdfDownloadTaskMetadata.

@@ -1,11 +1,12 @@
 package typings.paypalCheckoutComponents.callbackDataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineItem extends js.Object {
+trait LineItem extends StObject {
   
   /**
     * Item description. Maximum 127 characters.
@@ -56,54 +57,42 @@ object LineItem {
   }
   
   @scala.inline
-  implicit class LineItemOps[Self <: LineItem] (val x: Self) extends AnyVal {
+  implicit class LineItemMutableBuilder[Self <: LineItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: LineItemKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: LineItemKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProductCode(value: String): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity(value: String): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
     @scala.inline
-    def setUnitAmount(value: String): Self = this.set("unitAmount", value.asInstanceOf[js.Any])
+    def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setUnitAmount(value: String): Self = StObject.set(x, "unitAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setUnitTaxAmount(value: String): Self = StObject.set(x, "unitTaxAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCode(value: String): Self = this.set("productCode", value.asInstanceOf[js.Any])
+    def setUnitTaxAmountUndefined: Self = StObject.set(x, "unitTaxAmount", js.undefined)
     
     @scala.inline
-    def deleteProductCode: Self = this.set("productCode", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitTaxAmount(value: String): Self = this.set("unitTaxAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitTaxAmount: Self = this.set("unitTaxAmount", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

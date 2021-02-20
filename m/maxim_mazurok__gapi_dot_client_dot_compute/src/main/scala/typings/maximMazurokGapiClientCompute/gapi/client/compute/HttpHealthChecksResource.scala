@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientCompute.anon.FieldsHttpHealthCheck
 import typings.maximMazurokGapiClientCompute.anon.FieldsKey
 import typings.maximMazurokGapiClientCompute.anon.HttpHealthCheckKey
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpHealthChecksResource extends js.Object {
+trait HttpHealthChecksResource extends StObject {
   
   /** Deletes the specified HttpHealthCheck resource. */
   def delete(): Request[Operation] = js.native

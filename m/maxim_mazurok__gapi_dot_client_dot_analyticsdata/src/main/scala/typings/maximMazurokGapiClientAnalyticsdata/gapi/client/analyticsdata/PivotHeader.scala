@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotHeader extends js.Object {
+trait PivotHeader extends StObject {
   
   /** The size is the same as the cardinality of the corresponding dimension combinations. */
   var pivotDimensionHeaders: js.UndefOr[js.Array[PivotDimensionHeader]] = js.native
@@ -25,33 +26,21 @@ object PivotHeader {
   }
   
   @scala.inline
-  implicit class PivotHeaderOps[Self <: PivotHeader] (val x: Self) extends AnyVal {
+  implicit class PivotHeaderMutableBuilder[Self <: PivotHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPivotDimensionHeaders(value: js.Array[PivotDimensionHeader]): Self = StObject.set(x, "pivotDimensionHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPivotDimensionHeadersUndefined: Self = StObject.set(x, "pivotDimensionHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPivotDimensionHeadersVarargs(value: PivotDimensionHeader*): Self = StObject.set(x, "pivotDimensionHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setPivotDimensionHeadersVarargs(value: PivotDimensionHeader*): Self = this.set("pivotDimensionHeaders", js.Array(value :_*))
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotDimensionHeaders(value: js.Array[PivotDimensionHeader]): Self = this.set("pivotDimensionHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePivotDimensionHeaders: Self = this.set("pivotDimensionHeaders", js.undefined)
-    
-    @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
   }
 }

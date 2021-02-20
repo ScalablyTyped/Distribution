@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PromiseOptions extends js.Object {
+trait PromiseOptions extends StObject {
   
   /**
     * Register callbacks for success or failure.
@@ -65,30 +66,18 @@ object PromiseOptions {
   }
   
   @scala.inline
-  implicit class PromiseOptionsOps[Self <: PromiseOptions] (val x: Self) extends AnyVal {
+  implicit class PromiseOptionsMutableBuilder[Self <: PromiseOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDone(value: js.Function => PromiseOptions): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailure(value: js.Any => PromiseOptions): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuccess(value: js.Any => PromiseOptions): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDone(value: js.Function => PromiseOptions): Self = this.set("done", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFailure(value: js.Any => PromiseOptions): Self = this.set("failure", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSuccess(value: js.Any => PromiseOptions): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setThen(value: (js.Function, js.Function) => PromiseOptions): Self = this.set("then", js.Any.fromFunction2(value))
+    def setThen(value: (js.Function, js.Function) => PromiseOptions): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
   }
 }

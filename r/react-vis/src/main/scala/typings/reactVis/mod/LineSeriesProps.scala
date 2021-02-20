@@ -2,6 +2,7 @@ package typings.reactVis.mod
 
 import typings.reactVis.reactVisStrings.dashed
 import typings.reactVis.reactVisStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LineSeriesProps extends AbstractSeriesProps[LineSeriesPoint] {
   
-   // default: 'solid'
+  // default: 'solid'
   var curve: js.UndefOr[String | (js.Function1[/* x */ js.Any, _])] = js.native
   
-   // default: null
+  // default: null
   var getNull: js.UndefOr[RVGetNull[LineSeriesPoint]] = js.native
   
   var strokeStyle: js.UndefOr[dashed | solid] = js.native
@@ -26,39 +27,27 @@ object LineSeriesProps {
   }
   
   @scala.inline
-  implicit class LineSeriesPropsOps[Self <: LineSeriesProps] (val x: Self) extends AnyVal {
+  implicit class LineSeriesPropsMutableBuilder[Self <: LineSeriesProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurve(value: String | (js.Function1[/* x */ js.Any, _])): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurveFunction1(value: /* x */ js.Any => _): Self = StObject.set(x, "curve", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
     @scala.inline
-    def setCurveFunction1(value: /* x */ js.Any => _): Self = this.set("curve", js.Any.fromFunction1(value))
+    def setGetNull(value: LineSeriesPoint => js.Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCurve(value: String | (js.Function1[/* x */ js.Any, _])): Self = this.set("curve", value.asInstanceOf[js.Any])
+    def setGetNullUndefined: Self = StObject.set(x, "getNull", js.undefined)
     
     @scala.inline
-    def deleteCurve: Self = this.set("curve", js.undefined)
+    def setStrokeStyle(value: dashed | solid): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNull(value: LineSeriesPoint => js.Any): Self = this.set("getNull", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetNull: Self = this.set("getNull", js.undefined)
-    
-    @scala.inline
-    def setStrokeStyle(value: dashed | solid): Self = this.set("strokeStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeStyle: Self = this.set("strokeStyle", js.undefined)
+    def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
   }
 }

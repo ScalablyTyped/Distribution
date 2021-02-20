@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoMatchSet extends js.Object {
+trait GeoMatchSet extends StObject {
   
   /**
     * An array of GeoMatchConstraint objects, which contain the country that you want AWS WAF to search for.
@@ -31,33 +32,21 @@ object GeoMatchSet {
   }
   
   @scala.inline
-  implicit class GeoMatchSetOps[Self <: GeoMatchSet] (val x: Self) extends AnyVal {
+  implicit class GeoMatchSetMutableBuilder[Self <: GeoMatchSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeoMatchConstraints(value: GeoMatchConstraints): Self = StObject.set(x, "GeoMatchConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeoMatchConstraintsVarargs(value: GeoMatchConstraint*): Self = StObject.set(x, "GeoMatchConstraints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoMatchConstraintsVarargs(value: GeoMatchConstraint*): Self = this.set("GeoMatchConstraints", js.Array(value :_*))
+    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoMatchConstraints(value: GeoMatchConstraints): Self = this.set("GeoMatchConstraints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGeoMatchSetId(value: ResourceId): Self = this.set("GeoMatchSetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

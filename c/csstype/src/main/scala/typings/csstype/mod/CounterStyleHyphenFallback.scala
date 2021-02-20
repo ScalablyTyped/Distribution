@@ -1,11 +1,12 @@
 package typings.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CounterStyleHyphenFallback extends js.Object {
+trait CounterStyleHyphenFallback extends StObject {
   
   var `additive-symbols`: js.UndefOr[String | js.Array[String]] = js.native
   
@@ -36,108 +37,96 @@ object CounterStyleHyphenFallback {
   }
   
   @scala.inline
-  implicit class CounterStyleHyphenFallbackOps[Self <: CounterStyleHyphenFallback] (val x: Self) extends AnyVal {
+  implicit class CounterStyleHyphenFallbackMutableBuilder[Self <: CounterStyleHyphenFallback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAdditive-symbols`(value: String | js.Array[String]): Self = StObject.set(x, "additive-symbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAdditive-symbolsUndefined`: Self = StObject.set(x, "additive-symbols", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAdditive-symbolsVarargs`(value: String*): Self = StObject.set(x, "additive-symbols", js.Array(value :_*))
     
     @scala.inline
-    def `setAdditive-symbolsVarargs`(value: String*): Self = this.set("additive-symbols", js.Array(value :_*))
+    def setFallback(value: String | js.Array[String]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAdditive-symbols`(value: String | js.Array[String]): Self = this.set("additive-symbols", value.asInstanceOf[js.Any])
+    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
     @scala.inline
-    def `deleteAdditive-symbols`: Self = this.set("additive-symbols", js.undefined)
+    def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value :_*))
     
     @scala.inline
-    def setFallbackVarargs(value: String*): Self = this.set("fallback", js.Array(value :_*))
+    def setNegative(value: String | js.Array[String]): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallback(value: String | js.Array[String]): Self = this.set("fallback", value.asInstanceOf[js.Any])
+    def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
     
     @scala.inline
-    def deleteFallback: Self = this.set("fallback", js.undefined)
+    def setNegativeVarargs(value: String*): Self = StObject.set(x, "negative", js.Array(value :_*))
     
     @scala.inline
-    def setNegativeVarargs(value: String*): Self = this.set("negative", js.Array(value :_*))
+    def setPad(value: String | js.Array[String]): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegative(value: String | js.Array[String]): Self = this.set("negative", value.asInstanceOf[js.Any])
+    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
     
     @scala.inline
-    def deleteNegative: Self = this.set("negative", js.undefined)
+    def setPadVarargs(value: String*): Self = StObject.set(x, "pad", js.Array(value :_*))
     
     @scala.inline
-    def setPadVarargs(value: String*): Self = this.set("pad", js.Array(value :_*))
+    def setPrefix(value: String | js.Array[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPad(value: String | js.Array[String]): Self = this.set("pad", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def deletePad: Self = this.set("pad", js.undefined)
+    def setPrefixVarargs(value: String*): Self = StObject.set(x, "prefix", js.Array(value :_*))
     
     @scala.inline
-    def setPrefixVarargs(value: String*): Self = this.set("prefix", js.Array(value :_*))
+    def setRange(value: CounterStyleRangeProperty | js.Array[CounterStyleRangeProperty]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String | js.Array[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setRangeVarargs(value: CounterStyleRangeProperty*): Self = StObject.set(x, "range", js.Array(value :_*))
     
     @scala.inline
-    def setRangeVarargs(value: CounterStyleRangeProperty*): Self = this.set("range", js.Array(value :_*))
+    def `setSpeak-as`(value: CounterStyleSpeakAsProperty | js.Array[CounterStyleSpeakAsProperty]): Self = StObject.set(x, "speak-as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: CounterStyleRangeProperty | js.Array[CounterStyleRangeProperty]): Self = this.set("range", value.asInstanceOf[js.Any])
+    def `setSpeak-asUndefined`: Self = StObject.set(x, "speak-as", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def `setSpeak-asVarargs`(value: CounterStyleSpeakAsProperty*): Self = StObject.set(x, "speak-as", js.Array(value :_*))
     
     @scala.inline
-    def `setSpeak-asVarargs`(value: CounterStyleSpeakAsProperty*): Self = this.set("speak-as", js.Array(value :_*))
+    def setSuffix(value: String | js.Array[String]): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSpeak-as`(value: CounterStyleSpeakAsProperty | js.Array[CounterStyleSpeakAsProperty]): Self = this.set("speak-as", value.asInstanceOf[js.Any])
+    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     
     @scala.inline
-    def `deleteSpeak-as`: Self = this.set("speak-as", js.undefined)
+    def setSuffixVarargs(value: String*): Self = StObject.set(x, "suffix", js.Array(value :_*))
     
     @scala.inline
-    def setSuffixVarargs(value: String*): Self = this.set("suffix", js.Array(value :_*))
+    def setSymbols(value: String | js.Array[String]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuffix(value: String | js.Array[String]): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
     
     @scala.inline
-    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    def setSymbolsVarargs(value: String*): Self = StObject.set(x, "symbols", js.Array(value :_*))
     
     @scala.inline
-    def setSymbolsVarargs(value: String*): Self = this.set("symbols", js.Array(value :_*))
+    def setSystem(value: CounterStyleSystemProperty | js.Array[CounterStyleSystemProperty]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbols(value: String | js.Array[String]): Self = this.set("symbols", value.asInstanceOf[js.Any])
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
     @scala.inline
-    def deleteSymbols: Self = this.set("symbols", js.undefined)
-    
-    @scala.inline
-    def setSystemVarargs(value: CounterStyleSystemProperty*): Self = this.set("system", js.Array(value :_*))
-    
-    @scala.inline
-    def setSystem(value: CounterStyleSystemProperty | js.Array[CounterStyleSystemProperty]): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
+    def setSystemVarargs(value: CounterStyleSystemProperty*): Self = StObject.set(x, "system", js.Array(value :_*))
   }
 }

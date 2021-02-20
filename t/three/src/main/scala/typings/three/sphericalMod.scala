@@ -1,16 +1,16 @@
 package typings.three
 
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Spherical", JSImport.Namespace)
-@js.native
-object sphericalMod extends js.Object {
+object sphericalMod {
   
+  @JSImport("three/src/math/Spherical", "Spherical")
   @js.native
-  class Spherical () extends js.Object {
+  class Spherical () extends StObject {
     def this(radius: Double) = this()
     def this(radius: js.UndefOr[scala.Nothing], phi: Double) = this()
     def this(radius: Double, phi: Double) = this()

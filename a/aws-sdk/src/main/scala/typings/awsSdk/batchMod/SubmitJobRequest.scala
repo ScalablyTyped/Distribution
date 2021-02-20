@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubmitJobRequest extends js.Object {
+trait SubmitJobRequest extends StObject {
   
   /**
     * The array properties for the submitted job, such as the size of the array. The array size can be between 2 and 10,000. If you specify array properties for a job, it becomes an array job. For more information, see Array Jobs in the AWS Batch User Guide.
@@ -71,78 +72,66 @@ object SubmitJobRequest {
   }
   
   @scala.inline
-  implicit class SubmitJobRequestOps[Self <: SubmitJobRequest] (val x: Self) extends AnyVal {
+  implicit class SubmitJobRequestMutableBuilder[Self <: SubmitJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayProperties(value: ArrayProperties): Self = StObject.set(x, "arrayProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayPropertiesUndefined: Self = StObject.set(x, "arrayProperties", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerOverrides(value: ContainerOverrides): Self = StObject.set(x, "containerOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobDefinition(value: String): Self = this.set("jobDefinition", value.asInstanceOf[js.Any])
+    def setContainerOverridesUndefined: Self = StObject.set(x, "containerOverrides", js.undefined)
     
     @scala.inline
-    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    def setDependsOn(value: JobDependencyList): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobQueue(value: String): Self = this.set("jobQueue", value.asInstanceOf[js.Any])
+    def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
     @scala.inline
-    def setArrayProperties(value: ArrayProperties): Self = this.set("arrayProperties", value.asInstanceOf[js.Any])
+    def setDependsOnVarargs(value: JobDependency*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
     
     @scala.inline
-    def deleteArrayProperties: Self = this.set("arrayProperties", js.undefined)
+    def setJobDefinition(value: String): Self = StObject.set(x, "jobDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerOverrides(value: ContainerOverrides): Self = this.set("containerOverrides", value.asInstanceOf[js.Any])
+    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerOverrides: Self = this.set("containerOverrides", js.undefined)
+    def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependsOnVarargs(value: JobDependency*): Self = this.set("dependsOn", js.Array(value :_*))
+    def setNodeOverrides(value: NodeOverrides): Self = StObject.set(x, "nodeOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependsOn(value: JobDependencyList): Self = this.set("dependsOn", value.asInstanceOf[js.Any])
+    def setNodeOverridesUndefined: Self = StObject.set(x, "nodeOverrides", js.undefined)
     
     @scala.inline
-    def deleteDependsOn: Self = this.set("dependsOn", js.undefined)
+    def setParameters(value: ParametersMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeOverrides(value: NodeOverrides): Self = this.set("nodeOverrides", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteNodeOverrides: Self = this.set("nodeOverrides", js.undefined)
+    def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ParametersMap): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryStrategy(value: RetryStrategy): Self = this.set("retryStrategy", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteRetryStrategy: Self = this.set("retryStrategy", js.undefined)
+    def setTimeout(value: JobTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagrisTagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: JobTimeout): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

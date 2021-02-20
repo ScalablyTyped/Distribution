@@ -1,12 +1,13 @@
 package typings.pkgcloud.mod
 
 import typings.pkgcloud.pkgcloudStrings.azure
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AzureProviderOptions extends js.Object {
+trait AzureProviderOptions extends StObject {
   
   var location: js.UndefOr[String] = js.native
   
@@ -25,33 +26,21 @@ object AzureProviderOptions {
   }
   
   @scala.inline
-  implicit class AzureProviderOptionsOps[Self <: AzureProviderOptions] (val x: Self) extends AnyVal {
+  implicit class AzureProviderOptionsMutableBuilder[Self <: AzureProviderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvider(value: azure): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: azure): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setStorageAccessKey(value: String): Self = StObject.set(x, "storageAccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageAccessKey(value: String): Self = this.set("storageAccessKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageAccount(value: String): Self = this.set("storageAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setStorageAccount(value: String): Self = StObject.set(x, "storageAccount", value.asInstanceOf[js.Any])
   }
 }

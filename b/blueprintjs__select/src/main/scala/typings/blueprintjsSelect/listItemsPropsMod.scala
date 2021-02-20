@@ -16,19 +16,30 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", JSImport.Namespace)
-@js.native
-object listItemsPropsMod extends js.Object {
+object listItemsPropsMod {
   
+  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
+  @js.native
   def executeItemsEqual[T](): Boolean = js.native
+  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
+  @js.native
   def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: T): Boolean = js.native
+  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
+  @js.native
   def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: T, itemB: T): Boolean = js.native
+  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
+  @js.native
   def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: js.UndefOr[scala.Nothing], itemB: T): Boolean = js.native
+  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
+  @js.native
   def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: Null, itemB: T): Boolean = js.native
+  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
+  @js.native
   def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T]): Boolean = js.native
   
   @js.native

@@ -2,13 +2,14 @@ package typings.aureliaTemplating.mod
 
 import typings.aureliaDependencyInjection.mod.Container
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "TemplatingEngine")
 @js.native
-class TemplatingEngine protected () extends js.Object {
+class TemplatingEngine protected () extends StObject {
   /**
     * Creates an instance of TemplatingEngine.
     * @param container The root DI container.

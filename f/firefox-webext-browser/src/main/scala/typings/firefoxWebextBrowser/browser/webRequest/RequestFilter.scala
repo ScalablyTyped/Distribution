@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object describing filters to apply to webRequest events. */
 @js.native
-trait RequestFilter extends js.Object {
+trait RequestFilter extends StObject {
   
   /** If provided, requests that do not match the incognito state will be filtered out. */
   var incognito: js.UndefOr[Boolean] = js.native
@@ -30,51 +31,39 @@ object RequestFilter {
   }
   
   @scala.inline
-  implicit class RequestFilterOps[Self <: RequestFilter] (val x: Self) extends AnyVal {
+  implicit class RequestFilterMutableBuilder[Self <: RequestFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlsVarargs(value: String*): Self = this.set("urls", js.Array(value :_*))
+    def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     
     @scala.inline
-    def setUrls(value: js.Array[String]): Self = this.set("urls", value.asInstanceOf[js.Any])
+    def setTypes(value: js.Array[ResourceType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncognito(value: Boolean): Self = this.set("incognito", value.asInstanceOf[js.Any])
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteIncognito: Self = this.set("incognito", js.undefined)
+    def setTypesVarargs(value: ResourceType*): Self = StObject.set(x, "types", js.Array(value :_*))
     
     @scala.inline
-    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
+    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabId: Self = this.set("tabId", js.undefined)
+    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
     
     @scala.inline
-    def setTypesVarargs(value: ResourceType*): Self = this.set("types", js.Array(value :_*))
+    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypes(value: js.Array[ResourceType]): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
-    
-    @scala.inline
-    def setWindowId(value: Double): Self = this.set("windowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowId: Self = this.set("windowId", js.undefined)
+    def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompilerOptions extends js.Object {
+trait CompilerOptions extends StObject {
   
   var defaultEncapsulation: js.UndefOr[ViewEncapsulation] = js.native
   
@@ -26,51 +27,39 @@ object CompilerOptions {
   }
   
   @scala.inline
-  implicit class CompilerOptionsOps[Self <: CompilerOptions] (val x: Self) extends AnyVal {
+  implicit class CompilerOptionsMutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "defaultEncapsulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultEncapsulationUndefined: Self = StObject.set(x, "defaultEncapsulation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMissingTranslation(value: MissingTranslationStrategy): Self = StObject.set(x, "missingTranslation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEncapsulation(value: ViewEncapsulation): Self = this.set("defaultEncapsulation", value.asInstanceOf[js.Any])
+    def setMissingTranslationUndefined: Self = StObject.set(x, "missingTranslation", js.undefined)
     
     @scala.inline
-    def deleteDefaultEncapsulation: Self = this.set("defaultEncapsulation", js.undefined)
+    def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissingTranslation(value: MissingTranslationStrategy): Self = this.set("missingTranslation", value.asInstanceOf[js.Any])
+    def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
     
     @scala.inline
-    def deleteMissingTranslation: Self = this.set("missingTranslation", js.undefined)
+    def setProviders(value: js.Array[StaticProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveWhitespaces(value: Boolean): Self = this.set("preserveWhitespaces", value.asInstanceOf[js.Any])
+    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
     @scala.inline
-    def deletePreserveWhitespaces: Self = this.set("preserveWhitespaces", js.undefined)
+    def setProvidersVarargs(value: StaticProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
     @scala.inline
-    def setProvidersVarargs(value: StaticProvider*): Self = this.set("providers", js.Array(value :_*))
+    def setUseJit(value: Boolean): Self = StObject.set(x, "useJit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviders(value: js.Array[StaticProvider]): Self = this.set("providers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviders: Self = this.set("providers", js.undefined)
-    
-    @scala.inline
-    def setUseJit(value: Boolean): Self = this.set("useJit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseJit: Self = this.set("useJit", js.undefined)
+    def setUseJitUndefined: Self = StObject.set(x, "useJit", js.undefined)
   }
 }

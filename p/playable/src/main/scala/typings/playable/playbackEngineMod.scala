@@ -2,13 +2,38 @@ package typings.playable
 
 import typings.playable.playbackEngineTypesMod.IPlaybackEngine
 import typings.playable.playbackEngineTypesMod.IPlaybackEngineDependencies
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/playback-engine/playback-engine", JSImport.Namespace)
-@js.native
-object playbackEngineMod extends js.Object {
+object playbackEngineMod {
+  
+  @JSImport("playable/dist/src/modules/playback-engine/playback-engine", JSImport.Default)
+  @js.native
+  class default protected () extends Engine {
+    def this(hasEventEmitterNativeOutputConfig: IPlaybackEngineDependencies) = this()
+  }
+  object default {
+    
+    @JSImport("playable/dist/src/modules/playback-engine/playback-engine", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("playable/dist/src/modules/playback-engine/playback-engine", "default.dependencies")
+    @js.native
+    def dependencies: js.Array[String] = js.native
+    @scala.inline
+    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("playable/dist/src/modules/playback-engine/playback-engine", "default.moduleName")
+    @js.native
+    def moduleName: String = js.native
+    @scala.inline
+    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait Engine extends IPlaybackEngine {
@@ -103,18 +128,5 @@ object playbackEngineMod extends js.Object {
       * player.unmute(true);
       */
     def unmute(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends Engine {
-    def this(hasEventEmitterNativeOutputConfig: IPlaybackEngineDependencies) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var dependencies: js.Array[String] = js.native
-    
-    var moduleName: String = js.native
   }
 }

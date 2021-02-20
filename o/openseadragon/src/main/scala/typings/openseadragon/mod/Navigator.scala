@@ -1,12 +1,14 @@
 package typings.openseadragon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "Navigator")
 @js.native
-class Navigator () extends Viewer {
+class Navigator protected () extends Viewer {
+  def this(options: Options) = this()
   
   def setFlip(state: Boolean): Unit = js.native
   

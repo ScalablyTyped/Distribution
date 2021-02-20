@@ -1,5 +1,6 @@
 package typings.chromeApps.global.chrome
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +13,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The chrome.types API contains type declarations for Chrome.
   */
-@JSGlobal("chrome.types")
-@js.native
-object types extends js.Object
+object types

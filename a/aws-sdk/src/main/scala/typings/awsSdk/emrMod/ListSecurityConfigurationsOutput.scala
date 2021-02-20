@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSecurityConfigurationsOutput extends js.Object {
+trait ListSecurityConfigurationsOutput extends StObject {
   
   /**
     * A pagination token that indicates the next set of results to retrieve. Include the marker in the next ListSecurityConfiguration call to retrieve the next page of results, if required.
@@ -26,33 +27,21 @@ object ListSecurityConfigurationsOutput {
   }
   
   @scala.inline
-  implicit class ListSecurityConfigurationsOutputOps[Self <: ListSecurityConfigurationsOutput] (val x: Self) extends AnyVal {
+  implicit class ListSecurityConfigurationsOutputMutableBuilder[Self <: ListSecurityConfigurationsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityConfigurations(value: SecurityConfigurationList): Self = StObject.set(x, "SecurityConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setSecurityConfigurationsUndefined: Self = StObject.set(x, "SecurityConfigurations", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setSecurityConfigurationsVarargs(value: SecurityConfigurationSummary*): Self = this.set("SecurityConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecurityConfigurations(value: SecurityConfigurationList): Self = this.set("SecurityConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityConfigurations: Self = this.set("SecurityConfigurations", js.undefined)
+    def setSecurityConfigurationsVarargs(value: SecurityConfigurationSummary*): Self = StObject.set(x, "SecurityConfigurations", js.Array(value :_*))
   }
 }

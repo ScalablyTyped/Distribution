@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,48 +125,36 @@ object XRegressionCurveCalculator {
   }
   
   @scala.inline
-  implicit class XRegressionCurveCalculatorOps[Self <: XRegressionCurveCalculator] (val x: Self) extends AnyVal {
+  implicit class XRegressionCurveCalculatorMutableBuilder[Self <: XRegressionCurveCalculator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrelationCoefficient(value: Double): Self = StObject.set(x, "CorrelationCoefficient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCorrelationCoefficient(value: () => Double): Self = StObject.set(x, "getCorrelationCoefficient", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurveValue(value: Double => Double): Self = StObject.set(x, "getCurveValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCorrelationCoefficient(value: Double): Self = this.set("CorrelationCoefficient", value.asInstanceOf[js.Any])
+    def setGetCurveValues(value: (Double, Double, Double, XScaling, XScaling, Boolean) => SafeArray[RealPoint2D]): Self = StObject.set(x, "getCurveValues", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setRepresentation(value: String): Self = this.set("Representation", value.asInstanceOf[js.Any])
+    def setGetFormattedRepresentation(value: (XNumberFormatsSupplier, Double, Double) => String): Self = StObject.set(x, "getFormattedRepresentation", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetCorrelationCoefficient(value: () => Double): Self = this.set("getCorrelationCoefficient", js.Any.fromFunction0(value))
+    def setGetRepresentation(value: () => String): Self = StObject.set(x, "getRepresentation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurveValue(value: Double => Double): Self = this.set("getCurveValue", js.Any.fromFunction1(value))
+    def setRecalculateRegression(value: (SeqEquiv[Double], SeqEquiv[Double]) => Unit): Self = StObject.set(x, "recalculateRegression", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCurveValues(value: (Double, Double, Double, XScaling, XScaling, Boolean) => SafeArray[RealPoint2D]): Self = this.set("getCurveValues", js.Any.fromFunction6(value))
+    def setRepresentation(value: String): Self = StObject.set(x, "Representation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetFormattedRepresentation(value: (XNumberFormatsSupplier, Double, Double) => String): Self = this.set("getFormattedRepresentation", js.Any.fromFunction3(value))
+    def setSetRegressionProperties(value: (Double, Boolean, Double, Double) => Unit): Self = StObject.set(x, "setRegressionProperties", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetRepresentation(value: () => String): Self = this.set("getRepresentation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRecalculateRegression(value: (SeqEquiv[Double], SeqEquiv[Double]) => Unit): Self = this.set("recalculateRegression", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetRegressionProperties(value: (Double, Boolean, Double, Double) => Unit): Self = this.set("setRegressionProperties", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSetXYNames(value: (String, String) => Unit): Self = this.set("setXYNames", js.Any.fromFunction2(value))
+    def setSetXYNames(value: (String, String) => Unit): Self = StObject.set(x, "setXYNames", js.Any.fromFunction2(value))
   }
 }

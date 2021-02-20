@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SpeakerLabelsResult. */
 @js.native
-trait SpeakerLabelsResult extends js.Object {
+trait SpeakerLabelsResult extends StObject {
   
   /** A score that indicates the service's confidence in its identification of the speaker in the range of 0.0 to 1.0. */
   var confidence: Double = js.native
@@ -32,33 +33,21 @@ object SpeakerLabelsResult {
   }
   
   @scala.inline
-  implicit class SpeakerLabelsResultOps[Self <: SpeakerLabelsResult] (val x: Self) extends AnyVal {
+  implicit class SpeakerLabelsResultMutableBuilder[Self <: SpeakerLabelsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinal_results(value: Boolean): Self = StObject.set(x, "final_results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setSpeaker(value: Double): Self = StObject.set(x, "speaker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinal_results(value: Boolean): Self = this.set("final_results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpeaker(value: Double): Self = this.set("speaker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

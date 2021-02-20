@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.presentation
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.drawing.XDrawPage
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,24 +33,12 @@ object XHandoutMasterSupplier {
   }
   
   @scala.inline
-  implicit class XHandoutMasterSupplierOps[Self <: XHandoutMasterSupplier] (val x: Self) extends AnyVal {
+  implicit class XHandoutMasterSupplierMutableBuilder[Self <: XHandoutMasterSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHandoutMasterPage(value: () => XDrawPage): Self = StObject.set(x, "getHandoutMasterPage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHandoutMasterPage(value: XDrawPage): Self = this.set("HandoutMasterPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetHandoutMasterPage(value: () => XDrawPage): Self = this.set("getHandoutMasterPage", js.Any.fromFunction0(value))
+    def setHandoutMasterPage(value: XDrawPage): Self = StObject.set(x, "HandoutMasterPage", value.asInstanceOf[js.Any])
   }
 }

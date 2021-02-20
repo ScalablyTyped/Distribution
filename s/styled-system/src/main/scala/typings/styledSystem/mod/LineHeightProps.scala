@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait LineHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The line-height CSS property sets the amount of space used for lines, such as in text. On block-level elements,
@@ -26,30 +27,18 @@ object LineHeightProps {
   }
   
   @scala.inline
-  implicit class LineHeightPropsOps[Self <: LineHeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (LineHeightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class LineHeightPropsMutableBuilder[Self <: LineHeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (LineHeightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineHeightNull: Self = StObject.set(x, "lineHeight", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def setLineHeightVarargs(value: (TVal | Null)*): Self = this.set("lineHeight", js.Array(value :_*))
-    
-    @scala.inline
-    def setLineHeight(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
-    
-    @scala.inline
-    def setLineHeightNull: Self = this.set("lineHeight", null)
+    def setLineHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
   }
 }

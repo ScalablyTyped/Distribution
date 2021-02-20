@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.beans
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * com.sun.star.beans.PropertyAttribute.MAYBEVOID} . It might also be useful in other situations, for example as the return type of an interface method.
   */
 @js.native
-trait Optional[T] extends js.Object {
+trait Optional[T] extends StObject {
   
   /** Marks this structure instance as having an actual value. */
   var IsPresent: Boolean = js.native
@@ -33,24 +34,12 @@ object Optional {
   }
   
   @scala.inline
-  implicit class OptionalOps[Self <: Optional[_], T] (val x: Self with Optional[T]) extends AnyVal {
+  implicit class OptionalMutableBuilder[Self <: Optional[_], T] (val x: Self with Optional[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsPresent(value: Boolean): Self = StObject.set(x, "IsPresent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsPresent(value: Boolean): Self = this.set("IsPresent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: T): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: T): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

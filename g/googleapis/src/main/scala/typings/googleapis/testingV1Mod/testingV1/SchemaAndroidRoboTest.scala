@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * or physical Android Device, finding culprits and crashes as it goes.
   */
 @js.native
-trait SchemaAndroidRoboTest extends js.Object {
+trait SchemaAndroidRoboTest extends StObject {
   
   /**
     * The APK for the application under test.
@@ -74,78 +75,66 @@ object SchemaAndroidRoboTest {
   }
   
   @scala.inline
-  implicit class SchemaAndroidRoboTestOps[Self <: SchemaAndroidRoboTest] (val x: Self) extends AnyVal {
+  implicit class SchemaAndroidRoboTestMutableBuilder[Self <: SchemaAndroidRoboTest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppApk(value: SchemaFileReference): Self = StObject.set(x, "appApk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppApkUndefined: Self = StObject.set(x, "appApk", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppBundle(value: SchemaAppBundle): Self = StObject.set(x, "appBundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppApk(value: SchemaFileReference): Self = this.set("appApk", value.asInstanceOf[js.Any])
+    def setAppBundleUndefined: Self = StObject.set(x, "appBundle", js.undefined)
     
     @scala.inline
-    def deleteAppApk: Self = this.set("appApk", js.undefined)
+    def setAppInitialActivity(value: String): Self = StObject.set(x, "appInitialActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppBundle(value: SchemaAppBundle): Self = this.set("appBundle", value.asInstanceOf[js.Any])
+    def setAppInitialActivityUndefined: Self = StObject.set(x, "appInitialActivity", js.undefined)
     
     @scala.inline
-    def deleteAppBundle: Self = this.set("appBundle", js.undefined)
+    def setAppPackageId(value: String): Self = StObject.set(x, "appPackageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppInitialActivity(value: String): Self = this.set("appInitialActivity", value.asInstanceOf[js.Any])
+    def setAppPackageIdUndefined: Self = StObject.set(x, "appPackageId", js.undefined)
     
     @scala.inline
-    def deleteAppInitialActivity: Self = this.set("appInitialActivity", js.undefined)
+    def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppPackageId(value: String): Self = this.set("appPackageId", value.asInstanceOf[js.Any])
+    def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
     
     @scala.inline
-    def deleteAppPackageId: Self = this.set("appPackageId", js.undefined)
+    def setMaxSteps(value: Double): Self = StObject.set(x, "maxSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDepth(value: Double): Self = this.set("maxDepth", value.asInstanceOf[js.Any])
+    def setMaxStepsUndefined: Self = StObject.set(x, "maxSteps", js.undefined)
     
     @scala.inline
-    def deleteMaxDepth: Self = this.set("maxDepth", js.undefined)
+    def setRoboDirectives(value: js.Array[SchemaRoboDirective]): Self = StObject.set(x, "roboDirectives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSteps(value: Double): Self = this.set("maxSteps", value.asInstanceOf[js.Any])
+    def setRoboDirectivesUndefined: Self = StObject.set(x, "roboDirectives", js.undefined)
     
     @scala.inline
-    def deleteMaxSteps: Self = this.set("maxSteps", js.undefined)
+    def setRoboDirectivesVarargs(value: SchemaRoboDirective*): Self = StObject.set(x, "roboDirectives", js.Array(value :_*))
     
     @scala.inline
-    def setRoboDirectivesVarargs(value: SchemaRoboDirective*): Self = this.set("roboDirectives", js.Array(value :_*))
+    def setRoboScript(value: SchemaFileReference): Self = StObject.set(x, "roboScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoboDirectives(value: js.Array[SchemaRoboDirective]): Self = this.set("roboDirectives", value.asInstanceOf[js.Any])
+    def setRoboScriptUndefined: Self = StObject.set(x, "roboScript", js.undefined)
     
     @scala.inline
-    def deleteRoboDirectives: Self = this.set("roboDirectives", js.undefined)
+    def setStartingIntents(value: js.Array[SchemaRoboStartingIntent]): Self = StObject.set(x, "startingIntents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoboScript(value: SchemaFileReference): Self = this.set("roboScript", value.asInstanceOf[js.Any])
+    def setStartingIntentsUndefined: Self = StObject.set(x, "startingIntents", js.undefined)
     
     @scala.inline
-    def deleteRoboScript: Self = this.set("roboScript", js.undefined)
-    
-    @scala.inline
-    def setStartingIntentsVarargs(value: SchemaRoboStartingIntent*): Self = this.set("startingIntents", js.Array(value :_*))
-    
-    @scala.inline
-    def setStartingIntents(value: js.Array[SchemaRoboStartingIntent]): Self = this.set("startingIntents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartingIntents: Self = this.set("startingIntents", js.undefined)
+    def setStartingIntentsVarargs(value: SchemaRoboStartingIntent*): Self = StObject.set(x, "startingIntents", js.Array(value :_*))
   }
 }

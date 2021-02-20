@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepricingRule extends js.Object {
+trait RepricingRule extends StObject {
   
   /** Required. Immutable. CLDR country code (e.g. "US"). */
   var countryCode: js.UndefOr[String] = js.native
@@ -49,78 +50,66 @@ object RepricingRule {
   }
   
   @scala.inline
-  implicit class RepricingRuleOps[Self <: RepricingRule] (val x: Self) extends AnyVal {
+  implicit class RepricingRuleMutableBuilder[Self <: RepricingRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffectiveTimePeriod(value: RepricingRuleEffectiveTime): Self = StObject.set(x, "effectiveTimePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setEffectiveTimePeriodUndefined: Self = StObject.set(x, "effectiveTimePeriod", js.undefined)
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setEligibleOfferMatcher(value: RepricingRuleEligibleOfferMatcher): Self = StObject.set(x, "eligibleOfferMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveTimePeriod(value: RepricingRuleEffectiveTime): Self = this.set("effectiveTimePeriod", value.asInstanceOf[js.Any])
+    def setEligibleOfferMatcherUndefined: Self = StObject.set(x, "eligibleOfferMatcher", js.undefined)
     
     @scala.inline
-    def deleteEffectiveTimePeriod: Self = this.set("effectiveTimePeriod", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEligibleOfferMatcher(value: RepricingRuleEligibleOfferMatcher): Self = this.set("eligibleOfferMatcher", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteEligibleOfferMatcher: Self = this.set("eligibleOfferMatcher", js.undefined)
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
     
     @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    def setRestriction(value: RepricingRuleRestriction): Self = StObject.set(x, "restriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    def setRestrictionUndefined: Self = StObject.set(x, "restriction", js.undefined)
     
     @scala.inline
-    def deletePaused: Self = this.set("paused", js.undefined)
+    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestriction(value: RepricingRuleRestriction): Self = this.set("restriction", value.asInstanceOf[js.Any])
+    def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
     
     @scala.inline
-    def deleteRestriction: Self = this.set("restriction", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleId(value: String): Self = this.set("ruleId", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteRuleId: Self = this.set("ruleId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

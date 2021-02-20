@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyClientVpnEndpointRequest extends js.Object {
+trait ModifyClientVpnEndpointRequest extends StObject {
   
   /**
     * The options for managing connection authorization for new client connections.
@@ -76,90 +77,78 @@ object ModifyClientVpnEndpointRequest {
   }
   
   @scala.inline
-  implicit class ModifyClientVpnEndpointRequestOps[Self <: ModifyClientVpnEndpointRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyClientVpnEndpointRequestMutableBuilder[Self <: ModifyClientVpnEndpointRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientConnectOptions(value: ClientConnectOptions): Self = StObject.set(x, "ClientConnectOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientConnectOptionsUndefined: Self = StObject.set(x, "ClientConnectOptions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    def setConnectionLogOptions(value: ConnectionLogOptions): Self = StObject.set(x, "ConnectionLogOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientConnectOptions(value: ClientConnectOptions): Self = this.set("ClientConnectOptions", value.asInstanceOf[js.Any])
+    def setConnectionLogOptionsUndefined: Self = StObject.set(x, "ConnectionLogOptions", js.undefined)
     
     @scala.inline
-    def deleteClientConnectOptions: Self = this.set("ClientConnectOptions", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionLogOptions(value: ConnectionLogOptions): Self = this.set("ConnectionLogOptions", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteConnectionLogOptions: Self = this.set("ConnectionLogOptions", js.undefined)
+    def setDnsServers(value: DnsServersOptionsModifyStructure): Self = StObject.set(x, "DnsServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDnsServersUndefined: Self = StObject.set(x, "DnsServers", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsServers(value: DnsServersOptionsModifyStructure): Self = this.set("DnsServers", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def deleteDnsServers: Self = this.set("DnsServers", js.undefined)
+    def setSecurityGroupIds(value: ClientVpnSecurityGroupIdSet): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    def setSelfServicePortal(value: SelfServicePortal): Self = StObject.set(x, "SelfServicePortal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIds(value: ClientVpnSecurityGroupIdSet): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    def setSelfServicePortalUndefined: Self = StObject.set(x, "SelfServicePortal", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    def setServerCertificateArn(value: String): Self = StObject.set(x, "ServerCertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfServicePortal(value: SelfServicePortal): Self = this.set("SelfServicePortal", value.asInstanceOf[js.Any])
+    def setServerCertificateArnUndefined: Self = StObject.set(x, "ServerCertificateArn", js.undefined)
     
     @scala.inline
-    def deleteSelfServicePortal: Self = this.set("SelfServicePortal", js.undefined)
+    def setSplitTunnel(value: Boolean): Self = StObject.set(x, "SplitTunnel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertificateArn(value: String): Self = this.set("ServerCertificateArn", value.asInstanceOf[js.Any])
+    def setSplitTunnelUndefined: Self = StObject.set(x, "SplitTunnel", js.undefined)
     
     @scala.inline
-    def deleteServerCertificateArn: Self = this.set("ServerCertificateArn", js.undefined)
+    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplitTunnel(value: Boolean): Self = this.set("SplitTunnel", value.asInstanceOf[js.Any])
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
     
     @scala.inline
-    def deleteSplitTunnel: Self = this.set("SplitTunnel", js.undefined)
+    def setVpnPort(value: Integer): Self = StObject.set(x, "VpnPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
-    
-    @scala.inline
-    def setVpnPort(value: Integer): Self = this.set("VpnPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnPort: Self = this.set("VpnPort", js.undefined)
+    def setVpnPortUndefined: Self = StObject.set(x, "VpnPort", js.undefined)
   }
 }

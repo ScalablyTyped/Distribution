@@ -1,5 +1,6 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * store
   */
 @js.native
-trait StoreStatic extends js.Object {
+trait StoreStatic extends StObject {
   
   def clear(): Unit = js.native
   

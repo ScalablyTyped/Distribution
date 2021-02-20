@@ -8,12 +8,13 @@ import typings.openlayers.mod.StyleFunction
 import typings.openlayers.mod.olx.LogoOptions
 import typings.openlayers.mod.source.Vector
 import typings.openlayers.mod.style.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageVectorOptions extends js.Object {
+trait ImageVectorOptions extends StObject {
   
   var attributions: js.UndefOr[AttributionLike] = js.native
   
@@ -40,77 +41,65 @@ object ImageVectorOptions {
   }
   
   @scala.inline
-  implicit class ImageVectorOptionsOps[Self <: ImageVectorOptions] (val x: Self) extends AnyVal {
+  implicit class ImageVectorOptionsMutableBuilder[Self <: ImageVectorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
     
     @scala.inline
-    def setSource(value: Vector): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributionsVarargs(value: (Attribution | String)*): Self = this.set("attributions", js.Array(value :_*))
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def setAttributions(value: AttributionLike): Self = this.set("attributions", value.asInstanceOf[js.Any])
+    def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributions: Self = this.set("attributions", js.undefined)
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def setLogo(value: String | LogoOptions): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
     @scala.inline
-    def setProjection(value: ProjectionLike): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setRenderBuffer(value: Double): Self = StObject.set(x, "renderBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setRenderBufferUndefined: Self = StObject.set(x, "renderBuffer", js.undefined)
     
     @scala.inline
-    def setRatio(value: Double): Self = this.set("ratio", value.asInstanceOf[js.Any])
+    def setResolutions(value: js.Array[Double]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRatio: Self = this.set("ratio", js.undefined)
+    def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
     
     @scala.inline
-    def setRenderBuffer(value: Double): Self = this.set("renderBuffer", value.asInstanceOf[js.Any])
+    def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
     
     @scala.inline
-    def deleteRenderBuffer: Self = this.set("renderBuffer", js.undefined)
+    def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionsVarargs(value: Double*): Self = this.set("resolutions", js.Array(value :_*))
-    
-    @scala.inline
-    def setResolutions(value: js.Array[Double]): Self = this.set("resolutions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolutions: Self = this.set("resolutions", js.undefined)
+    def setStyle(value: Style | js.Array[Style] | StyleFunction): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStyleFunction2(
       value: (/* feature */ Feature | typings.openlayers.mod.render.Feature, /* resolution */ Double) => Style | js.Array[Style] | Null
-    ): Self = this.set("style", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStyleVarargs(value: Style*): Self = this.set("style", js.Array(value :_*))
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: Style | js.Array[Style] | StyleFunction): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
   }
 }

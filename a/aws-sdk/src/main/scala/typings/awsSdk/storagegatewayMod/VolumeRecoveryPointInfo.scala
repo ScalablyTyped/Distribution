@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumeRecoveryPointInfo extends js.Object {
+trait VolumeRecoveryPointInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the volume target.
@@ -36,42 +37,30 @@ object VolumeRecoveryPointInfo {
   }
   
   @scala.inline
-  implicit class VolumeRecoveryPointInfoOps[Self <: VolumeRecoveryPointInfo] (val x: Self) extends AnyVal {
+  implicit class VolumeRecoveryPointInfoMutableBuilder[Self <: VolumeRecoveryPointInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVolumeRecoveryPointTime(value: String): Self = StObject.set(x, "VolumeRecoveryPointTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = this.set("VolumeARN", value.asInstanceOf[js.Any])
+    def setVolumeRecoveryPointTimeUndefined: Self = StObject.set(x, "VolumeRecoveryPointTime", js.undefined)
     
     @scala.inline
-    def deleteVolumeARN: Self = this.set("VolumeARN", js.undefined)
+    def setVolumeSizeInBytes(value: long): Self = StObject.set(x, "VolumeSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeRecoveryPointTime(value: String): Self = this.set("VolumeRecoveryPointTime", value.asInstanceOf[js.Any])
+    def setVolumeSizeInBytesUndefined: Self = StObject.set(x, "VolumeSizeInBytes", js.undefined)
     
     @scala.inline
-    def deleteVolumeRecoveryPointTime: Self = this.set("VolumeRecoveryPointTime", js.undefined)
+    def setVolumeUsageInBytes(value: long): Self = StObject.set(x, "VolumeUsageInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeSizeInBytes(value: long): Self = this.set("VolumeSizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeSizeInBytes: Self = this.set("VolumeSizeInBytes", js.undefined)
-    
-    @scala.inline
-    def setVolumeUsageInBytes(value: long): Self = this.set("VolumeUsageInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeUsageInBytes: Self = this.set("VolumeUsageInBytes", js.undefined)
+    def setVolumeUsageInBytesUndefined: Self = StObject.set(x, "VolumeUsageInBytes", js.undefined)
   }
 }

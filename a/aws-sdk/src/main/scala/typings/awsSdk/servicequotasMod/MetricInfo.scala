@@ -1,11 +1,12 @@
 package typings.awsSdk.servicequotasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricInfo extends js.Object {
+trait MetricInfo extends StObject {
   
   /**
     * A dimension is a name/value pair that is part of the identity of a metric. Every metric has specific characteristics that describe it, and you can think of dimensions as categories for those characteristics. These dimensions are part of the CloudWatch Metric Identity that measures usage against a particular service quota.
@@ -36,42 +37,30 @@ object MetricInfo {
   }
   
   @scala.inline
-  implicit class MetricInfoOps[Self <: MetricInfo] (val x: Self) extends AnyVal {
+  implicit class MetricInfoMutableBuilder[Self <: MetricInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricDimensions(value: MetricDimensionsMapDefinition): Self = StObject.set(x, "MetricDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricDimensionsUndefined: Self = StObject.set(x, "MetricDimensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricName(value: QuotaMetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricDimensions(value: MetricDimensionsMapDefinition): Self = this.set("MetricDimensions", value.asInstanceOf[js.Any])
+    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
     @scala.inline
-    def deleteMetricDimensions: Self = this.set("MetricDimensions", js.undefined)
+    def setMetricNamespace(value: QuotaMetricNamespace): Self = StObject.set(x, "MetricNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: QuotaMetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    def setMetricNamespaceUndefined: Self = StObject.set(x, "MetricNamespace", js.undefined)
     
     @scala.inline
-    def deleteMetricName: Self = this.set("MetricName", js.undefined)
+    def setMetricStatisticRecommendation(value: Statistic): Self = StObject.set(x, "MetricStatisticRecommendation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricNamespace(value: QuotaMetricNamespace): Self = this.set("MetricNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricNamespace: Self = this.set("MetricNamespace", js.undefined)
-    
-    @scala.inline
-    def setMetricStatisticRecommendation(value: Statistic): Self = this.set("MetricStatisticRecommendation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricStatisticRecommendation: Self = this.set("MetricStatisticRecommendation", js.undefined)
+    def setMetricStatisticRecommendationUndefined: Self = StObject.set(x, "MetricStatisticRecommendation", js.undefined)
   }
 }

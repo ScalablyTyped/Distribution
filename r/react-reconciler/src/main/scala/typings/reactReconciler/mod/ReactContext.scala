@@ -1,11 +1,12 @@
 package typings.reactReconciler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReactContext[T] extends js.Object {
+trait ReactContext[T] extends StObject {
   
   var Consumer: ReactContext[T] = js.native
   
@@ -47,63 +48,51 @@ object ReactContext {
   }
   
   @scala.inline
-  implicit class ReactContextOps[Self <: ReactContext[_], T] (val x: Self with ReactContext[T]) extends AnyVal {
+  implicit class ReactContextMutableBuilder[Self <: ReactContext[_], T] (val x: Self with ReactContext[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumer(value: ReactContext[T]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDollarDollartypeof(value: js.Symbol | Double): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvider(value: ReactProviderType[T]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumer(value: ReactContext[T]): Self = this.set("Consumer", value.asInstanceOf[js.Any])
+    def setUnstable_read(value: () => T): Self = StObject.set(x, "unstable_read", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDollarDollartypeof(value: js.Symbol | Double): Self = this.set("$$typeof", value.asInstanceOf[js.Any])
+    def set_calculateChangedBits(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "_calculateChangedBits", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setProvider(value: ReactProviderType[T]): Self = this.set("Provider", value.asInstanceOf[js.Any])
+    def set_calculateChangedBitsNull: Self = StObject.set(x, "_calculateChangedBits", null)
     
     @scala.inline
-    def set_currentValue(value: T): Self = this.set("_currentValue", value.asInstanceOf[js.Any])
+    def set_currentRenderer(value: js.Object): Self = StObject.set(x, "_currentRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentValue2(value: T): Self = this.set("_currentValue2", value.asInstanceOf[js.Any])
+    def set_currentRenderer2(value: js.Object): Self = StObject.set(x, "_currentRenderer2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_threadCount(value: Double): Self = this.set("_threadCount", value.asInstanceOf[js.Any])
+    def set_currentRenderer2Null: Self = StObject.set(x, "_currentRenderer2", null)
     
     @scala.inline
-    def setUnstable_read(value: () => T): Self = this.set("unstable_read", js.Any.fromFunction0(value))
+    def set_currentRenderer2Undefined: Self = StObject.set(x, "_currentRenderer2", js.undefined)
     
     @scala.inline
-    def set_calculateChangedBits(value: (/* a */ T, /* b */ T) => Double): Self = this.set("_calculateChangedBits", js.Any.fromFunction2(value))
+    def set_currentRendererNull: Self = StObject.set(x, "_currentRenderer", null)
     
     @scala.inline
-    def set_calculateChangedBitsNull: Self = this.set("_calculateChangedBits", null)
+    def set_currentRendererUndefined: Self = StObject.set(x, "_currentRenderer", js.undefined)
     
     @scala.inline
-    def set_currentRenderer(value: js.Object): Self = this.set("_currentRenderer", value.asInstanceOf[js.Any])
+    def set_currentValue(value: T): Self = StObject.set(x, "_currentValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_currentRenderer: Self = this.set("_currentRenderer", js.undefined)
+    def set_currentValue2(value: T): Self = StObject.set(x, "_currentValue2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentRendererNull: Self = this.set("_currentRenderer", null)
-    
-    @scala.inline
-    def set_currentRenderer2(value: js.Object): Self = this.set("_currentRenderer2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_currentRenderer2: Self = this.set("_currentRenderer2", js.undefined)
-    
-    @scala.inline
-    def set_currentRenderer2Null: Self = this.set("_currentRenderer2", null)
+    def set_threadCount(value: Double): Self = StObject.set(x, "_threadCount", value.asInstanceOf[js.Any])
   }
 }

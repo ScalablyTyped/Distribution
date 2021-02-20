@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackupDescription extends js.Object {
+trait BackupDescription extends StObject {
   
   /**
     * Contains the details of the backup created for the table. 
@@ -31,36 +32,24 @@ object BackupDescription {
   }
   
   @scala.inline
-  implicit class BackupDescriptionOps[Self <: BackupDescription] (val x: Self) extends AnyVal {
+  implicit class BackupDescriptionMutableBuilder[Self <: BackupDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupDetails(value: BackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupDetailsUndefined: Self = StObject.set(x, "BackupDetails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceTableDetails(value: SourceTableDetails): Self = StObject.set(x, "SourceTableDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupDetails(value: BackupDetails): Self = this.set("BackupDetails", value.asInstanceOf[js.Any])
+    def setSourceTableDetailsUndefined: Self = StObject.set(x, "SourceTableDetails", js.undefined)
     
     @scala.inline
-    def deleteBackupDetails: Self = this.set("BackupDetails", js.undefined)
+    def setSourceTableFeatureDetails(value: SourceTableFeatureDetails): Self = StObject.set(x, "SourceTableFeatureDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceTableDetails(value: SourceTableDetails): Self = this.set("SourceTableDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceTableDetails: Self = this.set("SourceTableDetails", js.undefined)
-    
-    @scala.inline
-    def setSourceTableFeatureDetails(value: SourceTableFeatureDetails): Self = this.set("SourceTableFeatureDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceTableFeatureDetails: Self = this.set("SourceTableFeatureDetails", js.undefined)
+    def setSourceTableFeatureDetailsUndefined: Self = StObject.set(x, "SourceTableFeatureDetails", js.undefined)
   }
 }

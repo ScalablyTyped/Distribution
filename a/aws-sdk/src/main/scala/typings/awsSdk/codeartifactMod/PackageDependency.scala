@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PackageDependency extends js.Object {
+trait PackageDependency extends StObject {
   
   /**
     *  The name of the package that this package depends on. 
@@ -37,42 +38,30 @@ object PackageDependency {
   }
   
   @scala.inline
-  implicit class PackageDependencyOps[Self <: PackageDependency] (val x: Self) extends AnyVal {
+  implicit class PackageDependencyMutableBuilder[Self <: PackageDependency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependencyType(value: String): Self = StObject.set(x, "dependencyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDependencyTypeUndefined: Self = StObject.set(x, "dependencyType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_package(value: PackageName): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setVersionRequirement(value: String): Self = StObject.set(x, "versionRequirement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencyType(value: String): Self = this.set("dependencyType", value.asInstanceOf[js.Any])
+    def setVersionRequirementUndefined: Self = StObject.set(x, "versionRequirement", js.undefined)
     
     @scala.inline
-    def deleteDependencyType: Self = this.set("dependencyType", js.undefined)
+    def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: PackageNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
-    
-    @scala.inline
-    def setVersionRequirement(value: String): Self = this.set("versionRequirement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionRequirement: Self = this.set("versionRequirement", js.undefined)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

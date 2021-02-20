@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetGroupPairInfo extends js.Object {
+trait TargetGroupPairInfo extends StObject {
   
   /**
     *  The path used by a load balancer to route production traffic when an Amazon ECS deployment is complete. 
@@ -31,39 +32,27 @@ object TargetGroupPairInfo {
   }
   
   @scala.inline
-  implicit class TargetGroupPairInfoOps[Self <: TargetGroupPairInfo] (val x: Self) extends AnyVal {
+  implicit class TargetGroupPairInfoMutableBuilder[Self <: TargetGroupPairInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProdTrafficRoute(value: TrafficRoute): Self = StObject.set(x, "prodTrafficRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProdTrafficRouteUndefined: Self = StObject.set(x, "prodTrafficRoute", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetGroups(value: TargetGroupInfoList): Self = StObject.set(x, "targetGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProdTrafficRoute(value: TrafficRoute): Self = this.set("prodTrafficRoute", value.asInstanceOf[js.Any])
+    def setTargetGroupsUndefined: Self = StObject.set(x, "targetGroups", js.undefined)
     
     @scala.inline
-    def deleteProdTrafficRoute: Self = this.set("prodTrafficRoute", js.undefined)
+    def setTargetGroupsVarargs(value: TargetGroupInfo*): Self = StObject.set(x, "targetGroups", js.Array(value :_*))
     
     @scala.inline
-    def setTargetGroupsVarargs(value: TargetGroupInfo*): Self = this.set("targetGroups", js.Array(value :_*))
+    def setTestTrafficRoute(value: TrafficRoute): Self = StObject.set(x, "testTrafficRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroups(value: TargetGroupInfoList): Self = this.set("targetGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGroups: Self = this.set("targetGroups", js.undefined)
-    
-    @scala.inline
-    def setTestTrafficRoute(value: TrafficRoute): Self = this.set("testTrafficRoute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestTrafficRoute: Self = this.set("testTrafficRoute", js.undefined)
+    def setTestTrafficRouteUndefined: Self = StObject.set(x, "testTrafficRoute", js.undefined)
   }
 }

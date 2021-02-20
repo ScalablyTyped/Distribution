@@ -1,12 +1,11 @@
 package typings.webicon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webicon/System/IconPreloader", JSImport.Namespace)
-@js.native
-object iconPreloaderMod extends js.Object {
+object iconPreloaderMod {
   
   @js.native
   trait IconPreloader

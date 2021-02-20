@@ -4,6 +4,7 @@ import typings.sparqljs.sparqljsStrings.delete
 import typings.sparqljs.sparqljsStrings.deletewhere
 import typings.sparqljs.sparqljsStrings.insert
 import typings.sparqljs.sparqljsStrings.insertdelete
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,54 +31,42 @@ object InsertDeleteOperation {
   }
   
   @scala.inline
-  implicit class InsertDeleteOperationOps[Self <: InsertDeleteOperation] (val x: Self) extends AnyVal {
+  implicit class InsertDeleteOperationMutableBuilder[Self <: InsertDeleteOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelete(value: js.Array[Quads]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteVarargs(value: Quads*): Self = StObject.set(x, "delete", js.Array(value :_*))
     
     @scala.inline
-    def setUpdateType(value: insert | delete | deletewhere | insertdelete): Self = this.set("updateType", value.asInstanceOf[js.Any])
+    def setGraph(value: IriTerm): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteVarargs(value: Quads*): Self = this.set("delete", js.Array(value :_*))
+    def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     
     @scala.inline
-    def setDelete(value: js.Array[Quads]): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setInsert(value: js.Array[Quads]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
+    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
     @scala.inline
-    def setGraph(value: IriTerm): Self = this.set("graph", value.asInstanceOf[js.Any])
+    def setInsertVarargs(value: Quads*): Self = StObject.set(x, "insert", js.Array(value :_*))
     
     @scala.inline
-    def deleteGraph: Self = this.set("graph", js.undefined)
+    def setUpdateType(value: insert | delete | deletewhere | insertdelete): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertVarargs(value: Quads*): Self = this.set("insert", js.Array(value :_*))
+    def setWhere(value: js.Array[Pattern]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsert(value: js.Array[Quads]): Self = this.set("insert", value.asInstanceOf[js.Any])
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     
     @scala.inline
-    def deleteInsert: Self = this.set("insert", js.undefined)
-    
-    @scala.inline
-    def setWhereVarargs(value: Pattern*): Self = this.set("where", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhere(value: js.Array[Pattern]): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereVarargs(value: Pattern*): Self = StObject.set(x, "where", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,39 +40,27 @@ object GroupMember {
   }
   
   @scala.inline
-  implicit class GroupMemberOps[Self <: GroupMember] (val x: Self) extends AnyVal {
+  implicit class GroupMemberMutableBuilder[Self <: GroupMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: Reference): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
     
     @scala.inline
-    def setEntity(value: Reference): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_inactive(value: Element): Self = this.set("_inactive", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def delete_inactive: Self = this.set("_inactive", js.undefined)
+    def set_inactive(value: Element): Self = StObject.set(x, "_inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactive(value: Boolean): Self = this.set("inactive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInactive: Self = this.set("inactive", js.undefined)
-    
-    @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def set_inactiveUndefined: Self = StObject.set(x, "_inactive", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.leafletRoutingMachine.mod.Routing_
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
 @js.native
-trait IGeocoderElement extends js.Object {
+trait IGeocoderElement extends StObject {
   
   var closeButton: HTMLElement = js.native
   
@@ -24,27 +25,15 @@ object IGeocoderElement {
   }
   
   @scala.inline
-  implicit class IGeocoderElementOps[Self <: IGeocoderElement] (val x: Self) extends AnyVal {
+  implicit class IGeocoderElementMutableBuilder[Self <: IGeocoderElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseButton(value: HTMLElement): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloseButton(value: HTMLElement): Self = this.set("closeButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContainer(value: HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInput(value: HTMLElement): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setInput(value: HTMLElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }
 }

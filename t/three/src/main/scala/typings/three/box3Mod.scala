@@ -9,16 +9,16 @@ import typings.three.sphereMod.Sphere
 import typings.three.threeBooleans.`true`
 import typings.three.triangleMod.Triangle
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Box3", JSImport.Namespace)
-@js.native
-object box3Mod extends js.Object {
+object box3Mod {
   
+  @JSImport("three/src/math/Box3", "Box3")
   @js.native
-  class Box3 () extends js.Object {
+  class Box3 () extends StObject {
     def this(min: Vector3) = this()
     def this(min: js.UndefOr[scala.Nothing], max: Vector3) = this()
     def this(min: Vector3, max: Vector3) = this()

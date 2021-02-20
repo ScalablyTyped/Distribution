@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/image/looks", JSImport.Namespace)
-@js.native
-object looksMod extends js.Object {
+object looksMod {
   
+  @JSImport("material-ui/svg-icons/image/looks", JSImport.Default)
+  @js.native
+  class default () extends ImageLooks
+  
+  @JSImport("material-ui/svg-icons/image/looks", "ImageLooks")
   @js.native
   class ImageLooks ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

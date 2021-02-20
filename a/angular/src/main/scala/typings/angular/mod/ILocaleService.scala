@@ -1,5 +1,6 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // see http://docs.angularjs.org/api/ng/service/$locale
 ///////////////////////////////////////////////////////////////////////////
 @js.native
-trait ILocaleService extends js.Object {
+trait ILocaleService extends StObject {
   
   var DATETIME_FORMATS: ILocaleDateTimeFormatDescriptor = js.native
   
@@ -35,30 +36,18 @@ object ILocaleService {
   }
   
   @scala.inline
-  implicit class ILocaleServiceOps[Self <: ILocaleService] (val x: Self) extends AnyVal {
+  implicit class ILocaleServiceMutableBuilder[Self <: ILocaleService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDATETIME_FORMATS(value: ILocaleDateTimeFormatDescriptor): Self = StObject.set(x, "DATETIME_FORMATS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNUMBER_FORMATS(value: ILocaleNumberFormatDescriptor): Self = StObject.set(x, "NUMBER_FORMATS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDATETIME_FORMATS(value: ILocaleDateTimeFormatDescriptor): Self = this.set("DATETIME_FORMATS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNUMBER_FORMATS(value: ILocaleNumberFormatDescriptor): Self = this.set("NUMBER_FORMATS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPluralCat(value: js.Any => String): Self = this.set("pluralCat", js.Any.fromFunction1(value))
+    def setPluralCat(value: js.Any => String): Self = StObject.set(x, "pluralCat", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImscDestinationSettings extends js.Object {
+trait ImscDestinationSettings extends StObject {
   
   /**
     * Keep this setting enabled to have MediaConvert use the font style and position information from the captions source in the output. This option is available only when your input captions are IMSC, SMPTE-TT, or TTML. Disable this setting for simplified output captions.
@@ -21,24 +22,12 @@ object ImscDestinationSettings {
   }
   
   @scala.inline
-  implicit class ImscDestinationSettingsOps[Self <: ImscDestinationSettings] (val x: Self) extends AnyVal {
+  implicit class ImscDestinationSettingsMutableBuilder[Self <: ImscDestinationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStylePassthrough(value: ImscStylePassthrough): Self = StObject.set(x, "StylePassthrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStylePassthrough(value: ImscStylePassthrough): Self = this.set("StylePassthrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStylePassthrough: Self = this.set("StylePassthrough", js.undefined)
+    def setStylePassthroughUndefined: Self = StObject.set(x, "StylePassthrough", js.undefined)
   }
 }

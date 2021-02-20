@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSolutionVersionRequest extends js.Object {
+trait CreateSolutionVersionRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the solution containing the training configuration information.
@@ -26,27 +27,15 @@ object CreateSolutionVersionRequest {
   }
   
   @scala.inline
-  implicit class CreateSolutionVersionRequestOps[Self <: CreateSolutionVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateSolutionVersionRequestMutableBuilder[Self <: CreateSolutionVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTrainingMode(value: TrainingMode): Self = StObject.set(x, "trainingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSolutionArn(value: Arn): Self = this.set("solutionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrainingMode(value: TrainingMode): Self = this.set("trainingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingMode: Self = this.set("trainingMode", js.undefined)
+    def setTrainingModeUndefined: Self = StObject.set(x, "trainingMode", js.undefined)
   }
 }

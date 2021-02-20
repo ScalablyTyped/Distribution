@@ -1,13 +1,14 @@
 package typings.unimodulesReactNativeAdapter
 
 import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@unimodules/react-native-adapter/build/NativeViewManagerAdapter", JSImport.Namespace)
-@js.native
-object nativeViewManagerAdapterMod extends js.Object {
+object nativeViewManagerAdapterMod {
   
+  @JSImport("@unimodules/react-native-adapter/build/NativeViewManagerAdapter", "requireNativeViewManager")
+  @js.native
   def requireNativeViewManager[P](viewName: String): ComponentType[P] = js.native
 }

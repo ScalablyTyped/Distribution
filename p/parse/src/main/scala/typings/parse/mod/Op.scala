@@ -1,5 +1,6 @@
 package typings.parse.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +16,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You should not create subclasses of Parse.Op or instantiate Parse.Op
   * directly.
   */
-@JSImport("parse", "Op")
-@js.native
-object Op extends js.Object
+object Op

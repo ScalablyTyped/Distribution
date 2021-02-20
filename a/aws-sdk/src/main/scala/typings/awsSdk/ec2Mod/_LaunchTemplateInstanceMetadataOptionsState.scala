@@ -1,7 +1,8 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _LaunchTemplateInstanceMetadataOptionsState extends js.Object
+trait _LaunchTemplateInstanceMetadataOptionsState extends StObject

@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This WebVR API interface represents a field of view defined by 4 different degree values describing the view from a center point. */
 @js.native
-trait VRFieldOfView extends js.Object {
+trait VRFieldOfView extends StObject {
   
   val downDegrees: Double = js.native
   
@@ -25,30 +26,18 @@ object VRFieldOfView {
   }
   
   @scala.inline
-  implicit class VRFieldOfViewOps[Self <: VRFieldOfView] (val x: Self) extends AnyVal {
+  implicit class VRFieldOfViewMutableBuilder[Self <: VRFieldOfView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownDegrees(value: Double): Self = StObject.set(x, "downDegrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeftDegrees(value: Double): Self = StObject.set(x, "leftDegrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRightDegrees(value: Double): Self = StObject.set(x, "rightDegrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownDegrees(value: Double): Self = this.set("downDegrees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeftDegrees(value: Double): Self = this.set("leftDegrees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightDegrees(value: Double): Self = this.set("rightDegrees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpDegrees(value: Double): Self = this.set("upDegrees", value.asInstanceOf[js.Any])
+    def setUpDegrees(value: Double): Self = StObject.set(x, "upDegrees", value.asInstanceOf[js.Any])
   }
 }

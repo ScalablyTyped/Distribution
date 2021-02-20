@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceNetworking extends js.Object {
+trait InstanceNetworking extends StObject {
   
   /**
     * The amount of data in GB allocated for monthly data transfers.
@@ -26,33 +27,21 @@ object InstanceNetworking {
   }
   
   @scala.inline
-  implicit class InstanceNetworkingOps[Self <: InstanceNetworking] (val x: Self) extends AnyVal {
+  implicit class InstanceNetworkingMutableBuilder[Self <: InstanceNetworking] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMonthlyTransfer(value: MonthlyTransfer): Self = StObject.set(x, "monthlyTransfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMonthlyTransferUndefined: Self = StObject.set(x, "monthlyTransfer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPorts(value: InstancePortInfoList): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthlyTransfer(value: MonthlyTransfer): Self = this.set("monthlyTransfer", value.asInstanceOf[js.Any])
+    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
     @scala.inline
-    def deleteMonthlyTransfer: Self = this.set("monthlyTransfer", js.undefined)
-    
-    @scala.inline
-    def setPortsVarargs(value: InstancePortInfo*): Self = this.set("ports", js.Array(value :_*))
-    
-    @scala.inline
-    def setPorts(value: InstancePortInfoList): Self = this.set("ports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePorts: Self = this.set("ports", js.undefined)
+    def setPortsVarargs(value: InstancePortInfo*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

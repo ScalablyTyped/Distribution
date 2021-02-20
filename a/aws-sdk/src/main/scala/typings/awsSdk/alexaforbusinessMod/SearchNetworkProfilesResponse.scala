@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchNetworkProfilesResponse extends js.Object {
+trait SearchNetworkProfilesResponse extends StObject {
   
   /**
     * The network profiles that meet the specified set of filter criteria, in sort order. It is a list of NetworkProfileData objects. 
@@ -31,39 +32,27 @@ object SearchNetworkProfilesResponse {
   }
   
   @scala.inline
-  implicit class SearchNetworkProfilesResponseOps[Self <: SearchNetworkProfilesResponse] (val x: Self) extends AnyVal {
+  implicit class SearchNetworkProfilesResponseMutableBuilder[Self <: SearchNetworkProfilesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkProfiles(value: NetworkProfileDataList): Self = StObject.set(x, "NetworkProfiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkProfilesUndefined: Self = StObject.set(x, "NetworkProfiles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkProfilesVarargs(value: NetworkProfileData*): Self = StObject.set(x, "NetworkProfiles", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkProfilesVarargs(value: NetworkProfileData*): Self = this.set("NetworkProfiles", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkProfiles(value: NetworkProfileDataList): Self = this.set("NetworkProfiles", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteNetworkProfiles: Self = this.set("NetworkProfiles", js.undefined)
+    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

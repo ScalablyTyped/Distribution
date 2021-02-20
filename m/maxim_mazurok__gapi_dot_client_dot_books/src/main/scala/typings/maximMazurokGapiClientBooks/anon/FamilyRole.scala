@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FamilyRole extends js.Object {
+trait FamilyRole extends StObject {
   
   /** The role of the user in the family. */
   var familyRole: js.UndefOr[String] = js.native
@@ -28,36 +29,24 @@ object FamilyRole {
   }
   
   @scala.inline
-  implicit class FamilyRoleOps[Self <: FamilyRole] (val x: Self) extends AnyVal {
+  implicit class FamilyRoleMutableBuilder[Self <: FamilyRole] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFamilyRole(value: String): Self = StObject.set(x, "familyRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFamilyRoleUndefined: Self = StObject.set(x, "familyRole", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSharingAllowed(value: Boolean): Self = StObject.set(x, "isSharingAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyRole(value: String): Self = this.set("familyRole", value.asInstanceOf[js.Any])
+    def setIsSharingAllowedUndefined: Self = StObject.set(x, "isSharingAllowed", js.undefined)
     
     @scala.inline
-    def deleteFamilyRole: Self = this.set("familyRole", js.undefined)
+    def setIsSharingDisabledByFop(value: Boolean): Self = StObject.set(x, "isSharingDisabledByFop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSharingAllowed(value: Boolean): Self = this.set("isSharingAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsSharingAllowed: Self = this.set("isSharingAllowed", js.undefined)
-    
-    @scala.inline
-    def setIsSharingDisabledByFop(value: Boolean): Self = this.set("isSharingDisabledByFop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsSharingDisabledByFop: Self = this.set("isSharingDisabledByFop", js.undefined)
+    def setIsSharingDisabledByFopUndefined: Self = StObject.set(x, "isSharingDisabledByFop", js.undefined)
   }
 }

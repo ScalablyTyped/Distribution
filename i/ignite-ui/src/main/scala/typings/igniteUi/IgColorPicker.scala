@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,39 +45,27 @@ object IgColorPicker {
   }
   
   @scala.inline
-  implicit class IgColorPickerOps[Self <: IgColorPicker] (val x: Self) extends AnyVal {
+  implicit class IgColorPickerMutableBuilder[Self <: IgColorPicker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorSelected(value: (/* event */ Event, /* ui */ ColorSelectedEventUIParam) => Unit): Self = StObject.set(x, "colorSelected", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorSelectedUndefined: Self = StObject.set(x, "colorSelected", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColors(value: String): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSelected(value: (/* event */ Event, /* ui */ ColorSelectedEventUIParam) => Unit): Self = this.set("colorSelected", js.Any.fromFunction2(value))
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteColorSelected: Self = this.set("colorSelected", js.undefined)
+    def setStandardColors(value: js.Array[_]): Self = StObject.set(x, "standardColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: String): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setStandardColorsUndefined: Self = StObject.set(x, "standardColors", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
-    
-    @scala.inline
-    def setStandardColorsVarargs(value: js.Any*): Self = this.set("standardColors", js.Array(value :_*))
-    
-    @scala.inline
-    def setStandardColors(value: js.Array[_]): Self = this.set("standardColors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandardColors: Self = this.set("standardColors", js.undefined)
+    def setStandardColorsVarargs(value: js.Any*): Self = StObject.set(x, "standardColors", js.Array(value :_*))
   }
 }

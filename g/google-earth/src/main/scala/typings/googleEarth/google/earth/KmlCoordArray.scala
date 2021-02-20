@@ -1,11 +1,12 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KmlCoordArray extends js.Object {
+trait KmlCoordArray extends StObject {
   
   /**
     * Clears all of the elements in the array
@@ -89,54 +90,42 @@ object KmlCoordArray {
   }
   
   @scala.inline
-  implicit class KmlCoordArrayOps[Self <: KmlCoordArray] (val x: Self) extends AnyVal {
+  implicit class KmlCoordArrayMutableBuilder[Self <: KmlCoordArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: Double => KmlCoord): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setPop(value: () => KmlCoord): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet(value: Double => KmlCoord): Self = this.set("get", js.Any.fromFunction1(value))
+    def setPush(value: KmlCoord => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
+    def setPushLatLngAlt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "pushLatLngAlt", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPop(value: () => KmlCoord): Self = this.set("pop", js.Any.fromFunction0(value))
+    def setReverse(value: () => Unit): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPush(value: KmlCoord => Unit): Self = this.set("push", js.Any.fromFunction1(value))
+    def setSet(value: (Double, KmlCoord) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPushLatLngAlt(value: (Double, Double, Double) => Unit): Self = this.set("pushLatLngAlt", js.Any.fromFunction3(value))
+    def setSetLatLngAlt(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setLatLngAlt", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setReverse(value: () => Unit): Self = this.set("reverse", js.Any.fromFunction0(value))
+    def setShift(value: () => KmlCoord): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSet(value: (Double, KmlCoord) => Unit): Self = this.set("set", js.Any.fromFunction2(value))
+    def setUnshift(value: KmlCoord => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLatLngAlt(value: (Double, Double, Double, Double) => Unit): Self = this.set("setLatLngAlt", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setShift(value: () => KmlCoord): Self = this.set("shift", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnshift(value: KmlCoord => Double): Self = this.set("unshift", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnshiftLatLngAlt(value: (Double, Double, Double) => Unit): Self = this.set("unshiftLatLngAlt", js.Any.fromFunction3(value))
+    def setUnshiftLatLngAlt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "unshiftLatLngAlt", js.Any.fromFunction3(value))
   }
 }

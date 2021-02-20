@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICollisionFilter extends js.Object {
+trait ICollisionFilter extends StObject {
   
   var category: Double = js.native
   
@@ -22,27 +23,15 @@ object ICollisionFilter {
   }
   
   @scala.inline
-  implicit class ICollisionFilterOps[Self <: ICollisionFilter] (val x: Self) extends AnyVal {
+  implicit class ICollisionFilterMutableBuilder[Self <: ICollisionFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCategory(value: Double): Self = this.set("category", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroup(value: Double): Self = this.set("group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMask(value: Double): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setMask(value: Double): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
   }
 }

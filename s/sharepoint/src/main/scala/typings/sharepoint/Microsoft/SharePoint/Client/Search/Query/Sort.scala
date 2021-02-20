@@ -3,6 +3,7 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,30 +38,18 @@ object Sort {
   }
   
   @scala.inline
-  implicit class SortOps[Self <: Sort] (val x: Self) extends AnyVal {
+  implicit class SortMutableBuilder[Self <: Sort] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_direction(value: () => SortDirection): Self = StObject.set(x, "get_direction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_property(value: () => String): Self = StObject.set(x, "get_property", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSet_direction(value: SortDirection => Unit): Self = StObject.set(x, "set_direction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_direction(value: () => SortDirection): Self = this.set("get_direction", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_property(value: () => String): Self = this.set("get_property", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_direction(value: SortDirection => Unit): Self = this.set("set_direction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_property(value: String => Unit): Self = this.set("set_property", js.Any.fromFunction1(value))
+    def setSet_property(value: String => Unit): Self = StObject.set(x, "set_property", js.Any.fromFunction1(value))
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneCallHistoryStoreAccessType extends js.Object
+sealed trait PhoneCallHistoryStoreAccessType extends StObject
 /** The type of store you want to retrieve. */
 @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType")
 @js.native
-object PhoneCallHistoryStoreAccessType extends js.Object {
+object PhoneCallHistoryStoreAccessType extends StObject {
   
   /** All of the entries should have limited read and write permissions. */
   @js.native

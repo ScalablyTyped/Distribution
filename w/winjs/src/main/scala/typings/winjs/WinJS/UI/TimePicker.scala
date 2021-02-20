@@ -3,6 +3,7 @@ package typings.winjs.WinJS.UI
 import typings.std.CustomEvent
 import typings.std.Date
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Allows users to select time values.
   **/
 @js.native
-trait TimePicker extends js.Object {
+trait TimePicker extends StObject {
   
   //#endregion Events
   //#region Methods

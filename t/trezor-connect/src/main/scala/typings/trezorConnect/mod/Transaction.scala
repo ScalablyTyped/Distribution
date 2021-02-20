@@ -1,18 +1,19 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transaction extends js.Object {
+trait Transaction extends StObject {
   
-    // signer signatures
+  // signer signatures
   var serializedTx: String = js.native
   
   var signatures: js.Array[String] = js.native
   
-    // serialized transaction
+  // serialized transaction
   var txid: js.UndefOr[String] = js.native
 }
 object Transaction {
@@ -24,33 +25,21 @@ object Transaction {
   }
   
   @scala.inline
-  implicit class TransactionOps[Self <: Transaction] (val x: Self) extends AnyVal {
+  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSerializedTx(value: String): Self = StObject.set(x, "serializedTx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignatures(value: js.Array[String]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignaturesVarargs(value: String*): Self = StObject.set(x, "signatures", js.Array(value :_*))
     
     @scala.inline
-    def setSerializedTx(value: String): Self = this.set("serializedTx", value.asInstanceOf[js.Any])
+    def setTxid(value: String): Self = StObject.set(x, "txid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignaturesVarargs(value: String*): Self = this.set("signatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setSignatures(value: js.Array[String]): Self = this.set("signatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTxid(value: String): Self = this.set("txid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTxid: Self = this.set("txid", js.undefined)
+    def setTxidUndefined: Self = StObject.set(x, "txid", js.undefined)
   }
 }

@@ -1,19 +1,20 @@
 package typings.apolloProtobufjs.minimalMod
 
 import typings.apolloProtobufjs.mod.Codegen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@apollo/protobufjs/minimal", "converter")
-@js.native
-object converter extends js.Object {
+object converter {
   
   /**
     * Generates a plain object to runtime message converter specific to the specified message type.
     * @param mtype Message type
     * @returns Codegen instance
     */
+  @JSImport("@apollo/protobufjs/minimal", "converter.fromObject")
+  @js.native
   def fromObject(mtype: typings.apolloProtobufjs.mod.Type): Codegen = js.native
   
   /**
@@ -21,5 +22,7 @@ object converter extends js.Object {
     * @param mtype Message type
     * @returns Codegen instance
     */
+  @JSImport("@apollo/protobufjs/minimal", "converter.toObject")
+  @js.native
   def toObject(mtype: typings.apolloProtobufjs.mod.Type): Codegen = js.native
 }

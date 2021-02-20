@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IReadyobject extends js.Object {
+trait IReadyobject extends StObject {
   
   var context: js.UndefOr[js.Object] = js.native
   
@@ -24,45 +25,33 @@ object IReadyobject {
   }
   
   @scala.inline
-  implicit class IReadyobjectOps[Self <: IReadyobject] (val x: Self) extends AnyVal {
+  implicit class IReadyobjectMutableBuilder[Self <: IReadyobject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorCallback(value: () => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContext(value: js.Object): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setRequire(value: js.Array[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCallback(value: () => Unit): Self = this.set("errorCallback", js.Any.fromFunction0(value))
+    def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
     @scala.inline
-    def deleteErrorCallback: Self = this.set("errorCallback", js.undefined)
+    def setRequireVarargs(value: String*): Self = StObject.set(x, "require", js.Array(value :_*))
     
     @scala.inline
-    def setRequireVarargs(value: String*): Self = this.set("require", js.Array(value :_*))
+    def setSuccessCallback(value: () => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRequire(value: js.Array[String]): Self = this.set("require", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequire: Self = this.set("require", js.undefined)
-    
-    @scala.inline
-    def setSuccessCallback(value: () => Unit): Self = this.set("successCallback", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSuccessCallback: Self = this.set("successCallback", js.undefined)
+    def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
   }
 }

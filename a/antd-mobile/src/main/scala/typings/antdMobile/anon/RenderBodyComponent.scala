@@ -1,12 +1,13 @@
 package typings.antdMobile.anon
 
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderBodyComponent extends js.Object {
+trait RenderBodyComponent extends StObject {
   
   def renderBodyComponent(): Element = js.native
   
@@ -30,30 +31,18 @@ object RenderBodyComponent {
   }
   
   @scala.inline
-  implicit class RenderBodyComponentOps[Self <: RenderBodyComponent] (val x: Self) extends AnyVal {
+  implicit class RenderBodyComponentMutableBuilder[Self <: RenderBodyComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRenderBodyComponent(value: () => Element): Self = StObject.set(x, "renderBodyComponent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRenderFooter(value: js.Any): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRenderHeader(value: js.Any): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderBodyComponent(value: () => Element): Self = this.set("renderBodyComponent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRenderFooter(value: js.Any): Self = this.set("renderFooter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderHeader(value: js.Any): Self = this.set("renderHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderSectionHeader(value: js.Any): Self = this.set("renderSectionHeader", value.asInstanceOf[js.Any])
+    def setRenderSectionHeader(value: js.Any): Self = StObject.set(x, "renderSectionHeader", value.asInstanceOf[js.Any])
   }
 }

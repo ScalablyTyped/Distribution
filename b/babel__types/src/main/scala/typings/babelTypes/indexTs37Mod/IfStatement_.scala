@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.IfStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,33 +32,21 @@ object IfStatement_ {
   }
   
   @scala.inline
-  implicit class IfStatement_Ops[Self <: IfStatement_] (val x: Self) extends AnyVal {
+  implicit class IfStatement_MutableBuilder[Self <: IfStatement_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate(value: Statement): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateNull: Self = StObject.set(x, "alternate", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsequent(value: Statement): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsequent(value: Statement): Self = this.set("consequent", value.asInstanceOf[js.Any])
+    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTest(value: Expression): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: IfStatement): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAlternate(value: Statement): Self = this.set("alternate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAlternateNull: Self = this.set("alternate", null)
+    def setType(value: IfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

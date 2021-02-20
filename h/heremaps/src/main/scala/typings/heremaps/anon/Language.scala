@@ -1,11 +1,12 @@
 package typings.heremaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Language extends js.Object {
+trait Language extends StObject {
   
   var language: js.UndefOr[String] = js.native
   
@@ -20,33 +21,21 @@ object Language {
   }
   
   @scala.inline
-  implicit class LanguageOps[Self <: Language] (val x: Self) extends AnyVal {
+  implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoute(value: js.Array[Leg]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
-    
-    @scala.inline
-    def setRouteVarargs(value: Leg*): Self = this.set("route", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoute(value: js.Array[Leg]): Self = this.set("route", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoute: Self = this.set("route", js.undefined)
+    def setRouteVarargs(value: Leg*): Self = StObject.set(x, "route", js.Array(value :_*))
   }
 }

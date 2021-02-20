@@ -1,14 +1,15 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Position extends js.Object
+sealed trait Position extends StObject
 @JSGlobal("naver.maps.Position")
 @js.native
-object Position extends js.Object {
+object Position extends StObject {
   
   @js.native
   sealed trait BOTTOM_CENTER extends Position

@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateHostedZoneCommentResponse extends js.Object {
+trait UpdateHostedZoneCommentResponse extends StObject {
   
   /**
     * A complex type that contains the response to the UpdateHostedZoneComment request.
@@ -21,21 +22,9 @@ object UpdateHostedZoneCommentResponse {
   }
   
   @scala.inline
-  implicit class UpdateHostedZoneCommentResponseOps[Self <: UpdateHostedZoneCommentResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateHostedZoneCommentResponseMutableBuilder[Self <: UpdateHostedZoneCommentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHostedZone(value: HostedZone): Self = this.set("HostedZone", value.asInstanceOf[js.Any])
+    def setHostedZone(value: HostedZone): Self = StObject.set(x, "HostedZone", value.asInstanceOf[js.Any])
   }
 }

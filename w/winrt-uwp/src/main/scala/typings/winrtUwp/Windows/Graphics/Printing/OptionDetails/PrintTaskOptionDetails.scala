@@ -8,13 +8,14 @@ import typings.winrtUwp.Windows.Graphics.Printing.PrintPageDescription
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.beginvalidation
 import typings.winrtUwp.winrtUwpStrings.optionchanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A collection of events, methods and properties for advanced print tasks. */
 @js.native
-trait PrintTaskOptionDetails extends js.Object {
+trait PrintTaskOptionDetails extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

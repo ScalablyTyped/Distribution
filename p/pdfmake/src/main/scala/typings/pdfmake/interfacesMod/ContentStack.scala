@@ -1,5 +1,6 @@
 package typings.pdfmake.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,30 +24,18 @@ object ContentStack {
   }
   
   @scala.inline
-  implicit class ContentStackOps[Self <: ContentStack] (val x: Self) extends AnyVal {
+  implicit class ContentStackMutableBuilder[Self <: ContentStack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStack(value: js.Array[Content]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStackVarargs(value: Content*): Self = StObject.set(x, "stack", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackVarargs(value: Content*): Self = this.set("stack", js.Array(value :_*))
-    
-    @scala.inline
-    def setStack(value: js.Array[Content]): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnbreakable(value: Boolean): Self = this.set("unbreakable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnbreakable: Self = this.set("unbreakable", js.undefined)
+    def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Aggregation extends js.Object {
+trait Aggregation extends StObject {
   
   /**
     * The alignment_period specifies a time interval, in seconds, that is used to divide the data in all the time series into consistent blocks of time. This will be done before the
@@ -51,45 +52,33 @@ object Aggregation {
   }
   
   @scala.inline
-  implicit class AggregationOps[Self <: Aggregation] (val x: Self) extends AnyVal {
+  implicit class AggregationMutableBuilder[Self <: Aggregation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignmentPeriod(value: String): Self = StObject.set(x, "alignmentPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentPeriodUndefined: Self = StObject.set(x, "alignmentPeriod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrossSeriesReducer(value: String): Self = StObject.set(x, "crossSeriesReducer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignmentPeriod(value: String): Self = this.set("alignmentPeriod", value.asInstanceOf[js.Any])
+    def setCrossSeriesReducerUndefined: Self = StObject.set(x, "crossSeriesReducer", js.undefined)
     
     @scala.inline
-    def deleteAlignmentPeriod: Self = this.set("alignmentPeriod", js.undefined)
+    def setGroupByFields(value: js.Array[String]): Self = StObject.set(x, "groupByFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossSeriesReducer(value: String): Self = this.set("crossSeriesReducer", value.asInstanceOf[js.Any])
+    def setGroupByFieldsUndefined: Self = StObject.set(x, "groupByFields", js.undefined)
     
     @scala.inline
-    def deleteCrossSeriesReducer: Self = this.set("crossSeriesReducer", js.undefined)
+    def setGroupByFieldsVarargs(value: String*): Self = StObject.set(x, "groupByFields", js.Array(value :_*))
     
     @scala.inline
-    def setGroupByFieldsVarargs(value: String*): Self = this.set("groupByFields", js.Array(value :_*))
+    def setPerSeriesAligner(value: String): Self = StObject.set(x, "perSeriesAligner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByFields(value: js.Array[String]): Self = this.set("groupByFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupByFields: Self = this.set("groupByFields", js.undefined)
-    
-    @scala.inline
-    def setPerSeriesAligner(value: String): Self = this.set("perSeriesAligner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerSeriesAligner: Self = this.set("perSeriesAligner", js.undefined)
+    def setPerSeriesAlignerUndefined: Self = StObject.set(x, "perSeriesAligner", js.undefined)
   }
 }

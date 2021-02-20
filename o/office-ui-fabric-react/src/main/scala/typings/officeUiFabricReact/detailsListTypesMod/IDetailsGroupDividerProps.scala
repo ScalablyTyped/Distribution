@@ -4,6 +4,7 @@ import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
 import typings.officeUiFabricReact.groupedListTypesMod.IGroupDividerProps
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import typings.uifabricUtilities.selectionTypesMod.ISelection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,57 +54,45 @@ object IDetailsGroupDividerProps {
   }
   
   @scala.inline
-  implicit class IDetailsGroupDividerPropsOps[Self <: IDetailsGroupDividerProps] (val x: Self) extends AnyVal {
+  implicit class IDetailsGroupDividerPropsMutableBuilder[Self <: IDetailsGroupDividerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellStylePropsUndefined: Self = StObject.set(x, "cellStyleProps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckboxVisibility(value: CheckboxVisibility): Self = StObject.set(x, "checkboxVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellStyleProps(value: ICellStyleProps): Self = this.set("cellStyleProps", value.asInstanceOf[js.Any])
+    def setCheckboxVisibilityUndefined: Self = StObject.set(x, "checkboxVisibility", js.undefined)
     
     @scala.inline
-    def deleteCellStyleProps: Self = this.set("cellStyleProps", js.undefined)
+    def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxVisibility(value: CheckboxVisibility): Self = this.set("checkboxVisibility", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteCheckboxVisibility: Self = this.set("checkboxVisibility", js.undefined)
+    def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: IColumn*): Self = this.set("columns", js.Array(value :_*))
+    def setGroupNestingDepth(value: Double): Self = StObject.set(x, "groupNestingDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[IColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setGroupNestingDepthUndefined: Self = StObject.set(x, "groupNestingDepth", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setRowWidth(value: Double): Self = StObject.set(x, "rowWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupNestingDepth(value: Double): Self = this.set("groupNestingDepth", value.asInstanceOf[js.Any])
+    def setRowWidthUndefined: Self = StObject.set(x, "rowWidth", js.undefined)
     
     @scala.inline
-    def deleteGroupNestingDepth: Self = this.set("groupNestingDepth", js.undefined)
+    def setSelection(value: ISelection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowWidth(value: Double): Self = this.set("rowWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowWidth: Self = this.set("rowWidth", js.undefined)
-    
-    @scala.inline
-    def setSelection(value: ISelection[IObjectWithKey]): Self = this.set("selection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelection: Self = this.set("selection", js.undefined)
+    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
   }
 }

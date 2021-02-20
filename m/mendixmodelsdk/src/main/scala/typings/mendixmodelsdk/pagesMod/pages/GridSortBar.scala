@@ -9,6 +9,7 @@ import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,16 +39,20 @@ class GridSortBar protected () extends Element[IModel] {
   
   def sortItems: IList[GridSortItem] = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar")
-@js.native
-object GridSortBar extends js.Object {
+object GridSortBar {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new GridSortBar instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar.create")
+  @js.native
   def create(model: IModel): GridSortBar = js.native
   
   /**
@@ -55,6 +60,9 @@ object GridSortBar extends js.Object {
     * The new GridSortBar will be automatically stored in the 'sortBar' property
     * of the parent DropDownSearchField element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar.createInDropDownSearchFieldUnderSortBar")
+  @js.native
   def createInDropDownSearchFieldUnderSortBar(container: DropDownSearchField): GridSortBar = js.native
   
   /**
@@ -65,6 +73,9 @@ object GridSortBar extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.2.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar.createInSelectorDatabaseSourceUnderSortBar")
+  @js.native
   def createInSelectorDatabaseSourceUnderSortBar(container: SelectorDatabaseSource): GridSortBar = js.native
   
   /**
@@ -72,6 +83,9 @@ object GridSortBar extends js.Object {
     * The new GridSortBar will be automatically stored in the 'sortBar' property
     * of the parent SelectorXPathSource element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar.createInSelectorXPathSourceUnderSortBar")
+  @js.native
   def createInSelectorXPathSourceUnderSortBar(container: SelectorXPathSource): GridSortBar = js.native
   
   /**
@@ -79,9 +93,22 @@ object GridSortBar extends js.Object {
     * The new GridSortBar will be automatically stored in the 'sortBar' property
     * of the parent SortableEntityPathSource element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar.createInSortableEntityPathSourceUnderSortBar")
+  @js.native
   def createInSortableEntityPathSourceUnderSortBar(container: SortableEntityPathSource): GridSortBar = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.gapiPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PersonMetadata extends js.Object {
+trait PersonMetadata extends StObject {
   
   var deleted: Boolean = js.native
   
@@ -32,42 +33,30 @@ object PersonMetadata {
   }
   
   @scala.inline
-  implicit class PersonMetadataOps[Self <: PersonMetadata] (val x: Self) extends AnyVal {
+  implicit class PersonMetadataMutableBuilder[Self <: PersonMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinkedPeopleResourceNames(value: js.Array[String]): Self = StObject.set(x, "linkedPeopleResourceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkedPeopleResourceNamesVarargs(value: String*): Self = StObject.set(x, "linkedPeopleResourceNames", js.Array(value :_*))
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setObjectType(value: ObjectType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedPeopleResourceNamesVarargs(value: String*): Self = this.set("linkedPeopleResourceNames", js.Array(value :_*))
+    def setPreviousResourceNames(value: js.Array[String]): Self = StObject.set(x, "previousResourceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedPeopleResourceNames(value: js.Array[String]): Self = this.set("linkedPeopleResourceNames", value.asInstanceOf[js.Any])
+    def setPreviousResourceNamesVarargs(value: String*): Self = StObject.set(x, "previousResourceNames", js.Array(value :_*))
     
     @scala.inline
-    def setObjectType(value: ObjectType): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousResourceNamesVarargs(value: String*): Self = this.set("previousResourceNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setPreviousResourceNames(value: js.Array[String]): Self = this.set("previousResourceNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourcesVarargs(value: Source*): Self = this.set("sources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSources(value: js.Array[Source]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

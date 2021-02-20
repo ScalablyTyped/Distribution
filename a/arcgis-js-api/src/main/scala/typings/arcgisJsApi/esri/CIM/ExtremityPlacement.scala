@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ExtremityPlacement extends js.Object
+sealed trait ExtremityPlacement extends StObject
 @JSGlobal("__esri.CIM.ExtremityPlacement")
 @js.native
-object ExtremityPlacement extends js.Object {
+object ExtremityPlacement extends StObject {
   
   /**
     * Both - marker is placed at the beginning and end of the line.

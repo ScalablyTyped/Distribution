@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.WiFi
 
 import typings.winrtUwp.Windows.Networking.Connectivity.NetworkSecuritySettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes an available Wi-Fi network. */
 @js.native
-trait WiFiAvailableNetwork extends js.Object {
+trait WiFiAvailableNetwork extends StObject {
   
   /** Gets the interval between 802.11 Beacon frames used by this network. */
   var beaconInterval: Double = js.native
@@ -63,51 +64,39 @@ object WiFiAvailableNetwork {
   }
   
   @scala.inline
-  implicit class WiFiAvailableNetworkOps[Self <: WiFiAvailableNetwork] (val x: Self) extends AnyVal {
+  implicit class WiFiAvailableNetworkMutableBuilder[Self <: WiFiAvailableNetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeaconInterval(value: Double): Self = StObject.set(x, "beaconInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBssid(value: String): Self = StObject.set(x, "bssid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelCenterFrequencyInKilohertz(value: Double): Self = StObject.set(x, "channelCenterFrequencyInKilohertz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeaconInterval(value: Double): Self = this.set("beaconInterval", value.asInstanceOf[js.Any])
+    def setIsWiFiDirect(value: Boolean): Self = StObject.set(x, "isWiFiDirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBssid(value: String): Self = this.set("bssid", value.asInstanceOf[js.Any])
+    def setNetworkKind(value: WiFiNetworkKind): Self = StObject.set(x, "networkKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelCenterFrequencyInKilohertz(value: Double): Self = this.set("channelCenterFrequencyInKilohertz", value.asInstanceOf[js.Any])
+    def setNetworkRssiInDecibelMilliwatts(value: Double): Self = StObject.set(x, "networkRssiInDecibelMilliwatts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWiFiDirect(value: Boolean): Self = this.set("isWiFiDirect", value.asInstanceOf[js.Any])
+    def setPhyKind(value: WiFiPhyKind): Self = StObject.set(x, "phyKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkKind(value: WiFiNetworkKind): Self = this.set("networkKind", value.asInstanceOf[js.Any])
+    def setSecuritySettings(value: NetworkSecuritySettings): Self = StObject.set(x, "securitySettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkRssiInDecibelMilliwatts(value: Double): Self = this.set("networkRssiInDecibelMilliwatts", value.asInstanceOf[js.Any])
+    def setSignalBars(value: Double): Self = StObject.set(x, "signalBars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhyKind(value: WiFiPhyKind): Self = this.set("phyKind", value.asInstanceOf[js.Any])
+    def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecuritySettings(value: NetworkSecuritySettings): Self = this.set("securitySettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignalBars(value: Double): Self = this.set("signalBars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSsid(value: String): Self = this.set("ssid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUptime(value: Double): Self = this.set("uptime", value.asInstanceOf[js.Any])
+    def setUptime(value: Double): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
   }
 }

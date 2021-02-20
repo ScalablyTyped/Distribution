@@ -1,12 +1,13 @@
 package typings.antd.anon
 
 import typings.rcTree.interfaceMod.DataNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndKey extends js.Object {
+trait EndKey extends StObject {
   
   var endKey: js.UndefOr[typings.rcTree.interfaceMod.Key] = js.native
   
@@ -25,42 +26,30 @@ object EndKey {
   }
   
   @scala.inline
-  implicit class EndKeyOps[Self <: EndKey] (val x: Self) extends AnyVal {
+  implicit class EndKeyMutableBuilder[Self <: EndKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "endKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndKeyUndefined: Self = StObject.set(x, "endKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = this.set("expandedKeys", js.Array(value :_*))
+    def setExpandedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
     
     @scala.inline
-    def setExpandedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = this.set("expandedKeys", value.asInstanceOf[js.Any])
+    def setStartKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "startKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreeDataVarargs(value: DataNode*): Self = this.set("treeData", js.Array(value :_*))
+    def setStartKeyUndefined: Self = StObject.set(x, "startKey", js.undefined)
     
     @scala.inline
-    def setTreeData(value: js.Array[DataNode]): Self = this.set("treeData", value.asInstanceOf[js.Any])
+    def setTreeData(value: js.Array[DataNode]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndKey(value: typings.rcTree.interfaceMod.Key): Self = this.set("endKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndKey: Self = this.set("endKey", js.undefined)
-    
-    @scala.inline
-    def setStartKey(value: typings.rcTree.interfaceMod.Key): Self = this.set("startKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartKey: Self = this.set("startKey", js.undefined)
+    def setTreeDataVarargs(value: DataNode*): Self = StObject.set(x, "treeData", js.Array(value :_*))
   }
 }

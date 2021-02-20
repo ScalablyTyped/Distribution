@@ -1,11 +1,12 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CountryInfo extends js.Object {
+trait CountryInfo extends StObject {
   
   var country: String = js.native
   
@@ -20,27 +21,15 @@ object CountryInfo {
   }
   
   @scala.inline
-  implicit class CountryInfoOps[Self <: CountryInfo] (val x: Self) extends AnyVal {
+  implicit class CountryInfoMutableBuilder[Self <: CountryInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiatCurrency(value: String): Self = StObject.set(x, "fiatCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFiatCurrency(value: String): Self = this.set("fiatCurrency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFiatCurrency: Self = this.set("fiatCurrency", js.undefined)
+    def setFiatCurrencyUndefined: Self = StObject.set(x, "fiatCurrency", js.undefined)
   }
 }

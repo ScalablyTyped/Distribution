@@ -1,12 +1,13 @@
 package typings.workboxStreams
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-streams/isSupported", JSImport.Namespace)
-@js.native
-object isSupportedMod extends js.Object {
+object isSupportedMod {
   
+  @JSImport("workbox-streams/isSupported", "isSupported")
+  @js.native
   def isSupported(): Boolean = js.native
 }

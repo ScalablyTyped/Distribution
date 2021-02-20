@@ -11,12 +11,13 @@ import typings.csstype.mod.PaddingLeftProperty
 import typings.csstype.mod.PaddingProperty
 import typings.csstype.mod.PaddingRightProperty
 import typings.csstype.mod.PaddingTopProperty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AliasesCSSProperties extends js.Object {
+trait AliasesCSSProperties extends StObject {
   
   /**
     * The **`background-color`** CSS property sets the background color of an element.
@@ -324,191 +325,179 @@ object AliasesCSSProperties {
   }
   
   @scala.inline
-  implicit class AliasesCSSPropertiesOps[Self <: AliasesCSSProperties] (val x: Self) extends AnyVal {
+  implicit class AliasesCSSPropertiesMutableBuilder[Self <: AliasesCSSProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBg(value: BackgroundColorProperty | js.Array[BackgroundColorProperty]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBgVarargs(value: BackgroundColorProperty*): Self = StObject.set(x, "bg", js.Array(value :_*))
     
     @scala.inline
-    def setBgVarargs(value: BackgroundColorProperty*): Self = this.set("bg", js.Array(value :_*))
+    def setM(value: (MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBg(value: BackgroundColorProperty | js.Array[BackgroundColorProperty]): Self = this.set("bg", value.asInstanceOf[js.Any])
+    def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
     @scala.inline
-    def deleteBg: Self = this.set("bg", js.undefined)
+    def setMVarargs(value: (MarginProperty[Double | String])*): Self = StObject.set(x, "m", js.Array(value :_*))
     
     @scala.inline
-    def setMVarargs(value: (MarginProperty[Double | String])*): Self = this.set("m", js.Array(value :_*))
+    def setMarginX(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM(value: (MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])): Self = this.set("m", value.asInstanceOf[js.Any])
+    def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
     
     @scala.inline
-    def deleteM: Self = this.set("m", js.undefined)
+    def setMarginXVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "marginX", js.Array(value :_*))
     
     @scala.inline
-    def setMarginXVarargs(value: (MarginLeftProperty[Double | String])*): Self = this.set("marginX", js.Array(value :_*))
+    def setMarginY(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginX(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = this.set("marginX", value.asInstanceOf[js.Any])
+    def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
     
     @scala.inline
-    def deleteMarginX: Self = this.set("marginX", js.undefined)
+    def setMarginYVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "marginY", js.Array(value :_*))
     
     @scala.inline
-    def setMarginYVarargs(value: (MarginTopProperty[Double | String])*): Self = this.set("marginY", js.Array(value :_*))
+    def setMb(value: (MarginBottomProperty[Double | String]) | (js.Array[MarginBottomProperty[Double | String]])): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginY(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = this.set("marginY", value.asInstanceOf[js.Any])
+    def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
     
     @scala.inline
-    def deleteMarginY: Self = this.set("marginY", js.undefined)
+    def setMbVarargs(value: (MarginBottomProperty[Double | String])*): Self = StObject.set(x, "mb", js.Array(value :_*))
     
     @scala.inline
-    def setMbVarargs(value: (MarginBottomProperty[Double | String])*): Self = this.set("mb", js.Array(value :_*))
+    def setMl(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMb(value: (MarginBottomProperty[Double | String]) | (js.Array[MarginBottomProperty[Double | String]])): Self = this.set("mb", value.asInstanceOf[js.Any])
+    def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
     
     @scala.inline
-    def deleteMb: Self = this.set("mb", js.undefined)
+    def setMlVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "ml", js.Array(value :_*))
     
     @scala.inline
-    def setMlVarargs(value: (MarginLeftProperty[Double | String])*): Self = this.set("ml", js.Array(value :_*))
+    def setMr(value: (MarginRightProperty[Double | String]) | (js.Array[MarginRightProperty[Double | String]])): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMl(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = this.set("ml", value.asInstanceOf[js.Any])
+    def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
     
     @scala.inline
-    def deleteMl: Self = this.set("ml", js.undefined)
+    def setMrVarargs(value: (MarginRightProperty[Double | String])*): Self = StObject.set(x, "mr", js.Array(value :_*))
     
     @scala.inline
-    def setMrVarargs(value: (MarginRightProperty[Double | String])*): Self = this.set("mr", js.Array(value :_*))
+    def setMt(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMr(value: (MarginRightProperty[Double | String]) | (js.Array[MarginRightProperty[Double | String]])): Self = this.set("mr", value.asInstanceOf[js.Any])
+    def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
     
     @scala.inline
-    def deleteMr: Self = this.set("mr", js.undefined)
+    def setMtVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "mt", js.Array(value :_*))
     
     @scala.inline
-    def setMtVarargs(value: (MarginTopProperty[Double | String])*): Self = this.set("mt", js.Array(value :_*))
+    def setMx(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMt(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = this.set("mt", value.asInstanceOf[js.Any])
+    def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
     
     @scala.inline
-    def deleteMt: Self = this.set("mt", js.undefined)
+    def setMxVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "mx", js.Array(value :_*))
     
     @scala.inline
-    def setMxVarargs(value: (MarginLeftProperty[Double | String])*): Self = this.set("mx", js.Array(value :_*))
+    def setMy(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMx(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = this.set("mx", value.asInstanceOf[js.Any])
+    def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
     @scala.inline
-    def deleteMx: Self = this.set("mx", js.undefined)
+    def setMyVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "my", js.Array(value :_*))
     
     @scala.inline
-    def setMyVarargs(value: (MarginTopProperty[Double | String])*): Self = this.set("my", js.Array(value :_*))
+    def setP(value: (PaddingProperty[Double | String]) | (js.Array[PaddingProperty[Double | String]])): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMy(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = this.set("my", value.asInstanceOf[js.Any])
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
     @scala.inline
-    def deleteMy: Self = this.set("my", js.undefined)
+    def setPVarargs(value: (PaddingProperty[Double | String])*): Self = StObject.set(x, "p", js.Array(value :_*))
     
     @scala.inline
-    def setPVarargs(value: (PaddingProperty[Double | String])*): Self = this.set("p", js.Array(value :_*))
+    def setPaddingX(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP(value: (PaddingProperty[Double | String]) | (js.Array[PaddingProperty[Double | String]])): Self = this.set("p", value.asInstanceOf[js.Any])
+    def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
     
     @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
+    def setPaddingXVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
     
     @scala.inline
-    def setPaddingXVarargs(value: (PaddingLeftProperty[Double | String])*): Self = this.set("paddingX", js.Array(value :_*))
+    def setPaddingY(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingX(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = this.set("paddingX", value.asInstanceOf[js.Any])
+    def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
     @scala.inline
-    def deletePaddingX: Self = this.set("paddingX", js.undefined)
-    
-    @scala.inline
-    def setPaddingYVarargs(value: (PaddingTopProperty[Double | String])*): Self = this.set("paddingY", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaddingY(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = this.set("paddingY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingY: Self = this.set("paddingY", js.undefined)
-    
-    @scala.inline
-    def setPbVarargs(value: (PaddingBottomProperty[Double | String])*): Self = this.set("pb", js.Array(value :_*))
+    def setPaddingYVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
     
     @scala.inline
     def setPb(
       value: (PaddingBottomProperty[Double | String]) | (js.Array[PaddingBottomProperty[Double | String]])
-    ): Self = this.set("pb", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePb: Self = this.set("pb", js.undefined)
+    def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
     
     @scala.inline
-    def setPlVarargs(value: (PaddingLeftProperty[Double | String])*): Self = this.set("pl", js.Array(value :_*))
+    def setPbVarargs(value: (PaddingBottomProperty[Double | String])*): Self = StObject.set(x, "pb", js.Array(value :_*))
     
     @scala.inline
-    def setPl(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = this.set("pl", value.asInstanceOf[js.Any])
+    def setPl(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePl: Self = this.set("pl", js.undefined)
+    def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
     
     @scala.inline
-    def setPrVarargs(value: (PaddingRightProperty[Double | String])*): Self = this.set("pr", js.Array(value :_*))
+    def setPlVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "pl", js.Array(value :_*))
     
     @scala.inline
-    def setPr(value: (PaddingRightProperty[Double | String]) | (js.Array[PaddingRightProperty[Double | String]])): Self = this.set("pr", value.asInstanceOf[js.Any])
+    def setPr(value: (PaddingRightProperty[Double | String]) | (js.Array[PaddingRightProperty[Double | String]])): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePr: Self = this.set("pr", js.undefined)
+    def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
     @scala.inline
-    def setPtVarargs(value: (PaddingTopProperty[Double | String])*): Self = this.set("pt", js.Array(value :_*))
+    def setPrVarargs(value: (PaddingRightProperty[Double | String])*): Self = StObject.set(x, "pr", js.Array(value :_*))
     
     @scala.inline
-    def setPt(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = this.set("pt", value.asInstanceOf[js.Any])
+    def setPt(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePt: Self = this.set("pt", js.undefined)
+    def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
     
     @scala.inline
-    def setPxVarargs(value: (PaddingLeftProperty[Double | String])*): Self = this.set("px", js.Array(value :_*))
+    def setPtVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "pt", js.Array(value :_*))
     
     @scala.inline
-    def setPx(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = this.set("px", value.asInstanceOf[js.Any])
+    def setPx(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePx: Self = this.set("px", js.undefined)
+    def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
     
     @scala.inline
-    def setPyVarargs(value: (PaddingTopProperty[Double | String])*): Self = this.set("py", js.Array(value :_*))
+    def setPxVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "px", js.Array(value :_*))
     
     @scala.inline
-    def setPy(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = this.set("py", value.asInstanceOf[js.Any])
+    def setPy(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePy: Self = this.set("py", js.undefined)
+    def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
+    
+    @scala.inline
+    def setPyVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "py", js.Array(value :_*))
   }
 }

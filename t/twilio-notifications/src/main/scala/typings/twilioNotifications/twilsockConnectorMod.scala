@@ -2,17 +2,17 @@ package typings.twilioNotifications
 
 import typings.twilioNotifications.configurationMod.Configuration
 import typings.twilioNotifications.connectorMod.Connector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-notifications/lib/twilsock.connector", JSImport.Namespace)
-@js.native
-object twilsockConnectorMod extends js.Object {
+object twilsockConnectorMod {
   
   /**
     * Registrar connector implementation for twilsock
     */
+  @JSImport("twilio-notifications/lib/twilsock.connector", "TwilsockConnector")
   @js.native
   class TwilsockConnector protected () extends Connector {
     def this(context: js.Any, twilsock: js.Any, config: Configuration) = this()

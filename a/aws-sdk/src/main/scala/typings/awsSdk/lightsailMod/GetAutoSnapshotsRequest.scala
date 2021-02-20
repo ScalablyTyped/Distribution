@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAutoSnapshotsRequest extends js.Object {
+trait GetAutoSnapshotsRequest extends StObject {
   
   /**
     * The name of the source instance or disk from which to get automatic snapshot information.
@@ -21,21 +22,9 @@ object GetAutoSnapshotsRequest {
   }
   
   @scala.inline
-  implicit class GetAutoSnapshotsRequestOps[Self <: GetAutoSnapshotsRequest] (val x: Self) extends AnyVal {
+  implicit class GetAutoSnapshotsRequestMutableBuilder[Self <: GetAutoSnapshotsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
   }
 }

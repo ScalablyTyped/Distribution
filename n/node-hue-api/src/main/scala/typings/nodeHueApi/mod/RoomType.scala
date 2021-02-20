@@ -1,5 +1,6 @@
 package typings.nodeHueApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeHueApi.nodeHueApiStrings.Carport
   - typings.nodeHueApi.nodeHueApiStrings.Other
 */
-trait RoomType extends js.Object
+trait RoomType extends StObject
 object RoomType {
   
   @scala.inline

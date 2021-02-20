@@ -2,6 +2,7 @@ package typings.box2d.Box2D.Dynamics.Joints
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,51 +96,39 @@ object b2PrismaticJointDef {
   }
   
   @scala.inline
-  implicit class b2PrismaticJointDefOps[Self <: b2PrismaticJointDef] (val x: Self) extends AnyVal {
+  implicit class b2PrismaticJointDefMutableBuilder[Self <: b2PrismaticJointDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableLimit(value: Boolean): Self = StObject.set(x, "enableLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableMotor(value: Boolean): Self = StObject.set(x, "enableMotor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialize(value: (b2Body, b2Body, b2Vec2, b2Vec2) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setInitialize(value: (b2Body, b2Body, b2Vec2, b2Vec2) => Unit): Self = this.set("Initialize", js.Any.fromFunction4(value))
+    def setLocalAnchorA(value: b2Vec2): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLimit(value: Boolean): Self = this.set("enableLimit", value.asInstanceOf[js.Any])
+    def setLocalAnchorB(value: b2Vec2): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableMotor(value: Boolean): Self = this.set("enableMotor", value.asInstanceOf[js.Any])
+    def setLocalAxisA(value: b2Vec2): Self = StObject.set(x, "localAxisA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAnchorA(value: b2Vec2): Self = this.set("localAnchorA", value.asInstanceOf[js.Any])
+    def setLowerTranslation(value: Double): Self = StObject.set(x, "lowerTranslation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAnchorB(value: b2Vec2): Self = this.set("localAnchorB", value.asInstanceOf[js.Any])
+    def setMaxMotorForce(value: Double): Self = StObject.set(x, "maxMotorForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAxisA(value: b2Vec2): Self = this.set("localAxisA", value.asInstanceOf[js.Any])
+    def setMotorSpeed(value: Double): Self = StObject.set(x, "motorSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerTranslation(value: Double): Self = this.set("lowerTranslation", value.asInstanceOf[js.Any])
+    def setReferenceAngle(value: Double): Self = StObject.set(x, "referenceAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMotorForce(value: Double): Self = this.set("maxMotorForce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMotorSpeed(value: Double): Self = this.set("motorSpeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceAngle(value: Double): Self = this.set("referenceAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpperTranslation(value: Double): Self = this.set("upperTranslation", value.asInstanceOf[js.Any])
+    def setUpperTranslation(value: Double): Self = StObject.set(x, "upperTranslation", value.asInstanceOf[js.Any])
   }
 }

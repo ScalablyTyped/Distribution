@@ -4,16 +4,28 @@ import typings.semanticUiReactEventStack.typesMod.CallableEventListener
 import typings.semanticUiReactEventStack.typesMod.EventListeners
 import typings.std.Event
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventPool", JSImport.Namespace)
-@js.native
-object eventPoolMod extends js.Object {
+object eventPoolMod {
+  
+  @JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventPool", JSImport.Default)
+  @js.native
+  class default protected () extends EventPool {
+    def this(poolName: String, handlerSets: Map[String, typings.semanticUiReactEventStack.eventSetMod.default]) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventPool", "default.createByType")
+    @js.native
+    def createByType(poolName: String, eventType: String, eventHandlers: js.Array[CallableEventListener]): EventPool = js.native
+  }
   
   @js.native
-  trait EventPool extends js.Object {
+  trait EventPool extends StObject {
     
     def addHandlers(eventType: String, eventHandlers: EventListeners): EventPool = js.native
     
@@ -27,16 +39,5 @@ object eventPoolMod extends js.Object {
     val poolName: js.Any = js.native
     
     def removeHandlers(eventType: String, eventHandlers: EventListeners): EventPool = js.native
-  }
-  
-  @js.native
-  class default protected () extends EventPool {
-    def this(poolName: String, handlerSets: Map[String, typings.semanticUiReactEventStack.eventSetMod.default]) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def createByType(poolName: String, eventType: String, eventHandlers: js.Array[CallableEventListener]): EventPool = js.native
   }
 }

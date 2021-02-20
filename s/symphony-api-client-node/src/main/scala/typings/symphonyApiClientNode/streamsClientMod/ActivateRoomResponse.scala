@@ -1,11 +1,12 @@
 package typings.symphonyApiClientNode.streamsClientMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivateRoomResponse extends js.Object {
+trait ActivateRoomResponse extends StObject {
   
   var immutableRoomAttributes: ImmutableRoomAttributes = js.native
   
@@ -26,27 +27,15 @@ object ActivateRoomResponse {
   }
   
   @scala.inline
-  implicit class ActivateRoomResponseOps[Self <: ActivateRoomResponse] (val x: Self) extends AnyVal {
+  implicit class ActivateRoomResponseMutableBuilder[Self <: ActivateRoomResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImmutableRoomAttributes(value: ImmutableRoomAttributes): Self = StObject.set(x, "immutableRoomAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoomAttributes(value: BaseRoomAttributes): Self = StObject.set(x, "roomAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImmutableRoomAttributes(value: ImmutableRoomAttributes): Self = this.set("immutableRoomAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoomAttributes(value: BaseRoomAttributes): Self = this.set("roomAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoomSystemInfo(value: RoomSystemInfo): Self = this.set("roomSystemInfo", value.asInstanceOf[js.Any])
+    def setRoomSystemInfo(value: RoomSystemInfo): Self = StObject.set(x, "roomSystemInfo", value.asInstanceOf[js.Any])
   }
 }

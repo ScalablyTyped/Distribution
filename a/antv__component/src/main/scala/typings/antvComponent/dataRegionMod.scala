@@ -1,18 +1,18 @@
 package typings.antvComponent
 
-import typings.antvComponent.groupComponentMod.GroupComponent
 import typings.antvComponent.typesMod.DataRegionAnnotationCfg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/annotation/data-region", JSImport.Namespace)
-@js.native
-object dataRegionMod extends js.Object {
+object dataRegionMod {
   
-  @js.native
-  trait DataRegionAnnotation extends GroupComponent[DataRegionAnnotationCfg]
-  
+  @JSImport("@antv/component/lib/annotation/data-region", JSImport.Default)
   @js.native
   class default () extends DataRegionAnnotation
+  
+  @js.native
+  trait DataRegionAnnotation
+    extends typings.antvComponent.groupComponentMod.default[DataRegionAnnotationCfg]
 }

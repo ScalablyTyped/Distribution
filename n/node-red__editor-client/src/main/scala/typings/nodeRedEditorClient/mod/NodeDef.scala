@@ -9,6 +9,7 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.left
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.node_label
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.node_label_italic
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Read more: https://nodered.org/docs/creating-nodes/node-html#node-definition
   */
 @js.native
-trait NodeDef[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */] extends js.Object {
+trait NodeDef[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */] extends StObject {
   
   /**
     * The alignment of the icon and label.
@@ -154,145 +155,133 @@ object NodeDef {
   }
   
   @scala.inline
-  implicit class NodeDefOps[Self <: NodeDef[_, _, _], TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */] (val x: Self with (NodeDef[TProps, TCreds, TInstProps])) extends AnyVal {
+  implicit class NodeDefMutableBuilder[Self <: NodeDef[_, _, _], TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */] (val x: Self with (NodeDef[TProps, TCreds, TInstProps])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButton(value: Enabled[TInstProps, TProps]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: config | String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def setDefaults(value: NodePropertiesDef[TProps, TInstProps]): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    def setCategory(value: config | String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: left | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setButton(value: Enabled[TInstProps, TProps]): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setCredentials(value: NodeCredentials[TCreds]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDefaults(value: NodePropertiesDef[TProps, TInstProps]): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: NodeCredentials[TCreds]): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setInputLabels(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = StObject.set(x, "inputLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setInputLabelsUndefined: Self = StObject.set(x, "inputLabels", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setInputs(value: `0` | `1`): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputLabels(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = this.set("inputLabels", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def deleteInputLabels: Self = this.set("inputLabels", js.undefined)
-    
-    @scala.inline
-    def setInputs(value: `0` | `1`): Self = this.set("inputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
-    
-    @scala.inline
-    def setLabel(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabel(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLabelStyle(
       value: node_label | node_label_italic | String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], node_label | node_label_italic | String])
-    ): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def setOneditcancel(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = this.set("oneditcancel", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteOneditcancel: Self = this.set("oneditcancel", js.undefined)
+    def setOneditcancel(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneditdelete(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = this.set("oneditdelete", value.asInstanceOf[js.Any])
+    def setOneditcancelUndefined: Self = StObject.set(x, "oneditcancel", js.undefined)
     
     @scala.inline
-    def deleteOneditdelete: Self = this.set("oneditdelete", js.undefined)
+    def setOneditdelete(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditdelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneditprepare(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = this.set("oneditprepare", value.asInstanceOf[js.Any])
+    def setOneditdeleteUndefined: Self = StObject.set(x, "oneditdelete", js.undefined)
     
     @scala.inline
-    def deleteOneditprepare: Self = this.set("oneditprepare", js.undefined)
+    def setOneditprepare(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditprepare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneditresize(value: js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* size */ Height, Unit]): Self = this.set("oneditresize", value.asInstanceOf[js.Any])
+    def setOneditprepareUndefined: Self = StObject.set(x, "oneditprepare", js.undefined)
     
     @scala.inline
-    def deleteOneditresize: Self = this.set("oneditresize", js.undefined)
+    def setOneditresize(value: js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* size */ Height, Unit]): Self = StObject.set(x, "oneditresize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneditsave(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = this.set("oneditsave", value.asInstanceOf[js.Any])
+    def setOneditresizeUndefined: Self = StObject.set(x, "oneditresize", js.undefined)
     
     @scala.inline
-    def deleteOneditsave: Self = this.set("oneditsave", js.undefined)
+    def setOneditsave(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditsave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpaletteadd(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = this.set("onpaletteadd", value.asInstanceOf[js.Any])
+    def setOneditsaveUndefined: Self = StObject.set(x, "oneditsave", js.undefined)
     
     @scala.inline
-    def deleteOnpaletteadd: Self = this.set("onpaletteadd", js.undefined)
+    def setOnpaletteadd(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "onpaletteadd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpaletteremove(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = this.set("onpaletteremove", value.asInstanceOf[js.Any])
+    def setOnpaletteaddUndefined: Self = StObject.set(x, "onpaletteadd", js.undefined)
     
     @scala.inline
-    def deleteOnpaletteremove: Self = this.set("onpaletteremove", js.undefined)
+    def setOnpaletteremove(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "onpaletteremove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputLabelsVarargs(value: String*): Self = this.set("outputLabels", js.Array(value :_*))
+    def setOnpaletteremoveUndefined: Self = StObject.set(x, "onpaletteremove", js.undefined)
     
     @scala.inline
     def setOutputLabels(
       value: String | js.Array[String] | (js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* idx */ Double, js.UndefOr[String]])
-    ): Self = this.set("outputLabels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "outputLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputLabels: Self = this.set("outputLabels", js.undefined)
+    def setOutputLabelsUndefined: Self = StObject.set(x, "outputLabels", js.undefined)
     
     @scala.inline
-    def setOutputs(value: Double): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setOutputLabelsVarargs(value: String*): Self = StObject.set(x, "outputLabels", js.Array(value :_*))
     
     @scala.inline
-    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    def setOutputs(value: Double): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaletteLabel(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = this.set("paletteLabel", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
     @scala.inline
-    def deletePaletteLabel: Self = this.set("paletteLabel", js.undefined)
+    def setPaletteLabel(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = StObject.set(x, "paletteLabel", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPaletteLabelUndefined: Self = StObject.set(x, "paletteLabel", js.undefined)
   }
 }

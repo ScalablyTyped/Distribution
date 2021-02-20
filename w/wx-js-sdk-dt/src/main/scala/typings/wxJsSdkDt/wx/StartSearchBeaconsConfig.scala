@@ -1,5 +1,6 @@
 package typings.wxJsSdkDt.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,24 +28,12 @@ object StartSearchBeaconsConfig {
   }
   
   @scala.inline
-  implicit class StartSearchBeaconsConfigOps[Self <: StartSearchBeaconsConfig] (val x: Self) extends AnyVal {
+  implicit class StartSearchBeaconsConfigMutableBuilder[Self <: StartSearchBeaconsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComplete(value: js.Any => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTicket(value: String): Self = this.set("ticket", value.asInstanceOf[js.Any])
+    def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
   }
 }

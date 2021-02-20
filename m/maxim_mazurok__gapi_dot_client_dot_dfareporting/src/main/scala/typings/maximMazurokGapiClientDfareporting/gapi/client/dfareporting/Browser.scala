@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Browser extends js.Object {
+trait Browser extends StObject {
   
   /** ID referring to this grouping of browser and version numbers. This is the ID used for targeting. */
   var browserVersionId: js.UndefOr[String] = js.native
@@ -42,54 +43,42 @@ object Browser {
   }
   
   @scala.inline
-  implicit class BrowserOps[Self <: Browser] (val x: Self) extends AnyVal {
+  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowserVersionId(value: String): Self = StObject.set(x, "browserVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowserVersionIdUndefined: Self = StObject.set(x, "browserVersionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserVersionId(value: String): Self = this.set("browserVersionId", value.asInstanceOf[js.Any])
+    def setDartIdUndefined: Self = StObject.set(x, "dartId", js.undefined)
     
     @scala.inline
-    def deleteBrowserVersionId: Self = this.set("browserVersionId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDartId(value: String): Self = this.set("dartId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDartId: Self = this.set("dartId", js.undefined)
+    def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMajorVersionUndefined: Self = StObject.set(x, "majorVersion", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMinorVersion(value: String): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorVersion(value: String): Self = this.set("majorVersion", value.asInstanceOf[js.Any])
+    def setMinorVersionUndefined: Self = StObject.set(x, "minorVersion", js.undefined)
     
     @scala.inline
-    def deleteMajorVersion: Self = this.set("majorVersion", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorVersion(value: String): Self = this.set("minorVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinorVersion: Self = this.set("minorVersion", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

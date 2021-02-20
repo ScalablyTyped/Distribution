@@ -2,21 +2,24 @@ package typings.ionicAngular
 
 import typings.angularCore.mod.ModuleWithProviders
 import typings.ionicCore.utilsConfigMod.IonicConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/ionic-module", JSImport.Namespace)
-@js.native
-object ionicModuleMod extends js.Object {
+object ionicModuleMod {
   
+  @JSImport("@ionic/angular/ionic-module", "IonicModule")
   @js.native
-  class IonicModule () extends js.Object
+  class IonicModule () extends StObject
   /* static members */
-  @js.native
-  object IonicModule extends js.Object {
+  object IonicModule {
     
+    @JSImport("@ionic/angular/ionic-module", "IonicModule.forRoot")
+    @js.native
     def forRoot(): ModuleWithProviders[IonicModule] = js.native
+    @JSImport("@ionic/angular/ionic-module", "IonicModule.forRoot")
+    @js.native
     def forRoot(config: IonicConfig): ModuleWithProviders[IonicModule] = js.native
   }
 }

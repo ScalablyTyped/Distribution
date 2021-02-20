@@ -1,12 +1,13 @@
 package typings.jqueryui.JQueryUI
 
 import typings.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectMenuEvents extends js.Object {
+trait SelectMenuEvents extends StObject {
   
   var change: js.UndefOr[SelectMenuEvent] = js.native
   
@@ -29,54 +30,42 @@ object SelectMenuEvents {
   }
   
   @scala.inline
-  implicit class SelectMenuEventsOps[Self <: SelectMenuEvents] (val x: Self) extends AnyVal {
+  implicit class SelectMenuEventsMutableBuilder[Self <: SelectMenuEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setChange(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = this.set("change", js.Any.fromFunction2(value))
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClose(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = this.set("close", js.Any.fromFunction2(value))
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setFocus(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = this.set("create", js.Any.fromFunction2(value))
+    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setOpen(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFocus(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = this.set("focus", js.Any.fromFunction2(value))
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteFocus: Self = this.set("focus", js.undefined)
+    def setSelect(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOpen(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = this.set("open", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
-    
-    @scala.inline
-    def setSelect(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit): Self = this.set("select", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

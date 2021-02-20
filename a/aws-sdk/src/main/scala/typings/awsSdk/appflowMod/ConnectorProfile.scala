@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectorProfile extends js.Object {
+trait ConnectorProfile extends StObject {
   
   /**
     *  Indicates the connection mode and if it is public or private. 
@@ -56,66 +57,54 @@ object ConnectorProfile {
   }
   
   @scala.inline
-  implicit class ConnectorProfileOps[Self <: ConnectorProfile] (val x: Self) extends AnyVal {
+  implicit class ConnectorProfileMutableBuilder[Self <: ConnectorProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "connectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionModeUndefined: Self = StObject.set(x, "connectionMode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectorProfileArn(value: ConnectorProfileArn): Self = StObject.set(x, "connectorProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionMode(value: ConnectionMode): Self = this.set("connectionMode", value.asInstanceOf[js.Any])
+    def setConnectorProfileArnUndefined: Self = StObject.set(x, "connectorProfileArn", js.undefined)
     
     @scala.inline
-    def deleteConnectionMode: Self = this.set("connectionMode", js.undefined)
+    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorProfileArn(value: ConnectorProfileArn): Self = this.set("connectorProfileArn", value.asInstanceOf[js.Any])
+    def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
     
     @scala.inline
-    def deleteConnectorProfileArn: Self = this.set("connectorProfileArn", js.undefined)
+    def setConnectorProfileProperties(value: ConnectorProfileProperties): Self = StObject.set(x, "connectorProfileProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = this.set("connectorProfileName", value.asInstanceOf[js.Any])
+    def setConnectorProfilePropertiesUndefined: Self = StObject.set(x, "connectorProfileProperties", js.undefined)
     
     @scala.inline
-    def deleteConnectorProfileName: Self = this.set("connectorProfileName", js.undefined)
+    def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorProfileProperties(value: ConnectorProfileProperties): Self = this.set("connectorProfileProperties", value.asInstanceOf[js.Any])
+    def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
     
     @scala.inline
-    def deleteConnectorProfileProperties: Self = this.set("connectorProfileProperties", js.undefined)
+    def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorType(value: ConnectorType): Self = this.set("connectorType", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteConnectorType: Self = this.set("connectorType", js.undefined)
+    def setCredentialsArn(value: ARN): Self = StObject.set(x, "credentialsArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Date): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setCredentialsArnUndefined: Self = StObject.set(x, "credentialsArn", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentialsArn(value: ARN): Self = this.set("credentialsArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentialsArn: Self = this.set("credentialsArn", js.undefined)
-    
-    @scala.inline
-    def setLastUpdatedAt(value: Date): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
   }
 }

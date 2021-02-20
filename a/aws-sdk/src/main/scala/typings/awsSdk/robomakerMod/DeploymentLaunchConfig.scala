@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentLaunchConfig extends js.Object {
+trait DeploymentLaunchConfig extends StObject {
   
   /**
     * An array of key/value pairs specifying environment variables for the robot application
@@ -41,42 +42,30 @@ object DeploymentLaunchConfig {
   }
   
   @scala.inline
-  implicit class DeploymentLaunchConfigOps[Self <: DeploymentLaunchConfig] (val x: Self) extends AnyVal {
+  implicit class DeploymentLaunchConfigMutableBuilder[Self <: DeploymentLaunchConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentVariables(value: EnvironmentVariableMap): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchFile(value: Command): Self = StObject.set(x, "launchFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchFile(value: Command): Self = this.set("launchFile", value.asInstanceOf[js.Any])
+    def setPackageName(value: Command): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: Command): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    def setPostLaunchFile(value: Path): Self = StObject.set(x, "postLaunchFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentVariables(value: EnvironmentVariableMap): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    def setPostLaunchFileUndefined: Self = StObject.set(x, "postLaunchFile", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    def setPreLaunchFile(value: Path): Self = StObject.set(x, "preLaunchFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostLaunchFile(value: Path): Self = this.set("postLaunchFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostLaunchFile: Self = this.set("postLaunchFile", js.undefined)
-    
-    @scala.inline
-    def setPreLaunchFile(value: Path): Self = this.set("preLaunchFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreLaunchFile: Self = this.set("preLaunchFile", js.undefined)
+    def setPreLaunchFileUndefined: Self = StObject.set(x, "preLaunchFile", js.undefined)
   }
 }

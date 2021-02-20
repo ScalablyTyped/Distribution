@@ -1,66 +1,56 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EChatActionResult extends js.Object
+sealed trait EChatActionResult extends StObject
 @JSImport("steam-client", "EChatActionResult")
 @js.native
-object EChatActionResult extends js.Object {
+object EChatActionResult extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatActionResult with Double] = js.native
   
   @js.native
   sealed trait ChatDoesntExist extends EChatActionResult
-  /* 8 */ @js.native
-  object ChatDoesntExist extends TopLevel[ChatDoesntExist with Double]
+  /* 8 */ val ChatDoesntExist: typings.steamClient.mod.EChatActionResult.ChatDoesntExist with Double = js.native
   
   @js.native
   sealed trait ChatFull extends EChatActionResult
-  /* 9 */ @js.native
-  object ChatFull extends TopLevel[ChatFull with Double]
+  /* 9 */ val ChatFull: typings.steamClient.mod.EChatActionResult.ChatFull with Double = js.native
   
   @js.native
   sealed trait Error extends EChatActionResult
-  /* 2 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  /* 2 */ val Error: typings.steamClient.mod.EChatActionResult.Error with Double = js.native
   
   @js.native
   sealed trait NotAllowedOnBannedUser extends EChatActionResult
-  /* 5 */ @js.native
-  object NotAllowedOnBannedUser extends TopLevel[NotAllowedOnBannedUser with Double]
+  /* 5 */ val NotAllowedOnBannedUser: typings.steamClient.mod.EChatActionResult.NotAllowedOnBannedUser with Double = js.native
   
   @js.native
   sealed trait NotAllowedOnChatOwner extends EChatActionResult
-  /* 6 */ @js.native
-  object NotAllowedOnChatOwner extends TopLevel[NotAllowedOnChatOwner with Double]
+  /* 6 */ val NotAllowedOnChatOwner: typings.steamClient.mod.EChatActionResult.NotAllowedOnChatOwner with Double = js.native
   
   @js.native
   sealed trait NotAllowedOnClanMember extends EChatActionResult
-  /* 4 */ @js.native
-  object NotAllowedOnClanMember extends TopLevel[NotAllowedOnClanMember with Double]
+  /* 4 */ val NotAllowedOnClanMember: typings.steamClient.mod.EChatActionResult.NotAllowedOnClanMember with Double = js.native
   
   @js.native
   sealed trait NotAllowedOnSelf extends EChatActionResult
-  /* 7 */ @js.native
-  object NotAllowedOnSelf extends TopLevel[NotAllowedOnSelf with Double]
+  /* 7 */ val NotAllowedOnSelf: typings.steamClient.mod.EChatActionResult.NotAllowedOnSelf with Double = js.native
   
   @js.native
   sealed trait NotPermitted extends EChatActionResult
-  /* 3 */ @js.native
-  object NotPermitted extends TopLevel[NotPermitted with Double]
+  /* 3 */ val NotPermitted: typings.steamClient.mod.EChatActionResult.NotPermitted with Double = js.native
   
   @js.native
   sealed trait Success extends EChatActionResult
-  /* 1 */ @js.native
-  object Success extends TopLevel[Success with Double]
+  /* 1 */ val Success: typings.steamClient.mod.EChatActionResult.Success with Double = js.native
   
   @js.native
   sealed trait VoiceSlotsFull extends EChatActionResult
-  /* 10 */ @js.native
-  object VoiceSlotsFull extends TopLevel[VoiceSlotsFull with Double]
+  /* 10 */ val VoiceSlotsFull: typings.steamClient.mod.EChatActionResult.VoiceSlotsFull with Double = js.native
 }

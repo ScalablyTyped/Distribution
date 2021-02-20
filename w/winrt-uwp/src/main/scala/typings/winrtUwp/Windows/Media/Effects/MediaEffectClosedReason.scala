@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Effects
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaEffectClosedReason extends js.Object
+sealed trait MediaEffectClosedReason extends StObject
 /** Specifies the reason why a media effect was closed. */
 @JSGlobal("Windows.Media.Effects.MediaEffectClosedReason")
 @js.native
-object MediaEffectClosedReason extends js.Object {
+object MediaEffectClosedReason extends StObject {
   
   /** The operation is complete. */
   @js.native

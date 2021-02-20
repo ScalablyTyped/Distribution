@@ -2,12 +2,13 @@ package typings.reactNativeNavigation.anon
 
 import typings.propTypes.mod.ReactNodeLike
 import typings.propTypes.mod.Requireable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Children extends js.Object {
+trait Children extends StObject {
   
   var children: Requireable[ReactNodeLike] = js.native
   
@@ -40,39 +41,27 @@ object Children {
   }
   
   @scala.inline
-  implicit class ChildrenOps[Self <: Children] (val x: Self) extends AnyVal {
+  implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: Requireable[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnPeekIn(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onPeekIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: Requireable[ReactNodeLike]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setOnPeekOut(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onPeekOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Requireable[String]): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOnPress(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPeekIn(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = this.set("onPeekIn", value.asInstanceOf[js.Any])
+    def setOnPressIn(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onPressIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPeekOut(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = this.set("onPeekOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnPress(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = this.set("onPress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnPressIn(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = this.set("onPressIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchableComponent(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = this.set("touchableComponent", value.asInstanceOf[js.Any])
+    def setTouchableComponent(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "touchableComponent", value.asInstanceOf[js.Any])
   }
 }

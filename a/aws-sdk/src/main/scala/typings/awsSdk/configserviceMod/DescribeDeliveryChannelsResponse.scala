@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDeliveryChannelsResponse extends js.Object {
+trait DescribeDeliveryChannelsResponse extends StObject {
   
   /**
     * A list that contains the descriptions of the specified delivery channel.
@@ -21,27 +22,15 @@ object DescribeDeliveryChannelsResponse {
   }
   
   @scala.inline
-  implicit class DescribeDeliveryChannelsResponseOps[Self <: DescribeDeliveryChannelsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDeliveryChannelsResponseMutableBuilder[Self <: DescribeDeliveryChannelsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryChannels(value: DeliveryChannelList): Self = StObject.set(x, "DeliveryChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryChannelsUndefined: Self = StObject.set(x, "DeliveryChannels", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeliveryChannelsVarargs(value: DeliveryChannel*): Self = this.set("DeliveryChannels", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeliveryChannels(value: DeliveryChannelList): Self = this.set("DeliveryChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeliveryChannels: Self = this.set("DeliveryChannels", js.undefined)
+    def setDeliveryChannelsVarargs(value: DeliveryChannel*): Self = StObject.set(x, "DeliveryChannels", js.Array(value :_*))
   }
 }

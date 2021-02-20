@@ -1,11 +1,12 @@
 package typings.forestExpressSequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregatedFilters extends js.Object {
+trait AggregatedFilters extends StObject {
   
   var aggregator: Aggregator = js.native
   
@@ -20,27 +21,15 @@ object AggregatedFilters {
   }
   
   @scala.inline
-  implicit class AggregatedFiltersOps[Self <: AggregatedFilters] (val x: Self) extends AnyVal {
+  implicit class AggregatedFiltersMutableBuilder[Self <: AggregatedFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregator(value: Aggregator): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditions(value: js.Array[Filter]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAggregator(value: Aggregator): Self = this.set("aggregator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConditionsVarargs(value: Filter*): Self = this.set("conditions", js.Array(value :_*))
-    
-    @scala.inline
-    def setConditions(value: js.Array[Filter]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setConditionsVarargs(value: Filter*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

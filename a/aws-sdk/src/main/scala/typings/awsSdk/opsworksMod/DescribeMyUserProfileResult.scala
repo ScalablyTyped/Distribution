@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMyUserProfileResult extends js.Object {
+trait DescribeMyUserProfileResult extends StObject {
   
   /**
     * A UserProfile object that describes the user's SSH information.
@@ -21,24 +22,12 @@ object DescribeMyUserProfileResult {
   }
   
   @scala.inline
-  implicit class DescribeMyUserProfileResultOps[Self <: DescribeMyUserProfileResult] (val x: Self) extends AnyVal {
+  implicit class DescribeMyUserProfileResultMutableBuilder[Self <: DescribeMyUserProfileResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUserProfile(value: SelfUserProfile): Self = StObject.set(x, "UserProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUserProfile(value: SelfUserProfile): Self = this.set("UserProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProfile: Self = this.set("UserProfile", js.undefined)
+    def setUserProfileUndefined: Self = StObject.set(x, "UserProfile", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.html5plus
 
 import typings.html5plus.html5plusStrings.ARGB
 import typings.html5plus.html5plusStrings.RGB565
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewDrawOptions extends js.Object {
+trait PlusWebviewWebviewDrawOptions extends StObject {
   
   /**
     * 截屏图片的位深
@@ -69,42 +70,30 @@ object PlusWebviewWebviewDrawOptions {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewDrawOptionsOps[Self <: PlusWebviewWebviewDrawOptions] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewDrawOptionsMutableBuilder[Self <: PlusWebviewWebviewDrawOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBit(value: RGB565 | ARGB): Self = StObject.set(x, "bit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitUndefined: Self = StObject.set(x, "bit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBit(value: RGB565 | ARGB): Self = this.set("bit", value.asInstanceOf[js.Any])
+    def setCheckKeyboard(value: Boolean): Self = StObject.set(x, "checkKeyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBit: Self = this.set("bit", js.undefined)
+    def setCheckKeyboardUndefined: Self = StObject.set(x, "checkKeyboard", js.undefined)
     
     @scala.inline
-    def setCheck(value: Boolean): Self = this.set("check", value.asInstanceOf[js.Any])
+    def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
     
     @scala.inline
-    def deleteCheck: Self = this.set("check", js.undefined)
+    def setClip(value: PlusNativeObj): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckKeyboard(value: Boolean): Self = this.set("checkKeyboard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCheckKeyboard: Self = this.set("checkKeyboard", js.undefined)
-    
-    @scala.inline
-    def setClip(value: PlusNativeObj): Self = this.set("clip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClip: Self = this.set("clip", js.undefined)
+    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
   }
 }

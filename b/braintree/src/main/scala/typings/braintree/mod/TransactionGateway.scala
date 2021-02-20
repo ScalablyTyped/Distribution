@@ -2,12 +2,13 @@ package typings.braintree.mod
 
 import typings.braintree.anon.Options
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionGateway extends js.Object {
+trait TransactionGateway extends StObject {
   
   def cancelRelease(transactionId: String): js.Promise[Unit] = js.native
   

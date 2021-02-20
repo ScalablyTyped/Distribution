@@ -30,6 +30,7 @@ import typings.angular.angularStrings.$window
 import typings.angular.angularStrings.$xhrFactory
 import typings.angular.anon.Instantiable
 import typings.angular.mod.global.Function
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,16 +38,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 // AUTO module (angular.js)
 ///////////////////////////////////////////////////////////////////////////
-@JSImport("angular", "auto")
-@js.native
-object auto extends js.Object {
+object auto {
   
   ///////////////////////////////////////////////////////////////////////
   // InjectorService
   // see http://docs.angularjs.org/api/AUTO.$injector
   ///////////////////////////////////////////////////////////////////////
   @js.native
-  trait IInjectorService extends js.Object {
+  trait IInjectorService extends StObject {
     
     def annotate(fn: Function): js.Array[String] = js.native
     def annotate(fn: Function, strictDi: Boolean): js.Array[String] = js.native
@@ -141,7 +140,7 @@ object auto extends js.Object {
   // see http://docs.angularjs.org/api/AUTO.$provide
   ///////////////////////////////////////////////////////////////////////
   @js.native
-  trait IProvideService extends js.Object {
+  trait IProvideService extends StObject {
     
     // Documentation says it returns the registered instance, but actual
     // implementation does not return anything.

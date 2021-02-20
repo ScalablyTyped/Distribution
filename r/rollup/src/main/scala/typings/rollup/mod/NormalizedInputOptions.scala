@@ -2,12 +2,13 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.rollup.rollupBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NormalizedInputOptions extends js.Object {
+trait NormalizedInputOptions extends StObject {
   
   var acorn: js.Object = js.native
   

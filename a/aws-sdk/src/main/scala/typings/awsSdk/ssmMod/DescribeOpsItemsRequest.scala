@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeOpsItemsRequest extends js.Object {
+trait DescribeOpsItemsRequest extends StObject {
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
@@ -31,39 +32,27 @@ object DescribeOpsItemsRequest {
   }
   
   @scala.inline
-  implicit class DescribeOpsItemsRequestOps[Self <: DescribeOpsItemsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeOpsItemsRequestMutableBuilder[Self <: DescribeOpsItemsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: OpsItemMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: OpsItemMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setOpsItemFilters(value: OpsItemFilters): Self = StObject.set(x, "OpsItemFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setOpsItemFiltersUndefined: Self = StObject.set(x, "OpsItemFilters", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setOpsItemFiltersVarargs(value: OpsItemFilter*): Self = this.set("OpsItemFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setOpsItemFilters(value: OpsItemFilters): Self = this.set("OpsItemFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpsItemFilters: Self = this.set("OpsItemFilters", js.undefined)
+    def setOpsItemFiltersVarargs(value: OpsItemFilter*): Self = StObject.set(x, "OpsItemFilters", js.Array(value :_*))
   }
 }

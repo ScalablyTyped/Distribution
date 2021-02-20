@@ -1,12 +1,13 @@
 package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HtmlElmsVariant extends js.Object {
+trait HtmlElmsVariant extends StObject {
   
   var allowedRoles: Boolean | js.Array[String] = js.native
   
@@ -29,60 +30,48 @@ object HtmlElmsVariant {
   }
   
   @scala.inline
-  implicit class HtmlElmsVariantOps[Self <: HtmlElmsVariant] (val x: Self) extends AnyVal {
+  implicit class HtmlElmsVariantMutableBuilder[Self <: HtmlElmsVariant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedRoles(value: Boolean | js.Array[String]): Self = StObject.set(x, "allowedRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedRolesVarargs(value: String*): Self = StObject.set(x, "allowedRoles", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentTypes(value: js.Array[HtmlContentTypes]): Self = StObject.set(x, "contentTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedRolesVarargs(value: String*): Self = this.set("allowedRoles", js.Array(value :_*))
+    def setContentTypesUndefined: Self = StObject.set(x, "contentTypes", js.undefined)
     
     @scala.inline
-    def setAllowedRoles(value: Boolean | js.Array[String]): Self = this.set("allowedRoles", value.asInstanceOf[js.Any])
+    def setContentTypesVarargs(value: HtmlContentTypes*): Self = StObject.set(x, "contentTypes", js.Array(value :_*))
     
     @scala.inline
-    def setContentTypesVarargs(value: HtmlContentTypes*): Self = this.set("contentTypes", js.Array(value :_*))
+    def setImplicitAttrs(value: StringDictionary[String]): Self = StObject.set(x, "implicitAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentTypes(value: js.Array[HtmlContentTypes]): Self = this.set("contentTypes", value.asInstanceOf[js.Any])
+    def setImplicitAttrsUndefined: Self = StObject.set(x, "implicitAttrs", js.undefined)
     
     @scala.inline
-    def deleteContentTypes: Self = this.set("contentTypes", js.undefined)
+    def setNamingMethods(value: js.Array[String]): Self = StObject.set(x, "namingMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplicitAttrs(value: StringDictionary[String]): Self = this.set("implicitAttrs", value.asInstanceOf[js.Any])
+    def setNamingMethodsUndefined: Self = StObject.set(x, "namingMethods", js.undefined)
     
     @scala.inline
-    def deleteImplicitAttrs: Self = this.set("implicitAttrs", js.undefined)
+    def setNamingMethodsVarargs(value: String*): Self = StObject.set(x, "namingMethods", js.Array(value :_*))
     
     @scala.inline
-    def setNamingMethodsVarargs(value: String*): Self = this.set("namingMethods", js.Array(value :_*))
+    def setNoAriaAttrs(value: Boolean): Self = StObject.set(x, "noAriaAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamingMethods(value: js.Array[String]): Self = this.set("namingMethods", value.asInstanceOf[js.Any])
+    def setNoAriaAttrsUndefined: Self = StObject.set(x, "noAriaAttrs", js.undefined)
     
     @scala.inline
-    def deleteNamingMethods: Self = this.set("namingMethods", js.undefined)
+    def setShadowRoot(value: Boolean): Self = StObject.set(x, "shadowRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoAriaAttrs(value: Boolean): Self = this.set("noAriaAttrs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoAriaAttrs: Self = this.set("noAriaAttrs", js.undefined)
-    
-    @scala.inline
-    def setShadowRoot(value: Boolean): Self = this.set("shadowRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowRoot: Self = this.set("shadowRoot", js.undefined)
+    def setShadowRootUndefined: Self = StObject.set(x, "shadowRoot", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.xmldsigjs.mod
 
 import typings.xmldsigjs.rsaKeyMod.RsaPSSSignParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,9 @@ class PssAlgorithmParams ()
   def this(algorithm: RsaPSSSignParams) = this()
 }
 /* static members */
-@JSImport("xmldsigjs", "PssAlgorithmParams")
-@js.native
-object PssAlgorithmParams extends js.Object {
+object PssAlgorithmParams {
   
+  @JSImport("xmldsigjs", "PssAlgorithmParams.FromAlgorithm")
+  @js.native
   def FromAlgorithm(algorithm: RsaPSSSignParams): typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * limits, retry options, queue types, and others.
   */
 @js.native
-trait SchemaQueue extends js.Object {
+trait SchemaQueue extends StObject {
   
   /**
     * AppEngineHttpQueue settings apply only to App Engine tasks in this queue.
@@ -89,54 +90,42 @@ object SchemaQueue {
   }
   
   @scala.inline
-  implicit class SchemaQueueOps[Self <: SchemaQueue] (val x: Self) extends AnyVal {
+  implicit class SchemaQueueMutableBuilder[Self <: SchemaQueue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppEngineHttpQueue(value: SchemaAppEngineHttpQueue): Self = StObject.set(x, "appEngineHttpQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppEngineHttpQueueUndefined: Self = StObject.set(x, "appEngineHttpQueue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppEngineHttpQueue(value: SchemaAppEngineHttpQueue): Self = this.set("appEngineHttpQueue", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteAppEngineHttpQueue: Self = this.set("appEngineHttpQueue", js.undefined)
+    def setPurgeTime(value: String): Self = StObject.set(x, "purgeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPurgeTimeUndefined: Self = StObject.set(x, "purgeTime", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRateLimits(value: SchemaRateLimits): Self = StObject.set(x, "rateLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurgeTime(value: String): Self = this.set("purgeTime", value.asInstanceOf[js.Any])
+    def setRateLimitsUndefined: Self = StObject.set(x, "rateLimits", js.undefined)
     
     @scala.inline
-    def deletePurgeTime: Self = this.set("purgeTime", js.undefined)
+    def setRetryConfig(value: SchemaRetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateLimits(value: SchemaRateLimits): Self = this.set("rateLimits", value.asInstanceOf[js.Any])
+    def setRetryConfigUndefined: Self = StObject.set(x, "retryConfig", js.undefined)
     
     @scala.inline
-    def deleteRateLimits: Self = this.set("rateLimits", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryConfig(value: SchemaRetryConfig): Self = this.set("retryConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetryConfig: Self = this.set("retryConfig", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

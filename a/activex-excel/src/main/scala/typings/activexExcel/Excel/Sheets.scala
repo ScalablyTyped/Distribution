@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sheets[TSheet] extends js.Object {
+trait Sheets[TSheet] extends StObject {
   
   def apply(Indexes: SafeArray[String | Double]): Sheets[TSheet] = js.native
   def apply(Index: String): TSheet = js.native

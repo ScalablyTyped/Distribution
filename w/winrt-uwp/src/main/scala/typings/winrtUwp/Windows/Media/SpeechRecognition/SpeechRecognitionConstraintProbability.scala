@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpeechRecognitionConstraintProbability extends js.Object
+sealed trait SpeechRecognitionConstraintProbability extends StObject
 /** Specifies the weighted value of a constraint for speech recognition. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionConstraintProbability")
 @js.native
-object SpeechRecognitionConstraintProbability extends js.Object {
+object SpeechRecognitionConstraintProbability extends StObject {
   
   /** The constraint has a low weighted value. */
   @js.native

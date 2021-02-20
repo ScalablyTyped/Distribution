@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputParallelism extends js.Object {
+trait InputParallelism extends StObject {
   
   /**
     * Number of in-application streams to create. For more information, see Limits. 
@@ -21,24 +22,12 @@ object InputParallelism {
   }
   
   @scala.inline
-  implicit class InputParallelismOps[Self <: InputParallelism] (val x: Self) extends AnyVal {
+  implicit class InputParallelismMutableBuilder[Self <: InputParallelism] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: InputParallelismCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCount(value: InputParallelismCount): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
   }
 }

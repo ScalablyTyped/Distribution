@@ -1,12 +1,13 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // if FlashElement.elementType == 'instance'
 @js.native
-trait FlashInstance extends js.Object {
+trait FlashInstance extends StObject {
   
   var instanceType: js.UndefOr[String] = js.native
   
@@ -21,30 +22,18 @@ object FlashInstance {
   }
   
   @scala.inline
-  implicit class FlashInstanceOps[Self <: FlashInstance] (val x: Self) extends AnyVal {
+  implicit class FlashInstanceMutableBuilder[Self <: FlashInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLibraryItem(value: FlashItem): Self = StObject.set(x, "libraryItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
-    
-    @scala.inline
-    def setLibraryItem(value: FlashItem): Self = this.set("libraryItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLibraryItem: Self = this.set("libraryItem", js.undefined)
+    def setLibraryItemUndefined: Self = StObject.set(x, "libraryItem", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.jsrsasign.jsrsasign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ECCPrivateKey extends js.Object {
+trait ECCPrivateKey extends StObject {
   
   var curve: String = js.native
   
@@ -20,24 +21,12 @@ object ECCPrivateKey {
   }
   
   @scala.inline
-  implicit class ECCPrivateKeyOps[Self <: ECCPrivateKey] (val x: Self) extends AnyVal {
+  implicit class ECCPrivateKeyMutableBuilder[Self <: ECCPrivateKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurve(value: String): Self = this.set("curve", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
   }
 }

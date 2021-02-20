@@ -1,5 +1,6 @@
 package typings.angularCore.r3SymbolsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @publicApi
   */
 @js.native
-trait FactorySansProvider extends js.Object {
+trait FactorySansProvider extends StObject {
   
   /**
     * A list of `token`s to be resolved by the injector. The list of values is then
@@ -36,30 +37,18 @@ object FactorySansProvider {
   }
   
   @scala.inline
-  implicit class FactorySansProviderOps[Self <: FactorySansProvider] (val x: Self) extends AnyVal {
+  implicit class FactorySansProviderMutableBuilder[Self <: FactorySansProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeps(value: js.Array[_]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
     @scala.inline
-    def setUseFactory(value: js.Function): Self = this.set("useFactory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDepsVarargs(value: js.Any*): Self = this.set("deps", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeps(value: js.Array[_]): Self = this.set("deps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeps: Self = this.set("deps", js.undefined)
+    def setUseFactory(value: js.Function): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
   }
 }

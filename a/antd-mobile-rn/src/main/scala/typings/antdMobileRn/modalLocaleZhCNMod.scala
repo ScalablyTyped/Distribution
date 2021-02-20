@@ -1,20 +1,34 @@
 package typings.antdMobileRn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/modal/locale/zh_CN", JSImport.Namespace)
-@js.native
-object modalLocaleZhCNMod extends js.Object {
+object modalLocaleZhCNMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var buttonText: String = js.native
+    @JSImport("antd-mobile-rn/lib/modal/locale/zh_CN", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var cancelText: String = js.native
+    @JSImport("antd-mobile-rn/lib/modal/locale/zh_CN", "default.buttonText")
+    @js.native
+    def buttonText: String = js.native
+    @scala.inline
+    def buttonText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonText")(x.asInstanceOf[js.Any])
     
-    var okText: String = js.native
+    @JSImport("antd-mobile-rn/lib/modal/locale/zh_CN", "default.cancelText")
+    @js.native
+    def cancelText: String = js.native
+    @scala.inline
+    def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd-mobile-rn/lib/modal/locale/zh_CN", "default.okText")
+    @js.native
+    def okText: String = js.native
+    @scala.inline
+    def okText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("okText")(x.asInstanceOf[js.Any])
   }
 }

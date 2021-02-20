@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryreservation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCapacityCommitmentsResponse extends js.Object {
+trait ListCapacityCommitmentsResponse extends StObject {
   
   /** List of capacity commitments visible to the user. */
   var capacityCommitments: js.UndefOr[js.Array[CapacityCommitment]] = js.native
@@ -22,33 +23,21 @@ object ListCapacityCommitmentsResponse {
   }
   
   @scala.inline
-  implicit class ListCapacityCommitmentsResponseOps[Self <: ListCapacityCommitmentsResponse] (val x: Self) extends AnyVal {
+  implicit class ListCapacityCommitmentsResponseMutableBuilder[Self <: ListCapacityCommitmentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityCommitments(value: js.Array[CapacityCommitment]): Self = StObject.set(x, "capacityCommitments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityCommitmentsUndefined: Self = StObject.set(x, "capacityCommitments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityCommitmentsVarargs(value: CapacityCommitment*): Self = StObject.set(x, "capacityCommitments", js.Array(value :_*))
     
     @scala.inline
-    def setCapacityCommitmentsVarargs(value: CapacityCommitment*): Self = this.set("capacityCommitments", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityCommitments(value: js.Array[CapacityCommitment]): Self = this.set("capacityCommitments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapacityCommitments: Self = this.set("capacityCommitments", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutAppReplicationConfigurationRequest extends js.Object {
+trait PutAppReplicationConfigurationRequest extends StObject {
   
   /**
     * The ID of the application.
@@ -26,33 +27,21 @@ object PutAppReplicationConfigurationRequest {
   }
   
   @scala.inline
-  implicit class PutAppReplicationConfigurationRequestOps[Self <: PutAppReplicationConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class PutAppReplicationConfigurationRequestMutableBuilder[Self <: PutAppReplicationConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServerGroupReplicationConfigurations(value: ServerGroupReplicationConfigurations): Self = StObject.set(x, "serverGroupReplicationConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setServerGroupReplicationConfigurationsUndefined: Self = StObject.set(x, "serverGroupReplicationConfigurations", js.undefined)
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
-    
-    @scala.inline
-    def setServerGroupReplicationConfigurationsVarargs(value: ServerGroupReplicationConfiguration*): Self = this.set("serverGroupReplicationConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setServerGroupReplicationConfigurations(value: ServerGroupReplicationConfigurations): Self = this.set("serverGroupReplicationConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerGroupReplicationConfigurations: Self = this.set("serverGroupReplicationConfigurations", js.undefined)
+    def setServerGroupReplicationConfigurationsVarargs(value: ServerGroupReplicationConfiguration*): Self = StObject.set(x, "serverGroupReplicationConfigurations", js.Array(value :_*))
   }
 }

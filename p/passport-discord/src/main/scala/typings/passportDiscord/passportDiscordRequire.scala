@@ -1,5 +1,6 @@
 package typings.passportDiscord
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("passport-discord", JSImport.Namespace)
 @js.native
-object passportDiscordRequire extends js.Object
+object passportDiscordRequire extends StObject

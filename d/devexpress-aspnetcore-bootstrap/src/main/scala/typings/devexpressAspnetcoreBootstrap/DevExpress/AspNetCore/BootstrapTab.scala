@@ -1,11 +1,12 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapTab extends js.Object {
+trait BootstrapTab extends StObject {
   
   def getActiveIconCssClass(): String = js.native
   
@@ -88,93 +89,81 @@ object BootstrapTab {
   }
   
   @scala.inline
-  implicit class BootstrapTabOps[Self <: BootstrapTab] (val x: Self) extends AnyVal {
+  implicit class BootstrapTabMutableBuilder[Self <: BootstrapTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetActiveIconCssClass(value: () => String): Self = StObject.set(x, "getActiveIconCssClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetActiveImageUrl(value: () => String): Self = StObject.set(x, "getActiveImageUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "getBadgeIconCssClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveIconCssClass(value: () => String): Self = this.set("getActiveIconCssClass", js.Any.fromFunction0(value))
+    def setGetBadgeText(value: () => String): Self = StObject.set(x, "getBadgeText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveImageUrl(value: () => String): Self = this.set("getActiveImageUrl", js.Any.fromFunction0(value))
+    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBadgeIconCssClass(value: () => String): Self = this.set("getBadgeIconCssClass", js.Any.fromFunction0(value))
+    def setGetIconCssClass(value: () => String): Self = StObject.set(x, "getIconCssClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBadgeText(value: () => String): Self = this.set("getBadgeText", js.Any.fromFunction0(value))
+    def setGetImageUrl(value: () => String): Self = StObject.set(x, "getImageUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = this.set("getEnabled", js.Any.fromFunction0(value))
+    def setGetNavigateUrl(value: () => String): Self = StObject.set(x, "getNavigateUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIconCssClass(value: () => String): Self = this.set("getIconCssClass", js.Any.fromFunction0(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetImageUrl(value: () => String): Self = this.set("getImageUrl", js.Any.fromFunction0(value))
+    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNavigateUrl(value: () => String): Self = this.set("getNavigateUrl", js.Any.fromFunction0(value))
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVisible(value: () => Boolean): Self = this.set("getVisible", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setSetActiveIconCssClass(value: String => Unit): Self = StObject.set(x, "setActiveIconCssClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInstance(value: js.Any): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setSetActiveImageUrl(value: String => Unit): Self = StObject.set(x, "setActiveImageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSetBadgeIconCssClass(value: String => Unit): Self = StObject.set(x, "setBadgeIconCssClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetActiveIconCssClass(value: String => Unit): Self = this.set("setActiveIconCssClass", js.Any.fromFunction1(value))
+    def setSetBadgeText(value: String => Unit): Self = StObject.set(x, "setBadgeText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetActiveImageUrl(value: String => Unit): Self = this.set("setActiveImageUrl", js.Any.fromFunction1(value))
+    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBadgeIconCssClass(value: String => Unit): Self = this.set("setBadgeIconCssClass", js.Any.fromFunction1(value))
+    def setSetIconCssClass(value: String => Unit): Self = StObject.set(x, "setIconCssClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBadgeText(value: String => Unit): Self = this.set("setBadgeText", js.Any.fromFunction1(value))
+    def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = this.set("setEnabled", js.Any.fromFunction1(value))
+    def setSetNavigateUrl(value: String => Unit): Self = StObject.set(x, "setNavigateUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIconCssClass(value: String => Unit): Self = this.set("setIconCssClass", js.Any.fromFunction1(value))
+    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetImageUrl(value: String => Unit): Self = this.set("setImageUrl", js.Any.fromFunction1(value))
+    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetNavigateUrl(value: String => Unit): Self = this.set("setNavigateUrl", js.Any.fromFunction1(value))
+    def setTabControl(value: BootstrapTabControl): Self = StObject.set(x, "tabControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("setText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = this.set("setVisible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTabControl(value: BootstrapTabControl): Self = this.set("tabControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabControlNull: Self = this.set("tabControl", null)
+    def setTabControlNull: Self = StObject.set(x, "tabControl", null)
   }
 }

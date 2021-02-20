@@ -5,14 +5,14 @@ import typings.babylonjs.freeCameraInputsManagerMod.FreeCameraInputsManager
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.targetCameraMod.TargetCamera
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/freeCamera", JSImport.Namespace)
-@js.native
-object freeCameraMod extends js.Object {
+object freeCameraMod {
   
+  @JSImport("babylonjs/Cameras/freeCamera", "FreeCamera")
   @js.native
   class FreeCamera protected () extends TargetCamera {
     /**

@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AttachmentType extends js.Object
+sealed trait AttachmentType extends StObject
 /**
   * Specifies an attachment's type.
   *
@@ -15,7 +16,7 @@ sealed trait AttachmentType extends js.Object
   */
 @JSGlobal("Office.MailboxEnums.AttachmentType")
 @js.native
-object AttachmentType extends js.Object {
+object AttachmentType extends StObject {
   
   /**
     * The attachment is stored in a cloud location, such as OneDrive.

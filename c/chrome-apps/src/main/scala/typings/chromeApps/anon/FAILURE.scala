@@ -4,12 +4,13 @@ import typings.chromeApps.chromeAppsStrings.failure_
 import typings.chromeApps.chromeAppsStrings.in_use_
 import typings.chromeApps.chromeAppsStrings.no_such_device_
 import typings.chromeApps.chromeAppsStrings.success_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FAILURE extends js.Object {
+trait FAILURE extends StObject {
   
   var FAILURE: failure_ = js.native
   
@@ -28,30 +29,18 @@ object FAILURE {
   }
   
   @scala.inline
-  implicit class FAILUREOps[Self <: FAILURE] (val x: Self) extends AnyVal {
+  implicit class FAILUREMutableBuilder[Self <: FAILURE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFAILURE(value: failure_): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIN_USE(value: in_use_): Self = StObject.set(x, "IN_USE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNO_SUCH_DEVICE(value: no_such_device_): Self = StObject.set(x, "NO_SUCH_DEVICE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFAILURE(value: failure_): Self = this.set("FAILURE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIN_USE(value: in_use_): Self = this.set("IN_USE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNO_SUCH_DEVICE(value: no_such_device_): Self = this.set("NO_SUCH_DEVICE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSUCCESS(value: success_): Self = this.set("SUCCESS", value.asInstanceOf[js.Any])
+    def setSUCCESS(value: success_): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
   }
 }

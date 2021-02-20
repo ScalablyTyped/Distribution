@@ -1,12 +1,13 @@
 package typings.nulogyComponents
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nulogy/components/src/locales.const", JSImport.Namespace)
-@js.native
-object localesConstMod extends js.Object {
+object localesConstMod {
   
+  @JSImport("@nulogy/components/src/locales.const", "ALL_NDS_LOCALES")
+  @js.native
   val ALL_NDS_LOCALES: js.Array[js.Object] = js.native
 }

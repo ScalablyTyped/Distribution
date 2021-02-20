@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartTranscriptionJobResponse extends js.Object {
+trait StartTranscriptionJobResponse extends StObject {
   
   /**
     * An object containing details of the asynchronous transcription job.
@@ -21,24 +22,12 @@ object StartTranscriptionJobResponse {
   }
   
   @scala.inline
-  implicit class StartTranscriptionJobResponseOps[Self <: StartTranscriptionJobResponse] (val x: Self) extends AnyVal {
+  implicit class StartTranscriptionJobResponseMutableBuilder[Self <: StartTranscriptionJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTranscriptionJob(value: TranscriptionJob): Self = StObject.set(x, "TranscriptionJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTranscriptionJob(value: TranscriptionJob): Self = this.set("TranscriptionJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranscriptionJob: Self = this.set("TranscriptionJob", js.undefined)
+    def setTranscriptionJobUndefined: Self = StObject.set(x, "TranscriptionJob", js.undefined)
   }
 }

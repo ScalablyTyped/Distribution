@@ -1,11 +1,12 @@
 package typings.activexExcel.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Arg1 extends js.Object {
+trait Arg1 extends StObject {
   
   val Arg1: Double = js.native
   
@@ -24,30 +25,18 @@ object Arg1 {
   }
   
   @scala.inline
-  implicit class Arg1Ops[Self <: Arg1] (val x: Self) extends AnyVal {
+  implicit class Arg1MutableBuilder[Self <: Arg1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArg1(value: Double): Self = StObject.set(x, "Arg1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArg2(value: Double): Self = StObject.set(x, "Arg2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArg1(value: Double): Self = this.set("Arg1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setArg2(value: Double): Self = this.set("Arg2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCancel(value: Boolean): Self = this.set("Cancel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setElementID(value: Double): Self = this.set("ElementID", value.asInstanceOf[js.Any])
+    def setElementID(value: Double): Self = StObject.set(x, "ElementID", value.asInstanceOf[js.Any])
   }
 }

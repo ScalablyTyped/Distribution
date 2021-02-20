@@ -1,5 +1,6 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.yandexMaps.yandexMapsStrings.typeSelector
   - typings.yandexMaps.yandexMapsStrings.zoomControl
 */
-trait ControlSingleKey extends js.Object
+trait ControlSingleKey extends StObject
 object ControlSingleKey {
   
   @scala.inline

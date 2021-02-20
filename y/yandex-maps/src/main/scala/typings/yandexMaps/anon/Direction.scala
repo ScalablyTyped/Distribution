@@ -2,12 +2,13 @@ package typings.yandexMaps.anon
 
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignairPanorama
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignpanorama
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Direction extends js.Object {
+trait Direction extends StObject {
   
   var direction: js.UndefOr[js.Array[Double] | String] = js.native
   
@@ -24,42 +25,30 @@ object Direction {
   }
   
   @scala.inline
-  implicit class DirectionOps[Self <: Direction] (val x: Self) extends AnyVal {
+  implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: js.Array[Double] | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectionVarargs(value: Double*): Self = StObject.set(x, "direction", js.Array(value :_*))
     
     @scala.inline
-    def setDirectionVarargs(value: Double*): Self = this.set("direction", js.Array(value :_*))
+    def setLayer(value: yandexNumbersignpanorama | yandexNumbersignairPanorama): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: js.Array[Double] | String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setSpan(value: js.Array[Double] | String): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: yandexNumbersignpanorama | yandexNumbersignairPanorama): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
-    
-    @scala.inline
-    def setSpanVarargs(value: Double*): Self = this.set("span", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpan(value: js.Array[Double] | String): Self = this.set("span", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpan: Self = this.set("span", js.undefined)
+    def setSpanVarargs(value: Double*): Self = StObject.set(x, "span", js.Array(value :_*))
   }
 }

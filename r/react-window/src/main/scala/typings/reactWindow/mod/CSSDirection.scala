@@ -1,5 +1,6 @@
 package typings.reactWindow.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactWindow.reactWindowStrings.ltr
   - typings.reactWindow.reactWindowStrings.rtl
 */
-trait CSSDirection extends js.Object
+trait CSSDirection extends StObject
 object CSSDirection {
   
   @scala.inline

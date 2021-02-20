@@ -1,5 +1,6 @@
 package typings.bootstrapSlider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.bootstrapSlider.bootstrapSliderStrings.slideEnabled
   - typings.bootstrapSlider.bootstrapSliderStrings.slideDisabled
 */
-trait SliderEventType extends js.Object
+trait SliderEventType extends StObject
 object SliderEventType {
   
   @scala.inline

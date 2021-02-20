@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Currentuser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityGetFeedsResponseData extends js.Object {
+trait ActivityGetFeedsResponseData extends StObject {
   
   var _links: Currentuser = js.native
   
@@ -45,48 +46,36 @@ object ActivityGetFeedsResponseData {
   }
   
   @scala.inline
-  implicit class ActivityGetFeedsResponseDataOps[Self <: ActivityGetFeedsResponseData] (val x: Self) extends AnyVal {
+  implicit class ActivityGetFeedsResponseDataMutableBuilder[Self <: ActivityGetFeedsResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrent_user_actor_url(value: String): Self = StObject.set(x, "current_user_actor_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrent_user_organization_url(value: String): Self = StObject.set(x, "current_user_organization_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrent_user_organization_urls(value: js.Array[String]): Self = StObject.set(x, "current_user_organization_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: Currentuser): Self = this.set("_links", value.asInstanceOf[js.Any])
+    def setCurrent_user_organization_urlsVarargs(value: String*): Self = StObject.set(x, "current_user_organization_urls", js.Array(value :_*))
     
     @scala.inline
-    def setCurrent_user_actor_url(value: String): Self = this.set("current_user_actor_url", value.asInstanceOf[js.Any])
+    def setCurrent_user_public_url(value: String): Self = StObject.set(x, "current_user_public_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent_user_organization_url(value: String): Self = this.set("current_user_organization_url", value.asInstanceOf[js.Any])
+    def setCurrent_user_url(value: String): Self = StObject.set(x, "current_user_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent_user_organization_urlsVarargs(value: String*): Self = this.set("current_user_organization_urls", js.Array(value :_*))
+    def setSecurity_advisories_url(value: String): Self = StObject.set(x, "security_advisories_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent_user_organization_urls(value: js.Array[String]): Self = this.set("current_user_organization_urls", value.asInstanceOf[js.Any])
+    def setTimeline_url(value: String): Self = StObject.set(x, "timeline_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent_user_public_url(value: String): Self = this.set("current_user_public_url", value.asInstanceOf[js.Any])
+    def setUser_url(value: String): Self = StObject.set(x, "user_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent_user_url(value: String): Self = this.set("current_user_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecurity_advisories_url(value: String): Self = this.set("security_advisories_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeline_url(value: String): Self = this.set("timeline_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser_url(value: String): Self = this.set("user_url", value.asInstanceOf[js.Any])
+    def set_links(value: Currentuser): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

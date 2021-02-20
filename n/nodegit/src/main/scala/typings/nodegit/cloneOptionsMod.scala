@@ -2,16 +2,16 @@ package typings.nodegit
 
 import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import typings.nodegit.fetchOptionsMod.FetchOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/clone-options", JSImport.Namespace)
-@js.native
-object cloneOptionsMod extends js.Object {
+object cloneOptionsMod {
   
+  @JSImport("nodegit/clone-options", "CloneOptions")
   @js.native
-  class CloneOptions () extends js.Object {
+  class CloneOptions () extends StObject {
     
     var bare: js.UndefOr[Double] = js.native
     

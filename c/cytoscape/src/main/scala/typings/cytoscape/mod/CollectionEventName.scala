@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cytoscape.cytoscapeStrings.scratch
   - typings.cytoscape.cytoscapeStrings.style
 */
-trait CollectionEventName extends js.Object
+trait CollectionEventName extends StObject
 object CollectionEventName {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRegistryResponse extends js.Object {
+trait UpdateRegistryResponse extends StObject {
   
   /**
     * The Amazon Resource name (ARN) of the updated registry.
@@ -26,30 +27,18 @@ object UpdateRegistryResponse {
   }
   
   @scala.inline
-  implicit class UpdateRegistryResponseOps[Self <: UpdateRegistryResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateRegistryResponseMutableBuilder[Self <: UpdateRegistryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegistryArn(value: GlueResourceArn): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegistryArnUndefined: Self = StObject.set(x, "RegistryArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryArn(value: GlueResourceArn): Self = this.set("RegistryArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistryArn: Self = this.set("RegistryArn", js.undefined)
-    
-    @scala.inline
-    def setRegistryName(value: SchemaRegistryNameString): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistryName: Self = this.set("RegistryName", js.undefined)
+    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
   }
 }

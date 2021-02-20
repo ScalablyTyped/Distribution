@@ -1,5 +1,6 @@
 package typings.firebaseAuthTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,17 +9,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class EmailAuthProvider () extends EmailAuthProviderInstance
 /* static members */
-@JSImport("@firebase/auth-types", "EmailAuthProvider")
-@js.native
-object EmailAuthProvider extends js.Object {
+object EmailAuthProvider {
   
-  var EMAIL_LINK_SIGN_IN_METHOD: String = js.native
+  @JSImport("@firebase/auth-types", "EmailAuthProvider")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var EMAIL_PASSWORD_SIGN_IN_METHOD: String = js.native
+  @JSImport("@firebase/auth-types", "EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD")
+  @js.native
+  def EMAIL_LINK_SIGN_IN_METHOD: String = js.native
+  @scala.inline
+  def EMAIL_LINK_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_LINK_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
   
-  var PROVIDER_ID: String = js.native
+  @JSImport("@firebase/auth-types", "EmailAuthProvider.EMAIL_PASSWORD_SIGN_IN_METHOD")
+  @js.native
+  def EMAIL_PASSWORD_SIGN_IN_METHOD: String = js.native
+  @scala.inline
+  def EMAIL_PASSWORD_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_PASSWORD_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
   
+  @JSImport("@firebase/auth-types", "EmailAuthProvider.PROVIDER_ID")
+  @js.native
+  def PROVIDER_ID: String = js.native
+  @scala.inline
+  def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@firebase/auth-types", "EmailAuthProvider.credential")
+  @js.native
   def credential(email: String, password: String): AuthCredential = js.native
   
+  @JSImport("@firebase/auth-types", "EmailAuthProvider.credentialWithLink")
+  @js.native
   def credentialWithLink(email: String, emailLink: String): AuthCredential = js.native
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScriptStackFrame extends js.Object {
+trait ScriptStackFrame extends StObject {
   
   /** [Output-only] One-based end column. */
   var endColumn: js.UndefOr[Double] = js.native
@@ -34,54 +35,42 @@ object ScriptStackFrame {
   }
   
   @scala.inline
-  implicit class ScriptStackFrameOps[Self <: ScriptStackFrame] (val x: Self) extends AnyVal {
+  implicit class ScriptStackFrameMutableBuilder[Self <: ScriptStackFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: Double): Self = this.set("endColumn", value.asInstanceOf[js.Any])
+    def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
     
     @scala.inline
-    def deleteEndColumn: Self = this.set("endColumn", js.undefined)
+    def setProcedureId(value: String): Self = StObject.set(x, "procedureId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndLine(value: Double): Self = this.set("endLine", value.asInstanceOf[js.Any])
+    def setProcedureIdUndefined: Self = StObject.set(x, "procedureId", js.undefined)
     
     @scala.inline
-    def deleteEndLine: Self = this.set("endLine", js.undefined)
+    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcedureId(value: String): Self = this.set("procedureId", value.asInstanceOf[js.Any])
+    def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
     
     @scala.inline
-    def deleteProcedureId: Self = this.set("procedureId", js.undefined)
+    def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
+    def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
     
     @scala.inline
-    def deleteStartColumn: Self = this.set("startColumn", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartLine(value: Double): Self = this.set("startLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartLine: Self = this.set("startLine", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportOptions extends js.Object {
+trait ExportOptions extends StObject {
   
   var destinationType: js.UndefOr[String] = js.native
   
@@ -42,96 +43,84 @@ object ExportOptions {
   }
   
   @scala.inline
-  implicit class ExportOptionsOps[Self <: ExportOptions] (val x: Self) extends AnyVal {
+  implicit class ExportOptionsMutableBuilder[Self <: ExportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationType(value: String): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcelExportAll(value: Boolean): Self = StObject.set(x, "excelExportAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationType(value: String): Self = this.set("destinationType", value.asInstanceOf[js.Any])
+    def setExcelExportAllUndefined: Self = StObject.set(x, "excelExportAll", js.undefined)
     
     @scala.inline
-    def deleteDestinationType: Self = this.set("destinationType", js.undefined)
+    def setExcelSheetName(value: String): Self = StObject.set(x, "excelSheetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelExportAll(value: Boolean): Self = this.set("excelExportAll", value.asInstanceOf[js.Any])
+    def setExcelSheetNameUndefined: Self = StObject.set(x, "excelSheetName", js.undefined)
     
     @scala.inline
-    def deleteExcelExportAll: Self = this.set("excelExportAll", js.undefined)
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelSheetName(value: String): Self = this.set("excelSheetName", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteExcelSheetName: Self = this.set("excelSheetName", js.undefined)
+    def setFontUrl(value: String): Self = StObject.set(x, "fontUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setFontUrlUndefined: Self = StObject.set(x, "fontUrl", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontUrl(value: String): Self = this.set("fontUrl", value.asInstanceOf[js.Any])
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def deleteFontUrl: Self = this.set("fontUrl", js.undefined)
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: String): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
+    def setPageOrientation(value: String): Self = StObject.set(x, "pageOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setPageOrientationUndefined: Self = StObject.set(x, "pageOrientation", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setRequestHeaders(value: js.Object): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageOrientation(value: String): Self = this.set("pageOrientation", value.asInstanceOf[js.Any])
+    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
     @scala.inline
-    def deletePageOrientation: Self = this.set("pageOrientation", js.undefined)
+    def setShowFilters(value: Boolean): Self = StObject.set(x, "showFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestHeaders(value: js.Object): Self = this.set("requestHeaders", value.asInstanceOf[js.Any])
+    def setShowFiltersUndefined: Self = StObject.set(x, "showFilters", js.undefined)
     
     @scala.inline
-    def deleteRequestHeaders: Self = this.set("requestHeaders", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFilters(value: Boolean): Self = this.set("showFilters", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteShowFilters: Self = this.set("showFilters", js.undefined)
+    def setUseCustomizeCellForData(value: Boolean): Self = StObject.set(x, "useCustomizeCellForData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUseCustomizeCellForDataUndefined: Self = StObject.set(x, "useCustomizeCellForData", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUseOlapFormattingInExcel(value: Boolean): Self = StObject.set(x, "useOlapFormattingInExcel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCustomizeCellForData(value: Boolean): Self = this.set("useCustomizeCellForData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseCustomizeCellForData: Self = this.set("useCustomizeCellForData", js.undefined)
-    
-    @scala.inline
-    def setUseOlapFormattingInExcel(value: Boolean): Self = this.set("useOlapFormattingInExcel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseOlapFormattingInExcel: Self = this.set("useOlapFormattingInExcel", js.undefined)
+    def setUseOlapFormattingInExcelUndefined: Self = StObject.set(x, "useOlapFormattingInExcel", js.undefined)
   }
 }

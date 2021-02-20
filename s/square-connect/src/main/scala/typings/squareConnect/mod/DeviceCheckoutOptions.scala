@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "DeviceCheckoutOptions")
 @js.native
-class DeviceCheckoutOptions () extends js.Object {
+class DeviceCheckoutOptions () extends StObject {
   
   /**
     * The unique ID of the device intended for this `TerminalCheckout`.

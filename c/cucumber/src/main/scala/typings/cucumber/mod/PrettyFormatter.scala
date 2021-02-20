@@ -1,5 +1,6 @@
 package typings.cucumber.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("cucumber", "PrettyFormatter")
 @js.native
 class PrettyFormatter () extends SummaryFormatter {
+  def this(options: js.Any) = this()
   
   def formatTags(tags: js.Array[Tag]): js.Any = js.native
   

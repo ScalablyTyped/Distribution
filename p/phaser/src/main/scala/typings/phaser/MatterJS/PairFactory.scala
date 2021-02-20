@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PairFactory extends js.Object {
+trait PairFactory extends StObject {
   
   /**
     * Creates a pair.
@@ -57,30 +58,18 @@ object PairFactory {
   }
   
   @scala.inline
-  implicit class PairFactoryOps[Self <: PairFactory] (val x: Self) extends AnyVal {
+  implicit class PairFactoryMutableBuilder[Self <: PairFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: (ICollisionData, Double) => IPair): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: (BodyType, BodyType) => String): Self = StObject.set(x, "id", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetActive(value: (IPair, Boolean, Double) => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCreate(value: (ICollisionData, Double) => IPair): Self = this.set("create", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setId(value: (BodyType, BodyType) => String): Self = this.set("id", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetActive(value: (IPair, Boolean, Double) => Unit): Self = this.set("setActive", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setUpdate(value: (IPair, ICollisionData, Double) => Unit): Self = this.set("update", js.Any.fromFunction3(value))
+    def setUpdate(value: (IPair, ICollisionData, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

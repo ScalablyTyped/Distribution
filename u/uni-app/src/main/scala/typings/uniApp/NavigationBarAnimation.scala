@@ -4,12 +4,13 @@ import typings.uniApp.uniAppStrings.easeIn
 import typings.uniApp.uniAppStrings.easeInOut
 import typings.uniApp.uniAppStrings.easeOut
 import typings.uniApp.uniAppStrings.linear
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationBarAnimation extends js.Object {
+trait NavigationBarAnimation extends StObject {
   
   /**
     * 动画变化时间，默认0，单位：毫秒
@@ -34,30 +35,18 @@ object NavigationBarAnimation {
   }
   
   @scala.inline
-  implicit class NavigationBarAnimationOps[Self <: NavigationBarAnimation] (val x: Self) extends AnyVal {
+  implicit class NavigationBarAnimationMutableBuilder[Self <: NavigationBarAnimation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimingFunc(value: linear | easeIn | easeOut | easeInOut): Self = StObject.set(x, "timingFunc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def setTimingFunc(value: linear | easeIn | easeOut | easeInOut): Self = this.set("timingFunc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimingFunc: Self = this.set("timingFunc", js.undefined)
+    def setTimingFuncUndefined: Self = StObject.set(x, "timingFunc", js.undefined)
   }
 }

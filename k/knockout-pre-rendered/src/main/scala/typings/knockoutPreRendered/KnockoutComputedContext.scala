@@ -1,11 +1,12 @@
 package typings.knockoutPreRendered
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutComputedContext extends js.Object {
+trait KnockoutComputedContext extends StObject {
   
   def getDependenciesCount(): Double = js.native
   
@@ -22,27 +23,15 @@ object KnockoutComputedContext {
   }
   
   @scala.inline
-  implicit class KnockoutComputedContextOps[Self <: KnockoutComputedContext] (val x: Self) extends AnyVal {
+  implicit class KnockoutComputedContextMutableBuilder[Self <: KnockoutComputedContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDependenciesCount(value: () => Double): Self = StObject.set(x, "getDependenciesCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsInitial(value: () => Boolean): Self = StObject.set(x, "isInitial", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetDependenciesCount(value: () => Double): Self = this.set("getDependenciesCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsInitial(value: () => Boolean): Self = this.set("isInitial", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsSleeping(value: Boolean): Self = this.set("isSleeping", value.asInstanceOf[js.Any])
+    def setIsSleeping(value: Boolean): Self = StObject.set(x, "isSleeping", value.asInstanceOf[js.Any])
   }
 }

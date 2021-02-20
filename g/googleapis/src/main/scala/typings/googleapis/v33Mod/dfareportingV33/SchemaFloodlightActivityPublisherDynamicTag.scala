@@ -1,5 +1,6 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Publisher Dynamic Tag
   */
 @js.native
-trait SchemaFloodlightActivityPublisherDynamicTag extends js.Object {
+trait SchemaFloodlightActivityPublisherDynamicTag extends StObject {
   
   /**
     * Whether this tag is applicable only for click-throughs.
@@ -52,54 +53,42 @@ object SchemaFloodlightActivityPublisherDynamicTag {
   }
   
   @scala.inline
-  implicit class SchemaFloodlightActivityPublisherDynamicTagOps[Self <: SchemaFloodlightActivityPublisherDynamicTag] (val x: Self) extends AnyVal {
+  implicit class SchemaFloodlightActivityPublisherDynamicTagMutableBuilder[Self <: SchemaFloodlightActivityPublisherDynamicTag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickThrough(value: Boolean): Self = StObject.set(x, "clickThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickThroughUndefined: Self = StObject.set(x, "clickThrough", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectorySiteId(value: String): Self = StObject.set(x, "directorySiteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickThrough(value: Boolean): Self = this.set("clickThrough", value.asInstanceOf[js.Any])
+    def setDirectorySiteIdUndefined: Self = StObject.set(x, "directorySiteId", js.undefined)
     
     @scala.inline
-    def deleteClickThrough: Self = this.set("clickThrough", js.undefined)
+    def setDynamicTag(value: SchemaFloodlightActivityDynamicTag): Self = StObject.set(x, "dynamicTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectorySiteId(value: String): Self = this.set("directorySiteId", value.asInstanceOf[js.Any])
+    def setDynamicTagUndefined: Self = StObject.set(x, "dynamicTag", js.undefined)
     
     @scala.inline
-    def deleteDirectorySiteId: Self = this.set("directorySiteId", js.undefined)
+    def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicTag(value: SchemaFloodlightActivityDynamicTag): Self = this.set("dynamicTag", value.asInstanceOf[js.Any])
+    def setSiteIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "siteIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDynamicTag: Self = this.set("dynamicTag", js.undefined)
+    def setSiteIdDimensionValueUndefined: Self = StObject.set(x, "siteIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setSiteId(value: String): Self = this.set("siteId", value.asInstanceOf[js.Any])
+    def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
     
     @scala.inline
-    def deleteSiteId: Self = this.set("siteId", js.undefined)
+    def setViewThrough(value: Boolean): Self = StObject.set(x, "viewThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteIdDimensionValue(value: SchemaDimensionValue): Self = this.set("siteIdDimensionValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSiteIdDimensionValue: Self = this.set("siteIdDimensionValue", js.undefined)
-    
-    @scala.inline
-    def setViewThrough(value: Boolean): Self = this.set("viewThrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewThrough: Self = this.set("viewThrough", js.undefined)
+    def setViewThroughUndefined: Self = StObject.set(x, "viewThrough", js.undefined)
   }
 }

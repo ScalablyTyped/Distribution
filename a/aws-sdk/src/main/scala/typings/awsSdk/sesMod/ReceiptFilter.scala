@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReceiptFilter extends js.Object {
+trait ReceiptFilter extends StObject {
   
   /**
     * A structure that provides the IP addresses to block or allow, and whether to block or allow incoming mail from them.
@@ -26,24 +27,12 @@ object ReceiptFilter {
   }
   
   @scala.inline
-  implicit class ReceiptFilterOps[Self <: ReceiptFilter] (val x: Self) extends AnyVal {
+  implicit class ReceiptFilterMutableBuilder[Self <: ReceiptFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpFilter(value: ReceiptIpFilter): Self = StObject.set(x, "IpFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIpFilter(value: ReceiptIpFilter): Self = this.set("IpFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: ReceiptFilterName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: ReceiptFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

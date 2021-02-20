@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the Rich Communication Services (RCS) chat capabilities of a phone number. */
 @js.native
-trait ChatCapabilities extends js.Object {
+trait ChatCapabilities extends StObject {
   
   /** Gets a Boolean value indicating if a phone number supports Rich Communication Services (RCS) chat. */
   var isChatCapable: Boolean = js.native
@@ -38,33 +39,21 @@ object ChatCapabilities {
   }
   
   @scala.inline
-  implicit class ChatCapabilitiesOps[Self <: ChatCapabilities] (val x: Self) extends AnyVal {
+  implicit class ChatCapabilitiesMutableBuilder[Self <: ChatCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsChatCapable(value: Boolean): Self = StObject.set(x, "isChatCapable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFileTransferCapable(value: Boolean): Self = StObject.set(x, "isFileTransferCapable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsGeoLocationPushCapable(value: Boolean): Self = StObject.set(x, "isGeoLocationPushCapable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsChatCapable(value: Boolean): Self = this.set("isChatCapable", value.asInstanceOf[js.Any])
+    def setIsIntegratedMessagingCapable(value: Boolean): Self = StObject.set(x, "isIntegratedMessagingCapable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFileTransferCapable(value: Boolean): Self = this.set("isFileTransferCapable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsGeoLocationPushCapable(value: Boolean): Self = this.set("isGeoLocationPushCapable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsIntegratedMessagingCapable(value: Boolean): Self = this.set("isIntegratedMessagingCapable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsOnline(value: Boolean): Self = this.set("isOnline", value.asInstanceOf[js.Any])
+    def setIsOnline(value: Boolean): Self = StObject.set(x, "isOnline", value.asInstanceOf[js.Any])
   }
 }

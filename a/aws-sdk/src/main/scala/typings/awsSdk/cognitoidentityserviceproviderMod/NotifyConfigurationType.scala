@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotifyConfigurationType extends js.Object {
+trait NotifyConfigurationType extends StObject {
   
   /**
     * Email template used when a detected risk event is blocked.
@@ -46,51 +47,39 @@ object NotifyConfigurationType {
   }
   
   @scala.inline
-  implicit class NotifyConfigurationTypeOps[Self <: NotifyConfigurationType] (val x: Self) extends AnyVal {
+  implicit class NotifyConfigurationTypeMutableBuilder[Self <: NotifyConfigurationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockEmail(value: NotifyEmailType): Self = StObject.set(x, "BlockEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockEmailUndefined: Self = StObject.set(x, "BlockEmail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: StringType): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceArn(value: ArnType): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
     
     @scala.inline
-    def setBlockEmail(value: NotifyEmailType): Self = this.set("BlockEmail", value.asInstanceOf[js.Any])
+    def setMfaEmail(value: NotifyEmailType): Self = StObject.set(x, "MfaEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockEmail: Self = this.set("BlockEmail", js.undefined)
+    def setMfaEmailUndefined: Self = StObject.set(x, "MfaEmail", js.undefined)
     
     @scala.inline
-    def setFrom(value: StringType): Self = this.set("From", value.asInstanceOf[js.Any])
+    def setNoActionEmail(value: NotifyEmailType): Self = StObject.set(x, "NoActionEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrom: Self = this.set("From", js.undefined)
+    def setNoActionEmailUndefined: Self = StObject.set(x, "NoActionEmail", js.undefined)
     
     @scala.inline
-    def setMfaEmail(value: NotifyEmailType): Self = this.set("MfaEmail", value.asInstanceOf[js.Any])
+    def setReplyTo(value: StringType): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMfaEmail: Self = this.set("MfaEmail", js.undefined)
+    def setReplyToUndefined: Self = StObject.set(x, "ReplyTo", js.undefined)
     
     @scala.inline
-    def setNoActionEmail(value: NotifyEmailType): Self = this.set("NoActionEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoActionEmail: Self = this.set("NoActionEmail", js.undefined)
-    
-    @scala.inline
-    def setReplyTo(value: StringType): Self = this.set("ReplyTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyTo: Self = this.set("ReplyTo", js.undefined)
+    def setSourceArn(value: ArnType): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
   }
 }

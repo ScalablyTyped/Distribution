@@ -5,16 +5,16 @@ import typings.awsSdkClientGlacierNode.glacierConfigurationMod.GlacierResolvedCo
 import typings.awsSdkClientGlacierNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientGlacierNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.commandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/GlacierClient", JSImport.Namespace)
-@js.native
-object glacierClientMod extends js.Object {
+object glacierClientMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/GlacierClient", "GlacierClient")
   @js.native
-  class GlacierClient protected () extends js.Object {
+  class GlacierClient protected () extends StObject {
     def this(configuration: GlacierConfiguration) = this()
     
     val config: GlacierResolvedConfiguration = js.native

@@ -1,12 +1,13 @@
 package typings.paystack.anon
 
 import typings.paystack.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Get extends js.Object {
+trait Get extends StObject {
   
   def create(params: Dictkey): js.Promise[Response] = js.native
   

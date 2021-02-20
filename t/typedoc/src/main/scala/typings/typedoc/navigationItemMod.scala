@@ -1,16 +1,16 @@
 package typings.typedoc
 
 import typings.typedoc.abstractMod.Reflection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/output/models/NavigationItem", JSImport.Namespace)
-@js.native
-object navigationItemMod extends js.Object {
+object navigationItemMod {
   
+  @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem")
   @js.native
-  class NavigationItem () extends js.Object {
+  class NavigationItem () extends StObject {
     def this(title: String) = this()
     def this(title: js.UndefOr[scala.Nothing], url: String) = this()
     def this(title: String, url: String) = this()
@@ -178,12 +178,19 @@ object navigationItemMod extends js.Object {
     var url: String = js.native
   }
   /* static members */
-  @js.native
-  object NavigationItem extends js.Object {
+  object NavigationItem {
     
+    @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem.create")
+    @js.native
     def create(reflection: Reflection): NavigationItem = js.native
+    @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem.create")
+    @js.native
     def create(reflection: Reflection, parent: js.UndefOr[scala.Nothing], useShortNames: Boolean): NavigationItem = js.native
+    @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem.create")
+    @js.native
     def create(reflection: Reflection, parent: NavigationItem): NavigationItem = js.native
+    @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem.create")
+    @js.native
     def create(reflection: Reflection, parent: NavigationItem, useShortNames: Boolean): NavigationItem = js.native
   }
 }

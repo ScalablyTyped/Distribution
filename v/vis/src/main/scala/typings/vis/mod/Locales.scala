@@ -1,6 +1,7 @@
 package typings.vis.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,66 +35,54 @@ object Locales {
   }
   
   @scala.inline
-  implicit class LocalesOps[Self <: Locales] (val x: Self) extends AnyVal {
+  implicit class LocalesMutableBuilder[Self <: Locales] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCn(value: LocaleMessages): Self = StObject.set(x, "cn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCnUndefined: Self = StObject.set(x, "cn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDe(value: LocaleMessages): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCn(value: LocaleMessages): Self = this.set("cn", value.asInstanceOf[js.Any])
+    def setDeUndefined: Self = StObject.set(x, "de", js.undefined)
     
     @scala.inline
-    def deleteCn: Self = this.set("cn", js.undefined)
+    def setEn(value: LocaleMessages): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDe(value: LocaleMessages): Self = this.set("de", value.asInstanceOf[js.Any])
+    def setEnUndefined: Self = StObject.set(x, "en", js.undefined)
     
     @scala.inline
-    def deleteDe: Self = this.set("de", js.undefined)
+    def setEs(value: LocaleMessages): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEn(value: LocaleMessages): Self = this.set("en", value.asInstanceOf[js.Any])
+    def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
     
     @scala.inline
-    def deleteEn: Self = this.set("en", js.undefined)
+    def setIt(value: LocaleMessages): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEs(value: LocaleMessages): Self = this.set("es", value.asInstanceOf[js.Any])
+    def setItUndefined: Self = StObject.set(x, "it", js.undefined)
     
     @scala.inline
-    def deleteEs: Self = this.set("es", js.undefined)
+    def setNl(value: LocaleMessages): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIt(value: LocaleMessages): Self = this.set("it", value.asInstanceOf[js.Any])
+    def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
     
     @scala.inline
-    def deleteIt: Self = this.set("it", js.undefined)
+    def `setPt-br`(value: LocaleMessages): Self = StObject.set(x, "pt-br", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNl(value: LocaleMessages): Self = this.set("nl", value.asInstanceOf[js.Any])
+    def `setPt-brUndefined`: Self = StObject.set(x, "pt-br", js.undefined)
     
     @scala.inline
-    def deleteNl: Self = this.set("nl", js.undefined)
+    def setRu(value: LocaleMessages): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPt-br`(value: LocaleMessages): Self = this.set("pt-br", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePt-br`: Self = this.set("pt-br", js.undefined)
-    
-    @scala.inline
-    def setRu(value: LocaleMessages): Self = this.set("ru", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRu: Self = this.set("ru", js.undefined)
+    def setRuUndefined: Self = StObject.set(x, "ru", js.undefined)
   }
 }

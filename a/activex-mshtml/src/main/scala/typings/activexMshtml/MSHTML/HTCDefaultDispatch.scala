@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTCDefaultDispatch extends js.Object {
+trait HTCDefaultDispatch extends StObject {
   
   def CreateEventObject(): IHTMLEventObj = js.native
   
@@ -34,33 +35,21 @@ object HTCDefaultDispatch {
   }
   
   @scala.inline
-  implicit class HTCDefaultDispatchOps[Self <: HTCDefaultDispatch] (val x: Self) extends AnyVal {
+  implicit class HTCDefaultDispatchMutableBuilder[Self <: HTCDefaultDispatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateEventObject(value: () => IHTMLEventObj): Self = StObject.set(x, "CreateEventObject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocument(value: js.Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateEventObject(value: () => IHTMLEventObj): Self = this.set("CreateEventObject", js.Any.fromFunction0(value))
+    def setElement(value: IHTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotHTCDefaultDispatch_typekey(value: HTCDefaultDispatch): Self = this.set("MSHTML.HTCDefaultDispatch_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaults(value: js.Any): Self = this.set("defaults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDocument(value: js.Any): Self = this.set("document", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setElement(value: IHTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setMSHTMLDotHTCDefaultDispatch_typekey(value: HTCDefaultDispatch): Self = StObject.set(x, "MSHTML.HTCDefaultDispatch_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageRuleType extends js.Object {
+trait StorageRuleType extends StObject {
   
   /**
     * The amount of storage allocated, in bytes.
@@ -26,30 +27,18 @@ object StorageRuleType {
   }
   
   @scala.inline
-  implicit class StorageRuleTypeOps[Self <: StorageRuleType] (val x: Self) extends AnyVal {
+  implicit class StorageRuleTypeMutableBuilder[Self <: StorageRuleType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStorageAllocatedInBytes(value: PositiveSizeType): Self = StObject.set(x, "StorageAllocatedInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStorageAllocatedInBytesUndefined: Self = StObject.set(x, "StorageAllocatedInBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorageType(value: StorageType): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageAllocatedInBytes(value: PositiveSizeType): Self = this.set("StorageAllocatedInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageAllocatedInBytes: Self = this.set("StorageAllocatedInBytes", js.undefined)
-    
-    @scala.inline
-    def setStorageType(value: StorageType): Self = this.set("StorageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
   }
 }

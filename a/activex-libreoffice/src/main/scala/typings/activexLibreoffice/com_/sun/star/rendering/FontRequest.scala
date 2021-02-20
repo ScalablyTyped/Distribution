@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.rendering
 
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait FontRequest extends js.Object {
+trait FontRequest extends StObject {
   
   /**
     * The size of the font in **device** coordinate space.
@@ -68,30 +69,18 @@ object FontRequest {
   }
   
   @scala.inline
-  implicit class FontRequestOps[Self <: FontRequest] (val x: Self) extends AnyVal {
+  implicit class FontRequestMutableBuilder[Self <: FontRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellSize(value: Double): Self = StObject.set(x, "CellSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontDescription(value: FontInfo): Self = StObject.set(x, "FontDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellSize(value: Double): Self = this.set("CellSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFontDescription(value: FontInfo): Self = this.set("FontDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocale(value: Locale): Self = this.set("Locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceAdvancement(value: Double): Self = this.set("ReferenceAdvancement", value.asInstanceOf[js.Any])
+    def setReferenceAdvancement(value: Double): Self = StObject.set(x, "ReferenceAdvancement", value.asInstanceOf[js.Any])
   }
 }

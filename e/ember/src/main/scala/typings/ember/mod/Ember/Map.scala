@@ -1,5 +1,6 @@
 package typings.ember.mod.Ember
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember", "Ember.Map")
 @js.native
-class Map () extends js.Object {
+class Map () extends StObject {
   
   def copy(): Map = js.native
   
@@ -26,10 +27,10 @@ class Map () extends js.Object {
   
   def set(key: js.Any, value: js.Any): Unit = js.native
 }
-/* static members */
-@JSImport("ember", "Ember.Map")
-@js.native
-object Map extends js.Object {
+object Map {
   
+  /* static member */
+  @JSImport("ember", "Ember.Map.create")
+  @js.native
   def create(): Map = js.native
 }

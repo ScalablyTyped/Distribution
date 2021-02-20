@@ -1,12 +1,13 @@
 package typings.nodeRedEditorClient.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WidgetTypedInputTypeDefinition extends js.Object {
+trait WidgetTypedInputTypeDefinition extends StObject {
   
   /** Set to false if there is no value associated with the type. */
   var hasValue: js.UndefOr[Boolean] = js.native
@@ -35,57 +36,45 @@ object WidgetTypedInputTypeDefinition {
   }
   
   @scala.inline
-  implicit class WidgetTypedInputTypeDefinitionOps[Self <: WidgetTypedInputTypeDefinition] (val x: Self) extends AnyVal {
+  implicit class WidgetTypedInputTypeDefinitionMutableBuilder[Self <: WidgetTypedInputTypeDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasValue(value: Boolean): Self = StObject.set(x, "hasValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasValueUndefined: Self = StObject.set(x, "hasValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setHasValue(value: Boolean): Self = this.set("hasValue", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasValue: Self = this.set("hasValue", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setValidate(value: (js.Function1[/* v */ String, Boolean]) | RegExp): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsVarargs(value: String*): Self = this.set("options", js.Array(value :_*))
+    def setValidateFunction1(value: /* v */ String => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOptions(value: js.Array[String]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setValidateFunction1(value: /* v */ String => Boolean): Self = this.set("validate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidate(value: (js.Function1[/* v */ String, Boolean]) | RegExp): Self = this.set("validate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

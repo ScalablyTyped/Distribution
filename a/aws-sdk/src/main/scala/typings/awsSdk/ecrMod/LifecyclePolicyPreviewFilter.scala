@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LifecyclePolicyPreviewFilter extends js.Object {
+trait LifecyclePolicyPreviewFilter extends StObject {
   
   /**
     * The tag status of the image.
@@ -21,24 +22,12 @@ object LifecyclePolicyPreviewFilter {
   }
   
   @scala.inline
-  implicit class LifecyclePolicyPreviewFilterOps[Self <: LifecyclePolicyPreviewFilter] (val x: Self) extends AnyVal {
+  implicit class LifecyclePolicyPreviewFilterMutableBuilder[Self <: LifecyclePolicyPreviewFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTagStatus(value: TagStatus): Self = StObject.set(x, "tagStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTagStatus(value: TagStatus): Self = this.set("tagStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagStatus: Self = this.set("tagStatus", js.undefined)
+    def setTagStatusUndefined: Self = StObject.set(x, "tagStatus", js.undefined)
   }
 }

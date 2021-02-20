@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTrustedAdvisorChecksResponse extends js.Object {
+trait DescribeTrustedAdvisorChecksResponse extends StObject {
   
   /**
     * Information about all available Trusted Advisor checks.
@@ -21,24 +22,12 @@ object DescribeTrustedAdvisorChecksResponse {
   }
   
   @scala.inline
-  implicit class DescribeTrustedAdvisorChecksResponseOps[Self <: DescribeTrustedAdvisorChecksResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeTrustedAdvisorChecksResponseMutableBuilder[Self <: DescribeTrustedAdvisorChecksResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecks(value: TrustedAdvisorCheckList): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChecksVarargs(value: TrustedAdvisorCheckDescription*): Self = this.set("checks", js.Array(value :_*))
-    
-    @scala.inline
-    def setChecks(value: TrustedAdvisorCheckList): Self = this.set("checks", value.asInstanceOf[js.Any])
+    def setChecksVarargs(value: TrustedAdvisorCheckDescription*): Self = StObject.set(x, "checks", js.Array(value :_*))
   }
 }

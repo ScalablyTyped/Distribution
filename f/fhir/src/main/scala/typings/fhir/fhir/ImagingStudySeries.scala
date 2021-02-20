@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,129 +110,117 @@ object ImagingStudySeries {
   }
   
   @scala.inline
-  implicit class ImagingStudySeriesOps[Self <: ImagingStudySeries] (val x: Self) extends AnyVal {
+  implicit class ImagingStudySeriesMutableBuilder[Self <: ImagingStudySeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailability(value: code): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodySite(value: Coding): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModality(value: Coding): Self = this.set("modality", value.asInstanceOf[js.Any])
+    def setBodySiteUndefined: Self = StObject.set(x, "bodySite", js.undefined)
     
     @scala.inline
-    def setUid(value: oid): Self = this.set("uid", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_availability(value: Element): Self = this.set("_availability", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def delete_availability: Self = this.set("_availability", js.undefined)
+    def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setEndpointVarargs(value: Reference*): Self = StObject.set(x, "endpoint", js.Array(value :_*))
     
     @scala.inline
-    def set_number(value: Element): Self = this.set("_number", value.asInstanceOf[js.Any])
+    def setInstance(value: js.Array[ImagingStudySeriesInstance]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_number: Self = this.set("_number", js.undefined)
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def set_numberOfInstances(value: Element): Self = this.set("_numberOfInstances", value.asInstanceOf[js.Any])
+    def setInstanceVarargs(value: ImagingStudySeriesInstance*): Self = StObject.set(x, "instance", js.Array(value :_*))
     
     @scala.inline
-    def delete_numberOfInstances: Self = this.set("_numberOfInstances", js.undefined)
+    def setLaterality(value: Coding): Self = StObject.set(x, "laterality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_started(value: Element): Self = this.set("_started", value.asInstanceOf[js.Any])
+    def setLateralityUndefined: Self = StObject.set(x, "laterality", js.undefined)
     
     @scala.inline
-    def delete_started: Self = this.set("_started", js.undefined)
+    def setModality(value: Coding): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_uid(value: Element): Self = this.set("_uid", value.asInstanceOf[js.Any])
+    def setNumber(value: unsignedInt): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_uid: Self = this.set("_uid", js.undefined)
+    def setNumberOfInstances(value: unsignedInt): Self = StObject.set(x, "numberOfInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailability(value: code): Self = this.set("availability", value.asInstanceOf[js.Any])
+    def setNumberOfInstancesUndefined: Self = StObject.set(x, "numberOfInstances", js.undefined)
     
     @scala.inline
-    def deleteAvailability: Self = this.set("availability", js.undefined)
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def setBodySite(value: Coding): Self = this.set("bodySite", value.asInstanceOf[js.Any])
+    def setPerformer(value: js.Array[Reference]): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBodySite: Self = this.set("bodySite", js.undefined)
+    def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPerformerVarargs(value: Reference*): Self = StObject.set(x, "performer", js.Array(value :_*))
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setStarted(value: dateTime): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointVarargs(value: Reference*): Self = this.set("endpoint", js.Array(value :_*))
+    def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
     @scala.inline
-    def setEndpoint(value: js.Array[Reference]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setUid(value: oid): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def set_availability(value: Element): Self = StObject.set(x, "_availability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceVarargs(value: ImagingStudySeriesInstance*): Self = this.set("instance", js.Array(value :_*))
+    def set_availabilityUndefined: Self = StObject.set(x, "_availability", js.undefined)
     
     @scala.inline
-    def setInstance(value: js.Array[ImagingStudySeriesInstance]): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def setLaterality(value: Coding): Self = this.set("laterality", value.asInstanceOf[js.Any])
+    def set_number(value: Element): Self = StObject.set(x, "_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLaterality: Self = this.set("laterality", js.undefined)
+    def set_numberOfInstances(value: Element): Self = StObject.set(x, "_numberOfInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: unsignedInt): Self = this.set("number", value.asInstanceOf[js.Any])
+    def set_numberOfInstancesUndefined: Self = StObject.set(x, "_numberOfInstances", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def set_numberUndefined: Self = StObject.set(x, "_number", js.undefined)
     
     @scala.inline
-    def setNumberOfInstances(value: unsignedInt): Self = this.set("numberOfInstances", value.asInstanceOf[js.Any])
+    def set_started(value: Element): Self = StObject.set(x, "_started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberOfInstances: Self = this.set("numberOfInstances", js.undefined)
+    def set_startedUndefined: Self = StObject.set(x, "_started", js.undefined)
     
     @scala.inline
-    def setPerformerVarargs(value: Reference*): Self = this.set("performer", js.Array(value :_*))
+    def set_uid(value: Element): Self = StObject.set(x, "_uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformer(value: js.Array[Reference]): Self = this.set("performer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerformer: Self = this.set("performer", js.undefined)
-    
-    @scala.inline
-    def setStarted(value: dateTime): Self = this.set("started", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarted: Self = this.set("started", js.undefined)
+    def set_uidUndefined: Self = StObject.set(x, "_uid", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,30 +36,18 @@ object ChangeFontNameCommand {
   }
   
   @scala.inline
-  implicit class ChangeFontNameCommandOps[Self <: ChangeFontNameCommand] (val x: Self) extends AnyVal {
+  implicit class ChangeFontNameCommandMutableBuilder[Self <: ChangeFontNameCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontNames(value: js.Array[String]): Self = StObject.set(x, "fontNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontNamesVarargs(value: String*): Self = StObject.set(x, "fontNames", js.Array(value :_*))
     
     @scala.inline
-    def setExecute(value: String => Boolean): Self = this.set("execute", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFontNamesVarargs(value: String*): Self = this.set("fontNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setFontNames(value: js.Array[String]): Self = this.set("fontNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetState(value: () => CommandState[String]): Self = this.set("getState", js.Any.fromFunction0(value))
+    def setGetState(value: () => CommandState[String]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

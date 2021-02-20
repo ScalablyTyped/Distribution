@@ -1,12 +1,13 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azdata", "nb.CellRange")
 @js.native
-class CellRange protected () extends js.Object {
+class CellRange protected () extends StObject {
   /**
     * Create a new range from two positions. If `start` is not
     * before or equal to `end`, the values will be swapped.

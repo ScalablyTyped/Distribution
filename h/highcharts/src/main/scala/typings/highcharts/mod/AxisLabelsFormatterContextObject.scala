@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisLabelsFormatterContextObject[T] extends js.Object {
+trait AxisLabelsFormatterContextObject[T] extends StObject {
   
   var axis: Axis = js.native
   
@@ -28,36 +29,24 @@ object AxisLabelsFormatterContextObject {
   }
   
   @scala.inline
-  implicit class AxisLabelsFormatterContextObjectOps[Self <: AxisLabelsFormatterContextObject[_], T] (val x: Self with AxisLabelsFormatterContextObject[T]) extends AnyVal {
+  implicit class AxisLabelsFormatterContextObjectMutableBuilder[Self <: AxisLabelsFormatterContextObject[_], T] (val x: Self with AxisLabelsFormatterContextObject[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChart(value: Chart_): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFirst(value: Boolean): Self = StObject.set(x, "isFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: Axis): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: Chart_): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFirst(value: Boolean): Self = this.set("isFirst", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsLast(value: Boolean): Self = this.set("isLast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPos(value: Double): Self = this.set("pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: T): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

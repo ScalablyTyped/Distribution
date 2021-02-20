@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mp2Settings extends js.Object {
+trait Mp2Settings extends StObject {
   
   /**
     * Average bitrate in bits/second.
@@ -31,36 +32,24 @@ object Mp2Settings {
   }
   
   @scala.inline
-  implicit class Mp2SettingsOps[Self <: Mp2Settings] (val x: Self) extends AnyVal {
+  implicit class Mp2SettingsMutableBuilder[Self <: Mp2Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitrate(value: double): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodingMode(value: Mp2CodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrate(value: double): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
     
     @scala.inline
-    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    def setSampleRate(value: double): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodingMode(value: Mp2CodingMode): Self = this.set("CodingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodingMode: Self = this.set("CodingMode", js.undefined)
-    
-    @scala.inline
-    def setSampleRate(value: double): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.babylonjs.nodeIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +22,7 @@ class NodeMaterialConnectionPoint protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Materials/Node/index", "NodeMaterialConnectionPoint")
-@js.native
-object NodeMaterialConnectionPoint extends js.Object {
+object NodeMaterialConnectionPoint {
   
   /**
     * Checks if two types are equivalent
@@ -31,5 +30,7 @@ object NodeMaterialConnectionPoint extends js.Object {
     * @param type2 type 2 to check
     * @returns true if both types are equivalent, else false
     */
+  @JSImport("babylonjs/Materials/Node/index", "NodeMaterialConnectionPoint.AreEquivalentTypes")
+  @js.native
   def AreEquivalentTypes(type1: Double, type2: Double): Boolean = js.native
 }

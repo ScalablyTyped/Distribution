@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAccessControlEntryContainer extends js.Object {
+trait IAccessControlEntryContainer extends StObject {
   
   def Add(AccessControlEntryKey: IAccessControlEntryKey, AccessControlEntryData: IAccessControlEntryData): Unit = js.native
   
@@ -44,45 +45,33 @@ object IAccessControlEntryContainer {
   }
   
   @scala.inline
-  implicit class IAccessControlEntryContainerOps[Self <: IAccessControlEntryContainer] (val x: Self) extends AnyVal {
+  implicit class IAccessControlEntryContainerMutableBuilder[Self <: IAccessControlEntryContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (IAccessControlEntryKey, IAccessControlEntryData) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAt(value: IAccessControlEntryKey => IAccessControlEntryData): Self = StObject.set(x, "At", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: (IAccessControlEntryKey, IAccessControlEntryData) => Unit): Self = this.set("Add", js.Any.fromFunction2(value))
+    def setClone(value: () => IAccessControlEntryContainer): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAt(value: IAccessControlEntryKey => IAccessControlEntryData): Self = this.set("At", js.Any.fromFunction1(value))
+    def setGetKeys(value: () => IAccessControlEntryKeys): Self = StObject.set(x, "GetKeys", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("Clear", js.Any.fromFunction0(value))
+    def setGetKeysWithPseudoUserDefinitions(value: () => IAccessControlEntryKeys): Self = StObject.set(x, "GetKeysWithPseudoUserDefinitions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClone(value: () => IAccessControlEntryContainer): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setHasKey(value: IAccessControlEntryKey => Boolean): Self = StObject.set(x, "HasKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetKeys(value: () => IAccessControlEntryKeys): Self = this.set("GetKeys", js.Any.fromFunction0(value))
+    def setIsEmpty(value: Boolean): Self = StObject.set(x, "IsEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetKeysWithPseudoUserDefinitions(value: () => IAccessControlEntryKeys): Self = this.set("GetKeysWithPseudoUserDefinitions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasKey(value: IAccessControlEntryKey => Boolean): Self = this.set("HasKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsEmpty(value: Boolean): Self = this.set("IsEmpty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemove(value: IAccessControlEntryKey => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
+    def setRemove(value: IAccessControlEntryKey => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

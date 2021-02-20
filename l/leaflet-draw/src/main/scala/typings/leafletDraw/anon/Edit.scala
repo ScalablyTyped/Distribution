@@ -1,11 +1,12 @@
 package typings.leafletDraw.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Edit extends js.Object {
+trait Edit extends StObject {
   
   var edit: String = js.native
   
@@ -24,30 +25,18 @@ object Edit {
   }
   
   @scala.inline
-  implicit class EditOps[Self <: Edit] (val x: Self) extends AnyVal {
+  implicit class EditMutableBuilder[Self <: Edit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditDisabled(value: String): Self = StObject.set(x, "editDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdit(value: String): Self = this.set("edit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditDisabled(value: String): Self = this.set("editDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemove(value: String): Self = this.set("remove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveDisabled(value: String): Self = this.set("removeDisabled", value.asInstanceOf[js.Any])
+    def setRemoveDisabled(value: String): Self = StObject.set(x, "removeDisabled", value.asInstanceOf[js.Any])
   }
 }

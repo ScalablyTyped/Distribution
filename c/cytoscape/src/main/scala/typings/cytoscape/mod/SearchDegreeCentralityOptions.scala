@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#eles.degreeCentrality
   */
 @js.native
-trait SearchDegreeCentralityOptions extends js.Object {
+trait SearchDegreeCentralityOptions extends StObject {
   
   /**
     * The alpha value for the centrality calculation, ranging on [0, 1].
@@ -43,39 +44,27 @@ object SearchDegreeCentralityOptions {
   }
   
   @scala.inline
-  implicit class SearchDegreeCentralityOptionsOps[Self <: SearchDegreeCentralityOptions] (val x: Self) extends AnyVal {
+  implicit class SearchDegreeCentralityOptionsMutableBuilder[Self <: SearchDegreeCentralityOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: NodeSingular | Selector): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setRoot(value: NodeSingular | Selector): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setWeight(value: /* edge */ EdgeSingular => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirected(value: Boolean): Self = this.set("directed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirected: Self = this.set("directed", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: /* edge */ EdgeSingular => Double): Self = this.set("weight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

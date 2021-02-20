@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,42 +64,30 @@ object ASPxClientSeriesPoint {
   }
   
   @scala.inline
-  implicit class ASPxClientSeriesPointOps[Self <: ASPxClientSeriesPoint] (val x: Self) extends AnyVal {
+  implicit class ASPxClientSeriesPointMutableBuilder[Self <: ASPxClientSeriesPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPercentValue(value: Double): Self = StObject.set(x, "percentValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgument(value: js.Any): Self = this.set("argument", value.asInstanceOf[js.Any])
+    def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setToolTipHint(value: String): Self = StObject.set(x, "toolTipHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentValue(value: Double): Self = this.set("percentValue", value.asInstanceOf[js.Any])
+    def setToolTipText(value: String): Self = StObject.set(x, "toolTipText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: ASPxClientSeries): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolTipHint(value: String): Self = this.set("toolTipHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolTipText(value: String): Self = this.set("toolTipText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[_]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

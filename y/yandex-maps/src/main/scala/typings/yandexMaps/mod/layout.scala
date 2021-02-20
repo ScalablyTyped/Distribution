@@ -1,19 +1,20 @@
 package typings.yandexMaps.mod
 
 import typings.yandexMaps.mod.util.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "layout")
-@js.native
-object layout extends js.Object {
+object layout {
   
+  @JSImport("yandex-maps", "layout.storage")
+  @js.native
   val storage: Storage = js.native
   
-  @js.native
-  object templateBased extends js.Object {
+  object templateBased {
     
+    @JSImport("yandex-maps", "layout.templateBased.Base")
     @js.native
     class Base protected () extends ILayout {
       def this(data: js.Object) = this()

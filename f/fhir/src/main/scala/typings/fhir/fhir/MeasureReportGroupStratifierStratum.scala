@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,48 +45,36 @@ object MeasureReportGroupStratifierStratum {
   }
   
   @scala.inline
-  implicit class MeasureReportGroupStratifierStratumOps[Self <: MeasureReportGroupStratifierStratum] (val x: Self) extends AnyVal {
+  implicit class MeasureReportGroupStratifierStratumMutableBuilder[Self <: MeasureReportGroupStratifierStratum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMeasureScore(value: decimal): Self = StObject.set(x, "measureScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeasureScoreUndefined: Self = StObject.set(x, "measureScore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPopulation(value: js.Array[MeasureReportGroupStratifierStratumPopulation]): Self = StObject.set(x, "population", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setPopulationUndefined: Self = StObject.set(x, "population", js.undefined)
     
     @scala.inline
-    def set_measureScore(value: Element): Self = this.set("_measureScore", value.asInstanceOf[js.Any])
+    def setPopulationVarargs(value: MeasureReportGroupStratifierStratumPopulation*): Self = StObject.set(x, "population", js.Array(value :_*))
     
     @scala.inline
-    def delete_measureScore: Self = this.set("_measureScore", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_value(value: Element): Self = this.set("_value", value.asInstanceOf[js.Any])
+    def set_measureScore(value: Element): Self = StObject.set(x, "_measureScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_value: Self = this.set("_value", js.undefined)
+    def set_measureScoreUndefined: Self = StObject.set(x, "_measureScore", js.undefined)
     
     @scala.inline
-    def setMeasureScore(value: decimal): Self = this.set("measureScore", value.asInstanceOf[js.Any])
+    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMeasureScore: Self = this.set("measureScore", js.undefined)
-    
-    @scala.inline
-    def setPopulationVarargs(value: MeasureReportGroupStratifierStratumPopulation*): Self = this.set("population", js.Array(value :_*))
-    
-    @scala.inline
-    def setPopulation(value: js.Array[MeasureReportGroupStratifierStratumPopulation]): Self = this.set("population", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePopulation: Self = this.set("population", js.undefined)
+    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

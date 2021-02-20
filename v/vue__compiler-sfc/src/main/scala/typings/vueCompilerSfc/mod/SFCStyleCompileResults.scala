@@ -6,12 +6,13 @@ import typings.sourceMap.mod.RawSourceMap
 import typings.std.Error
 import typings.std.Record
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SFCStyleCompileResults extends js.Object {
+trait SFCStyleCompileResults extends StObject {
   
   var code: String = js.native
   
@@ -34,48 +35,36 @@ object SFCStyleCompileResults {
   }
   
   @scala.inline
-  implicit class SFCStyleCompileResultsOps[Self <: SFCStyleCompileResults] (val x: Self) extends AnyVal {
+  implicit class SFCStyleCompileResultsMutableBuilder[Self <: SFCStyleCompileResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDependencies(value: Set[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setDependencies(value: Set[String]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsVarargs(value: Error*): Self = this.set("errors", js.Array(value :_*))
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def setErrors(value: js.Array[Error]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setModules(value: Record[String, String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: RawSourceMap): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setRawResult(value: LazyResult | Result): Self = StObject.set(x, "rawResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModules(value: Record[String, String]): Self = this.set("modules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModules: Self = this.set("modules", js.undefined)
-    
-    @scala.inline
-    def setRawResult(value: LazyResult | Result): Self = this.set("rawResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRawResult: Self = this.set("rawResult", js.undefined)
+    def setRawResultUndefined: Self = StObject.set(x, "rawResult", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.gitlab.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,54 +32,42 @@ object projectIdstringnumberunde {
   }
   
   @scala.inline
-  implicit class projectIdstringnumberundeOps[Self <: projectIdstringnumberunde] (val x: Self) extends AnyVal {
+  implicit class projectIdstringnumberundeMutableBuilder[Self <: projectIdstringnumberunde] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxPages(value: Double): Self = StObject.set(x, "maxPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxPagesUndefined: Self = StObject.set(x, "maxPages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPages(value: Double): Self = this.set("maxPages", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteMaxPages: Self = this.set("maxPages", js.undefined)
+    def setPerPage(value: Double): Self = StObject.set(x, "perPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPerPageUndefined: Self = StObject.set(x, "perPage", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setProjectId(value: String | Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerPage(value: Double): Self = this.set("perPage", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deletePerPage: Self = this.set("perPage", js.undefined)
+    def setShowPagination(value: Boolean): Self = StObject.set(x, "showPagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String | Double): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setShowPaginationUndefined: Self = StObject.set(x, "showPagination", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPagination(value: Boolean): Self = this.set("showPagination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowPagination: Self = this.set("showPagination", js.undefined)
-    
-    @scala.inline
-    def setSudo(value: String | Double): Self = this.set("sudo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSudo: Self = this.set("sudo", js.undefined)
+    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartElementsOptions extends js.Object {
+trait ChartElementsOptions extends StObject {
   
   var arc: js.UndefOr[ChartArcOptions] = js.native
   
@@ -24,42 +25,30 @@ object ChartElementsOptions {
   }
   
   @scala.inline
-  implicit class ChartElementsOptionsOps[Self <: ChartElementsOptions] (val x: Self) extends AnyVal {
+  implicit class ChartElementsOptionsMutableBuilder[Self <: ChartElementsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArc(value: ChartArcOptions): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLine(value: ChartLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArc(value: ChartArcOptions): Self = this.set("arc", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteArc: Self = this.set("arc", js.undefined)
+    def setPoint(value: ChartPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: ChartLineOptions): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setRectangle(value: ChartRectangleOptions): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: ChartPointOptions): Self = this.set("point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoint: Self = this.set("point", js.undefined)
-    
-    @scala.inline
-    def setRectangle(value: ChartRectangleOptions): Self = this.set("rectangle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
   }
 }

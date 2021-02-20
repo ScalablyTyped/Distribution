@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,30 +63,18 @@ object XDiagram {
   }
   
   @scala.inline
-  implicit class XDiagramOps[Self <: XDiagram] (val x: Self) extends AnyVal {
+  implicit class XDiagramMutableBuilder[Self <: XDiagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiagramType(value: String): Self = StObject.set(x, "DiagramType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDataPointProperties(value: (Double, Double) => XPropertySet): Self = StObject.set(x, "getDataPointProperties", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDataRowProperties(value: Double => XPropertySet): Self = StObject.set(x, "getDataRowProperties", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDiagramType(value: String): Self = this.set("DiagramType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDataPointProperties(value: (Double, Double) => XPropertySet): Self = this.set("getDataPointProperties", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetDataRowProperties(value: Double => XPropertySet): Self = this.set("getDataRowProperties", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDiagramType(value: () => String): Self = this.set("getDiagramType", js.Any.fromFunction0(value))
+    def setGetDiagramType(value: () => String): Self = StObject.set(x, "getDiagramType", js.Any.fromFunction0(value))
   }
 }

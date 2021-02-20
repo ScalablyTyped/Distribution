@@ -2,16 +2,16 @@ package typings.agGrid
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.agGrid.clientSideRowModelMod.RowDataTransaction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowModels/clientSide/immutableService", JSImport.Namespace)
-@js.native
-object immutableServiceMod extends js.Object {
+object immutableServiceMod {
   
+  @JSImport("ag-grid/dist/lib/rowModels/clientSide/immutableService", "ImmutableService")
   @js.native
-  class ImmutableService () extends js.Object {
+  class ImmutableService () extends StObject {
     
     var clientSideRowModel: js.Any = js.native
     

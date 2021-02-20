@@ -1,30 +1,54 @@
 package typings.materialSegmentedButton
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/segmented-button/segmented-button/constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
+object constantsMod {
   
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var SINGLE_SELECT: String = js.native
+    @JSImport("@material/segmented-button/segmented-button/constants", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/segmented-button/segmented-button/constants", "cssClasses.SINGLE_SELECT")
+    @js.native
+    def SINGLE_SELECT: String = js.native
+    @scala.inline
+    def SINGLE_SELECT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SINGLE_SELECT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object events extends js.Object {
+  object events {
     
-    var CHANGE: String = js.native
+    @JSImport("@material/segmented-button/segmented-button/constants", "events")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var SELECTED: String = js.native
+    @JSImport("@material/segmented-button/segmented-button/constants", "events.CHANGE")
+    @js.native
+    def CHANGE: String = js.native
+    @scala.inline
+    def CHANGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHANGE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/segmented-button/segmented-button/constants", "events.SELECTED")
+    @js.native
+    def SELECTED: String = js.native
+    @scala.inline
+    def SELECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object selectors extends js.Object {
+  object selectors {
     
-    var SEGMENT: String = js.native
+    @JSImport("@material/segmented-button/segmented-button/constants", "selectors")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/segmented-button/segmented-button/constants", "selectors.SEGMENT")
+    @js.native
+    def SEGMENT: String = js.native
+    @scala.inline
+    def SEGMENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEGMENT")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,56 +1,48 @@
 package typings.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DepthFunction extends js.Object
+sealed trait DepthFunction extends StObject
 @JSImport("cesium", "DepthFunction")
 @js.native
-object DepthFunction extends js.Object {
+object DepthFunction extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DepthFunction with Double] = js.native
   
   @js.native
   sealed trait ALWAYS extends DepthFunction
-  /* 7 */ @js.native
-  object ALWAYS extends TopLevel[ALWAYS with Double]
+  /* 7 */ val ALWAYS: typings.cesium.mod.DepthFunction.ALWAYS with Double = js.native
   
   @js.native
   sealed trait EQUAL extends DepthFunction
-  /* 2 */ @js.native
-  object EQUAL extends TopLevel[EQUAL with Double]
+  /* 2 */ val EQUAL: typings.cesium.mod.DepthFunction.EQUAL with Double = js.native
   
   @js.native
   sealed trait GREATER extends DepthFunction
-  /* 4 */ @js.native
-  object GREATER extends TopLevel[GREATER with Double]
+  /* 4 */ val GREATER: typings.cesium.mod.DepthFunction.GREATER with Double = js.native
   
   @js.native
   sealed trait GREATER_OR_EQUAL extends DepthFunction
-  /* 6 */ @js.native
-  object GREATER_OR_EQUAL extends TopLevel[GREATER_OR_EQUAL with Double]
+  /* 6 */ val GREATER_OR_EQUAL: typings.cesium.mod.DepthFunction.GREATER_OR_EQUAL with Double = js.native
   
   @js.native
   sealed trait LESS extends DepthFunction
-  /* 1 */ @js.native
-  object LESS extends TopLevel[LESS with Double]
+  /* 1 */ val LESS: typings.cesium.mod.DepthFunction.LESS with Double = js.native
   
   @js.native
   sealed trait LESS_OR_EQUAL extends DepthFunction
-  /* 3 */ @js.native
-  object LESS_OR_EQUAL extends TopLevel[LESS_OR_EQUAL with Double]
+  /* 3 */ val LESS_OR_EQUAL: typings.cesium.mod.DepthFunction.LESS_OR_EQUAL with Double = js.native
   
   @js.native
   sealed trait NEVER extends DepthFunction
-  /* 0 */ @js.native
-  object NEVER extends TopLevel[NEVER with Double]
+  /* 0 */ val NEVER: typings.cesium.mod.DepthFunction.NEVER with Double = js.native
   
   @js.native
   sealed trait NOT_EQUAL extends DepthFunction
-  /* 5 */ @js.native
-  object NOT_EQUAL extends TopLevel[NOT_EQUAL with Double]
+  /* 5 */ val NOT_EQUAL: typings.cesium.mod.DepthFunction.NOT_EQUAL with Double = js.native
 }

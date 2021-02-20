@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutResourcePolicyOutput extends js.Object {
+trait PutResourcePolicyOutput extends StObject {
   
   /**
     *  The ARN of the Project or ReportGroup resource that is associated with a resource policy. 
@@ -21,24 +22,12 @@ object PutResourcePolicyOutput {
   }
   
   @scala.inline
-  implicit class PutResourcePolicyOutputOps[Self <: PutResourcePolicyOutput] (val x: Self) extends AnyVal {
+  implicit class PutResourcePolicyOutputMutableBuilder[Self <: PutResourcePolicyOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceArn(value: NonEmptyString): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceArn(value: NonEmptyString): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceArn: Self = this.set("resourceArn", js.undefined)
+    def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
   }
 }

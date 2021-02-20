@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,28 +11,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`3`
   - typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`4`
 */
-trait MessageType extends js.Object
-@JSImport("vscode-languageserver-protocol/lib/protocol", "MessageType")
-@js.native
-object MessageType extends js.Object {
+trait MessageType extends StObject
+object MessageType {
   
   /**
     * An error message.
     */
+  @JSImport("vscode-languageserver-protocol/lib/protocol", "MessageType.Error")
+  @js.native
   val Error: /* 1 */ Double = js.native
   
   /**
     * An information message.
     */
+  @JSImport("vscode-languageserver-protocol/lib/protocol", "MessageType.Info")
+  @js.native
   val Info: /* 3 */ Double = js.native
   
   /**
     * A log message.
     */
+  @JSImport("vscode-languageserver-protocol/lib/protocol", "MessageType.Log")
+  @js.native
   val Log: /* 4 */ Double = js.native
   
   /**
     * A warning message.
     */
+  @JSImport("vscode-languageserver-protocol/lib/protocol", "MessageType.Warning")
+  @js.native
   val Warning: /* 2 */ Double = js.native
 }

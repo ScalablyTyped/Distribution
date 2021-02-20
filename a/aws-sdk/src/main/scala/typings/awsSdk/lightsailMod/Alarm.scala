@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alarm extends js.Object {
+trait Alarm extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the alarm.
@@ -116,144 +117,132 @@ object Alarm {
   }
   
   @scala.inline
-  implicit class AlarmOps[Self <: Alarm] (val x: Self) extends AnyVal {
+  implicit class AlarmMutableBuilder[Self <: Alarm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setComparisonOperatorUndefined: Self = StObject.set(x, "comparisonOperator", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setContactProtocols(value: ContactProtocolsList): Self = StObject.set(x, "contactProtocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = this.set("comparisonOperator", value.asInstanceOf[js.Any])
+    def setContactProtocolsUndefined: Self = StObject.set(x, "contactProtocols", js.undefined)
     
     @scala.inline
-    def deleteComparisonOperator: Self = this.set("comparisonOperator", js.undefined)
+    def setContactProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "contactProtocols", js.Array(value :_*))
     
     @scala.inline
-    def setContactProtocolsVarargs(value: ContactProtocol*): Self = this.set("contactProtocols", js.Array(value :_*))
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactProtocols(value: ContactProtocolsList): Self = this.set("contactProtocols", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteContactProtocols: Self = this.set("contactProtocols", js.undefined)
+    def setDatapointsToAlarm(value: integer): Self = StObject.set(x, "datapointsToAlarm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDatapointsToAlarmUndefined: Self = StObject.set(x, "datapointsToAlarm", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setEvaluationPeriods(value: integer): Self = StObject.set(x, "evaluationPeriods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatapointsToAlarm(value: integer): Self = this.set("datapointsToAlarm", value.asInstanceOf[js.Any])
+    def setEvaluationPeriodsUndefined: Self = StObject.set(x, "evaluationPeriods", js.undefined)
     
     @scala.inline
-    def deleteDatapointsToAlarm: Self = this.set("datapointsToAlarm", js.undefined)
+    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationPeriods(value: integer): Self = this.set("evaluationPeriods", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteEvaluationPeriods: Self = this.set("evaluationPeriods", js.undefined)
+    def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMonitoredResourceInfo(value: MonitoredResourceInfo): Self = StObject.set(x, "monitoredResourceInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setMonitoredResourceInfoUndefined: Self = StObject.set(x, "monitoredResourceInfo", js.undefined)
     
     @scala.inline
-    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoredResourceInfo(value: MonitoredResourceInfo): Self = this.set("monitoredResourceInfo", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMonitoredResourceInfo: Self = this.set("monitoredResourceInfo", js.undefined)
+    def setNotificationEnabled(value: Boolean): Self = StObject.set(x, "notificationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotificationEnabledUndefined: Self = StObject.set(x, "notificationEnabled", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNotificationTriggers(value: NotificationTriggerList): Self = StObject.set(x, "notificationTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationEnabled(value: Boolean): Self = this.set("notificationEnabled", value.asInstanceOf[js.Any])
+    def setNotificationTriggersUndefined: Self = StObject.set(x, "notificationTriggers", js.undefined)
     
     @scala.inline
-    def deleteNotificationEnabled: Self = this.set("notificationEnabled", js.undefined)
+    def setNotificationTriggersVarargs(value: AlarmState*): Self = StObject.set(x, "notificationTriggers", js.Array(value :_*))
     
     @scala.inline
-    def setNotificationTriggersVarargs(value: AlarmState*): Self = this.set("notificationTriggers", js.Array(value :_*))
+    def setPeriod(value: MetricPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationTriggers(value: NotificationTriggerList): Self = this.set("notificationTriggers", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def deleteNotificationTriggers: Self = this.set("notificationTriggers", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: MetricPeriod): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setState(value: AlarmState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setStatistic(value: MetricStatistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: AlarmState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setStatisticUndefined: Self = StObject.set(x, "statistic", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistic(value: MetricStatistic): Self = this.set("statistic", value.asInstanceOf[js.Any])
+    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
     
     @scala.inline
-    def deleteStatistic: Self = this.set("statistic", js.undefined)
+    def setThreshold(value: double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
     @scala.inline
-    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
+    def setTreatMissingData(value: TreatMissingData): Self = StObject.set(x, "treatMissingData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreshold(value: double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    def setTreatMissingDataUndefined: Self = StObject.set(x, "treatMissingData", js.undefined)
     
     @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    def setUnit(value: MetricUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreatMissingData(value: TreatMissingData): Self = this.set("treatMissingData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreatMissingData: Self = this.set("treatMissingData", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: MetricUnit): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

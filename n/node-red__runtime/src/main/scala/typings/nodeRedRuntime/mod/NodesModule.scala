@@ -11,12 +11,13 @@ import typings.nodeRedRuntime.anon.LangReq
 import typings.nodeRedRuntime.anon.ModuleReq
 import typings.nodeRedRuntime.anon.Req
 import typings.nodeRedRuntime.anon.Version
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodesModule extends js.Object {
+trait NodesModule extends StObject {
   
   /**
     * Install a new module into the runtime
@@ -163,57 +164,45 @@ object NodesModule {
   }
   
   @scala.inline
-  implicit class NodesModuleOps[Self <: NodesModule] (val x: Self) extends AnyVal {
+  implicit class NodesModuleMutableBuilder[Self <: NodesModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddModule(value: Version => js.Promise[js.Object]): Self = StObject.set(x, "addModule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetIcon(value: IconModule => js.Promise[Buffer]): Self = StObject.set(x, "getIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIconList(value: Req => js.Promise[js.Object]): Self = StObject.set(x, "getIconList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddModule(value: Version => js.Promise[js.Object]): Self = this.set("addModule", js.Any.fromFunction1(value))
+    def setGetModuleCatalog(value: LangModule => js.Promise[js.Object]): Self = StObject.set(x, "getModuleCatalog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetIcon(value: IconModule => js.Promise[Buffer]): Self = this.set("getIcon", js.Any.fromFunction1(value))
+    def setGetModuleCatalogs(value: LangReq => js.Promise[js.Object]): Self = StObject.set(x, "getModuleCatalogs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetIconList(value: Req => js.Promise[js.Object]): Self = this.set("getIconList", js.Any.fromFunction1(value))
+    def setGetModuleInfo(value: ModuleReq => js.Promise[js.Object]): Self = StObject.set(x, "getModuleInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetModuleCatalog(value: LangModule => js.Promise[js.Object]): Self = this.set("getModuleCatalog", js.Any.fromFunction1(value))
+    def setGetNodeConfig(value: Lang => js.Promise[String]): Self = StObject.set(x, "getNodeConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetModuleCatalogs(value: LangReq => js.Promise[js.Object]): Self = this.set("getModuleCatalogs", js.Any.fromFunction1(value))
+    def setGetNodeConfigs(value: LangReq => js.Promise[String]): Self = StObject.set(x, "getNodeConfigs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetModuleInfo(value: ModuleReq => js.Promise[js.Object]): Self = this.set("getModuleInfo", js.Any.fromFunction1(value))
+    def setGetNodeInfo(value: IdReq => js.Promise[js.Object]): Self = StObject.set(x, "getNodeInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNodeConfig(value: Lang => js.Promise[String]): Self = this.set("getNodeConfig", js.Any.fromFunction1(value))
+    def setGetNodeList(value: Req => js.Promise[js.Array[js.Object]]): Self = StObject.set(x, "getNodeList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNodeConfigs(value: LangReq => js.Promise[String]): Self = this.set("getNodeConfigs", js.Any.fromFunction1(value))
+    def setRemoveModule(value: ModuleReq => js.Promise[Unit]): Self = StObject.set(x, "removeModule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNodeInfo(value: IdReq => js.Promise[js.Object]): Self = this.set("getNodeInfo", js.Any.fromFunction1(value))
+    def setSetModuleState(value: EnabledModule => js.Promise[js.Object]): Self = StObject.set(x, "setModuleState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNodeList(value: Req => js.Promise[js.Array[js.Object]]): Self = this.set("getNodeList", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveModule(value: ModuleReq => js.Promise[Unit]): Self = this.set("removeModule", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetModuleState(value: EnabledModule => js.Promise[js.Object]): Self = this.set("setModuleState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetNodeSetState(value: EnabledId => js.Promise[js.Object]): Self = this.set("setNodeSetState", js.Any.fromFunction1(value))
+    def setSetNodeSetState(value: EnabledId => js.Promise[js.Object]): Self = StObject.set(x, "setNodeSetState", js.Any.fromFunction1(value))
   }
 }

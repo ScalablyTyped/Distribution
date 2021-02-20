@@ -1,11 +1,12 @@
 package typings.knockoutPunches
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutStatic extends js.Object {
+trait KnockoutStatic extends StObject {
   
   var filters: KnockoutPunchesFilters = js.native
   
@@ -20,24 +21,12 @@ object KnockoutStatic {
   }
   
   @scala.inline
-  implicit class KnockoutStaticOps[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
+  implicit class KnockoutStaticMutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: KnockoutPunchesFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilters(value: KnockoutPunchesFilters): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPunches(value: KnockoutPunchesStatic): Self = this.set("punches", value.asInstanceOf[js.Any])
+    def setPunches(value: KnockoutPunchesStatic): Self = StObject.set(x, "punches", value.asInstanceOf[js.Any])
   }
 }

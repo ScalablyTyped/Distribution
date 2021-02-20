@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStylesOptions extends js.Object {
+trait IStylesOptions extends StObject {
   
   /** Sets the options for all polygons. */
   var polygonOptions: js.UndefOr[IPolygonOptions] = js.native
@@ -25,36 +26,24 @@ object IStylesOptions {
   }
   
   @scala.inline
-  implicit class IStylesOptionsOps[Self <: IStylesOptions] (val x: Self) extends AnyVal {
+  implicit class IStylesOptionsMutableBuilder[Self <: IStylesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolygonOptions(value: IPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolylineOptions(value: IPolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonOptions(value: IPolygonOptions): Self = this.set("polygonOptions", value.asInstanceOf[js.Any])
+    def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
     
     @scala.inline
-    def deletePolygonOptions: Self = this.set("polygonOptions", js.undefined)
+    def setPushpinOptions(value: IPushpinOptions): Self = StObject.set(x, "pushpinOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylineOptions(value: IPolylineOptions): Self = this.set("polylineOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolylineOptions: Self = this.set("polylineOptions", js.undefined)
-    
-    @scala.inline
-    def setPushpinOptions(value: IPushpinOptions): Self = this.set("pushpinOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePushpinOptions: Self = this.set("pushpinOptions", js.undefined)
+    def setPushpinOptionsUndefined: Self = StObject.set(x, "pushpinOptions", js.undefined)
   }
 }

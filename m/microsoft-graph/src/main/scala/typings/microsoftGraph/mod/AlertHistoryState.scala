@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlertHistoryState extends js.Object {
+trait AlertHistoryState extends StObject {
   
   var appId: js.UndefOr[NullableOption[String]] = js.native
   
@@ -30,84 +31,72 @@ object AlertHistoryState {
   }
   
   @scala.inline
-  implicit class AlertHistoryStateOps[Self <: AlertHistoryState] (val x: Self) extends AnyVal {
+  implicit class AlertHistoryStateMutableBuilder[Self <: AlertHistoryState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdNull: Self = StObject.set(x, "appId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def setAppId(value: NullableOption[String]): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setAssignedTo(value: NullableOption[String]): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setAssignedToNull: Self = StObject.set(x, "assignedTo", null)
     
     @scala.inline
-    def setAppIdNull: Self = this.set("appId", null)
+    def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
     
     @scala.inline
-    def setAssignedTo(value: NullableOption[String]): Self = this.set("assignedTo", value.asInstanceOf[js.Any])
+    def setComments(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignedTo: Self = this.set("assignedTo", js.undefined)
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def setAssignedToNull: Self = this.set("assignedTo", null)
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setCommentsVarargs(value: String*): Self = this.set("comments", js.Array(value :_*))
+    def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setComments(value: NullableOption[js.Array[String]]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setFeedback(value: NullableOption[AlertFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setFeedbackNull: Self = StObject.set(x, "feedback", null)
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
     
     @scala.inline
-    def setFeedback(value: NullableOption[AlertFeedback]): Self = this.set("feedback", value.asInstanceOf[js.Any])
+    def setStatus(value: NullableOption[AlertStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeedback: Self = this.set("feedback", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setFeedbackNull: Self = this.set("feedback", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setStatus(value: NullableOption[AlertStatus]): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUpdatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "updatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUpdatedDateTimeNull: Self = StObject.set(x, "updatedDateTime", null)
     
     @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setUpdatedDateTimeUndefined: Self = StObject.set(x, "updatedDateTime", js.undefined)
     
     @scala.inline
-    def setUpdatedDateTime(value: NullableOption[String]): Self = this.set("updatedDateTime", value.asInstanceOf[js.Any])
+    def setUser(value: NullableOption[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdatedDateTime: Self = this.set("updatedDateTime", js.undefined)
+    def setUserNull: Self = StObject.set(x, "user", null)
     
     @scala.inline
-    def setUpdatedDateTimeNull: Self = this.set("updatedDateTime", null)
-    
-    @scala.inline
-    def setUser(value: NullableOption[String]): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setUserNull: Self = this.set("user", null)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

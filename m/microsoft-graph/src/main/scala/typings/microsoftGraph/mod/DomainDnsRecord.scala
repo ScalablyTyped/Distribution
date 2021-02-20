@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,51 +39,39 @@ object DomainDnsRecord {
   }
   
   @scala.inline
-  implicit class DomainDnsRecordOps[Self <: DomainDnsRecord] (val x: Self) extends AnyVal {
+  implicit class DomainDnsRecordMutableBuilder[Self <: DomainDnsRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsOptionalUndefined: Self = StObject.set(x, "isOptional", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOptional(value: Boolean): Self = this.set("isOptional", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteIsOptional: Self = this.set("isOptional", js.undefined)
+    def setRecordType(value: NullableOption[String]): Self = StObject.set(x, "recordType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setRecordTypeNull: Self = StObject.set(x, "recordType", null)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setRecordTypeUndefined: Self = StObject.set(x, "recordType", js.undefined)
     
     @scala.inline
-    def setRecordType(value: NullableOption[String]): Self = this.set("recordType", value.asInstanceOf[js.Any])
+    def setSupportedService(value: String): Self = StObject.set(x, "supportedService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecordType: Self = this.set("recordType", js.undefined)
+    def setSupportedServiceUndefined: Self = StObject.set(x, "supportedService", js.undefined)
     
     @scala.inline
-    def setRecordTypeNull: Self = this.set("recordType", null)
+    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedService(value: String): Self = this.set("supportedService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedService: Self = this.set("supportedService", js.undefined)
-    
-    @scala.inline
-    def setTtl(value: Double): Self = this.set("ttl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTtl: Self = this.set("ttl", js.undefined)
+    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

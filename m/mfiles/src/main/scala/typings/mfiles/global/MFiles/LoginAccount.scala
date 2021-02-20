@@ -1,14 +1,12 @@
 package typings.mfiles.global.MFiles
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.mfiles.ILoginAccount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.LoginAccount")
 @js.native
 class LoginAccount () extends ILoginAccount
-@JSGlobal("MFiles.LoginAccount")
-@js.native
-object LoginAccount extends Instantiable0[ILoginAccount]

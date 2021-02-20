@@ -1,5 +1,6 @@
 package typings.googleapis.speechV1Mod.speechV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A speech recognition result corresponding to a portion of the audio.
   */
 @js.native
-trait SchemaSpeechRecognitionResult extends js.Object {
+trait SchemaSpeechRecognitionResult extends StObject {
   
   /**
     * Output only. May contain one or more recognition hypotheses (up to the
@@ -35,33 +36,21 @@ object SchemaSpeechRecognitionResult {
   }
   
   @scala.inline
-  implicit class SchemaSpeechRecognitionResultOps[Self <: SchemaSpeechRecognitionResult] (val x: Self) extends AnyVal {
+  implicit class SchemaSpeechRecognitionResultMutableBuilder[Self <: SchemaSpeechRecognitionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternatives(value: js.Array[SchemaSpeechRecognitionAlternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternativesVarargs(value: SchemaSpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
     
     @scala.inline
-    def setAlternativesVarargs(value: SchemaSpeechRecognitionAlternative*): Self = this.set("alternatives", js.Array(value :_*))
+    def setChannelTag(value: Double): Self = StObject.set(x, "channelTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternatives(value: js.Array[SchemaSpeechRecognitionAlternative]): Self = this.set("alternatives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlternatives: Self = this.set("alternatives", js.undefined)
-    
-    @scala.inline
-    def setChannelTag(value: Double): Self = this.set("channelTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelTag: Self = this.set("channelTag", js.undefined)
+    def setChannelTagUndefined: Self = StObject.set(x, "channelTag", js.undefined)
   }
 }

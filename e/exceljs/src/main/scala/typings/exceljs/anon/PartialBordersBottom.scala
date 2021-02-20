@@ -1,12 +1,13 @@
 package typings.exceljs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.Borders> */
 @js.native
-trait PartialBordersBottom extends js.Object {
+trait PartialBordersBottom extends StObject {
   
   var bottom: js.UndefOr[PartialBorderColor] = js.native
   
@@ -27,48 +28,36 @@ object PartialBordersBottom {
   }
   
   @scala.inline
-  implicit class PartialBordersBottomOps[Self <: PartialBordersBottom] (val x: Self) extends AnyVal {
+  implicit class PartialBordersBottomMutableBuilder[Self <: PartialBordersBottom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottom(value: PartialBorderColor): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiagonal(value: PartialBorderDiagonalColor): Self = StObject.set(x, "diagonal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: PartialBorderColor): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setDiagonalUndefined: Self = StObject.set(x, "diagonal", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setLeft(value: PartialBorderColor): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagonal(value: PartialBorderDiagonalColor): Self = this.set("diagonal", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteDiagonal: Self = this.set("diagonal", js.undefined)
+    def setRight(value: PartialBorderColor): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: PartialBorderColor): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setTop(value: PartialBorderColor): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: PartialBorderColor): Self = this.set("right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
-    
-    @scala.inline
-    def setTop(value: PartialBorderColor): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

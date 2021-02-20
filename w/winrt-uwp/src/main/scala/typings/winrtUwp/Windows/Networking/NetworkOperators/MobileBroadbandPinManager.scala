@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the PIN manager for a given mobile broadband modem and SIM Card. */
 @js.native
-trait MobileBroadbandPinManager extends js.Object {
+trait MobileBroadbandPinManager extends StObject {
   
   /**
     * Gets the mobile broadband PIN of a specific PIN type.
@@ -31,24 +32,12 @@ object MobileBroadbandPinManager {
   }
   
   @scala.inline
-  implicit class MobileBroadbandPinManagerOps[Self <: MobileBroadbandPinManager] (val x: Self) extends AnyVal {
+  implicit class MobileBroadbandPinManagerMutableBuilder[Self <: MobileBroadbandPinManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPin(value: MobileBroadbandPinType => MobileBroadbandPin): Self = StObject.set(x, "getPin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetPin(value: MobileBroadbandPinType => MobileBroadbandPin): Self = this.set("getPin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSupportedPins(value: IVectorView[MobileBroadbandPinType]): Self = this.set("supportedPins", value.asInstanceOf[js.Any])
+    def setSupportedPins(value: IVectorView[MobileBroadbandPinType]): Self = StObject.set(x, "supportedPins", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,249 +119,237 @@ object Device {
   }
   
   @scala.inline
-  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "accountEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountEnabledNull: Self = StObject.set(x, "accountEnabled", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountEnabledUndefined: Self = StObject.set(x, "accountEnabled", js.undefined)
     
     @scala.inline
-    def setAccountEnabled(value: NullableOption[Boolean]): Self = this.set("accountEnabled", value.asInstanceOf[js.Any])
+    def setAlternativeSecurityIds(value: js.Array[AlternativeSecurityId]): Self = StObject.set(x, "alternativeSecurityIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountEnabled: Self = this.set("accountEnabled", js.undefined)
+    def setAlternativeSecurityIdsUndefined: Self = StObject.set(x, "alternativeSecurityIds", js.undefined)
     
     @scala.inline
-    def setAccountEnabledNull: Self = this.set("accountEnabled", null)
+    def setAlternativeSecurityIdsVarargs(value: AlternativeSecurityId*): Self = StObject.set(x, "alternativeSecurityIds", js.Array(value :_*))
     
     @scala.inline
-    def setAlternativeSecurityIdsVarargs(value: AlternativeSecurityId*): Self = this.set("alternativeSecurityIds", js.Array(value :_*))
+    def setApproximateLastSignInDateTime(value: NullableOption[String]): Self = StObject.set(x, "approximateLastSignInDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeSecurityIds(value: js.Array[AlternativeSecurityId]): Self = this.set("alternativeSecurityIds", value.asInstanceOf[js.Any])
+    def setApproximateLastSignInDateTimeNull: Self = StObject.set(x, "approximateLastSignInDateTime", null)
     
     @scala.inline
-    def deleteAlternativeSecurityIds: Self = this.set("alternativeSecurityIds", js.undefined)
+    def setApproximateLastSignInDateTimeUndefined: Self = StObject.set(x, "approximateLastSignInDateTime", js.undefined)
     
     @scala.inline
-    def setApproximateLastSignInDateTime(value: NullableOption[String]): Self = this.set("approximateLastSignInDateTime", value.asInstanceOf[js.Any])
+    def setComplianceExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "complianceExpirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApproximateLastSignInDateTime: Self = this.set("approximateLastSignInDateTime", js.undefined)
+    def setComplianceExpirationDateTimeNull: Self = StObject.set(x, "complianceExpirationDateTime", null)
     
     @scala.inline
-    def setApproximateLastSignInDateTimeNull: Self = this.set("approximateLastSignInDateTime", null)
+    def setComplianceExpirationDateTimeUndefined: Self = StObject.set(x, "complianceExpirationDateTime", js.undefined)
     
     @scala.inline
-    def setComplianceExpirationDateTime(value: NullableOption[String]): Self = this.set("complianceExpirationDateTime", value.asInstanceOf[js.Any])
+    def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComplianceExpirationDateTime: Self = this.set("complianceExpirationDateTime", js.undefined)
+    def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
     
     @scala.inline
-    def setComplianceExpirationDateTimeNull: Self = this.set("complianceExpirationDateTime", null)
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def setDeviceId(value: NullableOption[String]): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setDeviceMetadata(value: NullableOption[String]): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setDeviceMetadataNull: Self = StObject.set(x, "deviceMetadata", null)
     
     @scala.inline
-    def setDeviceIdNull: Self = this.set("deviceId", null)
+    def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
     
     @scala.inline
-    def setDeviceMetadata(value: NullableOption[String]): Self = this.set("deviceMetadata", value.asInstanceOf[js.Any])
+    def setDeviceVersion(value: NullableOption[Double]): Self = StObject.set(x, "deviceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceMetadata: Self = this.set("deviceMetadata", js.undefined)
+    def setDeviceVersionNull: Self = StObject.set(x, "deviceVersion", null)
     
     @scala.inline
-    def setDeviceMetadataNull: Self = this.set("deviceMetadata", null)
+    def setDeviceVersionUndefined: Self = StObject.set(x, "deviceVersion", js.undefined)
     
     @scala.inline
-    def setDeviceVersion(value: NullableOption[Double]): Self = this.set("deviceVersion", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceVersion: Self = this.set("deviceVersion", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setDeviceVersionNull: Self = this.set("deviceVersion", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setExtensionsNull: Self = StObject.set(x, "extensions", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = this.set("extensions", js.Array(value :_*))
+    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setIsCompliant(value: NullableOption[Boolean]): Self = StObject.set(x, "isCompliant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setIsCompliantNull: Self = StObject.set(x, "isCompliant", null)
     
     @scala.inline
-    def setExtensionsNull: Self = this.set("extensions", null)
+    def setIsCompliantUndefined: Self = StObject.set(x, "isCompliant", js.undefined)
     
     @scala.inline
-    def setIsCompliant(value: NullableOption[Boolean]): Self = this.set("isCompliant", value.asInstanceOf[js.Any])
+    def setIsManaged(value: NullableOption[Boolean]): Self = StObject.set(x, "isManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsCompliant: Self = this.set("isCompliant", js.undefined)
+    def setIsManagedNull: Self = StObject.set(x, "isManaged", null)
     
     @scala.inline
-    def setIsCompliantNull: Self = this.set("isCompliant", null)
+    def setIsManagedUndefined: Self = StObject.set(x, "isManaged", js.undefined)
     
     @scala.inline
-    def setIsManaged(value: NullableOption[Boolean]): Self = this.set("isManaged", value.asInstanceOf[js.Any])
+    def setMdmAppId(value: NullableOption[String]): Self = StObject.set(x, "mdmAppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsManaged: Self = this.set("isManaged", js.undefined)
+    def setMdmAppIdNull: Self = StObject.set(x, "mdmAppId", null)
     
     @scala.inline
-    def setIsManagedNull: Self = this.set("isManaged", null)
+    def setMdmAppIdUndefined: Self = StObject.set(x, "mdmAppId", js.undefined)
     
     @scala.inline
-    def setMdmAppId(value: NullableOption[String]): Self = this.set("mdmAppId", value.asInstanceOf[js.Any])
+    def setMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMdmAppId: Self = this.set("mdmAppId", js.undefined)
+    def setMemberOfNull: Self = StObject.set(x, "memberOf", null)
     
     @scala.inline
-    def setMdmAppIdNull: Self = this.set("mdmAppId", null)
+    def setMemberOfUndefined: Self = StObject.set(x, "memberOf", js.undefined)
     
     @scala.inline
-    def setMemberOfVarargs(value: DirectoryObject*): Self = this.set("memberOf", js.Array(value :_*))
+    def setMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "memberOf", js.Array(value :_*))
     
     @scala.inline
-    def setMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("memberOf", value.asInstanceOf[js.Any])
+    def setOnPremisesLastSyncDateTime(value: NullableOption[String]): Self = StObject.set(x, "onPremisesLastSyncDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemberOf: Self = this.set("memberOf", js.undefined)
+    def setOnPremisesLastSyncDateTimeNull: Self = StObject.set(x, "onPremisesLastSyncDateTime", null)
     
     @scala.inline
-    def setMemberOfNull: Self = this.set("memberOf", null)
+    def setOnPremisesLastSyncDateTimeUndefined: Self = StObject.set(x, "onPremisesLastSyncDateTime", js.undefined)
     
     @scala.inline
-    def setOnPremisesLastSyncDateTime(value: NullableOption[String]): Self = this.set("onPremisesLastSyncDateTime", value.asInstanceOf[js.Any])
+    def setOnPremisesSyncEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "onPremisesSyncEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPremisesLastSyncDateTime: Self = this.set("onPremisesLastSyncDateTime", js.undefined)
+    def setOnPremisesSyncEnabledNull: Self = StObject.set(x, "onPremisesSyncEnabled", null)
     
     @scala.inline
-    def setOnPremisesLastSyncDateTimeNull: Self = this.set("onPremisesLastSyncDateTime", null)
+    def setOnPremisesSyncEnabledUndefined: Self = StObject.set(x, "onPremisesSyncEnabled", js.undefined)
     
     @scala.inline
-    def setOnPremisesSyncEnabled(value: NullableOption[Boolean]): Self = this.set("onPremisesSyncEnabled", value.asInstanceOf[js.Any])
+    def setOperatingSystem(value: NullableOption[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPremisesSyncEnabled: Self = this.set("onPremisesSyncEnabled", js.undefined)
+    def setOperatingSystemNull: Self = StObject.set(x, "operatingSystem", null)
     
     @scala.inline
-    def setOnPremisesSyncEnabledNull: Self = this.set("onPremisesSyncEnabled", null)
+    def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
     
     @scala.inline
-    def setOperatingSystem(value: NullableOption[String]): Self = this.set("operatingSystem", value.asInstanceOf[js.Any])
+    def setOperatingSystemVersion(value: NullableOption[String]): Self = StObject.set(x, "operatingSystemVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperatingSystem: Self = this.set("operatingSystem", js.undefined)
+    def setOperatingSystemVersionNull: Self = StObject.set(x, "operatingSystemVersion", null)
     
     @scala.inline
-    def setOperatingSystemNull: Self = this.set("operatingSystem", null)
+    def setOperatingSystemVersionUndefined: Self = StObject.set(x, "operatingSystemVersion", js.undefined)
     
     @scala.inline
-    def setOperatingSystemVersion(value: NullableOption[String]): Self = this.set("operatingSystemVersion", value.asInstanceOf[js.Any])
+    def setPhysicalIds(value: js.Array[String]): Self = StObject.set(x, "physicalIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperatingSystemVersion: Self = this.set("operatingSystemVersion", js.undefined)
+    def setPhysicalIdsUndefined: Self = StObject.set(x, "physicalIds", js.undefined)
     
     @scala.inline
-    def setOperatingSystemVersionNull: Self = this.set("operatingSystemVersion", null)
+    def setPhysicalIdsVarargs(value: String*): Self = StObject.set(x, "physicalIds", js.Array(value :_*))
     
     @scala.inline
-    def setPhysicalIdsVarargs(value: String*): Self = this.set("physicalIds", js.Array(value :_*))
+    def setProfileType(value: NullableOption[String]): Self = StObject.set(x, "profileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalIds(value: js.Array[String]): Self = this.set("physicalIds", value.asInstanceOf[js.Any])
+    def setProfileTypeNull: Self = StObject.set(x, "profileType", null)
     
     @scala.inline
-    def deletePhysicalIds: Self = this.set("physicalIds", js.undefined)
+    def setProfileTypeUndefined: Self = StObject.set(x, "profileType", js.undefined)
     
     @scala.inline
-    def setProfileType(value: NullableOption[String]): Self = this.set("profileType", value.asInstanceOf[js.Any])
+    def setRegisteredOwners(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "registeredOwners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfileType: Self = this.set("profileType", js.undefined)
+    def setRegisteredOwnersNull: Self = StObject.set(x, "registeredOwners", null)
     
     @scala.inline
-    def setProfileTypeNull: Self = this.set("profileType", null)
+    def setRegisteredOwnersUndefined: Self = StObject.set(x, "registeredOwners", js.undefined)
     
     @scala.inline
-    def setRegisteredOwnersVarargs(value: DirectoryObject*): Self = this.set("registeredOwners", js.Array(value :_*))
+    def setRegisteredOwnersVarargs(value: DirectoryObject*): Self = StObject.set(x, "registeredOwners", js.Array(value :_*))
     
     @scala.inline
-    def setRegisteredOwners(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("registeredOwners", value.asInstanceOf[js.Any])
+    def setRegisteredUsers(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "registeredUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegisteredOwners: Self = this.set("registeredOwners", js.undefined)
+    def setRegisteredUsersNull: Self = StObject.set(x, "registeredUsers", null)
     
     @scala.inline
-    def setRegisteredOwnersNull: Self = this.set("registeredOwners", null)
+    def setRegisteredUsersUndefined: Self = StObject.set(x, "registeredUsers", js.undefined)
     
     @scala.inline
-    def setRegisteredUsersVarargs(value: DirectoryObject*): Self = this.set("registeredUsers", js.Array(value :_*))
+    def setRegisteredUsersVarargs(value: DirectoryObject*): Self = StObject.set(x, "registeredUsers", js.Array(value :_*))
     
     @scala.inline
-    def setRegisteredUsers(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("registeredUsers", value.asInstanceOf[js.Any])
+    def setSystemLabels(value: js.Array[String]): Self = StObject.set(x, "systemLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegisteredUsers: Self = this.set("registeredUsers", js.undefined)
+    def setSystemLabelsUndefined: Self = StObject.set(x, "systemLabels", js.undefined)
     
     @scala.inline
-    def setRegisteredUsersNull: Self = this.set("registeredUsers", null)
+    def setSystemLabelsVarargs(value: String*): Self = StObject.set(x, "systemLabels", js.Array(value :_*))
     
     @scala.inline
-    def setSystemLabelsVarargs(value: String*): Self = this.set("systemLabels", js.Array(value :_*))
+    def setTransitiveMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "transitiveMemberOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemLabels(value: js.Array[String]): Self = this.set("systemLabels", value.asInstanceOf[js.Any])
+    def setTransitiveMemberOfNull: Self = StObject.set(x, "transitiveMemberOf", null)
     
     @scala.inline
-    def deleteSystemLabels: Self = this.set("systemLabels", js.undefined)
+    def setTransitiveMemberOfUndefined: Self = StObject.set(x, "transitiveMemberOf", js.undefined)
     
     @scala.inline
-    def setTransitiveMemberOfVarargs(value: DirectoryObject*): Self = this.set("transitiveMemberOf", js.Array(value :_*))
+    def setTransitiveMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMemberOf", js.Array(value :_*))
     
     @scala.inline
-    def setTransitiveMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("transitiveMemberOf", value.asInstanceOf[js.Any])
+    def setTrustType(value: NullableOption[String]): Self = StObject.set(x, "trustType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitiveMemberOf: Self = this.set("transitiveMemberOf", js.undefined)
+    def setTrustTypeNull: Self = StObject.set(x, "trustType", null)
     
     @scala.inline
-    def setTransitiveMemberOfNull: Self = this.set("transitiveMemberOf", null)
-    
-    @scala.inline
-    def setTrustType(value: NullableOption[String]): Self = this.set("trustType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustType: Self = this.set("trustType", js.undefined)
-    
-    @scala.inline
-    def setTrustTypeNull: Self = this.set("trustType", null)
+    def setTrustTypeUndefined: Self = StObject.set(x, "trustType", js.undefined)
   }
 }

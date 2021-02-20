@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGotoLocationOptions extends js.Object {
+trait IGotoLocationOptions extends StObject {
   
   var alternativeDeclarationCommand: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object IGotoLocationOptions {
   }
   
   @scala.inline
-  implicit class IGotoLocationOptionsOps[Self <: IGotoLocationOptions] (val x: Self) extends AnyVal {
+  implicit class IGotoLocationOptionsMutableBuilder[Self <: IGotoLocationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternativeDeclarationCommand(value: String): Self = StObject.set(x, "alternativeDeclarationCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativeDeclarationCommandUndefined: Self = StObject.set(x, "alternativeDeclarationCommand", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternativeDefinitionCommand(value: String): Self = StObject.set(x, "alternativeDefinitionCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeDeclarationCommand(value: String): Self = this.set("alternativeDeclarationCommand", value.asInstanceOf[js.Any])
+    def setAlternativeDefinitionCommandUndefined: Self = StObject.set(x, "alternativeDefinitionCommand", js.undefined)
     
     @scala.inline
-    def deleteAlternativeDeclarationCommand: Self = this.set("alternativeDeclarationCommand", js.undefined)
+    def setAlternativeImplementationCommand(value: String): Self = StObject.set(x, "alternativeImplementationCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeDefinitionCommand(value: String): Self = this.set("alternativeDefinitionCommand", value.asInstanceOf[js.Any])
+    def setAlternativeImplementationCommandUndefined: Self = StObject.set(x, "alternativeImplementationCommand", js.undefined)
     
     @scala.inline
-    def deleteAlternativeDefinitionCommand: Self = this.set("alternativeDefinitionCommand", js.undefined)
+    def setAlternativeReferenceCommand(value: String): Self = StObject.set(x, "alternativeReferenceCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeImplementationCommand(value: String): Self = this.set("alternativeImplementationCommand", value.asInstanceOf[js.Any])
+    def setAlternativeReferenceCommandUndefined: Self = StObject.set(x, "alternativeReferenceCommand", js.undefined)
     
     @scala.inline
-    def deleteAlternativeImplementationCommand: Self = this.set("alternativeImplementationCommand", js.undefined)
+    def setAlternativeTypeDefinitionCommand(value: String): Self = StObject.set(x, "alternativeTypeDefinitionCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeReferenceCommand(value: String): Self = this.set("alternativeReferenceCommand", value.asInstanceOf[js.Any])
+    def setAlternativeTypeDefinitionCommandUndefined: Self = StObject.set(x, "alternativeTypeDefinitionCommand", js.undefined)
     
     @scala.inline
-    def deleteAlternativeReferenceCommand: Self = this.set("alternativeReferenceCommand", js.undefined)
+    def setMultiple(value: GoToLocationValues): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeTypeDefinitionCommand(value: String): Self = this.set("alternativeTypeDefinitionCommand", value.asInstanceOf[js.Any])
+    def setMultipleDeclarations(value: GoToLocationValues): Self = StObject.set(x, "multipleDeclarations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlternativeTypeDefinitionCommand: Self = this.set("alternativeTypeDefinitionCommand", js.undefined)
+    def setMultipleDeclarationsUndefined: Self = StObject.set(x, "multipleDeclarations", js.undefined)
     
     @scala.inline
-    def setMultiple(value: GoToLocationValues): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setMultipleDefinitions(value: GoToLocationValues): Self = StObject.set(x, "multipleDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setMultipleDefinitionsUndefined: Self = StObject.set(x, "multipleDefinitions", js.undefined)
     
     @scala.inline
-    def setMultipleDeclarations(value: GoToLocationValues): Self = this.set("multipleDeclarations", value.asInstanceOf[js.Any])
+    def setMultipleImplementations(value: GoToLocationValues): Self = StObject.set(x, "multipleImplementations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultipleDeclarations: Self = this.set("multipleDeclarations", js.undefined)
+    def setMultipleImplementationsUndefined: Self = StObject.set(x, "multipleImplementations", js.undefined)
     
     @scala.inline
-    def setMultipleDefinitions(value: GoToLocationValues): Self = this.set("multipleDefinitions", value.asInstanceOf[js.Any])
+    def setMultipleReferences(value: GoToLocationValues): Self = StObject.set(x, "multipleReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultipleDefinitions: Self = this.set("multipleDefinitions", js.undefined)
+    def setMultipleReferencesUndefined: Self = StObject.set(x, "multipleReferences", js.undefined)
     
     @scala.inline
-    def setMultipleImplementations(value: GoToLocationValues): Self = this.set("multipleImplementations", value.asInstanceOf[js.Any])
+    def setMultipleTypeDefinitions(value: GoToLocationValues): Self = StObject.set(x, "multipleTypeDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultipleImplementations: Self = this.set("multipleImplementations", js.undefined)
+    def setMultipleTypeDefinitionsUndefined: Self = StObject.set(x, "multipleTypeDefinitions", js.undefined)
     
     @scala.inline
-    def setMultipleReferences(value: GoToLocationValues): Self = this.set("multipleReferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultipleReferences: Self = this.set("multipleReferences", js.undefined)
-    
-    @scala.inline
-    def setMultipleTypeDefinitions(value: GoToLocationValues): Self = this.set("multipleTypeDefinitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultipleTypeDefinitions: Self = this.set("multipleTypeDefinitions", js.undefined)
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdjustmentType extends js.Object {
+trait AdjustmentType extends StObject {
   
   /**
     * The policy adjustment type. The valid values are ChangeInCapacity, ExactCapacity, and PercentChangeInCapacity.
@@ -21,24 +22,12 @@ object AdjustmentType {
   }
   
   @scala.inline
-  implicit class AdjustmentTypeOps[Self <: AdjustmentType] (val x: Self) extends AnyVal {
+  implicit class AdjustmentTypeMutableBuilder[Self <: AdjustmentType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustmentType(value: XmlStringMaxLen255): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAdjustmentType(value: XmlStringMaxLen255): Self = this.set("AdjustmentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdjustmentType: Self = this.set("AdjustmentType", js.undefined)
+    def setAdjustmentTypeUndefined: Self = StObject.set(x, "AdjustmentType", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.extjs.Ext.util
 
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,78 +63,66 @@ object IFloating {
   }
   
   @scala.inline
-  implicit class IFloatingOps[Self <: IFloating] (val x: Self) extends AnyVal {
+  implicit class IFloatingMutableBuilder[Self <: IFloating] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: () => IComponent): Self = StObject.set(x, "center", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: () => IComponent): Self = this.set("center", js.Any.fromFunction0(value))
+    def setConstrainUndefined: Self = StObject.set(x, "constrain", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setDoConstrain(value: /* constrainTo */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "doConstrain", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConstrain(value: Boolean): Self = this.set("constrain", value.asInstanceOf[js.Any])
+    def setDoConstrainUndefined: Self = StObject.set(x, "doConstrain", js.undefined)
     
     @scala.inline
-    def deleteConstrain: Self = this.set("constrain", js.undefined)
+    def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoConstrain(value: /* constrainTo */ js.UndefOr[js.Any] => Unit): Self = this.set("doConstrain", js.Any.fromFunction1(value))
+    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
     @scala.inline
-    def deleteDoConstrain: Self = this.set("doConstrain", js.undefined)
+    def setFocusOnToFront(value: Boolean): Self = StObject.set(x, "focusOnToFront", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixed(value: Boolean): Self = this.set("fixed", value.asInstanceOf[js.Any])
+    def setFocusOnToFrontUndefined: Self = StObject.set(x, "focusOnToFront", js.undefined)
     
     @scala.inline
-    def deleteFixed: Self = this.set("fixed", js.undefined)
+    def setSetActive(value: (/* active */ js.UndefOr[Boolean], /* newActive */ js.UndefOr[IComponent]) => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFocusOnToFront(value: Boolean): Self = this.set("focusOnToFront", value.asInstanceOf[js.Any])
+    def setSetActiveUndefined: Self = StObject.set(x, "setActive", js.undefined)
     
     @scala.inline
-    def deleteFocusOnToFront: Self = this.set("focusOnToFront", js.undefined)
+    def setShadow(value: js.Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetActive(value: (/* active */ js.UndefOr[Boolean], /* newActive */ js.UndefOr[IComponent]) => Unit): Self = this.set("setActive", js.Any.fromFunction2(value))
+    def setShadowOffset(value: Double): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetActive: Self = this.set("setActive", js.undefined)
+    def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
     
     @scala.inline
-    def setShadow(value: js.Any): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setToBack(value: () => IComponent): Self = StObject.set(x, "toBack", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShadowOffset(value: Double): Self = this.set("shadowOffset", value.asInstanceOf[js.Any])
+    def setToBackUndefined: Self = StObject.set(x, "toBack", js.undefined)
     
     @scala.inline
-    def deleteShadowOffset: Self = this.set("shadowOffset", js.undefined)
+    def setToFront(value: /* preventFocus */ js.UndefOr[Boolean] => IComponent): Self = StObject.set(x, "toFront", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToBack(value: () => IComponent): Self = this.set("toBack", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteToBack: Self = this.set("toBack", js.undefined)
-    
-    @scala.inline
-    def setToFront(value: /* preventFocus */ js.UndefOr[Boolean] => IComponent): Self = this.set("toFront", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteToFront: Self = this.set("toFront", js.undefined)
+    def setToFrontUndefined: Self = StObject.set(x, "toFront", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryExecution extends js.Object {
+trait QueryExecution extends StObject {
   
   /**
     * The SQL query statements which the query execution ran.
@@ -56,66 +57,54 @@ object QueryExecution {
   }
   
   @scala.inline
-  implicit class QueryExecutionOps[Self <: QueryExecution] (val x: Self) extends AnyVal {
+  implicit class QueryExecutionMutableBuilder[Self <: QueryExecution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuery(value: QueryString): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryExecutionContext(value: QueryExecutionContext): Self = StObject.set(x, "QueryExecutionContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryExecutionContextUndefined: Self = StObject.set(x, "QueryExecutionContext", js.undefined)
     
     @scala.inline
-    def setQuery(value: QueryString): Self = this.set("Query", value.asInstanceOf[js.Any])
+    def setQueryExecutionId(value: QueryExecutionId): Self = StObject.set(x, "QueryExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuery: Self = this.set("Query", js.undefined)
+    def setQueryExecutionIdUndefined: Self = StObject.set(x, "QueryExecutionId", js.undefined)
     
     @scala.inline
-    def setQueryExecutionContext(value: QueryExecutionContext): Self = this.set("QueryExecutionContext", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "Query", js.undefined)
     
     @scala.inline
-    def deleteQueryExecutionContext: Self = this.set("QueryExecutionContext", js.undefined)
+    def setResultConfiguration(value: ResultConfiguration): Self = StObject.set(x, "ResultConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryExecutionId(value: QueryExecutionId): Self = this.set("QueryExecutionId", value.asInstanceOf[js.Any])
+    def setResultConfigurationUndefined: Self = StObject.set(x, "ResultConfiguration", js.undefined)
     
     @scala.inline
-    def deleteQueryExecutionId: Self = this.set("QueryExecutionId", js.undefined)
+    def setStatementType(value: StatementType): Self = StObject.set(x, "StatementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultConfiguration(value: ResultConfiguration): Self = this.set("ResultConfiguration", value.asInstanceOf[js.Any])
+    def setStatementTypeUndefined: Self = StObject.set(x, "StatementType", js.undefined)
     
     @scala.inline
-    def deleteResultConfiguration: Self = this.set("ResultConfiguration", js.undefined)
+    def setStatistics(value: QueryExecutionStatistics): Self = StObject.set(x, "Statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatementType(value: StatementType): Self = this.set("StatementType", value.asInstanceOf[js.Any])
+    def setStatisticsUndefined: Self = StObject.set(x, "Statistics", js.undefined)
     
     @scala.inline
-    def deleteStatementType: Self = this.set("StatementType", js.undefined)
+    def setStatus(value: QueryExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistics(value: QueryExecutionStatistics): Self = this.set("Statistics", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatistics: Self = this.set("Statistics", js.undefined)
+    def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: QueryExecutionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setWorkGroup(value: WorkGroupName): Self = this.set("WorkGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkGroup: Self = this.set("WorkGroup", js.undefined)
+    def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
   }
 }

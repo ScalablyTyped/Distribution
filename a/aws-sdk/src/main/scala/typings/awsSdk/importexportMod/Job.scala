@@ -1,11 +1,12 @@
 package typings.awsSdk.importexportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Job extends js.Object {
+trait Job extends StObject {
   
   var CreationDate: js.UndefOr[typings.awsSdk.importexportMod.CreationDate] = js.native
   
@@ -24,42 +25,30 @@ object Job {
   }
   
   @scala.inline
-  implicit class JobOps[Self <: Job] (val x: Self) extends AnyVal {
+  implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsCanceled(value: IsCanceled): Self = StObject.set(x, "IsCanceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: CreationDate): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setIsCanceledUndefined: Self = StObject.set(x, "IsCanceled", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCanceled(value: IsCanceled): Self = this.set("IsCanceled", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
     @scala.inline
-    def deleteIsCanceled: Self = this.set("IsCanceled", js.undefined)
+    def setJobType(value: JobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobId: Self = this.set("JobId", js.undefined)
-    
-    @scala.inline
-    def setJobType(value: JobType): Self = this.set("JobType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobType: Self = this.set("JobType", js.undefined)
+    def setJobTypeUndefined: Self = StObject.set(x, "JobType", js.undefined)
   }
 }

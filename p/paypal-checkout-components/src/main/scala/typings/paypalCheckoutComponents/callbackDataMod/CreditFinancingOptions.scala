@@ -1,11 +1,12 @@
 package typings.paypalCheckoutComponents.callbackDataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreditFinancingOptions extends js.Object {
+trait CreditFinancingOptions extends StObject {
   
   /**
     * Indicates whether the cart amount is editable after payer's acceptance on PayPal side.
@@ -53,36 +54,24 @@ object CreditFinancingOptions {
   }
   
   @scala.inline
-  implicit class CreditFinancingOptionsOps[Self <: CreditFinancingOptions] (val x: Self) extends AnyVal {
+  implicit class CreditFinancingOptionsMutableBuilder[Self <: CreditFinancingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCartAmountImmutable(value: Boolean): Self = StObject.set(x, "cartAmountImmutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMonthlyPayment(value: CurrencyAmount): Self = StObject.set(x, "monthlyPayment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayerAcceptance(value: Boolean): Self = StObject.set(x, "payerAcceptance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCartAmountImmutable(value: Boolean): Self = this.set("cartAmountImmutable", value.asInstanceOf[js.Any])
+    def setTerm(value: Double): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthlyPayment(value: CurrencyAmount): Self = this.set("monthlyPayment", value.asInstanceOf[js.Any])
+    def setTotalCost(value: CurrencyAmount): Self = StObject.set(x, "totalCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayerAcceptance(value: Boolean): Self = this.set("payerAcceptance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTerm(value: Double): Self = this.set("term", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalCost(value: CurrencyAmount): Self = this.set("totalCost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalInterest(value: CurrencyAmount): Self = this.set("totalInterest", value.asInstanceOf[js.Any])
+    def setTotalInterest(value: CurrencyAmount): Self = StObject.set(x, "totalInterest", value.asInstanceOf[js.Any])
   }
 }

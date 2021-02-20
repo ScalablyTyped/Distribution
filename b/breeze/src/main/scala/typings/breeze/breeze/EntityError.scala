@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityError extends js.Object {
+trait EntityError extends StObject {
   
   var entity: Entity = js.native
   
@@ -32,33 +33,21 @@ object EntityError {
   }
   
   @scala.inline
-  implicit class EntityErrorOps[Self <: EntityError] (val x: Self) extends AnyVal {
+  implicit class EntityErrorMutableBuilder[Self <: EntityError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorName(value: String): Self = StObject.set(x, "errorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: Entity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setIsServerError(value: Boolean): Self = StObject.set(x, "isServerError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorName(value: String): Self = this.set("errorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsServerError(value: Boolean): Self = this.set("isServerError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyName(value: String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
+    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

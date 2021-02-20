@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminalLinkProvider[T /* <: TerminalLink */] extends js.Object {
+trait TerminalLinkProvider[T /* <: TerminalLink */] extends StObject {
   
   /**
     * Handle an activated terminal link.
@@ -35,24 +36,12 @@ object TerminalLinkProvider {
   }
   
   @scala.inline
-  implicit class TerminalLinkProviderOps[Self <: TerminalLinkProvider[_], T /* <: TerminalLink */] (val x: Self with TerminalLinkProvider[T]) extends AnyVal {
+  implicit class TerminalLinkProviderMutableBuilder[Self <: TerminalLinkProvider[_], T /* <: TerminalLink */] (val x: Self with TerminalLinkProvider[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandleTerminalLink(value: T => ProviderResult[Unit]): Self = StObject.set(x, "handleTerminalLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHandleTerminalLink(value: T => ProviderResult[Unit]): Self = this.set("handleTerminalLink", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setProvideTerminalLinks(value: (TerminalLinkContext, CancellationToken) => ProviderResult[js.Array[T]]): Self = this.set("provideTerminalLinks", js.Any.fromFunction2(value))
+    def setProvideTerminalLinks(value: (TerminalLinkContext, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideTerminalLinks", js.Any.fromFunction2(value))
   }
 }

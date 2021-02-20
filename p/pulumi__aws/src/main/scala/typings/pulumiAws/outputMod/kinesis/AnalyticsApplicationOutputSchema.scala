@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsApplicationOutputSchema extends js.Object {
+trait AnalyticsApplicationOutputSchema extends StObject {
   
   /**
     * The Format Type of the records on the output stream. Can be `CSV` or `JSON`.
@@ -21,24 +22,12 @@ object AnalyticsApplicationOutputSchema {
   }
   
   @scala.inline
-  implicit class AnalyticsApplicationOutputSchemaOps[Self <: AnalyticsApplicationOutputSchema] (val x: Self) extends AnyVal {
+  implicit class AnalyticsApplicationOutputSchemaMutableBuilder[Self <: AnalyticsApplicationOutputSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecordFormatType(value: String): Self = StObject.set(x, "recordFormatType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecordFormatType(value: String): Self = this.set("recordFormatType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordFormatType: Self = this.set("recordFormatType", js.undefined)
+    def setRecordFormatTypeUndefined: Self = StObject.set(x, "recordFormatType", js.undefined)
   }
 }

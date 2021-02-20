@@ -4,16 +4,16 @@ import typings.typeorm.entityManagerEntityManagerMod.EntityManager
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import typings.typeorm.repositoryRepositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/repository/RepositoryFactory", JSImport.Namespace)
-@js.native
-object repositoryRepositoryFactoryMod extends js.Object {
+object repositoryRepositoryFactoryMod {
   
+  @JSImport("typeorm/repository/RepositoryFactory", "RepositoryFactory")
   @js.native
-  class RepositoryFactory () extends js.Object {
+  class RepositoryFactory () extends StObject {
     
     /**
       * Creates a repository.

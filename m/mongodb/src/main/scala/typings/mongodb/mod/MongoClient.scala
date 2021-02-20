@@ -3,6 +3,7 @@ package typings.mongodb.mod
 import typings.mongodb.anon.ChangeStreamOptionssessio
 import typings.mongodb.anon.DbName
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,13 +60,19 @@ class MongoClient protected () extends EventEmitter {
   var writeConcern: WriteConcern = js.native
 }
 /* static members */
-@JSImport("mongodb", "MongoClient")
-@js.native
-object MongoClient extends js.Object {
+object MongoClient {
   
+  @JSImport("mongodb", "MongoClient.connect")
+  @js.native
   def connect(uri: String): js.Promise[MongoClient] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#.connect */
+  @JSImport("mongodb", "MongoClient.connect")
+  @js.native
   def connect(uri: String, callback: MongoCallback[MongoClient]): Unit = js.native
+  @JSImport("mongodb", "MongoClient.connect")
+  @js.native
   def connect(uri: String, options: MongoClientOptions): js.Promise[MongoClient] = js.native
+  @JSImport("mongodb", "MongoClient.connect")
+  @js.native
   def connect(uri: String, options: MongoClientOptions, callback: MongoCallback[MongoClient]): Unit = js.native
 }

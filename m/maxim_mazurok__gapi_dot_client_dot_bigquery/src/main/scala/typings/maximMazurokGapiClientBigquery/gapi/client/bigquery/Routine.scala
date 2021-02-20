@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Routine extends js.Object {
+trait Routine extends StObject {
   
   /** Optional. */
   var arguments: js.UndefOr[js.Array[Argument]] = js.native
@@ -64,96 +65,84 @@ object Routine {
   }
   
   @scala.inline
-  implicit class RoutineOps[Self <: Routine] (val x: Self) extends AnyVal {
+  implicit class RoutineMutableBuilder[Self <: Routine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
     @scala.inline
-    def setArgumentsVarargs(value: Argument*): Self = this.set("arguments", js.Array(value :_*))
+    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: js.Array[Argument]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def deleteArguments: Self = this.set("arguments", js.undefined)
+    def setDefinitionBody(value: String): Self = StObject.set(x, "definitionBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setDefinitionBodyUndefined: Self = StObject.set(x, "definitionBody", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionBody(value: String): Self = this.set("definitionBody", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefinitionBody: Self = this.set("definitionBody", js.undefined)
+    def setDeterminismLevel(value: String): Self = StObject.set(x, "determinismLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDeterminismLevelUndefined: Self = StObject.set(x, "determinismLevel", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeterminismLevel(value: String): Self = this.set("determinismLevel", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDeterminismLevel: Self = this.set("determinismLevel", js.undefined)
+    def setImportedLibraries(value: js.Array[String]): Self = StObject.set(x, "importedLibraries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setImportedLibrariesUndefined: Self = StObject.set(x, "importedLibraries", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setImportedLibrariesVarargs(value: String*): Self = StObject.set(x, "importedLibraries", js.Array(value :_*))
     
     @scala.inline
-    def setImportedLibrariesVarargs(value: String*): Self = this.set("importedLibraries", js.Array(value :_*))
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportedLibraries(value: js.Array[String]): Self = this.set("importedLibraries", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteImportedLibraries: Self = this.set("importedLibraries", js.undefined)
+    def setLastModifiedTime(value: String): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setReturnType(value: StandardSqlDataType): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: String): Self = this.set("lastModifiedTime", value.asInstanceOf[js.Any])
+    def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedTime: Self = this.set("lastModifiedTime", js.undefined)
+    def setRoutineReference(value: RoutineReference): Self = StObject.set(x, "routineReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnType(value: StandardSqlDataType): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setRoutineReferenceUndefined: Self = StObject.set(x, "routineReference", js.undefined)
     
     @scala.inline
-    def deleteReturnType: Self = this.set("returnType", js.undefined)
+    def setRoutineType(value: String): Self = StObject.set(x, "routineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutineReference(value: RoutineReference): Self = this.set("routineReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutineReference: Self = this.set("routineReference", js.undefined)
-    
-    @scala.inline
-    def setRoutineType(value: String): Self = this.set("routineType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutineType: Self = this.set("routineType", js.undefined)
+    def setRoutineTypeUndefined: Self = StObject.set(x, "routineType", js.undefined)
   }
 }

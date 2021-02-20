@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.drop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointDropEventObject extends js.Object {
+trait PointDropEventObject extends StObject {
   
   /**
     * New point after drag if only a single one.
@@ -65,48 +66,36 @@ object PointDropEventObject {
   }
   
   @scala.inline
-  implicit class PointDropEventObjectOps[Self <: PointDropEventObject] (val x: Self) extends AnyVal {
+  implicit class PointDropEventObjectMutableBuilder[Self <: PointDropEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewPoint(value: PointDragDropObject): Self = StObject.set(x, "newPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewPointId(value: String): Self = StObject.set(x, "newPointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewPointIdUndefined: Self = StObject.set(x, "newPointId", js.undefined)
     
     @scala.inline
-    def setNewPoints(value: Dictionary[PointDragDropObject]): Self = this.set("newPoints", value.asInstanceOf[js.Any])
+    def setNewPointUndefined: Self = StObject.set(x, "newPoint", js.undefined)
     
     @scala.inline
-    def setNumNewPoints(value: Double): Self = this.set("numNewPoints", value.asInstanceOf[js.Any])
+    def setNewPoints(value: Dictionary[PointDragDropObject]): Self = StObject.set(x, "newPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: DragDropPositionObject): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setNumNewPoints(value: Double): Self = StObject.set(x, "numNewPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventDefault(value: js.Function): Self = this.set("preventDefault", value.asInstanceOf[js.Any])
+    def setOrigin(value: DragDropPositionObject): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Point): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: drop): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTarget(value: Point): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPoint(value: PointDragDropObject): Self = this.set("newPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewPoint: Self = this.set("newPoint", js.undefined)
-    
-    @scala.inline
-    def setNewPointId(value: String): Self = this.set("newPointId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewPointId: Self = this.set("newPointId", js.undefined)
+    def setType(value: drop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

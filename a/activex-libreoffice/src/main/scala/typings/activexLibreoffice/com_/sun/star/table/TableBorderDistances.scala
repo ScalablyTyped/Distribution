@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.table
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In a structure which is used for setting, these flags determine if the corresponding distance should be set or if the old value should be kept.
   */
 @js.native
-trait TableBorderDistances extends js.Object {
+trait TableBorderDistances extends StObject {
   
   /** contains the distance between the bottom lines and other contents. */
   var BottomDistance: Double = js.native
@@ -56,42 +57,30 @@ object TableBorderDistances {
   }
   
   @scala.inline
-  implicit class TableBorderDistancesOps[Self <: TableBorderDistances] (val x: Self) extends AnyVal {
+  implicit class TableBorderDistancesMutableBuilder[Self <: TableBorderDistances] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomDistance(value: Double): Self = StObject.set(x, "BottomDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsBottomDistanceValid(value: Boolean): Self = StObject.set(x, "IsBottomDistanceValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLeftDistanceValid(value: Boolean): Self = StObject.set(x, "IsLeftDistanceValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomDistance(value: Double): Self = this.set("BottomDistance", value.asInstanceOf[js.Any])
+    def setIsRightDistanceValid(value: Boolean): Self = StObject.set(x, "IsRightDistanceValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBottomDistanceValid(value: Boolean): Self = this.set("IsBottomDistanceValid", value.asInstanceOf[js.Any])
+    def setIsTopDistanceValid(value: Boolean): Self = StObject.set(x, "IsTopDistanceValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLeftDistanceValid(value: Boolean): Self = this.set("IsLeftDistanceValid", value.asInstanceOf[js.Any])
+    def setLeftDistance(value: Double): Self = StObject.set(x, "LeftDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRightDistanceValid(value: Boolean): Self = this.set("IsRightDistanceValid", value.asInstanceOf[js.Any])
+    def setRightDistance(value: Double): Self = StObject.set(x, "RightDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTopDistanceValid(value: Boolean): Self = this.set("IsTopDistanceValid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeftDistance(value: Double): Self = this.set("LeftDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightDistance(value: Double): Self = this.set("RightDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopDistance(value: Double): Self = this.set("TopDistance", value.asInstanceOf[js.Any])
+    def setTopDistance(value: Double): Self = StObject.set(x, "TopDistance", value.asInstanceOf[js.Any])
   }
 }

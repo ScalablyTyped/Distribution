@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Browser.typesHeadBucketInputMod.HeadBucketInput
 import typings.awsSdkClientS3Browser.typesHeadBucketOutputMod.HeadBucketOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/HeadBucketCommand", JSImport.Namespace)
-@js.native
-object headBucketCommandMod extends js.Object {
+object headBucketCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/HeadBucketCommand", "HeadBucketCommand")
   @js.native
   class HeadBucketCommand protected () extends Command[
           InputTypesUnion, 

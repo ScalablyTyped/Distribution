@@ -3,16 +3,16 @@ package typings.agGrid
 import typings.agGrid.componentMod.Component
 import typings.agGrid.gridPanelMod.GridPanel
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/headerRendering/headerContainer", JSImport.Namespace)
-@js.native
-object headerContainerMod extends js.Object {
+object headerContainerMod {
   
+  @JSImport("ag-grid/dist/lib/headerRendering/headerContainer", "HeaderContainer")
   @js.native
-  class HeaderContainer protected () extends js.Object {
+  class HeaderContainer protected () extends StObject {
     def this(eContainer: HTMLElement, eViewport: HTMLElement, pinned: String) = this()
     
     @JSName("$scope")

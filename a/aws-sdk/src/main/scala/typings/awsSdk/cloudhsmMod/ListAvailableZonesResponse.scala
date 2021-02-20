@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAvailableZonesResponse extends js.Object {
+trait ListAvailableZonesResponse extends StObject {
   
   /**
     * The list of Availability Zones that have available AWS CloudHSM capacity.
@@ -21,27 +22,15 @@ object ListAvailableZonesResponse {
   }
   
   @scala.inline
-  implicit class ListAvailableZonesResponseOps[Self <: ListAvailableZonesResponse] (val x: Self) extends AnyVal {
+  implicit class ListAvailableZonesResponseMutableBuilder[Self <: ListAvailableZonesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAZList(value: AZList): Self = StObject.set(x, "AZList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAZListUndefined: Self = StObject.set(x, "AZList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAZListVarargs(value: AZ*): Self = this.set("AZList", js.Array(value :_*))
-    
-    @scala.inline
-    def setAZList(value: AZList): Self = this.set("AZList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAZList: Self = this.set("AZList", js.undefined)
+    def setAZListVarargs(value: AZ*): Self = StObject.set(x, "AZList", js.Array(value :_*))
   }
 }

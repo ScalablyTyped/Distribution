@@ -1,16 +1,16 @@
 package typings.three
 
 import typings.three.vector2Mod.Vector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/extras/core/Curve", JSImport.Namespace)
-@js.native
-object curveMod extends js.Object {
+object curveMod {
   
+  @JSImport("three/src/extras/core/Curve", "Curve")
   @js.native
-  class Curve[T /* <: Vector */] () extends js.Object {
+  class Curve[T /* <: Vector */] () extends StObject {
     
     /**
     	 * This value determines the amount of divisions when calculating the cumulative segment lengths of a curve via .getLengths.
@@ -94,12 +94,13 @@ object curveMod extends js.Object {
     def updateArcLengths(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Curve extends js.Object {
+  object Curve {
     
     /**
     	 * @deprecated since r84.
     	 */
+    @JSImport("three/src/extras/core/Curve", "Curve.create")
+    @js.native
     def create(constructorFunc: js.Function, getPointFunc: js.Function): js.Function = js.native
   }
 }

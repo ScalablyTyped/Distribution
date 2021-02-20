@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BenchmarkIndex extends js.Object {
+trait BenchmarkIndex extends StObject {
   
   var benchmarkIndex: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object BenchmarkIndex {
   }
   
   @scala.inline
-  implicit class BenchmarkIndexOps[Self <: BenchmarkIndex] (val x: Self) extends AnyVal {
+  implicit class BenchmarkIndexMutableBuilder[Self <: BenchmarkIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBenchmarkIndex(value: Double): Self = StObject.set(x, "benchmarkIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBenchmarkIndexUndefined: Self = StObject.set(x, "benchmarkIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostUserAgent(value: String): Self = StObject.set(x, "hostUserAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBenchmarkIndex(value: Double): Self = this.set("benchmarkIndex", value.asInstanceOf[js.Any])
+    def setHostUserAgentUndefined: Self = StObject.set(x, "hostUserAgent", js.undefined)
     
     @scala.inline
-    def deleteBenchmarkIndex: Self = this.set("benchmarkIndex", js.undefined)
+    def setNetworkUserAgent(value: String): Self = StObject.set(x, "networkUserAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostUserAgent(value: String): Self = this.set("hostUserAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostUserAgent: Self = this.set("hostUserAgent", js.undefined)
-    
-    @scala.inline
-    def setNetworkUserAgent(value: String): Self = this.set("networkUserAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkUserAgent: Self = this.set("networkUserAgent", js.undefined)
+    def setNetworkUserAgentUndefined: Self = StObject.set(x, "networkUserAgent", js.undefined)
   }
 }

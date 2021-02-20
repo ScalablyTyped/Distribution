@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cognito
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolSmsConfiguration extends js.Object {
+trait UserPoolSmsConfiguration extends StObject {
   
   /**
     * The external ID used in IAM role trust relationships. For more information about using external IDs, see [How to Use an External ID When Granting Access to Your AWS Resources to a Third Party](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html).
@@ -27,24 +28,12 @@ object UserPoolSmsConfiguration {
   }
   
   @scala.inline
-  implicit class UserPoolSmsConfigurationOps[Self <: UserPoolSmsConfiguration] (val x: Self) extends AnyVal {
+  implicit class UserPoolSmsConfigurationMutableBuilder[Self <: UserPoolSmsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalId(value: Input[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExternalId(value: Input[String]): Self = this.set("externalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnsCallerArn(value: Input[String]): Self = this.set("snsCallerArn", value.asInstanceOf[js.Any])
+    def setSnsCallerArn(value: Input[String]): Self = StObject.set(x, "snsCallerArn", value.asInstanceOf[js.Any])
   }
 }

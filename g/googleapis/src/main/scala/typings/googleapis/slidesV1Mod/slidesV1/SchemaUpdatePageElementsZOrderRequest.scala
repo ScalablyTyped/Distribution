@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * cover the elements that are behind it.
   */
 @js.native
-trait SchemaUpdatePageElementsZOrderRequest extends js.Object {
+trait SchemaUpdatePageElementsZOrderRequest extends StObject {
   
   /**
     * The Z-order operation to apply on the page elements.  When applying the
@@ -34,33 +35,21 @@ object SchemaUpdatePageElementsZOrderRequest {
   }
   
   @scala.inline
-  implicit class SchemaUpdatePageElementsZOrderRequestOps[Self <: SchemaUpdatePageElementsZOrderRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaUpdatePageElementsZOrderRequestMutableBuilder[Self <: SchemaUpdatePageElementsZOrderRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageElementObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageElementObjectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setPageElementObjectIdsUndefined: Self = StObject.set(x, "pageElementObjectIds", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
-    
-    @scala.inline
-    def setPageElementObjectIdsVarargs(value: String*): Self = this.set("pageElementObjectIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setPageElementObjectIds(value: js.Array[String]): Self = this.set("pageElementObjectIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageElementObjectIds: Self = this.set("pageElementObjectIds", js.undefined)
+    def setPageElementObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageElementObjectIds", js.Array(value :_*))
   }
 }

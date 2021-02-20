@@ -1,5 +1,6 @@
 package typings.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D
 */
-trait SortIndicatorType extends js.Object
+trait SortIndicatorType extends StObject
 object SortIndicatorType {
   
   @scala.inline

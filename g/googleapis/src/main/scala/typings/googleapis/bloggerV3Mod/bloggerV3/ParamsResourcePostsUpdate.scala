@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,72 +70,60 @@ object ParamsResourcePostsUpdate {
   }
   
   @scala.inline
-  implicit class ParamsResourcePostsUpdateOps[Self <: ParamsResourcePostsUpdate] (val x: Self) extends AnyVal {
+  implicit class ParamsResourcePostsUpdateMutableBuilder[Self <: ParamsResourcePostsUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setFetchBody(value: Boolean): Self = StObject.set(x, "fetchBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlogId(value: String): Self = this.set("blogId", value.asInstanceOf[js.Any])
+    def setFetchBodyUndefined: Self = StObject.set(x, "fetchBody", js.undefined)
     
     @scala.inline
-    def deleteBlogId: Self = this.set("blogId", js.undefined)
+    def setFetchImages(value: Boolean): Self = StObject.set(x, "fetchImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchBody(value: Boolean): Self = this.set("fetchBody", value.asInstanceOf[js.Any])
+    def setFetchImagesUndefined: Self = StObject.set(x, "fetchImages", js.undefined)
     
     @scala.inline
-    def deleteFetchBody: Self = this.set("fetchBody", js.undefined)
+    def setMaxComments(value: Double): Self = StObject.set(x, "maxComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchImages(value: Boolean): Self = this.set("fetchImages", value.asInstanceOf[js.Any])
+    def setMaxCommentsUndefined: Self = StObject.set(x, "maxComments", js.undefined)
     
     @scala.inline
-    def deleteFetchImages: Self = this.set("fetchImages", js.undefined)
+    def setPostId(value: String): Self = StObject.set(x, "postId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxComments(value: Double): Self = this.set("maxComments", value.asInstanceOf[js.Any])
+    def setPostIdUndefined: Self = StObject.set(x, "postId", js.undefined)
     
     @scala.inline
-    def deleteMaxComments: Self = this.set("maxComments", js.undefined)
+    def setPublish(value: Boolean): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostId(value: String): Self = this.set("postId", value.asInstanceOf[js.Any])
+    def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
     
     @scala.inline
-    def deletePostId: Self = this.set("postId", js.undefined)
+    def setRequestBody(value: SchemaPost): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublish(value: Boolean): Self = this.set("publish", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deletePublish: Self = this.set("publish", js.undefined)
+    def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaPost): Self = this.set("requestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
-    
-    @scala.inline
-    def setRevert(value: Boolean): Self = this.set("revert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevert: Self = this.set("revert", js.undefined)
+    def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
   }
 }

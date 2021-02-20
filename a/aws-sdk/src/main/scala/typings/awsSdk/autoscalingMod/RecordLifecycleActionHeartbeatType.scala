@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordLifecycleActionHeartbeatType extends js.Object {
+trait RecordLifecycleActionHeartbeatType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
@@ -36,36 +37,24 @@ object RecordLifecycleActionHeartbeatType {
   }
   
   @scala.inline
-  implicit class RecordLifecycleActionHeartbeatTypeOps[Self <: RecordLifecycleActionHeartbeatType] (val x: Self) extends AnyVal {
+  implicit class RecordLifecycleActionHeartbeatTypeMutableBuilder[Self <: RecordLifecycleActionHeartbeatType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceId(value: XmlStringMaxLen19): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    def setLifecycleActionToken(value: LifecycleActionToken): Self = StObject.set(x, "LifecycleActionToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycleHookName(value: AsciiStringMaxLen255): Self = this.set("LifecycleHookName", value.asInstanceOf[js.Any])
+    def setLifecycleActionTokenUndefined: Self = StObject.set(x, "LifecycleActionToken", js.undefined)
     
     @scala.inline
-    def setInstanceId(value: XmlStringMaxLen19): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
-    
-    @scala.inline
-    def setLifecycleActionToken(value: LifecycleActionToken): Self = this.set("LifecycleActionToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLifecycleActionToken: Self = this.set("LifecycleActionToken", js.undefined)
+    def setLifecycleHookName(value: AsciiStringMaxLen255): Self = StObject.set(x, "LifecycleHookName", value.asInstanceOf[js.Any])
   }
 }

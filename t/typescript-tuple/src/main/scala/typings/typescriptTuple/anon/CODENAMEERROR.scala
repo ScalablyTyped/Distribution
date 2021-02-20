@@ -2,12 +2,13 @@ package typings.typescriptTuple.anon
 
 import typings.typescriptTuple.typescriptTupleStrings.InfiniteTupleSet
 import typings.typescriptTuple.typescriptTupleStrings.`TupleSet is not finite`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CODENAMEERROR extends js.Object {
+trait CODENAMEERROR extends StObject {
   
   var CODENAME: InfiniteTupleSet with typings.typescriptTuple.typescriptTupleStrings.Infinite = js.native
   
@@ -25,24 +26,12 @@ object CODENAMEERROR {
   }
   
   @scala.inline
-  implicit class CODENAMEERROROps[Self <: CODENAMEERROR] (val x: Self) extends AnyVal {
+  implicit class CODENAMEERRORMutableBuilder[Self <: CODENAMEERROR] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCODENAME(value: InfiniteTupleSet with typings.typescriptTuple.typescriptTupleStrings.Infinite): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCODENAME(value: InfiniteTupleSet with typings.typescriptTuple.typescriptTupleStrings.Infinite): Self = this.set("CODENAME", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setERROR(value: `TupleSet is not finite`): Self = this.set("ERROR", value.asInstanceOf[js.Any])
+    def setERROR(value: `TupleSet is not finite`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
   }
 }

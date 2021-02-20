@@ -1,11 +1,12 @@
 package typings.jqueryColor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HslaColor extends js.Object {
+trait HslaColor extends StObject {
   
   var alpha: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object HslaColor {
   }
   
   @scala.inline
-  implicit class HslaColorOps[Self <: HslaColor] (val x: Self) extends AnyVal {
+  implicit class HslaColorMutableBuilder[Self <: HslaColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setLightness(value: Double): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHue(value: Double): Self = this.set("hue", value.asInstanceOf[js.Any])
+    def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
     
     @scala.inline
-    def deleteHue: Self = this.set("hue", js.undefined)
+    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightness(value: Double): Self = this.set("lightness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLightness: Self = this.set("lightness", js.undefined)
-    
-    @scala.inline
-    def setSaturation(value: Double): Self = this.set("saturation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaturation: Self = this.set("saturation", js.undefined)
+    def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.cote.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,51 +41,39 @@ object StatusAdvertisement {
   }
   
   @scala.inline
-  implicit class StatusAdvertisementOps[Self <: StatusAdvertisement] (val x: Self) extends AnyVal {
+  implicit class StatusAdvertisementMutableBuilder[Self <: StatusAdvertisement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadcasts(value: js.Array[String]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadcastsUndefined: Self = StObject.set(x, "broadcasts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
     
     @scala.inline
-    def setBroadcastsVarargs(value: String*): Self = this.set("broadcasts", js.Array(value :_*))
+    def setRespondsTo(value: js.Array[String]): Self = StObject.set(x, "respondsTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcasts(value: js.Array[String]): Self = this.set("broadcasts", value.asInstanceOf[js.Any])
+    def setRespondsToUndefined: Self = StObject.set(x, "respondsTo", js.undefined)
     
     @scala.inline
-    def deleteBroadcasts: Self = this.set("broadcasts", js.undefined)
+    def setRespondsToVarargs(value: String*): Self = StObject.set(x, "respondsTo", js.Array(value :_*))
     
     @scala.inline
-    def setRespondsToVarargs(value: String*): Self = this.set("respondsTo", js.Array(value :_*))
+    def setSubscribesTo(value: js.Array[String]): Self = StObject.set(x, "subscribesTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRespondsTo(value: js.Array[String]): Self = this.set("respondsTo", value.asInstanceOf[js.Any])
+    def setSubscribesToUndefined: Self = StObject.set(x, "subscribesTo", js.undefined)
     
     @scala.inline
-    def deleteRespondsTo: Self = this.set("respondsTo", js.undefined)
+    def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value :_*))
     
     @scala.inline
-    def setSubscribesToVarargs(value: String*): Self = this.set("subscribesTo", js.Array(value :_*))
+    def setSubset(value: String): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscribesTo(value: js.Array[String]): Self = this.set("subscribesTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribesTo: Self = this.set("subscribesTo", js.undefined)
-    
-    @scala.inline
-    def setSubset(value: String): Self = this.set("subset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubset: Self = this.set("subset", js.undefined)
+    def setSubsetUndefined: Self = StObject.set(x, "subset", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDomainNameserversRequest extends js.Object {
+trait UpdateDomainNameserversRequest extends StObject {
   
   /**
     * The name of the domain that you want to change name servers for.
@@ -31,33 +32,21 @@ object UpdateDomainNameserversRequest {
   }
   
   @scala.inline
-  implicit class UpdateDomainNameserversRequestOps[Self <: UpdateDomainNameserversRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDomainNameserversRequestMutableBuilder[Self <: UpdateDomainNameserversRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFIAuthKey(value: FIAuthKey): Self = StObject.set(x, "FIAuthKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFIAuthKeyUndefined: Self = StObject.set(x, "FIAuthKey", js.undefined)
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setNameservers(value: NameserverList): Self = StObject.set(x, "Nameservers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameserversVarargs(value: Nameserver*): Self = this.set("Nameservers", js.Array(value :_*))
-    
-    @scala.inline
-    def setNameservers(value: NameserverList): Self = this.set("Nameservers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFIAuthKey(value: FIAuthKey): Self = this.set("FIAuthKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFIAuthKey: Self = this.set("FIAuthKey", js.undefined)
+    def setNameserversVarargs(value: Nameserver*): Self = StObject.set(x, "Nameservers", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.hapiHapi.mod
 
 import typings.hapiHapi.hapiHapiBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,24 +27,12 @@ object RouteOptions {
   }
   
   @scala.inline
-  implicit class RouteOptionsOps[Self <: RouteOptions] (val x: Self) extends AnyVal {
+  implicit class RouteOptionsMutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: `false` | String | RouteOptionsAccess): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuth(value: `false` | String | RouteOptionsAccess): Self = this.set("auth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

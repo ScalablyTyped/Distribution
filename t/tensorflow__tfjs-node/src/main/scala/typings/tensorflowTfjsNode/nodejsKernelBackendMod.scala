@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsNode
 
 import typings.std.Uint8Array
-import typings.tensorflowTfjsCore.backendMod.KernelBackend
+import typings.tensorflowTfjs.mod.KernelBackend
 import typings.tensorflowTfjsCore.distTensorMod.Scalar
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
@@ -25,28 +25,14 @@ import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.nearest
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.rgb
 import typings.tensorflowTfjsNode.tfjsBindingMod.TFEOpAttr
 import typings.tensorflowTfjsNode.tfjsBindingMod.TFJSBinding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", JSImport.Namespace)
-@js.native
-object nodejsKernelBackendMod extends js.Object {
+object nodejsKernelBackendMod {
   
-  def createOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]], value: ScalarLike): TFEOpAttr = js.native
-  def createOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank], value: ScalarLike): TFEOpAttr = js.native
-  def createOpAttr(attrName: String, tensorsOrDtype: DataType, value: ScalarLike): TFEOpAttr = js.native
-  
-  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]]): TFEOpAttr = js.native
-  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank]): TFEOpAttr = js.native
-  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: DataType): TFEOpAttr = js.native
-  
-  def ensureTensorflowBackend(): Unit = js.native
-  
-  def getTFDType(dataType: DataType): Double = js.native
-  
-  def nodeBackend(): NodeJSKernelBackend = js.native
-  
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "NodeJSKernelBackend")
   @js.native
   class NodeJSKernelBackend protected () extends KernelBackend {
     def this(binding: TFJSBinding, packageName: String) = this()
@@ -301,4 +287,36 @@ object nodejsKernelBackendMod extends js.Object {
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Double): Unit = js.native
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Scalar): Unit = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createOpAttr")
+  @js.native
+  def createOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]], value: ScalarLike): TFEOpAttr = js.native
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createOpAttr")
+  @js.native
+  def createOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank], value: ScalarLike): TFEOpAttr = js.native
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createOpAttr")
+  @js.native
+  def createOpAttr(attrName: String, tensorsOrDtype: DataType, value: ScalarLike): TFEOpAttr = js.native
+  
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createTensorsTypeOpAttr")
+  @js.native
+  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]]): TFEOpAttr = js.native
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createTensorsTypeOpAttr")
+  @js.native
+  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank]): TFEOpAttr = js.native
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "createTensorsTypeOpAttr")
+  @js.native
+  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: DataType): TFEOpAttr = js.native
+  
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "ensureTensorflowBackend")
+  @js.native
+  def ensureTensorflowBackend(): Unit = js.native
+  
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "getTFDType")
+  @js.native
+  def getTFDType(dataType: DataType): Double = js.native
+  
+  @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "nodeBackend")
+  @js.native
+  def nodeBackend(): NodeJSKernelBackend = js.native
 }

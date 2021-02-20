@@ -2,13 +2,12 @@ package typings.gulpSequence
 
 import typings.gulp.mod.Gulp
 import typings.gulp.mod.TaskFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gulp-sequence", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /*
   Sequence functions (apart from the one returning TaskFunction) generated using the following (requires lodash for the padding):
@@ -26,15 +25,35 @@ object mod extends js.Object {
   }
   console.log(fnBase + outDone.join(`\n${fnBase}`));
   */
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(firstTask: Step, additionalTasks: Step*): TaskFunction = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(s1: Step, done: Done): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(s1: Step, s2: Step, done: Done): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(s1: Step, s2: Step, s3: Step, done: Done): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(s1: Step, s2: Step, s3: Step, s4: Step, done: Done): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(s1: Step, s2: Step, s3: Step, s4: Step, s5: Step, done: Done): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(s1: Step, s2: Step, s3: Step, s4: Step, s5: Step, s6: Step, done: Done): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(s1: Step, s2: Step, s3: Step, s4: Step, s5: Step, s6: Step, s7: Step, done: Done): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(s1: Step, s2: Step, s3: Step, s4: Step, s5: Step, s6: Step, s7: Step, s8: Step, done: Done): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -47,6 +66,8 @@ object mod extends js.Object {
     s9: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -60,6 +81,8 @@ object mod extends js.Object {
     s10: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -74,6 +97,8 @@ object mod extends js.Object {
     s11: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -89,6 +114,8 @@ object mod extends js.Object {
     s12: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -105,6 +132,8 @@ object mod extends js.Object {
     s13: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -122,6 +151,8 @@ object mod extends js.Object {
     s14: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -140,6 +171,8 @@ object mod extends js.Object {
     s15: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -159,6 +192,8 @@ object mod extends js.Object {
     s16: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -179,6 +214,8 @@ object mod extends js.Object {
     s17: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -200,6 +237,8 @@ object mod extends js.Object {
     s18: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -222,6 +261,8 @@ object mod extends js.Object {
     s19: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -245,6 +286,8 @@ object mod extends js.Object {
     s20: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -269,6 +312,8 @@ object mod extends js.Object {
     s21: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -294,6 +339,8 @@ object mod extends js.Object {
     s22: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -320,6 +367,8 @@ object mod extends js.Object {
     s23: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -347,6 +396,8 @@ object mod extends js.Object {
     s24: Step,
     done: Done
   ): Unit = js.native
+  @JSImport("gulp-sequence", JSImport.Namespace)
+  @js.native
   def apply(
     s1: Step,
     s2: Step,
@@ -376,6 +427,8 @@ object mod extends js.Object {
     done: Done
   ): Unit = js.native
   
+  @JSImport("gulp-sequence", "use")
+  @js.native
   def use(gulp: Gulp): js.Any = js.native
   
   type Done = js.Function1[/* error */ js.UndefOr[js.Any], Unit]

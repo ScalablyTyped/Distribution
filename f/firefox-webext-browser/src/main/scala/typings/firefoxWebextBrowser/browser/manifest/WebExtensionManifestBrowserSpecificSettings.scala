@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebExtensionManifestBrowserSpecificSettings extends js.Object {
+trait WebExtensionManifestBrowserSpecificSettings extends StObject {
   
   var edge: js.UndefOr[StringDictionary[js.Any]] = js.native
   
@@ -21,30 +22,18 @@ object WebExtensionManifestBrowserSpecificSettings {
   }
   
   @scala.inline
-  implicit class WebExtensionManifestBrowserSpecificSettingsOps[Self <: WebExtensionManifestBrowserSpecificSettings] (val x: Self) extends AnyVal {
+  implicit class WebExtensionManifestBrowserSpecificSettingsMutableBuilder[Self <: WebExtensionManifestBrowserSpecificSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdge(value: StringDictionary[js.Any]): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGecko(value: FirefoxSpecificProperties): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdge(value: StringDictionary[js.Any]): Self = this.set("edge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEdge: Self = this.set("edge", js.undefined)
-    
-    @scala.inline
-    def setGecko(value: FirefoxSpecificProperties): Self = this.set("gecko", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGecko: Self = this.set("gecko", js.undefined)
+    def setGeckoUndefined: Self = StObject.set(x, "gecko", js.undefined)
   }
 }

@@ -13,14 +13,14 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.qs.mod.ParsedQs
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("matrix-appservice/lib/app-service", JSImport.Namespace)
-@js.native
-object appServiceMod extends js.Object {
+object appServiceMod {
   
+  @JSImport("matrix-appservice/lib/app-service", "AppService")
   @js.native
   class AppService protected () extends EventEmitter {
     /**

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDashboardOutput extends js.Object {
+trait GetDashboardOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dashboard.
@@ -31,36 +32,24 @@ object GetDashboardOutput {
   }
   
   @scala.inline
-  implicit class GetDashboardOutputOps[Self <: GetDashboardOutput] (val x: Self) extends AnyVal {
+  implicit class GetDashboardOutputMutableBuilder[Self <: GetDashboardOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashboardArn(value: DashboardArn): Self = StObject.set(x, "DashboardArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDashboardBody(value: DashboardBody): Self = StObject.set(x, "DashboardBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardArn(value: DashboardArn): Self = this.set("DashboardArn", value.asInstanceOf[js.Any])
+    def setDashboardBodyUndefined: Self = StObject.set(x, "DashboardBody", js.undefined)
     
     @scala.inline
-    def deleteDashboardArn: Self = this.set("DashboardArn", js.undefined)
+    def setDashboardName(value: DashboardName): Self = StObject.set(x, "DashboardName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardBody(value: DashboardBody): Self = this.set("DashboardBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDashboardBody: Self = this.set("DashboardBody", js.undefined)
-    
-    @scala.inline
-    def setDashboardName(value: DashboardName): Self = this.set("DashboardName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDashboardName: Self = this.set("DashboardName", js.undefined)
+    def setDashboardNameUndefined: Self = StObject.set(x, "DashboardName", js.undefined)
   }
 }

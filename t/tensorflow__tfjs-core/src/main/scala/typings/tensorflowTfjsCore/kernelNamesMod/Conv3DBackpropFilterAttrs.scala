@@ -2,12 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Conv3DBackpropFilterAttrs extends js.Object {
+trait Conv3DBackpropFilterAttrs extends StObject {
   
   var filterShape: js.Tuple5[Double, Double, Double, Double, Double] = js.native
   
@@ -28,27 +29,15 @@ object Conv3DBackpropFilterAttrs {
   }
   
   @scala.inline
-  implicit class Conv3DBackpropFilterAttrsOps[Self <: Conv3DBackpropFilterAttrs] (val x: Self) extends AnyVal {
+  implicit class Conv3DBackpropFilterAttrsMutableBuilder[Self <: Conv3DBackpropFilterAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "filterShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPad(value: valid_ | same_): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilterShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = this.set("filterShape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPad(value: valid_ | same_): Self = this.set("pad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = this.set("strides", value.asInstanceOf[js.Any])
+    def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

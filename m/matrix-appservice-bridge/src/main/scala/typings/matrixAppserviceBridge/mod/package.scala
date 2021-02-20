@@ -1,19 +1,18 @@
 package typings.matrixAppserviceBridge
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
-  type AppService = js.Any
-  type BridgeGetLocation = js.Any
-  type BridgeGetProtocol = js.Any
-  type BridgeGetUser = js.Any
-  type BridgeParseLocation = js.Any
-  type BridgeParseUser = js.Any
-  type BridgeThirdPartyProtocolResult = js.Any
-  type Datastore = js.Any
-  type EntryDict = org.scalablytyped.runtime.StringDictionary[js.Array[typings.matrixAppserviceBridge.mod.Entry]]
-  type RemoteRoomDict = org.scalablytyped.runtime.StringDictionary[typings.matrixAppserviceBridge.mod.RemoteRoom]
-  type RoomMemberDict = org.scalablytyped.runtime.StringDictionary[typings.matrixAppserviceBridge.anon.Avatarurl]
+  
+  @scala.inline
+  def APPSERVICE_LOGIN_TYPE: /* "uk.half-shot.msc2778.login.application_service" */ java.lang.String = typings.matrixAppserviceBridge.mod.^.asInstanceOf[js.Dynamic].selectDynamic("APPSERVICE_LOGIN_TYPE").asInstanceOf[/* "uk.half-shot.msc2778.login.application_service" */ java.lang.String]
+  
+  @scala.inline
+  def BRIDGE_PING_EVENT_TYPE: /* "org.matrix.bridge.ping" */ java.lang.String = typings.matrixAppserviceBridge.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BRIDGE_PING_EVENT_TYPE").asInstanceOf[/* "org.matrix.bridge.ping" */ java.lang.String]
+  
+  @scala.inline
+  def BRIDGE_PING_TIMEOUT_MS: /* 60000 */ scala.Double = typings.matrixAppserviceBridge.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BRIDGE_PING_TIMEOUT_MS").asInstanceOf[/* 60000 */ scala.Double]
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The page background fill.
   */
 @js.native
-trait SchemaPageBackgroundFill extends js.Object {
+trait SchemaPageBackgroundFill extends StObject {
   
   /**
     * The background fill property state.  Updating the fill on a page will
@@ -38,36 +39,24 @@ object SchemaPageBackgroundFill {
   }
   
   @scala.inline
-  implicit class SchemaPageBackgroundFillOps[Self <: SchemaPageBackgroundFill] (val x: Self) extends AnyVal {
+  implicit class SchemaPageBackgroundFillMutableBuilder[Self <: SchemaPageBackgroundFill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSolidFill(value: SchemaSolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyState(value: String): Self = this.set("propertyState", value.asInstanceOf[js.Any])
+    def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
     
     @scala.inline
-    def deletePropertyState: Self = this.set("propertyState", js.undefined)
+    def setStretchedPictureFill(value: SchemaStretchedPictureFill): Self = StObject.set(x, "stretchedPictureFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSolidFill(value: SchemaSolidFill): Self = this.set("solidFill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSolidFill: Self = this.set("solidFill", js.undefined)
-    
-    @scala.inline
-    def setStretchedPictureFill(value: SchemaStretchedPictureFill): Self = this.set("stretchedPictureFill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStretchedPictureFill: Self = this.set("stretchedPictureFill", js.undefined)
+    def setStretchedPictureFillUndefined: Self = StObject.set(x, "stretchedPictureFill", js.undefined)
   }
 }

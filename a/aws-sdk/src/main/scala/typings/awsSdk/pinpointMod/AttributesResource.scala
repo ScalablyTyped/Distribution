@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttributesResource extends js.Object {
+trait AttributesResource extends StObject {
   
   /**
     * The unique identifier for the application.
@@ -31,33 +32,21 @@ object AttributesResource {
   }
   
   @scala.inline
-  implicit class AttributesResourceOps[Self <: AttributesResource] (val x: Self) extends AnyVal {
+  implicit class AttributesResourceMutableBuilder[Self <: AttributesResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeType(value: string): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributes(value: ListOfString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def setAttributeType(value: string): Self = this.set("AttributeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttributesVarargs(value: string*): Self = this.set("Attributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttributes(value: ListOfString): Self = this.set("Attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setAttributesVarargs(value: string*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
   }
 }

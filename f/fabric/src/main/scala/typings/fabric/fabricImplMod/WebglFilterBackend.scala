@@ -4,6 +4,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.WebGLRenderingContext
 import typings.std.WebGLTexture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

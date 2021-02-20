@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuiteTestCase extends js.Object {
+trait SuiteTestCase extends StObject {
   
   var pointAssignments: js.Array[PointAssignment] = js.native
   
@@ -20,27 +21,15 @@ object SuiteTestCase {
   }
   
   @scala.inline
-  implicit class SuiteTestCaseOps[Self <: SuiteTestCase] (val x: Self) extends AnyVal {
+  implicit class SuiteTestCaseMutableBuilder[Self <: SuiteTestCase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPointAssignments(value: js.Array[PointAssignment]): Self = StObject.set(x, "pointAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPointAssignmentsVarargs(value: PointAssignment*): Self = StObject.set(x, "pointAssignments", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPointAssignmentsVarargs(value: PointAssignment*): Self = this.set("pointAssignments", js.Array(value :_*))
-    
-    @scala.inline
-    def setPointAssignments(value: js.Array[PointAssignment]): Self = this.set("pointAssignments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestCase(value: WorkItemReference): Self = this.set("testCase", value.asInstanceOf[js.Any])
+    def setTestCase(value: WorkItemReference): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
   }
 }

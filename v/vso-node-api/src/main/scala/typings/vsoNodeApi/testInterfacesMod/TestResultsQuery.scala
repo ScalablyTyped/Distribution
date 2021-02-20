@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestResultsQuery extends js.Object {
+trait TestResultsQuery extends StObject {
   
   var fields: js.Array[String] = js.native
   
@@ -22,33 +23,21 @@ object TestResultsQuery {
   }
   
   @scala.inline
-  implicit class TestResultsQueryOps[Self <: TestResultsQuery] (val x: Self) extends AnyVal {
+  implicit class TestResultsQueryMutableBuilder[Self <: TestResultsQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[TestCaseResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setResultsFilter(value: ResultsFilter): Self = StObject.set(x, "resultsFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsVarargs(value: TestCaseResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[TestCaseResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsFilter(value: ResultsFilter): Self = this.set("resultsFilter", value.asInstanceOf[js.Any])
+    def setResultsVarargs(value: TestCaseResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

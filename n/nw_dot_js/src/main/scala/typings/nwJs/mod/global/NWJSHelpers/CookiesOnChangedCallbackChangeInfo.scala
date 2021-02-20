@@ -5,6 +5,7 @@ import typings.nwJs.nwJsStrings.expired
 import typings.nwJs.nwJsStrings.expired_overwrite
 import typings.nwJs.nwJsStrings.explicit
 import typings.nwJs.nwJsStrings.overwrite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Coockies.onChanged.addListener() callback details argument object
   */
 @js.native
-trait CookiesOnChangedCallbackChangeInfo extends js.Object {
+trait CookiesOnChangedCallbackChangeInfo extends StObject {
   
   /**
     * The underlying reason behind the cookie's change.
@@ -43,27 +44,15 @@ object CookiesOnChangedCallbackChangeInfo {
   }
   
   @scala.inline
-  implicit class CookiesOnChangedCallbackChangeInfoOps[Self <: CookiesOnChangedCallbackChangeInfo] (val x: Self) extends AnyVal {
+  implicit class CookiesOnChangedCallbackChangeInfoMutableBuilder[Self <: CookiesOnChangedCallbackChangeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCause(value: String | evicted | expired | explicit | expired_overwrite | overwrite): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCookie(value: Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCause(value: String | evicted | expired | explicit | expired_overwrite | overwrite): Self = this.set("cause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCookie(value: Cookie): Self = this.set("cookie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoved(value: Boolean): Self = this.set("removed", value.asInstanceOf[js.Any])
+    def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
   }
 }

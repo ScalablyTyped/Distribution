@@ -3,17 +3,16 @@ package typings.expressSession
 import typings.expressSession.mod.Cookie
 import typings.expressSession.mod.SessionData
 import typings.expressSession.mod.global.Express.Request
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   /* Inlined express-session.express-session.Session & std.Partial<express-session.express-session.SessionData> */
   @js.native
-  trait SessionPartialSessionData extends js.Object {
+  trait SessionPartialSessionData extends StObject {
     
     /**
       * Each session has a unique cookie object accompany it.

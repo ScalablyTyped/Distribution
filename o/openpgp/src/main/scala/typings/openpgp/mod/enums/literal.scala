@@ -1,18 +1,18 @@
 package typings.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait literal extends js.Object
+sealed trait literal extends StObject
 /**
   * Data types in the literal packet
   */
 @JSImport("openpgp", "enums.literal")
 @js.native
-object literal extends js.Object {
+object literal extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[literal with String] = js.native
@@ -22,30 +22,26 @@ object literal extends js.Object {
     */
   @js.native
   sealed trait binary extends literal
-  /* "" */ @js.native
-  object binary extends TopLevel[binary with String]
+  /* "" */ val binary: typings.openpgp.mod.enums.literal.binary with String = js.native
   
   /**
     * MIME message body part 'm'
     */
   @js.native
   sealed trait mime extends literal
-  /* "" */ @js.native
-  object mime extends TopLevel[mime with String]
+  /* "" */ val mime: typings.openpgp.mod.enums.literal.mime with String = js.native
   
   /**
     * Text data 't'
     */
   @js.native
   sealed trait text extends literal
-  /* "" */ @js.native
-  object text extends TopLevel[text with String]
+  /* "" */ val text: typings.openpgp.mod.enums.literal.text with String = js.native
   
   /**
     * Utf8 data 'u'
     */
   @js.native
   sealed trait utf8 extends literal
-  /* "" */ @js.native
-  object utf8 extends TopLevel[utf8 with String]
+  /* "" */ val utf8: typings.openpgp.mod.enums.literal.utf8 with String = js.native
 }

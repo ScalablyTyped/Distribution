@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.InsertFirst
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITimerOptions[T] extends js.Object {
+trait ITimerOptions[T] extends StObject {
   
   /**
     * An optional break condition that will stop the times prematurely. In this case onEnded will not be triggered!
@@ -54,54 +55,42 @@ object ITimerOptions {
   }
   
   @scala.inline
-  implicit class ITimerOptionsOps[Self <: ITimerOptions[_], T] (val x: Self with ITimerOptions[T]) extends AnyVal {
+  implicit class ITimerOptionsMutableBuilder[Self <: ITimerOptions[_], T] (val x: Self with ITimerOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakCondition(value: /* data */ js.UndefOr[ITimerData[T]] => Boolean): Self = StObject.set(x, "breakCondition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreakConditionUndefined: Self = StObject.set(x, "breakCondition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextObservable(value: Observable[T]): Self = StObject.set(x, "contextObservable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextObservable(value: Observable[T]): Self = this.set("contextObservable", value.asInstanceOf[js.Any])
+    def setObservableParameters(value: InsertFirst): Self = StObject.set(x, "observableParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setObservableParametersUndefined: Self = StObject.set(x, "observableParameters", js.undefined)
     
     @scala.inline
-    def setBreakCondition(value: /* data */ js.UndefOr[ITimerData[T]] => Boolean): Self = this.set("breakCondition", js.Any.fromFunction1(value))
+    def setOnAborted(value: /* data */ ITimerData[_] => Unit): Self = StObject.set(x, "onAborted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBreakCondition: Self = this.set("breakCondition", js.undefined)
+    def setOnAbortedUndefined: Self = StObject.set(x, "onAborted", js.undefined)
     
     @scala.inline
-    def setObservableParameters(value: InsertFirst): Self = this.set("observableParameters", value.asInstanceOf[js.Any])
+    def setOnEnded(value: /* data */ ITimerData[_] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteObservableParameters: Self = this.set("observableParameters", js.undefined)
+    def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
     @scala.inline
-    def setOnAborted(value: /* data */ ITimerData[_] => Unit): Self = this.set("onAborted", js.Any.fromFunction1(value))
+    def setOnTick(value: /* data */ ITimerData[_] => Unit): Self = StObject.set(x, "onTick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnAborted: Self = this.set("onAborted", js.undefined)
+    def setOnTickUndefined: Self = StObject.set(x, "onTick", js.undefined)
     
     @scala.inline
-    def setOnEnded(value: /* data */ ITimerData[_] => Unit): Self = this.set("onEnded", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
-    
-    @scala.inline
-    def setOnTick(value: /* data */ ITimerData[_] => Unit): Self = this.set("onTick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnTick: Self = this.set("onTick", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

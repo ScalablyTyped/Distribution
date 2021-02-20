@@ -1,12 +1,13 @@
 package typings.inboxsdk.mod.Conversations
 
 import typings.inboxsdk.inboxsdkStrings.destroy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachmentCardView extends js.Object {
+trait AttachmentCardView extends StObject {
   
   def addButton(buttonDescriptor: CustomButtonDescriptor): Unit = js.native
   
@@ -43,39 +44,27 @@ object AttachmentCardView {
   }
   
   @scala.inline
-  implicit class AttachmentCardViewOps[Self <: AttachmentCardView] (val x: Self) extends AnyVal {
+  implicit class AttachmentCardViewMutableBuilder[Self <: AttachmentCardView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddButton(value: CustomButtonDescriptor => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAttachmentType(value: () => String): Self = StObject.set(x, "getAttachmentType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddButton(value: CustomButtonDescriptor => Unit): Self = this.set("addButton", js.Any.fromFunction1(value))
+    def setGetDownloadURL(value: () => js.Promise[String]): Self = StObject.set(x, "getDownloadURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroyed(value: Boolean): Self = this.set("destroyed", value.asInstanceOf[js.Any])
+    def setGetMessageView(value: () => MessageView | Null): Self = StObject.set(x, "getMessageView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAttachmentType(value: () => String): Self = this.set("getAttachmentType", js.Any.fromFunction0(value))
+    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDownloadURL(value: () => js.Promise[String]): Self = this.set("getDownloadURL", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMessageView(value: () => MessageView | Null): Self = this.set("getMessageView", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
+    def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

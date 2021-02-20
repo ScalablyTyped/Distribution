@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,30 +116,18 @@ object SyntaxRewriter {
   }
   
   @scala.inline
-  implicit class SyntaxRewriterOps[Self <: SyntaxRewriter] (val x: Self) extends AnyVal {
+  implicit class SyntaxRewriterMutableBuilder[Self <: SyntaxRewriter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVisitList(value: ISyntaxList => ISyntaxList): Self = StObject.set(x, "visitList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVisitNode(value: SyntaxNode => SyntaxNode): Self = StObject.set(x, "visitNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVisitNodeOrToken(value: ISyntaxNodeOrToken => ISyntaxNodeOrToken): Self = StObject.set(x, "visitNodeOrToken", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitList(value: ISyntaxList => ISyntaxList): Self = this.set("visitList", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVisitNode(value: SyntaxNode => SyntaxNode): Self = this.set("visitNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVisitNodeOrToken(value: ISyntaxNodeOrToken => ISyntaxNodeOrToken): Self = this.set("visitNodeOrToken", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVisitSeparatedList(value: ISeparatedSyntaxList => ISeparatedSyntaxList): Self = this.set("visitSeparatedList", js.Any.fromFunction1(value))
+    def setVisitSeparatedList(value: ISeparatedSyntaxList => ISeparatedSyntaxList): Self = StObject.set(x, "visitSeparatedList", js.Any.fromFunction1(value))
   }
 }

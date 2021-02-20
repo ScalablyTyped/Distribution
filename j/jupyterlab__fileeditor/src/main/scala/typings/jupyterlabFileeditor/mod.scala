@@ -2,16 +2,14 @@ package typings.jupyterlabFileeditor
 
 import typings.jupyterlabFileeditor.widgetMod.FileEditor.IOptions
 import typings.luminoCoreutils.mod.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/fileeditor", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val IEditorTracker: Token[typings.jupyterlabFileeditor.tokensMod.IEditorTracker] = js.native
-  
+  @JSImport("@jupyterlab/fileeditor", "FileEditor")
   @js.native
   class FileEditor protected ()
     extends typings.jupyterlabFileeditor.widgetMod.FileEditor {
@@ -21,6 +19,7 @@ object mod extends js.Object {
     def this(options: IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/fileeditor", "FileEditorCodeWrapper")
   @js.native
   class FileEditorCodeWrapper protected ()
     extends typings.jupyterlabFileeditor.widgetMod.FileEditorCodeWrapper {
@@ -30,6 +29,7 @@ object mod extends js.Object {
     def this(options: IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/fileeditor", "FileEditorFactory")
   @js.native
   class FileEditorFactory protected ()
     extends typings.jupyterlabFileeditor.widgetMod.FileEditorFactory {
@@ -39,12 +39,11 @@ object mod extends js.Object {
     def this(options: typings.jupyterlabFileeditor.widgetMod.FileEditorFactory.IOptions) = this()
   }
   
-  /**
-    * A namespace for TabSpaceComponent statics.
-    */
+  @JSImport("@jupyterlab/fileeditor", "IEditorTracker")
   @js.native
-  object TabSpaceComponent extends js.Object
+  val IEditorTracker: Token[typings.jupyterlabFileeditor.tokensMod.IEditorTracker] = js.native
   
+  @JSImport("@jupyterlab/fileeditor", "TabSpaceStatus")
   @js.native
   class TabSpaceStatus protected ()
     extends typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus {
@@ -53,14 +52,19 @@ object mod extends js.Object {
       */
     def this(options: typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus.IOptions) = this()
   }
-  @js.native
-  object TabSpaceStatus extends js.Object {
+  object TabSpaceStatus {
     
     /**
       * A VDomModel for the TabSpace status item.
       */
+    @JSImport("@jupyterlab/fileeditor", "TabSpaceStatus.Model")
     @js.native
     class Model ()
       extends typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus.Model
   }
+  
+  /**
+    * A namespace for TabSpaceComponent statics.
+    */
+  object TabSpaceComponent
 }

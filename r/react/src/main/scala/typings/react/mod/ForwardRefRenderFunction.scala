@@ -1,11 +1,12 @@
 package typings.react.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForwardRefRenderFunction[T, P] extends js.Object {
+trait ForwardRefRenderFunction[T, P] extends StObject {
   
   def apply(props: PropsWithChildren[P], ref: ForwardedRef[T]): ReactElement | Null = js.native
   

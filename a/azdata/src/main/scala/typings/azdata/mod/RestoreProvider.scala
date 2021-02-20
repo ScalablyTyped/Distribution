@@ -1,6 +1,7 @@
 package typings.azdata.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object RestoreProvider {
   }
   
   @scala.inline
-  implicit class RestoreProviderOps[Self <: RestoreProvider] (val x: Self) extends AnyVal {
+  implicit class RestoreProviderMutableBuilder[Self <: RestoreProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelRestorePlan(value: (String, RestoreInfo) => Thenable[Boolean]): Self = StObject.set(x, "cancelRestorePlan", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRestoreConfigInfo(value: String => Thenable[RestoreConfigInfo]): Self = StObject.set(x, "getRestoreConfigInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRestorePlan(value: (String, RestoreInfo) => Thenable[RestorePlanResponse]): Self = StObject.set(x, "getRestorePlan", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCancelRestorePlan(value: (String, RestoreInfo) => Thenable[Boolean]): Self = this.set("cancelRestorePlan", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetRestoreConfigInfo(value: String => Thenable[RestoreConfigInfo]): Self = this.set("getRestoreConfigInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRestorePlan(value: (String, RestoreInfo) => Thenable[RestorePlanResponse]): Self = this.set("getRestorePlan", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRestore(value: (String, RestoreInfo) => Thenable[RestoreResponse]): Self = this.set("restore", js.Any.fromFunction2(value))
+    def setRestore(value: (String, RestoreInfo) => Thenable[RestoreResponse]): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
   }
 }

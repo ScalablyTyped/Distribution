@@ -1,13 +1,14 @@
 package typings.locutus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("locutus/php/network/setcookie", JSImport.Namespace)
-@js.native
-object setcookieMod extends js.Object {
+object setcookieMod {
   
+  @JSImport("locutus/php/network/setcookie", JSImport.Namespace)
+  @js.native
   def apply(
     name: js.UndefOr[js.Any],
     value: js.UndefOr[js.Any],

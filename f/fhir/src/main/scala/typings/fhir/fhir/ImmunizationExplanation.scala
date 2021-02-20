@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,36 +30,24 @@ object ImmunizationExplanation {
   }
   
   @scala.inline
-  implicit class ImmunizationExplanationOps[Self <: ImmunizationExplanation] (val x: Self) extends AnyVal {
+  implicit class ImmunizationExplanationMutableBuilder[Self <: ImmunizationExplanation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReasonNotGiven(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reasonNotGiven", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReasonNotGivenUndefined: Self = StObject.set(x, "reasonNotGiven", js.undefined)
     
     @scala.inline
-    def setReasonVarargs(value: CodeableConcept*): Self = this.set("reason", js.Array(value :_*))
+    def setReasonNotGivenVarargs(value: CodeableConcept*): Self = StObject.set(x, "reasonNotGiven", js.Array(value :_*))
     
     @scala.inline
-    def setReason(value: js.Array[CodeableConcept]): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
-    
-    @scala.inline
-    def setReasonNotGivenVarargs(value: CodeableConcept*): Self = this.set("reasonNotGiven", js.Array(value :_*))
-    
-    @scala.inline
-    def setReasonNotGiven(value: js.Array[CodeableConcept]): Self = this.set("reasonNotGiven", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasonNotGiven: Self = this.set("reasonNotGiven", js.undefined)
+    def setReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "reason", js.Array(value :_*))
   }
 }

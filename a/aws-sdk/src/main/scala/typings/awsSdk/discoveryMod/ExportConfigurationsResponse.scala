@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportConfigurationsResponse extends js.Object {
+trait ExportConfigurationsResponse extends StObject {
   
   /**
     * A unique identifier that you can use to query the export status.
@@ -21,24 +22,12 @@ object ExportConfigurationsResponse {
   }
   
   @scala.inline
-  implicit class ExportConfigurationsResponseOps[Self <: ExportConfigurationsResponse] (val x: Self) extends AnyVal {
+  implicit class ExportConfigurationsResponseMutableBuilder[Self <: ExportConfigurationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExportId(value: ConfigurationsExportId): Self = this.set("exportId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportId: Self = this.set("exportId", js.undefined)
+    def setExportIdUndefined: Self = StObject.set(x, "exportId", js.undefined)
   }
 }

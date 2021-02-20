@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentElementElement extends js.Object {
+trait ComponentElementElement extends StObject {
   
   var componentElement: typings.std.Element = js.native
 }
@@ -18,21 +19,9 @@ object ComponentElementElement {
   }
   
   @scala.inline
-  implicit class ComponentElementElementOps[Self <: ComponentElementElement] (val x: Self) extends AnyVal {
+  implicit class ComponentElementElementMutableBuilder[Self <: ComponentElementElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentElement(value: typings.std.Element): Self = this.set("componentElement", value.asInstanceOf[js.Any])
+    def setComponentElement(value: typings.std.Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_reply
   - typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_request
 */
-trait ShellMessageType extends js.Object
+trait ShellMessageType extends StObject
 object ShellMessageType {
   
   @scala.inline

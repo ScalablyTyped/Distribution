@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1Dataset extends js.Object {
+trait GoogleCloudDatalabelingV1beta1Dataset extends StObject {
   
   /** Output only. The names of any related resources that are blocking changes to the dataset. */
   var blockingResources: js.UndefOr[js.Array[String]] = js.native
@@ -40,72 +41,60 @@ object GoogleCloudDatalabelingV1beta1Dataset {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1DatasetOps[Self <: GoogleCloudDatalabelingV1beta1Dataset] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1DatasetMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1Dataset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockingResources(value: js.Array[String]): Self = StObject.set(x, "blockingResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockingResourcesUndefined: Self = StObject.set(x, "blockingResources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value :_*))
     
     @scala.inline
-    def setBlockingResourcesVarargs(value: String*): Self = this.set("blockingResources", js.Array(value :_*))
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockingResources(value: js.Array[String]): Self = this.set("blockingResources", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteBlockingResources: Self = this.set("blockingResources", js.undefined)
+    def setDataItemCount(value: String): Self = StObject.set(x, "dataItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDataItemCountUndefined: Self = StObject.set(x, "dataItemCount", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataItemCount(value: String): Self = this.set("dataItemCount", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDataItemCount: Self = this.set("dataItemCount", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setInputConfigs(value: js.Array[GoogleCloudDatalabelingV1beta1InputConfig]): Self = StObject.set(x, "inputConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setInputConfigsUndefined: Self = StObject.set(x, "inputConfigs", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setInputConfigsVarargs(value: GoogleCloudDatalabelingV1beta1InputConfig*): Self = StObject.set(x, "inputConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setInputConfigsVarargs(value: GoogleCloudDatalabelingV1beta1InputConfig*): Self = this.set("inputConfigs", js.Array(value :_*))
+    def setLastMigrateTime(value: String): Self = StObject.set(x, "lastMigrateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfigs(value: js.Array[GoogleCloudDatalabelingV1beta1InputConfig]): Self = this.set("inputConfigs", value.asInstanceOf[js.Any])
+    def setLastMigrateTimeUndefined: Self = StObject.set(x, "lastMigrateTime", js.undefined)
     
     @scala.inline
-    def deleteInputConfigs: Self = this.set("inputConfigs", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastMigrateTime(value: String): Self = this.set("lastMigrateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastMigrateTime: Self = this.set("lastMigrateTime", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

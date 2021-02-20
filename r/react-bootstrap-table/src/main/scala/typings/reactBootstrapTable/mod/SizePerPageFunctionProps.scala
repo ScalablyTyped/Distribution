@@ -1,12 +1,13 @@
 package typings.reactBootstrapTable.mod
 
 import typings.reactBootstrapTable.anon.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SizePerPageFunctionProps extends js.Object {
+trait SizePerPageFunctionProps extends StObject {
   
   /**
     * Callback function to use to change the current size per page.
@@ -54,39 +55,27 @@ object SizePerPageFunctionProps {
   }
   
   @scala.inline
-  implicit class SizePerPageFunctionPropsOps[Self <: SizePerPageFunctionProps] (val x: Self) extends AnyVal {
+  implicit class SizePerPageFunctionPropsMutableBuilder[Self <: SizePerPageFunctionProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeSizePerPage(value: Double => Unit): Self = StObject.set(x, "changeSizePerPage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrSizePerPage(value: String): Self = StObject.set(x, "currSizePerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideSizePerPage(value: Boolean): Self = StObject.set(x, "hideSizePerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSizePerPage(value: Double => Unit): Self = this.set("changeSizePerPage", js.Any.fromFunction1(value))
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrSizePerPage(value: String): Self = this.set("currSizePerPage", value.asInstanceOf[js.Any])
+    def setSizePerPageList(value: SizePerPageList): Self = StObject.set(x, "sizePerPageList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideSizePerPage(value: Boolean): Self = this.set("hideSizePerPage", value.asInstanceOf[js.Any])
+    def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
     
     @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizePerPageListVarargs(value: (Double | Text)*): Self = this.set("sizePerPageList", js.Array(value :_*))
-    
-    @scala.inline
-    def setSizePerPageList(value: SizePerPageList): Self = this.set("sizePerPageList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToggleDropDown(value: () => Unit): Self = this.set("toggleDropDown", js.Any.fromFunction0(value))
+    def setToggleDropDown(value: () => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction0(value))
   }
 }

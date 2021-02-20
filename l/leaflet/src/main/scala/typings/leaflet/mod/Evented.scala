@@ -50,6 +50,7 @@ import typings.leaflet.leafletStrings.zoomanim
 import typings.leaflet.leafletStrings.zoomend
 import typings.leaflet.leafletStrings.zoomlevelschange
 import typings.leaflet.leafletStrings.zoomstart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

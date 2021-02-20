@@ -1,12 +1,13 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  useInstances :boolean}> */
 @js.native
-trait PartialuseInstancesboolea extends js.Object {
+trait PartialuseInstancesboolea extends StObject {
   
   var useInstances: js.UndefOr[Boolean] = js.native
 }
@@ -19,24 +20,12 @@ object PartialuseInstancesboolea {
   }
   
   @scala.inline
-  implicit class PartialuseInstancesbooleaOps[Self <: PartialuseInstancesboolea] (val x: Self) extends AnyVal {
+  implicit class PartialuseInstancesbooleaMutableBuilder[Self <: PartialuseInstancesboolea] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUseInstances(value: Boolean): Self = StObject.set(x, "useInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUseInstances(value: Boolean): Self = this.set("useInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseInstances: Self = this.set("useInstances", js.undefined)
+    def setUseInstancesUndefined: Self = StObject.set(x, "useInstances", js.undefined)
   }
 }

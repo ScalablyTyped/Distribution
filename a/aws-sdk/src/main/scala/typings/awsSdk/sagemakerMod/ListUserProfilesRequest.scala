@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUserProfilesRequest extends js.Object {
+trait ListUserProfilesRequest extends StObject {
   
   /**
     * A parameter by which to filter the results.
@@ -46,54 +47,42 @@ object ListUserProfilesRequest {
   }
   
   @scala.inline
-  implicit class ListUserProfilesRequestOps[Self <: ListUserProfilesRequest] (val x: Self) extends AnyVal {
+  implicit class ListUserProfilesRequestMutableBuilder[Self <: ListUserProfilesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainIdEquals(value: DomainId): Self = StObject.set(x, "DomainIdEquals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainIdEqualsUndefined: Self = StObject.set(x, "DomainIdEquals", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainIdEquals(value: DomainId): Self = this.set("DomainIdEquals", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteDomainIdEquals: Self = this.set("DomainIdEquals", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setSortBy(value: UserProfileSortKey): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortBy(value: UserProfileSortKey): Self = this.set("SortBy", value.asInstanceOf[js.Any])
+    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
     
     @scala.inline
-    def deleteSortBy: Self = this.set("SortBy", js.undefined)
+    def setUserProfileNameContains(value: UserProfileName): Self = StObject.set(x, "UserProfileNameContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortOrder(value: SortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
-    
-    @scala.inline
-    def setUserProfileNameContains(value: UserProfileName): Self = this.set("UserProfileNameContains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProfileNameContains: Self = this.set("UserProfileNameContains", js.undefined)
+    def setUserProfileNameContainsUndefined: Self = StObject.set(x, "UserProfileNameContains", js.undefined)
   }
 }

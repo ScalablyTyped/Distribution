@@ -1,12 +1,13 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.BABYLON.Vector4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcBackUVs extends js.Object {
+trait ArcBackUVs extends StObject {
   
   var arc: js.UndefOr[Double] = js.native
   
@@ -29,54 +30,42 @@ object ArcBackUVs {
   }
   
   @scala.inline
-  implicit class ArcBackUVsOps[Self <: ArcBackUVs] (val x: Self) extends AnyVal {
+  implicit class ArcBackUVsMutableBuilder[Self <: ArcBackUVs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArc(value: Double): Self = this.set("arc", value.asInstanceOf[js.Any])
+    def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
     @scala.inline
-    def deleteArc: Self = this.set("arc", js.undefined)
+    def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackUVs(value: Vector4): Self = this.set("backUVs", value.asInstanceOf[js.Any])
+    def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
     @scala.inline
-    def deleteBackUVs: Self = this.set("backUVs", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrontUVs(value: Vector4): Self = this.set("frontUVs", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteFrontUVs: Self = this.set("frontUVs", js.undefined)
+    def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideOrientation(value: Double): Self = this.set("sideOrientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSideOrientation: Self = this.set("sideOrientation", js.undefined)
-    
-    @scala.inline
-    def setTessellation(value: Double): Self = this.set("tessellation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTessellation: Self = this.set("tessellation", js.undefined)
+    def setTessellationUndefined: Self = StObject.set(x, "tessellation", js.undefined)
   }
 }

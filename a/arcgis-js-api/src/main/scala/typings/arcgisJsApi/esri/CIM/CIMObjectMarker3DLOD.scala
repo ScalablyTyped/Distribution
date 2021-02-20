@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CIMObjectMarker3DLOD extends js.Object {
+trait CIMObjectMarker3DLOD extends StObject {
   
   /**
     * The total number of triangles in the geometry of this level of detail.
@@ -29,33 +30,21 @@ object CIMObjectMarker3DLOD {
   }
   
   @scala.inline
-  implicit class CIMObjectMarker3DLODOps[Self <: CIMObjectMarker3DLOD] (val x: Self) extends AnyVal {
+  implicit class CIMObjectMarker3DLODMutableBuilder[Self <: CIMObjectMarker3DLOD] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaceCount(value: Double): Self = StObject.set(x, "faceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceCountUndefined: Self = StObject.set(x, "faceCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelURI(value: String): Self = StObject.set(x, "modelURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3DLOD): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setModelURIUndefined: Self = StObject.set(x, "modelURI", js.undefined)
     
     @scala.inline
-    def setFaceCount(value: Double): Self = this.set("faceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFaceCount: Self = this.set("faceCount", js.undefined)
-    
-    @scala.inline
-    def setModelURI(value: String): Self = this.set("modelURI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelURI: Self = this.set("modelURI", js.undefined)
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3DLOD): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

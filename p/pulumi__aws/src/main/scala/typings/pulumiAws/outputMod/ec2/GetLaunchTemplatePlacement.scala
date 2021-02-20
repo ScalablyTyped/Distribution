@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLaunchTemplatePlacement extends js.Object {
+trait GetLaunchTemplatePlacement extends StObject {
   
   var affinity: String = js.native
   
@@ -38,39 +39,27 @@ object GetLaunchTemplatePlacement {
   }
   
   @scala.inline
-  implicit class GetLaunchTemplatePlacementOps[Self <: GetLaunchTemplatePlacement] (val x: Self) extends AnyVal {
+  implicit class GetLaunchTemplatePlacementMutableBuilder[Self <: GetLaunchTemplatePlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffinity(value: String): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffinity(value: String): Self = this.set("affinity", value.asInstanceOf[js.Any])
+    def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    def setPartitionNumber(value: Double): Self = StObject.set(x, "partitionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    def setSpreadDomain(value: String): Self = StObject.set(x, "spreadDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostId(value: String): Self = this.set("hostId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartitionNumber(value: Double): Self = this.set("partitionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpreadDomain(value: String): Self = this.set("spreadDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTenancy(value: String): Self = this.set("tenancy", value.asInstanceOf[js.Any])
+    def setTenancy(value: String): Self = StObject.set(x, "tenancy", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.sharepoint.SP.UI
 
 import typings.microsoftAjax.Sys.UI.Control
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,45 +68,33 @@ object AttractModeControl {
   }
   
   @scala.inline
-  implicit class AttractModeControlOps[Self <: AttractModeControl] (val x: Self) extends AnyVal {
+  implicit class AttractModeControlMutableBuilder[Self <: AttractModeControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCssAttractMode(value: String): Self = StObject.set(x, "cssAttractMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCssAttractModeBackground(value: String): Self = StObject.set(x, "cssAttractModeBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCssAttractModeCell(value: String): Self = StObject.set(x, "cssAttractModeCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssAttractMode(value: String): Self = this.set("cssAttractMode", value.asInstanceOf[js.Any])
+    def setCssAttractModeIcon(value: String): Self = StObject.set(x, "cssAttractModeIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssAttractModeBackground(value: String): Self = this.set("cssAttractModeBackground", value.asInstanceOf[js.Any])
+    def setCssAttractModeText(value: String): Self = StObject.set(x, "cssAttractModeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssAttractModeCell(value: String): Self = this.set("cssAttractModeCell", value.asInstanceOf[js.Any])
+    def setCssAttractModeWrapper(value: String): Self = StObject.set(x, "cssAttractModeWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssAttractModeIcon(value: String): Self = this.set("cssAttractModeIcon", value.asInstanceOf[js.Any])
+    def setDefaultAttractModeIcon(value: String): Self = StObject.set(x, "defaultAttractModeIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssAttractModeText(value: String): Self = this.set("cssAttractModeText", value.asInstanceOf[js.Any])
+    def setGet_imageElement(value: () => js.Any): Self = StObject.set(x, "get_imageElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCssAttractModeWrapper(value: String): Self = this.set("cssAttractModeWrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultAttractModeIcon(value: String): Self = this.set("defaultAttractModeIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGet_imageElement(value: () => js.Any): Self = this.set("get_imageElement", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_textElement(value: () => HTMLElement): Self = this.set("get_textElement", js.Any.fromFunction0(value))
+    def setGet_textElement(value: () => HTMLElement): Self = StObject.set(x, "get_textElement", js.Any.fromFunction0(value))
   }
 }

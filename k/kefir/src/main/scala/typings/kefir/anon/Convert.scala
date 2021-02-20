@@ -1,11 +1,12 @@
 package typings.kefir.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Convert[U] extends js.Object {
+trait Convert[U] extends StObject {
   
   var convert: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Convert {
   }
   
   @scala.inline
-  implicit class ConvertOps[Self <: Convert[_], U] (val x: Self with Convert[U]) extends AnyVal {
+  implicit class ConvertMutableBuilder[Self <: Convert[_], U] (val x: Self with Convert[U]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConvert(value: Boolean): Self = this.set("convert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: U): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: U): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.pubnub.mod
 
 import typings.pubnub.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Memberships
 /* Inlined parent std.Omit<pubnub.pubnub.v2ObjectData<MembershipCustom>, 'id'> */
 @js.native
-trait UUIDMembershipObject[MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */] extends js.Object {
+trait UUIDMembershipObject[MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */] extends StObject {
   
   var custom: js.UndefOr[MembershipCustom | Null] = js.native
   
@@ -27,36 +28,24 @@ object UUIDMembershipObject {
   }
   
   @scala.inline
-  implicit class UUIDMembershipObjectOps[Self <: UUIDMembershipObject[_, _], MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */] (val x: Self with (UUIDMembershipObject[MembershipCustom, UUIDCustom])) extends AnyVal {
+  implicit class UUIDMembershipObjectMutableBuilder[Self <: UUIDMembershipObject[_, _], MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */] (val x: Self with (UUIDMembershipObject[MembershipCustom, UUIDCustom])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: MembershipCustom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomNull: Self = StObject.set(x, "custom", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def setETag(value: String): Self = this.set("eTag", value.asInstanceOf[js.Any])
+    def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUuid(value: UUIDMetadataObject[UUIDCustom] | Id): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustom(value: MembershipCustom): Self = this.set("custom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
-    
-    @scala.inline
-    def setCustomNull: Self = this.set("custom", null)
+    def setUuid(value: UUIDMetadataObject[UUIDCustom] | Id): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

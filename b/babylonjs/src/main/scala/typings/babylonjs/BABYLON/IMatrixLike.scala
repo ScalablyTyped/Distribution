@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMatrixLike extends js.Object {
+trait IMatrixLike extends StObject {
   
   def toArray(): DeepImmutable[Float32Array | js.Array[Double]] = js.native
   
@@ -21,24 +22,12 @@ object IMatrixLike {
   }
   
   @scala.inline
-  implicit class IMatrixLikeOps[Self <: IMatrixLike] (val x: Self) extends AnyVal {
+  implicit class IMatrixLikeMutableBuilder[Self <: IMatrixLike] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setToArray(value: () => DeepImmutable[Float32Array | js.Array[Double]]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setToArray(value: () => DeepImmutable[Float32Array | js.Array[Double]]): Self = this.set("toArray", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateFlag(value: int): Self = this.set("updateFlag", value.asInstanceOf[js.Any])
+    def setUpdateFlag(value: int): Self = StObject.set(x, "updateFlag", value.asInstanceOf[js.Any])
   }
 }

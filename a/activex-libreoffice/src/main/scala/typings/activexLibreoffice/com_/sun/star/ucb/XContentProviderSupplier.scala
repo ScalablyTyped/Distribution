@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,24 +43,12 @@ object XContentProviderSupplier {
   }
   
   @scala.inline
-  implicit class XContentProviderSupplierOps[Self <: XContentProviderSupplier] (val x: Self) extends AnyVal {
+  implicit class XContentProviderSupplierMutableBuilder[Self <: XContentProviderSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentProvider(value: XContentProvider): Self = StObject.set(x, "ContentProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContentProvider(value: XContentProvider): Self = this.set("ContentProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetContentProvider(value: () => XContentProvider): Self = this.set("getContentProvider", js.Any.fromFunction0(value))
+    def setGetContentProvider(value: () => XContentProvider): Self = StObject.set(x, "getContentProvider", js.Any.fromFunction0(value))
   }
 }

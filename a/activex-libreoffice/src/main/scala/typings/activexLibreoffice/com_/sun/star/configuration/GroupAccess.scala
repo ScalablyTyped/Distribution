@@ -4,17 +4,14 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.Property
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyState
-import typings.activexLibreoffice.com_.sun.star.beans.XHierarchicalPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XHierarchicalPropertySetInfo
-import typings.activexLibreoffice.com_.sun.star.beans.XMultiHierarchicalPropertySet
-import typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertiesChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XContainerListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,26 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GroupAccess
   extends HierarchyAccess
-     with XPropertySet
-     with XMultiPropertySet
-     with XHierarchicalPropertySet
-     with XMultiHierarchicalPropertySet {
-  
-  /**
-    * retrieve information about the hierarchy of properties
-    * @returns the {@link XHierarchicalPropertySetInfo} interface, which describes the property hierarchy of the object which supplies this interface.
-    * @returns `NULL` if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XHierarchicalPropertySet
-    * @see XHierarchicalPropertySet.getHierarchicalPropertySetInfo
-    */
-  /* InferMemberOverrides */
-  override val HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo = js.native
-  
-  /**
-    * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object to which this interface belongs. NULL is returned if the obj
-    * @see XPropertySet.getPropertySetInfo
-    */
-  /* InferMemberOverrides */
-  override val PropertySetInfo: XPropertySetInfo = js.native
+     with PropertyHierarchy {
   
   /**
     * retrieve information about the hierarchy of properties
@@ -135,33 +113,15 @@ object GroupAccess {
   }
   
   @scala.inline
-  implicit class GroupAccessOps[Self <: GroupAccess] (val x: Self) extends AnyVal {
+  implicit class GroupAccessMutableBuilder[Self <: GroupAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHierarchicalPropertySetInfo(value: XHierarchicalPropertySetInfo): Self = this.set("HierarchicalPropertySetInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertySetInfo(value: XPropertySetInfo): Self = this.set("PropertySetInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = this.set("getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = this.set("getPropertyStates", js.Any.fromFunction1(value))
+    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
   }
 }

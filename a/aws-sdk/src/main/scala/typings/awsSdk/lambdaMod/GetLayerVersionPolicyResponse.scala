@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLayerVersionPolicyResponse extends js.Object {
+trait GetLayerVersionPolicyResponse extends StObject {
   
   /**
     * The policy document.
@@ -26,30 +27,18 @@ object GetLayerVersionPolicyResponse {
   }
   
   @scala.inline
-  implicit class GetLayerVersionPolicyResponseOps[Self <: GetLayerVersionPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class GetLayerVersionPolicyResponseMutableBuilder[Self <: GetLayerVersionPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: String): Self = this.set("Policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("Policy", js.undefined)
-    
-    @scala.inline
-    def setRevisionId(value: String): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
   }
 }

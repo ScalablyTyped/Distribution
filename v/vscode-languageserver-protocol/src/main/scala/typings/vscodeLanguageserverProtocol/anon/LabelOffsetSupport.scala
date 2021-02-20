@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelOffsetSupport extends js.Object {
+trait LabelOffsetSupport extends StObject {
   
   /**
     * The client supports processing label offsets instead of a
@@ -24,24 +25,12 @@ object LabelOffsetSupport {
   }
   
   @scala.inline
-  implicit class LabelOffsetSupportOps[Self <: LabelOffsetSupport] (val x: Self) extends AnyVal {
+  implicit class LabelOffsetSupportMutableBuilder[Self <: LabelOffsetSupport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelOffsetSupport(value: Boolean): Self = StObject.set(x, "labelOffsetSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabelOffsetSupport(value: Boolean): Self = this.set("labelOffsetSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelOffsetSupport: Self = this.set("labelOffsetSupport", js.undefined)
+    def setLabelOffsetSupportUndefined: Self = StObject.set(x, "labelOffsetSupport", js.undefined)
   }
 }

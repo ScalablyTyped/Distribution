@@ -1,13 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/_GlobalSecondaryIndex", JSImport.Namespace)
-@js.native
-object globalSecondaryIndexMod extends js.Object {
+object globalSecondaryIndexMod {
   
-  @JSName("_GlobalSecondaryIndex")
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/_GlobalSecondaryIndex", "_GlobalSecondaryIndex")
+  @js.native
   val GlobalSecondaryIndex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

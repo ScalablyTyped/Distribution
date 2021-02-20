@@ -1,18 +1,28 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Shaders/ShadersInclude/kernelBlurVaryingDeclaration", JSImport.Namespace)
-@js.native
-object kernelBlurVaryingDeclarationMod extends js.Object {
+object kernelBlurVaryingDeclarationMod {
   
-  @js.native
-  object kernelBlurVaryingDeclaration extends js.Object {
+  object kernelBlurVaryingDeclaration {
     
-    var name: String = js.native
+    @JSImport("babylonjs/Shaders/ShadersInclude/kernelBlurVaryingDeclaration", "kernelBlurVaryingDeclaration")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var shader: String = js.native
+    @JSImport("babylonjs/Shaders/ShadersInclude/kernelBlurVaryingDeclaration", "kernelBlurVaryingDeclaration.name")
+    @js.native
+    def name: String = js.native
+    @scala.inline
+    def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Shaders/ShadersInclude/kernelBlurVaryingDeclaration", "kernelBlurVaryingDeclaration.shader")
+    @js.native
+    def shader: String = js.native
+    @scala.inline
+    def shader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shader")(x.asInstanceOf[js.Any])
   }
 }

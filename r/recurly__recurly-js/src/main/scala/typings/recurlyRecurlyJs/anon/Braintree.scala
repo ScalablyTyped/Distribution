@@ -1,11 +1,12 @@
 package typings.recurlyRecurlyJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Braintree extends js.Object {
+trait Braintree extends StObject {
   
   var braintree: js.UndefOr[DeviceData] = js.native
   
@@ -22,36 +23,24 @@ object Braintree {
   }
   
   @scala.inline
-  implicit class BraintreeOps[Self <: Braintree] (val x: Self) extends AnyVal {
+  implicit class BraintreeMutableBuilder[Self <: Braintree] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBraintree(value: DeviceData): Self = StObject.set(x, "braintree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBraintreeUndefined: Self = StObject.set(x, "braintree", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKount(value: DataCollector): Self = StObject.set(x, "kount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBraintree(value: DeviceData): Self = this.set("braintree", value.asInstanceOf[js.Any])
+    def setKountUndefined: Self = StObject.set(x, "kount", js.undefined)
     
     @scala.inline
-    def deleteBraintree: Self = this.set("braintree", js.undefined)
+    def setLitle(value: SessionId): Self = StObject.set(x, "litle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKount(value: DataCollector): Self = this.set("kount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKount: Self = this.set("kount", js.undefined)
-    
-    @scala.inline
-    def setLitle(value: SessionId): Self = this.set("litle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLitle: Self = this.set("litle", js.undefined)
+    def setLitleUndefined: Self = StObject.set(x, "litle", js.undefined)
   }
 }

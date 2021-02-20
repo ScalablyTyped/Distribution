@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait BatchTextureArray extends js.Object {
+trait BatchTextureArray extends StObject {
   
   /**
     * number of filled elements
@@ -41,33 +42,21 @@ object BatchTextureArray {
   }
   
   @scala.inline
-  implicit class BatchTextureArrayOps[Self <: BatchTextureArray] (val x: Self) extends AnyVal {
+  implicit class BatchTextureArrayMutableBuilder[Self <: BatchTextureArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElements(value: js.Array[BaseTexture]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementsVarargs(value: BaseTexture*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setIds(value: js.Array[Double]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementsVarargs(value: BaseTexture*): Self = this.set("elements", js.Array(value :_*))
-    
-    @scala.inline
-    def setElements(value: js.Array[BaseTexture]): Self = this.set("elements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdsVarargs(value: Double*): Self = this.set("ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setIds(value: js.Array[Double]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def setIdsVarargs(value: Double*): Self = StObject.set(x, "ids", js.Array(value :_*))
   }
 }

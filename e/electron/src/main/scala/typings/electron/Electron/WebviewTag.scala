@@ -139,6 +139,7 @@ import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.Uint8Array
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

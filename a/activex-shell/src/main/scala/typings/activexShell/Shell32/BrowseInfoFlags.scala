@@ -17,6 +17,7 @@ import typings.activexShell.activexShellNumbers.`0x00002000`
 import typings.activexShell.activexShellNumbers.`0x00004000`
 import typings.activexShell.activexShellNumbers.`0x00008000`
 import typings.activexShell.activexShellNumbers.`0x00010000`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShell.activexShellNumbers.`0x00000090`
   - typings.activexShell.activexShellNumbers.`0x00000020`
 */
-trait BrowseInfoFlags extends js.Object
+trait BrowseInfoFlags extends StObject
 object BrowseInfoFlags {
   
   /**

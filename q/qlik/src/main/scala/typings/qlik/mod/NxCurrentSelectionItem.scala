@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NxCurrentSelectionItem extends js.Object {
+trait NxCurrentSelectionItem extends StObject {
   
   var qField: String = js.native
   
@@ -55,81 +56,69 @@ object NxCurrentSelectionItem {
   }
   
   @scala.inline
-  implicit class NxCurrentSelectionItemOps[Self <: NxCurrentSelectionItem] (val x: Self) extends AnyVal {
+  implicit class NxCurrentSelectionItemMutableBuilder[Self <: NxCurrentSelectionItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQField(value: String): Self = StObject.set(x, "qField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQIsNum(value: Boolean): Self = StObject.set(x, "qIsNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQIsNumUndefined: Self = StObject.set(x, "qIsNum", js.undefined)
     
     @scala.inline
-    def setQField(value: String): Self = this.set("qField", value.asInstanceOf[js.Any])
+    def setQLocked(value: Boolean): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQNotSelectedFieldSelectionInfoVarargs(value: NxFieldSelectionInfo*): Self = this.set("qNotSelectedFieldSelectionInfo", js.Array(value :_*))
+    def setQLockedUndefined: Self = StObject.set(x, "qLocked", js.undefined)
     
     @scala.inline
-    def setQNotSelectedFieldSelectionInfo(value: js.Array[NxFieldSelectionInfo]): Self = this.set("qNotSelectedFieldSelectionInfo", value.asInstanceOf[js.Any])
+    def setQNotSelectedFieldSelectionInfo(value: js.Array[NxFieldSelectionInfo]): Self = StObject.set(x, "qNotSelectedFieldSelectionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQRangeInfoVarargs(value: RangeSelectInfo*): Self = this.set("qRangeInfo", js.Array(value :_*))
+    def setQNotSelectedFieldSelectionInfoVarargs(value: NxFieldSelectionInfo*): Self = StObject.set(x, "qNotSelectedFieldSelectionInfo", js.Array(value :_*))
     
     @scala.inline
-    def setQRangeInfo(value: js.Array[RangeSelectInfo]): Self = this.set("qRangeInfo", value.asInstanceOf[js.Any])
+    def setQOneAndOnlyOne(value: Boolean): Self = StObject.set(x, "qOneAndOnlyOne", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSelected(value: String): Self = this.set("qSelected", value.asInstanceOf[js.Any])
+    def setQOneAndOnlyOneUndefined: Self = StObject.set(x, "qOneAndOnlyOne", js.undefined)
     
     @scala.inline
-    def setQSelectedCount(value: Double): Self = this.set("qSelectedCount", value.asInstanceOf[js.Any])
+    def setQRangeInfo(value: js.Array[RangeSelectInfo]): Self = StObject.set(x, "qRangeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSelectedFieldSelectionInfoVarargs(value: NxFieldSelectionInfo*): Self = this.set("qSelectedFieldSelectionInfo", js.Array(value :_*))
+    def setQRangeInfoVarargs(value: RangeSelectInfo*): Self = StObject.set(x, "qRangeInfo", js.Array(value :_*))
     
     @scala.inline
-    def setQSelectedFieldSelectionInfo(value: js.Array[NxFieldSelectionInfo]): Self = this.set("qSelectedFieldSelectionInfo", value.asInstanceOf[js.Any])
+    def setQSelected(value: String): Self = StObject.set(x, "qSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSelectionThreshold(value: Double): Self = this.set("qSelectionThreshold", value.asInstanceOf[js.Any])
+    def setQSelectedCount(value: Double): Self = StObject.set(x, "qSelectedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSortIndex(value: Double): Self = this.set("qSortIndex", value.asInstanceOf[js.Any])
+    def setQSelectedFieldSelectionInfo(value: js.Array[NxFieldSelectionInfo]): Self = StObject.set(x, "qSelectedFieldSelectionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQStateCounts(value: NxStateCounts): Self = this.set("qStateCounts", value.asInstanceOf[js.Any])
+    def setQSelectedFieldSelectionInfoVarargs(value: NxFieldSelectionInfo*): Self = StObject.set(x, "qSelectedFieldSelectionInfo", js.Array(value :_*))
     
     @scala.inline
-    def setQTotal(value: Double): Self = this.set("qTotal", value.asInstanceOf[js.Any])
+    def setQSelectionThreshold(value: Double): Self = StObject.set(x, "qSelectionThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsNum(value: Boolean): Self = this.set("qIsNum", value.asInstanceOf[js.Any])
+    def setQSortIndex(value: Double): Self = StObject.set(x, "qSortIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQIsNum: Self = this.set("qIsNum", js.undefined)
+    def setQStateCounts(value: NxStateCounts): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLocked(value: Boolean): Self = this.set("qLocked", value.asInstanceOf[js.Any])
+    def setQTextSearch(value: String): Self = StObject.set(x, "qTextSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQLocked: Self = this.set("qLocked", js.undefined)
+    def setQTextSearchUndefined: Self = StObject.set(x, "qTextSearch", js.undefined)
     
     @scala.inline
-    def setQOneAndOnlyOne(value: Boolean): Self = this.set("qOneAndOnlyOne", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQOneAndOnlyOne: Self = this.set("qOneAndOnlyOne", js.undefined)
-    
-    @scala.inline
-    def setQTextSearch(value: String): Self = this.set("qTextSearch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQTextSearch: Self = this.set("qTextSearch", js.undefined)
+    def setQTotal(value: Double): Self = StObject.set(x, "qTotal", value.asInstanceOf[js.Any])
   }
 }

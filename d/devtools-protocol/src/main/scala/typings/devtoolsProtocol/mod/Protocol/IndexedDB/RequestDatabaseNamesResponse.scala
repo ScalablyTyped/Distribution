@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestDatabaseNamesResponse extends js.Object {
+trait RequestDatabaseNamesResponse extends StObject {
   
   /**
     * Database names for origin.
@@ -21,24 +22,12 @@ object RequestDatabaseNamesResponse {
   }
   
   @scala.inline
-  implicit class RequestDatabaseNamesResponseOps[Self <: RequestDatabaseNamesResponse] (val x: Self) extends AnyVal {
+  implicit class RequestDatabaseNamesResponseMutableBuilder[Self <: RequestDatabaseNamesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseNames(value: js.Array[String]): Self = StObject.set(x, "databaseNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDatabaseNamesVarargs(value: String*): Self = this.set("databaseNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setDatabaseNames(value: js.Array[String]): Self = this.set("databaseNames", value.asInstanceOf[js.Any])
+    def setDatabaseNamesVarargs(value: String*): Self = StObject.set(x, "databaseNames", js.Array(value :_*))
   }
 }

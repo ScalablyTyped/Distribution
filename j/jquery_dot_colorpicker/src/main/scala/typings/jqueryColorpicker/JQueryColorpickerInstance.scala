@@ -1,11 +1,12 @@
 package typings.jqueryColorpicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryColorpickerInstance extends js.Object {
+trait JQueryColorpickerInstance extends StObject {
   
   def close(): Unit = js.native
   
@@ -24,30 +25,18 @@ object JQueryColorpickerInstance {
   }
   
   @scala.inline
-  implicit class JQueryColorpickerInstanceOps[Self <: JQueryColorpickerInstance] (val x: Self) extends AnyVal {
+  implicit class JQueryColorpickerInstanceMutableBuilder[Self <: JQueryColorpickerInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpen(value: () => Unit): Self = this.set("open", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetColor(value: js.Any => Unit): Self = this.set("setColor", js.Any.fromFunction1(value))
+    def setSetColor(value: js.Any => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1Mod.containerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration for controlling how IPs are allocated in the cluster.
   */
 @js.native
-trait SchemaIPAllocationPolicy extends js.Object {
+trait SchemaIPAllocationPolicy extends StObject {
   
   /**
     * This field is deprecated, use cluster_ipv4_cidr_block.
@@ -121,90 +122,78 @@ object SchemaIPAllocationPolicy {
   }
   
   @scala.inline
-  implicit class SchemaIPAllocationPolicyOps[Self <: SchemaIPAllocationPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaIPAllocationPolicyMutableBuilder[Self <: SchemaIPAllocationPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterIpv4Cidr(value: String): Self = StObject.set(x, "clusterIpv4Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterIpv4CidrBlock(value: String): Self = StObject.set(x, "clusterIpv4CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterIpv4CidrBlockUndefined: Self = StObject.set(x, "clusterIpv4CidrBlock", js.undefined)
     
     @scala.inline
-    def setClusterIpv4Cidr(value: String): Self = this.set("clusterIpv4Cidr", value.asInstanceOf[js.Any])
+    def setClusterIpv4CidrUndefined: Self = StObject.set(x, "clusterIpv4Cidr", js.undefined)
     
     @scala.inline
-    def deleteClusterIpv4Cidr: Self = this.set("clusterIpv4Cidr", js.undefined)
+    def setClusterSecondaryRangeName(value: String): Self = StObject.set(x, "clusterSecondaryRangeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIpv4CidrBlock(value: String): Self = this.set("clusterIpv4CidrBlock", value.asInstanceOf[js.Any])
+    def setClusterSecondaryRangeNameUndefined: Self = StObject.set(x, "clusterSecondaryRangeName", js.undefined)
     
     @scala.inline
-    def deleteClusterIpv4CidrBlock: Self = this.set("clusterIpv4CidrBlock", js.undefined)
+    def setCreateSubnetwork(value: Boolean): Self = StObject.set(x, "createSubnetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterSecondaryRangeName(value: String): Self = this.set("clusterSecondaryRangeName", value.asInstanceOf[js.Any])
+    def setCreateSubnetworkUndefined: Self = StObject.set(x, "createSubnetwork", js.undefined)
     
     @scala.inline
-    def deleteClusterSecondaryRangeName: Self = this.set("clusterSecondaryRangeName", js.undefined)
+    def setNodeIpv4Cidr(value: String): Self = StObject.set(x, "nodeIpv4Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSubnetwork(value: Boolean): Self = this.set("createSubnetwork", value.asInstanceOf[js.Any])
+    def setNodeIpv4CidrBlock(value: String): Self = StObject.set(x, "nodeIpv4CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateSubnetwork: Self = this.set("createSubnetwork", js.undefined)
+    def setNodeIpv4CidrBlockUndefined: Self = StObject.set(x, "nodeIpv4CidrBlock", js.undefined)
     
     @scala.inline
-    def setNodeIpv4Cidr(value: String): Self = this.set("nodeIpv4Cidr", value.asInstanceOf[js.Any])
+    def setNodeIpv4CidrUndefined: Self = StObject.set(x, "nodeIpv4Cidr", js.undefined)
     
     @scala.inline
-    def deleteNodeIpv4Cidr: Self = this.set("nodeIpv4Cidr", js.undefined)
+    def setServicesIpv4Cidr(value: String): Self = StObject.set(x, "servicesIpv4Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeIpv4CidrBlock(value: String): Self = this.set("nodeIpv4CidrBlock", value.asInstanceOf[js.Any])
+    def setServicesIpv4CidrBlock(value: String): Self = StObject.set(x, "servicesIpv4CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodeIpv4CidrBlock: Self = this.set("nodeIpv4CidrBlock", js.undefined)
+    def setServicesIpv4CidrBlockUndefined: Self = StObject.set(x, "servicesIpv4CidrBlock", js.undefined)
     
     @scala.inline
-    def setServicesIpv4Cidr(value: String): Self = this.set("servicesIpv4Cidr", value.asInstanceOf[js.Any])
+    def setServicesIpv4CidrUndefined: Self = StObject.set(x, "servicesIpv4Cidr", js.undefined)
     
     @scala.inline
-    def deleteServicesIpv4Cidr: Self = this.set("servicesIpv4Cidr", js.undefined)
+    def setServicesSecondaryRangeName(value: String): Self = StObject.set(x, "servicesSecondaryRangeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicesIpv4CidrBlock(value: String): Self = this.set("servicesIpv4CidrBlock", value.asInstanceOf[js.Any])
+    def setServicesSecondaryRangeNameUndefined: Self = StObject.set(x, "servicesSecondaryRangeName", js.undefined)
     
     @scala.inline
-    def deleteServicesIpv4CidrBlock: Self = this.set("servicesIpv4CidrBlock", js.undefined)
+    def setSubnetworkName(value: String): Self = StObject.set(x, "subnetworkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicesSecondaryRangeName(value: String): Self = this.set("servicesSecondaryRangeName", value.asInstanceOf[js.Any])
+    def setSubnetworkNameUndefined: Self = StObject.set(x, "subnetworkName", js.undefined)
     
     @scala.inline
-    def deleteServicesSecondaryRangeName: Self = this.set("servicesSecondaryRangeName", js.undefined)
+    def setTpuIpv4CidrBlock(value: String): Self = StObject.set(x, "tpuIpv4CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetworkName(value: String): Self = this.set("subnetworkName", value.asInstanceOf[js.Any])
+    def setTpuIpv4CidrBlockUndefined: Self = StObject.set(x, "tpuIpv4CidrBlock", js.undefined)
     
     @scala.inline
-    def deleteSubnetworkName: Self = this.set("subnetworkName", js.undefined)
+    def setUseIpAliases(value: Boolean): Self = StObject.set(x, "useIpAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTpuIpv4CidrBlock(value: String): Self = this.set("tpuIpv4CidrBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTpuIpv4CidrBlock: Self = this.set("tpuIpv4CidrBlock", js.undefined)
-    
-    @scala.inline
-    def setUseIpAliases(value: Boolean): Self = this.set("useIpAliases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseIpAliases: Self = this.set("useIpAliases", js.undefined)
+    def setUseIpAliasesUndefined: Self = StObject.set(x, "useIpAliases", js.undefined)
   }
 }

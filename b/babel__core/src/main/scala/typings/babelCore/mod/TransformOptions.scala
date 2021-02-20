@@ -14,12 +14,13 @@ import typings.babelCore.babelCoreStrings.unambiguous
 import typings.babelCore.babelCoreStrings.upward
 import typings.babelGenerator.mod.GeneratorOptions
 import typings.babelParser.mod.ParserOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformOptions extends js.Object {
+trait TransformOptions extends StObject {
   
   /**
     * Include the AST in the returned object
@@ -340,406 +341,394 @@ object TransformOptions {
   }
   
   @scala.inline
-  implicit class TransformOptionsOps[Self <: TransformOptions] (val x: Self) extends AnyVal {
+  implicit class TransformOptionsMutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAst(value: Boolean): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAstNull: Self = StObject.set(x, "ast", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
     
     @scala.inline
-    def setAst(value: Boolean): Self = this.set("ast", value.asInstanceOf[js.Any])
+    def setAuxiliaryCommentAfter(value: String): Self = StObject.set(x, "auxiliaryCommentAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAst: Self = this.set("ast", js.undefined)
+    def setAuxiliaryCommentAfterNull: Self = StObject.set(x, "auxiliaryCommentAfter", null)
     
     @scala.inline
-    def setAstNull: Self = this.set("ast", null)
+    def setAuxiliaryCommentAfterUndefined: Self = StObject.set(x, "auxiliaryCommentAfter", js.undefined)
     
     @scala.inline
-    def setAuxiliaryCommentAfter(value: String): Self = this.set("auxiliaryCommentAfter", value.asInstanceOf[js.Any])
+    def setAuxiliaryCommentBefore(value: String): Self = StObject.set(x, "auxiliaryCommentBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuxiliaryCommentAfter: Self = this.set("auxiliaryCommentAfter", js.undefined)
+    def setAuxiliaryCommentBeforeNull: Self = StObject.set(x, "auxiliaryCommentBefore", null)
     
     @scala.inline
-    def setAuxiliaryCommentAfterNull: Self = this.set("auxiliaryCommentAfter", null)
+    def setAuxiliaryCommentBeforeUndefined: Self = StObject.set(x, "auxiliaryCommentBefore", js.undefined)
     
     @scala.inline
-    def setAuxiliaryCommentBefore(value: String): Self = this.set("auxiliaryCommentBefore", value.asInstanceOf[js.Any])
+    def setBabelrc(value: Boolean): Self = StObject.set(x, "babelrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuxiliaryCommentBefore: Self = this.set("auxiliaryCommentBefore", js.undefined)
+    def setBabelrcNull: Self = StObject.set(x, "babelrc", null)
     
     @scala.inline
-    def setAuxiliaryCommentBeforeNull: Self = this.set("auxiliaryCommentBefore", null)
+    def setBabelrcRoots(value: Boolean | MatchPattern | js.Array[MatchPattern]): Self = StObject.set(x, "babelrcRoots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBabelrc(value: Boolean): Self = this.set("babelrc", value.asInstanceOf[js.Any])
+    def setBabelrcRootsFunction2(value: (/* filename */ js.UndefOr[String], /* context */ MatchPatternContext) => Boolean): Self = StObject.set(x, "babelrcRoots", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteBabelrc: Self = this.set("babelrc", js.undefined)
+    def setBabelrcRootsNull: Self = StObject.set(x, "babelrcRoots", null)
     
     @scala.inline
-    def setBabelrcNull: Self = this.set("babelrc", null)
+    def setBabelrcRootsUndefined: Self = StObject.set(x, "babelrcRoots", js.undefined)
     
     @scala.inline
-    def setBabelrcRootsVarargs(value: MatchPattern*): Self = this.set("babelrcRoots", js.Array(value :_*))
+    def setBabelrcRootsVarargs(value: MatchPattern*): Self = StObject.set(x, "babelrcRoots", js.Array(value :_*))
     
     @scala.inline
-    def setBabelrcRootsFunction2(value: (/* filename */ js.UndefOr[String], /* context */ MatchPatternContext) => Boolean): Self = this.set("babelrcRoots", js.Any.fromFunction2(value))
+    def setBabelrcUndefined: Self = StObject.set(x, "babelrc", js.undefined)
     
     @scala.inline
-    def setBabelrcRoots(value: Boolean | MatchPattern | js.Array[MatchPattern]): Self = this.set("babelrcRoots", value.asInstanceOf[js.Any])
+    def setCaller(value: TransformCaller): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBabelrcRoots: Self = this.set("babelrcRoots", js.undefined)
+    def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
     
     @scala.inline
-    def setBabelrcRootsNull: Self = this.set("babelrcRoots", null)
+    def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaller(value: TransformCaller): Self = this.set("caller", value.asInstanceOf[js.Any])
+    def setCodeNull: Self = StObject.set(x, "code", null)
     
     @scala.inline
-    def deleteCaller: Self = this.set("caller", js.undefined)
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setCode(value: Boolean): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def setCodeNull: Self = this.set("code", null)
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setComments(value: Boolean): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setCompact(value: Boolean | auto): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setCompactNull: Self = StObject.set(x, "compact", null)
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
     @scala.inline
-    def setCompact(value: Boolean | auto): Self = this.set("compact", value.asInstanceOf[js.Any])
+    def setConfigFile(value: String | Boolean): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompact: Self = this.set("compact", js.undefined)
+    def setConfigFileNull: Self = StObject.set(x, "configFile", null)
     
     @scala.inline
-    def setCompactNull: Self = this.set("compact", null)
+    def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
     
     @scala.inline
-    def setConfigFile(value: String | Boolean): Self = this.set("configFile", value.asInstanceOf[js.Any])
+    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigFile: Self = this.set("configFile", js.undefined)
+    def setCwdNull: Self = StObject.set(x, "cwd", null)
     
     @scala.inline
-    def setConfigFileNull: Self = this.set("configFile", null)
+    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
     @scala.inline
-    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    def setEnv(value: StringDictionary[js.UndefOr[TransformOptions | Null]]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCwd: Self = this.set("cwd", js.undefined)
+    def setEnvName(value: String): Self = StObject.set(x, "envName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCwdNull: Self = this.set("cwd", null)
+    def setEnvNameUndefined: Self = StObject.set(x, "envName", js.undefined)
     
     @scala.inline
-    def setEnv(value: StringDictionary[js.UndefOr[TransformOptions | Null]]): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setEnvNull: Self = StObject.set(x, "env", null)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def setEnvNull: Self = this.set("env", null)
+    def setExclude(value: MatchPattern | js.Array[MatchPattern]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvName(value: String): Self = this.set("envName", value.asInstanceOf[js.Any])
+    def setExcludeFunction2(value: (/* filename */ js.UndefOr[String], /* context */ MatchPatternContext) => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteEnvName: Self = this.set("envName", js.undefined)
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def setExcludeVarargs(value: MatchPattern*): Self = this.set("exclude", js.Array(value :_*))
+    def setExcludeVarargs(value: MatchPattern*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeFunction2(value: (/* filename */ js.UndefOr[String], /* context */ MatchPatternContext) => Boolean): Self = this.set("exclude", js.Any.fromFunction2(value))
+    def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: MatchPattern | js.Array[MatchPattern]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setExtendsNull: Self = StObject.set(x, "extends", null)
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
     
     @scala.inline
-    def setExtends(value: String): Self = this.set("extends", value.asInstanceOf[js.Any])
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtends: Self = this.set("extends", js.undefined)
+    def setFilenameNull: Self = StObject.set(x, "filename", null)
     
     @scala.inline
-    def setExtendsNull: Self = this.set("extends", null)
+    def setFilenameRelative(value: String): Self = StObject.set(x, "filenameRelative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setFilenameRelativeNull: Self = StObject.set(x, "filenameRelative", null)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setFilenameRelativeUndefined: Self = StObject.set(x, "filenameRelative", js.undefined)
     
     @scala.inline
-    def setFilenameNull: Self = this.set("filename", null)
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def setFilenameRelative(value: String): Self = this.set("filenameRelative", value.asInstanceOf[js.Any])
+    def setGeneratorOpts(value: GeneratorOptions): Self = StObject.set(x, "generatorOpts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilenameRelative: Self = this.set("filenameRelative", js.undefined)
+    def setGeneratorOptsNull: Self = StObject.set(x, "generatorOpts", null)
     
     @scala.inline
-    def setFilenameRelativeNull: Self = this.set("filenameRelative", null)
+    def setGeneratorOptsUndefined: Self = StObject.set(x, "generatorOpts", js.undefined)
     
     @scala.inline
-    def setGeneratorOpts(value: GeneratorOptions): Self = this.set("generatorOpts", value.asInstanceOf[js.Any])
+    def setGetModuleId(value: /* moduleName */ String => js.UndefOr[String | Null]): Self = StObject.set(x, "getModuleId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGeneratorOpts: Self = this.set("generatorOpts", js.undefined)
+    def setGetModuleIdNull: Self = StObject.set(x, "getModuleId", null)
     
     @scala.inline
-    def setGeneratorOptsNull: Self = this.set("generatorOpts", null)
+    def setGetModuleIdUndefined: Self = StObject.set(x, "getModuleId", js.undefined)
     
     @scala.inline
-    def setGetModuleId(value: /* moduleName */ String => js.UndefOr[String | Null]): Self = this.set("getModuleId", js.Any.fromFunction1(value))
+    def setHighlightCode(value: Boolean): Self = StObject.set(x, "highlightCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetModuleId: Self = this.set("getModuleId", js.undefined)
+    def setHighlightCodeNull: Self = StObject.set(x, "highlightCode", null)
     
     @scala.inline
-    def setGetModuleIdNull: Self = this.set("getModuleId", null)
+    def setHighlightCodeUndefined: Self = StObject.set(x, "highlightCode", js.undefined)
     
     @scala.inline
-    def setHighlightCode(value: Boolean): Self = this.set("highlightCode", value.asInstanceOf[js.Any])
+    def setIgnore(value: js.Array[MatchPattern]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighlightCode: Self = this.set("highlightCode", js.undefined)
+    def setIgnoreNull: Self = StObject.set(x, "ignore", null)
     
     @scala.inline
-    def setHighlightCodeNull: Self = this.set("highlightCode", null)
+    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
     @scala.inline
-    def setIgnoreVarargs(value: MatchPattern*): Self = this.set("ignore", js.Array(value :_*))
+    def setIgnoreVarargs(value: MatchPattern*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
     @scala.inline
-    def setIgnore(value: js.Array[MatchPattern]): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    def setInclude(value: MatchPattern | js.Array[MatchPattern]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    def setIncludeFunction2(value: (/* filename */ js.UndefOr[String], /* context */ MatchPatternContext) => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIgnoreNull: Self = this.set("ignore", null)
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def setIncludeVarargs(value: MatchPattern*): Self = this.set("include", js.Array(value :_*))
+    def setIncludeVarargs(value: MatchPattern*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeFunction2(value: (/* filename */ js.UndefOr[String], /* context */ MatchPatternContext) => Boolean): Self = this.set("include", js.Any.fromFunction2(value))
+    def setInputSourceMap(value: js.Object): Self = StObject.set(x, "inputSourceMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: MatchPattern | js.Array[MatchPattern]): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setInputSourceMapNull: Self = StObject.set(x, "inputSourceMap", null)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setInputSourceMapUndefined: Self = StObject.set(x, "inputSourceMap", js.undefined)
     
     @scala.inline
-    def setInputSourceMap(value: js.Object): Self = this.set("inputSourceMap", value.asInstanceOf[js.Any])
+    def setMinified(value: Boolean): Self = StObject.set(x, "minified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputSourceMap: Self = this.set("inputSourceMap", js.undefined)
+    def setMinifiedNull: Self = StObject.set(x, "minified", null)
     
     @scala.inline
-    def setInputSourceMapNull: Self = this.set("inputSourceMap", null)
+    def setMinifiedUndefined: Self = StObject.set(x, "minified", js.undefined)
     
     @scala.inline
-    def setMinified(value: Boolean): Self = this.set("minified", value.asInstanceOf[js.Any])
+    def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinified: Self = this.set("minified", js.undefined)
+    def setModuleIdNull: Self = StObject.set(x, "moduleId", null)
     
     @scala.inline
-    def setMinifiedNull: Self = this.set("minified", null)
+    def setModuleIdUndefined: Self = StObject.set(x, "moduleId", js.undefined)
     
     @scala.inline
-    def setModuleId(value: String): Self = this.set("moduleId", value.asInstanceOf[js.Any])
+    def setModuleIds(value: Boolean): Self = StObject.set(x, "moduleIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModuleId: Self = this.set("moduleId", js.undefined)
+    def setModuleIdsNull: Self = StObject.set(x, "moduleIds", null)
     
     @scala.inline
-    def setModuleIdNull: Self = this.set("moduleId", null)
+    def setModuleIdsUndefined: Self = StObject.set(x, "moduleIds", js.undefined)
     
     @scala.inline
-    def setModuleIds(value: Boolean): Self = this.set("moduleIds", value.asInstanceOf[js.Any])
+    def setModuleRoot(value: String): Self = StObject.set(x, "moduleRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModuleIds: Self = this.set("moduleIds", js.undefined)
+    def setModuleRootNull: Self = StObject.set(x, "moduleRoot", null)
     
     @scala.inline
-    def setModuleIdsNull: Self = this.set("moduleIds", null)
+    def setModuleRootUndefined: Self = StObject.set(x, "moduleRoot", js.undefined)
     
     @scala.inline
-    def setModuleRoot(value: String): Self = this.set("moduleRoot", value.asInstanceOf[js.Any])
+    def setOnly(value: js.Array[MatchPattern]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModuleRoot: Self = this.set("moduleRoot", js.undefined)
+    def setOnlyNull: Self = StObject.set(x, "only", null)
     
     @scala.inline
-    def setModuleRootNull: Self = this.set("moduleRoot", null)
+    def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
     @scala.inline
-    def setOnlyVarargs(value: MatchPattern*): Self = this.set("only", js.Array(value :_*))
+    def setOnlyVarargs(value: MatchPattern*): Self = StObject.set(x, "only", js.Array(value :_*))
     
     @scala.inline
-    def setOnly(value: js.Array[MatchPattern]): Self = this.set("only", value.asInstanceOf[js.Any])
+    def setOverrides(value: js.Array[TransformOptions]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnly: Self = this.set("only", js.undefined)
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def setOnlyNull: Self = this.set("only", null)
+    def setOverridesVarargs(value: TransformOptions*): Self = StObject.set(x, "overrides", js.Array(value :_*))
     
     @scala.inline
-    def setOverridesVarargs(value: TransformOptions*): Self = this.set("overrides", js.Array(value :_*))
+    def setParserOpts(value: ParserOptions): Self = StObject.set(x, "parserOpts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrides(value: js.Array[TransformOptions]): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    def setParserOptsNull: Self = StObject.set(x, "parserOpts", null)
     
     @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setParserOptsUndefined: Self = StObject.set(x, "parserOpts", js.undefined)
     
     @scala.inline
-    def setParserOpts(value: ParserOptions): Self = this.set("parserOpts", value.asInstanceOf[js.Any])
+    def setPlugins(value: js.Array[PluginItem]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParserOpts: Self = this.set("parserOpts", js.undefined)
+    def setPluginsNull: Self = StObject.set(x, "plugins", null)
     
     @scala.inline
-    def setParserOptsNull: Self = this.set("parserOpts", null)
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def setPluginsVarargs(value: PluginItem*): Self = this.set("plugins", js.Array(value :_*))
+    def setPluginsVarargs(value: PluginItem*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setPlugins(value: js.Array[PluginItem]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setPresets(value: js.Array[PluginItem]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setPresetsNull: Self = StObject.set(x, "presets", null)
     
     @scala.inline
-    def setPluginsNull: Self = this.set("plugins", null)
+    def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
     
     @scala.inline
-    def setPresetsVarargs(value: PluginItem*): Self = this.set("presets", js.Array(value :_*))
+    def setPresetsVarargs(value: PluginItem*): Self = StObject.set(x, "presets", js.Array(value :_*))
     
     @scala.inline
-    def setPresets(value: js.Array[PluginItem]): Self = this.set("presets", value.asInstanceOf[js.Any])
+    def setRetainLines(value: Boolean): Self = StObject.set(x, "retainLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePresets: Self = this.set("presets", js.undefined)
+    def setRetainLinesNull: Self = StObject.set(x, "retainLines", null)
     
     @scala.inline
-    def setPresetsNull: Self = this.set("presets", null)
+    def setRetainLinesUndefined: Self = StObject.set(x, "retainLines", js.undefined)
     
     @scala.inline
-    def setRetainLines(value: Boolean): Self = this.set("retainLines", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRetainLines: Self = this.set("retainLines", js.undefined)
+    def setRootMode(value: root | upward | `upward-optional`): Self = StObject.set(x, "rootMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetainLinesNull: Self = this.set("retainLines", null)
+    def setRootModeUndefined: Self = StObject.set(x, "rootMode", js.undefined)
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRootNull: Self = StObject.set(x, "root", null)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def setRootNull: Self = this.set("root", null)
+    def setShouldPrintComment(value: /* commentContents */ String => Boolean): Self = StObject.set(x, "shouldPrintComment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRootMode(value: root | upward | `upward-optional`): Self = this.set("rootMode", value.asInstanceOf[js.Any])
+    def setShouldPrintCommentNull: Self = StObject.set(x, "shouldPrintComment", null)
     
     @scala.inline
-    def deleteRootMode: Self = this.set("rootMode", js.undefined)
+    def setShouldPrintCommentUndefined: Self = StObject.set(x, "shouldPrintComment", js.undefined)
     
     @scala.inline
-    def setShouldPrintComment(value: /* commentContents */ String => Boolean): Self = this.set("shouldPrintComment", js.Any.fromFunction1(value))
+    def setSourceFileName(value: String): Self = StObject.set(x, "sourceFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShouldPrintComment: Self = this.set("shouldPrintComment", js.undefined)
+    def setSourceFileNameNull: Self = StObject.set(x, "sourceFileName", null)
     
     @scala.inline
-    def setShouldPrintCommentNull: Self = this.set("shouldPrintComment", null)
+    def setSourceFileNameUndefined: Self = StObject.set(x, "sourceFileName", js.undefined)
     
     @scala.inline
-    def setSourceFileName(value: String): Self = this.set("sourceFileName", value.asInstanceOf[js.Any])
+    def setSourceMaps(value: Boolean | `inline` | both): Self = StObject.set(x, "sourceMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceFileName: Self = this.set("sourceFileName", js.undefined)
+    def setSourceMapsNull: Self = StObject.set(x, "sourceMaps", null)
     
     @scala.inline
-    def setSourceFileNameNull: Self = this.set("sourceFileName", null)
+    def setSourceMapsUndefined: Self = StObject.set(x, "sourceMaps", js.undefined)
     
     @scala.inline
-    def setSourceMaps(value: Boolean | `inline` | both): Self = this.set("sourceMaps", value.asInstanceOf[js.Any])
+    def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceMaps: Self = this.set("sourceMaps", js.undefined)
+    def setSourceRootNull: Self = StObject.set(x, "sourceRoot", null)
     
     @scala.inline
-    def setSourceMapsNull: Self = this.set("sourceMaps", null)
+    def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
     
     @scala.inline
-    def setSourceRoot(value: String): Self = this.set("sourceRoot", value.asInstanceOf[js.Any])
+    def setSourceType(value: script | module | unambiguous): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceRoot: Self = this.set("sourceRoot", js.undefined)
+    def setSourceTypeNull: Self = StObject.set(x, "sourceType", null)
     
     @scala.inline
-    def setSourceRootNull: Self = this.set("sourceRoot", null)
+    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
     @scala.inline
-    def setSourceType(value: script | module | unambiguous): Self = this.set("sourceType", value.asInstanceOf[js.Any])
+    def setTest(value: MatchPattern | js.Array[MatchPattern]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceType: Self = this.set("sourceType", js.undefined)
+    def setTestFunction2(value: (/* filename */ js.UndefOr[String], /* context */ MatchPatternContext) => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSourceTypeNull: Self = this.set("sourceType", null)
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
     @scala.inline
-    def setTestVarargs(value: MatchPattern*): Self = this.set("test", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestFunction2(value: (/* filename */ js.UndefOr[String], /* context */ MatchPatternContext) => Boolean): Self = this.set("test", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTest(value: MatchPattern | js.Array[MatchPattern]): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
+    def setTestVarargs(value: MatchPattern*): Self = StObject.set(x, "test", js.Array(value :_*))
     
     @scala.inline
     def setWrapPluginVisitorMethod(
@@ -752,12 +741,12 @@ object TransformOptions {
           /* state */ _, 
           Unit
         ]
-    ): Self = this.set("wrapPluginVisitorMethod", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "wrapPluginVisitorMethod", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteWrapPluginVisitorMethod: Self = this.set("wrapPluginVisitorMethod", js.undefined)
+    def setWrapPluginVisitorMethodNull: Self = StObject.set(x, "wrapPluginVisitorMethod", null)
     
     @scala.inline
-    def setWrapPluginVisitorMethodNull: Self = this.set("wrapPluginVisitorMethod", null)
+    def setWrapPluginVisitorMethodUndefined: Self = StObject.set(x, "wrapPluginVisitorMethod", js.undefined)
   }
 }

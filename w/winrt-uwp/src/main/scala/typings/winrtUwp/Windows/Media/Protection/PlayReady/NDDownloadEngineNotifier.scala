@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains methods that a download engine plug-in uses to send notifications to a PlayReady-ND client. */
 @js.native
-trait NDDownloadEngineNotifier extends js.Object {
+trait NDDownloadEngineNotifier extends StObject {
   
   /**
     * Called by the download engine when a content identifier is received.
@@ -52,36 +53,24 @@ object NDDownloadEngineNotifier {
   }
   
   @scala.inline
-  implicit class NDDownloadEngineNotifierOps[Self <: NDDownloadEngineNotifier] (val x: Self) extends AnyVal {
+  implicit class NDDownloadEngineNotifierMutableBuilder[Self <: NDDownloadEngineNotifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnContentIDReceived(value: INDLicenseFetchDescriptor => Unit): Self = StObject.set(x, "onContentIDReceived", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnDataReceived(value: (js.Array[Double], Double) => Unit): Self = StObject.set(x, "onDataReceived", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnEndOfStream(value: () => Unit): Self = StObject.set(x, "onEndOfStream", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnContentIDReceived(value: INDLicenseFetchDescriptor => Unit): Self = this.set("onContentIDReceived", js.Any.fromFunction1(value))
+    def setOnNetworkError(value: () => Unit): Self = StObject.set(x, "onNetworkError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnDataReceived(value: (js.Array[Double], Double) => Unit): Self = this.set("onDataReceived", js.Any.fromFunction2(value))
+    def setOnPlayReadyObjectReceived(value: js.Array[Double] => Unit): Self = StObject.set(x, "onPlayReadyObjectReceived", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEndOfStream(value: () => Unit): Self = this.set("onEndOfStream", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnNetworkError(value: () => Unit): Self = this.set("onNetworkError", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnPlayReadyObjectReceived(value: js.Array[Double] => Unit): Self = this.set("onPlayReadyObjectReceived", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnStreamOpened(value: () => Unit): Self = this.set("onStreamOpened", js.Any.fromFunction0(value))
+    def setOnStreamOpened(value: () => Unit): Self = StObject.set(x, "onStreamOpened", js.Any.fromFunction0(value))
   }
 }

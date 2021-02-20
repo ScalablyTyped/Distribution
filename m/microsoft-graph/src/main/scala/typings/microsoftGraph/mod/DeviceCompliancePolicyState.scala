@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,63 +34,51 @@ object DeviceCompliancePolicyState {
   }
   
   @scala.inline
-  implicit class DeviceCompliancePolicyStateOps[Self <: DeviceCompliancePolicyState] (val x: Self) extends AnyVal {
+  implicit class DeviceCompliancePolicyStateMutableBuilder[Self <: DeviceCompliancePolicyState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setPlatformType(value: PolicyPlatformType): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setSettingCount(value: Double): Self = StObject.set(x, "settingCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformType(value: PolicyPlatformType): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    def setSettingCountUndefined: Self = StObject.set(x, "settingCount", js.undefined)
     
     @scala.inline
-    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    def setSettingStates(value: NullableOption[js.Array[DeviceCompliancePolicySettingState]]): Self = StObject.set(x, "settingStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettingCount(value: Double): Self = this.set("settingCount", value.asInstanceOf[js.Any])
+    def setSettingStatesNull: Self = StObject.set(x, "settingStates", null)
     
     @scala.inline
-    def deleteSettingCount: Self = this.set("settingCount", js.undefined)
+    def setSettingStatesUndefined: Self = StObject.set(x, "settingStates", js.undefined)
     
     @scala.inline
-    def setSettingStatesVarargs(value: DeviceCompliancePolicySettingState*): Self = this.set("settingStates", js.Array(value :_*))
+    def setSettingStatesVarargs(value: DeviceCompliancePolicySettingState*): Self = StObject.set(x, "settingStates", js.Array(value :_*))
     
     @scala.inline
-    def setSettingStates(value: NullableOption[js.Array[DeviceCompliancePolicySettingState]]): Self = this.set("settingStates", value.asInstanceOf[js.Any])
+    def setState(value: ComplianceStatus): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettingStates: Self = this.set("settingStates", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setSettingStatesNull: Self = this.set("settingStates", null)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: ComplianceStatus): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

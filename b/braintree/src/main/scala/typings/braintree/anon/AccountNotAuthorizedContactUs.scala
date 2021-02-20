@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountNotAuthorizedContactUs extends js.Object {
+trait AccountNotAuthorizedContactUs extends StObject {
   
   var AccountNotAuthorizedContactUs: String = js.native
   
@@ -38,39 +39,27 @@ object AccountNotAuthorizedContactUs {
   }
   
   @scala.inline
-  implicit class AccountNotAuthorizedContactUsOps[Self <: AccountNotAuthorizedContactUs] (val x: Self) extends AnyVal {
+  implicit class AccountNotAuthorizedContactUsMutableBuilder[Self <: AccountNotAuthorizedContactUs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountNotAuthorizedContactUs(value: String): Self = StObject.set(x, "AccountNotAuthorizedContactUs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnotherUsBankMerchantAccount(value: String): Self = StObject.set(x, "AnotherUsBankMerchantAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApprove(value: String): Self = StObject.set(x, "Approve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountNotAuthorizedContactUs(value: String): Self = this.set("AccountNotAuthorizedContactUs", value.asInstanceOf[js.Any])
+    def setBankRejectedNone(value: String): Self = StObject.set(x, "BankRejectedNone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnotherUsBankMerchantAccount(value: String): Self = this.set("AnotherUsBankMerchantAccount", value.asInstanceOf[js.Any])
+    def setBankRejectedUpdateFundingInformation(value: String): Self = StObject.set(x, "BankRejectedUpdateFundingInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprove(value: String): Self = this.set("Approve", value.asInstanceOf[js.Any])
+    def setInsufficientFundsContactUs(value: String): Self = StObject.set(x, "InsufficientFundsContactUs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankRejectedNone(value: String): Self = this.set("BankRejectedNone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBankRejectedUpdateFundingInformation(value: String): Self = this.set("BankRejectedUpdateFundingInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInsufficientFundsContactUs(value: String): Self = this.set("InsufficientFundsContactUs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsBankMerchantAccount(value: String): Self = this.set("UsBankMerchantAccount", value.asInstanceOf[js.Any])
+    def setUsBankMerchantAccount(value: String): Self = StObject.set(x, "UsBankMerchantAccount", value.asInstanceOf[js.Any])
   }
 }

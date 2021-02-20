@@ -1,5 +1,6 @@
 package typings.inversifyInjectDecorators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("inversify-inject-decorators", JSImport.Namespace)
 @js.native
-object inversifyInjectDecoratorsRequire extends js.Object
+object inversifyInjectDecoratorsRequire extends StObject

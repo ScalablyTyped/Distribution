@@ -1,11 +1,12 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBatteryInfoSuccessCallbackResult extends js.Object {
+trait GetBatteryInfoSuccessCallbackResult extends StObject {
   
   /** 是否正在充电中 */
   var isCharging: Boolean = js.native
@@ -22,24 +23,12 @@ object GetBatteryInfoSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class GetBatteryInfoSuccessCallbackResultOps[Self <: GetBatteryInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class GetBatteryInfoSuccessCallbackResultMutableBuilder[Self <: GetBatteryInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCharging(value: Boolean): Self = StObject.set(x, "isCharging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsCharging(value: Boolean): Self = this.set("isCharging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

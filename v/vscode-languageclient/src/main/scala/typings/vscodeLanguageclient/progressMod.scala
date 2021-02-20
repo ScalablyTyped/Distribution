@@ -2,14 +2,14 @@ package typings.vscodeLanguageclient
 
 import typings.vscodeLanguageclient.clientMod.BaseLanguageClient
 import typings.vscodeLanguageclient.clientMod.StaticFeature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient/lib/progress", JSImport.Namespace)
-@js.native
-object progressMod extends js.Object {
+object progressMod {
   
+  @JSImport("vscode-languageclient/lib/progress", "ProgressFeature")
   @js.native
   class ProgressFeature protected () extends StaticFeature {
     def this(_client: BaseLanguageClient) = this()

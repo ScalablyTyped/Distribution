@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,24 +39,12 @@ object FetchPopupFeaturesPromisesPerLayerView {
   }
   
   @scala.inline
-  implicit class FetchPopupFeaturesPromisesPerLayerViewOps[Self <: FetchPopupFeaturesPromisesPerLayerView] (val x: Self) extends AnyVal {
+  implicit class FetchPopupFeaturesPromisesPerLayerViewMutableBuilder[Self <: FetchPopupFeaturesPromisesPerLayerView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLayerView(value: LayerView): Self = this.set("layerView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPromise(value: js.Promise[js.Array[Graphic]]): Self = this.set("promise", value.asInstanceOf[js.Any])
+    def setPromise(value: js.Promise[js.Array[Graphic]]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

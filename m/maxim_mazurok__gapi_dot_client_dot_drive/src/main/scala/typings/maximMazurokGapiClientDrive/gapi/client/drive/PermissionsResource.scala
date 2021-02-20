@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDrive.anon.MoveToNewOwnersRoot
 import typings.maximMazurokGapiClientDrive.anon.PermissionId
 import typings.maximMazurokGapiClientDrive.anon.RemoveExpiration
 import typings.maximMazurokGapiClientDrive.anon.TransferOwnership
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PermissionsResource extends js.Object {
+trait PermissionsResource extends StObject {
   
   /** Creates a permission for a file or shared drive. */
   def create(request: EmailMessage): Request[Permission] = js.native

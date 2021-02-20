@@ -2,27 +2,39 @@ package typings.rcSteps
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.rcSteps.anon.Current
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-steps", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  class Step ()
-    extends typings.rcSteps.stepMod.Step
-  
+  @JSImport("rc-steps", JSImport.Default)
   @js.native
   class default ()
     extends typings.rcSteps.stepsMod.default
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var Step: Instantiable0[typings.rcSteps.stepMod.default] = js.native
+    @JSImport("rc-steps", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var defaultProps: Current = js.native
+    @JSImport("rc-steps", "default.Step")
+    @js.native
+    def Step: Instantiable0[typings.rcSteps.stepMod.default] = js.native
+    @scala.inline
+    def Step_=(x: Instantiable0[typings.rcSteps.stepMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rc-steps", "default.defaultProps")
+    @js.native
+    def defaultProps: Current = js.native
+    @scala.inline
+    def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("rc-steps", "Step")
+  @js.native
+  class Step ()
+    extends typings.rcSteps.stepMod.default
 }

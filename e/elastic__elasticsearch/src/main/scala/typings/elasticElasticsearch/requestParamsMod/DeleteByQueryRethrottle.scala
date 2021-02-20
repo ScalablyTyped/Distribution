@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object DeleteByQueryRethrottle {
   }
   
   @scala.inline
-  implicit class DeleteByQueryRethrottleOps[Self <: DeleteByQueryRethrottle] (val x: Self) extends AnyVal {
+  implicit class DeleteByQueryRethrottleMutableBuilder[Self <: DeleteByQueryRethrottle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequests_per_second(value: Double): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequests_per_second(value: Double): Self = this.set("requests_per_second", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTask_id(value: String): Self = this.set("task_id", value.asInstanceOf[js.Any])
+    def setTask_id(value: String): Self = StObject.set(x, "task_id", value.asInstanceOf[js.Any])
   }
 }

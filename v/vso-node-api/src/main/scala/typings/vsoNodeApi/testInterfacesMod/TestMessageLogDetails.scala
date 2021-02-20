@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.testInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestMessageLogDetails extends js.Object {
+trait TestMessageLogDetails extends StObject {
   
   /**
     * Date when the resource is created
@@ -32,27 +33,15 @@ object TestMessageLogDetails {
   }
   
   @scala.inline
-  implicit class TestMessageLogDetailsOps[Self <: TestMessageLogDetails] (val x: Self) extends AnyVal {
+  implicit class TestMessageLogDetailsMutableBuilder[Self <: TestMessageLogDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntryId(value: Double): Self = StObject.set(x, "entryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDateCreated(value: Date): Self = this.set("dateCreated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntryId(value: Double): Self = this.set("entryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

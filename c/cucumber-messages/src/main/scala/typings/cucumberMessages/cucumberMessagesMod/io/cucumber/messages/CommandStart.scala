@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,17 +30,19 @@ class CommandStart () extends ICommandStart {
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-/* static members */
-@JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart")
-@js.native
-object CommandStart extends js.Object {
+object CommandStart {
   
   /**
     * Creates a new CommandStart instance using the specified properties.
     * @param [properties] Properties to set
     * @returns CommandStart instance
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.create")
+  @js.native
   def create(): CommandStart = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.create")
+  @js.native
   def create(properties: ICommandStart): CommandStart = js.native
   
   /**
@@ -50,9 +53,18 @@ object CommandStart extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.decode")
+  @js.native
   def decode(reader: Reader): CommandStart = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.decode")
+  @js.native
   def decode(reader: Reader, length: Double): CommandStart = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.decode")
+  @js.native
   def decode(reader: Uint8Array): CommandStart = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): CommandStart = js.native
   
   /**
@@ -62,7 +74,12 @@ object CommandStart extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): CommandStart = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): CommandStart = js.native
   
   /**
@@ -71,7 +88,12 @@ object CommandStart extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.encode")
+  @js.native
   def encode(message: ICommandStart): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.encode")
+  @js.native
   def encode(message: ICommandStart, writer: Writer): Writer = js.native
   
   /**
@@ -80,7 +102,12 @@ object CommandStart extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ICommandStart): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ICommandStart, writer: Writer): Writer = js.native
   
   /**
@@ -88,6 +115,9 @@ object CommandStart extends js.Object {
     * @param object Plain object
     * @returns CommandStart
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): CommandStart = js.native
   
   /**
@@ -96,7 +126,12 @@ object CommandStart extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.toObject")
+  @js.native
   def toObject(message: CommandStart): StringDictionary[js.Any] = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.toObject")
+  @js.native
   def toObject(message: CommandStart, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -104,5 +139,8 @@ object CommandStart extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandStart.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

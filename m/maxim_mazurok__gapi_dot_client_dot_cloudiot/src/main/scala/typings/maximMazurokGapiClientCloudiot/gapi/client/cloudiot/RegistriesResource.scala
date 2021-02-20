@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientCloudiot.anon.Resource
 import typings.maximMazurokGapiClientCloudiot.anon.UpdateMask
 import typings.maximMazurokGapiClientCloudiot.anon.UploadType
 import typings.maximMazurokGapiClientCloudiot.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegistriesResource extends js.Object {
+trait RegistriesResource extends StObject {
   
   def bindDeviceToGateway(request: Fields, body: BindDeviceToGatewayRequest): Request[js.Object] = js.native
   /** Associates the device with the gateway. */

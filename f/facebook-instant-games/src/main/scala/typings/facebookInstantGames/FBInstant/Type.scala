@@ -1,5 +1,6 @@
 package typings.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.facebookInstantGames.facebookInstantGamesStrings.GROUP
   - typings.facebookInstantGames.facebookInstantGamesStrings.SOLO
 */
-trait Type extends js.Object
+trait Type extends StObject
 object Type {
   
   @scala.inline

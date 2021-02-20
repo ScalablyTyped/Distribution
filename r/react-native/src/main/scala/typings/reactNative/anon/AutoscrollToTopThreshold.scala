@@ -1,11 +1,12 @@
 package typings.reactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoscrollToTopThreshold extends js.Object {
+trait AutoscrollToTopThreshold extends StObject {
   
   var autoscrollToTopThreshold: js.UndefOr[Double | Null] = js.native
   
@@ -20,30 +21,18 @@ object AutoscrollToTopThreshold {
   }
   
   @scala.inline
-  implicit class AutoscrollToTopThresholdOps[Self <: AutoscrollToTopThreshold] (val x: Self) extends AnyVal {
+  implicit class AutoscrollToTopThresholdMutableBuilder[Self <: AutoscrollToTopThreshold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoscrollToTopThreshold(value: Double): Self = StObject.set(x, "autoscrollToTopThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoscrollToTopThresholdNull: Self = StObject.set(x, "autoscrollToTopThreshold", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoscrollToTopThresholdUndefined: Self = StObject.set(x, "autoscrollToTopThreshold", js.undefined)
     
     @scala.inline
-    def setMinIndexForVisible(value: Double): Self = this.set("minIndexForVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAutoscrollToTopThreshold(value: Double): Self = this.set("autoscrollToTopThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoscrollToTopThreshold: Self = this.set("autoscrollToTopThreshold", js.undefined)
-    
-    @scala.inline
-    def setAutoscrollToTopThresholdNull: Self = this.set("autoscrollToTopThreshold", null)
+    def setMinIndexForVisible(value: Double): Self = StObject.set(x, "minIndexForVisible", value.asInstanceOf[js.Any])
   }
 }

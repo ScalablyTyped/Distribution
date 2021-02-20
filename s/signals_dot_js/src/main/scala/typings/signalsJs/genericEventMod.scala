@@ -2,14 +2,14 @@ package typings.signalsJs
 
 import typings.signalsJs.ieventMod.IEvent
 import typings.signalsJs.iprioritysignalMod.IPrioritySignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("signals.js/lib/org/osflash/signals/events/GenericEvent", JSImport.Namespace)
-@js.native
-object genericEventMod extends js.Object {
+object genericEventMod {
   
+  @JSImport("signals.js/lib/org/osflash/signals/events/GenericEvent", "GenericEvent")
   @js.native
   class GenericEvent () extends IEvent {
     def this(bubbles: Boolean) = this()

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUploadStatusRequest extends js.Object {
+trait GetUploadStatusRequest extends StObject {
   
   /**
     * The ID of the upload. This value is returned by the UploadEntityDefinitions action.
@@ -21,21 +22,9 @@ object GetUploadStatusRequest {
   }
   
   @scala.inline
-  implicit class GetUploadStatusRequestOps[Self <: GetUploadStatusRequest] (val x: Self) extends AnyVal {
+  implicit class GetUploadStatusRequestMutableBuilder[Self <: GetUploadStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUploadId(value: UploadId): Self = this.set("uploadId", value.asInstanceOf[js.Any])
+    def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InboxPlacementTrackingOption extends js.Object {
+trait InboxPlacementTrackingOption extends StObject {
   
   /**
     * Specifies whether inbox placement data is being tracked for the domain.
@@ -26,33 +27,21 @@ object InboxPlacementTrackingOption {
   }
   
   @scala.inline
-  implicit class InboxPlacementTrackingOptionOps[Self <: InboxPlacementTrackingOption] (val x: Self) extends AnyVal {
+  implicit class InboxPlacementTrackingOptionMutableBuilder[Self <: InboxPlacementTrackingOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobal(value: Enabled): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalUndefined: Self = StObject.set(x, "Global", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrackedIsps(value: IspNameList): Self = StObject.set(x, "TrackedIsps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: Enabled): Self = this.set("Global", value.asInstanceOf[js.Any])
+    def setTrackedIspsUndefined: Self = StObject.set(x, "TrackedIsps", js.undefined)
     
     @scala.inline
-    def deleteGlobal: Self = this.set("Global", js.undefined)
-    
-    @scala.inline
-    def setTrackedIspsVarargs(value: IspName*): Self = this.set("TrackedIsps", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrackedIsps(value: IspNameList): Self = this.set("TrackedIsps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackedIsps: Self = this.set("TrackedIsps", js.undefined)
+    def setTrackedIspsVarargs(value: IspName*): Self = StObject.set(x, "TrackedIsps", js.Array(value :_*))
   }
 }

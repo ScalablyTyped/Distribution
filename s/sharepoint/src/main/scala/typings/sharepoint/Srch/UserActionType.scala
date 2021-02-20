@@ -1,14 +1,15 @@
 package typings.sharepoint.Srch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserActionType extends js.Object
+sealed trait UserActionType extends StObject
 @JSGlobal("Srch.UserActionType")
 @js.native
-object UserActionType extends js.Object {
+object UserActionType extends StObject {
   
   @js.native
   sealed trait filterLanguage extends UserActionType

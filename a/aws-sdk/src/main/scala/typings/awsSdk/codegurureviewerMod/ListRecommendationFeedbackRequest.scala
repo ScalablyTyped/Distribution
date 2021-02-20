@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRecommendationFeedbackRequest extends js.Object {
+trait ListRecommendationFeedbackRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the  CodeReview  object. 
@@ -41,51 +42,39 @@ object ListRecommendationFeedbackRequest {
   }
   
   @scala.inline
-  implicit class ListRecommendationFeedbackRequestOps[Self <: ListRecommendationFeedbackRequest] (val x: Self) extends AnyVal {
+  implicit class ListRecommendationFeedbackRequestMutableBuilder[Self <: ListRecommendationFeedbackRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def setCodeReviewArn(value: Arn): Self = this.set("CodeReviewArn", value.asInstanceOf[js.Any])
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setRecommendationIds(value: RecommendationIds): Self = StObject.set(x, "RecommendationIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRecommendationIdsUndefined: Self = StObject.set(x, "RecommendationIds", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setRecommendationIdsVarargs(value: RecommendationId*): Self = StObject.set(x, "RecommendationIds", js.Array(value :_*))
     
     @scala.inline
-    def setRecommendationIdsVarargs(value: RecommendationId*): Self = this.set("RecommendationIds", js.Array(value :_*))
+    def setUserIds(value: UserIds): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendationIds(value: RecommendationIds): Self = this.set("RecommendationIds", value.asInstanceOf[js.Any])
+    def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
     @scala.inline
-    def deleteRecommendationIds: Self = this.set("RecommendationIds", js.undefined)
-    
-    @scala.inline
-    def setUserIdsVarargs(value: UserId*): Self = this.set("UserIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserIds(value: UserIds): Self = this.set("UserIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIds: Self = this.set("UserIds", js.undefined)
+    def setUserIdsVarargs(value: UserId*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
   }
 }

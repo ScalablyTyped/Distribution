@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeshSpec extends js.Object {
+trait MeshSpec extends StObject {
   
   /**
     * The egress filter rules for the service mesh.
@@ -21,24 +22,12 @@ object MeshSpec {
   }
   
   @scala.inline
-  implicit class MeshSpecOps[Self <: MeshSpec] (val x: Self) extends AnyVal {
+  implicit class MeshSpecMutableBuilder[Self <: MeshSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEgressFilter(value: MeshSpecEgressFilter): Self = StObject.set(x, "egressFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEgressFilter(value: MeshSpecEgressFilter): Self = this.set("egressFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEgressFilter: Self = this.set("egressFilter", js.undefined)
+    def setEgressFilterUndefined: Self = StObject.set(x, "egressFilter", js.undefined)
   }
 }

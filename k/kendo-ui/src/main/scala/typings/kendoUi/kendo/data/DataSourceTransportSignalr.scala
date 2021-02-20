@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceTransportSignalr extends js.Object {
+trait DataSourceTransportSignalr extends StObject {
   
   var client: js.UndefOr[DataSourceTransportSignalrClient] = js.native
   
@@ -24,42 +25,30 @@ object DataSourceTransportSignalr {
   }
   
   @scala.inline
-  implicit class DataSourceTransportSignalrOps[Self <: DataSourceTransportSignalr] (val x: Self) extends AnyVal {
+  implicit class DataSourceTransportSignalrMutableBuilder[Self <: DataSourceTransportSignalr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: DataSourceTransportSignalrClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHub(value: js.Any): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: DataSourceTransportSignalrClient): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
     
     @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
+    def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHub(value: js.Any): Self = this.set("hub", value.asInstanceOf[js.Any])
+    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     
     @scala.inline
-    def deleteHub: Self = this.set("hub", js.undefined)
+    def setServer(value: DataSourceTransportSignalrServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromise(value: js.Any): Self = this.set("promise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromise: Self = this.set("promise", js.undefined)
-    
-    @scala.inline
-    def setServer(value: DataSourceTransportSignalrServer): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

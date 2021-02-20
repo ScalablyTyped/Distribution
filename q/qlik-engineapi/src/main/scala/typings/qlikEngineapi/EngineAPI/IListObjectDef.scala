@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note: A dimension that is set in the library can be used by many objects.
   */
 @js.native
-trait IListObjectDef extends js.Object {
+trait IListObjectDef extends StObject {
   
   /*
     * Defines the sorting by state.
@@ -77,57 +78,45 @@ object IListObjectDef {
   }
   
   @scala.inline
-  implicit class IListObjectDefOps[Self <: IListObjectDef] (val x: Self) extends AnyVal {
+  implicit class IListObjectDefMutableBuilder[Self <: IListObjectDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAutoSortByState(value: INxAutoSortByStateDef): Self = StObject.set(x, "qAutoSortByState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDef(value: INxInlineDimensionDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQExpressions(value: js.Array[INxListObjectExpressionDef]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAutoSortByState(value: INxAutoSortByStateDef): Self = this.set("qAutoSortByState", value.asInstanceOf[js.Any])
+    def setQExpressionsUndefined: Self = StObject.set(x, "qExpressions", js.undefined)
     
     @scala.inline
-    def setQDef(value: INxInlineDimensionDef): Self = this.set("qDef", value.asInstanceOf[js.Any])
+    def setQExpressionsVarargs(value: INxListObjectExpressionDef*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
     
     @scala.inline
-    def setQInitialDataFetchVarargs(value: INxPage*): Self = this.set("qInitialDataFetch", js.Array(value :_*))
+    def setQFrequencyMode(value: FrequencyModeType): Self = StObject.set(x, "qFrequencyMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQInitialDataFetch(value: js.Array[INxPage]): Self = this.set("qInitialDataFetch", value.asInstanceOf[js.Any])
+    def setQFrequencyModeUndefined: Self = StObject.set(x, "qFrequencyMode", js.undefined)
     
     @scala.inline
-    def setQLibraryId(value: String): Self = this.set("qLibraryId", value.asInstanceOf[js.Any])
+    def setQInitialDataFetch(value: js.Array[INxPage]): Self = StObject.set(x, "qInitialDataFetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQStateName(value: String): Self = this.set("qStateName", value.asInstanceOf[js.Any])
+    def setQInitialDataFetchVarargs(value: INxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value :_*))
     
     @scala.inline
-    def setQExpressionsVarargs(value: INxListObjectExpressionDef*): Self = this.set("qExpressions", js.Array(value :_*))
+    def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQExpressions(value: js.Array[INxListObjectExpressionDef]): Self = this.set("qExpressions", value.asInstanceOf[js.Any])
+    def setQShowAlternatives(value: Boolean): Self = StObject.set(x, "qShowAlternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQExpressions: Self = this.set("qExpressions", js.undefined)
+    def setQShowAlternativesUndefined: Self = StObject.set(x, "qShowAlternatives", js.undefined)
     
     @scala.inline
-    def setQFrequencyMode(value: FrequencyModeType): Self = this.set("qFrequencyMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQFrequencyMode: Self = this.set("qFrequencyMode", js.undefined)
-    
-    @scala.inline
-    def setQShowAlternatives(value: Boolean): Self = this.set("qShowAlternatives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQShowAlternatives: Self = this.set("qShowAlternatives", js.undefined)
+    def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
   }
 }

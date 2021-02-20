@@ -17,14 +17,14 @@ import typings.pulumiAws.taskMod.TaskState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "datasync")
-@js.native
-object datasync extends js.Object {
+object datasync {
   
+  @JSImport("@pulumi/aws", "datasync.Agent")
   @js.native
   class Agent protected ()
     extends typings.pulumiAws.datasyncMod.Agent {
@@ -41,8 +41,7 @@ object datasync extends js.Object {
     def this(name: String, args: AgentArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Agent extends js.Object {
+  object Agent {
     
     /**
       * Get an existing Agent resource's state with the given name, ID, and optional extra
@@ -53,18 +52,29 @@ object datasync extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "datasync.Agent.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.agentMod.Agent = js.native
+    @JSImport("@pulumi/aws", "datasync.Agent.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.agentMod.Agent = js.native
+    @JSImport("@pulumi/aws", "datasync.Agent.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AgentState): typings.pulumiAws.agentMod.Agent = js.native
+    @JSImport("@pulumi/aws", "datasync.Agent.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AgentState, opts: CustomResourceOptions): typings.pulumiAws.agentMod.Agent = js.native
     
     /**
       * Returns true if the given object is an instance of Agent.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "datasync.Agent.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/agent.Agent */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "datasync.EfsLocation")
   @js.native
   class EfsLocation protected ()
     extends typings.pulumiAws.datasyncMod.EfsLocation {
@@ -79,8 +89,7 @@ object datasync extends js.Object {
     def this(name: String, args: EfsLocationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object EfsLocation extends js.Object {
+  object EfsLocation {
     
     /**
       * Get an existing EfsLocation resource's state with the given name, ID, and optional extra
@@ -91,18 +100,29 @@ object datasync extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "datasync.EfsLocation.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.efsLocationMod.EfsLocation = js.native
+    @JSImport("@pulumi/aws", "datasync.EfsLocation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.efsLocationMod.EfsLocation = js.native
+    @JSImport("@pulumi/aws", "datasync.EfsLocation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: EfsLocationState): typings.pulumiAws.efsLocationMod.EfsLocation = js.native
+    @JSImport("@pulumi/aws", "datasync.EfsLocation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: EfsLocationState, opts: CustomResourceOptions): typings.pulumiAws.efsLocationMod.EfsLocation = js.native
     
     /**
       * Returns true if the given object is an instance of EfsLocation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "datasync.EfsLocation.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/efsLocation.EfsLocation */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "datasync.LocationFsxWindows")
   @js.native
   class LocationFsxWindows protected ()
     extends typings.pulumiAws.datasyncMod.LocationFsxWindows {
@@ -117,8 +137,7 @@ object datasync extends js.Object {
     def this(name: String, args: LocationFsxWindowsArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object LocationFsxWindows extends js.Object {
+  object LocationFsxWindows {
     
     /**
       * Get an existing LocationFsxWindows resource's state with the given name, ID, and optional extra
@@ -129,18 +148,29 @@ object datasync extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "datasync.LocationFsxWindows.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.locationFsxWindowsMod.LocationFsxWindows = js.native
+    @JSImport("@pulumi/aws", "datasync.LocationFsxWindows.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.locationFsxWindowsMod.LocationFsxWindows = js.native
+    @JSImport("@pulumi/aws", "datasync.LocationFsxWindows.get")
+    @js.native
     def get(name: String, id: Input[ID], state: LocationFsxWindowsState): typings.pulumiAws.locationFsxWindowsMod.LocationFsxWindows = js.native
+    @JSImport("@pulumi/aws", "datasync.LocationFsxWindows.get")
+    @js.native
     def get(name: String, id: Input[ID], state: LocationFsxWindowsState, opts: CustomResourceOptions): typings.pulumiAws.locationFsxWindowsMod.LocationFsxWindows = js.native
     
     /**
       * Returns true if the given object is an instance of LocationFsxWindows.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "datasync.LocationFsxWindows.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationFsxWindows.LocationFsxWindows */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "datasync.LocationSmb")
   @js.native
   class LocationSmb protected ()
     extends typings.pulumiAws.datasyncMod.LocationSmb {
@@ -155,8 +185,7 @@ object datasync extends js.Object {
     def this(name: String, args: LocationSmbArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object LocationSmb extends js.Object {
+  object LocationSmb {
     
     /**
       * Get an existing LocationSmb resource's state with the given name, ID, and optional extra
@@ -167,18 +196,29 @@ object datasync extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "datasync.LocationSmb.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
+    @JSImport("@pulumi/aws", "datasync.LocationSmb.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
+    @JSImport("@pulumi/aws", "datasync.LocationSmb.get")
+    @js.native
     def get(name: String, id: Input[ID], state: LocationSmbState): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
+    @JSImport("@pulumi/aws", "datasync.LocationSmb.get")
+    @js.native
     def get(name: String, id: Input[ID], state: LocationSmbState, opts: CustomResourceOptions): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
     
     /**
       * Returns true if the given object is an instance of LocationSmb.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "datasync.LocationSmb.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationSmb.LocationSmb */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "datasync.NfsLocation")
   @js.native
   class NfsLocation protected ()
     extends typings.pulumiAws.datasyncMod.NfsLocation {
@@ -193,8 +233,7 @@ object datasync extends js.Object {
     def this(name: String, args: NfsLocationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object NfsLocation extends js.Object {
+  object NfsLocation {
     
     /**
       * Get an existing NfsLocation resource's state with the given name, ID, and optional extra
@@ -205,18 +244,29 @@ object datasync extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "datasync.NfsLocation.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.nfsLocationMod.NfsLocation = js.native
+    @JSImport("@pulumi/aws", "datasync.NfsLocation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.nfsLocationMod.NfsLocation = js.native
+    @JSImport("@pulumi/aws", "datasync.NfsLocation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: NfsLocationState): typings.pulumiAws.nfsLocationMod.NfsLocation = js.native
+    @JSImport("@pulumi/aws", "datasync.NfsLocation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: NfsLocationState, opts: CustomResourceOptions): typings.pulumiAws.nfsLocationMod.NfsLocation = js.native
     
     /**
       * Returns true if the given object is an instance of NfsLocation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "datasync.NfsLocation.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/nfsLocation.NfsLocation */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "datasync.S3Location")
   @js.native
   class S3Location protected ()
     extends typings.pulumiAws.datasyncMod.S3Location {
@@ -231,8 +281,7 @@ object datasync extends js.Object {
     def this(name: String, args: S3LocationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object S3Location extends js.Object {
+  object S3Location {
     
     /**
       * Get an existing S3Location resource's state with the given name, ID, and optional extra
@@ -243,18 +292,29 @@ object datasync extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "datasync.S3Location.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.s3locationMod.S3Location = js.native
+    @JSImport("@pulumi/aws", "datasync.S3Location.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.s3locationMod.S3Location = js.native
+    @JSImport("@pulumi/aws", "datasync.S3Location.get")
+    @js.native
     def get(name: String, id: Input[ID], state: S3LocationState): typings.pulumiAws.s3locationMod.S3Location = js.native
+    @JSImport("@pulumi/aws", "datasync.S3Location.get")
+    @js.native
     def get(name: String, id: Input[ID], state: S3LocationState, opts: CustomResourceOptions): typings.pulumiAws.s3locationMod.S3Location = js.native
     
     /**
       * Returns true if the given object is an instance of S3Location.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "datasync.S3Location.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/s3location.S3Location */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "datasync.Task")
   @js.native
   class Task protected ()
     extends typings.pulumiAws.datasyncMod.Task {
@@ -269,8 +329,7 @@ object datasync extends js.Object {
     def this(name: String, args: TaskArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Task extends js.Object {
+  object Task {
     
     /**
       * Get an existing Task resource's state with the given name, ID, and optional extra
@@ -281,15 +340,25 @@ object datasync extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "datasync.Task.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.taskMod.Task = js.native
+    @JSImport("@pulumi/aws", "datasync.Task.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.taskMod.Task = js.native
+    @JSImport("@pulumi/aws", "datasync.Task.get")
+    @js.native
     def get(name: String, id: Input[ID], state: TaskState): typings.pulumiAws.taskMod.Task = js.native
+    @JSImport("@pulumi/aws", "datasync.Task.get")
+    @js.native
     def get(name: String, id: Input[ID], state: TaskState, opts: CustomResourceOptions): typings.pulumiAws.taskMod.Task = js.native
     
     /**
       * Returns true if the given object is an instance of Task.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "datasync.Task.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/task.Task */ Boolean = js.native
   }
 }

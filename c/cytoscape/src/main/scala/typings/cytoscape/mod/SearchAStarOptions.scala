@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#eles.aStar
   */
 @js.native
-trait SearchAStarOptions extends js.Object {
+trait SearchAStarOptions extends StObject {
   
   var directed: js.UndefOr[Boolean] = js.native
   
@@ -29,42 +30,30 @@ object SearchAStarOptions {
   }
   
   @scala.inline
-  implicit class SearchAStarOptionsOps[Self <: SearchAStarOptions] (val x: Self) extends AnyVal {
+  implicit class SearchAStarOptionsMutableBuilder[Self <: SearchAStarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoal(value: Selector | CollectionArgument): Self = StObject.set(x, "goal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoal(value: Selector | CollectionArgument): Self = this.set("goal", value.asInstanceOf[js.Any])
+    def setHeuristic(value: /* node */ NodeCollection => Double): Self = StObject.set(x, "heuristic", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoot(value: Selector | CollectionArgument): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setHeuristicUndefined: Self = StObject.set(x, "heuristic", js.undefined)
     
     @scala.inline
-    def setDirected(value: Boolean): Self = this.set("directed", value.asInstanceOf[js.Any])
+    def setRoot(value: Selector | CollectionArgument): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirected: Self = this.set("directed", js.undefined)
+    def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeuristic(value: /* node */ NodeCollection => Double): Self = this.set("heuristic", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteHeuristic: Self = this.set("heuristic", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: /* edge */ EdgeCollection => Double): Self = this.set("weight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

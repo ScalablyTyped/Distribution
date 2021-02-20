@@ -5,6 +5,7 @@ import typings.history.mod.LocationDescriptor
 import typings.history.mod.LocationState
 import typings.react.mod.CSSProperties
 import typings.reactRouter.mod.`match`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,54 +36,42 @@ object NavLinkProps {
   }
   
   @scala.inline
-  implicit class NavLinkPropsOps[Self <: NavLinkProps] (val x: Self) extends AnyVal {
+  implicit class NavLinkPropsMutableBuilder[Self <: NavLinkProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveClassNameUndefined: Self = StObject.set(x, "activeClassName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveStyle(value: CSSProperties): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveClassName(value: String): Self = this.set("activeClassName", value.asInstanceOf[js.Any])
+    def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
     
     @scala.inline
-    def deleteActiveClassName: Self = this.set("activeClassName", js.undefined)
+    def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveStyle(value: CSSProperties): Self = this.set("activeStyle", value.asInstanceOf[js.Any])
+    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
     @scala.inline
-    def deleteActiveStyle: Self = this.set("activeStyle", js.undefined)
+    def setIsActive(value: (/* match */ `match`[_], /* location */ Location[LocationState]) => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setExact(value: Boolean): Self = this.set("exact", value.asInstanceOf[js.Any])
+    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
     @scala.inline
-    def deleteExact: Self = this.set("exact", js.undefined)
+    def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: (/* match */ `match`[_], /* location */ Location[LocationState]) => Boolean): Self = this.set("isActive", js.Any.fromFunction2(value))
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteIsActive: Self = this.set("isActive", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location[LocationState]): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

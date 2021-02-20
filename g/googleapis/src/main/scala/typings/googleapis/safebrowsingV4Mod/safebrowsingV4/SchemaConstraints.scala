@@ -1,5 +1,6 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The constraints for this update.
   */
 @js.native
-trait SchemaConstraints extends js.Object {
+trait SchemaConstraints extends StObject {
   
   /**
     * A client&#39;s physical location, expressed as a ISO 31166-1 alpha-2
@@ -57,57 +58,45 @@ object SchemaConstraints {
   }
   
   @scala.inline
-  implicit class SchemaConstraintsOps[Self <: SchemaConstraints] (val x: Self) extends AnyVal {
+  implicit class SchemaConstraintsMutableBuilder[Self <: SchemaConstraints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceLocation(value: String): Self = StObject.set(x, "deviceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceLocationUndefined: Self = StObject.set(x, "deviceLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceLocation(value: String): Self = this.set("deviceLocation", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteDeviceLocation: Self = this.set("deviceLocation", js.undefined)
+    def setMaxDatabaseEntries(value: Double): Self = StObject.set(x, "maxDatabaseEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setMaxDatabaseEntriesUndefined: Self = StObject.set(x, "maxDatabaseEntries", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setMaxUpdateEntries(value: Double): Self = StObject.set(x, "maxUpdateEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDatabaseEntries(value: Double): Self = this.set("maxDatabaseEntries", value.asInstanceOf[js.Any])
+    def setMaxUpdateEntriesUndefined: Self = StObject.set(x, "maxUpdateEntries", js.undefined)
     
     @scala.inline
-    def deleteMaxDatabaseEntries: Self = this.set("maxDatabaseEntries", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxUpdateEntries(value: Double): Self = this.set("maxUpdateEntries", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteMaxUpdateEntries: Self = this.set("maxUpdateEntries", js.undefined)
+    def setSupportedCompressions(value: js.Array[String]): Self = StObject.set(x, "supportedCompressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setSupportedCompressionsUndefined: Self = StObject.set(x, "supportedCompressions", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
-    
-    @scala.inline
-    def setSupportedCompressionsVarargs(value: String*): Self = this.set("supportedCompressions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedCompressions(value: js.Array[String]): Self = this.set("supportedCompressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedCompressions: Self = this.set("supportedCompressions", js.undefined)
+    def setSupportedCompressionsVarargs(value: String*): Self = StObject.set(x, "supportedCompressions", js.Array(value :_*))
   }
 }

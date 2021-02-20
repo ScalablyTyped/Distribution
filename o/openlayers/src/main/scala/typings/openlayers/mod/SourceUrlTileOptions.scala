@@ -3,12 +3,13 @@ package typings.openlayers.mod
 import typings.openlayers.mod.olx.LogoOptions
 import typings.openlayers.mod.source.State
 import typings.openlayers.mod.tilegrid.TileGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceUrlTileOptions extends js.Object {
+trait SourceUrlTileOptions extends StObject {
   
   var attributions: js.UndefOr[AttributionLike] = js.native
   

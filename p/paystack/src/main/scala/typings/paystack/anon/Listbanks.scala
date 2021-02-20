@@ -1,12 +1,13 @@
 package typings.paystack.anon
 
 import typings.paystack.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Listbanks extends js.Object {
+trait Listbanks extends StObject {
   
   def list_banks(params: Page): js.Promise[ResponsedataArrayany] = js.native
   
@@ -21,24 +22,12 @@ object Listbanks {
   }
   
   @scala.inline
-  implicit class ListbanksOps[Self <: Listbanks] (val x: Self) extends AnyVal {
+  implicit class ListbanksMutableBuilder[Self <: Listbanks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setList_banks(value: Page => js.Promise[ResponsedataArrayany]): Self = StObject.set(x, "list_banks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setList_banks(value: Page => js.Promise[ResponsedataArrayany]): Self = this.set("list_banks", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResolve_bin(value: String => js.Promise[Response]): Self = this.set("resolve_bin", js.Any.fromFunction1(value))
+    def setResolve_bin(value: String => js.Promise[Response]): Self = StObject.set(x, "resolve_bin", js.Any.fromFunction1(value))
   }
 }

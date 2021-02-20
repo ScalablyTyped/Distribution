@@ -2,13 +2,14 @@ package typings.apolloProtobufjs.mod
 
 import typings.long.mod.Long
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "Reader")
 @js.native
-class Reader protected () extends js.Object {
+class Reader protected () extends StObject {
   /**
     * Constructs a new reader instance using the specified buffer.
     * @param buffer Buffer to read from
@@ -130,9 +131,7 @@ class Reader protected () extends js.Object {
   def uint64(): Long = js.native
 }
 /* static members */
-@JSImport("@apollo/protobufjs", "Reader")
-@js.native
-object Reader extends js.Object {
+object Reader {
   
   /**
     * Creates a new reader using the specified buffer.
@@ -140,5 +139,7 @@ object Reader extends js.Object {
     * @returns A {@link BufferReader} if `buffer` is a Buffer, otherwise a {@link Reader}
     * @throws {Error} If `buffer` is not a valid buffer
     */
+  @JSImport("@apollo/protobufjs", "Reader.create")
+  @js.native
   def create(buffer: Buffer | Uint8Array): Reader | BufferReader = js.native
 }

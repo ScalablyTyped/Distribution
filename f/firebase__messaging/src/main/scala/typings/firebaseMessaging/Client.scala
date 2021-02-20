@@ -2,12 +2,13 @@ package typings.firebaseMessaging
 
 import typings.std.ClientTypes
 import typings.std.Transferable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Client extends js.Object {
+trait Client extends StObject {
   
   val id: String = js.native
   

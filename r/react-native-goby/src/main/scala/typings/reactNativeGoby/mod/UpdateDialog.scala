@@ -1,11 +1,12 @@
 package typings.reactNativeGoby.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDialog extends js.Object {
+trait UpdateDialog extends StObject {
   
   /**
     * Indicates whether you would like to append the description of an available release to the
@@ -59,66 +60,54 @@ object UpdateDialog {
   }
   
   @scala.inline
-  implicit class UpdateDialogOps[Self <: UpdateDialog] (val x: Self) extends AnyVal {
+  implicit class UpdateDialogMutableBuilder[Self <: UpdateDialog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendReleaseDescription(value: Boolean): Self = StObject.set(x, "appendReleaseDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendReleaseDescriptionUndefined: Self = StObject.set(x, "appendReleaseDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionPrefix(value: String): Self = StObject.set(x, "descriptionPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendReleaseDescription(value: Boolean): Self = this.set("appendReleaseDescription", value.asInstanceOf[js.Any])
+    def setDescriptionPrefixUndefined: Self = StObject.set(x, "descriptionPrefix", js.undefined)
     
     @scala.inline
-    def deleteAppendReleaseDescription: Self = this.set("appendReleaseDescription", js.undefined)
+    def setMandatoryContinueButtonLabel(value: String): Self = StObject.set(x, "mandatoryContinueButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionPrefix(value: String): Self = this.set("descriptionPrefix", value.asInstanceOf[js.Any])
+    def setMandatoryContinueButtonLabelUndefined: Self = StObject.set(x, "mandatoryContinueButtonLabel", js.undefined)
     
     @scala.inline
-    def deleteDescriptionPrefix: Self = this.set("descriptionPrefix", js.undefined)
+    def setMandatoryUpdateMessage(value: String): Self = StObject.set(x, "mandatoryUpdateMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMandatoryContinueButtonLabel(value: String): Self = this.set("mandatoryContinueButtonLabel", value.asInstanceOf[js.Any])
+    def setMandatoryUpdateMessageUndefined: Self = StObject.set(x, "mandatoryUpdateMessage", js.undefined)
     
     @scala.inline
-    def deleteMandatoryContinueButtonLabel: Self = this.set("mandatoryContinueButtonLabel", js.undefined)
+    def setOptionalIgnoreButtonLabel(value: String): Self = StObject.set(x, "optionalIgnoreButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMandatoryUpdateMessage(value: String): Self = this.set("mandatoryUpdateMessage", value.asInstanceOf[js.Any])
+    def setOptionalIgnoreButtonLabelUndefined: Self = StObject.set(x, "optionalIgnoreButtonLabel", js.undefined)
     
     @scala.inline
-    def deleteMandatoryUpdateMessage: Self = this.set("mandatoryUpdateMessage", js.undefined)
+    def setOptionalInstallButtonLabel(value: String): Self = StObject.set(x, "optionalInstallButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalIgnoreButtonLabel(value: String): Self = this.set("optionalIgnoreButtonLabel", value.asInstanceOf[js.Any])
+    def setOptionalInstallButtonLabelUndefined: Self = StObject.set(x, "optionalInstallButtonLabel", js.undefined)
     
     @scala.inline
-    def deleteOptionalIgnoreButtonLabel: Self = this.set("optionalIgnoreButtonLabel", js.undefined)
+    def setOptionalUpdateMessage(value: String): Self = StObject.set(x, "optionalUpdateMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalInstallButtonLabel(value: String): Self = this.set("optionalInstallButtonLabel", value.asInstanceOf[js.Any])
+    def setOptionalUpdateMessageUndefined: Self = StObject.set(x, "optionalUpdateMessage", js.undefined)
     
     @scala.inline
-    def deleteOptionalInstallButtonLabel: Self = this.set("optionalInstallButtonLabel", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalUpdateMessage(value: String): Self = this.set("optionalUpdateMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionalUpdateMessage: Self = this.set("optionalUpdateMessage", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

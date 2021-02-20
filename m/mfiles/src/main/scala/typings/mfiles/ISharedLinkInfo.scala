@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISharedLinkInfo extends js.Object {
+trait ISharedLinkInfo extends StObject {
   
   val AccessKey: String = js.native
   
@@ -44,45 +45,33 @@ object ISharedLinkInfo {
   }
   
   @scala.inline
-  implicit class ISharedLinkInfoOps[Self <: ISharedLinkInfo] (val x: Self) extends AnyVal {
+  implicit class ISharedLinkInfoMutableBuilder[Self <: ISharedLinkInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKey(value: String): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => ISharedLinkInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedByUser(value: Double): Self = StObject.set(x, "CreatedByUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKey(value: String): Self = this.set("AccessKey", value.asInstanceOf[js.Any])
+    def setCreationTime(value: ITimestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ISharedLinkInfo): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedByUser(value: Double): Self = this.set("CreatedByUser", value.asInstanceOf[js.Any])
+    def setExpirationTime(value: ITimestamp): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: ITimestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setFileVer(value: IFileVer): Self = StObject.set(x, "FileVer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: ITimestamp): Self = this.set("ExpirationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileVer(value: IFileVer): Self = this.set("FileVer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjVer(value: IObjVer): Self = this.set("ObjVer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSet(value: (IObjVer, IFileVer) => Unit): Self = this.set("Set", js.Any.fromFunction2(value))
+    def setSet(value: (IObjVer, IFileVer) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction2(value))
   }
 }

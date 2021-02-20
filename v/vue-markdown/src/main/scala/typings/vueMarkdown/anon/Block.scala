@@ -1,11 +1,12 @@
 package typings.vueMarkdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Block extends js.Object {
+trait Block extends StObject {
   
   var block: Parse = js.native
   
@@ -78,78 +79,66 @@ object Block {
   }
   
   @scala.inline
-  implicit class BlockOps[Self <: Block] (val x: Self) extends AnyVal {
+  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock(value: Parse): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigure(value: js.Any): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCore(value: Process): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlock(value: Parse): Self = this.set("block", value.asInstanceOf[js.Any])
+    def setDisable(value: js.Any): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigure(value: js.Any): Self = this.set("configure", value.asInstanceOf[js.Any])
+    def setEnable(value: js.Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCore(value: Process): Self = this.set("core", value.asInstanceOf[js.Any])
+    def setHelpers(value: ParseLinkDestination): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: js.Any): Self = this.set("disable", value.asInstanceOf[js.Any])
+    def setInline(value: Ruler): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: js.Any): Self = this.set("enable", value.asInstanceOf[js.Any])
+    def setLinkify(value: Add): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpers(value: ParseLinkDestination): Self = this.set("helpers", value.asInstanceOf[js.Any])
+    def setNormalizeLink(value: js.Any): Self = StObject.set(x, "normalizeLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInline(value: Ruler): Self = this.set("inline", value.asInstanceOf[js.Any])
+    def setNormalizeLinkText(value: js.Any): Self = StObject.set(x, "normalizeLinkText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkify(value: Add): Self = this.set("linkify", value.asInstanceOf[js.Any])
+    def setOptions(value: Breaks): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizeLink(value: js.Any): Self = this.set("normalizeLink", value.asInstanceOf[js.Any])
+    def setParse(value: js.Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizeLinkText(value: js.Any): Self = this.set("normalizeLinkText", value.asInstanceOf[js.Any])
+    def setParseInline(value: js.Any): Self = StObject.set(x, "parseInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: Breaks): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setRender(value: js.Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParse(value: js.Any): Self = this.set("parse", value.asInstanceOf[js.Any])
+    def setRenderInline(value: js.Any): Self = StObject.set(x, "renderInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseInline(value: js.Any): Self = this.set("parseInline", value.asInstanceOf[js.Any])
+    def setRenderer(value: Render): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: js.Any): Self = this.set("render", value.asInstanceOf[js.Any])
+    def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderInline(value: js.Any): Self = this.set("renderInline", value.asInstanceOf[js.Any])
+    def setUse(value: js.Any): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: Render): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    def setUtils(value: ArrayReplaceAt): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: js.Any): Self = this.set("set", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUse(value: js.Any): Self = this.set("use", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUtils(value: ArrayReplaceAt): Self = this.set("utils", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidateLink(value: js.Any): Self = this.set("validateLink", value.asInstanceOf[js.Any])
+    def setValidateLink(value: js.Any): Self = StObject.set(x, "validateLink", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import typings.babylonjs.followCameraMod.FollowCamera
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/Inputs/followCameraMouseWheelInput", JSImport.Namespace)
-@js.native
-object followCameraMouseWheelInputMod extends js.Object {
+object followCameraMouseWheelInputMod {
   
+  @JSImport("babylonjs/Cameras/Inputs/followCameraMouseWheelInput", "FollowCameraMouseWheelInput")
   @js.native
   class FollowCameraMouseWheelInput () extends ICameraInput[FollowCamera] {
     

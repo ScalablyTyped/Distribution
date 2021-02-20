@@ -2,16 +2,15 @@ package typings.finalForm
 
 import typings.finalForm.mod.Subscriber
 import typings.finalForm.mod.Subscription
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Notified[T /* <: js.Object */] extends js.Object {
+  trait Notified[T /* <: js.Object */] extends StObject {
     
     var notified: Boolean = js.native
     

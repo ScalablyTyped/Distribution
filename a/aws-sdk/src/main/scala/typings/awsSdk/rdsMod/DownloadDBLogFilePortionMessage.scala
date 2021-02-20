@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadDBLogFilePortionMessage extends js.Object {
+trait DownloadDBLogFilePortionMessage extends StObject {
   
   /**
     * The customer-assigned name of the DB instance that contains the log files you want to list. Constraints:   Must match the identifier of an existing DBInstance.  
@@ -36,36 +37,24 @@ object DownloadDBLogFilePortionMessage {
   }
   
   @scala.inline
-  implicit class DownloadDBLogFilePortionMessageOps[Self <: DownloadDBLogFilePortionMessage] (val x: Self) extends AnyVal {
+  implicit class DownloadDBLogFilePortionMessageMutableBuilder[Self <: DownloadDBLogFilePortionMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogFileName(value: String): Self = StObject.set(x, "LogFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBInstanceIdentifier(value: String): Self = this.set("DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def setLogFileName(value: String): Self = this.set("LogFileName", value.asInstanceOf[js.Any])
+    def setNumberOfLines(value: Integer): Self = StObject.set(x, "NumberOfLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setNumberOfLines(value: Integer): Self = this.set("NumberOfLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfLines: Self = this.set("NumberOfLines", js.undefined)
+    def setNumberOfLinesUndefined: Self = StObject.set(x, "NumberOfLines", js.undefined)
   }
 }

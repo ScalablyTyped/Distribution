@@ -3,17 +3,22 @@ package typings.playable
 import typings.playable.overlayTypesMod.IOverlayViewConfig
 import typings.playable.overlayTypesMod.IOverlayViewStyles
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/overlay/overlay.view", JSImport.Namespace)
-@js.native
-object overlayViewMod extends js.Object {
+object overlayViewMod {
+  
+  @JSImport("playable/dist/src/modules/ui/overlay/overlay.view", JSImport.Default)
+  @js.native
+  class default protected () extends OverlayView {
+    def this(config: IOverlayViewConfig) = this()
+  }
   
   @js.native
   trait OverlayView
-    extends typings.playable.stylableMod.default[IOverlayViewStyles] {
+    extends typings.playable.viewMod.default[IOverlayViewStyles] {
     
     @JSName("_$content")
     var _$content: js.Any = js.native
@@ -49,10 +54,5 @@ object overlayViewMod extends js.Object {
     def turnOffOverlayTransparency(): Unit = js.native
     
     def turnOnOverlayTransparency(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends OverlayView {
-    def this(config: IOverlayViewConfig) = this()
   }
 }

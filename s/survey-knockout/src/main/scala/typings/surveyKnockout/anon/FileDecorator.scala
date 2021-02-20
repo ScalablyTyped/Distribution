@@ -1,11 +1,12 @@
 package typings.surveyKnockout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileDecorator extends js.Object {
+trait FileDecorator extends StObject {
   
   var fileDecorator: String = js.native
   
@@ -47,48 +48,36 @@ object FileDecorator {
   }
   
   @scala.inline
-  implicit class FileDecoratorOps[Self <: FileDecorator] (val x: Self) extends AnyVal {
+  implicit class FileDecoratorMutableBuilder[Self <: FileDecorator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileDecorator(value: String): Self = StObject.set(x, "fileDecorator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileInput(value: String): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileSignBottom(value: String): Self = StObject.set(x, "fileSignBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileDecorator(value: String): Self = this.set("fileDecorator", value.asInstanceOf[js.Any])
+    def setPlaceholderInput(value: String): Self = StObject.set(x, "placeholderInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileInput(value: String): Self = this.set("fileInput", value.asInstanceOf[js.Any])
+    def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSignBottom(value: String): Self = this.set("fileSignBottom", value.asInstanceOf[js.Any])
+    def setRemoveButton(value: String): Self = StObject.set(x, "removeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderInput(value: String): Self = this.set("placeholderInput", value.asInstanceOf[js.Any])
+    def setRemoveButtonBottom(value: String): Self = StObject.set(x, "removeButtonBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: String): Self = this.set("preview", value.asInstanceOf[js.Any])
+    def setRemoveFile(value: String): Self = StObject.set(x, "removeFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveButton(value: String): Self = this.set("removeButton", value.asInstanceOf[js.Any])
+    def setRemoveFileSvg(value: String): Self = StObject.set(x, "removeFileSvg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveButtonBottom(value: String): Self = this.set("removeButtonBottom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveFile(value: String): Self = this.set("removeFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveFileSvg(value: String): Self = this.set("removeFileSvg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

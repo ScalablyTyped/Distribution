@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PBRBRDFConfiguration extends js.Object {
+trait PBRBRDFConfiguration extends StObject {
   
   /** @hidden */
   var _internalMarkAllSubMeshesAsMiscDirty: js.Any = js.native
@@ -110,63 +111,51 @@ object PBRBRDFConfiguration {
   }
   
   @scala.inline
-  implicit class PBRBRDFConfigurationOps[Self <: PBRBRDFConfiguration] (val x: Self) extends AnyVal {
+  implicit class PBRBRDFConfigurationMutableBuilder[Self <: PBRBRDFConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyTo(value: PBRBRDFConfiguration => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParse(value: (js.Any, Scene, String) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set_internalMarkAllSubMeshesAsMiscDirty(value: js.Any): Self = this.set("_internalMarkAllSubMeshesAsMiscDirty", value.asInstanceOf[js.Any])
+    def setPrepareDefines(value: IMaterialBRDFDefines => Unit): Self = StObject.set(x, "prepareDefines", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_markAllSubMeshesAsMiscDirty(value: () => Unit): Self = this.set("_markAllSubMeshesAsMiscDirty", js.Any.fromFunction0(value))
+    def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_useEnergyConservation(value: js.Any): Self = this.set("_useEnergyConservation", value.asInstanceOf[js.Any])
+    def setUseEnergyConservation(value: Boolean): Self = StObject.set(x, "useEnergyConservation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_useSmithVisibilityHeightCorrelated(value: js.Any): Self = this.set("_useSmithVisibilityHeightCorrelated", value.asInstanceOf[js.Any])
+    def setUseSmithVisibilityHeightCorrelated(value: Boolean): Self = StObject.set(x, "useSmithVisibilityHeightCorrelated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_useSpecularGlossinessInputEnergyConservation(value: js.Any): Self = this.set("_useSpecularGlossinessInputEnergyConservation", value.asInstanceOf[js.Any])
+    def setUseSpecularGlossinessInputEnergyConservation(value: Boolean): Self = StObject.set(x, "useSpecularGlossinessInputEnergyConservation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_useSphericalHarmonics(value: js.Any): Self = this.set("_useSphericalHarmonics", value.asInstanceOf[js.Any])
+    def setUseSphericalHarmonics(value: Boolean): Self = StObject.set(x, "useSphericalHarmonics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTo(value: PBRBRDFConfiguration => Unit): Self = this.set("copyTo", js.Any.fromFunction1(value))
+    def set_internalMarkAllSubMeshesAsMiscDirty(value: js.Any): Self = StObject.set(x, "_internalMarkAllSubMeshesAsMiscDirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetClassName(value: () => String): Self = this.set("getClassName", js.Any.fromFunction0(value))
+    def set_markAllSubMeshesAsMiscDirty(value: () => Unit): Self = StObject.set(x, "_markAllSubMeshesAsMiscDirty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParse(value: (js.Any, Scene, String) => Unit): Self = this.set("parse", js.Any.fromFunction3(value))
+    def set_useEnergyConservation(value: js.Any): Self = StObject.set(x, "_useEnergyConservation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepareDefines(value: IMaterialBRDFDefines => Unit): Self = this.set("prepareDefines", js.Any.fromFunction1(value))
+    def set_useSmithVisibilityHeightCorrelated(value: js.Any): Self = StObject.set(x, "_useSmithVisibilityHeightCorrelated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialize(value: () => js.Any): Self = this.set("serialize", js.Any.fromFunction0(value))
+    def set_useSpecularGlossinessInputEnergyConservation(value: js.Any): Self = StObject.set(x, "_useSpecularGlossinessInputEnergyConservation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseEnergyConservation(value: Boolean): Self = this.set("useEnergyConservation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseSmithVisibilityHeightCorrelated(value: Boolean): Self = this.set("useSmithVisibilityHeightCorrelated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseSpecularGlossinessInputEnergyConservation(value: Boolean): Self = this.set("useSpecularGlossinessInputEnergyConservation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseSphericalHarmonics(value: Boolean): Self = this.set("useSphericalHarmonics", value.asInstanceOf[js.Any])
+    def set_useSphericalHarmonics(value: js.Any): Self = StObject.set(x, "_useSphericalHarmonics", value.asInstanceOf[js.Any])
   }
 }

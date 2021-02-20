@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationautoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutScalingPolicyRequest extends js.Object {
+trait PutScalingPolicyRequest extends StObject {
   
   /**
     * The name of the scaling policy.
@@ -58,48 +59,36 @@ object PutScalingPolicyRequest {
   }
   
   @scala.inline
-  implicit class PutScalingPolicyRequestOps[Self <: PutScalingPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class PutScalingPolicyRequestMutableBuilder[Self <: PutScalingPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyType(value: PolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
     
     @scala.inline
-    def setPolicyName(value: PolicyName): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = this.set("ScalableDimension", value.asInstanceOf[js.Any])
+    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    def setStepScalingPolicyConfiguration(value: StepScalingPolicyConfiguration): Self = StObject.set(x, "StepScalingPolicyConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyType(value: PolicyType): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
+    def setStepScalingPolicyConfigurationUndefined: Self = StObject.set(x, "StepScalingPolicyConfiguration", js.undefined)
     
     @scala.inline
-    def deletePolicyType: Self = this.set("PolicyType", js.undefined)
+    def setTargetTrackingScalingPolicyConfiguration(value: TargetTrackingScalingPolicyConfiguration): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepScalingPolicyConfiguration(value: StepScalingPolicyConfiguration): Self = this.set("StepScalingPolicyConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepScalingPolicyConfiguration: Self = this.set("StepScalingPolicyConfiguration", js.undefined)
-    
-    @scala.inline
-    def setTargetTrackingScalingPolicyConfiguration(value: TargetTrackingScalingPolicyConfiguration): Self = this.set("TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetTrackingScalingPolicyConfiguration: Self = this.set("TargetTrackingScalingPolicyConfiguration", js.undefined)
+    def setTargetTrackingScalingPolicyConfigurationUndefined: Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", js.undefined)
   }
 }

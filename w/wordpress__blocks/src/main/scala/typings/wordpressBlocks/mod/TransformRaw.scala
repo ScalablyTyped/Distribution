@@ -4,6 +4,7 @@ import typings.std.Node
 import typings.std.Partial
 import typings.std.Record
 import typings.wordpressBlocks.wordpressBlocksStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,51 +39,39 @@ object TransformRaw {
   }
   
   @scala.inline
-  implicit class TransformRawOps[Self <: TransformRaw[_], T /* <: Record[String, _] */] (val x: Self with TransformRaw[T]) extends AnyVal {
+  implicit class TransformRawMutableBuilder[Self <: TransformRaw[_], T /* <: Record[String, _] */] (val x: Self with TransformRaw[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsMatch(value: /* node */ Node => Boolean): Self = StObject.set(x, "isMatch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsMatchUndefined: Self = StObject.set(x, "isMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: raw): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setIsMatch(value: /* node */ Node => Boolean): Self = this.set("isMatch", js.Any.fromFunction1(value))
+    def setSchema(value: TransformRawSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsMatch: Self = this.set("isMatch", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def setSchema(value: TransformRawSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setTransform(value: /* node */ Node => BlockInstance[Partial[T]] | Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
-    
-    @scala.inline
-    def setTransform(value: /* node */ Node => BlockInstance[Partial[T]] | Unit): Self = this.set("transform", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setType(value: raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

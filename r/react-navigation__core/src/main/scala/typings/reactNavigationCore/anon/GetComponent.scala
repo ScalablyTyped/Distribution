@@ -2,12 +2,13 @@ package typings.reactNavigationCore.anon
 
 import typings.react.mod.ReactNode
 import typings.reactNavigationRouters.typesMod.ParamListBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends js.Object {
+trait GetComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
   /**
     * Render callback to render content of this screen.
@@ -27,21 +28,9 @@ object GetComponent {
   }
   
   @scala.inline
-  implicit class GetComponentOps[Self <: GetComponent[_, _], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self with (GetComponent[ParamList, RouteName])) extends AnyVal {
+  implicit class GetComponentMutableBuilder[Self <: GetComponent[_, _], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self with (GetComponent[ParamList, RouteName])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChildren(value: Route[ParamList, RouteName] => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    def setChildren(value: Route[ParamList, RouteName] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }
 }

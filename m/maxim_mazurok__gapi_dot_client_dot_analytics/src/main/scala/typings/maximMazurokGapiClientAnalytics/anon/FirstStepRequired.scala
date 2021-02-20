@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalytics.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirstStepRequired extends js.Object {
+trait FirstStepRequired extends StObject {
   
   /** Determines if the goal URL must exactly match the capitalization of visited URLs. */
   var caseSensitive: js.UndefOr[Boolean] = js.native
@@ -31,51 +32,39 @@ object FirstStepRequired {
   }
   
   @scala.inline
-  implicit class FirstStepRequiredOps[Self <: FirstStepRequired] (val x: Self) extends AnyVal {
+  implicit class FirstStepRequiredMutableBuilder[Self <: FirstStepRequired] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstStepRequired(value: Boolean): Self = StObject.set(x, "firstStepRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    def setFirstStepRequiredUndefined: Self = StObject.set(x, "firstStepRequired", js.undefined)
     
     @scala.inline
-    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstStepRequired(value: Boolean): Self = this.set("firstStepRequired", value.asInstanceOf[js.Any])
+    def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
     
     @scala.inline
-    def deleteFirstStepRequired: Self = this.set("firstStepRequired", js.undefined)
+    def setSteps(value: js.Array[Number]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchType(value: String): Self = this.set("matchType", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def deleteMatchType: Self = this.set("matchType", js.undefined)
+    def setStepsVarargs(value: Number*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
     @scala.inline
-    def setStepsVarargs(value: Number*): Self = this.set("steps", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSteps(value: js.Array[Number]): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

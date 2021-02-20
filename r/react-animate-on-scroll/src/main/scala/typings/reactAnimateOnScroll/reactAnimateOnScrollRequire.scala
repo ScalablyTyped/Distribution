@@ -1,5 +1,6 @@
 package typings.reactAnimateOnScroll
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("react-animate-on-scroll", JSImport.Namespace)
 @js.native
-object reactAnimateOnScrollRequire extends js.Object
+object reactAnimateOnScrollRequire extends StObject

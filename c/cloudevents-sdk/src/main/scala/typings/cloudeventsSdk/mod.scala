@@ -2,21 +2,22 @@ package typings.cloudeventsSdk
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.cloudeventsSdk.anon.TypeofHTTPEmitter
+import typings.cloudeventsSdk.anon.Url
 import typings.cloudeventsSdk.cloudeventMod.CE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cloudevents-sdk", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  var Constants: js.Any = js.native
+  @JSImport("cloudevents-sdk", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  var HTTPEmitter: TypeofHTTPEmitter = js.native
-  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("cloudevents-sdk", "CloudEvent")
   @js.native
   class CloudEvent protected ()
     extends typings.cloudeventsSdk.cloudeventMod.CloudEvent {
@@ -37,17 +38,51 @@ object mod extends js.Object {
       */
     def this(event: CE) = this()
   }
+  @JSImport("cloudevents-sdk", "CloudEvent")
   @js.native
-  object CloudEvent
-    extends TopLevel[Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]]
+  def CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent] = js.native
+  @scala.inline
+  def CloudEvent_=(x: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CloudEvent")(x.asInstanceOf[js.Any])
   
+  @JSImport("cloudevents-sdk", "Constants")
+  @js.native
+  def Constants: js.Any = js.native
+  @scala.inline
+  def Constants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constants")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("cloudevents-sdk", "HTTPEmitter")
+  @js.native
+  class HTTPEmitter protected ()
+    extends typings.cloudeventsSdk.httpEmitterMod.HTTPEmitter {
+    /**
+      * Creates a new instance of {HTTPEmitter}. The default emitter uses the 1.0
+      * protocol specification in binary mode.
+      *
+      * @param {Object} [options] The configuration options for this event emitter
+      * @param {URL} options.url The endpoint that will receive the sent events.
+      * @param {string} [options.version] The HTTP binding specification version. Default: "1.0"
+      * @throws {TypeError} if no options.url is provided or an unknown specification version is provided.
+      */
+    def this(hasUrlVersion: Url) = this()
+  }
+  @JSImport("cloudevents-sdk", "HTTPEmitter")
+  @js.native
+  def HTTPEmitter: TypeofHTTPEmitter = js.native
+  @scala.inline
+  def HTTPEmitter_=(x: TypeofHTTPEmitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPEmitter")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("cloudevents-sdk", "HTTPReceiver")
   @js.native
   /**
     * Create an instance of an HTTPReceiver to accept incoming CloudEvents.
     */
   class HTTPReceiver ()
     extends typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver
+  @JSImport("cloudevents-sdk", "HTTPReceiver")
   @js.native
-  object HTTPReceiver
-    extends TopLevel[Instantiable0[typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver]]
+  def HTTPReceiver: Instantiable0[typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver] = js.native
+  @scala.inline
+  def HTTPReceiver_=(x: Instantiable0[typings.cloudeventsSdk.httpReceiverMod.HTTPReceiver]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPReceiver")(x.asInstanceOf[js.Any])
 }

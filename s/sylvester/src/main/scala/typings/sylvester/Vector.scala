@@ -1,11 +1,12 @@
 package typings.sylvester
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Vector extends js.Object {
+trait Vector extends StObject {
   
   def add(vector: js.Array[Double]): Vector = js.native
   /**

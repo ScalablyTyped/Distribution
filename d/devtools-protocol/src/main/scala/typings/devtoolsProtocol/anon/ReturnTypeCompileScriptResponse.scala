@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.anon
 
 import typings.devtoolsProtocol.mod.Protocol.Runtime.CompileScriptRequest
 import typings.devtoolsProtocol.mod.Protocol.Runtime.CompileScriptResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnTypeCompileScriptResponse extends js.Object {
+trait ReturnTypeCompileScriptResponse extends StObject {
   
   var paramsType: js.Array[CompileScriptRequest] = js.native
   
@@ -22,27 +23,15 @@ object ReturnTypeCompileScriptResponse {
   }
   
   @scala.inline
-  implicit class ReturnTypeCompileScriptResponseOps[Self <: ReturnTypeCompileScriptResponse] (val x: Self) extends AnyVal {
+  implicit class ReturnTypeCompileScriptResponseMutableBuilder[Self <: ReturnTypeCompileScriptResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamsType(value: js.Array[CompileScriptRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamsTypeVarargs(value: CompileScriptRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParamsTypeVarargs(value: CompileScriptRequest*): Self = this.set("paramsType", js.Array(value :_*))
-    
-    @scala.inline
-    def setParamsType(value: js.Array[CompileScriptRequest]): Self = this.set("paramsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnType(value: CompileScriptResponse): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setReturnType(value: CompileScriptResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

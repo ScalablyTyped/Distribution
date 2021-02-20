@@ -1,11 +1,12 @@
 package typings.vscodeJsonrpc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetTraceParams extends js.Object {
+trait SetTraceParams extends StObject {
   
   var value: TraceValues = js.native
 }
@@ -18,21 +19,9 @@ object SetTraceParams {
   }
   
   @scala.inline
-  implicit class SetTraceParamsOps[Self <: SetTraceParams] (val x: Self) extends AnyVal {
+  implicit class SetTraceParamsMutableBuilder[Self <: SetTraceParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValue(value: TraceValues): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: TraceValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

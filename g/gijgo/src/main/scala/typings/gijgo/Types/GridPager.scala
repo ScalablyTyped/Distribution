@@ -1,12 +1,13 @@
 package typings.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //Grid
 @js.native
-trait GridPager extends js.Object {
+trait GridPager extends StObject {
   
   var leftControls: js.UndefOr[js.Array[_]] = js.native
   
@@ -25,51 +26,39 @@ object GridPager {
   }
   
   @scala.inline
-  implicit class GridPagerOps[Self <: GridPager] (val x: Self) extends AnyVal {
+  implicit class GridPagerMutableBuilder[Self <: GridPager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeftControls(value: js.Array[_]): Self = StObject.set(x, "leftControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeftControlsUndefined: Self = StObject.set(x, "leftControls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftControlsVarargs(value: js.Any*): Self = StObject.set(x, "leftControls", js.Array(value :_*))
     
     @scala.inline
-    def setLeftControlsVarargs(value: js.Any*): Self = this.set("leftControls", js.Array(value :_*))
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftControls(value: js.Array[_]): Self = this.set("leftControls", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteLeftControls: Self = this.set("leftControls", js.undefined)
+    def setRightControls(value: js.Array[_]): Self = StObject.set(x, "rightControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setRightControlsUndefined: Self = StObject.set(x, "rightControls", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setRightControlsVarargs(value: js.Any*): Self = StObject.set(x, "rightControls", js.Array(value :_*))
     
     @scala.inline
-    def setRightControlsVarargs(value: js.Any*): Self = this.set("rightControls", js.Array(value :_*))
+    def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightControls(value: js.Array[_]): Self = this.set("rightControls", value.asInstanceOf[js.Any])
+    def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
     @scala.inline
-    def deleteRightControls: Self = this.set("rightControls", js.undefined)
-    
-    @scala.inline
-    def setSizesVarargs(value: Double*): Self = this.set("sizes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSizes(value: js.Array[Double]): Self = this.set("sizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizes: Self = this.set("sizes", js.undefined)
+    def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
   }
 }

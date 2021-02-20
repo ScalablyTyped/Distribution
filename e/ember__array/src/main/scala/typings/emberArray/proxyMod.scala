@@ -2,13 +2,21 @@ package typings.emberArray
 
 import typings.emberArray.mutableMod.MutableArray
 import typings.emberArray.nativeArrayMod.NativeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/array/proxy", JSImport.Namespace)
-@js.native
-object proxyMod extends js.Object {
+object proxyMod {
+  
+  /**
+    * An ArrayProxy wraps any other object that implements Ember.Array and/or Ember.MutableArray,
+    * forwarding all requests. This makes it very useful for a number of binding use cases or other cases
+    * where being able to swap out the underlying array is useful.
+    */
+  @JSImport("@ember/array/proxy", JSImport.Default)
+  @js.native
+  class default[T] () extends ArrayProxy[T]
   
   /**
     * An ArrayProxy wraps any other object that implements Ember.Array and/or Ember.MutableArray,
@@ -28,12 +36,4 @@ object proxyMod extends js.Object {
       */
     def objectAtContent(idx: Double): js.UndefOr[T] = js.native
   }
-  
-  /**
-    * An ArrayProxy wraps any other object that implements Ember.Array and/or Ember.MutableArray,
-    * forwarding all requests. This makes it very useful for a number of binding use cases or other cases
-    * where being able to swap out the underlying array is useful.
-    */
-  @js.native
-  class default[T] () extends ArrayProxy[T]
 }

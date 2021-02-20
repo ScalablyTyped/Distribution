@@ -19,6 +19,7 @@ import typings.activexPowerpoint.activexPowerpointNumbers.`6`
 import typings.activexPowerpoint.activexPowerpointNumbers.`7`
 import typings.activexPowerpoint.activexPowerpointNumbers.`8`
 import typings.activexPowerpoint.activexPowerpointNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexPowerpoint.activexPowerpointNumbers.`17`
   - typings.activexPowerpoint.activexPowerpointNumbers.`5`
 */
-trait PpPlaceholderType extends js.Object
+trait PpPlaceholderType extends StObject
 object PpPlaceholderType {
   
   @scala.inline

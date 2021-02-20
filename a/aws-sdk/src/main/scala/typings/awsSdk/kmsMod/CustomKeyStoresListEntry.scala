@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomKeyStoresListEntry extends js.Object {
+trait CustomKeyStoresListEntry extends StObject {
   
   /**
     * A unique identifier for the AWS CloudHSM cluster that is associated with the custom key store.
@@ -51,60 +52,48 @@ object CustomKeyStoresListEntry {
   }
   
   @scala.inline
-  implicit class CustomKeyStoresListEntryOps[Self <: CustomKeyStoresListEntry] (val x: Self) extends AnyVal {
+  implicit class CustomKeyStoresListEntryMutableBuilder[Self <: CustomKeyStoresListEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = StObject.set(x, "CloudHsmClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudHsmClusterIdUndefined: Self = StObject.set(x, "CloudHsmClusterId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionErrorCode(value: ConnectionErrorCodeType): Self = StObject.set(x, "ConnectionErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = this.set("CloudHsmClusterId", value.asInstanceOf[js.Any])
+    def setConnectionErrorCodeUndefined: Self = StObject.set(x, "ConnectionErrorCode", js.undefined)
     
     @scala.inline
-    def deleteCloudHsmClusterId: Self = this.set("CloudHsmClusterId", js.undefined)
+    def setConnectionState(value: ConnectionStateType): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionErrorCode(value: ConnectionErrorCodeType): Self = this.set("ConnectionErrorCode", value.asInstanceOf[js.Any])
+    def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
     
     @scala.inline
-    def deleteConnectionErrorCode: Self = this.set("ConnectionErrorCode", js.undefined)
+    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionState(value: ConnectionStateType): Self = this.set("ConnectionState", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteConnectionState: Self = this.set("ConnectionState", js.undefined)
+    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setCustomKeyStoreIdUndefined: Self = StObject.set(x, "CustomKeyStoreId", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setCustomKeyStoreName(value: CustomKeyStoreNameType): Self = StObject.set(x, "CustomKeyStoreName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = this.set("CustomKeyStoreId", value.asInstanceOf[js.Any])
+    def setCustomKeyStoreNameUndefined: Self = StObject.set(x, "CustomKeyStoreName", js.undefined)
     
     @scala.inline
-    def deleteCustomKeyStoreId: Self = this.set("CustomKeyStoreId", js.undefined)
+    def setTrustAnchorCertificate(value: TrustAnchorCertificateType): Self = StObject.set(x, "TrustAnchorCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomKeyStoreName(value: CustomKeyStoreNameType): Self = this.set("CustomKeyStoreName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomKeyStoreName: Self = this.set("CustomKeyStoreName", js.undefined)
-    
-    @scala.inline
-    def setTrustAnchorCertificate(value: TrustAnchorCertificateType): Self = this.set("TrustAnchorCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustAnchorCertificate: Self = this.set("TrustAnchorCertificate", js.undefined)
+    def setTrustAnchorCertificateUndefined: Self = StObject.set(x, "TrustAnchorCertificate", js.undefined)
   }
 }

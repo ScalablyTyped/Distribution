@@ -5,25 +5,16 @@ import typings.ionicCore.mod.BackButtonEventDetail
 import typings.ionicCore.platformMod.Platforms
 import typings.rxjs.mod.Subject
 import typings.rxjs.mod.Subscription
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/providers/platform", JSImport.Namespace)
-@js.native
-object platformMod extends js.Object {
+object platformMod {
   
+  @JSImport("@ionic/angular/providers/platform", "Platform")
   @js.native
-  trait BackButtonEmitter extends Subject[BackButtonEventDetail] {
-    
-    def subscribeWithPriority(
-      priority: Double,
-      callback: js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[_] | Unit]
-    ): Subscription = js.native
-  }
-  
-  @js.native
-  class Platform protected () extends js.Object {
+  class Platform protected () extends StObject {
     def this(doc: js.Any, zone: NgZone) = this()
     
     var _readyPromise: js.Any = js.native
@@ -206,5 +197,14 @@ object platformMod extends js.Object {
     def width(): js.Any = js.native
     
     var win: js.Any = js.native
+  }
+  
+  @js.native
+  trait BackButtonEmitter extends Subject[BackButtonEventDetail] {
+    
+    def subscribeWithPriority(
+      priority: Double,
+      callback: js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[_] | Unit]
+    ): Subscription = js.native
   }
 }

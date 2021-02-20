@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PriceSchedule extends js.Object {
+trait PriceSchedule extends StObject {
   
   /**
     * The current price schedule, as determined by the term remaining for the Reserved Instance in the listing. A specific price schedule is always in effect, but only one price schedule can be active at any time. Take, for example, a Reserved Instance listing that has five months remaining in its term. When you specify price schedules for five months and two months, this means that schedule 1, covering the first three months of the remaining term, will be active during months 5, 4, and 3. Then schedule 2, covering the last two months of the term, will be active for months 2 and 1.
@@ -36,42 +37,30 @@ object PriceSchedule {
   }
   
   @scala.inline
-  implicit class PriceScheduleOps[Self <: PriceSchedule] (val x: Self) extends AnyVal {
+  implicit class PriceScheduleMutableBuilder[Self <: PriceSchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("Active", value.asInstanceOf[js.Any])
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("Active", js.undefined)
+    def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: CurrencyCodeValues): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    def setPriceUndefined: Self = StObject.set(x, "Price", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    def setTerm(value: Long): Self = StObject.set(x, "Term", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: Double): Self = this.set("Price", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrice: Self = this.set("Price", js.undefined)
-    
-    @scala.inline
-    def setTerm(value: Long): Self = this.set("Term", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerm: Self = this.set("Term", js.undefined)
+    def setTermUndefined: Self = StObject.set(x, "Term", js.undefined)
   }
 }

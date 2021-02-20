@@ -3,13 +3,14 @@ package typings.stormReactDiagrams.anon
 import typings.stormReactDiagrams.baseEntityMod.BaseEntity
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
 import typings.stormReactDiagrams.portModelMod.PortModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined storm-react-diagrams.storm-react-diagrams/dist/src/BaseEntity.BaseEvent<storm-react-diagrams.storm-react-diagrams/dist/src/models/LinkModel.LinkModel<storm-react-diagrams.storm-react-diagrams/dist/src/models/LinkModel.LinkModelListener>> & {  port :null | storm-react-diagrams.storm-react-diagrams/dist/src/models/PortModel.PortModel} */
 @js.native
-trait BaseEventLinkModelLinkMod extends js.Object {
+trait BaseEventLinkModelLinkMod extends StObject {
   
   var entity: BaseEntity[BaseListener[_]] = js.native
   
@@ -30,36 +31,24 @@ object BaseEventLinkModelLinkMod {
   }
   
   @scala.inline
-  implicit class BaseEventLinkModelLinkModOps[Self <: BaseEventLinkModelLinkMod] (val x: Self) extends AnyVal {
+  implicit class BaseEventLinkModelLinkModMutableBuilder[Self <: BaseEventLinkModelLinkMod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: BaseEntity[BaseListener[_]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: BaseEntity[BaseListener[_]]): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setPort(value: PortModel): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiring(value: Boolean): Self = this.set("firing", value.asInstanceOf[js.Any])
+    def setPortNull: Self = StObject.set(x, "port", null)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopPropagation(value: () => js.Any): Self = this.set("stopPropagation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPort(value: PortModel): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPortNull: Self = this.set("port", null)
+    def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

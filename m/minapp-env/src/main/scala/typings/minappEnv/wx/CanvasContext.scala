@@ -2,13 +2,14 @@ package typings.minappEnv.wx
 
 import typings.minappEnv.Array
 import typings.minappEnv.Function
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** canvas 组件的绘图上下文 */
 @js.native
-trait CanvasContext extends js.Object {
+trait CanvasContext extends StObject {
   
   /** [CanvasContext.arc(number x, number y, number r, number sAngle, number eAngle, number counterclockwise)](CanvasContext.arc.md)
   *

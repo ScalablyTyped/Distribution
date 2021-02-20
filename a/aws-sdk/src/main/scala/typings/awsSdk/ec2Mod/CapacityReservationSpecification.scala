@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CapacityReservationSpecification extends js.Object {
+trait CapacityReservationSpecification extends StObject {
   
   /**
     * Indicates the instance's Capacity Reservation preferences. Possible preferences include:    open - The instance can run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).    none - The instance avoids running in a Capacity Reservation even if one is available. The instance runs as an On-Demand Instance.  
@@ -26,30 +27,18 @@ object CapacityReservationSpecification {
   }
   
   @scala.inline
-  implicit class CapacityReservationSpecificationOps[Self <: CapacityReservationSpecification] (val x: Self) extends AnyVal {
+  implicit class CapacityReservationSpecificationMutableBuilder[Self <: CapacityReservationSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityReservationPreference(value: CapacityReservationPreference): Self = StObject.set(x, "CapacityReservationPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityReservationPreferenceUndefined: Self = StObject.set(x, "CapacityReservationPreference", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityReservationTarget(value: CapacityReservationTarget): Self = StObject.set(x, "CapacityReservationTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityReservationPreference(value: CapacityReservationPreference): Self = this.set("CapacityReservationPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapacityReservationPreference: Self = this.set("CapacityReservationPreference", js.undefined)
-    
-    @scala.inline
-    def setCapacityReservationTarget(value: CapacityReservationTarget): Self = this.set("CapacityReservationTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapacityReservationTarget: Self = this.set("CapacityReservationTarget", js.undefined)
+    def setCapacityReservationTargetUndefined: Self = StObject.set(x, "CapacityReservationTarget", js.undefined)
   }
 }

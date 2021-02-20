@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateMonitoringRequest extends js.Object {
+trait UpdateMonitoringRequest extends StObject {
   
   /**
     * 
@@ -46,42 +47,30 @@ object UpdateMonitoringRequest {
   }
   
   @scala.inline
-  implicit class UpdateMonitoringRequestOps[Self <: UpdateMonitoringRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateMonitoringRequestMutableBuilder[Self <: UpdateMonitoringRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    def setEnhancedMonitoringUndefined: Self = StObject.set(x, "EnhancedMonitoring", js.undefined)
     
     @scala.inline
-    def setCurrentVersion(value: string): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
+    def setLoggingInfo(value: LoggingInfo): Self = StObject.set(x, "LoggingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = this.set("EnhancedMonitoring", value.asInstanceOf[js.Any])
+    def setLoggingInfoUndefined: Self = StObject.set(x, "LoggingInfo", js.undefined)
     
     @scala.inline
-    def deleteEnhancedMonitoring: Self = this.set("EnhancedMonitoring", js.undefined)
+    def setOpenMonitoring(value: OpenMonitoringInfo): Self = StObject.set(x, "OpenMonitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingInfo(value: LoggingInfo): Self = this.set("LoggingInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggingInfo: Self = this.set("LoggingInfo", js.undefined)
-    
-    @scala.inline
-    def setOpenMonitoring(value: OpenMonitoringInfo): Self = this.set("OpenMonitoring", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenMonitoring: Self = this.set("OpenMonitoring", js.undefined)
+    def setOpenMonitoringUndefined: Self = StObject.set(x, "OpenMonitoring", js.undefined)
   }
 }

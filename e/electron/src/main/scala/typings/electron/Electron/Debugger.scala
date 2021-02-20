@@ -3,6 +3,7 @@ package typings.electron.Electron
 import typings.electron.electronStrings.detach
 import typings.electron.electronStrings.message
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,15 +1,15 @@
 package typings.three
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/core/Layers", JSImport.Namespace)
-@js.native
-object layersMod extends js.Object {
+object layersMod {
   
+  @JSImport("three/src/core/Layers", "Layers")
   @js.native
-  class Layers () extends js.Object {
+  class Layers () extends StObject {
     
     def disable(channel: Double): Unit = js.native
     

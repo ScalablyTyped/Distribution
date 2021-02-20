@@ -1,12 +1,11 @@
 package typings.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "coordinate")
-@js.native
-object coordinate extends js.Object {
+object coordinate {
   
   /**
     * Add `delta` to `coordinate`. `coordinate` is modified in place and returned
@@ -23,6 +22,8 @@ object coordinate extends js.Object {
     * @return The input coordinate adjusted by the given delta.
     * @api stable
     */
+  @JSImport("openlayers", "coordinate.add")
+  @js.native
   def add(coordinate: Coordinate_, delta: Coordinate_): Coordinate_ = js.native
   
   /**
@@ -48,7 +49,11 @@ object coordinate extends js.Object {
     * @return Coordinate format.
     * @api stable
     */
+  @JSImport("openlayers", "coordinate.createStringXY")
+  @js.native
   def createStringXY(): CoordinateFormatType = js.native
+  @JSImport("openlayers", "coordinate.createStringXY")
+  @js.native
   def createStringXY(opt_fractionDigits: Double): CoordinateFormatType = js.native
   
   /**
@@ -78,7 +83,11 @@ object coordinate extends js.Object {
     * @return Formatted coordinate.
     * @api stable
     */
+  @JSImport("openlayers", "coordinate.format")
+  @js.native
   def format(coordinate: Coordinate_, template: String): String = js.native
+  @JSImport("openlayers", "coordinate.format")
+  @js.native
   def format(coordinate: Coordinate_, template: String, opt_fractionDigits: Double): String = js.native
   
   /**
@@ -97,6 +106,8 @@ object coordinate extends js.Object {
     * @return Coordinate.
     * @api stable
     */
+  @JSImport("openlayers", "coordinate.rotate")
+  @js.native
   def rotate(coordinate: Coordinate_, angle: Double): Coordinate_ = js.native
   
   /**
@@ -121,9 +132,17 @@ object coordinate extends js.Object {
     * @return Hemisphere, degrees, minutes and seconds.
     * @api stable
     */
+  @JSImport("openlayers", "coordinate.toStringHDMS")
+  @js.native
   def toStringHDMS(): String = js.native
+  @JSImport("openlayers", "coordinate.toStringHDMS")
+  @js.native
   def toStringHDMS(coordinate: js.UndefOr[scala.Nothing], opt_fractionDigits: Double): String = js.native
+  @JSImport("openlayers", "coordinate.toStringHDMS")
+  @js.native
   def toStringHDMS(coordinate: Coordinate_): String = js.native
+  @JSImport("openlayers", "coordinate.toStringHDMS")
+  @js.native
   def toStringHDMS(coordinate: Coordinate_, opt_fractionDigits: Double): String = js.native
   
   /**
@@ -147,8 +166,16 @@ object coordinate extends js.Object {
     * @return XY.
     * @api stable
     */
+  @JSImport("openlayers", "coordinate.toStringXY")
+  @js.native
   def toStringXY(): String = js.native
+  @JSImport("openlayers", "coordinate.toStringXY")
+  @js.native
   def toStringXY(coordinate: js.UndefOr[scala.Nothing], opt_fractionDigits: Double): String = js.native
+  @JSImport("openlayers", "coordinate.toStringXY")
+  @js.native
   def toStringXY(coordinate: Coordinate_): String = js.native
+  @JSImport("openlayers", "coordinate.toStringXY")
+  @js.native
   def toStringXY(coordinate: Coordinate_, opt_fractionDigits: Double): String = js.native
 }

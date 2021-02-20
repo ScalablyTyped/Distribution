@@ -2,6 +2,7 @@ package typings.dplayer.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,132 +56,120 @@ object DPlayerOptions {
   }
   
   @scala.inline
-  implicit class DPlayerOptionsOps[Self <: DPlayerOptions] (val x: Self) extends AnyVal {
+  implicit class DPlayerOptionsMutableBuilder[Self <: DPlayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiBackend(value: DPlayerAPIBackend): Self = StObject.set(x, "apiBackend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiBackendUndefined: Self = StObject.set(x, "apiBackend", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiBackend(value: DPlayerAPIBackend): Self = this.set("apiBackend", value.asInstanceOf[js.Any])
+    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
     @scala.inline
-    def deleteApiBackend: Self = this.set("apiBackend", js.undefined)
+    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    def setContainerNull: Self = StObject.set(x, "container", null)
     
     @scala.inline
-    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    def setContextmenu(value: js.Array[DPlayerContextMenuItem]): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
     
     @scala.inline
-    def setContainerNull: Self = this.set("container", null)
+    def setContextmenuVarargs(value: DPlayerContextMenuItem*): Self = StObject.set(x, "contextmenu", js.Array(value :_*))
     
     @scala.inline
-    def setContextmenuVarargs(value: DPlayerContextMenuItem*): Self = this.set("contextmenu", js.Array(value :_*))
+    def setDanmaku(value: DPlayerDanmaku): Self = StObject.set(x, "danmaku", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextmenu(value: js.Array[DPlayerContextMenuItem]): Self = this.set("contextmenu", value.asInstanceOf[js.Any])
+    def setDanmakuUndefined: Self = StObject.set(x, "danmaku", js.undefined)
     
     @scala.inline
-    def deleteContextmenu: Self = this.set("contextmenu", js.undefined)
+    def setHighlight(value: js.Array[DPlayerHighLightItem]): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDanmaku(value: DPlayerDanmaku): Self = this.set("danmaku", value.asInstanceOf[js.Any])
+    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
     @scala.inline
-    def deleteDanmaku: Self = this.set("danmaku", js.undefined)
+    def setHighlightVarargs(value: DPlayerHighLightItem*): Self = StObject.set(x, "highlight", js.Array(value :_*))
     
     @scala.inline
-    def setHighlightVarargs(value: DPlayerHighLightItem*): Self = this.set("highlight", js.Array(value :_*))
+    def setHotkey(value: Boolean): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight(value: js.Array[DPlayerHighLightItem]): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    def setHotkeyUndefined: Self = StObject.set(x, "hotkey", js.undefined)
     
     @scala.inline
-    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    def setLang(value: Lang | String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotkey(value: Boolean): Self = this.set("hotkey", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteHotkey: Self = this.set("hotkey", js.undefined)
+    def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: Lang | String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLive(value: Boolean): Self = this.set("live", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteLive: Self = this.set("live", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: String): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setMutex(value: Boolean): Self = StObject.set(x, "mutex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setMutexUndefined: Self = StObject.set(x, "mutex", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setPreload(value: Preload): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutex(value: Boolean): Self = this.set("mutex", value.asInstanceOf[js.Any])
+    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
     @scala.inline
-    def deleteMutex: Self = this.set("mutex", js.undefined)
+    def setScreenshot(value: Boolean): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreload(value: Preload): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setScreenshotUndefined: Self = StObject.set(x, "screenshot", js.undefined)
     
     @scala.inline
-    def deletePreload: Self = this.set("preload", js.undefined)
+    def setSubtitle(value: DPlayerSubTitle): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenshot(value: Boolean): Self = this.set("screenshot", value.asInstanceOf[js.Any])
+    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     @scala.inline
-    def deleteScreenshot: Self = this.set("screenshot", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitle(value: DPlayerSubTitle): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    def setVideo(value: DPlayerVideo): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo(value: DPlayerVideo): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

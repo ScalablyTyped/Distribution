@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.editor
 
 import typings.monacoEditor.mod.Selection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICursorSelectionChangedEvent extends js.Object {
+trait ICursorSelectionChangedEvent extends StObject {
   
   /**
     * The model version id.
@@ -59,48 +60,36 @@ object ICursorSelectionChangedEvent {
   }
   
   @scala.inline
-  implicit class ICursorSelectionChangedEventOps[Self <: ICursorSelectionChangedEvent] (val x: Self) extends AnyVal {
+  implicit class ICursorSelectionChangedEventMutableBuilder[Self <: ICursorSelectionChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModelVersionId(value: Double): Self = StObject.set(x, "modelVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOldModelVersionId(value: Double): Self = StObject.set(x, "oldModelVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldSelections(value: js.Array[Selection]): Self = StObject.set(x, "oldSelections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelVersionId(value: Double): Self = this.set("modelVersionId", value.asInstanceOf[js.Any])
+    def setOldSelectionsNull: Self = StObject.set(x, "oldSelections", null)
     
     @scala.inline
-    def setOldModelVersionId(value: Double): Self = this.set("oldModelVersionId", value.asInstanceOf[js.Any])
+    def setOldSelectionsVarargs(value: Selection*): Self = StObject.set(x, "oldSelections", js.Array(value :_*))
     
     @scala.inline
-    def setReason(value: CursorChangeReason): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReason(value: CursorChangeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondarySelectionsVarargs(value: Selection*): Self = this.set("secondarySelections", js.Array(value :_*))
+    def setSecondarySelections(value: js.Array[Selection]): Self = StObject.set(x, "secondarySelections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondarySelections(value: js.Array[Selection]): Self = this.set("secondarySelections", value.asInstanceOf[js.Any])
+    def setSecondarySelectionsVarargs(value: Selection*): Self = StObject.set(x, "secondarySelections", js.Array(value :_*))
     
     @scala.inline
-    def setSelection(value: Selection): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldSelectionsVarargs(value: Selection*): Self = this.set("oldSelections", js.Array(value :_*))
-    
-    @scala.inline
-    def setOldSelections(value: js.Array[Selection]): Self = this.set("oldSelections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldSelectionsNull: Self = this.set("oldSelections", null)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

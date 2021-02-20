@@ -5,12 +5,13 @@ import typings.atom.atomStrings.info
 import typings.atom.atomStrings.none
 import typings.atom.atomStrings.question
 import typings.atom.atomStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfirmationOptions extends js.Object {
+trait ConfirmationOptions extends StObject {
   
   /** The text for the buttons. */
   var buttons: js.UndefOr[js.Array[String]] = js.native
@@ -72,93 +73,81 @@ object ConfirmationOptions {
   }
   
   @scala.inline
-  implicit class ConfirmationOptionsOps[Self <: ConfirmationOptions] (val x: Self) extends AnyVal {
+  implicit class ConfirmationOptionsMutableBuilder[Self <: ConfirmationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setButtonsVarargs(value: String*): Self = this.set("buttons", js.Array(value :_*))
+    def setCancelId(value: Double): Self = StObject.set(x, "cancelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[String]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setCancelIdUndefined: Self = StObject.set(x, "cancelId", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setCheckboxChecked(value: Boolean): Self = StObject.set(x, "checkboxChecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelId(value: Double): Self = this.set("cancelId", value.asInstanceOf[js.Any])
+    def setCheckboxCheckedUndefined: Self = StObject.set(x, "checkboxChecked", js.undefined)
     
     @scala.inline
-    def deleteCancelId: Self = this.set("cancelId", js.undefined)
+    def setCheckboxLabel(value: String): Self = StObject.set(x, "checkboxLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxChecked(value: Boolean): Self = this.set("checkboxChecked", value.asInstanceOf[js.Any])
+    def setCheckboxLabelUndefined: Self = StObject.set(x, "checkboxLabel", js.undefined)
     
     @scala.inline
-    def deleteCheckboxChecked: Self = this.set("checkboxChecked", js.undefined)
+    def setDefaultId(value: Double): Self = StObject.set(x, "defaultId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxLabel(value: String): Self = this.set("checkboxLabel", value.asInstanceOf[js.Any])
+    def setDefaultIdUndefined: Self = StObject.set(x, "defaultId", js.undefined)
     
     @scala.inline
-    def deleteCheckboxLabel: Self = this.set("checkboxLabel", js.undefined)
+    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultId(value: Double): Self = this.set("defaultId", value.asInstanceOf[js.Any])
+    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
     @scala.inline
-    def deleteDefaultId: Self = this.set("defaultId", js.undefined)
+    def setIcon(value: js.Object): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteDetail: Self = this.set("detail", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: js.Object): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setNoLink(value: Boolean): Self = StObject.set(x, "noLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setNoLinkUndefined: Self = StObject.set(x, "noLink", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setNormalizeAccessKeys(value: Boolean): Self = StObject.set(x, "normalizeAccessKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoLink(value: Boolean): Self = this.set("noLink", value.asInstanceOf[js.Any])
+    def setNormalizeAccessKeysUndefined: Self = StObject.set(x, "normalizeAccessKeys", js.undefined)
     
     @scala.inline
-    def deleteNoLink: Self = this.set("noLink", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizeAccessKeys(value: Boolean): Self = this.set("normalizeAccessKeys", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteNormalizeAccessKeys: Self = this.set("normalizeAccessKeys", js.undefined)
+    def setType(value: none | info | error | question | warning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: none | info | error | question | warning): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

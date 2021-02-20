@@ -10,12 +10,13 @@ import typings.baseui.baseuiStrings.mini
 import typings.baseui.baseuiStrings.none
 import typings.baseui.baseuiStrings.right
 import typings.baseui.baseuiStrings.start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedProps extends js.Object {
+trait SharedProps extends StObject {
   
   /** Defines styles for inputs that are grouped with other controls. */
   @JSName("$adjoined")
@@ -71,45 +72,33 @@ object SharedProps {
   }
   
   @scala.inline
-  implicit class SharedPropsOps[Self <: SharedProps] (val x: Self) extends AnyVal {
+  implicit class SharedPropsMutableBuilder[Self <: SharedProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$adjoined(value: /* keyof baseui.baseui/input.ADJOINED */ none | left | right | both): Self = StObject.set(x, "$adjoined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$error(value: Boolean): Self = StObject.set(x, "$error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$adjoined(value: /* keyof baseui.baseui/input.ADJOINED */ none | left | right | both): Self = this.set("$adjoined", value.asInstanceOf[js.Any])
+    def set$hasIconTrailing(value: Boolean): Self = StObject.set(x, "$hasIconTrailing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$disabled(value: Boolean): Self = this.set("$disabled", value.asInstanceOf[js.Any])
+    def set$isFocused(value: Boolean): Self = StObject.set(x, "$isFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$error(value: Boolean): Self = this.set("$error", value.asInstanceOf[js.Any])
+    def set$position(value: /* keyof baseui.baseui/input.ENHANCER_POSITION */ start | end): Self = StObject.set(x, "$position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$hasIconTrailing(value: Boolean): Self = this.set("$hasIconTrailing", value.asInstanceOf[js.Any])
+    def set$positive(value: Boolean): Self = StObject.set(x, "$positive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$isFocused(value: Boolean): Self = this.set("$isFocused", value.asInstanceOf[js.Any])
+    def set$required(value: Boolean): Self = StObject.set(x, "$required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$position(value: /* keyof baseui.baseui/input.ENHANCER_POSITION */ start | end): Self = this.set("$position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$positive(value: Boolean): Self = this.set("$positive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$required(value: Boolean): Self = this.set("$required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$size(value: /* keyof baseui.baseui/input.SIZE */ mini | default_ | compact | large_): Self = this.set("$size", value.asInstanceOf[js.Any])
+    def set$size(value: /* keyof baseui.baseui/input.SIZE */ mini | default_ | compact | large_): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pollyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVoicesOutput extends js.Object {
+trait DescribeVoicesOutput extends StObject {
   
   /**
     * The pagination token to use in the next request to continue the listing of voices. NextToken is returned only if the response is truncated.
@@ -26,33 +27,21 @@ object DescribeVoicesOutput {
   }
   
   @scala.inline
-  implicit class DescribeVoicesOutputOps[Self <: DescribeVoicesOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeVoicesOutputMutableBuilder[Self <: DescribeVoicesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVoices(value: VoiceList): Self = StObject.set(x, "Voices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setVoicesUndefined: Self = StObject.set(x, "Voices", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setVoicesVarargs(value: Voice*): Self = this.set("Voices", js.Array(value :_*))
-    
-    @scala.inline
-    def setVoices(value: VoiceList): Self = this.set("Voices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoices: Self = this.set("Voices", js.undefined)
+    def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "Voices", js.Array(value :_*))
   }
 }

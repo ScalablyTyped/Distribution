@@ -1,6 +1,7 @@
 package typings.reactHotkeys.mod
 
 import typings.react.mod.HTMLAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,36 +31,24 @@ object HotKeysOverrideProps {
   }
   
   @scala.inline
-  implicit class HotKeysOverridePropsOps[Self <: HotKeysOverrideProps] (val x: Self) extends AnyVal {
+  implicit class HotKeysOverridePropsMutableBuilder[Self <: HotKeysOverrideProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcept(value: ListOfKeys): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value :_*))
     
     @scala.inline
-    def setExceptVarargs(value: String*): Self = this.set("except", js.Array(value :_*))
+    def setOnly(value: ListOfKeys): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcept(value: ListOfKeys): Self = this.set("except", value.asInstanceOf[js.Any])
+    def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
     @scala.inline
-    def deleteExcept: Self = this.set("except", js.undefined)
-    
-    @scala.inline
-    def setOnlyVarargs(value: String*): Self = this.set("only", js.Array(value :_*))
-    
-    @scala.inline
-    def setOnly(value: ListOfKeys): Self = this.set("only", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnly: Self = this.set("only", js.undefined)
+    def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value :_*))
   }
 }

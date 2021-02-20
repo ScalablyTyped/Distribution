@@ -8,6 +8,7 @@ import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Automatic
 import typings.officeJsPreview.officeJsPreviewStrings.Custom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

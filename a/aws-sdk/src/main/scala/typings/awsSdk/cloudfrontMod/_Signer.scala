@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait _Signer extends js.Object {
+trait _Signer extends StObject {
   
   /**
     * An AWS account number that contains active CloudFront key pairs that CloudFront can use to verify the signatures of signed URLs and signed cookies. If the AWS account that owns the key pairs is the same account that owns the CloudFront distribution, the value of this field is self.
@@ -26,30 +27,18 @@ object _Signer {
   }
   
   @scala.inline
-  implicit class _SignerOps[Self <: _Signer] (val x: Self) extends AnyVal {
+  implicit class _SignerMutableBuilder[Self <: _Signer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountNumber(value: String): Self = StObject.set(x, "AwsAccountNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsAccountNumberUndefined: Self = StObject.set(x, "AwsAccountNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPairIds(value: KeyPairIds): Self = StObject.set(x, "KeyPairIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccountNumber(value: String): Self = this.set("AwsAccountNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAwsAccountNumber: Self = this.set("AwsAccountNumber", js.undefined)
-    
-    @scala.inline
-    def setKeyPairIds(value: KeyPairIds): Self = this.set("KeyPairIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPairIds: Self = this.set("KeyPairIds", js.undefined)
+    def setKeyPairIdsUndefined: Self = StObject.set(x, "KeyPairIds", js.undefined)
   }
 }

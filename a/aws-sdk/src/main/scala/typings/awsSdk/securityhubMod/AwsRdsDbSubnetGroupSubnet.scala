@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRdsDbSubnetGroupSubnet extends js.Object {
+trait AwsRdsDbSubnetGroupSubnet extends StObject {
   
   /**
     * Information about the Availability Zone for a subnet in the subnet group.
@@ -31,36 +32,24 @@ object AwsRdsDbSubnetGroupSubnet {
   }
   
   @scala.inline
-  implicit class AwsRdsDbSubnetGroupSubnetOps[Self <: AwsRdsDbSubnetGroupSubnet] (val x: Self) extends AnyVal {
+  implicit class AwsRdsDbSubnetGroupSubnetMutableBuilder[Self <: AwsRdsDbSubnetGroupSubnet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubnetAvailabilityZone(value: AwsRdsDbSubnetGroupSubnetAvailabilityZone): Self = StObject.set(x, "SubnetAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubnetAvailabilityZoneUndefined: Self = StObject.set(x, "SubnetAvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubnetIdentifier(value: NonEmptyString): Self = StObject.set(x, "SubnetIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetAvailabilityZone(value: AwsRdsDbSubnetGroupSubnetAvailabilityZone): Self = this.set("SubnetAvailabilityZone", value.asInstanceOf[js.Any])
+    def setSubnetIdentifierUndefined: Self = StObject.set(x, "SubnetIdentifier", js.undefined)
     
     @scala.inline
-    def deleteSubnetAvailabilityZone: Self = this.set("SubnetAvailabilityZone", js.undefined)
+    def setSubnetStatus(value: NonEmptyString): Self = StObject.set(x, "SubnetStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetIdentifier(value: NonEmptyString): Self = this.set("SubnetIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetIdentifier: Self = this.set("SubnetIdentifier", js.undefined)
-    
-    @scala.inline
-    def setSubnetStatus(value: NonEmptyString): Self = this.set("SubnetStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetStatus: Self = this.set("SubnetStatus", js.undefined)
+    def setSubnetStatusUndefined: Self = StObject.set(x, "SubnetStatus", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationConfiguration extends js.Object {
+trait ReplicationConfiguration extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that Amazon S3 assumes when replicating objects. For more information, see How to Set Up Replication in the Amazon Simple Storage Service Developer Guide.
@@ -26,27 +27,15 @@ object ReplicationConfiguration {
   }
   
   @scala.inline
-  implicit class ReplicationConfigurationOps[Self <: ReplicationConfiguration] (val x: Self) extends AnyVal {
+  implicit class ReplicationConfigurationMutableBuilder[Self <: ReplicationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRules(value: ReplicationRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRulesVarargs(value: ReplicationRule*): Self = this.set("Rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: ReplicationRules): Self = this.set("Rules", value.asInstanceOf[js.Any])
+    def setRulesVarargs(value: ReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

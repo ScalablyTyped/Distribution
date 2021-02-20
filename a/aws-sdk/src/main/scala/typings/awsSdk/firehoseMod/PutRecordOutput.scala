@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRecordOutput extends js.Object {
+trait PutRecordOutput extends StObject {
   
   /**
     * Indicates whether server-side encryption (SSE) was enabled during this operation.
@@ -26,27 +27,15 @@ object PutRecordOutput {
   }
   
   @scala.inline
-  implicit class PutRecordOutputOps[Self <: PutRecordOutput] (val x: Self) extends AnyVal {
+  implicit class PutRecordOutputMutableBuilder[Self <: PutRecordOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncrypted(value: BooleanObject): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecordId(value: PutResponseRecordId): Self = this.set("RecordId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncrypted(value: BooleanObject): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    def setRecordId(value: PutResponseRecordId): Self = StObject.set(x, "RecordId", value.asInstanceOf[js.Any])
   }
 }

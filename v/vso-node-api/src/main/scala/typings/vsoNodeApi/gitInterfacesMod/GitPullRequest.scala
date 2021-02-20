@@ -4,12 +4,13 @@ import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.WebApiTagDefinition
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import typings.vsoNodeApi.vssinterfacesMod.ResourceRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitPullRequest extends js.Object {
+trait GitPullRequest extends StObject {
   
   /**
     * Links to other related objects.
@@ -219,129 +220,117 @@ object GitPullRequest {
   }
   
   @scala.inline
-  implicit class GitPullRequestOps[Self <: GitPullRequest] (val x: Self) extends AnyVal {
+  implicit class GitPullRequestMutableBuilder[Self <: GitPullRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCompleteSetBy(value: IdentityRef): Self = StObject.set(x, "autoCompleteSetBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClosedBy(value: IdentityRef): Self = StObject.set(x, "closedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
+    def setClosedDate(value: Date): Self = StObject.set(x, "closedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactId(value: String): Self = this.set("artifactId", value.asInstanceOf[js.Any])
+    def setCodeReviewId(value: Double): Self = StObject.set(x, "codeReviewId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCompleteSetBy(value: IdentityRef): Self = this.set("autoCompleteSetBy", value.asInstanceOf[js.Any])
+    def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosedBy(value: IdentityRef): Self = this.set("closedBy", value.asInstanceOf[js.Any])
+    def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value :_*))
     
     @scala.inline
-    def setClosedDate(value: Date): Self = this.set("closedDate", value.asInstanceOf[js.Any])
+    def setCompletionOptions(value: GitPullRequestCompletionOptions): Self = StObject.set(x, "completionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeReviewId(value: Double): Self = this.set("codeReviewId", value.asInstanceOf[js.Any])
+    def setCompletionQueueTime(value: Date): Self = StObject.set(x, "completionQueueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitsVarargs(value: GitCommitRef*): Self = this.set("commits", js.Array(value :_*))
+    def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommits(value: js.Array[GitCommitRef]): Self = this.set("commits", value.asInstanceOf[js.Any])
+    def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionOptions(value: GitPullRequestCompletionOptions): Self = this.set("completionOptions", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionQueueTime(value: Date): Self = this.set("completionQueueTime", value.asInstanceOf[js.Any])
+    def setForkSource(value: GitForkRef): Self = StObject.set(x, "forkSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: IdentityRef): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setLabels(value: js.Array[WebApiTagDefinition]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Date): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setLabelsVarargs(value: WebApiTagDefinition*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLastMergeCommit(value: GitCommitRef): Self = StObject.set(x, "lastMergeCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForkSource(value: GitForkRef): Self = this.set("forkSource", value.asInstanceOf[js.Any])
+    def setLastMergeSourceCommit(value: GitCommitRef): Self = StObject.set(x, "lastMergeSourceCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsVarargs(value: WebApiTagDefinition*): Self = this.set("labels", js.Array(value :_*))
+    def setLastMergeTargetCommit(value: GitCommitRef): Self = StObject.set(x, "lastMergeTargetCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[WebApiTagDefinition]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setMergeFailureMessage(value: String): Self = StObject.set(x, "mergeFailureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastMergeCommit(value: GitCommitRef): Self = this.set("lastMergeCommit", value.asInstanceOf[js.Any])
+    def setMergeFailureType(value: PullRequestMergeFailureType): Self = StObject.set(x, "mergeFailureType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastMergeSourceCommit(value: GitCommitRef): Self = this.set("lastMergeSourceCommit", value.asInstanceOf[js.Any])
+    def setMergeId(value: String): Self = StObject.set(x, "mergeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastMergeTargetCommit(value: GitCommitRef): Self = this.set("lastMergeTargetCommit", value.asInstanceOf[js.Any])
+    def setMergeOptions(value: GitPullRequestMergeOptions): Self = StObject.set(x, "mergeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeFailureMessage(value: String): Self = this.set("mergeFailureMessage", value.asInstanceOf[js.Any])
+    def setMergeStatus(value: PullRequestAsyncStatus): Self = StObject.set(x, "mergeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeFailureType(value: PullRequestMergeFailureType): Self = this.set("mergeFailureType", value.asInstanceOf[js.Any])
+    def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeId(value: String): Self = this.set("mergeId", value.asInstanceOf[js.Any])
+    def setRemoteUrl(value: String): Self = StObject.set(x, "remoteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeOptions(value: GitPullRequestMergeOptions): Self = this.set("mergeOptions", value.asInstanceOf[js.Any])
+    def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeStatus(value: PullRequestAsyncStatus): Self = this.set("mergeStatus", value.asInstanceOf[js.Any])
+    def setReviewers(value: js.Array[IdentityRefWithVote]): Self = StObject.set(x, "reviewers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequestId(value: Double): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
+    def setReviewersVarargs(value: IdentityRefWithVote*): Self = StObject.set(x, "reviewers", js.Array(value :_*))
     
     @scala.inline
-    def setRemoteUrl(value: String): Self = this.set("remoteUrl", value.asInstanceOf[js.Any])
+    def setSourceRefName(value: String): Self = StObject.set(x, "sourceRefName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: GitRepository): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setStatus(value: PullRequestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewersVarargs(value: IdentityRefWithVote*): Self = this.set("reviewers", js.Array(value :_*))
+    def setSupportsIterations(value: Boolean): Self = StObject.set(x, "supportsIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewers(value: js.Array[IdentityRefWithVote]): Self = this.set("reviewers", value.asInstanceOf[js.Any])
+    def setTargetRefName(value: String): Self = StObject.set(x, "targetRefName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceRefName(value: String): Self = this.set("sourceRefName", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: PullRequestStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsIterations(value: Boolean): Self = this.set("supportsIterations", value.asInstanceOf[js.Any])
+    def setWorkItemRefs(value: js.Array[ResourceRef]): Self = StObject.set(x, "workItemRefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetRefName(value: String): Self = this.set("targetRefName", value.asInstanceOf[js.Any])
+    def setWorkItemRefsVarargs(value: ResourceRef*): Self = StObject.set(x, "workItemRefs", js.Array(value :_*))
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemRefsVarargs(value: ResourceRef*): Self = this.set("workItemRefs", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkItemRefs(value: js.Array[ResourceRef]): Self = this.set("workItemRefs", value.asInstanceOf[js.Any])
+    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

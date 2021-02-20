@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Recommendation extends js.Object {
+trait Recommendation extends StObject {
   
   /**
     * How many different places in the profile graph triggered a match.
@@ -53,39 +54,27 @@ object Recommendation {
   }
   
   @scala.inline
-  implicit class RecommendationOps[Self <: Recommendation] (val x: Self) extends AnyVal {
+  implicit class RecommendationMutableBuilder[Self <: Recommendation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllMatchesCount(value: Integer): Self = StObject.set(x, "allMatchesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllMatchesSum(value: Double): Self = StObject.set(x, "allMatchesSum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllMatchesCount(value: Integer): Self = this.set("allMatchesCount", value.asInstanceOf[js.Any])
+    def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllMatchesSum(value: Double): Self = this.set("allMatchesSum", value.asInstanceOf[js.Any])
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setTopMatches(value: Matches): Self = StObject.set(x, "topMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: Pattern): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopMatchesVarargs(value: Match*): Self = this.set("topMatches", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopMatches(value: Matches): Self = this.set("topMatches", value.asInstanceOf[js.Any])
+    def setTopMatchesVarargs(value: Match*): Self = StObject.set(x, "topMatches", js.Array(value :_*))
   }
 }

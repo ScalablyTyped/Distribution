@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenewDomainRequest extends js.Object {
+trait RenewDomainRequest extends StObject {
   
   /**
     * The year when the registration for the domain is set to expire. This value must match the current expiration date for the domain.
@@ -31,30 +32,18 @@ object RenewDomainRequest {
   }
   
   @scala.inline
-  implicit class RenewDomainRequestOps[Self <: RenewDomainRequest] (val x: Self) extends AnyVal {
+  implicit class RenewDomainRequestMutableBuilder[Self <: RenewDomainRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentExpiryYear(value: CurrentExpiryYear): Self = StObject.set(x, "CurrentExpiryYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDurationInYears(value: DurationInYears): Self = StObject.set(x, "DurationInYears", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentExpiryYear(value: CurrentExpiryYear): Self = this.set("CurrentExpiryYear", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDurationInYears(value: DurationInYears): Self = this.set("DurationInYears", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDurationInYears: Self = this.set("DurationInYears", js.undefined)
+    def setDurationInYearsUndefined: Self = StObject.set(x, "DurationInYears", js.undefined)
   }
 }

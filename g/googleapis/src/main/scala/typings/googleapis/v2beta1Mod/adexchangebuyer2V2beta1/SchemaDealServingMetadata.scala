@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Message captures metadata about the serving status of a deal.
   */
 @js.native
-trait SchemaDealServingMetadata extends js.Object {
+trait SchemaDealServingMetadata extends StObject {
   
   /**
     * Tracks which parties (if any) have paused a deal. @OutputOnly
@@ -24,24 +25,12 @@ object SchemaDealServingMetadata {
   }
   
   @scala.inline
-  implicit class SchemaDealServingMetadataOps[Self <: SchemaDealServingMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaDealServingMetadataMutableBuilder[Self <: SchemaDealServingMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDealPauseStatus(value: SchemaDealPauseStatus): Self = StObject.set(x, "dealPauseStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDealPauseStatus(value: SchemaDealPauseStatus): Self = this.set("dealPauseStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDealPauseStatus: Self = this.set("dealPauseStatus", js.undefined)
+    def setDealPauseStatusUndefined: Self = StObject.set(x, "dealPauseStatus", js.undefined)
   }
 }

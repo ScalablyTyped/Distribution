@@ -3,16 +3,16 @@ package typings.babylonjs
 import typings.babylonjs.dataBufferMod.DataBuffer
 import typings.babylonjs.typesMod.DataArray
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/buffer", JSImport.Namespace)
-@js.native
-object bufferMod extends js.Object {
+object bufferMod {
   
+  @JSImport("babylonjs/Meshes/buffer", "Buffer")
   @js.native
-  class Buffer protected () extends js.Object {
+  class Buffer protected () extends StObject {
     /**
       * Constructor
       * @param engine the engine
@@ -501,8 +501,9 @@ object bufferMod extends js.Object {
     def updateDirectly(data: DataArray, offset: Double, vertexCount: Double, useBytes: Boolean): Unit = js.native
   }
   
+  @JSImport("babylonjs/Meshes/buffer", "VertexBuffer")
   @js.native
-  class VertexBuffer protected () extends js.Object {
+  class VertexBuffer protected () extends StObject {
     /**
       * Constructor
       * @param engine the engine
@@ -673,17 +674,24 @@ object bufferMod extends js.Object {
     def updateDirectly(data: DataArray, offset: Double, useBytes: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object VertexBuffer extends js.Object {
+  object VertexBuffer {
+    
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The byte type.
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.BYTE")
+    @js.native
     val BYTE: Double = js.native
     
     /**
       * Colors
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.ColorKind")
+    @js.native
     val ColorKind: String = js.native
     
     /**
@@ -691,11 +699,15 @@ object bufferMod extends js.Object {
       * @param kind The kind string to deduce
       * @returns The deduced stride
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.DeduceStride")
+    @js.native
     def DeduceStride(kind: String): Double = js.native
     
     /**
       * The float type.
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.FLOAT")
+    @js.native
     val FLOAT: Double = js.native
     
     /**
@@ -709,6 +721,8 @@ object bufferMod extends js.Object {
       * @param normalized whether the data is normalized
       * @param callback the callback function called for each value
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.ForEach")
+    @js.native
     def ForEach(
       data: DataArray,
       byteOffset: Double,
@@ -725,98 +739,140 @@ object bufferMod extends js.Object {
       * @param type the type
       * @returns the number of bytes
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.GetTypeByteLength")
+    @js.native
     def GetTypeByteLength(`type`: Double): Double = js.native
     
     /**
       * The integer type.
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.INT")
+    @js.native
     val INT: Double = js.native
     
     /**
       * Additional matrix indices (for bones)
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.MatricesIndicesExtraKind")
+    @js.native
     val MatricesIndicesExtraKind: String = js.native
     
     /**
       * Matrix indices (for bones)
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.MatricesIndicesKind")
+    @js.native
     val MatricesIndicesKind: String = js.native
     
     /**
       * Additional matrix weights (for bones)
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.MatricesWeightsExtraKind")
+    @js.native
     val MatricesWeightsExtraKind: String = js.native
     
     /**
       * Matrix weights (for bones)
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.MatricesWeightsKind")
+    @js.native
     val MatricesWeightsKind: String = js.native
     
     /**
       * Normals
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.NormalKind")
+    @js.native
     val NormalKind: String = js.native
     
     /**
       * Positions
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.PositionKind")
+    @js.native
     val PositionKind: String = js.native
     
     /**
       * The short type.
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.SHORT")
+    @js.native
     val SHORT: Double = js.native
     
     /**
       * Tangents
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.TangentKind")
+    @js.native
     val TangentKind: String = js.native
     
     /**
       * The unsigned byte type.
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UNSIGNED_BYTE")
+    @js.native
     val UNSIGNED_BYTE: Double = js.native
     
     /**
       * The unsigned integer type.
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UNSIGNED_INT")
+    @js.native
     val UNSIGNED_INT: Double = js.native
     
     /**
       * The unsigned short type.
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UNSIGNED_SHORT")
+    @js.native
     val UNSIGNED_SHORT: Double = js.native
     
     /**
       * Texture coordinates 2
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UV2Kind")
+    @js.native
     val UV2Kind: String = js.native
     
     /**
       * Texture coordinates 3
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UV3Kind")
+    @js.native
     val UV3Kind: String = js.native
     
     /**
       * Texture coordinates 4
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UV4Kind")
+    @js.native
     val UV4Kind: String = js.native
     
     /**
       * Texture coordinates 5
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UV5Kind")
+    @js.native
     val UV5Kind: String = js.native
     
     /**
       * Texture coordinates 6
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UV6Kind")
+    @js.native
     val UV6Kind: String = js.native
     
     /**
       * Texture coordinates
       */
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UVKind")
+    @js.native
     val UVKind: String = js.native
     
-    var _GetFloatValue: js.Any = js.native
+    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer._GetFloatValue")
+    @js.native
+    def _GetFloatValue: js.Any = js.native
+    @scala.inline
+    def _GetFloatValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
   }
 }

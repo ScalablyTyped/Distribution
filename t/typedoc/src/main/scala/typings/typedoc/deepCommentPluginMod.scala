@@ -1,17 +1,19 @@
 package typings.typedoc
 
-import typings.typedoc.componentMod.AbstractComponent
+import typings.typedoc.componentsMod.ConverterComponent
 import typings.typedoc.converterConverterMod.Converter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/converter/plugins/DeepCommentPlugin", JSImport.Namespace)
-@js.native
-object deepCommentPluginMod extends js.Object {
+object deepCommentPluginMod {
   
+  @JSImport("typedoc/dist/lib/converter/plugins/DeepCommentPlugin", "DeepCommentPlugin")
   @js.native
-  class DeepCommentPlugin () extends AbstractComponent[Converter] {
+  class DeepCommentPlugin protected () extends ConverterComponent {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Converter) = this()
     
     var onBeginResolve: js.Any = js.native
   }

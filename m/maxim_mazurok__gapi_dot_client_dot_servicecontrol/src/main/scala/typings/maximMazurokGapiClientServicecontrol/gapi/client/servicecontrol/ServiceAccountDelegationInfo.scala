@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceAccountDelegationInfo extends js.Object {
+trait ServiceAccountDelegationInfo extends StObject {
   
   /** First party (Google) identity as the real authority. */
   var firstPartyPrincipal: js.UndefOr[FirstPartyPrincipal] = js.native
@@ -25,36 +26,24 @@ object ServiceAccountDelegationInfo {
   }
   
   @scala.inline
-  implicit class ServiceAccountDelegationInfoOps[Self <: ServiceAccountDelegationInfo] (val x: Self) extends AnyVal {
+  implicit class ServiceAccountDelegationInfoMutableBuilder[Self <: ServiceAccountDelegationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstPartyPrincipal(value: FirstPartyPrincipal): Self = StObject.set(x, "firstPartyPrincipal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstPartyPrincipalUndefined: Self = StObject.set(x, "firstPartyPrincipal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrincipalSubject(value: String): Self = StObject.set(x, "principalSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPartyPrincipal(value: FirstPartyPrincipal): Self = this.set("firstPartyPrincipal", value.asInstanceOf[js.Any])
+    def setPrincipalSubjectUndefined: Self = StObject.set(x, "principalSubject", js.undefined)
     
     @scala.inline
-    def deleteFirstPartyPrincipal: Self = this.set("firstPartyPrincipal", js.undefined)
+    def setThirdPartyPrincipal(value: ThirdPartyPrincipal): Self = StObject.set(x, "thirdPartyPrincipal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalSubject(value: String): Self = this.set("principalSubject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipalSubject: Self = this.set("principalSubject", js.undefined)
-    
-    @scala.inline
-    def setThirdPartyPrincipal(value: ThirdPartyPrincipal): Self = this.set("thirdPartyPrincipal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThirdPartyPrincipal: Self = this.set("thirdPartyPrincipal", js.undefined)
+    def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)
   }
 }

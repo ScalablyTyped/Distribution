@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupstaggingapiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetResourcesOutput extends js.Object {
+trait GetResourcesOutput extends StObject {
   
   /**
     * A string that indicates that the response contains more data than can be returned in a single response. To receive additional data, specify this string for the PaginationToken value in a subsequent request.
@@ -26,33 +27,21 @@ object GetResourcesOutput {
   }
   
   @scala.inline
-  implicit class GetResourcesOutputOps[Self <: GetResourcesOutput] (val x: Self) extends AnyVal {
+  implicit class GetResourcesOutputMutableBuilder[Self <: GetResourcesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceTagMappingList(value: ResourceTagMappingList): Self = StObject.set(x, "ResourceTagMappingList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationToken(value: PaginationToken): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
+    def setResourceTagMappingListUndefined: Self = StObject.set(x, "ResourceTagMappingList", js.undefined)
     
     @scala.inline
-    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
-    
-    @scala.inline
-    def setResourceTagMappingListVarargs(value: ResourceTagMapping*): Self = this.set("ResourceTagMappingList", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceTagMappingList(value: ResourceTagMappingList): Self = this.set("ResourceTagMappingList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceTagMappingList: Self = this.set("ResourceTagMappingList", js.undefined)
+    def setResourceTagMappingListVarargs(value: ResourceTagMapping*): Self = StObject.set(x, "ResourceTagMappingList", js.Array(value :_*))
   }
 }

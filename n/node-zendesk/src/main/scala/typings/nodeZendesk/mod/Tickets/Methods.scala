@@ -2,12 +2,13 @@ package typings.nodeZendesk.mod.Tickets
 
 import typings.nodeZendesk.mod.ZendeskCallback
 import typings.nodeZendesk.mod.ZendeskID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Methods extends js.Object {
+trait Methods extends StObject {
   
   def addTags(ticketId: ZendeskID, tags: js.Array[String]): js.Promise[TagsPayload] = js.native
   /** Adding Tags */

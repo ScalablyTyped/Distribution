@@ -1,13 +1,14 @@
 package typings.dav.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dav", "Request")
 @js.native
-class Request_ () extends js.Object {
+class Request_ () extends StObject {
   def this(options: RequestOptions) = this()
   
   var method: String = js.native

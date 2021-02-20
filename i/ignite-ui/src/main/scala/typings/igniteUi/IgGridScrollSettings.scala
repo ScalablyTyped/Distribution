@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,66 +70,54 @@ object IgGridScrollSettings {
   }
   
   @scala.inline
-  implicit class IgGridScrollSettingsOps[Self <: IgGridScrollSettings] (val x: Self) extends AnyVal {
+  implicit class IgGridScrollSettingsMutableBuilder[Self <: IgGridScrollSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInertiaDuration(value: Double): Self = StObject.set(x, "inertiaDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInertiaDurationUndefined: Self = StObject.set(x, "inertiaDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInertiaStep(value: Double): Self = StObject.set(x, "inertiaStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInertiaDuration(value: Double): Self = this.set("inertiaDuration", value.asInstanceOf[js.Any])
+    def setInertiaStepUndefined: Self = StObject.set(x, "inertiaStep", js.undefined)
     
     @scala.inline
-    def deleteInertiaDuration: Self = this.set("inertiaDuration", js.undefined)
+    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInertiaStep(value: Double): Self = this.set("inertiaStep", value.asInstanceOf[js.Any])
+    def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
     
     @scala.inline
-    def deleteInertiaStep: Self = this.set("inertiaStep", js.undefined)
+    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollLeft(value: Double): Self = this.set("scrollLeft", value.asInstanceOf[js.Any])
+    def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
     
     @scala.inline
-    def deleteScrollLeft: Self = this.set("scrollLeft", js.undefined)
+    def setSmoothing(value: Boolean): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollTop(value: Double): Self = this.set("scrollTop", value.asInstanceOf[js.Any])
+    def setSmoothingDuration(value: Double): Self = StObject.set(x, "smoothingDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollTop: Self = this.set("scrollTop", js.undefined)
+    def setSmoothingDurationUndefined: Self = StObject.set(x, "smoothingDuration", js.undefined)
     
     @scala.inline
-    def setSmoothing(value: Boolean): Self = this.set("smoothing", value.asInstanceOf[js.Any])
+    def setSmoothingStep(value: Double): Self = StObject.set(x, "smoothingStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmoothing: Self = this.set("smoothing", js.undefined)
+    def setSmoothingStepUndefined: Self = StObject.set(x, "smoothingStep", js.undefined)
     
     @scala.inline
-    def setSmoothingDuration(value: Double): Self = this.set("smoothingDuration", value.asInstanceOf[js.Any])
+    def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
     
     @scala.inline
-    def deleteSmoothingDuration: Self = this.set("smoothingDuration", js.undefined)
+    def setWheelStep(value: Double): Self = StObject.set(x, "wheelStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmoothingStep(value: Double): Self = this.set("smoothingStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmoothingStep: Self = this.set("smoothingStep", js.undefined)
-    
-    @scala.inline
-    def setWheelStep(value: Double): Self = this.set("wheelStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWheelStep: Self = this.set("wheelStep", js.undefined)
+    def setWheelStepUndefined: Self = StObject.set(x, "wheelStep", js.undefined)
   }
 }

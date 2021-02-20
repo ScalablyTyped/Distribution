@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,27 +45,15 @@ object ASPxClientHtmlEditorTableRowPropertiesDialog {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorTableRowPropertiesDialogOps[Self <: ASPxClientHtmlEditorTableRowPropertiesDialog] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorTableRowPropertiesDialogMutableBuilder[Self <: ASPxClientHtmlEditorTableRowPropertiesDialog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHeightTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightTypeComboBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHeightValueSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetHeightValueSpinEdit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetHeightTypeComboBox(value: () => ASPxClientComboBox): Self = this.set("GetHeightTypeComboBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetHeightValueSpinEdit(value: () => ASPxClientSpinEdit): Self = this.set("GetHeightValueSpinEdit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetHeightValueTypeComboBox(value: () => ASPxClientComboBox): Self = this.set("GetHeightValueTypeComboBox", js.Any.fromFunction0(value))
+    def setGetHeightValueTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightValueTypeComboBox", js.Any.fromFunction0(value))
   }
 }

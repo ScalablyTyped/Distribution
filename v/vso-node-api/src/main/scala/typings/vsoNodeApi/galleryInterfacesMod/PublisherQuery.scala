@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublisherQuery extends js.Object {
+trait PublisherQuery extends StObject {
   
   /**
     * Each filter is a unique query and will have matching set of publishers returned from the request. Each result will have the same index in the resulting array that the filter had in the incoming query.
@@ -26,27 +27,15 @@ object PublisherQuery {
   }
   
   @scala.inline
-  implicit class PublisherQueryOps[Self <: PublisherQuery] (val x: Self) extends AnyVal {
+  implicit class PublisherQueryMutableBuilder[Self <: PublisherQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: js.Array[QueryFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFiltersVarargs(value: QueryFilter*): Self = this.set("filters", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilters(value: js.Array[QueryFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlags(value: PublisherQueryFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setFlags(value: PublisherQueryFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
   }
 }

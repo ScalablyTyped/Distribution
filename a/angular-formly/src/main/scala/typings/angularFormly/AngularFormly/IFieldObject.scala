@@ -11,13 +11,14 @@ import typings.angular.mod.IScope
 import typings.angular.mod.ITranscludeFunction
 import typings.angularFormly.anon.Dictkey
 import typings.angularFormly.anon.ErrorExistsAndShouldBeVisible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // see http://docs.angular-formly.com/docs/field-configuration-object
 @js.native
-trait IFieldObject extends js.Object {
+trait IFieldObject extends StObject {
   
   /**
     * Added in 6.18.0
@@ -280,10 +281,10 @@ trait IFieldObject extends js.Object {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#value-gettersetter-function
     */
-   //Getter
+  //Getter
   var value: js.UndefOr[js.Function0[_]] with (js.UndefOr[js.Function1[/* val */ js.Any, Unit]]) = js.native
   
-   //Setter
+  //Setter
   /**
     * An object which has at least two properties called expression and listener. The watch.expression is added
     * to the formly-form directive's scope (to allow it to run even when hide is true). You can specify a type
@@ -313,240 +314,228 @@ object IFieldObject {
   }
   
   @scala.inline
-  implicit class IFieldObjectOps[Self <: IFieldObject] (val x: Self) extends AnyVal {
+  implicit class IFieldObjectMutableBuilder[Self <: IFieldObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncValidators(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.UndefOr[js.Function0[_]] with (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setAsyncValidators(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = this.set("asyncValidators", value.asInstanceOf[js.Any])
+    def setController(value: String | js.Function): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsyncValidators: Self = this.set("asyncValidators", js.undefined)
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setController(value: String | js.Function): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setElementAttributes(value: StringDictionary[String]): Self = StObject.set(x, "elementAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setElementAttributesUndefined: Self = StObject.set(x, "elementAttributes", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setExpressionProperties(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = StObject.set(x, "expressionProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setExpressionPropertiesUndefined: Self = StObject.set(x, "expressionProperties", js.undefined)
     
     @scala.inline
-    def setElementAttributes(value: StringDictionary[String]): Self = this.set("elementAttributes", value.asInstanceOf[js.Any])
+    def setFormControl(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElementAttributes: Self = this.set("elementAttributes", js.undefined)
+    def setFormControlUndefined: Self = StObject.set(x, "formControl", js.undefined)
     
     @scala.inline
-    def setExpressionProperties(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = this.set("expressionProperties", value.asInstanceOf[js.Any])
+    def setFormControlVarargs(value: IFormController*): Self = StObject.set(x, "formControl", js.Array(value :_*))
     
     @scala.inline
-    def deleteExpressionProperties: Self = this.set("expressionProperties", js.undefined)
+    def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormControlVarargs(value: IFormController*): Self = this.set("formControl", js.Array(value :_*))
+    def setHideExpression(value: String | IExpressionFunction): Self = StObject.set(x, "hideExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormControl(value: IFormController | js.Array[IFormController]): Self = this.set("formControl", value.asInstanceOf[js.Any])
+    def setHideExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "hideExpression", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteFormControl: Self = this.set("formControl", js.undefined)
+    def setHideExpressionUndefined: Self = StObject.set(x, "hideExpression", js.undefined)
     
     @scala.inline
-    def setHide(value: Boolean): Self = this.set("hide", value.asInstanceOf[js.Any])
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("hideExpression", js.Any.fromFunction3(value))
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setHideExpression(value: String | IExpressionFunction): Self = this.set("hideExpression", value.asInstanceOf[js.Any])
+    def setInitialValue(value: js.Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideExpression: Self = this.set("hideExpression", js.undefined)
+    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setInitialValue(value: js.Any): Self = this.set("initialValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialValue: Self = this.set("initialValue", js.undefined)
-    
-    @scala.inline
-    def setKey(value: String | Double): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
     def setLink(
       value: (IScope, JQLite, IAttributes, /* controller */ js.UndefOr[IController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit
-    ): Self = this.set("link", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "link", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def setModelOptions(value: IModelOptions): Self = this.set("modelOptions", value.asInstanceOf[js.Any])
+    def setModelOptions(value: IModelOptions): Self = StObject.set(x, "modelOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModelOptions: Self = this.set("modelOptions", js.undefined)
+    def setModelOptionsUndefined: Self = StObject.set(x, "modelOptions", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNgModelAttrs(value: Dictkey): Self = this.set("ngModelAttrs", value.asInstanceOf[js.Any])
+    def setNgModelAttrs(value: Dictkey): Self = StObject.set(x, "ngModelAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNgModelAttrs: Self = this.set("ngModelAttrs", js.undefined)
+    def setNgModelAttrsUndefined: Self = StObject.set(x, "ngModelAttrs", js.undefined)
     
     @scala.inline
-    def setNgModelElAttrs(value: StringDictionary[String]): Self = this.set("ngModelElAttrs", value.asInstanceOf[js.Any])
+    def setNgModelElAttrs(value: StringDictionary[String]): Self = StObject.set(x, "ngModelElAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNgModelElAttrs: Self = this.set("ngModelElAttrs", js.undefined)
+    def setNgModelElAttrsUndefined: Self = StObject.set(x, "ngModelElAttrs", js.undefined)
     
     @scala.inline
-    def setNoFormControl(value: Boolean): Self = this.set("noFormControl", value.asInstanceOf[js.Any])
+    def setNoFormControl(value: Boolean): Self = StObject.set(x, "noFormControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoFormControl: Self = this.set("noFormControl", js.undefined)
+    def setNoFormControlUndefined: Self = StObject.set(x, "noFormControl", js.undefined)
     
     @scala.inline
-    def setOptionsTypesVarargs(value: String*): Self = this.set("optionsTypes", js.Array(value :_*))
+    def setOptionsTypes(value: String | js.Array[String]): Self = StObject.set(x, "optionsTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsTypes(value: String | js.Array[String]): Self = this.set("optionsTypes", value.asInstanceOf[js.Any])
+    def setOptionsTypesUndefined: Self = StObject.set(x, "optionsTypes", js.undefined)
     
     @scala.inline
-    def deleteOptionsTypes: Self = this.set("optionsTypes", js.undefined)
+    def setOptionsTypesVarargs(value: String*): Self = StObject.set(x, "optionsTypes", js.Array(value :_*))
     
     @scala.inline
-    def setResetModel(value: () => Unit): Self = this.set("resetModel", js.Any.fromFunction0(value))
+    def setResetModel(value: () => Unit): Self = StObject.set(x, "resetModel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteResetModel: Self = this.set("resetModel", js.undefined)
+    def setResetModelUndefined: Self = StObject.set(x, "resetModel", js.undefined)
     
     @scala.inline
-    def setRunExpressions(value: () => Unit): Self = this.set("runExpressions", js.Any.fromFunction0(value))
+    def setRunExpressions(value: () => Unit): Self = StObject.set(x, "runExpressions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteRunExpressions: Self = this.set("runExpressions", js.undefined)
-    
-    @scala.inline
-    def setTemplateFunction1(value: /* fieldConfiguration */ IFieldConfigurationObject => String | IPromise[String]): Self = this.set("template", js.Any.fromFunction1(value))
+    def setRunExpressionsUndefined: Self = StObject.set(x, "runExpressions", js.undefined)
     
     @scala.inline
     def setTemplate(
       value: String | (js.Function1[/* fieldConfiguration */ IFieldConfigurationObject, String | IPromise[String]])
-    ): Self = this.set("template", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateFunction1(value: /* fieldConfiguration */ IFieldConfigurationObject => String | IPromise[String]): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTemplateManipulators(value: ITemplateManipulators): Self = this.set("templateManipulators", value.asInstanceOf[js.Any])
+    def setTemplateManipulators(value: ITemplateManipulators): Self = StObject.set(x, "templateManipulators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateManipulators: Self = this.set("templateManipulators", js.undefined)
+    def setTemplateManipulatorsUndefined: Self = StObject.set(x, "templateManipulators", js.undefined)
     
     @scala.inline
-    def setTemplateOptions(value: ITemplateOptions): Self = this.set("templateOptions", value.asInstanceOf[js.Any])
+    def setTemplateOptions(value: ITemplateOptions): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateOptions: Self = this.set("templateOptions", js.undefined)
+    def setTemplateOptionsUndefined: Self = StObject.set(x, "templateOptions", js.undefined)
     
     @scala.inline
-    def setTemplateUrlFunction1(value: /* fieldConfiguration */ IFieldConfigurationObject => String | IPromise[String]): Self = this.set("templateUrl", js.Any.fromFunction1(value))
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
     def setTemplateUrl(
       value: String | (js.Function1[/* fieldConfiguration */ IFieldConfigurationObject, String | IPromise[String]])
-    ): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+    def setTemplateUrlFunction1(value: /* fieldConfiguration */ IFieldConfigurationObject => String | IPromise[String]): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateInitialValue(value: () => Unit): Self = this.set("updateInitialValue", js.Any.fromFunction0(value))
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteUpdateInitialValue: Self = this.set("updateInitialValue", js.undefined)
+    def setUpdateInitialValue(value: () => Unit): Self = StObject.set(x, "updateInitialValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setValidation(value: ErrorExistsAndShouldBeVisible): Self = this.set("validation", value.asInstanceOf[js.Any])
+    def setUpdateInitialValueUndefined: Self = StObject.set(x, "updateInitialValue", js.undefined)
     
     @scala.inline
-    def deleteValidation: Self = this.set("validation", js.undefined)
+    def setValidation(value: ErrorExistsAndShouldBeVisible): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidators(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = this.set("validators", value.asInstanceOf[js.Any])
+    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
     
     @scala.inline
-    def deleteValidators: Self = this.set("validators", js.undefined)
+    def setValidators(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWatcherVarargs(value: IWatcher*): Self = this.set("watcher", js.Array(value :_*))
+    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
     @scala.inline
-    def setWatcher(value: IWatcher | js.Array[IWatcher]): Self = this.set("watcher", value.asInstanceOf[js.Any])
+    def setValue(value: js.UndefOr[js.Function0[_]] with (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWatcher: Self = this.set("watcher", js.undefined)
+    def setWatcher(value: IWatcher | js.Array[IWatcher]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapperVarargs(value: String*): Self = this.set("wrapper", js.Array(value :_*))
+    def setWatcherUndefined: Self = StObject.set(x, "watcher", js.undefined)
     
     @scala.inline
-    def setWrapper(value: String | js.Array[String]): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    def setWatcherVarargs(value: IWatcher*): Self = StObject.set(x, "watcher", js.Array(value :_*))
     
     @scala.inline
-    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+    def setWrapper(value: String | js.Array[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    
+    @scala.inline
+    def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
   }
 }

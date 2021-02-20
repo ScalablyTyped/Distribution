@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.style.VerticalAlignment
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,42 +76,30 @@ object TextColumns {
   }
   
   @scala.inline
-  implicit class TextColumnsOps[Self <: TextColumns] (val x: Self) extends AnyVal {
+  implicit class TextColumnsMutableBuilder[Self <: TextColumns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticDistance(value: Double): Self = StObject.set(x, "AutomaticDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAutomatic(value: Boolean): Self = StObject.set(x, "IsAutomatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeparatorLineColor(value: Color): Self = StObject.set(x, "SeparatorLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticDistance(value: Double): Self = this.set("AutomaticDistance", value.asInstanceOf[js.Any])
+    def setSeparatorLineIsOn(value: Boolean): Self = StObject.set(x, "SeparatorLineIsOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutomatic(value: Boolean): Self = this.set("IsAutomatic", value.asInstanceOf[js.Any])
+    def setSeparatorLineRelativeHeight(value: Double): Self = StObject.set(x, "SeparatorLineRelativeHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparatorLineColor(value: Color): Self = this.set("SeparatorLineColor", value.asInstanceOf[js.Any])
+    def setSeparatorLineStyle(value: Double): Self = StObject.set(x, "SeparatorLineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparatorLineIsOn(value: Boolean): Self = this.set("SeparatorLineIsOn", value.asInstanceOf[js.Any])
+    def setSeparatorLineVerticalAlignment(value: VerticalAlignment): Self = StObject.set(x, "SeparatorLineVerticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparatorLineRelativeHeight(value: Double): Self = this.set("SeparatorLineRelativeHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparatorLineStyle(value: Double): Self = this.set("SeparatorLineStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparatorLineVerticalAlignment(value: VerticalAlignment): Self = this.set("SeparatorLineVerticalAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparatorLineWidth(value: Double): Self = this.set("SeparatorLineWidth", value.asInstanceOf[js.Any])
+    def setSeparatorLineWidth(value: Double): Self = StObject.set(x, "SeparatorLineWidth", value.asInstanceOf[js.Any])
   }
 }

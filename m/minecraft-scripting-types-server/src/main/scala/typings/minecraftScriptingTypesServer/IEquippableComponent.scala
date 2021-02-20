@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesServer.anon.Accepteditems
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines how many and what items the entity can be equipped with.
   */
 @js.native
-trait IEquippableComponent extends js.Object {
+trait IEquippableComponent extends StObject {
   
   /**
     * FIXME - UNDOCUMENTED - NO DESCRIPTION FROM MOJANG
@@ -25,24 +26,12 @@ object IEquippableComponent {
   }
   
   @scala.inline
-  implicit class IEquippableComponentOps[Self <: IEquippableComponent] (val x: Self) extends AnyVal {
+  implicit class IEquippableComponentMutableBuilder[Self <: IEquippableComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSlots(value: js.Array[Accepteditems]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSlotsVarargs(value: Accepteditems*): Self = this.set("slots", js.Array(value :_*))
-    
-    @scala.inline
-    def setSlots(value: js.Array[Accepteditems]): Self = this.set("slots", value.asInstanceOf[js.Any])
+    def setSlotsVarargs(value: Accepteditems*): Self = StObject.set(x, "slots", js.Array(value :_*))
   }
 }

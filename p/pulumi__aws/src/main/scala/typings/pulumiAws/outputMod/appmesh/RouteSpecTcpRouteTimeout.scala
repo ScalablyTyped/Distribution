@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteSpecTcpRouteTimeout extends js.Object {
+trait RouteSpecTcpRouteTimeout extends StObject {
   
   /**
     * The idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
@@ -21,24 +22,12 @@ object RouteSpecTcpRouteTimeout {
   }
   
   @scala.inline
-  implicit class RouteSpecTcpRouteTimeoutOps[Self <: RouteSpecTcpRouteTimeout] (val x: Self) extends AnyVal {
+  implicit class RouteSpecTcpRouteTimeoutMutableBuilder[Self <: RouteSpecTcpRouteTimeout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdle(value: RouteSpecTcpRouteTimeoutIdle): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIdle(value: RouteSpecTcpRouteTimeoutIdle): Self = this.set("idle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdle: Self = this.set("idle", js.undefined)
+    def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
   }
 }

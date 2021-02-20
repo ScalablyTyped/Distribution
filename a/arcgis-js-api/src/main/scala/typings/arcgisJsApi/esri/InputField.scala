@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.date
 import typings.arcgisJsApi.arcgisJsApiStrings.number
 import typings.arcgisJsApi.arcgisJsApiStrings.text
 import typings.arcgisJsApi.arcgisJsApiStrings.unsupported
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

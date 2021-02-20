@@ -3,12 +3,13 @@ package typings.atom.mod
 import typings.atom.anon.Class
 import typings.atom.anon.Item
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TooltipManager extends js.Object {
+trait TooltipManager extends StObject {
   
   def add(target: JQueryCompatible[HTMLElement], options: Class): Disposable = js.native
   def add(target: JQueryCompatible[HTMLElement], options: Item): Disposable = js.native

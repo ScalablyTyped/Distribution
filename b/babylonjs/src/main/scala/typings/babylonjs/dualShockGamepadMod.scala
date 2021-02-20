@@ -1,19 +1,18 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.babylonjs.observableMod.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gamepads/dualShockGamepad", JSImport.Namespace)
-@js.native
-object dualShockGamepadMod extends js.Object {
+object dualShockGamepadMod {
   
   @js.native
-  sealed trait DualShockButton extends js.Object
+  sealed trait DualShockButton extends StObject
+  @JSImport("babylonjs/Gamepads/dualShockGamepad", "DualShockButton")
   @js.native
-  object DualShockButton extends js.Object {
+  object DualShockButton extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[DualShockButton with Double] = js.native
@@ -21,68 +20,59 @@ object dualShockGamepadMod extends js.Object {
     /** Circle */
     @js.native
     sealed trait Circle extends DualShockButton
-    /* 1 */ @js.native
-    object Circle extends TopLevel[Circle with Double]
+    /* 1 */ val Circle: typings.babylonjs.dualShockGamepadMod.DualShockButton.Circle with Double = js.native
     
     /** Cross */
     @js.native
     sealed trait Cross extends DualShockButton
-    /* 0 */ @js.native
-    object Cross extends TopLevel[Cross with Double]
+    /* 0 */ val Cross: typings.babylonjs.dualShockGamepadMod.DualShockButton.Cross with Double = js.native
     
     /** L1 */
     @js.native
     sealed trait L1 extends DualShockButton
-    /* 4 */ @js.native
-    object L1 extends TopLevel[L1 with Double]
+    /* 4 */ val L1: typings.babylonjs.dualShockGamepadMod.DualShockButton.L1 with Double = js.native
     
     /** Left stick */
     @js.native
     sealed trait LeftStick extends DualShockButton
-    /* 10 */ @js.native
-    object LeftStick extends TopLevel[LeftStick with Double]
+    /* 10 */ val LeftStick: typings.babylonjs.dualShockGamepadMod.DualShockButton.LeftStick with Double = js.native
     
     /** Options */
     @js.native
     sealed trait Options extends DualShockButton
-    /* 9 */ @js.native
-    object Options extends TopLevel[Options with Double]
+    /* 9 */ val Options: typings.babylonjs.dualShockGamepadMod.DualShockButton.Options with Double = js.native
     
     /** R1 */
     @js.native
     sealed trait R1 extends DualShockButton
-    /* 5 */ @js.native
-    object R1 extends TopLevel[R1 with Double]
+    /* 5 */ val R1: typings.babylonjs.dualShockGamepadMod.DualShockButton.R1 with Double = js.native
     
     /** Right stick */
     @js.native
     sealed trait RightStick extends DualShockButton
-    /* 11 */ @js.native
-    object RightStick extends TopLevel[RightStick with Double]
+    /* 11 */ val RightStick: typings.babylonjs.dualShockGamepadMod.DualShockButton.RightStick with Double = js.native
     
     /** Share */
     @js.native
     sealed trait Share extends DualShockButton
-    /* 8 */ @js.native
-    object Share extends TopLevel[Share with Double]
+    /* 8 */ val Share: typings.babylonjs.dualShockGamepadMod.DualShockButton.Share with Double = js.native
     
     /** Square */
     @js.native
     sealed trait Square extends DualShockButton
-    /* 2 */ @js.native
-    object Square extends TopLevel[Square with Double]
+    /* 2 */ val Square: typings.babylonjs.dualShockGamepadMod.DualShockButton.Square with Double = js.native
     
     /** Triangle */
     @js.native
     sealed trait Triangle extends DualShockButton
-    /* 3 */ @js.native
-    object Triangle extends TopLevel[Triangle with Double]
+    /* 3 */ val Triangle: typings.babylonjs.dualShockGamepadMod.DualShockButton.Triangle with Double = js.native
   }
   
   @js.native
-  sealed trait DualShockDpad extends js.Object
+  sealed trait DualShockDpad extends StObject
+  @JSImport("babylonjs/Gamepads/dualShockGamepad", "DualShockDpad")
   @js.native
-  object DualShockDpad extends js.Object {
+  object DualShockDpad extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[DualShockDpad with Double] = js.native
@@ -90,28 +80,25 @@ object dualShockGamepadMod extends js.Object {
     /** Down */
     @js.native
     sealed trait Down extends DualShockDpad
-    /* 13 */ @js.native
-    object Down extends TopLevel[Down with Double]
+    /* 13 */ val Down: typings.babylonjs.dualShockGamepadMod.DualShockDpad.Down with Double = js.native
     
     /** Left */
     @js.native
     sealed trait Left extends DualShockDpad
-    /* 14 */ @js.native
-    object Left extends TopLevel[Left with Double]
+    /* 14 */ val Left: typings.babylonjs.dualShockGamepadMod.DualShockDpad.Left with Double = js.native
     
     /** Right */
     @js.native
     sealed trait Right extends DualShockDpad
-    /* 15 */ @js.native
-    object Right extends TopLevel[Right with Double]
+    /* 15 */ val Right: typings.babylonjs.dualShockGamepadMod.DualShockDpad.Right with Double = js.native
     
     /** Up */
     @js.native
     sealed trait Up extends DualShockDpad
-    /* 12 */ @js.native
-    object Up extends TopLevel[Up with Double]
+    /* 12 */ val Up: typings.babylonjs.dualShockGamepadMod.DualShockDpad.Up with Double = js.native
   }
   
+  @JSImport("babylonjs/Gamepads/dualShockGamepad", "DualShockPad")
   @js.native
   class DualShockPad protected ()
     extends typings.babylonjs.gamepadMod.Gamepad {

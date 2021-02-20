@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageSource extends js.Object {
+trait ImageSource extends StObject {
   
   /**
     * **Use `image_uri` instead.** The Google Cloud Storage URI of the form `gs://bucket_name/object_name`. Object versioning is not supported. See [Google Cloud Storage Request
@@ -31,30 +32,18 @@ object ImageSource {
   }
   
   @scala.inline
-  implicit class ImageSourceOps[Self <: ImageSource] (val x: Self) extends AnyVal {
+  implicit class ImageSourceMutableBuilder[Self <: ImageSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGcsImageUri(value: String): Self = StObject.set(x, "gcsImageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGcsImageUriUndefined: Self = StObject.set(x, "gcsImageUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsImageUri(value: String): Self = this.set("gcsImageUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsImageUri: Self = this.set("gcsImageUri", js.undefined)
-    
-    @scala.inline
-    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageUri: Self = this.set("imageUri", js.undefined)
+    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
   }
 }

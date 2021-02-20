@@ -1,11 +1,12 @@
 package typings.webxr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRHitTestOptionsInit extends js.Object {
+trait XRHitTestOptionsInit extends StObject {
   
   var entityTypes: js.UndefOr[js.Array[XRHitTestTrackableType]] = js.native
   
@@ -22,36 +23,24 @@ object XRHitTestOptionsInit {
   }
   
   @scala.inline
-  implicit class XRHitTestOptionsInitOps[Self <: XRHitTestOptionsInit] (val x: Self) extends AnyVal {
+  implicit class XRHitTestOptionsInitMutableBuilder[Self <: XRHitTestOptionsInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityTypes(value: js.Array[XRHitTestTrackableType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
     
     @scala.inline
-    def setSpace(value: XRSpace): Self = this.set("space", value.asInstanceOf[js.Any])
+    def setOffsetRay(value: XRRay): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = this.set("entityTypes", js.Array(value :_*))
+    def setOffsetRayUndefined: Self = StObject.set(x, "offsetRay", js.undefined)
     
     @scala.inline
-    def setEntityTypes(value: js.Array[XRHitTestTrackableType]): Self = this.set("entityTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityTypes: Self = this.set("entityTypes", js.undefined)
-    
-    @scala.inline
-    def setOffsetRay(value: XRRay): Self = this.set("offsetRay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetRay: Self = this.set("offsetRay", js.undefined)
+    def setSpace(value: XRSpace): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
   }
 }

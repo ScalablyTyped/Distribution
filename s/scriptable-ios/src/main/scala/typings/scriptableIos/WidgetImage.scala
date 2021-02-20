@@ -1,5 +1,6 @@
 package typings.scriptableIos
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/widgetimage
   */
 @js.native
-trait WidgetImage extends js.Object {
+trait WidgetImage extends StObject {
   
   /**
     * _Uses filling content mode._
@@ -155,63 +156,51 @@ object WidgetImage {
   }
   
   @scala.inline
-  implicit class WidgetImageOps[Self <: WidgetImage] (val x: Self) extends AnyVal {
+  implicit class WidgetImageMutableBuilder[Self <: WidgetImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyFillingContentMode(value: () => Unit): Self = StObject.set(x, "applyFillingContentMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyFittingContentMode(value: () => Unit): Self = StObject.set(x, "applyFittingContentMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderColor(value: Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyFillingContentMode(value: () => Unit): Self = this.set("applyFillingContentMode", js.Any.fromFunction0(value))
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyFittingContentMode(value: () => Unit): Self = this.set("applyFittingContentMode", js.Any.fromFunction0(value))
+    def setCenterAlignImage(value: () => Unit): Self = StObject.set(x, "centerAlignImage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBorderColor(value: Color): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setContainerRelativeShape(value: Boolean): Self = StObject.set(x, "containerRelativeShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterAlignImage(value: () => Unit): Self = this.set("centerAlignImage", js.Any.fromFunction0(value))
+    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerRelativeShape(value: Boolean): Self = this.set("containerRelativeShape", value.asInstanceOf[js.Any])
+    def setImageOpacity(value: Double): Self = StObject.set(x, "imageOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCornerRadius(value: Double): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
+    def setImageSize(value: Size): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Image): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLeftAlignImage(value: () => Unit): Self = StObject.set(x, "leftAlignImage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setImageOpacity(value: Double): Self = this.set("imageOpacity", value.asInstanceOf[js.Any])
+    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSize(value: Size): Self = this.set("imageSize", value.asInstanceOf[js.Any])
+    def setRightAlignImage(value: () => Unit): Self = StObject.set(x, "rightAlignImage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLeftAlignImage(value: () => Unit): Self = this.set("leftAlignImage", js.Any.fromFunction0(value))
+    def setTintColor(value: Color): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightAlignImage(value: () => Unit): Self = this.set("rightAlignImage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTintColor(value: Color): Self = this.set("tintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

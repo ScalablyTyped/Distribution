@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Input.InputClassKey>> */
 @js.native
-trait PartialStyleRulesInputCla extends js.Object {
+trait PartialStyleRulesInputCla extends StObject {
   
   var disabled: js.UndefOr[CSSProperties] = js.native
   
@@ -44,96 +45,84 @@ object PartialStyleRulesInputCla {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesInputClaOps[Self <: PartialStyleRulesInputCla] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesInputClaMutableBuilder[Self <: PartialStyleRulesInputCla] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: CSSProperties): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: CSSProperties): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFocused(value: CSSProperties): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: CSSProperties): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setFormControl(value: CSSProperties): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: CSSProperties): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setFormControlUndefined: Self = StObject.set(x, "formControl", js.undefined)
     
     @scala.inline
-    def deleteFocused: Self = this.set("focused", js.undefined)
+    def setFullWidth(value: CSSProperties): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormControl(value: CSSProperties): Self = this.set("formControl", value.asInstanceOf[js.Any])
+    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
     @scala.inline
-    def deleteFormControl: Self = this.set("formControl", js.undefined)
+    def setInput(value: CSSProperties): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullWidth(value: CSSProperties): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    def setInputMarginDense(value: CSSProperties): Self = StObject.set(x, "inputMarginDense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    def setInputMarginDenseUndefined: Self = StObject.set(x, "inputMarginDense", js.undefined)
     
     @scala.inline
-    def setInput(value: CSSProperties): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setInputMultiline(value: CSSProperties): Self = StObject.set(x, "inputMultiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setInputMultilineUndefined: Self = StObject.set(x, "inputMultiline", js.undefined)
     
     @scala.inline
-    def setInputMarginDense(value: CSSProperties): Self = this.set("inputMarginDense", value.asInstanceOf[js.Any])
+    def setInputType(value: CSSProperties): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputMarginDense: Self = this.set("inputMarginDense", js.undefined)
+    def setInputTypeSearch(value: CSSProperties): Self = StObject.set(x, "inputTypeSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputMultiline(value: CSSProperties): Self = this.set("inputMultiline", value.asInstanceOf[js.Any])
+    def setInputTypeSearchUndefined: Self = StObject.set(x, "inputTypeSearch", js.undefined)
     
     @scala.inline
-    def deleteInputMultiline: Self = this.set("inputMultiline", js.undefined)
+    def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
     
     @scala.inline
-    def setInputType(value: CSSProperties): Self = this.set("inputType", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteInputType: Self = this.set("inputType", js.undefined)
+    def setMultiline(value: CSSProperties): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputTypeSearch(value: CSSProperties): Self = this.set("inputTypeSearch", value.asInstanceOf[js.Any])
+    def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
     
     @scala.inline
-    def deleteInputTypeSearch: Self = this.set("inputTypeSearch", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiline(value: CSSProperties): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteMultiline: Self = this.set("multiline", js.undefined)
+    def setUnderline(value: CSSProperties): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setUnderline(value: CSSProperties): Self = this.set("underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderline: Self = this.set("underline", js.undefined)
+    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
   }
 }

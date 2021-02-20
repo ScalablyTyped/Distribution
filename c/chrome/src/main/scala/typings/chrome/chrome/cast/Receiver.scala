@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Receiver extends js.Object {
+trait Receiver extends StObject {
   
   var capabilities: js.Array[Capability] = js.native
   
@@ -35,39 +36,27 @@ object Receiver {
   }
   
   @scala.inline
-  implicit class ReceiverOps[Self <: Receiver] (val x: Self) extends AnyVal {
+  implicit class ReceiverMutableBuilder[Self <: Receiver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: js.Array[Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayStatus(value: ReceiverDisplayStatus): Self = StObject.set(x, "displayStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilitiesVarargs(value: Capability*): Self = this.set("capabilities", js.Array(value :_*))
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: js.Array[Capability]): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayStatus(value: ReceiverDisplayStatus): Self = this.set("displayStatus", value.asInstanceOf[js.Any])
+    def setReceiverType(value: ReceiverType): Self = StObject.set(x, "receiverType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceiverType(value: ReceiverType): Self = this.set("receiverType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolume(value: Volume): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setVolume(value: Volume): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VmServerAddress extends js.Object {
+trait VmServerAddress extends StObject {
   
   /**
     * The ID of the VM.
@@ -26,30 +27,18 @@ object VmServerAddress {
   }
   
   @scala.inline
-  implicit class VmServerAddressOps[Self <: VmServerAddress] (val x: Self) extends AnyVal {
+  implicit class VmServerAddressMutableBuilder[Self <: VmServerAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVmId(value: VmId): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVmManagerId(value: VmManagerId): Self = StObject.set(x, "vmManagerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmId(value: VmId): Self = this.set("vmId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmId: Self = this.set("vmId", js.undefined)
-    
-    @scala.inline
-    def setVmManagerId(value: VmManagerId): Self = this.set("vmManagerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmManagerId: Self = this.set("vmManagerId", js.undefined)
+    def setVmManagerIdUndefined: Self = StObject.set(x, "vmManagerId", js.undefined)
   }
 }

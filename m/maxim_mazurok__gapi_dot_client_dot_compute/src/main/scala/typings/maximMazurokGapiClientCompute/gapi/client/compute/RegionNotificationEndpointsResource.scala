@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.KeyNotificationEndpoint
 import typings.maximMazurokGapiClientCompute.anon.ProjectQuotaUserRegionRequestIdResourceUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionNotificationEndpointsResource extends js.Object {
+trait RegionNotificationEndpointsResource extends StObject {
   
   /** Deletes the specified NotificationEndpoint in the given region */
   def delete(): Request[Operation] = js.native

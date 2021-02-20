@@ -1,14 +1,14 @@
 package typings.expressFrappe
 
 import typings.expressFrappe.expressFrappeMod.ExpressFrappeConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-frappe", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("express-frappe", "ExpressFrappe")
   @js.native
   class ExpressFrappe protected ()
     extends typings.expressFrappe.expressFrappeMod.ExpressFrappe {

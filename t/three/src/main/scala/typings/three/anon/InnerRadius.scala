@@ -1,11 +1,12 @@
 package typings.three.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InnerRadius extends js.Object {
+trait InnerRadius extends StObject {
   
   var innerRadius: Double = js.native
   
@@ -35,36 +36,24 @@ object InnerRadius {
   }
   
   @scala.inline
-  implicit class InnerRadiusOps[Self <: InnerRadius] (val x: Self) extends AnyVal {
+  implicit class InnerRadiusMutableBuilder[Self <: InnerRadius] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhiSegments(value: Double): Self = StObject.set(x, "phiSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerRadius(value: Double): Self = this.set("innerRadius", value.asInstanceOf[js.Any])
+    def setThetaLength(value: Double): Self = StObject.set(x, "thetaLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterRadius(value: Double): Self = this.set("outerRadius", value.asInstanceOf[js.Any])
+    def setThetaSegments(value: Double): Self = StObject.set(x, "thetaSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhiSegments(value: Double): Self = this.set("phiSegments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThetaLength(value: Double): Self = this.set("thetaLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThetaSegments(value: Double): Self = this.set("thetaSegments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThetaStart(value: Double): Self = this.set("thetaStart", value.asInstanceOf[js.Any])
+    def setThetaStart(value: Double): Self = StObject.set(x, "thetaStart", value.asInstanceOf[js.Any])
   }
 }

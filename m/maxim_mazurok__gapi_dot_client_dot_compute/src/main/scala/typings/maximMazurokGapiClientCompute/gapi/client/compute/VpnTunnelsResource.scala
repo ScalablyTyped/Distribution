@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientCompute.anon.Alt
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdResourceUserIp
 import typings.maximMazurokGapiClientCompute.anon.UserIpVpnTunnel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpnTunnelsResource extends js.Object {
+trait VpnTunnelsResource extends StObject {
   
   /** Retrieves an aggregated list of VPN tunnels. */
   def aggregatedList(): Request[VpnTunnelAggregatedList] = js.native

@@ -1,11 +1,12 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModeStatic extends js.Object {
+trait ModeStatic extends StObject {
   
   /**
     * Initializes a newly created mode.
@@ -28,21 +29,9 @@ object ModeStatic {
   }
   
   @scala.inline
-  implicit class ModeStaticOps[Self <: ModeStatic] (val x: Self) extends AnyVal {
+  implicit class ModeStaticMutableBuilder[Self <: ModeStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreate(value: (Cipher, js.Array[Double]) => Mode_): Self = this.set("create", js.Any.fromFunction2(value))
+    def setCreate(value: (Cipher, js.Array[Double]) => Mode_): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }
 }

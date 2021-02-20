@@ -1,5 +1,6 @@
 package typings.bizcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.bizcharts.bizchartsStrings.jitter
   - typings.bizcharts.bizchartsStrings.symmetric
 */
-trait GeomAdjustType extends js.Object
+trait GeomAdjustType extends StObject
 object GeomAdjustType {
   
   @scala.inline

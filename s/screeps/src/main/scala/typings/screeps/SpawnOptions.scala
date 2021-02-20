@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object with additional options for the spawning process.
   */
 @js.native
-trait SpawnOptions extends js.Object {
+trait SpawnOptions extends StObject {
   
   /**
     * Set desired directions where the creep should move when spawned.
@@ -41,48 +42,36 @@ object SpawnOptions {
   }
   
   @scala.inline
-  implicit class SpawnOptionsOps[Self <: SpawnOptions] (val x: Self) extends AnyVal {
+  implicit class SpawnOptionsMutableBuilder[Self <: SpawnOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirections(value: js.Array[DirectionConstant]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectionsVarargs(value: DirectionConstant*): Self = StObject.set(x, "directions", js.Array(value :_*))
     
     @scala.inline
-    def setDirectionsVarargs(value: DirectionConstant*): Self = this.set("directions", js.Array(value :_*))
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirections(value: js.Array[DirectionConstant]): Self = this.set("directions", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def deleteDirections: Self = this.set("directions", js.undefined)
+    def setEnergyStructures(value: js.Array[StructureSpawn | StructureExtension]): Self = StObject.set(x, "energyStructures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    def setEnergyStructuresUndefined: Self = StObject.set(x, "energyStructures", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    def setEnergyStructuresVarargs(value: (StructureSpawn | StructureExtension)*): Self = StObject.set(x, "energyStructures", js.Array(value :_*))
     
     @scala.inline
-    def setEnergyStructuresVarargs(value: (StructureSpawn | StructureExtension)*): Self = this.set("energyStructures", js.Array(value :_*))
+    def setMemory(value: CreepMemory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnergyStructures(value: js.Array[StructureSpawn | StructureExtension]): Self = this.set("energyStructures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnergyStructures: Self = this.set("energyStructures", js.undefined)
-    
-    @scala.inline
-    def setMemory(value: CreepMemory): Self = this.set("memory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemory: Self = this.set("memory", js.undefined)
+    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
   }
 }

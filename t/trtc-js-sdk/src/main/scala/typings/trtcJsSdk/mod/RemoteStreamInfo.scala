@@ -1,11 +1,12 @@
 package typings.trtcJsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoteStreamInfo extends js.Object {
+trait RemoteStreamInfo extends StObject {
   
   var stream: RemoteStream = js.native
 }
@@ -18,21 +19,9 @@ object RemoteStreamInfo {
   }
   
   @scala.inline
-  implicit class RemoteStreamInfoOps[Self <: RemoteStreamInfo] (val x: Self) extends AnyVal {
+  implicit class RemoteStreamInfoMutableBuilder[Self <: RemoteStreamInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStream(value: RemoteStream): Self = this.set("stream", value.asInstanceOf[js.Any])
+    def setStream(value: RemoteStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

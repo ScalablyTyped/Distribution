@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.protocolProxyApiMod.ProtocolProxyApi
 
 import typings.devtoolsProtocol.mod.Protocol.SystemInfo.GetInfoResponse
 import typings.devtoolsProtocol.mod.Protocol.SystemInfo.GetProcessInfoResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SystemInfoApi extends js.Object {
+trait SystemInfoApi extends StObject {
   
   /**
     * Returns information about the system.
@@ -31,24 +32,12 @@ object SystemInfoApi {
   }
   
   @scala.inline
-  implicit class SystemInfoApiOps[Self <: SystemInfoApi] (val x: Self) extends AnyVal {
+  implicit class SystemInfoApiMutableBuilder[Self <: SystemInfoApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInfo(value: () => js.Promise[GetInfoResponse]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetInfo(value: () => js.Promise[GetInfoResponse]): Self = this.set("getInfo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetProcessInfo(value: () => js.Promise[GetProcessInfoResponse]): Self = this.set("getProcessInfo", js.Any.fromFunction0(value))
+    def setGetProcessInfo(value: () => js.Promise[GetProcessInfoResponse]): Self = StObject.set(x, "getProcessInfo", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,34 +18,42 @@ class GeometryBufferRenderer protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene, ratio: Double) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.GeometryBufferRenderer")
-@js.native
-object GeometryBufferRenderer extends js.Object {
+object GeometryBufferRenderer {
   
   /**
     * Constant used to retrieve the depth + normal texture index in the G-Buffer textures array
     * using getIndex(GeometryBufferRenderer.DEPTHNORMAL_TEXTURE_INDEX)
     */
+  @JSGlobal("BABYLON.GeometryBufferRenderer.DEPTHNORMAL_TEXTURE_TYPE")
+  @js.native
   val DEPTHNORMAL_TEXTURE_TYPE: Double = js.native
   
   /**
     * Constant used to retrieve the position texture index in the G-Buffer textures array
     * using getIndex(GeometryBufferRenderer.POSITION_TEXTURE_INDEX)
     */
+  @JSGlobal("BABYLON.GeometryBufferRenderer.POSITION_TEXTURE_TYPE")
+  @js.native
   val POSITION_TEXTURE_TYPE: Double = js.native
   
   /**
     * Constant used to retrieve the reflectivity texture index in the G-Buffer textures array
     * using the getIndex(GeometryBufferRenderer.REFLECTIVITY_TEXTURE_TYPE)
     */
+  @JSGlobal("BABYLON.GeometryBufferRenderer.REFLECTIVITY_TEXTURE_TYPE")
+  @js.native
   val REFLECTIVITY_TEXTURE_TYPE: Double = js.native
   
   /**
     * Constant used to retrieve the velocity texture index in the G-Buffer textures array
     * using getIndex(GeometryBufferRenderer.VELOCITY_TEXTURE_INDEX)
     */
+  @JSGlobal("BABYLON.GeometryBufferRenderer.VELOCITY_TEXTURE_TYPE")
+  @js.native
   val VELOCITY_TEXTURE_TYPE: Double = js.native
   
   /** @hidden */
+  @JSGlobal("BABYLON.GeometryBufferRenderer._SceneComponentInitialization")
+  @js.native
   def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = js.native
 }

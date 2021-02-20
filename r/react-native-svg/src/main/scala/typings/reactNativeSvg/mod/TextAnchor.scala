@@ -1,5 +1,6 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeSvg.reactNativeSvgStrings.middle
   - typings.reactNativeSvg.reactNativeSvgStrings.end
 */
-trait TextAnchor extends js.Object
+trait TextAnchor extends StObject
 object TextAnchor {
   
   @scala.inline

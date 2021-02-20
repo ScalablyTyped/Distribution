@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportJobResource extends js.Object {
+trait ExportJobResource extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that authorized Amazon Pinpoint to access the Amazon S3 location where the endpoint definitions were exported to.
@@ -36,36 +37,24 @@ object ExportJobResource {
   }
   
   @scala.inline
-  implicit class ExportJobResourceOps[Self <: ExportJobResource] (val x: Self) extends AnyVal {
+  implicit class ExportJobResourceMutableBuilder[Self <: ExportJobResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3UrlPrefix(value: string): Self = StObject.set(x, "S3UrlPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
     
     @scala.inline
-    def setS3UrlPrefix(value: string): Self = this.set("S3UrlPrefix", value.asInstanceOf[js.Any])
+    def setSegmentVersion(value: integer): Self = StObject.set(x, "SegmentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentId(value: string): Self = this.set("SegmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentId: Self = this.set("SegmentId", js.undefined)
-    
-    @scala.inline
-    def setSegmentVersion(value: integer): Self = this.set("SegmentVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentVersion: Self = this.set("SegmentVersion", js.undefined)
+    def setSegmentVersionUndefined: Self = StObject.set(x, "SegmentVersion", js.undefined)
   }
 }

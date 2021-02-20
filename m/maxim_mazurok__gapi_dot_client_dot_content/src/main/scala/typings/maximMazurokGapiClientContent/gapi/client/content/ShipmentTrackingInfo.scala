@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShipmentTrackingInfo extends js.Object {
+trait ShipmentTrackingInfo extends StObject {
   
   /**
     * The shipping carrier that handles the package. Acceptable values are: - "`boxtal`" - "`bpost`" - "`chronopost`" - "`colisPrive`" - "`colissimo`" - "`cxt`" - "`deliv`" - "`dhl`" -
@@ -26,30 +27,18 @@ object ShipmentTrackingInfo {
   }
   
   @scala.inline
-  implicit class ShipmentTrackingInfoOps[Self <: ShipmentTrackingInfo] (val x: Self) extends AnyVal {
+  implicit class ShipmentTrackingInfoMutableBuilder[Self <: ShipmentTrackingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrackingNumber(value: String): Self = StObject.set(x, "trackingNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrier(value: String): Self = this.set("carrier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCarrier: Self = this.set("carrier", js.undefined)
-    
-    @scala.inline
-    def setTrackingNumber(value: String): Self = this.set("trackingNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackingNumber: Self = this.set("trackingNumber", js.undefined)
+    def setTrackingNumberUndefined: Self = StObject.set(x, "trackingNumber", js.undefined)
   }
 }

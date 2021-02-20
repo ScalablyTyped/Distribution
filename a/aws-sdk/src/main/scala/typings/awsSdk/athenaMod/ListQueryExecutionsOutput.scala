@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListQueryExecutionsOutput extends js.Object {
+trait ListQueryExecutionsOutput extends StObject {
   
   /**
     * A token to be used by the next request if this request is truncated.
@@ -26,33 +27,21 @@ object ListQueryExecutionsOutput {
   }
   
   @scala.inline
-  implicit class ListQueryExecutionsOutputOps[Self <: ListQueryExecutionsOutput] (val x: Self) extends AnyVal {
+  implicit class ListQueryExecutionsOutputMutableBuilder[Self <: ListQueryExecutionsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryExecutionIds(value: QueryExecutionIdList): Self = StObject.set(x, "QueryExecutionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setQueryExecutionIdsUndefined: Self = StObject.set(x, "QueryExecutionIds", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setQueryExecutionIdsVarargs(value: QueryExecutionId*): Self = this.set("QueryExecutionIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueryExecutionIds(value: QueryExecutionIdList): Self = this.set("QueryExecutionIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryExecutionIds: Self = this.set("QueryExecutionIds", js.undefined)
+    def setQueryExecutionIdsVarargs(value: QueryExecutionId*): Self = StObject.set(x, "QueryExecutionIds", js.Array(value :_*))
   }
 }

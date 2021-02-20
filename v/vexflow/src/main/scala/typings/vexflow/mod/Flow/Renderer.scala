@@ -4,6 +4,7 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLElement
 import typings.vexflow.Vex.Flow.Renderer.Backends
 import typings.vexflow.Vex.IRenderContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,134 +15,15 @@ class Renderer protected ()
   extends typings.vexflow.Vex.Flow.Renderer {
   def this(sel: HTMLElement, backend: Backends) = this()
 }
-/* static members */
-@JSImport("vexflow", "Flow.Renderer")
-@js.native
-object Renderer extends js.Object {
+object Renderer {
   
-  var USE_CANVAS_PROXY: Boolean = js.native
-  
-  def bolsterCanvasContext(ctx: CanvasRenderingContext2D): typings.vexflow.Vex.Flow.CanvasContext = js.native
-  
-  def buildContext(sel: HTMLElement, backend: Backends): IRenderContext = js.native
-  def buildContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    background: String
-  ): IRenderContext = js.native
-  def buildContext(sel: HTMLElement, backend: Backends, width: js.UndefOr[scala.Nothing], height: Double): IRenderContext = js.native
-  def buildContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    background: String
-  ): IRenderContext = js.native
-  def buildContext(sel: HTMLElement, backend: Backends, width: Double): IRenderContext = js.native
-  def buildContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    background: String
-  ): IRenderContext = js.native
-  def buildContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): IRenderContext = js.native
-  def buildContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): IRenderContext = js.native
-  
-  def drawDashedLine(
-    context: IRenderContext,
-    fromX: Double,
-    fromY: Double,
-    toX: Double,
-    toY: Double,
-    dashPattern: js.Array[Double]
-  ): Unit = js.native
-  
-  def getCanvasContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.CanvasContext = js.native
-  def getCanvasContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    background: String
-  ): typings.vexflow.Vex.Flow.CanvasContext = js.native
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: js.UndefOr[scala.Nothing], height: Double): typings.vexflow.Vex.Flow.CanvasContext = js.native
-  def getCanvasContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    background: String
-  ): typings.vexflow.Vex.Flow.CanvasContext = js.native
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.CanvasContext = js.native
-  def getCanvasContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    background: String
-  ): typings.vexflow.Vex.Flow.CanvasContext = js.native
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.CanvasContext = js.native
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.CanvasContext = js.native
-  
-  def getRaphaelContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.RaphaelContext = js.native
-  def getRaphaelContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    background: String
-  ): typings.vexflow.Vex.Flow.RaphaelContext = js.native
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: js.UndefOr[scala.Nothing], height: Double): typings.vexflow.Vex.Flow.RaphaelContext = js.native
-  def getRaphaelContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    background: String
-  ): typings.vexflow.Vex.Flow.RaphaelContext = js.native
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.RaphaelContext = js.native
-  def getRaphaelContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    background: String
-  ): typings.vexflow.Vex.Flow.RaphaelContext = js.native
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.RaphaelContext = js.native
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.RaphaelContext = js.native
-  
-  def getSVGContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.SVGContext = js.native
-  def getSVGContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    background: String
-  ): typings.vexflow.Vex.Flow.SVGContext = js.native
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: js.UndefOr[scala.Nothing], height: Double): typings.vexflow.Vex.Flow.SVGContext = js.native
-  def getSVGContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    background: String
-  ): typings.vexflow.Vex.Flow.SVGContext = js.native
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.SVGContext = js.native
-  def getSVGContext(
-    sel: HTMLElement,
-    backend: Backends,
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    background: String
-  ): typings.vexflow.Vex.Flow.SVGContext = js.native
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.SVGContext = js.native
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.SVGContext = js.native
-  
+  @JSImport("vexflow", "Flow.Renderer")
   @js.native
-  object Backends extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("vexflow", "Flow.Renderer.Backends")
+  @js.native
+  object Backends extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.Renderer.Backends with Double] = js.native
@@ -155,8 +37,9 @@ object Renderer extends js.Object {
     /* 2 */ val VML: typings.vexflow.Vex.Flow.Renderer.Backends.VML with Double = js.native
   }
   
+  @JSImport("vexflow", "Flow.Renderer.LineEndType")
   @js.native
-  object LineEndType extends js.Object {
+  object LineEndType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.Renderer.LineEndType with Double] = js.native
@@ -167,4 +50,204 @@ object Renderer extends js.Object {
     
     /* 0 */ val UP: typings.vexflow.Vex.Flow.Renderer.LineEndType.UP with Double = js.native
   }
+  
+  /* static member */
+  @JSImport("vexflow", "Flow.Renderer.USE_CANVAS_PROXY")
+  @js.native
+  def USE_CANVAS_PROXY: Boolean = js.native
+  @scala.inline
+  def USE_CANVAS_PROXY_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("USE_CANVAS_PROXY")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("vexflow", "Flow.Renderer.bolsterCanvasContext")
+  @js.native
+  def bolsterCanvasContext(ctx: CanvasRenderingContext2D): typings.vexflow.Vex.Flow.CanvasContext = js.native
+  
+  /* static member */
+  @JSImport("vexflow", "Flow.Renderer.buildContext")
+  @js.native
+  def buildContext(sel: HTMLElement, backend: Backends): IRenderContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.buildContext")
+  @js.native
+  def buildContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    background: String
+  ): IRenderContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.buildContext")
+  @js.native
+  def buildContext(sel: HTMLElement, backend: Backends, width: js.UndefOr[scala.Nothing], height: Double): IRenderContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.buildContext")
+  @js.native
+  def buildContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: js.UndefOr[scala.Nothing],
+    height: Double,
+    background: String
+  ): IRenderContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.buildContext")
+  @js.native
+  def buildContext(sel: HTMLElement, backend: Backends, width: Double): IRenderContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.buildContext")
+  @js.native
+  def buildContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: Double,
+    height: js.UndefOr[scala.Nothing],
+    background: String
+  ): IRenderContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.buildContext")
+  @js.native
+  def buildContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): IRenderContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.buildContext")
+  @js.native
+  def buildContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): IRenderContext = js.native
+  
+  /* static member */
+  @JSImport("vexflow", "Flow.Renderer.drawDashedLine")
+  @js.native
+  def drawDashedLine(
+    context: IRenderContext,
+    fromX: Double,
+    fromY: Double,
+    toX: Double,
+    toY: Double,
+    dashPattern: js.Array[Double]
+  ): Unit = js.native
+  
+  /* static member */
+  @JSImport("vexflow", "Flow.Renderer.getCanvasContext")
+  @js.native
+  def getCanvasContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.CanvasContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getCanvasContext")
+  @js.native
+  def getCanvasContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    background: String
+  ): typings.vexflow.Vex.Flow.CanvasContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getCanvasContext")
+  @js.native
+  def getCanvasContext(sel: HTMLElement, backend: Backends, width: js.UndefOr[scala.Nothing], height: Double): typings.vexflow.Vex.Flow.CanvasContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getCanvasContext")
+  @js.native
+  def getCanvasContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: js.UndefOr[scala.Nothing],
+    height: Double,
+    background: String
+  ): typings.vexflow.Vex.Flow.CanvasContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getCanvasContext")
+  @js.native
+  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.CanvasContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getCanvasContext")
+  @js.native
+  def getCanvasContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: Double,
+    height: js.UndefOr[scala.Nothing],
+    background: String
+  ): typings.vexflow.Vex.Flow.CanvasContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getCanvasContext")
+  @js.native
+  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.CanvasContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getCanvasContext")
+  @js.native
+  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.CanvasContext = js.native
+  
+  /* static member */
+  @JSImport("vexflow", "Flow.Renderer.getRaphaelContext")
+  @js.native
+  def getRaphaelContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.RaphaelContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getRaphaelContext")
+  @js.native
+  def getRaphaelContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    background: String
+  ): typings.vexflow.Vex.Flow.RaphaelContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getRaphaelContext")
+  @js.native
+  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: js.UndefOr[scala.Nothing], height: Double): typings.vexflow.Vex.Flow.RaphaelContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getRaphaelContext")
+  @js.native
+  def getRaphaelContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: js.UndefOr[scala.Nothing],
+    height: Double,
+    background: String
+  ): typings.vexflow.Vex.Flow.RaphaelContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getRaphaelContext")
+  @js.native
+  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.RaphaelContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getRaphaelContext")
+  @js.native
+  def getRaphaelContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: Double,
+    height: js.UndefOr[scala.Nothing],
+    background: String
+  ): typings.vexflow.Vex.Flow.RaphaelContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getRaphaelContext")
+  @js.native
+  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.RaphaelContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getRaphaelContext")
+  @js.native
+  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.RaphaelContext = js.native
+  
+  /* static member */
+  @JSImport("vexflow", "Flow.Renderer.getSVGContext")
+  @js.native
+  def getSVGContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.SVGContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getSVGContext")
+  @js.native
+  def getSVGContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    background: String
+  ): typings.vexflow.Vex.Flow.SVGContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getSVGContext")
+  @js.native
+  def getSVGContext(sel: HTMLElement, backend: Backends, width: js.UndefOr[scala.Nothing], height: Double): typings.vexflow.Vex.Flow.SVGContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getSVGContext")
+  @js.native
+  def getSVGContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: js.UndefOr[scala.Nothing],
+    height: Double,
+    background: String
+  ): typings.vexflow.Vex.Flow.SVGContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getSVGContext")
+  @js.native
+  def getSVGContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.SVGContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getSVGContext")
+  @js.native
+  def getSVGContext(
+    sel: HTMLElement,
+    backend: Backends,
+    width: Double,
+    height: js.UndefOr[scala.Nothing],
+    background: String
+  ): typings.vexflow.Vex.Flow.SVGContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getSVGContext")
+  @js.native
+  def getSVGContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.SVGContext = js.native
+  @JSImport("vexflow", "Flow.Renderer.getSVGContext")
+  @js.native
+  def getSVGContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.SVGContext = js.native
 }

@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CoverageQueryFlags extends js.Object
+sealed trait CoverageQueryFlags extends StObject
 @JSImport("vso-node-api/interfaces/TestInterfaces", "CoverageQueryFlags")
 @js.native
-object CoverageQueryFlags extends js.Object {
+object CoverageQueryFlags extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CoverageQueryFlags with Double] = js.native
@@ -19,22 +19,19 @@ object CoverageQueryFlags extends js.Object {
     */
   @js.native
   sealed trait BlockData extends CoverageQueryFlags
-  /* 4 */ @js.native
-  object BlockData extends TopLevel[BlockData with Double]
+  /* 4 */ val BlockData: typings.vsoNodeApi.testInterfacesMod.CoverageQueryFlags.BlockData with Double = js.native
   
   /**
     * If set, the ModuleCoverage.Functions properties will be populated.
     */
   @js.native
   sealed trait Functions extends CoverageQueryFlags
-  /* 2 */ @js.native
-  object Functions extends TopLevel[Functions with Double]
+  /* 2 */ val Functions: typings.vsoNodeApi.testInterfacesMod.CoverageQueryFlags.Functions with Double = js.native
   
   /**
     * If set, the Coverage.Modules property will be populated.
     */
   @js.native
   sealed trait Modules extends CoverageQueryFlags
-  /* 1 */ @js.native
-  object Modules extends TopLevel[Modules with Double]
+  /* 1 */ val Modules: typings.vsoNodeApi.testInterfacesMod.CoverageQueryFlags.Modules with Double = js.native
 }

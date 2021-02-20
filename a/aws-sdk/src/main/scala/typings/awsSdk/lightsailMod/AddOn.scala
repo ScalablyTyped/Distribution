@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddOn extends js.Object {
+trait AddOn extends StObject {
   
   /**
     * The name of the add-on.
@@ -36,42 +37,30 @@ object AddOn {
   }
   
   @scala.inline
-  implicit class AddOnOps[Self <: AddOn] (val x: Self) extends AnyVal {
+  implicit class AddOnMutableBuilder[Self <: AddOn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextSnapshotTimeOfDay(value: TimeOfDay): Self = StObject.set(x, "nextSnapshotTimeOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNextSnapshotTimeOfDayUndefined: Self = StObject.set(x, "nextSnapshotTimeOfDay", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSnapshotTimeOfDay(value: TimeOfDay): Self = StObject.set(x, "snapshotTimeOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextSnapshotTimeOfDay(value: TimeOfDay): Self = this.set("nextSnapshotTimeOfDay", value.asInstanceOf[js.Any])
+    def setSnapshotTimeOfDayUndefined: Self = StObject.set(x, "snapshotTimeOfDay", js.undefined)
     
     @scala.inline
-    def deleteNextSnapshotTimeOfDay: Self = this.set("nextSnapshotTimeOfDay", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotTimeOfDay(value: TimeOfDay): Self = this.set("snapshotTimeOfDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotTimeOfDay: Self = this.set("snapshotTimeOfDay", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

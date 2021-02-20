@@ -2,12 +2,13 @@ package typings.datatablesNet.DataTables
 
 import typings.datatablesNet.JQuery
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowChildMethodModel extends js.Object {
+trait RowChildMethodModel extends StObject {
   
   /**
     * Get the child row(s) that have been set for a parent row

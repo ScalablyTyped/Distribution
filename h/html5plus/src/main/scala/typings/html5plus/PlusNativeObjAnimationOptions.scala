@@ -4,6 +4,7 @@ import typings.html5plus.html5plusStrings.`pop-in`
 import typings.html5plus.html5plusStrings.`pop-out`
 import typings.html5plus.html5plusStrings.`slide-in-right`
 import typings.html5plus.html5plusStrings.`slide-out-right`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
 @js.native
-trait PlusNativeObjAnimationOptions extends js.Object {
+trait PlusNativeObjAnimationOptions extends StObject {
   
   /**
     * 动画持续时间
@@ -58,30 +59,18 @@ object PlusNativeObjAnimationOptions {
   }
   
   @scala.inline
-  implicit class PlusNativeObjAnimationOptionsOps[Self <: PlusNativeObjAnimationOptions] (val x: Self) extends AnyVal {
+  implicit class PlusNativeObjAnimationOptionsMutableBuilder[Self <: PlusNativeObjAnimationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: `pop-in` | `pop-out` | `slide-in-right` | `slide-out-right`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def setType(value: `pop-in` | `pop-out` | `slide-in-right` | `slide-out-right`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

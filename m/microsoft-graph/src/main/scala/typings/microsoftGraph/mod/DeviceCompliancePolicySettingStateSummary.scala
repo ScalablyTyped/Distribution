@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,96 +53,84 @@ object DeviceCompliancePolicySettingStateSummary {
   }
   
   @scala.inline
-  implicit class DeviceCompliancePolicySettingStateSummaryOps[Self <: DeviceCompliancePolicySettingStateSummary] (val x: Self) extends AnyVal {
+  implicit class DeviceCompliancePolicySettingStateSummaryMutableBuilder[Self <: DeviceCompliancePolicySettingStateSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompliantDeviceCount(value: Double): Self = StObject.set(x, "compliantDeviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompliantDeviceCountUndefined: Self = StObject.set(x, "compliantDeviceCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConflictDeviceCount(value: Double): Self = StObject.set(x, "conflictDeviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompliantDeviceCount(value: Double): Self = this.set("compliantDeviceCount", value.asInstanceOf[js.Any])
+    def setConflictDeviceCountUndefined: Self = StObject.set(x, "conflictDeviceCount", js.undefined)
     
     @scala.inline
-    def deleteCompliantDeviceCount: Self = this.set("compliantDeviceCount", js.undefined)
+    def setDeviceComplianceSettingStates(value: NullableOption[js.Array[DeviceComplianceSettingState]]): Self = StObject.set(x, "deviceComplianceSettingStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflictDeviceCount(value: Double): Self = this.set("conflictDeviceCount", value.asInstanceOf[js.Any])
+    def setDeviceComplianceSettingStatesNull: Self = StObject.set(x, "deviceComplianceSettingStates", null)
     
     @scala.inline
-    def deleteConflictDeviceCount: Self = this.set("conflictDeviceCount", js.undefined)
+    def setDeviceComplianceSettingStatesUndefined: Self = StObject.set(x, "deviceComplianceSettingStates", js.undefined)
     
     @scala.inline
-    def setDeviceComplianceSettingStatesVarargs(value: DeviceComplianceSettingState*): Self = this.set("deviceComplianceSettingStates", js.Array(value :_*))
+    def setDeviceComplianceSettingStatesVarargs(value: DeviceComplianceSettingState*): Self = StObject.set(x, "deviceComplianceSettingStates", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceComplianceSettingStates(value: NullableOption[js.Array[DeviceComplianceSettingState]]): Self = this.set("deviceComplianceSettingStates", value.asInstanceOf[js.Any])
+    def setErrorDeviceCount(value: Double): Self = StObject.set(x, "errorDeviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceComplianceSettingStates: Self = this.set("deviceComplianceSettingStates", js.undefined)
+    def setErrorDeviceCountUndefined: Self = StObject.set(x, "errorDeviceCount", js.undefined)
     
     @scala.inline
-    def setDeviceComplianceSettingStatesNull: Self = this.set("deviceComplianceSettingStates", null)
+    def setNonCompliantDeviceCount(value: Double): Self = StObject.set(x, "nonCompliantDeviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDeviceCount(value: Double): Self = this.set("errorDeviceCount", value.asInstanceOf[js.Any])
+    def setNonCompliantDeviceCountUndefined: Self = StObject.set(x, "nonCompliantDeviceCount", js.undefined)
     
     @scala.inline
-    def deleteErrorDeviceCount: Self = this.set("errorDeviceCount", js.undefined)
+    def setNotApplicableDeviceCount(value: Double): Self = StObject.set(x, "notApplicableDeviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonCompliantDeviceCount(value: Double): Self = this.set("nonCompliantDeviceCount", value.asInstanceOf[js.Any])
+    def setNotApplicableDeviceCountUndefined: Self = StObject.set(x, "notApplicableDeviceCount", js.undefined)
     
     @scala.inline
-    def deleteNonCompliantDeviceCount: Self = this.set("nonCompliantDeviceCount", js.undefined)
+    def setPlatformType(value: PolicyPlatformType): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotApplicableDeviceCount(value: Double): Self = this.set("notApplicableDeviceCount", value.asInstanceOf[js.Any])
+    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
     @scala.inline
-    def deleteNotApplicableDeviceCount: Self = this.set("notApplicableDeviceCount", js.undefined)
+    def setRemediatedDeviceCount(value: Double): Self = StObject.set(x, "remediatedDeviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformType(value: PolicyPlatformType): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    def setRemediatedDeviceCountUndefined: Self = StObject.set(x, "remediatedDeviceCount", js.undefined)
     
     @scala.inline
-    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    def setSetting(value: NullableOption[String]): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemediatedDeviceCount(value: Double): Self = this.set("remediatedDeviceCount", value.asInstanceOf[js.Any])
+    def setSettingName(value: NullableOption[String]): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemediatedDeviceCount: Self = this.set("remediatedDeviceCount", js.undefined)
+    def setSettingNameNull: Self = StObject.set(x, "settingName", null)
     
     @scala.inline
-    def setSetting(value: NullableOption[String]): Self = this.set("setting", value.asInstanceOf[js.Any])
+    def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
     
     @scala.inline
-    def deleteSetting: Self = this.set("setting", js.undefined)
+    def setSettingNull: Self = StObject.set(x, "setting", null)
     
     @scala.inline
-    def setSettingNull: Self = this.set("setting", null)
+    def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
     
     @scala.inline
-    def setSettingName(value: NullableOption[String]): Self = this.set("settingName", value.asInstanceOf[js.Any])
+    def setUnknownDeviceCount(value: Double): Self = StObject.set(x, "unknownDeviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettingName: Self = this.set("settingName", js.undefined)
-    
-    @scala.inline
-    def setSettingNameNull: Self = this.set("settingName", null)
-    
-    @scala.inline
-    def setUnknownDeviceCount(value: Double): Self = this.set("unknownDeviceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknownDeviceCount: Self = this.set("unknownDeviceCount", js.undefined)
+    def setUnknownDeviceCountUndefined: Self = StObject.set(x, "unknownDeviceCount", js.undefined)
   }
 }

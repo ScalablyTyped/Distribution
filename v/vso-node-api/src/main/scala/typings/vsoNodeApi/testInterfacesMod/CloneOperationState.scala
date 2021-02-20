@@ -1,36 +1,32 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CloneOperationState extends js.Object
+sealed trait CloneOperationState extends StObject
 @JSImport("vso-node-api/interfaces/TestInterfaces", "CloneOperationState")
 @js.native
-object CloneOperationState extends js.Object {
+object CloneOperationState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CloneOperationState with Double] = js.native
   
   @js.native
   sealed trait Failed extends CloneOperationState
-  /* 2 */ @js.native
-  object Failed extends TopLevel[Failed with Double]
+  /* 2 */ val Failed: typings.vsoNodeApi.testInterfacesMod.CloneOperationState.Failed with Double = js.native
   
   @js.native
   sealed trait InProgress extends CloneOperationState
-  /* 1 */ @js.native
-  object InProgress extends TopLevel[InProgress with Double]
+  /* 1 */ val InProgress: typings.vsoNodeApi.testInterfacesMod.CloneOperationState.InProgress with Double = js.native
   
   @js.native
   sealed trait Queued extends CloneOperationState
-  /* 0 */ @js.native
-  object Queued extends TopLevel[Queued with Double]
+  /* 0 */ val Queued: typings.vsoNodeApi.testInterfacesMod.CloneOperationState.Queued with Double = js.native
   
   @js.native
   sealed trait Succeeded extends CloneOperationState
-  /* 3 */ @js.native
-  object Succeeded extends TopLevel[Succeeded with Double]
+  /* 3 */ val Succeeded: typings.vsoNodeApi.testInterfacesMod.CloneOperationState.Succeeded with Double = js.native
 }

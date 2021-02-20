@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposUpdateInformationAboutPagesSiteEndpoint extends js.Object {
+trait ReposUpdateInformationAboutPagesSiteEndpoint extends StObject {
   
   /**
     * Specify a custom domain for the repository. Sending a `null` value will remove the custom domain. For more about custom domains, see "[Using a custom domain with GitHub Pages](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/)."
@@ -30,33 +31,21 @@ object ReposUpdateInformationAboutPagesSiteEndpoint {
   }
   
   @scala.inline
-  implicit class ReposUpdateInformationAboutPagesSiteEndpointOps[Self <: ReposUpdateInformationAboutPagesSiteEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposUpdateInformationAboutPagesSiteEndpointMutableBuilder[Self <: ReposUpdateInformationAboutPagesSiteEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: ReposUpdateInformationAboutPagesSiteParamsSource): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCname(value: String): Self = this.set("cname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCname: Self = this.set("cname", js.undefined)
+    def setSource(value: ReposUpdateInformationAboutPagesSiteParamsSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

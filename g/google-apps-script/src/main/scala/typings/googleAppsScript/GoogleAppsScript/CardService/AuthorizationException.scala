@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .throwException();
   */
 @js.native
-trait AuthorizationException extends js.Object {
+trait AuthorizationException extends StObject {
   
   def printJson(): String = js.native
   
@@ -40,33 +41,21 @@ object AuthorizationException {
   }
   
   @scala.inline
-  implicit class AuthorizationExceptionOps[Self <: AuthorizationException] (val x: Self) extends AnyVal {
+  implicit class AuthorizationExceptionMutableBuilder[Self <: AuthorizationException] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetAuthorizationUrl(value: String => AuthorizationException): Self = StObject.set(x, "setAuthorizationUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetCustomUiCallback(value: String => AuthorizationException): Self = StObject.set(x, "setCustomUiCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrintJson(value: () => String): Self = this.set("printJson", js.Any.fromFunction0(value))
+    def setSetResourceDisplayName(value: String => AuthorizationException): Self = StObject.set(x, "setResourceDisplayName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAuthorizationUrl(value: String => AuthorizationException): Self = this.set("setAuthorizationUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetCustomUiCallback(value: String => AuthorizationException): Self = this.set("setCustomUiCallback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetResourceDisplayName(value: String => AuthorizationException): Self = this.set("setResourceDisplayName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setThrowException(value: () => Unit): Self = this.set("throwException", js.Any.fromFunction0(value))
+    def setThrowException(value: () => Unit): Self = StObject.set(x, "throwException", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientSpellCheckerStopCheckingReason ()
   extends typings.devexpressWeb.ASPxClientSpellCheckerStopCheckingReason
-/* static members */
-@JSGlobal("ASPxClientSpellCheckerStopCheckingReason")
-@js.native
-object ASPxClientSpellCheckerStopCheckingReason extends js.Object {
+object ASPxClientSpellCheckerStopCheckingReason {
   
   /**
     * Spell checking is finished normally.
     */
+  /* static member */
+  @JSGlobal("ASPxClientSpellCheckerStopCheckingReason.Default")
+  @js.native
   val Default: String = js.native
   
   /**
     * The user stopped spell checking.
     */
+  /* static member */
+  @JSGlobal("ASPxClientSpellCheckerStopCheckingReason.User")
+  @js.native
   val User: String = js.native
 }

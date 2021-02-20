@@ -49,12 +49,13 @@ import typings.semanticUiModal.semanticUiModalStrings.silent
 import typings.semanticUiModal.semanticUiModalStrings.toggle
 import typings.semanticUiModal.semanticUiModalStrings.transition
 import typings.semanticUiModal.semanticUiModalStrings.verbose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def modal(): JQuery = js.native
   def modal(behavior: setting, name: allowMultiple, value: js.UndefOr[scala.Nothing]): Boolean = js.native

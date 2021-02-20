@@ -15,6 +15,7 @@ import typings.phaser.Phaser.Types.GameObjects.Graphics.RoundedRectRadius
 import typings.phaser.Phaser.Types.GameObjects.Graphics.Styles
 import typings.phaser.integer
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.orderListMod.OrderListProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/orderlist", JSImport.Namespace)
-@js.native
-object primereactOrderlistMod extends js.Object {
+object primereactOrderlistMod {
   
+  @JSImport("primereact/orderlist", "OrderList")
   @js.native
-  class OrderList ()
-    extends Component[OrderListProps, js.Any, js.Any]
+  class OrderList protected ()
+    extends typings.primereact.orderListMod.OrderList {
+    def this(props: OrderListProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: OrderListProps, context: js.Any) = this()
+  }
 }

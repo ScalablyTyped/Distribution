@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GlyphHinting extends js.Object
+sealed trait GlyphHinting extends StObject
 @JSGlobal("__esri.CIM.GlyphHinting")
 @js.native
-object GlyphHinting extends js.Object {
+object GlyphHinting extends StObject {
   
   /**
     * Default glyph hinting according to the font's settings.

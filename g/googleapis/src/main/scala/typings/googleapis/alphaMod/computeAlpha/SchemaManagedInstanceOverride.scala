@@ -1,6 +1,7 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import typings.googleapis.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Overrides of stateful properties for a given instance
   */
 @js.native
-trait SchemaManagedInstanceOverride extends js.Object {
+trait SchemaManagedInstanceOverride extends StObject {
   
   /**
     * Disk overrides defined for this instance. According to documentation the
@@ -39,42 +40,30 @@ object SchemaManagedInstanceOverride {
   }
   
   @scala.inline
-  implicit class SchemaManagedInstanceOverrideOps[Self <: SchemaManagedInstanceOverride] (val x: Self) extends AnyVal {
+  implicit class SchemaManagedInstanceOverrideMutableBuilder[Self <: SchemaManagedInstanceOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisks(value: js.Array[SchemaManagedInstanceOverrideDiskOverride]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisksVarargs(value: SchemaManagedInstanceOverrideDiskOverride*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
     @scala.inline
-    def setDisksVarargs(value: SchemaManagedInstanceOverrideDiskOverride*): Self = this.set("disks", js.Array(value :_*))
+    def setMetadata(value: js.Array[Key]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisks(value: js.Array[SchemaManagedInstanceOverrideDiskOverride]): Self = this.set("disks", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteDisks: Self = this.set("disks", js.undefined)
+    def setMetadataVarargs(value: Key*): Self = StObject.set(x, "metadata", js.Array(value :_*))
     
     @scala.inline
-    def setMetadataVarargs(value: Key*): Self = this.set("metadata", js.Array(value :_*))
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: js.Array[Key]): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

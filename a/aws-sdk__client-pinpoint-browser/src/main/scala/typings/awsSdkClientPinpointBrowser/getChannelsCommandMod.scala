@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesGetChannelsInputMod.GetChannelsI
 import typings.awsSdkClientPinpointBrowser.typesGetChannelsOutputMod.GetChannelsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/GetChannelsCommand", JSImport.Namespace)
-@js.native
-object getChannelsCommandMod extends js.Object {
+object getChannelsCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetChannelsCommand", "GetChannelsCommand")
   @js.native
   class GetChannelsCommand protected () extends Command[
           InputTypesUnion, 

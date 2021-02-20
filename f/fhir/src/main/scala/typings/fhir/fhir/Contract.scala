@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -150,219 +151,207 @@ object Contract {
   }
   
   @scala.inline
-  implicit class ContractOps[Self <: Contract] (val x: Self) extends AnyVal {
+  implicit class ContractMutableBuilder[Self <: Contract] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "actionReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionReasonUndefined: Self = StObject.set(x, "actionReason", js.undefined)
     
     @scala.inline
-    def set_issued(value: Element): Self = this.set("_issued", value.asInstanceOf[js.Any])
+    def setActionReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "actionReason", js.Array(value :_*))
     
     @scala.inline
-    def delete_issued: Self = this.set("_issued", js.undefined)
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setActionVarargs(value: CodeableConcept*): Self = StObject.set(x, "action", js.Array(value :_*))
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setAgent(value: js.Array[ContractAgent]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionVarargs(value: CodeableConcept*): Self = this.set("action", js.Array(value :_*))
+    def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
     
     @scala.inline
-    def setAction(value: js.Array[CodeableConcept]): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setAgentVarargs(value: ContractAgent*): Self = StObject.set(x, "agent", js.Array(value :_*))
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setApplies(value: Period): Self = StObject.set(x, "applies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionReasonVarargs(value: CodeableConcept*): Self = this.set("actionReason", js.Array(value :_*))
+    def setAppliesUndefined: Self = StObject.set(x, "applies", js.undefined)
     
     @scala.inline
-    def setActionReason(value: js.Array[CodeableConcept]): Self = this.set("actionReason", value.asInstanceOf[js.Any])
+    def setAuthority(value: js.Array[Reference]): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionReason: Self = this.set("actionReason", js.undefined)
+    def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
     
     @scala.inline
-    def setAgentVarargs(value: ContractAgent*): Self = this.set("agent", js.Array(value :_*))
+    def setAuthorityVarargs(value: Reference*): Self = StObject.set(x, "authority", js.Array(value :_*))
     
     @scala.inline
-    def setAgent(value: js.Array[ContractAgent]): Self = this.set("agent", value.asInstanceOf[js.Any])
+    def setBindingAttachment(value: Attachment): Self = StObject.set(x, "bindingAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAgent: Self = this.set("agent", js.undefined)
+    def setBindingAttachmentUndefined: Self = StObject.set(x, "bindingAttachment", js.undefined)
     
     @scala.inline
-    def setApplies(value: Period): Self = this.set("applies", value.asInstanceOf[js.Any])
+    def setBindingReference(value: Reference): Self = StObject.set(x, "bindingReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplies: Self = this.set("applies", js.undefined)
+    def setBindingReferenceUndefined: Self = StObject.set(x, "bindingReference", js.undefined)
     
     @scala.inline
-    def setAuthorityVarargs(value: Reference*): Self = this.set("authority", js.Array(value :_*))
+    def setContentDerivative(value: CodeableConcept): Self = StObject.set(x, "contentDerivative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthority(value: js.Array[Reference]): Self = this.set("authority", value.asInstanceOf[js.Any])
+    def setContentDerivativeUndefined: Self = StObject.set(x, "contentDerivative", js.undefined)
     
     @scala.inline
-    def deleteAuthority: Self = this.set("authority", js.undefined)
+    def setDecisionType(value: CodeableConcept): Self = StObject.set(x, "decisionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindingAttachment(value: Attachment): Self = this.set("bindingAttachment", value.asInstanceOf[js.Any])
+    def setDecisionTypeUndefined: Self = StObject.set(x, "decisionType", js.undefined)
     
     @scala.inline
-    def deleteBindingAttachment: Self = this.set("bindingAttachment", js.undefined)
+    def setDomain(value: js.Array[Reference]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindingReference(value: Reference): Self = this.set("bindingReference", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteBindingReference: Self = this.set("bindingReference", js.undefined)
+    def setDomainVarargs(value: Reference*): Self = StObject.set(x, "domain", js.Array(value :_*))
     
     @scala.inline
-    def setContentDerivative(value: CodeableConcept): Self = this.set("contentDerivative", value.asInstanceOf[js.Any])
+    def setFriendly(value: js.Array[ContractFriendly]): Self = StObject.set(x, "friendly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentDerivative: Self = this.set("contentDerivative", js.undefined)
+    def setFriendlyUndefined: Self = StObject.set(x, "friendly", js.undefined)
     
     @scala.inline
-    def setDecisionType(value: CodeableConcept): Self = this.set("decisionType", value.asInstanceOf[js.Any])
+    def setFriendlyVarargs(value: ContractFriendly*): Self = StObject.set(x, "friendly", js.Array(value :_*))
     
     @scala.inline
-    def deleteDecisionType: Self = this.set("decisionType", js.undefined)
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainVarargs(value: Reference*): Self = this.set("domain", js.Array(value :_*))
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setDomain(value: js.Array[Reference]): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setIssued(value: dateTime): Self = StObject.set(x, "issued", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setIssuedUndefined: Self = StObject.set(x, "issued", js.undefined)
     
     @scala.inline
-    def setFriendlyVarargs(value: ContractFriendly*): Self = this.set("friendly", js.Array(value :_*))
+    def setLegal(value: js.Array[ContractLegal]): Self = StObject.set(x, "legal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendly(value: js.Array[ContractFriendly]): Self = this.set("friendly", value.asInstanceOf[js.Any])
+    def setLegalUndefined: Self = StObject.set(x, "legal", js.undefined)
     
     @scala.inline
-    def deleteFriendly: Self = this.set("friendly", js.undefined)
+    def setLegalVarargs(value: ContractLegal*): Self = StObject.set(x, "legal", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setRule(value: js.Array[ContractRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
     @scala.inline
-    def setIssued(value: dateTime): Self = this.set("issued", value.asInstanceOf[js.Any])
+    def setRuleVarargs(value: ContractRule*): Self = StObject.set(x, "rule", js.Array(value :_*))
     
     @scala.inline
-    def deleteIssued: Self = this.set("issued", js.undefined)
+    def setSecurityLabel(value: js.Array[Coding]): Self = StObject.set(x, "securityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegalVarargs(value: ContractLegal*): Self = this.set("legal", js.Array(value :_*))
+    def setSecurityLabelUndefined: Self = StObject.set(x, "securityLabel", js.undefined)
     
     @scala.inline
-    def setLegal(value: js.Array[ContractLegal]): Self = this.set("legal", value.asInstanceOf[js.Any])
+    def setSecurityLabelVarargs(value: Coding*): Self = StObject.set(x, "securityLabel", js.Array(value :_*))
     
     @scala.inline
-    def deleteLegal: Self = this.set("legal", js.undefined)
+    def setSigner(value: js.Array[ContractSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleVarargs(value: ContractRule*): Self = this.set("rule", js.Array(value :_*))
+    def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
     
     @scala.inline
-    def setRule(value: js.Array[ContractRule]): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setSignerVarargs(value: ContractSigner*): Self = StObject.set(x, "signer", js.Array(value :_*))
     
     @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityLabelVarargs(value: Coding*): Self = this.set("securityLabel", js.Array(value :_*))
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setSecurityLabel(value: js.Array[Coding]): Self = this.set("securityLabel", value.asInstanceOf[js.Any])
+    def setSubType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecurityLabel: Self = this.set("securityLabel", js.undefined)
+    def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
     
     @scala.inline
-    def setSignerVarargs(value: ContractSigner*): Self = this.set("signer", js.Array(value :_*))
+    def setSubTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "subType", js.Array(value :_*))
     
     @scala.inline
-    def setSigner(value: js.Array[ContractSigner]): Self = this.set("signer", value.asInstanceOf[js.Any])
+    def setSubject(value: js.Array[Reference]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSigner: Self = this.set("signer", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubjectVarargs(value: Reference*): Self = StObject.set(x, "subject", js.Array(value :_*))
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTerm(value: js.Array[ContractTerm]): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTypeVarargs(value: CodeableConcept*): Self = this.set("subType", js.Array(value :_*))
+    def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
     
     @scala.inline
-    def setSubType(value: js.Array[CodeableConcept]): Self = this.set("subType", value.asInstanceOf[js.Any])
+    def setTermVarargs(value: ContractTerm*): Self = StObject.set(x, "term", js.Array(value :_*))
     
     @scala.inline
-    def deleteSubType: Self = this.set("subType", js.undefined)
+    def setTopic(value: js.Array[Reference]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectVarargs(value: Reference*): Self = this.set("subject", js.Array(value :_*))
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
     @scala.inline
-    def setSubject(value: js.Array[Reference]): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTopicVarargs(value: Reference*): Self = StObject.set(x, "topic", js.Array(value :_*))
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTermVarargs(value: ContractTerm*): Self = this.set("term", js.Array(value :_*))
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setTerm(value: js.Array[ContractTerm]): Self = this.set("term", value.asInstanceOf[js.Any])
+    def setValuedItem(value: js.Array[ContractValuedItem]): Self = StObject.set(x, "valuedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTerm: Self = this.set("term", js.undefined)
+    def setValuedItemUndefined: Self = StObject.set(x, "valuedItem", js.undefined)
     
     @scala.inline
-    def setTopicVarargs(value: Reference*): Self = this.set("topic", js.Array(value :_*))
+    def setValuedItemVarargs(value: ContractValuedItem*): Self = StObject.set(x, "valuedItem", js.Array(value :_*))
     
     @scala.inline
-    def setTopic(value: js.Array[Reference]): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def set_issued(value: Element): Self = StObject.set(x, "_issued", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTopic: Self = this.set("topic", js.undefined)
+    def set_issuedUndefined: Self = StObject.set(x, "_issued", js.undefined)
     
     @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValuedItemVarargs(value: ContractValuedItem*): Self = this.set("valuedItem", js.Array(value :_*))
-    
-    @scala.inline
-    def setValuedItem(value: js.Array[ContractValuedItem]): Self = this.set("valuedItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValuedItem: Self = this.set("valuedItem", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

@@ -11,13 +11,14 @@ import typings.winrtUwp.winrtUwpStrings.licensefetchcompleted
 import typings.winrtUwp.winrtUwpStrings.proximitydetectioncompleted
 import typings.winrtUwp.winrtUwpStrings.registrationcompleted
 import typings.winrtUwp.winrtUwpStrings.reregistrationneeded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates PlayReady-ND sessions, coordinates with the download engine and the stream parser (for example, an MPEG-2 demuxer), manages the sample buffer, and listens to media stream source events. */
 @js.native
-trait NDClient extends js.Object {
+trait NDClient extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

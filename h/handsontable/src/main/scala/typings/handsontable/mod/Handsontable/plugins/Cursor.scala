@@ -2,12 +2,13 @@ package typings.handsontable.mod.Handsontable.plugins
 
 import typings.std.HTMLElement
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cursor extends js.Object {
+trait Cursor extends StObject {
   
   var cellHeight: Double = js.native
   

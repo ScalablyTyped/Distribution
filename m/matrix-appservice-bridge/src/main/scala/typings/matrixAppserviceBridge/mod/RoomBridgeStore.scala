@@ -1,35 +1,45 @@
 package typings.matrixAppserviceBridge.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matrix-appservice-bridge", "RoomBridgeStore")
 @js.native
-class RoomBridgeStore protected () extends js.Object {
-  def this(db: Datastore) = this()
-  def this(db: Datastore, ops: RoomBridgeStoreOptions) = this()
-  def batchGetLinkedRemoteRooms(matrixIds: js.Array[String]): js.Promise[RemoteRoomDict] = js.native
-  def getEntriesByLinkData(data: js.Object): js.Promise[js.Array[Entry]] = js.native
-  def getEntriesByMatrixId(matrixId: String): js.Promise[js.Array[Entry]] = js.native
-  def getEntriesByMatrixIds(ids: js.Array[String]): js.Promise[EntryDict] = js.native
-  def getEntriesByMatrixRoomData(data: js.Object): js.Promise[js.Array[Entry]] = js.native
-  def getEntriesByRemoteId(remoteId: String): js.Promise[js.Array[Entry]] = js.native
-  def getEntriesByRemoteRoomData(data: js.Object): js.Promise[js.Array[Entry]] = js.native
-  def getEntryById(id: String): js.Promise[Null | Entry] = js.native
-  def getLinkedMatrixRooms(remoteId: String): js.Promise[js.Array[MatrixRoom]] = js.native
-  def getLinkedRemoteRooms(matrixId: String): js.Promise[js.Array[RemoteRoom]] = js.native
-  def getMatrixRoom(roomId: String): js.Promise[Null | MatrixRoom] = js.native
-  def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom): js.Promise[Unit] = js.native
-  def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: js.UndefOr[scala.Nothing], linkId: String): js.Promise[Unit] = js.native
-  def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: js.Object): js.Promise[Unit] = js.native
-  def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: js.Object, linkId: String): js.Promise[Unit] = js.native
-  def removeEntriesByLinkData(data: js.Object): js.Promise[Unit] = js.native
-  def removeEntriesByMatrixRoomData(data: js.Object): js.Promise[Unit] = js.native
-  def removeEntriesByMatrixRoomId(matrixId: String): js.Promise[Unit] = js.native
-  def removeEntriesByRemoteRoomData(data: js.Object): js.Promise[Unit] = js.native
-  def removeEntriesByRemoteRoomId(remoteId: String): js.Promise[Unit] = js.native
-  def setMatrixRoom(matrixRoom: MatrixRoom): js.Promise[Unit] = js.native
-  def upsertEntry(entry: Entry): js.Promise[Unit] = js.native
+class RoomBridgeStore protected ()
+  extends typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStore {
+  /**
+    * Construct a store suitable for room bridging information. Data is stored
+    * as {@link RoomBridgeStoreEntry}s which have the following
+    * *serialized* format:
+    * ```
+    * {
+    *   id: "unique_id",      // customisable
+    *   matrix_id: "room_id",
+    *   remote_id: "remote_room_id",
+    *   matrix: { serialised matrix room info },
+    *   remote: { serialised remote room info },
+    *   data: { ... any additional info ... }
+    * }
+    * ```
+    * If a unique 'id' is not given, the store will generate one by concatenating
+    * the `matrix_id` and the `remote_id`. The delimiter
+    * used is a property on this store and can be modified.
+    *
+    * The structure of Entry objects means that it is efficient to select based
+    * off the 'id', 'matrix_id' or 'remote_id'. Additional indexes can be added
+    * manually.
+    * @constructor
+    * @param db The connected NEDB database instance
+    * @param opts Options for this store.
+    */
+  def this(db: typings.nedb.mod.^[_]) = this()
 }
-
+/* static members */
+object RoomBridgeStore {
+  
+  @JSImport("matrix-appservice-bridge", "RoomBridgeStore.createUniqueId")
+  @js.native
+  def createUniqueId(matrixRoomId: String, remoteRoomId: String, delimiter: String): String = js.native
+}

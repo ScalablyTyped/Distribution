@@ -3,12 +3,13 @@ package typings.shelljs.mod
 import typings.shelljs.shelljsStrings.PlussignN
 import typings.shelljs.shelljsStrings.`-N`
 import typings.shelljs.shelljsStrings.`-c`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirsFunction extends js.Object {
+trait DirsFunction extends StObject {
   
   /**
     * Displays the list of currently remembered directories.
@@ -21,7 +22,7 @@ trait DirsFunction extends js.Object {
     *                printed by dirs when invoked without options), starting with zero.
     * @return        Returns an array of paths in the stack, or a single path if +N or -N was specified.
     */
-  def apply(options: String): ShellArray | ShellString = js.native
+  def apply(options: String): ShellArray | typings.shelljs.mod.ShellString = js.native
   /**
     * Displays the list of currently remembered directories.
     *
@@ -29,7 +30,7 @@ trait DirsFunction extends js.Object {
     *                printed by dirs when invoked without options), starting with zero.
     * @return        Returns an array of paths in the stack, or a single path if +N or -N was specified.
     */
-  def apply(options: PlussignN): ShellString = js.native
+  def apply(options: PlussignN): typings.shelljs.mod.ShellString = js.native
   /**
     * Displays the list of currently remembered directories.
     *
@@ -37,7 +38,7 @@ trait DirsFunction extends js.Object {
     *                printed by dirs when invoked without options), starting with zero.
     * @return        Returns an array of paths in the stack, or a single path if +N or -N was specified.
     */
-  def apply(options: `-N`): ShellString = js.native
+  def apply(options: `-N`): typings.shelljs.mod.ShellString = js.native
   /**
     * Clears the directory stack by deleting all of the elements.
     *

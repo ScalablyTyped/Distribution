@@ -1,5 +1,6 @@
 package typings.wegameApi.wx.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wegameApi.wegameApiStrings.TRACE
   - typings.wegameApi.wegameApiStrings.CONNECT
 */
-trait RequestMethod extends js.Object
+trait RequestMethod extends StObject
 object RequestMethod {
   
   @scala.inline

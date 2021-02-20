@@ -1,12 +1,13 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Navigation")
 @js.native
-class Navigation protected () extends js.Object {
+class Navigation protected () extends StObject {
   // region Constructors
   /**
     * Interface for navigating back and forth in the browser history.

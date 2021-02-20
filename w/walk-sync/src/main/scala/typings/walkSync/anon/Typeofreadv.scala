@@ -2,12 +2,13 @@ package typings.walkSync.anon
 
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.ErrnoException
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofreadv extends js.Object {
+trait Typeofreadv extends StObject {
   
   def apply(
     fd: Double,

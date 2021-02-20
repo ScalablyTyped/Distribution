@@ -7,12 +7,13 @@ import typings.cesium.mod.HeightReference
 import typings.cesium.mod.Matrix4
 import typings.cesium.mod.Property
 import typings.cesium.mod.ShadowMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowPicking extends js.Object {
+trait AllowPicking extends StObject {
   
   var allowPicking: js.UndefOr[Boolean] = js.native
   
@@ -85,207 +86,195 @@ object AllowPicking {
   }
   
   @scala.inline
-  implicit class AllowPickingOps[Self <: AllowPicking] (val x: Self) extends AnyVal {
+  implicit class AllowPickingMutableBuilder[Self <: AllowPicking] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPicking(value: Boolean): Self = StObject.set(x, "allowPicking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPickingUndefined: Self = StObject.set(x, "allowPicking", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsynchronous(value: Boolean): Self = StObject.set(x, "asynchronous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPicking(value: Boolean): Self = this.set("allowPicking", value.asInstanceOf[js.Any])
+    def setAsynchronousUndefined: Self = StObject.set(x, "asynchronous", js.undefined)
     
     @scala.inline
-    def deleteAllowPicking: Self = this.set("allowPicking", js.undefined)
+    def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsynchronous(value: Boolean): Self = this.set("asynchronous", value.asInstanceOf[js.Any])
+    def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
     
     @scala.inline
-    def deleteAsynchronous: Self = this.set("asynchronous", js.undefined)
+    def setClampAnimations(value: Boolean): Self = StObject.set(x, "clampAnimations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasePath(value: String): Self = this.set("basePath", value.asInstanceOf[js.Any])
+    def setClampAnimationsUndefined: Self = StObject.set(x, "clampAnimations", js.undefined)
     
     @scala.inline
-    def deleteBasePath: Self = this.set("basePath", js.undefined)
+    def setClippingPlanes(value: ClippingPlaneCollection): Self = StObject.set(x, "clippingPlanes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClampAnimations(value: Boolean): Self = this.set("clampAnimations", value.asInstanceOf[js.Any])
+    def setClippingPlanesUndefined: Self = StObject.set(x, "clippingPlanes", js.undefined)
     
     @scala.inline
-    def deleteClampAnimations: Self = this.set("clampAnimations", js.undefined)
+    def setColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClippingPlanes(value: ClippingPlaneCollection): Self = this.set("clippingPlanes", value.asInstanceOf[js.Any])
+    def setColorBlendAmount(value: Double): Self = StObject.set(x, "colorBlendAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClippingPlanes: Self = this.set("clippingPlanes", js.undefined)
+    def setColorBlendAmountUndefined: Self = StObject.set(x, "colorBlendAmount", js.undefined)
     
     @scala.inline
-    def setColor(value: typings.cesium.mod.Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setColorBlendMode(value: Property): Self = StObject.set(x, "colorBlendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorBlendModeUndefined: Self = StObject.set(x, "colorBlendMode", js.undefined)
     
     @scala.inline
-    def setColorBlendAmount(value: Double): Self = this.set("colorBlendAmount", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteColorBlendAmount: Self = this.set("colorBlendAmount", js.undefined)
+    def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorBlendMode(value: Property): Self = this.set("colorBlendMode", value.asInstanceOf[js.Any])
+    def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
     
     @scala.inline
-    def deleteColorBlendMode: Self = this.set("colorBlendMode", js.undefined)
+    def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredit(value: typings.cesium.mod.Credit | String): Self = this.set("credit", value.asInstanceOf[js.Any])
+    def setDebugShowBoundingVolumeUndefined: Self = StObject.set(x, "debugShowBoundingVolume", js.undefined)
     
     @scala.inline
-    def deleteCredit: Self = this.set("credit", js.undefined)
+    def setDebugWireframe(value: Boolean): Self = StObject.set(x, "debugWireframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugShowBoundingVolume(value: Boolean): Self = this.set("debugShowBoundingVolume", value.asInstanceOf[js.Any])
+    def setDebugWireframeUndefined: Self = StObject.set(x, "debugWireframe", js.undefined)
     
     @scala.inline
-    def deleteDebugShowBoundingVolume: Self = this.set("debugShowBoundingVolume", js.undefined)
+    def setDequantizeInShader(value: Boolean): Self = StObject.set(x, "dequantizeInShader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugWireframe(value: Boolean): Self = this.set("debugWireframe", value.asInstanceOf[js.Any])
+    def setDequantizeInShaderUndefined: Self = StObject.set(x, "dequantizeInShader", js.undefined)
     
     @scala.inline
-    def deleteDebugWireframe: Self = this.set("debugWireframe", js.undefined)
+    def setDistanceDisplayCondition(value: typings.cesium.mod.DistanceDisplayCondition): Self = StObject.set(x, "distanceDisplayCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDequantizeInShader(value: Boolean): Self = this.set("dequantizeInShader", value.asInstanceOf[js.Any])
+    def setDistanceDisplayConditionUndefined: Self = StObject.set(x, "distanceDisplayCondition", js.undefined)
     
     @scala.inline
-    def deleteDequantizeInShader: Self = this.set("dequantizeInShader", js.undefined)
+    def setGltf(value: js.Any): Self = StObject.set(x, "gltf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceDisplayCondition(value: typings.cesium.mod.DistanceDisplayCondition): Self = this.set("distanceDisplayCondition", value.asInstanceOf[js.Any])
+    def setGltfUndefined: Self = StObject.set(x, "gltf", js.undefined)
     
     @scala.inline
-    def deleteDistanceDisplayCondition: Self = this.set("distanceDisplayCondition", js.undefined)
+    def setHeightReference(value: HeightReference): Self = StObject.set(x, "heightReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGltf(value: js.Any): Self = this.set("gltf", value.asInstanceOf[js.Any])
+    def setHeightReferenceUndefined: Self = StObject.set(x, "heightReference", js.undefined)
     
     @scala.inline
-    def deleteGltf: Self = this.set("gltf", js.undefined)
+    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightReference(value: HeightReference): Self = this.set("heightReference", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHeightReference: Self = this.set("heightReference", js.undefined)
+    def setImageBasedLightingFactor(value: Cartesian2): Self = StObject.set(x, "imageBasedLightingFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: js.Any): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImageBasedLightingFactorUndefined: Self = StObject.set(x, "imageBasedLightingFactor", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIncrementallyLoadTextures(value: Boolean): Self = StObject.set(x, "incrementallyLoadTextures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageBasedLightingFactor(value: Cartesian2): Self = this.set("imageBasedLightingFactor", value.asInstanceOf[js.Any])
+    def setIncrementallyLoadTexturesUndefined: Self = StObject.set(x, "incrementallyLoadTextures", js.undefined)
     
     @scala.inline
-    def deleteImageBasedLightingFactor: Self = this.set("imageBasedLightingFactor", js.undefined)
+    def setLightColor(value: Cartesian3): Self = StObject.set(x, "lightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementallyLoadTextures(value: Boolean): Self = this.set("incrementallyLoadTextures", value.asInstanceOf[js.Any])
+    def setLightColorUndefined: Self = StObject.set(x, "lightColor", js.undefined)
     
     @scala.inline
-    def deleteIncrementallyLoadTextures: Self = this.set("incrementallyLoadTextures", js.undefined)
+    def setLuminanceAtZenith(value: Double): Self = StObject.set(x, "luminanceAtZenith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightColor(value: Cartesian3): Self = this.set("lightColor", value.asInstanceOf[js.Any])
+    def setLuminanceAtZenithUndefined: Self = StObject.set(x, "luminanceAtZenith", js.undefined)
     
     @scala.inline
-    def deleteLightColor: Self = this.set("lightColor", js.undefined)
+    def setMaximumScale(value: Double): Self = StObject.set(x, "maximumScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLuminanceAtZenith(value: Double): Self = this.set("luminanceAtZenith", value.asInstanceOf[js.Any])
+    def setMaximumScaleUndefined: Self = StObject.set(x, "maximumScale", js.undefined)
     
     @scala.inline
-    def deleteLuminanceAtZenith: Self = this.set("luminanceAtZenith", js.undefined)
+    def setMinimumPixelSize(value: Double): Self = StObject.set(x, "minimumPixelSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumScale(value: Double): Self = this.set("maximumScale", value.asInstanceOf[js.Any])
+    def setMinimumPixelSizeUndefined: Self = StObject.set(x, "minimumPixelSize", js.undefined)
     
     @scala.inline
-    def deleteMaximumScale: Self = this.set("maximumScale", js.undefined)
+    def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumPixelSize(value: Double): Self = this.set("minimumPixelSize", value.asInstanceOf[js.Any])
+    def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
     
     @scala.inline
-    def deleteMinimumPixelSize: Self = this.set("minimumPixelSize", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelMatrix(value: Matrix4): Self = this.set("modelMatrix", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteModelMatrix: Self = this.set("modelMatrix", js.undefined)
+    def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setShadows(value: ShadowMode): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScene(value: typings.cesium.mod.Scene): Self = this.set("scene", value.asInstanceOf[js.Any])
+    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
     @scala.inline
-    def deleteScene: Self = this.set("scene", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadows(value: ShadowMode): Self = this.set("shadows", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteShadows: Self = this.set("shadows", js.undefined)
+    def setSilhouetteColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "silhouetteColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setSilhouetteColorUndefined: Self = StObject.set(x, "silhouetteColor", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setSilhouetteSize(value: Double): Self = StObject.set(x, "silhouetteSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilhouetteColor(value: typings.cesium.mod.Color): Self = this.set("silhouetteColor", value.asInstanceOf[js.Any])
+    def setSilhouetteSizeUndefined: Self = StObject.set(x, "silhouetteSize", js.undefined)
     
     @scala.inline
-    def deleteSilhouetteColor: Self = this.set("silhouetteColor", js.undefined)
+    def setSpecularEnvironmentMaps(value: String): Self = StObject.set(x, "specularEnvironmentMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilhouetteSize(value: Double): Self = this.set("silhouetteSize", value.asInstanceOf[js.Any])
+    def setSpecularEnvironmentMapsUndefined: Self = StObject.set(x, "specularEnvironmentMaps", js.undefined)
     
     @scala.inline
-    def deleteSilhouetteSize: Self = this.set("silhouetteSize", js.undefined)
+    def setSphericalHarmonicCoefficients(value: js.Array[Cartesian3]): Self = StObject.set(x, "sphericalHarmonicCoefficients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecularEnvironmentMaps(value: String): Self = this.set("specularEnvironmentMaps", value.asInstanceOf[js.Any])
+    def setSphericalHarmonicCoefficientsUndefined: Self = StObject.set(x, "sphericalHarmonicCoefficients", js.undefined)
     
     @scala.inline
-    def deleteSpecularEnvironmentMaps: Self = this.set("specularEnvironmentMaps", js.undefined)
-    
-    @scala.inline
-    def setSphericalHarmonicCoefficientsVarargs(value: Cartesian3*): Self = this.set("sphericalHarmonicCoefficients", js.Array(value :_*))
-    
-    @scala.inline
-    def setSphericalHarmonicCoefficients(value: js.Array[Cartesian3]): Self = this.set("sphericalHarmonicCoefficients", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSphericalHarmonicCoefficients: Self = this.set("sphericalHarmonicCoefficients", js.undefined)
+    def setSphericalHarmonicCoefficientsVarargs(value: Cartesian3*): Self = StObject.set(x, "sphericalHarmonicCoefficients", js.Array(value :_*))
   }
 }

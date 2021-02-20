@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A batch of results produced by a query.
   */
 @js.native
-trait SchemaQueryResultBatch extends js.Object {
+trait SchemaQueryResultBatch extends StObject {
   
   /**
     * A cursor that points to the position after the last result in the batch.
@@ -62,63 +63,51 @@ object SchemaQueryResultBatch {
   }
   
   @scala.inline
-  implicit class SchemaQueryResultBatchOps[Self <: SchemaQueryResultBatch] (val x: Self) extends AnyVal {
+  implicit class SchemaQueryResultBatchMutableBuilder[Self <: SchemaQueryResultBatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityResultType(value: String): Self = StObject.set(x, "entityResultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCursor(value: String): Self = this.set("endCursor", value.asInstanceOf[js.Any])
+    def setEntityResultTypeUndefined: Self = StObject.set(x, "entityResultType", js.undefined)
     
     @scala.inline
-    def deleteEndCursor: Self = this.set("endCursor", js.undefined)
+    def setEntityResults(value: js.Array[SchemaEntityResult]): Self = StObject.set(x, "entityResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityResultType(value: String): Self = this.set("entityResultType", value.asInstanceOf[js.Any])
+    def setEntityResultsUndefined: Self = StObject.set(x, "entityResults", js.undefined)
     
     @scala.inline
-    def deleteEntityResultType: Self = this.set("entityResultType", js.undefined)
+    def setEntityResultsVarargs(value: SchemaEntityResult*): Self = StObject.set(x, "entityResults", js.Array(value :_*))
     
     @scala.inline
-    def setEntityResultsVarargs(value: SchemaEntityResult*): Self = this.set("entityResults", js.Array(value :_*))
+    def setMoreResults(value: String): Self = StObject.set(x, "moreResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityResults(value: js.Array[SchemaEntityResult]): Self = this.set("entityResults", value.asInstanceOf[js.Any])
+    def setMoreResultsUndefined: Self = StObject.set(x, "moreResults", js.undefined)
     
     @scala.inline
-    def deleteEntityResults: Self = this.set("entityResults", js.undefined)
+    def setSkippedCursor(value: String): Self = StObject.set(x, "skippedCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoreResults(value: String): Self = this.set("moreResults", value.asInstanceOf[js.Any])
+    def setSkippedCursorUndefined: Self = StObject.set(x, "skippedCursor", js.undefined)
     
     @scala.inline
-    def deleteMoreResults: Self = this.set("moreResults", js.undefined)
+    def setSkippedResults(value: Double): Self = StObject.set(x, "skippedResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkippedCursor(value: String): Self = this.set("skippedCursor", value.asInstanceOf[js.Any])
+    def setSkippedResultsUndefined: Self = StObject.set(x, "skippedResults", js.undefined)
     
     @scala.inline
-    def deleteSkippedCursor: Self = this.set("skippedCursor", js.undefined)
+    def setSnapshotVersion(value: String): Self = StObject.set(x, "snapshotVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkippedResults(value: Double): Self = this.set("skippedResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkippedResults: Self = this.set("skippedResults", js.undefined)
-    
-    @scala.inline
-    def setSnapshotVersion(value: String): Self = this.set("snapshotVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotVersion: Self = this.set("snapshotVersion", js.undefined)
+    def setSnapshotVersionUndefined: Self = StObject.set(x, "snapshotVersion", js.undefined)
   }
 }

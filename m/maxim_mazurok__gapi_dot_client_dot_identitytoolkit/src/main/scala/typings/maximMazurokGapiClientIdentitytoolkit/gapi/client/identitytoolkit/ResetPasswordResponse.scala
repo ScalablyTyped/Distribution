@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResetPasswordResponse extends js.Object {
+trait ResetPasswordResponse extends StObject {
   
   /** The user's email. If the out-of-band code is for email recovery, the user's original email. */
   var email: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object ResetPasswordResponse {
   }
   
   @scala.inline
-  implicit class ResetPasswordResponseOps[Self <: ResetPasswordResponse] (val x: Self) extends AnyVal {
+  implicit class ResetPasswordResponseMutableBuilder[Self <: ResetPasswordResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setNewEmail(value: String): Self = StObject.set(x, "newEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNewEmailUndefined: Self = StObject.set(x, "newEmail", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewEmail(value: String): Self = this.set("newEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewEmail: Self = this.set("newEmail", js.undefined)
-    
-    @scala.inline
-    def setRequestType(value: String): Self = this.set("requestType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestType: Self = this.set("requestType", js.undefined)
+    def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIam.gapi.client.iam
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceAccountKey extends js.Object {
+trait ServiceAccountKey extends StObject {
   
   /** Specifies the algorithm (and possibly key size) for the key. */
   var keyAlgorithm: js.UndefOr[String] = js.native
@@ -52,72 +53,60 @@ object ServiceAccountKey {
   }
   
   @scala.inline
-  implicit class ServiceAccountKeyOps[Self <: ServiceAccountKey] (val x: Self) extends AnyVal {
+  implicit class ServiceAccountKeyMutableBuilder[Self <: ServiceAccountKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyAlgorithm(value: String): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyAlgorithmUndefined: Self = StObject.set(x, "keyAlgorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyOrigin(value: String): Self = StObject.set(x, "keyOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyAlgorithm(value: String): Self = this.set("keyAlgorithm", value.asInstanceOf[js.Any])
+    def setKeyOriginUndefined: Self = StObject.set(x, "keyOrigin", js.undefined)
     
     @scala.inline
-    def deleteKeyAlgorithm: Self = this.set("keyAlgorithm", js.undefined)
+    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyOrigin(value: String): Self = this.set("keyOrigin", value.asInstanceOf[js.Any])
+    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
     
     @scala.inline
-    def deleteKeyOrigin: Self = this.set("keyOrigin", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyType(value: String): Self = this.set("keyType", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKeyType: Self = this.set("keyType", js.undefined)
+    def setPrivateKeyData(value: String): Self = StObject.set(x, "privateKeyData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPrivateKeyDataUndefined: Self = StObject.set(x, "privateKeyData", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPrivateKeyType(value: String): Self = StObject.set(x, "privateKeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKeyData(value: String): Self = this.set("privateKeyData", value.asInstanceOf[js.Any])
+    def setPrivateKeyTypeUndefined: Self = StObject.set(x, "privateKeyType", js.undefined)
     
     @scala.inline
-    def deletePrivateKeyData: Self = this.set("privateKeyData", js.undefined)
+    def setPublicKeyData(value: String): Self = StObject.set(x, "publicKeyData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKeyType(value: String): Self = this.set("privateKeyType", value.asInstanceOf[js.Any])
+    def setPublicKeyDataUndefined: Self = StObject.set(x, "publicKeyData", js.undefined)
     
     @scala.inline
-    def deletePrivateKeyType: Self = this.set("privateKeyType", js.undefined)
+    def setValidAfterTime(value: String): Self = StObject.set(x, "validAfterTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKeyData(value: String): Self = this.set("publicKeyData", value.asInstanceOf[js.Any])
+    def setValidAfterTimeUndefined: Self = StObject.set(x, "validAfterTime", js.undefined)
     
     @scala.inline
-    def deletePublicKeyData: Self = this.set("publicKeyData", js.undefined)
+    def setValidBeforeTime(value: String): Self = StObject.set(x, "validBeforeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidAfterTime(value: String): Self = this.set("validAfterTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidAfterTime: Self = this.set("validAfterTime", js.undefined)
-    
-    @scala.inline
-    def setValidBeforeTime(value: String): Self = this.set("validBeforeTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidBeforeTime: Self = this.set("validBeforeTime", js.undefined)
+    def setValidBeforeTimeUndefined: Self = StObject.set(x, "validBeforeTime", js.undefined)
   }
 }

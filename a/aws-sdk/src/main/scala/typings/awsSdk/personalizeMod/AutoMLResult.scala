@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoMLResult extends js.Object {
+trait AutoMLResult extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the best recipe.
@@ -21,24 +22,12 @@ object AutoMLResult {
   }
   
   @scala.inline
-  implicit class AutoMLResultOps[Self <: AutoMLResult] (val x: Self) extends AnyVal {
+  implicit class AutoMLResultMutableBuilder[Self <: AutoMLResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBestRecipeArn(value: Arn): Self = StObject.set(x, "bestRecipeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBestRecipeArn(value: Arn): Self = this.set("bestRecipeArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBestRecipeArn: Self = this.set("bestRecipeArn", js.undefined)
+    def setBestRecipeArnUndefined: Self = StObject.set(x, "bestRecipeArn", js.undefined)
   }
 }

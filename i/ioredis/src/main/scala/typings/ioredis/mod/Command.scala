@@ -1,12 +1,13 @@
 package typings.ioredis.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Command extends js.Object {
+trait Command extends StObject {
   
   var args: js.Array[ValueType] = js.native
   
@@ -30,33 +31,21 @@ object Command {
   }
   
   @scala.inline
-  implicit class CommandOps[Self <: Command] (val x: Self) extends AnyVal {
+  implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[ValueType]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: ValueType*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetKeys(value: () => js.Array[String | Buffer]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setArgsVarargs(value: ValueType*): Self = this.set("args", js.Array(value :_*))
+    def setGetSlot(value: () => Double | Null): Self = StObject.set(x, "getSlot", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setArgs(value: js.Array[ValueType]): Self = this.set("args", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetKeys(value: () => js.Array[String | Buffer]): Self = this.set("getKeys", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSlot(value: () => Double | Null): Self = this.set("getSlot", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsCustomCommand(value: Boolean): Self = this.set("isCustomCommand", value.asInstanceOf[js.Any])
+    def setIsCustomCommand(value: Boolean): Self = StObject.set(x, "isCustomCommand", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.overwatchApi.mod
 
 import typings.overwatchApi.anon.Assists
 import typings.overwatchApi.anon.Frame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stats extends js.Object {
+trait Stats extends StObject {
   
   var endorsement: Frame = js.native
   
@@ -38,36 +39,24 @@ object Stats {
   }
   
   @scala.inline
-  implicit class StatsOps[Self <: Stats] (val x: Self) extends AnyVal {
+  implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndorsement(value: Frame): Self = StObject.set(x, "endorsement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortrait(value: String): Self = StObject.set(x, "portrait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndorsement(value: Frame): Self = this.set("endorsement", value.asInstanceOf[js.Any])
+    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setStats(value: Assists): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortrait(value: String): Self = this.set("portrait", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivate(value: Boolean): Self = this.set("private", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStats(value: Assists): Self = this.set("stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

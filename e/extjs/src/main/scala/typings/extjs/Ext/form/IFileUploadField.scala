@@ -3,6 +3,7 @@ package typings.extjs.Ext.form
 import typings.extjs.Ext.IElement
 import typings.extjs.Ext.button.IButton
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,90 +65,78 @@ object IFileUploadField {
   }
   
   @scala.inline
-  implicit class IFileUploadFieldOps[Self <: IFileUploadField] (val x: Self) extends AnyVal {
+  implicit class IFileUploadFieldMutableBuilder[Self <: IFileUploadField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonConfig(value: js.Any): Self = StObject.set(x, "buttonConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonConfigUndefined: Self = StObject.set(x, "buttonConfig", js.undefined)
     
     @scala.inline
-    def setButton(value: IButton): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setButtonMargin(value: Double): Self = StObject.set(x, "buttonMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setButtonMarginUndefined: Self = StObject.set(x, "buttonMargin", js.undefined)
     
     @scala.inline
-    def setButtonConfig(value: js.Any): Self = this.set("buttonConfig", value.asInstanceOf[js.Any])
+    def setButtonOnly(value: Boolean): Self = StObject.set(x, "buttonOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButtonConfig: Self = this.set("buttonConfig", js.undefined)
+    def setButtonOnlyUndefined: Self = StObject.set(x, "buttonOnly", js.undefined)
     
     @scala.inline
-    def setButtonMargin(value: Double): Self = this.set("buttonMargin", value.asInstanceOf[js.Any])
+    def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButtonMargin: Self = this.set("buttonMargin", js.undefined)
+    def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
     
     @scala.inline
-    def setButtonOnly(value: Boolean): Self = this.set("buttonOnly", value.asInstanceOf[js.Any])
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def deleteButtonOnly: Self = this.set("buttonOnly", js.undefined)
+    def setClearOnSubmit(value: Boolean): Self = StObject.set(x, "clearOnSubmit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonText(value: String): Self = this.set("buttonText", value.asInstanceOf[js.Any])
+    def setClearOnSubmitUndefined: Self = StObject.set(x, "clearOnSubmit", js.undefined)
     
     @scala.inline
-    def deleteButtonText: Self = this.set("buttonText", js.undefined)
+    def setExtractFileInput(value: () => HTMLElement): Self = StObject.set(x, "extractFileInput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearOnSubmit(value: Boolean): Self = this.set("clearOnSubmit", value.asInstanceOf[js.Any])
+    def setExtractFileInputUndefined: Self = StObject.set(x, "extractFileInput", js.undefined)
     
     @scala.inline
-    def deleteClearOnSubmit: Self = this.set("clearOnSubmit", js.undefined)
+    def setFileInputEl(value: IElement): Self = StObject.set(x, "fileInputEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractFileInput(value: () => HTMLElement): Self = this.set("extractFileInput", js.Any.fromFunction0(value))
+    def setFileInputElUndefined: Self = StObject.set(x, "fileInputEl", js.undefined)
     
     @scala.inline
-    def deleteExtractFileInput: Self = this.set("extractFileInput", js.undefined)
+    def setGetTriggerMarkup(value: () => Unit): Self = StObject.set(x, "getTriggerMarkup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFileInputEl(value: IElement): Self = this.set("fileInputEl", value.asInstanceOf[js.Any])
+    def setGetTriggerMarkupUndefined: Self = StObject.set(x, "getTriggerMarkup", js.undefined)
     
     @scala.inline
-    def deleteFileInputEl: Self = this.set("fileInputEl", js.undefined)
+    def setIsFileUpload(value: () => Boolean): Self = StObject.set(x, "isFileUpload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTriggerMarkup(value: () => Unit): Self = this.set("getTriggerMarkup", js.Any.fromFunction0(value))
+    def setIsFileUploadUndefined: Self = StObject.set(x, "isFileUpload", js.undefined)
     
     @scala.inline
-    def deleteGetTriggerMarkup: Self = this.set("getTriggerMarkup", js.undefined)
+    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFileUpload(value: () => Boolean): Self = this.set("isFileUpload", js.Any.fromFunction0(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteIsFileUpload: Self = this.set("isFileUpload", js.undefined)
+    def setSetValue(value: () => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnShow(value: () => Unit): Self = this.set("onShow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
-    
-    @scala.inline
-    def setSetValue(value: () => Unit): Self = this.set("setValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
   }
 }

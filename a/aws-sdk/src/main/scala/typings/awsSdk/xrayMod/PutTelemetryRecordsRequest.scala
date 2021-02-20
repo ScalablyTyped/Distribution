@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutTelemetryRecordsRequest extends js.Object {
+trait PutTelemetryRecordsRequest extends StObject {
   
   /**
     * 
@@ -36,42 +37,30 @@ object PutTelemetryRecordsRequest {
   }
   
   @scala.inline
-  implicit class PutTelemetryRecordsRequestOps[Self <: PutTelemetryRecordsRequest] (val x: Self) extends AnyVal {
+  implicit class PutTelemetryRecordsRequestMutableBuilder[Self <: PutTelemetryRecordsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEC2InstanceId(value: EC2InstanceId): Self = StObject.set(x, "EC2InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEC2InstanceIdUndefined: Self = StObject.set(x, "EC2InstanceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostname(value: Hostname): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTelemetryRecordsVarargs(value: TelemetryRecord*): Self = this.set("TelemetryRecords", js.Array(value :_*))
+    def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
     
     @scala.inline
-    def setTelemetryRecords(value: TelemetryRecordList): Self = this.set("TelemetryRecords", value.asInstanceOf[js.Any])
+    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEC2InstanceId(value: EC2InstanceId): Self = this.set("EC2InstanceId", value.asInstanceOf[js.Any])
+    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
     
     @scala.inline
-    def deleteEC2InstanceId: Self = this.set("EC2InstanceId", js.undefined)
+    def setTelemetryRecords(value: TelemetryRecordList): Self = StObject.set(x, "TelemetryRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: Hostname): Self = this.set("Hostname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostname: Self = this.set("Hostname", js.undefined)
-    
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = this.set("ResourceARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceARN: Self = this.set("ResourceARN", js.undefined)
+    def setTelemetryRecordsVarargs(value: TelemetryRecord*): Self = StObject.set(x, "TelemetryRecords", js.Array(value :_*))
   }
 }

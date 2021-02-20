@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,54 +55,42 @@ object ParamsResourceEntitlementsUpdate {
   }
   
   @scala.inline
-  implicit class ParamsResourceEntitlementsUpdateOps[Self <: ParamsResourceEntitlementsUpdate] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceEntitlementsUpdateMutableBuilder[Self <: ParamsResourceEntitlementsUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setEntitlementId(value: String): Self = StObject.set(x, "entitlementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterpriseId(value: String): Self = this.set("enterpriseId", value.asInstanceOf[js.Any])
+    def setEntitlementIdUndefined: Self = StObject.set(x, "entitlementId", js.undefined)
     
     @scala.inline
-    def deleteEnterpriseId: Self = this.set("enterpriseId", js.undefined)
+    def setInstall(value: Boolean): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitlementId(value: String): Self = this.set("entitlementId", value.asInstanceOf[js.Any])
+    def setInstallUndefined: Self = StObject.set(x, "install", js.undefined)
     
     @scala.inline
-    def deleteEntitlementId: Self = this.set("entitlementId", js.undefined)
+    def setRequestBody(value: SchemaEntitlement): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstall(value: Boolean): Self = this.set("install", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deleteInstall: Self = this.set("install", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaEntitlement): Self = this.set("requestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

@@ -13,12 +13,13 @@ import typings.maximMazurokGapiClientIam.anon.OptionsrequestedPolicyVersion
 import typings.maximMazurokGapiClientIam.anon.PageToken
 import typings.maximMazurokGapiClientIam.anon.PrettyPrintQuotaUser
 import typings.maximMazurokGapiClientIam.anon.QuotaUserResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceAccountsResource extends js.Object {
+trait ServiceAccountsResource extends StObject {
   
   /** Creates a ServiceAccount. */
   def create(request: AltCallback): Request[ServiceAccount] = js.native

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Data.Xml.Dom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeType extends js.Object
+sealed trait NodeType extends StObject
 /** The type of an IXmlNode, as returned by the NodeType property. */
 @JSGlobal("Windows.Data.Xml.Dom.NodeType")
 @js.native
-object NodeType extends js.Object {
+object NodeType extends StObject {
   
   /** The node is an XmlAttribute type. */
   @js.native

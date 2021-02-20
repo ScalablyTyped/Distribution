@@ -6,14 +6,14 @@ import typings.ionicCore.componentsMod.global.HTMLIonTabsElement
 import typings.ionicCore.interfaceMod.NavOutlet
 import typings.ionicCore.interfaceMod.RouteWrite
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/tabs/tabs", JSImport.Namespace)
-@js.native
-object tabsMod extends js.Object {
+object tabsMod {
   
+  @JSImport("@ionic/core/dist/types/components/tabs/tabs", "Tabs")
   @js.native
   class Tabs () extends NavOutlet {
     

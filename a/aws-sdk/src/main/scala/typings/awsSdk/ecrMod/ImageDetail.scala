@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageDetail extends js.Object {
+trait ImageDetail extends StObject {
   
   /**
     * The artifact media type of the image.
@@ -66,81 +67,69 @@ object ImageDetail {
   }
   
   @scala.inline
-  implicit class ImageDetailOps[Self <: ImageDetail] (val x: Self) extends AnyVal {
+  implicit class ImageDetailMutableBuilder[Self <: ImageDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactMediaType(value: MediaType): Self = StObject.set(x, "artifactMediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactMediaTypeUndefined: Self = StObject.set(x, "artifactMediaType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactMediaType(value: MediaType): Self = this.set("artifactMediaType", value.asInstanceOf[js.Any])
+    def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
     
     @scala.inline
-    def deleteArtifactMediaType: Self = this.set("artifactMediaType", js.undefined)
+    def setImageManifestMediaType(value: MediaType): Self = StObject.set(x, "imageManifestMediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageDigest(value: ImageDigest): Self = this.set("imageDigest", value.asInstanceOf[js.Any])
+    def setImageManifestMediaTypeUndefined: Self = StObject.set(x, "imageManifestMediaType", js.undefined)
     
     @scala.inline
-    def deleteImageDigest: Self = this.set("imageDigest", js.undefined)
+    def setImagePushedAt(value: PushTimestamp): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageManifestMediaType(value: MediaType): Self = this.set("imageManifestMediaType", value.asInstanceOf[js.Any])
+    def setImagePushedAtUndefined: Self = StObject.set(x, "imagePushedAt", js.undefined)
     
     @scala.inline
-    def deleteImageManifestMediaType: Self = this.set("imageManifestMediaType", js.undefined)
+    def setImageScanFindingsSummary(value: ImageScanFindingsSummary): Self = StObject.set(x, "imageScanFindingsSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePushedAt(value: PushTimestamp): Self = this.set("imagePushedAt", value.asInstanceOf[js.Any])
+    def setImageScanFindingsSummaryUndefined: Self = StObject.set(x, "imageScanFindingsSummary", js.undefined)
     
     @scala.inline
-    def deleteImagePushedAt: Self = this.set("imagePushedAt", js.undefined)
+    def setImageScanStatus(value: ImageScanStatus): Self = StObject.set(x, "imageScanStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageScanFindingsSummary(value: ImageScanFindingsSummary): Self = this.set("imageScanFindingsSummary", value.asInstanceOf[js.Any])
+    def setImageScanStatusUndefined: Self = StObject.set(x, "imageScanStatus", js.undefined)
     
     @scala.inline
-    def deleteImageScanFindingsSummary: Self = this.set("imageScanFindingsSummary", js.undefined)
+    def setImageSizeInBytes(value: ImageSizeInBytes): Self = StObject.set(x, "imageSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageScanStatus(value: ImageScanStatus): Self = this.set("imageScanStatus", value.asInstanceOf[js.Any])
+    def setImageSizeInBytesUndefined: Self = StObject.set(x, "imageSizeInBytes", js.undefined)
     
     @scala.inline
-    def deleteImageScanStatus: Self = this.set("imageScanStatus", js.undefined)
+    def setImageTags(value: ImageTagList): Self = StObject.set(x, "imageTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSizeInBytes(value: ImageSizeInBytes): Self = this.set("imageSizeInBytes", value.asInstanceOf[js.Any])
+    def setImageTagsUndefined: Self = StObject.set(x, "imageTags", js.undefined)
     
     @scala.inline
-    def deleteImageSizeInBytes: Self = this.set("imageSizeInBytes", js.undefined)
+    def setImageTagsVarargs(value: ImageTag*): Self = StObject.set(x, "imageTags", js.Array(value :_*))
     
     @scala.inline
-    def setImageTagsVarargs(value: ImageTag*): Self = this.set("imageTags", js.Array(value :_*))
+    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageTags(value: ImageTagList): Self = this.set("imageTags", value.asInstanceOf[js.Any])
+    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
     @scala.inline
-    def deleteImageTags: Self = this.set("imageTags", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistryId: Self = this.set("registryId", js.undefined)
-    
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

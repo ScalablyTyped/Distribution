@@ -1,6 +1,7 @@
 package typings.scriptableIos
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/reminder/#-new-reminder
   */
 @js.native
-trait Reminder extends js.Object {
+trait Reminder extends StObject {
   
   /**
     * _Adds a recurrence rule._
@@ -138,63 +139,51 @@ object Reminder {
   }
   
   @scala.inline
-  implicit class ReminderOps[Self <: Reminder] (val x: Self) extends AnyVal {
+  implicit class ReminderMutableBuilder[Self <: Reminder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRecurrenceRule(value: RecurrenceRule => Unit): Self = StObject.set(x, "addRecurrenceRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletionDate(value: Date): Self = StObject.set(x, "completionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddRecurrenceRule(value: RecurrenceRule => Unit): Self = this.set("addRecurrenceRule", js.Any.fromFunction1(value))
+    def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendar(value: Calendar): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    def setDueDate(value: Date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionDate(value: Date): Self = this.set("completionDate", value.asInstanceOf[js.Any])
+    def setDueDateIncludesTime(value: Boolean): Self = StObject.set(x, "dueDateIncludesTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Date): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDueDate(value: Date): Self = this.set("dueDate", value.asInstanceOf[js.Any])
+    def setIsCompleted(value: Boolean): Self = StObject.set(x, "isCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDueDateIncludesTime(value: Boolean): Self = this.set("dueDateIncludesTime", value.asInstanceOf[js.Any])
+    def setIsOverdue(value: Boolean): Self = StObject.set(x, "isOverdue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCompleted(value: Boolean): Self = this.set("isCompleted", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOverdue(value: Boolean): Self = this.set("isOverdue", value.asInstanceOf[js.Any])
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setRemoveAllRecurrenceRules(value: () => Unit): Self = StObject.set(x, "removeAllRecurrenceRules", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveAllRecurrenceRules(value: () => Unit): Self = this.set("removeAllRecurrenceRules", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSave(value: () => Unit): Self = this.set("save", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

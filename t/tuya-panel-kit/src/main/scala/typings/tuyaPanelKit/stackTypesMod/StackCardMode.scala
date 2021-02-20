@@ -1,5 +1,6 @@
 package typings.tuyaPanelKit.stackTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tuyaPanelKit.tuyaPanelKitStrings.card
   - typings.tuyaPanelKit.tuyaPanelKitStrings.modal
 */
-trait StackCardMode extends js.Object
+trait StackCardMode extends StObject
 object StackCardMode {
   
   @scala.inline

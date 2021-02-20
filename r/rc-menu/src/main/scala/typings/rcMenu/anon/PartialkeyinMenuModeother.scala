@@ -1,13 +1,14 @@
 package typings.rcMenu.anon
 
 import typings.rcMotion.cssmotionMod.CSSMotionProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{[ key in rc-menu.rc-menu/es/interface.MenuMode | 'other' ]: rc-motion.rc-motion.CSSMotionProps}> */
 @js.native
-trait PartialkeyinMenuModeother extends js.Object {
+trait PartialkeyinMenuModeother extends StObject {
   
   var horizontal: js.UndefOr[CSSMotionProps] = js.native
   
@@ -30,54 +31,42 @@ object PartialkeyinMenuModeother {
   }
   
   @scala.inline
-  implicit class PartialkeyinMenuModeotherOps[Self <: PartialkeyinMenuModeother] (val x: Self) extends AnyVal {
+  implicit class PartialkeyinMenuModeotherMutableBuilder[Self <: PartialkeyinMenuModeother] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHorizontal(value: CSSMotionProps): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInline(value: CSSMotionProps): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontal(value: CSSMotionProps): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setOther(value: CSSMotionProps): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInline(value: CSSMotionProps): Self = this.set("inline", value.asInstanceOf[js.Any])
+    def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
     
     @scala.inline
-    def deleteInline: Self = this.set("inline", js.undefined)
+    def setVertical(value: CSSMotionProps): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOther(value: CSSMotionProps): Self = this.set("other", value.asInstanceOf[js.Any])
+    def `setVertical-left`(value: CSSMotionProps): Self = StObject.set(x, "vertical-left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOther: Self = this.set("other", js.undefined)
+    def `setVertical-leftUndefined`: Self = StObject.set(x, "vertical-left", js.undefined)
     
     @scala.inline
-    def setVertical(value: CSSMotionProps): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    def `setVertical-right`(value: CSSMotionProps): Self = StObject.set(x, "vertical-right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def `setVertical-rightUndefined`: Self = StObject.set(x, "vertical-right", js.undefined)
     
     @scala.inline
-    def `setVertical-left`(value: CSSMotionProps): Self = this.set("vertical-left", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteVertical-left`: Self = this.set("vertical-left", js.undefined)
-    
-    @scala.inline
-    def `setVertical-right`(value: CSSMotionProps): Self = this.set("vertical-right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteVertical-right`: Self = this.set("vertical-right", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

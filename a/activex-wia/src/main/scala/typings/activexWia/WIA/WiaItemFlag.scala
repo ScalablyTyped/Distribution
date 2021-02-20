@@ -19,6 +19,7 @@ import typings.activexWia.activexWiaNumbers.`64`
 import typings.activexWia.activexWiaNumbers.`65536`
 import typings.activexWia.activexWiaNumbers.`8192`
 import typings.activexWia.activexWiaNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,7 +49,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWia.activexWiaNumbers.`65536`
   - typings.activexWia.activexWiaNumbers.`1024`
 */
-trait WiaItemFlag extends js.Object
+trait WiaItemFlag extends StObject
 object WiaItemFlag {
   
   @scala.inline

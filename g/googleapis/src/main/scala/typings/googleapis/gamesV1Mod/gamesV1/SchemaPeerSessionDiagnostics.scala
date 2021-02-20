@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for peer session diagnostics.
   */
 @js.native
-trait SchemaPeerSessionDiagnostics extends js.Object {
+trait SchemaPeerSessionDiagnostics extends StObject {
   
   /**
     * Connected time in milliseconds.
@@ -45,48 +46,36 @@ object SchemaPeerSessionDiagnostics {
   }
   
   @scala.inline
-  implicit class SchemaPeerSessionDiagnosticsOps[Self <: SchemaPeerSessionDiagnostics] (val x: Self) extends AnyVal {
+  implicit class SchemaPeerSessionDiagnosticsMutableBuilder[Self <: SchemaPeerSessionDiagnostics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectedTimestampMillis(value: String): Self = StObject.set(x, "connectedTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectedTimestampMillisUndefined: Self = StObject.set(x, "connectedTimestampMillis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedTimestampMillis(value: String): Self = this.set("connectedTimestampMillis", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteConnectedTimestampMillis: Self = this.set("connectedTimestampMillis", js.undefined)
+    def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setParticipantIdUndefined: Self = StObject.set(x, "participantId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setReliableChannel(value: SchemaPeerChannelDiagnostics): Self = StObject.set(x, "reliableChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipantId(value: String): Self = this.set("participantId", value.asInstanceOf[js.Any])
+    def setReliableChannelUndefined: Self = StObject.set(x, "reliableChannel", js.undefined)
     
     @scala.inline
-    def deleteParticipantId: Self = this.set("participantId", js.undefined)
+    def setUnreliableChannel(value: SchemaPeerChannelDiagnostics): Self = StObject.set(x, "unreliableChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReliableChannel(value: SchemaPeerChannelDiagnostics): Self = this.set("reliableChannel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReliableChannel: Self = this.set("reliableChannel", js.undefined)
-    
-    @scala.inline
-    def setUnreliableChannel(value: SchemaPeerChannelDiagnostics): Self = this.set("unreliableChannel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreliableChannel: Self = this.set("unreliableChannel", js.undefined)
+    def setUnreliableChannelUndefined: Self = StObject.set(x, "unreliableChannel", js.undefined)
   }
 }

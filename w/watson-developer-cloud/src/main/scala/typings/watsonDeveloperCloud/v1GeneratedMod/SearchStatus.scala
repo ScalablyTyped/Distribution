@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about the Continuous Relevancy Training for this environment. */
 @js.native
-trait SearchStatus extends js.Object {
+trait SearchStatus extends StObject {
   
   /** The date stamp of the most recent completed training for this environment. */
   var last_trained: js.UndefOr[String] = js.native
@@ -29,42 +30,30 @@ object SearchStatus {
   }
   
   @scala.inline
-  implicit class SearchStatusOps[Self <: SearchStatus] (val x: Self) extends AnyVal {
+  implicit class SearchStatusMutableBuilder[Self <: SearchStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLast_trained(value: String): Self = StObject.set(x, "last_trained", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLast_trainedUndefined: Self = StObject.set(x, "last_trained", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_trained(value: String): Self = this.set("last_trained", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteLast_trained: Self = this.set("last_trained", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setStatus_description(value: String): Self = StObject.set(x, "status_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatus_description(value: String): Self = this.set("status_description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus_description: Self = this.set("status_description", js.undefined)
+    def setStatus_descriptionUndefined: Self = StObject.set(x, "status_description", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.rnFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddAndroidDownloads extends js.Object {
+trait AddAndroidDownloads extends StObject {
   
   /**
     * File description of the file.
@@ -52,60 +53,48 @@ object AddAndroidDownloads {
   }
   
   @scala.inline
-  implicit class AddAndroidDownloadsOps[Self <: AddAndroidDownloads] (val x: Self) extends AnyVal {
+  implicit class AddAndroidDownloadsMutableBuilder[Self <: AddAndroidDownloads] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaScannable(value: Boolean): Self = StObject.set(x, "mediaScannable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMediaScannableUndefined: Self = StObject.set(x, "mediaScannable", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaScannable(value: Boolean): Self = this.set("mediaScannable", value.asInstanceOf[js.Any])
+    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
     @scala.inline
-    def deleteMediaScannable: Self = this.set("mediaScannable", js.undefined)
+    def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMime(value: String): Self = this.set("mime", value.asInstanceOf[js.Any])
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def deleteMime: Self = this.set("mime", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: Boolean): Self = this.set("notification", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setUseDownloadManager(value: Boolean): Self = StObject.set(x, "useDownloadManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUseDownloadManager(value: Boolean): Self = this.set("useDownloadManager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseDownloadManager: Self = this.set("useDownloadManager", js.undefined)
+    def setUseDownloadManagerUndefined: Self = StObject.set(x, "useDownloadManager", js.undefined)
   }
 }

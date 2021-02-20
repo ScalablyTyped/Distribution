@@ -1,5 +1,6 @@
 package typings.ranjs.mod.dist
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +13,10 @@ class NoncentralT ()
   def this(nu: js.UndefOr[scala.Nothing], mu: Double) = this()
   def this(nu: Double, mu: Double) = this()
 }
-/* static members */
-@JSImport("ranjs", "dist.NoncentralT")
-@js.native
-object NoncentralT extends js.Object {
+object NoncentralT {
   
+  /* static member */
+  @JSImport("ranjs", "dist.NoncentralT.fnm")
+  @js.native
   def fnm(nu: Double, mu: Double, x: Double): Double = js.native
 }

@@ -1,11 +1,12 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRendererOptions extends js.Object {
+trait IRendererOptions extends StObject {
   
   /**
     * Sets scene background
@@ -64,54 +65,42 @@ object IRendererOptions {
   }
   
   @scala.inline
-  implicit class IRendererOptionsOps[Self <: IRendererOptions] (val x: Self) extends AnyVal {
+  implicit class IRendererOptionsMutableBuilder[Self <: IRendererOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasBounds(value: Boolean): Self = StObject.set(x, "hasBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setHasBoundsUndefined: Self = StObject.set(x, "hasBounds", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasBounds(value: Boolean): Self = this.set("hasBounds", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHasBounds: Self = this.set("hasBounds", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setWireframeBackground(value: String): Self = StObject.set(x, "wireframeBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWireframeBackgroundUndefined: Self = StObject.set(x, "wireframeBackground", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWireframes(value: Boolean): Self = StObject.set(x, "wireframes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWireframeBackground(value: String): Self = this.set("wireframeBackground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWireframeBackground: Self = this.set("wireframeBackground", js.undefined)
-    
-    @scala.inline
-    def setWireframes(value: Boolean): Self = this.set("wireframes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWireframes: Self = this.set("wireframes", js.undefined)
+    def setWireframesUndefined: Self = StObject.set(x, "wireframes", js.undefined)
   }
 }

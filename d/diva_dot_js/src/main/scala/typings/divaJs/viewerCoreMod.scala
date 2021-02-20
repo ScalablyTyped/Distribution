@@ -13,16 +13,21 @@ import typings.divaJs.mod.Diva
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("diva.js/viewer-core", JSImport.Namespace)
-@js.native
-object viewerCoreMod extends js.Object {
+object viewerCoreMod {
+  
+  @JSImport("diva.js/viewer-core", JSImport.Default)
+  @js.native
+  class default protected () extends ViewerCore {
+    def this(element: HTMLElement, options: Options, publicInstance: Diva) = this()
+  }
   
   @js.native
-  trait ViewerCore extends js.Object {
+  trait ViewerCore extends StObject {
     
     def addPageOverlay(overlay: js.Object): Unit = js.native
     
@@ -137,10 +142,5 @@ object viewerCoreMod extends js.Object {
     
     def zoom(zoomLevel: Double): Boolean = js.native
     def zoom(zoomLevel: Double, focalPoint: js.Object): Boolean = js.native
-  }
-  
-  @js.native
-  class default protected () extends ViewerCore {
-    def this(element: HTMLElement, options: Options, publicInstance: Diva) = this()
   }
 }

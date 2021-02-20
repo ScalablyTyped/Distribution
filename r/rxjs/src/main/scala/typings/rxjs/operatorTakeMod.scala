@@ -1,12 +1,13 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operator/take", JSImport.Namespace)
-@js.native
-object operatorTakeMod extends js.Object {
+object operatorTakeMod {
   
+  @JSImport("rxjs/operator/take", "take")
+  @js.native
   def take[T](count: Double): js.Any = js.native
 }

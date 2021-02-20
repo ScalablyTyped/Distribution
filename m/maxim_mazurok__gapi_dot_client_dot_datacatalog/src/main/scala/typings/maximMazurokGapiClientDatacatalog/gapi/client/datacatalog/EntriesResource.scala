@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientDatacatalog.anon.Name
 import typings.maximMazurokGapiClientDatacatalog.anon.Oauthtoken
 import typings.maximMazurokGapiClientDatacatalog.anon.PageSize
 import typings.maximMazurokGapiClientDatacatalog.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntriesResource extends js.Object {
+trait EntriesResource extends StObject {
   
   /**
     * Creates an entry. Only entries of 'FILESET' type or user-specified type can be created. Users should enable the Data Catalog API in the project identified by the `parent` parameter

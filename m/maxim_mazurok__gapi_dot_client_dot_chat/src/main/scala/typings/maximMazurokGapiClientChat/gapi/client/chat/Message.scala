@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientChat.gapi.client.chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Message extends js.Object {
+trait Message extends StObject {
   
   /** Input only. Parameters that a bot can use to configure how its response is posted. */
   var actionResponse: js.UndefOr[ActionResponse] = js.native
@@ -61,111 +62,99 @@ object Message {
   }
   
   @scala.inline
-  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionResponse(value: ActionResponse): Self = StObject.set(x, "actionResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionResponseUndefined: Self = StObject.set(x, "actionResponse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotations(value: js.Array[Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionResponse(value: ActionResponse): Self = this.set("actionResponse", value.asInstanceOf[js.Any])
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def deleteActionResponse: Self = this.set("actionResponse", js.undefined)
+    def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotationsVarargs(value: Annotation*): Self = this.set("annotations", js.Array(value :_*))
+    def setArgumentText(value: String): Self = StObject.set(x, "argumentText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: js.Array[Annotation]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setArgumentTextUndefined: Self = StObject.set(x, "argumentText", js.undefined)
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setAttachment(value: js.Array[Attachment]): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentText(value: String): Self = this.set("argumentText", value.asInstanceOf[js.Any])
+    def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
     
     @scala.inline
-    def deleteArgumentText: Self = this.set("argumentText", js.undefined)
+    def setAttachmentVarargs(value: Attachment*): Self = StObject.set(x, "attachment", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentVarargs(value: Attachment*): Self = this.set("attachment", js.Array(value :_*))
+    def setCards(value: js.Array[Card]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: js.Array[Attachment]): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
     
     @scala.inline
-    def deleteAttachment: Self = this.set("attachment", js.undefined)
+    def setCardsVarargs(value: Card*): Self = StObject.set(x, "cards", js.Array(value :_*))
     
     @scala.inline
-    def setCardsVarargs(value: Card*): Self = this.set("cards", js.Array(value :_*))
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCards(value: js.Array[Card]): Self = this.set("cards", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteCards: Self = this.set("cards", js.undefined)
+    def setFallbackText(value: String): Self = StObject.set(x, "fallbackText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setFallbackTextUndefined: Self = StObject.set(x, "fallbackText", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallbackText(value: String): Self = this.set("fallbackText", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFallbackText: Self = this.set("fallbackText", js.undefined)
+    def setPreviewText(value: String): Self = StObject.set(x, "previewText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPreviewTextUndefined: Self = StObject.set(x, "previewText", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSender(value: User): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewText(value: String): Self = this.set("previewText", value.asInstanceOf[js.Any])
+    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
     
     @scala.inline
-    def deletePreviewText: Self = this.set("previewText", js.undefined)
+    def setSlashCommand(value: SlashCommand): Self = StObject.set(x, "slashCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSender(value: User): Self = this.set("sender", value.asInstanceOf[js.Any])
+    def setSlashCommandUndefined: Self = StObject.set(x, "slashCommand", js.undefined)
     
     @scala.inline
-    def deleteSender: Self = this.set("sender", js.undefined)
+    def setSpace(value: Space): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlashCommand(value: SlashCommand): Self = this.set("slashCommand", value.asInstanceOf[js.Any])
+    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def deleteSlashCommand: Self = this.set("slashCommand", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpace(value: Space): Self = this.set("space", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSpace: Self = this.set("space", js.undefined)
+    def setThread(value: Thread): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setThread(value: Thread): Self = this.set("thread", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThread: Self = this.set("thread", js.undefined)
+    def setThreadUndefined: Self = StObject.set(x, "thread", js.undefined)
   }
 }

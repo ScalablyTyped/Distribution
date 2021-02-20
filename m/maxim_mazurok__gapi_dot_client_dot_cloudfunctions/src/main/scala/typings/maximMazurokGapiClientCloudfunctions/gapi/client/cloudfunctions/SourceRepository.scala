@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceRepository extends js.Object {
+trait SourceRepository extends StObject {
   
   /**
     * Output only. The URL pointing to the hosted repository where the function were defined at the time of deployment. It always points to a specific commit in the format described
@@ -30,30 +31,18 @@ object SourceRepository {
   }
   
   @scala.inline
-  implicit class SourceRepositoryOps[Self <: SourceRepository] (val x: Self) extends AnyVal {
+  implicit class SourceRepositoryMutableBuilder[Self <: SourceRepository] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeployedUrl(value: String): Self = StObject.set(x, "deployedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeployedUrlUndefined: Self = StObject.set(x, "deployedUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployedUrl(value: String): Self = this.set("deployedUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeployedUrl: Self = this.set("deployedUrl", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

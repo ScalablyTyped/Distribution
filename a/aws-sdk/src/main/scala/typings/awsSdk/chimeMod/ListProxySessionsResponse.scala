@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListProxySessionsResponse extends js.Object {
+trait ListProxySessionsResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results.
@@ -26,33 +27,21 @@ object ListProxySessionsResponse {
   }
   
   @scala.inline
-  implicit class ListProxySessionsResponseOps[Self <: ListProxySessionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListProxySessionsResponseMutableBuilder[Self <: ListProxySessionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProxySessions(value: ProxySessions): Self = StObject.set(x, "ProxySessions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextTokenString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setProxySessionsUndefined: Self = StObject.set(x, "ProxySessions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setProxySessionsVarargs(value: ProxySession*): Self = this.set("ProxySessions", js.Array(value :_*))
-    
-    @scala.inline
-    def setProxySessions(value: ProxySessions): Self = this.set("ProxySessions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxySessions: Self = this.set("ProxySessions", js.undefined)
+    def setProxySessionsVarargs(value: ProxySession*): Self = StObject.set(x, "ProxySessions", js.Array(value :_*))
   }
 }

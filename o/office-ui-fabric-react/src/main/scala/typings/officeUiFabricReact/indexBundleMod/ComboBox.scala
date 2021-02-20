@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class ComboBox protected ()
   def this(props: IComboBoxProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "ComboBox")
-@js.native
-object ComboBox extends js.Object {
+object ComboBox {
   
-  var defaultProps: IComboBoxProps = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "ComboBox")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "ComboBox.defaultProps")
+  @js.native
+  def defaultProps: IComboBoxProps = js.native
+  @scala.inline
+  def defaultProps_=(x: IComboBoxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

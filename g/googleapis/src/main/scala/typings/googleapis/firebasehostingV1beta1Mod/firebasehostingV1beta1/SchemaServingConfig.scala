@@ -1,5 +1,6 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * order](/docs/hosting/full-config#hosting_priority_order).
   */
 @js.native
-trait SchemaServingConfig extends js.Object {
+trait SchemaServingConfig extends StObject {
   
   /**
     * How to handle well known App Association files.
@@ -55,63 +56,51 @@ object SchemaServingConfig {
   }
   
   @scala.inline
-  implicit class SchemaServingConfigOps[Self <: SchemaServingConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaServingConfigMutableBuilder[Self <: SchemaServingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppAssociation(value: String): Self = StObject.set(x, "appAssociation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppAssociationUndefined: Self = StObject.set(x, "appAssociation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCleanUrls(value: Boolean): Self = StObject.set(x, "cleanUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppAssociation(value: String): Self = this.set("appAssociation", value.asInstanceOf[js.Any])
+    def setCleanUrlsUndefined: Self = StObject.set(x, "cleanUrls", js.undefined)
     
     @scala.inline
-    def deleteAppAssociation: Self = this.set("appAssociation", js.undefined)
+    def setHeaders(value: js.Array[SchemaHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCleanUrls(value: Boolean): Self = this.set("cleanUrls", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteCleanUrls: Self = this.set("cleanUrls", js.undefined)
+    def setHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setHeadersVarargs(value: SchemaHeader*): Self = this.set("headers", js.Array(value :_*))
+    def setRedirects(value: js.Array[SchemaRedirect]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Array[SchemaHeader]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setRedirectsVarargs(value: SchemaRedirect*): Self = StObject.set(x, "redirects", js.Array(value :_*))
     
     @scala.inline
-    def setRedirectsVarargs(value: SchemaRedirect*): Self = this.set("redirects", js.Array(value :_*))
+    def setRewrites(value: js.Array[SchemaRewrite]): Self = StObject.set(x, "rewrites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirects(value: js.Array[SchemaRedirect]): Self = this.set("redirects", value.asInstanceOf[js.Any])
+    def setRewritesUndefined: Self = StObject.set(x, "rewrites", js.undefined)
     
     @scala.inline
-    def deleteRedirects: Self = this.set("redirects", js.undefined)
+    def setRewritesVarargs(value: SchemaRewrite*): Self = StObject.set(x, "rewrites", js.Array(value :_*))
     
     @scala.inline
-    def setRewritesVarargs(value: SchemaRewrite*): Self = this.set("rewrites", js.Array(value :_*))
+    def setTrailingSlashBehavior(value: String): Self = StObject.set(x, "trailingSlashBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRewrites(value: js.Array[SchemaRewrite]): Self = this.set("rewrites", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRewrites: Self = this.set("rewrites", js.undefined)
-    
-    @scala.inline
-    def setTrailingSlashBehavior(value: String): Self = this.set("trailingSlashBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailingSlashBehavior: Self = this.set("trailingSlashBehavior", js.undefined)
+    def setTrailingSlashBehaviorUndefined: Self = StObject.set(x, "trailingSlashBehavior", js.undefined)
   }
 }

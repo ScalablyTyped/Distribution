@@ -1,14 +1,14 @@
 package typings.awsSdkMd5Js
 
 import typings.awsSdkTypes.cryptoMod.Hash
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/md5-js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@aws-sdk/md5-js", "Md5")
   @js.native
   class Md5 () extends Hash {
     

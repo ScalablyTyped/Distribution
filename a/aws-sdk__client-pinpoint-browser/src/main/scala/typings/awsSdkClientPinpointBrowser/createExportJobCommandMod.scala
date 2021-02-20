@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesCreateExportJobInputMod.CreateEx
 import typings.awsSdkClientPinpointBrowser.typesCreateExportJobOutputMod.CreateExportJobOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/CreateExportJobCommand", JSImport.Namespace)
-@js.native
-object createExportJobCommandMod extends js.Object {
+object createExportJobCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/CreateExportJobCommand", "CreateExportJobCommand")
   @js.native
   class CreateExportJobCommand protected () extends Command[
           InputTypesUnion, 

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,36 +43,24 @@ object XConditionalFormats {
   }
   
   @scala.inline
-  implicit class XConditionalFormatsOps[Self <: XConditionalFormats] (val x: Self) extends AnyVal {
+  implicit class XConditionalFormatsMutableBuilder[Self <: XConditionalFormats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditionalFormats(value: SafeArray[XConditionalFormat]): Self = StObject.set(x, "ConditionalFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateByRange(value: XSheetCellRanges => Double): Self = StObject.set(x, "createByRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetConditionalFormats(value: () => SafeArray[XConditionalFormat]): Self = StObject.set(x, "getConditionalFormats", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConditionalFormats(value: SafeArray[XConditionalFormat]): Self = this.set("ConditionalFormats", value.asInstanceOf[js.Any])
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("Length", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateByRange(value: XSheetCellRanges => Double): Self = this.set("createByRange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetConditionalFormats(value: () => SafeArray[XConditionalFormat]): Self = this.set("getConditionalFormats", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveByID(value: Double => Unit): Self = this.set("removeByID", js.Any.fromFunction1(value))
+    def setRemoveByID(value: Double => Unit): Self = StObject.set(x, "removeByID", js.Any.fromFunction1(value))
   }
 }

@@ -1,14 +1,14 @@
 package typings.sentryHub
 
 import typings.sentryHub.anon.OmitSessionContextstarted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/hub/dist/session", JSImport.Namespace)
-@js.native
-object sessionMod extends js.Object {
+object sessionMod {
   
+  @JSImport("@sentry/hub/dist/session", "Session")
   @js.native
   class Session ()
     extends typings.sentryTypes.sessionMod.Session {

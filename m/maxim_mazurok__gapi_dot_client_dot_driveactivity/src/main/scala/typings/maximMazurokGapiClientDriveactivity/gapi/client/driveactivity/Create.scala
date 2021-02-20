@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Create extends js.Object {
+trait Create extends StObject {
   
   /** If present, indicates the object was created by copying an existing Drive object. */
   var copy: js.UndefOr[Copy] = js.native
@@ -25,36 +26,24 @@ object Create {
   }
   
   @scala.inline
-  implicit class CreateOps[Self <: Create] (val x: Self) extends AnyVal {
+  implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: Copy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNew(value: js.Any): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: Copy): Self = this.set("copy", value.asInstanceOf[js.Any])
+    def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
     
     @scala.inline
-    def deleteCopy: Self = this.set("copy", js.undefined)
+    def setUpload(value: js.Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew(value: js.Any): Self = this.set("new", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNew: Self = this.set("new", js.undefined)
-    
-    @scala.inline
-    def setUpload(value: js.Any): Self = this.set("upload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpload: Self = this.set("upload", js.undefined)
+    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBucketRequest extends js.Object {
+trait CreateBucketRequest extends StObject {
   
   /**
     * The canned ACL to apply to the bucket.  This is not supported by Amazon S3 on Outposts buckets. 
@@ -66,75 +67,63 @@ object CreateBucketRequest {
   }
   
   @scala.inline
-  implicit class CreateBucketRequestOps[Self <: CreateBucketRequest] (val x: Self) extends AnyVal {
+  implicit class CreateBucketRequestMutableBuilder[Self <: CreateBucketRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setACL(value: BucketCannedACL): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setACLUndefined: Self = StObject.set(x, "ACL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setCreateBucketConfiguration(value: CreateBucketConfiguration): Self = StObject.set(x, "CreateBucketConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setACL(value: BucketCannedACL): Self = this.set("ACL", value.asInstanceOf[js.Any])
+    def setCreateBucketConfigurationUndefined: Self = StObject.set(x, "CreateBucketConfiguration", js.undefined)
     
     @scala.inline
-    def deleteACL: Self = this.set("ACL", js.undefined)
+    def setGrantFullControl(value: GrantFullControl): Self = StObject.set(x, "GrantFullControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateBucketConfiguration(value: CreateBucketConfiguration): Self = this.set("CreateBucketConfiguration", value.asInstanceOf[js.Any])
+    def setGrantFullControlUndefined: Self = StObject.set(x, "GrantFullControl", js.undefined)
     
     @scala.inline
-    def deleteCreateBucketConfiguration: Self = this.set("CreateBucketConfiguration", js.undefined)
+    def setGrantRead(value: GrantRead): Self = StObject.set(x, "GrantRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantFullControl(value: GrantFullControl): Self = this.set("GrantFullControl", value.asInstanceOf[js.Any])
+    def setGrantReadACP(value: GrantReadACP): Self = StObject.set(x, "GrantReadACP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrantFullControl: Self = this.set("GrantFullControl", js.undefined)
+    def setGrantReadACPUndefined: Self = StObject.set(x, "GrantReadACP", js.undefined)
     
     @scala.inline
-    def setGrantRead(value: GrantRead): Self = this.set("GrantRead", value.asInstanceOf[js.Any])
+    def setGrantReadUndefined: Self = StObject.set(x, "GrantRead", js.undefined)
     
     @scala.inline
-    def deleteGrantRead: Self = this.set("GrantRead", js.undefined)
+    def setGrantWrite(value: GrantWrite): Self = StObject.set(x, "GrantWrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantReadACP(value: GrantReadACP): Self = this.set("GrantReadACP", value.asInstanceOf[js.Any])
+    def setGrantWriteACP(value: GrantWriteACP): Self = StObject.set(x, "GrantWriteACP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrantReadACP: Self = this.set("GrantReadACP", js.undefined)
+    def setGrantWriteACPUndefined: Self = StObject.set(x, "GrantWriteACP", js.undefined)
     
     @scala.inline
-    def setGrantWrite(value: GrantWrite): Self = this.set("GrantWrite", value.asInstanceOf[js.Any])
+    def setGrantWriteUndefined: Self = StObject.set(x, "GrantWrite", js.undefined)
     
     @scala.inline
-    def deleteGrantWrite: Self = this.set("GrantWrite", js.undefined)
+    def setObjectLockEnabledForBucket(value: ObjectLockEnabledForBucket): Self = StObject.set(x, "ObjectLockEnabledForBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantWriteACP(value: GrantWriteACP): Self = this.set("GrantWriteACP", value.asInstanceOf[js.Any])
+    def setObjectLockEnabledForBucketUndefined: Self = StObject.set(x, "ObjectLockEnabledForBucket", js.undefined)
     
     @scala.inline
-    def deleteGrantWriteACP: Self = this.set("GrantWriteACP", js.undefined)
+    def setOutpostId(value: NonEmptyMaxLength64String): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectLockEnabledForBucket(value: ObjectLockEnabledForBucket): Self = this.set("ObjectLockEnabledForBucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectLockEnabledForBucket: Self = this.set("ObjectLockEnabledForBucket", js.undefined)
-    
-    @scala.inline
-    def setOutpostId(value: NonEmptyMaxLength64String): Self = this.set("OutpostId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutpostId: Self = this.set("OutpostId", js.undefined)
+    def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * estimation, not exact values.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2KMapEstimationResult extends js.Object {
+trait SchemaGooglePrivacyDlpV2KMapEstimationResult extends StObject {
   
   /**
     * The intervals [min_anonymity, max_anonymity] do not overlap. If a value
@@ -31,27 +32,15 @@ object SchemaGooglePrivacyDlpV2KMapEstimationResult {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2KMapEstimationResultOps[Self <: SchemaGooglePrivacyDlpV2KMapEstimationResult] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2KMapEstimationResultMutableBuilder[Self <: SchemaGooglePrivacyDlpV2KMapEstimationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKMapEstimationHistogram(value: js.Array[SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket]): Self = StObject.set(x, "kMapEstimationHistogram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKMapEstimationHistogramUndefined: Self = StObject.set(x, "kMapEstimationHistogram", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKMapEstimationHistogramVarargs(value: SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket*): Self = this.set("kMapEstimationHistogram", js.Array(value :_*))
-    
-    @scala.inline
-    def setKMapEstimationHistogram(value: js.Array[SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket]): Self = this.set("kMapEstimationHistogram", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKMapEstimationHistogram: Self = this.set("kMapEstimationHistogram", js.undefined)
+    def setKMapEstimationHistogramVarargs(value: SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket*): Self = StObject.set(x, "kMapEstimationHistogram", js.Array(value :_*))
   }
 }

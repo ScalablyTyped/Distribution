@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1ParameterSpec extends js.Object {
+trait GoogleCloudMlV1ParameterSpec extends StObject {
   
   /** Required if type is `CATEGORICAL`. The list of possible categories. */
   var categoricalValues: js.UndefOr[js.Array[String]] = js.native
@@ -43,66 +44,54 @@ object GoogleCloudMlV1ParameterSpec {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1ParameterSpecOps[Self <: GoogleCloudMlV1ParameterSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1ParameterSpecMutableBuilder[Self <: GoogleCloudMlV1ParameterSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoricalValues(value: js.Array[String]): Self = StObject.set(x, "categoricalValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoricalValuesUndefined: Self = StObject.set(x, "categoricalValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoricalValuesVarargs(value: String*): Self = StObject.set(x, "categoricalValues", js.Array(value :_*))
     
     @scala.inline
-    def setCategoricalValuesVarargs(value: String*): Self = this.set("categoricalValues", js.Array(value :_*))
+    def setDiscreteValues(value: js.Array[Double]): Self = StObject.set(x, "discreteValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoricalValues(value: js.Array[String]): Self = this.set("categoricalValues", value.asInstanceOf[js.Any])
+    def setDiscreteValuesUndefined: Self = StObject.set(x, "discreteValues", js.undefined)
     
     @scala.inline
-    def deleteCategoricalValues: Self = this.set("categoricalValues", js.undefined)
+    def setDiscreteValuesVarargs(value: Double*): Self = StObject.set(x, "discreteValues", js.Array(value :_*))
     
     @scala.inline
-    def setDiscreteValuesVarargs(value: Double*): Self = this.set("discreteValues", js.Array(value :_*))
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscreteValues(value: js.Array[Double]): Self = this.set("discreteValues", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteDiscreteValues: Self = this.set("discreteValues", js.undefined)
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setScaleType(value: String): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterName(value: String): Self = this.set("parameterName", value.asInstanceOf[js.Any])
+    def setScaleTypeUndefined: Self = StObject.set(x, "scaleType", js.undefined)
     
     @scala.inline
-    def deleteParameterName: Self = this.set("parameterName", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleType(value: String): Self = this.set("scaleType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleType: Self = this.set("scaleType", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

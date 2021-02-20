@@ -1,6 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.winjs.WinJS.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Accesses data for an IListDataSource.
   **/
 @js.native
-trait IListDataAdapter[T] extends js.Object {
+trait IListDataAdapter[T] extends StObject {
   
   //#region Methods
   /**
@@ -198,75 +199,63 @@ object IListDataAdapter {
   }
   
   @scala.inline
-  implicit class IListDataAdapterOps[Self <: IListDataAdapter[_], T] (val x: Self with IListDataAdapter[T]) extends AnyVal {
+  implicit class IListDataAdapterMutableBuilder[Self <: IListDataAdapter[_], T] (val x: Self with IListDataAdapter[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: (String, T, Double) => Promise[Unit]): Self = StObject.set(x, "change", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompareByIdentity(value: Boolean): Self = StObject.set(x, "compareByIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCount(value: () => Promise[Double]): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChange(value: (String, T, Double) => Promise[Unit]): Self = this.set("change", js.Any.fromFunction3(value))
+    def setInsertAfter(value: (String, T, String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "insertAfter", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setCompareByIdentity(value: Boolean): Self = this.set("compareByIdentity", value.asInstanceOf[js.Any])
+    def setInsertAtEnd(value: (String, T) => Promise[IItem[T]]): Self = StObject.set(x, "insertAtEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCount(value: () => Promise[Double]): Self = this.set("getCount", js.Any.fromFunction0(value))
+    def setInsertAtStart(value: (String, T) => Promise[IItem[T]]): Self = StObject.set(x, "insertAtStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsertAfter(value: (String, T, String, Double) => Promise[IItem[T]]): Self = this.set("insertAfter", js.Any.fromFunction4(value))
+    def setInsertBefore(value: (String, T, String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "insertBefore", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setInsertAtEnd(value: (String, T) => Promise[IItem[T]]): Self = this.set("insertAtEnd", js.Any.fromFunction2(value))
+    def setItemSignature(value: IItem[T] => String): Self = StObject.set(x, "itemSignature", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertAtStart(value: (String, T) => Promise[IItem[T]]): Self = this.set("insertAtStart", js.Any.fromFunction2(value))
+    def setItemsFromDescription(value: (String, Double, Double) => Promise[IFetchResult[T]]): Self = StObject.set(x, "itemsFromDescription", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setInsertBefore(value: (String, T, String, Double) => Promise[IItem[T]]): Self = this.set("insertBefore", js.Any.fromFunction4(value))
+    def setItemsFromEnd(value: Double => Promise[IFetchResult[T]]): Self = StObject.set(x, "itemsFromEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemSignature(value: IItem[T] => String): Self = this.set("itemSignature", js.Any.fromFunction1(value))
+    def setItemsFromIndex(value: (Double, Double, Double) => Promise[IFetchResult[T]]): Self = StObject.set(x, "itemsFromIndex", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setItemsFromDescription(value: (String, Double, Double) => Promise[IFetchResult[T]]): Self = this.set("itemsFromDescription", js.Any.fromFunction3(value))
+    def setItemsFromKey(value: (String, Double, Double) => Promise[IFetchResult[T]]): Self = StObject.set(x, "itemsFromKey", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setItemsFromEnd(value: Double => Promise[IFetchResult[T]]): Self = this.set("itemsFromEnd", js.Any.fromFunction1(value))
+    def setItemsFromStart(value: Double => Promise[IFetchResult[T]]): Self = StObject.set(x, "itemsFromStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemsFromIndex(value: (Double, Double, Double) => Promise[IFetchResult[T]]): Self = this.set("itemsFromIndex", js.Any.fromFunction3(value))
+    def setMoveAfter(value: (String, js.Any, String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "moveAfter", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setItemsFromKey(value: (String, Double, Double) => Promise[IFetchResult[T]]): Self = this.set("itemsFromKey", js.Any.fromFunction3(value))
+    def setMoveBefore(value: (String, js.Any, String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "moveBefore", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setItemsFromStart(value: Double => Promise[IFetchResult[T]]): Self = this.set("itemsFromStart", js.Any.fromFunction1(value))
+    def setMoveToEnd(value: (String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "moveToEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMoveAfter(value: (String, js.Any, String, Double) => Promise[IItem[T]]): Self = this.set("moveAfter", js.Any.fromFunction4(value))
+    def setMoveToStart(value: (String, Double) => Promise[IItem[T]]): Self = StObject.set(x, "moveToStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMoveBefore(value: (String, js.Any, String, Double) => Promise[IItem[T]]): Self = this.set("moveBefore", js.Any.fromFunction4(value))
+    def setRemove(value: (String, T, Double) => Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMoveToEnd(value: (String, Double) => Promise[IItem[T]]): Self = this.set("moveToEnd", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMoveToStart(value: (String, Double) => Promise[IItem[T]]): Self = this.set("moveToStart", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemove(value: (String, T, Double) => Promise[Unit]): Self = this.set("remove", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetNotificationHandler(value: IListDataNotificationHandler[T] => Unit): Self = this.set("setNotificationHandler", js.Any.fromFunction1(value))
+    def setSetNotificationHandler(value: IListDataNotificationHandler[T] => Unit): Self = StObject.set(x, "setNotificationHandler", js.Any.fromFunction1(value))
   }
 }

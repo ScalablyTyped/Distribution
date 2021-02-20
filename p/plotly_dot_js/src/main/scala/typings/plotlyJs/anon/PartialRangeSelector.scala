@@ -9,13 +9,14 @@ import typings.plotlyJs.plotlyJsStrings.middle
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.RangeSelector> */
 @js.native
-trait PartialRangeSelector extends js.Object {
+trait PartialRangeSelector extends StObject {
   
   var activecolor: js.UndefOr[String] = js.native
   
@@ -48,87 +49,75 @@ object PartialRangeSelector {
   }
   
   @scala.inline
-  implicit class PartialRangeSelectorOps[Self <: PartialRangeSelector] (val x: Self) extends AnyVal {
+  implicit class PartialRangeSelectorMutableBuilder[Self <: PartialRangeSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivecolor(value: String): Self = StObject.set(x, "activecolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivecolorUndefined: Self = StObject.set(x, "activecolor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivecolor(value: String): Self = this.set("activecolor", value.asInstanceOf[js.Any])
+    def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
     
     @scala.inline
-    def deleteActivecolor: Self = this.set("activecolor", js.undefined)
+    def setBordercolor(value: String): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgcolor(value: String): Self = this.set("bgcolor", value.asInstanceOf[js.Any])
+    def setBordercolorUndefined: Self = StObject.set(x, "bordercolor", js.undefined)
     
     @scala.inline
-    def deleteBgcolor: Self = this.set("bgcolor", js.undefined)
+    def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBordercolor(value: String): Self = this.set("bordercolor", value.asInstanceOf[js.Any])
+    def setBorderwidthUndefined: Self = StObject.set(x, "borderwidth", js.undefined)
     
     @scala.inline
-    def deleteBordercolor: Self = this.set("bordercolor", js.undefined)
+    def setButtons(value: js.Array[Partial[RangeSelectorButton]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderwidth(value: Double): Self = this.set("borderwidth", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteBorderwidth: Self = this.set("borderwidth", js.undefined)
+    def setButtonsVarargs(value: Partial[RangeSelectorButton]*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setButtonsVarargs(value: Partial[RangeSelectorButton]*): Self = this.set("buttons", js.Array(value :_*))
+    def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[Partial[RangeSelectorButton]]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setXanchor(value: auto | left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setXanchorUndefined: Self = StObject.set(x, "xanchor", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXanchor(value: auto | left | center | right): Self = this.set("xanchor", value.asInstanceOf[js.Any])
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def deleteXanchor: Self = this.set("xanchor", js.undefined)
+    def setYanchor(value: auto | top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
-    
-    @scala.inline
-    def setYanchor(value: auto | top | middle | bottom): Self = this.set("yanchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYanchor: Self = this.set("yanchor", js.undefined)
+    def setYanchorUndefined: Self = StObject.set(x, "yanchor", js.undefined)
   }
 }

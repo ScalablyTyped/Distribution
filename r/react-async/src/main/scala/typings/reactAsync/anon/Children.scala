@@ -7,12 +7,13 @@ import typings.reactAsync.mod.AsyncInitial
 import typings.reactAsync.mod.AsyncPending
 import typings.reactAsync.mod.AsyncRejected
 import typings.reactAsync.mod.FulfilledChildren
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Children[T /* <: js.Object */] extends js.Object {
+trait Children[T /* <: js.Object */] extends StObject {
   
   var children: js.UndefOr[FulfilledChildren[T]] = js.native
   
@@ -31,38 +32,26 @@ object Children {
   }
   
   @scala.inline
-  implicit class ChildrenOps[Self <: Children[_], T /* <: js.Object */] (val x: Self with Children[T]) extends AnyVal {
+  implicit class ChildrenMutableBuilder[Self <: Children[_], T /* <: js.Object */] (val x: Self with Children[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: FulfilledChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenFunction2(value: (T, /* state */ AsyncFulfilled[T, AbstractState[T]]) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    @scala.inline
+    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
     @scala.inline
     def setState(
       value: (AsyncInitial[T, AbstractState[T]]) | (AsyncPending[T, AbstractState[T]]) | (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]])
-    ): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChildrenFunction2(value: (T, /* state */ AsyncFulfilled[T, AbstractState[T]]) => ReactNode): Self = this.set("children", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setChildren(value: FulfilledChildren[T]): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
-    
-    @scala.inline
-    def setPersist(value: Boolean): Self = this.set("persist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersist: Self = this.set("persist", js.undefined)
+    ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

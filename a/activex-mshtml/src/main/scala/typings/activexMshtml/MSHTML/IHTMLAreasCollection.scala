@@ -1,12 +1,13 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:interface-name
 @js.native
-trait IHTMLAreasCollection extends js.Object {
+trait IHTMLAreasCollection extends StObject {
   
   def apply(): js.Any = js.native
   def apply(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native

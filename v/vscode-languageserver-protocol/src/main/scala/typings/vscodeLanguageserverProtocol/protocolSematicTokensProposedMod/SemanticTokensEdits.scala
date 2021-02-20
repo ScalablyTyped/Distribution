@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SemanticTokensEdits extends js.Object {
+trait SemanticTokensEdits extends StObject {
   
   /**
     * For a detailed description how these edits are structured pls see
@@ -24,30 +25,18 @@ object SemanticTokensEdits {
   }
   
   @scala.inline
-  implicit class SemanticTokensEditsOps[Self <: SemanticTokensEdits] (val x: Self) extends AnyVal {
+  implicit class SemanticTokensEditsMutableBuilder[Self <: SemanticTokensEdits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdits(value: js.Array[SemanticTokensEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditsVarargs(value: SemanticTokensEdit*): Self = StObject.set(x, "edits", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultId(value: String): Self = StObject.set(x, "resultId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditsVarargs(value: SemanticTokensEdit*): Self = this.set("edits", js.Array(value :_*))
-    
-    @scala.inline
-    def setEdits(value: js.Array[SemanticTokensEdit]): Self = this.set("edits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultId(value: String): Self = this.set("resultId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultId: Self = this.set("resultId", js.undefined)
+    def setResultIdUndefined: Self = StObject.set(x, "resultId", js.undefined)
   }
 }

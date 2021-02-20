@@ -1,13 +1,14 @@
 package typings.aureliaTemplating.mod
 
 import typings.aureliaTaskQueue.mod.TaskQueue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "BehaviorPropertyObserver")
 @js.native
-class BehaviorPropertyObserver protected () extends js.Object {
+class BehaviorPropertyObserver protected () extends StObject {
   /**
     * Creates an instance of BehaviorPropertyObserver.
     * @param taskQueue The task queue used to schedule change notifications.

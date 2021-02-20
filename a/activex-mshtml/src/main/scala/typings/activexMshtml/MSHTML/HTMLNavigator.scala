@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLNavigator extends js.Object {
+trait HTMLNavigator extends StObject {
   
   @JSName("MSHTML.HTMLNavigator_typekey")
   var MSHTMLDotHTMLNavigator_typekey: HTMLNavigator = js.native
@@ -88,87 +89,75 @@ object HTMLNavigator {
   }
   
   @scala.inline
-  implicit class HTMLNavigatorOps[Self <: HTMLNavigator] (val x: Self) extends AnyVal {
+  implicit class HTMLNavigatorMutableBuilder[Self <: HTMLNavigator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppCodeName(value: String): Self = StObject.set(x, "appCodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppMinorVersion(value: String): Self = StObject.set(x, "appMinorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotHTMLNavigator_typekey(value: HTMLNavigator): Self = this.set("MSHTML.HTMLNavigator_typekey", value.asInstanceOf[js.Any])
+    def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppCodeName(value: String): Self = this.set("appCodeName", value.asInstanceOf[js.Any])
+    def setBrowserLanguage(value: String): Self = StObject.set(x, "browserLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppMinorVersion(value: String): Self = this.set("appMinorVersion", value.asInstanceOf[js.Any])
+    def setConnectionSpeed(value: Double): Self = StObject.set(x, "connectionSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
+    def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersion(value: String): Self = this.set("appVersion", value.asInstanceOf[js.Any])
+    def setCookieEnabled(value: Boolean): Self = StObject.set(x, "cookieEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserLanguage(value: String): Self = this.set("browserLanguage", value.asInstanceOf[js.Any])
+    def setCpuClass(value: String): Self = StObject.set(x, "cpuClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionSpeed(value: Double): Self = this.set("connectionSpeed", value.asInstanceOf[js.Any])
+    def setGeolocation(value: IWebGeolocation): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstructor(value: js.Any): Self = this.set("constructor", value.asInstanceOf[js.Any])
+    def setJavaEnabled(value: () => Boolean): Self = StObject.set(x, "javaEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCookieEnabled(value: Boolean): Self = this.set("cookieEnabled", value.asInstanceOf[js.Any])
+    def setMSHTMLDotHTMLNavigator_typekey(value: HTMLNavigator): Self = StObject.set(x, "MSHTML.HTMLNavigator_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuClass(value: String): Self = this.set("cpuClass", value.asInstanceOf[js.Any])
+    def setMimeTypes(value: CMimeTypes): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeolocation(value: IWebGeolocation): Self = this.set("geolocation", value.asInstanceOf[js.Any])
+    def setMsDoNotTrack(value: String): Self = StObject.set(x, "msDoNotTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavaEnabled(value: () => Boolean): Self = this.set("javaEnabled", js.Any.fromFunction0(value))
+    def setOnLine(value: Boolean): Self = StObject.set(x, "onLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeTypes(value: CMimeTypes): Self = this.set("mimeTypes", value.asInstanceOf[js.Any])
+    def setOpsProfile(value: COpsProfile): Self = StObject.set(x, "opsProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsDoNotTrack(value: String): Self = this.set("msDoNotTrack", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLine(value: Boolean): Self = this.set("onLine", value.asInstanceOf[js.Any])
+    def setPlugins(value: IHTMLPluginsCollection): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpsProfile(value: COpsProfile): Self = this.set("opsProfile", value.asInstanceOf[js.Any])
+    def setSystemLanguage(value: String): Self = StObject.set(x, "systemLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setTaintEnabled(value: () => Boolean): Self = StObject.set(x, "taintEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPlugins(value: IHTMLPluginsCollection): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemLanguage(value: String): Self = this.set("systemLanguage", value.asInstanceOf[js.Any])
+    def setUserLanguage(value: String): Self = StObject.set(x, "userLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaintEnabled(value: () => Boolean): Self = this.set("taintEnabled", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserLanguage(value: String): Self = this.set("userLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserProfile(value: COpsProfile): Self = this.set("userProfile", value.asInstanceOf[js.Any])
+    def setUserProfile(value: COpsProfile): Self = StObject.set(x, "userProfile", value.asInstanceOf[js.Any])
   }
 }

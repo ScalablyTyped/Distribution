@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryNoticesResponse. */
 @js.native
-trait QueryNoticesResponse extends js.Object {
+trait QueryNoticesResponse extends StObject {
   
   /** Array of aggregation results that match the query. */
   var aggregations: js.UndefOr[js.Array[QueryAggregation]] = js.native
@@ -32,57 +33,45 @@ object QueryNoticesResponse {
   }
   
   @scala.inline
-  implicit class QueryNoticesResponseOps[Self <: QueryNoticesResponse] (val x: Self) extends AnyVal {
+  implicit class QueryNoticesResponseMutableBuilder[Self <: QueryNoticesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregations(value: js.Array[QueryAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregationsVarargs(value: QueryAggregation*): Self = StObject.set(x, "aggregations", js.Array(value :_*))
     
     @scala.inline
-    def setAggregationsVarargs(value: QueryAggregation*): Self = this.set("aggregations", js.Array(value :_*))
+    def setDuplicates_removed(value: Double): Self = StObject.set(x, "duplicates_removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregations(value: js.Array[QueryAggregation]): Self = this.set("aggregations", value.asInstanceOf[js.Any])
+    def setDuplicates_removedUndefined: Self = StObject.set(x, "duplicates_removed", js.undefined)
     
     @scala.inline
-    def deleteAggregations: Self = this.set("aggregations", js.undefined)
+    def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicates_removed(value: Double): Self = this.set("duplicates_removed", value.asInstanceOf[js.Any])
+    def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
     
     @scala.inline
-    def deleteDuplicates_removed: Self = this.set("duplicates_removed", js.undefined)
+    def setPassages(value: js.Array[QueryPassages]): Self = StObject.set(x, "passages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatching_results(value: Double): Self = this.set("matching_results", value.asInstanceOf[js.Any])
+    def setPassagesUndefined: Self = StObject.set(x, "passages", js.undefined)
     
     @scala.inline
-    def deleteMatching_results: Self = this.set("matching_results", js.undefined)
+    def setPassagesVarargs(value: QueryPassages*): Self = StObject.set(x, "passages", js.Array(value :_*))
     
     @scala.inline
-    def setPassagesVarargs(value: QueryPassages*): Self = this.set("passages", js.Array(value :_*))
+    def setResults(value: js.Array[QueryNoticesResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassages(value: js.Array[QueryPassages]): Self = this.set("passages", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deletePassages: Self = this.set("passages", js.undefined)
-    
-    @scala.inline
-    def setResultsVarargs(value: QueryNoticesResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[QueryNoticesResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setResultsVarargs(value: QueryNoticesResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

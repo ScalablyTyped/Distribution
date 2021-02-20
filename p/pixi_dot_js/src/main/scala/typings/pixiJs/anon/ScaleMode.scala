@@ -1,12 +1,13 @@
 package typings.pixiJs.anon
 
 import typings.pixiJs.PIXI.SCALE_MODES
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleMode extends js.Object {
+trait ScaleMode extends StObject {
   
   var scaleMode: js.UndefOr[SCALE_MODES] = js.native
 }
@@ -19,24 +20,12 @@ object ScaleMode {
   }
   
   @scala.inline
-  implicit class ScaleModeOps[Self <: ScaleMode] (val x: Self) extends AnyVal {
+  implicit class ScaleModeMutableBuilder[Self <: ScaleMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScaleMode(value: SCALE_MODES): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScaleMode(value: SCALE_MODES): Self = this.set("scaleMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleMode: Self = this.set("scaleMode", js.undefined)
+    def setScaleModeUndefined: Self = StObject.set(x, "scaleMode", js.undefined)
   }
 }

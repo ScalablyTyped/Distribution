@@ -1,14 +1,14 @@
 package typings.twilsock
 
 import typings.twilsock.channelMod.Channel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/websocketchannel", JSImport.Namespace)
-@js.native
-object websocketchannelMod extends js.Object {
+object websocketchannelMod {
   
+  @JSImport("twilsock/lib/websocketchannel", "WebSocketChannel")
   @js.native
   class WebSocketChannel protected () extends Channel {
     def this(url: String) = this()

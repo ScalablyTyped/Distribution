@@ -1,11 +1,12 @@
 package typings.clearbladejsClient.CbClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitOptions extends js.Object {
+trait InitOptions extends StObject {
   
   var URI: js.UndefOr[String] = js.native
   
@@ -46,102 +47,90 @@ object InitOptions {
   }
   
   @scala.inline
-  implicit class InitOptionsOps[Self <: InitOptions] (val x: Self) extends AnyVal {
+  implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallTimeoutUndefined: Self = StObject.set(x, "callTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallback(value: (/* error */ Boolean, /* response */ Resp) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSystemKey(value: String): Self = this.set("systemKey", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def setSystemSecret(value: String): Self = this.set("systemSecret", value.asInstanceOf[js.Any])
+    def setDefaultQoS(value: MessagingQOS): Self = StObject.set(x, "defaultQoS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setURI(value: String): Self = this.set("URI", value.asInstanceOf[js.Any])
+    def setDefaultQoSUndefined: Self = StObject.set(x, "defaultQoS", js.undefined)
     
     @scala.inline
-    def deleteURI: Self = this.set("URI", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallTimeout(value: Double): Self = this.set("callTimeout", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteCallTimeout: Self = this.set("callTimeout", js.undefined)
+    def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: (/* error */ Boolean, /* response */ Resp) => Unit): Self = this.set("callback", js.Any.fromFunction2(value))
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setMasterSecret(value: String): Self = StObject.set(x, "masterSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultQoS(value: MessagingQOS): Self = this.set("defaultQoS", value.asInstanceOf[js.Any])
+    def setMasterSecretUndefined: Self = StObject.set(x, "masterSecret", js.undefined)
     
     @scala.inline
-    def deleteDefaultQoS: Self = this.set("defaultQoS", js.undefined)
+    def setMessagingAuthPort(value: Double): Self = StObject.set(x, "messagingAuthPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setMessagingAuthPortUndefined: Self = StObject.set(x, "messagingAuthPort", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setMessagingPort(value: Double): Self = StObject.set(x, "messagingPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Boolean): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setMessagingPortUndefined: Self = StObject.set(x, "messagingPort", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setMessagingURI(value: String): Self = StObject.set(x, "messagingURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterSecret(value: String): Self = this.set("masterSecret", value.asInstanceOf[js.Any])
+    def setMessagingURIUndefined: Self = StObject.set(x, "messagingURI", js.undefined)
     
     @scala.inline
-    def deleteMasterSecret: Self = this.set("masterSecret", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagingAuthPort(value: Double): Self = this.set("messagingAuthPort", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteMessagingAuthPort: Self = this.set("messagingAuthPort", js.undefined)
+    def setRegisterUser(value: Boolean): Self = StObject.set(x, "registerUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagingPort(value: Double): Self = this.set("messagingPort", value.asInstanceOf[js.Any])
+    def setRegisterUserUndefined: Self = StObject.set(x, "registerUser", js.undefined)
     
     @scala.inline
-    def deleteMessagingPort: Self = this.set("messagingPort", js.undefined)
+    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagingURI(value: String): Self = this.set("messagingURI", value.asInstanceOf[js.Any])
+    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessagingURI: Self = this.set("messagingURI", js.undefined)
+    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setURIUndefined: Self = StObject.set(x, "URI", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setUseUser(value: APIUser): Self = StObject.set(x, "useUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisterUser(value: Boolean): Self = this.set("registerUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegisterUser: Self = this.set("registerUser", js.undefined)
-    
-    @scala.inline
-    def setUseUser(value: APIUser): Self = this.set("useUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseUser: Self = this.set("useUser", js.undefined)
+    def setUseUserUndefined: Self = StObject.set(x, "useUser", js.undefined)
   }
 }

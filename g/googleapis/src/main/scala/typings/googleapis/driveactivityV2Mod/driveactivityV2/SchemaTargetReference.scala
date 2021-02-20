@@ -1,5 +1,6 @@
 package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A lightweight reference to the target of activity.
   */
 @js.native
-trait SchemaTargetReference extends js.Object {
+trait SchemaTargetReference extends StObject {
   
   /**
     * The target is a Drive item.
@@ -29,30 +30,18 @@ object SchemaTargetReference {
   }
   
   @scala.inline
-  implicit class SchemaTargetReferenceOps[Self <: SchemaTargetReference] (val x: Self) extends AnyVal {
+  implicit class SchemaTargetReferenceMutableBuilder[Self <: SchemaTargetReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriveItem(value: SchemaDriveItemReference): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTeamDrive(value: SchemaTeamDriveReference): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveItem(value: SchemaDriveItemReference): Self = this.set("driveItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriveItem: Self = this.set("driveItem", js.undefined)
-    
-    @scala.inline
-    def setTeamDrive(value: SchemaTeamDriveReference): Self = this.set("teamDrive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeamDrive: Self = this.set("teamDrive", js.undefined)
+    def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
   }
 }

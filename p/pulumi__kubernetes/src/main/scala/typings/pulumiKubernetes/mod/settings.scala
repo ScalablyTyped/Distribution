@@ -5,17 +5,16 @@ import typings.pulumiKubernetes.podPresetMod.PodPresetArgs
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes", "settings")
-@js.native
-object settings extends js.Object {
+object settings {
   
-  @js.native
-  object v1alpha1 extends js.Object {
+  object v1alpha1 {
     
+    @JSImport("@pulumi/kubernetes", "settings.v1alpha1.PodPreset")
     @js.native
     class PodPreset protected ()
       extends typings.pulumiKubernetes.settingsMod.v1alpha1.PodPreset {
@@ -32,8 +31,7 @@ object settings extends js.Object {
       def this(name: String, args: PodPresetArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object PodPreset extends js.Object {
+    object PodPreset {
       
       /**
         * Get an existing PodPreset resource's state with the given name, ID, and optional extra
@@ -43,16 +41,23 @@ object settings extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "settings.v1alpha1.PodPreset.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.podPresetMod.PodPreset = js.native
+      @JSImport("@pulumi/kubernetes", "settings.v1alpha1.PodPreset.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.podPresetMod.PodPreset = js.native
       
       /**
         * Returns true if the given object is an instance of PodPreset.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "settings.v1alpha1.PodPreset.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/settings/v1alpha1/podPreset.PodPreset */ Boolean = js.native
     }
     
+    @JSImport("@pulumi/kubernetes", "settings.v1alpha1.PodPresetList")
     @js.native
     class PodPresetList protected ()
       extends typings.pulumiKubernetes.settingsMod.v1alpha1.PodPresetList {
@@ -69,8 +74,7 @@ object settings extends js.Object {
       def this(name: String, args: PodPresetListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object PodPresetList extends js.Object {
+    object PodPresetList {
       
       /**
         * Get an existing PodPresetList resource's state with the given name, ID, and optional extra
@@ -80,13 +84,19 @@ object settings extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "settings.v1alpha1.PodPresetList.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.podPresetListMod.PodPresetList = js.native
+      @JSImport("@pulumi/kubernetes", "settings.v1alpha1.PodPresetList.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.podPresetListMod.PodPresetList = js.native
       
       /**
         * Returns true if the given object is an instance of PodPresetList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "settings.v1alpha1.PodPresetList.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/settings/v1alpha1/podPresetList.PodPresetList */ Boolean = js.native
     }
   }

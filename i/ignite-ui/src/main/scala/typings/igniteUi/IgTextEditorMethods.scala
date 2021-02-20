@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgTextEditorMethods extends js.Object {
+trait IgTextEditorMethods extends StObject {
   
   /**
     * Changes the all locales into the widget element to the language specified in [options.language](ui.igtexteditor#options:language)

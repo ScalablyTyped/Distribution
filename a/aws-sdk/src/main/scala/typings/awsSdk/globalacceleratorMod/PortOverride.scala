@@ -1,11 +1,12 @@
 package typings.awsSdk.globalacceleratorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortOverride extends js.Object {
+trait PortOverride extends StObject {
   
   /**
     * The endpoint port that you want a listener port to be mapped to. This is the port on the endpoint, such as the Application Load Balancer or Amazon EC2 instance.
@@ -26,30 +27,18 @@ object PortOverride {
   }
   
   @scala.inline
-  implicit class PortOverrideOps[Self <: PortOverride] (val x: Self) extends AnyVal {
+  implicit class PortOverrideMutableBuilder[Self <: PortOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointPort(value: PortNumber): Self = StObject.set(x, "EndpointPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointPortUndefined: Self = StObject.set(x, "EndpointPort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListenerPort(value: PortNumber): Self = StObject.set(x, "ListenerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointPort(value: PortNumber): Self = this.set("EndpointPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpointPort: Self = this.set("EndpointPort", js.undefined)
-    
-    @scala.inline
-    def setListenerPort(value: PortNumber): Self = this.set("ListenerPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListenerPort: Self = this.set("ListenerPort", js.undefined)
+    def setListenerPortUndefined: Self = StObject.set(x, "ListenerPort", js.undefined)
   }
 }

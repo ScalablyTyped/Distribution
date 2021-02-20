@@ -1,11 +1,12 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloseConnectionOptions extends js.Object {
+trait CloseConnectionOptions extends StObject {
   
   /**
     * If drop is false, then the connection is returned to the pool for reuse.
@@ -25,21 +26,9 @@ object CloseConnectionOptions {
   }
   
   @scala.inline
-  implicit class CloseConnectionOptionsOps[Self <: CloseConnectionOptions] (val x: Self) extends AnyVal {
+  implicit class CloseConnectionOptionsMutableBuilder[Self <: CloseConnectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDrop(value: Boolean): Self = this.set("drop", value.asInstanceOf[js.Any])
+    def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
   }
 }

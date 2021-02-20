@@ -1,11 +1,12 @@
 package typings.jsrsasign.jsrsasign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RSAPrivateKey extends js.Object {
+trait RSAPrivateKey extends StObject {
   
   var co: String = js.native
   
@@ -32,42 +33,30 @@ object RSAPrivateKey {
   }
   
   @scala.inline
-  implicit class RSAPrivateKeyOps[Self <: RSAPrivateKey] (val x: Self) extends AnyVal {
+  implicit class RSAPrivateKeyMutableBuilder[Self <: RSAPrivateKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCo(value: String): Self = StObject.set(x, "co", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDp(value: String): Self = StObject.set(x, "dp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCo(value: String): Self = this.set("co", value.asInstanceOf[js.Any])
+    def setDq(value: String): Self = StObject.set(x, "dq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDp(value: String): Self = this.set("dp", value.asInstanceOf[js.Any])
+    def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDq(value: String): Self = this.set("dq", value.asInstanceOf[js.Any])
+    def setP(value: String): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: String): Self = this.set("e", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setN(value: String): Self = this.set("n", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP(value: String): Self = this.set("p", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
   }
 }

@@ -3,13 +3,16 @@ package typings.openfin
 import typings.openfin.baseMod.Base
 import typings.openfin.writeRequestMod.WriteAnyRequestType
 import typings.openfin.writeRequestMod.WriteRequestType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openfin/_v2/api/clipboard/clipboard", JSImport.Namespace)
-@js.native
-object clipboardMod extends js.Object {
+object clipboardMod {
+  
+  @JSImport("openfin/_v2/api/clipboard/clipboard", JSImport.Default)
+  @js.native
+  class default () extends Clipboard
   
   @js.native
   trait Clipboard extends Base {
@@ -82,7 +85,4 @@ object clipboardMod extends js.Object {
       */
     def writeText(writeObj: WriteRequestType): js.Promise[Unit] = js.native
   }
-  
-  @js.native
-  class default () extends Clipboard
 }

@@ -1,12 +1,13 @@
 package typings.serverless.awsProviderMod
 
 import typings.serverless.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Output extends js.Object {
+trait Output extends StObject {
   
   var Condition: js.UndefOr[js.Any] = js.native
   
@@ -25,39 +26,27 @@ object Output {
   }
   
   @scala.inline
-  implicit class OutputOps[Self <: Output] (val x: Self) extends AnyVal {
+  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: js.Any): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCondition(value: js.Any): Self = this.set("Condition", value.asInstanceOf[js.Any])
+    def setExport(value: Name): Self = StObject.set(x, "Export", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCondition: Self = this.set("Condition", js.undefined)
+    def setExportUndefined: Self = StObject.set(x, "Export", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
-    
-    @scala.inline
-    def setExport(value: Name): Self = this.set("Export", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExport: Self = this.set("Export", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

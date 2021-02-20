@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryFilter extends js.Object {
+trait QueryFilter extends StObject {
   
   /**
     * Used to limit data to that which has arrived since the last execution of the action.
@@ -21,24 +22,12 @@ object QueryFilter {
   }
   
   @scala.inline
-  implicit class QueryFilterOps[Self <: QueryFilter] (val x: Self) extends AnyVal {
+  implicit class QueryFilterMutableBuilder[Self <: QueryFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeltaTime(value: DeltaTime): Self = StObject.set(x, "deltaTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeltaTime(value: DeltaTime): Self = this.set("deltaTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeltaTime: Self = this.set("deltaTime", js.undefined)
+    def setDeltaTimeUndefined: Self = StObject.set(x, "deltaTime", js.undefined)
   }
 }

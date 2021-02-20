@@ -1,11 +1,12 @@
 package typings.tslint.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Groupedimports extends js.Object {
+trait Groupedimports extends StObject {
   
   var `grouped-imports`: Boolean = js.native
   
@@ -33,30 +34,18 @@ object Groupedimports {
   }
   
   @scala.inline
-  implicit class GroupedimportsOps[Self <: Groupedimports] (val x: Self) extends AnyVal {
+  implicit class GroupedimportsMutableBuilder[Self <: Groupedimports] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setGrouped-imports`(value: Boolean): Self = StObject.set(x, "grouped-imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setImport-sources-order`(value: String): Self = StObject.set(x, "import-sources-order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setModule-source-path`(value: String): Self = StObject.set(x, "module-source-path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setGrouped-imports`(value: Boolean): Self = this.set("grouped-imports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setImport-sources-order`(value: String): Self = this.set("import-sources-order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setModule-source-path`(value: String): Self = this.set("module-source-path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setNamed-imports-order`(value: String): Self = this.set("named-imports-order", value.asInstanceOf[js.Any])
+    def `setNamed-imports-order`(value: String): Self = StObject.set(x, "named-imports-order", value.asInstanceOf[js.Any])
   }
 }

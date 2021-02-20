@@ -1,5 +1,6 @@
 package typings.reactNative
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.reactNativeStrings.json
   - typings.reactNative.reactNativeStrings.text
 */
-trait XMLHttpRequestResponseType extends js.Object
+trait XMLHttpRequestResponseType extends StObject
 object XMLHttpRequestResponseType {
   
   @scala.inline

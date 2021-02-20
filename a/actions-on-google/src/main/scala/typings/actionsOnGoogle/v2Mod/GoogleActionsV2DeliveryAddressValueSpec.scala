@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2DeliveryAddressValueSpec extends js.Object {
+trait GoogleActionsV2DeliveryAddressValueSpec extends StObject {
   
   /**
     * Configuration for delivery address dialog.
@@ -21,24 +22,12 @@ object GoogleActionsV2DeliveryAddressValueSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2DeliveryAddressValueSpecOps[Self <: GoogleActionsV2DeliveryAddressValueSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2DeliveryAddressValueSpecMutableBuilder[Self <: GoogleActionsV2DeliveryAddressValueSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressOptions(value: GoogleActionsV2DeliveryAddressValueSpecAddressOptions): Self = StObject.set(x, "addressOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddressOptions(value: GoogleActionsV2DeliveryAddressValueSpecAddressOptions): Self = this.set("addressOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddressOptions: Self = this.set("addressOptions", js.undefined)
+    def setAddressOptionsUndefined: Self = StObject.set(x, "addressOptions", js.undefined)
   }
 }

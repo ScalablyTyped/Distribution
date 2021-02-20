@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationEventFieldType extends js.Object {
+trait NotificationEventFieldType extends StObject {
   
   /**
     * Gets or sets the unique identifier of this field type.
@@ -41,39 +42,27 @@ object NotificationEventFieldType {
   }
   
   @scala.inline
-  implicit class NotificationEventFieldTypeOps[Self <: NotificationEventFieldType] (val x: Self) extends AnyVal {
+  implicit class NotificationEventFieldTypeMutableBuilder[Self <: NotificationEventFieldType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperatorConstraints(value: js.Array[OperatorConstraint]): Self = StObject.set(x, "operatorConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperatorConstraintsVarargs(value: OperatorConstraint*): Self = StObject.set(x, "operatorConstraints", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOperators(value: js.Array[NotificationEventFieldOperator]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorConstraintsVarargs(value: OperatorConstraint*): Self = this.set("operatorConstraints", js.Array(value :_*))
+    def setOperatorsVarargs(value: NotificationEventFieldOperator*): Self = StObject.set(x, "operators", js.Array(value :_*))
     
     @scala.inline
-    def setOperatorConstraints(value: js.Array[OperatorConstraint]): Self = this.set("operatorConstraints", value.asInstanceOf[js.Any])
+    def setSubscriptionFieldType(value: SubscriptionFieldType): Self = StObject.set(x, "subscriptionFieldType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorsVarargs(value: NotificationEventFieldOperator*): Self = this.set("operators", js.Array(value :_*))
-    
-    @scala.inline
-    def setOperators(value: js.Array[NotificationEventFieldOperator]): Self = this.set("operators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionFieldType(value: SubscriptionFieldType): Self = this.set("subscriptionFieldType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: ValueDefinition): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: ValueDefinition): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

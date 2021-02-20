@@ -14,14 +14,14 @@ import typings.babylonjs.solidParticleMod.DepthSortedParticle
 import typings.babylonjs.solidParticleMod.SolidParticle
 import typings.babylonjs.solidParticleMod.SolidParticleVertex
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/solidParticleSystem", JSImport.Namespace)
-@js.native
-object solidParticleSystemMod extends js.Object {
+object solidParticleSystemMod {
   
+  @JSImport("babylonjs/Particles/solidParticleSystem", "SolidParticleSystem")
   @js.native
   class SolidParticleSystem protected () extends IDisposable {
     /**

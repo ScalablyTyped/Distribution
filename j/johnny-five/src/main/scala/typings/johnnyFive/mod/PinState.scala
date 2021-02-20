@@ -1,11 +1,12 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PinState extends js.Object {
+trait PinState extends StObject {
   
   var analogChannel: Double = js.native
   
@@ -32,36 +33,24 @@ object PinState {
   }
   
   @scala.inline
-  implicit class PinStateOps[Self <: PinState] (val x: Self) extends AnyVal {
+  implicit class PinStateMutableBuilder[Self <: PinState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalogChannel(value: Double): Self = StObject.set(x, "analogChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReport(value: Double): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalogChannel(value: Double): Self = this.set("analogChannel", value.asInstanceOf[js.Any])
+    def setSupportedModes(value: js.Array[Double]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: Double): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setSupportedModesVarargs(value: Double*): Self = StObject.set(x, "supportedModes", js.Array(value :_*))
     
     @scala.inline
-    def setReport(value: Double): Self = this.set("report", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedModesVarargs(value: Double*): Self = this.set("supportedModes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedModes(value: js.Array[Double]): Self = this.set("supportedModes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

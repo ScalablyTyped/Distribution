@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EffectivePolicy extends js.Object {
+trait EffectivePolicy extends StObject {
   
   /**
     * The time of the last update to this policy.
@@ -36,42 +37,30 @@ object EffectivePolicy {
   }
   
   @scala.inline
-  implicit class EffectivePolicyOps[Self <: EffectivePolicy] (val x: Self) extends AnyVal {
+  implicit class EffectivePolicyMutableBuilder[Self <: EffectivePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyContent(value: PolicyContent): Self = StObject.set(x, "PolicyContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTimestamp(value: Timestamp): Self = this.set("LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    def setPolicyContentUndefined: Self = StObject.set(x, "PolicyContent", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTimestamp: Self = this.set("LastUpdatedTimestamp", js.undefined)
+    def setPolicyType(value: EffectivePolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyContent(value: PolicyContent): Self = this.set("PolicyContent", value.asInstanceOf[js.Any])
+    def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
     
     @scala.inline
-    def deletePolicyContent: Self = this.set("PolicyContent", js.undefined)
+    def setTargetId(value: PolicyTargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyType(value: EffectivePolicyType): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyType: Self = this.set("PolicyType", js.undefined)
-    
-    @scala.inline
-    def setTargetId(value: PolicyTargetId): Self = this.set("TargetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetId: Self = this.set("TargetId", js.undefined)
+    def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
   }
 }

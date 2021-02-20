@@ -1,11 +1,12 @@
 package typings.prettier.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SupportLanguage extends js.Object {
+trait SupportLanguage extends StObject {
   
   var aceMode: js.UndefOr[String] = js.native
   
@@ -42,105 +43,93 @@ object SupportLanguage {
   }
   
   @scala.inline
-  implicit class SupportLanguageOps[Self <: SupportLanguage] (val x: Self) extends AnyVal {
+  implicit class SupportLanguageMutableBuilder[Self <: SupportLanguage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAceMode(value: String): Self = StObject.set(x, "aceMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAceModeUndefined: Self = StObject.set(x, "aceMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
     @scala.inline
-    def setParsersVarargs(value: (BuiltInParserName | String)*): Self = this.set("parsers", js.Array(value :_*))
+    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
     @scala.inline
-    def setParsers(value: js.Array[BuiltInParserName | String]): Self = this.set("parsers", value.asInstanceOf[js.Any])
+    def setCodemirrorMimeType(value: String): Self = StObject.set(x, "codemirrorMimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAceMode(value: String): Self = this.set("aceMode", value.asInstanceOf[js.Any])
+    def setCodemirrorMimeTypeUndefined: Self = StObject.set(x, "codemirrorMimeType", js.undefined)
     
     @scala.inline
-    def deleteAceMode: Self = this.set("aceMode", js.undefined)
+    def setCodemirrorMode(value: String): Self = StObject.set(x, "codemirrorMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    def setCodemirrorModeUndefined: Self = StObject.set(x, "codemirrorMode", js.undefined)
     
     @scala.inline
-    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAliases: Self = this.set("aliases", js.undefined)
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setCodemirrorMimeType(value: String): Self = this.set("codemirrorMimeType", value.asInstanceOf[js.Any])
+    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def deleteCodemirrorMimeType: Self = this.set("codemirrorMimeType", js.undefined)
+    def setFilenames(value: js.Array[String]): Self = StObject.set(x, "filenames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodemirrorMode(value: String): Self = this.set("codemirrorMode", value.asInstanceOf[js.Any])
+    def setFilenamesUndefined: Self = StObject.set(x, "filenames", js.undefined)
     
     @scala.inline
-    def deleteCodemirrorMode: Self = this.set("codemirrorMode", js.undefined)
+    def setFilenamesVarargs(value: String*): Self = StObject.set(x, "filenames", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setLinguistLanguageId(value: Double): Self = StObject.set(x, "linguistLanguageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilenamesVarargs(value: String*): Self = this.set("filenames", js.Array(value :_*))
+    def setLinguistLanguageIdUndefined: Self = StObject.set(x, "linguistLanguageId", js.undefined)
     
     @scala.inline
-    def setFilenames(value: js.Array[String]): Self = this.set("filenames", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilenames: Self = this.set("filenames", js.undefined)
+    def setParsers(value: js.Array[BuiltInParserName | String]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setParsersVarargs(value: (BuiltInParserName | String)*): Self = StObject.set(x, "parsers", js.Array(value :_*))
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinguistLanguageId(value: Double): Self = this.set("linguistLanguageId", value.asInstanceOf[js.Any])
+    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
     @scala.inline
-    def deleteLinguistLanguageId: Self = this.set("linguistLanguageId", js.undefined)
+    def setTmScope(value: String): Self = StObject.set(x, "tmScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince(value: String): Self = this.set("since", value.asInstanceOf[js.Any])
+    def setTmScopeUndefined: Self = StObject.set(x, "tmScope", js.undefined)
     
     @scala.inline
-    def deleteSince: Self = this.set("since", js.undefined)
+    def setVscodeLanguageIds(value: js.Array[String]): Self = StObject.set(x, "vscodeLanguageIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTmScope(value: String): Self = this.set("tmScope", value.asInstanceOf[js.Any])
+    def setVscodeLanguageIdsUndefined: Self = StObject.set(x, "vscodeLanguageIds", js.undefined)
     
     @scala.inline
-    def deleteTmScope: Self = this.set("tmScope", js.undefined)
-    
-    @scala.inline
-    def setVscodeLanguageIdsVarargs(value: String*): Self = this.set("vscodeLanguageIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setVscodeLanguageIds(value: js.Array[String]): Self = this.set("vscodeLanguageIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVscodeLanguageIds: Self = this.set("vscodeLanguageIds", js.undefined)
+    def setVscodeLanguageIdsVarargs(value: String*): Self = StObject.set(x, "vscodeLanguageIds", js.Array(value :_*))
   }
 }

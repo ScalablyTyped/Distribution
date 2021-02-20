@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhotoOrientation extends js.Object
+sealed trait PhotoOrientation extends StObject
 @JSGlobal("Windows.Storage.FileProperties.PhotoOrientation")
 @js.native
-object PhotoOrientation extends js.Object {
+object PhotoOrientation extends StObject {
   
   @js.native
   sealed trait flipHorizontal extends PhotoOrientation

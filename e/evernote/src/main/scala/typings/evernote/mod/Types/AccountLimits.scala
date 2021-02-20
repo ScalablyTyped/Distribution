@@ -1,13 +1,14 @@
 package typings.evernote.mod.Types
 
 import typings.evernote.anon.NoteResourceCountMax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.AccountLimits")
 @js.native
-class AccountLimits () extends js.Object {
+class AccountLimits () extends StObject {
   def this(args: NoteResourceCountMax) = this()
   
   var noteResourceCountMax: js.UndefOr[Double] = js.native

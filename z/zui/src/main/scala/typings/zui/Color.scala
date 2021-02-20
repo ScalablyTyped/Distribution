@@ -1,5 +1,6 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * color
   */
 @js.native
-trait Color extends js.Object {
+trait Color extends StObject {
   
   def contrast(dark: String, light: String, threshold: Double): String = js.native
   

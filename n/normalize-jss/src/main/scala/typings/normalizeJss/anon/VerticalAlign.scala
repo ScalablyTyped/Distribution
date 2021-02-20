@@ -1,11 +1,12 @@
 package typings.normalizeJss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VerticalAlign extends js.Object {
+trait VerticalAlign extends StObject {
   
   var borderStyle: String = js.native
   
@@ -20,24 +21,12 @@ object VerticalAlign {
   }
   
   @scala.inline
-  implicit class VerticalAlignOps[Self <: VerticalAlign] (val x: Self) extends AnyVal {
+  implicit class VerticalAlignMutableBuilder[Self <: VerticalAlign] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderStyle(value: String): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBorderStyle(value: String): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalAlign(value: String): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
   }
 }

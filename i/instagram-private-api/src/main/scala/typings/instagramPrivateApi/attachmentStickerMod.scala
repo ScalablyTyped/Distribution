@@ -1,14 +1,14 @@
 package typings.instagramPrivateApi
 
 import typings.instagramPrivateApi.instaStickerMod.InstaSticker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/sticker-builder/stickers/attachment.sticker", JSImport.Namespace)
-@js.native
-object attachmentStickerMod extends js.Object {
+object attachmentStickerMod {
   
+  @JSImport("instagram-private-api/dist/sticker-builder/stickers/attachment.sticker", "AttachmentSticker")
   @js.native
   class AttachmentSticker () extends InstaSticker {
     

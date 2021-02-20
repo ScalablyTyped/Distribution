@@ -1,11 +1,12 @@
 package typings.primereact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectionOriginalEvent extends js.Object {
+trait DirectionOriginalEvent extends StObject {
   
   var direction: String = js.native
   
@@ -24,36 +25,24 @@ object DirectionOriginalEvent {
   }
   
   @scala.inline
-  implicit class DirectionOriginalEventOps[Self <: DirectionOriginalEvent] (val x: Self) extends AnyVal {
+  implicit class DirectionOriginalEventMutableBuilder[Self <: DirectionOriginalEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: js.Array[_]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "source", js.Array(value :_*))
     
     @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
+    def setTarget(value: js.Array[_]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceVarargs(value: js.Any*): Self = this.set("source", js.Array(value :_*))
-    
-    @scala.inline
-    def setSource(value: js.Array[_]): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetVarargs(value: js.Any*): Self = this.set("target", js.Array(value :_*))
-    
-    @scala.inline
-    def setTarget(value: js.Array[_]): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTargetVarargs(value: js.Any*): Self = StObject.set(x, "target", js.Array(value :_*))
   }
 }

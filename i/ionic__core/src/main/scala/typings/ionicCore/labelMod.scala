@@ -8,14 +8,14 @@ import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/label/label", JSImport.Namespace)
-@js.native
-object labelMod extends js.Object {
+object labelMod {
   
+  @JSImport("@ionic/core/dist/types/components/label/label", "Label")
   @js.native
   class Label () extends ComponentInterface {
     

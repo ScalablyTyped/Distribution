@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEventTopicsResult extends js.Object {
+trait DescribeEventTopicsResult extends StObject {
   
   /**
     * A list of SNS topic names that receive status messages from the specified Directory ID.
@@ -21,27 +22,15 @@ object DescribeEventTopicsResult {
   }
   
   @scala.inline
-  implicit class DescribeEventTopicsResultOps[Self <: DescribeEventTopicsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeEventTopicsResultMutableBuilder[Self <: DescribeEventTopicsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventTopics(value: EventTopics): Self = StObject.set(x, "EventTopics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventTopicsUndefined: Self = StObject.set(x, "EventTopics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventTopicsVarargs(value: EventTopic*): Self = this.set("EventTopics", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventTopics(value: EventTopics): Self = this.set("EventTopics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventTopics: Self = this.set("EventTopics", js.undefined)
+    def setEventTopicsVarargs(value: EventTopic*): Self = StObject.set(x, "EventTopics", js.Array(value :_*))
   }
 }

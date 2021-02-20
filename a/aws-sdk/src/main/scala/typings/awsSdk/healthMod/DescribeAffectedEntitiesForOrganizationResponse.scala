@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAffectedEntitiesForOrganizationResponse extends js.Object {
+trait DescribeAffectedEntitiesForOrganizationResponse extends StObject {
   
   /**
     * A JSON set of elements including the awsAccountId and its entityArn, entityValue and its entityArn, lastUpdatedTime, and statusCode.
@@ -31,42 +32,30 @@ object DescribeAffectedEntitiesForOrganizationResponse {
   }
   
   @scala.inline
-  implicit class DescribeAffectedEntitiesForOrganizationResponseOps[Self <: DescribeAffectedEntitiesForOrganizationResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAffectedEntitiesForOrganizationResponseMutableBuilder[Self <: DescribeAffectedEntitiesForOrganizationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: EntityList): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntitiesVarargs(value: AffectedEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def setEntitiesVarargs(value: AffectedEntity*): Self = this.set("entities", js.Array(value :_*))
+    def setFailedSet(value: DescribeAffectedEntitiesForOrganizationFailedSet): Self = StObject.set(x, "failedSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: EntityList): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setFailedSetUndefined: Self = StObject.set(x, "failedSet", js.undefined)
     
     @scala.inline
-    def deleteEntities: Self = this.set("entities", js.undefined)
+    def setFailedSetVarargs(value: OrganizationAffectedEntitiesErrorItem*): Self = StObject.set(x, "failedSet", js.Array(value :_*))
     
     @scala.inline
-    def setFailedSetVarargs(value: OrganizationAffectedEntitiesErrorItem*): Self = this.set("failedSet", js.Array(value :_*))
+    def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedSet(value: DescribeAffectedEntitiesForOrganizationFailedSet): Self = this.set("failedSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedSet: Self = this.set("failedSet", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: nextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

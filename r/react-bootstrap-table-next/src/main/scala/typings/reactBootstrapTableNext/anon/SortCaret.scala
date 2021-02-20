@@ -1,12 +1,13 @@
 package typings.reactBootstrapTableNext.anon
 
 import typings.reactBootstrapTableNext.mod.SortOrder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortCaret extends js.Object {
+trait SortCaret extends StObject {
   
   var dataField: js.UndefOr[js.Any] = js.native
   
@@ -25,39 +26,27 @@ object SortCaret {
   }
   
   @scala.inline
-  implicit class SortCaretOps[Self <: SortCaret] (val x: Self) extends AnyVal {
+  implicit class SortCaretMutableBuilder[Self <: SortCaret] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataField(value: js.Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: SortOrder): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setSortCaret(value: js.Any): Self = StObject.set(x, "sortCaret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataField(value: js.Any): Self = this.set("dataField", value.asInstanceOf[js.Any])
+    def setSortCaretUndefined: Self = StObject.set(x, "sortCaret", js.undefined)
     
     @scala.inline
-    def deleteDataField: Self = this.set("dataField", js.undefined)
+    def setSortFunc(value: js.Any): Self = StObject.set(x, "sortFunc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortCaret(value: js.Any): Self = this.set("sortCaret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortCaret: Self = this.set("sortCaret", js.undefined)
-    
-    @scala.inline
-    def setSortFunc(value: js.Any): Self = this.set("sortFunc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortFunc: Self = this.set("sortFunc", js.undefined)
+    def setSortFuncUndefined: Self = StObject.set(x, "sortFunc", js.undefined)
   }
 }

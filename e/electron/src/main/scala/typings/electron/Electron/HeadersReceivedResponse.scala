@@ -1,12 +1,13 @@
 package typings.electron.Electron
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeadersReceivedResponse extends js.Object {
+trait HeadersReceivedResponse extends StObject {
   
   var cancel: js.UndefOr[Boolean] = js.native
   
@@ -30,36 +31,24 @@ object HeadersReceivedResponse {
   }
   
   @scala.inline
-  implicit class HeadersReceivedResponseOps[Self <: HeadersReceivedResponse] (val x: Self) extends AnyVal {
+  implicit class HeadersReceivedResponseMutableBuilder[Self <: HeadersReceivedResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseHeaders(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setStatusLine(value: String): Self = StObject.set(x, "statusLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseHeaders(value: Record[String, String | js.Array[String]]): Self = this.set("responseHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseHeaders: Self = this.set("responseHeaders", js.undefined)
-    
-    @scala.inline
-    def setStatusLine(value: String): Self = this.set("statusLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusLine: Self = this.set("statusLine", js.undefined)
+    def setStatusLineUndefined: Self = StObject.set(x, "statusLine", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KmlMouseEvent extends js.Object {
+trait KmlMouseEvent extends StObject {
   
   var featureData: KmlFeatureData = js.native
   
@@ -22,27 +23,15 @@ object KmlMouseEvent {
   }
   
   @scala.inline
-  implicit class KmlMouseEventOps[Self <: KmlMouseEvent] (val x: Self) extends AnyVal {
+  implicit class KmlMouseEventMutableBuilder[Self <: KmlMouseEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatureData(value: KmlFeatureData): Self = StObject.set(x, "featureData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFeatureData(value: KmlFeatureData): Self = this.set("featureData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLatLng(value: LatLng): Self = this.set("latLng", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPixelOffset(value: Size): Self = this.set("pixelOffset", value.asInstanceOf[js.Any])
+    def setPixelOffset(value: Size): Self = StObject.set(x, "pixelOffset", value.asInstanceOf[js.Any])
   }
 }

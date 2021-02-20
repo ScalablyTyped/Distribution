@@ -3,19 +3,17 @@ package typings.bardjs
 import typings.chai.Chai.AssertionError
 import typings.mocha.Mocha.Context
 import typings.mocha.Mocha.Runner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   /**
     * Module for bardjs functions
     */
-  @js.native
-  object bard extends js.Object {
+  object bard {
     
     /**
       * Add names of globals to list of OK globals for this mocha spec
@@ -23,6 +21,8 @@ object global extends js.Object {
       * NB: Turn off browser-sync else mocha detects the browser-sync globals
       * like ` ___browserSync___`
       */
+    @JSGlobal("bard.addGlobals")
+    @js.native
     def addGlobals(globals: js.Any*): Unit = js.native
     
     /**
@@ -35,11 +35,15 @@ object global extends js.Object {
       * DO NOT USE IF YOU NEED THE REAL ROUTER SERVICES!
       * Fall back to `angular.mock.module(...)` or just `module(...)`
       */
+    @JSGlobal("bard.appModule")
+    @js.native
     def appModule(fns: (String | js.Function | js.Object)*): js.Function0[Unit] = js.native
     
     /**
       * Assert a failure in mocha, without condition
       */
+    @JSGlobal("bard.assertFail")
+    @js.native
     def assertFail(message: String): AssertionError = js.native
     
     /**
@@ -47,17 +51,25 @@ object global extends js.Object {
       * Also adds fakeLogger to the end of the definition
       * Use it as you would the ngMocks#module method
       */
+    @JSGlobal("bard.asyncModule")
+    @js.native
     def asyncModule(fns: (String | js.Function | js.Object)*): js.Function0[Unit] = js.native
     
     /**
       * Get or set bard debugging flag
       */
+    @JSGlobal("bard.debugging")
+    @js.native
     def debugging(): Boolean = js.native
+    @JSGlobal("bard.debugging")
+    @js.native
     def debugging(newFlag: js.Any): Boolean = js.native
     
     /**
       * Registers a fake logger service that you can spy on
       */
+    @JSGlobal("bard.fakeLogger")
+    @js.native
     def fakeLogger(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = js.native
@@ -65,6 +77,8 @@ object global extends js.Object {
     /**
       * Registers a fake route helper provider service that you can spy on
       */
+    @JSGlobal("bard.fakeRouteHelperProvider")
+    @js.native
     def fakeRouteHelperProvider(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = js.native
@@ -75,6 +89,8 @@ object global extends js.Object {
       * which runs on every test otherwise.
       * Make sure this goes before the inject in the spec.
       */
+    @JSGlobal("bard.fakeRouteProvider")
+    @js.native
     def fakeRouteProvider(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = js.native
@@ -85,6 +101,8 @@ object global extends js.Object {
       * which runs on every test otherwise.
       * Make sure this goes before the inject in the spec.
       */
+    @JSGlobal("bard.fakeStateProvider")
+    @js.native
     def fakeStateProvider(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = js.native
@@ -92,6 +110,8 @@ object global extends js.Object {
     /**
       * Registers a fake toastr service that you can spy on
       */
+    @JSGlobal("bard.fakeToastr")
+    @js.native
     def fakeToastr(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): Unit = js.native
@@ -105,11 +125,14 @@ object global extends js.Object {
       *
       *  Could restore $q with $qReal in which case don't need to flush.
       */
-    @JSName("$httpBackend")
+    @JSGlobal("bard.$httpBackend")
+    @js.native
     def httpBackend(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): js.Any = js.native
     
+    @JSGlobal("bard.inject")
+    @js.native
     def inject(context: js.UndefOr[scala.Nothing], args: String*): Unit = js.native
     /**
       * Inject selected services into the windows object during test
@@ -128,12 +151,18 @@ object global extends js.Object {
       *    [strings]   - same string array you'd use to set fn.$inject
       *    (...string) - string arguments turned into a string array
       */
+    @JSGlobal("bard.inject")
+    @js.native
     def inject(context: js.Function, args: String*): Unit = js.native
+    @JSGlobal("bard.inject")
+    @js.native
     def inject(context: Context, args: String*): Unit = js.native
     
     /**
       * Write to console if bard debugging flag is on
       */
+    @JSGlobal("bard.log")
+    @js.native
     def log(message: js.Any): Unit = js.native
     
     /**
@@ -142,6 +171,8 @@ object global extends js.Object {
       *     var runner = mocha.run();
       *     bard.mochaRunnerListener(runner);
       */
+    @JSGlobal("bard.mochaRunnerListener")
+    @js.native
     def mochaRunnerListener(runner: Runner): Unit = js.native
     
     /**
@@ -162,6 +193,8 @@ object global extends js.Object {
       * If there is a config entry that is NOT a member of the service
       * add mocked function to the service using the config value
       */
+    @JSGlobal("bard.mockService")
+    @js.native
     def mockService(service: js.Any, config: js.Any): js.Any = js.native
     
     /**
@@ -169,7 +202,8 @@ object global extends js.Object {
       *  obviating the need to flush $http and $q queues
       *  at the expense of ability to control $q timing.
       */
-    @JSName("$q")
+    @JSGlobal("bard.$q")
+    @js.native
     def q(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): js.Any = js.native
@@ -181,12 +215,16 @@ object global extends js.Object {
       * Ex: replaceAccentChars(a.Name) < replaceAccentChars(b.Name)
       * instead of:            a.Name  <                    b.Name
       */
+    @JSGlobal("bard.replaceAccentChars")
+    @js.native
     def replaceAccentChars(text: String): String = js.native
     
     /**
       *  Assert that there are no outstanding HTTP requests after test is complete
       *  For use with ngMocks; doesn't work for async server integration tests
       */
+    @JSGlobal("bard.verifyNoOutstandingHttpRequests")
+    @js.native
     def verifyNoOutstandingHttpRequests(): Unit = js.native
     
     /**
@@ -195,6 +233,8 @@ object global extends js.Object {
       * The try/catch then calls the ambient "done" function
       * in the appropriate way for both success and failure
       */
+    @JSGlobal("bard.wrapWithDone")
+    @js.native
     def wrapWithDone(callback: js.Function, done: js.Function): js.Function = js.native
   }
 }

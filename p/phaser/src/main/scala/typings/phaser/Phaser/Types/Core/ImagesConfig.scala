@@ -1,11 +1,12 @@
 package typings.phaser.Phaser.Types.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImagesConfig extends js.Object {
+trait ImagesConfig extends StObject {
   
   /**
     * URL to use for the 'default' texture.
@@ -26,30 +27,18 @@ object ImagesConfig {
   }
   
   @scala.inline
-  implicit class ImagesConfigOps[Self <: ImagesConfig] (val x: Self) extends AnyVal {
+  implicit class ImagesConfigMutableBuilder[Self <: ImagesConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
-    
-    @scala.inline
-    def setMissing(value: String): Self = this.set("missing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMissing: Self = this.set("missing", js.undefined)
+    def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
   }
 }

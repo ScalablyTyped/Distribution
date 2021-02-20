@@ -1,5 +1,6 @@
 package typings.nodeSass.mod.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +18,12 @@ trait Value extends ReturnValue
 object Value {
   
   @scala.inline
+  def Boolean(getValue: () => scala.Boolean): typings.nodeSass.mod.types.Boolean = {
+    val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
+    __obj.asInstanceOf[typings.nodeSass.mod.types.Boolean]
+  }
+  
+  @scala.inline
   def Color(
     getA: () => Double,
     getB: () => Double,
@@ -26,21 +33,9 @@ object Value {
     setB: Double => Unit,
     setG: Double => Unit,
     setR: Double => Unit
-  ): Value = {
+  ): typings.nodeSass.mod.types.Color = {
     val __obj = js.Dynamic.literal(getA = js.Any.fromFunction0(getA), getB = js.Any.fromFunction0(getB), getG = js.Any.fromFunction0(getG), getR = js.Any.fromFunction0(getR), setA = js.Any.fromFunction1(setA), setB = js.Any.fromFunction1(setB), setG = js.Any.fromFunction1(setG), setR = js.Any.fromFunction1(setR))
-    __obj.asInstanceOf[Value]
-  }
-  
-  @scala.inline
-  def Map(
-    getKey: Double => Value,
-    getLength: () => Double,
-    getValue: Double => Value,
-    setKey: (Double, Value) => Unit,
-    setValue: (Double, Value) => Unit
-  ): Value = {
-    val __obj = js.Dynamic.literal(getKey = js.Any.fromFunction1(getKey), getLength = js.Any.fromFunction0(getLength), getValue = js.Any.fromFunction1(getValue), setKey = js.Any.fromFunction2(setKey), setValue = js.Any.fromFunction2(setValue))
-    __obj.asInstanceOf[Value]
+    __obj.asInstanceOf[typings.nodeSass.mod.types.Color]
   }
   
   @scala.inline
@@ -50,21 +45,27 @@ object Value {
     getValue: Double => Value,
     setSeparator: scala.Boolean => Unit,
     setValue: (Double, Value) => Unit
-  ): Value = {
+  ): typings.nodeSass.mod.types.List = {
     val __obj = js.Dynamic.literal(getLength = js.Any.fromFunction0(getLength), getSeparator = js.Any.fromFunction0(getSeparator), getValue = js.Any.fromFunction1(getValue), setSeparator = js.Any.fromFunction1(setSeparator), setValue = js.Any.fromFunction2(setValue))
-    __obj.asInstanceOf[Value]
+    __obj.asInstanceOf[typings.nodeSass.mod.types.List]
   }
   
   @scala.inline
-  def Null(___NULL___ : js.Symbol): Value = {
+  def Map(
+    getKey: Double => Value,
+    getLength: () => Double,
+    getValue: Double => Value,
+    setKey: (Double, Value) => Unit,
+    setValue: (Double, Value) => Unit
+  ): typings.nodeSass.mod.types.Map = {
+    val __obj = js.Dynamic.literal(getKey = js.Any.fromFunction1(getKey), getLength = js.Any.fromFunction0(getLength), getValue = js.Any.fromFunction1(getValue), setKey = js.Any.fromFunction2(setKey), setValue = js.Any.fromFunction2(setValue))
+    __obj.asInstanceOf[typings.nodeSass.mod.types.Map]
+  }
+  
+  @scala.inline
+  def Null(___NULL___ : js.Symbol): typings.nodeSass.mod.types.Null = {
     val __obj = js.Dynamic.literal(___NULL___ = ___NULL___.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Value]
-  }
-  
-  @scala.inline
-  def Boolean(getValue: () => scala.Boolean): Value = {
-    val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
-    __obj.asInstanceOf[Value]
+    __obj.asInstanceOf[typings.nodeSass.mod.types.Null]
   }
   
   @scala.inline
@@ -73,14 +74,14 @@ object Value {
     getValue: () => Double,
     setUnit: java.lang.String => Unit,
     setValue: Double => Unit
-  ): Value = {
+  ): typings.nodeSass.mod.types.Number = {
     val __obj = js.Dynamic.literal(getUnit = js.Any.fromFunction0(getUnit), getValue = js.Any.fromFunction0(getValue), setUnit = js.Any.fromFunction1(setUnit), setValue = js.Any.fromFunction1(setValue))
-    __obj.asInstanceOf[Value]
+    __obj.asInstanceOf[typings.nodeSass.mod.types.Number]
   }
   
   @scala.inline
-  def String(getValue: () => java.lang.String, setValue: java.lang.String => Unit): Value = {
+  def String(getValue: () => java.lang.String, setValue: java.lang.String => Unit): typings.nodeSass.mod.types.String = {
     val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue), setValue = js.Any.fromFunction1(setValue))
-    __obj.asInstanceOf[Value]
+    __obj.asInstanceOf[typings.nodeSass.mod.types.String]
   }
 }

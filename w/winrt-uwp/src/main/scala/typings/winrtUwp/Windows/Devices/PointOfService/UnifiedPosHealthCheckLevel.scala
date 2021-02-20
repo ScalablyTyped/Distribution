@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UnifiedPosHealthCheckLevel extends js.Object
+sealed trait UnifiedPosHealthCheckLevel extends StObject
 /** Defines the constants that indicates the type of health check that can be performed on the devices. */
 @JSGlobal("Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel")
 @js.native
-object UnifiedPosHealthCheckLevel extends js.Object {
+object UnifiedPosHealthCheckLevel extends StObject {
   
   /** Perform a more thorough test that may change the device. */
   @js.native

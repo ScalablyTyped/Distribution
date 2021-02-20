@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options when matching points
   */
 @js.native
-trait IPointMatchOptions extends js.Object {
+trait IPointMatchOptions extends StObject {
   
   /**
     * Max distance to consider two points as the same.
@@ -24,24 +25,12 @@ object IPointMatchOptions {
   }
   
   @scala.inline
-  implicit class IPointMatchOptionsOps[Self <: IPointMatchOptions] (val x: Self) extends AnyVal {
+  implicit class IPointMatchOptionsMutableBuilder[Self <: IPointMatchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPointMatchingDistance(value: Double): Self = StObject.set(x, "pointMatchingDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPointMatchingDistance(value: Double): Self = this.set("pointMatchingDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointMatchingDistance: Self = this.set("pointMatchingDistance", js.undefined)
+    def setPointMatchingDistanceUndefined: Self = StObject.set(x, "pointMatchingDistance", js.undefined)
   }
 }

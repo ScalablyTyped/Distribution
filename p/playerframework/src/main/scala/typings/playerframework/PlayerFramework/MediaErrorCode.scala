@@ -1,14 +1,15 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaErrorCode extends js.Object
+sealed trait MediaErrorCode extends StObject
 @JSGlobal("PlayerFramework.MediaErrorCode")
 @js.native
-object MediaErrorCode extends js.Object {
+object MediaErrorCode extends StObject {
   
   /**
     * Media playback was aborted.

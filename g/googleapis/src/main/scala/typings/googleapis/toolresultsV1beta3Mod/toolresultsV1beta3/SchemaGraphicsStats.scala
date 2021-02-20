@@ -1,5 +1,6 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * will only be present for API 23+.
   */
 @js.native
-trait SchemaGraphicsStats extends js.Object {
+trait SchemaGraphicsStats extends StObject {
   
   /**
     * Histogram of frame render times. There should be 154 buckets ranging from
@@ -83,93 +84,81 @@ object SchemaGraphicsStats {
   }
   
   @scala.inline
-  implicit class SchemaGraphicsStatsOps[Self <: SchemaGraphicsStats] (val x: Self) extends AnyVal {
+  implicit class SchemaGraphicsStatsMutableBuilder[Self <: SchemaGraphicsStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuckets(value: js.Array[SchemaGraphicsStatsBucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketsVarargs(value: SchemaGraphicsStatsBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
     @scala.inline
-    def setBucketsVarargs(value: SchemaGraphicsStatsBucket*): Self = this.set("buckets", js.Array(value :_*))
+    def setHighInputLatencyCount(value: String): Self = StObject.set(x, "highInputLatencyCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuckets(value: js.Array[SchemaGraphicsStatsBucket]): Self = this.set("buckets", value.asInstanceOf[js.Any])
+    def setHighInputLatencyCountUndefined: Self = StObject.set(x, "highInputLatencyCount", js.undefined)
     
     @scala.inline
-    def deleteBuckets: Self = this.set("buckets", js.undefined)
+    def setJankyFrames(value: String): Self = StObject.set(x, "jankyFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighInputLatencyCount(value: String): Self = this.set("highInputLatencyCount", value.asInstanceOf[js.Any])
+    def setJankyFramesUndefined: Self = StObject.set(x, "jankyFrames", js.undefined)
     
     @scala.inline
-    def deleteHighInputLatencyCount: Self = this.set("highInputLatencyCount", js.undefined)
+    def setMissedVsyncCount(value: String): Self = StObject.set(x, "missedVsyncCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJankyFrames(value: String): Self = this.set("jankyFrames", value.asInstanceOf[js.Any])
+    def setMissedVsyncCountUndefined: Self = StObject.set(x, "missedVsyncCount", js.undefined)
     
     @scala.inline
-    def deleteJankyFrames: Self = this.set("jankyFrames", js.undefined)
+    def setP50Millis(value: String): Self = StObject.set(x, "p50Millis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissedVsyncCount(value: String): Self = this.set("missedVsyncCount", value.asInstanceOf[js.Any])
+    def setP50MillisUndefined: Self = StObject.set(x, "p50Millis", js.undefined)
     
     @scala.inline
-    def deleteMissedVsyncCount: Self = this.set("missedVsyncCount", js.undefined)
+    def setP90Millis(value: String): Self = StObject.set(x, "p90Millis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP50Millis(value: String): Self = this.set("p50Millis", value.asInstanceOf[js.Any])
+    def setP90MillisUndefined: Self = StObject.set(x, "p90Millis", js.undefined)
     
     @scala.inline
-    def deleteP50Millis: Self = this.set("p50Millis", js.undefined)
+    def setP95Millis(value: String): Self = StObject.set(x, "p95Millis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP90Millis(value: String): Self = this.set("p90Millis", value.asInstanceOf[js.Any])
+    def setP95MillisUndefined: Self = StObject.set(x, "p95Millis", js.undefined)
     
     @scala.inline
-    def deleteP90Millis: Self = this.set("p90Millis", js.undefined)
+    def setP99Millis(value: String): Self = StObject.set(x, "p99Millis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP95Millis(value: String): Self = this.set("p95Millis", value.asInstanceOf[js.Any])
+    def setP99MillisUndefined: Self = StObject.set(x, "p99Millis", js.undefined)
     
     @scala.inline
-    def deleteP95Millis: Self = this.set("p95Millis", js.undefined)
+    def setSlowBitmapUploadCount(value: String): Self = StObject.set(x, "slowBitmapUploadCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP99Millis(value: String): Self = this.set("p99Millis", value.asInstanceOf[js.Any])
+    def setSlowBitmapUploadCountUndefined: Self = StObject.set(x, "slowBitmapUploadCount", js.undefined)
     
     @scala.inline
-    def deleteP99Millis: Self = this.set("p99Millis", js.undefined)
+    def setSlowDrawCount(value: String): Self = StObject.set(x, "slowDrawCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlowBitmapUploadCount(value: String): Self = this.set("slowBitmapUploadCount", value.asInstanceOf[js.Any])
+    def setSlowDrawCountUndefined: Self = StObject.set(x, "slowDrawCount", js.undefined)
     
     @scala.inline
-    def deleteSlowBitmapUploadCount: Self = this.set("slowBitmapUploadCount", js.undefined)
+    def setSlowUiThreadCount(value: String): Self = StObject.set(x, "slowUiThreadCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlowDrawCount(value: String): Self = this.set("slowDrawCount", value.asInstanceOf[js.Any])
+    def setSlowUiThreadCountUndefined: Self = StObject.set(x, "slowUiThreadCount", js.undefined)
     
     @scala.inline
-    def deleteSlowDrawCount: Self = this.set("slowDrawCount", js.undefined)
+    def setTotalFrames(value: String): Self = StObject.set(x, "totalFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlowUiThreadCount(value: String): Self = this.set("slowUiThreadCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlowUiThreadCount: Self = this.set("slowUiThreadCount", js.undefined)
-    
-    @scala.inline
-    def setTotalFrames(value: String): Self = this.set("totalFrames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalFrames: Self = this.set("totalFrames", js.undefined)
+    def setTotalFramesUndefined: Self = StObject.set(x, "totalFrames", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * combination of the tableId and a styleId.
   */
 @js.native
-trait SchemaStyleSetting extends js.Object {
+trait SchemaStyleSetting extends StObject {
   
   /**
     * The kind of item this is. A StyleSetting contains the style definitions
@@ -58,60 +59,48 @@ object SchemaStyleSetting {
   }
   
   @scala.inline
-  implicit class SchemaStyleSettingOps[Self <: SchemaStyleSetting] (val x: Self) extends AnyVal {
+  implicit class SchemaStyleSettingMutableBuilder[Self <: SchemaStyleSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkerOptions(value: SchemaPointStyle): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerOptions(value: SchemaPointStyle): Self = this.set("markerOptions", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMarkerOptions: Self = this.set("markerOptions", js.undefined)
+    def setPolygonOptions(value: SchemaPolygonStyle): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPolylineOptions(value: SchemaLineStyle): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonOptions(value: SchemaPolygonStyle): Self = this.set("polygonOptions", value.asInstanceOf[js.Any])
+    def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
     
     @scala.inline
-    def deletePolygonOptions: Self = this.set("polygonOptions", js.undefined)
+    def setStyleId(value: Double): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylineOptions(value: SchemaLineStyle): Self = this.set("polylineOptions", value.asInstanceOf[js.Any])
+    def setStyleIdUndefined: Self = StObject.set(x, "styleId", js.undefined)
     
     @scala.inline
-    def deletePolylineOptions: Self = this.set("polylineOptions", js.undefined)
+    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleId(value: Double): Self = this.set("styleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleId: Self = this.set("styleId", js.undefined)
-    
-    @scala.inline
-    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableId: Self = this.set("tableId", js.undefined)
+    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

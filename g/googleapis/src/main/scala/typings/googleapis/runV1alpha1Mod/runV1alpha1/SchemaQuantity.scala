@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/generated.proto
   */
 @js.native
-trait SchemaQuantity extends js.Object {
+trait SchemaQuantity extends StObject {
   
   /**
     * Stringified version of the quantity, e.g., &quot;800 MiB&quot;.
@@ -26,24 +27,12 @@ object SchemaQuantity {
   }
   
   @scala.inline
-  implicit class SchemaQuantityOps[Self <: SchemaQuantity] (val x: Self) extends AnyVal {
+  implicit class SchemaQuantityMutableBuilder[Self <: SchemaQuantity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setString(value: String): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteString: Self = this.set("string", js.undefined)
+    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
   }
 }

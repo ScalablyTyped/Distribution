@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,24 +33,12 @@ object XFilterDetect {
   }
   
   @scala.inline
-  implicit class XFilterDetectOps[Self <: XFilterDetect] (val x: Self) extends AnyVal {
+  implicit class XFilterDetectMutableBuilder[Self <: XFilterDetect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetContentType(value: String => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetContentType(value: String => String): Self = this.set("getContentType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUseExternBrowser(value: String => Boolean): Self = this.set("useExternBrowser", js.Any.fromFunction1(value))
+    def setUseExternBrowser(value: String => Boolean): Self = StObject.set(x, "useExternBrowser", js.Any.fromFunction1(value))
   }
 }

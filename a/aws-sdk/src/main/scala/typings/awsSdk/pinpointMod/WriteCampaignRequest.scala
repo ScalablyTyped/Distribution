@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WriteCampaignRequest extends js.Object {
+trait WriteCampaignRequest extends StObject {
   
   /**
     * An array of requests that defines additional treatments for the campaign, in addition to the default treatment for the campaign.
@@ -96,117 +97,105 @@ object WriteCampaignRequest {
   }
   
   @scala.inline
-  implicit class WriteCampaignRequestOps[Self <: WriteCampaignRequest] (val x: Self) extends AnyVal {
+  implicit class WriteCampaignRequestMutableBuilder[Self <: WriteCampaignRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalTreatments(value: ListOfWriteTreatmentResource): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalTreatmentsUndefined: Self = StObject.set(x, "AdditionalTreatments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalTreatmentsVarargs(value: WriteTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalTreatmentsVarargs(value: WriteTreatmentResource*): Self = this.set("AdditionalTreatments", js.Array(value :_*))
+    def setCustomDeliveryConfiguration(value: CustomDeliveryConfiguration): Self = StObject.set(x, "CustomDeliveryConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalTreatments(value: ListOfWriteTreatmentResource): Self = this.set("AdditionalTreatments", value.asInstanceOf[js.Any])
+    def setCustomDeliveryConfigurationUndefined: Self = StObject.set(x, "CustomDeliveryConfiguration", js.undefined)
     
     @scala.inline
-    def deleteAdditionalTreatments: Self = this.set("AdditionalTreatments", js.undefined)
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDeliveryConfiguration(value: CustomDeliveryConfiguration): Self = this.set("CustomDeliveryConfiguration", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCustomDeliveryConfiguration: Self = this.set("CustomDeliveryConfiguration", js.undefined)
+    def setHoldoutPercent(value: integer): Self = StObject.set(x, "HoldoutPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setHoldoutPercentUndefined: Self = StObject.set(x, "HoldoutPercent", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setHook(value: CampaignHook): Self = StObject.set(x, "Hook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoldoutPercent(value: integer): Self = this.set("HoldoutPercent", value.asInstanceOf[js.Any])
+    def setHookUndefined: Self = StObject.set(x, "Hook", js.undefined)
     
     @scala.inline
-    def deleteHoldoutPercent: Self = this.set("HoldoutPercent", js.undefined)
+    def setIsPaused(value: boolean): Self = StObject.set(x, "IsPaused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHook(value: CampaignHook): Self = this.set("Hook", value.asInstanceOf[js.Any])
+    def setIsPausedUndefined: Self = StObject.set(x, "IsPaused", js.undefined)
     
     @scala.inline
-    def deleteHook: Self = this.set("Hook", js.undefined)
+    def setLimits(value: CampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPaused(value: boolean): Self = this.set("IsPaused", value.asInstanceOf[js.Any])
+    def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
     @scala.inline
-    def deleteIsPaused: Self = this.set("IsPaused", js.undefined)
+    def setMessageConfiguration(value: MessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimits(value: CampaignLimits): Self = this.set("Limits", value.asInstanceOf[js.Any])
+    def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
     
     @scala.inline
-    def deleteLimits: Self = this.set("Limits", js.undefined)
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageConfiguration(value: MessageConfiguration): Self = this.set("MessageConfiguration", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMessageConfiguration: Self = this.set("MessageConfiguration", js.undefined)
+    def setSchedule(value: Schedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: Schedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    def setSegmentVersion(value: integer): Self = StObject.set(x, "SegmentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentId(value: string): Self = this.set("SegmentId", value.asInstanceOf[js.Any])
+    def setSegmentVersionUndefined: Self = StObject.set(x, "SegmentVersion", js.undefined)
     
     @scala.inline
-    def deleteSegmentId: Self = this.set("SegmentId", js.undefined)
+    def setTags(value: MapOfString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentVersion(value: integer): Self = this.set("SegmentVersion", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSegmentVersion: Self = this.set("SegmentVersion", js.undefined)
+    def setTemplateConfiguration(value: TemplateConfiguration): Self = StObject.set(x, "TemplateConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateConfiguration(value: TemplateConfiguration): Self = this.set("TemplateConfiguration", value.asInstanceOf[js.Any])
+    def setTemplateConfigurationUndefined: Self = StObject.set(x, "TemplateConfiguration", js.undefined)
     
     @scala.inline
-    def deleteTemplateConfiguration: Self = this.set("TemplateConfiguration", js.undefined)
+    def setTreatmentDescription(value: string): Self = StObject.set(x, "TreatmentDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreatmentDescription(value: string): Self = this.set("TreatmentDescription", value.asInstanceOf[js.Any])
+    def setTreatmentDescriptionUndefined: Self = StObject.set(x, "TreatmentDescription", js.undefined)
     
     @scala.inline
-    def deleteTreatmentDescription: Self = this.set("TreatmentDescription", js.undefined)
+    def setTreatmentName(value: string): Self = StObject.set(x, "TreatmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreatmentName(value: string): Self = this.set("TreatmentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreatmentName: Self = this.set("TreatmentName", js.undefined)
-    
-    @scala.inline
-    def setTags(value: MapOfString): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTreatmentNameUndefined: Self = StObject.set(x, "TreatmentName", js.undefined)
   }
 }

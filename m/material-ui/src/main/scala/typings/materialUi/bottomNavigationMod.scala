@@ -3,23 +3,24 @@ package typings.materialUi
 import typings.materialUi.MaterialUI.BottomNavigation.BottomNavigationItemProps
 import typings.materialUi.MaterialUI.BottomNavigation.BottomNavigationProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/BottomNavigation", JSImport.Namespace)
-@js.native
-object bottomNavigationMod extends js.Object {
+object bottomNavigationMod {
   
+  @JSImport("material-ui/BottomNavigation", JSImport.Default)
+  @js.native
+  class default () extends BottomNavigation
+  
+  @JSImport("material-ui/BottomNavigation", "BottomNavigation")
   @js.native
   class BottomNavigation ()
     extends Component[BottomNavigationProps, js.Object, js.Any]
   
+  @JSImport("material-ui/BottomNavigation", "BottomNavigationItem")
   @js.native
   class BottomNavigationItem ()
     extends Component[BottomNavigationItemProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
-    extends Component[BottomNavigationProps, js.Object, js.Any]
 }

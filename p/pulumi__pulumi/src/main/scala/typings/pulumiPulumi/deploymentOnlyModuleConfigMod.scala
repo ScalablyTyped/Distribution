@@ -1,15 +1,15 @@
 package typings.pulumiPulumi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi/tests/runtime/deploymentOnlyModule/config", JSImport.Namespace)
-@js.native
-object deploymentOnlyModuleConfigMod extends js.Object {
+object deploymentOnlyModuleConfigMod {
   
+  @JSImport("@pulumi/pulumi/tests/runtime/deploymentOnlyModule/config", "Config")
   @js.native
-  class Config protected () extends js.Object {
+  class Config protected () extends StObject {
     def this(name: String) = this()
     
     /**

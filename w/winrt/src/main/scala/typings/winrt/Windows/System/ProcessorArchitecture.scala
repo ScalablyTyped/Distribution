@@ -1,14 +1,15 @@
 package typings.winrt.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProcessorArchitecture extends js.Object
+sealed trait ProcessorArchitecture extends StObject
 @JSGlobal("Windows.System.ProcessorArchitecture")
 @js.native
-object ProcessorArchitecture extends js.Object {
+object ProcessorArchitecture extends StObject {
   
   @js.native
   sealed trait arm extends ProcessorArchitecture

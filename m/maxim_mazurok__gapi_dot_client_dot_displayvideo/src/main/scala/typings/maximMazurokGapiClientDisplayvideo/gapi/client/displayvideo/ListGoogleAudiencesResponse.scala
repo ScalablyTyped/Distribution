@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGoogleAudiencesResponse extends js.Object {
+trait ListGoogleAudiencesResponse extends StObject {
   
   /** The list of Google audiences. This list will be absent if empty. */
   var googleAudiences: js.UndefOr[js.Array[GoogleAudience]] = js.native
@@ -22,33 +23,21 @@ object ListGoogleAudiencesResponse {
   }
   
   @scala.inline
-  implicit class ListGoogleAudiencesResponseOps[Self <: ListGoogleAudiencesResponse] (val x: Self) extends AnyVal {
+  implicit class ListGoogleAudiencesResponseMutableBuilder[Self <: ListGoogleAudiencesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoogleAudiences(value: js.Array[GoogleAudience]): Self = StObject.set(x, "googleAudiences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoogleAudiencesUndefined: Self = StObject.set(x, "googleAudiences", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoogleAudiencesVarargs(value: GoogleAudience*): Self = StObject.set(x, "googleAudiences", js.Array(value :_*))
     
     @scala.inline
-    def setGoogleAudiencesVarargs(value: GoogleAudience*): Self = this.set("googleAudiences", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleAudiences(value: js.Array[GoogleAudience]): Self = this.set("googleAudiences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoogleAudiences: Self = this.set("googleAudiences", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

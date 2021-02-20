@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Activation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ActivationKind extends js.Object
+sealed trait ActivationKind extends StObject
 /** Specifies the type of activation. */
 @JSGlobal("Windows.ApplicationModel.Activation.ActivationKind")
 @js.native
-object ActivationKind extends js.Object {
+object ActivationKind extends StObject {
   
   /** The user wants to manage appointments that are provided by the app. */
   @js.native

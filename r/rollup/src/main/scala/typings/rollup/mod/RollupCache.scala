@@ -1,12 +1,13 @@
 package typings.rollup.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RollupCache extends js.Object {
+trait RollupCache extends StObject {
   
   var modules: js.Array[ModuleJSON] = js.native
   
@@ -21,30 +22,18 @@ object RollupCache {
   }
   
   @scala.inline
-  implicit class RollupCacheOps[Self <: RollupCache] (val x: Self) extends AnyVal {
+  implicit class RollupCacheMutableBuilder[Self <: RollupCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModules(value: js.Array[ModuleJSON]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModulesVarargs(value: ModuleJSON*): Self = StObject.set(x, "modules", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlugins(value: Record[String, SerializablePluginCache]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModulesVarargs(value: ModuleJSON*): Self = this.set("modules", js.Array(value :_*))
-    
-    @scala.inline
-    def setModules(value: js.Array[ModuleJSON]): Self = this.set("modules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlugins(value: Record[String, SerializablePluginCache]): Self = this.set("plugins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
   }
 }

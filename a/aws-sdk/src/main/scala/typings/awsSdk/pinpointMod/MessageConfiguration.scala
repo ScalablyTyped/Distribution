@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageConfiguration extends js.Object {
+trait MessageConfiguration extends StObject {
   
   /**
     * The message that the campaign sends through the ADM (Amazon Device Messaging) channel. If specified, this message overrides the default message.
@@ -56,66 +57,54 @@ object MessageConfiguration {
   }
   
   @scala.inline
-  implicit class MessageConfigurationOps[Self <: MessageConfiguration] (val x: Self) extends AnyVal {
+  implicit class MessageConfigurationMutableBuilder[Self <: MessageConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADMMessage(value: Message): Self = StObject.set(x, "ADMMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setADMMessageUndefined: Self = StObject.set(x, "ADMMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAPNSMessage(value: Message): Self = StObject.set(x, "APNSMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setADMMessage(value: Message): Self = this.set("ADMMessage", value.asInstanceOf[js.Any])
+    def setAPNSMessageUndefined: Self = StObject.set(x, "APNSMessage", js.undefined)
     
     @scala.inline
-    def deleteADMMessage: Self = this.set("ADMMessage", js.undefined)
+    def setBaiduMessage(value: Message): Self = StObject.set(x, "BaiduMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPNSMessage(value: Message): Self = this.set("APNSMessage", value.asInstanceOf[js.Any])
+    def setBaiduMessageUndefined: Self = StObject.set(x, "BaiduMessage", js.undefined)
     
     @scala.inline
-    def deleteAPNSMessage: Self = this.set("APNSMessage", js.undefined)
+    def setCustomMessage(value: CampaignCustomMessage): Self = StObject.set(x, "CustomMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaiduMessage(value: Message): Self = this.set("BaiduMessage", value.asInstanceOf[js.Any])
+    def setCustomMessageUndefined: Self = StObject.set(x, "CustomMessage", js.undefined)
     
     @scala.inline
-    def deleteBaiduMessage: Self = this.set("BaiduMessage", js.undefined)
+    def setDefaultMessage(value: Message): Self = StObject.set(x, "DefaultMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMessage(value: CampaignCustomMessage): Self = this.set("CustomMessage", value.asInstanceOf[js.Any])
+    def setDefaultMessageUndefined: Self = StObject.set(x, "DefaultMessage", js.undefined)
     
     @scala.inline
-    def deleteCustomMessage: Self = this.set("CustomMessage", js.undefined)
+    def setEmailMessage(value: CampaignEmailMessage): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMessage(value: Message): Self = this.set("DefaultMessage", value.asInstanceOf[js.Any])
+    def setEmailMessageUndefined: Self = StObject.set(x, "EmailMessage", js.undefined)
     
     @scala.inline
-    def deleteDefaultMessage: Self = this.set("DefaultMessage", js.undefined)
+    def setGCMMessage(value: Message): Self = StObject.set(x, "GCMMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailMessage(value: CampaignEmailMessage): Self = this.set("EmailMessage", value.asInstanceOf[js.Any])
+    def setGCMMessageUndefined: Self = StObject.set(x, "GCMMessage", js.undefined)
     
     @scala.inline
-    def deleteEmailMessage: Self = this.set("EmailMessage", js.undefined)
+    def setSMSMessage(value: CampaignSmsMessage): Self = StObject.set(x, "SMSMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGCMMessage(value: Message): Self = this.set("GCMMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGCMMessage: Self = this.set("GCMMessage", js.undefined)
-    
-    @scala.inline
-    def setSMSMessage(value: CampaignSmsMessage): Self = this.set("SMSMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSMSMessage: Self = this.set("SMSMessage", js.undefined)
+    def setSMSMessageUndefined: Self = StObject.set(x, "SMSMessage", js.undefined)
   }
 }

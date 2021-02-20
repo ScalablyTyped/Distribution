@@ -1,11 +1,12 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrackEntry extends js.Object {
+trait TrackEntry extends StObject {
   
   var alpha: Double = js.native
   
@@ -122,132 +123,120 @@ object TrackEntry {
   }
   
   @scala.inline
-  implicit class TrackEntryOps[Self <: TrackEntry] (val x: Self) extends AnyVal {
+  implicit class TrackEntryMutableBuilder[Self <: TrackEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationEnd(value: Double): Self = StObject.set(x, "animationEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setAnimationLast(value: Double): Self = StObject.set(x, "animationLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Animation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAnimationStart(value: Double): Self = StObject.set(x, "animationStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationEnd(value: Double): Self = this.set("animationEnd", value.asInstanceOf[js.Any])
+    def setAttachmentThreshold(value: Double): Self = StObject.set(x, "attachmentThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationLast(value: Double): Self = this.set("animationLast", value.asInstanceOf[js.Any])
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationStart(value: Double): Self = this.set("animationStart", value.asInstanceOf[js.Any])
+    def setDrawOrderThreshold(value: Double): Self = StObject.set(x, "drawOrderThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentThreshold(value: Double): Self = this.set("attachmentThreshold", value.asInstanceOf[js.Any])
+    def setEventThreshold(value: Double): Self = StObject.set(x, "eventThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setGetAnimationTime(value: () => Double): Self = StObject.set(x, "getAnimationTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDrawOrderThreshold(value: Double): Self = this.set("drawOrderThreshold", value.asInstanceOf[js.Any])
+    def setHoldPrevious(value: Boolean): Self = StObject.set(x, "holdPrevious", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventThreshold(value: Double): Self = this.set("eventThreshold", value.asInstanceOf[js.Any])
+    def setInterruptAlpha(value: Double): Self = StObject.set(x, "interruptAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAnimationTime(value: () => Double): Self = this.set("getAnimationTime", js.Any.fromFunction0(value))
+    def setIsComplete(value: () => Boolean): Self = StObject.set(x, "isComplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHoldPrevious(value: Boolean): Self = this.set("holdPrevious", value.asInstanceOf[js.Any])
+    def setListener(value: AnimationStateListener2): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterruptAlpha(value: Double): Self = this.set("interruptAlpha", value.asInstanceOf[js.Any])
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComplete(value: () => Boolean): Self = this.set("isComplete", js.Any.fromFunction0(value))
+    def setMixBlend(value: MixBlend): Self = StObject.set(x, "mixBlend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListener(value: AnimationStateListener2): Self = this.set("listener", value.asInstanceOf[js.Any])
+    def setMixDuration(value: Double): Self = StObject.set(x, "mixDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setMixTime(value: Double): Self = StObject.set(x, "mixTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixBlend(value: MixBlend): Self = this.set("mixBlend", value.asInstanceOf[js.Any])
+    def setMixingFrom(value: TrackEntry): Self = StObject.set(x, "mixingFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixDuration(value: Double): Self = this.set("mixDuration", value.asInstanceOf[js.Any])
+    def setMixingTo(value: TrackEntry): Self = StObject.set(x, "mixingTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixTime(value: Double): Self = this.set("mixTime", value.asInstanceOf[js.Any])
+    def setNext(value: TrackEntry): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixingFrom(value: TrackEntry): Self = this.set("mixingFrom", value.asInstanceOf[js.Any])
+    def setNextAnimationLast(value: Double): Self = StObject.set(x, "nextAnimationLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixingTo(value: TrackEntry): Self = this.set("mixingTo", value.asInstanceOf[js.Any])
+    def setNextTrackLast(value: Double): Self = StObject.set(x, "nextTrackLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: TrackEntry): Self = this.set("next", value.asInstanceOf[js.Any])
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNextAnimationLast(value: Double): Self = this.set("nextAnimationLast", value.asInstanceOf[js.Any])
+    def setResetRotationDirections(value: () => Unit): Self = StObject.set(x, "resetRotationDirections", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNextTrackLast(value: Double): Self = this.set("nextTrackLast", value.asInstanceOf[js.Any])
+    def setSetAnimationLast(value: Double => Unit): Self = StObject.set(x, "setAnimationLast", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetRotationDirections(value: () => Unit): Self = this.set("resetRotationDirections", js.Any.fromFunction0(value))
+    def setTimelineHoldMix(value: js.Array[TrackEntry]): Self = StObject.set(x, "timelineHoldMix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetAnimationLast(value: Double => Unit): Self = this.set("setAnimationLast", js.Any.fromFunction1(value))
+    def setTimelineHoldMixVarargs(value: TrackEntry*): Self = StObject.set(x, "timelineHoldMix", js.Array(value :_*))
     
     @scala.inline
-    def setTimeScale(value: Double): Self = this.set("timeScale", value.asInstanceOf[js.Any])
+    def setTimelineMode(value: js.Array[Double]): Self = StObject.set(x, "timelineMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimelineHoldMixVarargs(value: TrackEntry*): Self = this.set("timelineHoldMix", js.Array(value :_*))
+    def setTimelineModeVarargs(value: Double*): Self = StObject.set(x, "timelineMode", js.Array(value :_*))
     
     @scala.inline
-    def setTimelineHoldMix(value: js.Array[TrackEntry]): Self = this.set("timelineHoldMix", value.asInstanceOf[js.Any])
+    def setTimelinesRotation(value: js.Array[Double]): Self = StObject.set(x, "timelinesRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimelineModeVarargs(value: Double*): Self = this.set("timelineMode", js.Array(value :_*))
+    def setTimelinesRotationVarargs(value: Double*): Self = StObject.set(x, "timelinesRotation", js.Array(value :_*))
     
     @scala.inline
-    def setTimelineMode(value: js.Array[Double]): Self = this.set("timelineMode", value.asInstanceOf[js.Any])
+    def setTotalAlpha(value: Double): Self = StObject.set(x, "totalAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimelinesRotationVarargs(value: Double*): Self = this.set("timelinesRotation", js.Array(value :_*))
+    def setTrackEnd(value: Double): Self = StObject.set(x, "trackEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimelinesRotation(value: js.Array[Double]): Self = this.set("timelinesRotation", value.asInstanceOf[js.Any])
+    def setTrackIndex(value: Double): Self = StObject.set(x, "trackIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalAlpha(value: Double): Self = this.set("totalAlpha", value.asInstanceOf[js.Any])
+    def setTrackLast(value: Double): Self = StObject.set(x, "trackLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackEnd(value: Double): Self = this.set("trackEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackIndex(value: Double): Self = this.set("trackIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackLast(value: Double): Self = this.set("trackLast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackTime(value: Double): Self = this.set("trackTime", value.asInstanceOf[js.Any])
+    def setTrackTime(value: Double): Self = StObject.set(x, "trackTime", value.asInstanceOf[js.Any])
   }
 }

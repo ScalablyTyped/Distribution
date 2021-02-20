@@ -1,12 +1,13 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "BraintreeGateway")
 @js.native
-class BraintreeGateway protected () extends js.Object {
+class BraintreeGateway protected () extends StObject {
   def this(config: GatewayConfig) = this()
   
   var addOn: AddOnGateway = js.native

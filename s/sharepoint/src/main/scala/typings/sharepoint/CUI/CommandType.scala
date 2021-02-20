@@ -1,14 +1,15 @@
 package typings.sharepoint.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CommandType extends js.Object
+sealed trait CommandType extends StObject
 @JSGlobal("CUI.CommandType")
 @js.native
-object CommandType extends js.Object {
+object CommandType extends StObject {
   
   @js.native
   sealed trait general extends CommandType

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The endpoint descriptor for a USB bulk OUT endpoint. The descriptor specifies the endpoint type, direction, number and also the maximum number of bytes that can be written to the endpoint, in a single transfer. */
 @js.native
-trait UsbBulkOutEndpointDescriptor extends js.Object {
+trait UsbBulkOutEndpointDescriptor extends StObject {
   
   /** Gets the USB endpoint number of the bulk OUT endpoint. */
   var endpointNumber: Double = js.native
@@ -26,27 +27,15 @@ object UsbBulkOutEndpointDescriptor {
   }
   
   @scala.inline
-  implicit class UsbBulkOutEndpointDescriptorOps[Self <: UsbBulkOutEndpointDescriptor] (val x: Self) extends AnyVal {
+  implicit class UsbBulkOutEndpointDescriptorMutableBuilder[Self <: UsbBulkOutEndpointDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointNumber(value: Double): Self = StObject.set(x, "endpointNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndpointNumber(value: Double): Self = this.set("endpointNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxPacketSize(value: Double): Self = this.set("maxPacketSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPipe(value: UsbBulkOutPipe): Self = this.set("pipe", value.asInstanceOf[js.Any])
+    def setPipe(value: UsbBulkOutPipe): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
   }
 }

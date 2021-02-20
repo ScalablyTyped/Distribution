@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SealIdentifier extends js.Object {
+trait SealIdentifier extends StObject {
   
   /**
     * The user-friendly display name for a seal.
@@ -26,30 +27,18 @@ object SealIdentifier {
   }
   
   @scala.inline
-  implicit class SealIdentifierOps[Self <: SealIdentifier] (val x: Self) extends AnyVal {
+  implicit class SealIdentifierMutableBuilder[Self <: SealIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSealDisplayName(value: String): Self = StObject.set(x, "sealDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSealDisplayNameUndefined: Self = StObject.set(x, "sealDisplayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSealName(value: String): Self = StObject.set(x, "sealName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSealDisplayName(value: String): Self = this.set("sealDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSealDisplayName: Self = this.set("sealDisplayName", js.undefined)
-    
-    @scala.inline
-    def setSealName(value: String): Self = this.set("sealName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSealName: Self = this.set("sealName", js.undefined)
+    def setSealNameUndefined: Self = StObject.set(x, "sealName", js.undefined)
   }
 }

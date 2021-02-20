@@ -1,12 +1,13 @@
 package typings.nulogyComponents
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nulogy/components/src/NavBar", JSImport.Namespace)
-@js.native
-object navBarMod extends js.Object {
+object navBarMod {
   
+  @JSImport("@nulogy/components/src/NavBar", "NavBar")
+  @js.native
   val NavBar: js.Any = js.native
 }

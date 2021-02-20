@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterUserRequest extends js.Object {
+trait RegisterUserRequest extends StObject {
   
   /**
     * The ID for the AWS account that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
@@ -67,57 +68,45 @@ object RegisterUserRequest {
   }
   
   @scala.inline
-  implicit class RegisterUserRequestOps[Self <: RegisterUserRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterUserRequestMutableBuilder[Self <: RegisterUserRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomPermissionsName(value: RoleName): Self = StObject.set(x, "CustomPermissionsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomPermissionsNameUndefined: Self = StObject.set(x, "CustomPermissionsName", js.undefined)
     
     @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("Email", value.asInstanceOf[js.Any])
+    def setIamArn(value: String): Self = StObject.set(x, "IamArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityType(value: IdentityType): Self = this.set("IdentityType", value.asInstanceOf[js.Any])
+    def setIamArnUndefined: Self = StObject.set(x, "IamArn", js.undefined)
     
     @scala.inline
-    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserRole(value: UserRole): Self = this.set("UserRole", value.asInstanceOf[js.Any])
+    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomPermissionsName(value: RoleName): Self = this.set("CustomPermissionsName", value.asInstanceOf[js.Any])
+    def setSessionName(value: RoleSessionName): Self = StObject.set(x, "SessionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomPermissionsName: Self = this.set("CustomPermissionsName", js.undefined)
+    def setSessionNameUndefined: Self = StObject.set(x, "SessionName", js.undefined)
     
     @scala.inline
-    def setIamArn(value: String): Self = this.set("IamArn", value.asInstanceOf[js.Any])
+    def setUserName(value: UserName_): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIamArn: Self = this.set("IamArn", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
     
     @scala.inline
-    def setSessionName(value: RoleSessionName): Self = this.set("SessionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionName: Self = this.set("SessionName", js.undefined)
-    
-    @scala.inline
-    def setUserName(value: UserName_): Self = this.set("UserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("UserName", js.undefined)
+    def setUserRole(value: UserRole): Self = StObject.set(x, "UserRole", value.asInstanceOf[js.Any])
   }
 }

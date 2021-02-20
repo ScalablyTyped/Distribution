@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitLightboxPanelElement extends js.Object {
+trait UIkitLightboxPanelElement extends StObject {
   
   def hide(): Unit = js.native
   
@@ -24,30 +25,18 @@ object UIkitLightboxPanelElement {
   }
   
   @scala.inline
-  implicit class UIkitLightboxPanelElementOps[Self <: UIkitLightboxPanelElement] (val x: Self) extends AnyVal {
+  implicit class UIkitLightboxPanelElementMutableBuilder[Self <: UIkitLightboxPanelElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShow(value: Double => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartAutoplay(value: () => Unit): Self = StObject.set(x, "startAutoplay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShow(value: Double => Unit): Self = this.set("show", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartAutoplay(value: () => Unit): Self = this.set("startAutoplay", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStopAutoplay(value: () => Unit): Self = this.set("stopAutoplay", js.Any.fromFunction0(value))
+    def setStopAutoplay(value: () => Unit): Self = StObject.set(x, "stopAutoplay", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPlugin extends js.Object {
+trait IPlugin extends StObject {
   
   def init(childScope: IGridScope, gridInstance: IGridInstance, services: js.Any): Unit = js.native
 }
@@ -18,21 +19,9 @@ object IPlugin {
   }
   
   @scala.inline
-  implicit class IPluginOps[Self <: IPlugin] (val x: Self) extends AnyVal {
+  implicit class IPluginMutableBuilder[Self <: IPlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInit(value: (IGridScope, IGridInstance, js.Any) => Unit): Self = this.set("init", js.Any.fromFunction3(value))
+    def setInit(value: (IGridScope, IGridInstance, js.Any) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
   }
 }

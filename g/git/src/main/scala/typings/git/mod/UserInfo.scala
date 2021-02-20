@@ -1,12 +1,13 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "UserInfo")
 @js.native
-class UserInfo protected () extends js.Object {
+class UserInfo protected () extends StObject {
   def this(str: String) = this()
   
   var date: js.Any = js.native

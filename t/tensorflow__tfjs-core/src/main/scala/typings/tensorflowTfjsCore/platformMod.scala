@@ -4,16 +4,15 @@ import typings.std.RequestInit
 import typings.std.Response
 import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.typesMod.RequestDetails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/platforms/platform", JSImport.Namespace)
-@js.native
-object platformMod extends js.Object {
+object platformMod {
   
   @js.native
-  trait Platform extends js.Object {
+  trait Platform extends StObject {
     
     /** Decode the provided bytes into a string using the provided encoding. */
     def decode(bytes: Uint8Array, encoding: String): String = js.native

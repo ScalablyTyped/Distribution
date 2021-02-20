@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutApprovalResultOutput extends js.Object {
+trait PutApprovalResultOutput extends StObject {
   
   /**
     * The timestamp showing when the approval or rejection was submitted.
@@ -21,24 +22,12 @@ object PutApprovalResultOutput {
   }
   
   @scala.inline
-  implicit class PutApprovalResultOutputOps[Self <: PutApprovalResultOutput] (val x: Self) extends AnyVal {
+  implicit class PutApprovalResultOutputMutableBuilder[Self <: PutApprovalResultOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovedAt(value: Timestamp): Self = StObject.set(x, "approvedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApprovedAt(value: Timestamp): Self = this.set("approvedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApprovedAt: Self = this.set("approvedAt", js.undefined)
+    def setApprovedAtUndefined: Self = StObject.set(x, "approvedAt", js.undefined)
   }
 }

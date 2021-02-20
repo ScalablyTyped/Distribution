@@ -15,6 +15,7 @@ import typings.activexShdocvw.activexShdocvwNumbers.`512`
 import typings.activexShdocvw.activexShdocvwNumbers.`64`
 import typings.activexShdocvw.activexShdocvwNumbers.`65536`
 import typings.activexShdocvw.activexShdocvwNumbers.`8192`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShdocvw.activexShdocvwNumbers.`32768`
   - typings.activexShdocvw.activexShdocvwNumbers.`65536`
 */
-trait BrowserNavConstants extends js.Object
+trait BrowserNavConstants extends StObject
 object BrowserNavConstants {
   
   /** If the navigation fails, the autosearch functionality attempts to navigate common root domains (.com, .edu, and so on). If this also fails, the URL is passed to a search engine. */

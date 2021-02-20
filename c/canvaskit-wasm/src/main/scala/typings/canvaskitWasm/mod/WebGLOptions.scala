@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebGLOptions extends js.Object {
+trait WebGLOptions extends StObject {
   
   var alpha: js.UndefOr[Double] = js.native
   
@@ -42,96 +43,84 @@ object WebGLOptions {
   }
   
   @scala.inline
-  implicit class WebGLOptionsOps[Self <: WebGLOptions] (val x: Self) extends AnyVal {
+  implicit class WebGLOptionsMutableBuilder[Self <: WebGLOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAntialias(value: Double): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAntialias(value: Double): Self = this.set("antialias", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteAntialias: Self = this.set("antialias", js.undefined)
+    def setEnableExtensionsByDefault(value: Double): Self = StObject.set(x, "enableExtensionsByDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setEnableExtensionsByDefaultUndefined: Self = StObject.set(x, "enableExtensionsByDefault", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setExplicitSwapControl(value: Double): Self = StObject.set(x, "explicitSwapControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableExtensionsByDefault(value: Double): Self = this.set("enableExtensionsByDefault", value.asInstanceOf[js.Any])
+    def setExplicitSwapControlUndefined: Self = StObject.set(x, "explicitSwapControl", js.undefined)
     
     @scala.inline
-    def deleteEnableExtensionsByDefault: Self = this.set("enableExtensionsByDefault", js.undefined)
+    def setFailIfMajorPerformanceCaveat(value: Double): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicitSwapControl(value: Double): Self = this.set("explicitSwapControl", value.asInstanceOf[js.Any])
+    def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
     
     @scala.inline
-    def deleteExplicitSwapControl: Self = this.set("explicitSwapControl", js.undefined)
+    def setMajorVersion(value: Double): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailIfMajorPerformanceCaveat(value: Double): Self = this.set("failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
+    def setMajorVersionUndefined: Self = StObject.set(x, "majorVersion", js.undefined)
     
     @scala.inline
-    def deleteFailIfMajorPerformanceCaveat: Self = this.set("failIfMajorPerformanceCaveat", js.undefined)
+    def setMinorVersion(value: Double): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorVersion(value: Double): Self = this.set("majorVersion", value.asInstanceOf[js.Any])
+    def setMinorVersionUndefined: Self = StObject.set(x, "minorVersion", js.undefined)
     
     @scala.inline
-    def deleteMajorVersion: Self = this.set("majorVersion", js.undefined)
+    def setPreferLowPowerToHighPerformance(value: Double): Self = StObject.set(x, "preferLowPowerToHighPerformance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorVersion(value: Double): Self = this.set("minorVersion", value.asInstanceOf[js.Any])
+    def setPreferLowPowerToHighPerformanceUndefined: Self = StObject.set(x, "preferLowPowerToHighPerformance", js.undefined)
     
     @scala.inline
-    def deleteMinorVersion: Self = this.set("minorVersion", js.undefined)
+    def setPremultipliedAlpha(value: Double): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferLowPowerToHighPerformance(value: Double): Self = this.set("preferLowPowerToHighPerformance", value.asInstanceOf[js.Any])
+    def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
     
     @scala.inline
-    def deletePreferLowPowerToHighPerformance: Self = this.set("preferLowPowerToHighPerformance", js.undefined)
+    def setPreserveDrawingBuffer(value: Double): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremultipliedAlpha(value: Double): Self = this.set("premultipliedAlpha", value.asInstanceOf[js.Any])
+    def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
     
     @scala.inline
-    def deletePremultipliedAlpha: Self = this.set("premultipliedAlpha", js.undefined)
+    def setRenderViaOffscreenBackBuffer(value: Double): Self = StObject.set(x, "renderViaOffscreenBackBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveDrawingBuffer(value: Double): Self = this.set("preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    def setRenderViaOffscreenBackBufferUndefined: Self = StObject.set(x, "renderViaOffscreenBackBuffer", js.undefined)
     
     @scala.inline
-    def deletePreserveDrawingBuffer: Self = this.set("preserveDrawingBuffer", js.undefined)
+    def setStencil(value: Double): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderViaOffscreenBackBuffer(value: Double): Self = this.set("renderViaOffscreenBackBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderViaOffscreenBackBuffer: Self = this.set("renderViaOffscreenBackBuffer", js.undefined)
-    
-    @scala.inline
-    def setStencil(value: Double): Self = this.set("stencil", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStencil: Self = this.set("stencil", js.undefined)
+    def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
   }
 }

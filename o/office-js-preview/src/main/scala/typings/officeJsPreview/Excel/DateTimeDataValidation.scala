@@ -9,6 +9,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.LessThanOrEqualTo
 import typings.officeJsPreview.officeJsPreviewStrings.NotBetween
 import typings.officeJsPreview.officeJsPreviewStrings.NotEqualTo
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait DateTimeDataValidation extends js.Object {
+trait DateTimeDataValidation extends StObject {
   
   /**
     *
@@ -62,32 +63,20 @@ object DateTimeDataValidation {
   }
   
   @scala.inline
-  implicit class DateTimeDataValidationOps[Self <: DateTimeDataValidation] (val x: Self) extends AnyVal {
+  implicit class DateTimeDataValidationMutableBuilder[Self <: DateTimeDataValidation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormula1(value: String | Date | Range): Self = StObject.set(x, "formula1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormula2(value: String | Date | Range): Self = StObject.set(x, "formula2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormula1(value: String | Date | Range): Self = this.set("formula1", value.asInstanceOf[js.Any])
+    def setFormula2Undefined: Self = StObject.set(x, "formula2", js.undefined)
     
     @scala.inline
     def setOperator(
       value: DataValidationOperator | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqualTo | LessThanOrEqualTo
-    ): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormula2(value: String | Date | Range): Self = this.set("formula2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormula2: Self = this.set("formula2", js.undefined)
+    ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
   }
 }

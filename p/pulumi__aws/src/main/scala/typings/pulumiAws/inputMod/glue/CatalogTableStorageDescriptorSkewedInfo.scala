@@ -2,12 +2,13 @@ package typings.pulumiAws.inputMod.glue
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CatalogTableStorageDescriptorSkewedInfo extends js.Object {
+trait CatalogTableStorageDescriptorSkewedInfo extends StObject {
   
   /**
     * A list of names of columns that contain skewed values.
@@ -33,42 +34,30 @@ object CatalogTableStorageDescriptorSkewedInfo {
   }
   
   @scala.inline
-  implicit class CatalogTableStorageDescriptorSkewedInfoOps[Self <: CatalogTableStorageDescriptorSkewedInfo] (val x: Self) extends AnyVal {
+  implicit class CatalogTableStorageDescriptorSkewedInfoMutableBuilder[Self <: CatalogTableStorageDescriptorSkewedInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSkewedColumnNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "skewedColumnNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSkewedColumnNamesUndefined: Self = StObject.set(x, "skewedColumnNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkewedColumnNamesVarargs(value: Input[String]*): Self = StObject.set(x, "skewedColumnNames", js.Array(value :_*))
     
     @scala.inline
-    def setSkewedColumnNamesVarargs(value: Input[String]*): Self = this.set("skewedColumnNames", js.Array(value :_*))
+    def setSkewedColumnValueLocationMaps(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "skewedColumnValueLocationMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkewedColumnNames(value: Input[js.Array[Input[String]]]): Self = this.set("skewedColumnNames", value.asInstanceOf[js.Any])
+    def setSkewedColumnValueLocationMapsUndefined: Self = StObject.set(x, "skewedColumnValueLocationMaps", js.undefined)
     
     @scala.inline
-    def deleteSkewedColumnNames: Self = this.set("skewedColumnNames", js.undefined)
+    def setSkewedColumnValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "skewedColumnValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkewedColumnValueLocationMaps(value: Input[StringDictionary[Input[String]]]): Self = this.set("skewedColumnValueLocationMaps", value.asInstanceOf[js.Any])
+    def setSkewedColumnValuesUndefined: Self = StObject.set(x, "skewedColumnValues", js.undefined)
     
     @scala.inline
-    def deleteSkewedColumnValueLocationMaps: Self = this.set("skewedColumnValueLocationMaps", js.undefined)
-    
-    @scala.inline
-    def setSkewedColumnValuesVarargs(value: Input[String]*): Self = this.set("skewedColumnValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkewedColumnValues(value: Input[js.Array[Input[String]]]): Self = this.set("skewedColumnValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkewedColumnValues: Self = this.set("skewedColumnValues", js.undefined)
+    def setSkewedColumnValuesVarargs(value: Input[String]*): Self = StObject.set(x, "skewedColumnValues", js.Array(value :_*))
   }
 }

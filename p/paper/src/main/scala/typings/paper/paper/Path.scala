@@ -1,5 +1,6 @@
 package typings.paper.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -323,9 +324,7 @@ trait Path extends PathItem {
   def toShape(): Shape = js.native
   def toShape(insert: Boolean): Shape = js.native
 }
-@JSGlobal("paper.Path")
-@js.native
-object Path extends js.Object {
+object Path {
   
   type Arc = Path
   

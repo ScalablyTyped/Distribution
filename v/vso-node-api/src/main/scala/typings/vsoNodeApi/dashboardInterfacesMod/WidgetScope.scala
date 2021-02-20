@@ -1,26 +1,24 @@
 package typings.vsoNodeApi.dashboardInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WidgetScope extends js.Object
+sealed trait WidgetScope extends StObject
 @JSImport("vso-node-api/interfaces/DashboardInterfaces", "WidgetScope")
 @js.native
-object WidgetScope extends js.Object {
+object WidgetScope extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WidgetScope with Double] = js.native
   
   @js.native
   sealed trait Collection_User extends WidgetScope
-  /* 0 */ @js.native
-  object Collection_User extends TopLevel[Collection_User with Double]
+  /* 0 */ val Collection_User: typings.vsoNodeApi.dashboardInterfacesMod.WidgetScope.Collection_User with Double = js.native
   
   @js.native
   sealed trait Project_Team extends WidgetScope
-  /* 1 */ @js.native
-  object Project_Team extends TopLevel[Project_Team with Double]
+  /* 1 */ val Project_Team: typings.vsoNodeApi.dashboardInterfacesMod.WidgetScope.Project_Team with Double = js.native
 }

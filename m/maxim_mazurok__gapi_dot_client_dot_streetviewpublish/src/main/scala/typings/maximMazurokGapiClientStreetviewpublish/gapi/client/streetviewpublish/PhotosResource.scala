@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientStreetviewpublish.anon.Filter
 import typings.maximMazurokGapiClientStreetviewpublish.anon.LanguageCode
 import typings.maximMazurokGapiClientStreetviewpublish.anon.PrettyPrint
 import typings.maximMazurokGapiClientStreetviewpublish.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhotosResource extends js.Object {
+trait PhotosResource extends StObject {
   
   def batchDelete(request: Alt, body: BatchDeletePhotosRequest): Request[BatchDeletePhotosResponse] = js.native
   /**

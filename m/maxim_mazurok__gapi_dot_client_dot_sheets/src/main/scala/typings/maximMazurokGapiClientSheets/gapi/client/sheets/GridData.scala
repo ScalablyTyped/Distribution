@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridData extends js.Object {
+trait GridData extends StObject {
   
   /** Metadata about the requested columns in the grid, starting with the column in start_column. */
   var columnMetadata: js.UndefOr[js.Array[DimensionProperties]] = js.native
@@ -31,57 +32,45 @@ object GridData {
   }
   
   @scala.inline
-  implicit class GridDataOps[Self <: GridData] (val x: Self) extends AnyVal {
+  implicit class GridDataMutableBuilder[Self <: GridData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnMetadata(value: js.Array[DimensionProperties]): Self = StObject.set(x, "columnMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnMetadataUndefined: Self = StObject.set(x, "columnMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "columnMetadata", js.Array(value :_*))
     
     @scala.inline
-    def setColumnMetadataVarargs(value: DimensionProperties*): Self = this.set("columnMetadata", js.Array(value :_*))
+    def setRowData(value: js.Array[RowData]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnMetadata(value: js.Array[DimensionProperties]): Self = this.set("columnMetadata", value.asInstanceOf[js.Any])
+    def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
     
     @scala.inline
-    def deleteColumnMetadata: Self = this.set("columnMetadata", js.undefined)
+    def setRowDataVarargs(value: RowData*): Self = StObject.set(x, "rowData", js.Array(value :_*))
     
     @scala.inline
-    def setRowDataVarargs(value: RowData*): Self = this.set("rowData", js.Array(value :_*))
+    def setRowMetadata(value: js.Array[DimensionProperties]): Self = StObject.set(x, "rowMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowData(value: js.Array[RowData]): Self = this.set("rowData", value.asInstanceOf[js.Any])
+    def setRowMetadataUndefined: Self = StObject.set(x, "rowMetadata", js.undefined)
     
     @scala.inline
-    def deleteRowData: Self = this.set("rowData", js.undefined)
+    def setRowMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "rowMetadata", js.Array(value :_*))
     
     @scala.inline
-    def setRowMetadataVarargs(value: DimensionProperties*): Self = this.set("rowMetadata", js.Array(value :_*))
+    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowMetadata(value: js.Array[DimensionProperties]): Self = this.set("rowMetadata", value.asInstanceOf[js.Any])
+    def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
     
     @scala.inline
-    def deleteRowMetadata: Self = this.set("rowMetadata", js.undefined)
+    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartColumn: Self = this.set("startColumn", js.undefined)
-    
-    @scala.inline
-    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRow: Self = this.set("startRow", js.undefined)
+    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
   }
 }

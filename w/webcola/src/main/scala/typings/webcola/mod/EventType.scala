@@ -1,12 +1,13 @@
 package typings.webcola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "EventType")
 @js.native
-object EventType extends js.Object {
+object EventType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.webcola.layoutMod.EventType with Double] = js.native

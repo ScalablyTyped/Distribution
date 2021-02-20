@@ -1,14 +1,21 @@
 package typings.reactWindow.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-window", "VariableSizeList")
 @js.native
-class VariableSizeList ()
+class VariableSizeList protected ()
   extends Component[VariableSizeListProps, js.Object, js.Any] {
+  def this(props: VariableSizeListProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: VariableSizeListProps, context: js.Any) = this()
   
   /**
     * VariableSizeList caches offsets and measurements for each index for performance purposes.

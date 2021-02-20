@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LineSpacingRule extends js.Object
+sealed trait LineSpacingRule extends StObject
 /** Specifies options for line-spacing rules. */
 @JSGlobal("Windows.UI.Text.LineSpacingRule")
 @js.native
-object LineSpacingRule extends js.Object {
+object LineSpacingRule extends StObject {
   
   /** The line-spacing value specifies the spacing from one line to the next. However, if the value is less than single spacing, text is single spaced. */
   @js.native

@@ -8,14 +8,14 @@ import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.OnDestroy
 import typings.ngxInfiniteScroll.modelsMod.IInfiniteScrollAction
 import typings.ngxInfiniteScroll.modelsMod.IInfiniteScrollEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ngx-infinite-scroll/src/modules/infinite-scroll.directive", JSImport.Namespace)
-@js.native
-object infiniteScrollDirectiveMod extends js.Object {
+object infiniteScrollDirectiveMod {
   
+  @JSImport("ngx-infinite-scroll/src/modules/infinite-scroll.directive", "InfiniteScrollDirective")
   @js.native
   class InfiniteScrollDirective protected ()
     extends OnDestroy

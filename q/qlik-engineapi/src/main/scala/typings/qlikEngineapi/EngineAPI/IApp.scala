@@ -10,6 +10,7 @@ import typings.qlikEngineapi.anon.Qk
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import typings.qlikEngineapi.qlikEngineapiStrings.SlashqListObjectDef
 import typings.std.MediaList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

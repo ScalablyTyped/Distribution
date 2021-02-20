@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BundleTask extends js.Object {
+trait BundleTask extends StObject {
   
   /**
     * The ID of the bundle task.
@@ -56,66 +57,54 @@ object BundleTask {
   }
   
   @scala.inline
-  implicit class BundleTaskOps[Self <: BundleTask] (val x: Self) extends AnyVal {
+  implicit class BundleTaskMutableBuilder[Self <: BundleTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: String): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdUndefined: Self = StObject.set(x, "BundleId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBundleTaskError(value: BundleTaskError): Self = StObject.set(x, "BundleTaskError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: String): Self = this.set("BundleId", value.asInstanceOf[js.Any])
+    def setBundleTaskErrorUndefined: Self = StObject.set(x, "BundleTaskError", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("BundleId", js.undefined)
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleTaskError(value: BundleTaskError): Self = this.set("BundleTaskError", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteBundleTaskError: Self = this.set("BundleTaskError", js.undefined)
+    def setProgress(value: String): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: String): Self = this.set("Progress", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("Progress", js.undefined)
+    def setState(value: BundleTaskState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStorage(value: Storage): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: BundleTaskState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setUpdateTime(value: DateTime): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorage(value: Storage): Self = this.set("Storage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorage: Self = this.set("Storage", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: DateTime): Self = this.set("UpdateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("UpdateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
   }
 }

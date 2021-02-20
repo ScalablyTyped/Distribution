@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Body extends js.Object {
+trait Body extends StObject {
   
   def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
   
@@ -37,42 +38,30 @@ object Body {
   }
   
   @scala.inline
-  implicit class BodyOps[Self <: Body] (val x: Self) extends AnyVal {
+  implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayBuffer(value: () => js.Promise[ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlob(value: () => js.Promise[Blob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: ReadableStream[Uint8Array]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayBuffer(value: () => js.Promise[ArrayBuffer]): Self = this.set("arrayBuffer", js.Any.fromFunction0(value))
+    def setBodyNull: Self = StObject.set(x, "body", null)
     
     @scala.inline
-    def setBlob(value: () => js.Promise[Blob]): Self = this.set("blob", js.Any.fromFunction0(value))
+    def setBodyUsed(value: scala.Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyUsed(value: scala.Boolean): Self = this.set("bodyUsed", value.asInstanceOf[js.Any])
+    def setFormData(value: () => js.Promise[FormData]): Self = StObject.set(x, "formData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFormData(value: () => js.Promise[FormData]): Self = this.set("formData", js.Any.fromFunction0(value))
+    def setJson(value: () => js.Promise[_]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setJson(value: () => js.Promise[_]): Self = this.set("json", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setText(value: () => js.Promise[java.lang.String]): Self = this.set("text", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setBody(value: ReadableStream[Uint8Array]): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBodyNull: Self = this.set("body", null)
+    def setText(value: () => js.Promise[java.lang.String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
   }
 }

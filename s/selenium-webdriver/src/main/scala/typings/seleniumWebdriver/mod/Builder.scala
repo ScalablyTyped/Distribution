@@ -2,6 +2,7 @@ package typings.seleniumWebdriver.mod
 
 import typings.seleniumWebdriver.chromeMod.ServiceBuilder
 import typings.seleniumWebdriver.loggingMod.Preferences
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @constructor
   */
-class Builder () extends js.Object {
+class Builder () extends StObject {
   
   /**
     * Creates a new WebDriver client based on this builder's current

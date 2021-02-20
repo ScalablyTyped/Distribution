@@ -1,6 +1,7 @@
 package typings.umbraco.umbraco.resources
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description Handles loading the dashboard manifest
   **/
 @js.native
-trait IDashboardResource extends js.Object {
+trait IDashboardResource extends StObject {
   
   /**
     * @ngdoc method
@@ -36,21 +37,9 @@ object IDashboardResource {
   }
   
   @scala.inline
-  implicit class IDashboardResourceOps[Self <: IDashboardResource] (val x: Self) extends AnyVal {
+  implicit class IDashboardResourceMutableBuilder[Self <: IDashboardResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetDashboard(value: String => IPromise[IResourcePromise]): Self = this.set("getDashboard", js.Any.fromFunction1(value))
+    def setGetDashboard(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getDashboard", js.Any.fromFunction1(value))
   }
 }

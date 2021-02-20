@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.DOM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetNodesForSubtreeByStyleRequest extends js.Object {
+trait GetNodesForSubtreeByStyleRequest extends StObject {
   
   /**
     * The style to filter nodes by (includes nodes if any of properties matches).
@@ -32,33 +33,21 @@ object GetNodesForSubtreeByStyleRequest {
   }
   
   @scala.inline
-  implicit class GetNodesForSubtreeByStyleRequestOps[Self <: GetNodesForSubtreeByStyleRequest] (val x: Self) extends AnyVal {
+  implicit class GetNodesForSubtreeByStyleRequestMutableBuilder[Self <: GetNodesForSubtreeByStyleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputedStyles(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputedStylesVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "computedStyles", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputedStylesVarargs(value: CSSComputedStyleProperty*): Self = this.set("computedStyles", js.Array(value :_*))
+    def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputedStyles(value: js.Array[CSSComputedStyleProperty]): Self = this.set("computedStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeId(value: NodeId): Self = this.set("nodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPierce(value: Boolean): Self = this.set("pierce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePierce: Self = this.set("pierce", js.undefined)
+    def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
   }
 }

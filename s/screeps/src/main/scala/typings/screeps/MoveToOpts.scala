@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,42 +42,30 @@ object MoveToOpts {
   }
   
   @scala.inline
-  implicit class MoveToOptsOps[Self <: MoveToOpts] (val x: Self) extends AnyVal {
+  implicit class MoveToOptsMutableBuilder[Self <: MoveToOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoPathFinding(value: Boolean): Self = StObject.set(x, "noPathFinding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoPathFindingUndefined: Self = StObject.set(x, "noPathFinding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReusePath(value: Double): Self = StObject.set(x, "reusePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoPathFinding(value: Boolean): Self = this.set("noPathFinding", value.asInstanceOf[js.Any])
+    def setReusePathUndefined: Self = StObject.set(x, "reusePath", js.undefined)
     
     @scala.inline
-    def deleteNoPathFinding: Self = this.set("noPathFinding", js.undefined)
+    def setSerializeMemory(value: Boolean): Self = StObject.set(x, "serializeMemory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReusePath(value: Double): Self = this.set("reusePath", value.asInstanceOf[js.Any])
+    def setSerializeMemoryUndefined: Self = StObject.set(x, "serializeMemory", js.undefined)
     
     @scala.inline
-    def deleteReusePath: Self = this.set("reusePath", js.undefined)
+    def setVisualizePathStyle(value: PolyStyle): Self = StObject.set(x, "visualizePathStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerializeMemory(value: Boolean): Self = this.set("serializeMemory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSerializeMemory: Self = this.set("serializeMemory", js.undefined)
-    
-    @scala.inline
-    def setVisualizePathStyle(value: PolyStyle): Self = this.set("visualizePathStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisualizePathStyle: Self = this.set("visualizePathStyle", js.undefined)
+    def setVisualizePathStyleUndefined: Self = StObject.set(x, "visualizePathStyle", js.undefined)
   }
 }

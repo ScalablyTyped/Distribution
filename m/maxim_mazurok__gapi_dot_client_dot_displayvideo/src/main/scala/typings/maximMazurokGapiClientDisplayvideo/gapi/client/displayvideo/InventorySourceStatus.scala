@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventorySourceStatus extends js.Object {
+trait InventorySourceStatus extends StObject {
   
   /**
     * Output only. The configuration status of the inventory source. Only applicable for guaranteed inventory sources. Acceptable values are `INVENTORY_SOURCE_CONFIG_STATUS_PENDING` and
@@ -44,48 +45,36 @@ object InventorySourceStatus {
   }
   
   @scala.inline
-  implicit class InventorySourceStatusOps[Self <: InventorySourceStatus] (val x: Self) extends AnyVal {
+  implicit class InventorySourceStatusMutableBuilder[Self <: InventorySourceStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigStatus(value: String): Self = StObject.set(x, "configStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigStatusUndefined: Self = StObject.set(x, "configStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityPauseReason(value: String): Self = StObject.set(x, "entityPauseReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigStatus(value: String): Self = this.set("configStatus", value.asInstanceOf[js.Any])
+    def setEntityPauseReasonUndefined: Self = StObject.set(x, "entityPauseReason", js.undefined)
     
     @scala.inline
-    def deleteConfigStatus: Self = this.set("configStatus", js.undefined)
+    def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityPauseReason(value: String): Self = this.set("entityPauseReason", value.asInstanceOf[js.Any])
+    def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
     
     @scala.inline
-    def deleteEntityPauseReason: Self = this.set("entityPauseReason", js.undefined)
+    def setSellerPauseReason(value: String): Self = StObject.set(x, "sellerPauseReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityStatus(value: String): Self = this.set("entityStatus", value.asInstanceOf[js.Any])
+    def setSellerPauseReasonUndefined: Self = StObject.set(x, "sellerPauseReason", js.undefined)
     
     @scala.inline
-    def deleteEntityStatus: Self = this.set("entityStatus", js.undefined)
+    def setSellerStatus(value: String): Self = StObject.set(x, "sellerStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSellerPauseReason(value: String): Self = this.set("sellerPauseReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSellerPauseReason: Self = this.set("sellerPauseReason", js.undefined)
-    
-    @scala.inline
-    def setSellerStatus(value: String): Self = this.set("sellerStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSellerStatus: Self = this.set("sellerStatus", js.undefined)
+    def setSellerStatusUndefined: Self = StObject.set(x, "sellerStatus", js.undefined)
   }
 }

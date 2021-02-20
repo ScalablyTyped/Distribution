@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -215,261 +216,249 @@ object ExpansionProfile {
   }
   
   @scala.inline
-  implicit class ExpansionProfileOps[Self <: ExpansionProfile] (val x: Self) extends AnyVal {
+  implicit class ExpansionProfileMutableBuilder[Self <: ExpansionProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveOnly(value: Boolean): Self = StObject.set(x, "activeOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveOnlyUndefined: Self = StObject.set(x, "activeOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def set_activeOnly(value: Element): Self = this.set("_activeOnly", value.asInstanceOf[js.Any])
+    def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
     @scala.inline
-    def delete_activeOnly: Self = this.set("_activeOnly", js.undefined)
+    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def setDescription(value: markdown): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setDesignation(value: ExpansionProfileDesignation): Self = StObject.set(x, "designation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_displayLanguage(value: Element): Self = this.set("_displayLanguage", value.asInstanceOf[js.Any])
+    def setDesignationUndefined: Self = StObject.set(x, "designation", js.undefined)
     
     @scala.inline
-    def delete_displayLanguage: Self = this.set("_displayLanguage", js.undefined)
+    def setDisplayLanguage(value: code): Self = StObject.set(x, "displayLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_excludeNested(value: Element): Self = this.set("_excludeNested", value.asInstanceOf[js.Any])
+    def setDisplayLanguageUndefined: Self = StObject.set(x, "displayLanguage", js.undefined)
     
     @scala.inline
-    def delete_excludeNested: Self = this.set("_excludeNested", js.undefined)
+    def setExcludeNested(value: Boolean): Self = StObject.set(x, "excludeNested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_excludeNotForUI(value: Element): Self = this.set("_excludeNotForUI", value.asInstanceOf[js.Any])
+    def setExcludeNestedUndefined: Self = StObject.set(x, "excludeNested", js.undefined)
     
     @scala.inline
-    def delete_excludeNotForUI: Self = this.set("_excludeNotForUI", js.undefined)
+    def setExcludeNotForUI(value: Boolean): Self = StObject.set(x, "excludeNotForUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_excludePostCoordinated(value: Element): Self = this.set("_excludePostCoordinated", value.asInstanceOf[js.Any])
+    def setExcludeNotForUIUndefined: Self = StObject.set(x, "excludeNotForUI", js.undefined)
     
     @scala.inline
-    def delete_excludePostCoordinated: Self = this.set("_excludePostCoordinated", js.undefined)
+    def setExcludePostCoordinated(value: Boolean): Self = StObject.set(x, "excludePostCoordinated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_experimental(value: Element): Self = this.set("_experimental", value.asInstanceOf[js.Any])
+    def setExcludePostCoordinatedUndefined: Self = StObject.set(x, "excludePostCoordinated", js.undefined)
     
     @scala.inline
-    def delete_experimental: Self = this.set("_experimental", js.undefined)
+    def setExcludedSystem(value: ExpansionProfileExcludedSystem): Self = StObject.set(x, "excludedSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_includeDefinition(value: Element): Self = this.set("_includeDefinition", value.asInstanceOf[js.Any])
+    def setExcludedSystemUndefined: Self = StObject.set(x, "excludedSystem", js.undefined)
     
     @scala.inline
-    def delete_includeDefinition: Self = this.set("_includeDefinition", js.undefined)
+    def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_includeDesignations(value: Element): Self = this.set("_includeDesignations", value.asInstanceOf[js.Any])
+    def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
     @scala.inline
-    def delete_includeDesignations: Self = this.set("_includeDesignations", js.undefined)
+    def setFixedVersion(value: js.Array[ExpansionProfileFixedVersion]): Self = StObject.set(x, "fixedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_limitedExpansion(value: Element): Self = this.set("_limitedExpansion", value.asInstanceOf[js.Any])
+    def setFixedVersionUndefined: Self = StObject.set(x, "fixedVersion", js.undefined)
     
     @scala.inline
-    def delete_limitedExpansion: Self = this.set("_limitedExpansion", js.undefined)
+    def setFixedVersionVarargs(value: ExpansionProfileFixedVersion*): Self = StObject.set(x, "fixedVersion", js.Array(value :_*))
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def set_publisher(value: Element): Self = this.set("_publisher", value.asInstanceOf[js.Any])
+    def setIncludeDefinition(value: Boolean): Self = StObject.set(x, "includeDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_publisher: Self = this.set("_publisher", js.undefined)
+    def setIncludeDefinitionUndefined: Self = StObject.set(x, "includeDefinition", js.undefined)
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setIncludeDesignations(value: Boolean): Self = StObject.set(x, "includeDesignations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setIncludeDesignationsUndefined: Self = StObject.set(x, "includeDesignations", js.undefined)
     
     @scala.inline
-    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    def setJurisdiction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_url: Self = this.set("_url", js.undefined)
+    def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
     
     @scala.inline
-    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    def setJurisdictionVarargs(value: CodeableConcept*): Self = StObject.set(x, "jurisdiction", js.Array(value :_*))
     
     @scala.inline
-    def delete_version: Self = this.set("_version", js.undefined)
+    def setLimitedExpansion(value: Boolean): Self = StObject.set(x, "limitedExpansion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveOnly(value: Boolean): Self = this.set("activeOnly", value.asInstanceOf[js.Any])
+    def setLimitedExpansionUndefined: Self = StObject.set(x, "limitedExpansion", js.undefined)
     
     @scala.inline
-    def deleteActiveOnly: Self = this.set("activeOnly", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactVarargs(value: ContactDetail*): Self = this.set("contact", js.Array(value :_*))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setContact(value: js.Array[ContactDetail]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     @scala.inline
-    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: markdown): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setUseContext(value: js.Array[UsageContext]): Self = StObject.set(x, "useContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesignation(value: ExpansionProfileDesignation): Self = this.set("designation", value.asInstanceOf[js.Any])
+    def setUseContextUndefined: Self = StObject.set(x, "useContext", js.undefined)
     
     @scala.inline
-    def deleteDesignation: Self = this.set("designation", js.undefined)
+    def setUseContextVarargs(value: UsageContext*): Self = StObject.set(x, "useContext", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayLanguage(value: code): Self = this.set("displayLanguage", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayLanguage: Self = this.set("displayLanguage", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def setExcludeNested(value: Boolean): Self = this.set("excludeNested", value.asInstanceOf[js.Any])
+    def set_activeOnly(value: Element): Self = StObject.set(x, "_activeOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcludeNested: Self = this.set("excludeNested", js.undefined)
+    def set_activeOnlyUndefined: Self = StObject.set(x, "_activeOnly", js.undefined)
     
     @scala.inline
-    def setExcludeNotForUI(value: Boolean): Self = this.set("excludeNotForUI", value.asInstanceOf[js.Any])
+    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcludeNotForUI: Self = this.set("excludeNotForUI", js.undefined)
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
     @scala.inline
-    def setExcludePostCoordinated(value: Boolean): Self = this.set("excludePostCoordinated", value.asInstanceOf[js.Any])
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcludePostCoordinated: Self = this.set("excludePostCoordinated", js.undefined)
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def setExcludedSystem(value: ExpansionProfileExcludedSystem): Self = this.set("excludedSystem", value.asInstanceOf[js.Any])
+    def set_displayLanguage(value: Element): Self = StObject.set(x, "_displayLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcludedSystem: Self = this.set("excludedSystem", js.undefined)
+    def set_displayLanguageUndefined: Self = StObject.set(x, "_displayLanguage", js.undefined)
     
     @scala.inline
-    def setExperimental(value: Boolean): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    def set_excludeNested(value: Element): Self = StObject.set(x, "_excludeNested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    def set_excludeNestedUndefined: Self = StObject.set(x, "_excludeNested", js.undefined)
     
     @scala.inline
-    def setFixedVersionVarargs(value: ExpansionProfileFixedVersion*): Self = this.set("fixedVersion", js.Array(value :_*))
+    def set_excludeNotForUI(value: Element): Self = StObject.set(x, "_excludeNotForUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedVersion(value: js.Array[ExpansionProfileFixedVersion]): Self = this.set("fixedVersion", value.asInstanceOf[js.Any])
+    def set_excludeNotForUIUndefined: Self = StObject.set(x, "_excludeNotForUI", js.undefined)
     
     @scala.inline
-    def deleteFixedVersion: Self = this.set("fixedVersion", js.undefined)
+    def set_excludePostCoordinated(value: Element): Self = StObject.set(x, "_excludePostCoordinated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def set_excludePostCoordinatedUndefined: Self = StObject.set(x, "_excludePostCoordinated", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def set_experimental(value: Element): Self = StObject.set(x, "_experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDefinition(value: Boolean): Self = this.set("includeDefinition", value.asInstanceOf[js.Any])
+    def set_experimentalUndefined: Self = StObject.set(x, "_experimental", js.undefined)
     
     @scala.inline
-    def deleteIncludeDefinition: Self = this.set("includeDefinition", js.undefined)
+    def set_includeDefinition(value: Element): Self = StObject.set(x, "_includeDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDesignations(value: Boolean): Self = this.set("includeDesignations", value.asInstanceOf[js.Any])
+    def set_includeDefinitionUndefined: Self = StObject.set(x, "_includeDefinition", js.undefined)
     
     @scala.inline
-    def deleteIncludeDesignations: Self = this.set("includeDesignations", js.undefined)
+    def set_includeDesignations(value: Element): Self = StObject.set(x, "_includeDesignations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdictionVarargs(value: CodeableConcept*): Self = this.set("jurisdiction", js.Array(value :_*))
+    def set_includeDesignationsUndefined: Self = StObject.set(x, "_includeDesignations", js.undefined)
     
     @scala.inline
-    def setJurisdiction(value: js.Array[CodeableConcept]): Self = this.set("jurisdiction", value.asInstanceOf[js.Any])
+    def set_limitedExpansion(value: Element): Self = StObject.set(x, "_limitedExpansion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJurisdiction: Self = this.set("jurisdiction", js.undefined)
+    def set_limitedExpansionUndefined: Self = StObject.set(x, "_limitedExpansion", js.undefined)
     
     @scala.inline
-    def setLimitedExpansion(value: Boolean): Self = this.set("limitedExpansion", value.asInstanceOf[js.Any])
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimitedExpansion: Self = this.set("limitedExpansion", js.undefined)
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def set_publisherUndefined: Self = StObject.set(x, "_publisher", js.undefined)
     
     @scala.inline
-    def setPublisher(value: String): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublisher: Self = this.set("publisher", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
     @scala.inline
-    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
+    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     @scala.inline
-    def setUseContextVarargs(value: UsageContext*): Self = this.set("useContext", js.Array(value :_*))
+    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseContext(value: js.Array[UsageContext]): Self = this.set("useContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseContext: Self = this.set("useContext", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

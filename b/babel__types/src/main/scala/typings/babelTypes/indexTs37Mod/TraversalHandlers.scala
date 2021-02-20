@@ -1,11 +1,12 @@
 package typings.babelTypes.indexTs37Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TraversalHandlers[T] extends js.Object {
+trait TraversalHandlers[T] extends StObject {
   
   var enter: js.UndefOr[TraversalHandler[T]] = js.native
   
@@ -20,30 +21,18 @@ object TraversalHandlers {
   }
   
   @scala.inline
-  implicit class TraversalHandlersOps[Self <: TraversalHandlers[_], T] (val x: Self with TraversalHandlers[T]) extends AnyVal {
+  implicit class TraversalHandlersMutableBuilder[Self <: TraversalHandlers[_], T] (val x: Self with TraversalHandlers[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnter(value: TraversalHandler[T]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExit(value: TraversalHandler[T]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnter(value: TraversalHandler[T]): Self = this.set("enter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnter: Self = this.set("enter", js.undefined)
-    
-    @scala.inline
-    def setExit(value: TraversalHandler[T]): Self = this.set("exit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExit: Self = this.set("exit", js.undefined)
+    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
   }
 }

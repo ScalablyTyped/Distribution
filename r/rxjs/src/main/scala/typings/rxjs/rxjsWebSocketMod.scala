@@ -3,17 +3,14 @@ package typings.rxjs
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.Observer
 import typings.rxjs.webSocketSubjectMod.WebSocketSubjectConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/webSocket", JSImport.Namespace)
-@js.native
-object rxjsWebSocketMod extends js.Object {
+object rxjsWebSocketMod {
   
-  def webSocket[T](urlConfigOrSource: String): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = js.native
-  def webSocket[T](urlConfigOrSource: WebSocketSubjectConfig[T]): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = js.native
-  
+  @JSImport("rxjs/webSocket", "WebSocketSubject")
   @js.native
   class WebSocketSubject[T] protected ()
     extends typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] {
@@ -24,4 +21,11 @@ object rxjsWebSocketMod extends js.Object {
     def this(urlConfigOrSource: Observable[T], destination: Observer[T]) = this()
     def this(urlConfigOrSource: WebSocketSubjectConfig[T], destination: Observer[T]) = this()
   }
+  
+  @JSImport("rxjs/webSocket", "webSocket")
+  @js.native
+  def webSocket[T](urlConfigOrSource: String): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = js.native
+  @JSImport("rxjs/webSocket", "webSocket")
+  @js.native
+  def webSocket[T](urlConfigOrSource: WebSocketSubjectConfig[T]): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = js.native
 }

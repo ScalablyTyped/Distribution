@@ -6,16 +6,21 @@ import typings.sqltoolsFormatter.anon.Regex
 import typings.sqltoolsFormatter.typesMod.Token
 import typings.sqltoolsFormatter.typesMod.TokenizerConfig
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sqltools/formatter/lib/core/Tokenizer", JSImport.Namespace)
-@js.native
-object tokenizerMod extends js.Object {
+object tokenizerMod {
+  
+  @JSImport("@sqltools/formatter/lib/core/Tokenizer", JSImport.Default)
+  @js.native
+  class default protected () extends Tokenizer {
+    def this(cfg: TokenizerConfig) = this()
+  }
   
   @js.native
-  trait Tokenizer extends js.Object {
+  trait Tokenizer extends StObject {
     
     var AMBIGUOS_OPERATOR_REGEX: RegExp = js.native
     
@@ -123,10 +128,5 @@ object tokenizerMod extends js.Object {
     def getWordToken(input: String): Token = js.native
     
     def tokenize(input: String): js.Array[Token] = js.native
-  }
-  
-  @js.native
-  class default protected () extends Tokenizer {
-    def this(cfg: TokenizerConfig) = this()
   }
 }

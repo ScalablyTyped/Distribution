@@ -1,5 +1,6 @@
 package typings.luaparse.astMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,36 +31,24 @@ object ForGenericStatement {
   }
   
   @scala.inline
-  implicit class ForGenericStatementOps[Self <: ForGenericStatement] (val x: Self) extends AnyVal {
+  implicit class ForGenericStatementMutableBuilder[Self <: ForGenericStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIterators(value: js.Array[Expression]): Self = StObject.set(x, "iterators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyVarargs(value: Statement*): Self = this.set("body", js.Array(value :_*))
+    def setIteratorsVarargs(value: Expression*): Self = StObject.set(x, "iterators", js.Array(value :_*))
     
     @scala.inline
-    def setBody(value: js.Array[Statement]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setVariables(value: js.Array[Identifier]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIteratorsVarargs(value: Expression*): Self = this.set("iterators", js.Array(value :_*))
-    
-    @scala.inline
-    def setIterators(value: js.Array[Expression]): Self = this.set("iterators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariablesVarargs(value: Identifier*): Self = this.set("variables", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariables(value: js.Array[Identifier]): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariablesVarargs(value: Identifier*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

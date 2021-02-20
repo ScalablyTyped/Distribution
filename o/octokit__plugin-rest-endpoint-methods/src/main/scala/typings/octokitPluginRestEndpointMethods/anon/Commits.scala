@@ -1,11 +1,12 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Commits extends js.Object {
+trait Commits extends StObject {
   
   var code: `1031` = js.native
   
@@ -38,39 +39,27 @@ object Commits {
   }
   
   @scala.inline
-  implicit class CommitsOps[Self <: Commits] (val x: Self) extends AnyVal {
+  implicit class CommitsMutableBuilder[Self <: Commits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: `1031`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommits(value: `1032`): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuesAndPullRequests(value: `1033`): Self = StObject.set(x, "issuesAndPullRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: `1031`): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setLabels(value: `1034`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommits(value: `1032`): Self = this.set("commits", value.asInstanceOf[js.Any])
+    def setRepos(value: `1035`): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuesAndPullRequests(value: `1033`): Self = this.set("issuesAndPullRequests", value.asInstanceOf[js.Any])
+    def setTopics(value: `1036`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: `1034`): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepos(value: `1035`): Self = this.set("repos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopics(value: `1036`): Self = this.set("topics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsers(value: `1037`): Self = this.set("users", value.asInstanceOf[js.Any])
+    def setUsers(value: `1037`): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }
 }

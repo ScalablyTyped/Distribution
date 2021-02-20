@@ -3,12 +3,13 @@ package typings.minecraftScriptingTypesShared
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedBooleans.`true`
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.entity
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.item_entity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISystemBase extends js.Object {
+trait ISystemBase extends StObject {
   
   /**
     * By default no filters are added. This will allow queries to capture all entities.

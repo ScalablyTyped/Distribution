@@ -1,18 +1,28 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Shaders/glowMapGeneration.vertex", JSImport.Namespace)
-@js.native
-object glowMapGenerationVertexMod extends js.Object {
+object glowMapGenerationVertexMod {
   
-  @js.native
-  object glowMapGenerationVertexShader extends js.Object {
+  object glowMapGenerationVertexShader {
     
-    var name: String = js.native
+    @JSImport("babylonjs/Shaders/glowMapGeneration.vertex", "glowMapGenerationVertexShader")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var shader: String = js.native
+    @JSImport("babylonjs/Shaders/glowMapGeneration.vertex", "glowMapGenerationVertexShader.name")
+    @js.native
+    def name: String = js.native
+    @scala.inline
+    def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Shaders/glowMapGeneration.vertex", "glowMapGenerationVertexShader.shader")
+    @js.native
+    def shader: String = js.native
+    @scala.inline
+    def shader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shader")(x.asInstanceOf[js.Any])
   }
 }

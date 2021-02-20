@@ -1,12 +1,13 @@
 package typings.playcanvas.anon
 
 import typings.playcanvas.pc.TextureAtlas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Atlas extends js.Object {
+trait Atlas extends StObject {
   
   var atlas: js.UndefOr[TextureAtlas] = js.native
   
@@ -25,45 +26,33 @@ object Atlas {
   }
   
   @scala.inline
-  implicit class AtlasOps[Self <: Atlas] (val x: Self) extends AnyVal {
+  implicit class AtlasMutableBuilder[Self <: Atlas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtlas(value: TextureAtlas): Self = StObject.set(x, "atlas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtlasUndefined: Self = StObject.set(x, "atlas", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameKeys(value: js.Array[String]): Self = StObject.set(x, "frameKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtlas(value: TextureAtlas): Self = this.set("atlas", value.asInstanceOf[js.Any])
+    def setFrameKeysUndefined: Self = StObject.set(x, "frameKeys", js.undefined)
     
     @scala.inline
-    def deleteAtlas: Self = this.set("atlas", js.undefined)
+    def setFrameKeysVarargs(value: String*): Self = StObject.set(x, "frameKeys", js.Array(value :_*))
     
     @scala.inline
-    def setFrameKeysVarargs(value: String*): Self = this.set("frameKeys", js.Array(value :_*))
+    def setPixelsPerUnit(value: Double): Self = StObject.set(x, "pixelsPerUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameKeys(value: js.Array[String]): Self = this.set("frameKeys", value.asInstanceOf[js.Any])
+    def setPixelsPerUnitUndefined: Self = StObject.set(x, "pixelsPerUnit", js.undefined)
     
     @scala.inline
-    def deleteFrameKeys: Self = this.set("frameKeys", js.undefined)
+    def setRenderMode(value: Double): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelsPerUnit(value: Double): Self = this.set("pixelsPerUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePixelsPerUnit: Self = this.set("pixelsPerUnit", js.undefined)
-    
-    @scala.inline
-    def setRenderMode(value: Double): Self = this.set("renderMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderMode: Self = this.set("renderMode", js.undefined)
+    def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
   }
 }

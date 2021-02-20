@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Geometry.Line, Geometry.Ellipse, Geometry.Rectangle, Geometry.Path.
   * @param {EnumValue=} type If not supplied, the default Geometry type is Geometry.Path.
   */
-class Geometry () extends js.Object {
+class Geometry () extends StObject {
   def this(`type`: EnumValue) = this()
   
   /**
@@ -105,28 +106,52 @@ class Geometry () extends js.Object {
   /**Gets or sets the type of the Geometry.*/
   var `type`: EnumValue = js.native
 }
-/* static members */
-@JSImport("go", "Geometry")
-@js.native
-object Geometry extends js.Object {
+object Geometry {
+  
+  @JSImport("go", "Geometry")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**For drawing an ellipse fitting within a rectangle; a value for Geometry.type.*/
-  var Ellipse: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Geometry.Ellipse")
+  @js.native
+  def Ellipse: EnumValue = js.native
+  @scala.inline
+  def Ellipse_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ellipse")(x.asInstanceOf[js.Any])
   
   /**For drawing a simple straight line; a value for Geometry.type.*/
-  var Line: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Geometry.Line")
+  @js.native
+  def Line: EnumValue = js.native
+  @scala.inline
+  def Line_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
   
   /**For drawing a complex path made of a list of PathFigures; a value for Geometry.type.*/
-  var Path: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Geometry.Path")
+  @js.native
+  def Path: EnumValue = js.native
+  @scala.inline
+  def Path_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Path")(x.asInstanceOf[js.Any])
   
   /**For drawing a rectangle; a value for Geometry.type.*/
-  var Rectangle: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Geometry.Rectangle")
+  @js.native
+  def Rectangle: EnumValue = js.native
+  @scala.inline
+  def Rectangle_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rectangle")(x.asInstanceOf[js.Any])
   
   /**
     * Given a SVG or GoJS path string, returns a congruent path string with each PathFigure filled.
     * For instance, "M0 0 L22 22 L33 0" would become "F M0 0 L22 22 L33 0".
     * @param {string} str
     */
+  /* static member */
+  @JSImport("go", "Geometry.fillPath")
+  @js.native
   def fillPath(str: String): String = js.native
   
   /**
@@ -138,7 +163,12 @@ object Geometry extends js.Object {
     * If false, all PathFigures will determine their own filled state by the presence of an "F" command or not.
     * Default is false.
     */
+  /* static member */
+  @JSImport("go", "Geometry.parse")
+  @js.native
   def parse(str: String): Geometry = js.native
+  @JSImport("go", "Geometry.parse")
+  @js.native
   def parse(str: String, filled: Boolean): Geometry = js.native
   
   /**
@@ -149,5 +179,8 @@ object Geometry extends js.Object {
     * See the <a href="../../intro/pictures.html">Introduction page on Geometry Parsing</a> for more details.
     * @param {Geometry} val
     */
+  /* static member */
+  @JSImport("go", "Geometry.stringify")
+  @js.native
   def stringify(`val`: Geometry): String = js.native
 }

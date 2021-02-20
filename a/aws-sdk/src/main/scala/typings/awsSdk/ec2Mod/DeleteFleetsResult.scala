@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteFleetsResult extends js.Object {
+trait DeleteFleetsResult extends StObject {
   
   /**
     * Information about the EC2 Fleets that are successfully deleted.
@@ -26,36 +27,24 @@ object DeleteFleetsResult {
   }
   
   @scala.inline
-  implicit class DeleteFleetsResultOps[Self <: DeleteFleetsResult] (val x: Self) extends AnyVal {
+  implicit class DeleteFleetsResultMutableBuilder[Self <: DeleteFleetsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuccessfulFleetDeletions(value: DeleteFleetSuccessSet): Self = StObject.set(x, "SuccessfulFleetDeletions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuccessfulFleetDeletionsUndefined: Self = StObject.set(x, "SuccessfulFleetDeletions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuccessfulFleetDeletionsVarargs(value: DeleteFleetSuccessItem*): Self = StObject.set(x, "SuccessfulFleetDeletions", js.Array(value :_*))
     
     @scala.inline
-    def setSuccessfulFleetDeletionsVarargs(value: DeleteFleetSuccessItem*): Self = this.set("SuccessfulFleetDeletions", js.Array(value :_*))
+    def setUnsuccessfulFleetDeletions(value: DeleteFleetErrorSet): Self = StObject.set(x, "UnsuccessfulFleetDeletions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessfulFleetDeletions(value: DeleteFleetSuccessSet): Self = this.set("SuccessfulFleetDeletions", value.asInstanceOf[js.Any])
+    def setUnsuccessfulFleetDeletionsUndefined: Self = StObject.set(x, "UnsuccessfulFleetDeletions", js.undefined)
     
     @scala.inline
-    def deleteSuccessfulFleetDeletions: Self = this.set("SuccessfulFleetDeletions", js.undefined)
-    
-    @scala.inline
-    def setUnsuccessfulFleetDeletionsVarargs(value: DeleteFleetErrorItem*): Self = this.set("UnsuccessfulFleetDeletions", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnsuccessfulFleetDeletions(value: DeleteFleetErrorSet): Self = this.set("UnsuccessfulFleetDeletions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnsuccessfulFleetDeletions: Self = this.set("UnsuccessfulFleetDeletions", js.undefined)
+    def setUnsuccessfulFleetDeletionsVarargs(value: DeleteFleetErrorItem*): Self = StObject.set(x, "UnsuccessfulFleetDeletions", js.Array(value :_*))
   }
 }

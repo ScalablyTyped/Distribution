@@ -8,13 +8,14 @@ import typings.openpgp.mod.packet.SecretKey
 import typings.openpgp.mod.packet.SecretSubkey
 import typings.openpgp.mod.packet.Signature
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "SubKey")
 @js.native
-class SubKey () extends js.Object {
+class SubKey () extends StObject {
   
   /**
     * Returns algorithm information

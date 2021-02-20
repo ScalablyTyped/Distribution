@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildBazelRemoteExecutionV2PriorityCapabilities extends js.Object {
+trait BuildBazelRemoteExecutionV2PriorityCapabilities extends StObject {
   
   var priorities: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange]] = js.native
 }
@@ -18,27 +19,15 @@ object BuildBazelRemoteExecutionV2PriorityCapabilities {
   }
   
   @scala.inline
-  implicit class BuildBazelRemoteExecutionV2PriorityCapabilitiesOps[Self <: BuildBazelRemoteExecutionV2PriorityCapabilities] (val x: Self) extends AnyVal {
+  implicit class BuildBazelRemoteExecutionV2PriorityCapabilitiesMutableBuilder[Self <: BuildBazelRemoteExecutionV2PriorityCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPriorities(value: js.Array[BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange]): Self = StObject.set(x, "priorities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrioritiesUndefined: Self = StObject.set(x, "priorities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrioritiesVarargs(value: BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange*): Self = this.set("priorities", js.Array(value :_*))
-    
-    @scala.inline
-    def setPriorities(value: js.Array[BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange]): Self = this.set("priorities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriorities: Self = this.set("priorities", js.undefined)
+    def setPrioritiesVarargs(value: BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange*): Self = StObject.set(x, "priorities", js.Array(value :_*))
   }
 }

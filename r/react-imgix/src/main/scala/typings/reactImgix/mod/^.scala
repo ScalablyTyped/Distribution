@@ -1,0 +1,10 @@
+package typings.reactImgix.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("react-imgix", JSImport.Namespace)
+@js.native
+object ^ extends StObject

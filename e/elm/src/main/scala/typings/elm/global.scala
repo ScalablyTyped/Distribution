@@ -1,12 +1,15 @@
 package typings.elm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var Elm: typings.elm.Elm = js.native
+  @JSGlobal("Elm")
+  @js.native
+  def Elm: typings.elm.Elm = js.native
+  @scala.inline
+  def Elm_=(x: Elm): Unit = js.Dynamic.global.updateDynamic("Elm")(x.asInstanceOf[js.Any])
 }

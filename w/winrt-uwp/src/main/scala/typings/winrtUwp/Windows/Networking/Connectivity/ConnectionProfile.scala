@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a network connection, which includes either the currently connected network or prior network connections. Provides information about the connection status and connectivity statistics. */
 @js.native
-trait ConnectionProfile extends js.Object {
+trait ConnectionProfile extends StObject {
   
   /**
     * Gets network usage data for each individual application. This method is only supported in a Windows Phone Store app.

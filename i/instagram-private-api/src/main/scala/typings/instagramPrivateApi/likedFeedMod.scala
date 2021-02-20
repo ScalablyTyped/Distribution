@@ -1,18 +1,20 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.feedMod.Feed
 import typings.instagramPrivateApi.likedFeedResponseMod.LikedFeedResponseItemsItem
 import typings.instagramPrivateApi.likedFeedResponseMod.LikedFeedResponseRootObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/feeds/liked.feed", JSImport.Namespace)
-@js.native
-object likedFeedMod extends js.Object {
+object likedFeedMod {
   
+  @JSImport("instagram-private-api/dist/feeds/liked.feed", "LikedFeed")
   @js.native
-  class LikedFeed () extends Feed[LikedFeedResponseRootObject, LikedFeedResponseItemsItem] {
+  class LikedFeed protected () extends Feed[LikedFeedResponseRootObject, LikedFeedResponseItemsItem] {
+    def this(client: IgApiClient) = this()
     
     var maxId: js.Any = js.native
     

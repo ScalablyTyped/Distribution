@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/prism/dns-zone-file", JSImport.Namespace)
-@js.native
-object dnsZoneFileMod extends js.Object {
+object dnsZoneFileMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/prism/dns-zone-file", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

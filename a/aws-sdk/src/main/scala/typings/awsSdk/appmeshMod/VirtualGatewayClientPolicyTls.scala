@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewayClientPolicyTls extends js.Object {
+trait VirtualGatewayClientPolicyTls extends StObject {
   
   /**
     * Whether the policy is enforced. The default is True, if a value isn't specified.
@@ -31,36 +32,24 @@ object VirtualGatewayClientPolicyTls {
   }
   
   @scala.inline
-  implicit class VirtualGatewayClientPolicyTlsOps[Self <: VirtualGatewayClientPolicyTls] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewayClientPolicyTlsMutableBuilder[Self <: VirtualGatewayClientPolicyTls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPorts(value: PortSet): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidation(value: VirtualGatewayTlsValidationContext): Self = this.set("validation", value.asInstanceOf[js.Any])
+    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
     @scala.inline
-    def setEnforce(value: Boolean): Self = this.set("enforce", value.asInstanceOf[js.Any])
+    def setPortsVarargs(value: PortNumber*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
     @scala.inline
-    def deleteEnforce: Self = this.set("enforce", js.undefined)
-    
-    @scala.inline
-    def setPortsVarargs(value: PortNumber*): Self = this.set("ports", js.Array(value :_*))
-    
-    @scala.inline
-    def setPorts(value: PortSet): Self = this.set("ports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePorts: Self = this.set("ports", js.undefined)
+    def setValidation(value: VirtualGatewayTlsValidationContext): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,14 @@
 package typings.highlightJs
 
 import typings.std.RegExpMatchArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* modes */
 @js.native
-trait ModeCallbacks extends js.Object {
+trait ModeCallbacks extends StObject {
   
   @JSName("on:begin")
   var onColonbegin: js.UndefOr[ModeCallback] = js.native
@@ -24,30 +25,18 @@ object ModeCallbacks {
   }
   
   @scala.inline
-  implicit class ModeCallbacksOps[Self <: ModeCallbacks] (val x: Self) extends AnyVal {
+  implicit class ModeCallbacksMutableBuilder[Self <: ModeCallbacks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnColonbegin(value: (/* match */ RegExpMatchArray, /* response */ CallbackResponse) => Unit): Self = StObject.set(x, "on:begin", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnColonbeginUndefined: Self = StObject.set(x, "on:begin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnColonend(value: js.Function): Self = StObject.set(x, "on:end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnColonbegin(value: (/* match */ RegExpMatchArray, /* response */ CallbackResponse) => Unit): Self = this.set("on:begin", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnColonbegin: Self = this.set("on:begin", js.undefined)
-    
-    @scala.inline
-    def setOnColonend(value: js.Function): Self = this.set("on:end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnColonend: Self = this.set("on:end", js.undefined)
+    def setOnColonendUndefined: Self = StObject.set(x, "on:end", js.undefined)
   }
 }

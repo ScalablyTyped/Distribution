@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventorySizeTargeting extends js.Object {
+trait InventorySizeTargeting extends StObject {
   
   /** A list of inventory sizes to be excluded. */
   var excludedInventorySizes: js.UndefOr[js.Array[AdSize]] = js.native
@@ -22,36 +23,24 @@ object InventorySizeTargeting {
   }
   
   @scala.inline
-  implicit class InventorySizeTargetingOps[Self <: InventorySizeTargeting] (val x: Self) extends AnyVal {
+  implicit class InventorySizeTargetingMutableBuilder[Self <: InventorySizeTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedInventorySizes(value: js.Array[AdSize]): Self = StObject.set(x, "excludedInventorySizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedInventorySizesUndefined: Self = StObject.set(x, "excludedInventorySizes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedInventorySizesVarargs(value: AdSize*): Self = StObject.set(x, "excludedInventorySizes", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedInventorySizesVarargs(value: AdSize*): Self = this.set("excludedInventorySizes", js.Array(value :_*))
+    def setTargetedInventorySizes(value: js.Array[AdSize]): Self = StObject.set(x, "targetedInventorySizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedInventorySizes(value: js.Array[AdSize]): Self = this.set("excludedInventorySizes", value.asInstanceOf[js.Any])
+    def setTargetedInventorySizesUndefined: Self = StObject.set(x, "targetedInventorySizes", js.undefined)
     
     @scala.inline
-    def deleteExcludedInventorySizes: Self = this.set("excludedInventorySizes", js.undefined)
-    
-    @scala.inline
-    def setTargetedInventorySizesVarargs(value: AdSize*): Self = this.set("targetedInventorySizes", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetedInventorySizes(value: js.Array[AdSize]): Self = this.set("targetedInventorySizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetedInventorySizes: Self = this.set("targetedInventorySizes", js.undefined)
+    def setTargetedInventorySizesVarargs(value: AdSize*): Self = StObject.set(x, "targetedInventorySizes", js.Array(value :_*))
   }
 }

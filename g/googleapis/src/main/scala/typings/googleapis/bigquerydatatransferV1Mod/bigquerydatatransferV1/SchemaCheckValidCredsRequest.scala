@@ -1,5 +1,6 @@
 package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,4 +14,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * user id.
   */
 @js.native
-trait SchemaCheckValidCredsRequest extends js.Object
+trait SchemaCheckValidCredsRequest extends StObject

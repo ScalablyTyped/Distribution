@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrialComponentSourceDetail extends js.Object {
+trait TrialComponentSourceDetail extends StObject {
   
   /**
     * Information about a processing job that's the source of a trial component.
@@ -36,42 +37,30 @@ object TrialComponentSourceDetail {
   }
   
   @scala.inline
-  implicit class TrialComponentSourceDetailOps[Self <: TrialComponentSourceDetail] (val x: Self) extends AnyVal {
+  implicit class TrialComponentSourceDetailMutableBuilder[Self <: TrialComponentSourceDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProcessingJob(value: ProcessingJob): Self = StObject.set(x, "ProcessingJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProcessingJobUndefined: Self = StObject.set(x, "ProcessingJob", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceArn(value: TrialComponentSourceArn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingJob(value: ProcessingJob): Self = this.set("ProcessingJob", value.asInstanceOf[js.Any])
+    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
     @scala.inline
-    def deleteProcessingJob: Self = this.set("ProcessingJob", js.undefined)
+    def setTrainingJob(value: TrainingJob): Self = StObject.set(x, "TrainingJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceArn(value: TrialComponentSourceArn): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setTrainingJobUndefined: Self = StObject.set(x, "TrainingJob", js.undefined)
     
     @scala.inline
-    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
+    def setTransformJob(value: TransformJob): Self = StObject.set(x, "TransformJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingJob(value: TrainingJob): Self = this.set("TrainingJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingJob: Self = this.set("TrainingJob", js.undefined)
-    
-    @scala.inline
-    def setTransformJob(value: TransformJob): Self = this.set("TransformJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformJob: Self = this.set("TransformJob", js.undefined)
+    def setTransformJobUndefined: Self = StObject.set(x, "TransformJob", js.undefined)
   }
 }

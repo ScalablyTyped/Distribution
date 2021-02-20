@@ -15,6 +15,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -150,60 +151,48 @@ object XSection {
   }
   
   @scala.inline
-  implicit class XSectionOps[Self <: XSection] (val x: Self) extends AnyVal {
+  implicit class XSectionMutableBuilder[Self <: XSection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackTransparent(value: Boolean): Self = StObject.set(x, "BackTransparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanGrow(value: Boolean): Self = StObject.set(x, "CanGrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: Color): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setCanShrink(value: Boolean): Self = StObject.set(x, "CanShrink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackTransparent(value: Boolean): Self = this.set("BackTransparent", value.asInstanceOf[js.Any])
+    def setConditionalPrintExpression(value: String): Self = StObject.set(x, "ConditionalPrintExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanGrow(value: Boolean): Self = this.set("CanGrow", value.asInstanceOf[js.Any])
+    def setForceNewPage(value: Double): Self = StObject.set(x, "ForceNewPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanShrink(value: Boolean): Self = this.set("CanShrink", value.asInstanceOf[js.Any])
+    def setGroup(value: XGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionalPrintExpression(value: String): Self = this.set("ConditionalPrintExpression", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceNewPage(value: Double): Self = this.set("ForceNewPage", value.asInstanceOf[js.Any])
+    def setKeepTogether(value: Boolean): Self = StObject.set(x, "KeepTogether", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: XGroup): Self = this.set("Group", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setNewRowOrCol(value: Double): Self = StObject.set(x, "NewRowOrCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepTogether(value: Boolean): Self = this.set("KeepTogether", value.asInstanceOf[js.Any])
+    def setRepeatSection(value: Boolean): Self = StObject.set(x, "RepeatSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setReportDefinition(value: XReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewRowOrCol(value: Double): Self = this.set("NewRowOrCol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeatSection(value: Boolean): Self = this.set("RepeatSection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReportDefinition(value: XReportDefinition): Self = this.set("ReportDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

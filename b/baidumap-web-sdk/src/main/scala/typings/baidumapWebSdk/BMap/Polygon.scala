@@ -1,6 +1,7 @@
 package typings.baidumapWebSdk.BMap
 
 import typings.baidumapWebSdk.anon.Target
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,114 +115,102 @@ object Polygon {
   }
   
   @scala.inline
-  implicit class PolygonOps[Self <: Polygon] (val x: Self) extends AnyVal {
+  implicit class PolygonMutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableEditing(value: () => Unit): Self = StObject.set(x, "disableEditing", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableMassClear(value: () => Unit): Self = StObject.set(x, "disableMassClear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddEventListener(value: (String, Callback) => Unit): Self = this.set("addEventListener", js.Any.fromFunction2(value))
+    def setEnableEditing(value: () => Unit): Self = StObject.set(x, "enableEditing", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisableEditing(value: () => Unit): Self = this.set("disableEditing", js.Any.fromFunction0(value))
+    def setEnableMassClear(value: () => Unit): Self = StObject.set(x, "enableMassClear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisableMassClear(value: () => Unit): Self = this.set("disableMassClear", js.Any.fromFunction0(value))
+    def setGetBounds(value: () => Bounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnableEditing(value: () => Unit): Self = this.set("enableEditing", js.Any.fromFunction0(value))
+    def setGetFillColor(value: () => String): Self = StObject.set(x, "getFillColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnableMassClear(value: () => Unit): Self = this.set("enableMassClear", js.Any.fromFunction0(value))
+    def setGetFillOpacity(value: () => Double): Self = StObject.set(x, "getFillOpacity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBounds(value: () => Bounds): Self = this.set("getBounds", js.Any.fromFunction0(value))
+    def setGetMap(value: () => Map): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFillColor(value: () => String): Self = this.set("getFillColor", js.Any.fromFunction0(value))
+    def setGetPath(value: () => js.Array[Point]): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFillOpacity(value: () => Double): Self = this.set("getFillOpacity", js.Any.fromFunction0(value))
+    def setGetStrokeColor(value: () => String): Self = StObject.set(x, "getStrokeColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMap(value: () => Map): Self = this.set("getMap", js.Any.fromFunction0(value))
+    def setGetStrokeOpacity(value: () => Double): Self = StObject.set(x, "getStrokeOpacity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPath(value: () => js.Array[Point]): Self = this.set("getPath", js.Any.fromFunction0(value))
+    def setGetStrokeStyle(value: () => String): Self = StObject.set(x, "getStrokeStyle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStrokeColor(value: () => String): Self = this.set("getStrokeColor", js.Any.fromFunction0(value))
+    def setGetStrokeWeight(value: () => Double): Self = StObject.set(x, "getStrokeWeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStrokeOpacity(value: () => Double): Self = this.set("getStrokeOpacity", js.Any.fromFunction0(value))
+    def setOnclick(value: Target => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStrokeStyle(value: () => String): Self = this.set("getStrokeStyle", js.Any.fromFunction0(value))
+    def setOndblclick(value: typings.baidumapWebSdk.anon.Pixel => Unit): Self = StObject.set(x, "ondblclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStrokeWeight(value: () => Double): Self = this.set("getStrokeWeight", js.Any.fromFunction0(value))
+    def setOnlineupdate(value: Target => Unit): Self = StObject.set(x, "onlineupdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnclick(value: Target => Unit): Self = this.set("onclick", js.Any.fromFunction1(value))
+    def setOnmousedown(value: typings.baidumapWebSdk.anon.Pixel => Unit): Self = StObject.set(x, "onmousedown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOndblclick(value: typings.baidumapWebSdk.anon.Pixel => Unit): Self = this.set("ondblclick", js.Any.fromFunction1(value))
+    def setOnmouseout(value: typings.baidumapWebSdk.anon.Pixel => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnlineupdate(value: Target => Unit): Self = this.set("onlineupdate", js.Any.fromFunction1(value))
+    def setOnmouseover(value: typings.baidumapWebSdk.anon.Pixel => Unit): Self = StObject.set(x, "onmouseover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnmousedown(value: typings.baidumapWebSdk.anon.Pixel => Unit): Self = this.set("onmousedown", js.Any.fromFunction1(value))
+    def setOnmouseup(value: typings.baidumapWebSdk.anon.Pixel => Unit): Self = StObject.set(x, "onmouseup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnmouseout(value: typings.baidumapWebSdk.anon.Pixel => Unit): Self = this.set("onmouseout", js.Any.fromFunction1(value))
+    def setOnremove(value: Target => Unit): Self = StObject.set(x, "onremove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnmouseover(value: typings.baidumapWebSdk.anon.Pixel => Unit): Self = this.set("onmouseover", js.Any.fromFunction1(value))
+    def setRemoveEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnmouseup(value: typings.baidumapWebSdk.anon.Pixel => Unit): Self = this.set("onmouseup", js.Any.fromFunction1(value))
+    def setSetFillColor(value: String => Unit): Self = StObject.set(x, "setFillColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnremove(value: Target => Unit): Self = this.set("onremove", js.Any.fromFunction1(value))
+    def setSetFillOpacity(value: Double => Unit): Self = StObject.set(x, "setFillOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveEventListener(value: (String, Callback) => Unit): Self = this.set("removeEventListener", js.Any.fromFunction2(value))
+    def setSetPath(value: js.Array[Point] => Unit): Self = StObject.set(x, "setPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFillColor(value: String => Unit): Self = this.set("setFillColor", js.Any.fromFunction1(value))
+    def setSetPointAt(value: (Double, Point) => Unit): Self = StObject.set(x, "setPointAt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetFillOpacity(value: Double => Unit): Self = this.set("setFillOpacity", js.Any.fromFunction1(value))
+    def setSetPositionAt(value: (Double, Point) => Unit): Self = StObject.set(x, "setPositionAt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetPath(value: js.Array[Point] => Unit): Self = this.set("setPath", js.Any.fromFunction1(value))
+    def setSetStrokeColor(value: String => Unit): Self = StObject.set(x, "setStrokeColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPointAt(value: (Double, Point) => Unit): Self = this.set("setPointAt", js.Any.fromFunction2(value))
+    def setSetStrokeOpacity(value: Double => Unit): Self = StObject.set(x, "setStrokeOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPositionAt(value: (Double, Point) => Unit): Self = this.set("setPositionAt", js.Any.fromFunction2(value))
+    def setSetStrokeStyle(value: String => Unit): Self = StObject.set(x, "setStrokeStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetStrokeColor(value: String => Unit): Self = this.set("setStrokeColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStrokeOpacity(value: Double => Unit): Self = this.set("setStrokeOpacity", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStrokeStyle(value: String => Unit): Self = this.set("setStrokeStyle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStrokeWeight(value: Double => Unit): Self = this.set("setStrokeWeight", js.Any.fromFunction1(value))
+    def setSetStrokeWeight(value: Double => Unit): Self = StObject.set(x, "setStrokeWeight", js.Any.fromFunction1(value))
   }
 }

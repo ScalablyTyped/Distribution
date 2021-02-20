@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the local endpoint and remote endpoint for a network connection used by network apps. */
 @js.native
-trait EndpointPair extends js.Object {
+trait EndpointPair extends StObject {
   
   /** Get or set the local hostname for the EndpointPair object. */
   var localHostName: HostName = js.native
@@ -34,30 +35,18 @@ object EndpointPair {
   }
   
   @scala.inline
-  implicit class EndpointPairOps[Self <: EndpointPair] (val x: Self) extends AnyVal {
+  implicit class EndpointPairMutableBuilder[Self <: EndpointPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalHostName(value: HostName): Self = StObject.set(x, "localHostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalServiceName(value: String): Self = StObject.set(x, "localServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoteHostName(value: HostName): Self = StObject.set(x, "remoteHostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalHostName(value: HostName): Self = this.set("localHostName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocalServiceName(value: String): Self = this.set("localServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteHostName(value: HostName): Self = this.set("remoteHostName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteServiceName(value: String): Self = this.set("remoteServiceName", value.asInstanceOf[js.Any])
+    def setRemoteServiceName(value: String): Self = StObject.set(x, "remoteServiceName", value.asInstanceOf[js.Any])
   }
 }

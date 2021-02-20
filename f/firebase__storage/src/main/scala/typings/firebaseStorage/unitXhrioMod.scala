@@ -1,43 +1,40 @@
 package typings.firebaseStorage
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.firebaseStorage.xhrioMod.Headers
 import typings.firebaseStorage.xhrioMod.XhrIo
 import typings.std.ArrayBufferView
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/test/unit/xhrio", JSImport.Namespace)
-@js.native
-object unitXhrioMod extends js.Object {
+object unitXhrioMod {
   
   @js.native
-  sealed trait State extends js.Object
+  sealed trait State extends StObject
+  @JSImport("@firebase/storage/dist/test/unit/xhrio", "State")
   @js.native
-  object State extends js.Object {
+  object State extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[State with Double] = js.native
     
     @js.native
     sealed trait DONE extends State
-    /* 2 */ @js.native
-    object DONE extends TopLevel[DONE with Double]
+    /* 2 */ val DONE: typings.firebaseStorage.unitXhrioMod.State.DONE with Double = js.native
     
     @js.native
     sealed trait SENT extends State
-    /* 1 */ @js.native
-    object SENT extends TopLevel[SENT with Double]
+    /* 1 */ val SENT: typings.firebaseStorage.unitXhrioMod.State.SENT with Double = js.native
     
     @js.native
     sealed trait START extends State
-    /* 0 */ @js.native
-    object START extends TopLevel[START with Double]
+    /* 0 */ val START: typings.firebaseStorage.unitXhrioMod.State.START with Double = js.native
   }
   
+  @JSImport("@firebase/storage/dist/test/unit/xhrio", "TestingXhrIo")
   @js.native
   class TestingXhrIo () extends XhrIo {
     def this(sendHook: SendHook) = this()

@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewBGPPeer extends js.Object {
+trait NewBGPPeer extends StObject {
   
   /**
     * The address family for the BGP peer.
@@ -41,48 +42,36 @@ object NewBGPPeer {
   }
   
   @scala.inline
-  implicit class NewBGPPeerOps[Self <: NewBGPPeer] (val x: Self) extends AnyVal {
+  implicit class NewBGPPeerMutableBuilder[Self <: NewBGPPeer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressFamily(value: AddressFamily): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressFamilyUndefined: Self = StObject.set(x, "addressFamily", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmazonAddress(value: AmazonAddress): Self = StObject.set(x, "amazonAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressFamily(value: AddressFamily): Self = this.set("addressFamily", value.asInstanceOf[js.Any])
+    def setAmazonAddressUndefined: Self = StObject.set(x, "amazonAddress", js.undefined)
     
     @scala.inline
-    def deleteAddressFamily: Self = this.set("addressFamily", js.undefined)
+    def setAsn(value: ASN): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmazonAddress(value: AmazonAddress): Self = this.set("amazonAddress", value.asInstanceOf[js.Any])
+    def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
     
     @scala.inline
-    def deleteAmazonAddress: Self = this.set("amazonAddress", js.undefined)
+    def setAuthKey(value: BGPAuthKey): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsn(value: ASN): Self = this.set("asn", value.asInstanceOf[js.Any])
+    def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
     
     @scala.inline
-    def deleteAsn: Self = this.set("asn", js.undefined)
+    def setCustomerAddress(value: CustomerAddress): Self = StObject.set(x, "customerAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthKey(value: BGPAuthKey): Self = this.set("authKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthKey: Self = this.set("authKey", js.undefined)
-    
-    @scala.inline
-    def setCustomerAddress(value: CustomerAddress): Self = this.set("customerAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerAddress: Self = this.set("customerAddress", js.undefined)
+    def setCustomerAddressUndefined: Self = StObject.set(x, "customerAddress", js.undefined)
   }
 }

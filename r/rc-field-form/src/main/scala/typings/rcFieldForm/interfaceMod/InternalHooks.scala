@@ -1,12 +1,13 @@
 package typings.rcFieldForm.interfaceMod
 
 import typings.rcFieldForm.useFormMod.ReducerAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InternalHooks extends js.Object {
+trait InternalHooks extends StObject {
   
   def dispatch(action: ReducerAction): Unit = js.native
   

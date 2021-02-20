@@ -1,36 +1,32 @@
 package typings.braintree.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TransactionRequestSource extends js.Object
+sealed trait TransactionRequestSource extends StObject
 @JSImport("braintree", "TransactionRequestSource")
 @js.native
-object TransactionRequestSource extends js.Object {
+object TransactionRequestSource extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TransactionRequestSource with String] = js.native
   
   @js.native
   sealed trait moto extends TransactionRequestSource
-  /* "moto" */ @js.native
-  object moto extends TopLevel[moto with String]
+  /* "moto" */ val moto: typings.braintree.mod.TransactionRequestSource.moto with String = js.native
   
   @js.native
   sealed trait recurring extends TransactionRequestSource
-  /* "recurring" */ @js.native
-  object recurring extends TopLevel[recurring with String]
+  /* "recurring" */ val recurring: typings.braintree.mod.TransactionRequestSource.recurring with String = js.native
   
   @js.native
   sealed trait recurring_first extends TransactionRequestSource
-  /* "recurring_first" */ @js.native
-  object recurring_first extends TopLevel[recurring_first with String]
+  /* "recurring_first" */ val recurring_first: typings.braintree.mod.TransactionRequestSource.recurring_first with String = js.native
   
   @js.native
   sealed trait unscheduled extends TransactionRequestSource
-  /* "unscheduled" */ @js.native
-  object unscheduled extends TopLevel[unscheduled with String]
+  /* "unscheduled" */ val unscheduled: typings.braintree.mod.TransactionRequestSource.unscheduled with String = js.native
 }

@@ -1,13 +1,14 @@
 package typings.nextAuth.anon
 
 import typings.node.httpMod.IncomingMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined next-auth.next-auth/client.NextContext & {  triggerEvent :boolean | undefined} */
 @js.native
-trait NextContexttriggerEventbo extends js.Object {
+trait NextContexttriggerEventbo extends StObject {
   
   var ctx: js.UndefOr[Req] = js.native
   
@@ -24,36 +25,24 @@ object NextContexttriggerEventbo {
   }
   
   @scala.inline
-  implicit class NextContexttriggerEventboOps[Self <: NextContexttriggerEventbo] (val x: Self) extends AnyVal {
+  implicit class NextContexttriggerEventboMutableBuilder[Self <: NextContexttriggerEventbo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCtx(value: Req): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCtxUndefined: Self = StObject.set(x, "ctx", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReq(value: IncomingMessage): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtx(value: Req): Self = this.set("ctx", value.asInstanceOf[js.Any])
+    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
     
     @scala.inline
-    def deleteCtx: Self = this.set("ctx", js.undefined)
+    def setTriggerEvent(value: Boolean): Self = StObject.set(x, "triggerEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReq(value: IncomingMessage): Self = this.set("req", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReq: Self = this.set("req", js.undefined)
-    
-    @scala.inline
-    def setTriggerEvent(value: Boolean): Self = this.set("triggerEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerEvent: Self = this.set("triggerEvent", js.undefined)
+    def setTriggerEventUndefined: Self = StObject.set(x, "triggerEvent", js.undefined)
   }
 }

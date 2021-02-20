@@ -5,12 +5,13 @@ import typings.figma.figmaStrings.close_
 import typings.figma.figmaStrings.currentpagechange
 import typings.figma.figmaStrings.selectionchange
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginAPI extends js.Object {
+trait PluginAPI extends StObject {
   
   val apiVersion: `1Dot0Dot0` = js.native
   

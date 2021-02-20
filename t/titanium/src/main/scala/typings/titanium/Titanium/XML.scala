@@ -1,5 +1,6 @@
 package typings.titanium.Titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The top level XML module.  The XML module is used for parsing and processing XML-based content.
   */
-@JSGlobal("Titanium.XML")
-@js.native
-object XML extends js.Object {
+object XML {
   
   /**
     * Represents an attribute of an [Element](Titanium.XML.Element).

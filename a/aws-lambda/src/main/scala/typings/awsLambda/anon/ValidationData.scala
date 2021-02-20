@@ -1,12 +1,13 @@
 package typings.awsLambda.anon
 
 import typings.awsLambda.commonMod.StringMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationData extends js.Object {
+trait ValidationData extends StObject {
   
   var clientMetadata: js.UndefOr[StringMap] = js.native
   
@@ -23,33 +24,21 @@ object ValidationData {
   }
   
   @scala.inline
-  implicit class ValidationDataOps[Self <: ValidationData] (val x: Self) extends AnyVal {
+  implicit class ValidationDataMutableBuilder[Self <: ValidationData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAttributes(value: StringMap): Self = this.set("userAttributes", value.asInstanceOf[js.Any])
+    def setValidationData(value: StringMap): Self = StObject.set(x, "validationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientMetadata(value: StringMap): Self = this.set("clientMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientMetadata: Self = this.set("clientMetadata", js.undefined)
-    
-    @scala.inline
-    def setValidationData(value: StringMap): Self = this.set("validationData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationData: Self = this.set("validationData", js.undefined)
+    def setValidationDataUndefined: Self = StObject.set(x, "validationData", js.undefined)
   }
 }

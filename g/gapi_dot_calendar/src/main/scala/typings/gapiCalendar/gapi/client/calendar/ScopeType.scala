@@ -1,5 +1,6 @@
 package typings.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gapiCalendar.gapiCalendarStrings.group
   - typings.gapiCalendar.gapiCalendarStrings.domain
 */
-trait ScopeType extends js.Object
+trait ScopeType extends StObject
 object ScopeType {
   
   @scala.inline

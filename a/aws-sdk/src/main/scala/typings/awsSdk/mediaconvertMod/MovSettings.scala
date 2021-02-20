@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MovSettings extends js.Object {
+trait MovSettings extends StObject {
   
   /**
     * When enabled, include 'clap' atom if appropriate for the video output settings.
@@ -41,48 +42,36 @@ object MovSettings {
   }
   
   @scala.inline
-  implicit class MovSettingsOps[Self <: MovSettings] (val x: Self) extends AnyVal {
+  implicit class MovSettingsMutableBuilder[Self <: MovSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClapAtom(value: MovClapAtom): Self = StObject.set(x, "ClapAtom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClapAtomUndefined: Self = StObject.set(x, "ClapAtom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCslgAtom(value: MovCslgAtom): Self = StObject.set(x, "CslgAtom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClapAtom(value: MovClapAtom): Self = this.set("ClapAtom", value.asInstanceOf[js.Any])
+    def setCslgAtomUndefined: Self = StObject.set(x, "CslgAtom", js.undefined)
     
     @scala.inline
-    def deleteClapAtom: Self = this.set("ClapAtom", js.undefined)
+    def setMpeg2FourCCControl(value: MovMpeg2FourCCControl): Self = StObject.set(x, "Mpeg2FourCCControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCslgAtom(value: MovCslgAtom): Self = this.set("CslgAtom", value.asInstanceOf[js.Any])
+    def setMpeg2FourCCControlUndefined: Self = StObject.set(x, "Mpeg2FourCCControl", js.undefined)
     
     @scala.inline
-    def deleteCslgAtom: Self = this.set("CslgAtom", js.undefined)
+    def setPaddingControl(value: MovPaddingControl): Self = StObject.set(x, "PaddingControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpeg2FourCCControl(value: MovMpeg2FourCCControl): Self = this.set("Mpeg2FourCCControl", value.asInstanceOf[js.Any])
+    def setPaddingControlUndefined: Self = StObject.set(x, "PaddingControl", js.undefined)
     
     @scala.inline
-    def deleteMpeg2FourCCControl: Self = this.set("Mpeg2FourCCControl", js.undefined)
+    def setReference(value: MovReference): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingControl(value: MovPaddingControl): Self = this.set("PaddingControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingControl: Self = this.set("PaddingControl", js.undefined)
-    
-    @scala.inline
-    def setReference(value: MovReference): Self = this.set("Reference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReference: Self = this.set("Reference", js.undefined)
+    def setReferenceUndefined: Self = StObject.set(x, "Reference", js.undefined)
   }
 }

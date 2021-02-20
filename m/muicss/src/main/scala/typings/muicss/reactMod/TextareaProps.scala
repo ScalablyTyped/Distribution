@@ -8,6 +8,7 @@ import typings.react.mod.Ref
 import typings.react.mod.TextareaHTMLAttributes
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,60 +37,48 @@ object TextareaProps {
   }
   
   @scala.inline
-  implicit class TextareaPropsOps[Self <: TextareaProps] (val x: Self) extends AnyVal {
+  implicit class TextareaPropsMutableBuilder[Self <: TextareaProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloatingLabel(value: Boolean): Self = StObject.set(x, "floatingLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloatingLabelUndefined: Self = StObject.set(x, "floatingLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingLabel(value: Boolean): Self = this.set("floatingLabel", value.asInstanceOf[js.Any])
+    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
     @scala.inline
-    def deleteFloatingLabel: Self = this.set("floatingLabel", js.undefined)
+    def setInputRef(value: Ref[HTMLTextAreaElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHint(value: String): Self = this.set("hint", value.asInstanceOf[js.Any])
+    def setInputRefFunction1(value: /* instance */ HTMLTextAreaElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHint: Self = this.set("hint", js.undefined)
+    def setInputRefNull: Self = StObject.set(x, "inputRef", null)
     
     @scala.inline
-    def setInputRefFunction1(value: /* instance */ HTMLTextAreaElement | Null => Unit): Self = this.set("inputRef", js.Any.fromFunction1(value))
+    def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
     
     @scala.inline
-    def setInputRef(value: Ref[HTMLTextAreaElement]): Self = this.set("inputRef", value.asInstanceOf[js.Any])
+    def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputRef: Self = this.set("inputRef", js.undefined)
+    def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
     @scala.inline
-    def setInputRefNull: Self = this.set("inputRef", null)
+    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalid(value: Boolean): Self = this.set("invalid", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteInvalid: Self = this.set("invalid", js.undefined)
+    def setOnLabelClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onLabelClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabel(value: ReactNode): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
-    
-    @scala.inline
-    def setOnLabelClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onLabelClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnLabelClick: Self = this.set("onLabelClick", js.undefined)
+    def setOnLabelClickUndefined: Self = StObject.set(x, "onLabelClick", js.undefined)
   }
 }

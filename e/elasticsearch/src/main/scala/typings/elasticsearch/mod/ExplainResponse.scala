@@ -1,11 +1,12 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExplainResponse extends js.Object {
+trait ExplainResponse extends StObject {
   
   var _id: String = js.native
   
@@ -26,33 +27,21 @@ object ExplainResponse {
   }
   
   @scala.inline
-  implicit class ExplainResponseOps[Self <: ExplainResponse] (val x: Self) extends AnyVal {
+  implicit class ExplainResponseMutableBuilder[Self <: ExplainResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExplanation(value: ExplainResponseDetails): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatched(value: Boolean): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_id(value: String): Self = this.set("_id", value.asInstanceOf[js.Any])
+    def set_index(value: String): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_index(value: String): Self = this.set("_index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_type(value: String): Self = this.set("_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExplanation(value: ExplainResponseDetails): Self = this.set("explanation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatched(value: Boolean): Self = this.set("matched", value.asInstanceOf[js.Any])
+    def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
   }
 }

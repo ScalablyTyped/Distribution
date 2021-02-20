@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BlockProgression extends js.Object
+sealed trait BlockProgression extends StObject
 @JSGlobal("__esri.CIM.BlockProgression")
 @js.native
-object BlockProgression extends js.Object {
+object BlockProgression extends StObject {
   
   /**
     * Bottom To Top.

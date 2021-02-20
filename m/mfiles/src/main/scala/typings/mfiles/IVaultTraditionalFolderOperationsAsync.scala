@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultTraditionalFolderOperationsAsync extends js.Object {
+trait IVaultTraditionalFolderOperationsAsync extends StObject {
   
   def GetTraditionalFolderContents(Folder: Double): Unit = js.native
   def GetTraditionalFolderContents(

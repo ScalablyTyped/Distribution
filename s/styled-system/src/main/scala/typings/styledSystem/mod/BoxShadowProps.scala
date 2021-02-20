@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoxShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait BoxShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
     * The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated
@@ -29,22 +30,7 @@ object BoxShadowProps {
   }
   
   @scala.inline
-  implicit class BoxShadowPropsOps[Self <: BoxShadowProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with BoxShadowProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBoxShadowVarargs(value: ((js.Any | Double) | Null)*): Self = this.set("boxShadow", js.Array(value :_*))
+  implicit class BoxShadowPropsMutableBuilder[Self <: BoxShadowProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with BoxShadowProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setBoxShadow(
@@ -52,12 +38,15 @@ object BoxShadowProps {
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double, 
           ThemeType
         ]
-    ): Self = this.set("boxShadow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxShadow: Self = this.set("boxShadow", js.undefined)
+    def setBoxShadowNull: Self = StObject.set(x, "boxShadow", null)
     
     @scala.inline
-    def setBoxShadowNull: Self = this.set("boxShadow", null)
+    def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
+    
+    @scala.inline
+    def setBoxShadowVarargs(value: ((js.Any | Double) | Null)*): Self = StObject.set(x, "boxShadow", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FSxWindowsFileServerAuthorizationConfig extends js.Object {
+trait FSxWindowsFileServerAuthorizationConfig extends StObject {
   
   /**
     * The authorization credential option to use. The authorization credential options can be provided using either the AWS Secrets Manager ARN or the AWS Systems Manager ARN. The ARNs refer to the stored credentials.  options:     ARN of an AWS Secrets Manager secret.    ARN of an AWS Systems Manager parameter.  
@@ -26,24 +27,12 @@ object FSxWindowsFileServerAuthorizationConfig {
   }
   
   @scala.inline
-  implicit class FSxWindowsFileServerAuthorizationConfigOps[Self <: FSxWindowsFileServerAuthorizationConfig] (val x: Self) extends AnyVal {
+  implicit class FSxWindowsFileServerAuthorizationConfigMutableBuilder[Self <: FSxWindowsFileServerAuthorizationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentialsParameter(value: String): Self = StObject.set(x, "credentialsParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCredentialsParameter(value: String): Self = this.set("credentialsParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.knockoutMapper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutMapper extends js.Object {
+trait KnockoutMapper extends StObject {
   
   def fromJS(value: js.Any): js.Any = js.native
   def fromJS(

@@ -1,12 +1,13 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Collection")
 @js.native
-class Collection[Base] protected () extends js.Object {
+class Collection[Base] protected () extends StObject {
   def this(options: js.Array[Double | String | js.Object]) = this()
   def this(options: CollectionPinOptions) = this()
   
@@ -32,9 +33,9 @@ class Collection[Base] protected () extends js.Object {
   var `type`: js.UndefOr[Base] = js.native
 }
 /* static members */
-@JSImport("johnny-five", "Collection")
-@js.native
-object Collection extends js.Object {
+object Collection {
   
+  @JSImport("johnny-five", "Collection.installMethodForwarding")
+  @js.native
   def installMethodForwarding(target: js.Object, source: js.Object): js.Object = js.native
 }

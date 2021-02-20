@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Vp9Settings extends js.Object {
+trait Vp9Settings extends StObject {
   
   /**
     * Target bitrate in bits/second. For example, enter five megabits per second as 5000000.
@@ -81,96 +82,84 @@ object Vp9Settings {
   }
   
   @scala.inline
-  implicit class Vp9SettingsOps[Self <: Vp9Settings] (val x: Self) extends AnyVal {
+  implicit class Vp9SettingsMutableBuilder[Self <: Vp9Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitrate(value: integerMin1000Max480000000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFramerateControl(value: Vp9FramerateControl): Self = StObject.set(x, "FramerateControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrate(value: integerMin1000Max480000000): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    def setFramerateControlUndefined: Self = StObject.set(x, "FramerateControl", js.undefined)
     
     @scala.inline
-    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    def setFramerateConversionAlgorithm(value: Vp9FramerateConversionAlgorithm): Self = StObject.set(x, "FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramerateControl(value: Vp9FramerateControl): Self = this.set("FramerateControl", value.asInstanceOf[js.Any])
+    def setFramerateConversionAlgorithmUndefined: Self = StObject.set(x, "FramerateConversionAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteFramerateControl: Self = this.set("FramerateControl", js.undefined)
+    def setFramerateDenominator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramerateConversionAlgorithm(value: Vp9FramerateConversionAlgorithm): Self = this.set("FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
+    def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
     
     @scala.inline
-    def deleteFramerateConversionAlgorithm: Self = this.set("FramerateConversionAlgorithm", js.undefined)
+    def setFramerateNumerator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramerateDenominator(value: integerMin1Max2147483647): Self = this.set("FramerateDenominator", value.asInstanceOf[js.Any])
+    def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
     
     @scala.inline
-    def deleteFramerateDenominator: Self = this.set("FramerateDenominator", js.undefined)
+    def setGopSize(value: doubleMin0): Self = StObject.set(x, "GopSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramerateNumerator(value: integerMin1Max2147483647): Self = this.set("FramerateNumerator", value.asInstanceOf[js.Any])
+    def setGopSizeUndefined: Self = StObject.set(x, "GopSize", js.undefined)
     
     @scala.inline
-    def deleteFramerateNumerator: Self = this.set("FramerateNumerator", js.undefined)
+    def setHrdBufferSize(value: integerMin0Max47185920): Self = StObject.set(x, "HrdBufferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGopSize(value: doubleMin0): Self = this.set("GopSize", value.asInstanceOf[js.Any])
+    def setHrdBufferSizeUndefined: Self = StObject.set(x, "HrdBufferSize", js.undefined)
     
     @scala.inline
-    def deleteGopSize: Self = this.set("GopSize", js.undefined)
+    def setMaxBitrate(value: integerMin1000Max480000000): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHrdBufferSize(value: integerMin0Max47185920): Self = this.set("HrdBufferSize", value.asInstanceOf[js.Any])
+    def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
     
     @scala.inline
-    def deleteHrdBufferSize: Self = this.set("HrdBufferSize", js.undefined)
+    def setParControl(value: Vp9ParControl): Self = StObject.set(x, "ParControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBitrate(value: integerMin1000Max480000000): Self = this.set("MaxBitrate", value.asInstanceOf[js.Any])
+    def setParControlUndefined: Self = StObject.set(x, "ParControl", js.undefined)
     
     @scala.inline
-    def deleteMaxBitrate: Self = this.set("MaxBitrate", js.undefined)
+    def setParDenominator(value: integerMin1Max2147483647): Self = StObject.set(x, "ParDenominator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParControl(value: Vp9ParControl): Self = this.set("ParControl", value.asInstanceOf[js.Any])
+    def setParDenominatorUndefined: Self = StObject.set(x, "ParDenominator", js.undefined)
     
     @scala.inline
-    def deleteParControl: Self = this.set("ParControl", js.undefined)
+    def setParNumerator(value: integerMin1Max2147483647): Self = StObject.set(x, "ParNumerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParDenominator(value: integerMin1Max2147483647): Self = this.set("ParDenominator", value.asInstanceOf[js.Any])
+    def setParNumeratorUndefined: Self = StObject.set(x, "ParNumerator", js.undefined)
     
     @scala.inline
-    def deleteParDenominator: Self = this.set("ParDenominator", js.undefined)
+    def setQualityTuningLevel(value: Vp9QualityTuningLevel): Self = StObject.set(x, "QualityTuningLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParNumerator(value: integerMin1Max2147483647): Self = this.set("ParNumerator", value.asInstanceOf[js.Any])
+    def setQualityTuningLevelUndefined: Self = StObject.set(x, "QualityTuningLevel", js.undefined)
     
     @scala.inline
-    def deleteParNumerator: Self = this.set("ParNumerator", js.undefined)
+    def setRateControlMode(value: Vp9RateControlMode): Self = StObject.set(x, "RateControlMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualityTuningLevel(value: Vp9QualityTuningLevel): Self = this.set("QualityTuningLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQualityTuningLevel: Self = this.set("QualityTuningLevel", js.undefined)
-    
-    @scala.inline
-    def setRateControlMode(value: Vp9RateControlMode): Self = this.set("RateControlMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRateControlMode: Self = this.set("RateControlMode", js.undefined)
+    def setRateControlModeUndefined: Self = StObject.set(x, "RateControlMode", js.undefined)
   }
 }

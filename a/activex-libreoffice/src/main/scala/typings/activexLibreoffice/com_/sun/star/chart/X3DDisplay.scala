@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.chart
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,30 +56,18 @@ object X3DDisplay {
   }
   
   @scala.inline
-  implicit class X3DDisplayOps[Self <: X3DDisplay] (val x: Self) extends AnyVal {
+  implicit class X3DDisplayMutableBuilder[Self <: X3DDisplay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloor(value: XPropertySet): Self = StObject.set(x, "Floor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFloor(value: () => XPropertySet): Self = StObject.set(x, "getFloor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetWall(value: () => XPropertySet): Self = StObject.set(x, "getWall", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFloor(value: XPropertySet): Self = this.set("Floor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWall(value: XPropertySet): Self = this.set("Wall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetFloor(value: () => XPropertySet): Self = this.set("getFloor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWall(value: () => XPropertySet): Self = this.set("getWall", js.Any.fromFunction0(value))
+    def setWall(value: XPropertySet): Self = StObject.set(x, "Wall", value.asInstanceOf[js.Any])
   }
 }

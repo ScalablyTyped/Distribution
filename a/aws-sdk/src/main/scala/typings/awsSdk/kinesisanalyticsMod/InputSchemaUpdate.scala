@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputSchemaUpdate extends js.Object {
+trait InputSchemaUpdate extends StObject {
   
   /**
     * A list of RecordColumn objects. Each object describes the mapping of the streaming source element to the corresponding column in the in-application stream. 
@@ -31,39 +32,27 @@ object InputSchemaUpdate {
   }
   
   @scala.inline
-  implicit class InputSchemaUpdateOps[Self <: InputSchemaUpdate] (val x: Self) extends AnyVal {
+  implicit class InputSchemaUpdateMutableBuilder[Self <: InputSchemaUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecordColumnUpdates(value: RecordColumns): Self = StObject.set(x, "RecordColumnUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecordColumnUpdatesUndefined: Self = StObject.set(x, "RecordColumnUpdates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecordColumnUpdatesVarargs(value: RecordColumn*): Self = StObject.set(x, "RecordColumnUpdates", js.Array(value :_*))
     
     @scala.inline
-    def setRecordColumnUpdatesVarargs(value: RecordColumn*): Self = this.set("RecordColumnUpdates", js.Array(value :_*))
+    def setRecordEncodingUpdate(value: RecordEncoding): Self = StObject.set(x, "RecordEncodingUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordColumnUpdates(value: RecordColumns): Self = this.set("RecordColumnUpdates", value.asInstanceOf[js.Any])
+    def setRecordEncodingUpdateUndefined: Self = StObject.set(x, "RecordEncodingUpdate", js.undefined)
     
     @scala.inline
-    def deleteRecordColumnUpdates: Self = this.set("RecordColumnUpdates", js.undefined)
+    def setRecordFormatUpdate(value: RecordFormat): Self = StObject.set(x, "RecordFormatUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordEncodingUpdate(value: RecordEncoding): Self = this.set("RecordEncodingUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordEncodingUpdate: Self = this.set("RecordEncodingUpdate", js.undefined)
-    
-    @scala.inline
-    def setRecordFormatUpdate(value: RecordFormat): Self = this.set("RecordFormatUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordFormatUpdate: Self = this.set("RecordFormatUpdate", js.undefined)
+    def setRecordFormatUpdateUndefined: Self = StObject.set(x, "RecordFormatUpdate", js.undefined)
   }
 }

@@ -8,14 +8,14 @@ import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProvider
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/csvviewer-extension/lib/searchprovider", JSImport.Namespace)
-@js.native
-object searchproviderMod extends js.Object {
+object searchproviderMod {
   
+  @JSImport("@jupyterlab/csvviewer-extension/lib/searchprovider", "CSVSearchProvider")
   @js.native
   class CSVSearchProvider () extends ISearchProvider[CSVDocumentWidget] {
     
@@ -43,12 +43,13 @@ object searchproviderMod extends js.Object {
     def startQuery(query: RegExp, searchTarget: CSVDocumentWidget): js.Promise[js.Array[ISearchMatch]] = js.native
   }
   /* static members */
-  @js.native
-  object CSVSearchProvider extends js.Object {
+  object CSVSearchProvider {
     
     /**
       * Report whether or not this provider has the ability to search on the given object
       */
+    @JSImport("@jupyterlab/csvviewer-extension/lib/searchprovider", "CSVSearchProvider.canSearchOn")
+    @js.native
     def canSearchOn(domain: Widget): /* is @jupyterlab/csvviewer-extension.@jupyterlab/csvviewer-extension/lib/searchprovider.CSVDocumentWidget */ Boolean = js.native
   }
   

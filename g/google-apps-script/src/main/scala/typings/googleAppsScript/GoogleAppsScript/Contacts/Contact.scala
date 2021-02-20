@@ -3,6 +3,7 @@ package typings.googleAppsScript.GoogleAppsScript.Contacts
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import typings.googleAppsScript.GoogleAppsScript.Base.Month
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A Contact contains the name, address, and various contact details of a contact.
   */
 @js.native
-trait Contact extends js.Object {
+trait Contact extends StObject {
   
   def addAddress(label: String, address: String): AddressField = js.native
   def addAddress(

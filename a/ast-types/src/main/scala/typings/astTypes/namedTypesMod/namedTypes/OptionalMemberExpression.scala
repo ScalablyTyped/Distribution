@@ -1,6 +1,5 @@
 package typings.astTypes.namedTypesMod.namedTypes
 
-import org.scalablytyped.runtime.TopLevel
 import typings.astTypes.kindsMod.ChainElementKind
 import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.ExpressionKind
@@ -10,6 +9,7 @@ import typings.astTypes.kindsMod.NodeKind
 import typings.astTypes.kindsMod.PrintableKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.typesMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,6 +38,55 @@ trait OptionalMemberExpression
   
   var `type`: typings.astTypes.astTypesStrings.OptionalMemberExpression = js.native
 }
-@JSImport("ast-types/gen/namedTypes", "namedTypes.OptionalMemberExpression")
-@js.native
-object OptionalMemberExpression extends TopLevel[Type[OptionalMemberExpression]]
+object OptionalMemberExpression {
+  
+  @JSImport("ast-types/gen/namedTypes", "namedTypes.OptionalMemberExpression")
+  @js.native
+  val ^ : Type[OptionalMemberExpression] = js.native
+  
+  @scala.inline
+  implicit class OptionalMemberExpressionMutableBuilder[Self <: OptionalMemberExpression] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    
+    @scala.inline
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    
+    @scala.inline
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    
+    @scala.inline
+    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
+    
+    @scala.inline
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocNull: Self = StObject.set(x, "loc", null)
+    
+    @scala.inline
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    
+    @scala.inline
+    def setObject(value: ExpressionKind): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    
+    @scala.inline
+    def setProperty(value: IdentifierKind | ExpressionKind): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: typings.astTypes.astTypesStrings.OptionalMemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
+}

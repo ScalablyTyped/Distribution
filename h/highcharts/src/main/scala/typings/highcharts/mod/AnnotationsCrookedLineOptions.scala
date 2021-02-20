@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationsCrookedLineOptions extends js.Object {
+trait AnnotationsCrookedLineOptions extends StObject {
   
   var controlPointOptions: js.UndefOr[AnnotationsCrookedLineControlPointOptions] = js.native
   
@@ -37,42 +38,30 @@ object AnnotationsCrookedLineOptions {
   }
   
   @scala.inline
-  implicit class AnnotationsCrookedLineOptionsOps[Self <: AnnotationsCrookedLineOptions] (val x: Self) extends AnyVal {
+  implicit class AnnotationsCrookedLineOptionsMutableBuilder[Self <: AnnotationsCrookedLineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlPointOptions(value: AnnotationsCrookedLineControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlPointOptionsUndefined: Self = StObject.set(x, "controlPointOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelOptions(value: AnnotationsCrookedLineLabelOptions): Self = StObject.set(x, "labelOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlPointOptions(value: AnnotationsCrookedLineControlPointOptions): Self = this.set("controlPointOptions", value.asInstanceOf[js.Any])
+    def setLabelOptionsUndefined: Self = StObject.set(x, "labelOptions", js.undefined)
     
     @scala.inline
-    def deleteControlPointOptions: Self = this.set("controlPointOptions", js.undefined)
+    def setShapeOptions(value: AnnotationsCrookedLineShapeOptions): Self = StObject.set(x, "shapeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelOptions(value: AnnotationsCrookedLineLabelOptions): Self = this.set("labelOptions", value.asInstanceOf[js.Any])
+    def setShapeOptionsUndefined: Self = StObject.set(x, "shapeOptions", js.undefined)
     
     @scala.inline
-    def deleteLabelOptions: Self = this.set("labelOptions", js.undefined)
+    def setTypeOptions(value: AnnotationsCrookedLineTypeOptions): Self = StObject.set(x, "typeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeOptions(value: AnnotationsCrookedLineShapeOptions): Self = this.set("shapeOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShapeOptions: Self = this.set("shapeOptions", js.undefined)
-    
-    @scala.inline
-    def setTypeOptions(value: AnnotationsCrookedLineTypeOptions): Self = this.set("typeOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeOptions: Self = this.set("typeOptions", js.undefined)
+    def setTypeOptionsUndefined: Self = StObject.set(x, "typeOptions", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Link extends js.Object {
+trait Link extends StObject {
   
   /** ByProducts are data generated as part of a software supply chain step, but are not the actual result of the step. */
   var byproducts: js.UndefOr[ByProducts] = js.native
@@ -42,57 +43,45 @@ object Link {
   }
   
   @scala.inline
-  implicit class LinkOps[Self <: Link] (val x: Self) extends AnyVal {
+  implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByproducts(value: ByProducts): Self = StObject.set(x, "byproducts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByproductsUndefined: Self = StObject.set(x, "byproducts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommand(value: js.Array[String]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByproducts(value: ByProducts): Self = this.set("byproducts", value.asInstanceOf[js.Any])
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def deleteByproducts: Self = this.set("byproducts", js.undefined)
+    def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
     
     @scala.inline
-    def setCommandVarargs(value: String*): Self = this.set("command", js.Array(value :_*))
+    def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: js.Array[String]): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setMaterials(value: js.Array[GrafeasV1beta1IntotoArtifact]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: Environment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setMaterialsVarargs(value: GrafeasV1beta1IntotoArtifact*): Self = StObject.set(x, "materials", js.Array(value :_*))
     
     @scala.inline
-    def setMaterialsVarargs(value: GrafeasV1beta1IntotoArtifact*): Self = this.set("materials", js.Array(value :_*))
+    def setProducts(value: js.Array[GrafeasV1beta1IntotoArtifact]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterials(value: js.Array[GrafeasV1beta1IntotoArtifact]): Self = this.set("materials", value.asInstanceOf[js.Any])
+    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
     @scala.inline
-    def deleteMaterials: Self = this.set("materials", js.undefined)
-    
-    @scala.inline
-    def setProductsVarargs(value: GrafeasV1beta1IntotoArtifact*): Self = this.set("products", js.Array(value :_*))
-    
-    @scala.inline
-    def setProducts(value: js.Array[GrafeasV1beta1IntotoArtifact]): Self = this.set("products", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProducts: Self = this.set("products", js.undefined)
+    def setProductsVarargs(value: GrafeasV1beta1IntotoArtifact*): Self = StObject.set(x, "products", js.Array(value :_*))
   }
 }

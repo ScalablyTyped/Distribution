@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPromptDisplayingEventUIParam extends js.Object {
+trait UserPromptDisplayingEventUIParam extends StObject {
   
   /**
     * Get a boolean indicating if the operation that triggered the prompt can be cancelled.
@@ -46,54 +47,42 @@ object UserPromptDisplayingEventUIParam {
   }
   
   @scala.inline
-  implicit class UserPromptDisplayingEventUIParamOps[Self <: UserPromptDisplayingEventUIParam] (val x: Self) extends AnyVal {
+  implicit class UserPromptDisplayingEventUIParamMutableBuilder[Self <: UserPromptDisplayingEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanCancel(value: Boolean): Self = StObject.set(x, "canCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanCancelUndefined: Self = StObject.set(x, "canCancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayMessage(value: Boolean): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanCancel(value: Boolean): Self = this.set("canCancel", value.asInstanceOf[js.Any])
+    def setDisplayMessageUndefined: Self = StObject.set(x, "displayMessage", js.undefined)
     
     @scala.inline
-    def deleteCanCancel: Self = this.set("canCancel", js.undefined)
+    def setException(value: js.Any): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMessage(value: Boolean): Self = this.set("displayMessage", value.asInstanceOf[js.Any])
+    def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     
     @scala.inline
-    def deleteDisplayMessage: Self = this.set("displayMessage", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setException(value: js.Any): Self = this.set("exception", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteException: Self = this.set("exception", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setTrigger(value: String): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

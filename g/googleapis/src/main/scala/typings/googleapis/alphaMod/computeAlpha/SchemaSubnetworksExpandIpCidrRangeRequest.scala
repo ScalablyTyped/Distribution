@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSubnetworksExpandIpCidrRangeRequest extends js.Object {
+trait SchemaSubnetworksExpandIpCidrRangeRequest extends StObject {
   
   /**
     * The IP (in CIDR format or netmask) of internal addresses that are legal
@@ -31,30 +32,18 @@ object SchemaSubnetworksExpandIpCidrRangeRequest {
   }
   
   @scala.inline
-  implicit class SchemaSubnetworksExpandIpCidrRangeRequestOps[Self <: SchemaSubnetworksExpandIpCidrRangeRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSubnetworksExpandIpCidrRangeRequestMutableBuilder[Self <: SchemaSubnetworksExpandIpCidrRangeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRangeType(value: String): Self = StObject.set(x, "rangeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpCidrRange(value: String): Self = this.set("ipCidrRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpCidrRange: Self = this.set("ipCidrRange", js.undefined)
-    
-    @scala.inline
-    def setRangeType(value: String): Self = this.set("rangeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeType: Self = this.set("rangeType", js.undefined)
+    def setRangeTypeUndefined: Self = StObject.set(x, "rangeType", js.undefined)
   }
 }

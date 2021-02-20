@@ -1,15 +1,15 @@
 package typings.jsforce
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsforce/promise", JSImport.Namespace)
-@js.native
-object promiseMod extends js.Object {
+object promiseMod {
   
+  @JSImport("jsforce/promise", "Promise")
   @js.native
-  class Promise () extends js.Object {
+  class Promise () extends StObject {
     
     def thenCall(cb: js.Function0[Unit]): Unit = js.native
   }

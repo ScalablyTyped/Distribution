@@ -1,11 +1,12 @@
 package typings.awsSdk.globalacceleratorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpSet extends js.Object {
+trait IpSet extends StObject {
   
   /**
     * The array of IP addresses in the IP address set. An IP address set can have a maximum of two IP addresses.
@@ -26,33 +27,21 @@ object IpSet {
   }
   
   @scala.inline
-  implicit class IpSetOps[Self <: IpSet] (val x: Self) extends AnyVal {
+  implicit class IpSetMutableBuilder[Self <: IpSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpAddresses(value: IpAddresses): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpAddressesUndefined: Self = StObject.set(x, "IpAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpAddressesVarargs(value: IpAddress*): Self = StObject.set(x, "IpAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setIpAddressesVarargs(value: IpAddress*): Self = this.set("IpAddresses", js.Array(value :_*))
+    def setIpFamily(value: GenericString): Self = StObject.set(x, "IpFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddresses(value: IpAddresses): Self = this.set("IpAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpAddresses: Self = this.set("IpAddresses", js.undefined)
-    
-    @scala.inline
-    def setIpFamily(value: GenericString): Self = this.set("IpFamily", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpFamily: Self = this.set("IpFamily", js.undefined)
+    def setIpFamilyUndefined: Self = StObject.set(x, "IpFamily", js.undefined)
   }
 }

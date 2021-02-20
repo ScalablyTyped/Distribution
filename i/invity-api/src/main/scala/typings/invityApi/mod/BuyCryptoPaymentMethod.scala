@@ -1,5 +1,6 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.invityApi.invityApiStrings.iDeal
   - typings.invityApi.invityApiStrings.sofort
 */
-trait BuyCryptoPaymentMethod extends js.Object
+trait BuyCryptoPaymentMethod extends StObject
 object BuyCryptoPaymentMethod {
   
   @scala.inline

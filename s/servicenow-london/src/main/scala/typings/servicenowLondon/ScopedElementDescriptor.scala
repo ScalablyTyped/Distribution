@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScopedElementDescriptor extends js.Object {
+trait ScopedElementDescriptor extends StObject {
   
   /**
     * Returns the encryption type used for attachments on the element's table.
@@ -247,54 +248,42 @@ object ScopedElementDescriptor {
   }
   
   @scala.inline
-  implicit class ScopedElementDescriptorOps[Self <: ScopedElementDescriptor] (val x: Self) extends AnyVal {
+  implicit class ScopedElementDescriptorMutableBuilder[Self <: ScopedElementDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAttachmentEncryptionType(value: () => String): Self = StObject.set(x, "getAttachmentEncryptionType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEncryptionType(value: () => String): Self = StObject.set(x, "getEncryptionType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetInternalType(value: () => String): Self = StObject.set(x, "getInternalType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAttachmentEncryptionType(value: () => String): Self = this.set("getAttachmentEncryptionType", js.Any.fromFunction0(value))
+    def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEncryptionType(value: () => String): Self = this.set("getEncryptionType", js.Any.fromFunction0(value))
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInternalType(value: () => String): Self = this.set("getInternalType", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabel(value: () => String): Self = this.set("getLabel", js.Any.fromFunction0(value))
+    def setGetPlural(value: () => String): Self = StObject.set(x, "getPlural", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
+    def setHasAttachmentsEncrypted(value: () => Boolean): Self = StObject.set(x, "hasAttachmentsEncrypted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setIsAutoOrSysID(value: () => Boolean): Self = StObject.set(x, "isAutoOrSysID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPlural(value: () => String): Self = this.set("getPlural", js.Any.fromFunction0(value))
+    def setIsChoiceTable(value: () => Boolean): Self = StObject.set(x, "isChoiceTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasAttachmentsEncrypted(value: () => Boolean): Self = this.set("hasAttachmentsEncrypted", js.Any.fromFunction0(value))
+    def setIsEdgeEncrypted(value: () => Boolean): Self = StObject.set(x, "isEdgeEncrypted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsAutoOrSysID(value: () => Boolean): Self = this.set("isAutoOrSysID", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsChoiceTable(value: () => Boolean): Self = this.set("isChoiceTable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsEdgeEncrypted(value: () => Boolean): Self = this.set("isEdgeEncrypted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsVirtual(value: () => Boolean): Self = this.set("isVirtual", js.Any.fromFunction0(value))
+    def setIsVirtual(value: () => Boolean): Self = StObject.set(x, "isVirtual", js.Any.fromFunction0(value))
   }
 }

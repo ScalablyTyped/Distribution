@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TableRecord...
   */
 @js.native
-trait ITableRecord extends js.Object {
+trait ITableRecord extends StObject {
   
   /**
     * Comment related to the table.
@@ -69,45 +70,33 @@ object ITableRecord {
   }
   
   @scala.inline
-  implicit class ITableRecordOps[Self <: ITableRecord] (val x: Self) extends AnyVal {
+  implicit class ITableRecordMutableBuilder[Self <: ITableRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQComment(value: String): Self = StObject.set(x, "qComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQFields(value: js.Array[IFieldInTableData]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQFieldsVarargs(value: IFieldInTableData*): Self = StObject.set(x, "qFields", js.Array(value :_*))
     
     @scala.inline
-    def setQComment(value: String): Self = this.set("qComment", value.asInstanceOf[js.Any])
+    def setQIsDirectDiscovery(value: Boolean): Self = StObject.set(x, "qIsDirectDiscovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldsVarargs(value: IFieldInTableData*): Self = this.set("qFields", js.Array(value :_*))
+    def setQIsSynthetic(value: Boolean): Self = StObject.set(x, "qIsSynthetic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFields(value: js.Array[IFieldInTableData]): Self = this.set("qFields", value.asInstanceOf[js.Any])
+    def setQLoose(value: Boolean): Self = StObject.set(x, "qLoose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsDirectDiscovery(value: Boolean): Self = this.set("qIsDirectDiscovery", value.asInstanceOf[js.Any])
+    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsSynthetic(value: Boolean): Self = this.set("qIsSynthetic", value.asInstanceOf[js.Any])
+    def setQNoOfRows(value: Double): Self = StObject.set(x, "qNoOfRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLoose(value: Boolean): Self = this.set("qLoose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQName(value: String): Self = this.set("qName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQNoOfRows(value: Double): Self = this.set("qNoOfRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQPos(value: IPoint): Self = this.set("qPos", value.asInstanceOf[js.Any])
+    def setQPos(value: IPoint): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FhirStore extends js.Object {
+trait FhirStore extends StObject {
   
   /**
     * Immutable. Whether to disable referential integrity in this FHIR store. This field is immutable after FHIR store creation. The default value is false, meaning that the API enforces
@@ -75,73 +76,61 @@ object FhirStore {
   }
   
   @scala.inline
-  implicit class FhirStoreOps[Self <: FhirStore] (val x: Self) extends AnyVal {
+  implicit class FhirStoreMutableBuilder[Self <: FhirStore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableReferentialIntegrity(value: Boolean): Self = StObject.set(x, "disableReferentialIntegrity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableReferentialIntegrityUndefined: Self = StObject.set(x, "disableReferentialIntegrity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableResourceVersioning(value: Boolean): Self = StObject.set(x, "disableResourceVersioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableReferentialIntegrity(value: Boolean): Self = this.set("disableReferentialIntegrity", value.asInstanceOf[js.Any])
+    def setDisableResourceVersioningUndefined: Self = StObject.set(x, "disableResourceVersioning", js.undefined)
     
     @scala.inline
-    def deleteDisableReferentialIntegrity: Self = this.set("disableReferentialIntegrity", js.undefined)
+    def setEnableUpdateCreate(value: Boolean): Self = StObject.set(x, "enableUpdateCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableResourceVersioning(value: Boolean): Self = this.set("disableResourceVersioning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableResourceVersioning: Self = this.set("disableResourceVersioning", js.undefined)
-    
-    @scala.inline
-    def setEnableUpdateCreate(value: Boolean): Self = this.set("enableUpdateCreate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableUpdateCreate: Self = this.set("enableUpdateCreate", js.undefined)
+    def setEnableUpdateCreateUndefined: Self = StObject.set(x, "enableUpdateCreate", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.FhirStore with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNotificationConfig(value: NotificationConfig): Self = this.set("notificationConfig", value.asInstanceOf[js.Any])
+    def setNotificationConfig(value: NotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationConfig: Self = this.set("notificationConfig", js.undefined)
+    def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
     
     @scala.inline
-    def setStreamConfigsVarargs(value: StreamConfig*): Self = this.set("streamConfigs", js.Array(value :_*))
+    def setStreamConfigs(value: js.Array[StreamConfig]): Self = StObject.set(x, "streamConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamConfigs(value: js.Array[StreamConfig]): Self = this.set("streamConfigs", value.asInstanceOf[js.Any])
+    def setStreamConfigsUndefined: Self = StObject.set(x, "streamConfigs", js.undefined)
     
     @scala.inline
-    def deleteStreamConfigs: Self = this.set("streamConfigs", js.undefined)
+    def setStreamConfigsVarargs(value: StreamConfig*): Self = StObject.set(x, "streamConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

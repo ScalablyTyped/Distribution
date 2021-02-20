@@ -5,6 +5,7 @@ import typings.activexMsxml2.activexMsxml2Numbers.`0`
 import typings.activexMsxml2.activexMsxml2Numbers.`1`
 import typings.activexMsxml2.activexMsxml2Numbers.`2`
 import typings.activexMsxml2.activexMsxml2Numbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMsxml2.activexMsxml2Numbers.`-1`
   - typings.activexMsxml2.activexMsxml2Numbers.`0`
 */
-trait SERVERXMLHTTP_OPTION extends js.Object
+trait SERVERXMLHTTP_OPTION extends StObject
 object SERVERXMLHTTP_OPTION {
   
   @scala.inline

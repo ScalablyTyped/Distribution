@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRuleNamesByTargetResponse extends js.Object {
+trait ListRuleNamesByTargetResponse extends StObject {
   
   /**
     * Indicates whether there are additional results to retrieve. If there are no more results, the value is null.
@@ -26,33 +27,21 @@ object ListRuleNamesByTargetResponse {
   }
   
   @scala.inline
-  implicit class ListRuleNamesByTargetResponseOps[Self <: ListRuleNamesByTargetResponse] (val x: Self) extends AnyVal {
+  implicit class ListRuleNamesByTargetResponseMutableBuilder[Self <: ListRuleNamesByTargetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleNames(value: RuleNameList): Self = StObject.set(x, "RuleNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRuleNamesUndefined: Self = StObject.set(x, "RuleNames", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRuleNamesVarargs(value: RuleName*): Self = this.set("RuleNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setRuleNames(value: RuleNameList): Self = this.set("RuleNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleNames: Self = this.set("RuleNames", js.undefined)
+    def setRuleNamesVarargs(value: RuleName*): Self = StObject.set(x, "RuleNames", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextMode extends js.Object {
+trait TextMode extends StObject {
   
   def autoOutdent(state: js.Any, doc: js.Any, row: js.Any): Unit = js.native
   
@@ -41,42 +42,30 @@ object TextMode {
   }
   
   @scala.inline
-  implicit class TextModeOps[Self <: TextMode] (val x: Self) extends AnyVal {
+  implicit class TextModeMutableBuilder[Self <: TextMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoOutdent(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "autoOutdent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckOutdent(value: (js.Any, js.Any, js.Any) => Boolean): Self = StObject.set(x, "checkOutdent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateModeDelegates(value: js.Any => Unit): Self = StObject.set(x, "createModeDelegates", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoOutdent(value: (js.Any, js.Any, js.Any) => Unit): Self = this.set("autoOutdent", js.Any.fromFunction3(value))
+    def setCreateWorker(value: js.Any => js.Any): Self = StObject.set(x, "createWorker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheckOutdent(value: (js.Any, js.Any, js.Any) => Boolean): Self = this.set("checkOutdent", js.Any.fromFunction3(value))
+    def setGetNextLineIndent(value: (js.Any, js.Any, js.Any) => String): Self = StObject.set(x, "getNextLineIndent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCreateModeDelegates(value: js.Any => Unit): Self = this.set("createModeDelegates", js.Any.fromFunction1(value))
+    def setGetTokenizer(value: () => js.Any): Self = StObject.set(x, "getTokenizer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateWorker(value: js.Any => js.Any): Self = this.set("createWorker", js.Any.fromFunction1(value))
+    def setToggleCommentLines(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "toggleCommentLines", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetNextLineIndent(value: (js.Any, js.Any, js.Any) => String): Self = this.set("getNextLineIndent", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetTokenizer(value: () => js.Any): Self = this.set("getTokenizer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToggleCommentLines(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = this.set("toggleCommentLines", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setTransformAction(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("transformAction", js.Any.fromFunction5(value))
+    def setTransformAction(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "transformAction", js.Any.fromFunction5(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.babelCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartialConfig extends js.Object {
+trait PartialConfig extends StObject {
   
   var babelignore: js.UndefOr[String] = js.native
   
@@ -26,42 +27,30 @@ object PartialConfig {
   }
   
   @scala.inline
-  implicit class PartialConfigOps[Self <: PartialConfig] (val x: Self) extends AnyVal {
+  implicit class PartialConfigMutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBabelignore(value: String): Self = StObject.set(x, "babelignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBabelignoreUndefined: Self = StObject.set(x, "babelignore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBabelrc(value: String): Self = StObject.set(x, "babelrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasFilesystemConfig(value: () => Boolean): Self = this.set("hasFilesystemConfig", js.Any.fromFunction0(value))
+    def setBabelrcUndefined: Self = StObject.set(x, "babelrc", js.undefined)
     
     @scala.inline
-    def setOptions(value: TransformOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBabelignore(value: String): Self = this.set("babelignore", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteBabelignore: Self = this.set("babelignore", js.undefined)
+    def setHasFilesystemConfig(value: () => Boolean): Self = StObject.set(x, "hasFilesystemConfig", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBabelrc(value: String): Self = this.set("babelrc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBabelrc: Self = this.set("babelrc", js.undefined)
-    
-    @scala.inline
-    def setConfig(value: String): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setOptions(value: TransformOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

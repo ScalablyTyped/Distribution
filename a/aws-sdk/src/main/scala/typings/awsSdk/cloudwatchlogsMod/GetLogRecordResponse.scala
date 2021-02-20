@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLogRecordResponse extends js.Object {
+trait GetLogRecordResponse extends StObject {
   
   /**
     * The requested log event, as a JSON string.
@@ -21,24 +22,12 @@ object GetLogRecordResponse {
   }
   
   @scala.inline
-  implicit class GetLogRecordResponseOps[Self <: GetLogRecordResponse] (val x: Self) extends AnyVal {
+  implicit class GetLogRecordResponseMutableBuilder[Self <: GetLogRecordResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogRecord(value: LogRecord): Self = StObject.set(x, "logRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogRecord(value: LogRecord): Self = this.set("logRecord", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogRecord: Self = this.set("logRecord", js.undefined)
+    def setLogRecordUndefined: Self = StObject.set(x, "logRecord", js.undefined)
   }
 }

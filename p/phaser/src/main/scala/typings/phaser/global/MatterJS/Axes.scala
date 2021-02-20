@@ -1,5 +1,6 @@
 package typings.phaser.global.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Axes ()
   extends typings.phaser.MatterJS.Axes
-/* static members */
-@JSGlobal("MatterJS.Axes")
-@js.native
-object Axes extends js.Object {
+object Axes {
   
   /**
     * Creates a new set of axes from the given vertices.
@@ -24,6 +22,9 @@ object Axes extends js.Object {
     * @param {vertices} vertices
     * @return {axes} A new axes from the given vertices
     */
+  /* static member */
+  @JSGlobal("MatterJS.Axes.fromVertices")
+  @js.native
   def fromVertices(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = js.native
   
   /**
@@ -32,5 +33,8 @@ object Axes extends js.Object {
     * @param {axes} axes
     * @param {number} angle
     */
+  /* static member */
+  @JSGlobal("MatterJS.Axes.rotate")
+  @js.native
   def rotate(axes: js.Array[typings.phaser.MatterJS.Vector], angle: Double): Unit = js.native
 }

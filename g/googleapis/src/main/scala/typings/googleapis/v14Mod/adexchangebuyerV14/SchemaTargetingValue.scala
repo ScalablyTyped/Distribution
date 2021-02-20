@@ -1,11 +1,12 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTargetingValue extends js.Object {
+trait SchemaTargetingValue extends StObject {
   
   /**
     * The creative size value to exclude/include.
@@ -41,54 +42,42 @@ object SchemaTargetingValue {
   }
   
   @scala.inline
-  implicit class SchemaTargetingValueOps[Self <: SchemaTargetingValue] (val x: Self) extends AnyVal {
+  implicit class SchemaTargetingValueMutableBuilder[Self <: SchemaTargetingValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreativeSizeValue(value: SchemaTargetingValueCreativeSize): Self = StObject.set(x, "creativeSizeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreativeSizeValueUndefined: Self = StObject.set(x, "creativeSizeValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayPartTargetingValue(value: SchemaTargetingValueDayPartTargeting): Self = StObject.set(x, "dayPartTargetingValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeSizeValue(value: SchemaTargetingValueCreativeSize): Self = this.set("creativeSizeValue", value.asInstanceOf[js.Any])
+    def setDayPartTargetingValueUndefined: Self = StObject.set(x, "dayPartTargetingValue", js.undefined)
     
     @scala.inline
-    def deleteCreativeSizeValue: Self = this.set("creativeSizeValue", js.undefined)
+    def setDemogAgeCriteriaValue(value: SchemaTargetingValueDemogAgeCriteria): Self = StObject.set(x, "demogAgeCriteriaValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayPartTargetingValue(value: SchemaTargetingValueDayPartTargeting): Self = this.set("dayPartTargetingValue", value.asInstanceOf[js.Any])
+    def setDemogAgeCriteriaValueUndefined: Self = StObject.set(x, "demogAgeCriteriaValue", js.undefined)
     
     @scala.inline
-    def deleteDayPartTargetingValue: Self = this.set("dayPartTargetingValue", js.undefined)
+    def setDemogGenderCriteriaValue(value: SchemaTargetingValueDemogGenderCriteria): Self = StObject.set(x, "demogGenderCriteriaValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemogAgeCriteriaValue(value: SchemaTargetingValueDemogAgeCriteria): Self = this.set("demogAgeCriteriaValue", value.asInstanceOf[js.Any])
+    def setDemogGenderCriteriaValueUndefined: Self = StObject.set(x, "demogGenderCriteriaValue", js.undefined)
     
     @scala.inline
-    def deleteDemogAgeCriteriaValue: Self = this.set("demogAgeCriteriaValue", js.undefined)
+    def setLongValue(value: String): Self = StObject.set(x, "longValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemogGenderCriteriaValue(value: SchemaTargetingValueDemogGenderCriteria): Self = this.set("demogGenderCriteriaValue", value.asInstanceOf[js.Any])
+    def setLongValueUndefined: Self = StObject.set(x, "longValue", js.undefined)
     
     @scala.inline
-    def deleteDemogGenderCriteriaValue: Self = this.set("demogGenderCriteriaValue", js.undefined)
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongValue(value: String): Self = this.set("longValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLongValue: Self = this.set("longValue", js.undefined)
-    
-    @scala.inline
-    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

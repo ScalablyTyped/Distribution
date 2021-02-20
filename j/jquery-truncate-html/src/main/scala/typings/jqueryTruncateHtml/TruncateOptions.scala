@@ -1,11 +1,12 @@
 package typings.jqueryTruncateHtml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TruncateOptions extends js.Object {
+trait TruncateOptions extends StObject {
   
   var ellipsis: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object TruncateOptions {
   }
   
   @scala.inline
-  implicit class TruncateOptionsOps[Self <: TruncateOptions] (val x: Self) extends AnyVal {
+  implicit class TruncateOptionsMutableBuilder[Self <: TruncateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsis(value: String): Self = this.set("ellipsis", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteEllipsis: Self = this.set("ellipsis", js.undefined)
+    def setNoBreaks(value: Boolean): Self = StObject.set(x, "noBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setNoBreaksUndefined: Self = StObject.set(x, "noBreaks", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setStripTags(value: Boolean): Self = StObject.set(x, "stripTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoBreaks(value: Boolean): Self = this.set("noBreaks", value.asInstanceOf[js.Any])
+    def setStripTagsUndefined: Self = StObject.set(x, "stripTags", js.undefined)
     
     @scala.inline
-    def deleteNoBreaks: Self = this.set("noBreaks", js.undefined)
+    def setWords(value: Boolean): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStripTags(value: Boolean): Self = this.set("stripTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripTags: Self = this.set("stripTags", js.undefined)
-    
-    @scala.inline
-    def setWords(value: Boolean): Self = this.set("words", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWords: Self = this.set("words", js.undefined)
+    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
   }
 }

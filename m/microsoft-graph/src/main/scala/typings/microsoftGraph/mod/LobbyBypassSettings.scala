@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LobbyBypassSettings extends js.Object {
+trait LobbyBypassSettings extends StObject {
   
   // Specifies whether or not to always let dial-in callers bypass the lobby. Optional.
   var isDialInBypassEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
@@ -25,36 +26,24 @@ object LobbyBypassSettings {
   }
   
   @scala.inline
-  implicit class LobbyBypassSettingsOps[Self <: LobbyBypassSettings] (val x: Self) extends AnyVal {
+  implicit class LobbyBypassSettingsMutableBuilder[Self <: LobbyBypassSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsDialInBypassEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "isDialInBypassEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsDialInBypassEnabledNull: Self = StObject.set(x, "isDialInBypassEnabled", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDialInBypassEnabledUndefined: Self = StObject.set(x, "isDialInBypassEnabled", js.undefined)
     
     @scala.inline
-    def setIsDialInBypassEnabled(value: NullableOption[Boolean]): Self = this.set("isDialInBypassEnabled", value.asInstanceOf[js.Any])
+    def setScope(value: NullableOption[LobbyBypassScope]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDialInBypassEnabled: Self = this.set("isDialInBypassEnabled", js.undefined)
+    def setScopeNull: Self = StObject.set(x, "scope", null)
     
     @scala.inline
-    def setIsDialInBypassEnabledNull: Self = this.set("isDialInBypassEnabled", null)
-    
-    @scala.inline
-    def setScope(value: NullableOption[LobbyBypassScope]): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setScopeNull: Self = this.set("scope", null)
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

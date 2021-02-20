@@ -5,6 +5,7 @@ import typings.chromeApps.anon.Alwaysupdate
 import typings.chromeApps.anon.Background
 import typings.chromeApps.chromeAppsBooleans.`true`
 import typings.chromeApps.chromeAppsNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,39 +54,27 @@ object ValidKioskManifest {
   }
   
   @scala.inline
-  implicit class ValidKioskManifestOps[Self <: ValidKioskManifest] (val x: Self) extends AnyVal {
+  implicit class ValidKioskManifestMutableBuilder[Self <: ValidKioskManifest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKiosk(value: Alwaysupdate): Self = StObject.set(x, "kiosk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKioskUndefined: Self = StObject.set(x, "kiosk", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKiosk_enabled(value: `true`): Self = StObject.set(x, "kiosk_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKiosk_enabled(value: `true`): Self = this.set("kiosk_enabled", value.asInstanceOf[js.Any])
+    def setKiosk_only(value: Boolean): Self = StObject.set(x, "kiosk_only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKiosk(value: Alwaysupdate): Self = this.set("kiosk", value.asInstanceOf[js.Any])
+    def setKiosk_onlyUndefined: Self = StObject.set(x, "kiosk_only", js.undefined)
     
     @scala.inline
-    def deleteKiosk: Self = this.set("kiosk", js.undefined)
+    def setKiosk_secondary_apps(value: js.Any): Self = StObject.set(x, "kiosk_secondary_apps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKiosk_only(value: Boolean): Self = this.set("kiosk_only", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKiosk_only: Self = this.set("kiosk_only", js.undefined)
-    
-    @scala.inline
-    def setKiosk_secondary_apps(value: js.Any): Self = this.set("kiosk_secondary_apps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKiosk_secondary_apps: Self = this.set("kiosk_secondary_apps", js.undefined)
+    def setKiosk_secondary_appsUndefined: Self = StObject.set(x, "kiosk_secondary_apps", js.undefined)
   }
 }

@@ -3,13 +3,14 @@ package typings.evernote.mod.Types
 import typings.evernote.anon.FullMap
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.LazyMap")
 @js.native
-class LazyMap () extends js.Object {
+class LazyMap () extends StObject {
   def this(args: FullMap) = this()
   
   var fullMap: js.UndefOr[Map[String, String]] = js.native

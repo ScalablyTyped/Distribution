@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,72 +35,60 @@ object DomainDnsSrvRecord {
   }
   
   @scala.inline
-  implicit class DomainDnsSrvRecordOps[Self <: DomainDnsSrvRecord] (val x: Self) extends AnyVal {
+  implicit class DomainDnsSrvRecordMutableBuilder[Self <: DomainDnsSrvRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNameTarget(value: NullableOption[String]): Self = StObject.set(x, "nameTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameTargetNull: Self = StObject.set(x, "nameTarget", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameTargetUndefined: Self = StObject.set(x, "nameTarget", js.undefined)
     
     @scala.inline
-    def setNameTarget(value: NullableOption[String]): Self = this.set("nameTarget", value.asInstanceOf[js.Any])
+    def setPort(value: NullableOption[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNameTarget: Self = this.set("nameTarget", js.undefined)
+    def setPortNull: Self = StObject.set(x, "port", null)
     
     @scala.inline
-    def setNameTargetNull: Self = this.set("nameTarget", null)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setPort(value: NullableOption[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPriority(value: NullableOption[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPriorityNull: Self = StObject.set(x, "priority", null)
     
     @scala.inline
-    def setPortNull: Self = this.set("port", null)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setPriority(value: NullableOption[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setProtocol(value: NullableOption[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setProtocolNull: Self = StObject.set(x, "protocol", null)
     
     @scala.inline
-    def setPriorityNull: Self = this.set("priority", null)
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def setProtocol(value: NullableOption[String]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setService(value: NullableOption[String]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setServiceNull: Self = StObject.set(x, "service", null)
     
     @scala.inline
-    def setProtocolNull: Self = this.set("protocol", null)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def setService(value: NullableOption[String]): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setWeight(value: NullableOption[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setWeightNull: Self = StObject.set(x, "weight", null)
     
     @scala.inline
-    def setServiceNull: Self = this.set("service", null)
-    
-    @scala.inline
-    def setWeight(value: NullableOption[Double]): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
-    
-    @scala.inline
-    def setWeightNull: Self = this.set("weight", null)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

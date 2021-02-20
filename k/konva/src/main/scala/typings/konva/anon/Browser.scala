@@ -1,11 +1,12 @@
 package typings.konva.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Browser extends js.Object {
+trait Browser extends StObject {
   
   var browser: js.Any = js.native
   
@@ -26,33 +27,21 @@ object Browser {
   }
   
   @scala.inline
-  implicit class BrowserOps[Self <: Browser] (val x: Self) extends AnyVal {
+  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowser(value: js.Any): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIeMobile(value: Boolean): Self = StObject.set(x, "ieMobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsIE(value: Double | Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowser(value: js.Any): Self = this.set("browser", value.asInstanceOf[js.Any])
+    def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIeMobile(value: Boolean): Self = this.set("ieMobile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsIE(value: Double | Boolean): Self = this.set("isIE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMobile(value: Boolean): Self = this.set("mobile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: js.Any): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

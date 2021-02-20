@@ -1,6 +1,7 @@
 package typings.typescriptServices.mod
 
 import typings.typescriptServices.TypeScript.INameSyntax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,10 @@ class GenericTypeSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "GenericTypeSyntax")
-@js.native
-object GenericTypeSyntax extends js.Object {
+object GenericTypeSyntax {
   
+  /* static member */
+  @JSImport("typescript-services", "GenericTypeSyntax.create1")
+  @js.native
   def create1(name: INameSyntax): typings.typescriptServices.TypeScript.GenericTypeSyntax = js.native
 }

@@ -2,12 +2,13 @@ package typings.tuyaPanelKit.stackTypesMod
 
 import typings.tuyaPanelKit.anon.Header
 import typings.tuyaPanelKit.anon.Progress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackHeaderInterpolationProps extends js.Object {
+trait StackHeaderInterpolationProps extends StObject {
   
   /**
     * Values for the current screen (the screen which owns this header).
@@ -34,30 +35,18 @@ object StackHeaderInterpolationProps {
   }
   
   @scala.inline
-  implicit class StackHeaderInterpolationPropsOps[Self <: StackHeaderInterpolationProps] (val x: Self) extends AnyVal {
+  implicit class StackHeaderInterpolationPropsMutableBuilder[Self <: StackHeaderInterpolationProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrent(value: Progress): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayouts(value: Header): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNext(value: Progress): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent(value: Progress): Self = this.set("current", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayouts(value: Header): Self = this.set("layouts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: Progress): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

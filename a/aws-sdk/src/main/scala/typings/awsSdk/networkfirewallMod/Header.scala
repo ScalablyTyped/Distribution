@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Header extends js.Object {
+trait Header extends StObject {
   
   /**
     * The destination IP address or address range to inspect for, in CIDR notation. To match with any address, specify ANY.  Specify an IP address or a block of IP addresses in Classless Inter-Domain Routing (CIDR) notation. Network Firewall supports all address ranges for IPv4.  Examples:    To configure Network Firewall to inspect for the IP address 192.0.2.44, specify 192.0.2.44/32.   To configure Network Firewall to inspect for IP addresses from 192.0.2.0 to 192.0.2.255, specify 192.0.2.0/24.   For more information about CIDR notation, see the Wikipedia entry Classless Inter-Domain Routing.
@@ -53,36 +54,24 @@ object Header {
   }
   
   @scala.inline
-  implicit class HeaderOps[Self <: Header] (val x: Self) extends AnyVal {
+  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationPort(value: Port): Self = StObject.set(x, "DestinationPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: StatefulRuleDirection): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: Destination): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    def setProtocol(value: StatefulRuleProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationPort(value: Port): Self = this.set("DestinationPort", value.asInstanceOf[js.Any])
+    def setSource(value: Source): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: StatefulRuleDirection): Self = this.set("Direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: StatefulRuleProtocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: Source): Self = this.set("Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourcePort(value: Port): Self = this.set("SourcePort", value.asInstanceOf[js.Any])
+    def setSourcePort(value: Port): Self = StObject.set(x, "SourcePort", value.asInstanceOf[js.Any])
   }
 }

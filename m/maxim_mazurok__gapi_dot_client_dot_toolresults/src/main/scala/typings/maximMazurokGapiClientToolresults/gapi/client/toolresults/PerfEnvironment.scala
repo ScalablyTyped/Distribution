@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerfEnvironment extends js.Object {
+trait PerfEnvironment extends StObject {
   
   /** CPU related environment info */
   var cpuInfo: js.UndefOr[CPUInfo] = js.native
@@ -22,30 +23,18 @@ object PerfEnvironment {
   }
   
   @scala.inline
-  implicit class PerfEnvironmentOps[Self <: PerfEnvironment] (val x: Self) extends AnyVal {
+  implicit class PerfEnvironmentMutableBuilder[Self <: PerfEnvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpuInfo(value: CPUInfo): Self = StObject.set(x, "cpuInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpuInfoUndefined: Self = StObject.set(x, "cpuInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMemoryInfo(value: MemoryInfo): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuInfo(value: CPUInfo): Self = this.set("cpuInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCpuInfo: Self = this.set("cpuInfo", js.undefined)
-    
-    @scala.inline
-    def setMemoryInfo(value: MemoryInfo): Self = this.set("memoryInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemoryInfo: Self = this.set("memoryInfo", js.undefined)
+    def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
   }
 }

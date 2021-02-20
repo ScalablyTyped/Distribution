@@ -15,12 +15,13 @@ import typings.hellosignEmbedded.hellosignEmbeddedStrings.pt_BR
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.sv_SE
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.zh_CN
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var allowCancel: js.UndefOr[Boolean] = js.native
   
@@ -57,92 +58,80 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCancel(value: Boolean): Self = StObject.set(x, "allowCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowCancelUndefined: Self = StObject.set(x, "allowCancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCancel(value: Boolean): Self = this.set("allowCancel", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def deleteAllowCancel: Self = this.set("allowCancel", js.undefined)
+    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setHideHeader(value: Boolean): Self = StObject.set(x, "hideHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
-    
-    @scala.inline
-    def setHideHeader(value: Boolean): Self = this.set("hideHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideHeader: Self = this.set("hideHeader", js.undefined)
+    def setHideHeaderUndefined: Self = StObject.set(x, "hideHeader", js.undefined)
     
     @scala.inline
     def setLocale(
       value: sv_SE | ja_JP | es_ES | da_DK | zh_CN | nl_NL | es_MX | de_DE | pl_PL | en_US | it_IT | pt_BR | fr_FR | cs_CZ
-    ): Self = this.set("locale", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def setRedirectTo(value: String): Self = this.set("redirectTo", value.asInstanceOf[js.Any])
+    def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRedirectTo: Self = this.set("redirectTo", js.undefined)
+    def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
     
     @scala.inline
-    def setRequestingEmail(value: String): Self = this.set("requestingEmail", value.asInstanceOf[js.Any])
+    def setRequestingEmail(value: String): Self = StObject.set(x, "requestingEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestingEmail: Self = this.set("requestingEmail", js.undefined)
+    def setRequestingEmailUndefined: Self = StObject.set(x, "requestingEmail", js.undefined)
     
     @scala.inline
-    def setSkipDomainVerification(value: Boolean): Self = this.set("skipDomainVerification", value.asInstanceOf[js.Any])
+    def setSkipDomainVerification(value: Boolean): Self = StObject.set(x, "skipDomainVerification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSkipDomainVerification: Self = this.set("skipDomainVerification", js.undefined)
+    def setSkipDomainVerificationUndefined: Self = StObject.set(x, "skipDomainVerification", js.undefined)
     
     @scala.inline
-    def setTestMode(value: Boolean): Self = this.set("testMode", value.asInstanceOf[js.Any])
+    def setTestMode(value: Boolean): Self = StObject.set(x, "testMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTestMode: Self = this.set("testMode", js.undefined)
+    def setTestModeUndefined: Self = StObject.set(x, "testMode", js.undefined)
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setWhiteLabeling(value: js.Object): Self = this.set("whiteLabeling", value.asInstanceOf[js.Any])
+    def setWhiteLabeling(value: js.Object): Self = StObject.set(x, "whiteLabeling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWhiteLabeling: Self = this.set("whiteLabeling", js.undefined)
+    def setWhiteLabelingUndefined: Self = StObject.set(x, "whiteLabeling", js.undefined)
   }
 }

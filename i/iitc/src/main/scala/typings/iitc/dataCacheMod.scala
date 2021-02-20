@@ -1,15 +1,15 @@
 package typings.iitc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("iitc/core/data_cache", JSImport.Namespace)
-@js.native
-object dataCacheMod extends js.Object {
+object dataCacheMod {
   
+  @JSImport("iitc/core/data_cache", "DataCache")
   @js.native
-  class DataCache () extends js.Object {
+  class DataCache () extends StObject {
     
     /**
       * if younger than this, use data in the cache rather than fetching from the server

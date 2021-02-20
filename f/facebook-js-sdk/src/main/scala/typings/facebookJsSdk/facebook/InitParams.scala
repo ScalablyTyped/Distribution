@@ -1,11 +1,12 @@
 package typings.facebookJsSdk.facebook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitParams extends js.Object {
+trait InitParams extends StObject {
   
   var appId: js.UndefOr[String] = js.native
   
@@ -32,63 +33,51 @@ object InitParams {
   }
   
   @scala.inline
-  implicit class InitParamsOps[Self <: InitParams] (val x: Self) extends AnyVal {
+  implicit class InitParamsMutableBuilder[Self <: InitParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoLogAppEvents(value: Boolean): Self = StObject.set(x, "autoLogAppEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setAutoLogAppEventsUndefined: Self = StObject.set(x, "autoLogAppEvents", js.undefined)
     
     @scala.inline
-    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setCookie(value: Boolean): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
     
     @scala.inline
-    def setAutoLogAppEvents(value: Boolean): Self = this.set("autoLogAppEvents", value.asInstanceOf[js.Any])
+    def setFrictionlessRequests(value: Boolean): Self = StObject.set(x, "frictionlessRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoLogAppEvents: Self = this.set("autoLogAppEvents", js.undefined)
+    def setFrictionlessRequestsUndefined: Self = StObject.set(x, "frictionlessRequests", js.undefined)
     
     @scala.inline
-    def setCookie(value: Boolean): Self = this.set("cookie", value.asInstanceOf[js.Any])
+    def setHideFlashCallback(value: Boolean): Self = StObject.set(x, "hideFlashCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCookie: Self = this.set("cookie", js.undefined)
+    def setHideFlashCallbackUndefined: Self = StObject.set(x, "hideFlashCallback", js.undefined)
     
     @scala.inline
-    def setFrictionlessRequests(value: Boolean): Self = this.set("frictionlessRequests", value.asInstanceOf[js.Any])
+    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrictionlessRequests: Self = this.set("frictionlessRequests", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setHideFlashCallback(value: Boolean): Self = this.set("hideFlashCallback", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideFlashCallback: Self = this.set("hideFlashCallback", js.undefined)
+    def setXfbml(value: Boolean): Self = StObject.set(x, "xfbml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Boolean): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setXfbml(value: Boolean): Self = this.set("xfbml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXfbml: Self = this.set("xfbml", js.undefined)
+    def setXfbmlUndefined: Self = StObject.set(x, "xfbml", js.undefined)
   }
 }

@@ -3,6 +3,24 @@
 
 Typings are for version 1.6
 
+## Library description:
+simple diff for object and arrays with options
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | simple-diff |
+| Keywords           | diff |
+| # releases         | 0 |
+| # dependents       | 2 |
+| # downloads        | 13000 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/redexp/simple-diff#readme)
+- [Bugs](https://github.com/redexp/simple-diff/issues)
+- [Repository](https://github.com/redexp/simple-diff)
+- [Npm](https://www.npmjs.com/package/simple-diff)
+    
 
 
 ## Note

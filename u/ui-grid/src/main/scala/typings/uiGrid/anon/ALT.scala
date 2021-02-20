@@ -1,11 +1,12 @@
 package typings.uiGrid.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ALT extends js.Object {
+trait ALT extends StObject {
   
   var ALT: Double = js.native
   
@@ -131,132 +132,120 @@ object ALT {
   }
   
   @scala.inline
-  implicit class ALTOps[Self <: ALT] (val x: Self) extends AnyVal {
+  implicit class ALTMutableBuilder[Self <: ALT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setALT(value: Double): Self = StObject.set(x, "ALT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setALTR(value: Double): Self = StObject.set(x, "ALTR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setALTRIGHT(value: Double): Self = StObject.set(x, "ALTRIGHT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALT(value: Double): Self = this.set("ALT", value.asInstanceOf[js.Any])
+    def setBACKSPACE(value: Double): Self = StObject.set(x, "BACKSPACE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALTR(value: Double): Self = this.set("ALTR", value.asInstanceOf[js.Any])
+    def setBCKSP(value: Double): Self = StObject.set(x, "BCKSP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALTRIGHT(value: Double): Self = this.set("ALTRIGHT", value.asInstanceOf[js.Any])
+    def setCAPSLOCK(value: Double): Self = StObject.set(x, "CAPSLOCK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBACKSPACE(value: Double): Self = this.set("BACKSPACE", value.asInstanceOf[js.Any])
+    def setCTRL(value: Double): Self = StObject.set(x, "CTRL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBCKSP(value: Double): Self = this.set("BCKSP", value.asInstanceOf[js.Any])
+    def setCTRLR(value: Double): Self = StObject.set(x, "CTRLR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPSLOCK(value: Double): Self = this.set("CAPSLOCK", value.asInstanceOf[js.Any])
+    def setCTRLRIGHT(value: Double): Self = StObject.set(x, "CTRLRIGHT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCTRL(value: Double): Self = this.set("CTRL", value.asInstanceOf[js.Any])
+    def setDEL(value: Double): Self = StObject.set(x, "DEL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCTRLR(value: Double): Self = this.set("CTRLR", value.asInstanceOf[js.Any])
+    def setDOWN(value: Double): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCTRLRIGHT(value: Double): Self = this.set("CTRLRIGHT", value.asInstanceOf[js.Any])
+    def setENTER(value: Double): Self = StObject.set(x, "ENTER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDEL(value: Double): Self = this.set("DEL", value.asInstanceOf[js.Any])
+    def setESC(value: Double): Self = StObject.set(x, "ESC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOWN(value: Double): Self = this.set("DOWN", value.asInstanceOf[js.Any])
+    def setF1(value: Double): Self = StObject.set(x, "F1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setENTER(value: Double): Self = this.set("ENTER", value.asInstanceOf[js.Any])
+    def setF10(value: Double): Self = StObject.set(x, "F10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setESC(value: Double): Self = this.set("ESC", value.asInstanceOf[js.Any])
+    def setF11(value: Double): Self = StObject.set(x, "F11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF1(value: Double): Self = this.set("F1", value.asInstanceOf[js.Any])
+    def setF12(value: Double): Self = StObject.set(x, "F12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF10(value: Double): Self = this.set("F10", value.asInstanceOf[js.Any])
+    def setF2(value: Double): Self = StObject.set(x, "F2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF11(value: Double): Self = this.set("F11", value.asInstanceOf[js.Any])
+    def setF3(value: Double): Self = StObject.set(x, "F3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF12(value: Double): Self = this.set("F12", value.asInstanceOf[js.Any])
+    def setF4(value: Double): Self = StObject.set(x, "F4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF2(value: Double): Self = this.set("F2", value.asInstanceOf[js.Any])
+    def setF5(value: Double): Self = StObject.set(x, "F5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF3(value: Double): Self = this.set("F3", value.asInstanceOf[js.Any])
+    def setF6(value: Double): Self = StObject.set(x, "F6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF4(value: Double): Self = this.set("F4", value.asInstanceOf[js.Any])
+    def setF7(value: Double): Self = StObject.set(x, "F7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF5(value: Double): Self = this.set("F5", value.asInstanceOf[js.Any])
+    def setF8(value: Double): Self = StObject.set(x, "F8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF6(value: Double): Self = this.set("F6", value.asInstanceOf[js.Any])
+    def setF9(value: Double): Self = StObject.set(x, "F9", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF7(value: Double): Self = this.set("F7", value.asInstanceOf[js.Any])
+    def setFN(value: Double): Self = StObject.set(x, "FN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF8(value: Double): Self = this.set("F8", value.asInstanceOf[js.Any])
+    def setLEFT(value: Double): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF9(value: Double): Self = this.set("F9", value.asInstanceOf[js.Any])
+    def setMAC(value: Double): Self = StObject.set(x, "MAC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFN(value: Double): Self = this.set("FN", value.asInstanceOf[js.Any])
+    def setPG_DOWN(value: Double): Self = StObject.set(x, "PG_DOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLEFT(value: Double): Self = this.set("LEFT", value.asInstanceOf[js.Any])
+    def setPG_UP(value: Double): Self = StObject.set(x, "PG_UP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAC(value: Double): Self = this.set("MAC", value.asInstanceOf[js.Any])
+    def setRETURN(value: Double): Self = StObject.set(x, "RETURN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPG_DOWN(value: Double): Self = this.set("PG_DOWN", value.asInstanceOf[js.Any])
+    def setRIGHT(value: Double): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPG_UP(value: Double): Self = this.set("PG_UP", value.asInstanceOf[js.Any])
+    def setSHIFT(value: Double): Self = StObject.set(x, "SHIFT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRETURN(value: Double): Self = this.set("RETURN", value.asInstanceOf[js.Any])
+    def setSPACE(value: Double): Self = StObject.set(x, "SPACE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRIGHT(value: Double): Self = this.set("RIGHT", value.asInstanceOf[js.Any])
+    def setSTRG(value: Double): Self = StObject.set(x, "STRG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHIFT(value: Double): Self = this.set("SHIFT", value.asInstanceOf[js.Any])
+    def setTAB(value: Double): Self = StObject.set(x, "TAB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSPACE(value: Double): Self = this.set("SPACE", value.asInstanceOf[js.Any])
+    def setUP(value: Double): Self = StObject.set(x, "UP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSTRG(value: Double): Self = this.set("STRG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTAB(value: Double): Self = this.set("TAB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUP(value: Double): Self = this.set("UP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIN(value: Double): Self = this.set("WIN", value.asInstanceOf[js.Any])
+    def setWIN(value: Double): Self = StObject.set(x, "WIN", value.asInstanceOf[js.Any])
   }
 }

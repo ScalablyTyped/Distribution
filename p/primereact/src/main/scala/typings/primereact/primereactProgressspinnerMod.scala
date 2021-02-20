@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.progressSpinnerMod.ProgressSpinnerProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/progressspinner", JSImport.Namespace)
-@js.native
-object primereactProgressspinnerMod extends js.Object {
+object primereactProgressspinnerMod {
   
+  @JSImport("primereact/progressspinner", "ProgressSpinner")
   @js.native
-  class ProgressSpinner ()
-    extends Component[ProgressSpinnerProps, js.Any, js.Any]
+  class ProgressSpinner protected ()
+    extends typings.primereact.progressSpinnerMod.ProgressSpinner {
+    def this(props: ProgressSpinnerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ProgressSpinnerProps, context: js.Any) = this()
+  }
 }

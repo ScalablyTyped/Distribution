@@ -9,44 +9,63 @@ import typings.pdfmake.interfacesMod.TDocumentDefinitions
 import typings.pdfmake.interfacesMod.TFontDictionary
 import typings.std.Blob
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pdfmake/build/pdfmake", JSImport.Namespace)
-@js.native
-object pdfmakeMod extends js.Object {
+object pdfmakeMod {
   
+  @JSImport("pdfmake/build/pdfmake", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("pdfmake/build/pdfmake", "createPdf")
+  @js.native
   def createPdf(documentDefinitions: TDocumentDefinitions): TCreatedPdf = js.native
+  @JSImport("pdfmake/build/pdfmake", "createPdf")
+  @js.native
   def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: js.UndefOr[scala.Nothing],
     fonts: js.UndefOr[scala.Nothing],
     vfs: StringDictionary[String]
   ): TCreatedPdf = js.native
+  @JSImport("pdfmake/build/pdfmake", "createPdf")
+  @js.native
   def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: js.UndefOr[scala.Nothing],
     fonts: TFontDictionary
   ): TCreatedPdf = js.native
+  @JSImport("pdfmake/build/pdfmake", "createPdf")
+  @js.native
   def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: js.UndefOr[scala.Nothing],
     fonts: TFontDictionary,
     vfs: StringDictionary[String]
   ): TCreatedPdf = js.native
+  @JSImport("pdfmake/build/pdfmake", "createPdf")
+  @js.native
   def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: StringDictionary[CustomTableLayout]): TCreatedPdf = js.native
+  @JSImport("pdfmake/build/pdfmake", "createPdf")
+  @js.native
   def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: StringDictionary[CustomTableLayout],
     fonts: js.UndefOr[scala.Nothing],
     vfs: StringDictionary[String]
   ): TCreatedPdf = js.native
+  @JSImport("pdfmake/build/pdfmake", "createPdf")
+  @js.native
   def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: StringDictionary[CustomTableLayout],
     fonts: TFontDictionary
   ): TCreatedPdf = js.native
+  @JSImport("pdfmake/build/pdfmake", "createPdf")
+  @js.native
   def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: StringDictionary[CustomTableLayout],
@@ -54,10 +73,14 @@ object pdfmakeMod extends js.Object {
     vfs: StringDictionary[String]
   ): TCreatedPdf = js.native
   
-  var fonts: TFontDictionary = js.native
+  @JSImport("pdfmake/build/pdfmake", "fonts")
+  @js.native
+  def fonts: TFontDictionary = js.native
+  @scala.inline
+  def fonts_=(x: TFontDictionary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fonts")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait TCreatedPdf extends js.Object {
+  trait TCreatedPdf extends StObject {
     
     def download(): Unit = js.native
     def download(cb: js.UndefOr[scala.Nothing], options: BufferOptions): Unit = js.native
@@ -83,7 +106,7 @@ object pdfmakeMod extends js.Object {
     def getStream(): PDFDocument = js.native
     def getStream(options: BufferOptions): PDFDocument = js.native
     
-     // minimal version 0.1.41
+    // minimal version 0.1.41
     def open(): Unit = js.native
     def open(options: js.UndefOr[scala.Nothing], win: Window): Unit = js.native
     def open(options: BufferOptions): Unit = js.native
@@ -94,10 +117,4 @@ object pdfmakeMod extends js.Object {
     def print(options: BufferOptions): Unit = js.native
     def print(options: BufferOptions, win: Window): Unit = js.native
   }
-  
-  @js.native
-  object tableLayouts extends /* name */ StringDictionary[CustomTableLayout]
-  
-  @js.native
-  object vfs extends /* file */ StringDictionary[String]
 }

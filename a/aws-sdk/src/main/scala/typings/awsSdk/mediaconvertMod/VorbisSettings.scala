@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VorbisSettings extends js.Object {
+trait VorbisSettings extends StObject {
   
   /**
     * Optional. Specify the number of channels in this output audio track. Choosing Mono on the console gives you 1 output channel; choosing Stereo gives you 2. In the API, valid values are 1 and 2. The default value is 2.
@@ -31,36 +32,24 @@ object VorbisSettings {
   }
   
   @scala.inline
-  implicit class VorbisSettingsOps[Self <: VorbisSettings] (val x: Self) extends AnyVal {
+  implicit class VorbisSettingsMutableBuilder[Self <: VorbisSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: integerMin1Max2): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSampleRate(value: integerMin22050Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: integerMin1Max2): Self = this.set("Channels", value.asInstanceOf[js.Any])
+    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
     
     @scala.inline
-    def deleteChannels: Self = this.set("Channels", js.undefined)
+    def setVbrQuality(value: integerMinNegative1Max10): Self = StObject.set(x, "VbrQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleRate(value: integerMin22050Max48000): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
-    
-    @scala.inline
-    def setVbrQuality(value: integerMinNegative1Max10): Self = this.set("VbrQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVbrQuality: Self = this.set("VbrQuality", js.undefined)
+    def setVbrQualityUndefined: Self = StObject.set(x, "VbrQuality", js.undefined)
   }
 }

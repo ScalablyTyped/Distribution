@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyAttachment extends js.Object {
+trait PolicyAttachment extends StObject {
   
   /**
     * The ObjectIdentifier that is associated with PolicyAttachment.
@@ -31,36 +32,24 @@ object PolicyAttachment {
   }
   
   @scala.inline
-  implicit class PolicyAttachmentOps[Self <: PolicyAttachment] (val x: Self) extends AnyVal {
+  implicit class PolicyAttachmentMutableBuilder[Self <: PolicyAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectIdentifierUndefined: Self = StObject.set(x, "ObjectIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyId(value: ObjectIdentifier): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIdentifier(value: ObjectIdentifier): Self = this.set("ObjectIdentifier", value.asInstanceOf[js.Any])
+    def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
     
     @scala.inline
-    def deleteObjectIdentifier: Self = this.set("ObjectIdentifier", js.undefined)
+    def setPolicyType(value: PolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyId(value: ObjectIdentifier): Self = this.set("PolicyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyId: Self = this.set("PolicyId", js.undefined)
-    
-    @scala.inline
-    def setPolicyType(value: PolicyType): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyType: Self = this.set("PolicyType", js.undefined)
+    def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
   }
 }

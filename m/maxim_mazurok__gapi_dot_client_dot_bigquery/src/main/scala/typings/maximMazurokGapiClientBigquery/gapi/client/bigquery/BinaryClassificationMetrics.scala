@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BinaryClassificationMetrics extends js.Object {
+trait BinaryClassificationMetrics extends StObject {
   
   /** Aggregate classification metrics. */
   var aggregateClassificationMetrics: js.UndefOr[AggregateClassificationMetrics] = js.native
@@ -28,45 +29,33 @@ object BinaryClassificationMetrics {
   }
   
   @scala.inline
-  implicit class BinaryClassificationMetricsOps[Self <: BinaryClassificationMetrics] (val x: Self) extends AnyVal {
+  implicit class BinaryClassificationMetricsMutableBuilder[Self <: BinaryClassificationMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateClassificationMetrics(value: AggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateClassificationMetricsUndefined: Self = StObject.set(x, "aggregateClassificationMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinaryConfusionMatrixList(value: js.Array[BinaryConfusionMatrix]): Self = StObject.set(x, "binaryConfusionMatrixList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateClassificationMetrics(value: AggregateClassificationMetrics): Self = this.set("aggregateClassificationMetrics", value.asInstanceOf[js.Any])
+    def setBinaryConfusionMatrixListUndefined: Self = StObject.set(x, "binaryConfusionMatrixList", js.undefined)
     
     @scala.inline
-    def deleteAggregateClassificationMetrics: Self = this.set("aggregateClassificationMetrics", js.undefined)
+    def setBinaryConfusionMatrixListVarargs(value: BinaryConfusionMatrix*): Self = StObject.set(x, "binaryConfusionMatrixList", js.Array(value :_*))
     
     @scala.inline
-    def setBinaryConfusionMatrixListVarargs(value: BinaryConfusionMatrix*): Self = this.set("binaryConfusionMatrixList", js.Array(value :_*))
+    def setNegativeLabel(value: String): Self = StObject.set(x, "negativeLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryConfusionMatrixList(value: js.Array[BinaryConfusionMatrix]): Self = this.set("binaryConfusionMatrixList", value.asInstanceOf[js.Any])
+    def setNegativeLabelUndefined: Self = StObject.set(x, "negativeLabel", js.undefined)
     
     @scala.inline
-    def deleteBinaryConfusionMatrixList: Self = this.set("binaryConfusionMatrixList", js.undefined)
+    def setPositiveLabel(value: String): Self = StObject.set(x, "positiveLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeLabel(value: String): Self = this.set("negativeLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNegativeLabel: Self = this.set("negativeLabel", js.undefined)
-    
-    @scala.inline
-    def setPositiveLabel(value: String): Self = this.set("positiveLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositiveLabel: Self = this.set("positiveLabel", js.undefined)
+    def setPositiveLabelUndefined: Self = StObject.set(x, "positiveLabel", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.azdata.azdataStrings.markdown
   - typings.azdata.azdataStrings.raw
 */
-trait CellType extends js.Object
+trait CellType extends StObject
 object CellType {
   
   @scala.inline

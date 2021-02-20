@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinishingsInterface extends js.Object {
+trait FinishingsInterface extends StObject {
   
   var baling: js.UndefOr[FinishingBailing] = js.native
   
@@ -44,108 +45,96 @@ object FinishingsInterface {
   }
   
   @scala.inline
-  implicit class FinishingsInterfaceOps[Self <: FinishingsInterface] (val x: Self) extends AnyVal {
+  implicit class FinishingsInterfaceMutableBuilder[Self <: FinishingsInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaling(value: FinishingBailing): Self = StObject.set(x, "baling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBalingUndefined: Self = StObject.set(x, "baling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinding(value: FinishingBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaling(value: FinishingBailing): Self = this.set("baling", value.asInstanceOf[js.Any])
+    def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
     
     @scala.inline
-    def deleteBaling: Self = this.set("baling", js.undefined)
+    def setCoating(value: FinishingCoating): Self = StObject.set(x, "coating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinding(value: FinishingBinding): Self = this.set("binding", value.asInstanceOf[js.Any])
+    def setCoatingUndefined: Self = StObject.set(x, "coating", js.undefined)
     
     @scala.inline
-    def deleteBinding: Self = this.set("binding", js.undefined)
+    def setCovering(value: FinishingCovering): Self = StObject.set(x, "covering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoating(value: FinishingCoating): Self = this.set("coating", value.asInstanceOf[js.Any])
+    def setCoveringUndefined: Self = StObject.set(x, "covering", js.undefined)
     
     @scala.inline
-    def deleteCoating: Self = this.set("coating", js.undefined)
+    def `setFinishing-template`(value: Finishings): Self = StObject.set(x, "finishing-template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCovering(value: FinishingCovering): Self = this.set("covering", value.asInstanceOf[js.Any])
+    def `setFinishing-templateUndefined`: Self = StObject.set(x, "finishing-template", js.undefined)
     
     @scala.inline
-    def deleteCovering: Self = this.set("covering", js.undefined)
+    def setFolding(value: js.Array[FinishingFolding]): Self = StObject.set(x, "folding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFinishing-template`(value: Finishings): Self = this.set("finishing-template", value.asInstanceOf[js.Any])
+    def setFoldingUndefined: Self = StObject.set(x, "folding", js.undefined)
     
     @scala.inline
-    def `deleteFinishing-template`: Self = this.set("finishing-template", js.undefined)
+    def setFoldingVarargs(value: FinishingFolding*): Self = StObject.set(x, "folding", js.Array(value :_*))
     
     @scala.inline
-    def setFoldingVarargs(value: FinishingFolding*): Self = this.set("folding", js.Array(value :_*))
+    def `setImposition-template`(value: ImpositionTemplate): Self = StObject.set(x, "imposition-template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolding(value: js.Array[FinishingFolding]): Self = this.set("folding", value.asInstanceOf[js.Any])
+    def `setImposition-templateUndefined`: Self = StObject.set(x, "imposition-template", js.undefined)
     
     @scala.inline
-    def deleteFolding: Self = this.set("folding", js.undefined)
+    def setLaminating(value: FinishingLaminating): Self = StObject.set(x, "laminating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setImposition-template`(value: ImpositionTemplate): Self = this.set("imposition-template", value.asInstanceOf[js.Any])
+    def setLaminatingUndefined: Self = StObject.set(x, "laminating", js.undefined)
     
     @scala.inline
-    def `deleteImposition-template`: Self = this.set("imposition-template", js.undefined)
+    def `setMedia-sheets-supported`(value: String): Self = StObject.set(x, "media-sheets-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaminating(value: FinishingLaminating): Self = this.set("laminating", value.asInstanceOf[js.Any])
+    def `setMedia-sheets-supportedUndefined`: Self = StObject.set(x, "media-sheets-supported", js.undefined)
     
     @scala.inline
-    def deleteLaminating: Self = this.set("laminating", js.undefined)
+    def `setMedia-size`(value: MediaSize): Self = StObject.set(x, "media-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-sheets-supported`(value: String): Self = this.set("media-sheets-supported", value.asInstanceOf[js.Any])
+    def `setMedia-size-name`(value: String): Self = StObject.set(x, "media-size-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-sheets-supported`: Self = this.set("media-sheets-supported", js.undefined)
+    def `setMedia-size-nameUndefined`: Self = StObject.set(x, "media-size-name", js.undefined)
     
     @scala.inline
-    def `setMedia-size`(value: MediaSize): Self = this.set("media-size", value.asInstanceOf[js.Any])
+    def `setMedia-sizeUndefined`: Self = StObject.set(x, "media-size", js.undefined)
     
     @scala.inline
-    def `deleteMedia-size`: Self = this.set("media-size", js.undefined)
+    def setPunching(value: FinishingPunching): Self = StObject.set(x, "punching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-size-name`(value: String): Self = this.set("media-size-name", value.asInstanceOf[js.Any])
+    def setPunchingUndefined: Self = StObject.set(x, "punching", js.undefined)
     
     @scala.inline
-    def `deleteMedia-size-name`: Self = this.set("media-size-name", js.undefined)
+    def setStitching(value: FinishingStitching): Self = StObject.set(x, "stitching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPunching(value: FinishingPunching): Self = this.set("punching", value.asInstanceOf[js.Any])
+    def setStitchingUndefined: Self = StObject.set(x, "stitching", js.undefined)
     
     @scala.inline
-    def deletePunching: Self = this.set("punching", js.undefined)
+    def setTrimming(value: js.Array[FinishingTrimming]): Self = StObject.set(x, "trimming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStitching(value: FinishingStitching): Self = this.set("stitching", value.asInstanceOf[js.Any])
+    def setTrimmingUndefined: Self = StObject.set(x, "trimming", js.undefined)
     
     @scala.inline
-    def deleteStitching: Self = this.set("stitching", js.undefined)
-    
-    @scala.inline
-    def setTrimmingVarargs(value: FinishingTrimming*): Self = this.set("trimming", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrimming(value: js.Array[FinishingTrimming]): Self = this.set("trimming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrimming: Self = this.set("trimming", js.undefined)
+    def setTrimmingVarargs(value: FinishingTrimming*): Self = StObject.set(x, "trimming", js.Array(value :_*))
   }
 }

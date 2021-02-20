@@ -1,5 +1,6 @@
 package typings.expressValidator.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,7 +49,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.UA
   - typings.expressValidator.expressValidatorStrings.US
 */
-trait PassportCountryCode extends js.Object
+trait PassportCountryCode extends StObject
 object PassportCountryCode {
   
   @scala.inline

@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesGetGcmChannelInputMod.GetGcmChan
 import typings.awsSdkClientPinpointBrowser.typesGetGcmChannelOutputMod.GetGcmChannelOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/GetGcmChannelCommand", JSImport.Namespace)
-@js.native
-object getGcmChannelCommandMod extends js.Object {
+object getGcmChannelCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetGcmChannelCommand", "GetGcmChannelCommand")
   @js.native
   class GetGcmChannelCommand protected () extends Command[
           InputTypesUnion, 

@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowLevelPermissionDataSet extends js.Object {
+trait RowLevelPermissionDataSet extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the permission dataset.
@@ -31,30 +32,18 @@ object RowLevelPermissionDataSet {
   }
   
   @scala.inline
-  implicit class RowLevelPermissionDataSetOps[Self <: RowLevelPermissionDataSet] (val x: Self) extends AnyVal {
+  implicit class RowLevelPermissionDataSetMutableBuilder[Self <: RowLevelPermissionDataSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermissionPolicy(value: RowLevelPermissionPolicy): Self = this.set("PermissionPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    def setPermissionPolicy(value: RowLevelPermissionPolicy): Self = StObject.set(x, "PermissionPolicy", value.asInstanceOf[js.Any])
   }
 }

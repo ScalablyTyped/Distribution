@@ -1,12 +1,13 @@
 package typings.jqueryFancytree.Fancytree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Data object passed to FancytreeNode() constructor. Note: typically these attributes are accessed by meber methods, e.g. `node.isExpanded()` and `node.setSelected(false)`.  */
 @js.native
-trait NodeData extends js.Object {
+trait NodeData extends StObject {
   
   /** (initialization only, but will not be stored with the node). */
   var active: js.UndefOr[Boolean] = js.native
@@ -72,144 +73,132 @@ object NodeData {
   }
   
   @scala.inline
-  implicit class NodeDataOps[Self <: NodeData] (val x: Self) extends AnyVal {
+  implicit class NodeDataMutableBuilder[Self <: NodeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: js.Array[NodeData]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: NodeData*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: NodeData*): Self = this.set("children", js.Array(value :_*))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.Array[NodeData]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setExtraClasses(value: String): Self = StObject.set(x, "extraClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setExtraClassesUndefined: Self = StObject.set(x, "extraClasses", js.undefined)
     
     @scala.inline
-    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
     @scala.inline
-    def setExtraClasses(value: String): Self = this.set("extraClasses", value.asInstanceOf[js.Any])
+    def setFolder(value: Boolean): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtraClasses: Self = this.set("extraClasses", js.undefined)
+    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
     @scala.inline
-    def setFocus(value: Boolean): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setHideCheckbox(value: Boolean): Self = StObject.set(x, "hideCheckbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFocus: Self = this.set("focus", js.undefined)
+    def setHideCheckboxUndefined: Self = StObject.set(x, "hideCheckbox", js.undefined)
     
     @scala.inline
-    def setFolder(value: Boolean): Self = this.set("folder", value.asInstanceOf[js.Any])
+    def setIcon(value: Boolean | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFolder: Self = this.set("folder", js.undefined)
+    def setIconTooltip(value: String): Self = StObject.set(x, "iconTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideCheckbox(value: Boolean): Self = this.set("hideCheckbox", value.asInstanceOf[js.Any])
+    def setIconTooltipUndefined: Self = StObject.set(x, "iconTooltip", js.undefined)
     
     @scala.inline
-    def deleteHideCheckbox: Self = this.set("hideCheckbox", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setIcon(value: Boolean | String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setIconTooltip(value: String): Self = this.set("iconTooltip", value.asInstanceOf[js.Any])
+    def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconTooltip: Self = this.set("iconTooltip", js.undefined)
+    def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setRefKey(value: String): Self = StObject.set(x, "refKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setRefKeyUndefined: Self = StObject.set(x, "refKey", js.undefined)
     
     @scala.inline
-    def setLazy(value: Boolean): Self = this.set("lazy", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLazy: Self = this.set("lazy", js.undefined)
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def setRefKey(value: String): Self = this.set("refKey", value.asInstanceOf[js.Any])
+    def setStatusNodeType(value: String): Self = StObject.set(x, "statusNodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRefKey: Self = this.set("refKey", js.undefined)
+    def setStatusNodeTypeUndefined: Self = StObject.set(x, "statusNodeType", js.undefined)
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusNodeType(value: String): Self = this.set("statusNodeType", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteStatusNodeType: Self = this.set("statusNodeType", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setUnselectable(value: Boolean): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUnselectableIgnore(value: Boolean): Self = StObject.set(x, "unselectableIgnore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUnselectableIgnoreUndefined: Self = StObject.set(x, "unselectableIgnore", js.undefined)
     
     @scala.inline
-    def setUnselectable(value: Boolean): Self = this.set("unselectable", value.asInstanceOf[js.Any])
+    def setUnselectableStatus(value: Boolean): Self = StObject.set(x, "unselectableStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnselectable: Self = this.set("unselectable", js.undefined)
+    def setUnselectableStatusUndefined: Self = StObject.set(x, "unselectableStatus", js.undefined)
     
     @scala.inline
-    def setUnselectableIgnore(value: Boolean): Self = this.set("unselectableIgnore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnselectableIgnore: Self = this.set("unselectableIgnore", js.undefined)
-    
-    @scala.inline
-    def setUnselectableStatus(value: Boolean): Self = this.set("unselectableStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnselectableStatus: Self = this.set("unselectableStatus", js.undefined)
+    def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,51 +116,39 @@ object XIdlMethod {
   }
   
   @scala.inline
-  implicit class XIdlMethodOps[Self <: XIdlMethod] (val x: Self) extends AnyVal {
+  implicit class XIdlMethodMutableBuilder[Self <: XIdlMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExceptionTypes(value: SafeArray[XIdlClass[_]]): Self = StObject.set(x, "ExceptionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetExceptionTypes(value: () => SafeArray[XIdlClass[_]]): Self = StObject.set(x, "getExceptionTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMode(value: () => MethodMode): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExceptionTypes(value: SafeArray[XIdlClass[_]]): Self = this.set("ExceptionTypes", value.asInstanceOf[js.Any])
+    def setGetParameterInfos(value: () => SafeArray[ParamInfo]): Self = StObject.set(x, "getParameterInfos", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMode(value: MethodMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setGetParameterTypes(value: () => SafeArray[XIdlClass[_]]): Self = StObject.set(x, "getParameterTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParameterInfos(value: SafeArray[ParamInfo]): Self = this.set("ParameterInfos", value.asInstanceOf[js.Any])
+    def setGetReturnType(value: () => XIdlClass[_]): Self = StObject.set(x, "getReturnType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParameterTypes(value: SafeArray[XIdlClass[_]]): Self = this.set("ParameterTypes", value.asInstanceOf[js.Any])
+    def setInvoke(value: (js.Any, js.Array[SeqEquiv[_]]) => js.Any): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReturnType(value: XIdlClass[_]): Self = this.set("ReturnType", value.asInstanceOf[js.Any])
+    def setMode(value: MethodMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetExceptionTypes(value: () => SafeArray[XIdlClass[_]]): Self = this.set("getExceptionTypes", js.Any.fromFunction0(value))
+    def setParameterInfos(value: SafeArray[ParamInfo]): Self = StObject.set(x, "ParameterInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMode(value: () => MethodMode): Self = this.set("getMode", js.Any.fromFunction0(value))
+    def setParameterTypes(value: SafeArray[XIdlClass[_]]): Self = StObject.set(x, "ParameterTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetParameterInfos(value: () => SafeArray[ParamInfo]): Self = this.set("getParameterInfos", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetParameterTypes(value: () => SafeArray[XIdlClass[_]]): Self = this.set("getParameterTypes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetReturnType(value: () => XIdlClass[_]): Self = this.set("getReturnType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInvoke(value: (js.Any, js.Array[SeqEquiv[_]]) => js.Any): Self = this.set("invoke", js.Any.fromFunction2(value))
+    def setReturnType(value: XIdlClass[_]): Self = StObject.set(x, "ReturnType", value.asInstanceOf[js.Any])
   }
 }

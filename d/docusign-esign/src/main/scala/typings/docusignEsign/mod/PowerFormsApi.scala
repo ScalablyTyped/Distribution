@@ -1,12 +1,13 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docusign-esign", "PowerFormsApi")
 @js.native
-class PowerFormsApi protected () extends js.Object {
+class PowerFormsApi protected () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   def createPowerForm(accountId: String): js.Promise[PowerForm] = js.native

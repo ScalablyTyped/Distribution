@@ -5,12 +5,13 @@ import typings.phaser.Phaser.Scale.ScaleModeType
 import typings.phaser.Phaser.Scale.ZoomType
 import typings.phaser.integer
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleConfig extends js.Object {
+trait ScaleConfig extends StObject {
   
   /**
     * Automatically center the canvas within the parent?
@@ -86,96 +87,84 @@ object ScaleConfig {
   }
   
   @scala.inline
-  implicit class ScaleConfigOps[Self <: ScaleConfig] (val x: Self) extends AnyVal {
+  implicit class ScaleConfigMutableBuilder[Self <: ScaleConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCenter(value: CenterType): Self = StObject.set(x, "autoCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCenterUndefined: Self = StObject.set(x, "autoCenter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoRound(value: Boolean): Self = StObject.set(x, "autoRound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCenter(value: CenterType): Self = this.set("autoCenter", value.asInstanceOf[js.Any])
+    def setAutoRoundUndefined: Self = StObject.set(x, "autoRound", js.undefined)
     
     @scala.inline
-    def deleteAutoCenter: Self = this.set("autoCenter", js.undefined)
+    def setExpandParent(value: Boolean): Self = StObject.set(x, "expandParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRound(value: Boolean): Self = this.set("autoRound", value.asInstanceOf[js.Any])
+    def setExpandParentUndefined: Self = StObject.set(x, "expandParent", js.undefined)
     
     @scala.inline
-    def deleteAutoRound: Self = this.set("autoRound", js.undefined)
+    def setFullscreenTarget(value: HTMLElement | String): Self = StObject.set(x, "fullscreenTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandParent(value: Boolean): Self = this.set("expandParent", value.asInstanceOf[js.Any])
+    def setFullscreenTargetUndefined: Self = StObject.set(x, "fullscreenTarget", js.undefined)
     
     @scala.inline
-    def deleteExpandParent: Self = this.set("expandParent", js.undefined)
+    def setHeight(value: integer | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreenTarget(value: HTMLElement | String): Self = this.set("fullscreenTarget", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFullscreenTarget: Self = this.set("fullscreenTarget", js.undefined)
+    def setMax(value: WidthHeight): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: integer | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMin(value: WidthHeight): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: WidthHeight): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMode(value: ScaleModeType): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: WidthHeight): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setParent(value: HTMLElement | String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: ScaleModeType): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setResizeInterval(value: integer): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: HTMLElement | String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setResizeIntervalUndefined: Self = StObject.set(x, "resizeInterval", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeInterval(value: integer): Self = this.set("resizeInterval", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def deleteResizeInterval: Self = this.set("resizeInterval", js.undefined)
+    def setWidth(value: integer | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setZoom(value: ZoomType | integer): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: integer | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: ZoomType | integer): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

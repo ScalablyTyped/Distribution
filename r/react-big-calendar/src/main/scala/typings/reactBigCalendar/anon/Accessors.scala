@@ -1,11 +1,12 @@
 package typings.reactBigCalendar.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Accessors[TEvent /* <: js.Object */] extends js.Object {
+trait Accessors[TEvent /* <: js.Object */] extends StObject {
   
   var accessors: js.Any = js.native
   
@@ -24,33 +25,21 @@ object Accessors {
   }
   
   @scala.inline
-  implicit class AccessorsOps[Self <: Accessors[_], TEvent /* <: js.Object */] (val x: Self with Accessors[TEvent]) extends AnyVal {
+  implicit class AccessorsMutableBuilder[Self <: Accessors[_], TEvent /* <: js.Object */] (val x: Self with Accessors[TEvent]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessors(value: js.Any): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvents(value: js.Array[TEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventsVarargs(value: TEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setAccessors(value: js.Any): Self = this.set("accessors", value.asInstanceOf[js.Any])
+    def setMinimumStartDifference(value: Double): Self = StObject.set(x, "minimumStartDifference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsVarargs(value: TEvent*): Self = this.set("events", js.Array(value :_*))
-    
-    @scala.inline
-    def setEvents(value: js.Array[TEvent]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinimumStartDifference(value: Double): Self = this.set("minimumStartDifference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlotMetrics(value: js.Any): Self = this.set("slotMetrics", value.asInstanceOf[js.Any])
+    def setSlotMetrics(value: js.Any): Self = StObject.set(x, "slotMetrics", value.asInstanceOf[js.Any])
   }
 }

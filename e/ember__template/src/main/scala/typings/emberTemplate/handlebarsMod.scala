@@ -1,15 +1,15 @@
 package typings.emberTemplate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/template/-private/handlebars", JSImport.Namespace)
-@js.native
-object handlebarsMod extends js.Object {
+object handlebarsMod {
   
+  @JSImport("@ember/template/-private/handlebars", "SafeString")
   @js.native
-  class SafeString protected () extends js.Object {
+  class SafeString protected () extends StObject {
     def this(str: String) = this()
     
     def toHTML(): String = js.native

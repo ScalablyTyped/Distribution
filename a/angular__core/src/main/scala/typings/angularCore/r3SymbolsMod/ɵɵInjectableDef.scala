@@ -3,12 +3,13 @@ package typings.angularCore.r3SymbolsMod
 import typings.angularCore.angularCoreStrings.any
 import typings.angularCore.angularCoreStrings.platform
 import typings.angularCore.angularCoreStrings.root
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ɵɵInjectableDef[T] extends js.Object {
+trait ɵɵInjectableDef[T] extends StObject {
   
   /**
     * Factory method to execute to create an instance of the injectable.

@@ -40,12 +40,13 @@ import typings.raphael.raphaelStrings.x
 import typings.raphael.raphaelStrings.y
 import typings.std.MouseEvent
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Object {
+trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObject {
   
   /**
     * Creates and starts animation for given element.

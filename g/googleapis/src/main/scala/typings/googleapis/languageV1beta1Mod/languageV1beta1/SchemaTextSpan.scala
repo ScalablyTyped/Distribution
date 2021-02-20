@@ -1,5 +1,6 @@
 package typings.googleapis.languageV1beta1Mod.languageV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents an output piece of text.
   */
 @js.native
-trait SchemaTextSpan extends js.Object {
+trait SchemaTextSpan extends StObject {
   
   /**
     * The API calculates the beginning offset of the content in the original
@@ -30,30 +31,18 @@ object SchemaTextSpan {
   }
   
   @scala.inline
-  implicit class SchemaTextSpanOps[Self <: SchemaTextSpan] (val x: Self) extends AnyVal {
+  implicit class SchemaTextSpanMutableBuilder[Self <: SchemaTextSpan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginOffset(value: Double): Self = StObject.set(x, "beginOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginOffsetUndefined: Self = StObject.set(x, "beginOffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginOffset(value: Double): Self = this.set("beginOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeginOffset: Self = this.set("beginOffset", js.undefined)
-    
-    @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

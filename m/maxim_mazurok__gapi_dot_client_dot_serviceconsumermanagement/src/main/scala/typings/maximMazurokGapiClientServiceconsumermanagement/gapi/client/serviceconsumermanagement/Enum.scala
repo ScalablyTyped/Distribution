@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Enum extends js.Object {
+trait Enum extends StObject {
   
   /** Enum value definitions. */
   var enumvalue: js.UndefOr[js.Array[EnumValue]] = js.native
@@ -31,54 +32,42 @@ object Enum {
   }
   
   @scala.inline
-  implicit class EnumOps[Self <: Enum] (val x: Self) extends AnyVal {
+  implicit class EnumMutableBuilder[Self <: Enum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnumvalue(value: js.Array[EnumValue]): Self = StObject.set(x, "enumvalue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnumvalueUndefined: Self = StObject.set(x, "enumvalue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnumvalueVarargs(value: EnumValue*): Self = StObject.set(x, "enumvalue", js.Array(value :_*))
     
     @scala.inline
-    def setEnumvalueVarargs(value: EnumValue*): Self = this.set("enumvalue", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumvalue(value: js.Array[EnumValue]): Self = this.set("enumvalue", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteEnumvalue: Self = this.set("enumvalue", js.undefined)
+    def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: Option*): Self = this.set("options", js.Array(value :_*))
+    def setSourceContext(value: SourceContext): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[Option]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSourceContextUndefined: Self = StObject.set(x, "sourceContext", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceContext(value: SourceContext): Self = this.set("sourceContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceContext: Self = this.set("sourceContext", js.undefined)
-    
-    @scala.inline
-    def setSyntax(value: String): Self = this.set("syntax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyntax: Self = this.set("syntax", js.undefined)
+    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
   }
 }

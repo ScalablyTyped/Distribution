@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,63 +29,51 @@ object EducationRoot {
   }
   
   @scala.inline
-  implicit class EducationRootOps[Self <: EducationRoot] (val x: Self) extends AnyVal {
+  implicit class EducationRootMutableBuilder[Self <: EducationRoot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: NullableOption[js.Array[EducationClass]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesNull: Self = StObject.set(x, "classes", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def setClassesVarargs(value: EducationClass*): Self = this.set("classes", js.Array(value :_*))
+    def setClassesVarargs(value: EducationClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
     
     @scala.inline
-    def setClasses(value: NullableOption[js.Array[EducationClass]]): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setMe(value: NullableOption[EducationUser]): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setMeNull: Self = StObject.set(x, "me", null)
     
     @scala.inline
-    def setClassesNull: Self = this.set("classes", null)
+    def setMeUndefined: Self = StObject.set(x, "me", js.undefined)
     
     @scala.inline
-    def setMe(value: NullableOption[EducationUser]): Self = this.set("me", value.asInstanceOf[js.Any])
+    def setSchools(value: NullableOption[js.Array[EducationSchool]]): Self = StObject.set(x, "schools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMe: Self = this.set("me", js.undefined)
+    def setSchoolsNull: Self = StObject.set(x, "schools", null)
     
     @scala.inline
-    def setMeNull: Self = this.set("me", null)
+    def setSchoolsUndefined: Self = StObject.set(x, "schools", js.undefined)
     
     @scala.inline
-    def setSchoolsVarargs(value: EducationSchool*): Self = this.set("schools", js.Array(value :_*))
+    def setSchoolsVarargs(value: EducationSchool*): Self = StObject.set(x, "schools", js.Array(value :_*))
     
     @scala.inline
-    def setSchools(value: NullableOption[js.Array[EducationSchool]]): Self = this.set("schools", value.asInstanceOf[js.Any])
+    def setUsers(value: NullableOption[js.Array[EducationUser]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchools: Self = this.set("schools", js.undefined)
+    def setUsersNull: Self = StObject.set(x, "users", null)
     
     @scala.inline
-    def setSchoolsNull: Self = this.set("schools", null)
+    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
     @scala.inline
-    def setUsersVarargs(value: EducationUser*): Self = this.set("users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: NullableOption[js.Array[EducationUser]]): Self = this.set("users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsers: Self = this.set("users", js.undefined)
-    
-    @scala.inline
-    def setUsersNull: Self = this.set("users", null)
+    def setUsersVarargs(value: EducationUser*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

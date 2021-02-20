@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides information about which Requirement Sets are supported in the current environment.
   */
 @js.native
-trait RequirementSetSupport extends js.Object {
+trait RequirementSetSupport extends StObject {
   
   /**
     * Check if the specified requirement set is supported by the host Office application.

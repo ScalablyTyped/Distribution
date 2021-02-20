@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopesFilters extends js.Object {
+trait EnvelopesFilters extends StObject {
   
   var acStatus: js.UndefOr[String] = js.native
   
@@ -72,186 +73,174 @@ object EnvelopesFilters {
   }
   
   @scala.inline
-  implicit class EnvelopesFiltersOps[Self <: EnvelopesFilters] (val x: Self) extends AnyVal {
+  implicit class EnvelopesFiltersMutableBuilder[Self <: EnvelopesFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcStatus(value: String): Self = StObject.set(x, "acStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcStatusUndefined: Self = StObject.set(x, "acStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcStatus(value: String): Self = this.set("acStatus", value.asInstanceOf[js.Any])
+    def setContinuationTokenUndefined: Self = StObject.set(x, "continuationToken", js.undefined)
     
     @scala.inline
-    def deleteAcStatus: Self = this.set("acStatus", js.undefined)
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationToken(value: String): Self = this.set("continuationToken", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteContinuationToken: Self = this.set("continuationToken", js.undefined)
+    def setCustomField(value: String): Self = StObject.set(x, "customField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setCustomFieldUndefined: Self = StObject.set(x, "customField", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomField(value: String): Self = this.set("customField", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteCustomField: Self = this.set("customField", js.undefined)
+    def setEnvelopeIds(value: String): Self = StObject.set(x, "envelopeIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setEnvelopeIdsUndefined: Self = StObject.set(x, "envelopeIds", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setExclude(value: String): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeIds(value: String): Self = this.set("envelopeIds", value.asInstanceOf[js.Any])
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeIds: Self = this.set("envelopeIds", js.undefined)
+    def setFolderIds(value: String): Self = StObject.set(x, "folderIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: String): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setFolderIdsUndefined: Self = StObject.set(x, "folderIds", js.undefined)
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setFolderTypes(value: String): Self = StObject.set(x, "folderTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderIds(value: String): Self = this.set("folderIds", value.asInstanceOf[js.Any])
+    def setFolderTypesUndefined: Self = StObject.set(x, "folderTypes", js.undefined)
     
     @scala.inline
-    def deleteFolderIds: Self = this.set("folderIds", js.undefined)
+    def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderTypes(value: String): Self = this.set("folderTypes", value.asInstanceOf[js.Any])
+    def setFromDateUndefined: Self = StObject.set(x, "fromDate", js.undefined)
     
     @scala.inline
-    def deleteFolderTypes: Self = this.set("folderTypes", js.undefined)
+    def setFromToStatus(value: String): Self = StObject.set(x, "fromToStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDate(value: String): Self = this.set("fromDate", value.asInstanceOf[js.Any])
+    def setFromToStatusUndefined: Self = StObject.set(x, "fromToStatus", js.undefined)
     
     @scala.inline
-    def deleteFromDate: Self = this.set("fromDate", js.undefined)
+    def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromToStatus(value: String): Self = this.set("fromToStatus", value.asInstanceOf[js.Any])
+    def setIncludePurgeInformation(value: String): Self = StObject.set(x, "includePurgeInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromToStatus: Self = this.set("fromToStatus", js.undefined)
+    def setIncludePurgeInformationUndefined: Self = StObject.set(x, "includePurgeInformation", js.undefined)
     
     @scala.inline
-    def setInclude(value: String): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setIntersectingFolderIds(value: String): Self = StObject.set(x, "intersectingFolderIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludePurgeInformation(value: String): Self = this.set("includePurgeInformation", value.asInstanceOf[js.Any])
+    def setIntersectingFolderIdsUndefined: Self = StObject.set(x, "intersectingFolderIds", js.undefined)
     
     @scala.inline
-    def deleteIncludePurgeInformation: Self = this.set("includePurgeInformation", js.undefined)
+    def setLastQueriedDate(value: String): Self = StObject.set(x, "lastQueriedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersectingFolderIds(value: String): Self = this.set("intersectingFolderIds", value.asInstanceOf[js.Any])
+    def setLastQueriedDateUndefined: Self = StObject.set(x, "lastQueriedDate", js.undefined)
     
     @scala.inline
-    def deleteIntersectingFolderIds: Self = this.set("intersectingFolderIds", js.undefined)
+    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastQueriedDate(value: String): Self = this.set("lastQueriedDate", value.asInstanceOf[js.Any])
+    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastQueriedDate: Self = this.set("lastQueriedDate", js.undefined)
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     @scala.inline
-    def setOrder(value: String): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setPowerformids(value: String): Self = StObject.set(x, "powerformids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setPowerformidsUndefined: Self = StObject.set(x, "powerformids", js.undefined)
     
     @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setQueryBudget(value: String): Self = StObject.set(x, "queryBudget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerformids(value: String): Self = this.set("powerformids", value.asInstanceOf[js.Any])
+    def setQueryBudgetUndefined: Self = StObject.set(x, "queryBudget", js.undefined)
     
     @scala.inline
-    def deletePowerformids: Self = this.set("powerformids", js.undefined)
+    def setRequesterDateFormat(value: String): Self = StObject.set(x, "requesterDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryBudget(value: String): Self = this.set("queryBudget", value.asInstanceOf[js.Any])
+    def setRequesterDateFormatUndefined: Self = StObject.set(x, "requesterDateFormat", js.undefined)
     
     @scala.inline
-    def deleteQueryBudget: Self = this.set("queryBudget", js.undefined)
+    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequesterDateFormat(value: String): Self = this.set("requesterDateFormat", value.asInstanceOf[js.Any])
+    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
     @scala.inline
-    def deleteRequesterDateFormat: Self = this.set("requesterDateFormat", js.undefined)
+    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
+    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
     @scala.inline
-    def deleteSearchText: Self = this.set("searchText", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPosition(value: String): Self = this.set("startPosition", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
+    def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTransactionIds(value: String): Self = StObject.set(x, "transactionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToDate(value: String): Self = this.set("toDate", value.asInstanceOf[js.Any])
+    def setTransactionIdsUndefined: Self = StObject.set(x, "transactionIds", js.undefined)
     
     @scala.inline
-    def deleteToDate: Self = this.set("toDate", js.undefined)
+    def setUserFilter(value: String): Self = StObject.set(x, "userFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactionIds(value: String): Self = this.set("transactionIds", value.asInstanceOf[js.Any])
+    def setUserFilterUndefined: Self = StObject.set(x, "userFilter", js.undefined)
     
     @scala.inline
-    def deleteTransactionIds: Self = this.set("transactionIds", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserFilter(value: String): Self = this.set("userFilter", value.asInstanceOf[js.Any])
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
     @scala.inline
-    def deleteUserFilter: Self = this.set("userFilter", js.undefined)
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("userName", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
   }
 }

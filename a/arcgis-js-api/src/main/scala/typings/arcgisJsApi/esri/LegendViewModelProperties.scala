@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LegendViewModelProperties extends js.Object {
+trait LegendViewModelProperties extends StObject {
   
   /**
     * Collection of [ActiveLayerInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html) objects used by the legend view to display data in the legend.
@@ -44,48 +45,36 @@ object LegendViewModelProperties {
   }
   
   @scala.inline
-  implicit class LegendViewModelPropertiesOps[Self <: LegendViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class LegendViewModelPropertiesMutableBuilder[Self <: LegendViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveLayerInfos(value: CollectionProperties[ActiveLayerInfoProperties]): Self = StObject.set(x, "activeLayerInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveLayerInfosUndefined: Self = StObject.set(x, "activeLayerInfos", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveLayerInfosVarargs(value: ActiveLayerInfoProperties*): Self = StObject.set(x, "activeLayerInfos", js.Array(value :_*))
     
     @scala.inline
-    def setActiveLayerInfosVarargs(value: ActiveLayerInfoProperties*): Self = this.set("activeLayerInfos", js.Array(value :_*))
+    def setBasemapLegendVisible(value: Boolean): Self = StObject.set(x, "basemapLegendVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveLayerInfos(value: CollectionProperties[ActiveLayerInfoProperties]): Self = this.set("activeLayerInfos", value.asInstanceOf[js.Any])
+    def setBasemapLegendVisibleUndefined: Self = StObject.set(x, "basemapLegendVisible", js.undefined)
     
     @scala.inline
-    def deleteActiveLayerInfos: Self = this.set("activeLayerInfos", js.undefined)
+    def setLayerInfos(value: js.Array[LegendViewModelLayerInfos]): Self = StObject.set(x, "layerInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapLegendVisible(value: Boolean): Self = this.set("basemapLegendVisible", value.asInstanceOf[js.Any])
+    def setLayerInfosUndefined: Self = StObject.set(x, "layerInfos", js.undefined)
     
     @scala.inline
-    def deleteBasemapLegendVisible: Self = this.set("basemapLegendVisible", js.undefined)
+    def setLayerInfosVarargs(value: LegendViewModelLayerInfos*): Self = StObject.set(x, "layerInfos", js.Array(value :_*))
     
     @scala.inline
-    def setLayerInfosVarargs(value: LegendViewModelLayerInfos*): Self = this.set("layerInfos", js.Array(value :_*))
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerInfos(value: js.Array[LegendViewModelLayerInfos]): Self = this.set("layerInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayerInfos: Self = this.set("layerInfos", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

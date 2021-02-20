@@ -1,18 +1,20 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/setDayOfYear/index", JSImport.Namespace)
-@js.native
-object dateFnsSetDayOfYearIndexMod extends js.Object {
+object dateFnsSetDayOfYearIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/setDayOfYear/index", JSImport.Default)
+    @js.native
     def apply(date: Double, dayOfYear: Double): Date = js.native
+    @JSImport("date-fns/setDayOfYear/index", JSImport.Default)
+    @js.native
     def apply(date: Date, dayOfYear: Double): Date = js.native
   }
 }

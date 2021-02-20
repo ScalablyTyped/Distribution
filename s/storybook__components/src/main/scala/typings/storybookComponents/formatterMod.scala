@@ -1,12 +1,13 @@
 package typings.storybookComponents
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/components/dist/syntaxhighlighter/formatter", JSImport.Namespace)
-@js.native
-object formatterMod extends js.Object {
+object formatterMod {
   
+  @JSImport("@storybook/components/dist/syntaxhighlighter/formatter", "formatter")
+  @js.native
   def formatter(code: String): String = js.native
 }

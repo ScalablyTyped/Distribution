@@ -1,12 +1,13 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Session")
 @js.native
-class Session protected () extends js.Object {
+class Session protected () extends StObject {
   def this(id: String, capabilities: js.Object) = this()
   // region Constructors
   /**

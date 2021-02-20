@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A color defined by red, green, blue color channels.
   */
 @js.native
-trait RgbColor extends js.Object {
+trait RgbColor extends StObject {
   
   def asHexString(): String = js.native
   
@@ -36,33 +37,21 @@ object RgbColor {
   }
   
   @scala.inline
-  implicit class RgbColorOps[Self <: RgbColor] (val x: Self) extends AnyVal {
+  implicit class RgbColorMutableBuilder[Self <: RgbColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsHexString(value: () => String): Self = StObject.set(x, "asHexString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBlue(value: () => Integer): Self = StObject.set(x, "getBlue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsHexString(value: () => String): Self = this.set("asHexString", js.Any.fromFunction0(value))
+    def setGetGreen(value: () => Integer): Self = StObject.set(x, "getGreen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBlue(value: () => Integer): Self = this.set("getBlue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetColorType(value: () => ColorType): Self = this.set("getColorType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetGreen(value: () => Integer): Self = this.set("getGreen", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRed(value: () => Integer): Self = this.set("getRed", js.Any.fromFunction0(value))
+    def setGetRed(value: () => Integer): Self = StObject.set(x, "getRed", js.Any.fromFunction0(value))
   }
 }

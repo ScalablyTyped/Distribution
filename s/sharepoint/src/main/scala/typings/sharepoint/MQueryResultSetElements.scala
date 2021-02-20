@@ -5,6 +5,7 @@ import typings.sharepoint.anon.Left
 import typings.sharepoint.anon.LeftTop
 import typings.sharepoint.anon.Top
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

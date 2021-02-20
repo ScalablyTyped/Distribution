@@ -1,12 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/DeleteObjectTaggingInput", JSImport.Namespace)
-@js.native
-object deleteObjectTaggingInputMod extends js.Object {
+object deleteObjectTaggingInputMod {
   
+  @JSImport("@aws-sdk/client-s3-node/model/DeleteObjectTaggingInput", "DeleteObjectTaggingInput")
+  @js.native
   val DeleteObjectTaggingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

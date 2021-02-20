@@ -5,6 +5,7 @@ import typings.pulumiAws.volumeAttachmentMod.VolumeAttachmentState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class VolumeAttachment protected ()
   def this(name: String, args: VolumeAttachmentArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws/ec2", "VolumeAttachment")
-@js.native
-object VolumeAttachment extends js.Object {
+object VolumeAttachment {
   
   /**
     * Get an existing VolumeAttachment resource's state with the given name, ID, and optional extra
@@ -37,14 +36,24 @@ object VolumeAttachment extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws/ec2", "VolumeAttachment.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.volumeAttachmentMod.VolumeAttachment = js.native
+  @JSImport("@pulumi/aws/ec2", "VolumeAttachment.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.volumeAttachmentMod.VolumeAttachment = js.native
+  @JSImport("@pulumi/aws/ec2", "VolumeAttachment.get")
+  @js.native
   def get(name: String, id: Input[ID], state: VolumeAttachmentState): typings.pulumiAws.volumeAttachmentMod.VolumeAttachment = js.native
+  @JSImport("@pulumi/aws/ec2", "VolumeAttachment.get")
+  @js.native
   def get(name: String, id: Input[ID], state: VolumeAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.volumeAttachmentMod.VolumeAttachment = js.native
   
   /**
     * Returns true if the given object is an instance of VolumeAttachment.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws/ec2", "VolumeAttachment.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/volumeAttachment.VolumeAttachment */ Boolean = js.native
 }

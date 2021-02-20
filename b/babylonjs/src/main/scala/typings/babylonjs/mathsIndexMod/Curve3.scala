@@ -1,6 +1,7 @@
 package typings.babylonjs.mathsIndexMod
 
 import typings.babylonjs.typesMod.DeepImmutable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,7 @@ class Curve3 protected ()
   def this(points: js.Array[typings.babylonjs.mathVectorMod.Vector3]) = this()
 }
 /* static members */
-@JSImport("babylonjs/Maths/index", "Curve3")
-@js.native
-object Curve3 extends js.Object {
+object Curve3 {
   
   /**
     * Returns a Curve3 object along a CatmullRom Spline curve :
@@ -29,7 +28,11 @@ object Curve3 extends js.Object {
     * @param closed (boolean) optional with default false, when true forms a closed loop from the points
     * @returns the created Curve3
     */
+  @JSImport("babylonjs/Maths/index", "Curve3.CreateCatmullRomSpline")
+  @js.native
   def CreateCatmullRomSpline(points: DeepImmutable[js.Array[typings.babylonjs.mathVectorMod.Vector3]], nbPoints: Double): typings.babylonjs.mathPathMod.Curve3 = js.native
+  @JSImport("babylonjs/Maths/index", "Curve3.CreateCatmullRomSpline")
+  @js.native
   def CreateCatmullRomSpline(
     points: DeepImmutable[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     nbPoints: Double,
@@ -45,6 +48,8 @@ object Curve3 extends js.Object {
     * @param nbPoints (integer) the wanted number of points in the curve
     * @returns the created Curve3
     */
+  @JSImport("babylonjs/Maths/index", "Curve3.CreateCubicBezier")
+  @js.native
   def CreateCubicBezier(
     v0: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     v1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
@@ -62,6 +67,8 @@ object Curve3 extends js.Object {
     * @param nbPoints (integer) the wanted number of points in the curve
     * @returns the created Curve3
     */
+  @JSImport("babylonjs/Maths/index", "Curve3.CreateHermiteSpline")
+  @js.native
   def CreateHermiteSpline(
     p1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     t1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
@@ -78,6 +85,8 @@ object Curve3 extends js.Object {
     * @param nbPoints (integer) the wanted number of points in the curve
     * @returns the created Curve3
     */
+  @JSImport("babylonjs/Maths/index", "Curve3.CreateQuadraticBezier")
+  @js.native
   def CreateQuadraticBezier(
     v0: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     v1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],

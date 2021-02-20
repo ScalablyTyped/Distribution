@@ -1,12 +1,13 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOpenIdTokenInput extends js.Object {
+trait GetOpenIdTokenInput extends StObject {
   
   /**
     * <p>A unique identifier in the format REGION:GUID.</p>
@@ -21,9 +22,31 @@ trait GetOpenIdTokenInput extends js.Object {
     */
   var Logins: js.UndefOr[StringDictionary[String]] = js.native
 }
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetOpenIdTokenInput")
-@js.native
-object GetOpenIdTokenInput extends js.Object {
+object GetOpenIdTokenInput {
   
+  @scala.inline
+  def apply(): GetOpenIdTokenInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[GetOpenIdTokenInput]
+  }
+  
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetOpenIdTokenInput.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: GetOpenIdTokenInput): js.Any = js.native
+  
+  @scala.inline
+  implicit class GetOpenIdTokenInputMutableBuilder[Self <: GetOpenIdTokenInput] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    
+    @scala.inline
+    def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+  }
 }

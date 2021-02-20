@@ -3,6 +3,7 @@ package typings.phaser.spine.webgl
 import typings.phaser.spine.ArrayLike
 import typings.phaser.spine.Color
 import typings.phaser.spine.Disposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

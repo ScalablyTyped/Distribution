@@ -1,11 +1,12 @@
 package typings.chromeApps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofdeviceAttributes extends js.Object {
+trait TypeofdeviceAttributes extends StObject {
   
   /**
     * @since Chrome 66.
@@ -61,30 +62,18 @@ object TypeofdeviceAttributes {
   }
   
   @scala.inline
-  implicit class TypeofdeviceAttributesOps[Self <: TypeofdeviceAttributes] (val x: Self) extends AnyVal {
+  implicit class TypeofdeviceAttributesMutableBuilder[Self <: TypeofdeviceAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDeviceAnnotatedLocation(value: js.Function1[/* annotatedLocation */ String, Unit] => Unit): Self = StObject.set(x, "getDeviceAnnotatedLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDeviceAssetId(value: js.Function1[/* assetId */ String, Unit] => Unit): Self = StObject.set(x, "getDeviceAssetId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDeviceSerialNumber(value: js.Function1[/* serialNumber */ String, Unit] => Unit): Self = StObject.set(x, "getDeviceSerialNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDeviceAnnotatedLocation(value: js.Function1[/* annotatedLocation */ String, Unit] => Unit): Self = this.set("getDeviceAnnotatedLocation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDeviceAssetId(value: js.Function1[/* assetId */ String, Unit] => Unit): Self = this.set("getDeviceAssetId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDeviceSerialNumber(value: js.Function1[/* serialNumber */ String, Unit] => Unit): Self = this.set("getDeviceSerialNumber", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDirectoryDeviceId(value: js.Function1[/* deviceId */ String, Unit] => Unit): Self = this.set("getDirectoryDeviceId", js.Any.fromFunction1(value))
+    def setGetDirectoryDeviceId(value: js.Function1[/* deviceId */ String, Unit] => Unit): Self = StObject.set(x, "getDirectoryDeviceId", js.Any.fromFunction1(value))
   }
 }

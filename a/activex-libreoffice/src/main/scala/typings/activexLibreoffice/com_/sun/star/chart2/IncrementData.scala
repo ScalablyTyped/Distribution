@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.chart2
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XScaling
   */
 @js.native
-trait IncrementData extends js.Object {
+trait IncrementData extends StObject {
   
   /**
     * if the any contains a double value this is used as a fixed BaseValue. Otherwise, if the any is empty or contains an incompatible type, the BaseValue
@@ -59,30 +60,18 @@ object IncrementData {
   }
   
   @scala.inline
-  implicit class IncrementDataOps[Self <: IncrementData] (val x: Self) extends AnyVal {
+  implicit class IncrementDataMutableBuilder[Self <: IncrementData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseValue(value: js.Any): Self = StObject.set(x, "BaseValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistance(value: js.Any): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostEquidistant(value: js.Any): Self = StObject.set(x, "PostEquidistant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseValue(value: js.Any): Self = this.set("BaseValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDistance(value: js.Any): Self = this.set("Distance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostEquidistant(value: js.Any): Self = this.set("PostEquidistant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubIncrements(value: SafeArray[SubIncrement]): Self = this.set("SubIncrements", value.asInstanceOf[js.Any])
+    def setSubIncrements(value: SafeArray[SubIncrement]): Self = StObject.set(x, "SubIncrements", value.asInstanceOf[js.Any])
   }
 }

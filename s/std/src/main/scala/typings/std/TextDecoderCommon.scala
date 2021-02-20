@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDecoderCommon extends js.Object {
+trait TextDecoderCommon extends StObject {
   
   /**
     * Returns encoding's name, lowercased.
@@ -31,27 +32,15 @@ object TextDecoderCommon {
   }
   
   @scala.inline
-  implicit class TextDecoderCommonOps[Self <: TextDecoderCommon] (val x: Self) extends AnyVal {
+  implicit class TextDecoderCommonMutableBuilder[Self <: TextDecoderCommon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: java.lang.String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFatal(value: scala.Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEncoding(value: java.lang.String): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFatal(value: scala.Boolean): Self = this.set("fatal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIgnoreBOM(value: scala.Boolean): Self = this.set("ignoreBOM", value.asInstanceOf[js.Any])
+    def setIgnoreBOM(value: scala.Boolean): Self = StObject.set(x, "ignoreBOM", value.asInstanceOf[js.Any])
   }
 }

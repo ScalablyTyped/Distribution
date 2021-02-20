@@ -2,6 +2,7 @@ package typings.chromeApps.global.chrome
 
 import typings.chromeApps.chrome.documentScan.DocumentScanCallbackArg
 import typings.chromeApps.chrome.documentScan.DocumentScanOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +27,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @requires Permissions: 'documentScan'
   * @requires Important: This API works only on Chrome OS.
   */
-@JSGlobal("chrome.documentScan")
-@js.native
-object documentScan extends js.Object {
+object documentScan {
   
   /**
     * Performs a document scan. On success, the PNG data will be sent to the callback.
     * @param options Object containing scan parameters.
     * @param callback Called with the result and data from the scan.
     */
+  @JSGlobal("chrome.documentScan.scan")
+  @js.native
   def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = js.native
 }

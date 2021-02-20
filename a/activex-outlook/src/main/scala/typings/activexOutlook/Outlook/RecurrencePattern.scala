@@ -1,12 +1,13 @@
 package typings.activexOutlook.Outlook
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecurrencePattern extends js.Object {
+trait RecurrencePattern extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -83,81 +84,69 @@ object RecurrencePattern {
   }
   
   @scala.inline
-  implicit class RecurrencePatternOps[Self <: RecurrencePattern] (val x: Self) extends AnyVal {
+  implicit class RecurrencePatternMutableBuilder[Self <: RecurrencePattern] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayOfMonth(value: Double): Self = StObject.set(x, "DayOfMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDayOfWeekMask(value: OlDaysOfWeek): Self = StObject.set(x, "DayOfWeekMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayOfMonth(value: Double): Self = this.set("DayOfMonth", value.asInstanceOf[js.Any])
+    def setEndTime(value: VarDate): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayOfWeekMask(value: OlDaysOfWeek): Self = this.set("DayOfWeekMask", value.asInstanceOf[js.Any])
+    def setExceptions(value: Exceptions): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setGetOccurrence(value: VarDate => AppointmentItem): Self = StObject.set(x, "GetOccurrence", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndTime(value: VarDate): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setInstance(value: Double): Self = StObject.set(x, "Instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExceptions(value: Exceptions): Self = this.set("Exceptions", value.asInstanceOf[js.Any])
+    def setInterval(value: Double): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetOccurrence(value: VarDate => AppointmentItem): Self = this.set("GetOccurrence", js.Any.fromFunction1(value))
+    def setMonthOfYear(value: Double): Self = StObject.set(x, "MonthOfYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: Double): Self = this.set("Instance", value.asInstanceOf[js.Any])
+    def setNoEndDate(value: Boolean): Self = StObject.set(x, "NoEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("Interval", value.asInstanceOf[js.Any])
+    def setOccurrences(value: Double): Self = StObject.set(x, "Occurrences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthOfYear(value: Double): Self = this.set("MonthOfYear", value.asInstanceOf[js.Any])
+    def setOutlookDotRecurrencePattern_typekey(value: RecurrencePattern): Self = StObject.set(x, "Outlook.RecurrencePattern_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoEndDate(value: Boolean): Self = this.set("NoEndDate", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccurrences(value: Double): Self = this.set("Occurrences", value.asInstanceOf[js.Any])
+    def setPatternEndDate(value: VarDate): Self = StObject.set(x, "PatternEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotRecurrencePattern_typekey(value: RecurrencePattern): Self = this.set("Outlook.RecurrencePattern_typekey", value.asInstanceOf[js.Any])
+    def setPatternStartDate(value: VarDate): Self = StObject.set(x, "PatternStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setRecurrenceType(value: OlRecurrenceType): Self = StObject.set(x, "RecurrenceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatternEndDate(value: VarDate): Self = this.set("PatternEndDate", value.asInstanceOf[js.Any])
+    def setRegenerate(value: Boolean): Self = StObject.set(x, "Regenerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatternStartDate(value: VarDate): Self = this.set("PatternStartDate", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrenceType(value: OlRecurrenceType): Self = this.set("RecurrenceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegenerate(value: Boolean): Self = this.set("Regenerate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: VarDate): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: VarDate): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

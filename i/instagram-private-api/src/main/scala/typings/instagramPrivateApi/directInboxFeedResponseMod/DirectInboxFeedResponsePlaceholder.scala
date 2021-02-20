@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.directInboxFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectInboxFeedResponsePlaceholder extends js.Object {
+trait DirectInboxFeedResponsePlaceholder extends StObject {
   
   var is_linked: Boolean = js.native
   
@@ -22,27 +23,15 @@ object DirectInboxFeedResponsePlaceholder {
   }
   
   @scala.inline
-  implicit class DirectInboxFeedResponsePlaceholderOps[Self <: DirectInboxFeedResponsePlaceholder] (val x: Self) extends AnyVal {
+  implicit class DirectInboxFeedResponsePlaceholderMutableBuilder[Self <: DirectInboxFeedResponsePlaceholder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIs_linked(value: Boolean): Self = StObject.set(x, "is_linked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIs_linked(value: Boolean): Self = this.set("is_linked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

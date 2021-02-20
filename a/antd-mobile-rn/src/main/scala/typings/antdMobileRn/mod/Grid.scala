@@ -2,6 +2,7 @@ package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.CarouselMaxRow
 import typings.antdMobileRn.gridIndexNativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Grid () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "Grid")
-@js.native
-object Grid extends js.Object {
+object Grid {
   
-  var defaultProps: CarouselMaxRow = js.native
+  @JSImport("antd-mobile-rn", "Grid")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "Grid.defaultProps")
+  @js.native
+  def defaultProps: CarouselMaxRow = js.native
+  @scala.inline
+  def defaultProps_=(x: CarouselMaxRow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

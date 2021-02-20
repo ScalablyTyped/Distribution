@@ -38,12 +38,13 @@ import typings.plotlyJs.plotlyJsStrings.exp
 import typings.plotlyJs.plotlyJsStrings.linear
 import typings.plotlyJs.plotlyJsStrings.quad
 import typings.plotlyJs.plotlyJsStrings.sin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transition extends js.Object {
+trait Transition extends StObject {
   
   /**
     * Sets the duration of the slider transition
@@ -73,32 +74,20 @@ object Transition {
   }
   
   @scala.inline
-  implicit class TransitionOps[Self <: Transition] (val x: Self) extends AnyVal {
+  implicit class TransitionMutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEasing(
       value: linear | quad | cubic | sin | exp | circle | elastic | back | bounce | `linear-in` | `quad-in` | `cubic-in` | `sin-in` | `exp-in` | `circle-in` | `elastic-in` | `back-in` | `bounce-in` | `linear-out` | `quad-out` | `cubic-out` | `sin-out` | `exp-out` | `circle-out` | `elastic-out` | `back-out` | `bounce-out` | `linear-in-out` | `quad-in-out` | `cubic-in-out` | `sin-in-out` | `exp-in-out` | `circle-in-out` | `elastic-in-out` | `back-in-out` | `bounce-in-out`
-    ): Self = this.set("easing", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrdering(value: (`layout first`) | (`traces first`)): Self = this.set("ordering", value.asInstanceOf[js.Any])
+    def setOrdering(value: (`layout first`) | (`traces first`)): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrdering: Self = this.set("ordering", js.undefined)
+    def setOrderingUndefined: Self = StObject.set(x, "ordering", js.undefined)
   }
 }

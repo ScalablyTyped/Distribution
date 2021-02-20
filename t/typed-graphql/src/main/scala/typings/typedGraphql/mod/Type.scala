@@ -1,5 +1,6 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,26 +11,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typedGraphql.mod.ListType
   - typings.typedGraphql.mod.NonNullType
 */
-trait Type extends js.Object
+trait Type extends StObject
 object Type {
   
   @scala.inline
-  def NamedType(kind: String, name: Name): Type = {
+  def ListType(kind: String, `type`: Type): typings.typedGraphql.mod.ListType = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.typedGraphql.mod.ListType]
+  }
+  
+  @scala.inline
+  def NamedType(kind: String, name: Name): typings.typedGraphql.mod.NamedType = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Type]
+    __obj.asInstanceOf[typings.typedGraphql.mod.NamedType]
   }
   
   @scala.inline
-  def ListType(kind: String, `type`: Type): Type = {
+  def NonNullType(kind: String, `type`: NamedType | ListType): typings.typedGraphql.mod.NonNullType = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Type]
-  }
-  
-  @scala.inline
-  def NonNullType(kind: String, `type`: NamedType | ListType): Type = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Type]
+    __obj.asInstanceOf[typings.typedGraphql.mod.NonNullType]
   }
 }

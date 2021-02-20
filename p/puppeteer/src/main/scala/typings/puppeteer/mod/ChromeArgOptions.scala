@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChromeArgOptions extends js.Object {
+trait ChromeArgOptions extends StObject {
   
   /**
     * Additional arguments to pass to the browser instance.
@@ -39,45 +40,33 @@ object ChromeArgOptions {
   }
   
   @scala.inline
-  implicit class ChromeArgOptionsOps[Self <: ChromeArgOptions] (val x: Self) extends AnyVal {
+  implicit class ChromeArgOptionsMutableBuilder[Self <: ChromeArgOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setDevtoolsUndefined: Self = StObject.set(x, "devtools", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevtools(value: Boolean): Self = this.set("devtools", value.asInstanceOf[js.Any])
+    def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
     
     @scala.inline
-    def deleteDevtools: Self = this.set("devtools", js.undefined)
+    def setUserDataDir(value: String): Self = StObject.set(x, "userDataDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadless(value: Boolean): Self = this.set("headless", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeadless: Self = this.set("headless", js.undefined)
-    
-    @scala.inline
-    def setUserDataDir(value: String): Self = this.set("userDataDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDataDir: Self = this.set("userDataDir", js.undefined)
+    def setUserDataDirUndefined: Self = StObject.set(x, "userDataDir", js.undefined)
   }
 }

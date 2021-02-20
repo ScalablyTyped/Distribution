@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortRange extends js.Object {
+trait PortRange extends StObject {
   
   /**
     * The smallest port number in a specified range of port numbers.
@@ -26,27 +27,15 @@ object PortRange {
   }
   
   @scala.inline
-  implicit class PortRangeOps[Self <: PortRange] (val x: Self) extends AnyVal {
+  implicit class PortRangeMutableBuilder[Self <: PortRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxRange(value: Port): Self = StObject.set(x, "MaxRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxRangeUndefined: Self = StObject.set(x, "MaxRange", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMinRange(value: Port): Self = this.set("MinRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxRange(value: Port): Self = this.set("MaxRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRange: Self = this.set("MaxRange", js.undefined)
+    def setMinRange(value: Port): Self = StObject.set(x, "MinRange", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConferenceProperties extends js.Object {
+trait ConferenceProperties extends StObject {
   
   /**
     * The types of conference solutions that are supported for this calendar.
@@ -25,27 +26,15 @@ object ConferenceProperties {
   }
   
   @scala.inline
-  implicit class ConferencePropertiesOps[Self <: ConferenceProperties] (val x: Self) extends AnyVal {
+  implicit class ConferencePropertiesMutableBuilder[Self <: ConferenceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedConferenceSolutionTypes(value: js.Array[String]): Self = StObject.set(x, "allowedConferenceSolutionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedConferenceSolutionTypesUndefined: Self = StObject.set(x, "allowedConferenceSolutionTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowedConferenceSolutionTypesVarargs(value: String*): Self = this.set("allowedConferenceSolutionTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAllowedConferenceSolutionTypes(value: js.Array[String]): Self = this.set("allowedConferenceSolutionTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowedConferenceSolutionTypes: Self = this.set("allowedConferenceSolutionTypes", js.undefined)
+    def setAllowedConferenceSolutionTypesVarargs(value: String*): Self = StObject.set(x, "allowedConferenceSolutionTypes", js.Array(value :_*))
   }
 }

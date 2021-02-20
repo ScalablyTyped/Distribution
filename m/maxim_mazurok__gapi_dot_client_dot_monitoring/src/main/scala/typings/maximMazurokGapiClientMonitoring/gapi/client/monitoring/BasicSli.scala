@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasicSli extends js.Object {
+trait BasicSli extends StObject {
   
   /** Good service is defined to be the count of requests made to this service that return successfully. */
   var availability: js.UndefOr[js.Any] = js.native
@@ -40,57 +41,45 @@ object BasicSli {
   }
   
   @scala.inline
-  implicit class BasicSliOps[Self <: BasicSli] (val x: Self) extends AnyVal {
+  implicit class BasicSliMutableBuilder[Self <: BasicSli] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailability(value: js.Any): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatency(value: LatencyCriteria): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailability(value: js.Any): Self = this.set("availability", value.asInstanceOf[js.Any])
+    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
     
     @scala.inline
-    def deleteAvailability: Self = this.set("availability", js.undefined)
+    def setLocation(value: js.Array[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatency(value: LatencyCriteria): Self = this.set("latency", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLatency: Self = this.set("latency", js.undefined)
+    def setLocationVarargs(value: String*): Self = StObject.set(x, "location", js.Array(value :_*))
     
     @scala.inline
-    def setLocationVarargs(value: String*): Self = this.set("location", js.Array(value :_*))
+    def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: js.Array[String]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
     
     @scala.inline
-    def setMethodVarargs(value: String*): Self = this.set("method", js.Array(value :_*))
+    def setVersion(value: js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: js.Array[String]): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setVersionVarargs(value: String*): Self = this.set("version", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersion(value: js.Array[String]): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

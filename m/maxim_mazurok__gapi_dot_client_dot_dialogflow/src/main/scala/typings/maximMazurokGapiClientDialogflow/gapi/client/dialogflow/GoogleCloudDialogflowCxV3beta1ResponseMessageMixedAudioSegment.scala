@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegment extends js.Object {
+trait GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegment extends StObject {
   
   /** Output only. Whether the playback of this segment can be interrupted by the end user's speech and the client should then start the next Dialogflow request. */
   var allowPlaybackInterruption: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegment {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegmentOps[Self <: GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegment] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegmentMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPlaybackInterruption(value: Boolean): Self = StObject.set(x, "allowPlaybackInterruption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPlaybackInterruptionUndefined: Self = StObject.set(x, "allowPlaybackInterruption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudio(value: String): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPlaybackInterruption(value: Boolean): Self = this.set("allowPlaybackInterruption", value.asInstanceOf[js.Any])
+    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
     @scala.inline
-    def deleteAllowPlaybackInterruption: Self = this.set("allowPlaybackInterruption", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: String): Self = this.set("audio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAudio: Self = this.set("audio", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

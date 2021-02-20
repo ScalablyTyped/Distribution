@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListLogSubscriptionsResult extends js.Object {
+trait ListLogSubscriptionsResult extends StObject {
   
   /**
     * A list of active LogSubscription objects for calling the AWS account.
@@ -26,33 +27,21 @@ object ListLogSubscriptionsResult {
   }
   
   @scala.inline
-  implicit class ListLogSubscriptionsResultOps[Self <: ListLogSubscriptionsResult] (val x: Self) extends AnyVal {
+  implicit class ListLogSubscriptionsResultMutableBuilder[Self <: ListLogSubscriptionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogSubscriptions(value: LogSubscriptions): Self = StObject.set(x, "LogSubscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogSubscriptionsUndefined: Self = StObject.set(x, "LogSubscriptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogSubscriptionsVarargs(value: LogSubscription*): Self = StObject.set(x, "LogSubscriptions", js.Array(value :_*))
     
     @scala.inline
-    def setLogSubscriptionsVarargs(value: LogSubscription*): Self = this.set("LogSubscriptions", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogSubscriptions(value: LogSubscriptions): Self = this.set("LogSubscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogSubscriptions: Self = this.set("LogSubscriptions", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

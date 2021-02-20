@@ -1,18 +1,28 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Shaders/depthOfFieldMerge.fragment", JSImport.Namespace)
-@js.native
-object depthOfFieldMergeFragmentMod extends js.Object {
+object depthOfFieldMergeFragmentMod {
   
-  @js.native
-  object depthOfFieldMergePixelShader extends js.Object {
+  object depthOfFieldMergePixelShader {
     
-    var name: String = js.native
+    @JSImport("babylonjs/Shaders/depthOfFieldMerge.fragment", "depthOfFieldMergePixelShader")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var shader: String = js.native
+    @JSImport("babylonjs/Shaders/depthOfFieldMerge.fragment", "depthOfFieldMergePixelShader.name")
+    @js.native
+    def name: String = js.native
+    @scala.inline
+    def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Shaders/depthOfFieldMerge.fragment", "depthOfFieldMergePixelShader.shader")
+    @js.native
+    def shader: String = js.native
+    @scala.inline
+    def shader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shader")(x.asInstanceOf[js.Any])
   }
 }

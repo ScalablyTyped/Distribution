@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The streamed response for Firestore.BatchGetDocuments.
   */
 @js.native
-trait SchemaBatchGetDocumentsResponse extends js.Object {
+trait SchemaBatchGetDocumentsResponse extends StObject {
   
   /**
     * A document that was requested.
@@ -44,42 +45,30 @@ object SchemaBatchGetDocumentsResponse {
   }
   
   @scala.inline
-  implicit class SchemaBatchGetDocumentsResponseOps[Self <: SchemaBatchGetDocumentsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchGetDocumentsResponseMutableBuilder[Self <: SchemaBatchGetDocumentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFound(value: SchemaDocument): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFound(value: SchemaDocument): Self = this.set("found", value.asInstanceOf[js.Any])
+    def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
     
     @scala.inline
-    def deleteFound: Self = this.set("found", js.undefined)
+    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissing(value: String): Self = this.set("missing", value.asInstanceOf[js.Any])
+    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
     @scala.inline
-    def deleteMissing: Self = this.set("missing", js.undefined)
+    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadTime: Self = this.set("readTime", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: String): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

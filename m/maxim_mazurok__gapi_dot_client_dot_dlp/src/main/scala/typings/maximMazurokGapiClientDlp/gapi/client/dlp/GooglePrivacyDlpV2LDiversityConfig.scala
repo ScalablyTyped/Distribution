@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2LDiversityConfig extends js.Object {
+trait GooglePrivacyDlpV2LDiversityConfig extends StObject {
   
   /**
     * Set of quasi-identifiers indicating how equivalence classes are defined for the l-diversity computation. When multiple fields are specified, they are considered a single composite
@@ -25,33 +26,21 @@ object GooglePrivacyDlpV2LDiversityConfig {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2LDiversityConfigOps[Self <: GooglePrivacyDlpV2LDiversityConfig] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2LDiversityConfigMutableBuilder[Self <: GooglePrivacyDlpV2LDiversityConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuasiIds(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuasiIdsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
     
     @scala.inline
-    def setQuasiIdsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = this.set("quasiIds", js.Array(value :_*))
+    def setSensitiveAttribute(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "sensitiveAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuasiIds(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = this.set("quasiIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuasiIds: Self = this.set("quasiIds", js.undefined)
-    
-    @scala.inline
-    def setSensitiveAttribute(value: GooglePrivacyDlpV2FieldId): Self = this.set("sensitiveAttribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSensitiveAttribute: Self = this.set("sensitiveAttribute", js.undefined)
+    def setSensitiveAttributeUndefined: Self = StObject.set(x, "sensitiveAttribute", js.undefined)
   }
 }

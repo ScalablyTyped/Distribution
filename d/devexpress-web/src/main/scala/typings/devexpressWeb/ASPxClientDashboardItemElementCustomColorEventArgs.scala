@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,33 +52,21 @@ object ASPxClientDashboardItemElementCustomColorEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardItemElementCustomColorEventArgsOps[Self <: ASPxClientDashboardItemElementCustomColorEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardItemElementCustomColorEventArgsMutableBuilder[Self <: ASPxClientDashboardItemElementCustomColorEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetColor(value: () => String): Self = StObject.set(x, "GetColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMeasures(value: () => js.Array[ASPxClientDashboardItemDataMeasure]): Self = StObject.set(x, "GetMeasures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTargetElement(value: () => ASPxClientDashboardItemDataAxisPointTuple): Self = StObject.set(x, "GetTargetElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColor(value: () => String): Self = this.set("GetColor", js.Any.fromFunction0(value))
+    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMeasures(value: () => js.Array[ASPxClientDashboardItemDataMeasure]): Self = this.set("GetMeasures", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTargetElement(value: () => ASPxClientDashboardItemDataAxisPointTuple): Self = this.set("GetTargetElement", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setItemName(value: String): Self = this.set("ItemName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetColor(value: String => Unit): Self = this.set("SetColor", js.Any.fromFunction1(value))
+    def setSetColor(value: String => Unit): Self = StObject.set(x, "SetColor", js.Any.fromFunction1(value))
   }
 }

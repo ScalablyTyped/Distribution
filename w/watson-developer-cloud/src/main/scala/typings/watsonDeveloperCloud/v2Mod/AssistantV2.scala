@@ -1,6 +1,7 @@
 package typings.watsonDeveloperCloud.v2Mod
 
 import typings.ibmCloudSdkCore.mod.BaseService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

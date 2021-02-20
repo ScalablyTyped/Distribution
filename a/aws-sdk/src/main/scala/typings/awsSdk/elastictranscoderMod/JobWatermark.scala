@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobWatermark extends js.Object {
+trait JobWatermark extends StObject {
   
   /**
     * The encryption settings, if any, that you want Elastic Transcoder to apply to your watermarks.
@@ -31,36 +32,24 @@ object JobWatermark {
   }
   
   @scala.inline
-  implicit class JobWatermarkOps[Self <: JobWatermark] (val x: Self) extends AnyVal {
+  implicit class JobWatermarkMutableBuilder[Self <: JobWatermark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputKey(value: WatermarkKey): Self = StObject.set(x, "InputKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setInputKeyUndefined: Self = StObject.set(x, "InputKey", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setPresetWatermarkId(value: PresetWatermarkId): Self = StObject.set(x, "PresetWatermarkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputKey(value: WatermarkKey): Self = this.set("InputKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputKey: Self = this.set("InputKey", js.undefined)
-    
-    @scala.inline
-    def setPresetWatermarkId(value: PresetWatermarkId): Self = this.set("PresetWatermarkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePresetWatermarkId: Self = this.set("PresetWatermarkId", js.undefined)
+    def setPresetWatermarkIdUndefined: Self = StObject.set(x, "PresetWatermarkId", js.undefined)
   }
 }

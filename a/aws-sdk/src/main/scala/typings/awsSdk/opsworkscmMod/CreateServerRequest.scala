@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworkscmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateServerRequest extends js.Object {
+trait CreateServerRequest extends StObject {
   
   /**
     *  Associate a public IP address with a server that you are launching. Valid values are true or false. The default value is true. 
@@ -127,141 +128,129 @@ object CreateServerRequest {
   }
   
   @scala.inline
-  implicit class CreateServerRequestOps[Self <: CreateServerRequest] (val x: Self) extends AnyVal {
+  implicit class CreateServerRequestMutableBuilder[Self <: CreateServerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatePublicIpAddress(value: Boolean): Self = StObject.set(x, "AssociatePublicIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatePublicIpAddressUndefined: Self = StObject.set(x, "AssociatePublicIpAddress", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setBackupIdUndefined: Self = StObject.set(x, "BackupId", js.undefined)
     
     @scala.inline
-    def setInstanceProfileArn(value: InstanceProfileArn): Self = this.set("InstanceProfileArn", value.asInstanceOf[js.Any])
+    def setBackupRetentionCount(value: BackupRetentionCountDefinition): Self = StObject.set(x, "BackupRetentionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setBackupRetentionCountUndefined: Self = StObject.set(x, "BackupRetentionCount", js.undefined)
     
     @scala.inline
-    def setServerName(value: ServerName): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    def setCustomCertificate(value: CustomCertificate): Self = StObject.set(x, "CustomCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRoleArn(value: ServiceRoleArn): Self = this.set("ServiceRoleArn", value.asInstanceOf[js.Any])
+    def setCustomCertificateUndefined: Self = StObject.set(x, "CustomCertificate", js.undefined)
     
     @scala.inline
-    def setAssociatePublicIpAddress(value: Boolean): Self = this.set("AssociatePublicIpAddress", value.asInstanceOf[js.Any])
+    def setCustomDomain(value: CustomDomain): Self = StObject.set(x, "CustomDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssociatePublicIpAddress: Self = this.set("AssociatePublicIpAddress", js.undefined)
+    def setCustomDomainUndefined: Self = StObject.set(x, "CustomDomain", js.undefined)
     
     @scala.inline
-    def setBackupId(value: BackupId): Self = this.set("BackupId", value.asInstanceOf[js.Any])
+    def setCustomPrivateKey(value: CustomPrivateKey): Self = StObject.set(x, "CustomPrivateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackupId: Self = this.set("BackupId", js.undefined)
+    def setCustomPrivateKeyUndefined: Self = StObject.set(x, "CustomPrivateKey", js.undefined)
     
     @scala.inline
-    def setBackupRetentionCount(value: BackupRetentionCountDefinition): Self = this.set("BackupRetentionCount", value.asInstanceOf[js.Any])
+    def setDisableAutomatedBackup(value: Boolean): Self = StObject.set(x, "DisableAutomatedBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackupRetentionCount: Self = this.set("BackupRetentionCount", js.undefined)
+    def setDisableAutomatedBackupUndefined: Self = StObject.set(x, "DisableAutomatedBackup", js.undefined)
     
     @scala.inline
-    def setCustomCertificate(value: CustomCertificate): Self = this.set("CustomCertificate", value.asInstanceOf[js.Any])
+    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomCertificate: Self = this.set("CustomCertificate", js.undefined)
+    def setEngineAttributes(value: EngineAttributes): Self = StObject.set(x, "EngineAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDomain(value: CustomDomain): Self = this.set("CustomDomain", value.asInstanceOf[js.Any])
+    def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
     
     @scala.inline
-    def deleteCustomDomain: Self = this.set("CustomDomain", js.undefined)
+    def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setCustomPrivateKey(value: CustomPrivateKey): Self = this.set("CustomPrivateKey", value.asInstanceOf[js.Any])
+    def setEngineModel(value: String): Self = StObject.set(x, "EngineModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomPrivateKey: Self = this.set("CustomPrivateKey", js.undefined)
+    def setEngineModelUndefined: Self = StObject.set(x, "EngineModel", js.undefined)
     
     @scala.inline
-    def setDisableAutomatedBackup(value: Boolean): Self = this.set("DisableAutomatedBackup", value.asInstanceOf[js.Any])
+    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableAutomatedBackup: Self = this.set("DisableAutomatedBackup", js.undefined)
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def setEngineAttributesVarargs(value: EngineAttribute*): Self = this.set("EngineAttributes", js.Array(value :_*))
+    def setInstanceProfileArn(value: InstanceProfileArn): Self = StObject.set(x, "InstanceProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineAttributes(value: EngineAttributes): Self = this.set("EngineAttributes", value.asInstanceOf[js.Any])
+    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEngineAttributes: Self = this.set("EngineAttributes", js.undefined)
+    def setKeyPair(value: KeyPair): Self = StObject.set(x, "KeyPair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineModel(value: String): Self = this.set("EngineModel", value.asInstanceOf[js.Any])
+    def setKeyPairUndefined: Self = StObject.set(x, "KeyPair", js.undefined)
     
     @scala.inline
-    def deleteEngineModel: Self = this.set("EngineModel", js.undefined)
+    def setPreferredBackupWindow(value: TimeWindowDefinition): Self = StObject.set(x, "PreferredBackupWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    def setPreferredBackupWindowUndefined: Self = StObject.set(x, "PreferredBackupWindow", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    def setPreferredMaintenanceWindow(value: TimeWindowDefinition): Self = StObject.set(x, "PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPair(value: KeyPair): Self = this.set("KeyPair", value.asInstanceOf[js.Any])
+    def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "PreferredMaintenanceWindow", js.undefined)
     
     @scala.inline
-    def deleteKeyPair: Self = this.set("KeyPair", js.undefined)
+    def setSecurityGroupIds(value: Strings): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredBackupWindow(value: TimeWindowDefinition): Self = this.set("PreferredBackupWindow", value.asInstanceOf[js.Any])
+    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
     @scala.inline
-    def deletePreferredBackupWindow: Self = this.set("PreferredBackupWindow", js.undefined)
+    def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setPreferredMaintenanceWindow(value: TimeWindowDefinition): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    def setServiceRoleArn(value: ServiceRoleArn): Self = StObject.set(x, "ServiceRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    def setSubnetIds(value: Strings): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIds(value: Strings): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetIdsVarargs(value: String*): Self = this.set("SubnetIds", js.Array(value :_*))
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetIds(value: Strings): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

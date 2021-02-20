@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Specification extends js.Object {
+trait Specification extends StObject {
   
   /** An Android mobile test execution specification. */
   var androidTest: js.UndefOr[AndroidTest] = js.native
@@ -22,30 +23,18 @@ object Specification {
   }
   
   @scala.inline
-  implicit class SpecificationOps[Self <: Specification] (val x: Self) extends AnyVal {
+  implicit class SpecificationMutableBuilder[Self <: Specification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidTest(value: AndroidTest): Self = StObject.set(x, "androidTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidTestUndefined: Self = StObject.set(x, "androidTest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIosTest(value: IosTest): Self = StObject.set(x, "iosTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidTest(value: AndroidTest): Self = this.set("androidTest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAndroidTest: Self = this.set("androidTest", js.undefined)
-    
-    @scala.inline
-    def setIosTest(value: IosTest): Self = this.set("iosTest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIosTest: Self = this.set("iosTest", js.undefined)
+    def setIosTestUndefined: Self = StObject.set(x, "iosTest", js.undefined)
   }
 }

@@ -10,33 +10,48 @@ import typings.maquette.interfacesMod.VNode
 import typings.maquette.interfacesMod.VNodeChild
 import typings.maquette.interfacesMod.VNodeProperties
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("maquette", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  var createCache: js.Function0[CalculationCache[js.Any]] = js.native
+  @JSImport("maquette", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  var createMapping: js.Function3[
+  @JSImport("maquette", "createCache")
+  @js.native
+  def createCache: js.Function0[CalculationCache[js.Any]] = js.native
+  @scala.inline
+  def createCache_=(x: js.Function0[CalculationCache[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createCache")(x.asInstanceOf[js.Any])
+  
+  @JSImport("maquette", "createMapping")
+  @js.native
+  def createMapping: js.Function3[
     /* getSourceKey */ js.Function1[/* source */ js.Any, String | Double], 
     /* createResult */ js.Function2[/* source */ js.Any, /* index */ Double, js.Any], 
     /* updateResult */ js.Function3[/* source */ js.Any, /* target */ js.Any, /* index */ Double, Unit], 
     Mapping[js.Any, js.Any]
   ] = js.native
+  @scala.inline
+  def createMapping_=(
+    x: js.Function3[
+      /* getSourceKey */ js.Function1[/* source */ js.Any, String | Double], 
+      /* createResult */ js.Function2[/* source */ js.Any, /* index */ Double, js.Any], 
+      /* updateResult */ js.Function3[/* source */ js.Any, /* target */ js.Any, /* index */ Double, Unit], 
+      Mapping[js.Any, js.Any]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createMapping")(x.asInstanceOf[js.Any])
   
-  var createProjector: js.Function1[/* projectorOptions */ js.UndefOr[ProjectorOptions], Projector] = js.native
-  
-  def h(selector: String): VNode = js.native
-  def h(selector: String, children: js.Array[VNodeChild]): VNode = js.native
-  def h(selector: String, properties: js.UndefOr[scala.Nothing], children: js.Array[VNodeChild]): VNode = js.native
-  def h(selector: String, properties: VNodeProperties): VNode = js.native
-  def h(selector: String, properties: VNodeProperties, children: js.Array[VNodeChild]): VNode = js.native
-  
+  @JSImport("maquette", "createProjector")
   @js.native
-  object dom extends js.Object {
+  def createProjector: js.Function1[/* projectorOptions */ js.UndefOr[ProjectorOptions], Projector] = js.native
+  @scala.inline
+  def createProjector_=(x: js.Function1[/* projectorOptions */ js.UndefOr[ProjectorOptions], Projector]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createProjector")(x.asInstanceOf[js.Any])
+  
+  object dom {
     
     /**
       * Appends a new child node to the DOM which is generated from a [[VNode]].
@@ -47,7 +62,11 @@ object mod extends js.Object {
       * @param projectionOptions - Options to be used to create and update the [[Projection]].
       * @returns The [[Projection]] that was created.
       */
+    @JSImport("maquette", "dom.append")
+    @js.native
     def append(parentNode: Element, vnode: VNode): Projection = js.native
+    @JSImport("maquette", "dom.append")
+    @js.native
     def append(parentNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
     
     /**
@@ -59,7 +78,11 @@ object mod extends js.Object {
       * @param projectionOptions - Options to be used to create and update the projection.
       * @returns The [[Projection]] which also contains the DOM Node that was created.
       */
+    @JSImport("maquette", "dom.create")
+    @js.native
     def create(vnode: VNode): Projection = js.native
+    @JSImport("maquette", "dom.create")
+    @js.native
     def create(vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
     
     /**
@@ -71,7 +94,11 @@ object mod extends js.Object {
       * @param projectionOptions - Options to be used to create and update the projection, see [[createProjector]].
       * @returns The [[Projection]] that was created.
       */
+    @JSImport("maquette", "dom.insertBefore")
+    @js.native
     def insertBefore(beforeNode: Element, vnode: VNode): Projection = js.native
+    @JSImport("maquette", "dom.insertBefore")
+    @js.native
     def insertBefore(beforeNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
     
     /**
@@ -85,7 +112,11 @@ object mod extends js.Object {
       * @param projectionOptions - Options to be used to create and update the projection, see [[createProjector]].
       * @returns The [[Projection]] that was created.
       */
+    @JSImport("maquette", "dom.merge")
+    @js.native
     def merge(element: Element, vnode: VNode): Projection = js.native
+    @JSImport("maquette", "dom.merge")
+    @js.native
     def merge(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
     
     /**
@@ -97,7 +128,27 @@ object mod extends js.Object {
       * @param projectionOptions - Options to be used to create and update the [[Projection]].
       * @returns The [[Projection]] that was created.
       */
+    @JSImport("maquette", "dom.replace")
+    @js.native
     def replace(element: Element, vnode: VNode): Projection = js.native
+    @JSImport("maquette", "dom.replace")
+    @js.native
     def replace(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
   }
+  
+  @JSImport("maquette", "h")
+  @js.native
+  def h(selector: String): VNode = js.native
+  @JSImport("maquette", "h")
+  @js.native
+  def h(selector: String, children: js.Array[VNodeChild]): VNode = js.native
+  @JSImport("maquette", "h")
+  @js.native
+  def h(selector: String, properties: js.UndefOr[scala.Nothing], children: js.Array[VNodeChild]): VNode = js.native
+  @JSImport("maquette", "h")
+  @js.native
+  def h(selector: String, properties: VNodeProperties): VNode = js.native
+  @JSImport("maquette", "h")
+  @js.native
+  def h(selector: String, properties: VNodeProperties, children: js.Array[VNodeChild]): VNode = js.native
 }

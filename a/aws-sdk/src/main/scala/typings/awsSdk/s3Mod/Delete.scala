@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delete extends js.Object {
+trait Delete extends StObject {
   
   /**
     * The objects to delete.
@@ -26,30 +27,18 @@ object Delete {
   }
   
   @scala.inline
-  implicit class DeleteOps[Self <: Delete] (val x: Self) extends AnyVal {
+  implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjects(value: ObjectIdentifierList): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectsVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuiet(value: Quiet): Self = StObject.set(x, "Quiet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectsVarargs(value: ObjectIdentifier*): Self = this.set("Objects", js.Array(value :_*))
-    
-    @scala.inline
-    def setObjects(value: ObjectIdentifierList): Self = this.set("Objects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuiet(value: Quiet): Self = this.set("Quiet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuiet: Self = this.set("Quiet", js.undefined)
+    def setQuietUndefined: Self = StObject.set(x, "Quiet", js.undefined)
   }
 }

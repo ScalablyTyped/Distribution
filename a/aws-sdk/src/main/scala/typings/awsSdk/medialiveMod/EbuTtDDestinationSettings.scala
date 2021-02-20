@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EbuTtDDestinationSettings extends js.Object {
+trait EbuTtDDestinationSettings extends StObject {
   
   /**
     * Specifies how to handle the gap between the lines (in multi-line captions).
@@ -38,36 +39,24 @@ object EbuTtDDestinationSettings {
   }
   
   @scala.inline
-  implicit class EbuTtDDestinationSettingsOps[Self <: EbuTtDDestinationSettings] (val x: Self) extends AnyVal {
+  implicit class EbuTtDDestinationSettingsMutableBuilder[Self <: EbuTtDDestinationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFillLineGap(value: EbuTtDFillLineGapControl): Self = StObject.set(x, "FillLineGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillLineGapUndefined: Self = StObject.set(x, "FillLineGap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontFamily(value: string): Self = StObject.set(x, "FontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillLineGap(value: EbuTtDFillLineGapControl): Self = this.set("FillLineGap", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "FontFamily", js.undefined)
     
     @scala.inline
-    def deleteFillLineGap: Self = this.set("FillLineGap", js.undefined)
+    def setStyleControl(value: EbuTtDDestinationStyleControl): Self = StObject.set(x, "StyleControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: string): Self = this.set("FontFamily", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFontFamily: Self = this.set("FontFamily", js.undefined)
-    
-    @scala.inline
-    def setStyleControl(value: EbuTtDDestinationStyleControl): Self = this.set("StyleControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleControl: Self = this.set("StyleControl", js.undefined)
+    def setStyleControlUndefined: Self = StObject.set(x, "StyleControl", js.undefined)
   }
 }

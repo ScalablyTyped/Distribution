@@ -1,16 +1,21 @@
 package typings.ethereumjsAccount
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ethereumjs-account", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("ethereumjs-account", JSImport.Default)
+  @js.native
+  class default () extends Account {
+    def this(data: js.Any) = this()
+  }
   
   @js.native
-  trait Account extends js.Object {
+  trait Account extends StObject {
     
     var balance: Buffer = js.native
     
@@ -40,7 +45,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait Trie extends js.Object {
+  trait Trie extends StObject {
     
     def copy(): Trie = js.native
     
@@ -58,11 +63,6 @@ object mod extends js.Object {
     def putRaw(key: Buffer, value: Buffer, cb: TriePutCb): Unit = js.native
     
     var root: Buffer = js.native
-  }
-  
-  @js.native
-  class default () extends Account {
-    def this(data: js.Any) = this()
   }
   
   type TrieGetCb = js.Function2[/* err */ js.Any, /* value */ Buffer | Null, Unit]

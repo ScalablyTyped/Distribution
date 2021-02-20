@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientData extends js.Object {
+trait ClientData extends StObject {
   
   /**
     * A user-defined comment about the disk upload.
@@ -36,42 +37,30 @@ object ClientData {
   }
   
   @scala.inline
-  implicit class ClientDataOps[Self <: ClientData] (val x: Self) extends AnyVal {
+  implicit class ClientDataMutableBuilder[Self <: ClientData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUploadEnd(value: DateTime): Self = StObject.set(x, "UploadEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    def setUploadEndUndefined: Self = StObject.set(x, "UploadEnd", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("Comment", js.undefined)
+    def setUploadSize(value: Double): Self = StObject.set(x, "UploadSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadEnd(value: DateTime): Self = this.set("UploadEnd", value.asInstanceOf[js.Any])
+    def setUploadSizeUndefined: Self = StObject.set(x, "UploadSize", js.undefined)
     
     @scala.inline
-    def deleteUploadEnd: Self = this.set("UploadEnd", js.undefined)
+    def setUploadStart(value: DateTime): Self = StObject.set(x, "UploadStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadSize(value: Double): Self = this.set("UploadSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadSize: Self = this.set("UploadSize", js.undefined)
-    
-    @scala.inline
-    def setUploadStart(value: DateTime): Self = this.set("UploadStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadStart: Self = this.set("UploadStart", js.undefined)
+    def setUploadStartUndefined: Self = StObject.set(x, "UploadStart", js.undefined)
   }
 }

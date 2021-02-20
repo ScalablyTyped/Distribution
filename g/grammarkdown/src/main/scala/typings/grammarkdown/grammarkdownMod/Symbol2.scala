@@ -1,11 +1,12 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Symbol2 extends js.Object {
+trait Symbol2 extends StObject {
   
   var id: Double = js.native
   
@@ -26,39 +27,27 @@ object Symbol2 {
   }
   
   @scala.inline
-  implicit class Symbol2Ops[Self <: Symbol2] (val x: Self) extends AnyVal {
+  implicit class Symbol2MutableBuilder[Self <: Symbol2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocals(value: SymbolTable): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
     @scala.inline
-    def setKind(value: SymbolKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParent(value: Symbol2): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocals(value: SymbolTable): Self = this.set("locals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocals: Self = this.set("locals", js.undefined)
-    
-    @scala.inline
-    def setParent(value: Symbol2): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

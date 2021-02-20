@@ -1,16 +1,15 @@
 package typings.sinonChrome.mod
 
 import typings.sinonChrome.mod.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "types")
-@js.native
-object types extends js.Object {
+object types {
   
   @js.native
-  trait StubbedChromeSetting extends js.Object {
+  trait StubbedChromeSetting extends StObject {
     
     // Methods
     def clear(

@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -127,184 +128,172 @@ object LanguageServiceHost {
   }
   
   @scala.inline
-  implicit class LanguageServiceHostOps[Self <: LanguageServiceHost] (val x: Self) extends AnyVal {
+  implicit class LanguageServiceHostMutableBuilder[Self <: LanguageServiceHost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: /* s */ java.lang.String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileExists(value: /* path */ java.lang.String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCompilationSettings(value: () => CompilerOptions): Self = this.set("getCompilationSettings", js.Any.fromFunction0(value))
+    def setFileExistsUndefined: Self = StObject.set(x, "fileExists", js.undefined)
     
     @scala.inline
-    def setGetCurrentDirectory(value: () => java.lang.String): Self = this.set("getCurrentDirectory", js.Any.fromFunction0(value))
+    def setGetCancellationToken(value: () => HostCancellationToken): Self = StObject.set(x, "getCancellationToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultLibFileName(value: CompilerOptions => java.lang.String): Self = this.set("getDefaultLibFileName", js.Any.fromFunction1(value))
+    def setGetCancellationTokenUndefined: Self = StObject.set(x, "getCancellationToken", js.undefined)
     
     @scala.inline
-    def setGetScriptFileNames(value: () => js.Array[java.lang.String]): Self = this.set("getScriptFileNames", js.Any.fromFunction0(value))
+    def setGetCompilationSettings(value: () => CompilerOptions): Self = StObject.set(x, "getCompilationSettings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScriptSnapshot(value: java.lang.String => js.UndefOr[IScriptSnapshot]): Self = this.set("getScriptSnapshot", js.Any.fromFunction1(value))
+    def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScriptVersion(value: java.lang.String => java.lang.String): Self = this.set("getScriptVersion", js.Any.fromFunction1(value))
+    def setGetCustomTransformers(value: () => js.UndefOr[CustomTransformers]): Self = StObject.set(x, "getCustomTransformers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setError(value: /* s */ java.lang.String => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setGetCustomTransformersUndefined: Self = StObject.set(x, "getCustomTransformers", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setGetDefaultLibFileName(value: CompilerOptions => java.lang.String): Self = StObject.set(x, "getDefaultLibFileName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFileExists(value: /* path */ java.lang.String => Boolean): Self = this.set("fileExists", js.Any.fromFunction1(value))
+    def setGetDirectories(value: /* directoryName */ java.lang.String => js.Array[java.lang.String]): Self = StObject.set(x, "getDirectories", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFileExists: Self = this.set("fileExists", js.undefined)
+    def setGetDirectoriesUndefined: Self = StObject.set(x, "getDirectories", js.undefined)
     
     @scala.inline
-    def setGetCancellationToken(value: () => HostCancellationToken): Self = this.set("getCancellationToken", js.Any.fromFunction0(value))
+    def setGetLocalizedDiagnosticMessages(value: () => _): Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetCancellationToken: Self = this.set("getCancellationToken", js.undefined)
+    def setGetLocalizedDiagnosticMessagesUndefined: Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.undefined)
     
     @scala.inline
-    def setGetCustomTransformers(value: () => js.UndefOr[CustomTransformers]): Self = this.set("getCustomTransformers", js.Any.fromFunction0(value))
+    def setGetNewLine(value: () => java.lang.String): Self = StObject.set(x, "getNewLine", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetCustomTransformers: Self = this.set("getCustomTransformers", js.undefined)
+    def setGetNewLineUndefined: Self = StObject.set(x, "getNewLine", js.undefined)
     
     @scala.inline
-    def setGetDirectories(value: /* directoryName */ java.lang.String => js.Array[java.lang.String]): Self = this.set("getDirectories", js.Any.fromFunction1(value))
+    def setGetProjectReferences(value: () => js.UndefOr[js.Array[ProjectReference]]): Self = StObject.set(x, "getProjectReferences", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetDirectories: Self = this.set("getDirectories", js.undefined)
+    def setGetProjectReferencesUndefined: Self = StObject.set(x, "getProjectReferences", js.undefined)
     
     @scala.inline
-    def setGetLocalizedDiagnosticMessages(value: () => _): Self = this.set("getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
+    def setGetProjectVersion(value: () => java.lang.String): Self = StObject.set(x, "getProjectVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetLocalizedDiagnosticMessages: Self = this.set("getLocalizedDiagnosticMessages", js.undefined)
-    
-    @scala.inline
-    def setGetNewLine(value: () => java.lang.String): Self = this.set("getNewLine", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetNewLine: Self = this.set("getNewLine", js.undefined)
-    
-    @scala.inline
-    def setGetProjectReferences(value: () => js.UndefOr[js.Array[ProjectReference]]): Self = this.set("getProjectReferences", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetProjectReferences: Self = this.set("getProjectReferences", js.undefined)
-    
-    @scala.inline
-    def setGetProjectVersion(value: () => java.lang.String): Self = this.set("getProjectVersion", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetProjectVersion: Self = this.set("getProjectVersion", js.undefined)
+    def setGetProjectVersionUndefined: Self = StObject.set(x, "getProjectVersion", js.undefined)
     
     @scala.inline
     def setGetResolvedModuleWithFailedLookupLocationsFromCache(
       value: (/* modulename */ java.lang.String, /* containingFile */ java.lang.String) => js.UndefOr[ResolvedModuleWithFailedLookupLocations]
-    ): Self = this.set("getResolvedModuleWithFailedLookupLocationsFromCache", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getResolvedModuleWithFailedLookupLocationsFromCache", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetResolvedModuleWithFailedLookupLocationsFromCache: Self = this.set("getResolvedModuleWithFailedLookupLocationsFromCache", js.undefined)
+    def setGetResolvedModuleWithFailedLookupLocationsFromCacheUndefined: Self = StObject.set(x, "getResolvedModuleWithFailedLookupLocationsFromCache", js.undefined)
     
     @scala.inline
-    def setGetScriptKind(value: /* fileName */ java.lang.String => ScriptKind): Self = this.set("getScriptKind", js.Any.fromFunction1(value))
+    def setGetScriptFileNames(value: () => js.Array[java.lang.String]): Self = StObject.set(x, "getScriptFileNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetScriptKind: Self = this.set("getScriptKind", js.undefined)
+    def setGetScriptKind(value: /* fileName */ java.lang.String => ScriptKind): Self = StObject.set(x, "getScriptKind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTypeRootsVersion(value: () => Double): Self = this.set("getTypeRootsVersion", js.Any.fromFunction0(value))
+    def setGetScriptKindUndefined: Self = StObject.set(x, "getScriptKind", js.undefined)
     
     @scala.inline
-    def deleteGetTypeRootsVersion: Self = this.set("getTypeRootsVersion", js.undefined)
+    def setGetScriptSnapshot(value: java.lang.String => js.UndefOr[IScriptSnapshot]): Self = StObject.set(x, "getScriptSnapshot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInstallPackage(value: /* options */ InstallPackageOptions => js.Promise[ApplyCodeActionCommandResult]): Self = this.set("installPackage", js.Any.fromFunction1(value))
+    def setGetScriptVersion(value: java.lang.String => java.lang.String): Self = StObject.set(x, "getScriptVersion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInstallPackage: Self = this.set("installPackage", js.undefined)
+    def setGetTypeRootsVersion(value: () => Double): Self = StObject.set(x, "getTypeRootsVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsKnownTypesPackageName(value: /* name */ java.lang.String => Boolean): Self = this.set("isKnownTypesPackageName", js.Any.fromFunction1(value))
+    def setGetTypeRootsVersionUndefined: Self = StObject.set(x, "getTypeRootsVersion", js.undefined)
     
     @scala.inline
-    def deleteIsKnownTypesPackageName: Self = this.set("isKnownTypesPackageName", js.undefined)
+    def setInstallPackage(value: /* options */ InstallPackageOptions => js.Promise[ApplyCodeActionCommandResult]): Self = StObject.set(x, "installPackage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLog(value: /* s */ java.lang.String => Unit): Self = this.set("log", js.Any.fromFunction1(value))
+    def setInstallPackageUndefined: Self = StObject.set(x, "installPackage", js.undefined)
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setIsKnownTypesPackageName(value: /* name */ java.lang.String => Boolean): Self = StObject.set(x, "isKnownTypesPackageName", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setIsKnownTypesPackageNameUndefined: Self = StObject.set(x, "isKnownTypesPackageName", js.undefined)
+    
+    @scala.inline
+    def setLog(value: /* s */ java.lang.String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
     def setReadDirectory(
       value: (/* path */ java.lang.String, /* extensions */ js.UndefOr[js.Array[java.lang.String]], /* exclude */ js.UndefOr[js.Array[java.lang.String]], /* include */ js.UndefOr[js.Array[java.lang.String]], /* depth */ js.UndefOr[Double]) => js.Array[java.lang.String]
-    ): Self = this.set("readDirectory", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "readDirectory", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteReadDirectory: Self = this.set("readDirectory", js.undefined)
+    def setReadDirectoryUndefined: Self = StObject.set(x, "readDirectory", js.undefined)
     
     @scala.inline
     def setReadFile(
       value: (/* path */ java.lang.String, /* encoding */ js.UndefOr[java.lang.String]) => js.UndefOr[java.lang.String]
-    ): Self = this.set("readFile", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "readFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteReadFile: Self = this.set("readFile", js.undefined)
+    def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
     
     @scala.inline
-    def setRealpath(value: /* path */ java.lang.String => java.lang.String): Self = this.set("realpath", js.Any.fromFunction1(value))
+    def setRealpath(value: /* path */ java.lang.String => java.lang.String): Self = StObject.set(x, "realpath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRealpath: Self = this.set("realpath", js.undefined)
+    def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
     
     @scala.inline
     def setResolveModuleNames(
       value: (/* moduleNames */ js.Array[java.lang.String], /* containingFile */ java.lang.String, /* reusedNames */ js.UndefOr[js.Array[java.lang.String]], /* redirectedReference */ js.UndefOr[ResolvedProjectReference], /* options */ CompilerOptions) => js.Array[js.UndefOr[ResolvedModule]]
-    ): Self = this.set("resolveModuleNames", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "resolveModuleNames", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteResolveModuleNames: Self = this.set("resolveModuleNames", js.undefined)
+    def setResolveModuleNamesUndefined: Self = StObject.set(x, "resolveModuleNames", js.undefined)
     
     @scala.inline
     def setResolveTypeReferenceDirectives(
       value: (/* typeDirectiveNames */ js.Array[java.lang.String], /* containingFile */ java.lang.String, /* redirectedReference */ js.UndefOr[ResolvedProjectReference], /* options */ CompilerOptions) => js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
-    ): Self = this.set("resolveTypeReferenceDirectives", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "resolveTypeReferenceDirectives", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteResolveTypeReferenceDirectives: Self = this.set("resolveTypeReferenceDirectives", js.undefined)
+    def setResolveTypeReferenceDirectivesUndefined: Self = StObject.set(x, "resolveTypeReferenceDirectives", js.undefined)
     
     @scala.inline
-    def setTrace(value: /* s */ java.lang.String => Unit): Self = this.set("trace", js.Any.fromFunction1(value))
+    def setTrace(value: /* s */ java.lang.String => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTrace: Self = this.set("trace", js.undefined)
+    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
     
     @scala.inline
-    def setUseCaseSensitiveFileNames(value: () => Boolean): Self = this.set("useCaseSensitiveFileNames", js.Any.fromFunction0(value))
+    def setUseCaseSensitiveFileNames(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteUseCaseSensitiveFileNames: Self = this.set("useCaseSensitiveFileNames", js.undefined)
+    def setUseCaseSensitiveFileNamesUndefined: Self = StObject.set(x, "useCaseSensitiveFileNames", js.undefined)
     
     @scala.inline
-    def setWriteFile(value: (/* fileName */ java.lang.String, /* content */ java.lang.String) => Unit): Self = this.set("writeFile", js.Any.fromFunction2(value))
+    def setWriteFile(value: (/* fileName */ java.lang.String, /* content */ java.lang.String) => Unit): Self = StObject.set(x, "writeFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteWriteFile: Self = this.set("writeFile", js.undefined)
+    def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the delta metadata.
   */
 @js.native
-trait ASPxClientDashboardItemDataDelta extends js.Object {
+trait ASPxClientDashboardItemDataDelta extends StObject {
   
   /**
     * Gets the identifier for the measure that provides actual values.
@@ -39,30 +40,18 @@ object ASPxClientDashboardItemDataDelta {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardItemDataDeltaOps[Self <: ASPxClientDashboardItemDataDelta] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardItemDataDeltaMutableBuilder[Self <: ASPxClientDashboardItemDataDelta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualMeasureId(value: String): Self = StObject.set(x, "ActualMeasureId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualMeasureId(value: String): Self = this.set("ActualMeasureId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetMeasureId(value: String): Self = this.set("TargetMeasureId", value.asInstanceOf[js.Any])
+    def setTargetMeasureId(value: String): Self = StObject.set(x, "TargetMeasureId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,18 @@
 package typings.geokdbush
 
 import typings.kdbush.mod.KDBush
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("geokdbush", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("geokdbush", "around")
+  @js.native
   def around[T](index: KDBush[T], longitude: Double, latitude: Double): js.Array[T] = js.native
+  @JSImport("geokdbush", "around")
+  @js.native
   def around[T](
     index: KDBush[T],
     longitude: Double,
@@ -18,6 +21,8 @@ object mod extends js.Object {
     maxDistance: js.UndefOr[scala.Nothing],
     filterFn: js.Any
   ): js.Array[T] = js.native
+  @JSImport("geokdbush", "around")
+  @js.native
   def around[T](
     index: KDBush[T],
     longitude: Double,
@@ -25,6 +30,8 @@ object mod extends js.Object {
     maxResults: js.UndefOr[scala.Nothing],
     maxDistance: Double
   ): js.Array[T] = js.native
+  @JSImport("geokdbush", "around")
+  @js.native
   def around[T](
     index: KDBush[T],
     longitude: Double,
@@ -33,7 +40,11 @@ object mod extends js.Object {
     maxDistance: Double,
     filterFn: js.Any
   ): js.Array[T] = js.native
+  @JSImport("geokdbush", "around")
+  @js.native
   def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Double): js.Array[T] = js.native
+  @JSImport("geokdbush", "around")
+  @js.native
   def around[T](
     index: KDBush[T],
     longitude: Double,
@@ -42,7 +53,11 @@ object mod extends js.Object {
     maxDistance: js.UndefOr[scala.Nothing],
     filterFn: js.Any
   ): js.Array[T] = js.native
+  @JSImport("geokdbush", "around")
+  @js.native
   def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Double, maxDistance: Double): js.Array[T] = js.native
+  @JSImport("geokdbush", "around")
+  @js.native
   def around[T](
     index: KDBush[T],
     longitude: Double,
@@ -52,5 +67,7 @@ object mod extends js.Object {
     filterFn: js.Any
   ): js.Array[T] = js.native
   
+  @JSImport("geokdbush", "distance")
+  @js.native
   def distance(longitude1: Double, latitude1: Double, longitude2: Double, latitude2: Double): Double = js.native
 }

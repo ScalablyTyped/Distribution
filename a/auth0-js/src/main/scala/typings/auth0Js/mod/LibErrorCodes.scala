@@ -1,5 +1,6 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.auth0Js.auth0JsStrings.request_error
   - typings.auth0Js.auth0JsStrings.invalid_token
 */
-trait LibErrorCodes extends js.Object
+trait LibErrorCodes extends StObject
 object LibErrorCodes {
   
   @scala.inline

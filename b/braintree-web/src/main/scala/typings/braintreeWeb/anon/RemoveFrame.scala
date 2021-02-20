@@ -2,12 +2,13 @@ package typings.braintreeWeb.anon
 
 import typings.braintreeWeb.coreMod.BraintreeError
 import typings.std.HTMLIFrameElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveFrame extends js.Object {
+trait RemoveFrame extends StObject {
   
   def addFrame(): Unit = js.native
   def addFrame(err: js.UndefOr[scala.Nothing], iframe: HTMLIFrameElement): Unit = js.native

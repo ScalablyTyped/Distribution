@@ -18,6 +18,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -176,36 +177,24 @@ object XFixedLine {
   }
   
   @scala.inline
-  implicit class XFixedLineOps[Self <: XFixedLine] (val x: Self) extends AnyVal {
+  implicit class XFixedLineMutableBuilder[Self <: XFixedLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineColor(value: Color): Self = StObject.set(x, "LineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineDash(value: LineDash): Self = StObject.set(x, "LineDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineStyle(value: LineStyle): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: Color): Self = this.set("LineColor", value.asInstanceOf[js.Any])
+    def setLineTransparence(value: Double): Self = StObject.set(x, "LineTransparence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineDash(value: LineDash): Self = this.set("LineDash", value.asInstanceOf[js.Any])
+    def setLineWidth(value: Double): Self = StObject.set(x, "LineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: LineStyle): Self = this.set("LineStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineTransparence(value: Double): Self = this.set("LineTransparence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineWidth(value: Double): Self = this.set("LineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientation(value: Double): Self = this.set("Orientation", value.asInstanceOf[js.Any])
+    def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
   }
 }

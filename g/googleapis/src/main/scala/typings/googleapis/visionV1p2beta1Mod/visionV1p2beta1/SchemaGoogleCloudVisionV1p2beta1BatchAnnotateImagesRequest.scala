@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Multiple image annotation requests are batched into a single service call.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesRequest extends js.Object {
+trait SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesRequest extends StObject {
   
   /**
     * Individual image annotation requests for this batch.
@@ -24,27 +25,15 @@ object SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesRequest {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesRequestOps[Self <: SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesRequestMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1BatchAnnotateImagesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequests(value: js.Array[SchemaGoogleCloudVisionV1p2beta1AnnotateImageRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequestsVarargs(value: SchemaGoogleCloudVisionV1p2beta1AnnotateImageRequest*): Self = this.set("requests", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequests(value: js.Array[SchemaGoogleCloudVisionV1p2beta1AnnotateImageRequest]): Self = this.set("requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequests: Self = this.set("requests", js.undefined)
+    def setRequestsVarargs(value: SchemaGoogleCloudVisionV1p2beta1AnnotateImageRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

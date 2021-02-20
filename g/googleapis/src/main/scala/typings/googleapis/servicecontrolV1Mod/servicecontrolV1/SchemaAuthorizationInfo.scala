@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Authorization information for the operation.
   */
 @js.native
-trait SchemaAuthorizationInfo extends js.Object {
+trait SchemaAuthorizationInfo extends StObject {
   
   /**
     * Whether or not authorization for `resource` and `permission` was granted.
@@ -43,42 +44,30 @@ object SchemaAuthorizationInfo {
   }
   
   @scala.inline
-  implicit class SchemaAuthorizationInfoOps[Self <: SchemaAuthorizationInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaAuthorizationInfoMutableBuilder[Self <: SchemaAuthorizationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGranted(value: Boolean): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrantedUndefined: Self = StObject.set(x, "granted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGranted(value: Boolean): Self = this.set("granted", value.asInstanceOf[js.Any])
+    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
     @scala.inline
-    def deleteGranted: Self = this.set("granted", js.undefined)
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermission(value: String): Self = this.set("permission", value.asInstanceOf[js.Any])
+    def setResourceAttributes(value: SchemaResource): Self = StObject.set(x, "resourceAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermission: Self = this.set("permission", js.undefined)
+    def setResourceAttributesUndefined: Self = StObject.set(x, "resourceAttributes", js.undefined)
     
     @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
-    
-    @scala.inline
-    def setResourceAttributes(value: SchemaResource): Self = this.set("resourceAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceAttributes: Self = this.set("resourceAttributes", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.chrome.chrome.cast.media
 
 import typings.chrome.chrome.cast.Image
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MusicTrackMediaMetadata extends js.Object {
+trait MusicTrackMediaMetadata extends StObject {
   
   var albumArtist: String = js.native
   
@@ -64,63 +65,51 @@ object MusicTrackMediaMetadata {
   }
   
   @scala.inline
-  implicit class MusicTrackMediaMetadataOps[Self <: MusicTrackMediaMetadata] (val x: Self) extends AnyVal {
+  implicit class MusicTrackMediaMetadataMutableBuilder[Self <: MusicTrackMediaMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbumName(value: String): Self = StObject.set(x, "albumName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumArtist(value: String): Self = this.set("albumArtist", value.asInstanceOf[js.Any])
+    def setArtistName(value: String): Self = StObject.set(x, "artistName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumName(value: String): Self = this.set("albumName", value.asInstanceOf[js.Any])
+    def setComposer(value: String): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtist(value: String): Self = this.set("artist", value.asInstanceOf[js.Any])
+    def setDiscNumber(value: Double): Self = StObject.set(x, "discNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtistName(value: String): Self = this.set("artistName", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComposer(value: String): Self = this.set("composer", value.asInstanceOf[js.Any])
+    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setDiscNumber(value: Double): Self = this.set("discNumber", value.asInstanceOf[js.Any])
+    def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: Image*): Self = this.set("images", js.Array(value :_*))
+    def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[Image]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setReleaseYear(value: Double): Self = StObject.set(x, "releaseYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataType(value: MetadataType): Self = this.set("metadataType", value.asInstanceOf[js.Any])
+    def setSongName(value: String): Self = StObject.set(x, "songName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDate(value: String): Self = this.set("releaseDate", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseYear(value: Double): Self = this.set("releaseYear", value.asInstanceOf[js.Any])
+    def setTrackNumber(value: Double): Self = StObject.set(x, "trackNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSongName(value: String): Self = this.set("songName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackNumber(value: Double): Self = this.set("trackNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MetadataType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

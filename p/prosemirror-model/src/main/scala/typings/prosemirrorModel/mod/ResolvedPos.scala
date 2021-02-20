@@ -1,12 +1,13 @@
 package typings.prosemirrorModel.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "ResolvedPos")
 @js.native
-class ResolvedPos[S /* <: Schema[_, _] */] () extends js.Object {
+class ResolvedPos[S /* <: Schema[_, _] */] () extends StObject {
   
   /**
     * The (absolute) position directly after the wrapping node at the

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputConfig extends js.Object {
+trait OutputConfig extends StObject {
   
   /**
     * Specifies additional parameters for compiler options in JSON format. The compiler options are TargetPlatform specific. It is required for NVIDIA accelerators and highly recommended for CPU compilations. For any other cases, it is optional to specify CompilerOptions.     CPU: Compilation for CPU supports the following compiler options.    mcpu: CPU micro-architecture. For example, {'mcpu': 'skylake-avx512'}     mattr: CPU flags. For example, {'mattr': ['+neon', '+vfpv4']}       ARM: Details of ARM CPU compilations.    NEON: NEON is an implementation of the Advanced SIMD extension used in ARMv7 processors. For example, add {'mattr': ['+neon']} to the compiler options if compiling for ARM 32-bit platform with the NEON support.      NVIDIA: Compilation for NVIDIA GPU supports the following compiler options.    gpu_code: Specifies the targeted architecture.    trt-ver: Specifies the TensorRT versions in x.y.z. format.    cuda-ver: Specifies the CUDA version in x.y format.   For example, {'gpu-code': 'sm_72', 'trt-ver': '6.0.1', 'cuda-ver': '10.1'}     ANDROID: Compilation for the Android OS supports the following compiler options:    ANDROID_PLATFORM: Specifies the Android API levels. Available levels range from 21 to 29. For example, {'ANDROID_PLATFORM': 28}.    mattr: Add {'mattr': ['+neon']} to compiler options if compiling for ARM 32-bit platform with NEON support.      INFERENTIA: Compilation for target ml_inf1 uses compiler options passed in as a JSON string. For example, "CompilerOptions": "\"--verbose 1 --num-neuroncores 2 -O2\"".  For information about supported compiler options, see  Neuron Compiler CLI.     CoreML: Compilation for the CoreML OutputConfig$TargetDevice supports the following compiler options:    class_labels: Specifies the classification labels file name inside input tar.gz file. For example, {"class_labels": "imagenet_labels_1000.txt"}. Labels inside the txt file should be separated by newlines.    
@@ -36,39 +37,27 @@ object OutputConfig {
   }
   
   @scala.inline
-  implicit class OutputConfigOps[Self <: OutputConfig] (val x: Self) extends AnyVal {
+  implicit class OutputConfigMutableBuilder[Self <: OutputConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "CompilerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompilerOptionsUndefined: Self = StObject.set(x, "CompilerOptions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3OutputLocation(value: S3Uri): Self = StObject.set(x, "S3OutputLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3OutputLocation(value: S3Uri): Self = this.set("S3OutputLocation", value.asInstanceOf[js.Any])
+    def setTargetDevice(value: TargetDevice): Self = StObject.set(x, "TargetDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompilerOptions(value: CompilerOptions): Self = this.set("CompilerOptions", value.asInstanceOf[js.Any])
+    def setTargetDeviceUndefined: Self = StObject.set(x, "TargetDevice", js.undefined)
     
     @scala.inline
-    def deleteCompilerOptions: Self = this.set("CompilerOptions", js.undefined)
+    def setTargetPlatform(value: TargetPlatform): Self = StObject.set(x, "TargetPlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetDevice(value: TargetDevice): Self = this.set("TargetDevice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetDevice: Self = this.set("TargetDevice", js.undefined)
-    
-    @scala.inline
-    def setTargetPlatform(value: TargetPlatform): Self = this.set("TargetPlatform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetPlatform: Self = this.set("TargetPlatform", js.undefined)
+    def setTargetPlatformUndefined: Self = StObject.set(x, "TargetPlatform", js.undefined)
   }
 }

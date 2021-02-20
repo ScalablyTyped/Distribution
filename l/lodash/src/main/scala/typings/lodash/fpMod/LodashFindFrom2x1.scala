@@ -2,12 +2,13 @@ package typings.lodash.fpMod
 
 import typings.lodash.mod.List
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashFindFrom2x1[T] extends js.Object {
+trait LodashFindFrom2x1[T] extends StObject {
   
   def apply(fromIndex: Double): js.UndefOr[T] = js.native
   def apply(fromIndex: Double, collection: js.Object): js.UndefOr[T] = js.native

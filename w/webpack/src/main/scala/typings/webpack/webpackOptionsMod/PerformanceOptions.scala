@@ -3,12 +3,13 @@ package typings.webpack.webpackOptionsMod
 import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackStrings.error
 import typings.webpack.webpackStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerformanceOptions extends js.Object {
+trait PerformanceOptions extends StObject {
   
   /**
   	 * Filter function to select assets that are checked
@@ -39,42 +40,30 @@ object PerformanceOptions {
   }
   
   @scala.inline
-  implicit class PerformanceOptionsOps[Self <: PerformanceOptions] (val x: Self) extends AnyVal {
+  implicit class PerformanceOptionsMutableBuilder[Self <: PerformanceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetFilter(value: js.Function): Self = StObject.set(x, "assetFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetFilterUndefined: Self = StObject.set(x, "assetFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHints(value: `false` | warning | error): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetFilter(value: js.Function): Self = this.set("assetFilter", value.asInstanceOf[js.Any])
+    def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
     @scala.inline
-    def deleteAssetFilter: Self = this.set("assetFilter", js.undefined)
+    def setMaxAssetSize(value: Double): Self = StObject.set(x, "maxAssetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHints(value: `false` | warning | error): Self = this.set("hints", value.asInstanceOf[js.Any])
+    def setMaxAssetSizeUndefined: Self = StObject.set(x, "maxAssetSize", js.undefined)
     
     @scala.inline
-    def deleteHints: Self = this.set("hints", js.undefined)
+    def setMaxEntrypointSize(value: Double): Self = StObject.set(x, "maxEntrypointSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAssetSize(value: Double): Self = this.set("maxAssetSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAssetSize: Self = this.set("maxAssetSize", js.undefined)
-    
-    @scala.inline
-    def setMaxEntrypointSize(value: Double): Self = this.set("maxEntrypointSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxEntrypointSize: Self = this.set("maxEntrypointSize", js.undefined)
+    def setMaxEntrypointSizeUndefined: Self = StObject.set(x, "maxEntrypointSize", js.undefined)
   }
 }

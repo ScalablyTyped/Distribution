@@ -1,12 +1,13 @@
 package typings.mongodb.anon
 
 import typings.mongodb.mod.MetaSortOperators
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Meta extends js.Object {
+trait Meta extends StObject {
   
   @JSName("$meta")
   var $meta: js.UndefOr[MetaSortOperators] = js.native
@@ -20,24 +21,12 @@ object Meta {
   }
   
   @scala.inline
-  implicit class MetaOps[Self <: Meta] (val x: Self) extends AnyVal {
+  implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$meta(value: MetaSortOperators): Self = StObject.set(x, "$meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set$meta(value: MetaSortOperators): Self = this.set("$meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$meta: Self = this.set("$meta", js.undefined)
+    def set$metaUndefined: Self = StObject.set(x, "$meta", js.undefined)
   }
 }

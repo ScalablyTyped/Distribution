@@ -1,13 +1,18 @@
 package typings.ol
 
 import typings.ol.projMod.TransformFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/renderer/canvas/VectorLayer", JSImport.Namespace)
-@js.native
-object vectorLayerMod extends js.Object {
+object vectorLayerMod {
+  
+  @JSImport("ol/renderer/canvas/VectorLayer", JSImport.Default)
+  @js.native
+  class default protected () extends CanvasVectorLayerRenderer {
+    def this(vectorLayer: typings.ol.vectorMod.default) = this()
+  }
   
   @js.native
   trait CanvasVectorLayerRenderer
@@ -39,10 +44,5 @@ object vectorLayerMod extends js.Object {
       builderGroup: typings.ol.builderGroupMod.default,
       opt_transform: TransformFunction
     ): Boolean = js.native
-  }
-  
-  @js.native
-  class default protected () extends CanvasVectorLayerRenderer {
-    def this(vectorLayer: typings.ol.vectorMod.default) = this()
   }
 }

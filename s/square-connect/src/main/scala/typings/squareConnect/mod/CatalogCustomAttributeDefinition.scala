@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogCustomAttributeDefinition")
 @js.native
-class CatalogCustomAttributeDefinition () extends js.Object {
+class CatalogCustomAttributeDefinition () extends StObject {
   
   /**
     * The set of Catalog Object Types that this Custom Attribute may be applied to.

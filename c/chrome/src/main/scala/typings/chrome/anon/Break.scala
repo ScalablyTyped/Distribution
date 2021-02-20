@@ -9,12 +9,13 @@ import typings.chrome.chromeStrings.overrun
 import typings.chrome.chromeStrings.parity_error
 import typings.chrome.chromeStrings.system_error
 import typings.chrome.chromeStrings.timeout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Break extends js.Object {
+trait Break extends StObject {
   
   /* The device detected a break condition. */
   var break: typings.chrome.chromeStrings.break = js.native
@@ -62,45 +63,33 @@ object Break {
   }
   
   @scala.inline
-  implicit class BreakOps[Self <: Break] (val x: Self) extends AnyVal {
+  implicit class BreakMutableBuilder[Self <: Break] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreak(value: break): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuffer_overflow(value: buffer_overflow): Self = StObject.set(x, "buffer_overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice_lost(value: device_lost): Self = StObject.set(x, "device_lost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreak(value: break): Self = this.set("break", value.asInstanceOf[js.Any])
+    def setDisconnected(value: disconnected): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffer_overflow(value: buffer_overflow): Self = this.set("buffer_overflow", value.asInstanceOf[js.Any])
+    def setFrame_error(value: frame_error): Self = StObject.set(x, "frame_error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice_lost(value: device_lost): Self = this.set("device_lost", value.asInstanceOf[js.Any])
+    def setOverrun(value: overrun): Self = StObject.set(x, "overrun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisconnected(value: disconnected): Self = this.set("disconnected", value.asInstanceOf[js.Any])
+    def setParity_error(value: parity_error): Self = StObject.set(x, "parity_error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrame_error(value: frame_error): Self = this.set("frame_error", value.asInstanceOf[js.Any])
+    def setSystem_error(value: system_error): Self = StObject.set(x, "system_error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrun(value: overrun): Self = this.set("overrun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParity_error(value: parity_error): Self = this.set("parity_error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystem_error(value: system_error): Self = this.set("system_error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: timeout): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: timeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

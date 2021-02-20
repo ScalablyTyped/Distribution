@@ -1,11 +1,12 @@
 package typings.requirejs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Require extends js.Object {
+trait Require extends StObject {
   
   /**
     * CommonJS require call

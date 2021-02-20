@@ -2,17 +2,17 @@ package typings.opentelemetryApi
 
 import typings.opentelemetryApi.meterMod.Meter
 import typings.opentelemetryApi.meterProviderMod.MeterProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/api/build/src/api/metrics", JSImport.Namespace)
-@js.native
-object metricsMod extends js.Object {
+object metricsMod {
   
+  @JSImport("@opentelemetry/api/build/src/api/metrics", "MetricsAPI")
   @js.native
   /** Empty private constructor prevents end users from constructing a new instance of the API */
-  class MetricsAPI protected () extends js.Object {
+  class MetricsAPI protected () extends StObject {
     
     /** Remove the global meter provider */
     def disable(): Unit = js.native
@@ -34,12 +34,21 @@ object metricsMod extends js.Object {
     def setGlobalMeterProvider(provider: MeterProvider): MeterProvider = js.native
   }
   /* static members */
-  @js.native
-  object MetricsAPI extends js.Object {
+  object MetricsAPI {
     
-    var _instance: js.Any = js.native
+    @JSImport("@opentelemetry/api/build/src/api/metrics", "MetricsAPI")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@opentelemetry/api/build/src/api/metrics", "MetricsAPI._instance")
+    @js.native
+    def _instance: js.Any = js.native
+    @scala.inline
+    def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /** Get the singleton instance of the Metrics API */
+    @JSImport("@opentelemetry/api/build/src/api/metrics", "MetricsAPI.getInstance")
+    @js.native
     def getInstance(): MetricsAPI = js.native
   }
 }

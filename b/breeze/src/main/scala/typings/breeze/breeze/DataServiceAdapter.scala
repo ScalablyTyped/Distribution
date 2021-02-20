@@ -2,12 +2,13 @@ package typings.breeze.breeze
 
 import typings.breeze.anon.InterfaceName
 import typings.breeze.anon.ResourceName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataServiceAdapter extends js.Object {
+trait DataServiceAdapter extends StObject {
   
   var JsonResultsAdapter: typings.breeze.breeze.JsonResultsAdapter = js.native
   
@@ -37,36 +38,24 @@ object DataServiceAdapter {
   }
   
   @scala.inline
-  implicit class DataServiceAdapterOps[Self <: DataServiceAdapter] (val x: Self) extends AnyVal {
+  implicit class DataServiceAdapterMutableBuilder[Self <: DataServiceAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckForRecomposition(value: InterfaceName => Unit): Self = StObject.set(x, "checkForRecomposition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecuteQuery(value: typings.breeze.anon.DataService => js.Promise[_]): Self = StObject.set(x, "executeQuery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFetchMetadata(value: (MetadataStore, DataService) => js.Promise[_]): Self = StObject.set(x, "fetchMetadata", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setJsonResultsAdapter(value: JsonResultsAdapter): Self = this.set("JsonResultsAdapter", value.asInstanceOf[js.Any])
+    def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckForRecomposition(value: InterfaceName => Unit): Self = this.set("checkForRecomposition", js.Any.fromFunction1(value))
+    def setJsonResultsAdapter(value: JsonResultsAdapter): Self = StObject.set(x, "JsonResultsAdapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecuteQuery(value: typings.breeze.anon.DataService => js.Promise[_]): Self = this.set("executeQuery", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFetchMetadata(value: (MetadataStore, DataService) => js.Promise[_]): Self = this.set("fetchMetadata", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInitialize(value: () => Unit): Self = this.set("initialize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSaveChanges(value: (ResourceName, js.Object) => js.Promise[SaveResult]): Self = this.set("saveChanges", js.Any.fromFunction2(value))
+    def setSaveChanges(value: (ResourceName, js.Object) => js.Promise[SaveResult]): Self = StObject.set(x, "saveChanges", js.Any.fromFunction2(value))
   }
 }

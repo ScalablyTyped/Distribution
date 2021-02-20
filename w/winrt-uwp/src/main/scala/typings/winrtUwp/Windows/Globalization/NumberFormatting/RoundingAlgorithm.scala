@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Globalization.NumberFormatting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RoundingAlgorithm extends js.Object
+sealed trait RoundingAlgorithm extends StObject
 /** Specifies the algorithm used to round numbers. */
 @JSGlobal("Windows.Globalization.NumberFormatting.RoundingAlgorithm")
 @js.native
-object RoundingAlgorithm extends js.Object {
+object RoundingAlgorithm extends StObject {
   
   /** No rounding is performed. */
   @js.native

@@ -6,16 +6,16 @@ import typings.gremlin.mod.process.TraversalStrategy
 import typings.gremlin.mod.process.Traversal_
 import typings.gremlin.mod.process.Traverser
 import typings.std.MapConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gremlin", "driver")
-@js.native
-object driver extends js.Object {
+object driver {
   
+  @JSImport("gremlin", "driver.Client")
   @js.native
-  class Client protected () extends js.Object {
+  class Client protected () extends StObject {
     def this(url: String) = this()
     def this(url: String, options: js.Any) = this()
     
@@ -29,6 +29,7 @@ object driver extends js.Object {
     def submit(message: Bytecode, bindings: js.Any): js.Promise[_] = js.native
   }
   
+  @JSImport("gremlin", "driver.DriverRemoteConnection")
   @js.native
   class DriverRemoteConnection protected () extends RemoteConnection {
     def this(url: String) = this()
@@ -41,8 +42,9 @@ object driver extends js.Object {
     def removeListener(event: js.Symbol, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   }
   
+  @JSImport("gremlin", "driver.RemoteConnection")
   @js.native
-  class RemoteConnection protected () extends js.Object {
+  class RemoteConnection protected () extends StObject {
     def this(url: String) = this()
     
     def close(): js.Promise[Unit] = js.native
@@ -52,6 +54,7 @@ object driver extends js.Object {
     def submit(bytecode: Bytecode): js.Promise[_] = js.native
   }
   
+  @JSImport("gremlin", "driver.RemoteStrategy")
   @js.native
   class RemoteStrategy protected () extends TraversalStrategy {
     def this(connection: RemoteConnection) = this()
@@ -60,6 +63,7 @@ object driver extends js.Object {
     def apply(traversal: RemoteTraversal): js.Promise[_] = js.native
   }
   
+  @JSImport("gremlin", "driver.RemoteTraversal")
   @js.native
   class RemoteTraversal () extends Traversal_ {
     def this(traversers: js.Array[Traverser]) = this()
@@ -67,8 +71,9 @@ object driver extends js.Object {
     def this(traversers: js.Array[Traverser], sideEffects: TraversalSideEffects) = this()
   }
   
+  @JSImport("gremlin", "driver.ResultSet")
   @js.native
-  class ResultSet protected () extends js.Object {
+  class ResultSet protected () extends StObject {
     def this(items: js.Array[_]) = this()
     def this(items: js.Array[_], attributes: MapConstructor) = this()
     
@@ -77,16 +82,17 @@ object driver extends js.Object {
     def toArray(): js.Array[_] = js.native
   }
   
-  @js.native
-  object auth extends js.Object {
+  object auth {
     
+    @JSImport("gremlin", "driver.auth.Authenticator")
     @js.native
-    class Authenticator () extends js.Object {
+    class Authenticator () extends StObject {
       def this(options: js.Any) = this()
       
       def evaluateChallenge(challenge: String): js.Any = js.native
     }
     
+    @JSImport("gremlin", "driver.auth.PlainTextSaslAuthenticator")
     @js.native
     class PlainTextSaslAuthenticator protected () extends Authenticator {
       def this(username: String, password: String) = this()

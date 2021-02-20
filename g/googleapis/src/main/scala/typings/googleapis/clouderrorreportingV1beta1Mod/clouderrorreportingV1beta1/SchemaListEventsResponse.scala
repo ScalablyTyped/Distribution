@@ -1,5 +1,6 @@
 package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains a set of requested error events.
   */
 @js.native
-trait SchemaListEventsResponse extends js.Object {
+trait SchemaListEventsResponse extends StObject {
   
   /**
     * The error events which match the given request.
@@ -37,39 +38,27 @@ object SchemaListEventsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListEventsResponseOps[Self <: SchemaListEventsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListEventsResponseMutableBuilder[Self <: SchemaListEventsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorEvents(value: js.Array[SchemaErrorEvent]): Self = StObject.set(x, "errorEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorEventsUndefined: Self = StObject.set(x, "errorEvents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorEventsVarargs(value: SchemaErrorEvent*): Self = StObject.set(x, "errorEvents", js.Array(value :_*))
     
     @scala.inline
-    def setErrorEventsVarargs(value: SchemaErrorEvent*): Self = this.set("errorEvents", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorEvents(value: js.Array[SchemaErrorEvent]): Self = this.set("errorEvents", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteErrorEvents: Self = this.set("errorEvents", js.undefined)
+    def setTimeRangeBegin(value: String): Self = StObject.set(x, "timeRangeBegin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTimeRangeBegin(value: String): Self = this.set("timeRangeBegin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeRangeBegin: Self = this.set("timeRangeBegin", js.undefined)
+    def setTimeRangeBeginUndefined: Self = StObject.set(x, "timeRangeBegin", js.undefined)
   }
 }

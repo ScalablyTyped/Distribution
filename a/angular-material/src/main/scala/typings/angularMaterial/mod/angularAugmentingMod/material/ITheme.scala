@@ -1,11 +1,12 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITheme extends js.Object {
+trait ITheme extends StObject {
   
   def accentPalette(name: String): ITheme = js.native
   def accentPalette(name: String, hues: IThemeHues): ITheme = js.native

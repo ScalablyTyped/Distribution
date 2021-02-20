@@ -1,11 +1,12 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GEView extends js.Object {
+trait GEView extends StObject {
   
   /**
     * Creates and returns a new KmlCamera object, initialized to the current camera position and orientation.
@@ -86,36 +87,24 @@ object GEView {
   }
   
   @scala.inline
-  implicit class GEViewOps[Self <: GEView] (val x: Self) extends AnyVal {
+  implicit class GEViewMutableBuilder[Self <: GEView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyAsCamera(value: KmlAltitudeModeEnum => KmlCamera): Self = StObject.set(x, "copyAsCamera", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyAsLookAt(value: KmlAltitudeModeEnum => KmlLookAt): Self = StObject.set(x, "copyAsLookAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetViewportGlobeBounds(value: () => KmlLatLonBox): Self = StObject.set(x, "getViewportGlobeBounds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopyAsCamera(value: KmlAltitudeModeEnum => KmlCamera): Self = this.set("copyAsCamera", js.Any.fromFunction1(value))
+    def setHitTest(value: (Double, KmlUnitsEnum, Double, KmlUnitsEnum, GEHitTestModeEnum) => GEHitTestResult): Self = StObject.set(x, "hitTest", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setCopyAsLookAt(value: KmlAltitudeModeEnum => KmlLookAt): Self = this.set("copyAsLookAt", js.Any.fromFunction1(value))
+    def setProject(value: (Double, Double, Double, KmlAltitudeModeEnum) => KmlVec2): Self = StObject.set(x, "project", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetViewportGlobeBounds(value: () => KmlLatLonBox): Self = this.set("getViewportGlobeBounds", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHitTest(value: (Double, KmlUnitsEnum, Double, KmlUnitsEnum, GEHitTestModeEnum) => GEHitTestResult): Self = this.set("hitTest", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setProject(value: (Double, Double, Double, KmlAltitudeModeEnum) => KmlVec2): Self = this.set("project", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSetAbstractView(value: KmlAbstractView => Unit): Self = this.set("setAbstractView", js.Any.fromFunction1(value))
+    def setSetAbstractView(value: KmlAbstractView => Unit): Self = StObject.set(x, "setAbstractView", js.Any.fromFunction1(value))
   }
 }

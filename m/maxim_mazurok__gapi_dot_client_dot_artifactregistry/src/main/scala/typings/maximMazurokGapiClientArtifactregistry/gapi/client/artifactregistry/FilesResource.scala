@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientArtifactregistry.anon.Accesstoken
 import typings.maximMazurokGapiClientArtifactregistry.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilesResource extends js.Object {
+trait FilesResource extends StObject {
   
   /** Gets a file. */
   def get(): Request[File] = js.native

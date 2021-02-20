@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the settings of footnotes or endnotes in a (text) document. */
 @js.native
-trait FootnoteSettings extends js.Object {
+trait FootnoteSettings extends StObject {
   
   /**
     * contains the name of the character style that is used for footnote/endnote anchor in the text.
@@ -86,54 +87,42 @@ object FootnoteSettings {
   }
   
   @scala.inline
-  implicit class FootnoteSettingsOps[Self <: FootnoteSettings] (val x: Self) extends AnyVal {
+  implicit class FootnoteSettingsMutableBuilder[Self <: FootnoteSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorCharStyleName(value: String): Self = StObject.set(x, "AnchorCharStyleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginNotice(value: String): Self = StObject.set(x, "BeginNotice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharStyleName(value: String): Self = StObject.set(x, "CharStyleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorCharStyleName(value: String): Self = this.set("AnchorCharStyleName", value.asInstanceOf[js.Any])
+    def setEndNotice(value: String): Self = StObject.set(x, "EndNotice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginNotice(value: String): Self = this.set("BeginNotice", value.asInstanceOf[js.Any])
+    def setFootnoteCounting(value: Double): Self = StObject.set(x, "FootnoteCounting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharStyleName(value: String): Self = this.set("CharStyleName", value.asInstanceOf[js.Any])
+    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndNotice(value: String): Self = this.set("EndNotice", value.asInstanceOf[js.Any])
+    def setPageStyleName(value: String): Self = StObject.set(x, "PageStyleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteCounting(value: Double): Self = this.set("FootnoteCounting", value.asInstanceOf[js.Any])
+    def setParaStyleName(value: String): Self = StObject.set(x, "ParaStyleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberingType(value: Double): Self = this.set("NumberingType", value.asInstanceOf[js.Any])
+    def setPositionEndOfDoc(value: Boolean): Self = StObject.set(x, "PositionEndOfDoc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageStyleName(value: String): Self = this.set("PageStyleName", value.asInstanceOf[js.Any])
+    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleName(value: String): Self = this.set("ParaStyleName", value.asInstanceOf[js.Any])
+    def setStartAt(value: Double): Self = StObject.set(x, "StartAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionEndOfDoc(value: Boolean): Self = this.set("PositionEndOfDoc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefix(value: String): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartAt(value: Double): Self = this.set("StartAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuffix(value: String): Self = this.set("Suffix", value.asInstanceOf[js.Any])
+    def setSuffix(value: String): Self = StObject.set(x, "Suffix", value.asInstanceOf[js.Any])
   }
 }

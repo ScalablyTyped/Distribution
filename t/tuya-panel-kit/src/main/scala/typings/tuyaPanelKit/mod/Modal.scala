@@ -3,28 +3,58 @@ package typings.tuyaPanelKit.mod
 import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tuya-panel-kit", "Modal")
 @js.native
-class Modal ()
-  extends Component[ModalProps, js.Object, js.Any]
+class Modal protected ()
+  extends Component[ModalProps, js.Object, js.Any] {
+  def this(props: ModalProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: ModalProps, context: js.Any) = this()
+}
 /* static members */
-@JSImport("tuya-panel-kit", "Modal")
-@js.native
-object Modal extends js.Object {
+object Modal {
   
-  var Countdown: ElementType[PopUpCountdownProps] = js.native
+  @JSImport("tuya-panel-kit", "Modal")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var DatePicker: ElementType[PopupDatePickerProps] = js.native
+  @JSImport("tuya-panel-kit", "Modal.Countdown")
+  @js.native
+  def Countdown: ElementType[PopUpCountdownProps] = js.native
+  @scala.inline
+  def Countdown_=(x: ElementType[PopUpCountdownProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Countdown")(x.asInstanceOf[js.Any])
   
-  var List: ElementType[PopUpListProps] = js.native
+  @JSImport("tuya-panel-kit", "Modal.DatePicker")
+  @js.native
+  def DatePicker: ElementType[PopupDatePickerProps] = js.native
+  @scala.inline
+  def DatePicker_=(x: ElementType[PopupDatePickerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DatePicker")(x.asInstanceOf[js.Any])
   
-  var Picker: ElementType[PopupPickerProps] = js.native
+  @JSImport("tuya-panel-kit", "Modal.List")
+  @js.native
+  def List: ElementType[PopUpListProps] = js.native
+  @scala.inline
+  def List_=(x: ElementType[PopUpListProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("List")(x.asInstanceOf[js.Any])
   
+  @JSImport("tuya-panel-kit", "Modal.Picker")
+  @js.native
+  def Picker: ElementType[PopupPickerProps] = js.native
+  @scala.inline
+  def Picker_=(x: ElementType[PopupPickerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Picker")(x.asInstanceOf[js.Any])
+  
+  @JSImport("tuya-panel-kit", "Modal.close")
+  @js.native
   def close(): Unit = js.native
   
+  @JSImport("tuya-panel-kit", "Modal.render")
+  @js.native
   def render(option: ReactNode, props: ModalProps): Unit = js.native
 }

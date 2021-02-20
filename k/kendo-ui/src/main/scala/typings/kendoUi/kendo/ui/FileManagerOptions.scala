@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.FileManagerDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileManagerOptions extends js.Object {
+trait FileManagerOptions extends StObject {
   
   var breadcrumb: js.UndefOr[Boolean | FileManagerBreadcrumb] = js.native
   
@@ -65,162 +66,150 @@ object FileManagerOptions {
   }
   
   @scala.inline
-  implicit class FileManagerOptionsOps[Self <: FileManagerOptions] (val x: Self) extends AnyVal {
+  implicit class FileManagerOptionsMutableBuilder[Self <: FileManagerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreadcrumb(value: Boolean | FileManagerBreadcrumb): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreadcrumbUndefined: Self = StObject.set(x, "breadcrumb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextMenu(value: Boolean | FileManagerContextMenu): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreadcrumb(value: Boolean | FileManagerBreadcrumb): Self = this.set("breadcrumb", value.asInstanceOf[js.Any])
+    def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
     @scala.inline
-    def deleteBreadcrumb: Self = this.set("breadcrumb", js.undefined)
+    def setDataBinding(value: /* e */ FileManagerEvent => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContextMenu(value: Boolean | FileManagerContextMenu): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def deleteContextMenu: Self = this.set("contextMenu", js.undefined)
+    def setDataBound(value: /* e */ FileManagerEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataBinding(value: /* e */ FileManagerEvent => Unit): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    def setDataSource(value: js.Any | FileManagerDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: /* e */ FileManagerEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDialogs(value: FileManagerDialogs): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any | FileManagerDataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialogs(value: FileManagerDialogs): Self = this.set("dialogs", value.asInstanceOf[js.Any])
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteDialogs: Self = this.set("dialogs", js.undefined)
+    def setDrop(value: /* e */ FileManagerEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setError(value: /* e */ FileManagerEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrop(value: /* e */ FileManagerEvent => Unit): Self = this.set("drop", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDrop: Self = this.set("drop", js.undefined)
+    def setExecute(value: /* e */ FileManagerEvent => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: /* e */ FileManagerEvent => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecute(value: /* e */ FileManagerEvent => Unit): Self = this.set("execute", js.Any.fromFunction1(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteExecute: Self = this.set("execute", js.undefined)
+    def setInitialView(value: String): Self = StObject.set(x, "initialView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setInitialViewUndefined: Self = StObject.set(x, "initialView", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMessages(value: FileManagerMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialView(value: String): Self = this.set("initialView", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteInitialView: Self = this.set("initialView", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: FileManagerMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setNavigate(value: /* e */ FileManagerEvent => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOpen(value: /* e */ FileManagerEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNavigate(value: /* e */ FileManagerEvent => Unit): Self = this.set("navigate", js.Any.fromFunction1(value))
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteNavigate: Self = this.set("navigate", js.undefined)
+    def setPreviewPane(value: FileManagerPreviewPane): Self = StObject.set(x, "previewPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: /* e */ FileManagerEvent => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    def setPreviewPaneUndefined: Self = StObject.set(x, "previewPane", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewPane(value: FileManagerPreviewPane): Self = this.set("previewPane", value.asInstanceOf[js.Any])
+    def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
     @scala.inline
-    def deletePreviewPane: Self = this.set("previewPane", js.undefined)
+    def setSelect(value: /* e */ FileManagerEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteResizable: Self = this.set("resizable", js.undefined)
+    def setToolbar(value: Boolean | FileManagerToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: /* e */ FileManagerEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setUpload(value: js.Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolbar(value: Boolean | FileManagerToolbar): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     
     @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpload(value: js.Any): Self = this.set("upload", value.asInstanceOf[js.Any])
+    def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
     
     @scala.inline
-    def deleteUpload: Self = this.set("upload", js.undefined)
+    def setViews(value: FileManagerViews): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadUrl(value: String): Self = this.set("uploadUrl", value.asInstanceOf[js.Any])
+    def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
     @scala.inline
-    def deleteUploadUrl: Self = this.set("uploadUrl", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViews(value: FileManagerViews): Self = this.set("views", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViews: Self = this.set("views", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersReceipt extends js.Object {
+trait GoogleActionsV2OrdersReceipt extends StObject {
   
   /**
     * Confirmed order id when order has been received by the integrator. This is
@@ -37,30 +38,18 @@ object GoogleActionsV2OrdersReceipt {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersReceiptOps[Self <: GoogleActionsV2OrdersReceipt] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersReceiptMutableBuilder[Self <: GoogleActionsV2OrdersReceipt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirmedActionOrderId(value: String): Self = StObject.set(x, "confirmedActionOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfirmedActionOrderIdUndefined: Self = StObject.set(x, "confirmedActionOrderId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserVisibleOrderId(value: String): Self = StObject.set(x, "userVisibleOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmedActionOrderId(value: String): Self = this.set("confirmedActionOrderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfirmedActionOrderId: Self = this.set("confirmedActionOrderId", js.undefined)
-    
-    @scala.inline
-    def setUserVisibleOrderId(value: String): Self = this.set("userVisibleOrderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserVisibleOrderId: Self = this.set("userVisibleOrderId", js.undefined)
+    def setUserVisibleOrderIdUndefined: Self = StObject.set(x, "userVisibleOrderId", js.undefined)
   }
 }

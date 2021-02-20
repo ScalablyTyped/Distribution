@@ -1,11 +1,12 @@
 package typings.rx.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Notification[T] extends js.Object {
+trait Notification[T] extends StObject {
   
   /**
     * Invokes the delegate corresponding to the notification or the observer's method corresponding to the notification and returns the produced result.

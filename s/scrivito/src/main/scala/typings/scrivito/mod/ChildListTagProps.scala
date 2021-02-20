@@ -1,11 +1,12 @@
 package typings.scrivito.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChildListTagProps extends js.Object {
+trait ChildListTagProps extends StObject {
   
   var parent: js.UndefOr[Obj] = js.native
   
@@ -23,36 +24,24 @@ object ChildListTagProps {
   }
   
   @scala.inline
-  implicit class ChildListTagPropsOps[Self <: ChildListTagProps] (val x: Self) extends AnyVal {
+  implicit class ChildListTagPropsMutableBuilder[Self <: ChildListTagProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParent(value: Obj): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRenderChild(value: /* child */ js.Any => _): Self = StObject.set(x, "renderChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParent(value: Obj): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setRenderChildUndefined: Self = StObject.set(x, "renderChild", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderChild(value: /* child */ js.Any => _): Self = this.set("renderChild", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRenderChild: Self = this.set("renderChild", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

@@ -1,18 +1,16 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import typings.coreJs.anon.Typeofcore
 import typings.coreJs.core.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/date/add-locale", JSImport.Namespace)
-@js.native
-object dateAddLocaleMod
-  extends TopLevel[
-      js.Function2[
-        /* lang */ java.lang.String, 
-        /* locale */ Locale, 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof core */ js.Any
-      ]
-    ]
+object dateAddLocaleMod {
+  
+  /* was `typeof core.addLocale` */
+  @JSImport("core-js/library/fn/date/add-locale", JSImport.Namespace)
+  @js.native
+  def apply(lang: java.lang.String, locale: Locale): Typeofcore = js.native
+}

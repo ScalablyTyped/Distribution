@@ -1,5 +1,6 @@
 package typings.extjs.global.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Number ()
   extends typings.extjs.Ext.Number
 /* static members */
-@JSGlobal("Ext.Number")
-@js.native
-object Number extends js.Object {
+object Number {
   
   /** [Method] Checks whether or not the passed number is within a desired range
     * @param number Number The number to check
@@ -19,20 +18,40 @@ object Number extends js.Object {
     * @param max Number The maximum number in the range
     * @returns Number The constrained value if outside the range, otherwise the current value
     */
+  @JSGlobal("Ext.Number.constrain")
+  @js.native
   def constrain(): Double = js.native
+  @JSGlobal("Ext.Number.constrain")
+  @js.native
   def constrain(number: js.UndefOr[scala.Nothing], min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
+  @JSGlobal("Ext.Number.constrain")
+  @js.native
   def constrain(number: js.UndefOr[scala.Nothing], min: Double): Double = js.native
+  @JSGlobal("Ext.Number.constrain")
+  @js.native
   def constrain(number: js.UndefOr[scala.Nothing], min: Double, max: Double): Double = js.native
+  @JSGlobal("Ext.Number.constrain")
+  @js.native
   def constrain(number: Double): Double = js.native
+  @JSGlobal("Ext.Number.constrain")
+  @js.native
   def constrain(number: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
+  @JSGlobal("Ext.Number.constrain")
+  @js.native
   def constrain(number: Double, min: Double): Double = js.native
+  @JSGlobal("Ext.Number.constrain")
+  @js.native
   def constrain(number: Double, min: Double, max: Double): Double = js.native
   
   /** [Method] Corrects floating point numbers that overflow to a non precise value because of their floating nature for example 0
     * @param The Number number
     * @returns Number The correctly rounded number
     */
+  @JSGlobal("Ext.Number.correctFloat")
+  @js.native
   def correctFloat(): Double = js.native
+  @JSGlobal("Ext.Number.correctFloat")
+  @js.native
   def correctFloat(The: Double): Double = js.native
   
   /** [Method] Validate that a value is numeric and convert it to a number if necessary
@@ -40,9 +59,17 @@ object Number extends js.Object {
     * @param defaultValue Number The value to return if the original value is non-numeric
     * @returns Number value, if numeric, defaultValue otherwise
     */
+  @JSGlobal("Ext.Number.from")
+  @js.native
   def from(): Double = js.native
+  @JSGlobal("Ext.Number.from")
+  @js.native
   def from(value: js.UndefOr[scala.Nothing], defaultValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.from")
+  @js.native
   def from(value: js.Any): Double = js.native
+  @JSGlobal("Ext.Number.from")
+  @js.native
   def from(value: js.Any, defaultValue: Double): Double = js.native
   
   /** [Method] Returns a random integer between the specified range inclusive
@@ -50,9 +77,17 @@ object Number extends js.Object {
     * @param to Number Highst value to return.
     * @returns Number A random integer within the specified range.
     */
+  @JSGlobal("Ext.Number.randomInt")
+  @js.native
   def randomInt(): Double = js.native
+  @JSGlobal("Ext.Number.randomInt")
+  @js.native
   def randomInt(from: js.UndefOr[scala.Nothing], to: Double): Double = js.native
+  @JSGlobal("Ext.Number.randomInt")
+  @js.native
   def randomInt(from: Double): Double = js.native
+  @JSGlobal("Ext.Number.randomInt")
+  @js.native
   def randomInt(from: Double, to: Double): Double = js.native
   
   /** [Method] Snaps the passed number between stopping points based upon a passed increment value
@@ -62,41 +97,73 @@ object Number extends js.Object {
     * @param maxValue Number The maximum value to which the returned value must be constrained. Overrides the increment.
     * @returns Number The value of the nearest snap target.
     */
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(
     value: js.UndefOr[scala.Nothing],
     increment: js.UndefOr[scala.Nothing],
     minValue: js.UndefOr[scala.Nothing],
     maxValue: Double
   ): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: js.UndefOr[scala.Nothing], increment: js.UndefOr[scala.Nothing], minValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(
     value: js.UndefOr[scala.Nothing],
     increment: js.UndefOr[scala.Nothing],
     minValue: Double,
     maxValue: Double
   ): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: js.UndefOr[scala.Nothing], increment: Double): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(
     value: js.UndefOr[scala.Nothing],
     increment: Double,
     minValue: js.UndefOr[scala.Nothing],
     maxValue: Double
   ): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: js.UndefOr[scala.Nothing], increment: Double, minValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: js.UndefOr[scala.Nothing], increment: Double, minValue: Double, maxValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: Double): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(
     value: Double,
     increment: js.UndefOr[scala.Nothing],
     minValue: js.UndefOr[scala.Nothing],
     maxValue: Double
   ): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: Double, increment: js.UndefOr[scala.Nothing], minValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: Double, increment: js.UndefOr[scala.Nothing], minValue: Double, maxValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: Double, increment: Double): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: Double, increment: Double, minValue: js.UndefOr[scala.Nothing], maxValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: Double, increment: Double, minValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snap")
+  @js.native
   def snap(value: Double, increment: Double, minValue: Double, maxValue: Double): Double = js.native
   
   /** [Method] Snaps the passed number between stopping points based upon a passed increment value
@@ -106,49 +173,89 @@ object Number extends js.Object {
     * @param maxValue Number The maximum value to which the returned value must be constrained.
     * @returns Number The value of the nearest snap target.
     */
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(
     value: js.UndefOr[scala.Nothing],
     increment: js.UndefOr[scala.Nothing],
     minValue: js.UndefOr[scala.Nothing],
     maxValue: Double
   ): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: js.UndefOr[scala.Nothing], increment: js.UndefOr[scala.Nothing], minValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(
     value: js.UndefOr[scala.Nothing],
     increment: js.UndefOr[scala.Nothing],
     minValue: Double,
     maxValue: Double
   ): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: js.UndefOr[scala.Nothing], increment: Double): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(
     value: js.UndefOr[scala.Nothing],
     increment: Double,
     minValue: js.UndefOr[scala.Nothing],
     maxValue: Double
   ): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: js.UndefOr[scala.Nothing], increment: Double, minValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: js.UndefOr[scala.Nothing], increment: Double, minValue: Double, maxValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: Double): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(
     value: Double,
     increment: js.UndefOr[scala.Nothing],
     minValue: js.UndefOr[scala.Nothing],
     maxValue: Double
   ): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: Double, increment: js.UndefOr[scala.Nothing], minValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: Double, increment: js.UndefOr[scala.Nothing], minValue: Double, maxValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: Double, increment: Double): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: Double, increment: Double, minValue: js.UndefOr[scala.Nothing], maxValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: Double, increment: Double, minValue: Double): Double = js.native
+  @JSGlobal("Ext.Number.snapInRange")
+  @js.native
   def snapInRange(value: Double, increment: Double, minValue: Double, maxValue: Double): Double = js.native
   
   /** [Method] Formats a number using fixed point notation
     * @param value Number The number to format
     * @param precision Number The number of digits to show after the decimal point
     */
+  @JSGlobal("Ext.Number.toFixed")
+  @js.native
   def toFixed(): Unit = js.native
+  @JSGlobal("Ext.Number.toFixed")
+  @js.native
   def toFixed(value: js.UndefOr[scala.Nothing], precision: Double): Unit = js.native
+  @JSGlobal("Ext.Number.toFixed")
+  @js.native
   def toFixed(value: Double): Unit = js.native
+  @JSGlobal("Ext.Number.toFixed")
+  @js.native
   def toFixed(value: Double, precision: Double): Unit = js.native
 }

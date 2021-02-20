@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SSESpecification extends js.Object {
+trait SSESpecification extends StObject {
   
   /**
     * Indicates whether server-side encryption is done using an AWS managed CMK or an AWS owned CMK. If enabled (true), server-side encryption type is set to KMS and an AWS managed CMK is used (AWS KMS charges apply). If disabled (false) or not specified, server-side encryption is set to AWS owned CMK.
@@ -31,36 +32,24 @@ object SSESpecification {
   }
   
   @scala.inline
-  implicit class SSESpecificationOps[Self <: SSESpecification] (val x: Self) extends AnyVal {
+  implicit class SSESpecificationMutableBuilder[Self <: SSESpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: SSEEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: SSEEnabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setSSEType(value: SSEType): Self = StObject.set(x, "SSEType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSMasterKeyId(value: KMSMasterKeyId): Self = this.set("KMSMasterKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKMSMasterKeyId: Self = this.set("KMSMasterKeyId", js.undefined)
-    
-    @scala.inline
-    def setSSEType(value: SSEType): Self = this.set("SSEType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSSEType: Self = this.set("SSEType", js.undefined)
+    def setSSETypeUndefined: Self = StObject.set(x, "SSEType", js.undefined)
   }
 }

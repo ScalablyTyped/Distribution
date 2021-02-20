@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoipPool extends js.Object {
+trait CoipPool extends StObject {
   
   /**
     * The ID of the local gateway route table.
@@ -41,54 +42,42 @@ object CoipPool {
   }
   
   @scala.inline
-  implicit class CoipPoolOps[Self <: CoipPool] (val x: Self) extends AnyVal {
+  implicit class CoipPoolMutableBuilder[Self <: CoipPool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalGatewayRouteTableId(value: LocalGatewayRoutetableId): Self = StObject.set(x, "LocalGatewayRouteTableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "LocalGatewayRouteTableId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoolArn(value: ResourceArn): Self = StObject.set(x, "PoolArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalGatewayRouteTableId(value: LocalGatewayRoutetableId): Self = this.set("LocalGatewayRouteTableId", value.asInstanceOf[js.Any])
+    def setPoolArnUndefined: Self = StObject.set(x, "PoolArn", js.undefined)
     
     @scala.inline
-    def deleteLocalGatewayRouteTableId: Self = this.set("LocalGatewayRouteTableId", js.undefined)
+    def setPoolCidrs(value: ValueStringList): Self = StObject.set(x, "PoolCidrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolArn(value: ResourceArn): Self = this.set("PoolArn", value.asInstanceOf[js.Any])
+    def setPoolCidrsUndefined: Self = StObject.set(x, "PoolCidrs", js.undefined)
     
     @scala.inline
-    def deletePoolArn: Self = this.set("PoolArn", js.undefined)
+    def setPoolCidrsVarargs(value: String*): Self = StObject.set(x, "PoolCidrs", js.Array(value :_*))
     
     @scala.inline
-    def setPoolCidrsVarargs(value: String*): Self = this.set("PoolCidrs", js.Array(value :_*))
+    def setPoolId(value: CoipPoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolCidrs(value: ValueStringList): Self = this.set("PoolCidrs", value.asInstanceOf[js.Any])
+    def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
     
     @scala.inline
-    def deletePoolCidrs: Self = this.set("PoolCidrs", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolId(value: CoipPoolId): Self = this.set("PoolId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deletePoolId: Self = this.set("PoolId", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

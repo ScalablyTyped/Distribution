@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesRemoveAttributesInputMod.RemoveA
 import typings.awsSdkClientPinpointBrowser.typesRemoveAttributesOutputMod.RemoveAttributesOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/RemoveAttributesCommand", JSImport.Namespace)
-@js.native
-object removeAttributesCommandMod extends js.Object {
+object removeAttributesCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/RemoveAttributesCommand", "RemoveAttributesCommand")
   @js.native
   class RemoveAttributesCommand protected () extends Command[
           InputTypesUnion, 

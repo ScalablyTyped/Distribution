@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompareFacesRequest extends js.Object {
+trait CompareFacesRequest extends StObject {
   
   /**
     * A filter that specifies a quality bar for how much filtering is done to identify faces. Filtered faces aren't compared. If you specify AUTO, Amazon Rekognition chooses the quality bar. If you specify LOW, MEDIUM, or HIGH, filtering removes all faces that don’t meet the chosen quality bar. The quality bar is based on a variety of common use cases. Low-quality detections can occur for a number of reasons. Some examples are an object that's misidentified as a face, a face that's too blurry, or a face with a pose that's too extreme to use. If you specify NONE, no filtering is performed. The default value is NONE.  To use quality filtering, the collection you are using must be associated with version 3 of the face model or higher.
@@ -36,36 +37,24 @@ object CompareFacesRequest {
   }
   
   @scala.inline
-  implicit class CompareFacesRequestOps[Self <: CompareFacesRequest] (val x: Self) extends AnyVal {
+  implicit class CompareFacesRequestMutableBuilder[Self <: CompareFacesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQualityFilter(value: QualityFilter): Self = StObject.set(x, "QualityFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQualityFilterUndefined: Self = StObject.set(x, "QualityFilter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSimilarityThreshold(value: Percent): Self = StObject.set(x, "SimilarityThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceImage(value: Image): Self = this.set("SourceImage", value.asInstanceOf[js.Any])
+    def setSimilarityThresholdUndefined: Self = StObject.set(x, "SimilarityThreshold", js.undefined)
     
     @scala.inline
-    def setTargetImage(value: Image): Self = this.set("TargetImage", value.asInstanceOf[js.Any])
+    def setSourceImage(value: Image): Self = StObject.set(x, "SourceImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualityFilter(value: QualityFilter): Self = this.set("QualityFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQualityFilter: Self = this.set("QualityFilter", js.undefined)
-    
-    @scala.inline
-    def setSimilarityThreshold(value: Percent): Self = this.set("SimilarityThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimilarityThreshold: Self = this.set("SimilarityThreshold", js.undefined)
+    def setTargetImage(value: Image): Self = StObject.set(x, "TargetImage", value.asInstanceOf[js.Any])
   }
 }

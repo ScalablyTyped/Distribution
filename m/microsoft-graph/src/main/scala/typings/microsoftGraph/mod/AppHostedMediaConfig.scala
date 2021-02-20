@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,27 +20,15 @@ object AppHostedMediaConfig {
   }
   
   @scala.inline
-  implicit class AppHostedMediaConfigOps[Self <: AppHostedMediaConfig] (val x: Self) extends AnyVal {
+  implicit class AppHostedMediaConfigMutableBuilder[Self <: AppHostedMediaConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlob(value: NullableOption[String]): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlobNull: Self = StObject.set(x, "blob", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlob(value: NullableOption[String]): Self = this.set("blob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlob: Self = this.set("blob", js.undefined)
-    
-    @scala.inline
-    def setBlobNull: Self = this.set("blob", null)
+    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
   }
 }

@@ -9,29 +9,40 @@ import typings.typedoc.converterConverterMod.Converter
 import typings.typescript.mod.Node
 import typings.typescript.mod.SyntaxKind
 import typings.typescript.mod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/converter/components", JSImport.Namespace)
-@js.native
-object componentsMod extends js.Object {
+object componentsMod {
   
+  @JSImport("typedoc/dist/lib/converter/components", "Component")
+  @js.native
   def Component(options: ComponentOptions): ClassDecorator = js.native
   
+  @JSImport("typedoc/dist/lib/converter/components", "ConverterComponent")
   @js.native
-  abstract class ConverterComponent () extends AbstractComponent[Converter]
+  abstract class ConverterComponent protected () extends AbstractComponent[Converter] {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Converter) = this()
+  }
   
+  @JSImport("typedoc/dist/lib/converter/components", "ConverterNodeComponent")
   @js.native
-  abstract class ConverterNodeComponent[T /* <: Node */] () extends AbstractComponent[Converter] {
+  abstract class ConverterNodeComponent[T /* <: Node */] protected () extends ConverterComponent {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Converter) = this()
     
     def convert(context: Context, node: T): js.UndefOr[Reflection] = js.native
     
     var supports: js.Array[SyntaxKind] = js.native
   }
   
+  @JSImport("typedoc/dist/lib/converter/components", "ConverterTypeComponent")
   @js.native
-  abstract class ConverterTypeComponent () extends AbstractComponent[Converter] {
+  abstract class ConverterTypeComponent protected () extends ConverterComponent {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Converter) = this()
     
     var priority: Double = js.native
   }
@@ -40,6 +51,7 @@ object componentsMod extends js.Object {
   - typings.typedoc.componentMod.ComponentHost because Already inherited
   - typings.typedoc.utilsEventsMod.EventDispatcher because Already inherited
   - typings.typedoc.componentMod.AbstractComponent because Already inherited
+  - typings.typedoc.componentsMod.ConverterComponent because Already inherited
   - typings.typedoc.componentsMod.ConverterTypeComponent because Already inherited
   - typings.typedoc.componentsMod.TypeNodeConverter because var conflicts: _componentOptions, _componentOwner, _events, _listeners, _listeningTo, _savedListenId, application, componentName, internalOn, priority. Inlined supportsNode, supportsNode, convertNode, convertNode */ @js.native
   trait TypeConverter[T /* <: Type */, N /* <: Node */] extends TypeTypeConverter[T] {

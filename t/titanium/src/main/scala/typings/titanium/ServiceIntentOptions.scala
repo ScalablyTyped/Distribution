@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options passed to <Titanium.Android.createServiceIntent>.
   */
 @js.native
-trait ServiceIntentOptions extends js.Object {
+trait ServiceIntentOptions extends StObject {
   
   /**
     * One of the `START_*` constants from <Titanium.Android> to specify the "stickiness" of the Service when Android shuts down the host application.
@@ -29,30 +30,18 @@ object ServiceIntentOptions {
   }
   
   @scala.inline
-  implicit class ServiceIntentOptionsOps[Self <: ServiceIntentOptions] (val x: Self) extends AnyVal {
+  implicit class ServiceIntentOptionsMutableBuilder[Self <: ServiceIntentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStartMode(value: Double): Self = StObject.set(x, "startMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartModeUndefined: Self = StObject.set(x, "startMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartMode(value: Double): Self = this.set("startMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartMode: Self = this.set("startMode", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

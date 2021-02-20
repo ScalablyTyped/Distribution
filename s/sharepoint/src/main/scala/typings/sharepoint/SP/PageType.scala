@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PageType extends js.Object
+sealed trait PageType extends StObject
 @JSGlobal("SP.PageType")
 @js.native
-object PageType extends js.Object {
+object PageType extends StObject {
   
   @js.native
   sealed trait defaultView extends PageType

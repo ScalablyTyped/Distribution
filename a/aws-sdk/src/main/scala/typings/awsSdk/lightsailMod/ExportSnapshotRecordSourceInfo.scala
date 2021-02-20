@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportSnapshotRecordSourceInfo extends js.Object {
+trait ExportSnapshotRecordSourceInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the source instance or disk snapshot.
@@ -56,66 +57,54 @@ object ExportSnapshotRecordSourceInfo {
   }
   
   @scala.inline
-  implicit class ExportSnapshotRecordSourceInfoOps[Self <: ExportSnapshotRecordSourceInfo] (val x: Self) extends AnyVal {
+  implicit class ExportSnapshotRecordSourceInfoMutableBuilder[Self <: ExportSnapshotRecordSourceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setDiskSnapshotInfo(value: DiskSnapshotInfo): Self = StObject.set(x, "diskSnapshotInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDiskSnapshotInfoUndefined: Self = StObject.set(x, "diskSnapshotInfo", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setFromResourceArn(value: NonEmptyString): Self = StObject.set(x, "fromResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSnapshotInfo(value: DiskSnapshotInfo): Self = this.set("diskSnapshotInfo", value.asInstanceOf[js.Any])
+    def setFromResourceArnUndefined: Self = StObject.set(x, "fromResourceArn", js.undefined)
     
     @scala.inline
-    def deleteDiskSnapshotInfo: Self = this.set("diskSnapshotInfo", js.undefined)
+    def setFromResourceName(value: NonEmptyString): Self = StObject.set(x, "fromResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromResourceArn(value: NonEmptyString): Self = this.set("fromResourceArn", value.asInstanceOf[js.Any])
+    def setFromResourceNameUndefined: Self = StObject.set(x, "fromResourceName", js.undefined)
     
     @scala.inline
-    def deleteFromResourceArn: Self = this.set("fromResourceArn", js.undefined)
+    def setInstanceSnapshotInfo(value: InstanceSnapshotInfo): Self = StObject.set(x, "instanceSnapshotInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromResourceName(value: NonEmptyString): Self = this.set("fromResourceName", value.asInstanceOf[js.Any])
+    def setInstanceSnapshotInfoUndefined: Self = StObject.set(x, "instanceSnapshotInfo", js.undefined)
     
     @scala.inline
-    def deleteFromResourceName: Self = this.set("fromResourceName", js.undefined)
+    def setName(value: NonEmptyString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceSnapshotInfo(value: InstanceSnapshotInfo): Self = this.set("instanceSnapshotInfo", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInstanceSnapshotInfo: Self = this.set("instanceSnapshotInfo", js.undefined)
+    def setResourceType(value: ExportSnapshotRecordSourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonEmptyString): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: ExportSnapshotRecordSourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

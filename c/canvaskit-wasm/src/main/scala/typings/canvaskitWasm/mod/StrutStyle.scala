@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StrutStyle extends js.Object {
+trait StrutStyle extends StObject {
   
   var fontFamilies: js.UndefOr[js.Array[String]] = js.native
   
@@ -30,63 +31,51 @@ object StrutStyle {
   }
   
   @scala.inline
-  implicit class StrutStyleOps[Self <: StrutStyle] (val x: Self) extends AnyVal {
+  implicit class StrutStyleMutableBuilder[Self <: StrutStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontFamilies(value: js.Array[String]): Self = StObject.set(x, "fontFamilies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontFamiliesUndefined: Self = StObject.set(x, "fontFamilies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontFamiliesVarargs(value: String*): Self = StObject.set(x, "fontFamilies", js.Array(value :_*))
     
     @scala.inline
-    def setFontFamiliesVarargs(value: String*): Self = this.set("fontFamilies", js.Array(value :_*))
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamilies(value: js.Array[String]): Self = this.set("fontFamilies", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamilies: Self = this.set("fontFamilies", js.undefined)
+    def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setForceStrutHeight(value: Boolean): Self = StObject.set(x, "forceStrutHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: FontStyle): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setForceStrutHeightUndefined: Self = StObject.set(x, "forceStrutHeight", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setHeightMultiplier(value: Double): Self = StObject.set(x, "heightMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceStrutHeight(value: Boolean): Self = this.set("forceStrutHeight", value.asInstanceOf[js.Any])
+    def setHeightMultiplierUndefined: Self = StObject.set(x, "heightMultiplier", js.undefined)
     
     @scala.inline
-    def deleteForceStrutHeight: Self = this.set("forceStrutHeight", js.undefined)
+    def setLeading(value: Double): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightMultiplier(value: Double): Self = this.set("heightMultiplier", value.asInstanceOf[js.Any])
+    def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
     
     @scala.inline
-    def deleteHeightMultiplier: Self = this.set("heightMultiplier", js.undefined)
+    def setStrutEnabled(value: Boolean): Self = StObject.set(x, "strutEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeading(value: Double): Self = this.set("leading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLeading: Self = this.set("leading", js.undefined)
-    
-    @scala.inline
-    def setStrutEnabled(value: Boolean): Self = this.set("strutEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrutEnabled: Self = this.set("strutEnabled", js.undefined)
+    def setStrutEnabledUndefined: Self = StObject.set(x, "strutEnabled", js.undefined)
   }
 }

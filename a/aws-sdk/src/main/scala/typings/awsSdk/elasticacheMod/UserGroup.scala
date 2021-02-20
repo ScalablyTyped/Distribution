@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserGroup extends js.Object {
+trait UserGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the user group.
@@ -51,66 +52,54 @@ object UserGroup {
   }
   
   @scala.inline
-  implicit class UserGroupOps[Self <: UserGroup] (val x: Self) extends AnyVal {
+  implicit class UserGroupMutableBuilder[Self <: UserGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEngine(value: EngineType): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
     @scala.inline
-    def deleteARN: Self = this.set("ARN", js.undefined)
+    def setPendingChanges(value: UserGroupPendingChanges): Self = StObject.set(x, "PendingChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: EngineType): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setPendingChangesUndefined: Self = StObject.set(x, "PendingChanges", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("Engine", js.undefined)
+    def setReplicationGroups(value: UGReplicationGroupIdList): Self = StObject.set(x, "ReplicationGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingChanges(value: UserGroupPendingChanges): Self = this.set("PendingChanges", value.asInstanceOf[js.Any])
+    def setReplicationGroupsUndefined: Self = StObject.set(x, "ReplicationGroups", js.undefined)
     
     @scala.inline
-    def deletePendingChanges: Self = this.set("PendingChanges", js.undefined)
+    def setReplicationGroupsVarargs(value: String*): Self = StObject.set(x, "ReplicationGroups", js.Array(value :_*))
     
     @scala.inline
-    def setReplicationGroupsVarargs(value: String*): Self = this.set("ReplicationGroups", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationGroups(value: UGReplicationGroupIdList): Self = this.set("ReplicationGroups", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteReplicationGroups: Self = this.set("ReplicationGroups", js.undefined)
+    def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setUserGroupIdUndefined: Self = StObject.set(x, "UserGroupId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setUserIds(value: UserIdList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserGroupId(value: String): Self = this.set("UserGroupId", value.asInstanceOf[js.Any])
+    def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
     @scala.inline
-    def deleteUserGroupId: Self = this.set("UserGroupId", js.undefined)
-    
-    @scala.inline
-    def setUserIdsVarargs(value: UserId*): Self = this.set("UserIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserIds(value: UserIdList): Self = this.set("UserIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIds: Self = this.set("UserIds", js.undefined)
+    def setUserIdsVarargs(value: UserId*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
   }
 }

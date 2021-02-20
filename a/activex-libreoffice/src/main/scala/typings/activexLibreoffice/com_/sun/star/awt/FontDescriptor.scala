@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.awt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For example, this can be used to select a font.
   */
 @js.native
-trait FontDescriptor extends js.Object {
+trait FontDescriptor extends StObject {
   
   /**
     * specifies the character set which is supported by the font.
@@ -132,66 +133,54 @@ object FontDescriptor {
   }
   
   @scala.inline
-  implicit class FontDescriptorOps[Self <: FontDescriptor] (val x: Self) extends AnyVal {
+  implicit class FontDescriptorMutableBuilder[Self <: FontDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharSet(value: Double): Self = StObject.set(x, "CharSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharacterWidth(value: Double): Self = StObject.set(x, "CharacterWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFamily(value: Double): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharSet(value: Double): Self = this.set("CharSet", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterWidth(value: Double): Self = this.set("CharacterWidth", value.asInstanceOf[js.Any])
+    def setKerning(value: Boolean): Self = StObject.set(x, "Kerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: Double): Self = this.set("Family", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKerning(value: Boolean): Self = this.set("Kerning", value.asInstanceOf[js.Any])
+    def setPitch(value: Double): Self = StObject.set(x, "Pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSlant(value: FontSlant): Self = StObject.set(x, "Slant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Double): Self = this.set("Orientation", value.asInstanceOf[js.Any])
+    def setStrikeout(value: Double): Self = StObject.set(x, "Strikeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitch(value: Double): Self = this.set("Pitch", value.asInstanceOf[js.Any])
+    def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlant(value: FontSlant): Self = this.set("Slant", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikeout(value: Double): Self = this.set("Strikeout", value.asInstanceOf[js.Any])
+    def setUnderline(value: Double): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleName(value: String): Self = this.set("StyleName", value.asInstanceOf[js.Any])
+    def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderline(value: Double): Self = this.set("Underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("Weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordLineMode(value: Boolean): Self = this.set("WordLineMode", value.asInstanceOf[js.Any])
+    def setWordLineMode(value: Boolean): Self = StObject.set(x, "WordLineMode", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,36 +42,24 @@ object DeformTimeline {
   }
   
   @scala.inline
-  implicit class DeformTimelineOps[Self <: DeformTimeline] (val x: Self) extends AnyVal {
+  implicit class DeformTimelineMutableBuilder[Self <: DeformTimeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: VertexAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameVertices(value: js.Array[ArrayLike[Double]]): Self = StObject.set(x, "frameVertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameVerticesVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "frameVertices", js.Array(value :_*))
     
     @scala.inline
-    def setAttachment(value: VertexAttachment): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameVerticesVarargs(value: ArrayLike[Double]*): Self = this.set("frameVertices", js.Array(value :_*))
+    def setSetFrame(value: (Double, Double, ArrayLike[Double]) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFrameVertices(value: js.Array[ArrayLike[Double]]): Self = this.set("frameVertices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrames(value: ArrayLike[Double]): Self = this.set("frames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetFrame(value: (Double, Double, ArrayLike[Double]) => Unit): Self = this.set("setFrame", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSlotIndex(value: Double): Self = this.set("slotIndex", value.asInstanceOf[js.Any])
+    def setSlotIndex(value: Double): Self = StObject.set(x, "slotIndex", value.asInstanceOf[js.Any])
   }
 }

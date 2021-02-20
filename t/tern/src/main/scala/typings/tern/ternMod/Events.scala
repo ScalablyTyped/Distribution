@@ -4,12 +4,13 @@ import typings.estree.mod.Node
 import typings.estree.mod.Program
 import typings.tern.inferMod.Scope
 import typings.tern.inferMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Events extends js.Object {
+trait Events extends StObject {
   
   /** After analyzing a file. */
   def afterLoad(file: File): Unit = js.native
@@ -66,45 +67,33 @@ object Events {
   }
   
   @scala.inline
-  implicit class EventsOps[Self <: Events] (val x: Self) extends AnyVal {
+  implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterLoad(value: File => Unit): Self = StObject.set(x, "afterLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeLoad(value: File => Unit): Self = StObject.set(x, "beforeLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletion(value: (File, CompletionsQuery) => CompletionsQueryResult | Unit): Self = StObject.set(x, "completion", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterLoad(value: File => Unit): Self = this.set("afterLoad", js.Any.fromFunction1(value))
+    def setPostInfer(value: (Program, Scope) => Unit): Self = StObject.set(x, "postInfer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeLoad(value: File => Unit): Self = this.set("beforeLoad", js.Any.fromFunction1(value))
+    def setPostParse(value: (Program, String) => Unit): Self = StObject.set(x, "postParse", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCompletion(value: (File, CompletionsQuery) => CompletionsQueryResult | Unit): Self = this.set("completion", js.Any.fromFunction2(value))
+    def setPreInfer(value: (Program, Scope) => Unit): Self = StObject.set(x, "preInfer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPostInfer(value: (Program, Scope) => Unit): Self = this.set("postInfer", js.Any.fromFunction2(value))
+    def setPreParse(value: (String, js.Object) => String | Unit): Self = StObject.set(x, "preParse", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPostParse(value: (Program, String) => Unit): Self = this.set("postParse", js.Any.fromFunction2(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPreInfer(value: (Program, Scope) => Unit): Self = this.set("preInfer", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPreParse(value: (String, js.Object) => String | Unit): Self = this.set("preParse", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTypeAt(value: (File, Position, Node, Type) => Type | Unit): Self = this.set("typeAt", js.Any.fromFunction4(value))
+    def setTypeAt(value: (File, Position, Node, Type) => Type | Unit): Self = StObject.set(x, "typeAt", js.Any.fromFunction4(value))
   }
 }

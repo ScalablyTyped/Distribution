@@ -1,12 +1,13 @@
 package typings.next.anon
 
 import typings.node.querystringMod.ParsedUrlQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Locale[P /* <: ParsedUrlQuery */] extends js.Object {
+trait Locale[P /* <: ParsedUrlQuery */] extends StObject {
   
   var locale: js.UndefOr[String] = js.native
   
@@ -21,27 +22,15 @@ object Locale {
   }
   
   @scala.inline
-  implicit class LocaleOps[Self <: Locale[_], P /* <: ParsedUrlQuery */] (val x: Self with Locale[P]) extends AnyVal {
+  implicit class LocaleMutableBuilder[Self <: Locale[_], P /* <: ParsedUrlQuery */] (val x: Self with Locale[P]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParams(value: P): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

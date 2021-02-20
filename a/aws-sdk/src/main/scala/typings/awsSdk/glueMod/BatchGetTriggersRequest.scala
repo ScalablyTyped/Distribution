@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetTriggersRequest extends js.Object {
+trait BatchGetTriggersRequest extends StObject {
   
   /**
     * A list of trigger names, which may be the names returned from the ListTriggers operation.
@@ -21,24 +22,12 @@ object BatchGetTriggersRequest {
   }
   
   @scala.inline
-  implicit class BatchGetTriggersRequestOps[Self <: BatchGetTriggersRequest] (val x: Self) extends AnyVal {
+  implicit class BatchGetTriggersRequestMutableBuilder[Self <: BatchGetTriggersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTriggerNames(value: TriggerNameList): Self = StObject.set(x, "TriggerNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTriggerNamesVarargs(value: NameString*): Self = this.set("TriggerNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setTriggerNames(value: TriggerNameList): Self = this.set("TriggerNames", value.asInstanceOf[js.Any])
+    def setTriggerNamesVarargs(value: NameString*): Self = StObject.set(x, "TriggerNames", js.Array(value :_*))
   }
 }

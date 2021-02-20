@@ -1,31 +1,28 @@
 package typings.angularCompiler.astMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParsedPropertyType extends js.Object
+sealed trait ParsedPropertyType extends StObject
 @JSImport("@angular/compiler/src/expression_parser/ast", "ParsedPropertyType")
 @js.native
-object ParsedPropertyType extends js.Object {
+object ParsedPropertyType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ParsedPropertyType with Double] = js.native
   
   @js.native
   sealed trait ANIMATION extends ParsedPropertyType
-  /* 2 */ @js.native
-  object ANIMATION extends TopLevel[ANIMATION with Double]
+  /* 2 */ val ANIMATION: typings.angularCompiler.astMod.ParsedPropertyType.ANIMATION with Double = js.native
   
   @js.native
   sealed trait DEFAULT extends ParsedPropertyType
-  /* 0 */ @js.native
-  object DEFAULT extends TopLevel[DEFAULT with Double]
+  /* 0 */ val DEFAULT: typings.angularCompiler.astMod.ParsedPropertyType.DEFAULT with Double = js.native
   
   @js.native
   sealed trait LITERAL_ATTR extends ParsedPropertyType
-  /* 1 */ @js.native
-  object LITERAL_ATTR extends TopLevel[LITERAL_ATTR with Double]
+  /* 1 */ val LITERAL_ATTR: typings.angularCompiler.astMod.ParsedPropertyType.LITERAL_ATTR with Double = js.native
 }

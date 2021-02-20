@@ -1,5 +1,6 @@
 package typings.googleapis.pubsubV1Mod.pubsubV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * automatic resource deletion).
   */
 @js.native
-trait SchemaExpirationPolicy extends js.Object {
+trait SchemaExpirationPolicy extends StObject {
   
   /**
     * Specifies the &quot;time-to-live&quot; duration for an associated
@@ -30,24 +31,12 @@ object SchemaExpirationPolicy {
   }
   
   @scala.inline
-  implicit class SchemaExpirationPolicyOps[Self <: SchemaExpirationPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaExpirationPolicyMutableBuilder[Self <: SchemaExpirationPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTtl(value: String): Self = this.set("ttl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTtl: Self = this.set("ttl", js.undefined)
+    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

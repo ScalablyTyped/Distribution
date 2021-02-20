@@ -5,6 +5,7 @@ import typings.reactNative.mod.SectionListData
 import typings.reactNative.mod.SectionListProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,57 +32,45 @@ object TYSectionListProps {
   }
   
   @scala.inline
-  implicit class TYSectionListPropsOps[Self <: TYSectionListProps] (val x: Self) extends AnyVal {
+  implicit class TYSectionListPropsMutableBuilder[Self <: TYSectionListProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentContainStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentContainStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentContainStyleNull: Self = StObject.set(x, "contentContainStyle", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentContainStyleUndefined: Self = StObject.set(x, "contentContainStyle", js.undefined)
     
     @scala.inline
-    def setContentContainStyle(value: StyleProp[ViewStyle]): Self = this.set("contentContainStyle", value.asInstanceOf[js.Any])
+    def setHeaderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentContainStyle: Self = this.set("contentContainStyle", js.undefined)
+    def setHeaderStyleNull: Self = StObject.set(x, "headerStyle", null)
     
     @scala.inline
-    def setContentContainStyleNull: Self = this.set("contentContainStyle", null)
+    def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
     
     @scala.inline
-    def setHeaderStyle(value: StyleProp[ViewStyle]): Self = this.set("headerStyle", value.asInstanceOf[js.Any])
+    def setSectionListRef(value: () => Unit): Self = StObject.set(x, "sectionListRef", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteHeaderStyle: Self = this.set("headerStyle", js.undefined)
+    def setSectionListRefUndefined: Self = StObject.set(x, "sectionListRef", js.undefined)
     
     @scala.inline
-    def setHeaderStyleNull: Self = this.set("headerStyle", null)
+    def setSeparatorStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "separatorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSectionListRef(value: () => Unit): Self = this.set("sectionListRef", js.Any.fromFunction0(value))
+    def setSeparatorStyleNull: Self = StObject.set(x, "separatorStyle", null)
     
     @scala.inline
-    def deleteSectionListRef: Self = this.set("sectionListRef", js.undefined)
+    def setSeparatorStyleUndefined: Self = StObject.set(x, "separatorStyle", js.undefined)
     
     @scala.inline
-    def setSeparatorStyle(value: StyleProp[ViewStyle]): Self = this.set("separatorStyle", value.asInstanceOf[js.Any])
+    def setUseART(value: Boolean): Self = StObject.set(x, "useART", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeparatorStyle: Self = this.set("separatorStyle", js.undefined)
-    
-    @scala.inline
-    def setSeparatorStyleNull: Self = this.set("separatorStyle", null)
-    
-    @scala.inline
-    def setUseART(value: Boolean): Self = this.set("useART", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseART: Self = this.set("useART", js.undefined)
+    def setUseARTUndefined: Self = StObject.set(x, "useART", js.undefined)
   }
 }

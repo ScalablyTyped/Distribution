@@ -1,11 +1,12 @@
 package typings.reactNativeAuth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExchangeParams extends js.Object {
+trait ExchangeParams extends StObject {
   
   var code: String = js.native
   
@@ -22,27 +23,15 @@ object ExchangeParams {
   }
   
   @scala.inline
-  implicit class ExchangeParamsOps[Self <: ExchangeParams] (val x: Self) extends AnyVal {
+  implicit class ExchangeParamsMutableBuilder[Self <: ExchangeParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedirectUri(value: String): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerifier(value: String): Self = this.set("verifier", value.asInstanceOf[js.Any])
+    def setVerifier(value: String): Self = StObject.set(x, "verifier", value.asInstanceOf[js.Any])
   }
 }

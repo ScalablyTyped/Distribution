@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefineAnalysisSchemeRequest extends js.Object {
+trait DefineAnalysisSchemeRequest extends StObject {
   
   var AnalysisScheme: typings.awsSdk.cloudsearchMod.AnalysisScheme = js.native
   
@@ -20,24 +21,12 @@ object DefineAnalysisSchemeRequest {
   }
   
   @scala.inline
-  implicit class DefineAnalysisSchemeRequestOps[Self <: DefineAnalysisSchemeRequest] (val x: Self) extends AnyVal {
+  implicit class DefineAnalysisSchemeRequestMutableBuilder[Self <: DefineAnalysisSchemeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisScheme(value: AnalysisScheme): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnalysisScheme(value: AnalysisScheme): Self = this.set("AnalysisScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

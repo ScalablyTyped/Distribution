@@ -5,13 +5,14 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.AddAudioConstants.ContainedContentType
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.AddAudioConstants.ContentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `addAudio` operation. */
 @js.native
-trait AddAudioParams extends js.Object {
+trait AddAudioParams extends StObject {
   
   /** If `true`, the specified audio resource overwrites an existing audio resource with the same name. If `false`, the request fails if an audio resource with the same name already exists. The parameter has no effect if an audio resource with the same name does not already exist. */
   var allow_overwrite: js.UndefOr[Boolean] = js.native
@@ -44,57 +45,45 @@ object AddAudioParams {
   }
   
   @scala.inline
-  implicit class AddAudioParamsOps[Self <: AddAudioParams] (val x: Self) extends AnyVal {
+  implicit class AddAudioParamsMutableBuilder[Self <: AddAudioParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_overwrite(value: Boolean): Self = StObject.set(x, "allow_overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_overwriteUndefined: Self = StObject.set(x, "allow_overwrite", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudio_name(value: String): Self = StObject.set(x, "audio_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio_name(value: String): Self = this.set("audio_name", value.asInstanceOf[js.Any])
+    def setAudio_resource(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "audio_resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio_resource(value: ReadableStream | FileObject | Buffer): Self = this.set("audio_resource", value.asInstanceOf[js.Any])
+    def setContained_content_type(value: ContainedContentType | String): Self = StObject.set(x, "contained_content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomization_id(value: String): Self = this.set("customization_id", value.asInstanceOf[js.Any])
+    def setContained_content_typeUndefined: Self = StObject.set(x, "contained_content_type", js.undefined)
     
     @scala.inline
-    def setAllow_overwrite(value: Boolean): Self = this.set("allow_overwrite", value.asInstanceOf[js.Any])
+    def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllow_overwrite: Self = this.set("allow_overwrite", js.undefined)
+    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
     @scala.inline
-    def setContained_content_type(value: ContainedContentType | String): Self = this.set("contained_content_type", value.asInstanceOf[js.Any])
+    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContained_content_type: Self = this.set("contained_content_type", js.undefined)
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent_type(value: ContentType | String): Self = this.set("content_type", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteContent_type: Self = this.set("content_type", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

@@ -1,21 +1,41 @@
 package typings.mendixmodelsdk.allModelClassesMod.pages
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NativeLayoutType")
 @js.native
-class NativeLayoutType ()
-  extends typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NativeLayoutType")
-@js.native
-object NativeLayoutType extends js.Object {
+class NativeLayoutType protected ()
+  extends typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object NativeLayoutType {
   
-  var Default: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType = js.native
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NativeLayoutType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Popup: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NativeLayoutType.Default")
+  @js.native
+  def Default: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType = js.native
+  @scala.inline
+  def Default_=(x: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
   
-  var TopLevel: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NativeLayoutType.Popup")
+  @js.native
+  def Popup: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType = js.native
+  @scala.inline
+  def Popup_=(x: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Popup")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NativeLayoutType.TopLevel")
+  @js.native
+  def TopLevel: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType = js.native
+  @scala.inline
+  def TopLevel_=(x: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopLevel")(x.asInstanceOf[js.Any])
 }

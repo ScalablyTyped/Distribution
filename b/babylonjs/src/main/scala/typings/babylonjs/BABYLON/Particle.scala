@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Particle extends js.Object {
+trait Particle extends StObject {
   
   /** @hidden */
   var _attachedSubEmitters: Nullable[js.Array[SubEmitter]] = js.native
@@ -223,189 +224,177 @@ object Particle {
   }
   
   @scala.inline
-  implicit class ParticleOps[Self <: Particle] (val x: Self) extends AnyVal {
+  implicit class ParticleMutableBuilder[Self <: Particle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAngularSpeed(value: Double): Self = StObject.set(x, "angularSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentAngularSpeed1(value: Double): Self = this.set("_currentAngularSpeed1", value.asInstanceOf[js.Any])
+    def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentAngularSpeed2(value: Double): Self = this.set("_currentAngularSpeed2", value.asInstanceOf[js.Any])
+    def setColor(value: Color4): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentColor1(value: Color4): Self = this.set("_currentColor1", value.asInstanceOf[js.Any])
+    def setColorStep(value: Color4): Self = StObject.set(x, "colorStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentColor2(value: Color4): Self = this.set("_currentColor2", value.asInstanceOf[js.Any])
+    def setCopyTo(value: Particle => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_currentDrag1(value: Double): Self = this.set("_currentDrag1", value.asInstanceOf[js.Any])
+    def setDirection(value: Vector3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentDrag2(value: Double): Self = this.set("_currentDrag2", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentLimitVelocity1(value: Double): Self = this.set("_currentLimitVelocity1", value.asInstanceOf[js.Any])
+    def setLifeTime(value: Double): Self = StObject.set(x, "lifeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentLimitVelocity2(value: Double): Self = this.set("_currentLimitVelocity2", value.asInstanceOf[js.Any])
+    def setParticleSystem(value: ParticleSystem): Self = StObject.set(x, "particleSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentSize1(value: Double): Self = this.set("_currentSize1", value.asInstanceOf[js.Any])
+    def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentSize2(value: Double): Self = this.set("_currentSize2", value.asInstanceOf[js.Any])
+    def setRemapData(value: Vector4): Self = StObject.set(x, "remapData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentVelocity1(value: Double): Self = this.set("_currentVelocity1", value.asInstanceOf[js.Any])
+    def setScale(value: Vector2): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentVelocity2(value: Double): Self = this.set("_currentVelocity2", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_inheritParticleInfoToSubEmitter(value: SubEmitter => Unit): Self = this.set("_inheritParticleInfoToSubEmitter", js.Any.fromFunction1(value))
+    def setUpdateCellIndex(value: () => Unit): Self = StObject.set(x, "updateCellIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_inheritParticleInfoToSubEmitters(value: () => Unit): Self = this.set("_inheritParticleInfoToSubEmitters", js.Any.fromFunction0(value))
+    def setUpdateCellInfoFromSystem(value: js.Any): Self = StObject.set(x, "updateCellInfoFromSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_initialEndSpriteCellID(value: Double): Self = this.set("_initialEndSpriteCellID", value.asInstanceOf[js.Any])
+    def set_attachedSubEmitters(value: Nullable[js.Array[SubEmitter]]): Self = StObject.set(x, "_attachedSubEmitters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_initialStartSpriteCellID(value: Double): Self = this.set("_initialStartSpriteCellID", value.asInstanceOf[js.Any])
+    def set_attachedSubEmittersNull: Self = StObject.set(x, "_attachedSubEmitters", null)
     
     @scala.inline
-    def set_randomNoiseCoordinates1(value: Vector3): Self = this.set("_randomNoiseCoordinates1", value.asInstanceOf[js.Any])
+    def set_attachedSubEmittersVarargs(value: SubEmitter*): Self = StObject.set(x, "_attachedSubEmitters", js.Array(value :_*))
     
     @scala.inline
-    def set_randomNoiseCoordinates2(value: Vector3): Self = this.set("_randomNoiseCoordinates2", value.asInstanceOf[js.Any])
+    def set_currentAngularSpeed1(value: Double): Self = StObject.set(x, "_currentAngularSpeed1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_reset(value: () => Unit): Self = this.set("_reset", js.Any.fromFunction0(value))
+    def set_currentAngularSpeed2(value: Double): Self = StObject.set(x, "_currentAngularSpeed2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAge(value: Double): Self = this.set("age", value.asInstanceOf[js.Any])
+    def set_currentAngularSpeedGradient(value: Nullable[FactorGradient]): Self = StObject.set(x, "_currentAngularSpeedGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def set_currentAngularSpeedGradientNull: Self = StObject.set(x, "_currentAngularSpeedGradient", null)
     
     @scala.inline
-    def setAngularSpeed(value: Double): Self = this.set("angularSpeed", value.asInstanceOf[js.Any])
+    def set_currentColor1(value: Color4): Self = StObject.set(x, "_currentColor1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellIndex(value: Double): Self = this.set("cellIndex", value.asInstanceOf[js.Any])
+    def set_currentColor2(value: Color4): Self = StObject.set(x, "_currentColor2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color4): Self = this.set("color", value.asInstanceOf[js.Any])
+    def set_currentColorGradient(value: Nullable[ColorGradient]): Self = StObject.set(x, "_currentColorGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorStep(value: Color4): Self = this.set("colorStep", value.asInstanceOf[js.Any])
+    def set_currentColorGradientNull: Self = StObject.set(x, "_currentColorGradient", null)
     
     @scala.inline
-    def setCopyTo(value: Particle => Unit): Self = this.set("copyTo", js.Any.fromFunction1(value))
+    def set_currentDrag1(value: Double): Self = StObject.set(x, "_currentDrag1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: Vector3): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def set_currentDrag2(value: Double): Self = StObject.set(x, "_currentDrag2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def set_currentDragGradient(value: Nullable[FactorGradient]): Self = StObject.set(x, "_currentDragGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifeTime(value: Double): Self = this.set("lifeTime", value.asInstanceOf[js.Any])
+    def set_currentDragGradientNull: Self = StObject.set(x, "_currentDragGradient", null)
     
     @scala.inline
-    def setParticleSystem(value: ParticleSystem): Self = this.set("particleSystem", value.asInstanceOf[js.Any])
+    def set_currentLimitVelocity1(value: Double): Self = StObject.set(x, "_currentLimitVelocity1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Vector3): Self = this.set("position", value.asInstanceOf[js.Any])
+    def set_currentLimitVelocity2(value: Double): Self = StObject.set(x, "_currentLimitVelocity2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemapData(value: Vector4): Self = this.set("remapData", value.asInstanceOf[js.Any])
+    def set_currentLimitVelocityGradient(value: Nullable[FactorGradient]): Self = StObject.set(x, "_currentLimitVelocityGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Vector2): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def set_currentLimitVelocityGradientNull: Self = StObject.set(x, "_currentLimitVelocityGradient", null)
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def set_currentSize1(value: Double): Self = StObject.set(x, "_currentSize1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateCellIndex(value: () => Unit): Self = this.set("updateCellIndex", js.Any.fromFunction0(value))
+    def set_currentSize2(value: Double): Self = StObject.set(x, "_currentSize2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateCellInfoFromSystem(value: js.Any): Self = this.set("updateCellInfoFromSystem", value.asInstanceOf[js.Any])
+    def set_currentSizeGradient(value: Nullable[FactorGradient]): Self = StObject.set(x, "_currentSizeGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_attachedSubEmittersVarargs(value: SubEmitter*): Self = this.set("_attachedSubEmitters", js.Array(value :_*))
+    def set_currentSizeGradientNull: Self = StObject.set(x, "_currentSizeGradient", null)
     
     @scala.inline
-    def set_attachedSubEmitters(value: Nullable[js.Array[SubEmitter]]): Self = this.set("_attachedSubEmitters", value.asInstanceOf[js.Any])
+    def set_currentVelocity1(value: Double): Self = StObject.set(x, "_currentVelocity1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_attachedSubEmittersNull: Self = this.set("_attachedSubEmitters", null)
+    def set_currentVelocity2(value: Double): Self = StObject.set(x, "_currentVelocity2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentAngularSpeedGradient(value: Nullable[FactorGradient]): Self = this.set("_currentAngularSpeedGradient", value.asInstanceOf[js.Any])
+    def set_currentVelocityGradient(value: Nullable[FactorGradient]): Self = StObject.set(x, "_currentVelocityGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentAngularSpeedGradientNull: Self = this.set("_currentAngularSpeedGradient", null)
+    def set_currentVelocityGradientNull: Self = StObject.set(x, "_currentVelocityGradient", null)
     
     @scala.inline
-    def set_currentColorGradient(value: Nullable[ColorGradient]): Self = this.set("_currentColorGradient", value.asInstanceOf[js.Any])
+    def set_inheritParticleInfoToSubEmitter(value: SubEmitter => Unit): Self = StObject.set(x, "_inheritParticleInfoToSubEmitter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_currentColorGradientNull: Self = this.set("_currentColorGradient", null)
+    def set_inheritParticleInfoToSubEmitters(value: () => Unit): Self = StObject.set(x, "_inheritParticleInfoToSubEmitters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_currentDragGradient(value: Nullable[FactorGradient]): Self = this.set("_currentDragGradient", value.asInstanceOf[js.Any])
+    def set_initialDirection(value: Nullable[Vector3]): Self = StObject.set(x, "_initialDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentDragGradientNull: Self = this.set("_currentDragGradient", null)
+    def set_initialDirectionNull: Self = StObject.set(x, "_initialDirection", null)
     
     @scala.inline
-    def set_currentLimitVelocityGradient(value: Nullable[FactorGradient]): Self = this.set("_currentLimitVelocityGradient", value.asInstanceOf[js.Any])
+    def set_initialEndSpriteCellID(value: Double): Self = StObject.set(x, "_initialEndSpriteCellID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentLimitVelocityGradientNull: Self = this.set("_currentLimitVelocityGradient", null)
+    def set_initialStartSpriteCellID(value: Double): Self = StObject.set(x, "_initialStartSpriteCellID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentSizeGradient(value: Nullable[FactorGradient]): Self = this.set("_currentSizeGradient", value.asInstanceOf[js.Any])
+    def set_localPosition(value: Vector3): Self = StObject.set(x, "_localPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentSizeGradientNull: Self = this.set("_currentSizeGradient", null)
+    def set_localPositionUndefined: Self = StObject.set(x, "_localPosition", js.undefined)
     
     @scala.inline
-    def set_currentVelocityGradient(value: Nullable[FactorGradient]): Self = this.set("_currentVelocityGradient", value.asInstanceOf[js.Any])
+    def set_randomCellOffset(value: Double): Self = StObject.set(x, "_randomCellOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentVelocityGradientNull: Self = this.set("_currentVelocityGradient", null)
+    def set_randomCellOffsetUndefined: Self = StObject.set(x, "_randomCellOffset", js.undefined)
     
     @scala.inline
-    def set_initialDirection(value: Nullable[Vector3]): Self = this.set("_initialDirection", value.asInstanceOf[js.Any])
+    def set_randomNoiseCoordinates1(value: Vector3): Self = StObject.set(x, "_randomNoiseCoordinates1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_initialDirectionNull: Self = this.set("_initialDirection", null)
+    def set_randomNoiseCoordinates2(value: Vector3): Self = StObject.set(x, "_randomNoiseCoordinates2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_localPosition(value: Vector3): Self = this.set("_localPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_localPosition: Self = this.set("_localPosition", js.undefined)
-    
-    @scala.inline
-    def set_randomCellOffset(value: Double): Self = this.set("_randomCellOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_randomCellOffset: Self = this.set("_randomCellOffset", js.undefined)
+    def set_reset(value: () => Unit): Self = StObject.set(x, "_reset", js.Any.fromFunction0(value))
   }
 }

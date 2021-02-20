@@ -1,11 +1,12 @@
 package typings.storybookTheming.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Atrule extends js.Object {
+trait Atrule extends StObject {
   
   @JSName("&.atrule")
   var AmpersandDotatrule: Color = js.native
@@ -173,114 +174,102 @@ object Atrule {
   }
   
   @scala.inline
-  implicit class AtruleOps[Self <: Atrule] (val x: Self) extends AnyVal {
+  implicit class AtruleMutableBuilder[Self <: Atrule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmpersandDotatrule(value: Color): Self = StObject.set(x, "&.atrule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAmpersandDotattr-name`(value: Color): Self = StObject.set(x, "&.attr-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAmpersandDotattr-value`(value: Color): Self = StObject.set(x, "&.attr-value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotatrule(value: Color): Self = this.set("&.atrule", value.asInstanceOf[js.Any])
+    def setAmpersandDotbold(value: FontWeight): Self = StObject.set(x, "&.bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAmpersandDotattr-name`(value: Color): Self = this.set("&.attr-name", value.asInstanceOf[js.Any])
+    def setAmpersandDotboolean(value: Color): Self = StObject.set(x, "&.boolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAmpersandDotattr-value`(value: Color): Self = this.set("&.attr-value", value.asInstanceOf[js.Any])
+    def setAmpersandDotcdata(value: FontStyle): Self = StObject.set(x, "&.cdata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotbold(value: FontWeight): Self = this.set("&.bold", value.asInstanceOf[js.Any])
+    def `setAmpersandDotclass-name`(value: Color): Self = StObject.set(x, "&.class-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotboolean(value: Color): Self = this.set("&.boolean", value.asInstanceOf[js.Any])
+    def setAmpersandDotcomment(value: FontStyle): Self = StObject.set(x, "&.comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotcdata(value: FontStyle): Self = this.set("&.cdata", value.asInstanceOf[js.Any])
+    def setAmpersandDotconstant(value: Color): Self = StObject.set(x, "&.constant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAmpersandDotclass-name`(value: Color): Self = this.set("&.class-name", value.asInstanceOf[js.Any])
+    def setAmpersandDotdeleted(value: Color): Self = StObject.set(x, "&.deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotcomment(value: FontStyle): Self = this.set("&.comment", value.asInstanceOf[js.Any])
+    def `setAmpersandDotdirectiveDottag Dottag`(value: BackgroundColor): Self = StObject.set(x, "&.directive.tag .tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotconstant(value: Color): Self = this.set("&.constant", value.asInstanceOf[js.Any])
+    def setAmpersandDotdoctype(value: FontStyle): Self = StObject.set(x, "&.doctype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotdeleted(value: Color): Self = this.set("&.deleted", value.asInstanceOf[js.Any])
+    def setAmpersandDotentity(value: Color): Self = StObject.set(x, "&.entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAmpersandDotdirectiveDottag Dottag`(value: BackgroundColor): Self = this.set("&.directive.tag .tag", value.asInstanceOf[js.Any])
+    def setAmpersandDotfunction(value: Color): Self = StObject.set(x, "&.function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotdoctype(value: FontStyle): Self = this.set("&.doctype", value.asInstanceOf[js.Any])
+    def setAmpersandDotimportant(value: FontWeight): Self = StObject.set(x, "&.important", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotentity(value: Color): Self = this.set("&.entity", value.asInstanceOf[js.Any])
+    def setAmpersandDotinserted(value: Color): Self = StObject.set(x, "&.inserted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotfunction(value: Color): Self = this.set("&.function", value.asInstanceOf[js.Any])
+    def setAmpersandDotitalic(value: FontStyleString): Self = StObject.set(x, "&.italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotimportant(value: FontWeight): Self = this.set("&.important", value.asInstanceOf[js.Any])
+    def setAmpersandDotkeyword(value: Color): Self = StObject.set(x, "&.keyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotinserted(value: Color): Self = this.set("&.inserted", value.asInstanceOf[js.Any])
+    def setAmpersandDotnumber(value: Color): Self = StObject.set(x, "&.number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotitalic(value: FontStyleString): Self = this.set("&.italic", value.asInstanceOf[js.Any])
+    def setAmpersandDotoperator(value: Color): Self = StObject.set(x, "&.operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotkeyword(value: Color): Self = this.set("&.keyword", value.asInstanceOf[js.Any])
+    def setAmpersandDotprolog(value: FontStyle): Self = StObject.set(x, "&.prolog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotnumber(value: Color): Self = this.set("&.number", value.asInstanceOf[js.Any])
+    def setAmpersandDotproperty(value: Color): Self = StObject.set(x, "&.property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotoperator(value: Color): Self = this.set("&.operator", value.asInstanceOf[js.Any])
+    def setAmpersandDotpunctuation(value: Color): Self = StObject.set(x, "&.punctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotprolog(value: FontStyle): Self = this.set("&.prolog", value.asInstanceOf[js.Any])
+    def setAmpersandDotregex(value: Color): Self = StObject.set(x, "&.regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotproperty(value: Color): Self = this.set("&.property", value.asInstanceOf[js.Any])
+    def setAmpersandDotselector(value: Color): Self = StObject.set(x, "&.selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotpunctuation(value: Color): Self = this.set("&.punctuation", value.asInstanceOf[js.Any])
+    def setAmpersandDotstring(value: Color): Self = StObject.set(x, "&.string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotregex(value: Color): Self = this.set("&.regex", value.asInstanceOf[js.Any])
+    def setAmpersandDotsymbol(value: Color): Self = StObject.set(x, "&.symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotselector(value: Color): Self = this.set("&.selector", value.asInstanceOf[js.Any])
+    def setAmpersandDottag(value: Color): Self = StObject.set(x, "&.tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotstring(value: Color): Self = this.set("&.string", value.asInstanceOf[js.Any])
+    def setAmpersandDoturl(value: Color): Self = StObject.set(x, "&.url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDotsymbol(value: Color): Self = this.set("&.symbol", value.asInstanceOf[js.Any])
+    def setAmpersandDotvariable(value: Color): Self = StObject.set(x, "&.variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDottag(value: Color): Self = this.set("&.tag", value.asInstanceOf[js.Any])
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpersandDoturl(value: Color): Self = this.set("&.url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAmpersandDotvariable(value: Color): Self = this.set("&.variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebkitFontSmoothing(value: String): Self = this.set("WebkitFontSmoothing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setWebkitFontSmoothing(value: String): Self = StObject.set(x, "WebkitFontSmoothing", value.asInstanceOf[js.Any])
   }
 }

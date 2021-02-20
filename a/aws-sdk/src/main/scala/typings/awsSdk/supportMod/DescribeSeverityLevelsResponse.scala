@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSeverityLevelsResponse extends js.Object {
+trait DescribeSeverityLevelsResponse extends StObject {
   
   /**
     * The available severity levels for the support case. Available severity levels are defined by your service level agreement with AWS.
@@ -21,27 +22,15 @@ object DescribeSeverityLevelsResponse {
   }
   
   @scala.inline
-  implicit class DescribeSeverityLevelsResponseOps[Self <: DescribeSeverityLevelsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeSeverityLevelsResponseMutableBuilder[Self <: DescribeSeverityLevelsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSeverityLevels(value: SeverityLevelsList): Self = StObject.set(x, "severityLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSeverityLevelsUndefined: Self = StObject.set(x, "severityLevels", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSeverityLevelsVarargs(value: SeverityLevel*): Self = this.set("severityLevels", js.Array(value :_*))
-    
-    @scala.inline
-    def setSeverityLevels(value: SeverityLevelsList): Self = this.set("severityLevels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverityLevels: Self = this.set("severityLevels", js.undefined)
+    def setSeverityLevelsVarargs(value: SeverityLevel*): Self = StObject.set(x, "severityLevels", js.Array(value :_*))
   }
 }

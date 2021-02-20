@@ -2,6 +2,7 @@ package typings.uirouterCore.mod
 
 import typings.std.RegExp
 import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,9 +30,11 @@ class UrlMatcher protected ()
   ) = this()
 }
 /* static members */
-@JSImport("@uirouter/core", "UrlMatcher")
-@js.native
-object UrlMatcher extends js.Object {
+object UrlMatcher {
+  
+  @JSImport("@uirouter/core", "UrlMatcher")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Compare two UrlMatchers
@@ -42,17 +45,29 @@ object UrlMatcher extends js.Object {
     *
     * The comparison function sorts static segments before dynamic ones.
     */
+  @JSImport("@uirouter/core", "UrlMatcher.compare")
+  @js.native
   def compare(a: typings.uirouterCore.urlMatcherMod.UrlMatcher, b: typings.uirouterCore.urlMatcherMod.UrlMatcher): Double = js.native
   
   /** @internal */
+  @JSImport("@uirouter/core", "UrlMatcher.encodeDashes")
+  @js.native
   def encodeDashes(str: String): String = js.native
   
   /** @internal */
-  var nameValidator: RegExp = js.native
+  @JSImport("@uirouter/core", "UrlMatcher.nameValidator")
+  @js.native
+  def nameValidator: RegExp = js.native
+  @scala.inline
+  def nameValidator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
   
   /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
+  @JSImport("@uirouter/core", "UrlMatcher.pathSegmentsAndParams")
+  @js.native
   def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = js.native
   
   /** @internal Given a matcher, return an array with the matcher's query params */
+  @JSImport("@uirouter/core", "UrlMatcher.queryParams")
+  @js.native
   def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[typings.uirouterCore.paramMod.Param] = js.native
 }

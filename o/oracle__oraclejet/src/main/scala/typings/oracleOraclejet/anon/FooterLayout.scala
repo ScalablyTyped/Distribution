@@ -4,12 +4,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings._empty
 import typings.oracleOraclejet.oracleOraclejetStrings.focus
 import typings.oracleOraclejet.oracleOraclejetStrings.image
 import typings.oracleOraclejet.oracleOraclejetStrings.now
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FooterLayout extends js.Object {
+trait FooterLayout extends StObject {
   
   var footerLayout: _empty | now = js.native
   
@@ -26,27 +27,15 @@ object FooterLayout {
   }
   
   @scala.inline
-  implicit class FooterLayoutOps[Self <: FooterLayout] (val x: Self) extends AnyVal {
+  implicit class FooterLayoutMutableBuilder[Self <: FooterLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFooterLayout(value: _empty | now): Self = StObject.set(x, "footerLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowOn(value: focus | image): Self = StObject.set(x, "showOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFooterLayout(value: _empty | now): Self = this.set("footerLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowOn(value: focus | image): Self = this.set("showOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeIncrement(value: String): Self = this.set("timeIncrement", value.asInstanceOf[js.Any])
+    def setTimeIncrement(value: String): Self = StObject.set(x, "timeIncrement", value.asInstanceOf[js.Any])
   }
 }

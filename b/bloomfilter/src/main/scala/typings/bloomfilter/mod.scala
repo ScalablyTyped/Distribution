@@ -1,16 +1,16 @@
 package typings.bloomfilter
 
 import typings.std.Int32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bloomfilter", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("bloomfilter", "BloomFilter")
   @js.native
-  class BloomFilter protected () extends js.Object {
+  class BloomFilter protected () extends StObject {
     def this(m: js.Array[Double], k: Double) = this()
     /**
       * Create a new empty bloom filter of size m with hashes k or

@@ -268,547 +268,1082 @@ import typings.pulumiAws.pulumiAwsStrings.arnColonawsColoniamColonColonawsColonp
 import typings.pulumiAws.pulumiAwsStrings.arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogEndUserAccess
 import typings.pulumiAws.pulumiAwsStrings.arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogEndUserFullAccess
 import typings.pulumiAws.pulumiAwsStrings.arnColonawsColoniamColonColonawsColonpolicySlashSimpleWorkflowFullAccess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/iam", "ManagedPolicy")
-@js.native
-object ManagedPolicy extends js.Object {
+object ManagedPolicy {
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSAccountActivityAccess")
+  @js.native
   val AWSAccountActivityAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSAccountActivityAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSAccountUsageReportAccess")
+  @js.native
   val AWSAccountUsageReportAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSAccountUsageReportAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSAgentlessDiscoveryService")
+  @js.native
   val AWSAgentlessDiscoveryService: arnColonawsColoniamColonColonawsColonpolicySlashAWSAgentlessDiscoveryService = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSApplicationDiscoveryAgentAccess")
+  @js.native
   val AWSApplicationDiscoveryAgentAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSApplicationDiscoveryAgentAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSApplicationDiscoveryServiceFullAccess")
+  @js.native
   val AWSApplicationDiscoveryServiceFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSApplicationDiscoveryServiceFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSBatchFullAccess")
+  @js.native
   val AWSBatchFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSBatchFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSBatchServiceRole")
+  @js.native
   val AWSBatchServiceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSBatchServiceRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCertificateManagerFullAccess")
+  @js.native
   val AWSCertificateManagerFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCertificateManagerFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCertificateManagerReadOnly")
+  @js.native
   val AWSCertificateManagerReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAWSCertificateManagerReadOnly = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCloudFormationReadOnlyAccess")
+  @js.native
   val AWSCloudFormationReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCloudFormationReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCloudHSMFullAccess")
+  @js.native
   val AWSCloudHSMFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCloudHSMFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCloudHSMReadOnlyAccess")
+  @js.native
   val AWSCloudHSMReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCloudHSMReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCloudHSMRole")
+  @js.native
   val AWSCloudHSMRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSCloudHSMRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCloudTrailFullAccess")
+  @js.native
   val AWSCloudTrailFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCloudTrailFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCloudTrailReadOnlyAccess")
+  @js.native
   val AWSCloudTrailReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCloudTrailReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeBuildAdminAccess")
+  @js.native
   val AWSCodeBuildAdminAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeBuildAdminAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeBuildDeveloperAccess")
+  @js.native
   val AWSCodeBuildDeveloperAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeBuildDeveloperAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeBuildReadOnlyAccess")
+  @js.native
   val AWSCodeBuildReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeBuildReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeCommitFullAccess")
+  @js.native
   val AWSCodeCommitFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeCommitFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeCommitPowerUser")
+  @js.native
   val AWSCodeCommitPowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeCommitPowerUser = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeCommitReadOnly")
+  @js.native
   val AWSCodeCommitReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeCommitReadOnly = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeDeployDeployerAccess")
+  @js.native
   val AWSCodeDeployDeployerAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeDeployDeployerAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeDeployFullAccess")
+  @js.native
   val AWSCodeDeployFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeDeployFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeDeployReadOnlyAccess")
+  @js.native
   val AWSCodeDeployReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeDeployReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeDeployRole")
+  @js.native
   val AWSCodeDeployRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSCodeDeployRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeDeployRoleForECS")
+  @js.native
   val AWSCodeDeployRoleForECS: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeDeployRoleForECS = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodePipelineApproverAccess")
+  @js.native
   val AWSCodePipelineApproverAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodePipelineApproverAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodePipelineCustomActionAccess")
+  @js.native
   val AWSCodePipelineCustomActionAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodePipelineCustomActionAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodePipelineFullAccess")
+  @js.native
   val AWSCodePipelineFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodePipelineFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodePipelineReadOnlyAccess")
+  @js.native
   val AWSCodePipelineReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodePipelineReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeStarFullAccess")
+  @js.native
   val AWSCodeStarFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeStarFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSCodeStarServiceRole")
+  @js.native
   val AWSCodeStarServiceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSCodeStarServiceRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSConfigRole")
+  @js.native
   val AWSConfigRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSConfigRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSConfigRulesExecutionRole")
+  @js.native
   val AWSConfigRulesExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSConfigRulesExecutionRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSConfigUserAccess")
+  @js.native
   val AWSConfigUserAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSConfigUserAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSConnector")
+  @js.native
   val AWSConnector: arnColonawsColoniamColonColonawsColonpolicySlashAWSConnector = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSDataPipeline_FullAccess")
+  @js.native
+  val AWSDataPipelineFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDataPipeline_FullAccess = js.native
+  
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSDataPipeline_PowerUser")
+  @js.native
+  val AWSDataPipelinePowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAWSDataPipeline_PowerUser = js.native
+  
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSDataPipelineRole")
+  @js.native
   val AWSDataPipelineRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSDataPipelineRole` = js.native
   
-  val AWSDataPipeline_FullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDataPipeline_FullAccess = js.native
-  
-  val AWSDataPipeline_PowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAWSDataPipeline_PowerUser = js.native
-  
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSDeviceFarmFullAccess")
+  @js.native
   val AWSDeviceFarmFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDeviceFarmFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSDirectConnectFullAccess")
+  @js.native
   val AWSDirectConnectFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDirectConnectFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSDirectConnectReadOnlyAccess")
+  @js.native
   val AWSDirectConnectReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDirectConnectReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSDirectoryServiceFullAccess")
+  @js.native
   val AWSDirectoryServiceFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDirectoryServiceFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSDirectoryServiceReadOnlyAccess")
+  @js.native
   val AWSDirectoryServiceReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDirectoryServiceReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSElasticBeanstakWorkerTier")
+  @js.native
   val AWSElasticBeanstakWorkerTier: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkWorkerTier = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSElasticBeanstalkCustomPlatformforEC2Role")
+  @js.native
   val AWSElasticBeanstalkCustomPlatformforEC2Role: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkCustomPlatformforEC2Role = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSElasticBeanstalkEnhancedHealth")
+  @js.native
   val AWSElasticBeanstalkEnhancedHealth: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSElasticBeanstalkEnhancedHealth` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSElasticBeanstalkFullAccess")
+  @js.native
   val AWSElasticBeanstalkFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSElasticBeanstalkMulticontainerDocker")
+  @js.native
   val AWSElasticBeanstalkMulticontainerDocker: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkMulticontainerDocker = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSElasticBeanstalkReadOnlyAccess")
+  @js.native
   val AWSElasticBeanstalkReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSElasticBeanstalkService")
+  @js.native
   val AWSElasticBeanstalkService: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSElasticBeanstalkService` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSElasticBeanstalkWebTier")
+  @js.native
   val AWSElasticBeanstalkWebTier: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkWebTier = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSGreengrassFullccess")
+  @js.native
   val AWSGreengrassFullccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSGreengrassFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSGreengrassResourceAccessRolePolicy")
+  @js.native
   val AWSGreengrassResourceAccessRolePolicy: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSGreengrassResourceAccessRolePolicy` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSHealthFullAccess")
+  @js.native
   val AWSHealthFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSHealthFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSImportExportFullAccess")
+  @js.native
   val AWSImportExportFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSImportExportFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSImportExportReadOnlyAccess")
+  @js.native
   val AWSImportExportReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSImportExportReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSIoTConfigAccess")
+  @js.native
   val AWSIoTConfigAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSIoTConfigAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSIoTConfigReadOnlyAccess")
+  @js.native
   val AWSIoTConfigReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSIoTConfigReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSIoTDataAccess")
+  @js.native
   val AWSIoTDataAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSIoTDataAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSIoTFullAccess")
+  @js.native
   val AWSIoTFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSIoTFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSIoTLogging")
+  @js.native
   val AWSIoTLogging: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSIoTLogging` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSIoTRuleActions")
+  @js.native
   val AWSIoTRuleActions: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSIoTRuleActions` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSKeyManagementServicePowerUser")
+  @js.native
   val AWSKeyManagementServicePowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAWSKeyManagementServicePowerUser = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaBasicExecutionRole")
+  @js.native
   val AWSLambdaBasicExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaBasicExecutionRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaDynamoDBExecutionRole")
+  @js.native
   val AWSLambdaDynamoDBExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaDynamoDBExecutionRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaENIManagementAccess")
+  @js.native
   val AWSLambdaENIManagementAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaENIManagementAccess` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaExecute")
+  @js.native
   val AWSLambdaExecute: arnColonawsColoniamColonColonawsColonpolicySlashAWSLambdaExecute = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaFullAccess")
+  @js.native
   val AWSLambdaFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSLambdaFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaInvocationDynamoDB")
+  @js.native
   val AWSLambdaInvocationDynamoDB: `arnColonawsColoniamColonColonawsColonpolicySlashAWSLambdaInvocation-DynamoDB` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaKinesisExecutionRole")
+  @js.native
   val AWSLambdaKinesisExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaKinesisExecutionRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaReadOnlyAccess")
+  @js.native
   val AWSLambdaReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSLambdaReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaRole")
+  @js.native
   val AWSLambdaRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaSQSQueueExecutionRole")
+  @js.native
   val AWSLambdaSQSQueueExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaSQSQueueExecutionRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSLambdaVPCAccessExecutionRole")
+  @js.native
   val AWSLambdaVPCAccessExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaVPCAccessExecutionRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSMarketplaceFullAccess")
+  @js.native
   val AWSMarketplaceFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSMarketplaceFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSMarketplaceGetEntitlements")
+  @js.native
   val AWSMarketplaceGetEntitlements: arnColonawsColoniamColonColonawsColonpolicySlashAWSMarketplaceGetEntitlements = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSMarketplaceManageSubscriptions")
+  @js.native
   val AWSMarketplaceManageSubscriptions: arnColonawsColoniamColonColonawsColonpolicySlashAWSMarketplaceManageSubscriptions = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSMarketplaceMeteringFullAccess")
+  @js.native
   val AWSMarketplaceMeteringFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSMarketplaceMeteringFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSMarketplaceReadonly")
+  @js.native
   val AWSMarketplaceReadonly: `arnColonawsColoniamColonColonawsColonpolicySlashAWSMarketplaceRead-only` = js.native
   
-  val AWSMobileHub_FullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSMobileHub_FullAccess = js.native
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSMobileHub_FullAccess")
+  @js.native
+  val AWSMobileHubFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSMobileHub_FullAccess = js.native
   
-  val AWSMobileHub_ReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAWSMobileHub_ReadOnly = js.native
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSMobileHub_ReadOnly")
+  @js.native
+  val AWSMobileHubReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAWSMobileHub_ReadOnly = js.native
   
-  val AWSMobileHub_ServiceUseOnly: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSMobileHub_ServiceUseOnly` = js.native
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSMobileHub_ServiceUseOnly")
+  @js.native
+  val AWSMobileHubServiceUseOnly: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSMobileHub_ServiceUseOnly` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSOpsWorksCMInstanceProfileRole")
+  @js.native
   val AWSOpsWorksCMInstanceProfileRole: arnColonawsColoniamColonColonawsColonpolicySlashAWSOpsWorksCMInstanceProfileRole = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSOpsWorksCMServiceRole")
+  @js.native
   val AWSOpsWorksCMServiceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSOpsWorksCMServiceRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSOpsWorksCloudWatchLogs")
+  @js.native
   val AWSOpsWorksCloudWatchLogs: arnColonawsColoniamColonColonawsColonpolicySlashAWSOpsWorksCloudWatchLogs = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSOpsWorksFullAccess")
+  @js.native
   val AWSOpsWorksFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSOpsWorksFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSOpsWorksInstanceRegistration")
+  @js.native
   val AWSOpsWorksInstanceRegistration: arnColonawsColoniamColonColonawsColonpolicySlashAWSOpsWorksInstanceRegistration = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSOpsWorksRegisterCLI")
+  @js.native
   val AWSOpsWorksRegisterCLI: arnColonawsColoniamColonColonawsColonpolicySlashAWSOpsWorksRegisterCLI = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSOpsWorksRole")
+  @js.native
   val AWSOpsWorksRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSOpsWorksRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSQuickSightDescribeRD")
+  @js.native
   val AWSQuickSightDescribeRD: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSQuickSightDescribeRDS` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSQuickSightDescribeRedshift")
+  @js.native
   val AWSQuickSightDescribeRedshift: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSQuickSightDescribeRedshift` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSQuickSightListIAM")
+  @js.native
   val AWSQuickSightListIAM: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSQuickSightListIAM` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSQuicksightAthenaAccess")
+  @js.native
   val AWSQuicksightAthenaAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSQuicksightAthenaAccess` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSStepFunctionsConsoleFullAccess")
+  @js.native
   val AWSStepFunctionsConsoleFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSStepFunctionsConsoleFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSStepFunctionsFullAccess")
+  @js.native
   val AWSStepFunctionsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSStepFunctionsFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSStepFunctionsReadOnlyAccess")
+  @js.native
   val AWSStepFunctionsReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSStepFunctionsReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSStorageGatewayFullAccess")
+  @js.native
   val AWSStorageGatewayFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSStorageGatewayFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSStorageGatewayReadOnlyAccess")
+  @js.native
   val AWSStorageGatewayReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSStorageGatewayReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSSupportAccess")
+  @js.native
   val AWSSupportAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSSupportAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSWAFFullAccess")
+  @js.native
   val AWSWAFFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSWAFFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSWAFReadOnlyAccess")
+  @js.native
   val AWSWAFReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSWAFReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSXRayDaemonWriteAccess")
+  @js.native
   val AWSXRayDaemonWriteAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSXRayDaemonWriteAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSXrayFullAccess")
+  @js.native
   val AWSXrayFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSXrayFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSXrayReadOnlyAccess")
+  @js.native
   val AWSXrayReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSXrayReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AWSXrayWriteOnlyAccess")
+  @js.native
   val AWSXrayWriteOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSXrayWriteOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AdministratorAccess")
+  @js.native
   val AdministratorAccess: arnColonawsColoniamColonColonawsColonpolicySlashAdministratorAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonAPIGatewayAdministrator")
+  @js.native
   val AmazonAPIGatewayAdministrator: arnColonawsColoniamColonColonawsColonpolicySlashAmazonAPIGatewayAdministrator = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonAPIGatewayInvokeFullAccess")
+  @js.native
   val AmazonAPIGatewayInvokeFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonAPIGatewayInvokeFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonAPIGatewayPushToCloudWatchLogs")
+  @js.native
   val AmazonAPIGatewayPushToCloudWatchLogs: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonAPIGatewayPushToCloudWatchLogs` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonAppStreamFullAccess")
+  @js.native
   val AmazonAppStreamFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonAppStreamFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonAppStreamReadOnlyAccess")
+  @js.native
   val AmazonAppStreamReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonAppStreamReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonAppStreamServiceAccess")
+  @js.native
   val AmazonAppStreamServiceAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonAppStreamServiceAccess` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonAthenaFullAccess")
+  @js.native
   val AmazonAthenaFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonAthenaFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonCloudDirectoryFullAccess")
+  @js.native
   val AmazonCloudDirectoryFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonCloudDirectoryFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonCloudDirectoryReadOnlyAccess")
+  @js.native
   val AmazonCloudDirectoryReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonCloudDirectoryReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonCognitoDeveloperAuthenticatedIdentities")
+  @js.native
   val AmazonCognitoDeveloperAuthenticatedIdentities: arnColonawsColoniamColonColonawsColonpolicySlashAmazonCognitoDeveloperAuthenticatedIdentities = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonCognitoPowerUser")
+  @js.native
   val AmazonCognitoPowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAmazonCognitoPowerUser = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonCognitoReadOnly")
+  @js.native
   val AmazonCognitoReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonCognitoReadOnly = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonDMSCloudWatchLogsRole")
+  @js.native
   val AmazonDMSCloudWatchLogsRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonDMSCloudWatchLogsRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonDMSRedshiftS3Role")
+  @js.native
   val AmazonDMSRedshiftS3Role: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonDMSRedshiftS3Role` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonDMSVPCManagementRole")
+  @js.native
   val AmazonDMSVPCManagementRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonDMSVPCManagementRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonDRSVPCManagement")
+  @js.native
   val AmazonDRSVPCManagement: arnColonawsColoniamColonColonawsColonpolicySlashAmazonDRSVPCManagement = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonDynamoDBFullAccess")
+  @js.native
   val AmazonDynamoDBFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonDynamoDBFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonDynamoDBFullAccesswithDataPipeline")
+  @js.native
   val AmazonDynamoDBFullAccesswithDataPipeline: arnColonawsColoniamColonColonawsColonpolicySlashAmazonDynamoDBFullAccesswithDataPipeline = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonDynamoDBReadOnlyAccess")
+  @js.native
   val AmazonDynamoDBReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonDynamoDBReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2ContainerRegistryFullAccess")
+  @js.native
   val AmazonEC2ContainerRegistryFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ContainerRegistryFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2ContainerRegistryPowerUser")
+  @js.native
   val AmazonEC2ContainerRegistryPowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ContainerRegistryPowerUser = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2ContainerRegistryReadOnly")
+  @js.native
   val AmazonEC2ContainerRegistryReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ContainerRegistryReadOnly = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2ContainerServiceAutoscaleRole")
+  @js.native
   val AmazonEC2ContainerServiceAutoscaleRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2ContainerServiceAutoscaleRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2ContainerServiceFullAccess")
+  @js.native
   val AmazonEC2ContainerServiceFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ContainerServiceFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2ContainerServiceRole")
+  @js.native
   val AmazonEC2ContainerServiceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2ContainerServiceRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2ContainerServiceforEC2Role")
+  @js.native
   val AmazonEC2ContainerServiceforEC2Role: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2ContainerServiceforEC2Role` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2FullAccess")
+  @js.native
   val AmazonEC2FullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2FullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2ReadOnlyAccess")
+  @js.native
   val AmazonEC2ReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2ReportsAccess")
+  @js.native
   val AmazonEC2ReportsAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ReportsAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2RoleforAWSCodeDeploy")
+  @js.native
   val AmazonEC2RoleforAWSCodeDeploy: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2RoleforAWSCodeDeploy` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2RoleforDataPipelineRole")
+  @js.native
   val AmazonEC2RoleforDataPipelineRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2RoleforDataPipelineRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2RoleforSSM")
+  @js.native
   val AmazonEC2RoleforSSM: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2RoleforSSM` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2SpotFleetAutoscaleRole")
+  @js.native
   val AmazonEC2SpotFleetAutoscaleRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2SpotFleetAutoscaleRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2SpotFleetRole")
+  @js.native
   val AmazonEC2SpotFleetRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2SpotFleetRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonEC2SpotFleetTaggingRole")
+  @js.native
   val AmazonEC2SpotFleetTaggingRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2SpotFleetTaggingRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonESFullAccess")
+  @js.native
   val AmazonESFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonESFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonESReadOnlyAccess")
+  @js.native
   val AmazonESReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonESReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElastiCacheFullAccess")
+  @js.native
   val AmazonElastiCacheFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElastiCacheFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElastiCacheReadOnlyAccess")
+  @js.native
   val AmazonElastiCacheReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElastiCacheReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticFileSystemFullAccess")
+  @js.native
   val AmazonElasticFileSystemFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticFileSystemFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticFileSystemReadOnlyAccess")
+  @js.native
   val AmazonElasticFileSystemReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticFileSystemReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticMapReduceFullAccess")
+  @js.native
   val AmazonElasticMapReduceFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticMapReduceFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticMapReduceReadOnlyAccess")
+  @js.native
   val AmazonElasticMapReduceReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticMapReduceReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticMapReduceRole")
+  @js.native
   val AmazonElasticMapReduceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonElasticMapReduceRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticMapReduceforAutoScalingRole")
+  @js.native
   val AmazonElasticMapReduceforAutoScalingRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonElasticMapReduceforAutoScalingRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticMapReduceforEC2Role")
+  @js.native
   val AmazonElasticMapReduceforEC2Role: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonElasticMapReduceforEC2Role` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticTranscoderFullAccess")
+  @js.native
   val AmazonElasticTranscoderFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticTranscoderFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticTranscoderJobsSubmitter")
+  @js.native
   val AmazonElasticTranscoderJobsSubmitter: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticTranscoderJobsSubmitter = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticTranscoderReadOnlyAccess")
+  @js.native
   val AmazonElasticTranscoderReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticTranscoderReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonElasticTranscoderRole")
+  @js.native
   val AmazonElasticTranscoderRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonElasticTranscoderRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonGlacierFullAccess")
+  @js.native
   val AmazonGlacierFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonGlacierFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonGlacierReadOnlyAccess")
+  @js.native
   val AmazonGlacierReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonGlacierReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonInspectorFullAccess")
+  @js.native
   val AmazonInspectorFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonInspectorFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonInspectorReadOnlyAccess")
+  @js.native
   val AmazonInspectorReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonInspectorReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonKinesisAnalyticsFullAccess")
+  @js.native
   val AmazonKinesisAnalyticsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisAnalyticsFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonKinesisAnalyticsReadOnly")
+  @js.native
   val AmazonKinesisAnalyticsReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisAnalyticsReadOnly = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonKinesisFirehoseFullAccess")
+  @js.native
   val AmazonKinesisFirehoseFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisFirehoseFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonKinesisFirehoseReadOnlyAccess")
+  @js.native
   val AmazonKinesisFirehoseReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisFirehoseReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonKinesisFullAccess")
+  @js.native
   val AmazonKinesisFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonKinesisReadOnlyAccess")
+  @js.native
   val AmazonKinesisReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonLexFullAccess")
+  @js.native
   val AmazonLexFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonLexFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonLexReadOnly")
+  @js.native
   val AmazonLexReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonLexReadOnly = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonLexRunBotsOnly")
+  @js.native
   val AmazonLexRunBotsOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonLexRunBotsOnly = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMachineLearningBatchPredictionsAccess")
+  @js.native
   val AmazonMachineLearningBatchPredictionsAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningBatchPredictionsAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMachineLearningCreateOnlyAccess")
+  @js.native
   val AmazonMachineLearningCreateOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningCreateOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMachineLearningFullAccess")
+  @js.native
   val AmazonMachineLearningFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMachineLearningManageRealTimeEndpointOnlyAccess")
+  @js.native
   val AmazonMachineLearningManageRealTimeEndpointOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningManageRealTimeEndpointOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMachineLearningReadOnlyAccess")
+  @js.native
   val AmazonMachineLearningReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMachineLearningRealTimePredictionOnlyAccess")
+  @js.native
   val AmazonMachineLearningRealTimePredictionOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningRealTimePredictionOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMachineLearningRoleforRedshiftDataSource")
+  @js.native
   val AmazonMachineLearningRoleforRedshiftDataSource: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonMachineLearningRoleforRedshiftDataSource` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMechanicalTurkFullAccess")
+  @js.native
   val AmazonMechanicalTurkFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMechanicalTurkFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMechanicalTurkReadOnly")
+  @js.native
   val AmazonMechanicalTurkReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMechanicalTurkReadOnly = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMobileAnalyticsFinancialReportAccess")
+  @js.native
   val AmazonMobileAnalyticsFinancialReportAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMobileAnalyticsFinancialReportAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMobileAnalyticsFullAccess")
+  @js.native
   val AmazonMobileAnalyticsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMobileAnalyticsFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMobileAnalyticsNonfinancialReportAccess")
+  @js.native
   val AmazonMobileAnalyticsNonfinancialReportAccess: `arnColonawsColoniamColonColonawsColonpolicySlashAmazonMobileAnalyticsNon-financialReportAccess` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonMobileAnalyticsWriteOnlyAccess")
+  @js.native
   val AmazonMobileAnalyticsWriteOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMobileAnalyticsWriteOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonPollyFullAccess")
+  @js.native
   val AmazonPollyFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonPollyFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonPollyReadOnlyAccess")
+  @js.native
   val AmazonPollyReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonPollyReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRDSDataFullAccess")
+  @js.native
   val AmazonRDSDataFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRDSDataFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRDSDirectoryServiceAccess")
+  @js.native
   val AmazonRDSDirectoryServiceAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonRDSDirectoryServiceAccess` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRDSEnhancedMonitoringRole")
+  @js.native
   val AmazonRDSEnhancedMonitoringRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonRDSEnhancedMonitoringRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRDSFullAccess")
+  @js.native
   val AmazonRDSFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRDSFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRDSReadOnlyAccess")
+  @js.native
   val AmazonRDSReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRDSReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRedshiftFullAccess")
+  @js.native
   val AmazonRedshiftFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRedshiftFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRedshiftReadOnlyAccess")
+  @js.native
   val AmazonRedshiftReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRedshiftReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRekognitionFullAccess")
+  @js.native
   val AmazonRekognitionFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRekognitionFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRekognitionReadOnlyAccess")
+  @js.native
   val AmazonRekognitionReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRekognitionReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRoute53DomainsFullAccess")
+  @js.native
   val AmazonRoute53DomainsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRoute53DomainsFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRoute53DomainsReadOnlyAccess")
+  @js.native
   val AmazonRoute53DomainsReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRoute53DomainsReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRoute53FullAccess")
+  @js.native
   val AmazonRoute53FullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRoute53FullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonRoute53ReadOnlyAccess")
+  @js.native
   val AmazonRoute53ReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRoute53ReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonS3FullAccess")
+  @js.native
   val AmazonS3FullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonS3FullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonS3ReadOnlyAccess")
+  @js.native
   val AmazonS3ReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonS3ReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSESFullAccess")
+  @js.native
   val AmazonSESFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSESFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSESReadOnlyAccess")
+  @js.native
   val AmazonSESReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSESReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSNSFullAccess")
+  @js.native
   val AmazonSNSFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSNSFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSNSReadOnlyAccess")
+  @js.native
   val AmazonSNSReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSNSReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSNSRole")
+  @js.native
   val AmazonSNSRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonSNSRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSQSFullAccess")
+  @js.native
   val AmazonSQSFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSQSFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSQSReadOnlyAccess")
+  @js.native
   val AmazonSQSReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSQSReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSSMAutomationApproverAccess")
+  @js.native
   val AmazonSSMAutomationApproverAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMAutomationApproverAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSSMAutomationRole")
+  @js.native
   val AmazonSSMAutomationRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonSSMAutomationRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSSMDirectoryServiceAccess")
+  @js.native
   val AmazonSSMDirectoryServiceAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMDirectoryServiceAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSSMFullAccess")
+  @js.native
   val AmazonSSMFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSSMMaintenanceWindowRole")
+  @js.native
   val AmazonSSMMaintenanceWindowRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonSSMMaintenanceWindowRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSSMManagedInstanceCore")
+  @js.native
   val AmazonSSMManagedInstanceCore: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMManagedInstanceCore = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSSMPatchAssociation")
+  @js.native
   val AmazonSSMPatchAssociation: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMPatchAssociation = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonSSMReadOnlyAccess")
+  @js.native
   val AmazonSSMReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonVPCFullAccess")
+  @js.native
   val AmazonVPCFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonVPCFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonVPCReadOnlyAccess")
+  @js.native
   val AmazonVPCReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonVPCReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonWorkMailFullAccess")
+  @js.native
   val AmazonWorkMailFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonWorkMailFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonWorkMailReadOnlyAccess")
+  @js.native
   val AmazonWorkMailReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonWorkMailReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonWorkSpacesAdmin")
+  @js.native
   val AmazonWorkSpacesAdmin: arnColonawsColoniamColonColonawsColonpolicySlashAmazonWorkSpacesAdmin = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonWorkSpacesApplicationManagerAdminAccess")
+  @js.native
   val AmazonWorkSpacesApplicationManagerAdminAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonWorkSpacesApplicationManagerAdminAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonZocaloFullAccess")
+  @js.native
   val AmazonZocaloFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonZocaloFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AmazonZocaloReadOnlyAccess")
+  @js.native
   val AmazonZocaloReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonZocaloReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ApplicationAutoScalingForAmazonAppStreamAccess")
+  @js.native
   val ApplicationAutoScalingForAmazonAppStreamAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashApplicationAutoScalingForAmazonAppStreamAccess` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AutoScalingConsoleFullAccess")
+  @js.native
   val AutoScalingConsoleFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAutoScalingConsoleFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AutoScalingConsoleReadOnlyAccess")
+  @js.native
   val AutoScalingConsoleReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAutoScalingConsoleReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AutoScalingFullAccess")
+  @js.native
   val AutoScalingFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAutoScalingFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AutoScalingNotificationAccessRole")
+  @js.native
   val AutoScalingNotificationAccessRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAutoScalingNotificationAccessRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.AutoScalingReadOnlyAccess")
+  @js.native
   val AutoScalingReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAutoScalingReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.Billing")
+  @js.native
   val Billing: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashBilling` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudFrontFullAccess")
+  @js.native
   val CloudFrontFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudFrontFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudFrontReadOnlyAccess")
+  @js.native
   val CloudFrontReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudFrontReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudSearchFullAccess")
+  @js.native
   val CloudSearchFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudSearchFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudSearchReadOnlyAccess")
+  @js.native
   val CloudSearchReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudSearchReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudWatchActionsEC2Access")
+  @js.native
   val CloudWatchActionsEC2Access: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchActionsEC2Access = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudWatchEventsBuiltInTargetExecutionAccess")
+  @js.native
   val CloudWatchEventsBuiltInTargetExecutionAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashCloudWatchEventsBuiltInTargetExecutionAccess` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudWatchEventsFullAccess")
+  @js.native
   val CloudWatchEventsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchEventsFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudWatchEventsInvocationAccess")
+  @js.native
   val CloudWatchEventsInvocationAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashCloudWatchEventsInvocationAccess` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudWatchEventsReadOnlyAccess")
+  @js.native
   val CloudWatchEventsReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchEventsReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudWatchFullAccess")
+  @js.native
   val CloudWatchFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudWatchLogsFullAccess")
+  @js.native
   val CloudWatchLogsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchLogsFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudWatchLogsReadOnlyAccess")
+  @js.native
   val CloudWatchLogsReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchLogsReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.CloudWatchReadOnlyAccess")
+  @js.native
   val CloudWatchReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.DataScientist")
+  @js.native
   val DataScientist: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashDataScientist` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.DatabaseAdministrator")
+  @js.native
   val DatabaseAdministrator: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashDatabaseAdministrator` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.IAMFullAccess")
+  @js.native
   val IAMFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashIAMFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.IAMReadOnlyAccess")
+  @js.native
   val IAMReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashIAMReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.IAMSelfManageServiceSpecificCredentials")
+  @js.native
   val IAMSelfManageServiceSpecificCredentials: arnColonawsColoniamColonColonawsColonpolicySlashIAMSelfManageServiceSpecificCredentials = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.IAMUserChangePassword")
+  @js.native
   val IAMUserChangePassword: arnColonawsColoniamColonColonawsColonpolicySlashIAMUserChangePassword = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.IAMUserSSHKeys")
+  @js.native
   val IAMUserSSHKeys: arnColonawsColoniamColonColonawsColonpolicySlashIAMUserSSHKeys = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.NetworkAdministrator")
+  @js.native
   val NetworkAdministrator: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashNetworkAdministrator` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.PowerUserAccess")
+  @js.native
   val PowerUserAccess: arnColonawsColoniamColonColonawsColonpolicySlashPowerUserAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.RDSCloudHsmAuthorizationRole")
+  @js.native
   val RDSCloudHsmAuthorizationRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashRDSCloudHsmAuthorizationRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ReadOnlyAccess")
+  @js.native
   val ReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ResourceGroupsandTagEditorFullAccess")
+  @js.native
   val ResourceGroupsandTagEditorFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashResourceGroupsandTagEditorFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ResourceGroupsandTagEditorReadOnlyAccess")
+  @js.native
   val ResourceGroupsandTagEditorReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashResourceGroupsandTagEditorReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.SecurityAudit")
+  @js.native
   val SecurityAudit: arnColonawsColoniamColonColonawsColonpolicySlashSecurityAudit = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ServerMigrationConnector")
+  @js.native
   val ServerMigrationConnector: arnColonawsColoniamColonColonawsColonpolicySlashServerMigrationConnector = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ServerMigrationServiceRole")
+  @js.native
   val ServerMigrationServiceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashServerMigrationServiceRole` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ServiceCatalogAdminFullAccess")
+  @js.native
   val ServiceCatalogAdminFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogAdminFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ServiceCatalogAdminReadOnlyAccess")
+  @js.native
   val ServiceCatalogAdminReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogAdminReadOnlyAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ServiceCatalogEndUserAccess")
+  @js.native
   val ServiceCatalogEndUserAccess: arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogEndUserAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ServiceCatalogEndUserFullAccess")
+  @js.native
   val ServiceCatalogEndUserFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogEndUserFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.SimpleWorkflowFullAccess")
+  @js.native
   val SimpleWorkflowFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashSimpleWorkflowFullAccess = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.SupportUser")
+  @js.native
   val SupportUser: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashSupportUser` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.SystemAdministrator")
+  @js.native
   val SystemAdministrator: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashSystemAdministrator` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.VMImportExportRoleForAWSConnector")
+  @js.native
   val VMImportExportRoleForAWSConnector: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashVMImportExportRoleForAWSConnector` = js.native
   
+  @JSImport("@pulumi/aws/iam", "ManagedPolicy.ViewOnlyAccess")
+  @js.native
   val ViewOnlyAccess: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashViewOnlyAccess` = js.native
 }

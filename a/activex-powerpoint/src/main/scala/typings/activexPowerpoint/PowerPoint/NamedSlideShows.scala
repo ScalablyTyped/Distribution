@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NamedSlideShows extends js.Object {
+trait NamedSlideShows extends StObject {
   
   def Add(Name: String, safeArrayOfSlideIDs: js.Any): NamedSlideShow = js.native
   
@@ -37,36 +38,24 @@ object NamedSlideShows {
   }
   
   @scala.inline
-  implicit class NamedSlideShowsOps[Self <: NamedSlideShows] (val x: Self) extends AnyVal {
+  implicit class NamedSlideShowsMutableBuilder[Self <: NamedSlideShows] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (String, js.Any) => NamedSlideShow): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: (String, js.Any) => NamedSlideShow): Self = this.set("Add", js.Any.fromFunction2(value))
+    def setItem(value: js.Any => NamedSlideShow): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: js.Any => NamedSlideShow): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotNamedSlideShows_typekey(value: NamedSlideShows): Self = this.set("PowerPoint.NamedSlideShows_typekey", value.asInstanceOf[js.Any])
+    def setPowerPointDotNamedSlideShows_typekey(value: NamedSlideShows): Self = StObject.set(x, "PowerPoint.NamedSlideShows_typekey", value.asInstanceOf[js.Any])
   }
 }

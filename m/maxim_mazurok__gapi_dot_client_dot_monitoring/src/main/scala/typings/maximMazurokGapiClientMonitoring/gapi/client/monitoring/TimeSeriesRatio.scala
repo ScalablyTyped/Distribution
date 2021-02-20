@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeSeriesRatio extends js.Object {
+trait TimeSeriesRatio extends StObject {
   
   /**
     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters) specifying a TimeSeries quantifying bad service, either demanded service that was not provided or demanded
@@ -34,36 +35,24 @@ object TimeSeriesRatio {
   }
   
   @scala.inline
-  implicit class TimeSeriesRatioOps[Self <: TimeSeriesRatio] (val x: Self) extends AnyVal {
+  implicit class TimeSeriesRatioMutableBuilder[Self <: TimeSeriesRatio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadServiceFilter(value: String): Self = StObject.set(x, "badServiceFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadServiceFilterUndefined: Self = StObject.set(x, "badServiceFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoodServiceFilter(value: String): Self = StObject.set(x, "goodServiceFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadServiceFilter(value: String): Self = this.set("badServiceFilter", value.asInstanceOf[js.Any])
+    def setGoodServiceFilterUndefined: Self = StObject.set(x, "goodServiceFilter", js.undefined)
     
     @scala.inline
-    def deleteBadServiceFilter: Self = this.set("badServiceFilter", js.undefined)
+    def setTotalServiceFilter(value: String): Self = StObject.set(x, "totalServiceFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoodServiceFilter(value: String): Self = this.set("goodServiceFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoodServiceFilter: Self = this.set("goodServiceFilter", js.undefined)
-    
-    @scala.inline
-    def setTotalServiceFilter(value: String): Self = this.set("totalServiceFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalServiceFilter: Self = this.set("totalServiceFilter", js.undefined)
+    def setTotalServiceFilterUndefined: Self = StObject.set(x, "totalServiceFilter", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.reactNativeChartsWrapper.mod
 
 import typings.reactNativeChartsWrapper.anon.Angle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineRadarConfig extends js.Object {
+trait LineRadarConfig extends StObject {
   
   var drawFilled: js.UndefOr[Boolean] = js.native
   
@@ -27,48 +28,36 @@ object LineRadarConfig {
   }
   
   @scala.inline
-  implicit class LineRadarConfigOps[Self <: LineRadarConfig] (val x: Self) extends AnyVal {
+  implicit class LineRadarConfigMutableBuilder[Self <: LineRadarConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrawFilled(value: Boolean): Self = StObject.set(x, "drawFilled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawFilledUndefined: Self = StObject.set(x, "drawFilled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillAlpha(value: Double): Self = StObject.set(x, "fillAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawFilled(value: Boolean): Self = this.set("drawFilled", value.asInstanceOf[js.Any])
+    def setFillAlphaUndefined: Self = StObject.set(x, "fillAlpha", js.undefined)
     
     @scala.inline
-    def deleteDrawFilled: Self = this.set("drawFilled", js.undefined)
+    def setFillColor(value: Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillAlpha(value: Double): Self = this.set("fillAlpha", value.asInstanceOf[js.Any])
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def deleteFillAlpha: Self = this.set("fillAlpha", js.undefined)
+    def setFillGradient(value: Angle): Self = StObject.set(x, "fillGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: Color): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setFillGradientUndefined: Self = StObject.set(x, "fillGradient", js.undefined)
     
     @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillGradient(value: Angle): Self = this.set("fillGradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFillGradient: Self = this.set("fillGradient", js.undefined)
-    
-    @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
   }
 }

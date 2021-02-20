@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaBigtableColumnFamily extends js.Object {
+trait SchemaBigtableColumnFamily extends StObject {
   
   /**
     * [Optional] Lists of columns that should be exposed as individual fields
@@ -57,51 +58,39 @@ object SchemaBigtableColumnFamily {
   }
   
   @scala.inline
-  implicit class SchemaBigtableColumnFamilyOps[Self <: SchemaBigtableColumnFamily] (val x: Self) extends AnyVal {
+  implicit class SchemaBigtableColumnFamilyMutableBuilder[Self <: SchemaBigtableColumnFamily] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[SchemaBigtableColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: SchemaBigtableColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: SchemaBigtableColumn*): Self = this.set("columns", js.Array(value :_*))
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[SchemaBigtableColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setFamilyId(value: String): Self = StObject.set(x, "familyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setFamilyIdUndefined: Self = StObject.set(x, "familyId", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setOnlyReadLatest(value: Boolean): Self = StObject.set(x, "onlyReadLatest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyId(value: String): Self = this.set("familyId", value.asInstanceOf[js.Any])
+    def setOnlyReadLatestUndefined: Self = StObject.set(x, "onlyReadLatest", js.undefined)
     
     @scala.inline
-    def deleteFamilyId: Self = this.set("familyId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyReadLatest(value: Boolean): Self = this.set("onlyReadLatest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnlyReadLatest: Self = this.set("onlyReadLatest", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

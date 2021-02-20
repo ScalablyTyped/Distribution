@@ -1,12 +1,13 @@
 package typings.expoLocation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo-location/build/GeolocationPolyfill", JSImport.Namespace)
-@js.native
-object geolocationPolyfillMod extends js.Object {
+object geolocationPolyfillMod {
   
+  @JSImport("expo-location/build/GeolocationPolyfill", "installWebGeolocationPolyfill")
+  @js.native
   def installWebGeolocationPolyfill(): Unit = js.native
 }

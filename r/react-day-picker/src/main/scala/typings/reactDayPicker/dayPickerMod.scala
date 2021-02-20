@@ -1,16 +1,68 @@
 package typings.reactDayPicker
 
 import typings.react.mod.Component
+import typings.reactDayPicker.dateUtilsMod.DateUtils
+import typings.reactDayPicker.localeUtilsMod.LocaleUtils
+import typings.reactDayPicker.modifiersMod.DayModifiers
+import typings.reactDayPicker.modifiersMod.Modifiers
+import typings.reactDayPicker.modifiersMod.ModifiersUtils
 import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-day-picker/types/DayPicker", JSImport.Namespace)
-@js.native
-object dayPickerMod extends js.Object {
+object dayPickerMod {
+  
+  @JSImport("react-day-picker/types/DayPicker", JSImport.Default)
+  @js.native
+  class default () extends DayPicker
+  /* static members */
+  object default {
+    
+    @JSImport("react-day-picker/types/DayPicker", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-day-picker/types/DayPicker", "default.DateUtils")
+    @js.native
+    def DateUtils: typings.reactDayPicker.dateUtilsMod.DateUtils = js.native
+    @scala.inline
+    def DateUtils_=(x: DateUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateUtils")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-day-picker/types/DayPicker", "default.DayModifiers")
+    @js.native
+    def DayModifiers: typings.reactDayPicker.modifiersMod.DayModifiers = js.native
+    @scala.inline
+    def DayModifiers_=(x: DayModifiers): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DayModifiers")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-day-picker/types/DayPicker", "default.LocaleUtils")
+    @js.native
+    def LocaleUtils: typings.reactDayPicker.localeUtilsMod.LocaleUtils = js.native
+    @scala.inline
+    def LocaleUtils_=(x: LocaleUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocaleUtils")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-day-picker/types/DayPicker", "default.Modifiers")
+    @js.native
+    def Modifiers: typings.reactDayPicker.modifiersMod.Modifiers = js.native
+    
+    @JSImport("react-day-picker/types/DayPicker", "default.ModifiersUtils")
+    @js.native
+    def ModifiersUtils: typings.reactDayPicker.modifiersMod.ModifiersUtils = js.native
+    @scala.inline
+    def ModifiersUtils_=(x: ModifiersUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModifiersUtils")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def Modifiers_=(x: Modifiers): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Modifiers")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-day-picker/types/DayPicker", "default.VERSION")
+    @js.native
+    def VERSION: String = js.native
+    @scala.inline
+    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait DayPicker
@@ -29,24 +81,5 @@ object dayPickerMod extends js.Object {
     def showPreviousMonth(): Unit = js.native
     
     def showPreviousYear(): Unit = js.native
-  }
-  
-  @js.native
-  class default () extends DayPicker
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var DateUtils: typings.reactDayPicker.dateUtilsMod.DateUtils = js.native
-    
-    var DayModifiers: typings.reactDayPicker.modifiersMod.DayModifiers = js.native
-    
-    var LocaleUtils: typings.reactDayPicker.localeUtilsMod.LocaleUtils = js.native
-    
-    var Modifiers: typings.reactDayPicker.modifiersMod.Modifiers = js.native
-    
-    var ModifiersUtils: typings.reactDayPicker.modifiersMod.ModifiersUtils = js.native
-    
-    var VERSION: String = js.native
   }
 }

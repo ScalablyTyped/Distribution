@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.chart
 
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,33 +42,21 @@ object ChartDataChangeEvent {
   }
   
   @scala.inline
-  implicit class ChartDataChangeEventOps[Self <: ChartDataChangeEvent] (val x: Self) extends AnyVal {
+  implicit class ChartDataChangeEventMutableBuilder[Self <: ChartDataChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndRow(value: Double): Self = StObject.set(x, "EndRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartColumn(value: Double): Self = StObject.set(x, "StartColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: Double): Self = this.set("EndColumn", value.asInstanceOf[js.Any])
+    def setStartRow(value: Double): Self = StObject.set(x, "StartRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndRow(value: Double): Self = this.set("EndRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartColumn(value: Double): Self = this.set("StartColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartRow(value: Double): Self = this.set("StartRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ChartDataChangeType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: ChartDataChangeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

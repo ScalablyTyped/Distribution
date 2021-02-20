@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventDetails extends js.Object {
+trait EventDetails extends StObject {
   
   /**
     * Summary information about the event.
@@ -31,36 +32,24 @@ object EventDetails {
   }
   
   @scala.inline
-  implicit class EventDetailsOps[Self <: EventDetails] (val x: Self) extends AnyVal {
+  implicit class EventDetailsMutableBuilder[Self <: EventDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventDescription(value: EventDescription_): Self = StObject.set(x, "eventDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventDescriptionUndefined: Self = StObject.set(x, "eventDescription", js.undefined)
     
     @scala.inline
-    def setEvent(value: Event): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setEventMetadata(value: eventMetadata): Self = StObject.set(x, "eventMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setEventMetadataUndefined: Self = StObject.set(x, "eventMetadata", js.undefined)
     
     @scala.inline
-    def setEventDescription(value: EventDescription_): Self = this.set("eventDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventDescription: Self = this.set("eventDescription", js.undefined)
-    
-    @scala.inline
-    def setEventMetadata(value: eventMetadata): Self = this.set("eventMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventMetadata: Self = this.set("eventMetadata", js.undefined)
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
   }
 }

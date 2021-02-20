@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Point...
   */
 @js.native
-trait IPoint extends js.Object {
+trait IPoint extends StObject {
   
   /**
     * x-coordinate in pixels.
@@ -31,24 +32,12 @@ object IPoint {
   }
   
   @scala.inline
-  implicit class IPointOps[Self <: IPoint] (val x: Self) extends AnyVal {
+  implicit class IPointMutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQx(value: Double): Self = StObject.set(x, "qx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQx(value: Double): Self = this.set("qx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQy(value: Double): Self = this.set("qy", value.asInstanceOf[js.Any])
+    def setQy(value: Double): Self = StObject.set(x, "qy", value.asInstanceOf[js.Any])
   }
 }

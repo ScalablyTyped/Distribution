@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.mobile.ui
 
 import typings.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollViewOptions extends js.Object {
+trait ScrollViewOptions extends StObject {
   
   var autoBind: js.UndefOr[Boolean] = js.native
   
@@ -49,114 +50,102 @@ object ScrollViewOptions {
   }
   
   @scala.inline
-  implicit class ScrollViewOptionsOps[Self <: ScrollViewOptions] (val x: Self) extends AnyVal {
+  implicit class ScrollViewOptionsMutableBuilder[Self <: ScrollViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBounceVelocityThreshold(value: Double): Self = StObject.set(x, "bounceVelocityThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setBounceVelocityThresholdUndefined: Self = StObject.set(x, "bounceVelocityThreshold", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setChange(value: /* e */ ScrollViewChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBounceVelocityThreshold(value: Double): Self = this.set("bounceVelocityThreshold", value.asInstanceOf[js.Any])
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteBounceVelocityThreshold: Self = this.set("bounceVelocityThreshold", js.undefined)
+    def setChanging(value: /* e */ ScrollViewChangingEvent => Unit): Self = StObject.set(x, "changing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChange(value: /* e */ ScrollViewChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setChangingUndefined: Self = StObject.set(x, "changing", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setContentHeight(value: Double | String): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChanging(value: /* e */ ScrollViewChangingEvent => Unit): Self = this.set("changing", js.Any.fromFunction1(value))
+    def setContentHeightUndefined: Self = StObject.set(x, "contentHeight", js.undefined)
     
     @scala.inline
-    def deleteChanging: Self = this.set("changing", js.undefined)
+    def setDataSource(value: DataSource | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentHeight(value: Double | String): Self = this.set("contentHeight", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteContentHeight: Self = this.set("contentHeight", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: DataSource | js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setEmptyTemplate(value: String): Self = StObject.set(x, "emptyTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEmptyTemplateUndefined: Self = StObject.set(x, "emptyTemplate", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setEnablePager(value: Boolean): Self = StObject.set(x, "enablePager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyTemplate(value: String): Self = this.set("emptyTemplate", value.asInstanceOf[js.Any])
+    def setEnablePagerUndefined: Self = StObject.set(x, "enablePager", js.undefined)
     
     @scala.inline
-    def deleteEmptyTemplate: Self = this.set("emptyTemplate", js.undefined)
+    def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePager(value: Boolean): Self = this.set("enablePager", value.asInstanceOf[js.Any])
+    def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
     
     @scala.inline
-    def deleteEnablePager: Self = this.set("enablePager", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsPerPage(value: Double): Self = this.set("itemsPerPage", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteItemsPerPage: Self = this.set("itemsPerPage", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setRefresh(value: /* e */ ScrollViewRefreshEvent => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: /* e */ ScrollViewRefreshEvent => Unit): Self = this.set("refresh", js.Any.fromFunction1(value))
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    def setVelocityThreshold(value: Double): Self = StObject.set(x, "velocityThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
-    
-    @scala.inline
-    def setVelocityThreshold(value: Double): Self = this.set("velocityThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVelocityThreshold: Self = this.set("velocityThreshold", js.undefined)
+    def setVelocityThresholdUndefined: Self = StObject.set(x, "velocityThreshold", js.undefined)
   }
 }

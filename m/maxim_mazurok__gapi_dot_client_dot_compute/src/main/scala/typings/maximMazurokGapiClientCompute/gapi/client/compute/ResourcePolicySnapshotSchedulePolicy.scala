@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourcePolicySnapshotSchedulePolicy extends js.Object {
+trait ResourcePolicySnapshotSchedulePolicy extends StObject {
   
   /** Retention policy applied to snapshots created by this resource policy. */
   var retentionPolicy: js.UndefOr[ResourcePolicySnapshotSchedulePolicyRetentionPolicy] = js.native
@@ -25,36 +26,24 @@ object ResourcePolicySnapshotSchedulePolicy {
   }
   
   @scala.inline
-  implicit class ResourcePolicySnapshotSchedulePolicyOps[Self <: ResourcePolicySnapshotSchedulePolicy] (val x: Self) extends AnyVal {
+  implicit class ResourcePolicySnapshotSchedulePolicyMutableBuilder[Self <: ResourcePolicySnapshotSchedulePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRetentionPolicy(value: ResourcePolicySnapshotSchedulePolicyRetentionPolicy): Self = StObject.set(x, "retentionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRetentionPolicyUndefined: Self = StObject.set(x, "retentionPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchedule(value: ResourcePolicySnapshotSchedulePolicySchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetentionPolicy(value: ResourcePolicySnapshotSchedulePolicyRetentionPolicy): Self = this.set("retentionPolicy", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def deleteRetentionPolicy: Self = this.set("retentionPolicy", js.undefined)
+    def setSnapshotProperties(value: ResourcePolicySnapshotSchedulePolicySnapshotProperties): Self = StObject.set(x, "snapshotProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: ResourcePolicySnapshotSchedulePolicySchedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
-    
-    @scala.inline
-    def setSnapshotProperties(value: ResourcePolicySnapshotSchedulePolicySnapshotProperties): Self = this.set("snapshotProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotProperties: Self = this.set("snapshotProperties", js.undefined)
+    def setSnapshotPropertiesUndefined: Self = StObject.set(x, "snapshotProperties", js.undefined)
   }
 }

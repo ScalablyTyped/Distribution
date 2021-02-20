@@ -22,6 +22,7 @@ import typings.googlemaps.googlemapsStrings.title_changed
 import typings.googlemaps.googlemapsStrings.visible_changed
 import typings.googlemaps.googlemapsStrings.zindex_changed
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

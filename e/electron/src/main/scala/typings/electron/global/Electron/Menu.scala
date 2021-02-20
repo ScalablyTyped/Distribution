@@ -1,6 +1,7 @@
 package typings.electron.global.Electron
 
 import typings.electron.Electron.MenuItemConstructorOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Menu ()
   extends typings.electron.Electron.Menu
-/* static members */
-@JSGlobal("Electron.Menu")
-@js.native
-object Menu extends js.Object {
+object Menu {
   
   /**
     * Generally, the `template` is an array of `options` for constructing a MenuItem.
@@ -24,6 +22,9 @@ object Menu extends js.Object {
     * You can also attach other fields to the element of the `template` and they will
     * become properties of the constructed menu items.
     */
+  /* static member */
+  @JSGlobal("Electron.Menu.buildFromTemplate")
+  @js.native
   def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | typings.electron.Electron.MenuItem]): typings.electron.Electron.Menu = js.native
   
   /**
@@ -32,6 +33,9 @@ object Menu extends js.Object {
     * **Note:** The returned `Menu` instance doesn't support dynamic addition or
     * removal of menu items. Instance properties can still be dynamically modified.
     */
+  /* static member */
+  @JSGlobal("Electron.Menu.getApplicationMenu")
+  @js.native
   def getApplicationMenu(): typings.electron.Electron.Menu | Null = js.native
   
   /**
@@ -44,6 +48,9 @@ object Menu extends js.Object {
     *
     * @platform darwin
     */
+  /* static member */
+  @JSGlobal("Electron.Menu.sendActionToFirstResponder")
+  @js.native
   def sendActionToFirstResponder(action: String): Unit = js.native
   
   /**
@@ -63,6 +70,11 @@ object Menu extends js.Object {
     * one. It contains standard items such as `File`, `Edit`, `View`, `Window` and
     * `Help`.
     */
+  /* static member */
+  @JSGlobal("Electron.Menu.setApplicationMenu")
+  @js.native
   def setApplicationMenu(): Unit = js.native
+  @JSGlobal("Electron.Menu.setApplicationMenu")
+  @js.native
   def setApplicationMenu(menu: typings.electron.Electron.Menu): Unit = js.native
 }

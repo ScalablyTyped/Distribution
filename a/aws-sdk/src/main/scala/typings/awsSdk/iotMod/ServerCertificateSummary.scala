@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerCertificateSummary extends js.Object {
+trait ServerCertificateSummary extends StObject {
   
   /**
     * The ARN of the server certificate.
@@ -31,36 +32,24 @@ object ServerCertificateSummary {
   }
   
   @scala.inline
-  implicit class ServerCertificateSummaryOps[Self <: ServerCertificateSummary] (val x: Self) extends AnyVal {
+  implicit class ServerCertificateSummaryMutableBuilder[Self <: ServerCertificateSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServerCertificateArn(value: AcmCertificateArn): Self = StObject.set(x, "serverCertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServerCertificateArnUndefined: Self = StObject.set(x, "serverCertificateArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServerCertificateStatus(value: ServerCertificateStatus): Self = StObject.set(x, "serverCertificateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertificateArn(value: AcmCertificateArn): Self = this.set("serverCertificateArn", value.asInstanceOf[js.Any])
+    def setServerCertificateStatusDetail(value: ServerCertificateStatusDetail): Self = StObject.set(x, "serverCertificateStatusDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServerCertificateArn: Self = this.set("serverCertificateArn", js.undefined)
+    def setServerCertificateStatusDetailUndefined: Self = StObject.set(x, "serverCertificateStatusDetail", js.undefined)
     
     @scala.inline
-    def setServerCertificateStatus(value: ServerCertificateStatus): Self = this.set("serverCertificateStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerCertificateStatus: Self = this.set("serverCertificateStatus", js.undefined)
-    
-    @scala.inline
-    def setServerCertificateStatusDetail(value: ServerCertificateStatusDetail): Self = this.set("serverCertificateStatusDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerCertificateStatusDetail: Self = this.set("serverCertificateStatusDetail", js.undefined)
+    def setServerCertificateStatusUndefined: Self = StObject.set(x, "serverCertificateStatus", js.undefined)
   }
 }

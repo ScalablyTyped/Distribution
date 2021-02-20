@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ResourcePolicyRule is a predicate that matches some resource requests, testing the request's verb and the target resource. A ResourcePolicyRule matches a resource request if and only if: (a) at least one member of verbs matches the request, (b) at least one member of apiGroups matches the request, (c) at least one member of resources matches the request, and (d) least one member of namespaces matches the request.
   */
 @js.native
-trait ResourcePolicyRule extends js.Object {
+trait ResourcePolicyRule extends StObject {
   
   /**
     * `apiGroups` is a list of matching API groups and may not be empty. "*" matches all API groups and, if present, must be the only entry. Required.
@@ -49,51 +50,39 @@ object ResourcePolicyRule {
   }
   
   @scala.inline
-  implicit class ResourcePolicyRuleOps[Self <: ResourcePolicyRule] (val x: Self) extends AnyVal {
+  implicit class ResourcePolicyRuleMutableBuilder[Self <: ResourcePolicyRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "apiGroups", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterScope(value: Input[Boolean]): Self = StObject.set(x, "clusterScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiGroupsVarargs(value: Input[String]*): Self = this.set("apiGroups", js.Array(value :_*))
+    def setClusterScopeUndefined: Self = StObject.set(x, "clusterScope", js.undefined)
     
     @scala.inline
-    def setApiGroups(value: Input[js.Array[Input[String]]]): Self = this.set("apiGroups", value.asInstanceOf[js.Any])
+    def setNamespaces(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesVarargs(value: Input[String]*): Self = this.set("resources", js.Array(value :_*))
+    def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
     @scala.inline
-    def setResources(value: Input[js.Array[Input[String]]]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setNamespacesVarargs(value: Input[String]*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
     
     @scala.inline
-    def setVerbsVarargs(value: Input[String]*): Self = this.set("verbs", js.Array(value :_*))
+    def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerbs(value: Input[js.Array[Input[String]]]): Self = this.set("verbs", value.asInstanceOf[js.Any])
+    def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setClusterScope(value: Input[Boolean]): Self = this.set("clusterScope", value.asInstanceOf[js.Any])
+    def setVerbs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "verbs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClusterScope: Self = this.set("clusterScope", js.undefined)
-    
-    @scala.inline
-    def setNamespacesVarargs(value: Input[String]*): Self = this.set("namespaces", js.Array(value :_*))
-    
-    @scala.inline
-    def setNamespaces(value: Input[js.Array[Input[String]]]): Self = this.set("namespaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaces: Self = this.set("namespaces", js.undefined)
+    def setVerbsVarargs(value: Input[String]*): Self = StObject.set(x, "verbs", js.Array(value :_*))
   }
 }

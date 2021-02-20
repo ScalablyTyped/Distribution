@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfoDto extends js.Object {
+trait InfoDto extends StObject {
   
   var attack: Double = js.native
   
@@ -24,30 +25,18 @@ object InfoDto {
   }
   
   @scala.inline
-  implicit class InfoDtoOps[Self <: InfoDto] (val x: Self) extends AnyVal {
+  implicit class InfoDtoMutableBuilder[Self <: InfoDto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttack(value: Double): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefense(value: Double): Self = StObject.set(x, "defense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDifficulty(value: Double): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttack(value: Double): Self = this.set("attack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefense(value: Double): Self = this.set("defense", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDifficulty(value: Double): Self = this.set("difficulty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMagic(value: Double): Self = this.set("magic", value.asInstanceOf[js.Any])
+    def setMagic(value: Double): Self = StObject.set(x, "magic", value.asInstanceOf[js.Any])
   }
 }

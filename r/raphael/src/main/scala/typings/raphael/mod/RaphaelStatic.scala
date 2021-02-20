@@ -21,6 +21,7 @@ import typings.raphael.raphaelStrings.undefined
 import typings.std.HTMLElement
 import typings.std.Record
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

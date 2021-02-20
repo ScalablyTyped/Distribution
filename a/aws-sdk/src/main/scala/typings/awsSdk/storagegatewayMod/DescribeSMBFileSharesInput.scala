@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSMBFileSharesInput extends js.Object {
+trait DescribeSMBFileSharesInput extends StObject {
   
   /**
     * An array containing the Amazon Resource Name (ARN) of each file share to be described.
@@ -21,24 +22,12 @@ object DescribeSMBFileSharesInput {
   }
   
   @scala.inline
-  implicit class DescribeSMBFileSharesInputOps[Self <: DescribeSMBFileSharesInput] (val x: Self) extends AnyVal {
+  implicit class DescribeSMBFileSharesInputMutableBuilder[Self <: DescribeSMBFileSharesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileShareARNList(value: FileShareARNList): Self = StObject.set(x, "FileShareARNList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFileShareARNListVarargs(value: FileShareARN*): Self = this.set("FileShareARNList", js.Array(value :_*))
-    
-    @scala.inline
-    def setFileShareARNList(value: FileShareARNList): Self = this.set("FileShareARNList", value.asInstanceOf[js.Any])
+    def setFileShareARNListVarargs(value: FileShareARN*): Self = StObject.set(x, "FileShareARNList", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.umbraco.umbraco.resources
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description Loads in data for data types
   **/
 @js.native
-trait IDataTypeResource extends js.Object {
+trait IDataTypeResource extends StObject {
   
   /**
     * @ngdoc method
@@ -143,36 +144,24 @@ object IDataTypeResource {
   }
   
   @scala.inline
-  implicit class IDataTypeResourceOps[Self <: IDataTypeResource] (val x: Self) extends AnyVal {
+  implicit class IDataTypeResourceMutableBuilder[Self <: IDataTypeResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "deleteById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAll(value: () => js.Any): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteById(value: Double => IPromise[IResourcePromise]): Self = this.set("deleteById", js.Any.fromFunction1(value))
+    def setGetPreValues(value: (String, Double) => IPromise[IResourcePromise]): Self = StObject.set(x, "getPreValues", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAll(value: () => js.Any): Self = this.set("getAll", js.Any.fromFunction0(value))
+    def setGetScaffold(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getScaffold", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetById(value: Double => IPromise[IResourcePromise]): Self = this.set("getById", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPreValues(value: (String, Double) => IPromise[IResourcePromise]): Self = this.set("getPreValues", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetScaffold(value: () => IPromise[IResourcePromise]): Self = this.set("getScaffold", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSave(value: (js.Object, js.Array[_], Boolean) => IPromise[IResourcePromise]): Self = this.set("save", js.Any.fromFunction3(value))
+    def setSave(value: (js.Object, js.Array[_], Boolean) => IPromise[IResourcePromise]): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
   }
 }

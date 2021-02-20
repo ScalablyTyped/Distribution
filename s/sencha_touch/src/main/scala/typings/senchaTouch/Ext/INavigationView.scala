@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,102 +83,90 @@ object INavigationView {
   }
   
   @scala.inline
-  implicit class INavigationViewOps[Self <: INavigationView] (val x: Self) extends AnyVal {
+  implicit class INavigationViewMutableBuilder[Self <: INavigationView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultBackButtonText(value: java.lang.String): Self = StObject.set(x, "defaultBackButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultBackButtonTextUndefined: Self = StObject.set(x, "defaultBackButtonText", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDefaultBackButtonText(value: () => java.lang.String): Self = StObject.set(x, "getDefaultBackButtonText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultBackButtonText(value: java.lang.String): Self = this.set("defaultBackButtonText", value.asInstanceOf[js.Any])
+    def setGetDefaultBackButtonTextUndefined: Self = StObject.set(x, "getDefaultBackButtonText", js.undefined)
     
     @scala.inline
-    def deleteDefaultBackButtonText: Self = this.set("defaultBackButtonText", js.undefined)
+    def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultBackButtonText(value: () => java.lang.String): Self = this.set("getDefaultBackButtonText", js.Any.fromFunction0(value))
+    def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
     
     @scala.inline
-    def deleteGetDefaultBackButtonText: Self = this.set("getDefaultBackButtonText", js.undefined)
+    def setGetNavigationBar(value: () => _): Self = StObject.set(x, "getNavigationBar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLayout(value: () => _): Self = this.set("getLayout", js.Any.fromFunction0(value))
+    def setGetNavigationBarUndefined: Self = StObject.set(x, "getNavigationBar", js.undefined)
     
     @scala.inline
-    def deleteGetLayout: Self = this.set("getLayout", js.undefined)
+    def setGetPreviousItem(value: () => _): Self = StObject.set(x, "getPreviousItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNavigationBar(value: () => _): Self = this.set("getNavigationBar", js.Any.fromFunction0(value))
+    def setGetPreviousItemUndefined: Self = StObject.set(x, "getPreviousItem", js.undefined)
     
     @scala.inline
-    def deleteGetNavigationBar: Self = this.set("getNavigationBar", js.undefined)
+    def setGetUseTitleForBackButtonText(value: () => Boolean): Self = StObject.set(x, "getUseTitleForBackButtonText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPreviousItem(value: () => _): Self = this.set("getPreviousItem", js.Any.fromFunction0(value))
+    def setGetUseTitleForBackButtonTextUndefined: Self = StObject.set(x, "getUseTitleForBackButtonText", js.undefined)
     
     @scala.inline
-    def deleteGetPreviousItem: Self = this.set("getPreviousItem", js.undefined)
+    def setNavigationBar(value: js.Any): Self = StObject.set(x, "navigationBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetUseTitleForBackButtonText(value: () => Boolean): Self = this.set("getUseTitleForBackButtonText", js.Any.fromFunction0(value))
+    def setNavigationBarUndefined: Self = StObject.set(x, "navigationBar", js.undefined)
     
     @scala.inline
-    def deleteGetUseTitleForBackButtonText: Self = this.set("getUseTitleForBackButtonText", js.undefined)
+    def setPop(value: /* count */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNavigationBar(value: js.Any): Self = this.set("navigationBar", value.asInstanceOf[js.Any])
+    def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
     
     @scala.inline
-    def deleteNavigationBar: Self = this.set("navigationBar", js.undefined)
+    def setPush(value: /* view */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPop(value: /* count */ js.UndefOr[js.Any] => IComponent): Self = this.set("pop", js.Any.fromFunction1(value))
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
     @scala.inline
-    def deletePop: Self = this.set("pop", js.undefined)
+    def setReset(value: () => IComponent): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPush(value: /* view */ js.UndefOr[js.Any] => IComponent): Self = this.set("push", js.Any.fromFunction1(value))
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
+    def setSetDefaultBackButtonText(value: /* defaultBackButtonText */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDefaultBackButtonText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReset(value: () => IComponent): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setSetDefaultBackButtonTextUndefined: Self = StObject.set(x, "setDefaultBackButtonText", js.undefined)
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setSetNavigationBar(value: /* navigationBar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setNavigationBar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDefaultBackButtonText(value: /* defaultBackButtonText */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setDefaultBackButtonText", js.Any.fromFunction1(value))
+    def setSetNavigationBarUndefined: Self = StObject.set(x, "setNavigationBar", js.undefined)
     
     @scala.inline
-    def deleteSetDefaultBackButtonText: Self = this.set("setDefaultBackButtonText", js.undefined)
+    def setSetUseTitleForBackButtonText(value: /* useTitleForBackButtonText */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseTitleForBackButtonText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetNavigationBar(value: /* navigationBar */ js.UndefOr[js.Any] => Unit): Self = this.set("setNavigationBar", js.Any.fromFunction1(value))
+    def setSetUseTitleForBackButtonTextUndefined: Self = StObject.set(x, "setUseTitleForBackButtonText", js.undefined)
     
     @scala.inline
-    def deleteSetNavigationBar: Self = this.set("setNavigationBar", js.undefined)
+    def setUseTitleForBackButtonText(value: Boolean): Self = StObject.set(x, "useTitleForBackButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetUseTitleForBackButtonText(value: /* useTitleForBackButtonText */ js.UndefOr[Boolean] => Unit): Self = this.set("setUseTitleForBackButtonText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetUseTitleForBackButtonText: Self = this.set("setUseTitleForBackButtonText", js.undefined)
-    
-    @scala.inline
-    def setUseTitleForBackButtonText(value: Boolean): Self = this.set("useTitleForBackButtonText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseTitleForBackButtonText: Self = this.set("useTitleForBackButtonText", js.undefined)
+    def setUseTitleForBackButtonTextUndefined: Self = StObject.set(x, "useTitleForBackButtonText", js.undefined)
   }
 }

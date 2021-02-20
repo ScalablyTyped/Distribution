@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountPasswordStrengthTypeOption extends js.Object {
+trait AccountPasswordStrengthTypeOption extends StObject {
   
   /**
     * Minimum length of the access code string.
@@ -52,60 +53,48 @@ object AccountPasswordStrengthTypeOption {
   }
   
   @scala.inline
-  implicit class AccountPasswordStrengthTypeOptionOps[Self <: AccountPasswordStrengthTypeOption] (val x: Self) extends AnyVal {
+  implicit class AccountPasswordStrengthTypeOptionMutableBuilder[Self <: AccountPasswordStrengthTypeOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinimumLength(value: String): Self = StObject.set(x, "minimumLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinimumLengthUndefined: Self = StObject.set(x, "minimumLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumLength(value: String): Self = this.set("minimumLength", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinimumLength: Self = this.set("minimumLength", js.undefined)
+    def setPasswordIncludeDigit(value: String): Self = StObject.set(x, "passwordIncludeDigit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPasswordIncludeDigitOrSpecialCharacter(value: String): Self = StObject.set(x, "passwordIncludeDigitOrSpecialCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPasswordIncludeDigitOrSpecialCharacterUndefined: Self = StObject.set(x, "passwordIncludeDigitOrSpecialCharacter", js.undefined)
     
     @scala.inline
-    def setPasswordIncludeDigit(value: String): Self = this.set("passwordIncludeDigit", value.asInstanceOf[js.Any])
+    def setPasswordIncludeDigitUndefined: Self = StObject.set(x, "passwordIncludeDigit", js.undefined)
     
     @scala.inline
-    def deletePasswordIncludeDigit: Self = this.set("passwordIncludeDigit", js.undefined)
+    def setPasswordIncludeLowerCase(value: String): Self = StObject.set(x, "passwordIncludeLowerCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordIncludeDigitOrSpecialCharacter(value: String): Self = this.set("passwordIncludeDigitOrSpecialCharacter", value.asInstanceOf[js.Any])
+    def setPasswordIncludeLowerCaseUndefined: Self = StObject.set(x, "passwordIncludeLowerCase", js.undefined)
     
     @scala.inline
-    def deletePasswordIncludeDigitOrSpecialCharacter: Self = this.set("passwordIncludeDigitOrSpecialCharacter", js.undefined)
+    def setPasswordIncludeSpecialCharacter(value: String): Self = StObject.set(x, "passwordIncludeSpecialCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordIncludeLowerCase(value: String): Self = this.set("passwordIncludeLowerCase", value.asInstanceOf[js.Any])
+    def setPasswordIncludeSpecialCharacterUndefined: Self = StObject.set(x, "passwordIncludeSpecialCharacter", js.undefined)
     
     @scala.inline
-    def deletePasswordIncludeLowerCase: Self = this.set("passwordIncludeLowerCase", js.undefined)
+    def setPasswordIncludeUpperCase(value: String): Self = StObject.set(x, "passwordIncludeUpperCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordIncludeSpecialCharacter(value: String): Self = this.set("passwordIncludeSpecialCharacter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasswordIncludeSpecialCharacter: Self = this.set("passwordIncludeSpecialCharacter", js.undefined)
-    
-    @scala.inline
-    def setPasswordIncludeUpperCase(value: String): Self = this.set("passwordIncludeUpperCase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasswordIncludeUpperCase: Self = this.set("passwordIncludeUpperCase", js.undefined)
+    def setPasswordIncludeUpperCaseUndefined: Self = StObject.set(x, "passwordIncludeUpperCase", js.undefined)
   }
 }

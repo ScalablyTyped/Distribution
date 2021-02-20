@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,16 +28,20 @@ class SyncButton protected () extends Button {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton")
-@js.native
-object SyncButton extends js.Object {
+object SyncButton {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new SyncButton instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.create")
+  @js.native
   def create(model: IModel): SyncButton = js.native
   
   /**
@@ -47,6 +52,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.7.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInDataViewUnderFooterWidget")
+  @js.native
   def createInDataViewUnderFooterWidget(container: DataView): SyncButton = js.native
   
   /**
@@ -57,6 +65,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInDataViewUnderWidget")
+  @js.native
   def createInDataViewUnderWidget(container: DataView): SyncButton = js.native
   
   /**
@@ -67,6 +78,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInDivContainerUnderWidget")
+  @js.native
   def createInDivContainerUnderWidget(container: DivContainer): SyncButton = js.native
   
   /**
@@ -77,6 +91,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInGroupBoxUnderWidget")
+  @js.native
   def createInGroupBoxUnderWidget(container: GroupBox): SyncButton = js.native
   
   /**
@@ -87,6 +104,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInHeaderUnderLeftWidget")
+  @js.native
   def createInHeaderUnderLeftWidget(container: Header): SyncButton = js.native
   
   /**
@@ -97,6 +117,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInHeaderUnderRightWidget")
+  @js.native
   def createInHeaderUnderRightWidget(container: Header): SyncButton = js.native
   
   /**
@@ -107,6 +130,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInLayoutCallArgumentUnderWidget")
+  @js.native
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SyncButton = js.native
   
   /**
@@ -117,6 +143,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInLayoutGridColumnUnderWidget")
+  @js.native
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SyncButton = js.native
   
   /**
@@ -127,6 +156,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInLayoutUnderWidget")
+  @js.native
   def createInLayoutUnderWidget(container: Layout): SyncButton = js.native
   
   /**
@@ -137,6 +169,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInListViewTemplateUnderWidget")
+  @js.native
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): SyncButton = js.native
   
   /**
@@ -147,6 +182,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInListViewUnderWidget")
+  @js.native
   def createInListViewUnderWidget(container: ListView): SyncButton = js.native
   
   /**
@@ -157,6 +195,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInNavigationListItemUnderWidget")
+  @js.native
   def createInNavigationListItemUnderWidget(container: NavigationListItem): SyncButton = js.native
   
   /**
@@ -167,6 +208,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInReportPaneUnderParameterWidget")
+  @js.native
   def createInReportPaneUnderParameterWidget(container: ReportPane): SyncButton = js.native
   
   /**
@@ -177,6 +221,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInReportPaneUnderReportWidget")
+  @js.native
   def createInReportPaneUnderReportWidget(container: ReportPane): SyncButton = js.native
   
   /**
@@ -187,6 +234,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInScrollContainerRegionUnderWidget")
+  @js.native
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SyncButton = js.native
   
   /**
@@ -197,6 +247,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInSnippetUnderWidget")
+  @js.native
   def createInSnippetUnderWidget(container: Snippet): SyncButton = js.native
   
   /**
@@ -207,6 +260,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInSplitPaneUnderFirstWidget")
+  @js.native
   def createInSplitPaneUnderFirstWidget(container: SplitPane): SyncButton = js.native
   
   /**
@@ -217,6 +273,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInSplitPaneUnderSecondWidget")
+  @js.native
   def createInSplitPaneUnderSecondWidget(container: SplitPane): SyncButton = js.native
   
   /**
@@ -227,6 +286,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInTabPageUnderWidget")
+  @js.native
   def createInTabPageUnderWidget(container: TabPage): SyncButton = js.native
   
   /**
@@ -237,6 +299,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInTableCellUnderWidget")
+  @js.native
   def createInTableCellUnderWidget(container: TableCell): SyncButton = js.native
   
   /**
@@ -247,6 +312,9 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInTemplateGridContentsUnderWidget")
+  @js.native
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SyncButton = js.native
   
   /**
@@ -257,9 +325,22 @@ object SyncButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.createInVerticalFlowUnderWidgets")
+  @js.native
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): SyncButton = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SyncButton.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

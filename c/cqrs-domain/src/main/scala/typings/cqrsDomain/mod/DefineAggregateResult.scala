@@ -1,11 +1,12 @@
 package typings.cqrsDomain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefineAggregateResult extends js.Object {
+trait DefineAggregateResult extends StObject {
   
   /**
     * optionally, define idGenerator function for new aggregate ids

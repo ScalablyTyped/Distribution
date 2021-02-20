@@ -2,13 +2,14 @@ package typings.pgPromise.mod
 
 import typings.pgPromise.pgSubsetMod.IClient
 import typings.pgPromise.pgSubsetMod.IConnectionParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // API: http://vitaly-t.github.io/pg-promise/Database.html#$config
 @js.native
-trait ILibConfig[Ext, C /* <: IClient */] extends js.Object {
+trait ILibConfig[Ext, C /* <: IClient */] extends StObject {
   
   @JSName("$npm")
   var $npm: js.Any = js.native

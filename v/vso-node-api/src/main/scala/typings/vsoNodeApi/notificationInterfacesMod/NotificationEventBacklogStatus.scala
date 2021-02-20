@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationEventBacklogStatus extends js.Object {
+trait NotificationEventBacklogStatus extends StObject {
   
   var eventBacklogStatus: js.Array[EventBacklogStatus] = js.native
   
@@ -23,30 +24,18 @@ object NotificationEventBacklogStatus {
   }
   
   @scala.inline
-  implicit class NotificationEventBacklogStatusOps[Self <: NotificationEventBacklogStatus] (val x: Self) extends AnyVal {
+  implicit class NotificationEventBacklogStatusMutableBuilder[Self <: NotificationEventBacklogStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventBacklogStatus(value: js.Array[EventBacklogStatus]): Self = StObject.set(x, "eventBacklogStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventBacklogStatusVarargs(value: EventBacklogStatus*): Self = StObject.set(x, "eventBacklogStatus", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotificationBacklogStatus(value: js.Array[NotificationBacklogStatus]): Self = StObject.set(x, "notificationBacklogStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventBacklogStatusVarargs(value: EventBacklogStatus*): Self = this.set("eventBacklogStatus", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventBacklogStatus(value: js.Array[EventBacklogStatus]): Self = this.set("eventBacklogStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotificationBacklogStatusVarargs(value: NotificationBacklogStatus*): Self = this.set("notificationBacklogStatus", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotificationBacklogStatus(value: js.Array[NotificationBacklogStatus]): Self = this.set("notificationBacklogStatus", value.asInstanceOf[js.Any])
+    def setNotificationBacklogStatusVarargs(value: NotificationBacklogStatus*): Self = StObject.set(x, "notificationBacklogStatus", js.Array(value :_*))
   }
 }

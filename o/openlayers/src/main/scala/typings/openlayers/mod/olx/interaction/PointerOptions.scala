@@ -1,12 +1,13 @@
 package typings.openlayers.mod.olx.interaction
 
 import typings.openlayers.mod.MapBrowserPointerEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointerOptions extends js.Object {
+trait PointerOptions extends StObject {
   
   var handleDownEvent: js.UndefOr[js.Function1[/* event */ MapBrowserPointerEvent, Boolean]] = js.native
   
@@ -27,48 +28,36 @@ object PointerOptions {
   }
   
   @scala.inline
-  implicit class PointerOptionsOps[Self <: PointerOptions] (val x: Self) extends AnyVal {
+  implicit class PointerOptionsMutableBuilder[Self <: PointerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandleDownEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = StObject.set(x, "handleDownEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleDownEventUndefined: Self = StObject.set(x, "handleDownEvent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandleDragEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = StObject.set(x, "handleDragEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandleDownEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = this.set("handleDownEvent", js.Any.fromFunction1(value))
+    def setHandleDragEventUndefined: Self = StObject.set(x, "handleDragEvent", js.undefined)
     
     @scala.inline
-    def deleteHandleDownEvent: Self = this.set("handleDownEvent", js.undefined)
+    def setHandleEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandleDragEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = this.set("handleDragEvent", js.Any.fromFunction1(value))
+    def setHandleEventUndefined: Self = StObject.set(x, "handleEvent", js.undefined)
     
     @scala.inline
-    def deleteHandleDragEvent: Self = this.set("handleDragEvent", js.undefined)
+    def setHandleMoveEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = StObject.set(x, "handleMoveEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandleEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = this.set("handleEvent", js.Any.fromFunction1(value))
+    def setHandleMoveEventUndefined: Self = StObject.set(x, "handleMoveEvent", js.undefined)
     
     @scala.inline
-    def deleteHandleEvent: Self = this.set("handleEvent", js.undefined)
+    def setHandleUpEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = StObject.set(x, "handleUpEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandleMoveEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = this.set("handleMoveEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteHandleMoveEvent: Self = this.set("handleMoveEvent", js.undefined)
-    
-    @scala.inline
-    def setHandleUpEvent(value: /* event */ MapBrowserPointerEvent => Boolean): Self = this.set("handleUpEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteHandleUpEvent: Self = this.set("handleUpEvent", js.undefined)
+    def setHandleUpEventUndefined: Self = StObject.set(x, "handleUpEvent", js.undefined)
   }
 }

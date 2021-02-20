@@ -4,6 +4,7 @@ import typings.androiduix.android.graphics.Matrix
 import typings.androiduix.android.graphics.drawable.Drawable
 import typings.androiduix.android.view.View
 import typings.androiduix.android.widget.ImageView.ScaleType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,14 +119,13 @@ trait ImageView extends View {
   
   /* private */ def updateDrawable(d: js.Any): js.Any = js.native
 }
-@JSGlobal("android.widget.ImageView")
-@js.native
-object ImageView extends js.Object {
+object ImageView {
   
   @js.native
-  sealed trait ScaleType extends js.Object
+  sealed trait ScaleType extends StObject
+  @JSGlobal("android.widget.ImageView.ScaleType")
   @js.native
-  object ScaleType extends js.Object {
+  object ScaleType extends StObject {
     
     @js.native
     sealed trait CENTER extends ScaleType

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Scanners
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the auto-configured scan source of the scanner. */
 @js.native
-trait ImageScannerAutoConfiguration extends js.Object {
+trait ImageScannerAutoConfiguration extends StObject {
   
   /** The default file format for the scan source at the beginning of a new scan session. */
   var defaultFormat: ImageScannerFormat = js.native
@@ -34,27 +35,15 @@ object ImageScannerAutoConfiguration {
   }
   
   @scala.inline
-  implicit class ImageScannerAutoConfigurationOps[Self <: ImageScannerAutoConfiguration] (val x: Self) extends AnyVal {
+  implicit class ImageScannerAutoConfigurationMutableBuilder[Self <: ImageScannerAutoConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultFormat(value: ImageScannerFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormat(value: ImageScannerFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultFormat(value: ImageScannerFormat): Self = this.set("defaultFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: ImageScannerFormat): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFormatSupported(value: ImageScannerFormat => Boolean): Self = this.set("isFormatSupported", js.Any.fromFunction1(value))
+    def setIsFormatSupported(value: ImageScannerFormat => Boolean): Self = StObject.set(x, "isFormatSupported", js.Any.fromFunction1(value))
   }
 }

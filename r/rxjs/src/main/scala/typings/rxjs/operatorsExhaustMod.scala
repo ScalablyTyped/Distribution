@@ -1,14 +1,16 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operators/exhaust", JSImport.Namespace)
-@js.native
-object operatorsExhaustMod extends js.Object {
+object operatorsExhaustMod {
   
+  @JSImport("rxjs/operators/exhaust", "exhaust")
+  @js.native
   def exhaust[T](): js.Any = js.native
-  @JSName("exhaust")
+  @JSImport("rxjs/operators/exhaust", "exhaust")
+  @js.native
   def exhaust_TR[T, R](): js.Any = js.native
 }

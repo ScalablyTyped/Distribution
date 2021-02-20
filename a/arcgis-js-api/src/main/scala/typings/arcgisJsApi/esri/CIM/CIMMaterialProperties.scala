@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CIMMaterialProperties extends js.Object {
+trait CIMMaterialProperties extends StObject {
   
   /**
     * How this material combines with externally defined colors.
@@ -36,44 +37,32 @@ object CIMMaterialProperties {
   }
   
   @scala.inline
-  implicit class CIMMaterialPropertiesOps[Self <: CIMMaterialProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialProperties): Self = this.set("type", value.asInstanceOf[js.Any])
+  implicit class CIMMaterialPropertiesMutableBuilder[Self <: CIMMaterialProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setExternalColorMixMode(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExternalColorMixMode * / any */ String
-    ): Self = this.set("externalColorMixMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "externalColorMixMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalColorMixMode: Self = this.set("externalColorMixMode", js.undefined)
+    def setExternalColorMixModeUndefined: Self = StObject.set(x, "externalColorMixMode", js.undefined)
     
     @scala.inline
-    def setShininess(value: Double): Self = this.set("shininess", value.asInstanceOf[js.Any])
+    def setShininess(value: Double): Self = StObject.set(x, "shininess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShininess: Self = this.set("shininess", js.undefined)
+    def setShininessUndefined: Self = StObject.set(x, "shininess", js.undefined)
     
     @scala.inline
-    def setSpecularColorVarargs(value: Double*): Self = this.set("specularColor", js.Array(value :_*))
+    def setSpecularColor(value: js.Array[Double]): Self = StObject.set(x, "specularColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecularColor(value: js.Array[Double]): Self = this.set("specularColor", value.asInstanceOf[js.Any])
+    def setSpecularColorUndefined: Self = StObject.set(x, "specularColor", js.undefined)
     
     @scala.inline
-    def deleteSpecularColor: Self = this.set("specularColor", js.undefined)
+    def setSpecularColorVarargs(value: Double*): Self = StObject.set(x, "specularColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialProperties): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

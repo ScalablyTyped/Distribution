@@ -1,16 +1,16 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/commands/MigrationRunCommand", JSImport.Namespace)
-@js.native
-object migrationRunCommandMod extends js.Object {
+object migrationRunCommandMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.CommandModule * / any */ @js.native
-  class MigrationRunCommand () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.CommandModule * / any */ @JSImport("typeorm/commands/MigrationRunCommand", "MigrationRunCommand")
+  @js.native
+  class MigrationRunCommand () extends StObject {
     
     var aliases: String = js.native
     

@@ -1,25 +1,43 @@
 package typings.tslint
 
+import typings.tslint.mod.Rules.TypedRule
+import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
-import typings.tslint.typedRuleMod.TypedRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/rules/restrictPlusOperandsRule", JSImport.Namespace)
-@js.native
-object restrictPlusOperandsRuleMod extends js.Object {
+object restrictPlusOperandsRuleMod {
   
+  @JSImport("tslint/lib/rules/restrictPlusOperandsRule", "Rule")
   @js.native
-  class Rule () extends TypedRule
+  class Rule protected () extends TypedRule {
+    def this(options: IOptions) = this()
+  }
   /* static members */
-  @js.native
-  object Rule extends js.Object {
+  object Rule {
     
-    var INVALID_TYPES_ERROR: String = js.native
+    @JSImport("tslint/lib/rules/restrictPlusOperandsRule", "Rule")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var SUGGEST_TEMPLATE_LITERALS: String = js.native
+    @JSImport("tslint/lib/rules/restrictPlusOperandsRule", "Rule.INVALID_TYPES_ERROR")
+    @js.native
+    def INVALID_TYPES_ERROR: String = js.native
+    @scala.inline
+    def INVALID_TYPES_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_TYPES_ERROR")(x.asInstanceOf[js.Any])
     
-    var metadata: IRuleMetadata = js.native
+    @JSImport("tslint/lib/rules/restrictPlusOperandsRule", "Rule.SUGGEST_TEMPLATE_LITERALS")
+    @js.native
+    def SUGGEST_TEMPLATE_LITERALS: String = js.native
+    @scala.inline
+    def SUGGEST_TEMPLATE_LITERALS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUGGEST_TEMPLATE_LITERALS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("tslint/lib/rules/restrictPlusOperandsRule", "Rule.metadata")
+    @js.native
+    def metadata: IRuleMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

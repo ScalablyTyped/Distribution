@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,69 +64,57 @@ object CIMGradientFill {
   }
   
   @scala.inline
-  implicit class CIMGradientFillOps[Self <: CIMGradientFill] (val x: Self) extends AnyVal {
+  implicit class CIMGradientFillMutableBuilder[Self <: CIMGradientFill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorRamp(value: js.Any): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGradientFill): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
-    
-    @scala.inline
-    def setColorRamp(value: js.Any): Self = this.set("colorRamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorRamp: Self = this.set("colorRamp", js.undefined)
+    def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
     
     @scala.inline
     def setGradientMethod(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GradientFillMethod * / any */ String
-    ): Self = this.set("gradientMethod", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gradientMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGradientMethod: Self = this.set("gradientMethod", js.undefined)
+    def setGradientMethodUndefined: Self = StObject.set(x, "gradientMethod", js.undefined)
     
     @scala.inline
-    def setGradientSize(value: Double): Self = this.set("gradientSize", value.asInstanceOf[js.Any])
+    def setGradientSize(value: Double): Self = StObject.set(x, "gradientSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGradientSize: Self = this.set("gradientSize", js.undefined)
+    def setGradientSizeUndefined: Self = StObject.set(x, "gradientSize", js.undefined)
     
     @scala.inline
     def setGradientSizeUnits(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SymbolUnits * / any */ String
-    ): Self = this.set("gradientSizeUnits", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gradientSizeUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGradientSizeUnits: Self = this.set("gradientSizeUnits", js.undefined)
+    def setGradientSizeUnitsUndefined: Self = StObject.set(x, "gradientSizeUnits", js.undefined)
     
     @scala.inline
     def setGradientType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GradientStrokeType * / any */ String
-    ): Self = this.set("gradientType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gradientType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGradientType: Self = this.set("gradientType", js.undefined)
+    def setGradientTypeUndefined: Self = StObject.set(x, "gradientType", js.undefined)
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    @scala.inline
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGradientFill): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

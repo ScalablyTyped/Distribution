@@ -2,12 +2,13 @@ package typings.aframe.anon
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.three.mod.PropertyBinding.Composite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofPropertyBindingComposite extends js.Object {
+trait TypeofPropertyBindingComposite extends StObject {
   
   var Composite: Instantiable2[
     /* targetGroup */ js.Any, 
@@ -24,21 +25,9 @@ object TypeofPropertyBindingComposite {
   }
   
   @scala.inline
-  implicit class TypeofPropertyBindingCompositeOps[Self <: TypeofPropertyBindingComposite] (val x: Self) extends AnyVal {
+  implicit class TypeofPropertyBindingCompositeMutableBuilder[Self <: TypeofPropertyBindingComposite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComposite(value: Instantiable2[/* targetGroup */ js.Any, /* path */ js.Any, Composite]): Self = this.set("Composite", value.asInstanceOf[js.Any])
+    def setComposite(value: Instantiable2[/* targetGroup */ js.Any, /* path */ js.Any, Composite]): Self = StObject.set(x, "Composite", value.asInstanceOf[js.Any])
   }
 }

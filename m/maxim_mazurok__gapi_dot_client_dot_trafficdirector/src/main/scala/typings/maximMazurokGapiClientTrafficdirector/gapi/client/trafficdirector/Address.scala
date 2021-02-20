@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Address extends js.Object {
+trait Address extends StObject {
   
   var pipe: js.UndefOr[Pipe] = js.native
   
@@ -20,30 +21,18 @@ object Address {
   }
   
   @scala.inline
-  implicit class AddressOps[Self <: Address] (val x: Self) extends AnyVal {
+  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPipe(value: Pipe): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPipeUndefined: Self = StObject.set(x, "pipe", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSocketAddress(value: SocketAddress): Self = StObject.set(x, "socketAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipe(value: Pipe): Self = this.set("pipe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipe: Self = this.set("pipe", js.undefined)
-    
-    @scala.inline
-    def setSocketAddress(value: SocketAddress): Self = this.set("socketAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocketAddress: Self = this.set("socketAddress", js.undefined)
+    def setSocketAddressUndefined: Self = StObject.set(x, "socketAddress", js.undefined)
   }
 }

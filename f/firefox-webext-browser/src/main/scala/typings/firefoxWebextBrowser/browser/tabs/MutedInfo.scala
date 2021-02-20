@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Tab muted state and the reason for the last state change. */
 @js.native
-trait MutedInfo extends js.Object {
+trait MutedInfo extends StObject {
   
   /**
     * The ID of the extension that changed the muted state. Not set if an extension was not the reason the muted state last changed.
@@ -30,33 +31,21 @@ object MutedInfo {
   }
   
   @scala.inline
-  implicit class MutedInfoOps[Self <: MutedInfo] (val x: Self) extends AnyVal {
+  implicit class MutedInfoMutableBuilder[Self <: MutedInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    def setReason(value: MutedInfoReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionId(value: String): Self = this.set("extensionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtensionId: Self = this.set("extensionId", js.undefined)
-    
-    @scala.inline
-    def setReason(value: MutedInfoReason): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

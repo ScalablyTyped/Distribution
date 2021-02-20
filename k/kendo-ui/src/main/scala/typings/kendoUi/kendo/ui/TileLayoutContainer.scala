@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileLayoutContainer extends js.Object {
+trait TileLayoutContainer extends StObject {
   
   var bodyTemplate: js.UndefOr[String | js.Function] = js.native
   
@@ -24,42 +25,30 @@ object TileLayoutContainer {
   }
   
   @scala.inline
-  implicit class TileLayoutContainerOps[Self <: TileLayoutContainer] (val x: Self) extends AnyVal {
+  implicit class TileLayoutContainerMutableBuilder[Self <: TileLayoutContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyTemplate(value: String | js.Function): Self = StObject.set(x, "bodyTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyTemplateUndefined: Self = StObject.set(x, "bodyTemplate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyTemplate(value: String | js.Function): Self = this.set("bodyTemplate", value.asInstanceOf[js.Any])
+    def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
     
     @scala.inline
-    def deleteBodyTemplate: Self = this.set("bodyTemplate", js.undefined)
+    def setHeader(value: TileLayoutContainerHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: TileLayoutContainerHeader): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
-    
-    @scala.inline
-    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
   }
 }

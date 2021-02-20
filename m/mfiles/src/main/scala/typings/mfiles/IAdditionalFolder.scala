@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAdditionalFolder extends js.Object {
+trait IAdditionalFolder extends StObject {
   
   def Clone(): IAdditionalFolder = js.native
   
@@ -24,30 +25,18 @@ object IAdditionalFolder {
   }
   
   @scala.inline
-  implicit class IAdditionalFolderOps[Self <: IAdditionalFolder] (val x: Self) extends AnyVal {
+  implicit class IAdditionalFolderMutableBuilder[Self <: IAdditionalFolder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IAdditionalFolder): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFolder(value: String): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IAdditionalFolder): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFolder(value: String): Self = this.set("Folder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImpersonation(value: IImpersonation): Self = this.set("Impersonation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLimitInMB(value: Double): Self = this.set("LimitInMB", value.asInstanceOf[js.Any])
+    def setLimitInMB(value: Double): Self = StObject.set(x, "LimitInMB", value.asInstanceOf[js.Any])
   }
 }

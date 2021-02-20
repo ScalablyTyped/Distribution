@@ -5,21 +5,19 @@ import typings.canvasGauges.CanvasGauges.DrawEventCallback
 import typings.canvasGauges.CanvasGauges.EndEventCallback
 import typings.canvasGauges.CanvasGauges.LinearGaugeOptions
 import typings.canvasGauges.CanvasGauges.RadialGaugeOptions
+import typings.canvasGauges.CanvasGauges.rules
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object CanvasGauges extends js.Object {
+  object CanvasGauges {
     
-    val GenericOptions: typings.canvasGauges.CanvasGauges.GenericOptions = js.native
-    
+    @JSGlobal("CanvasGauges.Animation")
     @js.native
     class Animation ()
       extends typings.canvasGauges.CanvasGauges.Animation {
@@ -78,60 +76,90 @@ object global extends js.Object {
       def this(rule: AnimationRule, duration: Double, draw: DrawEventCallback, end: EndEventCallback) = this()
     }
     /* static members */
-    @js.native
-    object Animation extends js.Object {
+    object Animation {
       
-      var rules: typings.canvasGauges.CanvasGauges.rules = js.native
+      @JSGlobal("CanvasGauges.Animation")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("CanvasGauges.Animation.rules")
+      @js.native
+      def rules: typings.canvasGauges.CanvasGauges.rules = js.native
+      @scala.inline
+      def rules_=(x: rules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rules")(x.asInstanceOf[js.Any])
     }
     
+    @JSGlobal("CanvasGauges.BaseGauge")
     @js.native
     abstract class BaseGauge protected ()
       extends typings.canvasGauges.CanvasGauges.BaseGauge {
       def this(options: typings.canvasGauges.CanvasGauges.GenericOptions) = this()
     }
     /* static members */
-    @js.native
-    object BaseGauge extends js.Object {
+    object BaseGauge {
       
+      @JSGlobal("CanvasGauges.BaseGauge.ensureValue")
+      @js.native
       def ensureValue(value: Double): Double = js.native
       
+      @JSGlobal("CanvasGauges.BaseGauge.fromElement")
+      @js.native
       def fromElement(element: HTMLElement): js.Any = js.native
       
+      @JSGlobal("CanvasGauges.BaseGauge.initialize")
+      @js.native
       def initialize(`type`: String, options: typings.canvasGauges.CanvasGauges.GenericOptions): js.Any = js.native
       
+      @JSGlobal("CanvasGauges.BaseGauge.version")
+      @js.native
       val version: Double = js.native
     }
     
+    @JSGlobal("CanvasGauges.DomObserver")
     @js.native
     class DomObserver protected ()
       extends typings.canvasGauges.CanvasGauges.DomObserver {
       def this(options: typings.canvasGauges.CanvasGauges.GenericOptions, element: String, `type`: String) = this()
     }
     /* static members */
-    @js.native
-    object DomObserver extends js.Object {
+    object DomObserver {
       
+      @JSGlobal("CanvasGauges.DomObserver.domReady")
+      @js.native
       def domReady(handler: js.Function): js.Any = js.native
       
+      @JSGlobal("CanvasGauges.DomObserver.parse")
+      @js.native
       def parse(value: js.Any): js.Any = js.native
       
+      @JSGlobal("CanvasGauges.DomObserver.toAttributeName")
+      @js.native
       def toAttributeName(str: String): String = js.native
       
+      @JSGlobal("CanvasGauges.DomObserver.toDashed")
+      @js.native
       def toDashed(camelCase: String): String = js.native
     }
     
+    @JSGlobal("CanvasGauges.GenericOptions")
+    @js.native
+    val GenericOptions: typings.canvasGauges.CanvasGauges.GenericOptions = js.native
+    
+    @JSGlobal("CanvasGauges.LinearGauge")
     @js.native
     class LinearGauge protected ()
       extends typings.canvasGauges.CanvasGauges.LinearGauge {
       def this(options: LinearGaugeOptions) = this()
     }
     
+    @JSGlobal("CanvasGauges.RadialGauge")
     @js.native
     class RadialGauge protected ()
       extends typings.canvasGauges.CanvasGauges.RadialGauge {
       def this(options: RadialGaugeOptions) = this()
     }
     
+    @JSGlobal("CanvasGauges.SmartCanvas")
     @js.native
     class SmartCanvas protected ()
       extends typings.canvasGauges.CanvasGauges.SmartCanvas {
@@ -141,11 +169,20 @@ object global extends js.Object {
       def this(element: HTMLCanvasElement, width: Double, height: Double) = this()
     }
     /* static members */
-    @js.native
-    object SmartCanvas extends js.Object {
+    object SmartCanvas {
       
-      var collection: js.Array[typings.canvasGauges.CanvasGauges.SmartCanvas] = js.native
+      @JSGlobal("CanvasGauges.SmartCanvas")
+      @js.native
+      val ^ : js.Any = js.native
       
+      @JSGlobal("CanvasGauges.SmartCanvas.collection")
+      @js.native
+      def collection: js.Array[typings.canvasGauges.CanvasGauges.SmartCanvas] = js.native
+      @scala.inline
+      def collection_=(x: js.Array[typings.canvasGauges.CanvasGauges.SmartCanvas]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collection")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("CanvasGauges.SmartCanvas.redraw")
+      @js.native
       def redraw(): js.Any = js.native
     }
   }

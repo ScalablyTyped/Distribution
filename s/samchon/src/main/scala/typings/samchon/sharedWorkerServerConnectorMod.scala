@@ -2,18 +2,18 @@ package typings.samchon
 
 import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.sharedWorkerCommunicatorMod.SharedWorkerCommunicator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/protocol/communicator/server_connector/SharedWorkerServerConnector", JSImport.Namespace)
-@js.native
-object sharedWorkerServerConnectorMod extends js.Object {
+object sharedWorkerServerConnectorMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
-  - typings.samchon.iserverconnectorMod.IServerConnector because var conflicts: onClose. Inlined onConnect, connect */ @js.native
+  - typings.samchon.iserverconnectorMod.IServerConnector because var conflicts: onClose. Inlined onConnect, connect */ @JSImport("samchon/protocol/communicator/server_connector/SharedWorkerServerConnector", "SharedWorkerServerConnector")
+  @js.native
   class SharedWorkerServerConnector protected () extends SharedWorkerCommunicator {
     /**
       * Construct from *listener*.

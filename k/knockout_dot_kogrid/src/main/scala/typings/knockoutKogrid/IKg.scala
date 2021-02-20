@@ -1,12 +1,13 @@
 package typings.knockoutKogrid
 
 import typings.knockoutKogrid.kg.DomUtilityService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IKg extends js.Object {
+trait IKg extends StObject {
   
   /** Default aggregate template */
   def aggregateTemplate(): String = js.native
@@ -45,39 +46,27 @@ object IKg {
   }
   
   @scala.inline
-  implicit class IKgOps[Self <: IKg] (val x: Self) extends AnyVal {
+  implicit class IKgMutableBuilder[Self <: IKg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateTemplate(value: () => String): Self = StObject.set(x, "aggregateTemplate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultCellTemplate(value: () => String): Self = StObject.set(x, "defaultCellTemplate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultGridTemplate(value: () => String): Self = StObject.set(x, "defaultGridTemplate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAggregateTemplate(value: () => String): Self = this.set("aggregateTemplate", js.Any.fromFunction0(value))
+    def setDefaultHeaderCellTemplate(value: () => String): Self = StObject.set(x, "defaultHeaderCellTemplate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultCellTemplate(value: () => String): Self = this.set("defaultCellTemplate", js.Any.fromFunction0(value))
+    def setDefaultHeaderRowTemplate(value: () => String): Self = StObject.set(x, "defaultHeaderRowTemplate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultGridTemplate(value: () => String): Self = this.set("defaultGridTemplate", js.Any.fromFunction0(value))
+    def setDefaultRowTemplate(value: () => String): Self = StObject.set(x, "defaultRowTemplate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultHeaderCellTemplate(value: () => String): Self = this.set("defaultHeaderCellTemplate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDefaultHeaderRowTemplate(value: () => String): Self = this.set("defaultHeaderRowTemplate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDefaultRowTemplate(value: () => String): Self = this.set("defaultRowTemplate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDomUtilityService(value: DomUtilityService): Self = this.set("domUtilityService", value.asInstanceOf[js.Any])
+    def setDomUtilityService(value: DomUtilityService): Self = StObject.set(x, "domUtilityService", value.asInstanceOf[js.Any])
   }
 }

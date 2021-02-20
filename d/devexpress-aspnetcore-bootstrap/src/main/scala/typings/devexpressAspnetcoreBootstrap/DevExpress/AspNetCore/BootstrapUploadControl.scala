@@ -9,6 +9,7 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.textChanged
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.uploadingProgressChanged
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.validationErrorOccurred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -287,7 +288,7 @@ trait BootstrapUploadControl extends Control {
   def removeFileFromSelection(fileIndex: Double): Unit = js.native
   def removeFileFromSelection(file: BootstrapUploadControlFile): Unit = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def removeFileInput(index: Double): Unit = js.native
   
   def setAddButtonText(text: String): Unit = js.native

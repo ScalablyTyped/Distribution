@@ -5,16 +5,18 @@ import typings.typedoc.abstractMod.ReflectionKind
 import typings.typedoc.reflectionCategoryMod.ReflectionCategory
 import typings.typedoc.reflectionGroupMod.ReflectionGroup
 import typings.typedoc.reflectionsDeclarationMod.DeclarationReflection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/reflections/container", JSImport.Namespace)
-@js.native
-object containerMod extends js.Object {
+object containerMod {
   
+  @JSImport("typedoc/dist/lib/models/reflections/container", "ContainerReflection")
   @js.native
-  class ContainerReflection () extends Reflection {
+  class ContainerReflection protected () extends Reflection {
+    def this(name: String, kind: ReflectionKind) = this()
+    def this(name: String, kind: ReflectionKind, parent: Reflection) = this()
     
     var categories: js.UndefOr[js.Array[ReflectionCategory]] = js.native
     

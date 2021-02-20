@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object CodeFixAction {
   }
   
   @scala.inline
-  implicit class CodeFixActionOps[Self <: CodeFixAction] (val x: Self) extends AnyVal {
+  implicit class CodeFixActionMutableBuilder[Self <: CodeFixAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixAllDescription(value: java.lang.String): Self = StObject.set(x, "fixAllDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixAllDescriptionUndefined: Self = StObject.set(x, "fixAllDescription", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFixId(value: js.Object): Self = StObject.set(x, "fixId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixName(value: java.lang.String): Self = this.set("fixName", value.asInstanceOf[js.Any])
+    def setFixIdUndefined: Self = StObject.set(x, "fixId", js.undefined)
     
     @scala.inline
-    def setFixAllDescription(value: java.lang.String): Self = this.set("fixAllDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixAllDescription: Self = this.set("fixAllDescription", js.undefined)
-    
-    @scala.inline
-    def setFixId(value: js.Object): Self = this.set("fixId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixId: Self = this.set("fixId", js.undefined)
+    def setFixName(value: java.lang.String): Self = StObject.set(x, "fixName", value.asInstanceOf[js.Any])
   }
 }

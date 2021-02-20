@@ -1,17 +1,23 @@
 package typings.antDesignReactNative
 
-import typings.react.mod.Component
+import typings.reactNative.mod.Text
 import typings.reactNative.mod.TextProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/text", JSImport.Namespace)
-@js.native
-object textMod extends js.Object {
+object textMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @js.native
-  class default ()
-    extends Component[TextProps, js.Object, js.Any]
+  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @JSImport("@ant-design/react-native/lib/text", JSImport.Default)
+  @js.native
+  class default protected () extends Text {
+    def this(props: TextProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TextProps, context: js.Any) = this()
+  }
 }

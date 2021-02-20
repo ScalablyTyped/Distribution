@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Repository extends js.Object {
+trait Repository extends StObject {
   
   /**
     * The date and time, in JavaScript date format, when the repository was created.
@@ -53,66 +54,54 @@ object Repository {
   }
   
   @scala.inline
-  implicit class RepositoryOps[Self <: Repository] (val x: Self) extends AnyVal {
+  implicit class RepositoryMutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: CreationTimestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: CreationTimestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setEncryptionConfigurationUndefined: Self = StObject.set(x, "encryptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setImageScanningConfiguration(value: ImageScanningConfiguration): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("encryptionConfiguration", value.asInstanceOf[js.Any])
+    def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
     
     @scala.inline
-    def deleteEncryptionConfiguration: Self = this.set("encryptionConfiguration", js.undefined)
+    def setImageTagMutability(value: ImageTagMutability): Self = StObject.set(x, "imageTagMutability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageScanningConfiguration(value: ImageScanningConfiguration): Self = this.set("imageScanningConfiguration", value.asInstanceOf[js.Any])
+    def setImageTagMutabilityUndefined: Self = StObject.set(x, "imageTagMutability", js.undefined)
     
     @scala.inline
-    def deleteImageScanningConfiguration: Self = this.set("imageScanningConfiguration", js.undefined)
+    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageTagMutability(value: ImageTagMutability): Self = this.set("imageTagMutability", value.asInstanceOf[js.Any])
+    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
     @scala.inline
-    def deleteImageTagMutability: Self = this.set("imageTagMutability", js.undefined)
+    def setRepositoryArn(value: Arn): Self = StObject.set(x, "repositoryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    def setRepositoryArnUndefined: Self = StObject.set(x, "repositoryArn", js.undefined)
     
     @scala.inline
-    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryArn(value: Arn): Self = this.set("repositoryArn", value.asInstanceOf[js.Any])
+    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
     
     @scala.inline
-    def deleteRepositoryArn: Self = this.set("repositoryArn", js.undefined)
+    def setRepositoryUri(value: Url): Self = StObject.set(x, "repositoryUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
-    
-    @scala.inline
-    def setRepositoryUri(value: Url): Self = this.set("repositoryUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryUri: Self = this.set("repositoryUri", js.undefined)
+    def setRepositoryUriUndefined: Self = StObject.set(x, "repositoryUri", js.undefined)
   }
 }

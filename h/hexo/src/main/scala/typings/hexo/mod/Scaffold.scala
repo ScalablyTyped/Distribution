@@ -1,11 +1,12 @@
 package typings.hexo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scaffold extends js.Object {
+trait Scaffold extends StObject {
   
   /**
     * Get a Scaffold

@@ -2,16 +2,16 @@ package typings.sipJs
 
 import typings.sipJs.logMod.LoggerFactory
 import typings.sipJs.outgoingRequestMessageMod.OutgoingRequestMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/messages/digest-authentication", JSImport.Namespace)
-@js.native
-object digestAuthenticationMod extends js.Object {
+object digestAuthenticationMod {
   
+  @JSImport("sip.js/lib/core/messages/digest-authentication", "DigestAuthentication")
   @js.native
-  class DigestAuthentication protected () extends js.Object {
+  class DigestAuthentication protected () extends StObject {
     /**
       * Constructor.
       * @param loggerFactory - LoggerFactory.

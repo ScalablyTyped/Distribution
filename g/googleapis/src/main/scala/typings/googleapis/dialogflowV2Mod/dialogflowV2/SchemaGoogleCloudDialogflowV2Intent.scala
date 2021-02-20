@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * sentence semantics.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2Intent extends js.Object {
+trait SchemaGoogleCloudDialogflowV2Intent extends StObject {
   
   /**
     * Optional. The name of the action associated with the intent. Note: The
@@ -140,150 +141,138 @@ object SchemaGoogleCloudDialogflowV2Intent {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentOps[Self <: SchemaGoogleCloudDialogflowV2Intent] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2IntentMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2Intent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultResponsePlatforms(value: js.Array[String]): Self = StObject.set(x, "defaultResponsePlatforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setDefaultResponsePlatformsUndefined: Self = StObject.set(x, "defaultResponsePlatforms", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setDefaultResponsePlatformsVarargs(value: String*): Self = StObject.set(x, "defaultResponsePlatforms", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultResponsePlatformsVarargs(value: String*): Self = this.set("defaultResponsePlatforms", js.Array(value :_*))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultResponsePlatforms(value: js.Array[String]): Self = this.set("defaultResponsePlatforms", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDefaultResponsePlatforms: Self = this.set("defaultResponsePlatforms", js.undefined)
+    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
+    def setFollowupIntentInfo(value: js.Array[SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo]): Self = StObject.set(x, "followupIntentInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[String]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setFollowupIntentInfoUndefined: Self = StObject.set(x, "followupIntentInfo", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setFollowupIntentInfoVarargs(value: SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo*): Self = StObject.set(x, "followupIntentInfo", js.Array(value :_*))
     
     @scala.inline
-    def setFollowupIntentInfoVarargs(value: SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo*): Self = this.set("followupIntentInfo", js.Array(value :_*))
+    def setInputContextNames(value: js.Array[String]): Self = StObject.set(x, "inputContextNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowupIntentInfo(value: js.Array[SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo]): Self = this.set("followupIntentInfo", value.asInstanceOf[js.Any])
+    def setInputContextNamesUndefined: Self = StObject.set(x, "inputContextNames", js.undefined)
     
     @scala.inline
-    def deleteFollowupIntentInfo: Self = this.set("followupIntentInfo", js.undefined)
+    def setInputContextNamesVarargs(value: String*): Self = StObject.set(x, "inputContextNames", js.Array(value :_*))
     
     @scala.inline
-    def setInputContextNamesVarargs(value: String*): Self = this.set("inputContextNames", js.Array(value :_*))
+    def setIsFallback(value: Boolean): Self = StObject.set(x, "isFallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputContextNames(value: js.Array[String]): Self = this.set("inputContextNames", value.asInstanceOf[js.Any])
+    def setIsFallbackUndefined: Self = StObject.set(x, "isFallback", js.undefined)
     
     @scala.inline
-    def deleteInputContextNames: Self = this.set("inputContextNames", js.undefined)
+    def setMessages(value: js.Array[SchemaGoogleCloudDialogflowV2IntentMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFallback(value: Boolean): Self = this.set("isFallback", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteIsFallback: Self = this.set("isFallback", js.undefined)
+    def setMessagesVarargs(value: SchemaGoogleCloudDialogflowV2IntentMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesVarargs(value: SchemaGoogleCloudDialogflowV2IntentMessage*): Self = this.set("messages", js.Array(value :_*))
+    def setMlDisabled(value: Boolean): Self = StObject.set(x, "mlDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: js.Array[SchemaGoogleCloudDialogflowV2IntentMessage]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMlDisabledUndefined: Self = StObject.set(x, "mlDisabled", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMlDisabled(value: Boolean): Self = this.set("mlDisabled", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMlDisabled: Self = this.set("mlDisabled", js.undefined)
+    def setOutputContexts(value: js.Array[SchemaGoogleCloudDialogflowV2Context]): Self = StObject.set(x, "outputContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOutputContextsVarargs(value: SchemaGoogleCloudDialogflowV2Context*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
     
     @scala.inline
-    def setOutputContextsVarargs(value: SchemaGoogleCloudDialogflowV2Context*): Self = this.set("outputContexts", js.Array(value :_*))
+    def setParameters(value: js.Array[SchemaGoogleCloudDialogflowV2IntentParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputContexts(value: js.Array[SchemaGoogleCloudDialogflowV2Context]): Self = this.set("outputContexts", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteOutputContexts: Self = this.set("outputContexts", js.undefined)
+    def setParametersVarargs(value: SchemaGoogleCloudDialogflowV2IntentParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setParametersVarargs(value: SchemaGoogleCloudDialogflowV2IntentParameter*): Self = this.set("parameters", js.Array(value :_*))
+    def setParentFollowupIntentName(value: String): Self = StObject.set(x, "parentFollowupIntentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Array[SchemaGoogleCloudDialogflowV2IntentParameter]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setParentFollowupIntentNameUndefined: Self = StObject.set(x, "parentFollowupIntentName", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentFollowupIntentName(value: String): Self = this.set("parentFollowupIntentName", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteParentFollowupIntentName: Self = this.set("parentFollowupIntentName", js.undefined)
+    def setResetContexts(value: Boolean): Self = StObject.set(x, "resetContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setResetContextsUndefined: Self = StObject.set(x, "resetContexts", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setRootFollowupIntentName(value: String): Self = StObject.set(x, "rootFollowupIntentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetContexts(value: Boolean): Self = this.set("resetContexts", value.asInstanceOf[js.Any])
+    def setRootFollowupIntentNameUndefined: Self = StObject.set(x, "rootFollowupIntentName", js.undefined)
     
     @scala.inline
-    def deleteResetContexts: Self = this.set("resetContexts", js.undefined)
+    def setTrainingPhrases(value: js.Array[SchemaGoogleCloudDialogflowV2IntentTrainingPhrase]): Self = StObject.set(x, "trainingPhrases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootFollowupIntentName(value: String): Self = this.set("rootFollowupIntentName", value.asInstanceOf[js.Any])
+    def setTrainingPhrasesUndefined: Self = StObject.set(x, "trainingPhrases", js.undefined)
     
     @scala.inline
-    def deleteRootFollowupIntentName: Self = this.set("rootFollowupIntentName", js.undefined)
+    def setTrainingPhrasesVarargs(value: SchemaGoogleCloudDialogflowV2IntentTrainingPhrase*): Self = StObject.set(x, "trainingPhrases", js.Array(value :_*))
     
     @scala.inline
-    def setTrainingPhrasesVarargs(value: SchemaGoogleCloudDialogflowV2IntentTrainingPhrase*): Self = this.set("trainingPhrases", js.Array(value :_*))
+    def setWebhookState(value: String): Self = StObject.set(x, "webhookState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingPhrases(value: js.Array[SchemaGoogleCloudDialogflowV2IntentTrainingPhrase]): Self = this.set("trainingPhrases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingPhrases: Self = this.set("trainingPhrases", js.undefined)
-    
-    @scala.inline
-    def setWebhookState(value: String): Self = this.set("webhookState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebhookState: Self = this.set("webhookState", js.undefined)
+    def setWebhookStateUndefined: Self = StObject.set(x, "webhookState", js.undefined)
   }
 }

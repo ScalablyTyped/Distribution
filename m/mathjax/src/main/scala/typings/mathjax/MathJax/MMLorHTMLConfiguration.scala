@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MMLorHTMLConfiguration extends js.Object {
+trait MMLorHTMLConfiguration extends StObject {
   
   /*This lets you set the preferred renderer on a browser-by-browser basis. You set the browser to either "MML" or
     * "HTML" depending on whether you want to use the NativeMML or HTML-CSS output processor. Note that although
@@ -28,24 +29,12 @@ object MMLorHTMLConfiguration {
   }
   
   @scala.inline
-  implicit class MMLorHTMLConfigurationOps[Self <: MMLorHTMLConfiguration] (val x: Self) extends AnyVal {
+  implicit class MMLorHTMLConfigurationMutableBuilder[Self <: MMLorHTMLConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrefer(value: BrowserPreference): Self = StObject.set(x, "prefer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrefer(value: BrowserPreference): Self = this.set("prefer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefer: Self = this.set("prefer", js.undefined)
+    def setPreferUndefined: Self = StObject.set(x, "prefer", js.undefined)
   }
 }

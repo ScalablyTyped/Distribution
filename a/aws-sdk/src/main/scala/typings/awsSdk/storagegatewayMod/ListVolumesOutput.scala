@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListVolumesOutput extends js.Object {
+trait ListVolumesOutput extends StObject {
   
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
   
@@ -28,39 +29,27 @@ object ListVolumesOutput {
   }
   
   @scala.inline
-  implicit class ListVolumesOutputOps[Self <: ListVolumesOutput] (val x: Self) extends AnyVal {
+  implicit class ListVolumesOutputMutableBuilder[Self <: ListVolumesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    def setVolumeInfos(value: VolumeInfos): Self = StObject.set(x, "VolumeInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setVolumeInfosUndefined: Self = StObject.set(x, "VolumeInfos", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setVolumeInfosVarargs(value: VolumeInfo*): Self = this.set("VolumeInfos", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumeInfos(value: VolumeInfos): Self = this.set("VolumeInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeInfos: Self = this.set("VolumeInfos", js.undefined)
+    def setVolumeInfosVarargs(value: VolumeInfo*): Self = StObject.set(x, "VolumeInfos", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetStackPolicyOutput extends js.Object {
+trait GetStackPolicyOutput extends StObject {
   
   /**
     * Structure containing the stack policy body. (For more information, go to  Prevent Updates to Stack Resources in the AWS CloudFormation User Guide.)
@@ -21,24 +22,12 @@ object GetStackPolicyOutput {
   }
   
   @scala.inline
-  implicit class GetStackPolicyOutputOps[Self <: GetStackPolicyOutput] (val x: Self) extends AnyVal {
+  implicit class GetStackPolicyOutputMutableBuilder[Self <: GetStackPolicyOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStackPolicyBody(value: StackPolicyBody): Self = StObject.set(x, "StackPolicyBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStackPolicyBody(value: StackPolicyBody): Self = this.set("StackPolicyBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackPolicyBody: Self = this.set("StackPolicyBody", js.undefined)
+    def setStackPolicyBodyUndefined: Self = StObject.set(x, "StackPolicyBody", js.undefined)
   }
 }

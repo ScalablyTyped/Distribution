@@ -7,14 +7,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/motionBlurPostProcess", JSImport.Namespace)
-@js.native
-object motionBlurPostProcessMod extends js.Object {
+object motionBlurPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/motionBlurPostProcess", "MotionBlurPostProcess")
   @js.native
   class MotionBlurPostProcess protected () extends PostProcess {
     /**
@@ -115,10 +115,11 @@ object motionBlurPostProcessMod extends js.Object {
     def removeExcludedSkinnedMesh(skinnedMesh: AbstractMesh): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MotionBlurPostProcess extends js.Object {
+  object MotionBlurPostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/motionBlurPostProcess", "MotionBlurPostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[MotionBlurPostProcess] = js.native
   }
 }

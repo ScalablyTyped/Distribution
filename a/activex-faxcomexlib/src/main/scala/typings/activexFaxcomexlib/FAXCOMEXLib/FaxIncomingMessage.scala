@@ -1,6 +1,7 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,51 +78,39 @@ object FaxIncomingMessage {
   }
   
   @scala.inline
-  implicit class FaxIncomingMessageOps[Self <: FaxIncomingMessage] (val x: Self) extends AnyVal {
+  implicit class FaxIncomingMessageMutableBuilder[Self <: FaxIncomingMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFAXCOMEXLibDotFaxIncomingMessage_typekey(value: FaxIncomingMessage): Self = StObject.set(x, "FAXCOMEXLib.FaxIncomingMessage_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasCoverPage(value: Boolean): Self = StObject.set(x, "HasCoverPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReAssign(value: () => Unit): Self = StObject.set(x, "ReAssign", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxIncomingMessage_typekey(value: FaxIncomingMessage): Self = this.set("FAXCOMEXLib.FaxIncomingMessage_typekey", value.asInstanceOf[js.Any])
+    def setRead(value: Boolean): Self = StObject.set(x, "Read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasCoverPage(value: Boolean): Self = this.set("HasCoverPage", value.asInstanceOf[js.Any])
+    def setRecipients(value: String): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReAssign(value: () => Unit): Self = this.set("ReAssign", js.Any.fromFunction0(value))
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRead(value: Boolean): Self = this.set("Read", value.asInstanceOf[js.Any])
+    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRecipients(value: String): Self = this.set("Recipients", value.asInstanceOf[js.Any])
+    def setSenderFaxNumber(value: String): Self = StObject.set(x, "SenderFaxNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("Refresh", js.Any.fromFunction0(value))
+    def setSenderName(value: String): Self = StObject.set(x, "SenderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderFaxNumber(value: String): Self = this.set("SenderFaxNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSenderName(value: String): Self = this.set("SenderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWasReAssigned(value: Boolean): Self = this.set("WasReAssigned", value.asInstanceOf[js.Any])
+    def setWasReAssigned(value: Boolean): Self = StObject.set(x, "WasReAssigned", value.asInstanceOf[js.Any])
   }
 }

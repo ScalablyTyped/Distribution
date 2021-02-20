@@ -1,11 +1,12 @@
 package typings.akamaiEdgeworkers.EW
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MutatesHeaders extends js.Object {
+trait MutatesHeaders extends StObject {
   
   /**
     * Add value(s) to header

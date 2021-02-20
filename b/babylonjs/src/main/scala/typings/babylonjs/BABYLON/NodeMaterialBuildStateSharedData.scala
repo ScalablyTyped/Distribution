@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.EmitVertex
 import typings.babylonjs.anon.NeedAlphaBlending
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeMaterialBuildStateSharedData extends js.Object {
+trait NodeMaterialBuildStateSharedData extends StObject {
   
   /**
     * Is vertex program allowed to be empty?
@@ -145,123 +146,111 @@ object NodeMaterialBuildStateSharedData {
   }
   
   @scala.inline
-  implicit class NodeMaterialBuildStateSharedDataOps[Self <: NodeMaterialBuildStateSharedData] (val x: Self) extends AnyVal {
+  implicit class NodeMaterialBuildStateSharedDataMutableBuilder[Self <: NodeMaterialBuildStateSharedData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowEmptyVertexProgram(value: Boolean): Self = StObject.set(x, "allowEmptyVertexProgram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedInputs(value: js.Array[InputBlock]): Self = StObject.set(x, "animatedInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimatedInputsVarargs(value: InputBlock*): Self = StObject.set(x, "animatedInputs", js.Array(value :_*))
     
     @scala.inline
-    def setAllowEmptyVertexProgram(value: Boolean): Self = this.set("allowEmptyVertexProgram", value.asInstanceOf[js.Any])
+    def setBindableBlocks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "bindableBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimatedInputsVarargs(value: InputBlock*): Self = this.set("animatedInputs", js.Array(value :_*))
+    def setBindableBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "bindableBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setAnimatedInputs(value: js.Array[InputBlock]): Self = this.set("animatedInputs", value.asInstanceOf[js.Any])
+    def setBlockingBlocks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "blockingBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindableBlocksVarargs(value: NodeMaterialBlock*): Self = this.set("bindableBlocks", js.Array(value :_*))
+    def setBlockingBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "blockingBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setBindableBlocks(value: js.Array[NodeMaterialBlock]): Self = this.set("bindableBlocks", value.asInstanceOf[js.Any])
+    def setBlocksWithDefines(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "blocksWithDefines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockingBlocksVarargs(value: NodeMaterialBlock*): Self = this.set("blockingBlocks", js.Array(value :_*))
+    def setBlocksWithDefinesVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "blocksWithDefines", js.Array(value :_*))
     
     @scala.inline
-    def setBlockingBlocks(value: js.Array[NodeMaterialBlock]): Self = this.set("blockingBlocks", value.asInstanceOf[js.Any])
+    def setBlocksWithFallbacks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "blocksWithFallbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocksWithDefinesVarargs(value: NodeMaterialBlock*): Self = this.set("blocksWithDefines", js.Array(value :_*))
+    def setBlocksWithFallbacksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "blocksWithFallbacks", js.Array(value :_*))
     
     @scala.inline
-    def setBlocksWithDefines(value: js.Array[NodeMaterialBlock]): Self = this.set("blocksWithDefines", value.asInstanceOf[js.Any])
+    def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocksWithFallbacksVarargs(value: NodeMaterialBlock*): Self = this.set("blocksWithFallbacks", js.Array(value :_*))
+    def setChecks(value: EmitVertex): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocksWithFallbacks(value: js.Array[NodeMaterialBlock]): Self = this.set("blocksWithFallbacks", value.asInstanceOf[js.Any])
+    def setDefineNames(value: org.scalablytyped.runtime.StringDictionary[Double]): Self = StObject.set(x, "defineNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildId(value: Double): Self = this.set("buildId", value.asInstanceOf[js.Any])
+    def setDynamicUniformBlocks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "dynamicUniformBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecks(value: EmitVertex): Self = this.set("checks", value.asInstanceOf[js.Any])
+    def setDynamicUniformBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "dynamicUniformBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setDefineNames(value: org.scalablytyped.runtime.StringDictionary[Double]): Self = this.set("defineNames", value.asInstanceOf[js.Any])
+    def setEmitComments(value: Boolean): Self = StObject.set(x, "emitComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicUniformBlocksVarargs(value: NodeMaterialBlock*): Self = this.set("dynamicUniformBlocks", js.Array(value :_*))
+    def setEmitErrors(value: () => Unit): Self = StObject.set(x, "emitErrors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDynamicUniformBlocks(value: js.Array[NodeMaterialBlock]): Self = this.set("dynamicUniformBlocks", value.asInstanceOf[js.Any])
+    def setHints(value: NeedAlphaBlending): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmitComments(value: Boolean): Self = this.set("emitComments", value.asInstanceOf[js.Any])
+    def setInputBlocks(value: js.Array[InputBlock]): Self = StObject.set(x, "inputBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmitErrors(value: () => Unit): Self = this.set("emitErrors", js.Any.fromFunction0(value))
+    def setInputBlocksVarargs(value: InputBlock*): Self = StObject.set(x, "inputBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setHints(value: NeedAlphaBlending): Self = this.set("hints", value.asInstanceOf[js.Any])
+    def setRepeatableContentBlocks(value: js.Array[NodeMaterialBlock]): Self = StObject.set(x, "repeatableContentBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputBlocksVarargs(value: InputBlock*): Self = this.set("inputBlocks", js.Array(value :_*))
+    def setRepeatableContentBlocksVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "repeatableContentBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setInputBlocks(value: js.Array[InputBlock]): Self = this.set("inputBlocks", value.asInstanceOf[js.Any])
+    def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatableContentBlocksVarargs(value: NodeMaterialBlock*): Self = this.set("repeatableContentBlocks", js.Array(value :_*))
+    def setTemps(value: js.Array[String]): Self = StObject.set(x, "temps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatableContentBlocks(value: js.Array[NodeMaterialBlock]): Self = this.set("repeatableContentBlocks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScene(value: Scene): Self = this.set("scene", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTempsVarargs(value: String*): Self = this.set("temps", js.Array(value :_*))
-    
-    @scala.inline
-    def setTemps(value: js.Array[String]): Self = this.set("temps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextureBlocksVarargs(
-      value: (TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock)*
-    ): Self = this.set("textureBlocks", js.Array(value :_*))
+    def setTempsVarargs(value: String*): Self = StObject.set(x, "temps", js.Array(value :_*))
     
     @scala.inline
     def setTextureBlocks(
       value: js.Array[
           TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
         ]
-    ): Self = this.set("textureBlocks", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textureBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariableNames(value: org.scalablytyped.runtime.StringDictionary[Double]): Self = this.set("variableNames", value.asInstanceOf[js.Any])
+    def setTextureBlocksVarargs(
+      value: (TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock)*
+    ): Self = StObject.set(x, "textureBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setVaryingDeclaration(value: String): Self = this.set("varyingDeclaration", value.asInstanceOf[js.Any])
+    def setVariableNames(value: org.scalablytyped.runtime.StringDictionary[Double]): Self = StObject.set(x, "variableNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVaryingsVarargs(value: String*): Self = this.set("varyings", js.Array(value :_*))
+    def setVaryingDeclaration(value: String): Self = StObject.set(x, "varyingDeclaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVaryings(value: js.Array[String]): Self = this.set("varyings", value.asInstanceOf[js.Any])
+    def setVaryings(value: js.Array[String]): Self = StObject.set(x, "varyings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    def setVaryingsVarargs(value: String*): Self = StObject.set(x, "varyings", js.Array(value :_*))
+    
+    @scala.inline
+    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
   }
 }

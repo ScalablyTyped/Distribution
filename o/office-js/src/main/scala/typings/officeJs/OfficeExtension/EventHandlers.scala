@@ -1,11 +1,12 @@
 package typings.officeJs.OfficeExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventHandlers[T] extends js.Object {
+trait EventHandlers[T] extends StObject {
   
   /**
     * Adds a function to be called when the event is triggered.
@@ -35,24 +36,12 @@ object EventHandlers {
   }
   
   @scala.inline
-  implicit class EventHandlersOps[Self <: EventHandlers[_], T] (val x: Self with EventHandlers[T]) extends AnyVal {
+  implicit class EventHandlersMutableBuilder[Self <: EventHandlers[_], T] (val x: Self with EventHandlers[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: js.Function1[/* args */ T, js.Promise[_]] => EventHandlerResult[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAdd(value: js.Function1[/* args */ T, js.Promise[_]] => EventHandlerResult[T]): Self = this.set("add", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: js.Function1[/* args */ T, js.Promise[_]] => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setRemove(value: js.Function1[/* args */ T, js.Promise[_]] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualServiceBackend extends js.Object {
+trait VirtualServiceBackend extends StObject {
   
   /**
     * A reference to an object that represents the client policy for a backend.
@@ -26,27 +27,15 @@ object VirtualServiceBackend {
   }
   
   @scala.inline
-  implicit class VirtualServiceBackendOps[Self <: VirtualServiceBackend] (val x: Self) extends AnyVal {
+  implicit class VirtualServiceBackendMutableBuilder[Self <: VirtualServiceBackend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientPolicy(value: ClientPolicy): Self = StObject.set(x, "clientPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientPolicyUndefined: Self = StObject.set(x, "clientPolicy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVirtualServiceName(value: ServiceName): Self = this.set("virtualServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientPolicy(value: ClientPolicy): Self = this.set("clientPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientPolicy: Self = this.set("clientPolicy", js.undefined)
+    def setVirtualServiceName(value: ServiceName): Self = StObject.set(x, "virtualServiceName", value.asInstanceOf[js.Any])
   }
 }

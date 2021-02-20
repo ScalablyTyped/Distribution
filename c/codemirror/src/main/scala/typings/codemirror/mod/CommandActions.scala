@@ -1,11 +1,12 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandActions extends js.Object {
+trait CommandActions extends StObject {
   
   def closeTag(cm: Editor): Unit = js.native
   
@@ -218,168 +219,156 @@ object CommandActions {
   }
   
   @scala.inline
-  implicit class CommandActionsOps[Self <: CommandActions] (val x: Self) extends AnyVal {
+  implicit class CommandActionsMutableBuilder[Self <: CommandActions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseTag(value: Editor => Unit): Self = StObject.set(x, "closeTag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultTabTab(value: Editor => Unit): Self = StObject.set(x, "defaultTabTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelCharAfter(value: Editor => Unit): Self = StObject.set(x, "delCharAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloseTag(value: Editor => Unit): Self = this.set("closeTag", js.Any.fromFunction1(value))
+    def setDelCharBefore(value: Editor => Unit): Self = StObject.set(x, "delCharBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultTabTab(value: Editor => Unit): Self = this.set("defaultTabTab", js.Any.fromFunction1(value))
+    def setDelGroupAfter(value: Editor => Unit): Self = StObject.set(x, "delGroupAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelCharAfter(value: Editor => Unit): Self = this.set("delCharAfter", js.Any.fromFunction1(value))
+    def setDelGroupBefore(value: Editor => Unit): Self = StObject.set(x, "delGroupBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelCharBefore(value: Editor => Unit): Self = this.set("delCharBefore", js.Any.fromFunction1(value))
+    def setDelLineLeft(value: Editor => Unit): Self = StObject.set(x, "delLineLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelGroupAfter(value: Editor => Unit): Self = this.set("delGroupAfter", js.Any.fromFunction1(value))
+    def setDelWordAfter(value: Editor => Unit): Self = StObject.set(x, "delWordAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelGroupBefore(value: Editor => Unit): Self = this.set("delGroupBefore", js.Any.fromFunction1(value))
+    def setDelWordBefore(value: Editor => Unit): Self = StObject.set(x, "delWordBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelLineLeft(value: Editor => Unit): Self = this.set("delLineLeft", js.Any.fromFunction1(value))
+    def setDelWrappedLineLeft(value: Editor => Unit): Self = StObject.set(x, "delWrappedLineLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelWordAfter(value: Editor => Unit): Self = this.set("delWordAfter", js.Any.fromFunction1(value))
+    def setDelWrappedLineRight(value: Editor => Unit): Self = StObject.set(x, "delWrappedLineRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelWordBefore(value: Editor => Unit): Self = this.set("delWordBefore", js.Any.fromFunction1(value))
+    def setDeleteLine(value: Editor => Unit): Self = StObject.set(x, "deleteLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelWrappedLineLeft(value: Editor => Unit): Self = this.set("delWrappedLineLeft", js.Any.fromFunction1(value))
+    def setGoCharLeft(value: Editor => Unit): Self = StObject.set(x, "goCharLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelWrappedLineRight(value: Editor => Unit): Self = this.set("delWrappedLineRight", js.Any.fromFunction1(value))
+    def setGoCharRight(value: Editor => Unit): Self = StObject.set(x, "goCharRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteLine(value: Editor => Unit): Self = this.set("deleteLine", js.Any.fromFunction1(value))
+    def setGoColumnLeft(value: Editor => Unit): Self = StObject.set(x, "goColumnLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoCharLeft(value: Editor => Unit): Self = this.set("goCharLeft", js.Any.fromFunction1(value))
+    def setGoColumnRight(value: Editor => Unit): Self = StObject.set(x, "goColumnRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoCharRight(value: Editor => Unit): Self = this.set("goCharRight", js.Any.fromFunction1(value))
+    def setGoDocEnd(value: Editor => Unit): Self = StObject.set(x, "goDocEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoColumnLeft(value: Editor => Unit): Self = this.set("goColumnLeft", js.Any.fromFunction1(value))
+    def setGoDocStart(value: Editor => Unit): Self = StObject.set(x, "goDocStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoColumnRight(value: Editor => Unit): Self = this.set("goColumnRight", js.Any.fromFunction1(value))
+    def setGoGroupLeft(value: Editor => Unit): Self = StObject.set(x, "goGroupLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoDocEnd(value: Editor => Unit): Self = this.set("goDocEnd", js.Any.fromFunction1(value))
+    def setGoGroupRight(value: Editor => Unit): Self = StObject.set(x, "goGroupRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoDocStart(value: Editor => Unit): Self = this.set("goDocStart", js.Any.fromFunction1(value))
+    def setGoLineDown(value: Editor => Unit): Self = StObject.set(x, "goLineDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoGroupLeft(value: Editor => Unit): Self = this.set("goGroupLeft", js.Any.fromFunction1(value))
+    def setGoLineEnd(value: Editor => Unit): Self = StObject.set(x, "goLineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoGroupRight(value: Editor => Unit): Self = this.set("goGroupRight", js.Any.fromFunction1(value))
+    def setGoLineLeft(value: Editor => Unit): Self = StObject.set(x, "goLineLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoLineDown(value: Editor => Unit): Self = this.set("goLineDown", js.Any.fromFunction1(value))
+    def setGoLineLeftSmart(value: Editor => Unit): Self = StObject.set(x, "goLineLeftSmart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoLineEnd(value: Editor => Unit): Self = this.set("goLineEnd", js.Any.fromFunction1(value))
+    def setGoLineRight(value: Editor => Unit): Self = StObject.set(x, "goLineRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoLineLeft(value: Editor => Unit): Self = this.set("goLineLeft", js.Any.fromFunction1(value))
+    def setGoLineStart(value: Editor => Unit): Self = StObject.set(x, "goLineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoLineLeftSmart(value: Editor => Unit): Self = this.set("goLineLeftSmart", js.Any.fromFunction1(value))
+    def setGoLineStartSmart(value: Editor => Unit): Self = StObject.set(x, "goLineStartSmart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoLineRight(value: Editor => Unit): Self = this.set("goLineRight", js.Any.fromFunction1(value))
+    def setGoLineUp(value: Editor => Unit): Self = StObject.set(x, "goLineUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoLineStart(value: Editor => Unit): Self = this.set("goLineStart", js.Any.fromFunction1(value))
+    def setGoNextDiff(value: Editor => Unit): Self = StObject.set(x, "goNextDiff", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoLineStartSmart(value: Editor => Unit): Self = this.set("goLineStartSmart", js.Any.fromFunction1(value))
+    def setGoPageDown(value: Editor => Unit): Self = StObject.set(x, "goPageDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoLineUp(value: Editor => Unit): Self = this.set("goLineUp", js.Any.fromFunction1(value))
+    def setGoPageUp(value: Editor => Unit): Self = StObject.set(x, "goPageUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoNextDiff(value: Editor => Unit): Self = this.set("goNextDiff", js.Any.fromFunction1(value))
+    def setGoPrevDiff(value: Editor => Unit): Self = StObject.set(x, "goPrevDiff", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoPageDown(value: Editor => Unit): Self = this.set("goPageDown", js.Any.fromFunction1(value))
+    def setGoWordLeft(value: Editor => Unit): Self = StObject.set(x, "goWordLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoPageUp(value: Editor => Unit): Self = this.set("goPageUp", js.Any.fromFunction1(value))
+    def setGoWordRight(value: Editor => Unit): Self = StObject.set(x, "goWordRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoPrevDiff(value: Editor => Unit): Self = this.set("goPrevDiff", js.Any.fromFunction1(value))
+    def setIndentAuto(value: Editor => Unit): Self = StObject.set(x, "indentAuto", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoWordLeft(value: Editor => Unit): Self = this.set("goWordLeft", js.Any.fromFunction1(value))
+    def setIndentLess(value: Editor => Unit): Self = StObject.set(x, "indentLess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoWordRight(value: Editor => Unit): Self = this.set("goWordRight", js.Any.fromFunction1(value))
+    def setIndentMore(value: Editor => Unit): Self = StObject.set(x, "indentMore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndentAuto(value: Editor => Unit): Self = this.set("indentAuto", js.Any.fromFunction1(value))
+    def setInsertSoftTab(value: Editor => Unit): Self = StObject.set(x, "insertSoftTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndentLess(value: Editor => Unit): Self = this.set("indentLess", js.Any.fromFunction1(value))
+    def setInsertTab(value: Editor => Unit): Self = StObject.set(x, "insertTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndentMore(value: Editor => Unit): Self = this.set("indentMore", js.Any.fromFunction1(value))
+    def setKillLine(value: Editor => Unit): Self = StObject.set(x, "killLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertSoftTab(value: Editor => Unit): Self = this.set("insertSoftTab", js.Any.fromFunction1(value))
+    def setNewlineAndIndent(value: Editor => Unit): Self = StObject.set(x, "newlineAndIndent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertTab(value: Editor => Unit): Self = this.set("insertTab", js.Any.fromFunction1(value))
+    def setRedo(value: Editor => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKillLine(value: Editor => Unit): Self = this.set("killLine", js.Any.fromFunction1(value))
+    def setRedoSelection(value: Editor => Unit): Self = StObject.set(x, "redoSelection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNewlineAndIndent(value: Editor => Unit): Self = this.set("newlineAndIndent", js.Any.fromFunction1(value))
+    def setSelectAll(value: Editor => Unit): Self = StObject.set(x, "selectAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRedo(value: Editor => Unit): Self = this.set("redo", js.Any.fromFunction1(value))
+    def setSingleSelection(value: Editor => Unit): Self = StObject.set(x, "singleSelection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRedoSelection(value: Editor => Unit): Self = this.set("redoSelection", js.Any.fromFunction1(value))
+    def setToMatchingTag(value: Editor => Unit): Self = StObject.set(x, "toMatchingTag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectAll(value: Editor => Unit): Self = this.set("selectAll", js.Any.fromFunction1(value))
+    def setToggleOverwrite(value: Editor => Unit): Self = StObject.set(x, "toggleOverwrite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSingleSelection(value: Editor => Unit): Self = this.set("singleSelection", js.Any.fromFunction1(value))
+    def setTransposeChars(value: Editor => Unit): Self = StObject.set(x, "transposeChars", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToMatchingTag(value: Editor => Unit): Self = this.set("toMatchingTag", js.Any.fromFunction1(value))
+    def setUndo(value: Editor => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToggleOverwrite(value: Editor => Unit): Self = this.set("toggleOverwrite", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTransposeChars(value: Editor => Unit): Self = this.set("transposeChars", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUndo(value: Editor => Unit): Self = this.set("undo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUndoSelection(value: Editor => Unit): Self = this.set("undoSelection", js.Any.fromFunction1(value))
+    def setUndoSelection(value: Editor => Unit): Self = StObject.set(x, "undoSelection", js.Any.fromFunction1(value))
   }
 }

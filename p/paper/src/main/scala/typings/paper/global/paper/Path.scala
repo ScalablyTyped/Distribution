@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +36,9 @@ class Path ()
   def this(pathData: String) = this()
   def this(segments: js.Array[typings.paper.paper.Segment]) = this()
 }
-@JSGlobal("paper.Path")
-@js.native
-object Path extends js.Object {
+object Path {
   
+  @JSGlobal("paper.Path.Arc")
   @js.native
   class Arc protected ()
     extends typings.paper.paper.Path {
@@ -60,6 +60,7 @@ object Path extends js.Object {
     def this(from: typings.paper.paper.Point, through: typings.paper.paper.Point, to: typings.paper.paper.Point) = this()
   }
   
+  @JSGlobal("paper.Path.Circle")
   @js.native
   class Circle protected ()
     extends typings.paper.paper.Path {
@@ -80,6 +81,7 @@ object Path extends js.Object {
     def this(center: typings.paper.paper.Point, radius: Double) = this()
   }
   
+  @JSGlobal("paper.Path.Ellipse")
   @js.native
   class Ellipse protected ()
     extends typings.paper.paper.Path {
@@ -99,6 +101,7 @@ object Path extends js.Object {
     def this(rectangle: typings.paper.paper.Rectangle) = this()
   }
   
+  @JSGlobal("paper.Path.Line")
   @js.native
   class Line protected ()
     extends typings.paper.paper.Path {
@@ -119,6 +122,7 @@ object Path extends js.Object {
     def this(from: typings.paper.paper.Point, to: typings.paper.paper.Point) = this()
   }
   
+  @JSGlobal("paper.Path.Rectangle")
   @js.native
   class Rectangle protected ()
     extends typings.paper.paper.Path {
@@ -157,6 +161,7 @@ object Path extends js.Object {
     def this(rectangle: typings.paper.paper.Rectangle, radius: typings.paper.paper.Size) = this()
   }
   
+  @JSGlobal("paper.Path.RegularPolygon")
   @js.native
   class RegularPolygon protected ()
     extends typings.paper.paper.Path {
@@ -178,6 +183,7 @@ object Path extends js.Object {
     def this(center: typings.paper.paper.Point, sides: Double, radius: Double) = this()
   }
   
+  @JSGlobal("paper.Path.Star")
   @js.native
   class Star protected ()
     extends typings.paper.paper.Path {

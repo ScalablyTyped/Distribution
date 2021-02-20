@@ -1,13 +1,13 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.mvc")
-@js.native
-object mvc extends js.Object {
+object mvc {
   
+  @JSGlobal("sap.ui.core.mvc.Controller")
   @js.native
   class Controller protected ()
     extends typings.openui5.sap.ui.core.mvc.Controller {
@@ -23,6 +23,7 @@ object mvc extends js.Object {
     def this(sName: js.Array[_]) = this()
   }
   
+  @JSGlobal("sap.ui.core.mvc.HTMLView")
   @js.native
   class HTMLView protected ()
     extends typings.openui5.sap.ui.core.mvc.HTMLView {
@@ -35,6 +36,7 @@ object mvc extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.mvc.JSONView")
   @js.native
   class JSONView protected ()
     extends typings.openui5.sap.ui.core.mvc.JSONView {
@@ -47,6 +49,7 @@ object mvc extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.mvc.JSView")
   @js.native
   class JSView protected ()
     extends typings.openui5.sap.ui.core.mvc.JSView {
@@ -59,6 +62,7 @@ object mvc extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.mvc.TemplateView")
   @js.native
   class TemplateView protected ()
     extends typings.openui5.sap.ui.core.mvc.TemplateView {
@@ -71,6 +75,7 @@ object mvc extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.mvc.View")
   @js.native
   class View protected ()
     extends typings.openui5.sap.ui.core.mvc.View {
@@ -85,17 +90,16 @@ object mvc extends js.Object {
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
   }
-  @js.native
-  object View extends js.Object {
+  object View {
     
     /**
       * Specifies possible view types
       */
-    @js.native
-    object mvc extends js.Object {
+    object mvc {
       
+      @JSGlobal("sap.ui.core.mvc.View.mvc.ViewType")
       @js.native
-      object ViewType extends js.Object {
+      object ViewType extends StObject {
         
         @JSBracketAccess
         def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.mvc.View.mvc.ViewType with Double] = js.native
@@ -113,6 +117,7 @@ object mvc extends js.Object {
     }
   }
   
+  @JSGlobal("sap.ui.core.mvc.XMLView")
   @js.native
   /**
     * Constructor for a new mvc/XMLView.Accepts an object literal <code>mSettings</code> that defines
@@ -138,14 +143,14 @@ object mvc extends js.Object {
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
   }
-  @js.native
-  object XMLView extends js.Object {
+  object XMLView {
     
     /**
       * Specifies the available preprocessor types for XMLViews
       */
+    @JSGlobal("sap.ui.core.mvc.XMLView.PreprocessorType")
     @js.native
-    object PreprocessorType extends js.Object {
+    object PreprocessorType extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType with Double] = js.native

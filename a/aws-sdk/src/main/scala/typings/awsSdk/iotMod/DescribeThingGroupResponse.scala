@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeThingGroupResponse extends js.Object {
+trait DescribeThingGroupResponse extends StObject {
   
   /**
     * The dynamic thing group index name.
@@ -66,78 +67,66 @@ object DescribeThingGroupResponse {
   }
   
   @scala.inline
-  implicit class DescribeThingGroupResponseOps[Self <: DescribeThingGroupResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeThingGroupResponseMutableBuilder[Self <: DescribeThingGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryString(value: QueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: IndexName): Self = this.set("indexName", value.asInstanceOf[js.Any])
+    def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
     
     @scala.inline
-    def deleteIndexName: Self = this.set("indexName", js.undefined)
+    def setQueryVersion(value: QueryVersion): Self = StObject.set(x, "queryVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryString(value: QueryString): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    def setQueryVersionUndefined: Self = StObject.set(x, "queryVersion", js.undefined)
     
     @scala.inline
-    def deleteQueryString: Self = this.set("queryString", js.undefined)
+    def setStatus(value: DynamicGroupStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryVersion(value: QueryVersion): Self = this.set("queryVersion", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteQueryVersion: Self = this.set("queryVersion", js.undefined)
+    def setThingGroupArn(value: ThingGroupArn): Self = StObject.set(x, "thingGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: DynamicGroupStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setThingGroupArnUndefined: Self = StObject.set(x, "thingGroupArn", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setThingGroupId(value: ThingGroupId): Self = StObject.set(x, "thingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingGroupArn(value: ThingGroupArn): Self = this.set("thingGroupArn", value.asInstanceOf[js.Any])
+    def setThingGroupIdUndefined: Self = StObject.set(x, "thingGroupId", js.undefined)
     
     @scala.inline
-    def deleteThingGroupArn: Self = this.set("thingGroupArn", js.undefined)
+    def setThingGroupMetadata(value: ThingGroupMetadata): Self = StObject.set(x, "thingGroupMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingGroupId(value: ThingGroupId): Self = this.set("thingGroupId", value.asInstanceOf[js.Any])
+    def setThingGroupMetadataUndefined: Self = StObject.set(x, "thingGroupMetadata", js.undefined)
     
     @scala.inline
-    def deleteThingGroupId: Self = this.set("thingGroupId", js.undefined)
+    def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingGroupMetadata(value: ThingGroupMetadata): Self = this.set("thingGroupMetadata", value.asInstanceOf[js.Any])
+    def setThingGroupNameUndefined: Self = StObject.set(x, "thingGroupName", js.undefined)
     
     @scala.inline
-    def deleteThingGroupMetadata: Self = this.set("thingGroupMetadata", js.undefined)
+    def setThingGroupProperties(value: ThingGroupProperties): Self = StObject.set(x, "thingGroupProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingGroupName(value: ThingGroupName): Self = this.set("thingGroupName", value.asInstanceOf[js.Any])
+    def setThingGroupPropertiesUndefined: Self = StObject.set(x, "thingGroupProperties", js.undefined)
     
     @scala.inline
-    def deleteThingGroupName: Self = this.set("thingGroupName", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingGroupProperties(value: ThingGroupProperties): Self = this.set("thingGroupProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingGroupProperties: Self = this.set("thingGroupProperties", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

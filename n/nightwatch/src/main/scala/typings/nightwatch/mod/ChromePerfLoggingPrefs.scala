@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChromePerfLoggingPrefs extends js.Object {
+trait ChromePerfLoggingPrefs extends StObject {
   
   /**
     * Default: 1000. The requested number of milliseconds between DevTools trace buffer usage events. For example, if 1000,
@@ -39,42 +40,30 @@ object ChromePerfLoggingPrefs {
   }
   
   @scala.inline
-  implicit class ChromePerfLoggingPrefsOps[Self <: ChromePerfLoggingPrefs] (val x: Self) extends AnyVal {
+  implicit class ChromePerfLoggingPrefsMutableBuilder[Self <: ChromePerfLoggingPrefs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferUsageReportingIntervalUndefined: Self = StObject.set(x, "bufferUsageReportingInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableNetwork(value: Boolean): Self = StObject.set(x, "enableNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferUsageReportingInterval(value: Double): Self = this.set("bufferUsageReportingInterval", value.asInstanceOf[js.Any])
+    def setEnableNetworkUndefined: Self = StObject.set(x, "enableNetwork", js.undefined)
     
     @scala.inline
-    def deleteBufferUsageReportingInterval: Self = this.set("bufferUsageReportingInterval", js.undefined)
+    def setEnablePage(value: Boolean): Self = StObject.set(x, "enablePage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableNetwork(value: Boolean): Self = this.set("enableNetwork", value.asInstanceOf[js.Any])
+    def setEnablePageUndefined: Self = StObject.set(x, "enablePage", js.undefined)
     
     @scala.inline
-    def deleteEnableNetwork: Self = this.set("enableNetwork", js.undefined)
+    def setTraceCategories(value: String): Self = StObject.set(x, "traceCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePage(value: Boolean): Self = this.set("enablePage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnablePage: Self = this.set("enablePage", js.undefined)
-    
-    @scala.inline
-    def setTraceCategories(value: String): Self = this.set("traceCategories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceCategories: Self = this.set("traceCategories", js.undefined)
+    def setTraceCategoriesUndefined: Self = StObject.set(x, "traceCategories", js.undefined)
   }
 }

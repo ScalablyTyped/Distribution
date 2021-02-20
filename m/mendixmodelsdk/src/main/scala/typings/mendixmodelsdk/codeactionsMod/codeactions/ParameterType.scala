@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,12 +37,23 @@ abstract class ParameterType protected () extends Element[IModel] {
   @JSName("containerAsCodeActionParameter")
   val containerAsCodeActionParameter_FParameterType: ICodeActionParameter = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.ParameterType")
-@js.native
-object ParameterType extends js.Object {
+object ParameterType {
   
-  var structureTypeName: String = js.native
+  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.ParameterType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.ParameterType.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.ParameterType.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

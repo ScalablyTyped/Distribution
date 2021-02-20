@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientScript.gapi.client.script
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListScriptProcessesResponse extends js.Object {
+trait ListScriptProcessesResponse extends StObject {
   
   /** Token for the next page of results. If empty, there are no more pages remaining. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object ListScriptProcessesResponse {
   }
   
   @scala.inline
-  implicit class ListScriptProcessesResponseOps[Self <: ListScriptProcessesResponse] (val x: Self) extends AnyVal {
+  implicit class ListScriptProcessesResponseMutableBuilder[Self <: ListScriptProcessesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcesses(value: js.Array[GoogleAppsScriptTypeProcess]): Self = StObject.set(x, "processes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setProcessesUndefined: Self = StObject.set(x, "processes", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setProcessesVarargs(value: GoogleAppsScriptTypeProcess*): Self = this.set("processes", js.Array(value :_*))
-    
-    @scala.inline
-    def setProcesses(value: js.Array[GoogleAppsScriptTypeProcess]): Self = this.set("processes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcesses: Self = this.set("processes", js.undefined)
+    def setProcessesVarargs(value: GoogleAppsScriptTypeProcess*): Self = StObject.set(x, "processes", js.Array(value :_*))
   }
 }

@@ -4,12 +4,13 @@ import typings.minappEnv.OQ
 import typings.minappEnv.Promise
 import typings.minappEnv.anon.RQICountDocumentOptions
 import typings.minappEnv.anon.RQIGetDocumentOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Query extends js.Object {
+trait Query extends StObject {
   
   // update(options?: IUpdateDocumentOptions): Promise<IUpdateResult> | void
   // remove(options?: IRemoveDocumentOptions): Promise<IRemoveResult> | void

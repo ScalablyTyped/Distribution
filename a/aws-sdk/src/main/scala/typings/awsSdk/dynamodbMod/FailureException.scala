@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailureException extends js.Object {
+trait FailureException extends StObject {
   
   /**
     * Description of the failure.
@@ -26,30 +27,18 @@ object FailureException {
   }
   
   @scala.inline
-  implicit class FailureExceptionOps[Self <: FailureException] (val x: Self) extends AnyVal {
+  implicit class FailureExceptionMutableBuilder[Self <: FailureException] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExceptionDescription(value: ExceptionDescription): Self = StObject.set(x, "ExceptionDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExceptionDescriptionUndefined: Self = StObject.set(x, "ExceptionDescription", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExceptionName(value: ExceptionName): Self = StObject.set(x, "ExceptionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExceptionDescription(value: ExceptionDescription): Self = this.set("ExceptionDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExceptionDescription: Self = this.set("ExceptionDescription", js.undefined)
-    
-    @scala.inline
-    def setExceptionName(value: ExceptionName): Self = this.set("ExceptionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExceptionName: Self = this.set("ExceptionName", js.undefined)
+    def setExceptionNameUndefined: Self = StObject.set(x, "ExceptionName", js.undefined)
   }
 }

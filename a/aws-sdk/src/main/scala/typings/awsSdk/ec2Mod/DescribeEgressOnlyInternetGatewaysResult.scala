@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEgressOnlyInternetGatewaysResult extends js.Object {
+trait DescribeEgressOnlyInternetGatewaysResult extends StObject {
   
   /**
     * Information about the egress-only internet gateways.
@@ -26,33 +27,21 @@ object DescribeEgressOnlyInternetGatewaysResult {
   }
   
   @scala.inline
-  implicit class DescribeEgressOnlyInternetGatewaysResultOps[Self <: DescribeEgressOnlyInternetGatewaysResult] (val x: Self) extends AnyVal {
+  implicit class DescribeEgressOnlyInternetGatewaysResultMutableBuilder[Self <: DescribeEgressOnlyInternetGatewaysResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEgressOnlyInternetGateways(value: EgressOnlyInternetGatewayList): Self = StObject.set(x, "EgressOnlyInternetGateways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEgressOnlyInternetGatewaysUndefined: Self = StObject.set(x, "EgressOnlyInternetGateways", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEgressOnlyInternetGatewaysVarargs(value: EgressOnlyInternetGateway*): Self = StObject.set(x, "EgressOnlyInternetGateways", js.Array(value :_*))
     
     @scala.inline
-    def setEgressOnlyInternetGatewaysVarargs(value: EgressOnlyInternetGateway*): Self = this.set("EgressOnlyInternetGateways", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEgressOnlyInternetGateways(value: EgressOnlyInternetGatewayList): Self = this.set("EgressOnlyInternetGateways", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEgressOnlyInternetGateways: Self = this.set("EgressOnlyInternetGateways", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

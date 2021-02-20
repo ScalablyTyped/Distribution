@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.networkfirewall
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleGroupRulesSourceStatefulRule extends js.Object {
+trait RuleGroupRuleGroupRulesSourceStatefulRule extends StObject {
   
   /**
     * Action to take with packets in a traffic flow when the flow matches the stateful rule criteria. For all actions, AWS Network Firewall performs the specified action and discontinues stateful inspection of the traffic flow. Valid values: `ALERT`, `DROP` or `PASS`.
@@ -36,30 +37,18 @@ object RuleGroupRuleGroupRulesSourceStatefulRule {
   }
   
   @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatefulRuleOps[Self <: RuleGroupRuleGroupRulesSourceStatefulRule] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleGroupRulesSourceStatefulRuleMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatefulRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeader(value: Input[RuleGroupRuleGroupRulesSourceStatefulRuleHeader]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleOptions(value: Input[js.Array[Input[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption]]]): Self = StObject.set(x, "ruleOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: Input[String]): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeader(value: Input[RuleGroupRuleGroupRulesSourceStatefulRuleHeader]): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleOptionsVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption]*): Self = this.set("ruleOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRuleOptions(value: Input[js.Array[Input[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption]]]): Self = this.set("ruleOptions", value.asInstanceOf[js.Any])
+    def setRuleOptionsVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption]*): Self = StObject.set(x, "ruleOptions", js.Array(value :_*))
   }
 }

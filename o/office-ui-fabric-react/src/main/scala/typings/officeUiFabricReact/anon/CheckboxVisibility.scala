@@ -3,12 +3,13 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.detailsListTypesMod.ConstrainMode
 import typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckboxVisibility extends js.Object {
+trait CheckboxVisibility extends StObject {
   
   var checkboxVisibility: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility = js.native
   
@@ -41,39 +42,27 @@ object CheckboxVisibility {
   }
   
   @scala.inline
-  implicit class CheckboxVisibilityOps[Self <: CheckboxVisibility] (val x: Self) extends AnyVal {
+  implicit class CheckboxVisibilityMutableBuilder[Self <: CheckboxVisibility] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckboxVisibility(value: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility): Self = StObject.set(x, "checkboxVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstrainMode(value: ConstrainMode): Self = StObject.set(x, "constrainMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxVisibility(value: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility): Self = this.set("checkboxVisibility", value.asInstanceOf[js.Any])
+    def setIsHeaderVisible(value: Boolean): Self = StObject.set(x, "isHeaderVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    def setLayoutMode(value: DetailsListLayoutMode): Self = StObject.set(x, "layoutMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstrainMode(value: ConstrainMode): Self = this.set("constrainMode", value.asInstanceOf[js.Any])
+    def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHeaderVisible(value: Boolean): Self = this.set("isHeaderVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayoutMode(value: DetailsListLayoutMode): Self = this.set("layoutMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionMode(value: SelectionMode): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseFastIcons(value: Boolean): Self = this.set("useFastIcons", value.asInstanceOf[js.Any])
+    def setUseFastIcons(value: Boolean): Self = StObject.set(x, "useFastIcons", value.asInstanceOf[js.Any])
   }
 }

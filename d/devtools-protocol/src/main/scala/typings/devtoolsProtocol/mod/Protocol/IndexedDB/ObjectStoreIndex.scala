@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectStoreIndex extends js.Object {
+trait ObjectStoreIndex extends StObject {
   
   /**
     * Index key path.
@@ -36,30 +37,18 @@ object ObjectStoreIndex {
   }
   
   @scala.inline
-  implicit class ObjectStoreIndexOps[Self <: ObjectStoreIndex] (val x: Self) extends AnyVal {
+  implicit class ObjectStoreIndexMutableBuilder[Self <: ObjectStoreIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyPath(value: KeyPath): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiEntry(value: Boolean): Self = StObject.set(x, "multiEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPath(value: KeyPath): Self = this.set("keyPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultiEntry(value: Boolean): Self = this.set("multiEntry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
+    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
   }
 }

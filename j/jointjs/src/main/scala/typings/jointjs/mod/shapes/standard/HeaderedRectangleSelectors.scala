@@ -3,12 +3,13 @@ package typings.jointjs.mod.shapes.standard
 import typings.jointjs.mod.attributes.SVGAttributes
 import typings.jointjs.mod.attributes.SVGRectAttributes
 import typings.jointjs.mod.attributes.SVGTextAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeaderedRectangleSelectors extends js.Object {
+trait HeaderedRectangleSelectors extends StObject {
   
   var body: js.UndefOr[SVGRectAttributes] = js.native
   
@@ -29,48 +30,36 @@ object HeaderedRectangleSelectors {
   }
   
   @scala.inline
-  implicit class HeaderedRectangleSelectorsOps[Self <: HeaderedRectangleSelectors] (val x: Self) extends AnyVal {
+  implicit class HeaderedRectangleSelectorsMutableBuilder[Self <: HeaderedRectangleSelectors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: SVGRectAttributes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyText(value: SVGTextAttributes): Self = StObject.set(x, "bodyText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyTextUndefined: Self = StObject.set(x, "bodyText", js.undefined)
     
     @scala.inline
-    def setBody(value: SVGRectAttributes): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setHeader(value: SVGRectAttributes): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyText(value: SVGTextAttributes): Self = this.set("bodyText", value.asInstanceOf[js.Any])
+    def setHeaderText(value: SVGTextAttributes): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBodyText: Self = this.set("bodyText", js.undefined)
+    def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
     
     @scala.inline
-    def setHeader(value: SVGRectAttributes): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderText(value: SVGTextAttributes): Self = this.set("headerText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderText: Self = this.set("headerText", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: SVGAttributes): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

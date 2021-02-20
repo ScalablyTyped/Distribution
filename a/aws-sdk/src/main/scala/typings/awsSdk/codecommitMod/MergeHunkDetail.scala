@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergeHunkDetail extends js.Object {
+trait MergeHunkDetail extends StObject {
   
   /**
     * The end position of the hunk in the merge result.
@@ -31,36 +32,24 @@ object MergeHunkDetail {
   }
   
   @scala.inline
-  implicit class MergeHunkDetailOps[Self <: MergeHunkDetail] (val x: Self) extends AnyVal {
+  implicit class MergeHunkDetailMutableBuilder[Self <: MergeHunkDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndLine(value: LineNumber): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHunkContent(value: HunkContent): Self = StObject.set(x, "hunkContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndLine(value: LineNumber): Self = this.set("endLine", value.asInstanceOf[js.Any])
+    def setHunkContentUndefined: Self = StObject.set(x, "hunkContent", js.undefined)
     
     @scala.inline
-    def deleteEndLine: Self = this.set("endLine", js.undefined)
+    def setStartLine(value: LineNumber): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHunkContent(value: HunkContent): Self = this.set("hunkContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHunkContent: Self = this.set("hunkContent", js.undefined)
-    
-    @scala.inline
-    def setStartLine(value: LineNumber): Self = this.set("startLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartLine: Self = this.set("startLine", js.undefined)
+    def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
   }
 }

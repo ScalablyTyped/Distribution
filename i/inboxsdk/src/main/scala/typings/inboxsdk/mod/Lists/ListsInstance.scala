@@ -1,11 +1,12 @@
 package typings.inboxsdk.mod.Lists
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListsInstance extends js.Object {
+trait ListsInstance extends StObject {
   
   def getSelectedThreadRowViews(): js.Array[ThreadRowView] = js.native
   
@@ -26,27 +27,15 @@ object ListsInstance {
   }
   
   @scala.inline
-  implicit class ListsInstanceOps[Self <: ListsInstance] (val x: Self) extends AnyVal {
+  implicit class ListsInstanceMutableBuilder[Self <: ListsInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetSelectedThreadRowViews(value: () => js.Array[ThreadRowView]): Self = StObject.set(x, "getSelectedThreadRowViews", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegisterThreadRowViewHandler(value: js.Function1[/* threadRowView */ ThreadRowView, _] => js.Function0[Unit]): Self = StObject.set(x, "registerThreadRowViewHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetSelectedThreadRowViews(value: () => js.Array[ThreadRowView]): Self = this.set("getSelectedThreadRowViews", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRegisterThreadRowViewHandler(value: js.Function1[/* threadRowView */ ThreadRowView, _] => js.Function0[Unit]): Self = this.set("registerThreadRowViewHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterThreadRowViewSelectionHandler(value: js.Function0[_] => js.Function0[Unit]): Self = this.set("registerThreadRowViewSelectionHandler", js.Any.fromFunction1(value))
+    def setRegisterThreadRowViewSelectionHandler(value: js.Function0[_] => js.Function0[Unit]): Self = StObject.set(x, "registerThreadRowViewSelectionHandler", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteVpcPeeringAuthorizationInput extends js.Object {
+trait DeleteVpcPeeringAuthorizationInput extends StObject {
   
   /**
     * A unique identifier for the AWS account that you use to manage your Amazon GameLift fleet. You can find your Account ID in the AWS Management Console under account settings.
@@ -26,24 +27,12 @@ object DeleteVpcPeeringAuthorizationInput {
   }
   
   @scala.inline
-  implicit class DeleteVpcPeeringAuthorizationInputOps[Self <: DeleteVpcPeeringAuthorizationInput] (val x: Self) extends AnyVal {
+  implicit class DeleteVpcPeeringAuthorizationInputMutableBuilder[Self <: DeleteVpcPeeringAuthorizationInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameLiftAwsAccountId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameLiftAwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGameLiftAwsAccountId(value: NonZeroAndMaxString): Self = this.set("GameLiftAwsAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPeerVpcId(value: NonZeroAndMaxString): Self = this.set("PeerVpcId", value.asInstanceOf[js.Any])
+    def setPeerVpcId(value: NonZeroAndMaxString): Self = StObject.set(x, "PeerVpcId", value.asInstanceOf[js.Any])
   }
 }

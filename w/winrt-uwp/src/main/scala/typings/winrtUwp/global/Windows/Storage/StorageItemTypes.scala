@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes whether an item that implements the IStorageItem interface is a file or a folder. */
 @JSGlobal("Windows.Storage.StorageItemTypes")
 @js.native
-object StorageItemTypes extends js.Object {
+object StorageItemTypes extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.StorageItemTypes with Double] = js.native

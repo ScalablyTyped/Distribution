@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigatorIOSProps extends js.Object {
+trait NavigatorIOSProps extends StObject {
   
   /**
     * The default background color of the navigation bar.
@@ -76,81 +77,69 @@ object NavigatorIOSProps {
   }
   
   @scala.inline
-  implicit class NavigatorIOSPropsOps[Self <: NavigatorIOSProps] (val x: Self) extends AnyVal {
+  implicit class NavigatorIOSPropsMutableBuilder[Self <: NavigatorIOSProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarTintColor(value: ColorValue): Self = StObject.set(x, "barTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarTintColorUndefined: Self = StObject.set(x, "barTintColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialRoute(value: Route): Self = StObject.set(x, "initialRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialRoute(value: Route): Self = this.set("initialRoute", value.asInstanceOf[js.Any])
+    def setInteractivePopGestureEnabled(value: Boolean): Self = StObject.set(x, "interactivePopGestureEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarTintColor(value: ColorValue): Self = this.set("barTintColor", value.asInstanceOf[js.Any])
+    def setInteractivePopGestureEnabledUndefined: Self = StObject.set(x, "interactivePopGestureEnabled", js.undefined)
     
     @scala.inline
-    def deleteBarTintColor: Self = this.set("barTintColor", js.undefined)
+    def setItemWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemWrapperStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractivePopGestureEnabled(value: Boolean): Self = this.set("interactivePopGestureEnabled", value.asInstanceOf[js.Any])
+    def setItemWrapperStyleNull: Self = StObject.set(x, "itemWrapperStyle", null)
     
     @scala.inline
-    def deleteInteractivePopGestureEnabled: Self = this.set("interactivePopGestureEnabled", js.undefined)
+    def setItemWrapperStyleUndefined: Self = StObject.set(x, "itemWrapperStyle", js.undefined)
     
     @scala.inline
-    def setItemWrapperStyle(value: StyleProp[ViewStyle]): Self = this.set("itemWrapperStyle", value.asInstanceOf[js.Any])
+    def setNavigationBarHidden(value: Boolean): Self = StObject.set(x, "navigationBarHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemWrapperStyle: Self = this.set("itemWrapperStyle", js.undefined)
+    def setNavigationBarHiddenUndefined: Self = StObject.set(x, "navigationBarHidden", js.undefined)
     
     @scala.inline
-    def setItemWrapperStyleNull: Self = this.set("itemWrapperStyle", null)
+    def setShadowHidden(value: Boolean): Self = StObject.set(x, "shadowHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationBarHidden(value: Boolean): Self = this.set("navigationBarHidden", value.asInstanceOf[js.Any])
+    def setShadowHiddenUndefined: Self = StObject.set(x, "shadowHidden", js.undefined)
     
     @scala.inline
-    def deleteNavigationBarHidden: Self = this.set("navigationBarHidden", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowHidden(value: Boolean): Self = this.set("shadowHidden", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteShadowHidden: Self = this.set("shadowHidden", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTintColor(value: ColorValue): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setTitleTextColor(value: ColorValue): Self = StObject.set(x, "titleTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: ColorValue): Self = this.set("tintColor", value.asInstanceOf[js.Any])
+    def setTitleTextColorUndefined: Self = StObject.set(x, "titleTextColor", js.undefined)
     
     @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleTextColor(value: ColorValue): Self = this.set("titleTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleTextColor: Self = this.set("titleTextColor", js.undefined)
-    
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = this.set("translucent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslucent: Self = this.set("translucent", js.undefined)
+    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

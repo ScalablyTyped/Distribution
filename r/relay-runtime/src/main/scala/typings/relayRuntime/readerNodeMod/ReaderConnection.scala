@@ -1,11 +1,12 @@
 package typings.relayRuntime.readerNodeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReaderConnection extends js.Object {
+trait ReaderConnection extends StObject {
   
   val args: js.Array[ReaderArgument] = js.native
   
@@ -35,39 +36,27 @@ object ReaderConnection {
   }
   
   @scala.inline
-  implicit class ReaderConnectionOps[Self <: ReaderConnection] (val x: Self) extends AnyVal {
+  implicit class ReaderConnectionMutableBuilder[Self <: ReaderConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[ReaderArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: ReaderArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdges(value: ReaderLinkedField): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: ReaderArgument*): Self = this.set("args", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[ReaderArgument]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdges(value: ReaderLinkedField): Self = this.set("edges", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageInfo(value: ReaderLinkedField): Self = this.set("pageInfo", value.asInstanceOf[js.Any])
+    def setPageInfo(value: ReaderLinkedField): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
   }
 }

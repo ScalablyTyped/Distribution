@@ -1,11 +1,12 @@
 package typings.googleapis.gmailV1Mod.gmailV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaListLabelsResponse extends js.Object {
+trait SchemaListLabelsResponse extends StObject {
   
   /**
     * List of labels.
@@ -21,27 +22,15 @@ object SchemaListLabelsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListLabelsResponseOps[Self <: SchemaListLabelsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListLabelsResponseMutableBuilder[Self <: SchemaListLabelsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabels(value: js.Array[SchemaLabel]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabelsVarargs(value: SchemaLabel*): Self = this.set("labels", js.Array(value :_*))
-    
-    @scala.inline
-    def setLabels(value: js.Array[SchemaLabel]): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsVarargs(value: SchemaLabel*): Self = StObject.set(x, "labels", js.Array(value :_*))
   }
 }

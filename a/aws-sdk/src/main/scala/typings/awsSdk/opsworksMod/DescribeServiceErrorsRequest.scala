@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeServiceErrorsRequest extends js.Object {
+trait DescribeServiceErrorsRequest extends StObject {
   
   /**
     * The instance ID. If you use this parameter, DescribeServiceErrors returns descriptions of the errors associated with the specified instance.
@@ -31,39 +32,27 @@ object DescribeServiceErrorsRequest {
   }
   
   @scala.inline
-  implicit class DescribeServiceErrorsRequestOps[Self <: DescribeServiceErrorsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeServiceErrorsRequestMutableBuilder[Self <: DescribeServiceErrorsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceErrorIds(value: Strings): Self = StObject.set(x, "ServiceErrorIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setServiceErrorIdsUndefined: Self = StObject.set(x, "ServiceErrorIds", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setServiceErrorIdsVarargs(value: String*): Self = StObject.set(x, "ServiceErrorIds", js.Array(value :_*))
     
     @scala.inline
-    def setServiceErrorIdsVarargs(value: String*): Self = this.set("ServiceErrorIds", js.Array(value :_*))
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceErrorIds(value: Strings): Self = this.set("ServiceErrorIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceErrorIds: Self = this.set("ServiceErrorIds", js.undefined)
-    
-    @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

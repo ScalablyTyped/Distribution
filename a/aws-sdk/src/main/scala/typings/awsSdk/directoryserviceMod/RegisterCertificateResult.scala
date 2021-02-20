@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterCertificateResult extends js.Object {
+trait RegisterCertificateResult extends StObject {
   
   /**
     * The identifier of the certificate.
@@ -21,24 +22,12 @@ object RegisterCertificateResult {
   }
   
   @scala.inline
-  implicit class RegisterCertificateResultOps[Self <: RegisterCertificateResult] (val x: Self) extends AnyVal {
+  implicit class RegisterCertificateResultMutableBuilder[Self <: RegisterCertificateResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateId(value: CertificateId): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = this.set("CertificateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateId: Self = this.set("CertificateId", js.undefined)
+    def setCertificateIdUndefined: Self = StObject.set(x, "CertificateId", js.undefined)
   }
 }

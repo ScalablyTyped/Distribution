@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationInstance extends js.Object {
+trait ReplicationInstance extends StObject {
   
   /**
     * The amount of storage (in gigabytes) that is allocated for the replication instance.
@@ -131,165 +132,153 @@ object ReplicationInstance {
   }
   
   @scala.inline
-  implicit class ReplicationInstanceOps[Self <: ReplicationInstance] (val x: Self) extends AnyVal {
+  implicit class ReplicationInstanceMutableBuilder[Self <: ReplicationInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocatedStorage(value: Integer): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocatedStorageUndefined: Self = StObject.set(x, "AllocatedStorage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoMinorVersionUpgrade(value: Boolean): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocatedStorage(value: Integer): Self = this.set("AllocatedStorage", value.asInstanceOf[js.Any])
+    def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "AutoMinorVersionUpgrade", js.undefined)
     
     @scala.inline
-    def deleteAllocatedStorage: Self = this.set("AllocatedStorage", js.undefined)
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMinorVersionUpgrade(value: Boolean): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    def setDnsNameServers(value: String): Self = StObject.set(x, "DnsNameServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setDnsNameServersUndefined: Self = StObject.set(x, "DnsNameServers", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsNameServers(value: String): Self = this.set("DnsNameServers", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def deleteDnsNameServers: Self = this.set("DnsNameServers", js.undefined)
+    def setFreeUntil(value: TStamp): Self = StObject.set(x, "FreeUntil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    def setFreeUntilUndefined: Self = StObject.set(x, "FreeUntil", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    def setInstanceCreateTime(value: TStamp): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreeUntil(value: TStamp): Self = this.set("FreeUntil", value.asInstanceOf[js.Any])
+    def setInstanceCreateTimeUndefined: Self = StObject.set(x, "InstanceCreateTime", js.undefined)
     
     @scala.inline
-    def deleteFreeUntil: Self = this.set("FreeUntil", js.undefined)
+    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceCreateTime(value: TStamp): Self = this.set("InstanceCreateTime", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteInstanceCreateTime: Self = this.set("InstanceCreateTime", js.undefined)
+    def setMultiAZ(value: Boolean): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setPendingModifiedValues(value: ReplicationPendingModifiedValues): Self = StObject.set(x, "PendingModifiedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiAZ(value: Boolean): Self = this.set("MultiAZ", value.asInstanceOf[js.Any])
+    def setPendingModifiedValuesUndefined: Self = StObject.set(x, "PendingModifiedValues", js.undefined)
     
     @scala.inline
-    def deleteMultiAZ: Self = this.set("MultiAZ", js.undefined)
+    def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingModifiedValues(value: ReplicationPendingModifiedValues): Self = this.set("PendingModifiedValues", value.asInstanceOf[js.Any])
+    def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "PreferredMaintenanceWindow", js.undefined)
     
     @scala.inline
-    def deletePendingModifiedValues: Self = this.set("PendingModifiedValues", js.undefined)
+    def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "PubliclyAccessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "PubliclyAccessible", js.undefined)
     
     @scala.inline
-    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubliclyAccessible(value: Boolean): Self = this.set("PubliclyAccessible", value.asInstanceOf[js.Any])
+    def setReplicationInstanceArnUndefined: Self = StObject.set(x, "ReplicationInstanceArn", js.undefined)
     
     @scala.inline
-    def deletePubliclyAccessible: Self = this.set("PubliclyAccessible", js.undefined)
+    def setReplicationInstanceClass(value: String): Self = StObject.set(x, "ReplicationInstanceClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstanceArn(value: String): Self = this.set("ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    def setReplicationInstanceClassUndefined: Self = StObject.set(x, "ReplicationInstanceClass", js.undefined)
     
     @scala.inline
-    def deleteReplicationInstanceArn: Self = this.set("ReplicationInstanceArn", js.undefined)
+    def setReplicationInstanceIdentifier(value: String): Self = StObject.set(x, "ReplicationInstanceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstanceClass(value: String): Self = this.set("ReplicationInstanceClass", value.asInstanceOf[js.Any])
+    def setReplicationInstanceIdentifierUndefined: Self = StObject.set(x, "ReplicationInstanceIdentifier", js.undefined)
     
     @scala.inline
-    def deleteReplicationInstanceClass: Self = this.set("ReplicationInstanceClass", js.undefined)
+    def setReplicationInstancePrivateIpAddress(value: String): Self = StObject.set(x, "ReplicationInstancePrivateIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstanceIdentifier(value: String): Self = this.set("ReplicationInstanceIdentifier", value.asInstanceOf[js.Any])
+    def setReplicationInstancePrivateIpAddressUndefined: Self = StObject.set(x, "ReplicationInstancePrivateIpAddress", js.undefined)
     
     @scala.inline
-    def deleteReplicationInstanceIdentifier: Self = this.set("ReplicationInstanceIdentifier", js.undefined)
+    def setReplicationInstancePrivateIpAddresses(value: ReplicationInstancePrivateIpAddressList): Self = StObject.set(x, "ReplicationInstancePrivateIpAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstancePrivateIpAddress(value: String): Self = this.set("ReplicationInstancePrivateIpAddress", value.asInstanceOf[js.Any])
+    def setReplicationInstancePrivateIpAddressesUndefined: Self = StObject.set(x, "ReplicationInstancePrivateIpAddresses", js.undefined)
     
     @scala.inline
-    def deleteReplicationInstancePrivateIpAddress: Self = this.set("ReplicationInstancePrivateIpAddress", js.undefined)
+    def setReplicationInstancePrivateIpAddressesVarargs(value: String*): Self = StObject.set(x, "ReplicationInstancePrivateIpAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setReplicationInstancePrivateIpAddressesVarargs(value: String*): Self = this.set("ReplicationInstancePrivateIpAddresses", js.Array(value :_*))
+    def setReplicationInstancePublicIpAddress(value: String): Self = StObject.set(x, "ReplicationInstancePublicIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstancePrivateIpAddresses(value: ReplicationInstancePrivateIpAddressList): Self = this.set("ReplicationInstancePrivateIpAddresses", value.asInstanceOf[js.Any])
+    def setReplicationInstancePublicIpAddressUndefined: Self = StObject.set(x, "ReplicationInstancePublicIpAddress", js.undefined)
     
     @scala.inline
-    def deleteReplicationInstancePrivateIpAddresses: Self = this.set("ReplicationInstancePrivateIpAddresses", js.undefined)
+    def setReplicationInstancePublicIpAddresses(value: ReplicationInstancePublicIpAddressList): Self = StObject.set(x, "ReplicationInstancePublicIpAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstancePublicIpAddress(value: String): Self = this.set("ReplicationInstancePublicIpAddress", value.asInstanceOf[js.Any])
+    def setReplicationInstancePublicIpAddressesUndefined: Self = StObject.set(x, "ReplicationInstancePublicIpAddresses", js.undefined)
     
     @scala.inline
-    def deleteReplicationInstancePublicIpAddress: Self = this.set("ReplicationInstancePublicIpAddress", js.undefined)
+    def setReplicationInstancePublicIpAddressesVarargs(value: String*): Self = StObject.set(x, "ReplicationInstancePublicIpAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setReplicationInstancePublicIpAddressesVarargs(value: String*): Self = this.set("ReplicationInstancePublicIpAddresses", js.Array(value :_*))
+    def setReplicationInstanceStatus(value: String): Self = StObject.set(x, "ReplicationInstanceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstancePublicIpAddresses(value: ReplicationInstancePublicIpAddressList): Self = this.set("ReplicationInstancePublicIpAddresses", value.asInstanceOf[js.Any])
+    def setReplicationInstanceStatusUndefined: Self = StObject.set(x, "ReplicationInstanceStatus", js.undefined)
     
     @scala.inline
-    def deleteReplicationInstancePublicIpAddresses: Self = this.set("ReplicationInstancePublicIpAddresses", js.undefined)
+    def setReplicationSubnetGroup(value: ReplicationSubnetGroup): Self = StObject.set(x, "ReplicationSubnetGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstanceStatus(value: String): Self = this.set("ReplicationInstanceStatus", value.asInstanceOf[js.Any])
+    def setReplicationSubnetGroupUndefined: Self = StObject.set(x, "ReplicationSubnetGroup", js.undefined)
     
     @scala.inline
-    def deleteReplicationInstanceStatus: Self = this.set("ReplicationInstanceStatus", js.undefined)
+    def setSecondaryAvailabilityZone(value: String): Self = StObject.set(x, "SecondaryAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationSubnetGroup(value: ReplicationSubnetGroup): Self = this.set("ReplicationSubnetGroup", value.asInstanceOf[js.Any])
+    def setSecondaryAvailabilityZoneUndefined: Self = StObject.set(x, "SecondaryAvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteReplicationSubnetGroup: Self = this.set("ReplicationSubnetGroup", js.undefined)
+    def setVpcSecurityGroups(value: VpcSecurityGroupMembershipList): Self = StObject.set(x, "VpcSecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryAvailabilityZone(value: String): Self = this.set("SecondaryAvailabilityZone", value.asInstanceOf[js.Any])
+    def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteSecondaryAvailabilityZone: Self = this.set("SecondaryAvailabilityZone", js.undefined)
-    
-    @scala.inline
-    def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = this.set("VpcSecurityGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpcSecurityGroups(value: VpcSecurityGroupMembershipList): Self = this.set("VpcSecurityGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcSecurityGroups: Self = this.set("VpcSecurityGroups", js.undefined)
+    def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
   }
 }

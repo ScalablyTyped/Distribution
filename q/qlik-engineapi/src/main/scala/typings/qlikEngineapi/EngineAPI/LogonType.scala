@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikEngineapi.qlikEngineapiStrings.LOG_ON_SERVICE_USER
   - typings.qlikEngineapi.qlikEngineapiStrings.LOG_ON_CURRENT_USER
 */
-trait LogonType extends js.Object
+trait LogonType extends StObject
 object LogonType {
   
   @scala.inline

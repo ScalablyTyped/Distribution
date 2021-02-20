@@ -7,6 +7,7 @@ import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Node
 import typings.std.XMLDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Static members of jQuery (those on $ and jQuery themselves)
   */
 @js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
   
   /**
     * Specify a function to execute when the DOM is fully loaded.
@@ -420,7 +421,7 @@ trait JQueryStatic extends js.Object {
     */
   def isPlainObject(obj: js.Any): Boolean = js.native
   
-    //TODO: Decide how we want to type this
+  //TODO: Decide how we want to type this
   var isReady: Boolean = js.native
   
   /**

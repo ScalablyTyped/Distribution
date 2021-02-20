@@ -1,5 +1,6 @@
 package typings.firebaseAuthTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,13 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class GithubAuthProvider () extends GithubAuthProviderInstance
 /* static members */
-@JSImport("@firebase/auth-types", "GithubAuthProvider")
-@js.native
-object GithubAuthProvider extends js.Object {
+object GithubAuthProvider {
   
-  var GITHUB_SIGN_IN_METHOD: String = js.native
+  @JSImport("@firebase/auth-types", "GithubAuthProvider")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var PROVIDER_ID: String = js.native
+  @JSImport("@firebase/auth-types", "GithubAuthProvider.GITHUB_SIGN_IN_METHOD")
+  @js.native
+  def GITHUB_SIGN_IN_METHOD: String = js.native
+  @scala.inline
+  def GITHUB_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GITHUB_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
   
+  @JSImport("@firebase/auth-types", "GithubAuthProvider.PROVIDER_ID")
+  @js.native
+  def PROVIDER_ID: String = js.native
+  @scala.inline
+  def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@firebase/auth-types", "GithubAuthProvider.credential")
+  @js.native
   def credential(token: String): AuthCredential = js.native
 }

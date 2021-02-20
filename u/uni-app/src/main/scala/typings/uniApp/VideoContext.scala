@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoContext extends js.Object {
+trait VideoContext extends StObject {
   
   /**
     * 退出全屏
@@ -59,39 +60,27 @@ object VideoContext {
   }
   
   @scala.inline
-  implicit class VideoContextOps[Self <: VideoContext] (val x: Self) extends AnyVal {
+  implicit class VideoContextMutableBuilder[Self <: VideoContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExitFullScreen(value: () => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExitFullScreen(value: () => Unit): Self = this.set("exitFullScreen", js.Any.fromFunction0(value))
+    def setPlaybackRate(value: () => Unit): Self = StObject.set(x, "playbackRate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setRequestFullScreen(value: () => Unit): Self = StObject.set(x, "requestFullScreen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("play", js.Any.fromFunction0(value))
+    def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPlaybackRate(value: () => Unit): Self = this.set("playbackRate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRequestFullScreen(value: () => Unit): Self = this.set("requestFullScreen", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSeek(value: () => Unit): Self = this.set("seek", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSendDanmu(value: () => Unit): Self = this.set("sendDanmu", js.Any.fromFunction0(value))
+    def setSendDanmu(value: () => Unit): Self = StObject.set(x, "sendDanmu", js.Any.fromFunction0(value))
   }
 }

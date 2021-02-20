@@ -1,5 +1,6 @@
 package typings.googleapis.driveV3Mod.driveV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A list of revisions of a file.
   */
 @js.native
-trait SchemaRevisionList extends js.Object {
+trait SchemaRevisionList extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -39,39 +40,27 @@ object SchemaRevisionList {
   }
   
   @scala.inline
-  implicit class SchemaRevisionListOps[Self <: SchemaRevisionList] (val x: Self) extends AnyVal {
+  implicit class SchemaRevisionListMutableBuilder[Self <: SchemaRevisionList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRevisions(value: js.Array[SchemaRevision]): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setRevisionsVarargs(value: SchemaRevision*): Self = this.set("revisions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRevisions(value: js.Array[SchemaRevision]): Self = this.set("revisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisions: Self = this.set("revisions", js.undefined)
+    def setRevisionsVarargs(value: SchemaRevision*): Self = StObject.set(x, "revisions", js.Array(value :_*))
   }
 }

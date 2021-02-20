@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,42 +27,30 @@ object EqlSearch {
   }
   
   @scala.inline
-  implicit class EqlSearchOps[Self <: EqlSearch[_], T] (val x: Self with EqlSearch[T]) extends AnyVal {
+  implicit class EqlSearchMutableBuilder[Self <: EqlSearch[_], T] (val x: Self with EqlSearch[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeep_alive(value: String): Self = StObject.set(x, "keep_alive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setKeep_aliveUndefined: Self = StObject.set(x, "keep_alive", js.undefined)
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setKeep_on_completion(value: Boolean): Self = StObject.set(x, "keep_on_completion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeep_alive(value: String): Self = this.set("keep_alive", value.asInstanceOf[js.Any])
+    def setKeep_on_completionUndefined: Self = StObject.set(x, "keep_on_completion", js.undefined)
     
     @scala.inline
-    def deleteKeep_alive: Self = this.set("keep_alive", js.undefined)
+    def setWait_for_completion_timeout(value: String): Self = StObject.set(x, "wait_for_completion_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeep_on_completion(value: Boolean): Self = this.set("keep_on_completion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeep_on_completion: Self = this.set("keep_on_completion", js.undefined)
-    
-    @scala.inline
-    def setWait_for_completion_timeout(value: String): Self = this.set("wait_for_completion_timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait_for_completion_timeout: Self = this.set("wait_for_completion_timeout", js.undefined)
+    def setWait_for_completion_timeoutUndefined: Self = StObject.set(x, "wait_for_completion_timeout", js.undefined)
   }
 }

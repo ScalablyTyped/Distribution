@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationApplicationConfigurationSqlApplicationConfigurationInput extends js.Object {
+trait ApplicationApplicationConfigurationSqlApplicationConfigurationInput extends StObject {
   
   var inAppStreamNames: js.Array[String] = js.native
   
@@ -70,68 +71,56 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationInput {
   }
   
   @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputOps[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInput] (val x: Self) extends AnyVal {
+  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInAppStreamNames(value: js.Array[String]): Self = StObject.set(x, "inAppStreamNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInAppStreamNamesVarargs(value: String*): Self = StObject.set(x, "inAppStreamNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInAppStreamNamesVarargs(value: String*): Self = this.set("inAppStreamNames", js.Array(value :_*))
+    def setInputParallelism(value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism): Self = StObject.set(x, "inputParallelism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInAppStreamNames(value: js.Array[String]): Self = this.set("inAppStreamNames", value.asInstanceOf[js.Any])
+    def setInputProcessingConfiguration(
+      value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration
+    ): Self = StObject.set(x, "inputProcessingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputId(value: String): Self = this.set("inputId", value.asInstanceOf[js.Any])
+    def setInputProcessingConfigurationUndefined: Self = StObject.set(x, "inputProcessingConfiguration", js.undefined)
     
     @scala.inline
-    def setInputParallelism(value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism): Self = this.set("inputParallelism", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputSchema(value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema): Self = this.set("inputSchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputStartingPositionConfigurationsVarargs(
-      value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration*
-    ): Self = this.set("inputStartingPositionConfigurations", js.Array(value :_*))
+    def setInputSchema(value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema): Self = StObject.set(x, "inputSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInputStartingPositionConfigurations(
       value: js.Array[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration
         ]
-    ): Self = this.set("inputStartingPositionConfigurations", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "inputStartingPositionConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePrefix(value: String): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    def setInputStartingPositionConfigurationsVarargs(
+      value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration*
+    ): Self = StObject.set(x, "inputStartingPositionConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setInputProcessingConfiguration(
-      value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration
-    ): Self = this.set("inputProcessingConfiguration", value.asInstanceOf[js.Any])
+    def setKinesisFirehoseInput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput): Self = StObject.set(x, "kinesisFirehoseInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputProcessingConfiguration: Self = this.set("inputProcessingConfiguration", js.undefined)
+    def setKinesisFirehoseInputUndefined: Self = StObject.set(x, "kinesisFirehoseInput", js.undefined)
     
     @scala.inline
-    def setKinesisFirehoseInput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput): Self = this.set("kinesisFirehoseInput", value.asInstanceOf[js.Any])
+    def setKinesisStreamsInput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput): Self = StObject.set(x, "kinesisStreamsInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKinesisFirehoseInput: Self = this.set("kinesisFirehoseInput", js.undefined)
+    def setKinesisStreamsInputUndefined: Self = StObject.set(x, "kinesisStreamsInput", js.undefined)
     
     @scala.inline
-    def setKinesisStreamsInput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput): Self = this.set("kinesisStreamsInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisStreamsInput: Self = this.set("kinesisStreamsInput", js.undefined)
+    def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
   }
 }

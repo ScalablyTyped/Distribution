@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,54 +57,42 @@ object ParamsResourceElectionsVoterinfoquery {
   }
   
   @scala.inline
-  implicit class ParamsResourceElectionsVoterinfoqueryOps[Self <: ParamsResourceElectionsVoterinfoquery] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceElectionsVoterinfoqueryMutableBuilder[Self <: ParamsResourceElectionsVoterinfoquery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setElectionId(value: String): Self = StObject.set(x, "electionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setElectionIdUndefined: Self = StObject.set(x, "electionId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setOfficialOnly(value: Boolean): Self = StObject.set(x, "officialOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElectionId(value: String): Self = this.set("electionId", value.asInstanceOf[js.Any])
+    def setOfficialOnlyUndefined: Self = StObject.set(x, "officialOnly", js.undefined)
     
     @scala.inline
-    def deleteElectionId: Self = this.set("electionId", js.undefined)
+    def setRequestBody(value: SchemaVoterInfoRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfficialOnly(value: Boolean): Self = this.set("officialOnly", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deleteOfficialOnly: Self = this.set("officialOnly", js.undefined)
+    def setReturnAllAvailableData(value: Boolean): Self = StObject.set(x, "returnAllAvailableData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaVoterInfoRequest): Self = this.set("requestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
-    
-    @scala.inline
-    def setReturnAllAvailableData(value: Boolean): Self = this.set("returnAllAvailableData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnAllAvailableData: Self = this.set("returnAllAvailableData", js.undefined)
+    def setReturnAllAvailableDataUndefined: Self = StObject.set(x, "returnAllAvailableData", js.undefined)
   }
 }

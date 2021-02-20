@@ -1,11 +1,12 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventsOptions extends js.Object {
+trait EventsOptions extends StObject {
   
   /**
     * Triggered right beforey Swiper destoryed
@@ -199,198 +200,186 @@ object EventsOptions {
   }
   
   @scala.inline
-  implicit class EventsOptionsOps[Self <: EventsOptions] (val x: Self) extends AnyVal {
+  implicit class EventsOptionsMutableBuilder[Self <: EventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeDestroy(value: () => _): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeLoopFix(value: () => _): Self = StObject.set(x, "beforeLoopFix", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeforeDestroy(value: () => _): Self = this.set("beforeDestroy", js.Any.fromFunction0(value))
+    def setBeforeLoopFixUndefined: Self = StObject.set(x, "beforeLoopFix", js.undefined)
     
     @scala.inline
-    def deleteBeforeDestroy: Self = this.set("beforeDestroy", js.undefined)
+    def setClick(value: /* event */ js.Any => _): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeLoopFix(value: () => _): Self = this.set("beforeLoopFix", js.Any.fromFunction0(value))
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def deleteBeforeLoopFix: Self = this.set("beforeLoopFix", js.undefined)
+    def setDoubleTap(value: /* event */ js.Any => _): Self = StObject.set(x, "doubleTap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClick(value: /* event */ js.Any => _): Self = this.set("click", js.Any.fromFunction1(value))
+    def setDoubleTapUndefined: Self = StObject.set(x, "doubleTap", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setFromEdge(value: () => _): Self = StObject.set(x, "fromEdge", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoubleTap(value: /* event */ js.Any => _): Self = this.set("doubleTap", js.Any.fromFunction1(value))
+    def setFromEdgeUndefined: Self = StObject.set(x, "fromEdge", js.undefined)
     
     @scala.inline
-    def deleteDoubleTap: Self = this.set("doubleTap", js.undefined)
+    def setImagesReady(value: () => _): Self = StObject.set(x, "imagesReady", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFromEdge(value: () => _): Self = this.set("fromEdge", js.Any.fromFunction0(value))
+    def setImagesReadyUndefined: Self = StObject.set(x, "imagesReady", js.undefined)
     
     @scala.inline
-    def deleteFromEdge: Self = this.set("fromEdge", js.undefined)
+    def setInit(value: () => _): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setImagesReady(value: () => _): Self = this.set("imagesReady", js.Any.fromFunction0(value))
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteImagesReady: Self = this.set("imagesReady", js.undefined)
+    def setLoopFix(value: () => _): Self = StObject.set(x, "loopFix", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInit(value: () => _): Self = this.set("init", js.Any.fromFunction0(value))
+    def setLoopFixUndefined: Self = StObject.set(x, "loopFix", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setObserverUpdate(value: () => _): Self = StObject.set(x, "observerUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLoopFix(value: () => _): Self = this.set("loopFix", js.Any.fromFunction0(value))
+    def setObserverUpdateUndefined: Self = StObject.set(x, "observerUpdate", js.undefined)
     
     @scala.inline
-    def deleteLoopFix: Self = this.set("loopFix", js.undefined)
+    def setProgress(value: /* progress */ js.Any => _): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setObserverUpdate(value: () => _): Self = this.set("observerUpdate", js.Any.fromFunction0(value))
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deleteObserverUpdate: Self = this.set("observerUpdate", js.undefined)
+    def setReachBeginning(value: () => _): Self = StObject.set(x, "reachBeginning", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProgress(value: /* progress */ js.Any => _): Self = this.set("progress", js.Any.fromFunction1(value))
+    def setReachBeginningUndefined: Self = StObject.set(x, "reachBeginning", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setReachEnd(value: () => _): Self = StObject.set(x, "reachEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReachBeginning(value: () => _): Self = this.set("reachBeginning", js.Any.fromFunction0(value))
+    def setReachEndUndefined: Self = StObject.set(x, "reachEnd", js.undefined)
     
     @scala.inline
-    def deleteReachBeginning: Self = this.set("reachBeginning", js.undefined)
+    def setResize(value: () => _): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReachEnd(value: () => _): Self = this.set("reachEnd", js.Any.fromFunction0(value))
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def deleteReachEnd: Self = this.set("reachEnd", js.undefined)
+    def setSetTransition(value: /* transition */ js.Any => _): Self = StObject.set(x, "setTransition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResize(value: () => _): Self = this.set("resize", js.Any.fromFunction0(value))
+    def setSetTransitionUndefined: Self = StObject.set(x, "setTransition", js.undefined)
     
     @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setSetTranslate(value: /* translate */ js.Any => _): Self = StObject.set(x, "setTranslate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTransition(value: /* transition */ js.Any => _): Self = this.set("setTransition", js.Any.fromFunction1(value))
+    def setSetTranslateUndefined: Self = StObject.set(x, "setTranslate", js.undefined)
     
     @scala.inline
-    def deleteSetTransition: Self = this.set("setTransition", js.undefined)
+    def setSlideChange(value: () => _): Self = StObject.set(x, "slideChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetTranslate(value: /* translate */ js.Any => _): Self = this.set("setTranslate", js.Any.fromFunction1(value))
+    def setSlideChangeTransitionEnd(value: () => _): Self = StObject.set(x, "slideChangeTransitionEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteSetTranslate: Self = this.set("setTranslate", js.undefined)
+    def setSlideChangeTransitionEndUndefined: Self = StObject.set(x, "slideChangeTransitionEnd", js.undefined)
     
     @scala.inline
-    def setSlideChange(value: () => _): Self = this.set("slideChange", js.Any.fromFunction0(value))
+    def setSlideChangeTransitionStart(value: () => _): Self = StObject.set(x, "slideChangeTransitionStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteSlideChange: Self = this.set("slideChange", js.undefined)
+    def setSlideChangeTransitionStartUndefined: Self = StObject.set(x, "slideChangeTransitionStart", js.undefined)
     
     @scala.inline
-    def setSlideChangeTransitionEnd(value: () => _): Self = this.set("slideChangeTransitionEnd", js.Any.fromFunction0(value))
+    def setSlideChangeUndefined: Self = StObject.set(x, "slideChange", js.undefined)
     
     @scala.inline
-    def deleteSlideChangeTransitionEnd: Self = this.set("slideChangeTransitionEnd", js.undefined)
+    def setSlideNextTransitionEnd(value: () => _): Self = StObject.set(x, "slideNextTransitionEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSlideChangeTransitionStart(value: () => _): Self = this.set("slideChangeTransitionStart", js.Any.fromFunction0(value))
+    def setSlideNextTransitionEndUndefined: Self = StObject.set(x, "slideNextTransitionEnd", js.undefined)
     
     @scala.inline
-    def deleteSlideChangeTransitionStart: Self = this.set("slideChangeTransitionStart", js.undefined)
+    def setSlideNextTransitionStart(value: () => _): Self = StObject.set(x, "slideNextTransitionStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSlideNextTransitionEnd(value: () => _): Self = this.set("slideNextTransitionEnd", js.Any.fromFunction0(value))
+    def setSlideNextTransitionStartUndefined: Self = StObject.set(x, "slideNextTransitionStart", js.undefined)
     
     @scala.inline
-    def deleteSlideNextTransitionEnd: Self = this.set("slideNextTransitionEnd", js.undefined)
+    def setSlidePrevTransitionEnd(value: () => _): Self = StObject.set(x, "slidePrevTransitionEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSlideNextTransitionStart(value: () => _): Self = this.set("slideNextTransitionStart", js.Any.fromFunction0(value))
+    def setSlidePrevTransitionEndUndefined: Self = StObject.set(x, "slidePrevTransitionEnd", js.undefined)
     
     @scala.inline
-    def deleteSlideNextTransitionStart: Self = this.set("slideNextTransitionStart", js.undefined)
+    def setSlidePrevTransitionStart(value: () => _): Self = StObject.set(x, "slidePrevTransitionStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSlidePrevTransitionEnd(value: () => _): Self = this.set("slidePrevTransitionEnd", js.Any.fromFunction0(value))
+    def setSlidePrevTransitionStartUndefined: Self = StObject.set(x, "slidePrevTransitionStart", js.undefined)
     
     @scala.inline
-    def deleteSlidePrevTransitionEnd: Self = this.set("slidePrevTransitionEnd", js.undefined)
+    def setSliderMove(value: /* event */ js.Any => _): Self = StObject.set(x, "sliderMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSlidePrevTransitionStart(value: () => _): Self = this.set("slidePrevTransitionStart", js.Any.fromFunction0(value))
+    def setSliderMoveUndefined: Self = StObject.set(x, "sliderMove", js.undefined)
     
     @scala.inline
-    def deleteSlidePrevTransitionStart: Self = this.set("slidePrevTransitionStart", js.undefined)
+    def setTap(value: /* event */ js.Any => _): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSliderMove(value: /* event */ js.Any => _): Self = this.set("sliderMove", js.Any.fromFunction1(value))
+    def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
     
     @scala.inline
-    def deleteSliderMove: Self = this.set("sliderMove", js.undefined)
+    def setTouchEnd(value: /* event */ js.Any => _): Self = StObject.set(x, "touchEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTap(value: /* event */ js.Any => _): Self = this.set("tap", js.Any.fromFunction1(value))
+    def setTouchEndUndefined: Self = StObject.set(x, "touchEnd", js.undefined)
     
     @scala.inline
-    def deleteTap: Self = this.set("tap", js.undefined)
+    def setTouchMove(value: /* event */ js.Any => _): Self = StObject.set(x, "touchMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTouchEnd(value: /* event */ js.Any => _): Self = this.set("touchEnd", js.Any.fromFunction1(value))
+    def setTouchMoveOpposite(value: /* event */ js.Any => _): Self = StObject.set(x, "touchMoveOpposite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTouchEnd: Self = this.set("touchEnd", js.undefined)
+    def setTouchMoveOppositeUndefined: Self = StObject.set(x, "touchMoveOpposite", js.undefined)
     
     @scala.inline
-    def setTouchMove(value: /* event */ js.Any => _): Self = this.set("touchMove", js.Any.fromFunction1(value))
+    def setTouchMoveUndefined: Self = StObject.set(x, "touchMove", js.undefined)
     
     @scala.inline
-    def deleteTouchMove: Self = this.set("touchMove", js.undefined)
+    def setTouchStart(value: /* event */ js.Any => _): Self = StObject.set(x, "touchStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTouchMoveOpposite(value: /* event */ js.Any => _): Self = this.set("touchMoveOpposite", js.Any.fromFunction1(value))
+    def setTouchStartUndefined: Self = StObject.set(x, "touchStart", js.undefined)
     
     @scala.inline
-    def deleteTouchMoveOpposite: Self = this.set("touchMoveOpposite", js.undefined)
+    def setTransitionEnd(value: () => _): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTouchStart(value: /* event */ js.Any => _): Self = this.set("touchStart", js.Any.fromFunction1(value))
+    def setTransitionEndUndefined: Self = StObject.set(x, "transitionEnd", js.undefined)
     
     @scala.inline
-    def deleteTouchStart: Self = this.set("touchStart", js.undefined)
+    def setTransitionStart(value: () => _): Self = StObject.set(x, "transitionStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTransitionEnd(value: () => _): Self = this.set("transitionEnd", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteTransitionEnd: Self = this.set("transitionEnd", js.undefined)
-    
-    @scala.inline
-    def setTransitionStart(value: () => _): Self = this.set("transitionStart", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteTransitionStart: Self = this.set("transitionStart", js.undefined)
+    def setTransitionStartUndefined: Self = StObject.set(x, "transitionStart", js.undefined)
   }
 }

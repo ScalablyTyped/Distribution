@@ -37,12 +37,13 @@ import typings.raphael.raphaelStrings.y
 import typings.std.HTMLElement
 import typings.std.Record
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
+trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends StObject {
   
   /**
     * Points to the bottom element on the paper. `null` when there is no element.

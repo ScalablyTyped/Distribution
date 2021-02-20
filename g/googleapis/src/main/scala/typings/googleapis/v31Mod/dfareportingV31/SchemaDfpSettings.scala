@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Google Ad Manager Settings
   */
 @js.native
-trait SchemaDfpSettings extends js.Object {
+trait SchemaDfpSettings extends StObject {
   
   /**
     * Ad Manager network code for this directory site.
@@ -44,48 +45,36 @@ object SchemaDfpSettings {
   }
   
   @scala.inline
-  implicit class SchemaDfpSettingsOps[Self <: SchemaDfpSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaDfpSettingsMutableBuilder[Self <: SchemaDfpSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDfpNetworkCode(value: String): Self = StObject.set(x, "dfpNetworkCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDfpNetworkCodeUndefined: Self = StObject.set(x, "dfpNetworkCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDfpNetworkName(value: String): Self = StObject.set(x, "dfpNetworkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDfpNetworkCode(value: String): Self = this.set("dfpNetworkCode", value.asInstanceOf[js.Any])
+    def setDfpNetworkNameUndefined: Self = StObject.set(x, "dfpNetworkName", js.undefined)
     
     @scala.inline
-    def deleteDfpNetworkCode: Self = this.set("dfpNetworkCode", js.undefined)
+    def setProgrammaticPlacementAccepted(value: Boolean): Self = StObject.set(x, "programmaticPlacementAccepted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDfpNetworkName(value: String): Self = this.set("dfpNetworkName", value.asInstanceOf[js.Any])
+    def setProgrammaticPlacementAcceptedUndefined: Self = StObject.set(x, "programmaticPlacementAccepted", js.undefined)
     
     @scala.inline
-    def deleteDfpNetworkName: Self = this.set("dfpNetworkName", js.undefined)
+    def setPubPaidPlacementAccepted(value: Boolean): Self = StObject.set(x, "pubPaidPlacementAccepted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgrammaticPlacementAccepted(value: Boolean): Self = this.set("programmaticPlacementAccepted", value.asInstanceOf[js.Any])
+    def setPubPaidPlacementAcceptedUndefined: Self = StObject.set(x, "pubPaidPlacementAccepted", js.undefined)
     
     @scala.inline
-    def deleteProgrammaticPlacementAccepted: Self = this.set("programmaticPlacementAccepted", js.undefined)
+    def setPublisherPortalOnly(value: Boolean): Self = StObject.set(x, "publisherPortalOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubPaidPlacementAccepted(value: Boolean): Self = this.set("pubPaidPlacementAccepted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubPaidPlacementAccepted: Self = this.set("pubPaidPlacementAccepted", js.undefined)
-    
-    @scala.inline
-    def setPublisherPortalOnly(value: Boolean): Self = this.set("publisherPortalOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublisherPortalOnly: Self = this.set("publisherPortalOnly", js.undefined)
+    def setPublisherPortalOnlyUndefined: Self = StObject.set(x, "publisherPortalOnly", js.undefined)
   }
 }

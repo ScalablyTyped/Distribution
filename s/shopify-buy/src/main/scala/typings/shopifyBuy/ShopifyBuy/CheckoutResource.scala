@@ -1,11 +1,12 @@
 package typings.shopifyBuy.ShopifyBuy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckoutResource extends js.Object {
+trait CheckoutResource extends StObject {
   
   def addLineItems(checkoutId: String, lineItems: js.Array[LineItemToAdd]): js.Promise[Cart] = js.native
   def addLineItems(checkoutId: Double, lineItems: js.Array[LineItemToAdd]): js.Promise[Cart] = js.native

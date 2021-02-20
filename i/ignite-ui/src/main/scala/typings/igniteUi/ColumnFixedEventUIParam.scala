@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnFixedEventUIParam extends js.Object {
+trait ColumnFixedEventUIParam extends StObject {
   
   /**
     * Gets the columnKey or the columnIndex.
@@ -31,36 +32,24 @@ object ColumnFixedEventUIParam {
   }
   
   @scala.inline
-  implicit class ColumnFixedEventUIParamOps[Self <: ColumnFixedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ColumnFixedEventUIParamMutableBuilder[Self <: ColumnFixedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIdentifier(value: js.Any): Self = StObject.set(x, "columnIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIdentifierUndefined: Self = StObject.set(x, "columnIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsGroupHeader(value: Boolean): Self = StObject.set(x, "isGroupHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIdentifier(value: js.Any): Self = this.set("columnIdentifier", value.asInstanceOf[js.Any])
+    def setIsGroupHeaderUndefined: Self = StObject.set(x, "isGroupHeader", js.undefined)
     
     @scala.inline
-    def deleteColumnIdentifier: Self = this.set("columnIdentifier", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGroupHeader(value: Boolean): Self = this.set("isGroupHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsGroupHeader: Self = this.set("isGroupHeader", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

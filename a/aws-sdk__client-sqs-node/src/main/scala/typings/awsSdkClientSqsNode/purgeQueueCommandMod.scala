@@ -7,14 +7,14 @@ import typings.awsSdkClientSqsNode.typesPurgeQueueInputMod.PurgeQueueInput
 import typings.awsSdkClientSqsNode.typesPurgeQueueOutputMod.PurgeQueueOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/commands/PurgeQueueCommand", JSImport.Namespace)
-@js.native
-object purgeQueueCommandMod extends js.Object {
+object purgeQueueCommandMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/commands/PurgeQueueCommand", "PurgeQueueCommand")
   @js.native
   class PurgeQueueCommand protected () extends Command[
           InputTypesUnion, 

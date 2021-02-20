@@ -1,12 +1,13 @@
 package typings.babelTraverse.anon
 
 import typings.babelTraverse.babelTraverseStrings.TSIndexedAccessType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `28` extends js.Object {
+trait `28` extends StObject {
   
   var `type`: TSIndexedAccessType = js.native
 }
@@ -20,21 +21,9 @@ object `28` {
   }
   
   @scala.inline
-  implicit class `28Ops`[Self <: `28`] (val x: Self) extends AnyVal {
+  implicit class `28MutableBuilder`[Self <: `28`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: TSIndexedAccessType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: TSIndexedAccessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -9,12 +9,13 @@ import typings.devtoolsProtocol.mod.Protocol.ApplicationCache.GetFramesWithManif
 import typings.devtoolsProtocol.mod.Protocol.ApplicationCache.GetManifestForFrameRequest
 import typings.devtoolsProtocol.mod.Protocol.ApplicationCache.GetManifestForFrameResponse
 import typings.devtoolsProtocol.mod.Protocol.ApplicationCache.NetworkStateUpdatedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationCacheApi extends js.Object {
+trait ApplicationCacheApi extends StObject {
   
   /**
     * Enables application cache domain notifications.

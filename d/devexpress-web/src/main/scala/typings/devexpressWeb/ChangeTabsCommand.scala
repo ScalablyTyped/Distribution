@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A command to change paragraph tab stops.
   */
 @js.native
-trait ChangeTabsCommand extends js.Object {
+trait ChangeTabsCommand extends StObject {
   
   /**
     * Executes the ChangeTabsCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
@@ -30,24 +31,12 @@ object ChangeTabsCommand {
   }
   
   @scala.inline
-  implicit class ChangeTabsCommandOps[Self <: ChangeTabsCommand] (val x: Self) extends AnyVal {
+  implicit class ChangeTabsCommandMutableBuilder[Self <: ChangeTabsCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecute(value: TabsSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExecute(value: TabsSettings => Boolean): Self = this.set("execute", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetState(value: () => CommandState[TabsSettings]): Self = this.set("getState", js.Any.fromFunction0(value))
+    def setGetState(value: () => CommandState[TabsSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

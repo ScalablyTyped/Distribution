@@ -2,6 +2,7 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,39 +51,27 @@ object TfvcBranch {
   }
   
   @scala.inline
-  implicit class TfvcBranchOps[Self <: TfvcBranch] (val x: Self) extends AnyVal {
+  implicit class TfvcBranchMutableBuilder[Self <: TfvcBranch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[TfvcBranch]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: TfvcBranch*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMappings(value: js.Array[TfvcBranchMapping]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: TfvcBranch*): Self = this.set("children", js.Array(value :_*))
+    def setMappingsVarargs(value: TfvcBranchMapping*): Self = StObject.set(x, "mappings", js.Array(value :_*))
     
     @scala.inline
-    def setChildren(value: js.Array[TfvcBranch]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setParent(value: TfvcShallowBranchRef): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMappingsVarargs(value: TfvcBranchMapping*): Self = this.set("mappings", js.Array(value :_*))
+    def setRelatedBranches(value: js.Array[TfvcShallowBranchRef]): Self = StObject.set(x, "relatedBranches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMappings(value: js.Array[TfvcBranchMapping]): Self = this.set("mappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: TfvcShallowBranchRef): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelatedBranchesVarargs(value: TfvcShallowBranchRef*): Self = this.set("relatedBranches", js.Array(value :_*))
-    
-    @scala.inline
-    def setRelatedBranches(value: js.Array[TfvcShallowBranchRef]): Self = this.set("relatedBranches", value.asInstanceOf[js.Any])
+    def setRelatedBranchesVarargs(value: TfvcShallowBranchRef*): Self = StObject.set(x, "relatedBranches", js.Array(value :_*))
   }
 }

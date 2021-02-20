@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,195 +110,183 @@ object ManagedAppProtection {
   }
   
   @scala.inline
-  implicit class ManagedAppProtectionOps[Self <: ManagedAppProtection] (val x: Self) extends AnyVal {
+  implicit class ManagedAppProtectionMutableBuilder[Self <: ManagedAppProtection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedDataStorageLocations(value: js.Array[ManagedAppDataStorageLocation]): Self = StObject.set(x, "allowedDataStorageLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedDataStorageLocationsUndefined: Self = StObject.set(x, "allowedDataStorageLocations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedDataStorageLocationsVarargs(value: ManagedAppDataStorageLocation*): Self = StObject.set(x, "allowedDataStorageLocations", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedDataStorageLocationsVarargs(value: ManagedAppDataStorageLocation*): Self = this.set("allowedDataStorageLocations", js.Array(value :_*))
+    def setAllowedInboundDataTransferSources(value: ManagedAppDataTransferLevel): Self = StObject.set(x, "allowedInboundDataTransferSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedDataStorageLocations(value: js.Array[ManagedAppDataStorageLocation]): Self = this.set("allowedDataStorageLocations", value.asInstanceOf[js.Any])
+    def setAllowedInboundDataTransferSourcesUndefined: Self = StObject.set(x, "allowedInboundDataTransferSources", js.undefined)
     
     @scala.inline
-    def deleteAllowedDataStorageLocations: Self = this.set("allowedDataStorageLocations", js.undefined)
+    def setAllowedOutboundClipboardSharingLevel(value: ManagedAppClipboardSharingLevel): Self = StObject.set(x, "allowedOutboundClipboardSharingLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedInboundDataTransferSources(value: ManagedAppDataTransferLevel): Self = this.set("allowedInboundDataTransferSources", value.asInstanceOf[js.Any])
+    def setAllowedOutboundClipboardSharingLevelUndefined: Self = StObject.set(x, "allowedOutboundClipboardSharingLevel", js.undefined)
     
     @scala.inline
-    def deleteAllowedInboundDataTransferSources: Self = this.set("allowedInboundDataTransferSources", js.undefined)
+    def setAllowedOutboundDataTransferDestinations(value: ManagedAppDataTransferLevel): Self = StObject.set(x, "allowedOutboundDataTransferDestinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedOutboundClipboardSharingLevel(value: ManagedAppClipboardSharingLevel): Self = this.set("allowedOutboundClipboardSharingLevel", value.asInstanceOf[js.Any])
+    def setAllowedOutboundDataTransferDestinationsUndefined: Self = StObject.set(x, "allowedOutboundDataTransferDestinations", js.undefined)
     
     @scala.inline
-    def deleteAllowedOutboundClipboardSharingLevel: Self = this.set("allowedOutboundClipboardSharingLevel", js.undefined)
+    def setContactSyncBlocked(value: Boolean): Self = StObject.set(x, "contactSyncBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedOutboundDataTransferDestinations(value: ManagedAppDataTransferLevel): Self = this.set("allowedOutboundDataTransferDestinations", value.asInstanceOf[js.Any])
+    def setContactSyncBlockedUndefined: Self = StObject.set(x, "contactSyncBlocked", js.undefined)
     
     @scala.inline
-    def deleteAllowedOutboundDataTransferDestinations: Self = this.set("allowedOutboundDataTransferDestinations", js.undefined)
+    def setDataBackupBlocked(value: Boolean): Self = StObject.set(x, "dataBackupBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactSyncBlocked(value: Boolean): Self = this.set("contactSyncBlocked", value.asInstanceOf[js.Any])
+    def setDataBackupBlockedUndefined: Self = StObject.set(x, "dataBackupBlocked", js.undefined)
     
     @scala.inline
-    def deleteContactSyncBlocked: Self = this.set("contactSyncBlocked", js.undefined)
+    def setDeviceComplianceRequired(value: Boolean): Self = StObject.set(x, "deviceComplianceRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBackupBlocked(value: Boolean): Self = this.set("dataBackupBlocked", value.asInstanceOf[js.Any])
+    def setDeviceComplianceRequiredUndefined: Self = StObject.set(x, "deviceComplianceRequired", js.undefined)
     
     @scala.inline
-    def deleteDataBackupBlocked: Self = this.set("dataBackupBlocked", js.undefined)
+    def setDisableAppPinIfDevicePinIsSet(value: Boolean): Self = StObject.set(x, "disableAppPinIfDevicePinIsSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceComplianceRequired(value: Boolean): Self = this.set("deviceComplianceRequired", value.asInstanceOf[js.Any])
+    def setDisableAppPinIfDevicePinIsSetUndefined: Self = StObject.set(x, "disableAppPinIfDevicePinIsSet", js.undefined)
     
     @scala.inline
-    def deleteDeviceComplianceRequired: Self = this.set("deviceComplianceRequired", js.undefined)
+    def setFingerprintBlocked(value: Boolean): Self = StObject.set(x, "fingerprintBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAppPinIfDevicePinIsSet(value: Boolean): Self = this.set("disableAppPinIfDevicePinIsSet", value.asInstanceOf[js.Any])
+    def setFingerprintBlockedUndefined: Self = StObject.set(x, "fingerprintBlocked", js.undefined)
     
     @scala.inline
-    def deleteDisableAppPinIfDevicePinIsSet: Self = this.set("disableAppPinIfDevicePinIsSet", js.undefined)
+    def setManagedBrowser(value: ManagedBrowserType): Self = StObject.set(x, "managedBrowser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprintBlocked(value: Boolean): Self = this.set("fingerprintBlocked", value.asInstanceOf[js.Any])
+    def setManagedBrowserToOpenLinksRequired(value: Boolean): Self = StObject.set(x, "managedBrowserToOpenLinksRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFingerprintBlocked: Self = this.set("fingerprintBlocked", js.undefined)
+    def setManagedBrowserToOpenLinksRequiredUndefined: Self = StObject.set(x, "managedBrowserToOpenLinksRequired", js.undefined)
     
     @scala.inline
-    def setManagedBrowser(value: ManagedBrowserType): Self = this.set("managedBrowser", value.asInstanceOf[js.Any])
+    def setManagedBrowserUndefined: Self = StObject.set(x, "managedBrowser", js.undefined)
     
     @scala.inline
-    def deleteManagedBrowser: Self = this.set("managedBrowser", js.undefined)
+    def setMaximumPinRetries(value: Double): Self = StObject.set(x, "maximumPinRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedBrowserToOpenLinksRequired(value: Boolean): Self = this.set("managedBrowserToOpenLinksRequired", value.asInstanceOf[js.Any])
+    def setMaximumPinRetriesUndefined: Self = StObject.set(x, "maximumPinRetries", js.undefined)
     
     @scala.inline
-    def deleteManagedBrowserToOpenLinksRequired: Self = this.set("managedBrowserToOpenLinksRequired", js.undefined)
+    def setMinimumPinLength(value: Double): Self = StObject.set(x, "minimumPinLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumPinRetries(value: Double): Self = this.set("maximumPinRetries", value.asInstanceOf[js.Any])
+    def setMinimumPinLengthUndefined: Self = StObject.set(x, "minimumPinLength", js.undefined)
     
     @scala.inline
-    def deleteMaximumPinRetries: Self = this.set("maximumPinRetries", js.undefined)
+    def setMinimumRequiredAppVersion(value: NullableOption[String]): Self = StObject.set(x, "minimumRequiredAppVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumPinLength(value: Double): Self = this.set("minimumPinLength", value.asInstanceOf[js.Any])
+    def setMinimumRequiredAppVersionNull: Self = StObject.set(x, "minimumRequiredAppVersion", null)
     
     @scala.inline
-    def deleteMinimumPinLength: Self = this.set("minimumPinLength", js.undefined)
+    def setMinimumRequiredAppVersionUndefined: Self = StObject.set(x, "minimumRequiredAppVersion", js.undefined)
     
     @scala.inline
-    def setMinimumRequiredAppVersion(value: NullableOption[String]): Self = this.set("minimumRequiredAppVersion", value.asInstanceOf[js.Any])
+    def setMinimumRequiredOsVersion(value: NullableOption[String]): Self = StObject.set(x, "minimumRequiredOsVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumRequiredAppVersion: Self = this.set("minimumRequiredAppVersion", js.undefined)
+    def setMinimumRequiredOsVersionNull: Self = StObject.set(x, "minimumRequiredOsVersion", null)
     
     @scala.inline
-    def setMinimumRequiredAppVersionNull: Self = this.set("minimumRequiredAppVersion", null)
+    def setMinimumRequiredOsVersionUndefined: Self = StObject.set(x, "minimumRequiredOsVersion", js.undefined)
     
     @scala.inline
-    def setMinimumRequiredOsVersion(value: NullableOption[String]): Self = this.set("minimumRequiredOsVersion", value.asInstanceOf[js.Any])
+    def setMinimumWarningAppVersion(value: NullableOption[String]): Self = StObject.set(x, "minimumWarningAppVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumRequiredOsVersion: Self = this.set("minimumRequiredOsVersion", js.undefined)
+    def setMinimumWarningAppVersionNull: Self = StObject.set(x, "minimumWarningAppVersion", null)
     
     @scala.inline
-    def setMinimumRequiredOsVersionNull: Self = this.set("minimumRequiredOsVersion", null)
+    def setMinimumWarningAppVersionUndefined: Self = StObject.set(x, "minimumWarningAppVersion", js.undefined)
     
     @scala.inline
-    def setMinimumWarningAppVersion(value: NullableOption[String]): Self = this.set("minimumWarningAppVersion", value.asInstanceOf[js.Any])
+    def setMinimumWarningOsVersion(value: NullableOption[String]): Self = StObject.set(x, "minimumWarningOsVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumWarningAppVersion: Self = this.set("minimumWarningAppVersion", js.undefined)
+    def setMinimumWarningOsVersionNull: Self = StObject.set(x, "minimumWarningOsVersion", null)
     
     @scala.inline
-    def setMinimumWarningAppVersionNull: Self = this.set("minimumWarningAppVersion", null)
+    def setMinimumWarningOsVersionUndefined: Self = StObject.set(x, "minimumWarningOsVersion", js.undefined)
     
     @scala.inline
-    def setMinimumWarningOsVersion(value: NullableOption[String]): Self = this.set("minimumWarningOsVersion", value.asInstanceOf[js.Any])
+    def setOrganizationalCredentialsRequired(value: Boolean): Self = StObject.set(x, "organizationalCredentialsRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumWarningOsVersion: Self = this.set("minimumWarningOsVersion", js.undefined)
+    def setOrganizationalCredentialsRequiredUndefined: Self = StObject.set(x, "organizationalCredentialsRequired", js.undefined)
     
     @scala.inline
-    def setMinimumWarningOsVersionNull: Self = this.set("minimumWarningOsVersion", null)
+    def setPeriodBeforePinReset(value: String): Self = StObject.set(x, "periodBeforePinReset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationalCredentialsRequired(value: Boolean): Self = this.set("organizationalCredentialsRequired", value.asInstanceOf[js.Any])
+    def setPeriodBeforePinResetUndefined: Self = StObject.set(x, "periodBeforePinReset", js.undefined)
     
     @scala.inline
-    def deleteOrganizationalCredentialsRequired: Self = this.set("organizationalCredentialsRequired", js.undefined)
+    def setPeriodOfflineBeforeAccessCheck(value: String): Self = StObject.set(x, "periodOfflineBeforeAccessCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodBeforePinReset(value: String): Self = this.set("periodBeforePinReset", value.asInstanceOf[js.Any])
+    def setPeriodOfflineBeforeAccessCheckUndefined: Self = StObject.set(x, "periodOfflineBeforeAccessCheck", js.undefined)
     
     @scala.inline
-    def deletePeriodBeforePinReset: Self = this.set("periodBeforePinReset", js.undefined)
+    def setPeriodOfflineBeforeWipeIsEnforced(value: String): Self = StObject.set(x, "periodOfflineBeforeWipeIsEnforced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodOfflineBeforeAccessCheck(value: String): Self = this.set("periodOfflineBeforeAccessCheck", value.asInstanceOf[js.Any])
+    def setPeriodOfflineBeforeWipeIsEnforcedUndefined: Self = StObject.set(x, "periodOfflineBeforeWipeIsEnforced", js.undefined)
     
     @scala.inline
-    def deletePeriodOfflineBeforeAccessCheck: Self = this.set("periodOfflineBeforeAccessCheck", js.undefined)
+    def setPeriodOnlineBeforeAccessCheck(value: String): Self = StObject.set(x, "periodOnlineBeforeAccessCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodOfflineBeforeWipeIsEnforced(value: String): Self = this.set("periodOfflineBeforeWipeIsEnforced", value.asInstanceOf[js.Any])
+    def setPeriodOnlineBeforeAccessCheckUndefined: Self = StObject.set(x, "periodOnlineBeforeAccessCheck", js.undefined)
     
     @scala.inline
-    def deletePeriodOfflineBeforeWipeIsEnforced: Self = this.set("periodOfflineBeforeWipeIsEnforced", js.undefined)
+    def setPinCharacterSet(value: ManagedAppPinCharacterSet): Self = StObject.set(x, "pinCharacterSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodOnlineBeforeAccessCheck(value: String): Self = this.set("periodOnlineBeforeAccessCheck", value.asInstanceOf[js.Any])
+    def setPinCharacterSetUndefined: Self = StObject.set(x, "pinCharacterSet", js.undefined)
     
     @scala.inline
-    def deletePeriodOnlineBeforeAccessCheck: Self = this.set("periodOnlineBeforeAccessCheck", js.undefined)
+    def setPinRequired(value: Boolean): Self = StObject.set(x, "pinRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinCharacterSet(value: ManagedAppPinCharacterSet): Self = this.set("pinCharacterSet", value.asInstanceOf[js.Any])
+    def setPinRequiredUndefined: Self = StObject.set(x, "pinRequired", js.undefined)
     
     @scala.inline
-    def deletePinCharacterSet: Self = this.set("pinCharacterSet", js.undefined)
+    def setPrintBlocked(value: Boolean): Self = StObject.set(x, "printBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinRequired(value: Boolean): Self = this.set("pinRequired", value.asInstanceOf[js.Any])
+    def setPrintBlockedUndefined: Self = StObject.set(x, "printBlocked", js.undefined)
     
     @scala.inline
-    def deletePinRequired: Self = this.set("pinRequired", js.undefined)
+    def setSaveAsBlocked(value: Boolean): Self = StObject.set(x, "saveAsBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintBlocked(value: Boolean): Self = this.set("printBlocked", value.asInstanceOf[js.Any])
+    def setSaveAsBlockedUndefined: Self = StObject.set(x, "saveAsBlocked", js.undefined)
     
     @scala.inline
-    def deletePrintBlocked: Self = this.set("printBlocked", js.undefined)
+    def setSimplePinBlocked(value: Boolean): Self = StObject.set(x, "simplePinBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveAsBlocked(value: Boolean): Self = this.set("saveAsBlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaveAsBlocked: Self = this.set("saveAsBlocked", js.undefined)
-    
-    @scala.inline
-    def setSimplePinBlocked(value: Boolean): Self = this.set("simplePinBlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimplePinBlocked: Self = this.set("simplePinBlocked", js.undefined)
+    def setSimplePinBlockedUndefined: Self = StObject.set(x, "simplePinBlocked", js.undefined)
   }
 }

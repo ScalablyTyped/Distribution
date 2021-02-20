@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     }
   */
 @js.native
-trait DataSourceSpec extends js.Object {
+trait DataSourceSpec extends StObject {
   
   def asBigQuery(): BigQueryDataSourceSpec = js.native
   
@@ -44,30 +45,18 @@ object DataSourceSpec {
   }
   
   @scala.inline
-  implicit class DataSourceSpecOps[Self <: DataSourceSpec] (val x: Self) extends AnyVal {
+  implicit class DataSourceSpecMutableBuilder[Self <: DataSourceSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsBigQuery(value: () => BigQueryDataSourceSpec): Self = StObject.set(x, "asBigQuery", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopy(value: () => DataSourceSpecBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetParameters(value: () => js.Array[DataSourceParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsBigQuery(value: () => BigQueryDataSourceSpec): Self = this.set("asBigQuery", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCopy(value: () => DataSourceSpecBuilder): Self = this.set("copy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetParameters(value: () => js.Array[DataSourceParameter]): Self = this.set("getParameters", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetType(value: () => DataSourceType): Self = this.set("getType", js.Any.fromFunction0(value))
+    def setGetType(value: () => DataSourceType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
   }
 }

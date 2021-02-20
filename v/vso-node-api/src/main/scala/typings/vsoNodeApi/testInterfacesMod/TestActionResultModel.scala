@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.testInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,33 +43,21 @@ object TestActionResultModel {
   }
   
   @scala.inline
-  implicit class TestActionResultModelOps[Self <: TestActionResultModel] (val x: Self) extends AnyVal {
+  implicit class TestActionResultModelMutableBuilder[Self <: TestActionResultModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionPath(value: String): Self = StObject.set(x, "actionPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSharedStepModel(value: SharedStepModel): Self = StObject.set(x, "sharedStepModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionPath(value: String): Self = this.set("actionPath", value.asInstanceOf[js.Any])
+    def setStepIdentifier(value: String): Self = StObject.set(x, "stepIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterationId(value: Double): Self = this.set("iterationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharedStepModel(value: SharedStepModel): Self = this.set("sharedStepModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepIdentifier(value: String): Self = this.set("stepIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

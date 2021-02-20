@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CookiePreference extends js.Object {
+trait CookiePreference extends StObject {
   
   /**
     * This field is deprecated. We recommend that you use a cache policy or an origin request policy instead of this field. If you want to include cookies in the cache key, use a cache policy. For more information, see Creating cache policies in the Amazon CloudFront Developer Guide. If you want to send cookies to the origin but not include them in the cache key, use origin request policy. For more information, see Creating origin request policies in the Amazon CloudFront Developer Guide. Specifies which cookies to forward to the origin for this cache behavior: all, none, or the list of cookies specified in the WhitelistedNames complex type. Amazon S3 doesn't process cookies. When the cache behavior is forwarding requests to an Amazon S3 origin, specify none for the Forward element.
@@ -26,27 +27,15 @@ object CookiePreference {
   }
   
   @scala.inline
-  implicit class CookiePreferenceOps[Self <: CookiePreference] (val x: Self) extends AnyVal {
+  implicit class CookiePreferenceMutableBuilder[Self <: CookiePreference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForward(value: ItemSelection): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWhitelistedNames(value: CookieNames): Self = StObject.set(x, "WhitelistedNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForward(value: ItemSelection): Self = this.set("Forward", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhitelistedNames(value: CookieNames): Self = this.set("WhitelistedNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelistedNames: Self = this.set("WhitelistedNames", js.undefined)
+    def setWhitelistedNamesUndefined: Self = StObject.set(x, "WhitelistedNames", js.undefined)
   }
 }

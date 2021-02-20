@@ -1,12 +1,13 @@
 package typings.protractor.anon
 
 import typings.protractor.pluginsMod.SpecResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailedCount extends js.Object {
+trait FailedCount extends StObject {
   
   var failedCount: Double = js.native
   
@@ -21,27 +22,15 @@ object FailedCount {
   }
   
   @scala.inline
-  implicit class FailedCountOps[Self <: FailedCount] (val x: Self) extends AnyVal {
+  implicit class FailedCountMutableBuilder[Self <: FailedCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpecResults(value: js.Array[SpecResult]): Self = StObject.set(x, "specResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailedCount(value: Double): Self = this.set("failedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecResultsVarargs(value: SpecResult*): Self = this.set("specResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpecResults(value: js.Array[SpecResult]): Self = this.set("specResults", value.asInstanceOf[js.Any])
+    def setSpecResultsVarargs(value: SpecResult*): Self = StObject.set(x, "specResults", js.Array(value :_*))
   }
 }

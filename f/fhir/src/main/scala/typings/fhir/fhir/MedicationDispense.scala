@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -170,228 +171,216 @@ object MedicationDispense {
   }
   
   @scala.inline
-  implicit class MedicationDispenseOps[Self <: MedicationDispense] (val x: Self) extends AnyVal {
+  implicit class MedicationDispenseMutableBuilder[Self <: MedicationDispense] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizingPrescription(value: js.Array[Reference]): Self = StObject.set(x, "authorizingPrescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizingPrescriptionUndefined: Self = StObject.set(x, "authorizingPrescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizingPrescriptionVarargs(value: Reference*): Self = StObject.set(x, "authorizingPrescription", js.Array(value :_*))
     
     @scala.inline
-    def set_notDone(value: Element): Self = this.set("_notDone", value.asInstanceOf[js.Any])
+    def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_notDone: Self = this.set("_notDone", js.undefined)
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setContext(value: Reference): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set_whenHandedOver(value: Element): Self = this.set("_whenHandedOver", value.asInstanceOf[js.Any])
+    def setDaysSupply(value: Quantity): Self = StObject.set(x, "daysSupply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_whenHandedOver: Self = this.set("_whenHandedOver", js.undefined)
+    def setDaysSupplyUndefined: Self = StObject.set(x, "daysSupply", js.undefined)
     
     @scala.inline
-    def set_whenPrepared(value: Element): Self = this.set("_whenPrepared", value.asInstanceOf[js.Any])
+    def setDestination(value: Reference): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_whenPrepared: Self = this.set("_whenPrepared", js.undefined)
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def setAuthorizingPrescriptionVarargs(value: Reference*): Self = this.set("authorizingPrescription", js.Array(value :_*))
+    def setDetectedIssue(value: js.Array[Reference]): Self = StObject.set(x, "detectedIssue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizingPrescription(value: js.Array[Reference]): Self = this.set("authorizingPrescription", value.asInstanceOf[js.Any])
+    def setDetectedIssueUndefined: Self = StObject.set(x, "detectedIssue", js.undefined)
     
     @scala.inline
-    def deleteAuthorizingPrescription: Self = this.set("authorizingPrescription", js.undefined)
+    def setDetectedIssueVarargs(value: Reference*): Self = StObject.set(x, "detectedIssue", js.Array(value :_*))
     
     @scala.inline
-    def setCategory(value: CodeableConcept): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDosageInstruction(value: js.Array[Dosage]): Self = StObject.set(x, "dosageInstruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setDosageInstructionUndefined: Self = StObject.set(x, "dosageInstruction", js.undefined)
     
     @scala.inline
-    def setContext(value: Reference): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDosageInstructionVarargs(value: Dosage*): Self = StObject.set(x, "dosageInstruction", js.Array(value :_*))
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setEventHistory(value: js.Array[Reference]): Self = StObject.set(x, "eventHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysSupply(value: Quantity): Self = this.set("daysSupply", value.asInstanceOf[js.Any])
+    def setEventHistoryUndefined: Self = StObject.set(x, "eventHistory", js.undefined)
     
     @scala.inline
-    def deleteDaysSupply: Self = this.set("daysSupply", js.undefined)
+    def setEventHistoryVarargs(value: Reference*): Self = StObject.set(x, "eventHistory", js.Array(value :_*))
     
     @scala.inline
-    def setDestination(value: Reference): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setDetectedIssueVarargs(value: Reference*): Self = this.set("detectedIssue", js.Array(value :_*))
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def setDetectedIssue(value: js.Array[Reference]): Self = this.set("detectedIssue", value.asInstanceOf[js.Any])
+    def setMedicationCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "medicationCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetectedIssue: Self = this.set("detectedIssue", js.undefined)
+    def setMedicationCodeableConceptUndefined: Self = StObject.set(x, "medicationCodeableConcept", js.undefined)
     
     @scala.inline
-    def setDosageInstructionVarargs(value: Dosage*): Self = this.set("dosageInstruction", js.Array(value :_*))
+    def setMedicationReference(value: Reference): Self = StObject.set(x, "medicationReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDosageInstruction(value: js.Array[Dosage]): Self = this.set("dosageInstruction", value.asInstanceOf[js.Any])
+    def setMedicationReferenceUndefined: Self = StObject.set(x, "medicationReference", js.undefined)
     
     @scala.inline
-    def deleteDosageInstruction: Self = this.set("dosageInstruction", js.undefined)
+    def setNotDone(value: Boolean): Self = StObject.set(x, "notDone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventHistoryVarargs(value: Reference*): Self = this.set("eventHistory", js.Array(value :_*))
+    def setNotDoneReasonCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "notDoneReasonCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventHistory(value: js.Array[Reference]): Self = this.set("eventHistory", value.asInstanceOf[js.Any])
+    def setNotDoneReasonCodeableConceptUndefined: Self = StObject.set(x, "notDoneReasonCodeableConcept", js.undefined)
     
     @scala.inline
-    def deleteEventHistory: Self = this.set("eventHistory", js.undefined)
+    def setNotDoneReasonReference(value: Reference): Self = StObject.set(x, "notDoneReasonReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setNotDoneReasonReferenceUndefined: Self = StObject.set(x, "notDoneReasonReference", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setNotDoneUndefined: Self = StObject.set(x, "notDone", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedicationCodeableConcept(value: CodeableConcept): Self = this.set("medicationCodeableConcept", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def deleteMedicationCodeableConcept: Self = this.set("medicationCodeableConcept", js.undefined)
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def setMedicationReference(value: Reference): Self = this.set("medicationReference", value.asInstanceOf[js.Any])
+    def setPartOf(value: js.Array[Reference]): Self = StObject.set(x, "partOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMedicationReference: Self = this.set("medicationReference", js.undefined)
+    def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
     
     @scala.inline
-    def setNotDone(value: Boolean): Self = this.set("notDone", value.asInstanceOf[js.Any])
+    def setPartOfVarargs(value: Reference*): Self = StObject.set(x, "partOf", js.Array(value :_*))
     
     @scala.inline
-    def deleteNotDone: Self = this.set("notDone", js.undefined)
+    def setPerformer(value: js.Array[MedicationDispensePerformer]): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotDoneReasonCodeableConcept(value: CodeableConcept): Self = this.set("notDoneReasonCodeableConcept", value.asInstanceOf[js.Any])
+    def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
     
     @scala.inline
-    def deleteNotDoneReasonCodeableConcept: Self = this.set("notDoneReasonCodeableConcept", js.undefined)
+    def setPerformerVarargs(value: MedicationDispensePerformer*): Self = StObject.set(x, "performer", js.Array(value :_*))
     
     @scala.inline
-    def setNotDoneReasonReference(value: Reference): Self = this.set("notDoneReasonReference", value.asInstanceOf[js.Any])
+    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotDoneReasonReference: Self = this.set("notDoneReasonReference", js.undefined)
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def setReceiver(value: js.Array[Reference]): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setReceiverUndefined: Self = StObject.set(x, "receiver", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setReceiverVarargs(value: Reference*): Self = StObject.set(x, "receiver", js.Array(value :_*))
     
     @scala.inline
-    def setPartOfVarargs(value: Reference*): Self = this.set("partOf", js.Array(value :_*))
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartOf(value: js.Array[Reference]): Self = this.set("partOf", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deletePartOf: Self = this.set("partOf", js.undefined)
+    def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformerVarargs(value: MedicationDispensePerformer*): Self = this.set("performer", js.Array(value :_*))
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def setPerformer(value: js.Array[MedicationDispensePerformer]): Self = this.set("performer", value.asInstanceOf[js.Any])
+    def setSubstitution(value: MedicationDispenseSubstitution): Self = StObject.set(x, "substitution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePerformer: Self = this.set("performer", js.undefined)
+    def setSubstitutionUndefined: Self = StObject.set(x, "substitution", js.undefined)
     
     @scala.inline
-    def setQuantity(value: Quantity): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setSupportingInformation(value: js.Array[Reference]): Self = StObject.set(x, "supportingInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setSupportingInformationUndefined: Self = StObject.set(x, "supportingInformation", js.undefined)
     
     @scala.inline
-    def setReceiverVarargs(value: Reference*): Self = this.set("receiver", js.Array(value :_*))
+    def setSupportingInformationVarargs(value: Reference*): Self = StObject.set(x, "supportingInformation", js.Array(value :_*))
     
     @scala.inline
-    def setReceiver(value: js.Array[Reference]): Self = this.set("receiver", value.asInstanceOf[js.Any])
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReceiver: Self = this.set("receiver", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setWhenHandedOver(value: dateTime): Self = StObject.set(x, "whenHandedOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setWhenHandedOverUndefined: Self = StObject.set(x, "whenHandedOver", js.undefined)
     
     @scala.inline
-    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setWhenPrepared(value: dateTime): Self = StObject.set(x, "whenPrepared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setWhenPreparedUndefined: Self = StObject.set(x, "whenPrepared", js.undefined)
     
     @scala.inline
-    def setSubstitution(value: MedicationDispenseSubstitution): Self = this.set("substitution", value.asInstanceOf[js.Any])
+    def set_notDone(value: Element): Self = StObject.set(x, "_notDone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubstitution: Self = this.set("substitution", js.undefined)
+    def set_notDoneUndefined: Self = StObject.set(x, "_notDone", js.undefined)
     
     @scala.inline
-    def setSupportingInformationVarargs(value: Reference*): Self = this.set("supportingInformation", js.Array(value :_*))
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportingInformation(value: js.Array[Reference]): Self = this.set("supportingInformation", value.asInstanceOf[js.Any])
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
     @scala.inline
-    def deleteSupportingInformation: Self = this.set("supportingInformation", js.undefined)
+    def set_whenHandedOver(value: Element): Self = StObject.set(x, "_whenHandedOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    def set_whenHandedOverUndefined: Self = StObject.set(x, "_whenHandedOver", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_whenPrepared(value: Element): Self = StObject.set(x, "_whenPrepared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhenHandedOver(value: dateTime): Self = this.set("whenHandedOver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhenHandedOver: Self = this.set("whenHandedOver", js.undefined)
-    
-    @scala.inline
-    def setWhenPrepared(value: dateTime): Self = this.set("whenPrepared", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhenPrepared: Self = this.set("whenPrepared", js.undefined)
+    def set_whenPreparedUndefined: Self = StObject.set(x, "_whenPrepared", js.undefined)
   }
 }

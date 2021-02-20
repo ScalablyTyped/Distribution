@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Snackbar.SnackbarClassKey>> */
 @js.native
-trait PartialStyleRulesSnackbar extends js.Object {
+trait PartialStyleRulesSnackbar extends StObject {
   
   var anchorOriginBottomCenter: js.UndefOr[CSSProperties] = js.native
   
@@ -32,60 +33,48 @@ object PartialStyleRulesSnackbar {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesSnackbarOps[Self <: PartialStyleRulesSnackbar] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesSnackbarMutableBuilder[Self <: PartialStyleRulesSnackbar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorOriginBottomCenter(value: CSSProperties): Self = StObject.set(x, "anchorOriginBottomCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorOriginBottomCenterUndefined: Self = StObject.set(x, "anchorOriginBottomCenter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorOriginBottomLeft(value: CSSProperties): Self = StObject.set(x, "anchorOriginBottomLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorOriginBottomCenter(value: CSSProperties): Self = this.set("anchorOriginBottomCenter", value.asInstanceOf[js.Any])
+    def setAnchorOriginBottomLeftUndefined: Self = StObject.set(x, "anchorOriginBottomLeft", js.undefined)
     
     @scala.inline
-    def deleteAnchorOriginBottomCenter: Self = this.set("anchorOriginBottomCenter", js.undefined)
+    def setAnchorOriginBottomRight(value: CSSProperties): Self = StObject.set(x, "anchorOriginBottomRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorOriginBottomLeft(value: CSSProperties): Self = this.set("anchorOriginBottomLeft", value.asInstanceOf[js.Any])
+    def setAnchorOriginBottomRightUndefined: Self = StObject.set(x, "anchorOriginBottomRight", js.undefined)
     
     @scala.inline
-    def deleteAnchorOriginBottomLeft: Self = this.set("anchorOriginBottomLeft", js.undefined)
+    def setAnchorOriginTopCenter(value: CSSProperties): Self = StObject.set(x, "anchorOriginTopCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorOriginBottomRight(value: CSSProperties): Self = this.set("anchorOriginBottomRight", value.asInstanceOf[js.Any])
+    def setAnchorOriginTopCenterUndefined: Self = StObject.set(x, "anchorOriginTopCenter", js.undefined)
     
     @scala.inline
-    def deleteAnchorOriginBottomRight: Self = this.set("anchorOriginBottomRight", js.undefined)
+    def setAnchorOriginTopLeft(value: CSSProperties): Self = StObject.set(x, "anchorOriginTopLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorOriginTopCenter(value: CSSProperties): Self = this.set("anchorOriginTopCenter", value.asInstanceOf[js.Any])
+    def setAnchorOriginTopLeftUndefined: Self = StObject.set(x, "anchorOriginTopLeft", js.undefined)
     
     @scala.inline
-    def deleteAnchorOriginTopCenter: Self = this.set("anchorOriginTopCenter", js.undefined)
+    def setAnchorOriginTopRight(value: CSSProperties): Self = StObject.set(x, "anchorOriginTopRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorOriginTopLeft(value: CSSProperties): Self = this.set("anchorOriginTopLeft", value.asInstanceOf[js.Any])
+    def setAnchorOriginTopRightUndefined: Self = StObject.set(x, "anchorOriginTopRight", js.undefined)
     
     @scala.inline
-    def deleteAnchorOriginTopLeft: Self = this.set("anchorOriginTopLeft", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorOriginTopRight(value: CSSProperties): Self = this.set("anchorOriginTopRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnchorOriginTopRight: Self = this.set("anchorOriginTopRight", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.officeJsPreview.Office
 
 import typings.officeJsPreview.Office.MailboxEnums.AppointmentSensitivityType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait Sensitivity extends js.Object {
+trait Sensitivity extends StObject {
   
   /**
     * Gets the value of the appointment sensitivity.

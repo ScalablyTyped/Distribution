@@ -7,6 +7,7 @@ import typings.std.stdStrings.mark
 import typings.std.stdStrings.pause
 import typings.std.stdStrings.resume
 import typings.std.stdStrings.start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

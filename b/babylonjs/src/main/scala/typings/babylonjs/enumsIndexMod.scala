@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Enums/index", JSImport.Namespace)
-@js.native
-object enumsIndexMod extends js.Object {
+object enumsIndexMod {
   
+  @JSImport("babylonjs/Materials/Node/Enums/index", "NodeMaterialBlockConnectionPointMode")
   @js.native
-  object NodeMaterialBlockConnectionPointMode extends js.Object {
+  object NodeMaterialBlockConnectionPointMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -25,8 +25,9 @@ object enumsIndexMod extends js.Object {
     /* 2 */ val Varying: typings.babylonjs.nodeMaterialBlockConnectionPointModeMod.NodeMaterialBlockConnectionPointMode.Varying with Double = js.native
   }
   
+  @JSImport("babylonjs/Materials/Node/Enums/index", "NodeMaterialBlockConnectionPointTypes")
   @js.native
-  object NodeMaterialBlockConnectionPointTypes extends js.Object {
+  object NodeMaterialBlockConnectionPointTypes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -56,8 +57,9 @@ object enumsIndexMod extends js.Object {
     /* 16 */ val Vector4: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.Vector4 with Double = js.native
   }
   
+  @JSImport("babylonjs/Materials/Node/Enums/index", "NodeMaterialBlockTargets")
   @js.native
-  object NodeMaterialBlockTargets extends js.Object {
+  object NodeMaterialBlockTargets extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -73,8 +75,9 @@ object enumsIndexMod extends js.Object {
     /* 3 */ val VertexAndFragment: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets.VertexAndFragment with Double = js.native
   }
   
+  @JSImport("babylonjs/Materials/Node/Enums/index", "NodeMaterialModes")
   @js.native
-  object NodeMaterialModes extends js.Object {
+  object NodeMaterialModes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.babylonjs.nodeMaterialModesMod.NodeMaterialModes with Double] = js.native
@@ -88,8 +91,9 @@ object enumsIndexMod extends js.Object {
     /* 3 */ val ProceduralTexture: typings.babylonjs.nodeMaterialModesMod.NodeMaterialModes.ProceduralTexture with Double = js.native
   }
   
+  @JSImport("babylonjs/Materials/Node/Enums/index", "NodeMaterialSystemValues")
   @js.native
-  object NodeMaterialSystemValues extends js.Object {
+  object NodeMaterialSystemValues extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[

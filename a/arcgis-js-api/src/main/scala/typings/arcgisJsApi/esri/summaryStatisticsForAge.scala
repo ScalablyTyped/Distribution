@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html)
   */
 @js.native
-trait summaryStatisticsForAge extends js.Object {
+trait summaryStatisticsForAge extends StObject {
   
   /**
     * Returns an object containing various statistics describing an age value (e.g.
@@ -30,21 +31,9 @@ object summaryStatisticsForAge {
   }
   
   @scala.inline
-  implicit class summaryStatisticsForAgeOps[Self <: summaryStatisticsForAge] (val x: Self) extends AnyVal {
+  implicit class summaryStatisticsForAgeMutableBuilder[Self <: summaryStatisticsForAge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSummaryStatisticsForAge(value: summaryStatisticsForAgeSummaryStatisticsForAgeParams => js.Promise[SummaryStatisticsResult]): Self = this.set("summaryStatisticsForAge", js.Any.fromFunction1(value))
+    def setSummaryStatisticsForAge(value: summaryStatisticsForAgeSummaryStatisticsForAgeParams => js.Promise[SummaryStatisticsResult]): Self = StObject.set(x, "summaryStatisticsForAge", js.Any.fromFunction1(value))
   }
 }

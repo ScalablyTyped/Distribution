@@ -1,5 +1,6 @@
 package typings.reactFoundation.enumsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactFoundation.reactFoundationStrings.right
   - typings.reactFoundation.reactFoundationStrings.center
 */
-trait MenuAlignments extends js.Object
-@JSImport("react-foundation/enums", "MenuAlignments")
-@js.native
-object MenuAlignments extends js.Object {
+trait MenuAlignments extends StObject
+object MenuAlignments {
   
-  var CENTER: MenuAlignments = js.native
+  @JSImport("react-foundation/enums", "MenuAlignments")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var RIGHT: MenuAlignments = js.native
+  @JSImport("react-foundation/enums", "MenuAlignments.CENTER")
+  @js.native
+  def CENTER: MenuAlignments = js.native
+  @scala.inline
+  def CENTER_=(x: MenuAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-foundation/enums", "MenuAlignments.RIGHT")
+  @js.native
+  def RIGHT: MenuAlignments = js.native
+  @scala.inline
+  def RIGHT_=(x: MenuAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
 }

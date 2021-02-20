@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListOnPremisesInstancesInput extends js.Object {
+trait ListOnPremisesInstancesInput extends StObject {
   
   /**
     * An identifier returned from the previous list on-premises instances call. It can be used to return the next set of on-premises instances in the list.
@@ -31,39 +32,27 @@ object ListOnPremisesInstancesInput {
   }
   
   @scala.inline
-  implicit class ListOnPremisesInstancesInputOps[Self <: ListOnPremisesInstancesInput] (val x: Self) extends AnyVal {
+  implicit class ListOnPremisesInstancesInputMutableBuilder[Self <: ListOnPremisesInstancesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegistrationStatus(value: RegistrationStatus): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setRegistrationStatusUndefined: Self = StObject.set(x, "registrationStatus", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setTagFilters(value: TagFilterList): Self = StObject.set(x, "tagFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistrationStatus(value: RegistrationStatus): Self = this.set("registrationStatus", value.asInstanceOf[js.Any])
+    def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
     
     @scala.inline
-    def deleteRegistrationStatus: Self = this.set("registrationStatus", js.undefined)
-    
-    @scala.inline
-    def setTagFiltersVarargs(value: TagFilter*): Self = this.set("tagFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagFilters(value: TagFilterList): Self = this.set("tagFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagFilters: Self = this.set("tagFilters", js.undefined)
+    def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
   }
 }

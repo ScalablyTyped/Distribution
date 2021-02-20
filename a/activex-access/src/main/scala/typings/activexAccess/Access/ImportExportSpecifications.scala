@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportExportSpecifications extends js.Object {
+trait ImportExportSpecifications extends StObject {
   
   def apply(Index: String): ImportExportSpecification = js.native
   def apply(Index: Double): ImportExportSpecification = js.native

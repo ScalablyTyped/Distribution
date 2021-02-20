@@ -1,12 +1,13 @@
 package typings.promiseSftp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** From the [statvfs struct](http://linux.die.net/man/2/statvfs). */
 @js.native
-trait Statvfs extends js.Object {
+trait Statvfs extends StObject {
   
   /** free blocks for unprivileged users */
   var f_bavail: Double = js.native
@@ -62,51 +63,39 @@ object Statvfs {
   }
   
   @scala.inline
-  implicit class StatvfsOps[Self <: Statvfs] (val x: Self) extends AnyVal {
+  implicit class StatvfsMutableBuilder[Self <: Statvfs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setF_bavail(value: Double): Self = StObject.set(x, "f_bavail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setF_bfree(value: Double): Self = StObject.set(x, "f_bfree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setF_blocks(value: Double): Self = StObject.set(x, "f_blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_bavail(value: Double): Self = this.set("f_bavail", value.asInstanceOf[js.Any])
+    def setF_bsize(value: Double): Self = StObject.set(x, "f_bsize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_bfree(value: Double): Self = this.set("f_bfree", value.asInstanceOf[js.Any])
+    def setF_favail(value: Double): Self = StObject.set(x, "f_favail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_blocks(value: Double): Self = this.set("f_blocks", value.asInstanceOf[js.Any])
+    def setF_ffree(value: Double): Self = StObject.set(x, "f_ffree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_bsize(value: Double): Self = this.set("f_bsize", value.asInstanceOf[js.Any])
+    def setF_files(value: Double): Self = StObject.set(x, "f_files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_favail(value: Double): Self = this.set("f_favail", value.asInstanceOf[js.Any])
+    def setF_flag(value: Double): Self = StObject.set(x, "f_flag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_ffree(value: Double): Self = this.set("f_ffree", value.asInstanceOf[js.Any])
+    def setF_frsize(value: Double): Self = StObject.set(x, "f_frsize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_files(value: Double): Self = this.set("f_files", value.asInstanceOf[js.Any])
+    def setF_fsid(value: Double): Self = StObject.set(x, "f_fsid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_flag(value: Double): Self = this.set("f_flag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setF_frsize(value: Double): Self = this.set("f_frsize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setF_fsid(value: Double): Self = this.set("f_fsid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setF_namemax(value: Double): Self = this.set("f_namemax", value.asInstanceOf[js.Any])
+    def setF_namemax(value: Double): Self = StObject.set(x, "f_namemax", value.asInstanceOf[js.Any])
   }
 }

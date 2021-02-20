@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for leasing tasks using LeaseTasks.
   */
 @js.native
-trait SchemaLeaseTasksRequest extends js.Object {
+trait SchemaLeaseTasksRequest extends StObject {
   
   /**
     * `filter` can be used to specify a subset of tasks to lease.  When
@@ -67,42 +68,30 @@ object SchemaLeaseTasksRequest {
   }
   
   @scala.inline
-  implicit class SchemaLeaseTasksRequestOps[Self <: SchemaLeaseTasksRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaLeaseTasksRequestMutableBuilder[Self <: SchemaLeaseTasksRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeaseDuration(value: String): Self = StObject.set(x, "leaseDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setLeaseDurationUndefined: Self = StObject.set(x, "leaseDuration", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setMaxTasks(value: Double): Self = StObject.set(x, "maxTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaseDuration(value: String): Self = this.set("leaseDuration", value.asInstanceOf[js.Any])
+    def setMaxTasksUndefined: Self = StObject.set(x, "maxTasks", js.undefined)
     
     @scala.inline
-    def deleteLeaseDuration: Self = this.set("leaseDuration", js.undefined)
+    def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTasks(value: Double): Self = this.set("maxTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxTasks: Self = this.set("maxTasks", js.undefined)
-    
-    @scala.inline
-    def setResponseView(value: String): Self = this.set("responseView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseView: Self = this.set("responseView", js.undefined)
+    def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
   }
 }

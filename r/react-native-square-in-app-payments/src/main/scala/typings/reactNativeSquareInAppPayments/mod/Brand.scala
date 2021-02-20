@@ -1,5 +1,6 @@
 package typings.reactNativeSquareInAppPayments.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.CHINA_UNION_PAY
   - typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.OTHER_BRAND
 */
-trait Brand extends js.Object
+trait Brand extends StObject
 object Brand {
   
   @scala.inline

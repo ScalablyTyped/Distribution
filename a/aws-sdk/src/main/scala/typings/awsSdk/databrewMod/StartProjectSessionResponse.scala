@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartProjectSessionResponse extends js.Object {
+trait StartProjectSessionResponse extends StObject {
   
   /**
     * A system-generated identifier for the session.
@@ -26,27 +27,15 @@ object StartProjectSessionResponse {
   }
   
   @scala.inline
-  implicit class StartProjectSessionResponseOps[Self <: StartProjectSessionResponse] (val x: Self) extends AnyVal {
+  implicit class StartProjectSessionResponseMutableBuilder[Self <: StartProjectSessionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientSessionId(value: ClientSessionId): Self = StObject.set(x, "ClientSessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientSessionIdUndefined: Self = StObject.set(x, "ClientSessionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: ProjectName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientSessionId(value: ClientSessionId): Self = this.set("ClientSessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientSessionId: Self = this.set("ClientSessionId", js.undefined)
+    def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

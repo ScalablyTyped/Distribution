@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrderPaymentMethod extends js.Object {
+trait SchemaOrderPaymentMethod extends StObject {
   
   /**
     * The billing address.
@@ -48,54 +49,42 @@ object SchemaOrderPaymentMethod {
   }
   
   @scala.inline
-  implicit class SchemaOrderPaymentMethodOps[Self <: SchemaOrderPaymentMethod] (val x: Self) extends AnyVal {
+  implicit class SchemaOrderPaymentMethodMutableBuilder[Self <: SchemaOrderPaymentMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAddress(value: SchemaOrderAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationMonth(value: Double): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAddress(value: SchemaOrderAddress): Self = this.set("billingAddress", value.asInstanceOf[js.Any])
+    def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
     
     @scala.inline
-    def deleteBillingAddress: Self = this.set("billingAddress", js.undefined)
+    def setExpirationYear(value: Double): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationMonth(value: Double): Self = this.set("expirationMonth", value.asInstanceOf[js.Any])
+    def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
     
     @scala.inline
-    def deleteExpirationMonth: Self = this.set("expirationMonth", js.undefined)
+    def setLastFourDigits(value: String): Self = StObject.set(x, "lastFourDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationYear(value: Double): Self = this.set("expirationYear", value.asInstanceOf[js.Any])
+    def setLastFourDigitsUndefined: Self = StObject.set(x, "lastFourDigits", js.undefined)
     
     @scala.inline
-    def deleteExpirationYear: Self = this.set("expirationYear", js.undefined)
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastFourDigits(value: String): Self = this.set("lastFourDigits", value.asInstanceOf[js.Any])
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     @scala.inline
-    def deleteLastFourDigits: Self = this.set("lastFourDigits", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

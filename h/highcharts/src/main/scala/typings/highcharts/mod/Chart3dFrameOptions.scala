@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Chart3dFrameOptions extends js.Object {
+trait Chart3dFrameOptions extends StObject {
   
   /**
     * (Highcharts) The back side of the frame around a 3D chart.
@@ -56,66 +57,54 @@ object Chart3dFrameOptions {
   }
   
   @scala.inline
-  implicit class Chart3dFrameOptionsOps[Self <: Chart3dFrameOptions] (val x: Self) extends AnyVal {
+  implicit class Chart3dFrameOptionsMutableBuilder[Self <: Chart3dFrameOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBack(value: Chart3dFrameBackOptions): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBottom(value: Chart3dFrameBottomOptions): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBack(value: Chart3dFrameBackOptions): Self = this.set("back", value.asInstanceOf[js.Any])
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def deleteBack: Self = this.set("back", js.undefined)
+    def setFront(value: Chart3dFrameFrontOptions): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: Chart3dFrameBottomOptions): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setFrontUndefined: Self = StObject.set(x, "front", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setLeft(value: Chart3dFrameLeftOptions): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFront(value: Chart3dFrameFrontOptions): Self = this.set("front", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteFront: Self = this.set("front", js.undefined)
+    def setRight(value: Chart3dFrameRightOptions): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Chart3dFrameLeftOptions): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: Chart3dFrameRightOptions): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setTop(value: Chart3dFrameTopOptions): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: Chart3dFrameTopOptions): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: String): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

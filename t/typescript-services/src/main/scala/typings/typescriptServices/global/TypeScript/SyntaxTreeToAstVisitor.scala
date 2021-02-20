@@ -1,5 +1,6 @@
 package typings.typescriptServices.global.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +15,11 @@ class SyntaxTreeToAstVisitor protected ()
     compilationSettings: typings.typescriptServices.TypeScript.ImmutableCompilationSettings
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.SyntaxTreeToAstVisitor")
-@js.native
-object SyntaxTreeToAstVisitor extends js.Object {
+object SyntaxTreeToAstVisitor {
   
+  /* static member */
+  @JSGlobal("TypeScript.SyntaxTreeToAstVisitor.visit")
+  @js.native
   def visit(
     syntaxTree: typings.typescriptServices.TypeScript.SyntaxTree,
     fileName: String,

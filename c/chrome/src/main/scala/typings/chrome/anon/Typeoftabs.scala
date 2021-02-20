@@ -25,12 +25,13 @@ import typings.chrome.chrome.tabs.TabZoomChangeEvent
 import typings.chrome.chrome.tabs.UpdateProperties
 import typings.chrome.chrome.tabs.ZoomSettings
 import typings.chrome.chromeNumbers.`-1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeoftabs extends js.Object {
+trait Typeoftabs extends StObject {
   
   var TAB_ID_NONE: `-1` = js.native
   

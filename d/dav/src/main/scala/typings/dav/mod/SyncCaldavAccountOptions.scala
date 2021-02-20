@@ -3,12 +3,13 @@ package typings.dav.mod
 import typings.dav.davStrings.basic
 import typings.dav.davStrings.webdav
 import typings.dav.mod.transport.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SyncCaldavAccountOptions extends js.Object {
+trait SyncCaldavAccountOptions extends StObject {
   
   /**
     * list of caldav filters to send with request.
@@ -45,51 +46,39 @@ object SyncCaldavAccountOptions {
   }
   
   @scala.inline
-  implicit class SyncCaldavAccountOptionsOps[Self <: SyncCaldavAccountOptions] (val x: Self) extends AnyVal {
+  implicit class SyncCaldavAccountOptionsMutableBuilder[Self <: SyncCaldavAccountOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: js.Array[js.Object]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: js.Object*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: js.Object*): Self = this.set("filters", js.Array(value :_*))
+    def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: js.Array[js.Object]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setSyncMethod(value: basic | webdav): Self = StObject.set(x, "syncMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandbox(value: Sandbox): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    def setSyncMethodUndefined: Self = StObject.set(x, "syncMethod", js.undefined)
     
     @scala.inline
-    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncMethod(value: basic | webdav): Self = this.set("syncMethod", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteSyncMethod: Self = this.set("syncMethod", js.undefined)
+    def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
-    
-    @scala.inline
-    def setXhr(value: Transport): Self = this.set("xhr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXhr: Self = this.set("xhr", js.undefined)
+    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

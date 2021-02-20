@@ -2,6 +2,7 @@ package typings.ckeditorCkeditor5Engine.mod.view
 
 import typings.ckeditorCkeditor5Engine.anon.ParentFirst
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.textProxy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

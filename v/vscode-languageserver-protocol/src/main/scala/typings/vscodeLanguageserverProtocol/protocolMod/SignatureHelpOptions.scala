@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,36 +32,24 @@ object SignatureHelpOptions {
   }
   
   @scala.inline
-  implicit class SignatureHelpOptionsOps[Self <: SignatureHelpOptions] (val x: Self) extends AnyVal {
+  implicit class SignatureHelpOptionsMutableBuilder[Self <: SignatureHelpOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRetriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "retriggerCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRetriggerCharactersUndefined: Self = StObject.set(x, "retriggerCharacters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetriggerCharactersVarargs(value: String*): Self = StObject.set(x, "retriggerCharacters", js.Array(value :_*))
     
     @scala.inline
-    def setRetriggerCharactersVarargs(value: String*): Self = this.set("retriggerCharacters", js.Array(value :_*))
+    def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetriggerCharacters(value: js.Array[String]): Self = this.set("retriggerCharacters", value.asInstanceOf[js.Any])
+    def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
     
     @scala.inline
-    def deleteRetriggerCharacters: Self = this.set("retriggerCharacters", js.undefined)
-    
-    @scala.inline
-    def setTriggerCharactersVarargs(value: String*): Self = this.set("triggerCharacters", js.Array(value :_*))
-    
-    @scala.inline
-    def setTriggerCharacters(value: js.Array[String]): Self = this.set("triggerCharacters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerCharacters: Self = this.set("triggerCharacters", js.undefined)
+    def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
   }
 }

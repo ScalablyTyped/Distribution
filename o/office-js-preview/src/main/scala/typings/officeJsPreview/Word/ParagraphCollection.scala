@@ -5,6 +5,7 @@ import typings.officeJsPreview.OfficeExtension.LoadOption
 import typings.officeJsPreview.Word.Interfaces.CollectionLoadOptions
 import typings.officeJsPreview.Word.Interfaces.ParagraphCollectionData
 import typings.officeJsPreview.Word.Interfaces.ParagraphCollectionLoadOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -3,12 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendoUiStrings.grid
 import typings.kendoUi.kendoUiStrings.horizontal
 import typings.kendoUi.kendoUiStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormOptions extends js.Object {
+trait FormOptions extends StObject {
   
   var buttonsTemplate: js.UndefOr[String | js.Function] = js.native
   
@@ -49,111 +50,99 @@ object FormOptions {
   }
   
   @scala.inline
-  implicit class FormOptionsOps[Self <: FormOptions] (val x: Self) extends AnyVal {
+  implicit class FormOptionsMutableBuilder[Self <: FormOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonsTemplate(value: String | js.Function): Self = StObject.set(x, "buttonsTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsTemplateUndefined: Self = StObject.set(x, "buttonsTemplate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChange(value: /* e */ FormChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setButtonsTemplate(value: String | js.Function): Self = this.set("buttonsTemplate", value.asInstanceOf[js.Any])
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteButtonsTemplate: Self = this.set("buttonsTemplate", js.undefined)
+    def setClear(value: /* e */ FormClearEvent => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChange(value: /* e */ FormChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setFocusFirst(value: Boolean): Self = StObject.set(x, "focusFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: /* e */ FormClearEvent => Unit): Self = this.set("clear", js.Any.fromFunction1(value))
+    def setFocusFirstUndefined: Self = StObject.set(x, "focusFirst", js.undefined)
     
     @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setFormData(value: FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusFirst(value: Boolean): Self = this.set("focusFirst", value.asInstanceOf[js.Any])
+    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
     @scala.inline
-    def deleteFocusFirst: Self = this.set("focusFirst", js.undefined)
+    def setFormatLabel(value: js.Function): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormData(value: FormData): Self = this.set("formData", value.asInstanceOf[js.Any])
+    def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
     @scala.inline
-    def deleteFormData: Self = this.set("formData", js.undefined)
+    def setGrid(value: FormGridOptions): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatLabel(value: js.Function): Self = this.set("formatLabel", value.asInstanceOf[js.Any])
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def deleteFormatLabel: Self = this.set("formatLabel", js.undefined)
+    def setItems(value: js.Array[FormItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: FormGridOptions): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setItemsVarargs(value: FormItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: FormItem*): Self = this.set("items", js.Array(value :_*))
+    def setLayout(value: String | grid): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[FormItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: String | grid): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setOrientation(value: String | horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSubmit(value: /* e */ FormSubmitEvent => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOrientation(value: String | horizontal | vertical): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setValidatable(value: FormValidatable): Self = StObject.set(x, "validatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmit(value: /* e */ FormSubmitEvent => Unit): Self = this.set("submit", js.Any.fromFunction1(value))
+    def setValidatableUndefined: Self = StObject.set(x, "validatable", js.undefined)
     
     @scala.inline
-    def deleteSubmit: Self = this.set("submit", js.undefined)
+    def setValidate(value: /* e */ FormValidateEvent => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValidatable(value: FormValidatable): Self = this.set("validatable", value.asInstanceOf[js.Any])
+    def setValidateField(value: /* e */ FormValidateFieldEvent => Unit): Self = StObject.set(x, "validateField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteValidatable: Self = this.set("validatable", js.undefined)
+    def setValidateFieldUndefined: Self = StObject.set(x, "validateField", js.undefined)
     
     @scala.inline
-    def setValidate(value: /* e */ FormValidateEvent => Unit): Self = this.set("validate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
-    
-    @scala.inline
-    def setValidateField(value: /* e */ FormValidateFieldEvent => Unit): Self = this.set("validateField", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteValidateField: Self = this.set("validateField", js.undefined)
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import typings.typescriptServices.TypeScript.SyntaxKind
 import typings.typescriptServices.TypeScript.TextSpan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,24 +40,12 @@ object TokenSpan {
   }
   
   @scala.inline
-  implicit class TokenSpanOps[Self <: TokenSpan] (val x: Self) extends AnyVal {
+  implicit class TokenSpanMutableBuilder[Self <: TokenSpan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_kind(value: js.Any): Self = this.set("_kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: () => SyntaxKind): Self = this.set("kind", js.Any.fromFunction0(value))
+    def set_kind(value: js.Any): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
   }
 }

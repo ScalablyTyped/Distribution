@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayApplianceInfo extends js.Object {
+trait DisplayApplianceInfo extends StObject {
   
   var documentData: js.UndefOr[js.Array[DisplayApplianceDocument]] = js.native
   
@@ -26,60 +27,48 @@ object DisplayApplianceInfo {
   }
   
   @scala.inline
-  implicit class DisplayApplianceInfoOps[Self <: DisplayApplianceInfo] (val x: Self) extends AnyVal {
+  implicit class DisplayApplianceInfoMutableBuilder[Self <: DisplayApplianceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentData(value: js.Array[DisplayApplianceDocument]): Self = StObject.set(x, "documentData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentDataUndefined: Self = StObject.set(x, "documentData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentDataVarargs(value: DisplayApplianceDocument*): Self = StObject.set(x, "documentData", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentDataVarargs(value: DisplayApplianceDocument*): Self = this.set("documentData", js.Array(value :_*))
+    def setDocumentPages(value: js.Array[DisplayApplianceDocumentPage]): Self = StObject.set(x, "documentPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentData(value: js.Array[DisplayApplianceDocument]): Self = this.set("documentData", value.asInstanceOf[js.Any])
+    def setDocumentPagesUndefined: Self = StObject.set(x, "documentPages", js.undefined)
     
     @scala.inline
-    def deleteDocumentData: Self = this.set("documentData", js.undefined)
+    def setDocumentPagesVarargs(value: DisplayApplianceDocumentPage*): Self = StObject.set(x, "documentPages", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentPagesVarargs(value: DisplayApplianceDocumentPage*): Self = this.set("documentPages", js.Array(value :_*))
+    def setEnvelopeData(value: DisplayApplianceEnvelope): Self = StObject.set(x, "envelopeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentPages(value: js.Array[DisplayApplianceDocumentPage]): Self = this.set("documentPages", value.asInstanceOf[js.Any])
+    def setEnvelopeDataUndefined: Self = StObject.set(x, "envelopeData", js.undefined)
     
     @scala.inline
-    def deleteDocumentPages: Self = this.set("documentPages", js.undefined)
+    def setPageData(value: js.Array[DisplayAppliancePage]): Self = StObject.set(x, "pageData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeData(value: DisplayApplianceEnvelope): Self = this.set("envelopeData", value.asInstanceOf[js.Any])
+    def setPageDataUndefined: Self = StObject.set(x, "pageData", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeData: Self = this.set("envelopeData", js.undefined)
+    def setPageDataVarargs(value: DisplayAppliancePage*): Self = StObject.set(x, "pageData", js.Array(value :_*))
     
     @scala.inline
-    def setPageDataVarargs(value: DisplayAppliancePage*): Self = this.set("pageData", js.Array(value :_*))
+    def setRecipientData(value: js.Array[DisplayApplianceRecipient]): Self = StObject.set(x, "recipientData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageData(value: js.Array[DisplayAppliancePage]): Self = this.set("pageData", value.asInstanceOf[js.Any])
+    def setRecipientDataUndefined: Self = StObject.set(x, "recipientData", js.undefined)
     
     @scala.inline
-    def deletePageData: Self = this.set("pageData", js.undefined)
-    
-    @scala.inline
-    def setRecipientDataVarargs(value: DisplayApplianceRecipient*): Self = this.set("recipientData", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecipientData(value: js.Array[DisplayApplianceRecipient]): Self = this.set("recipientData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipientData: Self = this.set("recipientData", js.undefined)
+    def setRecipientDataVarargs(value: DisplayApplianceRecipient*): Self = StObject.set(x, "recipientData", js.Array(value :_*))
   }
 }

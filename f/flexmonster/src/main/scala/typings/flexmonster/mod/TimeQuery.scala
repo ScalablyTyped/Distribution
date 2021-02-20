@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeQuery extends js.Object {
+trait TimeQuery extends StObject {
   
   var between: js.UndefOr[js.Array[String]] = js.native
   
@@ -32,72 +33,60 @@ object TimeQuery {
   }
   
   @scala.inline
-  implicit class TimeQueryOps[Self <: TimeQuery] (val x: Self) extends AnyVal {
+  implicit class TimeQueryMutableBuilder[Self <: TimeQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBetween(value: js.Array[String]): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBetweenVarargs(value: String*): Self = StObject.set(x, "between", js.Array(value :_*))
     
     @scala.inline
-    def setBetweenVarargs(value: String*): Self = this.set("between", js.Array(value :_*))
+    def setEqual(value: String): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBetween(value: js.Array[String]): Self = this.set("between", value.asInstanceOf[js.Any])
+    def setEqualUndefined: Self = StObject.set(x, "equal", js.undefined)
     
     @scala.inline
-    def deleteBetween: Self = this.set("between", js.undefined)
+    def setGreater(value: String): Self = StObject.set(x, "greater", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEqual(value: String): Self = this.set("equal", value.asInstanceOf[js.Any])
+    def setGreaterUndefined: Self = StObject.set(x, "greater", js.undefined)
     
     @scala.inline
-    def deleteEqual: Self = this.set("equal", js.undefined)
+    def setGreater_equal(value: String): Self = StObject.set(x, "greater_equal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreater(value: String): Self = this.set("greater", value.asInstanceOf[js.Any])
+    def setGreater_equalUndefined: Self = StObject.set(x, "greater_equal", js.undefined)
     
     @scala.inline
-    def deleteGreater: Self = this.set("greater", js.undefined)
+    def setLess(value: String): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreater_equal(value: String): Self = this.set("greater_equal", value.asInstanceOf[js.Any])
+    def setLessUndefined: Self = StObject.set(x, "less", js.undefined)
     
     @scala.inline
-    def deleteGreater_equal: Self = this.set("greater_equal", js.undefined)
+    def setLess_equal(value: String): Self = StObject.set(x, "less_equal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLess(value: String): Self = this.set("less", value.asInstanceOf[js.Any])
+    def setLess_equalUndefined: Self = StObject.set(x, "less_equal", js.undefined)
     
     @scala.inline
-    def deleteLess: Self = this.set("less", js.undefined)
+    def setNot_between(value: js.Array[String]): Self = StObject.set(x, "not_between", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLess_equal(value: String): Self = this.set("less_equal", value.asInstanceOf[js.Any])
+    def setNot_betweenUndefined: Self = StObject.set(x, "not_between", js.undefined)
     
     @scala.inline
-    def deleteLess_equal: Self = this.set("less_equal", js.undefined)
+    def setNot_betweenVarargs(value: String*): Self = StObject.set(x, "not_between", js.Array(value :_*))
     
     @scala.inline
-    def setNot_betweenVarargs(value: String*): Self = this.set("not_between", js.Array(value :_*))
+    def setNot_equal(value: String): Self = StObject.set(x, "not_equal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNot_between(value: js.Array[String]): Self = this.set("not_between", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNot_between: Self = this.set("not_between", js.undefined)
-    
-    @scala.inline
-    def setNot_equal(value: String): Self = this.set("not_equal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNot_equal: Self = this.set("not_equal", js.undefined)
+    def setNot_equalUndefined: Self = StObject.set(x, "not_equal", js.undefined)
   }
 }

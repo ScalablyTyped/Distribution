@@ -26,12 +26,13 @@ import typings.stellarBase.stellarBaseStrings.manageSellOfferSellNoTrust
 import typings.stellarBase.stellarBaseStrings.manageSellOfferSellNotAuthorized
 import typings.stellarBase.stellarBaseStrings.manageSellOfferSuccess
 import typings.stellarBase.stellarBaseStrings.manageSellOfferUnderfunded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManageSellOfferResultCode extends js.Object {
+trait ManageSellOfferResultCode extends StObject {
   
   val name: manageSellOfferSuccess | manageSellOfferMalformed | manageSellOfferSellNoTrust | manageSellOfferBuyNoTrust | manageSellOfferSellNotAuthorized | manageSellOfferBuyNotAuthorized | manageSellOfferLineFull | manageSellOfferUnderfunded | manageSellOfferCrossSelf | manageSellOfferSellNoIssuer | manageSellOfferBuyNoIssuer | manageSellOfferNotFound | manageSellOfferLowReserve = js.native
   
@@ -49,26 +50,14 @@ object ManageSellOfferResultCode {
   }
   
   @scala.inline
-  implicit class ManageSellOfferResultCodeOps[Self <: ManageSellOfferResultCode] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ManageSellOfferResultCodeMutableBuilder[Self <: ManageSellOfferResultCode] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setName(
       value: manageSellOfferSuccess | manageSellOfferMalformed | manageSellOfferSellNoTrust | manageSellOfferBuyNoTrust | manageSellOfferSellNotAuthorized | manageSellOfferBuyNotAuthorized | manageSellOfferLineFull | manageSellOfferUnderfunded | manageSellOfferCrossSelf | manageSellOfferSellNoIssuer | manageSellOfferBuyNoIssuer | manageSellOfferNotFound | manageSellOfferLowReserve
-    ): Self = this.set("name", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: `0` | `-1` | `-2` | `-3` | `-4` | `-5` | `-6` | `-7` | `-8` | `-9` | `-10` | `-11` | `-12`): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: `0` | `-1` | `-2` | `-3` | `-4` | `-5` | `-6` | `-7` | `-8` | `-9` | `-10` | `-11` | `-12`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

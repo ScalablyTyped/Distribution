@@ -1,12 +1,13 @@
 package typings.postmark.modelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark/dist/client/models", "InboundMessageStatus")
 @js.native
-object InboundMessageStatus extends js.Object {
+object InboundMessageStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.postmark.messageFilteringParametersMod.InboundMessageStatus with String] = js.native

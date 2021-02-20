@@ -1,11 +1,12 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutStreamOptions extends js.Object {
+trait PutStreamOptions extends StObject {
   
   var callback: ObjectCallback = js.native
   
@@ -13,13 +14,13 @@ trait PutStreamOptions extends js.Object {
   
   var headers: js.UndefOr[js.Object] = js.native
   
-   // custom mime, will send with Content-Type entity header
+  // custom mime, will send with Content-Type entity header
   var meta: UserMeta = js.native
   
-   // the operation timeout
+  // the operation timeout
   var mime: String = js.native
   
-   // the stream length, chunked encoding will be used if absent
+  // the stream length, chunked encoding will be used if absent
   var timeout: Double = js.native
 }
 object PutStreamOptions {
@@ -31,42 +32,30 @@ object PutStreamOptions {
   }
   
   @scala.inline
-  implicit class PutStreamOptionsOps[Self <: PutStreamOptions] (val x: Self) extends AnyVal {
+  implicit class PutStreamOptionsMutableBuilder[Self <: PutStreamOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentLengthUndefined: Self = StObject.set(x, "contentLength", js.undefined)
     
     @scala.inline
-    def setCallback(value: ObjectCallback): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: UserMeta): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setMime(value: String): Self = this.set("mime", value.asInstanceOf[js.Any])
+    def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLength(value: Double): Self = this.set("contentLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentLength: Self = this.set("contentLength", js.undefined)
-    
-    @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

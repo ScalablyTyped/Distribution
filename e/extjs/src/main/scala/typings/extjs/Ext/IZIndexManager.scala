@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,84 +78,72 @@ object IZIndexManager {
   }
   
   @scala.inline
-  implicit class IZIndexManagerOps[Self <: IZIndexManager] (val x: Self) extends AnyVal {
+  implicit class IZIndexManagerMutableBuilder[Self <: IZIndexManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBringToFront(value: /* comp */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "bringToFront", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBringToFrontUndefined: Self = StObject.set(x, "bringToFront", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBringToFront(value: /* comp */ js.UndefOr[js.Any] => Boolean): Self = this.set("bringToFront", js.Any.fromFunction1(value))
+    def setEachBottomUp(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachBottomUp", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteBringToFront: Self = this.set("bringToFront", js.undefined)
+    def setEachBottomUpUndefined: Self = StObject.set(x, "eachBottomUp", js.undefined)
     
     @scala.inline
-    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("each", js.Any.fromFunction2(value))
+    def setEachTopDown(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachTopDown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteEach: Self = this.set("each", js.undefined)
+    def setEachTopDownUndefined: Self = StObject.set(x, "eachTopDown", js.undefined)
     
     @scala.inline
-    def setEachBottomUp(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("eachBottomUp", js.Any.fromFunction2(value))
+    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
     @scala.inline
-    def deleteEachBottomUp: Self = this.set("eachBottomUp", js.undefined)
+    def setGet(value: /* id */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEachTopDown(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("eachTopDown", js.Any.fromFunction2(value))
+    def setGetActive(value: () => IComponent): Self = StObject.set(x, "getActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteEachTopDown: Self = this.set("eachTopDown", js.undefined)
+    def setGetActiveUndefined: Self = StObject.set(x, "getActive", js.undefined)
     
     @scala.inline
-    def setGet(value: /* id */ js.UndefOr[js.Any] => IComponent): Self = this.set("get", js.Any.fromFunction1(value))
+    def setGetBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "getBy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setGetByUndefined: Self = StObject.set(x, "getBy", js.undefined)
     
     @scala.inline
-    def setGetActive(value: () => IComponent): Self = this.set("getActive", js.Any.fromFunction0(value))
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def deleteGetActive: Self = this.set("getActive", js.undefined)
+    def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array): Self = this.set("getBy", js.Any.fromFunction2(value))
+    def setHideAllUndefined: Self = StObject.set(x, "hideAll", js.undefined)
     
     @scala.inline
-    def deleteGetBy: Self = this.set("getBy", js.undefined)
+    def setRegister(value: /* comp */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideAll(value: () => Unit): Self = this.set("hideAll", js.Any.fromFunction0(value))
+    def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     
     @scala.inline
-    def deleteHideAll: Self = this.set("hideAll", js.undefined)
+    def setSendToBack(value: /* comp */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "sendToBack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegister(value: /* comp */ js.UndefOr[IComponent] => Unit): Self = this.set("register", js.Any.fromFunction1(value))
+    def setSendToBackUndefined: Self = StObject.set(x, "sendToBack", js.undefined)
     
     @scala.inline
-    def deleteRegister: Self = this.set("register", js.undefined)
+    def setUnregister(value: /* comp */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSendToBack(value: /* comp */ js.UndefOr[js.Any] => IComponent): Self = this.set("sendToBack", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSendToBack: Self = this.set("sendToBack", js.undefined)
-    
-    @scala.inline
-    def setUnregister(value: /* comp */ js.UndefOr[IComponent] => Unit): Self = this.set("unregister", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUnregister: Self = this.set("unregister", js.undefined)
+    def setUnregisterUndefined: Self = StObject.set(x, "unregister", js.undefined)
   }
 }

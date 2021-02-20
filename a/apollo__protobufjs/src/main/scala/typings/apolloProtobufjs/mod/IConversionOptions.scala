@@ -1,11 +1,12 @@
 package typings.apolloProtobufjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConversionOptions extends js.Object {
+trait IConversionOptions extends StObject {
   
   /** Sets empty arrays for missing repeated fields even if `defaults=false` */
   var arrays: js.UndefOr[Boolean] = js.native
@@ -52,66 +53,54 @@ object IConversionOptions {
   }
   
   @scala.inline
-  implicit class IConversionOptionsOps[Self <: IConversionOptions] (val x: Self) extends AnyVal {
+  implicit class IConversionOptionsMutableBuilder[Self <: IConversionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytes(value: js.Function): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrays(value: Boolean): Self = this.set("arrays", value.asInstanceOf[js.Any])
+    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
     @scala.inline
-    def deleteArrays: Self = this.set("arrays", js.undefined)
+    def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytes(value: js.Function): Self = this.set("bytes", value.asInstanceOf[js.Any])
+    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
     @scala.inline
-    def deleteBytes: Self = this.set("bytes", js.undefined)
+    def setEnums(value: js.Function): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaults(value: Boolean): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
     
     @scala.inline
-    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnums(value: js.Function): Self = this.set("enums", value.asInstanceOf[js.Any])
+    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
     @scala.inline
-    def deleteEnums: Self = this.set("enums", js.undefined)
+    def setLongs(value: js.Function): Self = StObject.set(x, "longs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJson(value: Boolean): Self = this.set("json", value.asInstanceOf[js.Any])
+    def setLongsUndefined: Self = StObject.set(x, "longs", js.undefined)
     
     @scala.inline
-    def deleteJson: Self = this.set("json", js.undefined)
+    def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongs(value: js.Function): Self = this.set("longs", value.asInstanceOf[js.Any])
+    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     
     @scala.inline
-    def deleteLongs: Self = this.set("longs", js.undefined)
+    def setOneofs(value: Boolean): Self = StObject.set(x, "oneofs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjects(value: Boolean): Self = this.set("objects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjects: Self = this.set("objects", js.undefined)
-    
-    @scala.inline
-    def setOneofs(value: Boolean): Self = this.set("oneofs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOneofs: Self = this.set("oneofs", js.undefined)
+    def setOneofsUndefined: Self = StObject.set(x, "oneofs", js.undefined)
   }
 }

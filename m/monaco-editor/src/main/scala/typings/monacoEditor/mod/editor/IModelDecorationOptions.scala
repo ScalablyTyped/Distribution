@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.editor
 
 import typings.monacoEditor.mod.IMarkdownString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IModelDecorationOptions extends js.Object {
+trait IModelDecorationOptions extends StObject {
   
   /**
     * If set, the decoration will be rendered after the text with this CSS class name.
@@ -101,156 +102,144 @@ object IModelDecorationOptions {
   }
   
   @scala.inline
-  implicit class IModelDecorationOptionsOps[Self <: IModelDecorationOptions] (val x: Self) extends AnyVal {
+  implicit class IModelDecorationOptionsMutableBuilder[Self <: IModelDecorationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterContentClassName(value: String): Self = StObject.set(x, "afterContentClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterContentClassNameNull: Self = StObject.set(x, "afterContentClassName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterContentClassNameUndefined: Self = StObject.set(x, "afterContentClassName", js.undefined)
     
     @scala.inline
-    def setAfterContentClassName(value: String): Self = this.set("afterContentClassName", value.asInstanceOf[js.Any])
+    def setBeforeContentClassName(value: String): Self = StObject.set(x, "beforeContentClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfterContentClassName: Self = this.set("afterContentClassName", js.undefined)
+    def setBeforeContentClassNameNull: Self = StObject.set(x, "beforeContentClassName", null)
     
     @scala.inline
-    def setAfterContentClassNameNull: Self = this.set("afterContentClassName", null)
+    def setBeforeContentClassNameUndefined: Self = StObject.set(x, "beforeContentClassName", js.undefined)
     
     @scala.inline
-    def setBeforeContentClassName(value: String): Self = this.set("beforeContentClassName", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeforeContentClassName: Self = this.set("beforeContentClassName", js.undefined)
+    def setClassNameNull: Self = StObject.set(x, "className", null)
     
     @scala.inline
-    def setBeforeContentClassNameNull: Self = this.set("beforeContentClassName", null)
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setFirstLineDecorationClassName(value: String): Self = StObject.set(x, "firstLineDecorationClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setFirstLineDecorationClassNameNull: Self = StObject.set(x, "firstLineDecorationClassName", null)
     
     @scala.inline
-    def setClassNameNull: Self = this.set("className", null)
+    def setFirstLineDecorationClassNameUndefined: Self = StObject.set(x, "firstLineDecorationClassName", js.undefined)
     
     @scala.inline
-    def setFirstLineDecorationClassName(value: String): Self = this.set("firstLineDecorationClassName", value.asInstanceOf[js.Any])
+    def setGlyphMarginClassName(value: String): Self = StObject.set(x, "glyphMarginClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirstLineDecorationClassName: Self = this.set("firstLineDecorationClassName", js.undefined)
+    def setGlyphMarginClassNameNull: Self = StObject.set(x, "glyphMarginClassName", null)
     
     @scala.inline
-    def setFirstLineDecorationClassNameNull: Self = this.set("firstLineDecorationClassName", null)
+    def setGlyphMarginClassNameUndefined: Self = StObject.set(x, "glyphMarginClassName", js.undefined)
     
     @scala.inline
-    def setGlyphMarginClassName(value: String): Self = this.set("glyphMarginClassName", value.asInstanceOf[js.Any])
+    def setGlyphMarginHoverMessage(value: IMarkdownString | js.Array[IMarkdownString]): Self = StObject.set(x, "glyphMarginHoverMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlyphMarginClassName: Self = this.set("glyphMarginClassName", js.undefined)
+    def setGlyphMarginHoverMessageNull: Self = StObject.set(x, "glyphMarginHoverMessage", null)
     
     @scala.inline
-    def setGlyphMarginClassNameNull: Self = this.set("glyphMarginClassName", null)
+    def setGlyphMarginHoverMessageUndefined: Self = StObject.set(x, "glyphMarginHoverMessage", js.undefined)
     
     @scala.inline
-    def setGlyphMarginHoverMessageVarargs(value: IMarkdownString*): Self = this.set("glyphMarginHoverMessage", js.Array(value :_*))
+    def setGlyphMarginHoverMessageVarargs(value: IMarkdownString*): Self = StObject.set(x, "glyphMarginHoverMessage", js.Array(value :_*))
     
     @scala.inline
-    def setGlyphMarginHoverMessage(value: IMarkdownString | js.Array[IMarkdownString]): Self = this.set("glyphMarginHoverMessage", value.asInstanceOf[js.Any])
+    def setHoverMessage(value: IMarkdownString | js.Array[IMarkdownString]): Self = StObject.set(x, "hoverMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlyphMarginHoverMessage: Self = this.set("glyphMarginHoverMessage", js.undefined)
+    def setHoverMessageNull: Self = StObject.set(x, "hoverMessage", null)
     
     @scala.inline
-    def setGlyphMarginHoverMessageNull: Self = this.set("glyphMarginHoverMessage", null)
+    def setHoverMessageUndefined: Self = StObject.set(x, "hoverMessage", js.undefined)
     
     @scala.inline
-    def setHoverMessageVarargs(value: IMarkdownString*): Self = this.set("hoverMessage", js.Array(value :_*))
+    def setHoverMessageVarargs(value: IMarkdownString*): Self = StObject.set(x, "hoverMessage", js.Array(value :_*))
     
     @scala.inline
-    def setHoverMessage(value: IMarkdownString | js.Array[IMarkdownString]): Self = this.set("hoverMessage", value.asInstanceOf[js.Any])
+    def setInlineClassName(value: String): Self = StObject.set(x, "inlineClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHoverMessage: Self = this.set("hoverMessage", js.undefined)
+    def setInlineClassNameAffectsLetterSpacing(value: Boolean): Self = StObject.set(x, "inlineClassNameAffectsLetterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverMessageNull: Self = this.set("hoverMessage", null)
+    def setInlineClassNameAffectsLetterSpacingUndefined: Self = StObject.set(x, "inlineClassNameAffectsLetterSpacing", js.undefined)
     
     @scala.inline
-    def setInlineClassName(value: String): Self = this.set("inlineClassName", value.asInstanceOf[js.Any])
+    def setInlineClassNameNull: Self = StObject.set(x, "inlineClassName", null)
     
     @scala.inline
-    def deleteInlineClassName: Self = this.set("inlineClassName", js.undefined)
+    def setInlineClassNameUndefined: Self = StObject.set(x, "inlineClassName", js.undefined)
     
     @scala.inline
-    def setInlineClassNameNull: Self = this.set("inlineClassName", null)
+    def setIsWholeLine(value: Boolean): Self = StObject.set(x, "isWholeLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineClassNameAffectsLetterSpacing(value: Boolean): Self = this.set("inlineClassNameAffectsLetterSpacing", value.asInstanceOf[js.Any])
+    def setIsWholeLineUndefined: Self = StObject.set(x, "isWholeLine", js.undefined)
     
     @scala.inline
-    def deleteInlineClassNameAffectsLetterSpacing: Self = this.set("inlineClassNameAffectsLetterSpacing", js.undefined)
+    def setLinesDecorationsClassName(value: String): Self = StObject.set(x, "linesDecorationsClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWholeLine(value: Boolean): Self = this.set("isWholeLine", value.asInstanceOf[js.Any])
+    def setLinesDecorationsClassNameNull: Self = StObject.set(x, "linesDecorationsClassName", null)
     
     @scala.inline
-    def deleteIsWholeLine: Self = this.set("isWholeLine", js.undefined)
+    def setLinesDecorationsClassNameUndefined: Self = StObject.set(x, "linesDecorationsClassName", js.undefined)
     
     @scala.inline
-    def setLinesDecorationsClassName(value: String): Self = this.set("linesDecorationsClassName", value.asInstanceOf[js.Any])
+    def setMarginClassName(value: String): Self = StObject.set(x, "marginClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinesDecorationsClassName: Self = this.set("linesDecorationsClassName", js.undefined)
+    def setMarginClassNameNull: Self = StObject.set(x, "marginClassName", null)
     
     @scala.inline
-    def setLinesDecorationsClassNameNull: Self = this.set("linesDecorationsClassName", null)
+    def setMarginClassNameUndefined: Self = StObject.set(x, "marginClassName", js.undefined)
     
     @scala.inline
-    def setMarginClassName(value: String): Self = this.set("marginClassName", value.asInstanceOf[js.Any])
+    def setMinimap(value: IModelDecorationMinimapOptions): Self = StObject.set(x, "minimap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginClassName: Self = this.set("marginClassName", js.undefined)
+    def setMinimapNull: Self = StObject.set(x, "minimap", null)
     
     @scala.inline
-    def setMarginClassNameNull: Self = this.set("marginClassName", null)
+    def setMinimapUndefined: Self = StObject.set(x, "minimap", js.undefined)
     
     @scala.inline
-    def setMinimap(value: IModelDecorationMinimapOptions): Self = this.set("minimap", value.asInstanceOf[js.Any])
+    def setOverviewRuler(value: IModelDecorationOverviewRulerOptions): Self = StObject.set(x, "overviewRuler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimap: Self = this.set("minimap", js.undefined)
+    def setOverviewRulerNull: Self = StObject.set(x, "overviewRuler", null)
     
     @scala.inline
-    def setMinimapNull: Self = this.set("minimap", null)
+    def setOverviewRulerUndefined: Self = StObject.set(x, "overviewRuler", js.undefined)
     
     @scala.inline
-    def setOverviewRuler(value: IModelDecorationOverviewRulerOptions): Self = this.set("overviewRuler", value.asInstanceOf[js.Any])
+    def setStickiness(value: TrackedRangeStickiness): Self = StObject.set(x, "stickiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverviewRuler: Self = this.set("overviewRuler", js.undefined)
+    def setStickinessUndefined: Self = StObject.set(x, "stickiness", js.undefined)
     
     @scala.inline
-    def setOverviewRulerNull: Self = this.set("overviewRuler", null)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStickiness(value: TrackedRangeStickiness): Self = this.set("stickiness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStickiness: Self = this.set("stickiness", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.chromeApps.chromeAppsStrings.connection_error_
 import typings.chromeApps.chromeAppsStrings.media_pipeline_error_
 import typings.chromeApps.chromeAppsStrings.timeout_error_
 import typings.chromeApps.chromeAppsStrings.unknown_error_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CAPABILITIESNEGOTIATIONERROR extends js.Object {
+trait CAPABILITIESNEGOTIATIONERROR extends StObject {
   
   var CAPABILITIES_NEGOTIATION_ERROR: capabilities_negotiation_error_ = js.native
   
@@ -37,33 +38,21 @@ object CAPABILITIESNEGOTIATIONERROR {
   }
   
   @scala.inline
-  implicit class CAPABILITIESNEGOTIATIONERROROps[Self <: CAPABILITIESNEGOTIATIONERROR] (val x: Self) extends AnyVal {
+  implicit class CAPABILITIESNEGOTIATIONERRORMutableBuilder[Self <: CAPABILITIESNEGOTIATIONERROR] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPABILITIES_NEGOTIATION_ERROR(value: capabilities_negotiation_error_): Self = StObject.set(x, "CAPABILITIES_NEGOTIATION_ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCONNECTION_ERROR(value: connection_error_): Self = StObject.set(x, "CONNECTION_ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMEDIA_PIPELINE_ERROR(value: media_pipeline_error_): Self = StObject.set(x, "MEDIA_PIPELINE_ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPABILITIES_NEGOTIATION_ERROR(value: capabilities_negotiation_error_): Self = this.set("CAPABILITIES_NEGOTIATION_ERROR", value.asInstanceOf[js.Any])
+    def setTIMEOUT_ERROR(value: timeout_error_): Self = StObject.set(x, "TIMEOUT_ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCONNECTION_ERROR(value: connection_error_): Self = this.set("CONNECTION_ERROR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMEDIA_PIPELINE_ERROR(value: media_pipeline_error_): Self = this.set("MEDIA_PIPELINE_ERROR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTIMEOUT_ERROR(value: timeout_error_): Self = this.set("TIMEOUT_ERROR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUNKNOWN_ERROR(value: unknown_error_): Self = this.set("UNKNOWN_ERROR", value.asInstanceOf[js.Any])
+    def setUNKNOWN_ERROR(value: unknown_error_): Self = StObject.set(x, "UNKNOWN_ERROR", value.asInstanceOf[js.Any])
   }
 }

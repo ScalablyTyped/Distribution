@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SsmActionDefinition extends js.Object {
+trait SsmActionDefinition extends StObject {
   
   /**
     *  The action subType. 
@@ -31,30 +32,18 @@ object SsmActionDefinition {
   }
   
   @scala.inline
-  implicit class SsmActionDefinitionOps[Self <: SsmActionDefinition] (val x: Self) extends AnyVal {
+  implicit class SsmActionDefinitionMutableBuilder[Self <: SsmActionDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionSubType(value: ActionSubType): Self = StObject.set(x, "ActionSubType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
     
     @scala.inline
-    def setActionSubType(value: ActionSubType): Self = this.set("ActionSubType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceIdsVarargs(value: InstanceId*): Self = this.set("InstanceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstanceIds(value: InstanceIds): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegion(value: Region): Self = this.set("Region", value.asInstanceOf[js.Any])
+    def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
   }
 }

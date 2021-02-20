@@ -2,9 +2,10 @@ package typings.googleGax.mod.fallback
 
 import typings.googleGax.anon.Auth
 import typings.googleGax.grpcMod.GrpcClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "fallback.GrpcClient")
 @js.native
@@ -14,8 +15,6 @@ import scala.scalajs.js.annotation._
   *
   * @param {Object=} options.auth - An instance of OAuth2Client to use in browser, or an instance of GoogleAuth from google-auth-library
   *  to use in Node.js. Required for browser, optional for Node.js.
-  * @param {Function=} options.promise - A constructor for a promise that
-  * implements the ES6 specification of promise.
   * @constructor
   */
 class GrpcClient ()
@@ -23,4 +22,3 @@ class GrpcClient ()
   def this(options: Auth) = this()
   def this(options: GrpcClientOptions) = this()
 }
-

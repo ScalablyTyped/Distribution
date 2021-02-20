@@ -11,14 +11,15 @@ import typings.stylableCore.stylableResolverMod.JSResolve
 import typings.stylableCore.stylableResolverMod.StylableResolver
 import typings.stylableCore.stylableTransformerMod.StylableTransformer
 import typings.stylableCore.stylableTransformerMod.replaceValueHook
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@stylable/core/cjs/functions", JSImport.Namespace)
-@js.native
-object functionsMod extends js.Object {
+object functionsMod {
   
+  @JSImport("@stylable/core/cjs/functions", "evalDeclarationValue")
+  @js.native
   def evalDeclarationValue(
     resolver: StylableResolver,
     value: String,
@@ -32,6 +33,47 @@ object functionsMod extends js.Object {
     args: js.UndefOr[js.Array[String]]
   ): String = js.native
   
+  object functionWarnings {
+    
+    @JSImport("@stylable/core/cjs/functions", "functionWarnings.CANNOT_FIND_IMPORTED_VAR")
+    @js.native
+    def CANNOT_FIND_IMPORTED_VAR(varName: String): String = js.native
+    
+    @JSImport("@stylable/core/cjs/functions", "functionWarnings.CANNOT_USE_AS_VALUE")
+    @js.native
+    def CANNOT_USE_AS_VALUE(`type`: String, varName: String): String = js.native
+    
+    @JSImport("@stylable/core/cjs/functions", "functionWarnings.CANNOT_USE_JS_AS_VALUE")
+    @js.native
+    def CANNOT_USE_JS_AS_VALUE(varName: String): String = js.native
+    
+    @JSImport("@stylable/core/cjs/functions", "functionWarnings.COULD_NOT_RESOLVE_VALUE")
+    @js.native
+    def COULD_NOT_RESOLVE_VALUE(args: String): String = js.native
+    
+    @JSImport("@stylable/core/cjs/functions", "functionWarnings.CYCLIC_VALUE")
+    @js.native
+    def CYCLIC_VALUE(cyclicChain: js.Array[String]): String = js.native
+    
+    @JSImport("@stylable/core/cjs/functions", "functionWarnings.FAIL_TO_EXECUTE_FORMATTER")
+    @js.native
+    def FAIL_TO_EXECUTE_FORMATTER(resolvedValue: String, message: String): String = js.native
+    
+    @JSImport("@stylable/core/cjs/functions", "functionWarnings.MULTI_ARGS_IN_VALUE")
+    @js.native
+    def MULTI_ARGS_IN_VALUE(args: String): String = js.native
+    
+    @JSImport("@stylable/core/cjs/functions", "functionWarnings.UNKNOWN_FORMATTER")
+    @js.native
+    def UNKNOWN_FORMATTER(name: String): String = js.native
+    
+    @JSImport("@stylable/core/cjs/functions", "functionWarnings.UNKNOWN_VAR")
+    @js.native
+    def UNKNOWN_VAR(name: String): String = js.native
+  }
+  
+  @JSImport("@stylable/core/cjs/functions", "processDeclarationValue")
+  @js.native
   def processDeclarationValue(
     resolver: StylableResolver,
     value: String,
@@ -45,6 +87,8 @@ object functionsMod extends js.Object {
     args: js.UndefOr[js.Array[String]]
   ): OutputValue = js.native
   
+  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
+  @js.native
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -52,6 +96,8 @@ object functionsMod extends js.Object {
     diagnostics: Diagnostics,
     node: Node
   ): Record[String, String] = js.native
+  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
+  @js.native
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -62,6 +108,8 @@ object functionsMod extends js.Object {
     path: js.UndefOr[scala.Nothing],
     cssVarsMapping: Record[String, String]
   ): Record[String, String] = js.native
+  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
+  @js.native
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -71,6 +119,8 @@ object functionsMod extends js.Object {
     variableOverride: js.UndefOr[scala.Nothing],
     path: js.Array[String]
   ): Record[String, String] = js.native
+  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
+  @js.native
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -81,6 +131,8 @@ object functionsMod extends js.Object {
     path: js.Array[String],
     cssVarsMapping: Record[String, String]
   ): Record[String, String] = js.native
+  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
+  @js.native
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -89,6 +141,8 @@ object functionsMod extends js.Object {
     node: Node,
     variableOverride: Record[String, String]
   ): Record[String, String] = js.native
+  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
+  @js.native
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -99,6 +153,8 @@ object functionsMod extends js.Object {
     path: js.UndefOr[scala.Nothing],
     cssVarsMapping: Record[String, String]
   ): Record[String, String] = js.native
+  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
+  @js.native
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -108,6 +164,8 @@ object functionsMod extends js.Object {
     variableOverride: Record[String, String],
     path: js.Array[String]
   ): Record[String, String] = js.native
+  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
+  @js.native
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -118,28 +176,6 @@ object functionsMod extends js.Object {
     path: js.Array[String],
     cssVarsMapping: Record[String, String]
   ): Record[String, String] = js.native
-  
-  @js.native
-  object functionWarnings extends js.Object {
-    
-    def CANNOT_FIND_IMPORTED_VAR(varName: String): String = js.native
-    
-    def CANNOT_USE_AS_VALUE(`type`: String, varName: String): String = js.native
-    
-    def CANNOT_USE_JS_AS_VALUE(varName: String): String = js.native
-    
-    def COULD_NOT_RESOLVE_VALUE(args: String): String = js.native
-    
-    def CYCLIC_VALUE(cyclicChain: js.Array[String]): String = js.native
-    
-    def FAIL_TO_EXECUTE_FORMATTER(resolvedValue: String, message: String): String = js.native
-    
-    def MULTI_ARGS_IN_VALUE(args: String): String = js.native
-    
-    def UNKNOWN_FORMATTER(name: String): String = js.native
-    
-    def UNKNOWN_VAR(name: String): String = js.native
-  }
   
   type ResolvedFormatter = Record[String, JSResolve | CSSResolve[StylableSymbol] | ValueFormatter | Null]
   

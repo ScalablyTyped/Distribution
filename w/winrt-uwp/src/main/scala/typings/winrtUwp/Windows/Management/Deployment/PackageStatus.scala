@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Management.Deployment
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PackageStatus extends js.Object
+sealed trait PackageStatus extends StObject
 /** Provides info about the status of a package. */
 @JSGlobal("Windows.Management.Deployment.PackageStatus")
 @js.native
-object PackageStatus extends js.Object {
+object PackageStatus extends StObject {
   
   /** The package is not available for use. It can still be serviced. */
   @js.native

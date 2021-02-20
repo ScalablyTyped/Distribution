@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Devices.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the settings for a frame in a variable photo sequence. */
 @js.native
-trait FrameController extends js.Object {
+trait FrameController extends StObject {
   
   /** Gets the exposure compensation settings for a frame in a variable photo sequence. */
   var exposureCompensationControl: FrameExposureCompensationControl = js.native
@@ -42,36 +43,24 @@ object FrameController {
   }
   
   @scala.inline
-  implicit class FrameControllerOps[Self <: FrameController] (val x: Self) extends AnyVal {
+  implicit class FrameControllerMutableBuilder[Self <: FrameController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExposureCompensationControl(value: FrameExposureCompensationControl): Self = StObject.set(x, "exposureCompensationControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExposureControl(value: FrameExposureControl): Self = StObject.set(x, "exposureControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlashControl(value: FrameFlashControl): Self = StObject.set(x, "flashControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureCompensationControl(value: FrameExposureCompensationControl): Self = this.set("exposureCompensationControl", value.asInstanceOf[js.Any])
+    def setFocusControl(value: FrameFocusControl): Self = StObject.set(x, "focusControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureControl(value: FrameExposureControl): Self = this.set("exposureControl", value.asInstanceOf[js.Any])
+    def setIsoSpeedControl(value: FrameIsoSpeedControl): Self = StObject.set(x, "isoSpeedControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashControl(value: FrameFlashControl): Self = this.set("flashControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFocusControl(value: FrameFocusControl): Self = this.set("focusControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsoSpeedControl(value: FrameIsoSpeedControl): Self = this.set("isoSpeedControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhotoConfirmationEnabled(value: Boolean): Self = this.set("photoConfirmationEnabled", value.asInstanceOf[js.Any])
+    def setPhotoConfirmationEnabled(value: Boolean): Self = StObject.set(x, "photoConfirmationEnabled", value.asInstanceOf[js.Any])
   }
 }

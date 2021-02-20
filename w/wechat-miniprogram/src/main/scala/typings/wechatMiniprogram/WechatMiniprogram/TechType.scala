@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 标签类型枚举 */
 @js.native
-trait TechType extends js.Object {
+trait TechType extends StObject {
   
   /** 对应IsoDep实例，实例支持ISO-DEP (ISO 14443-4)标准的读写 */
   var isoDep: String = js.native
@@ -50,42 +51,30 @@ object TechType {
   }
   
   @scala.inline
-  implicit class TechTypeOps[Self <: TechType] (val x: Self) extends AnyVal {
+  implicit class TechTypeMutableBuilder[Self <: TechType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsoDep(value: String): Self = StObject.set(x, "isoDep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMifareClassic(value: String): Self = StObject.set(x, "mifareClassic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMifareUltralight(value: String): Self = StObject.set(x, "mifareUltralight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoDep(value: String): Self = this.set("isoDep", value.asInstanceOf[js.Any])
+    def setNdef(value: String): Self = StObject.set(x, "ndef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMifareClassic(value: String): Self = this.set("mifareClassic", value.asInstanceOf[js.Any])
+    def setNfcA(value: String): Self = StObject.set(x, "nfcA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMifareUltralight(value: String): Self = this.set("mifareUltralight", value.asInstanceOf[js.Any])
+    def setNfcB(value: String): Self = StObject.set(x, "nfcB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNdef(value: String): Self = this.set("ndef", value.asInstanceOf[js.Any])
+    def setNfcF(value: String): Self = StObject.set(x, "nfcF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNfcA(value: String): Self = this.set("nfcA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNfcB(value: String): Self = this.set("nfcB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNfcF(value: String): Self = this.set("nfcF", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNfcV(value: String): Self = this.set("nfcV", value.asInstanceOf[js.Any])
+    def setNfcV(value: String): Self = StObject.set(x, "nfcV", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Determines the format for saving captured videos. */
 @JSGlobal("Windows.Media.Capture.CameraCaptureUIVideoFormat")
 @js.native
-object CameraCaptureUIVideoFormat extends js.Object {
+object CameraCaptureUIVideoFormat extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Capture.CameraCaptureUIVideoFormat with Double] = js.native

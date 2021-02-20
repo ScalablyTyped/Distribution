@@ -1,11 +1,12 @@
 package typings.awsSdk.accessanalyzerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Criterion extends js.Object {
+trait Criterion extends StObject {
   
   /**
     * A "contains" operator to match for the filter used to create the rule.
@@ -37,51 +38,39 @@ object Criterion {
   }
   
   @scala.inline
-  implicit class CriterionOps[Self <: Criterion] (val x: Self) extends AnyVal {
+  implicit class CriterionMutableBuilder[Self <: Criterion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: ValueList): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsVarargs(value: String*): Self = StObject.set(x, "contains", js.Array(value :_*))
     
     @scala.inline
-    def setContainsVarargs(value: String*): Self = this.set("contains", js.Array(value :_*))
+    def setEq_(value: ValueList): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContains(value: ValueList): Self = this.set("contains", value.asInstanceOf[js.Any])
+    def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setEq_Varargs(value: String*): Self = StObject.set(x, "eq", js.Array(value :_*))
     
     @scala.inline
-    def setEqVarargs(value: String*): Self = this.set("eq", js.Array(value :_*))
+    def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEq(value: ValueList): Self = this.set("eq", value.asInstanceOf[js.Any])
+    def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
     
     @scala.inline
-    def deleteEq: Self = this.set("eq", js.undefined)
+    def setNeq(value: ValueList): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExists(value: Boolean): Self = this.set("exists", value.asInstanceOf[js.Any])
+    def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
     
     @scala.inline
-    def deleteExists: Self = this.set("exists", js.undefined)
-    
-    @scala.inline
-    def setNeqVarargs(value: String*): Self = this.set("neq", js.Array(value :_*))
-    
-    @scala.inline
-    def setNeq(value: ValueList): Self = this.set("neq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNeq: Self = this.set("neq", js.undefined)
+    def setNeqVarargs(value: String*): Self = StObject.set(x, "neq", js.Array(value :_*))
   }
 }

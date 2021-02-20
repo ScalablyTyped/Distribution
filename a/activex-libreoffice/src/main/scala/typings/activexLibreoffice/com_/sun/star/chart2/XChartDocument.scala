@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.frame.XModel
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,60 +132,48 @@ object XChartDocument {
   }
   
   @scala.inline
-  implicit class XChartDocumentOps[Self <: XChartDocument] (val x: Self) extends AnyVal {
+  implicit class XChartDocumentMutableBuilder[Self <: XChartDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartTypeManager(value: XChartTypeManager): Self = StObject.set(x, "ChartTypeManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDefaultChart(value: () => Unit): Self = StObject.set(x, "createDefaultChart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateInternalDataProvider(value: Boolean => Unit): Self = StObject.set(x, "createInternalDataProvider", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChartTypeManager(value: XChartTypeManager): Self = this.set("ChartTypeManager", value.asInstanceOf[js.Any])
+    def setDataProvider(value: XDataProvider): Self = StObject.set(x, "DataProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataProvider(value: XDataProvider): Self = this.set("DataProvider", value.asInstanceOf[js.Any])
+    def setFirstDiagram(value: XDiagram): Self = StObject.set(x, "FirstDiagram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDiagram(value: XDiagram): Self = this.set("FirstDiagram", value.asInstanceOf[js.Any])
+    def setGetChartTypeManager(value: () => XChartTypeManager): Self = StObject.set(x, "getChartTypeManager", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPageBackground(value: XPropertySet): Self = this.set("PageBackground", value.asInstanceOf[js.Any])
+    def setGetDataProvider(value: () => XDataProvider): Self = StObject.set(x, "getDataProvider", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateDefaultChart(value: () => Unit): Self = this.set("createDefaultChart", js.Any.fromFunction0(value))
+    def setGetFirstDiagram(value: () => XDiagram): Self = StObject.set(x, "getFirstDiagram", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateInternalDataProvider(value: Boolean => Unit): Self = this.set("createInternalDataProvider", js.Any.fromFunction1(value))
+    def setGetPageBackground(value: () => XPropertySet): Self = StObject.set(x, "getPageBackground", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChartTypeManager(value: () => XChartTypeManager): Self = this.set("getChartTypeManager", js.Any.fromFunction0(value))
+    def setHasInternalDataProvider(value: () => Boolean): Self = StObject.set(x, "hasInternalDataProvider", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDataProvider(value: () => XDataProvider): Self = this.set("getDataProvider", js.Any.fromFunction0(value))
+    def setIsOpenGLChart(value: () => Boolean): Self = StObject.set(x, "isOpenGLChart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFirstDiagram(value: () => XDiagram): Self = this.set("getFirstDiagram", js.Any.fromFunction0(value))
+    def setPageBackground(value: XPropertySet): Self = StObject.set(x, "PageBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPageBackground(value: () => XPropertySet): Self = this.set("getPageBackground", js.Any.fromFunction0(value))
+    def setSetChartTypeManager(value: XChartTypeManager => Unit): Self = StObject.set(x, "setChartTypeManager", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasInternalDataProvider(value: () => Boolean): Self = this.set("hasInternalDataProvider", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOpenGLChart(value: () => Boolean): Self = this.set("isOpenGLChart", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetChartTypeManager(value: XChartTypeManager => Unit): Self = this.set("setChartTypeManager", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFirstDiagram(value: XDiagram => Unit): Self = this.set("setFirstDiagram", js.Any.fromFunction1(value))
+    def setSetFirstDiagram(value: XDiagram => Unit): Self = StObject.set(x, "setFirstDiagram", js.Any.fromFunction1(value))
   }
 }

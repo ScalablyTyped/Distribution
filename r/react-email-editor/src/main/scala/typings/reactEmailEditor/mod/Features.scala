@@ -1,11 +1,12 @@
 package typings.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Features extends js.Object {
+trait Features extends StObject {
   
   val imageEditor: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object Features {
   }
   
   @scala.inline
-  implicit class FeaturesOps[Self <: Features] (val x: Self) extends AnyVal {
+  implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageEditor(value: Boolean): Self = StObject.set(x, "imageEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageEditorUndefined: Self = StObject.set(x, "imageEditor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageEditor(value: Boolean): Self = this.set("imageEditor", value.asInstanceOf[js.Any])
+    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
     @scala.inline
-    def deleteImageEditor: Self = this.set("imageEditor", js.undefined)
+    def setStockImages(value: Boolean): Self = StObject.set(x, "stockImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: Boolean): Self = this.set("preview", value.asInstanceOf[js.Any])
+    def setStockImagesUndefined: Self = StObject.set(x, "stockImages", js.undefined)
     
     @scala.inline
-    def deletePreview: Self = this.set("preview", js.undefined)
+    def setTextEditor(value: TextEditor): Self = StObject.set(x, "textEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStockImages(value: Boolean): Self = this.set("stockImages", value.asInstanceOf[js.Any])
+    def setTextEditorUndefined: Self = StObject.set(x, "textEditor", js.undefined)
     
     @scala.inline
-    def deleteStockImages: Self = this.set("stockImages", js.undefined)
+    def setUndoRedo(value: Boolean): Self = StObject.set(x, "undoRedo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextEditor(value: TextEditor): Self = this.set("textEditor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextEditor: Self = this.set("textEditor", js.undefined)
-    
-    @scala.inline
-    def setUndoRedo(value: Boolean): Self = this.set("undoRedo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUndoRedo: Self = this.set("undoRedo", js.undefined)
+    def setUndoRedoUndefined: Self = StObject.set(x, "undoRedo", js.undefined)
   }
 }

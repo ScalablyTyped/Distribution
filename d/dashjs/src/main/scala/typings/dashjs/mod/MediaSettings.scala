@@ -1,11 +1,12 @@
 package typings.dashjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaSettings extends js.Object {
+trait MediaSettings extends StObject {
   
   var accessibility: js.UndefOr[js.Any] = js.native
   
@@ -26,51 +27,39 @@ object MediaSettings {
   }
   
   @scala.inline
-  implicit class MediaSettingsOps[Self <: MediaSettings] (val x: Self) extends AnyVal {
+  implicit class MediaSettingsMutableBuilder[Self <: MediaSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibility(value: js.Any): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioChannelConfiguration(value: js.Array[_]): Self = StObject.set(x, "audioChannelConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibility(value: js.Any): Self = this.set("accessibility", value.asInstanceOf[js.Any])
+    def setAudioChannelConfigurationUndefined: Self = StObject.set(x, "audioChannelConfiguration", js.undefined)
     
     @scala.inline
-    def deleteAccessibility: Self = this.set("accessibility", js.undefined)
+    def setAudioChannelConfigurationVarargs(value: js.Any*): Self = StObject.set(x, "audioChannelConfiguration", js.Array(value :_*))
     
     @scala.inline
-    def setAudioChannelConfigurationVarargs(value: js.Any*): Self = this.set("audioChannelConfiguration", js.Array(value :_*))
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioChannelConfiguration(value: js.Array[_]): Self = this.set("audioChannelConfiguration", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteAudioChannelConfiguration: Self = this.set("audioChannelConfiguration", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setViewpoint(value: js.Any): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
-    
-    @scala.inline
-    def setViewpoint(value: js.Any): Self = this.set("viewpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewpoint: Self = this.set("viewpoint", js.undefined)
+    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
   }
 }

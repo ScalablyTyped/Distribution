@@ -4,14 +4,14 @@ import typings.tensorflowTfjsConverter.executionContextMod.ExecutionContext
 import typings.tensorflowTfjsConverter.operationsTypesMod.GraphNode
 import typings.tensorflowTfjsConverter.operationsTypesMod.Node
 import typings.tensorflowTfjsConverter.typesMod.NamedTensorsMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-converter/dist/operations/custom_op/node_value_impl", JSImport.Namespace)
-@js.native
-object nodeValueImplMod extends js.Object {
+object nodeValueImplMod {
   
+  @JSImport("@tensorflow/tfjs-converter/dist/operations/custom_op/node_value_impl", "NodeValueImpl")
   @js.native
   class NodeValueImpl protected () extends GraphNode {
     def this(node: Node, tensorMap: NamedTensorsMap, context: ExecutionContext) = this()

@@ -1,5 +1,6 @@
 package typings.xmlbuilder.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines the functions used for converting values to strings.
   */
 @js.native
-trait XMLStringifier extends js.Object {
+trait XMLStringifier extends StObject {
   
   /**
     * Escapes special characters in attribute values.
@@ -158,174 +159,162 @@ object XMLStringifier {
   }
   
   @scala.inline
-  implicit class XMLStringifierOps[Self <: XMLStringifier] (val x: Self) extends AnyVal {
+  implicit class XMLStringifierMutableBuilder[Self <: XMLStringifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttEscape(value: /* v */ String => String): Self = StObject.set(x, "attEscape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttEscapeUndefined: Self = StObject.set(x, "attEscape", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttValue(value: /* v */ js.Any => String): Self = StObject.set(x, "attValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAttEscape(value: /* v */ String => String): Self = this.set("attEscape", js.Any.fromFunction1(value))
+    def setAttValueUndefined: Self = StObject.set(x, "attValue", js.undefined)
     
     @scala.inline
-    def deleteAttEscape: Self = this.set("attEscape", js.undefined)
+    def setCdata(value: /* v */ js.Any => String): Self = StObject.set(x, "cdata", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAttValue(value: /* v */ js.Any => String): Self = this.set("attValue", js.Any.fromFunction1(value))
+    def setCdataUndefined: Self = StObject.set(x, "cdata", js.undefined)
     
     @scala.inline
-    def deleteAttValue: Self = this.set("attValue", js.undefined)
+    def setComment(value: /* v */ js.Any => String): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCdata(value: /* v */ js.Any => String): Self = this.set("cdata", js.Any.fromFunction1(value))
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteCdata: Self = this.set("cdata", js.undefined)
+    def setConvertAttKey(value: String): Self = StObject.set(x, "convertAttKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: /* v */ js.Any => String): Self = this.set("comment", js.Any.fromFunction1(value))
+    def setConvertAttKeyUndefined: Self = StObject.set(x, "convertAttKey", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setConvertCDataKey(value: String): Self = StObject.set(x, "convertCDataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertAttKey(value: String): Self = this.set("convertAttKey", value.asInstanceOf[js.Any])
+    def setConvertCDataKeyUndefined: Self = StObject.set(x, "convertCDataKey", js.undefined)
     
     @scala.inline
-    def deleteConvertAttKey: Self = this.set("convertAttKey", js.undefined)
+    def setConvertCommentKey(value: String): Self = StObject.set(x, "convertCommentKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertCDataKey(value: String): Self = this.set("convertCDataKey", value.asInstanceOf[js.Any])
+    def setConvertCommentKeyUndefined: Self = StObject.set(x, "convertCommentKey", js.undefined)
     
     @scala.inline
-    def deleteConvertCDataKey: Self = this.set("convertCDataKey", js.undefined)
+    def setConvertPIKey(value: String): Self = StObject.set(x, "convertPIKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertCommentKey(value: String): Self = this.set("convertCommentKey", value.asInstanceOf[js.Any])
+    def setConvertPIKeyUndefined: Self = StObject.set(x, "convertPIKey", js.undefined)
     
     @scala.inline
-    def deleteConvertCommentKey: Self = this.set("convertCommentKey", js.undefined)
+    def setConvertRawKey(value: String): Self = StObject.set(x, "convertRawKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertPIKey(value: String): Self = this.set("convertPIKey", value.asInstanceOf[js.Any])
+    def setConvertRawKeyUndefined: Self = StObject.set(x, "convertRawKey", js.undefined)
     
     @scala.inline
-    def deleteConvertPIKey: Self = this.set("convertPIKey", js.undefined)
+    def setConvertTextKey(value: String): Self = StObject.set(x, "convertTextKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertRawKey(value: String): Self = this.set("convertRawKey", value.asInstanceOf[js.Any])
+    def setConvertTextKeyUndefined: Self = StObject.set(x, "convertTextKey", js.undefined)
     
     @scala.inline
-    def deleteConvertRawKey: Self = this.set("convertRawKey", js.undefined)
+    def setDtdAttDefault(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdAttDefault", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConvertTextKey(value: String): Self = this.set("convertTextKey", value.asInstanceOf[js.Any])
+    def setDtdAttDefaultUndefined: Self = StObject.set(x, "dtdAttDefault", js.undefined)
     
     @scala.inline
-    def deleteConvertTextKey: Self = this.set("convertTextKey", js.undefined)
+    def setDtdAttType(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdAttType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDtdAttDefault(value: /* v */ js.Any => String): Self = this.set("dtdAttDefault", js.Any.fromFunction1(value))
+    def setDtdAttTypeUndefined: Self = StObject.set(x, "dtdAttType", js.undefined)
     
     @scala.inline
-    def deleteDtdAttDefault: Self = this.set("dtdAttDefault", js.undefined)
+    def setDtdElementValue(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdElementValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDtdAttType(value: /* v */ js.Any => String): Self = this.set("dtdAttType", js.Any.fromFunction1(value))
+    def setDtdElementValueUndefined: Self = StObject.set(x, "dtdElementValue", js.undefined)
     
     @scala.inline
-    def deleteDtdAttType: Self = this.set("dtdAttType", js.undefined)
+    def setDtdEntityValue(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdEntityValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDtdElementValue(value: /* v */ js.Any => String): Self = this.set("dtdElementValue", js.Any.fromFunction1(value))
+    def setDtdEntityValueUndefined: Self = StObject.set(x, "dtdEntityValue", js.undefined)
     
     @scala.inline
-    def deleteDtdElementValue: Self = this.set("dtdElementValue", js.undefined)
+    def setDtdNData(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdNData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDtdEntityValue(value: /* v */ js.Any => String): Self = this.set("dtdEntityValue", js.Any.fromFunction1(value))
+    def setDtdNDataUndefined: Self = StObject.set(x, "dtdNData", js.undefined)
     
     @scala.inline
-    def deleteDtdEntityValue: Self = this.set("dtdEntityValue", js.undefined)
+    def setDtdPubID(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdPubID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDtdNData(value: /* v */ js.Any => String): Self = this.set("dtdNData", js.Any.fromFunction1(value))
+    def setDtdPubIDUndefined: Self = StObject.set(x, "dtdPubID", js.undefined)
     
     @scala.inline
-    def deleteDtdNData: Self = this.set("dtdNData", js.undefined)
+    def setDtdSysID(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdSysID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDtdPubID(value: /* v */ js.Any => String): Self = this.set("dtdPubID", js.Any.fromFunction1(value))
+    def setDtdSysIDUndefined: Self = StObject.set(x, "dtdSysID", js.undefined)
     
     @scala.inline
-    def deleteDtdPubID: Self = this.set("dtdPubID", js.undefined)
+    def setInsTarget(value: /* v */ js.Any => String): Self = StObject.set(x, "insTarget", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDtdSysID(value: /* v */ js.Any => String): Self = this.set("dtdSysID", js.Any.fromFunction1(value))
+    def setInsTargetUndefined: Self = StObject.set(x, "insTarget", js.undefined)
     
     @scala.inline
-    def deleteDtdSysID: Self = this.set("dtdSysID", js.undefined)
+    def setInsValue(value: /* v */ js.Any => String): Self = StObject.set(x, "insValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsTarget(value: /* v */ js.Any => String): Self = this.set("insTarget", js.Any.fromFunction1(value))
+    def setInsValueUndefined: Self = StObject.set(x, "insValue", js.undefined)
     
     @scala.inline
-    def deleteInsTarget: Self = this.set("insTarget", js.undefined)
+    def setName(value: /* v */ js.Any => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsValue(value: /* v */ js.Any => String): Self = this.set("insValue", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInsValue: Self = this.set("insValue", js.undefined)
+    def setRaw(value: /* v */ js.Any => String): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: /* v */ js.Any => String): Self = this.set("name", js.Any.fromFunction1(value))
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setText(value: /* v */ js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRaw(value: /* v */ js.Any => String): Self = this.set("raw", js.Any.fromFunction1(value))
+    def setTextEscape(value: /* v */ String => String): Self = StObject.set(x, "textEscape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setTextEscapeUndefined: Self = StObject.set(x, "textEscape", js.undefined)
     
     @scala.inline
-    def setText(value: /* v */ js.Any => String): Self = this.set("text", js.Any.fromFunction1(value))
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setXmlEncoding(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlEncoding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextEscape(value: /* v */ String => String): Self = this.set("textEscape", js.Any.fromFunction1(value))
+    def setXmlEncodingUndefined: Self = StObject.set(x, "xmlEncoding", js.undefined)
     
     @scala.inline
-    def deleteTextEscape: Self = this.set("textEscape", js.undefined)
+    def setXmlStandalone(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlStandalone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setXmlEncoding(value: /* v */ js.Any => String): Self = this.set("xmlEncoding", js.Any.fromFunction1(value))
+    def setXmlStandaloneUndefined: Self = StObject.set(x, "xmlStandalone", js.undefined)
     
     @scala.inline
-    def deleteXmlEncoding: Self = this.set("xmlEncoding", js.undefined)
+    def setXmlVersion(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlVersion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setXmlStandalone(value: /* v */ js.Any => String): Self = this.set("xmlStandalone", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteXmlStandalone: Self = this.set("xmlStandalone", js.undefined)
-    
-    @scala.inline
-    def setXmlVersion(value: /* v */ js.Any => String): Self = this.set("xmlVersion", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteXmlVersion: Self = this.set("xmlVersion", js.undefined)
+    def setXmlVersionUndefined: Self = StObject.set(x, "xmlVersion", js.undefined)
   }
 }

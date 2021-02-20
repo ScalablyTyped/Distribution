@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailoverCondition extends js.Object {
+trait FailoverCondition extends StObject {
   
   /**
     * Failover condition type-specific settings.
@@ -21,24 +22,12 @@ object FailoverCondition {
   }
   
   @scala.inline
-  implicit class FailoverConditionOps[Self <: FailoverCondition] (val x: Self) extends AnyVal {
+  implicit class FailoverConditionMutableBuilder[Self <: FailoverCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailoverConditionSettings(value: FailoverConditionSettings): Self = StObject.set(x, "FailoverConditionSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailoverConditionSettings(value: FailoverConditionSettings): Self = this.set("FailoverConditionSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailoverConditionSettings: Self = this.set("FailoverConditionSettings", js.undefined)
+    def setFailoverConditionSettingsUndefined: Self = StObject.set(x, "FailoverConditionSettings", js.undefined)
   }
 }

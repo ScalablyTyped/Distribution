@@ -4,14 +4,14 @@ import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnect
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.reflectionBlockMod.ReflectionBlock
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/PBR/sheenBlock", JSImport.Namespace)
-@js.native
-object sheenBlockMod extends js.Object {
+object sheenBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/sheenBlock", "SheenBlock")
   @js.native
   class SheenBlock protected () extends NodeMaterialBlock {
     /**

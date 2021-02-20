@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeletextDestinationSettings extends js.Object {
+trait TeletextDestinationSettings extends StObject {
   
   /**
     * Set pageNumber to the Teletext page number for the destination captions for this output. This value must be a three-digit hexadecimal string; strings ending in -FF are invalid. If you are passing through the entire set of Teletext data, do not use this field.
@@ -26,33 +27,21 @@ object TeletextDestinationSettings {
   }
   
   @scala.inline
-  implicit class TeletextDestinationSettingsOps[Self <: TeletextDestinationSettings] (val x: Self) extends AnyVal {
+  implicit class TeletextDestinationSettingsMutableBuilder[Self <: TeletextDestinationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageNumber(value: stringMin3Max3Pattern1809aFAF09aEAE): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageNumberUndefined: Self = StObject.set(x, "PageNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageTypes(value: listOfTeletextPageType): Self = StObject.set(x, "PageTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumber(value: stringMin3Max3Pattern1809aFAF09aEAE): Self = this.set("PageNumber", value.asInstanceOf[js.Any])
+    def setPageTypesUndefined: Self = StObject.set(x, "PageTypes", js.undefined)
     
     @scala.inline
-    def deletePageNumber: Self = this.set("PageNumber", js.undefined)
-    
-    @scala.inline
-    def setPageTypesVarargs(value: TeletextPageType*): Self = this.set("PageTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setPageTypes(value: listOfTeletextPageType): Self = this.set("PageTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageTypes: Self = this.set("PageTypes", js.undefined)
+    def setPageTypesVarargs(value: TeletextPageType*): Self = StObject.set(x, "PageTypes", js.Array(value :_*))
   }
 }

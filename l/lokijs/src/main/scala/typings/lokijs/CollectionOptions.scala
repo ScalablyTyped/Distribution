@@ -5,12 +5,13 @@ import typings.lokijs.lokijsStrings.`parse-stringify`
 import typings.lokijs.lokijsStrings.`shallow-assign`
 import typings.lokijs.lokijsStrings.`shallow-recurse-objects`
 import typings.lokijs.lokijsStrings.shallow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionOptions[E] extends js.Object {
+trait CollectionOptions[E] extends StObject {
   
   var adaptiveBinaryIndices: Boolean = js.native
   
@@ -50,8 +51,8 @@ object CollectionOptions {
     adaptiveBinaryIndices: Boolean,
     asyncListeners: Boolean,
     autoupdate: Boolean,
-    clone: Boolean,
     cloneMethod: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects`,
+    clone_ : Boolean,
     disableChangesApi: Boolean,
     disableDeltaChangesApi: Boolean,
     disableMeta: Boolean,
@@ -63,79 +64,68 @@ object CollectionOptions {
     ttlInterval: Double,
     unique: js.Array[/* keyof E */ String]
   ): CollectionOptions[E] = {
-    val __obj = js.Dynamic.literal(adaptiveBinaryIndices = adaptiveBinaryIndices.asInstanceOf[js.Any], asyncListeners = asyncListeners.asInstanceOf[js.Any], autoupdate = autoupdate.asInstanceOf[js.Any], clone = clone.asInstanceOf[js.Any], cloneMethod = cloneMethod.asInstanceOf[js.Any], disableChangesApi = disableChangesApi.asInstanceOf[js.Any], disableDeltaChangesApi = disableDeltaChangesApi.asInstanceOf[js.Any], disableMeta = disableMeta.asInstanceOf[js.Any], exact = exact.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], serializableIndices = serializableIndices.asInstanceOf[js.Any], transactional = transactional.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any], ttlInterval = ttlInterval.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adaptiveBinaryIndices = adaptiveBinaryIndices.asInstanceOf[js.Any], asyncListeners = asyncListeners.asInstanceOf[js.Any], autoupdate = autoupdate.asInstanceOf[js.Any], cloneMethod = cloneMethod.asInstanceOf[js.Any], disableChangesApi = disableChangesApi.asInstanceOf[js.Any], disableDeltaChangesApi = disableDeltaChangesApi.asInstanceOf[js.Any], disableMeta = disableMeta.asInstanceOf[js.Any], exact = exact.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], serializableIndices = serializableIndices.asInstanceOf[js.Any], transactional = transactional.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any], ttlInterval = ttlInterval.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
+    __obj.updateDynamic("clone")(clone_.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionOptions[E]]
   }
   
   @scala.inline
-  implicit class CollectionOptionsOps[Self <: CollectionOptions[_], E] (val x: Self with CollectionOptions[E]) extends AnyVal {
+  implicit class CollectionOptionsMutableBuilder[Self <: CollectionOptions[_], E] (val x: Self with CollectionOptions[E]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdaptiveBinaryIndices(value: Boolean): Self = StObject.set(x, "adaptiveBinaryIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncListeners(value: Boolean): Self = StObject.set(x, "asyncListeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAdaptiveBinaryIndices(value: Boolean): Self = this.set("adaptiveBinaryIndices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAsyncListeners(value: Boolean): Self = this.set("asyncListeners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAutoupdate(value: Boolean): Self = this.set("autoupdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClone(value: Boolean): Self = this.set("clone", value.asInstanceOf[js.Any])
+    def setAutoupdate(value: Boolean): Self = StObject.set(x, "autoupdate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCloneMethod(
       value: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects`
-    ): Self = this.set("cloneMethod", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "cloneMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableChangesApi(value: Boolean): Self = this.set("disableChangesApi", value.asInstanceOf[js.Any])
+    def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDeltaChangesApi(value: Boolean): Self = this.set("disableDeltaChangesApi", value.asInstanceOf[js.Any])
+    def setDisableChangesApi(value: Boolean): Self = StObject.set(x, "disableChangesApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableMeta(value: Boolean): Self = this.set("disableMeta", value.asInstanceOf[js.Any])
+    def setDisableDeltaChangesApi(value: Boolean): Self = StObject.set(x, "disableDeltaChangesApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExactVarargs(value: (/* keyof E */ String)*): Self = this.set("exact", js.Array(value :_*))
+    def setDisableMeta(value: Boolean): Self = StObject.set(x, "disableMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExact(value: js.Array[/* keyof E */ String]): Self = this.set("exact", value.asInstanceOf[js.Any])
+    def setExact(value: js.Array[/* keyof E */ String]): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicesVarargs(value: (/* keyof E */ String)*): Self = this.set("indices", js.Array(value :_*))
+    def setExactVarargs(value: (/* keyof E */ String)*): Self = StObject.set(x, "exact", js.Array(value :_*))
     
     @scala.inline
-    def setIndices(value: (/* keyof E */ String) | (js.Array[/* keyof E */ String])): Self = this.set("indices", value.asInstanceOf[js.Any])
+    def setIndices(value: (/* keyof E */ String) | (js.Array[/* keyof E */ String])): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerializableIndices(value: Boolean): Self = this.set("serializableIndices", value.asInstanceOf[js.Any])
+    def setIndicesVarargs(value: (/* keyof E */ String)*): Self = StObject.set(x, "indices", js.Array(value :_*))
     
     @scala.inline
-    def setTransactional(value: Boolean): Self = this.set("transactional", value.asInstanceOf[js.Any])
+    def setSerializableIndices(value: Boolean): Self = StObject.set(x, "serializableIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTtl(value: Double): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTtlInterval(value: Double): Self = this.set("ttlInterval", value.asInstanceOf[js.Any])
+    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniqueVarargs(value: (/* keyof E */ String)*): Self = this.set("unique", js.Array(value :_*))
+    def setTtlInterval(value: Double): Self = StObject.set(x, "ttlInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnique(value: js.Array[/* keyof E */ String]): Self = this.set("unique", value.asInstanceOf[js.Any])
+    def setUnique(value: js.Array[/* keyof E */ String]): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUniqueVarargs(value: (/* keyof E */ String)*): Self = StObject.set(x, "unique", js.Array(value :_*))
   }
 }

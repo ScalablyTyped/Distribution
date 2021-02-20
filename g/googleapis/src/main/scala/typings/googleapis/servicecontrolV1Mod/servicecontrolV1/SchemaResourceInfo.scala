@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes a resource associated with this operation.
   */
 @js.native
-trait SchemaResourceInfo extends js.Object {
+trait SchemaResourceInfo extends StObject {
   
   /**
     * The identifier of the parent of this resource instance. Must be in one of
@@ -40,36 +41,24 @@ object SchemaResourceInfo {
   }
   
   @scala.inline
-  implicit class SchemaResourceInfoOps[Self <: SchemaResourceInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaResourceInfoMutableBuilder[Self <: SchemaResourceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceContainer(value: String): Self = StObject.set(x, "resourceContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceContainerUndefined: Self = StObject.set(x, "resourceContainer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceLocation(value: String): Self = StObject.set(x, "resourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceContainer(value: String): Self = this.set("resourceContainer", value.asInstanceOf[js.Any])
+    def setResourceLocationUndefined: Self = StObject.set(x, "resourceLocation", js.undefined)
     
     @scala.inline
-    def deleteResourceContainer: Self = this.set("resourceContainer", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceLocation(value: String): Self = this.set("resourceLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceLocation: Self = this.set("resourceLocation", js.undefined)
-    
-    @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

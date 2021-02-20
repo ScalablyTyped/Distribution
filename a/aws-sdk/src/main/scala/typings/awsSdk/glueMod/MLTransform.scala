@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MLTransform extends js.Object {
+trait MLTransform extends StObject {
   
   /**
     * A timestamp. The time and date that this machine learning transform was created.
@@ -111,138 +112,126 @@ object MLTransform {
   }
   
   @scala.inline
-  implicit class MLTransformOps[Self <: MLTransform] (val x: Self) extends AnyVal {
+  implicit class MLTransformMutableBuilder[Self <: MLTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedOn(value: Timestamp): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedOnUndefined: Self = StObject.set(x, "CreatedOn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedOn(value: Timestamp): Self = this.set("CreatedOn", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreatedOn: Self = this.set("CreatedOn", js.undefined)
+    def setEvaluationMetrics(value: EvaluationMetrics): Self = StObject.set(x, "EvaluationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEvaluationMetricsUndefined: Self = StObject.set(x, "EvaluationMetrics", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setGlueVersion(value: GlueVersionString): Self = StObject.set(x, "GlueVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationMetrics(value: EvaluationMetrics): Self = this.set("EvaluationMetrics", value.asInstanceOf[js.Any])
+    def setGlueVersionUndefined: Self = StObject.set(x, "GlueVersion", js.undefined)
     
     @scala.inline
-    def deleteEvaluationMetrics: Self = this.set("EvaluationMetrics", js.undefined)
+    def setInputRecordTables(value: GlueTables): Self = StObject.set(x, "InputRecordTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlueVersion(value: GlueVersionString): Self = this.set("GlueVersion", value.asInstanceOf[js.Any])
+    def setInputRecordTablesUndefined: Self = StObject.set(x, "InputRecordTables", js.undefined)
     
     @scala.inline
-    def deleteGlueVersion: Self = this.set("GlueVersion", js.undefined)
+    def setInputRecordTablesVarargs(value: GlueTable*): Self = StObject.set(x, "InputRecordTables", js.Array(value :_*))
     
     @scala.inline
-    def setInputRecordTablesVarargs(value: GlueTable*): Self = this.set("InputRecordTables", js.Array(value :_*))
+    def setLabelCount(value: LabelCount): Self = StObject.set(x, "LabelCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputRecordTables(value: GlueTables): Self = this.set("InputRecordTables", value.asInstanceOf[js.Any])
+    def setLabelCountUndefined: Self = StObject.set(x, "LabelCount", js.undefined)
     
     @scala.inline
-    def deleteInputRecordTables: Self = this.set("InputRecordTables", js.undefined)
+    def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCount(value: LabelCount): Self = this.set("LabelCount", value.asInstanceOf[js.Any])
+    def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
     
     @scala.inline
-    def deleteLabelCount: Self = this.set("LabelCount", js.undefined)
+    def setMaxCapacity(value: NullableDouble): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedOn(value: Timestamp): Self = this.set("LastModifiedOn", value.asInstanceOf[js.Any])
+    def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedOn: Self = this.set("LastModifiedOn", js.undefined)
+    def setMaxRetries(value: NullableInteger): Self = StObject.set(x, "MaxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCapacity(value: NullableDouble): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    def setMaxRetriesUndefined: Self = StObject.set(x, "MaxRetries", js.undefined)
     
     @scala.inline
-    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetries(value: NullableInteger): Self = this.set("MaxRetries", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMaxRetries: Self = this.set("MaxRetries", js.undefined)
+    def setNumberOfWorkers(value: NullableInteger): Self = StObject.set(x, "NumberOfWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNumberOfWorkersUndefined: Self = StObject.set(x, "NumberOfWorkers", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setParameters(value: TransformParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfWorkers(value: NullableInteger): Self = this.set("NumberOfWorkers", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def deleteNumberOfWorkers: Self = this.set("NumberOfWorkers", js.undefined)
+    def setRole(value: RoleString): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: TransformParameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setSchema(value: TransformSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: RoleString): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setSchemaVarargs(value: SchemaColumn*): Self = StObject.set(x, "Schema", js.Array(value :_*))
     
     @scala.inline
-    def setSchemaVarargs(value: SchemaColumn*): Self = this.set("Schema", js.Array(value :_*))
+    def setStatus(value: TransformStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: TransformSchema): Self = this.set("Schema", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("Schema", js.undefined)
+    def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: TransformStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTransformEncryption(value: TransformEncryption): Self = StObject.set(x, "TransformEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    def setTransformEncryptionUndefined: Self = StObject.set(x, "TransformEncryption", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformEncryption(value: TransformEncryption): Self = this.set("TransformEncryption", value.asInstanceOf[js.Any])
+    def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
     
     @scala.inline
-    def deleteTransformEncryption: Self = this.set("TransformEncryption", js.undefined)
+    def setWorkerType(value: WorkerType): Self = StObject.set(x, "WorkerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformId(value: HashString): Self = this.set("TransformId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformId: Self = this.set("TransformId", js.undefined)
-    
-    @scala.inline
-    def setWorkerType(value: WorkerType): Self = this.set("WorkerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerType: Self = this.set("WorkerType", js.undefined)
+    def setWorkerTypeUndefined: Self = StObject.set(x, "WorkerType", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Global classes and objects related to sonification.
   */
 @js.native
-trait SonificationObject extends js.Object {
+trait SonificationObject extends StObject {
   
   /**
     * The Earcon class.
@@ -42,30 +43,18 @@ object SonificationObject {
   }
   
   @scala.inline
-  implicit class SonificationObjectOps[Self <: SonificationObject] (val x: Self) extends AnyVal {
+  implicit class SonificationObjectMutableBuilder[Self <: SonificationObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEarcon(value: js.Function): Self = StObject.set(x, "Earcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFadeOutDuration(value: Double): Self = StObject.set(x, "fadeOutDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstrument(value: js.Function): Self = StObject.set(x, "Instrument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEarcon(value: js.Function): Self = this.set("Earcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstrument(value: js.Function): Self = this.set("Instrument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFadeOutDuration(value: Double): Self = this.set("fadeOutDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstruments(value: js.Object): Self = this.set("instruments", value.asInstanceOf[js.Any])
+    def setInstruments(value: js.Object): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.doctrine.mod.`type`
 
 import typings.doctrine.mod.Type_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,39 +37,27 @@ object FunctionType {
   }
   
   @scala.inline
-  implicit class FunctionTypeOps[Self <: FunctionType] (val x: Self) extends AnyVal {
+  implicit class FunctionTypeMutableBuilder[Self <: FunctionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNew(value: Type_): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParams(value: js.Array[Type_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParamsVarargs(value: Type_ *): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def setNew(value: Type_): Self = this.set("new", value.asInstanceOf[js.Any])
+    def setResult(value: js.Array[Type_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: Type_ *): Self = this.set("params", js.Array(value :_*))
+    def setResultVarargs(value: Type_ *): Self = StObject.set(x, "result", js.Array(value :_*))
     
     @scala.inline
-    def setParams(value: js.Array[Type_]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setThis(value: Type_): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultVarargs(value: Type_ *): Self = this.set("result", js.Array(value :_*))
-    
-    @scala.inline
-    def setResult(value: js.Array[Type_]): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThis(value: Type_): Self = this.set("this", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.FunctionType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.doctrine.doctrineStrings.FunctionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

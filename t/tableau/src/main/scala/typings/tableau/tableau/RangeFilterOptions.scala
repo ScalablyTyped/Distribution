@@ -1,12 +1,13 @@
 package typings.tableau.tableau
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangeFilterOptions extends js.Object {
+trait RangeFilterOptions extends StObject {
   
   /** Maximum value for the range (inclusive). Optional. Leave blank if you want a >= filter. */
   var max: Double | Date = js.native
@@ -26,27 +27,15 @@ object RangeFilterOptions {
   }
   
   @scala.inline
-  implicit class RangeFilterOptionsOps[Self <: RangeFilterOptions] (val x: Self) extends AnyVal {
+  implicit class RangeFilterOptionsMutableBuilder[Self <: RangeFilterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: Double | Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMin(value: Double | Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMax(value: Double | Date): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMin(value: Double | Date): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNullOption(value: NullOption): Self = this.set("nullOption", value.asInstanceOf[js.Any])
+    def setNullOption(value: NullOption): Self = StObject.set(x, "nullOption", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.pickadate.Pickadate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TimeKlassOptions extends KlassOptions {
   
-   // default 'picker picker--time'
+  // default 'picker picker--time'
   // List of times
   var list: js.UndefOr[String] = js.native
   
-   // default 'picker__list'
+  // default 'picker__list'
   var listItem: js.UndefOr[String] = js.native
   
-   // default 'picker__list-item'
+  // default 'picker__list-item'
   // Time states
   var viewset: js.UndefOr[String] = js.native
 }
@@ -27,36 +28,24 @@ object TimeKlassOptions {
   }
   
   @scala.inline
-  implicit class TimeKlassOptionsOps[Self <: TimeKlassOptions] (val x: Self) extends AnyVal {
+  implicit class TimeKlassOptionsMutableBuilder[Self <: TimeKlassOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListItem(value: String): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
     
     @scala.inline
-    def setList(value: String): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
     @scala.inline
-    def deleteList: Self = this.set("list", js.undefined)
+    def setViewset(value: String): Self = StObject.set(x, "viewset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListItem(value: String): Self = this.set("listItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListItem: Self = this.set("listItem", js.undefined)
-    
-    @scala.inline
-    def setViewset(value: String): Self = this.set("viewset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewset: Self = this.set("viewset", js.undefined)
+    def setViewsetUndefined: Self = StObject.set(x, "viewset", js.undefined)
   }
 }

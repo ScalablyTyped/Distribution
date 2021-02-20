@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestResultsGroupsForRelease extends js.Object {
+trait TestResultsGroupsForRelease extends StObject {
   
   /**
     * The group by results
@@ -31,30 +32,18 @@ object TestResultsGroupsForRelease {
   }
   
   @scala.inline
-  implicit class TestResultsGroupsForReleaseOps[Self <: TestResultsGroupsForRelease] (val x: Self) extends AnyVal {
+  implicit class TestResultsGroupsForReleaseMutableBuilder[Self <: TestResultsGroupsForRelease] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: js.Array[FieldDetailsForTestResults]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsVarargs(value: FieldDetailsForTestResults*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReleaseEnvId(value: Double): Self = StObject.set(x, "releaseEnvId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: FieldDetailsForTestResults*): Self = this.set("fields", js.Array(value :_*))
-    
-    @scala.inline
-    def setFields(value: js.Array[FieldDetailsForTestResults]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReleaseEnvId(value: Double): Self = this.set("releaseEnvId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReleaseId(value: Double): Self = this.set("releaseId", value.asInstanceOf[js.Any])
+    def setReleaseId(value: Double): Self = StObject.set(x, "releaseId", value.asInstanceOf[js.Any])
   }
 }

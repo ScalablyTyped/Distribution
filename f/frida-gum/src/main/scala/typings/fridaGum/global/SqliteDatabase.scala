@@ -1,6 +1,7 @@
 package typings.fridaGum.global
 
 import typings.fridaGum.SqliteOpenOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class SqliteDatabase ()
   extends typings.fridaGum.SqliteDatabase
-/* static members */
-@JSGlobal("SqliteDatabase")
-@js.native
-object SqliteDatabase extends js.Object {
+object SqliteDatabase {
   
   /**
     * Opens the SQLite v3 database at `path` on the filesystem. The database
@@ -27,7 +25,12 @@ object SqliteDatabase extends js.Object {
     * @param path Filesystem path to database.
     * @param options Options to customize how the database should be opened.
     */
+  /* static member */
+  @JSGlobal("SqliteDatabase.open")
+  @js.native
   def open(path: String): typings.fridaGum.SqliteDatabase = js.native
+  @JSGlobal("SqliteDatabase.open")
+  @js.native
   def open(path: String, options: SqliteOpenOptions): typings.fridaGum.SqliteDatabase = js.native
   
   /**
@@ -43,5 +46,8 @@ object SqliteDatabase extends js.Object {
     *
     * @param encodedContents Base64-encoded database contents.
     */
+  /* static member */
+  @JSGlobal("SqliteDatabase.openInline")
+  @js.native
   def openInline(encodedContents: String): typings.fridaGum.SqliteDatabase = js.native
 }

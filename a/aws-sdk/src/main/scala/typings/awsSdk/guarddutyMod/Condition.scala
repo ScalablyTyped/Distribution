@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Condition extends js.Object {
+trait Condition extends StObject {
   
   /**
     * Represents the equal condition to be applied to a single field when querying for findings.
@@ -76,102 +77,90 @@ object Condition {
   }
   
   @scala.inline
-  implicit class ConditionOps[Self <: Condition] (val x: Self) extends AnyVal {
+  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEq(value: Eq): Self = StObject.set(x, "Eq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEqUndefined: Self = StObject.set(x, "Eq", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEqVarargs(value: String*): Self = StObject.set(x, "Eq", js.Array(value :_*))
     
     @scala.inline
-    def setEqVarargs(value: String*): Self = this.set("Eq", js.Array(value :_*))
+    def setEquals(value: Equals): Self = StObject.set(x, "Equals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEq(value: Eq): Self = this.set("Eq", value.asInstanceOf[js.Any])
+    def setEqualsUndefined: Self = StObject.set(x, "Equals", js.undefined)
     
     @scala.inline
-    def deleteEq: Self = this.set("Eq", js.undefined)
+    def setEqualsVarargs(value: String*): Self = StObject.set(x, "Equals", js.Array(value :_*))
     
     @scala.inline
-    def setEqualsVarargs(value: String*): Self = this.set("Equals", js.Array(value :_*))
+    def setGreaterThan(value: Long): Self = StObject.set(x, "GreaterThan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: Equals): Self = this.set("Equals", value.asInstanceOf[js.Any])
+    def setGreaterThanOrEqual(value: Long): Self = StObject.set(x, "GreaterThanOrEqual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEquals: Self = this.set("Equals", js.undefined)
+    def setGreaterThanOrEqualUndefined: Self = StObject.set(x, "GreaterThanOrEqual", js.undefined)
     
     @scala.inline
-    def setGreaterThan(value: Long): Self = this.set("GreaterThan", value.asInstanceOf[js.Any])
+    def setGreaterThanUndefined: Self = StObject.set(x, "GreaterThan", js.undefined)
     
     @scala.inline
-    def deleteGreaterThan: Self = this.set("GreaterThan", js.undefined)
+    def setGt(value: Integer): Self = StObject.set(x, "Gt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreaterThanOrEqual(value: Long): Self = this.set("GreaterThanOrEqual", value.asInstanceOf[js.Any])
+    def setGtUndefined: Self = StObject.set(x, "Gt", js.undefined)
     
     @scala.inline
-    def deleteGreaterThanOrEqual: Self = this.set("GreaterThanOrEqual", js.undefined)
+    def setGte(value: Integer): Self = StObject.set(x, "Gte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGt(value: Integer): Self = this.set("Gt", value.asInstanceOf[js.Any])
+    def setGteUndefined: Self = StObject.set(x, "Gte", js.undefined)
     
     @scala.inline
-    def deleteGt: Self = this.set("Gt", js.undefined)
+    def setLessThan(value: Long): Self = StObject.set(x, "LessThan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGte(value: Integer): Self = this.set("Gte", value.asInstanceOf[js.Any])
+    def setLessThanOrEqual(value: Long): Self = StObject.set(x, "LessThanOrEqual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGte: Self = this.set("Gte", js.undefined)
+    def setLessThanOrEqualUndefined: Self = StObject.set(x, "LessThanOrEqual", js.undefined)
     
     @scala.inline
-    def setLessThan(value: Long): Self = this.set("LessThan", value.asInstanceOf[js.Any])
+    def setLessThanUndefined: Self = StObject.set(x, "LessThan", js.undefined)
     
     @scala.inline
-    def deleteLessThan: Self = this.set("LessThan", js.undefined)
+    def setLt(value: Integer): Self = StObject.set(x, "Lt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLessThanOrEqual(value: Long): Self = this.set("LessThanOrEqual", value.asInstanceOf[js.Any])
+    def setLtUndefined: Self = StObject.set(x, "Lt", js.undefined)
     
     @scala.inline
-    def deleteLessThanOrEqual: Self = this.set("LessThanOrEqual", js.undefined)
+    def setLte(value: Integer): Self = StObject.set(x, "Lte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLt(value: Integer): Self = this.set("Lt", value.asInstanceOf[js.Any])
+    def setLteUndefined: Self = StObject.set(x, "Lte", js.undefined)
     
     @scala.inline
-    def deleteLt: Self = this.set("Lt", js.undefined)
+    def setNeq(value: Neq): Self = StObject.set(x, "Neq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLte(value: Integer): Self = this.set("Lte", value.asInstanceOf[js.Any])
+    def setNeqUndefined: Self = StObject.set(x, "Neq", js.undefined)
     
     @scala.inline
-    def deleteLte: Self = this.set("Lte", js.undefined)
+    def setNeqVarargs(value: String*): Self = StObject.set(x, "Neq", js.Array(value :_*))
     
     @scala.inline
-    def setNeqVarargs(value: String*): Self = this.set("Neq", js.Array(value :_*))
+    def setNotEquals(value: NotEquals): Self = StObject.set(x, "NotEquals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeq(value: Neq): Self = this.set("Neq", value.asInstanceOf[js.Any])
+    def setNotEqualsUndefined: Self = StObject.set(x, "NotEquals", js.undefined)
     
     @scala.inline
-    def deleteNeq: Self = this.set("Neq", js.undefined)
-    
-    @scala.inline
-    def setNotEqualsVarargs(value: String*): Self = this.set("NotEquals", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotEquals(value: NotEquals): Self = this.set("NotEquals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotEquals: Self = this.set("NotEquals", js.undefined)
+    def setNotEqualsVarargs(value: String*): Self = StObject.set(x, "NotEquals", js.Array(value :_*))
   }
 }

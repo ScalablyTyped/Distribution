@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.table.XCell
 import typings.activexLibreoffice.com_.sun.star.table.XTableColumns
 import typings.activexLibreoffice.com_.sun.star.table.XTableRows
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,45 +100,33 @@ object XTextTable {
   }
   
   @scala.inline
-  implicit class XTextTableOps[Self <: XTextTable] (val x: Self) extends AnyVal {
+  implicit class XTextTableMutableBuilder[Self <: XTextTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellNames(value: SafeArray[String]): Self = StObject.set(x, "CellNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumns(value: XTableColumns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateCursorByCellName(value: String => XTextTableCursor): Self = StObject.set(x, "createCursorByCellName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCellNames(value: SafeArray[String]): Self = this.set("CellNames", value.asInstanceOf[js.Any])
+    def setGetCellByName(value: String => XCell): Self = StObject.set(x, "getCellByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumns(value: XTableColumns): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    def setGetCellNames(value: () => SafeArray[String]): Self = StObject.set(x, "getCellNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRows(value: XTableRows): Self = this.set("Rows", value.asInstanceOf[js.Any])
+    def setGetColumns(value: () => XTableColumns): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateCursorByCellName(value: String => XTextTableCursor): Self = this.set("createCursorByCellName", js.Any.fromFunction1(value))
+    def setGetRows(value: () => XTableRows): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCellByName(value: String => XCell): Self = this.set("getCellByName", js.Any.fromFunction1(value))
+    def setInitialize(value: (Double, Double) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCellNames(value: () => SafeArray[String]): Self = this.set("getCellNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetColumns(value: () => XTableColumns): Self = this.set("getColumns", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRows(value: () => XTableRows): Self = this.set("getRows", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInitialize(value: (Double, Double) => Unit): Self = this.set("initialize", js.Any.fromFunction2(value))
+    def setRows(value: XTableRows): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
   }
 }

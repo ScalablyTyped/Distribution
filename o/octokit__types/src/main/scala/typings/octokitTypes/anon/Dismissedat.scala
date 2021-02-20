@@ -6,12 +6,13 @@ import typings.octokitTypes.octokitTypesStrings.`wonApostrophet fix`
 import typings.octokitTypes.octokitTypesStrings.dismissed
 import typings.octokitTypes.octokitTypesStrings.fixed
 import typings.octokitTypes.octokitTypesStrings.open
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dismissedat extends js.Object {
+trait Dismissedat extends StObject {
   
   /**
     * The time that the alert was created in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
@@ -72,54 +73,42 @@ object Dismissedat {
   }
   
   @scala.inline
-  implicit class DismissedatOps[Self <: Dismissedat] (val x: Self) extends AnyVal {
+  implicit class DismissedatMutableBuilder[Self <: Dismissedat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDismissed_at(value: String): Self = StObject.set(x, "dismissed_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDismissed_by(value: Dictk): Self = StObject.set(x, "dismissed_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setDismissed_byNull: Self = StObject.set(x, "dismissed_by", null)
     
     @scala.inline
-    def setDismissed_at(value: String): Self = this.set("dismissed_at", value.asInstanceOf[js.Any])
+    def setDismissed_reason(value: (`false positive`) | (`wonApostrophet fix`) | (`used in tests`)): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setDismissed_reasonNull: Self = StObject.set(x, "dismissed_reason", null)
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRule(value: Severity): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: open | dismissed | fixed): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setRule(value: Severity): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTool(value: Version): Self = this.set("tool", value.asInstanceOf[js.Any])
+    def setState(value: open | dismissed | fixed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTool(value: Version): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismissed_by(value: Dictk): Self = this.set("dismissed_by", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDismissed_byNull: Self = this.set("dismissed_by", null)
-    
-    @scala.inline
-    def setDismissed_reason(value: (`false positive`) | (`wonApostrophet fix`) | (`used in tests`)): Self = this.set("dismissed_reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDismissed_reasonNull: Self = this.set("dismissed_reason", null)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

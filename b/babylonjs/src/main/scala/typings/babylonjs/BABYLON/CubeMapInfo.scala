@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CubeMapInfo extends js.Object {
+trait CubeMapInfo extends StObject {
   
   /**
     * The pixel array for the back face.
@@ -80,66 +81,54 @@ object CubeMapInfo {
   }
   
   @scala.inline
-  implicit class CubeMapInfoOps[Self <: CubeMapInfo] (val x: Self) extends AnyVal {
+  implicit class CubeMapInfoMutableBuilder[Self <: CubeMapInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBack(value: Nullable[ArrayBufferView]): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackNull: Self = StObject.set(x, "back", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDown(value: Nullable[ArrayBufferView]): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: Double): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setDownNull: Self = StObject.set(x, "down", null)
     
     @scala.inline
-    def setGammaSpace(value: Boolean): Self = this.set("gammaSpace", value.asInstanceOf[js.Any])
+    def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setFront(value: Nullable[ArrayBufferView]): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFrontNull: Self = StObject.set(x, "front", null)
     
     @scala.inline
-    def setBack(value: Nullable[ArrayBufferView]): Self = this.set("back", value.asInstanceOf[js.Any])
+    def setGammaSpace(value: Boolean): Self = StObject.set(x, "gammaSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackNull: Self = this.set("back", null)
+    def setLeft(value: Nullable[ArrayBufferView]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDown(value: Nullable[ArrayBufferView]): Self = this.set("down", value.asInstanceOf[js.Any])
+    def setLeftNull: Self = StObject.set(x, "left", null)
     
     @scala.inline
-    def setDownNull: Self = this.set("down", null)
+    def setRight(value: Nullable[ArrayBufferView]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFront(value: Nullable[ArrayBufferView]): Self = this.set("front", value.asInstanceOf[js.Any])
+    def setRightNull: Self = StObject.set(x, "right", null)
     
     @scala.inline
-    def setFrontNull: Self = this.set("front", null)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Nullable[ArrayBufferView]): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftNull: Self = this.set("left", null)
+    def setUp(value: Nullable[ArrayBufferView]): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: Nullable[ArrayBufferView]): Self = this.set("right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightNull: Self = this.set("right", null)
-    
-    @scala.inline
-    def setUp(value: Nullable[ArrayBufferView]): Self = this.set("up", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpNull: Self = this.set("up", null)
+    def setUpNull: Self = StObject.set(x, "up", null)
   }
 }

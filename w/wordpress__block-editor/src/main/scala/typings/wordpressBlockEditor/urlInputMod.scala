@@ -1,22 +1,35 @@
 package typings.wordpressBlockEditor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
 import typings.std.Record
 import typings.wordpressBlockEditor.urlInputMod.URLInput.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/block-editor/components/url-input", JSImport.Namespace)
-@js.native
-object urlInputMod extends js.Object {
+object urlInputMod {
   
-  @js.native
-  object URLInput extends js.Object {
+  object default extends Shortcut {
+    
+    @JSImport("@wordpress/block-editor/components/url-input", JSImport.Default)
+    @js.native
+    val ^ : ComponentType[Props] = js.native
+    
+    type _To = ComponentType[Props]
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: ComponentType[Props] = ^
+  }
+  
+  object URLInput {
+    
+    // TODO: if PostType is ever typed import it and use it here
+    type PostType = Record[String, js.Any]
     
     @js.native
-    trait Props extends js.Object {
+    trait Props extends StObject {
       
       /**
         * By default, the input will gain focus when it is rendered, as typically it is displayed
@@ -68,11 +81,5 @@ object urlInputMod extends js.Object {
         */
       var value: String = js.native
     }
-    
-    // TODO: if PostType is ever typed import it and use it here
-    type PostType = Record[String, js.Any]
   }
-  
-  @js.native
-  object default extends TopLevel[ComponentType[Props]]
 }

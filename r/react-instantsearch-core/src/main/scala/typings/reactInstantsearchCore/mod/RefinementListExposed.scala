@@ -2,12 +2,13 @@ package typings.reactInstantsearchCore.mod
 
 import typings.reactInstantsearchCore.reactInstantsearchCoreStrings.and
 import typings.reactInstantsearchCore.reactInstantsearchCoreStrings.or
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefinementListExposed extends js.Object {
+trait RefinementListExposed extends StObject {
   
   /** the name of the attribute in the record */
   var attribute: String = js.native
@@ -46,66 +47,54 @@ object RefinementListExposed {
   }
   
   @scala.inline
-  implicit class RefinementListExposedOps[Self <: RefinementListExposed] (val x: Self) extends AnyVal {
+  implicit class RefinementListExposedMutableBuilder[Self <: RefinementListExposed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultRefinement(value: js.Array[String]): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
     
     @scala.inline
-    def setAttribute(value: String): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    def setDefaultRefinementVarargs(value: String*): Self = StObject.set(x, "defaultRefinement", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultRefinementVarargs(value: String*): Self = this.set("defaultRefinement", js.Array(value :_*))
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRefinement(value: js.Array[String]): Self = this.set("defaultRefinement", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteDefaultRefinement: Self = this.set("defaultRefinement", js.undefined)
+    def setOperator(value: or | and): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: or | and): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
     
     @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
+    def setShowMore(value: Boolean): Self = StObject.set(x, "showMore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchable(value: Boolean): Self = this.set("searchable", value.asInstanceOf[js.Any])
+    def setShowMoreLimit(value: Double): Self = StObject.set(x, "showMoreLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchable: Self = this.set("searchable", js.undefined)
+    def setShowMoreLimitUndefined: Self = StObject.set(x, "showMoreLimit", js.undefined)
     
     @scala.inline
-    def setShowMore(value: Boolean): Self = this.set("showMore", value.asInstanceOf[js.Any])
+    def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
     
     @scala.inline
-    def deleteShowMore: Self = this.set("showMore", js.undefined)
+    def setTransformItems(value: /* repeated */ js.Any => _): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowMoreLimit(value: Double): Self = this.set("showMoreLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowMoreLimit: Self = this.set("showMoreLimit", js.undefined)
-    
-    @scala.inline
-    def setTransformItems(value: /* repeated */ js.Any => _): Self = this.set("transformItems", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTransformItems: Self = this.set("transformItems", js.undefined)
+    def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
   }
 }

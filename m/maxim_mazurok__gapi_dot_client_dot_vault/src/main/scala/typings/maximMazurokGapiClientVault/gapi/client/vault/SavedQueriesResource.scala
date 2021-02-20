@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientVault.anon.Alt
 import typings.maximMazurokGapiClientVault.anon.Fields
 import typings.maximMazurokGapiClientVault.anon.SavedQueryId
 import typings.maximMazurokGapiClientVault.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavedQueriesResource extends js.Object {
+trait SavedQueriesResource extends StObject {
   
   def create(request: Alt, body: SavedQuery): Request[SavedQuery] = js.native
   /** Creates a saved query. */

@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemPocket extends js.Object {
+trait ItemPocket extends StObject {
   
   var generations: js.Array[Double] = js.native
   
@@ -20,27 +21,15 @@ object ItemPocket {
   }
   
   @scala.inline
-  implicit class ItemPocketOps[Self <: ItemPocket] (val x: Self) extends AnyVal {
+  implicit class ItemPocketMutableBuilder[Self <: ItemPocket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenerations(value: js.Array[Double]): Self = StObject.set(x, "generations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenerationsVarargs(value: Double*): Self = StObject.set(x, "generations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGenerationsVarargs(value: Double*): Self = this.set("generations", js.Array(value :_*))
-    
-    @scala.inline
-    def setGenerations(value: js.Array[Double]): Self = this.set("generations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPocket(value: String): Self = this.set("pocket", value.asInstanceOf[js.Any])
+    def setPocket(value: String): Self = StObject.set(x, "pocket", value.asInstanceOf[js.Any])
   }
 }

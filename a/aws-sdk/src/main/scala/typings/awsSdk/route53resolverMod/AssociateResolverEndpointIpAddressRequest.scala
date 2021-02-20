@@ -1,11 +1,12 @@
 package typings.awsSdk.route53resolverMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateResolverEndpointIpAddressRequest extends js.Object {
+trait AssociateResolverEndpointIpAddressRequest extends StObject {
   
   /**
     * Either the IPv4 address that you want to add to a Resolver endpoint or a subnet ID. If you specify a subnet ID, Resolver chooses an IP address for you from the available IPs in the specified subnet.
@@ -26,24 +27,12 @@ object AssociateResolverEndpointIpAddressRequest {
   }
   
   @scala.inline
-  implicit class AssociateResolverEndpointIpAddressRequestOps[Self <: AssociateResolverEndpointIpAddressRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateResolverEndpointIpAddressRequestMutableBuilder[Self <: AssociateResolverEndpointIpAddressRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpAddress(value: IpAddressUpdate): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIpAddress(value: IpAddressUpdate): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolverEndpointId(value: ResourceId): Self = this.set("ResolverEndpointId", value.asInstanceOf[js.Any])
+    def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
   }
 }

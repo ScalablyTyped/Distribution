@@ -1,5 +1,6 @@
 package typings.grammarkdown.nodesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.grammarkdown.nodesMod.Terminal
   - typings.grammarkdown.nodesMod.Nonterminal
 */
-trait OptionalSymbol extends js.Object
+trait OptionalSymbol extends StObject

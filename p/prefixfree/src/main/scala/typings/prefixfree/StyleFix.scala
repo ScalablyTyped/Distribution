@@ -5,12 +5,13 @@ import typings.std.Element
 import typings.std.ElementCSSInlineStyle
 import typings.std.HTMLLinkElement
 import typings.std.HTMLStyleElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StyleFix extends js.Object {
+trait StyleFix extends StObject {
   
   def camelCase(str: String): String = js.native
   
@@ -35,9 +36,7 @@ trait StyleFix extends js.Object {
   
   def styleElement(style: HTMLStyleElement): Unit = js.native
 }
-@JSGlobal("StyleFix")
-@js.native
-object StyleFix extends js.Object {
+object StyleFix {
   
   type StyleFixer = js.Function3[/* css */ String, /* raw */ Boolean, /* element */ Element, String]
 }

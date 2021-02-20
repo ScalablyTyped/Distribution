@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdCheckConfiguration extends js.Object {
+trait IdCheckConfiguration extends StObject {
   
   /**
     * A list of ID check security steps, each specifying an authorization type.
@@ -31,39 +32,27 @@ object IdCheckConfiguration {
   }
   
   @scala.inline
-  implicit class IdCheckConfigurationOps[Self <: IdCheckConfiguration] (val x: Self) extends AnyVal {
+  implicit class IdCheckConfigurationMutableBuilder[Self <: IdCheckConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthSteps(value: js.Array[IdCheckSecurityStep]): Self = StObject.set(x, "authSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthStepsUndefined: Self = StObject.set(x, "authSteps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthStepsVarargs(value: IdCheckSecurityStep*): Self = StObject.set(x, "authSteps", js.Array(value :_*))
     
     @scala.inline
-    def setAuthStepsVarargs(value: IdCheckSecurityStep*): Self = this.set("authSteps", js.Array(value :_*))
+    def setIsDefault(value: String): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthSteps(value: js.Array[IdCheckSecurityStep]): Self = this.set("authSteps", value.asInstanceOf[js.Any])
+    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
     @scala.inline
-    def deleteAuthSteps: Self = this.set("authSteps", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefault(value: String): Self = this.set("isDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,11 +22,21 @@ class QuestionPanelDynamicItem protected ()
   def setValue(name: String, newValue: js.Any): Unit = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "QuestionPanelDynamicItem")
-@js.native
-object QuestionPanelDynamicItem extends js.Object {
+object QuestionPanelDynamicItem {
   
-  var IndexVariableName: String = js.native
+  @JSImport("survey-knockout", "QuestionPanelDynamicItem")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var ItemVariableName: String = js.native
+  @JSImport("survey-knockout", "QuestionPanelDynamicItem.IndexVariableName")
+  @js.native
+  def IndexVariableName: String = js.native
+  @scala.inline
+  def IndexVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexVariableName")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "QuestionPanelDynamicItem.ItemVariableName")
+  @js.native
+  def ItemVariableName: String = js.native
+  @scala.inline
+  def ItemVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemVariableName")(x.asInstanceOf[js.Any])
 }

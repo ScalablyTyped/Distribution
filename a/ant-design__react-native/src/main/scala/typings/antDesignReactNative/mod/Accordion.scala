@@ -2,6 +2,7 @@ package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.accordionMod.AccordionHeader
 import typings.antDesignReactNative.accordionMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@ant-design/react-native", "Accordion")
 @js.native
 class Accordion[T /* <: AccordionHeader */] () extends default[T]
-/* static members */
-@JSImport("@ant-design/react-native", "Accordion")
-@js.native
-object Accordion extends js.Object {
+object Accordion {
   
-  var Panel: js.Any = js.native
+  @JSImport("@ant-design/react-native", "Accordion")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("@ant-design/react-native", "Accordion.Panel")
+  @js.native
+  def Panel: js.Any = js.native
+  @scala.inline
+  def Panel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
 }

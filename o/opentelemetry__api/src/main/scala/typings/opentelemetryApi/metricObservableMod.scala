@@ -1,15 +1,14 @@
 package typings.opentelemetryApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/api/build/src/metrics/MetricObservable", JSImport.Namespace)
-@js.native
-object metricObservableMod extends js.Object {
+object metricObservableMod {
   
   @js.native
-  trait MetricObservable extends js.Object {
+  trait MetricObservable extends StObject {
     
     /**
       * Sets the next value for observable metric

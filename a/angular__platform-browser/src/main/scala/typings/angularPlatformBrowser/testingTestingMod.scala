@@ -3,20 +3,25 @@ package typings.angularPlatformBrowser
 import typings.angularCore.mod.NgZone
 import typings.angularCore.mod.PlatformRef
 import typings.angularCore.mod.StaticProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/platform-browser/testing/testing", JSImport.Namespace)
-@js.native
-object testingTestingMod extends js.Object {
+object testingTestingMod {
   
+  @JSImport("@angular/platform-browser/testing/testing", "BrowserTestingModule")
+  @js.native
+  class BrowserTestingModule () extends StObject
+  
+  @JSImport("@angular/platform-browser/testing/testing", "platformBrowserTesting")
+  @js.native
   def platformBrowserTesting(): PlatformRef = js.native
+  @JSImport("@angular/platform-browser/testing/testing", "platformBrowserTesting")
+  @js.native
   def platformBrowserTesting(extraProviders: js.Array[StaticProvider]): PlatformRef = js.native
   
-  @JSName("\u0275angular_packages_platform_browser_testing_testing_a")
-  def ɵangularPackagesPlatformBrowserTestingTestingA(): NgZone = js.native
-  
+  @JSImport("@angular/platform-browser/testing/testing", "\u0275angular_packages_platform_browser_testing_testing_a")
   @js.native
-  class BrowserTestingModule () extends js.Object
+  def ɵangularPackagesPlatformBrowserTestingTestingA(): NgZone = js.native
 }

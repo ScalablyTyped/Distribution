@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpeech.gapi.client.speech
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LongRunningRecognizeRequest extends js.Object {
+trait LongRunningRecognizeRequest extends StObject {
   
   /** Required. The audio data to be recognized. */
   var audio: js.UndefOr[RecognitionAudio] = js.native
@@ -22,30 +23,18 @@ object LongRunningRecognizeRequest {
   }
   
   @scala.inline
-  implicit class LongRunningRecognizeRequestOps[Self <: LongRunningRecognizeRequest] (val x: Self) extends AnyVal {
+  implicit class LongRunningRecognizeRequestMutableBuilder[Self <: LongRunningRecognizeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: RecognitionAudio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: RecognitionConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: RecognitionAudio): Self = this.set("audio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAudio: Self = this.set("audio", js.undefined)
-    
-    @scala.inline
-    def setConfig(value: RecognitionConfig): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
   }
 }

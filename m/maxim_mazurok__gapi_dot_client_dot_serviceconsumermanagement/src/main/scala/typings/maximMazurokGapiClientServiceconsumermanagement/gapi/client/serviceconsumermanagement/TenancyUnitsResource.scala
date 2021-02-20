@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientServiceconsumermanagement.anon.Parent
 import typings.maximMazurokGapiClientServiceconsumermanagement.anon.PrettyPrint
 import typings.maximMazurokGapiClientServiceconsumermanagement.anon.QuotaUser
 import typings.maximMazurokGapiClientServiceconsumermanagement.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TenancyUnitsResource extends js.Object {
+trait TenancyUnitsResource extends StObject {
   
   /**
     * Add a new tenant project to the tenancy unit. There can be a maximum of 1024 tenant projects in a tenancy unit. If there are previously failed `AddTenantProject` calls, you might

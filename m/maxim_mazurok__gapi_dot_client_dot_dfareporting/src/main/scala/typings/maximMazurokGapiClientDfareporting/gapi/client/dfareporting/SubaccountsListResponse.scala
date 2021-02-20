@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubaccountsListResponse extends js.Object {
+trait SubaccountsListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#subaccountsListResponse". */
   var kind: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object SubaccountsListResponse {
   }
   
   @scala.inline
-  implicit class SubaccountsListResponseOps[Self <: SubaccountsListResponse] (val x: Self) extends AnyVal {
+  implicit class SubaccountsListResponseMutableBuilder[Self <: SubaccountsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSubaccounts(value: js.Array[Subaccount]): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setSubaccountsVarargs(value: Subaccount*): Self = this.set("subaccounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubaccounts(value: js.Array[Subaccount]): Self = this.set("subaccounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubaccounts: Self = this.set("subaccounts", js.undefined)
+    def setSubaccountsVarargs(value: Subaccount*): Self = StObject.set(x, "subaccounts", js.Array(value :_*))
   }
 }

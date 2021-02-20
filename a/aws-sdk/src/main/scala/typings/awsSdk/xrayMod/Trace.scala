@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Trace extends js.Object {
+trait Trace extends StObject {
   
   /**
     * The length of time in seconds between the start time of the root segment and the end time of the last segment that completed.
@@ -36,45 +37,33 @@ object Trace {
   }
   
   @scala.inline
-  implicit class TraceOps[Self <: Trace] (val x: Self) extends AnyVal {
+  implicit class TraceMutableBuilder[Self <: Trace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: NullableDouble): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: TraceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: NullableDouble): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setLimitExceeded(value: NullableBoolean): Self = StObject.set(x, "LimitExceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: TraceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLimitExceededUndefined: Self = StObject.set(x, "LimitExceeded", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setSegments(value: SegmentList): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitExceeded(value: NullableBoolean): Self = this.set("LimitExceeded", value.asInstanceOf[js.Any])
+    def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
     
     @scala.inline
-    def deleteLimitExceeded: Self = this.set("LimitExceeded", js.undefined)
-    
-    @scala.inline
-    def setSegmentsVarargs(value: Segment*): Self = this.set("Segments", js.Array(value :_*))
-    
-    @scala.inline
-    def setSegments(value: SegmentList): Self = this.set("Segments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegments: Self = this.set("Segments", js.undefined)
+    def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "Segments", js.Array(value :_*))
   }
 }

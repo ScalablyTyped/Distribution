@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JourneyPushMessage extends js.Object {
+trait JourneyPushMessage extends StObject {
   
   /**
     * The number of seconds that the push notification service should keep the message, if the service is unable to deliver the notification the first time. This value is converted to an expiration value when it's sent to a push-notification service. If this value is 0, the service treats the notification as if it expires immediately and the service doesn't store or try to deliver the notification again. This value doesn't apply to messages that are sent through the Amazon Device Messaging (ADM) service.
@@ -21,24 +22,12 @@ object JourneyPushMessage {
   }
   
   @scala.inline
-  implicit class JourneyPushMessageOps[Self <: JourneyPushMessage] (val x: Self) extends AnyVal {
+  implicit class JourneyPushMessageMutableBuilder[Self <: JourneyPushMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimeToLive(value: string): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTimeToLive(value: string): Self = this.set("TimeToLive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToLive: Self = this.set("TimeToLive", js.undefined)
+    def setTimeToLiveUndefined: Self = StObject.set(x, "TimeToLive", js.undefined)
   }
 }

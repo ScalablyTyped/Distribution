@@ -2,6 +2,7 @@ package typings.activexAccess.Access
 
 import typings.activexAccess.activexAccessNumbers.`1953`
 import typings.activexAccess.activexAccessNumbers.`1954`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAccess.activexAccessNumbers.`1953`
   - typings.activexAccess.activexAccessNumbers.`1954`
 */
-trait AcPrintItemLayout extends js.Object
+trait AcPrintItemLayout extends StObject
 object AcPrintItemLayout {
   
   @scala.inline

@@ -1,13 +1,14 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxConfiguration Class */
 @js.native
-trait FaxConfiguration extends js.Object {
+trait FaxConfiguration extends StObject {
   
   /** Are personal cover pages allowed */
   var AllowPersonalCoverPages: Boolean = js.native
@@ -116,90 +117,78 @@ object FaxConfiguration {
   }
   
   @scala.inline
-  implicit class FaxConfigurationOps[Self <: FaxConfiguration] (val x: Self) extends AnyVal {
+  implicit class FaxConfigurationMutableBuilder[Self <: FaxConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPersonalCoverPages(value: Boolean): Self = StObject.set(x, "AllowPersonalCoverPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveAgeLimit(value: Double): Self = StObject.set(x, "ArchiveAgeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArchiveLocation(value: String): Self = StObject.set(x, "ArchiveLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPersonalCoverPages(value: Boolean): Self = this.set("AllowPersonalCoverPages", value.asInstanceOf[js.Any])
+    def setArchiveSizeHigh(value: Double): Self = StObject.set(x, "ArchiveSizeHigh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveAgeLimit(value: Double): Self = this.set("ArchiveAgeLimit", value.asInstanceOf[js.Any])
+    def setArchiveSizeLow(value: Double): Self = StObject.set(x, "ArchiveSizeLow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveLocation(value: String): Self = this.set("ArchiveLocation", value.asInstanceOf[js.Any])
+    def setAutoCreateAccountOnConnect(value: Boolean): Self = StObject.set(x, "AutoCreateAccountOnConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveSizeHigh(value: Double): Self = this.set("ArchiveSizeHigh", value.asInstanceOf[js.Any])
+    def setBranding(value: Boolean): Self = StObject.set(x, "Branding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveSizeLow(value: Double): Self = this.set("ArchiveSizeLow", value.asInstanceOf[js.Any])
+    def setDiscountRateEnd(value: VarDate): Self = StObject.set(x, "DiscountRateEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCreateAccountOnConnect(value: Boolean): Self = this.set("AutoCreateAccountOnConnect", value.asInstanceOf[js.Any])
+    def setDiscountRateStart(value: VarDate): Self = StObject.set(x, "DiscountRateStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranding(value: Boolean): Self = this.set("Branding", value.asInstanceOf[js.Any])
+    def setFAXCOMEXLibDotFaxConfiguration_typekey(value: FaxConfiguration): Self = StObject.set(x, "FAXCOMEXLib.FaxConfiguration_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscountRateEnd(value: VarDate): Self = this.set("DiscountRateEnd", value.asInstanceOf[js.Any])
+    def setHighQuotaWaterMark(value: Double): Self = StObject.set(x, "HighQuotaWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscountRateStart(value: VarDate): Self = this.set("DiscountRateStart", value.asInstanceOf[js.Any])
+    def setIncomingFaxesArePublic(value: Boolean): Self = StObject.set(x, "IncomingFaxesArePublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxConfiguration_typekey(value: FaxConfiguration): Self = this.set("FAXCOMEXLib.FaxConfiguration_typekey", value.asInstanceOf[js.Any])
+    def setIncomingQueueBlocked(value: Boolean): Self = StObject.set(x, "IncomingQueueBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighQuotaWaterMark(value: Double): Self = this.set("HighQuotaWaterMark", value.asInstanceOf[js.Any])
+    def setLowQuotaWaterMark(value: Double): Self = StObject.set(x, "LowQuotaWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncomingFaxesArePublic(value: Boolean): Self = this.set("IncomingFaxesArePublic", value.asInstanceOf[js.Any])
+    def setOutgoingQueueAgeLimit(value: Double): Self = StObject.set(x, "OutgoingQueueAgeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncomingQueueBlocked(value: Boolean): Self = this.set("IncomingQueueBlocked", value.asInstanceOf[js.Any])
+    def setOutgoingQueueBlocked(value: Boolean): Self = StObject.set(x, "OutgoingQueueBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowQuotaWaterMark(value: Double): Self = this.set("LowQuotaWaterMark", value.asInstanceOf[js.Any])
+    def setOutgoingQueuePaused(value: Boolean): Self = StObject.set(x, "OutgoingQueuePaused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutgoingQueueAgeLimit(value: Double): Self = this.set("OutgoingQueueAgeLimit", value.asInstanceOf[js.Any])
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOutgoingQueueBlocked(value: Boolean): Self = this.set("OutgoingQueueBlocked", value.asInstanceOf[js.Any])
+    def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutgoingQueuePaused(value: Boolean): Self = this.set("OutgoingQueuePaused", value.asInstanceOf[js.Any])
+    def setRetryDelay(value: Double): Self = StObject.set(x, "RetryDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("Refresh", js.Any.fromFunction0(value))
+    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRetries(value: Double): Self = this.set("Retries", value.asInstanceOf[js.Any])
+    def setSizeQuotaWarning(value: Boolean): Self = StObject.set(x, "SizeQuotaWarning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryDelay(value: Double): Self = this.set("RetryDelay", value.asInstanceOf[js.Any])
+    def setUseArchive(value: Boolean): Self = StObject.set(x, "UseArchive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSizeQuotaWarning(value: Boolean): Self = this.set("SizeQuotaWarning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseArchive(value: Boolean): Self = this.set("UseArchive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseDeviceTSID(value: Boolean): Self = this.set("UseDeviceTSID", value.asInstanceOf[js.Any])
+    def setUseDeviceTSID(value: Boolean): Self = StObject.set(x, "UseDeviceTSID", value.asInstanceOf[js.Any])
   }
 }

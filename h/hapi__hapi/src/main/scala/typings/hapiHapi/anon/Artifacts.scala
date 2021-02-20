@@ -1,12 +1,13 @@
 package typings.hapiHapi.anon
 
 import typings.hapiHapi.mod.AuthCredentials
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Artifacts extends js.Object {
+trait Artifacts extends StObject {
   
   /**
     * The artifacts are used to bypass the default authentication strategies,
@@ -34,30 +35,18 @@ object Artifacts {
   }
   
   @scala.inline
-  implicit class ArtifactsOps[Self <: Artifacts] (val x: Self) extends AnyVal {
+  implicit class ArtifactsMutableBuilder[Self <: Artifacts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifacts(value: js.Object): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentials(value: AuthCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: AuthCredentials): Self = this.set("credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrategy(value: String): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setArtifacts(value: js.Object): Self = this.set("artifacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArtifacts: Self = this.set("artifacts", js.undefined)
+    def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientBigquery.anon.Key
 import typings.maximMazurokGapiClientBigquery.anon.Location
 import typings.maximMazurokGapiClientBigquery.anon.PrettyPrint
 import typings.maximMazurokGapiClientBigquery.anon.ProjectId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobsResource extends js.Object {
+trait JobsResource extends StObject {
   
   /**
     * Requests that a job be cancelled. This call will return immediately, and the client will need to poll for the job status to see if the cancel completed successfully. Cancelled jobs

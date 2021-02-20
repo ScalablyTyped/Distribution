@@ -5,6 +5,7 @@ import typings.cytoscape.anon.MaxDegree
 import typings.cytoscape.cytoscapeBooleans.`false`
 import typings.cytoscape.cytoscapeNumbers.`10`
 import typings.cytoscape.cytoscapeStrings.concentric
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ trait ConcentricLayoutOptions extends ShapedLayoutOptions {
   // whether levels have an equal radial distance betwen them, may cause bounding box overflow
   var equidistant: `false` = js.native
   
-   // min spacing between outside of nodes (used for radius adjustment)
+  // min spacing between outside of nodes (used for radius adjustment)
   // height of layout area (overrides container height)
   var height: js.UndefOr[scala.Nothing] = js.native
   
@@ -68,48 +69,36 @@ object ConcentricLayoutOptions {
   }
   
   @scala.inline
-  implicit class ConcentricLayoutOptionsOps[Self <: ConcentricLayoutOptions] (val x: Self) extends AnyVal {
+  implicit class ConcentricLayoutOptionsMutableBuilder[Self <: ConcentricLayoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConcentric(value: Degree => Double): Self = StObject.set(x, "concentric", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConcentric(value: Degree => Double): Self = this.set("concentric", js.Any.fromFunction1(value))
+    def setEquidistant(value: `false`): Self = StObject.set(x, "equidistant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquidistant(value: `false`): Self = this.set("equidistant", value.asInstanceOf[js.Any])
+    def setLevelWidth(value: MaxDegree => Double): Self = StObject.set(x, "levelWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLevelWidth(value: MaxDegree => Double): Self = this.set("levelWidth", js.Any.fromFunction1(value))
+    def setMinNodeSpacing(value: `10`): Self = StObject.set(x, "minNodeSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinNodeSpacing(value: `10`): Self = this.set("minNodeSpacing", value.asInstanceOf[js.Any])
+    def setName(value: concentric): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: concentric): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    def setSweep(value: Double): Self = StObject.set(x, "sweep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClockwise(value: Boolean): Self = this.set("clockwise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClockwise: Self = this.set("clockwise", js.undefined)
-    
-    @scala.inline
-    def setSweep(value: Double): Self = this.set("sweep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSweep: Self = this.set("sweep", js.undefined)
+    def setSweepUndefined: Self = StObject.set(x, "sweep", js.undefined)
   }
 }

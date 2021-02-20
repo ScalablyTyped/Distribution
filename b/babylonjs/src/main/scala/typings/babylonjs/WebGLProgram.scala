@@ -1,11 +1,12 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebGLProgram extends js.Object {
+trait WebGLProgram extends StObject {
   
   var __SPECTOR_rebuildProgram: js.UndefOr[
     (js.Function4[
@@ -26,29 +27,17 @@ object WebGLProgram {
   }
   
   @scala.inline
-  implicit class WebGLProgramOps[Self <: WebGLProgram] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class WebGLProgramMutableBuilder[Self <: WebGLProgram] (val x: Self) extends AnyVal {
     
     @scala.inline
     def set__SPECTOR_rebuildProgram(
       value: (/* vertexSourceCode */ String, /* fragmentSourceCode */ String, /* onCompiled */ js.Function1[WebGLProgram, Unit], /* onError */ js.Function1[/* message */ String, Unit]) => Unit
-    ): Self = this.set("__SPECTOR_rebuildProgram", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "__SPECTOR_rebuildProgram", js.Any.fromFunction4(value))
     
     @scala.inline
-    def delete__SPECTOR_rebuildProgram: Self = this.set("__SPECTOR_rebuildProgram", js.undefined)
+    def set__SPECTOR_rebuildProgramNull: Self = StObject.set(x, "__SPECTOR_rebuildProgram", null)
     
     @scala.inline
-    def set__SPECTOR_rebuildProgramNull: Self = this.set("__SPECTOR_rebuildProgram", null)
+    def set__SPECTOR_rebuildProgramUndefined: Self = StObject.set(x, "__SPECTOR_rebuildProgram", js.undefined)
   }
 }

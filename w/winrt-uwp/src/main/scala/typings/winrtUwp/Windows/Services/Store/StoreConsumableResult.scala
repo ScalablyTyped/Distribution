@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Services.Store
 
 import typings.winrtUwp.Windows.WinRTError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides response data for a request that involves a consumable add-on for the current app. */
 @js.native
-trait StoreConsumableResult extends js.Object {
+trait StoreConsumableResult extends StObject {
   
   /** Gets the remaining balance for the consumable add-on. */
   var balanceRemaining: Double = js.native
@@ -35,30 +36,18 @@ object StoreConsumableResult {
   }
   
   @scala.inline
-  implicit class StoreConsumableResultOps[Self <: StoreConsumableResult] (val x: Self) extends AnyVal {
+  implicit class StoreConsumableResultMutableBuilder[Self <: StoreConsumableResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBalanceRemaining(value: Double): Self = StObject.set(x, "balanceRemaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: StoreConsumableStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalanceRemaining(value: Double): Self = this.set("balanceRemaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = this.set("extendedError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: StoreConsumableStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackingId(value: String): Self = this.set("trackingId", value.asInstanceOf[js.Any])
+    def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
   }
 }

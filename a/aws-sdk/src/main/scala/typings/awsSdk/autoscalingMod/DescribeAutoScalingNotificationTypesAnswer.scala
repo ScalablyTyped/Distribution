@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAutoScalingNotificationTypesAnswer extends js.Object {
+trait DescribeAutoScalingNotificationTypesAnswer extends StObject {
   
   /**
     * The notification types.
@@ -21,27 +22,15 @@ object DescribeAutoScalingNotificationTypesAnswer {
   }
   
   @scala.inline
-  implicit class DescribeAutoScalingNotificationTypesAnswerOps[Self <: DescribeAutoScalingNotificationTypesAnswer] (val x: Self) extends AnyVal {
+  implicit class DescribeAutoScalingNotificationTypesAnswerMutableBuilder[Self <: DescribeAutoScalingNotificationTypesAnswer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingNotificationTypes(value: AutoScalingNotificationTypes): Self = StObject.set(x, "AutoScalingNotificationTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingNotificationTypesUndefined: Self = StObject.set(x, "AutoScalingNotificationTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutoScalingNotificationTypesVarargs(value: XmlStringMaxLen255*): Self = this.set("AutoScalingNotificationTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAutoScalingNotificationTypes(value: AutoScalingNotificationTypes): Self = this.set("AutoScalingNotificationTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoScalingNotificationTypes: Self = this.set("AutoScalingNotificationTypes", js.undefined)
+    def setAutoScalingNotificationTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "AutoScalingNotificationTypes", js.Array(value :_*))
   }
 }

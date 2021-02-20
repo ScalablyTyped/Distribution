@@ -1,11 +1,12 @@
 package typings.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorStatistics extends js.Object {
+trait ColorStatistics extends StObject {
   
   var Maximum: String = js.native
   
@@ -25,30 +26,18 @@ object ColorStatistics {
   }
   
   @scala.inline
-  implicit class ColorStatisticsOps[Self <: ColorStatistics] (val x: Self) extends AnyVal {
+  implicit class ColorStatisticsMutableBuilder[Self <: ColorStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximum(value: String): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMean(value: String): Self = StObject.set(x, "Mean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimum(value: String): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: String): Self = this.set("Maximum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMean(value: String): Self = this.set("Mean", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinimum(value: String): Self = this.set("Minimum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setStandard Deviation`(value: String): Self = this.set("Standard Deviation", value.asInstanceOf[js.Any])
+    def `setStandard Deviation`(value: String): Self = StObject.set(x, "Standard Deviation", value.asInstanceOf[js.Any])
   }
 }

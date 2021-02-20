@@ -6,12 +6,13 @@ import typings.chromeApps.chrome.hid.HidDeviceInfo
 import typings.chromeApps.chrome.hid.UserSelectedDevicePickerOptions
 import typings.chromeApps.chrome.integer
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofhid extends js.Object {
+trait Typeofhid extends StObject {
   
   /**
     * Open a connection to an HID device for communication.

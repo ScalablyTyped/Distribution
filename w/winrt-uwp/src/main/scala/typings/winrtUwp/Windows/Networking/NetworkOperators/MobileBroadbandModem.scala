@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a mobile broadband modem. */
 @js.native
-trait MobileBroadbandModem extends js.Object {
+trait MobileBroadbandModem extends StObject {
   
   /** Gets the MobileBroadbandAccount associated currently with the mobile broadband modem. */
   var currentAccount: MobileBroadbandAccount = js.native
@@ -71,48 +72,36 @@ object MobileBroadbandModem {
   }
   
   @scala.inline
-  implicit class MobileBroadbandModemOps[Self <: MobileBroadbandModem] (val x: Self) extends AnyVal {
+  implicit class MobileBroadbandModemMutableBuilder[Self <: MobileBroadbandModem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentAccount(value: MobileBroadbandAccount): Self = StObject.set(x, "currentAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "currentNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceInformation(value: MobileBroadbandDeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentAccount(value: MobileBroadbandAccount): Self = this.set("currentAccount", value.asInstanceOf[js.Any])
+    def setDeviceServices(value: IVectorView[MobileBroadbandDeviceServiceInformation]): Self = StObject.set(x, "deviceServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentNetwork(value: MobileBroadbandNetwork): Self = this.set("currentNetwork", value.asInstanceOf[js.Any])
+    def setGetCurrentConfigurationAsync(value: () => IPromiseWithIAsyncOperation[MobileBroadbandModemConfiguration]): Self = StObject.set(x, "getCurrentConfigurationAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeviceInformation(value: MobileBroadbandDeviceInformation): Self = this.set("deviceInformation", value.asInstanceOf[js.Any])
+    def setGetDeviceService(value: String => MobileBroadbandDeviceService): Self = StObject.set(x, "getDeviceService", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeviceServices(value: IVectorView[MobileBroadbandDeviceServiceInformation]): Self = this.set("deviceServices", value.asInstanceOf[js.Any])
+    def setIsResetSupported(value: Boolean): Self = StObject.set(x, "isResetSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentConfigurationAsync(value: () => IPromiseWithIAsyncOperation[MobileBroadbandModemConfiguration]): Self = this.set("getCurrentConfigurationAsync", js.Any.fromFunction0(value))
+    def setMaxDeviceServiceCommandSizeInBytes(value: Double): Self = StObject.set(x, "maxDeviceServiceCommandSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDeviceService(value: String => MobileBroadbandDeviceService): Self = this.set("getDeviceService", js.Any.fromFunction1(value))
+    def setMaxDeviceServiceDataSizeInBytes(value: Double): Self = StObject.set(x, "maxDeviceServiceDataSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsResetSupported(value: Boolean): Self = this.set("isResetSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxDeviceServiceCommandSizeInBytes(value: Double): Self = this.set("maxDeviceServiceCommandSizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxDeviceServiceDataSizeInBytes(value: Double): Self = this.set("maxDeviceServiceDataSizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResetAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("resetAsync", js.Any.fromFunction0(value))
+    def setResetAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "resetAsync", js.Any.fromFunction0(value))
   }
 }

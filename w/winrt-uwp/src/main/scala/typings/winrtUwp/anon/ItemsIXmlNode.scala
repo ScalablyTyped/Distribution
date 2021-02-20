@@ -1,12 +1,13 @@
 package typings.winrtUwp.anon
 
 import typings.winrtUwp.Windows.Data.Xml.Dom.IXmlNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemsIXmlNode extends js.Object {
+trait ItemsIXmlNode extends StObject {
   
   /** The items in the vector view that start at startIndex. */ var items: IXmlNode = js.native
   
@@ -21,24 +22,12 @@ object ItemsIXmlNode {
   }
   
   @scala.inline
-  implicit class ItemsIXmlNodeOps[Self <: ItemsIXmlNode] (val x: Self) extends AnyVal {
+  implicit class ItemsIXmlNodeMutableBuilder[Self <: ItemsIXmlNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: IXmlNode): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItems(value: IXmlNode): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnValue(value: Double): Self = this.set("returnValue", value.asInstanceOf[js.Any])
+    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

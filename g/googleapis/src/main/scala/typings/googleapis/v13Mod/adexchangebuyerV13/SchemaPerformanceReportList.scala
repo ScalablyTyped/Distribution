@@ -1,5 +1,6 @@
 package typings.googleapis.v13Mod.adexchangebuyerV13
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The configuration data for an Ad Exchange performance report list.
   */
 @js.native
-trait SchemaPerformanceReportList extends js.Object {
+trait SchemaPerformanceReportList extends StObject {
   
   /**
     * Resource type.
@@ -29,33 +30,21 @@ object SchemaPerformanceReportList {
   }
   
   @scala.inline
-  implicit class SchemaPerformanceReportListOps[Self <: SchemaPerformanceReportList] (val x: Self) extends AnyVal {
+  implicit class SchemaPerformanceReportListMutableBuilder[Self <: SchemaPerformanceReportList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPerformanceReport(value: js.Array[SchemaPerformanceReport]): Self = StObject.set(x, "performanceReport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPerformanceReportUndefined: Self = StObject.set(x, "performanceReport", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setPerformanceReportVarargs(value: SchemaPerformanceReport*): Self = this.set("performanceReport", js.Array(value :_*))
-    
-    @scala.inline
-    def setPerformanceReport(value: js.Array[SchemaPerformanceReport]): Self = this.set("performanceReport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerformanceReport: Self = this.set("performanceReport", js.undefined)
+    def setPerformanceReportVarargs(value: SchemaPerformanceReport*): Self = StObject.set(x, "performanceReport", js.Array(value :_*))
   }
 }

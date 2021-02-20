@@ -3,6 +3,7 @@ package typings.titanium.Titanium.Media
 import typings.titanium.Titanium.Proxy
 import typings.titanium.titaniumStrings.playingchange
 import typings.titanium.titaniumStrings.statechange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

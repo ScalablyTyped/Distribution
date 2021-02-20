@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLaunchTemplateResult extends js.Object {
+trait CreateLaunchTemplateResult extends StObject {
   
   /**
     * Information about the launch template.
@@ -26,30 +27,18 @@ object CreateLaunchTemplateResult {
   }
   
   @scala.inline
-  implicit class CreateLaunchTemplateResultOps[Self <: CreateLaunchTemplateResult] (val x: Self) extends AnyVal {
+  implicit class CreateLaunchTemplateResultMutableBuilder[Self <: CreateLaunchTemplateResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWarning(value: ValidationWarning): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplate(value: LaunchTemplate): Self = this.set("LaunchTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchTemplate: Self = this.set("LaunchTemplate", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: ValidationWarning): Self = this.set("Warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("Warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
   }
 }

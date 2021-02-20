@@ -1,15 +1,15 @@
 package typings.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShellQuoting extends js.Object
+sealed trait ShellQuoting extends StObject
 @JSImport("vscode", "ShellQuoting")
 @js.native
-object ShellQuoting extends js.Object {
+object ShellQuoting extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ShellQuoting with Double] = js.native
@@ -20,8 +20,7 @@ object ShellQuoting extends js.Object {
     */
   @js.native
   sealed trait Escape extends ShellQuoting
-  /* 1 */ @js.native
-  object Escape extends TopLevel[Escape with Double]
+  /* 1 */ val Escape: typings.vscode.mod.ShellQuoting.Escape with Double = js.native
   
   /**
     * Strong string quoting should be used. This for example
@@ -32,8 +31,7 @@ object ShellQuoting extends js.Object {
     */
   @js.native
   sealed trait Strong extends ShellQuoting
-  /* 2 */ @js.native
-  object Strong extends TopLevel[Strong with Double]
+  /* 2 */ val Strong: typings.vscode.mod.ShellQuoting.Strong with Double = js.native
   
   /**
     * Weak string quoting should be used. This for example
@@ -44,6 +42,5 @@ object ShellQuoting extends js.Object {
     */
   @js.native
   sealed trait Weak extends ShellQuoting
-  /* 3 */ @js.native
-  object Weak extends TopLevel[Weak with Double]
+  /* 3 */ val Weak: typings.vscode.mod.ShellQuoting.Weak with Double = js.native
 }

@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An intersection of two paths.
   */
 @js.native
-trait IPathIntersection extends js.Object {
+trait IPathIntersection extends StObject {
   
   /**
     * Array of points where the two paths intersected. The length of the array may be either 1 or 2 points.
@@ -38,42 +39,30 @@ object IPathIntersection {
   }
   
   @scala.inline
-  implicit class IPathIntersectionOps[Self <: IPathIntersection] (val x: Self) extends AnyVal {
+  implicit class IPathIntersectionMutableBuilder[Self <: IPathIntersection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntersectionPoints(value: js.Array[IPoint]): Self = StObject.set(x, "intersectionPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntersectionPointsVarargs(value: IPoint*): Self = StObject.set(x, "intersectionPoints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath1Angles(value: js.Array[Double]): Self = StObject.set(x, "path1Angles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersectionPointsVarargs(value: IPoint*): Self = this.set("intersectionPoints", js.Array(value :_*))
+    def setPath1AnglesUndefined: Self = StObject.set(x, "path1Angles", js.undefined)
     
     @scala.inline
-    def setIntersectionPoints(value: js.Array[IPoint]): Self = this.set("intersectionPoints", value.asInstanceOf[js.Any])
+    def setPath1AnglesVarargs(value: Double*): Self = StObject.set(x, "path1Angles", js.Array(value :_*))
     
     @scala.inline
-    def setPath1AnglesVarargs(value: Double*): Self = this.set("path1Angles", js.Array(value :_*))
+    def setPath2Angles(value: js.Array[Double]): Self = StObject.set(x, "path2Angles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath1Angles(value: js.Array[Double]): Self = this.set("path1Angles", value.asInstanceOf[js.Any])
+    def setPath2AnglesUndefined: Self = StObject.set(x, "path2Angles", js.undefined)
     
     @scala.inline
-    def deletePath1Angles: Self = this.set("path1Angles", js.undefined)
-    
-    @scala.inline
-    def setPath2AnglesVarargs(value: Double*): Self = this.set("path2Angles", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath2Angles(value: js.Array[Double]): Self = this.set("path2Angles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath2Angles: Self = this.set("path2Angles", js.undefined)
+    def setPath2AnglesVarargs(value: Double*): Self = StObject.set(x, "path2Angles", js.Array(value :_*))
   }
 }

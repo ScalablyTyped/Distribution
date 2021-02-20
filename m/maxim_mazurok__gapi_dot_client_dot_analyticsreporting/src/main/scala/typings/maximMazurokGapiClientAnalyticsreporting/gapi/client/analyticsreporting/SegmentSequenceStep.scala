@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SegmentSequenceStep extends js.Object {
+trait SegmentSequenceStep extends StObject {
   
   /** Specifies if the step immediately precedes or can be any time before the next step. */
   var matchType: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object SegmentSequenceStep {
   }
   
   @scala.inline
-  implicit class SegmentSequenceStepOps[Self <: SegmentSequenceStep] (val x: Self) extends AnyVal {
+  implicit class SegmentSequenceStepMutableBuilder[Self <: SegmentSequenceStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrFiltersForSegment(value: js.Array[OrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchType(value: String): Self = this.set("matchType", value.asInstanceOf[js.Any])
+    def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
     
     @scala.inline
-    def deleteMatchType: Self = this.set("matchType", js.undefined)
-    
-    @scala.inline
-    def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = this.set("orFiltersForSegment", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrFiltersForSegment(value: js.Array[OrFiltersForSegment]): Self = this.set("orFiltersForSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrFiltersForSegment: Self = this.set("orFiltersForSegment", js.undefined)
+    def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
   }
 }

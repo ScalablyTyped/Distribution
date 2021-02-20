@@ -1,5 +1,6 @@
 package typings.webAnimationsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webAnimationsJs.webAnimationsJsStrings.alternate
   - typings.webAnimationsJs.webAnimationsJsStrings.`alternate-reverse`
 */
-trait AnimationEffectTimingPlaybackDirection extends js.Object
+trait AnimationEffectTimingPlaybackDirection extends StObject
 object AnimationEffectTimingPlaybackDirection {
   
   @scala.inline

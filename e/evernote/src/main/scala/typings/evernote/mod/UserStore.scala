@@ -10,20 +10,16 @@ import typings.evernote.mod.Types.ServiceLevel
 import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.User
 import typings.evernote.mod.Types.UserID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("evernote", "UserStore")
-@js.native
-object UserStore extends js.Object {
+object UserStore {
   
-  val EDAM_VERSION_MAJOR: Double = js.native
-  
-  val EDAM_VERSION_MINOR: Double = js.native
-  
+  @JSImport("evernote", "UserStore.AuthenticationResult")
   @js.native
-  class AuthenticationResult () extends js.Object {
+  class AuthenticationResult () extends StObject {
     def this(args: AuthenticationToken) = this()
     
     var authenticationToken: js.UndefOr[String] = js.native
@@ -47,15 +43,17 @@ object UserStore extends js.Object {
     var webApiUrlPrefix: js.UndefOr[String] = js.native
   }
   
+  @JSImport("evernote", "UserStore.BootstrapInfo")
   @js.native
-  class BootstrapInfo () extends js.Object {
+  class BootstrapInfo () extends StObject {
     def this(args: Profiles) = this()
     
     var profiles: js.UndefOr[js.Array[BootstrapProfile]] = js.native
   }
   
+  @JSImport("evernote", "UserStore.BootstrapProfile")
   @js.native
-  class BootstrapProfile () extends js.Object {
+  class BootstrapProfile () extends StObject {
     def this(args: Name) = this()
     
     var name: js.UndefOr[String] = js.native
@@ -63,8 +61,9 @@ object UserStore extends js.Object {
     var settings: js.UndefOr[BootstrapSettings] = js.native
   }
   
+  @JSImport("evernote", "UserStore.BootstrapSettings")
   @js.native
-  class BootstrapSettings () extends js.Object {
+  class BootstrapSettings () extends StObject {
     def this(args: AccountEmailDomain) = this()
     
     var accountEmailDomain: js.UndefOr[String] = js.native
@@ -96,8 +95,17 @@ object UserStore extends js.Object {
     var supportUrl: js.UndefOr[String] = js.native
   }
   
+  @JSImport("evernote", "UserStore.EDAM_VERSION_MAJOR")
   @js.native
-  class PublicUserInfo () extends js.Object {
+  val EDAM_VERSION_MAJOR: Double = js.native
+  
+  @JSImport("evernote", "UserStore.EDAM_VERSION_MINOR")
+  @js.native
+  val EDAM_VERSION_MINOR: Double = js.native
+  
+  @JSImport("evernote", "UserStore.PublicUserInfo")
+  @js.native
+  class PublicUserInfo () extends StObject {
     def this(args: NoteStoreUrl) = this()
     
     var noteStoreUrl: js.UndefOr[String] = js.native
@@ -111,8 +119,9 @@ object UserStore extends js.Object {
     var webApiUrlPrefix: js.UndefOr[String] = js.native
   }
   
+  @JSImport("evernote", "UserStore.UserUrls")
   @js.native
-  class UserUrls () extends js.Object {
+  class UserUrls () extends StObject {
     def this(args: MessageStoreUrl) = this()
     
     var messageStoreUrl: js.UndefOr[String] = js.native

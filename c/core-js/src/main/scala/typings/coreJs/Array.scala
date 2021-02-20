@@ -1,5 +1,6 @@
 package typings.coreJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Modules: core.array.turn
 // #############################################################################################
 @js.native
-trait Array[T] extends js.Object {
+trait Array[T] extends StObject {
   
   val lastIndex: Double = js.native
   

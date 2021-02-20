@@ -3,12 +3,13 @@ package typings.ionicCore.componentsMod.Components
 import typings.ionicCore.componentsMod.global.HTMLIonTabElement
 import typings.ionicCore.interfaceMod.RouteID
 import typings.ionicCore.interfaceMod.RouteWrite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonTabs extends js.Object {
+trait IonTabs extends StObject {
   
   def getRouteId(): js.Promise[js.UndefOr[RouteID]] = js.native
   

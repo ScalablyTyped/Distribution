@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,36 +25,24 @@ object SauceStatus {
   }
   
   @scala.inline
-  implicit class SauceStatusOps[Self <: SauceStatus] (val x: Self) extends AnyVal {
+  implicit class SauceStatusMutableBuilder[Self <: SauceStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setService_operational(value: Boolean): Self = StObject.set(x, "service_operational", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setService_operationalUndefined: Self = StObject.set(x, "service_operational", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus_message(value: String): Self = StObject.set(x, "status_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService_operational(value: Boolean): Self = this.set("service_operational", value.asInstanceOf[js.Any])
+    def setStatus_messageUndefined: Self = StObject.set(x, "status_message", js.undefined)
     
     @scala.inline
-    def deleteService_operational: Self = this.set("service_operational", js.undefined)
+    def setWait_time(value: Double): Self = StObject.set(x, "wait_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus_message(value: String): Self = this.set("status_message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus_message: Self = this.set("status_message", js.undefined)
-    
-    @scala.inline
-    def setWait_time(value: Double): Self = this.set("wait_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait_time: Self = this.set("wait_time", js.undefined)
+    def setWait_timeUndefined: Self = StObject.set(x, "wait_time", js.undefined)
   }
 }

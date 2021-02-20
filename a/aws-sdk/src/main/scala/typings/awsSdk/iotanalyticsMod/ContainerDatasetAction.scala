@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerDatasetAction extends js.Object {
+trait ContainerDatasetAction extends StObject {
   
   /**
     * The ARN of the role that gives permission to the system to access required resources to run the containerAction. This includes, at minimum, permission to retrieve the dataset contents that are the input to the containerized application.
@@ -36,36 +37,24 @@ object ContainerDatasetAction {
   }
   
   @scala.inline
-  implicit class ContainerDatasetActionOps[Self <: ContainerDatasetAction] (val x: Self) extends AnyVal {
+  implicit class ContainerDatasetActionMutableBuilder[Self <: ContainerDatasetAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceConfiguration(value: ResourceConfiguration): Self = StObject.set(x, "resourceConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = this.set("executionRoleArn", value.asInstanceOf[js.Any])
+    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Image): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     
     @scala.inline
-    def setResourceConfiguration(value: ResourceConfiguration): Self = this.set("resourceConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariablesVarargs(value: Variable*): Self = this.set("variables", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariables(value: Variables): Self = this.set("variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariables: Self = this.set("variables", js.undefined)
+    def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

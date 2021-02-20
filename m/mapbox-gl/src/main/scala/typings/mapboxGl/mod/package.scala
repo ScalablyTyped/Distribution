@@ -1,5 +1,6 @@
 package typings.mapboxGl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,4 +64,65 @@ package object mod {
     /* resourceType */ typings.mapboxGl.mod.ResourceType, 
     typings.mapboxGl.mod.RequestParameters
   ]
+  
+  @scala.inline
+  def accessToken: java.lang.String = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("accessToken").asInstanceOf[java.lang.String]
+  @scala.inline
+  def accessToken_=(x: java.lang.String): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("accessToken")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def baseApiUrl: java.lang.String = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("baseApiUrl").asInstanceOf[java.lang.String]
+  @scala.inline
+  def baseApiUrl_=(x: java.lang.String): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("baseApiUrl")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def clearPrewarmedResources(): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearPrewarmedResources")().asInstanceOf[scala.Unit]
+  
+  @scala.inline
+  def clearStorage(): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearStorage")().asInstanceOf[scala.Unit]
+  @scala.inline
+  def clearStorage(callback: js.Function1[/* err */ js.UndefOr[typings.std.Error], scala.Unit]): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearStorage")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+  
+  @scala.inline
+  def getRTLTextPluginStatus(): typings.mapboxGl.mod.PluginStatus = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRTLTextPluginStatus")().asInstanceOf[typings.mapboxGl.mod.PluginStatus]
+  
+  /**
+    * Maximum number of images (raster tiles, sprites, icons) to load in parallel, which affects performance in raster-heavy maps.
+    * 16 by default.
+    */
+  @scala.inline
+  def maxParallelImageRequests: scala.Double = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("maxParallelImageRequests").asInstanceOf[scala.Double]
+  @scala.inline
+  def maxParallelImageRequests_=(x: scala.Double): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("maxParallelImageRequests")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def prewarm(): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("prewarm")().asInstanceOf[scala.Unit]
+  
+  @scala.inline
+  def setRTLTextPlugin(pluginURL: java.lang.String, callback: js.Function1[/* error */ typings.std.Error, scala.Unit]): scala.Unit = (typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setRTLTextPlugin")(pluginURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  @scala.inline
+  def setRTLTextPlugin(
+    pluginURL: java.lang.String,
+    callback: js.Function1[/* error */ typings.std.Error, scala.Unit],
+    deferred: scala.Boolean
+  ): scala.Unit = (typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setRTLTextPlugin")(pluginURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], deferred.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  
+  @scala.inline
+  def supported(): scala.Boolean = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("supported")().asInstanceOf[scala.Boolean]
+  @scala.inline
+  def supported(options: typings.mapboxGl.anon.FailIfMajorPerformanceCaveat): scala.Boolean = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("supported")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+  
+  @scala.inline
+  def version: java.lang.String = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+  @scala.inline
+  def version_=(x: java.lang.String): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Number of web workers instantiated on a page with GL JS maps.
+    * By default, it is set to half the number of CPU cores (capped at 6).
+    */
+  @scala.inline
+  def workerCount: scala.Double = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("workerCount").asInstanceOf[scala.Double]
+  @scala.inline
+  def workerCount_=(x: scala.Double): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("workerCount")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourcePolicySnapshotSchedulePolicyRetentionPolicy extends js.Object {
+trait ResourcePolicySnapshotSchedulePolicyRetentionPolicy extends StObject {
   
   /** Maximum age of the snapshot that is allowed to be kept. */
   var maxRetentionDays: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object ResourcePolicySnapshotSchedulePolicyRetentionPolicy {
   }
   
   @scala.inline
-  implicit class ResourcePolicySnapshotSchedulePolicyRetentionPolicyOps[Self <: ResourcePolicySnapshotSchedulePolicyRetentionPolicy] (val x: Self) extends AnyVal {
+  implicit class ResourcePolicySnapshotSchedulePolicyRetentionPolicyMutableBuilder[Self <: ResourcePolicySnapshotSchedulePolicyRetentionPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxRetentionDays(value: Double): Self = StObject.set(x, "maxRetentionDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxRetentionDaysUndefined: Self = StObject.set(x, "maxRetentionDays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnSourceDiskDelete(value: String): Self = StObject.set(x, "onSourceDiskDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetentionDays(value: Double): Self = this.set("maxRetentionDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRetentionDays: Self = this.set("maxRetentionDays", js.undefined)
-    
-    @scala.inline
-    def setOnSourceDiskDelete(value: String): Self = this.set("onSourceDiskDelete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnSourceDiskDelete: Self = this.set("onSourceDiskDelete", js.undefined)
+    def setOnSourceDiskDeleteUndefined: Self = StObject.set(x, "onSourceDiskDelete", js.undefined)
   }
 }

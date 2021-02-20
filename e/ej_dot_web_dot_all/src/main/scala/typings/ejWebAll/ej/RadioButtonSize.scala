@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RadioButtonSize extends js.Object
+sealed trait RadioButtonSize extends StObject
 @JSGlobal("ej.RadioButtonSize")
 @js.native
-object RadioButtonSize extends js.Object {
+object RadioButtonSize extends StObject {
   
   //Shows medium size radio button
   @js.native

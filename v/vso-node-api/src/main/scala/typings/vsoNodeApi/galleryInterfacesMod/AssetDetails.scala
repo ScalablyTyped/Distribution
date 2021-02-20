@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetDetails extends js.Object {
+trait AssetDetails extends StObject {
   
   /**
     * Gets or sets the Answers, which contains vs marketplace extension name and publisher name
@@ -26,24 +27,12 @@ object AssetDetails {
   }
   
   @scala.inline
-  implicit class AssetDetailsOps[Self <: AssetDetails] (val x: Self) extends AnyVal {
+  implicit class AssetDetailsMutableBuilder[Self <: AssetDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnswers(value: Answers): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnswers(value: Answers): Self = this.set("answers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherNaturalIdentifier(value: String): Self = this.set("publisherNaturalIdentifier", value.asInstanceOf[js.Any])
+    def setPublisherNaturalIdentifier(value: String): Self = StObject.set(x, "publisherNaturalIdentifier", value.asInstanceOf[js.Any])
   }
 }

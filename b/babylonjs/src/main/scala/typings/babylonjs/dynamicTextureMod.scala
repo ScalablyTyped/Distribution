@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureMod.Texture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/dynamicTexture", JSImport.Namespace)
-@js.native
-object dynamicTextureMod extends js.Object {
+object dynamicTextureMod {
   
+  @JSImport("babylonjs/Materials/Textures/dynamicTexture", "DynamicTexture")
   @js.native
   class DynamicTexture protected () extends Texture {
     def this(name: String, options: js.Any, scene: js.UndefOr[scala.Nothing], generateMipMaps: Boolean) = this()

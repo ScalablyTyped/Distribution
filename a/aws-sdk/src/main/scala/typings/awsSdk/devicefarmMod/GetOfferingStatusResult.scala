@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOfferingStatusResult extends js.Object {
+trait GetOfferingStatusResult extends StObject {
   
   /**
     * When specified, gets the offering status for the current period.
@@ -31,36 +32,24 @@ object GetOfferingStatusResult {
   }
   
   @scala.inline
-  implicit class GetOfferingStatusResultOps[Self <: GetOfferingStatusResult] (val x: Self) extends AnyVal {
+  implicit class GetOfferingStatusResultMutableBuilder[Self <: GetOfferingStatusResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrent(value: OfferingStatusMap): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextPeriod(value: OfferingStatusMap): Self = StObject.set(x, "nextPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent(value: OfferingStatusMap): Self = this.set("current", value.asInstanceOf[js.Any])
+    def setNextPeriodUndefined: Self = StObject.set(x, "nextPeriod", js.undefined)
     
     @scala.inline
-    def deleteCurrent: Self = this.set("current", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPeriod(value: OfferingStatusMap): Self = this.set("nextPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPeriod: Self = this.set("nextPeriod", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

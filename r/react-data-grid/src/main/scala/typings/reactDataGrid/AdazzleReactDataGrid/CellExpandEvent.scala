@@ -1,5 +1,6 @@
 package typings.reactDataGrid.AdazzleReactDataGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   Information about a cell expanded.
   */
 @js.native
-trait CellExpandEvent[T] extends js.Object {
+trait CellExpandEvent[T] extends StObject {
   
   /**
     * Expand data.
@@ -39,30 +40,18 @@ object CellExpandEvent {
   }
   
   @scala.inline
-  implicit class CellExpandEventOps[Self <: CellExpandEvent[_], T] (val x: Self with CellExpandEvent[T]) extends AnyVal {
+  implicit class CellExpandEventMutableBuilder[Self <: CellExpandEvent[_], T] (val x: Self with CellExpandEvent[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpandArgs(value: js.Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowData(value: T): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandArgs(value: js.Any): Self = this.set("expandArgs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdx(value: Double): Self = this.set("idx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowData(value: T): Self = this.set("rowData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowIdx(value: Double): Self = this.set("rowIdx", value.asInstanceOf[js.Any])
+    def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
   }
 }

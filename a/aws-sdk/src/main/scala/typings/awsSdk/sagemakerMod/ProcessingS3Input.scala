@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessingS3Input extends js.Object {
+trait ProcessingS3Input extends StObject {
   
   /**
     * The local path to the Amazon S3 bucket where you want Amazon SageMaker to download the inputs to run a processing job. LocalPath is an absolute path to the input data.
@@ -51,42 +52,30 @@ object ProcessingS3Input {
   }
   
   @scala.inline
-  implicit class ProcessingS3InputOps[Self <: ProcessingS3Input] (val x: Self) extends AnyVal {
+  implicit class ProcessingS3InputMutableBuilder[Self <: ProcessingS3Input] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalPath(value: ProcessingLocalPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3CompressionType(value: ProcessingS3CompressionType): Self = StObject.set(x, "S3CompressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3CompressionTypeUndefined: Self = StObject.set(x, "S3CompressionType", js.undefined)
     
     @scala.inline
-    def setLocalPath(value: ProcessingLocalPath): Self = this.set("LocalPath", value.asInstanceOf[js.Any])
+    def setS3DataDistributionType(value: ProcessingS3DataDistributionType): Self = StObject.set(x, "S3DataDistributionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3DataType(value: ProcessingS3DataType): Self = this.set("S3DataType", value.asInstanceOf[js.Any])
+    def setS3DataDistributionTypeUndefined: Self = StObject.set(x, "S3DataDistributionType", js.undefined)
     
     @scala.inline
-    def setS3InputMode(value: ProcessingS3InputMode): Self = this.set("S3InputMode", value.asInstanceOf[js.Any])
+    def setS3DataType(value: ProcessingS3DataType): Self = StObject.set(x, "S3DataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Uri(value: S3Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
+    def setS3InputMode(value: ProcessingS3InputMode): Self = StObject.set(x, "S3InputMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3CompressionType(value: ProcessingS3CompressionType): Self = this.set("S3CompressionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3CompressionType: Self = this.set("S3CompressionType", js.undefined)
-    
-    @scala.inline
-    def setS3DataDistributionType(value: ProcessingS3DataDistributionType): Self = this.set("S3DataDistributionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3DataDistributionType: Self = this.set("S3DataDistributionType", js.undefined)
+    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

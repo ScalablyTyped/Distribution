@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolvedTargets extends js.Object {
+trait ResolvedTargets extends StObject {
   
   /**
     * A list of parameter values sent to targets that resolved during the Automation execution.
@@ -26,33 +27,21 @@ object ResolvedTargets {
   }
   
   @scala.inline
-  implicit class ResolvedTargetsOps[Self <: ResolvedTargets] (val x: Self) extends AnyVal {
+  implicit class ResolvedTargetsMutableBuilder[Self <: ResolvedTargets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterValues(value: TargetParameterList): Self = StObject.set(x, "ParameterValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterValuesUndefined: Self = StObject.set(x, "ParameterValues", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "ParameterValues", js.Array(value :_*))
     
     @scala.inline
-    def setParameterValuesVarargs(value: ParameterValue*): Self = this.set("ParameterValues", js.Array(value :_*))
+    def setTruncated(value: Boolean): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterValues(value: TargetParameterList): Self = this.set("ParameterValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterValues: Self = this.set("ParameterValues", js.undefined)
-    
-    @scala.inline
-    def setTruncated(value: Boolean): Self = this.set("Truncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncated: Self = this.set("Truncated", js.undefined)
+    def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
   }
 }

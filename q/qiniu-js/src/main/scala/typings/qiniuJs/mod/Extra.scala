@@ -1,18 +1,19 @@
 package typings.qiniuJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Extra extends js.Object {
+trait Extra extends StObject {
   
   var fname: String = js.native
   
-      // 用来放置自定义变量
+  // 用来放置自定义变量
   var mimeType: js.Array[String] | Null = js.native
   
-      // 文件原文件名
+  // 文件原文件名
   var params: js.Any = js.native
 }
 object Extra {
@@ -24,33 +25,21 @@ object Extra {
   }
   
   @scala.inline
-  implicit class ExtraOps[Self <: Extra] (val x: Self) extends AnyVal {
+  implicit class ExtraMutableBuilder[Self <: Extra] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFname(value: String): Self = StObject.set(x, "fname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMimeType(value: js.Array[String]): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
     
     @scala.inline
-    def setFname(value: String): Self = this.set("fname", value.asInstanceOf[js.Any])
+    def setMimeTypeVarargs(value: String*): Self = StObject.set(x, "mimeType", js.Array(value :_*))
     
     @scala.inline
-    def setParams(value: js.Any): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMimeTypeVarargs(value: String*): Self = this.set("mimeType", js.Array(value :_*))
-    
-    @scala.inline
-    def setMimeType(value: js.Array[String]): Self = this.set("mimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMimeTypeNull: Self = this.set("mimeType", null)
+    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,7 @@ import typings.activexShell.activexShellNumbers.`0x02000`
 import typings.activexShell.activexShellNumbers.`0x04000`
 import typings.activexShell.activexShellNumbers.`0x08000`
 import typings.activexShell.activexShellNumbers.`0x10000`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShell.activexShellNumbers.`0x08000`
   - typings.activexShell.activexShellNumbers.`0x10000`
 */
-trait ShellFolderEnumerationFlags extends js.Object
+trait ShellFolderEnumerationFlags extends StObject
 object ShellFolderEnumerationFlags {
   
   /** **Windows 7 and later** The calling application is checking for the existence of child items in the folder. */

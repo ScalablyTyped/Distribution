@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the filter used to determine which devices to show in the device picker. The filter parameters are OR-ed together to build the resulting filter. */
 @js.native
-trait DevicePickerFilter extends js.Object {
+trait DevicePickerFilter extends StObject {
   
   /** Gets a list of supported device classes to show in the picker. This defaults to an empty list (no filter). You can add device classes to this vector and filter the devices list to those that are in one or more of the provided classes. */
   var supportedDeviceClasses: IVector[DeviceClass] = js.native
@@ -24,24 +25,12 @@ object DevicePickerFilter {
   }
   
   @scala.inline
-  implicit class DevicePickerFilterOps[Self <: DevicePickerFilter] (val x: Self) extends AnyVal {
+  implicit class DevicePickerFilterMutableBuilder[Self <: DevicePickerFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSupportedDeviceClasses(value: IVector[DeviceClass]): Self = StObject.set(x, "supportedDeviceClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSupportedDeviceClasses(value: IVector[DeviceClass]): Self = this.set("supportedDeviceClasses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedDeviceSelectors(value: IVector[String]): Self = this.set("supportedDeviceSelectors", value.asInstanceOf[js.Any])
+    def setSupportedDeviceSelectors(value: IVector[String]): Self = StObject.set(x, "supportedDeviceSelectors", value.asInstanceOf[js.Any])
   }
 }

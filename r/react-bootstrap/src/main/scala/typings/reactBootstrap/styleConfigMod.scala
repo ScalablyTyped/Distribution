@@ -1,66 +1,155 @@
 package typings.reactBootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-bootstrap/lib/utils/StyleConfig", JSImport.Namespace)
-@js.native
-object styleConfigMod extends js.Object {
+object styleConfigMod {
   
+  @JSImport("react-bootstrap/lib/utils/StyleConfig", "DEVICE_SIZES")
+  @js.native
   val DEVICE_SIZES: js.Array[String] = js.native
   
-  @js.native
-  object SIZE_MAP extends js.Object {
+  object SIZE_MAP {
     
-    var large: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "SIZE_MAP")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var lg: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "SIZE_MAP.large")
+    @js.native
+    def large: String = js.native
+    @scala.inline
+    def large_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("large")(x.asInstanceOf[js.Any])
     
-    var md: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "SIZE_MAP.lg")
+    @js.native
+    def lg: String = js.native
+    @scala.inline
+    def lg_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lg")(x.asInstanceOf[js.Any])
     
-    var medium: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "SIZE_MAP.md")
+    @js.native
+    def md: String = js.native
+    @scala.inline
+    def md_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md")(x.asInstanceOf[js.Any])
     
-    var sm: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "SIZE_MAP.medium")
+    @js.native
+    def medium: String = js.native
+    @scala.inline
+    def medium_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
     
-    var small: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "SIZE_MAP.sm")
+    @js.native
+    def sm: String = js.native
+    @scala.inline
+    def sm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sm")(x.asInstanceOf[js.Any])
     
-    var xs: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "SIZE_MAP.small")
+    @js.native
+    def small: String = js.native
+    @scala.inline
+    def small_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small")(x.asInstanceOf[js.Any])
     
-    var xsmall: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "SIZE_MAP.xs")
+    @js.native
+    def xs: String = js.native
+    @scala.inline
+    def xs_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xs")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "SIZE_MAP.xsmall")
+    @js.native
+    def xsmall: String = js.native
+    @scala.inline
+    def xsmall_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xsmall")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object Size extends js.Object {
+  object Size {
     
-    var LARGE: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "Size")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var SMALL: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "Size.LARGE")
+    @js.native
+    def LARGE: String = js.native
+    @scala.inline
+    def LARGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
     
-    var XSMALL: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "Size.SMALL")
+    @js.native
+    def SMALL: String = js.native
+    @scala.inline
+    def SMALL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "Size.XSMALL")
+    @js.native
+    def XSMALL: String = js.native
+    @scala.inline
+    def XSMALL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XSMALL")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object State extends js.Object {
+  object State {
     
-    var DANGER: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "State")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var INFO: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "State.DANGER")
+    @js.native
+    def DANGER: String = js.native
+    @scala.inline
+    def DANGER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DANGER")(x.asInstanceOf[js.Any])
     
-    var SUCCESS: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "State.INFO")
+    @js.native
+    def INFO: String = js.native
+    @scala.inline
+    def INFO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
     
-    var WARNING: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "State.SUCCESS")
+    @js.native
+    def SUCCESS: String = js.native
+    @scala.inline
+    def SUCCESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "State.WARNING")
+    @js.native
+    def WARNING: String = js.native
+    @scala.inline
+    def WARNING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object Style extends js.Object {
+  object Style {
     
-    var DEFAULT: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "Style")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var INVERSE: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "Style.DEFAULT")
+    @js.native
+    def DEFAULT: String = js.native
+    @scala.inline
+    def DEFAULT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT")(x.asInstanceOf[js.Any])
     
-    var LINK: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "Style.INVERSE")
+    @js.native
+    def INVERSE: String = js.native
+    @scala.inline
+    def INVERSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVERSE")(x.asInstanceOf[js.Any])
     
-    var PRIMARY: String = js.native
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "Style.LINK")
+    @js.native
+    def LINK: String = js.native
+    @scala.inline
+    def LINK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINK")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-bootstrap/lib/utils/StyleConfig", "Style.PRIMARY")
+    @js.native
+    def PRIMARY: String = js.native
+    @scala.inline
+    def PRIMARY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY")(x.asInstanceOf[js.Any])
   }
 }

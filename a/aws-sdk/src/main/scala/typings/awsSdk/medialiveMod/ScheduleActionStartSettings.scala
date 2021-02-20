@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleActionStartSettings extends js.Object {
+trait ScheduleActionStartSettings extends StObject {
   
   /**
     * Option for specifying the start time for an action.
@@ -31,36 +32,24 @@ object ScheduleActionStartSettings {
   }
   
   @scala.inline
-  implicit class ScheduleActionStartSettingsOps[Self <: ScheduleActionStartSettings] (val x: Self) extends AnyVal {
+  implicit class ScheduleActionStartSettingsMutableBuilder[Self <: ScheduleActionStartSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixedModeScheduleActionStartSettings(value: FixedModeScheduleActionStartSettings): Self = StObject.set(x, "FixedModeScheduleActionStartSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixedModeScheduleActionStartSettingsUndefined: Self = StObject.set(x, "FixedModeScheduleActionStartSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowModeScheduleActionStartSettings(value: FollowModeScheduleActionStartSettings): Self = StObject.set(x, "FollowModeScheduleActionStartSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedModeScheduleActionStartSettings(value: FixedModeScheduleActionStartSettings): Self = this.set("FixedModeScheduleActionStartSettings", value.asInstanceOf[js.Any])
+    def setFollowModeScheduleActionStartSettingsUndefined: Self = StObject.set(x, "FollowModeScheduleActionStartSettings", js.undefined)
     
     @scala.inline
-    def deleteFixedModeScheduleActionStartSettings: Self = this.set("FixedModeScheduleActionStartSettings", js.undefined)
+    def setImmediateModeScheduleActionStartSettings(value: ImmediateModeScheduleActionStartSettings): Self = StObject.set(x, "ImmediateModeScheduleActionStartSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowModeScheduleActionStartSettings(value: FollowModeScheduleActionStartSettings): Self = this.set("FollowModeScheduleActionStartSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFollowModeScheduleActionStartSettings: Self = this.set("FollowModeScheduleActionStartSettings", js.undefined)
-    
-    @scala.inline
-    def setImmediateModeScheduleActionStartSettings(value: ImmediateModeScheduleActionStartSettings): Self = this.set("ImmediateModeScheduleActionStartSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImmediateModeScheduleActionStartSettings: Self = this.set("ImmediateModeScheduleActionStartSettings", js.undefined)
+    def setImmediateModeScheduleActionStartSettingsUndefined: Self = StObject.set(x, "ImmediateModeScheduleActionStartSettings", js.undefined)
   }
 }

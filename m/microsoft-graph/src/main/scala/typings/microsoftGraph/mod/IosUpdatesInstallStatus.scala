@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.downloadFailed
   - typings.microsoftGraph.microsoftGraphStrings.downloading
 */
-trait IosUpdatesInstallStatus extends js.Object
+trait IosUpdatesInstallStatus extends StObject
 object IosUpdatesInstallStatus {
   
   @scala.inline

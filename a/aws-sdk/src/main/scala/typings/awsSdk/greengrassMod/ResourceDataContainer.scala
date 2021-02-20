@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceDataContainer extends js.Object {
+trait ResourceDataContainer extends StObject {
   
   /**
     * Attributes that define the local device resource.
@@ -41,48 +42,36 @@ object ResourceDataContainer {
   }
   
   @scala.inline
-  implicit class ResourceDataContainerOps[Self <: ResourceDataContainer] (val x: Self) extends AnyVal {
+  implicit class ResourceDataContainerMutableBuilder[Self <: ResourceDataContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalDeviceResourceData(value: LocalDeviceResourceData): Self = StObject.set(x, "LocalDeviceResourceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalDeviceResourceDataUndefined: Self = StObject.set(x, "LocalDeviceResourceData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalVolumeResourceData(value: LocalVolumeResourceData): Self = StObject.set(x, "LocalVolumeResourceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalDeviceResourceData(value: LocalDeviceResourceData): Self = this.set("LocalDeviceResourceData", value.asInstanceOf[js.Any])
+    def setLocalVolumeResourceDataUndefined: Self = StObject.set(x, "LocalVolumeResourceData", js.undefined)
     
     @scala.inline
-    def deleteLocalDeviceResourceData: Self = this.set("LocalDeviceResourceData", js.undefined)
+    def setS3MachineLearningModelResourceData(value: S3MachineLearningModelResourceData): Self = StObject.set(x, "S3MachineLearningModelResourceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalVolumeResourceData(value: LocalVolumeResourceData): Self = this.set("LocalVolumeResourceData", value.asInstanceOf[js.Any])
+    def setS3MachineLearningModelResourceDataUndefined: Self = StObject.set(x, "S3MachineLearningModelResourceData", js.undefined)
     
     @scala.inline
-    def deleteLocalVolumeResourceData: Self = this.set("LocalVolumeResourceData", js.undefined)
+    def setSageMakerMachineLearningModelResourceData(value: SageMakerMachineLearningModelResourceData): Self = StObject.set(x, "SageMakerMachineLearningModelResourceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3MachineLearningModelResourceData(value: S3MachineLearningModelResourceData): Self = this.set("S3MachineLearningModelResourceData", value.asInstanceOf[js.Any])
+    def setSageMakerMachineLearningModelResourceDataUndefined: Self = StObject.set(x, "SageMakerMachineLearningModelResourceData", js.undefined)
     
     @scala.inline
-    def deleteS3MachineLearningModelResourceData: Self = this.set("S3MachineLearningModelResourceData", js.undefined)
+    def setSecretsManagerSecretResourceData(value: SecretsManagerSecretResourceData): Self = StObject.set(x, "SecretsManagerSecretResourceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSageMakerMachineLearningModelResourceData(value: SageMakerMachineLearningModelResourceData): Self = this.set("SageMakerMachineLearningModelResourceData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSageMakerMachineLearningModelResourceData: Self = this.set("SageMakerMachineLearningModelResourceData", js.undefined)
-    
-    @scala.inline
-    def setSecretsManagerSecretResourceData(value: SecretsManagerSecretResourceData): Self = this.set("SecretsManagerSecretResourceData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretsManagerSecretResourceData: Self = this.set("SecretsManagerSecretResourceData", js.undefined)
+    def setSecretsManagerSecretResourceDataUndefined: Self = StObject.set(x, "SecretsManagerSecretResourceData", js.undefined)
   }
 }

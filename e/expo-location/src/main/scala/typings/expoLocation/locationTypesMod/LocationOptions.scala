@@ -1,11 +1,12 @@
 package typings.expoLocation.locationTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationOptions extends js.Object {
+trait LocationOptions extends StObject {
   
   /**
     * Location manager accuracy. Pass one of `LocationAccuracy` enum values.
@@ -41,42 +42,30 @@ object LocationOptions {
   }
   
   @scala.inline
-  implicit class LocationOptionsOps[Self <: LocationOptions] (val x: Self) extends AnyVal {
+  implicit class LocationOptionsMutableBuilder[Self <: LocationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: LocationAccuracy): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistanceInterval(value: Double): Self = StObject.set(x, "distanceInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracy(value: LocationAccuracy): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    def setDistanceIntervalUndefined: Self = StObject.set(x, "distanceInterval", js.undefined)
     
     @scala.inline
-    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
+    def setMayShowUserSettingsDialog(value: Boolean): Self = StObject.set(x, "mayShowUserSettingsDialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceInterval(value: Double): Self = this.set("distanceInterval", value.asInstanceOf[js.Any])
+    def setMayShowUserSettingsDialogUndefined: Self = StObject.set(x, "mayShowUserSettingsDialog", js.undefined)
     
     @scala.inline
-    def deleteDistanceInterval: Self = this.set("distanceInterval", js.undefined)
+    def setTimeInterval(value: Double): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMayShowUserSettingsDialog(value: Boolean): Self = this.set("mayShowUserSettingsDialog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMayShowUserSettingsDialog: Self = this.set("mayShowUserSettingsDialog", js.undefined)
-    
-    @scala.inline
-    def setTimeInterval(value: Double): Self = this.set("timeInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeInterval: Self = this.set("timeInterval", js.undefined)
+    def setTimeIntervalUndefined: Self = StObject.set(x, "timeInterval", js.undefined)
   }
 }

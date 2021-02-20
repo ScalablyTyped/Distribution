@@ -6,6 +6,7 @@ import typings.jestTypes.circusMod.TestMode
 import typings.jestTypes.circusMod.TestName
 import typings.jestTypes.globalMod.DoneFn
 import typings.jestTypes.jestTypesStrings.add_test
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

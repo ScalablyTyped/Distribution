@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAuthEventFeedbackRequest extends js.Object {
+trait UpdateAuthEventFeedbackRequest extends StObject {
   
   /**
     * The event ID.
@@ -47,33 +48,21 @@ object UpdateAuthEventFeedbackRequest {
   }
   
   @scala.inline
-  implicit class UpdateAuthEventFeedbackRequestOps[Self <: UpdateAuthEventFeedbackRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAuthEventFeedbackRequestMutableBuilder[Self <: UpdateAuthEventFeedbackRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventId(value: EventIdType): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeedbackToken(value: TokenModelType): Self = StObject.set(x, "FeedbackToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeedbackValue(value: FeedbackValueType): Self = StObject.set(x, "FeedbackValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventId(value: EventIdType): Self = this.set("EventId", value.asInstanceOf[js.Any])
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedbackToken(value: TokenModelType): Self = this.set("FeedbackToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFeedbackValue(value: FeedbackValueType): Self = this.set("FeedbackValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.kurentoClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IceConnection extends js.Object {
+trait IceConnection extends StObject {
   
   var componentId: Double = js.native
   
@@ -22,27 +23,15 @@ object IceConnection {
   }
   
   @scala.inline
-  implicit class IceConnectionOps[Self <: IceConnection] (val x: Self) extends AnyVal {
+  implicit class IceConnectionMutableBuilder[Self <: IceConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentId(value: Double): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentId(value: Double): Self = this.set("componentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: js.Any): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreamId(value: String): Self = this.set("streamId", value.asInstanceOf[js.Any])
+    def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
   }
 }

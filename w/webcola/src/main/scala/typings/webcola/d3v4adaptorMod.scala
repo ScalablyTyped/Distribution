@@ -11,16 +11,31 @@ import typings.webcola.anon.FnCallTypes
 import typings.webcola.d3adaptorMod.ID3StyleLayoutAdaptor
 import typings.webcola.layoutMod.Event
 import typings.webcola.layoutMod.Layout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcola/dist/src/d3v4adaptor", JSImport.Namespace)
-@js.native
-object d3v4adaptorMod extends js.Object {
+object d3v4adaptorMod {
+  
+  @JSImport("webcola/dist/src/d3v4adaptor", "D3StyleLayoutAdaptor")
+  @js.native
+  class D3StyleLayoutAdaptor protected ()
+    extends Layout
+       with ID3StyleLayoutAdaptor {
+    def this(d3Context: D3Context) = this()
+    
+    var d3Context: js.Any = js.native
+    
+    /* InferMemberOverrides */
+    /* protected */ override def kick(): Unit = js.native
+    
+    /* InferMemberOverrides */
+    /* protected */ override def trigger(e: Event): Unit = js.native
+  }
   
   @js.native
-  trait D3Context extends js.Object {
+  trait D3Context extends StObject {
     
     def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = js.native
     @JSName("dispatch")
@@ -40,20 +55,5 @@ object d3v4adaptorMod extends js.Object {
     def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
     @JSName("timer")
     var timer_Original: FnCall = js.native
-  }
-  
-  @js.native
-  class D3StyleLayoutAdaptor protected ()
-    extends Layout
-       with ID3StyleLayoutAdaptor {
-    def this(d3Context: D3Context) = this()
-    
-    var d3Context: js.Any = js.native
-    
-    /* InferMemberOverrides */
-    /* protected */ override def kick(): Unit = js.native
-    
-    /* InferMemberOverrides */
-    /* protected */ override def trigger(e: Event): Unit = js.native
   }
 }

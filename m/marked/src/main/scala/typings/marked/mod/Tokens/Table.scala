@@ -5,6 +5,7 @@ import typings.marked.markedStrings.left
 import typings.marked.markedStrings.right
 import typings.marked.markedStrings.table
 import typings.marked.mod.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,42 +39,30 @@ object Table {
   }
   
   @scala.inline
-  implicit class TableOps[Self <: Table] (val x: Self) extends AnyVal {
+  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: js.Array[center | left | right | Null]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignVarargs(value: (center | left | right | Null)*): Self = StObject.set(x, "align", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCells(value: js.Array[js.Array[String]]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignVarargs(value: (center | left | right | Null)*): Self = this.set("align", js.Array(value :_*))
+    def setCellsVarargs(value: js.Array[String]*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
     @scala.inline
-    def setAlign(value: js.Array[center | left | right | Null]): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellsVarargs(value: js.Array[String]*): Self = this.set("cells", js.Array(value :_*))
+    def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
     
     @scala.inline
-    def setCells(value: js.Array[js.Array[String]]): Self = this.set("cells", value.asInstanceOf[js.Any])
+    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderVarargs(value: String*): Self = this.set("header", js.Array(value :_*))
-    
-    @scala.inline
-    def setHeader(value: js.Array[String]): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: table): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: table): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

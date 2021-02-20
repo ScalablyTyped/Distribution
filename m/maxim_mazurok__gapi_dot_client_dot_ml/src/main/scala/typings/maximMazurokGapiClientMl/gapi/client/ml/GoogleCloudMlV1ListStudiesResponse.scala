@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1ListStudiesResponse extends js.Object {
+trait GoogleCloudMlV1ListStudiesResponse extends StObject {
   
   /** The studies associated with the project. */
   var studies: js.UndefOr[js.Array[GoogleCloudMlV1Study]] = js.native
@@ -19,27 +20,15 @@ object GoogleCloudMlV1ListStudiesResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1ListStudiesResponseOps[Self <: GoogleCloudMlV1ListStudiesResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1ListStudiesResponseMutableBuilder[Self <: GoogleCloudMlV1ListStudiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStudies(value: js.Array[GoogleCloudMlV1Study]): Self = StObject.set(x, "studies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStudiesUndefined: Self = StObject.set(x, "studies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStudiesVarargs(value: GoogleCloudMlV1Study*): Self = this.set("studies", js.Array(value :_*))
-    
-    @scala.inline
-    def setStudies(value: js.Array[GoogleCloudMlV1Study]): Self = this.set("studies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStudies: Self = this.set("studies", js.undefined)
+    def setStudiesVarargs(value: GoogleCloudMlV1Study*): Self = StObject.set(x, "studies", js.Array(value :_*))
   }
 }

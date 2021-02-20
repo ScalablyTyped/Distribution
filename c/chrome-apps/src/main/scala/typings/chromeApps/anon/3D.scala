@@ -1,11 +1,12 @@
 package typings.chromeApps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `3D` extends js.Object {
+trait `3D` extends StObject {
   
   /**
     * The '3D' requirement denotes GPU hardware acceleration.
@@ -50,30 +51,18 @@ object `3D` {
   }
   
   @scala.inline
-  implicit class `3DOps`[Self <: `3D`] (val x: Self) extends AnyVal {
+  implicit class `3DMutableBuilder`[Self <: `3D`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set3D(value: Features): Self = StObject.set(x, "3D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set3DUndefined: Self = StObject.set(x, "3D", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlugins(value: Npapi): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set3D(value: Features): Self = this.set("3D", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete3D: Self = this.set("3D", js.undefined)
-    
-    @scala.inline
-    def setPlugins(value: Npapi): Self = this.set("plugins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
   }
 }

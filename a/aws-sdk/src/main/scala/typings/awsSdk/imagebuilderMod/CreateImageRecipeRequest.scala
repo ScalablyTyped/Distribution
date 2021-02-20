@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateImageRecipeRequest extends js.Object {
+trait CreateImageRecipeRequest extends StObject {
   
   /**
     * The block device mappings of the image recipe. 
@@ -67,63 +68,51 @@ object CreateImageRecipeRequest {
   }
   
   @scala.inline
-  implicit class CreateImageRecipeRequestOps[Self <: CreateImageRecipeRequest] (val x: Self) extends AnyVal {
+  implicit class CreateImageRecipeRequestMutableBuilder[Self <: CreateImageRecipeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockDeviceMappings(value: InstanceBlockDeviceMappings): Self = StObject.set(x, "blockDeviceMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "blockDeviceMappings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value :_*))
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentsVarargs(value: ComponentConfiguration*): Self = this.set("components", js.Array(value :_*))
+    def setComponents(value: ComponentConfigurationList): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: ComponentConfigurationList): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setComponentsVarargs(value: ComponentConfiguration*): Self = StObject.set(x, "components", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDescription(value: NonEmptyString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentImage(value: NonEmptyString): Self = this.set("parentImage", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setSemanticVersion(value: VersionNumber): Self = this.set("semanticVersion", value.asInstanceOf[js.Any])
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = this.set("blockDeviceMappings", js.Array(value :_*))
+    def setParentImage(value: NonEmptyString): Self = StObject.set(x, "parentImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockDeviceMappings(value: InstanceBlockDeviceMappings): Self = this.set("blockDeviceMappings", value.asInstanceOf[js.Any])
+    def setSemanticVersion(value: VersionNumber): Self = StObject.set(x, "semanticVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockDeviceMappings: Self = this.set("blockDeviceMappings", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: NonEmptyString): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setWorkingDirectory(value: NonEmptyString): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setWorkingDirectory(value: NonEmptyString): Self = this.set("workingDirectory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkingDirectory: Self = this.set("workingDirectory", js.undefined)
+    def setWorkingDirectoryUndefined: Self = StObject.set(x, "workingDirectory", js.undefined)
   }
 }

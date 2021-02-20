@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Label extends js.Object {
+trait Label extends StObject {
   
   /** The color to assign to the label. Color is only available for labels that have their `type` set to `user`. */
   var color: js.UndefOr[LabelColor] = js.native
@@ -51,78 +52,66 @@ object Label {
   }
   
   @scala.inline
-  implicit class LabelOps[Self <: Label] (val x: Self) extends AnyVal {
+  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: LabelColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: LabelColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setLabelListVisibility(value: String): Self = StObject.set(x, "labelListVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabelListVisibilityUndefined: Self = StObject.set(x, "labelListVisibility", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMessageListVisibility(value: String): Self = StObject.set(x, "messageListVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelListVisibility(value: String): Self = this.set("labelListVisibility", value.asInstanceOf[js.Any])
+    def setMessageListVisibilityUndefined: Self = StObject.set(x, "messageListVisibility", js.undefined)
     
     @scala.inline
-    def deleteLabelListVisibility: Self = this.set("labelListVisibility", js.undefined)
+    def setMessagesTotal(value: Double): Self = StObject.set(x, "messagesTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageListVisibility(value: String): Self = this.set("messageListVisibility", value.asInstanceOf[js.Any])
+    def setMessagesTotalUndefined: Self = StObject.set(x, "messagesTotal", js.undefined)
     
     @scala.inline
-    def deleteMessageListVisibility: Self = this.set("messageListVisibility", js.undefined)
+    def setMessagesUnread(value: Double): Self = StObject.set(x, "messagesUnread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesTotal(value: Double): Self = this.set("messagesTotal", value.asInstanceOf[js.Any])
+    def setMessagesUnreadUndefined: Self = StObject.set(x, "messagesUnread", js.undefined)
     
     @scala.inline
-    def deleteMessagesTotal: Self = this.set("messagesTotal", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesUnread(value: Double): Self = this.set("messagesUnread", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessagesUnread: Self = this.set("messagesUnread", js.undefined)
+    def setThreadsTotal(value: Double): Self = StObject.set(x, "threadsTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setThreadsTotalUndefined: Self = StObject.set(x, "threadsTotal", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setThreadsUnread(value: Double): Self = StObject.set(x, "threadsUnread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadsTotal(value: Double): Self = this.set("threadsTotal", value.asInstanceOf[js.Any])
+    def setThreadsUnreadUndefined: Self = StObject.set(x, "threadsUnread", js.undefined)
     
     @scala.inline
-    def deleteThreadsTotal: Self = this.set("threadsTotal", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadsUnread(value: Double): Self = this.set("threadsUnread", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreadsUnread: Self = this.set("threadsUnread", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Algorithm extends js.Object {
+trait Algorithm extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the algorithm.
@@ -66,78 +67,66 @@ object Algorithm {
   }
   
   @scala.inline
-  implicit class AlgorithmOps[Self <: Algorithm] (val x: Self) extends AnyVal {
+  implicit class AlgorithmMutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmArn(value: Arn): Self = StObject.set(x, "algorithmArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmArnUndefined: Self = StObject.set(x, "algorithmArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlgorithmImage(value: AlgorithmImage): Self = StObject.set(x, "algorithmImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmArn(value: Arn): Self = this.set("algorithmArn", value.asInstanceOf[js.Any])
+    def setAlgorithmImageUndefined: Self = StObject.set(x, "algorithmImage", js.undefined)
     
     @scala.inline
-    def deleteAlgorithmArn: Self = this.set("algorithmArn", js.undefined)
+    def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmImage(value: AlgorithmImage): Self = this.set("algorithmImage", value.asInstanceOf[js.Any])
+    def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
     @scala.inline
-    def deleteAlgorithmImage: Self = this.set("algorithmImage", js.undefined)
+    def setDefaultHyperParameterRanges(value: DefaultHyperParameterRanges): Self = StObject.set(x, "defaultHyperParameterRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDateTime(value: Date): Self = this.set("creationDateTime", value.asInstanceOf[js.Any])
+    def setDefaultHyperParameterRangesUndefined: Self = StObject.set(x, "defaultHyperParameterRanges", js.undefined)
     
     @scala.inline
-    def deleteCreationDateTime: Self = this.set("creationDateTime", js.undefined)
+    def setDefaultHyperParameters(value: HyperParameters): Self = StObject.set(x, "defaultHyperParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHyperParameterRanges(value: DefaultHyperParameterRanges): Self = this.set("defaultHyperParameterRanges", value.asInstanceOf[js.Any])
+    def setDefaultHyperParametersUndefined: Self = StObject.set(x, "defaultHyperParameters", js.undefined)
     
     @scala.inline
-    def deleteDefaultHyperParameterRanges: Self = this.set("defaultHyperParameterRanges", js.undefined)
+    def setDefaultResourceConfig(value: ResourceConfig): Self = StObject.set(x, "defaultResourceConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHyperParameters(value: HyperParameters): Self = this.set("defaultHyperParameters", value.asInstanceOf[js.Any])
+    def setDefaultResourceConfigUndefined: Self = StObject.set(x, "defaultResourceConfig", js.undefined)
     
     @scala.inline
-    def deleteDefaultHyperParameters: Self = this.set("defaultHyperParameters", js.undefined)
+    def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultResourceConfig(value: ResourceConfig): Self = this.set("defaultResourceConfig", value.asInstanceOf[js.Any])
+    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     
     @scala.inline
-    def deleteDefaultResourceConfig: Self = this.set("defaultResourceConfig", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDateTime(value: Date): Self = this.set("lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedDateTime: Self = this.set("lastUpdatedDateTime", js.undefined)
+    def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTrainingInputMode(value: TrainingInputMode): Self = StObject.set(x, "trainingInputMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: Arn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
-    
-    @scala.inline
-    def setTrainingInputMode(value: TrainingInputMode): Self = this.set("trainingInputMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingInputMode: Self = this.set("trainingInputMode", js.undefined)
+    def setTrainingInputModeUndefined: Self = StObject.set(x, "trainingInputMode", js.undefined)
   }
 }

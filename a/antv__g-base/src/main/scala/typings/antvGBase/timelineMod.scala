@@ -3,16 +3,25 @@ package typings.antvGBase
 import typings.antvGBase.interfacesMod.ICanvas
 import typings.antvGBase.interfacesMod.IElement
 import typings.d3Timer.mod.Timer_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g-base/lib/animate/timeline", JSImport.Namespace)
-@js.native
-object timelineMod extends js.Object {
+object timelineMod {
+  
+  @JSImport("@antv/g-base/lib/animate/timeline", JSImport.Default)
+  @js.native
+  class default protected () extends Timeline {
+    /**
+      * 时间轴构造函数，依赖于画布
+      * @param {}
+      */
+    def this(canvas: ICanvas) = this()
+  }
   
   @js.native
-  trait Timeline extends js.Object {
+  trait Timeline extends StObject {
     
     /**
       * 增加动画元素
@@ -74,14 +83,5 @@ object timelineMod extends js.Object {
       * @type {d3Timer.Timer}
       */
     var timer: Timer_ = js.native
-  }
-  
-  @js.native
-  class default protected () extends Timeline {
-    /**
-      * 时间轴构造函数，依赖于画布
-      * @param {}
-      */
-    def this(canvas: ICanvas) = this()
   }
 }

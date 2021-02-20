@@ -2,25 +2,34 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/CommandBar", JSImport.Namespace)
-@js.native
-object commandBarMod extends js.Object {
+object commandBarMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/CommandBar", "CommandBar")
+  @js.native
   val CommandBar: FunctionComponent[ICommandBarProps] = js.native
   
+  @JSImport("office-ui-fabric-react/lib/components/CommandBar", "CommandBarBase")
   @js.native
   class CommandBarBase protected ()
     extends typings.officeUiFabricReact.commandBarBaseMod.CommandBarBase {
     def this(props: ICommandBarProps) = this()
   }
   /* static members */
-  @js.native
-  object CommandBarBase extends js.Object {
+  object CommandBarBase {
     
-    var defaultProps: ICommandBarProps = js.native
+    @JSImport("office-ui-fabric-react/lib/components/CommandBar", "CommandBarBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/CommandBar", "CommandBarBase.defaultProps")
+    @js.native
+    def defaultProps: ICommandBarProps = js.native
+    @scala.inline
+    def defaultProps_=(x: ICommandBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

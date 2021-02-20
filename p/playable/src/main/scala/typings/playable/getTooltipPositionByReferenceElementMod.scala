@@ -2,15 +2,18 @@ package typings.playable
 
 import typings.playable.tooltipTypesMod.ITooltipPosition
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/core/tooltip/utils/getTooltipPositionByReferenceElement", JSImport.Namespace)
-@js.native
-object getTooltipPositionByReferenceElementMod extends js.Object {
+object getTooltipPositionByReferenceElementMod {
   
+  @JSImport("playable/dist/src/modules/ui/core/tooltip/utils/getTooltipPositionByReferenceElement", JSImport.Default)
+  @js.native
   def default(tooltipReferenceElement: HTMLElement, tooltipContainerElement: HTMLElement): ITooltipPosition = js.native
+  @JSImport("playable/dist/src/modules/ui/core/tooltip/utils/getTooltipPositionByReferenceElement", JSImport.Default)
+  @js.native
   def default(
     tooltipReferenceElement: HTMLElement,
     tooltipContainerElement: HTMLElement,

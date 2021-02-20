@@ -1,5 +1,6 @@
 package typings.videoJs.mod.videojs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object ControlBarOptions {
   }
   
   @scala.inline
-  implicit class ControlBarOptionsOps[Self <: ControlBarOptions] (val x: Self) extends AnyVal {
+  implicit class ControlBarOptionsMutableBuilder[Self <: ControlBarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullscreenToggle(value: Boolean): Self = StObject.set(x, "fullscreenToggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullscreenToggleUndefined: Self = StObject.set(x, "fullscreenToggle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVolumePanel(value: VolumePanelOptions): Self = StObject.set(x, "volumePanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreenToggle(value: Boolean): Self = this.set("fullscreenToggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullscreenToggle: Self = this.set("fullscreenToggle", js.undefined)
-    
-    @scala.inline
-    def setVolumePanel(value: VolumePanelOptions): Self = this.set("volumePanel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumePanel: Self = this.set("volumePanel", js.undefined)
+    def setVolumePanelUndefined: Self = StObject.set(x, "volumePanel", js.undefined)
   }
 }

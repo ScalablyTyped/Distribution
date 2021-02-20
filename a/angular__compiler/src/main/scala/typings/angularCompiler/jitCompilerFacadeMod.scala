@@ -4,16 +4,14 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.angularCompiler.compilerFacadeInterfaceMod.CompilerFacade
 import typings.angularCompiler.outputJitMod.JitEvaluator
 import typings.angularCompiler.resourceLoaderMod.ResourceLoader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/jit_compiler_facade", JSImport.Namespace)
-@js.native
-object jitCompilerFacadeMod extends js.Object {
+object jitCompilerFacadeMod {
   
-  def publishFacade(global: js.Any): Unit = js.native
-  
+  @JSImport("@angular/compiler/src/jit_compiler_facade", "CompilerFacadeImpl")
   @js.native
   class CompilerFacadeImpl () extends CompilerFacade {
     def this(jitEvaluator: JitEvaluator) = this()
@@ -36,4 +34,8 @@ object jitCompilerFacadeMod extends js.Object {
       */
     var jitExpression: js.Any = js.native
   }
+  
+  @JSImport("@angular/compiler/src/jit_compiler_facade", "publishFacade")
+  @js.native
+  def publishFacade(global: js.Any): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.jqueryFancytree.Fancytree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TranslationTable extends js.Object {
+trait TranslationTable extends StObject {
   
   /**
     * "Load error!"
@@ -36,42 +37,30 @@ object TranslationTable {
   }
   
   @scala.inline
-  implicit class TranslationTableOps[Self <: TranslationTable] (val x: Self) extends AnyVal {
+  implicit class TranslationTableMutableBuilder[Self <: TranslationTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadError(value: String): Self = StObject.set(x, "loadError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadErrorUndefined: Self = StObject.set(x, "loadError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadError(value: String): Self = this.set("loadError", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteLoadError: Self = this.set("loadError", js.undefined)
+    def setMoreData(value: String): Self = StObject.set(x, "moreData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: String): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setMoreDataUndefined: Self = StObject.set(x, "moreData", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoreData(value: String): Self = this.set("moreData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMoreData: Self = this.set("moreData", js.undefined)
-    
-    @scala.inline
-    def setNoData(value: String): Self = this.set("noData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoData: Self = this.set("noData", js.undefined)
+    def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
   }
 }

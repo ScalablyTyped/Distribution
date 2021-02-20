@@ -10,14 +10,14 @@ import typings.typeorm.typeormStrings.ASC
 import typings.typeorm.typeormStrings.DESC
 import typings.typeorm.typeormStrings.`NULLS FIRST`
 import typings.typeorm.typeormStrings.`NULLS LAST`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/query-builder/SoftDeleteQueryBuilder", JSImport.Namespace)
-@js.native
-object queryBuilderSoftDeleteQueryBuilderMod extends js.Object {
+object queryBuilderSoftDeleteQueryBuilderMod {
   
+  @JSImport("typeorm/query-builder/SoftDeleteQueryBuilder", "SoftDeleteQueryBuilder")
   @js.native
   class SoftDeleteQueryBuilder[Entity] protected ()
     extends QueryBuilder[Entity]

@@ -1,6 +1,7 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
 import typings.winrt.Windows.Storage.Streams.IInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 'Properties' object passed into the WL.backgroundUpload method.
   */
 @js.native
-trait IBackgroundUploadProperties extends js.Object {
+trait IBackgroundUploadProperties extends StObject {
   
   /**
     * The file input object to read the file from. Can be a
@@ -51,45 +52,33 @@ object IBackgroundUploadProperties {
   }
   
   @scala.inline
-  implicit class IBackgroundUploadPropertiesOps[Self <: IBackgroundUploadProperties] (val x: Self) extends AnyVal {
+  implicit class IBackgroundUploadPropertiesMutableBuilder[Self <: IBackgroundUploadProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile_input(value: js.Any): Self = StObject.set(x, "file_input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile_inputUndefined: Self = StObject.set(x, "file_input", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setFile_nameUndefined: Self = StObject.set(x, "file_name", js.undefined)
     
     @scala.inline
-    def setFile_input(value: js.Any): Self = this.set("file_input", value.asInstanceOf[js.Any])
+    def setOverwrite(value: String): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFile_input: Self = this.set("file_input", js.undefined)
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
     @scala.inline
-    def setFile_name(value: String): Self = this.set("file_name", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFile_name: Self = this.set("file_name", js.undefined)
+    def setStream_input(value: IInputStream): Self = StObject.set(x, "stream_input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwrite(value: String): Self = this.set("overwrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
-    
-    @scala.inline
-    def setStream_input(value: IInputStream): Self = this.set("stream_input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStream_input: Self = this.set("stream_input", js.undefined)
+    def setStream_inputUndefined: Self = StObject.set(x, "stream_input", js.undefined)
   }
 }

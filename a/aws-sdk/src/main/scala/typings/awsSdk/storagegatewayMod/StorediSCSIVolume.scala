@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorediSCSIVolume extends js.Object {
+trait StorediSCSIVolume extends StObject {
   
   /**
     * The date the volume was created. Volumes created prior to March 28, 2017 don’t have this timestamp.
@@ -88,108 +89,96 @@ object StorediSCSIVolume {
   }
   
   @scala.inline
-  implicit class StorediSCSIVolumeOps[Self <: StorediSCSIVolume] (val x: Self) extends AnyVal {
+  implicit class StorediSCSIVolumeMutableBuilder[Self <: StorediSCSIVolume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedDate(value: CreatedDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: CreatedDate): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    def setPreservedExistingData(value: scala.Boolean): Self = StObject.set(x, "PreservedExistingData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    def setPreservedExistingDataUndefined: Self = StObject.set(x, "PreservedExistingData", js.undefined)
     
     @scala.inline
-    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    def setSourceSnapshotId(value: SnapshotId): Self = StObject.set(x, "SourceSnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreservedExistingData(value: scala.Boolean): Self = this.set("PreservedExistingData", value.asInstanceOf[js.Any])
+    def setSourceSnapshotIdUndefined: Self = StObject.set(x, "SourceSnapshotId", js.undefined)
     
     @scala.inline
-    def deletePreservedExistingData: Self = this.set("PreservedExistingData", js.undefined)
+    def setTargetName(value: TargetName): Self = StObject.set(x, "TargetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSnapshotId(value: SnapshotId): Self = this.set("SourceSnapshotId", value.asInstanceOf[js.Any])
+    def setTargetNameUndefined: Self = StObject.set(x, "TargetName", js.undefined)
     
     @scala.inline
-    def deleteSourceSnapshotId: Self = this.set("SourceSnapshotId", js.undefined)
+    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetName(value: TargetName): Self = this.set("TargetName", value.asInstanceOf[js.Any])
+    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
     
     @scala.inline
-    def deleteTargetName: Self = this.set("TargetName", js.undefined)
+    def setVolumeAttachmentStatus(value: VolumeAttachmentStatus): Self = StObject.set(x, "VolumeAttachmentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = this.set("VolumeARN", value.asInstanceOf[js.Any])
+    def setVolumeAttachmentStatusUndefined: Self = StObject.set(x, "VolumeAttachmentStatus", js.undefined)
     
     @scala.inline
-    def deleteVolumeARN: Self = this.set("VolumeARN", js.undefined)
+    def setVolumeDiskId(value: DiskId): Self = StObject.set(x, "VolumeDiskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeAttachmentStatus(value: VolumeAttachmentStatus): Self = this.set("VolumeAttachmentStatus", value.asInstanceOf[js.Any])
+    def setVolumeDiskIdUndefined: Self = StObject.set(x, "VolumeDiskId", js.undefined)
     
     @scala.inline
-    def deleteVolumeAttachmentStatus: Self = this.set("VolumeAttachmentStatus", js.undefined)
+    def setVolumeId(value: VolumeId): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeDiskId(value: DiskId): Self = this.set("VolumeDiskId", value.asInstanceOf[js.Any])
+    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
     
     @scala.inline
-    def deleteVolumeDiskId: Self = this.set("VolumeDiskId", js.undefined)
+    def setVolumeProgress(value: DoubleObject): Self = StObject.set(x, "VolumeProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeId(value: VolumeId): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
+    def setVolumeProgressUndefined: Self = StObject.set(x, "VolumeProgress", js.undefined)
     
     @scala.inline
-    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
+    def setVolumeSizeInBytes(value: long): Self = StObject.set(x, "VolumeSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeProgress(value: DoubleObject): Self = this.set("VolumeProgress", value.asInstanceOf[js.Any])
+    def setVolumeSizeInBytesUndefined: Self = StObject.set(x, "VolumeSizeInBytes", js.undefined)
     
     @scala.inline
-    def deleteVolumeProgress: Self = this.set("VolumeProgress", js.undefined)
+    def setVolumeStatus(value: VolumeStatus): Self = StObject.set(x, "VolumeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeSizeInBytes(value: long): Self = this.set("VolumeSizeInBytes", value.asInstanceOf[js.Any])
+    def setVolumeStatusUndefined: Self = StObject.set(x, "VolumeStatus", js.undefined)
     
     @scala.inline
-    def deleteVolumeSizeInBytes: Self = this.set("VolumeSizeInBytes", js.undefined)
+    def setVolumeType(value: VolumeType): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeStatus(value: VolumeStatus): Self = this.set("VolumeStatus", value.asInstanceOf[js.Any])
+    def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
     
     @scala.inline
-    def deleteVolumeStatus: Self = this.set("VolumeStatus", js.undefined)
+    def setVolumeUsedInBytes(value: VolumeUsedInBytes): Self = StObject.set(x, "VolumeUsedInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeType(value: VolumeType): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
+    def setVolumeUsedInBytesUndefined: Self = StObject.set(x, "VolumeUsedInBytes", js.undefined)
     
     @scala.inline
-    def deleteVolumeType: Self = this.set("VolumeType", js.undefined)
+    def setVolumeiSCSIAttributes(value: VolumeiSCSIAttributes): Self = StObject.set(x, "VolumeiSCSIAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeUsedInBytes(value: VolumeUsedInBytes): Self = this.set("VolumeUsedInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeUsedInBytes: Self = this.set("VolumeUsedInBytes", js.undefined)
-    
-    @scala.inline
-    def setVolumeiSCSIAttributes(value: VolumeiSCSIAttributes): Self = this.set("VolumeiSCSIAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeiSCSIAttributes: Self = this.set("VolumeiSCSIAttributes", js.undefined)
+    def setVolumeiSCSIAttributesUndefined: Self = StObject.set(x, "VolumeiSCSIAttributes", js.undefined)
   }
 }

@@ -1,13 +1,13 @@
 package typings.awsSdkClientDynamodbNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-node/model/_WriteRequests", JSImport.Namespace)
-@js.native
-object writeRequestsMod extends js.Object {
+object writeRequestsMod {
   
-  @JSName("_WriteRequests")
+  @JSImport("@aws-sdk/client-dynamodb-node/model/_WriteRequests", "_WriteRequests")
+  @js.native
   val WriteRequests: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }

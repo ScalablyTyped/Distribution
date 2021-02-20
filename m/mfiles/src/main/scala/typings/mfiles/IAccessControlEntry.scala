@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFPermission
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAccessControlEntry extends js.Object {
+trait IAccessControlEntry extends StObject {
   
   var ChangePermissionsPermission: MFPermission = js.native
   
@@ -36,36 +37,24 @@ object IAccessControlEntry {
   }
   
   @scala.inline
-  implicit class IAccessControlEntryOps[Self <: IAccessControlEntry] (val x: Self) extends AnyVal {
+  implicit class IAccessControlEntryMutableBuilder[Self <: IAccessControlEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangePermissionsPermission(value: MFPermission): Self = StObject.set(x, "ChangePermissionsPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IAccessControlEntry): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditPermission(value: MFPermission): Self = StObject.set(x, "EditPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangePermissionsPermission(value: MFPermission): Self = this.set("ChangePermissionsPermission", value.asInstanceOf[js.Any])
+    def setIsGroup(value: Boolean): Self = StObject.set(x, "IsGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IAccessControlEntry): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setReadPermission(value: MFPermission): Self = StObject.set(x, "ReadPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditPermission(value: MFPermission): Self = this.set("EditPermission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsGroup(value: Boolean): Self = this.set("IsGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadPermission(value: MFPermission): Self = this.set("ReadPermission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserOrGroupID(value: Double): Self = this.set("UserOrGroupID", value.asInstanceOf[js.Any])
+    def setUserOrGroupID(value: Double): Self = StObject.set(x, "UserOrGroupID", value.asInstanceOf[js.Any])
   }
 }

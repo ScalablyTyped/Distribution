@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoubleVerifyBrandSafetyCategories extends js.Object {
+trait DoubleVerifyBrandSafetyCategories extends StObject {
   
   /** Unknown or unrateable. */
   var avoidUnknownBrandSafetyCategory: js.UndefOr[Boolean] = js.native
@@ -25,42 +26,30 @@ object DoubleVerifyBrandSafetyCategories {
   }
   
   @scala.inline
-  implicit class DoubleVerifyBrandSafetyCategoriesOps[Self <: DoubleVerifyBrandSafetyCategories] (val x: Self) extends AnyVal {
+  implicit class DoubleVerifyBrandSafetyCategoriesMutableBuilder[Self <: DoubleVerifyBrandSafetyCategories] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvoidUnknownBrandSafetyCategory(value: Boolean): Self = StObject.set(x, "avoidUnknownBrandSafetyCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvoidUnknownBrandSafetyCategoryUndefined: Self = StObject.set(x, "avoidUnknownBrandSafetyCategory", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvoidedHighSeverityCategories(value: js.Array[String]): Self = StObject.set(x, "avoidedHighSeverityCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidUnknownBrandSafetyCategory(value: Boolean): Self = this.set("avoidUnknownBrandSafetyCategory", value.asInstanceOf[js.Any])
+    def setAvoidedHighSeverityCategoriesUndefined: Self = StObject.set(x, "avoidedHighSeverityCategories", js.undefined)
     
     @scala.inline
-    def deleteAvoidUnknownBrandSafetyCategory: Self = this.set("avoidUnknownBrandSafetyCategory", js.undefined)
+    def setAvoidedHighSeverityCategoriesVarargs(value: String*): Self = StObject.set(x, "avoidedHighSeverityCategories", js.Array(value :_*))
     
     @scala.inline
-    def setAvoidedHighSeverityCategoriesVarargs(value: String*): Self = this.set("avoidedHighSeverityCategories", js.Array(value :_*))
+    def setAvoidedMediumSeverityCategories(value: js.Array[String]): Self = StObject.set(x, "avoidedMediumSeverityCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidedHighSeverityCategories(value: js.Array[String]): Self = this.set("avoidedHighSeverityCategories", value.asInstanceOf[js.Any])
+    def setAvoidedMediumSeverityCategoriesUndefined: Self = StObject.set(x, "avoidedMediumSeverityCategories", js.undefined)
     
     @scala.inline
-    def deleteAvoidedHighSeverityCategories: Self = this.set("avoidedHighSeverityCategories", js.undefined)
-    
-    @scala.inline
-    def setAvoidedMediumSeverityCategoriesVarargs(value: String*): Self = this.set("avoidedMediumSeverityCategories", js.Array(value :_*))
-    
-    @scala.inline
-    def setAvoidedMediumSeverityCategories(value: js.Array[String]): Self = this.set("avoidedMediumSeverityCategories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvoidedMediumSeverityCategories: Self = this.set("avoidedMediumSeverityCategories", js.undefined)
+    def setAvoidedMediumSeverityCategoriesVarargs(value: String*): Self = StObject.set(x, "avoidedMediumSeverityCategories", js.Array(value :_*))
   }
 }

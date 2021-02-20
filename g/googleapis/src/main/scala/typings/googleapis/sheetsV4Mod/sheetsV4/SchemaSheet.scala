@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A sheet in a spreadsheet.
   */
 @js.native
-trait SchemaSheet extends js.Object {
+trait SchemaSheet extends StObject {
   
   /**
     * The banded (alternating colors) ranges on this sheet.
@@ -87,120 +88,108 @@ object SchemaSheet {
   }
   
   @scala.inline
-  implicit class SchemaSheetOps[Self <: SchemaSheet] (val x: Self) extends AnyVal {
+  implicit class SchemaSheetMutableBuilder[Self <: SchemaSheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandedRanges(value: js.Array[SchemaBandedRange]): Self = StObject.set(x, "bandedRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBandedRangesUndefined: Self = StObject.set(x, "bandedRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBandedRangesVarargs(value: SchemaBandedRange*): Self = StObject.set(x, "bandedRanges", js.Array(value :_*))
     
     @scala.inline
-    def setBandedRangesVarargs(value: SchemaBandedRange*): Self = this.set("bandedRanges", js.Array(value :_*))
+    def setBasicFilter(value: SchemaBasicFilter): Self = StObject.set(x, "basicFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandedRanges(value: js.Array[SchemaBandedRange]): Self = this.set("bandedRanges", value.asInstanceOf[js.Any])
+    def setBasicFilterUndefined: Self = StObject.set(x, "basicFilter", js.undefined)
     
     @scala.inline
-    def deleteBandedRanges: Self = this.set("bandedRanges", js.undefined)
+    def setCharts(value: js.Array[SchemaEmbeddedChart]): Self = StObject.set(x, "charts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicFilter(value: SchemaBasicFilter): Self = this.set("basicFilter", value.asInstanceOf[js.Any])
+    def setChartsUndefined: Self = StObject.set(x, "charts", js.undefined)
     
     @scala.inline
-    def deleteBasicFilter: Self = this.set("basicFilter", js.undefined)
+    def setChartsVarargs(value: SchemaEmbeddedChart*): Self = StObject.set(x, "charts", js.Array(value :_*))
     
     @scala.inline
-    def setChartsVarargs(value: SchemaEmbeddedChart*): Self = this.set("charts", js.Array(value :_*))
+    def setColumnGroups(value: js.Array[SchemaDimensionGroup]): Self = StObject.set(x, "columnGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharts(value: js.Array[SchemaEmbeddedChart]): Self = this.set("charts", value.asInstanceOf[js.Any])
+    def setColumnGroupsUndefined: Self = StObject.set(x, "columnGroups", js.undefined)
     
     @scala.inline
-    def deleteCharts: Self = this.set("charts", js.undefined)
+    def setColumnGroupsVarargs(value: SchemaDimensionGroup*): Self = StObject.set(x, "columnGroups", js.Array(value :_*))
     
     @scala.inline
-    def setColumnGroupsVarargs(value: SchemaDimensionGroup*): Self = this.set("columnGroups", js.Array(value :_*))
+    def setConditionalFormats(value: js.Array[SchemaConditionalFormatRule]): Self = StObject.set(x, "conditionalFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnGroups(value: js.Array[SchemaDimensionGroup]): Self = this.set("columnGroups", value.asInstanceOf[js.Any])
+    def setConditionalFormatsUndefined: Self = StObject.set(x, "conditionalFormats", js.undefined)
     
     @scala.inline
-    def deleteColumnGroups: Self = this.set("columnGroups", js.undefined)
+    def setConditionalFormatsVarargs(value: SchemaConditionalFormatRule*): Self = StObject.set(x, "conditionalFormats", js.Array(value :_*))
     
     @scala.inline
-    def setConditionalFormatsVarargs(value: SchemaConditionalFormatRule*): Self = this.set("conditionalFormats", js.Array(value :_*))
+    def setData(value: js.Array[SchemaGridData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionalFormats(value: js.Array[SchemaConditionalFormatRule]): Self = this.set("conditionalFormats", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteConditionalFormats: Self = this.set("conditionalFormats", js.undefined)
+    def setDataVarargs(value: SchemaGridData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: SchemaGridData*): Self = this.set("data", js.Array(value :_*))
+    def setDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[SchemaGridData]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
     
     @scala.inline
-    def setDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = this.set("developerMetadata", js.Array(value :_*))
+    def setFilterViews(value: js.Array[SchemaFilterView]): Self = StObject.set(x, "filterViews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = this.set("developerMetadata", value.asInstanceOf[js.Any])
+    def setFilterViewsUndefined: Self = StObject.set(x, "filterViews", js.undefined)
     
     @scala.inline
-    def deleteDeveloperMetadata: Self = this.set("developerMetadata", js.undefined)
+    def setFilterViewsVarargs(value: SchemaFilterView*): Self = StObject.set(x, "filterViews", js.Array(value :_*))
     
     @scala.inline
-    def setFilterViewsVarargs(value: SchemaFilterView*): Self = this.set("filterViews", js.Array(value :_*))
+    def setMerges(value: js.Array[SchemaGridRange]): Self = StObject.set(x, "merges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterViews(value: js.Array[SchemaFilterView]): Self = this.set("filterViews", value.asInstanceOf[js.Any])
+    def setMergesUndefined: Self = StObject.set(x, "merges", js.undefined)
     
     @scala.inline
-    def deleteFilterViews: Self = this.set("filterViews", js.undefined)
+    def setMergesVarargs(value: SchemaGridRange*): Self = StObject.set(x, "merges", js.Array(value :_*))
     
     @scala.inline
-    def setMergesVarargs(value: SchemaGridRange*): Self = this.set("merges", js.Array(value :_*))
+    def setProperties(value: SchemaSheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerges(value: js.Array[SchemaGridRange]): Self = this.set("merges", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteMerges: Self = this.set("merges", js.undefined)
+    def setProtectedRanges(value: js.Array[SchemaProtectedRange]): Self = StObject.set(x, "protectedRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: SchemaSheetProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setProtectedRangesUndefined: Self = StObject.set(x, "protectedRanges", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setProtectedRangesVarargs(value: SchemaProtectedRange*): Self = StObject.set(x, "protectedRanges", js.Array(value :_*))
     
     @scala.inline
-    def setProtectedRangesVarargs(value: SchemaProtectedRange*): Self = this.set("protectedRanges", js.Array(value :_*))
+    def setRowGroups(value: js.Array[SchemaDimensionGroup]): Self = StObject.set(x, "rowGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectedRanges(value: js.Array[SchemaProtectedRange]): Self = this.set("protectedRanges", value.asInstanceOf[js.Any])
+    def setRowGroupsUndefined: Self = StObject.set(x, "rowGroups", js.undefined)
     
     @scala.inline
-    def deleteProtectedRanges: Self = this.set("protectedRanges", js.undefined)
-    
-    @scala.inline
-    def setRowGroupsVarargs(value: SchemaDimensionGroup*): Self = this.set("rowGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setRowGroups(value: js.Array[SchemaDimensionGroup]): Self = this.set("rowGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowGroups: Self = this.set("rowGroups", js.undefined)
+    def setRowGroupsVarargs(value: SchemaDimensionGroup*): Self = StObject.set(x, "rowGroups", js.Array(value :_*))
   }
 }

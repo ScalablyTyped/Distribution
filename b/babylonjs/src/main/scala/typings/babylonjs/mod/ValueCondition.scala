@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,58 +37,58 @@ class ValueCondition protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "ValueCondition")
-@js.native
-object ValueCondition extends js.Object {
+object ValueCondition {
+  
+  @JSImport("babylonjs", "ValueCondition")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gets the name of the conditional operator for the ValueCondition
     * @param operator the conditional operator
     * @returns the name
     */
+  @JSImport("babylonjs", "ValueCondition.GetOperatorName")
+  @js.native
   def GetOperatorName(operator: Double): String = js.native
   
   /**
-    * Returns the number for IsDifferent
+    * Internal only
+    * @hidden
     */
-  def IsDifferent: Double = js.native
-  
-  /**
-    * returns the number for IsEqual
-    */
-  def IsEqual: Double = js.native
-  
-  /**
-    * Returns the number for IsGreater
-    */
-  def IsGreater: Double = js.native
-  
-  /**
-    * Returns the number for IsLesser
-    */
-  def IsLesser: Double = js.native
+  @JSImport("babylonjs", "ValueCondition._IsDifferent")
+  @js.native
+  def _IsDifferent: js.Any = js.native
+  @scala.inline
+  def _IsDifferent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
   
   /**
     * Internal only
     * @hidden
     */
-  var _IsDifferent: js.Any = js.native
+  @JSImport("babylonjs", "ValueCondition._IsEqual")
+  @js.native
+  def _IsEqual: js.Any = js.native
+  @scala.inline
+  def _IsEqual_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
   
   /**
     * Internal only
     * @hidden
     */
-  var _IsEqual: js.Any = js.native
+  @JSImport("babylonjs", "ValueCondition._IsGreater")
+  @js.native
+  def _IsGreater: js.Any = js.native
+  @scala.inline
+  def _IsGreater_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
   
   /**
     * Internal only
     * @hidden
     */
-  var _IsGreater: js.Any = js.native
-  
-  /**
-    * Internal only
-    * @hidden
-    */
-  var _IsLesser: js.Any = js.native
+  @JSImport("babylonjs", "ValueCondition._IsLesser")
+  @js.native
+  def _IsLesser: js.Any = js.native
+  @scala.inline
+  def _IsLesser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsLesser")(x.asInstanceOf[js.Any])
 }

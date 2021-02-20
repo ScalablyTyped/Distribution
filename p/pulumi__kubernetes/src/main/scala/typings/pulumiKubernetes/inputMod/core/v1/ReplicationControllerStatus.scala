@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ReplicationControllerStatus represents the current status of a replication controller.
   */
 @js.native
-trait ReplicationControllerStatus extends js.Object {
+trait ReplicationControllerStatus extends StObject {
   
   /**
     * The number of available replicas (ready for at least minReadySeconds) for this replication controller.
@@ -50,54 +51,42 @@ object ReplicationControllerStatus {
   }
   
   @scala.inline
-  implicit class ReplicationControllerStatusOps[Self <: ReplicationControllerStatus] (val x: Self) extends AnyVal {
+  implicit class ReplicationControllerStatusMutableBuilder[Self <: ReplicationControllerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableReplicas(value: Input[Double]): Self = StObject.set(x, "availableReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableReplicasUndefined: Self = StObject.set(x, "availableReplicas", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: Input[js.Array[Input[ReplicationControllerCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicas(value: Input[Double]): Self = this.set("replicas", value.asInstanceOf[js.Any])
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def setAvailableReplicas(value: Input[Double]): Self = this.set("availableReplicas", value.asInstanceOf[js.Any])
+    def setConditionsVarargs(value: Input[ReplicationControllerCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def deleteAvailableReplicas: Self = this.set("availableReplicas", js.undefined)
+    def setFullyLabeledReplicas(value: Input[Double]): Self = StObject.set(x, "fullyLabeledReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: Input[ReplicationControllerCondition]*): Self = this.set("conditions", js.Array(value :_*))
+    def setFullyLabeledReplicasUndefined: Self = StObject.set(x, "fullyLabeledReplicas", js.undefined)
     
     @scala.inline
-    def setConditions(value: Input[js.Array[Input[ReplicationControllerCondition]]]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setObservedGeneration(value: Input[Double]): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
     
     @scala.inline
-    def setFullyLabeledReplicas(value: Input[Double]): Self = this.set("fullyLabeledReplicas", value.asInstanceOf[js.Any])
+    def setReadyReplicas(value: Input[Double]): Self = StObject.set(x, "readyReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFullyLabeledReplicas: Self = this.set("fullyLabeledReplicas", js.undefined)
+    def setReadyReplicasUndefined: Self = StObject.set(x, "readyReplicas", js.undefined)
     
     @scala.inline
-    def setObservedGeneration(value: Input[Double]): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObservedGeneration: Self = this.set("observedGeneration", js.undefined)
-    
-    @scala.inline
-    def setReadyReplicas(value: Input[Double]): Self = this.set("readyReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadyReplicas: Self = this.set("readyReplicas", js.undefined)
+    def setReplicas(value: Input[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
   }
 }

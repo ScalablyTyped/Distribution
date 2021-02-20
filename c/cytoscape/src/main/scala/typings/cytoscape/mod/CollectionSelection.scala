@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/layout
   */
 @js.native
-trait CollectionSelection extends js.Object {
+trait CollectionSelection extends StObject {
   
   def deselect(): this.type = js.native
   
@@ -51,33 +52,21 @@ object CollectionSelection {
   }
   
   @scala.inline
-  implicit class CollectionSelectionOps[Self <: CollectionSelection] (val x: Self) extends AnyVal {
+  implicit class CollectionSelectionMutableBuilder[Self <: CollectionSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeselect(value: () => CollectionSelection): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelect(value: () => CollectionSelection): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectify(value: () => CollectionSelection): Self = StObject.set(x, "selectify", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeselect(value: () => CollectionSelection): Self = this.set("deselect", js.Any.fromFunction0(value))
+    def setUnselect(value: () => CollectionSelection): Self = StObject.set(x, "unselect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSelect(value: () => CollectionSelection): Self = this.set("select", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSelectify(value: () => CollectionSelection): Self = this.set("selectify", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnselect(value: () => CollectionSelection): Self = this.set("unselect", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnselectify(value: () => CollectionSelection): Self = this.set("unselectify", js.Any.fromFunction0(value))
+    def setUnselectify(value: () => CollectionSelection): Self = StObject.set(x, "unselectify", js.Any.fromFunction0(value))
   }
 }

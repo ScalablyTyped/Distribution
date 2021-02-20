@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirstParent extends js.Object {
+trait FirstParent extends StObject {
   
   var firstParent: scala.Double = js.native
   
@@ -29,30 +30,18 @@ object FirstParent {
   }
   
   @scala.inline
-  implicit class FirstParentOps[Self <: FirstParent] (val x: Self) extends AnyVal {
+  implicit class FirstParentMutableBuilder[Self <: FirstParent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstParent(value: scala.Double): Self = StObject.set(x, "firstParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullHistory(value: scala.Double): Self = StObject.set(x, "fullHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullHistorySimplifyMerges(value: scala.Double): Self = StObject.set(x, "fullHistorySimplifyMerges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstParent(value: scala.Double): Self = this.set("firstParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFullHistory(value: scala.Double): Self = this.set("fullHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFullHistorySimplifyMerges(value: scala.Double): Self = this.set("fullHistorySimplifyMerges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSimplifiedHistory(value: scala.Double): Self = this.set("simplifiedHistory", value.asInstanceOf[js.Any])
+    def setSimplifiedHistory(value: scala.Double): Self = StObject.set(x, "simplifiedHistory", value.asInstanceOf[js.Any])
   }
 }

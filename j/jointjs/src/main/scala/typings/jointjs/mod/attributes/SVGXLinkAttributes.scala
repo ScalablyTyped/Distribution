@@ -1,11 +1,12 @@
 package typings.jointjs.mod.attributes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGXLinkAttributes extends js.Object {
+trait SVGXLinkAttributes extends StObject {
   
   @JSName("xlink:actuate")
   var xlinkColonactuate: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object SVGXLinkAttributes {
   }
   
   @scala.inline
-  implicit class SVGXLinkAttributesOps[Self <: SVGXLinkAttributes] (val x: Self) extends AnyVal {
+  implicit class SVGXLinkAttributesMutableBuilder[Self <: SVGXLinkAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setXlinkColonactuate(value: String): Self = StObject.set(x, "xlink:actuate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setXlinkColonactuateUndefined: Self = StObject.set(x, "xlink:actuate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXlinkColonarcrole(value: String): Self = StObject.set(x, "xlink:arcrole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXlinkColonactuate(value: String): Self = this.set("xlink:actuate", value.asInstanceOf[js.Any])
+    def setXlinkColonarcroleUndefined: Self = StObject.set(x, "xlink:arcrole", js.undefined)
     
     @scala.inline
-    def deleteXlinkColonactuate: Self = this.set("xlink:actuate", js.undefined)
+    def setXlinkColonhref(value: String): Self = StObject.set(x, "xlink:href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXlinkColonarcrole(value: String): Self = this.set("xlink:arcrole", value.asInstanceOf[js.Any])
+    def setXlinkColonhrefUndefined: Self = StObject.set(x, "xlink:href", js.undefined)
     
     @scala.inline
-    def deleteXlinkColonarcrole: Self = this.set("xlink:arcrole", js.undefined)
+    def setXlinkColonrole(value: String): Self = StObject.set(x, "xlink:role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXlinkColonhref(value: String): Self = this.set("xlink:href", value.asInstanceOf[js.Any])
+    def setXlinkColonroleUndefined: Self = StObject.set(x, "xlink:role", js.undefined)
     
     @scala.inline
-    def deleteXlinkColonhref: Self = this.set("xlink:href", js.undefined)
+    def setXlinkColonshow(value: String): Self = StObject.set(x, "xlink:show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXlinkColonrole(value: String): Self = this.set("xlink:role", value.asInstanceOf[js.Any])
+    def setXlinkColonshowUndefined: Self = StObject.set(x, "xlink:show", js.undefined)
     
     @scala.inline
-    def deleteXlinkColonrole: Self = this.set("xlink:role", js.undefined)
+    def setXlinkColontitle(value: String): Self = StObject.set(x, "xlink:title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXlinkColonshow(value: String): Self = this.set("xlink:show", value.asInstanceOf[js.Any])
+    def setXlinkColontitleUndefined: Self = StObject.set(x, "xlink:title", js.undefined)
     
     @scala.inline
-    def deleteXlinkColonshow: Self = this.set("xlink:show", js.undefined)
+    def setXlinkColontype(value: String): Self = StObject.set(x, "xlink:type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXlinkColontitle(value: String): Self = this.set("xlink:title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXlinkColontitle: Self = this.set("xlink:title", js.undefined)
-    
-    @scala.inline
-    def setXlinkColontype(value: String): Self = this.set("xlink:type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXlinkColontype: Self = this.set("xlink:type", js.undefined)
+    def setXlinkColontypeUndefined: Self = StObject.set(x, "xlink:type", js.undefined)
   }
 }

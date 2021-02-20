@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSizeConstraintSetsResponse extends js.Object {
+trait ListSizeConstraintSetsResponse extends StObject {
   
   /**
     * If you have more SizeConstraintSet objects than the number that you specified for Limit in the request, the response includes a NextMarker value. To list more SizeConstraintSet objects, submit another ListSizeConstraintSets request, and specify the NextMarker value from the response in the NextMarker value in the next request.
@@ -26,33 +27,21 @@ object ListSizeConstraintSetsResponse {
   }
   
   @scala.inline
-  implicit class ListSizeConstraintSetsResponseOps[Self <: ListSizeConstraintSetsResponse] (val x: Self) extends AnyVal {
+  implicit class ListSizeConstraintSetsResponseMutableBuilder[Self <: ListSizeConstraintSetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeConstraintSets(value: SizeConstraintSetSummaries): Self = StObject.set(x, "SizeConstraintSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    def setSizeConstraintSetsUndefined: Self = StObject.set(x, "SizeConstraintSets", js.undefined)
     
     @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
-    
-    @scala.inline
-    def setSizeConstraintSetsVarargs(value: SizeConstraintSetSummary*): Self = this.set("SizeConstraintSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setSizeConstraintSets(value: SizeConstraintSetSummaries): Self = this.set("SizeConstraintSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeConstraintSets: Self = this.set("SizeConstraintSets", js.undefined)
+    def setSizeConstraintSetsVarargs(value: SizeConstraintSetSummary*): Self = StObject.set(x, "SizeConstraintSets", js.Array(value :_*))
   }
 }

@@ -1,14 +1,17 @@
 package typings.typeorm
 
 import typings.typeorm.findOptionsFindOperatorMod.FindOperator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/find-options/operator/LessThanOrEqual", JSImport.Namespace)
-@js.native
-object operatorLessThanOrEqualMod extends js.Object {
+object operatorLessThanOrEqualMod {
   
+  @JSImport("typeorm/find-options/operator/LessThanOrEqual", "LessThanOrEqual")
+  @js.native
   def LessThanOrEqual[T](value: T): FindOperator[T] = js.native
+  @JSImport("typeorm/find-options/operator/LessThanOrEqual", "LessThanOrEqual")
+  @js.native
   def LessThanOrEqual[T](value: FindOperator[T]): FindOperator[T] = js.native
 }

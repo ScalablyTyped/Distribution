@@ -1,11 +1,12 @@
 package typings.jssip.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionAcceptedEvent extends js.Object {
+trait SessionAcceptedEvent extends StObject {
   
   var originator: String = js.native
   
@@ -20,27 +21,15 @@ object SessionAcceptedEvent {
   }
   
   @scala.inline
-  implicit class SessionAcceptedEventOps[Self <: SessionAcceptedEvent] (val x: Self) extends AnyVal {
+  implicit class SessionAcceptedEventMutableBuilder[Self <: SessionAcceptedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOriginator(value: String): Self = this.set("originator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: IncomingResponse): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

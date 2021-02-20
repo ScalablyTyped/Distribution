@@ -1,11 +1,12 @@
 package typings.ariClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigInfo extends js.Object {
+trait ConfigInfo extends StObject {
   
   /**
     * Default language for media playback.
@@ -46,45 +47,33 @@ object ConfigInfo {
   }
   
   @scala.inline
-  implicit class ConfigInfoOps[Self <: ConfigInfo] (val x: Self) extends AnyVal {
+  implicit class ConfigInfoMutableBuilder[Self <: ConfigInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault_language(value: String): Self = StObject.set(x, "default_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMax_channels(value: Double): Self = StObject.set(x, "max_channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax_channelsUndefined: Self = StObject.set(x, "max_channels", js.undefined)
     
     @scala.inline
-    def setDefault_language(value: String): Self = this.set("default_language", value.asInstanceOf[js.Any])
+    def setMax_load(value: Double): Self = StObject.set(x, "max_load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMax_loadUndefined: Self = StObject.set(x, "max_load", js.undefined)
     
     @scala.inline
-    def setSetid(value: SetId): Self = this.set("setid", value.asInstanceOf[js.Any])
+    def setMax_open_files(value: Double): Self = StObject.set(x, "max_open_files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_channels(value: Double): Self = this.set("max_channels", value.asInstanceOf[js.Any])
+    def setMax_open_filesUndefined: Self = StObject.set(x, "max_open_files", js.undefined)
     
     @scala.inline
-    def deleteMax_channels: Self = this.set("max_channels", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_load(value: Double): Self = this.set("max_load", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax_load: Self = this.set("max_load", js.undefined)
-    
-    @scala.inline
-    def setMax_open_files(value: Double): Self = this.set("max_open_files", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax_open_files: Self = this.set("max_open_files", js.undefined)
+    def setSetid(value: SetId): Self = StObject.set(x, "setid", value.asInstanceOf[js.Any])
   }
 }

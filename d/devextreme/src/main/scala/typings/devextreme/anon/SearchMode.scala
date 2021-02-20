@@ -11,12 +11,13 @@ import typings.devextreme.devextremeStrings.second
 import typings.devextreme.devextremeStrings.startswith
 import typings.devextreme.devextremeStrings.year
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchMode extends js.Object {
+trait SearchMode extends StObject {
   
   var allowSearch: js.UndefOr[Boolean] = js.native
   
@@ -39,60 +40,48 @@ object SearchMode {
   }
   
   @scala.inline
-  implicit class SearchModeOps[Self <: SearchMode] (val x: Self) extends AnyVal {
+  implicit class SearchModeMutableBuilder[Self <: SearchMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSearch(value: Boolean): Self = StObject.set(x, "allowSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSearchUndefined: Self = StObject.set(x, "allowSearch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSource(value: js.Array[_] | (js.Function1[/* options */ DataSource, _]) | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSearch(value: Boolean): Self = this.set("allowSearch", value.asInstanceOf[js.Any])
+    def setDataSourceFunction1(value: /* options */ DataSource => _): Self = StObject.set(x, "dataSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAllowSearch: Self = this.set("allowSearch", js.undefined)
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def setDataSourceVarargs(value: js.Any*): Self = this.set("dataSource", js.Array(value :_*))
+    def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourceFunction1(value: /* options */ DataSource => _): Self = this.set("dataSource", js.Any.fromFunction1(value))
+    def setGroupInterval(value: day | hour | minute | month | quarter | second | year | Double): Self = StObject.set(x, "groupInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Array[_] | (js.Function1[/* options */ DataSource, _]) | DataSourceOptions): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setGroupIntervalUndefined: Self = StObject.set(x, "groupInterval", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupInterval(value: day | hour | minute | month | quarter | second | year | Double): Self = this.set("groupInterval", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGroupInterval: Self = this.set("groupInterval", js.undefined)
+    def setSearchMode(value: contains | startswith | equals): Self = StObject.set(x, "searchMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setSearchModeUndefined: Self = StObject.set(x, "searchMode", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchMode(value: contains | startswith | equals): Self = this.set("searchMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchMode: Self = this.set("searchMode", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,12 +1,11 @@
 package typings.phaser.phaserMod.GameObjects
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("phaser", "GameObjects.Components")
-@js.native
-object Components extends js.Object {
+object Components {
   
   /**
     * A Matrix used for display transformations for rendering.
@@ -19,6 +18,7 @@ object Components extends js.Object {
     * | 0 | 0 | 1  |
     * ```
     */
+  @JSImport("phaser", "GameObjects.Components.TransformMatrix")
   @js.native
   class TransformMatrix protected ()
     extends typings.phaser.Phaser.GameObjects.Components.TransformMatrix {

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Group extends js.Object {
+trait Group extends StObject {
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
@@ -64,65 +65,53 @@ object Group {
   }
   
   @scala.inline
-  implicit class GroupOps[Self <: Group] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
     @scala.inline
-    def setGroupType(value: String): Self = this.set("groupType", value.asInstanceOf[js.Any])
+    def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupType: Self = this.set("groupType", js.undefined)
+    def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
     
     @scala.inline
-    def setPermissionProfileId(value: String): Self = this.set("permissionProfileId", value.asInstanceOf[js.Any])
+    def setPermissionProfileId(value: String): Self = StObject.set(x, "permissionProfileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermissionProfileId: Self = this.set("permissionProfileId", js.undefined)
+    def setPermissionProfileIdUndefined: Self = StObject.set(x, "permissionProfileId", js.undefined)
     
     @scala.inline
-    def setUsersVarargs(value: UserInfo*): Self = this.set("users", js.Array(value :_*))
+    def setUsers(value: js.Array[UserInfo]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsers(value: js.Array[UserInfo]): Self = this.set("users", value.asInstanceOf[js.Any])
+    def setUsersCount(value: String): Self = StObject.set(x, "usersCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUsers: Self = this.set("users", js.undefined)
+    def setUsersCountUndefined: Self = StObject.set(x, "usersCount", js.undefined)
     
     @scala.inline
-    def setUsersCount(value: String): Self = this.set("usersCount", value.asInstanceOf[js.Any])
+    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
     @scala.inline
-    def deleteUsersCount: Self = this.set("usersCount", js.undefined)
+    def setUsersVarargs(value: UserInfo*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

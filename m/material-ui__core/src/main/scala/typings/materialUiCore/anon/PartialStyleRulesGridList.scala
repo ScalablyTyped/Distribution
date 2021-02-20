@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/GridListTile.GridListTileClassKey>> */
 @js.native
-trait PartialStyleRulesGridList extends js.Object {
+trait PartialStyleRulesGridList extends StObject {
   
   var imgFullHeight: js.UndefOr[CSSProperties] = js.native
   
@@ -26,42 +27,30 @@ object PartialStyleRulesGridList {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesGridListOps[Self <: PartialStyleRulesGridList] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesGridListMutableBuilder[Self <: PartialStyleRulesGridList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImgFullHeight(value: CSSProperties): Self = StObject.set(x, "imgFullHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImgFullHeightUndefined: Self = StObject.set(x, "imgFullHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImgFullWidth(value: CSSProperties): Self = StObject.set(x, "imgFullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImgFullHeight(value: CSSProperties): Self = this.set("imgFullHeight", value.asInstanceOf[js.Any])
+    def setImgFullWidthUndefined: Self = StObject.set(x, "imgFullWidth", js.undefined)
     
     @scala.inline
-    def deleteImgFullHeight: Self = this.set("imgFullHeight", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImgFullWidth(value: CSSProperties): Self = this.set("imgFullWidth", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteImgFullWidth: Self = this.set("imgFullWidth", js.undefined)
+    def setTile(value: CSSProperties): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setTile(value: CSSProperties): Self = this.set("tile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTile: Self = this.set("tile", js.undefined)
+    def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
   }
 }

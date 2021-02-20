@@ -1,11 +1,12 @@
 package typings.reactBootstrapTableNext.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageButtonRendererOptions extends js.Object {
+trait PageButtonRendererOptions extends StObject {
   
   /**
     * is this page the current page or not
@@ -47,33 +48,21 @@ object PageButtonRendererOptions {
   }
   
   @scala.inline
-  implicit class PageButtonRendererOptionsOps[Self <: PageButtonRendererOptions] (val x: Self) extends AnyVal {
+  implicit class PageButtonRendererOptionsMutableBuilder[Self <: PageButtonRendererOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnPageChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setPage(value: Double | String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnPageChange(value: (Double, Double) => Unit): Self = this.set("onPageChange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPage(value: Double | String): Self = this.set("page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

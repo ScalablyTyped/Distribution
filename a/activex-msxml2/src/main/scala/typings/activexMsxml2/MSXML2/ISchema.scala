@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** XML Schema */
 @js.native
-trait ISchema extends js.Object {
+trait ISchema extends StObject {
   
   @JSName("MSXML2.ISchema_typekey")
   var MSXML2DotISchema_typekey: ISchema = js.native

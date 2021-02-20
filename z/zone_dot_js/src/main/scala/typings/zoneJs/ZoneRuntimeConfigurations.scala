@@ -1,5 +1,6 @@
 package typings.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait ZoneRuntimeConfigurations extends js.Object {
+trait ZoneRuntimeConfigurations extends StObject {
   
   /**
     * Ignore outputting errors to the console when uncaught Promise errors occur.
@@ -41,24 +42,12 @@ object ZoneRuntimeConfigurations {
   }
   
   @scala.inline
-  implicit class ZoneRuntimeConfigurationsOps[Self <: ZoneRuntimeConfigurations] (val x: Self) extends AnyVal {
+  implicit class ZoneRuntimeConfigurationsMutableBuilder[Self <: ZoneRuntimeConfigurations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set__zone_symbol__ignoreConsoleErrorUncaughtError(value: Boolean): Self = StObject.set(x, "__zone_symbol__ignoreConsoleErrorUncaughtError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set__zone_symbol__ignoreConsoleErrorUncaughtError(value: Boolean): Self = this.set("__zone_symbol__ignoreConsoleErrorUncaughtError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete__zone_symbol__ignoreConsoleErrorUncaughtError: Self = this.set("__zone_symbol__ignoreConsoleErrorUncaughtError", js.undefined)
+    def set__zone_symbol__ignoreConsoleErrorUncaughtErrorUndefined: Self = StObject.set(x, "__zone_symbol__ignoreConsoleErrorUncaughtError", js.undefined)
   }
 }

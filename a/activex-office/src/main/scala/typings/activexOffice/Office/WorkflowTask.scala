@@ -1,12 +1,13 @@
 package typings.activexOffice.Office
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowTask extends js.Object {
+trait WorkflowTask extends StObject {
   
   val Application: js.Any = js.native
   
@@ -59,57 +60,45 @@ object WorkflowTask {
   }
   
   @scala.inline
-  implicit class WorkflowTaskOps[Self <: WorkflowTask] (val x: Self) extends AnyVal {
+  implicit class WorkflowTaskMutableBuilder[Self <: WorkflowTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignedTo(value: String): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreatedDate(value: VarDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignedTo(value: String): Self = this.set("AssignedTo", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: String): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: VarDate): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    def setDueDate(value: VarDate): Self = StObject.set(x, "DueDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setListID(value: String): Self = StObject.set(x, "ListID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDueDate(value: VarDate): Self = this.set("DueDate", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setOfficeDotWorkflowTask_typekey(value: WorkflowTask): Self = StObject.set(x, "Office.WorkflowTask_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListID(value: String): Self = this.set("ListID", value.asInstanceOf[js.Any])
+    def setShow(value: () => Double): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOfficeDotWorkflowTask_typekey(value: WorkflowTask): Self = this.set("Office.WorkflowTask_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow(value: () => Double): Self = this.set("Show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWorkflowID(value: String): Self = this.set("WorkflowID", value.asInstanceOf[js.Any])
+    def setWorkflowID(value: String): Self = StObject.set(x, "WorkflowID", value.asInstanceOf[js.Any])
   }
 }

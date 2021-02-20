@@ -2,12 +2,13 @@ package typings.activexWord.Word
 
 import typings.activexOffice.Office.MsoEditingType
 import typings.activexOffice.Office.MsoSegmentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreeformBuilder extends js.Object {
+trait FreeformBuilder extends StObject {
   
   /**
     * @param number [X2=0]

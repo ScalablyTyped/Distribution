@@ -1,12 +1,19 @@
 package typings.angularCommon
 
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common/locales/extra/lb", JSImport.Namespace)
-@js.native
-object lbMod extends js.Object {
+object lbMod extends Shortcut {
   
+  @JSImport("@angular/common/locales/extra/lb", JSImport.Default)
+  @js.native
   val default: js.Array[scala.Nothing] = js.native
+  
+  type _To = js.Array[scala.Nothing]
+  
+  /* This means you don't have to write `default`, but can instead just say `lbMod.foo` */
+  override def _to: js.Array[scala.Nothing] = default
 }

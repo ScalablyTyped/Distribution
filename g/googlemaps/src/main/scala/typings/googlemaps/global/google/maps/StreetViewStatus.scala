@@ -1,12 +1,13 @@
 package typings.googlemaps.global.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.maps.StreetViewStatus")
 @js.native
-object StreetViewStatus extends js.Object {
+object StreetViewStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.googlemaps.google.maps.StreetViewStatus with String] = js.native

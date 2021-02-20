@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KinesisIntegration extends js.Object {
+trait KinesisIntegration extends StObject {
   
   // credentials for an AWS access key integration
   var aws_access_key: js.UndefOr[AwsAccessKey] = js.native
@@ -22,30 +23,18 @@ object KinesisIntegration {
   }
   
   @scala.inline
-  implicit class KinesisIntegrationOps[Self <: KinesisIntegration] (val x: Self) extends AnyVal {
+  implicit class KinesisIntegrationMutableBuilder[Self <: KinesisIntegration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAws_access_key(value: AwsAccessKey): Self = StObject.set(x, "aws_access_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAws_access_keyUndefined: Self = StObject.set(x, "aws_access_key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAws_role(value: AwsRole): Self = StObject.set(x, "aws_role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAws_access_key(value: AwsAccessKey): Self = this.set("aws_access_key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAws_access_key: Self = this.set("aws_access_key", js.undefined)
-    
-    @scala.inline
-    def setAws_role(value: AwsRole): Self = this.set("aws_role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAws_role: Self = this.set("aws_role", js.undefined)
+    def setAws_roleUndefined: Self = StObject.set(x, "aws_role", js.undefined)
   }
 }

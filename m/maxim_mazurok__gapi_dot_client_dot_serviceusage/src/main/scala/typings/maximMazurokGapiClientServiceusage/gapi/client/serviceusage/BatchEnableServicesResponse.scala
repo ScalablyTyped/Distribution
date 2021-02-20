@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchEnableServicesResponse extends js.Object {
+trait BatchEnableServicesResponse extends StObject {
   
   /** If allow_partial_success is true, and one or more services could not be enabled, this field contains the details about each failure. */
   var failures: js.UndefOr[js.Array[EnableFailure]] = js.native
@@ -22,36 +23,24 @@ object BatchEnableServicesResponse {
   }
   
   @scala.inline
-  implicit class BatchEnableServicesResponseOps[Self <: BatchEnableServicesResponse] (val x: Self) extends AnyVal {
+  implicit class BatchEnableServicesResponseMutableBuilder[Self <: BatchEnableServicesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailures(value: js.Array[EnableFailure]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailuresVarargs(value: EnableFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
     @scala.inline
-    def setFailuresVarargs(value: EnableFailure*): Self = this.set("failures", js.Array(value :_*))
+    def setServices(value: js.Array[GoogleApiServiceusageV1Service]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailures(value: js.Array[EnableFailure]): Self = this.set("failures", value.asInstanceOf[js.Any])
+    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
     @scala.inline
-    def deleteFailures: Self = this.set("failures", js.undefined)
-    
-    @scala.inline
-    def setServicesVarargs(value: GoogleApiServiceusageV1Service*): Self = this.set("services", js.Array(value :_*))
-    
-    @scala.inline
-    def setServices(value: js.Array[GoogleApiServiceusageV1Service]): Self = this.set("services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServices: Self = this.set("services", js.undefined)
+    def setServicesVarargs(value: GoogleApiServiceusageV1Service*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

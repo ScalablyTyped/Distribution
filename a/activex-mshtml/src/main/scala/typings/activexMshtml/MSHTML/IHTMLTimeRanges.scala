@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLTimeRanges extends js.Object {
+trait IHTMLTimeRanges extends StObject {
   
   @JSName("MSHTML.IHTMLTimeRanges_typekey")
   var MSHTMLDotIHTMLTimeRanges_typekey: IHTMLTimeRanges = js.native
@@ -31,30 +32,18 @@ object IHTMLTimeRanges {
   }
   
   @scala.inline
-  implicit class IHTMLTimeRangesOps[Self <: IHTMLTimeRanges] (val x: Self) extends AnyVal {
+  implicit class IHTMLTimeRangesMutableBuilder[Self <: IHTMLTimeRanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Double => Double): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSHTMLDotIHTMLTimeRanges_typekey(value: IHTMLTimeRanges): Self = StObject.set(x, "MSHTML.IHTMLTimeRanges_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotIHTMLTimeRanges_typekey(value: IHTMLTimeRanges): Self = this.set("MSHTML.IHTMLTimeRanges_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnd(value: Double => Double): Self = this.set("end", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double => Double): Self = this.set("start", js.Any.fromFunction1(value))
+    def setStart(value: Double => Double): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
   }
 }

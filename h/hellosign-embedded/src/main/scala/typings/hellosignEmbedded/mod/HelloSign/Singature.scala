@@ -1,11 +1,12 @@
 package typings.hellosignEmbedded.mod.HelloSign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Singature extends js.Object {
+trait Singature extends StObject {
   
   var order: js.UndefOr[Double] = js.native
   
@@ -22,30 +23,18 @@ object Singature {
   }
   
   @scala.inline
-  implicit class SingatureOps[Self <: Singature] (val x: Self) extends AnyVal {
+  implicit class SingatureMutableBuilder[Self <: Singature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSigner_email_address(value: String): Self = StObject.set(x, "signer_email_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigner_email_address(value: String): Self = this.set("signer_email_address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSigner_name(value: String): Self = this.set("signer_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrder(value: Double): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setSigner_name(value: String): Self = StObject.set(x, "signer_name", value.asInstanceOf[js.Any])
   }
 }

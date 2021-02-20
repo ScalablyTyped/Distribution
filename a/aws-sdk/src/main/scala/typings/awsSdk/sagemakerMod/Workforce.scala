@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Workforce extends js.Object {
+trait Workforce extends StObject {
   
   /**
     * The configuration of an Amazon Cognito workforce. A single Cognito workforce is created using and corresponds to a single  Amazon Cognito user pool.
@@ -56,60 +57,48 @@ object Workforce {
   }
   
   @scala.inline
-  implicit class WorkforceOps[Self <: Workforce] (val x: Self) extends AnyVal {
+  implicit class WorkforceMutableBuilder[Self <: Workforce] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCognitoConfig(value: CognitoConfig): Self = StObject.set(x, "CognitoConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCognitoConfigUndefined: Self = StObject.set(x, "CognitoConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkforceArn(value: WorkforceArn): Self = this.set("WorkforceArn", value.asInstanceOf[js.Any])
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def setWorkforceName(value: WorkforceName): Self = this.set("WorkforceName", value.asInstanceOf[js.Any])
+    def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCognitoConfig(value: CognitoConfig): Self = this.set("CognitoConfig", value.asInstanceOf[js.Any])
+    def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
     
     @scala.inline
-    def deleteCognitoConfig: Self = this.set("CognitoConfig", js.undefined)
+    def setOidcConfig(value: OidcConfigForResponse): Self = StObject.set(x, "OidcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: Timestamp): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setOidcConfigUndefined: Self = StObject.set(x, "OidcConfig", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setSourceIpConfig(value: SourceIpConfig): Self = StObject.set(x, "SourceIpConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDate(value: Timestamp): Self = this.set("LastUpdatedDate", value.asInstanceOf[js.Any])
+    def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedDate: Self = this.set("LastUpdatedDate", js.undefined)
+    def setSubDomain(value: String): Self = StObject.set(x, "SubDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOidcConfig(value: OidcConfigForResponse): Self = this.set("OidcConfig", value.asInstanceOf[js.Any])
+    def setSubDomainUndefined: Self = StObject.set(x, "SubDomain", js.undefined)
     
     @scala.inline
-    def deleteOidcConfig: Self = this.set("OidcConfig", js.undefined)
+    def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceIpConfig(value: SourceIpConfig): Self = this.set("SourceIpConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceIpConfig: Self = this.set("SourceIpConfig", js.undefined)
-    
-    @scala.inline
-    def setSubDomain(value: String): Self = this.set("SubDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubDomain: Self = this.set("SubDomain", js.undefined)
+    def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
   }
 }

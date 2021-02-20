@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FixedResponseActionConfig extends js.Object {
+trait FixedResponseActionConfig extends StObject {
   
   /**
     * The content type. Valid Values: text/plain | text/css | text/html | application/javascript | application/json
@@ -31,33 +32,21 @@ object FixedResponseActionConfig {
   }
   
   @scala.inline
-  implicit class FixedResponseActionConfigOps[Self <: FixedResponseActionConfig] (val x: Self) extends AnyVal {
+  implicit class FixedResponseActionConfigMutableBuilder[Self <: FixedResponseActionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: FixedResponseActionContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageBody(value: FixedResponseActionMessage): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: FixedResponseActionStatusCode): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    def setMessageBodyUndefined: Self = StObject.set(x, "MessageBody", js.undefined)
     
     @scala.inline
-    def setContentType(value: FixedResponseActionContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("ContentType", js.undefined)
-    
-    @scala.inline
-    def setMessageBody(value: FixedResponseActionMessage): Self = this.set("MessageBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageBody: Self = this.set("MessageBody", js.undefined)
+    def setStatusCode(value: FixedResponseActionStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
   }
 }

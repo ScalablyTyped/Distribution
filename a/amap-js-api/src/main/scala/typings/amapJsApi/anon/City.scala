@@ -1,11 +1,12 @@
 package typings.amapJsApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait City extends js.Object {
+trait City extends StObject {
   
   /**
     * 市名称
@@ -36,33 +37,21 @@ object City {
   }
   
   @scala.inline
-  implicit class CityOps[Self <: City] (val x: Self) extends AnyVal {
+  implicit class CityMutableBuilder[Self <: City] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setProvince(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCitycode(value: String): Self = this.set("citycode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDistrict(value: String): Self = this.set("district", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvinceVarargs(value: scala.Nothing*): Self = this.set("province", js.Array(value :_*))
-    
-    @scala.inline
-    def setProvince(value: String | js.Array[scala.Nothing]): Self = this.set("province", value.asInstanceOf[js.Any])
+    def setProvinceVarargs(value: scala.Nothing*): Self = StObject.set(x, "province", js.Array(value :_*))
   }
 }

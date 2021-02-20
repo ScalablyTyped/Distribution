@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplyPendingMaintenanceActionResponse extends js.Object {
+trait ApplyPendingMaintenanceActionResponse extends StObject {
   
   /**
     * The AWS DMS resource that the pending maintenance action will be applied to.
@@ -21,24 +22,12 @@ object ApplyPendingMaintenanceActionResponse {
   }
   
   @scala.inline
-  implicit class ApplyPendingMaintenanceActionResponseOps[Self <: ApplyPendingMaintenanceActionResponse] (val x: Self) extends AnyVal {
+  implicit class ApplyPendingMaintenanceActionResponseMutableBuilder[Self <: ApplyPendingMaintenanceActionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourcePendingMaintenanceActions(value: ResourcePendingMaintenanceActions): Self = StObject.set(x, "ResourcePendingMaintenanceActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourcePendingMaintenanceActions(value: ResourcePendingMaintenanceActions): Self = this.set("ResourcePendingMaintenanceActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcePendingMaintenanceActions: Self = this.set("ResourcePendingMaintenanceActions", js.undefined)
+    def setResourcePendingMaintenanceActionsUndefined: Self = StObject.set(x, "ResourcePendingMaintenanceActions", js.undefined)
   }
 }

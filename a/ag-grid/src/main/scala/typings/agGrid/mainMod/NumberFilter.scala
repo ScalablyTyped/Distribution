@@ -1,5 +1,6 @@
 package typings.agGrid.mainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,11 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("ag-grid/dist/lib/main", "NumberFilter")
 @js.native
 class NumberFilter ()
-  extends typings.agGrid.numberFilterMod.NumberFilter
+  extends typings.agGrid.numberFilterMod.NumberFilter {
+  def this(template: String) = this()
+}
 /* static members */
-@JSImport("ag-grid/dist/lib/main", "NumberFilter")
-@js.native
-object NumberFilter extends js.Object {
+object NumberFilter {
   
-  var LESS_THAN: String = js.native
+  @JSImport("ag-grid/dist/lib/main", "NumberFilter")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ag-grid/dist/lib/main", "NumberFilter.LESS_THAN")
+  @js.native
+  def LESS_THAN: String = js.native
+  @scala.inline
+  def LESS_THAN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN")(x.asInstanceOf[js.Any])
 }

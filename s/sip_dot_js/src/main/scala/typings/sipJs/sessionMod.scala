@@ -38,16 +38,16 @@ import typings.sipJs.sessionOptionsMod.SessionOptions
 import typings.sipJs.sessionReferOptionsMod.SessionReferOptions
 import typings.sipJs.sessionStateMod.SessionState
 import typings.sipJs.userAgentMod.UserAgent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/session", JSImport.Namespace)
-@js.native
-object sessionMod extends js.Object {
+object sessionMod {
   
+  @JSImport("sip.js/lib/api/session", "Session")
   @js.native
-  abstract class Session protected () extends js.Object {
+  abstract class Session protected () extends StObject {
     /**
       * Constructor.
       * @param userAgent - User agent. See {@link UserAgent} for details.

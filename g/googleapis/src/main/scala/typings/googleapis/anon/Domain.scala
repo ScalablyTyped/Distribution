@@ -1,12 +1,13 @@
 package typings.googleapis.anon
 
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaTableReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Domain extends js.Object {
+trait Domain extends StObject {
   
   var domain: js.UndefOr[String] = js.native
   
@@ -31,60 +32,48 @@ object Domain {
   }
   
   @scala.inline
-  implicit class DomainOps[Self <: Domain] (val x: Self) extends AnyVal {
+  implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupByEmail(value: String): Self = StObject.set(x, "groupByEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setGroupByEmailUndefined: Self = StObject.set(x, "groupByEmail", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setIamMember(value: String): Self = StObject.set(x, "iamMember", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByEmail(value: String): Self = this.set("groupByEmail", value.asInstanceOf[js.Any])
+    def setIamMemberUndefined: Self = StObject.set(x, "iamMember", js.undefined)
     
     @scala.inline
-    def deleteGroupByEmail: Self = this.set("groupByEmail", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamMember(value: String): Self = this.set("iamMember", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteIamMember: Self = this.set("iamMember", js.undefined)
+    def setSpecialGroup(value: String): Self = StObject.set(x, "specialGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setSpecialGroupUndefined: Self = StObject.set(x, "specialGroup", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setUserByEmail(value: String): Self = StObject.set(x, "userByEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecialGroup(value: String): Self = this.set("specialGroup", value.asInstanceOf[js.Any])
+    def setUserByEmailUndefined: Self = StObject.set(x, "userByEmail", js.undefined)
     
     @scala.inline
-    def deleteSpecialGroup: Self = this.set("specialGroup", js.undefined)
+    def setView(value: SchemaTableReference): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserByEmail(value: String): Self = this.set("userByEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserByEmail: Self = this.set("userByEmail", js.undefined)
-    
-    @scala.inline
-    def setView(value: SchemaTableReference): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

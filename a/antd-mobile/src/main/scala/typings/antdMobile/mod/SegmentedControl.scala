@@ -3,6 +3,7 @@ package typings.antdMobile.mod
 import typings.antdMobile.anon.OnChange
 import typings.antdMobile.segmentedControlMod.SegmentedControlProps
 import typings.antdMobile.segmentedControlMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,15 @@ class SegmentedControl protected () extends default {
   def this(props: SegmentedControlProps) = this()
 }
 /* static members */
-@JSImport("antd-mobile", "SegmentedControl")
-@js.native
-object SegmentedControl extends js.Object {
+object SegmentedControl {
   
-  var defaultProps: OnChange = js.native
+  @JSImport("antd-mobile", "SegmentedControl")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile", "SegmentedControl.defaultProps")
+  @js.native
+  def defaultProps: OnChange = js.native
+  @scala.inline
+  def defaultProps_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

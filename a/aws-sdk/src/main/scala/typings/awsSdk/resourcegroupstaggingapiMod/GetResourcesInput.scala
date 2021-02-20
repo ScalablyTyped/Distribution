@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupstaggingapiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetResourcesInput extends js.Object {
+trait GetResourcesInput extends StObject {
   
   /**
     * Specifies whether to exclude resources that are compliant with the tag policy. Set this to true if you are interested in retrieving information on noncompliant resources only. You can use this parameter only if the IncludeComplianceDetails parameter is also set to true.
@@ -51,66 +52,54 @@ object GetResourcesInput {
   }
   
   @scala.inline
-  implicit class GetResourcesInputOps[Self <: GetResourcesInput] (val x: Self) extends AnyVal {
+  implicit class GetResourcesInputMutableBuilder[Self <: GetResourcesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeCompliantResources(value: ExcludeCompliantResources): Self = StObject.set(x, "ExcludeCompliantResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeCompliantResourcesUndefined: Self = StObject.set(x, "ExcludeCompliantResources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeComplianceDetails(value: IncludeComplianceDetails): Self = StObject.set(x, "IncludeComplianceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeCompliantResources(value: ExcludeCompliantResources): Self = this.set("ExcludeCompliantResources", value.asInstanceOf[js.Any])
+    def setIncludeComplianceDetailsUndefined: Self = StObject.set(x, "IncludeComplianceDetails", js.undefined)
     
     @scala.inline
-    def deleteExcludeCompliantResources: Self = this.set("ExcludeCompliantResources", js.undefined)
+    def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeComplianceDetails(value: IncludeComplianceDetails): Self = this.set("IncludeComplianceDetails", value.asInstanceOf[js.Any])
+    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
     @scala.inline
-    def deleteIncludeComplianceDetails: Self = this.set("IncludeComplianceDetails", js.undefined)
+    def setResourceTypeFilters(value: ResourceTypeFilterList): Self = StObject.set(x, "ResourceTypeFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationToken(value: PaginationToken): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
+    def setResourceTypeFiltersUndefined: Self = StObject.set(x, "ResourceTypeFilters", js.undefined)
     
     @scala.inline
-    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+    def setResourceTypeFiltersVarargs(value: AmazonResourceType*): Self = StObject.set(x, "ResourceTypeFilters", js.Array(value :_*))
     
     @scala.inline
-    def setResourceTypeFiltersVarargs(value: AmazonResourceType*): Self = this.set("ResourceTypeFilters", js.Array(value :_*))
+    def setResourcesPerPage(value: ResourcesPerPage): Self = StObject.set(x, "ResourcesPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTypeFilters(value: ResourceTypeFilterList): Self = this.set("ResourceTypeFilters", value.asInstanceOf[js.Any])
+    def setResourcesPerPageUndefined: Self = StObject.set(x, "ResourcesPerPage", js.undefined)
     
     @scala.inline
-    def deleteResourceTypeFilters: Self = this.set("ResourceTypeFilters", js.undefined)
+    def setTagFilters(value: TagFilterList): Self = StObject.set(x, "TagFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesPerPage(value: ResourcesPerPage): Self = this.set("ResourcesPerPage", value.asInstanceOf[js.Any])
+    def setTagFiltersUndefined: Self = StObject.set(x, "TagFilters", js.undefined)
     
     @scala.inline
-    def deleteResourcesPerPage: Self = this.set("ResourcesPerPage", js.undefined)
+    def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "TagFilters", js.Array(value :_*))
     
     @scala.inline
-    def setTagFiltersVarargs(value: TagFilter*): Self = this.set("TagFilters", js.Array(value :_*))
+    def setTagsPerPage(value: TagsPerPage): Self = StObject.set(x, "TagsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagFilters(value: TagFilterList): Self = this.set("TagFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagFilters: Self = this.set("TagFilters", js.undefined)
-    
-    @scala.inline
-    def setTagsPerPage(value: TagsPerPage): Self = this.set("TagsPerPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagsPerPage: Self = this.set("TagsPerPage", js.undefined)
+    def setTagsPerPageUndefined: Self = StObject.set(x, "TagsPerPage", js.undefined)
   }
 }

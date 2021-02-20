@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.ReflectionFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableBackground extends js.Object {
+trait TableBackground extends StObject {
   
   val Fill: FillFormat = js.native
   
@@ -35,33 +36,21 @@ object TableBackground {
   }
   
   @scala.inline
-  implicit class TableBackgroundOps[Self <: TableBackground] (val x: Self) extends AnyVal {
+  implicit class TableBackgroundMutableBuilder[Self <: TableBackground] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPicture(value: PictureFormat): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPowerPointDotTableBackground_typekey(value: TableBackground): Self = StObject.set(x, "PowerPoint.TableBackground_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: FillFormat): Self = this.set("Fill", value.asInstanceOf[js.Any])
+    def setReflection(value: ReflectionFormat): Self = StObject.set(x, "Reflection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicture(value: PictureFormat): Self = this.set("Picture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotTableBackground_typekey(value: TableBackground): Self = this.set("PowerPoint.TableBackground_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReflection(value: ReflectionFormat): Self = this.set("Reflection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadow(value: ShadowFormat): Self = this.set("Shadow", value.asInstanceOf[js.Any])
+    def setShadow(value: ShadowFormat): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
   }
 }

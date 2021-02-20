@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a customer-supplied Signing Key used by Cloud CDN Signed URLs
   */
 @js.native
-trait SchemaSignedUrlKey extends js.Object {
+trait SchemaSignedUrlKey extends StObject {
   
   /**
     * Name of the key. The name must be 1-63 characters long, and comply with
@@ -35,30 +36,18 @@ object SchemaSignedUrlKey {
   }
   
   @scala.inline
-  implicit class SchemaSignedUrlKeyOps[Self <: SchemaSignedUrlKey] (val x: Self) extends AnyVal {
+  implicit class SchemaSignedUrlKeyMutableBuilder[Self <: SchemaSignedUrlKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyValue(value: String): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyName(value: String): Self = this.set("keyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyName: Self = this.set("keyName", js.undefined)
-    
-    @scala.inline
-    def setKeyValue(value: String): Self = this.set("keyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyValue: Self = this.set("keyValue", js.undefined)
+    def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
   }
 }

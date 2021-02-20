@@ -2,12 +2,13 @@ package typings.overlayscrollbars.anon
 
 import typings.overlayscrollbars.mod.AutoHideBehavior
 import typings.overlayscrollbars.mod.VisibilityBehavior
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoHide extends js.Object {
+trait AutoHide extends StObject {
   
   var autoHide: js.UndefOr[AutoHideBehavior] = js.native
   
@@ -32,60 +33,48 @@ object AutoHide {
   }
   
   @scala.inline
-  implicit class AutoHideOps[Self <: AutoHide] (val x: Self) extends AnyVal {
+  implicit class AutoHideMutableBuilder[Self <: AutoHide] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoHide(value: AutoHideBehavior): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoHideDelay(value: Double): Self = StObject.set(x, "autoHideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoHideDelayUndefined: Self = StObject.set(x, "autoHideDelay", js.undefined)
     
     @scala.inline
-    def setAutoHide(value: AutoHideBehavior): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
     @scala.inline
-    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
+    def setClickScrolling(value: Boolean): Self = StObject.set(x, "clickScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHideDelay(value: Double): Self = this.set("autoHideDelay", value.asInstanceOf[js.Any])
+    def setClickScrollingUndefined: Self = StObject.set(x, "clickScrolling", js.undefined)
     
     @scala.inline
-    def deleteAutoHideDelay: Self = this.set("autoHideDelay", js.undefined)
+    def setDragScrolling(value: Boolean): Self = StObject.set(x, "dragScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickScrolling(value: Boolean): Self = this.set("clickScrolling", value.asInstanceOf[js.Any])
+    def setDragScrollingUndefined: Self = StObject.set(x, "dragScrolling", js.undefined)
     
     @scala.inline
-    def deleteClickScrolling: Self = this.set("clickScrolling", js.undefined)
+    def setSnapHandle(value: Boolean): Self = StObject.set(x, "snapHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragScrolling(value: Boolean): Self = this.set("dragScrolling", value.asInstanceOf[js.Any])
+    def setSnapHandleUndefined: Self = StObject.set(x, "snapHandle", js.undefined)
     
     @scala.inline
-    def deleteDragScrolling: Self = this.set("dragScrolling", js.undefined)
+    def setTouchSupport(value: Boolean): Self = StObject.set(x, "touchSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapHandle(value: Boolean): Self = this.set("snapHandle", value.asInstanceOf[js.Any])
+    def setTouchSupportUndefined: Self = StObject.set(x, "touchSupport", js.undefined)
     
     @scala.inline
-    def deleteSnapHandle: Self = this.set("snapHandle", js.undefined)
+    def setVisibility(value: VisibilityBehavior): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchSupport(value: Boolean): Self = this.set("touchSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchSupport: Self = this.set("touchSupport", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: VisibilityBehavior): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.editor
 
 import typings.monacoEditor.mod.IRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISingleEditOperation extends js.Object {
+trait ISingleEditOperation extends StObject {
   
   /**
     * This indicates that this operation has "insert" semantics.
@@ -33,33 +34,21 @@ object ISingleEditOperation {
   }
   
   @scala.inline
-  implicit class ISingleEditOperationOps[Self <: ISingleEditOperation] (val x: Self) extends AnyVal {
+  implicit class ISingleEditOperationMutableBuilder[Self <: ISingleEditOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceMoveMarkers(value: Boolean): Self = StObject.set(x, "forceMoveMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceMoveMarkersUndefined: Self = StObject.set(x, "forceMoveMarkers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: IRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceMoveMarkers(value: Boolean): Self = this.set("forceMoveMarkers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceMoveMarkers: Self = this.set("forceMoveMarkers", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextNull: Self = this.set("text", null)
+    def setTextNull: Self = StObject.set(x, "text", null)
   }
 }

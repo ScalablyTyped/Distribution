@@ -1,23 +1,30 @@
 package typings.hirestime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hirestime", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("hirestime", JSImport.Default)
+  @js.native
   def default(): Elapsor = js.native
   
+  @JSImport("hirestime", "hiresTimeBrowserDate")
+  @js.native
   def hiresTimeBrowserDate(): Elapsor = js.native
   
+  @JSImport("hirestime", "hiresTimeBrowserPerformance")
+  @js.native
   def hiresTimeBrowserPerformance(): Elapsor = js.native
   
+  @JSImport("hirestime", "hirestimeNode")
+  @js.native
   def hirestimeNode(): Elapsor = js.native
   
   @js.native
-  trait Elapsor extends js.Object {
+  trait Elapsor extends StObject {
     
     def apply(): Double = js.native
     

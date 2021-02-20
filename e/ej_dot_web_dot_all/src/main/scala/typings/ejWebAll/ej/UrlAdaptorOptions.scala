@@ -1,11 +1,12 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UrlAdaptorOptions extends js.Object {
+trait UrlAdaptorOptions extends StObject {
   
   var accept: js.UndefOr[String] = js.native
   
@@ -50,120 +51,108 @@ object UrlAdaptorOptions {
   }
   
   @scala.inline
-  implicit class UrlAdaptorOptionsOps[Self <: UrlAdaptorOptions] (val x: Self) extends AnyVal {
+  implicit class UrlAdaptorOptionsMutableBuilder[Self <: UrlAdaptorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatch(value: String): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccept(value: String): Self = this.set("accept", value.asInstanceOf[js.Any])
+    def setBatchChangeSetContentType(value: String): Self = StObject.set(x, "batchChangeSetContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccept: Self = this.set("accept", js.undefined)
+    def setBatchChangeSetContentTypeUndefined: Self = StObject.set(x, "batchChangeSetContentType", js.undefined)
     
     @scala.inline
-    def setBatch(value: String): Self = this.set("batch", value.asInstanceOf[js.Any])
+    def setBatchContent(value: String): Self = StObject.set(x, "batchContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatch: Self = this.set("batch", js.undefined)
+    def setBatchContentUndefined: Self = StObject.set(x, "batchContent", js.undefined)
     
     @scala.inline
-    def setBatchChangeSetContentType(value: String): Self = this.set("batchChangeSetContentType", value.asInstanceOf[js.Any])
+    def setBatchPre(value: String): Self = StObject.set(x, "batchPre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatchChangeSetContentType: Self = this.set("batchChangeSetContentType", js.undefined)
+    def setBatchPreUndefined: Self = StObject.set(x, "batchPre", js.undefined)
     
     @scala.inline
-    def setBatchContent(value: String): Self = this.set("batchContent", value.asInstanceOf[js.Any])
+    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     @scala.inline
-    def deleteBatchContent: Self = this.set("batchContent", js.undefined)
+    def setChangeSet(value: String): Self = StObject.set(x, "changeSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchPre(value: String): Self = this.set("batchPre", value.asInstanceOf[js.Any])
+    def setChangeSetContent(value: String): Self = StObject.set(x, "changeSetContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatchPre: Self = this.set("batchPre", js.undefined)
+    def setChangeSetContentUndefined: Self = StObject.set(x, "changeSetContent", js.undefined)
     
     @scala.inline
-    def setChangeSet(value: String): Self = this.set("changeSet", value.asInstanceOf[js.Any])
+    def setChangeSetUndefined: Self = StObject.set(x, "changeSet", js.undefined)
     
     @scala.inline
-    def deleteChangeSet: Self = this.set("changeSet", js.undefined)
+    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSetContent(value: String): Self = this.set("changeSetContent", value.asInstanceOf[js.Any])
+    def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
     
     @scala.inline
-    def deleteChangeSetContent: Self = this.set("changeSetContent", js.undefined)
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentId(value: String): Self = this.set("contentId", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteContentId: Self = this.set("contentId", js.undefined)
+    def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setMultipartAccept(value: String): Self = StObject.set(x, "multipartAccept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: String): Self = this.set("expand", value.asInstanceOf[js.Any])
+    def setMultipartAcceptUndefined: Self = StObject.set(x, "multipartAccept", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipartAccept(value: String): Self = this.set("multipartAccept", value.asInstanceOf[js.Any])
+    def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
     
     @scala.inline
-    def deleteMultipartAccept: Self = this.set("multipartAccept", js.undefined)
+    def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestType(value: String): Self = this.set("requestType", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteRequestType: Self = this.set("requestType", js.undefined)
+    def setSkip(value: String): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: String): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip(value: String): Self = this.set("skip", value.asInstanceOf[js.Any])
+    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
     @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setTake(value: String): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortBy(value: String): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
     
     @scala.inline
-    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTake(value: String): Self = this.set("take", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTake: Self = this.set("take", js.undefined)
-    
-    @scala.inline
-    def setWhere(value: String): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

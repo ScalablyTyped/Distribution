@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetPlatform extends js.Object {
+trait TargetPlatform extends StObject {
   
   /**
     * Specifies a target platform accelerator (optional).    NVIDIA: Nvidia graphics processing unit. It also requires gpu-code, trt-ver, cuda-ver compiler options    MALI: ARM Mali graphics processor    INTEL_GRAPHICS: Integrated Intel graphics  
@@ -31,30 +32,18 @@ object TargetPlatform {
   }
   
   @scala.inline
-  implicit class TargetPlatformOps[Self <: TargetPlatform] (val x: Self) extends AnyVal {
+  implicit class TargetPlatformMutableBuilder[Self <: TargetPlatform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerator(value: TargetPlatformAccelerator): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorUndefined: Self = StObject.set(x, "Accelerator", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArch(value: TargetPlatformArch): Self = StObject.set(x, "Arch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArch(value: TargetPlatformArch): Self = this.set("Arch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOs(value: TargetPlatformOs): Self = this.set("Os", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccelerator(value: TargetPlatformAccelerator): Self = this.set("Accelerator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccelerator: Self = this.set("Accelerator", js.undefined)
+    def setOs(value: TargetPlatformOs): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
   }
 }

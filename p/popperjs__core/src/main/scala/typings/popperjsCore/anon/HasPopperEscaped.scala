@@ -1,12 +1,13 @@
 package typings.popperjsCore.anon
 
 import typings.popperjsCore.typesMod.SideObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HasPopperEscaped extends js.Object {
+trait HasPopperEscaped extends StObject {
   
   var hasPopperEscaped: Boolean = js.native
   
@@ -30,30 +31,18 @@ object HasPopperEscaped {
   }
   
   @scala.inline
-  implicit class HasPopperEscapedOps[Self <: HasPopperEscaped] (val x: Self) extends AnyVal {
+  implicit class HasPopperEscapedMutableBuilder[Self <: HasPopperEscaped] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasPopperEscaped(value: Boolean): Self = StObject.set(x, "hasPopperEscaped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsReferenceHidden(value: Boolean): Self = StObject.set(x, "isReferenceHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPopperEscapeOffsets(value: SideObject): Self = StObject.set(x, "popperEscapeOffsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPopperEscaped(value: Boolean): Self = this.set("hasPopperEscaped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsReferenceHidden(value: Boolean): Self = this.set("isReferenceHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopperEscapeOffsets(value: SideObject): Self = this.set("popperEscapeOffsets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceClippingOffsets(value: SideObject): Self = this.set("referenceClippingOffsets", value.asInstanceOf[js.Any])
+    def setReferenceClippingOffsets(value: SideObject): Self = StObject.set(x, "referenceClippingOffsets", value.asInstanceOf[js.Any])
   }
 }

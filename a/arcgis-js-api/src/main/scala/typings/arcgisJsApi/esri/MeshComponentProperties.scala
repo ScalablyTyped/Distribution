@@ -5,12 +5,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.smooth
 import typings.arcgisJsApi.arcgisJsApiStrings.source
 import typings.std.Uint16Array
 import typings.std.Uint32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeshComponentProperties extends js.Object {
+trait MeshComponentProperties extends StObject {
   
   /**
     * A flat array of indices that refer to vertices in the [vertexAttributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes) of the mesh to which the component belongs.
@@ -42,39 +43,27 @@ object MeshComponentProperties {
   }
   
   @scala.inline
-  implicit class MeshComponentPropertiesOps[Self <: MeshComponentProperties] (val x: Self) extends AnyVal {
+  implicit class MeshComponentPropertiesMutableBuilder[Self <: MeshComponentProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaces(value: Uint32Array | js.Array[Double] | Uint16Array): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacesVarargs(value: Double*): Self = StObject.set(x, "faces", js.Array(value :_*))
     
     @scala.inline
-    def setFacesVarargs(value: Double*): Self = this.set("faces", js.Array(value :_*))
+    def setMaterial(value: MeshMaterialProperties | MeshMaterialMetallicRoughnessProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaces(value: Uint32Array | js.Array[Double] | Uint16Array): Self = this.set("faces", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteFaces: Self = this.set("faces", js.undefined)
+    def setShading(value: source | flat | smooth): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: MeshMaterialProperties | MeshMaterialMetallicRoughnessProperties): Self = this.set("material", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
-    
-    @scala.inline
-    def setShading(value: source | flat | smooth): Self = this.set("shading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShading: Self = this.set("shading", js.undefined)
+    def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
   }
 }

@@ -10,6 +10,7 @@ import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.emptyEleme
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.textProxy
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.uiElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

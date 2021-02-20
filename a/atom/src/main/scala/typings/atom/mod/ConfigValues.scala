@@ -36,6 +36,7 @@ import typings.atom.atomStrings.tab
 import typings.atom.atomStrings.textOrSnippet
 import typings.atom.atomStrings.undecided
 import typings.atom.atomStrings.yes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -732,329 +733,317 @@ object ConfigValues {
   }
   
   @scala.inline
-  implicit class ConfigValuesOps[Self <: ConfigValues] (val x: Self) extends AnyVal {
+  implicit class ConfigValuesMutableBuilder[Self <: ConfigValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAutocomplete-plusDotautoActivationDelay`(value: Double): Self = StObject.set(x, "autocomplete-plus.autoActivationDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAutocomplete-plusDotbackspaceTriggersAutocomplete`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.backspaceTriggersAutocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def `setAutocomplete-plusDotautoActivationDelay`(value: Double): Self = this.set("autocomplete-plus.autoActivationDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setAutocomplete-plusDotbackspaceTriggersAutocomplete`(value: Boolean): Self = this.set("autocomplete-plus.backspaceTriggersAutocomplete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setAutocomplete-plusDotbuiltinProviderBlacklist`(value: String): Self = this.set("autocomplete-plus.builtinProviderBlacklist", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotbuiltinProviderBlacklist`(value: String): Self = StObject.set(x, "autocomplete-plus.builtinProviderBlacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
     def `setAutocomplete-plusDotconfirmCompletion`(
       value: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
-    ): Self = this.set("autocomplete-plus.confirmCompletion", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "autocomplete-plus.confirmCompletion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotconsumeSuffix`(value: Boolean): Self = this.set("autocomplete-plus.consumeSuffix", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotconsumeSuffix`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.consumeSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotdefaultProvider`(value: Subsequence | Symbol): Self = this.set("autocomplete-plus.defaultProvider", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotdefaultProvider`(value: Subsequence | Symbol): Self = StObject.set(x, "autocomplete-plus.defaultProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotenableAutoActivation`(value: Boolean): Self = this.set("autocomplete-plus.enableAutoActivation", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotenableAutoActivation`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.enableAutoActivation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotenableAutoConfirmSingleSuggestion`(value: Boolean): Self = this.set("autocomplete-plus.enableAutoConfirmSingleSuggestion", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotenableAutoConfirmSingleSuggestion`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.enableAutoConfirmSingleSuggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotenableBuiltinProvider`(value: Boolean): Self = this.set("autocomplete-plus.enableBuiltinProvider", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotenableBuiltinProvider`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.enableBuiltinProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotenableExtendedUnicodeSupport`(value: Boolean): Self = this.set("autocomplete-plus.enableExtendedUnicodeSupport", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotenableExtendedUnicodeSupport`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.enableExtendedUnicodeSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotfileBlacklistVarargs`(value: String*): Self = this.set("autocomplete-plus.fileBlacklist", js.Array(value :_*))
+    def `setAutocomplete-plusDotfileBlacklist`(value: js.Array[String]): Self = StObject.set(x, "autocomplete-plus.fileBlacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotfileBlacklist`(value: js.Array[String]): Self = this.set("autocomplete-plus.fileBlacklist", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotfileBlacklistVarargs`(value: String*): Self = StObject.set(x, "autocomplete-plus.fileBlacklist", js.Array(value :_*))
     
     @scala.inline
-    def `setAutocomplete-plusDotincludeCompletionsFromAllBuffers`(value: Boolean): Self = this.set("autocomplete-plus.includeCompletionsFromAllBuffers", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotincludeCompletionsFromAllBuffers`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.includeCompletionsFromAllBuffers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotmaxVisibleSuggestions`(value: Double): Self = this.set("autocomplete-plus.maxVisibleSuggestions", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotmaxVisibleSuggestions`(value: Double): Self = StObject.set(x, "autocomplete-plus.maxVisibleSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotminimumWordLength`(value: Double): Self = this.set("autocomplete-plus.minimumWordLength", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotminimumWordLength`(value: Double): Self = StObject.set(x, "autocomplete-plus.minimumWordLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotscopeBlacklistVarargs`(value: String*): Self = this.set("autocomplete-plus.scopeBlacklist", js.Array(value :_*))
+    def `setAutocomplete-plusDotscopeBlacklist`(value: js.Array[String]): Self = StObject.set(x, "autocomplete-plus.scopeBlacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotscopeBlacklist`(value: js.Array[String]): Self = this.set("autocomplete-plus.scopeBlacklist", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotscopeBlacklistVarargs`(value: String*): Self = StObject.set(x, "autocomplete-plus.scopeBlacklist", js.Array(value :_*))
     
     @scala.inline
-    def `setAutocomplete-plusDotsimilarSuggestionRemoval`(value: none | textOrSnippet): Self = this.set("autocomplete-plus.similarSuggestionRemoval", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotsimilarSuggestionRemoval`(value: none | textOrSnippet): Self = StObject.set(x, "autocomplete-plus.similarSuggestionRemoval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotstrictMatching`(value: Boolean): Self = this.set("autocomplete-plus.strictMatching", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotstrictMatching`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.strictMatching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotsuggestionListFollows`(value: Word | typings.atom.atomStrings.Cursor): Self = this.set("autocomplete-plus.suggestionListFollows", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotsuggestionListFollows`(value: Word | typings.atom.atomStrings.Cursor): Self = StObject.set(x, "autocomplete-plus.suggestionListFollows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotsuppressActivationForEditorClassesVarargs`(value: String*): Self = this.set("autocomplete-plus.suppressActivationForEditorClasses", js.Array(value :_*))
+    def `setAutocomplete-plusDotsuppressActivationForEditorClasses`(value: js.Array[String]): Self = StObject.set(x, "autocomplete-plus.suppressActivationForEditorClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotsuppressActivationForEditorClasses`(value: js.Array[String]): Self = this.set("autocomplete-plus.suppressActivationForEditorClasses", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotsuppressActivationForEditorClassesVarargs`(value: String*): Self = StObject.set(x, "autocomplete-plus.suppressActivationForEditorClasses", js.Array(value :_*))
     
     @scala.inline
-    def `setAutocomplete-plusDotuseAlternateScoring`(value: Boolean): Self = this.set("autocomplete-plus.useAlternateScoring", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotuseAlternateScoring`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.useAlternateScoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotuseCoreMovementCommands`(value: Boolean): Self = this.set("autocomplete-plus.useCoreMovementCommands", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotuseCoreMovementCommands`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.useCoreMovementCommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutocomplete-plusDotuseLocalityBonus`(value: Boolean): Self = this.set("autocomplete-plus.useLocalityBonus", value.asInstanceOf[js.Any])
+    def `setAutocomplete-plusDotuseLocalityBonus`(value: Boolean): Self = StObject.set(x, "autocomplete-plus.useLocalityBonus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotallowPendingPaneItems(value: Boolean): Self = this.set("core.allowPendingPaneItems", value.asInstanceOf[js.Any])
+    def setCoreDotallowPendingPaneItems(value: Boolean): Self = StObject.set(x, "core.allowPendingPaneItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotaudioBeep(value: Boolean): Self = this.set("core.audioBeep", value.asInstanceOf[js.Any])
+    def setCoreDotaudioBeep(value: Boolean): Self = StObject.set(x, "core.audioBeep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotautomaticallyUpdate(value: Boolean): Self = this.set("core.automaticallyUpdate", value.asInstanceOf[js.Any])
+    def setCoreDotautomaticallyUpdate(value: Boolean): Self = StObject.set(x, "core.automaticallyUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotcloseDeletedFileTabs(value: Boolean): Self = this.set("core.closeDeletedFileTabs", value.asInstanceOf[js.Any])
+    def setCoreDotcloseDeletedFileTabs(value: Boolean): Self = StObject.set(x, "core.closeDeletedFileTabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotcloseEmptyWindows(value: Boolean): Self = this.set("core.closeEmptyWindows", value.asInstanceOf[js.Any])
+    def setCoreDotcloseEmptyWindows(value: Boolean): Self = StObject.set(x, "core.closeEmptyWindows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotcolorProfile(value: default | srgb): Self = this.set("core.colorProfile", value.asInstanceOf[js.Any])
+    def setCoreDotcolorProfile(value: default | srgb): Self = StObject.set(x, "core.colorProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotcustomFileTypes(value: StringDictionary[js.Array[String]]): Self = this.set("core.customFileTypes", value.asInstanceOf[js.Any])
+    def setCoreDotcustomFileTypes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "core.customFileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotdestroyEmptyPanes(value: Boolean): Self = this.set("core.destroyEmptyPanes", value.asInstanceOf[js.Any])
+    def setCoreDotdestroyEmptyPanes(value: Boolean): Self = StObject.set(x, "core.destroyEmptyPanes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotdisabledPackagesVarargs(value: String*): Self = this.set("core.disabledPackages", js.Array(value :_*))
+    def setCoreDotdisabledPackages(value: js.Array[String]): Self = StObject.set(x, "core.disabledPackages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotdisabledPackages(value: js.Array[String]): Self = this.set("core.disabledPackages", value.asInstanceOf[js.Any])
+    def setCoreDotdisabledPackagesVarargs(value: String*): Self = StObject.set(x, "core.disabledPackages", js.Array(value :_*))
     
     @scala.inline
-    def setCoreDotexcludeVcsIgnoredPaths(value: Boolean): Self = this.set("core.excludeVcsIgnoredPaths", value.asInstanceOf[js.Any])
+    def setCoreDotexcludeVcsIgnoredPaths(value: Boolean): Self = StObject.set(x, "core.excludeVcsIgnoredPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotfileEncoding(value: FileEncoding): Self = this.set("core.fileEncoding", value.asInstanceOf[js.Any])
+    def setCoreDotfileEncoding(value: FileEncoding): Self = StObject.set(x, "core.fileEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotfileSystemWatcher(value: native | experimental | poll | atom): Self = this.set("core.fileSystemWatcher", value.asInstanceOf[js.Any])
+    def setCoreDotfileSystemWatcher(value: native | experimental | poll | atom): Self = StObject.set(x, "core.fileSystemWatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotfollowSymlinks(value: Boolean): Self = this.set("core.followSymlinks", value.asInstanceOf[js.Any])
+    def setCoreDotfollowSymlinks(value: Boolean): Self = StObject.set(x, "core.followSymlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotignoredNamesVarargs(value: String*): Self = this.set("core.ignoredNames", js.Array(value :_*))
+    def setCoreDotignoredNames(value: js.Array[String]): Self = StObject.set(x, "core.ignoredNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotignoredNames(value: js.Array[String]): Self = this.set("core.ignoredNames", value.asInstanceOf[js.Any])
+    def setCoreDotignoredNamesVarargs(value: String*): Self = StObject.set(x, "core.ignoredNames", js.Array(value :_*))
     
     @scala.inline
-    def setCoreDotopenEmptyEditorOnStart(value: Boolean): Self = this.set("core.openEmptyEditorOnStart", value.asInstanceOf[js.Any])
+    def setCoreDotopenEmptyEditorOnStart(value: Boolean): Self = StObject.set(x, "core.openEmptyEditorOnStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotreopenProjectMenuCount(value: Double): Self = this.set("core.reopenProjectMenuCount", value.asInstanceOf[js.Any])
+    def setCoreDotreopenProjectMenuCount(value: Double): Self = StObject.set(x, "core.reopenProjectMenuCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotrestorePreviousWindowsOnStart(value: no | yes | always): Self = this.set("core.restorePreviousWindowsOnStart", value.asInstanceOf[js.Any])
+    def setCoreDotrestorePreviousWindowsOnStart(value: no | yes | always): Self = StObject.set(x, "core.restorePreviousWindowsOnStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDottelemetryConsent(value: limited | no | undecided): Self = this.set("core.telemetryConsent", value.asInstanceOf[js.Any])
+    def setCoreDottelemetryConsent(value: limited | no | undecided): Self = StObject.set(x, "core.telemetryConsent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotthemesVarargs(value: String*): Self = this.set("core.themes", js.Array(value :_*))
+    def setCoreDotthemes(value: js.Array[String]): Self = StObject.set(x, "core.themes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotthemes(value: js.Array[String]): Self = this.set("core.themes", value.asInstanceOf[js.Any])
+    def setCoreDotthemesVarargs(value: String*): Self = StObject.set(x, "core.themes", js.Array(value :_*))
     
     @scala.inline
-    def setCoreDotuseProxySettingsWhenCallingApm(value: Boolean): Self = this.set("core.useProxySettingsWhenCallingApm", value.asInstanceOf[js.Any])
+    def setCoreDotuseProxySettingsWhenCallingApm(value: Boolean): Self = StObject.set(x, "core.useProxySettingsWhenCallingApm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotuseTreeSitterParsers(value: Boolean): Self = this.set("core.useTreeSitterParsers", value.asInstanceOf[js.Any])
+    def setCoreDotuseTreeSitterParsers(value: Boolean): Self = StObject.set(x, "core.useTreeSitterParsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotversionPinnedPackagesVarargs(value: String*): Self = this.set("core.versionPinnedPackages", js.Array(value :_*))
+    def setCoreDotversionPinnedPackages(value: js.Array[String]): Self = StObject.set(x, "core.versionPinnedPackages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDotversionPinnedPackages(value: js.Array[String]): Self = this.set("core.versionPinnedPackages", value.asInstanceOf[js.Any])
+    def setCoreDotversionPinnedPackagesVarargs(value: String*): Self = StObject.set(x, "core.versionPinnedPackages", js.Array(value :_*))
     
     @scala.inline
-    def setCoreDotwarnOnLargeFileLimit(value: Double): Self = this.set("core.warnOnLargeFileLimit", value.asInstanceOf[js.Any])
+    def setCoreDotwarnOnLargeFileLimit(value: Double): Self = StObject.set(x, "core.warnOnLargeFileLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotatomicSoftTabs(value: Boolean): Self = this.set("editor.atomicSoftTabs", value.asInstanceOf[js.Any])
+    def setEditorDotatomicSoftTabs(value: Boolean): Self = StObject.set(x, "editor.atomicSoftTabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotautoIndent(value: Boolean): Self = this.set("editor.autoIndent", value.asInstanceOf[js.Any])
+    def setEditorDotautoIndent(value: Boolean): Self = StObject.set(x, "editor.autoIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotautoIndentOnPaste(value: Boolean): Self = this.set("editor.autoIndentOnPaste", value.asInstanceOf[js.Any])
+    def setEditorDotautoIndentOnPaste(value: Boolean): Self = StObject.set(x, "editor.autoIndentOnPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotconfirmCheckoutHeadRevision(value: Boolean): Self = this.set("editor.confirmCheckoutHeadRevision", value.asInstanceOf[js.Any])
+    def setEditorDotcommentEnd(value: String): Self = StObject.set(x, "editor.commentEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotfontFamily(value: String): Self = this.set("editor.fontFamily", value.asInstanceOf[js.Any])
+    def setEditorDotcommentEndNull: Self = StObject.set(x, "editor.commentEnd", null)
     
     @scala.inline
-    def setEditorDotfontSize(value: Double): Self = this.set("editor.fontSize", value.asInstanceOf[js.Any])
+    def setEditorDotcommentStart(value: String): Self = StObject.set(x, "editor.commentStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotinvisibles(value: Invisibles): Self = this.set("editor.invisibles", value.asInstanceOf[js.Any])
+    def setEditorDotcommentStartNull: Self = StObject.set(x, "editor.commentStart", null)
     
     @scala.inline
-    def setEditorDotlineHeight(value: String | Double): Self = this.set("editor.lineHeight", value.asInstanceOf[js.Any])
+    def setEditorDotconfirmCheckoutHeadRevision(value: Boolean): Self = StObject.set(x, "editor.confirmCheckoutHeadRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotmaxScreenLineLength(value: Double): Self = this.set("editor.maxScreenLineLength", value.asInstanceOf[js.Any])
+    def setEditorDotdecreaseIndentPattern(value: String): Self = StObject.set(x, "editor.decreaseIndentPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotnonWordCharacters(value: String): Self = this.set("editor.nonWordCharacters", value.asInstanceOf[js.Any])
+    def setEditorDotdecreaseIndentPatternNull: Self = StObject.set(x, "editor.decreaseIndentPattern", null)
     
     @scala.inline
-    def setEditorDotpreferredLineLength(value: Double): Self = this.set("editor.preferredLineLength", value.asInstanceOf[js.Any])
+    def setEditorDotfoldEndPattern(value: String): Self = StObject.set(x, "editor.foldEndPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotscrollPastEnd(value: Boolean): Self = this.set("editor.scrollPastEnd", value.asInstanceOf[js.Any])
+    def setEditorDotfoldEndPatternNull: Self = StObject.set(x, "editor.foldEndPattern", null)
     
     @scala.inline
-    def setEditorDotscrollSensitivity(value: Double): Self = this.set("editor.scrollSensitivity", value.asInstanceOf[js.Any])
+    def setEditorDotfontFamily(value: String): Self = StObject.set(x, "editor.fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotshowCursorOnSelection(value: Boolean): Self = this.set("editor.showCursorOnSelection", value.asInstanceOf[js.Any])
+    def setEditorDotfontSize(value: Double): Self = StObject.set(x, "editor.fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotshowIndentGuide(value: Boolean): Self = this.set("editor.showIndentGuide", value.asInstanceOf[js.Any])
+    def setEditorDotincreaseIndentPattern(value: String): Self = StObject.set(x, "editor.increaseIndentPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotshowInvisibles(value: Boolean): Self = this.set("editor.showInvisibles", value.asInstanceOf[js.Any])
+    def setEditorDotincreaseIndentPatternNull: Self = StObject.set(x, "editor.increaseIndentPattern", null)
     
     @scala.inline
-    def setEditorDotshowLineNumbers(value: Boolean): Self = this.set("editor.showLineNumbers", value.asInstanceOf[js.Any])
+    def setEditorDotinvisibles(value: Invisibles): Self = StObject.set(x, "editor.invisibles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotsoftTabs(value: Boolean): Self = this.set("editor.softTabs", value.asInstanceOf[js.Any])
+    def setEditorDotlineHeight(value: String | Double): Self = StObject.set(x, "editor.lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotsoftWrap(value: Boolean): Self = this.set("editor.softWrap", value.asInstanceOf[js.Any])
+    def setEditorDotmaxScreenLineLength(value: Double): Self = StObject.set(x, "editor.maxScreenLineLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotsoftWrapAtPreferredLineLength(value: Boolean): Self = this.set("editor.softWrapAtPreferredLineLength", value.asInstanceOf[js.Any])
+    def setEditorDotnonWordCharacters(value: String): Self = StObject.set(x, "editor.nonWordCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotsoftWrapHangingIndent(value: Double): Self = this.set("editor.softWrapHangingIndent", value.asInstanceOf[js.Any])
+    def setEditorDotpreferredLineLength(value: Double): Self = StObject.set(x, "editor.preferredLineLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDottabLength(value: Double): Self = this.set("editor.tabLength", value.asInstanceOf[js.Any])
+    def setEditorDotscrollPastEnd(value: Boolean): Self = StObject.set(x, "editor.scrollPastEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDottabType(value: auto | soft | hard): Self = this.set("editor.tabType", value.asInstanceOf[js.Any])
+    def setEditorDotscrollSensitivity(value: Double): Self = StObject.set(x, "editor.scrollSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotundoGroupingInterval(value: Double): Self = this.set("editor.undoGroupingInterval", value.asInstanceOf[js.Any])
+    def setEditorDotshowCursorOnSelection(value: Boolean): Self = StObject.set(x, "editor.showCursorOnSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotzoomFontWhenCtrlScrolling(value: Boolean): Self = this.set("editor.zoomFontWhenCtrlScrolling", value.asInstanceOf[js.Any])
+    def setEditorDotshowIndentGuide(value: Boolean): Self = StObject.set(x, "editor.showIndentGuide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinterDotdisabledProvidersVarargs(value: String*): Self = this.set("linter.disabledProviders", js.Array(value :_*))
+    def setEditorDotshowInvisibles(value: Boolean): Self = StObject.set(x, "editor.showInvisibles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinterDotdisabledProviders(value: js.Array[String]): Self = this.set("linter.disabledProviders", value.asInstanceOf[js.Any])
+    def setEditorDotshowLineNumbers(value: Boolean): Self = StObject.set(x, "editor.showLineNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinterDotignoreGlob(value: String): Self = this.set("linter.ignoreGlob", value.asInstanceOf[js.Any])
+    def setEditorDotsoftTabs(value: Boolean): Self = StObject.set(x, "editor.softTabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinterDotlintOnChange(value: Boolean): Self = this.set("linter.lintOnChange", value.asInstanceOf[js.Any])
+    def setEditorDotsoftWrap(value: Boolean): Self = StObject.set(x, "editor.softWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinterDotlintOnChangeInterval(value: Double): Self = this.set("linter.lintOnChangeInterval", value.asInstanceOf[js.Any])
+    def setEditorDotsoftWrapAtPreferredLineLength(value: Boolean): Self = StObject.set(x, "editor.softWrapAtPreferredLineLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinterDotlintOnOpen(value: Boolean): Self = this.set("linter.lintOnOpen", value.asInstanceOf[js.Any])
+    def setEditorDotsoftWrapHangingIndent(value: Double): Self = StObject.set(x, "editor.softWrapHangingIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinterDotlintPreviewTabs(value: Boolean): Self = this.set("linter.lintPreviewTabs", value.asInstanceOf[js.Any])
+    def setEditorDottabLength(value: Double): Self = StObject.set(x, "editor.tabLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStatus-barDotcursorPositionFormat`(value: String): Self = this.set("status-bar.cursorPositionFormat", value.asInstanceOf[js.Any])
+    def setEditorDottabType(value: auto | soft | hard): Self = StObject.set(x, "editor.tabType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStatus-barDotfullWidth`(value: Boolean): Self = this.set("status-bar.fullWidth", value.asInstanceOf[js.Any])
+    def setEditorDotundoGroupingInterval(value: Double): Self = StObject.set(x, "editor.undoGroupingInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStatus-barDotisVisible`(value: Boolean): Self = this.set("status-bar.isVisible", value.asInstanceOf[js.Any])
+    def setEditorDotzoomFontWhenCtrlScrolling(value: Boolean): Self = StObject.set(x, "editor.zoomFontWhenCtrlScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStatus-barDotselectionCountFormat`(value: String): Self = this.set("status-bar.selectionCountFormat", value.asInstanceOf[js.Any])
+    def setLinterDotdisabledProviders(value: js.Array[String]): Self = StObject.set(x, "linter.disabledProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTool-barDotfullWidth`(value: Boolean): Self = this.set("tool-bar.fullWidth", value.asInstanceOf[js.Any])
+    def setLinterDotdisabledProvidersVarargs(value: String*): Self = StObject.set(x, "linter.disabledProviders", js.Array(value :_*))
     
     @scala.inline
-    def `setTool-barDoticonSize`(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = this.set("tool-bar.iconSize", value.asInstanceOf[js.Any])
+    def setLinterDotignoreGlob(value: String): Self = StObject.set(x, "linter.ignoreGlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTool-barDotposition`(value: Top | Right | Bottom | Left): Self = this.set("tool-bar.position", value.asInstanceOf[js.Any])
+    def setLinterDotlintOnChange(value: Boolean): Self = StObject.set(x, "linter.lintOnChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTool-barDotuseTouchBar`(value: String): Self = this.set("tool-bar.useTouchBar", value.asInstanceOf[js.Any])
+    def setLinterDotlintOnChangeInterval(value: Double): Self = StObject.set(x, "linter.lintOnChangeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTool-barDotvisible`(value: Boolean): Self = this.set("tool-bar.visible", value.asInstanceOf[js.Any])
+    def setLinterDotlintOnOpen(value: Boolean): Self = StObject.set(x, "linter.lintOnOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotcommentEnd(value: String): Self = this.set("editor.commentEnd", value.asInstanceOf[js.Any])
+    def setLinterDotlintPreviewTabs(value: Boolean): Self = StObject.set(x, "linter.lintPreviewTabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotcommentEndNull: Self = this.set("editor.commentEnd", null)
+    def `setStatus-barDotcursorPositionFormat`(value: String): Self = StObject.set(x, "status-bar.cursorPositionFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotcommentStart(value: String): Self = this.set("editor.commentStart", value.asInstanceOf[js.Any])
+    def `setStatus-barDotfullWidth`(value: Boolean): Self = StObject.set(x, "status-bar.fullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotcommentStartNull: Self = this.set("editor.commentStart", null)
+    def `setStatus-barDotisVisible`(value: Boolean): Self = StObject.set(x, "status-bar.isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotdecreaseIndentPattern(value: String): Self = this.set("editor.decreaseIndentPattern", value.asInstanceOf[js.Any])
+    def `setStatus-barDotselectionCountFormat`(value: String): Self = StObject.set(x, "status-bar.selectionCountFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotdecreaseIndentPatternNull: Self = this.set("editor.decreaseIndentPattern", null)
+    def `setTool-barDotfullWidth`(value: Boolean): Self = StObject.set(x, "tool-bar.fullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotfoldEndPattern(value: String): Self = this.set("editor.foldEndPattern", value.asInstanceOf[js.Any])
+    def `setTool-barDoticonSize`(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "tool-bar.iconSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotfoldEndPatternNull: Self = this.set("editor.foldEndPattern", null)
+    def `setTool-barDotposition`(value: Top | Right | Bottom | Left): Self = StObject.set(x, "tool-bar.position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotincreaseIndentPattern(value: String): Self = this.set("editor.increaseIndentPattern", value.asInstanceOf[js.Any])
+    def `setTool-barDotuseTouchBar`(value: String): Self = StObject.set(x, "tool-bar.useTouchBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorDotincreaseIndentPatternNull: Self = this.set("editor.increaseIndentPattern", null)
+    def `setTool-barDotvisible`(value: Boolean): Self = StObject.set(x, "tool-bar.visible", value.asInstanceOf[js.Any])
   }
 }

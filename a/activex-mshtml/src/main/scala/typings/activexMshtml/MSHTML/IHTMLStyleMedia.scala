@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLStyleMedia extends js.Object {
+trait IHTMLStyleMedia extends StObject {
   
   @JSName("MSHTML.IHTMLStyleMedia_typekey")
   var MSHTMLDotIHTMLStyleMedia_typekey: IHTMLStyleMedia = js.native
@@ -25,27 +26,15 @@ object IHTMLStyleMedia {
   }
   
   @scala.inline
-  implicit class IHTMLStyleMediaOps[Self <: IHTMLStyleMedia] (val x: Self) extends AnyVal {
+  implicit class IHTMLStyleMediaMutableBuilder[Self <: IHTMLStyleMedia] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMSHTMLDotIHTMLStyleMedia_typekey(value: IHTMLStyleMedia): Self = StObject.set(x, "MSHTML.IHTMLStyleMedia_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchMedium(value: String => Boolean): Self = StObject.set(x, "matchMedium", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotIHTMLStyleMedia_typekey(value: IHTMLStyleMedia): Self = this.set("MSHTML.IHTMLStyleMedia_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchMedium(value: String => Boolean): Self = this.set("matchMedium", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

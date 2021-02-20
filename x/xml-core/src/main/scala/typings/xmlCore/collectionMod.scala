@@ -1,14 +1,14 @@
 package typings.xmlCore
 
 import typings.xmlCore.typesMod.ICollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xml-core/dist/types/collection", JSImport.Namespace)
-@js.native
-object collectionMod extends js.Object {
+object collectionMod {
   
+  @JSImport("xml-core/dist/types/collection", "Collection")
   @js.native
   class Collection[I] () extends ICollection[I] {
     def this(items: js.Array[I]) = this()

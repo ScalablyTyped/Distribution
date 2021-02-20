@@ -9,12 +9,13 @@ import typings.gestalt.gestaltStrings.high
 import typings.gestalt.gestaltStrings.low
 import typings.gestalt.gestaltStrings.none
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageProps extends js.Object {
+trait ImageProps extends StObject {
   
   var alt: String = js.native
   
@@ -51,81 +52,69 @@ object ImageProps {
   }
   
   @scala.inline
-  implicit class ImagePropsOps[Self <: ImageProps] (val x: Self) extends AnyVal {
+  implicit class ImagePropsMutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFit(value: cover | contain | none): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNaturalHeight(value: Double): Self = this.set("naturalHeight", value.asInstanceOf[js.Any])
+    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
     @scala.inline
-    def setNaturalWidth(value: Double): Self = this.set("naturalWidth", value.asInstanceOf[js.Any])
+    def setImportance(value: high | low | auto): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setLoading(value: eager | `lazy` | auto): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def setFit(value: cover | contain | none): Self = this.set("fit", value.asInstanceOf[js.Any])
+    def setNaturalHeight(value: Double): Self = StObject.set(x, "naturalHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFit: Self = this.set("fit", js.undefined)
+    def setNaturalWidth(value: Double): Self = StObject.set(x, "naturalWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportance(value: high | low | auto): Self = this.set("importance", value.asInstanceOf[js.Any])
+    def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteImportance: Self = this.set("importance", js.undefined)
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def setLoading(value: eager | `lazy` | auto): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def setOnError(value: () => Unit): Self = this.set("onError", js.Any.fromFunction0(value))
+    def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
     @scala.inline
-    def setOnLoad(value: () => Unit): Self = this.set("onLoad", js.Any.fromFunction0(value))
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizes(value: String): Self = this.set("sizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizes: Self = this.set("sizes", js.undefined)
-    
-    @scala.inline
-    def setSrcSet(value: String): Self = this.set("srcSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrcSet: Self = this.set("srcSet", js.undefined)
+    def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
   }
 }

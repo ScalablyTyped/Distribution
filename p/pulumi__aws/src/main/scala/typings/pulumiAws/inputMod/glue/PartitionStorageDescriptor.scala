@@ -2,12 +2,13 @@ package typings.pulumiAws.inputMod.glue
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartitionStorageDescriptor extends js.Object {
+trait PartitionStorageDescriptor extends StObject {
   
   /**
     * A list of reducer grouping columns, clustering columns, and bucketing columns in the table.
@@ -78,99 +79,87 @@ object PartitionStorageDescriptor {
   }
   
   @scala.inline
-  implicit class PartitionStorageDescriptorOps[Self <: PartitionStorageDescriptor] (val x: Self) extends AnyVal {
+  implicit class PartitionStorageDescriptorMutableBuilder[Self <: PartitionStorageDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketColumns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "bucketColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketColumnsUndefined: Self = StObject.set(x, "bucketColumns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketColumnsVarargs(value: Input[String]*): Self = StObject.set(x, "bucketColumns", js.Array(value :_*))
     
     @scala.inline
-    def setBucketColumnsVarargs(value: Input[String]*): Self = this.set("bucketColumns", js.Array(value :_*))
+    def setColumns(value: Input[js.Array[Input[PartitionStorageDescriptorColumn]]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketColumns(value: Input[js.Array[Input[String]]]): Self = this.set("bucketColumns", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteBucketColumns: Self = this.set("bucketColumns", js.undefined)
+    def setColumnsVarargs(value: Input[PartitionStorageDescriptorColumn]*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: Input[PartitionStorageDescriptorColumn]*): Self = this.set("columns", js.Array(value :_*))
+    def setCompressed(value: Input[Boolean]): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: Input[js.Array[Input[PartitionStorageDescriptorColumn]]]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setCompressedUndefined: Self = StObject.set(x, "compressed", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setInputFormat(value: Input[String]): Self = StObject.set(x, "inputFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressed(value: Input[Boolean]): Self = this.set("compressed", value.asInstanceOf[js.Any])
+    def setInputFormatUndefined: Self = StObject.set(x, "inputFormat", js.undefined)
     
     @scala.inline
-    def deleteCompressed: Self = this.set("compressed", js.undefined)
+    def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFormat(value: Input[String]): Self = this.set("inputFormat", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteInputFormat: Self = this.set("inputFormat", js.undefined)
+    def setNumberOfBuckets(value: Input[Double]): Self = StObject.set(x, "numberOfBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Input[String]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNumberOfBucketsUndefined: Self = StObject.set(x, "numberOfBuckets", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setOutputFormat(value: Input[String]): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfBuckets(value: Input[Double]): Self = this.set("numberOfBuckets", value.asInstanceOf[js.Any])
+    def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
     
     @scala.inline
-    def deleteNumberOfBuckets: Self = this.set("numberOfBuckets", js.undefined)
+    def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputFormat(value: Input[String]): Self = this.set("outputFormat", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteOutputFormat: Self = this.set("outputFormat", js.undefined)
+    def setSerDeInfo(value: Input[PartitionStorageDescriptorSerDeInfo]): Self = StObject.set(x, "serDeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: Input[StringDictionary[Input[String]]]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setSerDeInfoUndefined: Self = StObject.set(x, "serDeInfo", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setSkewedInfo(value: Input[PartitionStorageDescriptorSkewedInfo]): Self = StObject.set(x, "skewedInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerDeInfo(value: Input[PartitionStorageDescriptorSerDeInfo]): Self = this.set("serDeInfo", value.asInstanceOf[js.Any])
+    def setSkewedInfoUndefined: Self = StObject.set(x, "skewedInfo", js.undefined)
     
     @scala.inline
-    def deleteSerDeInfo: Self = this.set("serDeInfo", js.undefined)
+    def setSortColumns(value: Input[js.Array[Input[PartitionStorageDescriptorSortColumn]]]): Self = StObject.set(x, "sortColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkewedInfo(value: Input[PartitionStorageDescriptorSkewedInfo]): Self = this.set("skewedInfo", value.asInstanceOf[js.Any])
+    def setSortColumnsUndefined: Self = StObject.set(x, "sortColumns", js.undefined)
     
     @scala.inline
-    def deleteSkewedInfo: Self = this.set("skewedInfo", js.undefined)
+    def setSortColumnsVarargs(value: Input[PartitionStorageDescriptorSortColumn]*): Self = StObject.set(x, "sortColumns", js.Array(value :_*))
     
     @scala.inline
-    def setSortColumnsVarargs(value: Input[PartitionStorageDescriptorSortColumn]*): Self = this.set("sortColumns", js.Array(value :_*))
+    def setStoredAsSubDirectories(value: Input[Boolean]): Self = StObject.set(x, "storedAsSubDirectories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortColumns(value: Input[js.Array[Input[PartitionStorageDescriptorSortColumn]]]): Self = this.set("sortColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortColumns: Self = this.set("sortColumns", js.undefined)
-    
-    @scala.inline
-    def setStoredAsSubDirectories(value: Input[Boolean]): Self = this.set("storedAsSubDirectories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoredAsSubDirectories: Self = this.set("storedAsSubDirectories", js.undefined)
+    def setStoredAsSubDirectoriesUndefined: Self = StObject.set(x, "storedAsSubDirectories", js.undefined)
   }
 }

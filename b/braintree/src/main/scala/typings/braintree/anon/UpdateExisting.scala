@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateExisting extends js.Object {
+trait UpdateExisting extends StObject {
   
   var updateExisting: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object UpdateExisting {
   }
   
   @scala.inline
-  implicit class UpdateExistingOps[Self <: UpdateExisting] (val x: Self) extends AnyVal {
+  implicit class UpdateExistingMutableBuilder[Self <: UpdateExisting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpdateExisting(value: Boolean): Self = StObject.set(x, "updateExisting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUpdateExisting(value: Boolean): Self = this.set("updateExisting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateExisting: Self = this.set("updateExisting", js.undefined)
+    def setUpdateExistingUndefined: Self = StObject.set(x, "updateExisting", js.undefined)
   }
 }

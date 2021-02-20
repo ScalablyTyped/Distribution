@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientContent.anon.AltCallback
 import typings.maximMazurokGapiClientContent.anon.CallbackFields
 import typings.maximMazurokGapiClientContent.anon.Key
 import typings.maximMazurokGapiClientContent.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccounttaxResource extends js.Object {
+trait AccounttaxResource extends StObject {
   
   /** Retrieves and updates tax settings of multiple accounts in a single request. */
   def custombatch(request: AltCallback): Request[AccounttaxCustomBatchResponse] = js.native

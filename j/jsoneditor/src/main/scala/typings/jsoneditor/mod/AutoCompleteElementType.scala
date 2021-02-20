@@ -1,5 +1,6 @@
 package typings.jsoneditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsoneditor.jsoneditorStrings.field
   - typings.jsoneditor.jsoneditorStrings.value
 */
-trait AutoCompleteElementType extends js.Object
+trait AutoCompleteElementType extends StObject
 object AutoCompleteElementType {
   
   @scala.inline

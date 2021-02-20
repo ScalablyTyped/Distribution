@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IServerScheduledJobManagementOperations extends js.Object {
+trait IServerScheduledJobManagementOperations extends StObject {
   
   def AddScheduledJob(ScheduledJob: IScheduledJob): Double = js.native
   
@@ -41,42 +42,30 @@ object IServerScheduledJobManagementOperations {
   }
   
   @scala.inline
-  implicit class IServerScheduledJobManagementOperationsOps[Self <: IServerScheduledJobManagementOperations] (val x: Self) extends AnyVal {
+  implicit class IServerScheduledJobManagementOperationsMutableBuilder[Self <: IServerScheduledJobManagementOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddScheduledJob(value: IScheduledJob => Double): Self = StObject.set(x, "AddScheduledJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelScheduledJob(value: Double => Unit): Self = StObject.set(x, "CancelScheduledJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetScheduledJob(value: Double => IScheduledJob): Self = StObject.set(x, "GetScheduledJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddScheduledJob(value: IScheduledJob => Double): Self = this.set("AddScheduledJob", js.Any.fromFunction1(value))
+    def setGetScheduledJobRunInfo(value: Double => IScheduledJobRunInfo): Self = StObject.set(x, "GetScheduledJobRunInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancelScheduledJob(value: Double => Unit): Self = this.set("CancelScheduledJob", js.Any.fromFunction1(value))
+    def setGetScheduledJobs(value: () => IScheduledJobs): Self = StObject.set(x, "GetScheduledJobs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScheduledJob(value: Double => IScheduledJob): Self = this.set("GetScheduledJob", js.Any.fromFunction1(value))
+    def setModifyScheduledJob(value: IScheduledJob => Unit): Self = StObject.set(x, "ModifyScheduledJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetScheduledJobRunInfo(value: Double => IScheduledJobRunInfo): Self = this.set("GetScheduledJobRunInfo", js.Any.fromFunction1(value))
+    def setRemoveScheduledJob(value: Double => Unit): Self = StObject.set(x, "RemoveScheduledJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetScheduledJobs(value: () => IScheduledJobs): Self = this.set("GetScheduledJobs", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setModifyScheduledJob(value: IScheduledJob => Unit): Self = this.set("ModifyScheduledJob", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveScheduledJob(value: Double => Unit): Self = this.set("RemoveScheduledJob", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartScheduledJob(value: Double => Unit): Self = this.set("StartScheduledJob", js.Any.fromFunction1(value))
+    def setStartScheduledJob(value: Double => Unit): Self = StObject.set(x, "StartScheduledJob", js.Any.fromFunction1(value))
   }
 }

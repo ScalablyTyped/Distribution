@@ -25,6 +25,7 @@ import typings.mfiles.mfilesNumbers.`41`
 import typings.mfiles.mfilesNumbers.`42`
 import typings.mfiles.mfilesNumbers.`43`
 import typings.mfiles.mfilesNumbers.`44`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +57,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mfiles.mfilesNumbers.`43`
   - typings.mfiles.mfilesNumbers.`44`
 */
-trait MenuLocation extends js.Object
+trait MenuLocation extends StObject
 object MenuLocation {
   
   @scala.inline

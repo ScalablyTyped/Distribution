@@ -3,12 +3,13 @@ package typings.activexInfopath.InfoPath
 import typings.activexAdodb.ADODB.Error
 import typings.activexAdodb.ADODB.Errors
 import typings.activexMsxml2.MSXML2.IXMLDOMDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait _XDocument extends js.Object {
+trait _XDocument extends StObject {
   
   val DOM: IXMLDOMDocument = js.native
   

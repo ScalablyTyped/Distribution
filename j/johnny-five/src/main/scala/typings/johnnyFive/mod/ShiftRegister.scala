@@ -1,12 +1,13 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "ShiftRegister")
 @js.native
-class ShiftRegister protected () extends js.Object {
+class ShiftRegister protected () extends StObject {
   def this(option: ShiftRegisterOption) = this()
   
   def clear(): Unit = js.native

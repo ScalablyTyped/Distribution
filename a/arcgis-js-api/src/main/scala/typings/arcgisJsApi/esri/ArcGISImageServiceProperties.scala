@@ -25,12 +25,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.u16
 import typings.arcgisJsApi.arcgisJsApiStrings.u32
 import typings.arcgisJsApi.arcgisJsApiStrings.u8
 import typings.arcgisJsApi.arcgisJsApiStrings.unknown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcGISImageServiceProperties extends js.Object {
+trait ArcGISImageServiceProperties extends StObject {
   
   /**
     * Describes the layer's supported capabilities.
@@ -204,164 +205,152 @@ object ArcGISImageServiceProperties {
   }
   
   @scala.inline
-  implicit class ArcGISImageServicePropertiesOps[Self <: ArcGISImageServiceProperties] (val x: Self) extends AnyVal {
+  implicit class ArcGISImageServicePropertiesMutableBuilder[Self <: ArcGISImageServiceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: ArcGISImageServiceCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompressionQuality(value: Double): Self = StObject.set(x, "compressionQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: ArcGISImageServiceCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setCompressionQualityUndefined: Self = StObject.set(x, "compressionQuality", js.undefined)
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    def setCompressionTolerance(value: Double): Self = StObject.set(x, "compressionTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionQuality(value: Double): Self = this.set("compressionQuality", value.asInstanceOf[js.Any])
+    def setCompressionToleranceUndefined: Self = StObject.set(x, "compressionTolerance", js.undefined)
     
     @scala.inline
-    def deleteCompressionQuality: Self = this.set("compressionQuality", js.undefined)
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionTolerance(value: Double): Self = this.set("compressionTolerance", value.asInstanceOf[js.Any])
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def deleteCompressionTolerance: Self = this.set("compressionTolerance", js.undefined)
+    def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionExpression(value: String): Self = this.set("definitionExpression", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteDefinitionExpression: Self = this.set("definitionExpression", js.undefined)
+    def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: FieldProperties*): Self = this.set("fields", js.Array(value :_*))
+    def setFormat(value: png | png8 | png24 | png32 | jpg | bmp | gif | jpgpng | lerc | tiff): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[FieldProperties]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setHasMultidimensions(value: Boolean): Self = StObject.set(x, "hasMultidimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: png | png8 | png24 | png32 | jpg | bmp | gif | jpgpng | lerc | tiff): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHasMultidimensionsUndefined: Self = StObject.set(x, "hasMultidimensions", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setImageMaxHeight(value: Double): Self = StObject.set(x, "imageMaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasMultidimensions(value: Boolean): Self = this.set("hasMultidimensions", value.asInstanceOf[js.Any])
+    def setImageMaxHeightUndefined: Self = StObject.set(x, "imageMaxHeight", js.undefined)
     
     @scala.inline
-    def deleteHasMultidimensions: Self = this.set("hasMultidimensions", js.undefined)
+    def setImageMaxWidth(value: Double): Self = StObject.set(x, "imageMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageMaxHeight(value: Double): Self = this.set("imageMaxHeight", value.asInstanceOf[js.Any])
+    def setImageMaxWidthUndefined: Self = StObject.set(x, "imageMaxWidth", js.undefined)
     
     @scala.inline
-    def deleteImageMaxHeight: Self = this.set("imageMaxHeight", js.undefined)
+    def setInterpolation(value: nearest | bilinear | cubic | majority): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageMaxWidth(value: Double): Self = this.set("imageMaxWidth", value.asInstanceOf[js.Any])
+    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
     @scala.inline
-    def deleteImageMaxWidth: Self = this.set("imageMaxWidth", js.undefined)
+    def setMosaicRule(value: MosaicRuleProperties): Self = StObject.set(x, "mosaicRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolation(value: nearest | bilinear | cubic | majority): Self = this.set("interpolation", value.asInstanceOf[js.Any])
+    def setMosaicRuleUndefined: Self = StObject.set(x, "mosaicRule", js.undefined)
     
     @scala.inline
-    def deleteInterpolation: Self = this.set("interpolation", js.undefined)
+    def setMultidimensionalInfo(value: js.Any): Self = StObject.set(x, "multidimensionalInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMosaicRule(value: MosaicRuleProperties): Self = this.set("mosaicRule", value.asInstanceOf[js.Any])
+    def setMultidimensionalInfoUndefined: Self = StObject.set(x, "multidimensionalInfo", js.undefined)
     
     @scala.inline
-    def deleteMosaicRule: Self = this.set("mosaicRule", js.undefined)
+    def setNoData(value: Double | js.Array[Double]): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultidimensionalInfo(value: js.Any): Self = this.set("multidimensionalInfo", value.asInstanceOf[js.Any])
+    def setNoDataInterpretation(value: any | all): Self = StObject.set(x, "noDataInterpretation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultidimensionalInfo: Self = this.set("multidimensionalInfo", js.undefined)
+    def setNoDataInterpretationUndefined: Self = StObject.set(x, "noDataInterpretation", js.undefined)
     
     @scala.inline
-    def setNoDataVarargs(value: Double*): Self = this.set("noData", js.Array(value :_*))
+    def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
     
     @scala.inline
-    def setNoData(value: Double | js.Array[Double]): Self = this.set("noData", value.asInstanceOf[js.Any])
+    def setNoDataVarargs(value: Double*): Self = StObject.set(x, "noData", js.Array(value :_*))
     
     @scala.inline
-    def deleteNoData: Self = this.set("noData", js.undefined)
+    def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDataInterpretation(value: any | all): Self = this.set("noDataInterpretation", value.asInstanceOf[js.Any])
+    def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
     
     @scala.inline
-    def deleteNoDataInterpretation: Self = this.set("noDataInterpretation", js.undefined)
+    def setPixelFilter(value: /* pixelData */ PixelData => Unit): Self = StObject.set(x, "pixelFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setObjectIdField(value: String): Self = this.set("objectIdField", value.asInstanceOf[js.Any])
+    def setPixelFilterUndefined: Self = StObject.set(x, "pixelFilter", js.undefined)
     
     @scala.inline
-    def deleteObjectIdField: Self = this.set("objectIdField", js.undefined)
+    def setPixelType(value: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64): Self = StObject.set(x, "pixelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelFilter(value: /* pixelData */ PixelData => Unit): Self = this.set("pixelFilter", js.Any.fromFunction1(value))
+    def setPixelTypeUndefined: Self = StObject.set(x, "pixelType", js.undefined)
     
     @scala.inline
-    def deletePixelFilter: Self = this.set("pixelFilter", js.undefined)
+    def setRasterAttributeTableFieldPrefix(value: String): Self = StObject.set(x, "rasterAttributeTableFieldPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelType(value: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64): Self = this.set("pixelType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePixelType: Self = this.set("pixelType", js.undefined)
-    
-    @scala.inline
-    def setRasterAttributeTableFieldPrefix(value: String): Self = this.set("rasterAttributeTableFieldPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRasterAttributeTableFieldPrefix: Self = this.set("rasterAttributeTableFieldPrefix", js.undefined)
+    def setRasterAttributeTableFieldPrefixUndefined: Self = StObject.set(x, "rasterAttributeTableFieldPrefix", js.undefined)
     
     @scala.inline
     def setRenderer(
       value: ClassBreaksRendererProperties | UniqueValueRendererProperties | RasterStretchRendererProperties | RasterShadedReliefRendererProperties | RasterColormapRendererProperties
-    ): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def setRenderingRule(value: RasterFunctionProperties): Self = this.set("renderingRule", value.asInstanceOf[js.Any])
+    def setRenderingRule(value: RasterFunctionProperties): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderingRule: Self = this.set("renderingRule", js.undefined)
+    def setRenderingRuleUndefined: Self = StObject.set(x, "renderingRule", js.undefined)
     
     @scala.inline
-    def setSourceJSON(value: js.Any): Self = this.set("sourceJSON", value.asInstanceOf[js.Any])
+    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceJSON: Self = this.set("sourceJSON", js.undefined)
+    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

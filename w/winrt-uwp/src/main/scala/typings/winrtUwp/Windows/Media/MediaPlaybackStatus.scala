@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaPlaybackStatus extends js.Object
+sealed trait MediaPlaybackStatus extends StObject
 /** Defines values for the status of the media playback. */
 @JSGlobal("Windows.Media.MediaPlaybackStatus")
 @js.native
-object MediaPlaybackStatus extends js.Object {
+object MediaPlaybackStatus extends StObject {
   
   /** The media is changing. */
   @js.native

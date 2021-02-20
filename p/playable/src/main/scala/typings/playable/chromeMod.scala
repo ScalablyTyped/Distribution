@@ -5,13 +5,18 @@ import typings.std.Document
 import typings.std.Element
 import typings.std.EventListener
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/picture-in-picture/chrome", JSImport.Namespace)
-@js.native
-object chromeMod extends js.Object {
+object chromeMod {
+  
+  @JSImport("playable/dist/src/modules/picture-in-picture/chrome", JSImport.Default)
+  @js.native
+  class default protected () extends ChromePictureInPicture {
+    def this(elem: HTMLVideoElement, callback: EventListener) = this()
+  }
   
   @js.native
   trait ChromeDocument extends Document {
@@ -54,10 +59,5 @@ object chromeMod extends js.Object {
   trait ChromeWebkitHTMLVideo extends HTMLVideoElement {
     
     def requestPictureInPicture(): js.Promise[Unit] = js.native
-  }
-  
-  @js.native
-  class default protected () extends ChromePictureInPicture {
-    def this(elem: HTMLVideoElement, callback: EventListener) = this()
   }
 }

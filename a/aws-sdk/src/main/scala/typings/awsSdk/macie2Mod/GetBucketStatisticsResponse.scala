@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBucketStatisticsResponse extends js.Object {
+trait GetBucketStatisticsResponse extends StObject {
   
   /**
     * The total number of buckets.
@@ -76,90 +77,78 @@ object GetBucketStatisticsResponse {
   }
   
   @scala.inline
-  implicit class GetBucketStatisticsResponseOps[Self <: GetBucketStatisticsResponse] (val x: Self) extends AnyVal {
+  implicit class GetBucketStatisticsResponseMutableBuilder[Self <: GetBucketStatisticsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketCount(value: long): Self = StObject.set(x, "bucketCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketCountByEffectivePermission(value: BucketCountByEffectivePermission): Self = StObject.set(x, "bucketCountByEffectivePermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketCountByEffectivePermissionUndefined: Self = StObject.set(x, "bucketCountByEffectivePermission", js.undefined)
     
     @scala.inline
-    def setBucketCount(value: long): Self = this.set("bucketCount", value.asInstanceOf[js.Any])
+    def setBucketCountByEncryptionType(value: BucketCountByEncryptionType): Self = StObject.set(x, "bucketCountByEncryptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBucketCount: Self = this.set("bucketCount", js.undefined)
+    def setBucketCountByEncryptionTypeUndefined: Self = StObject.set(x, "bucketCountByEncryptionType", js.undefined)
     
     @scala.inline
-    def setBucketCountByEffectivePermission(value: BucketCountByEffectivePermission): Self = this.set("bucketCountByEffectivePermission", value.asInstanceOf[js.Any])
+    def setBucketCountBySharedAccessType(value: BucketCountBySharedAccessType): Self = StObject.set(x, "bucketCountBySharedAccessType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBucketCountByEffectivePermission: Self = this.set("bucketCountByEffectivePermission", js.undefined)
+    def setBucketCountBySharedAccessTypeUndefined: Self = StObject.set(x, "bucketCountBySharedAccessType", js.undefined)
     
     @scala.inline
-    def setBucketCountByEncryptionType(value: BucketCountByEncryptionType): Self = this.set("bucketCountByEncryptionType", value.asInstanceOf[js.Any])
+    def setBucketCountUndefined: Self = StObject.set(x, "bucketCount", js.undefined)
     
     @scala.inline
-    def deleteBucketCountByEncryptionType: Self = this.set("bucketCountByEncryptionType", js.undefined)
+    def setClassifiableObjectCount(value: long): Self = StObject.set(x, "classifiableObjectCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketCountBySharedAccessType(value: BucketCountBySharedAccessType): Self = this.set("bucketCountBySharedAccessType", value.asInstanceOf[js.Any])
+    def setClassifiableObjectCountUndefined: Self = StObject.set(x, "classifiableObjectCount", js.undefined)
     
     @scala.inline
-    def deleteBucketCountBySharedAccessType: Self = this.set("bucketCountBySharedAccessType", js.undefined)
+    def setClassifiableSizeInBytes(value: long): Self = StObject.set(x, "classifiableSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassifiableObjectCount(value: long): Self = this.set("classifiableObjectCount", value.asInstanceOf[js.Any])
+    def setClassifiableSizeInBytesUndefined: Self = StObject.set(x, "classifiableSizeInBytes", js.undefined)
     
     @scala.inline
-    def deleteClassifiableObjectCount: Self = this.set("classifiableObjectCount", js.undefined)
+    def setLastUpdated(value: timestampIso8601): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassifiableSizeInBytes(value: long): Self = this.set("classifiableSizeInBytes", value.asInstanceOf[js.Any])
+    def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
     @scala.inline
-    def deleteClassifiableSizeInBytes: Self = this.set("classifiableSizeInBytes", js.undefined)
+    def setObjectCount(value: long): Self = StObject.set(x, "objectCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: timestampIso8601): Self = this.set("lastUpdated", value.asInstanceOf[js.Any])
+    def setObjectCountUndefined: Self = StObject.set(x, "objectCount", js.undefined)
     
     @scala.inline
-    def deleteLastUpdated: Self = this.set("lastUpdated", js.undefined)
+    def setSizeInBytes(value: long): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectCount(value: long): Self = this.set("objectCount", value.asInstanceOf[js.Any])
+    def setSizeInBytesCompressed(value: long): Self = StObject.set(x, "sizeInBytesCompressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObjectCount: Self = this.set("objectCount", js.undefined)
+    def setSizeInBytesCompressedUndefined: Self = StObject.set(x, "sizeInBytesCompressed", js.undefined)
     
     @scala.inline
-    def setSizeInBytes(value: long): Self = this.set("sizeInBytes", value.asInstanceOf[js.Any])
+    def setSizeInBytesUndefined: Self = StObject.set(x, "sizeInBytes", js.undefined)
     
     @scala.inline
-    def deleteSizeInBytes: Self = this.set("sizeInBytes", js.undefined)
+    def setUnclassifiableObjectCount(value: ObjectLevelStatistics): Self = StObject.set(x, "unclassifiableObjectCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeInBytesCompressed(value: long): Self = this.set("sizeInBytesCompressed", value.asInstanceOf[js.Any])
+    def setUnclassifiableObjectCountUndefined: Self = StObject.set(x, "unclassifiableObjectCount", js.undefined)
     
     @scala.inline
-    def deleteSizeInBytesCompressed: Self = this.set("sizeInBytesCompressed", js.undefined)
+    def setUnclassifiableObjectSizeInBytes(value: ObjectLevelStatistics): Self = StObject.set(x, "unclassifiableObjectSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnclassifiableObjectCount(value: ObjectLevelStatistics): Self = this.set("unclassifiableObjectCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnclassifiableObjectCount: Self = this.set("unclassifiableObjectCount", js.undefined)
-    
-    @scala.inline
-    def setUnclassifiableObjectSizeInBytes(value: ObjectLevelStatistics): Self = this.set("unclassifiableObjectSizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnclassifiableObjectSizeInBytes: Self = this.set("unclassifiableObjectSizeInBytes", js.undefined)
+    def setUnclassifiableObjectSizeInBytesUndefined: Self = StObject.set(x, "unclassifiableObjectSizeInBytes", js.undefined)
   }
 }

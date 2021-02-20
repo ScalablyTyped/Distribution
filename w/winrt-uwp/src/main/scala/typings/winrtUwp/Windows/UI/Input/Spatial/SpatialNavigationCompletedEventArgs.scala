@@ -1,15 +1,17 @@
 package typings.winrtUwp.Windows.UI.Input.Spatial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpatialNavigationCompletedEventArgs extends js.Object {
+trait SpatialNavigationCompletedEventArgs extends StObject {
   
   var interactionSourceKind: js.Any = js.native
   
-   /* unmapped type */ var normalizedOffset: js.Any = js.native
+  /* unmapped type */
+  var normalizedOffset: js.Any = js.native
 }
 object SpatialNavigationCompletedEventArgs {
   
@@ -20,24 +22,12 @@ object SpatialNavigationCompletedEventArgs {
   }
   
   @scala.inline
-  implicit class SpatialNavigationCompletedEventArgsOps[Self <: SpatialNavigationCompletedEventArgs] (val x: Self) extends AnyVal {
+  implicit class SpatialNavigationCompletedEventArgsMutableBuilder[Self <: SpatialNavigationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInteractionSourceKind(value: js.Any): Self = this.set("interactionSourceKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalizedOffset(value: js.Any): Self = this.set("normalizedOffset", value.asInstanceOf[js.Any])
+    def setNormalizedOffset(value: js.Any): Self = StObject.set(x, "normalizedOffset", value.asInstanceOf[js.Any])
   }
 }

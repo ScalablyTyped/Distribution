@@ -1,11 +1,12 @@
 package typings.nodeRedRuntime.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CredentialsFlows extends js.Object {
+trait CredentialsFlows extends StObject {
   
   var credentials: js.Object = js.native
   
@@ -22,30 +23,18 @@ object CredentialsFlows {
   }
   
   @scala.inline
-  implicit class CredentialsFlowsOps[Self <: CredentialsFlows] (val x: Self) extends AnyVal {
+  implicit class CredentialsFlowsMutableBuilder[Self <: CredentialsFlows] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentials(value: js.Object): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlows(value: js.Array[js.Object]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowsVarargs(value: js.Object*): Self = StObject.set(x, "flows", js.Array(value :_*))
     
     @scala.inline
-    def setCredentials(value: js.Object): Self = this.set("credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlowsVarargs(value: js.Object*): Self = this.set("flows", js.Array(value :_*))
-    
-    @scala.inline
-    def setFlows(value: js.Array[js.Object]): Self = this.set("flows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRev(value: String): Self = this.set("rev", value.asInstanceOf[js.Any])
+    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
   }
 }

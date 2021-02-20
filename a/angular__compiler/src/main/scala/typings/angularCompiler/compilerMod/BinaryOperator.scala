@@ -1,12 +1,13 @@
 package typings.angularCompiler.compilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "BinaryOperator")
 @js.native
-object BinaryOperator extends js.Object {
+object BinaryOperator extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.angularCompiler.outputAstMod.BinaryOperator with Double] = js.native

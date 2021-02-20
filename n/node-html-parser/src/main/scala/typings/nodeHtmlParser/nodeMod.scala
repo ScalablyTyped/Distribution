@@ -1,16 +1,19 @@
 package typings.nodeHtmlParser
 
 import typings.nodeHtmlParser.typeMod.NodeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-html-parser/dist/nodes/node", JSImport.Namespace)
-@js.native
-object nodeMod extends js.Object {
+object nodeMod {
+  
+  @JSImport("node-html-parser/dist/nodes/node", JSImport.Default)
+  @js.native
+  abstract class default () extends Node
   
   @js.native
-  trait Node extends js.Object {
+  trait Node extends StObject {
     
     var childNodes: js.Array[Node] = js.native
     
@@ -22,7 +25,4 @@ object nodeMod extends js.Object {
     
     var text: String = js.native
   }
-  
-  @js.native
-  abstract class default () extends Node
 }

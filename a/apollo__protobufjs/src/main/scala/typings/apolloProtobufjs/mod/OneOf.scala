@@ -1,6 +1,7 @@
 package typings.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,15 +81,15 @@ class OneOf protected () extends ReflectionObject {
   def toJSON(toJSONOptions: IToJSONOptions): IOneOf = js.native
 }
 /* static members */
-@JSImport("@apollo/protobufjs", "OneOf")
-@js.native
-object OneOf extends js.Object {
+object OneOf {
   
   /**
     * OneOf decorator (TypeScript).
     * @param fieldNames Field names
     * @returns Decorator function
     */
+  @JSImport("@apollo/protobufjs", "OneOf.d")
+  @js.native
   def d[T /* <: String */](fieldNames: String*): OneOfDecorator = js.native
   
   /**
@@ -98,5 +99,7 @@ object OneOf extends js.Object {
     * @returns Created oneof
     * @throws {TypeError} If arguments are invalid
     */
+  @JSImport("@apollo/protobufjs", "OneOf.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IOneOf): OneOf = js.native
 }

@@ -1,11 +1,12 @@
 package typings.jpushReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushTimeDays extends js.Object {
+trait PushTimeDays extends StObject {
   
   var pushTimeDays: js.Array[Double] = js.native
   
@@ -22,30 +23,18 @@ object PushTimeDays {
   }
   
   @scala.inline
-  implicit class PushTimeDaysOps[Self <: PushTimeDays] (val x: Self) extends AnyVal {
+  implicit class PushTimeDaysMutableBuilder[Self <: PushTimeDays] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPushTimeDays(value: js.Array[Double]): Self = StObject.set(x, "pushTimeDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPushTimeDaysVarargs(value: Double*): Self = StObject.set(x, "pushTimeDays", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPushTimeEndHour(value: Double): Self = StObject.set(x, "pushTimeEndHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushTimeDaysVarargs(value: Double*): Self = this.set("pushTimeDays", js.Array(value :_*))
-    
-    @scala.inline
-    def setPushTimeDays(value: js.Array[Double]): Self = this.set("pushTimeDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPushTimeEndHour(value: Double): Self = this.set("pushTimeEndHour", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPushTimeStartHour(value: Double): Self = this.set("pushTimeStartHour", value.asInstanceOf[js.Any])
+    def setPushTimeStartHour(value: Double): Self = StObject.set(x, "pushTimeStartHour", value.asInstanceOf[js.Any])
   }
 }

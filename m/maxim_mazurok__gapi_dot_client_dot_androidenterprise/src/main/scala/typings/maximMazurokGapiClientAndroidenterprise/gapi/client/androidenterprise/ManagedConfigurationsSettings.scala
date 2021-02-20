@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedConfigurationsSettings extends js.Object {
+trait ManagedConfigurationsSettings extends StObject {
   
   /** The last updated time of the managed configuration settings in milliseconds since 1970-01-01T00:00:00Z. */
   var lastUpdatedTimestampMillis: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object ManagedConfigurationsSettings {
   }
   
   @scala.inline
-  implicit class ManagedConfigurationsSettingsOps[Self <: ManagedConfigurationsSettings] (val x: Self) extends AnyVal {
+  implicit class ManagedConfigurationsSettingsMutableBuilder[Self <: ManagedConfigurationsSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastUpdatedTimestampMillis(value: String): Self = StObject.set(x, "lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastUpdatedTimestampMillisUndefined: Self = StObject.set(x, "lastUpdatedTimestampMillis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMcmId(value: String): Self = StObject.set(x, "mcmId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTimestampMillis(value: String): Self = this.set("lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
+    def setMcmIdUndefined: Self = StObject.set(x, "mcmId", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTimestampMillis: Self = this.set("lastUpdatedTimestampMillis", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMcmId(value: String): Self = this.set("mcmId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMcmId: Self = this.set("mcmId", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

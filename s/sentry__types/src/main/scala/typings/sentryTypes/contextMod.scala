@@ -1,13 +1,12 @@
 package typings.sentryTypes
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/types/dist/context", JSImport.Namespace)
-@js.native
-object contextMod extends js.Object {
+object contextMod {
   
   type Context = Record[String, js.Any]
   

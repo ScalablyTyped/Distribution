@@ -1,13 +1,14 @@
 package typings.screeps.anon
 
 import typings.screeps.ResourceConstant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined screeps.Store<screeps.RESOURCE_ENERGY, false> */
 @js.native
-trait StoreRESOURCEENERGYfalse extends js.Object {
+trait StoreRESOURCEENERGYfalse extends StObject {
   
   var G: typings.screeps.screepsNumbers.`0` = js.native
   

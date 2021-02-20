@@ -2,6 +2,7 @@ package typings.sharepoint.SP
 
 import typings.sharepoint.IEnumerable
 import typings.sharepoint.IEnumerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object BaseCollection {
   }
   
   @scala.inline
-  implicit class BaseCollectionOps[Self <: BaseCollection[_], T] (val x: Self with BaseCollection[T]) extends AnyVal {
+  implicit class BaseCollectionMutableBuilder[Self <: BaseCollection[_], T] (val x: Self with BaseCollection[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet_count(value: () => Double): Self = this.set("get_count", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setItemAtIndex(value: Double => T): Self = this.set("itemAtIndex", js.Any.fromFunction1(value))
+    def setItemAtIndex(value: Double => T): Self = StObject.set(x, "itemAtIndex", js.Any.fromFunction1(value))
   }
 }

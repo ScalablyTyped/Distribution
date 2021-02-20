@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainMapping extends js.Object {
+trait DomainMapping extends StObject {
   
   /** Relative name of the domain serving the application. Example: example.com. */
   var id: js.UndefOr[String] = js.native
@@ -31,45 +32,33 @@ object DomainMapping {
   }
   
   @scala.inline
-  implicit class DomainMappingOps[Self <: DomainMapping] (val x: Self) extends AnyVal {
+  implicit class DomainMappingMutableBuilder[Self <: DomainMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setResourceRecords(value: js.Array[ResourceRecord]): Self = StObject.set(x, "resourceRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResourceRecordsUndefined: Self = StObject.set(x, "resourceRecords", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setResourceRecordsVarargs(value: ResourceRecord*): Self = StObject.set(x, "resourceRecords", js.Array(value :_*))
     
     @scala.inline
-    def setResourceRecordsVarargs(value: ResourceRecord*): Self = this.set("resourceRecords", js.Array(value :_*))
+    def setSslSettings(value: SslSettings): Self = StObject.set(x, "sslSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceRecords(value: js.Array[ResourceRecord]): Self = this.set("resourceRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceRecords: Self = this.set("resourceRecords", js.undefined)
-    
-    @scala.inline
-    def setSslSettings(value: SslSettings): Self = this.set("sslSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslSettings: Self = this.set("sslSettings", js.undefined)
+    def setSslSettingsUndefined: Self = StObject.set(x, "sslSettings", js.undefined)
   }
 }

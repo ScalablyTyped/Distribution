@@ -1,11 +1,12 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestExecutor extends js.Object {
+trait RequestExecutor extends StObject {
   
   def attemptLogin(returnUrl: String, success: js.Function1[/* response */ ResponseInfo, Unit]): Unit = js.native
   def attemptLogin(

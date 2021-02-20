@@ -4,13 +4,14 @@ import typings.iobroker.iobrokerBooleans.`true`
 import typings.iobroker.objectsMod.global.ioBroker.CommonType
 import typings.iobroker.objectsMod.global.ioBroker.StringOrTranslated
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.StateCommon> */
 @js.native
-trait PartialStateCommon extends js.Object {
+trait PartialStateCommon extends StObject {
   
   var alias: js.UndefOr[Read] = js.native
   
@@ -63,144 +64,132 @@ object PartialStateCommon {
   }
   
   @scala.inline
-  implicit class PartialStateCommonOps[Self <: PartialStateCommon] (val x: Self) extends AnyVal {
+  implicit class PartialStateCommonMutableBuilder[Self <: PartialStateCommon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: Read): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustom(value: Record[String, _]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlias(value: Read): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
+    def setDef(value: js.Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: Record[String, _]): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setDefAck(value: Boolean): Self = StObject.set(x, "defAck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setDefAckUndefined: Self = StObject.set(x, "defAck", js.undefined)
     
     @scala.inline
-    def setDef(value: js.Any): Self = this.set("def", value.asInstanceOf[js.Any])
+    def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
     
     @scala.inline
-    def deleteDef: Self = this.set("def", js.undefined)
+    def setDesc(value: StringOrTranslated): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefAck(value: Boolean): Self = this.set("defAck", value.asInstanceOf[js.Any])
+    def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
     
     @scala.inline
-    def deleteDefAck: Self = this.set("defAck", js.undefined)
+    def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: StringOrTranslated): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setDontDeleteUndefined: Self = StObject.set(x, "dontDelete", js.undefined)
     
     @scala.inline
-    def deleteDesc: Self = this.set("desc", js.undefined)
+    def setExpert(value: `true`): Self = StObject.set(x, "expert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDontDelete(value: `true`): Self = this.set("dontDelete", value.asInstanceOf[js.Any])
+    def setExpertUndefined: Self = StObject.set(x, "expert", js.undefined)
     
     @scala.inline
-    def deleteDontDelete: Self = this.set("dontDelete", js.undefined)
+    def setHistory(value: js.Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpert(value: `true`): Self = this.set("expert", value.asInstanceOf[js.Any])
+    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
     @scala.inline
-    def deleteExpert: Self = this.set("expert", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: js.Any): Self = this.set("history", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteHistory: Self = this.set("history", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setName(value: StringOrTranslated): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: StringOrTranslated): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: Boolean): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setSmartName(value: String | langinLanguagesstringsmar): Self = StObject.set(x, "smartName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setSmartNameUndefined: Self = StObject.set(x, "smartName", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setStates(value: (Record[String, String]) | String): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmartName(value: String | langinLanguagesstringsmar): Self = this.set("smartName", value.asInstanceOf[js.Any])
+    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
     @scala.inline
-    def deleteSmartName: Self = this.set("smartName", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStates(value: (Record[String, String]) | String): Self = this.set("states", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteStates: Self = this.set("states", js.undefined)
+    def setType(value: CommonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: CommonType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWorkingID(value: String): Self = StObject.set(x, "workingID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setWorkingIDUndefined: Self = StObject.set(x, "workingID", js.undefined)
     
     @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkingID(value: String): Self = this.set("workingID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkingID: Self = this.set("workingID", js.undefined)
-    
-    @scala.inline
-    def setWrite(value: Boolean): Self = this.set("write", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrite: Self = this.set("write", js.undefined)
+    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

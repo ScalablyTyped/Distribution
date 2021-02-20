@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDns.gapi.client.dns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyAlternativeNameServerConfigTargetNameServer extends js.Object {
+trait PolicyAlternativeNameServerConfigTargetNameServer extends StObject {
   
   /**
     * Forwarding path for this TargetNameServer. If unset or set to DEFAULT, Cloud DNS will make forwarding decision based on address ranges, i.e. RFC1918 addresses go to the VPC,
@@ -27,36 +28,24 @@ object PolicyAlternativeNameServerConfigTargetNameServer {
   }
   
   @scala.inline
-  implicit class PolicyAlternativeNameServerConfigTargetNameServerOps[Self <: PolicyAlternativeNameServerConfigTargetNameServer] (val x: Self) extends AnyVal {
+  implicit class PolicyAlternativeNameServerConfigTargetNameServerMutableBuilder[Self <: PolicyAlternativeNameServerConfigTargetNameServer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForwardingPath(value: String): Self = StObject.set(x, "forwardingPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForwardingPathUndefined: Self = StObject.set(x, "forwardingPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpv4Address(value: String): Self = StObject.set(x, "ipv4Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardingPath(value: String): Self = this.set("forwardingPath", value.asInstanceOf[js.Any])
+    def setIpv4AddressUndefined: Self = StObject.set(x, "ipv4Address", js.undefined)
     
     @scala.inline
-    def deleteForwardingPath: Self = this.set("forwardingPath", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv4Address(value: String): Self = this.set("ipv4Address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpv4Address: Self = this.set("ipv4Address", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

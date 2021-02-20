@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamedBatch[T] extends js.Object {
+trait StreamedBatch[T] extends StObject {
   
   var continuationToken: String = js.native
   
@@ -24,33 +25,21 @@ object StreamedBatch {
   }
   
   @scala.inline
-  implicit class StreamedBatchOps[Self <: StreamedBatch[_], T] (val x: Self with StreamedBatch[T]) extends AnyVal {
+  implicit class StreamedBatchMutableBuilder[Self <: StreamedBatch[_], T] (val x: Self with StreamedBatch[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLastBatch(value: Boolean): Self = StObject.set(x, "isLastBatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationToken(value: String): Self = this.set("continuationToken", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLastBatch(value: Boolean): Self = this.set("isLastBatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextLink(value: String): Self = this.set("nextLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: T*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[T]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: T*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

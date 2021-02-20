@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebsocketAuthorizer extends js.Object {
+trait WebsocketAuthorizer extends StObject {
   
   var arn: js.UndefOr[String] = js.native
   
@@ -22,39 +23,27 @@ object WebsocketAuthorizer {
   }
   
   @scala.inline
-  implicit class WebsocketAuthorizerOps[Self <: WebsocketAuthorizer] (val x: Self) extends AnyVal {
+  implicit class WebsocketAuthorizerMutableBuilder[Self <: WebsocketAuthorizer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentitySource(value: js.Array[String]): Self = StObject.set(x, "identitySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setIdentitySourceUndefined: Self = StObject.set(x, "identitySource", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setIdentitySourceVarargs(value: String*): Self = StObject.set(x, "identitySource", js.Array(value :_*))
     
     @scala.inline
-    def setIdentitySourceVarargs(value: String*): Self = this.set("identitySource", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentitySource(value: js.Array[String]): Self = this.set("identitySource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentitySource: Self = this.set("identitySource", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

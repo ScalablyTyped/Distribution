@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaiduChannelRequest extends js.Object {
+trait BaiduChannelRequest extends StObject {
   
   /**
     * The API key that you received from the Baidu Cloud Push service to communicate with the service.
@@ -31,30 +32,18 @@ object BaiduChannelRequest {
   }
   
   @scala.inline
-  implicit class BaiduChannelRequestOps[Self <: BaiduChannelRequest] (val x: Self) extends AnyVal {
+  implicit class BaiduChannelRequestMutableBuilder[Self <: BaiduChannelRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiKey(value: string): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def setApiKey(value: string): Self = this.set("ApiKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretKey(value: string): Self = this.set("SecretKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabled(value: boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setSecretKey(value: string): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
   }
 }

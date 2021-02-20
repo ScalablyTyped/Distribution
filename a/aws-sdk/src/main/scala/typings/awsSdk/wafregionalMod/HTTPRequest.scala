@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTTPRequest extends js.Object {
+trait HTTPRequest extends StObject {
   
   /**
     * The IP address that the request originated from. If the WebACL is associated with a CloudFront distribution, this is the value of one of the following fields in CloudFront access logs:    c-ip, if the viewer did not use an HTTP proxy or a load balancer to send the request    x-forwarded-for, if the viewer did use an HTTP proxy or a load balancer to send the request  
@@ -46,57 +47,45 @@ object HTTPRequest {
   }
   
   @scala.inline
-  implicit class HTTPRequestOps[Self <: HTTPRequest] (val x: Self) extends AnyVal {
+  implicit class HTTPRequestMutableBuilder[Self <: HTTPRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientIP(value: IPString): Self = StObject.set(x, "ClientIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIPUndefined: Self = StObject.set(x, "ClientIP", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: Country): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientIP(value: IPString): Self = this.set("ClientIP", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
     
     @scala.inline
-    def deleteClientIP: Self = this.set("ClientIP", js.undefined)
+    def setHTTPVersion(value: HTTPVersion): Self = StObject.set(x, "HTTPVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: Country): Self = this.set("Country", value.asInstanceOf[js.Any])
+    def setHTTPVersionUndefined: Self = StObject.set(x, "HTTPVersion", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("Country", js.undefined)
+    def setHeaders(value: HTTPHeaders): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTTPVersion(value: HTTPVersion): Self = this.set("HTTPVersion", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
     
     @scala.inline
-    def deleteHTTPVersion: Self = this.set("HTTPVersion", js.undefined)
+    def setHeadersVarargs(value: HTTPHeader*): Self = StObject.set(x, "Headers", js.Array(value :_*))
     
     @scala.inline
-    def setHeadersVarargs(value: HTTPHeader*): Self = this.set("Headers", js.Array(value :_*))
+    def setMethod(value: HTTPMethod): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: HTTPHeaders): Self = this.set("Headers", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("Headers", js.undefined)
+    def setURI(value: URIString): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: HTTPMethod): Self = this.set("Method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("Method", js.undefined)
-    
-    @scala.inline
-    def setURI(value: URIString): Self = this.set("URI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteURI: Self = this.set("URI", js.undefined)
+    def setURIUndefined: Self = StObject.set(x, "URI", js.undefined)
   }
 }

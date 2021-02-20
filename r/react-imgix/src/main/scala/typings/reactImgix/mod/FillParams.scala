@@ -1,11 +1,12 @@
 package typings.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FillParams extends js.Object {
+trait FillParams extends StObject {
   
   var bg: js.UndefOr[ImgixParamType] = js.native
   
@@ -22,36 +23,24 @@ object FillParams {
   }
   
   @scala.inline
-  implicit class FillParamsOps[Self <: FillParams] (val x: Self) extends AnyVal {
+  implicit class FillParamsMutableBuilder[Self <: FillParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBg(value: ImgixParamType): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: ImgixParamType): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBg(value: ImgixParamType): Self = this.set("bg", value.asInstanceOf[js.Any])
+    def `setFill-color`(value: ImgixParamType): Self = StObject.set(x, "fill-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBg: Self = this.set("bg", js.undefined)
+    def `setFill-colorUndefined`: Self = StObject.set(x, "fill-color", js.undefined)
     
     @scala.inline
-    def setFill(value: ImgixParamType): Self = this.set("fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
-    
-    @scala.inline
-    def `setFill-color`(value: ImgixParamType): Self = this.set("fill-color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteFill-color`: Self = this.set("fill-color", js.undefined)
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

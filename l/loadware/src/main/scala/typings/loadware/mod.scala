@@ -1,20 +1,21 @@
 package typings.loadware
 
 import typings.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("loadware", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def apply[F /* <: AnyFunction */](loadable: Loadable[F]*): js.Array[F] = js.native
-  
+  @JSImport("loadware", JSImport.Namespace)
   @js.native
-  trait RecursiveLoadable[F /* <: AnyFunction */] extends Array[F | Loadable[F]]
+  def apply[F /* <: AnyFunction */](loadable: Loadable[F]*): js.Array[F] = js.native
   
   type AnyFunction = js.Function
   
   type Loadable[F /* <: AnyFunction */] = String | F | RecursiveLoadable[F]
+  
+  @js.native
+  trait RecursiveLoadable[F /* <: AnyFunction */] extends Array[F | Loadable[F]]
 }

@@ -1,13 +1,14 @@
 package typings.athenajs.mod
 
 import typings.athenajs.anon.AIR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Tile")
 @js.native
-class Tile protected () extends js.Object {
+class Tile protected () extends StObject {
   def this(options: JSObject) = this()
   
   var downCollide: Boolean = js.native
@@ -25,9 +26,15 @@ class Tile protected () extends js.Object {
   var width: Double = js.native
 }
 /* static members */
-@JSImport("athenajs", "Tile")
-@js.native
-object Tile extends js.Object {
+object Tile {
   
-  var TYPE: AIR = js.native
+  @JSImport("athenajs", "Tile")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("athenajs", "Tile.TYPE")
+  @js.native
+  def TYPE: AIR = js.native
+  @scala.inline
+  def TYPE_=(x: AIR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
 }

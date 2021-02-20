@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The progress data for an asynchronous photo import operation. */
 @js.native
-trait PhotoImportProgress extends js.Object {
+trait PhotoImportProgress extends StObject {
   
   /** The number of bytes that have been imported. */
   var bytesImported: Double = js.native
@@ -38,33 +39,21 @@ object PhotoImportProgress {
   }
   
   @scala.inline
-  implicit class PhotoImportProgressOps[Self <: PhotoImportProgress] (val x: Self) extends AnyVal {
+  implicit class PhotoImportProgressMutableBuilder[Self <: PhotoImportProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesImported(value: Double): Self = StObject.set(x, "bytesImported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportProgress(value: Double): Self = StObject.set(x, "importProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsImported(value: Double): Self = StObject.set(x, "itemsImported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesImported(value: Double): Self = this.set("bytesImported", value.asInstanceOf[js.Any])
+    def setTotalBytesToImport(value: Double): Self = StObject.set(x, "totalBytesToImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportProgress(value: Double): Self = this.set("importProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsImported(value: Double): Self = this.set("itemsImported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytesToImport(value: Double): Self = this.set("totalBytesToImport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalItemsToImport(value: Double): Self = this.set("totalItemsToImport", value.asInstanceOf[js.Any])
+    def setTotalItemsToImport(value: Double): Self = StObject.set(x, "totalItemsToImport", value.asInstanceOf[js.Any])
   }
 }

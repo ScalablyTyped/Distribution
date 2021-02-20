@@ -1,13 +1,14 @@
 package typings.dockerode.mod
 
 import typings.node.NodeJS.ReadableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dockerode", "Image")
 @js.native
-class Image protected () extends js.Object {
+class Image protected () extends StObject {
   def this(modem: js.Any, name: String) = this()
   
   def get(): js.Promise[ReadableStream] = js.native

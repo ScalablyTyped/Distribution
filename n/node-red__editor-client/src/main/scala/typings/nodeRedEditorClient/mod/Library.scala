@@ -2,12 +2,13 @@ package typings.nodeRedEditorClient.mod
 
 import typings.nodeRedEditorClient.anon.Container
 import typings.nodeRedEditorClient.anon.Data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Library extends js.Object {
+trait Library extends StObject {
   
   def create(options: typings.nodeRedEditorClient.anon.Editor): Unit = js.native
   
@@ -36,30 +37,18 @@ object Library {
   }
   
   @scala.inline
-  implicit class LibraryOps[Self <: Library] (val x: Self) extends AnyVal {
+  implicit class LibraryMutableBuilder[Self <: Library] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: typings.nodeRedEditorClient.anon.Editor => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateBrowser(value: Container => Data): Self = StObject.set(x, "createBrowser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreate(value: typings.nodeRedEditorClient.anon.Editor => Unit): Self = this.set("create", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateBrowser(value: Container => Data): Self = this.set("createBrowser", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLoadLibraryFolder(value: (String, String, String, js.Function1[/* items */ js.Array[js.Object], Unit]) => Unit): Self = this.set("loadLibraryFolder", js.Any.fromFunction4(value))
+    def setLoadLibraryFolder(value: (String, String, String, js.Function1[/* items */ js.Array[js.Object], Unit]) => Unit): Self = StObject.set(x, "loadLibraryFolder", js.Any.fromFunction4(value))
   }
 }

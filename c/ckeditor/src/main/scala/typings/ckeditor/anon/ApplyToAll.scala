@@ -1,11 +1,12 @@
 package typings.ckeditor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplyToAll extends js.Object {
+trait ApplyToAll extends StObject {
   
   var applyToAll: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object ApplyToAll {
   }
   
   @scala.inline
-  implicit class ApplyToAllOps[Self <: ApplyToAll] (val x: Self) extends AnyVal {
+  implicit class ApplyToAllMutableBuilder[Self <: ApplyToAll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyToAll(value: Boolean): Self = StObject.set(x, "applyToAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyToAllUndefined: Self = StObject.set(x, "applyToAll", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyToAll(value: Boolean): Self = this.set("applyToAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplyToAll: Self = this.set("applyToAll", js.undefined)
-    
-    @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

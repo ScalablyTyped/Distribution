@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,24 +38,12 @@ object ContextualSignatureInstantiationTypeArgumentInferenceContext {
   }
   
   @scala.inline
-  implicit class ContextualSignatureInstantiationTypeArgumentInferenceContextOps[Self <: ContextualSignatureInstantiationTypeArgumentInferenceContext] (val x: Self) extends AnyVal {
+  implicit class ContextualSignatureInstantiationTypeArgumentInferenceContextMutableBuilder[Self <: ContextualSignatureInstantiationTypeArgumentInferenceContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextualSignature(value: js.Any): Self = StObject.set(x, "contextualSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContextualSignature(value: js.Any): Self = this.set("contextualSignature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShouldFixContextualSignatureParameterTypes(value: js.Any): Self = this.set("shouldFixContextualSignatureParameterTypes", value.asInstanceOf[js.Any])
+    def setShouldFixContextualSignatureParameterTypes(value: js.Any): Self = StObject.set(x, "shouldFixContextualSignatureParameterTypes", value.asInstanceOf[js.Any])
   }
 }

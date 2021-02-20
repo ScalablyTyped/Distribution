@@ -1,11 +1,12 @@
 package typings.itunesconnectanalytics.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryConfig extends js.Object {
+trait QueryConfig extends StObject {
   
   var dimensionFilters: js.UndefOr[js.Array[DimensionFilters]] = js.native
   
@@ -30,60 +31,48 @@ object QueryConfig {
   }
   
   @scala.inline
-  implicit class QueryConfigOps[Self <: QueryConfig] (val x: Self) extends AnyVal {
+  implicit class QueryConfigMutableBuilder[Self <: QueryConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionFilters(value: js.Array[DimensionFilters]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionFiltersVarargs(value: DimensionFilters*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionFiltersVarargs(value: DimensionFilters*): Self = this.set("dimensionFilters", js.Array(value :_*))
+    def setEnd(value: QueryDateTypes): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionFilters(value: js.Array[DimensionFilters]): Self = this.set("dimensionFilters", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteDimensionFilters: Self = this.set("dimensionFilters", js.undefined)
+    def setFrequency(value: frequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: QueryDateTypes): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setGroup(value: QueryGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequency(value: frequency): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    def setMeasures(value: measures | js.Array[measures]): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: QueryGroup): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setMeasuresVarargs(value: measures*): Self = StObject.set(x, "measures", js.Array(value :_*))
     
     @scala.inline
-    def setMeasuresVarargs(value: measures*): Self = this.set("measures", js.Array(value :_*))
+    def setStart(value: QueryDateTypes): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasures(value: measures | js.Array[measures]): Self = this.set("measures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeasures: Self = this.set("measures", js.undefined)
-    
-    @scala.inline
-    def setStart(value: QueryDateTypes): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

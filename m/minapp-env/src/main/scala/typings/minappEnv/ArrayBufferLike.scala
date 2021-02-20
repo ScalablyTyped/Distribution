@@ -1,5 +1,6 @@
 package typings.minappEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.minappEnv.minappEnvStrings.byteLength
   - typings.minappEnv.minappEnvStrings.slice
 */
-trait ArrayBufferLike extends js.Object
+trait ArrayBufferLike extends StObject
 object ArrayBufferLike {
   
   @scala.inline

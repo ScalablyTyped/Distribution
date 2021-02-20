@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Caption extends js.Object {
+trait Caption extends StObject {
   
   /**
     * Indicates whether captions are available for the video.
@@ -59,39 +60,27 @@ object Caption {
   }
   
   @scala.inline
-  implicit class CaptionOps[Self <: Caption] (val x: Self) extends AnyVal {
+  implicit class CaptionMutableBuilder[Self <: Caption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentRating(value: AcbRating): Self = StObject.set(x, "contentRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentRating(value: AcbRating): Self = this.set("contentRating", value.asInstanceOf[js.Any])
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: String): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setLicensedContent(value: Boolean): Self = StObject.set(x, "licensedContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimension(value: String): Self = this.set("dimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLicensedContent(value: Boolean): Self = this.set("licensedContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegionRestriction(value: Allowed): Self = this.set("regionRestriction", value.asInstanceOf[js.Any])
+    def setRegionRestriction(value: Allowed): Self = StObject.set(x, "regionRestriction", value.asInstanceOf[js.Any])
   }
 }

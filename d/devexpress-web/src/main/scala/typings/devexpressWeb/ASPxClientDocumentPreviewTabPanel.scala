@@ -1,11 +1,12 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASPxClientDocumentPreviewTabPanel extends js.Object {
+trait ASPxClientDocumentPreviewTabPanel extends StObject {
   
   var collapsed: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
   
@@ -26,34 +27,22 @@ object ASPxClientDocumentPreviewTabPanel {
   }
   
   @scala.inline
-  implicit class ASPxClientDocumentPreviewTabPanelOps[Self <: ASPxClientDocumentPreviewTabPanel] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ASPxClientDocumentPreviewTabPanelMutableBuilder[Self <: ASPxClientDocumentPreviewTabPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCollapsed(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
-    ): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabsVarargs(value: ASPxClientDocumentPreviewTab*): Self = this.set("tabs", js.Array(value :_*))
+    def setTabs(value: js.Array[ASPxClientDocumentPreviewTab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabs(value: js.Array[ASPxClientDocumentPreviewTab]): Self = this.set("tabs", value.asInstanceOf[js.Any])
+    def setTabsVarargs(value: ASPxClientDocumentPreviewTab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     
     @scala.inline
     def setWidth(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
-    ): Self = this.set("width", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

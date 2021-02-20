@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Globalization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILanguageStatics extends js.Object {
+trait ILanguageStatics extends StObject {
   
   var currentInputMethodLanguageTag: String = js.native
   
@@ -20,24 +21,12 @@ object ILanguageStatics {
   }
   
   @scala.inline
-  implicit class ILanguageStaticsOps[Self <: ILanguageStatics] (val x: Self) extends AnyVal {
+  implicit class ILanguageStaticsMutableBuilder[Self <: ILanguageStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentInputMethodLanguageTag(value: String): Self = StObject.set(x, "currentInputMethodLanguageTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentInputMethodLanguageTag(value: String): Self = this.set("currentInputMethodLanguageTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsWellFormed(value: String => Boolean): Self = this.set("isWellFormed", js.Any.fromFunction1(value))
+    def setIsWellFormed(value: String => Boolean): Self = StObject.set(x, "isWellFormed", js.Any.fromFunction1(value))
   }
 }

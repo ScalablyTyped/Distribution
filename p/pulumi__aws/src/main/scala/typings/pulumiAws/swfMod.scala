@@ -5,14 +5,14 @@ import typings.pulumiAws.swfDomainMod.DomainState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/swf", JSImport.Namespace)
-@js.native
-object swfMod extends js.Object {
+object swfMod {
   
+  @JSImport("@pulumi/aws/swf", "Domain")
   @js.native
   class Domain protected ()
     extends typings.pulumiAws.swfDomainMod.Domain {
@@ -27,8 +27,7 @@ object swfMod extends js.Object {
     def this(name: String, args: DomainArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Domain extends js.Object {
+  object Domain {
     
     /**
       * Get an existing Domain resource's state with the given name, ID, and optional extra
@@ -39,15 +38,25 @@ object swfMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/swf", "Domain.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.swfDomainMod.Domain = js.native
+    @JSImport("@pulumi/aws/swf", "Domain.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.swfDomainMod.Domain = js.native
+    @JSImport("@pulumi/aws/swf", "Domain.get")
+    @js.native
     def get(name: String, id: Input[ID], state: DomainState): typings.pulumiAws.swfDomainMod.Domain = js.native
+    @JSImport("@pulumi/aws/swf", "Domain.get")
+    @js.native
     def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): typings.pulumiAws.swfDomainMod.Domain = js.native
     
     /**
       * Returns true if the given object is an instance of Domain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/swf", "Domain.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/swf/domain.Domain */ Boolean = js.native
   }
 }

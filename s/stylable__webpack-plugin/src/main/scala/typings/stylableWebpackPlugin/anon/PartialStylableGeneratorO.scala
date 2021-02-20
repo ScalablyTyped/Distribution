@@ -2,13 +2,14 @@ package typings.stylableWebpackPlugin.anon
 
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.module
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.namespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@stylable/webpack-plugin.@stylable/webpack-plugin/cjs/types.StylableGeneratorOptions> */
 @js.native
-trait PartialStylableGeneratorO extends js.Object {
+trait PartialStylableGeneratorO extends StObject {
   
   var afterTransform: js.UndefOr[js.Any] = js.native
   
@@ -27,42 +28,30 @@ object PartialStylableGeneratorO {
   }
   
   @scala.inline
-  implicit class PartialStylableGeneratorOOps[Self <: PartialStylableGeneratorO] (val x: Self) extends AnyVal {
+  implicit class PartialStylableGeneratorOMutableBuilder[Self <: PartialStylableGeneratorO] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterTransform(value: js.Any): Self = StObject.set(x, "afterTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterTransformUndefined: Self = StObject.set(x, "afterTransform", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExperimentalHMR(value: Boolean): Self = StObject.set(x, "experimentalHMR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterTransform(value: js.Any): Self = this.set("afterTransform", value.asInstanceOf[js.Any])
+    def setExperimentalHMRUndefined: Self = StObject.set(x, "experimentalHMR", js.undefined)
     
     @scala.inline
-    def deleteAfterTransform: Self = this.set("afterTransform", js.undefined)
+    def setIncludeCSSInJS(value: Boolean): Self = StObject.set(x, "includeCSSInJS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimentalHMR(value: Boolean): Self = this.set("experimentalHMR", value.asInstanceOf[js.Any])
+    def setIncludeCSSInJSUndefined: Self = StObject.set(x, "includeCSSInJS", js.undefined)
     
     @scala.inline
-    def deleteExperimentalHMR: Self = this.set("experimentalHMR", js.undefined)
+    def setRuntimeStylesheetId(value: module | namespace): Self = StObject.set(x, "runtimeStylesheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCSSInJS(value: Boolean): Self = this.set("includeCSSInJS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeCSSInJS: Self = this.set("includeCSSInJS", js.undefined)
-    
-    @scala.inline
-    def setRuntimeStylesheetId(value: module | namespace): Self = this.set("runtimeStylesheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuntimeStylesheetId: Self = this.set("runtimeStylesheetId", js.undefined)
+    def setRuntimeStylesheetIdUndefined: Self = StObject.set(x, "runtimeStylesheetId", js.undefined)
   }
 }

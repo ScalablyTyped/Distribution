@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.ec2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FleetTargetCapacitySpecification extends js.Object {
+trait FleetTargetCapacitySpecification extends StObject {
   
   /**
     * Default target capacity type. Valid values: `on-demand`, `spot`.
@@ -37,36 +38,24 @@ object FleetTargetCapacitySpecification {
   }
   
   @scala.inline
-  implicit class FleetTargetCapacitySpecificationOps[Self <: FleetTargetCapacitySpecification] (val x: Self) extends AnyVal {
+  implicit class FleetTargetCapacitySpecificationMutableBuilder[Self <: FleetTargetCapacitySpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultTargetCapacityType(value: Input[String]): Self = StObject.set(x, "defaultTargetCapacityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnDemandTargetCapacity(value: Input[Double]): Self = StObject.set(x, "onDemandTargetCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnDemandTargetCapacityUndefined: Self = StObject.set(x, "onDemandTargetCapacity", js.undefined)
     
     @scala.inline
-    def setDefaultTargetCapacityType(value: Input[String]): Self = this.set("defaultTargetCapacityType", value.asInstanceOf[js.Any])
+    def setSpotTargetCapacity(value: Input[Double]): Self = StObject.set(x, "spotTargetCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalTargetCapacity(value: Input[Double]): Self = this.set("totalTargetCapacity", value.asInstanceOf[js.Any])
+    def setSpotTargetCapacityUndefined: Self = StObject.set(x, "spotTargetCapacity", js.undefined)
     
     @scala.inline
-    def setOnDemandTargetCapacity(value: Input[Double]): Self = this.set("onDemandTargetCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnDemandTargetCapacity: Self = this.set("onDemandTargetCapacity", js.undefined)
-    
-    @scala.inline
-    def setSpotTargetCapacity(value: Input[Double]): Self = this.set("spotTargetCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpotTargetCapacity: Self = this.set("spotTargetCapacity", js.undefined)
+    def setTotalTargetCapacity(value: Input[Double]): Self = StObject.set(x, "totalTargetCapacity", value.asInstanceOf[js.Any])
   }
 }

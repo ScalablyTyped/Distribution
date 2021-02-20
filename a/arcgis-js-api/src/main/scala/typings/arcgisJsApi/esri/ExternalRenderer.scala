@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object ExternalRenderer {
   }
   
   @scala.inline
-  implicit class ExternalRendererOps[Self <: ExternalRenderer] (val x: Self) extends AnyVal {
+  implicit class ExternalRendererMutableBuilder[Self <: ExternalRenderer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRender(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDispose(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = this.set("dispose", js.Any.fromFunction1(value))
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deleteDispose: Self = this.set("dispose", js.undefined)
+    def setSetup(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRender(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = this.set("render", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
-    
-    @scala.inline
-    def setSetup(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = this.set("setup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetup: Self = this.set("setup", js.undefined)
+    def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
   }
 }

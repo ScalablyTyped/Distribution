@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientWebsecurityscanner.anon.Accesstoken
 import typings.maximMazurokGapiClientWebsecurityscanner.anon.Alt
 import typings.maximMazurokGapiClientWebsecurityscanner.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScanRunsResource extends js.Object {
+trait ScanRunsResource extends StObject {
   
   var crawledUrls: CrawledUrlsResource = js.native
   

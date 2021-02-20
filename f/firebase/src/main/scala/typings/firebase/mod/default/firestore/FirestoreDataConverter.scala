@@ -1,12 +1,13 @@
 package typings.firebase.mod.default.firestore
 
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirestoreDataConverter[T] extends js.Object {
+trait FirestoreDataConverter[T] extends StObject {
   
   /**
     * Called by the Firestore SDK to convert Firestore data into an object of

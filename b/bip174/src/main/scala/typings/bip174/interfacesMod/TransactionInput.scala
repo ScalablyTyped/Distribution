@@ -1,12 +1,13 @@
 package typings.bip174.interfacesMod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionInput extends js.Object {
+trait TransactionInput extends StObject {
   
   var hash: String | Buffer = js.native
   
@@ -23,30 +24,18 @@ object TransactionInput {
   }
   
   @scala.inline
-  implicit class TransactionInputOps[Self <: TransactionInput] (val x: Self) extends AnyVal {
+  implicit class TransactionInputMutableBuilder[Self <: TransactionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: String | Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String | Buffer): Self = this.set("hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSequence(value: Double): Self = this.set("sequence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequence: Self = this.set("sequence", js.undefined)
+    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
   }
 }

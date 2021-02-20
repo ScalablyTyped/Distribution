@@ -1,6 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,15 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SphericalHarmonics ()
   extends typings.babylonjs.mathsIndexMod.SphericalHarmonics
 /* static members */
-@JSImport("babylonjs/index", "SphericalHarmonics")
-@js.native
-object SphericalHarmonics extends js.Object {
+object SphericalHarmonics {
   
   /**
     * Constructs a spherical harmonics from an array.
     * @param data defines the 9x3 coefficients (l00, l1-1, l10, l11, l2-2, l2-1, l20, l21, l22)
     * @returns the spherical harmonics
     */
+  @JSImport("babylonjs/index", "SphericalHarmonics.FromArray")
+  @js.native
   def FromArray(data: ArrayLike[ArrayLike[Double]]): typings.babylonjs.sphericalPolynomialMod.SphericalHarmonics = js.native
   
   /**
@@ -26,5 +27,7 @@ object SphericalHarmonics extends js.Object {
     * @param polynomial the spherical polynomial
     * @returns the spherical harmonics
     */
+  @JSImport("babylonjs/index", "SphericalHarmonics.FromPolynomial")
+  @js.native
   def FromPolynomial(polynomial: typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial): typings.babylonjs.sphericalPolynomialMod.SphericalHarmonics = js.native
 }

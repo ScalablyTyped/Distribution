@@ -1,25 +1,35 @@
 package typings.ejWebAll.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.NavigationDrawer
-import typings.ejWebAll.ej.NavigationDrawer.Model
-import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofNavigationDrawer
-  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), NavigationDrawer]
-     with Instantiable2[
-      (/* element */ Element) | (/* element */ JQuery), 
-      /* options */ Model, 
-      NavigationDrawer
-    ] {
+trait TypeofNavigationDrawer extends StObject {
   
+  /* static member */
   var Locale: js.Any = js.native
   
+  /* static member */
   var fn: NavigationDrawer = js.native
+}
+object TypeofNavigationDrawer {
+  
+  @scala.inline
+  def apply(Locale: js.Any, fn: NavigationDrawer): TypeofNavigationDrawer = {
+    val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofNavigationDrawer]
+  }
+  
+  @scala.inline
+  implicit class TypeofNavigationDrawerMutableBuilder[Self <: TypeofNavigationDrawer] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setFn(value: NavigationDrawer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+  }
 }

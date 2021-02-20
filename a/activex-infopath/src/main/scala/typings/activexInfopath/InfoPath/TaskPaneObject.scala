@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskPaneObject extends js.Object {
+trait TaskPaneObject extends StObject {
   
   @JSName("InfoPath.TaskPaneObject_typekey")
   var InfoPathDotTaskPaneObject_typekey: TaskPaneObject = js.native
@@ -24,27 +25,15 @@ object TaskPaneObject {
   }
   
   @scala.inline
-  implicit class TaskPaneObjectOps[Self <: TaskPaneObject] (val x: Self) extends AnyVal {
+  implicit class TaskPaneObjectMutableBuilder[Self <: TaskPaneObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfoPathDotTaskPaneObject_typekey(value: TaskPaneObject): Self = StObject.set(x, "InfoPath.TaskPaneObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: XdTaskPaneType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInfoPathDotTaskPaneObject_typekey(value: TaskPaneObject): Self = this.set("InfoPath.TaskPaneObject_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: XdTaskPaneType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

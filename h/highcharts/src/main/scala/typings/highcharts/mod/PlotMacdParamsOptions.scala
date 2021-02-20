@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotMacdParamsOptions extends js.Object {
+trait PlotMacdParamsOptions extends StObject {
   
   /**
     * (Highstock) The point index which indicator calculations will base. For
@@ -45,48 +46,36 @@ object PlotMacdParamsOptions {
   }
   
   @scala.inline
-  implicit class PlotMacdParamsOptionsOps[Self <: PlotMacdParamsOptions] (val x: Self) extends AnyVal {
+  implicit class PlotMacdParamsOptionsMutableBuilder[Self <: PlotMacdParamsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLongPeriod(value: Double): Self = StObject.set(x, "longPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLongPeriodUndefined: Self = StObject.set(x, "longPeriod", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongPeriod(value: Double): Self = this.set("longPeriod", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def deleteLongPeriod: Self = this.set("longPeriod", js.undefined)
+    def setShortPeriod(value: Double): Self = StObject.set(x, "shortPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Double): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setShortPeriodUndefined: Self = StObject.set(x, "shortPeriod", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setSignalPeriod(value: Double): Self = StObject.set(x, "signalPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortPeriod(value: Double): Self = this.set("shortPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortPeriod: Self = this.set("shortPeriod", js.undefined)
-    
-    @scala.inline
-    def setSignalPeriod(value: Double): Self = this.set("signalPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignalPeriod: Self = this.set("signalPeriod", js.undefined)
+    def setSignalPeriodUndefined: Self = StObject.set(x, "signalPeriod", js.undefined)
   }
 }

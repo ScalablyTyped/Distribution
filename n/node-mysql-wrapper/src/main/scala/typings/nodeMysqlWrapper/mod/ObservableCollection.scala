@@ -1,12 +1,13 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "ObservableCollection")
 @js.native
-class ObservableCollection[T] protected () extends js.Object {
+class ObservableCollection[T] protected () extends StObject {
   def this(table: Table[T]) = this()
   def this(table: Table[T], fetchAllFromDatabase: Boolean) = this()
   def this(table: Table[T], fetchAllFromDatabase: js.UndefOr[scala.Nothing], callbackWhenReady: js.Function) = this()

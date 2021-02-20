@@ -1,12 +1,13 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "NodeMaterialSystemValues")
 @js.native
-object NodeMaterialSystemValues extends js.Object {
+object NodeMaterialSystemValues extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

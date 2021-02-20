@@ -1,12 +1,13 @@
 package typings.iobroker.anon
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestEnum extends js.Object {
+trait RequestEnum extends StObject {
   
   var requestEnum: String = js.native
   
@@ -21,24 +22,12 @@ object RequestEnum {
   }
   
   @scala.inline
-  implicit class RequestEnumOps[Self <: RequestEnum] (val x: Self) extends AnyVal {
+  implicit class RequestEnumMutableBuilder[Self <: RequestEnum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestEnum(value: String): Self = StObject.set(x, "requestEnum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequestEnum(value: String): Self = this.set("requestEnum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: Record[String, _]): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResult(value: Record[String, _]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

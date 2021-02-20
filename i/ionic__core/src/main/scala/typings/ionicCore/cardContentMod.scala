@@ -1,14 +1,14 @@
 package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/card-content/card-content", JSImport.Namespace)
-@js.native
-object cardContentMod extends js.Object {
+object cardContentMod {
   
+  @JSImport("@ionic/core/dist/types/components/card-content/card-content", "CardContent")
   @js.native
   class CardContent () extends ComponentInterface {
     

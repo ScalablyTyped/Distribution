@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorLayoutInfo extends js.Object {
+trait EditorLayoutInfo extends StObject {
   
   /**
     * Left position for the content (actual text)
@@ -116,72 +117,60 @@ object EditorLayoutInfo {
   }
   
   @scala.inline
-  implicit class EditorLayoutInfoOps[Self <: EditorLayoutInfo] (val x: Self) extends AnyVal {
+  implicit class EditorLayoutInfoMutableBuilder[Self <: EditorLayoutInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentLeft(value: Double): Self = StObject.set(x, "contentLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecorationsLeft(value: Double): Self = StObject.set(x, "decorationsLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLeft(value: Double): Self = this.set("contentLeft", value.asInstanceOf[js.Any])
+    def setDecorationsWidth(value: Double): Self = StObject.set(x, "decorationsWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentWidth(value: Double): Self = this.set("contentWidth", value.asInstanceOf[js.Any])
+    def setGlyphMarginLeft(value: Double): Self = StObject.set(x, "glyphMarginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorationsLeft(value: Double): Self = this.set("decorationsLeft", value.asInstanceOf[js.Any])
+    def setGlyphMarginWidth(value: Double): Self = StObject.set(x, "glyphMarginWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorationsWidth(value: Double): Self = this.set("decorationsWidth", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphMarginLeft(value: Double): Self = this.set("glyphMarginLeft", value.asInstanceOf[js.Any])
+    def setHorizontalScrollbarHeight(value: Double): Self = StObject.set(x, "horizontalScrollbarHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphMarginWidth(value: Double): Self = this.set("glyphMarginWidth", value.asInstanceOf[js.Any])
+    def setIsViewportWrapping(value: Boolean): Self = StObject.set(x, "isViewportWrapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIsWordWrapMinified(value: Boolean): Self = StObject.set(x, "isWordWrapMinified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalScrollbarHeight(value: Double): Self = this.set("horizontalScrollbarHeight", value.asInstanceOf[js.Any])
+    def setLineNumbersLeft(value: Double): Self = StObject.set(x, "lineNumbersLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsViewportWrapping(value: Boolean): Self = this.set("isViewportWrapping", value.asInstanceOf[js.Any])
+    def setLineNumbersWidth(value: Double): Self = StObject.set(x, "lineNumbersWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWordWrapMinified(value: Boolean): Self = this.set("isWordWrapMinified", value.asInstanceOf[js.Any])
+    def setMinimap(value: EditorMinimapLayoutInfo): Self = StObject.set(x, "minimap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumbersLeft(value: Double): Self = this.set("lineNumbersLeft", value.asInstanceOf[js.Any])
+    def setOverviewRuler(value: OverviewRulerPosition): Self = StObject.set(x, "overviewRuler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumbersWidth(value: Double): Self = this.set("lineNumbersWidth", value.asInstanceOf[js.Any])
+    def setVerticalScrollbarWidth(value: Double): Self = StObject.set(x, "verticalScrollbarWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimap(value: EditorMinimapLayoutInfo): Self = this.set("minimap", value.asInstanceOf[js.Any])
+    def setViewportColumn(value: Double): Self = StObject.set(x, "viewportColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverviewRuler(value: OverviewRulerPosition): Self = this.set("overviewRuler", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalScrollbarWidth(value: Double): Self = this.set("verticalScrollbarWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewportColumn(value: Double): Self = this.set("viewportColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrappingColumn(value: Double): Self = this.set("wrappingColumn", value.asInstanceOf[js.Any])
+    def setWrappingColumn(value: Double): Self = StObject.set(x, "wrappingColumn", value.asInstanceOf[js.Any])
   }
 }

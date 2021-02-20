@@ -4,12 +4,13 @@ import typings.octokitTypes.anon.Annotationsurl
 import typings.octokitTypes.anon.Base
 import typings.octokitTypes.anon.Events
 import typings.octokitTypes.anon.IdNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChecksGetResponseData extends js.Object {
+trait ChecksGetResponseData extends StObject {
   
   var app: Events = js.native
   
@@ -69,69 +70,57 @@ object ChecksGetResponseData {
   }
   
   @scala.inline
-  implicit class ChecksGetResponseDataOps[Self <: ChecksGetResponseData] (val x: Self) extends AnyVal {
+  implicit class ChecksGetResponseDataMutableBuilder[Self <: ChecksGetResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: Events): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheck_suite(value: IdNumber): Self = StObject.set(x, "check_suite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompleted_at(value: String): Self = StObject.set(x, "completed_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp(value: Events): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setConclusion(value: String): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheck_suite(value: IdNumber): Self = this.set("check_suite", value.asInstanceOf[js.Any])
+    def setDetails_url(value: String): Self = StObject.set(x, "details_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted_at(value: String): Self = this.set("completed_at", value.asInstanceOf[js.Any])
+    def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConclusion(value: String): Self = this.set("conclusion", value.asInstanceOf[js.Any])
+    def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails_url(value: String): Self = this.set("details_url", value.asInstanceOf[js.Any])
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_id(value: String): Self = this.set("external_id", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead_sha(value: String): Self = this.set("head_sha", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOutput(value: Annotationsurl): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPull_requests(value: js.Array[Base]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def setPull_requestsVarargs(value: Base*): Self = StObject.set(x, "pull_requests", js.Array(value :_*))
     
     @scala.inline
-    def setOutput(value: Annotationsurl): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setStarted_at(value: String): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPull_requestsVarargs(value: Base*): Self = this.set("pull_requests", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPull_requests(value: js.Array[Base]): Self = this.set("pull_requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStarted_at(value: String): Self = this.set("started_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

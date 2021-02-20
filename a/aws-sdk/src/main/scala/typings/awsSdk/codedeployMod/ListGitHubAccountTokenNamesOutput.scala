@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGitHubAccountTokenNamesOutput extends js.Object {
+trait ListGitHubAccountTokenNamesOutput extends StObject {
   
   /**
     * If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent ListGitHubAccountTokenNames call to return the next set of names in the list. 
@@ -26,33 +27,21 @@ object ListGitHubAccountTokenNamesOutput {
   }
   
   @scala.inline
-  implicit class ListGitHubAccountTokenNamesOutputOps[Self <: ListGitHubAccountTokenNamesOutput] (val x: Self) extends AnyVal {
+  implicit class ListGitHubAccountTokenNamesOutputMutableBuilder[Self <: ListGitHubAccountTokenNamesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTokenNameList(value: GitHubAccountTokenNameList): Self = StObject.set(x, "tokenNameList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setTokenNameListUndefined: Self = StObject.set(x, "tokenNameList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setTokenNameListVarargs(value: GitHubAccountTokenName*): Self = this.set("tokenNameList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTokenNameList(value: GitHubAccountTokenNameList): Self = this.set("tokenNameList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenNameList: Self = this.set("tokenNameList", js.undefined)
+    def setTokenNameListVarargs(value: GitHubAccountTokenName*): Self = StObject.set(x, "tokenNameList", js.Array(value :_*))
   }
 }

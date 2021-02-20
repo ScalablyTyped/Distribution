@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,84 +80,72 @@ object BundleEntryRequest {
   }
   
   @scala.inline
-  implicit class BundleEntryRequestOps[Self <: BundleEntryRequest] (val x: Self) extends AnyVal {
+  implicit class BundleEntryRequestMutableBuilder[Self <: BundleEntryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIfMatch(value: String): Self = StObject.set(x, "ifMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIfMatchUndefined: Self = StObject.set(x, "ifMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIfModifiedSince(value: instant): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: code): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
     
     @scala.inline
-    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setIfNoneExist(value: String): Self = StObject.set(x, "ifNoneExist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_ifMatch(value: Element): Self = this.set("_ifMatch", value.asInstanceOf[js.Any])
+    def setIfNoneExistUndefined: Self = StObject.set(x, "ifNoneExist", js.undefined)
     
     @scala.inline
-    def delete_ifMatch: Self = this.set("_ifMatch", js.undefined)
+    def setIfNoneMatch(value: String): Self = StObject.set(x, "ifNoneMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_ifModifiedSince(value: Element): Self = this.set("_ifModifiedSince", value.asInstanceOf[js.Any])
+    def setIfNoneMatchUndefined: Self = StObject.set(x, "ifNoneMatch", js.undefined)
     
     @scala.inline
-    def delete_ifModifiedSince: Self = this.set("_ifModifiedSince", js.undefined)
+    def setMethod(value: code): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_ifNoneExist(value: Element): Self = this.set("_ifNoneExist", value.asInstanceOf[js.Any])
+    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_ifNoneExist: Self = this.set("_ifNoneExist", js.undefined)
+    def set_ifMatch(value: Element): Self = StObject.set(x, "_ifMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_ifNoneMatch(value: Element): Self = this.set("_ifNoneMatch", value.asInstanceOf[js.Any])
+    def set_ifMatchUndefined: Self = StObject.set(x, "_ifMatch", js.undefined)
     
     @scala.inline
-    def delete_ifNoneMatch: Self = this.set("_ifNoneMatch", js.undefined)
+    def set_ifModifiedSince(value: Element): Self = StObject.set(x, "_ifModifiedSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_method(value: Element): Self = this.set("_method", value.asInstanceOf[js.Any])
+    def set_ifModifiedSinceUndefined: Self = StObject.set(x, "_ifModifiedSince", js.undefined)
     
     @scala.inline
-    def delete_method: Self = this.set("_method", js.undefined)
+    def set_ifNoneExist(value: Element): Self = StObject.set(x, "_ifNoneExist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    def set_ifNoneExistUndefined: Self = StObject.set(x, "_ifNoneExist", js.undefined)
     
     @scala.inline
-    def delete_url: Self = this.set("_url", js.undefined)
+    def set_ifNoneMatch(value: Element): Self = StObject.set(x, "_ifNoneMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfMatch(value: String): Self = this.set("ifMatch", value.asInstanceOf[js.Any])
+    def set_ifNoneMatchUndefined: Self = StObject.set(x, "_ifNoneMatch", js.undefined)
     
     @scala.inline
-    def deleteIfMatch: Self = this.set("ifMatch", js.undefined)
+    def set_method(value: Element): Self = StObject.set(x, "_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfModifiedSince(value: instant): Self = this.set("ifModifiedSince", value.asInstanceOf[js.Any])
+    def set_methodUndefined: Self = StObject.set(x, "_method", js.undefined)
     
     @scala.inline
-    def deleteIfModifiedSince: Self = this.set("ifModifiedSince", js.undefined)
+    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfNoneExist(value: String): Self = this.set("ifNoneExist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIfNoneExist: Self = this.set("ifNoneExist", js.undefined)
-    
-    @scala.inline
-    def setIfNoneMatch(value: String): Self = this.set("ifNoneMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIfNoneMatch: Self = this.set("ifNoneMatch", js.undefined)
+    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
   }
 }

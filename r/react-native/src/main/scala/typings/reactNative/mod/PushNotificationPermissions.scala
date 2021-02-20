@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushNotificationPermissions extends js.Object {
+trait PushNotificationPermissions extends StObject {
   
   var alert: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object PushNotificationPermissions {
   }
   
   @scala.inline
-  implicit class PushNotificationPermissionsOps[Self <: PushNotificationPermissions] (val x: Self) extends AnyVal {
+  implicit class PushNotificationPermissionsMutableBuilder[Self <: PushNotificationPermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBadge(value: Boolean): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlert(value: Boolean): Self = this.set("alert", value.asInstanceOf[js.Any])
+    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
     @scala.inline
-    def deleteAlert: Self = this.set("alert", js.undefined)
+    def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadge(value: Boolean): Self = this.set("badge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBadge: Self = this.set("badge", js.undefined)
-    
-    @scala.inline
-    def setSound(value: Boolean): Self = this.set("sound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSound: Self = this.set("sound", js.undefined)
+    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
   }
 }

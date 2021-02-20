@@ -1,15 +1,15 @@
 package typings.blueprintjsTable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/table/lib/esm/common/batcher", JSImport.Namespace)
-@js.native
-object batcherMod extends js.Object {
+object batcherMod {
   
+  @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher")
   @js.native
-  class Batcher[T] () extends js.Object {
+  class Batcher[T] () extends StObject {
     
     /**
       * Stores the variadic arguments to be later batched together.
@@ -138,16 +138,35 @@ object batcherMod extends js.Object {
     def startNewBatch(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Batcher extends js.Object {
+  object Batcher {
     
-    var ARG_DELIMITER: String = js.native
+    @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var DEFAULT_ADD_LIMIT: Double = js.native
+    @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher.ARG_DELIMITER")
+    @js.native
+    def ARG_DELIMITER: String = js.native
+    @scala.inline
+    def ARG_DELIMITER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARG_DELIMITER")(x.asInstanceOf[js.Any])
     
-    var DEFAULT_REMOVE_LIMIT: Double = js.native
+    @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher.DEFAULT_ADD_LIMIT")
+    @js.native
+    def DEFAULT_ADD_LIMIT: Double = js.native
+    @scala.inline
+    def DEFAULT_ADD_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ADD_LIMIT")(x.asInstanceOf[js.Any])
     
-    var DEFAULT_UPDATE_LIMIT: Double = js.native
+    @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher.DEFAULT_REMOVE_LIMIT")
+    @js.native
+    def DEFAULT_REMOVE_LIMIT: Double = js.native
+    @scala.inline
+    def DEFAULT_REMOVE_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_REMOVE_LIMIT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/table/lib/esm/common/batcher", "Batcher.DEFAULT_UPDATE_LIMIT")
+    @js.native
+    def DEFAULT_UPDATE_LIMIT: Double = js.native
+    @scala.inline
+    def DEFAULT_UPDATE_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_UPDATE_LIMIT")(x.asInstanceOf[js.Any])
   }
   
   type Callback = js.Function0[Unit]

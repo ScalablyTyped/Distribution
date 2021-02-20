@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableSelectCell extends js.Object {
+trait MUIDataTableSelectCell extends StObject {
   
   var checked: Boolean = js.native
   
@@ -38,78 +39,66 @@ object MUIDataTableSelectCell {
   }
   
   @scala.inline
-  implicit class MUIDataTableSelectCellOps[Self <: MUIDataTableSelectCell] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableSelectCellMutableBuilder[Self <: MUIDataTableSelectCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setExpandableOn(value: Boolean): Self = StObject.set(x, "expandableOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedHeader(value: Boolean): Self = this.set("fixedHeader", value.asInstanceOf[js.Any])
+    def setExpandableOnUndefined: Self = StObject.set(x, "expandableOn", js.undefined)
     
     @scala.inline
-    def setClasses(value: js.Object): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setIsHeaderCell(value: Boolean): Self = StObject.set(x, "isHeaderCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandableOn(value: Boolean): Self = this.set("expandableOn", value.asInstanceOf[js.Any])
+    def setIsHeaderCellUndefined: Self = StObject.set(x, "isHeaderCell", js.undefined)
     
     @scala.inline
-    def deleteExpandableOn: Self = this.set("expandableOn", js.undefined)
+    def setIsRowExpanded(value: Boolean): Self = StObject.set(x, "isRowExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHeaderCell(value: Boolean): Self = this.set("isHeaderCell", value.asInstanceOf[js.Any])
+    def setIsRowExpandedUndefined: Self = StObject.set(x, "isRowExpanded", js.undefined)
     
     @scala.inline
-    def deleteIsHeaderCell: Self = this.set("isHeaderCell", js.undefined)
+    def setIsRowSelectable(value: Boolean): Self = StObject.set(x, "isRowSelectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRowExpanded(value: Boolean): Self = this.set("isRowExpanded", value.asInstanceOf[js.Any])
+    def setIsRowSelectableUndefined: Self = StObject.set(x, "isRowSelectable", js.undefined)
     
     @scala.inline
-    def deleteIsRowExpanded: Self = this.set("isRowExpanded", js.undefined)
+    def setOnChange(value: /* args */ js.Any => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsRowSelectable(value: Boolean): Self = this.set("isRowSelectable", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteIsRowSelectable: Self = this.set("isRowSelectable", js.undefined)
+    def setOnExpand(value: /* args */ js.Any => _): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnChange(value: /* args */ js.Any => _): Self = this.set("onChange", js.Any.fromFunction1(value))
+    def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOtherProps(value: js.Any): Self = StObject.set(x, "otherProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnExpand(value: /* args */ js.Any => _): Self = this.set("onExpand", js.Any.fromFunction1(value))
+    def setOtherPropsUndefined: Self = StObject.set(x, "otherProps", js.undefined)
     
     @scala.inline
-    def deleteOnExpand: Self = this.set("onExpand", js.undefined)
+    def setSelectableOn(value: Boolean): Self = StObject.set(x, "selectableOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherProps(value: js.Any): Self = this.set("otherProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOtherProps: Self = this.set("otherProps", js.undefined)
-    
-    @scala.inline
-    def setSelectableOn(value: Boolean): Self = this.set("selectableOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectableOn: Self = this.set("selectableOn", js.undefined)
+    def setSelectableOnUndefined: Self = StObject.set(x, "selectableOn", js.undefined)
   }
 }

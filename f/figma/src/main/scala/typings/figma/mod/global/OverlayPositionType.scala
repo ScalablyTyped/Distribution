@@ -1,5 +1,6 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.figma.figmaStrings.BOTTOM_RIGHT
   - typings.figma.figmaStrings.MANUAL
 */
-trait OverlayPositionType extends js.Object
+trait OverlayPositionType extends StObject
 object OverlayPositionType {
   
   @scala.inline

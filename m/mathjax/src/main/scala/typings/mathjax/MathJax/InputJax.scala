@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputJax extends js.Object {
+trait InputJax extends StObject {
   
   /*This is the method that the MathJax.Hub calls when it needs the input jax to process the given math <script>.
     * Its default action is to do the following:
@@ -72,42 +73,30 @@ object InputJax {
   }
   
   @scala.inline
-  implicit class InputJaxOps[Self <: InputJax] (val x: Self) extends AnyVal {
+  implicit class InputJaxMutableBuilder[Self <: InputJax] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementJax(value: String): Self = StObject.set(x, "elementJax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcess(value: (js.Any, js.Any) => js.Any): Self = this.set("Process", js.Any.fromFunction2(value))
+    def setNeedsUpdate(value: js.Any => Boolean): Self = StObject.set(x, "needsUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegister(value: String => Unit): Self = this.set("Register", js.Any.fromFunction1(value))
+    def setProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Process", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTranslate(value: (js.Any, js.Any) => ElementJax): Self = this.set("Translate", js.Any.fromFunction2(value))
+    def setRegister(value: String => Unit): Self = StObject.set(x, "Register", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirectory(value: String): Self = this.set("directory", value.asInstanceOf[js.Any])
+    def setTranslate(value: (js.Any, js.Any) => ElementJax): Self = StObject.set(x, "Translate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setElementJax(value: String): Self = this.set("elementJax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNeedsUpdate(value: js.Any => Boolean): Self = this.set("needsUpdate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

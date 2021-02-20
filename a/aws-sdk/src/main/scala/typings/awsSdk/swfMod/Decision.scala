@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Decision extends js.Object {
+trait Decision extends StObject {
   
   /**
     * Provides the details of the CancelTimer decision. It isn't set for other decision types.
@@ -86,99 +87,87 @@ object Decision {
   }
   
   @scala.inline
-  implicit class DecisionOps[Self <: Decision] (val x: Self) extends AnyVal {
+  implicit class DecisionMutableBuilder[Self <: Decision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelTimerDecisionAttributes(value: CancelTimerDecisionAttributes): Self = StObject.set(x, "cancelTimerDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelTimerDecisionAttributesUndefined: Self = StObject.set(x, "cancelTimerDecisionAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelWorkflowExecutionDecisionAttributes(value: CancelWorkflowExecutionDecisionAttributes): Self = StObject.set(x, "cancelWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecisionType(value: DecisionType): Self = this.set("decisionType", value.asInstanceOf[js.Any])
+    def setCancelWorkflowExecutionDecisionAttributesUndefined: Self = StObject.set(x, "cancelWorkflowExecutionDecisionAttributes", js.undefined)
     
     @scala.inline
-    def setCancelTimerDecisionAttributes(value: CancelTimerDecisionAttributes): Self = this.set("cancelTimerDecisionAttributes", value.asInstanceOf[js.Any])
+    def setCompleteWorkflowExecutionDecisionAttributes(value: CompleteWorkflowExecutionDecisionAttributes): Self = StObject.set(x, "completeWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCancelTimerDecisionAttributes: Self = this.set("cancelTimerDecisionAttributes", js.undefined)
+    def setCompleteWorkflowExecutionDecisionAttributesUndefined: Self = StObject.set(x, "completeWorkflowExecutionDecisionAttributes", js.undefined)
     
     @scala.inline
-    def setCancelWorkflowExecutionDecisionAttributes(value: CancelWorkflowExecutionDecisionAttributes): Self = this.set("cancelWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
+    def setContinueAsNewWorkflowExecutionDecisionAttributes(value: ContinueAsNewWorkflowExecutionDecisionAttributes): Self = StObject.set(x, "continueAsNewWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCancelWorkflowExecutionDecisionAttributes: Self = this.set("cancelWorkflowExecutionDecisionAttributes", js.undefined)
+    def setContinueAsNewWorkflowExecutionDecisionAttributesUndefined: Self = StObject.set(x, "continueAsNewWorkflowExecutionDecisionAttributes", js.undefined)
     
     @scala.inline
-    def setCompleteWorkflowExecutionDecisionAttributes(value: CompleteWorkflowExecutionDecisionAttributes): Self = this.set("completeWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
+    def setDecisionType(value: DecisionType): Self = StObject.set(x, "decisionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompleteWorkflowExecutionDecisionAttributes: Self = this.set("completeWorkflowExecutionDecisionAttributes", js.undefined)
+    def setFailWorkflowExecutionDecisionAttributes(value: FailWorkflowExecutionDecisionAttributes): Self = StObject.set(x, "failWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueAsNewWorkflowExecutionDecisionAttributes(value: ContinueAsNewWorkflowExecutionDecisionAttributes): Self = this.set("continueAsNewWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
+    def setFailWorkflowExecutionDecisionAttributesUndefined: Self = StObject.set(x, "failWorkflowExecutionDecisionAttributes", js.undefined)
     
     @scala.inline
-    def deleteContinueAsNewWorkflowExecutionDecisionAttributes: Self = this.set("continueAsNewWorkflowExecutionDecisionAttributes", js.undefined)
+    def setRecordMarkerDecisionAttributes(value: RecordMarkerDecisionAttributes): Self = StObject.set(x, "recordMarkerDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailWorkflowExecutionDecisionAttributes(value: FailWorkflowExecutionDecisionAttributes): Self = this.set("failWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
+    def setRecordMarkerDecisionAttributesUndefined: Self = StObject.set(x, "recordMarkerDecisionAttributes", js.undefined)
     
     @scala.inline
-    def deleteFailWorkflowExecutionDecisionAttributes: Self = this.set("failWorkflowExecutionDecisionAttributes", js.undefined)
+    def setRequestCancelActivityTaskDecisionAttributes(value: RequestCancelActivityTaskDecisionAttributes): Self = StObject.set(x, "requestCancelActivityTaskDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordMarkerDecisionAttributes(value: RecordMarkerDecisionAttributes): Self = this.set("recordMarkerDecisionAttributes", value.asInstanceOf[js.Any])
+    def setRequestCancelActivityTaskDecisionAttributesUndefined: Self = StObject.set(x, "requestCancelActivityTaskDecisionAttributes", js.undefined)
     
     @scala.inline
-    def deleteRecordMarkerDecisionAttributes: Self = this.set("recordMarkerDecisionAttributes", js.undefined)
+    def setRequestCancelExternalWorkflowExecutionDecisionAttributes(value: RequestCancelExternalWorkflowExecutionDecisionAttributes): Self = StObject.set(x, "requestCancelExternalWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestCancelActivityTaskDecisionAttributes(value: RequestCancelActivityTaskDecisionAttributes): Self = this.set("requestCancelActivityTaskDecisionAttributes", value.asInstanceOf[js.Any])
+    def setRequestCancelExternalWorkflowExecutionDecisionAttributesUndefined: Self = StObject.set(x, "requestCancelExternalWorkflowExecutionDecisionAttributes", js.undefined)
     
     @scala.inline
-    def deleteRequestCancelActivityTaskDecisionAttributes: Self = this.set("requestCancelActivityTaskDecisionAttributes", js.undefined)
+    def setScheduleActivityTaskDecisionAttributes(value: ScheduleActivityTaskDecisionAttributes): Self = StObject.set(x, "scheduleActivityTaskDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestCancelExternalWorkflowExecutionDecisionAttributes(value: RequestCancelExternalWorkflowExecutionDecisionAttributes): Self = this.set("requestCancelExternalWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
+    def setScheduleActivityTaskDecisionAttributesUndefined: Self = StObject.set(x, "scheduleActivityTaskDecisionAttributes", js.undefined)
     
     @scala.inline
-    def deleteRequestCancelExternalWorkflowExecutionDecisionAttributes: Self = this.set("requestCancelExternalWorkflowExecutionDecisionAttributes", js.undefined)
+    def setScheduleLambdaFunctionDecisionAttributes(value: ScheduleLambdaFunctionDecisionAttributes): Self = StObject.set(x, "scheduleLambdaFunctionDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleActivityTaskDecisionAttributes(value: ScheduleActivityTaskDecisionAttributes): Self = this.set("scheduleActivityTaskDecisionAttributes", value.asInstanceOf[js.Any])
+    def setScheduleLambdaFunctionDecisionAttributesUndefined: Self = StObject.set(x, "scheduleLambdaFunctionDecisionAttributes", js.undefined)
     
     @scala.inline
-    def deleteScheduleActivityTaskDecisionAttributes: Self = this.set("scheduleActivityTaskDecisionAttributes", js.undefined)
+    def setSignalExternalWorkflowExecutionDecisionAttributes(value: SignalExternalWorkflowExecutionDecisionAttributes): Self = StObject.set(x, "signalExternalWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleLambdaFunctionDecisionAttributes(value: ScheduleLambdaFunctionDecisionAttributes): Self = this.set("scheduleLambdaFunctionDecisionAttributes", value.asInstanceOf[js.Any])
+    def setSignalExternalWorkflowExecutionDecisionAttributesUndefined: Self = StObject.set(x, "signalExternalWorkflowExecutionDecisionAttributes", js.undefined)
     
     @scala.inline
-    def deleteScheduleLambdaFunctionDecisionAttributes: Self = this.set("scheduleLambdaFunctionDecisionAttributes", js.undefined)
+    def setStartChildWorkflowExecutionDecisionAttributes(value: StartChildWorkflowExecutionDecisionAttributes): Self = StObject.set(x, "startChildWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignalExternalWorkflowExecutionDecisionAttributes(value: SignalExternalWorkflowExecutionDecisionAttributes): Self = this.set("signalExternalWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
+    def setStartChildWorkflowExecutionDecisionAttributesUndefined: Self = StObject.set(x, "startChildWorkflowExecutionDecisionAttributes", js.undefined)
     
     @scala.inline
-    def deleteSignalExternalWorkflowExecutionDecisionAttributes: Self = this.set("signalExternalWorkflowExecutionDecisionAttributes", js.undefined)
+    def setStartTimerDecisionAttributes(value: StartTimerDecisionAttributes): Self = StObject.set(x, "startTimerDecisionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartChildWorkflowExecutionDecisionAttributes(value: StartChildWorkflowExecutionDecisionAttributes): Self = this.set("startChildWorkflowExecutionDecisionAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartChildWorkflowExecutionDecisionAttributes: Self = this.set("startChildWorkflowExecutionDecisionAttributes", js.undefined)
-    
-    @scala.inline
-    def setStartTimerDecisionAttributes(value: StartTimerDecisionAttributes): Self = this.set("startTimerDecisionAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimerDecisionAttributes: Self = this.set("startTimerDecisionAttributes", js.undefined)
+    def setStartTimerDecisionAttributesUndefined: Self = StObject.set(x, "startTimerDecisionAttributes", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRdsDbParameterGroup extends js.Object {
+trait AwsRdsDbParameterGroup extends StObject {
   
   /**
     * 
@@ -26,30 +27,18 @@ object AwsRdsDbParameterGroup {
   }
   
   @scala.inline
-  implicit class AwsRdsDbParameterGroupOps[Self <: AwsRdsDbParameterGroup] (val x: Self) extends AnyVal {
+  implicit class AwsRdsDbParameterGroupMutableBuilder[Self <: AwsRdsDbParameterGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDbParameterGroupName(value: NonEmptyString): Self = StObject.set(x, "DbParameterGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDbParameterGroupNameUndefined: Self = StObject.set(x, "DbParameterGroupName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterApplyStatus(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbParameterGroupName(value: NonEmptyString): Self = this.set("DbParameterGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDbParameterGroupName: Self = this.set("DbParameterGroupName", js.undefined)
-    
-    @scala.inline
-    def setParameterApplyStatus(value: NonEmptyString): Self = this.set("ParameterApplyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterApplyStatus: Self = this.set("ParameterApplyStatus", js.undefined)
+    def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.acmpcaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCertificateAuthorityResponse extends js.Object {
+trait DescribeCertificateAuthorityResponse extends StObject {
   
   /**
     * A CertificateAuthority structure that contains information about your private CA.
@@ -21,24 +22,12 @@ object DescribeCertificateAuthorityResponse {
   }
   
   @scala.inline
-  implicit class DescribeCertificateAuthorityResponseOps[Self <: DescribeCertificateAuthorityResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeCertificateAuthorityResponseMutableBuilder[Self <: DescribeCertificateAuthorityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateAuthority(value: CertificateAuthority): Self = StObject.set(x, "CertificateAuthority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificateAuthority(value: CertificateAuthority): Self = this.set("CertificateAuthority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateAuthority: Self = this.set("CertificateAuthority", js.undefined)
+    def setCertificateAuthorityUndefined: Self = StObject.set(x, "CertificateAuthority", js.undefined)
   }
 }

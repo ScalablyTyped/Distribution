@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoverageCost extends js.Object {
+trait CoverageCost extends StObject {
   
   /**
     * How much an On-Demand Instance costs.
@@ -21,24 +22,12 @@ object CoverageCost {
   }
   
   @scala.inline
-  implicit class CoverageCostOps[Self <: CoverageCost] (val x: Self) extends AnyVal {
+  implicit class CoverageCostMutableBuilder[Self <: CoverageCost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnDemandCost(value: OnDemandCost): Self = StObject.set(x, "OnDemandCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnDemandCost(value: OnDemandCost): Self = this.set("OnDemandCost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnDemandCost: Self = this.set("OnDemandCost", js.undefined)
+    def setOnDemandCostUndefined: Self = StObject.set(x, "OnDemandCost", js.undefined)
   }
 }

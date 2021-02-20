@@ -3,6 +3,7 @@ package typings.titanium.Titanium
 import typings.std.ArrayBuffer
 import typings.titanium.Dimension
 import typings.titanium.Titanium.Filesystem.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

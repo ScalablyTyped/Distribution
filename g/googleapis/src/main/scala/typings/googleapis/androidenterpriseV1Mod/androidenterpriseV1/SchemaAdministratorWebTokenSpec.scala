@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to communiate with.
   */
 @js.native
-trait SchemaAdministratorWebTokenSpec extends js.Object {
+trait SchemaAdministratorWebTokenSpec extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -63,69 +64,57 @@ object SchemaAdministratorWebTokenSpec {
   }
   
   @scala.inline
-  implicit class SchemaAdministratorWebTokenSpecOps[Self <: SchemaAdministratorWebTokenSpec] (val x: Self) extends AnyVal {
+  implicit class SchemaAdministratorWebTokenSpecMutableBuilder[Self <: SchemaAdministratorWebTokenSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManagedConfigurations(value: SchemaAdministratorWebTokenSpecManagedConfigurations): Self = StObject.set(x, "managedConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setManagedConfigurationsUndefined: Self = StObject.set(x, "managedConfigurations", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedConfigurations(value: SchemaAdministratorWebTokenSpecManagedConfigurations): Self = this.set("managedConfigurations", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteManagedConfigurations: Self = this.set("managedConfigurations", js.undefined)
+    def setPermission(value: js.Array[String]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionVarargs(value: String*): Self = this.set("permission", js.Array(value :_*))
+    def setPlaySearch(value: SchemaAdministratorWebTokenSpecPlaySearch): Self = StObject.set(x, "playSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermission(value: js.Array[String]): Self = this.set("permission", value.asInstanceOf[js.Any])
+    def setPlaySearchUndefined: Self = StObject.set(x, "playSearch", js.undefined)
     
     @scala.inline
-    def deletePermission: Self = this.set("permission", js.undefined)
+    def setPrivateApps(value: SchemaAdministratorWebTokenSpecPrivateApps): Self = StObject.set(x, "privateApps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaySearch(value: SchemaAdministratorWebTokenSpecPlaySearch): Self = this.set("playSearch", value.asInstanceOf[js.Any])
+    def setPrivateAppsUndefined: Self = StObject.set(x, "privateApps", js.undefined)
     
     @scala.inline
-    def deletePlaySearch: Self = this.set("playSearch", js.undefined)
+    def setStoreBuilder(value: SchemaAdministratorWebTokenSpecStoreBuilder): Self = StObject.set(x, "storeBuilder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateApps(value: SchemaAdministratorWebTokenSpecPrivateApps): Self = this.set("privateApps", value.asInstanceOf[js.Any])
+    def setStoreBuilderUndefined: Self = StObject.set(x, "storeBuilder", js.undefined)
     
     @scala.inline
-    def deletePrivateApps: Self = this.set("privateApps", js.undefined)
+    def setWebApps(value: SchemaAdministratorWebTokenSpecWebApps): Self = StObject.set(x, "webApps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreBuilder(value: SchemaAdministratorWebTokenSpecStoreBuilder): Self = this.set("storeBuilder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreBuilder: Self = this.set("storeBuilder", js.undefined)
-    
-    @scala.inline
-    def setWebApps(value: SchemaAdministratorWebTokenSpecWebApps): Self = this.set("webApps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebApps: Self = this.set("webApps", js.undefined)
+    def setWebAppsUndefined: Self = StObject.set(x, "webApps", js.undefined)
   }
 }

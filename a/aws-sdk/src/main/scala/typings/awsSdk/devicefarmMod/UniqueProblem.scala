@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UniqueProblem extends js.Object {
+trait UniqueProblem extends StObject {
   
   /**
     * A message about the unique problems' result.
@@ -26,33 +27,21 @@ object UniqueProblem {
   }
   
   @scala.inline
-  implicit class UniqueProblemOps[Self <: UniqueProblem] (val x: Self) extends AnyVal {
+  implicit class UniqueProblemMutableBuilder[Self <: UniqueProblem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProblems(value: Problems): Self = StObject.set(x, "problems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setProblemsUndefined: Self = StObject.set(x, "problems", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
-    
-    @scala.inline
-    def setProblemsVarargs(value: Problem*): Self = this.set("problems", js.Array(value :_*))
-    
-    @scala.inline
-    def setProblems(value: Problems): Self = this.set("problems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProblems: Self = this.set("problems", js.undefined)
+    def setProblemsVarargs(value: Problem*): Self = StObject.set(x, "problems", js.Array(value :_*))
   }
 }

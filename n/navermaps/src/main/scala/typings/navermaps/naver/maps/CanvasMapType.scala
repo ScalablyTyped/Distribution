@@ -2,6 +2,7 @@ package typings.navermaps.naver.maps
 
 import typings.std.HTMLElement
 import typings.std.ImageData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,36 +45,24 @@ object CanvasMapType {
   }
   
   @scala.inline
-  implicit class CanvasMapTypeOps[Self <: CanvasMapType] (val x: Self) extends AnyVal {
+  implicit class CanvasMapTypeMutableBuilder[Self <: CanvasMapType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMapTypeOptions(value: () => CanvasMapTypeOptions): Self = StObject.set(x, "getMapTypeOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMapTypeOptions(value: () => CanvasMapTypeOptions): Self = this.set("getMapTypeOptions", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxZoom(value: () => Double): Self = this.set("getMaxZoom", js.Any.fromFunction0(value))
+    def setGetTileData(value: (Double, Double, Double) => ImageData): Self = StObject.set(x, "getTileData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetMinZoom(value: () => Double): Self = this.set("getMinZoom", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTileData(value: (Double, Double, Double) => ImageData): Self = this.set("getTileData", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetMapTypeOptions(value: CanvasMapTypeOptions => Unit): Self = this.set("setMapTypeOptions", js.Any.fromFunction1(value))
+    def setSetMapTypeOptions(value: CanvasMapTypeOptions => Unit): Self = StObject.set(x, "setMapTypeOptions", js.Any.fromFunction1(value))
   }
 }

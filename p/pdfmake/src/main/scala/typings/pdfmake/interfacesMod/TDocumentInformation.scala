@@ -1,12 +1,13 @@
 package typings.pdfmake.interfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TDocumentInformation extends js.Object {
+trait TDocumentInformation extends StObject {
   
   /** the name of the author */
   var author: js.UndefOr[String] = js.native
@@ -39,72 +40,60 @@ object TDocumentInformation {
   }
   
   @scala.inline
-  implicit class TDocumentInformationOps[Self <: TDocumentInformation] (val x: Self) extends AnyVal {
+  implicit class TDocumentInformationMutableBuilder[Self <: TDocumentInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Date): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: String): Self = this.set("creator", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def deleteCreator: Self = this.set("creator", js.undefined)
+    def setModDate(value: Date): Self = StObject.set(x, "modDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: String): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setModDateUndefined: Self = StObject.set(x, "modDate", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModDate(value: Date): Self = this.set("modDate", value.asInstanceOf[js.Any])
+    def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
     
     @scala.inline
-    def deleteModDate: Self = this.set("modDate", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducer(value: String): Self = this.set("producer", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteProducer: Self = this.set("producer", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setTrapped(value: String): Self = StObject.set(x, "trapped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTrapped(value: String): Self = this.set("trapped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrapped: Self = this.set("trapped", js.undefined)
+    def setTrappedUndefined: Self = StObject.set(x, "trapped", js.undefined)
   }
 }

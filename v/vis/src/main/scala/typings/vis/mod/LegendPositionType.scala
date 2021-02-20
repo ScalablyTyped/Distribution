@@ -1,5 +1,6 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vis.visStrings.`bottom-right`
   - typings.vis.visStrings.`bottom-left`
 */
-trait LegendPositionType extends js.Object
+trait LegendPositionType extends StObject
 object LegendPositionType {
   
   @scala.inline

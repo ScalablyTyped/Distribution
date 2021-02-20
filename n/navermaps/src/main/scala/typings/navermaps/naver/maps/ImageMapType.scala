@@ -1,6 +1,7 @@
 package typings.navermaps.naver.maps
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,36 +43,24 @@ object ImageMapType {
   }
   
   @scala.inline
-  implicit class ImageMapTypeOps[Self <: ImageMapType] (val x: Self) extends AnyVal {
+  implicit class ImageMapTypeMutableBuilder[Self <: ImageMapType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMapTypeOptions(value: () => ImageMapTypeOptions): Self = StObject.set(x, "getMapTypeOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMapTypeOptions(value: () => ImageMapTypeOptions): Self = this.set("getMapTypeOptions", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxZoom(value: () => Double): Self = this.set("getMaxZoom", js.Any.fromFunction0(value))
+    def setGetTileUrls(value: (Double, Double, Double) => js.Array[String]): Self = StObject.set(x, "getTileUrls", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetMinZoom(value: () => Double): Self = this.set("getMinZoom", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTileUrls(value: (Double, Double, Double) => js.Array[String]): Self = this.set("getTileUrls", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetMapTypeOptions(value: ImageMapTypeOptions => Unit): Self = this.set("setMapTypeOptions", js.Any.fromFunction1(value))
+    def setSetMapTypeOptions(value: ImageMapTypeOptions => Unit): Self = StObject.set(x, "setMapTypeOptions", js.Any.fromFunction1(value))
   }
 }

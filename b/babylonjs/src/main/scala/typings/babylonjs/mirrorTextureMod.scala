@@ -5,14 +5,14 @@ import typings.babylonjs.anon.Width
 import typings.babylonjs.mathPlaneMod.Plane
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/mirrorTexture", JSImport.Namespace)
-@js.native
-object mirrorTextureMod extends js.Object {
+object mirrorTextureMod {
   
+  @JSImport("babylonjs/Materials/Textures/mirrorTexture", "MirrorTexture")
   @js.native
   class MirrorTexture protected () extends RenderTargetTexture {
     /**

@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * value second).
   */
 @js.native
-trait Curve extends js.Object {
+trait Curve extends StObject {
   
   /**
     * Add a new key to the curve.
@@ -100,39 +101,27 @@ object Curve {
   }
   
   @scala.inline
-  implicit class CurveOps[Self <: Curve] (val x: Self) extends AnyVal {
+  implicit class CurveMutableBuilder[Self <: Curve] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: Double => js.Array[Double]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: (Double, Double) => js.Array[Double]): Self = this.set("add", js.Any.fromFunction2(value))
+    def setSort(value: () => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet(value: Double => js.Array[Double]): Self = this.set("get", js.Any.fromFunction1(value))
+    def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: () => Unit): Self = this.set("sort", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTension(value: Double): Self = this.set("tension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double => Double): Self = this.set("value", js.Any.fromFunction1(value))
+    def setValue(value: Double => Double): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

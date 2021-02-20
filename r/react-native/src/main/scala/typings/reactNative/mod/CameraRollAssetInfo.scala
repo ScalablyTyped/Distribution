@@ -1,12 +1,13 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.Endcursor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CameraRollAssetInfo extends js.Object {
+trait CameraRollAssetInfo extends StObject {
   
   var edges: js.Array[CameraRollEdgeInfo] = js.native
   
@@ -21,27 +22,15 @@ object CameraRollAssetInfo {
   }
   
   @scala.inline
-  implicit class CameraRollAssetInfoOps[Self <: CameraRollAssetInfo] (val x: Self) extends AnyVal {
+  implicit class CameraRollAssetInfoMutableBuilder[Self <: CameraRollAssetInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdges(value: js.Array[CameraRollEdgeInfo]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdgesVarargs(value: CameraRollEdgeInfo*): Self = StObject.set(x, "edges", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEdgesVarargs(value: CameraRollEdgeInfo*): Self = this.set("edges", js.Array(value :_*))
-    
-    @scala.inline
-    def setEdges(value: js.Array[CameraRollEdgeInfo]): Self = this.set("edges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPage_info(value: Endcursor): Self = this.set("page_info", value.asInstanceOf[js.Any])
+    def setPage_info(value: Endcursor): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShotSegment extends js.Object {
+trait ShotSegment extends StObject {
   
   /**
     * The confidence that Amazon Rekognition Video has in the accuracy of the detected segment.
@@ -26,30 +27,18 @@ object ShotSegment {
   }
   
   @scala.inline
-  implicit class ShotSegmentOps[Self <: ShotSegment] (val x: Self) extends AnyVal {
+  implicit class ShotSegmentMutableBuilder[Self <: ShotSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: SegmentConfidence): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex(value: ULong): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: SegmentConfidence): Self = this.set("Confidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
-    
-    @scala.inline
-    def setIndex(value: ULong): Self = this.set("Index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndex: Self = this.set("Index", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
   }
 }

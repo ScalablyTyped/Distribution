@@ -3,6 +3,7 @@ package typings.officeJs.Visio
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.Visio.Interfaces.SelectionData
 import typings.officeJs.anon.Expand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

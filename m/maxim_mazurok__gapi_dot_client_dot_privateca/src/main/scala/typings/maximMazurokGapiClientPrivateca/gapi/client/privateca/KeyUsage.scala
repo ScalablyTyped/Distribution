@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyUsage extends js.Object {
+trait KeyUsage extends StObject {
   
   /** Describes high-level ways in which a key may be used. */
   var baseKeyUsage: js.UndefOr[KeyUsageOptions] = js.native
@@ -25,39 +26,27 @@ object KeyUsage {
   }
   
   @scala.inline
-  implicit class KeyUsageOps[Self <: KeyUsage] (val x: Self) extends AnyVal {
+  implicit class KeyUsageMutableBuilder[Self <: KeyUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseKeyUsage(value: KeyUsageOptions): Self = StObject.set(x, "baseKeyUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseKeyUsageUndefined: Self = StObject.set(x, "baseKeyUsage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtendedKeyUsage(value: ExtendedKeyUsageOptions): Self = StObject.set(x, "extendedKeyUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseKeyUsage(value: KeyUsageOptions): Self = this.set("baseKeyUsage", value.asInstanceOf[js.Any])
+    def setExtendedKeyUsageUndefined: Self = StObject.set(x, "extendedKeyUsage", js.undefined)
     
     @scala.inline
-    def deleteBaseKeyUsage: Self = this.set("baseKeyUsage", js.undefined)
+    def setUnknownExtendedKeyUsages(value: js.Array[ObjectId]): Self = StObject.set(x, "unknownExtendedKeyUsages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedKeyUsage(value: ExtendedKeyUsageOptions): Self = this.set("extendedKeyUsage", value.asInstanceOf[js.Any])
+    def setUnknownExtendedKeyUsagesUndefined: Self = StObject.set(x, "unknownExtendedKeyUsages", js.undefined)
     
     @scala.inline
-    def deleteExtendedKeyUsage: Self = this.set("extendedKeyUsage", js.undefined)
-    
-    @scala.inline
-    def setUnknownExtendedKeyUsagesVarargs(value: ObjectId*): Self = this.set("unknownExtendedKeyUsages", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnknownExtendedKeyUsages(value: js.Array[ObjectId]): Self = this.set("unknownExtendedKeyUsages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknownExtendedKeyUsages: Self = this.set("unknownExtendedKeyUsages", js.undefined)
+    def setUnknownExtendedKeyUsagesVarargs(value: ObjectId*): Self = StObject.set(x, "unknownExtendedKeyUsages", js.Array(value :_*))
   }
 }

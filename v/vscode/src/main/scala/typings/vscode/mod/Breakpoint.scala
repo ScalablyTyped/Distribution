@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Breakpoint")
 @js.native
-class Breakpoint protected () extends js.Object {
+class Breakpoint protected () extends StObject {
   protected def this(enabled: Boolean) = this()
   protected def this(enabled: js.UndefOr[scala.Nothing], condition: String) = this()
   protected def this(enabled: Boolean, condition: String) = this()

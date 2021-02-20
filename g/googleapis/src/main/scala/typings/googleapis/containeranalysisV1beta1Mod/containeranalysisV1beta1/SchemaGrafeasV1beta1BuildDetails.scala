@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details of a build occurrence.
   */
 @js.native
-trait SchemaGrafeasV1beta1BuildDetails extends js.Object {
+trait SchemaGrafeasV1beta1BuildDetails extends StObject {
   
   /**
     * Required. The actual provenance for the build.
@@ -37,30 +38,18 @@ object SchemaGrafeasV1beta1BuildDetails {
   }
   
   @scala.inline
-  implicit class SchemaGrafeasV1beta1BuildDetailsOps[Self <: SchemaGrafeasV1beta1BuildDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaGrafeasV1beta1BuildDetailsMutableBuilder[Self <: SchemaGrafeasV1beta1BuildDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvenance(value: SchemaBuildProvenance): Self = StObject.set(x, "provenance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvenanceBytes(value: String): Self = StObject.set(x, "provenanceBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvenanceBytesUndefined: Self = StObject.set(x, "provenanceBytes", js.undefined)
     
     @scala.inline
-    def setProvenance(value: SchemaBuildProvenance): Self = this.set("provenance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvenance: Self = this.set("provenance", js.undefined)
-    
-    @scala.inline
-    def setProvenanceBytes(value: String): Self = this.set("provenanceBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvenanceBytes: Self = this.set("provenanceBytes", js.undefined)
+    def setProvenanceUndefined: Self = StObject.set(x, "provenance", js.undefined)
   }
 }

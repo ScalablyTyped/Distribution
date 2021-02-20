@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PipelineExecutionSummary extends js.Object {
+trait PipelineExecutionSummary extends StObject {
   
   /**
     * The date and time of the last change to the pipeline execution, in timestamp format.
@@ -51,63 +52,51 @@ object PipelineExecutionSummary {
   }
   
   @scala.inline
-  implicit class PipelineExecutionSummaryOps[Self <: PipelineExecutionSummary] (val x: Self) extends AnyVal {
+  implicit class PipelineExecutionSummaryMutableBuilder[Self <: PipelineExecutionSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    def setSourceRevisions(value: SourceRevisionList): Self = StObject.set(x, "sourceRevisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = this.set("pipelineExecutionId", value.asInstanceOf[js.Any])
+    def setSourceRevisionsUndefined: Self = StObject.set(x, "sourceRevisions", js.undefined)
     
     @scala.inline
-    def deletePipelineExecutionId: Self = this.set("pipelineExecutionId", js.undefined)
+    def setSourceRevisionsVarargs(value: SourceRevision*): Self = StObject.set(x, "sourceRevisions", js.Array(value :_*))
     
     @scala.inline
-    def setSourceRevisionsVarargs(value: SourceRevision*): Self = this.set("sourceRevisions", js.Array(value :_*))
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceRevisions(value: SourceRevisionList): Self = this.set("sourceRevisions", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSourceRevisions: Self = this.set("sourceRevisions", js.undefined)
+    def setStatus(value: PipelineExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStopTrigger(value: StopExecutionTrigger): Self = StObject.set(x, "stopTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: PipelineExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStopTriggerUndefined: Self = StObject.set(x, "stopTrigger", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTrigger(value: ExecutionTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopTrigger(value: StopExecutionTrigger): Self = this.set("stopTrigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopTrigger: Self = this.set("stopTrigger", js.undefined)
-    
-    @scala.inline
-    def setTrigger(value: ExecutionTrigger): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

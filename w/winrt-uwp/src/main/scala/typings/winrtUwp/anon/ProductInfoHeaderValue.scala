@@ -1,12 +1,13 @@
 package typings.winrtUwp.anon
 
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpProductInfoHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductInfoHeaderValue extends js.Object {
+trait ProductInfoHeaderValue extends StObject {
   
   /** The HttpProductInfoHeaderValue version of the string. */ var productInfoHeaderValue: HttpProductInfoHeaderValue = js.native
   
@@ -21,24 +22,12 @@ object ProductInfoHeaderValue {
   }
   
   @scala.inline
-  implicit class ProductInfoHeaderValueOps[Self <: ProductInfoHeaderValue] (val x: Self) extends AnyVal {
+  implicit class ProductInfoHeaderValueMutableBuilder[Self <: ProductInfoHeaderValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductInfoHeaderValue(value: HttpProductInfoHeaderValue): Self = StObject.set(x, "productInfoHeaderValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProductInfoHeaderValue(value: HttpProductInfoHeaderValue): Self = this.set("productInfoHeaderValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = this.set("returnValue", value.asInstanceOf[js.Any])
+    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

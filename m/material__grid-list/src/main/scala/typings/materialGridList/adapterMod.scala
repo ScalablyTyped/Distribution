@@ -4,16 +4,15 @@ import typings.materialGridList.materialGridListStrings.length
 import typings.materialGridList.materialGridListStrings.parentRule
 import typings.std.EventListener
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/grid-list/adapter", JSImport.Namespace)
-@js.native
-object adapterMod extends js.Object {
+object adapterMod {
   
   @js.native
-  trait MDCGridListAdapter extends js.Object {
+  trait MDCGridListAdapter extends StObject {
     
     def deregisterResizeHandler(handler: EventListener): Unit = js.native
     

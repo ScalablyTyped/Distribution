@@ -1,19 +1,21 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.commonTypesMod.IgAppModule
 import typings.instagramPrivateApi.feedMod.Feed
 import typings.instagramPrivateApi.topicalExploreFeedResponseMod.TopicalExploreFeedResponseRootObject
 import typings.instagramPrivateApi.topicalExploreFeedResponseMod.TopicalExploreFeedResponseSectionalItemsItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/feeds/topical-explore.feed", JSImport.Namespace)
-@js.native
-object topicalExploreFeedMod extends js.Object {
+object topicalExploreFeedMod {
   
+  @JSImport("instagram-private-api/dist/feeds/topical-explore.feed", "TopicalExploreFeed")
   @js.native
-  class TopicalExploreFeed () extends Feed[TopicalExploreFeedResponseRootObject, TopicalExploreFeedResponseSectionalItemsItem] {
+  class TopicalExploreFeed protected () extends Feed[TopicalExploreFeedResponseRootObject, TopicalExploreFeedResponseSectionalItemsItem] {
+    def this(client: IgApiClient) = this()
     
     var clusterId: String = js.native
     

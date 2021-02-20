@@ -1,11 +1,12 @@
 package typings.autobahn.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEvent extends js.Object {
+trait IEvent extends StObject {
   
   var publication: Double = js.native
   
@@ -22,30 +23,18 @@ object IEvent {
   }
   
   @scala.inline
-  implicit class IEventOps[Self <: IEvent] (val x: Self) extends AnyVal {
+  implicit class IEventMutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPublication(value: Double): Self = StObject.set(x, "publication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublisher(value: Double): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     @scala.inline
-    def setPublication(value: Double): Self = this.set("publication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisher(value: Double): Self = this.set("publisher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublisher: Self = this.set("publisher", js.undefined)
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

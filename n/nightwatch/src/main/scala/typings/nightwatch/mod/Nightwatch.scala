@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Nightwatch extends js.Object {
+trait Nightwatch extends StObject {
   
   var api: NightwatchAPI = js.native
   
@@ -32,33 +33,21 @@ object Nightwatch {
   }
   
   @scala.inline
-  implicit class NightwatchOps[Self <: Nightwatch] (val x: Self) extends AnyVal {
+  implicit class NightwatchMutableBuilder[Self <: Nightwatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi(value: NightwatchAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssert(value: NightwatchAssertions): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClient(value: NightwatchClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi(value: NightwatchAPI): Self = this.set("api", value.asInstanceOf[js.Any])
+    def setExpect(value: Expect): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssert(value: NightwatchAssertions): Self = this.set("assert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClient(value: NightwatchClient): Self = this.set("client", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpect(value: Expect): Self = this.set("expect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerify(value: NightwatchAssertions): Self = this.set("verify", value.asInstanceOf[js.Any])
+    def setVerify(value: NightwatchAssertions): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
   }
 }

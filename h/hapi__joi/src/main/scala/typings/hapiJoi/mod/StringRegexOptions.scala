@@ -1,11 +1,12 @@
 package typings.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StringRegexOptions extends js.Object {
+trait StringRegexOptions extends StObject {
   
   /**
     * when true, the provided pattern will be disallowed instead of required.
@@ -28,30 +29,18 @@ object StringRegexOptions {
   }
   
   @scala.inline
-  implicit class StringRegexOptionsOps[Self <: StringRegexOptions] (val x: Self) extends AnyVal {
+  implicit class StringRegexOptionsMutableBuilder[Self <: StringRegexOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvert(value: Boolean): Self = this.set("invert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvert: Self = this.set("invert", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Piezo")
 @js.native
-class Piezo protected () extends js.Object {
+class Piezo protected () extends StObject {
   def this(option: Double) = this()
   def this(option: PiezoOption) = this()
   

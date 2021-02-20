@@ -9,12 +9,13 @@ import typings.aframe.aframeStrings.indefinite
 import typings.aframe.aframeStrings.none
 import typings.aframe.aframeStrings.normal
 import typings.aframe.aframeStrings.reverse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animation extends js.Object {
+trait Animation extends StObject {
   
   var attribute: String = js.native
   
@@ -34,7 +35,7 @@ trait Animation extends js.Object {
   
   var from: js.Any = js.native
   
-   // TODO type
+  // TODO type
   var repeat: Double | indefinite = js.native
   
   var to: Double = js.native
@@ -60,51 +61,39 @@ object Animation {
   }
   
   @scala.inline
-  implicit class AnimationOps[Self <: Animation] (val x: Self) extends AnyVal {
+  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBegin(value: String | Double): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribute(value: String): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    def setDirection(value: alternate | alternateReverse | normal | reverse): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBegin(value: String | Double): Self = this.set("begin", value.asInstanceOf[js.Any])
+    def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setEasing(value: () => Unit): Self = StObject.set(x, "easing", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDirection(value: alternate | alternateReverse | normal | reverse): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDur(value: Double): Self = this.set("dur", value.asInstanceOf[js.Any])
+    def setFill(value: backwards | both | forwards | none): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: () => Unit): Self = this.set("easing", js.Any.fromFunction0(value))
+    def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setRepeat(value: Double | indefinite): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: backwards | both | forwards | none): Self = this.set("fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrom(value: js.Any): Self = this.set("from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeat(value: Double | indefinite): Self = this.set("repeat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

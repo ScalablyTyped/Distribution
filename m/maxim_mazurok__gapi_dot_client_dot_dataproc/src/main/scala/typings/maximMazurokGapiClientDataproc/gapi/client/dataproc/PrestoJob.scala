@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrestoJob extends js.Object {
+trait PrestoJob extends StObject {
   
   /** Optional. Presto client tags to attach to this query */
   var clientTags: js.UndefOr[js.Array[String]] = js.native
@@ -45,67 +46,55 @@ object PrestoJob {
   }
   
   @scala.inline
-  implicit class PrestoJobOps[Self <: PrestoJob] (val x: Self) extends AnyVal {
+  implicit class PrestoJobMutableBuilder[Self <: PrestoJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientTags(value: js.Array[String]): Self = StObject.set(x, "clientTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTagsUndefined: Self = StObject.set(x, "clientTags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientTagsVarargs(value: String*): Self = StObject.set(x, "clientTags", js.Array(value :_*))
     
     @scala.inline
-    def setClientTagsVarargs(value: String*): Self = this.set("clientTags", js.Array(value :_*))
+    def setContinueOnFailure(value: Boolean): Self = StObject.set(x, "continueOnFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientTags(value: js.Array[String]): Self = this.set("clientTags", value.asInstanceOf[js.Any])
+    def setContinueOnFailureUndefined: Self = StObject.set(x, "continueOnFailure", js.undefined)
     
     @scala.inline
-    def deleteClientTags: Self = this.set("clientTags", js.undefined)
+    def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueOnFailure(value: Boolean): Self = this.set("continueOnFailure", value.asInstanceOf[js.Any])
+    def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
     
     @scala.inline
-    def deleteContinueOnFailure: Self = this.set("continueOnFailure", js.undefined)
+    def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingConfig(value: LoggingConfig): Self = this.set("loggingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggingConfig: Self = this.set("loggingConfig", js.undefined)
-    
-    @scala.inline
-    def setOutputFormat(value: String): Self = this.set("outputFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputFormat: Self = this.set("outputFormat", js.undefined)
+    def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
     
     @scala.inline
     def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PrestoJob with TopLevel[js.Any]
-    ): Self = this.set("properties", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def setQueryFileUri(value: String): Self = this.set("queryFileUri", value.asInstanceOf[js.Any])
+    def setQueryFileUri(value: String): Self = StObject.set(x, "queryFileUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueryFileUri: Self = this.set("queryFileUri", js.undefined)
+    def setQueryFileUriUndefined: Self = StObject.set(x, "queryFileUri", js.undefined)
     
     @scala.inline
-    def setQueryList(value: QueryList): Self = this.set("queryList", value.asInstanceOf[js.Any])
+    def setQueryList(value: QueryList): Self = StObject.set(x, "queryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueryList: Self = this.set("queryList", js.undefined)
+    def setQueryListUndefined: Self = StObject.set(x, "queryList", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,7 @@ class SubSurfaceBlock protected ()
   def this(name: String) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.SubSurfaceBlock")
-@js.native
-object SubSurfaceBlock extends js.Object {
+object SubSurfaceBlock {
   
   /**
     * Gets the main code of the block (fragment side)
@@ -28,6 +27,8 @@ object SubSurfaceBlock extends js.Object {
     * @param worldPosVarName name of the variable holding the world position
     * @returns the shader code
     */
+  @JSGlobal("BABYLON.SubSurfaceBlock.GetCode")
+  @js.native
   def GetCode(
     state: typings.babylonjs.BABYLON.NodeMaterialBuildState,
     ssBlock: Nullable[typings.babylonjs.BABYLON.SubSurfaceBlock],

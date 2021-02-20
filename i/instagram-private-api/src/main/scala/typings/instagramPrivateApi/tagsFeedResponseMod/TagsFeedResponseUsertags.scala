@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.tagsFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagsFeedResponseUsertags extends js.Object {
+trait TagsFeedResponseUsertags extends StObject {
   
   var in: js.Array[TagsFeedResponseInItem] = js.native
 }
@@ -18,24 +19,12 @@ object TagsFeedResponseUsertags {
   }
   
   @scala.inline
-  implicit class TagsFeedResponseUsertagsOps[Self <: TagsFeedResponseUsertags] (val x: Self) extends AnyVal {
+  implicit class TagsFeedResponseUsertagsMutableBuilder[Self <: TagsFeedResponseUsertags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIn(value: js.Array[TagsFeedResponseInItem]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInVarargs(value: TagsFeedResponseInItem*): Self = this.set("in", js.Array(value :_*))
-    
-    @scala.inline
-    def setIn(value: js.Array[TagsFeedResponseInItem]): Self = this.set("in", value.asInstanceOf[js.Any])
+    def setInVarargs(value: TagsFeedResponseInItem*): Self = StObject.set(x, "in", js.Array(value :_*))
   }
 }

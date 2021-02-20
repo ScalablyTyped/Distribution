@@ -1,11 +1,12 @@
 package typings.rx.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pauser extends js.Object {
+trait Pauser extends StObject {
   
   /**
     * Pauses the underlying sequence.
@@ -26,24 +27,12 @@ object Pauser {
   }
   
   @scala.inline
-  implicit class PauserOps[Self <: Pauser] (val x: Self) extends AnyVal {
+  implicit class PauserMutableBuilder[Self <: Pauser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResume(value: () => Unit): Self = this.set("resume", js.Any.fromFunction0(value))
+    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
   }
 }

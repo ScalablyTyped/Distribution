@@ -1,6 +1,7 @@
 package typings.electron.Electron
 
 import typings.electron.electronStrings.mouseWheel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,69 +42,57 @@ object MouseWheelInputEvent {
   }
   
   @scala.inline
-  implicit class MouseWheelInputEventOps[Self <: MouseWheelInputEvent] (val x: Self) extends AnyVal {
+  implicit class MouseWheelInputEventMutableBuilder[Self <: MouseWheelInputEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerationRatioX(value: Double): Self = StObject.set(x, "accelerationRatioX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccelerationRatioXUndefined: Self = StObject.set(x, "accelerationRatioX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccelerationRatioY(value: Double): Self = StObject.set(x, "accelerationRatioY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: mouseWheel): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setAccelerationRatioYUndefined: Self = StObject.set(x, "accelerationRatioY", js.undefined)
     
     @scala.inline
-    def setAccelerationRatioX(value: Double): Self = this.set("accelerationRatioX", value.asInstanceOf[js.Any])
+    def setCanScroll(value: Boolean): Self = StObject.set(x, "canScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccelerationRatioX: Self = this.set("accelerationRatioX", js.undefined)
+    def setCanScrollUndefined: Self = StObject.set(x, "canScroll", js.undefined)
     
     @scala.inline
-    def setAccelerationRatioY(value: Double): Self = this.set("accelerationRatioY", value.asInstanceOf[js.Any])
+    def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccelerationRatioY: Self = this.set("accelerationRatioY", js.undefined)
+    def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
     
     @scala.inline
-    def setCanScroll(value: Boolean): Self = this.set("canScroll", value.asInstanceOf[js.Any])
+    def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanScroll: Self = this.set("canScroll", js.undefined)
+    def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
     
     @scala.inline
-    def setDeltaX(value: Double): Self = this.set("deltaX", value.asInstanceOf[js.Any])
+    def setHasPreciseScrollingDeltas(value: Boolean): Self = StObject.set(x, "hasPreciseScrollingDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeltaX: Self = this.set("deltaX", js.undefined)
+    def setHasPreciseScrollingDeltasUndefined: Self = StObject.set(x, "hasPreciseScrollingDeltas", js.undefined)
     
     @scala.inline
-    def setDeltaY(value: Double): Self = this.set("deltaY", value.asInstanceOf[js.Any])
+    def setType(value: mouseWheel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeltaY: Self = this.set("deltaY", js.undefined)
+    def setWheelTicksX(value: Double): Self = StObject.set(x, "wheelTicksX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPreciseScrollingDeltas(value: Boolean): Self = this.set("hasPreciseScrollingDeltas", value.asInstanceOf[js.Any])
+    def setWheelTicksXUndefined: Self = StObject.set(x, "wheelTicksX", js.undefined)
     
     @scala.inline
-    def deleteHasPreciseScrollingDeltas: Self = this.set("hasPreciseScrollingDeltas", js.undefined)
+    def setWheelTicksY(value: Double): Self = StObject.set(x, "wheelTicksY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWheelTicksX(value: Double): Self = this.set("wheelTicksX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWheelTicksX: Self = this.set("wheelTicksX", js.undefined)
-    
-    @scala.inline
-    def setWheelTicksY(value: Double): Self = this.set("wheelTicksY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWheelTicksY: Self = this.set("wheelTicksY", js.undefined)
+    def setWheelTicksYUndefined: Self = StObject.set(x, "wheelTicksY", js.undefined)
   }
 }

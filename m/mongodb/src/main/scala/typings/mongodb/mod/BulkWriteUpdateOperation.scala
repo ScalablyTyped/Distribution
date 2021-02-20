@@ -1,11 +1,12 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkWriteUpdateOperation[TSchema] extends js.Object {
+trait BulkWriteUpdateOperation[TSchema] extends StObject {
   
   var arrayFilters: js.UndefOr[js.Array[js.Object]] = js.native
   
@@ -28,51 +29,39 @@ object BulkWriteUpdateOperation {
   }
   
   @scala.inline
-  implicit class BulkWriteUpdateOperationOps[Self <: BulkWriteUpdateOperation[_], TSchema] (val x: Self with BulkWriteUpdateOperation[TSchema]) extends AnyVal {
+  implicit class BulkWriteUpdateOperationMutableBuilder[Self <: BulkWriteUpdateOperation[_], TSchema] (val x: Self with BulkWriteUpdateOperation[TSchema]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayFilters(value: js.Array[js.Object]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayFiltersVarargs(value: js.Object*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
     
     @scala.inline
-    def setFilter(value: FilterQuery[TSchema]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setCollation(value: js.Object): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: UpdateQuery[TSchema]): Self = this.set("update", value.asInstanceOf[js.Any])
+    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
     @scala.inline
-    def setArrayFiltersVarargs(value: js.Object*): Self = this.set("arrayFilters", js.Array(value :_*))
+    def setFilter(value: FilterQuery[TSchema]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayFilters(value: js.Array[js.Object]): Self = this.set("arrayFilters", value.asInstanceOf[js.Any])
+    def setHint(value: String | js.Object): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArrayFilters: Self = this.set("arrayFilters", js.undefined)
+    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
     @scala.inline
-    def setCollation(value: js.Object): Self = this.set("collation", value.asInstanceOf[js.Any])
+    def setUpdate(value: UpdateQuery[TSchema]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollation: Self = this.set("collation", js.undefined)
+    def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHint(value: String | js.Object): Self = this.set("hint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHint: Self = this.set("hint", js.undefined)
-    
-    @scala.inline
-    def setUpsert(value: Boolean): Self = this.set("upsert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpsert: Self = this.set("upsert", js.undefined)
+    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

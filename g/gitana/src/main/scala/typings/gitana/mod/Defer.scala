@@ -1,12 +1,13 @@
 package typings.gitana.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitana", "Defer")
 @js.native
-class Defer () extends js.Object {
+class Defer () extends StObject {
   
   def isRejected(): js.Any = js.native
   
@@ -16,10 +17,10 @@ class Defer () extends js.Object {
   
   def push(happy: js.Any, sad: js.Any): Unit = js.native
 }
-/* static members */
-@JSImport("gitana", "Defer")
-@js.native
-object Defer extends js.Object {
+object Defer {
   
+  /* static member */
+  @JSImport("gitana", "Defer.all")
+  @js.native
   def all(args: js.Any, obj: js.Any*): js.Any = js.native
 }

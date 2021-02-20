@@ -1,11 +1,12 @@
 package typings.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerSize extends js.Object {
+trait ContainerSize extends StObject {
   
   var containerHeight: Double = js.native
   
@@ -20,24 +21,12 @@ object ContainerSize {
   }
   
   @scala.inline
-  implicit class ContainerSizeOps[Self <: ContainerSize] (val x: Self) extends AnyVal {
+  implicit class ContainerSizeMutableBuilder[Self <: ContainerSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContainerHeight(value: Double): Self = this.set("containerHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContainerWidth(value: Double): Self = this.set("containerWidth", value.asInstanceOf[js.Any])
+    def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
   }
 }

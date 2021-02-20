@@ -1,6 +1,7 @@
 package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // the appropriate methods enabled, but because stdio is configured within
 // options it feels like overkill
 @js.native
-trait Process extends js.Object {
+trait Process extends StObject {
   
   val args: js.UndefOr[js.Array[String]] = js.native
   

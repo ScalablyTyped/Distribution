@@ -1,23 +1,21 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.anon.Data
+import typings.matrixAppserviceBridge.requestMod.RequestOpts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matrix-appservice-bridge", "Request")
 @js.native
-class Request protected () extends js.Object {
-  def this(opts: Data) = this()
-  var data: Event = js.native
-  var id: String = js.native
-  var startTs: Double = js.native
-  def getData(): Event = js.native
-  def getDuration(): Double = js.native
-  def getId(): String = js.native
-  def getPromise(): js.Promise[Unit] = js.native
-  def outcomeFrom(future: js.Promise[_]): Unit = js.native
-  def reject(msg: js.Any): Unit = js.native
-  def resolve(msg: js.Any): Unit = js.native
+class Request[T] protected ()
+  extends typings.matrixAppserviceBridge.requestMod.Request[T] {
+  /**
+    * Construct a new Request.
+    * @param opts Options for this request.
+    * @param opts.id Optional ID to set on this request. One will be
+    * generated if this is not provided.
+    * @param opts.data Optional data to associate with this request.
+    */
+  def this(opts: RequestOpts[T]) = this()
 }
-

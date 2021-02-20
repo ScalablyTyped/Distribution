@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsBrowser.typesScheduleKeyDeletionInputMod.ScheduleK
 import typings.awsSdkClientKmsBrowser.typesScheduleKeyDeletionOutputMod.ScheduleKeyDeletionOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-browser/commands/ScheduleKeyDeletionCommand", JSImport.Namespace)
-@js.native
-object scheduleKeyDeletionCommandMod extends js.Object {
+object scheduleKeyDeletionCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-browser/commands/ScheduleKeyDeletionCommand", "ScheduleKeyDeletionCommand")
   @js.native
   class ScheduleKeyDeletionCommand protected () extends Command[
           InputTypesUnion, 

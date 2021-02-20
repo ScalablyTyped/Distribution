@@ -3,16 +3,16 @@ package typings.aureliaKnockout
 import typings.aureliaDependencyInjection.mod.Container
 import typings.aureliaLoader.mod.Loader
 import typings.aureliaTemplating.mod.CompositionEngine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aurelia-knockout/dist/commonjs/knockout-composition", JSImport.Namespace)
-@js.native
-object knockoutCompositionMod extends js.Object {
+object knockoutCompositionMod {
   
+  @JSImport("aurelia-knockout/dist/commonjs/knockout-composition", "KnockoutComposition")
   @js.native
-  class KnockoutComposition protected () extends js.Object {
+  class KnockoutComposition protected () extends StObject {
     def this(compositionEngine: CompositionEngine, container: Container, loader: Loader) = this()
     
     /** internal: do not use */

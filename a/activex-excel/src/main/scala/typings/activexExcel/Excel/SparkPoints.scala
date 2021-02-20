@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SparkPoints extends js.Object {
+trait SparkPoints extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -49,48 +50,36 @@ object SparkPoints {
   }
   
   @scala.inline
-  implicit class SparkPointsOps[Self <: SparkPoints] (val x: Self) extends AnyVal {
+  implicit class SparkPointsMutableBuilder[Self <: SparkPoints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcelDotSparkPoints_typekey(value: SparkPoints): Self = StObject.set(x, "Excel.SparkPoints_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFirstpoint(value: SparkColor): Self = StObject.set(x, "Firstpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setHighpoint(value: SparkColor): Self = StObject.set(x, "Highpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotSparkPoints_typekey(value: SparkPoints): Self = this.set("Excel.SparkPoints_typekey", value.asInstanceOf[js.Any])
+    def setLastpoint(value: SparkColor): Self = StObject.set(x, "Lastpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstpoint(value: SparkColor): Self = this.set("Firstpoint", value.asInstanceOf[js.Any])
+    def setLowpoint(value: SparkColor): Self = StObject.set(x, "Lowpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighpoint(value: SparkColor): Self = this.set("Highpoint", value.asInstanceOf[js.Any])
+    def setMarkers(value: SparkColor): Self = StObject.set(x, "Markers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastpoint(value: SparkColor): Self = this.set("Lastpoint", value.asInstanceOf[js.Any])
+    def setNegative(value: SparkColor): Self = StObject.set(x, "Negative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowpoint(value: SparkColor): Self = this.set("Lowpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMarkers(value: SparkColor): Self = this.set("Markers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNegative(value: SparkColor): Self = this.set("Negative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

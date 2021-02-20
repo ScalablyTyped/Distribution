@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/hardware/mouse", JSImport.Namespace)
-@js.native
-object mouseMod extends js.Object {
+object mouseMod {
   
+  @JSImport("material-ui/svg-icons/hardware/mouse", JSImport.Default)
+  @js.native
+  class default () extends HardwareMouse
+  
+  @JSImport("material-ui/svg-icons/hardware/mouse", "HardwareMouse")
   @js.native
   class HardwareMouse ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

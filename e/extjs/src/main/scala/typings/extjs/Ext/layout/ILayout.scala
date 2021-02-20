@@ -2,6 +2,7 @@ package typings.extjs.Ext.layout
 
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,128 +113,116 @@ object ILayout {
   }
   
   @scala.inline
-  implicit class ILayoutOps[Self <: ILayout] (val x: Self) extends AnyVal {
+  implicit class ILayoutMutableBuilder[Self <: ILayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterRemove(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterRemove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterRemoveUndefined: Self = StObject.set(x, "afterRemove", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginLayout(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterRemove(value: /* item */ js.UndefOr[js.Any] => Unit): Self = this.set("afterRemove", js.Any.fromFunction1(value))
+    def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAfterRemove: Self = this.set("afterRemove", js.undefined)
+    def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
     @scala.inline
-    def setBeginLayout(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = this.set("beginLayout", js.Any.fromFunction1(value))
+    def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
     
     @scala.inline
-    def deleteBeginLayout: Self = this.set("beginLayout", js.undefined)
+    def setCalculate(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = this.set("beginLayoutCycle", js.Any.fromFunction1(value))
+    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
     @scala.inline
-    def deleteBeginLayoutCycle: Self = this.set("beginLayoutCycle", js.undefined)
+    def setCompleteLayout(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = StObject.set(x, "completeLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = this.set("calculate", js.Any.fromFunction1(value))
+    def setCompleteLayoutUndefined: Self = StObject.set(x, "completeLayout", js.undefined)
     
     @scala.inline
-    def deleteCalculate: Self = this.set("calculate", js.undefined)
+    def setConfigureItem(value: /* item */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "configureItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompleteLayout(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = this.set("completeLayout", js.Any.fromFunction1(value))
+    def setConfigureItemUndefined: Self = StObject.set(x, "configureItem", js.undefined)
     
     @scala.inline
-    def deleteCompleteLayout: Self = this.set("completeLayout", js.undefined)
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfigureItem(value: /* item */ js.UndefOr[IComponent] => Unit): Self = this.set("configureItem", js.Any.fromFunction1(value))
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteConfigureItem: Self = this.set("configureItem", js.undefined)
+    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setFinalizeLayout(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = StObject.set(x, "finalizeLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDone(value: Boolean): Self = this.set("done", value.asInstanceOf[js.Any])
+    def setFinalizeLayoutUndefined: Self = StObject.set(x, "finalizeLayout", js.undefined)
     
     @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
+    def setFinishedLayout(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFinalizeLayout(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = this.set("finalizeLayout", js.Any.fromFunction1(value))
+    def setFinishedLayoutUndefined: Self = StObject.set(x, "finishedLayout", js.undefined)
     
     @scala.inline
-    def deleteFinalizeLayout: Self = this.set("finalizeLayout", js.undefined)
+    def setGetItemSizePolicy(value: /* item */ js.UndefOr[IComponent] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFinishedLayout(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = this.set("finishedLayout", js.Any.fromFunction1(value))
+    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
     @scala.inline
-    def deleteFinishedLayout: Self = this.set("finishedLayout", js.undefined)
+    def setGetLayoutItems(value: () => Unit): Self = StObject.set(x, "getLayoutItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemSizePolicy(value: /* item */ js.UndefOr[IComponent] => ISizePolicy): Self = this.set("getItemSizePolicy", js.Any.fromFunction1(value))
+    def setGetLayoutItemsUndefined: Self = StObject.set(x, "getLayoutItems", js.undefined)
     
     @scala.inline
-    def deleteGetItemSizePolicy: Self = this.set("getItemSizePolicy", js.undefined)
+    def setInitLayout(value: () => Unit): Self = StObject.set(x, "initLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLayoutItems(value: () => Unit): Self = this.set("getLayoutItems", js.Any.fromFunction0(value))
+    def setInitLayoutUndefined: Self = StObject.set(x, "initLayout", js.undefined)
     
     @scala.inline
-    def deleteGetLayoutItems: Self = this.set("getLayoutItems", js.undefined)
+    def setIsLayout(value: Boolean): Self = StObject.set(x, "isLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitLayout(value: () => Unit): Self = this.set("initLayout", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteInitLayout: Self = this.set("initLayout", js.undefined)
-    
-    @scala.inline
-    def setIsLayout(value: Boolean): Self = this.set("isLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsLayout: Self = this.set("isLayout", js.undefined)
+    def setIsLayoutUndefined: Self = StObject.set(x, "isLayout", js.undefined)
     
     @scala.inline
     def setIsValidParent(
       value: (/* item */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("isValidParent", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "isValidParent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteIsValidParent: Self = this.set("isValidParent", js.undefined)
+    def setIsValidParentUndefined: Self = StObject.set(x, "isValidParent", js.undefined)
     
     @scala.inline
-    def setNotifyOwner(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = this.set("notifyOwner", js.Any.fromFunction1(value))
+    def setNotifyOwner(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = StObject.set(x, "notifyOwner", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteNotifyOwner: Self = this.set("notifyOwner", js.undefined)
+    def setNotifyOwnerUndefined: Self = StObject.set(x, "notifyOwner", js.undefined)
     
     @scala.inline
-    def setOnContentChange(value: /* child */ js.UndefOr[IComponent] => Boolean): Self = this.set("onContentChange", js.Any.fromFunction1(value))
+    def setOnContentChange(value: /* child */ js.UndefOr[IComponent] => Boolean): Self = StObject.set(x, "onContentChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnContentChange: Self = this.set("onContentChange", js.undefined)
+    def setOnContentChangeUndefined: Self = StObject.set(x, "onContentChange", js.undefined)
     
     @scala.inline
-    def setRenderItems(value: (/* items */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => Unit): Self = this.set("renderItems", js.Any.fromFunction2(value))
+    def setRenderItems(value: (/* items */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "renderItems", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRenderItems: Self = this.set("renderItems", js.undefined)
+    def setRenderItemsUndefined: Self = StObject.set(x, "renderItems", js.undefined)
   }
 }

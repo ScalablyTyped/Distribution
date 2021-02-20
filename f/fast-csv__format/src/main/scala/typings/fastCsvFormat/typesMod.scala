@@ -2,14 +2,15 @@ package typings.fastCsvFormat
 
 import typings.std.Error
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fast-csv/format/build/src/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
+  @JSImport("@fast-csv/format/build/src/types", "isSyncTransform")
+  @js.native
   def isSyncTransform[I /* <: Row */, O /* <: Row */](transform: RowTransformFunction[I, O]): /* is @fast-csv/format.@fast-csv/format/build/src/types.SyncRowTransform<I, O> */ Boolean = js.native
   
   type AsyncRowTransform[I /* <: Row */, O /* <: Row */] = js.Function2[/* row */ I, /* cb */ RowTransformCallback[O], Unit]

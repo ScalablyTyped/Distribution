@@ -8,12 +8,13 @@ import typings.exceljs.anon.PartialWorksheetProtectio
 import typings.exceljs.anon.editAsstringundefinedhype
 import typings.exceljs.anon.editAsstringundefinedhypeEditAs
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Worksheet extends js.Object {
+trait Worksheet extends StObject {
   
   /**
   	 * A count of the number of columns that have values.

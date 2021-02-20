@@ -1,12 +1,11 @@
 package typings.lokijs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("LokiConstructor")
-@js.native
-object LokiConstructor extends js.Object {
+object LokiConstructor {
   
   type Collection[E /* <: js.Object */] = _Collection[E]
   

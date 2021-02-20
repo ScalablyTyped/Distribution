@@ -1,11 +1,12 @@
 package typings.awsSdk.signerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SigningPlatform extends js.Object {
+trait SigningPlatform extends StObject {
   
   /**
     * The category of a code signing platform.
@@ -53,66 +54,54 @@ object SigningPlatform {
   }
   
   @scala.inline
-  implicit class SigningPlatformOps[Self <: SigningPlatform] (val x: Self) extends AnyVal {
+  implicit class SigningPlatformMutableBuilder[Self <: SigningPlatform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: Category): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: Category): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setMaxSizeInMB(value: MaxSizeInMB): Self = StObject.set(x, "maxSizeInMB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setMaxSizeInMBUndefined: Self = StObject.set(x, "maxSizeInMB", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setPartner(value: String): Self = StObject.set(x, "partner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSizeInMB(value: MaxSizeInMB): Self = this.set("maxSizeInMB", value.asInstanceOf[js.Any])
+    def setPartnerUndefined: Self = StObject.set(x, "partner", js.undefined)
     
     @scala.inline
-    def deleteMaxSizeInMB: Self = this.set("maxSizeInMB", js.undefined)
+    def setPlatformId(value: String): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartner(value: String): Self = this.set("partner", value.asInstanceOf[js.Any])
+    def setPlatformIdUndefined: Self = StObject.set(x, "platformId", js.undefined)
     
     @scala.inline
-    def deletePartner: Self = this.set("partner", js.undefined)
+    def setSigningConfiguration(value: SigningConfiguration): Self = StObject.set(x, "signingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformId(value: String): Self = this.set("platformId", value.asInstanceOf[js.Any])
+    def setSigningConfigurationUndefined: Self = StObject.set(x, "signingConfiguration", js.undefined)
     
     @scala.inline
-    def deletePlatformId: Self = this.set("platformId", js.undefined)
+    def setSigningImageFormat(value: SigningImageFormat): Self = StObject.set(x, "signingImageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningConfiguration(value: SigningConfiguration): Self = this.set("signingConfiguration", value.asInstanceOf[js.Any])
+    def setSigningImageFormatUndefined: Self = StObject.set(x, "signingImageFormat", js.undefined)
     
     @scala.inline
-    def deleteSigningConfiguration: Self = this.set("signingConfiguration", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningImageFormat(value: SigningImageFormat): Self = this.set("signingImageFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigningImageFormat: Self = this.set("signingImageFormat", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

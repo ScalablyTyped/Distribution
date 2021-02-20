@@ -4,6 +4,7 @@ import typings.webcl.webclNumbers.`0x11D0`
 import typings.webcl.webclNumbers.`0x11D1`
 import typings.webcl.webclNumbers.`0x11D3`
 import typings.webcl.webclNumbers.`0x11D4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x11D3`
   - typings.webcl.webclNumbers.`0x11D4`
 */
-trait EventInfo extends js.Object
+trait EventInfo extends StObject
 object EventInfo {
   
   //EVENT_REFERENCE_COUNT                     = 0x11D2, // disallowed

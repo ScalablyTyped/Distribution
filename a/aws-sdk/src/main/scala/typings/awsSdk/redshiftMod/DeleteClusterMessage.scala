@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteClusterMessage extends js.Object {
+trait DeleteClusterMessage extends StObject {
   
   /**
     * The identifier of the cluster to be deleted. Constraints:   Must contain lowercase characters.   Must contain from 1 to 63 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
@@ -36,39 +37,27 @@ object DeleteClusterMessage {
   }
   
   @scala.inline
-  implicit class DeleteClusterMessageOps[Self <: DeleteClusterMessage] (val x: Self) extends AnyVal {
+  implicit class DeleteClusterMessageMutableBuilder[Self <: DeleteClusterMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinalClusterSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalClusterSnapshotIdentifier", js.undefined)
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setFinalClusterSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "FinalClusterSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalClusterSnapshotIdentifier(value: String): Self = this.set("FinalClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    def setFinalClusterSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "FinalClusterSnapshotRetentionPeriod", js.undefined)
     
     @scala.inline
-    def deleteFinalClusterSnapshotIdentifier: Self = this.set("FinalClusterSnapshotIdentifier", js.undefined)
+    def setSkipFinalClusterSnapshot(value: Boolean): Self = StObject.set(x, "SkipFinalClusterSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalClusterSnapshotRetentionPeriod(value: IntegerOptional): Self = this.set("FinalClusterSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinalClusterSnapshotRetentionPeriod: Self = this.set("FinalClusterSnapshotRetentionPeriod", js.undefined)
-    
-    @scala.inline
-    def setSkipFinalClusterSnapshot(value: Boolean): Self = this.set("SkipFinalClusterSnapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipFinalClusterSnapshot: Self = this.set("SkipFinalClusterSnapshot", js.undefined)
+    def setSkipFinalClusterSnapshotUndefined: Self = StObject.set(x, "SkipFinalClusterSnapshot", js.undefined)
   }
 }

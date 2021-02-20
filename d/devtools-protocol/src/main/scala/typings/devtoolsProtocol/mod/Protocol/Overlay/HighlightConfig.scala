@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightConfig extends js.Object {
+trait HighlightConfig extends StObject {
   
   /**
     * The border highlight fill color (default: transparent).
@@ -92,108 +93,96 @@ object HighlightConfig {
   }
   
   @scala.inline
-  implicit class HighlightConfigOps[Self <: HighlightConfig] (val x: Self) extends AnyVal {
+  implicit class HighlightConfigMutableBuilder[Self <: HighlightConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: RGBA): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorFormat(value: ColorFormat): Self = StObject.set(x, "colorFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: RGBA): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setColorFormatUndefined: Self = StObject.set(x, "colorFormat", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setContentColor(value: RGBA): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorFormat(value: ColorFormat): Self = this.set("colorFormat", value.asInstanceOf[js.Any])
+    def setContentColorUndefined: Self = StObject.set(x, "contentColor", js.undefined)
     
     @scala.inline
-    def deleteColorFormat: Self = this.set("colorFormat", js.undefined)
+    def setCssGridColor(value: RGBA): Self = StObject.set(x, "cssGridColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentColor(value: RGBA): Self = this.set("contentColor", value.asInstanceOf[js.Any])
+    def setCssGridColorUndefined: Self = StObject.set(x, "cssGridColor", js.undefined)
     
     @scala.inline
-    def deleteContentColor: Self = this.set("contentColor", js.undefined)
+    def setEventTargetColor(value: RGBA): Self = StObject.set(x, "eventTargetColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssGridColor(value: RGBA): Self = this.set("cssGridColor", value.asInstanceOf[js.Any])
+    def setEventTargetColorUndefined: Self = StObject.set(x, "eventTargetColor", js.undefined)
     
     @scala.inline
-    def deleteCssGridColor: Self = this.set("cssGridColor", js.undefined)
+    def setGridHighlightConfig(value: GridHighlightConfig): Self = StObject.set(x, "gridHighlightConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTargetColor(value: RGBA): Self = this.set("eventTargetColor", value.asInstanceOf[js.Any])
+    def setGridHighlightConfigUndefined: Self = StObject.set(x, "gridHighlightConfig", js.undefined)
     
     @scala.inline
-    def deleteEventTargetColor: Self = this.set("eventTargetColor", js.undefined)
+    def setMarginColor(value: RGBA): Self = StObject.set(x, "marginColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridHighlightConfig(value: GridHighlightConfig): Self = this.set("gridHighlightConfig", value.asInstanceOf[js.Any])
+    def setMarginColorUndefined: Self = StObject.set(x, "marginColor", js.undefined)
     
     @scala.inline
-    def deleteGridHighlightConfig: Self = this.set("gridHighlightConfig", js.undefined)
+    def setPaddingColor(value: RGBA): Self = StObject.set(x, "paddingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginColor(value: RGBA): Self = this.set("marginColor", value.asInstanceOf[js.Any])
+    def setPaddingColorUndefined: Self = StObject.set(x, "paddingColor", js.undefined)
     
     @scala.inline
-    def deleteMarginColor: Self = this.set("marginColor", js.undefined)
+    def setShapeColor(value: RGBA): Self = StObject.set(x, "shapeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingColor(value: RGBA): Self = this.set("paddingColor", value.asInstanceOf[js.Any])
+    def setShapeColorUndefined: Self = StObject.set(x, "shapeColor", js.undefined)
     
     @scala.inline
-    def deletePaddingColor: Self = this.set("paddingColor", js.undefined)
+    def setShapeMarginColor(value: RGBA): Self = StObject.set(x, "shapeMarginColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeColor(value: RGBA): Self = this.set("shapeColor", value.asInstanceOf[js.Any])
+    def setShapeMarginColorUndefined: Self = StObject.set(x, "shapeMarginColor", js.undefined)
     
     @scala.inline
-    def deleteShapeColor: Self = this.set("shapeColor", js.undefined)
+    def setShowAccessibilityInfo(value: Boolean): Self = StObject.set(x, "showAccessibilityInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeMarginColor(value: RGBA): Self = this.set("shapeMarginColor", value.asInstanceOf[js.Any])
+    def setShowAccessibilityInfoUndefined: Self = StObject.set(x, "showAccessibilityInfo", js.undefined)
     
     @scala.inline
-    def deleteShapeMarginColor: Self = this.set("shapeMarginColor", js.undefined)
+    def setShowExtensionLines(value: Boolean): Self = StObject.set(x, "showExtensionLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAccessibilityInfo(value: Boolean): Self = this.set("showAccessibilityInfo", value.asInstanceOf[js.Any])
+    def setShowExtensionLinesUndefined: Self = StObject.set(x, "showExtensionLines", js.undefined)
     
     @scala.inline
-    def deleteShowAccessibilityInfo: Self = this.set("showAccessibilityInfo", js.undefined)
+    def setShowInfo(value: Boolean): Self = StObject.set(x, "showInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowExtensionLines(value: Boolean): Self = this.set("showExtensionLines", value.asInstanceOf[js.Any])
+    def setShowInfoUndefined: Self = StObject.set(x, "showInfo", js.undefined)
     
     @scala.inline
-    def deleteShowExtensionLines: Self = this.set("showExtensionLines", js.undefined)
+    def setShowRulers(value: Boolean): Self = StObject.set(x, "showRulers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowInfo(value: Boolean): Self = this.set("showInfo", value.asInstanceOf[js.Any])
+    def setShowRulersUndefined: Self = StObject.set(x, "showRulers", js.undefined)
     
     @scala.inline
-    def deleteShowInfo: Self = this.set("showInfo", js.undefined)
+    def setShowStyles(value: Boolean): Self = StObject.set(x, "showStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRulers(value: Boolean): Self = this.set("showRulers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowRulers: Self = this.set("showRulers", js.undefined)
-    
-    @scala.inline
-    def setShowStyles(value: Boolean): Self = this.set("showStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowStyles: Self = this.set("showStyles", js.undefined)
+    def setShowStylesUndefined: Self = StObject.set(x, "showStyles", js.undefined)
   }
 }

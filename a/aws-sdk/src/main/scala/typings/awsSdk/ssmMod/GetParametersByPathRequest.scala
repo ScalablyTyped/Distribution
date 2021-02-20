@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetParametersByPathRequest extends js.Object {
+trait GetParametersByPathRequest extends StObject {
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
@@ -46,54 +47,42 @@ object GetParametersByPathRequest {
   }
   
   @scala.inline
-  implicit class GetParametersByPathRequestOps[Self <: GetParametersByPathRequest] (val x: Self) extends AnyVal {
+  implicit class GetParametersByPathRequestMutableBuilder[Self <: GetParametersByPathRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: GetParametersByPathMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: PSParameterName): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: GetParametersByPathMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setParameterFilters(value: ParameterStringFilterList): Self = StObject.set(x, "ParameterFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setParameterFiltersUndefined: Self = StObject.set(x, "ParameterFilters", js.undefined)
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setParameterFiltersVarargs(value: ParameterStringFilter*): Self = StObject.set(x, "ParameterFilters", js.Array(value :_*))
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setPath(value: PSParameterName): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterFiltersVarargs(value: ParameterStringFilter*): Self = this.set("ParameterFilters", js.Array(value :_*))
+    def setRecursive(value: Boolean): Self = StObject.set(x, "Recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterFilters(value: ParameterStringFilterList): Self = this.set("ParameterFilters", value.asInstanceOf[js.Any])
+    def setRecursiveUndefined: Self = StObject.set(x, "Recursive", js.undefined)
     
     @scala.inline
-    def deleteParameterFilters: Self = this.set("ParameterFilters", js.undefined)
+    def setWithDecryption(value: Boolean): Self = StObject.set(x, "WithDecryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("Recursive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursive: Self = this.set("Recursive", js.undefined)
-    
-    @scala.inline
-    def setWithDecryption(value: Boolean): Self = this.set("WithDecryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithDecryption: Self = this.set("WithDecryption", js.undefined)
+    def setWithDecryptionUndefined: Self = StObject.set(x, "WithDecryption", js.undefined)
   }
 }

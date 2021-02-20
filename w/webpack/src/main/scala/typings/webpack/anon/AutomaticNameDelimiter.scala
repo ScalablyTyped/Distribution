@@ -4,12 +4,13 @@ import typings.std.RegExp
 import typings.webpack.webpackStrings.all
 import typings.webpack.webpackStrings.async
 import typings.webpack.webpackStrings.initial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutomaticNameDelimiter extends js.Object {
+trait AutomaticNameDelimiter extends StObject {
   
   /**
   					 * Sets the name delimiter for created chunks
@@ -100,114 +101,102 @@ object AutomaticNameDelimiter {
   }
   
   @scala.inline
-  implicit class AutomaticNameDelimiterOps[Self <: AutomaticNameDelimiter] (val x: Self) extends AnyVal {
+  implicit class AutomaticNameDelimiterMutableBuilder[Self <: AutomaticNameDelimiter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticNameDelimiter(value: String): Self = StObject.set(x, "automaticNameDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticNameDelimiterUndefined: Self = StObject.set(x, "automaticNameDelimiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomaticNameMaxLength(value: Double): Self = StObject.set(x, "automaticNameMaxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticNameDelimiter(value: String): Self = this.set("automaticNameDelimiter", value.asInstanceOf[js.Any])
+    def setAutomaticNameMaxLengthUndefined: Self = StObject.set(x, "automaticNameMaxLength", js.undefined)
     
     @scala.inline
-    def deleteAutomaticNameDelimiter: Self = this.set("automaticNameDelimiter", js.undefined)
+    def setAutomaticNamePrefix(value: String): Self = StObject.set(x, "automaticNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticNameMaxLength(value: Double): Self = this.set("automaticNameMaxLength", value.asInstanceOf[js.Any])
+    def setAutomaticNamePrefixUndefined: Self = StObject.set(x, "automaticNamePrefix", js.undefined)
     
     @scala.inline
-    def deleteAutomaticNameMaxLength: Self = this.set("automaticNameMaxLength", js.undefined)
+    def setChunks(value: initial | async | all | js.Function): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticNamePrefix(value: String): Self = this.set("automaticNamePrefix", value.asInstanceOf[js.Any])
+    def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
     
     @scala.inline
-    def deleteAutomaticNamePrefix: Self = this.set("automaticNamePrefix", js.undefined)
+    def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunks(value: initial | async | all | js.Function): Self = this.set("chunks", value.asInstanceOf[js.Any])
+    def setEnforceSizeThreshold(value: Double): Self = StObject.set(x, "enforceSizeThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChunks: Self = this.set("chunks", js.undefined)
+    def setEnforceSizeThresholdUndefined: Self = StObject.set(x, "enforceSizeThreshold", js.undefined)
     
     @scala.inline
-    def setEnforce(value: Boolean): Self = this.set("enforce", value.asInstanceOf[js.Any])
+    def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
     
     @scala.inline
-    def deleteEnforce: Self = this.set("enforce", js.undefined)
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforceSizeThreshold(value: Double): Self = this.set("enforceSizeThreshold", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteEnforceSizeThreshold: Self = this.set("enforceSizeThreshold", js.undefined)
+    def setMaxAsyncRequests(value: Double): Self = StObject.set(x, "maxAsyncRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setMaxAsyncRequestsUndefined: Self = StObject.set(x, "maxAsyncRequests", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setMaxInitialRequests(value: Double): Self = StObject.set(x, "maxInitialRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAsyncRequests(value: Double): Self = this.set("maxAsyncRequests", value.asInstanceOf[js.Any])
+    def setMaxInitialRequestsUndefined: Self = StObject.set(x, "maxInitialRequests", js.undefined)
     
     @scala.inline
-    def deleteMaxAsyncRequests: Self = this.set("maxAsyncRequests", js.undefined)
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxInitialRequests(value: Double): Self = this.set("maxInitialRequests", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def deleteMaxInitialRequests: Self = this.set("maxInitialRequests", js.undefined)
+    def setMinChunks(value: Double): Self = StObject.set(x, "minChunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setMinChunksUndefined: Self = StObject.set(x, "minChunks", js.undefined)
     
     @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinChunks(value: Double): Self = this.set("minChunks", value.asInstanceOf[js.Any])
+    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
     @scala.inline
-    def deleteMinChunks: Self = this.set("minChunks", js.undefined)
+    def setName(value: Boolean | js.Function | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Boolean | js.Function | String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReuseExistingChunk(value: Boolean): Self = StObject.set(x, "reuseExistingChunk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setReuseExistingChunkUndefined: Self = StObject.set(x, "reuseExistingChunk", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setTest(value: js.Function | String | RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReuseExistingChunk(value: Boolean): Self = this.set("reuseExistingChunk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReuseExistingChunk: Self = this.set("reuseExistingChunk", js.undefined)
-    
-    @scala.inline
-    def setTest(value: js.Function | String | RegExp): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

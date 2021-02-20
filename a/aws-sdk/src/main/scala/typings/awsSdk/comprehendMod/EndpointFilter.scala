@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointFilter extends js.Object {
+trait EndpointFilter extends StObject {
   
   /**
     * Specifies a date after which the returned endpoint or endpoints were created.
@@ -36,42 +37,30 @@ object EndpointFilter {
   }
   
   @scala.inline
-  implicit class EndpointFilterOps[Self <: EndpointFilter] (val x: Self) extends AnyVal {
+  implicit class EndpointFilterMutableBuilder[Self <: EndpointFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimeAfter(value: Timestamp): Self = this.set("CreationTimeAfter", value.asInstanceOf[js.Any])
+    def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
     @scala.inline
-    def deleteCreationTimeAfter: Self = this.set("CreationTimeAfter", js.undefined)
+    def setModelArn(value: ComprehendModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimeBefore(value: Timestamp): Self = this.set("CreationTimeBefore", value.asInstanceOf[js.Any])
+    def setModelArnUndefined: Self = StObject.set(x, "ModelArn", js.undefined)
     
     @scala.inline
-    def deleteCreationTimeBefore: Self = this.set("CreationTimeBefore", js.undefined)
+    def setStatus(value: EndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelArn(value: ComprehendModelArn): Self = this.set("ModelArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelArn: Self = this.set("ModelArn", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: EndpointStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

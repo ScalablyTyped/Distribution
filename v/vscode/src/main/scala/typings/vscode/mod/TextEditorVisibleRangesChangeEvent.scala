@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextEditorVisibleRangesChangeEvent extends js.Object {
+trait TextEditorVisibleRangesChangeEvent extends StObject {
   
   /**
     * The [text editor](#TextEditor) for which the visible ranges have changed.
@@ -26,27 +27,15 @@ object TextEditorVisibleRangesChangeEvent {
   }
   
   @scala.inline
-  implicit class TextEditorVisibleRangesChangeEventOps[Self <: TextEditorVisibleRangesChangeEvent] (val x: Self) extends AnyVal {
+  implicit class TextEditorVisibleRangesChangeEventMutableBuilder[Self <: TextEditorVisibleRangesChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTextEditor(value: TextEditor): Self = StObject.set(x, "textEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVisibleRanges(value: js.Array[Range]): Self = StObject.set(x, "visibleRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextEditor(value: TextEditor): Self = this.set("textEditor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleRangesVarargs(value: Range*): Self = this.set("visibleRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setVisibleRanges(value: js.Array[Range]): Self = this.set("visibleRanges", value.asInstanceOf[js.Any])
+    def setVisibleRangesVarargs(value: Range*): Self = StObject.set(x, "visibleRanges", js.Array(value :_*))
   }
 }

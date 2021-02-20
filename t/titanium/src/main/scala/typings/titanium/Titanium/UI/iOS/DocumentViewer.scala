@@ -5,6 +5,7 @@ import typings.titanium.Titanium.Proxy
 import typings.titanium.titaniumStrings.load
 import typings.titanium.titaniumStrings.menu
 import typings.titanium.titaniumStrings.unload
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,14 +1,21 @@
 package typings.wixUiIconsCommon
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.SFC
 import typings.wixUiIconsCommon.dismissMod.DismissProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wix-ui-icons-common/Dismiss", JSImport.Namespace)
-@js.native
-object wixUiIconsCommonDismissMod extends js.Object {
+object wixUiIconsCommonDismissMod extends Shortcut {
   
+  @JSImport("wix-ui-icons-common/Dismiss", JSImport.Default)
+  @js.native
   val default: SFC[DismissProps] = js.native
+  
+  type _To = SFC[DismissProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonDismissMod.foo` */
+  override def _to: SFC[DismissProps] = default
 }

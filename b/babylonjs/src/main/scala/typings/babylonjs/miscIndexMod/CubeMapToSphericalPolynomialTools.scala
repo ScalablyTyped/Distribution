@@ -4,6 +4,7 @@ import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
 import typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class CubeMapToSphericalPolynomialTools ()
   extends typings.babylonjs.highDynamicRangeIndexMod.CubeMapToSphericalPolynomialTools
 /* static members */
-@JSImport("babylonjs/Misc/index", "CubeMapToSphericalPolynomialTools")
-@js.native
-object CubeMapToSphericalPolynomialTools extends js.Object {
+object CubeMapToSphericalPolynomialTools {
+  
+  @JSImport("babylonjs/Misc/index", "CubeMapToSphericalPolynomialTools")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Converts a texture to the according Spherical Polynomial data.
@@ -24,6 +27,8 @@ object CubeMapToSphericalPolynomialTools extends js.Object {
     * @param texture The texture to extract the information from.
     * @return The Spherical Polynomial data.
     */
+  @JSImport("babylonjs/Misc/index", "CubeMapToSphericalPolynomialTools.ConvertCubeMapTextureToSphericalPolynomial")
+  @js.native
   def ConvertCubeMapTextureToSphericalPolynomial(texture: BaseTexture): Nullable[SphericalPolynomial] = js.native
   
   /**
@@ -33,7 +38,13 @@ object CubeMapToSphericalPolynomialTools extends js.Object {
     * @param cubeInfo The Cube map to extract the information from.
     * @return The Spherical Polynomial data.
     */
+  @JSImport("babylonjs/Misc/index", "CubeMapToSphericalPolynomialTools.ConvertCubeMapToSphericalPolynomial")
+  @js.native
   def ConvertCubeMapToSphericalPolynomial(cubeInfo: CubeMapInfo): SphericalPolynomial = js.native
   
-  var FileFaces: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "CubeMapToSphericalPolynomialTools.FileFaces")
+  @js.native
+  def FileFaces: js.Any = js.native
+  @scala.inline
+  def FileFaces_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileFaces")(x.asInstanceOf[js.Any])
 }

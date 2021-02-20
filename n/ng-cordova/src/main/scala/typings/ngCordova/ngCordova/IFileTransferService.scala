@@ -2,12 +2,13 @@ package typings.ngCordova.ngCordova
 
 import typings.cordovaPluginFile.FileEntry
 import typings.cordovaPluginFileTransfer.FileUploadResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFileTransferService extends js.Object {
+trait IFileTransferService extends StObject {
   
   def download(url: String, filePath: String): IFileTransferPromise[FileEntry] = js.native
   def download(url: String, filePath: String, options: js.UndefOr[scala.Nothing], trustAllHosts: Boolean): IFileTransferPromise[FileEntry] = js.native

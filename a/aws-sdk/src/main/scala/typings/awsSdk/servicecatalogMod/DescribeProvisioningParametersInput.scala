@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeProvisioningParametersInput extends js.Object {
+trait DescribeProvisioningParametersInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -51,60 +52,48 @@ object DescribeProvisioningParametersInput {
   }
   
   @scala.inline
-  implicit class DescribeProvisioningParametersInputOps[Self <: DescribeProvisioningParametersInput] (val x: Self) extends AnyVal {
+  implicit class DescribeProvisioningParametersInputMutableBuilder[Self <: DescribeProvisioningParametersInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathId(value: Id): Self = StObject.set(x, "PathId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    def setPathIdUndefined: Self = StObject.set(x, "PathId", js.undefined)
     
     @scala.inline
-    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    def setPathName(value: PortfolioDisplayName): Self = StObject.set(x, "PathName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathId(value: Id): Self = this.set("PathId", value.asInstanceOf[js.Any])
+    def setPathNameUndefined: Self = StObject.set(x, "PathName", js.undefined)
     
     @scala.inline
-    def deletePathId: Self = this.set("PathId", js.undefined)
+    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathName(value: PortfolioDisplayName): Self = this.set("PathName", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
     
     @scala.inline
-    def deletePathName: Self = this.set("PathName", js.undefined)
+    def setProductName(value: ProductViewName): Self = StObject.set(x, "ProductName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: Id): Self = this.set("ProductId", value.asInstanceOf[js.Any])
+    def setProductNameUndefined: Self = StObject.set(x, "ProductName", js.undefined)
     
     @scala.inline
-    def deleteProductId: Self = this.set("ProductId", js.undefined)
+    def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductName(value: ProductViewName): Self = this.set("ProductName", value.asInstanceOf[js.Any])
+    def setProvisioningArtifactIdUndefined: Self = StObject.set(x, "ProvisioningArtifactId", js.undefined)
     
     @scala.inline
-    def deleteProductName: Self = this.set("ProductName", js.undefined)
+    def setProvisioningArtifactName(value: ProvisioningArtifactName): Self = StObject.set(x, "ProvisioningArtifactName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningArtifactId(value: Id): Self = this.set("ProvisioningArtifactId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisioningArtifactId: Self = this.set("ProvisioningArtifactId", js.undefined)
-    
-    @scala.inline
-    def setProvisioningArtifactName(value: ProvisioningArtifactName): Self = this.set("ProvisioningArtifactName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisioningArtifactName: Self = this.set("ProvisioningArtifactName", js.undefined)
+    def setProvisioningArtifactNameUndefined: Self = StObject.set(x, "ProvisioningArtifactName", js.undefined)
   }
 }

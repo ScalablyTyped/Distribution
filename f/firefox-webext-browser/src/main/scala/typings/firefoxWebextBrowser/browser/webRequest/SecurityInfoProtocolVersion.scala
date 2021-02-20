@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown
 */
-trait SecurityInfoProtocolVersion extends js.Object
+trait SecurityInfoProtocolVersion extends StObject
 object SecurityInfoProtocolVersion {
   
   @scala.inline

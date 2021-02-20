@@ -2,13 +2,14 @@ package typings.wordpressComponents.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<@wordpress/components.@wordpress/components/slot-fill/slot.default.Props, 'name'> */
 @js.native
-trait OmitPropsnameBubblesVirtually extends js.Object {
+trait OmitPropsnameBubblesVirtually extends StObject {
   
   var bubblesVirtually: js.UndefOr[Boolean] = js.native
   
@@ -25,36 +26,24 @@ object OmitPropsnameBubblesVirtually {
   }
   
   @scala.inline
-  implicit class OmitPropsnameBubblesVirtuallyOps[Self <: OmitPropsnameBubblesVirtually] (val x: Self) extends AnyVal {
+  implicit class OmitPropsnameBubblesVirtuallyMutableBuilder[Self <: OmitPropsnameBubblesVirtually] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubblesVirtually(value: Boolean): Self = StObject.set(x, "bubblesVirtually", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBubblesVirtuallyUndefined: Self = StObject.set(x, "bubblesVirtually", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: /* fills */ js.Array[js.Array[Element]] => Element | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBubblesVirtually(value: Boolean): Self = this.set("bubblesVirtually", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteBubblesVirtually: Self = this.set("bubblesVirtually", js.undefined)
+    def setFillProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "fillProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: /* fills */ js.Array[js.Array[Element]] => Element | Null): Self = this.set("children", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
-    
-    @scala.inline
-    def setFillProps(value: StringDictionary[js.Any]): Self = this.set("fillProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFillProps: Self = this.set("fillProps", js.undefined)
+    def setFillPropsUndefined: Self = StObject.set(x, "fillProps", js.undefined)
   }
 }

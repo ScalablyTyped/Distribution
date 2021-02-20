@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/styles/prism/base16-ateliersulphurpool.light", JSImport.Namespace)
-@js.native
-object base16AteliersulphurpoolLightMod extends js.Object {
+object base16AteliersulphurpoolLightMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/styles/prism/base16-ateliersulphurpool.light", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

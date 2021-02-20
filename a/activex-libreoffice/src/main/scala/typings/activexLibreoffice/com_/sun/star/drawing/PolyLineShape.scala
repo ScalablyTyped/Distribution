@@ -34,6 +34,7 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextCursor
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,11 +46,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait PolyLineShape
-  extends Shape
+  extends Text
+     with Shape
      with LineProperties
      with PolyPolygonDescriptor
-     with XText
-     with TextProperties
      with ShadowProperties
      with RotationDescriptor
 object PolyLineShape {

@@ -1,5 +1,6 @@
 package typings.cote.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,33 +27,21 @@ object ResponderAdvertisement {
   }
   
   @scala.inline
-  implicit class ResponderAdvertisementOps[Self <: ResponderAdvertisement] (val x: Self) extends AnyVal {
+  implicit class ResponderAdvertisementMutableBuilder[Self <: ResponderAdvertisement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRespondsTo(value: js.Array[String]): Self = StObject.set(x, "respondsTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRespondsToUndefined: Self = StObject.set(x, "respondsTo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRespondsToVarargs(value: String*): Self = StObject.set(x, "respondsTo", js.Array(value :_*))
     
     @scala.inline
-    def setRespondsToVarargs(value: String*): Self = this.set("respondsTo", js.Array(value :_*))
+    def setSubset(value: String): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRespondsTo(value: js.Array[String]): Self = this.set("respondsTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRespondsTo: Self = this.set("respondsTo", js.undefined)
-    
-    @scala.inline
-    def setSubset(value: String): Self = this.set("subset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubset: Self = this.set("subset", js.undefined)
+    def setSubsetUndefined: Self = StObject.set(x, "subset", js.undefined)
   }
 }

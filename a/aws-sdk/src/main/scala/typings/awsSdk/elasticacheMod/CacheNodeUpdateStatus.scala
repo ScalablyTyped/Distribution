@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheNodeUpdateStatus extends js.Object {
+trait CacheNodeUpdateStatus extends StObject {
   
   /**
     * The node ID of the cache cluster
@@ -56,66 +57,54 @@ object CacheNodeUpdateStatus {
   }
   
   @scala.inline
-  implicit class CacheNodeUpdateStatusOps[Self <: CacheNodeUpdateStatus] (val x: Self) extends AnyVal {
+  implicit class CacheNodeUpdateStatusMutableBuilder[Self <: CacheNodeUpdateStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheNodeId(value: String): Self = StObject.set(x, "CacheNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheNodeIdUndefined: Self = StObject.set(x, "CacheNodeId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeDeletionDate(value: TStamp): Self = StObject.set(x, "NodeDeletionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheNodeId(value: String): Self = this.set("CacheNodeId", value.asInstanceOf[js.Any])
+    def setNodeDeletionDateUndefined: Self = StObject.set(x, "NodeDeletionDate", js.undefined)
     
     @scala.inline
-    def deleteCacheNodeId: Self = this.set("CacheNodeId", js.undefined)
+    def setNodeUpdateEndDate(value: TStamp): Self = StObject.set(x, "NodeUpdateEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeDeletionDate(value: TStamp): Self = this.set("NodeDeletionDate", value.asInstanceOf[js.Any])
+    def setNodeUpdateEndDateUndefined: Self = StObject.set(x, "NodeUpdateEndDate", js.undefined)
     
     @scala.inline
-    def deleteNodeDeletionDate: Self = this.set("NodeDeletionDate", js.undefined)
+    def setNodeUpdateInitiatedBy(value: NodeUpdateInitiatedBy): Self = StObject.set(x, "NodeUpdateInitiatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeUpdateEndDate(value: TStamp): Self = this.set("NodeUpdateEndDate", value.asInstanceOf[js.Any])
+    def setNodeUpdateInitiatedByUndefined: Self = StObject.set(x, "NodeUpdateInitiatedBy", js.undefined)
     
     @scala.inline
-    def deleteNodeUpdateEndDate: Self = this.set("NodeUpdateEndDate", js.undefined)
+    def setNodeUpdateInitiatedDate(value: TStamp): Self = StObject.set(x, "NodeUpdateInitiatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeUpdateInitiatedBy(value: NodeUpdateInitiatedBy): Self = this.set("NodeUpdateInitiatedBy", value.asInstanceOf[js.Any])
+    def setNodeUpdateInitiatedDateUndefined: Self = StObject.set(x, "NodeUpdateInitiatedDate", js.undefined)
     
     @scala.inline
-    def deleteNodeUpdateInitiatedBy: Self = this.set("NodeUpdateInitiatedBy", js.undefined)
+    def setNodeUpdateStartDate(value: TStamp): Self = StObject.set(x, "NodeUpdateStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeUpdateInitiatedDate(value: TStamp): Self = this.set("NodeUpdateInitiatedDate", value.asInstanceOf[js.Any])
+    def setNodeUpdateStartDateUndefined: Self = StObject.set(x, "NodeUpdateStartDate", js.undefined)
     
     @scala.inline
-    def deleteNodeUpdateInitiatedDate: Self = this.set("NodeUpdateInitiatedDate", js.undefined)
+    def setNodeUpdateStatus(value: NodeUpdateStatus): Self = StObject.set(x, "NodeUpdateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeUpdateStartDate(value: TStamp): Self = this.set("NodeUpdateStartDate", value.asInstanceOf[js.Any])
+    def setNodeUpdateStatusModifiedDate(value: TStamp): Self = StObject.set(x, "NodeUpdateStatusModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodeUpdateStartDate: Self = this.set("NodeUpdateStartDate", js.undefined)
+    def setNodeUpdateStatusModifiedDateUndefined: Self = StObject.set(x, "NodeUpdateStatusModifiedDate", js.undefined)
     
     @scala.inline
-    def setNodeUpdateStatus(value: NodeUpdateStatus): Self = this.set("NodeUpdateStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeUpdateStatus: Self = this.set("NodeUpdateStatus", js.undefined)
-    
-    @scala.inline
-    def setNodeUpdateStatusModifiedDate(value: TStamp): Self = this.set("NodeUpdateStatusModifiedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeUpdateStatusModifiedDate: Self = this.set("NodeUpdateStatusModifiedDate", js.undefined)
+    def setNodeUpdateStatusUndefined: Self = StObject.set(x, "NodeUpdateStatus", js.undefined)
   }
 }

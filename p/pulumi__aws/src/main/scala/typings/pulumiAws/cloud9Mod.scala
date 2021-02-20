@@ -5,14 +5,14 @@ import typings.pulumiAws.environmentEC2Mod.EnvironmentEC2State
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/cloud9", JSImport.Namespace)
-@js.native
-object cloud9Mod extends js.Object {
+object cloud9Mod {
   
+  @JSImport("@pulumi/aws/cloud9", "EnvironmentEC2")
   @js.native
   class EnvironmentEC2 protected ()
     extends typings.pulumiAws.environmentEC2Mod.EnvironmentEC2 {
@@ -27,8 +27,7 @@ object cloud9Mod extends js.Object {
     def this(name: String, args: EnvironmentEC2Args, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object EnvironmentEC2 extends js.Object {
+  object EnvironmentEC2 {
     
     /**
       * Get an existing EnvironmentEC2 resource's state with the given name, ID, and optional extra
@@ -39,15 +38,25 @@ object cloud9Mod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/cloud9", "EnvironmentEC2.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.environmentEC2Mod.EnvironmentEC2 = js.native
+    @JSImport("@pulumi/aws/cloud9", "EnvironmentEC2.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.environmentEC2Mod.EnvironmentEC2 = js.native
+    @JSImport("@pulumi/aws/cloud9", "EnvironmentEC2.get")
+    @js.native
     def get(name: String, id: Input[ID], state: EnvironmentEC2State): typings.pulumiAws.environmentEC2Mod.EnvironmentEC2 = js.native
+    @JSImport("@pulumi/aws/cloud9", "EnvironmentEC2.get")
+    @js.native
     def get(name: String, id: Input[ID], state: EnvironmentEC2State, opts: CustomResourceOptions): typings.pulumiAws.environmentEC2Mod.EnvironmentEC2 = js.native
     
     /**
       * Returns true if the given object is an instance of EnvironmentEC2.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/cloud9", "EnvironmentEC2.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloud9/environmentEC2.EnvironmentEC2 */ Boolean = js.native
   }
 }

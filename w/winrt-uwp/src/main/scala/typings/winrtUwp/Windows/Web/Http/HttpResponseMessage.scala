@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Web.Http
 
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpResponseHeaderCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an HTTP response message including headers, the status code, and data. */
 @js.native
-trait HttpResponseMessage extends js.Object {
+trait HttpResponseMessage extends StObject {
   
   /** Closes the HttpResponseMessage instance and releases allocated resources. */
   def close(): Unit = js.native
@@ -62,48 +63,36 @@ object HttpResponseMessage {
   }
   
   @scala.inline
-  implicit class HttpResponseMessageOps[Self <: HttpResponseMessage] (val x: Self) extends AnyVal {
+  implicit class HttpResponseMessageMutableBuilder[Self <: HttpResponseMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent(value: IHttpContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnsureSuccessStatusCode(value: () => HttpResponseMessage): Self = StObject.set(x, "ensureSuccessStatusCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setHeaders(value: HttpResponseHeaderCollection): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: IHttpContent): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setIsSuccessStatusCode(value: Boolean): Self = StObject.set(x, "isSuccessStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnsureSuccessStatusCode(value: () => HttpResponseMessage): Self = this.set("ensureSuccessStatusCode", js.Any.fromFunction0(value))
+    def setReasonPhrase(value: String): Self = StObject.set(x, "reasonPhrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: HttpResponseHeaderCollection): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setRequestMessage(value: HttpRequestMessage): Self = StObject.set(x, "requestMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSuccessStatusCode(value: Boolean): Self = this.set("isSuccessStatusCode", value.asInstanceOf[js.Any])
+    def setSource(value: HttpResponseMessageSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonPhrase(value: String): Self = this.set("reasonPhrase", value.asInstanceOf[js.Any])
+    def setStatusCode(value: HttpStatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestMessage(value: HttpRequestMessage): Self = this.set("requestMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: HttpResponseMessageSource): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: HttpStatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: HttpVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: HttpVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

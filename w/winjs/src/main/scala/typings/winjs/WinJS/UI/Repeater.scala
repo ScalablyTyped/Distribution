@@ -4,6 +4,7 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import typings.winjs.WinJS.Binding.List
 import typings.winjs.WinJS.Binding.Template
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Generates HTML from a set of data. Use this control to generate lists of items.
   **/
 @js.native
-trait Repeater extends js.Object {
+trait Repeater extends StObject {
   
   //#endregion Events
   //#region Methods

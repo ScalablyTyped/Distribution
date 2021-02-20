@@ -1,6 +1,7 @@
 package typings.cytoscape.mod
 
 import typings.cytoscape.cytoscapeStrings.circle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,42 +37,30 @@ object CircleLayoutOptions {
   }
   
   @scala.inline
-  implicit class CircleLayoutOptionsOps[Self <: CircleLayoutOptions] (val x: Self) extends AnyVal {
+  implicit class CircleLayoutOptionsMutableBuilder[Self <: CircleLayoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: circle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: circle): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def setClockwise(value: Boolean): Self = this.set("clockwise", value.asInstanceOf[js.Any])
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClockwise: Self = this.set("clockwise", js.undefined)
+    def setSweep(value: Double): Self = StObject.set(x, "sweep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
-    
-    @scala.inline
-    def setSweep(value: Double): Self = this.set("sweep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSweep: Self = this.set("sweep", js.undefined)
+    def setSweepUndefined: Self = StObject.set(x, "sweep", js.undefined)
   }
 }

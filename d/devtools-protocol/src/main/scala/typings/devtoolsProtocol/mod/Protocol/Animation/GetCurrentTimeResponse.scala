@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Animation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCurrentTimeResponse extends js.Object {
+trait GetCurrentTimeResponse extends StObject {
   
   /**
     * Current time of the page.
@@ -21,21 +22,9 @@ object GetCurrentTimeResponse {
   }
   
   @scala.inline
-  implicit class GetCurrentTimeResponseOps[Self <: GetCurrentTimeResponse] (val x: Self) extends AnyVal {
+  implicit class GetCurrentTimeResponseMutableBuilder[Self <: GetCurrentTimeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
   }
 }

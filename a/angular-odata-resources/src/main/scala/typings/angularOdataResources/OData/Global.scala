@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.angularOdataResources.anon.TypeofPredicate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Global extends js.Object {
+trait Global extends StObject {
   
   var BinaryOperation: Instantiable3[
     /* propertyOrPredicate */ js.Any, 
@@ -22,7 +23,12 @@ trait Global extends js.Object {
   
   var OrderBy: Instantiable2[/* propertyName */ String, /* sortOrder */ js.UndefOr[String], OrderByStatement] = js.native
   
-  var Predicate: TypeofPredicate = js.native
+  var Predicate: TypeofPredicate with (Instantiable3[
+    /* propertyOrValueOrPredicate */ js.Any, 
+    /* valueOrOperator */ js.UndefOr[js.Any], 
+    /* value */ js.UndefOr[js.Any], 
+    typings.angularOdataResources.OData.Predicate
+  ]) = js.native
   
   var Property: Instantiable1[/* value */ String, typings.angularOdataResources.OData.Property] = js.native
   
@@ -46,7 +52,12 @@ object Global {
     ],
     Func: Instantiable2[/* methodName */ String, /* args (repeated) */ js.Any, MethodCall],
     OrderBy: Instantiable2[/* propertyName */ String, /* sortOrder */ js.UndefOr[String], OrderByStatement],
-    Predicate: TypeofPredicate,
+    Predicate: TypeofPredicate with (Instantiable3[
+      /* propertyOrValueOrPredicate */ js.Any, 
+      /* valueOrOperator */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[js.Any], 
+      Predicate
+    ]),
     Property: Instantiable1[/* value */ String, Property],
     Provider: Provider[_],
     Value: Instantiable2[/* value */ js.Any, /* type */ js.UndefOr[String], Value]
@@ -56,19 +67,7 @@ object Global {
   }
   
   @scala.inline
-  implicit class GlobalOps[Self <: Global] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBinaryOperation(
@@ -78,26 +77,33 @@ object Global {
           /* value */ js.UndefOr[js.Any], 
           BinaryOperation
         ]
-    ): Self = this.set("BinaryOperation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "BinaryOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunc(value: Instantiable2[/* methodName */ String, /* args (repeated) */ js.Any, MethodCall]): Self = this.set("Func", value.asInstanceOf[js.Any])
+    def setFunc(value: Instantiable2[/* methodName */ String, /* args (repeated) */ js.Any, MethodCall]): Self = StObject.set(x, "Func", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOrderBy(
       value: Instantiable2[/* propertyName */ String, /* sortOrder */ js.UndefOr[String], OrderByStatement]
-    ): Self = this.set("OrderBy", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "OrderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredicate(value: TypeofPredicate): Self = this.set("Predicate", value.asInstanceOf[js.Any])
+    def setPredicate(
+      value: TypeofPredicate with (Instantiable3[
+          /* propertyOrValueOrPredicate */ js.Any, 
+          /* valueOrOperator */ js.UndefOr[js.Any], 
+          /* value */ js.UndefOr[js.Any], 
+          Predicate
+        ])
+    ): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: Instantiable1[/* value */ String, Property]): Self = this.set("Property", value.asInstanceOf[js.Any])
+    def setProperty(value: Instantiable1[/* value */ String, Property]): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: Provider[_]): Self = this.set("Provider", value.asInstanceOf[js.Any])
+    def setProvider(value: Provider[_]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: Instantiable2[/* value */ js.Any, /* type */ js.UndefOr[String], Value]): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: Instantiable2[/* value */ js.Any, /* type */ js.UndefOr[String], Value]): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

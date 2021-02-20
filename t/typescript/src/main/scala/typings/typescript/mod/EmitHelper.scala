@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmitHelper extends js.Object {
+trait EmitHelper extends StObject {
   
   val dependencies: js.UndefOr[js.Array[EmitHelper]] = js.native
   
@@ -30,47 +31,35 @@ object EmitHelper {
   }
   
   @scala.inline
-  implicit class EmitHelperOps[Self <: EmitHelper] (val x: Self) extends AnyVal {
+  implicit class EmitHelperMutableBuilder[Self <: EmitHelper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependencies(value: js.Array[EmitHelper]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDependenciesVarargs(value: EmitHelper*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoped(value: Boolean): Self = this.set("scoped", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextFunction1(value: /* node */ EmitHelperUniqueNameCallback => java.lang.String): Self = this.set("text", js.Any.fromFunction1(value))
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
+    @scala.inline
+    def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setText(
       value: java.lang.String | (js.Function1[/* node */ EmitHelperUniqueNameCallback, java.lang.String])
-    ): Self = this.set("text", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependenciesVarargs(value: EmitHelper*): Self = this.set("dependencies", js.Array(value :_*))
-    
-    @scala.inline
-    def setDependencies(value: js.Array[EmitHelper]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDependencies: Self = this.set("dependencies", js.undefined)
-    
-    @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setTextFunction1(value: /* node */ EmitHelperUniqueNameCallback => java.lang.String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
   }
 }

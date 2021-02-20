@@ -1,5 +1,6 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.createHighlightsReelOptionsMod.CreateHighlightsReelOptions
 import typings.instagramPrivateApi.editHighlightsReelOptionsMod.EditHighlightsReelOptions
 import typings.instagramPrivateApi.highlightsRepositoryCreateReelResponseMod.HighlightsRepositoryCreateReelResponseRootObject
@@ -7,16 +8,17 @@ import typings.instagramPrivateApi.highlightsRepositoryEditReelResponseMod.Highl
 import typings.instagramPrivateApi.highlightsRepositoryHighlightsTrayResponseMod.HighlightsRepositoryHighlightsTrayResponseRootObject
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.statusResponseMod.StatusResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/highlights.repository", JSImport.Namespace)
-@js.native
-object highlightsRepositoryMod extends js.Object {
+object highlightsRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/highlights.repository", "HighlightsRepository")
   @js.native
-  class HighlightsRepository () extends Repository {
+  class HighlightsRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def createReel(options: CreateHighlightsReelOptions): js.Promise[HighlightsRepositoryCreateReelResponseRootObject] = js.native
     

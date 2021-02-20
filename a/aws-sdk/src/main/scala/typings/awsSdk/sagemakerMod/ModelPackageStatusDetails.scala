@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelPackageStatusDetails extends js.Object {
+trait ModelPackageStatusDetails extends StObject {
   
   /**
     * The status of the scan of the Docker image container for the model package.
@@ -26,33 +27,21 @@ object ModelPackageStatusDetails {
   }
   
   @scala.inline
-  implicit class ModelPackageStatusDetailsOps[Self <: ModelPackageStatusDetails] (val x: Self) extends AnyVal {
+  implicit class ModelPackageStatusDetailsMutableBuilder[Self <: ModelPackageStatusDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageScanStatuses(value: ModelPackageStatusItemList): Self = StObject.set(x, "ImageScanStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageScanStatusesUndefined: Self = StObject.set(x, "ImageScanStatuses", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageScanStatusesVarargs(value: ModelPackageStatusItem*): Self = StObject.set(x, "ImageScanStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setValidationStatusesVarargs(value: ModelPackageStatusItem*): Self = this.set("ValidationStatuses", js.Array(value :_*))
+    def setValidationStatuses(value: ModelPackageStatusItemList): Self = StObject.set(x, "ValidationStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationStatuses(value: ModelPackageStatusItemList): Self = this.set("ValidationStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImageScanStatusesVarargs(value: ModelPackageStatusItem*): Self = this.set("ImageScanStatuses", js.Array(value :_*))
-    
-    @scala.inline
-    def setImageScanStatuses(value: ModelPackageStatusItemList): Self = this.set("ImageScanStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageScanStatuses: Self = this.set("ImageScanStatuses", js.undefined)
+    def setValidationStatusesVarargs(value: ModelPackageStatusItem*): Self = StObject.set(x, "ValidationStatuses", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.loopback.anon
 
 import typings.loopback.mod.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessType extends js.Object {
+trait AccessType extends StObject {
   
   var accessType: String = js.native
   
@@ -27,36 +28,24 @@ object AccessType {
   }
   
   @scala.inline
-  implicit class AccessTypeOps[Self <: AccessType] (val x: Self) extends AnyVal {
+  implicit class AccessTypeMutableBuilder[Self <: AccessType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessType(value: String): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModel(value: String | Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessType(value: String): Self = this.set("accessType", value.asInstanceOf[js.Any])
+    def setPrincipals(value: js.Array[_]): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: js.Any): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPrincipalsVarargs(value: js.Any*): Self = StObject.set(x, "principals", js.Array(value :_*))
     
     @scala.inline
-    def setModel(value: String | Model): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrincipalsVarargs(value: js.Any*): Self = this.set("principals", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrincipals(value: js.Array[_]): Self = this.set("principals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

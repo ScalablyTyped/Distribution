@@ -1,11 +1,12 @@
 package typings.dynatable.JQueryDynatable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaginationPage extends js.Object {
+trait PaginationPage extends StObject {
   
   /** Parse the current window.location in order to determine the target page */
   def init(): Unit = js.native
@@ -33,27 +34,15 @@ object PaginationPage {
   }
   
   @scala.inline
-  implicit class PaginationPageOps[Self <: PaginationPage] (val x: Self) extends AnyVal {
+  implicit class PaginationPageMutableBuilder[Self <: PaginationPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInitOnLoad(value: () => Boolean): Self = this.set("initOnLoad", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: Double => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    def setSet(value: Double => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

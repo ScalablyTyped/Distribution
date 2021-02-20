@@ -4,6 +4,7 @@ import typings.reactNative.mod.ViewProps
 import typings.reactNativeChartsWrapper.anon.DataIndex
 import typings.reactNativeChartsWrapper.anon.Digits
 import typings.reactNativeChartsWrapper.anon.DurationX
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,111 +51,99 @@ object ChartBase {
   }
   
   @scala.inline
-  implicit class ChartBaseOps[Self <: ChartBase] (val x: Self) extends AnyVal {
+  implicit class ChartBaseMutableBuilder[Self <: ChartBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: DurationX): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChartBackgroundColor(value: Color): Self = StObject.set(x, "chartBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: DurationX): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setChartBackgroundColorUndefined: Self = StObject.set(x, "chartBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setChartDescription(value: ChartDescription): Self = StObject.set(x, "chartDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartBackgroundColor(value: Color): Self = this.set("chartBackgroundColor", value.asInstanceOf[js.Any])
+    def setChartDescriptionUndefined: Self = StObject.set(x, "chartDescription", js.undefined)
     
     @scala.inline
-    def deleteChartBackgroundColor: Self = this.set("chartBackgroundColor", js.undefined)
+    def setDragDecelerationEnabled(value: Boolean): Self = StObject.set(x, "dragDecelerationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartDescription(value: ChartDescription): Self = this.set("chartDescription", value.asInstanceOf[js.Any])
+    def setDragDecelerationEnabledUndefined: Self = StObject.set(x, "dragDecelerationEnabled", js.undefined)
     
     @scala.inline
-    def deleteChartDescription: Self = this.set("chartDescription", js.undefined)
+    def setDragDecelerationFrictionCoef(value: Double): Self = StObject.set(x, "dragDecelerationFrictionCoef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragDecelerationEnabled(value: Boolean): Self = this.set("dragDecelerationEnabled", value.asInstanceOf[js.Any])
+    def setDragDecelerationFrictionCoefUndefined: Self = StObject.set(x, "dragDecelerationFrictionCoef", js.undefined)
     
     @scala.inline
-    def deleteDragDecelerationEnabled: Self = this.set("dragDecelerationEnabled", js.undefined)
+    def setHighlightPerTapEnabled(value: Boolean): Self = StObject.set(x, "highlightPerTapEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragDecelerationFrictionCoef(value: Double): Self = this.set("dragDecelerationFrictionCoef", value.asInstanceOf[js.Any])
+    def setHighlightPerTapEnabledUndefined: Self = StObject.set(x, "highlightPerTapEnabled", js.undefined)
     
     @scala.inline
-    def deleteDragDecelerationFrictionCoef: Self = this.set("dragDecelerationFrictionCoef", js.undefined)
+    def setHighlights(value: js.Array[DataIndex]): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightPerTapEnabled(value: Boolean): Self = this.set("highlightPerTapEnabled", value.asInstanceOf[js.Any])
+    def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
     
     @scala.inline
-    def deleteHighlightPerTapEnabled: Self = this.set("highlightPerTapEnabled", js.undefined)
+    def setHighlightsVarargs(value: DataIndex*): Self = StObject.set(x, "highlights", js.Array(value :_*))
     
     @scala.inline
-    def setHighlightsVarargs(value: DataIndex*): Self = this.set("highlights", js.Array(value :_*))
+    def setLegend(value: ChartLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlights(value: js.Array[DataIndex]): Self = this.set("highlights", value.asInstanceOf[js.Any])
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteHighlights: Self = this.set("highlights", js.undefined)
+    def setLogEnabled(value: Boolean): Self = StObject.set(x, "logEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegend(value: ChartLegend): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setLogEnabledUndefined: Self = StObject.set(x, "logEnabled", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setMarker(value: Digits): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogEnabled(value: Boolean): Self = this.set("logEnabled", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def deleteLogEnabled: Self = this.set("logEnabled", js.undefined)
+    def setNoDataText(value: String): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Digits): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setOnChange(value: /* event */ ChartChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNoDataText(value: String): Self = this.set("noDataText", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteNoDataText: Self = this.set("noDataText", js.undefined)
+    def setOnSelect(value: /* event */ ChartSelectEvent => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnChange(value: /* event */ ChartChangeEvent => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setTouchEnabled(value: Boolean): Self = StObject.set(x, "touchEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSelect(value: /* event */ ChartSelectEvent => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    def setTouchEnabledUndefined: Self = StObject.set(x, "touchEnabled", js.undefined)
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setXAxis(value: xAxis): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchEnabled(value: Boolean): Self = this.set("touchEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchEnabled: Self = this.set("touchEnabled", js.undefined)
-    
-    @scala.inline
-    def setXAxis(value: xAxis): Self = this.set("xAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAxis: Self = this.set("xAxis", js.undefined)
+    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
   }
 }

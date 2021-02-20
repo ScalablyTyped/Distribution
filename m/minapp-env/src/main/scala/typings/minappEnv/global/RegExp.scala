@@ -1,11 +1,11 @@
 package typings.minappEnv.global
 
-import org.scalablytyped.runtime.TopLevel
-import typings.minappEnv.RegExpConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("RegExp")
 @js.native
 class RegExp protected ()
@@ -15,6 +15,3 @@ class RegExp protected ()
   def this(pattern: java.lang.String, flags: java.lang.String) = this()
   def this(pattern: typings.minappEnv.RegExp, flags: java.lang.String) = this()
 }
-@JSGlobal("RegExp")
-@js.native
-object RegExp extends TopLevel[RegExpConstructor]

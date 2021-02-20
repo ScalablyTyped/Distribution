@@ -2,6 +2,7 @@ package typings.awsSdkBuildTypes.customizationMod
 
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.Middleware
 import typings.awsSdkTypes.middlewareMod.Step
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,57 +63,45 @@ object MiddlewareCustomizationDefinition {
   }
   
   @scala.inline
-  implicit class MiddlewareCustomizationDefinitionOps[Self <: MiddlewareCustomizationDefinition] (val x: Self) extends AnyVal {
+  implicit class MiddlewareCustomizationDefinitionMutableBuilder[Self <: MiddlewareCustomizationDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditionExpression(value: String): Self = StObject.set(x, "conditionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionExpressionUndefined: Self = StObject.set(x, "conditionExpression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfiguration(value: ConfigurationDefinition): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Step): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Middleware): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
     @scala.inline
-    def setConditionExpression(value: String): Self = this.set("conditionExpression", value.asInstanceOf[js.Any])
+    def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
-    def deleteConditionExpression: Self = this.set("conditionExpression", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: ConfigurationDefinition): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportsVarargs(value: Import*): Self = this.set("imports", js.Array(value :_*))
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setImports(value: js.Array[Import]): Self = this.set("imports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImports: Self = this.set("imports", js.undefined)
-    
-    @scala.inline
-    def setTags(value: String): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setType(value: Middleware): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

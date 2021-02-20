@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,48 +58,36 @@ object Contribution {
   }
   
   @scala.inline
-  implicit class ContributionOps[Self <: Contribution] (val x: Self) extends AnyVal {
+  implicit class ContributionMutableBuilder[Self <: Contribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraints(value: js.Array[ContributionConstraint]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintsVarargs(value: ContributionConstraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludes(value: js.Array[String]): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraintsVarargs(value: ContributionConstraint*): Self = this.set("constraints", js.Array(value :_*))
+    def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value :_*))
     
     @scala.inline
-    def setConstraints(value: js.Array[ContributionConstraint]): Self = this.set("constraints", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludesVarargs(value: String*): Self = this.set("includes", js.Array(value :_*))
+    def setRestrictedTo(value: js.Array[String]): Self = StObject.set(x, "restrictedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludes(value: js.Array[String]): Self = this.set("includes", value.asInstanceOf[js.Any])
+    def setRestrictedToVarargs(value: String*): Self = StObject.set(x, "restrictedTo", js.Array(value :_*))
     
     @scala.inline
-    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictedToVarargs(value: String*): Self = this.set("restrictedTo", js.Array(value :_*))
+    def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
     
     @scala.inline
-    def setRestrictedTo(value: js.Array[String]): Self = this.set("restrictedTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetsVarargs(value: String*): Self = this.set("targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargets(value: js.Array[String]): Self = this.set("targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

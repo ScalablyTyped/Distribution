@@ -3,14 +3,14 @@ package typings.samchon
 import typings.samchon.distributedSystemArrayMod.DistributedSystemArray
 import typings.samchon.distributedSystemMod.DistributedSystem
 import typings.samchon.mediatorSystemMod.MediatorSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/distributed/DistributedSystemArrayMediator", JSImport.Namespace)
-@js.native
-object distributedSystemArrayMediatorMod extends js.Object {
+object distributedSystemArrayMediatorMod {
   
+  @JSImport("samchon/templates/distributed/DistributedSystemArrayMediator", "DistributedSystemArrayMediator")
   @js.native
   /**
     * Default Constructor.

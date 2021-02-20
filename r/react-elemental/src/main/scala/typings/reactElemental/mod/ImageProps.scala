@@ -3,6 +3,7 @@ package typings.reactElemental.mod
 import typings.react.mod.CSSProperties
 import typings.react.mod.ImgHTMLAttributes
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,51 +35,39 @@ object ImageProps {
   }
   
   @scala.inline
-  implicit class ImagePropsOps[Self <: ImageProps] (val x: Self) extends AnyVal {
+  implicit class ImagePropsMutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setImgStyle(value: CSSProperties): Self = StObject.set(x, "imgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setImgStyleUndefined: Self = StObject.set(x, "imgStyle", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImgStyle(value: CSSProperties): Self = this.set("imgStyle", value.asInstanceOf[js.Any])
+    def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
     
     @scala.inline
-    def deleteImgStyle: Self = this.set("imgStyle", js.undefined)
+    def setShowIntermediate(value: Boolean): Self = StObject.set(x, "showIntermediate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLazy(value: Boolean): Self = this.set("lazy", value.asInstanceOf[js.Any])
+    def setShowIntermediateUndefined: Self = StObject.set(x, "showIntermediate", js.undefined)
     
     @scala.inline
-    def deleteLazy: Self = this.set("lazy", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowIntermediate(value: Boolean): Self = this.set("showIntermediate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowIntermediate: Self = this.set("showIntermediate", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

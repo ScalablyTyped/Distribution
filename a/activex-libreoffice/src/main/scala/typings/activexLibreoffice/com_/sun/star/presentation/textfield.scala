@@ -1,13 +1,12 @@
 package typings.activexLibreoffice.com_.sun.star.presentation
 
 import typings.activexLibreoffice.com_.sun.star.text.TextField_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("com.sun.star.presentation.textfield")
-@js.native
-object textfield extends js.Object {
+object textfield {
   
   /**
     * specifies service of a presentation date and time text field.

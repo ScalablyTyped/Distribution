@@ -3,52 +3,63 @@ package typings.winrtUwp.global.Windows.Devices
 import typings.winrtUwp.Windows.Devices.Radios.RadioAccessStatus
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The members of this namespace allow your app to find and control radio adapters, like Wi-Fi and Bluetooth, on the device where your app runs, and to query those radios for certain attributes. */
-@JSGlobal("Windows.Devices.Radios")
-@js.native
-object Radios extends js.Object {
+object Radios {
   
   /** Represents a radio device on the system. */
+  @JSGlobal("Windows.Devices.Radios.Radio")
   @js.native
   abstract class Radio ()
     extends typings.winrtUwp.Windows.Devices.Radios.Radio
-  /* static members */
-  @js.native
-  object Radio extends js.Object {
+  object Radio {
     
     /**
       * A static method that retrieves a Radio object corresponding to a device Id obtained through Windows.Devices.Enumeration.DeviceInformation.FindAllAsync and related APIs.
       * @param deviceId A string that identifies a particular radio device.
       * @return An asynchronous retrieval operation. On successful completion, it contains a Radio object that represents the specified radio device.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.Radios.Radio.fromIdAsync")
+    @js.native
     def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Radios.Radio] = js.native
     
     /**
       * A static method that returns an Advanced Query Syntax (AQS) string to be used to enumerate or monitor Radio devices with Windows.Devices.Enumeration.DeviceInformation.FindAllAsync and related methods.
       * @return An identifier to be used to enumerate radio devices.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.Radios.Radio.getDeviceSelector")
+    @js.native
     def getDeviceSelector(): String = js.native
     
     /**
       * A static, asynchronous method that retrieves a collection of Windows.Devices.Radios.Radio objects representing radio devices existing on the system.
       * @return An asynchronous retrieval operation. When the operation is complete, contains a list of Windows.Devices.Radios.Radio objects describing available radios.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.Radios.Radio.getRadiosAsync")
+    @js.native
     def getRadiosAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
     
     /**
       * An asynchronous method that retrieves a value indicating what access the current user has to the radio represented by this object. In circumstances where user permission is required to access the radio, this method prompts the user for permission. Consequently, always call this method on the UI thread.
       * @return An asynchronous status retrieval operation. On successful completion, contains an enumeration value describing the current user's access to this radio.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.Radios.Radio.requestAccessAsync")
+    @js.native
     def requestAccessAsync(): IPromiseWithIAsyncOperation[RadioAccessStatus] = js.native
   }
   
   /** Enumeration that describes possible access states that a user can have to a given radio. */
+  @JSGlobal("Windows.Devices.Radios.RadioAccessStatus")
   @js.native
-  object RadioAccessStatus extends js.Object {
+  object RadioAccessStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Radios.RadioAccessStatus with Double] = js.native
@@ -63,8 +74,9 @@ object Radios extends js.Object {
   }
   
   /** Enumeration that represents the kinds of radio devices. */
+  @JSGlobal("Windows.Devices.Radios.RadioKind")
   @js.native
-  object RadioKind extends js.Object {
+  object RadioKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Radios.RadioKind with Double] = js.native
@@ -81,8 +93,9 @@ object Radios extends js.Object {
   }
   
   /** Enumeration that describes possible radio states. */
+  @JSGlobal("Windows.Devices.Radios.RadioState")
   @js.native
-  object RadioState extends js.Object {
+  object RadioState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Radios.RadioState with Double] = js.native

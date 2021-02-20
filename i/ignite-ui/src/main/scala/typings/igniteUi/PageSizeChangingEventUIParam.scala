@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageSizeChangingEventUIParam extends js.Object {
+trait PageSizeChangingEventUIParam extends StObject {
   
   /**
     * Gets the current page size.
@@ -31,36 +32,24 @@ object PageSizeChangingEventUIParam {
   }
   
   @scala.inline
-  implicit class PageSizeChangingEventUIParamOps[Self <: PageSizeChangingEventUIParam] (val x: Self) extends AnyVal {
+  implicit class PageSizeChangingEventUIParamMutableBuilder[Self <: PageSizeChangingEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPageSize(value: Double): Self = StObject.set(x, "currentPageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPageSizeUndefined: Self = StObject.set(x, "currentPageSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewPageSize(value: Double): Self = StObject.set(x, "newPageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPageSize(value: Double): Self = this.set("currentPageSize", value.asInstanceOf[js.Any])
+    def setNewPageSizeUndefined: Self = StObject.set(x, "newPageSize", js.undefined)
     
     @scala.inline
-    def deleteCurrentPageSize: Self = this.set("currentPageSize", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPageSize(value: Double): Self = this.set("newPageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewPageSize: Self = this.set("newPageSize", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

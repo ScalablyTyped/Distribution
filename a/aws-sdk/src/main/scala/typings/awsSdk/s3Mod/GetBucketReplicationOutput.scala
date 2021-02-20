@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBucketReplicationOutput extends js.Object {
+trait GetBucketReplicationOutput extends StObject {
   
   var ReplicationConfiguration: js.UndefOr[typings.awsSdk.s3Mod.ReplicationConfiguration] = js.native
 }
@@ -18,24 +19,12 @@ object GetBucketReplicationOutput {
   }
   
   @scala.inline
-  implicit class GetBucketReplicationOutputOps[Self <: GetBucketReplicationOutput] (val x: Self) extends AnyVal {
+  implicit class GetBucketReplicationOutputMutableBuilder[Self <: GetBucketReplicationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplicationConfiguration(value: ReplicationConfiguration): Self = StObject.set(x, "ReplicationConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplicationConfiguration(value: ReplicationConfiguration): Self = this.set("ReplicationConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationConfiguration: Self = this.set("ReplicationConfiguration", js.undefined)
+    def setReplicationConfigurationUndefined: Self = StObject.set(x, "ReplicationConfiguration", js.undefined)
   }
 }

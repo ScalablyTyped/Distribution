@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimerState extends js.Object
+sealed trait TimerState extends StObject
 @JSGlobal("BABYLON.TimerState")
 @js.native
-object TimerState extends js.Object {
+object TimerState extends StObject {
   
   /**
     * Timer ended (whether aborted or time reached)

@@ -1,11 +1,12 @@
 package typings.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HideLoadingOptions extends js.Object {
+trait HideLoadingOptions extends StObject {
   
   /**
     * 体指当前page实例，某些场景下，需要指明在哪个page执行hideLoading。
@@ -21,21 +22,9 @@ object HideLoadingOptions {
   }
   
   @scala.inline
-  implicit class HideLoadingOptionsOps[Self <: HideLoadingOptions] (val x: Self) extends AnyVal {
+  implicit class HideLoadingOptionsMutableBuilder[Self <: HideLoadingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPage(value: js.Any): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
   }
 }

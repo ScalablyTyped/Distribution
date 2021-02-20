@@ -2,12 +2,13 @@ package typings.hapi.mod
 
 import typings.hapi.hapiStrings.Asterisk
 import typings.hapi.hapiStrings.ignore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteOptionsCors extends js.Object {
+trait RouteOptionsCors extends StObject {
   
   /**
     * a strings array of additional headers to exposedHeaders. Use this to keep the default headers in place.
@@ -56,75 +57,63 @@ object RouteOptionsCors {
   }
   
   @scala.inline
-  implicit class RouteOptionsCorsOps[Self <: RouteOptionsCors] (val x: Self) extends AnyVal {
+  implicit class RouteOptionsCorsMutableBuilder[Self <: RouteOptionsCors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalExposedHeaders(value: js.Array[String]): Self = StObject.set(x, "additionalExposedHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalExposedHeadersUndefined: Self = StObject.set(x, "additionalExposedHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalExposedHeadersVarargs(value: String*): Self = StObject.set(x, "additionalExposedHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalExposedHeadersVarargs(value: String*): Self = this.set("additionalExposedHeaders", js.Array(value :_*))
+    def setAdditionalHeaders(value: js.Array[String]): Self = StObject.set(x, "additionalHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalExposedHeaders(value: js.Array[String]): Self = this.set("additionalExposedHeaders", value.asInstanceOf[js.Any])
+    def setAdditionalHeadersUndefined: Self = StObject.set(x, "additionalHeaders", js.undefined)
     
     @scala.inline
-    def deleteAdditionalExposedHeaders: Self = this.set("additionalExposedHeaders", js.undefined)
+    def setAdditionalHeadersVarargs(value: String*): Self = StObject.set(x, "additionalHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalHeadersVarargs(value: String*): Self = this.set("additionalHeaders", js.Array(value :_*))
+    def setCredentials(value: Boolean): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalHeaders(value: js.Array[String]): Self = this.set("additionalHeaders", value.asInstanceOf[js.Any])
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def deleteAdditionalHeaders: Self = this.set("additionalHeaders", js.undefined)
+    def setExposedHeaders(value: js.Array[String]): Self = StObject.set(x, "exposedHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: Boolean): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setExposedHeadersUndefined: Self = StObject.set(x, "exposedHeaders", js.undefined)
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setExposedHeadersVarargs(value: String*): Self = StObject.set(x, "exposedHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setExposedHeadersVarargs(value: String*): Self = this.set("exposedHeaders", js.Array(value :_*))
+    def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposedHeaders(value: js.Array[String]): Self = this.set("exposedHeaders", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteExposedHeaders: Self = this.set("exposedHeaders", js.undefined)
+    def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setHeadersVarargs(value: String*): Self = this.set("headers", js.Array(value :_*))
+    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Array[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setOrigin(value: js.Array[String] | Asterisk | ignore): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
-    
-    @scala.inline
-    def setOriginVarargs(value: String*): Self = this.set("origin", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrigin(value: js.Array[String] | Asterisk | ignore): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value :_*))
   }
 }

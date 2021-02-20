@@ -6,12 +6,13 @@ import typings.cassandraDriver.policiesMod.policies.reconnection.ReconnectionPol
 import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
 import typings.cassandraDriver.policiesMod.policies.speculativeExecution.SpeculativeExecutionPolicy
 import typings.cassandraDriver.policiesMod.policies.timestampGeneration.TimestampGenerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddressResolution extends js.Object {
+trait AddressResolution extends StObject {
   
   var addressResolution: js.UndefOr[AddressTranslator] = js.native
   
@@ -34,54 +35,42 @@ object AddressResolution {
   }
   
   @scala.inline
-  implicit class AddressResolutionOps[Self <: AddressResolution] (val x: Self) extends AnyVal {
+  implicit class AddressResolutionMutableBuilder[Self <: AddressResolution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressResolution(value: AddressTranslator): Self = StObject.set(x, "addressResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressResolutionUndefined: Self = StObject.set(x, "addressResolution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadBalancing(value: LoadBalancingPolicy): Self = StObject.set(x, "loadBalancing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressResolution(value: AddressTranslator): Self = this.set("addressResolution", value.asInstanceOf[js.Any])
+    def setLoadBalancingUndefined: Self = StObject.set(x, "loadBalancing", js.undefined)
     
     @scala.inline
-    def deleteAddressResolution: Self = this.set("addressResolution", js.undefined)
+    def setReconnection(value: ReconnectionPolicy): Self = StObject.set(x, "reconnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancing(value: LoadBalancingPolicy): Self = this.set("loadBalancing", value.asInstanceOf[js.Any])
+    def setReconnectionUndefined: Self = StObject.set(x, "reconnection", js.undefined)
     
     @scala.inline
-    def deleteLoadBalancing: Self = this.set("loadBalancing", js.undefined)
+    def setRetry(value: RetryPolicy): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReconnection(value: ReconnectionPolicy): Self = this.set("reconnection", value.asInstanceOf[js.Any])
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
     @scala.inline
-    def deleteReconnection: Self = this.set("reconnection", js.undefined)
+    def setSpeculativeExecution(value: SpeculativeExecutionPolicy): Self = StObject.set(x, "speculativeExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetry(value: RetryPolicy): Self = this.set("retry", value.asInstanceOf[js.Any])
+    def setSpeculativeExecutionUndefined: Self = StObject.set(x, "speculativeExecution", js.undefined)
     
     @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
+    def setTimestampGeneration(value: TimestampGenerator): Self = StObject.set(x, "timestampGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeculativeExecution(value: SpeculativeExecutionPolicy): Self = this.set("speculativeExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeculativeExecution: Self = this.set("speculativeExecution", js.undefined)
-    
-    @scala.inline
-    def setTimestampGeneration(value: TimestampGenerator): Self = this.set("timestampGeneration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampGeneration: Self = this.set("timestampGeneration", js.undefined)
+    def setTimestampGenerationUndefined: Self = StObject.set(x, "timestampGeneration", js.undefined)
   }
 }

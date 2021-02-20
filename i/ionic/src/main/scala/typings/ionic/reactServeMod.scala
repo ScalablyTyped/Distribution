@@ -4,16 +4,17 @@ import typings.ionic.definitionsMod.ReactServeOptions
 import typings.ionic.libServeMod.ServeCLI
 import typings.ionic.libServeMod.ServeRunner
 import typings.ionic.libServeMod.ServeRunnerDeps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/project/react/serve", JSImport.Namespace)
-@js.native
-object reactServeMod extends js.Object {
+object reactServeMod {
   
+  @JSImport("ionic/lib/project/react/serve", "ReactServeCLI")
   @js.native
-  class ReactServeCLI () extends ServeCLI[ReactServeOptions] {
+  class ReactServeCLI protected () extends ServeCLI[ReactServeOptions] {
+    def this(e: ServeRunnerDeps) = this()
     
     var chunks: Double = js.native
     
@@ -21,6 +22,7 @@ object reactServeMod extends js.Object {
     val script_ReactServeCLI: /* "ionic:serve" */ String = js.native
   }
   
+  @JSImport("ionic/lib/project/react/serve", "ReactServeRunner")
   @js.native
   class ReactServeRunner protected () extends ServeRunner[ReactServeOptions] {
     def this(e: ServeRunnerDeps) = this()

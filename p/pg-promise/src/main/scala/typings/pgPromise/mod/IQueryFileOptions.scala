@@ -1,12 +1,13 @@
 package typings.pgPromise.mod
 
 import typings.pgPromise.pgPromiseStrings.after
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IQueryFileOptions extends js.Object {
+trait IQueryFileOptions extends StObject {
   
   var compress: js.UndefOr[Boolean] = js.native
   
@@ -27,48 +28,36 @@ object IQueryFileOptions {
   }
   
   @scala.inline
-  implicit class IQueryFileOptionsOps[Self <: IQueryFileOptions] (val x: Self) extends AnyVal {
+  implicit class IQueryFileOptionsMutableBuilder[Self <: IQueryFileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompress(value: Boolean): Self = this.set("compress", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteCompress: Self = this.set("compress", js.undefined)
+    def setMinify(value: Boolean | after): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setNoWarnings(value: Boolean): Self = StObject.set(x, "noWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinify(value: Boolean | after): Self = this.set("minify", value.asInstanceOf[js.Any])
+    def setNoWarningsUndefined: Self = StObject.set(x, "noWarnings", js.undefined)
     
     @scala.inline
-    def deleteMinify: Self = this.set("minify", js.undefined)
+    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoWarnings(value: Boolean): Self = this.set("noWarnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoWarnings: Self = this.set("noWarnings", js.undefined)
-    
-    @scala.inline
-    def setParams(value: js.Any): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

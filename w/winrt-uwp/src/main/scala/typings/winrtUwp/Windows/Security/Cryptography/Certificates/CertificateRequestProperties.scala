@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the properties of a certificate request. */
 @js.native
-trait CertificateRequestProperties extends js.Object {
+trait CertificateRequestProperties extends StObject {
   
   /** Gets or sets the CA exchange certificate that is used to encrypt a key attestation certificate request. */
   var attestationCredentialCertificate: Certificate = js.native
@@ -86,69 +87,57 @@ object CertificateRequestProperties {
   }
   
   @scala.inline
-  implicit class CertificateRequestPropertiesOps[Self <: CertificateRequestProperties] (val x: Self) extends AnyVal {
+  implicit class CertificateRequestPropertiesMutableBuilder[Self <: CertificateRequestProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttestationCredentialCertificate(value: Certificate): Self = StObject.set(x, "attestationCredentialCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerNamePrefix(value: String): Self = StObject.set(x, "containerNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttestationCredentialCertificate(value: Certificate): Self = this.set("attestationCredentialCertificate", value.asInstanceOf[js.Any])
+    def setCurveName(value: String): Self = StObject.set(x, "curveName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    def setCurveParameters(value: Double): Self = StObject.set(x, "curveParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerNamePrefix(value: String): Self = this.set("containerNamePrefix", value.asInstanceOf[js.Any])
+    def setExportable(value: ExportOption): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveName(value: String): Self = this.set("curveName", value.asInstanceOf[js.Any])
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveParameters(value: Double): Self = this.set("curveParameters", value.asInstanceOf[js.Any])
+    def setHashAlgorithmName(value: String): Self = StObject.set(x, "hashAlgorithmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportable(value: ExportOption): Self = this.set("exportable", value.asInstanceOf[js.Any])
+    def setKeyAlgorithmName(value: String): Self = StObject.set(x, "keyAlgorithmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setKeyProtectionLevel(value: KeyProtectionLevel): Self = StObject.set(x, "keyProtectionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashAlgorithmName(value: String): Self = this.set("hashAlgorithmName", value.asInstanceOf[js.Any])
+    def setKeySize(value: Double): Self = StObject.set(x, "keySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyAlgorithmName(value: String): Self = this.set("keyAlgorithmName", value.asInstanceOf[js.Any])
+    def setKeyStorageProviderName(value: String): Self = StObject.set(x, "keyStorageProviderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyProtectionLevel(value: KeyProtectionLevel): Self = this.set("keyProtectionLevel", value.asInstanceOf[js.Any])
+    def setKeyUsages(value: EnrollKeyUsages): Self = StObject.set(x, "keyUsages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeySize(value: Double): Self = this.set("keySize", value.asInstanceOf[js.Any])
+    def setSigningCertificate(value: Certificate): Self = StObject.set(x, "signingCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyStorageProviderName(value: String): Self = this.set("keyStorageProviderName", value.asInstanceOf[js.Any])
+    def setSmartcardReaderName(value: String): Self = StObject.set(x, "smartcardReaderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyUsages(value: EnrollKeyUsages): Self = this.set("keyUsages", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningCertificate(value: Certificate): Self = this.set("signingCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmartcardReaderName(value: String): Self = this.set("smartcardReaderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseExistingKey(value: Boolean): Self = this.set("useExistingKey", value.asInstanceOf[js.Any])
+    def setUseExistingKey(value: Boolean): Self = StObject.set(x, "useExistingKey", value.asInstanceOf[js.Any])
   }
 }

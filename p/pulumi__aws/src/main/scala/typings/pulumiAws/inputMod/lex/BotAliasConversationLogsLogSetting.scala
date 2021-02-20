@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.lex
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BotAliasConversationLogsLogSetting extends js.Object {
+trait BotAliasConversationLogsLogSetting extends StObject {
   
   /**
     * The destination where logs are delivered. Options are `CLOUDWATCH_LOGS` or `S3`.
@@ -42,39 +43,27 @@ object BotAliasConversationLogsLogSetting {
   }
   
   @scala.inline
-  implicit class BotAliasConversationLogsLogSettingOps[Self <: BotAliasConversationLogsLogSetting] (val x: Self) extends AnyVal {
+  implicit class BotAliasConversationLogsLogSettingMutableBuilder[Self <: BotAliasConversationLogsLogSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     
     @scala.inline
-    def setDestination(value: Input[String]): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setLogType(value: Input[String]): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogType(value: Input[String]): Self = this.set("logType", value.asInstanceOf[js.Any])
+    def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArn(value: Input[String]): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
+    def setResourcePrefix(value: Input[String]): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyArn(value: Input[String]): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
-    
-    @scala.inline
-    def setResourcePrefix(value: Input[String]): Self = this.set("resourcePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcePrefix: Self = this.set("resourcePrefix", js.undefined)
+    def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
   }
 }

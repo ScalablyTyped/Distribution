@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceQuery extends js.Object {
+trait ResourceQuery extends StObject {
   
   /**
     * The query that defines a group or a search.
@@ -26,24 +27,12 @@ object ResourceQuery {
   }
   
   @scala.inline
-  implicit class ResourceQueryOps[Self <: ResourceQuery] (val x: Self) extends AnyVal {
+  implicit class ResourceQueryMutableBuilder[Self <: ResourceQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuery(value: Query): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQuery(value: Query): Self = this.set("Query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: QueryType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: QueryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

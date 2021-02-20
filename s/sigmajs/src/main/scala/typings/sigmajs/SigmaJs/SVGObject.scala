@@ -1,12 +1,13 @@
 package typings.sigmajs.SigmaJs
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGObject[T] extends js.Object {
+trait SVGObject[T] extends StObject {
   
   def create(`object`: T, a: js.Any*): Element = js.native
   
@@ -21,24 +22,12 @@ object SVGObject {
   }
   
   @scala.inline
-  implicit class SVGObjectOps[Self <: SVGObject[_], T] (val x: Self with SVGObject[T]) extends AnyVal {
+  implicit class SVGObjectMutableBuilder[Self <: SVGObject[_], T] (val x: Self with SVGObject[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: (T, /* repeated */ js.Any) => Element): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreate(value: (T, /* repeated */ js.Any) => Element): Self = this.set("create", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdate(value: (T, /* repeated */ js.Any) => Unit): Self = this.set("update", js.Any.fromFunction2(value))
+    def setUpdate(value: (T, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

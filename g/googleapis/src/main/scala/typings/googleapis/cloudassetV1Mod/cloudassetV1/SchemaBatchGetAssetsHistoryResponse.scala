@@ -1,5 +1,6 @@
 package typings.googleapis.cloudassetV1Mod.cloudassetV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Batch get assets history response.
   */
 @js.native
-trait SchemaBatchGetAssetsHistoryResponse extends js.Object {
+trait SchemaBatchGetAssetsHistoryResponse extends StObject {
   
   /**
     * A list of assets with valid time windows.
@@ -24,27 +25,15 @@ object SchemaBatchGetAssetsHistoryResponse {
   }
   
   @scala.inline
-  implicit class SchemaBatchGetAssetsHistoryResponseOps[Self <: SchemaBatchGetAssetsHistoryResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchGetAssetsHistoryResponseMutableBuilder[Self <: SchemaBatchGetAssetsHistoryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssets(value: js.Array[SchemaTemporalAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssetsVarargs(value: SchemaTemporalAsset*): Self = this.set("assets", js.Array(value :_*))
-    
-    @scala.inline
-    def setAssets(value: js.Array[SchemaTemporalAsset]): Self = this.set("assets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssets: Self = this.set("assets", js.undefined)
+    def setAssetsVarargs(value: SchemaTemporalAsset*): Self = StObject.set(x, "assets", js.Array(value :_*))
   }
 }

@@ -4,16 +4,16 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/RenderPipeline/postProcessRenderEffect", JSImport.Namespace)
-@js.native
-object postProcessRenderEffectMod extends js.Object {
+object postProcessRenderEffectMod {
   
+  @JSImport("babylonjs/PostProcesses/RenderPipeline/postProcessRenderEffect", "PostProcessRenderEffect")
   @js.native
-  class PostProcessRenderEffect protected () extends js.Object {
+  class PostProcessRenderEffect protected () extends StObject {
     /**
       * Instantiates a post process render effect.
       * A post process can be used to apply a shader to a texture after it is rendered.

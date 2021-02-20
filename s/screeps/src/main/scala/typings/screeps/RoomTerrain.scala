@@ -1,6 +1,7 @@
 package typings.screeps
 
 import typings.screeps.screepsNumbers.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Result of Object that contains all terrain for a room
   */
 @js.native
-trait RoomTerrain extends js.Object {
+trait RoomTerrain extends StObject {
   
   /**
     * Get terrain type at the specified room position. This method works for any room in the world even if you have no access to it.
@@ -28,21 +29,9 @@ object RoomTerrain {
   }
   
   @scala.inline
-  implicit class RoomTerrainOps[Self <: RoomTerrain] (val x: Self) extends AnyVal {
+  implicit class RoomTerrainMutableBuilder[Self <: RoomTerrain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet(value: (Double, Double) => `0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP): Self = this.set("get", js.Any.fromFunction2(value))
+    def setGet(value: (Double, Double) => `0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Conversation extends js.Object {
+trait Conversation extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -82,81 +83,69 @@ object Conversation {
   }
   
   @scala.inline
-  implicit class ConversationOps[Self <: Conversation] (val x: Self) extends AnyVal {
+  implicit class ConversationMutableBuilder[Self <: Conversation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearAlwaysAssignCategories(value: Store => Unit): Self = StObject.set(x, "ClearAlwaysAssignCategories", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setConversationID(value: String): Self = StObject.set(x, "ConversationID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setGetAlwaysAssignCategories(value: Store => String): Self = StObject.set(x, "GetAlwaysAssignCategories", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearAlwaysAssignCategories(value: Store => Unit): Self = this.set("ClearAlwaysAssignCategories", js.Any.fromFunction1(value))
+    def setGetAlwaysDelete(value: Store => OlAlwaysDeleteConversation): Self = StObject.set(x, "GetAlwaysDelete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConversationID(value: String): Self = this.set("ConversationID", value.asInstanceOf[js.Any])
+    def setGetAlwaysMoveToFolder(value: Store => Folder): Self = StObject.set(x, "GetAlwaysMoveToFolder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAlwaysAssignCategories(value: Store => String): Self = this.set("GetAlwaysAssignCategories", js.Any.fromFunction1(value))
+    def setGetChildren(value: js.Any => SimpleItems): Self = StObject.set(x, "GetChildren", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAlwaysDelete(value: Store => OlAlwaysDeleteConversation): Self = this.set("GetAlwaysDelete", js.Any.fromFunction1(value))
+    def setGetParent(value: js.Any => js.Any): Self = StObject.set(x, "GetParent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAlwaysMoveToFolder(value: Store => Folder): Self = this.set("GetAlwaysMoveToFolder", js.Any.fromFunction1(value))
+    def setGetRootItems(value: () => SimpleItems): Self = StObject.set(x, "GetRootItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChildren(value: js.Any => SimpleItems): Self = this.set("GetChildren", js.Any.fromFunction1(value))
+    def setGetTable(value: () => Table): Self = StObject.set(x, "GetTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParent(value: js.Any => js.Any): Self = this.set("GetParent", js.Any.fromFunction1(value))
+    def setMarkAsRead(value: () => Unit): Self = StObject.set(x, "MarkAsRead", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRootItems(value: () => SimpleItems): Self = this.set("GetRootItems", js.Any.fromFunction0(value))
+    def setMarkAsUnread(value: () => Unit): Self = StObject.set(x, "MarkAsUnread", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTable(value: () => Table): Self = this.set("GetTable", js.Any.fromFunction0(value))
+    def setOutlookDotConversation_typekey(value: Conversation): Self = StObject.set(x, "Outlook.Conversation_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkAsRead(value: () => Unit): Self = this.set("MarkAsRead", js.Any.fromFunction0(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkAsUnread(value: () => Unit): Self = this.set("MarkAsUnread", js.Any.fromFunction0(value))
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotConversation_typekey(value: Conversation): Self = this.set("Outlook.Conversation_typekey", value.asInstanceOf[js.Any])
+    def setSetAlwaysAssignCategories(value: (String, Store) => Unit): Self = StObject.set(x, "SetAlwaysAssignCategories", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSetAlwaysDelete(value: (OlAlwaysDeleteConversation, Store) => Unit): Self = StObject.set(x, "SetAlwaysDelete", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    def setSetAlwaysMoveToFolder(value: (Folder, Store) => Unit): Self = StObject.set(x, "SetAlwaysMoveToFolder", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetAlwaysAssignCategories(value: (String, Store) => Unit): Self = this.set("SetAlwaysAssignCategories", js.Any.fromFunction2(value))
+    def setStopAlwaysDelete(value: Store => Unit): Self = StObject.set(x, "StopAlwaysDelete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAlwaysDelete(value: (OlAlwaysDeleteConversation, Store) => Unit): Self = this.set("SetAlwaysDelete", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetAlwaysMoveToFolder(value: (Folder, Store) => Unit): Self = this.set("SetAlwaysMoveToFolder", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setStopAlwaysDelete(value: Store => Unit): Self = this.set("StopAlwaysDelete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStopAlwaysMoveToFolder(value: Store => Unit): Self = this.set("StopAlwaysMoveToFolder", js.Any.fromFunction1(value))
+    def setStopAlwaysMoveToFolder(value: Store => Unit): Self = StObject.set(x, "StopAlwaysMoveToFolder", js.Any.fromFunction1(value))
   }
 }

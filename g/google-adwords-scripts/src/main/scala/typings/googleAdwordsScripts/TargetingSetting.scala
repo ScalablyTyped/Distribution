@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TARGET_ALL_TRUE
   - typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TARGET_ALL_FALSE
 */
-trait TargetingSetting extends js.Object
+trait TargetingSetting extends StObject
 object TargetingSetting {
   
   @scala.inline

@@ -8,14 +8,14 @@ import typings.ionicCore.tabBarInterfaceMod.TabButtonClickEventDetail
 import typings.ionicCore.tabBarInterfaceMod.TabButtonLayout
 import typings.std.CustomEvent
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/tab-button/tab-button", JSImport.Namespace)
-@js.native
-object tabButtonMod extends js.Object {
+object tabButtonMod {
   
+  @JSImport("@ionic/core/dist/types/components/tab-button/tab-button", "TabButton")
   @js.native
   class TabButton ()
     extends ComponentInterface

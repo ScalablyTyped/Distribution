@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,42 +87,30 @@ object Scenario {
   }
   
   @scala.inline
-  implicit class ScenarioOps[Self <: Scenario] (val x: Self) extends AnyVal {
+  implicit class ScenarioMutableBuilder[Self <: Scenario] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyBack(value: Boolean): Self = StObject.set(x, "CopyBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyFormulas(value: Boolean): Self = StObject.set(x, "CopyFormulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: Double): Self = this.set("BorderColor", value.asInstanceOf[js.Any])
+    def setCopyStyles(value: Boolean): Self = StObject.set(x, "CopyStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyBack(value: Boolean): Self = this.set("CopyBack", value.asInstanceOf[js.Any])
+    def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyFormulas(value: Boolean): Self = this.set("CopyFormulas", value.asInstanceOf[js.Any])
+    def setPrintBorder(value: Boolean): Self = StObject.set(x, "PrintBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyStyles(value: Boolean): Self = this.set("CopyStyles", value.asInstanceOf[js.Any])
+    def setProtected(value: Boolean): Self = StObject.set(x, "Protected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("IsActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrintBorder(value: Boolean): Self = this.set("PrintBorder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtected(value: Boolean): Self = this.set("Protected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowBorder(value: Boolean): Self = this.set("ShowBorder", value.asInstanceOf[js.Any])
+    def setShowBorder(value: Boolean): Self = StObject.set(x, "ShowBorder", value.asInstanceOf[js.Any])
   }
 }

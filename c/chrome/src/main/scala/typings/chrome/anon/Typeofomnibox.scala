@@ -6,12 +6,13 @@ import typings.chrome.chrome.omnibox.OmniboxInputEnteredEvent
 import typings.chrome.chrome.omnibox.OmniboxInputStartedEvent
 import typings.chrome.chrome.omnibox.OmniboxSuggestionDeletedEvent
 import typings.chrome.chrome.omnibox.Suggestion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofomnibox extends js.Object {
+trait Typeofomnibox extends StObject {
   
   var onDeleteSuggestion: OmniboxSuggestionDeletedEvent = js.native
   
@@ -41,36 +42,24 @@ object Typeofomnibox {
   }
   
   @scala.inline
-  implicit class TypeofomniboxOps[Self <: Typeofomnibox] (val x: Self) extends AnyVal {
+  implicit class TypeofomniboxMutableBuilder[Self <: Typeofomnibox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnDeleteSuggestion(value: OmniboxSuggestionDeletedEvent): Self = StObject.set(x, "onDeleteSuggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnInputCancelled(value: OmniboxInputCancelledEvent): Self = StObject.set(x, "onInputCancelled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnInputChanged(value: OmniboxInputChangedEvent): Self = StObject.set(x, "onInputChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDeleteSuggestion(value: OmniboxSuggestionDeletedEvent): Self = this.set("onDeleteSuggestion", value.asInstanceOf[js.Any])
+    def setOnInputEntered(value: OmniboxInputEnteredEvent): Self = StObject.set(x, "onInputEntered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnInputCancelled(value: OmniboxInputCancelledEvent): Self = this.set("onInputCancelled", value.asInstanceOf[js.Any])
+    def setOnInputStarted(value: OmniboxInputStartedEvent): Self = StObject.set(x, "onInputStarted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnInputChanged(value: OmniboxInputChangedEvent): Self = this.set("onInputChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnInputEntered(value: OmniboxInputEnteredEvent): Self = this.set("onInputEntered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnInputStarted(value: OmniboxInputStartedEvent): Self = this.set("onInputStarted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetDefaultSuggestion(value: Suggestion => Unit): Self = this.set("setDefaultSuggestion", js.Any.fromFunction1(value))
+    def setSetDefaultSuggestion(value: Suggestion => Unit): Self = StObject.set(x, "setDefaultSuggestion", js.Any.fromFunction1(value))
   }
 }

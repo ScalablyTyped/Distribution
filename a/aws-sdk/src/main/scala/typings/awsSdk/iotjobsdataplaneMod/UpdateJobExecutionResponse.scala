@@ -1,11 +1,12 @@
 package typings.awsSdk.iotjobsdataplaneMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateJobExecutionResponse extends js.Object {
+trait UpdateJobExecutionResponse extends StObject {
   
   /**
     * A JobExecutionState object.
@@ -26,30 +27,18 @@ object UpdateJobExecutionResponse {
   }
   
   @scala.inline
-  implicit class UpdateJobExecutionResponseOps[Self <: UpdateJobExecutionResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateJobExecutionResponseMutableBuilder[Self <: UpdateJobExecutionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionState(value: JobExecutionState): Self = StObject.set(x, "executionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionStateUndefined: Self = StObject.set(x, "executionState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobDocument(value: JobDocument): Self = StObject.set(x, "jobDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionState(value: JobExecutionState): Self = this.set("executionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionState: Self = this.set("executionState", js.undefined)
-    
-    @scala.inline
-    def setJobDocument(value: JobDocument): Self = this.set("jobDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobDocument: Self = this.set("jobDocument", js.undefined)
+    def setJobDocumentUndefined: Self = StObject.set(x, "jobDocument", js.undefined)
   }
 }

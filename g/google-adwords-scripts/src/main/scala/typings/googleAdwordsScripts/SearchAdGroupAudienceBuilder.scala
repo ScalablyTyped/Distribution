@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object SearchAdGroupAudienceBuilder {
   }
   
   @scala.inline
-  implicit class SearchAdGroupAudienceBuilderOps[Self <: SearchAdGroupAudienceBuilder[_], SearchAdGroupAudience] (val x: Self with SearchAdGroupAudienceBuilder[SearchAdGroupAudience]) extends AnyVal {
+  implicit class SearchAdGroupAudienceBuilderMutableBuilder[Self <: SearchAdGroupAudienceBuilder[_], SearchAdGroupAudience] (val x: Self with SearchAdGroupAudienceBuilder[SearchAdGroupAudience]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclude(value: () => AdWordsOperation[SearchAdGroupAudience]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithAudience(value: UserList => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "withAudience", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithAudienceId(value: Double => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "withAudienceId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExclude(value: () => AdWordsOperation[SearchAdGroupAudience]): Self = this.set("exclude", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWithAudience(value: UserList => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = this.set("withAudience", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithAudienceId(value: Double => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = this.set("withAudienceId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithBidModifier(value: Double => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = this.set("withBidModifier", js.Any.fromFunction1(value))
+    def setWithBidModifier(value: Double => SearchAdGroupAudienceBuilder[SearchAdGroupAudience]): Self = StObject.set(x, "withBidModifier", js.Any.fromFunction1(value))
   }
 }

@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Paper.PaperClassKey>> */
 @js.native
-trait PartialStyleRulesPaperCla extends js.Object {
+trait PartialStyleRulesPaperCla extends StObject {
   
   var elevation0: js.UndefOr[CSSProperties] = js.native
   
@@ -72,180 +73,168 @@ object PartialStyleRulesPaperCla {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesPaperClaOps[Self <: PartialStyleRulesPaperCla] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesPaperClaMutableBuilder[Self <: PartialStyleRulesPaperCla] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElevation0(value: CSSProperties): Self = StObject.set(x, "elevation0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElevation0Undefined: Self = StObject.set(x, "elevation0", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElevation1(value: CSSProperties): Self = StObject.set(x, "elevation1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation0(value: CSSProperties): Self = this.set("elevation0", value.asInstanceOf[js.Any])
+    def setElevation10(value: CSSProperties): Self = StObject.set(x, "elevation10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation0: Self = this.set("elevation0", js.undefined)
+    def setElevation10Undefined: Self = StObject.set(x, "elevation10", js.undefined)
     
     @scala.inline
-    def setElevation1(value: CSSProperties): Self = this.set("elevation1", value.asInstanceOf[js.Any])
+    def setElevation11(value: CSSProperties): Self = StObject.set(x, "elevation11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation1: Self = this.set("elevation1", js.undefined)
+    def setElevation11Undefined: Self = StObject.set(x, "elevation11", js.undefined)
     
     @scala.inline
-    def setElevation10(value: CSSProperties): Self = this.set("elevation10", value.asInstanceOf[js.Any])
+    def setElevation12(value: CSSProperties): Self = StObject.set(x, "elevation12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation10: Self = this.set("elevation10", js.undefined)
+    def setElevation12Undefined: Self = StObject.set(x, "elevation12", js.undefined)
     
     @scala.inline
-    def setElevation11(value: CSSProperties): Self = this.set("elevation11", value.asInstanceOf[js.Any])
+    def setElevation13(value: CSSProperties): Self = StObject.set(x, "elevation13", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation11: Self = this.set("elevation11", js.undefined)
+    def setElevation13Undefined: Self = StObject.set(x, "elevation13", js.undefined)
     
     @scala.inline
-    def setElevation12(value: CSSProperties): Self = this.set("elevation12", value.asInstanceOf[js.Any])
+    def setElevation14(value: CSSProperties): Self = StObject.set(x, "elevation14", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation12: Self = this.set("elevation12", js.undefined)
+    def setElevation14Undefined: Self = StObject.set(x, "elevation14", js.undefined)
     
     @scala.inline
-    def setElevation13(value: CSSProperties): Self = this.set("elevation13", value.asInstanceOf[js.Any])
+    def setElevation15(value: CSSProperties): Self = StObject.set(x, "elevation15", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation13: Self = this.set("elevation13", js.undefined)
+    def setElevation15Undefined: Self = StObject.set(x, "elevation15", js.undefined)
     
     @scala.inline
-    def setElevation14(value: CSSProperties): Self = this.set("elevation14", value.asInstanceOf[js.Any])
+    def setElevation16(value: CSSProperties): Self = StObject.set(x, "elevation16", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation14: Self = this.set("elevation14", js.undefined)
+    def setElevation16Undefined: Self = StObject.set(x, "elevation16", js.undefined)
     
     @scala.inline
-    def setElevation15(value: CSSProperties): Self = this.set("elevation15", value.asInstanceOf[js.Any])
+    def setElevation17(value: CSSProperties): Self = StObject.set(x, "elevation17", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation15: Self = this.set("elevation15", js.undefined)
+    def setElevation17Undefined: Self = StObject.set(x, "elevation17", js.undefined)
     
     @scala.inline
-    def setElevation16(value: CSSProperties): Self = this.set("elevation16", value.asInstanceOf[js.Any])
+    def setElevation18(value: CSSProperties): Self = StObject.set(x, "elevation18", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation16: Self = this.set("elevation16", js.undefined)
+    def setElevation18Undefined: Self = StObject.set(x, "elevation18", js.undefined)
     
     @scala.inline
-    def setElevation17(value: CSSProperties): Self = this.set("elevation17", value.asInstanceOf[js.Any])
+    def setElevation19(value: CSSProperties): Self = StObject.set(x, "elevation19", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation17: Self = this.set("elevation17", js.undefined)
+    def setElevation19Undefined: Self = StObject.set(x, "elevation19", js.undefined)
     
     @scala.inline
-    def setElevation18(value: CSSProperties): Self = this.set("elevation18", value.asInstanceOf[js.Any])
+    def setElevation1Undefined: Self = StObject.set(x, "elevation1", js.undefined)
     
     @scala.inline
-    def deleteElevation18: Self = this.set("elevation18", js.undefined)
+    def setElevation2(value: CSSProperties): Self = StObject.set(x, "elevation2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation19(value: CSSProperties): Self = this.set("elevation19", value.asInstanceOf[js.Any])
+    def setElevation20(value: CSSProperties): Self = StObject.set(x, "elevation20", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation19: Self = this.set("elevation19", js.undefined)
+    def setElevation20Undefined: Self = StObject.set(x, "elevation20", js.undefined)
     
     @scala.inline
-    def setElevation2(value: CSSProperties): Self = this.set("elevation2", value.asInstanceOf[js.Any])
+    def setElevation21(value: CSSProperties): Self = StObject.set(x, "elevation21", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation2: Self = this.set("elevation2", js.undefined)
+    def setElevation21Undefined: Self = StObject.set(x, "elevation21", js.undefined)
     
     @scala.inline
-    def setElevation20(value: CSSProperties): Self = this.set("elevation20", value.asInstanceOf[js.Any])
+    def setElevation22(value: CSSProperties): Self = StObject.set(x, "elevation22", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation20: Self = this.set("elevation20", js.undefined)
+    def setElevation22Undefined: Self = StObject.set(x, "elevation22", js.undefined)
     
     @scala.inline
-    def setElevation21(value: CSSProperties): Self = this.set("elevation21", value.asInstanceOf[js.Any])
+    def setElevation23(value: CSSProperties): Self = StObject.set(x, "elevation23", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation21: Self = this.set("elevation21", js.undefined)
+    def setElevation23Undefined: Self = StObject.set(x, "elevation23", js.undefined)
     
     @scala.inline
-    def setElevation22(value: CSSProperties): Self = this.set("elevation22", value.asInstanceOf[js.Any])
+    def setElevation24(value: CSSProperties): Self = StObject.set(x, "elevation24", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElevation22: Self = this.set("elevation22", js.undefined)
+    def setElevation24Undefined: Self = StObject.set(x, "elevation24", js.undefined)
     
     @scala.inline
-    def setElevation23(value: CSSProperties): Self = this.set("elevation23", value.asInstanceOf[js.Any])
+    def setElevation2Undefined: Self = StObject.set(x, "elevation2", js.undefined)
     
     @scala.inline
-    def deleteElevation23: Self = this.set("elevation23", js.undefined)
+    def setElevation3(value: CSSProperties): Self = StObject.set(x, "elevation3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation24(value: CSSProperties): Self = this.set("elevation24", value.asInstanceOf[js.Any])
+    def setElevation3Undefined: Self = StObject.set(x, "elevation3", js.undefined)
     
     @scala.inline
-    def deleteElevation24: Self = this.set("elevation24", js.undefined)
+    def setElevation4(value: CSSProperties): Self = StObject.set(x, "elevation4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation3(value: CSSProperties): Self = this.set("elevation3", value.asInstanceOf[js.Any])
+    def setElevation4Undefined: Self = StObject.set(x, "elevation4", js.undefined)
     
     @scala.inline
-    def deleteElevation3: Self = this.set("elevation3", js.undefined)
+    def setElevation5(value: CSSProperties): Self = StObject.set(x, "elevation5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation4(value: CSSProperties): Self = this.set("elevation4", value.asInstanceOf[js.Any])
+    def setElevation5Undefined: Self = StObject.set(x, "elevation5", js.undefined)
     
     @scala.inline
-    def deleteElevation4: Self = this.set("elevation4", js.undefined)
+    def setElevation6(value: CSSProperties): Self = StObject.set(x, "elevation6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation5(value: CSSProperties): Self = this.set("elevation5", value.asInstanceOf[js.Any])
+    def setElevation6Undefined: Self = StObject.set(x, "elevation6", js.undefined)
     
     @scala.inline
-    def deleteElevation5: Self = this.set("elevation5", js.undefined)
+    def setElevation7(value: CSSProperties): Self = StObject.set(x, "elevation7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation6(value: CSSProperties): Self = this.set("elevation6", value.asInstanceOf[js.Any])
+    def setElevation7Undefined: Self = StObject.set(x, "elevation7", js.undefined)
     
     @scala.inline
-    def deleteElevation6: Self = this.set("elevation6", js.undefined)
+    def setElevation8(value: CSSProperties): Self = StObject.set(x, "elevation8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation7(value: CSSProperties): Self = this.set("elevation7", value.asInstanceOf[js.Any])
+    def setElevation8Undefined: Self = StObject.set(x, "elevation8", js.undefined)
     
     @scala.inline
-    def deleteElevation7: Self = this.set("elevation7", js.undefined)
+    def setElevation9(value: CSSProperties): Self = StObject.set(x, "elevation9", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation8(value: CSSProperties): Self = this.set("elevation8", value.asInstanceOf[js.Any])
+    def setElevation9Undefined: Self = StObject.set(x, "elevation9", js.undefined)
     
     @scala.inline
-    def deleteElevation8: Self = this.set("elevation8", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation9(value: CSSProperties): Self = this.set("elevation9", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteElevation9: Self = this.set("elevation9", js.undefined)
+    def setRounded(value: CSSProperties): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setRounded(value: CSSProperties): Self = this.set("rounded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRounded: Self = this.set("rounded", js.undefined)
+    def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
   }
 }

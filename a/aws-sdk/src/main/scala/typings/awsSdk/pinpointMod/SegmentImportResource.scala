@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SegmentImportResource extends js.Object {
+trait SegmentImportResource extends StObject {
   
   /**
     * The number of channel types in the endpoint definitions that were imported to create the segment.
@@ -46,39 +47,27 @@ object SegmentImportResource {
   }
   
   @scala.inline
-  implicit class SegmentImportResourceOps[Self <: SegmentImportResource] (val x: Self) extends AnyVal {
+  implicit class SegmentImportResourceMutableBuilder[Self <: SegmentImportResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelCounts(value: MapOfInteger): Self = StObject.set(x, "ChannelCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelCountsUndefined: Self = StObject.set(x, "ChannelCounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalId(value: string): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: string): Self = this.set("ExternalId", value.asInstanceOf[js.Any])
+    def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: Format): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setS3Url(value: string): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Url(value: string): Self = this.set("S3Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: integer): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChannelCounts(value: MapOfInteger): Self = this.set("ChannelCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelCounts: Self = this.set("ChannelCounts", js.undefined)
+    def setSize(value: integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

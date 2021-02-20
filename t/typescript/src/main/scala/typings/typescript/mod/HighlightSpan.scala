@@ -1,12 +1,13 @@
 package typings.typescript.mod
 
 import typings.typescript.typescriptBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightSpan extends js.Object {
+trait HighlightSpan extends StObject {
   
   var contextSpan: js.UndefOr[TextSpan] = js.native
   
@@ -27,42 +28,30 @@ object HighlightSpan {
   }
   
   @scala.inline
-  implicit class HighlightSpanOps[Self <: HighlightSpan] (val x: Self) extends AnyVal {
+  implicit class HighlightSpanMutableBuilder[Self <: HighlightSpan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextSpan(value: TextSpan): Self = StObject.set(x, "contextSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextSpanUndefined: Self = StObject.set(x, "contextSpan", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: HighlightSpanKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def setTextSpan(value: TextSpan): Self = this.set("textSpan", value.asInstanceOf[js.Any])
+    def setIsInString(value: `true`): Self = StObject.set(x, "isInString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextSpan(value: TextSpan): Self = this.set("contextSpan", value.asInstanceOf[js.Any])
+    def setIsInStringUndefined: Self = StObject.set(x, "isInString", js.undefined)
     
     @scala.inline
-    def deleteContextSpan: Self = this.set("contextSpan", js.undefined)
+    def setKind(value: HighlightSpanKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: java.lang.String): Self = this.set("fileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
-    
-    @scala.inline
-    def setIsInString(value: `true`): Self = this.set("isInString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsInString: Self = this.set("isInString", js.undefined)
+    def setTextSpan(value: TextSpan): Self = StObject.set(x, "textSpan", value.asInstanceOf[js.Any])
   }
 }

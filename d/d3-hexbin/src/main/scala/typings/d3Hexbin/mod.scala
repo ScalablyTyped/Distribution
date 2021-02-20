@@ -1,14 +1,15 @@
 package typings.d3Hexbin
 
 import typings.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-hexbin", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("d3-hexbin", "hexbin")
+  @js.native
   def hexbin[T](): Hexbin_[T] = js.native
   
   @js.native
@@ -26,7 +27,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait Hexbin_[T] extends js.Object {
+  trait Hexbin_[T] extends StObject {
     
     /**
       * Bins the specified array of points, returning an array of hexagonal bins.

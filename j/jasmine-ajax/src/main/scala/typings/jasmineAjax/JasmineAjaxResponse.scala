@@ -1,12 +1,13 @@
 package typings.jasmineAjax
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JasmineAjaxResponse extends js.Object {
+trait JasmineAjaxResponse extends StObject {
   
   var contentType: js.UndefOr[String] = js.native
   
@@ -33,66 +34,54 @@ object JasmineAjaxResponse {
   }
   
   @scala.inline
-  implicit class JasmineAjaxResponseOps[Self <: JasmineAjaxResponse] (val x: Self) extends AnyVal {
+  implicit class JasmineAjaxResponseMutableBuilder[Self <: JasmineAjaxResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setResponseHeaders(value: StringDictionary[String]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
     @scala.inline
-    def setResponse(value: String): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponseJSON(value: js.Any): Self = StObject.set(x, "responseJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setResponseJSONUndefined: Self = StObject.set(x, "responseJSON", js.undefined)
     
     @scala.inline
-    def setResponseHeaders(value: StringDictionary[String]): Self = this.set("responseHeaders", value.asInstanceOf[js.Any])
+    def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponseHeaders: Self = this.set("responseHeaders", js.undefined)
+    def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
     
     @scala.inline
-    def setResponseJSON(value: js.Any): Self = this.set("responseJSON", value.asInstanceOf[js.Any])
+    def setResponseURL(value: String): Self = StObject.set(x, "responseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponseJSON: Self = this.set("responseJSON", js.undefined)
+    def setResponseURLUndefined: Self = StObject.set(x, "responseURL", js.undefined)
     
     @scala.inline
-    def setResponseText(value: String): Self = this.set("responseText", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def deleteResponseText: Self = this.set("responseText", js.undefined)
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseURL(value: String): Self = this.set("responseURL", value.asInstanceOf[js.Any])
+    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponseURL: Self = this.set("responseURL", js.undefined)
+    def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
     
     @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusText(value: String): Self = this.set("statusText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusText: Self = this.set("statusText", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

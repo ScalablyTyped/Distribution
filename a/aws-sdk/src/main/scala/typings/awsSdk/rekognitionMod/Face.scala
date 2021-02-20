@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Face extends js.Object {
+trait Face extends StObject {
   
   /**
     * Bounding box of the face.
@@ -41,48 +42,36 @@ object Face {
   }
   
   @scala.inline
-  implicit class FaceOps[Self <: Face] (val x: Self) extends AnyVal {
+  implicit class FaceMutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = this.set("BoundingBox", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def deleteBoundingBox: Self = this.set("BoundingBox", js.undefined)
+    def setExternalImageId(value: ExternalImageId): Self = StObject.set(x, "ExternalImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    def setExternalImageIdUndefined: Self = StObject.set(x, "ExternalImageId", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    def setFaceId(value: FaceId): Self = StObject.set(x, "FaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalImageId(value: ExternalImageId): Self = this.set("ExternalImageId", value.asInstanceOf[js.Any])
+    def setFaceIdUndefined: Self = StObject.set(x, "FaceId", js.undefined)
     
     @scala.inline
-    def deleteExternalImageId: Self = this.set("ExternalImageId", js.undefined)
+    def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceId(value: FaceId): Self = this.set("FaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFaceId: Self = this.set("FaceId", js.undefined)
-    
-    @scala.inline
-    def setImageId(value: ImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
   }
 }

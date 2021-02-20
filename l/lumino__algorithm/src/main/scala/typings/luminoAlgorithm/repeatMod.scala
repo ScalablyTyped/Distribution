@@ -1,18 +1,14 @@
 package typings.luminoAlgorithm
 
 import typings.luminoAlgorithm.iterMod.IIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/algorithm/types/repeat", JSImport.Namespace)
-@js.native
-object repeatMod extends js.Object {
+object repeatMod {
   
-  def once[T](value: T): IIterator[T] = js.native
-  
-  def repeat[T](value: T, count: Double): IIterator[T] = js.native
-  
+  @JSImport("@lumino/algorithm/types/repeat", "RepeatIterator")
   @js.native
   class RepeatIterator[T] protected () extends IIterator[T] {
     /**
@@ -28,4 +24,12 @@ object repeatMod extends js.Object {
     
     var _value: js.Any = js.native
   }
+  
+  @JSImport("@lumino/algorithm/types/repeat", "once")
+  @js.native
+  def once[T](value: T): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm/types/repeat", "repeat")
+  @js.native
+  def repeat[T](value: T, count: Double): IIterator[T] = js.native
 }

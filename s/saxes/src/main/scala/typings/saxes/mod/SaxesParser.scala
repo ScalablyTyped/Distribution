@@ -2,6 +2,7 @@ package typings.saxes.mod
 
 import typings.std.Error
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @param opt The parser options.
   */
-class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
+class SaxesParser[O /* <: SaxesOptions */] () extends StObject {
   def this(opt: O) = this()
   
   /**

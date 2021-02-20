@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Native content for a creative.
   */
 @js.native
-trait SchemaNativeContent extends js.Object {
+trait SchemaNativeContent extends StObject {
   
   /**
     * The name of the advertiser or sponsor, to be displayed in the ad
@@ -85,96 +86,84 @@ object SchemaNativeContent {
   }
   
   @scala.inline
-  implicit class SchemaNativeContentOps[Self <: SchemaNativeContent] (val x: Self) extends AnyVal {
+  implicit class SchemaNativeContentMutableBuilder[Self <: SchemaNativeContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppIcon(value: SchemaImage): Self = StObject.set(x, "appIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserName(value: String): Self = this.set("advertiserName", value.asInstanceOf[js.Any])
+    def setAppIconUndefined: Self = StObject.set(x, "appIcon", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserName: Self = this.set("advertiserName", js.undefined)
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppIcon(value: SchemaImage): Self = this.set("appIcon", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteAppIcon: Self = this.set("appIcon", js.undefined)
+    def setCallToAction(value: String): Self = StObject.set(x, "callToAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCallToActionUndefined: Self = StObject.set(x, "callToAction", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setClickLinkUrl(value: String): Self = StObject.set(x, "clickLinkUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallToAction(value: String): Self = this.set("callToAction", value.asInstanceOf[js.Any])
+    def setClickLinkUrlUndefined: Self = StObject.set(x, "clickLinkUrl", js.undefined)
     
     @scala.inline
-    def deleteCallToAction: Self = this.set("callToAction", js.undefined)
+    def setClickTrackingUrl(value: String): Self = StObject.set(x, "clickTrackingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickLinkUrl(value: String): Self = this.set("clickLinkUrl", value.asInstanceOf[js.Any])
+    def setClickTrackingUrlUndefined: Self = StObject.set(x, "clickTrackingUrl", js.undefined)
     
     @scala.inline
-    def deleteClickLinkUrl: Self = this.set("clickLinkUrl", js.undefined)
+    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickTrackingUrl(value: String): Self = this.set("clickTrackingUrl", value.asInstanceOf[js.Any])
+    def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
     
     @scala.inline
-    def deleteClickTrackingUrl: Self = this.set("clickTrackingUrl", js.undefined)
+    def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadline(value: String): Self = this.set("headline", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteHeadline: Self = this.set("headline", js.undefined)
+    def setLogo(value: SchemaImage): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: SchemaImage): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setPriceDisplayText(value: String): Self = StObject.set(x, "priceDisplayText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: SchemaImage): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setPriceDisplayTextUndefined: Self = StObject.set(x, "priceDisplayText", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setStarRating(value: Double): Self = StObject.set(x, "starRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceDisplayText(value: String): Self = this.set("priceDisplayText", value.asInstanceOf[js.Any])
+    def setStarRatingUndefined: Self = StObject.set(x, "starRating", js.undefined)
     
     @scala.inline
-    def deletePriceDisplayText: Self = this.set("priceDisplayText", js.undefined)
+    def setStoreUrl(value: String): Self = StObject.set(x, "storeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarRating(value: Double): Self = this.set("starRating", value.asInstanceOf[js.Any])
+    def setStoreUrlUndefined: Self = StObject.set(x, "storeUrl", js.undefined)
     
     @scala.inline
-    def deleteStarRating: Self = this.set("starRating", js.undefined)
+    def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreUrl(value: String): Self = this.set("storeUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreUrl: Self = this.set("storeUrl", js.undefined)
-    
-    @scala.inline
-    def setVideoUrl(value: String): Self = this.set("videoUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoUrl: Self = this.set("videoUrl", js.undefined)
+    def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
   }
 }

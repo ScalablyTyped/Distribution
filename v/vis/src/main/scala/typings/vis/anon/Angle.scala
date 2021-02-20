@@ -1,11 +1,12 @@
 package typings.vis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Angle extends js.Object {
+trait Angle extends StObject {
   
   var angle: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object Angle {
   }
   
   @scala.inline
-  implicit class AngleOps[Self <: Angle] (val x: Self) extends AnyVal {
+  implicit class AngleMutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRenderBehindTheNode(value: Boolean): Self = StObject.set(x, "renderBehindTheNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setRenderBehindTheNodeUndefined: Self = StObject.set(x, "renderBehindTheNode", js.undefined)
     
     @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderBehindTheNode(value: Boolean): Self = this.set("renderBehindTheNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderBehindTheNode: Self = this.set("renderBehindTheNode", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

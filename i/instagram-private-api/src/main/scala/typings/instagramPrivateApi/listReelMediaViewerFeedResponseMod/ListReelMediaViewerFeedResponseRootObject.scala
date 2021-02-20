@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReelMediaViewerFeedResponseRootObject extends js.Object {
+trait ListReelMediaViewerFeedResponseRootObject extends StObject {
   
   var next_max_id: String | Null = js.native
   
@@ -34,42 +35,30 @@ object ListReelMediaViewerFeedResponseRootObject {
   }
   
   @scala.inline
-  implicit class ListReelMediaViewerFeedResponseRootObjectOps[Self <: ListReelMediaViewerFeedResponseRootObject] (val x: Self) extends AnyVal {
+  implicit class ListReelMediaViewerFeedResponseRootObjectMutableBuilder[Self <: ListReelMediaViewerFeedResponseRootObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNext_max_idNull: Self = StObject.set(x, "next_max_id", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTotal_viewer_count(value: Double): Self = StObject.set(x, "total_viewer_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_viewer_count(value: Double): Self = this.set("total_viewer_count", value.asInstanceOf[js.Any])
+    def setUpdated_media(value: ListReelMediaViewerFeedResponseUpdatedMedia): Self = StObject.set(x, "updated_media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated_media(value: ListReelMediaViewerFeedResponseUpdatedMedia): Self = this.set("updated_media", value.asInstanceOf[js.Any])
+    def setUser_count(value: Double): Self = StObject.set(x, "user_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_count(value: Double): Self = this.set("user_count", value.asInstanceOf[js.Any])
+    def setUsers(value: js.Array[ListReelMediaViewerFeedResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsersVarargs(value: ListReelMediaViewerFeedResponseUsersItem*): Self = this.set("users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: js.Array[ListReelMediaViewerFeedResponseUsersItem]): Self = this.set("users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext_max_id(value: String): Self = this.set("next_max_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext_max_idNull: Self = this.set("next_max_id", null)
+    def setUsersVarargs(value: ListReelMediaViewerFeedResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

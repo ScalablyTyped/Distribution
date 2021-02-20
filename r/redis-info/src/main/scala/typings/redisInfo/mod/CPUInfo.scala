@@ -1,11 +1,12 @@
 package typings.redisInfo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CPUInfo extends js.Object {
+trait CPUInfo extends StObject {
   
   var used_cpu_sys: String = js.native
   
@@ -29,30 +30,18 @@ object CPUInfo {
   }
   
   @scala.inline
-  implicit class CPUInfoOps[Self <: CPUInfo] (val x: Self) extends AnyVal {
+  implicit class CPUInfoMutableBuilder[Self <: CPUInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUsed_cpu_sys(value: String): Self = StObject.set(x, "used_cpu_sys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUsed_cpu_sys_children(value: String): Self = StObject.set(x, "used_cpu_sys_children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUsed_cpu_user(value: String): Self = StObject.set(x, "used_cpu_user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsed_cpu_sys(value: String): Self = this.set("used_cpu_sys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsed_cpu_sys_children(value: String): Self = this.set("used_cpu_sys_children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsed_cpu_user(value: String): Self = this.set("used_cpu_user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsed_cpu_user_children(value: String): Self = this.set("used_cpu_user_children", value.asInstanceOf[js.Any])
+    def setUsed_cpu_user_children(value: String): Self = StObject.set(x, "used_cpu_user_children", value.asInstanceOf[js.Any])
   }
 }

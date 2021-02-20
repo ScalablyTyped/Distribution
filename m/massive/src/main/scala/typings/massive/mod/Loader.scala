@@ -1,11 +1,12 @@
 package typings.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Loader extends js.Object {
+trait Loader extends StObject {
   
   var allowedSchemas: js.UndefOr[String | js.Array[String]] = js.native
   
@@ -30,78 +31,66 @@ object Loader {
   }
   
   @scala.inline
-  implicit class LoaderOps[Self <: Loader] (val x: Self) extends AnyVal {
+  implicit class LoaderMutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedSchemas(value: String | js.Array[String]): Self = StObject.set(x, "allowedSchemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedSchemasUndefined: Self = StObject.set(x, "allowedSchemas", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedSchemasVarargs(value: String*): Self = StObject.set(x, "allowedSchemas", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedSchemasVarargs(value: String*): Self = this.set("allowedSchemas", js.Array(value :_*))
+    def setBlacklist(value: String | js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedSchemas(value: String | js.Array[String]): Self = this.set("allowedSchemas", value.asInstanceOf[js.Any])
+    def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
     
     @scala.inline
-    def deleteAllowedSchemas: Self = this.set("allowedSchemas", js.undefined)
+    def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
     
     @scala.inline
-    def setBlacklistVarargs(value: String*): Self = this.set("blacklist", js.Array(value :_*))
+    def setExceptions(value: String | js.Array[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlacklist(value: String | js.Array[String]): Self = this.set("blacklist", value.asInstanceOf[js.Any])
+    def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
     
     @scala.inline
-    def deleteBlacklist: Self = this.set("blacklist", js.undefined)
+    def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
     
     @scala.inline
-    def setExceptionsVarargs(value: String*): Self = this.set("exceptions", js.Array(value :_*))
+    def setFunctionBlacklist(value: String | js.Array[String]): Self = StObject.set(x, "functionBlacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExceptions(value: String | js.Array[String]): Self = this.set("exceptions", value.asInstanceOf[js.Any])
+    def setFunctionBlacklistUndefined: Self = StObject.set(x, "functionBlacklist", js.undefined)
     
     @scala.inline
-    def deleteExceptions: Self = this.set("exceptions", js.undefined)
+    def setFunctionBlacklistVarargs(value: String*): Self = StObject.set(x, "functionBlacklist", js.Array(value :_*))
     
     @scala.inline
-    def setFunctionBlacklistVarargs(value: String*): Self = this.set("functionBlacklist", js.Array(value :_*))
+    def setFunctionWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "functionWhitelist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionBlacklist(value: String | js.Array[String]): Self = this.set("functionBlacklist", value.asInstanceOf[js.Any])
+    def setFunctionWhitelistUndefined: Self = StObject.set(x, "functionWhitelist", js.undefined)
     
     @scala.inline
-    def deleteFunctionBlacklist: Self = this.set("functionBlacklist", js.undefined)
+    def setFunctionWhitelistVarargs(value: String*): Self = StObject.set(x, "functionWhitelist", js.Array(value :_*))
     
     @scala.inline
-    def setFunctionWhitelistVarargs(value: String*): Self = this.set("functionWhitelist", js.Array(value :_*))
+    def setScripts(value: String): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionWhitelist(value: String | js.Array[String]): Self = this.set("functionWhitelist", value.asInstanceOf[js.Any])
+    def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
     @scala.inline
-    def deleteFunctionWhitelist: Self = this.set("functionWhitelist", js.undefined)
+    def setWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScripts(value: String): Self = this.set("scripts", value.asInstanceOf[js.Any])
+    def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
     @scala.inline
-    def deleteScripts: Self = this.set("scripts", js.undefined)
-    
-    @scala.inline
-    def setWhitelistVarargs(value: String*): Self = this.set("whitelist", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhitelist(value: String | js.Array[String]): Self = this.set("whitelist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelist: Self = this.set("whitelist", js.undefined)
+    def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
   }
 }

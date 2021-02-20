@@ -8,14 +8,14 @@ import typings.babylonjs.webXRFeaturesManagerMod.WebXRFeaturesManager
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
 import typings.babylonjs.webXRTypesMod.WebXRState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/webXRExperienceHelper", JSImport.Namespace)
-@js.native
-object webXRExperienceHelperMod extends js.Object {
+object webXRExperienceHelperMod {
   
+  @JSImport("babylonjs/XR/webXRExperienceHelper", "WebXRExperienceHelper")
   @js.native
   /**
     * Creates a WebXRExperienceHelper
@@ -99,14 +99,15 @@ object webXRExperienceHelperMod extends js.Object {
     var state: WebXRState = js.native
   }
   /* static members */
-  @js.native
-  object WebXRExperienceHelper extends js.Object {
+  object WebXRExperienceHelper {
     
     /**
       * Creates the experience helper
       * @param scene the scene to attach the experience helper to
       * @returns a promise for the experience helper
       */
+    @JSImport("babylonjs/XR/webXRExperienceHelper", "WebXRExperienceHelper.CreateAsync")
+    @js.native
     def CreateAsync(scene: Scene): js.Promise[WebXRExperienceHelper] = js.native
   }
 }

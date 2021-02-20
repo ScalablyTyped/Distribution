@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDatasetImportJobResponse extends js.Object {
+trait DescribeDatasetImportJobResponse extends StObject {
   
   /**
     * When the dataset import job was created.
@@ -71,84 +72,72 @@ object DescribeDatasetImportJobResponse {
   }
   
   @scala.inline
-  implicit class DescribeDatasetImportJobResponseOps[Self <: DescribeDatasetImportJobResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDatasetImportJobResponseMutableBuilder[Self <: DescribeDatasetImportJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSize(value: Double): Self = StObject.set(x, "DataSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDataSizeUndefined: Self = StObject.set(x, "DataSize", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setDataSource(value: DataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSize(value: Double): Self = this.set("DataSize", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "DataSource", js.undefined)
     
     @scala.inline
-    def deleteDataSize: Self = this.set("DataSize", js.undefined)
+    def setDatasetArn(value: Arn): Self = StObject.set(x, "DatasetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: DataSource): Self = this.set("DataSource", value.asInstanceOf[js.Any])
+    def setDatasetArnUndefined: Self = StObject.set(x, "DatasetArn", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("DataSource", js.undefined)
+    def setDatasetImportJobArn(value: Arn): Self = StObject.set(x, "DatasetImportJobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetArn(value: Arn): Self = this.set("DatasetArn", value.asInstanceOf[js.Any])
+    def setDatasetImportJobArnUndefined: Self = StObject.set(x, "DatasetImportJobArn", js.undefined)
     
     @scala.inline
-    def deleteDatasetArn: Self = this.set("DatasetArn", js.undefined)
+    def setDatasetImportJobName(value: Name): Self = StObject.set(x, "DatasetImportJobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetImportJobArn(value: Arn): Self = this.set("DatasetImportJobArn", value.asInstanceOf[js.Any])
+    def setDatasetImportJobNameUndefined: Self = StObject.set(x, "DatasetImportJobName", js.undefined)
     
     @scala.inline
-    def deleteDatasetImportJobArn: Self = this.set("DatasetImportJobArn", js.undefined)
+    def setFieldStatistics(value: FieldStatistics): Self = StObject.set(x, "FieldStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetImportJobName(value: Name): Self = this.set("DatasetImportJobName", value.asInstanceOf[js.Any])
+    def setFieldStatisticsUndefined: Self = StObject.set(x, "FieldStatistics", js.undefined)
     
     @scala.inline
-    def deleteDatasetImportJobName: Self = this.set("DatasetImportJobName", js.undefined)
+    def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldStatistics(value: FieldStatistics): Self = this.set("FieldStatistics", value.asInstanceOf[js.Any])
+    def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
     
     @scala.inline
-    def deleteFieldStatistics: Self = this.set("FieldStatistics", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModificationTime(value: Timestamp): Self = this.set("LastModificationTime", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteLastModificationTime: Self = this.set("LastModificationTime", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setTimestampFormat(value: TimestampFormat): Self = StObject.set(x, "TimestampFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTimestampFormat(value: TimestampFormat): Self = this.set("TimestampFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampFormat: Self = this.set("TimestampFormat", js.undefined)
+    def setTimestampFormatUndefined: Self = StObject.set(x, "TimestampFormat", js.undefined)
   }
 }

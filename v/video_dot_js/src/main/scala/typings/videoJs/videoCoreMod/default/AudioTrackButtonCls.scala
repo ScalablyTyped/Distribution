@@ -1,14 +1,16 @@
 package typings.videoJs.videoCoreMod.default
 
+import typings.videoJs.mod.videojs.AudioTrackButton
 import typings.videoJs.mod.videojs.TrackButtonOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js/dist/alt/video.core", "AudioTrackButton")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js/dist/alt/video.core", "default.AudioTrackButton")
 @js.native
-class AudioTrackButtonCls protected ()
-  extends typings.videoJs.mod.videojs.AudioTrackButton {
+class AudioTrackButtonCls protected () extends AudioTrackButton {
   /**
     * Creates an instance of this class.
     *

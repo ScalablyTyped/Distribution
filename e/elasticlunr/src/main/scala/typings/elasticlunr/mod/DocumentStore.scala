@@ -1,12 +1,13 @@
 package typings.elasticlunr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticlunr", "DocumentStore")
 @js.native
-class DocumentStore[T] () extends js.Object {
+class DocumentStore[T] () extends StObject {
   def this(save: Boolean) = this()
   
   def addDoc(docRef: DocumentReference, doc: T): Unit = js.native
@@ -27,10 +28,10 @@ class DocumentStore[T] () extends js.Object {
   
   def updateFieldLength(docRef: DocumentReference, fieldName: /* keyof T */ String, length: Double): Unit = js.native
 }
-/* static members */
-@JSImport("elasticlunr", "DocumentStore")
-@js.native
-object DocumentStore extends js.Object {
+object DocumentStore {
   
+  /* static member */
+  @JSImport("elasticlunr", "DocumentStore.load")
+  @js.native
   def load[T](serialisedData: SerialisedDocumentStore[T]): DocumentStore[T] = js.native
 }

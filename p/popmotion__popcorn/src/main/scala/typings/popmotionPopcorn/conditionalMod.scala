@@ -1,13 +1,14 @@
 package typings.popmotionPopcorn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@popmotion/popcorn/lib/utils/conditional", JSImport.Namespace)
-@js.native
-object conditionalMod extends js.Object {
+object conditionalMod {
   
+  @JSImport("@popmotion/popcorn/lib/utils/conditional", JSImport.Default)
+  @js.native
   def default(check: Check, apply: Apply): js.Function1[/* v */ js.Any, _] = js.native
   
   type Apply = js.Function1[/* v */ js.Any, js.Any]

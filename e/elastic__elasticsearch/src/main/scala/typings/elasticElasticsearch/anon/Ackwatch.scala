@@ -17,12 +17,13 @@ import typings.elasticElasticsearch.transportMod.TransportRequestCallback
 import typings.elasticElasticsearch.transportMod.TransportRequestOptions
 import typings.elasticElasticsearch.transportMod.TransportRequestPromise
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ackwatch extends js.Object {
+trait Ackwatch extends StObject {
   
   def ackWatch[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def ackWatch[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Encryption extends js.Object {
+trait Encryption extends StObject {
   
   /** Configuration for AES-128 encryption. */
   var aes128: js.UndefOr[Aes128Encryption] = js.native
@@ -31,48 +32,36 @@ object Encryption {
   }
   
   @scala.inline
-  implicit class EncryptionOps[Self <: Encryption] (val x: Self) extends AnyVal {
+  implicit class EncryptionMutableBuilder[Self <: Encryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAes128(value: Aes128Encryption): Self = StObject.set(x, "aes128", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAes128Undefined: Self = StObject.set(x, "aes128", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAes128(value: Aes128Encryption): Self = this.set("aes128", value.asInstanceOf[js.Any])
+    def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
     
     @scala.inline
-    def deleteAes128: Self = this.set("aes128", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIv(value: String): Self = this.set("iv", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteIv: Self = this.set("iv", js.undefined)
+    def setMpegCenc(value: MpegCommonEncryption): Self = StObject.set(x, "mpegCenc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMpegCencUndefined: Self = StObject.set(x, "mpegCenc", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setSampleAes(value: SampleAesEncryption): Self = StObject.set(x, "sampleAes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpegCenc(value: MpegCommonEncryption): Self = this.set("mpegCenc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMpegCenc: Self = this.set("mpegCenc", js.undefined)
-    
-    @scala.inline
-    def setSampleAes(value: SampleAesEncryption): Self = this.set("sampleAes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleAes: Self = this.set("sampleAes", js.undefined)
+    def setSampleAesUndefined: Self = StObject.set(x, "sampleAes", js.undefined)
   }
 }

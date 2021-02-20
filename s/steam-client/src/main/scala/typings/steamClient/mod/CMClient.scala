@@ -5,6 +5,7 @@ import typings.node.eventsMod.EventEmitter
 import typings.steamClient.anon.Msg
 import typings.steamClient.steamClientBooleans.`false`
 import typings.steamClient.steamClientStrings.message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

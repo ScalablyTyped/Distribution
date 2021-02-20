@@ -14,6 +14,7 @@ import typings.activexMshtml.activexMshtmlNumbers.`6`
 import typings.activexMshtml.activexMshtmlNumbers.`7`
 import typings.activexMshtml.activexMshtmlNumbers.`8`
 import typings.activexMshtml.activexMshtmlNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMshtml.activexMshtmlNumbers.`10`
   - typings.activexMshtml.activexMshtmlNumbers.`11`
 */
-trait styleAlignmentBaseline extends js.Object
+trait styleAlignmentBaseline extends StObject
 object styleAlignmentBaseline {
   
   @scala.inline

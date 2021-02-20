@@ -1,12 +1,11 @@
 package typings.materialSelect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/select/icon/constants", JSImport.Namespace)
-@js.native
-object iconConstantsMod extends js.Object {
+object iconConstantsMod {
   
   /**
     * @license
@@ -30,11 +29,22 @@ object iconConstantsMod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var ICON_EVENT: String = js.native
+    @JSImport("@material/select/icon/constants", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ICON_ROLE: String = js.native
+    @JSImport("@material/select/icon/constants", "strings.ICON_EVENT")
+    @js.native
+    def ICON_EVENT: String = js.native
+    @scala.inline
+    def ICON_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/select/icon/constants", "strings.ICON_ROLE")
+    @js.native
+    def ICON_ROLE: String = js.native
+    @scala.inline
+    def ICON_ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_ROLE")(x.asInstanceOf[js.Any])
   }
 }

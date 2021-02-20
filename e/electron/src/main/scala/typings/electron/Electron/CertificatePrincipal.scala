@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificatePrincipal extends js.Object {
+trait CertificatePrincipal extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/certificate-principal
   /**
@@ -54,42 +55,30 @@ object CertificatePrincipal {
   }
   
   @scala.inline
-  implicit class CertificatePrincipalOps[Self <: CertificatePrincipal] (val x: Self) extends AnyVal {
+  implicit class CertificatePrincipalMutableBuilder[Self <: CertificatePrincipal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonName(value: String): Self = this.set("commonName", value.asInstanceOf[js.Any])
+    def setOrganizationUnits(value: js.Array[String]): Self = StObject.set(x, "organizationUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setOrganizationUnitsVarargs(value: String*): Self = StObject.set(x, "organizationUnits", js.Array(value :_*))
     
     @scala.inline
-    def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
+    def setOrganizations(value: js.Array[String]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationUnitsVarargs(value: String*): Self = this.set("organizationUnits", js.Array(value :_*))
+    def setOrganizationsVarargs(value: String*): Self = StObject.set(x, "organizations", js.Array(value :_*))
     
     @scala.inline
-    def setOrganizationUnits(value: js.Array[String]): Self = this.set("organizationUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrganizationsVarargs(value: String*): Self = this.set("organizations", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrganizations(value: js.Array[String]): Self = this.set("organizations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

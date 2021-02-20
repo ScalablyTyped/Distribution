@@ -13,12 +13,13 @@ import typings.maximMazurokGapiClientCompute.anon.NodeGroupOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.NodeGroupOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.OptionsRequestedPolicyVersion
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeGroupsResource extends js.Object {
+trait NodeGroupsResource extends StObject {
   
   def addNodes(request: KeyNodeGroup, body: NodeGroupsAddNodesRequest): Request[Operation] = js.native
   /** Adds specified number of nodes to the node group. */

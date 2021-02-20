@@ -1,5 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,36 +32,24 @@ object IBorderedMapElementStyle {
   }
   
   @scala.inline
-  implicit class IBorderedMapElementStyleOps[Self <: IBorderedMapElementStyle] (val x: Self) extends AnyVal {
+  implicit class IBorderedMapElementStyleMutableBuilder[Self <: IBorderedMapElementStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderOutlineColor(value: String): Self = StObject.set(x, "borderOutlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderOutlineColorUndefined: Self = StObject.set(x, "borderOutlineColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderStrokeColor(value: String): Self = StObject.set(x, "borderStrokeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderOutlineColor(value: String): Self = this.set("borderOutlineColor", value.asInstanceOf[js.Any])
+    def setBorderStrokeColorUndefined: Self = StObject.set(x, "borderStrokeColor", js.undefined)
     
     @scala.inline
-    def deleteBorderOutlineColor: Self = this.set("borderOutlineColor", js.undefined)
+    def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderStrokeColor(value: String): Self = this.set("borderStrokeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderStrokeColor: Self = this.set("borderStrokeColor", js.undefined)
-    
-    @scala.inline
-    def setBorderVisible(value: Boolean): Self = this.set("borderVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderVisible: Self = this.set("borderVisible", js.undefined)
+    def setBorderVisibleUndefined: Self = StObject.set(x, "borderVisible", js.undefined)
   }
 }

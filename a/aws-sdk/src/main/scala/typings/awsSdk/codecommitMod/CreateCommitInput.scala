@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCommitInput extends js.Object {
+trait CreateCommitInput extends StObject {
   
   /**
     * The name of the author who created the commit. This information is used as both the author and committer for the commit.
@@ -66,81 +67,69 @@ object CreateCommitInput {
   }
   
   @scala.inline
-  implicit class CreateCommitInputOps[Self <: CreateCommitInput] (val x: Self) extends AnyVal {
+  implicit class CreateCommitInputMutableBuilder[Self <: CreateCommitInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorName(value: Name): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorNameUndefined: Self = StObject.set(x, "authorName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchName(value: BranchName): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    def setCommitMessage(value: Message): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    def setCommitMessageUndefined: Self = StObject.set(x, "commitMessage", js.undefined)
     
     @scala.inline
-    def setAuthorName(value: Name): Self = this.set("authorName", value.asInstanceOf[js.Any])
+    def setDeleteFiles(value: DeleteFileEntries): Self = StObject.set(x, "deleteFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthorName: Self = this.set("authorName", js.undefined)
+    def setDeleteFilesUndefined: Self = StObject.set(x, "deleteFiles", js.undefined)
     
     @scala.inline
-    def setCommitMessage(value: Message): Self = this.set("commitMessage", value.asInstanceOf[js.Any])
+    def setDeleteFilesVarargs(value: DeleteFileEntry*): Self = StObject.set(x, "deleteFiles", js.Array(value :_*))
     
     @scala.inline
-    def deleteCommitMessage: Self = this.set("commitMessage", js.undefined)
+    def setEmail(value: Email): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteFilesVarargs(value: DeleteFileEntry*): Self = this.set("deleteFiles", js.Array(value :_*))
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def setDeleteFiles(value: DeleteFileEntries): Self = this.set("deleteFiles", value.asInstanceOf[js.Any])
+    def setKeepEmptyFolders(value: KeepEmptyFolders): Self = StObject.set(x, "keepEmptyFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeleteFiles: Self = this.set("deleteFiles", js.undefined)
+    def setKeepEmptyFoldersUndefined: Self = StObject.set(x, "keepEmptyFolders", js.undefined)
     
     @scala.inline
-    def setEmail(value: Email): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setParentCommitId(value: CommitId): Self = StObject.set(x, "parentCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setParentCommitIdUndefined: Self = StObject.set(x, "parentCommitId", js.undefined)
     
     @scala.inline
-    def setKeepEmptyFolders(value: KeepEmptyFolders): Self = this.set("keepEmptyFolders", value.asInstanceOf[js.Any])
+    def setPutFiles(value: PutFileEntries): Self = StObject.set(x, "putFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeepEmptyFolders: Self = this.set("keepEmptyFolders", js.undefined)
+    def setPutFilesUndefined: Self = StObject.set(x, "putFiles", js.undefined)
     
     @scala.inline
-    def setParentCommitId(value: CommitId): Self = this.set("parentCommitId", value.asInstanceOf[js.Any])
+    def setPutFilesVarargs(value: PutFileEntry*): Self = StObject.set(x, "putFiles", js.Array(value :_*))
     
     @scala.inline
-    def deleteParentCommitId: Self = this.set("parentCommitId", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPutFilesVarargs(value: PutFileEntry*): Self = this.set("putFiles", js.Array(value :_*))
+    def setSetFileModes(value: SetFileModeEntries): Self = StObject.set(x, "setFileModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPutFiles(value: PutFileEntries): Self = this.set("putFiles", value.asInstanceOf[js.Any])
+    def setSetFileModesUndefined: Self = StObject.set(x, "setFileModes", js.undefined)
     
     @scala.inline
-    def deletePutFiles: Self = this.set("putFiles", js.undefined)
-    
-    @scala.inline
-    def setSetFileModesVarargs(value: SetFileModeEntry*): Self = this.set("setFileModes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSetFileModes(value: SetFileModeEntries): Self = this.set("setFileModes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetFileModes: Self = this.set("setFileModes", js.undefined)
+    def setSetFileModesVarargs(value: SetFileModeEntry*): Self = StObject.set(x, "setFileModes", js.Array(value :_*))
   }
 }

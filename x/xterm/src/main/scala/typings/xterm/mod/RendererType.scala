@@ -1,5 +1,6 @@
 package typings.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xterm.xtermStrings.dom
   - typings.xterm.xtermStrings.canvas
 */
-trait RendererType extends js.Object
+trait RendererType extends StObject
 object RendererType {
   
   @scala.inline

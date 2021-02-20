@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkSettings extends js.Object {
+trait NetworkSettings extends StObject {
   
   /** The ingress settings for version or service. */
   var ingressTrafficAllowed: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object NetworkSettings {
   }
   
   @scala.inline
-  implicit class NetworkSettingsOps[Self <: NetworkSettings] (val x: Self) extends AnyVal {
+  implicit class NetworkSettingsMutableBuilder[Self <: NetworkSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIngressTrafficAllowed(value: String): Self = StObject.set(x, "ingressTrafficAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIngressTrafficAllowed(value: String): Self = this.set("ingressTrafficAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIngressTrafficAllowed: Self = this.set("ingressTrafficAllowed", js.undefined)
+    def setIngressTrafficAllowedUndefined: Self = StObject.set(x, "ingressTrafficAllowed", js.undefined)
   }
 }

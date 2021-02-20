@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TiffCompressionMode extends js.Object
+sealed trait TiffCompressionMode extends StObject
 @JSGlobal("Windows.Graphics.Imaging.TiffCompressionMode")
 @js.native
-object TiffCompressionMode extends js.Object {
+object TiffCompressionMode extends StObject {
   
   @js.native
   sealed trait automatic extends TiffCompressionMode

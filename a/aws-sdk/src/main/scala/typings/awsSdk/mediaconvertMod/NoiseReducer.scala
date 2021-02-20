@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoiseReducer extends js.Object {
+trait NoiseReducer extends StObject {
   
   /**
     * Use Noise reducer filter (NoiseReducerFilter) to select one of the following spatial image filtering functions. To use this setting, you must also enable Noise reducer (NoiseReducer). * Bilateral preserves edges while reducing noise. * Mean (softest), Gaussian, Lanczos, and Sharpen (sharpest) do convolution filtering. * Conserve does min/max noise reduction. * Spatial does frequency-domain filtering based on JND principles. * Temporal optimizes video quality for complex motion.
@@ -36,42 +37,30 @@ object NoiseReducer {
   }
   
   @scala.inline
-  implicit class NoiseReducerOps[Self <: NoiseReducer] (val x: Self) extends AnyVal {
+  implicit class NoiseReducerMutableBuilder[Self <: NoiseReducer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: NoiseReducerFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterSettings(value: NoiseReducerFilterSettings): Self = StObject.set(x, "FilterSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterSettingsUndefined: Self = StObject.set(x, "FilterSettings", js.undefined)
     
     @scala.inline
-    def setFilter(value: NoiseReducerFilter): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setSpatialFilterSettings(value: NoiseReducerSpatialFilterSettings): Self = StObject.set(x, "SpatialFilterSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterSettings(value: NoiseReducerFilterSettings): Self = this.set("FilterSettings", value.asInstanceOf[js.Any])
+    def setSpatialFilterSettingsUndefined: Self = StObject.set(x, "SpatialFilterSettings", js.undefined)
     
     @scala.inline
-    def deleteFilterSettings: Self = this.set("FilterSettings", js.undefined)
+    def setTemporalFilterSettings(value: NoiseReducerTemporalFilterSettings): Self = StObject.set(x, "TemporalFilterSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialFilterSettings(value: NoiseReducerSpatialFilterSettings): Self = this.set("SpatialFilterSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialFilterSettings: Self = this.set("SpatialFilterSettings", js.undefined)
-    
-    @scala.inline
-    def setTemporalFilterSettings(value: NoiseReducerTemporalFilterSettings): Self = this.set("TemporalFilterSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemporalFilterSettings: Self = this.set("TemporalFilterSettings", js.undefined)
+    def setTemporalFilterSettingsUndefined: Self = StObject.set(x, "TemporalFilterSettings", js.undefined)
   }
 }

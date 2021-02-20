@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEasingFunction extends js.Object {
+trait IEasingFunction extends StObject {
   
   /**
     * Given an input gradient between 0 and 1, this returns the corrseponding value
@@ -26,21 +27,9 @@ object IEasingFunction {
   }
   
   @scala.inline
-  implicit class IEasingFunctionOps[Self <: IEasingFunction] (val x: Self) extends AnyVal {
+  implicit class IEasingFunctionMutableBuilder[Self <: IEasingFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEase(value: Double => Double): Self = this.set("ease", js.Any.fromFunction1(value))
+    def setEase(value: Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
   }
 }

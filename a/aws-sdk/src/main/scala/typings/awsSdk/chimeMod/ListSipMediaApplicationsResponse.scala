@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSipMediaApplicationsResponse extends js.Object {
+trait ListSipMediaApplicationsResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results.
@@ -26,33 +27,21 @@ object ListSipMediaApplicationsResponse {
   }
   
   @scala.inline
-  implicit class ListSipMediaApplicationsResponseOps[Self <: ListSipMediaApplicationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListSipMediaApplicationsResponseMutableBuilder[Self <: ListSipMediaApplicationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSipMediaApplications(value: SipMediaApplicationList): Self = StObject.set(x, "SipMediaApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextTokenString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSipMediaApplicationsUndefined: Self = StObject.set(x, "SipMediaApplications", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSipMediaApplicationsVarargs(value: SipMediaApplication*): Self = this.set("SipMediaApplications", js.Array(value :_*))
-    
-    @scala.inline
-    def setSipMediaApplications(value: SipMediaApplicationList): Self = this.set("SipMediaApplications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSipMediaApplications: Self = this.set("SipMediaApplications", js.undefined)
+    def setSipMediaApplicationsVarargs(value: SipMediaApplication*): Self = StObject.set(x, "SipMediaApplications", js.Array(value :_*))
   }
 }

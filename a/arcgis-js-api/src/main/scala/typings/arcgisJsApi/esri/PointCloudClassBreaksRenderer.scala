@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`low-four-bit`
 import typings.arcgisJsApi.arcgisJsApiStrings.`modulo-ten`
 import typings.arcgisJsApi.arcgisJsApiStrings.`point-cloud-class-breaks`
 import typings.arcgisJsApi.arcgisJsApiStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

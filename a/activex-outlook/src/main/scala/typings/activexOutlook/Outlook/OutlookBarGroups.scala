@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutlookBarGroups extends js.Object {
+trait OutlookBarGroups extends StObject {
   
   def Add(Name: String): OutlookBarGroup = js.native
   def Add(Name: String, Index: js.Any): OutlookBarGroup = js.native

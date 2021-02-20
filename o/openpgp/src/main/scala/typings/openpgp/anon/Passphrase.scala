@@ -1,12 +1,13 @@
 package typings.openpgp.anon
 
 import typings.openpgp.openpgpBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Passphrase extends js.Object {
+trait Passphrase extends StObject {
   
   var passphrase: String = js.native
   
@@ -21,24 +22,12 @@ object Passphrase {
   }
   
   @scala.inline
-  implicit class PassphraseOps[Self <: Passphrase] (val x: Self) extends AnyVal {
+  implicit class PassphraseMutableBuilder[Self <: Passphrase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSign(value: `true`): Self = this.set("sign", value.asInstanceOf[js.Any])
+    def setSign(value: `true`): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
   }
 }

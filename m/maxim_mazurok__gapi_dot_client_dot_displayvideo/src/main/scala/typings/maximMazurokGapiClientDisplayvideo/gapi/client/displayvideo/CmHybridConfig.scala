@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CmHybridConfig extends js.Object {
+trait CmHybridConfig extends StObject {
   
   /** Required. Immutable. Account ID of the CM360 Floodlight configuration linked with the DV360 advertiser. */
   var cmAccountId: js.UndefOr[String] = js.native
@@ -40,57 +41,45 @@ object CmHybridConfig {
   }
   
   @scala.inline
-  implicit class CmHybridConfigOps[Self <: CmHybridConfig] (val x: Self) extends AnyVal {
+  implicit class CmHybridConfigMutableBuilder[Self <: CmHybridConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmAccountId(value: String): Self = StObject.set(x, "cmAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmAccountIdUndefined: Self = StObject.set(x, "cmAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCmFloodlightConfigId(value: String): Self = StObject.set(x, "cmFloodlightConfigId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmAccountId(value: String): Self = this.set("cmAccountId", value.asInstanceOf[js.Any])
+    def setCmFloodlightConfigIdUndefined: Self = StObject.set(x, "cmFloodlightConfigId", js.undefined)
     
     @scala.inline
-    def deleteCmAccountId: Self = this.set("cmAccountId", js.undefined)
+    def setCmFloodlightLinkingAuthorized(value: Boolean): Self = StObject.set(x, "cmFloodlightLinkingAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmFloodlightConfigId(value: String): Self = this.set("cmFloodlightConfigId", value.asInstanceOf[js.Any])
+    def setCmFloodlightLinkingAuthorizedUndefined: Self = StObject.set(x, "cmFloodlightLinkingAuthorized", js.undefined)
     
     @scala.inline
-    def deleteCmFloodlightConfigId: Self = this.set("cmFloodlightConfigId", js.undefined)
+    def setCmSyncableSiteIds(value: js.Array[String]): Self = StObject.set(x, "cmSyncableSiteIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmFloodlightLinkingAuthorized(value: Boolean): Self = this.set("cmFloodlightLinkingAuthorized", value.asInstanceOf[js.Any])
+    def setCmSyncableSiteIdsUndefined: Self = StObject.set(x, "cmSyncableSiteIds", js.undefined)
     
     @scala.inline
-    def deleteCmFloodlightLinkingAuthorized: Self = this.set("cmFloodlightLinkingAuthorized", js.undefined)
+    def setCmSyncableSiteIdsVarargs(value: String*): Self = StObject.set(x, "cmSyncableSiteIds", js.Array(value :_*))
     
     @scala.inline
-    def setCmSyncableSiteIdsVarargs(value: String*): Self = this.set("cmSyncableSiteIds", js.Array(value :_*))
+    def setDv360ToCmCostReportingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmCostReportingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmSyncableSiteIds(value: js.Array[String]): Self = this.set("cmSyncableSiteIds", value.asInstanceOf[js.Any])
+    def setDv360ToCmCostReportingEnabledUndefined: Self = StObject.set(x, "dv360ToCmCostReportingEnabled", js.undefined)
     
     @scala.inline
-    def deleteCmSyncableSiteIds: Self = this.set("cmSyncableSiteIds", js.undefined)
+    def setDv360ToCmDataSharingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmDataSharingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDv360ToCmCostReportingEnabled(value: Boolean): Self = this.set("dv360ToCmCostReportingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDv360ToCmCostReportingEnabled: Self = this.set("dv360ToCmCostReportingEnabled", js.undefined)
-    
-    @scala.inline
-    def setDv360ToCmDataSharingEnabled(value: Boolean): Self = this.set("dv360ToCmDataSharingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDv360ToCmDataSharingEnabled: Self = this.set("dv360ToCmDataSharingEnabled", js.undefined)
+    def setDv360ToCmDataSharingEnabledUndefined: Self = StObject.set(x, "dv360ToCmDataSharingEnabled", js.undefined)
   }
 }

@@ -10,12 +10,13 @@ import typings.griddleReact.mod.components.TableBodyProps
 import typings.griddleReact.mod.components.TableHeadingCellProps
 import typings.griddleReact.mod.components.TableHeadingProps
 import typings.griddleReact.mod.components.TableProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GriddleComponents extends js.Object {
+trait GriddleComponents extends StObject {
   
   var Cell: js.UndefOr[GriddleComponent[CellProps]] = js.native
   
@@ -287,462 +288,450 @@ object GriddleComponents {
   }
   
   @scala.inline
-  implicit class GriddleComponentsOps[Self <: GriddleComponents] (val x: Self) extends AnyVal {
+  implicit class GriddleComponentsMutableBuilder[Self <: GriddleComponents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCell(value: GriddleComponent[CellProps]): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellContainer(value: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps]): Self = StObject.set(x, "CellContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps]): Self = StObject.set(x, "CellContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCell(value: GriddleComponent[CellProps]): Self = this.set("Cell", value.asInstanceOf[js.Any])
+    def setCellContainerEnhancerUndefined: Self = StObject.set(x, "CellContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deleteCell: Self = this.set("Cell", js.undefined)
+    def setCellContainerUndefined: Self = StObject.set(x, "CellContainer", js.undefined)
     
     @scala.inline
-    def setCellContainer(value: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps]): Self = this.set("CellContainer", js.Any.fromFunction1(value))
+    def setCellEnhancer(value: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps]): Self = StObject.set(x, "CellEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCellContainer: Self = this.set("CellContainer", js.undefined)
+    def setCellEnhancerUndefined: Self = StObject.set(x, "CellEnhancer", js.undefined)
     
     @scala.inline
-    def setCellContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps]): Self = this.set("CellContainerEnhancer", js.Any.fromFunction1(value))
+    def setCellUndefined: Self = StObject.set(x, "Cell", js.undefined)
     
     @scala.inline
-    def deleteCellContainerEnhancer: Self = this.set("CellContainerEnhancer", js.undefined)
+    def setFilter(value: GriddleComponent[FilterProps]): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellEnhancer(value: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps]): Self = this.set("CellEnhancer", js.Any.fromFunction1(value))
+    def setFilterContainer(value: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps]): Self = StObject.set(x, "FilterContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCellEnhancer: Self = this.set("CellEnhancer", js.undefined)
+    def setFilterContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps]): Self = StObject.set(x, "FilterContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilter(value: GriddleComponent[FilterProps]): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setFilterContainerEnhancerUndefined: Self = StObject.set(x, "FilterContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setFilterContainerUndefined: Self = StObject.set(x, "FilterContainer", js.undefined)
     
     @scala.inline
-    def setFilterContainer(value: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps]): Self = this.set("FilterContainer", js.Any.fromFunction1(value))
+    def setFilterEnhancer(value: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps]): Self = StObject.set(x, "FilterEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFilterContainer: Self = this.set("FilterContainer", js.undefined)
+    def setFilterEnhancerUndefined: Self = StObject.set(x, "FilterEnhancer", js.undefined)
     
     @scala.inline
-    def setFilterContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps]): Self = this.set("FilterContainerEnhancer", js.Any.fromFunction1(value))
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def deleteFilterContainerEnhancer: Self = this.set("FilterContainerEnhancer", js.undefined)
+    def setLayout(value: GriddleComponent[_]): Self = StObject.set(x, "Layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterEnhancer(value: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps]): Self = this.set("FilterEnhancer", js.Any.fromFunction1(value))
+    def setLayoutContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "LayoutContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFilterEnhancer: Self = this.set("FilterEnhancer", js.undefined)
+    def setLayoutContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "LayoutContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLayout(value: GriddleComponent[_]): Self = this.set("Layout", value.asInstanceOf[js.Any])
+    def setLayoutContainerEnhancerUndefined: Self = StObject.set(x, "LayoutContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("Layout", js.undefined)
+    def setLayoutContainerUndefined: Self = StObject.set(x, "LayoutContainer", js.undefined)
     
     @scala.inline
-    def setLayoutContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("LayoutContainer", js.Any.fromFunction1(value))
+    def setLayoutEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "LayoutEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLayoutContainer: Self = this.set("LayoutContainer", js.undefined)
+    def setLayoutEnhancerUndefined: Self = StObject.set(x, "LayoutEnhancer", js.undefined)
     
     @scala.inline
-    def setLayoutContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("LayoutContainerEnhancer", js.Any.fromFunction1(value))
+    def setLayoutUndefined: Self = StObject.set(x, "Layout", js.undefined)
     
     @scala.inline
-    def deleteLayoutContainerEnhancer: Self = this.set("LayoutContainerEnhancer", js.undefined)
+    def setNextButton(value: GriddleComponent[_]): Self = StObject.set(x, "NextButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("LayoutEnhancer", js.Any.fromFunction1(value))
+    def setNextButtonContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "NextButtonContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLayoutEnhancer: Self = this.set("LayoutEnhancer", js.undefined)
+    def setNextButtonContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "NextButtonContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNextButton(value: GriddleComponent[_]): Self = this.set("NextButton", value.asInstanceOf[js.Any])
+    def setNextButtonContainerEnhancerUndefined: Self = StObject.set(x, "NextButtonContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deleteNextButton: Self = this.set("NextButton", js.undefined)
+    def setNextButtonContainerUndefined: Self = StObject.set(x, "NextButtonContainer", js.undefined)
     
     @scala.inline
-    def setNextButtonContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NextButtonContainer", js.Any.fromFunction1(value))
+    def setNextButtonEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "NextButtonEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteNextButtonContainer: Self = this.set("NextButtonContainer", js.undefined)
+    def setNextButtonEnhancerUndefined: Self = StObject.set(x, "NextButtonEnhancer", js.undefined)
     
     @scala.inline
-    def setNextButtonContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NextButtonContainerEnhancer", js.Any.fromFunction1(value))
+    def setNextButtonUndefined: Self = StObject.set(x, "NextButton", js.undefined)
     
     @scala.inline
-    def deleteNextButtonContainerEnhancer: Self = this.set("NextButtonContainerEnhancer", js.undefined)
+    def setNoResults(value: GriddleComponent[_]): Self = StObject.set(x, "NoResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextButtonEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NextButtonEnhancer", js.Any.fromFunction1(value))
+    def setNoResultsContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "NoResultsContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteNextButtonEnhancer: Self = this.set("NextButtonEnhancer", js.undefined)
+    def setNoResultsContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "NoResultsContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNoResults(value: GriddleComponent[_]): Self = this.set("NoResults", value.asInstanceOf[js.Any])
+    def setNoResultsContainerEnhancerUndefined: Self = StObject.set(x, "NoResultsContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deleteNoResults: Self = this.set("NoResults", js.undefined)
+    def setNoResultsContainerUndefined: Self = StObject.set(x, "NoResultsContainer", js.undefined)
     
     @scala.inline
-    def setNoResultsContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NoResultsContainer", js.Any.fromFunction1(value))
+    def setNoResultsEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "NoResultsEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteNoResultsContainer: Self = this.set("NoResultsContainer", js.undefined)
+    def setNoResultsEnhancerUndefined: Self = StObject.set(x, "NoResultsEnhancer", js.undefined)
     
     @scala.inline
-    def setNoResultsContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NoResultsContainerEnhancer", js.Any.fromFunction1(value))
+    def setNoResultsUndefined: Self = StObject.set(x, "NoResults", js.undefined)
     
     @scala.inline
-    def deleteNoResultsContainerEnhancer: Self = this.set("NoResultsContainerEnhancer", js.undefined)
+    def setPageDropdown(value: GriddleComponent[_]): Self = StObject.set(x, "PageDropdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoResultsEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NoResultsEnhancer", js.Any.fromFunction1(value))
+    def setPageDropdownContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "PageDropdownContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteNoResultsEnhancer: Self = this.set("NoResultsEnhancer", js.undefined)
+    def setPageDropdownContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "PageDropdownContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageDropdown(value: GriddleComponent[_]): Self = this.set("PageDropdown", value.asInstanceOf[js.Any])
+    def setPageDropdownContainerEnhancerUndefined: Self = StObject.set(x, "PageDropdownContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deletePageDropdown: Self = this.set("PageDropdown", js.undefined)
+    def setPageDropdownContainerUndefined: Self = StObject.set(x, "PageDropdownContainer", js.undefined)
     
     @scala.inline
-    def setPageDropdownContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PageDropdownContainer", js.Any.fromFunction1(value))
+    def setPageDropdownEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "PageDropdownEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePageDropdownContainer: Self = this.set("PageDropdownContainer", js.undefined)
+    def setPageDropdownEnhancerUndefined: Self = StObject.set(x, "PageDropdownEnhancer", js.undefined)
     
     @scala.inline
-    def setPageDropdownContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PageDropdownContainerEnhancer", js.Any.fromFunction1(value))
+    def setPageDropdownUndefined: Self = StObject.set(x, "PageDropdown", js.undefined)
     
     @scala.inline
-    def deletePageDropdownContainerEnhancer: Self = this.set("PageDropdownContainerEnhancer", js.undefined)
+    def setPagination(value: GriddleComponent[_]): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageDropdownEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PageDropdownEnhancer", js.Any.fromFunction1(value))
+    def setPaginationContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "PaginationContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePageDropdownEnhancer: Self = this.set("PageDropdownEnhancer", js.undefined)
+    def setPaginationContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "PaginationContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPagination(value: GriddleComponent[_]): Self = this.set("Pagination", value.asInstanceOf[js.Any])
+    def setPaginationContainerEnhancerUndefined: Self = StObject.set(x, "PaginationContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deletePagination: Self = this.set("Pagination", js.undefined)
+    def setPaginationContainerUndefined: Self = StObject.set(x, "PaginationContainer", js.undefined)
     
     @scala.inline
-    def setPaginationContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PaginationContainer", js.Any.fromFunction1(value))
+    def setPaginationEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "PaginationEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaginationContainer: Self = this.set("PaginationContainer", js.undefined)
+    def setPaginationEnhancerUndefined: Self = StObject.set(x, "PaginationEnhancer", js.undefined)
     
     @scala.inline
-    def setPaginationContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PaginationContainerEnhancer", js.Any.fromFunction1(value))
+    def setPaginationUndefined: Self = StObject.set(x, "Pagination", js.undefined)
     
     @scala.inline
-    def deletePaginationContainerEnhancer: Self = this.set("PaginationContainerEnhancer", js.undefined)
+    def setPreviousButton(value: GriddleComponent[_]): Self = StObject.set(x, "PreviousButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PaginationEnhancer", js.Any.fromFunction1(value))
+    def setPreviousButtonContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "PreviousButtonContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaginationEnhancer: Self = this.set("PaginationEnhancer", js.undefined)
+    def setPreviousButtonContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "PreviousButtonContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreviousButton(value: GriddleComponent[_]): Self = this.set("PreviousButton", value.asInstanceOf[js.Any])
+    def setPreviousButtonContainerEnhancerUndefined: Self = StObject.set(x, "PreviousButtonContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deletePreviousButton: Self = this.set("PreviousButton", js.undefined)
+    def setPreviousButtonContainerUndefined: Self = StObject.set(x, "PreviousButtonContainer", js.undefined)
     
     @scala.inline
-    def setPreviousButtonContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PreviousButtonContainer", js.Any.fromFunction1(value))
+    def setPreviousButtonEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "PreviousButtonEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePreviousButtonContainer: Self = this.set("PreviousButtonContainer", js.undefined)
+    def setPreviousButtonEnhancerUndefined: Self = StObject.set(x, "PreviousButtonEnhancer", js.undefined)
     
     @scala.inline
-    def setPreviousButtonContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PreviousButtonContainerEnhancer", js.Any.fromFunction1(value))
+    def setPreviousButtonUndefined: Self = StObject.set(x, "PreviousButton", js.undefined)
     
     @scala.inline
-    def deletePreviousButtonContainerEnhancer: Self = this.set("PreviousButtonContainerEnhancer", js.undefined)
+    def setRow(value: GriddleComponent[RowProps]): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousButtonEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PreviousButtonEnhancer", js.Any.fromFunction1(value))
+    def setRowContainer(value: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps]): Self = StObject.set(x, "RowContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePreviousButtonEnhancer: Self = this.set("PreviousButtonEnhancer", js.undefined)
+    def setRowContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps]): Self = StObject.set(x, "RowContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRow(value: GriddleComponent[RowProps]): Self = this.set("Row", value.asInstanceOf[js.Any])
+    def setRowContainerEnhancerUndefined: Self = StObject.set(x, "RowContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deleteRow: Self = this.set("Row", js.undefined)
+    def setRowContainerUndefined: Self = StObject.set(x, "RowContainer", js.undefined)
     
     @scala.inline
-    def setRowContainer(value: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps]): Self = this.set("RowContainer", js.Any.fromFunction1(value))
+    def setRowEnhancer(value: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps]): Self = StObject.set(x, "RowEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRowContainer: Self = this.set("RowContainer", js.undefined)
+    def setRowEnhancerUndefined: Self = StObject.set(x, "RowEnhancer", js.undefined)
     
     @scala.inline
-    def setRowContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps]): Self = this.set("RowContainerEnhancer", js.Any.fromFunction1(value))
+    def setRowUndefined: Self = StObject.set(x, "Row", js.undefined)
     
     @scala.inline
-    def deleteRowContainerEnhancer: Self = this.set("RowContainerEnhancer", js.undefined)
+    def setSettings(value: GriddleComponent[SettingsProps]): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowEnhancer(value: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps]): Self = this.set("RowEnhancer", js.Any.fromFunction1(value))
+    def setSettingsComponents(value: PropertyBag[GriddleComponent[_]]): Self = StObject.set(x, "SettingsComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowEnhancer: Self = this.set("RowEnhancer", js.undefined)
+    def setSettingsComponentsUndefined: Self = StObject.set(x, "SettingsComponents", js.undefined)
     
     @scala.inline
-    def setSettings(value: GriddleComponent[SettingsProps]): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    def setSettingsContainer(value: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps]): Self = StObject.set(x, "SettingsContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSettings: Self = this.set("Settings", js.undefined)
+    def setSettingsContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps]): Self = StObject.set(x, "SettingsContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSettingsComponents(value: PropertyBag[GriddleComponent[_]]): Self = this.set("SettingsComponents", value.asInstanceOf[js.Any])
+    def setSettingsContainerEnhancerUndefined: Self = StObject.set(x, "SettingsContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deleteSettingsComponents: Self = this.set("SettingsComponents", js.undefined)
+    def setSettingsContainerUndefined: Self = StObject.set(x, "SettingsContainer", js.undefined)
     
     @scala.inline
-    def setSettingsContainer(value: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps]): Self = this.set("SettingsContainer", js.Any.fromFunction1(value))
+    def setSettingsEnhancer(value: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps]): Self = StObject.set(x, "SettingsEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSettingsContainer: Self = this.set("SettingsContainer", js.undefined)
+    def setSettingsEnhancerUndefined: Self = StObject.set(x, "SettingsEnhancer", js.undefined)
     
     @scala.inline
-    def setSettingsContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps]): Self = this.set("SettingsContainerEnhancer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSettingsContainerEnhancer: Self = this.set("SettingsContainerEnhancer", js.undefined)
-    
-    @scala.inline
-    def setSettingsEnhancer(value: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps]): Self = this.set("SettingsEnhancer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSettingsEnhancer: Self = this.set("SettingsEnhancer", js.undefined)
-    
-    @scala.inline
-    def setSettingsToggle(value: GriddleComponent[SettingsToggleProps]): Self = this.set("SettingsToggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettingsToggle: Self = this.set("SettingsToggle", js.undefined)
+    def setSettingsToggle(value: GriddleComponent[SettingsToggleProps]): Self = StObject.set(x, "SettingsToggle", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSettingsToggleContainer(
       value: /* OriginalComponent */ GriddleComponent[SettingsToggleProps] => GriddleComponent[SettingsToggleProps]
-    ): Self = this.set("SettingsToggleContainer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSettingsToggleContainer: Self = this.set("SettingsToggleContainer", js.undefined)
+    ): Self = StObject.set(x, "SettingsToggleContainer", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSettingsToggleContainerEnhancer(
       value: /* OriginalComponent */ GriddleComponent[SettingsToggleProps] => GriddleComponent[SettingsToggleProps]
-    ): Self = this.set("SettingsToggleContainerEnhancer", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "SettingsToggleContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSettingsToggleContainerEnhancer: Self = this.set("SettingsToggleContainerEnhancer", js.undefined)
+    def setSettingsToggleContainerEnhancerUndefined: Self = StObject.set(x, "SettingsToggleContainerEnhancer", js.undefined)
+    
+    @scala.inline
+    def setSettingsToggleContainerUndefined: Self = StObject.set(x, "SettingsToggleContainer", js.undefined)
     
     @scala.inline
     def setSettingsToggleEnhancer(
       value: /* OriginalComponent */ GriddleComponent[SettingsToggleProps] => GriddleComponent[SettingsToggleProps]
-    ): Self = this.set("SettingsToggleEnhancer", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "SettingsToggleEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSettingsToggleEnhancer: Self = this.set("SettingsToggleEnhancer", js.undefined)
+    def setSettingsToggleEnhancerUndefined: Self = StObject.set(x, "SettingsToggleEnhancer", js.undefined)
     
     @scala.inline
-    def setSettingsWrapper(value: GriddleComponent[SettingsWrapperProps]): Self = this.set("SettingsWrapper", value.asInstanceOf[js.Any])
+    def setSettingsToggleUndefined: Self = StObject.set(x, "SettingsToggle", js.undefined)
     
     @scala.inline
-    def deleteSettingsWrapper: Self = this.set("SettingsWrapper", js.undefined)
+    def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
+    
+    @scala.inline
+    def setSettingsWrapper(value: GriddleComponent[SettingsWrapperProps]): Self = StObject.set(x, "SettingsWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSettingsWrapperContainer(
       value: /* OriginalComponent */ GriddleComponent[SettingsWrapperProps] => GriddleComponent[SettingsWrapperProps]
-    ): Self = this.set("SettingsWrapperContainer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSettingsWrapperContainer: Self = this.set("SettingsWrapperContainer", js.undefined)
+    ): Self = StObject.set(x, "SettingsWrapperContainer", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSettingsWrapperContainerEnhancer(
       value: /* OriginalComponent */ GriddleComponent[SettingsWrapperProps] => GriddleComponent[SettingsWrapperProps]
-    ): Self = this.set("SettingsWrapperContainerEnhancer", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "SettingsWrapperContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSettingsWrapperContainerEnhancer: Self = this.set("SettingsWrapperContainerEnhancer", js.undefined)
+    def setSettingsWrapperContainerEnhancerUndefined: Self = StObject.set(x, "SettingsWrapperContainerEnhancer", js.undefined)
+    
+    @scala.inline
+    def setSettingsWrapperContainerUndefined: Self = StObject.set(x, "SettingsWrapperContainer", js.undefined)
     
     @scala.inline
     def setSettingsWrapperEnhancer(
       value: /* OriginalComponent */ GriddleComponent[SettingsWrapperProps] => GriddleComponent[SettingsWrapperProps]
-    ): Self = this.set("SettingsWrapperEnhancer", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "SettingsWrapperEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSettingsWrapperEnhancer: Self = this.set("SettingsWrapperEnhancer", js.undefined)
+    def setSettingsWrapperEnhancerUndefined: Self = StObject.set(x, "SettingsWrapperEnhancer", js.undefined)
     
     @scala.inline
-    def setStyle(value: GriddleComponent[_]): Self = this.set("Style", value.asInstanceOf[js.Any])
+    def setSettingsWrapperUndefined: Self = StObject.set(x, "SettingsWrapper", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("Style", js.undefined)
+    def setStyle(value: GriddleComponent[_]): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("StyleContainer", js.Any.fromFunction1(value))
+    def setStyleContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "StyleContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStyleContainer: Self = this.set("StyleContainer", js.undefined)
+    def setStyleContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "StyleContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStyleContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("StyleContainerEnhancer", js.Any.fromFunction1(value))
+    def setStyleContainerEnhancerUndefined: Self = StObject.set(x, "StyleContainerEnhancer", js.undefined)
     
     @scala.inline
-    def deleteStyleContainerEnhancer: Self = this.set("StyleContainerEnhancer", js.undefined)
+    def setStyleContainerUndefined: Self = StObject.set(x, "StyleContainer", js.undefined)
     
     @scala.inline
-    def setStyleEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("StyleEnhancer", js.Any.fromFunction1(value))
+    def setStyleEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = StObject.set(x, "StyleEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStyleEnhancer: Self = this.set("StyleEnhancer", js.undefined)
+    def setStyleEnhancerUndefined: Self = StObject.set(x, "StyleEnhancer", js.undefined)
     
     @scala.inline
-    def setTable(value: GriddleComponent[TableProps]): Self = this.set("Table", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "Style", js.undefined)
     
     @scala.inline
-    def deleteTable: Self = this.set("Table", js.undefined)
+    def setTable(value: GriddleComponent[TableProps]): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableBody(value: GriddleComponent[TableBodyProps]): Self = this.set("TableBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableBody: Self = this.set("TableBody", js.undefined)
+    def setTableBody(value: GriddleComponent[TableBodyProps]): Self = StObject.set(x, "TableBody", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTableBodyContainer(
       value: /* OriginalComponent */ GriddleComponent[TableBodyProps] => GriddleComponent[TableBodyProps]
-    ): Self = this.set("TableBodyContainer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTableBodyContainer: Self = this.set("TableBodyContainer", js.undefined)
+    ): Self = StObject.set(x, "TableBodyContainer", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTableBodyContainerEnhancer(
       value: /* OriginalComponent */ GriddleComponent[TableBodyProps] => GriddleComponent[TableBodyProps]
-    ): Self = this.set("TableBodyContainerEnhancer", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "TableBodyContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTableBodyContainerEnhancer: Self = this.set("TableBodyContainerEnhancer", js.undefined)
+    def setTableBodyContainerEnhancerUndefined: Self = StObject.set(x, "TableBodyContainerEnhancer", js.undefined)
+    
+    @scala.inline
+    def setTableBodyContainerUndefined: Self = StObject.set(x, "TableBodyContainer", js.undefined)
     
     @scala.inline
     def setTableBodyEnhancer(
       value: /* OriginalComponent */ GriddleComponent[TableBodyProps] => GriddleComponent[TableBodyProps]
-    ): Self = this.set("TableBodyEnhancer", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "TableBodyEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTableBodyEnhancer: Self = this.set("TableBodyEnhancer", js.undefined)
+    def setTableBodyEnhancerUndefined: Self = StObject.set(x, "TableBodyEnhancer", js.undefined)
     
     @scala.inline
-    def setTableContainer(value: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps]): Self = this.set("TableContainer", js.Any.fromFunction1(value))
+    def setTableBodyUndefined: Self = StObject.set(x, "TableBody", js.undefined)
     
     @scala.inline
-    def deleteTableContainer: Self = this.set("TableContainer", js.undefined)
+    def setTableContainer(value: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps]): Self = StObject.set(x, "TableContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTableContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps]): Self = this.set("TableContainerEnhancer", js.Any.fromFunction1(value))
+    def setTableContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps]): Self = StObject.set(x, "TableContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTableContainerEnhancer: Self = this.set("TableContainerEnhancer", js.undefined)
+    def setTableContainerEnhancerUndefined: Self = StObject.set(x, "TableContainerEnhancer", js.undefined)
     
     @scala.inline
-    def setTableEnhancer(value: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps]): Self = this.set("TableEnhancer", js.Any.fromFunction1(value))
+    def setTableContainerUndefined: Self = StObject.set(x, "TableContainer", js.undefined)
     
     @scala.inline
-    def deleteTableEnhancer: Self = this.set("TableEnhancer", js.undefined)
+    def setTableEnhancer(value: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps]): Self = StObject.set(x, "TableEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTableHeading(value: GriddleComponent[TableHeadingProps]): Self = this.set("TableHeading", value.asInstanceOf[js.Any])
+    def setTableEnhancerUndefined: Self = StObject.set(x, "TableEnhancer", js.undefined)
     
     @scala.inline
-    def deleteTableHeading: Self = this.set("TableHeading", js.undefined)
+    def setTableHeading(value: GriddleComponent[TableHeadingProps]): Self = StObject.set(x, "TableHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableHeadingCell(value: GriddleComponent[TableHeadingCellProps]): Self = this.set("TableHeadingCell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableHeadingCell: Self = this.set("TableHeadingCell", js.undefined)
+    def setTableHeadingCell(value: GriddleComponent[TableHeadingCellProps]): Self = StObject.set(x, "TableHeadingCell", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTableHeadingCellContainer(
       value: /* OriginalComponent */ GriddleComponent[TableHeadingCellProps] => GriddleComponent[TableHeadingCellProps]
-    ): Self = this.set("TableHeadingCellContainer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTableHeadingCellContainer: Self = this.set("TableHeadingCellContainer", js.undefined)
+    ): Self = StObject.set(x, "TableHeadingCellContainer", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTableHeadingCellContainerEnhancer(
       value: /* OriginalComponent */ GriddleComponent[TableHeadingCellProps] => GriddleComponent[TableHeadingCellProps]
-    ): Self = this.set("TableHeadingCellContainerEnhancer", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "TableHeadingCellContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTableHeadingCellContainerEnhancer: Self = this.set("TableHeadingCellContainerEnhancer", js.undefined)
+    def setTableHeadingCellContainerEnhancerUndefined: Self = StObject.set(x, "TableHeadingCellContainerEnhancer", js.undefined)
+    
+    @scala.inline
+    def setTableHeadingCellContainerUndefined: Self = StObject.set(x, "TableHeadingCellContainer", js.undefined)
     
     @scala.inline
     def setTableHeadingCellEnhancer(
       value: /* OriginalComponent */ GriddleComponent[TableHeadingCellProps] => GriddleComponent[TableHeadingCellProps]
-    ): Self = this.set("TableHeadingCellEnhancer", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "TableHeadingCellEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTableHeadingCellEnhancer: Self = this.set("TableHeadingCellEnhancer", js.undefined)
+    def setTableHeadingCellEnhancerUndefined: Self = StObject.set(x, "TableHeadingCellEnhancer", js.undefined)
+    
+    @scala.inline
+    def setTableHeadingCellUndefined: Self = StObject.set(x, "TableHeadingCell", js.undefined)
     
     @scala.inline
     def setTableHeadingContainer(
       value: /* OriginalComponent */ GriddleComponent[TableHeadingProps] => GriddleComponent[TableHeadingProps]
-    ): Self = this.set("TableHeadingContainer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTableHeadingContainer: Self = this.set("TableHeadingContainer", js.undefined)
+    ): Self = StObject.set(x, "TableHeadingContainer", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTableHeadingContainerEnhancer(
       value: /* OriginalComponent */ GriddleComponent[TableHeadingProps] => GriddleComponent[TableHeadingProps]
-    ): Self = this.set("TableHeadingContainerEnhancer", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "TableHeadingContainerEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTableHeadingContainerEnhancer: Self = this.set("TableHeadingContainerEnhancer", js.undefined)
+    def setTableHeadingContainerEnhancerUndefined: Self = StObject.set(x, "TableHeadingContainerEnhancer", js.undefined)
+    
+    @scala.inline
+    def setTableHeadingContainerUndefined: Self = StObject.set(x, "TableHeadingContainer", js.undefined)
     
     @scala.inline
     def setTableHeadingEnhancer(
       value: /* OriginalComponent */ GriddleComponent[TableHeadingProps] => GriddleComponent[TableHeadingProps]
-    ): Self = this.set("TableHeadingEnhancer", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "TableHeadingEnhancer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTableHeadingEnhancer: Self = this.set("TableHeadingEnhancer", js.undefined)
+    def setTableHeadingEnhancerUndefined: Self = StObject.set(x, "TableHeadingEnhancer", js.undefined)
+    
+    @scala.inline
+    def setTableHeadingUndefined: Self = StObject.set(x, "TableHeading", js.undefined)
+    
+    @scala.inline
+    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
   }
 }

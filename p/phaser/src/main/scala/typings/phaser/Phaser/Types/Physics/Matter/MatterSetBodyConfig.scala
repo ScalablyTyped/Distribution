@@ -1,11 +1,12 @@
 package typings.phaser.Phaser.Types.Physics.Matter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatterSetBodyConfig extends js.Object {
+trait MatterSetBodyConfig extends StObject {
   
   /**
     * Should the new body be automatically added to the world?
@@ -86,105 +87,93 @@ object MatterSetBodyConfig {
   }
   
   @scala.inline
-  implicit class MatterSetBodyConfigOps[Self <: MatterSetBodyConfig] (val x: Self) extends AnyVal {
+  implicit class MatterSetBodyConfigMutableBuilder[Self <: MatterSetBodyConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddToWorld(value: Boolean): Self = StObject.set(x, "addToWorld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddToWorldUndefined: Self = StObject.set(x, "addToWorld", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlagInternal(value: Boolean): Self = StObject.set(x, "flagInternal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddToWorld(value: Boolean): Self = this.set("addToWorld", value.asInstanceOf[js.Any])
+    def setFlagInternalUndefined: Self = StObject.set(x, "flagInternal", js.undefined)
     
     @scala.inline
-    def deleteAddToWorld: Self = this.set("addToWorld", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagInternal(value: Boolean): Self = this.set("flagInternal", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFlagInternal: Self = this.set("flagInternal", js.undefined)
+    def setMaxSides(value: Double): Self = StObject.set(x, "maxSides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMaxSidesUndefined: Self = StObject.set(x, "maxSides", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMinimumArea(value: Double): Self = StObject.set(x, "minimumArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSides(value: Double): Self = this.set("maxSides", value.asInstanceOf[js.Any])
+    def setMinimumAreaUndefined: Self = StObject.set(x, "minimumArea", js.undefined)
     
     @scala.inline
-    def deleteMaxSides: Self = this.set("maxSides", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumArea(value: Double): Self = this.set("minimumArea", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteMinimumArea: Self = this.set("minimumArea", js.undefined)
+    def setRemoveCollinear(value: Double): Self = StObject.set(x, "removeCollinear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setRemoveCollinearUndefined: Self = StObject.set(x, "removeCollinear", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveCollinear(value: Double): Self = this.set("removeCollinear", value.asInstanceOf[js.Any])
+    def setSidesUndefined: Self = StObject.set(x, "sides", js.undefined)
     
     @scala.inline
-    def deleteRemoveCollinear: Self = this.set("removeCollinear", js.undefined)
+    def setSlope(value: Double): Self = StObject.set(x, "slope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSides(value: Double): Self = this.set("sides", value.asInstanceOf[js.Any])
+    def setSlopeUndefined: Self = StObject.set(x, "slope", js.undefined)
     
     @scala.inline
-    def deleteSides: Self = this.set("sides", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlope(value: Double): Self = this.set("slope", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSlope: Self = this.set("slope", js.undefined)
+    def setVerts(value: String | js.Array[_]): Self = StObject.set(x, "verts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVertsUndefined: Self = StObject.set(x, "verts", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVertsVarargs(value: js.Any*): Self = StObject.set(x, "verts", js.Array(value :_*))
     
     @scala.inline
-    def setVertsVarargs(value: js.Any*): Self = this.set("verts", js.Array(value :_*))
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerts(value: String | js.Array[_]): Self = this.set("verts", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteVerts: Self = this.set("verts", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

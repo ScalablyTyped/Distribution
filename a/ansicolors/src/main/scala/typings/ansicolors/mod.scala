@@ -1,14 +1,16 @@
 package typings.ansicolors
 
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ansicolors", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("ansicolors", JSImport.Default)
+  @js.native
   val default: Colors = js.native
   
   @js.native
@@ -86,4 +88,9 @@ object mod extends js.Object {
     
     var yellow: this.type = js.native
   }
+  
+  type _To = Colors
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: Colors = default
 }

@@ -1,20 +1,19 @@
 package typings.featherIcons
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.featherIcons.anon.Attrs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("feather-icons", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def replace(): Unit = js.native
-  def replace(options: FeatherAttributes): Unit = js.native
-  
+  @JSImport("feather-icons", "replace")
   @js.native
-  object icons extends /* key */ StringDictionary[Attrs]
+  def replace(): Unit = js.native
+  @JSImport("feather-icons", "replace")
+  @js.native
+  def replace(options: FeatherAttributes): Unit = js.native
   
   type FeatherAttributes = StringDictionary[String | Double]
 }

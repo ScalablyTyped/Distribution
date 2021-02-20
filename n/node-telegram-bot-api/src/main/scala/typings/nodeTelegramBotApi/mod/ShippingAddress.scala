@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShippingAddress extends js.Object {
+trait ShippingAddress extends StObject {
   
   var city: String = js.native
   
@@ -35,36 +36,24 @@ object ShippingAddress {
   }
   
   @scala.inline
-  implicit class ShippingAddressOps[Self <: ShippingAddress] (val x: Self) extends AnyVal {
+  implicit class ShippingAddressMutableBuilder[Self <: ShippingAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPost_code(value: String): Self = StObject.set(x, "post_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry_code(value: String): Self = this.set("country_code", value.asInstanceOf[js.Any])
+    def setStreet_line1(value: String): Self = StObject.set(x, "street_line1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPost_code(value: String): Self = this.set("post_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreet_line1(value: String): Self = this.set("street_line1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreet_line2(value: String): Self = this.set("street_line2", value.asInstanceOf[js.Any])
+    def setStreet_line2(value: String): Self = StObject.set(x, "street_line2", value.asInstanceOf[js.Any])
   }
 }

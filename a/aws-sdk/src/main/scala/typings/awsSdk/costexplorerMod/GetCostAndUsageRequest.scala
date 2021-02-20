@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCostAndUsageRequest extends js.Object {
+trait GetCostAndUsageRequest extends StObject {
   
   /**
     * Filters AWS costs by different dimensions. For example, you can specify SERVICE and LINKED_ACCOUNT and get the costs that are associated with that account's usage of that service. You can nest Expression objects to define any combination of dimension filters. For more information, see Expression. 
@@ -46,54 +47,42 @@ object GetCostAndUsageRequest {
   }
   
   @scala.inline
-  implicit class GetCostAndUsageRequestOps[Self <: GetCostAndUsageRequest] (val x: Self) extends AnyVal {
+  implicit class GetCostAndUsageRequestMutableBuilder[Self <: GetCostAndUsageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGranularity(value: Granularity): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricsVarargs(value: MetricName*): Self = this.set("Metrics", js.Array(value :_*))
+    def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
     
     @scala.inline
-    def setMetrics(value: MetricNames): Self = this.set("Metrics", value.asInstanceOf[js.Any])
+    def setGroupBy(value: GroupDefinitions): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePeriod(value: DateInterval): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    def setGroupByUndefined: Self = StObject.set(x, "GroupBy", js.undefined)
     
     @scala.inline
-    def setFilter(value: Expression): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setGroupByVarargs(value: GroupDefinition*): Self = StObject.set(x, "GroupBy", js.Array(value :_*))
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setMetrics(value: MetricNames): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGranularity(value: Granularity): Self = this.set("Granularity", value.asInstanceOf[js.Any])
+    def setMetricsVarargs(value: MetricName*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
     
     @scala.inline
-    def deleteGranularity: Self = this.set("Granularity", js.undefined)
+    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByVarargs(value: GroupDefinition*): Self = this.set("GroupBy", js.Array(value :_*))
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def setGroupBy(value: GroupDefinitions): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupBy: Self = this.set("GroupBy", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
   }
 }

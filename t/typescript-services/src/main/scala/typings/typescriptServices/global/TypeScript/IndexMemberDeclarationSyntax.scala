@@ -2,6 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,15 +18,18 @@ class IndexMemberDeclarationSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.IndexMemberDeclarationSyntax")
-@js.native
-object IndexMemberDeclarationSyntax extends js.Object {
+object IndexMemberDeclarationSyntax {
   
+  /* static member */
+  @JSGlobal("TypeScript.IndexMemberDeclarationSyntax.create")
+  @js.native
   def create(
     indexSignature: typings.typescriptServices.TypeScript.IndexSignatureSyntax,
     semicolonToken: ISyntaxToken
   ): typings.typescriptServices.TypeScript.IndexMemberDeclarationSyntax = js.native
   
+  /* static member */
+  @JSGlobal("TypeScript.IndexMemberDeclarationSyntax.create1")
+  @js.native
   def create1(indexSignature: typings.typescriptServices.TypeScript.IndexSignatureSyntax): typings.typescriptServices.TypeScript.IndexMemberDeclarationSyntax = js.native
 }

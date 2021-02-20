@@ -1,12 +1,13 @@
 package typings.vscodeLanguageserverProtocol.anon
 
 import typings.vscodeLanguageserverTypes.mod.MarkupKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommitCharactersSupport extends js.Object {
+trait CommitCharactersSupport extends StObject {
   
   /**
     * Client supports commit characters on a completion item.
@@ -58,57 +59,45 @@ object CommitCharactersSupport {
   }
   
   @scala.inline
-  implicit class CommitCharactersSupportOps[Self <: CommitCharactersSupport] (val x: Self) extends AnyVal {
+  implicit class CommitCharactersSupportMutableBuilder[Self <: CommitCharactersSupport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitCharactersSupport(value: Boolean): Self = StObject.set(x, "commitCharactersSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitCharactersSupportUndefined: Self = StObject.set(x, "commitCharactersSupport", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeprecatedSupport(value: Boolean): Self = StObject.set(x, "deprecatedSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitCharactersSupport(value: Boolean): Self = this.set("commitCharactersSupport", value.asInstanceOf[js.Any])
+    def setDeprecatedSupportUndefined: Self = StObject.set(x, "deprecatedSupport", js.undefined)
     
     @scala.inline
-    def deleteCommitCharactersSupport: Self = this.set("commitCharactersSupport", js.undefined)
+    def setDocumentationFormat(value: js.Array[MarkupKind]): Self = StObject.set(x, "documentationFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedSupport(value: Boolean): Self = this.set("deprecatedSupport", value.asInstanceOf[js.Any])
+    def setDocumentationFormatUndefined: Self = StObject.set(x, "documentationFormat", js.undefined)
     
     @scala.inline
-    def deleteDeprecatedSupport: Self = this.set("deprecatedSupport", js.undefined)
+    def setDocumentationFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "documentationFormat", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentationFormatVarargs(value: MarkupKind*): Self = this.set("documentationFormat", js.Array(value :_*))
+    def setPreselectSupport(value: Boolean): Self = StObject.set(x, "preselectSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentationFormat(value: js.Array[MarkupKind]): Self = this.set("documentationFormat", value.asInstanceOf[js.Any])
+    def setPreselectSupportUndefined: Self = StObject.set(x, "preselectSupport", js.undefined)
     
     @scala.inline
-    def deleteDocumentationFormat: Self = this.set("documentationFormat", js.undefined)
+    def setSnippetSupport(value: Boolean): Self = StObject.set(x, "snippetSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreselectSupport(value: Boolean): Self = this.set("preselectSupport", value.asInstanceOf[js.Any])
+    def setSnippetSupportUndefined: Self = StObject.set(x, "snippetSupport", js.undefined)
     
     @scala.inline
-    def deletePreselectSupport: Self = this.set("preselectSupport", js.undefined)
+    def setTagSupport(value: ValueSetArray): Self = StObject.set(x, "tagSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippetSupport(value: Boolean): Self = this.set("snippetSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnippetSupport: Self = this.set("snippetSupport", js.undefined)
-    
-    @scala.inline
-    def setTagSupport(value: ValueSetArray): Self = this.set("tagSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagSupport: Self = this.set("tagSupport", js.undefined)
+    def setTagSupportUndefined: Self = StObject.set(x, "tagSupport", js.undefined)
   }
 }

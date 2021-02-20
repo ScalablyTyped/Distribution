@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RateDetails extends js.Object {
+trait RateDetails extends StObject {
   
   /** The rate type. Acceptable values are `INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED`, `INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR`, and `INVENTORY_SOURCE_RATE_TYPE_CPD`. */
   var inventorySourceRateType: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object RateDetails {
   }
   
   @scala.inline
-  implicit class RateDetailsOps[Self <: RateDetails] (val x: Self) extends AnyVal {
+  implicit class RateDetailsMutableBuilder[Self <: RateDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInventorySourceRateType(value: String): Self = StObject.set(x, "inventorySourceRateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInventorySourceRateTypeUndefined: Self = StObject.set(x, "inventorySourceRateType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumSpend(value: Money): Self = StObject.set(x, "minimumSpend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventorySourceRateType(value: String): Self = this.set("inventorySourceRateType", value.asInstanceOf[js.Any])
+    def setMinimumSpendUndefined: Self = StObject.set(x, "minimumSpend", js.undefined)
     
     @scala.inline
-    def deleteInventorySourceRateType: Self = this.set("inventorySourceRateType", js.undefined)
+    def setRate(value: Money): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumSpend(value: Money): Self = this.set("minimumSpend", value.asInstanceOf[js.Any])
+    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
     @scala.inline
-    def deleteMinimumSpend: Self = this.set("minimumSpend", js.undefined)
+    def setUnitsPurchased(value: String): Self = StObject.set(x, "unitsPurchased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRate(value: Money): Self = this.set("rate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRate: Self = this.set("rate", js.undefined)
-    
-    @scala.inline
-    def setUnitsPurchased(value: String): Self = this.set("unitsPurchased", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitsPurchased: Self = this.set("unitsPurchased", js.undefined)
+    def setUnitsPurchasedUndefined: Self = StObject.set(x, "unitsPurchased", js.undefined)
   }
 }

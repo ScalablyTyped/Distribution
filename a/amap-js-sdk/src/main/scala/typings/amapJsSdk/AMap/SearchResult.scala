@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchResult extends js.Object {
+trait SearchResult extends StObject {
   
   var cityList: js.Array[CityInfo] = js.native
   
@@ -24,36 +25,24 @@ object SearchResult {
   }
   
   @scala.inline
-  implicit class SearchResultOps[Self <: SearchResult] (val x: Self) extends AnyVal {
+  implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCityList(value: js.Array[CityInfo]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCityListVarargs(value: CityInfo*): Self = StObject.set(x, "cityList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCityListVarargs(value: CityInfo*): Self = this.set("cityList", js.Array(value :_*))
+    def setKeywordList(value: js.Array[String]): Self = StObject.set(x, "keywordList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCityList(value: js.Array[CityInfo]): Self = this.set("cityList", value.asInstanceOf[js.Any])
+    def setKeywordListVarargs(value: String*): Self = StObject.set(x, "keywordList", js.Array(value :_*))
     
     @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeywordListVarargs(value: String*): Self = this.set("keywordList", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeywordList(value: js.Array[String]): Self = this.set("keywordList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoiList(value: PoiList): Self = this.set("poiList", value.asInstanceOf[js.Any])
+    def setPoiList(value: PoiList): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
   }
 }

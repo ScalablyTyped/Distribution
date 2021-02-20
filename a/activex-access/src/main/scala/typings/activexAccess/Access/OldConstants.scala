@@ -73,6 +73,7 @@ import typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x041
 import typings.activexAccess.activexAccessStrings.`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
 import typings.activexAccess.activexAccessStrings.`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`
 import typings.activexAccess.activexAccessStrings.`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,7 +153,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAccess.activexAccessNumbers.`-1`
   - typings.activexAccess.activexAccessNumbers.`-2147483646`
 */
-trait OldConstants extends js.Object
+trait OldConstants extends StObject
 object OldConstants {
   
   @scala.inline

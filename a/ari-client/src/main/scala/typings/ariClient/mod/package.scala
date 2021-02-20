@@ -1,5 +1,6 @@
 package typings.ariClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,4 +102,14 @@ package object mod {
   type StasisStartEventType = typings.ariClient.ariClientStrings.StasisStart
   
   type TextMessageReceivedEventType = typings.ariClient.ariClientStrings.TextMessageReceived
+  
+  @scala.inline
+  def connect(baseUrl: java.lang.String, user: java.lang.String, pass: java.lang.String): js.Promise[typings.ariClient.mod.Client] = (typings.ariClient.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(baseUrl.asInstanceOf[js.Any], user.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ariClient.mod.Client]]
+  @scala.inline
+  def connect(
+    baseUrl: java.lang.String,
+    user: java.lang.String,
+    pass: java.lang.String,
+    callback: js.Function2[/* err */ typings.std.Error, /* client */ typings.ariClient.mod.Client, scala.Unit]
+  ): js.Promise[typings.ariClient.mod.Client] = (typings.ariClient.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(baseUrl.asInstanceOf[js.Any], user.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ariClient.mod.Client]]
 }

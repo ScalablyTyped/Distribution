@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TranslateTextResponse extends js.Object {
+trait TranslateTextResponse extends StObject {
   
   /**
     * The names of the custom terminologies applied to the input text by Amazon Translate for the translated text response.
@@ -40,36 +41,24 @@ object TranslateTextResponse {
   }
   
   @scala.inline
-  implicit class TranslateTextResponseOps[Self <: TranslateTextResponse] (val x: Self) extends AnyVal {
+  implicit class TranslateTextResponseMutableBuilder[Self <: TranslateTextResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppliedTerminologies(value: AppliedTerminologyList): Self = StObject.set(x, "AppliedTerminologies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppliedTerminologiesUndefined: Self = StObject.set(x, "AppliedTerminologies", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppliedTerminologiesVarargs(value: AppliedTerminology*): Self = StObject.set(x, "AppliedTerminologies", js.Array(value :_*))
     
     @scala.inline
-    def setSourceLanguageCode(value: LanguageCodeString): Self = this.set("SourceLanguageCode", value.asInstanceOf[js.Any])
+    def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetLanguageCode(value: LanguageCodeString): Self = this.set("TargetLanguageCode", value.asInstanceOf[js.Any])
+    def setTargetLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "TargetLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslatedText(value: String): Self = this.set("TranslatedText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppliedTerminologiesVarargs(value: AppliedTerminology*): Self = this.set("AppliedTerminologies", js.Array(value :_*))
-    
-    @scala.inline
-    def setAppliedTerminologies(value: AppliedTerminologyList): Self = this.set("AppliedTerminologies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppliedTerminologies: Self = this.set("AppliedTerminologies", js.undefined)
+    def setTranslatedText(value: String): Self = StObject.set(x, "TranslatedText", value.asInstanceOf[js.Any])
   }
 }

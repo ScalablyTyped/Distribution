@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,36 +64,24 @@ object XAreaLink {
   }
   
   @scala.inline
-  implicit class XAreaLinkOps[Self <: XAreaLink] (val x: Self) extends AnyVal {
+  implicit class XAreaLinkMutableBuilder[Self <: XAreaLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestArea(value: CellRangeAddress): Self = StObject.set(x, "DestArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDestArea(value: () => CellRangeAddress): Self = StObject.set(x, "getDestArea", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSourceArea(value: () => String): Self = StObject.set(x, "getSourceArea", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestArea(value: CellRangeAddress): Self = this.set("DestArea", value.asInstanceOf[js.Any])
+    def setSetDestArea(value: CellRangeAddress => Unit): Self = StObject.set(x, "setDestArea", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSourceArea(value: String): Self = this.set("SourceArea", value.asInstanceOf[js.Any])
+    def setSetSourceArea(value: String => Unit): Self = StObject.set(x, "setSourceArea", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDestArea(value: () => CellRangeAddress): Self = this.set("getDestArea", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSourceArea(value: () => String): Self = this.set("getSourceArea", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDestArea(value: CellRangeAddress => Unit): Self = this.set("setDestArea", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSourceArea(value: String => Unit): Self = this.set("setSourceArea", js.Any.fromFunction1(value))
+    def setSourceArea(value: String): Self = StObject.set(x, "SourceArea", value.asInstanceOf[js.Any])
   }
 }

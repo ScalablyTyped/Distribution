@@ -1,11 +1,12 @@
 package typings.paypalCheckoutComponents.callbackDataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthorizationResponseDetails extends js.Object {
+trait AuthorizationResponseDetails extends StObject {
   
   /**
     * User's billing address details.
@@ -43,60 +44,48 @@ object AuthorizationResponseDetails {
   }
   
   @scala.inline
-  implicit class AuthorizationResponseDetailsOps[Self <: AuthorizationResponseDetails] (val x: Self) extends AnyVal {
+  implicit class AuthorizationResponseDetailsMutableBuilder[Self <: AuthorizationResponseDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def setFirstName(value: String): Self = this.set("firstName", value.asInstanceOf[js.Any])
+    def setCreditFinancingOffered(value: CreditFinancingOptions): Self = StObject.set(x, "creditFinancingOffered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastName(value: String): Self = this.set("lastName", value.asInstanceOf[js.Any])
+    def setCreditFinancingOfferedUndefined: Self = StObject.set(x, "creditFinancingOffered", js.undefined)
     
     @scala.inline
-    def setPayerId(value: String): Self = this.set("payerId", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAddress(value: Address): Self = this.set("billingAddress", value.asInstanceOf[js.Any])
+    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBillingAddress: Self = this.set("billingAddress", js.undefined)
+    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setPayerId(value: String): Self = StObject.set(x, "payerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreditFinancingOffered(value: CreditFinancingOptions): Self = this.set("creditFinancingOffered", value.asInstanceOf[js.Any])
+    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
     @scala.inline
-    def deleteCreditFinancingOffered: Self = this.set("creditFinancingOffered", js.undefined)
+    def setShippingAddress(value: Address): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhone: Self = this.set("phone", js.undefined)
-    
-    @scala.inline
-    def setShippingAddress(value: Address): Self = this.set("shippingAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingAddress: Self = this.set("shippingAddress", js.undefined)
+    def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
   }
 }

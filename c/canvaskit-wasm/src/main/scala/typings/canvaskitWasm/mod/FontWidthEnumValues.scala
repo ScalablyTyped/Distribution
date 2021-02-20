@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,45 +46,33 @@ object FontWidthEnumValues {
   }
   
   @scala.inline
-  implicit class FontWidthEnumValuesOps[Self <: FontWidthEnumValues] (val x: Self) extends AnyVal {
+  implicit class FontWidthEnumValuesMutableBuilder[Self <: FontWidthEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondensed(value: FontWidth): Self = StObject.set(x, "Condensed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpanded(value: FontWidth): Self = StObject.set(x, "Expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraCondensed(value: FontWidth): Self = StObject.set(x, "ExtraCondensed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondensed(value: FontWidth): Self = this.set("Condensed", value.asInstanceOf[js.Any])
+    def setExtraExpanded(value: FontWidth): Self = StObject.set(x, "ExtraExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpanded(value: FontWidth): Self = this.set("Expanded", value.asInstanceOf[js.Any])
+    def setNormal(value: FontWidth): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraCondensed(value: FontWidth): Self = this.set("ExtraCondensed", value.asInstanceOf[js.Any])
+    def setSemiCondensed(value: FontWidth): Self = StObject.set(x, "SemiCondensed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraExpanded(value: FontWidth): Self = this.set("ExtraExpanded", value.asInstanceOf[js.Any])
+    def setSemiExpanded(value: FontWidth): Self = StObject.set(x, "SemiExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormal(value: FontWidth): Self = this.set("Normal", value.asInstanceOf[js.Any])
+    def setUltraCondensed(value: FontWidth): Self = StObject.set(x, "UltraCondensed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemiCondensed(value: FontWidth): Self = this.set("SemiCondensed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSemiExpanded(value: FontWidth): Self = this.set("SemiExpanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUltraCondensed(value: FontWidth): Self = this.set("UltraCondensed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUltraExpanded(value: FontWidth): Self = this.set("UltraExpanded", value.asInstanceOf[js.Any])
+    def setUltraExpanded(value: FontWidth): Self = StObject.set(x, "UltraExpanded", value.asInstanceOf[js.Any])
   }
 }

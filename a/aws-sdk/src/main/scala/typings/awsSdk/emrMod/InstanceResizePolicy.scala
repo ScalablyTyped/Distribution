@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceResizePolicy extends js.Object {
+trait InstanceResizePolicy extends StObject {
   
   /**
     * Decommissioning timeout override for the specific list of instances to be terminated.
@@ -31,42 +32,30 @@ object InstanceResizePolicy {
   }
   
   @scala.inline
-  implicit class InstanceResizePolicyOps[Self <: InstanceResizePolicy] (val x: Self) extends AnyVal {
+  implicit class InstanceResizePolicyMutableBuilder[Self <: InstanceResizePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceTerminationTimeout(value: Integer): Self = StObject.set(x, "InstanceTerminationTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceTerminationTimeoutUndefined: Self = StObject.set(x, "InstanceTerminationTimeout", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstancesToProtect(value: EC2InstanceIdsList): Self = StObject.set(x, "InstancesToProtect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceTerminationTimeout(value: Integer): Self = this.set("InstanceTerminationTimeout", value.asInstanceOf[js.Any])
+    def setInstancesToProtectUndefined: Self = StObject.set(x, "InstancesToProtect", js.undefined)
     
     @scala.inline
-    def deleteInstanceTerminationTimeout: Self = this.set("InstanceTerminationTimeout", js.undefined)
+    def setInstancesToProtectVarargs(value: InstanceId*): Self = StObject.set(x, "InstancesToProtect", js.Array(value :_*))
     
     @scala.inline
-    def setInstancesToProtectVarargs(value: InstanceId*): Self = this.set("InstancesToProtect", js.Array(value :_*))
+    def setInstancesToTerminate(value: EC2InstanceIdsList): Self = StObject.set(x, "InstancesToTerminate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesToProtect(value: EC2InstanceIdsList): Self = this.set("InstancesToProtect", value.asInstanceOf[js.Any])
+    def setInstancesToTerminateUndefined: Self = StObject.set(x, "InstancesToTerminate", js.undefined)
     
     @scala.inline
-    def deleteInstancesToProtect: Self = this.set("InstancesToProtect", js.undefined)
-    
-    @scala.inline
-    def setInstancesToTerminateVarargs(value: InstanceId*): Self = this.set("InstancesToTerminate", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstancesToTerminate(value: EC2InstanceIdsList): Self = this.set("InstancesToTerminate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstancesToTerminate: Self = this.set("InstancesToTerminate", js.undefined)
+    def setInstancesToTerminateVarargs(value: InstanceId*): Self = StObject.set(x, "InstancesToTerminate", js.Array(value :_*))
   }
 }

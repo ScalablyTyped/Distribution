@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectionsStep extends js.Object {
+trait DirectionsStep extends StObject {
   
   /**
     * contains the distance covered by this step until the next step. (See the discussion of this field in Directions Legs)
@@ -71,45 +72,33 @@ object DirectionsStep {
   }
   
   @scala.inline
-  implicit class DirectionsStepOps[Self <: DirectionsStep] (val x: Self) extends AnyVal {
+  implicit class DirectionsStepMutableBuilder[Self <: DirectionsStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Distance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd_location(value: LatLngLiteral): Self = StObject.set(x, "end_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Distance): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setHtml_instructions(value: String): Self = StObject.set(x, "html_instructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Duration): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setManeuver(value: Maneuver): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_location(value: LatLngLiteral): Self = this.set("end_location", value.asInstanceOf[js.Any])
+    def setPolyline(value: String): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_instructions(value: String): Self = this.set("html_instructions", value.asInstanceOf[js.Any])
+    def setStart_location(value: LatLngLiteral): Self = StObject.set(x, "start_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManeuver(value: Maneuver): Self = this.set("maneuver", value.asInstanceOf[js.Any])
+    def setSteps(value: DirectionsStep): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolyline(value: String): Self = this.set("polyline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_location(value: LatLngLiteral): Self = this.set("start_location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSteps(value: DirectionsStep): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransit_details(value: TransitDetails): Self = this.set("transit_details", value.asInstanceOf[js.Any])
+    def setTransit_details(value: TransitDetails): Self = StObject.set(x, "transit_details", value.asInstanceOf[js.Any])
   }
 }

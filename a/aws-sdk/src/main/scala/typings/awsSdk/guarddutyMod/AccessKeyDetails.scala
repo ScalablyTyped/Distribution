@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessKeyDetails extends js.Object {
+trait AccessKeyDetails extends StObject {
   
   /**
     * The access key ID of the user.
@@ -36,42 +37,30 @@ object AccessKeyDetails {
   }
   
   @scala.inline
-  implicit class AccessKeyDetailsOps[Self <: AccessKeyDetails] (val x: Self) extends AnyVal {
+  implicit class AccessKeyDetailsMutableBuilder[Self <: AccessKeyDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyId(value: String): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrincipalId(value: String): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKeyId(value: String): Self = this.set("AccessKeyId", value.asInstanceOf[js.Any])
+    def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
     
     @scala.inline
-    def deleteAccessKeyId: Self = this.set("AccessKeyId", js.undefined)
+    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalId(value: String): Self = this.set("PrincipalId", value.asInstanceOf[js.Any])
+    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
     
     @scala.inline
-    def deletePrincipalId: Self = this.set("PrincipalId", js.undefined)
+    def setUserType(value: String): Self = StObject.set(x, "UserType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserName(value: String): Self = this.set("UserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("UserName", js.undefined)
-    
-    @scala.inline
-    def setUserType(value: String): Self = this.set("UserType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserType: Self = this.set("UserType", js.undefined)
+    def setUserTypeUndefined: Self = StObject.set(x, "UserType", js.undefined)
   }
 }

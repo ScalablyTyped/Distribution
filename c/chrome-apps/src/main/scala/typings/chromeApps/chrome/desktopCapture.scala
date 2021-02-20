@@ -1,5 +1,6 @@
 package typings.chromeApps.chrome
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +15,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since Chrome 34.
   * @requires Permissions: 'desktopCapture'
   */
-@JSGlobal("chrome.desktopCapture")
-@js.native
-object desktopCapture extends js.Object
+object desktopCapture

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INamedACLAdmin extends js.Object {
+trait INamedACLAdmin extends StObject {
   
   var AccessControlListForNamedACL: IAccessControlList = js.native
   
@@ -29,30 +30,18 @@ object INamedACLAdmin {
   }
   
   @scala.inline
-  implicit class INamedACLAdminOps[Self <: INamedACLAdmin] (val x: Self) extends AnyVal {
+  implicit class INamedACLAdminMutableBuilder[Self <: INamedACLAdmin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlListForNamedACL(value: IAccessControlList): Self = StObject.set(x, "AccessControlListForNamedACL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => INamedACLAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamedACL(value: INamedACL): Self = StObject.set(x, "NamedACL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlListForNamedACL(value: IAccessControlList): Self = this.set("AccessControlListForNamedACL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClone(value: () => INamedACLAdmin): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNamedACL(value: INamedACL): Self = this.set("NamedACL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = this.set("SemanticAliases", value.asInstanceOf[js.Any])
+    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
   }
 }

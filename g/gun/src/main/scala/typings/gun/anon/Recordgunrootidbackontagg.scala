@@ -1,12 +1,13 @@
 package typings.gun.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<'gun' | '$' | 'root' | 'id' | 'back' | 'on' | 'tag' | 'get' | 'soul' | 'ack' | 'put', any> */
 @js.native
-trait Recordgunrootidbackontagg extends js.Object {
+trait Recordgunrootidbackontagg extends StObject {
   
   @JSName("$")
   var $: js.Any = js.native
@@ -52,51 +53,39 @@ object Recordgunrootidbackontagg {
   }
   
   @scala.inline
-  implicit class RecordgunrootidbackontaggOps[Self <: Recordgunrootidbackontagg] (val x: Self) extends AnyVal {
+  implicit class RecordgunrootidbackontaggMutableBuilder[Self <: Recordgunrootidbackontagg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$(value: js.Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAck(value: js.Any): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBack(value: js.Any): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$(value: js.Any): Self = this.set("$", value.asInstanceOf[js.Any])
+    def setGet(value: js.Any): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAck(value: js.Any): Self = this.set("ack", value.asInstanceOf[js.Any])
+    def setGun(value: js.Any): Self = StObject.set(x, "gun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBack(value: js.Any): Self = this.set("back", value.asInstanceOf[js.Any])
+    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: js.Any): Self = this.set("get", value.asInstanceOf[js.Any])
+    def setOn(value: js.Any): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGun(value: js.Any): Self = this.set("gun", value.asInstanceOf[js.Any])
+    def setPut(value: js.Any): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: js.Any): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn(value: js.Any): Self = this.set("on", value.asInstanceOf[js.Any])
+    def setSoul(value: js.Any): Self = StObject.set(x, "soul", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPut(value: js.Any): Self = this.set("put", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: js.Any): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoul(value: js.Any): Self = this.set("soul", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: js.Any): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.i18next.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Interpolator extends js.Object {
+trait Interpolator extends StObject {
   
   def init(options: InterpolationOptions, reset: Boolean): js.UndefOr[scala.Nothing] = js.native
   
@@ -32,33 +33,21 @@ object Interpolator {
   }
   
   @scala.inline
-  implicit class InterpolatorOps[Self <: Interpolator] (val x: Self) extends AnyVal {
+  implicit class InterpolatorMutableBuilder[Self <: Interpolator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInit(value: (InterpolationOptions, Boolean) => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterpolate(value: (String, js.Object, String, InterpolationOptions) => String): Self = StObject.set(x, "interpolate", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNest(value: (String, js.Function1[/* repeated */ js.Any, _], InterpolationOptions) => String): Self = StObject.set(x, "nest", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setInit(value: (InterpolationOptions, Boolean) => js.UndefOr[scala.Nothing]): Self = this.set("init", js.Any.fromFunction2(value))
+    def setReset(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInterpolate(value: (String, js.Object, String, InterpolationOptions) => String): Self = this.set("interpolate", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setNest(value: (String, js.Function1[/* repeated */ js.Any, _], InterpolationOptions) => String): Self = this.set("nest", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setReset(value: () => js.UndefOr[scala.Nothing]): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResetRegExp(value: () => js.UndefOr[scala.Nothing]): Self = this.set("resetRegExp", js.Any.fromFunction0(value))
+    def setResetRegExp(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "resetRegExp", js.Any.fromFunction0(value))
   }
 }

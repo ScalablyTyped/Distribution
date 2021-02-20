@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.document
 
 import typings.activexLibreoffice.com_.sun.star.frame.XController2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.1
   */
 @js.native
-trait XDocumentEventBroadcaster extends js.Object {
+trait XDocumentEventBroadcaster extends StObject {
   
   /**
     * registers a listener which is notified about document events
@@ -59,27 +60,15 @@ object XDocumentEventBroadcaster {
   }
   
   @scala.inline
-  implicit class XDocumentEventBroadcasterOps[Self <: XDocumentEventBroadcaster] (val x: Self) extends AnyVal {
+  implicit class XDocumentEventBroadcasterMutableBuilder[Self <: XDocumentEventBroadcaster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDocumentEventListener(value: XDocumentEventListener => Unit): Self = StObject.set(x, "addDocumentEventListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotifyDocumentEvent(value: (String, XController2, js.Any) => Unit): Self = StObject.set(x, "notifyDocumentEvent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddDocumentEventListener(value: XDocumentEventListener => Unit): Self = this.set("addDocumentEventListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNotifyDocumentEvent(value: (String, XController2, js.Any) => Unit): Self = this.set("notifyDocumentEvent", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRemoveDocumentEventListener(value: XDocumentEventListener => Unit): Self = this.set("removeDocumentEventListener", js.Any.fromFunction1(value))
+    def setRemoveDocumentEventListener(value: XDocumentEventListener => Unit): Self = StObject.set(x, "removeDocumentEventListener", js.Any.fromFunction1(value))
   }
 }

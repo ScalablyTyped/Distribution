@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivatePipelineInput extends js.Object {
+trait ActivatePipelineInput extends StObject {
   
   /**
     * A list of parameter values to pass to the pipeline at activation.
@@ -31,36 +32,24 @@ object ActivatePipelineInput {
   }
   
   @scala.inline
-  implicit class ActivatePipelineInputOps[Self <: ActivatePipelineInput] (val x: Self) extends AnyVal {
+  implicit class ActivatePipelineInputMutableBuilder[Self <: ActivatePipelineInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterValues(value: ParameterValueList): Self = StObject.set(x, "parameterValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterValuesUndefined: Self = StObject.set(x, "parameterValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "parameterValues", js.Array(value :_*))
     
     @scala.inline
-    def setPipelineId(value: id): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
+    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterValuesVarargs(value: ParameterValue*): Self = this.set("parameterValues", js.Array(value :_*))
+    def setStartTimestamp(value: timestamp): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterValues(value: ParameterValueList): Self = this.set("parameterValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterValues: Self = this.set("parameterValues", js.undefined)
-    
-    @scala.inline
-    def setStartTimestamp(value: timestamp): Self = this.set("startTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimestamp: Self = this.set("startTimestamp", js.undefined)
+    def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
   }
 }

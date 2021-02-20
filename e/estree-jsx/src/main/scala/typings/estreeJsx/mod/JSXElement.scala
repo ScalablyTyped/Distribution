@@ -1,6 +1,7 @@
 package typings.estreeJsx.mod
 
 import typings.estree.mod.BaseNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,36 +34,24 @@ object JSXElement {
   }
   
   @scala.inline
-  implicit class JSXElementOps[Self <: JSXElement] (val x: Self) extends AnyVal {
+  implicit class JSXElementMutableBuilder[Self <: JSXElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: (JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClosingElement(value: JSXClosingElement): Self = StObject.set(x, "closingElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: (JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment)*): Self = this.set("children", js.Array(value :_*))
+    def setClosingElementNull: Self = StObject.set(x, "closingElement", null)
     
     @scala.inline
-    def setChildren(value: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setOpeningElement(value: JSXOpeningElement): Self = StObject.set(x, "openingElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpeningElement(value: JSXOpeningElement): Self = this.set("openingElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXElement): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClosingElement(value: JSXClosingElement): Self = this.set("closingElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClosingElementNull: Self = this.set("closingElement", null)
+    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

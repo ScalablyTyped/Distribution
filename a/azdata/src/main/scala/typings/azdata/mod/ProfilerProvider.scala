@@ -1,6 +1,7 @@
 package typings.azdata.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,48 +50,36 @@ object ProfilerProvider {
   }
   
   @scala.inline
-  implicit class ProfilerProviderOps[Self <: ProfilerProvider] (val x: Self) extends AnyVal {
+  implicit class ProfilerProviderMutableBuilder[Self <: ProfilerProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "connectSession", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateSession(value: (String, String, ProfilerSessionTemplate) => Thenable[Boolean]): Self = StObject.set(x, "createSession", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisconnectSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "disconnectSession", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnectSession(value: String => Thenable[Boolean]): Self = this.set("connectSession", js.Any.fromFunction1(value))
+    def setGetXEventSessions(value: String => Thenable[js.Array[String]]): Self = StObject.set(x, "getXEventSessions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateSession(value: (String, String, ProfilerSessionTemplate) => Thenable[Boolean]): Self = this.set("createSession", js.Any.fromFunction3(value))
+    def setPauseSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "pauseSession", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisconnectSession(value: String => Thenable[Boolean]): Self = this.set("disconnectSession", js.Any.fromFunction1(value))
+    def setRegisterOnProfilerSessionCreated(value: js.Function1[/* response */ ProfilerSessionCreatedParams, _] => Unit): Self = StObject.set(x, "registerOnProfilerSessionCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetXEventSessions(value: String => Thenable[js.Array[String]]): Self = this.set("getXEventSessions", js.Any.fromFunction1(value))
+    def setRegisterOnSessionEventsAvailable(value: js.Function1[/* response */ ProfilerSessionEvents, _] => Unit): Self = StObject.set(x, "registerOnSessionEventsAvailable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPauseSession(value: String => Thenable[Boolean]): Self = this.set("pauseSession", js.Any.fromFunction1(value))
+    def setRegisterOnSessionStopped(value: js.Function1[/* response */ ProfilerSessionStoppedParams, _] => Unit): Self = StObject.set(x, "registerOnSessionStopped", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnProfilerSessionCreated(value: js.Function1[/* response */ ProfilerSessionCreatedParams, _] => Unit): Self = this.set("registerOnProfilerSessionCreated", js.Any.fromFunction1(value))
+    def setStartSession(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "startSession", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterOnSessionEventsAvailable(value: js.Function1[/* response */ ProfilerSessionEvents, _] => Unit): Self = this.set("registerOnSessionEventsAvailable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterOnSessionStopped(value: js.Function1[/* response */ ProfilerSessionStoppedParams, _] => Unit): Self = this.set("registerOnSessionStopped", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartSession(value: (String, String) => Thenable[Boolean]): Self = this.set("startSession", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setStopSession(value: String => Thenable[Boolean]): Self = this.set("stopSession", js.Any.fromFunction1(value))
+    def setStopSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "stopSession", js.Any.fromFunction1(value))
   }
 }

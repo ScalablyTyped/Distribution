@@ -5,12 +5,13 @@ import typings.bmapgl.bmapglStrings.dotted
 import typings.bmapgl.bmapglStrings.metric
 import typings.bmapgl.bmapglStrings.solid
 import typings.bmapgl.bmapglStrings.us
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceToolOptions extends js.Object {
+trait DistanceToolOptions extends StObject {
   
   var closeIcon: js.UndefOr[Icon] = js.native
   
@@ -41,78 +42,66 @@ object DistanceToolOptions {
   }
   
   @scala.inline
-  implicit class DistanceToolOptionsOps[Self <: DistanceToolOptions] (val x: Self) extends AnyVal {
+  implicit class DistanceToolOptionsMutableBuilder[Self <: DistanceToolOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseIcon(value: Icon): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseIcon(value: Icon): Self = this.set("closeIcon", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteCloseIcon: Self = this.set("closeIcon", js.undefined)
+    def setFollowText(value: String): Self = StObject.set(x, "followText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setFollowTextUndefined: Self = StObject.set(x, "followText", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowText(value: String): Self = this.set("followText", value.asInstanceOf[js.Any])
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def deleteFollowText: Self = this.set("followText", js.undefined)
+    def setLineStroke(value: Double): Self = StObject.set(x, "lineStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: String): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setLineStrokeUndefined: Self = StObject.set(x, "lineStroke", js.undefined)
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setLineStyle(value: solid | dashed | dotted): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStroke(value: Double): Self = this.set("lineStroke", value.asInstanceOf[js.Any])
+    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
     @scala.inline
-    def deleteLineStroke: Self = this.set("lineStroke", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: solid | dashed | dotted): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    def setSecIcon(value: Icon): Self = StObject.set(x, "secIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setSecIconUndefined: Self = StObject.set(x, "secIcon", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setTips(value: String): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecIcon(value: Icon): Self = this.set("secIcon", value.asInstanceOf[js.Any])
+    def setTipsUndefined: Self = StObject.set(x, "tips", js.undefined)
     
     @scala.inline
-    def deleteSecIcon: Self = this.set("secIcon", js.undefined)
+    def setUnit(value: metric | us): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTips(value: String): Self = this.set("tips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTips: Self = this.set("tips", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: metric | us): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

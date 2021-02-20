@@ -1,5 +1,6 @@
 package typings.googleapis.pubsubV1Mod.pubsubV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request for the `Pull` method.
   */
 @js.native
-trait SchemaPullRequest extends js.Object {
+trait SchemaPullRequest extends StObject {
   
   /**
     * The maximum number of messages returned for this request. The Pub/Sub
@@ -33,30 +34,18 @@ object SchemaPullRequest {
   }
   
   @scala.inline
-  implicit class SchemaPullRequestOps[Self <: SchemaPullRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaPullRequestMutableBuilder[Self <: SchemaPullRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnImmediately(value: Boolean): Self = StObject.set(x, "returnImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMessages(value: Double): Self = this.set("maxMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxMessages: Self = this.set("maxMessages", js.undefined)
-    
-    @scala.inline
-    def setReturnImmediately(value: Boolean): Self = this.set("returnImmediately", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnImmediately: Self = this.set("returnImmediately", js.undefined)
+    def setReturnImmediatelyUndefined: Self = StObject.set(x, "returnImmediately", js.undefined)
   }
 }

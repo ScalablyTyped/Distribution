@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JourneyExecutionActivityMetricsResponse extends js.Object {
+trait JourneyExecutionActivityMetricsResponse extends StObject {
   
   /**
     * The type of activity that the metric applies to. Possible values are: CONDITIONAL_SPLIT - For a yes/no split activity, which is an activity that sends participants down one of two paths in a journey. HOLDOUT - For a holdout activity, which is an activity that stops a journey for a specified percentage of participants. MESSAGE - For an email activity, which is an activity that sends an email message to participants. MULTI_CONDITIONAL_SPLIT - For a multivariate split activity, which is an activity that sends participants down one of as many as five paths in a journey. RANDOM_SPLIT - For a random split activity, which is an activity that sends specified percentages of participants down one of as many as five paths in a journey. WAIT - For a wait activity, which is an activity that waits for a certain amount of time or until a specific date and time before moving participants to the next activity in a journey.
@@ -53,36 +54,24 @@ object JourneyExecutionActivityMetricsResponse {
   }
   
   @scala.inline
-  implicit class JourneyExecutionActivityMetricsResponseOps[Self <: JourneyExecutionActivityMetricsResponse] (val x: Self) extends AnyVal {
+  implicit class JourneyExecutionActivityMetricsResponseMutableBuilder[Self <: JourneyExecutionActivityMetricsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityType(value: string): Self = StObject.set(x, "ActivityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJourneyActivityId(value: string): Self = StObject.set(x, "JourneyActivityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityType(value: string): Self = this.set("ActivityType", value.asInstanceOf[js.Any])
+    def setJourneyId(value: string): Self = StObject.set(x, "JourneyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setLastEvaluatedTime(value: string): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJourneyActivityId(value: string): Self = this.set("JourneyActivityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJourneyId(value: string): Self = this.set("JourneyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastEvaluatedTime(value: string): Self = this.set("LastEvaluatedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetrics(value: MapOfString): Self = this.set("Metrics", value.asInstanceOf[js.Any])
+    def setMetrics(value: MapOfString): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
   }
 }

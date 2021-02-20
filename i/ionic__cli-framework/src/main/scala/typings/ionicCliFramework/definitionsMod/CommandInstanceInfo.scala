@@ -1,12 +1,13 @@
 package typings.ionicCliFramework.definitionsMod
 
 import typings.node.processMod.global.NodeJS.ProcessEnv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandInstanceInfo[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends js.Object {
+trait CommandInstanceInfo[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
   
   var env: ProcessEnv = js.native
   
@@ -27,27 +28,15 @@ object CommandInstanceInfo {
   }
   
   @scala.inline
-  implicit class CommandInstanceInfoOps[Self <: CommandInstanceInfo[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (CommandInstanceInfo[C, N, M, I, O])) extends AnyVal {
+  implicit class CommandInstanceInfoMutableBuilder[Self <: CommandInstanceInfo[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (CommandInstanceInfo[C, N, M, I, O])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutor(value: IExecutor[C, N, M, I, O]): Self = StObject.set(x, "executor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnv(value: ProcessEnv): Self = this.set("env", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecutor(value: IExecutor[C, N, M, I, O]): Self = this.set("executor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: NamespaceLocateResult[C, N, M, I, O]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocation(value: NamespaceLocateResult[C, N, M, I, O]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

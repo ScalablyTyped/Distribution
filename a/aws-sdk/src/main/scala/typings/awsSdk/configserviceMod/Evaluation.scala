@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Evaluation extends js.Object {
+trait Evaluation extends StObject {
   
   /**
     * Supplementary information about how the evaluation determined the compliance.
@@ -46,36 +47,24 @@ object Evaluation {
   }
   
   @scala.inline
-  implicit class EvaluationOps[Self <: Evaluation] (val x: Self) extends AnyVal {
+  implicit class EvaluationMutableBuilder[Self <: Evaluation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation(value: StringWithCharLimit256): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationUndefined: Self = StObject.set(x, "Annotation", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceResourceId(value: BaseResourceId): Self = StObject.set(x, "ComplianceResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceResourceId(value: BaseResourceId): Self = this.set("ComplianceResourceId", value.asInstanceOf[js.Any])
+    def setComplianceResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ComplianceResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceResourceType(value: StringWithCharLimit256): Self = this.set("ComplianceResourceType", value.asInstanceOf[js.Any])
+    def setComplianceType(value: ComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceType(value: ComplianceType): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrderingTimestamp(value: OrderingTimestamp): Self = this.set("OrderingTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnnotation(value: StringWithCharLimit256): Self = this.set("Annotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnnotation: Self = this.set("Annotation", js.undefined)
+    def setOrderingTimestamp(value: OrderingTimestamp): Self = StObject.set(x, "OrderingTimestamp", value.asInstanceOf[js.Any])
   }
 }

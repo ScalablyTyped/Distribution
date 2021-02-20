@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,60 +57,48 @@ object ParamsResourceRepresentativesRepresentativeinfobyaddress {
   }
   
   @scala.inline
-  implicit class ParamsResourceRepresentativesRepresentativeinfobyaddressOps[Self <: ParamsResourceRepresentativesRepresentativeinfobyaddress] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceRepresentativesRepresentativeinfobyaddressMutableBuilder[Self <: ParamsResourceRepresentativesRepresentativeinfobyaddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setIncludeOffices(value: Boolean): Self = StObject.set(x, "includeOffices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setIncludeOfficesUndefined: Self = StObject.set(x, "includeOffices", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setLevels(value: js.Array[String]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOffices(value: Boolean): Self = this.set("includeOffices", value.asInstanceOf[js.Any])
+    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
     @scala.inline
-    def deleteIncludeOffices: Self = this.set("includeOffices", js.undefined)
+    def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
     @scala.inline
-    def setLevelsVarargs(value: String*): Self = this.set("levels", js.Array(value :_*))
+    def setRequestBody(value: SchemaRepresentativeInfoRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevels(value: js.Array[String]): Self = this.set("levels", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deleteLevels: Self = this.set("levels", js.undefined)
+    def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaRepresentativeInfoRequest): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
     @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
-    
-    @scala.inline
-    def setRolesVarargs(value: String*): Self = this.set("roles", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoles(value: js.Array[String]): Self = this.set("roles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoles: Self = this.set("roles", js.undefined)
+    def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

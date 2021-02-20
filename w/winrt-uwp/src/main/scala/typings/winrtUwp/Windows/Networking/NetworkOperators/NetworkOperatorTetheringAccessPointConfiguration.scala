@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the ability to configure and create a NetworkOperatorTetheringAccessPointConfiguration object that contains a specific network account ID (SSID) and specifies the passphrase used to authenticate clients trying to establish a network connection to the tethering network. */
 @js.native
-trait NetworkOperatorTetheringAccessPointConfiguration extends js.Object {
+trait NetworkOperatorTetheringAccessPointConfiguration extends StObject {
   
   /** Gets or sets the passphrase used to authenticate the connection. */
   var passphrase: String = js.native
@@ -23,24 +24,12 @@ object NetworkOperatorTetheringAccessPointConfiguration {
   }
   
   @scala.inline
-  implicit class NetworkOperatorTetheringAccessPointConfigurationOps[Self <: NetworkOperatorTetheringAccessPointConfiguration] (val x: Self) extends AnyVal {
+  implicit class NetworkOperatorTetheringAccessPointConfigurationMutableBuilder[Self <: NetworkOperatorTetheringAccessPointConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSsid(value: String): Self = this.set("ssid", value.asInstanceOf[js.Any])
+    def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
   }
 }

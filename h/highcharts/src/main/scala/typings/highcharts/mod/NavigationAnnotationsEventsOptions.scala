@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationAnnotationsEventsOptions extends js.Object {
+trait NavigationAnnotationsEventsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Event callback when annotation
@@ -34,36 +35,24 @@ object NavigationAnnotationsEventsOptions {
   }
   
   @scala.inline
-  implicit class NavigationAnnotationsEventsOptionsOps[Self <: NavigationAnnotationsEventsOptions] (val x: Self) extends AnyVal {
+  implicit class NavigationAnnotationsEventsOptionsMutableBuilder[Self <: NavigationAnnotationsEventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterUpdate(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "afterUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: EventCallbackFunction[Annotation]): Self = this.set("add", value.asInstanceOf[js.Any])
+    def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setRemove(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterUpdate(value: EventCallbackFunction[Annotation]): Self = this.set("afterUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAfterUpdate: Self = this.set("afterUpdate", js.undefined)
-    
-    @scala.inline
-    def setRemove(value: EventCallbackFunction[Annotation]): Self = this.set("remove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
   }
 }

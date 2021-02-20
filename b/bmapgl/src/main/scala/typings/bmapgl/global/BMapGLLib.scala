@@ -3,14 +3,14 @@ package typings.bmapgl.global
 import typings.bmapgl.BMapGL.DistanceToolOptions
 import typings.bmapgl.BMapGL.DrawingManagerOptions
 import typings.bmapgl.BMapGL.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BMapGLLib")
-@js.native
-object BMapGLLib extends js.Object {
+object BMapGLLib {
   
+  @JSGlobal("BMapGLLib.DistanceTool")
   @js.native
   class DistanceTool protected ()
     extends typings.bmapgl.BMapGLLib.DistanceTool {
@@ -18,6 +18,7 @@ object BMapGLLib extends js.Object {
     def this(map: Map, opts: DistanceToolOptions) = this()
   }
   
+  @JSGlobal("BMapGLLib.DrawingManager")
   @js.native
   class DrawingManager protected ()
     extends typings.bmapgl.BMapGLLib.DrawingManager {

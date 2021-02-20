@@ -1,5 +1,6 @@
 package typings.reactSketchapp.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactSketchapp.reactSketchappStrings.exactly
   - typings.reactSketchapp.reactSketchappStrings.`at-most`
 */
-trait MeasureMode extends js.Object
+trait MeasureMode extends StObject
 object MeasureMode {
   
   @scala.inline

@@ -12,32 +12,27 @@ import typings.protractor.pluginsMod.Plugins
 import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod.WebElement
 import typings.webdriverJsExtender.mod.ExtendedWebDriver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protractor/built/browser", JSImport.Namespace)
-@js.native
-object browserMod extends js.Object {
+object browserMod {
   
+  @JSImport("protractor/built/browser", "AbstractExtendedWebDriver")
   @js.native
-  class AbstractExtendedWebDriver () extends ExtendedWebDriver
+  class AbstractExtendedWebDriver ()
+    extends AbstractWebDriver
+       with ExtendedWebDriver
   
+  @JSImport("protractor/built/browser", "AbstractWebDriver")
   @js.native
   class AbstractWebDriver () extends WebDriver
   
-  @js.native
-  trait ElementHelper
-    extends js.Function {
-    
-    def apply(locator: Locator): ElementFinder = js.native
-    
-    def all(locator: Locator): ElementArrayFinder = js.native
-  }
-  
+  @JSImport("protractor/built/browser", "ProtractorBrowser")
   @js.native
   class ProtractorBrowser protected ()
-    extends ExtendedWebDriver
+    extends AbstractExtendedWebDriver
        with /* key */ StringDictionary[js.Any] {
     def this(webdriverInstance: WebDriver) = this()
     def this(webdriverInstance: WebDriver, opt_baseUrl: String) = this()
@@ -644,12 +639,28 @@ object browserMod extends js.Object {
     def waitForAngularEnabled(enabled: Boolean): js.Promise[Boolean] = js.native
   }
   /* static members */
-  @js.native
-  object ProtractorBrowser extends js.Object {
+  object ProtractorBrowser {
+    
+    @JSImport("protractor/built/browser", "ProtractorBrowser")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @type {ProtractorBy}
       */
-    var By: ProtractorBy = js.native
+    @JSImport("protractor/built/browser", "ProtractorBrowser.By")
+    @js.native
+    def By: ProtractorBy = js.native
+    @scala.inline
+    def By_=(x: ProtractorBy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("By")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  trait ElementHelper
+    extends js.Function {
+    
+    def apply(locator: Locator): ElementFinder = js.native
+    
+    def all(locator: Locator): ElementArrayFinder = js.native
   }
 }

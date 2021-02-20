@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NatGateway extends js.Object {
+trait NatGateway extends StObject {
   
   /**
     * The date and time the NAT gateway was created.
@@ -71,90 +72,78 @@ object NatGateway {
   }
   
   @scala.inline
-  implicit class NatGatewayOps[Self <: NatGateway] (val x: Self) extends AnyVal {
+  implicit class NatGatewayMutableBuilder[Self <: NatGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteTime(value: DateTime): Self = StObject.set(x, "DeleteTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    def setDeleteTimeUndefined: Self = StObject.set(x, "DeleteTime", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    def setFailureCode(value: String): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTime(value: DateTime): Self = this.set("DeleteTime", value.asInstanceOf[js.Any])
+    def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
     
     @scala.inline
-    def deleteDeleteTime: Self = this.set("DeleteTime", js.undefined)
+    def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCode(value: String): Self = this.set("FailureCode", value.asInstanceOf[js.Any])
+    def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
     
     @scala.inline
-    def deleteFailureCode: Self = this.set("FailureCode", js.undefined)
+    def setNatGatewayAddresses(value: NatGatewayAddressList): Self = StObject.set(x, "NatGatewayAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureMessage(value: String): Self = this.set("FailureMessage", value.asInstanceOf[js.Any])
+    def setNatGatewayAddressesUndefined: Self = StObject.set(x, "NatGatewayAddresses", js.undefined)
     
     @scala.inline
-    def deleteFailureMessage: Self = this.set("FailureMessage", js.undefined)
+    def setNatGatewayAddressesVarargs(value: NatGatewayAddress*): Self = StObject.set(x, "NatGatewayAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setNatGatewayAddressesVarargs(value: NatGatewayAddress*): Self = this.set("NatGatewayAddresses", js.Array(value :_*))
+    def setNatGatewayId(value: String): Self = StObject.set(x, "NatGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatGatewayAddresses(value: NatGatewayAddressList): Self = this.set("NatGatewayAddresses", value.asInstanceOf[js.Any])
+    def setNatGatewayIdUndefined: Self = StObject.set(x, "NatGatewayId", js.undefined)
     
     @scala.inline
-    def deleteNatGatewayAddresses: Self = this.set("NatGatewayAddresses", js.undefined)
+    def setProvisionedBandwidth(value: ProvisionedBandwidth): Self = StObject.set(x, "ProvisionedBandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatGatewayId(value: String): Self = this.set("NatGatewayId", value.asInstanceOf[js.Any])
+    def setProvisionedBandwidthUndefined: Self = StObject.set(x, "ProvisionedBandwidth", js.undefined)
     
     @scala.inline
-    def deleteNatGatewayId: Self = this.set("NatGatewayId", js.undefined)
+    def setState(value: NatGatewayState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedBandwidth(value: ProvisionedBandwidth): Self = this.set("ProvisionedBandwidth", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteProvisionedBandwidth: Self = this.set("ProvisionedBandwidth", js.undefined)
+    def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: NatGatewayState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetId(value: String): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

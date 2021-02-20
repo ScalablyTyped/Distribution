@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSAMLProviderRequest extends js.Object {
+trait CreateSAMLProviderRequest extends StObject {
   
   /**
     * The name of the provider to create. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
@@ -26,24 +27,12 @@ object CreateSAMLProviderRequest {
   }
   
   @scala.inline
-  implicit class CreateSAMLProviderRequestOps[Self <: CreateSAMLProviderRequest] (val x: Self) extends AnyVal {
+  implicit class CreateSAMLProviderRequestMutableBuilder[Self <: CreateSAMLProviderRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: SAMLProviderNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: SAMLProviderNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSAMLMetadataDocument(value: SAMLMetadataDocumentType): Self = this.set("SAMLMetadataDocument", value.asInstanceOf[js.Any])
+    def setSAMLMetadataDocument(value: SAMLMetadataDocumentType): Self = StObject.set(x, "SAMLMetadataDocument", value.asInstanceOf[js.Any])
   }
 }

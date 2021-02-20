@@ -2,19 +2,20 @@ package typings.gulpInsert
 
 import typings.node.NodeJS.ReadWriteStream
 import typings.std.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gulp-insert", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Appends a string onto the contents
     * @param {string} content
     * @returns {NodeJS.ReadWriteStream}
     */
+  @JSImport("gulp-insert", "append")
+  @js.native
   def append(content: String): ReadWriteStream = js.native
   
   /**
@@ -22,6 +23,8 @@ object mod extends js.Object {
     * @param {string} content
     * @returns {NodeJS.ReadWriteStream}
     */
+  @JSImport("gulp-insert", "prepend")
+  @js.native
   def prepend(content: String): ReadWriteStream = js.native
   
   /**
@@ -29,6 +32,8 @@ object mod extends js.Object {
     * @param {Transformer} transformer
     * @returns {NodeJS.ReadWriteStream}
     */
+  @JSImport("gulp-insert", "transform")
+  @js.native
   def transform(transformer: Transformer): ReadWriteStream = js.native
   
   /**
@@ -37,6 +42,8 @@ object mod extends js.Object {
     * @param {string} append
     * @returns {NodeJS.ReadWriteStream}
     */
+  @JSImport("gulp-insert", "wrap")
+  @js.native
   def wrap(prepend: String, append: String): ReadWriteStream = js.native
   
   type Transformer = js.Function2[/* contents */ String, /* file */ File, String]

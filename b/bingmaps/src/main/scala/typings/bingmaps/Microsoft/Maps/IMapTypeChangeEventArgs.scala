@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMapTypeChangeEventArgs extends js.Object {
+trait IMapTypeChangeEventArgs extends StObject {
   
   /** The map type that map has changed to. */
   var newMapTypeId: MapTypeId = js.native
@@ -28,30 +29,18 @@ object IMapTypeChangeEventArgs {
   }
   
   @scala.inline
-  implicit class IMapTypeChangeEventArgsOps[Self <: IMapTypeChangeEventArgs] (val x: Self) extends AnyVal {
+  implicit class IMapTypeChangeEventArgsMutableBuilder[Self <: IMapTypeChangeEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewMapTypeId(value: MapTypeId): Self = StObject.set(x, "newMapTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOldMapTypeId(value: MapTypeId): Self = StObject.set(x, "oldMapTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: Map): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewMapTypeId(value: MapTypeId): Self = this.set("newMapTypeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldMapTypeId(value: MapTypeId): Self = this.set("oldMapTypeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: Map): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetType(value: String): Self = this.set("targetType", value.asInstanceOf[js.Any])
+    def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
   }
 }

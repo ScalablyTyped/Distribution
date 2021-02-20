@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConsensusPeerMessage extends js.Object {
+trait IConsensusPeerMessage extends StObject {
   
   /** ConsensusPeerMessage content */
   var content: js.UndefOr[Uint8Array | Null] = js.native
@@ -29,54 +30,42 @@ object IConsensusPeerMessage {
   }
   
   @scala.inline
-  implicit class IConsensusPeerMessageOps[Self <: IConsensusPeerMessage] (val x: Self) extends AnyVal {
+  implicit class IConsensusPeerMessageMutableBuilder[Self <: IConsensusPeerMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentNull: Self = StObject.set(x, "content", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setContent(value: Uint8Array): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setMessageTypeNull: Self = StObject.set(x, "messageType", null)
     
     @scala.inline
-    def setContentNull: Self = this.set("content", null)
+    def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
     
     @scala.inline
-    def setMessageType(value: String): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessageType: Self = this.set("messageType", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setMessageTypeNull: Self = this.set("messageType", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setVersionNull: Self = StObject.set(x, "version", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionNull: Self = this.set("version", null)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

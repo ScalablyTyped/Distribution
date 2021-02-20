@@ -1,12 +1,13 @@
 package typings.geolib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("geolib/es/isValidLongitude", JSImport.Namespace)
-@js.native
-object isValidLongitudeMod extends js.Object {
+object isValidLongitudeMod {
   
+  @JSImport("geolib/es/isValidLongitude", JSImport.Default)
+  @js.native
   def default(value: js.Any): Boolean = js.native
 }

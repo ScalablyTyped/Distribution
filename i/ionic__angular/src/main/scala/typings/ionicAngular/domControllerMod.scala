@@ -1,15 +1,15 @@
 package typings.ionicAngular
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/providers/dom-controller", JSImport.Namespace)
-@js.native
-object domControllerMod extends js.Object {
+object domControllerMod {
   
+  @JSImport("@ionic/angular/providers/dom-controller", "DomController")
   @js.native
-  class DomController () extends js.Object {
+  class DomController () extends StObject {
     
     /**
       * Schedules a task to run during the READ phase of the next frame.

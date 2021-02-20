@@ -1,11 +1,12 @@
 package typings.flot.jquery.flot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait seriesOptions extends js.Object {
+trait seriesOptions extends StObject {
   
   var bars: js.UndefOr[barsOptions] = js.native
   
@@ -17,7 +18,7 @@ trait seriesOptions extends js.Object {
   
   var hoverable: js.UndefOr[Boolean] = js.native
   
-              // color or number
+  // color or number
   var label: js.UndefOr[String] = js.native
   
   var lines: js.UndefOr[linesOptions] = js.native
@@ -39,84 +40,72 @@ object seriesOptions {
   }
   
   @scala.inline
-  implicit class seriesOptionsOps[Self <: seriesOptions] (val x: Self) extends AnyVal {
+  implicit class seriesOptionsMutableBuilder[Self <: seriesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBars(value: barsOptions): Self = StObject.set(x, "bars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarsUndefined: Self = StObject.set(x, "bars", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBars(value: barsOptions): Self = this.set("bars", value.asInstanceOf[js.Any])
+    def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
     @scala.inline
-    def deleteBars: Self = this.set("bars", js.undefined)
+    def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickable(value: Boolean): Self = this.set("clickable", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteClickable: Self = this.set("clickable", js.undefined)
+    def setHighlightColor(value: js.Any): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: js.Any): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightColor(value: js.Any): Self = this.set("highlightColor", value.asInstanceOf[js.Any])
+    def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
     
     @scala.inline
-    def deleteHighlightColor: Self = this.set("highlightColor", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverable(value: Boolean): Self = this.set("hoverable", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteHoverable: Self = this.set("hoverable", js.undefined)
+    def setLines(value: linesOptions): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setPoints(value: pointsOptions): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLines(value: linesOptions): Self = this.set("lines", value.asInstanceOf[js.Any])
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def deleteLines: Self = this.set("lines", js.undefined)
+    def setShadowSize(value: Double): Self = StObject.set(x, "shadowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: pointsOptions): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setShadowSizeUndefined: Self = StObject.set(x, "shadowSize", js.undefined)
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def setXaxis(value: Double): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowSize(value: Double): Self = this.set("shadowSize", value.asInstanceOf[js.Any])
+    def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
     
     @scala.inline
-    def deleteShadowSize: Self = this.set("shadowSize", js.undefined)
+    def setYaxis(value: Double): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXaxis(value: Double): Self = this.set("xaxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXaxis: Self = this.set("xaxis", js.undefined)
-    
-    @scala.inline
-    def setYaxis(value: Double): Self = this.set("yaxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYaxis: Self = this.set("yaxis", js.undefined)
+    def setYaxisUndefined: Self = StObject.set(x, "yaxis", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An action that gets executed during initialization of the replicas.
   */
 @js.native
-trait SchemaAction extends js.Object {
+trait SchemaAction extends StObject {
   
   /**
     * A list of commands to run, one per line. If any command fails, the whole
@@ -40,42 +41,30 @@ object SchemaAction {
   }
   
   @scala.inline
-  implicit class SchemaActionOps[Self <: SchemaAction] (val x: Self) extends AnyVal {
+  implicit class SchemaActionMutableBuilder[Self <: SchemaAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
     @scala.inline
-    def setCommandsVarargs(value: String*): Self = this.set("commands", js.Array(value :_*))
+    def setEnvVariables(value: js.Array[SchemaEnvVariable]): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommands(value: js.Array[String]): Self = this.set("commands", value.asInstanceOf[js.Any])
+    def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)
     
     @scala.inline
-    def deleteCommands: Self = this.set("commands", js.undefined)
+    def setEnvVariablesVarargs(value: SchemaEnvVariable*): Self = StObject.set(x, "envVariables", js.Array(value :_*))
     
     @scala.inline
-    def setEnvVariablesVarargs(value: SchemaEnvVariable*): Self = this.set("envVariables", js.Array(value :_*))
+    def setTimeoutMilliSeconds(value: Double): Self = StObject.set(x, "timeoutMilliSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvVariables(value: js.Array[SchemaEnvVariable]): Self = this.set("envVariables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvVariables: Self = this.set("envVariables", js.undefined)
-    
-    @scala.inline
-    def setTimeoutMilliSeconds(value: Double): Self = this.set("timeoutMilliSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutMilliSeconds: Self = this.set("timeoutMilliSeconds", js.undefined)
+    def setTimeoutMilliSecondsUndefined: Self = StObject.set(x, "timeoutMilliSeconds", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ElementRef")
 @js.native
-class ElementRef[T] protected () extends js.Object {
+class ElementRef[T] protected () extends StObject {
   def this(nativeElement: T) = this()
   
   /**

@@ -7,14 +7,14 @@ import typings.typeorm.columnTypesMod.ColumnType
 import typings.typeorm.connectionMod.Connection
 import typings.typeorm.driverMod.Driver
 import typings.typeorm.tableColumnMod.TableColumn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/driver/aurora-data-api/AuroraDataApiDriver", JSImport.Namespace)
-@js.native
-object auroraDataApiDriverMod extends js.Object {
+object auroraDataApiDriverMod {
   
+  @JSImport("typeorm/browser/driver/aurora-data-api/AuroraDataApiDriver", "AuroraDataApiDriver")
   @js.native
   class AuroraDataApiDriver protected () extends Driver {
     def this(connection: Connection) = this()

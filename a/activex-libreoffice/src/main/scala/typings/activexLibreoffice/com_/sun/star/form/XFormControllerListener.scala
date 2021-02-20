@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.form
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,24 +46,12 @@ object XFormControllerListener {
   }
   
   @scala.inline
-  implicit class XFormControllerListenerOps[Self <: XFormControllerListener] (val x: Self) extends AnyVal {
+  implicit class XFormControllerListenerMutableBuilder[Self <: XFormControllerListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormActivated(value: EventObject => Unit): Self = StObject.set(x, "formActivated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormActivated(value: EventObject => Unit): Self = this.set("formActivated", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFormDeactivated(value: EventObject => Unit): Self = this.set("formDeactivated", js.Any.fromFunction1(value))
+    def setFormDeactivated(value: EventObject => Unit): Self = StObject.set(x, "formDeactivated", js.Any.fromFunction1(value))
   }
 }

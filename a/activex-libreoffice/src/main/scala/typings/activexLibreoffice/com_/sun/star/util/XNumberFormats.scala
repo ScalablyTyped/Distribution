@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,39 +105,27 @@ object XNumberFormats {
   }
   
   @scala.inline
-  implicit class XNumberFormatsOps[Self <: XNumberFormats] (val x: Self) extends AnyVal {
+  implicit class XNumberFormatsMutableBuilder[Self <: XNumberFormats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddNew(value: (String, Locale) => Double): Self = StObject.set(x, "addNew", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddNewConverted(value: (String, Locale, Locale) => Double): Self = StObject.set(x, "addNewConverted", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerateFormat(value: (Double, Locale, Boolean, Boolean, Double, Double) => String): Self = StObject.set(x, "generateFormat", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setAddNew(value: (String, Locale) => Double): Self = this.set("addNew", js.Any.fromFunction2(value))
+    def setGetByKey(value: Double => XPropertySet): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddNewConverted(value: (String, Locale, Locale) => Double): Self = this.set("addNewConverted", js.Any.fromFunction3(value))
+    def setQueryKey(value: (String, Locale, Boolean) => Double): Self = StObject.set(x, "queryKey", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGenerateFormat(value: (Double, Locale, Boolean, Boolean, Double, Double) => String): Self = this.set("generateFormat", js.Any.fromFunction6(value))
+    def setQueryKeys(value: (Double, Locale, Boolean) => SafeArray[Double]): Self = StObject.set(x, "queryKeys", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetByKey(value: Double => XPropertySet): Self = this.set("getByKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQueryKey(value: (String, Locale, Boolean) => Double): Self = this.set("queryKey", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setQueryKeys(value: (Double, Locale, Boolean) => SafeArray[Double]): Self = this.set("queryKeys", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRemoveByKey(value: Double => Unit): Self = this.set("removeByKey", js.Any.fromFunction1(value))
+    def setRemoveByKey(value: Double => Unit): Self = StObject.set(x, "removeByKey", js.Any.fromFunction1(value))
   }
 }

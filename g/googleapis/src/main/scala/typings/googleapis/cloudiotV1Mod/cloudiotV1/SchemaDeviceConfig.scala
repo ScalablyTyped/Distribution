@@ -1,5 +1,6 @@
 package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The device configuration. Eventually delivered to devices.
   */
 @js.native
-trait SchemaDeviceConfig extends js.Object {
+trait SchemaDeviceConfig extends StObject {
   
   /**
     * The device configuration data.
@@ -51,42 +52,30 @@ object SchemaDeviceConfig {
   }
   
   @scala.inline
-  implicit class SchemaDeviceConfigOps[Self <: SchemaDeviceConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaDeviceConfigMutableBuilder[Self <: SchemaDeviceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudUpdateTime(value: String): Self = StObject.set(x, "cloudUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryData(value: String): Self = this.set("binaryData", value.asInstanceOf[js.Any])
+    def setCloudUpdateTimeUndefined: Self = StObject.set(x, "cloudUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteBinaryData: Self = this.set("binaryData", js.undefined)
+    def setDeviceAckTime(value: String): Self = StObject.set(x, "deviceAckTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudUpdateTime(value: String): Self = this.set("cloudUpdateTime", value.asInstanceOf[js.Any])
+    def setDeviceAckTimeUndefined: Self = StObject.set(x, "deviceAckTime", js.undefined)
     
     @scala.inline
-    def deleteCloudUpdateTime: Self = this.set("cloudUpdateTime", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceAckTime(value: String): Self = this.set("deviceAckTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceAckTime: Self = this.set("deviceAckTime", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

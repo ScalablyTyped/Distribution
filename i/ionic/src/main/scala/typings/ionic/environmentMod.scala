@@ -16,21 +16,21 @@ import typings.ionicCliFrameworkPrompts.mod.PromptQuestionOther
 import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/environment", JSImport.Namespace)
-@js.native
-object environmentMod extends js.Object {
+object environmentMod {
   
+  @JSImport("ionic/lib/environment", "Environment")
   @js.native
   class Environment protected () extends IonicEnvironment {
     def this(hasClientConfigFlagsGetInfoLogCtxPromptSessionShell: EnvironmentDeps) = this()
   }
   
   @js.native
-  trait EnvironmentDeps extends js.Object {
+  trait EnvironmentDeps extends StObject {
     
     val client: IClient = js.native
     

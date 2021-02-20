@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Arg extends js.Object {
+trait Arg extends StObject {
   
   var arg: js.UndefOr[typings.std.Date | Double | String] = js.native
   
@@ -20,30 +21,18 @@ object Arg {
   }
   
   @scala.inline
-  implicit class ArgOps[Self <: Arg] (val x: Self) extends AnyVal {
+  implicit class ArgMutableBuilder[Self <: Arg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArg(value: typings.std.Date | Double | String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgUndefined: Self = StObject.set(x, "arg", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVal(value: typings.std.Date | Double | String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArg(value: typings.std.Date | Double | String): Self = this.set("arg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArg: Self = this.set("arg", js.undefined)
-    
-    @scala.inline
-    def setVal(value: typings.std.Date | Double | String): Self = this.set("val", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVal: Self = this.set("val", js.undefined)
+    def setValUndefined: Self = StObject.set(x, "val", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.jaegerClient.mod
 
 import typings.opentracing.mod.Span
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reporter extends js.Object {
+trait Reporter extends StObject {
   
   def close(): Unit = js.native
   def close(callback: js.Function0[Unit]): Unit = js.native

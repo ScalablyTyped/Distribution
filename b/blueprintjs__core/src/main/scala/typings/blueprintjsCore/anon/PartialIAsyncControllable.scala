@@ -1,13 +1,14 @@
 package typings.blueprintjsCore.anon
 
 import typings.blueprintjsCore.asyncControllableInputMod.InputValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/forms/asyncControllableInput.IAsyncControllableInputState> */
 @js.native
-trait PartialIAsyncControllable extends js.Object {
+trait PartialIAsyncControllable extends StObject {
   
   var hasPendingUpdate: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object PartialIAsyncControllable {
   }
   
   @scala.inline
-  implicit class PartialIAsyncControllableOps[Self <: PartialIAsyncControllable] (val x: Self) extends AnyVal {
+  implicit class PartialIAsyncControllableMutableBuilder[Self <: PartialIAsyncControllable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasPendingUpdate(value: Boolean): Self = StObject.set(x, "hasPendingUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasPendingUpdateUndefined: Self = StObject.set(x, "hasPendingUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPendingUpdate(value: Boolean): Self = this.set("hasPendingUpdate", value.asInstanceOf[js.Any])
+    def setIsComposingUndefined: Self = StObject.set(x, "isComposing", js.undefined)
     
     @scala.inline
-    def deleteHasPendingUpdate: Self = this.set("hasPendingUpdate", js.undefined)
+    def setNextValue(value: InputValue): Self = StObject.set(x, "nextValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComposing(value: Boolean): Self = this.set("isComposing", value.asInstanceOf[js.Any])
+    def setNextValueUndefined: Self = StObject.set(x, "nextValue", js.undefined)
     
     @scala.inline
-    def deleteIsComposing: Self = this.set("isComposing", js.undefined)
+    def setNextValueVarargs(value: String*): Self = StObject.set(x, "nextValue", js.Array(value :_*))
     
     @scala.inline
-    def setNextValueVarargs(value: String*): Self = this.set("nextValue", js.Array(value :_*))
+    def setValue(value: InputValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextValue(value: InputValue): Self = this.set("nextValue", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteNextValue: Self = this.set("nextValue", js.undefined)
-    
-    @scala.inline
-    def setValueVarargs(value: String*): Self = this.set("value", js.Array(value :_*))
-    
-    @scala.inline
-    def setValue(value: InputValue): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

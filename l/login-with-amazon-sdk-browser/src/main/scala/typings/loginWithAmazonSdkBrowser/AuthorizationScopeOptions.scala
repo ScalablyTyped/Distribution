@@ -1,5 +1,6 @@
 package typings.loginWithAmazonSdkBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profileColonuser_id
   - typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.postal_code
 */
-trait AuthorizationScopeOptions extends js.Object
+trait AuthorizationScopeOptions extends StObject
 object AuthorizationScopeOptions {
   
   @scala.inline

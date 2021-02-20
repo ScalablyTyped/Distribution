@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsCodeBuildProjectSource extends js.Object {
+trait AwsCodeBuildProjectSource extends StObject {
   
   /**
     * Information about the Git clone depth for the build project.
@@ -36,42 +37,30 @@ object AwsCodeBuildProjectSource {
   }
   
   @scala.inline
-  implicit class AwsCodeBuildProjectSourceOps[Self <: AwsCodeBuildProjectSource] (val x: Self) extends AnyVal {
+  implicit class AwsCodeBuildProjectSourceMutableBuilder[Self <: AwsCodeBuildProjectSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGitCloneDepth(value: Integer): Self = StObject.set(x, "GitCloneDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGitCloneDepthUndefined: Self = StObject.set(x, "GitCloneDepth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsecureSsl(value: Boolean): Self = StObject.set(x, "InsecureSsl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGitCloneDepth(value: Integer): Self = this.set("GitCloneDepth", value.asInstanceOf[js.Any])
+    def setInsecureSslUndefined: Self = StObject.set(x, "InsecureSsl", js.undefined)
     
     @scala.inline
-    def deleteGitCloneDepth: Self = this.set("GitCloneDepth", js.undefined)
+    def setLocation(value: NonEmptyString): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsecureSsl(value: Boolean): Self = this.set("InsecureSsl", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     @scala.inline
-    def deleteInsecureSsl: Self = this.set("InsecureSsl", js.undefined)
+    def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: NonEmptyString): Self = this.set("Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("Location", js.undefined)
-    
-    @scala.inline
-    def setType(value: NonEmptyString): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

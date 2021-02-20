@@ -14,6 +14,7 @@ import typings.wegameApi.wegameApiStrings.normal
 import typings.wegameApi.wegameApiStrings.off
 import typings.wegameApi.wegameApiStrings.on
 import typings.wegameApi.wegameApiStrings.small
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 相机对象
   */
 @js.native
-trait Camera extends js.Object {
+trait Camera extends StObject {
   
   /**
     * 关闭监听帧数据

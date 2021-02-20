@@ -1,11 +1,12 @@
 package typings.elasticlunr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvertedIndexCharNode extends js.Object {
+trait InvertedIndexCharNode extends StObject {
   
   var a: js.UndefOr[InvertedIndexNode] = js.native
   
@@ -68,174 +69,162 @@ object InvertedIndexCharNode {
   }
   
   @scala.inline
-  implicit class InvertedIndexCharNodeOps[Self <: InvertedIndexCharNode] (val x: Self) extends AnyVal {
+  implicit class InvertedIndexCharNodeMutableBuilder[Self <: InvertedIndexCharNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: InvertedIndexNode): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setB(value: InvertedIndexNode): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA(value: InvertedIndexNode): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
     
     @scala.inline
-    def deleteA: Self = this.set("a", js.undefined)
+    def setC(value: InvertedIndexNode): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: InvertedIndexNode): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
     @scala.inline
-    def deleteB: Self = this.set("b", js.undefined)
+    def setD(value: InvertedIndexNode): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setC(value: InvertedIndexNode): Self = this.set("c", value.asInstanceOf[js.Any])
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
-    def deleteC: Self = this.set("c", js.undefined)
+    def setE(value: InvertedIndexNode): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: InvertedIndexNode): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setEUndefined: Self = StObject.set(x, "e", js.undefined)
     
     @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setF(value: InvertedIndexNode): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: InvertedIndexNode): Self = this.set("e", value.asInstanceOf[js.Any])
+    def setFUndefined: Self = StObject.set(x, "f", js.undefined)
     
     @scala.inline
-    def deleteE: Self = this.set("e", js.undefined)
+    def setG(value: InvertedIndexNode): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF(value: InvertedIndexNode): Self = this.set("f", value.asInstanceOf[js.Any])
+    def setGUndefined: Self = StObject.set(x, "g", js.undefined)
     
     @scala.inline
-    def deleteF: Self = this.set("f", js.undefined)
+    def setH(value: InvertedIndexNode): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setG(value: InvertedIndexNode): Self = this.set("g", value.asInstanceOf[js.Any])
+    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
     @scala.inline
-    def deleteG: Self = this.set("g", js.undefined)
+    def setI(value: InvertedIndexNode): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH(value: InvertedIndexNode): Self = this.set("h", value.asInstanceOf[js.Any])
+    def setIUndefined: Self = StObject.set(x, "i", js.undefined)
     
     @scala.inline
-    def deleteH: Self = this.set("h", js.undefined)
+    def setJ(value: InvertedIndexNode): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI(value: InvertedIndexNode): Self = this.set("i", value.asInstanceOf[js.Any])
+    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
     @scala.inline
-    def deleteI: Self = this.set("i", js.undefined)
+    def setK(value: InvertedIndexNode): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJ(value: InvertedIndexNode): Self = this.set("j", value.asInstanceOf[js.Any])
+    def setKUndefined: Self = StObject.set(x, "k", js.undefined)
     
     @scala.inline
-    def deleteJ: Self = this.set("j", js.undefined)
+    def setL(value: InvertedIndexNode): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setK(value: InvertedIndexNode): Self = this.set("k", value.asInstanceOf[js.Any])
+    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
     @scala.inline
-    def deleteK: Self = this.set("k", js.undefined)
+    def setM(value: InvertedIndexNode): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL(value: InvertedIndexNode): Self = this.set("l", value.asInstanceOf[js.Any])
+    def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
     @scala.inline
-    def deleteL: Self = this.set("l", js.undefined)
+    def setN(value: InvertedIndexNode): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM(value: InvertedIndexNode): Self = this.set("m", value.asInstanceOf[js.Any])
+    def setNUndefined: Self = StObject.set(x, "n", js.undefined)
     
     @scala.inline
-    def deleteM: Self = this.set("m", js.undefined)
+    def setO(value: InvertedIndexNode): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: InvertedIndexNode): Self = this.set("n", value.asInstanceOf[js.Any])
+    def setOUndefined: Self = StObject.set(x, "o", js.undefined)
     
     @scala.inline
-    def deleteN: Self = this.set("n", js.undefined)
+    def setP(value: InvertedIndexNode): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setO(value: InvertedIndexNode): Self = this.set("o", value.asInstanceOf[js.Any])
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
     @scala.inline
-    def deleteO: Self = this.set("o", js.undefined)
+    def setQ(value: InvertedIndexNode): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP(value: InvertedIndexNode): Self = this.set("p", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
+    def setR(value: InvertedIndexNode): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: InvertedIndexNode): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setS(value: InvertedIndexNode): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR(value: InvertedIndexNode): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
     @scala.inline
-    def deleteR: Self = this.set("r", js.undefined)
+    def setT(value: InvertedIndexNode): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS(value: InvertedIndexNode): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
     
     @scala.inline
-    def deleteS: Self = this.set("s", js.undefined)
+    def setU(value: InvertedIndexNode): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setT(value: InvertedIndexNode): Self = this.set("t", value.asInstanceOf[js.Any])
+    def setUUndefined: Self = StObject.set(x, "u", js.undefined)
     
     @scala.inline
-    def deleteT: Self = this.set("t", js.undefined)
+    def setV(value: InvertedIndexNode): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setU(value: InvertedIndexNode): Self = this.set("u", value.asInstanceOf[js.Any])
+    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
     
     @scala.inline
-    def deleteU: Self = this.set("u", js.undefined)
+    def setW(value: InvertedIndexNode): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV(value: InvertedIndexNode): Self = this.set("v", value.asInstanceOf[js.Any])
+    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
     @scala.inline
-    def deleteV: Self = this.set("v", js.undefined)
+    def setX(value: InvertedIndexNode): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: InvertedIndexNode): Self = this.set("w", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteW: Self = this.set("w", js.undefined)
+    def setY(value: InvertedIndexNode): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: InvertedIndexNode): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setZ(value: InvertedIndexNode): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: InvertedIndexNode): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
-    
-    @scala.inline
-    def setZ(value: InvertedIndexNode): Self = this.set("z", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZ: Self = this.set("z", js.undefined)
+    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
   }
 }

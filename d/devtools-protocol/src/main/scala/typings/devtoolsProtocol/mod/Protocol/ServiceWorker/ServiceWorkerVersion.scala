@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceWorkerVersion extends js.Object {
+trait ServiceWorkerVersion extends StObject {
   
   var controlledClients: js.UndefOr[js.Array[TargetID]] = js.native
   
@@ -48,60 +49,48 @@ object ServiceWorkerVersion {
   }
   
   @scala.inline
-  implicit class ServiceWorkerVersionOps[Self <: ServiceWorkerVersion] (val x: Self) extends AnyVal {
+  implicit class ServiceWorkerVersionMutableBuilder[Self <: ServiceWorkerVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlledClients(value: js.Array[TargetID]): Self = StObject.set(x, "controlledClients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlledClientsUndefined: Self = StObject.set(x, "controlledClients", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControlledClientsVarargs(value: TargetID*): Self = StObject.set(x, "controlledClients", js.Array(value :_*))
     
     @scala.inline
-    def setRegistrationId(value: RegistrationID): Self = this.set("registrationId", value.asInstanceOf[js.Any])
+    def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunningStatus(value: ServiceWorkerVersionRunningStatus): Self = this.set("runningStatus", value.asInstanceOf[js.Any])
+    def setRunningStatus(value: ServiceWorkerVersionRunningStatus): Self = StObject.set(x, "runningStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptURL(value: String): Self = this.set("scriptURL", value.asInstanceOf[js.Any])
+    def setScriptLastModified(value: Double): Self = StObject.set(x, "scriptLastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ServiceWorkerVersionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setScriptLastModifiedUndefined: Self = StObject.set(x, "scriptLastModified", js.undefined)
     
     @scala.inline
-    def setVersionId(value: String): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    def setScriptResponseTime(value: Double): Self = StObject.set(x, "scriptResponseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlledClientsVarargs(value: TargetID*): Self = this.set("controlledClients", js.Array(value :_*))
+    def setScriptResponseTimeUndefined: Self = StObject.set(x, "scriptResponseTime", js.undefined)
     
     @scala.inline
-    def setControlledClients(value: js.Array[TargetID]): Self = this.set("controlledClients", value.asInstanceOf[js.Any])
+    def setScriptURL(value: String): Self = StObject.set(x, "scriptURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControlledClients: Self = this.set("controlledClients", js.undefined)
+    def setStatus(value: ServiceWorkerVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptLastModified(value: Double): Self = this.set("scriptLastModified", value.asInstanceOf[js.Any])
+    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScriptLastModified: Self = this.set("scriptLastModified", js.undefined)
+    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
     
     @scala.inline
-    def setScriptResponseTime(value: Double): Self = this.set("scriptResponseTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptResponseTime: Self = this.set("scriptResponseTime", js.undefined)
-    
-    @scala.inline
-    def setTargetId(value: TargetID): Self = this.set("targetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetId: Self = this.set("targetId", js.undefined)
+    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }
 }

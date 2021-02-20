@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dimensions extends js.Object {
+trait Dimensions extends StObject {
   
   /** The height in pixels. */
   var heightPixels: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object Dimensions {
   }
   
   @scala.inline
-  implicit class DimensionsOps[Self <: Dimensions] (val x: Self) extends AnyVal {
+  implicit class DimensionsMutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightPixelsUndefined: Self = StObject.set(x, "heightPixels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidthPixels(value: Double): Self = StObject.set(x, "widthPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightPixels(value: Double): Self = this.set("heightPixels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeightPixels: Self = this.set("heightPixels", js.undefined)
-    
-    @scala.inline
-    def setWidthPixels(value: Double): Self = this.set("widthPixels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthPixels: Self = this.set("widthPixels", js.undefined)
+    def setWidthPixelsUndefined: Self = StObject.set(x, "widthPixels", js.undefined)
   }
 }

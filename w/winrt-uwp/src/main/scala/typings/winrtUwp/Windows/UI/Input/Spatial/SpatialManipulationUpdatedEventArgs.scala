@@ -1,15 +1,17 @@
 package typings.winrtUwp.Windows.UI.Input.Spatial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpatialManipulationUpdatedEventArgs extends js.Object {
+trait SpatialManipulationUpdatedEventArgs extends StObject {
   
   var interactionSourceKind: js.Any = js.native
   
-   /* unmapped type */ var tryGetCumulativeDelta: js.Any = js.native
+  /* unmapped type */
+  var tryGetCumulativeDelta: js.Any = js.native
 }
 object SpatialManipulationUpdatedEventArgs {
   
@@ -20,24 +22,12 @@ object SpatialManipulationUpdatedEventArgs {
   }
   
   @scala.inline
-  implicit class SpatialManipulationUpdatedEventArgsOps[Self <: SpatialManipulationUpdatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class SpatialManipulationUpdatedEventArgsMutableBuilder[Self <: SpatialManipulationUpdatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInteractionSourceKind(value: js.Any): Self = this.set("interactionSourceKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTryGetCumulativeDelta(value: js.Any): Self = this.set("tryGetCumulativeDelta", value.asInstanceOf[js.Any])
+    def setTryGetCumulativeDelta(value: js.Any): Self = StObject.set(x, "tryGetCumulativeDelta", value.asInstanceOf[js.Any])
   }
 }

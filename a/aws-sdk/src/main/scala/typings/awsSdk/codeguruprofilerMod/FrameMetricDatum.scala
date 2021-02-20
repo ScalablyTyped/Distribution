@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FrameMetricDatum extends js.Object {
+trait FrameMetricDatum extends StObject {
   
   var frameMetric: FrameMetric = js.native
   
@@ -23,27 +24,15 @@ object FrameMetricDatum {
   }
   
   @scala.inline
-  implicit class FrameMetricDatumOps[Self <: FrameMetricDatum] (val x: Self) extends AnyVal {
+  implicit class FrameMetricDatumMutableBuilder[Self <: FrameMetricDatum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameMetric(value: FrameMetric): Self = StObject.set(x, "frameMetric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValues(value: FrameMetricValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFrameMetric(value: FrameMetric): Self = this.set("frameMetric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: FrameMetricValues): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.antd.anon
 
 import typings.antd.sliderMod.HandleGeneratorInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrefixCls extends js.Object {
+trait PrefixCls extends StObject {
   
   var info: HandleGeneratorInfo = js.native
   
@@ -23,33 +24,21 @@ object PrefixCls {
   }
   
   @scala.inline
-  implicit class PrefixClsOps[Self <: PrefixCls] (val x: Self) extends AnyVal {
+  implicit class PrefixClsMutableBuilder[Self <: PrefixCls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfo(value: HandleGeneratorInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
     @scala.inline
-    def setInfo(value: HandleGeneratorInfo): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setTooltipPrefixCls(value: String): Self = StObject.set(x, "tooltipPrefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
-    
-    @scala.inline
-    def setTooltipPrefixCls(value: String): Self = this.set("tooltipPrefixCls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipPrefixCls: Self = this.set("tooltipPrefixCls", js.undefined)
+    def setTooltipPrefixClsUndefined: Self = StObject.set(x, "tooltipPrefixCls", js.undefined)
   }
 }

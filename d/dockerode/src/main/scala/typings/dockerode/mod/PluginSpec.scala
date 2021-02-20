@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
 import typings.dockerode.anon.Description
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginSpec extends js.Object {
+trait PluginSpec extends StObject {
   
   var Disabled: js.UndefOr[Boolean] = js.native
   
@@ -27,51 +28,39 @@ object PluginSpec {
   }
   
   @scala.inline
-  implicit class PluginSpecOps[Self <: PluginSpec] (val x: Self) extends AnyVal {
+  implicit class PluginSpecMutableBuilder[Self <: PluginSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("Disabled", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("Disabled", js.undefined)
+    def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
     
     @scala.inline
-    def setEnvVarargs(value: String*): Self = this.set("Env", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: js.Array[String]): Self = this.set("Env", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("Env", js.undefined)
+    def setPrivileges(value: Description): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPrivilegesUndefined: Self = StObject.set(x, "Privileges", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRemote(value: String): Self = StObject.set(x, "Remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivileges(value: Description): Self = this.set("Privileges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivileges: Self = this.set("Privileges", js.undefined)
-    
-    @scala.inline
-    def setRemote(value: String): Self = this.set("Remote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemote: Self = this.set("Remote", js.undefined)
+    def setRemoteUndefined: Self = StObject.set(x, "Remote", js.undefined)
   }
 }

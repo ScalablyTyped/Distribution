@@ -1,6 +1,7 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the quota information for a quota check response.
   */
 @js.native
-trait SchemaQuotaInfo extends js.Object {
+trait SchemaQuotaInfo extends StObject {
   
   /**
     * Quota Metrics that have exceeded quota limits. For QuotaGroup-based
@@ -54,42 +55,30 @@ object SchemaQuotaInfo {
   }
   
   @scala.inline
-  implicit class SchemaQuotaInfoOps[Self <: SchemaQuotaInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaQuotaInfoMutableBuilder[Self <: SchemaQuotaInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimitExceeded(value: js.Array[String]): Self = StObject.set(x, "limitExceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitExceededUndefined: Self = StObject.set(x, "limitExceeded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimitExceededVarargs(value: String*): Self = StObject.set(x, "limitExceeded", js.Array(value :_*))
     
     @scala.inline
-    def setLimitExceededVarargs(value: String*): Self = this.set("limitExceeded", js.Array(value :_*))
+    def setQuotaConsumed(value: StringDictionary[Double]): Self = StObject.set(x, "quotaConsumed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitExceeded(value: js.Array[String]): Self = this.set("limitExceeded", value.asInstanceOf[js.Any])
+    def setQuotaConsumedUndefined: Self = StObject.set(x, "quotaConsumed", js.undefined)
     
     @scala.inline
-    def deleteLimitExceeded: Self = this.set("limitExceeded", js.undefined)
+    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = StObject.set(x, "quotaMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaConsumed(value: StringDictionary[Double]): Self = this.set("quotaConsumed", value.asInstanceOf[js.Any])
+    def setQuotaMetricsUndefined: Self = StObject.set(x, "quotaMetrics", js.undefined)
     
     @scala.inline
-    def deleteQuotaConsumed: Self = this.set("quotaConsumed", js.undefined)
-    
-    @scala.inline
-    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = this.set("quotaMetrics", js.Array(value :_*))
-    
-    @scala.inline
-    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = this.set("quotaMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuotaMetrics: Self = this.set("quotaMetrics", js.undefined)
+    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = StObject.set(x, "quotaMetrics", js.Array(value :_*))
   }
 }

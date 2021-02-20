@@ -1,5 +1,6 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object Geolocation {
   }
   
   @scala.inline
-  implicit class GeolocationOps[Self <: Geolocation] (val x: Self) extends AnyVal {
+  implicit class GeolocationMutableBuilder[Self <: Geolocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearWatch(value: Double => Double): Self = StObject.set(x, "clearWatch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentPosition(value: () => Unit): Self = StObject.set(x, "getCurrentPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSupported(value: () => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearWatch(value: Double => Double): Self = this.set("clearWatch", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetCurrentPosition(value: () => Unit): Self = this.set("getCurrentPosition", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsSupported(value: () => Boolean): Self = this.set("isSupported", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWatchPosition(value: () => Double): Self = this.set("watchPosition", js.Any.fromFunction0(value))
+    def setWatchPosition(value: () => Double): Self = StObject.set(x, "watchPosition", js.Any.fromFunction0(value))
   }
 }

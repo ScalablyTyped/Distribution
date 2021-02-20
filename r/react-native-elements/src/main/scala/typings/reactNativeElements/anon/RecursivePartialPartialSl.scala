@@ -9,13 +9,14 @@ import typings.reactNativeElements.reactNativeElementsStrings.horizontal
 import typings.reactNativeElements.reactNativeElementsStrings.spring
 import typings.reactNativeElements.reactNativeElementsStrings.timing
 import typings.reactNativeElements.reactNativeElementsStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.SliderProps>> */
 @js.native
-trait RecursivePartialPartialSl extends js.Object {
+trait RecursivePartialPartialSl extends StObject {
   
   var allowTouchTrack: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
   
@@ -70,150 +71,138 @@ object RecursivePartialPartialSl {
   }
   
   @scala.inline
-  implicit class RecursivePartialPartialSlOps[Self <: RecursivePartialPartialSl] (val x: Self) extends AnyVal {
+  implicit class RecursivePartialPartialSlMutableBuilder[Self <: RecursivePartialPartialSl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowTouchTrack(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "allowTouchTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowTouchTrackUndefined: Self = StObject.set(x, "allowTouchTrack", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimateTransitions(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "animateTransitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTouchTrack(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("allowTouchTrack", value.asInstanceOf[js.Any])
+    def setAnimateTransitionsUndefined: Self = StObject.set(x, "animateTransitions", js.undefined)
     
     @scala.inline
-    def deleteAllowTouchTrack: Self = this.set("allowTouchTrack", js.undefined)
+    def setAnimationConfig(value: RecursivePartial[js.UndefOr[TimingAnimationConfig | SpringAnimationConfig]]): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateTransitions(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("animateTransitions", value.asInstanceOf[js.Any])
+    def setAnimationConfigUndefined: Self = StObject.set(x, "animationConfig", js.undefined)
     
     @scala.inline
-    def deleteAnimateTransitions: Self = this.set("animateTransitions", js.undefined)
+    def setAnimationType(value: RecursivePartial[js.UndefOr[spring | timing]]): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationConfig(value: RecursivePartial[js.UndefOr[TimingAnimationConfig | SpringAnimationConfig]]): Self = this.set("animationConfig", value.asInstanceOf[js.Any])
+    def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
     
     @scala.inline
-    def deleteAnimationConfig: Self = this.set("animationConfig", js.undefined)
+    def setDebugTouchArea(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "debugTouchArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationType(value: RecursivePartial[js.UndefOr[spring | timing]]): Self = this.set("animationType", value.asInstanceOf[js.Any])
+    def setDebugTouchAreaUndefined: Self = StObject.set(x, "debugTouchArea", js.undefined)
     
     @scala.inline
-    def deleteAnimationType: Self = this.set("animationType", js.undefined)
+    def setDisabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugTouchArea(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("debugTouchArea", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDebugTouchArea: Self = this.set("debugTouchArea", js.undefined)
+    def setMaximumTrackTintColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setMaximumValue(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumTrackTintColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("maximumTrackTintColor", value.asInstanceOf[js.Any])
+    def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
     
     @scala.inline
-    def deleteMaximumTrackTintColor: Self = this.set("maximumTrackTintColor", js.undefined)
+    def setMinimumTrackTintColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "minimumTrackTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumValue(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("maximumValue", value.asInstanceOf[js.Any])
+    def setMinimumTrackTintColorUndefined: Self = StObject.set(x, "minimumTrackTintColor", js.undefined)
     
     @scala.inline
-    def deleteMaximumValue: Self = this.set("maximumValue", js.undefined)
+    def setMinimumValue(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumTrackTintColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("minimumTrackTintColor", value.asInstanceOf[js.Any])
+    def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
     
     @scala.inline
-    def deleteMinimumTrackTintColor: Self = this.set("minimumTrackTintColor", js.undefined)
+    def setOnSlidingComplete(value: RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]): Self = StObject.set(x, "onSlidingComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumValue(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("minimumValue", value.asInstanceOf[js.Any])
+    def setOnSlidingCompleteUndefined: Self = StObject.set(x, "onSlidingComplete", js.undefined)
     
     @scala.inline
-    def deleteMinimumValue: Self = this.set("minimumValue", js.undefined)
+    def setOnSlidingStart(value: RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]): Self = StObject.set(x, "onSlidingStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSlidingComplete(value: RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]): Self = this.set("onSlidingComplete", value.asInstanceOf[js.Any])
+    def setOnSlidingStartUndefined: Self = StObject.set(x, "onSlidingStart", js.undefined)
     
     @scala.inline
-    def deleteOnSlidingComplete: Self = this.set("onSlidingComplete", js.undefined)
+    def setOnValueChange(value: RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSlidingStart(value: RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]): Self = this.set("onSlidingStart", value.asInstanceOf[js.Any])
+    def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
     @scala.inline
-    def deleteOnSlidingStart: Self = this.set("onSlidingStart", js.undefined)
+    def setOrientation(value: RecursivePartial[js.UndefOr[horizontal | vertical]]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnValueChange(value: RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]): Self = this.set("onValueChange", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteOnValueChange: Self = this.set("onValueChange", js.undefined)
+    def setStep(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: RecursivePartial[js.UndefOr[horizontal | vertical]]): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setThumbProps(value: RecursivePartial[js.UndefOr[_]]): Self = StObject.set(x, "thumbProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setThumbPropsUndefined: Self = StObject.set(x, "thumbProps", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setThumbStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "thumbStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbProps(value: RecursivePartial[js.UndefOr[_]]): Self = this.set("thumbProps", value.asInstanceOf[js.Any])
+    def setThumbStyleUndefined: Self = StObject.set(x, "thumbStyle", js.undefined)
     
     @scala.inline
-    def deleteThumbProps: Self = this.set("thumbProps", js.undefined)
+    def setThumbTintColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("thumbStyle", value.asInstanceOf[js.Any])
+    def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
     
     @scala.inline
-    def deleteThumbStyle: Self = this.set("thumbStyle", js.undefined)
+    def setThumbTouchSize(value: RecursivePartial[js.UndefOr[Height]]): Self = StObject.set(x, "thumbTouchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbTintColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("thumbTintColor", value.asInstanceOf[js.Any])
+    def setThumbTouchSizeUndefined: Self = StObject.set(x, "thumbTouchSize", js.undefined)
     
     @scala.inline
-    def deleteThumbTintColor: Self = this.set("thumbTintColor", js.undefined)
+    def setTrackStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbTouchSize(value: RecursivePartial[js.UndefOr[Height]]): Self = this.set("thumbTouchSize", value.asInstanceOf[js.Any])
+    def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
     
     @scala.inline
-    def deleteThumbTouchSize: Self = this.set("thumbTouchSize", js.undefined)
+    def setValue(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("trackStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackStyle: Self = this.set("trackStyle", js.undefined)
-    
-    @scala.inline
-    def setValue(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

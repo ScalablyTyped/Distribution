@@ -2,12 +2,13 @@ package typings.muiDatatables.mod
 
 import typings.muiDatatables.anon.Data
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableToolbar extends js.Object {
+trait MUIDataTableToolbar extends StObject {
   
   var classes: js.UndefOr[js.Object] = js.native
   
@@ -54,141 +55,129 @@ object MUIDataTableToolbar {
   }
   
   @scala.inline
-  implicit class MUIDataTableToolbarOps[Self <: MUIDataTableToolbar] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableToolbarMutableBuilder[Self <: MUIDataTableToolbar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnOrder(value: js.Array[Double]): Self = StObject.set(x, "columnOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: MUIDataTableColumnDef*): Self = this.set("columns", js.Array(value :_*))
+    def setColumnOrderUndefined: Self = StObject.set(x, "columnOrder", js.undefined)
     
     @scala.inline
-    def setColumns(value: js.Array[MUIDataTableColumnDef]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setColumnOrderVarargs(value: Double*): Self = StObject.set(x, "columnOrder", js.Array(value :_*))
     
     @scala.inline
-    def setClasses(value: js.Object): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setColumns(value: js.Array[MUIDataTableColumnDef]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setColumnsVarargs(value: MUIDataTableColumnDef*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnOrderVarargs(value: Double*): Self = this.set("columnOrder", js.Array(value :_*))
+    def setData(value: js.Array[MUIDataTableData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnOrder(value: js.Array[Double]): Self = this.set("columnOrder", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteColumnOrder: Self = this.set("columnOrder", js.undefined)
+    def setDataVarargs(value: MUIDataTableData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: MUIDataTableData*): Self = this.set("data", js.Array(value :_*))
+    def setDisplayData(value: DisplayData): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[MUIDataTableData]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayDataVarargs(value: Data*): Self = this.set("displayData", js.Array(value :_*))
+    def setFilterData(value: js.Array[js.Array[_]]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayData(value: DisplayData): Self = this.set("displayData", value.asInstanceOf[js.Any])
+    def setFilterDataUndefined: Self = StObject.set(x, "filterData", js.undefined)
     
     @scala.inline
-    def deleteDisplayData: Self = this.set("displayData", js.undefined)
+    def setFilterDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "filterData", js.Array(value :_*))
     
     @scala.inline
-    def setFilterDataVarargs(value: js.Array[js.Any]*): Self = this.set("filterData", js.Array(value :_*))
+    def setFilterList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterData(value: js.Array[js.Array[_]]): Self = this.set("filterData", value.asInstanceOf[js.Any])
+    def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
     
     @scala.inline
-    def deleteFilterData: Self = this.set("filterData", js.undefined)
+    def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
     
     @scala.inline
-    def setFilterListVarargs(value: js.Array[String]*): Self = this.set("filterList", js.Array(value :_*))
+    def setFilterUpdate(value: /* args */ js.Any => _): Self = StObject.set(x, "filterUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilterList(value: js.Array[js.Array[String]]): Self = this.set("filterList", value.asInstanceOf[js.Any])
+    def setFilterUpdateUndefined: Self = StObject.set(x, "filterUpdate", js.undefined)
     
     @scala.inline
-    def deleteFilterList: Self = this.set("filterList", js.undefined)
+    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterUpdate(value: /* args */ js.Any => _): Self = this.set("filterUpdate", js.Any.fromFunction1(value))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteFilterUpdate: Self = this.set("filterUpdate", js.undefined)
+    def setResetFilters(value: () => _): Self = StObject.set(x, "resetFilters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setResetFiltersUndefined: Self = StObject.set(x, "resetFilters", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setSearchClose(value: () => _): Self = StObject.set(x, "searchClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setResetFilters(value: () => _): Self = this.set("resetFilters", js.Any.fromFunction0(value))
+    def setSearchCloseUndefined: Self = StObject.set(x, "searchClose", js.undefined)
     
     @scala.inline
-    def deleteResetFilters: Self = this.set("resetFilters", js.undefined)
+    def setSearchText(value: ReactNode): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchClose(value: () => _): Self = this.set("searchClose", js.Any.fromFunction0(value))
+    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
     @scala.inline
-    def deleteSearchClose: Self = this.set("searchClose", js.undefined)
+    def setSearchTextUpdate(value: /* args */ js.Any => _): Self = StObject.set(x, "searchTextUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSearchText(value: ReactNode): Self = this.set("searchText", value.asInstanceOf[js.Any])
+    def setSearchTextUpdateUndefined: Self = StObject.set(x, "searchTextUpdate", js.undefined)
     
     @scala.inline
-    def deleteSearchText: Self = this.set("searchText", js.undefined)
+    def setSetTableActions(value: /* args */ js.Any => _): Self = StObject.set(x, "setTableActions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSearchTextUpdate(value: /* args */ js.Any => _): Self = this.set("searchTextUpdate", js.Any.fromFunction1(value))
+    def setSetTableActionsUndefined: Self = StObject.set(x, "setTableActions", js.undefined)
     
     @scala.inline
-    def deleteSearchTextUpdate: Self = this.set("searchTextUpdate", js.undefined)
+    def setTableRef(value: /* args */ js.Any => _): Self = StObject.set(x, "tableRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTableActions(value: /* args */ js.Any => _): Self = this.set("setTableActions", js.Any.fromFunction1(value))
+    def setTableRefUndefined: Self = StObject.set(x, "tableRef", js.undefined)
     
     @scala.inline
-    def deleteSetTableActions: Self = this.set("setTableActions", js.undefined)
+    def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableRef(value: /* args */ js.Any => _): Self = this.set("tableRef", js.Any.fromFunction1(value))
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTableRef: Self = this.set("tableRef", js.undefined)
+    def setToggleViewColumn(value: /* a */ js.Any => _): Self = StObject.set(x, "toggleViewColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setToggleViewColumnUndefined: Self = StObject.set(x, "toggleViewColumn", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUpdateFilterByType(value: /* args */ js.Any => _): Self = StObject.set(x, "updateFilterByType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToggleViewColumn(value: /* a */ js.Any => _): Self = this.set("toggleViewColumn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteToggleViewColumn: Self = this.set("toggleViewColumn", js.undefined)
-    
-    @scala.inline
-    def setUpdateFilterByType(value: /* args */ js.Any => _): Self = this.set("updateFilterByType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUpdateFilterByType: Self = this.set("updateFilterByType", js.undefined)
+    def setUpdateFilterByTypeUndefined: Self = StObject.set(x, "updateFilterByType", js.undefined)
   }
 }

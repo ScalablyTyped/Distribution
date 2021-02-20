@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdditionalAuthenticationProvider extends js.Object {
+trait AdditionalAuthenticationProvider extends StObject {
   
   /**
     * The authentication type: API key, AWS IAM, OIDC, or Amazon Cognito user pools.
@@ -31,36 +32,24 @@ object AdditionalAuthenticationProvider {
   }
   
   @scala.inline
-  implicit class AdditionalAuthenticationProviderOps[Self <: AdditionalAuthenticationProvider] (val x: Self) extends AnyVal {
+  implicit class AdditionalAuthenticationProviderMutableBuilder[Self <: AdditionalAuthenticationProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenIDConnectConfig(value: OpenIDConnectConfig): Self = StObject.set(x, "openIDConnectConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationType(value: AuthenticationType): Self = this.set("authenticationType", value.asInstanceOf[js.Any])
+    def setOpenIDConnectConfigUndefined: Self = StObject.set(x, "openIDConnectConfig", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationType: Self = this.set("authenticationType", js.undefined)
+    def setUserPoolConfig(value: CognitoUserPoolConfig): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenIDConnectConfig(value: OpenIDConnectConfig): Self = this.set("openIDConnectConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenIDConnectConfig: Self = this.set("openIDConnectConfig", js.undefined)
-    
-    @scala.inline
-    def setUserPoolConfig(value: CognitoUserPoolConfig): Self = this.set("userPoolConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPoolConfig: Self = this.set("userPoolConfig", js.undefined)
+    def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
   }
 }

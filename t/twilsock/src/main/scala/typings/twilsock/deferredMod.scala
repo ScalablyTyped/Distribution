@@ -1,15 +1,15 @@
 package typings.twilsock
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/deferred", JSImport.Namespace)
-@js.native
-object deferredMod extends js.Object {
+object deferredMod {
   
+  @JSImport("twilsock/lib/deferred", "Deferred")
   @js.native
-  class Deferred[T] () extends js.Object {
+  class Deferred[T] () extends StObject {
     
     var _promise: js.Any = js.native
     

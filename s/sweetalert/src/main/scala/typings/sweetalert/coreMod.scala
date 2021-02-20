@@ -1,20 +1,24 @@
 package typings.sweetalert
 
+import org.scalablytyped.runtime.Shortcut
 import typings.sweetalert.anon.PartialSwalOptions
 import typings.sweetalert.stateMod.ActionOptions
 import typings.sweetalert.stateMod.SwalState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sweetalert/typings/core", JSImport.Namespace)
-@js.native
-object coreMod extends js.Object {
+object coreMod extends Shortcut {
   
+  @JSImport("sweetalert/typings/core", JSImport.Default)
+  @js.native
   val default: SweetAlert = js.native
   
+  type SwalParams = js.Array[String | PartialSwalOptions]
+  
   @js.native
-  trait SweetAlert extends js.Object {
+  trait SweetAlert extends StObject {
     
     def apply(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type SwalParams is not an array type */ params: SwalParams
@@ -31,5 +35,8 @@ object coreMod extends js.Object {
     var stopLoading: js.UndefOr[js.Function0[Unit]] = js.native
   }
   
-  type SwalParams = js.Array[String | PartialSwalOptions]
+  type _To = SweetAlert
+  
+  /* This means you don't have to write `default`, but can instead just say `coreMod.foo` */
+  override def _to: SweetAlert = default
 }

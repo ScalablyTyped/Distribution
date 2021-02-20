@@ -4,12 +4,13 @@ import typings.roslib.roslibStrings.socketDotio
 import typings.roslib.roslibStrings.websocket
 import typings.std.RTCDataChannelInit
 import typings.std.RTCPeerConnection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroovyCompatibility extends js.Object {
+trait GroovyCompatibility extends StObject {
   
   var groovyCompatibility: js.UndefOr[Boolean] = js.native
   
@@ -28,42 +29,30 @@ object GroovyCompatibility {
   }
   
   @scala.inline
-  implicit class GroovyCompatibilityOps[Self <: GroovyCompatibility] (val x: Self) extends AnyVal {
+  implicit class GroovyCompatibilityMutableBuilder[Self <: GroovyCompatibility] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroovyCompatibility(value: Boolean): Self = StObject.set(x, "groovyCompatibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroovyCompatibilityUndefined: Self = StObject.set(x, "groovyCompatibility", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransportLibrary(value: websocket | socketDotio | RTCPeerConnection): Self = StObject.set(x, "transportLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroovyCompatibility(value: Boolean): Self = this.set("groovyCompatibility", value.asInstanceOf[js.Any])
+    def setTransportLibraryUndefined: Self = StObject.set(x, "transportLibrary", js.undefined)
     
     @scala.inline
-    def deleteGroovyCompatibility: Self = this.set("groovyCompatibility", js.undefined)
+    def setTransportOptions(value: RTCDataChannelInit): Self = StObject.set(x, "transportOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransportLibrary(value: websocket | socketDotio | RTCPeerConnection): Self = this.set("transportLibrary", value.asInstanceOf[js.Any])
+    def setTransportOptionsUndefined: Self = StObject.set(x, "transportOptions", js.undefined)
     
     @scala.inline
-    def deleteTransportLibrary: Self = this.set("transportLibrary", js.undefined)
+    def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransportOptions(value: RTCDataChannelInit): Self = this.set("transportOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransportOptions: Self = this.set("transportOptions", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

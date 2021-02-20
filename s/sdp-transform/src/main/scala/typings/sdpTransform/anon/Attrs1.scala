@@ -1,11 +1,12 @@
 package typings.sdpTransform.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attrs1 extends js.Object {
+trait Attrs1 extends StObject {
   
   var attrs1: String = js.native
   
@@ -26,39 +27,27 @@ object Attrs1 {
   }
   
   @scala.inline
-  implicit class Attrs1Ops[Self <: Attrs1] (val x: Self) extends AnyVal {
+  implicit class Attrs1MutableBuilder[Self <: Attrs1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrs1(value: String): Self = StObject.set(x, "attrs1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttrs2(value: String): Self = StObject.set(x, "attrs2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttrs2Undefined: Self = StObject.set(x, "attrs2", js.undefined)
     
     @scala.inline
-    def setAttrs1(value: String): Self = this.set("attrs1", value.asInstanceOf[js.Any])
+    def setDir1(value: String): Self = StObject.set(x, "dir1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir1(value: String): Self = this.set("dir1", value.asInstanceOf[js.Any])
+    def setDir2(value: String): Self = StObject.set(x, "dir2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPt(value: Double | String): Self = this.set("pt", value.asInstanceOf[js.Any])
+    def setDir2Undefined: Self = StObject.set(x, "dir2", js.undefined)
     
     @scala.inline
-    def setAttrs2(value: String): Self = this.set("attrs2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttrs2: Self = this.set("attrs2", js.undefined)
-    
-    @scala.inline
-    def setDir2(value: String): Self = this.set("dir2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDir2: Self = this.set("dir2", js.undefined)
+    def setPt(value: Double | String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
   }
 }

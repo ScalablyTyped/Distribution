@@ -2,14 +2,14 @@ package typings.ngxInfiniteScroll
 
 import typings.ngxInfiniteScroll.anon.TotalToScroll
 import typings.ngxInfiniteScroll.modelsMod.IScrollState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ngx-infinite-scroll/src/services/scroll-state", JSImport.Namespace)
-@js.native
-object scrollStateMod extends js.Object {
+object scrollStateMod {
   
+  @JSImport("ngx-infinite-scroll/src/services/scroll-state", "ScrollState")
   @js.native
   class ScrollState protected () extends IScrollState {
     def this(hasTotalToScroll: TotalToScroll) = this()

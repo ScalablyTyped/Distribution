@@ -1,17 +1,32 @@
 package typings.angularCommon
 
+import org.scalablytyped.runtime.Shortcut
 import typings.angularCommon.anon.MWK
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common/locales/en-MW", JSImport.Namespace)
-@js.native
-object enMWMod extends js.Object {
+object enMWMod extends Shortcut {
   
+  @JSImport("@angular/common/locales/en-MW", JSImport.Default)
+  @js.native
   val default: js.Array[
     js.UndefOr[
       String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | MWK
     ]
   ] = js.native
+  
+  type _To = js.Array[
+    js.UndefOr[
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | MWK
+    ]
+  ]
+  
+  /* This means you don't have to write `default`, but can instead just say `enMWMod.foo` */
+  override def _to: js.Array[
+    js.UndefOr[
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | MWK
+    ]
+  ] = default
 }

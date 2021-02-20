@@ -1,6 +1,7 @@
 package typings.heremaps.global.H.map
 
 import typings.heremaps.H.map.SpatialStyle.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,12 +32,23 @@ class SpatialStyle ()
   def this(opt_options: typings.heremaps.H.map.SpatialStyle) = this()
   def this(opt_options: Options) = this()
 }
-/* static members */
-@JSGlobal("H.map.SpatialStyle")
-@js.native
-object SpatialStyle extends js.Object {
+object SpatialStyle {
   
-  var DEFAULT_STYLE: typings.heremaps.H.map.SpatialStyle = js.native
+  @JSGlobal("H.map.SpatialStyle")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var MAX_LINE_WIDTH: Double = js.native
+  /* static member */
+  @JSGlobal("H.map.SpatialStyle.DEFAULT_STYLE")
+  @js.native
+  def DEFAULT_STYLE: typings.heremaps.H.map.SpatialStyle = js.native
+  @scala.inline
+  def DEFAULT_STYLE_=(x: typings.heremaps.H.map.SpatialStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_STYLE")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("H.map.SpatialStyle.MAX_LINE_WIDTH")
+  @js.native
+  def MAX_LINE_WIDTH: Double = js.native
+  @scala.inline
+  def MAX_LINE_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_LINE_WIDTH")(x.asInstanceOf[js.Any])
 }

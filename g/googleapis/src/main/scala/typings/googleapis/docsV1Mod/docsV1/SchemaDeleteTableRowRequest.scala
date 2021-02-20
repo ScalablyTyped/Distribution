@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Deletes a row from a table.
   */
 @js.native
-trait SchemaDeleteTableRowRequest extends js.Object {
+trait SchemaDeleteTableRowRequest extends StObject {
   
   /**
     * The reference table cell location from which the row will be deleted. The
@@ -27,24 +28,12 @@ object SchemaDeleteTableRowRequest {
   }
   
   @scala.inline
-  implicit class SchemaDeleteTableRowRequestOps[Self <: SchemaDeleteTableRowRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaDeleteTableRowRequestMutableBuilder[Self <: SchemaDeleteTableRowRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTableCellLocation(value: SchemaTableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTableCellLocation(value: SchemaTableCellLocation): Self = this.set("tableCellLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCellLocation: Self = this.set("tableCellLocation", js.undefined)
+    def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
   }
 }

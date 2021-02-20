@@ -6,16 +6,16 @@ import typings.uirouterCore.paramTypesMod.ParamTypes
 import typings.uirouterCore.paramsInterfaceMod.RawParams
 import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
 import typings.uirouterCore.urlMatcherFactoryMod.ParamFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/url/urlMatcher", JSImport.Namespace)
-@js.native
-object urlMatcherMod extends js.Object {
+object urlMatcherMod {
   
+  @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher")
   @js.native
-  class UrlMatcher protected () extends js.Object {
+  class UrlMatcher protected () extends StObject {
     /**
       * @param pattern The pattern to compile into a matcher.
       * @param paramTypes The [[ParamTypes]] registry
@@ -151,8 +151,11 @@ object urlMatcherMod extends js.Object {
     def validates(params: RawParams): Boolean = js.native
   }
   /* static members */
-  @js.native
-  object UrlMatcher extends js.Object {
+  object UrlMatcher {
+    
+    @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compare two UrlMatchers
@@ -163,18 +166,30 @@ object urlMatcherMod extends js.Object {
       *
       * The comparison function sorts static segments before dynamic ones.
       */
+    @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.compare")
+    @js.native
     def compare(a: UrlMatcher, b: UrlMatcher): Double = js.native
     
     /** @internal */
+    @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.encodeDashes")
+    @js.native
     def encodeDashes(str: String): String = js.native
     
     /** @internal */
-    var nameValidator: RegExp = js.native
+    @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.nameValidator")
+    @js.native
+    def nameValidator: RegExp = js.native
+    @scala.inline
+    def nameValidator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
     
     /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
+    @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.pathSegmentsAndParams")
+    @js.native
     def pathSegmentsAndParams(matcher: UrlMatcher): js.Any = js.native
     
     /** @internal Given a matcher, return an array with the matcher's query params */
+    @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.queryParams")
+    @js.native
     def queryParams(matcher: UrlMatcher): js.Array[Param] = js.native
   }
 }

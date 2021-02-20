@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalTable extends js.Object {
+trait GlobalTable extends StObject {
   
   /**
     * The global table name.
@@ -26,33 +27,21 @@ object GlobalTable {
   }
   
   @scala.inline
-  implicit class GlobalTableOps[Self <: GlobalTable] (val x: Self) extends AnyVal {
+  implicit class GlobalTableMutableBuilder[Self <: GlobalTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicationGroup(value: ReplicaList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalTableName(value: TableName): Self = this.set("GlobalTableName", value.asInstanceOf[js.Any])
+    def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
     
     @scala.inline
-    def deleteGlobalTableName: Self = this.set("GlobalTableName", js.undefined)
-    
-    @scala.inline
-    def setReplicationGroupVarargs(value: Replica*): Self = this.set("ReplicationGroup", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicationGroup(value: ReplicaList): Self = this.set("ReplicationGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationGroup: Self = this.set("ReplicationGroup", js.undefined)
+    def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
   }
 }

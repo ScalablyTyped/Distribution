@@ -4,6 +4,7 @@ import typings.cytoscape.cytoscapeStrings.no
 import typings.cytoscape.cytoscapeStrings.yes
 import typings.cytoscape.mod.EdgeSingular
 import typings.cytoscape.mod.NodeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#style/events
   */
 @js.native
-trait Events[SingularType /* <: NodeSingular | EdgeSingular */] extends js.Object {
+trait Events[SingularType /* <: NodeSingular | EdgeSingular */] extends StObject {
   
   /**
     * Whether events should occur on an element (e.g.tap, mouseover, etc.).
@@ -39,30 +40,18 @@ object Events {
   }
   
   @scala.inline
-  implicit class EventsOps[Self <: Events[_], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self with Events[SingularType]) extends AnyVal {
+  implicit class EventsMutableBuilder[Self <: Events[_], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self with Events[SingularType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: PropertyValue[SingularType, yes | no]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventsFunction1(value: SingularType => yes | no): Self = StObject.set(x, "events", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setText-events`(value: PropertyValue[SingularType, yes | no]): Self = StObject.set(x, "text-events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsFunction1(value: SingularType => yes | no): Self = this.set("events", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEvents(value: PropertyValue[SingularType, yes | no]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setText-eventsFunction1`(value: SingularType => yes | no): Self = this.set("text-events", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setText-events`(value: PropertyValue[SingularType, yes | no]): Self = this.set("text-events", value.asInstanceOf[js.Any])
+    def `setText-eventsFunction1`(value: SingularType => yes | no): Self = StObject.set(x, "text-events", js.Any.fromFunction1(value))
   }
 }

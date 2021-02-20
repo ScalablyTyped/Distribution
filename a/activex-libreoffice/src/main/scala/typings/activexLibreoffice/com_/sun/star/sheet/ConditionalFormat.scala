@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,24 +52,12 @@ object ConditionalFormat {
   }
   
   @scala.inline
-  implicit class ConditionalFormatOps[Self <: ConditionalFormat] (val x: Self) extends AnyVal {
+  implicit class ConditionalFormatMutableBuilder[Self <: ConditionalFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRange(value: XSheetCellRanges): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setRange(value: XSheetCellRanges): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Access information about the script._
   * @see https://docs.scriptable.app/script
   */
-@JSGlobal("Script")
-@js.native
-object Script extends js.Object {
+object Script {
   
   /**
     * _Informs the system about script completion._
@@ -23,12 +22,16 @@ object Script extends js.Object {
     * When the script is run from a share sheet, the `complete` function will complete execution and dismiss the presented view.
     * @see https://docs.scriptable.app/script/#complete
     */
+  @JSGlobal("Script.complete")
+  @js.native
   def complete(): Unit = js.native
   
   /**
     * _Name of the script._
     * @see https://docs.scriptable.app/script/#name
     */
+  @JSGlobal("Script.name")
+  @js.native
   def name(): String = js.native
   
   /**
@@ -41,6 +44,8 @@ object Script extends js.Object {
     * @param value - Value to provide as output.
     * @see https://docs.scriptable.app/script/#setshortcutoutput
     */
+  @JSGlobal("Script.setShortcutOutput")
+  @js.native
   def setShortcutOutput(value: js.Any): Unit = js.native
   
   /**
@@ -48,5 +53,7 @@ object Script extends js.Object {
     * @param widget - Widget to display.
     * @see https://docs.scriptable.app/script/#setwidget
     */
+  @JSGlobal("Script.setWidget")
+  @js.native
   def setWidget(widget: js.Any): Unit = js.native
 }

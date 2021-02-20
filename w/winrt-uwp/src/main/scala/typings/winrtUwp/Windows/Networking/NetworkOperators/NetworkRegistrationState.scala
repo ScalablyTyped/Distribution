@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkRegistrationState extends js.Object
+sealed trait NetworkRegistrationState extends StObject
 /** Describes the network registration state of a mobile broadband device. */
 @JSGlobal("Windows.Networking.NetworkOperators.NetworkRegistrationState")
 @js.native
-object NetworkRegistrationState extends js.Object {
+object NetworkRegistrationState extends StObject {
   
   /** The device was denied registration. Emergency voice calls may be made. This applies to voice and not data. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.awsLambda.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountId extends js.Object {
+trait AccountId extends StObject {
   
   var accountId: String = js.native
   
@@ -49,54 +50,42 @@ object AccountId {
   }
   
   @scala.inline
-  implicit class AccountIdOps[Self <: AccountId] (val x: Self) extends AnyVal {
+  implicit class AccountIdMutableBuilder[Self <: AccountId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizer(value: Jwt): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
     
     @scala.inline
-    def setApiId(value: String): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    def setDomainPrefix(value: String): Self = StObject.set(x, "domainPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainPrefix(value: String): Self = this.set("domainPrefix", value.asInstanceOf[js.Any])
+    def setHttp(value: Method): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp(value: Method): Self = this.set("http", value.asInstanceOf[js.Any])
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setRouteKey(value: String): Self = StObject.set(x, "routeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteKey(value: String): Self = this.set("routeKey", value.asInstanceOf[js.Any])
+    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStage(value: String): Self = this.set("stage", value.asInstanceOf[js.Any])
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeEpoch(value: Double): Self = this.set("timeEpoch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthorizer(value: Jwt): Self = this.set("authorizer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizer: Self = this.set("authorizer", js.undefined)
+    def setTimeEpoch(value: Double): Self = StObject.set(x, "timeEpoch", value.asInstanceOf[js.Any])
   }
 }

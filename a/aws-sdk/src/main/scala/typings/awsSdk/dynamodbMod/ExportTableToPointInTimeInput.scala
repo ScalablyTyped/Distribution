@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportTableToPointInTimeInput extends js.Object {
+trait ExportTableToPointInTimeInput extends StObject {
   
   /**
     * Providing a ClientToken makes the call to ExportTableToPointInTimeInput idempotent, meaning that multiple identical calls have the same effect as one single call. A client token is valid for 8 hours after the first request that uses it is completed. After 8 hours, any request with the same client token is treated as a new request. Do not resubmit the same request with the same client token for more than 8 hours, or the result might not be idempotent. If you submit a request with the same client token but a change in other parameters within the 8-hour idempotency window, DynamoDB returns an IdempotentParameterMismatch exception.
@@ -61,66 +62,54 @@ object ExportTableToPointInTimeInput {
   }
   
   @scala.inline
-  implicit class ExportTableToPointInTimeInputOps[Self <: ExportTableToPointInTimeInput] (val x: Self) extends AnyVal {
+  implicit class ExportTableToPointInTimeInputMutableBuilder[Self <: ExportTableToPointInTimeInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportFormat(value: ExportFormat): Self = StObject.set(x, "ExportFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    def setExportFormatUndefined: Self = StObject.set(x, "ExportFormat", js.undefined)
     
     @scala.inline
-    def setTableArn(value: TableArn): Self = this.set("TableArn", value.asInstanceOf[js.Any])
+    def setExportTime(value: ExportTime): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setExportTimeUndefined: Self = StObject.set(x, "ExportTime", js.undefined)
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportFormat(value: ExportFormat): Self = this.set("ExportFormat", value.asInstanceOf[js.Any])
+    def setS3BucketOwner(value: S3BucketOwner): Self = StObject.set(x, "S3BucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExportFormat: Self = this.set("ExportFormat", js.undefined)
+    def setS3BucketOwnerUndefined: Self = StObject.set(x, "S3BucketOwner", js.undefined)
     
     @scala.inline
-    def setExportTime(value: ExportTime): Self = this.set("ExportTime", value.asInstanceOf[js.Any])
+    def setS3Prefix(value: S3Prefix): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExportTime: Self = this.set("ExportTime", js.undefined)
+    def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
     
     @scala.inline
-    def setS3BucketOwner(value: S3BucketOwner): Self = this.set("S3BucketOwner", value.asInstanceOf[js.Any])
+    def setS3SseAlgorithm(value: S3SseAlgorithm): Self = StObject.set(x, "S3SseAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteS3BucketOwner: Self = this.set("S3BucketOwner", js.undefined)
+    def setS3SseAlgorithmUndefined: Self = StObject.set(x, "S3SseAlgorithm", js.undefined)
     
     @scala.inline
-    def setS3Prefix(value: S3Prefix): Self = this.set("S3Prefix", value.asInstanceOf[js.Any])
+    def setS3SseKmsKeyId(value: S3SseKmsKeyId): Self = StObject.set(x, "S3SseKmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteS3Prefix: Self = this.set("S3Prefix", js.undefined)
+    def setS3SseKmsKeyIdUndefined: Self = StObject.set(x, "S3SseKmsKeyId", js.undefined)
     
     @scala.inline
-    def setS3SseAlgorithm(value: S3SseAlgorithm): Self = this.set("S3SseAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3SseAlgorithm: Self = this.set("S3SseAlgorithm", js.undefined)
-    
-    @scala.inline
-    def setS3SseKmsKeyId(value: S3SseKmsKeyId): Self = this.set("S3SseKmsKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3SseKmsKeyId: Self = this.set("S3SseKmsKeyId", js.undefined)
+    def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
   }
 }

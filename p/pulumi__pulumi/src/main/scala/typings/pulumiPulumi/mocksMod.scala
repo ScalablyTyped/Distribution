@@ -2,30 +2,16 @@ package typings.pulumiPulumi
 
 import typings.pulumiPulumi.anon.Id
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi/runtime/mocks", JSImport.Namespace)
-@js.native
-object mocksMod extends js.Object {
+object mocksMod {
   
-  def setMocks(mocks: Mocks): Unit = js.native
-  def setMocks(
-    mocks: Mocks,
-    project: js.UndefOr[scala.Nothing],
-    stack: js.UndefOr[scala.Nothing],
-    preview: Boolean
-  ): Unit = js.native
-  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String): Unit = js.native
-  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String, preview: Boolean): Unit = js.native
-  def setMocks(mocks: Mocks, project: String): Unit = js.native
-  def setMocks(mocks: Mocks, project: String, stack: js.UndefOr[scala.Nothing], preview: Boolean): Unit = js.native
-  def setMocks(mocks: Mocks, project: String, stack: String): Unit = js.native
-  def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = js.native
-  
+  @JSImport("@pulumi/pulumi/runtime/mocks", "MockMonitor")
   @js.native
-  class MockMonitor protected () extends js.Object {
+  class MockMonitor protected () extends StObject {
     def this(mocks: Mocks) = this()
     
     def invoke(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innerResponse */ js.Any, Unit]): js.Promise[Unit] = js.native
@@ -43,8 +29,38 @@ object mocksMod extends js.Object {
     def supportsFeature(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innerResponse */ js.Any, Unit]): Unit = js.native
   }
   
+  @JSImport("@pulumi/pulumi/runtime/mocks", "setMocks")
   @js.native
-  trait Mocks extends js.Object {
+  def setMocks(mocks: Mocks): Unit = js.native
+  @JSImport("@pulumi/pulumi/runtime/mocks", "setMocks")
+  @js.native
+  def setMocks(
+    mocks: Mocks,
+    project: js.UndefOr[scala.Nothing],
+    stack: js.UndefOr[scala.Nothing],
+    preview: Boolean
+  ): Unit = js.native
+  @JSImport("@pulumi/pulumi/runtime/mocks", "setMocks")
+  @js.native
+  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String): Unit = js.native
+  @JSImport("@pulumi/pulumi/runtime/mocks", "setMocks")
+  @js.native
+  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String, preview: Boolean): Unit = js.native
+  @JSImport("@pulumi/pulumi/runtime/mocks", "setMocks")
+  @js.native
+  def setMocks(mocks: Mocks, project: String): Unit = js.native
+  @JSImport("@pulumi/pulumi/runtime/mocks", "setMocks")
+  @js.native
+  def setMocks(mocks: Mocks, project: String, stack: js.UndefOr[scala.Nothing], preview: Boolean): Unit = js.native
+  @JSImport("@pulumi/pulumi/runtime/mocks", "setMocks")
+  @js.native
+  def setMocks(mocks: Mocks, project: String, stack: String): Unit = js.native
+  @JSImport("@pulumi/pulumi/runtime/mocks", "setMocks")
+  @js.native
+  def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = js.native
+  
+  @js.native
+  trait Mocks extends StObject {
     
     /**
       * call mocks provider-implemented function calls (e.g. aws.get_availability_zones).

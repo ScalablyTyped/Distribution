@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureMod.Texture
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/rawTexture2DArray", JSImport.Namespace)
-@js.native
-object rawTexture2DArrayMod extends js.Object {
+object rawTexture2DArrayMod {
   
+  @JSImport("babylonjs/Materials/Textures/rawTexture2DArray", "RawTexture2DArray")
   @js.native
   class RawTexture2DArray protected () extends Texture {
     /**

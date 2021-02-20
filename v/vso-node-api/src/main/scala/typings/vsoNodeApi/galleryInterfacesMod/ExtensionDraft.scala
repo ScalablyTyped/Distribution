@@ -2,12 +2,13 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.anon.KeyValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionDraft extends js.Object {
+trait ExtensionDraft extends StObject {
   
   var assets: js.Array[ExtensionDraftAsset] = js.native
   
@@ -52,60 +53,48 @@ object ExtensionDraft {
   }
   
   @scala.inline
-  implicit class ExtensionDraftOps[Self <: ExtensionDraft] (val x: Self) extends AnyVal {
+  implicit class ExtensionDraftMutableBuilder[Self <: ExtensionDraft] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssets(value: js.Array[ExtensionDraftAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetsVarargs(value: ExtensionDraftAsset*): Self = StObject.set(x, "assets", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetsVarargs(value: ExtensionDraftAsset*): Self = this.set("assets", js.Array(value :_*))
+    def setDraftState(value: DraftStateType): Self = StObject.set(x, "draftState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssets(value: js.Array[ExtensionDraftAsset]): Self = this.set("assets", value.asInstanceOf[js.Any])
+    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Date): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraftState(value: DraftStateType): Self = this.set("draftState", value.asInstanceOf[js.Any])
+    def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionName(value: String): Self = this.set("extensionName", value.asInstanceOf[js.Any])
+    def setPayload(value: ExtensionPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: Date): Self = this.set("lastUpdated", value.asInstanceOf[js.Any])
+    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: ExtensionPayload): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setValidationErrors(value: js.Array[KeyValue]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
+    def setValidationErrorsVarargs(value: KeyValue*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
     
     @scala.inline
-    def setPublisherName(value: String): Self = this.set("publisherName", value.asInstanceOf[js.Any])
+    def setValidationWarnings(value: js.Array[KeyValue]): Self = StObject.set(x, "validationWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationErrorsVarargs(value: KeyValue*): Self = this.set("validationErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidationErrors(value: js.Array[KeyValue]): Self = this.set("validationErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidationWarningsVarargs(value: KeyValue*): Self = this.set("validationWarnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidationWarnings(value: js.Array[KeyValue]): Self = this.set("validationWarnings", value.asInstanceOf[js.Any])
+    def setValidationWarningsVarargs(value: KeyValue*): Self = StObject.set(x, "validationWarnings", js.Array(value :_*))
   }
 }

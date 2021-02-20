@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Css extends js.Object {
+trait Css extends StObject {
   
   /** Output only. Immutable. The CSS domain ID. */
   var cssDomainId: js.UndefOr[String] = js.native
@@ -34,57 +35,45 @@ object Css {
   }
   
   @scala.inline
-  implicit class CssOps[Self <: Css] (val x: Self) extends AnyVal {
+  implicit class CssMutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCssDomainId(value: String): Self = StObject.set(x, "cssDomainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCssDomainIdUndefined: Self = StObject.set(x, "cssDomainId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCssGroupId(value: String): Self = StObject.set(x, "cssGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssDomainId(value: String): Self = this.set("cssDomainId", value.asInstanceOf[js.Any])
+    def setCssGroupIdUndefined: Self = StObject.set(x, "cssGroupId", js.undefined)
     
     @scala.inline
-    def deleteCssDomainId: Self = this.set("cssDomainId", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssGroupId(value: String): Self = this.set("cssGroupId", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCssGroupId: Self = this.set("cssGroupId", js.undefined)
+    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setHomepageUri(value: String): Self = StObject.set(x, "homepageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    def setHomepageUriUndefined: Self = StObject.set(x, "homepageUri", js.undefined)
     
     @scala.inline
-    def deleteFullName: Self = this.set("fullName", js.undefined)
+    def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomepageUri(value: String): Self = this.set("homepageUri", value.asInstanceOf[js.Any])
+    def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
     @scala.inline
-    def deleteHomepageUri: Self = this.set("homepageUri", js.undefined)
-    
-    @scala.inline
-    def setLabelIdsVarargs(value: String*): Self = this.set("labelIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setLabelIds(value: js.Array[String]): Self = this.set("labelIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelIds: Self = this.set("labelIds", js.undefined)
+    def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
   }
 }

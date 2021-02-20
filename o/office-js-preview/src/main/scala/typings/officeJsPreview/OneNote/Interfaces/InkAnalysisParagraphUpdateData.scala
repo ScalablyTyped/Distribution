@@ -1,12 +1,13 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the InkAnalysisParagraph object, for use in "inkAnalysisParagraph.set({ ... })". */
 @js.native
-trait InkAnalysisParagraphUpdateData extends js.Object {
+trait InkAnalysisParagraphUpdateData extends StObject {
   
   /**
     *
@@ -25,24 +26,12 @@ object InkAnalysisParagraphUpdateData {
   }
   
   @scala.inline
-  implicit class InkAnalysisParagraphUpdateDataOps[Self <: InkAnalysisParagraphUpdateData] (val x: Self) extends AnyVal {
+  implicit class InkAnalysisParagraphUpdateDataMutableBuilder[Self <: InkAnalysisParagraphUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInkAnalysis(value: InkAnalysisUpdateData): Self = StObject.set(x, "inkAnalysis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInkAnalysis(value: InkAnalysisUpdateData): Self = this.set("inkAnalysis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInkAnalysis: Self = this.set("inkAnalysis", js.undefined)
+    def setInkAnalysisUndefined: Self = StObject.set(x, "inkAnalysis", js.undefined)
   }
 }

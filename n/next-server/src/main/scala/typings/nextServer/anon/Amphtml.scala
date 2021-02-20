@@ -1,11 +1,12 @@
 package typings.nextServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Amphtml extends js.Object {
+trait Amphtml extends StObject {
   
   var amphtml: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object Amphtml {
   }
   
   @scala.inline
-  implicit class AmphtmlOps[Self <: Amphtml] (val x: Self) extends AnyVal {
+  implicit class AmphtmlMutableBuilder[Self <: Amphtml] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmphtml(value: Boolean): Self = StObject.set(x, "amphtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmphtmlUndefined: Self = StObject.set(x, "amphtml", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataOnly(value: Boolean): Self = StObject.set(x, "dataOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmphtml(value: Boolean): Self = this.set("amphtml", value.asInstanceOf[js.Any])
+    def setDataOnlyUndefined: Self = StObject.set(x, "dataOnly", js.undefined)
     
     @scala.inline
-    def deleteAmphtml: Self = this.set("amphtml", js.undefined)
+    def setHasAmp(value: Boolean): Self = StObject.set(x, "hasAmp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataOnly(value: Boolean): Self = this.set("dataOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataOnly: Self = this.set("dataOnly", js.undefined)
-    
-    @scala.inline
-    def setHasAmp(value: Boolean): Self = this.set("hasAmp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasAmp: Self = this.set("hasAmp", js.undefined)
+    def setHasAmpUndefined: Self = StObject.set(x, "hasAmp", js.undefined)
   }
 }

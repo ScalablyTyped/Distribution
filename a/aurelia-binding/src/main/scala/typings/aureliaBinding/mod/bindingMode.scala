@@ -1,15 +1,15 @@
 package typings.aureliaBinding.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait bindingMode extends js.Object
+sealed trait bindingMode extends StObject
 @JSImport("aurelia-binding", "bindingMode")
 @js.native
-object bindingMode extends js.Object {
+object bindingMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[bindingMode with Double] = js.native
@@ -21,8 +21,7 @@ object bindingMode extends js.Object {
     */
   @js.native
   sealed trait fromView extends bindingMode
-  /* 3 */ @js.native
-  object fromView extends TopLevel[fromView with Double]
+  /* 3 */ val fromView: typings.aureliaBinding.mod.bindingMode.fromView with Double = js.native
   
   /**
     * Updates the binding target once. This is essentially a simpler form of to-view binding
@@ -30,8 +29,7 @@ object bindingMode extends js.Object {
     */
   @js.native
   sealed trait oneTime extends bindingMode
-  /* 0 */ @js.native
-  object oneTime extends TopLevel[oneTime with Double]
+  /* 0 */ val oneTime: typings.aureliaBinding.mod.bindingMode.oneTime with Double = js.native
   
   /**
     * Updates the binding target (target) property when the binding source (source) changes.
@@ -43,8 +41,7 @@ object bindingMode extends js.Object {
     */
   @js.native
   sealed trait oneWay extends bindingMode
-  /* 1 */ @js.native
-  object oneWay extends TopLevel[oneWay with Double]
+  /* 1 */ val oneWay: typings.aureliaBinding.mod.bindingMode.oneWay with Double = js.native
   
   /**
     * Updates the binding target (target) property when the binding source (source) changes.
@@ -55,8 +52,7 @@ object bindingMode extends js.Object {
     */
   @js.native
   sealed trait toView extends bindingMode
-  /* 1 */ @js.native
-  object toView extends TopLevel[toView with Double]
+  /* 1 */ val toView: typings.aureliaBinding.mod.bindingMode.toView with Double = js.native
   
   /**
     * Causes changes to either the source property or the target property to automatically update
@@ -65,6 +61,5 @@ object bindingMode extends js.Object {
     */
   @js.native
   sealed trait twoWay extends bindingMode
-  /* 2 */ @js.native
-  object twoWay extends TopLevel[twoWay with Double]
+  /* 2 */ val twoWay: typings.aureliaBinding.mod.bindingMode.twoWay with Double = js.native
 }

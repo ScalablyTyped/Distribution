@@ -3,6 +3,24 @@
 
 Typings are for version 2.1.2
 
+## Library description:
+XMLDSIGjs provides an implementation of XMLDSIG in Typescript/Javascript based on WebCrypto
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | xmldsigjs |
+| Keywords           | xml, xmldsig, webcrypto, signature, rsa, ec |
+| # releases         | 11 |
+| # dependents       | 4 |
+| # downloads        | 18989 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/PeculiarVentures/xadesjs#readme)
+- [Bugs](https://github.com/PeculiarVentures/xadesjs/issues)
+- [Repository](https://github.com/PeculiarVentures/xadesjs)
+- [Npm](https://www.npmjs.com/package/xmldsigjs)
+    
 
 
 ## Note

@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListFunctionsResponse extends js.Object {
+trait ListFunctionsResponse extends StObject {
   
   /**
     * A list of Lambda functions.
@@ -26,33 +27,21 @@ object ListFunctionsResponse {
   }
   
   @scala.inline
-  implicit class ListFunctionsResponseOps[Self <: ListFunctionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListFunctionsResponseMutableBuilder[Self <: ListFunctionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunctions(value: FunctionList): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionsVarargs(value: FunctionConfiguration*): Self = StObject.set(x, "Functions", js.Array(value :_*))
     
     @scala.inline
-    def setFunctionsVarargs(value: FunctionConfiguration*): Self = this.set("Functions", js.Array(value :_*))
+    def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctions(value: FunctionList): Self = this.set("Functions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFunctions: Self = this.set("Functions", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: String): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

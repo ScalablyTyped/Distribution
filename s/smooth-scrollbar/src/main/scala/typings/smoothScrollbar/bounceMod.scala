@@ -2,16 +2,16 @@ package typings.smoothScrollbar
 
 import typings.smoothScrollbar.anon.X
 import typings.smoothScrollbar.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("smooth-scrollbar/plugins/overscroll/bounce", JSImport.Namespace)
-@js.native
-object bounceMod extends js.Object {
+object bounceMod {
   
+  @JSImport("smooth-scrollbar/plugins/overscroll/bounce", "Bounce")
   @js.native
-  class Bounce protected () extends js.Object {
+  class Bounce protected () extends StObject {
     def this(_scrollbar: default) = this()
     
     var _scrollbar: js.Any = js.native

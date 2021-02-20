@@ -1,5 +1,6 @@
 package typings.parse.mod.global.Parse
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Parse.Relation")
 @js.native
-class Relation[S /* <: Object[Attributes] */, T /* <: Object[Attributes] */] () extends js.Object {
+class Relation[S /* <: Object[Attributes] */, T /* <: Object[Attributes] */] () extends StObject {
   def this(parent: S) = this()
   def this(parent: S, key: String) = this()
   def this(parent: js.UndefOr[scala.Nothing], key: String) = this()

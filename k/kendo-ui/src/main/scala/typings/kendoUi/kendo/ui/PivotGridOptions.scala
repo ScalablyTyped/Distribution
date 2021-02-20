@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.PivotDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotGridOptions extends js.Object {
+trait PivotGridOptions extends StObject {
   
   var autoBind: js.UndefOr[Boolean] = js.native
   
@@ -61,150 +62,138 @@ object PivotGridOptions {
   }
   
   @scala.inline
-  implicit class PivotGridOptionsOps[Self <: PivotGridOptions] (val x: Self) extends AnyVal {
+  implicit class PivotGridOptionsMutableBuilder[Self <: PivotGridOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapseMember(value: /* e */ PivotGridCollapseMemberEvent => Unit): Self = StObject.set(x, "collapseMember", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setCollapseMemberUndefined: Self = StObject.set(x, "collapseMember", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setColumnHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "columnHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseMember(value: /* e */ PivotGridCollapseMemberEvent => Unit): Self = this.set("collapseMember", js.Any.fromFunction1(value))
+    def setColumnHeaderTemplateUndefined: Self = StObject.set(x, "columnHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteCollapseMember: Self = this.set("collapseMember", js.undefined)
+    def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHeaderTemplate(value: String | js.Function): Self = this.set("columnHeaderTemplate", value.asInstanceOf[js.Any])
+    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
     @scala.inline
-    def deleteColumnHeaderTemplate: Self = this.set("columnHeaderTemplate", js.undefined)
+    def setDataBinding(value: /* e */ PivotGridDataBindingEvent => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnWidth(value: Double): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    def setDataBound(value: /* e */ PivotGridDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataBinding(value: /* e */ PivotGridDataBindingEvent => Unit): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    def setDataCellTemplate(value: String | js.Function): Self = StObject.set(x, "dataCellTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: /* e */ PivotGridDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    def setDataCellTemplateUndefined: Self = StObject.set(x, "dataCellTemplate", js.undefined)
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDataSource(value: js.Any | PivotDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataCellTemplate(value: String | js.Function): Self = this.set("dataCellTemplate", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataCellTemplate: Self = this.set("dataCellTemplate", js.undefined)
+    def setExcel(value: PivotGridExcel): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any | PivotDataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setExcelExport(value: /* e */ PivotGridExcelExportEvent => Unit): Self = StObject.set(x, "excelExport", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setExcelExportUndefined: Self = StObject.set(x, "excelExport", js.undefined)
     
     @scala.inline
-    def setExcel(value: PivotGridExcel): Self = this.set("excel", value.asInstanceOf[js.Any])
+    def setExcelUndefined: Self = StObject.set(x, "excel", js.undefined)
     
     @scala.inline
-    def deleteExcel: Self = this.set("excel", js.undefined)
+    def setExpandMember(value: /* e */ PivotGridExpandMemberEvent => Unit): Self = StObject.set(x, "expandMember", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExcelExport(value: /* e */ PivotGridExcelExportEvent => Unit): Self = this.set("excelExport", js.Any.fromFunction1(value))
+    def setExpandMemberUndefined: Self = StObject.set(x, "expandMember", js.undefined)
     
     @scala.inline
-    def deleteExcelExport: Self = this.set("excelExport", js.undefined)
+    def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandMember(value: /* e */ PivotGridExpandMemberEvent => Unit): Self = this.set("expandMember", js.Any.fromFunction1(value))
+    def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
     @scala.inline
-    def deleteExpandMember: Self = this.set("expandMember", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterable(value: Boolean): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    def setKpiStatusTemplate(value: String | js.Function): Self = StObject.set(x, "kpiStatusTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setKpiStatusTemplateUndefined: Self = StObject.set(x, "kpiStatusTemplate", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setKpiTrendTemplate(value: String | js.Function): Self = StObject.set(x, "kpiTrendTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKpiStatusTemplate(value: String | js.Function): Self = this.set("kpiStatusTemplate", value.asInstanceOf[js.Any])
+    def setKpiTrendTemplateUndefined: Self = StObject.set(x, "kpiTrendTemplate", js.undefined)
     
     @scala.inline
-    def deleteKpiStatusTemplate: Self = this.set("kpiStatusTemplate", js.undefined)
+    def setMessages(value: PivotGridMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKpiTrendTemplate(value: String | js.Function): Self = this.set("kpiTrendTemplate", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteKpiTrendTemplate: Self = this.set("kpiTrendTemplate", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: PivotGridMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setPdf(value: PivotGridPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPdfExport(value: /* e */ PivotGridPdfExportEvent => Unit): Self = StObject.set(x, "pdfExport", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPdfExportUndefined: Self = StObject.set(x, "pdfExport", js.undefined)
     
     @scala.inline
-    def setPdf(value: PivotGridPdf): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
     @scala.inline
-    def deletePdf: Self = this.set("pdf", js.undefined)
+    def setReorderable(value: Boolean): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPdfExport(value: /* e */ PivotGridPdfExportEvent => Unit): Self = this.set("pdfExport", js.Any.fromFunction1(value))
+    def setReorderableUndefined: Self = StObject.set(x, "reorderable", js.undefined)
     
     @scala.inline
-    def deletePdfExport: Self = this.set("pdfExport", js.undefined)
+    def setRowHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "rowHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReorderable(value: Boolean): Self = this.set("reorderable", value.asInstanceOf[js.Any])
+    def setRowHeaderTemplateUndefined: Self = StObject.set(x, "rowHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteReorderable: Self = this.set("reorderable", js.undefined)
+    def setSortable(value: Boolean | PivotGridSortable): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeaderTemplate(value: String | js.Function): Self = this.set("rowHeaderTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowHeaderTemplate: Self = this.set("rowHeaderTemplate", js.undefined)
-    
-    @scala.inline
-    def setSortable(value: Boolean | PivotGridSortable): Self = this.set("sortable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortable: Self = this.set("sortable", js.undefined)
+    def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
   }
 }

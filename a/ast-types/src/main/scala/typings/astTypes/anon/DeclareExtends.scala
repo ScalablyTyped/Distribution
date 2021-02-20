@@ -7,12 +7,13 @@ import typings.astTypes.kindsMod.TSExpressionWithTypeArgumentsKind
 import typings.astTypes.kindsMod.TSInterfaceBodyKind
 import typings.astTypes.kindsMod.TSQualifiedNameKind
 import typings.astTypes.kindsMod.TSTypeParameterDeclarationKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeclareExtends extends js.Object {
+trait DeclareExtends extends StObject {
   
   var body: TSInterfaceBodyKind = js.native
   
@@ -37,72 +38,60 @@ object DeclareExtends {
   }
   
   @scala.inline
-  implicit class DeclareExtendsOps[Self <: DeclareExtends] (val x: Self) extends AnyVal {
+  implicit class DeclareExtendsMutableBuilder[Self <: DeclareExtends] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: TSInterfaceBodyKind): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def setBody(value: TSInterfaceBodyKind): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setId(value: IdentifierKind | TSQualifiedNameKind): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setDeclareUndefined: Self = StObject.set(x, "declare", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setExtends(value: js.Array[TSExpressionWithTypeArgumentsKind]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setExtendsNull: Self = StObject.set(x, "extends", null)
     
     @scala.inline
-    def setDeclare(value: Boolean): Self = this.set("declare", value.asInstanceOf[js.Any])
+    def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
     
     @scala.inline
-    def deleteDeclare: Self = this.set("declare", js.undefined)
+    def setExtendsVarargs(value: TSExpressionWithTypeArgumentsKind*): Self = StObject.set(x, "extends", js.Array(value :_*))
     
     @scala.inline
-    def setExtendsVarargs(value: TSExpressionWithTypeArgumentsKind*): Self = this.set("extends", js.Array(value :_*))
+    def setId(value: IdentifierKind | TSQualifiedNameKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtends(value: js.Array[TSExpressionWithTypeArgumentsKind]): Self = this.set("extends", value.asInstanceOf[js.Any])
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtends: Self = this.set("extends", js.undefined)
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def setExtendsNull: Self = this.set("extends", null)
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
+    def setTypeParameters(value: TSTypeParameterDeclarationKind): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
+    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     
     @scala.inline
-    def setLocNull: Self = this.set("loc", null)
-    
-    @scala.inline
-    def setTypeParameters(value: TSTypeParameterDeclarationKind): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeParameters: Self = this.set("typeParameters", js.undefined)
-    
-    @scala.inline
-    def setTypeParametersNull: Self = this.set("typeParameters", null)
+    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a user facing message for a particular data transfer run.
   */
 @js.native
-trait SchemaTransferMessage extends js.Object {
+trait SchemaTransferMessage extends StObject {
   
   /**
     * Message text.
@@ -34,36 +35,24 @@ object SchemaTransferMessage {
   }
   
   @scala.inline
-  implicit class SchemaTransferMessageOps[Self <: SchemaTransferMessage] (val x: Self) extends AnyVal {
+  implicit class SchemaTransferMessageMutableBuilder[Self <: SchemaTransferMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageTime(value: String): Self = StObject.set(x, "messageTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageText(value: String): Self = this.set("messageText", value.asInstanceOf[js.Any])
+    def setMessageTimeUndefined: Self = StObject.set(x, "messageTime", js.undefined)
     
     @scala.inline
-    def deleteMessageText: Self = this.set("messageText", js.undefined)
+    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageTime(value: String): Self = this.set("messageTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageTime: Self = this.set("messageTime", js.undefined)
-    
-    @scala.inline
-    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
   }
 }

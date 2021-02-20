@@ -1,11 +1,12 @@
 package typings.clearbladejsClient.CbClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Item extends js.Object {
+trait Item extends StObject {
   
   var data: js.Object = js.native
   
@@ -29,30 +30,18 @@ object Item {
   }
   
   @scala.inline
-  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: CbCallback => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRefresh(value: CbCallback => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestroy(value: CbCallback => Unit): Self = this.set("destroy", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRefresh(value: CbCallback => Unit): Self = this.set("refresh", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSave(value: CbCallback => Unit): Self = this.set("save", js.Any.fromFunction1(value))
+    def setSave(value: CbCallback => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
   }
 }

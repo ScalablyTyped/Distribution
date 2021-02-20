@@ -3,30 +3,38 @@ package typings.nodelibFsScandir
 import typings.nodelibFsScandir.settingsMod.Options
 import typings.nodelibFsScandir.settingsMod.default
 import typings.nodelibFsScandir.typesMod.Entry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nodelib/fs.scandir", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def scandirSync(path: String): js.Array[Entry] = js.native
-  def scandirSync(path: String, optionsOrSettings: Options): js.Array[Entry] = js.native
-  def scandirSync(path: String, optionsOrSettings: default): js.Array[Entry] = js.native
-  
+  @JSImport("@nodelib/fs.scandir", "Settings")
   @js.native
   class Settings () extends default {
     def this(_options: Options) = this()
   }
   
+  @JSImport("@nodelib/fs.scandir", "scandir")
   @js.native
-  object scandir extends js.Object {
-    
-    def apply(path: String, callback: AsyncCallback): Unit = js.native
-    def apply(path: String, optionsOrSettings: Options, callback: AsyncCallback): Unit = js.native
-    def apply(path: String, optionsOrSettings: default, callback: AsyncCallback): Unit = js.native
-  }
+  def scandir(path: String, callback: AsyncCallback): Unit = js.native
+  @JSImport("@nodelib/fs.scandir", "scandir")
+  @js.native
+  def scandir(path: String, optionsOrSettings: Options, callback: AsyncCallback): Unit = js.native
+  @JSImport("@nodelib/fs.scandir", "scandir")
+  @js.native
+  def scandir(path: String, optionsOrSettings: default, callback: AsyncCallback): Unit = js.native
+  
+  @JSImport("@nodelib/fs.scandir", "scandirSync")
+  @js.native
+  def scandirSync(path: String): js.Array[Entry] = js.native
+  @JSImport("@nodelib/fs.scandir", "scandirSync")
+  @js.native
+  def scandirSync(path: String, optionsOrSettings: Options): js.Array[Entry] = js.native
+  @JSImport("@nodelib/fs.scandir", "scandirSync")
+  @js.native
+  def scandirSync(path: String, optionsOrSettings: default): js.Array[Entry] = js.native
   
   type AsyncCallback = typings.nodelibFsScandir.asyncMod.AsyncCallback
 }

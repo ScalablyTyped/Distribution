@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,24 +42,12 @@ object XTextRangeCompare {
   }
   
   @scala.inline
-  implicit class XTextRangeCompareOps[Self <: XTextRangeCompare] (val x: Self) extends AnyVal {
+  implicit class XTextRangeCompareMutableBuilder[Self <: XTextRangeCompare] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompareRegionEnds(value: (XTextRange, XTextRange) => Double): Self = StObject.set(x, "compareRegionEnds", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompareRegionEnds(value: (XTextRange, XTextRange) => Double): Self = this.set("compareRegionEnds", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCompareRegionStarts(value: (XTextRange, XTextRange) => Double): Self = this.set("compareRegionStarts", js.Any.fromFunction2(value))
+    def setCompareRegionStarts(value: (XTextRange, XTextRange) => Double): Self = StObject.set(x, "compareRegionStarts", js.Any.fromFunction2(value))
   }
 }

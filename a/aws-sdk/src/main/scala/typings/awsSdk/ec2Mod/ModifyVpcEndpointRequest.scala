@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyVpcEndpointRequest extends js.Object {
+trait ModifyVpcEndpointRequest extends StObject {
   
   /**
     * (Gateway endpoint) One or more route tables IDs to associate with the endpoint.
@@ -71,99 +72,87 @@ object ModifyVpcEndpointRequest {
   }
   
   @scala.inline
-  implicit class ModifyVpcEndpointRequestOps[Self <: ModifyVpcEndpointRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyVpcEndpointRequestMutableBuilder[Self <: ModifyVpcEndpointRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRouteTableIds(value: VpcEndpointRouteTableIdList): Self = StObject.set(x, "AddRouteTableIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRouteTableIdsUndefined: Self = StObject.set(x, "AddRouteTableIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddRouteTableIdsVarargs(value: RouteTableId*): Self = StObject.set(x, "AddRouteTableIds", js.Array(value :_*))
     
     @scala.inline
-    def setVpcEndpointId(value: VpcEndpointId): Self = this.set("VpcEndpointId", value.asInstanceOf[js.Any])
+    def setAddSecurityGroupIds(value: VpcEndpointSecurityGroupIdList): Self = StObject.set(x, "AddSecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddRouteTableIdsVarargs(value: RouteTableId*): Self = this.set("AddRouteTableIds", js.Array(value :_*))
+    def setAddSecurityGroupIdsUndefined: Self = StObject.set(x, "AddSecurityGroupIds", js.undefined)
     
     @scala.inline
-    def setAddRouteTableIds(value: VpcEndpointRouteTableIdList): Self = this.set("AddRouteTableIds", value.asInstanceOf[js.Any])
+    def setAddSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "AddSecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteAddRouteTableIds: Self = this.set("AddRouteTableIds", js.undefined)
+    def setAddSubnetIds(value: VpcEndpointSubnetIdList): Self = StObject.set(x, "AddSubnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = this.set("AddSecurityGroupIds", js.Array(value :_*))
+    def setAddSubnetIdsUndefined: Self = StObject.set(x, "AddSubnetIds", js.undefined)
     
     @scala.inline
-    def setAddSecurityGroupIds(value: VpcEndpointSecurityGroupIdList): Self = this.set("AddSecurityGroupIds", value.asInstanceOf[js.Any])
+    def setAddSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "AddSubnetIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteAddSecurityGroupIds: Self = this.set("AddSecurityGroupIds", js.undefined)
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSubnetIdsVarargs(value: SubnetId*): Self = this.set("AddSubnetIds", js.Array(value :_*))
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setAddSubnetIds(value: VpcEndpointSubnetIdList): Self = this.set("AddSubnetIds", value.asInstanceOf[js.Any])
+    def setPolicyDocument(value: String): Self = StObject.set(x, "PolicyDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddSubnetIds: Self = this.set("AddSubnetIds", js.undefined)
+    def setPolicyDocumentUndefined: Self = StObject.set(x, "PolicyDocument", js.undefined)
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setPrivateDnsEnabled(value: Boolean): Self = StObject.set(x, "PrivateDnsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setPrivateDnsEnabledUndefined: Self = StObject.set(x, "PrivateDnsEnabled", js.undefined)
     
     @scala.inline
-    def setPolicyDocument(value: String): Self = this.set("PolicyDocument", value.asInstanceOf[js.Any])
+    def setRemoveRouteTableIds(value: VpcEndpointRouteTableIdList): Self = StObject.set(x, "RemoveRouteTableIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolicyDocument: Self = this.set("PolicyDocument", js.undefined)
+    def setRemoveRouteTableIdsUndefined: Self = StObject.set(x, "RemoveRouteTableIds", js.undefined)
     
     @scala.inline
-    def setPrivateDnsEnabled(value: Boolean): Self = this.set("PrivateDnsEnabled", value.asInstanceOf[js.Any])
+    def setRemoveRouteTableIdsVarargs(value: RouteTableId*): Self = StObject.set(x, "RemoveRouteTableIds", js.Array(value :_*))
     
     @scala.inline
-    def deletePrivateDnsEnabled: Self = this.set("PrivateDnsEnabled", js.undefined)
+    def setRemoveSecurityGroupIds(value: VpcEndpointSecurityGroupIdList): Self = StObject.set(x, "RemoveSecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveRouteTableIdsVarargs(value: RouteTableId*): Self = this.set("RemoveRouteTableIds", js.Array(value :_*))
+    def setRemoveSecurityGroupIdsUndefined: Self = StObject.set(x, "RemoveSecurityGroupIds", js.undefined)
     
     @scala.inline
-    def setRemoveRouteTableIds(value: VpcEndpointRouteTableIdList): Self = this.set("RemoveRouteTableIds", value.asInstanceOf[js.Any])
+    def setRemoveSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "RemoveSecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteRemoveRouteTableIds: Self = this.set("RemoveRouteTableIds", js.undefined)
+    def setRemoveSubnetIds(value: VpcEndpointSubnetIdList): Self = StObject.set(x, "RemoveSubnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = this.set("RemoveSecurityGroupIds", js.Array(value :_*))
+    def setRemoveSubnetIdsUndefined: Self = StObject.set(x, "RemoveSubnetIds", js.undefined)
     
     @scala.inline
-    def setRemoveSecurityGroupIds(value: VpcEndpointSecurityGroupIdList): Self = this.set("RemoveSecurityGroupIds", value.asInstanceOf[js.Any])
+    def setRemoveSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "RemoveSubnetIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteRemoveSecurityGroupIds: Self = this.set("RemoveSecurityGroupIds", js.undefined)
+    def setResetPolicy(value: Boolean): Self = StObject.set(x, "ResetPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveSubnetIdsVarargs(value: SubnetId*): Self = this.set("RemoveSubnetIds", js.Array(value :_*))
+    def setResetPolicyUndefined: Self = StObject.set(x, "ResetPolicy", js.undefined)
     
     @scala.inline
-    def setRemoveSubnetIds(value: VpcEndpointSubnetIdList): Self = this.set("RemoveSubnetIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveSubnetIds: Self = this.set("RemoveSubnetIds", js.undefined)
-    
-    @scala.inline
-    def setResetPolicy(value: Boolean): Self = this.set("ResetPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResetPolicy: Self = this.set("ResetPolicy", js.undefined)
+    def setVpcEndpointId(value: VpcEndpointId): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
   }
 }

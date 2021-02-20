@@ -1,11 +1,12 @@
 package typings.miniprogramWxs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropertyDescriptor extends js.Object {
+trait PropertyDescriptor extends StObject {
   
   var configurable: js.UndefOr[scala.Boolean] = js.native
   
@@ -28,54 +29,42 @@ object PropertyDescriptor {
   }
   
   @scala.inline
-  implicit class PropertyDescriptorOps[Self <: PropertyDescriptor] (val x: Self) extends AnyVal {
+  implicit class PropertyDescriptorMutableBuilder[Self <: PropertyDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurable(value: scala.Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnumerable(value: scala.Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurable(value: scala.Boolean): Self = this.set("configurable", value.asInstanceOf[js.Any])
+    def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
     
     @scala.inline
-    def deleteConfigurable: Self = this.set("configurable", js.undefined)
+    def setGet(value: () => _): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnumerable(value: scala.Boolean): Self = this.set("enumerable", value.asInstanceOf[js.Any])
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def deleteEnumerable: Self = this.set("enumerable", js.undefined)
+    def setSet(value: /* v */ js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: () => _): Self = this.set("get", js.Any.fromFunction0(value))
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: /* v */ js.Any => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setWritable(value: scala.Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setWritable(value: scala.Boolean): Self = this.set("writable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWritable: Self = this.set("writable", js.undefined)
+    def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
   }
 }

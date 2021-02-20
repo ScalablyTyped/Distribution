@@ -1,12 +1,13 @@
 package typings.officeJs.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "shape.toJSON()". */
 @js.native
-trait ShapeData extends js.Object {
+trait ShapeData extends StObject {
   
   /**
     *
@@ -89,84 +90,72 @@ object ShapeData {
   }
   
   @scala.inline
-  implicit class ShapeDataOps[Self <: ShapeData] (val x: Self) extends AnyVal {
+  implicit class ShapeDataMutableBuilder[Self <: ShapeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: js.Array[CommentData]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: CommentData*): Self = this.set("comments", js.Array(value :_*))
+    def setHyperlinks(value: js.Array[HyperlinkData]): Self = StObject.set(x, "hyperlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentData]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setHyperlinksUndefined: Self = StObject.set(x, "hyperlinks", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setHyperlinksVarargs(value: HyperlinkData*): Self = StObject.set(x, "hyperlinks", js.Array(value :_*))
     
     @scala.inline
-    def setHyperlinksVarargs(value: HyperlinkData*): Self = this.set("hyperlinks", js.Array(value :_*))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlinks(value: js.Array[HyperlinkData]): Self = this.set("hyperlinks", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHyperlinks: Self = this.set("hyperlinks", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setShapeDataItems(value: js.Array[ShapeDataItemData]): Self = StObject.set(x, "shapeDataItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: Boolean): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setShapeDataItemsUndefined: Self = StObject.set(x, "shapeDataItems", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setShapeDataItemsVarargs(value: ShapeDataItemData*): Self = StObject.set(x, "shapeDataItems", js.Array(value :_*))
     
     @scala.inline
-    def setShapeDataItemsVarargs(value: ShapeDataItemData*): Self = this.set("shapeDataItems", js.Array(value :_*))
+    def setSubShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "subShapes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeDataItems(value: js.Array[ShapeDataItemData]): Self = this.set("shapeDataItems", value.asInstanceOf[js.Any])
+    def setSubShapesUndefined: Self = StObject.set(x, "subShapes", js.undefined)
     
     @scala.inline
-    def deleteShapeDataItems: Self = this.set("shapeDataItems", js.undefined)
+    def setSubShapesVarargs(value: ShapeData*): Self = StObject.set(x, "subShapes", js.Array(value :_*))
     
     @scala.inline
-    def setSubShapesVarargs(value: ShapeData*): Self = this.set("subShapes", js.Array(value :_*))
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubShapes(value: js.Array[ShapeData]): Self = this.set("subShapes", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSubShapes: Self = this.set("subShapes", js.undefined)
+    def setView(value: ShapeViewData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setView(value: ShapeViewData): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

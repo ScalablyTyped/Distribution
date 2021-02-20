@@ -1,11 +1,12 @@
 package typings.expressValidator.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsFQDNOptions extends js.Object {
+trait IsFQDNOptions extends StObject {
   
   var allow_trailing_dot: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object IsFQDNOptions {
   }
   
   @scala.inline
-  implicit class IsFQDNOptionsOps[Self <: IsFQDNOptions] (val x: Self) extends AnyVal {
+  implicit class IsFQDNOptionsMutableBuilder[Self <: IsFQDNOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_trailing_dot(value: Boolean): Self = StObject.set(x, "allow_trailing_dot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_trailing_dotUndefined: Self = StObject.set(x, "allow_trailing_dot", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllow_underscores(value: Boolean): Self = StObject.set(x, "allow_underscores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_trailing_dot(value: Boolean): Self = this.set("allow_trailing_dot", value.asInstanceOf[js.Any])
+    def setAllow_underscoresUndefined: Self = StObject.set(x, "allow_underscores", js.undefined)
     
     @scala.inline
-    def deleteAllow_trailing_dot: Self = this.set("allow_trailing_dot", js.undefined)
+    def setRequire_tld(value: Boolean): Self = StObject.set(x, "require_tld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_underscores(value: Boolean): Self = this.set("allow_underscores", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllow_underscores: Self = this.set("allow_underscores", js.undefined)
-    
-    @scala.inline
-    def setRequire_tld(value: Boolean): Self = this.set("require_tld", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequire_tld: Self = this.set("require_tld", js.undefined)
+    def setRequire_tldUndefined: Self = StObject.set(x, "require_tld", js.undefined)
   }
 }

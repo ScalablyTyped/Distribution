@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DistanceMatrixStatus extends js.Object
+sealed trait DistanceMatrixStatus extends StObject
 /**
   * The top-level status about the request in general returned by the {@link DistanceMatrixService} upon completion
   * of a distance matrix request. Specify these by value, or by using the constant's name.
@@ -13,7 +14,7 @@ sealed trait DistanceMatrixStatus extends js.Object
   */
 @JSGlobal("google.maps.DistanceMatrixStatus")
 @js.native
-object DistanceMatrixStatus extends js.Object {
+object DistanceMatrixStatus extends StObject {
   
   /**
     * The provided request was invalid.

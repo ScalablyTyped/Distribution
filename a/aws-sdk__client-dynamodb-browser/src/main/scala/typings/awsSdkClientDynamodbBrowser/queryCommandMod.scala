@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesQueryInputMod.QueryInput
 import typings.awsSdkClientDynamodbBrowser.typesQueryOutputMod.QueryOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/QueryCommand", JSImport.Namespace)
-@js.native
-object queryCommandMod extends js.Object {
+object queryCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/QueryCommand", "QueryCommand")
   @js.native
   class QueryCommand protected () extends Command[
           InputTypesUnion, 

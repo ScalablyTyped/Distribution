@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityGroupReference extends js.Object {
+trait SecurityGroupReference extends StObject {
   
   /**
     * The ID of your security group.
@@ -31,36 +32,24 @@ object SecurityGroupReference {
   }
   
   @scala.inline
-  implicit class SecurityGroupReferenceOps[Self <: SecurityGroupReference] (val x: Self) extends AnyVal {
+  implicit class SecurityGroupReferenceMutableBuilder[Self <: SecurityGroupReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupId(value: String): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferencingVpcId(value: String): Self = StObject.set(x, "ReferencingVpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: String): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    def setReferencingVpcIdUndefined: Self = StObject.set(x, "ReferencingVpcId", js.undefined)
     
     @scala.inline
-    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    def setVpcPeeringConnectionId(value: String): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferencingVpcId(value: String): Self = this.set("ReferencingVpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferencingVpcId: Self = this.set("ReferencingVpcId", js.undefined)
-    
-    @scala.inline
-    def setVpcPeeringConnectionId(value: String): Self = this.set("VpcPeeringConnectionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcPeeringConnectionId: Self = this.set("VpcPeeringConnectionId", js.undefined)
+    def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
   }
 }

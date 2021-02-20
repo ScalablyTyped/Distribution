@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a journal printer station that has been claimed for use. */
 @js.native
-trait ClaimedJournalPrinter extends js.Object {
+trait ClaimedJournalPrinter extends StObject {
   
   /** Gets or sets the number of characters per line for the journal printer station. */
   var charactersPerLine: Double = js.native
@@ -85,63 +86,51 @@ object ClaimedJournalPrinter {
   }
   
   @scala.inline
-  implicit class ClaimedJournalPrinterOps[Self <: ClaimedJournalPrinter] (val x: Self) extends AnyVal {
+  implicit class ClaimedJournalPrinterMutableBuilder[Self <: ClaimedJournalPrinter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharactersPerLine(value: Double): Self = StObject.set(x, "charactersPerLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorCartridge(value: PosPrinterColorCartridge): Self = StObject.set(x, "colorCartridge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateJob(value: () => JournalPrintJob): Self = StObject.set(x, "createJob", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCharactersPerLine(value: Double): Self = this.set("charactersPerLine", value.asInstanceOf[js.Any])
+    def setIsCartridgeEmpty(value: Boolean): Self = StObject.set(x, "isCartridgeEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorCartridge(value: PosPrinterColorCartridge): Self = this.set("colorCartridge", value.asInstanceOf[js.Any])
+    def setIsCartridgeRemoved(value: Boolean): Self = StObject.set(x, "isCartridgeRemoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateJob(value: () => JournalPrintJob): Self = this.set("createJob", js.Any.fromFunction0(value))
+    def setIsCoverOpen(value: Boolean): Self = StObject.set(x, "isCoverOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCartridgeEmpty(value: Boolean): Self = this.set("isCartridgeEmpty", value.asInstanceOf[js.Any])
+    def setIsHeadCleaning(value: Boolean): Self = StObject.set(x, "isHeadCleaning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCartridgeRemoved(value: Boolean): Self = this.set("isCartridgeRemoved", value.asInstanceOf[js.Any])
+    def setIsLetterQuality(value: Boolean): Self = StObject.set(x, "isLetterQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCoverOpen(value: Boolean): Self = this.set("isCoverOpen", value.asInstanceOf[js.Any])
+    def setIsPaperEmpty(value: Boolean): Self = StObject.set(x, "isPaperEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHeadCleaning(value: Boolean): Self = this.set("isHeadCleaning", value.asInstanceOf[js.Any])
+    def setIsPaperNearEnd(value: Boolean): Self = StObject.set(x, "isPaperNearEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLetterQuality(value: Boolean): Self = this.set("isLetterQuality", value.asInstanceOf[js.Any])
+    def setIsReadyToPrint(value: Boolean): Self = StObject.set(x, "isReadyToPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPaperEmpty(value: Boolean): Self = this.set("isPaperEmpty", value.asInstanceOf[js.Any])
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPaperNearEnd(value: Boolean): Self = this.set("isPaperNearEnd", value.asInstanceOf[js.Any])
+    def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadyToPrint(value: Boolean): Self = this.set("isReadyToPrint", value.asInstanceOf[js.Any])
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineSpacing(value: Double): Self = this.set("lineSpacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidateData(value: String => Boolean): Self = this.set("validateData", js.Any.fromFunction1(value))
+    def setValidateData(value: String => Boolean): Self = StObject.set(x, "validateData", js.Any.fromFunction1(value))
   }
 }

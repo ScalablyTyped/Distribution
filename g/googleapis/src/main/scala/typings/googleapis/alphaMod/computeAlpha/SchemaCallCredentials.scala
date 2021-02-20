@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * gRPC call credentials to access the SDS server.
   */
 @js.native
-trait SchemaCallCredentials extends js.Object {
+trait SchemaCallCredentials extends StObject {
   
   /**
     * The access token that is used as call credential for the SDS server. This
@@ -48,42 +49,30 @@ object SchemaCallCredentials {
   }
   
   @scala.inline
-  implicit class SchemaCallCredentialsOps[Self <: SchemaCallCredentials] (val x: Self) extends AnyVal {
+  implicit class SchemaCallCredentialsMutableBuilder[Self <: SchemaCallCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallCredentialType(value: String): Self = StObject.set(x, "callCredentialType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setCallCredentialTypeUndefined: Self = StObject.set(x, "callCredentialType", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    def setFromPlugin(value: SchemaMetadataCredentialsFromPlugin): Self = StObject.set(x, "fromPlugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallCredentialType(value: String): Self = this.set("callCredentialType", value.asInstanceOf[js.Any])
+    def setFromPluginUndefined: Self = StObject.set(x, "fromPlugin", js.undefined)
     
     @scala.inline
-    def deleteCallCredentialType: Self = this.set("callCredentialType", js.undefined)
+    def setJwtServiceAccount(value: SchemaServiceAccountJwtAccessCredentials): Self = StObject.set(x, "jwtServiceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPlugin(value: SchemaMetadataCredentialsFromPlugin): Self = this.set("fromPlugin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromPlugin: Self = this.set("fromPlugin", js.undefined)
-    
-    @scala.inline
-    def setJwtServiceAccount(value: SchemaServiceAccountJwtAccessCredentials): Self = this.set("jwtServiceAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJwtServiceAccount: Self = this.set("jwtServiceAccount", js.undefined)
+    def setJwtServiceAccountUndefined: Self = StObject.set(x, "jwtServiceAccount", js.undefined)
   }
 }

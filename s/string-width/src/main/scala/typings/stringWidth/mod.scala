@@ -1,13 +1,12 @@
 package typings.stringWidth
 
 import typings.stringWidth.anon.Call
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("string-width", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Get the visual width of a string - the number of columns required to display it.
@@ -23,8 +22,20 @@ object mod extends js.Object {
   	//=> 2
   	```
   	*/
+  @JSImport("string-width", JSImport.Namespace)
+  @js.native
   def apply(string: String): Double = js.native
   
+  @JSImport("string-width", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  // TODO: remove this in the next major version, refactor the whole definition to:
+  // declare function stringWidth(string: string): number;
+  // export = stringWidth;
+  @JSImport("string-width", "default")
+  @js.native
+  def default: Call = js.native
   /**
   	Get the visual width of a string - the number of columns required to display it.
   	Some Unicode characters are [fullwidth](https://en.wikipedia.org/wiki/Halfwidth_and_fullwidth_forms) and use double the normal width. [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) are stripped and doesn't affect the width.
@@ -42,10 +53,9 @@ object mod extends js.Object {
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function stringWidth(string: string): number;
   // export = stringWidth;
+  @JSImport("string-width", "default")
+  @js.native
   def default(string: String): Double = js.native
-  // TODO: remove this in the next major version, refactor the whole definition to:
-  // declare function stringWidth(string: string): number;
-  // export = stringWidth;
-  @JSName("default")
-  var default_Original: Call = js.native
+  @scala.inline
+  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

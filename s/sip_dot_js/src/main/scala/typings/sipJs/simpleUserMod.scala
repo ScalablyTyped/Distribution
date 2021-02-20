@@ -1,14 +1,14 @@
 package typings.sipJs
 
 import typings.sipJs.simpleUserOptionsMod.SimpleUserOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/platform/web/simple-user", JSImport.Namespace)
-@js.native
-object simpleUserMod extends js.Object {
+object simpleUserMod {
   
+  @JSImport("sip.js/lib/platform/web/simple-user", "SimpleUser")
   @js.native
   class SimpleUser protected ()
     extends typings.sipJs.simpleUserSimpleUserMod.SimpleUser {

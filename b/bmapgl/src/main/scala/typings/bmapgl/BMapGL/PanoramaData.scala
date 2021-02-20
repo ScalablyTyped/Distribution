@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PanoramaData extends js.Object {
+trait PanoramaData extends StObject {
   
   var description: String = js.native
   
@@ -32,36 +33,24 @@ object PanoramaData {
   }
   
   @scala.inline
-  implicit class PanoramaDataOps[Self <: PanoramaData] (val x: Self) extends AnyVal {
+  implicit class PanoramaDataMutableBuilder[Self <: PanoramaData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinks(value: js.Array[PanoramaLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLinksVarargs(value: PanoramaLink*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinksVarargs(value: PanoramaLink*): Self = this.set("links", js.Array(value :_*))
-    
-    @scala.inline
-    def setLinks(value: js.Array[PanoramaLink]): Self = this.set("links", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Point): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiles(value: PanoramaTileData): Self = this.set("tiles", value.asInstanceOf[js.Any])
+    def setTiles(value: PanoramaTileData): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
   }
 }

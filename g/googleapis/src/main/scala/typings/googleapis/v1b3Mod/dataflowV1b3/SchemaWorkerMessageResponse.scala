@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * sender.
   */
 @js.native
-trait SchemaWorkerMessageResponse extends js.Object {
+trait SchemaWorkerMessageResponse extends StObject {
   
   /**
     * The service&#39;s response to a worker&#39;s health report.
@@ -35,36 +36,24 @@ object SchemaWorkerMessageResponse {
   }
   
   @scala.inline
-  implicit class SchemaWorkerMessageResponseOps[Self <: SchemaWorkerMessageResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaWorkerMessageResponseMutableBuilder[Self <: SchemaWorkerMessageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkerHealthReportResponse(value: SchemaWorkerHealthReportResponse): Self = StObject.set(x, "workerHealthReportResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWorkerHealthReportResponseUndefined: Self = StObject.set(x, "workerHealthReportResponse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkerMetricsResponse(value: SchemaResourceUtilizationReportResponse): Self = StObject.set(x, "workerMetricsResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerHealthReportResponse(value: SchemaWorkerHealthReportResponse): Self = this.set("workerHealthReportResponse", value.asInstanceOf[js.Any])
+    def setWorkerMetricsResponseUndefined: Self = StObject.set(x, "workerMetricsResponse", js.undefined)
     
     @scala.inline
-    def deleteWorkerHealthReportResponse: Self = this.set("workerHealthReportResponse", js.undefined)
+    def setWorkerShutdownNoticeResponse(value: SchemaWorkerShutdownNoticeResponse): Self = StObject.set(x, "workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerMetricsResponse(value: SchemaResourceUtilizationReportResponse): Self = this.set("workerMetricsResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerMetricsResponse: Self = this.set("workerMetricsResponse", js.undefined)
-    
-    @scala.inline
-    def setWorkerShutdownNoticeResponse(value: SchemaWorkerShutdownNoticeResponse): Self = this.set("workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerShutdownNoticeResponse: Self = this.set("workerShutdownNoticeResponse", js.undefined)
+    def setWorkerShutdownNoticeResponseUndefined: Self = StObject.set(x, "workerShutdownNoticeResponse", js.undefined)
   }
 }

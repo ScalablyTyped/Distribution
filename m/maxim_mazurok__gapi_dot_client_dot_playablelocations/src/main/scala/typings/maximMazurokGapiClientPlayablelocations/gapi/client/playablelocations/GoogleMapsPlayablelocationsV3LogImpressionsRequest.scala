@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleMapsPlayablelocationsV3LogImpressionsRequest extends js.Object {
+trait GoogleMapsPlayablelocationsV3LogImpressionsRequest extends StObject {
   
   /** Required. Information about the client device. For example, device model and operating system. */
   var clientInfo: js.UndefOr[GoogleMapsUnityClientInfo] = js.native
@@ -28,39 +29,27 @@ object GoogleMapsPlayablelocationsV3LogImpressionsRequest {
   }
   
   @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3LogImpressionsRequestOps[Self <: GoogleMapsPlayablelocationsV3LogImpressionsRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleMapsPlayablelocationsV3LogImpressionsRequestMutableBuilder[Self <: GoogleMapsPlayablelocationsV3LogImpressionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientInfo(value: GoogleMapsUnityClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImpressions(value: js.Array[GoogleMapsPlayablelocationsV3Impression]): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientInfo(value: GoogleMapsUnityClientInfo): Self = this.set("clientInfo", value.asInstanceOf[js.Any])
+    def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
     
     @scala.inline
-    def deleteClientInfo: Self = this.set("clientInfo", js.undefined)
+    def setImpressionsVarargs(value: GoogleMapsPlayablelocationsV3Impression*): Self = StObject.set(x, "impressions", js.Array(value :_*))
     
     @scala.inline
-    def setImpressionsVarargs(value: GoogleMapsPlayablelocationsV3Impression*): Self = this.set("impressions", js.Array(value :_*))
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressions(value: js.Array[GoogleMapsPlayablelocationsV3Impression]): Self = this.set("impressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImpressions: Self = this.set("impressions", js.undefined)
-    
-    @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

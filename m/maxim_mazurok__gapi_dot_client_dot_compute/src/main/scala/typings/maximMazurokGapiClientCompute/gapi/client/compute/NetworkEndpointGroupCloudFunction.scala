@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkEndpointGroupCloudFunction extends js.Object {
+trait NetworkEndpointGroupCloudFunction extends StObject {
   
   /**
     * A user-defined name of the Cloud Function.
@@ -34,30 +35,18 @@ object NetworkEndpointGroupCloudFunction {
   }
   
   @scala.inline
-  implicit class NetworkEndpointGroupCloudFunctionOps[Self <: NetworkEndpointGroupCloudFunction] (val x: Self) extends AnyVal {
+  implicit class NetworkEndpointGroupCloudFunctionMutableBuilder[Self <: NetworkEndpointGroupCloudFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrlMask(value: String): Self = StObject.set(x, "urlMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: String): Self = this.set("function", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFunction: Self = this.set("function", js.undefined)
-    
-    @scala.inline
-    def setUrlMask(value: String): Self = this.set("urlMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlMask: Self = this.set("urlMask", js.undefined)
+    def setUrlMaskUndefined: Self = StObject.set(x, "urlMask", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberConstructor extends js.Object {
+trait NumberConstructor extends StObject {
   
   /**
     * Returns a numeric value from a string representation of a number. This function is static and can be called without creating an instance of the object.
@@ -26,24 +27,12 @@ object NumberConstructor {
   }
   
   @scala.inline
-  implicit class NumberConstructorOps[Self <: NumberConstructor] (val x: Self) extends AnyVal {
+  implicit class NumberConstructorMutableBuilder[Self <: NumberConstructor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParseInvariant(value: java.lang.String => Double): Self = StObject.set(x, "parseInvariant", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParseInvariant(value: java.lang.String => Double): Self = this.set("parseInvariant", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParseLocale(value: java.lang.String => Double): Self = this.set("parseLocale", js.Any.fromFunction1(value))
+    def setParseLocale(value: java.lang.String => Double): Self = StObject.set(x, "parseLocale", js.Any.fromFunction1(value))
   }
 }

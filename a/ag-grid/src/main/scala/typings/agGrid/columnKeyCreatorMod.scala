@@ -1,15 +1,15 @@
 package typings.agGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/columnController/columnKeyCreator", JSImport.Namespace)
-@js.native
-object columnKeyCreatorMod extends js.Object {
+object columnKeyCreatorMod {
   
+  @JSImport("ag-grid/dist/lib/columnController/columnKeyCreator", "ColumnKeyCreator")
   @js.native
-  class ColumnKeyCreator () extends js.Object {
+  class ColumnKeyCreator () extends StObject {
     
     var existingKeys: js.Any = js.native
     

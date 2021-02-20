@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,54 +52,42 @@ object IgPivotDataSelectorDataSourceOptions {
   }
   
   @scala.inline
-  implicit class IgPivotDataSelectorDataSourceOptionsOps[Self <: IgPivotDataSelectorDataSourceOptions] (val x: Self) extends AnyVal {
+  implicit class IgPivotDataSelectorDataSourceOptionsMutableBuilder[Self <: IgPivotDataSelectorDataSourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: String): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setFlatDataOptions(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptions): Self = StObject.set(x, "flatDataOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: String): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setFlatDataOptionsUndefined: Self = StObject.set(x, "flatDataOptions", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setMeasures(value: String): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatDataOptions(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptions): Self = this.set("flatDataOptions", value.asInstanceOf[js.Any])
+    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
     @scala.inline
-    def deleteFlatDataOptions: Self = this.set("flatDataOptions", js.undefined)
+    def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasures(value: String): Self = this.set("measures", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteMeasures: Self = this.set("measures", js.undefined)
+    def setXmlaOptions(value: IgPivotDataSelectorDataSourceOptionsXmlaOptions): Self = StObject.set(x, "xmlaOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: String): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
-    
-    @scala.inline
-    def setXmlaOptions(value: IgPivotDataSelectorDataSourceOptionsXmlaOptions): Self = this.set("xmlaOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXmlaOptions: Self = this.set("xmlaOptions", js.undefined)
+    def setXmlaOptionsUndefined: Self = StObject.set(x, "xmlaOptions", js.undefined)
   }
 }

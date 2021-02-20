@@ -3,14 +3,14 @@ package typings.opentelemetryTracing
 import typings.opentelemetryTracing.spanExporterMod.SpanExporter
 import typings.opentelemetryTracing.spanProcessorMod.SpanProcessor
 import typings.opentelemetryTracing.typesMod.BufferConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/tracing/build/src/export/BatchSpanProcessor", JSImport.Namespace)
-@js.native
-object batchSpanProcessorMod extends js.Object {
+object batchSpanProcessorMod {
   
+  @JSImport("@opentelemetry/tracing/build/src/export/BatchSpanProcessor", "BatchSpanProcessor")
   @js.native
   class BatchSpanProcessor protected () extends SpanProcessor {
     def this(_exporter: SpanExporter) = this()

@@ -1,12 +1,13 @@
 package typings.atom.mod
 
 import typings.atom.anon.Metadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Clipboard extends js.Object {
+trait Clipboard extends StObject {
   
   /** Read the text from the clipboard. */
   def read(): String = js.native

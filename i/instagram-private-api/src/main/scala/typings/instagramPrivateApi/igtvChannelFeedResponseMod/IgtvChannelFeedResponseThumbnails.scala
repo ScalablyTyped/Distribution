@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.igtvChannelFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgtvChannelFeedResponseThumbnails extends js.Object {
+trait IgtvChannelFeedResponseThumbnails extends StObject {
   
   var max_thumbnails_per_sprite: Double = js.native
   
@@ -47,51 +48,39 @@ object IgtvChannelFeedResponseThumbnails {
   }
   
   @scala.inline
-  implicit class IgtvChannelFeedResponseThumbnailsOps[Self <: IgtvChannelFeedResponseThumbnails] (val x: Self) extends AnyVal {
+  implicit class IgtvChannelFeedResponseThumbnailsMutableBuilder[Self <: IgtvChannelFeedResponseThumbnails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax_thumbnails_per_sprite(value: Double): Self = StObject.set(x, "max_thumbnails_per_sprite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRendered_width(value: Double): Self = StObject.set(x, "rendered_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSprite_height(value: Double): Self = StObject.set(x, "sprite_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_thumbnails_per_sprite(value: Double): Self = this.set("max_thumbnails_per_sprite", value.asInstanceOf[js.Any])
+    def setSprite_urls(value: js.Array[String]): Self = StObject.set(x, "sprite_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRendered_width(value: Double): Self = this.set("rendered_width", value.asInstanceOf[js.Any])
+    def setSprite_urlsVarargs(value: String*): Self = StObject.set(x, "sprite_urls", js.Array(value :_*))
     
     @scala.inline
-    def setSprite_height(value: Double): Self = this.set("sprite_height", value.asInstanceOf[js.Any])
+    def setSprite_width(value: Double): Self = StObject.set(x, "sprite_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSprite_urlsVarargs(value: String*): Self = this.set("sprite_urls", js.Array(value :_*))
+    def setThumbnail_duration(value: String | Double): Self = StObject.set(x, "thumbnail_duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSprite_urls(value: js.Array[String]): Self = this.set("sprite_urls", value.asInstanceOf[js.Any])
+    def setThumbnail_height(value: Double): Self = StObject.set(x, "thumbnail_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSprite_width(value: Double): Self = this.set("sprite_width", value.asInstanceOf[js.Any])
+    def setThumbnail_width(value: Double): Self = StObject.set(x, "thumbnail_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnail_duration(value: String | Double): Self = this.set("thumbnail_duration", value.asInstanceOf[js.Any])
+    def setThumbnails_per_row(value: Double): Self = StObject.set(x, "thumbnails_per_row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnail_height(value: Double): Self = this.set("thumbnail_height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnail_width(value: Double): Self = this.set("thumbnail_width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnails_per_row(value: Double): Self = this.set("thumbnails_per_row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideo_length(value: Double): Self = this.set("video_length", value.asInstanceOf[js.Any])
+    def setVideo_length(value: Double): Self = StObject.set(x, "video_length", value.asInstanceOf[js.Any])
   }
 }

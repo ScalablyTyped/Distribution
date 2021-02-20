@@ -1,5 +1,6 @@
 package typings.expressValidator.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.https
   - typings.expressValidator.expressValidatorStrings.ftp
 */
-trait URLProtocol extends js.Object
+trait URLProtocol extends StObject
 object URLProtocol {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.reactNativeGestureHandler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RotationGestureHandlerEventExtra extends js.Object {
+trait RotationGestureHandlerEventExtra extends StObject {
   
   var anchorX: Double = js.native
   
@@ -24,30 +25,18 @@ object RotationGestureHandlerEventExtra {
   }
   
   @scala.inline
-  implicit class RotationGestureHandlerEventExtraOps[Self <: RotationGestureHandlerEventExtra] (val x: Self) extends AnyVal {
+  implicit class RotationGestureHandlerEventExtraMutableBuilder[Self <: RotationGestureHandlerEventExtra] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorX(value: Double): Self = StObject.set(x, "anchorX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorY(value: Double): Self = StObject.set(x, "anchorY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorX(value: Double): Self = this.set("anchorX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnchorY(value: Double): Self = this.set("anchorY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVelocity(value: Double): Self = this.set("velocity", value.asInstanceOf[js.Any])
+    def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
   }
 }

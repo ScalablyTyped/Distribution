@@ -1,6 +1,7 @@
 package typings.extjs.Ext.data
 
 import typings.extjs.Ext.util.ILruCache
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,36 +40,24 @@ object IPageMap {
   }
   
   @scala.inline
-  implicit class IPageMapOps[Self <: IPageMap] (val x: Self) extends AnyVal {
+  implicit class IPageMapMutableBuilder[Self <: IPageMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindByUndefined: Self = StObject.set(x, "findBy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindIndexBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Double): Self = StObject.set(x, "findIndexBy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFindBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _): Self = this.set("findBy", js.Any.fromFunction2(value))
+    def setFindIndexByUndefined: Self = StObject.set(x, "findIndexBy", js.undefined)
     
     @scala.inline
-    def deleteFindBy: Self = this.set("findBy", js.undefined)
+    def setRemove(value: () => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindIndexBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Double): Self = this.set("findIndexBy", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteFindIndexBy: Self = this.set("findIndexBy", js.undefined)
-    
-    @scala.inline
-    def setRemove(value: () => Boolean): Self = this.set("remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
   }
 }

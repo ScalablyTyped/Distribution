@@ -1,15 +1,15 @@
 package typings.vscodeLanguageclient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient/lib/utils/async", JSImport.Namespace)
-@js.native
-object asyncMod extends js.Object {
+object asyncMod {
   
+  @JSImport("vscode-languageclient/lib/utils/async", "Delayer")
   @js.native
-  class Delayer[T] protected () extends js.Object {
+  class Delayer[T] protected () extends StObject {
     def this(defaultDelay: Double) = this()
     
     def cancel(): Unit = js.native

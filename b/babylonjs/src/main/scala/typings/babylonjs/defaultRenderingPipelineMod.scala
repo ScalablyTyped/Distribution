@@ -16,14 +16,14 @@ import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.sharpenPostProcessMod.SharpenPostProcess
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/defaultRenderingPipeline", JSImport.Namespace)
-@js.native
-object defaultRenderingPipelineMod extends js.Object {
+object defaultRenderingPipelineMod {
   
+  @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/defaultRenderingPipeline", "DefaultRenderingPipeline")
   @js.native
   /**
     * @constructor
@@ -448,8 +448,7 @@ object defaultRenderingPipelineMod extends js.Object {
     def sharpenEnabled_=(enabled: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object DefaultRenderingPipeline extends js.Object {
+  object DefaultRenderingPipeline {
     
     /**
       * Parse the serialized pipeline
@@ -458,6 +457,8 @@ object defaultRenderingPipelineMod extends js.Object {
       * @param rootUrl The URL of the serialized pipeline.
       * @returns An instantiated pipeline from the serialized object.
       */
+    @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/defaultRenderingPipeline", "DefaultRenderingPipeline.Parse")
+    @js.native
     def Parse(source: js.Any, scene: Scene, rootUrl: String): DefaultRenderingPipeline = js.native
   }
 }

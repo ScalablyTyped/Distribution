@@ -1,9 +1,9 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,12 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * retrieved descriptions are in turn used to register the corresponding content provider services at the broker.)
   */
 @js.native
-trait UniversalContentBroker
-  extends XCommandProcessor2
-     with XComponent
-     with XContentProvider
-     with XContentProviderManager
-     with XContentIdentifierFactory {
+trait UniversalContentBroker extends XUniversalContentBroker {
   
   /**
     * The (default) constructor.
@@ -68,21 +63,9 @@ object UniversalContentBroker {
   }
   
   @scala.inline
-  implicit class UniversalContentBrokerOps[Self <: UniversalContentBroker] (val x: Self) extends AnyVal {
+  implicit class UniversalContentBrokerMutableBuilder[Self <: UniversalContentBroker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreate(value: () => Unit): Self = this.set("create", js.Any.fromFunction0(value))
+    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }
 }

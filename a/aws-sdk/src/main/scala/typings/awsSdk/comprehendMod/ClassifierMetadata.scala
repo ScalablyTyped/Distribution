@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassifierMetadata extends js.Object {
+trait ClassifierMetadata extends StObject {
   
   /**
     *  Describes the result metrics for the test data associated with an documentation classifier.
@@ -36,42 +37,30 @@ object ClassifierMetadata {
   }
   
   @scala.inline
-  implicit class ClassifierMetadataOps[Self <: ClassifierMetadata] (val x: Self) extends AnyVal {
+  implicit class ClassifierMetadataMutableBuilder[Self <: ClassifierMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvaluationMetrics(value: ClassifierEvaluationMetrics): Self = StObject.set(x, "EvaluationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvaluationMetricsUndefined: Self = StObject.set(x, "EvaluationMetrics", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfLabels(value: Integer): Self = StObject.set(x, "NumberOfLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationMetrics(value: ClassifierEvaluationMetrics): Self = this.set("EvaluationMetrics", value.asInstanceOf[js.Any])
+    def setNumberOfLabelsUndefined: Self = StObject.set(x, "NumberOfLabels", js.undefined)
     
     @scala.inline
-    def deleteEvaluationMetrics: Self = this.set("EvaluationMetrics", js.undefined)
+    def setNumberOfTestDocuments(value: Integer): Self = StObject.set(x, "NumberOfTestDocuments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfLabels(value: Integer): Self = this.set("NumberOfLabels", value.asInstanceOf[js.Any])
+    def setNumberOfTestDocumentsUndefined: Self = StObject.set(x, "NumberOfTestDocuments", js.undefined)
     
     @scala.inline
-    def deleteNumberOfLabels: Self = this.set("NumberOfLabels", js.undefined)
+    def setNumberOfTrainedDocuments(value: Integer): Self = StObject.set(x, "NumberOfTrainedDocuments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfTestDocuments(value: Integer): Self = this.set("NumberOfTestDocuments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfTestDocuments: Self = this.set("NumberOfTestDocuments", js.undefined)
-    
-    @scala.inline
-    def setNumberOfTrainedDocuments(value: Integer): Self = this.set("NumberOfTrainedDocuments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfTrainedDocuments: Self = this.set("NumberOfTrainedDocuments", js.undefined)
+    def setNumberOfTrainedDocumentsUndefined: Self = StObject.set(x, "NumberOfTrainedDocuments", js.undefined)
   }
 }

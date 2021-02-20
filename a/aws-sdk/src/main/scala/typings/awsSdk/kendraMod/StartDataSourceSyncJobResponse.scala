@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartDataSourceSyncJobResponse extends js.Object {
+trait StartDataSourceSyncJobResponse extends StObject {
   
   /**
     * Identifies a particular synchronization job.
@@ -21,24 +22,12 @@ object StartDataSourceSyncJobResponse {
   }
   
   @scala.inline
-  implicit class StartDataSourceSyncJobResponseOps[Self <: StartDataSourceSyncJobResponse] (val x: Self) extends AnyVal {
+  implicit class StartDataSourceSyncJobResponseMutableBuilder[Self <: StartDataSourceSyncJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionId(value: String): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExecutionId(value: String): Self = this.set("ExecutionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionId: Self = this.set("ExecutionId", js.undefined)
+    def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
   }
 }

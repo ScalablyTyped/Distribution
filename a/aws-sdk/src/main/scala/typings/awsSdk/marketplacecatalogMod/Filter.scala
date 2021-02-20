@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filter extends js.Object {
+trait Filter extends StObject {
   
   /**
     * For ListEntities, the supported value for this is an EntityId. For ListChangeSets, the supported values are as follows:
@@ -26,33 +27,21 @@ object Filter {
   }
   
   @scala.inline
-  implicit class FilterOps[Self <: Filter] (val x: Self) extends AnyVal {
+  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: FilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueList(value: ValueList): Self = StObject.set(x, "ValueList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: FilterName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setValueListUndefined: Self = StObject.set(x, "ValueList", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setValueListVarargs(value: StringValue*): Self = this.set("ValueList", js.Array(value :_*))
-    
-    @scala.inline
-    def setValueList(value: ValueList): Self = this.set("ValueList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueList: Self = this.set("ValueList", js.undefined)
+    def setValueListVarargs(value: StringValue*): Self = StObject.set(x, "ValueList", js.Array(value :_*))
   }
 }

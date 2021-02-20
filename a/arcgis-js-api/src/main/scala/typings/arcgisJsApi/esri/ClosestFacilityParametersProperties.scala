@@ -29,12 +29,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.standard
 import typings.arcgisJsApi.arcgisJsApiStrings.start
 import typings.arcgisJsApi.arcgisJsApiStrings.straight
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClosestFacilityParametersProperties extends js.Object {
+trait ClosestFacilityParametersProperties extends StObject {
   
   /**
     * The list of network attribute names to be accumulated with the analysis, i.e., which attributes should be returned as part of the response.
@@ -291,235 +292,223 @@ object ClosestFacilityParametersProperties {
   }
   
   @scala.inline
-  implicit class ClosestFacilityParametersPropertiesOps[Self <: ClosestFacilityParametersProperties] (val x: Self) extends AnyVal {
+  implicit class ClosestFacilityParametersPropertiesMutableBuilder[Self <: ClosestFacilityParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccumulateAttributes(value: js.Array[String]): Self = StObject.set(x, "accumulateAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccumulateAttributesUndefined: Self = StObject.set(x, "accumulateAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccumulateAttributesVarargs(value: String*): Self = StObject.set(x, "accumulateAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setAccumulateAttributesVarargs(value: String*): Self = this.set("accumulateAttributes", js.Array(value :_*))
+    def setAttributeParameterValues(value: js.Array[ClosestFacilityParametersAttributeParameterValues]): Self = StObject.set(x, "attributeParameterValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccumulateAttributes(value: js.Array[String]): Self = this.set("accumulateAttributes", value.asInstanceOf[js.Any])
+    def setAttributeParameterValuesUndefined: Self = StObject.set(x, "attributeParameterValues", js.undefined)
     
     @scala.inline
-    def deleteAccumulateAttributes: Self = this.set("accumulateAttributes", js.undefined)
+    def setAttributeParameterValuesVarargs(value: ClosestFacilityParametersAttributeParameterValues*): Self = StObject.set(x, "attributeParameterValues", js.Array(value :_*))
     
     @scala.inline
-    def setAttributeParameterValuesVarargs(value: ClosestFacilityParametersAttributeParameterValues*): Self = this.set("attributeParameterValues", js.Array(value :_*))
+    def setDefaultCutoff(value: Double): Self = StObject.set(x, "defaultCutoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeParameterValues(value: js.Array[ClosestFacilityParametersAttributeParameterValues]): Self = this.set("attributeParameterValues", value.asInstanceOf[js.Any])
+    def setDefaultCutoffUndefined: Self = StObject.set(x, "defaultCutoff", js.undefined)
     
     @scala.inline
-    def deleteAttributeParameterValues: Self = this.set("attributeParameterValues", js.undefined)
+    def setDefaultTargetFacilityCount(value: Double): Self = StObject.set(x, "defaultTargetFacilityCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCutoff(value: Double): Self = this.set("defaultCutoff", value.asInstanceOf[js.Any])
+    def setDefaultTargetFacilityCountUndefined: Self = StObject.set(x, "defaultTargetFacilityCount", js.undefined)
     
     @scala.inline
-    def deleteDefaultCutoff: Self = this.set("defaultCutoff", js.undefined)
+    def setDirectionsLanguage(value: String): Self = StObject.set(x, "directionsLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTargetFacilityCount(value: Double): Self = this.set("defaultTargetFacilityCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultTargetFacilityCount: Self = this.set("defaultTargetFacilityCount", js.undefined)
-    
-    @scala.inline
-    def setDirectionsLanguage(value: String): Self = this.set("directionsLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectionsLanguage: Self = this.set("directionsLanguage", js.undefined)
+    def setDirectionsLanguageUndefined: Self = StObject.set(x, "directionsLanguage", js.undefined)
     
     @scala.inline
     def setDirectionsLengthUnits(
       value: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
-    ): Self = this.set("directionsLengthUnits", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "directionsLengthUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirectionsLengthUnits: Self = this.set("directionsLengthUnits", js.undefined)
+    def setDirectionsLengthUnitsUndefined: Self = StObject.set(x, "directionsLengthUnits", js.undefined)
     
     @scala.inline
-    def setDirectionsOutputType(value: complete | `complete-no-events` | `instructions-only` | standard | `summary-only`): Self = this.set("directionsOutputType", value.asInstanceOf[js.Any])
+    def setDirectionsOutputType(value: complete | `complete-no-events` | `instructions-only` | standard | `summary-only`): Self = StObject.set(x, "directionsOutputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirectionsOutputType: Self = this.set("directionsOutputType", js.undefined)
+    def setDirectionsOutputTypeUndefined: Self = StObject.set(x, "directionsOutputType", js.undefined)
     
     @scala.inline
-    def setDirectionsStyleName(value: String): Self = this.set("directionsStyleName", value.asInstanceOf[js.Any])
+    def setDirectionsStyleName(value: String): Self = StObject.set(x, "directionsStyleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirectionsStyleName: Self = this.set("directionsStyleName", js.undefined)
+    def setDirectionsStyleNameUndefined: Self = StObject.set(x, "directionsStyleName", js.undefined)
     
     @scala.inline
-    def setDirectionsTimeAttribute(value: String): Self = this.set("directionsTimeAttribute", value.asInstanceOf[js.Any])
+    def setDirectionsTimeAttribute(value: String): Self = StObject.set(x, "directionsTimeAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirectionsTimeAttribute: Self = this.set("directionsTimeAttribute", js.undefined)
+    def setDirectionsTimeAttributeUndefined: Self = StObject.set(x, "directionsTimeAttribute", js.undefined)
     
     @scala.inline
-    def setDoNotLocateOnRestrictedElements(value: Boolean): Self = this.set("doNotLocateOnRestrictedElements", value.asInstanceOf[js.Any])
+    def setDoNotLocateOnRestrictedElements(value: Boolean): Self = StObject.set(x, "doNotLocateOnRestrictedElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDoNotLocateOnRestrictedElements: Self = this.set("doNotLocateOnRestrictedElements", js.undefined)
+    def setDoNotLocateOnRestrictedElementsUndefined: Self = StObject.set(x, "doNotLocateOnRestrictedElements", js.undefined)
     
     @scala.inline
-    def setFacilities(value: DataLayerProperties | FeatureSetProperties): Self = this.set("facilities", value.asInstanceOf[js.Any])
+    def setFacilities(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFacilities: Self = this.set("facilities", js.undefined)
+    def setFacilitiesUndefined: Self = StObject.set(x, "facilities", js.undefined)
     
     @scala.inline
-    def setImpedanceAttribute(value: String): Self = this.set("impedanceAttribute", value.asInstanceOf[js.Any])
+    def setImpedanceAttribute(value: String): Self = StObject.set(x, "impedanceAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImpedanceAttribute: Self = this.set("impedanceAttribute", js.undefined)
+    def setImpedanceAttributeUndefined: Self = StObject.set(x, "impedanceAttribute", js.undefined)
     
     @scala.inline
-    def setIncidents(value: DataLayerProperties | FeatureSetProperties): Self = this.set("incidents", value.asInstanceOf[js.Any])
+    def setIncidents(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "incidents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncidents: Self = this.set("incidents", js.undefined)
+    def setIncidentsUndefined: Self = StObject.set(x, "incidents", js.undefined)
     
     @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties | String): Self = this.set("outSpatialReference", value.asInstanceOf[js.Any])
+    def setOutSpatialReference(value: SpatialReferenceProperties | String): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutSpatialReference: Self = this.set("outSpatialReference", js.undefined)
+    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
     @scala.inline
-    def setOutputGeometryPrecision(value: Double): Self = this.set("outputGeometryPrecision", value.asInstanceOf[js.Any])
+    def setOutputGeometryPrecision(value: Double): Self = StObject.set(x, "outputGeometryPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputGeometryPrecision: Self = this.set("outputGeometryPrecision", js.undefined)
+    def setOutputGeometryPrecisionUndefined: Self = StObject.set(x, "outputGeometryPrecision", js.undefined)
     
     @scala.inline
     def setOutputGeometryPrecisionUnits(
       value: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
-    ): Self = this.set("outputGeometryPrecisionUnits", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "outputGeometryPrecisionUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputGeometryPrecisionUnits: Self = this.set("outputGeometryPrecisionUnits", js.undefined)
+    def setOutputGeometryPrecisionUnitsUndefined: Self = StObject.set(x, "outputGeometryPrecisionUnits", js.undefined)
     
     @scala.inline
-    def setOutputLines(value: none | straight | `true-shape` | `true-shape-with-measure`): Self = this.set("outputLines", value.asInstanceOf[js.Any])
+    def setOutputLines(value: none | straight | `true-shape` | `true-shape-with-measure`): Self = StObject.set(x, "outputLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputLines: Self = this.set("outputLines", js.undefined)
+    def setOutputLinesUndefined: Self = StObject.set(x, "outputLines", js.undefined)
     
     @scala.inline
-    def setPointBarriers(value: DataLayerProperties | FeatureSetProperties): Self = this.set("pointBarriers", value.asInstanceOf[js.Any])
+    def setPointBarriers(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePointBarriers: Self = this.set("pointBarriers", js.undefined)
+    def setPointBarriersUndefined: Self = StObject.set(x, "pointBarriers", js.undefined)
     
     @scala.inline
-    def setPolygonBarriers(value: DataLayerProperties | FeatureSetProperties): Self = this.set("polygonBarriers", value.asInstanceOf[js.Any])
+    def setPolygonBarriers(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolygonBarriers: Self = this.set("polygonBarriers", js.undefined)
+    def setPolygonBarriersUndefined: Self = StObject.set(x, "polygonBarriers", js.undefined)
     
     @scala.inline
-    def setPolylineBarriers(value: DataLayerProperties | FeatureSetProperties): Self = this.set("polylineBarriers", value.asInstanceOf[js.Any])
+    def setPolylineBarriers(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolylineBarriers: Self = this.set("polylineBarriers", js.undefined)
+    def setPolylineBarriersUndefined: Self = StObject.set(x, "polylineBarriers", js.undefined)
     
     @scala.inline
-    def setRestrictUTurns(value: `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`): Self = this.set("restrictUTurns", value.asInstanceOf[js.Any])
+    def setRestrictUTurns(value: `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`): Self = StObject.set(x, "restrictUTurns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRestrictUTurns: Self = this.set("restrictUTurns", js.undefined)
+    def setRestrictUTurnsUndefined: Self = StObject.set(x, "restrictUTurns", js.undefined)
     
     @scala.inline
-    def setRestrictionAttributesVarargs(value: String*): Self = this.set("restrictionAttributes", js.Array(value :_*))
+    def setRestrictionAttributes(value: js.Array[String]): Self = StObject.set(x, "restrictionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictionAttributes(value: js.Array[String]): Self = this.set("restrictionAttributes", value.asInstanceOf[js.Any])
+    def setRestrictionAttributesUndefined: Self = StObject.set(x, "restrictionAttributes", js.undefined)
     
     @scala.inline
-    def deleteRestrictionAttributes: Self = this.set("restrictionAttributes", js.undefined)
+    def setRestrictionAttributesVarargs(value: String*): Self = StObject.set(x, "restrictionAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setReturnDirections(value: Boolean): Self = this.set("returnDirections", value.asInstanceOf[js.Any])
+    def setReturnDirections(value: Boolean): Self = StObject.set(x, "returnDirections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnDirections: Self = this.set("returnDirections", js.undefined)
+    def setReturnDirectionsUndefined: Self = StObject.set(x, "returnDirections", js.undefined)
     
     @scala.inline
-    def setReturnFacilities(value: Boolean): Self = this.set("returnFacilities", value.asInstanceOf[js.Any])
+    def setReturnFacilities(value: Boolean): Self = StObject.set(x, "returnFacilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnFacilities: Self = this.set("returnFacilities", js.undefined)
+    def setReturnFacilitiesUndefined: Self = StObject.set(x, "returnFacilities", js.undefined)
     
     @scala.inline
-    def setReturnIncidents(value: Boolean): Self = this.set("returnIncidents", value.asInstanceOf[js.Any])
+    def setReturnIncidents(value: Boolean): Self = StObject.set(x, "returnIncidents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnIncidents: Self = this.set("returnIncidents", js.undefined)
+    def setReturnIncidentsUndefined: Self = StObject.set(x, "returnIncidents", js.undefined)
     
     @scala.inline
-    def setReturnPointBarriers(value: Boolean): Self = this.set("returnPointBarriers", value.asInstanceOf[js.Any])
+    def setReturnPointBarriers(value: Boolean): Self = StObject.set(x, "returnPointBarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnPointBarriers: Self = this.set("returnPointBarriers", js.undefined)
+    def setReturnPointBarriersUndefined: Self = StObject.set(x, "returnPointBarriers", js.undefined)
     
     @scala.inline
-    def setReturnPolygonBarriers(value: Boolean): Self = this.set("returnPolygonBarriers", value.asInstanceOf[js.Any])
+    def setReturnPolygonBarriers(value: Boolean): Self = StObject.set(x, "returnPolygonBarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnPolygonBarriers: Self = this.set("returnPolygonBarriers", js.undefined)
+    def setReturnPolygonBarriersUndefined: Self = StObject.set(x, "returnPolygonBarriers", js.undefined)
     
     @scala.inline
-    def setReturnPolylineBarriers(value: Boolean): Self = this.set("returnPolylineBarriers", value.asInstanceOf[js.Any])
+    def setReturnPolylineBarriers(value: Boolean): Self = StObject.set(x, "returnPolylineBarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnPolylineBarriers: Self = this.set("returnPolylineBarriers", js.undefined)
+    def setReturnPolylineBarriersUndefined: Self = StObject.set(x, "returnPolylineBarriers", js.undefined)
     
     @scala.inline
-    def setReturnRoutes(value: Boolean): Self = this.set("returnRoutes", value.asInstanceOf[js.Any])
+    def setReturnRoutes(value: Boolean): Self = StObject.set(x, "returnRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnRoutes: Self = this.set("returnRoutes", js.undefined)
+    def setReturnRoutesUndefined: Self = StObject.set(x, "returnRoutes", js.undefined)
     
     @scala.inline
-    def setTimeOfDay(value: DateProperties): Self = this.set("timeOfDay", value.asInstanceOf[js.Any])
+    def setTimeOfDay(value: DateProperties): Self = StObject.set(x, "timeOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeOfDay: Self = this.set("timeOfDay", js.undefined)
+    def setTimeOfDayUndefined: Self = StObject.set(x, "timeOfDay", js.undefined)
     
     @scala.inline
-    def setTimeOfDayUsage(value: start | end): Self = this.set("timeOfDayUsage", value.asInstanceOf[js.Any])
+    def setTimeOfDayUsage(value: start | end): Self = StObject.set(x, "timeOfDayUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeOfDayUsage: Self = this.set("timeOfDayUsage", js.undefined)
+    def setTimeOfDayUsageUndefined: Self = StObject.set(x, "timeOfDayUsage", js.undefined)
     
     @scala.inline
-    def setTravelDirection(value: `from-facility` | `to-facility`): Self = this.set("travelDirection", value.asInstanceOf[js.Any])
+    def setTravelDirection(value: `from-facility` | `to-facility`): Self = StObject.set(x, "travelDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTravelDirection: Self = this.set("travelDirection", js.undefined)
+    def setTravelDirectionUndefined: Self = StObject.set(x, "travelDirection", js.undefined)
     
     @scala.inline
-    def setTravelMode(value: String): Self = this.set("travelMode", value.asInstanceOf[js.Any])
+    def setTravelMode(value: String): Self = StObject.set(x, "travelMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTravelMode: Self = this.set("travelMode", js.undefined)
+    def setTravelModeUndefined: Self = StObject.set(x, "travelMode", js.undefined)
     
     @scala.inline
-    def setUseHierarchy(value: Boolean): Self = this.set("useHierarchy", value.asInstanceOf[js.Any])
+    def setUseHierarchy(value: Boolean): Self = StObject.set(x, "useHierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseHierarchy: Self = this.set("useHierarchy", js.undefined)
+    def setUseHierarchyUndefined: Self = StObject.set(x, "useHierarchy", js.undefined)
   }
 }

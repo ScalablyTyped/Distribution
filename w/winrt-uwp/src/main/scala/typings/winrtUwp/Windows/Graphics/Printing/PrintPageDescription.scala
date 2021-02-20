@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Foundation.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the data that describes a document page. */
 @js.native
-trait PrintPageDescription extends js.Object {
+trait PrintPageDescription extends StObject {
   
   /** The resolution in dots per inch (DPI) for the X dimension of the page. */
   var dpiX: Double = js.native
@@ -31,30 +32,18 @@ object PrintPageDescription {
   }
   
   @scala.inline
-  implicit class PrintPageDescriptionOps[Self <: PrintPageDescription] (val x: Self) extends AnyVal {
+  implicit class PrintPageDescriptionMutableBuilder[Self <: PrintPageDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDpiY(value: Double): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageableRect(value: Rect): Self = StObject.set(x, "imageableRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpiX(value: Double): Self = this.set("dpiX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDpiY(value: Double): Self = this.set("dpiY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImageableRect(value: Rect): Self = this.set("imageableRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageSize(value: Size): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.azdata.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestorePlanResponse extends js.Object {
+trait RestorePlanResponse extends StObject {
   
   var backupSetsToRestore: js.Array[DatabaseFileInfo] = js.native
   
@@ -39,48 +40,36 @@ object RestorePlanResponse {
   }
   
   @scala.inline
-  implicit class RestorePlanResponseOps[Self <: RestorePlanResponse] (val x: Self) extends AnyVal {
+  implicit class RestorePlanResponseMutableBuilder[Self <: RestorePlanResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupSetsToRestore(value: js.Array[DatabaseFileInfo]): Self = StObject.set(x, "backupSetsToRestore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupSetsToRestoreVarargs(value: DatabaseFileInfo*): Self = StObject.set(x, "backupSetsToRestore", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanRestore(value: Boolean): Self = StObject.set(x, "canRestore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupSetsToRestoreVarargs(value: DatabaseFileInfo*): Self = this.set("backupSetsToRestore", js.Array(value :_*))
+    def setDatabaseNamesFromBackupSets(value: js.Array[String]): Self = StObject.set(x, "databaseNamesFromBackupSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupSetsToRestore(value: js.Array[DatabaseFileInfo]): Self = this.set("backupSetsToRestore", value.asInstanceOf[js.Any])
+    def setDatabaseNamesFromBackupSetsVarargs(value: String*): Self = StObject.set(x, "databaseNamesFromBackupSets", js.Array(value :_*))
     
     @scala.inline
-    def setCanRestore(value: Boolean): Self = this.set("canRestore", value.asInstanceOf[js.Any])
+    def setDbFiles(value: js.Array[RestoreDatabaseFileInfo]): Self = StObject.set(x, "dbFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseNamesFromBackupSetsVarargs(value: String*): Self = this.set("databaseNamesFromBackupSets", js.Array(value :_*))
+    def setDbFilesVarargs(value: RestoreDatabaseFileInfo*): Self = StObject.set(x, "dbFiles", js.Array(value :_*))
     
     @scala.inline
-    def setDatabaseNamesFromBackupSets(value: js.Array[String]): Self = this.set("databaseNamesFromBackupSets", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbFilesVarargs(value: RestoreDatabaseFileInfo*): Self = this.set("dbFiles", js.Array(value :_*))
+    def setPlanDetails(value: StringDictionary[RestorePlanDetailInfo]): Self = StObject.set(x, "planDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbFiles(value: js.Array[RestoreDatabaseFileInfo]): Self = this.set("dbFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlanDetails(value: StringDictionary[RestorePlanDetailInfo]): Self = this.set("planDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFirewallDeleteProtectionResponse extends js.Object {
+trait UpdateFirewallDeleteProtectionResponse extends StObject {
   
   /**
     * 
@@ -36,42 +37,30 @@ object UpdateFirewallDeleteProtectionResponse {
   }
   
   @scala.inline
-  implicit class UpdateFirewallDeleteProtectionResponseOps[Self <: UpdateFirewallDeleteProtectionResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateFirewallDeleteProtectionResponseMutableBuilder[Self <: UpdateFirewallDeleteProtectionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteProtection(value: Boolean): Self = StObject.set(x, "DeleteProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteProtectionUndefined: Self = StObject.set(x, "DeleteProtection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteProtection(value: Boolean): Self = this.set("DeleteProtection", value.asInstanceOf[js.Any])
+    def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
     
     @scala.inline
-    def deleteDeleteProtection: Self = this.set("DeleteProtection", js.undefined)
+    def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallArn(value: ResourceArn): Self = this.set("FirewallArn", value.asInstanceOf[js.Any])
+    def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
     
     @scala.inline
-    def deleteFirewallArn: Self = this.set("FirewallArn", js.undefined)
+    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallName(value: ResourceName): Self = this.set("FirewallName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirewallName: Self = this.set("FirewallName", js.undefined)
-    
-    @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = this.set("UpdateToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateToken: Self = this.set("UpdateToken", js.undefined)
+    def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
   }
 }

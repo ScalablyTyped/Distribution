@@ -1,14 +1,17 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/ServiceMetadata", JSImport.Namespace)
-@js.native
-object serviceMetadataMod extends js.Object {
+object serviceMetadataMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/ServiceMetadata", "ServiceMetadata")
+  @js.native
   val ServiceMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ServiceMetadata_ */ js.Any = js.native
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/ServiceMetadata", "clientVersion")
+  @js.native
   val clientVersion: String = js.native
 }

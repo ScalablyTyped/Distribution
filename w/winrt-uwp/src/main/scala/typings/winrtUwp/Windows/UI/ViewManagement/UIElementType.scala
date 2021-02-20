@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UIElementType extends js.Object
+sealed trait UIElementType extends StObject
 /** Defines the set of user interface element types. */
 @JSGlobal("Windows.UI.ViewManagement.UIElementType")
 @js.native
-object UIElementType extends js.Object {
+object UIElementType extends StObject {
   
   /** An active caption element. */
   @js.native

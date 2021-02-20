@@ -1,5 +1,6 @@
 package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * library.googleapis.com/book/overdue_count
   */
 @js.native
-trait SchemaMonitoring extends js.Object {
+trait SchemaMonitoring extends StObject {
   
   /**
     * Monitoring configurations for sending metrics to the consumer project.
@@ -58,36 +59,24 @@ object SchemaMonitoring {
   }
   
   @scala.inline
-  implicit class SchemaMonitoringOps[Self <: SchemaMonitoring] (val x: Self) extends AnyVal {
+  implicit class SchemaMonitoringMutableBuilder[Self <: SchemaMonitoring] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumerDestinations(value: js.Array[SchemaMonitoringDestination]): Self = StObject.set(x, "consumerDestinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerDestinationsUndefined: Self = StObject.set(x, "consumerDestinations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumerDestinationsVarargs(value: SchemaMonitoringDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value :_*))
     
     @scala.inline
-    def setConsumerDestinationsVarargs(value: SchemaMonitoringDestination*): Self = this.set("consumerDestinations", js.Array(value :_*))
+    def setProducerDestinations(value: js.Array[SchemaMonitoringDestination]): Self = StObject.set(x, "producerDestinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerDestinations(value: js.Array[SchemaMonitoringDestination]): Self = this.set("consumerDestinations", value.asInstanceOf[js.Any])
+    def setProducerDestinationsUndefined: Self = StObject.set(x, "producerDestinations", js.undefined)
     
     @scala.inline
-    def deleteConsumerDestinations: Self = this.set("consumerDestinations", js.undefined)
-    
-    @scala.inline
-    def setProducerDestinationsVarargs(value: SchemaMonitoringDestination*): Self = this.set("producerDestinations", js.Array(value :_*))
-    
-    @scala.inline
-    def setProducerDestinations(value: js.Array[SchemaMonitoringDestination]): Self = this.set("producerDestinations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProducerDestinations: Self = this.set("producerDestinations", js.undefined)
+    def setProducerDestinationsVarargs(value: SchemaMonitoringDestination*): Self = StObject.set(x, "producerDestinations", js.Array(value :_*))
   }
 }

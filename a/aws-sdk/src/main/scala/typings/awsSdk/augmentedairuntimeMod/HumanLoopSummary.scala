@@ -1,11 +1,12 @@
 package typings.awsSdk.augmentedairuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HumanLoopSummary extends js.Object {
+trait HumanLoopSummary extends StObject {
   
   /**
     * When Amazon Augmented AI created the human loop.
@@ -41,48 +42,36 @@ object HumanLoopSummary {
   }
   
   @scala.inline
-  implicit class HumanLoopSummaryOps[Self <: HumanLoopSummary] (val x: Self) extends AnyVal {
+  implicit class HumanLoopSummaryMutableBuilder[Self <: HumanLoopSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = StObject.set(x, "FlowDefinitionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setFlowDefinitionArnUndefined: Self = StObject.set(x, "FlowDefinitionArn", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setHumanLoopName(value: HumanLoopName): Self = StObject.set(x, "HumanLoopName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = this.set("FlowDefinitionArn", value.asInstanceOf[js.Any])
+    def setHumanLoopNameUndefined: Self = StObject.set(x, "HumanLoopName", js.undefined)
     
     @scala.inline
-    def deleteFlowDefinitionArn: Self = this.set("FlowDefinitionArn", js.undefined)
+    def setHumanLoopStatus(value: HumanLoopStatus): Self = StObject.set(x, "HumanLoopStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHumanLoopName(value: HumanLoopName): Self = this.set("HumanLoopName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHumanLoopName: Self = this.set("HumanLoopName", js.undefined)
-    
-    @scala.inline
-    def setHumanLoopStatus(value: HumanLoopStatus): Self = this.set("HumanLoopStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHumanLoopStatus: Self = this.set("HumanLoopStatus", js.undefined)
+    def setHumanLoopStatusUndefined: Self = StObject.set(x, "HumanLoopStatus", js.undefined)
   }
 }

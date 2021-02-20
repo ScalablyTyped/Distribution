@@ -1,5 +1,6 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * data.
   */
 @js.native
-trait SchemaGetInfoForObservedBeaconsResponse extends js.Object {
+trait SchemaGetInfoForObservedBeaconsResponse extends StObject {
   
   /**
     * Public information about beacons. May be empty if the request matched no
@@ -26,27 +27,15 @@ object SchemaGetInfoForObservedBeaconsResponse {
   }
   
   @scala.inline
-  implicit class SchemaGetInfoForObservedBeaconsResponseOps[Self <: SchemaGetInfoForObservedBeaconsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGetInfoForObservedBeaconsResponseMutableBuilder[Self <: SchemaGetInfoForObservedBeaconsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeacons(value: js.Array[SchemaBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeaconsUndefined: Self = StObject.set(x, "beacons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBeaconsVarargs(value: SchemaBeaconInfo*): Self = this.set("beacons", js.Array(value :_*))
-    
-    @scala.inline
-    def setBeacons(value: js.Array[SchemaBeaconInfo]): Self = this.set("beacons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeacons: Self = this.set("beacons", js.undefined)
+    def setBeaconsVarargs(value: SchemaBeaconInfo*): Self = StObject.set(x, "beacons", js.Array(value :_*))
   }
 }

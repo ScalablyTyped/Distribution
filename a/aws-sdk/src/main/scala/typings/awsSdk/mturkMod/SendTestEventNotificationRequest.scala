@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendTestEventNotificationRequest extends js.Object {
+trait SendTestEventNotificationRequest extends StObject {
   
   /**
     *  The notification specification to test. This value is identical to the value you would provide to the UpdateNotificationSettings operation when you establish the notification specification for a HIT type. 
@@ -26,24 +27,12 @@ object SendTestEventNotificationRequest {
   }
   
   @scala.inline
-  implicit class SendTestEventNotificationRequestOps[Self <: SendTestEventNotificationRequest] (val x: Self) extends AnyVal {
+  implicit class SendTestEventNotificationRequestMutableBuilder[Self <: SendTestEventNotificationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotification(value: NotificationSpecification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNotification(value: NotificationSpecification): Self = this.set("Notification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestEventType(value: EventType): Self = this.set("TestEventType", value.asInstanceOf[js.Any])
+    def setTestEventType(value: EventType): Self = StObject.set(x, "TestEventType", value.asInstanceOf[js.Any])
   }
 }

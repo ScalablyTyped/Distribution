@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The protocol that the <Titanium.Network.HTTPClient.securityManager> must implement.
   */
 @js.native
-trait SecurityManagerProtocol extends js.Object {
+trait SecurityManagerProtocol extends StObject {
   
   /**
     * The <APSConnectionDelegate> for this connection.
@@ -44,30 +45,18 @@ object SecurityManagerProtocol {
   }
   
   @scala.inline
-  implicit class SecurityManagerProtocolOps[Self <: SecurityManagerProtocol] (val x: Self) extends AnyVal {
+  implicit class SecurityManagerProtocolMutableBuilder[Self <: SecurityManagerProtocol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionDelegateForUrl(value: js.Any => APSConnectionDelegate): Self = StObject.set(x, "connectionDelegateForUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetKeyManagers(value: js.Any => js.Array[_]): Self = StObject.set(x, "getKeyManagers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTrustManagers(value: js.Any => js.Array[_]): Self = StObject.set(x, "getTrustManagers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnectionDelegateForUrl(value: js.Any => APSConnectionDelegate): Self = this.set("connectionDelegateForUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetKeyManagers(value: js.Any => js.Array[_]): Self = this.set("getKeyManagers", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetTrustManagers(value: js.Any => js.Array[_]): Self = this.set("getTrustManagers", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWillHandleURL(value: js.Any => Boolean): Self = this.set("willHandleURL", js.Any.fromFunction1(value))
+    def setWillHandleURL(value: js.Any => Boolean): Self = StObject.set(x, "willHandleURL", js.Any.fromFunction1(value))
   }
 }

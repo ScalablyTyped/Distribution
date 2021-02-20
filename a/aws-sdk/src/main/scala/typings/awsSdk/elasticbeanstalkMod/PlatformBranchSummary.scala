@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlatformBranchSummary extends js.Object {
+trait PlatformBranchSummary extends StObject {
   
   /**
     * The name of the platform branch.
@@ -41,51 +42,39 @@ object PlatformBranchSummary {
   }
   
   @scala.inline
-  implicit class PlatformBranchSummaryOps[Self <: PlatformBranchSummary] (val x: Self) extends AnyVal {
+  implicit class PlatformBranchSummaryMutableBuilder[Self <: PlatformBranchSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranchName(value: BranchName): Self = StObject.set(x, "BranchName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchNameUndefined: Self = StObject.set(x, "BranchName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranchOrder(value: BranchOrder): Self = StObject.set(x, "BranchOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchName(value: BranchName): Self = this.set("BranchName", value.asInstanceOf[js.Any])
+    def setBranchOrderUndefined: Self = StObject.set(x, "BranchOrder", js.undefined)
     
     @scala.inline
-    def deleteBranchName: Self = this.set("BranchName", js.undefined)
+    def setLifecycleState(value: PlatformBranchLifecycleState): Self = StObject.set(x, "LifecycleState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchOrder(value: BranchOrder): Self = this.set("BranchOrder", value.asInstanceOf[js.Any])
+    def setLifecycleStateUndefined: Self = StObject.set(x, "LifecycleState", js.undefined)
     
     @scala.inline
-    def deleteBranchOrder: Self = this.set("BranchOrder", js.undefined)
+    def setPlatformName(value: PlatformName): Self = StObject.set(x, "PlatformName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycleState(value: PlatformBranchLifecycleState): Self = this.set("LifecycleState", value.asInstanceOf[js.Any])
+    def setPlatformNameUndefined: Self = StObject.set(x, "PlatformName", js.undefined)
     
     @scala.inline
-    def deleteLifecycleState: Self = this.set("LifecycleState", js.undefined)
+    def setSupportedTierList(value: SupportedTierList): Self = StObject.set(x, "SupportedTierList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformName(value: PlatformName): Self = this.set("PlatformName", value.asInstanceOf[js.Any])
+    def setSupportedTierListUndefined: Self = StObject.set(x, "SupportedTierList", js.undefined)
     
     @scala.inline
-    def deletePlatformName: Self = this.set("PlatformName", js.undefined)
-    
-    @scala.inline
-    def setSupportedTierListVarargs(value: SupportedTier*): Self = this.set("SupportedTierList", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedTierList(value: SupportedTierList): Self = this.set("SupportedTierList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedTierList: Self = this.set("SupportedTierList", js.undefined)
+    def setSupportedTierListVarargs(value: SupportedTier*): Self = StObject.set(x, "SupportedTierList", js.Array(value :_*))
   }
 }

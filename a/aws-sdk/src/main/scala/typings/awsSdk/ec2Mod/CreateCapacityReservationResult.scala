@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCapacityReservationResult extends js.Object {
+trait CreateCapacityReservationResult extends StObject {
   
   /**
     * Information about the Capacity Reservation.
@@ -21,24 +22,12 @@ object CreateCapacityReservationResult {
   }
   
   @scala.inline
-  implicit class CreateCapacityReservationResultOps[Self <: CreateCapacityReservationResult] (val x: Self) extends AnyVal {
+  implicit class CreateCapacityReservationResultMutableBuilder[Self <: CreateCapacityReservationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityReservation(value: CapacityReservation): Self = StObject.set(x, "CapacityReservation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCapacityReservation(value: CapacityReservation): Self = this.set("CapacityReservation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapacityReservation: Self = this.set("CapacityReservation", js.undefined)
+    def setCapacityReservationUndefined: Self = StObject.set(x, "CapacityReservation", js.undefined)
   }
 }

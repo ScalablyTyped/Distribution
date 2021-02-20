@@ -1,12 +1,13 @@
 package typings.webix.webix
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HtmlMap extends js.Object {
+trait HtmlMap extends StObject {
   
   def addPoly(id: String, points: js.Array[_]): Unit = js.native
   def addPoly(id: String, points: js.Array[_], userdata: String): Unit = js.native

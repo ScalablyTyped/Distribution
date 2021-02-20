@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.apiextensions.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomResourceConversion describes how to convert different versions of a CR.
   */
 @js.native
-trait CustomResourceConversion extends js.Object {
+trait CustomResourceConversion extends StObject {
   
   /**
     * strategy specifies how custom resources are converted between versions. Allowed values are: - `None`: The converter only change the apiVersion and would not touch any other field in the custom resource. - `Webhook`: API Server will call to an external webhook to do the conversion. Additional information
@@ -31,27 +32,15 @@ object CustomResourceConversion {
   }
   
   @scala.inline
-  implicit class CustomResourceConversionOps[Self <: CustomResourceConversion] (val x: Self) extends AnyVal {
+  implicit class CustomResourceConversionMutableBuilder[Self <: CustomResourceConversion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStrategy(value: Input[String]): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWebhook(value: Input[WebhookConversion]): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStrategy(value: Input[String]): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebhook(value: Input[WebhookConversion]): Self = this.set("webhook", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebhook: Self = this.set("webhook", js.undefined)
+    def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
   }
 }

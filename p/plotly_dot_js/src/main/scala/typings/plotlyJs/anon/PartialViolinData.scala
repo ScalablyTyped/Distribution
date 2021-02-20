@@ -22,6 +22,7 @@ import typings.plotlyJs.plotlyJsStrings.violin
 import typings.plotlyJs.plotlyJsStrings.violins
 import typings.plotlyJs.plotlyJsStrings.width
 import typings.plotlyJs.scatterMod.ScatterSelectedMarker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,229 +106,217 @@ object PartialViolinData {
   }
   
   @scala.inline
-  implicit class PartialViolinDataOps[Self <: PartialViolinData] (val x: Self) extends AnyVal {
+  implicit class PartialViolinDataMutableBuilder[Self <: PartialViolinData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignmentgroup(value: String): Self = StObject.set(x, "alignmentgroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentgroupUndefined: Self = StObject.set(x, "alignmentgroup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignmentgroup(value: String): Self = this.set("alignmentgroup", value.asInstanceOf[js.Any])
+    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
     @scala.inline
-    def deleteAlignmentgroup: Self = this.set("alignmentgroup", js.undefined)
+    def setBox(value: Partialvisiblebooleanwidt): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidth(value: Double): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
     
     @scala.inline
-    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    def setFillcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "fillcolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBox(value: Partialvisiblebooleanwidt): Self = this.set("box", value.asInstanceOf[js.Any])
+    def setFillcolorUndefined: Self = StObject.set(x, "fillcolor", js.undefined)
     
     @scala.inline
-    def deleteBox: Self = this.set("box", js.undefined)
+    def setFillcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "fillcolor", js.Array(value :_*))
     
     @scala.inline
-    def setFillcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("fillcolor", js.Array(value :_*))
+    def setHoveron(value: violins | points | kde | all | String): Self = StObject.set(x, "hoveron", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillcolor(value: typings.plotlyJs.mod.Color): Self = this.set("fillcolor", value.asInstanceOf[js.Any])
+    def setHoveronUndefined: Self = StObject.set(x, "hoveron", js.undefined)
     
     @scala.inline
-    def deleteFillcolor: Self = this.set("fillcolor", js.undefined)
+    def setHovertemplate(value: String | js.Array[String]): Self = StObject.set(x, "hovertemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoveron(value: violins | points | kde | all | String): Self = this.set("hoveron", value.asInstanceOf[js.Any])
+    def setHovertemplateUndefined: Self = StObject.set(x, "hovertemplate", js.undefined)
     
     @scala.inline
-    def deleteHoveron: Self = this.set("hoveron", js.undefined)
+    def setHovertemplateVarargs(value: String*): Self = StObject.set(x, "hovertemplate", js.Array(value :_*))
     
     @scala.inline
-    def setHovertemplateVarargs(value: String*): Self = this.set("hovertemplate", js.Array(value :_*))
+    def setHovertext(value: String | js.Array[String]): Self = StObject.set(x, "hovertext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHovertemplate(value: String | js.Array[String]): Self = this.set("hovertemplate", value.asInstanceOf[js.Any])
+    def setHovertextUndefined: Self = StObject.set(x, "hovertext", js.undefined)
     
     @scala.inline
-    def deleteHovertemplate: Self = this.set("hovertemplate", js.undefined)
+    def setHovertextVarargs(value: String*): Self = StObject.set(x, "hovertext", js.Array(value :_*))
     
     @scala.inline
-    def setHovertextVarargs(value: String*): Self = this.set("hovertext", js.Array(value :_*))
+    def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHovertext(value: String | js.Array[String]): Self = this.set("hovertext", value.asInstanceOf[js.Any])
+    def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
     
     @scala.inline
-    def deleteHovertext: Self = this.set("hovertext", js.undefined)
+    def setLine(value: PartialcolorColorwidthnumColor): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJitter(value: Double): Self = this.set("jitter", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteJitter: Self = this.set("jitter", js.undefined)
+    def setMarker(value: PartialoutliercolorColors): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: PartialcolorColorwidthnumColor): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setMeanline(value: Partialvisiblebooleancolo): Self = StObject.set(x, "meanline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: PartialoutliercolorColors): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setMeanlineUndefined: Self = StObject.set(x, "meanline", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeanline(value: Partialvisiblebooleancolo): Self = this.set("meanline", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMeanline: Self = this.set("meanline", js.undefined)
+    def setOffsetgroup(value: String): Self = StObject.set(x, "offsetgroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOffsetgroupUndefined: Self = StObject.set(x, "offsetgroup", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetgroup(value: String): Self = this.set("offsetgroup", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteOffsetgroup: Self = this.set("offsetgroup", js.undefined)
+    def setOrientation(value: v | h): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setPointpos(value: Double): Self = StObject.set(x, "pointpos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: v | h): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setPointposUndefined: Self = StObject.set(x, "pointpos", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setPoints(value: all | outliers | suspectedoutliers | `false`): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointpos(value: Double): Self = this.set("pointpos", value.asInstanceOf[js.Any])
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def deletePointpos: Self = this.set("pointpos", js.undefined)
+    def setScalegroup(value: String): Self = StObject.set(x, "scalegroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: all | outliers | suspectedoutliers | `false`): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setScalegroupUndefined: Self = StObject.set(x, "scalegroup", js.undefined)
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def setScalemode(value: width | count): Self = StObject.set(x, "scalemode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalegroup(value: String): Self = this.set("scalegroup", value.asInstanceOf[js.Any])
+    def setScalemodeUndefined: Self = StObject.set(x, "scalemode", js.undefined)
     
     @scala.inline
-    def deleteScalegroup: Self = this.set("scalegroup", js.undefined)
+    def setSelected(value: ScatterSelectedMarker): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalemode(value: width | count): Self = this.set("scalemode", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteScalemode: Self = this.set("scalemode", js.undefined)
+    def setSide(value: both | positive | negative): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: ScatterSelectedMarker): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setSpan(value: js.Array[_]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSide(value: both | positive | negative): Self = this.set("side", value.asInstanceOf[js.Any])
+    def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
     
     @scala.inline
-    def deleteSide: Self = this.set("side", js.undefined)
+    def setSpanVarargs(value: js.Any*): Self = StObject.set(x, "span", js.Array(value :_*))
     
     @scala.inline
-    def setSpanVarargs(value: js.Any*): Self = this.set("span", js.Array(value :_*))
+    def setSpanmode(value: soft | hard | manual): Self = StObject.set(x, "spanmode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpan(value: js.Array[_]): Self = this.set("span", value.asInstanceOf[js.Any])
+    def setSpanmodeUndefined: Self = StObject.set(x, "spanmode", js.undefined)
     
     @scala.inline
-    def deleteSpan: Self = this.set("span", js.undefined)
+    def setText(value: String | js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpanmode(value: soft | hard | manual): Self = this.set("spanmode", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSpanmode: Self = this.set("spanmode", js.undefined)
+    def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
     
     @scala.inline
-    def setTextVarargs(value: String*): Self = this.set("text", js.Array(value :_*))
+    def setType(value: violin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String | js.Array[String]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setUnselected(value: ScatterSelectedMarker): Self = StObject.set(x, "unselected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: violin): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUnselectedUndefined: Self = StObject.set(x, "unselected", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnselected(value: ScatterSelectedMarker): Self = this.set("unselected", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteUnselected: Self = this.set("unselected", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setXVarargs(value: (js.Array[Datum] | Datum)*): Self = this.set("x", js.Array(value :_*))
-    
-    @scala.inline
-    def setX(value: (js.Array[js.Array[Datum] | Datum]) | TypedArray): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setX(value: (js.Array[js.Array[Datum] | Datum]) | TypedArray): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setX0(
       value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['x0'] */ js.Any
-    ): Self = this.set("x0", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteX0: Self = this.set("x0", js.undefined)
+    def setX0Undefined: Self = StObject.set(x, "x0", js.undefined)
     
     @scala.inline
-    def setYVarargs(value: (js.Array[Datum] | Datum)*): Self = this.set("y", js.Array(value :_*))
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def setY(value: (js.Array[js.Array[Datum] | Datum]) | TypedArray): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setXVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "x", js.Array(value :_*))
     
     @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setY(value: (js.Array[js.Array[Datum] | Datum]) | TypedArray): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setY0(
       value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['y0'] */ js.Any
-    ): Self = this.set("y0", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteY0: Self = this.set("y0", js.undefined)
+    def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
+    
+    @scala.inline
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    
+    @scala.inline
+    def setYVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

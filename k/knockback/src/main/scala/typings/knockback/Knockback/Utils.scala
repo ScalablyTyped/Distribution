@@ -1,11 +1,12 @@
 package typings.knockback.Knockback
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Utils extends js.Object {
+trait Utils extends StObject {
   
   def createFromDefaultCreator(obj: js.Any): js.Any = js.native
   def createFromDefaultCreator(obj: js.Any, options: js.Any): js.Any = js.native

@@ -1,16 +1,15 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Common")
 @js.native
-class Common () extends js.Object
+class Common () extends StObject
 /* static members */
-@JSImport("matter-js", "Common")
-@js.native
-object Common extends js.Object {
+object Common {
   
   /**
     * Used to require external libraries outside of the bundle.
@@ -22,6 +21,8 @@ object Common extends js.Object {
     * @param {string} moduleName The fallback CommonJS module name
     * @return {} The loaded module
     */
+  @JSImport("matter-js", "Common._requireGlobal")
+  @js.native
   def _requireGlobal(globalName: String, moduleName: String): js.Any = js.native
   
   /**
@@ -35,6 +36,8 @@ object Common extends js.Object {
     * @param ...funcs {function} The functions to chain.
     * @return {function} A new function that calls the passed functions in order.
     */
+  @JSImport("matter-js", "Common.chain")
+  @js.native
   def chain(): js.Function = js.native
   
   /**
@@ -46,6 +49,8 @@ object Common extends js.Object {
     * @param {function} func The function to chain after the original
     * @return {function} The chained function that replaced the original
     */
+  @JSImport("matter-js", "Common.chainPathAfter")
+  @js.native
   def chainPathAfter(base: js.Object, path: String, func: js.Function): js.Function = js.native
   
   /**
@@ -57,6 +62,8 @@ object Common extends js.Object {
     * @param {function} func The function to chain before the original
     * @return {function} The chained function that replaced the original
     */
+  @JSImport("matter-js", "Common.chainPathBefore")
+  @js.native
   def chainPathBefore(base: js.Object, path: String, func: js.Function): js.Function = js.native
   
   /**
@@ -66,6 +73,8 @@ object Common extends js.Object {
     * @param {array} choices
     * @return {object} A random choice object from the array
     */
+  @JSImport("matter-js", "Common.choose")
+  @js.native
   def choose(choices: js.Array[_]): js.Any = js.native
   
   /**
@@ -76,6 +85,8 @@ object Common extends js.Object {
     * @param {number} max
     * @return {number} The value clamped between min and max inclusive
     */
+  @JSImport("matter-js", "Common.clamp")
+  @js.native
   def clamp(value: Double, min: Double, max: Double): Double = js.native
   
   /**
@@ -85,6 +96,8 @@ object Common extends js.Object {
     * @param {bool} deep
     * @return {} obj cloned
     */
+  @JSImport("matter-js", "Common.clone")
+  @js.native
   def clone(obj: js.Object, deep: Boolean): js.Object = js.native
   
   /**
@@ -93,6 +106,8 @@ object Common extends js.Object {
     * @param {string} colorString
     * @return {number} An integer representing the CSS hex string
     */
+  @JSImport("matter-js", "Common.colorToNumber")
+  @js.native
   def colorToNumber(colorString: String): Double = js.native
   
   /**
@@ -102,6 +117,8 @@ object Common extends js.Object {
     * @param {boolean} deep
     * @return {} obj extended
     */
+  @JSImport("matter-js", "Common.extend")
+  @js.native
   def extend(obj: js.Object, deep: Boolean): js.Object = js.native
   
   /**
@@ -113,6 +130,8 @@ object Common extends js.Object {
     * @param {number} [end] Path slice end
     * @return {} The object at the given path
     */
+  @JSImport("matter-js", "Common.get")
+  @js.native
   def get(obj: js.Object, path: String, begin: Double, end: Double): js.Object = js.native
   
   /**
@@ -122,6 +141,8 @@ object Common extends js.Object {
     * @param {object} needle
     * @return {number} The position of needle in haystack, otherwise -1.
     */
+  @JSImport("matter-js", "Common.indexOf")
+  @js.native
   def indexOf(haystack: js.Array[_], needle: js.Object): Double = js.native
   
   /**
@@ -130,6 +151,8 @@ object Common extends js.Object {
     * @method info
     * @param ...objs {} The objects to log.
     */
+  @JSImport("matter-js", "Common.info")
+  @js.native
   def info(): js.Any = js.native
   
   /**
@@ -138,6 +161,8 @@ object Common extends js.Object {
     * @param {object} obj
     * @return {boolean} True if the object is an array, otherwise false
     */
+  @JSImport("matter-js", "Common.isArray")
+  @js.native
   def isArray(obj: js.Object): Boolean = js.native
   
   /**
@@ -146,6 +171,8 @@ object Common extends js.Object {
     * @param {object} obj
     * @return {boolean} True if the object is a HTMLElement, otherwise false
     */
+  @JSImport("matter-js", "Common.isElement")
+  @js.native
   def isElement(obj: js.Object): Boolean = js.native
   
   /**
@@ -154,6 +181,8 @@ object Common extends js.Object {
     * @param {object} obj
     * @return {boolean} True if the object is a function, otherwise false
     */
+  @JSImport("matter-js", "Common.isFunction")
+  @js.native
   def isFunction(obj: js.Object): Boolean = js.native
   
   /**
@@ -162,6 +191,8 @@ object Common extends js.Object {
     * @param {object} obj
     * @return {boolean} True if the object is a plain object, otherwise false
     */
+  @JSImport("matter-js", "Common.isPlainObject")
+  @js.native
   def isPlainObject(obj: js.Object): Boolean = js.native
   
   /**
@@ -170,6 +201,8 @@ object Common extends js.Object {
     * @param {object} obj
     * @return {boolean} True if the object is a string, otherwise false
     */
+  @JSImport("matter-js", "Common.isString")
+  @js.native
   def isString(obj: js.Object): Boolean = js.native
   
   /**
@@ -178,6 +211,8 @@ object Common extends js.Object {
     * @param {} obj
     * @return {string[]} keys
     */
+  @JSImport("matter-js", "Common.keys")
+  @js.native
   def keys(obj: js.Object): js.Array[String] = js.native
   
   /**
@@ -186,6 +221,8 @@ object Common extends js.Object {
     * @method log
     * @param ...objs {} The objects to log.
     */
+  @JSImport("matter-js", "Common.log")
+  @js.native
   def log(): js.Any = js.native
   
   /**
@@ -195,6 +232,8 @@ object Common extends js.Object {
     * @param {function} func
     * @return {array} Values from list transformed by func.
     */
+  @JSImport("matter-js", "Common.map")
+  @js.native
   def map(list: js.Array[_], funct: js.Function): js.Array[_] = js.native
   
   /**
@@ -202,6 +241,8 @@ object Common extends js.Object {
     * @method nextId
     * @return {number} Unique sequential ID
     */
+  @JSImport("matter-js", "Common.nextId")
+  @js.native
   def nextId(): Double = js.native
   
   /**
@@ -210,6 +251,8 @@ object Common extends js.Object {
     * @method now
     * @return {number} the current timestamp
     */
+  @JSImport("matter-js", "Common.now")
+  @js.native
   def now(): Double = js.native
   
   /**
@@ -220,9 +263,17 @@ object Common extends js.Object {
     * @param {number} max
     * @return {number} A random number between min and max inclusive
     */
+  @JSImport("matter-js", "Common.random")
+  @js.native
   def random(): Double = js.native
+  @JSImport("matter-js", "Common.random")
+  @js.native
   def random(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
+  @JSImport("matter-js", "Common.random")
+  @js.native
   def random(min: Double): Double = js.native
+  @JSImport("matter-js", "Common.random")
+  @js.native
   def random(min: Double, max: Double): Double = js.native
   
   /**
@@ -235,6 +286,8 @@ object Common extends js.Object {
     * @param {number} [end] Path slice end
     * @return {} Pass through `val` for chaining
     */
+  @JSImport("matter-js", "Common.set")
+  @js.native
   def set(obj: js.Object, path: String, `val`: js.Object, begin: Double, end: Double): js.Object = js.native
   
   /**
@@ -244,6 +297,8 @@ object Common extends js.Object {
     * @param {array} array
     * @return {array} array shuffled randomly
     */
+  @JSImport("matter-js", "Common.shuffle")
+  @js.native
   def shuffle(array: js.Array[_]): js.Array[_] = js.native
   
   /**
@@ -252,6 +307,8 @@ object Common extends js.Object {
     * @param {number} value
     * @return {number} -1 if negative, +1 if 0 or positive
     */
+  @JSImport("matter-js", "Common.sign")
+  @js.native
   def sign(value: Double): Double = js.native
   
   /**
@@ -261,6 +318,8 @@ object Common extends js.Object {
     * @param {object} graph
     * @return {array} Partially ordered set of vertices in topological order.
     */
+  @JSImport("matter-js", "Common.topologicalSort")
+  @js.native
   def topologicalSort(graph: js.Object): js.Array[_] = js.native
   
   /**
@@ -269,6 +328,8 @@ object Common extends js.Object {
     * @param {} obj
     * @return {array} Array of the objects property values
     */
+  @JSImport("matter-js", "Common.values")
+  @js.native
   def values(obj: js.Object): js.Array[_] = js.native
   
   /**
@@ -277,5 +338,7 @@ object Common extends js.Object {
     * @method warn
     * @param ...objs {} The objects to log.
     */
+  @JSImport("matter-js", "Common.warn")
+  @js.native
   def warn(): js.Any = js.native
 }

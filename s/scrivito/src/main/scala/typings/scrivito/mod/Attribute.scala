@@ -1,5 +1,6 @@
 package typings.scrivito.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.scrivito.scrivitoStrings.referencelist
   - typings.scrivito.scrivitoStrings.widgetlist
 */
-trait Attribute extends js.Object
+trait Attribute extends StObject
 object Attribute {
   
   @scala.inline

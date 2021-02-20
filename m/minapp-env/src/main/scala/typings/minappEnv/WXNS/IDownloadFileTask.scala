@@ -1,12 +1,13 @@
 package typings.minappEnv.WXNS
 
 import typings.minappEnv.AnyFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDownloadFileTask extends js.Object {
+trait IDownloadFileTask extends StObject {
   
   def abort(args: js.Any*): js.Any = js.native
   @JSName("abort")

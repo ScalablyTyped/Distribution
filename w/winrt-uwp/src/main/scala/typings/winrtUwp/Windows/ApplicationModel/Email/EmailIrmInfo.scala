@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents email information rights management (IRM) info. */
 @js.native
-trait EmailIrmInfo extends js.Object {
+trait EmailIrmInfo extends StObject {
   
   /** Gets or sets a Boolean value that indicates if an email message is allowed to be edited. */
   var canEdit: Boolean = js.native
@@ -67,54 +68,42 @@ object EmailIrmInfo {
   }
   
   @scala.inline
-  implicit class EmailIrmInfoOps[Self <: EmailIrmInfo] (val x: Self) extends AnyVal {
+  implicit class EmailIrmInfoMutableBuilder[Self <: EmailIrmInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanExtractData(value: Boolean): Self = StObject.set(x, "canExtractData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanForward(value: Boolean): Self = StObject.set(x, "canForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanEdit(value: Boolean): Self = this.set("canEdit", value.asInstanceOf[js.Any])
+    def setCanModifyRecipientsOnResponse(value: Boolean): Self = StObject.set(x, "canModifyRecipientsOnResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanExtractData(value: Boolean): Self = this.set("canExtractData", value.asInstanceOf[js.Any])
+    def setCanPrintData(value: Boolean): Self = StObject.set(x, "canPrintData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanForward(value: Boolean): Self = this.set("canForward", value.asInstanceOf[js.Any])
+    def setCanRemoveIrmOnResponse(value: Boolean): Self = StObject.set(x, "canRemoveIrmOnResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanModifyRecipientsOnResponse(value: Boolean): Self = this.set("canModifyRecipientsOnResponse", value.asInstanceOf[js.Any])
+    def setCanReply(value: Boolean): Self = StObject.set(x, "canReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanPrintData(value: Boolean): Self = this.set("canPrintData", value.asInstanceOf[js.Any])
+    def setCanReplyAll(value: Boolean): Self = StObject.set(x, "canReplyAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanRemoveIrmOnResponse(value: Boolean): Self = this.set("canRemoveIrmOnResponse", value.asInstanceOf[js.Any])
+    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanReply(value: Boolean): Self = this.set("canReply", value.asInstanceOf[js.Any])
+    def setIsIrmOriginator(value: Boolean): Self = StObject.set(x, "isIrmOriginator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanReplyAll(value: Boolean): Self = this.set("canReplyAll", value.asInstanceOf[js.Any])
+    def setIsProgramaticAccessAllowed(value: Boolean): Self = StObject.set(x, "isProgramaticAccessAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: Date): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsIrmOriginator(value: Boolean): Self = this.set("isIrmOriginator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsProgramaticAccessAllowed(value: Boolean): Self = this.set("isProgramaticAccessAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplate(value: EmailIrmTemplate): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplate(value: EmailIrmTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

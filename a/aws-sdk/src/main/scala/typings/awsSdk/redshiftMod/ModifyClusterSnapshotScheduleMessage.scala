@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyClusterSnapshotScheduleMessage extends js.Object {
+trait ModifyClusterSnapshotScheduleMessage extends StObject {
   
   /**
     * A unique identifier for the cluster whose snapshot schedule you want to modify. 
@@ -31,33 +32,21 @@ object ModifyClusterSnapshotScheduleMessage {
   }
   
   @scala.inline
-  implicit class ModifyClusterSnapshotScheduleMessageOps[Self <: ModifyClusterSnapshotScheduleMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyClusterSnapshotScheduleMessageMutableBuilder[Self <: ModifyClusterSnapshotScheduleMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisassociateSchedule(value: BooleanOptional): Self = StObject.set(x, "DisassociateSchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisassociateScheduleUndefined: Self = StObject.set(x, "DisassociateSchedule", js.undefined)
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setScheduleIdentifier(value: String): Self = StObject.set(x, "ScheduleIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisassociateSchedule(value: BooleanOptional): Self = this.set("DisassociateSchedule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisassociateSchedule: Self = this.set("DisassociateSchedule", js.undefined)
-    
-    @scala.inline
-    def setScheduleIdentifier(value: String): Self = this.set("ScheduleIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleIdentifier: Self = this.set("ScheduleIdentifier", js.undefined)
+    def setScheduleIdentifierUndefined: Self = StObject.set(x, "ScheduleIdentifier", js.undefined)
   }
 }

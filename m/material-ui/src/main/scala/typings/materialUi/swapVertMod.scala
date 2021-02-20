@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/action/swap-vert", JSImport.Namespace)
-@js.native
-object swapVertMod extends js.Object {
+object swapVertMod {
   
+  @JSImport("material-ui/svg-icons/action/swap-vert", JSImport.Default)
+  @js.native
+  class default () extends ActionSwapVert
+  
+  @JSImport("material-ui/svg-icons/action/swap-vert", "ActionSwapVert")
   @js.native
   class ActionSwapVert ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPrintTaskOptionsCoreProperties extends js.Object {
+trait IPrintTaskOptionsCoreProperties extends StObject {
   
   var binding: PrintBinding = js.native
   
@@ -56,57 +57,45 @@ object IPrintTaskOptionsCoreProperties {
   }
   
   @scala.inline
-  implicit class IPrintTaskOptionsCorePropertiesOps[Self <: IPrintTaskOptionsCoreProperties] (val x: Self) extends AnyVal {
+  implicit class IPrintTaskOptionsCorePropertiesMutableBuilder[Self <: IPrintTaskOptionsCoreProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinding(value: PrintBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollation(value: PrintCollation): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorMode(value: PrintColorMode): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinding(value: PrintBinding): Self = this.set("binding", value.asInstanceOf[js.Any])
+    def setDuplex(value: PrintDuplex): Self = StObject.set(x, "duplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollation(value: PrintCollation): Self = this.set("collation", value.asInstanceOf[js.Any])
+    def setHolePunch(value: PrintHolePunch): Self = StObject.set(x, "holePunch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMode(value: PrintColorMode): Self = this.set("colorMode", value.asInstanceOf[js.Any])
+    def setMaxCopies(value: Double): Self = StObject.set(x, "maxCopies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplex(value: PrintDuplex): Self = this.set("duplex", value.asInstanceOf[js.Any])
+    def setMediaSize(value: PrintMediaSize): Self = StObject.set(x, "mediaSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHolePunch(value: PrintHolePunch): Self = this.set("holePunch", value.asInstanceOf[js.Any])
+    def setMediaType(value: PrintMediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCopies(value: Double): Self = this.set("maxCopies", value.asInstanceOf[js.Any])
+    def setMinCopies(value: Double): Self = StObject.set(x, "minCopies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaSize(value: PrintMediaSize): Self = this.set("mediaSize", value.asInstanceOf[js.Any])
+    def setNumberOfCopies(value: Double): Self = StObject.set(x, "numberOfCopies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: PrintMediaType): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setOrientation(value: PrintOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinCopies(value: Double): Self = this.set("minCopies", value.asInstanceOf[js.Any])
+    def setPrintQuality(value: PrintQuality): Self = StObject.set(x, "printQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfCopies(value: Double): Self = this.set("numberOfCopies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientation(value: PrintOrientation): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrintQuality(value: PrintQuality): Self = this.set("printQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStaple(value: PrintStaple): Self = this.set("staple", value.asInstanceOf[js.Any])
+    def setStaple(value: PrintStaple): Self = StObject.set(x, "staple", value.asInstanceOf[js.Any])
   }
 }

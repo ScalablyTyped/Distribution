@@ -1,17 +1,18 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Icon extends js.Object
+sealed trait Icon extends StObject
 /**
   * Predefined icons that can be used in various UI objects, such as ImageButton or KeyValue widgets.
   */
 @JSGlobal("GoogleAppsScript.Card_Service.Icon")
 @js.native
-object Icon extends js.Object {
+object Icon extends StObject {
   
   @js.native
   sealed trait AIRPLANE extends Icon

@@ -2,6 +2,7 @@ package typings.winjs.WinJS.UI
 
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Displays a SplitView which renders a collapsable pane next to arbitrary HTML content.
   **/
 @js.native
-trait SplitView extends js.Object {
+trait SplitView extends StObject {
   
   /**
     * Registers an event handler for the specified event.

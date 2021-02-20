@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TfvcCheckinEventData extends js.Object {
+trait TfvcCheckinEventData extends StObject {
   
   var changeset: TfvcChangeset = js.native
   
@@ -21,24 +22,12 @@ object TfvcCheckinEventData {
   }
   
   @scala.inline
-  implicit class TfvcCheckinEventDataOps[Self <: TfvcCheckinEventData] (val x: Self) extends AnyVal {
+  implicit class TfvcCheckinEventDataMutableBuilder[Self <: TfvcCheckinEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeset(value: TfvcChangeset): Self = StObject.set(x, "changeset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChangeset(value: TfvcChangeset): Self = this.set("changeset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProject(value: TeamProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
   }
 }

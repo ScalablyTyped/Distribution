@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * by the seller, but they can be returned in a get or list request.
   */
 @js.native
-trait SchemaNonGuaranteedAuctionTerms extends js.Object {
+trait SchemaNonGuaranteedAuctionTerms extends StObject {
   
   /**
     * True if open auction buyers are allowed to compete with invited buyers in
@@ -31,33 +32,21 @@ object SchemaNonGuaranteedAuctionTerms {
   }
   
   @scala.inline
-  implicit class SchemaNonGuaranteedAuctionTermsOps[Self <: SchemaNonGuaranteedAuctionTerms] (val x: Self) extends AnyVal {
+  implicit class SchemaNonGuaranteedAuctionTermsMutableBuilder[Self <: SchemaNonGuaranteedAuctionTerms] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoOptimizePrivateAuction(value: Boolean): Self = StObject.set(x, "autoOptimizePrivateAuction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoOptimizePrivateAuctionUndefined: Self = StObject.set(x, "autoOptimizePrivateAuction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservePricesPerBuyer(value: js.Array[SchemaPricePerBuyer]): Self = StObject.set(x, "reservePricesPerBuyer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoOptimizePrivateAuction(value: Boolean): Self = this.set("autoOptimizePrivateAuction", value.asInstanceOf[js.Any])
+    def setReservePricesPerBuyerUndefined: Self = StObject.set(x, "reservePricesPerBuyer", js.undefined)
     
     @scala.inline
-    def deleteAutoOptimizePrivateAuction: Self = this.set("autoOptimizePrivateAuction", js.undefined)
-    
-    @scala.inline
-    def setReservePricesPerBuyerVarargs(value: SchemaPricePerBuyer*): Self = this.set("reservePricesPerBuyer", js.Array(value :_*))
-    
-    @scala.inline
-    def setReservePricesPerBuyer(value: js.Array[SchemaPricePerBuyer]): Self = this.set("reservePricesPerBuyer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservePricesPerBuyer: Self = this.set("reservePricesPerBuyer", js.undefined)
+    def setReservePricesPerBuyerVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "reservePricesPerBuyer", js.Array(value :_*))
   }
 }

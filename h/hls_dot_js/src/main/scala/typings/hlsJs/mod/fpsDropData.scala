@@ -1,11 +1,12 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait fpsDropData extends js.Object {
+trait fpsDropData extends StObject {
   
   var currentDecoded: Double = js.native
   
@@ -22,27 +23,15 @@ object fpsDropData {
   }
   
   @scala.inline
-  implicit class fpsDropDataOps[Self <: fpsDropData] (val x: Self) extends AnyVal {
+  implicit class fpsDropDataMutableBuilder[Self <: fpsDropData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentDecoded(value: Double): Self = StObject.set(x, "currentDecoded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentDropped(value: Double): Self = StObject.set(x, "currentDropped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentDecoded(value: Double): Self = this.set("currentDecoded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentDropped(value: Double): Self = this.set("currentDropped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalDroppedFragmes(value: Double): Self = this.set("totalDroppedFragmes", value.asInstanceOf[js.Any])
+    def setTotalDroppedFragmes(value: Double): Self = StObject.set(x, "totalDroppedFragmes", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,33 +21,21 @@ object SetMembershipsParameters {
   }
   
   @scala.inline
-  implicit class SetMembershipsParametersOps[Self <: SetMembershipsParameters[_], Custom /* <: ObjectCustom */] (val x: Self with SetMembershipsParameters[Custom]) extends AnyVal {
+  implicit class SetMembershipsParametersMutableBuilder[Self <: SetMembershipsParameters[_], Custom /* <: ObjectCustom */] (val x: Self with SetMembershipsParameters[Custom]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: js.Array[String | SetCustom[Custom]]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelsVarargs(value: (String | SetCustom[Custom])*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setChannelsVarargs(value: (String | SetCustom[Custom])*): Self = this.set("channels", js.Array(value :_*))
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[String | SetCustom[Custom]]): Self = this.set("channels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
-    
-    @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUuid: Self = this.set("uuid", js.undefined)
+    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

@@ -1,16 +1,16 @@
 package typings.materialAnimation
 
 import typings.std.FrameRequestCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/animation/animationframe", JSImport.Namespace)
-@js.native
-object animationframeMod extends js.Object {
+object animationframeMod {
   
+  @JSImport("@material/animation/animationframe", "AnimationFrame")
   @js.native
-  class AnimationFrame () extends js.Object {
+  class AnimationFrame () extends StObject {
     
     /**
       * Cancels a queued callback with the given key.

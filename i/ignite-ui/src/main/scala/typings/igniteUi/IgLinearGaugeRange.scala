@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,78 +76,66 @@ object IgLinearGaugeRange {
   }
   
   @scala.inline
-  implicit class IgLinearGaugeRangeOps[Self <: IgLinearGaugeRange] (val x: Self) extends AnyVal {
+  implicit class IgLinearGaugeRangeMutableBuilder[Self <: IgLinearGaugeRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrush(value: String): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrushUndefined: Self = StObject.set(x, "brush", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndValue(value: Double): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrush(value: String): Self = this.set("brush", value.asInstanceOf[js.Any])
+    def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
     
     @scala.inline
-    def deleteBrush: Self = this.set("brush", js.undefined)
+    def setInnerEndExtent(value: Double): Self = StObject.set(x, "innerEndExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndValue(value: Double): Self = this.set("endValue", value.asInstanceOf[js.Any])
+    def setInnerEndExtentUndefined: Self = StObject.set(x, "innerEndExtent", js.undefined)
     
     @scala.inline
-    def deleteEndValue: Self = this.set("endValue", js.undefined)
+    def setInnerStartExtent(value: Double): Self = StObject.set(x, "innerStartExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerEndExtent(value: Double): Self = this.set("innerEndExtent", value.asInstanceOf[js.Any])
+    def setInnerStartExtentUndefined: Self = StObject.set(x, "innerStartExtent", js.undefined)
     
     @scala.inline
-    def deleteInnerEndExtent: Self = this.set("innerEndExtent", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerStartExtent(value: Double): Self = this.set("innerStartExtent", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInnerStartExtent: Self = this.set("innerStartExtent", js.undefined)
+    def setOuterEndExtent(value: Double): Self = StObject.set(x, "outerEndExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOuterEndExtentUndefined: Self = StObject.set(x, "outerEndExtent", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOuterStartExtent(value: Double): Self = StObject.set(x, "outerStartExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterEndExtent(value: Double): Self = this.set("outerEndExtent", value.asInstanceOf[js.Any])
+    def setOuterStartExtentUndefined: Self = StObject.set(x, "outerStartExtent", js.undefined)
     
     @scala.inline
-    def deleteOuterEndExtent: Self = this.set("outerEndExtent", js.undefined)
+    def setOutline(value: String): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterStartExtent(value: Double): Self = this.set("outerStartExtent", value.asInstanceOf[js.Any])
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def deleteOuterStartExtent: Self = this.set("outerStartExtent", js.undefined)
+    def setStartValue(value: Double): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutline(value: String): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
     
     @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
+    def setStrokeThickness(value: Double): Self = StObject.set(x, "strokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartValue(value: Double): Self = this.set("startValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartValue: Self = this.set("startValue", js.undefined)
-    
-    @scala.inline
-    def setStrokeThickness(value: Double): Self = this.set("strokeThickness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeThickness: Self = this.set("strokeThickness", js.undefined)
+    def setStrokeThicknessUndefined: Self = StObject.set(x, "strokeThickness", js.undefined)
   }
 }

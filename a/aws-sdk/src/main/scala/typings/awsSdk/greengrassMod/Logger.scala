@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Logger extends js.Object {
+trait Logger extends StObject {
   
   /**
     * The component that will be subject to logging.
@@ -41,36 +42,24 @@ object Logger {
   }
   
   @scala.inline
-  implicit class LoggerOps[Self <: Logger] (val x: Self) extends AnyVal {
+  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: LoggerComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevel(value: LoggerLevel): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: LoggerComponent): Self = this.set("Component", value.asInstanceOf[js.Any])
+    def setSpace(value: integer): Self = StObject.set(x, "Space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setSpaceUndefined: Self = StObject.set(x, "Space", js.undefined)
     
     @scala.inline
-    def setLevel(value: LoggerLevel): Self = this.set("Level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: LoggerType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpace(value: integer): Self = this.set("Space", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpace: Self = this.set("Space", js.undefined)
+    def setType(value: LoggerType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

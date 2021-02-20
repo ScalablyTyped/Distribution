@@ -1,5 +1,6 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,26 +29,14 @@ object CitySearch {
   }
   
   @scala.inline
-  implicit class CitySearchOps[Self <: CitySearch] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class CitySearchMutableBuilder[Self <: CitySearch] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setGetCityByIp(
       value: (String, js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit]) => Unit
-    ): Self = this.set("getCityByIp", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getCityByIp", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetLocalCity(value: js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit] => Unit): Self = this.set("getLocalCity", js.Any.fromFunction1(value))
+    def setGetLocalCity(value: js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit] => Unit): Self = StObject.set(x, "getLocalCity", js.Any.fromFunction1(value))
   }
 }

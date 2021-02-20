@@ -17,6 +17,7 @@ import typings.textBuffer.mod.global.TextBuffer.Options.FindMarker
 import typings.textBuffer.mod.global.TextBuffer.Options.ScanContext
 import typings.textBuffer.mod.global.TextBuffer.Structures.BufferScanResult
 import typings.textBuffer.mod.global.TextBuffer.Structures.ContextualBufferScanResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  annotate logical regions in the text.
   */
 @js.native
-trait TextBuffer extends js.Object {
+trait TextBuffer extends StObject {
   
   /**
     *  Call within a transaction to terminate the function's execution and

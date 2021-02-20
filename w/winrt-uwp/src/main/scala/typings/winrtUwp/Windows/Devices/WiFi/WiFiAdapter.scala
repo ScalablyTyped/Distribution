@@ -8,13 +8,14 @@ import typings.winrtUwp.Windows.Networking.Connectivity.NetworkAdapter
 import typings.winrtUwp.Windows.Security.Credentials.PasswordCredential
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.availablenetworkschanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Use this class to enumerate local Wi-Fi adapters, initiate Wi-Fi scans, enumerate scan results, and to connect or disconnect individual adapters. */
 @js.native
-trait WiFiAdapter extends js.Object {
+trait WiFiAdapter extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

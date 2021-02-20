@@ -5,30 +5,47 @@ import typings.flatpickr.flatpickrNumbers.`1`
 import typings.flatpickr.flatpickrStrings.increment
 import typings.std.EventTarget
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("flatpickr/dist/utils", JSImport.Namespace)
-@js.native
-object utilsMod extends js.Object {
+object utilsMod {
   
+  @JSImport("flatpickr/dist/utils", "arrayify")
+  @js.native
   def arrayify[T](obj: T): js.Array[T] = js.native
+  @JSImport("flatpickr/dist/utils", "arrayify")
+  @js.native
   def arrayify[T](obj: js.Array[T]): js.Array[T] = js.native
   
+  @JSImport("flatpickr/dist/utils", "debounce")
+  @js.native
   def debounce[F /* <: js.Function */](func: F, wait: Double): js.ThisFunction0[/* this */ js.Function, Unit] = js.native
+  @JSImport("flatpickr/dist/utils", "debounce")
+  @js.native
   def debounce[F /* <: js.Function */](func: F, wait: Double, immediate: Boolean): js.ThisFunction0[/* this */ js.Function, Unit] = js.native
   
+  @JSImport("flatpickr/dist/utils", "int")
+  @js.native
   def int(bool: Boolean): `1` | `0` = js.native
   
+  @JSImport("flatpickr/dist/utils", "pad")
+  @js.native
   def pad(number: String): String = js.native
+  @JSImport("flatpickr/dist/utils", "pad")
+  @js.native
   def pad(number: String, length: Double): String = js.native
+  @JSImport("flatpickr/dist/utils", "pad")
+  @js.native
   def pad(number: Double): String = js.native
+  @JSImport("flatpickr/dist/utils", "pad")
+  @js.native
   def pad(number: Double, length: Double): String = js.native
   
   /* Inlined std.MouseEvent & {  delta :number,   type :'increment'} */
   @js.native
-  trait IncrementEvent extends js.Object {
+  trait IncrementEvent extends StObject {
     
     val AT_TARGET: Double = js.native
     

@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lower extends js.Object {
+trait Lower extends StObject {
   
   var lower: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Lower {
   }
   
   @scala.inline
-  implicit class LowerOps[Self <: Lower] (val x: Self) extends AnyVal {
+  implicit class LowerMutableBuilder[Self <: Lower] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLower(value: String): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpper(value: String): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLower(value: String): Self = this.set("lower", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLower: Self = this.set("lower", js.undefined)
-    
-    @scala.inline
-    def setUpper(value: String): Self = this.set("upper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpper: Self = this.set("upper", js.undefined)
+    def setUpperUndefined: Self = StObject.set(x, "upper", js.undefined)
   }
 }

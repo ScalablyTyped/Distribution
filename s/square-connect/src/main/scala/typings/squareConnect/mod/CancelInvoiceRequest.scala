@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CancelInvoiceRequest")
 @js.native
-class CancelInvoiceRequest () extends js.Object {
+class CancelInvoiceRequest () extends StObject {
   
   /**
     * The version of the `invoice` to cancel.

@@ -1,6 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
 import typings.babylonjs.engineMod.Engine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,11 +29,21 @@ class UniformBuffer protected ()
   def this(engine: Engine, data: js.Array[Double], dynamic: Boolean) = this()
 }
 /* static members */
-@JSImport("babylonjs/Materials/index", "UniformBuffer")
-@js.native
-object UniformBuffer extends js.Object {
+object UniformBuffer {
   
-  var _MAX_UNIFORM_SIZE: js.Any = js.native
+  @JSImport("babylonjs/Materials/index", "UniformBuffer")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var _tempBuffer: js.Any = js.native
+  @JSImport("babylonjs/Materials/index", "UniformBuffer._MAX_UNIFORM_SIZE")
+  @js.native
+  def _MAX_UNIFORM_SIZE: js.Any = js.native
+  @scala.inline
+  def _MAX_UNIFORM_SIZE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_UNIFORM_SIZE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs/Materials/index", "UniformBuffer._tempBuffer")
+  @js.native
+  def _tempBuffer: js.Any = js.native
+  @scala.inline
+  def _tempBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tempBuffer")(x.asInstanceOf[js.Any])
 }

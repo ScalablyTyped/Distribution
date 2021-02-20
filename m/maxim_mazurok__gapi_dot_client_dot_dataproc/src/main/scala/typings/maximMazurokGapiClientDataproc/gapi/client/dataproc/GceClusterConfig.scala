@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GceClusterConfig extends js.Object {
+trait GceClusterConfig extends StObject {
   
   /**
     * Optional. If true, all instances in the cluster will only have internal IP addresses. By default, clusters are not restricted to internal IP addresses, and will have ephemeral
@@ -82,94 +83,82 @@ object GceClusterConfig {
   }
   
   @scala.inline
-  implicit class GceClusterConfigOps[Self <: GceClusterConfig] (val x: Self) extends AnyVal {
+  implicit class GceClusterConfigMutableBuilder[Self <: GceClusterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInternalIpOnly(value: Boolean): Self = StObject.set(x, "internalIpOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInternalIpOnly(value: Boolean): Self = this.set("internalIpOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInternalIpOnly: Self = this.set("internalIpOnly", js.undefined)
+    def setInternalIpOnlyUndefined: Self = StObject.set(x, "internalIpOnly", js.undefined)
     
     @scala.inline
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.GceClusterConfig with TopLevel[js.Any]
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setNetworkUri(value: String): Self = this.set("networkUri", value.asInstanceOf[js.Any])
+    def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetworkUri: Self = this.set("networkUri", js.undefined)
+    def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
     
     @scala.inline
-    def setNodeGroupAffinity(value: NodeGroupAffinity): Self = this.set("nodeGroupAffinity", value.asInstanceOf[js.Any])
+    def setNodeGroupAffinity(value: NodeGroupAffinity): Self = StObject.set(x, "nodeGroupAffinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodeGroupAffinity: Self = this.set("nodeGroupAffinity", js.undefined)
+    def setNodeGroupAffinityUndefined: Self = StObject.set(x, "nodeGroupAffinity", js.undefined)
     
     @scala.inline
-    def setPrivateIpv6GoogleAccess(value: String): Self = this.set("privateIpv6GoogleAccess", value.asInstanceOf[js.Any])
+    def setPrivateIpv6GoogleAccess(value: String): Self = StObject.set(x, "privateIpv6GoogleAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivateIpv6GoogleAccess: Self = this.set("privateIpv6GoogleAccess", js.undefined)
+    def setPrivateIpv6GoogleAccessUndefined: Self = StObject.set(x, "privateIpv6GoogleAccess", js.undefined)
     
     @scala.inline
-    def setReservationAffinity(value: ReservationAffinity): Self = this.set("reservationAffinity", value.asInstanceOf[js.Any])
+    def setReservationAffinity(value: ReservationAffinity): Self = StObject.set(x, "reservationAffinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReservationAffinity: Self = this.set("reservationAffinity", js.undefined)
+    def setReservationAffinityUndefined: Self = StObject.set(x, "reservationAffinity", js.undefined)
     
     @scala.inline
-    def setServiceAccount(value: String): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    def setServiceAccountScopes(value: js.Array[String]): Self = StObject.set(x, "serviceAccountScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccountScopesVarargs(value: String*): Self = this.set("serviceAccountScopes", js.Array(value :_*))
+    def setServiceAccountScopesUndefined: Self = StObject.set(x, "serviceAccountScopes", js.undefined)
     
     @scala.inline
-    def setServiceAccountScopes(value: js.Array[String]): Self = this.set("serviceAccountScopes", value.asInstanceOf[js.Any])
+    def setServiceAccountScopesVarargs(value: String*): Self = StObject.set(x, "serviceAccountScopes", js.Array(value :_*))
     
     @scala.inline
-    def deleteServiceAccountScopes: Self = this.set("serviceAccountScopes", js.undefined)
+    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     @scala.inline
-    def setSubnetworkUri(value: String): Self = this.set("subnetworkUri", value.asInstanceOf[js.Any])
+    def setSubnetworkUri(value: String): Self = StObject.set(x, "subnetworkUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubnetworkUri: Self = this.set("subnetworkUri", js.undefined)
+    def setSubnetworkUriUndefined: Self = StObject.set(x, "subnetworkUri", js.undefined)
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setZoneUri(value: String): Self = this.set("zoneUri", value.asInstanceOf[js.Any])
+    def setZoneUri(value: String): Self = StObject.set(x, "zoneUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZoneUri: Self = this.set("zoneUri", js.undefined)
+    def setZoneUriUndefined: Self = StObject.set(x, "zoneUri", js.undefined)
   }
 }

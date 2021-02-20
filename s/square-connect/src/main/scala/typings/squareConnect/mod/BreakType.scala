@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "BreakType")
 @js.native
-class BreakType () extends js.Object {
+class BreakType () extends StObject {
   
   /**
     * A human-readable name for this type of break. Will be displayed to employees in Square products.

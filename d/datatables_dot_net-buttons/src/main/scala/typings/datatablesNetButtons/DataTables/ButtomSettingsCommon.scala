@@ -1,12 +1,13 @@
 package typings.datatablesNetButtons.DataTables
 
 import typings.datatablesNet.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtomSettingsCommon extends js.Object {
+trait ButtomSettingsCommon extends StObject {
   
   /**
     * Action to take when the button is activated
@@ -77,93 +78,81 @@ object ButtomSettingsCommon {
   }
   
   @scala.inline
-  implicit class ButtomSettingsCommonOps[Self <: ButtomSettingsCommon] (val x: Self) extends AnyVal {
+  implicit class ButtomSettingsCommonMutableBuilder[Self <: ButtomSettingsCommon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: (/* e */ js.Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailable(value: (/* dt */ Api, /* config */ js.Any) => Boolean): Self = StObject.set(x, "available", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAction(value: (/* e */ js.Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = this.set("action", js.Any.fromFunction4(value))
+    def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: (/* dt */ Api, /* config */ js.Any) => Boolean): Self = this.set("available", js.Any.fromFunction2(value))
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteAvailable: Self = this.set("available", js.undefined)
+    def setDestroy(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit): Self = this.set("destroy", js.Any.fromFunction3(value))
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setExtend(value: String): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setInit(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setExtend(value: String): Self = this.set("extend", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteExtend: Self = this.set("extend", js.undefined)
+    def setKey(value: String | ButtonKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit): Self = this.set("init", js.Any.fromFunction3(value))
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String | ButtonKey): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setText(value: String | FunctionButtonText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setTextFunction3(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => String): Self = StObject.set(x, "text", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setTextFunction3(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => String): Self = this.set("text", js.Any.fromFunction3(value))
+    def setTitleAttr(value: String): Self = StObject.set(x, "titleAttr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String | FunctionButtonText): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTitleAttr(value: String): Self = this.set("titleAttr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleAttr: Self = this.set("titleAttr", js.undefined)
+    def setTitleAttrUndefined: Self = StObject.set(x, "titleAttr", js.undefined)
   }
 }

@@ -1,15 +1,16 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ascending extends js.Object {
-  
-  var ascending: scala.Double = js.native
+trait Ascending extends StObject {
   
   var default: scala.Double = js.native
+  
+  var ascending: scala.Double = js.native
   
   var descending: scala.Double = js.native
 }
@@ -22,27 +23,15 @@ object Ascending {
   }
   
   @scala.inline
-  implicit class AscendingOps[Self <: Ascending] (val x: Self) extends AnyVal {
+  implicit class AscendingMutableBuilder[Self <: Ascending] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscending(value: scala.Double): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefault(value: scala.Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAscending(value: scala.Double): Self = this.set("ascending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefault(value: scala.Double): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescending(value: scala.Double): Self = this.set("descending", value.asInstanceOf[js.Any])
+    def setDescending(value: scala.Double): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
   }
 }

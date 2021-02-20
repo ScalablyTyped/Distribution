@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsDynamoDbTableReplica extends js.Object {
+trait AwsDynamoDbTableReplica extends StObject {
   
   /**
     * List of global secondary indexes for the replica.
@@ -46,57 +47,45 @@ object AwsDynamoDbTableReplica {
   }
   
   @scala.inline
-  implicit class AwsDynamoDbTableReplicaOps[Self <: AwsDynamoDbTableReplica] (val x: Self) extends AnyVal {
+  implicit class AwsDynamoDbTableReplicaMutableBuilder[Self <: AwsDynamoDbTableReplica] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalSecondaryIndexes(value: AwsDynamoDbTableReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalSecondaryIndexesVarargs(value: AwsDynamoDbTableReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalSecondaryIndexesVarargs(value: AwsDynamoDbTableReplicaGlobalSecondaryIndex*): Self = this.set("GlobalSecondaryIndexes", js.Array(value :_*))
+    def setKmsMasterKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalSecondaryIndexes(value: AwsDynamoDbTableReplicaGlobalSecondaryIndexList): Self = this.set("GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "KmsMasterKeyId", js.undefined)
     
     @scala.inline
-    def deleteGlobalSecondaryIndexes: Self = this.set("GlobalSecondaryIndexes", js.undefined)
+    def setProvisionedThroughputOverride(value: AwsDynamoDbTableProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsMasterKeyId(value: NonEmptyString): Self = this.set("KmsMasterKeyId", value.asInstanceOf[js.Any])
+    def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
     
     @scala.inline
-    def deleteKmsMasterKeyId: Self = this.set("KmsMasterKeyId", js.undefined)
+    def setRegionName(value: NonEmptyString): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedThroughputOverride(value: AwsDynamoDbTableProvisionedThroughputOverride): Self = this.set("ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+    def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
     
     @scala.inline
-    def deleteProvisionedThroughputOverride: Self = this.set("ProvisionedThroughputOverride", js.undefined)
+    def setReplicaStatus(value: NonEmptyString): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionName(value: NonEmptyString): Self = this.set("RegionName", value.asInstanceOf[js.Any])
+    def setReplicaStatusDescription(value: NonEmptyString): Self = StObject.set(x, "ReplicaStatusDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegionName: Self = this.set("RegionName", js.undefined)
+    def setReplicaStatusDescriptionUndefined: Self = StObject.set(x, "ReplicaStatusDescription", js.undefined)
     
     @scala.inline
-    def setReplicaStatus(value: NonEmptyString): Self = this.set("ReplicaStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaStatus: Self = this.set("ReplicaStatus", js.undefined)
-    
-    @scala.inline
-    def setReplicaStatusDescription(value: NonEmptyString): Self = this.set("ReplicaStatusDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaStatusDescription: Self = this.set("ReplicaStatusDescription", js.undefined)
+    def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
   }
 }

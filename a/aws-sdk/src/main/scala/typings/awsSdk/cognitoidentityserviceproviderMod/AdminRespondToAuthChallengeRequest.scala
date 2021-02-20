@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminRespondToAuthChallengeRequest extends js.Object {
+trait AdminRespondToAuthChallengeRequest extends StObject {
   
   /**
     * The analytics metadata for collecting Amazon Pinpoint metrics for AdminRespondToAuthChallenge calls.
@@ -56,57 +57,45 @@ object AdminRespondToAuthChallengeRequest {
   }
   
   @scala.inline
-  implicit class AdminRespondToAuthChallengeRequestOps[Self <: AdminRespondToAuthChallengeRequest] (val x: Self) extends AnyVal {
+  implicit class AdminRespondToAuthChallengeRequestMutableBuilder[Self <: AdminRespondToAuthChallengeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChallengeName(value: ChallengeNameType): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallengeName(value: ChallengeNameType): Self = this.set("ChallengeName", value.asInstanceOf[js.Any])
+    def setChallengeResponses(value: ChallengeResponsesType): Self = StObject.set(x, "ChallengeResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    def setChallengeResponsesUndefined: Self = StObject.set(x, "ChallengeResponses", js.undefined)
     
     @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = this.set("AnalyticsMetadata", value.asInstanceOf[js.Any])
+    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnalyticsMetadata: Self = this.set("AnalyticsMetadata", js.undefined)
+    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
     @scala.inline
-    def setChallengeResponses(value: ChallengeResponsesType): Self = this.set("ChallengeResponses", value.asInstanceOf[js.Any])
+    def setContextData(value: ContextDataType): Self = StObject.set(x, "ContextData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChallengeResponses: Self = this.set("ChallengeResponses", js.undefined)
+    def setContextDataUndefined: Self = StObject.set(x, "ContextData", js.undefined)
     
     @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = this.set("ClientMetadata", value.asInstanceOf[js.Any])
+    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientMetadata: Self = this.set("ClientMetadata", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
     
     @scala.inline
-    def setContextData(value: ContextDataType): Self = this.set("ContextData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContextData: Self = this.set("ContextData", js.undefined)
-    
-    @scala.inline
-    def setSession(value: SessionType): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("Session", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

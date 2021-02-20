@@ -1,12 +1,13 @@
 package typings.semanticUiDropdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'forceSelection'> */
 @js.native
-trait PickImplforceSelection extends js.Object {
+trait PickImplforceSelection extends StObject {
   
   var forceSelection: Boolean = js.native
 }
@@ -19,21 +20,9 @@ object PickImplforceSelection {
   }
   
   @scala.inline
-  implicit class PickImplforceSelectionOps[Self <: PickImplforceSelection] (val x: Self) extends AnyVal {
+  implicit class PickImplforceSelectionMutableBuilder[Self <: PickImplforceSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForceSelection(value: Boolean): Self = this.set("forceSelection", value.asInstanceOf[js.Any])
+    def setForceSelection(value: Boolean): Self = StObject.set(x, "forceSelection", value.asInstanceOf[js.Any])
   }
 }

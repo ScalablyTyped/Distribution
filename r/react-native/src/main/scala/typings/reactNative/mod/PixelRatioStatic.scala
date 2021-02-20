@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PixelRatioStatic extends js.Object {
+trait PixelRatioStatic extends StObject {
   
   /*
     Returns the device pixel density. Some examples:
@@ -72,33 +73,21 @@ object PixelRatioStatic {
   }
   
   @scala.inline
-  implicit class PixelRatioStaticOps[Self <: PixelRatioStatic] (val x: Self) extends AnyVal {
+  implicit class PixelRatioStaticMutableBuilder[Self <: PixelRatioStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: () => Double): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFontScale(value: () => Double): Self = StObject.set(x, "getFontScale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPixelSizeForLayoutSize(value: Double => Double): Self = StObject.set(x, "getPixelSizeForLayoutSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: () => Double): Self = this.set("get", js.Any.fromFunction0(value))
+    def setRoundToNearestPixel(value: Double => Double): Self = StObject.set(x, "roundToNearestPixel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFontScale(value: () => Double): Self = this.set("getFontScale", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPixelSizeForLayoutSize(value: Double => Double): Self = this.set("getPixelSizeForLayoutSize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRoundToNearestPixel(value: Double => Double): Self = this.set("roundToNearestPixel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartDetecting(value: () => Unit): Self = this.set("startDetecting", js.Any.fromFunction0(value))
+    def setStartDetecting(value: () => Unit): Self = StObject.set(x, "startDetecting", js.Any.fromFunction0(value))
   }
 }

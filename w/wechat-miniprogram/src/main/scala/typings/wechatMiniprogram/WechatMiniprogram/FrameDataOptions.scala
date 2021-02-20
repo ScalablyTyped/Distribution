@@ -1,13 +1,14 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 视频帧数据，若取不到则返回 null。当缓冲区为空的时候可能暂停取不到数据。 */
 @js.native
-trait FrameDataOptions extends js.Object {
+trait FrameDataOptions extends StObject {
   
   /** 帧数据 */
   var data: ArrayBuffer = js.native
@@ -33,33 +34,21 @@ object FrameDataOptions {
   }
   
   @scala.inline
-  implicit class FrameDataOptionsOps[Self <: FrameDataOptions] (val x: Self) extends AnyVal {
+  implicit class FrameDataOptionsMutableBuilder[Self <: FrameDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPkDts(value: Double): Self = StObject.set(x, "pkDts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: ArrayBuffer): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setPkPts(value: Double): Self = StObject.set(x, "pkPts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPkDts(value: Double): Self = this.set("pkDts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPkPts(value: Double): Self = this.set("pkPts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

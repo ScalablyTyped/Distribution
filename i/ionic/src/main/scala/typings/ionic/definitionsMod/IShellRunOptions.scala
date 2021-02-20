@@ -1,6 +1,7 @@
 package typings.ionic.definitionsMod
 
 import typings.node.NodeJS.WritableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +24,24 @@ object IShellRunOptions {
   }
   
   @scala.inline
-  implicit class IShellRunOptionsOps[Self <: IShellRunOptions] (val x: Self) extends AnyVal {
+  implicit class IShellRunOptionsMutableBuilder[Self <: IShellRunOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKillOnExit(value: Boolean): Self = StObject.set(x, "killOnExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKillOnExitUndefined: Self = StObject.set(x, "killOnExit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKillOnExit(value: Boolean): Self = this.set("killOnExit", value.asInstanceOf[js.Any])
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
     @scala.inline
-    def deleteKillOnExit: Self = this.set("killOnExit", js.undefined)
+    def setTruncateErrorOutput(value: Double): Self = StObject.set(x, "truncateErrorOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStream(value: WritableStream): Self = this.set("stream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
-    
-    @scala.inline
-    def setTruncateErrorOutput(value: Double): Self = this.set("truncateErrorOutput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncateErrorOutput: Self = this.set("truncateErrorOutput", js.undefined)
+    def setTruncateErrorOutputUndefined: Self = StObject.set(x, "truncateErrorOutput", js.undefined)
   }
 }

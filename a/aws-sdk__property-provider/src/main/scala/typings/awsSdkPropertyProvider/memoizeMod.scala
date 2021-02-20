@@ -1,18 +1,19 @@
 package typings.awsSdkPropertyProvider
 
 import typings.awsSdkTypes.utilMod.Provider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/property-provider/dist/cjs/memoize", JSImport.Namespace)
-@js.native
-object memoizeMod extends js.Object {
+object memoizeMod {
   
+  @JSImport("@aws-sdk/property-provider/dist/cjs/memoize", "memoize")
+  @js.native
   val memoize: MemoizeOverload = js.native
   
   @js.native
-  trait MemoizeOverload extends js.Object {
+  trait MemoizeOverload extends StObject {
     
     /**
       *

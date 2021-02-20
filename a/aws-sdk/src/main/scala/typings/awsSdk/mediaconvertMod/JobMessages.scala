@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobMessages extends js.Object {
+trait JobMessages extends StObject {
   
   /**
     * List of messages that are informational only and don't indicate a problem with your job.
@@ -26,36 +27,24 @@ object JobMessages {
   }
   
   @scala.inline
-  implicit class JobMessagesOps[Self <: JobMessages] (val x: Self) extends AnyVal {
+  implicit class JobMessagesMutableBuilder[Self <: JobMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfo(value: listOfString): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoVarargs(value: string*): Self = StObject.set(x, "Info", js.Array(value :_*))
     
     @scala.inline
-    def setInfoVarargs(value: string*): Self = this.set("Info", js.Array(value :_*))
+    def setWarning(value: listOfString): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: listOfString): Self = this.set("Info", value.asInstanceOf[js.Any])
+    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
     
     @scala.inline
-    def deleteInfo: Self = this.set("Info", js.undefined)
-    
-    @scala.inline
-    def setWarningVarargs(value: string*): Self = this.set("Warning", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarning(value: listOfString): Self = this.set("Warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("Warning", js.undefined)
+    def setWarningVarargs(value: string*): Self = StObject.set(x, "Warning", js.Array(value :_*))
   }
 }

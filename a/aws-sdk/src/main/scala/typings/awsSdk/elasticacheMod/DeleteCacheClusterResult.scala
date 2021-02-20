@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteCacheClusterResult extends js.Object {
+trait DeleteCacheClusterResult extends StObject {
   
   var CacheCluster: js.UndefOr[typings.awsSdk.elasticacheMod.CacheCluster] = js.native
 }
@@ -18,24 +19,12 @@ object DeleteCacheClusterResult {
   }
   
   @scala.inline
-  implicit class DeleteCacheClusterResultOps[Self <: DeleteCacheClusterResult] (val x: Self) extends AnyVal {
+  implicit class DeleteCacheClusterResultMutableBuilder[Self <: DeleteCacheClusterResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheCluster(value: CacheCluster): Self = StObject.set(x, "CacheCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCacheCluster(value: CacheCluster): Self = this.set("CacheCluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCacheCluster: Self = this.set("CacheCluster", js.undefined)
+    def setCacheClusterUndefined: Self = StObject.set(x, "CacheCluster", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,66 +66,54 @@ object FeatureTemplatesProperties {
   }
   
   @scala.inline
-  implicit class FeatureTemplatesPropertiesOps[Self <: FeatureTemplatesProperties] (val x: Self) extends AnyVal {
+  implicit class FeatureTemplatesPropertiesMutableBuilder[Self <: FeatureTemplatesProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterEnabled(value: Boolean): Self = StObject.set(x, "filterEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterEnabledUndefined: Self = StObject.set(x, "filterEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterFunction(value: /* filterName */ js.Any => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilterEnabled(value: Boolean): Self = this.set("filterEnabled", value.asInstanceOf[js.Any])
+    def setFilterFunctionUndefined: Self = StObject.set(x, "filterFunction", js.undefined)
     
     @scala.inline
-    def deleteFilterEnabled: Self = this.set("filterEnabled", js.undefined)
+    def setFilterText(value: String): Self = StObject.set(x, "filterText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterFunction(value: /* filterName */ js.Any => Boolean): Self = this.set("filterFunction", js.Any.fromFunction1(value))
+    def setFilterTextUndefined: Self = StObject.set(x, "filterText", js.undefined)
     
     @scala.inline
-    def deleteFilterFunction: Self = this.set("filterFunction", js.undefined)
+    def setGroupBy(value: String | GroupByFunction): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterText(value: String): Self = this.set("filterText", value.asInstanceOf[js.Any])
+    def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFilterText: Self = this.set("filterText", js.undefined)
+    def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
     @scala.inline
-    def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = this.set("groupBy", js.Any.fromFunction1(value))
+    def setLayers(value: js.Array[FeatureLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBy(value: String | GroupByFunction): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def deleteGroupBy: Self = this.set("groupBy", js.undefined)
+    def setLayersVarargs(value: FeatureLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
     @scala.inline
-    def setLayersVarargs(value: FeatureLayerProperties*): Self = this.set("layers", js.Array(value :_*))
+    def setViewModel(value: FeatureTemplatesViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayers(value: js.Array[FeatureLayerProperties]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setVisibleElements(value: FeatureTemplatesVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewModel(value: FeatureTemplatesViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
-    
-    @scala.inline
-    def setVisibleElements(value: FeatureTemplatesVisibleElements): Self = this.set("visibleElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleElements: Self = this.set("visibleElements", js.undefined)
+    def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

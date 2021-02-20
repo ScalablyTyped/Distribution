@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Collects items that share a common key.
   */
 @js.native
-trait Collector[K, T] extends js.Object {
+trait Collector[K, T] extends StObject {
   
   def addItemToCollection(key: K, item: T): Unit = js.native
   

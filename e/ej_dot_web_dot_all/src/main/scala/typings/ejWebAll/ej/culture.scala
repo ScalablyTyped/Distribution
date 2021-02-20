@@ -1,11 +1,12 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait culture extends js.Object {
+trait culture extends StObject {
   
   var calendars: js.UndefOr[calendarsSettings] = js.native
   
@@ -30,57 +31,45 @@ object culture {
   }
   
   @scala.inline
-  implicit class cultureOps[Self <: culture] (val x: Self) extends AnyVal {
+  implicit class cultureMutableBuilder[Self <: culture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendars(value: calendarsSettings): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnglishName(value: String): Self = StObject.set(x, "englishName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRTL(value: Boolean): Self = this.set("isRTL", value.asInstanceOf[js.Any])
+    def setEnglishNameUndefined: Self = StObject.set(x, "englishName", js.undefined)
     
     @scala.inline
-    def setCalendars(value: calendarsSettings): Self = this.set("calendars", value.asInstanceOf[js.Any])
+    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendars: Self = this.set("calendars", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnglishName(value: String): Self = this.set("englishName", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteEnglishName: Self = this.set("englishName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setNamtiveName(value: String): Self = StObject.set(x, "namtiveName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNamtiveNameUndefined: Self = StObject.set(x, "namtiveName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNumberFormat(value: formatSettings): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamtiveName(value: String): Self = this.set("namtiveName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamtiveName: Self = this.set("namtiveName", js.undefined)
-    
-    @scala.inline
-    def setNumberFormat(value: formatSettings): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
   }
 }

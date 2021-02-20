@@ -1,5 +1,6 @@
 package typings.winrt.global.Windows.ApplicationModel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Package ()
   extends typings.winrt.Windows.ApplicationModel.Package
 /* static members */
-@JSGlobal("Windows.ApplicationModel.Package")
-@js.native
-object Package extends js.Object {
+object Package {
   
-  var current: typings.winrt.Windows.ApplicationModel.Package = js.native
+  @JSGlobal("Windows.ApplicationModel.Package")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("Windows.ApplicationModel.Package.current")
+  @js.native
+  def current: typings.winrt.Windows.ApplicationModel.Package = js.native
+  @scala.inline
+  def current_=(x: typings.winrt.Windows.ApplicationModel.Package): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
 }

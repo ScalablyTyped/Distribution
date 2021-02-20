@@ -1,11 +1,12 @@
 package typings.vueInbrowserCompilerUtils.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParamType extends js.Object {
+trait ParamType extends StObject {
   
   var elements: js.UndefOr[js.Array[ParamType]] = js.native
   
@@ -20,30 +21,18 @@ object ParamType {
   }
   
   @scala.inline
-  implicit class ParamTypeOps[Self <: ParamType] (val x: Self) extends AnyVal {
+  implicit class ParamTypeMutableBuilder[Self <: ParamType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElements(value: js.Array[ParamType]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementsVarargs(value: ParamType*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setElementsVarargs(value: ParamType*): Self = this.set("elements", js.Array(value :_*))
-    
-    @scala.inline
-    def setElements(value: js.Array[ParamType]): Self = this.set("elements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElements: Self = this.set("elements", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -2,13 +2,14 @@ package typings.scrivito.mod
 
 import typings.std.Date
 import typings.std.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("scrivito", "Obj")
 @js.native
-class Obj protected () extends js.Object {
+class Obj protected () extends StObject {
   def this(arg: js.Object) = this()
   
   val _createdAt: Date = js.native
@@ -81,25 +82,41 @@ class Obj protected () extends js.Object {
   def widgets(): js.Array[Widget] = js.native
 }
 /* static members */
-@JSImport("scrivito", "Obj")
-@js.native
-object Obj extends js.Object {
+object Obj {
   
   // Static methods
+  @JSImport("scrivito", "Obj.all")
+  @js.native
   def all(): js.Any = js.native
   
+  @JSImport("scrivito", "Obj.create")
+  @js.native
   def create(attributes: CreateAttributes): Unit = js.native
   
+  @JSImport("scrivito", "Obj.createFromFile")
+  @js.native
   def createFromFile(file: File, attributes: CreateAttributes): Unit = js.native
   
+  @JSImport("scrivito", "Obj.get")
+  @js.native
   def get(id: String): Obj | Null = js.native
   
+  @JSImport("scrivito", "Obj.getByPath")
+  @js.native
   def getByPath(path: String): Obj | Null = js.native
   
+  @JSImport("scrivito", "Obj.getByPermalink")
+  @js.native
   def getByPermalink(permalink: String): Obj | Null = js.native
   
+  @JSImport("scrivito", "Obj.root")
+  @js.native
   def root(): Obj = js.native
   
+  @JSImport("scrivito", "Obj.where")
+  @js.native
   def where(attribute: ObjSearchSingleAttribute, operator: ObjSearchOperator, value: String): ObjSearch = js.native
+  @JSImport("scrivito", "Obj.where")
+  @js.native
   def where(attribute: ObjSearchSingleAttribute, operator: ObjSearchOperator, value: String, boost: js.Any): ObjSearch = js.native
 }

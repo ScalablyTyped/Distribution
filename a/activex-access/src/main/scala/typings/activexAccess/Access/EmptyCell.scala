@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmptyCell extends js.Object {
+trait EmptyCell extends StObject {
   
   @JSName("Access.EmptyCell_typekey")
   var AccessDotEmptyCell_typekey: EmptyCell = js.native

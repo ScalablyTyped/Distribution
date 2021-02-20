@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IosHomeScreenFolderPage extends js.Object {
+trait IosHomeScreenFolderPage extends StObject {
   
   // A list of apps to appear on a page within a folder. This collection can contain a maximum of 500 elements.
   var apps: js.UndefOr[js.Array[IosHomeScreenApp]] = js.native
@@ -22,36 +23,24 @@ object IosHomeScreenFolderPage {
   }
   
   @scala.inline
-  implicit class IosHomeScreenFolderPageOps[Self <: IosHomeScreenFolderPage] (val x: Self) extends AnyVal {
+  implicit class IosHomeScreenFolderPageMutableBuilder[Self <: IosHomeScreenFolderPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApps(value: js.Array[IosHomeScreenApp]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppsVarargs(value: IosHomeScreenApp*): Self = StObject.set(x, "apps", js.Array(value :_*))
     
     @scala.inline
-    def setAppsVarargs(value: IosHomeScreenApp*): Self = this.set("apps", js.Array(value :_*))
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApps(value: js.Array[IosHomeScreenApp]): Self = this.set("apps", value.asInstanceOf[js.Any])
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def deleteApps: Self = this.set("apps", js.undefined)
-    
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    
-    @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

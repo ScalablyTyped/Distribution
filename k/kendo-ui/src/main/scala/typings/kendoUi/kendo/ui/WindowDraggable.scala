@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowDraggable extends js.Object {
+trait WindowDraggable extends StObject {
   
   var axis: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object WindowDraggable {
   }
   
   @scala.inline
-  implicit class WindowDraggableOps[Self <: WindowDraggable] (val x: Self) extends AnyVal {
+  implicit class WindowDraggableMutableBuilder[Self <: WindowDraggable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainment(value: js.Any | String): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setDragHandle(value: js.Any | String): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainment(value: js.Any | String): Self = this.set("containment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainment: Self = this.set("containment", js.undefined)
-    
-    @scala.inline
-    def setDragHandle(value: js.Any | String): Self = this.set("dragHandle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDragHandle: Self = this.set("dragHandle", js.undefined)
+    def setDragHandleUndefined: Self = StObject.set(x, "dragHandle", js.undefined)
   }
 }

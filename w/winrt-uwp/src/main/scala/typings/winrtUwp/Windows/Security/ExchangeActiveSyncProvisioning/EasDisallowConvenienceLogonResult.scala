@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EasDisallowConvenienceLogonResult extends js.Object
+sealed trait EasDisallowConvenienceLogonResult extends StObject
 /** Results of whether the logon can occur. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasDisallowConvenienceLogonResult")
 @js.native
-object EasDisallowConvenienceLogonResult extends js.Object {
+object EasDisallowConvenienceLogonResult extends StObject {
   
   /** This computer can be compliant by using the ApplyAsync method. */
   @js.native

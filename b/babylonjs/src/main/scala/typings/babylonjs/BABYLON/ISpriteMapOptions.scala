@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISpriteMapOptions extends js.Object {
+trait ISpriteMapOptions extends StObject {
   
   /**
     * number cell index of the base tile when the system compiles.
@@ -61,72 +62,60 @@ object ISpriteMapOptions {
   }
   
   @scala.inline
-  implicit class ISpriteMapOptionsOps[Self <: ISpriteMapOptions] (val x: Self) extends AnyVal {
+  implicit class ISpriteMapOptionsMutableBuilder[Self <: ISpriteMapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseTile(value: Double): Self = StObject.set(x, "baseTile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseTileUndefined: Self = StObject.set(x, "baseTile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorMultiply(value: Vector3): Self = StObject.set(x, "colorMultiply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseTile(value: Double): Self = this.set("baseTile", value.asInstanceOf[js.Any])
+    def setColorMultiplyUndefined: Self = StObject.set(x, "colorMultiply", js.undefined)
     
     @scala.inline
-    def deleteBaseTile: Self = this.set("baseTile", js.undefined)
+    def setFlipU(value: Boolean): Self = StObject.set(x, "flipU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMultiply(value: Vector3): Self = this.set("colorMultiply", value.asInstanceOf[js.Any])
+    def setFlipUUndefined: Self = StObject.set(x, "flipU", js.undefined)
     
     @scala.inline
-    def deleteColorMultiply: Self = this.set("colorMultiply", js.undefined)
+    def setLayerCount(value: Double): Self = StObject.set(x, "layerCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlipU(value: Boolean): Self = this.set("flipU", value.asInstanceOf[js.Any])
+    def setLayerCountUndefined: Self = StObject.set(x, "layerCount", js.undefined)
     
     @scala.inline
-    def deleteFlipU: Self = this.set("flipU", js.undefined)
+    def setMaxAnimationFrames(value: Double): Self = StObject.set(x, "maxAnimationFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerCount(value: Double): Self = this.set("layerCount", value.asInstanceOf[js.Any])
+    def setMaxAnimationFramesUndefined: Self = StObject.set(x, "maxAnimationFrames", js.undefined)
     
     @scala.inline
-    def deleteLayerCount: Self = this.set("layerCount", js.undefined)
+    def setOutputPosition(value: Vector3): Self = StObject.set(x, "outputPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAnimationFrames(value: Double): Self = this.set("maxAnimationFrames", value.asInstanceOf[js.Any])
+    def setOutputPositionUndefined: Self = StObject.set(x, "outputPosition", js.undefined)
     
     @scala.inline
-    def deleteMaxAnimationFrames: Self = this.set("maxAnimationFrames", js.undefined)
+    def setOutputRotation(value: Vector3): Self = StObject.set(x, "outputRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputPosition(value: Vector3): Self = this.set("outputPosition", value.asInstanceOf[js.Any])
+    def setOutputRotationUndefined: Self = StObject.set(x, "outputRotation", js.undefined)
     
     @scala.inline
-    def deleteOutputPosition: Self = this.set("outputPosition", js.undefined)
+    def setOutputSize(value: Vector2): Self = StObject.set(x, "outputSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputRotation(value: Vector3): Self = this.set("outputRotation", value.asInstanceOf[js.Any])
+    def setOutputSizeUndefined: Self = StObject.set(x, "outputSize", js.undefined)
     
     @scala.inline
-    def deleteOutputRotation: Self = this.set("outputRotation", js.undefined)
+    def setStageSize(value: Vector2): Self = StObject.set(x, "stageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputSize(value: Vector2): Self = this.set("outputSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputSize: Self = this.set("outputSize", js.undefined)
-    
-    @scala.inline
-    def setStageSize(value: Vector2): Self = this.set("stageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageSize: Self = this.set("stageSize", js.undefined)
+    def setStageSizeUndefined: Self = StObject.set(x, "stageSize", js.undefined)
   }
 }

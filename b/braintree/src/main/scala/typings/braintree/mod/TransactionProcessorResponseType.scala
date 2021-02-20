@@ -1,5 +1,6 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.braintree.braintreeStrings.soft_declined
   - typings.braintree.braintreeStrings.hard_declined
 */
-trait TransactionProcessorResponseType extends js.Object
+trait TransactionProcessorResponseType extends StObject
 object TransactionProcessorResponseType {
   
   @scala.inline

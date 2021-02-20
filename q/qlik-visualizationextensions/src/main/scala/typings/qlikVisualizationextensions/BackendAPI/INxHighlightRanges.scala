@@ -1,11 +1,12 @@
 package typings.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INxHighlightRanges extends js.Object {
+trait INxHighlightRanges extends StObject {
   
   /**
     * Ranges of highlighted values
@@ -22,24 +23,12 @@ object INxHighlightRanges {
   }
   
   @scala.inline
-  implicit class INxHighlightRangesOps[Self <: INxHighlightRanges] (val x: Self) extends AnyVal {
+  implicit class INxHighlightRangesMutableBuilder[Self <: INxHighlightRanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQRanges(value: js.Array[ICharRange]): Self = StObject.set(x, "qRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQRangesVarargs(value: ICharRange*): Self = this.set("qRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setQRanges(value: js.Array[ICharRange]): Self = this.set("qRanges", value.asInstanceOf[js.Any])
+    def setQRangesVarargs(value: ICharRange*): Self = StObject.set(x, "qRanges", js.Array(value :_*))
   }
 }

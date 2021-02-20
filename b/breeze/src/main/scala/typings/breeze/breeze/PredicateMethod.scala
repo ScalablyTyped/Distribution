@@ -1,15 +1,16 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PredicateMethod extends js.Object {
+trait PredicateMethod extends StObject {
   
   def apply(predicates: Predicate*): Predicate = js.native
   def apply(predicates: js.Array[Predicate]): Predicate = js.native
-    // for any/all clauses
+  // for any/all clauses
   def apply(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): Predicate = js.native
   def apply(
     property: String,

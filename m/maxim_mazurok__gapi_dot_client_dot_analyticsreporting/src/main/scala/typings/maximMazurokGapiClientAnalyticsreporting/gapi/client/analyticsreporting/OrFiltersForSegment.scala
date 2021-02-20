@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrFiltersForSegment extends js.Object {
+trait OrFiltersForSegment extends StObject {
   
   /** List of segment filters to be combined with a `OR` operator. */
   var segmentFilterClauses: js.UndefOr[js.Array[SegmentFilterClause]] = js.native
@@ -19,27 +20,15 @@ object OrFiltersForSegment {
   }
   
   @scala.inline
-  implicit class OrFiltersForSegmentOps[Self <: OrFiltersForSegment] (val x: Self) extends AnyVal {
+  implicit class OrFiltersForSegmentMutableBuilder[Self <: OrFiltersForSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSegmentFilterClauses(value: js.Array[SegmentFilterClause]): Self = StObject.set(x, "segmentFilterClauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSegmentFilterClausesUndefined: Self = StObject.set(x, "segmentFilterClauses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSegmentFilterClausesVarargs(value: SegmentFilterClause*): Self = this.set("segmentFilterClauses", js.Array(value :_*))
-    
-    @scala.inline
-    def setSegmentFilterClauses(value: js.Array[SegmentFilterClause]): Self = this.set("segmentFilterClauses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentFilterClauses: Self = this.set("segmentFilterClauses", js.undefined)
+    def setSegmentFilterClausesVarargs(value: SegmentFilterClause*): Self = StObject.set(x, "segmentFilterClauses", js.Array(value :_*))
   }
 }

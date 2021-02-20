@@ -3,19 +3,30 @@ package typings.typeorm
 import typings.typeorm.anon.Conflicttarget
 import typings.typeorm.commonEntityTargetMod.EntityTarget
 import typings.typeorm.commonObjectLiteralMod.ObjectLiteral
+import typings.typeorm.connectionConnectionMod.Connection
 import typings.typeorm.metadataColumnMetadataMod.ColumnMetadata
 import typings.typeorm.queryBuilderQueryBuilderMod.QueryBuilder
 import typings.typeorm.queryBuilderQueryPartialEntityMod.QueryDeepPartialEntity
+import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/query-builder/InsertQueryBuilder", JSImport.Namespace)
-@js.native
-object queryBuilderInsertQueryBuilderMod extends js.Object {
+object queryBuilderInsertQueryBuilderMod {
   
+  @JSImport("typeorm/query-builder/InsertQueryBuilder", "InsertQueryBuilder")
   @js.native
-  class InsertQueryBuilder[Entity] () extends QueryBuilder[Entity] {
+  class InsertQueryBuilder[Entity] protected () extends QueryBuilder[Entity] {
+    /**
+      * QueryBuilder can be initialized from given Connection and QueryRunner objects or from given other QueryBuilder.
+      */
+    def this(connection: Connection) = this()
+    /**
+      * QueryBuilder can be initialized from given Connection and QueryRunner objects or from given other QueryBuilder.
+      */
+    def this(queryBuilder: QueryBuilder[_]) = this()
+    def this(connection: Connection, queryRunner: QueryRunner) = this()
     
     /**
       * Creates a columns string where values must be inserted to for INSERT INTO expression.

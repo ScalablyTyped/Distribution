@@ -1,44 +1,36 @@
 package typings.terminalKit.anon
 
 import typings.terminalKit.screenBufferMod.Attributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Char extends js.Object {
+trait Char extends StObject {
   
-  var attr: Attributes = js.native
+  var attr: Attributes | Double = js.native
   
-  var char: String = js.native
+  var char: js.UndefOr[String] = js.native
 }
 object Char {
   
   @scala.inline
-  def apply(attr: Attributes, char: String): Char = {
-    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any])
+  def apply(attr: Attributes | Double): Char = {
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Char]
   }
   
   @scala.inline
-  implicit class CharOps[Self <: Char] (val x: Self) extends AnyVal {
+  implicit class CharMutableBuilder[Self <: Char] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttr(value: Attributes | Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttr(value: Attributes): Self = this.set("attr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChar(value: String): Self = this.set("char", value.asInstanceOf[js.Any])
+    def setCharUndefined: Self = StObject.set(x, "char", js.undefined)
   }
 }

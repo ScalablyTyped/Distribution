@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortRange extends js.Object {
+trait PortRange extends StObject {
   
   /**
     * The first port in the port range.
@@ -26,30 +27,18 @@ object PortRange {
   }
   
   @scala.inline
-  implicit class PortRangeOps[Self <: PortRange] (val x: Self) extends AnyVal {
+  implicit class PortRangeMutableBuilder[Self <: PortRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBegin(value: Integer): Self = StObject.set(x, "Begin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginUndefined: Self = StObject.set(x, "Begin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: Integer): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBegin(value: Integer): Self = this.set("Begin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBegin: Self = this.set("Begin", js.undefined)
-    
-    @scala.inline
-    def setEnd(value: Integer): Self = this.set("End", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnd: Self = this.set("End", js.undefined)
+    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
   }
 }

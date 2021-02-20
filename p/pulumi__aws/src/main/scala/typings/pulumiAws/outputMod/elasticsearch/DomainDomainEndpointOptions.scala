@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.elasticsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainDomainEndpointOptions extends js.Object {
+trait DomainDomainEndpointOptions extends StObject {
   
   /**
     * Whether or not to require HTTPS
@@ -26,24 +27,12 @@ object DomainDomainEndpointOptions {
   }
   
   @scala.inline
-  implicit class DomainDomainEndpointOptionsOps[Self <: DomainDomainEndpointOptions] (val x: Self) extends AnyVal {
+  implicit class DomainDomainEndpointOptionsMutableBuilder[Self <: DomainDomainEndpointOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnforceHttps(value: Boolean): Self = StObject.set(x, "enforceHttps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnforceHttps(value: Boolean): Self = this.set("enforceHttps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTlsSecurityPolicy(value: String): Self = this.set("tlsSecurityPolicy", value.asInstanceOf[js.Any])
+    def setTlsSecurityPolicy(value: String): Self = StObject.set(x, "tlsSecurityPolicy", value.asInstanceOf[js.Any])
   }
 }

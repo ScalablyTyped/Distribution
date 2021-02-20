@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgColorPickerMethods extends js.Object {
+trait IgColorPickerMethods extends StObject {
   
   /**
     * Gets the color for an element from the color picker in RGB format.
@@ -58,36 +59,24 @@ object IgColorPickerMethods {
   }
   
   @scala.inline
-  implicit class IgColorPickerMethodsOps[Self <: IgColorPickerMethods] (val x: Self) extends AnyVal {
+  implicit class IgColorPickerMethodsMutableBuilder[Self <: IgColorPickerMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorFromElement(value: js.Object => String): Self = StObject.set(x, "colorFromElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorTable(value: () => js.Object): Self = StObject.set(x, "colorTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomColorTable(value: () => js.Object): Self = StObject.set(x, "customColorTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColorFromElement(value: js.Object => String): Self = this.set("colorFromElement", js.Any.fromFunction1(value))
+    def setSelectColor(value: String => js.Object): Self = StObject.set(x, "selectColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColorTable(value: () => js.Object): Self = this.set("colorTable", js.Any.fromFunction0(value))
+    def setSelectedColor(value: () => String): Self = StObject.set(x, "selectedColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCustomColorTable(value: () => js.Object): Self = this.set("customColorTable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSelectColor(value: String => js.Object): Self = this.set("selectColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectedColor(value: () => String): Self = this.set("selectedColor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStandardColorsTable(value: () => js.Object): Self = this.set("standardColorsTable", js.Any.fromFunction0(value))
+    def setStandardColorsTable(value: () => js.Object): Self = StObject.set(x, "standardColorsTable", js.Any.fromFunction0(value))
   }
 }

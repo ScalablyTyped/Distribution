@@ -7,14 +7,14 @@ import typings.awsSdkClientCodecommitNode.typesGetMergeConflictsInputMod.GetMerg
 import typings.awsSdkClientCodecommitNode.typesGetMergeConflictsOutputMod.GetMergeConflictsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/commands/GetMergeConflictsCommand", JSImport.Namespace)
-@js.native
-object getMergeConflictsCommandMod extends js.Object {
+object getMergeConflictsCommandMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/commands/GetMergeConflictsCommand", "GetMergeConflictsCommand")
   @js.native
   class GetMergeConflictsCommand protected () extends Command[
           InputTypesUnion, 

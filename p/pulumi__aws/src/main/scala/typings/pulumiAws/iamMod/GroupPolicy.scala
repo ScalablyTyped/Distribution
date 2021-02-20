@@ -5,6 +5,7 @@ import typings.pulumiAws.groupPolicyMod.GroupPolicyState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class GroupPolicy protected ()
   def this(name: String, args: GroupPolicyArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws/iam", "GroupPolicy")
-@js.native
-object GroupPolicy extends js.Object {
+object GroupPolicy {
   
   /**
     * Get an existing GroupPolicy resource's state with the given name, ID, and optional extra
@@ -37,14 +36,24 @@ object GroupPolicy extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws/iam", "GroupPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.groupPolicyMod.GroupPolicy = js.native
+  @JSImport("@pulumi/aws/iam", "GroupPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.groupPolicyMod.GroupPolicy = js.native
+  @JSImport("@pulumi/aws/iam", "GroupPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: GroupPolicyState): typings.pulumiAws.groupPolicyMod.GroupPolicy = js.native
+  @JSImport("@pulumi/aws/iam", "GroupPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: GroupPolicyState, opts: CustomResourceOptions): typings.pulumiAws.groupPolicyMod.GroupPolicy = js.native
   
   /**
     * Returns true if the given object is an instance of GroupPolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws/iam", "GroupPolicy.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupPolicy.GroupPolicy */ Boolean = js.native
 }

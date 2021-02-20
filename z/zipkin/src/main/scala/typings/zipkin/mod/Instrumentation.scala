@@ -4,16 +4,16 @@ import typings.std.Error
 import typings.zipkin.anon.RemoteServiceName
 import typings.zipkin.anon.ServerTags
 import typings.zipkin.mod.option.IOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("zipkin", "Instrumentation")
-@js.native
-object Instrumentation extends js.Object {
+object Instrumentation {
   
+  @JSImport("zipkin", "Instrumentation.HttpClient")
   @js.native
-  class HttpClient protected () extends js.Object {
+  class HttpClient protected () extends StObject {
     def this(args: RemoteServiceName) = this()
     
     def recordError(traceId: TraceId, error: Error): Unit = js.native
@@ -23,8 +23,9 @@ object Instrumentation extends js.Object {
     def recordResponse(traceId: TraceId, statusCode: String): Unit = js.native
   }
   
+  @JSImport("zipkin", "Instrumentation.HttpServer")
   @js.native
-  class HttpServer protected () extends js.Object {
+  class HttpServer protected () extends StObject {
     def this(args: ServerTags) = this()
     
     def recordRequest(method: String, requestUrl: String, readHeader: js.Function1[/* header */ String, IOption[_]]): TraceId = js.native

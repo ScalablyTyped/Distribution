@@ -6,13 +6,14 @@ import typings.officeJs.officeJsStrings.Ink
 import typings.officeJs.officeJsStrings.Other
 import typings.officeJs.officeJsStrings.RichText
 import typings.officeJs.officeJsStrings.Table
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "paragraph.toJSON()". */
 @js.native
-trait ParagraphData extends js.Object {
+trait ParagraphData extends StObject {
   
   /**
     *
@@ -79,66 +80,54 @@ object ParagraphData {
   }
   
   @scala.inline
-  implicit class ParagraphDataOps[Self <: ParagraphData] (val x: Self) extends AnyVal {
+  implicit class ParagraphDataMutableBuilder[Self <: ParagraphData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: ImageData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInkWords(value: js.Array[InkWordData]): Self = StObject.set(x, "inkWords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ImageData): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setInkWordsUndefined: Self = StObject.set(x, "inkWords", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setInkWordsVarargs(value: InkWordData*): Self = StObject.set(x, "inkWords", js.Array(value :_*))
     
     @scala.inline
-    def setInkWordsVarargs(value: InkWordData*): Self = this.set("inkWords", js.Array(value :_*))
+    def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInkWords(value: js.Array[InkWordData]): Self = this.set("inkWords", value.asInstanceOf[js.Any])
+    def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
     @scala.inline
-    def deleteInkWords: Self = this.set("inkWords", js.undefined)
+    def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
     
     @scala.inline
-    def setParagraphsVarargs(value: ParagraphData*): Self = this.set("paragraphs", js.Array(value :_*))
+    def setRichText(value: RichTextData): Self = StObject.set(x, "richText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraphs(value: js.Array[ParagraphData]): Self = this.set("paragraphs", value.asInstanceOf[js.Any])
+    def setRichTextUndefined: Self = StObject.set(x, "richText", js.undefined)
     
     @scala.inline
-    def deleteParagraphs: Self = this.set("paragraphs", js.undefined)
+    def setTable(value: TableData): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRichText(value: RichTextData): Self = this.set("richText", value.asInstanceOf[js.Any])
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
     @scala.inline
-    def deleteRichText: Self = this.set("richText", js.undefined)
+    def setType(value: ParagraphType | RichText | Image | Table | Ink | Other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: TableData): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
-    
-    @scala.inline
-    def setType(value: ParagraphType | RichText | Image | Table | Ink | Other): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

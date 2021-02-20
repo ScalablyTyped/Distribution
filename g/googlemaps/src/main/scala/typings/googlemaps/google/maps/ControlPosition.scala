@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ControlPosition extends js.Object
+sealed trait ControlPosition extends StObject
 /**
   * Identifiers used to specify the placement of controls on the map. Controls
   * are positioned relative to other controls in the same layout position.
@@ -13,7 +14,7 @@ sealed trait ControlPosition extends js.Object
   */
 @JSGlobal("google.maps.ControlPosition")
 @js.native
-object ControlPosition extends js.Object {
+object ControlPosition extends StObject {
   
   /** Elements are positioned in the center of the bottom row. */
   @js.native

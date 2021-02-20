@@ -11,13 +11,14 @@ import typings.emberData.mod.RelationshipMeta
 import typings.emberData.mod.RelationshipsFor
 import typings.emberData.registriesModelMod.ModelRegistry
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ember-data", "DS.Snapshot")
 @js.native
-class Snapshot[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */] () extends js.Object {
+class Snapshot[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */] () extends StObject {
   
   /**
     * Returns the value of an attribute.

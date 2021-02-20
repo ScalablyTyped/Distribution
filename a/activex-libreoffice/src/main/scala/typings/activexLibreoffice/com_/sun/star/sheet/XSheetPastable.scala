@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,29 +53,17 @@ object XSheetPastable {
   }
   
   @scala.inline
-  implicit class XSheetPastableOps[Self <: XSheetPastable] (val x: Self) extends AnyVal {
+  implicit class XSheetPastableMutableBuilder[Self <: XSheetPastable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPaste(value: CellAddress => Unit): Self = this.set("paste", js.Any.fromFunction1(value))
+    def setPaste(value: CellAddress => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
     
     @scala.inline
     def setPasteCellRange(
       value: (CellRangeAddress, PasteOperation, Double, Boolean, Boolean, Boolean, CellInsertMode) => Unit
-    ): Self = this.set("pasteCellRange", js.Any.fromFunction7(value))
+    ): Self = StObject.set(x, "pasteCellRange", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setPasteFormat(value: (CellAddress, String) => Unit): Self = this.set("pasteFormat", js.Any.fromFunction2(value))
+    def setPasteFormat(value: (CellAddress, String) => Unit): Self = StObject.set(x, "pasteFormat", js.Any.fromFunction2(value))
   }
 }

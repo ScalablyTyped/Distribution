@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalCityOptions extends js.Object {
+trait LocalCityOptions extends StObject {
   
   var renderOptions: js.UndefOr[RenderOptions] = js.native
 }
@@ -18,24 +19,12 @@ object LocalCityOptions {
   }
   
   @scala.inline
-  implicit class LocalCityOptionsOps[Self <: LocalCityOptions] (val x: Self) extends AnyVal {
+  implicit class LocalCityOptionsMutableBuilder[Self <: LocalCityOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRenderOptions(value: RenderOptions): Self = StObject.set(x, "renderOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRenderOptions(value: RenderOptions): Self = this.set("renderOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderOptions: Self = this.set("renderOptions", js.undefined)
+    def setRenderOptionsUndefined: Self = StObject.set(x, "renderOptions", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoFormatsListResponse extends js.Object {
+trait VideoFormatsListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#videoFormatsListResponse". */
   var kind: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object VideoFormatsListResponse {
   }
   
   @scala.inline
-  implicit class VideoFormatsListResponseOps[Self <: VideoFormatsListResponse] (val x: Self) extends AnyVal {
+  implicit class VideoFormatsListResponseMutableBuilder[Self <: VideoFormatsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVideoFormats(value: js.Array[VideoFormat]): Self = StObject.set(x, "videoFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setVideoFormatsUndefined: Self = StObject.set(x, "videoFormats", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setVideoFormatsVarargs(value: VideoFormat*): Self = this.set("videoFormats", js.Array(value :_*))
-    
-    @scala.inline
-    def setVideoFormats(value: js.Array[VideoFormat]): Self = this.set("videoFormats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoFormats: Self = this.set("videoFormats", js.undefined)
+    def setVideoFormatsVarargs(value: VideoFormat*): Self = StObject.set(x, "videoFormats", js.Array(value :_*))
   }
 }

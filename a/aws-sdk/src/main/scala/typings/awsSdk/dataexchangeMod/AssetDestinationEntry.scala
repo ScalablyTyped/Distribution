@@ -1,11 +1,12 @@
 package typings.awsSdk.dataexchangeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetDestinationEntry extends js.Object {
+trait AssetDestinationEntry extends StObject {
   
   /**
     * The unique identifier for the asset.
@@ -31,30 +32,18 @@ object AssetDestinationEntry {
   }
   
   @scala.inline
-  implicit class AssetDestinationEntryOps[Self <: AssetDestinationEntry] (val x: Self) extends AnyVal {
+  implicit class AssetDestinationEntryMutableBuilder[Self <: AssetDestinationEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetId(value: Id): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucket(value: string): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetId(value: Id): Self = this.set("AssetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBucket(value: string): Self = this.set("Bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: string): Self = this.set("Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
   }
 }

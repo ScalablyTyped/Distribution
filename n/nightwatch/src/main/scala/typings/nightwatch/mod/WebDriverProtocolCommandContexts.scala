@@ -2,12 +2,13 @@ package typings.nightwatch.mod
 
 import typings.nightwatch.anon.Height
 import typings.nightwatch.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebDriverProtocolCommandContexts extends js.Object {
+trait WebDriverProtocolCommandContexts extends StObject {
   
   /**
     * Change focus to another frame on the page. If the frame id is missing or null, the server should switch to the page's default content.

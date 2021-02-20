@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublishLayerVersionRequest extends js.Object {
+trait PublishLayerVersionRequest extends StObject {
   
   /**
     * A list of compatible function runtimes. Used for filtering with ListLayers and ListLayerVersions.
@@ -41,45 +42,33 @@ object PublishLayerVersionRequest {
   }
   
   @scala.inline
-  implicit class PublishLayerVersionRequestOps[Self <: PublishLayerVersionRequest] (val x: Self) extends AnyVal {
+  implicit class PublishLayerVersionRequestMutableBuilder[Self <: PublishLayerVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompatibleRuntimes(value: CompatibleRuntimes): Self = StObject.set(x, "CompatibleRuntimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompatibleRuntimesUndefined: Self = StObject.set(x, "CompatibleRuntimes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompatibleRuntimesVarargs(value: Runtime*): Self = StObject.set(x, "CompatibleRuntimes", js.Array(value :_*))
     
     @scala.inline
-    def setContent(value: LayerVersionContentInput): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setContent(value: LayerVersionContentInput): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerName(value: LayerName): Self = this.set("LayerName", value.asInstanceOf[js.Any])
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompatibleRuntimesVarargs(value: Runtime*): Self = this.set("CompatibleRuntimes", js.Array(value :_*))
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCompatibleRuntimes(value: CompatibleRuntimes): Self = this.set("CompatibleRuntimes", value.asInstanceOf[js.Any])
+    def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompatibleRuntimes: Self = this.set("CompatibleRuntimes", js.undefined)
+    def setLicenseInfo(value: LicenseInfo): Self = StObject.set(x, "LicenseInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
-    
-    @scala.inline
-    def setLicenseInfo(value: LicenseInfo): Self = this.set("LicenseInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLicenseInfo: Self = this.set("LicenseInfo", js.undefined)
+    def setLicenseInfoUndefined: Self = StObject.set(x, "LicenseInfo", js.undefined)
   }
 }

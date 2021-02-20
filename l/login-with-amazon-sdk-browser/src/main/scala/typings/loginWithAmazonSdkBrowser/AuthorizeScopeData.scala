@@ -1,13 +1,14 @@
 package typings.loginWithAmazonSdkBrowser
 
 import typings.loginWithAmazonSdkBrowser.anon.Essential
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ scope in login-with-amazon-sdk-browser.AuthorizationScopeOptions ]:? {  essential :boolean}} */
 @js.native
-trait AuthorizeScopeData extends js.Object {
+trait AuthorizeScopeData extends StObject {
   
   var postal_code: js.UndefOr[Essential] = js.native
   
@@ -25,36 +26,24 @@ object AuthorizeScopeData {
   }
   
   @scala.inline
-  implicit class AuthorizeScopeDataOps[Self <: AuthorizeScopeData] (val x: Self) extends AnyVal {
+  implicit class AuthorizeScopeDataMutableBuilder[Self <: AuthorizeScopeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostal_code(value: Essential): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostal_codeUndefined: Self = StObject.set(x, "postal_code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfile(value: Essential): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostal_code(value: Essential): Self = this.set("postal_code", value.asInstanceOf[js.Any])
+    def setProfileColonuser_id(value: Essential): Self = StObject.set(x, "profile:user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePostal_code: Self = this.set("postal_code", js.undefined)
+    def setProfileColonuser_idUndefined: Self = StObject.set(x, "profile:user_id", js.undefined)
     
     @scala.inline
-    def setProfile(value: Essential): Self = this.set("profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
-    
-    @scala.inline
-    def setProfileColonuser_id(value: Essential): Self = this.set("profile:user_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileColonuser_id: Self = this.set("profile:user_id", js.undefined)
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
   }
 }

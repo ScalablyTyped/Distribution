@@ -1,14 +1,14 @@
 package typings.sourceMap.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.sourceMap.anon.MappedPositionbiasnumberu
 import typings.sourceMap.anon.Positionbiasnumberundefin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceMapConsumer extends js.Object {
+trait SourceMapConsumer extends StObject {
   
   /**
     * Returns all generated line and column information for the original source,
@@ -125,6 +125,3 @@ trait SourceMapConsumer extends js.Object {
   def sourceContentFor(source: String): String | Null = js.native
   def sourceContentFor(source: String, returnNullOnMissing: Boolean): String | Null = js.native
 }
-@JSImport("source-map", "SourceMapConsumer")
-@js.native
-object SourceMapConsumer extends TopLevel[SourceMapConsumerConstructor]

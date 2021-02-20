@@ -7,14 +7,14 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import typings.babylonjs.webXRTypesMod.WebXRTrackingState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/webXRCamera", JSImport.Namespace)
-@js.native
-object webXRCameraMod extends js.Object {
+object webXRCameraMod {
   
+  @JSImport("babylonjs/XR/webXRCamera", "WebXRCamera")
   @js.native
   class WebXRCamera protected () extends FreeCamera {
     /**

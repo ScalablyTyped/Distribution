@@ -3,22 +3,12 @@ package typings.openlayers.mod
 import typings.openlayers.mod.olx.tilegrid.TileGridOptions
 import typings.openlayers.mod.olx.tilegrid.WMTSOptions
 import typings.openlayers.mod.olx.tilegrid.XYZOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "tilegrid")
-@js.native
-object tilegrid extends js.Object {
-  
-  /**
-    * Creates a tile grid with a standard XYZ tiling scheme.
-    * @param opt_options Tile grid options.
-    * @return Tile grid instance.
-    * @api
-    */
-  def createXYZ(): TileGrid = js.native
-  def createXYZ(opt_options: XYZOptions): TileGrid = js.native
+object tilegrid {
   
   /**
     * @classdesc
@@ -29,8 +19,9 @@ object tilegrid extends js.Object {
     * @struct
     * @api stable
     */
+  @JSImport("openlayers", "tilegrid.TileGrid")
   @js.native
-  class TileGrid protected () extends js.Object {
+  class TileGrid protected () extends StObject {
     /**
       * @classdesc
       * Base class for setting the grid pattern for sources accessing tiled-image
@@ -155,6 +146,7 @@ object tilegrid extends js.Object {
     * @struct
     * @api
     */
+  @JSImport("openlayers", "tilegrid.WMTS")
   @js.native
   class WMTS protected () extends TileGrid {
     /**
@@ -174,9 +166,7 @@ object tilegrid extends js.Object {
       */
     def getMatrixIds(): js.Array[String] = js.native
   }
-  /* static members */
-  @js.native
-  object WMTS extends js.Object {
+  object WMTS {
     
     /**
       * Create a tile grid from a WMTS capabilities matrix set.
@@ -187,7 +177,25 @@ object tilegrid extends js.Object {
       * @return WMTS tileGrid instance.
       * @api
       */
+    /* static member */
+    @JSImport("openlayers", "tilegrid.WMTS.createFromCapabilitiesMatrixSet")
+    @js.native
     def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject): WMTS = js.native
+    @JSImport("openlayers", "tilegrid.WMTS.createFromCapabilitiesMatrixSet")
+    @js.native
     def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject, opt_extent: Extent_): WMTS = js.native
   }
+  
+  /**
+    * Creates a tile grid with a standard XYZ tiling scheme.
+    * @param opt_options Tile grid options.
+    * @return Tile grid instance.
+    * @api
+    */
+  @JSImport("openlayers", "tilegrid.createXYZ")
+  @js.native
+  def createXYZ(): TileGrid = js.native
+  @JSImport("openlayers", "tilegrid.createXYZ")
+  @js.native
+  def createXYZ(opt_options: XYZOptions): TileGrid = js.native
 }

@@ -1,15 +1,18 @@
 package typings.md5Hex
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("md5-hex", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("md5-hex", JSImport.Namespace)
+  @js.native
   def apply(data: String): String = js.native
+  @JSImport("md5-hex", JSImport.Namespace)
+  @js.native
   def apply(data: js.Array[Buffer | String]): String = js.native
   /**
   Create a MD5 hash with hex encoding.
@@ -24,5 +27,7 @@ object mod extends js.Object {
   //=> '1abcb33beeb811dca15f0ac3e47b88d9'
   ```
   */
+  @JSImport("md5-hex", JSImport.Namespace)
+  @js.native
   def apply(data: Buffer): String = js.native
 }

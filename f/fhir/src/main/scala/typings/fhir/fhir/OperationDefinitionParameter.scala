@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,111 +105,99 @@ object OperationDefinitionParameter {
   }
   
   @scala.inline
-  implicit class OperationDefinitionParameterOps[Self <: OperationDefinitionParameter] (val x: Self) extends AnyVal {
+  implicit class OperationDefinitionParameterMutableBuilder[Self <: OperationDefinitionParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinding(value: OperationDefinitionParameterBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def setMin(value: integer): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: code): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMin(value: integer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse(value: code): Self = this.set("use", value.asInstanceOf[js.Any])
+    def setName(value: code): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    def setPart(value: js.Array[OperationDefinitionParameter]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
     @scala.inline
-    def set_max(value: Element): Self = this.set("_max", value.asInstanceOf[js.Any])
+    def setPartVarargs(value: OperationDefinitionParameter*): Self = StObject.set(x, "part", js.Array(value :_*))
     
     @scala.inline
-    def delete_max: Self = this.set("_max", js.undefined)
+    def setProfile(value: Reference): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_min(value: Element): Self = this.set("_min", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def delete_min: Self = this.set("_min", js.undefined)
+    def setSearchType(value: code): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_searchType(value: Element): Self = this.set("_searchType", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def delete_searchType: Self = this.set("_searchType", js.undefined)
+    def setUse(value: code): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
     @scala.inline
-    def set_use(value: Element): Self = this.set("_use", value.asInstanceOf[js.Any])
+    def set_max(value: Element): Self = StObject.set(x, "_max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_use: Self = this.set("_use", js.undefined)
+    def set_maxUndefined: Self = StObject.set(x, "_max", js.undefined)
     
     @scala.inline
-    def setBinding(value: OperationDefinitionParameterBinding): Self = this.set("binding", value.asInstanceOf[js.Any])
+    def set_min(value: Element): Self = StObject.set(x, "_min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBinding: Self = this.set("binding", js.undefined)
+    def set_minUndefined: Self = StObject.set(x, "_min", js.undefined)
     
     @scala.inline
-    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def setPartVarargs(value: OperationDefinitionParameter*): Self = this.set("part", js.Array(value :_*))
+    def set_searchType(value: Element): Self = StObject.set(x, "_searchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPart(value: js.Array[OperationDefinitionParameter]): Self = this.set("part", value.asInstanceOf[js.Any])
+    def set_searchTypeUndefined: Self = StObject.set(x, "_searchType", js.undefined)
     
     @scala.inline
-    def deletePart: Self = this.set("part", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: Reference): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def set_use(value: Element): Self = StObject.set(x, "_use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchType(value: code): Self = this.set("searchType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchType: Self = this.set("searchType", js.undefined)
-    
-    @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_useUndefined: Self = StObject.set(x, "_use", js.undefined)
   }
 }

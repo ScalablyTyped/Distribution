@@ -1,6 +1,7 @@
 package typings.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +37,7 @@ class Service protected () extends NamespaceBase {
   val methodsArray: js.Array[Method] = js.native
 }
 /* static members */
-@JSImport("@apollo/protobufjs", "Service")
-@js.native
-object Service extends js.Object {
+object Service {
   
   /**
     * Constructs a service from a service descriptor.
@@ -47,5 +46,7 @@ object Service extends js.Object {
     * @returns Created service
     * @throws {TypeError} If arguments are invalid
     */
+  @JSImport("@apollo/protobufjs", "Service.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IService): Service = js.native
 }

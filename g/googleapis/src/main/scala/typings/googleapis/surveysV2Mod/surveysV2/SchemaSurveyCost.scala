@@ -1,5 +1,6 @@
 package typings.googleapis.surveysV2Mod.surveysV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Message defining the cost to run a given survey through API.
   */
 @js.native
-trait SchemaSurveyCost extends js.Object {
+trait SchemaSurveyCost extends StObject {
   
   /**
     * Cost per survey response in nano units of the given currency. To get the
@@ -57,42 +58,30 @@ object SchemaSurveyCost {
   }
   
   @scala.inline
-  implicit class SchemaSurveyCostOps[Self <: SchemaSurveyCost] (val x: Self) extends AnyVal {
+  implicit class SchemaSurveyCostMutableBuilder[Self <: SchemaSurveyCost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCostPerResponseNanos(value: String): Self = StObject.set(x, "costPerResponseNanos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCostPerResponseNanosUndefined: Self = StObject.set(x, "costPerResponseNanos", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCostPerResponseNanos(value: String): Self = this.set("costPerResponseNanos", value.asInstanceOf[js.Any])
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def deleteCostPerResponseNanos: Self = this.set("costPerResponseNanos", js.undefined)
+    def setMaxCostPerResponseNanos(value: String): Self = StObject.set(x, "maxCostPerResponseNanos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setMaxCostPerResponseNanosUndefined: Self = StObject.set(x, "maxCostPerResponseNanos", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setNanos(value: String): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCostPerResponseNanos(value: String): Self = this.set("maxCostPerResponseNanos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxCostPerResponseNanos: Self = this.set("maxCostPerResponseNanos", js.undefined)
-    
-    @scala.inline
-    def setNanos(value: String): Self = this.set("nanos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNanos: Self = this.set("nanos", js.undefined)
+    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
   }
 }

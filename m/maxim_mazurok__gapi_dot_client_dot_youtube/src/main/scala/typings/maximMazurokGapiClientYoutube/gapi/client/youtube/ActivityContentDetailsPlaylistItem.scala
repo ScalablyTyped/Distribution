@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityContentDetailsPlaylistItem extends js.Object {
+trait ActivityContentDetailsPlaylistItem extends StObject {
   
   /** The value that YouTube uses to uniquely identify the playlist. */
   var playlistId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object ActivityContentDetailsPlaylistItem {
   }
   
   @scala.inline
-  implicit class ActivityContentDetailsPlaylistItemOps[Self <: ActivityContentDetailsPlaylistItem] (val x: Self) extends AnyVal {
+  implicit class ActivityContentDetailsPlaylistItemMutableBuilder[Self <: ActivityContentDetailsPlaylistItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlaylistIdUndefined: Self = StObject.set(x, "playlistId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlaylistItemId(value: String): Self = StObject.set(x, "playlistItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaylistId(value: String): Self = this.set("playlistId", value.asInstanceOf[js.Any])
+    def setPlaylistItemIdUndefined: Self = StObject.set(x, "playlistItemId", js.undefined)
     
     @scala.inline
-    def deletePlaylistId: Self = this.set("playlistId", js.undefined)
+    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaylistItemId(value: String): Self = this.set("playlistItemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaylistItemId: Self = this.set("playlistItemId", js.undefined)
-    
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = this.set("resourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

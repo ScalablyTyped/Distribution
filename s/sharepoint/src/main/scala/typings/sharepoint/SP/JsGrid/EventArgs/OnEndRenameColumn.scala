@@ -1,6 +1,7 @@
 package typings.sharepoint.SP.JsGrid.EventArgs
 
 import typings.sharepoint.SP.JsGrid.IEventArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object OnEndRenameColumn {
   }
   
   @scala.inline
-  implicit class OnEndRenameColumnOps[Self <: OnEndRenameColumn] (val x: Self) extends AnyVal {
+  implicit class OnEndRenameColumnMutableBuilder[Self <: OnEndRenameColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewColumnTitle(value: String): Self = StObject.set(x, "newColumnTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumnKey(value: String): Self = this.set("columnKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewColumnTitle(value: String): Self = this.set("newColumnTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalColumnTitle(value: String): Self = this.set("originalColumnTitle", value.asInstanceOf[js.Any])
+    def setOriginalColumnTitle(value: String): Self = StObject.set(x, "originalColumnTitle", value.asInstanceOf[js.Any])
   }
 }

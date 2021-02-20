@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateRevocationList extends js.Object {
+trait CertificateRevocationList extends StObject {
   
   /** Output only. The location where 'pem_crl' can be accessed. */
   var accessUrl: js.UndefOr[String] = js.native
@@ -48,79 +49,67 @@ object CertificateRevocationList {
   }
   
   @scala.inline
-  implicit class CertificateRevocationListOps[Self <: CertificateRevocationList] (val x: Self) extends AnyVal {
+  implicit class CertificateRevocationListMutableBuilder[Self <: CertificateRevocationList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessUrl(value: String): Self = StObject.set(x, "accessUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessUrlUndefined: Self = StObject.set(x, "accessUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessUrl(value: String): Self = this.set("accessUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessUrl: Self = this.set("accessUrl", js.undefined)
-    
-    @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateRevocationList with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setPemCrl(value: String): Self = this.set("pemCrl", value.asInstanceOf[js.Any])
+    def setPemCrl(value: String): Self = StObject.set(x, "pemCrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePemCrl: Self = this.set("pemCrl", js.undefined)
+    def setPemCrlUndefined: Self = StObject.set(x, "pemCrl", js.undefined)
     
     @scala.inline
-    def setRevokedCertificatesVarargs(value: RevokedCertificate*): Self = this.set("revokedCertificates", js.Array(value :_*))
+    def setRevokedCertificates(value: js.Array[RevokedCertificate]): Self = StObject.set(x, "revokedCertificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevokedCertificates(value: js.Array[RevokedCertificate]): Self = this.set("revokedCertificates", value.asInstanceOf[js.Any])
+    def setRevokedCertificatesUndefined: Self = StObject.set(x, "revokedCertificates", js.undefined)
     
     @scala.inline
-    def deleteRevokedCertificates: Self = this.set("revokedCertificates", js.undefined)
+    def setRevokedCertificatesVarargs(value: RevokedCertificate*): Self = StObject.set(x, "revokedCertificates", js.Array(value :_*))
     
     @scala.inline
-    def setSequenceNumber(value: String): Self = this.set("sequenceNumber", value.asInstanceOf[js.Any])
+    def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSequenceNumber: Self = this.set("sequenceNumber", js.undefined)
+    def setSequenceNumberUndefined: Self = StObject.set(x, "sequenceNumber", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

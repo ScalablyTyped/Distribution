@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,122 +112,110 @@ object ITapRepeater {
   }
   
   @scala.inline
-  implicit class ITapRepeaterOps[Self <: ITapRepeater] (val x: Self) extends AnyVal {
+  implicit class ITapRepeaterMutableBuilder[Self <: ITapRepeater] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAccelerate(value: () => Boolean): Self = StObject.set(x, "getAccelerate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAccelerateUndefined: Self = StObject.set(x, "getAccelerate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDelay(value: () => Double): Self = StObject.set(x, "getDelay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccelerate(value: () => Boolean): Self = this.set("getAccelerate", js.Any.fromFunction0(value))
+    def setGetDelayUndefined: Self = StObject.set(x, "getDelay", js.undefined)
     
     @scala.inline
-    def deleteGetAccelerate: Self = this.set("getAccelerate", js.undefined)
+    def setGetEl(value: () => _): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDelay(value: () => Double): Self = this.set("getDelay", js.Any.fromFunction0(value))
+    def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
     @scala.inline
-    def deleteGetDelay: Self = this.set("getDelay", js.undefined)
+    def setGetInterval(value: () => Double): Self = StObject.set(x, "getInterval", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEl(value: () => _): Self = this.set("getEl", js.Any.fromFunction0(value))
+    def setGetIntervalUndefined: Self = StObject.set(x, "getInterval", js.undefined)
     
     @scala.inline
-    def deleteGetEl: Self = this.set("getEl", js.undefined)
+    def setGetPressCls(value: () => _): Self = StObject.set(x, "getPressCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInterval(value: () => Double): Self = this.set("getInterval", js.Any.fromFunction0(value))
+    def setGetPressClsUndefined: Self = StObject.set(x, "getPressCls", js.undefined)
     
     @scala.inline
-    def deleteGetInterval: Self = this.set("getInterval", js.undefined)
+    def setGetPreventDefault(value: () => Boolean): Self = StObject.set(x, "getPreventDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPressCls(value: () => _): Self = this.set("getPressCls", js.Any.fromFunction0(value))
+    def setGetPreventDefaultUndefined: Self = StObject.set(x, "getPreventDefault", js.undefined)
     
     @scala.inline
-    def deleteGetPressCls: Self = this.set("getPressCls", js.undefined)
+    def setGetStopDefault(value: () => Boolean): Self = StObject.set(x, "getStopDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPreventDefault(value: () => Boolean): Self = this.set("getPreventDefault", js.Any.fromFunction0(value))
+    def setGetStopDefaultUndefined: Self = StObject.set(x, "getStopDefault", js.undefined)
     
     @scala.inline
-    def deleteGetPreventDefault: Self = this.set("getPreventDefault", js.undefined)
+    def setGetTimer(value: () => Double): Self = StObject.set(x, "getTimer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStopDefault(value: () => Boolean): Self = this.set("getStopDefault", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetStopDefault: Self = this.set("getStopDefault", js.undefined)
-    
-    @scala.inline
-    def setGetTimer(value: () => Double): Self = this.set("getTimer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetTimer: Self = this.set("getTimer", js.undefined)
+    def setGetTimerUndefined: Self = StObject.set(x, "getTimer", js.undefined)
     
     @scala.inline
     def setRelayEvents(
       value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.mixin.IObservable
-    ): Self = this.set("relayEvents", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRelayEvents: Self = this.set("relayEvents", js.undefined)
+    def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
     @scala.inline
-    def setSetAccelerate(value: /* accelerate */ js.UndefOr[Boolean] => Unit): Self = this.set("setAccelerate", js.Any.fromFunction1(value))
+    def setSetAccelerate(value: /* accelerate */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAccelerate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetAccelerate: Self = this.set("setAccelerate", js.undefined)
+    def setSetAccelerateUndefined: Self = StObject.set(x, "setAccelerate", js.undefined)
     
     @scala.inline
-    def setSetDelay(value: /* delay */ js.UndefOr[Double] => Unit): Self = this.set("setDelay", js.Any.fromFunction1(value))
+    def setSetDelay(value: /* delay */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetDelay: Self = this.set("setDelay", js.undefined)
+    def setSetDelayUndefined: Self = StObject.set(x, "setDelay", js.undefined)
     
     @scala.inline
-    def setSetEl(value: /* el */ js.UndefOr[js.Any] => Unit): Self = this.set("setEl", js.Any.fromFunction1(value))
+    def setSetEl(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetEl: Self = this.set("setEl", js.undefined)
+    def setSetElUndefined: Self = StObject.set(x, "setEl", js.undefined)
     
     @scala.inline
-    def setSetInterval(value: /* interval */ js.UndefOr[Double] => Unit): Self = this.set("setInterval", js.Any.fromFunction1(value))
+    def setSetInterval(value: /* interval */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setInterval", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetInterval: Self = this.set("setInterval", js.undefined)
+    def setSetIntervalUndefined: Self = StObject.set(x, "setInterval", js.undefined)
     
     @scala.inline
-    def setSetPressCls(value: /* pressCls */ js.UndefOr[js.Any] => Unit): Self = this.set("setPressCls", js.Any.fromFunction1(value))
+    def setSetPressCls(value: /* pressCls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPressCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetPressCls: Self = this.set("setPressCls", js.undefined)
+    def setSetPressClsUndefined: Self = StObject.set(x, "setPressCls", js.undefined)
     
     @scala.inline
-    def setSetPreventDefault(value: /* preventDefault */ js.UndefOr[Boolean] => Unit): Self = this.set("setPreventDefault", js.Any.fromFunction1(value))
+    def setSetPreventDefault(value: /* preventDefault */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setPreventDefault", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetPreventDefault: Self = this.set("setPreventDefault", js.undefined)
+    def setSetPreventDefaultUndefined: Self = StObject.set(x, "setPreventDefault", js.undefined)
     
     @scala.inline
-    def setSetStopDefault(value: /* stopDefault */ js.UndefOr[Boolean] => Unit): Self = this.set("setStopDefault", js.Any.fromFunction1(value))
+    def setSetStopDefault(value: /* stopDefault */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStopDefault", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetStopDefault: Self = this.set("setStopDefault", js.undefined)
+    def setSetStopDefaultUndefined: Self = StObject.set(x, "setStopDefault", js.undefined)
     
     @scala.inline
-    def setSetTimer(value: /* timer */ js.UndefOr[Double] => Unit): Self = this.set("setTimer", js.Any.fromFunction1(value))
+    def setSetTimer(value: /* timer */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetTimer: Self = this.set("setTimer", js.undefined)
+    def setSetTimerUndefined: Self = StObject.set(x, "setTimer", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTrustsRequest extends js.Object {
+trait DescribeTrustsRequest extends StObject {
   
   /**
     * The Directory ID of the AWS directory that is a part of the requested trust relationship.
@@ -36,45 +37,33 @@ object DescribeTrustsRequest {
   }
   
   @scala.inline
-  implicit class DescribeTrustsRequestOps[Self <: DescribeTrustsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeTrustsRequestMutableBuilder[Self <: DescribeTrustsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Limit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setTrustIds(value: TrustIds): Self = StObject.set(x, "TrustIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTrustIdsUndefined: Self = StObject.set(x, "TrustIds", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTrustIdsVarargs(value: TrustId*): Self = this.set("TrustIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrustIds(value: TrustIds): Self = this.set("TrustIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustIds: Self = this.set("TrustIds", js.undefined)
+    def setTrustIdsVarargs(value: TrustId*): Self = StObject.set(x, "TrustIds", js.Array(value :_*))
   }
 }

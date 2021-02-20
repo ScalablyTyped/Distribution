@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGeoLocationsResponse extends js.Object {
+trait ListGeoLocationsResponse extends StObject {
   
   /**
     * A complex type that contains one GeoLocationDetails element for each location that Amazon Route 53 supports for geolocation.
@@ -46,48 +47,36 @@ object ListGeoLocationsResponse {
   }
   
   @scala.inline
-  implicit class ListGeoLocationsResponseOps[Self <: ListGeoLocationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListGeoLocationsResponseMutableBuilder[Self <: ListGeoLocationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeoLocationDetailsList(value: GeoLocationDetailsList): Self = StObject.set(x, "GeoLocationDetailsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeoLocationDetailsListVarargs(value: GeoLocationDetails*): Self = StObject.set(x, "GeoLocationDetailsList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoLocationDetailsListVarargs(value: GeoLocationDetails*): Self = this.set("GeoLocationDetailsList", js.Array(value :_*))
+    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoLocationDetailsList(value: GeoLocationDetailsList): Self = this.set("GeoLocationDetailsList", value.asInstanceOf[js.Any])
+    def setNextContinentCode(value: GeoLocationContinentCode): Self = StObject.set(x, "NextContinentCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    def setNextContinentCodeUndefined: Self = StObject.set(x, "NextContinentCode", js.undefined)
     
     @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    def setNextCountryCode(value: GeoLocationCountryCode): Self = StObject.set(x, "NextCountryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextContinentCode(value: GeoLocationContinentCode): Self = this.set("NextContinentCode", value.asInstanceOf[js.Any])
+    def setNextCountryCodeUndefined: Self = StObject.set(x, "NextCountryCode", js.undefined)
     
     @scala.inline
-    def deleteNextContinentCode: Self = this.set("NextContinentCode", js.undefined)
+    def setNextSubdivisionCode(value: GeoLocationSubdivisionCode): Self = StObject.set(x, "NextSubdivisionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextCountryCode(value: GeoLocationCountryCode): Self = this.set("NextCountryCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextCountryCode: Self = this.set("NextCountryCode", js.undefined)
-    
-    @scala.inline
-    def setNextSubdivisionCode(value: GeoLocationSubdivisionCode): Self = this.set("NextSubdivisionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextSubdivisionCode: Self = this.set("NextSubdivisionCode", js.undefined)
+    def setNextSubdivisionCodeUndefined: Self = StObject.set(x, "NextSubdivisionCode", js.undefined)
   }
 }

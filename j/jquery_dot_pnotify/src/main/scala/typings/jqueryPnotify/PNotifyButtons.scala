@@ -2,12 +2,13 @@ package typings.jqueryPnotify
 
 import typings.jqueryPnotify.anon.Close
 import typings.jqueryPnotify.anon.Closer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PNotifyButtons extends js.Object {
+trait PNotifyButtons extends StObject {
   
   /**
     * The classes to use for button icons. Leave them null to use the classes from the styling you're using.
@@ -53,60 +54,48 @@ object PNotifyButtons {
   }
   
   @scala.inline
-  implicit class PNotifyButtonsOps[Self <: PNotifyButtons] (val x: Self) extends AnyVal {
+  implicit class PNotifyButtonsMutableBuilder[Self <: PNotifyButtons] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: Closer): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloser(value: Boolean): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClasses(value: Closer): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setCloserUndefined: Self = StObject.set(x, "closer", js.undefined)
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setCloser_hover(value: Boolean): Self = StObject.set(x, "closer_hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloser(value: Boolean): Self = this.set("closer", value.asInstanceOf[js.Any])
+    def setCloser_hoverUndefined: Self = StObject.set(x, "closer_hover", js.undefined)
     
     @scala.inline
-    def deleteCloser: Self = this.set("closer", js.undefined)
+    def setLabels(value: Close): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloser_hover(value: Boolean): Self = this.set("closer_hover", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteCloser_hover: Self = this.set("closer_hover", js.undefined)
+    def setShow_on_nonblock(value: Boolean): Self = StObject.set(x, "show_on_nonblock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: Close): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setShow_on_nonblockUndefined: Self = StObject.set(x, "show_on_nonblock", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setSticker(value: Boolean): Self = StObject.set(x, "sticker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow_on_nonblock(value: Boolean): Self = this.set("show_on_nonblock", value.asInstanceOf[js.Any])
+    def setStickerUndefined: Self = StObject.set(x, "sticker", js.undefined)
     
     @scala.inline
-    def deleteShow_on_nonblock: Self = this.set("show_on_nonblock", js.undefined)
+    def setSticker_hover(value: Boolean): Self = StObject.set(x, "sticker_hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSticker(value: Boolean): Self = this.set("sticker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSticker: Self = this.set("sticker", js.undefined)
-    
-    @scala.inline
-    def setSticker_hover(value: Boolean): Self = this.set("sticker_hover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSticker_hover: Self = this.set("sticker_hover", js.undefined)
+    def setSticker_hoverUndefined: Self = StObject.set(x, "sticker_hover", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.foundationSites.FoundationSites
 
 import typings.foundationSites.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/accordion-menu.html#javascript-reference
 @js.native
-trait AccordionMenu extends js.Object {
+trait AccordionMenu extends StObject {
   
   def destroy(): Unit = js.native
   
@@ -34,33 +35,21 @@ object AccordionMenu {
   }
   
   @scala.inline
-  implicit class AccordionMenuOps[Self <: AccordionMenu] (val x: Self) extends AnyVal {
+  implicit class AccordionMenuMutableBuilder[Self <: AccordionMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDown(value: (JQuery, Boolean) => Unit): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setToggle(value: JQuery => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDown(value: (JQuery, Boolean) => Unit): Self = this.set("down", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setHideAll(value: () => Unit): Self = this.set("hideAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToggle(value: JQuery => Unit): Self = this.set("toggle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUp(value: JQuery => Unit): Self = this.set("up", js.Any.fromFunction1(value))
+    def setUp(value: JQuery => Unit): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
   }
 }

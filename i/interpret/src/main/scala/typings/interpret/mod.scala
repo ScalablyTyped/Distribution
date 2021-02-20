@@ -4,20 +4,25 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.interpret.anon.Dictkey
 import typings.interpret.anon.Extensions
 import typings.node.NodeModule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("interpret", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("interpret", "extensions")
+  @js.native
   val extensions: Extensions_ = js.native
   
+  @JSImport("interpret", "jsVariants")
+  @js.native
   val jsVariants: Extensions_ = js.native
   
+  type Extension = String | ExtensionDescriptor | (js.Array[String | ExtensionDescriptor])
+  
   @js.native
-  trait ExtensionDescriptor extends js.Object {
+  trait ExtensionDescriptor extends StObject {
     
     var module: String = js.native
     
@@ -26,8 +31,10 @@ object mod extends js.Object {
     var register_Original: RegisterFn = js.native
   }
   
+  type Extensions_ = StringDictionary[Extension | Null]
+  
   @js.native
-  trait Hook extends js.Object {
+  trait Hook extends StObject {
     
     def apply(m: Extensions): js.Any = js.native
     def apply(m: NodeModule): js.Any = js.native
@@ -35,10 +42,6 @@ object mod extends js.Object {
     def install(): Unit = js.native
     def install(m: Dictkey): Unit = js.native
   }
-  
-  type Extension = String | ExtensionDescriptor | (js.Array[String | ExtensionDescriptor])
-  
-  type Extensions_ = StringDictionary[Extension | Null]
   
   type RegisterFn = js.Function1[/* hook */ Hook, Unit]
 }

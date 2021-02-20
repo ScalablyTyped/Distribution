@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceColumn extends js.Object {
+trait DataSourceColumn extends StObject {
   
   /** The formula of the calculated column. */
   var formula: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object DataSourceColumn {
   }
   
   @scala.inline
-  implicit class DataSourceColumnOps[Self <: DataSourceColumn] (val x: Self) extends AnyVal {
+  implicit class DataSourceColumnMutableBuilder[Self <: DataSourceColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReference(value: DataSourceColumnReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: String): Self = this.set("formula", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormula: Self = this.set("formula", js.undefined)
-    
-    @scala.inline
-    def setReference(value: DataSourceColumnReference): Self = this.set("reference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReference: Self = this.set("reference", js.undefined)
+    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
   }
 }

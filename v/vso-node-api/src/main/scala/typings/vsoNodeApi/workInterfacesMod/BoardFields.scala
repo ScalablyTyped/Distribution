@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoardFields extends js.Object {
+trait BoardFields extends StObject {
   
   var columnField: FieldReference = js.native
   
@@ -22,27 +23,15 @@ object BoardFields {
   }
   
   @scala.inline
-  implicit class BoardFieldsOps[Self <: BoardFields] (val x: Self) extends AnyVal {
+  implicit class BoardFieldsMutableBuilder[Self <: BoardFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnField(value: FieldReference): Self = StObject.set(x, "columnField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoneField(value: FieldReference): Self = StObject.set(x, "doneField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumnField(value: FieldReference): Self = this.set("columnField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDoneField(value: FieldReference): Self = this.set("doneField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowField(value: FieldReference): Self = this.set("rowField", value.asInstanceOf[js.Any])
+    def setRowField(value: FieldReference): Self = StObject.set(x, "rowField", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTemplateInput extends js.Object {
+trait GetTemplateInput extends StObject {
   
   /**
     * The name or Amazon Resource Name (ARN) of a change set for which AWS CloudFormation returns the associated template. If you specify a name, you must also specify the StackName.
@@ -31,36 +32,24 @@ object GetTemplateInput {
   }
   
   @scala.inline
-  implicit class GetTemplateInputOps[Self <: GetTemplateInput] (val x: Self) extends AnyVal {
+  implicit class GetTemplateInputMutableBuilder[Self <: GetTemplateInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeSetName(value: ChangeSetNameOrId): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSetName(value: ChangeSetNameOrId): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
+    def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
     
     @scala.inline
-    def deleteChangeSetName: Self = this.set("ChangeSetName", js.undefined)
+    def setTemplateStage(value: TemplateStage): Self = StObject.set(x, "TemplateStage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackName: Self = this.set("StackName", js.undefined)
-    
-    @scala.inline
-    def setTemplateStage(value: TemplateStage): Self = this.set("TemplateStage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateStage: Self = this.set("TemplateStage", js.undefined)
+    def setTemplateStageUndefined: Self = StObject.set(x, "TemplateStage", js.undefined)
   }
 }

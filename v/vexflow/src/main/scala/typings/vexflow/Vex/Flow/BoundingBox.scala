@@ -1,12 +1,13 @@
 package typings.vexflow.Vex.Flow
 
 import typings.vexflow.Vex.IRenderContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoundingBox extends js.Object {
+trait BoundingBox extends StObject {
   
   def draw(ctx: IRenderContext, x: Double, y: Double): Unit = js.native
   

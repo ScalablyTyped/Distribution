@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DowngradRequestBillingInfoResponse extends js.Object {
+trait DowngradRequestBillingInfoResponse extends StObject {
   
   var downgradePlanInformation: js.UndefOr[DowngradePlanUpdateResponse] = js.native
   
@@ -33,30 +34,18 @@ object DowngradRequestBillingInfoResponse {
   }
   
   @scala.inline
-  implicit class DowngradRequestBillingInfoResponseOps[Self <: DowngradRequestBillingInfoResponse] (val x: Self) extends AnyVal {
+  implicit class DowngradRequestBillingInfoResponseMutableBuilder[Self <: DowngradRequestBillingInfoResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDowngradePlanInformation(value: DowngradePlanUpdateResponse): Self = StObject.set(x, "downgradePlanInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDowngradePlanInformationUndefined: Self = StObject.set(x, "downgradePlanInformation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDowngradePlanInformation(value: DowngradePlanUpdateResponse): Self = this.set("downgradePlanInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDowngradePlanInformation: Self = this.set("downgradePlanInformation", js.undefined)
-    
-    @scala.inline
-    def setPaymentMethod(value: String): Self = this.set("paymentMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentMethod: Self = this.set("paymentMethod", js.undefined)
+    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
   }
 }

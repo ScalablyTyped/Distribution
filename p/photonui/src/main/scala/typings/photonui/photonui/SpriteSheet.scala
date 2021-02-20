@@ -2,6 +2,7 @@ package typings.photonui.photonui
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,42 +47,30 @@ object SpriteSheet {
   }
   
   @scala.inline
-  implicit class SpriteSheetOps[Self <: SpriteSheet] (val x: Self) extends AnyVal {
+  implicit class SpriteSheetMutableBuilder[Self <: SpriteSheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddIcon(value: (String, Double, Double) => Unit): Self = StObject.set(x, "addIcon", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetIconCSS(value: String => String): Self = StObject.set(x, "getIconCSS", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIconPosition(value: String => X): Self = StObject.set(x, "getIconPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddIcon(value: (String, Double, Double) => Unit): Self = this.set("addIcon", js.Any.fromFunction3(value))
+    def setIcons(value: StringDictionary[js.Array[Double]]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetIconCSS(value: String => String): Self = this.set("getIconCSS", js.Any.fromFunction1(value))
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetIconPosition(value: String => X): Self = this.set("getIconPosition", js.Any.fromFunction1(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: StringDictionary[js.Array[Double]]): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setRemoveIcon(value: String => Unit): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveIcon(value: String => Unit): Self = this.set("removeIcon", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

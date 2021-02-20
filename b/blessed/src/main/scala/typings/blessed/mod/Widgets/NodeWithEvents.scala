@@ -4,13 +4,15 @@ import typings.blessed.blessedStrings.keypress
 import typings.blessed.blessedStrings.warning
 import typings.blessed.mod.Widgets.Events.IKeyEventArg
 import typings.blessed.mod.Widgets.Events.IMouseEventArg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blessed", "Widgets.NodeWithEvents")
 @js.native
-class NodeWithEvents () extends Node {
+class NodeWithEvents protected () extends Node {
+  def this(options: INodeOptions) = this()
   
   /**
     * Bind a keypress listener for a specific key.

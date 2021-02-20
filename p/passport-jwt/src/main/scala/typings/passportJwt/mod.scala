@@ -5,32 +5,45 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import typings.jsonwebtoken.mod.VerifyOptions
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("passport-jwt", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object ExtractJwt extends js.Object {
+  object ExtractJwt {
     
+    @JSImport("passport-jwt", "ExtractJwt.fromAuthHeader")
+    @js.native
     def fromAuthHeader(): JwtFromRequestFunction = js.native
     
+    @JSImport("passport-jwt", "ExtractJwt.fromAuthHeaderAsBearerToken")
+    @js.native
     def fromAuthHeaderAsBearerToken(): JwtFromRequestFunction = js.native
     
+    @JSImport("passport-jwt", "ExtractJwt.fromAuthHeaderWithScheme")
+    @js.native
     def fromAuthHeaderWithScheme(auth_scheme: String): JwtFromRequestFunction = js.native
     
+    @JSImport("passport-jwt", "ExtractJwt.fromBodyField")
+    @js.native
     def fromBodyField(field_name: String): JwtFromRequestFunction = js.native
     
+    @JSImport("passport-jwt", "ExtractJwt.fromExtractors")
+    @js.native
     def fromExtractors(extractors: js.Array[JwtFromRequestFunction]): JwtFromRequestFunction = js.native
     
+    @JSImport("passport-jwt", "ExtractJwt.fromHeader")
+    @js.native
     def fromHeader(header_name: String): JwtFromRequestFunction = js.native
     
+    @JSImport("passport-jwt", "ExtractJwt.fromUrlQueryParameter")
+    @js.native
     def fromUrlQueryParameter(param_name: String): JwtFromRequestFunction = js.native
   }
   
+  @JSImport("passport-jwt", "Strategy")
   @js.native
   class Strategy protected ()
     extends typings.passportStrategy.mod.Strategy {
@@ -38,8 +51,10 @@ object mod extends js.Object {
     def this(opt: StrategyOptions, verify: VerifyCallbackWithRequest) = this()
   }
   
+  type JwtFromRequestFunction = js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String | Null]
+  
   @js.native
-  trait StrategyOptions extends js.Object {
+  trait StrategyOptions extends StObject {
     
     var algorithms: js.UndefOr[js.Array[String]] = js.native
     
@@ -61,8 +76,6 @@ object mod extends js.Object {
     
     var secretOrKeyProvider: js.UndefOr[js.Any] = js.native
   }
-  
-  type JwtFromRequestFunction = js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String | Null]
   
   type VerifiedCallback = js.Function3[/* error */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit]
   

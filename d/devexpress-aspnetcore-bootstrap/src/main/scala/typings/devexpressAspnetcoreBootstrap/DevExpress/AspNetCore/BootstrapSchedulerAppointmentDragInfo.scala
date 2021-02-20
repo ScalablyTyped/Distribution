@@ -1,11 +1,12 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapSchedulerAppointmentDragInfo extends js.Object {
+trait BootstrapSchedulerAppointmentDragInfo extends StObject {
   
   val appointmentId: String = js.native
   
@@ -24,36 +25,24 @@ object BootstrapSchedulerAppointmentDragInfo {
   }
   
   @scala.inline
-  implicit class BootstrapSchedulerAppointmentDragInfoOps[Self <: BootstrapSchedulerAppointmentDragInfo] (val x: Self) extends AnyVal {
+  implicit class BootstrapSchedulerAppointmentDragInfoMutableBuilder[Self <: BootstrapSchedulerAppointmentDragInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppointmentId(value: String): Self = this.set("appointmentId", value.asInstanceOf[js.Any])
+    def setNewIntervalNull: Self = StObject.set(x, "newInterval", null)
     
     @scala.inline
-    def setInstance(value: js.Any): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setOldInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewInterval(value: BootstrapTimeInterval): Self = this.set("newInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewIntervalNull: Self = this.set("newInterval", null)
-    
-    @scala.inline
-    def setOldInterval(value: BootstrapTimeInterval): Self = this.set("oldInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldIntervalNull: Self = this.set("oldInterval", null)
+    def setOldIntervalNull: Self = StObject.set(x, "oldInterval", null)
   }
 }

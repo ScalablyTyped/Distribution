@@ -1,6 +1,7 @@
 package typings.extjs.Ext
 
 import typings.extjs.Ext.panel.IAbstractPanel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -242,366 +243,354 @@ object IPanel {
   }
   
   @scala.inline
-  implicit class IPanelOps[Self <: IPanel] (val x: Self) extends AnyVal {
+  implicit class IPanelMutableBuilder[Self <: IPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTool(value: /* tools */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addTool", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddToolUndefined: Self = StObject.set(x, "addTool", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterCollapse(value: /* animated */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "afterCollapse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddTool(value: /* tools */ js.UndefOr[js.Any] => Unit): Self = this.set("addTool", js.Any.fromFunction1(value))
+    def setAfterCollapseUndefined: Self = StObject.set(x, "afterCollapse", js.undefined)
     
     @scala.inline
-    def deleteAddTool: Self = this.set("addTool", js.undefined)
+    def setAfterExpand(value: /* animated */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "afterExpand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterCollapse(value: /* animated */ js.UndefOr[Boolean] => Unit): Self = this.set("afterCollapse", js.Any.fromFunction1(value))
+    def setAfterExpandUndefined: Self = StObject.set(x, "afterExpand", js.undefined)
     
     @scala.inline
-    def deleteAfterCollapse: Self = this.set("afterCollapse", js.undefined)
+    def setAnimCollapse(value: Boolean): Self = StObject.set(x, "animCollapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterExpand(value: /* animated */ js.UndefOr[Boolean] => Unit): Self = this.set("afterExpand", js.Any.fromFunction1(value))
+    def setAnimCollapseUndefined: Self = StObject.set(x, "animCollapse", js.undefined)
     
     @scala.inline
-    def deleteAfterExpand: Self = this.set("afterExpand", js.undefined)
+    def setBbar(value: js.Any): Self = StObject.set(x, "bbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimCollapse(value: Boolean): Self = this.set("animCollapse", value.asInstanceOf[js.Any])
+    def setBbarUndefined: Self = StObject.set(x, "bbar", js.undefined)
     
     @scala.inline
-    def deleteAnimCollapse: Self = this.set("animCollapse", js.undefined)
+    def setButtonAlign(value: java.lang.String): Self = StObject.set(x, "buttonAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBbar(value: js.Any): Self = this.set("bbar", value.asInstanceOf[js.Any])
+    def setButtonAlignUndefined: Self = StObject.set(x, "buttonAlign", js.undefined)
     
     @scala.inline
-    def deleteBbar: Self = this.set("bbar", js.undefined)
+    def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonAlign(value: java.lang.String): Self = this.set("buttonAlign", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteButtonAlign: Self = this.set("buttonAlign", js.undefined)
+    def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Any): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    def setCloseAction(value: java.lang.String): Self = StObject.set(x, "closeAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClosable: Self = this.set("closable", js.undefined)
+    def setCloseActionUndefined: Self = StObject.set(x, "closeAction", js.undefined)
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setCollapse(value: (/* direction */ js.UndefOr[java.lang.String], /* animate */ js.UndefOr[Boolean]) => IPanel): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCloseAction(value: java.lang.String): Self = this.set("closeAction", value.asInstanceOf[js.Any])
+    def setCollapseDirection(value: java.lang.String): Self = StObject.set(x, "collapseDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseAction: Self = this.set("closeAction", js.undefined)
+    def setCollapseDirectionUndefined: Self = StObject.set(x, "collapseDirection", js.undefined)
     
     @scala.inline
-    def setCollapse(value: (/* direction */ js.UndefOr[java.lang.String], /* animate */ js.UndefOr[Boolean]) => IPanel): Self = this.set("collapse", js.Any.fromFunction2(value))
+    def setCollapseFirst(value: Boolean): Self = StObject.set(x, "collapseFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    def setCollapseFirstUndefined: Self = StObject.set(x, "collapseFirst", js.undefined)
     
     @scala.inline
-    def setCollapseDirection(value: java.lang.String): Self = this.set("collapseDirection", value.asInstanceOf[js.Any])
+    def setCollapseMode(value: java.lang.String): Self = StObject.set(x, "collapseMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollapseDirection: Self = this.set("collapseDirection", js.undefined)
+    def setCollapseModeUndefined: Self = StObject.set(x, "collapseMode", js.undefined)
     
     @scala.inline
-    def setCollapseFirst(value: Boolean): Self = this.set("collapseFirst", value.asInstanceOf[js.Any])
+    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
     @scala.inline
-    def deleteCollapseFirst: Self = this.set("collapseFirst", js.undefined)
+    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseMode(value: java.lang.String): Self = this.set("collapseMode", value.asInstanceOf[js.Any])
+    def setCollapsedCls(value: java.lang.String): Self = StObject.set(x, "collapsedCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollapseMode: Self = this.set("collapseMode", js.undefined)
+    def setCollapsedClsUndefined: Self = StObject.set(x, "collapsedCls", js.undefined)
     
     @scala.inline
-    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
     @scala.inline
-    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsedCls(value: java.lang.String): Self = this.set("collapsedCls", value.asInstanceOf[js.Any])
+    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
     @scala.inline
-    def deleteCollapsedCls: Self = this.set("collapsedCls", js.undefined)
+    def setConstrainHeader(value: Boolean): Self = StObject.set(x, "constrainHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsible(value: Boolean): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    def setConstrainHeaderUndefined: Self = StObject.set(x, "constrainHeader", js.undefined)
     
     @scala.inline
-    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    def setConvertCollapseDir(value: /* collapseDir */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "convertCollapseDir", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConstrainHeader(value: Boolean): Self = this.set("constrainHeader", value.asInstanceOf[js.Any])
+    def setConvertCollapseDirUndefined: Self = StObject.set(x, "convertCollapseDir", js.undefined)
     
     @scala.inline
-    def deleteConstrainHeader: Self = this.set("constrainHeader", js.undefined)
+    def setDd(value: js.Any): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertCollapseDir(value: /* collapseDir */ js.UndefOr[js.Any] => Unit): Self = this.set("convertCollapseDir", js.Any.fromFunction1(value))
+    def setDdUndefined: Self = StObject.set(x, "dd", js.undefined)
     
     @scala.inline
-    def deleteConvertCollapseDir: Self = this.set("convertCollapseDir", js.undefined)
+    def setExpand(value: /* animate */ js.UndefOr[Boolean] => IPanel): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDd(value: js.Any): Self = this.set("dd", value.asInstanceOf[js.Any])
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteDd: Self = this.set("dd", js.undefined)
+    def setFbar(value: js.Any): Self = StObject.set(x, "fbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: /* animate */ js.UndefOr[Boolean] => IPanel): Self = this.set("expand", js.Any.fromFunction1(value))
+    def setFbarUndefined: Self = StObject.set(x, "fbar", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setFloatable(value: Boolean): Self = StObject.set(x, "floatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFbar(value: js.Any): Self = this.set("fbar", value.asInstanceOf[js.Any])
+    def setFloatableUndefined: Self = StObject.set(x, "floatable", js.undefined)
     
     @scala.inline
-    def deleteFbar: Self = this.set("fbar", js.undefined)
+    def setFrameHeader(value: Boolean): Self = StObject.set(x, "frameHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatable(value: Boolean): Self = this.set("floatable", value.asInstanceOf[js.Any])
+    def setFrameHeaderUndefined: Self = StObject.set(x, "frameHeader", js.undefined)
     
     @scala.inline
-    def deleteFloatable: Self = this.set("floatable", js.undefined)
+    def setGetCollapsed(value: () => _): Self = StObject.set(x, "getCollapsed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFrameHeader(value: Boolean): Self = this.set("frameHeader", value.asInstanceOf[js.Any])
+    def setGetCollapsedUndefined: Self = StObject.set(x, "getCollapsed", js.undefined)
     
     @scala.inline
-    def deleteFrameHeader: Self = this.set("frameHeader", js.undefined)
+    def setGetHeader(value: () => Unit): Self = StObject.set(x, "getHeader", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCollapsed(value: () => _): Self = this.set("getCollapsed", js.Any.fromFunction0(value))
+    def setGetHeaderUndefined: Self = StObject.set(x, "getHeader", js.undefined)
     
     @scala.inline
-    def deleteGetCollapsed: Self = this.set("getCollapsed", js.undefined)
+    def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHeader(value: () => Unit): Self = this.set("getHeader", js.Any.fromFunction0(value))
+    def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
     
     @scala.inline
-    def deleteGetHeader: Self = this.set("getHeader", js.undefined)
+    def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyph(value: js.Any): Self = this.set("glyph", value.asInstanceOf[js.Any])
+    def setHeaderOverCls(value: java.lang.String): Self = StObject.set(x, "headerOverCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlyph: Self = this.set("glyph", js.undefined)
+    def setHeaderOverClsUndefined: Self = StObject.set(x, "headerOverCls", js.undefined)
     
     @scala.inline
-    def setHeader(value: js.Any): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHeaderPosition(value: java.lang.String): Self = StObject.set(x, "headerPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setHeaderPositionUndefined: Self = StObject.set(x, "headerPosition", js.undefined)
     
     @scala.inline
-    def setHeaderOverCls(value: java.lang.String): Self = this.set("headerOverCls", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteHeaderOverCls: Self = this.set("headerOverCls", js.undefined)
+    def setHideCollapseTool(value: Boolean): Self = StObject.set(x, "hideCollapseTool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderPosition(value: java.lang.String): Self = this.set("headerPosition", value.asInstanceOf[js.Any])
+    def setHideCollapseToolUndefined: Self = StObject.set(x, "hideCollapseTool", js.undefined)
     
     @scala.inline
-    def deleteHeaderPosition: Self = this.set("headerPosition", js.undefined)
+    def setIcon(value: java.lang.String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideCollapseTool(value: Boolean): Self = this.set("hideCollapseTool", value.asInstanceOf[js.Any])
+    def setIconCls(value: java.lang.String): Self = StObject.set(x, "iconCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideCollapseTool: Self = this.set("hideCollapseTool", js.undefined)
+    def setIconClsUndefined: Self = StObject.set(x, "iconCls", js.undefined)
     
     @scala.inline
-    def setIcon(value: java.lang.String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIsVisible(value: /* deep */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIconCls(value: java.lang.String): Self = this.set("iconCls", value.asInstanceOf[js.Any])
+    def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
     @scala.inline
-    def deleteIconCls: Self = this.set("iconCls", js.undefined)
+    def setLbar(value: js.Any): Self = StObject.set(x, "lbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVisible(value: /* deep */ js.UndefOr[js.Any] => Boolean): Self = this.set("isVisible", js.Any.fromFunction1(value))
+    def setLbarUndefined: Self = StObject.set(x, "lbar", js.undefined)
     
     @scala.inline
-    def deleteIsVisible: Self = this.set("isVisible", js.undefined)
+    def setManageHeight(value: Boolean): Self = StObject.set(x, "manageHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLbar(value: js.Any): Self = this.set("lbar", value.asInstanceOf[js.Any])
+    def setManageHeightUndefined: Self = StObject.set(x, "manageHeight", js.undefined)
     
     @scala.inline
-    def deleteLbar: Self = this.set("lbar", js.undefined)
+    def setMinButtonWidth(value: Double): Self = StObject.set(x, "minButtonWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManageHeight(value: Boolean): Self = this.set("manageHeight", value.asInstanceOf[js.Any])
+    def setMinButtonWidthUndefined: Self = StObject.set(x, "minButtonWidth", js.undefined)
     
     @scala.inline
-    def deleteManageHeight: Self = this.set("manageHeight", js.undefined)
+    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMinButtonWidth(value: Double): Self = this.set("minButtonWidth", value.asInstanceOf[js.Any])
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteMinButtonWidth: Self = this.set("minButtonWidth", js.undefined)
+    def setOnRemoved(value: /* destroying */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onRemoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnHide(value: () => Unit): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnRemovedUndefined: Self = StObject.set(x, "onRemoved", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnRemoved(value: /* destroying */ js.UndefOr[js.Any] => Unit): Self = this.set("onRemoved", js.Any.fromFunction1(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnRemoved: Self = this.set("onRemoved", js.undefined)
+    def setOverlapHeader(value: Boolean): Self = StObject.set(x, "overlapHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShow(value: () => Unit): Self = this.set("onShow", js.Any.fromFunction0(value))
+    def setOverlapHeaderUndefined: Self = StObject.set(x, "overlapHeader", js.undefined)
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setPlaceholder(value: js.Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlapHeader(value: Boolean): Self = this.set("overlapHeader", value.asInstanceOf[js.Any])
+    def setPlaceholderCollapseHideMode(value: Double): Self = StObject.set(x, "placeholderCollapseHideMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverlapHeader: Self = this.set("overlapHeader", js.undefined)
+    def setPlaceholderCollapseHideModeUndefined: Self = StObject.set(x, "placeholderCollapseHideMode", js.undefined)
     
     @scala.inline
-    def setPlaceholder(value: js.Any): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setPreventHeader(value: Boolean): Self = StObject.set(x, "preventHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderCollapseHideMode(value: Double): Self = this.set("placeholderCollapseHideMode", value.asInstanceOf[js.Any])
+    def setPreventHeaderUndefined: Self = StObject.set(x, "preventHeader", js.undefined)
     
     @scala.inline
-    def deletePlaceholderCollapseHideMode: Self = this.set("placeholderCollapseHideMode", js.undefined)
+    def setRbar(value: js.Any): Self = StObject.set(x, "rbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventHeader(value: Boolean): Self = this.set("preventHeader", value.asInstanceOf[js.Any])
+    def setRbarUndefined: Self = StObject.set(x, "rbar", js.undefined)
     
     @scala.inline
-    def deletePreventHeader: Self = this.set("preventHeader", js.undefined)
+    def setSetBorder(value: (/* border */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setBorder", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRbar(value: js.Any): Self = this.set("rbar", value.asInstanceOf[js.Any])
+    def setSetBorderUndefined: Self = StObject.set(x, "setBorder", js.undefined)
     
     @scala.inline
-    def deleteRbar: Self = this.set("rbar", js.undefined)
+    def setSetGlyph(value: /* newGlyph */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setGlyph", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBorder(value: (/* border */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[js.Any]) => Unit): Self = this.set("setBorder", js.Any.fromFunction2(value))
+    def setSetGlyphUndefined: Self = StObject.set(x, "setGlyph", js.undefined)
     
     @scala.inline
-    def deleteSetBorder: Self = this.set("setBorder", js.undefined)
+    def setSetIcon(value: /* newIcon */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetGlyph(value: /* newGlyph */ js.UndefOr[js.Any] => Unit): Self = this.set("setGlyph", js.Any.fromFunction1(value))
+    def setSetIconCls(value: /* newIconCls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setIconCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetGlyph: Self = this.set("setGlyph", js.undefined)
+    def setSetIconClsUndefined: Self = StObject.set(x, "setIconCls", js.undefined)
     
     @scala.inline
-    def setSetIcon(value: /* newIcon */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setIcon", js.Any.fromFunction1(value))
+    def setSetIconUndefined: Self = StObject.set(x, "setIcon", js.undefined)
     
     @scala.inline
-    def deleteSetIcon: Self = this.set("setIcon", js.undefined)
+    def setSetTitle(value: /* newTitle */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIconCls(value: /* newIconCls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setIconCls", js.Any.fromFunction1(value))
+    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
     @scala.inline
-    def deleteSetIconCls: Self = this.set("setIconCls", js.undefined)
+    def setSetUI(value: /* ui */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUI", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTitle(value: /* newTitle */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    def setSetUIUndefined: Self = StObject.set(x, "setUI", js.undefined)
     
     @scala.inline
-    def deleteSetTitle: Self = this.set("setTitle", js.undefined)
+    def setSimpleDrag(value: Boolean): Self = StObject.set(x, "simpleDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetUI(value: /* ui */ js.UndefOr[js.Any] => Unit): Self = this.set("setUI", js.Any.fromFunction1(value))
+    def setSimpleDragUndefined: Self = StObject.set(x, "simpleDrag", js.undefined)
     
     @scala.inline
-    def deleteSetUI: Self = this.set("setUI", js.undefined)
+    def setTbar(value: js.Any): Self = StObject.set(x, "tbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimpleDrag(value: Boolean): Self = this.set("simpleDrag", value.asInstanceOf[js.Any])
+    def setTbarUndefined: Self = StObject.set(x, "tbar", js.undefined)
     
     @scala.inline
-    def deleteSimpleDrag: Self = this.set("simpleDrag", js.undefined)
+    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTbar(value: js.Any): Self = this.set("tbar", value.asInstanceOf[js.Any])
+    def setTitleAlign(value: java.lang.String): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTbar: Self = this.set("tbar", js.undefined)
+    def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
     
     @scala.inline
-    def setTitle(value: java.lang.String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleCollapse(value: Boolean): Self = StObject.set(x, "titleCollapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleCollapseUndefined: Self = StObject.set(x, "titleCollapse", js.undefined)
     
     @scala.inline
-    def setTitleAlign(value: java.lang.String): Self = this.set("titleAlign", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTitleAlign: Self = this.set("titleAlign", js.undefined)
+    def setToggleCollapse(value: () => IPanel): Self = StObject.set(x, "toggleCollapse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTitleCollapse(value: Boolean): Self = this.set("titleCollapse", value.asInstanceOf[js.Any])
+    def setToggleCollapseUndefined: Self = StObject.set(x, "toggleCollapse", js.undefined)
     
     @scala.inline
-    def deleteTitleCollapse: Self = this.set("titleCollapse", js.undefined)
+    def setTools(value: js.Any): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggleCollapse(value: () => IPanel): Self = this.set("toggleCollapse", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteToggleCollapse: Self = this.set("toggleCollapse", js.undefined)
-    
-    @scala.inline
-    def setTools(value: js.Any): Self = this.set("tools", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTools: Self = this.set("tools", js.undefined)
+    def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
   }
 }

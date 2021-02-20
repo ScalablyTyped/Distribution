@@ -1,11 +1,12 @@
 package typings.awsSdk.iot1clickprojectsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateDeviceWithPlacementRequest extends js.Object {
+trait AssociateDeviceWithPlacementRequest extends StObject {
   
   /**
     * The ID of the physical device to be associated with the given placement in the project. Note that a mandatory 4 character prefix is required for all deviceId values.
@@ -41,30 +42,18 @@ object AssociateDeviceWithPlacementRequest {
   }
   
   @scala.inline
-  implicit class AssociateDeviceWithPlacementRequestOps[Self <: AssociateDeviceWithPlacementRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateDeviceWithPlacementRequestMutableBuilder[Self <: AssociateDeviceWithPlacementRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: DeviceId): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceTemplateName(value: DeviceTemplateName): Self = StObject.set(x, "deviceTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: DeviceId): Self = this.set("deviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceTemplateName(value: DeviceTemplateName): Self = this.set("deviceTemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlacementName(value: PlacementName): Self = this.set("placementName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

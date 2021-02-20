@@ -8,13 +8,12 @@ import typings.makerJs.MakerJs.IPathIntersectionOptions
 import typings.makerJs.MakerJs.IPathLine
 import typings.makerJs.MakerJs.IPoint
 import typings.makerJs.MakerJs.IPointMatchOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MakerJs.path")
-@js.native
-object path extends js.Object {
+object path {
   
   /**
     * Breaks a path in two. The supplied path will end at the supplied pointOfBreak,
@@ -25,6 +24,8 @@ object path extends js.Object {
     * @param pointOfBreak The point at which to break the path.
     * @returns A new path of the same type, when path type is line or arc. Returns null for circle.
     */
+  @JSGlobal("MakerJs.path.breakAtPoint")
+  @js.native
   def breakAtPoint(pathToBreak: IPath, pointOfBreak: IPoint): IPath = js.native
   
   /**
@@ -32,6 +33,8 @@ object path extends js.Object {
     *
     * @param pathToCenter The path to center.
     */
+  @JSGlobal("MakerJs.path.center")
+  @js.native
   def center(pathToCenter: IPath): IPath = js.native
   
   /**
@@ -40,7 +43,9 @@ object path extends js.Object {
     * @param pathToClone The path to clone.
     * @returns Cloned path.
     */
-  def clone(pathToClone: IPath): IPath = js.native
+  @JSGlobal("MakerJs.path.clone")
+  @js.native
+  def clone_(pathToClone: IPath): IPath = js.native
   
   /**
     * Connect 2 lines at their slope intersection point.
@@ -50,9 +55,17 @@ object path extends js.Object {
     * @param useOriginA Optional flag to converge the origin point of lineA instead of the end point.
     * @param useOriginB Optional flag to converge the origin point of lineB instead of the end point.
     */
+  @JSGlobal("MakerJs.path.converge")
+  @js.native
   def converge(lineA: IPathLine, lineB: IPathLine): IPoint = js.native
+  @JSGlobal("MakerJs.path.converge")
+  @js.native
   def converge(lineA: IPathLine, lineB: IPathLine, useOriginA: js.UndefOr[scala.Nothing], useOriginB: Boolean): IPoint = js.native
+  @JSGlobal("MakerJs.path.converge")
+  @js.native
   def converge(lineA: IPathLine, lineB: IPathLine, useOriginA: Boolean): IPoint = js.native
+  @JSGlobal("MakerJs.path.converge")
+  @js.native
   def converge(lineA: IPathLine, lineB: IPathLine, useOriginA: Boolean, useOriginB: Boolean): IPoint = js.native
   
   /**
@@ -63,6 +76,8 @@ object path extends js.Object {
     * @param scaleY The amount of y scaling.
     * @returns A new IModel (for circles and arcs) or IPath (for lines and bezier seeds).
     */
+  @JSGlobal("MakerJs.path.distort")
+  @js.native
   def distort(pathToDistort: IPath, scaleX: Double, scaleY: Double): IModel | IPath = js.native
   
   /**
@@ -72,7 +87,11 @@ object path extends js.Object {
     * @param lineB Second line to fillet, which will be modified to fit the fillet.
     * @returns Arc path object of the new fillet.
     */
+  @JSGlobal("MakerJs.path.dogbone")
+  @js.native
   def dogbone(lineA: IPathLine, lineB: IPathLine, filletRadius: Double): IPathArc = js.native
+  @JSGlobal("MakerJs.path.dogbone")
+  @js.native
   def dogbone(lineA: IPathLine, lineB: IPathLine, filletRadius: Double, options: IPointMatchOptions): IPathArc = js.native
   
   /**
@@ -83,7 +102,11 @@ object path extends js.Object {
     * @param isolateCaps Optional flag to put the end caps into a separate model named "caps".
     * @returns Model which surrounds the path.
     */
+  @JSGlobal("MakerJs.path.expand")
+  @js.native
   def expand(pathToExpand: IPath, expansion: Double): IModel = js.native
+  @JSGlobal("MakerJs.path.expand")
+  @js.native
   def expand(pathToExpand: IPath, expansion: Double, isolateCaps: Boolean): IModel = js.native
   
   /**
@@ -95,7 +118,11 @@ object path extends js.Object {
     * @param options Optional IPointMatchOptions object to specify pointMatchingDistance.
     * @returns Arc path object of the new fillet.
     */
+  @JSGlobal("MakerJs.path.fillet")
+  @js.native
   def fillet(pathA: IPath, pathB: IPath, filletRadius: Double): IPathArc = js.native
+  @JSGlobal("MakerJs.path.fillet")
+  @js.native
   def fillet(pathA: IPath, pathB: IPath, filletRadius: Double, options: IPointMatchOptions): IPathArc = js.native
   
   /**
@@ -106,7 +133,11 @@ object path extends js.Object {
     * @param options Optional IPathIntersectionOptions.
     * @returns IPathIntersection object, with points(s) of intersection (and angles, when a path is an arc or circle); or null if the paths did not intersect.
     */
+  @JSGlobal("MakerJs.path.intersection")
+  @js.native
   def intersection(path1: IPath, path2: IPath): IPathIntersection = js.native
+  @JSGlobal("MakerJs.path.intersection")
+  @js.native
   def intersection(path1: IPath, path2: IPath, options: IPathIntersectionOptions): IPathIntersection = js.native
   
   /**
@@ -117,6 +148,8 @@ object path extends js.Object {
     * @param mirrorY Boolean to mirror on the y axis.
     * @returns Mirrored path.
     */
+  @JSGlobal("MakerJs.path.mirror")
+  @js.native
   def mirror(pathToMirror: IPath, mirrorX: Boolean, mirrorY: Boolean): IPath = js.native
   
   /**
@@ -126,6 +159,8 @@ object path extends js.Object {
     * @param origin The new origin for the path.
     * @returns The original path (for cascading).
     */
+  @JSGlobal("MakerJs.path.move")
+  @js.native
   def move(pathToMove: IPath, origin: IPoint): IPath = js.native
   
   /**
@@ -136,7 +171,11 @@ object path extends js.Object {
     * @param subtract Optional boolean to subtract instead of add.
     * @returns The original path (for cascading).
     */
+  @JSGlobal("MakerJs.path.moveRelative")
+  @js.native
   def moveRelative(pathToMove: IPath, delta: IPoint): IPath = js.native
+  @JSGlobal("MakerJs.path.moveRelative")
+  @js.native
   def moveRelative(pathToMove: IPath, delta: IPoint, subtract: Boolean): IPath = js.native
   
   /**
@@ -146,6 +185,8 @@ object path extends js.Object {
     * @param deltas The x & y adjustments as a point object array.
     * @param task The function to call while the paths are temporarily moved.
     */
+  @JSGlobal("MakerJs.path.moveTemporary")
+  @js.native
   def moveTemporary(pathsToMove: js.Array[IPath], deltas: js.Array[IPoint], task: js.Function): Unit = js.native
   
   /**
@@ -156,7 +197,11 @@ object path extends js.Object {
     * @param rotationOrigin The center point of rotation.
     * @returns The original path (for cascading).
     */
+  @JSGlobal("MakerJs.path.rotate")
+  @js.native
   def rotate(pathToRotate: IPath, angleInDegrees: Double): IPath = js.native
+  @JSGlobal("MakerJs.path.rotate")
+  @js.native
   def rotate(pathToRotate: IPath, angleInDegrees: Double, rotationOrigin: IPoint): IPath = js.native
   
   /**
@@ -166,6 +211,8 @@ object path extends js.Object {
     * @param scaleValue The amount of scaling.
     * @returns The original path (for cascading).
     */
+  @JSGlobal("MakerJs.path.scale")
+  @js.native
   def scale(pathToScale: IPath, scaleValue: Double): IPath = js.native
   
   /**
@@ -177,13 +224,29 @@ object path extends js.Object {
     * @param close Optional flag to make a closed geometry by connecting the endpoints.
     * @returns Model of straight lines with same endpoints as the arc.
     */
+  @JSGlobal("MakerJs.path.straighten")
+  @js.native
   def straighten(arc: IPathArc): IModel = js.native
+  @JSGlobal("MakerJs.path.straighten")
+  @js.native
   def straighten(arc: IPathArc, bevel: js.UndefOr[scala.Nothing], prefix: js.UndefOr[scala.Nothing], close: Boolean): IModel = js.native
+  @JSGlobal("MakerJs.path.straighten")
+  @js.native
   def straighten(arc: IPathArc, bevel: js.UndefOr[scala.Nothing], prefix: String): IModel = js.native
+  @JSGlobal("MakerJs.path.straighten")
+  @js.native
   def straighten(arc: IPathArc, bevel: js.UndefOr[scala.Nothing], prefix: String, close: Boolean): IModel = js.native
+  @JSGlobal("MakerJs.path.straighten")
+  @js.native
   def straighten(arc: IPathArc, bevel: Boolean): IModel = js.native
+  @JSGlobal("MakerJs.path.straighten")
+  @js.native
   def straighten(arc: IPathArc, bevel: Boolean, prefix: js.UndefOr[scala.Nothing], close: Boolean): IModel = js.native
+  @JSGlobal("MakerJs.path.straighten")
+  @js.native
   def straighten(arc: IPathArc, bevel: Boolean, prefix: String): IModel = js.native
+  @JSGlobal("MakerJs.path.straighten")
+  @js.native
   def straighten(arc: IPathArc, bevel: Boolean, prefix: String, close: Boolean): IModel = js.native
   
   /**
@@ -193,7 +256,11 @@ object path extends js.Object {
     * @param maxArcFacet Optional maximum length between points on an arc or circle.
     * @returns Array of points which are on the path.
     */
+  @JSGlobal("MakerJs.path.toKeyPoints")
+  @js.native
   def toKeyPoints(pathContext: IPath): js.Array[IPoint] = js.native
+  @JSGlobal("MakerJs.path.toKeyPoints")
+  @js.native
   def toKeyPoints(pathContext: IPath, maxArcFacet: Double): js.Array[IPoint] = js.native
   
   /**
@@ -203,6 +270,8 @@ object path extends js.Object {
     * @param numberOfPoints Number of points to divide the path.
     * @returns Array of points which are on the path spread at a uniform interval.
     */
+  @JSGlobal("MakerJs.path.toPoints")
+  @js.native
   def toPoints(pathContext: IPath, numberOfPoints: Double): js.Array[IPoint] = js.native
   
   /**
@@ -210,5 +279,7 @@ object path extends js.Object {
     *
     * @param pathToZero The path to zero.
     */
+  @JSGlobal("MakerJs.path.zero")
+  @js.native
   def zero(pathToZero: IPath): IPath = js.native
 }

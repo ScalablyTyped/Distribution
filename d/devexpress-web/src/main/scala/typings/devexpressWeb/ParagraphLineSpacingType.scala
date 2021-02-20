@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParagraphLineSpacingType extends js.Object
+sealed trait ParagraphLineSpacingType extends StObject
 /**
   * Lists values specifying the type of paragraph line spacing.
   */
 @JSGlobal("ParagraphLineSpacingType")
 @js.native
-object ParagraphLineSpacingType extends js.Object {
+object ParagraphLineSpacingType extends StObject {
   
   /**
     * The line spacing can be greater than or equal to, but never less than, the specified ParagraphFormattingSettings.lineSpacing value.

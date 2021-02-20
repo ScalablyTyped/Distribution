@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectAttributeUpdate extends js.Object {
+trait ObjectAttributeUpdate extends StObject {
   
   /**
     * The action to perform as part of the attribute update.
@@ -26,30 +27,18 @@ object ObjectAttributeUpdate {
   }
   
   @scala.inline
-  implicit class ObjectAttributeUpdateOps[Self <: ObjectAttributeUpdate] (val x: Self) extends AnyVal {
+  implicit class ObjectAttributeUpdateMutableBuilder[Self <: ObjectAttributeUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectAttributeAction(value: ObjectAttributeAction): Self = StObject.set(x, "ObjectAttributeAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectAttributeActionUndefined: Self = StObject.set(x, "ObjectAttributeAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectAttributeKey(value: AttributeKey): Self = StObject.set(x, "ObjectAttributeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectAttributeAction(value: ObjectAttributeAction): Self = this.set("ObjectAttributeAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectAttributeAction: Self = this.set("ObjectAttributeAction", js.undefined)
-    
-    @scala.inline
-    def setObjectAttributeKey(value: AttributeKey): Self = this.set("ObjectAttributeKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectAttributeKey: Self = this.set("ObjectAttributeKey", js.undefined)
+    def setObjectAttributeKeyUndefined: Self = StObject.set(x, "ObjectAttributeKey", js.undefined)
   }
 }

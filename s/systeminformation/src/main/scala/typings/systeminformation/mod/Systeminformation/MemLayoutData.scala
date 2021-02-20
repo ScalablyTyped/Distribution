@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemLayoutData extends js.Object {
+trait MemLayoutData extends StObject {
   
   var bank: String = js.native
   
@@ -48,48 +49,36 @@ object MemLayoutData {
   }
   
   @scala.inline
-  implicit class MemLayoutDataOps[Self <: MemLayoutData] (val x: Self) extends AnyVal {
+  implicit class MemLayoutDataMutableBuilder[Self <: MemLayoutData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBank(value: String): Self = StObject.set(x, "bank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClockSpeed(value: Double): Self = StObject.set(x, "clockSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBank(value: String): Self = this.set("bank", value.asInstanceOf[js.Any])
+    def setPartNum(value: String): Self = StObject.set(x, "partNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClockSpeed(value: Double): Self = this.set("clockSpeed", value.asInstanceOf[js.Any])
+    def setSerialNum(value: String): Self = StObject.set(x, "serialNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormFactor(value: String): Self = this.set("formFactor", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartNum(value: String): Self = this.set("partNum", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNum(value: String): Self = this.set("serialNum", value.asInstanceOf[js.Any])
+    def setVoltageConfigured(value: Double): Self = StObject.set(x, "voltageConfigured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setVoltageMax(value: Double): Self = StObject.set(x, "voltageMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoltageConfigured(value: Double): Self = this.set("voltageConfigured", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoltageMax(value: Double): Self = this.set("voltageMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoltageMin(value: Double): Self = this.set("voltageMin", value.asInstanceOf[js.Any])
+    def setVoltageMin(value: Double): Self = StObject.set(x, "voltageMin", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,78 +60,66 @@ object AllSearchResults {
   }
   
   @scala.inline
-  implicit class AllSearchResultsOps[Self <: AllSearchResults[_], TDoc] (val x: Self with AllSearchResults[TDoc]) extends AnyVal {
+  implicit class AllSearchResultsMutableBuilder[Self <: AllSearchResults[_], TDoc] (val x: Self with AllSearchResults[TDoc]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAroundLatLng(value: String): Self = StObject.set(x, "aroundLatLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAroundLatLngUndefined: Self = StObject.set(x, "aroundLatLng", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomaticRadius(value: String): Self = StObject.set(x, "automaticRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisjunctiveFacetsVarargs(value: js.Any*): Self = this.set("disjunctiveFacets", js.Array(value :_*))
+    def setAutomaticRadiusUndefined: Self = StObject.set(x, "automaticRadius", js.undefined)
     
     @scala.inline
-    def setDisjunctiveFacets(value: js.Array[_]): Self = this.set("disjunctiveFacets", value.asInstanceOf[js.Any])
+    def setDisjunctiveFacets(value: js.Array[_]): Self = StObject.set(x, "disjunctiveFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExhaustiveNbHits(value: Boolean): Self = this.set("exhaustiveNbHits", value.asInstanceOf[js.Any])
+    def setDisjunctiveFacetsVarargs(value: js.Any*): Self = StObject.set(x, "disjunctiveFacets", js.Array(value :_*))
     
     @scala.inline
-    def setFacetsVarargs(value: js.Any*): Self = this.set("facets", js.Array(value :_*))
+    def setExhaustiveNbHits(value: Boolean): Self = StObject.set(x, "exhaustiveNbHits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacets(value: js.Array[_]): Self = this.set("facets", value.asInstanceOf[js.Any])
+    def setFacets(value: js.Array[_]): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchicalFacetsVarargs(value: js.Any*): Self = this.set("hierarchicalFacets", js.Array(value :_*))
+    def setFacetsVarargs(value: js.Any*): Self = StObject.set(x, "facets", js.Array(value :_*))
     
     @scala.inline
-    def setHierarchicalFacets(value: js.Array[_]): Self = this.set("hierarchicalFacets", value.asInstanceOf[js.Any])
+    def setHierarchicalFacets(value: js.Array[_]): Self = StObject.set(x, "hierarchicalFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitsVarargs(value: Hit[TDoc]*): Self = this.set("hits", js.Array(value :_*))
+    def setHierarchicalFacetsVarargs(value: js.Any*): Self = StObject.set(x, "hierarchicalFacets", js.Array(value :_*))
     
     @scala.inline
-    def setHits(value: js.Array[Hit[TDoc]]): Self = this.set("hits", value.asInstanceOf[js.Any])
+    def setHits(value: js.Array[Hit[TDoc]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitsPerPage(value: Double): Self = this.set("hitsPerPage", value.asInstanceOf[js.Any])
+    def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setHitsVarargs(value: Hit[TDoc]*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
     @scala.inline
-    def setNbHits(value: Double): Self = this.set("nbHits", value.asInstanceOf[js.Any])
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNbPages(value: Double): Self = this.set("nbPages", value.asInstanceOf[js.Any])
+    def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setNbPages(value: Double): Self = StObject.set(x, "nbPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingTimeMS(value: Double): Self = this.set("processingTimeMS", value.asInstanceOf[js.Any])
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setProcessingTimeMS(value: Double): Self = StObject.set(x, "processingTimeMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAroundLatLng(value: String): Self = this.set("aroundLatLng", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAroundLatLng: Self = this.set("aroundLatLng", js.undefined)
-    
-    @scala.inline
-    def setAutomaticRadius(value: String): Self = this.set("automaticRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutomaticRadius: Self = this.set("automaticRadius", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

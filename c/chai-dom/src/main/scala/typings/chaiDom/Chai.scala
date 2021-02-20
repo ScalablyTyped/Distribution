@@ -1,16 +1,15 @@
 package typings.chaiDom
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Chai")
-@js.native
-object Chai extends js.Object {
+object Chai {
   
   @js.native
-  trait Assertion extends js.Object {
+  trait Assertion extends StObject {
     
     def attr(name: String): Assertion = js.native
     def attr(name: String, value: String): Assertion = js.native
@@ -49,7 +48,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait Include extends js.Object {
+  trait Include extends StObject {
     
     def html(text: String): Assertion = js.native
     def html(text: js.Array[String]): Assertion = js.native

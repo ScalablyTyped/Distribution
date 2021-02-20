@@ -1,11 +1,12 @@
 package typings.inboxsdk.mod.Router
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreadDescriptor extends js.Object {
+trait ThreadDescriptor extends StObject {
   
   var gmailThreadId: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object ThreadDescriptor {
   }
   
   @scala.inline
-  implicit class ThreadDescriptorOps[Self <: ThreadDescriptor] (val x: Self) extends AnyVal {
+  implicit class ThreadDescriptorMutableBuilder[Self <: ThreadDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGmailThreadId(value: String): Self = StObject.set(x, "gmailThreadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGmailThreadIdUndefined: Self = StObject.set(x, "gmailThreadId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRfcMessageId(value: String): Self = StObject.set(x, "rfcMessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGmailThreadId(value: String): Self = this.set("gmailThreadId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGmailThreadId: Self = this.set("gmailThreadId", js.undefined)
-    
-    @scala.inline
-    def setRfcMessageId(value: String): Self = this.set("rfcMessageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRfcMessageId: Self = this.set("rfcMessageId", js.undefined)
+    def setRfcMessageIdUndefined: Self = StObject.set(x, "rfcMessageId", js.undefined)
   }
 }

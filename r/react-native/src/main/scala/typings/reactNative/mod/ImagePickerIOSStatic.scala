@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImagePickerIOSStatic extends js.Object {
+trait ImagePickerIOSStatic extends StObject {
   
   def canRecordVideos(callback: js.Function1[/* value */ Boolean, Unit]): Unit = js.native
   
@@ -37,34 +38,22 @@ object ImagePickerIOSStatic {
   }
   
   @scala.inline
-  implicit class ImagePickerIOSStaticOps[Self <: ImagePickerIOSStatic] (val x: Self) extends AnyVal {
+  implicit class ImagePickerIOSStaticMutableBuilder[Self <: ImagePickerIOSStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanRecordVideos(value: js.Function1[/* value */ Boolean, Unit] => Unit): Self = StObject.set(x, "canRecordVideos", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanRecordVideos(value: js.Function1[/* value */ Boolean, Unit] => Unit): Self = this.set("canRecordVideos", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCanUseCamera(value: js.Function1[/* value */ Boolean, Unit] => Unit): Self = this.set("canUseCamera", js.Any.fromFunction1(value))
+    def setCanUseCamera(value: js.Function1[/* value */ Boolean, Unit] => Unit): Self = StObject.set(x, "canUseCamera", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOpenCameraDialog(
       value: (OpenCameraDialogOptions, js.Function1[/* args */ ImagePickerResult, Unit], js.Function1[/* args */ js.Array[_], Unit]) => Unit
-    ): Self = this.set("openCameraDialog", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "openCameraDialog", js.Any.fromFunction3(value))
     
     @scala.inline
     def setOpenSelectDialog(
       value: (OpenSelectDialogOptions, js.Function1[/* args */ ImagePickerResult, Unit], js.Function1[/* args */ js.Array[_], Unit]) => Unit
-    ): Self = this.set("openSelectDialog", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "openSelectDialog", js.Any.fromFunction3(value))
   }
 }

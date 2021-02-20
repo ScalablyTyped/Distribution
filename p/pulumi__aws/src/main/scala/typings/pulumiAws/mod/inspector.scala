@@ -11,17 +11,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "inspector")
-@js.native
-object inspector extends js.Object {
+object inspector {
   
-  def getRulesPackages(): js.Promise[GetRulesPackagesResult] = js.native
-  def getRulesPackages(opts: InvokeOptions): js.Promise[GetRulesPackagesResult] = js.native
-  
+  @JSImport("@pulumi/aws", "inspector.AssessmentTarget")
   @js.native
   class AssessmentTarget protected ()
     extends typings.pulumiAws.inspectorMod.AssessmentTarget {
@@ -38,8 +35,7 @@ object inspector extends js.Object {
     def this(name: String, args: AssessmentTargetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object AssessmentTarget extends js.Object {
+  object AssessmentTarget {
     
     /**
       * Get an existing AssessmentTarget resource's state with the given name, ID, and optional extra
@@ -50,18 +46,29 @@ object inspector extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "inspector.AssessmentTarget.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
+    @JSImport("@pulumi/aws", "inspector.AssessmentTarget.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
+    @JSImport("@pulumi/aws", "inspector.AssessmentTarget.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AssessmentTargetState): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
+    @JSImport("@pulumi/aws", "inspector.AssessmentTarget.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AssessmentTargetState, opts: CustomResourceOptions): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
     
     /**
       * Returns true if the given object is an instance of AssessmentTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "inspector.AssessmentTarget.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTarget.AssessmentTarget */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "inspector.AssessmentTemplate")
   @js.native
   class AssessmentTemplate protected ()
     extends typings.pulumiAws.inspectorMod.AssessmentTemplate {
@@ -76,8 +83,7 @@ object inspector extends js.Object {
     def this(name: String, args: AssessmentTemplateArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object AssessmentTemplate extends js.Object {
+  object AssessmentTemplate {
     
     /**
       * Get an existing AssessmentTemplate resource's state with the given name, ID, and optional extra
@@ -88,18 +94,29 @@ object inspector extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "inspector.AssessmentTemplate.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
+    @JSImport("@pulumi/aws", "inspector.AssessmentTemplate.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
+    @JSImport("@pulumi/aws", "inspector.AssessmentTemplate.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AssessmentTemplateState): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
+    @JSImport("@pulumi/aws", "inspector.AssessmentTemplate.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AssessmentTemplateState, opts: CustomResourceOptions): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
     
     /**
       * Returns true if the given object is an instance of AssessmentTemplate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "inspector.AssessmentTemplate.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "inspector.ResourceGroup")
   @js.native
   class ResourceGroup protected ()
     extends typings.pulumiAws.inspectorMod.ResourceGroup {
@@ -114,8 +131,7 @@ object inspector extends js.Object {
     def this(name: String, args: ResourceGroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object ResourceGroup extends js.Object {
+  object ResourceGroup {
     
     /**
       * Get an existing ResourceGroup resource's state with the given name, ID, and optional extra
@@ -126,15 +142,32 @@ object inspector extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "inspector.ResourceGroup.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
+    @JSImport("@pulumi/aws", "inspector.ResourceGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
+    @JSImport("@pulumi/aws", "inspector.ResourceGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ResourceGroupState): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
+    @JSImport("@pulumi/aws", "inspector.ResourceGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ResourceGroupState, opts: CustomResourceOptions): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
     
     /**
       * Returns true if the given object is an instance of ResourceGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "inspector.ResourceGroup.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/resourceGroup.ResourceGroup */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws", "inspector.getRulesPackages")
+  @js.native
+  def getRulesPackages(): js.Promise[GetRulesPackagesResult] = js.native
+  @JSImport("@pulumi/aws", "inspector.getRulesPackages")
+  @js.native
+  def getRulesPackages(opts: InvokeOptions): js.Promise[GetRulesPackagesResult] = js.native
 }

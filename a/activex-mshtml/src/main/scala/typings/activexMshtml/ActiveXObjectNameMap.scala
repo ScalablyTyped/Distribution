@@ -3,12 +3,13 @@ package typings.activexMshtml
 import typings.activexMshtml.MSHTML.CTemplatePrinter
 import typings.activexMshtml.MSHTML.HTMLDocument
 import typings.activexMshtml.MSHTML.Scriptlet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   @JSName("ScriptBridge.ScriptBridge")
   var ScriptBridgeDotScriptBridge: Scriptlet = js.native
@@ -33,27 +34,15 @@ object ActiveXObjectNameMap {
   }
   
   @scala.inline
-  implicit class ActiveXObjectNameMapOps[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHtmlfile(value: HTMLDocument): Self = StObject.set(x, "htmlfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScriptBridgeDotScriptBridge(value: Scriptlet): Self = StObject.set(x, "ScriptBridge.ScriptBridge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScriptBridgeDotScriptBridge(value: Scriptlet): Self = this.set("ScriptBridge.ScriptBridge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplatePrinterDotTemplatePrinter(value: CTemplatePrinter): Self = this.set("TemplatePrinter.TemplatePrinter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHtmlfile(value: HTMLDocument): Self = this.set("htmlfile", value.asInstanceOf[js.Any])
+    def setTemplatePrinterDotTemplatePrinter(value: CTemplatePrinter): Self = StObject.set(x, "TemplatePrinter.TemplatePrinter", value.asInstanceOf[js.Any])
   }
 }

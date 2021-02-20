@@ -2,12 +2,13 @@ package typings.reactNativeAuth0.mod
 
 import typings.reactNativeAuth0.reactNativeAuth0Strings.code
 import typings.reactNativeAuth0.reactNativeAuth0Strings.link
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PasswordlessWithEmailParams extends js.Object {
+trait PasswordlessWithEmailParams extends StObject {
   
   var authParams: js.UndefOr[AuthParams] = js.native
   
@@ -24,33 +25,21 @@ object PasswordlessWithEmailParams {
   }
   
   @scala.inline
-  implicit class PasswordlessWithEmailParamsOps[Self <: PasswordlessWithEmailParams] (val x: Self) extends AnyVal {
+  implicit class PasswordlessWithEmailParamsMutableBuilder[Self <: PasswordlessWithEmailParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthParams(value: AuthParams): Self = StObject.set(x, "authParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthParamsUndefined: Self = StObject.set(x, "authParams", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setSend(value: link | code): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthParams(value: AuthParams): Self = this.set("authParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthParams: Self = this.set("authParams", js.undefined)
-    
-    @scala.inline
-    def setSend(value: link | code): Self = this.set("send", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSend: Self = this.set("send", js.undefined)
+    def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
   }
 }

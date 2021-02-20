@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The options for an object.
   */
 @js.native
-trait SchemaObjectOptions extends js.Object {
+trait SchemaObjectOptions extends StObject {
   
   /**
     * Options that determine how the object is displayed in the Cloud Search
@@ -30,30 +31,18 @@ object SchemaObjectOptions {
   }
   
   @scala.inline
-  implicit class SchemaObjectOptionsOps[Self <: SchemaObjectOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaObjectOptionsMutableBuilder[Self <: SchemaObjectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayOptions(value: SchemaObjectDisplayOptions): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFreshnessOptions(value: SchemaFreshnessOptions): Self = StObject.set(x, "freshnessOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayOptions(value: SchemaObjectDisplayOptions): Self = this.set("displayOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayOptions: Self = this.set("displayOptions", js.undefined)
-    
-    @scala.inline
-    def setFreshnessOptions(value: SchemaFreshnessOptions): Self = this.set("freshnessOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFreshnessOptions: Self = this.set("freshnessOptions", js.undefined)
+    def setFreshnessOptionsUndefined: Self = StObject.set(x, "freshnessOptions", js.undefined)
   }
 }

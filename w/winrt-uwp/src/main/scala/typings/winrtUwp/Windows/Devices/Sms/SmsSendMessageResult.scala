@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates the results of calling SmsDevice2.SendMessageAndGetResultAsync . */
 @js.native
-trait SmsSendMessageResult extends js.Object {
+trait SmsSendMessageResult extends StObject {
   
   /** Gets the cellular class used in the send operation. */
   var cellularClass: CellularClass = js.native
@@ -47,39 +48,27 @@ object SmsSendMessageResult {
   }
   
   @scala.inline
-  implicit class SmsSendMessageResultOps[Self <: SmsSendMessageResult] (val x: Self) extends AnyVal {
+  implicit class SmsSendMessageResultMutableBuilder[Self <: SmsSendMessageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsErrorTransient(value: Boolean): Self = StObject.set(x, "isErrorTransient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellularClass(value: CellularClass): Self = this.set("cellularClass", value.asInstanceOf[js.Any])
+    def setMessageReferenceNumbers(value: IVectorView[Double]): Self = StObject.set(x, "messageReferenceNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsErrorTransient(value: Boolean): Self = this.set("isErrorTransient", value.asInstanceOf[js.Any])
+    def setModemErrorCode(value: SmsModemErrorCode): Self = StObject.set(x, "modemErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSuccessful(value: Boolean): Self = this.set("isSuccessful", value.asInstanceOf[js.Any])
+    def setNetworkCauseCode(value: Double): Self = StObject.set(x, "networkCauseCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageReferenceNumbers(value: IVectorView[Double]): Self = this.set("messageReferenceNumbers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModemErrorCode(value: SmsModemErrorCode): Self = this.set("modemErrorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNetworkCauseCode(value: Double): Self = this.set("networkCauseCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportFailureCause(value: Double): Self = this.set("transportFailureCause", value.asInstanceOf[js.Any])
+    def setTransportFailureCause(value: Double): Self = StObject.set(x, "transportFailureCause", value.asInstanceOf[js.Any])
   }
 }

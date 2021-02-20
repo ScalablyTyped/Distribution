@@ -6,12 +6,13 @@ import typings.mapboxGl.mapboxGlStrings.`bottom-right`
 import typings.mapboxGl.mapboxGlStrings.`top-left`
 import typings.mapboxGl.mapboxGlStrings.`top-right`
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapboxOptions extends js.Object {
+trait MapboxOptions extends StObject {
   
   /**
     * If specified, map will use this token instead of the one defined in mapboxgl.accessToken.
@@ -230,276 +231,264 @@ object MapboxOptions {
   }
   
   @scala.inline
-  implicit class MapboxOptionsOps[Self <: MapboxOptions] (val x: Self) extends AnyVal {
+  implicit class MapboxOptionsMutableBuilder[Self <: MapboxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String | HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setAttributionControl(value: Boolean): Self = StObject.set(x, "attributionControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    def setAttributionControlUndefined: Self = StObject.set(x, "attributionControl", js.undefined)
     
     @scala.inline
-    def setAntialias(value: Boolean): Self = this.set("antialias", value.asInstanceOf[js.Any])
+    def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAntialias: Self = this.set("antialias", js.undefined)
+    def setBearingSnap(value: Double): Self = StObject.set(x, "bearingSnap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributionControl(value: Boolean): Self = this.set("attributionControl", value.asInstanceOf[js.Any])
+    def setBearingSnapUndefined: Self = StObject.set(x, "bearingSnap", js.undefined)
     
     @scala.inline
-    def deleteAttributionControl: Self = this.set("attributionControl", js.undefined)
+    def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
     
     @scala.inline
-    def setBearing(value: Double): Self = this.set("bearing", value.asInstanceOf[js.Any])
+    def setBounds(value: LngLatBoundsLike): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBearing: Self = this.set("bearing", js.undefined)
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def setBearingSnap(value: Double): Self = this.set("bearingSnap", value.asInstanceOf[js.Any])
+    def setBoxZoom(value: Boolean): Self = StObject.set(x, "boxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBearingSnap: Self = this.set("bearingSnap", js.undefined)
+    def setBoxZoomUndefined: Self = StObject.set(x, "boxZoom", js.undefined)
     
     @scala.inline
-    def setBounds(value: LngLatBoundsLike): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setCenter(value: LngLatLike): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def setBoxZoom(value: Boolean): Self = this.set("boxZoom", value.asInstanceOf[js.Any])
+    def setClickTolerance(value: Double): Self = StObject.set(x, "clickTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxZoom: Self = this.set("boxZoom", js.undefined)
+    def setClickToleranceUndefined: Self = StObject.set(x, "clickTolerance", js.undefined)
     
     @scala.inline
-    def setCenter(value: LngLatLike): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setCollectResourceTiming(value: Boolean): Self = StObject.set(x, "collectResourceTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setCollectResourceTimingUndefined: Self = StObject.set(x, "collectResourceTiming", js.undefined)
     
     @scala.inline
-    def setClickTolerance(value: Double): Self = this.set("clickTolerance", value.asInstanceOf[js.Any])
+    def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickTolerance: Self = this.set("clickTolerance", js.undefined)
+    def setCrossSourceCollisions(value: Boolean): Self = StObject.set(x, "crossSourceCollisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectResourceTiming(value: Boolean): Self = this.set("collectResourceTiming", value.asInstanceOf[js.Any])
+    def setCrossSourceCollisionsUndefined: Self = StObject.set(x, "crossSourceCollisions", js.undefined)
     
     @scala.inline
-    def deleteCollectResourceTiming: Self = this.set("collectResourceTiming", js.undefined)
+    def setCustomAttribution(value: String | js.Array[String]): Self = StObject.set(x, "customAttribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossSourceCollisions(value: Boolean): Self = this.set("crossSourceCollisions", value.asInstanceOf[js.Any])
+    def setCustomAttributionUndefined: Self = StObject.set(x, "customAttribution", js.undefined)
     
     @scala.inline
-    def deleteCrossSourceCollisions: Self = this.set("crossSourceCollisions", js.undefined)
+    def setCustomAttributionVarargs(value: String*): Self = StObject.set(x, "customAttribution", js.Array(value :_*))
     
     @scala.inline
-    def setCustomAttributionVarargs(value: String*): Self = this.set("customAttribution", js.Array(value :_*))
+    def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAttribution(value: String | js.Array[String]): Self = this.set("customAttribution", value.asInstanceOf[js.Any])
+    def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
     
     @scala.inline
-    def deleteCustomAttribution: Self = this.set("customAttribution", js.undefined)
+    def setDragPan(value: Boolean): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleClickZoom(value: Boolean): Self = this.set("doubleClickZoom", value.asInstanceOf[js.Any])
+    def setDragPanUndefined: Self = StObject.set(x, "dragPan", js.undefined)
     
     @scala.inline
-    def deleteDoubleClickZoom: Self = this.set("doubleClickZoom", js.undefined)
+    def setDragRotate(value: Boolean): Self = StObject.set(x, "dragRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragPan(value: Boolean): Self = this.set("dragPan", value.asInstanceOf[js.Any])
+    def setDragRotateUndefined: Self = StObject.set(x, "dragRotate", js.undefined)
     
     @scala.inline
-    def deleteDragPan: Self = this.set("dragPan", js.undefined)
+    def setFadeDuration(value: Double): Self = StObject.set(x, "fadeDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragRotate(value: Boolean): Self = this.set("dragRotate", value.asInstanceOf[js.Any])
+    def setFadeDurationUndefined: Self = StObject.set(x, "fadeDuration", js.undefined)
     
     @scala.inline
-    def deleteDragRotate: Self = this.set("dragRotate", js.undefined)
+    def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeDuration(value: Double): Self = this.set("fadeDuration", value.asInstanceOf[js.Any])
+    def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
     
     @scala.inline
-    def deleteFadeDuration: Self = this.set("fadeDuration", js.undefined)
+    def setFitBoundsOptions(value: FitBoundsOptions): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailIfMajorPerformanceCaveat(value: Boolean): Self = this.set("failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
+    def setFitBoundsOptionsUndefined: Self = StObject.set(x, "fitBoundsOptions", js.undefined)
     
     @scala.inline
-    def deleteFailIfMajorPerformanceCaveat: Self = this.set("failIfMajorPerformanceCaveat", js.undefined)
+    def setHash(value: Boolean | String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitBoundsOptions(value: FitBoundsOptions): Self = this.set("fitBoundsOptions", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def deleteFitBoundsOptions: Self = this.set("fitBoundsOptions", js.undefined)
+    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: Boolean | String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractive(value: Boolean): Self = this.set("interactive", value.asInstanceOf[js.Any])
+    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    def setLocalIdeographFontFamily(value: String): Self = StObject.set(x, "localIdeographFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setLocalIdeographFontFamilyUndefined: Self = StObject.set(x, "localIdeographFontFamily", js.undefined)
     
     @scala.inline
-    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    def setLocale(value: StringDictionary[String]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalIdeographFontFamily(value: String): Self = this.set("localIdeographFontFamily", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLocalIdeographFontFamily: Self = this.set("localIdeographFontFamily", js.undefined)
+    def setLogoPosition(value: `top-left` | `top-right` | `bottom-left` | `bottom-right`): Self = StObject.set(x, "logoPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: StringDictionary[String]): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setLogoPositionUndefined: Self = StObject.set(x, "logoPosition", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setMaxBounds(value: LngLatBoundsLike): Self = StObject.set(x, "maxBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogoPosition(value: `top-left` | `top-right` | `bottom-left` | `bottom-right`): Self = this.set("logoPosition", value.asInstanceOf[js.Any])
+    def setMaxBoundsUndefined: Self = StObject.set(x, "maxBounds", js.undefined)
     
     @scala.inline
-    def deleteLogoPosition: Self = this.set("logoPosition", js.undefined)
+    def setMaxPitch(value: Double): Self = StObject.set(x, "maxPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBounds(value: LngLatBoundsLike): Self = this.set("maxBounds", value.asInstanceOf[js.Any])
+    def setMaxPitchUndefined: Self = StObject.set(x, "maxPitch", js.undefined)
     
     @scala.inline
-    def deleteMaxBounds: Self = this.set("maxBounds", js.undefined)
+    def setMaxTileCacheSize(value: Double): Self = StObject.set(x, "maxTileCacheSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPitch(value: Double): Self = this.set("maxPitch", value.asInstanceOf[js.Any])
+    def setMaxTileCacheSizeUndefined: Self = StObject.set(x, "maxTileCacheSize", js.undefined)
     
     @scala.inline
-    def deleteMaxPitch: Self = this.set("maxPitch", js.undefined)
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTileCacheSize(value: Double): Self = this.set("maxTileCacheSize", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteMaxTileCacheSize: Self = this.set("maxTileCacheSize", js.undefined)
+    def setMinPitch(value: Double): Self = StObject.set(x, "minPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinPitchUndefined: Self = StObject.set(x, "minPitch", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPitch(value: Double): Self = this.set("minPitch", value.asInstanceOf[js.Any])
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def deleteMinPitch: Self = this.set("minPitch", js.undefined)
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setPitchWithRotate(value: Boolean): Self = StObject.set(x, "pitchWithRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    def setPitchWithRotateUndefined: Self = StObject.set(x, "pitchWithRotate", js.undefined)
     
     @scala.inline
-    def deletePitch: Self = this.set("pitch", js.undefined)
+    def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitchWithRotate(value: Boolean): Self = this.set("pitchWithRotate", value.asInstanceOf[js.Any])
+    def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
     
     @scala.inline
-    def deletePitchWithRotate: Self = this.set("pitchWithRotate", js.undefined)
+    def setRefreshExpiredTiles(value: Boolean): Self = StObject.set(x, "refreshExpiredTiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveDrawingBuffer(value: Boolean): Self = this.set("preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    def setRefreshExpiredTilesUndefined: Self = StObject.set(x, "refreshExpiredTiles", js.undefined)
     
     @scala.inline
-    def deletePreserveDrawingBuffer: Self = this.set("preserveDrawingBuffer", js.undefined)
+    def setRenderWorldCopies(value: Boolean): Self = StObject.set(x, "renderWorldCopies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshExpiredTiles(value: Boolean): Self = this.set("refreshExpiredTiles", value.asInstanceOf[js.Any])
+    def setRenderWorldCopiesUndefined: Self = StObject.set(x, "renderWorldCopies", js.undefined)
     
     @scala.inline
-    def deleteRefreshExpiredTiles: Self = this.set("refreshExpiredTiles", js.undefined)
+    def setScrollZoom(value: Boolean): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderWorldCopies(value: Boolean): Self = this.set("renderWorldCopies", value.asInstanceOf[js.Any])
+    def setScrollZoomUndefined: Self = StObject.set(x, "scrollZoom", js.undefined)
     
     @scala.inline
-    def deleteRenderWorldCopies: Self = this.set("renderWorldCopies", js.undefined)
+    def setStyle(value: Style | String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollZoom(value: Boolean): Self = this.set("scrollZoom", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteScrollZoom: Self = this.set("scrollZoom", js.undefined)
+    def setTouchPitch(value: Boolean): Self = StObject.set(x, "touchPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: Style | String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTouchPitchUndefined: Self = StObject.set(x, "touchPitch", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTouchZoomRotate(value: Boolean): Self = StObject.set(x, "touchZoomRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchPitch(value: Boolean): Self = this.set("touchPitch", value.asInstanceOf[js.Any])
+    def setTouchZoomRotateUndefined: Self = StObject.set(x, "touchZoomRotate", js.undefined)
     
     @scala.inline
-    def deleteTouchPitch: Self = this.set("touchPitch", js.undefined)
+    def setTrackResize(value: Boolean): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchZoomRotate(value: Boolean): Self = this.set("touchZoomRotate", value.asInstanceOf[js.Any])
+    def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
     
     @scala.inline
-    def deleteTouchZoomRotate: Self = this.set("touchZoomRotate", js.undefined)
+    def setTransformRequest(value: (/* url */ String, /* resourceType */ ResourceType) => RequestParameters): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTrackResize(value: Boolean): Self = this.set("trackResize", value.asInstanceOf[js.Any])
+    def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
     
     @scala.inline
-    def deleteTrackResize: Self = this.set("trackResize", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformRequest(value: (/* url */ String, /* resourceType */ ResourceType) => RequestParameters): Self = this.set("transformRequest", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTransformRequest: Self = this.set("transformRequest", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

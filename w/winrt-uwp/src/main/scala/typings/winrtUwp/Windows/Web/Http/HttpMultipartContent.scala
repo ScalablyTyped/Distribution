@@ -7,13 +7,14 @@ import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpContentHeaderCollection
 import typings.winrtUwp.anon.Length
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides HTTP content that uses the multipart/ * MIME type. */
 @js.native
-trait HttpMultipartContent extends js.Object {
+trait HttpMultipartContent extends StObject {
   
   /**
     * Add HTTP content to the HttpMultipartContent instance.
@@ -89,48 +90,36 @@ object HttpMultipartContent {
   }
   
   @scala.inline
-  implicit class HttpMultipartContentOps[Self <: HttpMultipartContent] (val x: Self) extends AnyVal {
+  implicit class HttpMultipartContentMutableBuilder[Self <: HttpMultipartContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: IHttpContent => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferAllAsync(value: () => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "bufferAllAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: IHttpContent => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setFirst(value: () => IIterator[IHttpContent]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBufferAllAsync(value: () => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = this.set("bufferAllAsync", js.Any.fromFunction0(value))
+    def setHeaders(value: HttpContentHeaderCollection): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setReadAsBufferAsync(value: () => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]): Self = StObject.set(x, "readAsBufferAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirst(value: () => IIterator[IHttpContent]): Self = this.set("first", js.Any.fromFunction0(value))
+    def setReadAsInputStreamAsync(value: () => IPromiseWithIAsyncOperationWithProgress[IInputStream, Double]): Self = StObject.set(x, "readAsInputStreamAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHeaders(value: HttpContentHeaderCollection): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setReadAsStringAsync(value: () => IPromiseWithIAsyncOperationWithProgress[String, Double]): Self = StObject.set(x, "readAsStringAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadAsBufferAsync(value: () => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]): Self = this.set("readAsBufferAsync", js.Any.fromFunction0(value))
+    def setTryComputeLength(value: () => Length): Self = StObject.set(x, "tryComputeLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadAsInputStreamAsync(value: () => IPromiseWithIAsyncOperationWithProgress[IInputStream, Double]): Self = this.set("readAsInputStreamAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadAsStringAsync(value: () => IPromiseWithIAsyncOperationWithProgress[String, Double]): Self = this.set("readAsStringAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTryComputeLength(value: () => Length): Self = this.set("tryComputeLength", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWriteToStreamAsync(value: IOutputStream => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = this.set("writeToStreamAsync", js.Any.fromFunction1(value))
+    def setWriteToStreamAsync(value: IOutputStream => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "writeToStreamAsync", js.Any.fromFunction1(value))
   }
 }

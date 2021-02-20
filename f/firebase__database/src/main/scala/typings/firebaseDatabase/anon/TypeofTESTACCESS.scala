@@ -1,12 +1,13 @@
 package typings.firebaseDatabase.anon
 
 import typings.firebaseDatabase.queryMod.Query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofTESTACCESS extends js.Object {
+trait TypeofTESTACCESS extends StObject {
   
   def forceRestClient(forceRestClient: Boolean): Unit = js.native
   
@@ -27,27 +28,15 @@ object TypeofTESTACCESS {
   }
   
   @scala.inline
-  implicit class TypeofTESTACCESSOps[Self <: TypeofTESTACCESS] (val x: Self) extends AnyVal {
+  implicit class TypeofTESTACCESSMutableBuilder[Self <: TypeofTESTACCESS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceRestClient(value: Boolean => Unit): Self = StObject.set(x, "forceRestClient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHijackHash(value: js.Function0[String] => js.Function0[Unit]): Self = StObject.set(x, "hijackHash", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForceRestClient(value: Boolean => Unit): Self = this.set("forceRestClient", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHijackHash(value: js.Function0[String] => js.Function0[Unit]): Self = this.set("hijackHash", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQueryIdentifier(value: Query => String): Self = this.set("queryIdentifier", js.Any.fromFunction1(value))
+    def setQueryIdentifier(value: Query => String): Self = StObject.set(x, "queryIdentifier", js.Any.fromFunction1(value))
   }
 }

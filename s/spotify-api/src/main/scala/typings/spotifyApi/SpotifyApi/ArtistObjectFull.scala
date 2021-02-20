@@ -1,6 +1,7 @@
 package typings.spotifyApi.SpotifyApi
 
 import typings.spotifyApi.spotifyApiStrings.artist
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,36 +57,24 @@ object ArtistObjectFull {
   }
   
   @scala.inline
-  implicit class ArtistObjectFullOps[Self <: ArtistObjectFull] (val x: Self) extends AnyVal {
+  implicit class ArtistObjectFullMutableBuilder[Self <: ArtistObjectFull] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFollowers(value: FollowersObject): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
     
     @scala.inline
-    def setFollowers(value: FollowersObject): Self = this.set("followers", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenresVarargs(value: String*): Self = this.set("genres", js.Array(value :_*))
+    def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setGenres(value: js.Array[String]): Self = this.set("genres", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImagesVarargs(value: ImageObject*): Self = this.set("images", js.Array(value :_*))
-    
-    @scala.inline
-    def setImages(value: js.Array[ImageObject]): Self = this.set("images", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopularity(value: Double): Self = this.set("popularity", value.asInstanceOf[js.Any])
+    def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
   }
 }

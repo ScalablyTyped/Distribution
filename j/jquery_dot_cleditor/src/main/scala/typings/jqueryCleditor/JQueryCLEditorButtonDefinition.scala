@@ -1,12 +1,13 @@
 package typings.jqueryCleditor
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryCLEditorButtonDefinition extends js.Object {
+trait JQueryCLEditorButtonDefinition extends StObject {
   
   var buttonClick: js.UndefOr[
     js.Function2[/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]
@@ -45,84 +46,72 @@ object JQueryCLEditorButtonDefinition {
   }
   
   @scala.inline
-  implicit class JQueryCLEditorButtonDefinitionOps[Self <: JQueryCLEditorButtonDefinition] (val x: Self) extends AnyVal {
+  implicit class JQueryCLEditorButtonDefinitionMutableBuilder[Self <: JQueryCLEditorButtonDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonClick(value: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean): Self = StObject.set(x, "buttonClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonClickUndefined: Self = StObject.set(x, "buttonClick", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonClick(value: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean): Self = this.set("buttonClick", js.Any.fromFunction2(value))
+    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def deleteButtonClick: Self = this.set("buttonClick", js.undefined)
+    def setGetEnabled(value: /* data */ JQueryCLEditorButtonDefinitionEventData => Boolean): Self = StObject.set(x, "getEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setGetEnabledUndefined: Self = StObject.set(x, "getEnabled", js.undefined)
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setGetPressed(value: /* data */ JQueryCLEditorButtonDefinitionEventData => Boolean): Self = StObject.set(x, "getPressed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCss(value: js.Any): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setGetPressedUndefined: Self = StObject.set(x, "getPressed", js.undefined)
     
     @scala.inline
-    def deleteCss: Self = this.set("css", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetEnabled(value: /* data */ JQueryCLEditorButtonDefinitionEventData => Boolean): Self = this.set("getEnabled", js.Any.fromFunction1(value))
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteGetEnabled: Self = this.set("getEnabled", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPressed(value: /* data */ JQueryCLEditorButtonDefinitionEventData => Boolean): Self = this.set("getPressed", js.Any.fromFunction1(value))
+    def setPopupClick(value: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean): Self = StObject.set(x, "popupClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetPressed: Self = this.set("getPressed", js.undefined)
+    def setPopupClickUndefined: Self = StObject.set(x, "popupClick", js.undefined)
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setPopupContent(value: String): Self = StObject.set(x, "popupContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setPopupContentUndefined: Self = StObject.set(x, "popupContent", js.undefined)
     
     @scala.inline
-    def setPopupClick(value: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean): Self = this.set("popupClick", js.Any.fromFunction2(value))
+    def setPopupName(value: String): Self = StObject.set(x, "popupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopupClick: Self = this.set("popupClick", js.undefined)
+    def setPopupNameUndefined: Self = StObject.set(x, "popupName", js.undefined)
     
     @scala.inline
-    def setPopupContent(value: String): Self = this.set("popupContent", value.asInstanceOf[js.Any])
+    def setStripIndex(value: Double): Self = StObject.set(x, "stripIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopupContent: Self = this.set("popupContent", js.undefined)
+    def setStripIndexUndefined: Self = StObject.set(x, "stripIndex", js.undefined)
     
     @scala.inline
-    def setPopupName(value: String): Self = this.set("popupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePopupName: Self = this.set("popupName", js.undefined)
-    
-    @scala.inline
-    def setStripIndex(value: Double): Self = this.set("stripIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripIndex: Self = this.set("stripIndex", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

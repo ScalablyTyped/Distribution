@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationConstraint extends js.Object {
+trait LocationConstraint extends StObject {
   
   /**
     * The client requests the service to include in the response a meeting location for the meeting. If this is true and all
@@ -29,48 +30,36 @@ object LocationConstraint {
   }
   
   @scala.inline
-  implicit class LocationConstraintOps[Self <: LocationConstraint] (val x: Self) extends AnyVal {
+  implicit class LocationConstraintMutableBuilder[Self <: LocationConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsRequired(value: NullableOption[Boolean]): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsRequiredNull: Self = StObject.set(x, "isRequired", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
     
     @scala.inline
-    def setIsRequired(value: NullableOption[Boolean]): Self = this.set("isRequired", value.asInstanceOf[js.Any])
+    def setLocations(value: NullableOption[js.Array[LocationConstraintItem]]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsRequired: Self = this.set("isRequired", js.undefined)
+    def setLocationsNull: Self = StObject.set(x, "locations", null)
     
     @scala.inline
-    def setIsRequiredNull: Self = this.set("isRequired", null)
+    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
     @scala.inline
-    def setLocationsVarargs(value: LocationConstraintItem*): Self = this.set("locations", js.Array(value :_*))
+    def setLocationsVarargs(value: LocationConstraintItem*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
     @scala.inline
-    def setLocations(value: NullableOption[js.Array[LocationConstraintItem]]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    def setSuggestLocation(value: NullableOption[Boolean]): Self = StObject.set(x, "suggestLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocations: Self = this.set("locations", js.undefined)
+    def setSuggestLocationNull: Self = StObject.set(x, "suggestLocation", null)
     
     @scala.inline
-    def setLocationsNull: Self = this.set("locations", null)
-    
-    @scala.inline
-    def setSuggestLocation(value: NullableOption[Boolean]): Self = this.set("suggestLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestLocation: Self = this.set("suggestLocation", js.undefined)
-    
-    @scala.inline
-    def setSuggestLocationNull: Self = this.set("suggestLocation", null)
+    def setSuggestLocationUndefined: Self = StObject.set(x, "suggestLocation", js.undefined)
   }
 }

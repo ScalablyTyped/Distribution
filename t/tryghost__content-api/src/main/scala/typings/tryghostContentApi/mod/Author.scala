@@ -1,6 +1,7 @@
 package typings.tryghostContentApi.mod
 
 import typings.tryghostContentApi.anon.Posts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,102 +41,90 @@ object Author {
   }
   
   @scala.inline
-  implicit class AuthorOps[Self <: Author] (val x: Self) extends AnyVal {
+  implicit class AuthorMutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBio(value: Nullable[String]): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBioNull: Self = StObject.set(x, "bio", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBioUndefined: Self = StObject.set(x, "bio", js.undefined)
     
     @scala.inline
-    def setBio(value: Nullable[String]): Self = this.set("bio", value.asInstanceOf[js.Any])
+    def setCount(value: Posts): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBio: Self = this.set("bio", js.undefined)
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def setBioNull: Self = this.set("bio", null)
+    def setCover_image(value: Nullable[String]): Self = StObject.set(x, "cover_image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Posts): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setCover_imageNull: Self = StObject.set(x, "cover_image", null)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setCover_imageUndefined: Self = StObject.set(x, "cover_image", js.undefined)
     
     @scala.inline
-    def setCover_image(value: Nullable[String]): Self = this.set("cover_image", value.asInstanceOf[js.Any])
+    def setFacebook(value: Nullable[String]): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCover_image: Self = this.set("cover_image", js.undefined)
+    def setFacebookNull: Self = StObject.set(x, "facebook", null)
     
     @scala.inline
-    def setCover_imageNull: Self = this.set("cover_image", null)
+    def setFacebookUndefined: Self = StObject.set(x, "facebook", js.undefined)
     
     @scala.inline
-    def setFacebook(value: Nullable[String]): Self = this.set("facebook", value.asInstanceOf[js.Any])
+    def setLocation(value: Nullable[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFacebook: Self = this.set("facebook", js.undefined)
+    def setLocationNull: Self = StObject.set(x, "location", null)
     
     @scala.inline
-    def setFacebookNull: Self = this.set("facebook", null)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setLocation(value: Nullable[String]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setLocationNull: Self = this.set("location", null)
+    def setProfile_image(value: Nullable[String]): Self = StObject.set(x, "profile_image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProfile_imageNull: Self = StObject.set(x, "profile_image", null)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProfile_imageUndefined: Self = StObject.set(x, "profile_image", js.undefined)
     
     @scala.inline
-    def setProfile_image(value: Nullable[String]): Self = this.set("profile_image", value.asInstanceOf[js.Any])
+    def setTwitter(value: Nullable[String]): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfile_image: Self = this.set("profile_image", js.undefined)
+    def setTwitterNull: Self = StObject.set(x, "twitter", null)
     
     @scala.inline
-    def setProfile_imageNull: Self = this.set("profile_image", null)
+    def setTwitterUndefined: Self = StObject.set(x, "twitter", js.undefined)
     
     @scala.inline
-    def setTwitter(value: Nullable[String]): Self = this.set("twitter", value.asInstanceOf[js.Any])
+    def setUrl(value: Nullable[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTwitter: Self = this.set("twitter", js.undefined)
+    def setUrlNull: Self = StObject.set(x, "url", null)
     
     @scala.inline
-    def setTwitterNull: Self = this.set("twitter", null)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setUrl(value: Nullable[String]): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setWebsite(value: Nullable[String]): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setWebsiteNull: Self = StObject.set(x, "website", null)
     
     @scala.inline
-    def setUrlNull: Self = this.set("url", null)
-    
-    @scala.inline
-    def setWebsite(value: Nullable[String]): Self = this.set("website", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsite: Self = this.set("website", js.undefined)
-    
-    @scala.inline
-    def setWebsiteNull: Self = this.set("website", null)
+    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }
 }

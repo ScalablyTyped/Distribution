@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Connection...
   */
 @js.native
-trait IConnection extends js.Object {
+trait IConnection extends StObject {
   
   /**
     * One of:
@@ -101,51 +102,39 @@ object IConnection {
   }
   
   @scala.inline
-  implicit class IConnectionOps[Self <: IConnection] (val x: Self) extends AnyVal {
+  implicit class IConnectionMutableBuilder[Self <: IConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQConnectionString(value: String): Self = StObject.set(x, "qConnectionString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQLogOn(value: LogonType): Self = StObject.set(x, "qLogOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQConnectionString(value: String): Self = this.set("qConnectionString", value.asInstanceOf[js.Any])
+    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQId(value: String): Self = this.set("qId", value.asInstanceOf[js.Any])
+    def setQModifiedDate(value: String): Self = StObject.set(x, "qModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLogOn(value: LogonType): Self = this.set("qLogOn", value.asInstanceOf[js.Any])
+    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMeta(value: INxMeta): Self = this.set("qMeta", value.asInstanceOf[js.Any])
+    def setQPassword(value: String): Self = StObject.set(x, "qPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQModifiedDate(value: String): Self = this.set("qModifiedDate", value.asInstanceOf[js.Any])
+    def setQPasswordUndefined: Self = StObject.set(x, "qPassword", js.undefined)
     
     @scala.inline
-    def setQName(value: String): Self = this.set("qName", value.asInstanceOf[js.Any])
+    def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQType(value: String): Self = this.set("qType", value.asInstanceOf[js.Any])
+    def setQUserName(value: String): Self = StObject.set(x, "qUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQPassword(value: String): Self = this.set("qPassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQPassword: Self = this.set("qPassword", js.undefined)
-    
-    @scala.inline
-    def setQUserName(value: String): Self = this.set("qUserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQUserName: Self = this.set("qUserName", js.undefined)
+    def setQUserNameUndefined: Self = StObject.set(x, "qUserName", js.undefined)
   }
 }

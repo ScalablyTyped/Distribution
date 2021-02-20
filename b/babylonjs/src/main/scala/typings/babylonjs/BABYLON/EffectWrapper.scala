@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EffectWrapper extends js.Object {
+trait EffectWrapper extends StObject {
   
   /**
     * Disposes of the effect wrapper
@@ -31,27 +32,15 @@ object EffectWrapper {
   }
   
   @scala.inline
-  implicit class EffectWrapperOps[Self <: EffectWrapper] (val x: Self) extends AnyVal {
+  implicit class EffectWrapperMutableBuilder[Self <: EffectWrapper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffect(value: Effect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEffect(value: Effect): Self = this.set("effect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnApplyObservable(value: Observable[js.Object]): Self = this.set("onApplyObservable", value.asInstanceOf[js.Any])
+    def setOnApplyObservable(value: Observable[js.Object]): Self = StObject.set(x, "onApplyObservable", value.asInstanceOf[js.Any])
   }
 }

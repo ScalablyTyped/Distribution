@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait storage extends js.Object {
+trait storage extends StObject {
   
   var cookie: typings.webix.webix.cookie = js.native
   
@@ -22,27 +23,15 @@ object storage {
   }
   
   @scala.inline
-  implicit class storageOps[Self <: storage] (val x: Self) extends AnyVal {
+  implicit class storageMutableBuilder[Self <: storage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookie(value: cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocal(value: local): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCookie(value: cookie): Self = this.set("cookie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocal(value: local): Self = this.set("local", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: session): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setSession(value: session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

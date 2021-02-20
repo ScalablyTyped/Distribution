@@ -1,12 +1,13 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "CompositionTransactionOwnershipToken")
 @js.native
-class CompositionTransactionOwnershipToken () extends js.Object {
+class CompositionTransactionOwnershipToken () extends StObject {
   def this(owner: js.Any) = this()
   
   /**

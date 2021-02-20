@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the client-side equivalent of the CrosshairElementGroup class.
   */
 @js.native
-trait ASPxClientCrosshairElementGroup extends js.Object {
+trait ASPxClientCrosshairElementGroup extends StObject {
   
   /**
     * Returns the collection of elements that the Crosshair Cursor displays in the group.
@@ -38,33 +39,21 @@ object ASPxClientCrosshairElementGroup {
   }
   
   @scala.inline
-  implicit class ASPxClientCrosshairElementGroupOps[Self <: ASPxClientCrosshairElementGroup] (val x: Self) extends AnyVal {
+  implicit class ASPxClientCrosshairElementGroupMutableBuilder[Self <: ASPxClientCrosshairElementGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrosshairElements(value: js.Array[ASPxClientCrosshairElement]): Self = StObject.set(x, "CrosshairElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrosshairElementsVarargs(value: ASPxClientCrosshairElement*): Self = StObject.set(x, "CrosshairElements", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrosshairIndicatorElements(value: js.Array[ASPxClientCrosshairIndicatorElement]): Self = StObject.set(x, "CrosshairIndicatorElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairElementsVarargs(value: ASPxClientCrosshairElement*): Self = this.set("CrosshairElements", js.Array(value :_*))
+    def setCrosshairIndicatorElementsVarargs(value: ASPxClientCrosshairIndicatorElement*): Self = StObject.set(x, "CrosshairIndicatorElements", js.Array(value :_*))
     
     @scala.inline
-    def setCrosshairElements(value: js.Array[ASPxClientCrosshairElement]): Self = this.set("CrosshairElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCrosshairIndicatorElementsVarargs(value: ASPxClientCrosshairIndicatorElement*): Self = this.set("CrosshairIndicatorElements", js.Array(value :_*))
-    
-    @scala.inline
-    def setCrosshairIndicatorElements(value: js.Array[ASPxClientCrosshairIndicatorElement]): Self = this.set("CrosshairIndicatorElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderElement(value: ASPxClientCrosshairGroupHeaderElement): Self = this.set("HeaderElement", value.asInstanceOf[js.Any])
+    def setHeaderElement(value: ASPxClientCrosshairGroupHeaderElement): Self = StObject.set(x, "HeaderElement", value.asInstanceOf[js.Any])
   }
 }

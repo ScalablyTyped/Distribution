@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceEvent extends js.Object {
+trait ServiceEvent extends StObject {
   
   /**
     * This is the id of the type. Constants that will be used by subscribers to identify/filter events being published on a topic.
@@ -48,33 +49,21 @@ object ServiceEvent {
   }
   
   @scala.inline
-  implicit class ServiceEventOps[Self <: ServiceEvent] (val x: Self) extends AnyVal {
+  implicit class ServiceEventMutableBuilder[Self <: ServiceEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublisher(value: Publisher): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    def setResourceContainers(value: StringDictionary[js.Any]): Self = StObject.set(x, "resourceContainers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisher(value: Publisher): Self = this.set("publisher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResource(value: js.Any): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceContainers(value: StringDictionary[js.Any]): Self = this.set("resourceContainers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceVersion(value: String): Self = this.set("resourceVersion", value.asInstanceOf[js.Any])
+    def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
   }
 }

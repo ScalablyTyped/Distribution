@@ -1,5 +1,6 @@
 package typings.reactNative
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.reactNativeStrings.`no-cors`
   - typings.reactNative.reactNativeStrings.cors
 */
-trait RequestMode extends js.Object
+trait RequestMode extends StObject
 object RequestMode {
   
   @scala.inline

@@ -12,12 +12,13 @@ import typings.maximMazurokGapiClientCompute.anon.RegionResource
 import typings.maximMazurokGapiClientCompute.anon.RegionSubnetwork
 import typings.maximMazurokGapiClientCompute.anon.ResourceSubnetwork
 import typings.maximMazurokGapiClientCompute.anon.SubnetworkUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubnetworksResource extends js.Object {
+trait SubnetworksResource extends StObject {
   
   /** Retrieves an aggregated list of subnetworks. */
   def aggregatedList(): Request[SubnetworkAggregatedList] = js.native

@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.outputMod.apps.v1beta2
 
 import typings.pulumiKubernetes.outputMod.core.v1.PodTemplateSpec
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DaemonSetSpec is the specification of a daemon set.
   */
 @js.native
-trait DaemonSetSpec extends js.Object {
+trait DaemonSetSpec extends StObject {
   
   /**
     * The minimum number of seconds for which a newly created DaemonSet pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready).
@@ -52,33 +53,21 @@ object DaemonSetSpec {
   }
   
   @scala.inline
-  implicit class DaemonSetSpecOps[Self <: DaemonSetSpec] (val x: Self) extends AnyVal {
+  implicit class DaemonSetSpecMutableBuilder[Self <: DaemonSetSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinReadySeconds(value: Double): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRevisionHistoryLimit(value: Double): Self = StObject.set(x, "revisionHistoryLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinReadySeconds(value: Double): Self = this.set("minReadySeconds", value.asInstanceOf[js.Any])
+    def setTemplate(value: PodTemplateSpec): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionHistoryLimit(value: Double): Self = this.set("revisionHistoryLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: LabelSelector): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplate(value: PodTemplateSpec): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateStrategy(value: DaemonSetUpdateStrategy): Self = this.set("updateStrategy", value.asInstanceOf[js.Any])
+    def setUpdateStrategy(value: DaemonSetUpdateStrategy): Self = StObject.set(x, "updateStrategy", value.asInstanceOf[js.Any])
   }
 }

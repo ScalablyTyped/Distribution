@@ -1,12 +1,13 @@
 package typings.kikBrowser
 
 import typings.kikBrowser.anon.Username
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KikPickUsersOptions extends js.Object {
+trait KikPickUsersOptions extends StObject {
   
   var filterSelf: js.UndefOr[Boolean] = js.native
   
@@ -27,54 +28,42 @@ object KikPickUsersOptions {
   }
   
   @scala.inline
-  implicit class KikPickUsersOptionsOps[Self <: KikPickUsersOptions] (val x: Self) extends AnyVal {
+  implicit class KikPickUsersOptionsMutableBuilder[Self <: KikPickUsersOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterSelf(value: Boolean): Self = StObject.set(x, "filterSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterSelfUndefined: Self = StObject.set(x, "filterSelf", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltered(value: js.Array[String]): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterSelf(value: Boolean): Self = this.set("filterSelf", value.asInstanceOf[js.Any])
+    def setFilteredUndefined: Self = StObject.set(x, "filtered", js.undefined)
     
     @scala.inline
-    def deleteFilterSelf: Self = this.set("filterSelf", js.undefined)
+    def setFilteredVarargs(value: String*): Self = StObject.set(x, "filtered", js.Array(value :_*))
     
     @scala.inline
-    def setFilteredVarargs(value: String*): Self = this.set("filtered", js.Array(value :_*))
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltered(value: js.Array[String]): Self = this.set("filtered", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteFiltered: Self = this.set("filtered", js.undefined)
+    def setMinResults(value: Double): Self = StObject.set(x, "minResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setMinResultsUndefined: Self = StObject.set(x, "minResults", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setPreselected(value: js.Array[Username]): Self = StObject.set(x, "preselected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinResults(value: Double): Self = this.set("minResults", value.asInstanceOf[js.Any])
+    def setPreselectedUndefined: Self = StObject.set(x, "preselected", js.undefined)
     
     @scala.inline
-    def deleteMinResults: Self = this.set("minResults", js.undefined)
-    
-    @scala.inline
-    def setPreselectedVarargs(value: Username*): Self = this.set("preselected", js.Array(value :_*))
-    
-    @scala.inline
-    def setPreselected(value: js.Array[Username]): Self = this.set("preselected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreselected: Self = this.set("preselected", js.undefined)
+    def setPreselectedVarargs(value: Username*): Self = StObject.set(x, "preselected", js.Array(value :_*))
   }
 }

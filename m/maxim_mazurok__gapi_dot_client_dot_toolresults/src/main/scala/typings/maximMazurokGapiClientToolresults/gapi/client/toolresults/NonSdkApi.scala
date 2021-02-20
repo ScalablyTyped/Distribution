@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NonSdkApi extends js.Object {
+trait NonSdkApi extends StObject {
   
   /** The signature of the Non-SDK API */
   var apiSignature: js.UndefOr[String] = js.native
@@ -31,54 +32,42 @@ object NonSdkApi {
   }
   
   @scala.inline
-  implicit class NonSdkApiOps[Self <: NonSdkApi] (val x: Self) extends AnyVal {
+  implicit class NonSdkApiMutableBuilder[Self <: NonSdkApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiSignature(value: String): Self = StObject.set(x, "apiSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiSignatureUndefined: Self = StObject.set(x, "apiSignature", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExampleStackTraces(value: js.Array[String]): Self = StObject.set(x, "exampleStackTraces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiSignature(value: String): Self = this.set("apiSignature", value.asInstanceOf[js.Any])
+    def setExampleStackTracesUndefined: Self = StObject.set(x, "exampleStackTraces", js.undefined)
     
     @scala.inline
-    def deleteApiSignature: Self = this.set("apiSignature", js.undefined)
+    def setExampleStackTracesVarargs(value: String*): Self = StObject.set(x, "exampleStackTraces", js.Array(value :_*))
     
     @scala.inline
-    def setExampleStackTracesVarargs(value: String*): Self = this.set("exampleStackTraces", js.Array(value :_*))
+    def setInsights(value: js.Array[NonSdkApiInsight]): Self = StObject.set(x, "insights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExampleStackTraces(value: js.Array[String]): Self = this.set("exampleStackTraces", value.asInstanceOf[js.Any])
+    def setInsightsUndefined: Self = StObject.set(x, "insights", js.undefined)
     
     @scala.inline
-    def deleteExampleStackTraces: Self = this.set("exampleStackTraces", js.undefined)
+    def setInsightsVarargs(value: NonSdkApiInsight*): Self = StObject.set(x, "insights", js.Array(value :_*))
     
     @scala.inline
-    def setInsightsVarargs(value: NonSdkApiInsight*): Self = this.set("insights", js.Array(value :_*))
+    def setInvocationCount(value: Double): Self = StObject.set(x, "invocationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsights(value: js.Array[NonSdkApiInsight]): Self = this.set("insights", value.asInstanceOf[js.Any])
+    def setInvocationCountUndefined: Self = StObject.set(x, "invocationCount", js.undefined)
     
     @scala.inline
-    def deleteInsights: Self = this.set("insights", js.undefined)
+    def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvocationCount(value: Double): Self = this.set("invocationCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvocationCount: Self = this.set("invocationCount", js.undefined)
-    
-    @scala.inline
-    def setList(value: String): Self = this.set("list", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteList: Self = this.set("list", js.undefined)
+    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
   }
 }

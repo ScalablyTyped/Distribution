@@ -1,44 +1,84 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.internalMod.AbstractEnum
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/services", JSImport.Namespace)
-@js.native
-object servicesMod extends js.Object {
+object servicesMod {
   
+  @JSImport("mendixmodelsdk/dist/gen/services", "StructureVersionInfo")
   @js.native
   class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
   
-  @js.native
-  object services extends js.Object {
+  object services {
     
+    @JSImport("mendixmodelsdk/dist/gen/services", "services.HttpMethod")
     @js.native
-    class HttpMethod () extends AbstractEnum
-    /* static members */
-    @js.native
-    object HttpMethod extends js.Object {
+    class HttpMethod protected () extends AbstractEnum {
+      def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+    }
+    object HttpMethod {
       
-      var Delete: HttpMethod = js.native
+      @JSImport("mendixmodelsdk/dist/gen/services", "services.HttpMethod")
+      @js.native
+      val ^ : js.Any = js.native
       
-      var Get: HttpMethod = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/services", "services.HttpMethod.Delete")
+      @js.native
+      def Delete: HttpMethod = js.native
+      @scala.inline
+      def Delete_=(x: HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Delete")(x.asInstanceOf[js.Any])
       
-      var Head: HttpMethod = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/services", "services.HttpMethod.Get")
+      @js.native
+      def Get: HttpMethod = js.native
+      @scala.inline
+      def Get_=(x: HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Get")(x.asInstanceOf[js.Any])
       
-      var Options: HttpMethod = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/services", "services.HttpMethod.Head")
+      @js.native
+      def Head: HttpMethod = js.native
+      @scala.inline
+      def Head_=(x: HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Head")(x.asInstanceOf[js.Any])
       
-      var Patch: HttpMethod = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/services", "services.HttpMethod.Options")
+      @js.native
+      def Options: HttpMethod = js.native
+      @scala.inline
+      def Options_=(x: HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Options")(x.asInstanceOf[js.Any])
       
-      var Post: HttpMethod = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/services", "services.HttpMethod.Patch")
+      @js.native
+      def Patch: HttpMethod = js.native
+      @scala.inline
+      def Patch_=(x: HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Patch")(x.asInstanceOf[js.Any])
       
-      var Put: HttpMethod = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/services", "services.HttpMethod.Post")
+      @js.native
+      def Post: HttpMethod = js.native
+      @scala.inline
+      def Post_=(x: HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Post")(x.asInstanceOf[js.Any])
+      
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/services", "services.HttpMethod.Put")
+      @js.native
+      def Put: HttpMethod = js.native
+      @scala.inline
+      def Put_=(x: HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Put")(x.asInstanceOf[js.Any])
     }
   }
 }

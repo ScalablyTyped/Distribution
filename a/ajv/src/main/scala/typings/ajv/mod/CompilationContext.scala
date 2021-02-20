@@ -2,12 +2,13 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ajv.anon.Copy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompilationContext extends js.Object {
+trait CompilationContext extends StObject {
   
   var async: Boolean = js.native
   
@@ -61,63 +62,51 @@ object CompilationContext {
   }
   
   @scala.inline
-  implicit class CompilationContextOps[Self <: CompilationContext] (val x: Self) extends AnyVal {
+  implicit class CompilationContextMutableBuilder[Self <: CompilationContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompositeRule(value: Boolean): Self = StObject.set(x, "compositeRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setDataLevel(value: Double): Self = StObject.set(x, "dataLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseId(value: String): Self = this.set("baseId", value.asInstanceOf[js.Any])
+    def setDataPathArr(value: js.Array[String]): Self = StObject.set(x, "dataPathArr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompositeRule(value: Boolean): Self = this.set("compositeRule", value.asInstanceOf[js.Any])
+    def setDataPathArrVarargs(value: String*): Self = StObject.set(x, "dataPathArr", js.Array(value :_*))
     
     @scala.inline
-    def setDataLevel(value: Double): Self = this.set("dataLevel", value.asInstanceOf[js.Any])
+    def setFormats(value: StringDictionary[js.UndefOr[FormatDefinition]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataPathArrVarargs(value: String*): Self = this.set("dataPathArr", js.Array(value :_*))
+    def setKeywords(value: StringDictionary[js.UndefOr[KeywordDefinition]]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataPathArr(value: js.Array[String]): Self = this.set("dataPathArr", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormats(value: StringDictionary[js.UndefOr[FormatDefinition]]): Self = this.set("formats", value.asInstanceOf[js.Any])
+    def setOpts(value: Options): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: StringDictionary[js.UndefOr[KeywordDefinition]]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpts(value: Options): Self = this.set("opts", value.asInstanceOf[js.Any])
+    def setSelf(value: Ajv): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: js.Any): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setUtil(value: Copy): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaPath(value: String): Self = this.set("schemaPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelf(value: Ajv): Self = this.set("self", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUtil(value: Copy): Self = this.set("util", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidate(value: js.Object => Boolean): Self = this.set("validate", js.Any.fromFunction1(value))
+    def setValidate(value: js.Object => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }
 }

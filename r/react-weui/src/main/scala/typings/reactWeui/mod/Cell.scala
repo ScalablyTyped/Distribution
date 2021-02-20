@@ -1,47 +1,67 @@
 package typings.reactWeui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-weui", "Cell")
-@js.native
-object Cell extends js.Object {
+object Cell {
   
+  @JSImport("react-weui", "Cell")
+  @js.native
   def apply(props: js.Any): js.Any = js.native
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
-    var access: Boolean = js.native
+    @JSImport("react-weui", "Cell.defaultProps")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var link: Boolean = js.native
+    @JSImport("react-weui", "Cell.defaultProps.access")
+    @js.native
+    def access: Boolean = js.native
+    @scala.inline
+    def access_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("access")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-weui", "Cell.defaultProps.link")
+    @js.native
+    def link: Boolean = js.native
+    @scala.inline
+    def link_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("link")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object access extends js.Object {
+    object access {
       
+      @JSImport("react-weui", "Cell.propTypes.access")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Cell.propTypes.access.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object component extends js.Object {
+    object component {
       
+      @JSImport("react-weui", "Cell.propTypes.component")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Cell.propTypes.component.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object link extends js.Object {
+    object link {
       
+      @JSImport("react-weui", "Cell.propTypes.link")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "Cell.propTypes.link.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
   }

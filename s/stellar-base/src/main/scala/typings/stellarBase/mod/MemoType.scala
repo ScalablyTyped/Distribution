@@ -1,12 +1,11 @@
 package typings.stellarBase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stellar-base", "MemoType")
-@js.native
-object MemoType extends js.Object {
+object MemoType {
   
   type Hash = /* "hash" */ String
   

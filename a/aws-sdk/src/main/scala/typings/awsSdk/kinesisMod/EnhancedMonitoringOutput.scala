@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnhancedMonitoringOutput extends js.Object {
+trait EnhancedMonitoringOutput extends StObject {
   
   /**
     * Represents the current state of the metrics that are in the enhanced state before the operation.
@@ -31,42 +32,30 @@ object EnhancedMonitoringOutput {
   }
   
   @scala.inline
-  implicit class EnhancedMonitoringOutputOps[Self <: EnhancedMonitoringOutput] (val x: Self) extends AnyVal {
+  implicit class EnhancedMonitoringOutputMutableBuilder[Self <: EnhancedMonitoringOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentShardLevelMetrics(value: MetricsNameList): Self = StObject.set(x, "CurrentShardLevelMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentShardLevelMetricsUndefined: Self = StObject.set(x, "CurrentShardLevelMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "CurrentShardLevelMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentShardLevelMetricsVarargs(value: MetricsName*): Self = this.set("CurrentShardLevelMetrics", js.Array(value :_*))
+    def setDesiredShardLevelMetrics(value: MetricsNameList): Self = StObject.set(x, "DesiredShardLevelMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentShardLevelMetrics(value: MetricsNameList): Self = this.set("CurrentShardLevelMetrics", value.asInstanceOf[js.Any])
+    def setDesiredShardLevelMetricsUndefined: Self = StObject.set(x, "DesiredShardLevelMetrics", js.undefined)
     
     @scala.inline
-    def deleteCurrentShardLevelMetrics: Self = this.set("CurrentShardLevelMetrics", js.undefined)
+    def setDesiredShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "DesiredShardLevelMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setDesiredShardLevelMetricsVarargs(value: MetricsName*): Self = this.set("DesiredShardLevelMetrics", js.Array(value :_*))
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredShardLevelMetrics(value: MetricsNameList): Self = this.set("DesiredShardLevelMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredShardLevelMetrics: Self = this.set("DesiredShardLevelMetrics", js.undefined)
-    
-    @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

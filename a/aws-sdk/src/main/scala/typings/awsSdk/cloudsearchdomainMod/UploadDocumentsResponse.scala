@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchdomainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadDocumentsResponse extends js.Object {
+trait UploadDocumentsResponse extends StObject {
   
   /**
     * The number of documents that were added to the search domain.
@@ -36,45 +37,33 @@ object UploadDocumentsResponse {
   }
   
   @scala.inline
-  implicit class UploadDocumentsResponseOps[Self <: UploadDocumentsResponse] (val x: Self) extends AnyVal {
+  implicit class UploadDocumentsResponseMutableBuilder[Self <: UploadDocumentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdds(value: Adds): Self = StObject.set(x, "adds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddsUndefined: Self = StObject.set(x, "adds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletes(value: Deletes): Self = StObject.set(x, "deletes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdds(value: Adds): Self = this.set("adds", value.asInstanceOf[js.Any])
+    def setDeletesUndefined: Self = StObject.set(x, "deletes", js.undefined)
     
     @scala.inline
-    def deleteAdds: Self = this.set("adds", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletes(value: Deletes): Self = this.set("deletes", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteDeletes: Self = this.set("deletes", js.undefined)
+    def setWarnings(value: DocumentServiceWarnings): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setWarningsVarargs(value: DocumentServiceWarning*): Self = this.set("warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: DocumentServiceWarnings): Self = this.set("warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    def setWarningsVarargs(value: DocumentServiceWarning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pollyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSpeechSynthesisTasksOutput extends js.Object {
+trait ListSpeechSynthesisTasksOutput extends StObject {
   
   /**
     * An opaque pagination token returned from the previous List operation in this request. If present, this indicates where to continue the listing.
@@ -26,33 +27,21 @@ object ListSpeechSynthesisTasksOutput {
   }
   
   @scala.inline
-  implicit class ListSpeechSynthesisTasksOutputOps[Self <: ListSpeechSynthesisTasksOutput] (val x: Self) extends AnyVal {
+  implicit class ListSpeechSynthesisTasksOutputMutableBuilder[Self <: ListSpeechSynthesisTasksOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSynthesisTasks(value: SynthesisTasks): Self = StObject.set(x, "SynthesisTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSynthesisTasksUndefined: Self = StObject.set(x, "SynthesisTasks", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSynthesisTasksVarargs(value: SynthesisTask*): Self = this.set("SynthesisTasks", js.Array(value :_*))
-    
-    @scala.inline
-    def setSynthesisTasks(value: SynthesisTasks): Self = this.set("SynthesisTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSynthesisTasks: Self = this.set("SynthesisTasks", js.undefined)
+    def setSynthesisTasksVarargs(value: SynthesisTask*): Self = StObject.set(x, "SynthesisTasks", js.Array(value :_*))
   }
 }

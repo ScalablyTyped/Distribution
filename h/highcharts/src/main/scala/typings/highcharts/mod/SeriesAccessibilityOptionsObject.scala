@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeriesAccessibilityOptionsObject extends js.Object {
+trait SeriesAccessibilityOptionsObject extends StObject {
   
   /**
     * (Highstock) Provide a description of the series, announced to screen
@@ -46,48 +47,36 @@ object SeriesAccessibilityOptionsObject {
   }
   
   @scala.inline
-  implicit class SeriesAccessibilityOptionsObjectOps[Self <: SeriesAccessibilityOptionsObject] (val x: Self) extends AnyVal {
+  implicit class SeriesAccessibilityOptionsObjectMutableBuilder[Self <: SeriesAccessibilityOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setExposeAsGroupOnly(value: Boolean): Self = StObject.set(x, "exposeAsGroupOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setExposeAsGroupOnlyUndefined: Self = StObject.set(x, "exposeAsGroupOnly", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setKeyboardNavigation(value: SeriesAccessibilityKeyboardNavigationOptionsObject): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposeAsGroupOnly(value: Boolean): Self = this.set("exposeAsGroupOnly", value.asInstanceOf[js.Any])
+    def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
     
     @scala.inline
-    def deleteExposeAsGroupOnly: Self = this.set("exposeAsGroupOnly", js.undefined)
+    def setPointDescriptionFormatter(value: Point => String): Self = StObject.set(x, "pointDescriptionFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyboardNavigation(value: SeriesAccessibilityKeyboardNavigationOptionsObject): Self = this.set("keyboardNavigation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyboardNavigation: Self = this.set("keyboardNavigation", js.undefined)
-    
-    @scala.inline
-    def setPointDescriptionFormatter(value: Point => String): Self = this.set("pointDescriptionFormatter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deletePointDescriptionFormatter: Self = this.set("pointDescriptionFormatter", js.undefined)
+    def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
   }
 }

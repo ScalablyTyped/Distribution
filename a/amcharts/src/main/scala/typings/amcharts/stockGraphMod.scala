@@ -1,16 +1,19 @@
 package typings.amcharts
 
-import typings.amcharts.amGraphMod.AmGraph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/StockGraph", JSImport.Namespace)
-@js.native
-object stockGraphMod extends js.Object {
+object stockGraphMod {
+  
+  @JSImport("amcharts/StockGraph", JSImport.Default)
+  @js.native
+  class default () extends StockGraph
   
   @js.native
-  trait StockGraph extends AmGraph {
+  trait StockGraph
+    extends typings.amcharts.amGraphMod.default {
     
     /**
       * Specifies whether this graph will be compared if some data set is selected for comparing.
@@ -98,7 +101,4 @@ object stockGraphMod extends js.Object {
       */
     var useDataSetColors: Boolean = js.native
   }
-  
-  @js.native
-  class default () extends StockGraph
 }

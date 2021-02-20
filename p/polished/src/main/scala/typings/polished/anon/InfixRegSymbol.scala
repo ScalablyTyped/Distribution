@@ -1,12 +1,13 @@
 package typings.polished.anon
 
 import typings.polished.polishedStrings.Comma
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfixRegSymbol extends js.Object {
+trait InfixRegSymbol extends StObject {
   
   var infix: PrecedenceRightToLeft = js.native
   
@@ -23,27 +24,15 @@ object InfixRegSymbol {
   }
   
   @scala.inline
-  implicit class InfixRegSymbolOps[Self <: InfixRegSymbol] (val x: Self) extends AnyVal {
+  implicit class InfixRegSymbolMutableBuilder[Self <: InfixRegSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfix(value: PrecedenceRightToLeft): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegSymbol(value: Comma): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInfix(value: PrecedenceRightToLeft): Self = this.set("infix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegSymbol(value: Comma): Self = this.set("regSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol(value: Comma): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: Comma): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

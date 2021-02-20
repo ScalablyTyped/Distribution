@@ -1,12 +1,13 @@
 package typings.sharepoint.anon
 
 import typings.sharepoint.SP.JsGrid.IStyleType.Header
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllSelected extends js.Object {
+trait AllSelected extends StObject {
   
   var allSelected: Header = js.native
   
@@ -36,36 +37,24 @@ object AllSelected {
   }
   
   @scala.inline
-  implicit class AllSelectedOps[Self <: AllSelected] (val x: Self) extends AnyVal {
+  implicit class AllSelectedMutableBuilder[Self <: AllSelected] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllSelected(value: Header): Self = StObject.set(x, "allSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllSelectedHover(value: Header): Self = StObject.set(x, "allSelectedHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormal(value: Header): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllSelected(value: Header): Self = this.set("allSelected", value.asInstanceOf[js.Any])
+    def setNormalHover(value: Header): Self = StObject.set(x, "normalHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllSelectedHover(value: Header): Self = this.set("allSelectedHover", value.asInstanceOf[js.Any])
+    def setPartSelected(value: Header): Self = StObject.set(x, "partSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormal(value: Header): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalHover(value: Header): Self = this.set("normalHover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartSelected(value: Header): Self = this.set("partSelected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartSelectedHover(value: Header): Self = this.set("partSelectedHover", value.asInstanceOf[js.Any])
+    def setPartSelectedHover(value: Header): Self = StObject.set(x, "partSelectedHover", value.asInstanceOf[js.Any])
   }
 }

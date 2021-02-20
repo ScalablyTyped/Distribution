@@ -3,16 +3,15 @@ package typings.antdMobile
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile/lib/list-view/PropsType", JSImport.Namespace)
-@js.native
-object listViewPropsTypeMod extends js.Object {
+object listViewPropsTypeMod {
   
   @js.native
-  trait ListViewPropsType extends js.Object {
+  trait ListViewPropsType extends StObject {
     
     var className: js.UndefOr[String] = js.native
     

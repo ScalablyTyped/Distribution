@@ -1,6 +1,7 @@
 package typings.typescriptServices.TypeScript.Services.Formatting
 
 import typings.typescriptServices.TypeScript.TextSpan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,27 +32,15 @@ object TextSnapshot {
   }
   
   @scala.inline
-  implicit class TextSnapshotOps[Self <: TextSnapshot] (val x: Self) extends AnyVal {
+  implicit class TextSnapshotMutableBuilder[Self <: TextSnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLineFromLineNumberWorker(value: js.Any => js.Any): Self = StObject.set(x, "getLineFromLineNumberWorker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLines(value: js.Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetLineFromLineNumberWorker(value: js.Any => js.Any): Self = this.set("getLineFromLineNumberWorker", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLines(value: js.Any): Self = this.set("lines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapshot(value: js.Any): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    def setSnapshot(value: js.Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
 import typings.maximMazurokGapiClientAdexchangebuyer.anon.BidProtocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Account extends js.Object {
+trait Account extends StObject {
   
   /**
     * When this is false, bid requests that include a deal ID for a private auction or preferred deal are always sent to your bidder. When true, all active pretargeting configs will be
@@ -50,75 +51,63 @@ object Account {
   }
   
   @scala.inline
-  implicit class AccountOps[Self <: Account] (val x: Self) extends AnyVal {
+  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyPretargetingToNonGuaranteedDeals(value: Boolean): Self = StObject.set(x, "applyPretargetingToNonGuaranteedDeals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyPretargetingToNonGuaranteedDealsUndefined: Self = StObject.set(x, "applyPretargetingToNonGuaranteedDeals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBidderLocation(value: js.Array[BidProtocol]): Self = StObject.set(x, "bidderLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyPretargetingToNonGuaranteedDeals(value: Boolean): Self = this.set("applyPretargetingToNonGuaranteedDeals", value.asInstanceOf[js.Any])
+    def setBidderLocationUndefined: Self = StObject.set(x, "bidderLocation", js.undefined)
     
     @scala.inline
-    def deleteApplyPretargetingToNonGuaranteedDeals: Self = this.set("applyPretargetingToNonGuaranteedDeals", js.undefined)
+    def setBidderLocationVarargs(value: BidProtocol*): Self = StObject.set(x, "bidderLocation", js.Array(value :_*))
     
     @scala.inline
-    def setBidderLocationVarargs(value: BidProtocol*): Self = this.set("bidderLocation", js.Array(value :_*))
+    def setCookieMatchingNid(value: String): Self = StObject.set(x, "cookieMatchingNid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBidderLocation(value: js.Array[BidProtocol]): Self = this.set("bidderLocation", value.asInstanceOf[js.Any])
+    def setCookieMatchingNidUndefined: Self = StObject.set(x, "cookieMatchingNid", js.undefined)
     
     @scala.inline
-    def deleteBidderLocation: Self = this.set("bidderLocation", js.undefined)
+    def setCookieMatchingUrl(value: String): Self = StObject.set(x, "cookieMatchingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookieMatchingNid(value: String): Self = this.set("cookieMatchingNid", value.asInstanceOf[js.Any])
+    def setCookieMatchingUrlUndefined: Self = StObject.set(x, "cookieMatchingUrl", js.undefined)
     
     @scala.inline
-    def deleteCookieMatchingNid: Self = this.set("cookieMatchingNid", js.undefined)
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookieMatchingUrl(value: String): Self = this.set("cookieMatchingUrl", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCookieMatchingUrl: Self = this.set("cookieMatchingUrl", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMaximumActiveCreatives(value: Double): Self = StObject.set(x, "maximumActiveCreatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMaximumActiveCreativesUndefined: Self = StObject.set(x, "maximumActiveCreatives", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMaximumTotalQps(value: Double): Self = StObject.set(x, "maximumTotalQps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumActiveCreatives(value: Double): Self = this.set("maximumActiveCreatives", value.asInstanceOf[js.Any])
+    def setMaximumTotalQpsUndefined: Self = StObject.set(x, "maximumTotalQps", js.undefined)
     
     @scala.inline
-    def deleteMaximumActiveCreatives: Self = this.set("maximumActiveCreatives", js.undefined)
+    def setNumberActiveCreatives(value: Double): Self = StObject.set(x, "numberActiveCreatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumTotalQps(value: Double): Self = this.set("maximumTotalQps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumTotalQps: Self = this.set("maximumTotalQps", js.undefined)
-    
-    @scala.inline
-    def setNumberActiveCreatives(value: Double): Self = this.set("numberActiveCreatives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberActiveCreatives: Self = this.set("numberActiveCreatives", js.undefined)
+    def setNumberActiveCreativesUndefined: Self = StObject.set(x, "numberActiveCreatives", js.undefined)
   }
 }

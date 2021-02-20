@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReGeocode extends js.Object {
+trait ReGeocode extends StObject {
   
   var addressComponent: AddressComponent = js.native
   
@@ -32,42 +33,30 @@ object ReGeocode {
   }
   
   @scala.inline
-  implicit class ReGeocodeOps[Self <: ReGeocode] (val x: Self) extends AnyVal {
+  implicit class ReGeocodeMutableBuilder[Self <: ReGeocode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressComponent(value: AddressComponent): Self = StObject.set(x, "addressComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrosses(value: js.Array[Cross]): Self = StObject.set(x, "crosses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrossesVarargs(value: Cross*): Self = StObject.set(x, "crosses", js.Array(value :_*))
     
     @scala.inline
-    def setAddressComponent(value: AddressComponent): Self = this.set("addressComponent", value.asInstanceOf[js.Any])
+    def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossesVarargs(value: Cross*): Self = this.set("crosses", js.Array(value :_*))
+    def setPois(value: js.Array[ReGeocodePoi]): Self = StObject.set(x, "pois", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosses(value: js.Array[Cross]): Self = this.set("crosses", value.asInstanceOf[js.Any])
+    def setPoisVarargs(value: ReGeocodePoi*): Self = StObject.set(x, "pois", js.Array(value :_*))
     
     @scala.inline
-    def setFormattedAddress(value: String): Self = this.set("formattedAddress", value.asInstanceOf[js.Any])
+    def setRoads(value: js.Array[Road]): Self = StObject.set(x, "roads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoisVarargs(value: ReGeocodePoi*): Self = this.set("pois", js.Array(value :_*))
-    
-    @scala.inline
-    def setPois(value: js.Array[ReGeocodePoi]): Self = this.set("pois", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoadsVarargs(value: Road*): Self = this.set("roads", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoads(value: js.Array[Road]): Self = this.set("roads", value.asInstanceOf[js.Any])
+    def setRoadsVarargs(value: Road*): Self = StObject.set(x, "roads", js.Array(value :_*))
   }
 }

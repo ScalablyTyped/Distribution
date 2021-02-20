@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartConfigRulesEvaluationRequest extends js.Object {
+trait StartConfigRulesEvaluationRequest extends StObject {
   
   /**
     * The list of names of AWS Config rules that you want to run evaluations for.
@@ -21,27 +22,15 @@ object StartConfigRulesEvaluationRequest {
   }
   
   @scala.inline
-  implicit class StartConfigRulesEvaluationRequestOps[Self <: StartConfigRulesEvaluationRequest] (val x: Self) extends AnyVal {
+  implicit class StartConfigRulesEvaluationRequestMutableBuilder[Self <: StartConfigRulesEvaluationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigRuleNames(value: ReevaluateConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = this.set("ConfigRuleNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setConfigRuleNames(value: ReevaluateConfigRuleNames): Self = this.set("ConfigRuleNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigRuleNames: Self = this.set("ConfigRuleNames", js.undefined)
+    def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
   }
 }

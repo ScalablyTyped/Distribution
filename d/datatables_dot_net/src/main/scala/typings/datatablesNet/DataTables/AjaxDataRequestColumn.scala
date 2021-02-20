@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AjaxDataRequestColumn extends js.Object {
+trait AjaxDataRequestColumn extends StObject {
   
   var data: String | Double = js.native
   
@@ -32,33 +33,21 @@ object AjaxDataRequestColumn {
   }
   
   @scala.inline
-  implicit class AjaxDataRequestColumnOps[Self <: AjaxDataRequestColumn] (val x: Self) extends AnyVal {
+  implicit class AjaxDataRequestColumnMutableBuilder[Self <: AjaxDataRequestColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String | Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderable(value: Boolean): Self = StObject.set(x, "orderable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String | Double): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setSearch(value: AjaxDataRequestSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrderable(value: Boolean): Self = this.set("orderable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearch(value: AjaxDataRequestSearch): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchable(value: Boolean): Self = this.set("searchable", value.asInstanceOf[js.Any])
+    def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
   }
 }

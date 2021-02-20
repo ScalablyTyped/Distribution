@@ -1,12 +1,13 @@
 package typings.agGrid.anon
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EPopup extends js.Object {
+trait EPopup extends StObject {
   
   var ePopup: HTMLElement = js.native
   
@@ -21,24 +22,12 @@ object EPopup {
   }
   
   @scala.inline
-  implicit class EPopupOps[Self <: EPopup] (val x: Self) extends AnyVal {
+  implicit class EPopupMutableBuilder[Self <: EPopup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEPopup(value: HTMLElement): Self = StObject.set(x, "ePopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEPopup(value: HTMLElement): Self = this.set("ePopup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventSource(value: js.Any): Self = this.set("eventSource", value.asInstanceOf[js.Any])
+    def setEventSource(value: js.Any): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
   }
 }

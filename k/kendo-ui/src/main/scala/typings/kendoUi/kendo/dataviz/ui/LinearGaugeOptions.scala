@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinearGaugeOptions extends js.Object {
+trait LinearGaugeOptions extends StObject {
   
   var gaugeArea: js.UndefOr[LinearGaugeGaugeArea] = js.native
   
@@ -30,63 +31,51 @@ object LinearGaugeOptions {
   }
   
   @scala.inline
-  implicit class LinearGaugeOptionsOps[Self <: LinearGaugeOptions] (val x: Self) extends AnyVal {
+  implicit class LinearGaugeOptionsMutableBuilder[Self <: LinearGaugeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGaugeArea(value: LinearGaugeGaugeArea): Self = StObject.set(x, "gaugeArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGaugeAreaUndefined: Self = StObject.set(x, "gaugeArea", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGaugeArea(value: LinearGaugeGaugeArea): Self = this.set("gaugeArea", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteGaugeArea: Self = this.set("gaugeArea", js.undefined)
+    def setPointer(value: js.Array[LinearGaugePointerItem]): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPointerUndefined: Self = StObject.set(x, "pointer", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPointerVarargs(value: LinearGaugePointerItem*): Self = StObject.set(x, "pointer", js.Array(value :_*))
     
     @scala.inline
-    def setPointerVarargs(value: LinearGaugePointerItem*): Self = this.set("pointer", js.Array(value :_*))
+    def setRenderAs(value: String): Self = StObject.set(x, "renderAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointer(value: js.Array[LinearGaugePointerItem]): Self = this.set("pointer", value.asInstanceOf[js.Any])
+    def setRenderAsUndefined: Self = StObject.set(x, "renderAs", js.undefined)
     
     @scala.inline
-    def deletePointer: Self = this.set("pointer", js.undefined)
+    def setScale(value: LinearGaugeScale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderAs(value: String): Self = this.set("renderAs", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRenderAs: Self = this.set("renderAs", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: LinearGaugeScale): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setTransitions(value: Boolean): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
-    
-    @scala.inline
-    def setTransitions(value: Boolean): Self = this.set("transitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitions: Self = this.set("transitions", js.undefined)
+    def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
   }
 }

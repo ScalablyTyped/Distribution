@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the results of a Hotspot authentication request. */
 @js.native
-trait HotspotCredentialsAuthenticationResult extends js.Object {
+trait HotspotCredentialsAuthenticationResult extends StObject {
   
   /** Provides the XML blob containing the WISPr authentication reply message from the server. */
   var authenticationReplyXml: XmlDocument = js.native
@@ -36,30 +37,18 @@ object HotspotCredentialsAuthenticationResult {
   }
   
   @scala.inline
-  implicit class HotspotCredentialsAuthenticationResultOps[Self <: HotspotCredentialsAuthenticationResult] (val x: Self) extends AnyVal {
+  implicit class HotspotCredentialsAuthenticationResultMutableBuilder[Self <: HotspotCredentialsAuthenticationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationReplyXml(value: XmlDocument): Self = StObject.set(x, "authenticationReplyXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasNetworkErrorOccurred(value: Boolean): Self = StObject.set(x, "hasNetworkErrorOccurred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogoffUrl(value: Uri): Self = StObject.set(x, "logoffUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationReplyXml(value: XmlDocument): Self = this.set("authenticationReplyXml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasNetworkErrorOccurred(value: Boolean): Self = this.set("hasNetworkErrorOccurred", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogoffUrl(value: Uri): Self = this.set("logoffUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseCode(value: HotspotAuthenticationResponseCode): Self = this.set("responseCode", value.asInstanceOf[js.Any])
+    def setResponseCode(value: HotspotAuthenticationResponseCode): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
   }
 }

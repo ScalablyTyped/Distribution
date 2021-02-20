@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,24 +48,12 @@ object SubstitutionType {
   }
   
   @scala.inline
-  implicit class SubstitutionTypeOps[Self <: SubstitutionType] (val x: Self) extends AnyVal {
+  implicit class SubstitutionTypeMutableBuilder[Self <: SubstitutionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseType(value: Type): Self = StObject.set(x, "baseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBaseType(value: Type): Self = this.set("baseType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubstitute(value: Type): Self = this.set("substitute", value.asInstanceOf[js.Any])
+    def setSubstitute(value: Type): Self = StObject.set(x, "substitute", value.asInstanceOf[js.Any])
   }
 }

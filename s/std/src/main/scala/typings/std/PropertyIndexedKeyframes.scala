@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,45 +27,33 @@ object PropertyIndexedKeyframes {
   }
   
   @scala.inline
-  implicit class PropertyIndexedKeyframesOps[Self <: PropertyIndexedKeyframes] (val x: Self) extends AnyVal {
+  implicit class PropertyIndexedKeyframesMutableBuilder[Self <: PropertyIndexedKeyframes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComposite(value: CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto]): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompositeVarargs(value: CompositeOperationOrAuto*): Self = StObject.set(x, "composite", js.Array(value :_*))
     
     @scala.inline
-    def setCompositeVarargs(value: CompositeOperationOrAuto*): Self = this.set("composite", js.Array(value :_*))
+    def setEasing(value: java.lang.String | js.Array[java.lang.String]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComposite(value: CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto]): Self = this.set("composite", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteComposite: Self = this.set("composite", js.undefined)
+    def setEasingVarargs(value: java.lang.String*): Self = StObject.set(x, "easing", js.Array(value :_*))
     
     @scala.inline
-    def setEasingVarargs(value: java.lang.String*): Self = this.set("easing", js.Array(value :_*))
+    def setOffset(value: Double | (js.Array[Double | Null])): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: java.lang.String | js.Array[java.lang.String]): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
-    
-    @scala.inline
-    def setOffsetVarargs(value: (Double | Null)*): Self = this.set("offset", js.Array(value :_*))
-    
-    @scala.inline
-    def setOffset(value: Double | (js.Array[Double | Null])): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOffsetVarargs(value: (Double | Null)*): Self = StObject.set(x, "offset", js.Array(value :_*))
   }
 }

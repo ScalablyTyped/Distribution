@@ -1,47 +1,38 @@
 package typings.terminalKit.anon
 
 import typings.terminalKit.screenBufferMod.Attributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attr extends js.Object {
+trait Attr extends StObject {
   
-  var attr: Attributes | Double = js.native
+  var attr: Double | Attributes = js.native
   
-  var char: js.UndefOr[String] = js.native
+  var transparencyChar: String = js.native
+  
+  var transparencyType: Double = js.native
 }
 object Attr {
   
   @scala.inline
-  def apply(attr: Attributes | Double): Attr = {
-    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any])
+  def apply(attr: Double | Attributes, transparencyChar: String, transparencyType: Double): Attr = {
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], transparencyChar = transparencyChar.asInstanceOf[js.Any], transparencyType = transparencyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attr]
   }
   
   @scala.inline
-  implicit class AttrOps[Self <: Attr] (val x: Self) extends AnyVal {
+  implicit class AttrMutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttr(value: Double | Attributes): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransparencyChar(value: String): Self = StObject.set(x, "transparencyChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttr(value: Attributes | Double): Self = this.set("attr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChar(value: String): Self = this.set("char", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChar: Self = this.set("char", js.undefined)
+    def setTransparencyType(value: Double): Self = StObject.set(x, "transparencyType", value.asInstanceOf[js.Any])
   }
 }

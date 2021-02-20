@@ -4,12 +4,13 @@ import typings.jest.jestNumbers.`0`
 import typings.jest.jestNumbers.`1`
 import typings.jest.jestNumbers.`2`
 import typings.jest.jestNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChalkColorSupport extends js.Object {
+trait ChalkColorSupport extends StObject {
   
   var has16m: Boolean = js.native
   
@@ -28,30 +29,18 @@ object ChalkColorSupport {
   }
   
   @scala.inline
-  implicit class ChalkColorSupportOps[Self <: ChalkColorSupport] (val x: Self) extends AnyVal {
+  implicit class ChalkColorSupportMutableBuilder[Self <: ChalkColorSupport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHas16m(value: Boolean): Self = StObject.set(x, "has16m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHas256(value: Boolean): Self = StObject.set(x, "has256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasBasic(value: Boolean): Self = StObject.set(x, "hasBasic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas16m(value: Boolean): Self = this.set("has16m", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHas256(value: Boolean): Self = this.set("has256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasBasic(value: Boolean): Self = this.set("hasBasic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevel(value: `0` | `1` | `2` | `3`): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLevel(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,75 +87,63 @@ object ISyndicationItem {
   }
   
   @scala.inline
-  implicit class ISyndicationItemOps[Self <: ISyndicationItem] (val x: Self) extends AnyVal {
+  implicit class ISyndicationItemMutableBuilder[Self <: ISyndicationItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthors(value: IVector[SyndicationPerson]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategories(value: IVector[SyndicationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsUri(value: Uri): Self = StObject.set(x, "commentsUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthors(value: IVector[SyndicationPerson]): Self = this.set("authors", value.asInstanceOf[js.Any])
+    def setContent(value: SyndicationContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: IVector[SyndicationCategory]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setContributors(value: IVector[SyndicationPerson]): Self = StObject.set(x, "contributors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsUri(value: Uri): Self = this.set("commentsUri", value.asInstanceOf[js.Any])
+    def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: SyndicationContent): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setEditMediaUri(value: Uri): Self = StObject.set(x, "editMediaUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributors(value: IVector[SyndicationPerson]): Self = this.set("contributors", value.asInstanceOf[js.Any])
+    def setEditUri(value: Uri): Self = StObject.set(x, "editUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: String): Self = this.set("eTag", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditMediaUri(value: Uri): Self = this.set("editMediaUri", value.asInstanceOf[js.Any])
+    def setItemUri(value: Uri): Self = StObject.set(x, "itemUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditUri(value: Uri): Self = this.set("editUri", value.asInstanceOf[js.Any])
+    def setLastUpdatedTime(value: Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLinks(value: IVector[SyndicationLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemUri(value: Uri): Self = this.set("itemUri", value.asInstanceOf[js.Any])
+    def setLoad(value: String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLastUpdatedTime(value: Date): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    def setLoadFromXml(value: XmlDocument => Unit): Self = StObject.set(x, "loadFromXml", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLinks(value: IVector[SyndicationLink]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setPublishedDate(value: Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: String => Unit): Self = this.set("load", js.Any.fromFunction1(value))
+    def setRights(value: ISyndicationText): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadFromXml(value: XmlDocument => Unit): Self = this.set("loadFromXml", js.Any.fromFunction1(value))
+    def setSource(value: SyndicationFeed): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedDate(value: Date): Self = this.set("publishedDate", value.asInstanceOf[js.Any])
+    def setSummary(value: ISyndicationText): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRights(value: ISyndicationText): Self = this.set("rights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: SyndicationFeed): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummary(value: ISyndicationText): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: ISyndicationText): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: ISyndicationText): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

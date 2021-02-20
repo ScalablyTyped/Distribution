@@ -1,11 +1,12 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotebookEditorEdit extends js.Object {
+trait NotebookEditorEdit extends StObject {
   
   /**
     * Delete a certain cell.

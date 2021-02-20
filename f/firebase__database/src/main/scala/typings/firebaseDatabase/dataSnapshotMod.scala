@@ -3,16 +3,16 @@ package typings.firebaseDatabase
 import typings.firebaseDatabase.indexMod.Index
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.referenceMod.Reference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/api/DataSnapshot", JSImport.Namespace)
-@js.native
-object dataSnapshotMod extends js.Object {
+object dataSnapshotMod {
   
+  @JSImport("@firebase/database/dist/src/api/DataSnapshot", "DataSnapshot")
   @js.native
-  class DataSnapshot protected () extends js.Object {
+  class DataSnapshot protected () extends StObject {
     /**
       * @param {!Node} node_ A SnapshotNode to wrap.
       * @param {!Reference} ref_ The ref of the location this snapshot came from.

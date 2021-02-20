@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,42 +51,30 @@ object SupportingWidgetDefaultsSketch {
   }
   
   @scala.inline
-  implicit class SupportingWidgetDefaultsSketchOps[Self <: SupportingWidgetDefaultsSketch] (val x: Self) extends AnyVal {
+  implicit class SupportingWidgetDefaultsSketchMutableBuilder[Self <: SupportingWidgetDefaultsSketch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultUpdateOptions(value: js.Any): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultUpdateOptionsUndefined: Self = StObject.set(x, "defaultUpdateOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkerSymbol(value: SimpleMarkerSymbol): Self = StObject.set(x, "markerSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultUpdateOptions(value: js.Any): Self = this.set("defaultUpdateOptions", value.asInstanceOf[js.Any])
+    def setMarkerSymbolUndefined: Self = StObject.set(x, "markerSymbol", js.undefined)
     
     @scala.inline
-    def deleteDefaultUpdateOptions: Self = this.set("defaultUpdateOptions", js.undefined)
+    def setPolygonSymbol(value: SimpleFillSymbol): Self = StObject.set(x, "polygonSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerSymbol(value: SimpleMarkerSymbol): Self = this.set("markerSymbol", value.asInstanceOf[js.Any])
+    def setPolygonSymbolUndefined: Self = StObject.set(x, "polygonSymbol", js.undefined)
     
     @scala.inline
-    def deleteMarkerSymbol: Self = this.set("markerSymbol", js.undefined)
+    def setPolylineSymbol(value: SimpleLineSymbol): Self = StObject.set(x, "polylineSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonSymbol(value: SimpleFillSymbol): Self = this.set("polygonSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolygonSymbol: Self = this.set("polygonSymbol", js.undefined)
-    
-    @scala.inline
-    def setPolylineSymbol(value: SimpleLineSymbol): Self = this.set("polylineSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolylineSymbol: Self = this.set("polylineSymbol", js.undefined)
+    def setPolylineSymbolUndefined: Self = StObject.set(x, "polylineSymbol", js.undefined)
   }
 }

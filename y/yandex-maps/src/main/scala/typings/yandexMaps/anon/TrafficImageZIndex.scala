@@ -1,11 +1,12 @@
 package typings.yandexMaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrafficImageZIndex extends js.Object {
+trait TrafficImageZIndex extends StObject {
   
   var trafficImageZIndex: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object TrafficImageZIndex {
   }
   
   @scala.inline
-  implicit class TrafficImageZIndexOps[Self <: TrafficImageZIndex] (val x: Self) extends AnyVal {
+  implicit class TrafficImageZIndexMutableBuilder[Self <: TrafficImageZIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTrafficImageZIndex(value: Double): Self = StObject.set(x, "trafficImageZIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTrafficImageZIndexUndefined: Self = StObject.set(x, "trafficImageZIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrafficInfoZIndex(value: Double): Self = StObject.set(x, "trafficInfoZIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrafficImageZIndex(value: Double): Self = this.set("trafficImageZIndex", value.asInstanceOf[js.Any])
+    def setTrafficInfoZIndexUndefined: Self = StObject.set(x, "trafficInfoZIndex", js.undefined)
     
     @scala.inline
-    def deleteTrafficImageZIndex: Self = this.set("trafficImageZIndex", js.undefined)
+    def setTrafficJamZIndex(value: Double): Self = StObject.set(x, "trafficJamZIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrafficInfoZIndex(value: Double): Self = this.set("trafficInfoZIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrafficInfoZIndex: Self = this.set("trafficInfoZIndex", js.undefined)
-    
-    @scala.inline
-    def setTrafficJamZIndex(value: Double): Self = this.set("trafficJamZIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrafficJamZIndex: Self = this.set("trafficJamZIndex", js.undefined)
+    def setTrafficJamZIndexUndefined: Self = StObject.set(x, "trafficJamZIndex", js.undefined)
   }
 }

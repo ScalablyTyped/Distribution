@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.Android.Intent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [startActivityForResult](Titanium.Android.Activity.startActivityForResult) callback.
   */
 @js.native
-trait ActivityResult extends js.Object {
+trait ActivityResult extends StObject {
   
   /**
     * Intent that can contain data returned to the caller. Data can be attached to
@@ -38,36 +39,24 @@ object ActivityResult {
   }
   
   @scala.inline
-  implicit class ActivityResultOps[Self <: ActivityResult] (val x: Self) extends AnyVal {
+  implicit class ActivityResultMutableBuilder[Self <: ActivityResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestCode(value: Double): Self = StObject.set(x, "requestCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntent(value: Intent): Self = this.set("intent", value.asInstanceOf[js.Any])
+    def setRequestCodeUndefined: Self = StObject.set(x, "requestCode", js.undefined)
     
     @scala.inline
-    def deleteIntent: Self = this.set("intent", js.undefined)
+    def setResultCode(value: Double): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestCode(value: Double): Self = this.set("requestCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestCode: Self = this.set("requestCode", js.undefined)
-    
-    @scala.inline
-    def setResultCode(value: Double): Self = this.set("resultCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultCode: Self = this.set("resultCode", js.undefined)
+    def setResultCodeUndefined: Self = StObject.set(x, "resultCode", js.undefined)
   }
 }

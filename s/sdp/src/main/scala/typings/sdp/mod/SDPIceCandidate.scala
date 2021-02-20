@@ -8,12 +8,13 @@ import typings.sdp.sdpStrings.rtp
 import typings.sdp.sdpStrings.srflx
 import typings.sdp.sdpStrings.tcp
 import typings.sdp.sdpStrings.udp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SDPIceCandidate extends js.Object {
+trait SDPIceCandidate extends StObject {
   
   var address: String = js.native
   
@@ -60,72 +61,60 @@ object SDPIceCandidate {
   }
   
   @scala.inline
-  implicit class SDPIceCandidateOps[Self <: SDPIceCandidate] (val x: Self) extends AnyVal {
+  implicit class SDPIceCandidateMutableBuilder[Self <: SDPIceCandidate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponent(value: rtp | rtcp | Double): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFoundation(value: String): Self = StObject.set(x, "foundation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: rtp | rtcp | Double): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFoundation(value: String): Self = this.set("foundation", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setProtocol(value: tcp | udp): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setRelatedAddress(value: String): Self = StObject.set(x, "relatedAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setRelatedAddressUndefined: Self = StObject.set(x, "relatedAddress", js.undefined)
     
     @scala.inline
-    def setProtocol(value: tcp | udp): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setRelatedPort(value: Double): Self = StObject.set(x, "relatedPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: host | prflx | srflx | relay): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRelatedPortUndefined: Self = StObject.set(x, "relatedPort", js.undefined)
     
     @scala.inline
-    def setRelatedAddress(value: String): Self = this.set("relatedAddress", value.asInstanceOf[js.Any])
+    def setTcpType(value: String): Self = StObject.set(x, "tcpType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelatedAddress: Self = this.set("relatedAddress", js.undefined)
+    def setTcpTypeUndefined: Self = StObject.set(x, "tcpType", js.undefined)
     
     @scala.inline
-    def setRelatedPort(value: Double): Self = this.set("relatedPort", value.asInstanceOf[js.Any])
+    def setType(value: host | prflx | srflx | relay): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelatedPort: Self = this.set("relatedPort", js.undefined)
+    def setUfrag(value: String): Self = StObject.set(x, "ufrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTcpType(value: String): Self = this.set("tcpType", value.asInstanceOf[js.Any])
+    def setUfragUndefined: Self = StObject.set(x, "ufrag", js.undefined)
     
     @scala.inline
-    def deleteTcpType: Self = this.set("tcpType", js.undefined)
+    def setUsernameFragment(value: String): Self = StObject.set(x, "usernameFragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUfrag(value: String): Self = this.set("ufrag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUfrag: Self = this.set("ufrag", js.undefined)
-    
-    @scala.inline
-    def setUsernameFragment(value: String): Self = this.set("usernameFragment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsernameFragment: Self = this.set("usernameFragment", js.undefined)
+    def setUsernameFragmentUndefined: Self = StObject.set(x, "usernameFragment", js.undefined)
   }
 }

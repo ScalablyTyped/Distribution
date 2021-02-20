@@ -2,17 +2,14 @@ package typings.rxjs
 
 import typings.rxjs.operatorMod.Operator
 import typings.rxjs.typesMod.OperatorFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/operators/map", JSImport.Namespace)
-@js.native
-object mapMod extends js.Object {
+object mapMod {
   
-  def map[T, R](project: js.Function2[/* value */ T, /* index */ Double, R]): OperatorFunction[T, R] = js.native
-  def map[T, R](project: js.Function2[/* value */ T, /* index */ Double, R], thisArg: js.Any): OperatorFunction[T, R] = js.native
-  
+  @JSImport("rxjs/internal/operators/map", "MapOperator")
   @js.native
   class MapOperator[T, R] protected () extends Operator[T, R] {
     def this(project: js.Function2[/* value */ T, /* index */ Double, R], thisArg: js.Any) = this()
@@ -21,4 +18,11 @@ object mapMod extends js.Object {
     
     var thisArg: js.Any = js.native
   }
+  
+  @JSImport("rxjs/internal/operators/map", "map")
+  @js.native
+  def map[T, R](project: js.Function2[/* value */ T, /* index */ Double, R]): OperatorFunction[T, R] = js.native
+  @JSImport("rxjs/internal/operators/map", "map")
+  @js.native
+  def map[T, R](project: js.Function2[/* value */ T, /* index */ Double, R], thisArg: js.Any): OperatorFunction[T, R] = js.native
 }

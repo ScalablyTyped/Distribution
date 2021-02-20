@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BundlesListResponse extends js.Object {
+trait BundlesListResponse extends StObject {
   
   /** All bundles. */
   var bundles: js.UndefOr[js.Array[Bundle]] = js.native
@@ -22,33 +23,21 @@ object BundlesListResponse {
   }
   
   @scala.inline
-  implicit class BundlesListResponseOps[Self <: BundlesListResponse] (val x: Self) extends AnyVal {
+  implicit class BundlesListResponseMutableBuilder[Self <: BundlesListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundles(value: js.Array[Bundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBundlesVarargs(value: Bundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
     
     @scala.inline
-    def setBundlesVarargs(value: Bundle*): Self = this.set("bundles", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundles(value: js.Array[Bundle]): Self = this.set("bundles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBundles: Self = this.set("bundles", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

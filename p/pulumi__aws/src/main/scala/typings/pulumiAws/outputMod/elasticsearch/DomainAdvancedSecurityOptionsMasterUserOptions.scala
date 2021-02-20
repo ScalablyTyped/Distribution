@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.elasticsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainAdvancedSecurityOptionsMasterUserOptions extends js.Object {
+trait DomainAdvancedSecurityOptionsMasterUserOptions extends StObject {
   
   /**
     * ARN for the master user. Only specify if `internalUserDatabaseEnabled` is not set or set to `false`)
@@ -31,36 +32,24 @@ object DomainAdvancedSecurityOptionsMasterUserOptions {
   }
   
   @scala.inline
-  implicit class DomainAdvancedSecurityOptionsMasterUserOptionsOps[Self <: DomainAdvancedSecurityOptionsMasterUserOptions] (val x: Self) extends AnyVal {
+  implicit class DomainAdvancedSecurityOptionsMasterUserOptionsMutableBuilder[Self <: DomainAdvancedSecurityOptionsMasterUserOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMasterUserArn(value: String): Self = StObject.set(x, "masterUserArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMasterUserArnUndefined: Self = StObject.set(x, "masterUserArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMasterUserName(value: String): Self = StObject.set(x, "masterUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterUserArn(value: String): Self = this.set("masterUserArn", value.asInstanceOf[js.Any])
+    def setMasterUserNameUndefined: Self = StObject.set(x, "masterUserName", js.undefined)
     
     @scala.inline
-    def deleteMasterUserArn: Self = this.set("masterUserArn", js.undefined)
+    def setMasterUserPassword(value: String): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterUserName(value: String): Self = this.set("masterUserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterUserName: Self = this.set("masterUserName", js.undefined)
-    
-    @scala.inline
-    def setMasterUserPassword(value: String): Self = this.set("masterUserPassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterUserPassword: Self = this.set("masterUserPassword", js.undefined)
+    def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
   }
 }

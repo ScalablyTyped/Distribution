@@ -9,16 +9,16 @@ import typings.typeorm.tableForeignKeyMod.TableForeignKey
 import typings.typeorm.tableIndexMod.TableIndex
 import typings.typeorm.tableOptionsMod.TableOptions
 import typings.typeorm.tableUniqueMod.TableUnique
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/schema-builder/table/Table", JSImport.Namespace)
-@js.native
-object tableMod extends js.Object {
+object tableMod {
   
+  @JSImport("typeorm/browser/schema-builder/table/Table", "Table")
   @js.native
-  class Table () extends js.Object {
+  class Table () extends StObject {
     def this(options: TableOptions) = this()
     
     /**
@@ -156,12 +156,13 @@ object tableMod extends js.Object {
     var uniques: js.Array[TableUnique] = js.native
   }
   /* static members */
-  @js.native
-  object Table extends js.Object {
+  object Table {
     
     /**
       * Creates table from a given entity metadata.
       */
+    @JSImport("typeorm/browser/schema-builder/table/Table", "Table.create")
+    @js.native
     def create(entityMetadata: EntityMetadata, driver: Driver): Table = js.native
   }
 }

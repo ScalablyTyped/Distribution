@@ -2,12 +2,13 @@ package typings.androiduix.android.view
 
 import typings.androiduix.android.graphics.Canvas
 import typings.androiduix.android.graphics.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Surface extends js.Object {
+trait Surface extends StObject {
   
   var _showFPSNode: js.Any = js.native
   
@@ -64,63 +65,51 @@ object Surface {
   }
   
   @scala.inline
-  implicit class SurfaceOps[Self <: Surface] (val x: Self) extends AnyVal {
+  implicit class SurfaceMutableBuilder[Self <: Surface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitCanvasBound(value: () => Unit): Self = StObject.set(x, "initCanvasBound", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitImpl(value: () => Unit): Self = StObject.set(x, "initImpl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_showFPSNode(value: js.Any): Self = this.set("_showFPSNode", value.asInstanceOf[js.Any])
+    def setLockCanvas(value: Rect => Canvas): Self = StObject.set(x, "lockCanvas", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitCanvasBound(value: () => Unit): Self = this.set("initCanvasBound", js.Any.fromFunction0(value))
+    def setLockCanvasImpl(value: (Double, Double, Double, Double) => Canvas): Self = StObject.set(x, "lockCanvasImpl", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setInitImpl(value: () => Unit): Self = this.set("initImpl", js.Any.fromFunction0(value))
+    def setMCanvasBound(value: Rect): Self = StObject.set(x, "mCanvasBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+    def setMCanvasElement(value: js.Any): Self = StObject.set(x, "mCanvasElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockCanvas(value: Rect => Canvas): Self = this.set("lockCanvas", js.Any.fromFunction1(value))
+    def setMLockSaveCount(value: js.Any): Self = StObject.set(x, "mLockSaveCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockCanvasImpl(value: (Double, Double, Double, Double) => Canvas): Self = this.set("lockCanvasImpl", js.Any.fromFunction4(value))
+    def setMLockedRect(value: js.Any): Self = StObject.set(x, "mLockedRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMCanvasBound(value: Rect): Self = this.set("mCanvasBound", value.asInstanceOf[js.Any])
+    def setMSupportDirtyDraw(value: Boolean): Self = StObject.set(x, "mSupportDirtyDraw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMCanvasElement(value: js.Any): Self = this.set("mCanvasElement", value.asInstanceOf[js.Any])
+    def setNotifyBoundChange(value: () => Unit): Self = StObject.set(x, "notifyBoundChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMLockSaveCount(value: js.Any): Self = this.set("mLockSaveCount", value.asInstanceOf[js.Any])
+    def setShowFps(value: Double => Unit): Self = StObject.set(x, "showFps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMLockedRect(value: js.Any): Self = this.set("mLockedRect", value.asInstanceOf[js.Any])
+    def setUnlockCanvasAndPost(value: Canvas => Unit): Self = StObject.set(x, "unlockCanvasAndPost", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMSupportDirtyDraw(value: Boolean): Self = this.set("mSupportDirtyDraw", value.asInstanceOf[js.Any])
+    def setViewRoot(value: js.Any): Self = StObject.set(x, "viewRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifyBoundChange(value: () => Unit): Self = this.set("notifyBoundChange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowFps(value: Double => Unit): Self = this.set("showFps", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnlockCanvasAndPost(value: Canvas => Unit): Self = this.set("unlockCanvasAndPost", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setViewRoot(value: js.Any): Self = this.set("viewRoot", value.asInstanceOf[js.Any])
+    def set_showFPSNode(value: js.Any): Self = StObject.set(x, "_showFPSNode", value.asInstanceOf[js.Any])
   }
 }

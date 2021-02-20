@@ -3,6 +3,7 @@ package typings.winrt.Windows.Networking.Sockets
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IClosable
 import typings.winrt.Windows.Networking.HostName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,33 +37,21 @@ object IStreamSocketListener {
   }
   
   @scala.inline
-  implicit class IStreamSocketListenerOps[Self <: IStreamSocketListener] (val x: Self) extends AnyVal {
+  implicit class IStreamSocketListenerMutableBuilder[Self <: IStreamSocketListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindEndpointAsync(value: (HostName, String) => IAsyncAction): Self = StObject.set(x, "bindEndpointAsync", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindServiceNameAsync(value: String => IAsyncAction): Self = StObject.set(x, "bindServiceNameAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControl(value: StreamSocketListenerControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindEndpointAsync(value: (HostName, String) => IAsyncAction): Self = this.set("bindEndpointAsync", js.Any.fromFunction2(value))
+    def setInformation(value: StreamSocketListenerInformation): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindServiceNameAsync(value: String => IAsyncAction): Self = this.set("bindServiceNameAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setControl(value: StreamSocketListenerControl): Self = this.set("control", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInformation(value: StreamSocketListenerInformation): Self = this.set("information", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnconnectionreceived(value: js.Any): Self = this.set("onconnectionreceived", value.asInstanceOf[js.Any])
+    def setOnconnectionreceived(value: js.Any): Self = StObject.set(x, "onconnectionreceived", value.asInstanceOf[js.Any])
   }
 }

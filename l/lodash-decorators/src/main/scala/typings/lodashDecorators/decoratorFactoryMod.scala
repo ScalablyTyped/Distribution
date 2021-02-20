@@ -2,18 +2,20 @@ package typings.lodashDecorators
 
 import typings.lodashDecorators.commonMod.LodashDecorator
 import typings.lodashDecorators.decoratorConfigMod.DecoratorConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/factory/DecoratorFactory", JSImport.Namespace)
-@js.native
-object decoratorFactoryMod extends js.Object {
+object decoratorFactoryMod {
   
+  @JSImport("lodash-decorators/factory/DecoratorFactory", "DecoratorFactory")
+  @js.native
   val DecoratorFactory: InternalDecoratorFactory = js.native
   
+  @JSImport("lodash-decorators/factory/DecoratorFactory", "InternalDecoratorFactory")
   @js.native
-  class InternalDecoratorFactory () extends js.Object {
+  class InternalDecoratorFactory () extends StObject {
     
     /* private */ def _isApplicable(context: js.Any, config: js.Any): js.Any = js.native
     

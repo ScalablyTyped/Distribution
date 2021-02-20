@@ -1,11 +1,12 @@
 package typings.domSerial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SerialPortFilter extends js.Object {
+trait SerialPortFilter extends StObject {
   
   var usbProductId: js.UndefOr[Double] = js.native
   
@@ -20,27 +21,15 @@ object SerialPortFilter {
   }
   
   @scala.inline
-  implicit class SerialPortFilterOps[Self <: SerialPortFilter] (val x: Self) extends AnyVal {
+  implicit class SerialPortFilterMutableBuilder[Self <: SerialPortFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUsbProductId(value: Double): Self = StObject.set(x, "usbProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUsbProductIdUndefined: Self = StObject.set(x, "usbProductId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUsbVendorId(value: Double): Self = this.set("usbVendorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsbProductId(value: Double): Self = this.set("usbProductId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsbProductId: Self = this.set("usbProductId", js.undefined)
+    def setUsbVendorId(value: Double): Self = StObject.set(x, "usbVendorId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.amapJsApiPlaceSearch.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cpid extends js.Object {
+trait Cpid extends StObject {
   
   var cpid: String = js.native
   
@@ -22,27 +23,15 @@ object Cpid {
   }
   
   @scala.inline
-  implicit class CpidOps[Self <: Cpid] (val x: Self) extends AnyVal {
+  implicit class CpidMutableBuilder[Self <: Cpid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpid(value: String): Self = StObject.set(x, "cpid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloor(value: String): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCpid(value: String): Self = this.set("cpid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFloor(value: String): Self = this.set("floor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTruefloor(value: String): Self = this.set("truefloor", value.asInstanceOf[js.Any])
+    def setTruefloor(value: String): Self = StObject.set(x, "truefloor", value.asInstanceOf[js.Any])
   }
 }

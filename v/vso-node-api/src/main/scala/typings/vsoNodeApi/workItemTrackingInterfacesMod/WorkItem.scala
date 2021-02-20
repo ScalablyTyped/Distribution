@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,33 +45,21 @@ object WorkItem {
   }
   
   @scala.inline
-  implicit class WorkItemOps[Self <: WorkItem] (val x: Self) extends AnyVal {
+  implicit class WorkItemMutableBuilder[Self <: WorkItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: StringDictionary[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelations(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: StringDictionary[js.Any]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setRelationsVarargs(value: WorkItemRelation*): Self = StObject.set(x, "relations", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelationsVarargs(value: WorkItemRelation*): Self = this.set("relations", js.Array(value :_*))
-    
-    @scala.inline
-    def setRelations(value: js.Array[WorkItemRelation]): Self = this.set("relations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRev(value: Double): Self = this.set("rev", value.asInstanceOf[js.Any])
+    def setRev(value: Double): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
   }
 }

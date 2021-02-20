@@ -1,81 +1,68 @@
 package typings.socks.constantsMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocksClientState extends js.Object
+sealed trait SocksClientState extends StObject
 @JSImport("socks/typings/common/constants", "SocksClientState")
 @js.native
-object SocksClientState extends js.Object {
+object SocksClientState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocksClientState with Double] = js.native
   
   @js.native
   sealed trait BoundWaitingForConnection extends SocksClientState
-  /* 9 */ @js.native
-  object BoundWaitingForConnection extends TopLevel[BoundWaitingForConnection with Double]
+  /* 9 */ val BoundWaitingForConnection: typings.socks.constantsMod.SocksClientState.BoundWaitingForConnection with Double = js.native
   
   @js.native
   sealed trait Connected extends SocksClientState
-  /* 2 */ @js.native
-  object Connected extends TopLevel[Connected with Double]
+  /* 2 */ val Connected: typings.socks.constantsMod.SocksClientState.Connected with Double = js.native
   
   @js.native
   sealed trait Connecting extends SocksClientState
-  /* 1 */ @js.native
-  object Connecting extends TopLevel[Connecting with Double]
+  /* 1 */ val Connecting: typings.socks.constantsMod.SocksClientState.Connecting with Double = js.native
   
   @js.native
   sealed trait Created extends SocksClientState
-  /* 0 */ @js.native
-  object Created extends TopLevel[Created with Double]
+  /* 0 */ val Created: typings.socks.constantsMod.SocksClientState.Created with Double = js.native
   
   @js.native
   sealed trait Disconnected extends SocksClientState
-  /* 11 */ @js.native
-  object Disconnected extends TopLevel[Disconnected with Double]
+  /* 11 */ val Disconnected: typings.socks.constantsMod.SocksClientState.Disconnected with Double = js.native
   
   @js.native
   sealed trait Error extends SocksClientState
-  /* 99 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  /* 99 */ val Error: typings.socks.constantsMod.SocksClientState.Error with Double = js.native
   
   @js.native
   sealed trait Established extends SocksClientState
-  /* 10 */ @js.native
-  object Established extends TopLevel[Established with Double]
+  /* 10 */ val Established: typings.socks.constantsMod.SocksClientState.Established with Double = js.native
   
   @js.native
   sealed trait ReceivedAuthenticationResponse extends SocksClientState
-  /* 6 */ @js.native
-  object ReceivedAuthenticationResponse extends TopLevel[ReceivedAuthenticationResponse with Double]
+  /* 6 */ val ReceivedAuthenticationResponse: typings.socks.constantsMod.SocksClientState.ReceivedAuthenticationResponse with Double = js.native
   
   @js.native
   sealed trait ReceivedFinalResponse extends SocksClientState
-  /* 8 */ @js.native
-  object ReceivedFinalResponse extends TopLevel[ReceivedFinalResponse with Double]
+  /* 8 */ val ReceivedFinalResponse: typings.socks.constantsMod.SocksClientState.ReceivedFinalResponse with Double = js.native
   
   @js.native
   sealed trait ReceivedInitialHandshakeResponse extends SocksClientState
-  /* 4 */ @js.native
-  object ReceivedInitialHandshakeResponse extends TopLevel[ReceivedInitialHandshakeResponse with Double]
+  /* 4 */ val ReceivedInitialHandshakeResponse: typings.socks.constantsMod.SocksClientState.ReceivedInitialHandshakeResponse with Double = js.native
   
   @js.native
   sealed trait SentAuthentication extends SocksClientState
-  /* 5 */ @js.native
-  object SentAuthentication extends TopLevel[SentAuthentication with Double]
+  /* 5 */ val SentAuthentication: typings.socks.constantsMod.SocksClientState.SentAuthentication with Double = js.native
   
   @js.native
   sealed trait SentFinalHandshake extends SocksClientState
-  /* 7 */ @js.native
-  object SentFinalHandshake extends TopLevel[SentFinalHandshake with Double]
+  /* 7 */ val SentFinalHandshake: typings.socks.constantsMod.SocksClientState.SentFinalHandshake with Double = js.native
   
   @js.native
   sealed trait SentInitialHandshake extends SocksClientState
-  /* 3 */ @js.native
-  object SentInitialHandshake extends TopLevel[SentInitialHandshake with Double]
+  /* 3 */ val SentInitialHandshake: typings.socks.constantsMod.SocksClientState.SentInitialHandshake with Double = js.native
 }

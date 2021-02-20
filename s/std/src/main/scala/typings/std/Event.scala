@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An event which takes place in the DOM. */
 @js.native
-trait Event extends js.Object {
+trait Event extends StObject {
   
   val AT_TARGET: Double = js.native
   

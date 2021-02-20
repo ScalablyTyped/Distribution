@@ -2,12 +2,13 @@ package typings.octokitTypes.anon
 
 import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.selected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Permissions extends js.Object {
+trait Permissions extends StObject {
   
   var access_tokens_url: String = js.native
   
@@ -61,63 +62,51 @@ object Permissions {
   }
   
   @scala.inline
-  implicit class PermissionsOps[Self <: Permissions] (val x: Self) extends AnyVal {
+  implicit class PermissionsMutableBuilder[Self <: Permissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_tokens_url(value: String): Self = StObject.set(x, "access_tokens_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccount(value: Avatarurl): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApp_id(value: Double): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess_tokens_url(value: String): Self = this.set("access_tokens_url", value.asInstanceOf[js.Any])
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount(value: Avatarurl): Self = this.set("account", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp_id(value: Double): Self = this.set("app_id", value.asInstanceOf[js.Any])
+    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[String]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setPermissions(value: Deployments): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setRepositories_url(value: String): Self = StObject.set(x, "repositories_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRepository_selection(value: all | selected): Self = StObject.set(x, "repository_selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: Deployments): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setSingle_file_name(value: String): Self = StObject.set(x, "single_file_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositories_url(value: String): Self = this.set("repositories_url", value.asInstanceOf[js.Any])
+    def setTarget_id(value: Double): Self = StObject.set(x, "target_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository_selection(value: all | selected): Self = this.set("repository_selection", value.asInstanceOf[js.Any])
+    def setTarget_type(value: String): Self = StObject.set(x, "target_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingle_file_name(value: String): Self = this.set("single_file_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget_id(value: Double): Self = this.set("target_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget_type(value: String): Self = this.set("target_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.desktop
 import typings.devtoolsProtocol.devtoolsProtocolStrings.mobile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.mobile
   - typings.devtoolsProtocol.devtoolsProtocolStrings.desktop
 */
-trait SetEmitTouchEventsForMouseRequestConfiguration extends js.Object
+trait SetEmitTouchEventsForMouseRequestConfiguration extends StObject
 object SetEmitTouchEventsForMouseRequestConfiguration {
   
   @scala.inline

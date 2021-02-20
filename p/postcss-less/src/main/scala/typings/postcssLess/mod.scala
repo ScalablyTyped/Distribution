@@ -11,32 +11,48 @@ import typings.postcss.mod.Root_
 import typings.postcss.mod.Rule_
 import typings.postcss.mod.Stringifier
 import typings.postcssLess.postcssLessBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postcss-less", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+/* Inlined postcss.postcss.Syntax & {  parse :postcss.postcss.Parser,   stringify :postcss.postcss.Stringifier, nodeToString (node : postcss.postcss.Node): string} */
+object mod {
   
+  @JSImport("postcss-less", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("postcss-less", "nodeToString")
+  @js.native
   def nodeToString(node: Node): String = js.native
   
   /**
     * Function to generate AST by string.
     */
-  var parse: js.UndefOr[Parser] = js.native
+  @JSImport("postcss-less", "parse")
+  @js.native
+  def parse: js.UndefOr[Parser] = js.native
+  @JSImport("postcss-less", "parse")
+  @js.native
   def parse(css: ParserInput): Root_ = js.native
+  @JSImport("postcss-less", "parse")
+  @js.native
   def parse(css: ParserInput, opts: PickProcessOptionsmapfrom): Root_ = js.native
-  @JSName("parse")
-  var parse_Original: Parser = js.native
+  @scala.inline
+  def parse_=(x: js.UndefOr[Parser]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
   
   /**
     * Class to generate string by AST.
     */
-  var stringify: js.UndefOr[Stringifier] = js.native
+  @JSImport("postcss-less", "stringify")
+  @js.native
+  def stringify: js.UndefOr[Stringifier] = js.native
+  @JSImport("postcss-less", "stringify")
+  @js.native
   def stringify(node: Node, builder: Builder): Unit = js.native
-  @JSName("stringify")
-  var stringify_Original: Stringifier = js.native
+  @scala.inline
+  def stringify_=(x: js.UndefOr[Stringifier]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringify")(x.asInstanceOf[js.Any])
   
   /* Rewritten from type alias, can be one of: 
     - typings.postcssLess.mod.ImportAtRule
@@ -44,7 +60,11 @@ object mod extends js.Object {
     - typings.postcssLess.mod.MixinAtRule
     - typings.postcssLess.mod.FunctionAtRule
   */
-  trait AtRule extends js.Object
+  trait AtRule extends StObject
+  
+  type Comment = InlineComment
+  
+  type Declaration = ExtendDeclaration
   
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/LessParser.js#L187
   @js.native
@@ -101,6 +121,8 @@ object mod extends js.Object {
     var mixin: `true` = js.native
   }
   
+  type Rule = ExtendRule
+  
   // @see https://github.com/shellscape/postcss-less/blob/v3.1.4/lib/nodes/variable.js
   @js.native
   trait VariableAtRule
@@ -111,10 +133,4 @@ object mod extends js.Object {
     
     var variable: `true` = js.native
   }
-  
-  type Comment = InlineComment
-  
-  type Declaration = ExtendDeclaration
-  
-  type Rule = ExtendRule
 }

@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExpandResult extends js.Object {
+trait ExpandResult extends StObject {
   
   var fileNames: js.Array[java.lang.String] = js.native
   
@@ -20,27 +21,15 @@ object ExpandResult {
   }
   
   @scala.inline
-  implicit class ExpandResultOps[Self <: ExpandResult] (val x: Self) extends AnyVal {
+  implicit class ExpandResultMutableBuilder[Self <: ExpandResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileNames(value: js.Array[java.lang.String]): Self = StObject.set(x, "fileNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileNamesVarargs(value: java.lang.String*): Self = StObject.set(x, "fileNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFileNamesVarargs(value: java.lang.String*): Self = this.set("fileNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setFileNames(value: js.Array[java.lang.String]): Self = this.set("fileNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWildcardDirectories(value: MapLike[WatchDirectoryFlags]): Self = this.set("wildcardDirectories", value.asInstanceOf[js.Any])
+    def setWildcardDirectories(value: MapLike[WatchDirectoryFlags]): Self = StObject.set(x, "wildcardDirectories", value.asInstanceOf[js.Any])
   }
 }

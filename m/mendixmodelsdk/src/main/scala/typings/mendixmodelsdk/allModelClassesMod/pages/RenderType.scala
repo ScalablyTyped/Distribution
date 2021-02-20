@@ -1,19 +1,34 @@
 package typings.mendixmodelsdk.allModelClassesMod.pages
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RenderType")
 @js.native
-class RenderType ()
-  extends typings.mendixmodelsdk.pagesMod.pages.RenderType
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RenderType")
-@js.native
-object RenderType extends js.Object {
+class RenderType protected ()
+  extends typings.mendixmodelsdk.pagesMod.pages.RenderType {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object RenderType {
   
-  var Button: typings.mendixmodelsdk.pagesMod.pages.RenderType = js.native
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RenderType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Link: typings.mendixmodelsdk.pagesMod.pages.RenderType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RenderType.Button")
+  @js.native
+  def Button: typings.mendixmodelsdk.pagesMod.pages.RenderType = js.native
+  @scala.inline
+  def Button_=(x: typings.mendixmodelsdk.pagesMod.pages.RenderType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RenderType.Link")
+  @js.native
+  def Link: typings.mendixmodelsdk.pagesMod.pages.RenderType = js.native
+  @scala.inline
+  def Link_=(x: typings.mendixmodelsdk.pagesMod.pages.RenderType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
 }

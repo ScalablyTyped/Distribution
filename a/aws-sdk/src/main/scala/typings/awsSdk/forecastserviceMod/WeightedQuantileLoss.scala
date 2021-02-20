@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WeightedQuantileLoss extends js.Object {
+trait WeightedQuantileLoss extends StObject {
   
   /**
     * The difference between the predicted value and the actual value over the quantile, weighted (normalized) by dividing by the sum over all quantiles.
@@ -26,30 +27,18 @@ object WeightedQuantileLoss {
   }
   
   @scala.inline
-  implicit class WeightedQuantileLossOps[Self <: WeightedQuantileLoss] (val x: Self) extends AnyVal {
+  implicit class WeightedQuantileLossMutableBuilder[Self <: WeightedQuantileLoss] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLossValue(value: Double): Self = StObject.set(x, "LossValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLossValueUndefined: Self = StObject.set(x, "LossValue", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuantile(value: Double): Self = StObject.set(x, "Quantile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLossValue(value: Double): Self = this.set("LossValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLossValue: Self = this.set("LossValue", js.undefined)
-    
-    @scala.inline
-    def setQuantile(value: Double): Self = this.set("Quantile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantile: Self = this.set("Quantile", js.undefined)
+    def setQuantileUndefined: Self = StObject.set(x, "Quantile", js.undefined)
   }
 }

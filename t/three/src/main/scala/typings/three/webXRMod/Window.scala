@@ -1,11 +1,12 @@
 package typings.three.webXRMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Window extends js.Object {
+trait Window extends StObject {
   
   var XR: js.UndefOr[Constructor[typings.three.webXRMod.XR]] = js.native
   
@@ -20,30 +21,18 @@ object Window {
   }
   
   @scala.inline
-  implicit class WindowOps[Self <: Window] (val x: Self) extends AnyVal {
+  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setXR(value: Constructor[XR]): Self = StObject.set(x, "XR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setXRSession(value: Constructor[XRSession]): Self = StObject.set(x, "XRSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXRSessionUndefined: Self = StObject.set(x, "XRSession", js.undefined)
     
     @scala.inline
-    def setXR(value: Constructor[XR]): Self = this.set("XR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXR: Self = this.set("XR", js.undefined)
-    
-    @scala.inline
-    def setXRSession(value: Constructor[XRSession]): Self = this.set("XRSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXRSession: Self = this.set("XRSession", js.undefined)
+    def setXRUndefined: Self = StObject.set(x, "XR", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.TopLevel
 import typings.baiduApp.anon.Partialbubblesbooleancomp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Component实例方法
   */
 @js.native
-trait Component[D, P] extends js.Object {
+trait Component[D, P] extends StObject {
   
   /**
     * 节点布局交叉状态API可用于监听两个或多个组件节点在布局位置上的相交状态。这一组API常常可以用于推断某些节点是否可以被用户看见、有多大比例可以被用户看见。

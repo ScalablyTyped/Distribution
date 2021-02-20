@@ -1,11 +1,12 @@
 package typings.dwBxslider4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait bxSlider extends js.Object {
+trait bxSlider extends StObject {
   
   /**
     * destroySlider Destroy the slider. This reverts all slider elements back to their original state (before calling the slider).

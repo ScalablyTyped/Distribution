@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsLayers.initializersMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +23,16 @@ class VarianceScaling protected () extends Initializer {
   var seed: js.Any = js.native
 }
 /* static members */
-@JSImport("@tensorflow/tfjs-layers/dist/initializers", "VarianceScaling")
-@js.native
-object VarianceScaling extends js.Object {
+object VarianceScaling {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/initializers", "VarianceScaling")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @nocollapse */
-  var className: String = js.native
+  @JSImport("@tensorflow/tfjs-layers/dist/initializers", "VarianceScaling.className")
+  @js.native
+  def className: String = js.native
+  @scala.inline
+  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

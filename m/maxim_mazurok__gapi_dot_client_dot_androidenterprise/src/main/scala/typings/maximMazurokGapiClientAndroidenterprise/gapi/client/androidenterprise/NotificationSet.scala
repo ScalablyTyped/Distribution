@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationSet extends js.Object {
+trait NotificationSet extends StObject {
   
   /** The notifications received, or empty if no notifications are present. */
   var notification: js.UndefOr[js.Array[Notification]] = js.native
@@ -22,33 +23,21 @@ object NotificationSet {
   }
   
   @scala.inline
-  implicit class NotificationSetOps[Self <: NotificationSet] (val x: Self) extends AnyVal {
+  implicit class NotificationSetMutableBuilder[Self <: NotificationSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotification(value: js.Array[Notification]): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotificationSetId(value: String): Self = StObject.set(x, "notificationSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotificationSetIdUndefined: Self = StObject.set(x, "notificationSetId", js.undefined)
     
     @scala.inline
-    def setNotificationVarargs(value: Notification*): Self = this.set("notification", js.Array(value :_*))
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def setNotification(value: js.Array[Notification]): Self = this.set("notification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
-    
-    @scala.inline
-    def setNotificationSetId(value: String): Self = this.set("notificationSetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationSetId: Self = this.set("notificationSetId", js.undefined)
+    def setNotificationVarargs(value: Notification*): Self = StObject.set(x, "notification", js.Array(value :_*))
   }
 }

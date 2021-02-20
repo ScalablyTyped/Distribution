@@ -1,12 +1,13 @@
 package typings.nextReactDevOverlay
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@next/react-dev-overlay/lib/internal/components/Overlay/styles", JSImport.Namespace)
-@js.native
-object overlayStylesMod extends js.Object {
+object overlayStylesMod {
   
+  @JSImport("@next/react-dev-overlay/lib/internal/components/Overlay/styles", "styles")
+  @js.native
   val styles: String = js.native
 }

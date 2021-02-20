@@ -1,12 +1,13 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped object */ @js.native
-trait InputTextMessageContent extends js.Object {
+trait InputTextMessageContent extends StObject {
   
   var disable_web_page_preview: js.UndefOr[Boolean] = js.native
   
@@ -23,33 +24,21 @@ object InputTextMessageContent {
   }
   
   @scala.inline
-  implicit class InputTextMessageContentOps[Self <: InputTextMessageContent] (val x: Self) extends AnyVal {
+  implicit class InputTextMessageContentMutableBuilder[Self <: InputTextMessageContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable_web_page_preview(value: Boolean): Self = StObject.set(x, "disable_web_page_preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisable_web_page_previewUndefined: Self = StObject.set(x, "disable_web_page_preview", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage_text(value: String): Self = StObject.set(x, "message_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage_text(value: String): Self = this.set("message_text", value.asInstanceOf[js.Any])
+    def setParse_mode(value: ParseMode): Self = StObject.set(x, "parse_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_web_page_preview(value: Boolean): Self = this.set("disable_web_page_preview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisable_web_page_preview: Self = this.set("disable_web_page_preview", js.undefined)
-    
-    @scala.inline
-    def setParse_mode(value: ParseMode): Self = this.set("parse_mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParse_mode: Self = this.set("parse_mode", js.undefined)
+    def setParse_modeUndefined: Self = StObject.set(x, "parse_mode", js.undefined)
   }
 }

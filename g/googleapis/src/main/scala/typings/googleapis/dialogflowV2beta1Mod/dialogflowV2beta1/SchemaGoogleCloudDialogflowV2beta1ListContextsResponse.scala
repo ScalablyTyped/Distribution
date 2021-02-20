@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response message for Contexts.ListContexts.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1ListContextsResponse extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1ListContextsResponse extends StObject {
   
   /**
     * The list of contexts. There will be a maximum number of items returned
@@ -31,33 +32,21 @@ object SchemaGoogleCloudDialogflowV2beta1ListContextsResponse {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1ListContextsResponseOps[Self <: SchemaGoogleCloudDialogflowV2beta1ListContextsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1ListContextsResponseMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1ListContextsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContexts(value: js.Array[SchemaGoogleCloudDialogflowV2beta1Context]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextsVarargs(value: SchemaGoogleCloudDialogflowV2beta1Context*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
     @scala.inline
-    def setContextsVarargs(value: SchemaGoogleCloudDialogflowV2beta1Context*): Self = this.set("contexts", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContexts(value: js.Array[SchemaGoogleCloudDialogflowV2beta1Context]): Self = this.set("contexts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContexts: Self = this.set("contexts", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

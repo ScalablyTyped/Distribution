@@ -3,6 +3,24 @@
 
 Typings are for version 2.0.20201107
 
+## Library description:
+TypeScript typings for Cloud Trace API v2
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @maxim_mazurok/gapi.client.cloudtrace |
+| Keywords           | - |
+| # releases         | 8 |
+| # dependents       | 1 |
+| # downloads        | 871 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)
+- [Bugs](https://github.com/Maxim-Mazurok/google-api-typings-generator/issues)
+- [Repository](https://github.com/Maxim-Mazurok/google-api-typings-generator)
+- [Npm](https://www.npmjs.com/package/%40maxim_mazurok%2Fgapi.client.cloudtrace)
+    
 
 
 ## Note

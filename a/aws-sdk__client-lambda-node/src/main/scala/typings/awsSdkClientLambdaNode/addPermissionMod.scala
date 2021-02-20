@@ -1,12 +1,13 @@
 package typings.awsSdkClientLambdaNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/model/AddPermission", JSImport.Namespace)
-@js.native
-object addPermissionMod extends js.Object {
+object addPermissionMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/model/AddPermission", "AddPermission")
+  @js.native
   val AddPermission: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

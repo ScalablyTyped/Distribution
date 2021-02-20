@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,36 +52,24 @@ object NestedRows {
   }
   
   @scala.inline
-  implicit class NestedRowsOps[Self <: NestedRows] (val x: Self) extends AnyVal {
+  implicit class NestedRowsMutableBuilder[Self <: NestedRows] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindRowsWithHeadersPlugin(value: BindRowsWithHeaders | Unit): Self = StObject.set(x, "bindRowsWithHeadersPlugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapsingUI(value: js.Object | Unit): Self = StObject.set(x, "collapsingUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataManager(value: DataManager | Unit): Self = StObject.set(x, "dataManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindRowsWithHeadersPlugin(value: BindRowsWithHeaders | Unit): Self = this.set("bindRowsWithHeadersPlugin", value.asInstanceOf[js.Any])
+    def setHeadersUI(value: js.Object | Unit): Self = StObject.set(x, "headersUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsingUI(value: js.Object | Unit): Self = this.set("collapsingUI", value.asInstanceOf[js.Any])
+    def setSourceData(value: js.Object | Unit): Self = StObject.set(x, "sourceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataManager(value: DataManager | Unit): Self = this.set("dataManager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeadersUI(value: js.Object | Unit): Self = this.set("headersUI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceData(value: js.Object | Unit): Self = this.set("sourceData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrimRowsPlugin(value: TrimRows | Unit): Self = this.set("trimRowsPlugin", value.asInstanceOf[js.Any])
+    def setTrimRowsPlugin(value: TrimRows | Unit): Self = StObject.set(x, "trimRowsPlugin", value.asInstanceOf[js.Any])
   }
 }

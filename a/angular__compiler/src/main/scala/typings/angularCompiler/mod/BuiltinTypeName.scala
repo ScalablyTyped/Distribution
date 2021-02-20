@@ -1,12 +1,13 @@
 package typings.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "BuiltinTypeName")
 @js.native
-object BuiltinTypeName extends js.Object {
+object BuiltinTypeName extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.angularCompiler.outputAstMod.BuiltinTypeName with Double] = js.native

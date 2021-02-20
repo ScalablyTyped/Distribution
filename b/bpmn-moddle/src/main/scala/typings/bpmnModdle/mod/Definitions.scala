@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,63 +54,51 @@ object Definitions {
   }
   
   @scala.inline
-  implicit class DefinitionsOps[Self <: Definitions] (val x: Self) extends AnyVal {
+  implicit class DefinitionsMutableBuilder[Self <: Definitions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiagrams(value: BPMNDiagram): Self = StObject.set(x, "diagrams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEr(value: String): Self = StObject.set(x, "er", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErVersion(value: String): Self = StObject.set(x, "erVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagrams(value: BPMNDiagram): Self = this.set("diagrams", value.asInstanceOf[js.Any])
+    def setExpressionLanguage(value: String): Self = StObject.set(x, "expressionLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEr(value: String): Self = this.set("er", value.asInstanceOf[js.Any])
+    def setExtensions(value: js.Array[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErVersion(value: String): Self = this.set("erVersion", value.asInstanceOf[js.Any])
+    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExpressionLanguage(value: String): Self = this.set("expressionLanguage", value.asInstanceOf[js.Any])
+    def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = this.set("extensions", js.Array(value :_*))
+    def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
-    def setExtensions(value: js.Array[Extension]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportsVarargs(value: Import*): Self = this.set("imports", js.Array(value :_*))
+    def setRelationship(value: js.Array[Relationship]): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImports(value: js.Array[Import]): Self = this.set("imports", value.asInstanceOf[js.Any])
+    def setRelationshipVarargs(value: Relationship*): Self = StObject.set(x, "relationship", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRootElements(value: js.Array[RootElement]): Self = StObject.set(x, "rootElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationshipVarargs(value: Relationship*): Self = this.set("relationship", js.Array(value :_*))
+    def setRootElementsVarargs(value: RootElement*): Self = StObject.set(x, "rootElements", js.Array(value :_*))
     
     @scala.inline
-    def setRelationship(value: js.Array[Relationship]): Self = this.set("relationship", value.asInstanceOf[js.Any])
+    def setTargetNamespace(value: String): Self = StObject.set(x, "targetNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootElementsVarargs(value: RootElement*): Self = this.set("rootElements", js.Array(value :_*))
-    
-    @scala.inline
-    def setRootElements(value: js.Array[RootElement]): Self = this.set("rootElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetNamespace(value: String): Self = this.set("targetNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeLanguage(value: String): Self = this.set("typeLanguage", value.asInstanceOf[js.Any])
+    def setTypeLanguage(value: String): Self = StObject.set(x, "typeLanguage", value.asInstanceOf[js.Any])
   }
 }

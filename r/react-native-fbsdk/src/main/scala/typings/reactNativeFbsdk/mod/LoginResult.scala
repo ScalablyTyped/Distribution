@@ -1,11 +1,12 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoginResult extends js.Object {
+trait LoginResult extends StObject {
   
   var declinedPermissions: js.UndefOr[js.Array[Permissions]] = js.native
   
@@ -24,42 +25,30 @@ object LoginResult {
   }
   
   @scala.inline
-  implicit class LoginResultOps[Self <: LoginResult] (val x: Self) extends AnyVal {
+  implicit class LoginResultMutableBuilder[Self <: LoginResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeclinedPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "declinedPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeclinedPermissionsUndefined: Self = StObject.set(x, "declinedPermissions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeclinedPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "declinedPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setError(value: js.Any): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCancelled(value: Boolean): Self = this.set("isCancelled", value.asInstanceOf[js.Any])
+    def setGrantedPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "grantedPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclinedPermissionsVarargs(value: Permissions*): Self = this.set("declinedPermissions", js.Array(value :_*))
+    def setGrantedPermissionsUndefined: Self = StObject.set(x, "grantedPermissions", js.undefined)
     
     @scala.inline
-    def setDeclinedPermissions(value: js.Array[Permissions]): Self = this.set("declinedPermissions", value.asInstanceOf[js.Any])
+    def setGrantedPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "grantedPermissions", js.Array(value :_*))
     
     @scala.inline
-    def deleteDeclinedPermissions: Self = this.set("declinedPermissions", js.undefined)
-    
-    @scala.inline
-    def setGrantedPermissionsVarargs(value: Permissions*): Self = this.set("grantedPermissions", js.Array(value :_*))
-    
-    @scala.inline
-    def setGrantedPermissions(value: js.Array[Permissions]): Self = this.set("grantedPermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrantedPermissions: Self = this.set("grantedPermissions", js.undefined)
+    def setIsCancelled(value: Boolean): Self = StObject.set(x, "isCancelled", value.asInstanceOf[js.Any])
   }
 }

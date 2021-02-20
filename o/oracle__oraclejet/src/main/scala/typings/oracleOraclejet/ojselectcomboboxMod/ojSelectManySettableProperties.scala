@@ -18,6 +18,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.native
 import typings.oracleOraclejet.oracleOraclejetStrings.pending
 import typings.oracleOraclejet.oracleOraclejetStrings.valid
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,87 +79,75 @@ object ojSelectManySettableProperties {
   }
   
   @scala.inline
-  implicit class ojSelectManySettablePropertiesOps[Self <: ojSelectManySettableProperties[_, _], K, D] (val x: Self with (ojSelectManySettableProperties[K, D])) extends AnyVal {
+  implicit class ojSelectManySettablePropertiesMutableBuilder[Self <: ojSelectManySettableProperties[_, _], K, D] (val x: Self with (ojSelectManySettableProperties[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinimumResultsForSearch(value: Double): Self = StObject.set(x, "minimumResultsForSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptionRenderer(value: /* param0 */ OptionContext => Element): Self = StObject.set(x, "optionRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionRendererNull: Self = StObject.set(x, "optionRenderer", null)
     
     @scala.inline
-    def setMinimumResultsForSearch(value: Double): Self = this.set("minimumResultsForSearch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptionsKeys(value: ChildrenLabel): Self = this.set("optionsKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPickerAttributes(value: Class): Self = this.set("pickerAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderMode(value: jet | native): Self = this.set("renderMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTranslations(value: MoreMatchesFound): Self = this.set("translations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptionRenderer(value: /* param0 */ OptionContext => Element): Self = this.set("optionRenderer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOptionRenderer: Self = this.set("optionRenderer", js.undefined)
-    
-    @scala.inline
-    def setOptionRendererNull: Self = this.set("optionRenderer", null)
-    
-    @scala.inline
-    def setOptionsVarargs(
-      value: (typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup)*
-    ): Self = this.set("options", js.Array(value :_*))
+    def setOptionRendererUndefined: Self = StObject.set(x, "optionRenderer", js.undefined)
     
     @scala.inline
     def setOptions(
       value: (js.Array[
           typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
         ]) | (DataProvider[K, D])
-    ): Self = this.set("options", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsNull: Self = this.set("options", null)
+    def setOptionsKeys(value: ChildrenLabel): Self = StObject.set(x, "optionsKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setOptionsNull: Self = StObject.set(x, "options", null)
     
     @scala.inline
-    def setPlaceholderNull: Self = this.set("placeholder", null)
+    def setOptionsVarargs(
+      value: (typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup)*
+    ): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setValueVarargs(value: js.Any*): Self = this.set("value", js.Array(value :_*))
+    def setPickerAttributes(value: Class): Self = StObject.set(x, "pickerAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Array[_]): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setPlaceholderNull: Self = StObject.set(x, "placeholder", null)
     
     @scala.inline
-    def setValueOptionsVarargs(value: LabelValue*): Self = this.set("valueOptions", js.Array(value :_*))
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueOptions(value: js.Array[LabelValue]): Self = this.set("valueOptions", value.asInstanceOf[js.Any])
+    def setRenderMode(value: jet | native): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueOptionsNull: Self = this.set("valueOptions", null)
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTranslations(value: MoreMatchesFound): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueNull: Self = StObject.set(x, "value", null)
+    
+    @scala.inline
+    def setValueOptions(value: js.Array[LabelValue]): Self = StObject.set(x, "valueOptions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueOptionsNull: Self = StObject.set(x, "valueOptions", null)
+    
+    @scala.inline
+    def setValueOptionsVarargs(value: LabelValue*): Self = StObject.set(x, "valueOptions", js.Array(value :_*))
+    
+    @scala.inline
+    def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

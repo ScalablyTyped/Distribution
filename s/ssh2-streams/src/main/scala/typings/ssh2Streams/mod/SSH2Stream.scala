@@ -36,6 +36,7 @@ import typings.ssh2Streams.ssh2StreamsStrings.error
 import typings.ssh2Streams.ssh2StreamsStrings.fingerprint
 import typings.ssh2Streams.ssh2StreamsStrings.header
 import typings.ssh2Streams.ssh2StreamsStrings.ready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

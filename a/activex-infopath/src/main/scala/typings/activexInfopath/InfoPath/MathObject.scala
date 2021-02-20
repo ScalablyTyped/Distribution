@@ -1,12 +1,13 @@
 package typings.activexInfopath.InfoPath
 
 import typings.activexMsxml2.MSXML2.IXMLDOMNodeList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MathObject extends js.Object {
+trait MathObject extends StObject {
   
   def Avg(pxmllistInput: IXMLDOMNodeList): js.Any = js.native
   
@@ -38,36 +39,24 @@ object MathObject {
   }
   
   @scala.inline
-  implicit class MathObjectOps[Self <: MathObject] (val x: Self) extends AnyVal {
+  implicit class MathObjectMutableBuilder[Self <: MathObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvg(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Avg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEval(value: (IXMLDOMNodeList, String) => js.Any): Self = StObject.set(x, "Eval", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoPathDotMathObject_typekey(value: MathObject): Self = StObject.set(x, "InfoPath.MathObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvg(value: IXMLDOMNodeList => js.Any): Self = this.set("Avg", js.Any.fromFunction1(value))
+    def setMax(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Max", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEval(value: (IXMLDOMNodeList, String) => js.Any): Self = this.set("Eval", js.Any.fromFunction2(value))
+    def setMin(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Min", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInfoPathDotMathObject_typekey(value: MathObject): Self = this.set("InfoPath.MathObject_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax(value: IXMLDOMNodeList => js.Any): Self = this.set("Max", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMin(value: IXMLDOMNodeList => js.Any): Self = this.set("Min", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNz(value: IXMLDOMNodeList => js.Any): Self = this.set("Nz", js.Any.fromFunction1(value))
+    def setNz(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Nz", js.Any.fromFunction1(value))
   }
 }

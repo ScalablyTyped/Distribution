@@ -1,5 +1,6 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.speed
   - typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.congestion
 */
-trait DirectionsAnnotation extends js.Object
+trait DirectionsAnnotation extends StObject
 object DirectionsAnnotation {
   
   @scala.inline

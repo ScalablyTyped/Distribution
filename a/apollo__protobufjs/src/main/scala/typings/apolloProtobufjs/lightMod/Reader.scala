@@ -2,6 +2,7 @@ package typings.apolloProtobufjs.lightMod
 
 import typings.apolloProtobufjs.mod.Buffer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,7 @@ class Reader protected ()
   def this(buffer: Uint8Array) = this()
 }
 /* static members */
-@JSImport("@apollo/protobufjs/light", "Reader")
-@js.native
-object Reader extends js.Object {
+object Reader {
   
   /**
     * Creates a new reader using the specified buffer.
@@ -27,5 +26,7 @@ object Reader extends js.Object {
     * @returns A {@link BufferReader} if `buffer` is a Buffer, otherwise a {@link Reader}
     * @throws {Error} If `buffer` is not a valid buffer
     */
+  @JSImport("@apollo/protobufjs/light", "Reader.create")
+  @js.native
   def create(buffer: Buffer | Uint8Array): typings.apolloProtobufjs.mod.Reader | typings.apolloProtobufjs.mod.BufferReader = js.native
 }

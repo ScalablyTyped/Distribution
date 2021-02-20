@@ -1,6 +1,7 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A pivot table.
   */
 @js.native
-trait SchemaPivotTable extends js.Object {
+trait SchemaPivotTable extends StObject {
   
   /**
     * Each column grouping in the pivot table.
@@ -56,63 +57,51 @@ object SchemaPivotTable {
   }
   
   @scala.inline
-  implicit class SchemaPivotTableOps[Self <: SchemaPivotTable] (val x: Self) extends AnyVal {
+  implicit class SchemaPivotTableMutableBuilder[Self <: SchemaPivotTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[SchemaPivotGroup]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: SchemaPivotGroup*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: SchemaPivotGroup*): Self = this.set("columns", js.Array(value :_*))
+    def setCriteria(value: StringDictionary[SchemaPivotFilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[SchemaPivotGroup]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setRows(value: js.Array[SchemaPivotGroup]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteria(value: StringDictionary[SchemaPivotFilterCriteria]): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    def setRowsVarargs(value: SchemaPivotGroup*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: SchemaPivotGroup*): Self = this.set("rows", js.Array(value :_*))
+    def setSource(value: SchemaGridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[SchemaPivotGroup]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setValueLayout(value: String): Self = StObject.set(x, "valueLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: SchemaGridRange): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setValueLayoutUndefined: Self = StObject.set(x, "valueLayout", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setValues(value: js.Array[SchemaPivotValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueLayout(value: String): Self = this.set("valueLayout", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteValueLayout: Self = this.set("valueLayout", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: SchemaPivotValue*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[SchemaPivotValue]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: SchemaPivotValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

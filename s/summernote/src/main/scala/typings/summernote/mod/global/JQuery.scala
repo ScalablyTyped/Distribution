@@ -75,12 +75,13 @@ import typings.summernote.summernoteStrings.subscript
 import typings.summernote.summernoteStrings.superscript
 import typings.summernote.summernoteStrings.underline
 import typings.summernote.summernoteStrings.undo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def summernote(): JQuery = js.native
   def summernote(command: String): JQuery = js.native

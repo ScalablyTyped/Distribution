@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricDatum extends js.Object {
+trait MetricDatum extends StObject {
   
   /**
     * Array of numbers that is used along with the Values array. Each number in the Count array is the number of times the corresponding value in the Values array occurred during the period.  If you omit the Counts array, the default of 1 is used as the value for each count. If you include a Counts array, it must include the same amount of values as the Values array.
@@ -61,78 +62,66 @@ object MetricDatum {
   }
   
   @scala.inline
-  implicit class MetricDatumOps[Self <: MetricDatum] (val x: Self) extends AnyVal {
+  implicit class MetricDatumMutableBuilder[Self <: MetricDatum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCounts(value: Counts): Self = StObject.set(x, "Counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountsUndefined: Self = StObject.set(x, "Counts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountsVarargs(value: DatapointValue*): Self = StObject.set(x, "Counts", js.Array(value :_*))
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountsVarargs(value: DatapointValue*): Self = this.set("Counts", js.Array(value :_*))
+    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
     @scala.inline
-    def setCounts(value: Counts): Self = this.set("Counts", value.asInstanceOf[js.Any])
+    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
     @scala.inline
-    def deleteCounts: Self = this.set("Counts", js.undefined)
+    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    def setStatisticValues(value: StatisticSet): Self = StObject.set(x, "StatisticValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: Dimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    def setStatisticValuesUndefined: Self = StObject.set(x, "StatisticValues", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    def setStorageResolution(value: StorageResolution): Self = StObject.set(x, "StorageResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatisticValues(value: StatisticSet): Self = this.set("StatisticValues", value.asInstanceOf[js.Any])
+    def setStorageResolutionUndefined: Self = StObject.set(x, "StorageResolution", js.undefined)
     
     @scala.inline
-    def deleteStatisticValues: Self = this.set("StatisticValues", js.undefined)
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageResolution(value: StorageResolution): Self = this.set("StorageResolution", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
     @scala.inline
-    def deleteStorageResolution: Self = this.set("StorageResolution", js.undefined)
+    def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
     
     @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setValue(value: DatapointValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: StandardUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     
     @scala.inline
-    def deleteUnit: Self = this.set("Unit", js.undefined)
+    def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: DatapointValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: DatapointValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: Values): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: DatapointValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

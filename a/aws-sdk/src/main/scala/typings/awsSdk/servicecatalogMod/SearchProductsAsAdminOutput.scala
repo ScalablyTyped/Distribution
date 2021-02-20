@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchProductsAsAdminOutput extends js.Object {
+trait SearchProductsAsAdminOutput extends StObject {
   
   /**
     * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
@@ -26,33 +27,21 @@ object SearchProductsAsAdminOutput {
   }
   
   @scala.inline
-  implicit class SearchProductsAsAdminOutputOps[Self <: SearchProductsAsAdminOutput] (val x: Self) extends AnyVal {
+  implicit class SearchProductsAsAdminOutputMutableBuilder[Self <: SearchProductsAsAdminOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductViewDetails(value: ProductViewDetails): Self = StObject.set(x, "ProductViewDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    def setProductViewDetailsUndefined: Self = StObject.set(x, "ProductViewDetails", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
-    
-    @scala.inline
-    def setProductViewDetailsVarargs(value: ProductViewDetail*): Self = this.set("ProductViewDetails", js.Array(value :_*))
-    
-    @scala.inline
-    def setProductViewDetails(value: ProductViewDetails): Self = this.set("ProductViewDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductViewDetails: Self = this.set("ProductViewDetails", js.undefined)
+    def setProductViewDetailsVarargs(value: ProductViewDetail*): Self = StObject.set(x, "ProductViewDetails", js.Array(value :_*))
   }
 }

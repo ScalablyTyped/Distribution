@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeActivitiesResponse extends js.Object {
+trait DescribeActivitiesResponse extends StObject {
   
   /**
     * The marker for the next set of results.
@@ -26,33 +27,21 @@ object DescribeActivitiesResponse {
   }
   
   @scala.inline
-  implicit class DescribeActivitiesResponseOps[Self <: DescribeActivitiesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeActivitiesResponseMutableBuilder[Self <: DescribeActivitiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserActivities(value: UserActivities): Self = StObject.set(x, "UserActivities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: MarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setUserActivitiesUndefined: Self = StObject.set(x, "UserActivities", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setUserActivitiesVarargs(value: Activity*): Self = this.set("UserActivities", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserActivities(value: UserActivities): Self = this.set("UserActivities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserActivities: Self = this.set("UserActivities", js.undefined)
+    def setUserActivitiesVarargs(value: Activity*): Self = StObject.set(x, "UserActivities", js.Array(value :_*))
   }
 }

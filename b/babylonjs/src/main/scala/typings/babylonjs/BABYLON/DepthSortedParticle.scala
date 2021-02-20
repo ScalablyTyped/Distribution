@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DepthSortedParticle extends js.Object {
+trait DepthSortedParticle extends StObject {
   
   /**
     * Particle index
@@ -41,33 +42,21 @@ object DepthSortedParticle {
   }
   
   @scala.inline
-  implicit class DepthSortedParticleOps[Self <: DepthSortedParticle] (val x: Self) extends AnyVal {
+  implicit class DepthSortedParticleMutableBuilder[Self <: DepthSortedParticle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInd(value: Double): Self = StObject.set(x, "ind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndicesLength(value: Double): Self = StObject.set(x, "indicesLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdx(value: Double): Self = this.set("idx", value.asInstanceOf[js.Any])
+    def setMaterialIndex(value: Double): Self = StObject.set(x, "materialIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInd(value: Double): Self = this.set("ind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndicesLength(value: Double): Self = this.set("indicesLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaterialIndex(value: Double): Self = this.set("materialIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSqDistance(value: Double): Self = this.set("sqDistance", value.asInstanceOf[js.Any])
+    def setSqDistance(value: Double): Self = StObject.set(x, "sqDistance", value.asInstanceOf[js.Any])
   }
 }

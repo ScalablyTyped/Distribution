@@ -1,11 +1,12 @@
 package typings.googleapis.iamcredentialsV1Mod.iamcredentialsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSignJwtResponse extends js.Object {
+trait SchemaSignJwtResponse extends StObject {
   
   /**
     * The ID of the key used to sign the JWT.
@@ -26,30 +27,18 @@ object SchemaSignJwtResponse {
   }
   
   @scala.inline
-  implicit class SchemaSignJwtResponseOps[Self <: SchemaSignJwtResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaSignJwtResponseMutableBuilder[Self <: SchemaSignJwtResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignedJwt(value: String): Self = StObject.set(x, "signedJwt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: String): Self = this.set("keyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyId: Self = this.set("keyId", js.undefined)
-    
-    @scala.inline
-    def setSignedJwt(value: String): Self = this.set("signedJwt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignedJwt: Self = this.set("signedJwt", js.undefined)
+    def setSignedJwtUndefined: Self = StObject.set(x, "signedJwt", js.undefined)
   }
 }

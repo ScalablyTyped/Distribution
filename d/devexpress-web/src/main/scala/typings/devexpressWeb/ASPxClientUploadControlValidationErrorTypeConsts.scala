@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Declares client constants containing codes of validation errors that can occur while selecting files for uploading.
   */
 @js.native
-trait ASPxClientUploadControlValidationErrorTypeConsts extends js.Object
+trait ASPxClientUploadControlValidationErrorTypeConsts extends StObject

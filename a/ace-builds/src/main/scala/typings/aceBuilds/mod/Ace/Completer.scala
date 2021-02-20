@@ -1,11 +1,12 @@
 package typings.aceBuilds.mod.Ace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Completer extends js.Object {
+trait Completer extends StObject {
   
   def getCompletions(editor: Editor, session: EditSession, position: Point, prefix: String, callback: CompleterCallback): Unit = js.native
 }
@@ -18,21 +19,9 @@ object Completer {
   }
   
   @scala.inline
-  implicit class CompleterOps[Self <: Completer] (val x: Self) extends AnyVal {
+  implicit class CompleterMutableBuilder[Self <: Completer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetCompletions(value: (Editor, EditSession, Point, String, CompleterCallback) => Unit): Self = this.set("getCompletions", js.Any.fromFunction5(value))
+    def setGetCompletions(value: (Editor, EditSession, Point, String, CompleterCallback) => Unit): Self = StObject.set(x, "getCompletions", js.Any.fromFunction5(value))
   }
 }

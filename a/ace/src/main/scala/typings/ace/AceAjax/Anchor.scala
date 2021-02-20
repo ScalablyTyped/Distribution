@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Anchor extends js.Object {
+trait Anchor extends StObject {
   
   /**
     * When called, the `'change'` event listener is removed.
@@ -58,36 +59,24 @@ object Anchor {
   }
   
   @scala.inline
-  implicit class AnchorOps[Self <: Anchor] (val x: Self) extends AnyVal {
+  implicit class AnchorMutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDocument(value: () => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPosition(value: () => Position): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDetach(value: () => Unit): Self = this.set("detach", js.Any.fromFunction0(value))
+    def setOn(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDocument(value: () => Document): Self = this.set("getDocument", js.Any.fromFunction0(value))
+    def setOnChange(value: js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPosition(value: () => Position): Self = this.set("getPosition", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOn(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOnChange(value: js.Any => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPosition(value: (Double, Double, Boolean) => Unit): Self = this.set("setPosition", js.Any.fromFunction3(value))
+    def setSetPosition(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFActionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IActionDefinition extends js.Object {
+trait IActionDefinition extends StObject {
   
   var ActionCreateSeparateAssignment: IActionCreateAssignment = js.native
   
@@ -30,30 +31,18 @@ object IActionDefinition {
   }
   
   @scala.inline
-  implicit class IActionDefinitionOps[Self <: IActionDefinition] (val x: Self) extends AnyVal {
+  implicit class IActionDefinitionMutableBuilder[Self <: IActionDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionCreateSeparateAssignment(value: IActionCreateAssignment): Self = StObject.set(x, "ActionCreateSeparateAssignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionType(value: MFActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActionCreateSeparateAssignment(value: IActionCreateAssignment): Self = this.set("ActionCreateSeparateAssignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActionType(value: MFActionType): Self = this.set("ActionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClear(value: () => Unit): Self = this.set("Clear", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setClone(value: () => IActionDefinition): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setClone(value: () => IActionDefinition): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
   }
 }

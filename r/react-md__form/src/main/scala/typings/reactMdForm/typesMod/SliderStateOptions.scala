@@ -1,5 +1,6 @@
 package typings.reactMdForm.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,42 +40,30 @@ object SliderStateOptions {
   }
   
   @scala.inline
-  implicit class SliderStateOptionsOps[Self <: SliderStateOptions] (val x: Self) extends AnyVal {
+  implicit class SliderStateOptionsMutableBuilder[Self <: SliderStateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDense(value: Boolean): Self = this.set("dense", value.asInstanceOf[js.Any])
+    def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
     
     @scala.inline
-    def deleteDense: Self = this.set("dense", js.undefined)
+    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableTransition(value: Boolean): Self = this.set("disableTransition", value.asInstanceOf[js.Any])
+    def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
     
     @scala.inline
-    def deleteDisableTransition: Self = this.set("disableTransition", js.undefined)
+    def setGetValueText(value: /* value */ Double => String): Self = StObject.set(x, "getValueText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragging(value: Boolean): Self = this.set("dragging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDragging: Self = this.set("dragging", js.undefined)
-    
-    @scala.inline
-    def setGetValueText(value: /* value */ Double => String): Self = this.set("getValueText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetValueText: Self = this.set("getValueText", js.undefined)
+    def setGetValueTextUndefined: Self = StObject.set(x, "getValueText", js.undefined)
   }
 }

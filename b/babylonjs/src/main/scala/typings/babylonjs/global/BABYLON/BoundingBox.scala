@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.DeepImmutable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,7 @@ class BoundingBox protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.BoundingBox")
-@js.native
-object BoundingBox extends js.Object {
+object BoundingBox {
   
   /**
     * Tests if two bounding boxes are intersections
@@ -36,6 +35,8 @@ object BoundingBox extends js.Object {
     * @param box1 defines the second box to test
     * @returns true if there is an intersection
     */
+  @JSGlobal("BABYLON.BoundingBox.Intersects")
+  @js.native
   def Intersects(
     box0: DeepImmutable[typings.babylonjs.BABYLON.BoundingBox],
     box1: DeepImmutable[typings.babylonjs.BABYLON.BoundingBox]
@@ -49,6 +50,8 @@ object BoundingBox extends js.Object {
     * @param sphereRadius defines the sphere radius
     * @returns true if there is an intersection
     */
+  @JSGlobal("BABYLON.BoundingBox.IntersectsSphere")
+  @js.native
   def IntersectsSphere(
     minPoint: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     maxPoint: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
@@ -62,6 +65,8 @@ object BoundingBox extends js.Object {
     * @param frustumPlanes defines the frustum planes to test
     * @return true if there is an inclusion
     */
+  @JSGlobal("BABYLON.BoundingBox.IsCompletelyInFrustum")
+  @js.native
   def IsCompletelyInFrustum(
     boundingVectors: js.Array[DeepImmutable[typings.babylonjs.BABYLON.Vector3]],
     frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.BABYLON.Plane]]
@@ -73,10 +78,14 @@ object BoundingBox extends js.Object {
     * @param frustumPlanes defines the frustum planes to test
     * @return true if there is an intersection
     */
+  @JSGlobal("BABYLON.BoundingBox.IsInFrustum")
+  @js.native
   def IsInFrustum(
     boundingVectors: js.Array[DeepImmutable[typings.babylonjs.BABYLON.Vector3]],
     frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.BABYLON.Plane]]
   ): Boolean = js.native
   
+  @JSGlobal("BABYLON.BoundingBox.TmpVector3")
+  @js.native
   val TmpVector3: js.Any = js.native
 }

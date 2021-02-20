@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackResourceDriftInformationSummary extends js.Object {
+trait StackResourceDriftInformationSummary extends StObject {
   
   /**
     * When AWS CloudFormation last checked if the resource had drifted from its expected configuration.
@@ -26,27 +27,15 @@ object StackResourceDriftInformationSummary {
   }
   
   @scala.inline
-  implicit class StackResourceDriftInformationSummaryOps[Self <: StackResourceDriftInformationSummary] (val x: Self) extends AnyVal {
+  implicit class StackResourceDriftInformationSummaryMutableBuilder[Self <: StackResourceDriftInformationSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastCheckTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastCheckTimestampUndefined: Self = StObject.set(x, "LastCheckTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStackResourceDriftStatus(value: StackResourceDriftStatus): Self = this.set("StackResourceDriftStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastCheckTimestamp(value: Timestamp): Self = this.set("LastCheckTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastCheckTimestamp: Self = this.set("LastCheckTimestamp", js.undefined)
+    def setStackResourceDriftStatus(value: StackResourceDriftStatus): Self = StObject.set(x, "StackResourceDriftStatus", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCertificatesRequest extends js.Object {
+trait GetCertificatesRequest extends StObject {
   
   /**
     * The name for the certificate for which to return information. When omitted, the response includes all of your certificates in the AWS Region where the request is made.
@@ -31,39 +32,27 @@ object GetCertificatesRequest {
   }
   
   @scala.inline
-  implicit class GetCertificatesRequestOps[Self <: GetCertificatesRequest] (val x: Self) extends AnyVal {
+  implicit class GetCertificatesRequestMutableBuilder[Self <: GetCertificatesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateName(value: CertificateName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateNameUndefined: Self = StObject.set(x, "certificateName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateStatuses(value: CertificateStatusList): Self = StObject.set(x, "certificateStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateName(value: CertificateName): Self = this.set("certificateName", value.asInstanceOf[js.Any])
+    def setCertificateStatusesUndefined: Self = StObject.set(x, "certificateStatuses", js.undefined)
     
     @scala.inline
-    def deleteCertificateName: Self = this.set("certificateName", js.undefined)
+    def setCertificateStatusesVarargs(value: CertificateStatus*): Self = StObject.set(x, "certificateStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setCertificateStatusesVarargs(value: CertificateStatus*): Self = this.set("certificateStatuses", js.Array(value :_*))
+    def setIncludeCertificateDetails(value: IncludeCertificateDetails): Self = StObject.set(x, "includeCertificateDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateStatuses(value: CertificateStatusList): Self = this.set("certificateStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateStatuses: Self = this.set("certificateStatuses", js.undefined)
-    
-    @scala.inline
-    def setIncludeCertificateDetails(value: IncludeCertificateDetails): Self = this.set("includeCertificateDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeCertificateDetails: Self = this.set("includeCertificateDetails", js.undefined)
+    def setIncludeCertificateDetailsUndefined: Self = StObject.set(x, "includeCertificateDetails", js.undefined)
   }
 }

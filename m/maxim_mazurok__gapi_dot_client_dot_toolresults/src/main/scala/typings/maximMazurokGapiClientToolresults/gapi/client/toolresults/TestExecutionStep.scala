@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestExecutionStep extends js.Object {
+trait TestExecutionStep extends StObject {
   
   /**
     * Issues observed during the test execution. For example, if the mobile app under test crashed during the test, the error message and the stack trace content can be recorded here to
@@ -35,48 +36,36 @@ object TestExecutionStep {
   }
   
   @scala.inline
-  implicit class TestExecutionStepOps[Self <: TestExecutionStep] (val x: Self) extends AnyVal {
+  implicit class TestExecutionStepMutableBuilder[Self <: TestExecutionStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTestIssues(value: js.Array[TestIssue]): Self = StObject.set(x, "testIssues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTestIssuesUndefined: Self = StObject.set(x, "testIssues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTestIssuesVarargs(value: TestIssue*): Self = StObject.set(x, "testIssues", js.Array(value :_*))
     
     @scala.inline
-    def setTestIssuesVarargs(value: TestIssue*): Self = this.set("testIssues", js.Array(value :_*))
+    def setTestSuiteOverviews(value: js.Array[TestSuiteOverview]): Self = StObject.set(x, "testSuiteOverviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestIssues(value: js.Array[TestIssue]): Self = this.set("testIssues", value.asInstanceOf[js.Any])
+    def setTestSuiteOverviewsUndefined: Self = StObject.set(x, "testSuiteOverviews", js.undefined)
     
     @scala.inline
-    def deleteTestIssues: Self = this.set("testIssues", js.undefined)
+    def setTestSuiteOverviewsVarargs(value: TestSuiteOverview*): Self = StObject.set(x, "testSuiteOverviews", js.Array(value :_*))
     
     @scala.inline
-    def setTestSuiteOverviewsVarargs(value: TestSuiteOverview*): Self = this.set("testSuiteOverviews", js.Array(value :_*))
+    def setTestTiming(value: TestTiming): Self = StObject.set(x, "testTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestSuiteOverviews(value: js.Array[TestSuiteOverview]): Self = this.set("testSuiteOverviews", value.asInstanceOf[js.Any])
+    def setTestTimingUndefined: Self = StObject.set(x, "testTiming", js.undefined)
     
     @scala.inline
-    def deleteTestSuiteOverviews: Self = this.set("testSuiteOverviews", js.undefined)
+    def setToolExecution(value: ToolExecution): Self = StObject.set(x, "toolExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestTiming(value: TestTiming): Self = this.set("testTiming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestTiming: Self = this.set("testTiming", js.undefined)
-    
-    @scala.inline
-    def setToolExecution(value: ToolExecution): Self = this.set("toolExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolExecution: Self = this.set("toolExecution", js.undefined)
+    def setToolExecutionUndefined: Self = StObject.set(x, "toolExecution", js.undefined)
   }
 }

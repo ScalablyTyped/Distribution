@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,33 +76,21 @@ object XAccessibleAction {
   }
   
   @scala.inline
-  implicit class XAccessibleActionOps[Self <: XAccessibleAction] (val x: Self) extends AnyVal {
+  implicit class XAccessibleActionMutableBuilder[Self <: XAccessibleAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleActionCount(value: Double): Self = StObject.set(x, "AccessibleActionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoAccessibleAction(value: Double => Boolean): Self = StObject.set(x, "doAccessibleAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAccessibleActionCount(value: () => Double): Self = StObject.set(x, "getAccessibleActionCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccessibleActionCount(value: Double): Self = this.set("AccessibleActionCount", value.asInstanceOf[js.Any])
+    def setGetAccessibleActionDescription(value: Double => String): Self = StObject.set(x, "getAccessibleActionDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDoAccessibleAction(value: Double => Boolean): Self = this.set("doAccessibleAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetAccessibleActionCount(value: () => Double): Self = this.set("getAccessibleActionCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetAccessibleActionDescription(value: Double => String): Self = this.set("getAccessibleActionDescription", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetAccessibleActionKeyBinding(value: Double => XAccessibleKeyBinding): Self = this.set("getAccessibleActionKeyBinding", js.Any.fromFunction1(value))
+    def setGetAccessibleActionKeyBinding(value: Double => XAccessibleKeyBinding): Self = StObject.set(x, "getAccessibleActionKeyBinding", js.Any.fromFunction1(value))
   }
 }

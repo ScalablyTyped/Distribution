@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsDynamoDbTableAttributeDefinition extends js.Object {
+trait AwsDynamoDbTableAttributeDefinition extends StObject {
   
   /**
     * The name of the attribute.
@@ -26,30 +27,18 @@ object AwsDynamoDbTableAttributeDefinition {
   }
   
   @scala.inline
-  implicit class AwsDynamoDbTableAttributeDefinitionOps[Self <: AwsDynamoDbTableAttributeDefinition] (val x: Self) extends AnyVal {
+  implicit class AwsDynamoDbTableAttributeDefinitionMutableBuilder[Self <: AwsDynamoDbTableAttributeDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: NonEmptyString): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeType(value: NonEmptyString): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: NonEmptyString): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
-    
-    @scala.inline
-    def setAttributeType(value: NonEmptyString): Self = this.set("AttributeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeType: Self = this.set("AttributeType", js.undefined)
+    def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
   }
 }

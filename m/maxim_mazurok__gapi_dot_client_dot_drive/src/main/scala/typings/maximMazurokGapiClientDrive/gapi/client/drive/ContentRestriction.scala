@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentRestriction extends js.Object {
+trait ContentRestriction extends StObject {
   
   /**
     * Whether the content of the file is read-only. If a file is read-only, a new revision of the file may not be added, comments may not be added or modified, and the title of the file
@@ -34,48 +35,36 @@ object ContentRestriction {
   }
   
   @scala.inline
-  implicit class ContentRestrictionOps[Self <: ContentRestriction] (val x: Self) extends AnyVal {
+  implicit class ContentRestrictionMutableBuilder[Self <: ContentRestriction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setRestrictingUser(value: User): Self = StObject.set(x, "restrictingUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setRestrictingUserUndefined: Self = StObject.set(x, "restrictingUser", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setRestrictionTime(value: String): Self = StObject.set(x, "restrictionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictingUser(value: User): Self = this.set("restrictingUser", value.asInstanceOf[js.Any])
+    def setRestrictionTimeUndefined: Self = StObject.set(x, "restrictionTime", js.undefined)
     
     @scala.inline
-    def deleteRestrictingUser: Self = this.set("restrictingUser", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictionTime(value: String): Self = this.set("restrictionTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestrictionTime: Self = this.set("restrictionTime", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

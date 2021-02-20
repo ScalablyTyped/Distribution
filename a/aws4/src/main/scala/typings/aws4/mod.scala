@@ -1,20 +1,15 @@
 package typings.aws4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws4", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def sign(): js.Any = js.native
-  def sign(options: js.UndefOr[scala.Nothing], credentials: js.Any): js.Any = js.native
-  def sign(options: js.Any): js.Any = js.native
-  def sign(options: js.Any, credentials: js.Any): js.Any = js.native
-  
+  @JSImport("aws4", "RequestSigner")
   @js.native
-  class RequestSigner () extends js.Object {
+  class RequestSigner () extends StObject {
     def this(request: js.Any) = this()
     def this(request: js.UndefOr[scala.Nothing], credentials: js.Any) = this()
     def this(request: js.Any, credentials: js.Any) = this()
@@ -64,4 +59,17 @@ object mod extends js.Object {
     
     def stringToSign(): String = js.native
   }
+  
+  @JSImport("aws4", "sign")
+  @js.native
+  def sign(): js.Any = js.native
+  @JSImport("aws4", "sign")
+  @js.native
+  def sign(options: js.UndefOr[scala.Nothing], credentials: js.Any): js.Any = js.native
+  @JSImport("aws4", "sign")
+  @js.native
+  def sign(options: js.Any): js.Any = js.native
+  @JSImport("aws4", "sign")
+  @js.native
+  def sign(options: js.Any, credentials: js.Any): js.Any = js.native
 }

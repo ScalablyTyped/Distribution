@@ -3,13 +3,14 @@ package typings.babylonjs.anon
 import typings.babylonjs.BABYLON.BaseTexture
 import typings.babylonjs.BABYLON.Color3
 import typings.babylonjs.BABYLON.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<babylonjs.BABYLON.IEnvironmentHelperOptions> */
 @js.native
-trait PartialIEnvironmentHelperBackgroundYRotation extends js.Object {
+trait PartialIEnvironmentHelperBackgroundYRotation extends StObject {
   
   var backgroundYRotation: js.UndefOr[Double] = js.native
   
@@ -74,180 +75,168 @@ object PartialIEnvironmentHelperBackgroundYRotation {
   }
   
   @scala.inline
-  implicit class PartialIEnvironmentHelperBackgroundYRotationOps[Self <: PartialIEnvironmentHelperBackgroundYRotation] (val x: Self) extends AnyVal {
+  implicit class PartialIEnvironmentHelperBackgroundYRotationMutableBuilder[Self <: PartialIEnvironmentHelperBackgroundYRotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundYRotation(value: Double): Self = StObject.set(x, "backgroundYRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundYRotationUndefined: Self = StObject.set(x, "backgroundYRotation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCameraContrast(value: Double): Self = StObject.set(x, "cameraContrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundYRotation(value: Double): Self = this.set("backgroundYRotation", value.asInstanceOf[js.Any])
+    def setCameraContrastUndefined: Self = StObject.set(x, "cameraContrast", js.undefined)
     
     @scala.inline
-    def deleteBackgroundYRotation: Self = this.set("backgroundYRotation", js.undefined)
+    def setCameraExposure(value: Double): Self = StObject.set(x, "cameraExposure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraContrast(value: Double): Self = this.set("cameraContrast", value.asInstanceOf[js.Any])
+    def setCameraExposureUndefined: Self = StObject.set(x, "cameraExposure", js.undefined)
     
     @scala.inline
-    def deleteCameraContrast: Self = this.set("cameraContrast", js.undefined)
+    def setCreateGround(value: Boolean): Self = StObject.set(x, "createGround", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraExposure(value: Double): Self = this.set("cameraExposure", value.asInstanceOf[js.Any])
+    def setCreateGroundUndefined: Self = StObject.set(x, "createGround", js.undefined)
     
     @scala.inline
-    def deleteCameraExposure: Self = this.set("cameraExposure", js.undefined)
+    def setCreateSkybox(value: Boolean): Self = StObject.set(x, "createSkybox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateGround(value: Boolean): Self = this.set("createGround", value.asInstanceOf[js.Any])
+    def setCreateSkyboxUndefined: Self = StObject.set(x, "createSkybox", js.undefined)
     
     @scala.inline
-    def deleteCreateGround: Self = this.set("createGround", js.undefined)
+    def setEnableGroundMirror(value: Boolean): Self = StObject.set(x, "enableGroundMirror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSkybox(value: Boolean): Self = this.set("createSkybox", value.asInstanceOf[js.Any])
+    def setEnableGroundMirrorUndefined: Self = StObject.set(x, "enableGroundMirror", js.undefined)
     
     @scala.inline
-    def deleteCreateSkybox: Self = this.set("createSkybox", js.undefined)
+    def setEnableGroundShadow(value: Boolean): Self = StObject.set(x, "enableGroundShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableGroundMirror(value: Boolean): Self = this.set("enableGroundMirror", value.asInstanceOf[js.Any])
+    def setEnableGroundShadowUndefined: Self = StObject.set(x, "enableGroundShadow", js.undefined)
     
     @scala.inline
-    def deleteEnableGroundMirror: Self = this.set("enableGroundMirror", js.undefined)
+    def setEnvironmentTexture(value: String | BaseTexture): Self = StObject.set(x, "environmentTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableGroundShadow(value: Boolean): Self = this.set("enableGroundShadow", value.asInstanceOf[js.Any])
+    def setEnvironmentTextureUndefined: Self = StObject.set(x, "environmentTexture", js.undefined)
     
     @scala.inline
-    def deleteEnableGroundShadow: Self = this.set("enableGroundShadow", js.undefined)
+    def setGroundColor(value: Color3): Self = StObject.set(x, "groundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentTexture(value: String | BaseTexture): Self = this.set("environmentTexture", value.asInstanceOf[js.Any])
+    def setGroundColorUndefined: Self = StObject.set(x, "groundColor", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentTexture: Self = this.set("environmentTexture", js.undefined)
+    def setGroundMirrorAmount(value: Double): Self = StObject.set(x, "groundMirrorAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundColor(value: Color3): Self = this.set("groundColor", value.asInstanceOf[js.Any])
+    def setGroundMirrorAmountUndefined: Self = StObject.set(x, "groundMirrorAmount", js.undefined)
     
     @scala.inline
-    def deleteGroundColor: Self = this.set("groundColor", js.undefined)
+    def setGroundMirrorBlurKernel(value: Double): Self = StObject.set(x, "groundMirrorBlurKernel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundMirrorAmount(value: Double): Self = this.set("groundMirrorAmount", value.asInstanceOf[js.Any])
+    def setGroundMirrorBlurKernelUndefined: Self = StObject.set(x, "groundMirrorBlurKernel", js.undefined)
     
     @scala.inline
-    def deleteGroundMirrorAmount: Self = this.set("groundMirrorAmount", js.undefined)
+    def setGroundMirrorFallOffDistance(value: Double): Self = StObject.set(x, "groundMirrorFallOffDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundMirrorBlurKernel(value: Double): Self = this.set("groundMirrorBlurKernel", value.asInstanceOf[js.Any])
+    def setGroundMirrorFallOffDistanceUndefined: Self = StObject.set(x, "groundMirrorFallOffDistance", js.undefined)
     
     @scala.inline
-    def deleteGroundMirrorBlurKernel: Self = this.set("groundMirrorBlurKernel", js.undefined)
+    def setGroundMirrorFresnelWeight(value: Double): Self = StObject.set(x, "groundMirrorFresnelWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundMirrorFallOffDistance(value: Double): Self = this.set("groundMirrorFallOffDistance", value.asInstanceOf[js.Any])
+    def setGroundMirrorFresnelWeightUndefined: Self = StObject.set(x, "groundMirrorFresnelWeight", js.undefined)
     
     @scala.inline
-    def deleteGroundMirrorFallOffDistance: Self = this.set("groundMirrorFallOffDistance", js.undefined)
+    def setGroundMirrorSizeRatio(value: Double): Self = StObject.set(x, "groundMirrorSizeRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundMirrorFresnelWeight(value: Double): Self = this.set("groundMirrorFresnelWeight", value.asInstanceOf[js.Any])
+    def setGroundMirrorSizeRatioUndefined: Self = StObject.set(x, "groundMirrorSizeRatio", js.undefined)
     
     @scala.inline
-    def deleteGroundMirrorFresnelWeight: Self = this.set("groundMirrorFresnelWeight", js.undefined)
+    def setGroundMirrorTextureType(value: Double): Self = StObject.set(x, "groundMirrorTextureType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundMirrorSizeRatio(value: Double): Self = this.set("groundMirrorSizeRatio", value.asInstanceOf[js.Any])
+    def setGroundMirrorTextureTypeUndefined: Self = StObject.set(x, "groundMirrorTextureType", js.undefined)
     
     @scala.inline
-    def deleteGroundMirrorSizeRatio: Self = this.set("groundMirrorSizeRatio", js.undefined)
+    def setGroundOpacity(value: Double): Self = StObject.set(x, "groundOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundMirrorTextureType(value: Double): Self = this.set("groundMirrorTextureType", value.asInstanceOf[js.Any])
+    def setGroundOpacityUndefined: Self = StObject.set(x, "groundOpacity", js.undefined)
     
     @scala.inline
-    def deleteGroundMirrorTextureType: Self = this.set("groundMirrorTextureType", js.undefined)
+    def setGroundShadowLevel(value: Double): Self = StObject.set(x, "groundShadowLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundOpacity(value: Double): Self = this.set("groundOpacity", value.asInstanceOf[js.Any])
+    def setGroundShadowLevelUndefined: Self = StObject.set(x, "groundShadowLevel", js.undefined)
     
     @scala.inline
-    def deleteGroundOpacity: Self = this.set("groundOpacity", js.undefined)
+    def setGroundSize(value: Double): Self = StObject.set(x, "groundSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundShadowLevel(value: Double): Self = this.set("groundShadowLevel", value.asInstanceOf[js.Any])
+    def setGroundSizeUndefined: Self = StObject.set(x, "groundSize", js.undefined)
     
     @scala.inline
-    def deleteGroundShadowLevel: Self = this.set("groundShadowLevel", js.undefined)
+    def setGroundTexture(value: String | BaseTexture): Self = StObject.set(x, "groundTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundSize(value: Double): Self = this.set("groundSize", value.asInstanceOf[js.Any])
+    def setGroundTextureUndefined: Self = StObject.set(x, "groundTexture", js.undefined)
     
     @scala.inline
-    def deleteGroundSize: Self = this.set("groundSize", js.undefined)
+    def setGroundYBias(value: Double): Self = StObject.set(x, "groundYBias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundTexture(value: String | BaseTexture): Self = this.set("groundTexture", value.asInstanceOf[js.Any])
+    def setGroundYBiasUndefined: Self = StObject.set(x, "groundYBias", js.undefined)
     
     @scala.inline
-    def deleteGroundTexture: Self = this.set("groundTexture", js.undefined)
+    def setRootPosition(value: Vector3): Self = StObject.set(x, "rootPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundYBias(value: Double): Self = this.set("groundYBias", value.asInstanceOf[js.Any])
+    def setRootPositionUndefined: Self = StObject.set(x, "rootPosition", js.undefined)
     
     @scala.inline
-    def deleteGroundYBias: Self = this.set("groundYBias", js.undefined)
+    def setSetupImageProcessing(value: Boolean): Self = StObject.set(x, "setupImageProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootPosition(value: Vector3): Self = this.set("rootPosition", value.asInstanceOf[js.Any])
+    def setSetupImageProcessingUndefined: Self = StObject.set(x, "setupImageProcessing", js.undefined)
     
     @scala.inline
-    def deleteRootPosition: Self = this.set("rootPosition", js.undefined)
+    def setSizeAuto(value: Boolean): Self = StObject.set(x, "sizeAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetupImageProcessing(value: Boolean): Self = this.set("setupImageProcessing", value.asInstanceOf[js.Any])
+    def setSizeAutoUndefined: Self = StObject.set(x, "sizeAuto", js.undefined)
     
     @scala.inline
-    def deleteSetupImageProcessing: Self = this.set("setupImageProcessing", js.undefined)
+    def setSkyboxColor(value: Color3): Self = StObject.set(x, "skyboxColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeAuto(value: Boolean): Self = this.set("sizeAuto", value.asInstanceOf[js.Any])
+    def setSkyboxColorUndefined: Self = StObject.set(x, "skyboxColor", js.undefined)
     
     @scala.inline
-    def deleteSizeAuto: Self = this.set("sizeAuto", js.undefined)
+    def setSkyboxSize(value: Double): Self = StObject.set(x, "skyboxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkyboxColor(value: Color3): Self = this.set("skyboxColor", value.asInstanceOf[js.Any])
+    def setSkyboxSizeUndefined: Self = StObject.set(x, "skyboxSize", js.undefined)
     
     @scala.inline
-    def deleteSkyboxColor: Self = this.set("skyboxColor", js.undefined)
+    def setSkyboxTexture(value: String | BaseTexture): Self = StObject.set(x, "skyboxTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkyboxSize(value: Double): Self = this.set("skyboxSize", value.asInstanceOf[js.Any])
+    def setSkyboxTextureUndefined: Self = StObject.set(x, "skyboxTexture", js.undefined)
     
     @scala.inline
-    def deleteSkyboxSize: Self = this.set("skyboxSize", js.undefined)
+    def setToneMappingEnabled(value: Boolean): Self = StObject.set(x, "toneMappingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkyboxTexture(value: String | BaseTexture): Self = this.set("skyboxTexture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkyboxTexture: Self = this.set("skyboxTexture", js.undefined)
-    
-    @scala.inline
-    def setToneMappingEnabled(value: Boolean): Self = this.set("toneMappingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToneMappingEnabled: Self = this.set("toneMappingEnabled", js.undefined)
+    def setToneMappingEnabledUndefined: Self = StObject.set(x, "toneMappingEnabled", js.undefined)
   }
 }

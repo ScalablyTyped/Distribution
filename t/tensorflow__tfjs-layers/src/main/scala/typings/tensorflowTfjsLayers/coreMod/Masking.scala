@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsLayers.coreMod
 
 import typings.tensorflowTfjsLayers.topologyMod.Layer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +14,16 @@ class Masking () extends Layer {
   var maskValue: Double = js.native
 }
 /* static members */
-@JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Masking")
-@js.native
-object Masking extends js.Object {
+object Masking {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Masking")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @nocollapse */
-  var className: String = js.native
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Masking.className")
+  @js.native
+  def className: String = js.native
+  @scala.inline
+  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

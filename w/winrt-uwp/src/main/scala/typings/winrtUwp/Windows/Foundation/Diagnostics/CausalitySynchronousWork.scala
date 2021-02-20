@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CausalitySynchronousWork extends js.Object
+sealed trait CausalitySynchronousWork extends StObject
 /** Indicates the relationship between a work item and an asynchronous operation. */
 @JSGlobal("Windows.Foundation.Diagnostics.CausalitySynchronousWork")
 @js.native
-object CausalitySynchronousWork extends js.Object {
+object CausalitySynchronousWork extends StObject {
   
   /** The work item being scheduled is running due to the completion of the asynchronous operation. */
   @js.native

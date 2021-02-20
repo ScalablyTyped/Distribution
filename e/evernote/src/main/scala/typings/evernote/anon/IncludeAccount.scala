@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncludeAccount extends js.Object {
+trait IncludeAccount extends StObject {
   
   var includeAccount: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object IncludeAccount {
   }
   
   @scala.inline
-  implicit class IncludeAccountOps[Self <: IncludeAccount] (val x: Self) extends AnyVal {
+  implicit class IncludeAccountMutableBuilder[Self <: IncludeAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeAccount(value: Boolean): Self = StObject.set(x, "includeAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeAccountUndefined: Self = StObject.set(x, "includeAccount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeBusinessLinkedNotebooks(value: Boolean): Self = StObject.set(x, "includeBusinessLinkedNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAccount(value: Boolean): Self = this.set("includeAccount", value.asInstanceOf[js.Any])
+    def setIncludeBusinessLinkedNotebooksUndefined: Self = StObject.set(x, "includeBusinessLinkedNotebooks", js.undefined)
     
     @scala.inline
-    def deleteIncludeAccount: Self = this.set("includeAccount", js.undefined)
+    def setIncludePersonalLinkedNotebooks(value: Boolean): Self = StObject.set(x, "includePersonalLinkedNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeBusinessLinkedNotebooks(value: Boolean): Self = this.set("includeBusinessLinkedNotebooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeBusinessLinkedNotebooks: Self = this.set("includeBusinessLinkedNotebooks", js.undefined)
-    
-    @scala.inline
-    def setIncludePersonalLinkedNotebooks(value: Boolean): Self = this.set("includePersonalLinkedNotebooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludePersonalLinkedNotebooks: Self = this.set("includePersonalLinkedNotebooks", js.undefined)
+    def setIncludePersonalLinkedNotebooksUndefined: Self = StObject.set(x, "includePersonalLinkedNotebooks", js.undefined)
   }
 }

@@ -25,6 +25,7 @@ import typings.cadesplugin.CAdESCOM.CADESCOM_HASH_ALGORITHM
 import typings.cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE
 import typings.std.Error
 import typings.std.Iterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

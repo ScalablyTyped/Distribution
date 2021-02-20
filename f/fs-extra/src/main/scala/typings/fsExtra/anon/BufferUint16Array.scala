@@ -1,12 +1,13 @@
 package typings.fsExtra.anon
 
 import typings.std.Uint16Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BufferUint16Array extends js.Object {
+trait BufferUint16Array extends StObject {
   
   var buffer: Uint16Array = js.native
   
@@ -21,24 +22,12 @@ object BufferUint16Array {
   }
   
   @scala.inline
-  implicit class BufferUint16ArrayOps[Self <: BufferUint16Array] (val x: Self) extends AnyVal {
+  implicit class BufferUint16ArrayMutableBuilder[Self <: BufferUint16Array] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: Uint16Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBuffer(value: Uint16Array): Self = this.set("buffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBytesWritten(value: Double): Self = this.set("bytesWritten", value.asInstanceOf[js.Any])
+    def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ShadowSlot")
 @js.native
-class ShadowSlot () extends js.Object {
+class ShadowSlot () extends StObject {
   def this(anchor: js.Any) = this()
   def this(anchor: js.UndefOr[scala.Nothing], name: js.Any) = this()
   def this(anchor: js.Any, name: js.Any) = this()

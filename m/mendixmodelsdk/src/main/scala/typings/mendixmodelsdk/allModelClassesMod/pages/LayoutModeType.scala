@@ -1,19 +1,34 @@
 package typings.mendixmodelsdk.allModelClassesMod.pages
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutModeType")
 @js.native
-class LayoutModeType ()
-  extends typings.mendixmodelsdk.pagesMod.pages.LayoutModeType
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutModeType")
-@js.native
-object LayoutModeType extends js.Object {
+class LayoutModeType protected ()
+  extends typings.mendixmodelsdk.pagesMod.pages.LayoutModeType {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object LayoutModeType {
   
-  var Headline: typings.mendixmodelsdk.pagesMod.pages.LayoutModeType = js.native
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutModeType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Sidebar: typings.mendixmodelsdk.pagesMod.pages.LayoutModeType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutModeType.Headline")
+  @js.native
+  def Headline: typings.mendixmodelsdk.pagesMod.pages.LayoutModeType = js.native
+  @scala.inline
+  def Headline_=(x: typings.mendixmodelsdk.pagesMod.pages.LayoutModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Headline")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutModeType.Sidebar")
+  @js.native
+  def Sidebar: typings.mendixmodelsdk.pagesMod.pages.LayoutModeType = js.native
+  @scala.inline
+  def Sidebar_=(x: typings.mendixmodelsdk.pagesMod.pages.LayoutModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sidebar")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Discriminant extends js.Object {
+trait Discriminant extends StObject {
   
   var discriminant: js.UndefOr[String] = js.native
   
@@ -20,33 +21,21 @@ object Discriminant {
   }
   
   @scala.inline
-  implicit class DiscriminantOps[Self <: Discriminant] (val x: Self) extends AnyVal {
+  implicit class DiscriminantMutableBuilder[Self <: Discriminant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiscriminant(value: String): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiscriminantUndefined: Self = StObject.set(x, "discriminant", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMap(value: js.Array[Ref]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscriminant(value: String): Self = this.set("discriminant", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteDiscriminant: Self = this.set("discriminant", js.undefined)
-    
-    @scala.inline
-    def setMapVarargs(value: Ref*): Self = this.set("map", js.Array(value :_*))
-    
-    @scala.inline
-    def setMap(value: js.Array[Ref]): Self = this.set("map", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setMapVarargs(value: Ref*): Self = StObject.set(x, "map", js.Array(value :_*))
   }
 }

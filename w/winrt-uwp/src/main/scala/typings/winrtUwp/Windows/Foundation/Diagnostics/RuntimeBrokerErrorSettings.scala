@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents diagnostic error reporting settings. */
 @js.native
-trait RuntimeBrokerErrorSettings extends js.Object {
+trait RuntimeBrokerErrorSettings extends StObject {
   
   /**
     * Gets the type of error reporting for the error object.
@@ -29,24 +30,12 @@ object RuntimeBrokerErrorSettings {
   }
   
   @scala.inline
-  implicit class RuntimeBrokerErrorSettingsOps[Self <: RuntimeBrokerErrorSettings] (val x: Self) extends AnyVal {
+  implicit class RuntimeBrokerErrorSettingsMutableBuilder[Self <: RuntimeBrokerErrorSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetErrorOptions(value: () => ErrorOptions): Self = StObject.set(x, "getErrorOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetErrorOptions(value: () => ErrorOptions): Self = this.set("getErrorOptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetErrorOptions(value: ErrorOptions => Unit): Self = this.set("setErrorOptions", js.Any.fromFunction1(value))
+    def setSetErrorOptions(value: ErrorOptions => Unit): Self = StObject.set(x, "setErrorOptions", js.Any.fromFunction1(value))
   }
 }

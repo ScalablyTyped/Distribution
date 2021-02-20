@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildServer extends js.Object {
+trait BuildServer extends StObject {
   
   var agents: js.Array[BuildAgentReference] = js.native
   
@@ -54,57 +55,45 @@ object BuildServer {
   }
   
   @scala.inline
-  implicit class BuildServerOps[Self <: BuildServer] (val x: Self) extends AnyVal {
+  implicit class BuildServerMutableBuilder[Self <: BuildServer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgents(value: js.Array[BuildAgentReference]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentsVarargs(value: BuildAgentReference*): Self = StObject.set(x, "agents", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setController(value: XamlBuildControllerReference): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentsVarargs(value: BuildAgentReference*): Self = this.set("agents", js.Array(value :_*))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgents(value: js.Array[BuildAgentReference]): Self = this.set("agents", value.asInstanceOf[js.Any])
+    def setIsVirtual(value: Boolean): Self = StObject.set(x, "isVirtual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setController(value: XamlBuildControllerReference): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setMessageQueueUrl(value: String): Self = StObject.set(x, "messageQueueUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVirtual(value: Boolean): Self = this.set("isVirtual", value.asInstanceOf[js.Any])
+    def setRequireClientCertificates(value: Boolean): Self = StObject.set(x, "requireClientCertificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageQueueUrl(value: String): Self = this.set("messageQueueUrl", value.asInstanceOf[js.Any])
+    def setStatus(value: ServiceHostStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStatusChangedDate(value: Date): Self = StObject.set(x, "statusChangedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireClientCertificates(value: Boolean): Self = this.set("requireClientCertificates", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ServiceHostStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusChangedDate(value: Date): Self = this.set("statusChangedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

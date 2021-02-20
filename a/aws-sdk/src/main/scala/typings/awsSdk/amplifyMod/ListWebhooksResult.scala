@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListWebhooksResult extends js.Object {
+trait ListWebhooksResult extends StObject {
   
   /**
     *  A pagination token. If non-null, the pagination token is returned in a result. Pass its value in another request to retrieve more entries. 
@@ -26,30 +27,18 @@ object ListWebhooksResult {
   }
   
   @scala.inline
-  implicit class ListWebhooksResultOps[Self <: ListWebhooksResult] (val x: Self) extends AnyVal {
+  implicit class ListWebhooksResultMutableBuilder[Self <: ListWebhooksResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWebhooks(value: Webhooks): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebhooksVarargs(value: Webhook*): Self = this.set("webhooks", js.Array(value :_*))
-    
-    @scala.inline
-    def setWebhooks(value: Webhooks): Self = this.set("webhooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setWebhooksVarargs(value: Webhook*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridLineOptions extends js.Object {
+trait GridLineOptions extends StObject {
   
   var borderDash: js.UndefOr[js.Array[Double]] = js.native
   
@@ -48,129 +49,117 @@ object GridLineOptions {
   }
   
   @scala.inline
-  implicit class GridLineOptionsOps[Self <: GridLineOptions] (val x: Self) extends AnyVal {
+  implicit class GridLineOptionsMutableBuilder[Self <: GridLineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderDash(value: js.Array[Double]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderDashOffset(value: Double): Self = StObject.set(x, "borderDashOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderDashOffsetUndefined: Self = StObject.set(x, "borderDashOffset", js.undefined)
     
     @scala.inline
-    def setBorderDashVarargs(value: Double*): Self = this.set("borderDash", js.Array(value :_*))
+    def setBorderDashUndefined: Self = StObject.set(x, "borderDash", js.undefined)
     
     @scala.inline
-    def setBorderDash(value: js.Array[Double]): Self = this.set("borderDash", value.asInstanceOf[js.Any])
+    def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value :_*))
     
     @scala.inline
-    def deleteBorderDash: Self = this.set("borderDash", js.undefined)
+    def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderDashOffset(value: Double): Self = this.set("borderDashOffset", value.asInstanceOf[js.Any])
+    def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
     
     @scala.inline
-    def deleteBorderDashOffset: Self = this.set("borderDashOffset", js.undefined)
+    def setColor(value: ChartColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircular(value: Boolean): Self = this.set("circular", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCircular: Self = this.set("circular", js.undefined)
+    def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setColorVarargs(value: String*): Self = this.set("color", js.Array(value :_*))
+    def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ChartColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDrawBorder(value: Boolean): Self = StObject.set(x, "drawBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: Boolean): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setDrawBorderUndefined: Self = StObject.set(x, "drawBorder", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setDrawOnChartArea(value: Boolean): Self = StObject.set(x, "drawOnChartArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawBorder(value: Boolean): Self = this.set("drawBorder", value.asInstanceOf[js.Any])
+    def setDrawOnChartAreaUndefined: Self = StObject.set(x, "drawOnChartArea", js.undefined)
     
     @scala.inline
-    def deleteDrawBorder: Self = this.set("drawBorder", js.undefined)
+    def setDrawTicks(value: Boolean): Self = StObject.set(x, "drawTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawOnChartArea(value: Boolean): Self = this.set("drawOnChartArea", value.asInstanceOf[js.Any])
+    def setDrawTicksUndefined: Self = StObject.set(x, "drawTicks", js.undefined)
     
     @scala.inline
-    def deleteDrawOnChartArea: Self = this.set("drawOnChartArea", js.undefined)
+    def setLineWidth(value: Double | js.Array[Double]): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawTicks(value: Boolean): Self = this.set("drawTicks", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteDrawTicks: Self = this.set("drawTicks", js.undefined)
+    def setLineWidthVarargs(value: Double*): Self = StObject.set(x, "lineWidth", js.Array(value :_*))
     
     @scala.inline
-    def setLineWidthVarargs(value: Double*): Self = this.set("lineWidth", js.Array(value :_*))
+    def setOffsetGridLines(value: Boolean): Self = StObject.set(x, "offsetGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double | js.Array[Double]): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setOffsetGridLinesUndefined: Self = StObject.set(x, "offsetGridLines", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setTickMarkLength(value: Double): Self = StObject.set(x, "tickMarkLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetGridLines(value: Boolean): Self = this.set("offsetGridLines", value.asInstanceOf[js.Any])
+    def setTickMarkLengthUndefined: Self = StObject.set(x, "tickMarkLength", js.undefined)
     
     @scala.inline
-    def deleteOffsetGridLines: Self = this.set("offsetGridLines", js.undefined)
+    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickMarkLength(value: Double): Self = this.set("tickMarkLength", value.asInstanceOf[js.Any])
+    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
     
     @scala.inline
-    def deleteTickMarkLength: Self = this.set("tickMarkLength", js.undefined)
+    def setZeroLineBorderDash(value: js.Array[Double]): Self = StObject.set(x, "zeroLineBorderDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    def setZeroLineBorderDashOffset(value: Double): Self = StObject.set(x, "zeroLineBorderDashOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZ: Self = this.set("z", js.undefined)
+    def setZeroLineBorderDashOffsetUndefined: Self = StObject.set(x, "zeroLineBorderDashOffset", js.undefined)
     
     @scala.inline
-    def setZeroLineBorderDashVarargs(value: Double*): Self = this.set("zeroLineBorderDash", js.Array(value :_*))
+    def setZeroLineBorderDashUndefined: Self = StObject.set(x, "zeroLineBorderDash", js.undefined)
     
     @scala.inline
-    def setZeroLineBorderDash(value: js.Array[Double]): Self = this.set("zeroLineBorderDash", value.asInstanceOf[js.Any])
+    def setZeroLineBorderDashVarargs(value: Double*): Self = StObject.set(x, "zeroLineBorderDash", js.Array(value :_*))
     
     @scala.inline
-    def deleteZeroLineBorderDash: Self = this.set("zeroLineBorderDash", js.undefined)
+    def setZeroLineColor(value: ChartColor): Self = StObject.set(x, "zeroLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZeroLineBorderDashOffset(value: Double): Self = this.set("zeroLineBorderDashOffset", value.asInstanceOf[js.Any])
+    def setZeroLineColorUndefined: Self = StObject.set(x, "zeroLineColor", js.undefined)
     
     @scala.inline
-    def deleteZeroLineBorderDashOffset: Self = this.set("zeroLineBorderDashOffset", js.undefined)
+    def setZeroLineColorVarargs(value: String*): Self = StObject.set(x, "zeroLineColor", js.Array(value :_*))
     
     @scala.inline
-    def setZeroLineColorVarargs(value: String*): Self = this.set("zeroLineColor", js.Array(value :_*))
+    def setZeroLineWidth(value: Double): Self = StObject.set(x, "zeroLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZeroLineColor(value: ChartColor): Self = this.set("zeroLineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZeroLineColor: Self = this.set("zeroLineColor", js.undefined)
-    
-    @scala.inline
-    def setZeroLineWidth(value: Double): Self = this.set("zeroLineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZeroLineWidth: Self = this.set("zeroLineWidth", js.undefined)
+    def setZeroLineWidthUndefined: Self = StObject.set(x, "zeroLineWidth", js.undefined)
   }
 }

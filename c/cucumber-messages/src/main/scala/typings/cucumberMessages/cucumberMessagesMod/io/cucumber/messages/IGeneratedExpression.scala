@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a GeneratedExpression. */
 @js.native
-trait IGeneratedExpression extends js.Object {
+trait IGeneratedExpression extends StObject {
   
   /** GeneratedExpression parameterTypeNames */
   var parameterTypeNames: js.UndefOr[js.Array[String] | Null] = js.native
@@ -23,39 +24,27 @@ object IGeneratedExpression {
   }
   
   @scala.inline
-  implicit class IGeneratedExpressionOps[Self <: IGeneratedExpression] (val x: Self) extends AnyVal {
+  implicit class IGeneratedExpressionMutableBuilder[Self <: IGeneratedExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterTypeNames(value: js.Array[String]): Self = StObject.set(x, "parameterTypeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterTypeNamesNull: Self = StObject.set(x, "parameterTypeNames", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterTypeNamesUndefined: Self = StObject.set(x, "parameterTypeNames", js.undefined)
     
     @scala.inline
-    def setParameterTypeNamesVarargs(value: String*): Self = this.set("parameterTypeNames", js.Array(value :_*))
+    def setParameterTypeNamesVarargs(value: String*): Self = StObject.set(x, "parameterTypeNames", js.Array(value :_*))
     
     @scala.inline
-    def setParameterTypeNames(value: js.Array[String]): Self = this.set("parameterTypeNames", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameterTypeNames: Self = this.set("parameterTypeNames", js.undefined)
+    def setTextNull: Self = StObject.set(x, "text", null)
     
     @scala.inline
-    def setParameterTypeNamesNull: Self = this.set("parameterTypeNames", null)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTextNull: Self = this.set("text", null)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

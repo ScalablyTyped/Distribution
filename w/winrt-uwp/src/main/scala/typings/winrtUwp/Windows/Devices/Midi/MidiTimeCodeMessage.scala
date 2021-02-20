@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Midi
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a MIDI message that specifies a time code. */
 @js.native
-trait MidiTimeCodeMessage extends js.Object {
+trait MidiTimeCodeMessage extends StObject {
   
   /** Gets the value of the frame type from 0-7. */
   var frameType: Double = js.native
@@ -34,33 +35,21 @@ object MidiTimeCodeMessage {
   }
   
   @scala.inline
-  implicit class MidiTimeCodeMessageOps[Self <: MidiTimeCodeMessage] (val x: Self) extends AnyVal {
+  implicit class MidiTimeCodeMessageMutableBuilder[Self <: MidiTimeCodeMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameType(value: Double): Self = StObject.set(x, "frameType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameType(value: Double): Self = this.set("frameType", value.asInstanceOf[js.Any])
+    def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawData(value: IBuffer): Self = this.set("rawData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MidiMessageType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValues(value: Double): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValues(value: Double): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

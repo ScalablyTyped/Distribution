@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,42 +68,30 @@ object XToolkit {
   }
   
   @scala.inline
-  implicit class XToolkitOps[Self <: XToolkit] (val x: Self) extends AnyVal {
+  implicit class XToolkitMutableBuilder[Self <: XToolkit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateRegion(value: () => XRegion): Self = StObject.set(x, "createRegion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateScreenCompatibleDevice(value: (Double, Double) => XDevice): Self = StObject.set(x, "createScreenCompatibleDevice", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateWindow(value: WindowDescriptor => XWindowPeer): Self = StObject.set(x, "createWindow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDesktopWindow(value: XWindowPeer): Self = this.set("DesktopWindow", value.asInstanceOf[js.Any])
+    def setCreateWindows(value: SeqEquiv[WindowDescriptor] => SafeArray[XWindowPeer]): Self = StObject.set(x, "createWindows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWorkArea(value: Rectangle): Self = this.set("WorkArea", value.asInstanceOf[js.Any])
+    def setDesktopWindow(value: XWindowPeer): Self = StObject.set(x, "DesktopWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateRegion(value: () => XRegion): Self = this.set("createRegion", js.Any.fromFunction0(value))
+    def setGetDesktopWindow(value: () => XWindowPeer): Self = StObject.set(x, "getDesktopWindow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateScreenCompatibleDevice(value: (Double, Double) => XDevice): Self = this.set("createScreenCompatibleDevice", js.Any.fromFunction2(value))
+    def setGetWorkArea(value: () => Rectangle): Self = StObject.set(x, "getWorkArea", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateWindow(value: WindowDescriptor => XWindowPeer): Self = this.set("createWindow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateWindows(value: SeqEquiv[WindowDescriptor] => SafeArray[XWindowPeer]): Self = this.set("createWindows", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDesktopWindow(value: () => XWindowPeer): Self = this.set("getDesktopWindow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWorkArea(value: () => Rectangle): Self = this.set("getWorkArea", js.Any.fromFunction0(value))
+    def setWorkArea(value: Rectangle): Self = StObject.set(x, "WorkArea", value.asInstanceOf[js.Any])
   }
 }

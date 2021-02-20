@@ -4,6 +4,7 @@ import typings.pouchdbCore.EventEmitter
 import typings.pouchdbCore.pouchdbCoreStrings.change
 import typings.pouchdbCore.pouchdbCoreStrings.complete
 import typings.pouchdbCore.pouchdbCoreStrings.error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

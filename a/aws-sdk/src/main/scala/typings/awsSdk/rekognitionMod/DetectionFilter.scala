@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectionFilter extends js.Object {
+trait DetectionFilter extends StObject {
   
   /**
     * Sets the minimum height of the word bounding box. Words with bounding box heights lesser than this value will be excluded from the result. Value is relative to the video frame height.
@@ -31,36 +32,24 @@ object DetectionFilter {
   }
   
   @scala.inline
-  implicit class DetectionFilterOps[Self <: DetectionFilter] (val x: Self) extends AnyVal {
+  implicit class DetectionFilterMutableBuilder[Self <: DetectionFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinBoundingBoxHeight(value: BoundingBoxHeight): Self = StObject.set(x, "MinBoundingBoxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinBoundingBoxHeightUndefined: Self = StObject.set(x, "MinBoundingBoxHeight", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinBoundingBoxWidth(value: BoundingBoxWidth): Self = StObject.set(x, "MinBoundingBoxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinBoundingBoxHeight(value: BoundingBoxHeight): Self = this.set("MinBoundingBoxHeight", value.asInstanceOf[js.Any])
+    def setMinBoundingBoxWidthUndefined: Self = StObject.set(x, "MinBoundingBoxWidth", js.undefined)
     
     @scala.inline
-    def deleteMinBoundingBoxHeight: Self = this.set("MinBoundingBoxHeight", js.undefined)
+    def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinBoundingBoxWidth(value: BoundingBoxWidth): Self = this.set("MinBoundingBoxWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinBoundingBoxWidth: Self = this.set("MinBoundingBoxWidth", js.undefined)
-    
-    @scala.inline
-    def setMinConfidence(value: Percent): Self = this.set("MinConfidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinConfidence: Self = this.set("MinConfidence", js.undefined)
+    def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
   }
 }

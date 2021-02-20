@@ -1,11 +1,12 @@
 package typings.awsSdk.iotjobsdataplaneMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPendingJobExecutionsResponse extends js.Object {
+trait GetPendingJobExecutionsResponse extends StObject {
   
   /**
     * A list of JobExecutionSummary objects with status IN_PROGRESS.
@@ -26,36 +27,24 @@ object GetPendingJobExecutionsResponse {
   }
   
   @scala.inline
-  implicit class GetPendingJobExecutionsResponseOps[Self <: GetPendingJobExecutionsResponse] (val x: Self) extends AnyVal {
+  implicit class GetPendingJobExecutionsResponseMutableBuilder[Self <: GetPendingJobExecutionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInProgressJobs(value: JobExecutionSummaryList): Self = StObject.set(x, "inProgressJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInProgressJobsUndefined: Self = StObject.set(x, "inProgressJobs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInProgressJobsVarargs(value: JobExecutionSummary*): Self = StObject.set(x, "inProgressJobs", js.Array(value :_*))
     
     @scala.inline
-    def setInProgressJobsVarargs(value: JobExecutionSummary*): Self = this.set("inProgressJobs", js.Array(value :_*))
+    def setQueuedJobs(value: JobExecutionSummaryList): Self = StObject.set(x, "queuedJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInProgressJobs(value: JobExecutionSummaryList): Self = this.set("inProgressJobs", value.asInstanceOf[js.Any])
+    def setQueuedJobsUndefined: Self = StObject.set(x, "queuedJobs", js.undefined)
     
     @scala.inline
-    def deleteInProgressJobs: Self = this.set("inProgressJobs", js.undefined)
-    
-    @scala.inline
-    def setQueuedJobsVarargs(value: JobExecutionSummary*): Self = this.set("queuedJobs", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueuedJobs(value: JobExecutionSummaryList): Self = this.set("queuedJobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueuedJobs: Self = this.set("queuedJobs", js.undefined)
+    def setQueuedJobsVarargs(value: JobExecutionSummary*): Self = StObject.set(x, "queuedJobs", js.Array(value :_*))
   }
 }

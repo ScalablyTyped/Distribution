@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.appmesh
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualNodeSpecLogging extends js.Object {
+trait VirtualNodeSpecLogging extends StObject {
   
   /**
     * The access log configuration for a virtual node.
@@ -22,24 +23,12 @@ object VirtualNodeSpecLogging {
   }
   
   @scala.inline
-  implicit class VirtualNodeSpecLoggingOps[Self <: VirtualNodeSpecLogging] (val x: Self) extends AnyVal {
+  implicit class VirtualNodeSpecLoggingMutableBuilder[Self <: VirtualNodeSpecLogging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLog(value: Input[VirtualNodeSpecLoggingAccessLog]): Self = StObject.set(x, "accessLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccessLog(value: Input[VirtualNodeSpecLoggingAccessLog]): Self = this.set("accessLog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessLog: Self = this.set("accessLog", js.undefined)
+    def setAccessLogUndefined: Self = StObject.set(x, "accessLog", js.undefined)
   }
 }

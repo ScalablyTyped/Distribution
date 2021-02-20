@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceMetadata extends js.Object {
+trait InstanceMetadata extends StObject {
   
   /**
     * The identifier of the identity store that is connected to the SSO instance.
@@ -26,30 +27,18 @@ object InstanceMetadata {
   }
   
   @scala.inline
-  implicit class InstanceMetadataOps[Self <: InstanceMetadata] (val x: Self) extends AnyVal {
+  implicit class InstanceMetadataMutableBuilder[Self <: InstanceMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityStoreId(value: Id): Self = StObject.set(x, "IdentityStoreId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityStoreIdUndefined: Self = StObject.set(x, "IdentityStoreId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityStoreId(value: Id): Self = this.set("IdentityStoreId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityStoreId: Self = this.set("IdentityStoreId", js.undefined)
-    
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = this.set("InstanceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceArn: Self = this.set("InstanceArn", js.undefined)
+    def setInstanceArnUndefined: Self = StObject.set(x, "InstanceArn", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a line in the terminal's buffer.
   */
 @js.native
-trait IBufferLine extends js.Object {
+trait IBufferLine extends StObject {
   
   /**
     * Gets a cell from the line, or undefined if the line index does not exist.

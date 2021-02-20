@@ -2,20 +2,20 @@ package typings.gaxios
 
 import typings.gaxios.commonMod.GaxiosOptions
 import typings.gaxios.commonMod.GaxiosPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gaxios/build/src/gaxios", JSImport.Namespace)
-@js.native
-object gaxiosMod extends js.Object {
+object gaxiosMod {
   
+  @JSImport("gaxios/build/src/gaxios", "Gaxios")
   @js.native
   /**
     * The Gaxios class is responsible for making HTTP requests.
     * @param defaults The default set of options to be used for this instance.
     */
-  class Gaxios () extends js.Object {
+  class Gaxios () extends StObject {
     def this(defaults: GaxiosOptions) = this()
     
     var _defaultAdapter: js.Any = js.native

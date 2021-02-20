@@ -5,6 +5,7 @@ import typings.webappsecCredentialManagement.webappsecCredentialManagementString
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.platform
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.preferred
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.required
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://w3c.github.io/webauthn/#dictdef-authenticatorselectioncriteria}
   */
 @js.native
-trait AuthenticatorSelectionCriteria extends js.Object {
+trait AuthenticatorSelectionCriteria extends StObject {
   
   var authenticatorAttachment: js.UndefOr[platform | `cross-platform`] = js.native
   
@@ -30,36 +31,24 @@ object AuthenticatorSelectionCriteria {
   }
   
   @scala.inline
-  implicit class AuthenticatorSelectionCriteriaOps[Self <: AuthenticatorSelectionCriteria] (val x: Self) extends AnyVal {
+  implicit class AuthenticatorSelectionCriteriaMutableBuilder[Self <: AuthenticatorSelectionCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticatorAttachment(value: platform | `cross-platform`): Self = StObject.set(x, "authenticatorAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticatorAttachmentUndefined: Self = StObject.set(x, "authenticatorAttachment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequireResidentKey(value: Boolean): Self = StObject.set(x, "requireResidentKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticatorAttachment(value: platform | `cross-platform`): Self = this.set("authenticatorAttachment", value.asInstanceOf[js.Any])
+    def setRequireResidentKeyUndefined: Self = StObject.set(x, "requireResidentKey", js.undefined)
     
     @scala.inline
-    def deleteAuthenticatorAttachment: Self = this.set("authenticatorAttachment", js.undefined)
+    def setUserVerification(value: required | preferred | discouraged): Self = StObject.set(x, "userVerification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireResidentKey(value: Boolean): Self = this.set("requireResidentKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireResidentKey: Self = this.set("requireResidentKey", js.undefined)
-    
-    @scala.inline
-    def setUserVerification(value: required | preferred | discouraged): Self = this.set("userVerification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserVerification: Self = this.set("userVerification", js.undefined)
+    def setUserVerificationUndefined: Self = StObject.set(x, "userVerification", js.undefined)
   }
 }

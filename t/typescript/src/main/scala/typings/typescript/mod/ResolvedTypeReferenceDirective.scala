@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolvedTypeReferenceDirective extends js.Object {
+trait ResolvedTypeReferenceDirective extends StObject {
   
   /** True if `resolvedFileName` comes from `node_modules`. */
   var isExternalLibraryImport: js.UndefOr[Boolean] = js.native
@@ -25,39 +26,27 @@ object ResolvedTypeReferenceDirective {
   }
   
   @scala.inline
-  implicit class ResolvedTypeReferenceDirectiveOps[Self <: ResolvedTypeReferenceDirective] (val x: Self) extends AnyVal {
+  implicit class ResolvedTypeReferenceDirectiveMutableBuilder[Self <: ResolvedTypeReferenceDirective] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsExternalLibraryImport(value: Boolean): Self = StObject.set(x, "isExternalLibraryImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsExternalLibraryImportUndefined: Self = StObject.set(x, "isExternalLibraryImport", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageId(value: PackageId): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
     
     @scala.inline
-    def setIsExternalLibraryImport(value: Boolean): Self = this.set("isExternalLibraryImport", value.asInstanceOf[js.Any])
+    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsExternalLibraryImport: Self = this.set("isExternalLibraryImport", js.undefined)
+    def setResolvedFileName(value: java.lang.String): Self = StObject.set(x, "resolvedFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageId(value: PackageId): Self = this.set("packageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageId: Self = this.set("packageId", js.undefined)
-    
-    @scala.inline
-    def setResolvedFileName(value: java.lang.String): Self = this.set("resolvedFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolvedFileName: Self = this.set("resolvedFileName", js.undefined)
+    def setResolvedFileNameUndefined: Self = StObject.set(x, "resolvedFileName", js.undefined)
   }
 }

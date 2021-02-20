@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestDataRequest extends js.Object {
+trait RequestDataRequest extends StObject {
   
   /**
     * Database name.
@@ -59,42 +60,30 @@ object RequestDataRequest {
   }
   
   @scala.inline
-  implicit class RequestDataRequestOps[Self <: RequestDataRequest] (val x: Self) extends AnyVal {
+  implicit class RequestDataRequestMutableBuilder[Self <: RequestDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyRange(value: KeyRange): Self = StObject.set(x, "keyRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    def setKeyRangeUndefined: Self = StObject.set(x, "keyRange", js.undefined)
     
     @scala.inline
-    def setIndexName(value: String): Self = this.set("indexName", value.asInstanceOf[js.Any])
+    def setObjectStoreName(value: String): Self = StObject.set(x, "objectStoreName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectStoreName(value: String): Self = this.set("objectStoreName", value.asInstanceOf[js.Any])
+    def setPageSize(value: integer): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: integer): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityOrigin(value: String): Self = this.set("securityOrigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkipCount(value: integer): Self = this.set("skipCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyRange(value: KeyRange): Self = this.set("keyRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyRange: Self = this.set("keyRange", js.undefined)
+    def setSkipCount(value: integer): Self = StObject.set(x, "skipCount", value.asInstanceOf[js.Any])
   }
 }

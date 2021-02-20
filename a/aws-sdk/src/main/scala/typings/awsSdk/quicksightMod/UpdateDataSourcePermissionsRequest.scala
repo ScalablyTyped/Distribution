@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDataSourcePermissionsRequest extends js.Object {
+trait UpdateDataSourcePermissionsRequest extends StObject {
   
   /**
     * The AWS account ID.
@@ -36,42 +37,30 @@ object UpdateDataSourcePermissionsRequest {
   }
   
   @scala.inline
-  implicit class UpdateDataSourcePermissionsRequestOps[Self <: UpdateDataSourcePermissionsRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDataSourcePermissionsRequestMutableBuilder[Self <: UpdateDataSourcePermissionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceId(value: ResourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantPermissions(value: ResourcePermissionList): Self = StObject.set(x, "GrantPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setGrantPermissionsUndefined: Self = StObject.set(x, "GrantPermissions", js.undefined)
     
     @scala.inline
-    def setDataSourceId(value: ResourceId): Self = this.set("DataSourceId", value.asInstanceOf[js.Any])
+    def setGrantPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "GrantPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setGrantPermissionsVarargs(value: ResourcePermission*): Self = this.set("GrantPermissions", js.Array(value :_*))
+    def setRevokePermissions(value: ResourcePermissionList): Self = StObject.set(x, "RevokePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantPermissions(value: ResourcePermissionList): Self = this.set("GrantPermissions", value.asInstanceOf[js.Any])
+    def setRevokePermissionsUndefined: Self = StObject.set(x, "RevokePermissions", js.undefined)
     
     @scala.inline
-    def deleteGrantPermissions: Self = this.set("GrantPermissions", js.undefined)
-    
-    @scala.inline
-    def setRevokePermissionsVarargs(value: ResourcePermission*): Self = this.set("RevokePermissions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRevokePermissions(value: ResourcePermissionList): Self = this.set("RevokePermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevokePermissions: Self = this.set("RevokePermissions", js.undefined)
+    def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value :_*))
   }
 }

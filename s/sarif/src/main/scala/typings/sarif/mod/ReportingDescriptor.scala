@@ -1,12 +1,13 @@
 package typings.sarif.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportingDescriptor extends js.Object {
+trait ReportingDescriptor extends StObject {
   
   /**
     * Default reporting configuration information.
@@ -93,111 +94,99 @@ object ReportingDescriptor {
   }
   
   @scala.inline
-  implicit class ReportingDescriptorOps[Self <: ReportingDescriptor] (val x: Self) extends AnyVal {
+  implicit class ReportingDescriptorMutableBuilder[Self <: ReportingDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultConfiguration(value: ReportingConfiguration): Self = StObject.set(x, "defaultConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultConfigurationUndefined: Self = StObject.set(x, "defaultConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeprecatedGuids(value: js.Array[String]): Self = StObject.set(x, "deprecatedGuids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDeprecatedGuidsUndefined: Self = StObject.set(x, "deprecatedGuids", js.undefined)
     
     @scala.inline
-    def setDefaultConfiguration(value: ReportingConfiguration): Self = this.set("defaultConfiguration", value.asInstanceOf[js.Any])
+    def setDeprecatedGuidsVarargs(value: String*): Self = StObject.set(x, "deprecatedGuids", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefaultConfiguration: Self = this.set("defaultConfiguration", js.undefined)
+    def setDeprecatedIds(value: js.Array[String]): Self = StObject.set(x, "deprecatedIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedGuidsVarargs(value: String*): Self = this.set("deprecatedGuids", js.Array(value :_*))
+    def setDeprecatedIdsUndefined: Self = StObject.set(x, "deprecatedIds", js.undefined)
     
     @scala.inline
-    def setDeprecatedGuids(value: js.Array[String]): Self = this.set("deprecatedGuids", value.asInstanceOf[js.Any])
+    def setDeprecatedIdsVarargs(value: String*): Self = StObject.set(x, "deprecatedIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteDeprecatedGuids: Self = this.set("deprecatedGuids", js.undefined)
+    def setDeprecatedNames(value: js.Array[String]): Self = StObject.set(x, "deprecatedNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedIdsVarargs(value: String*): Self = this.set("deprecatedIds", js.Array(value :_*))
+    def setDeprecatedNamesUndefined: Self = StObject.set(x, "deprecatedNames", js.undefined)
     
     @scala.inline
-    def setDeprecatedIds(value: js.Array[String]): Self = this.set("deprecatedIds", value.asInstanceOf[js.Any])
+    def setDeprecatedNamesVarargs(value: String*): Self = StObject.set(x, "deprecatedNames", js.Array(value :_*))
     
     @scala.inline
-    def deleteDeprecatedIds: Self = this.set("deprecatedIds", js.undefined)
+    def setFullDescription(value: MultiformatMessageString): Self = StObject.set(x, "fullDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedNamesVarargs(value: String*): Self = this.set("deprecatedNames", js.Array(value :_*))
+    def setFullDescriptionUndefined: Self = StObject.set(x, "fullDescription", js.undefined)
     
     @scala.inline
-    def setDeprecatedNames(value: js.Array[String]): Self = this.set("deprecatedNames", value.asInstanceOf[js.Any])
+    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeprecatedNames: Self = this.set("deprecatedNames", js.undefined)
+    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
     @scala.inline
-    def setFullDescription(value: MultiformatMessageString): Self = this.set("fullDescription", value.asInstanceOf[js.Any])
+    def setHelp(value: MultiformatMessageString): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFullDescription: Self = this.set("fullDescription", js.undefined)
+    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
     @scala.inline
-    def setGuid(value: String): Self = this.set("guid", value.asInstanceOf[js.Any])
+    def setHelpUri(value: String): Self = StObject.set(x, "helpUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGuid: Self = this.set("guid", js.undefined)
+    def setHelpUriUndefined: Self = StObject.set(x, "helpUri", js.undefined)
     
     @scala.inline
-    def setHelp(value: MultiformatMessageString): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHelp: Self = this.set("help", js.undefined)
+    def setMessageStrings(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "messageStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpUri(value: String): Self = this.set("helpUri", value.asInstanceOf[js.Any])
+    def setMessageStringsUndefined: Self = StObject.set(x, "messageStrings", js.undefined)
     
     @scala.inline
-    def deleteHelpUri: Self = this.set("helpUri", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageStrings(value: StringDictionary[MultiformatMessageString]): Self = this.set("messageStrings", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessageStrings: Self = this.set("messageStrings", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRelationships(value: js.Array[ReportingDescriptorRelationship]): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setRelationshipsVarargs(value: ReportingDescriptorRelationship*): Self = StObject.set(x, "relationships", js.Array(value :_*))
     
     @scala.inline
-    def setRelationshipsVarargs(value: ReportingDescriptorRelationship*): Self = this.set("relationships", js.Array(value :_*))
+    def setShortDescription(value: MultiformatMessageString): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationships(value: js.Array[ReportingDescriptorRelationship]): Self = this.set("relationships", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationships: Self = this.set("relationships", js.undefined)
-    
-    @scala.inline
-    def setShortDescription(value: MultiformatMessageString): Self = this.set("shortDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortDescription: Self = this.set("shortDescription", js.undefined)
+    def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
   }
 }

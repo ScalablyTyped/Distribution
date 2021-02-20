@@ -1,12 +1,13 @@
 package typings.miniprogram
 
 import typings.miniprogram.anon.AppId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchQuery extends js.Object {
+trait LaunchQuery extends StObject {
   
   var path: String = js.native
   
@@ -26,30 +27,18 @@ object LaunchQuery {
   }
   
   @scala.inline
-  implicit class LaunchQueryOps[Self <: LaunchQuery] (val x: Self) extends AnyVal {
+  implicit class LaunchQueryMutableBuilder[Self <: LaunchQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferrerInfo(value: AppId): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: js.Any): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferrerInfo(value: AppId): Self = this.set("referrerInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferrerInfo: Self = this.set("referrerInfo", js.undefined)
+    def setReferrerInfoUndefined: Self = StObject.set(x, "referrerInfo", js.undefined)
   }
 }

@@ -2,16 +2,26 @@ package typings.typescriptCollections
 
 import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-collections/dist/lib/Queue", JSImport.Namespace)
-@js.native
-object queueMod extends js.Object {
+object queueMod {
+  
+  @JSImport("typescript-collections/dist/lib/Queue", JSImport.Default)
+  @js.native
+  /**
+    * Creates an empty queue.
+    * @class A queue is a First-In-First-Out (FIFO) data structure, the first
+    * element added to the queue will be the first one to be removed. This
+    * implementation uses a linked list as a container.
+    * @constructor
+    */
+  class default[T] () extends Queue[T]
   
   @js.native
-  trait Queue[T] extends js.Object {
+  trait Queue[T] extends StObject {
     
     /**
       * Inserts the specified element into the end of this queue.
@@ -94,14 +104,4 @@ object queueMod extends js.Object {
       */
     def size(): Double = js.native
   }
-  
-  @js.native
-  /**
-    * Creates an empty queue.
-    * @class A queue is a First-In-First-Out (FIFO) data structure, the first
-    * element added to the queue will be the first one to be removed. This
-    * implementation uses a linked list as a container.
-    * @constructor
-    */
-  class default[T] () extends Queue[T]
 }

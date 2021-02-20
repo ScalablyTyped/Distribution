@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesUpdateEndpointsBatchInputMod.Upd
 import typings.awsSdkClientPinpointBrowser.typesUpdateEndpointsBatchOutputMod.UpdateEndpointsBatchOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateEndpointsBatchCommand", JSImport.Namespace)
-@js.native
-object updateEndpointsBatchCommandMod extends js.Object {
+object updateEndpointsBatchCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateEndpointsBatchCommand", "UpdateEndpointsBatchCommand")
   @js.native
   class UpdateEndpointsBatchCommand protected () extends Command[
           InputTypesUnion, 

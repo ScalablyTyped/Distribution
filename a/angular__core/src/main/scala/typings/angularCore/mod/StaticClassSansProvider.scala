@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,38 +18,26 @@ trait StaticClassSansProvider extends InjectableProvider {
     * An optional class to instantiate for the `token`. By default, the `provide`
     * class is instantiated.
     */
-  var useClass: Type[_] = js.native
+  var useClass: typings.angularCore.mod.Type[_] = js.native
 }
 object StaticClassSansProvider {
   
   @scala.inline
-  def apply(deps: js.Array[_], useClass: Type[_]): StaticClassSansProvider = {
+  def apply(deps: js.Array[_], useClass: typings.angularCore.mod.Type[_]): StaticClassSansProvider = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticClassSansProvider]
   }
   
   @scala.inline
-  implicit class StaticClassSansProviderOps[Self <: StaticClassSansProvider] (val x: Self) extends AnyVal {
+  implicit class StaticClassSansProviderMutableBuilder[Self <: StaticClassSansProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeps(value: js.Array[_]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDepsVarargs(value: js.Any*): Self = this.set("deps", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeps(value: js.Array[_]): Self = this.set("deps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseClass(value: Type[_]): Self = this.set("useClass", value.asInstanceOf[js.Any])
+    def setUseClass(value: typings.angularCore.mod.Type[_]): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
   }
 }

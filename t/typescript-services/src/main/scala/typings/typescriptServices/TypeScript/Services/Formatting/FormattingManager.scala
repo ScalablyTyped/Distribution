@@ -1,12 +1,13 @@
 package typings.typescriptServices.TypeScript.Services.Formatting
 
 import typings.typescriptServices.TypeScript.Services.TextEdit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormattingManager extends js.Object {
+trait FormattingManager extends StObject {
   
   def formatDocument(minChar: Double, limChar: Double): js.Array[TextEdit] = js.native
   
@@ -51,51 +52,39 @@ object FormattingManager {
   }
   
   @scala.inline
-  implicit class FormattingManagerOps[Self <: FormattingManager] (val x: Self) extends AnyVal {
+  implicit class FormattingManagerMutableBuilder[Self <: FormattingManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatDocument(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatDocument", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatOnClosingCurlyBrace(value: Double => js.Array[TextEdit]): Self = StObject.set(x, "formatOnClosingCurlyBrace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatOnEnter(value: Double => js.Array[TextEdit]): Self = StObject.set(x, "formatOnEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormatDocument(value: (Double, Double) => js.Array[TextEdit]): Self = this.set("formatDocument", js.Any.fromFunction2(value))
+    def setFormatOnPaste(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatOnPaste", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFormatOnClosingCurlyBrace(value: Double => js.Array[TextEdit]): Self = this.set("formatOnClosingCurlyBrace", js.Any.fromFunction1(value))
+    def setFormatOnSemicolon(value: Double => js.Array[TextEdit]): Self = StObject.set(x, "formatOnSemicolon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormatOnEnter(value: Double => js.Array[TextEdit]): Self = this.set("formatOnEnter", js.Any.fromFunction1(value))
+    def setFormatSelection(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatSelection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFormatOnPaste(value: (Double, Double) => js.Array[TextEdit]): Self = this.set("formatOnPaste", js.Any.fromFunction2(value))
+    def setFormatSpan(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "formatSpan", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFormatOnSemicolon(value: Double => js.Array[TextEdit]): Self = this.set("formatOnSemicolon", js.Any.fromFunction1(value))
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatSelection(value: (Double, Double) => js.Array[TextEdit]): Self = this.set("formatSelection", js.Any.fromFunction2(value))
+    def setRulesProvider(value: js.Any): Self = StObject.set(x, "rulesProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatSpan(value: (js.Any, js.Any) => js.Any): Self = this.set("formatSpan", js.Any.fromFunction2(value))
+    def setSnapshot(value: js.Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRulesProvider(value: js.Any): Self = this.set("rulesProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapshot(value: js.Any): Self = this.set("snapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSyntaxTree(value: js.Any): Self = this.set("syntaxTree", value.asInstanceOf[js.Any])
+    def setSyntaxTree(value: js.Any): Self = StObject.set(x, "syntaxTree", value.asInstanceOf[js.Any])
   }
 }

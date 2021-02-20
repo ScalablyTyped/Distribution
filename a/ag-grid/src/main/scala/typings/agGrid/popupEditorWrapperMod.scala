@@ -5,14 +5,16 @@ import typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper
 import typings.agGrid.iCellEditorMod.ICellEditor
 import typings.agGrid.iCellEditorMod.ICellEditorComp
 import typings.agGrid.iCellEditorMod.ICellEditorParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/cellEditors/popupEditorWrapper", JSImport.Namespace)
-@js.native
-object popupEditorWrapperMod extends js.Object {
+object popupEditorWrapperMod {
   
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.agGrid.iComponentMod.IComponent because Already inherited
+  - typings.agGrid.iCellEditorMod.ICellEditorComp because var conflicts: afterGuiAttached, destroy, init. Inlined  */ @JSImport("ag-grid/dist/lib/rendering/cellEditors/popupEditorWrapper", "PopupEditorWrapper")
   @js.native
   class PopupEditorWrapper protected ()
     extends Component
@@ -51,9 +53,16 @@ object popupEditorWrapperMod extends js.Object {
     var params: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object PopupEditorWrapper extends js.Object {
+  object PopupEditorWrapper {
     
-    var DOM_KEY_POPUP_EDITOR_WRAPPER: String = js.native
+    @JSImport("ag-grid/dist/lib/rendering/cellEditors/popupEditorWrapper", "PopupEditorWrapper")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ag-grid/dist/lib/rendering/cellEditors/popupEditorWrapper", "PopupEditorWrapper.DOM_KEY_POPUP_EDITOR_WRAPPER")
+    @js.native
+    def DOM_KEY_POPUP_EDITOR_WRAPPER: String = js.native
+    @scala.inline
+    def DOM_KEY_POPUP_EDITOR_WRAPPER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_KEY_POPUP_EDITOR_WRAPPER")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @OutputOnly A security context.
   */
 @js.native
-trait SchemaSecurityContext extends js.Object {
+trait SchemaSecurityContext extends StObject {
   
   /**
     * The security types in this context.
@@ -24,27 +25,15 @@ object SchemaSecurityContext {
   }
   
   @scala.inline
-  implicit class SchemaSecurityContextOps[Self <: SchemaSecurityContext] (val x: Self) extends AnyVal {
+  implicit class SchemaSecurityContextMutableBuilder[Self <: SchemaSecurityContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSecurities(value: js.Array[String]): Self = StObject.set(x, "securities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecuritiesUndefined: Self = StObject.set(x, "securities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSecuritiesVarargs(value: String*): Self = this.set("securities", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecurities(value: js.Array[String]): Self = this.set("securities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurities: Self = this.set("securities", js.undefined)
+    def setSecuritiesVarargs(value: String*): Self = StObject.set(x, "securities", js.Array(value :_*))
   }
 }

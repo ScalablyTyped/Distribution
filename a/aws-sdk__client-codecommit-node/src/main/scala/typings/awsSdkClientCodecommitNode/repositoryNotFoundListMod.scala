@@ -1,13 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/_RepositoryNotFoundList", JSImport.Namespace)
-@js.native
-object repositoryNotFoundListMod extends js.Object {
+object repositoryNotFoundListMod {
   
-  @JSName("_RepositoryNotFoundList")
+  @JSImport("@aws-sdk/client-codecommit-node/model/_RepositoryNotFoundList", "_RepositoryNotFoundList")
+  @js.native
   val RepositoryNotFoundList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }

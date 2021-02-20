@@ -1,5 +1,6 @@
 package typings.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * File path API.
   */
-@JSImport("playcanvas", "path")
-@js.native
-object path extends js.Object {
+object path {
   
   /**
     * The character that separates path segments.
     */
+  @JSImport("playcanvas", "path.delimiter")
+  @js.native
   val delimiter: String = js.native
   
   /**
@@ -26,6 +27,8 @@ object path extends js.Object {
     * @param pathname - The full path to process.
     * @returns The path without a last element from list split by slash.
     */
+  @JSImport("playcanvas", "path.extractPath")
+  @js.native
   def extractPath(pathname: String): String = js.native
   
   /**
@@ -37,6 +40,8 @@ object path extends js.Object {
     * @param pathname - The path to process.
     * @returns The basename.
     */
+  @JSImport("playcanvas", "path.getBasename")
+  @js.native
   def getBasename(pathname: String): String = js.native
   
   /**
@@ -44,6 +49,8 @@ object path extends js.Object {
     * @param pathname - The path to get the directory from.
     * @returns The directory part of the path.
     */
+  @JSImport("playcanvas", "path.getDirectory")
+  @js.native
   def getDirectory(pathname: String): String = js.native
   
   /**
@@ -55,6 +62,8 @@ object path extends js.Object {
     * @param pathname - The path to process.
     * @returns The extension.
     */
+  @JSImport("playcanvas", "path.getExtension")
+  @js.native
   def getExtension(pathname: String): String = js.native
   
   /**
@@ -69,6 +78,8 @@ object path extends js.Object {
     * @param pathname - The path to process.
     * @returns True if s doesn't start with slash and doesn't include colon and double slash.
     */
+  @JSImport("playcanvas", "path.isRelativePath")
+  @js.native
   def isRelativePath(pathname: String): Boolean = js.native
   
   /**
@@ -84,6 +95,8 @@ object path extends js.Object {
     * provided as parameters.
     * @returns The joined file path.
     */
+  @JSImport("playcanvas", "path.join")
+  @js.native
   def join(section: String*): String = js.native
   
   /**
@@ -91,6 +104,8 @@ object path extends js.Object {
     * @param pathname - The path to normalize.
     * @returns The normalized path.
     */
+  @JSImport("playcanvas", "path.normalize")
+  @js.native
   def normalize(pathname: String): String = js.native
   
   /**
@@ -99,5 +114,7 @@ object path extends js.Object {
     * @param pathname - The path to split.
     * @returns The split path which is an array of two strings, the path and the filename.
     */
+  @JSImport("playcanvas", "path.split")
+  @js.native
   def split(pathname: String): js.Array[String] = js.native
 }

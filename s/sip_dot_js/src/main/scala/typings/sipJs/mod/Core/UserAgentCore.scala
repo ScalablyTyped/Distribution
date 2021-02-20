@@ -2,6 +2,7 @@ package typings.sipJs.mod.Core
 
 import typings.sipJs.userAgentCoreConfigurationMod.UserAgentCoreConfiguration
 import typings.sipJs.userAgentCoreDelegateMod.UserAgentCoreDelegate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

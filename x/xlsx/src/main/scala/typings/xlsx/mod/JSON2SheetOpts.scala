@@ -1,5 +1,6 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,33 +25,21 @@ object JSON2SheetOpts {
   }
   
   @scala.inline
-  implicit class JSON2SheetOptsOps[Self <: JSON2SheetOpts] (val x: Self) extends AnyVal {
+  implicit class JSON2SheetOptsMutableBuilder[Self <: JSON2SheetOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
     
     @scala.inline
-    def setHeaderVarargs(value: String*): Self = this.set("header", js.Array(value :_*))
+    def setSkipHeader(value: Boolean): Self = StObject.set(x, "skipHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: js.Array[String]): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
-    
-    @scala.inline
-    def setSkipHeader(value: Boolean): Self = this.set("skipHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipHeader: Self = this.set("skipHeader", js.undefined)
+    def setSkipHeaderUndefined: Self = StObject.set(x, "skipHeader", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,30 +64,18 @@ object GEHtmlBalloon {
   }
   
   @scala.inline
-  implicit class GEHtmlBalloonOps[Self <: GEHtmlBalloon] (val x: Self) extends AnyVal {
+  implicit class GEHtmlBalloonMutableBuilder[Self <: GEHtmlBalloon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBackgroundColor(value: () => String): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetForegroundColor(value: () => String): Self = StObject.set(x, "getForegroundColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetBackgroundColor(value: String => Unit): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBackgroundColor(value: () => String): Self = this.set("getBackgroundColor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetForegroundColor(value: () => String): Self = this.set("getForegroundColor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetBackgroundColor(value: String => Unit): Self = this.set("setBackgroundColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetForegroundColor(value: String => Unit): Self = this.set("setForegroundColor", js.Any.fromFunction1(value))
+    def setSetForegroundColor(value: String => Unit): Self = StObject.set(x, "setForegroundColor", js.Any.fromFunction1(value))
   }
 }

@@ -6,24 +6,23 @@ import typings.cassandraDriver.anon.ParamsQuery
 import typings.cassandraDriver.mod.ExecutionOptions
 import typings.cassandraDriver.mod.Host
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cassandra-driver/lib/tracker", JSImport.Namespace)
-@js.native
-object trackerMod extends js.Object {
+object trackerMod {
   
-  @js.native
-  object tracker extends js.Object {
+  object tracker {
     
+    @JSImport("cassandra-driver/lib/tracker", "tracker.RequestLogger")
     @js.native
     class RequestLogger protected () extends RequestTracker {
       def this(options: LogErroredRequests) = this()
     }
     
     @js.native
-    trait RequestTracker extends js.Object {
+    trait RequestTracker extends StObject {
       
       def onError(
         host: Host,

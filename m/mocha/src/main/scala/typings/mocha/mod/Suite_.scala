@@ -2,6 +2,7 @@ package typings.mocha.mod
 
 import typings.mocha.Mocha.Suite
 import typings.mocha.Mocha.SuiteConstants
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,11 +39,11 @@ class Suite_ protected () extends Suite {
   def this(title: String) = this()
   def this(title: String, parentContext: typings.mocha.Mocha.Context) = this()
 }
-/* static members */
-@JSImport("mocha", "Suite")
-@js.native
-object Suite_ extends js.Object {
+object Suite_ {
   
+  /* static member */
+  @JSImport("mocha", "Suite.constants")
+  @js.native
   val constants: SuiteConstants = js.native
   
   /**
@@ -52,5 +53,8 @@ object Suite_ extends js.Object {
     *
     * @see https://mochajs.org/api/mocha#.exports.create
     */
+  /* static member */
+  @JSImport("mocha", "Suite.create")
+  @js.native
   def create(parent: Suite, title: String): Suite = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `sentiment_analysis_request_config`.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2SentimentAnalysisResult extends js.Object {
+trait SchemaGoogleCloudDialogflowV2SentimentAnalysisResult extends StObject {
   
   /**
     * The sentiment analysis result for `query_text`.
@@ -25,24 +26,12 @@ object SchemaGoogleCloudDialogflowV2SentimentAnalysisResult {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2SentimentAnalysisResultOps[Self <: SchemaGoogleCloudDialogflowV2SentimentAnalysisResult] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2SentimentAnalysisResultMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2SentimentAnalysisResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueryTextSentiment(value: SchemaGoogleCloudDialogflowV2Sentiment): Self = StObject.set(x, "queryTextSentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQueryTextSentiment(value: SchemaGoogleCloudDialogflowV2Sentiment): Self = this.set("queryTextSentiment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryTextSentiment: Self = this.set("queryTextSentiment", js.undefined)
+    def setQueryTextSentimentUndefined: Self = StObject.set(x, "queryTextSentiment", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.firebaseFirestoreTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.removed
   - typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.modified
 */
-trait DocumentChangeType extends js.Object
+trait DocumentChangeType extends StObject
 object DocumentChangeType {
   
   @scala.inline

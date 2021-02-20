@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupLevel extends js.Object {
+trait GroupLevel extends StObject {
   
   @JSName("Access.GroupLevel_typekey")
   var AccessDotGroupLevel_typekey: GroupLevel = js.native

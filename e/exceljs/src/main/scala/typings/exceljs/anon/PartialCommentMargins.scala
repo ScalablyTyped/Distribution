@@ -3,13 +3,14 @@ package typings.exceljs.anon
 import typings.exceljs.exceljsStrings.auto
 import typings.exceljs.exceljsStrings.custom
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.CommentMargins> */
 @js.native
-trait PartialCommentMargins extends js.Object {
+trait PartialCommentMargins extends StObject {
   
   var inset: js.UndefOr[js.Array[Number]] = js.native
   
@@ -24,33 +25,21 @@ object PartialCommentMargins {
   }
   
   @scala.inline
-  implicit class PartialCommentMarginsOps[Self <: PartialCommentMargins] (val x: Self) extends AnyVal {
+  implicit class PartialCommentMarginsMutableBuilder[Self <: PartialCommentMargins] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInset(value: js.Array[Number]): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsetVarargs(value: Number*): Self = StObject.set(x, "inset", js.Array(value :_*))
     
     @scala.inline
-    def setInsetVarargs(value: Number*): Self = this.set("inset", js.Array(value :_*))
+    def setInsetmode(value: auto | custom): Self = StObject.set(x, "insetmode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInset(value: js.Array[Number]): Self = this.set("inset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInset: Self = this.set("inset", js.undefined)
-    
-    @scala.inline
-    def setInsetmode(value: auto | custom): Self = this.set("insetmode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsetmode: Self = this.set("insetmode", js.undefined)
+    def setInsetmodeUndefined: Self = StObject.set(x, "insetmode", js.undefined)
   }
 }

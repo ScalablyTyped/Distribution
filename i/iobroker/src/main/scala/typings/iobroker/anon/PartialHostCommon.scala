@@ -3,13 +3,14 @@ package typings.iobroker.anon
 import typings.iobroker.iobrokerBooleans.`true`
 import typings.iobroker.iobrokerStrings.JavascriptSlashNodeDotjs
 import typings.iobroker.iobrokerStrings.`js-controller`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.HostCommon> */
 @js.native
-trait PartialHostCommon extends js.Object {
+trait PartialHostCommon extends StObject {
   
   var address: js.UndefOr[js.Array[String]] = js.native
   
@@ -46,93 +47,81 @@ object PartialHostCommon {
   }
   
   @scala.inline
-  implicit class PartialHostCommonOps[Self <: PartialHostCommon] (val x: Self) extends AnyVal {
+  implicit class PartialHostCommonMutableBuilder[Self <: PartialHostCommon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: js.Array[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value :_*))
     
     @scala.inline
-    def setAddressVarargs(value: String*): Self = this.set("address", js.Array(value :_*))
+    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: js.Array[String]): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmd(value: String): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    def setDontDeleteUndefined: Self = StObject.set(x, "dontDelete", js.undefined)
     
     @scala.inline
-    def deleteCmd: Self = this.set("cmd", js.undefined)
+    def setExpert(value: `true`): Self = StObject.set(x, "expert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDontDelete(value: `true`): Self = this.set("dontDelete", value.asInstanceOf[js.Any])
+    def setExpertUndefined: Self = StObject.set(x, "expert", js.undefined)
     
     @scala.inline
-    def deleteDontDelete: Self = this.set("dontDelete", js.undefined)
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpert(value: `true`): Self = this.set("expert", value.asInstanceOf[js.Any])
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def deleteExpert: Self = this.set("expert", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setInstalledVersion(value: String): Self = StObject.set(x, "installedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setInstalledVersionUndefined: Self = StObject.set(x, "installedVersion", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalledVersion(value: String): Self = this.set("installedVersion", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInstalledVersion: Self = this.set("installedVersion", js.undefined)
+    def setPlatform(value: JavascriptSlashNodeDotjs): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: JavascriptSlashNodeDotjs): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setType(value: `js-controller`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: `js-controller`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

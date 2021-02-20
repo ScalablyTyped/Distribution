@@ -2,22 +2,24 @@ package typings.antlr4
 
 import typings.antlr4.recognizerMod.Recognizer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antlr4/error/ErrorStrategy", JSImport.Namespace)
-@js.native
-object errorStrategyMod extends js.Object {
+object errorStrategyMod {
   
+  @JSImport("antlr4/error/ErrorStrategy", "BailErrorStrategy")
   @js.native
   class BailErrorStrategy () extends ErrorStrategy
   
+  @JSImport("antlr4/error/ErrorStrategy", "DefaultErrorStrategy")
   @js.native
   class DefaultErrorStrategy () extends ErrorStrategy
   
+  @JSImport("antlr4/error/ErrorStrategy", "ErrorStrategy")
   @js.native
-  class ErrorStrategy () extends js.Object {
+  class ErrorStrategy () extends StObject {
     
     def inErrorRecoveryMode(recognizer: Recognizer): Unit = js.native
     

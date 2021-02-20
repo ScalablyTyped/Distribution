@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1OperatorMetadata extends js.Object {
+trait GoogleCloudDatalabelingV1beta1OperatorMetadata extends StObject {
   
   /** Comments from contributors. */
   var comments: js.UndefOr[js.Array[String]] = js.native
@@ -28,45 +29,33 @@ object GoogleCloudDatalabelingV1beta1OperatorMetadata {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1OperatorMetadataOps[Self <: GoogleCloudDatalabelingV1beta1OperatorMetadata] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1OperatorMetadataMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1OperatorMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: String*): Self = this.set("comments", js.Array(value :_*))
+    def setLabelVotes(value: Double): Self = StObject.set(x, "labelVotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[String]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setLabelVotesUndefined: Self = StObject.set(x, "labelVotes", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelVotes(value: Double): Self = this.set("labelVotes", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def deleteLabelVotes: Self = this.set("labelVotes", js.undefined)
+    def setTotalVotes(value: Double): Self = StObject.set(x, "totalVotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
-    
-    @scala.inline
-    def setTotalVotes(value: Double): Self = this.set("totalVotes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalVotes: Self = this.set("totalVotes", js.undefined)
+    def setTotalVotesUndefined: Self = StObject.set(x, "totalVotes", js.undefined)
   }
 }

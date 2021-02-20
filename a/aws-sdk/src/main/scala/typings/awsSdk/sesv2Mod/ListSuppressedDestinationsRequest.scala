@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSuppressedDestinationsRequest extends js.Object {
+trait ListSuppressedDestinationsRequest extends StObject {
   
   /**
     * Used to filter the list of suppressed email destinations so that it only includes addresses that were added to the list before a specific date. The date that you specify should be in Unix time format.
@@ -41,51 +42,39 @@ object ListSuppressedDestinationsRequest {
   }
   
   @scala.inline
-  implicit class ListSuppressedDestinationsRequestOps[Self <: ListSuppressedDestinationsRequest] (val x: Self) extends AnyVal {
+  implicit class ListSuppressedDestinationsRequestMutableBuilder[Self <: ListSuppressedDestinationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: Timestamp): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("EndDate", js.undefined)
+    def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setReasons(value: SuppressionListReasons): Self = StObject.set(x, "Reasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: MaxItems): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    def setReasonsUndefined: Self = StObject.set(x, "Reasons", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    def setReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "Reasons", js.Array(value :_*))
     
     @scala.inline
-    def setReasonsVarargs(value: SuppressionListReason*): Self = this.set("Reasons", js.Array(value :_*))
+    def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasons(value: SuppressionListReasons): Self = this.set("Reasons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasons: Self = this.set("Reasons", js.undefined)
-    
-    @scala.inline
-    def setStartDate(value: Timestamp): Self = this.set("StartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+    def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
   }
 }

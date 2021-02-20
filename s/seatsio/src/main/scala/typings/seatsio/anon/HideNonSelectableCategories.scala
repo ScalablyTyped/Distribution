@@ -1,11 +1,12 @@
 package typings.seatsio.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HideNonSelectableCategories extends js.Object {
+trait HideNonSelectableCategories extends StObject {
   
   var hideNonSelectableCategories: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object HideNonSelectableCategories {
   }
   
   @scala.inline
-  implicit class HideNonSelectableCategoriesOps[Self <: HideNonSelectableCategories] (val x: Self) extends AnyVal {
+  implicit class HideNonSelectableCategoriesMutableBuilder[Self <: HideNonSelectableCategories] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHideNonSelectableCategories(value: Boolean): Self = StObject.set(x, "hideNonSelectableCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideNonSelectableCategoriesUndefined: Self = StObject.set(x, "hideNonSelectableCategories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHidePricing(value: Boolean): Self = StObject.set(x, "hidePricing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideNonSelectableCategories(value: Boolean): Self = this.set("hideNonSelectableCategories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideNonSelectableCategories: Self = this.set("hideNonSelectableCategories", js.undefined)
-    
-    @scala.inline
-    def setHidePricing(value: Boolean): Self = this.set("hidePricing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHidePricing: Self = this.set("hidePricing", js.undefined)
+    def setHidePricingUndefined: Self = StObject.set(x, "hidePricing", js.undefined)
   }
 }

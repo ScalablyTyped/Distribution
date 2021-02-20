@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.viz.chartPointObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Point extends js.Object {
+trait Point extends StObject {
   
   var point: js.UndefOr[chartPointObject] = js.native
   
@@ -23,36 +24,24 @@ object Point {
   }
   
   @scala.inline
-  implicit class PointOps[Self <: Point] (val x: Self) extends AnyVal {
+  implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPoint(value: chartPointObject): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: typings.std.Date | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: chartPointObject): Self = this.set("point", value.asInstanceOf[js.Any])
+    def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePoint: Self = this.set("point", js.undefined)
+    def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
     
     @scala.inline
-    def setValue(value: typings.std.Date | Double | String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueText(value: String): Self = this.set("valueText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueText: Self = this.set("valueText", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

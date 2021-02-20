@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryFactory extends js.Object {
+trait QueryFactory extends StObject {
   
   /**
     * Returns all bodies whose vertices contain the given point, from the given set of bodies.

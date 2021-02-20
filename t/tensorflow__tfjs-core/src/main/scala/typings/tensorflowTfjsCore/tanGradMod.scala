@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/gradients/Tan_grad", JSImport.Namespace)
-@js.native
-object tanGradMod extends js.Object {
+object tanGradMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/gradients/Tan_grad", "tanGradConfig")
+  @js.native
   val tanGradConfig: GradConfig = js.native
 }

@@ -2,13 +2,14 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Query
 
 import typings.microsoftSdkSoap.mod.global.Sdk.Collection
 import typings.microsoftSdkSoap.mod.global.Sdk.ColumnSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Query.LinkEntity")
 @js.native
-class LinkEntity protected () extends js.Object {
+class LinkEntity protected () extends StObject {
   /**
     * Initializes a new instance of the Sdk.Query.LinkEntity class setting the required properties.
     * @param linkFromEntityName The logical name of the entity to link from.

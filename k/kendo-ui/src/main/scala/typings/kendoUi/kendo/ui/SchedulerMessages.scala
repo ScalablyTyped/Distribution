@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerMessages extends js.Object {
+trait SchedulerMessages extends StObject {
   
   var allDay: js.UndefOr[String] = js.native
   
@@ -60,150 +61,138 @@ object SchedulerMessages {
   }
   
   @scala.inline
-  implicit class SchedulerMessagesOps[Self <: SchedulerMessages] (val x: Self) extends AnyVal {
+  implicit class SchedulerMessagesMutableBuilder[Self <: SchedulerMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllDay(value: String): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAriaEventLabel(value: String): Self = StObject.set(x, "ariaEventLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllDay(value: String): Self = this.set("allDay", value.asInstanceOf[js.Any])
+    def setAriaEventLabelUndefined: Self = StObject.set(x, "ariaEventLabel", js.undefined)
     
     @scala.inline
-    def deleteAllDay: Self = this.set("allDay", js.undefined)
+    def setAriaSlotLabel(value: String): Self = StObject.set(x, "ariaSlotLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaEventLabel(value: String): Self = this.set("ariaEventLabel", value.asInstanceOf[js.Any])
+    def setAriaSlotLabelUndefined: Self = StObject.set(x, "ariaSlotLabel", js.undefined)
     
     @scala.inline
-    def deleteAriaEventLabel: Self = this.set("ariaEventLabel", js.undefined)
+    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaSlotLabel(value: String): Self = this.set("ariaSlotLabel", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteAriaSlotLabel: Self = this.set("ariaSlotLabel", js.undefined)
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setDefaultRowText(value: String): Self = StObject.set(x, "defaultRowText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDefaultRowTextUndefined: Self = StObject.set(x, "defaultRowText", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setDeleteWindowTitle(value: String): Self = StObject.set(x, "deleteWindowTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRowText(value: String): Self = this.set("defaultRowText", value.asInstanceOf[js.Any])
+    def setDeleteWindowTitleUndefined: Self = StObject.set(x, "deleteWindowTitle", js.undefined)
     
     @scala.inline
-    def deleteDefaultRowText: Self = this.set("defaultRowText", js.undefined)
+    def setDestroy(value: String): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteWindowTitle(value: String): Self = this.set("deleteWindowTitle", value.asInstanceOf[js.Any])
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteDeleteWindowTitle: Self = this.set("deleteWindowTitle", js.undefined)
+    def setEditable(value: SchedulerMessagesEditable): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: String): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setEditor(value: SchedulerMessagesEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: SchedulerMessagesEditable): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
     @scala.inline
-    def deleteEditable: Self = this.set("editable", js.undefined)
+    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditor(value: SchedulerMessagesEditor): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteEditor: Self = this.set("editor", js.undefined)
+    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: String): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setPdf(value: String): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
+    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
     @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPdf(value: String): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
     @scala.inline
-    def deletePdf: Self = this.set("pdf", js.undefined)
+    def setRecurrenceEditor(value: SchedulerMessagesRecurrenceEditor): Self = StObject.set(x, "recurrenceEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevious(value: String): Self = this.set("previous", value.asInstanceOf[js.Any])
+    def setRecurrenceEditorUndefined: Self = StObject.set(x, "recurrenceEditor", js.undefined)
     
     @scala.inline
-    def deletePrevious: Self = this.set("previous", js.undefined)
+    def setRecurrenceMessages(value: SchedulerMessagesRecurrenceMessages): Self = StObject.set(x, "recurrenceMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrenceEditor(value: SchedulerMessagesRecurrenceEditor): Self = this.set("recurrenceEditor", value.asInstanceOf[js.Any])
+    def setRecurrenceMessagesUndefined: Self = StObject.set(x, "recurrenceMessages", js.undefined)
     
     @scala.inline
-    def deleteRecurrenceEditor: Self = this.set("recurrenceEditor", js.undefined)
+    def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrenceMessages(value: SchedulerMessagesRecurrenceMessages): Self = this.set("recurrenceMessages", value.asInstanceOf[js.Any])
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
     @scala.inline
-    def deleteRecurrenceMessages: Self = this.set("recurrenceMessages", js.undefined)
+    def setShowFullDay(value: String): Self = StObject.set(x, "showFullDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: String): Self = this.set("save", value.asInstanceOf[js.Any])
+    def setShowFullDayUndefined: Self = StObject.set(x, "showFullDay", js.undefined)
     
     @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
+    def setShowWorkDay(value: String): Self = StObject.set(x, "showWorkDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFullDay(value: String): Self = this.set("showFullDay", value.asInstanceOf[js.Any])
+    def setShowWorkDayUndefined: Self = StObject.set(x, "showWorkDay", js.undefined)
     
     @scala.inline
-    def deleteShowFullDay: Self = this.set("showFullDay", js.undefined)
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowWorkDay(value: String): Self = this.set("showWorkDay", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteShowWorkDay: Self = this.set("showWorkDay", js.undefined)
+    def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
     
     @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setViews(value: SchedulerMessagesViews): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToday(value: String): Self = this.set("today", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToday: Self = this.set("today", js.undefined)
-    
-    @scala.inline
-    def setViews(value: SchedulerMessagesViews): Self = this.set("views", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViews: Self = this.set("views", js.undefined)
+    def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.active
 import typings.devtoolsProtocol.devtoolsProtocolStrings.frozen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.frozen
   - typings.devtoolsProtocol.devtoolsProtocolStrings.active
 */
-trait SetWebLifecycleStateRequestState extends js.Object
+trait SetWebLifecycleStateRequestState extends StObject
 object SetWebLifecycleStateRequestState {
   
   @scala.inline

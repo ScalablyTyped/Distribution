@@ -3,12 +3,13 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFFacetSearchFlags
 import typings.mfiles.MFiles.MFFullTextSearchFlags
 import typings.mfiles.MFiles.MFSearchFlags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultObjectSearchOperationsAsync extends js.Object {
+trait IVaultObjectSearchOperationsAsync extends StObject {
   
   def FindFile(RelativePath: String, UpdateFromServer: Boolean): Unit = js.native
   def FindFile(

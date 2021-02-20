@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestCase extends js.Object {
+trait TestCase extends StObject {
   
   /**
     *  The number of nanoseconds it took to run this test case. 
@@ -56,66 +57,54 @@ object TestCase {
   }
   
   @scala.inline
-  implicit class TestCaseOps[Self <: TestCase] (val x: Self) extends AnyVal {
+  implicit class TestCaseMutableBuilder[Self <: TestCase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationInNanoSeconds(value: WrapperLong): Self = StObject.set(x, "durationInNanoSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationInNanoSecondsUndefined: Self = StObject.set(x, "durationInNanoSeconds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationInNanoSeconds(value: WrapperLong): Self = this.set("durationInNanoSeconds", value.asInstanceOf[js.Any])
+    def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
     
     @scala.inline
-    def deleteDurationInNanoSeconds: Self = this.set("durationInNanoSeconds", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpired(value: Timestamp): Self = this.set("expired", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteExpired: Self = this.set("expired", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReportArn(value: NonEmptyString): Self = StObject.set(x, "reportArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setReportArnUndefined: Self = StObject.set(x, "reportArn", js.undefined)
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportArn(value: NonEmptyString): Self = this.set("reportArn", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteReportArn: Self = this.set("reportArn", js.undefined)
+    def setTestRawDataPath(value: String): Self = StObject.set(x, "testRawDataPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTestRawDataPath(value: String): Self = this.set("testRawDataPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestRawDataPath: Self = this.set("testRawDataPath", js.undefined)
+    def setTestRawDataPathUndefined: Self = StObject.set(x, "testRawDataPath", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.dashjs.mod
 
 import typings.std.MediaKeySession
 import typings.std.MediaKeyStatusMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionToken extends js.Object {
+trait SessionToken extends StObject {
   
   def getExpirationTime(): Double = js.native
   
@@ -37,36 +38,24 @@ object SessionToken {
   }
   
   @scala.inline
-  implicit class SessionTokenOps[Self <: SessionToken] (val x: Self) extends AnyVal {
+  implicit class SessionTokenMutableBuilder[Self <: SessionToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetExpirationTime(value: () => Double): Self = StObject.set(x, "getExpirationTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetKeyStatuses(value: () => MediaKeyStatusMap): Self = StObject.set(x, "getKeyStatuses", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSessionID(value: () => String): Self = StObject.set(x, "getSessionID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetExpirationTime(value: () => Double): Self = this.set("getExpirationTime", js.Any.fromFunction0(value))
+    def setGetSessionType(value: () => String): Self = StObject.set(x, "getSessionType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetKeyStatuses(value: () => MediaKeyStatusMap): Self = this.set("getKeyStatuses", js.Any.fromFunction0(value))
+    def setInitData(value: js.Any): Self = StObject.set(x, "initData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSessionID(value: () => String): Self = this.set("getSessionID", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSessionType(value: () => String): Self = this.set("getSessionType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInitData(value: js.Any): Self = this.set("initData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: MediaKeySession): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setSession(value: MediaKeySession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

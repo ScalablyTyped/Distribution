@@ -1,11 +1,12 @@
 package typings.three.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geometries extends js.Object {
+trait Geometries extends StObject {
   
   var geometries: js.Any = js.native
   
@@ -24,30 +25,18 @@ object Geometries {
   }
   
   @scala.inline
-  implicit class GeometriesOps[Self <: Geometries] (val x: Self) extends AnyVal {
+  implicit class GeometriesMutableBuilder[Self <: Geometries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeometries(value: js.Any): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImages(value: js.Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaterials(value: js.Any): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometries(value: js.Any): Self = this.set("geometries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImages(value: js.Any): Self = this.set("images", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaterials(value: js.Any): Self = this.set("materials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextures(value: js.Any): Self = this.set("textures", value.asInstanceOf[js.Any])
+    def setTextures(value: js.Any): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
   }
 }

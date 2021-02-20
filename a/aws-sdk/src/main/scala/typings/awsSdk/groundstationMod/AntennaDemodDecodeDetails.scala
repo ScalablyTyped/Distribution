@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AntennaDemodDecodeDetails extends js.Object {
+trait AntennaDemodDecodeDetails extends StObject {
   
   /**
     * Name of an antenna demod decode output node used in a contact.
@@ -21,24 +22,12 @@ object AntennaDemodDecodeDetails {
   }
   
   @scala.inline
-  implicit class AntennaDemodDecodeDetailsOps[Self <: AntennaDemodDecodeDetails] (val x: Self) extends AnyVal {
+  implicit class AntennaDemodDecodeDetailsMutableBuilder[Self <: AntennaDemodDecodeDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutputNode(value: String): Self = StObject.set(x, "outputNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutputNode(value: String): Self = this.set("outputNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputNode: Self = this.set("outputNode", js.undefined)
+    def setOutputNodeUndefined: Self = StObject.set(x, "outputNode", js.undefined)
   }
 }

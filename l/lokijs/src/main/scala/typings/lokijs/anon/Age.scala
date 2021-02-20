@@ -1,11 +1,12 @@
 package typings.lokijs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Age extends js.Object {
+trait Age extends StObject {
   
   var age: js.Any = js.native
   
@@ -22,27 +23,15 @@ object Age {
   }
   
   @scala.inline
-  implicit class AgeOps[Self <: Age] (val x: Self) extends AnyVal {
+  implicit class AgeMutableBuilder[Self <: Age] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAge(value: js.Any): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaemon(value: js.Any): Self = StObject.set(x, "daemon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAge(value: js.Any): Self = this.set("age", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDaemon(value: js.Any): Self = this.set("daemon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTtlInterval(value: js.Any): Self = this.set("ttlInterval", value.asInstanceOf[js.Any])
+    def setTtlInterval(value: js.Any): Self = StObject.set(x, "ttlInterval", value.asInstanceOf[js.Any])
   }
 }

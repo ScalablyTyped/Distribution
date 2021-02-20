@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnMovedEventUIParam extends js.Object {
+trait ColumnMovedEventUIParam extends StObject {
   
   /**
     * Gets the column key of the column that was moved.
@@ -36,42 +37,30 @@ object ColumnMovedEventUIParam {
   }
   
   @scala.inline
-  implicit class ColumnMovedEventUIParamOps[Self <: ColumnMovedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ColumnMovedEventUIParamMutableBuilder[Self <: ColumnMovedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnKey(value: String): Self = this.set("columnKey", value.asInstanceOf[js.Any])
+    def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
     
     @scala.inline
-    def deleteColumnKey: Self = this.set("columnKey", js.undefined)
+    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewIndex(value: Double): Self = this.set("newIndex", value.asInstanceOf[js.Any])
+    def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
     
     @scala.inline
-    def deleteNewIndex: Self = this.set("newIndex", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldIndex(value: Double): Self = this.set("oldIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldIndex: Self = this.set("oldIndex", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

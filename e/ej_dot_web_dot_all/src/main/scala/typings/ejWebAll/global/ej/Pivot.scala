@@ -1,15 +1,15 @@
 package typings.ejWebAll.global.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.Pivot")
-@js.native
-object Pivot extends js.Object {
+object Pivot {
   
+  @JSGlobal("ej.Pivot.AnalysisMode")
   @js.native
-  object AnalysisMode extends js.Object {
+  object AnalysisMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Pivot.AnalysisMode with Double] = js.native
@@ -19,8 +19,9 @@ object Pivot extends js.Object {
     /* 1 */ val Pivot: typings.ejWebAll.ej.Pivot.AnalysisMode.Pivot with Double = js.native
   }
   
+  @JSGlobal("ej.Pivot.OperationalMode")
   @js.native
-  object OperationalMode extends js.Object {
+  object OperationalMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Pivot.OperationalMode with Double] = js.native

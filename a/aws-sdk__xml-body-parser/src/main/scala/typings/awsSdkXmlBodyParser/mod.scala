@@ -1,17 +1,17 @@
 package typings.awsSdkXmlBodyParser
 
 import typings.awsSdkTypes.utilMod.Decoder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/xml-body-parser", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodyParser * / any */ @js.native
-  class XmlBodyParser protected () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodyParser * / any */ @JSImport("@aws-sdk/xml-body-parser", "XmlBodyParser")
+  @js.native
+  class XmlBodyParser protected () extends StObject {
     def this(base64Decoder: Decoder) = this()
     
     val base64Decoder: js.Any = js.native

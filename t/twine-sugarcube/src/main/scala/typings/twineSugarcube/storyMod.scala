@@ -2,16 +2,15 @@ package typings.twineSugarcube
 
 import typings.twineSugarcube.extensionsMod.global.Array
 import typings.twineSugarcube.passageMod.Passage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twine-sugarcube/story", JSImport.Namespace)
-@js.native
-object storyMod extends js.Object {
+object storyMod {
   
   @js.native
-  trait StoryAPI extends js.Object {
+  trait StoryAPI extends StObject {
     
     /**
       * The DOM ID of the story (created from the slugified story title).

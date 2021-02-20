@@ -17,6 +17,7 @@ import typings.prettier.prettierStrings.none
 import typings.prettier.prettierStrings.off
 import typings.prettier.prettierStrings.preserve
 import typings.prettier.prettierStrings.strict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -181,84 +182,72 @@ object RequiredOptions {
   }
   
   @scala.inline
-  implicit class RequiredOptionsOps[Self <: RequiredOptions] (val x: Self) extends AnyVal {
+  implicit class RequiredOptionsMutableBuilder[Self <: RequiredOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrowParens(value: avoid | always): Self = StObject.set(x, "arrowParens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBracketSpacing(value: Boolean): Self = StObject.set(x, "bracketSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbeddedLanguageFormatting(value: auto | off): Self = StObject.set(x, "embeddedLanguageFormatting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowParens(value: avoid | always): Self = this.set("arrowParens", value.asInstanceOf[js.Any])
+    def setEndOfLine(value: auto | lf | crlf | cr): Self = StObject.set(x, "endOfLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBracketSpacing(value: Boolean): Self = this.set("bracketSpacing", value.asInstanceOf[js.Any])
+    def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedLanguageFormatting(value: auto | off): Self = this.set("embeddedLanguageFormatting", value.asInstanceOf[js.Any])
+    def setHtmlWhitespaceSensitivity(value: css | strict | ignore): Self = StObject.set(x, "htmlWhitespaceSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOfLine(value: auto | lf | crlf | cr): Self = this.set("endOfLine", value.asInstanceOf[js.Any])
+    def setInsertPragma(value: Boolean): Self = StObject.set(x, "insertPragma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilepath(value: String): Self = this.set("filepath", value.asInstanceOf[js.Any])
+    def setJsxBracketSameLine(value: Boolean): Self = StObject.set(x, "jsxBracketSameLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlWhitespaceSensitivity(value: css | strict | ignore): Self = this.set("htmlWhitespaceSensitivity", value.asInstanceOf[js.Any])
+    def setJsxSingleQuote(value: Boolean): Self = StObject.set(x, "jsxSingleQuote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertPragma(value: Boolean): Self = this.set("insertPragma", value.asInstanceOf[js.Any])
+    def setParser(value: (LiteralUnion[BuiltInParserName, String]) | CustomParser): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsxBracketSameLine(value: Boolean): Self = this.set("jsxBracketSameLine", value.asInstanceOf[js.Any])
+    def setParserFunction3(value: (/* text */ String, /* parsers */ BuiltInParsers, /* options */ Options) => AST): Self = StObject.set(x, "parser", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setJsxSingleQuote(value: Boolean): Self = this.set("jsxSingleQuote", value.asInstanceOf[js.Any])
+    def setPlugins(value: js.Array[String | Plugin[_]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParserFunction3(value: (/* text */ String, /* parsers */ BuiltInParsers, /* options */ Options) => AST): Self = this.set("parser", js.Any.fromFunction3(value))
+    def setPluginsVarargs(value: (String | Plugin[js.Any])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setParser(value: (LiteralUnion[BuiltInParserName, String]) | CustomParser): Self = this.set("parser", value.asInstanceOf[js.Any])
+    def setProseWrap(value: always | never | preserve): Self = StObject.set(x, "proseWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluginsVarargs(value: (String | Plugin[js.Any])*): Self = this.set("plugins", js.Array(value :_*))
+    def setQuoteProps(value: `as-needed` | consistent | preserve): Self = StObject.set(x, "quoteProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Array[String | Plugin[_]]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setRangeEnd(value: Double): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProseWrap(value: always | never | preserve): Self = this.set("proseWrap", value.asInstanceOf[js.Any])
+    def setRangeStart(value: Double): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuoteProps(value: `as-needed` | consistent | preserve): Self = this.set("quoteProps", value.asInstanceOf[js.Any])
+    def setRequirePragma(value: Boolean): Self = StObject.set(x, "requirePragma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeEnd(value: Double): Self = this.set("rangeEnd", value.asInstanceOf[js.Any])
+    def setSemi(value: Boolean): Self = StObject.set(x, "semi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeStart(value: Double): Self = this.set("rangeStart", value.asInstanceOf[js.Any])
+    def setSingleQuote(value: Boolean): Self = StObject.set(x, "singleQuote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequirePragma(value: Boolean): Self = this.set("requirePragma", value.asInstanceOf[js.Any])
+    def setTrailingComma(value: none | es5 | all): Self = StObject.set(x, "trailingComma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemi(value: Boolean): Self = this.set("semi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingleQuote(value: Boolean): Self = this.set("singleQuote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrailingComma(value: none | es5 | all): Self = this.set("trailingComma", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVueIndentScriptAndStyle(value: Boolean): Self = this.set("vueIndentScriptAndStyle", value.asInstanceOf[js.Any])
+    def setVueIndentScriptAndStyle(value: Boolean): Self = StObject.set(x, "vueIndentScriptAndStyle", value.asInstanceOf[js.Any])
   }
 }

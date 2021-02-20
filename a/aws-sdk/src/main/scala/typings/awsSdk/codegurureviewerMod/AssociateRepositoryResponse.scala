@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateRepositoryResponse extends js.Object {
+trait AssociateRepositoryResponse extends StObject {
   
   /**
     * Information about the repository association.
@@ -26,30 +27,18 @@ object AssociateRepositoryResponse {
   }
   
   @scala.inline
-  implicit class AssociateRepositoryResponseOps[Self <: AssociateRepositoryResponse] (val x: Self) extends AnyVal {
+  implicit class AssociateRepositoryResponseMutableBuilder[Self <: AssociateRepositoryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepositoryAssociation(value: RepositoryAssociation): Self = StObject.set(x, "RepositoryAssociation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepositoryAssociationUndefined: Self = StObject.set(x, "RepositoryAssociation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryAssociation(value: RepositoryAssociation): Self = this.set("RepositoryAssociation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryAssociation: Self = this.set("RepositoryAssociation", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProtocolsListData extends js.Object {
+trait ProtocolsListData extends StObject {
   
   /**
     * The time that the AWS Firewall Manager protocols list was created.
@@ -51,57 +52,45 @@ object ProtocolsListData {
   }
   
   @scala.inline
-  implicit class ProtocolsListDataOps[Self <: ProtocolsListData] (val x: Self) extends AnyVal {
+  implicit class ProtocolsListDataMutableBuilder[Self <: ProtocolsListData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: TimeStamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastUpdateTime(value: TimeStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListName(value: ResourceName): Self = this.set("ListName", value.asInstanceOf[js.Any])
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
     @scala.inline
-    def setProtocolsListVarargs(value: Protocol*): Self = this.set("ProtocolsList", js.Array(value :_*))
+    def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolsList(value: ProtocolsList): Self = this.set("ProtocolsList", value.asInstanceOf[js.Any])
+    def setListIdUndefined: Self = StObject.set(x, "ListId", js.undefined)
     
     @scala.inline
-    def setCreateTime(value: TimeStamp): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    def setListName(value: ResourceName): Self = StObject.set(x, "ListName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    def setListUpdateToken(value: UpdateToken): Self = StObject.set(x, "ListUpdateToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: TimeStamp): Self = this.set("LastUpdateTime", value.asInstanceOf[js.Any])
+    def setListUpdateTokenUndefined: Self = StObject.set(x, "ListUpdateToken", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateTime: Self = this.set("LastUpdateTime", js.undefined)
+    def setPreviousProtocolsList(value: PreviousProtocolsList): Self = StObject.set(x, "PreviousProtocolsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListId(value: ListId): Self = this.set("ListId", value.asInstanceOf[js.Any])
+    def setPreviousProtocolsListUndefined: Self = StObject.set(x, "PreviousProtocolsList", js.undefined)
     
     @scala.inline
-    def deleteListId: Self = this.set("ListId", js.undefined)
+    def setProtocolsList(value: ProtocolsList): Self = StObject.set(x, "ProtocolsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListUpdateToken(value: UpdateToken): Self = this.set("ListUpdateToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListUpdateToken: Self = this.set("ListUpdateToken", js.undefined)
-    
-    @scala.inline
-    def setPreviousProtocolsList(value: PreviousProtocolsList): Self = this.set("PreviousProtocolsList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousProtocolsList: Self = this.set("PreviousProtocolsList", js.undefined)
+    def setProtocolsListVarargs(value: Protocol*): Self = StObject.set(x, "ProtocolsList", js.Array(value :_*))
   }
 }

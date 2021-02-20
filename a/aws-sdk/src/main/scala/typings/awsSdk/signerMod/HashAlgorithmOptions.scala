@@ -1,11 +1,12 @@
 package typings.awsSdk.signerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HashAlgorithmOptions extends js.Object {
+trait HashAlgorithmOptions extends StObject {
   
   /**
     * The set of accepted hash algorithms allowed in a code signing job.
@@ -26,27 +27,15 @@ object HashAlgorithmOptions {
   }
   
   @scala.inline
-  implicit class HashAlgorithmOptionsOps[Self <: HashAlgorithmOptions] (val x: Self) extends AnyVal {
+  implicit class HashAlgorithmOptionsMutableBuilder[Self <: HashAlgorithmOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedValues(value: HashAlgorithms): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedValuesVarargs(value: HashAlgorithm*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowedValuesVarargs(value: HashAlgorithm*): Self = this.set("allowedValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setAllowedValues(value: HashAlgorithms): Self = this.set("allowedValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultValue(value: HashAlgorithm): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: HashAlgorithm): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
   }
 }

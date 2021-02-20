@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRdsDbDomainMembership extends js.Object {
+trait AwsRdsDbDomainMembership extends StObject {
   
   /**
     * The identifier of the Active Directory domain.
@@ -36,42 +37,30 @@ object AwsRdsDbDomainMembership {
   }
   
   @scala.inline
-  implicit class AwsRdsDbDomainMembershipOps[Self <: AwsRdsDbDomainMembership] (val x: Self) extends AnyVal {
+  implicit class AwsRdsDbDomainMembershipMutableBuilder[Self <: AwsRdsDbDomainMembership] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: NonEmptyString): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFqdn(value: NonEmptyString): Self = StObject.set(x, "Fqdn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: NonEmptyString): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    def setFqdnUndefined: Self = StObject.set(x, "Fqdn", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
+    def setIamRoleName(value: NonEmptyString): Self = StObject.set(x, "IamRoleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFqdn(value: NonEmptyString): Self = this.set("Fqdn", value.asInstanceOf[js.Any])
+    def setIamRoleNameUndefined: Self = StObject.set(x, "IamRoleName", js.undefined)
     
     @scala.inline
-    def deleteFqdn: Self = this.set("Fqdn", js.undefined)
+    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRoleName(value: NonEmptyString): Self = this.set("IamRoleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIamRoleName: Self = this.set("IamRoleName", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

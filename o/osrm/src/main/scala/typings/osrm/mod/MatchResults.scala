@@ -1,11 +1,12 @@
 package typings.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchResults extends js.Object {
+trait MatchResults extends StObject {
   
   var matchings: js.Array[MatchRoute] = js.native
   
@@ -20,30 +21,18 @@ object MatchResults {
   }
   
   @scala.inline
-  implicit class MatchResultsOps[Self <: MatchResults] (val x: Self) extends AnyVal {
+  implicit class MatchResultsMutableBuilder[Self <: MatchResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchings(value: js.Array[MatchRoute]): Self = StObject.set(x, "matchings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchingsVarargs(value: MatchRoute*): Self = StObject.set(x, "matchings", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTracepoints(value: js.Array[MatchWaypoint]): Self = StObject.set(x, "tracepoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchingsVarargs(value: MatchRoute*): Self = this.set("matchings", js.Array(value :_*))
-    
-    @scala.inline
-    def setMatchings(value: js.Array[MatchRoute]): Self = this.set("matchings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTracepointsVarargs(value: MatchWaypoint*): Self = this.set("tracepoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setTracepoints(value: js.Array[MatchWaypoint]): Self = this.set("tracepoints", value.asInstanceOf[js.Any])
+    def setTracepointsVarargs(value: MatchWaypoint*): Self = StObject.set(x, "tracepoints", js.Array(value :_*))
   }
 }

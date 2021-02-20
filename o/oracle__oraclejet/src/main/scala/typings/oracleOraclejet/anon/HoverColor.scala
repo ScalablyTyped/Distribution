@@ -8,12 +8,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.off
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.outer
 import typings.oracleOraclejet.oracleOraclejetStrings.rotated
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HoverColor extends js.Object {
+trait HoverColor extends StObject {
   
   var borderColor: String = js.native
   
@@ -55,48 +56,36 @@ object HoverColor {
   }
   
   @scala.inline
-  implicit class HoverColorOps[Self <: HoverColor] (val x: Self) extends AnyVal {
+  implicit class HoverColorMutableBuilder[Self <: HoverColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setLabelDisplay(value: horizontal | rotated | off | auto): Self = StObject.set(x, "labelDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setLabelHalign(value: inner | outer | center): Self = StObject.set(x, "labelHalign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverColor(value: String): Self = this.set("hoverColor", value.asInstanceOf[js.Any])
+    def setLabelMinLength(value: Double): Self = StObject.set(x, "labelMinLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDisplay(value: horizontal | rotated | off | auto): Self = this.set("labelDisplay", value.asInstanceOf[js.Any])
+    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelHalign(value: inner | outer | center): Self = this.set("labelHalign", value.asInstanceOf[js.Any])
+    def setSelectedInnerColor(value: String): Self = StObject.set(x, "selectedInnerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMinLength(value: Double): Self = this.set("labelMinLength", value.asInstanceOf[js.Any])
+    def setSelectedOuterColor(value: String): Self = StObject.set(x, "selectedOuterColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: js.Object): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedInnerColor(value: String): Self = this.set("selectedInnerColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedOuterColor(value: String): Self = this.set("selectedOuterColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowDisclosure(value: on | off): Self = this.set("showDisclosure", value.asInstanceOf[js.Any])
+    def setShowDisclosure(value: on | off): Self = StObject.set(x, "showDisclosure", value.asInstanceOf[js.Any])
   }
 }

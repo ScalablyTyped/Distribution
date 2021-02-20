@@ -8,13 +8,12 @@ import typings.node.http2Mod.Http2ServerResponse
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fastify/types/serverFactory", JSImport.Namespace)
-@js.native
-object serverFactoryMod extends js.Object {
+object serverFactoryMod {
   
   type FastifyServerFactory[RawServer /* <: RawServerBase */] = js.Function2[
     /* handler */ FastifyServerFactoryHandler[

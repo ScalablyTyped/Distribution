@@ -1,11 +1,12 @@
 package typings.inversify.interfacesMod.interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindingTypeEnum extends js.Object {
+trait BindingTypeEnum extends StObject {
   
   var ConstantValue: BindingType = js.native
   
@@ -41,42 +42,30 @@ object BindingTypeEnum {
   }
   
   @scala.inline
-  implicit class BindingTypeEnumOps[Self <: BindingTypeEnum] (val x: Self) extends AnyVal {
+  implicit class BindingTypeEnumMutableBuilder[Self <: BindingTypeEnum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstantValue(value: BindingType): Self = StObject.set(x, "ConstantValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstructor(value: BindingType): Self = StObject.set(x, "Constructor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamicValue(value: BindingType): Self = StObject.set(x, "DynamicValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstantValue(value: BindingType): Self = this.set("ConstantValue", value.asInstanceOf[js.Any])
+    def setFactory(value: BindingType): Self = StObject.set(x, "Factory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstructor(value: BindingType): Self = this.set("Constructor", value.asInstanceOf[js.Any])
+    def setFunction(value: BindingType): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicValue(value: BindingType): Self = this.set("DynamicValue", value.asInstanceOf[js.Any])
+    def setInstance(value: BindingType): Self = StObject.set(x, "Instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactory(value: BindingType): Self = this.set("Factory", value.asInstanceOf[js.Any])
+    def setInvalid(value: BindingType): Self = StObject.set(x, "Invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: BindingType): Self = this.set("Function", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstance(value: BindingType): Self = this.set("Instance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInvalid(value: BindingType): Self = this.set("Invalid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvider(value: BindingType): Self = this.set("Provider", value.asInstanceOf[js.Any])
+    def setProvider(value: BindingType): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
   }
 }

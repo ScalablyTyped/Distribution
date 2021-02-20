@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAuthn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveCredentialRequest extends js.Object {
+trait RemoveCredentialRequest extends StObject {
   
   var authenticatorId: AuthenticatorId = js.native
   
@@ -20,24 +21,12 @@ object RemoveCredentialRequest {
   }
   
   @scala.inline
-  implicit class RemoveCredentialRequestOps[Self <: RemoveCredentialRequest] (val x: Self) extends AnyVal {
+  implicit class RemoveCredentialRequestMutableBuilder[Self <: RemoveCredentialRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuthenticatorId(value: AuthenticatorId): Self = this.set("authenticatorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCredentialId(value: String): Self = this.set("credentialId", value.asInstanceOf[js.Any])
+    def setCredentialId(value: String): Self = StObject.set(x, "credentialId", value.asInstanceOf[js.Any])
   }
 }

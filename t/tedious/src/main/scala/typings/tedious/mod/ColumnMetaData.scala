@@ -1,11 +1,12 @@
 package typings.tedious.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnMetaData extends js.Object {
+trait ColumnMetaData extends StObject {
   
   /**
     * The column's name
@@ -42,42 +43,30 @@ object ColumnMetaData {
   }
   
   @scala.inline
-  implicit class ColumnMetaDataOps[Self <: ColumnMetaData] (val x: Self) extends AnyVal {
+  implicit class ColumnMetaDataMutableBuilder[Self <: ColumnMetaData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataLengthUndefined: Self = StObject.set(x, "dataLength", js.undefined)
     
     @scala.inline
-    def setColName(value: String): Self = this.set("colName", value.asInstanceOf[js.Any])
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ColumnType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def setDataLength(value: Double): Self = this.set("dataLength", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataLength: Self = this.set("dataLength", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setType(value: ColumnType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

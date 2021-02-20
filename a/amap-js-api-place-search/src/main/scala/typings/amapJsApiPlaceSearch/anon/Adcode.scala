@@ -4,12 +4,13 @@ import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Discount
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Groupbuy
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.PoiPhoto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Adcode extends js.Object {
+trait Adcode extends StObject {
   
   /**
     * 所在区域编码
@@ -113,87 +114,75 @@ object Adcode {
   }
   
   @scala.inline
-  implicit class AdcodeOps[Self <: Adcode] (val x: Self) extends AnyVal {
+  implicit class AdcodeMutableBuilder[Self <: Adcode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdname(value: String): Self = StObject.set(x, "adname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdcode(value: String): Self = this.set("adcode", value.asInstanceOf[js.Any])
+    def setCityname(value: String): Self = StObject.set(x, "cityname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdname(value: String): Self = this.set("adname", value.asInstanceOf[js.Any])
+    def setDiscount(value: Boolean): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCitycode(value: String): Self = this.set("citycode", value.asInstanceOf[js.Any])
+    def setDiscounts(value: js.Array[Discount]): Self = StObject.set(x, "discounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCityname(value: String): Self = this.set("cityname", value.asInstanceOf[js.Any])
+    def setDiscountsUndefined: Self = StObject.set(x, "discounts", js.undefined)
     
     @scala.inline
-    def setDiscount(value: Boolean): Self = this.set("discount", value.asInstanceOf[js.Any])
+    def setDiscountsVarargs(value: Discount*): Self = StObject.set(x, "discounts", js.Array(value :_*))
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupbuy(value: Boolean): Self = this.set("groupbuy", value.asInstanceOf[js.Any])
+    def setEntr_location(value: LngLat): Self = StObject.set(x, "entr_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcode(value: String): Self = this.set("pcode", value.asInstanceOf[js.Any])
+    def setEntr_locationNull: Self = StObject.set(x, "entr_location", null)
     
     @scala.inline
-    def setPhotosVarargs(value: PoiPhoto*): Self = this.set("photos", js.Array(value :_*))
+    def setExit_location(value: LngLat): Self = StObject.set(x, "exit_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotos(value: js.Array[PoiPhoto]): Self = this.set("photos", value.asInstanceOf[js.Any])
+    def setExit_locationNull: Self = StObject.set(x, "exit_location", null)
     
     @scala.inline
-    def setPname(value: String): Self = this.set("pname", value.asInstanceOf[js.Any])
+    def setGroupbuy(value: Boolean): Self = StObject.set(x, "groupbuy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostcode(value: String): Self = this.set("postcode", value.asInstanceOf[js.Any])
+    def setGroupbuys(value: js.Array[Groupbuy]): Self = StObject.set(x, "groupbuys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
+    def setGroupbuysUndefined: Self = StObject.set(x, "groupbuys", js.undefined)
     
     @scala.inline
-    def setDiscountsVarargs(value: Discount*): Self = this.set("discounts", js.Array(value :_*))
+    def setGroupbuysVarargs(value: Groupbuy*): Self = StObject.set(x, "groupbuys", js.Array(value :_*))
     
     @scala.inline
-    def setDiscounts(value: js.Array[Discount]): Self = this.set("discounts", value.asInstanceOf[js.Any])
+    def setPcode(value: String): Self = StObject.set(x, "pcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDiscounts: Self = this.set("discounts", js.undefined)
+    def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntr_location(value: LngLat): Self = this.set("entr_location", value.asInstanceOf[js.Any])
+    def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
     
     @scala.inline
-    def setEntr_locationNull: Self = this.set("entr_location", null)
+    def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExit_location(value: LngLat): Self = this.set("exit_location", value.asInstanceOf[js.Any])
+    def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExit_locationNull: Self = this.set("exit_location", null)
-    
-    @scala.inline
-    def setGroupbuysVarargs(value: Groupbuy*): Self = this.set("groupbuys", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroupbuys(value: js.Array[Groupbuy]): Self = this.set("groupbuys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupbuys: Self = this.set("groupbuys", js.undefined)
+    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
   }
 }

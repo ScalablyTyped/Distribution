@@ -1,12 +1,13 @@
 package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthOptions extends js.Object {
+trait AuthOptions extends StObject {
   
   /** The authorization master key to use to create the client. */
   var masterKey: js.UndefOr[String] = js.native
@@ -26,39 +27,27 @@ object AuthOptions {
   }
   
   @scala.inline
-  implicit class AuthOptionsOps[Self <: AuthOptions] (val x: Self) extends AnyVal {
+  implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMasterKey(value: String): Self = StObject.set(x, "masterKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMasterKeyUndefined: Self = StObject.set(x, "masterKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermissionFeed(value: js.Array[Permission]): Self = StObject.set(x, "permissionFeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterKey(value: String): Self = this.set("masterKey", value.asInstanceOf[js.Any])
+    def setPermissionFeedUndefined: Self = StObject.set(x, "permissionFeed", js.undefined)
     
     @scala.inline
-    def deleteMasterKey: Self = this.set("masterKey", js.undefined)
+    def setPermissionFeedVarargs(value: Permission*): Self = StObject.set(x, "permissionFeed", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionFeedVarargs(value: Permission*): Self = this.set("permissionFeed", js.Array(value :_*))
+    def setResourceTokens(value: StringDictionary[String]): Self = StObject.set(x, "resourceTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionFeed(value: js.Array[Permission]): Self = this.set("permissionFeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissionFeed: Self = this.set("permissionFeed", js.undefined)
-    
-    @scala.inline
-    def setResourceTokens(value: StringDictionary[String]): Self = this.set("resourceTokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceTokens: Self = this.set("resourceTokens", js.undefined)
+    def setResourceTokensUndefined: Self = StObject.set(x, "resourceTokens", js.undefined)
   }
 }

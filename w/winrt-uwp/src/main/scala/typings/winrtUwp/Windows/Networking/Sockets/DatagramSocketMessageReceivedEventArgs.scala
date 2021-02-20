@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Networking.Sockets
 import typings.winrtUwp.Windows.Networking.HostName
 import typings.winrtUwp.Windows.Storage.Streams.DataReader
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a MessageReceived event on a DatagramSocket . */
 @js.native
-trait DatagramSocketMessageReceivedEventArgs extends js.Object {
+trait DatagramSocketMessageReceivedEventArgs extends StObject {
   
   /**
     * Gets a DataReader object to read incoming data received from the remote network destination on a DatagramSocket object.
@@ -47,33 +48,21 @@ object DatagramSocketMessageReceivedEventArgs {
   }
   
   @scala.inline
-  implicit class DatagramSocketMessageReceivedEventArgsOps[Self <: DatagramSocketMessageReceivedEventArgs] (val x: Self) extends AnyVal {
+  implicit class DatagramSocketMessageReceivedEventArgsMutableBuilder[Self <: DatagramSocketMessageReceivedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDataReader(value: () => DataReader): Self = StObject.set(x, "getDataReader", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDataStream(value: () => IInputStream): Self = StObject.set(x, "getDataStream", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalAddress(value: HostName): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDataReader(value: () => DataReader): Self = this.set("getDataReader", js.Any.fromFunction0(value))
+    def setRemoteAddress(value: HostName): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDataStream(value: () => IInputStream): Self = this.set("getDataStream", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLocalAddress(value: HostName): Self = this.set("localAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteAddress(value: HostName): Self = this.set("remoteAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemotePort(value: String): Self = this.set("remotePort", value.asInstanceOf[js.Any])
+    def setRemotePort(value: String): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
   }
 }

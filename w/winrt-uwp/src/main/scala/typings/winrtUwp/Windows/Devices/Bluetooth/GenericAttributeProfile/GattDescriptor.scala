@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 import typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothCacheMode
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Descriptor of a GATT Characteristic. */
 @js.native
-trait GattDescriptor extends js.Object {
+trait GattDescriptor extends StObject {
   
   /** Gets the GATT Attribute handle used to uniquely identify this attribute on the GATT Server Device. */
   var attributeHandle: Double = js.native

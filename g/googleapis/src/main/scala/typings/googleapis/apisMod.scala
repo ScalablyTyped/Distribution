@@ -349,18 +349,20 @@ import typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alpha
 import typings.googleapis.youtubeAnalyticsV1Mod.youtubeAnalyticsV1.Youtubeanalytics
 import typings.googleapis.youtubeV3Mod.youtubeV3.Youtube
 import typings.googleapis.youtubereportingV1Mod.youtubereportingV1.Youtubereporting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("googleapis/build/src/apis", JSImport.Namespace)
-@js.native
-object apisMod extends js.Object {
+object apisMod {
   
+  @JSImport("googleapis/build/src/apis", "APIS")
+  @js.native
   val APIS: APIList = js.native
   
+  @JSImport("googleapis/build/src/apis", "GeneratedAPIs")
   @js.native
-  class GeneratedAPIs () extends js.Object {
+  class GeneratedAPIs () extends StObject {
     
     def abusiveexperiencereport(options: Options): Abusiveexperiencereport = js.native
     @JSName("abusiveexperiencereport")

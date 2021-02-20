@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Positions extends js.Object {
+trait Positions extends StObject {
   
   var dots: js.UndefOr[Double] = js.native
   
@@ -26,45 +27,33 @@ object Positions {
   }
   
   @scala.inline
-  implicit class PositionsOps[Self <: Positions] (val x: Self) extends AnyVal {
+  implicit class PositionsMutableBuilder[Self <: Positions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDots(value: Double): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setPositions(value: js.Array[Fret]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionsVarargs(value: Fret*): Self = this.set("positions", js.Array(value :_*))
+    def setPositionsVarargs(value: Fret*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
     @scala.inline
-    def setPositions(value: js.Array[Fret]): Self = this.set("positions", value.asInstanceOf[js.Any])
+    def setStem_direction(value: Double): Self = StObject.set(x, "stem_direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDots(value: Double): Self = this.set("dots", value.asInstanceOf[js.Any])
+    def setStem_directionUndefined: Self = StObject.set(x, "stem_direction", js.undefined)
     
     @scala.inline
-    def deleteDots: Self = this.set("dots", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStem_direction(value: Double): Self = this.set("stem_direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStem_direction: Self = this.set("stem_direction", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

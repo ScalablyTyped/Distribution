@@ -1,11 +1,12 @@
 package typings.node.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Debug extends js.Object {
+trait Debug extends StObject {
   
   var debug: Boolean = js.native
   
@@ -41,42 +42,30 @@ object Debug {
   }
   
   @scala.inline
-  implicit class DebugOps[Self <: Debug] (val x: Self) extends AnyVal {
+  implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInspector(value: Boolean): Self = StObject.set(x, "inspector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpv6(value: Boolean): Self = StObject.set(x, "ipv6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspector(value: Boolean): Self = this.set("inspector", value.asInstanceOf[js.Any])
+    def setTls_alpn(value: Boolean): Self = StObject.set(x, "tls_alpn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6(value: Boolean): Self = this.set("ipv6", value.asInstanceOf[js.Any])
+    def setTls_ocsp(value: Boolean): Self = StObject.set(x, "tls_ocsp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTls(value: Boolean): Self = this.set("tls", value.asInstanceOf[js.Any])
+    def setTls_sni(value: Boolean): Self = StObject.set(x, "tls_sni", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTls_alpn(value: Boolean): Self = this.set("tls_alpn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTls_ocsp(value: Boolean): Self = this.set("tls_ocsp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTls_sni(value: Boolean): Self = this.set("tls_sni", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUv(value: Boolean): Self = this.set("uv", value.asInstanceOf[js.Any])
+    def setUv(value: Boolean): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
   }
 }

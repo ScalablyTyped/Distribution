@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrainingMetrics extends js.Object {
+trait TrainingMetrics extends StObject {
   
   /**
     * The area under the curve. This summarizes true positive rate (TPR) and false positive rate (FPR) across all possible model score thresholds. A model with no predictive power has an AUC of 0.5, whereas a perfect model has a score of 1.0.
@@ -26,33 +27,21 @@ object TrainingMetrics {
   }
   
   @scala.inline
-  implicit class TrainingMetricsOps[Self <: TrainingMetrics] (val x: Self) extends AnyVal {
+  implicit class TrainingMetricsMutableBuilder[Self <: TrainingMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuc(value: float): Self = StObject.set(x, "auc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAucUndefined: Self = StObject.set(x, "auc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricDataPoints(value: metricDataPointsList): Self = StObject.set(x, "metricDataPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuc(value: float): Self = this.set("auc", value.asInstanceOf[js.Any])
+    def setMetricDataPointsUndefined: Self = StObject.set(x, "metricDataPoints", js.undefined)
     
     @scala.inline
-    def deleteAuc: Self = this.set("auc", js.undefined)
-    
-    @scala.inline
-    def setMetricDataPointsVarargs(value: MetricDataPoint*): Self = this.set("metricDataPoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetricDataPoints(value: metricDataPointsList): Self = this.set("metricDataPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricDataPoints: Self = this.set("metricDataPoints", js.undefined)
+    def setMetricDataPointsVarargs(value: MetricDataPoint*): Self = StObject.set(x, "metricDataPoints", js.Array(value :_*))
   }
 }

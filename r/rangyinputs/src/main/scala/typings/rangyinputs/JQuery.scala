@@ -4,12 +4,13 @@ import typings.rangyinputs.RangyInputs.Selection
 import typings.rangyinputs.rangyinputsStrings.collapseToEnd
 import typings.rangyinputs.rangyinputsStrings.collapseToStart
 import typings.rangyinputs.rangyinputsStrings.select
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /** Collapses the selection to an insertion point (caret) either at the start of the current selection if toStart is true or the end of the current selection otherwise. */
   def collapseSelection(): JQuery = js.native

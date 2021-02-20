@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticalTreeBindingAdapter extends js.Object {
+trait AnalyticalTreeBindingAdapter extends StObject {
   
   /**
     * Retrieves the currently set number of expanded levels from the Binding (commonly an
@@ -42,27 +43,15 @@ object AnalyticalTreeBindingAdapter {
   }
   
   @scala.inline
-  implicit class AnalyticalTreeBindingAdapterOps[Self <: AnalyticalTreeBindingAdapter] (val x: Self) extends AnyVal {
+  implicit class AnalyticalTreeBindingAdapterMutableBuilder[Self <: AnalyticalTreeBindingAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNumberOfExpandedLevels(value: () => Double): Self = StObject.set(x, "getNumberOfExpandedLevels", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasTotaledMeasures(value: () => Boolean): Self = StObject.set(x, "hasTotaledMeasures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetNumberOfExpandedLevels(value: () => Double): Self = this.set("getNumberOfExpandedLevels", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasTotaledMeasures(value: () => Boolean): Self = this.set("hasTotaledMeasures", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetNumberOfExpandedLevels(value: Double => Unit): Self = this.set("setNumberOfExpandedLevels", js.Any.fromFunction1(value))
+    def setSetNumberOfExpandedLevels(value: Double => Unit): Self = StObject.set(x, "setNumberOfExpandedLevels", js.Any.fromFunction1(value))
   }
 }

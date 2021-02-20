@@ -1,12 +1,13 @@
 package typings.playerframework.global.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PlayerFramework.InteractionType")
 @js.native
-object InteractionType extends js.Object {
+object InteractionType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.playerframework.PlayerFramework.InteractionType with Double] = js.native

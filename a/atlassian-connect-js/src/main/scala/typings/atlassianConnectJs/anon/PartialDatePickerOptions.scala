@@ -2,13 +2,14 @@ package typings.atlassianConnectJs.anon
 
 import typings.std.Date
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<atlassian-connect-js.AP.jira.DatePickerOptions> */
 @js.native
-trait PartialDatePickerOptions extends js.Object {
+trait PartialDatePickerOptions extends StObject {
   
   var date: js.UndefOr[String] = js.native
   
@@ -29,48 +30,36 @@ object PartialDatePickerOptions {
   }
   
   @scala.inline
-  implicit class PartialDatePickerOptionsOps[Self <: PartialDatePickerOptions] (val x: Self) extends AnyVal {
+  implicit class PartialDatePickerOptionsMutableBuilder[Self <: PartialDatePickerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setOnSelect(value: (/* isoDate */ String, /* date */ Date) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSelect(value: (/* isoDate */ String, /* date */ Date) => Unit): Self = this.set("onSelect", js.Any.fromFunction2(value))
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setShowTime(value: Boolean): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Left): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setShowTime(value: Boolean): Self = this.set("showTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowTime: Self = this.set("showTime", js.undefined)
+    def setShowTimeUndefined: Self = StObject.set(x, "showTime", js.undefined)
   }
 }

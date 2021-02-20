@@ -1,5 +1,6 @@
 package typings.reactSketchapp.propsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,51 +29,39 @@ object TextPathProps {
   }
   
   @scala.inline
-  implicit class TextPathPropsOps[Self <: TextPathProps] (val x: Self) extends AnyVal {
+  implicit class TextPathPropsMutableBuilder[Self <: TextPathProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setMidLine(value: MidLine): Self = StObject.set(x, "midLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: Method): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setMidLineUndefined: Self = StObject.set(x, "midLine", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setSide(value: Side): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMidLine(value: MidLine): Self = this.set("midLine", value.asInstanceOf[js.Any])
+    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
     @scala.inline
-    def deleteMidLine: Self = this.set("midLine", js.undefined)
+    def setSpacing(value: Spacing): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSide(value: Side): Self = this.set("side", value.asInstanceOf[js.Any])
+    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
     @scala.inline
-    def deleteSide: Self = this.set("side", js.undefined)
+    def setStartOffset(value: StartOffset): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacing(value: Spacing): Self = this.set("spacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacing: Self = this.set("spacing", js.undefined)
-    
-    @scala.inline
-    def setStartOffset(value: StartOffset): Self = this.set("startOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartOffset: Self = this.set("startOffset", js.undefined)
+    def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
   }
 }

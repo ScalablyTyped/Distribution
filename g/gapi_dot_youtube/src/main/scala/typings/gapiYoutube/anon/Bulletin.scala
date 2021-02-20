@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bulletin extends js.Object {
+trait Bulletin extends StObject {
   
   /**
     * The bulletin object contains details about a channel bulletin post. This object is only present if the snippet.type is bulletin.
@@ -77,48 +78,36 @@ object Bulletin {
   }
   
   @scala.inline
-  implicit class BulletinOps[Self <: Bulletin] (val x: Self) extends AnyVal {
+  implicit class BulletinMutableBuilder[Self <: Bulletin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulletin(value: ResourceIdKindPlaylistId): Self = StObject.set(x, "bulletin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelItem(value: `0`): Self = StObject.set(x, "channelItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment(value: ResourceIdChannelIdKind): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulletin(value: ResourceIdKindPlaylistId): Self = this.set("bulletin", value.asInstanceOf[js.Any])
+    def setFavorite(value: ResourceId): Self = StObject.set(x, "favorite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelItem(value: `0`): Self = this.set("channelItem", value.asInstanceOf[js.Any])
+    def setLike(value: ResourceId): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: ResourceIdChannelIdKind): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setPlaylistItem(value: PlaylistId): Self = StObject.set(x, "playlistItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFavorite(value: ResourceId): Self = this.set("favorite", value.asInstanceOf[js.Any])
+    def setRecommendation(value: Reason): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLike(value: ResourceId): Self = this.set("like", value.asInstanceOf[js.Any])
+    def setSocial(value: Author): Self = StObject.set(x, "social", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaylistItem(value: PlaylistId): Self = this.set("playlistItem", value.asInstanceOf[js.Any])
+    def setSubscription(value: ResourceIdChannelIdString): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendation(value: Reason): Self = this.set("recommendation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSocial(value: Author): Self = this.set("social", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscription(value: ResourceIdChannelIdString): Self = this.set("subscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpload(value: VideoId): Self = this.set("upload", value.asInstanceOf[js.Any])
+    def setUpload(value: VideoId): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
   }
 }

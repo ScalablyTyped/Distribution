@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountSignatureProviderOption extends js.Object {
+trait AccountSignatureProviderOption extends StObject {
   
   /**
     * Reserved for DocuSign.
@@ -31,36 +32,24 @@ object AccountSignatureProviderOption {
   }
   
   @scala.inline
-  implicit class AccountSignatureProviderOptionOps[Self <: AccountSignatureProviderOption] (val x: Self) extends AnyVal {
+  implicit class AccountSignatureProviderOptionMutableBuilder[Self <: AccountSignatureProviderOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSignatureProviderOptionDisplayName(value: String): Self = StObject.set(x, "signatureProviderOptionDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignatureProviderOptionDisplayNameUndefined: Self = StObject.set(x, "signatureProviderOptionDisplayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignatureProviderOptionId(value: String): Self = StObject.set(x, "signatureProviderOptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureProviderOptionDisplayName(value: String): Self = this.set("signatureProviderOptionDisplayName", value.asInstanceOf[js.Any])
+    def setSignatureProviderOptionIdUndefined: Self = StObject.set(x, "signatureProviderOptionId", js.undefined)
     
     @scala.inline
-    def deleteSignatureProviderOptionDisplayName: Self = this.set("signatureProviderOptionDisplayName", js.undefined)
+    def setSignatureProviderOptionName(value: String): Self = StObject.set(x, "signatureProviderOptionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureProviderOptionId(value: String): Self = this.set("signatureProviderOptionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignatureProviderOptionId: Self = this.set("signatureProviderOptionId", js.undefined)
-    
-    @scala.inline
-    def setSignatureProviderOptionName(value: String): Self = this.set("signatureProviderOptionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignatureProviderOptionName: Self = this.set("signatureProviderOptionName", js.undefined)
+    def setSignatureProviderOptionNameUndefined: Self = StObject.set(x, "signatureProviderOptionName", js.undefined)
   }
 }

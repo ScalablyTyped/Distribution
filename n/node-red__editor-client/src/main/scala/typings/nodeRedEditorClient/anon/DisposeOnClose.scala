@@ -1,12 +1,13 @@
 package typings.nodeRedEditorClient.anon
 
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.compact
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisposeOnClose extends js.Object {
+trait DisposeOnClose extends StObject {
   
   var disposeOnClose: js.UndefOr[Boolean] = js.native
   
@@ -25,45 +26,33 @@ object DisposeOnClose {
   }
   
   @scala.inline
-  implicit class DisposeOnCloseOps[Self <: DisposeOnClose] (val x: Self) extends AnyVal {
+  implicit class DisposeOnCloseMutableBuilder[Self <: DisposeOnClose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisposeOnClose(value: Boolean): Self = StObject.set(x, "disposeOnClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisposeOnCloseUndefined: Self = StObject.set(x, "disposeOnClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnclose(value: /* v */ Boolean => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisposeOnClose(value: Boolean): Self = this.set("disposeOnClose", value.asInstanceOf[js.Any])
+    def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
     
     @scala.inline
-    def deleteDisposeOnClose: Self = this.set("disposeOnClose", js.undefined)
+    def setOptions(value: js.Array[Onselect]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnclose(value: /* v */ Boolean => Unit): Self = this.set("onclose", js.Any.fromFunction1(value))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOnclose: Self = this.set("onclose", js.undefined)
+    def setOptionsVarargs(value: Onselect*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: Onselect*): Self = this.set("options", js.Array(value :_*))
+    def setStyle(value: compact): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[Onselect]): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: compact): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

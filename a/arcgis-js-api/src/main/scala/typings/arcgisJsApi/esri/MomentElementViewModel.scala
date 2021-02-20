@@ -2,12 +2,13 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MomentElementViewModel extends js.Object {
+trait MomentElementViewModel extends StObject {
   
   /**
     * The current state of the widget.
@@ -32,24 +33,12 @@ object MomentElementViewModel {
   }
   
   @scala.inline
-  implicit class MomentElementViewModelOps[Self <: MomentElementViewModel] (val x: Self) extends AnyVal {
+  implicit class MomentElementViewModelMutableBuilder[Self <: MomentElementViewModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setState(value: ready): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setState(value: ready): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Date): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

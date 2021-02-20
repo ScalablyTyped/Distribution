@@ -1,17 +1,18 @@
 package typings.officeJs.OneNote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NoteTagType extends js.Object
+sealed trait NoteTagType extends StObject
 /**
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.NoteTagType")
 @js.native
-object NoteTagType extends js.Object {
+object NoteTagType extends StObject {
   
   @js.native
   sealed trait address extends NoteTagType

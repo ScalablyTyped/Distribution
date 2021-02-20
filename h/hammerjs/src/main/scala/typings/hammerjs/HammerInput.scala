@@ -4,12 +4,13 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.PointerEvent
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HammerInput extends js.Object {
+trait HammerInput extends StObject {
   
   /** Angle moved. */
   var angle: Double = js.native
@@ -123,102 +124,90 @@ object HammerInput {
   }
   
   @scala.inline
-  implicit class HammerInputOps[Self <: HammerInput] (val x: Self) extends AnyVal {
+  implicit class HammerInputMutableBuilder[Self <: HammerInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenter(value: HammerPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangedPointers(value: js.Array[_]): Self = StObject.set(x, "changedPointers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setChangedPointersVarargs(value: js.Any*): Self = StObject.set(x, "changedPointers", js.Array(value :_*))
     
     @scala.inline
-    def setCenter(value: HammerPoint): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setDeltaTime(value: Double): Self = StObject.set(x, "deltaTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedPointersVarargs(value: js.Any*): Self = this.set("changedPointers", js.Array(value :_*))
+    def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedPointers(value: js.Array[_]): Self = this.set("changedPointers", value.asInstanceOf[js.Any])
+    def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaTime(value: Double): Self = this.set("deltaTime", value.asInstanceOf[js.Any])
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeltaX(value: Double): Self = this.set("deltaX", value.asInstanceOf[js.Any])
+    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaY(value: Double): Self = this.set("deltaY", value.asInstanceOf[js.Any])
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setEventType(value: Double): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEventType(value: Double): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: () => Unit): Self = this.set("handler", js.Any.fromFunction0(value))
+    def setIsFirst(value: Boolean): Self = StObject.set(x, "isFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
+    def setOffsetDirection(value: Double): Self = StObject.set(x, "offsetDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFinal(value: Boolean): Self = this.set("isFinal", value.asInstanceOf[js.Any])
+    def setPointerType(value: String): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFirst(value: Boolean): Self = this.set("isFirst", value.asInstanceOf[js.Any])
+    def setPointers(value: js.Array[_]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetDirection(value: Double): Self = this.set("offsetDirection", value.asInstanceOf[js.Any])
+    def setPointersVarargs(value: js.Any*): Self = StObject.set(x, "pointers", js.Array(value :_*))
     
     @scala.inline
-    def setPointerType(value: String): Self = this.set("pointerType", value.asInstanceOf[js.Any])
+    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointersVarargs(value: js.Any*): Self = this.set("pointers", js.Array(value :_*))
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointers(value: js.Array[_]): Self = this.set("pointers", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventDefault(value: js.Function): Self = this.set("preventDefault", value.asInstanceOf[js.Any])
+    def setSrcEvent(value: TouchEvent | MouseEvent | PointerEvent): Self = StObject.set(x, "srcEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrcEvent(value: TouchEvent | MouseEvent | PointerEvent): Self = this.set("srcEvent", value.asInstanceOf[js.Any])
+    def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: HTMLElement): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVelocity(value: Double): Self = this.set("velocity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVelocityX(value: Double): Self = this.set("velocityX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVelocityY(value: Double): Self = this.set("velocityY", value.asInstanceOf[js.Any])
+    def setVelocityY(value: Double): Self = StObject.set(x, "velocityY", value.asInstanceOf[js.Any])
   }
 }

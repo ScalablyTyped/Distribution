@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CelebrityRecognition extends js.Object {
+trait CelebrityRecognition extends StObject {
   
   /**
     * Information about a recognized celebrity.
@@ -26,30 +27,18 @@ object CelebrityRecognition {
   }
   
   @scala.inline
-  implicit class CelebrityRecognitionOps[Self <: CelebrityRecognition] (val x: Self) extends AnyVal {
+  implicit class CelebrityRecognitionMutableBuilder[Self <: CelebrityRecognition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCelebrity(value: CelebrityDetail): Self = StObject.set(x, "Celebrity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCelebrityUndefined: Self = StObject.set(x, "Celebrity", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCelebrity(value: CelebrityDetail): Self = this.set("Celebrity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCelebrity: Self = this.set("Celebrity", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

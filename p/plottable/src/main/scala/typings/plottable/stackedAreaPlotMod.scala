@@ -3,14 +3,14 @@ package typings.plottable
 import typings.plottable.areaPlotMod.Area
 import typings.plottable.datasetMod.Dataset
 import typings.plottable.stackingUtilsMod.IStackingOrder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/plots/stackedAreaPlot", JSImport.Namespace)
-@js.native
-object stackedAreaPlotMod extends js.Object {
+object stackedAreaPlotMod {
   
+  @JSImport("plottable/build/src/plots/stackedAreaPlot", "StackedArea")
   @js.native
   /**
     * @constructor
@@ -56,8 +56,7 @@ object stackedAreaPlotMod extends js.Object {
     def yOffset(dataset: Dataset, x: js.Any): Double = js.native
   }
   /* static members */
-  @js.native
-  object StackedArea extends js.Object {
+  object StackedArea {
     
     /**
       * Given an array of Datasets and the accessor function for the key, computes the
@@ -68,6 +67,8 @@ object stackedAreaPlotMod extends js.Object {
       * @param {Accessor<any>} keyAccessor The accessor for the key of the data
       * @return {string[]} An array of stringified keys
       */
-    /* private */ def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = js.native
+    @JSImport("plottable/build/src/plots/stackedAreaPlot", "StackedArea._domainKeys")
+    @js.native
+    def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = js.native
   }
 }

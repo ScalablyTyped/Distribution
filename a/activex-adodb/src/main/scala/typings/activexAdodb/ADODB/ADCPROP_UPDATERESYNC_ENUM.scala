@@ -6,6 +6,7 @@ import typings.activexAdodb.activexAdodbNumbers.`1`
 import typings.activexAdodb.activexAdodbNumbers.`2`
 import typings.activexAdodb.activexAdodbNumbers.`4`
 import typings.activexAdodb.activexAdodbNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAdodb.activexAdodbNumbers.`0`
   - typings.activexAdodb.activexAdodbNumbers.`4`
 */
-trait ADCPROP_UPDATERESYNC_ENUM extends js.Object
+trait ADCPROP_UPDATERESYNC_ENUM extends StObject
 object ADCPROP_UPDATERESYNC_ENUM {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Favorites extends js.Object {
+trait Favorites extends StObject {
   
   /**
     * The ID of the playlist that contains the channels favorite videos.
@@ -41,33 +42,21 @@ object Favorites {
   }
   
   @scala.inline
-  implicit class FavoritesOps[Self <: Favorites] (val x: Self) extends AnyVal {
+  implicit class FavoritesMutableBuilder[Self <: Favorites] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFavorites(value: String): Self = StObject.set(x, "favorites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLikes(value: String): Self = StObject.set(x, "likes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUploads(value: String): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFavorites(value: String): Self = this.set("favorites", value.asInstanceOf[js.Any])
+    def setWatchHistory(value: String): Self = StObject.set(x, "watchHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLikes(value: String): Self = this.set("likes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploads(value: String): Self = this.set("uploads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWatchHistory(value: String): Self = this.set("watchHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWatchLater(value: String): Self = this.set("watchLater", value.asInstanceOf[js.Any])
+    def setWatchLater(value: String): Self = StObject.set(x, "watchLater", value.asInstanceOf[js.Any])
   }
 }

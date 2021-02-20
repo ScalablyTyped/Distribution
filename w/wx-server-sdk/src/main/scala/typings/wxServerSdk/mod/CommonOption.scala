@@ -1,11 +1,12 @@
 package typings.wxServerSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonOption[T] extends js.Object {
+trait CommonOption[T] extends StObject {
   
   var data: T = js.native
 }
@@ -18,21 +19,9 @@ object CommonOption {
   }
   
   @scala.inline
-  implicit class CommonOptionOps[Self <: CommonOption[_], T] (val x: Self with CommonOption[T]) extends AnyVal {
+  implicit class CommonOptionMutableBuilder[Self <: CommonOption[_], T] (val x: Self with CommonOption[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignatureSetup extends js.Object {
+trait SignatureSetup extends StObject {
   
   var AdditionalXml: String = js.native
   
@@ -58,57 +59,45 @@ object SignatureSetup {
   }
   
   @scala.inline
-  implicit class SignatureSetupOps[Self <: SignatureSetup] (val x: Self) extends AnyVal {
+  implicit class SignatureSetupMutableBuilder[Self <: SignatureSetup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalXml(value: String): Self = StObject.set(x, "AdditionalXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowComments(value: Boolean): Self = StObject.set(x, "AllowComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalXml(value: String): Self = this.set("AdditionalXml", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowComments(value: Boolean): Self = this.set("AllowComments", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setOfficeDotSignatureSetup_typekey(value: SignatureSetup): Self = StObject.set(x, "Office.SignatureSetup_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setShowSignDate(value: Boolean): Self = StObject.set(x, "ShowSignDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfficeDotSignatureSetup_typekey(value: SignatureSetup): Self = this.set("Office.SignatureSetup_typekey", value.asInstanceOf[js.Any])
+    def setSignatureProvider(value: String): Self = StObject.set(x, "SignatureProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    def setSigningInstructions(value: String): Self = StObject.set(x, "SigningInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSignDate(value: Boolean): Self = this.set("ShowSignDate", value.asInstanceOf[js.Any])
+    def setSuggestedSigner(value: String): Self = StObject.set(x, "SuggestedSigner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureProvider(value: String): Self = this.set("SignatureProvider", value.asInstanceOf[js.Any])
+    def setSuggestedSignerEmail(value: String): Self = StObject.set(x, "SuggestedSignerEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningInstructions(value: String): Self = this.set("SigningInstructions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedSigner(value: String): Self = this.set("SuggestedSigner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedSignerEmail(value: String): Self = this.set("SuggestedSignerEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedSignerLine2(value: String): Self = this.set("SuggestedSignerLine2", value.asInstanceOf[js.Any])
+    def setSuggestedSignerLine2(value: String): Self = StObject.set(x, "SuggestedSignerLine2", value.asInstanceOf[js.Any])
   }
 }

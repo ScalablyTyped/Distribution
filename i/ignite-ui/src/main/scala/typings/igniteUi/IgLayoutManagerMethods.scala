@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgLayoutManagerMethods extends js.Object {
+trait IgLayoutManagerMethods extends StObject {
   
   /**
     * Destroy is part of the jQuery UI widget API and does the following:

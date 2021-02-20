@@ -1,12 +1,13 @@
 package typings.typedoc.mod.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.InternalSymbolName")
 @js.native
-object InternalSymbolName extends js.Object {
+object InternalSymbolName extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.typescript.mod.InternalSymbolName with String] = js.native

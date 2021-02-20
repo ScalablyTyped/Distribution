@@ -6,12 +6,13 @@ import typings.awsSdk.dynamodbMod.ConsistentRead
 import typings.awsSdk.dynamodbMod.ExpressionAttributeNameMap
 import typings.awsSdk.dynamodbMod.ProjectionExpression
 import typings.awsSdk.dynamodbMod.ReturnConsumedCapacity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetItemOptions extends js.Object {
+trait GetItemOptions extends StObject {
   
   var AttributesToGet: js.UndefOr[AttributeNameList] = js.native
   
@@ -32,51 +33,39 @@ object GetItemOptions {
   }
   
   @scala.inline
-  implicit class GetItemOptionsOps[Self <: GetItemOptions] (val x: Self) extends AnyVal {
+  implicit class GetItemOptionsMutableBuilder[Self <: GetItemOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesToGetVarargs(value: AttributeName*): Self = this.set("AttributesToGet", js.Array(value :_*))
+    def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesToGet(value: AttributeNameList): Self = this.set("AttributesToGet", value.asInstanceOf[js.Any])
+    def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
     
     @scala.inline
-    def deleteAttributesToGet: Self = this.set("AttributesToGet", js.undefined)
+    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsistentRead(value: ConsistentRead): Self = this.set("ConsistentRead", value.asInstanceOf[js.Any])
+    def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
     
     @scala.inline
-    def deleteConsistentRead: Self = this.set("ConsistentRead", js.undefined)
+    def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = this.set("ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
     
     @scala.inline
-    def deleteExpressionAttributeNames: Self = this.set("ExpressionAttributeNames", js.undefined)
+    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectionExpression(value: ProjectionExpression): Self = this.set("ProjectionExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectionExpression: Self = this.set("ProjectionExpression", js.undefined)
-    
-    @scala.inline
-    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = this.set("ReturnConsumedCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnConsumedCapacity: Self = this.set("ReturnConsumedCapacity", js.undefined)
+    def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
   }
 }

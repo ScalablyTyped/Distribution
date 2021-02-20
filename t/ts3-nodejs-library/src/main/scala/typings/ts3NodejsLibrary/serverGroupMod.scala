@@ -10,14 +10,14 @@ import typings.ts3NodejsLibrary.responseTypesMod.ServerGroupClientEntry
 import typings.ts3NodejsLibrary.responseTypesMod.ServerGroupCopy
 import typings.ts3NodejsLibrary.responseTypesMod.ServerGroupEntry
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts3-nodejs-library/lib/node/ServerGroup", JSImport.Namespace)
-@js.native
-object serverGroupMod extends js.Object {
+object serverGroupMod {
   
+  @JSImport("ts3-nodejs-library/lib/node/ServerGroup", "TeamSpeakServerGroup")
   @js.native
   class TeamSpeakServerGroup protected () extends Abstract[ServerGroupEntry] {
     def this(parent: TeamSpeak, list: ServerGroupEntry) = this()
@@ -116,14 +116,19 @@ object serverGroupMod extends js.Object {
     def `type`: Double = js.native
   }
   /* static members */
-  @js.native
-  object TeamSpeakServerGroup extends js.Object {
+  object TeamSpeakServerGroup {
     
     /** retrieves the client id from a string or teamspeak client */
+    @JSImport("ts3-nodejs-library/lib/node/ServerGroup", "TeamSpeakServerGroup.getId")
+    @js.native
     def getId[T /* <: GroupType */](): js.UndefOr[String] = js.native
+    @JSImport("ts3-nodejs-library/lib/node/ServerGroup", "TeamSpeakServerGroup.getId")
+    @js.native
     def getId[T /* <: GroupType */](group: T): js.UndefOr[String] = js.native
     
     /** retrieves the clients from an array */
+    @JSImport("ts3-nodejs-library/lib/node/ServerGroup", "TeamSpeakServerGroup.getMultipleIds")
+    @js.native
     def getMultipleIds(groups: MultiGroupType): js.Array[String] = js.native
     
     type GroupType = String | TeamSpeakServerGroup

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.rxjs.mod.Subject
 import typings.rxjs.mod.Subscription
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,8 +37,3 @@ Instantiable0[EventEmitter[T]]
   def subscribe(generatorOrNext: js.Any, error: js.Any): Subscription = js.native
   def subscribe(generatorOrNext: js.Any, error: js.Any, complete: js.Any): Subscription = js.native
 }
-@JSImport("@angular/core", "EventEmitter")
-@js.native
-object EventEmitter
-  extends Instantiable0[EventEmitter[js.Any | js.Object]]
-     with Instantiable1[/* isAsync */ Boolean, EventEmitter[js.Any | js.Object]]

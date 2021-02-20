@@ -1,6 +1,7 @@
 package typings.oracleOraclejet.ojbuttonMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,27 +22,15 @@ object ojButtonsetSettablePropertiesLenient {
   }
   
   @scala.inline
-  implicit class ojButtonsetSettablePropertiesLenientOps[Self <: ojButtonsetSettablePropertiesLenient] (val x: Self) extends AnyVal {
+  implicit class ojButtonsetSettablePropertiesLenientMutableBuilder[Self <: ojButtonsetSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTranslationsNull: Self = StObject.set(x, "translations", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTranslations(value: js.Object): Self = this.set("translations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslations: Self = this.set("translations", js.undefined)
-    
-    @scala.inline
-    def setTranslationsNull: Self = this.set("translations", null)
+    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
   }
 }

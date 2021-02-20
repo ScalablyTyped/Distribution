@@ -17,6 +17,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.start
 import typings.oracleOraclejet.oracleOraclejetStrings.top
 import typings.oracleOraclejet.oracleOraclejetStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,138 +72,126 @@ object ojLegendSettablePropertiesLenient {
   }
   
   @scala.inline
-  implicit class ojLegendSettablePropertiesLenientOps[Self <: ojLegendSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojLegendSettablePropertiesLenient[K, D])) extends AnyVal {
+  implicit class ojLegendSettablePropertiesLenientMutableBuilder[Self <: ojLegendSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojLegendSettablePropertiesLenient[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setDataNull: Self = StObject.set(x, "data", null)
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setData(value: DataProvider[K, D]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDrilling(value: on | off): Self = StObject.set(x, "drilling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDrillingUndefined: Self = StObject.set(x, "drilling", js.undefined)
     
     @scala.inline
-    def setDataNull: Self = this.set("data", null)
+    def setExpanded(value: KeySet[K]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrilling(value: on | off): Self = this.set("drilling", value.asInstanceOf[js.Any])
+    def setExpandedNull: Self = StObject.set(x, "expanded", null)
     
     @scala.inline
-    def deleteDrilling: Self = this.set("drilling", js.undefined)
+    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     @scala.inline
-    def setExpanded(value: KeySet[K]): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    def setHalign(value: center | end | start): Self = StObject.set(x, "halign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    def setHalignUndefined: Self = StObject.set(x, "halign", js.undefined)
     
     @scala.inline
-    def setExpandedNull: Self = this.set("expanded", null)
+    def setHiddenCategories(value: js.Array[String]): Self = StObject.set(x, "hiddenCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHalign(value: center | end | start): Self = this.set("halign", value.asInstanceOf[js.Any])
+    def setHiddenCategoriesUndefined: Self = StObject.set(x, "hiddenCategories", js.undefined)
     
     @scala.inline
-    def deleteHalign: Self = this.set("halign", js.undefined)
+    def setHiddenCategoriesVarargs(value: String*): Self = StObject.set(x, "hiddenCategories", js.Array(value :_*))
     
     @scala.inline
-    def setHiddenCategoriesVarargs(value: String*): Self = this.set("hiddenCategories", js.Array(value :_*))
+    def setHideAndShowBehavior(value: on | off): Self = StObject.set(x, "hideAndShowBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenCategories(value: js.Array[String]): Self = this.set("hiddenCategories", value.asInstanceOf[js.Any])
+    def setHideAndShowBehaviorUndefined: Self = StObject.set(x, "hideAndShowBehavior", js.undefined)
     
     @scala.inline
-    def deleteHiddenCategories: Self = this.set("hiddenCategories", js.undefined)
+    def setHighlightedCategories(value: js.Array[String]): Self = StObject.set(x, "highlightedCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideAndShowBehavior(value: on | off): Self = this.set("hideAndShowBehavior", value.asInstanceOf[js.Any])
+    def setHighlightedCategoriesUndefined: Self = StObject.set(x, "highlightedCategories", js.undefined)
     
     @scala.inline
-    def deleteHideAndShowBehavior: Self = this.set("hideAndShowBehavior", js.undefined)
+    def setHighlightedCategoriesVarargs(value: String*): Self = StObject.set(x, "highlightedCategories", js.Array(value :_*))
     
     @scala.inline
-    def setHighlightedCategoriesVarargs(value: String*): Self = this.set("highlightedCategories", js.Array(value :_*))
+    def setHoverBehavior(value: dim | none): Self = StObject.set(x, "hoverBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightedCategories(value: js.Array[String]): Self = this.set("highlightedCategories", value.asInstanceOf[js.Any])
+    def setHoverBehaviorDelay(value: Double): Self = StObject.set(x, "hoverBehaviorDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighlightedCategories: Self = this.set("highlightedCategories", js.undefined)
+    def setHoverBehaviorDelayUndefined: Self = StObject.set(x, "hoverBehaviorDelay", js.undefined)
     
     @scala.inline
-    def setHoverBehavior(value: dim | none): Self = this.set("hoverBehavior", value.asInstanceOf[js.Any])
+    def setHoverBehaviorUndefined: Self = StObject.set(x, "hoverBehavior", js.undefined)
     
     @scala.inline
-    def deleteHoverBehavior: Self = this.set("hoverBehavior", js.undefined)
+    def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverBehaviorDelay(value: Double): Self = this.set("hoverBehaviorDelay", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteHoverBehaviorDelay: Self = this.set("hoverBehaviorDelay", js.undefined)
+    def setScrolling(value: off | asNeeded): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: horizontal | vertical): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setSymbolHeight(value: Double): Self = StObject.set(x, "symbolHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrolling(value: off | asNeeded): Self = this.set("scrolling", value.asInstanceOf[js.Any])
+    def setSymbolHeightUndefined: Self = StObject.set(x, "symbolHeight", js.undefined)
     
     @scala.inline
-    def deleteScrolling: Self = this.set("scrolling", js.undefined)
+    def setSymbolWidth(value: Double): Self = StObject.set(x, "symbolWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolHeight(value: Double): Self = this.set("symbolHeight", value.asInstanceOf[js.Any])
+    def setSymbolWidthUndefined: Self = StObject.set(x, "symbolWidth", js.undefined)
     
     @scala.inline
-    def deleteSymbolHeight: Self = this.set("symbolHeight", js.undefined)
+    def setTextStyle(value: js.Object): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolWidth(value: Double): Self = this.set("symbolWidth", value.asInstanceOf[js.Any])
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def deleteSymbolWidth: Self = this.set("symbolWidth", js.undefined)
+    def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextStyle(value: js.Object): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
     
     @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTranslations(value: LabelAndValue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackResize(value: on | off): Self = this.set("trackResize", value.asInstanceOf[js.Any])
+    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
     @scala.inline
-    def deleteTrackResize: Self = this.set("trackResize", js.undefined)
+    def setValign(value: middle | bottom | top): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslations(value: LabelAndValue): Self = this.set("translations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslations: Self = this.set("translations", js.undefined)
-    
-    @scala.inline
-    def setValign(value: middle | bottom | top): Self = this.set("valign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValign: Self = this.set("valign", js.undefined)
+    def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
   }
 }

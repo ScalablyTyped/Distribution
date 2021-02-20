@@ -1,6 +1,7 @@
 package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,33 +22,21 @@ object CollectionDefinition {
   }
   
   @scala.inline
-  implicit class CollectionDefinitionOps[Self <: CollectionDefinition] (val x: Self) extends AnyVal {
+  implicit class CollectionDefinitionMutableBuilder[Self <: CollectionDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfo(value: Id): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVariable(value: js.Array[VariableDefinition]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: Id): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
     @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
-    
-    @scala.inline
-    def setVariableVarargs(value: VariableDefinition*): Self = this.set("variable", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariable(value: js.Array[VariableDefinition]): Self = this.set("variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariable: Self = this.set("variable", js.undefined)
+    def setVariableVarargs(value: VariableDefinition*): Self = StObject.set(x, "variable", js.Array(value :_*))
   }
 }

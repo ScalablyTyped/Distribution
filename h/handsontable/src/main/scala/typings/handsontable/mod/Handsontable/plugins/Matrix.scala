@@ -1,11 +1,12 @@
 package typings.handsontable.mod.Handsontable.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Matrix extends js.Object {
+trait Matrix extends StObject {
   
   def add(cellValue: js.Object): Unit = js.native
   def add(cellValue: CellValue): Unit = js.native

@@ -1,5 +1,6 @@
 package typings.apolloServerEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("apollo-server-env", JSImport.Namespace)
 @js.native
-object apolloServerEnvRequire extends js.Object
+object apolloServerEnvRequire extends StObject

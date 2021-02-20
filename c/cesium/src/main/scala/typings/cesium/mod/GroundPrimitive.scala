@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.CompressVertices
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GroundPrimitive")
 @js.native
-class GroundPrimitive protected () extends js.Object {
+class GroundPrimitive protected () extends StObject {
   def this(options: CompressVertices) = this()
   
   val allowPicking: Boolean = js.native
@@ -46,14 +47,20 @@ class GroundPrimitive protected () extends js.Object {
   
   val vertexCacheOptimize: Boolean = js.native
 }
-/* static members */
-@JSImport("cesium", "GroundPrimitive")
-@js.native
-object GroundPrimitive extends js.Object {
+object GroundPrimitive {
   
+  /* static member */
+  @JSImport("cesium", "GroundPrimitive.initializeTerrainHeights")
+  @js.native
   def initializeTerrainHeights(): js.Promise[_] = js.native
   
+  /* static member */
+  @JSImport("cesium", "GroundPrimitive.isSupported")
+  @js.native
   def isSupported(scene: Scene): Boolean = js.native
   
+  /* static member */
+  @JSImport("cesium", "GroundPrimitive.supportsMaterials")
+  @js.native
   def supportsMaterials(scene: Scene): Boolean = js.native
 }

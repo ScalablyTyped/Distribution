@@ -1,11 +1,12 @@
 package typings.rnFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOSApi extends js.Object {
+trait IOSApi extends StObject {
   
   /**
     * Show options menu for interact with the file.
@@ -29,24 +30,12 @@ object IOSApi {
   }
   
   @scala.inline
-  implicit class IOSApiOps[Self <: IOSApi] (val x: Self) extends AnyVal {
+  implicit class IOSApiMutableBuilder[Self <: IOSApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpenDocument(value: String => Unit): Self = StObject.set(x, "openDocument", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpenDocument(value: String => Unit): Self = this.set("openDocument", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPreviewDocument(value: String => Unit): Self = this.set("previewDocument", js.Any.fromFunction1(value))
+    def setPreviewDocument(value: String => Unit): Self = StObject.set(x, "previewDocument", js.Any.fromFunction1(value))
   }
 }

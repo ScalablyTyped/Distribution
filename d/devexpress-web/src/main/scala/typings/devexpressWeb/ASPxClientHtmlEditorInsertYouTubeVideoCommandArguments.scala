@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,33 +57,21 @@ object ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorInsertYouTubeVideoCommandArgumentsOps[Self <: ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorInsertYouTubeVideoCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnablePrivacyEnhancedMode(value: Boolean): Self = StObject.set(x, "enablePrivacyEnhancedMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowPlayerControls(value: Boolean): Self = StObject.set(x, "showPlayerControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFullscreen(value: Boolean): Self = this.set("allowFullscreen", value.asInstanceOf[js.Any])
+    def setShowRelatedVideos(value: Boolean): Self = StObject.set(x, "showRelatedVideos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePrivacyEnhancedMode(value: Boolean): Self = this.set("enablePrivacyEnhancedMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowPlayerControls(value: Boolean): Self = this.set("showPlayerControls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowRelatedVideos(value: Boolean): Self = this.set("showRelatedVideos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowVideoInfo(value: Boolean): Self = this.set("showVideoInfo", value.asInstanceOf[js.Any])
+    def setShowVideoInfo(value: Boolean): Self = StObject.set(x, "showVideoInfo", value.asInstanceOf[js.Any])
   }
 }

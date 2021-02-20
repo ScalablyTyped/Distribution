@@ -1,11 +1,12 @@
 package typings.chromeApps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lowenergy extends js.Object {
+trait Lowenergy extends StObject {
   
   var low_energy: js.UndefOr[Boolean] = js.native
   
@@ -24,45 +25,33 @@ object Lowenergy {
   }
   
   @scala.inline
-  implicit class LowenergyOps[Self <: Lowenergy] (val x: Self) extends AnyVal {
+  implicit class LowenergyMutableBuilder[Self <: Lowenergy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLow_energy(value: Boolean): Self = StObject.set(x, "low_energy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLow_energyUndefined: Self = StObject.set(x, "low_energy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeripheral(value: Boolean): Self = StObject.set(x, "peripheral", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLow_energy(value: Boolean): Self = this.set("low_energy", value.asInstanceOf[js.Any])
+    def setPeripheralUndefined: Self = StObject.set(x, "peripheral", js.undefined)
     
     @scala.inline
-    def deleteLow_energy: Self = this.set("low_energy", js.undefined)
+    def setSocket(value: Boolean): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeripheral(value: Boolean): Self = this.set("peripheral", value.asInstanceOf[js.Any])
+    def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
     
     @scala.inline
-    def deletePeripheral: Self = this.set("peripheral", js.undefined)
+    def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocket(value: Boolean): Self = this.set("socket", value.asInstanceOf[js.Any])
+    def setUuidsUndefined: Self = StObject.set(x, "uuids", js.undefined)
     
     @scala.inline
-    def deleteSocket: Self = this.set("socket", js.undefined)
-    
-    @scala.inline
-    def setUuidsVarargs(value: String*): Self = this.set("uuids", js.Array(value :_*))
-    
-    @scala.inline
-    def setUuids(value: js.Array[String]): Self = this.set("uuids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUuids: Self = this.set("uuids", js.undefined)
+    def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
   }
 }

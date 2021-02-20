@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerValidationConfiguration extends js.Object {
+trait ServerValidationConfiguration extends StObject {
   
   /**
     * The name of the configuration.
@@ -38,48 +39,36 @@ object ServerValidationConfiguration {
   }
   
   @scala.inline
-  implicit class ServerValidationConfigurationOps[Self <: ServerValidationConfiguration] (val x: Self) extends AnyVal {
+  implicit class ServerValidationConfigurationMutableBuilder[Self <: ServerValidationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: NonEmptyStringWithMaxLen255): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonEmptyStringWithMaxLen255): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setServerValidationStrategy(value: ServerValidationStrategy): Self = StObject.set(x, "serverValidationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: Server): Self = this.set("server", value.asInstanceOf[js.Any])
+    def setServerValidationStrategyUndefined: Self = StObject.set(x, "serverValidationStrategy", js.undefined)
     
     @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setUserDataValidationParameters(value: UserDataValidationParameters): Self = StObject.set(x, "userDataValidationParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerValidationStrategy(value: ServerValidationStrategy): Self = this.set("serverValidationStrategy", value.asInstanceOf[js.Any])
+    def setUserDataValidationParametersUndefined: Self = StObject.set(x, "userDataValidationParameters", js.undefined)
     
     @scala.inline
-    def deleteServerValidationStrategy: Self = this.set("serverValidationStrategy", js.undefined)
+    def setValidationId(value: ValidationId): Self = StObject.set(x, "validationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserDataValidationParameters(value: UserDataValidationParameters): Self = this.set("userDataValidationParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDataValidationParameters: Self = this.set("userDataValidationParameters", js.undefined)
-    
-    @scala.inline
-    def setValidationId(value: ValidationId): Self = this.set("validationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationId: Self = this.set("validationId", js.undefined)
+    def setValidationIdUndefined: Self = StObject.set(x, "validationId", js.undefined)
   }
 }

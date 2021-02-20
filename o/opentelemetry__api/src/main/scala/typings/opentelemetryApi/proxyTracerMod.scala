@@ -2,14 +2,14 @@ package typings.opentelemetryApi
 
 import typings.opentelemetryApi.proxyTracerProviderMod.ProxyTracerProvider
 import typings.opentelemetryApi.tracerMod.Tracer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/api/build/src/trace/ProxyTracer", JSImport.Namespace)
-@js.native
-object proxyTracerMod extends js.Object {
+object proxyTracerMod {
   
+  @JSImport("@opentelemetry/api/build/src/trace/ProxyTracer", "ProxyTracer")
   @js.native
   class ProxyTracer protected () extends Tracer {
     def this(_provider: ProxyTracerProvider, name: String) = this()

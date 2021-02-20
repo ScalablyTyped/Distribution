@@ -2,12 +2,13 @@ package typings.lovefield.mod
 
 import typings.lovefield.mod.schema.Column
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PredicateProvider extends js.Object {
+trait PredicateProvider extends StObject {
   
   def between(from: Binder, to: Binder): Predicate = js.native
   def between(from: Binder, to: ValueLiteral): Predicate = js.native

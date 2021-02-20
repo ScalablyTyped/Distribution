@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1VideoContext extends js.Object {
+trait GoogleCloudVideointelligenceV1VideoContext extends StObject {
   
   /** Config for EXPLICIT_CONTENT_DETECTION. */
   var explicitContentDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig] = js.native
@@ -43,75 +44,63 @@ object GoogleCloudVideointelligenceV1VideoContext {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1VideoContextOps[Self <: GoogleCloudVideointelligenceV1VideoContext] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1VideoContextMutableBuilder[Self <: GoogleCloudVideointelligenceV1VideoContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExplicitContentDetectionConfig(value: GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig): Self = StObject.set(x, "explicitContentDetectionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExplicitContentDetectionConfigUndefined: Self = StObject.set(x, "explicitContentDetectionConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaceDetectionConfig(value: GoogleCloudVideointelligenceV1FaceDetectionConfig): Self = StObject.set(x, "faceDetectionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicitContentDetectionConfig(value: GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig): Self = this.set("explicitContentDetectionConfig", value.asInstanceOf[js.Any])
+    def setFaceDetectionConfigUndefined: Self = StObject.set(x, "faceDetectionConfig", js.undefined)
     
     @scala.inline
-    def deleteExplicitContentDetectionConfig: Self = this.set("explicitContentDetectionConfig", js.undefined)
+    def setLabelDetectionConfig(value: GoogleCloudVideointelligenceV1LabelDetectionConfig): Self = StObject.set(x, "labelDetectionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceDetectionConfig(value: GoogleCloudVideointelligenceV1FaceDetectionConfig): Self = this.set("faceDetectionConfig", value.asInstanceOf[js.Any])
+    def setLabelDetectionConfigUndefined: Self = StObject.set(x, "labelDetectionConfig", js.undefined)
     
     @scala.inline
-    def deleteFaceDetectionConfig: Self = this.set("faceDetectionConfig", js.undefined)
+    def setObjectTrackingConfig(value: GoogleCloudVideointelligenceV1ObjectTrackingConfig): Self = StObject.set(x, "objectTrackingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDetectionConfig(value: GoogleCloudVideointelligenceV1LabelDetectionConfig): Self = this.set("labelDetectionConfig", value.asInstanceOf[js.Any])
+    def setObjectTrackingConfigUndefined: Self = StObject.set(x, "objectTrackingConfig", js.undefined)
     
     @scala.inline
-    def deleteLabelDetectionConfig: Self = this.set("labelDetectionConfig", js.undefined)
+    def setPersonDetectionConfig(value: GoogleCloudVideointelligenceV1PersonDetectionConfig): Self = StObject.set(x, "personDetectionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectTrackingConfig(value: GoogleCloudVideointelligenceV1ObjectTrackingConfig): Self = this.set("objectTrackingConfig", value.asInstanceOf[js.Any])
+    def setPersonDetectionConfigUndefined: Self = StObject.set(x, "personDetectionConfig", js.undefined)
     
     @scala.inline
-    def deleteObjectTrackingConfig: Self = this.set("objectTrackingConfig", js.undefined)
+    def setSegments(value: js.Array[GoogleCloudVideointelligenceV1VideoSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonDetectionConfig(value: GoogleCloudVideointelligenceV1PersonDetectionConfig): Self = this.set("personDetectionConfig", value.asInstanceOf[js.Any])
+    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
     @scala.inline
-    def deletePersonDetectionConfig: Self = this.set("personDetectionConfig", js.undefined)
+    def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1VideoSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
     @scala.inline
-    def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1VideoSegment*): Self = this.set("segments", js.Array(value :_*))
+    def setShotChangeDetectionConfig(value: GoogleCloudVideointelligenceV1ShotChangeDetectionConfig): Self = StObject.set(x, "shotChangeDetectionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: js.Array[GoogleCloudVideointelligenceV1VideoSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
+    def setShotChangeDetectionConfigUndefined: Self = StObject.set(x, "shotChangeDetectionConfig", js.undefined)
     
     @scala.inline
-    def deleteSegments: Self = this.set("segments", js.undefined)
+    def setSpeechTranscriptionConfig(value: GoogleCloudVideointelligenceV1SpeechTranscriptionConfig): Self = StObject.set(x, "speechTranscriptionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShotChangeDetectionConfig(value: GoogleCloudVideointelligenceV1ShotChangeDetectionConfig): Self = this.set("shotChangeDetectionConfig", value.asInstanceOf[js.Any])
+    def setSpeechTranscriptionConfigUndefined: Self = StObject.set(x, "speechTranscriptionConfig", js.undefined)
     
     @scala.inline
-    def deleteShotChangeDetectionConfig: Self = this.set("shotChangeDetectionConfig", js.undefined)
+    def setTextDetectionConfig(value: GoogleCloudVideointelligenceV1TextDetectionConfig): Self = StObject.set(x, "textDetectionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeechTranscriptionConfig(value: GoogleCloudVideointelligenceV1SpeechTranscriptionConfig): Self = this.set("speechTranscriptionConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeechTranscriptionConfig: Self = this.set("speechTranscriptionConfig", js.undefined)
-    
-    @scala.inline
-    def setTextDetectionConfig(value: GoogleCloudVideointelligenceV1TextDetectionConfig): Self = this.set("textDetectionConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextDetectionConfig: Self = this.set("textDetectionConfig", js.undefined)
+    def setTextDetectionConfigUndefined: Self = StObject.set(x, "textDetectionConfig", js.undefined)
   }
 }

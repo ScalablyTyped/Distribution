@@ -1,5 +1,6 @@
 package typings.stellarSdk.mod.xdr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class EndSponsoringFutureReservesResultCode ()
   extends typings.stellarBase.mod.xdr.EndSponsoringFutureReservesResultCode
-/* static members */
-@JSImport("stellar-sdk", "xdr.EndSponsoringFutureReservesResultCode")
-@js.native
-object EndSponsoringFutureReservesResultCode extends js.Object {
+object EndSponsoringFutureReservesResultCode {
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.EndSponsoringFutureReservesResultCode.endSponsoringFutureReservesNotSponsored")
+  @js.native
   def endSponsoringFutureReservesNotSponsored(): typings.stellarBase.xdrMod.xdr.EndSponsoringFutureReservesResultCode = js.native
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.EndSponsoringFutureReservesResultCode.endSponsoringFutureReservesSuccess")
+  @js.native
   def endSponsoringFutureReservesSuccess(): typings.stellarBase.xdrMod.xdr.EndSponsoringFutureReservesResultCode = js.native
 }

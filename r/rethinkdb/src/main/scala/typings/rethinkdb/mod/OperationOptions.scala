@@ -7,12 +7,13 @@ import typings.rethinkdb.rethinkdbStrings.outdated
 import typings.rethinkdb.rethinkdbStrings.raw
 import typings.rethinkdb.rethinkdbStrings.single
 import typings.rethinkdb.rethinkdbStrings.soft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperationOptions extends js.Object {
+trait OperationOptions extends StObject {
   
   /**
     * The maximum numbers of array elements that can be returned by a query (default: 100,000). This affects all ReQL commands that return arrays. Note that it has no effect on the size of arrays being written to the database; those always have an upper limit of 100,000 elements.
@@ -112,60 +113,48 @@ object OperationOptions {
   }
   
   @scala.inline
-  implicit class OperationOptionsOps[Self <: OperationOptions] (val x: Self) extends AnyVal {
+  implicit class OperationOptionsMutableBuilder[Self <: OperationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayLimit(value: Double): Self = StObject.set(x, "arrayLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryFormat(value: native | raw): Self = StObject.set(x, "binaryFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayLimit(value: Double): Self = this.set("arrayLimit", value.asInstanceOf[js.Any])
+    def setDurability(value: hard | soft): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryFormat(value: native | raw): Self = this.set("binaryFormat", value.asInstanceOf[js.Any])
+    def setFirstBatchScaledownFactor(value: Double): Self = StObject.set(x, "firstBatchScaledownFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDb(value: String): Self = this.set("db", value.asInstanceOf[js.Any])
+    def setGroupFormat(value: native | raw): Self = StObject.set(x, "groupFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurability(value: hard | soft): Self = this.set("durability", value.asInstanceOf[js.Any])
+    def setMaxBatchBytes(value: Double): Self = StObject.set(x, "maxBatchBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstBatchScaledownFactor(value: Double): Self = this.set("firstBatchScaledownFactor", value.asInstanceOf[js.Any])
+    def setMaxBatchRows(value: Double): Self = StObject.set(x, "maxBatchRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupFormat(value: native | raw): Self = this.set("groupFormat", value.asInstanceOf[js.Any])
+    def setMaxBatchSeconds(value: Double): Self = StObject.set(x, "maxBatchSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBatchBytes(value: Double): Self = this.set("maxBatchBytes", value.asInstanceOf[js.Any])
+    def setMinBatchRows(value: Double): Self = StObject.set(x, "minBatchRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBatchRows(value: Double): Self = this.set("maxBatchRows", value.asInstanceOf[js.Any])
+    def setNoreply(value: Boolean): Self = StObject.set(x, "noreply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBatchSeconds(value: Double): Self = this.set("maxBatchSeconds", value.asInstanceOf[js.Any])
+    def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinBatchRows(value: Double): Self = this.set("minBatchRows", value.asInstanceOf[js.Any])
+    def setReadMode(value: single | majority | outdated): Self = StObject.set(x, "readMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoreply(value: Boolean): Self = this.set("noreply", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfile(value: Boolean): Self = this.set("profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadMode(value: single | majority | outdated): Self = this.set("readMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeFormat(value: native | raw): Self = this.set("timeFormat", value.asInstanceOf[js.Any])
+    def setTimeFormat(value: native | raw): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
   }
 }

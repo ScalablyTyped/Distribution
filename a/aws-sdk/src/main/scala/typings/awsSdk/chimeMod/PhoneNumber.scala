@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhoneNumber extends js.Object {
+trait PhoneNumber extends StObject {
   
   /**
     * The phone number associations.
@@ -76,93 +77,81 @@ object PhoneNumber {
   }
   
   @scala.inline
-  implicit class PhoneNumberOps[Self <: PhoneNumber] (val x: Self) extends AnyVal {
+  implicit class PhoneNumberMutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociations(value: PhoneNumberAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociationsVarargs(value: PhoneNumberAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
     
     @scala.inline
-    def setAssociationsVarargs(value: PhoneNumberAssociation*): Self = this.set("Associations", js.Array(value :_*))
+    def setCallingName(value: CallingName): Self = StObject.set(x, "CallingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociations(value: PhoneNumberAssociationList): Self = this.set("Associations", value.asInstanceOf[js.Any])
+    def setCallingNameStatus(value: CallingNameStatus): Self = StObject.set(x, "CallingNameStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssociations: Self = this.set("Associations", js.undefined)
+    def setCallingNameStatusUndefined: Self = StObject.set(x, "CallingNameStatus", js.undefined)
     
     @scala.inline
-    def setCallingName(value: CallingName): Self = this.set("CallingName", value.asInstanceOf[js.Any])
+    def setCallingNameUndefined: Self = StObject.set(x, "CallingName", js.undefined)
     
     @scala.inline
-    def deleteCallingName: Self = this.set("CallingName", js.undefined)
+    def setCapabilities(value: PhoneNumberCapabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallingNameStatus(value: CallingNameStatus): Self = this.set("CallingNameStatus", value.asInstanceOf[js.Any])
+    def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
     @scala.inline
-    def deleteCallingNameStatus: Self = this.set("CallingNameStatus", js.undefined)
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: PhoneNumberCapabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    def setDeletionTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "DeletionTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setDeletionTimestampUndefined: Self = StObject.set(x, "DeletionTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setE164PhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "E164PhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionTimestamp(value: Iso8601Timestamp): Self = this.set("DeletionTimestamp", value.asInstanceOf[js.Any])
+    def setE164PhoneNumberUndefined: Self = StObject.set(x, "E164PhoneNumber", js.undefined)
     
     @scala.inline
-    def deleteDeletionTimestamp: Self = this.set("DeletionTimestamp", js.undefined)
+    def setPhoneNumberId(value: String): Self = StObject.set(x, "PhoneNumberId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE164PhoneNumber(value: E164PhoneNumber): Self = this.set("E164PhoneNumber", value.asInstanceOf[js.Any])
+    def setPhoneNumberIdUndefined: Self = StObject.set(x, "PhoneNumberId", js.undefined)
     
     @scala.inline
-    def deleteE164PhoneNumber: Self = this.set("E164PhoneNumber", js.undefined)
+    def setProductType(value: PhoneNumberProductType): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumberId(value: String): Self = this.set("PhoneNumberId", value.asInstanceOf[js.Any])
+    def setProductTypeUndefined: Self = StObject.set(x, "ProductType", js.undefined)
     
     @scala.inline
-    def deletePhoneNumberId: Self = this.set("PhoneNumberId", js.undefined)
+    def setStatus(value: PhoneNumberStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductType(value: PhoneNumberProductType): Self = this.set("ProductType", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteProductType: Self = this.set("ProductType", js.undefined)
+    def setType(value: PhoneNumberType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: PhoneNumberStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: PhoneNumberType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
+    def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
   }
 }

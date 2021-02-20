@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPConfigProperties[M /* <: ManagedObject */, B, S, SL, L] extends js.Object {
+trait IPConfigProperties[M /* <: ManagedObject */, B, S, SL, L] extends StObject {
   
   /** Gateway address used for the IP configuration. */
   var Gateway: js.UndefOr[S] = js.native
@@ -34,54 +35,42 @@ object IPConfigProperties {
   }
   
   @scala.inline
-  implicit class IPConfigPropertiesOps[Self <: IPConfigProperties[_, _, _, _, _], M /* <: ManagedObject */, B, S, SL, L] (val x: Self with (IPConfigProperties[M, B, S, SL, L])) extends AnyVal {
+  implicit class IPConfigPropertiesMutableBuilder[Self <: IPConfigProperties[_, _, _, _, _], M /* <: ManagedObject */, B, S, SL, L] (val x: Self with (IPConfigProperties[M, B, S, SL, L])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGateway(value: S): Self = StObject.set(x, "Gateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewayUndefined: Self = StObject.set(x, "Gateway", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIPAddress(value: S): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGateway(value: S): Self = this.set("Gateway", value.asInstanceOf[js.Any])
+    def setIPAddressUndefined: Self = StObject.set(x, "IPAddress", js.undefined)
     
     @scala.inline
-    def deleteGateway: Self = this.set("Gateway", js.undefined)
+    def setNameServers(value: SL): Self = StObject.set(x, "NameServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPAddress(value: S): Self = this.set("IPAddress", value.asInstanceOf[js.Any])
+    def setNameServersUndefined: Self = StObject.set(x, "NameServers", js.undefined)
     
     @scala.inline
-    def deleteIPAddress: Self = this.set("IPAddress", js.undefined)
+    def setRoutingPrefix(value: L): Self = StObject.set(x, "RoutingPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameServers(value: SL): Self = this.set("NameServers", value.asInstanceOf[js.Any])
+    def setRoutingPrefixUndefined: Self = StObject.set(x, "RoutingPrefix", js.undefined)
     
     @scala.inline
-    def deleteNameServers: Self = this.set("NameServers", js.undefined)
+    def setType(value: IPConfigurationType | ManagedType[IPConfigurationType]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingPrefix(value: L): Self = this.set("RoutingPrefix", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteRoutingPrefix: Self = this.set("RoutingPrefix", js.undefined)
+    def setWebProxyAutoDiscoveryUrl(value: S): Self = StObject.set(x, "WebProxyAutoDiscoveryUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: IPConfigurationType | ManagedType[IPConfigurationType]): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setWebProxyAutoDiscoveryUrl(value: S): Self = this.set("WebProxyAutoDiscoveryUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebProxyAutoDiscoveryUrl: Self = this.set("WebProxyAutoDiscoveryUrl", js.undefined)
+    def setWebProxyAutoDiscoveryUrlUndefined: Self = StObject.set(x, "WebProxyAutoDiscoveryUrl", js.undefined)
   }
 }

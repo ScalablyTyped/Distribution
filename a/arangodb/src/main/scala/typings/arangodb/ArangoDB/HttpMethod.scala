@@ -1,5 +1,6 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arangodb.arangodbStrings.DELETE
   - typings.arangodb.arangodbStrings.OPTIONS
 */
-trait HttpMethod extends js.Object
+trait HttpMethod extends StObject
 object HttpMethod {
   
   @scala.inline

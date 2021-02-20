@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait M2tsSettings extends js.Object {
+trait M2tsSettings extends StObject {
   
   /**
     * When set to drop, output audio streams will be removed from the program if the selected input audio stream is removed from the input. This allows the output audio configuration to dynamically change based on input configuration. If this is set to encodeSilence, all output audio streams will output encoded silence when not connected to an active input stream.
@@ -253,300 +254,288 @@ object M2tsSettings {
   }
   
   @scala.inline
-  implicit class M2tsSettingsOps[Self <: M2tsSettings] (val x: Self) extends AnyVal {
+  implicit class M2tsSettingsMutableBuilder[Self <: M2tsSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsentInputAudioBehavior(value: M2tsAbsentInputAudioBehavior): Self = StObject.set(x, "AbsentInputAudioBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsentInputAudioBehaviorUndefined: Self = StObject.set(x, "AbsentInputAudioBehavior", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArib(value: M2tsArib): Self = StObject.set(x, "Arib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsentInputAudioBehavior(value: M2tsAbsentInputAudioBehavior): Self = this.set("AbsentInputAudioBehavior", value.asInstanceOf[js.Any])
+    def setAribCaptionsPid(value: string): Self = StObject.set(x, "AribCaptionsPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAbsentInputAudioBehavior: Self = this.set("AbsentInputAudioBehavior", js.undefined)
+    def setAribCaptionsPidControl(value: M2tsAribCaptionsPidControl): Self = StObject.set(x, "AribCaptionsPidControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArib(value: M2tsArib): Self = this.set("Arib", value.asInstanceOf[js.Any])
+    def setAribCaptionsPidControlUndefined: Self = StObject.set(x, "AribCaptionsPidControl", js.undefined)
     
     @scala.inline
-    def deleteArib: Self = this.set("Arib", js.undefined)
+    def setAribCaptionsPidUndefined: Self = StObject.set(x, "AribCaptionsPid", js.undefined)
     
     @scala.inline
-    def setAribCaptionsPid(value: string): Self = this.set("AribCaptionsPid", value.asInstanceOf[js.Any])
+    def setAribUndefined: Self = StObject.set(x, "Arib", js.undefined)
     
     @scala.inline
-    def deleteAribCaptionsPid: Self = this.set("AribCaptionsPid", js.undefined)
+    def setAudioBufferModel(value: M2tsAudioBufferModel): Self = StObject.set(x, "AudioBufferModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAribCaptionsPidControl(value: M2tsAribCaptionsPidControl): Self = this.set("AribCaptionsPidControl", value.asInstanceOf[js.Any])
+    def setAudioBufferModelUndefined: Self = StObject.set(x, "AudioBufferModel", js.undefined)
     
     @scala.inline
-    def deleteAribCaptionsPidControl: Self = this.set("AribCaptionsPidControl", js.undefined)
+    def setAudioFramesPerPes(value: integerMin0): Self = StObject.set(x, "AudioFramesPerPes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioBufferModel(value: M2tsAudioBufferModel): Self = this.set("AudioBufferModel", value.asInstanceOf[js.Any])
+    def setAudioFramesPerPesUndefined: Self = StObject.set(x, "AudioFramesPerPes", js.undefined)
     
     @scala.inline
-    def deleteAudioBufferModel: Self = this.set("AudioBufferModel", js.undefined)
+    def setAudioPids(value: string): Self = StObject.set(x, "AudioPids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioFramesPerPes(value: integerMin0): Self = this.set("AudioFramesPerPes", value.asInstanceOf[js.Any])
+    def setAudioPidsUndefined: Self = StObject.set(x, "AudioPids", js.undefined)
     
     @scala.inline
-    def deleteAudioFramesPerPes: Self = this.set("AudioFramesPerPes", js.undefined)
+    def setAudioStreamType(value: M2tsAudioStreamType): Self = StObject.set(x, "AudioStreamType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioPids(value: string): Self = this.set("AudioPids", value.asInstanceOf[js.Any])
+    def setAudioStreamTypeUndefined: Self = StObject.set(x, "AudioStreamType", js.undefined)
     
     @scala.inline
-    def deleteAudioPids: Self = this.set("AudioPids", js.undefined)
+    def setBitrate(value: integerMin0): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioStreamType(value: M2tsAudioStreamType): Self = this.set("AudioStreamType", value.asInstanceOf[js.Any])
+    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
     @scala.inline
-    def deleteAudioStreamType: Self = this.set("AudioStreamType", js.undefined)
+    def setBufferModel(value: M2tsBufferModel): Self = StObject.set(x, "BufferModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrate(value: integerMin0): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    def setBufferModelUndefined: Self = StObject.set(x, "BufferModel", js.undefined)
     
     @scala.inline
-    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    def setCcDescriptor(value: M2tsCcDescriptor): Self = StObject.set(x, "CcDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferModel(value: M2tsBufferModel): Self = this.set("BufferModel", value.asInstanceOf[js.Any])
+    def setCcDescriptorUndefined: Self = StObject.set(x, "CcDescriptor", js.undefined)
     
     @scala.inline
-    def deleteBufferModel: Self = this.set("BufferModel", js.undefined)
+    def setDvbNitSettings(value: DvbNitSettings): Self = StObject.set(x, "DvbNitSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcDescriptor(value: M2tsCcDescriptor): Self = this.set("CcDescriptor", value.asInstanceOf[js.Any])
+    def setDvbNitSettingsUndefined: Self = StObject.set(x, "DvbNitSettings", js.undefined)
     
     @scala.inline
-    def deleteCcDescriptor: Self = this.set("CcDescriptor", js.undefined)
+    def setDvbSdtSettings(value: DvbSdtSettings): Self = StObject.set(x, "DvbSdtSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDvbNitSettings(value: DvbNitSettings): Self = this.set("DvbNitSettings", value.asInstanceOf[js.Any])
+    def setDvbSdtSettingsUndefined: Self = StObject.set(x, "DvbSdtSettings", js.undefined)
     
     @scala.inline
-    def deleteDvbNitSettings: Self = this.set("DvbNitSettings", js.undefined)
+    def setDvbSubPids(value: string): Self = StObject.set(x, "DvbSubPids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDvbSdtSettings(value: DvbSdtSettings): Self = this.set("DvbSdtSettings", value.asInstanceOf[js.Any])
+    def setDvbSubPidsUndefined: Self = StObject.set(x, "DvbSubPids", js.undefined)
     
     @scala.inline
-    def deleteDvbSdtSettings: Self = this.set("DvbSdtSettings", js.undefined)
+    def setDvbTdtSettings(value: DvbTdtSettings): Self = StObject.set(x, "DvbTdtSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDvbSubPids(value: string): Self = this.set("DvbSubPids", value.asInstanceOf[js.Any])
+    def setDvbTdtSettingsUndefined: Self = StObject.set(x, "DvbTdtSettings", js.undefined)
     
     @scala.inline
-    def deleteDvbSubPids: Self = this.set("DvbSubPids", js.undefined)
+    def setDvbTeletextPid(value: string): Self = StObject.set(x, "DvbTeletextPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDvbTdtSettings(value: DvbTdtSettings): Self = this.set("DvbTdtSettings", value.asInstanceOf[js.Any])
+    def setDvbTeletextPidUndefined: Self = StObject.set(x, "DvbTeletextPid", js.undefined)
     
     @scala.inline
-    def deleteDvbTdtSettings: Self = this.set("DvbTdtSettings", js.undefined)
+    def setEbif(value: M2tsEbifControl): Self = StObject.set(x, "Ebif", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDvbTeletextPid(value: string): Self = this.set("DvbTeletextPid", value.asInstanceOf[js.Any])
+    def setEbifUndefined: Self = StObject.set(x, "Ebif", js.undefined)
     
     @scala.inline
-    def deleteDvbTeletextPid: Self = this.set("DvbTeletextPid", js.undefined)
+    def setEbpAudioInterval(value: M2tsAudioInterval): Self = StObject.set(x, "EbpAudioInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbif(value: M2tsEbifControl): Self = this.set("Ebif", value.asInstanceOf[js.Any])
+    def setEbpAudioIntervalUndefined: Self = StObject.set(x, "EbpAudioInterval", js.undefined)
     
     @scala.inline
-    def deleteEbif: Self = this.set("Ebif", js.undefined)
+    def setEbpLookaheadMs(value: integerMin0Max10000): Self = StObject.set(x, "EbpLookaheadMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbpAudioInterval(value: M2tsAudioInterval): Self = this.set("EbpAudioInterval", value.asInstanceOf[js.Any])
+    def setEbpLookaheadMsUndefined: Self = StObject.set(x, "EbpLookaheadMs", js.undefined)
     
     @scala.inline
-    def deleteEbpAudioInterval: Self = this.set("EbpAudioInterval", js.undefined)
+    def setEbpPlacement(value: M2tsEbpPlacement): Self = StObject.set(x, "EbpPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbpLookaheadMs(value: integerMin0Max10000): Self = this.set("EbpLookaheadMs", value.asInstanceOf[js.Any])
+    def setEbpPlacementUndefined: Self = StObject.set(x, "EbpPlacement", js.undefined)
     
     @scala.inline
-    def deleteEbpLookaheadMs: Self = this.set("EbpLookaheadMs", js.undefined)
+    def setEcmPid(value: string): Self = StObject.set(x, "EcmPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbpPlacement(value: M2tsEbpPlacement): Self = this.set("EbpPlacement", value.asInstanceOf[js.Any])
+    def setEcmPidUndefined: Self = StObject.set(x, "EcmPid", js.undefined)
     
     @scala.inline
-    def deleteEbpPlacement: Self = this.set("EbpPlacement", js.undefined)
+    def setEsRateInPes(value: M2tsEsRateInPes): Self = StObject.set(x, "EsRateInPes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcmPid(value: string): Self = this.set("EcmPid", value.asInstanceOf[js.Any])
+    def setEsRateInPesUndefined: Self = StObject.set(x, "EsRateInPes", js.undefined)
     
     @scala.inline
-    def deleteEcmPid: Self = this.set("EcmPid", js.undefined)
+    def setEtvPlatformPid(value: string): Self = StObject.set(x, "EtvPlatformPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEsRateInPes(value: M2tsEsRateInPes): Self = this.set("EsRateInPes", value.asInstanceOf[js.Any])
+    def setEtvPlatformPidUndefined: Self = StObject.set(x, "EtvPlatformPid", js.undefined)
     
     @scala.inline
-    def deleteEsRateInPes: Self = this.set("EsRateInPes", js.undefined)
+    def setEtvSignalPid(value: string): Self = StObject.set(x, "EtvSignalPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtvPlatformPid(value: string): Self = this.set("EtvPlatformPid", value.asInstanceOf[js.Any])
+    def setEtvSignalPidUndefined: Self = StObject.set(x, "EtvSignalPid", js.undefined)
     
     @scala.inline
-    def deleteEtvPlatformPid: Self = this.set("EtvPlatformPid", js.undefined)
+    def setFragmentTime(value: doubleMin0): Self = StObject.set(x, "FragmentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtvSignalPid(value: string): Self = this.set("EtvSignalPid", value.asInstanceOf[js.Any])
+    def setFragmentTimeUndefined: Self = StObject.set(x, "FragmentTime", js.undefined)
     
     @scala.inline
-    def deleteEtvSignalPid: Self = this.set("EtvSignalPid", js.undefined)
+    def setKlv(value: M2tsKlv): Self = StObject.set(x, "Klv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentTime(value: doubleMin0): Self = this.set("FragmentTime", value.asInstanceOf[js.Any])
+    def setKlvDataPids(value: string): Self = StObject.set(x, "KlvDataPids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFragmentTime: Self = this.set("FragmentTime", js.undefined)
+    def setKlvDataPidsUndefined: Self = StObject.set(x, "KlvDataPids", js.undefined)
     
     @scala.inline
-    def setKlv(value: M2tsKlv): Self = this.set("Klv", value.asInstanceOf[js.Any])
+    def setKlvUndefined: Self = StObject.set(x, "Klv", js.undefined)
     
     @scala.inline
-    def deleteKlv: Self = this.set("Klv", js.undefined)
+    def setNielsenId3Behavior(value: M2tsNielsenId3Behavior): Self = StObject.set(x, "NielsenId3Behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKlvDataPids(value: string): Self = this.set("KlvDataPids", value.asInstanceOf[js.Any])
+    def setNielsenId3BehaviorUndefined: Self = StObject.set(x, "NielsenId3Behavior", js.undefined)
     
     @scala.inline
-    def deleteKlvDataPids: Self = this.set("KlvDataPids", js.undefined)
+    def setNullPacketBitrate(value: doubleMin0): Self = StObject.set(x, "NullPacketBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNielsenId3Behavior(value: M2tsNielsenId3Behavior): Self = this.set("NielsenId3Behavior", value.asInstanceOf[js.Any])
+    def setNullPacketBitrateUndefined: Self = StObject.set(x, "NullPacketBitrate", js.undefined)
     
     @scala.inline
-    def deleteNielsenId3Behavior: Self = this.set("NielsenId3Behavior", js.undefined)
+    def setPatInterval(value: integerMin0Max1000): Self = StObject.set(x, "PatInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullPacketBitrate(value: doubleMin0): Self = this.set("NullPacketBitrate", value.asInstanceOf[js.Any])
+    def setPatIntervalUndefined: Self = StObject.set(x, "PatInterval", js.undefined)
     
     @scala.inline
-    def deleteNullPacketBitrate: Self = this.set("NullPacketBitrate", js.undefined)
+    def setPcrControl(value: M2tsPcrControl): Self = StObject.set(x, "PcrControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatInterval(value: integerMin0Max1000): Self = this.set("PatInterval", value.asInstanceOf[js.Any])
+    def setPcrControlUndefined: Self = StObject.set(x, "PcrControl", js.undefined)
     
     @scala.inline
-    def deletePatInterval: Self = this.set("PatInterval", js.undefined)
+    def setPcrPeriod(value: integerMin0Max500): Self = StObject.set(x, "PcrPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcrControl(value: M2tsPcrControl): Self = this.set("PcrControl", value.asInstanceOf[js.Any])
+    def setPcrPeriodUndefined: Self = StObject.set(x, "PcrPeriod", js.undefined)
     
     @scala.inline
-    def deletePcrControl: Self = this.set("PcrControl", js.undefined)
+    def setPcrPid(value: string): Self = StObject.set(x, "PcrPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcrPeriod(value: integerMin0Max500): Self = this.set("PcrPeriod", value.asInstanceOf[js.Any])
+    def setPcrPidUndefined: Self = StObject.set(x, "PcrPid", js.undefined)
     
     @scala.inline
-    def deletePcrPeriod: Self = this.set("PcrPeriod", js.undefined)
+    def setPmtInterval(value: integerMin0Max1000): Self = StObject.set(x, "PmtInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcrPid(value: string): Self = this.set("PcrPid", value.asInstanceOf[js.Any])
+    def setPmtIntervalUndefined: Self = StObject.set(x, "PmtInterval", js.undefined)
     
     @scala.inline
-    def deletePcrPid: Self = this.set("PcrPid", js.undefined)
+    def setPmtPid(value: string): Self = StObject.set(x, "PmtPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPmtInterval(value: integerMin0Max1000): Self = this.set("PmtInterval", value.asInstanceOf[js.Any])
+    def setPmtPidUndefined: Self = StObject.set(x, "PmtPid", js.undefined)
     
     @scala.inline
-    def deletePmtInterval: Self = this.set("PmtInterval", js.undefined)
+    def setProgramNum(value: integerMin0Max65535): Self = StObject.set(x, "ProgramNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPmtPid(value: string): Self = this.set("PmtPid", value.asInstanceOf[js.Any])
+    def setProgramNumUndefined: Self = StObject.set(x, "ProgramNum", js.undefined)
     
     @scala.inline
-    def deletePmtPid: Self = this.set("PmtPid", js.undefined)
+    def setRateMode(value: M2tsRateMode): Self = StObject.set(x, "RateMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgramNum(value: integerMin0Max65535): Self = this.set("ProgramNum", value.asInstanceOf[js.Any])
+    def setRateModeUndefined: Self = StObject.set(x, "RateMode", js.undefined)
     
     @scala.inline
-    def deleteProgramNum: Self = this.set("ProgramNum", js.undefined)
+    def setScte27Pids(value: string): Self = StObject.set(x, "Scte27Pids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateMode(value: M2tsRateMode): Self = this.set("RateMode", value.asInstanceOf[js.Any])
+    def setScte27PidsUndefined: Self = StObject.set(x, "Scte27Pids", js.undefined)
     
     @scala.inline
-    def deleteRateMode: Self = this.set("RateMode", js.undefined)
+    def setScte35Control(value: M2tsScte35Control): Self = StObject.set(x, "Scte35Control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScte27Pids(value: string): Self = this.set("Scte27Pids", value.asInstanceOf[js.Any])
+    def setScte35ControlUndefined: Self = StObject.set(x, "Scte35Control", js.undefined)
     
     @scala.inline
-    def deleteScte27Pids: Self = this.set("Scte27Pids", js.undefined)
+    def setScte35Pid(value: string): Self = StObject.set(x, "Scte35Pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScte35Control(value: M2tsScte35Control): Self = this.set("Scte35Control", value.asInstanceOf[js.Any])
+    def setScte35PidUndefined: Self = StObject.set(x, "Scte35Pid", js.undefined)
     
     @scala.inline
-    def deleteScte35Control: Self = this.set("Scte35Control", js.undefined)
+    def setSegmentationMarkers(value: M2tsSegmentationMarkers): Self = StObject.set(x, "SegmentationMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScte35Pid(value: string): Self = this.set("Scte35Pid", value.asInstanceOf[js.Any])
+    def setSegmentationMarkersUndefined: Self = StObject.set(x, "SegmentationMarkers", js.undefined)
     
     @scala.inline
-    def deleteScte35Pid: Self = this.set("Scte35Pid", js.undefined)
+    def setSegmentationStyle(value: M2tsSegmentationStyle): Self = StObject.set(x, "SegmentationStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentationMarkers(value: M2tsSegmentationMarkers): Self = this.set("SegmentationMarkers", value.asInstanceOf[js.Any])
+    def setSegmentationStyleUndefined: Self = StObject.set(x, "SegmentationStyle", js.undefined)
     
     @scala.inline
-    def deleteSegmentationMarkers: Self = this.set("SegmentationMarkers", js.undefined)
+    def setSegmentationTime(value: doubleMin1): Self = StObject.set(x, "SegmentationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentationStyle(value: M2tsSegmentationStyle): Self = this.set("SegmentationStyle", value.asInstanceOf[js.Any])
+    def setSegmentationTimeUndefined: Self = StObject.set(x, "SegmentationTime", js.undefined)
     
     @scala.inline
-    def deleteSegmentationStyle: Self = this.set("SegmentationStyle", js.undefined)
+    def setTimedMetadataBehavior(value: M2tsTimedMetadataBehavior): Self = StObject.set(x, "TimedMetadataBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentationTime(value: doubleMin1): Self = this.set("SegmentationTime", value.asInstanceOf[js.Any])
+    def setTimedMetadataBehaviorUndefined: Self = StObject.set(x, "TimedMetadataBehavior", js.undefined)
     
     @scala.inline
-    def deleteSegmentationTime: Self = this.set("SegmentationTime", js.undefined)
+    def setTimedMetadataPid(value: string): Self = StObject.set(x, "TimedMetadataPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimedMetadataBehavior(value: M2tsTimedMetadataBehavior): Self = this.set("TimedMetadataBehavior", value.asInstanceOf[js.Any])
+    def setTimedMetadataPidUndefined: Self = StObject.set(x, "TimedMetadataPid", js.undefined)
     
     @scala.inline
-    def deleteTimedMetadataBehavior: Self = this.set("TimedMetadataBehavior", js.undefined)
+    def setTransportStreamId(value: integerMin0Max65535): Self = StObject.set(x, "TransportStreamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimedMetadataPid(value: string): Self = this.set("TimedMetadataPid", value.asInstanceOf[js.Any])
+    def setTransportStreamIdUndefined: Self = StObject.set(x, "TransportStreamId", js.undefined)
     
     @scala.inline
-    def deleteTimedMetadataPid: Self = this.set("TimedMetadataPid", js.undefined)
+    def setVideoPid(value: string): Self = StObject.set(x, "VideoPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransportStreamId(value: integerMin0Max65535): Self = this.set("TransportStreamId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransportStreamId: Self = this.set("TransportStreamId", js.undefined)
-    
-    @scala.inline
-    def setVideoPid(value: string): Self = this.set("VideoPid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoPid: Self = this.set("VideoPid", js.undefined)
+    def setVideoPidUndefined: Self = StObject.set(x, "VideoPid", js.undefined)
   }
 }

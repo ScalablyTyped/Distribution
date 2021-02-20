@@ -4,12 +4,13 @@ import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.StatementKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alternate extends js.Object {
+trait Alternate extends StObject {
   
   var alternate: js.UndefOr[StatementKind | Null] = js.native
   
@@ -30,54 +31,42 @@ object Alternate {
   }
   
   @scala.inline
-  implicit class AlternateOps[Self <: Alternate] (val x: Self) extends AnyVal {
+  implicit class AlternateMutableBuilder[Self <: Alternate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate(value: StatementKind): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateNull: Self = StObject.set(x, "alternate", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
     
     @scala.inline
-    def setConsequent(value: StatementKind): Self = this.set("consequent", value.asInstanceOf[js.Any])
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTest(value: ExpressionKind): Self = this.set("test", value.asInstanceOf[js.Any])
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def setAlternate(value: StatementKind): Self = this.set("alternate", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def deleteAlternate: Self = this.set("alternate", js.undefined)
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setAlternateNull: Self = this.set("alternate", null)
+    def setConsequent(value: StatementKind): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
-    
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
-    
-    @scala.inline
-    def setLocNull: Self = this.set("loc", null)
+    def setTest(value: ExpressionKind): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
   }
 }

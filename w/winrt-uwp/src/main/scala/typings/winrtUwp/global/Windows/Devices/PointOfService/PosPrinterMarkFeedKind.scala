@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes the ways the receipt printer station should feed the mark-sensed paper when you call the ReceiptPrintJob.MarkFeed method. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterMarkFeedKind")
 @js.native
-object PosPrinterMarkFeedKind extends js.Object {
+object PosPrinterMarkFeedKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

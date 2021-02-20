@@ -1,6 +1,7 @@
 package typings.xlsx.mod
 
 import typings.xlsx.xlsxStrings.A
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,57 +36,45 @@ object Sheet2JSONOpts {
   }
   
   @scala.inline
-  implicit class Sheet2JSONOptsOps[Self <: Sheet2JSONOpts] (val x: Self) extends AnyVal {
+  implicit class Sheet2JSONOptsMutableBuilder[Self <: Sheet2JSONOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlankrows(value: Boolean): Self = StObject.set(x, "blankrows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlankrowsUndefined: Self = StObject.set(x, "blankrows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefval(value: js.Any): Self = StObject.set(x, "defval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlankrows(value: Boolean): Self = this.set("blankrows", value.asInstanceOf[js.Any])
+    def setDefvalUndefined: Self = StObject.set(x, "defval", js.undefined)
     
     @scala.inline
-    def deleteBlankrows: Self = this.set("blankrows", js.undefined)
+    def setHeader(value: A | Double | js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefval(value: js.Any): Self = this.set("defval", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteDefval: Self = this.set("defval", js.undefined)
+    def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
     
     @scala.inline
-    def setHeaderVarargs(value: String*): Self = this.set("header", js.Array(value :_*))
+    def setRange(value: js.Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: A | Double | js.Array[String]): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: js.Any): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRawNumbers(value: Boolean): Self = StObject.set(x, "rawNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRawNumbersUndefined: Self = StObject.set(x, "rawNumbers", js.undefined)
     
     @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
-    
-    @scala.inline
-    def setRawNumbers(value: Boolean): Self = this.set("rawNumbers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRawNumbers: Self = this.set("rawNumbers", js.undefined)
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
   }
 }

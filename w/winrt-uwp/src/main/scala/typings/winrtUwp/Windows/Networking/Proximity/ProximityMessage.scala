@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.Proximity
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a message that's received from a subscription. */
 @js.native
-trait ProximityMessage extends js.Object {
+trait ProximityMessage extends StObject {
   
   /** Gets the binary data of the message. */
   var data: IBuffer = js.native
@@ -30,30 +31,18 @@ object ProximityMessage {
   }
   
   @scala.inline
-  implicit class ProximityMessageOps[Self <: ProximityMessage] (val x: Self) extends AnyVal {
+  implicit class ProximityMessageMutableBuilder[Self <: ProximityMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataAsString(value: String): Self = StObject.set(x, "dataAsString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: IBuffer): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataAsString(value: String): Self = this.set("dataAsString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageType(value: String): Self = this.set("messageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionId(value: Double): Self = this.set("subscriptionId", value.asInstanceOf[js.Any])
+    def setSubscriptionId(value: Double): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
   }
 }

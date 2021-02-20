@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information returned from the `POST /v1/feedback` method. */
 @js.native
-trait FeedbackDataOutput extends js.Object {
+trait FeedbackDataOutput extends StObject {
   
   /** Brief information about the input document. */
   var document: js.UndefOr[ShortDoc] = js.native
@@ -44,72 +45,60 @@ object FeedbackDataOutput {
   }
   
   @scala.inline
-  implicit class FeedbackDataOutputOps[Self <: FeedbackDataOutput] (val x: Self) extends AnyVal {
+  implicit class FeedbackDataOutputMutableBuilder[Self <: FeedbackDataOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument(value: ShortDoc): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeedback_type(value: String): Self = StObject.set(x, "feedback_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: ShortDoc): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setFeedback_typeUndefined: Self = StObject.set(x, "feedback_type", js.undefined)
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedback_type(value: String): Self = this.set("feedback_type", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteFeedback_type: Self = this.set("feedback_type", js.undefined)
+    def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setModel_idUndefined: Self = StObject.set(x, "model_id", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setModel_version(value: String): Self = StObject.set(x, "model_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel_id(value: String): Self = this.set("model_id", value.asInstanceOf[js.Any])
+    def setModel_versionUndefined: Self = StObject.set(x, "model_version", js.undefined)
     
     @scala.inline
-    def deleteModel_id: Self = this.set("model_id", js.undefined)
+    def setOriginal_labels(value: OriginalLabelsOut): Self = StObject.set(x, "original_labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel_version(value: String): Self = this.set("model_version", value.asInstanceOf[js.Any])
+    def setOriginal_labelsUndefined: Self = StObject.set(x, "original_labels", js.undefined)
     
     @scala.inline
-    def deleteModel_version: Self = this.set("model_version", js.undefined)
+    def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_labels(value: OriginalLabelsOut): Self = this.set("original_labels", value.asInstanceOf[js.Any])
+    def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
     @scala.inline
-    def deleteOriginal_labels: Self = this.set("original_labels", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagination(value: Pagination): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deletePagination: Self = this.set("pagination", js.undefined)
+    def setUpdated_labels(value: UpdatedLabelsOut): Self = StObject.set(x, "updated_labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setUpdated_labels(value: UpdatedLabelsOut): Self = this.set("updated_labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated_labels: Self = this.set("updated_labels", js.undefined)
+    def setUpdated_labelsUndefined: Self = StObject.set(x, "updated_labels", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommsNotification extends js.Object {
+trait CommsNotification extends StObject {
   
   // Possible values are: created, updated, deleted.
   var changeType: js.UndefOr[ChangeType] = js.native
@@ -22,30 +23,18 @@ object CommsNotification {
   }
   
   @scala.inline
-  implicit class CommsNotificationOps[Self <: CommsNotification] (val x: Self) extends AnyVal {
+  implicit class CommsNotificationMutableBuilder[Self <: CommsNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeType(value: ChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: ChangeType): Self = this.set("changeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChangeType: Self = this.set("changeType", js.undefined)
-    
-    @scala.inline
-    def setResourceUrl(value: String): Self = this.set("resourceUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceUrl: Self = this.set("resourceUrl", js.undefined)
+    def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
   }
 }

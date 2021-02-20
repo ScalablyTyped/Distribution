@@ -1,32 +1,19 @@
 package typings.dockerode.mod
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.dockerode.dockerodeStrings.http
 import typings.dockerode.dockerodeStrings.https
 import typings.dockerode.dockerodeStrings.ssh
 import typings.node.Buffer
 import typings.std.PromiseConstructor
-import typings.std.global.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DockerOptions extends js.Object {
+trait DockerOptions extends StObject {
   
-  var Promise: js.UndefOr[
-    PromiseConstructor with (Instantiable1[
-      /* executor */ js.Function2[
-        /* resolve */ js.Function1[
-          /* value */ (/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]), 
-          Unit
-        ], 
-        /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
-        Unit
-      ], 
-      typings.std.global.Promise[js.Object]
-    ])
-  ] = js.native
+  var Promise: js.UndefOr[PromiseConstructor] = js.native
   
   var ca: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.native
   
@@ -59,111 +46,87 @@ object DockerOptions {
   }
   
   @scala.inline
-  implicit class DockerOptionsOps[Self <: DockerOptions] (val x: Self) extends AnyVal {
+  implicit class DockerOptionsMutableBuilder[Self <: DockerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCa(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaVarargs(value: (Buffer | String)*): Self = StObject.set(x, "ca", js.Array(value :_*))
     
     @scala.inline
-    def setPromise(
-      value: PromiseConstructor with (Instantiable1[
-          /* executor */ js.Function2[
-            /* resolve */ js.Function1[
-              /* value */ (/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]), 
-              Unit
-            ], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
-            Unit
-          ], 
-          Promise[js.Object]
-        ])
-    ): Self = this.set("Promise", value.asInstanceOf[js.Any])
+    def setCert(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePromise: Self = this.set("Promise", js.undefined)
+    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
     @scala.inline
-    def setCaVarargs(value: (Buffer | String)*): Self = this.set("ca", js.Array(value :_*))
+    def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value :_*))
     
     @scala.inline
-    def setCa(value: String | (js.Array[Buffer | String]) | Buffer): Self = this.set("ca", value.asInstanceOf[js.Any])
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCa: Self = this.set("ca", js.undefined)
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setCertVarargs(value: (Buffer | String)*): Self = this.set("cert", js.Array(value :_*))
+    def setKey(value: String | (js.Array[Buffer | KeyObject | String]) | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCert(value: String | (js.Array[Buffer | String]) | Buffer): Self = this.set("cert", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteCert: Self = this.set("cert", js.undefined)
+    def setKeyVarargs(value: (Buffer | KeyObject | String)*): Self = StObject.set(x, "key", js.Array(value :_*))
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setKeyVarargs(value: (Buffer | KeyObject | String)*): Self = this.set("key", js.Array(value :_*))
+    def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String | (js.Array[Buffer | KeyObject | String]) | Buffer): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setProtocol(value: https | http | ssh): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double | String): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: https | http | ssh): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setSshAuthAgent(value: String): Self = StObject.set(x, "sshAuthAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocketPath(value: String): Self = this.set("socketPath", value.asInstanceOf[js.Any])
+    def setSshAuthAgentUndefined: Self = StObject.set(x, "sshAuthAgent", js.undefined)
     
     @scala.inline
-    def deleteSocketPath: Self = this.set("socketPath", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshAuthAgent(value: String): Self = this.set("sshAuthAgent", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteSshAuthAgent: Self = this.set("sshAuthAgent", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

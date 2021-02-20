@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableRow extends js.Object {
+trait TableRow extends StObject {
   
   /** Height of a row. */
   var rowHeight: js.UndefOr[Dimension] = js.native
@@ -28,39 +29,27 @@ object TableRow {
   }
   
   @scala.inline
-  implicit class TableRowOps[Self <: TableRow] (val x: Self) extends AnyVal {
+  implicit class TableRowMutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRowHeight(value: Dimension): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableCells(value: js.Array[TableCell]): Self = StObject.set(x, "tableCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeight(value: Dimension): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
     
     @scala.inline
-    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+    def setTableCellsVarargs(value: TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
     
     @scala.inline
-    def setTableCellsVarargs(value: TableCell*): Self = this.set("tableCells", js.Array(value :_*))
+    def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableCells(value: js.Array[TableCell]): Self = this.set("tableCells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCells: Self = this.set("tableCells", js.undefined)
-    
-    @scala.inline
-    def setTableRowProperties(value: TableRowProperties): Self = this.set("tableRowProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableRowProperties: Self = this.set("tableRowProperties", js.undefined)
+    def setTableRowPropertiesUndefined: Self = StObject.set(x, "tableRowProperties", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AndroidStudio extends js.Object {
+trait AndroidStudio extends StObject {
   
   var androidStudio: scala.Double = js.native
   
@@ -59,60 +60,48 @@ object AndroidStudio {
   }
   
   @scala.inline
-  implicit class AndroidStudioOps[Self <: AndroidStudio] (val x: Self) extends AnyVal {
+  implicit class AndroidStudioMutableBuilder[Self <: AndroidStudio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidStudio(value: scala.Double): Self = StObject.set(x, "androidStudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppCode(value: scala.Double): Self = StObject.set(x, "appCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCLion(value: scala.Double): Self = StObject.set(x, "cLion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidStudio(value: scala.Double): Self = this.set("androidStudio", value.asInstanceOf[js.Any])
+    def setDataGrip(value: scala.Double): Self = StObject.set(x, "dataGrip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppCode(value: scala.Double): Self = this.set("appCode", value.asInstanceOf[js.Any])
+    def setEclipse(value: scala.Double): Self = StObject.set(x, "eclipse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLion(value: scala.Double): Self = this.set("cLion", value.asInstanceOf[js.Any])
+    def setIntelliJ(value: scala.Double): Self = StObject.set(x, "intelliJ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataGrip(value: scala.Double): Self = this.set("dataGrip", value.asInstanceOf[js.Any])
+    def setMPS(value: scala.Double): Self = StObject.set(x, "mPS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEclipse(value: scala.Double): Self = this.set("eclipse", value.asInstanceOf[js.Any])
+    def setPhpStorm(value: scala.Double): Self = StObject.set(x, "phpStorm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntelliJ(value: scala.Double): Self = this.set("intelliJ", value.asInstanceOf[js.Any])
+    def setPyCharm(value: scala.Double): Self = StObject.set(x, "pyCharm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMPS(value: scala.Double): Self = this.set("mPS", value.asInstanceOf[js.Any])
+    def setRubyMine(value: scala.Double): Self = StObject.set(x, "rubyMine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhpStorm(value: scala.Double): Self = this.set("phpStorm", value.asInstanceOf[js.Any])
+    def setTower(value: scala.Double): Self = StObject.set(x, "tower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPyCharm(value: scala.Double): Self = this.set("pyCharm", value.asInstanceOf[js.Any])
+    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRubyMine(value: scala.Double): Self = this.set("rubyMine", value.asInstanceOf[js.Any])
+    def setVisualStudio(value: scala.Double): Self = StObject.set(x, "visualStudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTower(value: scala.Double): Self = this.set("tower", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = this.set("unknown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisualStudio(value: scala.Double): Self = this.set("visualStudio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebStorm(value: scala.Double): Self = this.set("webStorm", value.asInstanceOf[js.Any])
+    def setWebStorm(value: scala.Double): Self = StObject.set(x, "webStorm", value.asInstanceOf[js.Any])
   }
 }

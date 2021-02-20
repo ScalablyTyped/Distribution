@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/renderTargetCreationOptions", JSImport.Namespace)
-@js.native
-object renderTargetCreationOptionsMod extends js.Object {
+object renderTargetCreationOptionsMod {
   
+  @JSImport("babylonjs/Materials/Textures/renderTargetCreationOptions", "RenderTargetCreationOptions")
   @js.native
-  class RenderTargetCreationOptions () extends js.Object {
+  class RenderTargetCreationOptions () extends StObject {
     
     /** Defines format (RGBA by default) */
     var format: js.UndefOr[Double] = js.native

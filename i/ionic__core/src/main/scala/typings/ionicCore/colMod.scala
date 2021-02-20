@@ -1,14 +1,14 @@
 package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/col/col", JSImport.Namespace)
-@js.native
-object colMod extends js.Object {
+object colMod {
   
+  @JSImport("@ionic/core/dist/types/components/col/col", "Col")
   @js.native
   class Col () extends ComponentInterface {
     

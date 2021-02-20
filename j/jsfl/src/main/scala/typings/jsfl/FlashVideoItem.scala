@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashVideoItem extends js.Object {
+trait FlashVideoItem extends StObject {
   
   def exportToFLV(fileURI: String): Boolean = js.native
   
@@ -35,36 +36,24 @@ object FlashVideoItem {
   }
   
   @scala.inline
-  implicit class FlashVideoItemOps[Self <: FlashVideoItem] (val x: Self) extends AnyVal {
+  implicit class FlashVideoItemMutableBuilder[Self <: FlashVideoItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportToFLV(value: String => Boolean): Self = StObject.set(x, "exportToFLV", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileLastModifiedDate(value: String): Self = StObject.set(x, "fileLastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceFileExists(value: Boolean): Self = StObject.set(x, "sourceFileExists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportToFLV(value: String => Boolean): Self = this.set("exportToFLV", js.Any.fromFunction1(value))
+    def setSourceFileIsCurrent(value: Boolean): Self = StObject.set(x, "sourceFileIsCurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileLastModifiedDate(value: String): Self = this.set("fileLastModifiedDate", value.asInstanceOf[js.Any])
+    def setSourceFilePath(value: String): Self = StObject.set(x, "sourceFilePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFileExists(value: Boolean): Self = this.set("sourceFileExists", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceFileIsCurrent(value: Boolean): Self = this.set("sourceFileIsCurrent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceFilePath(value: String): Self = this.set("sourceFilePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoType(value: String): Self = this.set("videoType", value.asInstanceOf[js.Any])
+    def setVideoType(value: String): Self = StObject.set(x, "videoType", value.asInstanceOf[js.Any])
   }
 }

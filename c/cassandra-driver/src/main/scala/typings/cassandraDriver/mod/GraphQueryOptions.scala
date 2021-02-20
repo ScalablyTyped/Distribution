@@ -1,6 +1,7 @@
 package typings.cassandraDriver.mod
 
 import typings.cassandraDriver.typesMod.types.consistencies
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,48 +28,36 @@ object GraphQueryOptions {
   }
   
   @scala.inline
-  implicit class GraphQueryOptionsOps[Self <: GraphQueryOptions] (val x: Self) extends AnyVal {
+  implicit class GraphQueryOptionsMutableBuilder[Self <: GraphQueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGraphLanguage(value: String): Self = StObject.set(x, "graphLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGraphLanguageUndefined: Self = StObject.set(x, "graphLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraphName(value: String): Self = StObject.set(x, "graphName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphLanguage(value: String): Self = this.set("graphLanguage", value.asInstanceOf[js.Any])
+    def setGraphNameUndefined: Self = StObject.set(x, "graphName", js.undefined)
     
     @scala.inline
-    def deleteGraphLanguage: Self = this.set("graphLanguage", js.undefined)
+    def setGraphReadConsistency(value: consistencies): Self = StObject.set(x, "graphReadConsistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphName(value: String): Self = this.set("graphName", value.asInstanceOf[js.Any])
+    def setGraphReadConsistencyUndefined: Self = StObject.set(x, "graphReadConsistency", js.undefined)
     
     @scala.inline
-    def deleteGraphName: Self = this.set("graphName", js.undefined)
+    def setGraphSource(value: String): Self = StObject.set(x, "graphSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphReadConsistency(value: consistencies): Self = this.set("graphReadConsistency", value.asInstanceOf[js.Any])
+    def setGraphSourceUndefined: Self = StObject.set(x, "graphSource", js.undefined)
     
     @scala.inline
-    def deleteGraphReadConsistency: Self = this.set("graphReadConsistency", js.undefined)
+    def setGraphWriteConsistency(value: consistencies): Self = StObject.set(x, "graphWriteConsistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphSource(value: String): Self = this.set("graphSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGraphSource: Self = this.set("graphSource", js.undefined)
-    
-    @scala.inline
-    def setGraphWriteConsistency(value: consistencies): Self = this.set("graphWriteConsistency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGraphWriteConsistency: Self = this.set("graphWriteConsistency", js.undefined)
+    def setGraphWriteConsistencyUndefined: Self = StObject.set(x, "graphWriteConsistency", js.undefined)
   }
 }

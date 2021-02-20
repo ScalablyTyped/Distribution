@@ -7,13 +7,14 @@ import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.allphotoscaptured
 import typings.winrtUwp.winrtUwpStrings.optionalreferencephotocaptured
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for capturing photos using system-provided computational photography techniques. */
 @js.native
-trait AdvancedPhotoCapture extends js.Object {
+trait AdvancedPhotoCapture extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

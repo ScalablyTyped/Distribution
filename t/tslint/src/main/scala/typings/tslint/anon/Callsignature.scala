@@ -1,11 +1,12 @@
 package typings.tslint.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Callsignature extends js.Object {
+trait Callsignature extends StObject {
   
   var `call-signature`: String = js.native
   
@@ -36,33 +37,21 @@ object Callsignature {
   }
   
   @scala.inline
-  implicit class CallsignatureOps[Self <: Callsignature] (val x: Self) extends AnyVal {
+  implicit class CallsignatureMutableBuilder[Self <: Callsignature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setCall-signature`(value: String): Self = StObject.set(x, "call-signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setIndex-signature`(value: String): Self = StObject.set(x, "index-signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCall-signature`(value: String): Self = this.set("call-signature", value.asInstanceOf[js.Any])
+    def `setProperty-declaration`(value: String): Self = StObject.set(x, "property-declaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIndex-signature`(value: String): Self = this.set("index-signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameter(value: String): Self = this.set("parameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setProperty-declaration`(value: String): Self = this.set("property-declaration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setVariable-declaration`(value: String): Self = this.set("variable-declaration", value.asInstanceOf[js.Any])
+    def `setVariable-declaration`(value: String): Self = StObject.set(x, "variable-declaration", value.asInstanceOf[js.Any])
   }
 }

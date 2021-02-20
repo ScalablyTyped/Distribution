@@ -1,5 +1,6 @@
 package typings.preloadjs.global.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,9 @@ class JSONLoader protected ()
   def this(loadItem: js.Object) = this()
 }
 /* static members */
-@JSGlobal("createjs.JSONLoader")
-@js.native
-object JSONLoader extends js.Object {
+object JSONLoader {
   
+  @JSGlobal("createjs.JSONLoader.canLoadItem")
+  @js.native
   def canLoadItem(item: js.Object): Boolean = js.native
 }

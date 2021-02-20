@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "Operand")
 @js.native
-abstract class Operand () extends js.Object {
+abstract class Operand () extends StObject {
   
   def addToAsyncList(list: js.Array[FunctionOperand]): Unit = js.native
   

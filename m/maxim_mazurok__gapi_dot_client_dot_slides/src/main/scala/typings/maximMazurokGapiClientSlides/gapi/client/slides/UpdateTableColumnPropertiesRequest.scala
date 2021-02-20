@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTableColumnPropertiesRequest extends js.Object {
+trait UpdateTableColumnPropertiesRequest extends StObject {
   
   /** The list of zero-based indices specifying which columns to update. If no indices are provided, all columns in the table will be updated. */
   var columnIndices: js.UndefOr[js.Array[Double]] = js.native
@@ -35,45 +36,33 @@ object UpdateTableColumnPropertiesRequest {
   }
   
   @scala.inline
-  implicit class UpdateTableColumnPropertiesRequestOps[Self <: UpdateTableColumnPropertiesRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateTableColumnPropertiesRequestMutableBuilder[Self <: UpdateTableColumnPropertiesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIndices(value: js.Array[Double]): Self = StObject.set(x, "columnIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndicesUndefined: Self = StObject.set(x, "columnIndices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnIndicesVarargs(value: Double*): Self = StObject.set(x, "columnIndices", js.Array(value :_*))
     
     @scala.inline
-    def setColumnIndicesVarargs(value: Double*): Self = this.set("columnIndices", js.Array(value :_*))
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndices(value: js.Array[Double]): Self = this.set("columnIndices", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteColumnIndices: Self = this.set("columnIndices", js.undefined)
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setTableColumnProperties(value: TableColumnProperties): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
-    
-    @scala.inline
-    def setTableColumnProperties(value: TableColumnProperties): Self = this.set("tableColumnProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableColumnProperties: Self = this.set("tableColumnProperties", js.undefined)
+    def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
   }
 }

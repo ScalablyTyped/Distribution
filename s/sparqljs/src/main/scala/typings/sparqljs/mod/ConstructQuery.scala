@@ -3,6 +3,7 @@ package typings.sparqljs.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.sparqljsStrings.CONSTRUCT
 import typings.sparqljs.sparqljsStrings.query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object ConstructQuery {
   }
   
   @scala.inline
-  implicit class ConstructQueryOps[Self <: ConstructQuery] (val x: Self) extends AnyVal {
+  implicit class ConstructQueryMutableBuilder[Self <: ConstructQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueryType(value: CONSTRUCT): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTemplate(value: js.Array[Triple]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def setQueryType(value: CONSTRUCT): Self = this.set("queryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplateVarargs(value: Triple*): Self = this.set("template", js.Array(value :_*))
-    
-    @scala.inline
-    def setTemplate(value: js.Array[Triple]): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateVarargs(value: Triple*): Self = StObject.set(x, "template", js.Array(value :_*))
   }
 }

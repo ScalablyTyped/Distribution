@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerInfoProperties extends js.Object {
+trait ServerInfoProperties extends StObject {
   
   /**
     * The token service URL used to generate tokens for ArcGIS Server Admin resources.
@@ -65,60 +66,48 @@ object ServerInfoProperties {
   }
   
   @scala.inline
-  implicit class ServerInfoPropertiesOps[Self <: ServerInfoProperties] (val x: Self) extends AnyVal {
+  implicit class ServerInfoPropertiesMutableBuilder[Self <: ServerInfoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminTokenServiceUrl(value: String): Self = StObject.set(x, "adminTokenServiceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminTokenServiceUrlUndefined: Self = StObject.set(x, "adminTokenServiceUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminTokenServiceUrl(value: String): Self = this.set("adminTokenServiceUrl", value.asInstanceOf[js.Any])
+    def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
     @scala.inline
-    def deleteAdminTokenServiceUrl: Self = this.set("adminTokenServiceUrl", js.undefined)
+    def setHasPortal(value: Boolean): Self = StObject.set(x, "hasPortal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentVersion(value: Double): Self = this.set("currentVersion", value.asInstanceOf[js.Any])
+    def setHasPortalUndefined: Self = StObject.set(x, "hasPortal", js.undefined)
     
     @scala.inline
-    def deleteCurrentVersion: Self = this.set("currentVersion", js.undefined)
+    def setHasServer(value: Boolean): Self = StObject.set(x, "hasServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPortal(value: Boolean): Self = this.set("hasPortal", value.asInstanceOf[js.Any])
+    def setHasServerUndefined: Self = StObject.set(x, "hasServer", js.undefined)
     
     @scala.inline
-    def deleteHasPortal: Self = this.set("hasPortal", js.undefined)
+    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasServer(value: Boolean): Self = this.set("hasServer", value.asInstanceOf[js.Any])
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
     @scala.inline
-    def deleteHasServer: Self = this.set("hasServer", js.undefined)
+    def setShortLivedTokenValidity(value: Double): Self = StObject.set(x, "shortLivedTokenValidity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
+    def setShortLivedTokenValidityUndefined: Self = StObject.set(x, "shortLivedTokenValidity", js.undefined)
     
     @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setTokenServiceUrl(value: String): Self = StObject.set(x, "tokenServiceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortLivedTokenValidity(value: Double): Self = this.set("shortLivedTokenValidity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortLivedTokenValidity: Self = this.set("shortLivedTokenValidity", js.undefined)
-    
-    @scala.inline
-    def setTokenServiceUrl(value: String): Self = this.set("tokenServiceUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenServiceUrl: Self = this.set("tokenServiceUrl", js.undefined)
+    def setTokenServiceUrlUndefined: Self = StObject.set(x, "tokenServiceUrl", js.undefined)
   }
 }

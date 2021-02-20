@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,66 +60,54 @@ object FamilyMemberHistoryCondition {
   }
   
   @scala.inline
-  implicit class FamilyMemberHistoryConditionOps[Self <: FamilyMemberHistoryCondition] (val x: Self) extends AnyVal {
+  implicit class FamilyMemberHistoryConditionMutableBuilder[Self <: FamilyMemberHistoryCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def set_onsetString(value: Element): Self = this.set("_onsetString", value.asInstanceOf[js.Any])
+    def setOnsetAge(value: Age): Self = StObject.set(x, "onsetAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_onsetString: Self = this.set("_onsetString", js.undefined)
+    def setOnsetAgeUndefined: Self = StObject.set(x, "onsetAge", js.undefined)
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def setOnsetPeriod(value: Period): Self = StObject.set(x, "onsetPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setOnsetPeriodUndefined: Self = StObject.set(x, "onsetPeriod", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setOnsetRange(value: Range): Self = StObject.set(x, "onsetRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsetAge(value: Age): Self = this.set("onsetAge", value.asInstanceOf[js.Any])
+    def setOnsetRangeUndefined: Self = StObject.set(x, "onsetRange", js.undefined)
     
     @scala.inline
-    def deleteOnsetAge: Self = this.set("onsetAge", js.undefined)
+    def setOnsetString(value: String): Self = StObject.set(x, "onsetString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsetPeriod(value: Period): Self = this.set("onsetPeriod", value.asInstanceOf[js.Any])
+    def setOnsetStringUndefined: Self = StObject.set(x, "onsetString", js.undefined)
     
     @scala.inline
-    def deleteOnsetPeriod: Self = this.set("onsetPeriod", js.undefined)
+    def setOutcome(value: CodeableConcept): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsetRange(value: Range): Self = this.set("onsetRange", value.asInstanceOf[js.Any])
+    def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
     @scala.inline
-    def deleteOnsetRange: Self = this.set("onsetRange", js.undefined)
+    def set_onsetString(value: Element): Self = StObject.set(x, "_onsetString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsetString(value: String): Self = this.set("onsetString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnsetString: Self = this.set("onsetString", js.undefined)
-    
-    @scala.inline
-    def setOutcome(value: CodeableConcept): Self = this.set("outcome", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutcome: Self = this.set("outcome", js.undefined)
+    def set_onsetStringUndefined: Self = StObject.set(x, "_onsetString", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * EndpointAddress is a tuple that describes single IP address.
   */
 @js.native
-trait EndpointAddress extends js.Object {
+trait EndpointAddress extends StObject {
   
   /**
     * The Hostname of this endpoint
@@ -40,39 +41,27 @@ object EndpointAddress {
   }
   
   @scala.inline
-  implicit class EndpointAddressOps[Self <: EndpointAddress] (val x: Self) extends AnyVal {
+  implicit class EndpointAddressMutableBuilder[Self <: EndpointAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostname(value: Input[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIp(value: Input[String]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: Input[String]): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setNodeName(value: Input[String]): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: Input[String]): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setNodeNameUndefined: Self = StObject.set(x, "nodeName", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setTargetRef(value: Input[ObjectReference]): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeName(value: Input[String]): Self = this.set("nodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeName: Self = this.set("nodeName", js.undefined)
-    
-    @scala.inline
-    def setTargetRef(value: Input[ObjectReference]): Self = this.set("targetRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetRef: Self = this.set("targetRef", js.undefined)
+    def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
   }
 }

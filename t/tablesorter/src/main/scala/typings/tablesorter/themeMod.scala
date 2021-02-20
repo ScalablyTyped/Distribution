@@ -1,15 +1,15 @@
 package typings.tablesorter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/Design/Theme", JSImport.Namespace)
-@js.native
-object themeMod extends js.Object {
+object themeMod {
   
+  @JSImport("tablesorter/Design/Theme", "Theme")
   @js.native
-  class Theme () extends js.Object {
+  class Theme () extends StObject {
     
     /**
       * A set of classes to apply to cells inside the active column.

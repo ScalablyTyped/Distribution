@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.task
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,36 +64,24 @@ object XMasterPasswordHandling {
   }
   
   @scala.inline
-  implicit class XMasterPasswordHandlingOps[Self <: XMasterPasswordHandling] (val x: Self) extends AnyVal {
+  implicit class XMasterPasswordHandlingMutableBuilder[Self <: XMasterPasswordHandling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPersistentStoring(value: Boolean => Boolean): Self = StObject.set(x, "allowPersistentStoring", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizateWithMasterPassword(value: XInteractionHandler => Boolean): Self = StObject.set(x, "authorizateWithMasterPassword", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeMasterPassword(value: XInteractionHandler => Boolean): Self = StObject.set(x, "changeMasterPassword", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllowPersistentStoring(value: Boolean => Boolean): Self = this.set("allowPersistentStoring", js.Any.fromFunction1(value))
+    def setHasMasterPassword(value: () => Boolean): Self = StObject.set(x, "hasMasterPassword", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAuthorizateWithMasterPassword(value: XInteractionHandler => Boolean): Self = this.set("authorizateWithMasterPassword", js.Any.fromFunction1(value))
+    def setIsPersistentStoringAllowed(value: () => Boolean): Self = StObject.set(x, "isPersistentStoringAllowed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeMasterPassword(value: XInteractionHandler => Boolean): Self = this.set("changeMasterPassword", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHasMasterPassword(value: () => Boolean): Self = this.set("hasMasterPassword", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsPersistentStoringAllowed(value: () => Boolean): Self = this.set("isPersistentStoringAllowed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveMasterPassword(value: () => Unit): Self = this.set("removeMasterPassword", js.Any.fromFunction0(value))
+    def setRemoveMasterPassword(value: () => Unit): Self = StObject.set(x, "removeMasterPassword", js.Any.fromFunction0(value))
   }
 }

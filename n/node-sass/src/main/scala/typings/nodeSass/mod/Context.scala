@@ -1,6 +1,7 @@
 package typings.nodeSass.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: (/* err */ SassError, /* result */ Result) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOptions(value: Options): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCallback(value: (/* err */ SassError, /* result */ Result) => js.Any): Self = this.set("callback", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

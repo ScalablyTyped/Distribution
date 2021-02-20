@@ -1,12 +1,13 @@
 package typings.raphael.mod
 
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelElementByTechnologyMap[TSvg /* <: SVGElement */, TVml /* <: VMLElement */] extends js.Object {
+trait RaphaelElementByTechnologyMap[TSvg /* <: SVGElement */, TVml /* <: VMLElement */] extends StObject {
   
   var SVG: TSvg = js.native
   
@@ -21,24 +22,12 @@ object RaphaelElementByTechnologyMap {
   }
   
   @scala.inline
-  implicit class RaphaelElementByTechnologyMapOps[Self <: RaphaelElementByTechnologyMap[_, _], TSvg /* <: SVGElement */, TVml /* <: VMLElement */] (val x: Self with (RaphaelElementByTechnologyMap[TSvg, TVml])) extends AnyVal {
+  implicit class RaphaelElementByTechnologyMapMutableBuilder[Self <: RaphaelElementByTechnologyMap[_, _], TSvg /* <: SVGElement */, TVml /* <: VMLElement */] (val x: Self with (RaphaelElementByTechnologyMap[TSvg, TVml])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSVG(value: TSvg): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSVG(value: TSvg): Self = this.set("SVG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVML(value: TVml): Self = this.set("VML", value.asInstanceOf[js.Any])
+    def setVML(value: TVml): Self = StObject.set(x, "VML", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionDetail extends js.Object {
+trait ActionDetail extends StObject {
   
   /** A change about comments was made. */
   var comment: js.UndefOr[Comment] = js.native
@@ -49,84 +50,72 @@ object ActionDetail {
   }
   
   @scala.inline
-  implicit class ActionDetailOps[Self <: ActionDetail] (val x: Self) extends AnyVal {
+  implicit class ActionDetailMutableBuilder[Self <: ActionDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreate(value: Create): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: Comment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setDelete(value: Delete): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: Create): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setDlpChange(value: DataLeakPreventionChange): Self = StObject.set(x, "dlpChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: Delete): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setDlpChangeUndefined: Self = StObject.set(x, "dlpChange", js.undefined)
     
     @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
+    def setEdit(value: js.Any): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDlpChange(value: DataLeakPreventionChange): Self = this.set("dlpChange", value.asInstanceOf[js.Any])
+    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
     @scala.inline
-    def deleteDlpChange: Self = this.set("dlpChange", js.undefined)
+    def setMove(value: Move): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdit(value: js.Any): Self = this.set("edit", value.asInstanceOf[js.Any])
+    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
     @scala.inline
-    def deleteEdit: Self = this.set("edit", js.undefined)
+    def setPermissionChange(value: PermissionChange): Self = StObject.set(x, "permissionChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove(value: Move): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setPermissionChangeUndefined: Self = StObject.set(x, "permissionChange", js.undefined)
     
     @scala.inline
-    def deleteMove: Self = this.set("move", js.undefined)
+    def setReference(value: ApplicationReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionChange(value: PermissionChange): Self = this.set("permissionChange", value.asInstanceOf[js.Any])
+    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
     @scala.inline
-    def deletePermissionChange: Self = this.set("permissionChange", js.undefined)
+    def setRename(value: Rename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReference(value: ApplicationReference): Self = this.set("reference", value.asInstanceOf[js.Any])
+    def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
     
     @scala.inline
-    def deleteReference: Self = this.set("reference", js.undefined)
+    def setRestore(value: Restore): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRename(value: Rename): Self = this.set("rename", value.asInstanceOf[js.Any])
+    def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
     
     @scala.inline
-    def deleteRename: Self = this.set("rename", js.undefined)
+    def setSettingsChange(value: SettingsChange): Self = StObject.set(x, "settingsChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestore(value: Restore): Self = this.set("restore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestore: Self = this.set("restore", js.undefined)
-    
-    @scala.inline
-    def setSettingsChange(value: SettingsChange): Self = this.set("settingsChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettingsChange: Self = this.set("settingsChange", js.undefined)
+    def setSettingsChangeUndefined: Self = StObject.set(x, "settingsChange", js.undefined)
   }
 }

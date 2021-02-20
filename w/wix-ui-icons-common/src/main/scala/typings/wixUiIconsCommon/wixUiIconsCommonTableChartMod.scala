@@ -1,14 +1,21 @@
 package typings.wixUiIconsCommon
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.SFC
 import typings.wixUiIconsCommon.tableChartMod.TableChartProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wix-ui-icons-common/TableChart", JSImport.Namespace)
-@js.native
-object wixUiIconsCommonTableChartMod extends js.Object {
+object wixUiIconsCommonTableChartMod extends Shortcut {
   
+  @JSImport("wix-ui-icons-common/TableChart", JSImport.Default)
+  @js.native
   val default: SFC[TableChartProps] = js.native
+  
+  type _To = SFC[TableChartProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonTableChartMod.foo` */
+  override def _to: SFC[TableChartProps] = default
 }

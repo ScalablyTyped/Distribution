@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -116,147 +117,135 @@ object AdverseEvent {
   }
   
   @scala.inline
-  implicit class AdverseEventOps[Self <: AdverseEvent] (val x: Self) extends AnyVal {
+  implicit class AdverseEventMutableBuilder[Self <: AdverseEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: code): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_category(value: Element): Self = this.set("_category", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def delete_category: Self = this.set("_category", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def setEventParticipant(value: Reference): Self = StObject.set(x, "eventParticipant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setEventParticipantUndefined: Self = StObject.set(x, "eventParticipant", js.undefined)
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: code): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setLocation(value: Reference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setOutcome(value: CodeableConcept): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setReaction(value: js.Array[Reference]): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventParticipant(value: Reference): Self = this.set("eventParticipant", value.asInstanceOf[js.Any])
+    def setReactionUndefined: Self = StObject.set(x, "reaction", js.undefined)
     
     @scala.inline
-    def deleteEventParticipant: Self = this.set("eventParticipant", js.undefined)
+    def setReactionVarargs(value: Reference*): Self = StObject.set(x, "reaction", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setRecorder(value: Reference): Self = StObject.set(x, "recorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setRecorderUndefined: Self = StObject.set(x, "recorder", js.undefined)
     
     @scala.inline
-    def setLocation(value: Reference): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setReferenceDocument(value: js.Array[Reference]): Self = StObject.set(x, "referenceDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setReferenceDocumentUndefined: Self = StObject.set(x, "referenceDocument", js.undefined)
     
     @scala.inline
-    def setOutcome(value: CodeableConcept): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    def setReferenceDocumentVarargs(value: Reference*): Self = StObject.set(x, "referenceDocument", js.Array(value :_*))
     
     @scala.inline
-    def deleteOutcome: Self = this.set("outcome", js.undefined)
+    def setSeriousness(value: CodeableConcept): Self = StObject.set(x, "seriousness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReactionVarargs(value: Reference*): Self = this.set("reaction", js.Array(value :_*))
+    def setSeriousnessUndefined: Self = StObject.set(x, "seriousness", js.undefined)
     
     @scala.inline
-    def setReaction(value: js.Array[Reference]): Self = this.set("reaction", value.asInstanceOf[js.Any])
+    def setStudy(value: js.Array[Reference]): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReaction: Self = this.set("reaction", js.undefined)
+    def setStudyUndefined: Self = StObject.set(x, "study", js.undefined)
     
     @scala.inline
-    def setRecorder(value: Reference): Self = this.set("recorder", value.asInstanceOf[js.Any])
+    def setStudyVarargs(value: Reference*): Self = StObject.set(x, "study", js.Array(value :_*))
     
     @scala.inline
-    def deleteRecorder: Self = this.set("recorder", js.undefined)
+    def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceDocumentVarargs(value: Reference*): Self = this.set("referenceDocument", js.Array(value :_*))
+    def setSubjectMedicalHistory(value: js.Array[Reference]): Self = StObject.set(x, "subjectMedicalHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceDocument(value: js.Array[Reference]): Self = this.set("referenceDocument", value.asInstanceOf[js.Any])
+    def setSubjectMedicalHistoryUndefined: Self = StObject.set(x, "subjectMedicalHistory", js.undefined)
     
     @scala.inline
-    def deleteReferenceDocument: Self = this.set("referenceDocument", js.undefined)
+    def setSubjectMedicalHistoryVarargs(value: Reference*): Self = StObject.set(x, "subjectMedicalHistory", js.Array(value :_*))
     
     @scala.inline
-    def setSeriousness(value: CodeableConcept): Self = this.set("seriousness", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteSeriousness: Self = this.set("seriousness", js.undefined)
+    def setSuspectEntity(value: js.Array[AdverseEventSuspectEntity]): Self = StObject.set(x, "suspectEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStudyVarargs(value: Reference*): Self = this.set("study", js.Array(value :_*))
+    def setSuspectEntityUndefined: Self = StObject.set(x, "suspectEntity", js.undefined)
     
     @scala.inline
-    def setStudy(value: js.Array[Reference]): Self = this.set("study", value.asInstanceOf[js.Any])
+    def setSuspectEntityVarargs(value: AdverseEventSuspectEntity*): Self = StObject.set(x, "suspectEntity", js.Array(value :_*))
     
     @scala.inline
-    def deleteStudy: Self = this.set("study", js.undefined)
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def set_category(value: Element): Self = StObject.set(x, "_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectMedicalHistoryVarargs(value: Reference*): Self = this.set("subjectMedicalHistory", js.Array(value :_*))
+    def set_categoryUndefined: Self = StObject.set(x, "_category", js.undefined)
     
     @scala.inline
-    def setSubjectMedicalHistory(value: js.Array[Reference]): Self = this.set("subjectMedicalHistory", value.asInstanceOf[js.Any])
+    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubjectMedicalHistory: Self = this.set("subjectMedicalHistory", js.undefined)
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
     @scala.inline
-    def setSuspectEntityVarargs(value: AdverseEventSuspectEntity*): Self = this.set("suspectEntity", js.Array(value :_*))
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspectEntity(value: js.Array[AdverseEventSuspectEntity]): Self = this.set("suspectEntity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuspectEntity: Self = this.set("suspectEntity", js.undefined)
-    
-    @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
   }
 }

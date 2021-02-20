@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChangeType extends js.Object
+sealed trait ChangeType extends StObject
 @JSGlobal("SP.ChangeType")
 @js.native
-object ChangeType extends js.Object {
+object ChangeType extends StObject {
   
   @js.native
   sealed trait add extends ChangeType

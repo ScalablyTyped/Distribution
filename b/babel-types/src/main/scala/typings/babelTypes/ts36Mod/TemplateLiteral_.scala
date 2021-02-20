@@ -1,6 +1,7 @@
 package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.TemplateLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,33 +36,21 @@ object TemplateLiteral_ {
   }
   
   @scala.inline
-  implicit class TemplateLiteral_Ops[Self <: TemplateLiteral_] (val x: Self) extends AnyVal {
+  implicit class TemplateLiteral_MutableBuilder[Self <: TemplateLiteral_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuasis(value: js.Array[TemplateElement_]): Self = StObject.set(x, "quasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionsVarargs(value: Expression*): Self = this.set("expressions", js.Array(value :_*))
+    def setQuasisVarargs(value: TemplateElement_ *): Self = StObject.set(x, "quasis", js.Array(value :_*))
     
     @scala.inline
-    def setExpressions(value: js.Array[Expression]): Self = this.set("expressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuasisVarargs(value: TemplateElement_ *): Self = this.set("quasis", js.Array(value :_*))
-    
-    @scala.inline
-    def setQuasis(value: js.Array[TemplateElement_]): Self = this.set("quasis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: TemplateLiteral): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: TemplateLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

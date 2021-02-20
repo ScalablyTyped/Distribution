@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateLoyaltyRewardRequest")
 @js.native
-class CreateLoyaltyRewardRequest () extends js.Object {
+class CreateLoyaltyRewardRequest () extends StObject {
   
   /**
     * A unique string that identifies this `CreateLoyaltyReward` request. Keys can be any valid string, but must be unique for every request.

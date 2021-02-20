@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsLayers.coreMod
 
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,36 +34,24 @@ object DropoutLayerArgs {
   }
   
   @scala.inline
-  implicit class DropoutLayerArgsOps[Self <: DropoutLayerArgs] (val x: Self) extends AnyVal {
+  implicit class DropoutLayerArgsMutableBuilder[Self <: DropoutLayerArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoiseShape(value: js.Array[Double]): Self = StObject.set(x, "noiseShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoiseShapeUndefined: Self = StObject.set(x, "noiseShape", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoiseShapeVarargs(value: Double*): Self = StObject.set(x, "noiseShape", js.Array(value :_*))
     
     @scala.inline
-    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoiseShapeVarargs(value: Double*): Self = this.set("noiseShape", js.Array(value :_*))
+    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoiseShape(value: js.Array[Double]): Self = this.set("noiseShape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoiseShape: Self = this.set("noiseShape", js.undefined)
-    
-    @scala.inline
-    def setSeed(value: Double): Self = this.set("seed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeed: Self = this.set("seed", js.undefined)
+    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
   }
 }

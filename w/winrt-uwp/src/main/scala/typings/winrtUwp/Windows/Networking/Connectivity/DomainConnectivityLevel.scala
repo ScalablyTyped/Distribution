@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DomainConnectivityLevel extends js.Object
+sealed trait DomainConnectivityLevel extends StObject
 /** Defines the domain authentication status for a network connection. */
 @JSGlobal("Windows.Networking.Connectivity.DomainConnectivityLevel")
 @js.native
-object DomainConnectivityLevel extends js.Object {
+object DomainConnectivityLevel extends StObject {
   
   /** The machine or user is authenticated on the domain connection. */
   @js.native

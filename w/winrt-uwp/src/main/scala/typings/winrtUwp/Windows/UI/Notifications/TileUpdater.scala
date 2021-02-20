@@ -4,13 +4,14 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Changes the content of the specific tile that the updater is bound to. */
 @js.native
-trait TileUpdater extends js.Object {
+trait TileUpdater extends StObject {
   
   /**
     * Adds a ScheduledTileNotification to the schedule.

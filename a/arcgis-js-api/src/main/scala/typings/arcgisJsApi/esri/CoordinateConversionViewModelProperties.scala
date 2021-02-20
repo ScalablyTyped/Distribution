@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.capture
 import typings.arcgisJsApi.arcgisJsApiStrings.live
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,66 +68,54 @@ object CoordinateConversionViewModelProperties {
   }
   
   @scala.inline
-  implicit class CoordinateConversionViewModelPropertiesOps[Self <: CoordinateConversionViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class CoordinateConversionViewModelPropertiesMutableBuilder[Self <: CoordinateConversionViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversions(value: CollectionProperties[ConversionProperties]): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversionsUndefined: Self = StObject.set(x, "conversions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversionsVarargs(value: ConversionProperties*): Self = StObject.set(x, "conversions", js.Array(value :_*))
     
     @scala.inline
-    def setConversionsVarargs(value: ConversionProperties*): Self = this.set("conversions", js.Array(value :_*))
+    def setCurrentLocation(value: PointProperties): Self = StObject.set(x, "currentLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversions(value: CollectionProperties[ConversionProperties]): Self = this.set("conversions", value.asInstanceOf[js.Any])
+    def setCurrentLocationUndefined: Self = StObject.set(x, "currentLocation", js.undefined)
     
     @scala.inline
-    def deleteConversions: Self = this.set("conversions", js.undefined)
+    def setFormats(value: CollectionProperties[FormatProperties]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentLocation(value: PointProperties): Self = this.set("currentLocation", value.asInstanceOf[js.Any])
+    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
     @scala.inline
-    def deleteCurrentLocation: Self = this.set("currentLocation", js.undefined)
+    def setFormatsVarargs(value: FormatProperties*): Self = StObject.set(x, "formats", js.Array(value :_*))
     
     @scala.inline
-    def setFormatsVarargs(value: FormatProperties*): Self = this.set("formats", js.Array(value :_*))
+    def setLocationSymbol(value: SimpleMarkerSymbolProperties | PictureMarkerSymbolProperties): Self = StObject.set(x, "locationSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormats(value: CollectionProperties[FormatProperties]): Self = this.set("formats", value.asInstanceOf[js.Any])
+    def setLocationSymbolUndefined: Self = StObject.set(x, "locationSymbol", js.undefined)
     
     @scala.inline
-    def deleteFormats: Self = this.set("formats", js.undefined)
+    def setMode(value: live | capture): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationSymbol(value: SimpleMarkerSymbolProperties | PictureMarkerSymbolProperties): Self = this.set("locationSymbol", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteLocationSymbol: Self = this.set("locationSymbol", js.undefined)
+    def setRequestDelay(value: Double): Self = StObject.set(x, "requestDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: live | capture): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setRequestDelayUndefined: Self = StObject.set(x, "requestDelay", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestDelay(value: Double): Self = this.set("requestDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestDelay: Self = this.set("requestDelay", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

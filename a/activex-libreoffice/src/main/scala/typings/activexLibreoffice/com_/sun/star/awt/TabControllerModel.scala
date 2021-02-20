@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XObjectInputStream
 import typings.activexLibreoffice.com_.sun.star.io.XObjectOutputStream
 import typings.activexLibreoffice.com_.sun.star.io.XPersistObject
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

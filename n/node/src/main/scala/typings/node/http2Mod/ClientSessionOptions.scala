@@ -4,6 +4,7 @@ import typings.node.nodeStrings.httpColon
 import typings.node.nodeStrings.httpsColon
 import typings.node.streamMod.Duplex
 import typings.node.urlMod.URL_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,36 +28,24 @@ object ClientSessionOptions {
   }
   
   @scala.inline
-  implicit class ClientSessionOptionsOps[Self <: ClientSessionOptions] (val x: Self) extends AnyVal {
+  implicit class ClientSessionOptionsMutableBuilder[Self <: ClientSessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateConnection(value: (/* authority */ URL_, /* option */ SessionOptions) => Duplex): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxReservedRemoteStreams(value: Double): Self = StObject.set(x, "maxReservedRemoteStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateConnection(value: (/* authority */ URL_, /* option */ SessionOptions) => Duplex): Self = this.set("createConnection", js.Any.fromFunction2(value))
+    def setMaxReservedRemoteStreamsUndefined: Self = StObject.set(x, "maxReservedRemoteStreams", js.undefined)
     
     @scala.inline
-    def deleteCreateConnection: Self = this.set("createConnection", js.undefined)
+    def setProtocol(value: httpColon | httpsColon): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxReservedRemoteStreams(value: Double): Self = this.set("maxReservedRemoteStreams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxReservedRemoteStreams: Self = this.set("maxReservedRemoteStreams", js.undefined)
-    
-    @scala.inline
-    def setProtocol(value: httpColon | httpsColon): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
   }
 }

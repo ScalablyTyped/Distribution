@@ -1,12 +1,13 @@
 package typings.inversify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify/dts/annotation/injectable", JSImport.Namespace)
-@js.native
-object injectableMod extends js.Object {
+object injectableMod {
   
+  @JSImport("inversify/dts/annotation/injectable", "injectable")
+  @js.native
   def injectable(): js.Function1[/* target */ js.Any, _] = js.native
 }

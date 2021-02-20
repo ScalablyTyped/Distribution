@@ -1,11 +1,12 @@
 package typings.eggView
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewBase extends js.Object {
+trait ViewBase extends StObject {
   
   /**
     * Render a file by view engine, then set to body

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,39 +93,27 @@ object XMultiPropertySet {
   }
   
   @scala.inline
-  implicit class XMultiPropertySetOps[Self <: XMultiPropertySet] (val x: Self) extends AnyVal {
+  implicit class XMultiPropertySetMutableBuilder[Self <: XMultiPropertySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "addPropertiesChangeListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirePropertiesChangeEvent(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "firePropertiesChangeEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPropertySetInfo(value: XPropertySetInfo): Self = this.set("PropertySetInfo", value.asInstanceOf[js.Any])
+    def setGetPropertyValues(value: SeqEquiv[String] => SafeArray[_]): Self = StObject.set(x, "getPropertyValues", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddPropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = this.set("addPropertiesChangeListener", js.Any.fromFunction2(value))
+    def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirePropertiesChangeEvent(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = this.set("firePropertiesChangeEvent", js.Any.fromFunction2(value))
+    def setRemovePropertiesChangeListener(value: XPropertiesChangeListener => Unit): Self = StObject.set(x, "removePropertiesChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPropertyValues(value: SeqEquiv[String] => SafeArray[_]): Self = this.set("getPropertyValues", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemovePropertiesChangeListener(value: XPropertiesChangeListener => Unit): Self = this.set("removePropertiesChangeListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPropertyValues(value: (SeqEquiv[String], SeqEquiv[_]) => Unit): Self = this.set("setPropertyValues", js.Any.fromFunction2(value))
+    def setSetPropertyValues(value: (SeqEquiv[String], SeqEquiv[_]) => Unit): Self = StObject.set(x, "setPropertyValues", js.Any.fromFunction2(value))
   }
 }

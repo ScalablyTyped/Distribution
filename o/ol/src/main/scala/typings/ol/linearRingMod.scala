@@ -2,13 +2,19 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/LinearRing", JSImport.Namespace)
-@js.native
-object linearRingMod extends js.Object {
+object linearRingMod {
+  
+  @JSImport("ol/geom/LinearRing", JSImport.Default)
+  @js.native
+  class default protected () extends LinearRing {
+    def this(coordinates: js.Array[Coordinate | Double]) = this()
+    def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
+  }
   
   @js.native
   trait LinearRing
@@ -18,11 +24,5 @@ object linearRingMod extends js.Object {
       * Return the area of the linear ring on projected plane.
       */
     def getArea(): Double = js.native
-  }
-  
-  @js.native
-  class default protected () extends LinearRing {
-    def this(coordinates: js.Array[Coordinate | Double]) = this()
-    def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
 }

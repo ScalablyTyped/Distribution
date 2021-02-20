@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Registration extends js.Object {
+trait Registration extends StObject {
   
   /**
     * The id used to register the request. The id can be used to deregister
@@ -32,30 +33,18 @@ object Registration {
   }
   
   @scala.inline
-  implicit class RegistrationOps[Self <: Registration] (val x: Self) extends AnyVal {
+  implicit class RegistrationMutableBuilder[Self <: Registration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegisterOptions(value: js.Any): Self = StObject.set(x, "registerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegisterOptions(value: js.Any): Self = this.set("registerOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegisterOptions: Self = this.set("registerOptions", js.undefined)
+    def setRegisterOptionsUndefined: Self = StObject.set(x, "registerOptions", js.undefined)
   }
 }

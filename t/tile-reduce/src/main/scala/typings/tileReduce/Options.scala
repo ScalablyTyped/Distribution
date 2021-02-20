@@ -3,12 +3,13 @@ package typings.tileReduce
 import typings.tileReduce.TileReduce.BBox
 import typings.tileReduce.TileReduce.Source
 import typings.tileReduce.TileReduce.Tile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var bbox: js.UndefOr[BBox] = js.native
   
@@ -43,87 +44,75 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeojson(value: js.Any): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: String): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setGeojsonUndefined: Self = StObject.set(x, "geojson", js.undefined)
     
     @scala.inline
-    def setSourcesVarargs(value: Source*): Self = this.set("sources", js.Array(value :_*))
+    def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSources(value: js.Array[Source]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBbox(value: BBox): Self = this.set("bbox", value.asInstanceOf[js.Any])
+    def setMapOptions(value: js.Any): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBbox: Self = this.set("bbox", js.undefined)
+    def setMapOptionsUndefined: Self = StObject.set(x, "mapOptions", js.undefined)
     
     @scala.inline
-    def setGeojson(value: js.Any): Self = this.set("geojson", value.asInstanceOf[js.Any])
+    def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeojson: Self = this.set("geojson", js.undefined)
+    def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
     
     @scala.inline
-    def setLog(value: Boolean): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
     @scala.inline
-    def setMapOptions(value: js.Any): Self = this.set("mapOptions", value.asInstanceOf[js.Any])
+    def setSourceCover(value: String): Self = StObject.set(x, "sourceCover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMapOptions: Self = this.set("mapOptions", js.undefined)
+    def setSourceCoverUndefined: Self = StObject.set(x, "sourceCover", js.undefined)
     
     @scala.inline
-    def setMaxWorkers(value: Double): Self = this.set("maxWorkers", value.asInstanceOf[js.Any])
+    def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxWorkers: Self = this.set("maxWorkers", js.undefined)
+    def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
     @scala.inline
-    def setOutput(value: js.Any): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setTileStream(value: js.Any): Self = StObject.set(x, "tileStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
+    def setTileStreamUndefined: Self = StObject.set(x, "tileStream", js.undefined)
     
     @scala.inline
-    def setSourceCover(value: String): Self = this.set("sourceCover", value.asInstanceOf[js.Any])
+    def setTiles(value: js.Array[Tile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceCover: Self = this.set("sourceCover", js.undefined)
+    def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
     @scala.inline
-    def setTileStream(value: js.Any): Self = this.set("tileStream", value.asInstanceOf[js.Any])
+    def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
     
     @scala.inline
-    def deleteTileStream: Self = this.set("tileStream", js.undefined)
-    
-    @scala.inline
-    def setTilesVarargs(value: Tile*): Self = this.set("tiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setTiles(value: js.Array[Tile]): Self = this.set("tiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiles: Self = this.set("tiles", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

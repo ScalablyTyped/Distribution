@@ -1,5 +1,6 @@
 package typings.ecmarkdown.nodeTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ecmarkdown.ecmarkdownStrings.pipe
   - typings.ecmarkdown.ecmarkdownStrings.tilde
 */
-trait Format extends js.Object
+trait Format extends StObject
 object Format {
   
   @scala.inline

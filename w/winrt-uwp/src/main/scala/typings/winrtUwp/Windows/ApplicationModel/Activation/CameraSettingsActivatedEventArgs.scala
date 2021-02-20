@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Activation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables a camera settings app to handle the activation parameters for the app. */
 @js.native
-trait CameraSettingsActivatedEventArgs extends js.Object {
+trait CameraSettingsActivatedEventArgs extends StObject {
   
   /** Gets the activation type. */
   var kind: ActivationKind = js.native
@@ -38,33 +39,21 @@ object CameraSettingsActivatedEventArgs {
   }
   
   @scala.inline
-  implicit class CameraSettingsActivatedEventArgsOps[Self <: CameraSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class CameraSettingsActivatedEventArgsMutableBuilder[Self <: CameraSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ActivationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setVideoDeviceController(value: js.Any): Self = StObject.set(x, "videoDeviceController", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = this.set("previousExecutionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = this.set("splashScreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoDeviceController(value: js.Any): Self = this.set("videoDeviceController", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoDeviceExtension(value: js.Any): Self = this.set("videoDeviceExtension", value.asInstanceOf[js.Any])
+    def setVideoDeviceExtension(value: js.Any): Self = StObject.set(x, "videoDeviceExtension", value.asInstanceOf[js.Any])
   }
 }

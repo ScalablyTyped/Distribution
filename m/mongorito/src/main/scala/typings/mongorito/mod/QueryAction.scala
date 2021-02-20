@@ -2,6 +2,7 @@ package typings.mongorito.mod
 
 import typings.mongorito.anon.Args
 import typings.mongorito.mod.ActionTypes.QUERY
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object QueryAction {
   }
   
   @scala.inline
-  implicit class QueryActionOps[Self <: QueryAction] (val x: Self) extends AnyVal {
+  implicit class QueryActionMutableBuilder[Self <: QueryAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuery(value: js.Array[Args]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryVarargs(value: Args*): Self = StObject.set(x, "query", js.Array(value :_*))
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryVarargs(value: Args*): Self = this.set("query", js.Array(value :_*))
-    
-    @scala.inline
-    def setQuery(value: js.Array[Args]): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: QUERY): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: QUERY): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

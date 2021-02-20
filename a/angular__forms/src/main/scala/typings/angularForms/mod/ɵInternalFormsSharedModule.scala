@@ -1,5 +1,6 @@
 package typings.angularForms.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("@angular/forms", "\u0275InternalFormsSharedModule")
 @js.native
-class ɵInternalFormsSharedModule () extends js.Object
+class ɵInternalFormsSharedModule () extends StObject

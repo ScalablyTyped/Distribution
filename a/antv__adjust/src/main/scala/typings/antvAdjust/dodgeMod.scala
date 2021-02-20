@@ -1,13 +1,18 @@
 package typings.antvAdjust
 
 import typings.antvAdjust.interfaceMod.DodgeCfg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/adjust/lib/adjusts/dodge", JSImport.Namespace)
-@js.native
-object dodgeMod extends js.Object {
+object dodgeMod {
+  
+  @JSImport("@antv/adjust/lib/adjusts/dodge", JSImport.Default)
+  @js.native
+  class default protected () extends Dodge {
+    def this(cfg: DodgeCfg) = this()
+  }
   
   @js.native
   trait Dodge
@@ -28,10 +33,5 @@ object dodgeMod extends js.Object {
     var getIntervalOnlyOffset: js.Any = js.native
     
     var mergeData: js.Any = js.native
-  }
-  
-  @js.native
-  class default protected () extends Dodge {
-    def this(cfg: DodgeCfg) = this()
   }
 }

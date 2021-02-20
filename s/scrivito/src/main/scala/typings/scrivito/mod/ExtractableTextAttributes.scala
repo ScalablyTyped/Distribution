@@ -1,5 +1,6 @@
 package typings.scrivito.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.scrivito.scrivitoStrings.widgetlist
   - typings.scrivito.scrivitoStrings.blobColontext
 */
-trait ExtractableTextAttributes extends js.Object
+trait ExtractableTextAttributes extends StObject
 object ExtractableTextAttributes {
   
   @scala.inline

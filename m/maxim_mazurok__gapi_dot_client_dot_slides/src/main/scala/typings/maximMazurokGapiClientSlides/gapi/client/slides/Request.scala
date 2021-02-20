@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Request extends js.Object {
+trait Request extends StObject {
   
   /** Creates an image. */
   var createImage: js.UndefOr[CreateImageRequest] = js.native
@@ -145,276 +146,264 @@ object Request {
   }
   
   @scala.inline
-  implicit class RequestOps[Self <: Request] (val x: Self) extends AnyVal {
+  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateImage(value: CreateImageRequest): Self = StObject.set(x, "createImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateImageUndefined: Self = StObject.set(x, "createImage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateLine(value: CreateLineRequest): Self = StObject.set(x, "createLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateImage(value: CreateImageRequest): Self = this.set("createImage", value.asInstanceOf[js.Any])
+    def setCreateLineUndefined: Self = StObject.set(x, "createLine", js.undefined)
     
     @scala.inline
-    def deleteCreateImage: Self = this.set("createImage", js.undefined)
+    def setCreateParagraphBullets(value: CreateParagraphBulletsRequest): Self = StObject.set(x, "createParagraphBullets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateLine(value: CreateLineRequest): Self = this.set("createLine", value.asInstanceOf[js.Any])
+    def setCreateParagraphBulletsUndefined: Self = StObject.set(x, "createParagraphBullets", js.undefined)
     
     @scala.inline
-    def deleteCreateLine: Self = this.set("createLine", js.undefined)
+    def setCreateShape(value: CreateShapeRequest): Self = StObject.set(x, "createShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateParagraphBullets(value: CreateParagraphBulletsRequest): Self = this.set("createParagraphBullets", value.asInstanceOf[js.Any])
+    def setCreateShapeUndefined: Self = StObject.set(x, "createShape", js.undefined)
     
     @scala.inline
-    def deleteCreateParagraphBullets: Self = this.set("createParagraphBullets", js.undefined)
+    def setCreateSheetsChart(value: CreateSheetsChartRequest): Self = StObject.set(x, "createSheetsChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateShape(value: CreateShapeRequest): Self = this.set("createShape", value.asInstanceOf[js.Any])
+    def setCreateSheetsChartUndefined: Self = StObject.set(x, "createSheetsChart", js.undefined)
     
     @scala.inline
-    def deleteCreateShape: Self = this.set("createShape", js.undefined)
+    def setCreateSlide(value: CreateSlideRequest): Self = StObject.set(x, "createSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSheetsChart(value: CreateSheetsChartRequest): Self = this.set("createSheetsChart", value.asInstanceOf[js.Any])
+    def setCreateSlideUndefined: Self = StObject.set(x, "createSlide", js.undefined)
     
     @scala.inline
-    def deleteCreateSheetsChart: Self = this.set("createSheetsChart", js.undefined)
+    def setCreateTable(value: CreateTableRequest): Self = StObject.set(x, "createTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSlide(value: CreateSlideRequest): Self = this.set("createSlide", value.asInstanceOf[js.Any])
+    def setCreateTableUndefined: Self = StObject.set(x, "createTable", js.undefined)
     
     @scala.inline
-    def deleteCreateSlide: Self = this.set("createSlide", js.undefined)
+    def setCreateVideo(value: CreateVideoRequest): Self = StObject.set(x, "createVideo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTable(value: CreateTableRequest): Self = this.set("createTable", value.asInstanceOf[js.Any])
+    def setCreateVideoUndefined: Self = StObject.set(x, "createVideo", js.undefined)
     
     @scala.inline
-    def deleteCreateTable: Self = this.set("createTable", js.undefined)
+    def setDeleteObject(value: DeleteObjectRequest): Self = StObject.set(x, "deleteObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateVideo(value: CreateVideoRequest): Self = this.set("createVideo", value.asInstanceOf[js.Any])
+    def setDeleteObjectUndefined: Self = StObject.set(x, "deleteObject", js.undefined)
     
     @scala.inline
-    def deleteCreateVideo: Self = this.set("createVideo", js.undefined)
+    def setDeleteParagraphBullets(value: DeleteParagraphBulletsRequest): Self = StObject.set(x, "deleteParagraphBullets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteObject(value: DeleteObjectRequest): Self = this.set("deleteObject", value.asInstanceOf[js.Any])
+    def setDeleteParagraphBulletsUndefined: Self = StObject.set(x, "deleteParagraphBullets", js.undefined)
     
     @scala.inline
-    def deleteDeleteObject: Self = this.set("deleteObject", js.undefined)
+    def setDeleteTableColumn(value: DeleteTableColumnRequest): Self = StObject.set(x, "deleteTableColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteParagraphBullets(value: DeleteParagraphBulletsRequest): Self = this.set("deleteParagraphBullets", value.asInstanceOf[js.Any])
+    def setDeleteTableColumnUndefined: Self = StObject.set(x, "deleteTableColumn", js.undefined)
     
     @scala.inline
-    def deleteDeleteParagraphBullets: Self = this.set("deleteParagraphBullets", js.undefined)
+    def setDeleteTableRow(value: DeleteTableRowRequest): Self = StObject.set(x, "deleteTableRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTableColumn(value: DeleteTableColumnRequest): Self = this.set("deleteTableColumn", value.asInstanceOf[js.Any])
+    def setDeleteTableRowUndefined: Self = StObject.set(x, "deleteTableRow", js.undefined)
     
     @scala.inline
-    def deleteDeleteTableColumn: Self = this.set("deleteTableColumn", js.undefined)
+    def setDeleteText(value: DeleteTextRequest): Self = StObject.set(x, "deleteText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTableRow(value: DeleteTableRowRequest): Self = this.set("deleteTableRow", value.asInstanceOf[js.Any])
+    def setDeleteTextUndefined: Self = StObject.set(x, "deleteText", js.undefined)
     
     @scala.inline
-    def deleteDeleteTableRow: Self = this.set("deleteTableRow", js.undefined)
+    def setDuplicateObject(value: DuplicateObjectRequest): Self = StObject.set(x, "duplicateObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteText(value: DeleteTextRequest): Self = this.set("deleteText", value.asInstanceOf[js.Any])
+    def setDuplicateObjectUndefined: Self = StObject.set(x, "duplicateObject", js.undefined)
     
     @scala.inline
-    def deleteDeleteText: Self = this.set("deleteText", js.undefined)
+    def setGroupObjects(value: GroupObjectsRequest): Self = StObject.set(x, "groupObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicateObject(value: DuplicateObjectRequest): Self = this.set("duplicateObject", value.asInstanceOf[js.Any])
+    def setGroupObjectsUndefined: Self = StObject.set(x, "groupObjects", js.undefined)
     
     @scala.inline
-    def deleteDuplicateObject: Self = this.set("duplicateObject", js.undefined)
+    def setInsertTableColumns(value: InsertTableColumnsRequest): Self = StObject.set(x, "insertTableColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupObjects(value: GroupObjectsRequest): Self = this.set("groupObjects", value.asInstanceOf[js.Any])
+    def setInsertTableColumnsUndefined: Self = StObject.set(x, "insertTableColumns", js.undefined)
     
     @scala.inline
-    def deleteGroupObjects: Self = this.set("groupObjects", js.undefined)
+    def setInsertTableRows(value: InsertTableRowsRequest): Self = StObject.set(x, "insertTableRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertTableColumns(value: InsertTableColumnsRequest): Self = this.set("insertTableColumns", value.asInstanceOf[js.Any])
+    def setInsertTableRowsUndefined: Self = StObject.set(x, "insertTableRows", js.undefined)
     
     @scala.inline
-    def deleteInsertTableColumns: Self = this.set("insertTableColumns", js.undefined)
+    def setInsertText(value: InsertTextRequest): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertTableRows(value: InsertTableRowsRequest): Self = this.set("insertTableRows", value.asInstanceOf[js.Any])
+    def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
     
     @scala.inline
-    def deleteInsertTableRows: Self = this.set("insertTableRows", js.undefined)
+    def setMergeTableCells(value: MergeTableCellsRequest): Self = StObject.set(x, "mergeTableCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertText(value: InsertTextRequest): Self = this.set("insertText", value.asInstanceOf[js.Any])
+    def setMergeTableCellsUndefined: Self = StObject.set(x, "mergeTableCells", js.undefined)
     
     @scala.inline
-    def deleteInsertText: Self = this.set("insertText", js.undefined)
+    def setRefreshSheetsChart(value: RefreshSheetsChartRequest): Self = StObject.set(x, "refreshSheetsChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeTableCells(value: MergeTableCellsRequest): Self = this.set("mergeTableCells", value.asInstanceOf[js.Any])
+    def setRefreshSheetsChartUndefined: Self = StObject.set(x, "refreshSheetsChart", js.undefined)
     
     @scala.inline
-    def deleteMergeTableCells: Self = this.set("mergeTableCells", js.undefined)
+    def setReplaceAllShapesWithImage(value: ReplaceAllShapesWithImageRequest): Self = StObject.set(x, "replaceAllShapesWithImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshSheetsChart(value: RefreshSheetsChartRequest): Self = this.set("refreshSheetsChart", value.asInstanceOf[js.Any])
+    def setReplaceAllShapesWithImageUndefined: Self = StObject.set(x, "replaceAllShapesWithImage", js.undefined)
     
     @scala.inline
-    def deleteRefreshSheetsChart: Self = this.set("refreshSheetsChart", js.undefined)
+    def setReplaceAllShapesWithSheetsChart(value: ReplaceAllShapesWithSheetsChartRequest): Self = StObject.set(x, "replaceAllShapesWithSheetsChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceAllShapesWithImage(value: ReplaceAllShapesWithImageRequest): Self = this.set("replaceAllShapesWithImage", value.asInstanceOf[js.Any])
+    def setReplaceAllShapesWithSheetsChartUndefined: Self = StObject.set(x, "replaceAllShapesWithSheetsChart", js.undefined)
     
     @scala.inline
-    def deleteReplaceAllShapesWithImage: Self = this.set("replaceAllShapesWithImage", js.undefined)
+    def setReplaceAllText(value: ReplaceAllTextRequest): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceAllShapesWithSheetsChart(value: ReplaceAllShapesWithSheetsChartRequest): Self = this.set("replaceAllShapesWithSheetsChart", value.asInstanceOf[js.Any])
+    def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
     
     @scala.inline
-    def deleteReplaceAllShapesWithSheetsChart: Self = this.set("replaceAllShapesWithSheetsChart", js.undefined)
+    def setReplaceImage(value: ReplaceImageRequest): Self = StObject.set(x, "replaceImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceAllText(value: ReplaceAllTextRequest): Self = this.set("replaceAllText", value.asInstanceOf[js.Any])
+    def setReplaceImageUndefined: Self = StObject.set(x, "replaceImage", js.undefined)
     
     @scala.inline
-    def deleteReplaceAllText: Self = this.set("replaceAllText", js.undefined)
+    def setRerouteLine(value: RerouteLineRequest): Self = StObject.set(x, "rerouteLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceImage(value: ReplaceImageRequest): Self = this.set("replaceImage", value.asInstanceOf[js.Any])
+    def setRerouteLineUndefined: Self = StObject.set(x, "rerouteLine", js.undefined)
     
     @scala.inline
-    def deleteReplaceImage: Self = this.set("replaceImage", js.undefined)
+    def setUngroupObjects(value: UngroupObjectsRequest): Self = StObject.set(x, "ungroupObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRerouteLine(value: RerouteLineRequest): Self = this.set("rerouteLine", value.asInstanceOf[js.Any])
+    def setUngroupObjectsUndefined: Self = StObject.set(x, "ungroupObjects", js.undefined)
     
     @scala.inline
-    def deleteRerouteLine: Self = this.set("rerouteLine", js.undefined)
+    def setUnmergeTableCells(value: UnmergeTableCellsRequest): Self = StObject.set(x, "unmergeTableCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUngroupObjects(value: UngroupObjectsRequest): Self = this.set("ungroupObjects", value.asInstanceOf[js.Any])
+    def setUnmergeTableCellsUndefined: Self = StObject.set(x, "unmergeTableCells", js.undefined)
     
     @scala.inline
-    def deleteUngroupObjects: Self = this.set("ungroupObjects", js.undefined)
+    def setUpdateImageProperties(value: UpdateImagePropertiesRequest): Self = StObject.set(x, "updateImageProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnmergeTableCells(value: UnmergeTableCellsRequest): Self = this.set("unmergeTableCells", value.asInstanceOf[js.Any])
+    def setUpdateImagePropertiesUndefined: Self = StObject.set(x, "updateImageProperties", js.undefined)
     
     @scala.inline
-    def deleteUnmergeTableCells: Self = this.set("unmergeTableCells", js.undefined)
+    def setUpdateLineCategory(value: UpdateLineCategoryRequest): Self = StObject.set(x, "updateLineCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateImageProperties(value: UpdateImagePropertiesRequest): Self = this.set("updateImageProperties", value.asInstanceOf[js.Any])
+    def setUpdateLineCategoryUndefined: Self = StObject.set(x, "updateLineCategory", js.undefined)
     
     @scala.inline
-    def deleteUpdateImageProperties: Self = this.set("updateImageProperties", js.undefined)
+    def setUpdateLineProperties(value: UpdateLinePropertiesRequest): Self = StObject.set(x, "updateLineProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateLineCategory(value: UpdateLineCategoryRequest): Self = this.set("updateLineCategory", value.asInstanceOf[js.Any])
+    def setUpdateLinePropertiesUndefined: Self = StObject.set(x, "updateLineProperties", js.undefined)
     
     @scala.inline
-    def deleteUpdateLineCategory: Self = this.set("updateLineCategory", js.undefined)
+    def setUpdatePageElementAltText(value: UpdatePageElementAltTextRequest): Self = StObject.set(x, "updatePageElementAltText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateLineProperties(value: UpdateLinePropertiesRequest): Self = this.set("updateLineProperties", value.asInstanceOf[js.Any])
+    def setUpdatePageElementAltTextUndefined: Self = StObject.set(x, "updatePageElementAltText", js.undefined)
     
     @scala.inline
-    def deleteUpdateLineProperties: Self = this.set("updateLineProperties", js.undefined)
+    def setUpdatePageElementTransform(value: UpdatePageElementTransformRequest): Self = StObject.set(x, "updatePageElementTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatePageElementAltText(value: UpdatePageElementAltTextRequest): Self = this.set("updatePageElementAltText", value.asInstanceOf[js.Any])
+    def setUpdatePageElementTransformUndefined: Self = StObject.set(x, "updatePageElementTransform", js.undefined)
     
     @scala.inline
-    def deleteUpdatePageElementAltText: Self = this.set("updatePageElementAltText", js.undefined)
+    def setUpdatePageElementsZOrder(value: UpdatePageElementsZOrderRequest): Self = StObject.set(x, "updatePageElementsZOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatePageElementTransform(value: UpdatePageElementTransformRequest): Self = this.set("updatePageElementTransform", value.asInstanceOf[js.Any])
+    def setUpdatePageElementsZOrderUndefined: Self = StObject.set(x, "updatePageElementsZOrder", js.undefined)
     
     @scala.inline
-    def deleteUpdatePageElementTransform: Self = this.set("updatePageElementTransform", js.undefined)
+    def setUpdatePageProperties(value: UpdatePagePropertiesRequest): Self = StObject.set(x, "updatePageProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatePageElementsZOrder(value: UpdatePageElementsZOrderRequest): Self = this.set("updatePageElementsZOrder", value.asInstanceOf[js.Any])
+    def setUpdatePagePropertiesUndefined: Self = StObject.set(x, "updatePageProperties", js.undefined)
     
     @scala.inline
-    def deleteUpdatePageElementsZOrder: Self = this.set("updatePageElementsZOrder", js.undefined)
+    def setUpdateParagraphStyle(value: UpdateParagraphStyleRequest): Self = StObject.set(x, "updateParagraphStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatePageProperties(value: UpdatePagePropertiesRequest): Self = this.set("updatePageProperties", value.asInstanceOf[js.Any])
+    def setUpdateParagraphStyleUndefined: Self = StObject.set(x, "updateParagraphStyle", js.undefined)
     
     @scala.inline
-    def deleteUpdatePageProperties: Self = this.set("updatePageProperties", js.undefined)
+    def setUpdateShapeProperties(value: UpdateShapePropertiesRequest): Self = StObject.set(x, "updateShapeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateParagraphStyle(value: UpdateParagraphStyleRequest): Self = this.set("updateParagraphStyle", value.asInstanceOf[js.Any])
+    def setUpdateShapePropertiesUndefined: Self = StObject.set(x, "updateShapeProperties", js.undefined)
     
     @scala.inline
-    def deleteUpdateParagraphStyle: Self = this.set("updateParagraphStyle", js.undefined)
+    def setUpdateSlidesPosition(value: UpdateSlidesPositionRequest): Self = StObject.set(x, "updateSlidesPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateShapeProperties(value: UpdateShapePropertiesRequest): Self = this.set("updateShapeProperties", value.asInstanceOf[js.Any])
+    def setUpdateSlidesPositionUndefined: Self = StObject.set(x, "updateSlidesPosition", js.undefined)
     
     @scala.inline
-    def deleteUpdateShapeProperties: Self = this.set("updateShapeProperties", js.undefined)
+    def setUpdateTableBorderProperties(value: UpdateTableBorderPropertiesRequest): Self = StObject.set(x, "updateTableBorderProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateSlidesPosition(value: UpdateSlidesPositionRequest): Self = this.set("updateSlidesPosition", value.asInstanceOf[js.Any])
+    def setUpdateTableBorderPropertiesUndefined: Self = StObject.set(x, "updateTableBorderProperties", js.undefined)
     
     @scala.inline
-    def deleteUpdateSlidesPosition: Self = this.set("updateSlidesPosition", js.undefined)
+    def setUpdateTableCellProperties(value: UpdateTableCellPropertiesRequest): Self = StObject.set(x, "updateTableCellProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTableBorderProperties(value: UpdateTableBorderPropertiesRequest): Self = this.set("updateTableBorderProperties", value.asInstanceOf[js.Any])
+    def setUpdateTableCellPropertiesUndefined: Self = StObject.set(x, "updateTableCellProperties", js.undefined)
     
     @scala.inline
-    def deleteUpdateTableBorderProperties: Self = this.set("updateTableBorderProperties", js.undefined)
+    def setUpdateTableColumnProperties(value: UpdateTableColumnPropertiesRequest): Self = StObject.set(x, "updateTableColumnProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTableCellProperties(value: UpdateTableCellPropertiesRequest): Self = this.set("updateTableCellProperties", value.asInstanceOf[js.Any])
+    def setUpdateTableColumnPropertiesUndefined: Self = StObject.set(x, "updateTableColumnProperties", js.undefined)
     
     @scala.inline
-    def deleteUpdateTableCellProperties: Self = this.set("updateTableCellProperties", js.undefined)
+    def setUpdateTableRowProperties(value: UpdateTableRowPropertiesRequest): Self = StObject.set(x, "updateTableRowProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTableColumnProperties(value: UpdateTableColumnPropertiesRequest): Self = this.set("updateTableColumnProperties", value.asInstanceOf[js.Any])
+    def setUpdateTableRowPropertiesUndefined: Self = StObject.set(x, "updateTableRowProperties", js.undefined)
     
     @scala.inline
-    def deleteUpdateTableColumnProperties: Self = this.set("updateTableColumnProperties", js.undefined)
+    def setUpdateTextStyle(value: UpdateTextStyleRequest): Self = StObject.set(x, "updateTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTableRowProperties(value: UpdateTableRowPropertiesRequest): Self = this.set("updateTableRowProperties", value.asInstanceOf[js.Any])
+    def setUpdateTextStyleUndefined: Self = StObject.set(x, "updateTextStyle", js.undefined)
     
     @scala.inline
-    def deleteUpdateTableRowProperties: Self = this.set("updateTableRowProperties", js.undefined)
+    def setUpdateVideoProperties(value: UpdateVideoPropertiesRequest): Self = StObject.set(x, "updateVideoProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTextStyle(value: UpdateTextStyleRequest): Self = this.set("updateTextStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTextStyle: Self = this.set("updateTextStyle", js.undefined)
-    
-    @scala.inline
-    def setUpdateVideoProperties(value: UpdateVideoPropertiesRequest): Self = this.set("updateVideoProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateVideoProperties: Self = this.set("updateVideoProperties", js.undefined)
+    def setUpdateVideoPropertiesUndefined: Self = StObject.set(x, "updateVideoProperties", js.undefined)
   }
 }

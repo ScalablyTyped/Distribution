@@ -4,6 +4,7 @@ import typings.reactAsync.anon.Dictmeta
 import typings.reactAsync.reactAsyncBooleans.`true`
 import typings.reactAsync.reactAsyncStrings.reject
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object Reject {
   }
   
   @scala.inline
-  implicit class RejectOps[Self <: Reject] (val x: Self) extends AnyVal {
+  implicit class RejectMutableBuilder[Self <: Reject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeta(value: Dictmeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayload(value: Error): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: `true`): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeta(value: Dictmeta): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPayload(value: Error): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String with reject): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String with reject): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

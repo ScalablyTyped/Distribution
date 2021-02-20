@@ -4,16 +4,16 @@ import typings.firebaseStorage.srcMetadataMod.Metadata
 import typings.firebaseStorage.srcReferenceMod.Reference
 import typings.firebaseStorage.srcTaskMod.UploadTask
 import typings.firebaseStorage.taskenumsMod.TaskState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/src/tasksnapshot", JSImport.Namespace)
-@js.native
-object srcTasksnapshotMod extends js.Object {
+object srcTasksnapshotMod {
   
+  @JSImport("@firebase/storage/dist/src/tasksnapshot", "UploadTaskSnapshot")
   @js.native
-  class UploadTaskSnapshot protected () extends js.Object {
+  class UploadTaskSnapshot protected () extends StObject {
     def this(
       bytesTransferred: Double,
       totalBytes: Double,

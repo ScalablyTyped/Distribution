@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListManagedPoliciesInPermissionSetResponse extends js.Object {
+trait ListManagedPoliciesInPermissionSetResponse extends StObject {
   
   /**
     * The array of the AttachedManagedPolicy data type object.
@@ -26,33 +27,21 @@ object ListManagedPoliciesInPermissionSetResponse {
   }
   
   @scala.inline
-  implicit class ListManagedPoliciesInPermissionSetResponseOps[Self <: ListManagedPoliciesInPermissionSetResponse] (val x: Self) extends AnyVal {
+  implicit class ListManagedPoliciesInPermissionSetResponseMutableBuilder[Self <: ListManagedPoliciesInPermissionSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachedManagedPolicies(value: AttachedManagedPolicyList): Self = StObject.set(x, "AttachedManagedPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachedManagedPoliciesVarargs(value: AttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setAttachedManagedPoliciesVarargs(value: AttachedManagedPolicy*): Self = this.set("AttachedManagedPolicies", js.Array(value :_*))
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedManagedPolicies(value: AttachedManagedPolicyList): Self = this.set("AttachedManagedPolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachedManagedPolicies: Self = this.set("AttachedManagedPolicies", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

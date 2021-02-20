@@ -1,15 +1,18 @@
 package typings.emberObject
 
 import typings.emberObject.typesMod.ObserverMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/object/observers", JSImport.Namespace)
-@js.native
-object observersMod extends js.Object {
+object observersMod {
   
+  @JSImport("@ember/object/observers", "addObserver")
+  @js.native
   def addObserver[Context](obj: Context, key: /* keyof Context */ String, method: ObserverMethod[Context, Context]): Unit = js.native
+  @JSImport("@ember/object/observers", "addObserver")
+  @js.native
   def addObserver[Context, Target](
     obj: Context,
     key: /* keyof Context */ String,
@@ -17,7 +20,11 @@ object observersMod extends js.Object {
     method: ObserverMethod[Target, Context]
   ): Unit = js.native
   
+  @JSImport("@ember/object/observers", "removeObserver")
+  @js.native
   def removeObserver[Context](obj: Context, key: /* keyof Context */ String, method: ObserverMethod[Context, Context]): js.Any = js.native
+  @JSImport("@ember/object/observers", "removeObserver")
+  @js.native
   def removeObserver[Context, Target](
     obj: Context,
     key: /* keyof Context */ String,

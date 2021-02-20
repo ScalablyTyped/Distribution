@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The configuration applied to an enterprise.
   */
 @js.native
-trait SchemaEnterprise extends js.Object {
+trait SchemaEnterprise extends StObject {
   
   /**
     * Deprecated and unused.
@@ -75,81 +76,69 @@ object SchemaEnterprise {
   }
   
   @scala.inline
-  implicit class SchemaEnterpriseOps[Self <: SchemaEnterprise] (val x: Self) extends AnyVal {
+  implicit class SchemaEnterpriseMutableBuilder[Self <: SchemaEnterprise] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppAutoApprovalEnabled(value: Boolean): Self = StObject.set(x, "appAutoApprovalEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppAutoApprovalEnabledUndefined: Self = StObject.set(x, "appAutoApprovalEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabledNotificationTypes(value: js.Array[String]): Self = StObject.set(x, "enabledNotificationTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppAutoApprovalEnabled(value: Boolean): Self = this.set("appAutoApprovalEnabled", value.asInstanceOf[js.Any])
+    def setEnabledNotificationTypesUndefined: Self = StObject.set(x, "enabledNotificationTypes", js.undefined)
     
     @scala.inline
-    def deleteAppAutoApprovalEnabled: Self = this.set("appAutoApprovalEnabled", js.undefined)
+    def setEnabledNotificationTypesVarargs(value: String*): Self = StObject.set(x, "enabledNotificationTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEnabledNotificationTypesVarargs(value: String*): Self = this.set("enabledNotificationTypes", js.Array(value :_*))
+    def setEnterpriseDisplayName(value: String): Self = StObject.set(x, "enterpriseDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledNotificationTypes(value: js.Array[String]): Self = this.set("enabledNotificationTypes", value.asInstanceOf[js.Any])
+    def setEnterpriseDisplayNameUndefined: Self = StObject.set(x, "enterpriseDisplayName", js.undefined)
     
     @scala.inline
-    def deleteEnabledNotificationTypes: Self = this.set("enabledNotificationTypes", js.undefined)
+    def setLogo(value: SchemaExternalData): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterpriseDisplayName(value: String): Self = this.set("enterpriseDisplayName", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteEnterpriseDisplayName: Self = this.set("enterpriseDisplayName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: SchemaExternalData): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setPrimaryColor(value: Double): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryColor(value: Double): Self = this.set("primaryColor", value.asInstanceOf[js.Any])
+    def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
     
     @scala.inline
-    def deletePrimaryColor: Self = this.set("primaryColor", js.undefined)
+    def setSigninDetails(value: js.Array[SchemaSigninDetail]): Self = StObject.set(x, "signinDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubsubTopic(value: String): Self = this.set("pubsubTopic", value.asInstanceOf[js.Any])
+    def setSigninDetailsUndefined: Self = StObject.set(x, "signinDetails", js.undefined)
     
     @scala.inline
-    def deletePubsubTopic: Self = this.set("pubsubTopic", js.undefined)
+    def setSigninDetailsVarargs(value: SchemaSigninDetail*): Self = StObject.set(x, "signinDetails", js.Array(value :_*))
     
     @scala.inline
-    def setSigninDetailsVarargs(value: SchemaSigninDetail*): Self = this.set("signinDetails", js.Array(value :_*))
+    def setTermsAndConditions(value: js.Array[SchemaTermsAndConditions]): Self = StObject.set(x, "termsAndConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigninDetails(value: js.Array[SchemaSigninDetail]): Self = this.set("signinDetails", value.asInstanceOf[js.Any])
+    def setTermsAndConditionsUndefined: Self = StObject.set(x, "termsAndConditions", js.undefined)
     
     @scala.inline
-    def deleteSigninDetails: Self = this.set("signinDetails", js.undefined)
-    
-    @scala.inline
-    def setTermsAndConditionsVarargs(value: SchemaTermsAndConditions*): Self = this.set("termsAndConditions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTermsAndConditions(value: js.Array[SchemaTermsAndConditions]): Self = this.set("termsAndConditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTermsAndConditions: Self = this.set("termsAndConditions", js.undefined)
+    def setTermsAndConditionsVarargs(value: SchemaTermsAndConditions*): Self = StObject.set(x, "termsAndConditions", js.Array(value :_*))
   }
 }

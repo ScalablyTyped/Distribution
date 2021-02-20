@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Read more about the available keys in the [Apple documentation](https://developer.apple.com/documentation/uikit/uiapplicationopenurloptionskey?language=objc).
   */
 @js.native
-trait OpenURLOptions extends js.Object {
+trait OpenURLOptions extends StObject {
   
   /**
     * When you include this key in the options dictionary, the method opens the URL only if the URL is a valid universal link and there is an installed app capable of opening that URL.
@@ -45,45 +46,33 @@ object OpenURLOptions {
   }
   
   @scala.inline
-  implicit class OpenURLOptionsOps[Self <: OpenURLOptions] (val x: Self) extends AnyVal {
+  implicit class OpenURLOptionsMutableBuilder[Self <: OpenURLOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUIApplicationOpenURLOptionUniversalLinksOnly(value: Boolean): Self = StObject.set(x, "UIApplicationOpenURLOptionUniversalLinksOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUIApplicationOpenURLOptionUniversalLinksOnlyUndefined: Self = StObject.set(x, "UIApplicationOpenURLOptionUniversalLinksOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUIApplicationOpenURLOptionsAnnotationKey(value: js.Array[_]): Self = StObject.set(x, "UIApplicationOpenURLOptionsAnnotationKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUIApplicationOpenURLOptionUniversalLinksOnly(value: Boolean): Self = this.set("UIApplicationOpenURLOptionUniversalLinksOnly", value.asInstanceOf[js.Any])
+    def setUIApplicationOpenURLOptionsAnnotationKeyUndefined: Self = StObject.set(x, "UIApplicationOpenURLOptionsAnnotationKey", js.undefined)
     
     @scala.inline
-    def deleteUIApplicationOpenURLOptionUniversalLinksOnly: Self = this.set("UIApplicationOpenURLOptionUniversalLinksOnly", js.undefined)
+    def setUIApplicationOpenURLOptionsAnnotationKeyVarargs(value: js.Any*): Self = StObject.set(x, "UIApplicationOpenURLOptionsAnnotationKey", js.Array(value :_*))
     
     @scala.inline
-    def setUIApplicationOpenURLOptionsAnnotationKeyVarargs(value: js.Any*): Self = this.set("UIApplicationOpenURLOptionsAnnotationKey", js.Array(value :_*))
+    def setUIApplicationOpenURLOptionsOpenInPlaceKey(value: Boolean): Self = StObject.set(x, "UIApplicationOpenURLOptionsOpenInPlaceKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUIApplicationOpenURLOptionsAnnotationKey(value: js.Array[_]): Self = this.set("UIApplicationOpenURLOptionsAnnotationKey", value.asInstanceOf[js.Any])
+    def setUIApplicationOpenURLOptionsOpenInPlaceKeyUndefined: Self = StObject.set(x, "UIApplicationOpenURLOptionsOpenInPlaceKey", js.undefined)
     
     @scala.inline
-    def deleteUIApplicationOpenURLOptionsAnnotationKey: Self = this.set("UIApplicationOpenURLOptionsAnnotationKey", js.undefined)
+    def setUIApplicationOpenURLOptionsSourceApplicationKey(value: String): Self = StObject.set(x, "UIApplicationOpenURLOptionsSourceApplicationKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUIApplicationOpenURLOptionsOpenInPlaceKey(value: Boolean): Self = this.set("UIApplicationOpenURLOptionsOpenInPlaceKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUIApplicationOpenURLOptionsOpenInPlaceKey: Self = this.set("UIApplicationOpenURLOptionsOpenInPlaceKey", js.undefined)
-    
-    @scala.inline
-    def setUIApplicationOpenURLOptionsSourceApplicationKey(value: String): Self = this.set("UIApplicationOpenURLOptionsSourceApplicationKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUIApplicationOpenURLOptionsSourceApplicationKey: Self = this.set("UIApplicationOpenURLOptionsSourceApplicationKey", js.undefined)
+    def setUIApplicationOpenURLOptionsSourceApplicationKeyUndefined: Self = StObject.set(x, "UIApplicationOpenURLOptionsSourceApplicationKey", js.undefined)
   }
 }

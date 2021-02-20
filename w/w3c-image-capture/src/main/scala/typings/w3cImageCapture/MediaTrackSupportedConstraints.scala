@@ -1,11 +1,12 @@
 package typings.w3cImageCapture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaTrackSupportedConstraints extends js.Object {
+trait MediaTrackSupportedConstraints extends StObject {
   
   var brightness: Boolean = js.native
   
@@ -59,60 +60,48 @@ object MediaTrackSupportedConstraints {
   }
   
   @scala.inline
-  implicit class MediaTrackSupportedConstraintsOps[Self <: MediaTrackSupportedConstraints] (val x: Self) extends AnyVal {
+  implicit class MediaTrackSupportedConstraintsMutableBuilder[Self <: MediaTrackSupportedConstraints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrightness(value: Boolean): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorTemperature(value: Boolean): Self = StObject.set(x, "colorTemperature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContrast(value: Boolean): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: Boolean): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    def setExposureCompensation(value: Boolean): Self = StObject.set(x, "exposureCompensation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorTemperature(value: Boolean): Self = this.set("colorTemperature", value.asInstanceOf[js.Any])
+    def setExposureMode(value: Boolean): Self = StObject.set(x, "exposureMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: Boolean): Self = this.set("contrast", value.asInstanceOf[js.Any])
+    def setFocusDistance(value: Boolean): Self = StObject.set(x, "focusDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureCompensation(value: Boolean): Self = this.set("exposureCompensation", value.asInstanceOf[js.Any])
+    def setFocusMode(value: Boolean): Self = StObject.set(x, "focusMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureMode(value: Boolean): Self = this.set("exposureMode", value.asInstanceOf[js.Any])
+    def setIso(value: Boolean): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusDistance(value: Boolean): Self = this.set("focusDistance", value.asInstanceOf[js.Any])
+    def setPointsOfInterest(value: Boolean): Self = StObject.set(x, "pointsOfInterest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusMode(value: Boolean): Self = this.set("focusMode", value.asInstanceOf[js.Any])
+    def setSaturation(value: Boolean): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIso(value: Boolean): Self = this.set("iso", value.asInstanceOf[js.Any])
+    def setSharpness(value: Boolean): Self = StObject.set(x, "sharpness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointsOfInterest(value: Boolean): Self = this.set("pointsOfInterest", value.asInstanceOf[js.Any])
+    def setTorch(value: Boolean): Self = StObject.set(x, "torch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturation(value: Boolean): Self = this.set("saturation", value.asInstanceOf[js.Any])
+    def setWhiteBalanceMode(value: Boolean): Self = StObject.set(x, "whiteBalanceMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharpness(value: Boolean): Self = this.set("sharpness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTorch(value: Boolean): Self = this.set("torch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhiteBalanceMode(value: Boolean): Self = this.set("whiteBalanceMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoom(value: Boolean): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

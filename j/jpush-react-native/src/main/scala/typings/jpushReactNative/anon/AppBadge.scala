@@ -1,11 +1,12 @@
 package typings.jpushReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppBadge extends js.Object {
+trait AppBadge extends StObject {
   
   /**
     * iOS 用来标记应用程序状态的一个数字,出现在程序图标右上角。设置的值小于0时，sdk不作处理。
@@ -26,24 +27,12 @@ object AppBadge {
   }
   
   @scala.inline
-  implicit class AppBadgeOps[Self <: AppBadge] (val x: Self) extends AnyVal {
+  implicit class AppBadgeMutableBuilder[Self <: AppBadge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppBadge(value: Double): Self = StObject.set(x, "appBadge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppBadge(value: Double): Self = this.set("appBadge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBadge(value: Double): Self = this.set("badge", value.asInstanceOf[js.Any])
+    def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
   }
 }

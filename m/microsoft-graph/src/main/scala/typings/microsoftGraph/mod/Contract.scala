@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,54 +44,42 @@ object Contract {
   }
   
   @scala.inline
-  implicit class ContractOps[Self <: Contract] (val x: Self) extends AnyVal {
+  implicit class ContractMutableBuilder[Self <: Contract] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContractType(value: NullableOption[String]): Self = StObject.set(x, "contractType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContractTypeNull: Self = StObject.set(x, "contractType", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContractTypeUndefined: Self = StObject.set(x, "contractType", js.undefined)
     
     @scala.inline
-    def setContractType(value: NullableOption[String]): Self = this.set("contractType", value.asInstanceOf[js.Any])
+    def setCustomerId(value: NullableOption[String]): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContractType: Self = this.set("contractType", js.undefined)
+    def setCustomerIdNull: Self = StObject.set(x, "customerId", null)
     
     @scala.inline
-    def setContractTypeNull: Self = this.set("contractType", null)
+    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
     @scala.inline
-    def setCustomerId(value: NullableOption[String]): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    def setDefaultDomainName(value: NullableOption[String]): Self = StObject.set(x, "defaultDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    def setDefaultDomainNameNull: Self = StObject.set(x, "defaultDomainName", null)
     
     @scala.inline
-    def setCustomerIdNull: Self = this.set("customerId", null)
+    def setDefaultDomainNameUndefined: Self = StObject.set(x, "defaultDomainName", js.undefined)
     
     @scala.inline
-    def setDefaultDomainName(value: NullableOption[String]): Self = this.set("defaultDomainName", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultDomainName: Self = this.set("defaultDomainName", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setDefaultDomainNameNull: Self = this.set("defaultDomainName", null)
-    
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    
-    @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1Tag extends js.Object {
+trait GoogleCloudDatacatalogV1beta1Tag extends StObject {
   
   /**
     * Resources like Entry can have schemas associated with them. This scope allows users to attach tags to an individual column based on that schema. For attaching a tag to a nested
@@ -48,52 +49,40 @@ object GoogleCloudDatacatalogV1beta1Tag {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1TagOps[Self <: GoogleCloudDatacatalogV1beta1Tag] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1TagMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1Tag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumn(value: String): Self = this.set("column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumn: Self = this.set("column", js.undefined)
+    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     @scala.inline
     def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1TagField}
       */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1beta1Tag with TopLevel[js.Any]
-    ): Self = this.set("fields", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateDisplayName(value: String): Self = StObject.set(x, "templateDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateDisplayName(value: String): Self = this.set("templateDisplayName", value.asInstanceOf[js.Any])
+    def setTemplateDisplayNameUndefined: Self = StObject.set(x, "templateDisplayName", js.undefined)
     
     @scala.inline
-    def deleteTemplateDisplayName: Self = this.set("templateDisplayName", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

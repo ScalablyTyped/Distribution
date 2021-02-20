@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentOptions extends js.Object {
+trait CommentOptions extends StObject {
   
   /**
     * An optional string to show as placeholder in the comment input box when it's focused.
@@ -26,30 +27,18 @@ object CommentOptions {
   }
   
   @scala.inline
-  implicit class CommentOptionsOps[Self <: CommentOptions] (val x: Self) extends AnyVal {
+  implicit class CommentOptionsMutableBuilder[Self <: CommentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceHolder(value: String): Self = this.set("placeHolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceHolder: Self = this.set("placeHolder", js.undefined)
-    
-    @scala.inline
-    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrompt: Self = this.set("prompt", js.undefined)
+    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Instance extends js.Object {
+trait Instance extends StObject {
   
   /**
     * The agent version. This parameter is set to INHERIT if the instance inherits the default stack setting or to a a version number for a fixed agent version.
@@ -221,273 +222,261 @@ object Instance {
   }
   
   @scala.inline
-  implicit class InstanceOps[Self <: Instance] (val x: Self) extends AnyVal {
+  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentVersion(value: String): Self = StObject.set(x, "AgentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentVersionUndefined: Self = StObject.set(x, "AgentVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmiId(value: String): Self = StObject.set(x, "AmiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentVersion(value: String): Self = this.set("AgentVersion", value.asInstanceOf[js.Any])
+    def setAmiIdUndefined: Self = StObject.set(x, "AmiId", js.undefined)
     
     @scala.inline
-    def deleteAgentVersion: Self = this.set("AgentVersion", js.undefined)
+    def setArchitecture(value: Architecture): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmiId(value: String): Self = this.set("AmiId", value.asInstanceOf[js.Any])
+    def setArchitectureUndefined: Self = StObject.set(x, "Architecture", js.undefined)
     
     @scala.inline
-    def deleteAmiId: Self = this.set("AmiId", js.undefined)
+    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchitecture(value: Architecture): Self = this.set("Architecture", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def deleteArchitecture: Self = this.set("Architecture", js.undefined)
+    def setAutoScalingType(value: AutoScalingType): Self = StObject.set(x, "AutoScalingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: String): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setAutoScalingTypeUndefined: Self = StObject.set(x, "AutoScalingType", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingType(value: AutoScalingType): Self = this.set("AutoScalingType", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingType: Self = this.set("AutoScalingType", js.undefined)
+    def setBlockDeviceMappings(value: BlockDeviceMappings): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
     
     @scala.inline
-    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = this.set("BlockDeviceMappings", js.Array(value :_*))
+    def setCreatedAt(value: DateTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockDeviceMappings(value: BlockDeviceMappings): Self = this.set("BlockDeviceMappings", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteBlockDeviceMappings: Self = this.set("BlockDeviceMappings", js.undefined)
+    def setEbsOptimized(value: Boolean): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: DateTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setEc2InstanceId(value: String): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsOptimized(value: Boolean): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
+    def setEc2InstanceIdUndefined: Self = StObject.set(x, "Ec2InstanceId", js.undefined)
     
     @scala.inline
-    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    def setEcsClusterArn(value: String): Self = StObject.set(x, "EcsClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2InstanceId(value: String): Self = this.set("Ec2InstanceId", value.asInstanceOf[js.Any])
+    def setEcsClusterArnUndefined: Self = StObject.set(x, "EcsClusterArn", js.undefined)
     
     @scala.inline
-    def deleteEc2InstanceId: Self = this.set("Ec2InstanceId", js.undefined)
+    def setEcsContainerInstanceArn(value: String): Self = StObject.set(x, "EcsContainerInstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcsClusterArn(value: String): Self = this.set("EcsClusterArn", value.asInstanceOf[js.Any])
+    def setEcsContainerInstanceArnUndefined: Self = StObject.set(x, "EcsContainerInstanceArn", js.undefined)
     
     @scala.inline
-    def deleteEcsClusterArn: Self = this.set("EcsClusterArn", js.undefined)
+    def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcsContainerInstanceArn(value: String): Self = this.set("EcsContainerInstanceArn", value.asInstanceOf[js.Any])
+    def setElasticIpUndefined: Self = StObject.set(x, "ElasticIp", js.undefined)
     
     @scala.inline
-    def deleteEcsContainerInstanceArn: Self = this.set("EcsContainerInstanceArn", js.undefined)
+    def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticIp(value: String): Self = this.set("ElasticIp", value.asInstanceOf[js.Any])
+    def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
     
     @scala.inline
-    def deleteElasticIp: Self = this.set("ElasticIp", js.undefined)
+    def setInfrastructureClass(value: String): Self = StObject.set(x, "InfrastructureClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("Hostname", value.asInstanceOf[js.Any])
+    def setInfrastructureClassUndefined: Self = StObject.set(x, "InfrastructureClass", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("Hostname", js.undefined)
+    def setInstallUpdatesOnBoot(value: Boolean): Self = StObject.set(x, "InstallUpdatesOnBoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfrastructureClass(value: String): Self = this.set("InfrastructureClass", value.asInstanceOf[js.Any])
+    def setInstallUpdatesOnBootUndefined: Self = StObject.set(x, "InstallUpdatesOnBoot", js.undefined)
     
     @scala.inline
-    def deleteInfrastructureClass: Self = this.set("InfrastructureClass", js.undefined)
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallUpdatesOnBoot(value: Boolean): Self = this.set("InstallUpdatesOnBoot", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteInstallUpdatesOnBoot: Self = this.set("InstallUpdatesOnBoot", js.undefined)
+    def setInstanceProfileArn(value: String): Self = StObject.set(x, "InstanceProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setInstanceProfileArnUndefined: Self = StObject.set(x, "InstanceProfileArn", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceProfileArn(value: String): Self = this.set("InstanceProfileArn", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def deleteInstanceProfileArn: Self = this.set("InstanceProfileArn", js.undefined)
+    def setLastServiceErrorId(value: String): Self = StObject.set(x, "LastServiceErrorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setLastServiceErrorIdUndefined: Self = StObject.set(x, "LastServiceErrorId", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastServiceErrorId(value: String): Self = this.set("LastServiceErrorId", value.asInstanceOf[js.Any])
+    def setLayerIdsUndefined: Self = StObject.set(x, "LayerIds", js.undefined)
     
     @scala.inline
-    def deleteLastServiceErrorId: Self = this.set("LastServiceErrorId", js.undefined)
+    def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
     
     @scala.inline
-    def setLayerIdsVarargs(value: String*): Self = this.set("LayerIds", js.Array(value :_*))
+    def setOs(value: String): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerIds(value: Strings): Self = this.set("LayerIds", value.asInstanceOf[js.Any])
+    def setOsUndefined: Self = StObject.set(x, "Os", js.undefined)
     
     @scala.inline
-    def deleteLayerIds: Self = this.set("LayerIds", js.undefined)
+    def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: String): Self = this.set("Os", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
     @scala.inline
-    def deleteOs: Self = this.set("Os", js.undefined)
+    def setPrivateDns(value: String): Self = StObject.set(x, "PrivateDns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    def setPrivateDnsUndefined: Self = StObject.set(x, "PrivateDns", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("Platform", js.undefined)
+    def setPrivateIp(value: String): Self = StObject.set(x, "PrivateIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateDns(value: String): Self = this.set("PrivateDns", value.asInstanceOf[js.Any])
+    def setPrivateIpUndefined: Self = StObject.set(x, "PrivateIp", js.undefined)
     
     @scala.inline
-    def deletePrivateDns: Self = this.set("PrivateDns", js.undefined)
+    def setPublicDns(value: String): Self = StObject.set(x, "PublicDns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateIp(value: String): Self = this.set("PrivateIp", value.asInstanceOf[js.Any])
+    def setPublicDnsUndefined: Self = StObject.set(x, "PublicDns", js.undefined)
     
     @scala.inline
-    def deletePrivateIp: Self = this.set("PrivateIp", js.undefined)
+    def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicDns(value: String): Self = this.set("PublicDns", value.asInstanceOf[js.Any])
+    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
     
     @scala.inline
-    def deletePublicDns: Self = this.set("PublicDns", js.undefined)
+    def setRegisteredBy(value: String): Self = StObject.set(x, "RegisteredBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicIp(value: String): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
+    def setRegisteredByUndefined: Self = StObject.set(x, "RegisteredBy", js.undefined)
     
     @scala.inline
-    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
+    def setReportedAgentVersion(value: String): Self = StObject.set(x, "ReportedAgentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredBy(value: String): Self = this.set("RegisteredBy", value.asInstanceOf[js.Any])
+    def setReportedAgentVersionUndefined: Self = StObject.set(x, "ReportedAgentVersion", js.undefined)
     
     @scala.inline
-    def deleteRegisteredBy: Self = this.set("RegisteredBy", js.undefined)
+    def setReportedOs(value: ReportedOs): Self = StObject.set(x, "ReportedOs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportedAgentVersion(value: String): Self = this.set("ReportedAgentVersion", value.asInstanceOf[js.Any])
+    def setReportedOsUndefined: Self = StObject.set(x, "ReportedOs", js.undefined)
     
     @scala.inline
-    def deleteReportedAgentVersion: Self = this.set("ReportedAgentVersion", js.undefined)
+    def setRootDeviceType(value: RootDeviceType): Self = StObject.set(x, "RootDeviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportedOs(value: ReportedOs): Self = this.set("ReportedOs", value.asInstanceOf[js.Any])
+    def setRootDeviceTypeUndefined: Self = StObject.set(x, "RootDeviceType", js.undefined)
     
     @scala.inline
-    def deleteReportedOs: Self = this.set("ReportedOs", js.undefined)
+    def setRootDeviceVolumeId(value: String): Self = StObject.set(x, "RootDeviceVolumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootDeviceType(value: RootDeviceType): Self = this.set("RootDeviceType", value.asInstanceOf[js.Any])
+    def setRootDeviceVolumeIdUndefined: Self = StObject.set(x, "RootDeviceVolumeId", js.undefined)
     
     @scala.inline
-    def deleteRootDeviceType: Self = this.set("RootDeviceType", js.undefined)
+    def setSecurityGroupIds(value: Strings): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootDeviceVolumeId(value: String): Self = this.set("RootDeviceVolumeId", value.asInstanceOf[js.Any])
+    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
     @scala.inline
-    def deleteRootDeviceVolumeId: Self = this.set("RootDeviceVolumeId", js.undefined)
+    def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    def setSshHostDsaKeyFingerprint(value: String): Self = StObject.set(x, "SshHostDsaKeyFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIds(value: Strings): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    def setSshHostDsaKeyFingerprintUndefined: Self = StObject.set(x, "SshHostDsaKeyFingerprint", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    def setSshHostRsaKeyFingerprint(value: String): Self = StObject.set(x, "SshHostRsaKeyFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshHostDsaKeyFingerprint(value: String): Self = this.set("SshHostDsaKeyFingerprint", value.asInstanceOf[js.Any])
+    def setSshHostRsaKeyFingerprintUndefined: Self = StObject.set(x, "SshHostRsaKeyFingerprint", js.undefined)
     
     @scala.inline
-    def deleteSshHostDsaKeyFingerprint: Self = this.set("SshHostDsaKeyFingerprint", js.undefined)
+    def setSshKeyName(value: String): Self = StObject.set(x, "SshKeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshHostRsaKeyFingerprint(value: String): Self = this.set("SshHostRsaKeyFingerprint", value.asInstanceOf[js.Any])
+    def setSshKeyNameUndefined: Self = StObject.set(x, "SshKeyName", js.undefined)
     
     @scala.inline
-    def deleteSshHostRsaKeyFingerprint: Self = this.set("SshHostRsaKeyFingerprint", js.undefined)
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshKeyName(value: String): Self = this.set("SshKeyName", value.asInstanceOf[js.Any])
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
     
     @scala.inline
-    def deleteSshKeyName: Self = this.set("SshKeyName", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
+    def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTenancy(value: String): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetId(value: String): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
     
     @scala.inline
-    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    def setVirtualizationType(value: VirtualizationType): Self = StObject.set(x, "VirtualizationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTenancy(value: String): Self = this.set("Tenancy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenancy: Self = this.set("Tenancy", js.undefined)
-    
-    @scala.inline
-    def setVirtualizationType(value: VirtualizationType): Self = this.set("VirtualizationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualizationType: Self = this.set("VirtualizationType", js.undefined)
+    def setVirtualizationTypeUndefined: Self = StObject.set(x, "VirtualizationType", js.undefined)
   }
 }

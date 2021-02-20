@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetRequestInterceptionRequest extends js.Object {
+trait SetRequestInterceptionRequest extends StObject {
   
   /**
     * Requests matching any of these patterns will be forwarded and wait for the corresponding
@@ -22,24 +23,12 @@ object SetRequestInterceptionRequest {
   }
   
   @scala.inline
-  implicit class SetRequestInterceptionRequestOps[Self <: SetRequestInterceptionRequest] (val x: Self) extends AnyVal {
+  implicit class SetRequestInterceptionRequestMutableBuilder[Self <: SetRequestInterceptionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPatterns(value: js.Array[RequestPattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPatternsVarargs(value: RequestPattern*): Self = this.set("patterns", js.Array(value :_*))
-    
-    @scala.inline
-    def setPatterns(value: js.Array[RequestPattern]): Self = this.set("patterns", value.asInstanceOf[js.Any])
+    def setPatternsVarargs(value: RequestPattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
   }
 }

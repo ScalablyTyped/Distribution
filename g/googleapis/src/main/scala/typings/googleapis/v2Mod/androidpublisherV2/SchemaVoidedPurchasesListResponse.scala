@@ -1,11 +1,12 @@
 package typings.googleapis.v2Mod.androidpublisherV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaVoidedPurchasesListResponse extends js.Object {
+trait SchemaVoidedPurchasesListResponse extends StObject {
   
   var pageInfo: js.UndefOr[SchemaPageInfo] = js.native
   
@@ -22,39 +23,27 @@ object SchemaVoidedPurchasesListResponse {
   }
   
   @scala.inline
-  implicit class SchemaVoidedPurchasesListResponseOps[Self <: SchemaVoidedPurchasesListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaVoidedPurchasesListResponseMutableBuilder[Self <: SchemaVoidedPurchasesListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageInfo(value: SchemaPageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTokenPagination(value: SchemaTokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageInfo(value: SchemaPageInfo): Self = this.set("pageInfo", value.asInstanceOf[js.Any])
+    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
     
     @scala.inline
-    def deletePageInfo: Self = this.set("pageInfo", js.undefined)
+    def setVoidedPurchases(value: js.Array[SchemaVoidedPurchase]): Self = StObject.set(x, "voidedPurchases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenPagination(value: SchemaTokenPagination): Self = this.set("tokenPagination", value.asInstanceOf[js.Any])
+    def setVoidedPurchasesUndefined: Self = StObject.set(x, "voidedPurchases", js.undefined)
     
     @scala.inline
-    def deleteTokenPagination: Self = this.set("tokenPagination", js.undefined)
-    
-    @scala.inline
-    def setVoidedPurchasesVarargs(value: SchemaVoidedPurchase*): Self = this.set("voidedPurchases", js.Array(value :_*))
-    
-    @scala.inline
-    def setVoidedPurchases(value: js.Array[SchemaVoidedPurchase]): Self = this.set("voidedPurchases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoidedPurchases: Self = this.set("voidedPurchases", js.undefined)
+    def setVoidedPurchasesVarargs(value: SchemaVoidedPurchase*): Self = StObject.set(x, "voidedPurchases", js.Array(value :_*))
   }
 }

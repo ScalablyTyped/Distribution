@@ -17,27 +17,47 @@ import typings.amqplib.propertiesMod.Replies.PurgeQueue
 import typings.amqplib.propertiesMod.ServerProperties
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amqplib/callback_api", JSImport.Namespace)
-@js.native
-object callbackApiMod extends js.Object {
+object callbackApiMod {
   
+  @JSImport("amqplib/callback_api", "connect")
+  @js.native
   def connect(callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = js.native
+  @JSImport("amqplib/callback_api", "connect")
+  @js.native
   def connect(url: String, callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = js.native
+  @JSImport("amqplib/callback_api", "connect")
+  @js.native
   def connect(
     url: String,
     socketOptions: js.Any,
     callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]
   ): Unit = js.native
+  @JSImport("amqplib/callback_api", "connect")
+  @js.native
   def connect(url: Connect, callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = js.native
+  @JSImport("amqplib/callback_api", "connect")
+  @js.native
   def connect(
     url: Connect,
     socketOptions: js.Any,
     callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]
   ): Unit = js.native
+  
+  object credentials {
+    
+    @JSImport("amqplib/callback_api", "credentials.external")
+    @js.native
+    def external(): Mechanism = js.native
+    
+    @JSImport("amqplib/callback_api", "credentials.plain")
+    @js.native
+    def plain(username: String, password: String): Password = js.native
+  }
   
   @js.native
   trait Channel extends EventEmitter {
@@ -299,13 +319,5 @@ object callbackApiMod extends js.Object {
     def createConfirmChannel(callback: js.Function2[/* err */ js.Any, /* confirmChannel */ ConfirmChannel, Unit]): Unit = js.native
     
     var serverProperties: ServerProperties = js.native
-  }
-  
-  @js.native
-  object credentials extends js.Object {
-    
-    def external(): Mechanism = js.native
-    
-    def plain(username: String, password: String): Password = js.native
   }
 }

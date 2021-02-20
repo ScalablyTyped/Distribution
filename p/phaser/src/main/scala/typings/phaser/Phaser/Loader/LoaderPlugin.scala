@@ -40,6 +40,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.VideoFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.XMLFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

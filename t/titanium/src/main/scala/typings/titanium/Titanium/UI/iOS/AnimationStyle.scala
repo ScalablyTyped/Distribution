@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.UI.iOS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   * [CROSS_DISSOLVE](Titanium.UI.iOS.AnimationStyle.CROSS_DISSOLVE)
   *   * [NONE](Titanium.UI.iOS.AnimationStyle.NONE)
   */
-@JSGlobal("Titanium.UI.iOS.AnimationStyle")
-@js.native
-object AnimationStyle extends js.Object
+object AnimationStyle

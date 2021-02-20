@@ -15,16 +15,16 @@ import typings.stellarSdk.serverApiMod.ServerApi.OfferRecord
 import typings.stellarSdk.serverApiMod.ServerApi.OperationRecord
 import typings.stellarSdk.serverApiMod.ServerApi.PaymentOperationRecord
 import typings.stellarSdk.serverApiMod.ServerApi.TradeRecord
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stellar-sdk/lib/account_response", JSImport.Namespace)
-@js.native
-object accountResponseMod extends js.Object {
+object accountResponseMod {
   
+  @JSImport("stellar-sdk/lib/account_response", "AccountResponse")
   @js.native
-  class AccountResponse protected () extends js.Object {
+  class AccountResponse protected () extends StObject {
     def this(response: AccountRecord) = this()
     
     val _baseAccount: js.Any = js.native

@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioStreams extends js.Object {
+trait AudioStreams extends StObject {
   
   /**
     * A list of audio streams contained in the uploaded video file. Each item in the list contains detailed metadata about an audio stream.
@@ -77,54 +78,42 @@ object AudioStreams {
   }
   
   @scala.inline
-  implicit class AudioStreamsOps[Self <: AudioStreams] (val x: Self) extends AnyVal {
+  implicit class AudioStreamsMutableBuilder[Self <: AudioStreams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioStreams(value: js.Array[BitrateBps]): Self = StObject.set(x, "audioStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioStreamsVarargs(value: BitrateBps*): Self = StObject.set(x, "audioStreams", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioStreamsVarargs(value: BitrateBps*): Self = this.set("audioStreams", js.Array(value :_*))
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioStreams(value: js.Array[BitrateBps]): Self = this.set("audioStreams", value.asInstanceOf[js.Any])
+    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrateBps(value: Double): Self = this.set("bitrateBps", value.asInstanceOf[js.Any])
+    def setDurationMs(value: Double): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationMs(value: Double): Self = this.set("durationMs", value.asInstanceOf[js.Any])
+    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setRecordingLocation(value: Elevation): Self = StObject.set(x, "recordingLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSize(value: Double): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    def setVideoStreams(value: js.Array[AspectRatio]): Self = StObject.set(x, "videoStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileType(value: String): Self = this.set("fileType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordingLocation(value: Elevation): Self = this.set("recordingLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoStreamsVarargs(value: AspectRatio*): Self = this.set("videoStreams", js.Array(value :_*))
-    
-    @scala.inline
-    def setVideoStreams(value: js.Array[AspectRatio]): Self = this.set("videoStreams", value.asInstanceOf[js.Any])
+    def setVideoStreamsVarargs(value: AspectRatio*): Self = StObject.set(x, "videoStreams", js.Array(value :_*))
   }
 }

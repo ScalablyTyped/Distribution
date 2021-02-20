@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.sheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotField
   */
 @js.native
-trait DataPilotFieldAutoShowInfo extends js.Object {
+trait DataPilotFieldAutoShowInfo extends StObject {
   
   /** specifies the field where the values to show and select are taken from. */
   var DataField: String = js.native
@@ -37,30 +38,18 @@ object DataPilotFieldAutoShowInfo {
   }
   
   @scala.inline
-  implicit class DataPilotFieldAutoShowInfoOps[Self <: DataPilotFieldAutoShowInfo] (val x: Self) extends AnyVal {
+  implicit class DataPilotFieldAutoShowInfoMutableBuilder[Self <: DataPilotFieldAutoShowInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataField(value: String): Self = StObject.set(x, "DataField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataField(value: String): Self = this.set("DataField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("IsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemCount(value: Double): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowItemsMode(value: Double): Self = this.set("ShowItemsMode", value.asInstanceOf[js.Any])
+    def setShowItemsMode(value: Double): Self = StObject.set(x, "ShowItemsMode", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JoinInstruction extends js.Object {
+trait JoinInstruction extends StObject {
   
   /**
     * Left operand.
@@ -36,30 +37,18 @@ object JoinInstruction {
   }
   
   @scala.inline
-  implicit class JoinInstructionOps[Self <: JoinInstruction] (val x: Self) extends AnyVal {
+  implicit class JoinInstructionMutableBuilder[Self <: JoinInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeftOperand(value: LogicalTableId): Self = StObject.set(x, "LeftOperand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnClause(value: OnClause): Self = StObject.set(x, "OnClause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRightOperand(value: LogicalTableId): Self = StObject.set(x, "RightOperand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftOperand(value: LogicalTableId): Self = this.set("LeftOperand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnClause(value: OnClause): Self = this.set("OnClause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightOperand(value: LogicalTableId): Self = this.set("RightOperand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: JoinType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: JoinType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

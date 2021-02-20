@@ -5,6 +5,7 @@ import typings.dashjs.dashjsStrings.audio
 import typings.dashjs.dashjsStrings.fragmentedText
 import typings.dashjs.dashjsStrings.qualityChangeRequested
 import typings.dashjs.dashjsStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,42 +41,30 @@ object QualityChangeRequestedEvent {
   }
   
   @scala.inline
-  implicit class QualityChangeRequestedEventOps[Self <: QualityChangeRequestedEvent] (val x: Self) extends AnyVal {
+  implicit class QualityChangeRequestedEventMutableBuilder[Self <: QualityChangeRequestedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewQuality(value: Double): Self = StObject.set(x, "newQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldQuality(value: Double): Self = StObject.set(x, "oldQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: video | audio | fragmentedText): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setReason(value: DroppedFrames): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewQuality(value: Double): Self = this.set("newQuality", value.asInstanceOf[js.Any])
+    def setReasonNull: Self = StObject.set(x, "reason", null)
     
     @scala.inline
-    def setOldQuality(value: Double): Self = this.set("oldQuality", value.asInstanceOf[js.Any])
+    def setStreamInfo(value: StreamInfo): Self = StObject.set(x, "streamInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: qualityChangeRequested): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setStreamInfoNull: Self = StObject.set(x, "streamInfo", null)
     
     @scala.inline
-    def setReason(value: DroppedFrames): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReasonNull: Self = this.set("reason", null)
-    
-    @scala.inline
-    def setStreamInfo(value: StreamInfo): Self = this.set("streamInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreamInfoNull: Self = this.set("streamInfo", null)
+    def setType(value: qualityChangeRequested): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

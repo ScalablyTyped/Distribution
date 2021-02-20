@@ -1,11 +1,12 @@
 package typings.reactNativeVideo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnProgressData extends js.Object {
+trait OnProgressData extends StObject {
   
   var currentTime: Double = js.native
   
@@ -22,27 +23,15 @@ object OnProgressData {
   }
   
   @scala.inline
-  implicit class OnProgressDataOps[Self <: OnProgressData] (val x: Self) extends AnyVal {
+  implicit class OnProgressDataMutableBuilder[Self <: OnProgressData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlayableDuration(value: Double): Self = StObject.set(x, "playableDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayableDuration(value: Double): Self = this.set("playableDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeekableDuration(value: Double): Self = this.set("seekableDuration", value.asInstanceOf[js.Any])
+    def setSeekableDuration(value: Double): Self = StObject.set(x, "seekableDuration", value.asInstanceOf[js.Any])
   }
 }

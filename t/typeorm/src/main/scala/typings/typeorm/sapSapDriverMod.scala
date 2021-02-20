@@ -7,14 +7,14 @@ import typings.typeorm.mod.Connection
 import typings.typeorm.mod.EntityMetadata
 import typings.typeorm.mod.TableColumn
 import typings.typeorm.sapSapConnectionOptionsMod.SapConnectionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/driver/sap/SapDriver", JSImport.Namespace)
-@js.native
-object sapSapDriverMod extends js.Object {
+object sapSapDriverMod {
   
+  @JSImport("typeorm/driver/sap/SapDriver", "SapDriver")
   @js.native
   class SapDriver protected () extends Driver {
     def this(connection: Connection) = this()

@@ -1,14 +1,11 @@
 package typings.polished
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("polished/lib/types/modularScaleRatio", JSImport.Namespace)
-@js.native
-object modularScaleRatioMod extends js.Object {
-  
-  trait _ModularScaleRatio extends js.Object
+object modularScaleRatioMod {
   
   /* Rewritten from type alias, can be one of: 
     - scala.Double
@@ -31,4 +28,6 @@ object modularScaleRatioMod extends js.Object {
     - typings.polished.polishedStrings.doubleOctave
   */
   type ModularScaleRatio = _ModularScaleRatio | Double
+  
+  trait _ModularScaleRatio extends StObject
 }

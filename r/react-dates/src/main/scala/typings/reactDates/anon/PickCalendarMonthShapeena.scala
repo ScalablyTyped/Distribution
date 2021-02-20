@@ -1,12 +1,13 @@
 package typings.reactDates.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-dates.react-dates.CalendarMonthShape, 'enableOutsideDays' | 'horizontalMonthPadding' | 'onDayClick' | 'onDayMouseEnter' | 'onDayMouseLeave' | 'renderCalendarDay' | 'renderDayContents' | 'daySize' | 'focusedDate' | 'isFocused' | 'firstDayOfWeek' | 'setMonthTitleHeight' | 'verticalBorderSpacing' | 'monthFormat' | 'phrases' | 'dayAriaLabelFormat'> */
 @js.native
-trait PickCalendarMonthShapeena extends js.Object {
+trait PickCalendarMonthShapeena extends StObject {
   
   var dayAriaLabelFormat: js.UndefOr[js.Any] = js.native
   
@@ -49,114 +50,102 @@ object PickCalendarMonthShapeena {
   }
   
   @scala.inline
-  implicit class PickCalendarMonthShapeenaOps[Self <: PickCalendarMonthShapeena] (val x: Self) extends AnyVal {
+  implicit class PickCalendarMonthShapeenaMutableBuilder[Self <: PickCalendarMonthShapeena] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDayAriaLabelFormat(value: js.Any): Self = StObject.set(x, "dayAriaLabelFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayAriaLabelFormatUndefined: Self = StObject.set(x, "dayAriaLabelFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDaySize(value: js.Any): Self = StObject.set(x, "daySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayAriaLabelFormat(value: js.Any): Self = this.set("dayAriaLabelFormat", value.asInstanceOf[js.Any])
+    def setDaySizeUndefined: Self = StObject.set(x, "daySize", js.undefined)
     
     @scala.inline
-    def deleteDayAriaLabelFormat: Self = this.set("dayAriaLabelFormat", js.undefined)
+    def setEnableOutsideDays(value: js.Any): Self = StObject.set(x, "enableOutsideDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaySize(value: js.Any): Self = this.set("daySize", value.asInstanceOf[js.Any])
+    def setEnableOutsideDaysUndefined: Self = StObject.set(x, "enableOutsideDays", js.undefined)
     
     @scala.inline
-    def deleteDaySize: Self = this.set("daySize", js.undefined)
+    def setFirstDayOfWeek(value: js.Any): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableOutsideDays(value: js.Any): Self = this.set("enableOutsideDays", value.asInstanceOf[js.Any])
+    def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
     
     @scala.inline
-    def deleteEnableOutsideDays: Self = this.set("enableOutsideDays", js.undefined)
+    def setFocusedDate(value: js.Any): Self = StObject.set(x, "focusedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDayOfWeek(value: js.Any): Self = this.set("firstDayOfWeek", value.asInstanceOf[js.Any])
+    def setFocusedDateUndefined: Self = StObject.set(x, "focusedDate", js.undefined)
     
     @scala.inline
-    def deleteFirstDayOfWeek: Self = this.set("firstDayOfWeek", js.undefined)
+    def setHorizontalMonthPadding(value: js.Any): Self = StObject.set(x, "horizontalMonthPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusedDate(value: js.Any): Self = this.set("focusedDate", value.asInstanceOf[js.Any])
+    def setHorizontalMonthPaddingUndefined: Self = StObject.set(x, "horizontalMonthPadding", js.undefined)
     
     @scala.inline
-    def deleteFocusedDate: Self = this.set("focusedDate", js.undefined)
+    def setIsFocused(value: js.Any): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalMonthPadding(value: js.Any): Self = this.set("horizontalMonthPadding", value.asInstanceOf[js.Any])
+    def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
     
     @scala.inline
-    def deleteHorizontalMonthPadding: Self = this.set("horizontalMonthPadding", js.undefined)
+    def setMonthFormat(value: js.Any): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFocused(value: js.Any): Self = this.set("isFocused", value.asInstanceOf[js.Any])
+    def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
     
     @scala.inline
-    def deleteIsFocused: Self = this.set("isFocused", js.undefined)
+    def setOnDayClick(value: js.Any): Self = StObject.set(x, "onDayClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthFormat(value: js.Any): Self = this.set("monthFormat", value.asInstanceOf[js.Any])
+    def setOnDayClickUndefined: Self = StObject.set(x, "onDayClick", js.undefined)
     
     @scala.inline
-    def deleteMonthFormat: Self = this.set("monthFormat", js.undefined)
+    def setOnDayMouseEnter(value: js.Any): Self = StObject.set(x, "onDayMouseEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDayClick(value: js.Any): Self = this.set("onDayClick", value.asInstanceOf[js.Any])
+    def setOnDayMouseEnterUndefined: Self = StObject.set(x, "onDayMouseEnter", js.undefined)
     
     @scala.inline
-    def deleteOnDayClick: Self = this.set("onDayClick", js.undefined)
+    def setOnDayMouseLeave(value: js.Any): Self = StObject.set(x, "onDayMouseLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDayMouseEnter(value: js.Any): Self = this.set("onDayMouseEnter", value.asInstanceOf[js.Any])
+    def setOnDayMouseLeaveUndefined: Self = StObject.set(x, "onDayMouseLeave", js.undefined)
     
     @scala.inline
-    def deleteOnDayMouseEnter: Self = this.set("onDayMouseEnter", js.undefined)
+    def setPhrases(value: js.Any): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDayMouseLeave(value: js.Any): Self = this.set("onDayMouseLeave", value.asInstanceOf[js.Any])
+    def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
     
     @scala.inline
-    def deleteOnDayMouseLeave: Self = this.set("onDayMouseLeave", js.undefined)
+    def setRenderCalendarDay(value: js.Any): Self = StObject.set(x, "renderCalendarDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhrases(value: js.Any): Self = this.set("phrases", value.asInstanceOf[js.Any])
+    def setRenderCalendarDayUndefined: Self = StObject.set(x, "renderCalendarDay", js.undefined)
     
     @scala.inline
-    def deletePhrases: Self = this.set("phrases", js.undefined)
+    def setRenderDayContents(value: js.Any): Self = StObject.set(x, "renderDayContents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderCalendarDay(value: js.Any): Self = this.set("renderCalendarDay", value.asInstanceOf[js.Any])
+    def setRenderDayContentsUndefined: Self = StObject.set(x, "renderDayContents", js.undefined)
     
     @scala.inline
-    def deleteRenderCalendarDay: Self = this.set("renderCalendarDay", js.undefined)
+    def setSetMonthTitleHeight(value: js.Any): Self = StObject.set(x, "setMonthTitleHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderDayContents(value: js.Any): Self = this.set("renderDayContents", value.asInstanceOf[js.Any])
+    def setSetMonthTitleHeightUndefined: Self = StObject.set(x, "setMonthTitleHeight", js.undefined)
     
     @scala.inline
-    def deleteRenderDayContents: Self = this.set("renderDayContents", js.undefined)
+    def setVerticalBorderSpacing(value: js.Any): Self = StObject.set(x, "verticalBorderSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetMonthTitleHeight(value: js.Any): Self = this.set("setMonthTitleHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetMonthTitleHeight: Self = this.set("setMonthTitleHeight", js.undefined)
-    
-    @scala.inline
-    def setVerticalBorderSpacing(value: js.Any): Self = this.set("verticalBorderSpacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalBorderSpacing: Self = this.set("verticalBorderSpacing", js.undefined)
+    def setVerticalBorderSpacingUndefined: Self = StObject.set(x, "verticalBorderSpacing", js.undefined)
   }
 }

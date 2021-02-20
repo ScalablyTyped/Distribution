@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PasswordPolicyType extends js.Object {
+trait PasswordPolicyType extends StObject {
   
   /**
     * The minimum length of the password policy that you have set. Cannot be less than 6.
@@ -46,54 +47,42 @@ object PasswordPolicyType {
   }
   
   @scala.inline
-  implicit class PasswordPolicyTypeOps[Self <: PasswordPolicyType] (val x: Self) extends AnyVal {
+  implicit class PasswordPolicyTypeMutableBuilder[Self <: PasswordPolicyType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinimumLength(value: PasswordPolicyMinLengthType): Self = StObject.set(x, "MinimumLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinimumLengthUndefined: Self = StObject.set(x, "MinimumLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequireLowercase(value: BooleanType): Self = StObject.set(x, "RequireLowercase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumLength(value: PasswordPolicyMinLengthType): Self = this.set("MinimumLength", value.asInstanceOf[js.Any])
+    def setRequireLowercaseUndefined: Self = StObject.set(x, "RequireLowercase", js.undefined)
     
     @scala.inline
-    def deleteMinimumLength: Self = this.set("MinimumLength", js.undefined)
+    def setRequireNumbers(value: BooleanType): Self = StObject.set(x, "RequireNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireLowercase(value: BooleanType): Self = this.set("RequireLowercase", value.asInstanceOf[js.Any])
+    def setRequireNumbersUndefined: Self = StObject.set(x, "RequireNumbers", js.undefined)
     
     @scala.inline
-    def deleteRequireLowercase: Self = this.set("RequireLowercase", js.undefined)
+    def setRequireSymbols(value: BooleanType): Self = StObject.set(x, "RequireSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireNumbers(value: BooleanType): Self = this.set("RequireNumbers", value.asInstanceOf[js.Any])
+    def setRequireSymbolsUndefined: Self = StObject.set(x, "RequireSymbols", js.undefined)
     
     @scala.inline
-    def deleteRequireNumbers: Self = this.set("RequireNumbers", js.undefined)
+    def setRequireUppercase(value: BooleanType): Self = StObject.set(x, "RequireUppercase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireSymbols(value: BooleanType): Self = this.set("RequireSymbols", value.asInstanceOf[js.Any])
+    def setRequireUppercaseUndefined: Self = StObject.set(x, "RequireUppercase", js.undefined)
     
     @scala.inline
-    def deleteRequireSymbols: Self = this.set("RequireSymbols", js.undefined)
+    def setTemporaryPasswordValidityDays(value: TemporaryPasswordValidityDaysType): Self = StObject.set(x, "TemporaryPasswordValidityDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireUppercase(value: BooleanType): Self = this.set("RequireUppercase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireUppercase: Self = this.set("RequireUppercase", js.undefined)
-    
-    @scala.inline
-    def setTemporaryPasswordValidityDays(value: TemporaryPasswordValidityDaysType): Self = this.set("TemporaryPasswordValidityDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemporaryPasswordValidityDays: Self = this.set("TemporaryPasswordValidityDays", js.undefined)
+    def setTemporaryPasswordValidityDaysUndefined: Self = StObject.set(x, "TemporaryPasswordValidityDays", js.undefined)
   }
 }

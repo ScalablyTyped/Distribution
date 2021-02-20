@@ -9,12 +9,13 @@ import typings.std.HTMLElement
 import typings.std.HTMLFormElement
 import typings.std.JSON
 import typings.std.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChocolateChipStatic extends js.Object {
+trait ChocolateChipStatic extends StObject {
   
   /**
     * If no argument is provided, return the document as a ChocolateChipElementArray.

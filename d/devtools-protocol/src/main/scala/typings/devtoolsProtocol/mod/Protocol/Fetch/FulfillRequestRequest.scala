@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Fetch
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FulfillRequestRequest extends js.Object {
+trait FulfillRequestRequest extends StObject {
   
   /**
     * Alternative way of specifying response headers as a \0-separated
@@ -51,51 +52,39 @@ object FulfillRequestRequest {
   }
   
   @scala.inline
-  implicit class FulfillRequestRequestOps[Self <: FulfillRequestRequest] (val x: Self) extends AnyVal {
+  implicit class FulfillRequestRequestMutableBuilder[Self <: FulfillRequestRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryResponseHeaders(value: String): Self = StObject.set(x, "binaryResponseHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryResponseHeadersUndefined: Self = StObject.set(x, "binaryResponseHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setResponseCode(value: integer): Self = this.set("responseCode", value.asInstanceOf[js.Any])
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryResponseHeaders(value: String): Self = this.set("binaryResponseHeaders", value.asInstanceOf[js.Any])
+    def setResponseCode(value: integer): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBinaryResponseHeaders: Self = this.set("binaryResponseHeaders", js.undefined)
+    def setResponseHeaders(value: js.Array[HeaderEntry]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setResponseHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setResponseHeadersVarargs(value: HeaderEntry*): Self = this.set("responseHeaders", js.Array(value :_*))
+    def setResponsePhrase(value: String): Self = StObject.set(x, "responsePhrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseHeaders(value: js.Array[HeaderEntry]): Self = this.set("responseHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseHeaders: Self = this.set("responseHeaders", js.undefined)
-    
-    @scala.inline
-    def setResponsePhrase(value: String): Self = this.set("responsePhrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponsePhrase: Self = this.set("responsePhrase", js.undefined)
+    def setResponsePhraseUndefined: Self = StObject.set(x, "responsePhrase", js.undefined)
   }
 }

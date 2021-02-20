@@ -6,6 +6,7 @@ import typings.typeorm.anon.Entities
 import typings.typeorm.anon.PartialQueryExpressionMap
 import typings.typeorm.anon.Raw
 import typings.typeorm.anon.`4`
+import typings.typeorm.connectionMod.Connection
 import typings.typeorm.entityMetadataMod.EntityMetadata
 import typings.typeorm.entityTargetMod.EntityTarget
 import typings.typeorm.objectLiteralMod.ObjectLiteral
@@ -29,18 +30,27 @@ import typings.typeorm.typeormStrings.pessimistic_read
 import typings.typeorm.typeormStrings.pessimistic_write
 import typings.typeorm.typeormStrings.pessimistic_write_or_fail
 import typings.typeorm.whereExpressionMod.WhereExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/SelectQueryBuilder", JSImport.Namespace)
-@js.native
-object selectQueryBuilderMod extends js.Object {
+object selectQueryBuilderMod {
   
+  @JSImport("typeorm/browser/query-builder/SelectQueryBuilder", "SelectQueryBuilder")
   @js.native
-  class SelectQueryBuilder[Entity] ()
+  class SelectQueryBuilder[Entity] protected ()
     extends QueryBuilder[Entity]
        with WhereExpression {
+    /**
+      * QueryBuilder can be initialized from given Connection and QueryRunner objects or from given other QueryBuilder.
+      */
+    def this(connection: Connection) = this()
+    /**
+      * QueryBuilder can be initialized from given Connection and QueryRunner objects or from given other QueryBuilder.
+      */
+    def this(queryBuilder: QueryBuilder[_]) = this()
+    def this(connection: Connection, queryRunner: QueryRunner) = this()
     
     /**
       * Specifies FROM which entity's table select/update/delete will be executed.

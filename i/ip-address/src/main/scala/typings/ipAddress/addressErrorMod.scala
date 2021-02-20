@@ -1,14 +1,14 @@
 package typings.ipAddress
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ip-address/dist/lib/address-error", JSImport.Namespace)
-@js.native
-object addressErrorMod extends js.Object {
+object addressErrorMod {
   
+  @JSImport("ip-address/dist/lib/address-error", "AddressError")
   @js.native
   class AddressError protected () extends Error {
     def this(message: String) = this()

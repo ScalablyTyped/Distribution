@@ -3,12 +3,13 @@ package typings.stellarBase.anon
 import typings.node.Buffer
 import typings.stellarBase.xdrMod.xdr.StellarValueExt
 import typings.stellarBase.xdrMod.xdr.TimePoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloseTime extends js.Object {
+trait CloseTime extends StObject {
   
   var closeTime: TimePoint = js.native
   
@@ -27,33 +28,21 @@ object CloseTime {
   }
   
   @scala.inline
-  implicit class CloseTimeOps[Self <: CloseTime] (val x: Self) extends AnyVal {
+  implicit class CloseTimeMutableBuilder[Self <: CloseTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseTime(value: TimePoint): Self = StObject.set(x, "closeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExt(value: StellarValueExt): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTxSetHash(value: Buffer): Self = StObject.set(x, "txSetHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseTime(value: TimePoint): Self = this.set("closeTime", value.asInstanceOf[js.Any])
+    def setUpgrades(value: js.Array[Buffer]): Self = StObject.set(x, "upgrades", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt(value: StellarValueExt): Self = this.set("ext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTxSetHash(value: Buffer): Self = this.set("txSetHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpgradesVarargs(value: Buffer*): Self = this.set("upgrades", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpgrades(value: js.Array[Buffer]): Self = this.set("upgrades", value.asInstanceOf[js.Any])
+    def setUpgradesVarargs(value: Buffer*): Self = StObject.set(x, "upgrades", js.Array(value :_*))
   }
 }

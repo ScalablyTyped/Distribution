@@ -1,12 +1,13 @@
 package typings.c3.anon
 
 import typings.c3.mod.ArrayOrString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Done extends js.Object {
+trait Done extends StObject {
   
   /** Called after data is loaded, but not after rendering. This is because rendering will finish after some transition and there is some time lag between loading and rendering. */
   var done: js.UndefOr[js.Function0[Unit]] = js.native
@@ -22,33 +23,21 @@ object Done {
   }
   
   @scala.inline
-  implicit class DoneOps[Self <: Done] (val x: Self) extends AnyVal {
+  implicit class DoneMutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIds(value: ArrayOrString): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDone(value: () => Unit): Self = this.set("done", js.Any.fromFunction0(value))
+    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
     @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
-    
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setIds(value: ArrayOrString): Self = this.set("ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIds: Self = this.set("ids", js.undefined)
+    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
   }
 }

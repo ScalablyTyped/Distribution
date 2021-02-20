@@ -1,6 +1,7 @@
 package typings.weixinApp.wx
 
 import typings.weixinApp.anon.AuthMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,15 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartSoterAuthenticationOptions
   extends BaseOptions[js.Any, js.Any] {
   
-   // 挑战因子。挑战因子为调用者为此次生物鉴权准备的用于签名的字符串关键是别信息，将作为result_json的一部分，供调用者识别本次请求。例如：如果场景为请求用户对某订单进行授权确认，则可以将订单号填入此参数。
+  // 挑战因子。挑战因子为调用者为此次生物鉴权准备的用于签名的字符串关键是别信息，将作为result_json的一部分，供调用者识别本次请求。例如：如果场景为请求用户对某订单进行授权确认，则可以将订单号填入此参数。
   var authContent: js.UndefOr[String] = js.native
   
-   // 请求使用的可接受的生物认证方式
+  // 请求使用的可接受的生物认证方式
   var challenge: String = js.native
   
   var requestAuthModes: js.Array[AuthModes] = js.native
   
-   // 验证描述，即识别过程中显示在界面上的对话框提示内容
+  // 验证描述，即识别过程中显示在界面上的对话框提示内容
   @JSName("success")
   var success_StartSoterAuthenticationOptions: js.UndefOr[js.Function1[/* res */ AuthMode, Unit]] = js.native
 }
@@ -30,39 +31,27 @@ object StartSoterAuthenticationOptions {
   }
   
   @scala.inline
-  implicit class StartSoterAuthenticationOptionsOps[Self <: StartSoterAuthenticationOptions] (val x: Self) extends AnyVal {
+  implicit class StartSoterAuthenticationOptionsMutableBuilder[Self <: StartSoterAuthenticationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthContent(value: String): Self = StObject.set(x, "authContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthContentUndefined: Self = StObject.set(x, "authContent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallenge(value: String): Self = this.set("challenge", value.asInstanceOf[js.Any])
+    def setRequestAuthModes(value: js.Array[AuthModes]): Self = StObject.set(x, "requestAuthModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestAuthModesVarargs(value: AuthModes*): Self = this.set("requestAuthModes", js.Array(value :_*))
+    def setRequestAuthModesVarargs(value: AuthModes*): Self = StObject.set(x, "requestAuthModes", js.Array(value :_*))
     
     @scala.inline
-    def setRequestAuthModes(value: js.Array[AuthModes]): Self = this.set("requestAuthModes", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* res */ AuthMode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAuthContent(value: String): Self = this.set("authContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthContent: Self = this.set("authContent", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ AuthMode => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

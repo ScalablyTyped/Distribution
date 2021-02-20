@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.TopLevel
 import typings.lodash.mod.Dictionary
 import typings.lodash.mod.NumericDictionary
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashMapValues extends js.Object {
+trait LodashMapValues extends StObject {
   
   def apply(iteratee: String): LodashMapValues6x1 = js.native
   def apply(iteratee: js.Object): LodashMapValues3x1 = js.native

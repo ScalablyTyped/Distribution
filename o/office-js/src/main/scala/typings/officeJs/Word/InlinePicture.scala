@@ -22,6 +22,7 @@ import typings.officeJs.officeJsStrings.SectionOdd
 import typings.officeJs.officeJsStrings.Select
 import typings.officeJs.officeJsStrings.Start
 import typings.officeJs.officeJsStrings.Whole
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

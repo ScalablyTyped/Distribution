@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBackupPlanFromTemplateOutput extends js.Object {
+trait GetBackupPlanFromTemplateOutput extends StObject {
   
   /**
     * Returns the body of a backup plan based on the target template, including the name, rules, and backup vault of the plan.
@@ -21,24 +22,12 @@ object GetBackupPlanFromTemplateOutput {
   }
   
   @scala.inline
-  implicit class GetBackupPlanFromTemplateOutputOps[Self <: GetBackupPlanFromTemplateOutput] (val x: Self) extends AnyVal {
+  implicit class GetBackupPlanFromTemplateOutputMutableBuilder[Self <: GetBackupPlanFromTemplateOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupPlanDocument(value: BackupPlan): Self = StObject.set(x, "BackupPlanDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackupPlanDocument(value: BackupPlan): Self = this.set("BackupPlanDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackupPlanDocument: Self = this.set("BackupPlanDocument", js.undefined)
+    def setBackupPlanDocumentUndefined: Self = StObject.set(x, "BackupPlanDocument", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReviewableHITsResponse extends js.Object {
+trait ListReviewableHITsResponse extends StObject {
   
   /**
     *  The list of HIT elements returned by the query.
@@ -28,39 +29,27 @@ object ListReviewableHITsResponse {
   }
   
   @scala.inline
-  implicit class ListReviewableHITsResponseOps[Self <: ListReviewableHITsResponse] (val x: Self) extends AnyVal {
+  implicit class ListReviewableHITsResponseMutableBuilder[Self <: ListReviewableHITsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHITs(value: HITList): Self = StObject.set(x, "HITs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHITsUndefined: Self = StObject.set(x, "HITs", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHITsVarargs(value: HIT*): Self = StObject.set(x, "HITs", js.Array(value :_*))
     
     @scala.inline
-    def setHITsVarargs(value: HIT*): Self = this.set("HITs", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHITs(value: HITList): Self = this.set("HITs", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteHITs: Self = this.set("HITs", js.undefined)
+    def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setNumResults(value: Integer): Self = this.set("NumResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumResults: Self = this.set("NumResults", js.undefined)
+    def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
   }
 }

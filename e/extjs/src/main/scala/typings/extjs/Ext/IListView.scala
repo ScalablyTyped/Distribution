@@ -2,6 +2,7 @@ package typings.extjs.Ext
 
 import typings.extjs.Ext.data.IStore
 import typings.extjs.Ext.panel.ITable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,24 +27,12 @@ object IListView {
   }
   
   @scala.inline
-  implicit class IListViewOps[Self <: IListView] (val x: Self) extends AnyVal {
+  implicit class IListViewMutableBuilder[Self <: IListView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReconfigure(value: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReconfigure(value: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Unit): Self = this.set("reconfigure", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteReconfigure: Self = this.set("reconfigure", js.undefined)
+    def setReconfigureUndefined: Self = StObject.set(x, "reconfigure", js.undefined)
   }
 }

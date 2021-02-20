@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetReportGroupsOutput extends js.Object {
+trait BatchGetReportGroupsOutput extends StObject {
   
   /**
     *  The array of report groups returned by BatchGetReportGroups. 
@@ -26,36 +27,24 @@ object BatchGetReportGroupsOutput {
   }
   
   @scala.inline
-  implicit class BatchGetReportGroupsOutputOps[Self <: BatchGetReportGroupsOutput] (val x: Self) extends AnyVal {
+  implicit class BatchGetReportGroupsOutputMutableBuilder[Self <: BatchGetReportGroupsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReportGroups(value: ReportGroups): Self = StObject.set(x, "reportGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReportGroupsNotFound(value: ReportGroupArns): Self = StObject.set(x, "reportGroupsNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportGroupsNotFoundUndefined: Self = StObject.set(x, "reportGroupsNotFound", js.undefined)
     
     @scala.inline
-    def setReportGroupsVarargs(value: ReportGroup*): Self = this.set("reportGroups", js.Array(value :_*))
+    def setReportGroupsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportGroupsNotFound", js.Array(value :_*))
     
     @scala.inline
-    def setReportGroups(value: ReportGroups): Self = this.set("reportGroups", value.asInstanceOf[js.Any])
+    def setReportGroupsUndefined: Self = StObject.set(x, "reportGroups", js.undefined)
     
     @scala.inline
-    def deleteReportGroups: Self = this.set("reportGroups", js.undefined)
-    
-    @scala.inline
-    def setReportGroupsNotFoundVarargs(value: NonEmptyString*): Self = this.set("reportGroupsNotFound", js.Array(value :_*))
-    
-    @scala.inline
-    def setReportGroupsNotFound(value: ReportGroupArns): Self = this.set("reportGroupsNotFound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportGroupsNotFound: Self = this.set("reportGroupsNotFound", js.undefined)
+    def setReportGroupsVarargs(value: ReportGroup*): Self = StObject.set(x, "reportGroups", js.Array(value :_*))
   }
 }

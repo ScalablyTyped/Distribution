@@ -3,12 +3,13 @@ package typings.rascal.anon
 import typings.rascal.rascalStrings.inMemory
 import typings.rascal.rascalStrings.inMemoryCluster
 import typings.rascal.rascalStrings.stub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Size extends js.Object {
+trait Size extends StObject {
   
   var size: js.UndefOr[Double] = js.native
   
@@ -24,27 +25,15 @@ object Size {
   }
   
   @scala.inline
-  implicit class SizeOps[Self <: Size] (val x: Self) extends AnyVal {
+  implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: stub | inMemory | inMemoryCluster): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setType(value: stub | inMemory | inMemoryCluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.naverWhale.whale.contentSettings
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetDetails extends js.Object {
+trait SetDetails extends StObject {
   
   /** The pattern for the primary URL. For details on the format of a pattern, see Content Setting Patterns. */
   var primaryPattern: String = js.native
@@ -31,42 +32,30 @@ object SetDetails {
   }
   
   @scala.inline
-  implicit class SetDetailsOps[Self <: SetDetails] (val x: Self) extends AnyVal {
+  implicit class SetDetailsMutableBuilder[Self <: SetDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrimaryPattern(value: String): Self = StObject.set(x, "primaryPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceIdentifier(value: typings.chrome.chrome.contentSettings.ResourceIdentifier): Self = StObject.set(x, "resourceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
     
     @scala.inline
-    def setPrimaryPattern(value: String): Self = this.set("primaryPattern", value.asInstanceOf[js.Any])
+    def setScope(value: typings.chrome.chrome.contentSettings.ScopeEnum): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetting(value: js.Any): Self = this.set("setting", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def setResourceIdentifier(value: typings.chrome.chrome.contentSettings.ResourceIdentifier): Self = this.set("resourceIdentifier", value.asInstanceOf[js.Any])
+    def setSecondaryPattern(value: String): Self = StObject.set(x, "secondaryPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceIdentifier: Self = this.set("resourceIdentifier", js.undefined)
+    def setSecondaryPatternUndefined: Self = StObject.set(x, "secondaryPattern", js.undefined)
     
     @scala.inline
-    def setScope(value: typings.chrome.chrome.contentSettings.ScopeEnum): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setSecondaryPattern(value: String): Self = this.set("secondaryPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryPattern: Self = this.set("secondaryPattern", js.undefined)
+    def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

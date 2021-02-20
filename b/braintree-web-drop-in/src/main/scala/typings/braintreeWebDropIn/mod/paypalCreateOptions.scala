@@ -3,12 +3,13 @@ package typings.braintreeWebDropIn.mod
 import typings.braintreeWebDropIn.anon.PartialButtonStyle
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.checkout
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.vault
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait paypalCreateOptions extends js.Object {
+trait paypalCreateOptions extends StObject {
   
   var amount: js.UndefOr[String | Double] = js.native
   
@@ -29,45 +30,33 @@ object paypalCreateOptions {
   }
   
   @scala.inline
-  implicit class paypalCreateOptionsOps[Self <: paypalCreateOptions] (val x: Self) extends AnyVal {
+  implicit class paypalCreateOptionsMutableBuilder[Self <: paypalCreateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String | Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonStyle(value: PartialButtonStyle): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlow(value: checkout | vault): Self = this.set("flow", value.asInstanceOf[js.Any])
+    def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
     
     @scala.inline
-    def setAmount(value: String | Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
     
     @scala.inline
-    def setButtonStyle(value: PartialButtonStyle): Self = this.set("buttonStyle", value.asInstanceOf[js.Any])
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButtonStyle: Self = this.set("buttonStyle", js.undefined)
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def setCommit(value: Boolean): Self = this.set("commit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommit: Self = this.set("commit", js.undefined)
-    
-    @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setFlow(value: checkout | vault): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
   }
 }

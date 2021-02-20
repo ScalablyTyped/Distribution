@@ -1,5 +1,6 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies a range and its formatting.
   */
 @js.native
-trait RangeFormatConfiguration extends js.Object {
+trait RangeFormatConfiguration extends StObject {
   
   /**
     * Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates: `{row: 3, column: 4}` specifies 
@@ -30,24 +31,12 @@ object RangeFormatConfiguration {
   }
   
   @scala.inline
-  implicit class RangeFormatConfigurationOps[Self <: RangeFormatConfiguration] (val x: Self) extends AnyVal {
+  implicit class RangeFormatConfigurationMutableBuilder[Self <: RangeFormatConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCells(value: Table | RangeCoordinates): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCells(value: Table | RangeCoordinates): Self = this.set("cells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: js.Object): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormat(value: js.Object): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

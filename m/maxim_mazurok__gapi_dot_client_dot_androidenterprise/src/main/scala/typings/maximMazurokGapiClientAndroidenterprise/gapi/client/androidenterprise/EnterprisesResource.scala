@@ -13,12 +13,13 @@ import typings.maximMazurokGapiClientAndroidenterprise.anon.QuotaUser
 import typings.maximMazurokGapiClientAndroidenterprise.anon.RequestMode
 import typings.maximMazurokGapiClientAndroidenterprise.anon.Resource
 import typings.maximMazurokGapiClientAndroidenterprise.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnterprisesResource extends js.Object {
+trait EnterprisesResource extends StObject {
   
   /** Acknowledges notifications that were received from Enterprises.PullNotificationSet to prevent subsequent calls from returning the same notifications. */
   def acknowledgeNotificationSet(): Request[Unit] = js.native

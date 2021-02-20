@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides control over how write requests are executed.
   */
 @js.native
-trait SchemaWriteControl extends js.Object {
+trait SchemaWriteControl extends StObject {
   
   /**
     * The revision ID of the presentation required for the write request. If
@@ -27,24 +28,12 @@ object SchemaWriteControl {
   }
   
   @scala.inline
-  implicit class SchemaWriteControlOps[Self <: SchemaWriteControl] (val x: Self) extends AnyVal {
+  implicit class SchemaWriteControlMutableBuilder[Self <: SchemaWriteControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequiredRevisionId(value: String): Self = this.set("requiredRevisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredRevisionId: Self = this.set("requiredRevisionId", js.undefined)
+    def setRequiredRevisionIdUndefined: Self = StObject.set(x, "requiredRevisionId", js.undefined)
   }
 }

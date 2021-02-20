@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDirectionsRequestOptions extends js.Object {
+trait IDirectionsRequestOptions extends StObject {
   
   /** The unit to use when displaying direction distances. */
   var distanceUnit: js.UndefOr[DistanceUnit] = js.native
@@ -47,81 +48,69 @@ object IDirectionsRequestOptions {
   }
   
   @scala.inline
-  implicit class IDirectionsRequestOptionsOps[Self <: IDirectionsRequestOptions] (val x: Self) extends AnyVal {
+  implicit class IDirectionsRequestOptionsMutableBuilder[Self <: IDirectionsRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistanceUnit(value: DistanceUnit): Self = StObject.set(x, "distanceUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceUnitUndefined: Self = StObject.set(x, "distanceUnit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRoutes(value: Double): Self = StObject.set(x, "maxRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceUnit(value: DistanceUnit): Self = this.set("distanceUnit", value.asInstanceOf[js.Any])
+    def setMaxRoutesUndefined: Self = StObject.set(x, "maxRoutes", js.undefined)
     
     @scala.inline
-    def deleteDistanceUnit: Self = this.set("distanceUnit", js.undefined)
+    def setRouteAvoidance(value: js.Array[RouteAvoidance]): Self = StObject.set(x, "routeAvoidance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRoutes(value: Double): Self = this.set("maxRoutes", value.asInstanceOf[js.Any])
+    def setRouteAvoidanceUndefined: Self = StObject.set(x, "routeAvoidance", js.undefined)
     
     @scala.inline
-    def deleteMaxRoutes: Self = this.set("maxRoutes", js.undefined)
+    def setRouteAvoidanceVarargs(value: RouteAvoidance*): Self = StObject.set(x, "routeAvoidance", js.Array(value :_*))
     
     @scala.inline
-    def setRouteAvoidanceVarargs(value: RouteAvoidance*): Self = this.set("routeAvoidance", js.Array(value :_*))
+    def setRouteDraggable(value: Boolean): Self = StObject.set(x, "routeDraggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteAvoidance(value: js.Array[RouteAvoidance]): Self = this.set("routeAvoidance", value.asInstanceOf[js.Any])
+    def setRouteDraggableUndefined: Self = StObject.set(x, "routeDraggable", js.undefined)
     
     @scala.inline
-    def deleteRouteAvoidance: Self = this.set("routeAvoidance", js.undefined)
+    def setRouteIndex(value: Double): Self = StObject.set(x, "routeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteDraggable(value: Boolean): Self = this.set("routeDraggable", value.asInstanceOf[js.Any])
+    def setRouteIndexUndefined: Self = StObject.set(x, "routeIndex", js.undefined)
     
     @scala.inline
-    def deleteRouteDraggable: Self = this.set("routeDraggable", js.undefined)
+    def setRouteMode(value: RouteMode): Self = StObject.set(x, "routeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteIndex(value: Double): Self = this.set("routeIndex", value.asInstanceOf[js.Any])
+    def setRouteModeUndefined: Self = StObject.set(x, "routeMode", js.undefined)
     
     @scala.inline
-    def deleteRouteIndex: Self = this.set("routeIndex", js.undefined)
+    def setRouteOptimization(value: RouteOptimization): Self = StObject.set(x, "routeOptimization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteMode(value: RouteMode): Self = this.set("routeMode", value.asInstanceOf[js.Any])
+    def setRouteOptimizationUndefined: Self = StObject.set(x, "routeOptimization", js.undefined)
     
     @scala.inline
-    def deleteRouteMode: Self = this.set("routeMode", js.undefined)
+    def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteOptimization(value: RouteOptimization): Self = this.set("routeOptimization", value.asInstanceOf[js.Any])
+    def setTimeType(value: TimeType): Self = StObject.set(x, "timeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRouteOptimization: Self = this.set("routeOptimization", js.undefined)
+    def setTimeTypeUndefined: Self = StObject.set(x, "timeType", js.undefined)
     
     @scala.inline
-    def setTime(value: Date): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setVehicleSpec(value: IVehicleSpec): Self = StObject.set(x, "vehicleSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeType(value: TimeType): Self = this.set("timeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeType: Self = this.set("timeType", js.undefined)
-    
-    @scala.inline
-    def setVehicleSpec(value: IVehicleSpec): Self = this.set("vehicleSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVehicleSpec: Self = this.set("vehicleSpec", js.undefined)
+    def setVehicleSpecUndefined: Self = StObject.set(x, "vehicleSpec", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartChangeSetRequest extends js.Object {
+trait StartChangeSetRequest extends StObject {
   
   /**
     * The catalog related to the request. Fixed value: AWSMarketplace 
@@ -36,39 +37,27 @@ object StartChangeSetRequest {
   }
   
   @scala.inline
-  implicit class StartChangeSetRequestOps[Self <: StartChangeSetRequest] (val x: Self) extends AnyVal {
+  implicit class StartChangeSetRequestMutableBuilder[Self <: StartChangeSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeSet(value: RequestedChangeList): Self = StObject.set(x, "ChangeSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeSetName(value: ChangeSetName): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalog(value: Catalog): Self = this.set("Catalog", value.asInstanceOf[js.Any])
+    def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
     
     @scala.inline
-    def setChangeSetVarargs(value: Change*): Self = this.set("ChangeSet", js.Array(value :_*))
+    def setChangeSetVarargs(value: Change*): Self = StObject.set(x, "ChangeSet", js.Array(value :_*))
     
     @scala.inline
-    def setChangeSet(value: RequestedChangeList): Self = this.set("ChangeSet", value.asInstanceOf[js.Any])
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSetName(value: ChangeSetName): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChangeSetName: Self = this.set("ChangeSetName", js.undefined)
-    
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
   }
 }

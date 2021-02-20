@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CylinderGraphics")
 @js.native
-class CylinderGraphics () extends js.Object {
+class CylinderGraphics () extends StObject {
   def this(options: typings.cesium.anon.Material) = this()
   
   var bottomRadius: Property = js.native

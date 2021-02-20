@@ -1,5 +1,6 @@
 package typings.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a custom update for FBInstant.updateAsync.
   */
 @js.native
-trait CustomUpdatePayload extends js.Object {
+trait CustomUpdatePayload extends StObject {
   
   /**
     * For custom updates, this should be 'CUSTOM'.
@@ -75,54 +76,42 @@ object CustomUpdatePayload {
   }
   
   @scala.inline
-  implicit class CustomUpdatePayloadOps[Self <: CustomUpdatePayload] (val x: Self) extends AnyVal {
+  implicit class CustomUpdatePayloadMutableBuilder[Self <: CustomUpdatePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: UpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCta(value: String | LocalizableContent): Self = StObject.set(x, "cta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtaUndefined: Self = StObject.set(x, "cta", js.undefined)
     
     @scala.inline
-    def setAction(value: UpdateAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String | LocalizableContent): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setNotification(value: String): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCta(value: String | LocalizableContent): Self = this.set("cta", value.asInstanceOf[js.Any])
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def deleteCta: Self = this.set("cta", js.undefined)
+    def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: String): Self = this.set("notification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
-    
-    @scala.inline
-    def setStrategy(value: String): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("strategy", js.undefined)
+    def setText(value: String | LocalizableContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

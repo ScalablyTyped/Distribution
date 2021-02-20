@@ -3,20 +3,21 @@ package typings.peekReadable
 import typings.node.Buffer
 import typings.node.streamMod.Readable
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("peek-readable", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("peek-readable", "EndOfStreamError")
   @js.native
   class EndOfStreamError ()
     extends typings.peekReadable.endOfFileStreamMod.EndOfStreamError
   
+  @JSImport("peek-readable", "StreamReader")
   @js.native
-  class StreamReader protected () extends js.Object {
+  class StreamReader protected () extends StObject {
     def this(s: Readable) = this()
     
     /**

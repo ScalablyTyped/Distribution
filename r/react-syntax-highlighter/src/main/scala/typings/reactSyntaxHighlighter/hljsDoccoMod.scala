@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/styles/hljs/docco", JSImport.Namespace)
-@js.native
-object hljsDoccoMod extends js.Object {
+object hljsDoccoMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/styles/hljs/docco", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

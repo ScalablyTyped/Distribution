@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListInventorySourceGroupsResponse extends js.Object {
+trait ListInventorySourceGroupsResponse extends StObject {
   
   /** The list of inventory source groups. This list will be absent if empty. */
   var inventorySourceGroups: js.UndefOr[js.Array[InventorySourceGroup]] = js.native
@@ -25,33 +26,21 @@ object ListInventorySourceGroupsResponse {
   }
   
   @scala.inline
-  implicit class ListInventorySourceGroupsResponseOps[Self <: ListInventorySourceGroupsResponse] (val x: Self) extends AnyVal {
+  implicit class ListInventorySourceGroupsResponseMutableBuilder[Self <: ListInventorySourceGroupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInventorySourceGroups(value: js.Array[InventorySourceGroup]): Self = StObject.set(x, "inventorySourceGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInventorySourceGroupsUndefined: Self = StObject.set(x, "inventorySourceGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInventorySourceGroupsVarargs(value: InventorySourceGroup*): Self = StObject.set(x, "inventorySourceGroups", js.Array(value :_*))
     
     @scala.inline
-    def setInventorySourceGroupsVarargs(value: InventorySourceGroup*): Self = this.set("inventorySourceGroups", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventorySourceGroups(value: js.Array[InventorySourceGroup]): Self = this.set("inventorySourceGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInventorySourceGroups: Self = this.set("inventorySourceGroups", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

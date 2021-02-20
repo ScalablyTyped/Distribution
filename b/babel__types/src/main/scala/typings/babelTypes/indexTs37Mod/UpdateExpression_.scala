@@ -3,6 +3,7 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.PlussignPlussign
 import typings.babelTypes.babelTypesStrings.UpdateExpression
 import typings.babelTypes.babelTypesStrings.`--`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object UpdateExpression_ {
   }
   
   @scala.inline
-  implicit class UpdateExpression_Ops[Self <: UpdateExpression_] (val x: Self) extends AnyVal {
+  implicit class UpdateExpression_MutableBuilder[Self <: UpdateExpression_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperator(value: PlussignPlussign | `--`): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgument(value: Expression): Self = this.set("argument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperator(value: PlussignPlussign | `--`): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefix(value: Boolean): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: UpdateExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: UpdateExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

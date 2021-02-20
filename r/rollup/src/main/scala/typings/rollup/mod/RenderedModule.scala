@@ -1,11 +1,12 @@
 package typings.rollup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderedModule extends js.Object {
+trait RenderedModule extends StObject {
   
   var originalLength: Double = js.native
   
@@ -29,36 +30,24 @@ object RenderedModule {
   }
   
   @scala.inline
-  implicit class RenderedModuleOps[Self <: RenderedModule] (val x: Self) extends AnyVal {
+  implicit class RenderedModuleMutableBuilder[Self <: RenderedModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOriginalLength(value: Double): Self = StObject.set(x, "originalLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemovedExports(value: js.Array[String]): Self = StObject.set(x, "removedExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemovedExportsVarargs(value: String*): Self = StObject.set(x, "removedExports", js.Array(value :_*))
     
     @scala.inline
-    def setOriginalLength(value: Double): Self = this.set("originalLength", value.asInstanceOf[js.Any])
+    def setRenderedExports(value: js.Array[String]): Self = StObject.set(x, "renderedExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemovedExportsVarargs(value: String*): Self = this.set("removedExports", js.Array(value :_*))
+    def setRenderedExportsVarargs(value: String*): Self = StObject.set(x, "renderedExports", js.Array(value :_*))
     
     @scala.inline
-    def setRemovedExports(value: js.Array[String]): Self = this.set("removedExports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderedExportsVarargs(value: String*): Self = this.set("renderedExports", js.Array(value :_*))
-    
-    @scala.inline
-    def setRenderedExports(value: js.Array[String]): Self = this.set("renderedExports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderedLength(value: Double): Self = this.set("renderedLength", value.asInstanceOf[js.Any])
+    def setRenderedLength(value: Double): Self = StObject.set(x, "renderedLength", value.asInstanceOf[js.Any])
   }
 }

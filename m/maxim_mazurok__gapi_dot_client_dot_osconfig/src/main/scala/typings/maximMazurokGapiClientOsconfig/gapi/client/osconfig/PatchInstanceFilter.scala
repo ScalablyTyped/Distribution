@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchInstanceFilter extends js.Object {
+trait PatchInstanceFilter extends StObject {
   
   /** Target all VM instances in the project. If true, no other criteria is permitted. */
   var all: js.UndefOr[Boolean] = js.native
@@ -34,60 +35,48 @@ object PatchInstanceFilter {
   }
   
   @scala.inline
-  implicit class PatchInstanceFilterOps[Self <: PatchInstanceFilter] (val x: Self) extends AnyVal {
+  implicit class PatchInstanceFilterMutableBuilder[Self <: PatchInstanceFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupLabels(value: js.Array[PatchInstanceFilterGroupLabel]): Self = StObject.set(x, "groupLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: Boolean): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setGroupLabelsUndefined: Self = StObject.set(x, "groupLabels", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setGroupLabelsVarargs(value: PatchInstanceFilterGroupLabel*): Self = StObject.set(x, "groupLabels", js.Array(value :_*))
     
     @scala.inline
-    def setGroupLabelsVarargs(value: PatchInstanceFilterGroupLabel*): Self = this.set("groupLabels", js.Array(value :_*))
+    def setInstanceNamePrefixes(value: js.Array[String]): Self = StObject.set(x, "instanceNamePrefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupLabels(value: js.Array[PatchInstanceFilterGroupLabel]): Self = this.set("groupLabels", value.asInstanceOf[js.Any])
+    def setInstanceNamePrefixesUndefined: Self = StObject.set(x, "instanceNamePrefixes", js.undefined)
     
     @scala.inline
-    def deleteGroupLabels: Self = this.set("groupLabels", js.undefined)
+    def setInstanceNamePrefixesVarargs(value: String*): Self = StObject.set(x, "instanceNamePrefixes", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceNamePrefixesVarargs(value: String*): Self = this.set("instanceNamePrefixes", js.Array(value :_*))
+    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceNamePrefixes(value: js.Array[String]): Self = this.set("instanceNamePrefixes", value.asInstanceOf[js.Any])
+    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
     @scala.inline
-    def deleteInstanceNamePrefixes: Self = this.set("instanceNamePrefixes", js.undefined)
+    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
     @scala.inline
-    def setInstancesVarargs(value: String*): Self = this.set("instances", js.Array(value :_*))
+    def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstances(value: js.Array[String]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
     @scala.inline
-    def deleteInstances: Self = this.set("instances", js.undefined)
-    
-    @scala.inline
-    def setZonesVarargs(value: String*): Self = this.set("zones", js.Array(value :_*))
-    
-    @scala.inline
-    def setZones(value: js.Array[String]): Self = this.set("zones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZones: Self = this.set("zones", js.undefined)
+    def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

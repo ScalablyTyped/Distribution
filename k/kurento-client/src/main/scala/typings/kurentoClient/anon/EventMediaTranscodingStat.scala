@@ -4,13 +4,14 @@ import typings.kurentoClient.kurentoClientStrings.MediaTranscodingStateChange
 import typings.kurentoClient.mod.MediaTranscodingState
 import typings.kurentoClient.mod.MediaType
 import typings.kurentoClient.mod.Tag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined kurento-client.kurento-client.Event<'MediaTranscodingStateChange', {  state :kurento-client.kurento-client.MediaTranscodingState,   binName :string,   mediaType :kurento-client.kurento-client.MediaType}> */
 @js.native
-trait EventMediaTranscodingStat extends js.Object {
+trait EventMediaTranscodingStat extends StObject {
   
   var binName: String = js.native
   
@@ -47,45 +48,33 @@ object EventMediaTranscodingStat {
   }
   
   @scala.inline
-  implicit class EventMediaTranscodingStatOps[Self <: EventMediaTranscodingStat] (val x: Self) extends AnyVal {
+  implicit class EventMediaTranscodingStatMutableBuilder[Self <: EventMediaTranscodingStat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinName(value: String): Self = StObject.set(x, "binName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinName(value: String): Self = this.set("binName", value.asInstanceOf[js.Any])
+    def setState(value: MediaTranscodingState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: MediaType): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setState(value: MediaTranscodingState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[Tag]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestampMillis(value: String): Self = this.set("timestampMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MediaTranscodingStateChange): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MediaTranscodingStateChange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

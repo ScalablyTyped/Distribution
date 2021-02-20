@@ -2,6 +2,7 @@ package typings.valerieBrowser
 
 import typings.valerieBrowser.Valerie.PropertyValidationState
 import typings.valerieBrowser.Valerie.ValidationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait KnockoutObservable[T] extends js.Object {
+trait KnockoutObservable[T] extends StObject {
   
   // starts validation for observable
   def validate(): PropertyValidationState[KnockoutObservable[T]] = js.native

@@ -67,13 +67,19 @@ import typings.vsoNodeApi.testInterfacesMod.WorkItemReference
 import typings.vsoNodeApi.testInterfacesMod.WorkItemToTestLinks
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/TestApi", JSImport.Namespace)
-@js.native
-object testApiMod extends js.Object {
+object testApiMod {
+  
+  @JSImport("vso-node-api/TestApi", "TestApi")
+  @js.native
+  class TestApi protected () extends ITestApi {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
   
   @js.native
   trait ITestApi extends ClientApiBase {
@@ -1535,11 +1541,5 @@ object testApiMod extends js.Object {
     def updateTestSuite(suiteUpdateModel: SuiteUpdateModel, project: String, planId: Double, suiteId: Double): js.Promise[TestSuite] = js.native
     
     def updateTestVariable(testVariable: TestVariable, project: String, testVariableId: Double): js.Promise[TestVariable] = js.native
-  }
-  
-  @js.native
-  class TestApi protected () extends ITestApi {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
 }

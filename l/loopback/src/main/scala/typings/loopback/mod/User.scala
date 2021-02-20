@@ -4,6 +4,7 @@ import typings.loopback.anon.CaseSensitiveEmail
 import typings.loopback.anon.GenerateVerificationToken
 import typings.std.Date
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +48,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "User")
 @js.native
-class User () extends PersistedModel {
+class User protected () extends PersistedModel {
+  def this(data: js.Any) = this()
   
   /**
     * Create access token for the logged in user. This method can be overridden to
@@ -158,10 +160,7 @@ class User () extends PersistedModel {
     */
   def verify(options: GenerateVerificationToken): Unit = js.native
 }
-/* static members */
-@JSImport("loopback", "User")
-@js.native
-object User extends js.Object {
+object User {
   
   /**
     * Confirm the user's identity
@@ -171,7 +170,12 @@ object User extends js.Object {
     * @callback {() => void} callback
     * @param {Error} er
     */
+  /* static member */
+  @JSImport("loopback", "User.confirm")
+  @js.native
   def confirm(userId: js.Any, token: String, redirect: String): js.Promise[Unit] | Unit = js.native
+  @JSImport("loopback", "User.confirm")
+  @js.native
   def confirm(userId: js.Any, token: String, redirect: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = js.native
   
   /**
@@ -183,7 +187,12 @@ object User extends js.Object {
     * @param {any} user The User this token is being generated for.
     * @param {() => void} cb The generator must pass back the new token with this function cal
     */
+  /* static member */
+  @JSImport("loopback", "User.generateVerificationToken")
+  @js.native
   def generateVerificationToken(user: js.Any): js.Promise[Unit] | Unit = js.native
+  @JSImport("loopback", "User.generateVerificationToken")
+  @js.native
   def generateVerificationToken(user: js.Any, callback: js.Function0[Unit]): js.Promise[Unit] | Unit = js.native
   
   /**
@@ -202,19 +211,32 @@ object User extends js.Object {
     * @param {Error} err Error object
     * @param {AccessToken} token Access token if login is successfu
     */
+  /* static member */
+  @JSImport("loopback", "User.login")
+  @js.native
   def login(credentials: js.Any): js.Promise[AccessToken] | Unit = js.native
+  @JSImport("loopback", "User.login")
+  @js.native
   def login(
     credentials: js.Any,
     include: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
   ): js.Promise[AccessToken] | Unit = js.native
+  @JSImport("loopback", "User.login")
+  @js.native
   def login(credentials: js.Any, include: String): js.Promise[AccessToken] | Unit = js.native
+  @JSImport("loopback", "User.login")
+  @js.native
   def login(
     credentials: js.Any,
     include: String,
     callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
   ): js.Promise[AccessToken] | Unit = js.native
+  @JSImport("loopback", "User.login")
+  @js.native
   def login(credentials: js.Any, include: js.Array[String]): js.Promise[AccessToken] | Unit = js.native
+  @JSImport("loopback", "User.login")
+  @js.native
   def login(
     credentials: js.Any,
     include: js.Array[String],
@@ -234,7 +256,12 @@ object User extends js.Object {
     * @callback {() => void} callback
     * @param {Error} er
     */
+  /* static member */
+  @JSImport("loopback", "User.logout")
+  @js.native
   def logout(accessTokenID: String): js.Promise[Unit] | Unit = js.native
+  @JSImport("loopback", "User.logout")
+  @js.native
   def logout(accessTokenID: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = js.native
   
   /**
@@ -244,6 +271,9 @@ object User extends js.Object {
     * @param {string} realmDelimiter The realm delimiter, if not set, no realm is needed
     * @returns {any} The normalized credential objec
     */
+  /* static member */
+  @JSImport("loopback", "User.normalizeCredentials")
+  @js.native
   def normalizeCredentials(credentials: js.Any, realmRequired: Boolean, realmDelimiter: String): js.Any = js.native
   
   /**
@@ -254,6 +284,11 @@ object User extends js.Object {
     * @callback {() => void} callback
     * @param {Error} er
     */
+  /* static member */
+  @JSImport("loopback", "User.resetPassword")
+  @js.native
   def resetPassword(options: js.Object): js.Promise[Unit] | Unit = js.native
+  @JSImport("loopback", "User.resetPassword")
+  @js.native
   def resetPassword(options: js.Object, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = js.native
 }

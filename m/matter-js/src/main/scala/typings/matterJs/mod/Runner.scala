@@ -1,12 +1,13 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Runner")
 @js.native
-class Runner () extends js.Object {
+class Runner () extends StObject {
   
   /**
     * A `Number` that specifies the time step between updates in milliseconds.
@@ -40,16 +41,18 @@ class Runner () extends js.Object {
   var isFixed: Boolean = js.native
 }
 /* static members */
-@JSImport("matter-js", "Runner")
-@js.native
-object Runner extends js.Object {
+object Runner {
   
   /**
     * Creates a new Runner. The options parameter is an object that specifies any properties you wish to override the defaults.
     * @method create
     * @param {} options
     */
+  @JSImport("matter-js", "Runner.create")
+  @js.native
   def create(): Runner = js.native
+  @JSImport("matter-js", "Runner.create")
+  @js.native
   def create(options: IRunnerOptions): Runner = js.native
   
   /**
@@ -57,12 +60,16 @@ object Runner extends js.Object {
     * @method run
     * @param {engine} engine
     */
+  @JSImport("matter-js", "Runner.run")
+  @js.native
   def run(engine: Engine): Runner = js.native
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
     * @method run
     * @param {engine} engine
     */
+  @JSImport("matter-js", "Runner.run")
+  @js.native
   def run(runner: Runner, engine: Engine): Runner = js.native
   
   /**
@@ -71,6 +78,8 @@ object Runner extends js.Object {
     * @param {runner} runner
     * @param {engine} engine
     */
+  @JSImport("matter-js", "Runner.start")
+  @js.native
   def start(runner: Runner, engine: Engine): Unit = js.native
   
   /**
@@ -79,6 +88,8 @@ object Runner extends js.Object {
     * @method stop
     * @param {runner} runner
     */
+  @JSImport("matter-js", "Runner.stop")
+  @js.native
   def stop(runner: Runner): Unit = js.native
   
   /**
@@ -91,5 +102,7 @@ object Runner extends js.Object {
     * @param {engine} engine
     * @param {number} time
     */
+  @JSImport("matter-js", "Runner.tick")
+  @js.native
   def tick(runner: Runner, engine: Engine, time: Double): Unit = js.native
 }

@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,29 +19,11 @@ class AbstractMesh protected ()
   def this(name: String, scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "AbstractMesh")
-@js.native
-object AbstractMesh extends js.Object {
+object AbstractMesh {
   
-  /** Billboard on all axes */
-  def BILLBOARDMODE_ALL: Double = js.native
-  
-  /**
-    * No billboard
-    */
-  def BILLBOARDMODE_NONE: Double = js.native
-  
-  /** Billboard on using position instead of orientation */
-  def BILLBOARDMODE_USE_POSITION: Double = js.native
-  
-  /** Billboard on X axis */
-  def BILLBOARDMODE_X: Double = js.native
-  
-  /** Billboard on Y axis */
-  def BILLBOARDMODE_Y: Double = js.native
-  
-  /** Billboard on Z axis */
-  def BILLBOARDMODE_Z: Double = js.native
+  @JSImport("babylonjs/Legacy/legacy", "AbstractMesh")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Culling strategy : Bounding Sphere Only.
     *  This is an exclusion test. It's faster than the standard strategy because the bounding box is not tested.
@@ -48,6 +31,8 @@ object AbstractMesh extends js.Object {
     *  Test : is the bounding sphere outside the frustum ?
     *  If not, then the cullable object is in the frustum.
     */
+  @JSImport("babylonjs/Legacy/legacy", "AbstractMesh.CULLINGSTRATEGY_BOUNDINGSPHERE_ONLY")
+  @js.native
   val CULLINGSTRATEGY_BOUNDINGSPHERE_ONLY: Double = js.native
   
   /** Culling strategy : Optimistic Inclusion.
@@ -59,6 +44,8 @@ object AbstractMesh extends js.Object {
     *  Is the cullable object bounding sphere center in the frustum ?
     *  If not, apply the default culling strategy.
     */
+  @JSImport("babylonjs/Legacy/legacy", "AbstractMesh.CULLINGSTRATEGY_OPTIMISTIC_INCLUSION")
+  @js.native
   val CULLINGSTRATEGY_OPTIMISTIC_INCLUSION: Double = js.native
   
   /** Culling strategy : Optimistic Inclusion then Bounding Sphere Only.
@@ -70,6 +57,8 @@ object AbstractMesh extends js.Object {
     *  Is the cullable object bounding sphere center in the frustum ?
     *  If not, apply the Bounding Sphere Only strategy. No Bounding Box is tested here.
     */
+  @JSImport("babylonjs/Legacy/legacy", "AbstractMesh.CULLINGSTRATEGY_OPTIMISTIC_INCLUSION_THEN_BSPHERE_ONLY")
+  @js.native
   val CULLINGSTRATEGY_OPTIMISTIC_INCLUSION_THEN_BSPHERE_ONLY: Double = js.native
   
   /** Default culling strategy : this is an exclusion test and it's the more accurate.
@@ -78,20 +67,42 @@ object AbstractMesh extends js.Object {
     *  If not, are the bounding box vertices outside the frustum ?
     *  It not, then the cullable object is in the frustum.
     */
+  @JSImport("babylonjs/Legacy/legacy", "AbstractMesh.CULLINGSTRATEGY_STANDARD")
+  @js.native
   val CULLINGSTRATEGY_STANDARD: Double = js.native
   
   /** Use an accurante occlusion algorithm */
-  var OCCLUSION_ALGORITHM_TYPE_ACCURATE: Double = js.native
+  @JSImport("babylonjs/Legacy/legacy", "AbstractMesh.OCCLUSION_ALGORITHM_TYPE_ACCURATE")
+  @js.native
+  def OCCLUSION_ALGORITHM_TYPE_ACCURATE: Double = js.native
+  @scala.inline
+  def OCCLUSION_ALGORITHM_TYPE_ACCURATE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_ACCURATE")(x.asInstanceOf[js.Any])
   
   /** Use a conservative occlusion algorithm */
-  var OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE: Double = js.native
+  @JSImport("babylonjs/Legacy/legacy", "AbstractMesh.OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")
+  @js.native
+  def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE: Double = js.native
+  @scala.inline
+  def OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE")(x.asInstanceOf[js.Any])
   
   /** No occlusion */
-  var OCCLUSION_TYPE_NONE: Double = js.native
+  @JSImport("babylonjs/Legacy/legacy", "AbstractMesh.OCCLUSION_TYPE_NONE")
+  @js.native
+  def OCCLUSION_TYPE_NONE: Double = js.native
+  @scala.inline
+  def OCCLUSION_TYPE_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_NONE")(x.asInstanceOf[js.Any])
   
   /** Occlusion set to optimisitic */
-  var OCCLUSION_TYPE_OPTIMISTIC: Double = js.native
+  @JSImport("babylonjs/Legacy/legacy", "AbstractMesh.OCCLUSION_TYPE_OPTIMISTIC")
+  @js.native
+  def OCCLUSION_TYPE_OPTIMISTIC: Double = js.native
+  @scala.inline
+  def OCCLUSION_TYPE_OPTIMISTIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_OPTIMISTIC")(x.asInstanceOf[js.Any])
   
   /** Occlusion set to strict */
-  var OCCLUSION_TYPE_STRICT: Double = js.native
+  @JSImport("babylonjs/Legacy/legacy", "AbstractMesh.OCCLUSION_TYPE_STRICT")
+  @js.native
+  def OCCLUSION_TYPE_STRICT: Double = js.native
+  @scala.inline
+  def OCCLUSION_TYPE_STRICT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_STRICT")(x.asInstanceOf[js.Any])
 }

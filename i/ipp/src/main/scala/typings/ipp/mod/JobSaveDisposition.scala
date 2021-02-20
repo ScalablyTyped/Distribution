@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobSaveDisposition extends js.Object {
+trait JobSaveDisposition extends StObject {
   
   var `save-disposition`: js.UndefOr[SaveDisposition] = js.native
   
@@ -20,33 +21,21 @@ object JobSaveDisposition {
   }
   
   @scala.inline
-  implicit class JobSaveDispositionOps[Self <: JobSaveDisposition] (val x: Self) extends AnyVal {
+  implicit class JobSaveDispositionMutableBuilder[Self <: JobSaveDisposition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setSave-disposition`(value: SaveDisposition): Self = StObject.set(x, "save-disposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setSave-dispositionUndefined`: Self = StObject.set(x, "save-disposition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setSave-info`(value: js.Array[SaveInfo]): Self = StObject.set(x, "save-info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSave-disposition`(value: SaveDisposition): Self = this.set("save-disposition", value.asInstanceOf[js.Any])
+    def `setSave-infoUndefined`: Self = StObject.set(x, "save-info", js.undefined)
     
     @scala.inline
-    def `deleteSave-disposition`: Self = this.set("save-disposition", js.undefined)
-    
-    @scala.inline
-    def `setSave-infoVarargs`(value: SaveInfo*): Self = this.set("save-info", js.Array(value :_*))
-    
-    @scala.inline
-    def `setSave-info`(value: js.Array[SaveInfo]): Self = this.set("save-info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteSave-info`: Self = this.set("save-info", js.undefined)
+    def `setSave-infoVarargs`(value: SaveInfo*): Self = StObject.set(x, "save-info", js.Array(value :_*))
   }
 }

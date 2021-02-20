@@ -8,6 +8,7 @@ import typings.openlayers.mod.olx.format.WriteOptions
 import typings.openlayers.mod.proj.Projection
 import typings.std.Document
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,10 +112,7 @@ class Polyline () extends TextFeature {
   def writeGeometry(geometry: Geometry): String = js.native
   def writeGeometry(geometry: Geometry, opt_options: WriteOptions): String = js.native
 }
-/* static members */
-@JSImport("openlayers", "format.Polyline")
-@js.native
-object Polyline extends js.Object {
+object Polyline {
   
   /**
     * Decode a list of n-dimensional points from an encoded string
@@ -127,7 +125,12 @@ object Polyline extends js.Object {
     * @return A list of n-dimensional points.
     * @api
     */
+  /* static member */
+  @JSImport("openlayers", "format.Polyline.decodeDeltas")
+  @js.native
   def decodeDeltas(encoded: String, stride: Double): js.Array[Double] = js.native
+  @JSImport("openlayers", "format.Polyline.decodeDeltas")
+  @js.native
   def decodeDeltas(encoded: String, stride: Double, opt_factor: Double): js.Array[Double] = js.native
   
   /**
@@ -139,7 +142,12 @@ object Polyline extends js.Object {
     * @return A list of floating point numbers.
     * @api
     */
+  /* static member */
+  @JSImport("openlayers", "format.Polyline.decodeFloats")
+  @js.native
   def decodeFloats(encoded: String): js.Array[Double] = js.native
+  @JSImport("openlayers", "format.Polyline.decodeFloats")
+  @js.native
   def decodeFloats(encoded: String, opt_factor: Double): js.Array[Double] = js.native
   
   /**
@@ -155,7 +163,12 @@ object Polyline extends js.Object {
     * @return The encoded string.
     * @api
     */
+  /* static member */
+  @JSImport("openlayers", "format.Polyline.encodeDeltas")
+  @js.native
   def encodeDeltas(numbers: js.Array[Double], stride: Double): String = js.native
+  @JSImport("openlayers", "format.Polyline.encodeDeltas")
+  @js.native
   def encodeDeltas(numbers: js.Array[Double], stride: Double, opt_factor: Double): String = js.native
   
   /**
@@ -170,6 +183,11 @@ object Polyline extends js.Object {
     * @return The encoded string.
     * @api
     */
+  /* static member */
+  @JSImport("openlayers", "format.Polyline.encodeFloats")
+  @js.native
   def encodeFloats(numbers: js.Array[Double]): String = js.native
+  @JSImport("openlayers", "format.Polyline.encodeFloats")
+  @js.native
   def encodeFloats(numbers: js.Array[Double], opt_factor: Double): String = js.native
 }

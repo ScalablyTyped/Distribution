@@ -5,6 +5,7 @@ import typings.apolloProtobufjs.mod.IConversionOptions
 import typings.apolloProtobufjs.mod.Reader
 import typings.apolloProtobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,16 +30,18 @@ class Report () extends IReport {
   var tracesPerQuery_Report: StringDictionary[ITracesAndStats] = js.native
 }
 /* static members */
-@JSImport("apollo-reporting-protobuf/dist/protobuf", "Report")
-@js.native
-object Report extends js.Object {
+object Report {
   
   /**
     * Creates a new Report instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Report instance
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.create")
+  @js.native
   def create(): Report = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.create")
+  @js.native
   def create(properties: IReport): Report = js.native
   
   /**
@@ -49,9 +52,17 @@ object Report extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.decode")
+  @js.native
   def decode(reader: Reader): Report = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.decode")
+  @js.native
   def decode(reader: Reader, length: Double): Report = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.decode")
+  @js.native
   def decode(reader: Uint8Array): Report = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): Report = js.native
   
   /**
@@ -61,7 +72,11 @@ object Report extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): Report = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): Report = js.native
   
   /**
@@ -70,7 +85,11 @@ object Report extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.encode")
+  @js.native
   def encode(message: IReport): Writer = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.encode")
+  @js.native
   def encode(message: IReport, writer: Writer): Writer = js.native
   
   /**
@@ -79,7 +98,11 @@ object Report extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IReport): Writer = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IReport, writer: Writer): Writer = js.native
   
   /**
@@ -87,6 +110,8 @@ object Report extends js.Object {
     * @param object Plain object
     * @returns Report
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): Report = js.native
   
   /**
@@ -95,7 +120,11 @@ object Report extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.toObject")
+  @js.native
   def toObject(message: Report): StringDictionary[js.Any] = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.toObject")
+  @js.native
   def toObject(message: Report, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -103,5 +132,7 @@ object Report extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "Report.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

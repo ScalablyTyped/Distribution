@@ -3,23 +3,39 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
 import typings.officeUiFabricReact.anon.PartialIAnnouncedProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Announced", JSImport.Namespace)
-@js.native
-object libAnnouncedMod extends js.Object {
+object libAnnouncedMod {
   
+  @JSImport("office-ui-fabric-react/lib/Announced", "Announced")
+  @js.native
   val Announced: FunctionComponent[IAnnouncedProps] = js.native
   
+  @JSImport("office-ui-fabric-react/lib/Announced", "AnnouncedBase")
   @js.native
-  class AnnouncedBase ()
-    extends typings.officeUiFabricReact.announcedMod.AnnouncedBase
+  class AnnouncedBase protected ()
+    extends typings.officeUiFabricReact.announcedMod.AnnouncedBase {
+    def this(props: IAnnouncedProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IAnnouncedProps, context: js.Any) = this()
+  }
   /* static members */
-  @js.native
-  object AnnouncedBase extends js.Object {
+  object AnnouncedBase {
     
-    var defaultProps: PartialIAnnouncedProps = js.native
+    @JSImport("office-ui-fabric-react/lib/Announced", "AnnouncedBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/Announced", "AnnouncedBase.defaultProps")
+    @js.native
+    def defaultProps: PartialIAnnouncedProps = js.native
+    @scala.inline
+    def defaultProps_=(x: PartialIAnnouncedProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

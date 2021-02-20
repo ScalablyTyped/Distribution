@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parser results returned by {@link XCharacterClassification.parseAnyToken()} and {@link XCharacterClassification.parsePredefinedToken()} . */
 @js.native
-trait ParseResult extends js.Object {
+trait ParseResult extends StObject {
   
   /** Number of code points (not UTF-16 code units) of the parsed token, not including leading whitespace. */
   var CharLen: Double = js.native
@@ -53,42 +54,30 @@ object ParseResult {
   }
   
   @scala.inline
-  implicit class ParseResultOps[Self <: ParseResult] (val x: Self) extends AnyVal {
+  implicit class ParseResultMutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharLen(value: Double): Self = StObject.set(x, "CharLen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContFlags(value: Double): Self = StObject.set(x, "ContFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDequotedNameOrString(value: String): Self = StObject.set(x, "DequotedNameOrString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharLen(value: Double): Self = this.set("CharLen", value.asInstanceOf[js.Any])
+    def setEndPos(value: Double): Self = StObject.set(x, "EndPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContFlags(value: Double): Self = this.set("ContFlags", value.asInstanceOf[js.Any])
+    def setLeadingWhiteSpace(value: Double): Self = StObject.set(x, "LeadingWhiteSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDequotedNameOrString(value: String): Self = this.set("DequotedNameOrString", value.asInstanceOf[js.Any])
+    def setStartFlags(value: Double): Self = StObject.set(x, "StartFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPos(value: Double): Self = this.set("EndPos", value.asInstanceOf[js.Any])
+    def setTokenType(value: Double): Self = StObject.set(x, "TokenType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeadingWhiteSpace(value: Double): Self = this.set("LeadingWhiteSpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartFlags(value: Double): Self = this.set("StartFlags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokenType(value: Double): Self = this.set("TokenType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

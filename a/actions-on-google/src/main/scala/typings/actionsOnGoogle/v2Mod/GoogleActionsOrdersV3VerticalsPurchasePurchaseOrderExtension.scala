@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension extends js.Object {
+trait GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension extends StObject {
   
   /**
     * Optional: Errors because of which this order was rejected.
@@ -58,69 +59,57 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionOps[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrors(value: js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseError*): Self = this.set("errors", js.Array(value :_*))
+    def setExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseError]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setFulfillmentInfo(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo): Self = StObject.set(x, "fulfillmentInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: ApiClientObjectMap[_]): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setFulfillmentInfoUndefined: Self = StObject.set(x, "fulfillmentInfo", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setPurchaseLocationType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionPurchaseLocationType): Self = StObject.set(x, "purchaseLocationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFulfillmentInfo(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo): Self = this.set("fulfillmentInfo", value.asInstanceOf[js.Any])
+    def setPurchaseLocationTypeUndefined: Self = StObject.set(x, "purchaseLocationType", js.undefined)
     
     @scala.inline
-    def deleteFulfillmentInfo: Self = this.set("fulfillmentInfo", js.undefined)
+    def setReturnsInfo(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo): Self = StObject.set(x, "returnsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseLocationType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionPurchaseLocationType): Self = this.set("purchaseLocationType", value.asInstanceOf[js.Any])
+    def setReturnsInfoUndefined: Self = StObject.set(x, "returnsInfo", js.undefined)
     
     @scala.inline
-    def deletePurchaseLocationType: Self = this.set("purchaseLocationType", js.undefined)
+    def setStatus(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnsInfo(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo): Self = this.set("returnsInfo", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteReturnsInfo: Self = this.set("returnsInfo", js.undefined)
+    def setType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUserVisibleStatusLabel(value: String): Self = StObject.set(x, "userVisibleStatusLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUserVisibleStatusLabel(value: String): Self = this.set("userVisibleStatusLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserVisibleStatusLabel: Self = this.set("userVisibleStatusLabel", js.undefined)
+    def setUserVisibleStatusLabelUndefined: Self = StObject.set(x, "userVisibleStatusLabel", js.undefined)
   }
 }

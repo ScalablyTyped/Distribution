@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.anon.Message
   - typings.reactNative.anon.Title
 */
-trait ShareContent extends js.Object
+trait ShareContent extends StObject
 object ShareContent {
   
   @scala.inline
-  def Message(message: String): ShareContent = {
+  def Message(message: String): typings.reactNative.anon.Message = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShareContent]
+    __obj.asInstanceOf[typings.reactNative.anon.Message]
   }
   
   @scala.inline
-  def Title(url: String): ShareContent = {
+  def Title(url: String): typings.reactNative.anon.Title = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShareContent]
+    __obj.asInstanceOf[typings.reactNative.anon.Title]
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchResult extends js.Object {
+trait SearchResult extends StObject {
   
   var endOffset: SafeArray[Double] = js.native
   
@@ -43,27 +44,15 @@ object SearchResult {
   }
   
   @scala.inline
-  implicit class SearchResultOps[Self <: SearchResult] (val x: Self) extends AnyVal {
+  implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndOffset(value: SafeArray[Double]): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartOffset(value: SafeArray[Double]): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndOffset(value: SafeArray[Double]): Self = this.set("endOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartOffset(value: SafeArray[Double]): Self = this.set("startOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubRegExpressions(value: Double): Self = this.set("subRegExpressions", value.asInstanceOf[js.Any])
+    def setSubRegExpressions(value: Double): Self = StObject.set(x, "subRegExpressions", value.asInstanceOf[js.Any])
   }
 }

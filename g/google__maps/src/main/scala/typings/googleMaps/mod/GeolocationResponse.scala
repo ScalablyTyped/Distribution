@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeolocationResponse extends js.Object {
+trait GeolocationResponse extends StObject {
   
   /** The accuracy of the estimated location, in meters. This represents the radius of a circle around the given location. */
   var accuracy: Double = js.native
@@ -22,24 +23,12 @@ object GeolocationResponse {
   }
   
   @scala.inline
-  implicit class GeolocationResponseOps[Self <: GeolocationResponse] (val x: Self) extends AnyVal {
+  implicit class GeolocationResponseMutableBuilder[Self <: GeolocationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: LatLngLiteral): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

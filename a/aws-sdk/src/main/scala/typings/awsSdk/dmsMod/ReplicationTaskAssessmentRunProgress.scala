@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationTaskAssessmentRunProgress extends js.Object {
+trait ReplicationTaskAssessmentRunProgress extends StObject {
   
   /**
     * The number of individual assessments that have completed, successfully or not.
@@ -26,30 +27,18 @@ object ReplicationTaskAssessmentRunProgress {
   }
   
   @scala.inline
-  implicit class ReplicationTaskAssessmentRunProgressOps[Self <: ReplicationTaskAssessmentRunProgress] (val x: Self) extends AnyVal {
+  implicit class ReplicationTaskAssessmentRunProgressMutableBuilder[Self <: ReplicationTaskAssessmentRunProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndividualAssessmentCompletedCount(value: Integer): Self = StObject.set(x, "IndividualAssessmentCompletedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndividualAssessmentCompletedCountUndefined: Self = StObject.set(x, "IndividualAssessmentCompletedCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndividualAssessmentCount(value: Integer): Self = StObject.set(x, "IndividualAssessmentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndividualAssessmentCompletedCount(value: Integer): Self = this.set("IndividualAssessmentCompletedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndividualAssessmentCompletedCount: Self = this.set("IndividualAssessmentCompletedCount", js.undefined)
-    
-    @scala.inline
-    def setIndividualAssessmentCount(value: Integer): Self = this.set("IndividualAssessmentCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndividualAssessmentCount: Self = this.set("IndividualAssessmentCount", js.undefined)
+    def setIndividualAssessmentCountUndefined: Self = StObject.set(x, "IndividualAssessmentCount", js.undefined)
   }
 }

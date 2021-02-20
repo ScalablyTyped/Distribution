@@ -2,23 +2,30 @@ package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/filesInputStore", JSImport.Namespace)
-@js.native
-object filesInputStoreMod extends js.Object {
+object filesInputStoreMod {
   
+  @JSImport("babylonjs/Misc/filesInputStore", "FilesInputStore")
   @js.native
-  class FilesInputStore () extends js.Object
+  class FilesInputStore () extends StObject
   /* static members */
-  @js.native
-  object FilesInputStore extends js.Object {
+  object FilesInputStore {
+    
+    @JSImport("babylonjs/Misc/filesInputStore", "FilesInputStore")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * List of files ready to be loaded
       */
-    var FilesToLoad: StringDictionary[File] = js.native
+    @JSImport("babylonjs/Misc/filesInputStore", "FilesInputStore.FilesToLoad")
+    @js.native
+    def FilesToLoad: StringDictionary[File] = js.native
+    @scala.inline
+    def FilesToLoad_=(x: StringDictionary[File]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FilesToLoad")(x.asInstanceOf[js.Any])
   }
 }

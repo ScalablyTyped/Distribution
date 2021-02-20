@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThirdPartyJobData extends js.Object {
+trait ThirdPartyJobData extends StObject {
   
   /**
     * Represents information about an action configuration.
@@ -56,72 +57,60 @@ object ThirdPartyJobData {
   }
   
   @scala.inline
-  implicit class ThirdPartyJobDataOps[Self <: ThirdPartyJobData] (val x: Self) extends AnyVal {
+  implicit class ThirdPartyJobDataMutableBuilder[Self <: ThirdPartyJobData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionConfiguration(value: ActionConfiguration): Self = StObject.set(x, "actionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionConfigurationUndefined: Self = StObject.set(x, "actionConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionTypeId(value: ActionTypeId): Self = StObject.set(x, "actionTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionConfiguration(value: ActionConfiguration): Self = this.set("actionConfiguration", value.asInstanceOf[js.Any])
+    def setActionTypeIdUndefined: Self = StObject.set(x, "actionTypeId", js.undefined)
     
     @scala.inline
-    def deleteActionConfiguration: Self = this.set("actionConfiguration", js.undefined)
+    def setArtifactCredentials(value: AWSSessionCredentials): Self = StObject.set(x, "artifactCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionTypeId(value: ActionTypeId): Self = this.set("actionTypeId", value.asInstanceOf[js.Any])
+    def setArtifactCredentialsUndefined: Self = StObject.set(x, "artifactCredentials", js.undefined)
     
     @scala.inline
-    def deleteActionTypeId: Self = this.set("actionTypeId", js.undefined)
+    def setContinuationToken(value: ContinuationToken): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactCredentials(value: AWSSessionCredentials): Self = this.set("artifactCredentials", value.asInstanceOf[js.Any])
+    def setContinuationTokenUndefined: Self = StObject.set(x, "continuationToken", js.undefined)
     
     @scala.inline
-    def deleteArtifactCredentials: Self = this.set("artifactCredentials", js.undefined)
+    def setEncryptionKey(value: EncryptionKey): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationToken(value: ContinuationToken): Self = this.set("continuationToken", value.asInstanceOf[js.Any])
+    def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
     @scala.inline
-    def deleteContinuationToken: Self = this.set("continuationToken", js.undefined)
+    def setInputArtifacts(value: ArtifactList): Self = StObject.set(x, "inputArtifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionKey(value: EncryptionKey): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
+    def setInputArtifactsUndefined: Self = StObject.set(x, "inputArtifacts", js.undefined)
     
     @scala.inline
-    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+    def setInputArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "inputArtifacts", js.Array(value :_*))
     
     @scala.inline
-    def setInputArtifactsVarargs(value: Artifact*): Self = this.set("inputArtifacts", js.Array(value :_*))
+    def setOutputArtifacts(value: ArtifactList): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputArtifacts(value: ArtifactList): Self = this.set("inputArtifacts", value.asInstanceOf[js.Any])
+    def setOutputArtifactsUndefined: Self = StObject.set(x, "outputArtifacts", js.undefined)
     
     @scala.inline
-    def deleteInputArtifacts: Self = this.set("inputArtifacts", js.undefined)
+    def setOutputArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
     
     @scala.inline
-    def setOutputArtifactsVarargs(value: Artifact*): Self = this.set("outputArtifacts", js.Array(value :_*))
+    def setPipelineContext(value: PipelineContext): Self = StObject.set(x, "pipelineContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputArtifacts(value: ArtifactList): Self = this.set("outputArtifacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputArtifacts: Self = this.set("outputArtifacts", js.undefined)
-    
-    @scala.inline
-    def setPipelineContext(value: PipelineContext): Self = this.set("pipelineContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelineContext: Self = this.set("pipelineContext", js.undefined)
+    def setPipelineContextUndefined: Self = StObject.set(x, "pipelineContext", js.undefined)
   }
 }

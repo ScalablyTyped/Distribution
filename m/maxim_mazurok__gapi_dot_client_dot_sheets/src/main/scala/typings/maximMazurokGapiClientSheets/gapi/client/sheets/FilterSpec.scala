@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterSpec extends js.Object {
+trait FilterSpec extends StObject {
   
   /** The column index. */
   var columnIndex: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object FilterSpec {
   }
   
   @scala.inline
-  implicit class FilterSpecOps[Self <: FilterSpec] (val x: Self) extends AnyVal {
+  implicit class FilterSpecMutableBuilder[Self <: FilterSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setFilterCriteria(value: FilterCriteria): Self = StObject.set(x, "filterCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = this.set("dataSourceColumnReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSourceColumnReference: Self = this.set("dataSourceColumnReference", js.undefined)
-    
-    @scala.inline
-    def setFilterCriteria(value: FilterCriteria): Self = this.set("filterCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterCriteria: Self = this.set("filterCriteria", js.undefined)
+    def setFilterCriteriaUndefined: Self = StObject.set(x, "filterCriteria", js.undefined)
   }
 }

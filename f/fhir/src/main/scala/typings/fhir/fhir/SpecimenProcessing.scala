@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,63 +55,51 @@ object SpecimenProcessing {
   }
   
   @scala.inline
-  implicit class SpecimenProcessingOps[Self <: SpecimenProcessing] (val x: Self) extends AnyVal {
+  implicit class SpecimenProcessingMutableBuilder[Self <: SpecimenProcessing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditive(value: js.Array[Reference]): Self = StObject.set(x, "additive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditiveUndefined: Self = StObject.set(x, "additive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditiveVarargs(value: Reference*): Self = StObject.set(x, "additive", js.Array(value :_*))
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set_timeDateTime(value: Element): Self = this.set("_timeDateTime", value.asInstanceOf[js.Any])
+    def setProcedure(value: CodeableConcept): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_timeDateTime: Self = this.set("_timeDateTime", js.undefined)
+    def setProcedureUndefined: Self = StObject.set(x, "procedure", js.undefined)
     
     @scala.inline
-    def setAdditiveVarargs(value: Reference*): Self = this.set("additive", js.Array(value :_*))
+    def setTimeDateTime(value: dateTime): Self = StObject.set(x, "timeDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditive(value: js.Array[Reference]): Self = this.set("additive", value.asInstanceOf[js.Any])
+    def setTimeDateTimeUndefined: Self = StObject.set(x, "timeDateTime", js.undefined)
     
     @scala.inline
-    def deleteAdditive: Self = this.set("additive", js.undefined)
+    def setTimePeriod(value: Period): Self = StObject.set(x, "timePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setTimePeriodUndefined: Self = StObject.set(x, "timePeriod", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcedure(value: CodeableConcept): Self = this.set("procedure", value.asInstanceOf[js.Any])
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def deleteProcedure: Self = this.set("procedure", js.undefined)
+    def set_timeDateTime(value: Element): Self = StObject.set(x, "_timeDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeDateTime(value: dateTime): Self = this.set("timeDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeDateTime: Self = this.set("timeDateTime", js.undefined)
-    
-    @scala.inline
-    def setTimePeriod(value: Period): Self = this.set("timePeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimePeriod: Self = this.set("timePeriod", js.undefined)
+    def set_timeDateTimeUndefined: Self = StObject.set(x, "_timeDateTime", js.undefined)
   }
 }

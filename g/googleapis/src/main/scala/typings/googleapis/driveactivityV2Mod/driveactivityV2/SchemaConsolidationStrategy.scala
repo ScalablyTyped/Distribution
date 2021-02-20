@@ -1,5 +1,6 @@
 package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * defines the rules for which activities are related.
   */
 @js.native
-trait SchemaConsolidationStrategy extends js.Object {
+trait SchemaConsolidationStrategy extends StObject {
   
   /**
     * The individual activities are consolidated using the legacy strategy.
@@ -33,30 +34,18 @@ object SchemaConsolidationStrategy {
   }
   
   @scala.inline
-  implicit class SchemaConsolidationStrategyOps[Self <: SchemaConsolidationStrategy] (val x: Self) extends AnyVal {
+  implicit class SchemaConsolidationStrategyMutableBuilder[Self <: SchemaConsolidationStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLegacy(value: SchemaLegacy): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNone(value: SchemaNoConsolidation): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegacy(value: SchemaLegacy): Self = this.set("legacy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLegacy: Self = this.set("legacy", js.undefined)
-    
-    @scala.inline
-    def setNone(value: SchemaNoConsolidation): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNone: Self = this.set("none", js.undefined)
+    def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrt.Windows.ApplicationModel.DataTransfer
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDataRequest extends js.Object {
+trait IDataRequest extends StObject {
   
   var data: DataPackage = js.native
   
@@ -30,30 +31,18 @@ object IDataRequest {
   }
   
   @scala.inline
-  implicit class IDataRequestOps[Self <: IDataRequest] (val x: Self) extends AnyVal {
+  implicit class IDataRequestMutableBuilder[Self <: IDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: DataPackage): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailWithDisplayText(value: String => Unit): Self = StObject.set(x, "failWithDisplayText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setData(value: DataPackage): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeadline(value: Date): Self = this.set("deadline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFailWithDisplayText(value: String => Unit): Self = this.set("failWithDisplayText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDeferral(value: () => DataRequestDeferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
+    def setGetDeferral(value: () => DataRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

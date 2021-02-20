@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ProcessingFee")
 @js.native
-class ProcessingFee () extends js.Object {
+class ProcessingFee () extends StObject {
   
   /**
     * The fee amount assessed or adjusted by Square. May be negative.

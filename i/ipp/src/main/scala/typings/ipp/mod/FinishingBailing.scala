@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinishingBailing extends js.Object {
+trait FinishingBailing extends StObject {
   
   var `baling-type`: js.UndefOr[BalingType] = js.native
   
@@ -20,30 +21,18 @@ object FinishingBailing {
   }
   
   @scala.inline
-  implicit class FinishingBailingOps[Self <: FinishingBailing] (val x: Self) extends AnyVal {
+  implicit class FinishingBailingMutableBuilder[Self <: FinishingBailing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setBaling-type`(value: BalingType): Self = StObject.set(x, "baling-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setBaling-typeUndefined`: Self = StObject.set(x, "baling-type", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setBaling-when`(value: BalingWhen): Self = StObject.set(x, "baling-when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBaling-type`(value: BalingType): Self = this.set("baling-type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteBaling-type`: Self = this.set("baling-type", js.undefined)
-    
-    @scala.inline
-    def `setBaling-when`(value: BalingWhen): Self = this.set("baling-when", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteBaling-when`: Self = this.set("baling-when", js.undefined)
+    def `setBaling-whenUndefined`: Self = StObject.set(x, "baling-when", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelInfo extends js.Object {
+trait ChannelInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the signaling channel.
@@ -51,60 +52,48 @@ object ChannelInfo {
   }
   
   @scala.inline
-  implicit class ChannelInfoOps[Self <: ChannelInfo] (val x: Self) extends AnyVal {
+  implicit class ChannelInfoMutableBuilder[Self <: ChannelInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelARNUndefined: Self = StObject.set(x, "ChannelARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelName(value: ChannelName): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelARN(value: ResourceARN): Self = this.set("ChannelARN", value.asInstanceOf[js.Any])
+    def setChannelNameUndefined: Self = StObject.set(x, "ChannelName", js.undefined)
     
     @scala.inline
-    def deleteChannelARN: Self = this.set("ChannelARN", js.undefined)
+    def setChannelStatus(value: Status): Self = StObject.set(x, "ChannelStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelName(value: ChannelName): Self = this.set("ChannelName", value.asInstanceOf[js.Any])
+    def setChannelStatusUndefined: Self = StObject.set(x, "ChannelStatus", js.undefined)
     
     @scala.inline
-    def deleteChannelName: Self = this.set("ChannelName", js.undefined)
+    def setChannelType(value: ChannelType): Self = StObject.set(x, "ChannelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelStatus(value: Status): Self = this.set("ChannelStatus", value.asInstanceOf[js.Any])
+    def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
     
     @scala.inline
-    def deleteChannelStatus: Self = this.set("ChannelStatus", js.undefined)
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelType(value: ChannelType): Self = this.set("ChannelType", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteChannelType: Self = this.set("ChannelType", js.undefined)
+    def setSingleMasterConfiguration(value: SingleMasterConfiguration): Self = StObject.set(x, "SingleMasterConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setSingleMasterConfigurationUndefined: Self = StObject.set(x, "SingleMasterConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleMasterConfiguration(value: SingleMasterConfiguration): Self = this.set("SingleMasterConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleMasterConfiguration: Self = this.set("SingleMasterConfiguration", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Version): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

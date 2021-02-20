@@ -1,5 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Evaluation metrics for regression models.
   */
 @js.native
-trait SchemaRegressionMetrics extends js.Object {
+trait SchemaRegressionMetrics extends StObject {
   
   /**
     * Mean absolute error.
@@ -44,48 +45,36 @@ object SchemaRegressionMetrics {
   }
   
   @scala.inline
-  implicit class SchemaRegressionMetricsOps[Self <: SchemaRegressionMetrics] (val x: Self) extends AnyVal {
+  implicit class SchemaRegressionMetricsMutableBuilder[Self <: SchemaRegressionMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMeanAbsoluteError(value: Double): Self = StObject.set(x, "meanAbsoluteError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeanAbsoluteErrorUndefined: Self = StObject.set(x, "meanAbsoluteError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeanSquaredError(value: Double): Self = StObject.set(x, "meanSquaredError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeanAbsoluteError(value: Double): Self = this.set("meanAbsoluteError", value.asInstanceOf[js.Any])
+    def setMeanSquaredErrorUndefined: Self = StObject.set(x, "meanSquaredError", js.undefined)
     
     @scala.inline
-    def deleteMeanAbsoluteError: Self = this.set("meanAbsoluteError", js.undefined)
+    def setMeanSquaredLogError(value: Double): Self = StObject.set(x, "meanSquaredLogError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeanSquaredError(value: Double): Self = this.set("meanSquaredError", value.asInstanceOf[js.Any])
+    def setMeanSquaredLogErrorUndefined: Self = StObject.set(x, "meanSquaredLogError", js.undefined)
     
     @scala.inline
-    def deleteMeanSquaredError: Self = this.set("meanSquaredError", js.undefined)
+    def setMedianAbsoluteError(value: Double): Self = StObject.set(x, "medianAbsoluteError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeanSquaredLogError(value: Double): Self = this.set("meanSquaredLogError", value.asInstanceOf[js.Any])
+    def setMedianAbsoluteErrorUndefined: Self = StObject.set(x, "medianAbsoluteError", js.undefined)
     
     @scala.inline
-    def deleteMeanSquaredLogError: Self = this.set("meanSquaredLogError", js.undefined)
+    def setRSquared(value: Double): Self = StObject.set(x, "rSquared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedianAbsoluteError(value: Double): Self = this.set("medianAbsoluteError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedianAbsoluteError: Self = this.set("medianAbsoluteError", js.undefined)
-    
-    @scala.inline
-    def setRSquared(value: Double): Self = this.set("rSquared", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRSquared: Self = this.set("rSquared", js.undefined)
+    def setRSquaredUndefined: Self = StObject.set(x, "rSquared", js.undefined)
   }
 }

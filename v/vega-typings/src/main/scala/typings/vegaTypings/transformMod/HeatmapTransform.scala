@@ -4,6 +4,7 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.heatmap
 import typings.vegaTypings.vegaTypingsStrings.independent
 import typings.vegaTypings.vegaTypingsStrings.shared
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,51 +34,39 @@ object HeatmapTransform {
   }
   
   @scala.inline
-  implicit class HeatmapTransformOps[Self <: HeatmapTransform] (val x: Self) extends AnyVal {
+  implicit class HeatmapTransformMutableBuilder[Self <: HeatmapTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String | TransformField): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: heatmap): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setAs(value: String | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setField(value: String | TransformField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def setColor(value: String | TransformField): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOpacity(value: Double | TransformField): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def setField(value: String | TransformField): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setResolve(value: independent | shared | SignalRef): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
     @scala.inline
-    def setOpacity(value: Double | TransformField): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
-    
-    @scala.inline
-    def setResolve(value: independent | shared | SignalRef): Self = this.set("resolve", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
+    def setType(value: heatmap): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

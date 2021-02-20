@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Action extends js.Object {
+trait Action extends StObject {
   
   /**
     * Information needed to clear the timer.
@@ -81,96 +82,84 @@ object Action {
   }
   
   @scala.inline
-  implicit class ActionOps[Self <: Action] (val x: Self) extends AnyVal {
+  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearTimer(value: ClearTimerAction): Self = StObject.set(x, "clearTimer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearTimerUndefined: Self = StObject.set(x, "clearTimer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamoDB(value: DynamoDBAction): Self = StObject.set(x, "dynamoDB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearTimer(value: ClearTimerAction): Self = this.set("clearTimer", value.asInstanceOf[js.Any])
+    def setDynamoDBUndefined: Self = StObject.set(x, "dynamoDB", js.undefined)
     
     @scala.inline
-    def deleteClearTimer: Self = this.set("clearTimer", js.undefined)
+    def setDynamoDBv2(value: DynamoDBv2Action): Self = StObject.set(x, "dynamoDBv2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamoDB(value: DynamoDBAction): Self = this.set("dynamoDB", value.asInstanceOf[js.Any])
+    def setDynamoDBv2Undefined: Self = StObject.set(x, "dynamoDBv2", js.undefined)
     
     @scala.inline
-    def deleteDynamoDB: Self = this.set("dynamoDB", js.undefined)
+    def setFirehose(value: FirehoseAction): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamoDBv2(value: DynamoDBv2Action): Self = this.set("dynamoDBv2", value.asInstanceOf[js.Any])
+    def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
     
     @scala.inline
-    def deleteDynamoDBv2: Self = this.set("dynamoDBv2", js.undefined)
+    def setIotEvents(value: IotEventsAction): Self = StObject.set(x, "iotEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirehose(value: FirehoseAction): Self = this.set("firehose", value.asInstanceOf[js.Any])
+    def setIotEventsUndefined: Self = StObject.set(x, "iotEvents", js.undefined)
     
     @scala.inline
-    def deleteFirehose: Self = this.set("firehose", js.undefined)
+    def setIotSiteWise(value: IotSiteWiseAction): Self = StObject.set(x, "iotSiteWise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIotEvents(value: IotEventsAction): Self = this.set("iotEvents", value.asInstanceOf[js.Any])
+    def setIotSiteWiseUndefined: Self = StObject.set(x, "iotSiteWise", js.undefined)
     
     @scala.inline
-    def deleteIotEvents: Self = this.set("iotEvents", js.undefined)
+    def setIotTopicPublish(value: IotTopicPublishAction): Self = StObject.set(x, "iotTopicPublish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIotSiteWise(value: IotSiteWiseAction): Self = this.set("iotSiteWise", value.asInstanceOf[js.Any])
+    def setIotTopicPublishUndefined: Self = StObject.set(x, "iotTopicPublish", js.undefined)
     
     @scala.inline
-    def deleteIotSiteWise: Self = this.set("iotSiteWise", js.undefined)
+    def setLambda(value: LambdaAction): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIotTopicPublish(value: IotTopicPublishAction): Self = this.set("iotTopicPublish", value.asInstanceOf[js.Any])
+    def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
     
     @scala.inline
-    def deleteIotTopicPublish: Self = this.set("iotTopicPublish", js.undefined)
+    def setResetTimer(value: ResetTimerAction): Self = StObject.set(x, "resetTimer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambda(value: LambdaAction): Self = this.set("lambda", value.asInstanceOf[js.Any])
+    def setResetTimerUndefined: Self = StObject.set(x, "resetTimer", js.undefined)
     
     @scala.inline
-    def deleteLambda: Self = this.set("lambda", js.undefined)
+    def setSetTimer(value: SetTimerAction): Self = StObject.set(x, "setTimer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetTimer(value: ResetTimerAction): Self = this.set("resetTimer", value.asInstanceOf[js.Any])
+    def setSetTimerUndefined: Self = StObject.set(x, "setTimer", js.undefined)
     
     @scala.inline
-    def deleteResetTimer: Self = this.set("resetTimer", js.undefined)
+    def setSetVariable(value: SetVariableAction): Self = StObject.set(x, "setVariable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTimer(value: SetTimerAction): Self = this.set("setTimer", value.asInstanceOf[js.Any])
+    def setSetVariableUndefined: Self = StObject.set(x, "setVariable", js.undefined)
     
     @scala.inline
-    def deleteSetTimer: Self = this.set("setTimer", js.undefined)
+    def setSns(value: SNSTopicPublishAction): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetVariable(value: SetVariableAction): Self = this.set("setVariable", value.asInstanceOf[js.Any])
+    def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
     
     @scala.inline
-    def deleteSetVariable: Self = this.set("setVariable", js.undefined)
+    def setSqs(value: SqsAction): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSns(value: SNSTopicPublishAction): Self = this.set("sns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSns: Self = this.set("sns", js.undefined)
-    
-    @scala.inline
-    def setSqs(value: SqsAction): Self = this.set("sqs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqs: Self = this.set("sqs", js.undefined)
+    def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
   }
 }

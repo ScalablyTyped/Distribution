@@ -1,11 +1,12 @@
 package typings.codemirror.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bias extends js.Object {
+trait Bias extends StObject {
   
   var bias: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object Bias {
   }
   
   @scala.inline
-  implicit class BiasOps[Self <: Bias] (val x: Self) extends AnyVal {
+  implicit class BiasMutableBuilder[Self <: Bias] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBias(value: Double): Self = this.set("bias", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteBias: Self = this.set("bias", js.undefined)
+    def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
-    
-    @scala.inline
-    def setScroll(value: Boolean): Self = this.set("scroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScroll: Self = this.set("scroll", js.undefined)
+    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
   }
 }

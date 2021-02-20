@@ -2,12 +2,13 @@ package typings.tensorflowTfjsCore.anon
 
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mean extends js.Object {
+trait Mean extends StObject {
   
   var mean: Tensor[Rank] = js.native
   
@@ -22,24 +23,12 @@ object Mean {
   }
   
   @scala.inline
-  implicit class MeanOps[Self <: Mean] (val x: Self) extends AnyVal {
+  implicit class MeanMutableBuilder[Self <: Mean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMean(value: Tensor[Rank]): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMean(value: Tensor[Rank]): Self = this.set("mean", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariance(value: Tensor[Rank]): Self = this.set("variance", value.asInstanceOf[js.Any])
+    def setVariance(value: Tensor[Rank]): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
   }
 }

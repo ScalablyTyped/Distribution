@@ -2,12 +2,13 @@ package typings.astTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.astTypes.namedTypesMod.NamedTypes_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Builders extends js.Object {
+trait Builders extends StObject {
   
   var Type: Def = js.native
   

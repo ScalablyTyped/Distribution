@@ -4,12 +4,13 @@ import typings.slonik.slonikStrings.DELETE
 import typings.slonik.slonikStrings.INSERT
 import typings.slonik.slonikStrings.SELECT
 import typings.slonik.slonikStrings.UPDATE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryResultType[T] extends js.Object {
+trait QueryResultType[T] extends StObject {
   
   var command: DELETE | INSERT | SELECT | UPDATE = js.native
   
@@ -41,51 +42,39 @@ object QueryResultType {
   }
   
   @scala.inline
-  implicit class QueryResultTypeOps[Self <: QueryResultType[_], T] (val x: Self with QueryResultType[T]) extends AnyVal {
+  implicit class QueryResultTypeMutableBuilder[Self <: QueryResultType[_], T] (val x: Self with QueryResultType[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: DELETE | INSERT | SELECT | UPDATE): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFields(value: js.Array[FieldType]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldsVarargs(value: FieldType*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setCommand(value: DELETE | INSERT | SELECT | UPDATE): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setNotices(value: js.Array[NoticeType]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: FieldType*): Self = this.set("fields", js.Array(value :_*))
+    def setNoticesVarargs(value: NoticeType*): Self = StObject.set(x, "notices", js.Array(value :_*))
     
     @scala.inline
-    def setFields(value: js.Array[FieldType]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setOid(value: Double): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoticesVarargs(value: NoticeType*): Self = this.set("notices", js.Array(value :_*))
+    def setOidNull: Self = StObject.set(x, "oid", null)
     
     @scala.inline
-    def setNotices(value: js.Array[NoticeType]): Self = this.set("notices", value.asInstanceOf[js.Any])
+    def setRowAsArray(value: Boolean): Self = StObject.set(x, "rowAsArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowAsArray(value: Boolean): Self = this.set("rowAsArray", value.asInstanceOf[js.Any])
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsVarargs(value: T*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[T]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOid(value: Double): Self = this.set("oid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOidNull: Self = this.set("oid", null)
+    def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxInboundRoutingMethods Class */
 @js.native
-trait FaxInboundRoutingMethods extends js.Object {
+trait FaxInboundRoutingMethods extends StObject {
   
   def apply(vIndex: js.Any): FaxInboundRoutingMethod = js.native
   

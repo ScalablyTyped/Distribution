@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.std.HTMLElement
 import typings.std.PointerEventInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputManager extends js.Object {
+trait InputManager extends StObject {
   
   /** This is a defensive check to not allow control attachment prior to an already active one. If already attached, previous control is unattached before attaching the new one. */
   var _alreadyAttached: js.Any = js.native

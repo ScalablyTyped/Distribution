@@ -1,12 +1,13 @@
 package typings.prettier.mod
 
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FastPath[T] extends js.Object {
+trait FastPath[T] extends StObject {
   
   def call[U](callback: js.Function1[/* path */ this.type, U], names: PropertyKey*): U = js.native
   

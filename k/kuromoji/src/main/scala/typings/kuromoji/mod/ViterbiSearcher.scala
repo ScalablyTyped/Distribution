@@ -1,11 +1,12 @@
 package typings.kuromoji.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViterbiSearcher extends js.Object {
+trait ViterbiSearcher extends StObject {
   
   def backward(lattice: ViterbiLattice): js.Array[ViterbiNode] = js.native
   
@@ -29,30 +30,18 @@ object ViterbiSearcher {
   }
   
   @scala.inline
-  implicit class ViterbiSearcherOps[Self <: ViterbiSearcher] (val x: Self) extends AnyVal {
+  implicit class ViterbiSearcherMutableBuilder[Self <: ViterbiSearcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackward(value: ViterbiLattice => js.Array[ViterbiNode]): Self = StObject.set(x, "backward", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnection_costs(value: ConnectionCosts): Self = StObject.set(x, "connection_costs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForward(value: ViterbiLattice => ViterbiLattice): Self = StObject.set(x, "forward", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackward(value: ViterbiLattice => js.Array[ViterbiNode]): Self = this.set("backward", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setConnection_costs(value: ConnectionCosts): Self = this.set("connection_costs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForward(value: ViterbiLattice => ViterbiLattice): Self = this.set("forward", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSearch(value: ViterbiLattice => js.Array[ViterbiNode]): Self = this.set("search", js.Any.fromFunction1(value))
+    def setSearch(value: ViterbiLattice => js.Array[ViterbiNode]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
   }
 }

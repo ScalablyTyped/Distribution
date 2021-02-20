@@ -1,11 +1,12 @@
 package typings.storybookReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundColor extends js.Object {
+trait BackgroundColor extends StObject {
   
   var backgroundColor: String = js.native
   
@@ -38,39 +39,27 @@ object BackgroundColor {
   }
   
   @scala.inline
-  implicit class BackgroundColorOps[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+  implicit class BackgroundColorMutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonActiveTextColor(value: String): Self = StObject.set(x, "buttonActiveTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setButtonTextColor(value: String): Self = StObject.set(x, "buttonTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setHeaderTextColor(value: String): Self = StObject.set(x, "headerTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonActiveTextColor(value: String): Self = this.set("buttonActiveTextColor", value.asInstanceOf[js.Any])
+    def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonTextColor(value: String): Self = this.set("buttonTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderTextColor(value: String): Self = this.set("headerTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabelColor(value: String): Self = this.set("labelColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviewBorderColor(value: String): Self = this.set("previewBorderColor", value.asInstanceOf[js.Any])
+    def setPreviewBorderColor(value: String): Self = StObject.set(x, "previewBorderColor", value.asInstanceOf[js.Any])
   }
 }

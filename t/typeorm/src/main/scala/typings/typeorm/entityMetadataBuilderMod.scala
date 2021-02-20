@@ -9,16 +9,16 @@ import typings.typeorm.junctionEntityMetadataBuilderMod.JunctionEntityMetadataBu
 import typings.typeorm.metadataArgsStorageMod.MetadataArgsStorage
 import typings.typeorm.relationJoinColumnBuilderMod.RelationJoinColumnBuilder
 import typings.typeorm.tableMetadataArgsMod.TableMetadataArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/metadata-builder/EntityMetadataBuilder", JSImport.Namespace)
-@js.native
-object entityMetadataBuilderMod extends js.Object {
+object entityMetadataBuilderMod {
   
+  @JSImport("typeorm/browser/metadata-builder/EntityMetadataBuilder", "EntityMetadataBuilder")
   @js.native
-  class EntityMetadataBuilder protected () extends js.Object {
+  class EntityMetadataBuilder protected () extends StObject {
     def this(connection: Connection, metadataArgsStorage: MetadataArgsStorage) = this()
     
     /**

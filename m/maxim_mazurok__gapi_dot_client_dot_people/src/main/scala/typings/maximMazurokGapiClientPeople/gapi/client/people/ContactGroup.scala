@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContactGroup extends js.Object {
+trait ContactGroup extends StObject {
   
   /** The [HTTP entity tag](https://en.wikipedia.org/wiki/HTTP_ETag) of the resource. Used for web cache validation. */
   var etag: js.UndefOr[String] = js.native
@@ -46,69 +47,57 @@ object ContactGroup {
   }
   
   @scala.inline
-  implicit class ContactGroupOps[Self <: ContactGroup] (val x: Self) extends AnyVal {
+  implicit class ContactGroupMutableBuilder[Self <: ContactGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormattedName(value: String): Self = StObject.set(x, "formattedName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setFormattedNameUndefined: Self = StObject.set(x, "formattedName", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedName(value: String): Self = this.set("formattedName", value.asInstanceOf[js.Any])
+    def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
     
     @scala.inline
-    def deleteFormattedName: Self = this.set("formattedName", js.undefined)
+    def setMemberCount(value: Double): Self = StObject.set(x, "memberCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupType(value: String): Self = this.set("groupType", value.asInstanceOf[js.Any])
+    def setMemberCountUndefined: Self = StObject.set(x, "memberCount", js.undefined)
     
     @scala.inline
-    def deleteGroupType: Self = this.set("groupType", js.undefined)
+    def setMemberResourceNames(value: js.Array[String]): Self = StObject.set(x, "memberResourceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberCount(value: Double): Self = this.set("memberCount", value.asInstanceOf[js.Any])
+    def setMemberResourceNamesUndefined: Self = StObject.set(x, "memberResourceNames", js.undefined)
     
     @scala.inline
-    def deleteMemberCount: Self = this.set("memberCount", js.undefined)
+    def setMemberResourceNamesVarargs(value: String*): Self = StObject.set(x, "memberResourceNames", js.Array(value :_*))
     
     @scala.inline
-    def setMemberResourceNamesVarargs(value: String*): Self = this.set("memberResourceNames", js.Array(value :_*))
+    def setMetadata(value: ContactGroupMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberResourceNames(value: js.Array[String]): Self = this.set("memberResourceNames", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteMemberResourceNames: Self = this.set("memberResourceNames", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: ContactGroupMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

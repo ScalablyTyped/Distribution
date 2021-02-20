@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarnotificationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListNotificationRulesFilter extends js.Object {
+trait ListNotificationRulesFilter extends StObject {
   
   /**
     * The name of the attribute you want to use to filter the returned notification rules.
@@ -26,24 +27,12 @@ object ListNotificationRulesFilter {
   }
   
   @scala.inline
-  implicit class ListNotificationRulesFilterOps[Self <: ListNotificationRulesFilter] (val x: Self) extends AnyVal {
+  implicit class ListNotificationRulesFilterMutableBuilder[Self <: ListNotificationRulesFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: ListNotificationRulesFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: ListNotificationRulesFilterName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: ListNotificationRulesFilterValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: ListNotificationRulesFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

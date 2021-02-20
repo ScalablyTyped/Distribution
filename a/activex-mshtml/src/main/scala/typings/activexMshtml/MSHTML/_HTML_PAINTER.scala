@@ -16,6 +16,7 @@ import typings.activexMshtml.activexMshtmlNumbers.`512`
 import typings.activexMshtml.activexMshtmlNumbers.`65536`
 import typings.activexMshtml.activexMshtmlNumbers.`8192`
 import typings.activexMshtml.activexMshtmlNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMshtml.activexMshtmlNumbers.`256`
   - typings.activexMshtml.activexMshtmlNumbers.`2`
 */
-trait _HTML_PAINTER extends js.Object
+trait _HTML_PAINTER extends StObject
 object _HTML_PAINTER {
   
   @scala.inline

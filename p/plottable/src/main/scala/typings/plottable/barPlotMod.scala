@@ -7,15 +7,21 @@ import typings.plottable.drawersMod.ProxyDrawer
 import typings.plottable.formattersMod.DatumFormatter
 import typings.plottable.interfacesMod.AttributeToProjector
 import typings.plottable.interfacesMod.IAccessor
+import typings.plottable.plottableStrings.end
+import typings.plottable.plottableStrings.horizontal
+import typings.plottable.plottableStrings.middle
+import typings.plottable.plottableStrings.outside
+import typings.plottable.plottableStrings.start
+import typings.plottable.plottableStrings.vertical
 import typings.plottable.xyPlotMod.XYPlot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/plots/barPlot", JSImport.Namespace)
-@js.native
-object barPlotMod extends js.Object {
+object barPlotMod {
   
+  @JSImport("plottable/build/src/plots/barPlot", "Bar")
   @js.native
   /**
     * A Bar Plot draws bars growing out from a baseline to some value
@@ -228,28 +234,63 @@ object barPlotMod extends js.Object {
     /* protected */ def position(): ITransformableAccessorScaleBinding[_, Double] = js.native
   }
   /* static members */
-  @js.native
-  object Bar extends js.Object {
+  object Bar {
     
-    var _BAR_AREA_CLASS: js.Any = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "Bar")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _BAR_END_KEY: js.Any = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "Bar._BAR_AREA_CLASS")
+    @js.native
+    def _BAR_AREA_CLASS: js.Any = js.native
+    @scala.inline
+    def _BAR_AREA_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_AREA_CLASS")(x.asInstanceOf[js.Any])
     
-    var _BAR_GAPLESS_THRESHOLD_PX: Double = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "Bar._BAR_END_KEY")
+    @js.native
+    def _BAR_END_KEY: js.Any = js.native
+    @scala.inline
+    def _BAR_END_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_END_KEY")(x.asInstanceOf[js.Any])
     
-    var _BAR_THICKNESS_KEY: String = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "Bar._BAR_GAPLESS_THRESHOLD_PX")
+    @js.native
+    def _BAR_GAPLESS_THRESHOLD_PX: Double = js.native
+    @scala.inline
+    def _BAR_GAPLESS_THRESHOLD_PX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_GAPLESS_THRESHOLD_PX")(x.asInstanceOf[js.Any])
     
-    var _BAR_THICKNESS_RATIO: Double = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "Bar._BAR_THICKNESS_KEY")
+    @js.native
+    def _BAR_THICKNESS_KEY: String = js.native
+    @scala.inline
+    def _BAR_THICKNESS_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_THICKNESS_KEY")(x.asInstanceOf[js.Any])
     
-    var _LABEL_AREA_CLASS: String = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "Bar._BAR_THICKNESS_RATIO")
+    @js.native
+    def _BAR_THICKNESS_RATIO: Double = js.native
+    @scala.inline
+    def _BAR_THICKNESS_RATIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_THICKNESS_RATIO")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/plots/barPlot", "Bar._LABEL_AREA_CLASS")
+    @js.native
+    def _LABEL_AREA_CLASS: String = js.native
+    @scala.inline
+    def _LABEL_AREA_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LABEL_AREA_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * In the case of "start" or "end" LabelPositions, put the label this many px away
       * from the bar's length distance edge
       */
-    var _LABEL_MARGIN_INSIDE_BAR: Double = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "Bar._LABEL_MARGIN_INSIDE_BAR")
+    @js.native
+    def _LABEL_MARGIN_INSIDE_BAR: Double = js.native
+    @scala.inline
+    def _LABEL_MARGIN_INSIDE_BAR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LABEL_MARGIN_INSIDE_BAR")(x.asInstanceOf[js.Any])
     
-    var _SINGLE_BAR_DIMENSION_RATIO: Double = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "Bar._SINGLE_BAR_DIMENSION_RATIO")
+    @js.native
+    def _SINGLE_BAR_DIMENSION_RATIO: Double = js.native
+    @scala.inline
+    def _SINGLE_BAR_DIMENSION_RATIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SINGLE_BAR_DIMENSION_RATIO")(x.asInstanceOf[js.Any])
   }
   
   /* keyof plottable.anon.Middle */ /* Rewritten from type alias, can be one of: 
@@ -257,28 +298,54 @@ object barPlotMod extends js.Object {
     - typings.plottable.plottableStrings.end
     - typings.plottable.plottableStrings.middle
   */
-  trait BarAlignment extends js.Object
-  @js.native
-  object BarAlignment extends js.Object {
+  trait BarAlignment extends StObject
+  object BarAlignment {
     
-    var end: typings.plottable.plottableStrings.end = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "BarAlignment")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var middle: typings.plottable.plottableStrings.middle = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "BarAlignment.end")
+    @js.native
+    def end: typings.plottable.plottableStrings.end = js.native
+    @scala.inline
+    def end_=(x: end): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("end")(x.asInstanceOf[js.Any])
     
-    var start: typings.plottable.plottableStrings.start = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "BarAlignment.middle")
+    @js.native
+    def middle: typings.plottable.plottableStrings.middle = js.native
+    @scala.inline
+    def middle_=(x: middle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("middle")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/plots/barPlot", "BarAlignment.start")
+    @js.native
+    def start: typings.plottable.plottableStrings.start = js.native
+    @scala.inline
+    def start_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
   }
   
   /* keyof plottable.anon.Horizontal */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.vertical
     - typings.plottable.plottableStrings.horizontal
   */
-  trait BarOrientation extends js.Object
-  @js.native
-  object BarOrientation extends js.Object {
+  trait BarOrientation extends StObject
+  object BarOrientation {
     
-    var horizontal: typings.plottable.plottableStrings.horizontal = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "BarOrientation")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var vertical: typings.plottable.plottableStrings.vertical = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "BarOrientation.horizontal")
+    @js.native
+    def horizontal: typings.plottable.plottableStrings.horizontal = js.native
+    @scala.inline
+    def horizontal_=(x: horizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("horizontal")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/plots/barPlot", "BarOrientation.vertical")
+    @js.native
+    def vertical: typings.plottable.plottableStrings.vertical = js.native
+    @scala.inline
+    def vertical_=(x: vertical): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vertical")(x.asInstanceOf[js.Any])
   }
   
   /* keyof plottable.anon.End */ /* Rewritten from type alias, can be one of: 
@@ -287,16 +354,35 @@ object barPlotMod extends js.Object {
     - typings.plottable.plottableStrings.middle
     - typings.plottable.plottableStrings.outside
   */
-  trait LabelsPosition extends js.Object
-  @js.native
-  object LabelsPosition extends js.Object {
+  trait LabelsPosition extends StObject
+  object LabelsPosition {
     
-    var end: typings.plottable.plottableStrings.end = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "LabelsPosition")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var middle: typings.plottable.plottableStrings.middle = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "LabelsPosition.end")
+    @js.native
+    def end: typings.plottable.plottableStrings.end = js.native
+    @scala.inline
+    def end_=(x: end): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("end")(x.asInstanceOf[js.Any])
     
-    var outside: typings.plottable.plottableStrings.outside = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "LabelsPosition.middle")
+    @js.native
+    def middle: typings.plottable.plottableStrings.middle = js.native
+    @scala.inline
+    def middle_=(x: middle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("middle")(x.asInstanceOf[js.Any])
     
-    var start: typings.plottable.plottableStrings.start = js.native
+    @JSImport("plottable/build/src/plots/barPlot", "LabelsPosition.outside")
+    @js.native
+    def outside: typings.plottable.plottableStrings.outside = js.native
+    @scala.inline
+    def outside_=(x: outside): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outside")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/plots/barPlot", "LabelsPosition.start")
+    @js.native
+    def start: typings.plottable.plottableStrings.start = js.native
+    @scala.inline
+    def start_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
   }
 }

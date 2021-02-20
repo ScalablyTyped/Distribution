@@ -1,5 +1,6 @@
 package typings.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Object3D ()
   extends typings.three.object3DMod.Object3D
 /* static members */
-@JSImport("three", "Object3D")
-@js.native
-object Object3D extends js.Object {
+object Object3D {
   
-  var DefaultMatrixAutoUpdate: Boolean = js.native
+  @JSImport("three", "Object3D")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var DefaultUp: typings.three.vector3Mod.Vector3 = js.native
+  @JSImport("three", "Object3D.DefaultMatrixAutoUpdate")
+  @js.native
+  def DefaultMatrixAutoUpdate: Boolean = js.native
+  @scala.inline
+  def DefaultMatrixAutoUpdate_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultMatrixAutoUpdate")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "Object3D.DefaultUp")
+  @js.native
+  def DefaultUp: typings.three.vector3Mod.Vector3 = js.native
+  @scala.inline
+  def DefaultUp_=(x: typings.three.vector3Mod.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultUp")(x.asInstanceOf[js.Any])
 }

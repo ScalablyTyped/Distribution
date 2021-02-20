@@ -1,12 +1,13 @@
 package typings.std
 
 import typings.std.Intl.NumberFormatOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Number extends js.Object {
+trait Number extends StObject {
   
   /**
     * Returns a string containing a number represented in exponential notation.

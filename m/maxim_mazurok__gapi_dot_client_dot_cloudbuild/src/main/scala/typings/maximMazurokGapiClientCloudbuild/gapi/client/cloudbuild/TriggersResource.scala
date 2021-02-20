@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientCloudbuild.anon.TriggerId
 import typings.maximMazurokGapiClientCloudbuild.anon.UploadType
 import typings.maximMazurokGapiClientCloudbuild.anon.Uploadprotocol
 import typings.maximMazurokGapiClientCloudbuild.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TriggersResource extends js.Object {
+trait TriggersResource extends StObject {
   
   /** Creates a new `BuildTrigger`. This API is experimental. */
   def create(request: UploadType): Request[BuildTrigger] = js.native

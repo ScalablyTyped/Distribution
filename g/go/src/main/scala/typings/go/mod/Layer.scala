@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an empty Layer; you should set the .name before adding the Layer to a Diagram.
   */
-class Layer () extends js.Object {
+class Layer () extends StObject {
   
   /**Gets or sets whether the user may copy objects in this layer.*/
   var allowCopy: Boolean = js.native

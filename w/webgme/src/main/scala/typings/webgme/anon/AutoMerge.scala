@@ -3,12 +3,13 @@ package typings.webgme.anon
 import typings.webgme.webgmeStrings.ZSSHA
 import typings.webgme.webgmeStrings.plainSHA1
 import typings.webgme.webgmeStrings.rand160Bits
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoMerge extends js.Object {
+trait AutoMerge extends StObject {
   
   /**
     * (N.B. Experimental feature) 
@@ -117,54 +118,42 @@ object AutoMerge {
   }
   
   @scala.inline
-  implicit class AutoMergeOps[Self <: AutoMerge] (val x: Self) extends AnyVal {
+  implicit class AutoMergeMutableBuilder[Self <: AutoMerge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoMerge(value: Enable): Self = StObject.set(x, "autoMerge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadcastProjectEvents(value: Boolean): Self = StObject.set(x, "broadcastProjectEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCache(value: Double): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMerge(value: Enable): Self = this.set("autoMerge", value.asInstanceOf[js.Any])
+    def setClientCache(value: Double): Self = StObject.set(x, "clientCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcastProjectEvents(value: Boolean): Self = this.set("broadcastProjectEvents", value.asInstanceOf[js.Any])
+    def setDatabase(value: Type): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: Double): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setDisableHashChecks(value: Boolean): Self = StObject.set(x, "disableHashChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCache(value: Double): Self = this.set("clientCache", value.asInstanceOf[js.Any])
+    def setKeyType(value: plainSHA1 | rand160Bits | ZSSHA): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabase(value: Type): Self = this.set("database", value.asInstanceOf[js.Any])
+    def setLoadBucketSize(value: Double): Self = StObject.set(x, "loadBucketSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableHashChecks(value: Boolean): Self = this.set("disableHashChecks", value.asInstanceOf[js.Any])
+    def setLoadBucketTimer(value: Double): Self = StObject.set(x, "loadBucketTimer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyType(value: plainSHA1 | rand160Bits | ZSSHA): Self = this.set("keyType", value.asInstanceOf[js.Any])
+    def setMaxEmittedCoreObjects(value: Double): Self = StObject.set(x, "maxEmittedCoreObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBucketSize(value: Double): Self = this.set("loadBucketSize", value.asInstanceOf[js.Any])
+    def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBucketTimer(value: Double): Self = this.set("loadBucketTimer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxEmittedCoreObjects(value: Double): Self = this.set("maxEmittedCoreObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: String): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequireHashesToMatch(value: Boolean): Self = this.set("requireHashesToMatch", value.asInstanceOf[js.Any])
+    def setRequireHashesToMatch(value: Boolean): Self = StObject.set(x, "requireHashesToMatch", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for Trusted App Ids Resource object in Directory API.
   */
 @js.native
-trait SchemaTrustedAppId extends js.Object {
+trait SchemaTrustedAppId extends StObject {
   
   /**
     * Android package name.
@@ -41,48 +42,36 @@ object SchemaTrustedAppId {
   }
   
   @scala.inline
-  implicit class SchemaTrustedAppIdOps[Self <: SchemaTrustedAppId] (val x: Self) extends AnyVal {
+  implicit class SchemaTrustedAppIdMutableBuilder[Self <: SchemaTrustedAppId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidPackageNameUndefined: Self = StObject.set(x, "androidPackageName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateHashSHA1(value: String): Self = StObject.set(x, "certificateHashSHA1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidPackageName(value: String): Self = this.set("androidPackageName", value.asInstanceOf[js.Any])
+    def setCertificateHashSHA1Undefined: Self = StObject.set(x, "certificateHashSHA1", js.undefined)
     
     @scala.inline
-    def deleteAndroidPackageName: Self = this.set("androidPackageName", js.undefined)
+    def setCertificateHashSHA256(value: String): Self = StObject.set(x, "certificateHashSHA256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateHashSHA1(value: String): Self = this.set("certificateHashSHA1", value.asInstanceOf[js.Any])
+    def setCertificateHashSHA256Undefined: Self = StObject.set(x, "certificateHashSHA256", js.undefined)
     
     @scala.inline
-    def deleteCertificateHashSHA1: Self = this.set("certificateHashSHA1", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateHashSHA256(value: String): Self = this.set("certificateHashSHA256", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteCertificateHashSHA256: Self = this.set("certificateHashSHA256", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

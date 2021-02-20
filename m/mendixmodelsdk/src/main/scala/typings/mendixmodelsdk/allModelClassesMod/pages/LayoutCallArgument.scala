@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,16 +25,20 @@ class LayoutCallArgument protected ()
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument")
-@js.native
-object LayoutCallArgument extends js.Object {
+object LayoutCallArgument {
+  
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new LayoutCallArgument instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument.create")
+  @js.native
   def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument = js.native
   
   /**
@@ -41,9 +46,22 @@ object LayoutCallArgument extends js.Object {
     * The new LayoutCallArgument will be automatically stored in the 'arguments' property
     * of the parent LayoutCall element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument.createIn")
+  @js.native
   def createIn(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCall): typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

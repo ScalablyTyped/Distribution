@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BccEmailAddress extends js.Object {
+trait BccEmailAddress extends StObject {
   
   /**
     * Only users with canManageAccount setting can use this option. An array of up to 5 email addresses the envelope is sent to as a BCC email.
@@ -32,30 +33,18 @@ object BccEmailAddress {
   }
   
   @scala.inline
-  implicit class BccEmailAddressOps[Self <: BccEmailAddress] (val x: Self) extends AnyVal {
+  implicit class BccEmailAddressMutableBuilder[Self <: BccEmailAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBccEmailAddressId(value: String): Self = StObject.set(x, "bccEmailAddressId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBccEmailAddressIdUndefined: Self = StObject.set(x, "bccEmailAddressId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBccEmailAddressId(value: String): Self = this.set("bccEmailAddressId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBccEmailAddressId: Self = this.set("bccEmailAddressId", js.undefined)
-    
-    @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

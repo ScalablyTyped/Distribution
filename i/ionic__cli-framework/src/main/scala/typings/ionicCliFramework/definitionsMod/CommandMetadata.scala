@@ -1,5 +1,6 @@
 package typings.ionicCliFramework.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,45 +23,33 @@ object CommandMetadata {
   }
   
   @scala.inline
-  implicit class CommandMetadataOps[Self <: CommandMetadata[_, _], I, O] (val x: Self with (CommandMetadata[I, O])) extends AnyVal {
+  implicit class CommandMetadataMutableBuilder[Self <: CommandMetadata[_, _], I, O] (val x: Self with (CommandMetadata[I, O])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExampleCommands(value: js.Array[String]): Self = StObject.set(x, "exampleCommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExampleCommandsUndefined: Self = StObject.set(x, "exampleCommands", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value :_*))
     
     @scala.inline
-    def setExampleCommandsVarargs(value: String*): Self = this.set("exampleCommands", js.Array(value :_*))
+    def setInputs(value: js.Array[I]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExampleCommands(value: js.Array[String]): Self = this.set("exampleCommands", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def deleteExampleCommands: Self = this.set("exampleCommands", js.undefined)
+    def setInputsVarargs(value: I*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: I*): Self = this.set("inputs", js.Array(value :_*))
+    def setOptions(value: js.Array[O]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: js.Array[I]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
-    
-    @scala.inline
-    def setOptionsVarargs(value: O*): Self = this.set("options", js.Array(value :_*))
-    
-    @scala.inline
-    def setOptions(value: js.Array[O]): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsVarargs(value: O*): Self = StObject.set(x, "options", js.Array(value :_*))
   }
 }

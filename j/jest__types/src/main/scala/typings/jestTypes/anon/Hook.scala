@@ -2,6 +2,7 @@ package typings.jestTypes.anon
 
 import typings.jestTypes.circusMod.AsyncEvent
 import typings.jestTypes.jestTypesStrings.hook_start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object Hook {
   }
   
   @scala.inline
-  implicit class HookOps[Self <: Hook] (val x: Self) extends AnyVal {
+  implicit class HookMutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHook(value: typings.jestTypes.circusMod.Hook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHook(value: typings.jestTypes.circusMod.Hook): Self = this.set("hook", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: hook_start): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: hook_start): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.rollup.rollupStrings.chunk
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreRenderedChunk extends js.Object {
+trait PreRenderedChunk extends StObject {
   
   var exports: js.Array[String] = js.native
   
@@ -43,48 +44,36 @@ object PreRenderedChunk {
   }
   
   @scala.inline
-  implicit class PreRenderedChunkOps[Self <: PreRenderedChunk] (val x: Self) extends AnyVal {
+  implicit class PreRenderedChunkMutableBuilder[Self <: PreRenderedChunk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExports(value: js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacadeModuleId(value: String): Self = StObject.set(x, "facadeModuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportsVarargs(value: String*): Self = this.set("exports", js.Array(value :_*))
+    def setFacadeModuleIdNull: Self = StObject.set(x, "facadeModuleId", null)
     
     @scala.inline
-    def setExports(value: js.Array[String]): Self = this.set("exports", value.asInstanceOf[js.Any])
+    def setIsDynamicEntry(value: Boolean): Self = StObject.set(x, "isDynamicEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDynamicEntry(value: Boolean): Self = this.set("isDynamicEntry", value.asInstanceOf[js.Any])
+    def setIsEntry(value: Boolean): Self = StObject.set(x, "isEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEntry(value: Boolean): Self = this.set("isEntry", value.asInstanceOf[js.Any])
+    def setIsImplicitEntry(value: Boolean): Self = StObject.set(x, "isImplicitEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsImplicitEntry(value: Boolean): Self = this.set("isImplicitEntry", value.asInstanceOf[js.Any])
+    def setModules(value: StringDictionary[RenderedModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModules(value: StringDictionary[RenderedModule]): Self = this.set("modules", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: chunk): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFacadeModuleId(value: String): Self = this.set("facadeModuleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFacadeModuleIdNull: Self = this.set("facadeModuleId", null)
+    def setType(value: chunk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

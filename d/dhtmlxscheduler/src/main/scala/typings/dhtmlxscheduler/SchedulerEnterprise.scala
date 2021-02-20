@@ -1,11 +1,12 @@
 package typings.dhtmlxscheduler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerEnterprise extends js.Object {
+trait SchedulerEnterprise extends StObject {
   
   /**
     * Creates a new instance of Scheduler
@@ -21,21 +22,9 @@ object SchedulerEnterprise {
   }
   
   @scala.inline
-  implicit class SchedulerEnterpriseOps[Self <: SchedulerEnterprise] (val x: Self) extends AnyVal {
+  implicit class SchedulerEnterpriseMutableBuilder[Self <: SchedulerEnterprise] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetSchedulerInstance(value: () => SchedulerStatic): Self = this.set("getSchedulerInstance", js.Any.fromFunction0(value))
+    def setGetSchedulerInstance(value: () => SchedulerStatic): Self = StObject.set(x, "getSchedulerInstance", js.Any.fromFunction0(value))
   }
 }

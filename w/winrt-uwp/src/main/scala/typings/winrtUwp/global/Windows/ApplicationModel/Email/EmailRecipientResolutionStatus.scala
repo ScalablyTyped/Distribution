@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes the state of an attempt to resolve an email recipient. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailRecipientResolutionStatus")
 @js.native
-object EmailRecipientResolutionStatus extends js.Object {
+object EmailRecipientResolutionStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

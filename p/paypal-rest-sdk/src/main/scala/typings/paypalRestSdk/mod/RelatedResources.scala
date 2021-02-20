@@ -1,11 +1,12 @@
 package typings.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelatedResources extends js.Object {
+trait RelatedResources extends StObject {
   
   var authorization: js.UndefOr[AuthorizationResource] = js.native
   
@@ -26,48 +27,36 @@ object RelatedResources {
   }
   
   @scala.inline
-  implicit class RelatedResourcesOps[Self <: RelatedResources] (val x: Self) extends AnyVal {
+  implicit class RelatedResourcesMutableBuilder[Self <: RelatedResources] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorization(value: AuthorizationResource): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapture(value: CaptureResource): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorization(value: AuthorizationResource): Self = this.set("authorization", value.asInstanceOf[js.Any])
+    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
     @scala.inline
-    def deleteAuthorization: Self = this.set("authorization", js.undefined)
+    def setOrder(value: js.Any): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: CaptureResource): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteCapture: Self = this.set("capture", js.undefined)
+    def setRefund(value: RefundResource): Self = StObject.set(x, "refund", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: js.Any): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setRefundUndefined: Self = StObject.set(x, "refund", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setSale(value: SaleResource): Self = StObject.set(x, "sale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefund(value: RefundResource): Self = this.set("refund", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefund: Self = this.set("refund", js.undefined)
-    
-    @scala.inline
-    def setSale(value: SaleResource): Self = this.set("sale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSale: Self = this.set("sale", js.undefined)
+    def setSaleUndefined: Self = StObject.set(x, "sale", js.undefined)
   }
 }

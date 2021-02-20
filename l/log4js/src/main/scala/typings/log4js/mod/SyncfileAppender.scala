@@ -1,6 +1,7 @@
 package typings.log4js.mod
 
 import typings.log4js.log4jsStrings.fileSync
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,42 +33,30 @@ object SyncfileAppender {
   }
   
   @scala.inline
-  implicit class SyncfileAppenderOps[Self <: SyncfileAppender] (val x: Self) extends AnyVal {
+  implicit class SyncfileAppenderMutableBuilder[Self <: SyncfileAppender] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackups(value: Double): Self = StObject.set(x, "backups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupsUndefined: Self = StObject.set(x, "backups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: fileSync): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def setBackups(value: Double): Self = this.set("backups", value.asInstanceOf[js.Any])
+    def setMaxLogSize(value: Double | String): Self = StObject.set(x, "maxLogSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackups: Self = this.set("backups", js.undefined)
+    def setMaxLogSizeUndefined: Self = StObject.set(x, "maxLogSize", js.undefined)
     
     @scala.inline
-    def setLayout(value: Layout): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
-    
-    @scala.inline
-    def setMaxLogSize(value: Double | String): Self = this.set("maxLogSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxLogSize: Self = this.set("maxLogSize", js.undefined)
+    def setType(value: fileSync): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

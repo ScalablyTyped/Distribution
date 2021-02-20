@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateIntent` operation. */
 @js.native
-trait UpdateIntentParams extends js.Object {
+trait UpdateIntentParams extends StObject {
   
   var headers: js.UndefOr[js.Object] = js.native
   
@@ -36,57 +37,45 @@ object UpdateIntentParams {
   }
   
   @scala.inline
-  implicit class UpdateIntentParamsOps[Self <: UpdateIntentParams] (val x: Self) extends AnyVal {
+  implicit class UpdateIntentParamsMutableBuilder[Self <: UpdateIntentParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
+    def setNew_description(value: String): Self = StObject.set(x, "new_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkspace_id(value: String): Self = this.set("workspace_id", value.asInstanceOf[js.Any])
+    def setNew_descriptionUndefined: Self = StObject.set(x, "new_description", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setNew_examples(value: js.Array[Example]): Self = StObject.set(x, "new_examples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setNew_examplesUndefined: Self = StObject.set(x, "new_examples", js.undefined)
     
     @scala.inline
-    def setNew_description(value: String): Self = this.set("new_description", value.asInstanceOf[js.Any])
+    def setNew_examplesVarargs(value: Example*): Self = StObject.set(x, "new_examples", js.Array(value :_*))
     
     @scala.inline
-    def deleteNew_description: Self = this.set("new_description", js.undefined)
+    def setNew_intent(value: String): Self = StObject.set(x, "new_intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_examplesVarargs(value: Example*): Self = this.set("new_examples", js.Array(value :_*))
+    def setNew_intentUndefined: Self = StObject.set(x, "new_intent", js.undefined)
     
     @scala.inline
-    def setNew_examples(value: js.Array[Example]): Self = this.set("new_examples", value.asInstanceOf[js.Any])
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_examples: Self = this.set("new_examples", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def setNew_intent(value: String): Self = this.set("new_intent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNew_intent: Self = this.set("new_intent", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
   }
 }

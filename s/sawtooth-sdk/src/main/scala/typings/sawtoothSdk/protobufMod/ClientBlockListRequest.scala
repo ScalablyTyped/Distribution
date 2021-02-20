@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,16 +38,18 @@ class ClientBlockListRequest () extends IClientBlockListRequest {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest")
-@js.native
-object ClientBlockListRequest extends js.Object {
+object ClientBlockListRequest {
   
   /**
     * Creates a new ClientBlockListRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ClientBlockListRequest instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.create")
+  @js.native
   def create(): ClientBlockListRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.create")
+  @js.native
   def create(properties: IClientBlockListRequest): ClientBlockListRequest = js.native
   
   /**
@@ -57,9 +60,17 @@ object ClientBlockListRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decode")
+  @js.native
   def decode(reader: Reader): ClientBlockListRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decode")
+  @js.native
   def decode(reader: Reader, length: Double): ClientBlockListRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decode")
+  @js.native
   def decode(reader: Uint8Array): ClientBlockListRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): ClientBlockListRequest = js.native
   
   /**
@@ -69,7 +80,11 @@ object ClientBlockListRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): ClientBlockListRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): ClientBlockListRequest = js.native
   
   /**
@@ -78,7 +93,11 @@ object ClientBlockListRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.encode")
+  @js.native
   def encode(message: IClientBlockListRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.encode")
+  @js.native
   def encode(message: IClientBlockListRequest, writer: Writer): Writer = js.native
   
   /**
@@ -87,7 +106,11 @@ object ClientBlockListRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IClientBlockListRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IClientBlockListRequest, writer: Writer): Writer = js.native
   
   /**
@@ -95,6 +118,8 @@ object ClientBlockListRequest extends js.Object {
     * @param object Plain object
     * @returns ClientBlockListRequest
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): ClientBlockListRequest = js.native
   
   /**
@@ -103,7 +128,11 @@ object ClientBlockListRequest extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.toObject")
+  @js.native
   def toObject(message: ClientBlockListRequest): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.toObject")
+  @js.native
   def toObject(message: ClientBlockListRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -111,5 +140,7 @@ object ClientBlockListRequest extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockListRequest.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

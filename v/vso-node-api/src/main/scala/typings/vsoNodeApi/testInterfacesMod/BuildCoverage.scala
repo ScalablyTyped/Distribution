@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildCoverage extends js.Object {
+trait BuildCoverage extends StObject {
   
   var codeCoverageFileUrl: String = js.native
   
@@ -32,36 +33,24 @@ object BuildCoverage {
   }
   
   @scala.inline
-  implicit class BuildCoverageOps[Self <: BuildCoverage] (val x: Self) extends AnyVal {
+  implicit class BuildCoverageMutableBuilder[Self <: BuildCoverage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeCoverageFileUrl(value: String): Self = StObject.set(x, "codeCoverageFileUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfiguration(value: BuildConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastError(value: String): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeCoverageFileUrl(value: String): Self = this.set("codeCoverageFileUrl", value.asInstanceOf[js.Any])
+    def setModules(value: js.Array[ModuleCoverage]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: BuildConfiguration): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setModulesVarargs(value: ModuleCoverage*): Self = StObject.set(x, "modules", js.Array(value :_*))
     
     @scala.inline
-    def setLastError(value: String): Self = this.set("lastError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModulesVarargs(value: ModuleCoverage*): Self = this.set("modules", js.Array(value :_*))
-    
-    @scala.inline
-    def setModules(value: js.Array[ModuleCoverage]): Self = this.set("modules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,14 @@
 package typings.typeorm
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/error/MetadataAlreadyExistsError", JSImport.Namespace)
-@js.native
-object metadataAlreadyExistsErrorMod extends js.Object {
+object metadataAlreadyExistsErrorMod {
   
+  @JSImport("typeorm/browser/error/MetadataAlreadyExistsError", "MetadataAlreadyExistsError")
   @js.native
   class MetadataAlreadyExistsError protected () extends Error {
     def this(metadataType: String, constructor: js.Function) = this()

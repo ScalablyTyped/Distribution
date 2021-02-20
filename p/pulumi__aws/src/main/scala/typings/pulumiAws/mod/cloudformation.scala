@@ -14,20 +14,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "cloudformation")
-@js.native
-object cloudformation extends js.Object {
+object cloudformation {
   
-  def getExport(args: GetExportArgs): js.Promise[GetExportResult] = js.native
-  def getExport(args: GetExportArgs, opts: InvokeOptions): js.Promise[GetExportResult] = js.native
-  
-  def getStack(args: GetStackArgs): js.Promise[GetStackResult] = js.native
-  def getStack(args: GetStackArgs, opts: InvokeOptions): js.Promise[GetStackResult] = js.native
-  
+  @JSImport("@pulumi/aws", "cloudformation.Stack")
   @js.native
   class Stack protected ()
     extends typings.pulumiAws.cloudformationMod.Stack {
@@ -44,8 +38,7 @@ object cloudformation extends js.Object {
     def this(name: String, args: StackArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Stack extends js.Object {
+  object Stack {
     
     /**
       * Get an existing Stack resource's state with the given name, ID, and optional extra
@@ -56,18 +49,29 @@ object cloudformation extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "cloudformation.Stack.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.stackMod.Stack = js.native
+    @JSImport("@pulumi/aws", "cloudformation.Stack.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.stackMod.Stack = js.native
+    @JSImport("@pulumi/aws", "cloudformation.Stack.get")
+    @js.native
     def get(name: String, id: Input[ID], state: StackState): typings.pulumiAws.stackMod.Stack = js.native
+    @JSImport("@pulumi/aws", "cloudformation.Stack.get")
+    @js.native
     def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): typings.pulumiAws.stackMod.Stack = js.native
     
     /**
       * Returns true if the given object is an instance of Stack.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "cloudformation.Stack.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stack.Stack */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "cloudformation.StackSet")
   @js.native
   class StackSet protected ()
     extends typings.pulumiAws.cloudformationMod.StackSet {
@@ -82,8 +86,7 @@ object cloudformation extends js.Object {
     def this(name: String, args: StackSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object StackSet extends js.Object {
+  object StackSet {
     
     /**
       * Get an existing StackSet resource's state with the given name, ID, and optional extra
@@ -94,18 +97,29 @@ object cloudformation extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "cloudformation.StackSet.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.stackSetMod.StackSet = js.native
+    @JSImport("@pulumi/aws", "cloudformation.StackSet.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.stackSetMod.StackSet = js.native
+    @JSImport("@pulumi/aws", "cloudformation.StackSet.get")
+    @js.native
     def get(name: String, id: Input[ID], state: StackSetState): typings.pulumiAws.stackSetMod.StackSet = js.native
+    @JSImport("@pulumi/aws", "cloudformation.StackSet.get")
+    @js.native
     def get(name: String, id: Input[ID], state: StackSetState, opts: CustomResourceOptions): typings.pulumiAws.stackSetMod.StackSet = js.native
     
     /**
       * Returns true if the given object is an instance of StackSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "cloudformation.StackSet.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stackSet.StackSet */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "cloudformation.StackSetInstance")
   @js.native
   class StackSetInstance protected ()
     extends typings.pulumiAws.cloudformationMod.StackSetInstance {
@@ -120,8 +134,7 @@ object cloudformation extends js.Object {
     def this(name: String, args: StackSetInstanceArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object StackSetInstance extends js.Object {
+  object StackSetInstance {
     
     /**
       * Get an existing StackSetInstance resource's state with the given name, ID, and optional extra
@@ -132,15 +145,39 @@ object cloudformation extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "cloudformation.StackSetInstance.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.stackSetInstanceMod.StackSetInstance = js.native
+    @JSImport("@pulumi/aws", "cloudformation.StackSetInstance.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.stackSetInstanceMod.StackSetInstance = js.native
+    @JSImport("@pulumi/aws", "cloudformation.StackSetInstance.get")
+    @js.native
     def get(name: String, id: Input[ID], state: StackSetInstanceState): typings.pulumiAws.stackSetInstanceMod.StackSetInstance = js.native
+    @JSImport("@pulumi/aws", "cloudformation.StackSetInstance.get")
+    @js.native
     def get(name: String, id: Input[ID], state: StackSetInstanceState, opts: CustomResourceOptions): typings.pulumiAws.stackSetInstanceMod.StackSetInstance = js.native
     
     /**
       * Returns true if the given object is an instance of StackSetInstance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "cloudformation.StackSetInstance.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stackSetInstance.StackSetInstance */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws", "cloudformation.getExport")
+  @js.native
+  def getExport(args: GetExportArgs): js.Promise[GetExportResult] = js.native
+  @JSImport("@pulumi/aws", "cloudformation.getExport")
+  @js.native
+  def getExport(args: GetExportArgs, opts: InvokeOptions): js.Promise[GetExportResult] = js.native
+  
+  @JSImport("@pulumi/aws", "cloudformation.getStack")
+  @js.native
+  def getStack(args: GetStackArgs): js.Promise[GetStackResult] = js.native
+  @JSImport("@pulumi/aws", "cloudformation.getStack")
+  @js.native
+  def getStack(args: GetStackArgs, opts: InvokeOptions): js.Promise[GetStackResult] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGAnimatedTransformList extends js.Object {
+trait SVGAnimatedTransformList extends StObject {
   
   @JSName("MSHTML.SVGAnimatedTransformList_typekey")
   var MSHTMLDotSVGAnimatedTransformList_typekey: SVGAnimatedTransformList = js.native
@@ -28,27 +29,15 @@ object SVGAnimatedTransformList {
   }
   
   @scala.inline
-  implicit class SVGAnimatedTransformListOps[Self <: SVGAnimatedTransformList] (val x: Self) extends AnyVal {
+  implicit class SVGAnimatedTransformListMutableBuilder[Self <: SVGAnimatedTransformList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimVal(value: SVGTransformList): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseVal(value: SVGTransformList): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotSVGAnimatedTransformList_typekey(value: SVGAnimatedTransformList): Self = this.set("MSHTML.SVGAnimatedTransformList_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnimVal(value: SVGTransformList): Self = this.set("animVal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBaseVal(value: SVGTransformList): Self = this.set("baseVal", value.asInstanceOf[js.Any])
+    def setMSHTMLDotSVGAnimatedTransformList_typekey(value: SVGAnimatedTransformList): Self = StObject.set(x, "MSHTML.SVGAnimatedTransformList_typekey", value.asInstanceOf[js.Any])
   }
 }

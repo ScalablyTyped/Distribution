@@ -1,12 +1,13 @@
 package typings.meteor
 
 import typings.meteor.Meteor.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailFields extends js.Object {
+trait EmailFields extends StObject {
   
   var from: js.UndefOr[js.Function1[/* user */ User, String]] = js.native
   
@@ -25,42 +26,30 @@ object EmailFields {
   }
   
   @scala.inline
-  implicit class EmailFieldsOps[Self <: EmailFields] (val x: Self) extends AnyVal {
+  implicit class EmailFieldsMutableBuilder[Self <: EmailFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: /* user */ User => String): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml(value: (/* user */ User, /* url */ String) => String): Self = StObject.set(x, "html", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFrom(value: /* user */ User => String): Self = this.set("from", js.Any.fromFunction1(value))
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setSubject(value: /* user */ User => String): Self = StObject.set(x, "subject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHtml(value: (/* user */ User, /* url */ String) => String): Self = this.set("html", js.Any.fromFunction2(value))
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setText(value: (/* user */ User, /* url */ String) => String): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSubject(value: /* user */ User => String): Self = this.set("subject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setText(value: (/* user */ User, /* url */ String) => String): Self = this.set("text", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

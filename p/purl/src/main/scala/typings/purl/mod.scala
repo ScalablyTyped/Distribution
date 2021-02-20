@@ -1,27 +1,32 @@
 package typings.purl
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("purl", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Parse the current page URL
     */
+  @JSImport("purl", JSImport.Namespace)
+  @js.native
   def apply(): Url = js.native
   /**
     * Pass in a URI as a string and parse that
     *
     * @param someUrl the url to be parsed
     */
+  @JSImport("purl", JSImport.Namespace)
+  @js.native
   def apply(someUrl: String): Url = js.native
   
+  type ParameterMap = StringDictionary[String]
+  
   @js.native
-  trait Url extends js.Object {
+  trait Url extends StObject {
     
     /**
       * The .attr() method is used to return information on various parts of the URL.
@@ -52,6 +57,4 @@ object mod extends js.Object {
       */
     def segment(position: Double): String = js.native
   }
-  
-  type ParameterMap = StringDictionary[String]
 }

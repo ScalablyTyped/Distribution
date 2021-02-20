@@ -1,12 +1,13 @@
 package typings.stellarSdk
 
 import typings.std.MessageEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventSourceEventMap extends js.Object {
+trait EventSourceEventMap extends StObject {
   
   var error: Event = js.native
   
@@ -23,27 +24,15 @@ object EventSourceEventMap {
   }
   
   @scala.inline
-  implicit class EventSourceEventMapOps[Self <: EventSourceEventMap] (val x: Self) extends AnyVal {
+  implicit class EventSourceEventMapMutableBuilder[Self <: EventSourceEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage(value: MessageEvent[_]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: MessageEvent[_]): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpen(value: Event): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setOpen(value: Event): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

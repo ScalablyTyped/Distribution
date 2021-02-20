@@ -1,12 +1,13 @@
 package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IModalInstanceService extends js.Object {
+trait IModalInstanceService extends StObject {
   
   /**
     * A method that can be used to close a modal, passing a result. If `preventDefault` is called on the `modal.closing` event then the modal will remain open.

@@ -1,11 +1,12 @@
 package typings.sdpTransform.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpVer extends js.Object {
+trait IpVer extends StObject {
   
   var address: js.UndefOr[String] = js.native
   
@@ -24,39 +25,27 @@ object IpVer {
   }
   
   @scala.inline
-  implicit class IpVerOps[Self <: IpVer] (val x: Self) extends AnyVal {
+  implicit class IpVerMutableBuilder[Self <: IpVer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpVer(value: Double): Self = StObject.set(x, "ipVer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setIpVerUndefined: Self = StObject.set(x, "ipVer", js.undefined)
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setNetTypeUndefined: Self = StObject.set(x, "netType", js.undefined)
     
     @scala.inline
-    def setIpVer(value: Double): Self = this.set("ipVer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpVer: Self = this.set("ipVer", js.undefined)
-    
-    @scala.inline
-    def setNetType(value: String): Self = this.set("netType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetType: Self = this.set("netType", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

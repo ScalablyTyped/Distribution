@@ -1,6 +1,6 @@
 package typings.sharepoint.global
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,20 +10,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class JSRequest ()
   extends typings.sharepoint.JSRequest
-/* static members */
-@JSGlobal("JSRequest")
-@js.native
-object JSRequest extends js.Object {
+object JSRequest {
+  
+  @JSGlobal("JSRequest")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** initializes class.*/
+  /* static member */
+  @JSGlobal("JSRequest.EnsureSetup")
+  @js.native
   def EnsureSetup(): Unit = js.native
   
   /** Current file name (after last '/' in url).*/
-  var FileName: String = js.native
+  /* static member */
+  @JSGlobal("JSRequest.FileName")
+  @js.native
+  def FileName: String = js.native
+  @scala.inline
+  def FileName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileName")(x.asInstanceOf[js.Any])
   
   /** Current file path (before last '/' in url).*/
-  var PathName: String = js.native
+  /* static member */
+  @JSGlobal("JSRequest.PathName")
+  @js.native
+  def PathName: String = js.native
+  @scala.inline
+  def PathName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathName")(x.asInstanceOf[js.Any])
   
   /** Query string parts.*/
-  var QueryString: StringDictionary[String] = js.native
+  /* static member */
+  object QueryString
 }

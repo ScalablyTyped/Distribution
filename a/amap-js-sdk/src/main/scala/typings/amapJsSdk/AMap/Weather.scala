@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Weather extends js.Object {
+trait Weather extends StObject {
   
   /**
     * 查询四天预报天气，包括查询当天天气信息
@@ -39,28 +40,16 @@ object Weather {
   }
   
   @scala.inline
-  implicit class WeatherOps[Self <: Weather] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class WeatherMutableBuilder[Self <: Weather] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setGetForecast(
       value: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherForecastResult, Unit]) => Unit
-    ): Self = this.set("getForecast", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getForecast", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetLive(
       value: (String, js.Function2[/* errorStatus */ js.Any, /* result */ WeatherLiveResult, Unit]) => Unit
-    ): Self = this.set("getLive", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getLive", js.Any.fromFunction2(value))
   }
 }

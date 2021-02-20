@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource.
   */
 @js.native
-trait SchemaApplicationVerifyResponse extends js.Object {
+trait SchemaApplicationVerifyResponse extends StObject {
   
   /**
     * An alternate ID that was once used for the player that was issued the
@@ -37,36 +38,24 @@ object SchemaApplicationVerifyResponse {
   }
   
   @scala.inline
-  implicit class SchemaApplicationVerifyResponseOps[Self <: SchemaApplicationVerifyResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaApplicationVerifyResponseMutableBuilder[Self <: SchemaApplicationVerifyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate_player_id(value: String): Self = StObject.set(x, "alternate_player_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternate_player_idUndefined: Self = StObject.set(x, "alternate_player_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternate_player_id(value: String): Self = this.set("alternate_player_id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteAlternate_player_id: Self = this.set("alternate_player_id", js.undefined)
+    def setPlayer_id(value: String): Self = StObject.set(x, "player_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setPlayer_id(value: String): Self = this.set("player_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayer_id: Self = this.set("player_id", js.undefined)
+    def setPlayer_idUndefined: Self = StObject.set(x, "player_id", js.undefined)
   }
 }

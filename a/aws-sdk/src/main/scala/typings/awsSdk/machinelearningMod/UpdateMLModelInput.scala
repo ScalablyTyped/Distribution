@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateMLModelInput extends js.Object {
+trait UpdateMLModelInput extends StObject {
   
   /**
     * The ID assigned to the MLModel during creation.
@@ -31,33 +32,21 @@ object UpdateMLModelInput {
   }
   
   @scala.inline
-  implicit class UpdateMLModelInputOps[Self <: UpdateMLModelInput] (val x: Self) extends AnyVal {
+  implicit class UpdateMLModelInputMutableBuilder[Self <: UpdateMLModelInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMLModelName(value: EntityName): Self = StObject.set(x, "MLModelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMLModelNameUndefined: Self = StObject.set(x, "MLModelName", js.undefined)
     
     @scala.inline
-    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
+    def setScoreThreshold(value: ScoreThreshold): Self = StObject.set(x, "ScoreThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMLModelName(value: EntityName): Self = this.set("MLModelName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMLModelName: Self = this.set("MLModelName", js.undefined)
-    
-    @scala.inline
-    def setScoreThreshold(value: ScoreThreshold): Self = this.set("ScoreThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScoreThreshold: Self = this.set("ScoreThreshold", js.undefined)
+    def setScoreThresholdUndefined: Self = StObject.set(x, "ScoreThreshold", js.undefined)
   }
 }

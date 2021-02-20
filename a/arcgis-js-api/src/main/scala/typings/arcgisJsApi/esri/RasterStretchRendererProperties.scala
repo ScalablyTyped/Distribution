@@ -6,12 +6,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`percent-clip`
 import typings.arcgisJsApi.arcgisJsApiStrings.`standard-deviation`
 import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.sigmoid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RasterStretchRendererProperties extends js.Object {
+trait RasterStretchRendererProperties extends StObject {
   
   /**
     * The stretched values are mapped to this specified color ramp.
@@ -115,104 +116,92 @@ object RasterStretchRendererProperties {
   }
   
   @scala.inline
-  implicit class RasterStretchRendererPropertiesOps[Self <: RasterStretchRendererProperties] (val x: Self) extends AnyVal {
+  implicit class RasterStretchRendererPropertiesMutableBuilder[Self <: RasterStretchRendererProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorRamp(value: ColorRampProperties): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputeGamma(value: Boolean): Self = StObject.set(x, "computeGamma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorRamp(value: ColorRampProperties): Self = this.set("colorRamp", value.asInstanceOf[js.Any])
+    def setComputeGammaUndefined: Self = StObject.set(x, "computeGamma", js.undefined)
     
     @scala.inline
-    def deleteColorRamp: Self = this.set("colorRamp", js.undefined)
+    def setDynamicRangeAdjustment(value: Boolean): Self = StObject.set(x, "dynamicRangeAdjustment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeGamma(value: Boolean): Self = this.set("computeGamma", value.asInstanceOf[js.Any])
+    def setDynamicRangeAdjustmentUndefined: Self = StObject.set(x, "dynamicRangeAdjustment", js.undefined)
     
     @scala.inline
-    def deleteComputeGamma: Self = this.set("computeGamma", js.undefined)
+    def setGamma(value: js.Array[Double]): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicRangeAdjustment(value: Boolean): Self = this.set("dynamicRangeAdjustment", value.asInstanceOf[js.Any])
+    def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
     
     @scala.inline
-    def deleteDynamicRangeAdjustment: Self = this.set("dynamicRangeAdjustment", js.undefined)
+    def setGammaVarargs(value: Double*): Self = StObject.set(x, "gamma", js.Array(value :_*))
     
     @scala.inline
-    def setGammaVarargs(value: Double*): Self = this.set("gamma", js.Array(value :_*))
+    def setMaxPercent(value: Double): Self = StObject.set(x, "maxPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGamma(value: js.Array[Double]): Self = this.set("gamma", value.asInstanceOf[js.Any])
+    def setMaxPercentUndefined: Self = StObject.set(x, "maxPercent", js.undefined)
     
     @scala.inline
-    def deleteGamma: Self = this.set("gamma", js.undefined)
+    def setMinPercent(value: Double): Self = StObject.set(x, "minPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPercent(value: Double): Self = this.set("maxPercent", value.asInstanceOf[js.Any])
+    def setMinPercentUndefined: Self = StObject.set(x, "minPercent", js.undefined)
     
     @scala.inline
-    def deleteMaxPercent: Self = this.set("maxPercent", js.undefined)
+    def setNumberOfStandardDeviations(value: Double): Self = StObject.set(x, "numberOfStandardDeviations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPercent(value: Double): Self = this.set("minPercent", value.asInstanceOf[js.Any])
+    def setNumberOfStandardDeviationsUndefined: Self = StObject.set(x, "numberOfStandardDeviations", js.undefined)
     
     @scala.inline
-    def deleteMinPercent: Self = this.set("minPercent", js.undefined)
+    def setOutputMax(value: Double): Self = StObject.set(x, "outputMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfStandardDeviations(value: Double): Self = this.set("numberOfStandardDeviations", value.asInstanceOf[js.Any])
+    def setOutputMaxUndefined: Self = StObject.set(x, "outputMax", js.undefined)
     
     @scala.inline
-    def deleteNumberOfStandardDeviations: Self = this.set("numberOfStandardDeviations", js.undefined)
+    def setOutputMin(value: Double): Self = StObject.set(x, "outputMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputMax(value: Double): Self = this.set("outputMax", value.asInstanceOf[js.Any])
+    def setOutputMinUndefined: Self = StObject.set(x, "outputMin", js.undefined)
     
     @scala.inline
-    def deleteOutputMax: Self = this.set("outputMax", js.undefined)
+    def setSigmoidStrengthLevel(value: Double): Self = StObject.set(x, "sigmoidStrengthLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputMin(value: Double): Self = this.set("outputMin", value.asInstanceOf[js.Any])
+    def setSigmoidStrengthLevelUndefined: Self = StObject.set(x, "sigmoidStrengthLevel", js.undefined)
     
     @scala.inline
-    def deleteOutputMin: Self = this.set("outputMin", js.undefined)
+    def setStatistics(value: (js.Array[_ | js.Array[Double]]) | RasterStretchRendererStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigmoidStrengthLevel(value: Double): Self = this.set("sigmoidStrengthLevel", value.asInstanceOf[js.Any])
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
     @scala.inline
-    def deleteSigmoidStrengthLevel: Self = this.set("sigmoidStrengthLevel", js.undefined)
-    
-    @scala.inline
-    def setStatisticsVarargs(value: (js.Any | js.Array[Double])*): Self = this.set("statistics", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatistics(value: (js.Array[_ | js.Array[Double]]) | RasterStretchRendererStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setStatisticsVarargs(value: (js.Any | js.Array[Double])*): Self = StObject.set(x, "statistics", js.Array(value :_*))
     
     @scala.inline
     def setStretchType(
       value: none | `standard-deviation` | `histogram-equalization` | `min-max` | `percent-clip` | sigmoid
-    ): Self = this.set("stretchType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "stretchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStretchType: Self = this.set("stretchType", js.undefined)
+    def setStretchTypeUndefined: Self = StObject.set(x, "stretchType", js.undefined)
     
     @scala.inline
-    def setUseGamma(value: Boolean): Self = this.set("useGamma", value.asInstanceOf[js.Any])
+    def setUseGamma(value: Boolean): Self = StObject.set(x, "useGamma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseGamma: Self = this.set("useGamma", js.undefined)
+    def setUseGammaUndefined: Self = StObject.set(x, "useGamma", js.undefined)
   }
 }

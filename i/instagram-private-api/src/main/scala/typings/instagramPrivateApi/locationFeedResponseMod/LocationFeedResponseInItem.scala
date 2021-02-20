@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.locationFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationFeedResponseInItem extends js.Object {
+trait LocationFeedResponseInItem extends StObject {
   
   var duration_in_video_in_sec: Null = js.native
   
@@ -29,33 +30,21 @@ object LocationFeedResponseInItem {
   }
   
   @scala.inline
-  implicit class LocationFeedResponseInItemOps[Self <: LocationFeedResponseInItem] (val x: Self) extends AnyVal {
+  implicit class LocationFeedResponseInItemMutableBuilder[Self <: LocationFeedResponseInItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration_in_video_in_sec(value: Null): Self = StObject.set(x, "duration_in_video_in_sec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPosition(value: js.Array[Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPositionVarargs(value: (Double | String)*): Self = StObject.set(x, "position", js.Array(value :_*))
     
     @scala.inline
-    def setDuration_in_video_in_sec(value: Null): Self = this.set("duration_in_video_in_sec", value.asInstanceOf[js.Any])
+    def setStart_time_in_video_in_sec(value: Null): Self = StObject.set(x, "start_time_in_video_in_sec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionVarargs(value: (Double | String)*): Self = this.set("position", js.Array(value :_*))
-    
-    @scala.inline
-    def setPosition(value: js.Array[Double | String]): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_time_in_video_in_sec(value: Null): Self = this.set("start_time_in_video_in_sec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: LocationFeedResponseUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: LocationFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

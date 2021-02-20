@@ -1,11 +1,12 @@
 package typings.chui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChUIEventInterface extends js.Object {
+trait ChUIEventInterface extends StObject {
   
   var doubletap: String = js.native
   
@@ -56,57 +57,45 @@ object ChUIEventInterface {
   }
   
   @scala.inline
-  implicit class ChUIEventInterfaceOps[Self <: ChUIEventInterface] (val x: Self) extends AnyVal {
+  implicit class ChUIEventInterfaceMutableBuilder[Self <: ChUIEventInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoubletap(value: String): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventCancel(value: String): Self = StObject.set(x, "eventCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventEnd(value: String): Self = StObject.set(x, "eventEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: String): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setEventMove(value: String): Self = StObject.set(x, "eventMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventCancel(value: String): Self = this.set("eventCancel", value.asInstanceOf[js.Any])
+    def setEventStart(value: String): Self = StObject.set(x, "eventStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventEnd(value: String): Self = this.set("eventEnd", value.asInstanceOf[js.Any])
+    def setLongtap(value: String): Self = StObject.set(x, "longtap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventMove(value: String): Self = this.set("eventMove", value.asInstanceOf[js.Any])
+    def setSingletap(value: String): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventStart(value: String): Self = this.set("eventStart", value.asInstanceOf[js.Any])
+    def setSwipe(value: String): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongtap(value: String): Self = this.set("longtap", value.asInstanceOf[js.Any])
+    def setSwipedown(value: String): Self = StObject.set(x, "swipedown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: String): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setSwipeleft(value: String): Self = StObject.set(x, "swipeleft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: String): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setSwiperight(value: String): Self = StObject.set(x, "swiperight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipedown(value: String): Self = this.set("swipedown", value.asInstanceOf[js.Any])
+    def setSwipeup(value: String): Self = StObject.set(x, "swipeup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeleft(value: String): Self = this.set("swipeleft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwiperight(value: String): Self = this.set("swiperight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwipeup(value: String): Self = this.set("swipeup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTap(value: String): Self = this.set("tap", value.asInstanceOf[js.Any])
+    def setTap(value: String): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,51 +34,39 @@ object IType {
   }
   
   @scala.inline
-  implicit class ITypeOps[Self <: IType] (val x: Self) extends AnyVal {
+  implicit class ITypeMutableBuilder[Self <: IType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensions(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setFields(value: StringDictionary[js.UndefOr[IField]]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setFields(value: StringDictionary[js.UndefOr[IField]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionsVarargs(value: js.Array[Double]*): Self = this.set("extensions", js.Array(value :_*))
+    def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: js.Array[js.Array[Double]]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setOneofs(value: StringDictionary[js.UndefOr[IOneOf]]): Self = StObject.set(x, "oneofs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: Boolean): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setOneofsUndefined: Self = StObject.set(x, "oneofs", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setReserved(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneofs(value: StringDictionary[js.UndefOr[IOneOf]]): Self = this.set("oneofs", value.asInstanceOf[js.Any])
+    def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
     
     @scala.inline
-    def deleteOneofs: Self = this.set("oneofs", js.undefined)
-    
-    @scala.inline
-    def setReservedVarargs(value: js.Array[Double]*): Self = this.set("reserved", js.Array(value :_*))
-    
-    @scala.inline
-    def setReserved(value: js.Array[js.Array[Double]]): Self = this.set("reserved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReserved: Self = this.set("reserved", js.undefined)
+    def setReservedVarargs(value: js.Array[Double]*): Self = StObject.set(x, "reserved", js.Array(value :_*))
   }
 }

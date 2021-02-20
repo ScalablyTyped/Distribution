@@ -1,11 +1,12 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConstraintDefinition extends js.Object {
+trait IConstraintDefinition extends StObject {
   
   /**
     * The first possible `Body` that this constraint is attached to.
@@ -119,84 +120,72 @@ object IConstraintDefinition {
   }
   
   @scala.inline
-  implicit class IConstraintDefinitionOps[Self <: IConstraintDefinition] (val x: Self) extends AnyVal {
+  implicit class IConstraintDefinitionMutableBuilder[Self <: IConstraintDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyA(value: Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyAUndefined: Self = StObject.set(x, "bodyA", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyB(value: Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyA(value: Body): Self = this.set("bodyA", value.asInstanceOf[js.Any])
+    def setBodyBUndefined: Self = StObject.set(x, "bodyB", js.undefined)
     
     @scala.inline
-    def deleteBodyA: Self = this.set("bodyA", js.undefined)
+    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyB(value: Body): Self = this.set("bodyB", value.asInstanceOf[js.Any])
+    def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
     
     @scala.inline
-    def deleteBodyB: Self = this.set("bodyB", js.undefined)
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDamping(value: Double): Self = this.set("damping", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDamping: Self = this.set("damping", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setPointA(value: Vector): Self = StObject.set(x, "pointA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setPointAUndefined: Self = StObject.set(x, "pointA", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setPointB(value: Vector): Self = StObject.set(x, "pointB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointA(value: Vector): Self = this.set("pointA", value.asInstanceOf[js.Any])
+    def setPointBUndefined: Self = StObject.set(x, "pointB", js.undefined)
     
     @scala.inline
-    def deletePointA: Self = this.set("pointA", js.undefined)
+    def setRender(value: IConstraintRenderDefinition): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointB(value: Vector): Self = this.set("pointB", value.asInstanceOf[js.Any])
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deletePointB: Self = this.set("pointB", js.undefined)
+    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: IConstraintRenderDefinition): Self = this.set("render", value.asInstanceOf[js.Any])
+    def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStiffness(value: Double): Self = this.set("stiffness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStiffness: Self = this.set("stiffness", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

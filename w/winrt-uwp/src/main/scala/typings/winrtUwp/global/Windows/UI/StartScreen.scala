@@ -5,18 +5,18 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.UI.StartScreen.TileOptions
 import typings.winrtUwp.Windows.UI.StartScreen.TileSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides ways for apps to integrate with the Start screen, such as the creation of secondary tiles and the customization of jump lists. */
-@JSGlobal("Windows.UI.StartScreen")
-@js.native
-object StartScreen extends js.Object {
+object StartScreen {
   
   /** Specifies the color of the tile's foreground text. */
+  @JSGlobal("Windows.UI.StartScreen.ForegroundText")
   @js.native
-  object ForegroundText extends js.Object {
+  object ForegroundText extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.StartScreen.ForegroundText with Double] = js.native
@@ -27,38 +27,45 @@ object StartScreen extends js.Object {
   }
   
   /** Provides functionality for selecting the type of system-managed jump list that is used by an app, adding custom task entry points to an app's jump list, and adding custom groups to an app's jump list. A jump list consists of an optional system-provided list of items, as well as optional app-provided items. Not all device families support jump lists. */
+  @JSGlobal("Windows.UI.StartScreen.JumpList")
   @js.native
   abstract class JumpList ()
     extends typings.winrtUwp.Windows.UI.StartScreen.JumpList
-  /* static members */
-  @js.native
-  object JumpList extends js.Object {
+  object JumpList {
     
     /**
       * Gets a value that indicates whether the system supports jump lists.
       * @return A boolean value that is True if jump lists are supported. Otherwise, False.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.StartScreen.JumpList.isSupported")
+    @js.native
     def isSupported(): Boolean = js.native
     
     /**
       * Asynchronously retrieves the current jump list and its items.
       * @return When this method completes successfully, it returns the current JumpList . If the system does not support jump lists, this method returns an empty jump list and the SaveAsync method has no effect. Apps can check for this case using the isSupported method.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.StartScreen.JumpList.loadCurrentAsync")
+    @js.native
     def loadCurrentAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.UI.StartScreen.JumpList] = js.native
   }
   
   /** Provides functionality for creating and defining jump list items for an app's jump list. */
+  @JSGlobal("Windows.UI.StartScreen.JumpListItem")
   @js.native
   abstract class JumpListItem ()
     extends typings.winrtUwp.Windows.UI.StartScreen.JumpListItem
-  /* static members */
-  @js.native
-  object JumpListItem extends js.Object {
+  object JumpListItem {
     
     /**
       * Creates a jump list item that is an inert separator for a custom group within the app's jump list.
       * @return A jump list item that can be added to an app's jump list through the items property.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.StartScreen.JumpListItem.createSeparator")
+    @js.native
     def createSeparator(): typings.winrtUwp.Windows.UI.StartScreen.JumpListItem = js.native
     
     /**
@@ -67,12 +74,16 @@ object StartScreen extends js.Object {
       * @param displayName String that specifies a display name for the jump list item. If localization is desired, this string must be a ms-resource: scheme specified URI.
       * @return A jump list item with the specified parameters that can be added to an app's jump list through the items property.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.StartScreen.JumpListItem.createWithArguments")
+    @js.native
     def createWithArguments(args: String, displayName: String): typings.winrtUwp.Windows.UI.StartScreen.JumpListItem = js.native
   }
   
   /** Specifies the kind of jump list item. */
+  @JSGlobal("Windows.UI.StartScreen.JumpListItemKind")
   @js.native
-  object JumpListItemKind extends js.Object {
+  object JumpListItemKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.StartScreen.JumpListItemKind with Double] = js.native
@@ -83,8 +94,9 @@ object StartScreen extends js.Object {
   }
   
   /** Indicates the kind of system group used by an app's jump list. */
+  @JSGlobal("Windows.UI.StartScreen.JumpListSystemGroupKind")
   @js.native
-  object JumpListSystemGroupKind extends js.Object {
+  object JumpListSystemGroupKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.StartScreen.JumpListSystemGroupKind with Double] = js.native
@@ -97,6 +109,7 @@ object StartScreen extends js.Object {
   }
   
   /** Creates, enumerates, and provides information about a secondary tile. */
+  @JSGlobal("Windows.UI.StartScreen.SecondaryTile")
   @js.native
   /** Creates a SecondaryTile object. The caller must then set any mandatory properties through the object before attempting to pin, update, or delete the tile. */
   class SecondaryTile ()
@@ -152,44 +165,56 @@ object StartScreen extends js.Object {
       wideLogoReference: Uri
     ) = this()
   }
-  /* static members */
-  @js.native
-  object SecondaryTile extends js.Object {
+  object SecondaryTile {
     
     /**
       * Checks whether a specific secondary tile exists for the calling app.
       * @param tileId The unique ID string that was assigned to the tile when it was created.
       * @return True if the tile exists in the calling application; otherwise, false.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.exists")
+    @js.native
     def exists(tileId: String): Boolean = js.native
     
     /**
       * Retrieves a list of secondary tiles created for the calling app.
       * @return An enumeration object that allows you to examine the set of tiles.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.findAllAsync")
+    @js.native
     def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
     /**
       * Retrieves a list of secondary tiles created for another app in the same package as the calling app.
       * @param applicationId The Package Relative Application ID (PRAID) of the app.
       * @return An enumeration object that allows you to examine the set of tiles.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.findAllAsync")
+    @js.native
     def findAllAsync(applicationId: String): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
     
     /**
       * Retrieves a list of secondary tiles created for all of the apps in the package of the calling app.
       * @return An enumeration object that allows you to examine the set of tiles.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.findAllForPackageAsync")
+    @js.native
     def findAllForPackageAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
   }
   
   /** Contains properties through which you can get or set a secondary tile's background color, foreground text, tile images, and app name display options. The properties in this class replace these SecondaryTile properties: */
+  @JSGlobal("Windows.UI.StartScreen.SecondaryTileVisualElements")
   @js.native
   abstract class SecondaryTileVisualElements ()
     extends typings.winrtUwp.Windows.UI.StartScreen.SecondaryTileVisualElements
   
   /** Specifies options available to a secondary tile. */
+  @JSGlobal("Windows.UI.StartScreen.TileOptions")
   @js.native
-  object TileOptions extends js.Object {
+  object TileOptions extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.StartScreen.TileOptions with Double] = js.native
@@ -204,8 +229,9 @@ object StartScreen extends js.Object {
   }
   
   /** Specifies the size of tile to pin. Used by some secondary tile constructors. */
+  @JSGlobal("Windows.UI.StartScreen.TileSize")
   @js.native
-  object TileSize extends js.Object {
+  object TileSize extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.StartScreen.TileSize with Double] = js.native
@@ -228,16 +254,19 @@ object StartScreen extends js.Object {
   }
   
   /** Provides a method to delay the display of the Pin to Start flyout, as well as methods through which you can set the visual elements of the secondary tile to be presented in that flyout as well as alternate versions of the tile that can also be presented as options. */
+  @JSGlobal("Windows.UI.StartScreen.VisualElementsRequest")
   @js.native
   abstract class VisualElementsRequest ()
     extends typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequest
   
   /** A deferral object used during the creation of the Pin to Start flyout. By using this object, the app can delay the display of the flyout while it gathers the information and assets that will be shown in that flyout. */
+  @JSGlobal("Windows.UI.StartScreen.VisualElementsRequestDeferral")
   @js.native
   abstract class VisualElementsRequestDeferral ()
     extends typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequestDeferral
   
   /** Passed to the SecondaryTile.VisualElementsRequested event handler to provide the visual elements details. */
+  @JSGlobal("Windows.UI.StartScreen.VisualElementsRequestedEventArgs")
   @js.native
   abstract class VisualElementsRequestedEventArgs ()
     extends typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequestedEventArgs

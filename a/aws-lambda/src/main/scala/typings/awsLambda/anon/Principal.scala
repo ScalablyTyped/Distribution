@@ -1,12 +1,13 @@
 package typings.awsLambda.anon
 
 import typings.awsLambda.apiGatewayAuthorizerMod.PrincipalValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Principal extends js.Object {
+trait Principal extends StObject {
   
   var Principal: PrincipalValue = js.native
 }
@@ -19,24 +20,12 @@ object Principal {
   }
   
   @scala.inline
-  implicit class PrincipalOps[Self <: Principal] (val x: Self) extends AnyVal {
+  implicit class PrincipalMutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrincipal(value: PrincipalValue): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrincipalVarargs(value: String*): Self = this.set("Principal", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrincipal(value: PrincipalValue): Self = this.set("Principal", value.asInstanceOf[js.Any])
+    def setPrincipalVarargs(value: String*): Self = StObject.set(x, "Principal", js.Array(value :_*))
   }
 }

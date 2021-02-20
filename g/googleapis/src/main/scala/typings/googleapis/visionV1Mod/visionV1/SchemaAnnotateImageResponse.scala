@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response to an image annotation request.
   */
 @js.native
-trait SchemaAnnotateImageResponse extends js.Object {
+trait SchemaAnnotateImageResponse extends StObject {
   
   /**
     * If present, contextual information is needed to understand where this
@@ -95,120 +96,108 @@ object SchemaAnnotateImageResponse {
   }
   
   @scala.inline
-  implicit class SchemaAnnotateImageResponseOps[Self <: SchemaAnnotateImageResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAnnotateImageResponseMutableBuilder[Self <: SchemaAnnotateImageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: SchemaImageAnnotationContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCropHintsAnnotation(value: SchemaCropHintsAnnotation): Self = StObject.set(x, "cropHintsAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: SchemaImageAnnotationContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setCropHintsAnnotationUndefined: Self = StObject.set(x, "cropHintsAnnotation", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setError(value: SchemaStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropHintsAnnotation(value: SchemaCropHintsAnnotation): Self = this.set("cropHintsAnnotation", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteCropHintsAnnotation: Self = this.set("cropHintsAnnotation", js.undefined)
+    def setFaceAnnotations(value: js.Array[SchemaFaceAnnotation]): Self = StObject.set(x, "faceAnnotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: SchemaStatus): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFaceAnnotationsUndefined: Self = StObject.set(x, "faceAnnotations", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setFaceAnnotationsVarargs(value: SchemaFaceAnnotation*): Self = StObject.set(x, "faceAnnotations", js.Array(value :_*))
     
     @scala.inline
-    def setFaceAnnotationsVarargs(value: SchemaFaceAnnotation*): Self = this.set("faceAnnotations", js.Array(value :_*))
+    def setFullTextAnnotation(value: SchemaTextAnnotation): Self = StObject.set(x, "fullTextAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceAnnotations(value: js.Array[SchemaFaceAnnotation]): Self = this.set("faceAnnotations", value.asInstanceOf[js.Any])
+    def setFullTextAnnotationUndefined: Self = StObject.set(x, "fullTextAnnotation", js.undefined)
     
     @scala.inline
-    def deleteFaceAnnotations: Self = this.set("faceAnnotations", js.undefined)
+    def setImagePropertiesAnnotation(value: SchemaImageProperties): Self = StObject.set(x, "imagePropertiesAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullTextAnnotation(value: SchemaTextAnnotation): Self = this.set("fullTextAnnotation", value.asInstanceOf[js.Any])
+    def setImagePropertiesAnnotationUndefined: Self = StObject.set(x, "imagePropertiesAnnotation", js.undefined)
     
     @scala.inline
-    def deleteFullTextAnnotation: Self = this.set("fullTextAnnotation", js.undefined)
+    def setLabelAnnotations(value: js.Array[SchemaEntityAnnotation]): Self = StObject.set(x, "labelAnnotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePropertiesAnnotation(value: SchemaImageProperties): Self = this.set("imagePropertiesAnnotation", value.asInstanceOf[js.Any])
+    def setLabelAnnotationsUndefined: Self = StObject.set(x, "labelAnnotations", js.undefined)
     
     @scala.inline
-    def deleteImagePropertiesAnnotation: Self = this.set("imagePropertiesAnnotation", js.undefined)
+    def setLabelAnnotationsVarargs(value: SchemaEntityAnnotation*): Self = StObject.set(x, "labelAnnotations", js.Array(value :_*))
     
     @scala.inline
-    def setLabelAnnotationsVarargs(value: SchemaEntityAnnotation*): Self = this.set("labelAnnotations", js.Array(value :_*))
+    def setLandmarkAnnotations(value: js.Array[SchemaEntityAnnotation]): Self = StObject.set(x, "landmarkAnnotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAnnotations(value: js.Array[SchemaEntityAnnotation]): Self = this.set("labelAnnotations", value.asInstanceOf[js.Any])
+    def setLandmarkAnnotationsUndefined: Self = StObject.set(x, "landmarkAnnotations", js.undefined)
     
     @scala.inline
-    def deleteLabelAnnotations: Self = this.set("labelAnnotations", js.undefined)
+    def setLandmarkAnnotationsVarargs(value: SchemaEntityAnnotation*): Self = StObject.set(x, "landmarkAnnotations", js.Array(value :_*))
     
     @scala.inline
-    def setLandmarkAnnotationsVarargs(value: SchemaEntityAnnotation*): Self = this.set("landmarkAnnotations", js.Array(value :_*))
+    def setLocalizedObjectAnnotations(value: js.Array[SchemaLocalizedObjectAnnotation]): Self = StObject.set(x, "localizedObjectAnnotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandmarkAnnotations(value: js.Array[SchemaEntityAnnotation]): Self = this.set("landmarkAnnotations", value.asInstanceOf[js.Any])
+    def setLocalizedObjectAnnotationsUndefined: Self = StObject.set(x, "localizedObjectAnnotations", js.undefined)
     
     @scala.inline
-    def deleteLandmarkAnnotations: Self = this.set("landmarkAnnotations", js.undefined)
+    def setLocalizedObjectAnnotationsVarargs(value: SchemaLocalizedObjectAnnotation*): Self = StObject.set(x, "localizedObjectAnnotations", js.Array(value :_*))
     
     @scala.inline
-    def setLocalizedObjectAnnotationsVarargs(value: SchemaLocalizedObjectAnnotation*): Self = this.set("localizedObjectAnnotations", js.Array(value :_*))
+    def setLogoAnnotations(value: js.Array[SchemaEntityAnnotation]): Self = StObject.set(x, "logoAnnotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizedObjectAnnotations(value: js.Array[SchemaLocalizedObjectAnnotation]): Self = this.set("localizedObjectAnnotations", value.asInstanceOf[js.Any])
+    def setLogoAnnotationsUndefined: Self = StObject.set(x, "logoAnnotations", js.undefined)
     
     @scala.inline
-    def deleteLocalizedObjectAnnotations: Self = this.set("localizedObjectAnnotations", js.undefined)
+    def setLogoAnnotationsVarargs(value: SchemaEntityAnnotation*): Self = StObject.set(x, "logoAnnotations", js.Array(value :_*))
     
     @scala.inline
-    def setLogoAnnotationsVarargs(value: SchemaEntityAnnotation*): Self = this.set("logoAnnotations", js.Array(value :_*))
+    def setProductSearchResults(value: SchemaProductSearchResults): Self = StObject.set(x, "productSearchResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogoAnnotations(value: js.Array[SchemaEntityAnnotation]): Self = this.set("logoAnnotations", value.asInstanceOf[js.Any])
+    def setProductSearchResultsUndefined: Self = StObject.set(x, "productSearchResults", js.undefined)
     
     @scala.inline
-    def deleteLogoAnnotations: Self = this.set("logoAnnotations", js.undefined)
+    def setSafeSearchAnnotation(value: SchemaSafeSearchAnnotation): Self = StObject.set(x, "safeSearchAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductSearchResults(value: SchemaProductSearchResults): Self = this.set("productSearchResults", value.asInstanceOf[js.Any])
+    def setSafeSearchAnnotationUndefined: Self = StObject.set(x, "safeSearchAnnotation", js.undefined)
     
     @scala.inline
-    def deleteProductSearchResults: Self = this.set("productSearchResults", js.undefined)
+    def setTextAnnotations(value: js.Array[SchemaEntityAnnotation]): Self = StObject.set(x, "textAnnotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeSearchAnnotation(value: SchemaSafeSearchAnnotation): Self = this.set("safeSearchAnnotation", value.asInstanceOf[js.Any])
+    def setTextAnnotationsUndefined: Self = StObject.set(x, "textAnnotations", js.undefined)
     
     @scala.inline
-    def deleteSafeSearchAnnotation: Self = this.set("safeSearchAnnotation", js.undefined)
+    def setTextAnnotationsVarargs(value: SchemaEntityAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value :_*))
     
     @scala.inline
-    def setTextAnnotationsVarargs(value: SchemaEntityAnnotation*): Self = this.set("textAnnotations", js.Array(value :_*))
+    def setWebDetection(value: SchemaWebDetection): Self = StObject.set(x, "webDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnnotations(value: js.Array[SchemaEntityAnnotation]): Self = this.set("textAnnotations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextAnnotations: Self = this.set("textAnnotations", js.undefined)
-    
-    @scala.inline
-    def setWebDetection(value: SchemaWebDetection): Self = this.set("webDetection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebDetection: Self = this.set("webDetection", js.undefined)
+    def setWebDetectionUndefined: Self = StObject.set(x, "webDetection", js.undefined)
   }
 }

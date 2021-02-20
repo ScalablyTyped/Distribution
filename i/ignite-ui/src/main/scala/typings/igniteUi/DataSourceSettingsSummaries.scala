@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,51 +61,39 @@ object DataSourceSettingsSummaries {
   }
   
   @scala.inline
-  implicit class DataSourceSettingsSummariesOps[Self <: DataSourceSettingsSummaries] (val x: Self) extends AnyVal {
+  implicit class DataSourceSettingsSummariesMutableBuilder[Self <: DataSourceSettingsSummaries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnSettings(value: js.Array[_]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnSettingsVarargs(value: js.Any*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
     
     @scala.inline
-    def setColumnSettingsVarargs(value: js.Any*): Self = this.set("columnSettings", js.Array(value :_*))
+    def setSummariesResponseKey(value: String): Self = StObject.set(x, "summariesResponseKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSettings(value: js.Array[_]): Self = this.set("columnSettings", value.asInstanceOf[js.Any])
+    def setSummariesResponseKeyUndefined: Self = StObject.set(x, "summariesResponseKey", js.undefined)
     
     @scala.inline
-    def deleteColumnSettings: Self = this.set("columnSettings", js.undefined)
+    def setSummaryExecution(value: String): Self = StObject.set(x, "summaryExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummariesResponseKey(value: String): Self = this.set("summariesResponseKey", value.asInstanceOf[js.Any])
+    def setSummaryExecutionUndefined: Self = StObject.set(x, "summaryExecution", js.undefined)
     
     @scala.inline
-    def deleteSummariesResponseKey: Self = this.set("summariesResponseKey", js.undefined)
+    def setSummaryExprUrlKey(value: String): Self = StObject.set(x, "summaryExprUrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummaryExecution(value: String): Self = this.set("summaryExecution", value.asInstanceOf[js.Any])
+    def setSummaryExprUrlKeyUndefined: Self = StObject.set(x, "summaryExprUrlKey", js.undefined)
     
     @scala.inline
-    def deleteSummaryExecution: Self = this.set("summaryExecution", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummaryExprUrlKey(value: String): Self = this.set("summaryExprUrlKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaryExprUrlKey: Self = this.set("summaryExprUrlKey", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFindingsRequest extends js.Object {
+trait UpdateFindingsRequest extends StObject {
   
   /**
     * A collection of attributes that specify which findings you want to update.
@@ -31,33 +32,21 @@ object UpdateFindingsRequest {
   }
   
   @scala.inline
-  implicit class UpdateFindingsRequestOps[Self <: UpdateFindingsRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateFindingsRequestMutableBuilder[Self <: UpdateFindingsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: AwsSecurityFindingFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNote(value: NoteUpdate): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoteUndefined: Self = StObject.set(x, "Note", js.undefined)
     
     @scala.inline
-    def setFilters(value: AwsSecurityFindingFilters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setRecordState(value: RecordState): Self = StObject.set(x, "RecordState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: NoteUpdate): Self = this.set("Note", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNote: Self = this.set("Note", js.undefined)
-    
-    @scala.inline
-    def setRecordState(value: RecordState): Self = this.set("RecordState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordState: Self = this.set("RecordState", js.undefined)
+    def setRecordStateUndefined: Self = StObject.set(x, "RecordState", js.undefined)
   }
 }

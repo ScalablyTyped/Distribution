@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,21 +38,9 @@ object XMailMergeListener {
   }
   
   @scala.inline
-  implicit class XMailMergeListenerOps[Self <: XMailMergeListener] (val x: Self) extends AnyVal {
+  implicit class XMailMergeListenerMutableBuilder[Self <: XMailMergeListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNotifyMailMergeEvent(value: MailMergeEvent => Unit): Self = this.set("notifyMailMergeEvent", js.Any.fromFunction1(value))
+    def setNotifyMailMergeEvent(value: MailMergeEvent => Unit): Self = StObject.set(x, "notifyMailMergeEvent", js.Any.fromFunction1(value))
   }
 }

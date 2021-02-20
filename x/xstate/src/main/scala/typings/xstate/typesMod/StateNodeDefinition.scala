@@ -7,12 +7,13 @@ import typings.xstate.xstateStrings.deep
 import typings.xstate.xstateStrings.history
 import typings.xstate.xstateStrings.parallel
 import typings.xstate.xstateStrings.shallow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] extends js.Object {
+trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] extends StObject {
   
   var activities: js.Array[ActivityDefinition[TContext, TEvent]] = js.native
   
@@ -74,101 +75,89 @@ object StateNodeDefinition {
   }
   
   @scala.inline
-  implicit class StateNodeDefinitionOps[Self <: StateNodeDefinition[_, _, _], TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] (val x: Self with (StateNodeDefinition[TContext, TStateSchema, TEvent])) extends AnyVal {
+  implicit class StateNodeDefinitionMutableBuilder[Self <: StateNodeDefinition[_, _, _], TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] (val x: Self with (StateNodeDefinition[TContext, TStateSchema, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivities(value: js.Array[ActivityDefinition[TContext, TEvent]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivitiesVarargs(value: (ActivityDefinition[TContext, TEvent])*): Self = StObject.set(x, "activities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivitiesVarargs(value: (ActivityDefinition[TContext, TEvent])*): Self = this.set("activities", js.Array(value :_*))
+    def setData(value: (Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivities(value: js.Array[ActivityDefinition[TContext, TEvent]]): Self = this.set("activities", value.asInstanceOf[js.Any])
+    def setDataFunction2(value: (TContext, TEvent) => _): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setContext(value: TContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setEntryVarargs(value: (ActionObject[TContext, TEvent])*): Self = this.set("entry", js.Array(value :_*))
+    def setEntry(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntry(value: js.Array[ActionObject[TContext, TEvent]]): Self = this.set("entry", value.asInstanceOf[js.Any])
+    def setEntryVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "entry", js.Array(value :_*))
     
     @scala.inline
-    def setExitVarargs(value: (ActionObject[TContext, TEvent])*): Self = this.set("exit", js.Array(value :_*))
+    def setExit(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExit(value: js.Array[ActionObject[TContext, TEvent]]): Self = this.set("exit", value.asInstanceOf[js.Any])
+    def setExitVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "exit", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setHistory(value: Boolean | shallow | deep): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvokeVarargs(value: (InvokeDefinition[TContext, TEvent])*): Self = this.set("invoke", js.Array(value :_*))
+    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
     @scala.inline
-    def setInvoke(value: js.Array[InvokeDefinition[TContext, TEvent]]): Self = this.set("invoke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeta(value: js.Any): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOn(value: TransitionDefinitionMap[TContext, TEvent]): Self = this.set("on", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrder(value: Double): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStates(value: StatesDefinition[TContext, TStateSchema, TEvent]): Self = this.set("states", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionsVarargs(value: (TransitionDefinition[TContext, TEvent])*): Self = this.set("transitions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransitions(value: js.Array[TransitionDefinition[TContext, TEvent]]): Self = this.set("transitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: atomic | compound | parallel | `final` | history): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataFunction2(value: (TContext, TEvent) => _): Self = this.set("data", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setData(value: (Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setHistory(value: Boolean | shallow | deep): Self = this.set("history", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistory: Self = this.set("history", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInitial(
       value: /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
-    ): Self = this.set("initial", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitial: Self = this.set("initial", js.undefined)
+    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setInvoke(value: js.Array[InvokeDefinition[TContext, TEvent]]): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setInvokeVarargs(value: (InvokeDefinition[TContext, TEvent])*): Self = StObject.set(x, "invoke", js.Array(value :_*))
+    
+    @scala.inline
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOn(value: TransitionDefinitionMap[TContext, TEvent]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStates(value: StatesDefinition[TContext, TStateSchema, TEvent]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTransitions(value: js.Array[TransitionDefinition[TContext, TEvent]]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTransitionsVarargs(value: (TransitionDefinition[TContext, TEvent])*): Self = StObject.set(x, "transitions", js.Array(value :_*))
+    
+    @scala.inline
+    def setType(value: atomic | compound | parallel | `final` | history): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

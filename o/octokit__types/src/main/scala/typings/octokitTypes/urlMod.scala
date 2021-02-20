@@ -1,12 +1,11 @@
 package typings.octokitTypes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@octokit/types/dist-types/Url", JSImport.Namespace)
-@js.native
-object urlMod extends js.Object {
+object urlMod {
   
   type Url = String
 }

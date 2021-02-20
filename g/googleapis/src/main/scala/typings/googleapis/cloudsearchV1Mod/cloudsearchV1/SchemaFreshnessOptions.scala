@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * are considered higher quality and ranked accordingly.
   */
 @js.native
-trait SchemaFreshnessOptions extends js.Object {
+trait SchemaFreshnessOptions extends StObject {
   
   /**
     * The duration after which an object should be considered stale. The
@@ -41,30 +42,18 @@ object SchemaFreshnessOptions {
   }
   
   @scala.inline
-  implicit class SchemaFreshnessOptionsOps[Self <: SchemaFreshnessOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaFreshnessOptionsMutableBuilder[Self <: SchemaFreshnessOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFreshnessDuration(value: String): Self = StObject.set(x, "freshnessDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFreshnessDurationUndefined: Self = StObject.set(x, "freshnessDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFreshnessProperty(value: String): Self = StObject.set(x, "freshnessProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreshnessDuration(value: String): Self = this.set("freshnessDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFreshnessDuration: Self = this.set("freshnessDuration", js.undefined)
-    
-    @scala.inline
-    def setFreshnessProperty(value: String): Self = this.set("freshnessProperty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFreshnessProperty: Self = this.set("freshnessProperty", js.undefined)
+    def setFreshnessPropertyUndefined: Self = StObject.set(x, "freshnessProperty", js.undefined)
   }
 }

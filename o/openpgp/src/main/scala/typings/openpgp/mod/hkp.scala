@@ -1,15 +1,15 @@
 package typings.openpgp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openpgp", "hkp")
-@js.native
-object hkp extends js.Object {
+object hkp {
   
+  @JSImport("openpgp", "hkp.HKP")
   @js.native
-  class HKP protected () extends js.Object {
+  class HKP protected () extends StObject {
     /**
       * Initialize the HKP client and configure it with the key server url and fetch function.
       * @param keyServerBaseUrl (optional) The HKP key server base url including

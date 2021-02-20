@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -287,87 +288,75 @@ object XConnection {
   }
   
   @scala.inline
-  implicit class XConnectionOps[Self <: XConnection] (val x: Self) extends AnyVal {
+  implicit class XConnectionMutableBuilder[Self <: XConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCommit(value: Boolean): Self = StObject.set(x, "AutoCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalog(value: String): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommit(value: () => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAutoCommit(value: Boolean): Self = this.set("AutoCommit", value.asInstanceOf[js.Any])
+    def setCreateStatement(value: () => XStatement): Self = StObject.set(x, "createStatement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCatalog(value: String): Self = this.set("Catalog", value.asInstanceOf[js.Any])
+    def setGetAutoCommit(value: () => Boolean): Self = StObject.set(x, "getAutoCommit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMetaData(value: XDatabaseMetaData): Self = this.set("MetaData", value.asInstanceOf[js.Any])
+    def setGetCatalog(value: () => String): Self = StObject.set(x, "getCatalog", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTransactionIsolation(value: Double): Self = this.set("TransactionIsolation", value.asInstanceOf[js.Any])
+    def setGetMetaData(value: () => XDatabaseMetaData): Self = StObject.set(x, "getMetaData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTypeMap(value: XNameAccess): Self = this.set("TypeMap", value.asInstanceOf[js.Any])
+    def setGetTransactionIsolation(value: () => Double): Self = StObject.set(x, "getTransactionIsolation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCommit(value: () => Unit): Self = this.set("commit", js.Any.fromFunction0(value))
+    def setGetTypeMap(value: () => XNameAccess): Self = StObject.set(x, "getTypeMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateStatement(value: () => XStatement): Self = this.set("createStatement", js.Any.fromFunction0(value))
+    def setIsClosed(value: () => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAutoCommit(value: () => Boolean): Self = this.set("getAutoCommit", js.Any.fromFunction0(value))
+    def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCatalog(value: () => String): Self = this.set("getCatalog", js.Any.fromFunction0(value))
+    def setMetaData(value: XDatabaseMetaData): Self = StObject.set(x, "MetaData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMetaData(value: () => XDatabaseMetaData): Self = this.set("getMetaData", js.Any.fromFunction0(value))
+    def setNativeSQL(value: String => String): Self = StObject.set(x, "nativeSQL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTransactionIsolation(value: () => Double): Self = this.set("getTransactionIsolation", js.Any.fromFunction0(value))
+    def setPrepareCall(value: String => XPreparedStatement): Self = StObject.set(x, "prepareCall", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTypeMap(value: () => XNameAccess): Self = this.set("getTypeMap", js.Any.fromFunction0(value))
+    def setPrepareStatement(value: String => XPreparedStatement): Self = StObject.set(x, "prepareStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsClosed(value: () => Boolean): Self = this.set("isClosed", js.Any.fromFunction0(value))
+    def setRollback(value: () => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsReadOnly(value: () => Boolean): Self = this.set("isReadOnly", js.Any.fromFunction0(value))
+    def setSetAutoCommit(value: Boolean => Unit): Self = StObject.set(x, "setAutoCommit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNativeSQL(value: String => String): Self = this.set("nativeSQL", js.Any.fromFunction1(value))
+    def setSetCatalog(value: String => Unit): Self = StObject.set(x, "setCatalog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrepareCall(value: String => XPreparedStatement): Self = this.set("prepareCall", js.Any.fromFunction1(value))
+    def setSetReadOnly(value: Boolean => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrepareStatement(value: String => XPreparedStatement): Self = this.set("prepareStatement", js.Any.fromFunction1(value))
+    def setSetTransactionIsolation(value: Double => Unit): Self = StObject.set(x, "setTransactionIsolation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRollback(value: () => Unit): Self = this.set("rollback", js.Any.fromFunction0(value))
+    def setSetTypeMap(value: XNameAccess => Unit): Self = StObject.set(x, "setTypeMap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutoCommit(value: Boolean => Unit): Self = this.set("setAutoCommit", js.Any.fromFunction1(value))
+    def setTransactionIsolation(value: Double): Self = StObject.set(x, "TransactionIsolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetCatalog(value: String => Unit): Self = this.set("setCatalog", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetReadOnly(value: Boolean => Unit): Self = this.set("setReadOnly", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTransactionIsolation(value: Double => Unit): Self = this.set("setTransactionIsolation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTypeMap(value: XNameAccess => Unit): Self = this.set("setTypeMap", js.Any.fromFunction1(value))
+    def setTypeMap(value: XNameAccess): Self = StObject.set(x, "TypeMap", value.asInstanceOf[js.Any])
   }
 }

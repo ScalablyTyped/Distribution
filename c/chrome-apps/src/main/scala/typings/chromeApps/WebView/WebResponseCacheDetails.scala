@@ -3,6 +3,7 @@ package typings.chromeApps.WebView
 import typings.chromeApps.chrome.double
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.webRequest.ResourceType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,27 +42,15 @@ object WebResponseCacheDetails {
   }
   
   @scala.inline
-  implicit class WebResponseCacheDetailsOps[Self <: WebResponseCacheDetails] (val x: Self) extends AnyVal {
+  implicit class WebResponseCacheDetailsMutableBuilder[Self <: WebResponseCacheDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFromCache(value: Boolean): Self = this.set("fromCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIp: Self = this.set("ip", js.undefined)
+    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
   }
 }

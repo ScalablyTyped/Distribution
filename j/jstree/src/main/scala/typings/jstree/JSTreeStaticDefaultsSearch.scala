@@ -1,11 +1,12 @@
 package typings.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSTreeStaticDefaultsSearch extends js.Object {
+trait JSTreeStaticDefaultsSearch extends StObject {
   
   /**
     * a jQuery-like AJAX config, which jstree uses if a server should be queried for results.
@@ -95,42 +96,30 @@ object JSTreeStaticDefaultsSearch {
   }
   
   @scala.inline
-  implicit class JSTreeStaticDefaultsSearchOps[Self <: JSTreeStaticDefaultsSearch] (val x: Self) extends AnyVal {
+  implicit class JSTreeStaticDefaultsSearchMutableBuilder[Self <: JSTreeStaticDefaultsSearch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjax(value: js.Any): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose_opened_onclear(value: Boolean): Self = StObject.set(x, "close_opened_onclear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjax(value: js.Any): Self = this.set("ajax", value.asInstanceOf[js.Any])
+    def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCase_sensitive(value: Boolean): Self = this.set("case_sensitive", value.asInstanceOf[js.Any])
+    def setSearch_callback(value: js.Any): Self = StObject.set(x, "search_callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose_opened_onclear(value: Boolean): Self = this.set("close_opened_onclear", value.asInstanceOf[js.Any])
+    def setSearch_leaves_only(value: Boolean): Self = StObject.set(x, "search_leaves_only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFuzzy(value: Boolean): Self = this.set("fuzzy", value.asInstanceOf[js.Any])
+    def setShow_only_matches(value: Boolean): Self = StObject.set(x, "show_only_matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_callback(value: js.Any): Self = this.set("search_callback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearch_leaves_only(value: Boolean): Self = this.set("search_leaves_only", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow_only_matches(value: Boolean): Self = this.set("show_only_matches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow_only_matches_children(value: Boolean): Self = this.set("show_only_matches_children", value.asInstanceOf[js.Any])
+    def setShow_only_matches_children(value: Boolean): Self = StObject.set(x, "show_only_matches_children", value.asInstanceOf[js.Any])
   }
 }

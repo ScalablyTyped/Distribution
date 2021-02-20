@@ -1,5 +1,6 @@
 package typings.googleapis.v13Mod.adexchangebuyerV13
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The configuration data for an Ad Exchange direct deal.
   */
 @js.native
-trait SchemaDirectDeal extends js.Object {
+trait SchemaDirectDeal extends StObject {
   
   /**
     * The account id of the buyer this deal is for.
@@ -106,108 +107,96 @@ object SchemaDirectDeal {
   }
   
   @scala.inline
-  implicit class SchemaDirectDealOps[Self <: SchemaDirectDeal] (val x: Self) extends AnyVal {
+  implicit class SchemaDirectDealMutableBuilder[Self <: SchemaDirectDeal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: Double): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertiser(value: String): Self = StObject.set(x, "advertiser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: Double): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAdvertiserUndefined: Self = StObject.set(x, "advertiser", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAllowsAlcohol(value: Boolean): Self = StObject.set(x, "allowsAlcohol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiser(value: String): Self = this.set("advertiser", value.asInstanceOf[js.Any])
+    def setAllowsAlcoholUndefined: Self = StObject.set(x, "allowsAlcohol", js.undefined)
     
     @scala.inline
-    def deleteAdvertiser: Self = this.set("advertiser", js.undefined)
+    def setBuyerAccountId(value: String): Self = StObject.set(x, "buyerAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowsAlcohol(value: Boolean): Self = this.set("allowsAlcohol", value.asInstanceOf[js.Any])
+    def setBuyerAccountIdUndefined: Self = StObject.set(x, "buyerAccountId", js.undefined)
     
     @scala.inline
-    def deleteAllowsAlcohol: Self = this.set("allowsAlcohol", js.undefined)
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyerAccountId(value: String): Self = this.set("buyerAccountId", value.asInstanceOf[js.Any])
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def deleteBuyerAccountId: Self = this.set("buyerAccountId", js.undefined)
+    def setDealTier(value: String): Self = StObject.set(x, "dealTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setDealTierUndefined: Self = StObject.set(x, "dealTier", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDealTier(value: String): Self = this.set("dealTier", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteDealTier: Self = this.set("dealTier", js.undefined)
+    def setFixedCpm(value: String): Self = StObject.set(x, "fixedCpm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setFixedCpmUndefined: Self = StObject.set(x, "fixedCpm", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedCpm(value: String): Self = this.set("fixedCpm", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFixedCpm: Self = this.set("fixedCpm", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPrivateExchangeMinCpm(value: String): Self = StObject.set(x, "privateExchangeMinCpm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPrivateExchangeMinCpmUndefined: Self = StObject.set(x, "privateExchangeMinCpm", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPublisherBlocksOverriden(value: Boolean): Self = StObject.set(x, "publisherBlocksOverriden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateExchangeMinCpm(value: String): Self = this.set("privateExchangeMinCpm", value.asInstanceOf[js.Any])
+    def setPublisherBlocksOverridenUndefined: Self = StObject.set(x, "publisherBlocksOverriden", js.undefined)
     
     @scala.inline
-    def deletePrivateExchangeMinCpm: Self = this.set("privateExchangeMinCpm", js.undefined)
+    def setSellerNetwork(value: String): Self = StObject.set(x, "sellerNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisherBlocksOverriden(value: Boolean): Self = this.set("publisherBlocksOverriden", value.asInstanceOf[js.Any])
+    def setSellerNetworkUndefined: Self = StObject.set(x, "sellerNetwork", js.undefined)
     
     @scala.inline
-    def deletePublisherBlocksOverriden: Self = this.set("publisherBlocksOverriden", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSellerNetwork(value: String): Self = this.set("sellerNetwork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSellerNetwork: Self = this.set("sellerNetwork", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

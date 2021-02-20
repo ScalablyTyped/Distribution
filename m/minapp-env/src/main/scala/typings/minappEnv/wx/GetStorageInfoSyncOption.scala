@@ -1,12 +1,13 @@
 package typings.minappEnv.wx
 
 import typings.minappEnv.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetStorageInfoSyncOption extends js.Object {
+trait GetStorageInfoSyncOption extends StObject {
   
   /** 当前占用的空间大小, 单位 KB */
   var currentSize: Double = js.native
@@ -26,27 +27,15 @@ object GetStorageInfoSyncOption {
   }
   
   @scala.inline
-  implicit class GetStorageInfoSyncOptionOps[Self <: GetStorageInfoSyncOption] (val x: Self) extends AnyVal {
+  implicit class GetStorageInfoSyncOptionMutableBuilder[Self <: GetStorageInfoSyncOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeys(value: Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentSize(value: Double): Self = this.set("currentSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeys(value: Array[String]): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLimitSize(value: Double): Self = this.set("limitSize", value.asInstanceOf[js.Any])
+    def setLimitSize(value: Double): Self = StObject.set(x, "limitSize", value.asInstanceOf[js.Any])
   }
 }

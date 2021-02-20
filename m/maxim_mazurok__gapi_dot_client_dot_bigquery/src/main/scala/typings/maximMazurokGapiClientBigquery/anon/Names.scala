@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Names extends js.Object {
+trait Names extends StObject {
   
   /** A list of category resource names. For example, "projects/1/location/eu/taxonomies/2/policyTags/3". At most 1 policy tag is allowed. */
   var names: js.UndefOr[js.Array[String]] = js.native
@@ -19,27 +20,15 @@ object Names {
   }
   
   @scala.inline
-  implicit class NamesOps[Self <: Names] (val x: Self) extends AnyVal {
+  implicit class NamesMutableBuilder[Self <: Names] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("names", js.Array(value :_*))
-    
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = this.set("names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNames: Self = this.set("names", js.undefined)
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

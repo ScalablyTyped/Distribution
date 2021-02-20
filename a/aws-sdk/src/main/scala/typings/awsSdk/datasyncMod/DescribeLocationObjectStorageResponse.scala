@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLocationObjectStorageResponse extends js.Object {
+trait DescribeLocationObjectStorageResponse extends StObject {
   
   /**
     * Optional. The access key is used if credentials are required to access the self-managed object storage server. If your object storage requires a user name and password to authenticate, use AccessKey and SecretKey to provide the user name and password, respectively.
@@ -51,63 +52,51 @@ object DescribeLocationObjectStorageResponse {
   }
   
   @scala.inline
-  implicit class DescribeLocationObjectStorageResponseOps[Self <: DescribeLocationObjectStorageResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeLocationObjectStorageResponseMutableBuilder[Self <: DescribeLocationObjectStorageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKey(value: ObjectStorageAccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyUndefined: Self = StObject.set(x, "AccessKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKey(value: ObjectStorageAccessKey): Self = this.set("AccessKey", value.asInstanceOf[js.Any])
+    def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
     
     @scala.inline
-    def deleteAccessKey: Self = this.set("AccessKey", js.undefined)
+    def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
     
     @scala.inline
-    def setAgentArnsVarargs(value: AgentArn*): Self = this.set("AgentArns", js.Array(value :_*))
+    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentArns(value: AgentArnList): Self = this.set("AgentArns", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteAgentArns: Self = this.set("AgentArns", js.undefined)
+    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Time): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationArn(value: LocationArn): Self = this.set("LocationArn", value.asInstanceOf[js.Any])
+    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
     @scala.inline
-    def deleteLocationArn: Self = this.set("LocationArn", js.undefined)
+    def setServerPort(value: ObjectStorageServerPort): Self = StObject.set(x, "ServerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationUri(value: LocationUri): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
+    def setServerPortUndefined: Self = StObject.set(x, "ServerPort", js.undefined)
     
     @scala.inline
-    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    def setServerProtocol(value: ObjectStorageServerProtocol): Self = StObject.set(x, "ServerProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerPort(value: ObjectStorageServerPort): Self = this.set("ServerPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerPort: Self = this.set("ServerPort", js.undefined)
-    
-    @scala.inline
-    def setServerProtocol(value: ObjectStorageServerProtocol): Self = this.set("ServerProtocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerProtocol: Self = this.set("ServerProtocol", js.undefined)
+    def setServerProtocolUndefined: Self = StObject.set(x, "ServerProtocol", js.undefined)
   }
 }

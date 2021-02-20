@@ -1,11 +1,12 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable3
 import typings.std.RTCSrtpSdesParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("RTCSrtpSdesTransport")
 @js.native
 class RTCSrtpSdesTransport protected ()
@@ -16,15 +17,9 @@ class RTCSrtpSdesTransport protected ()
     decryptParameters: RTCSrtpSdesParameters
   ) = this()
 }
-@JSGlobal("RTCSrtpSdesTransport")
-@js.native
-object RTCSrtpSdesTransport
-  extends Instantiable3[
-      /* transport */ typings.std.RTCIceTransport, 
-      /* encryptParameters */ RTCSrtpSdesParameters, 
-      /* decryptParameters */ RTCSrtpSdesParameters, 
-      typings.std.RTCSrtpSdesTransport
-    ] {
+object RTCSrtpSdesTransport {
   
+  @JSGlobal("RTCSrtpSdesTransport.getLocalParameters")
+  @js.native
   def getLocalParameters(): js.Array[RTCSrtpSdesParameters] = js.native
 }

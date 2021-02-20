@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BusinessReport extends js.Object {
+trait BusinessReport extends StObject {
   
   /**
     * The time of report delivery.
@@ -41,48 +42,36 @@ object BusinessReport {
   }
   
   @scala.inline
-  implicit class BusinessReportOps[Self <: BusinessReport] (val x: Self) extends AnyVal {
+  implicit class BusinessReportMutableBuilder[Self <: BusinessReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryTime(value: BusinessReportDeliveryTime): Self = StObject.set(x, "DeliveryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryTimeUndefined: Self = StObject.set(x, "DeliveryTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDownloadUrl(value: BusinessReportDownloadUrl): Self = StObject.set(x, "DownloadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryTime(value: BusinessReportDeliveryTime): Self = this.set("DeliveryTime", value.asInstanceOf[js.Any])
+    def setDownloadUrlUndefined: Self = StObject.set(x, "DownloadUrl", js.undefined)
     
     @scala.inline
-    def deleteDeliveryTime: Self = this.set("DeliveryTime", js.undefined)
+    def setFailureCode(value: BusinessReportFailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadUrl(value: BusinessReportDownloadUrl): Self = this.set("DownloadUrl", value.asInstanceOf[js.Any])
+    def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
     
     @scala.inline
-    def deleteDownloadUrl: Self = this.set("DownloadUrl", js.undefined)
+    def setS3Location(value: BusinessReportS3Location): Self = StObject.set(x, "S3Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCode(value: BusinessReportFailureCode): Self = this.set("FailureCode", value.asInstanceOf[js.Any])
+    def setS3LocationUndefined: Self = StObject.set(x, "S3Location", js.undefined)
     
     @scala.inline
-    def deleteFailureCode: Self = this.set("FailureCode", js.undefined)
+    def setStatus(value: BusinessReportStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Location(value: BusinessReportS3Location): Self = this.set("S3Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Location: Self = this.set("S3Location", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: BusinessReportStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

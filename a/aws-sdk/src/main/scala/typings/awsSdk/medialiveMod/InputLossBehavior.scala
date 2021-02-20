@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputLossBehavior extends js.Object {
+trait InputLossBehavior extends StObject {
   
   /**
     * Documentation update needed
@@ -41,48 +42,36 @@ object InputLossBehavior {
   }
   
   @scala.inline
-  implicit class InputLossBehaviorOps[Self <: InputLossBehavior] (val x: Self) extends AnyVal {
+  implicit class InputLossBehaviorMutableBuilder[Self <: InputLossBehavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlackFrameMsec(value: integerMin0Max1000000): Self = StObject.set(x, "BlackFrameMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlackFrameMsecUndefined: Self = StObject.set(x, "BlackFrameMsec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputLossImageColor(value: stringMin6Max6): Self = StObject.set(x, "InputLossImageColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackFrameMsec(value: integerMin0Max1000000): Self = this.set("BlackFrameMsec", value.asInstanceOf[js.Any])
+    def setInputLossImageColorUndefined: Self = StObject.set(x, "InputLossImageColor", js.undefined)
     
     @scala.inline
-    def deleteBlackFrameMsec: Self = this.set("BlackFrameMsec", js.undefined)
+    def setInputLossImageSlate(value: InputLocation): Self = StObject.set(x, "InputLossImageSlate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputLossImageColor(value: stringMin6Max6): Self = this.set("InputLossImageColor", value.asInstanceOf[js.Any])
+    def setInputLossImageSlateUndefined: Self = StObject.set(x, "InputLossImageSlate", js.undefined)
     
     @scala.inline
-    def deleteInputLossImageColor: Self = this.set("InputLossImageColor", js.undefined)
+    def setInputLossImageType(value: InputLossImageType): Self = StObject.set(x, "InputLossImageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputLossImageSlate(value: InputLocation): Self = this.set("InputLossImageSlate", value.asInstanceOf[js.Any])
+    def setInputLossImageTypeUndefined: Self = StObject.set(x, "InputLossImageType", js.undefined)
     
     @scala.inline
-    def deleteInputLossImageSlate: Self = this.set("InputLossImageSlate", js.undefined)
+    def setRepeatFrameMsec(value: integerMin0Max1000000): Self = StObject.set(x, "RepeatFrameMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputLossImageType(value: InputLossImageType): Self = this.set("InputLossImageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputLossImageType: Self = this.set("InputLossImageType", js.undefined)
-    
-    @scala.inline
-    def setRepeatFrameMsec(value: integerMin0Max1000000): Self = this.set("RepeatFrameMsec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepeatFrameMsec: Self = this.set("RepeatFrameMsec", js.undefined)
+    def setRepeatFrameMsecUndefined: Self = StObject.set(x, "RepeatFrameMsec", js.undefined)
   }
 }

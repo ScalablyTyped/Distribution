@@ -1,11 +1,12 @@
 package typings.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StripeClientCheckoutOptions extends js.Object {
+trait StripeClientCheckoutOptions extends StObject {
   
   var billingAddressCollection: js.UndefOr[billingAddressCollectionType] = js.native
   
@@ -30,54 +31,42 @@ object StripeClientCheckoutOptions {
   }
   
   @scala.inline
-  implicit class StripeClientCheckoutOptionsOps[Self <: StripeClientCheckoutOptions] (val x: Self) extends AnyVal {
+  implicit class StripeClientCheckoutOptionsMutableBuilder[Self <: StripeClientCheckoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAddressCollection(value: billingAddressCollectionType): Self = StObject.set(x, "billingAddressCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAddressCollectionUndefined: Self = StObject.set(x, "billingAddressCollection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelUrl(value: String): Self = StObject.set(x, "cancelUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelUrl(value: String): Self = this.set("cancelUrl", value.asInstanceOf[js.Any])
+    def setClientReferenceId(value: String): Self = StObject.set(x, "clientReferenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: StripeCheckoutItem*): Self = this.set("items", js.Array(value :_*))
+    def setClientReferenceIdUndefined: Self = StObject.set(x, "clientReferenceId", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[StripeCheckoutItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setCustomerEmail(value: String): Self = StObject.set(x, "customerEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessUrl(value: String): Self = this.set("successUrl", value.asInstanceOf[js.Any])
+    def setCustomerEmailUndefined: Self = StObject.set(x, "customerEmail", js.undefined)
     
     @scala.inline
-    def setBillingAddressCollection(value: billingAddressCollectionType): Self = this.set("billingAddressCollection", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[StripeCheckoutItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBillingAddressCollection: Self = this.set("billingAddressCollection", js.undefined)
+    def setItemsVarargs(value: StripeCheckoutItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setClientReferenceId(value: String): Self = this.set("clientReferenceId", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientReferenceId: Self = this.set("clientReferenceId", js.undefined)
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def setCustomerEmail(value: String): Self = this.set("customerEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerEmail: Self = this.set("customerEmail", js.undefined)
-    
-    @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setSuccessUrl(value: String): Self = StObject.set(x, "successUrl", value.asInstanceOf[js.Any])
   }
 }

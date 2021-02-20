@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class PersonaCoinBase protected ()
   def this(props: IPersonaCoinProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "PersonaCoinBase")
-@js.native
-object PersonaCoinBase extends js.Object {
+object PersonaCoinBase {
   
-  var defaultProps: IPersonaCoinProps = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "PersonaCoinBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "PersonaCoinBase.defaultProps")
+  @js.native
+  def defaultProps: IPersonaCoinProps = js.native
+  @scala.inline
+  def defaultProps_=(x: IPersonaCoinProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

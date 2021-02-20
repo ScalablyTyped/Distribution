@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTargetGroupsOutput extends js.Object {
+trait DescribeTargetGroupsOutput extends StObject {
   
   /**
     * If there are additional results, this is the marker for the next set of results. Otherwise, this is null.
@@ -26,33 +27,21 @@ object DescribeTargetGroupsOutput {
   }
   
   @scala.inline
-  implicit class DescribeTargetGroupsOutputOps[Self <: DescribeTargetGroupsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeTargetGroupsOutputMutableBuilder[Self <: DescribeTargetGroupsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetGroups(value: TargetGroups): Self = StObject.set(x, "TargetGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: Marker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    def setTargetGroupsUndefined: Self = StObject.set(x, "TargetGroups", js.undefined)
     
     @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
-    
-    @scala.inline
-    def setTargetGroupsVarargs(value: TargetGroup*): Self = this.set("TargetGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetGroups(value: TargetGroups): Self = this.set("TargetGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGroups: Self = this.set("TargetGroups", js.undefined)
+    def setTargetGroupsVarargs(value: TargetGroup*): Self = StObject.set(x, "TargetGroups", js.Array(value :_*))
   }
 }

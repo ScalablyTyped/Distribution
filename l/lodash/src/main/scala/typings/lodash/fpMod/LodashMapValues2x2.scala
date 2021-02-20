@@ -1,12 +1,13 @@
 package typings.lodash.fpMod
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashMapValues2x2[T] extends js.Object {
+trait LodashMapValues2x2[T] extends StObject {
   
   def apply(iteratee: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}

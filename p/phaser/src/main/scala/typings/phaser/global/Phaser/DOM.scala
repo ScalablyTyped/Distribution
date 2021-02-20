@@ -4,13 +4,12 @@ import typings.phaser.ContentLoadedCallback
 import typings.std.ActiveXObject
 import typings.std.DOMParser
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.DOM")
-@js.native
-object DOM extends js.Object {
+object DOM {
   
   /**
     * Adds the given element to the DOM. If a parent is provided the element is added as a child of the parent, providing it was able to access it.
@@ -18,8 +17,14 @@ object DOM extends js.Object {
     * @param element The element to be added to the DOM. Usually a Canvas object.
     * @param parent The parent in which to add the element. Can be a string which is passed to `getElementById` or an actual DOM object.
     */
+  @JSGlobal("Phaser.DOM.AddToDOM")
+  @js.native
   def AddToDOM(element: HTMLElement): HTMLElement = js.native
+  @JSGlobal("Phaser.DOM.AddToDOM")
+  @js.native
   def AddToDOM(element: HTMLElement, parent: String): HTMLElement = js.native
+  @JSGlobal("Phaser.DOM.AddToDOM")
+  @js.native
   def AddToDOM(element: HTMLElement, parent: HTMLElement): HTMLElement = js.native
   
   /**
@@ -28,6 +33,8 @@ object DOM extends js.Object {
     * Called automatically by the Phaser.Game instance. Should not usually be accessed directly.
     * @param callback The callback to be invoked when the device is ready and the DOM content is loaded.
     */
+  @JSGlobal("Phaser.DOM.DOMContentLoaded")
+  @js.native
   def DOMContentLoaded(callback: ContentLoadedCallback): Unit = js.native
   
   /**
@@ -35,6 +42,8 @@ object DOM extends js.Object {
     * Based on code by @tylerjpeterson
     * @param iOS Is this running on iOS?
     */
+  @JSGlobal("Phaser.DOM.GetInnerHeight")
+  @js.native
   def GetInnerHeight(iOS: Boolean): Double = js.native
   
   /**
@@ -42,6 +51,8 @@ object DOM extends js.Object {
     * @param width The width of the viewport.
     * @param height The height of the viewport.
     */
+  @JSGlobal("Phaser.DOM.GetScreenOrientation")
+  @js.native
   def GetScreenOrientation(width: Double, height: Double): String = js.native
   
   /**
@@ -50,6 +61,8 @@ object DOM extends js.Object {
     * can be found it will return a reference to the document.body.
     * @param element The DOM element to look-up.
     */
+  @JSGlobal("Phaser.DOM.GetTarget")
+  @js.native
   def GetTarget(element: HTMLElement): Unit = js.native
   
   /**
@@ -58,18 +71,23 @@ object DOM extends js.Object {
     * The parsed XML object is returned, or `null` if there was an error while parsing the data.
     * @param data The XML source stored in a string.
     */
+  @JSGlobal("Phaser.DOM.ParseXML")
+  @js.native
   def ParseXML(data: String): DOMParser | ActiveXObject = js.native
   
   /**
     * Attempts to remove the element from its parentNode in the DOM.
     * @param element The DOM element to remove from its parent node.
     */
+  @JSGlobal("Phaser.DOM.RemoveFromDOM")
+  @js.native
   def RemoveFromDOM(element: HTMLElement): Unit = js.native
   
   /**
     * Abstracts away the use of RAF or setTimeOut for the core game update loop.
     * This is invoked automatically by the Phaser.Game instance.
     */
+  @JSGlobal("Phaser.DOM.RequestAnimationFrame")
   @js.native
   class RequestAnimationFrame ()
     extends typings.phaser.Phaser.DOM.RequestAnimationFrame

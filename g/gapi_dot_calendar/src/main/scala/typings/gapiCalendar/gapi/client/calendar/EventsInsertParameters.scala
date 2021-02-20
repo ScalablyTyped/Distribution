@@ -1,11 +1,12 @@
 package typings.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventsInsertParameters extends js.Object {
+trait EventsInsertParameters extends StObject {
   
   var calendarId: String = js.native
   
@@ -27,42 +28,30 @@ object EventsInsertParameters {
   }
   
   @scala.inline
-  implicit class EventsInsertParametersOps[Self <: EventsInsertParameters] (val x: Self) extends AnyVal {
+  implicit class EventsInsertParametersMutableBuilder[Self <: EventsInsertParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxAttendees(value: integer): Self = StObject.set(x, "maxAttendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxAttendeesUndefined: Self = StObject.set(x, "maxAttendees", js.undefined)
     
     @scala.inline
-    def setCalendarId(value: String): Self = this.set("calendarId", value.asInstanceOf[js.Any])
+    def setResource(value: EventInput): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: EventInput): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setSendNotifications(value: Boolean): Self = StObject.set(x, "sendNotifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAttendees(value: integer): Self = this.set("maxAttendees", value.asInstanceOf[js.Any])
+    def setSendNotificationsUndefined: Self = StObject.set(x, "sendNotifications", js.undefined)
     
     @scala.inline
-    def deleteMaxAttendees: Self = this.set("maxAttendees", js.undefined)
+    def setSupportsAttachments(value: Boolean): Self = StObject.set(x, "supportsAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendNotifications(value: Boolean): Self = this.set("sendNotifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendNotifications: Self = this.set("sendNotifications", js.undefined)
-    
-    @scala.inline
-    def setSupportsAttachments(value: Boolean): Self = this.set("supportsAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsAttachments: Self = this.set("supportsAttachments", js.undefined)
+    def setSupportsAttachmentsUndefined: Self = StObject.set(x, "supportsAttachments", js.undefined)
   }
 }

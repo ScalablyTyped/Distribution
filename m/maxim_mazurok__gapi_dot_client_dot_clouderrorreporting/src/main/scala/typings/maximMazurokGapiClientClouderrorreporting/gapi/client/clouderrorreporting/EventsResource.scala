@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientClouderrorreporting.anon.Accesstoken
 import typings.maximMazurokGapiClientClouderrorreporting.anon.Alt
 import typings.maximMazurokGapiClientClouderrorreporting.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventsResource extends js.Object {
+trait EventsResource extends StObject {
   
   /** Lists the specified events. */
   def list(): Request[ListEventsResponse] = js.native

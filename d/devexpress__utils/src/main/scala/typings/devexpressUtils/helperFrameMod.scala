@@ -1,16 +1,16 @@
 package typings.devexpressUtils
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/pdf/helper-frame", JSImport.Namespace)
-@js.native
-object helperFrameMod extends js.Object {
+object helperFrameMod {
   
+  @JSImport("@devexpress/utils/lib/pdf/helper-frame", "PdfHelperFrame")
   @js.native
-  class PdfHelperFrame protected () extends js.Object {
+  class PdfHelperFrame protected () extends StObject {
     def this(container: HTMLElement, frameClassName: String) = this()
     
     val container: js.Any = js.native

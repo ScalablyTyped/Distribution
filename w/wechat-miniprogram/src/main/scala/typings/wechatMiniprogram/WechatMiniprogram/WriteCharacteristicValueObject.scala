@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WriteCharacteristicValueObject extends js.Object {
+trait WriteCharacteristicValueObject extends StObject {
   
   /** 可选，处理回包时使用 */
   var callbackId: js.UndefOr[Double] = js.native
@@ -32,36 +33,24 @@ object WriteCharacteristicValueObject {
   }
   
   @scala.inline
-  implicit class WriteCharacteristicValueObjectOps[Self <: WriteCharacteristicValueObject] (val x: Self) extends AnyVal {
+  implicit class WriteCharacteristicValueObjectMutableBuilder[Self <: WriteCharacteristicValueObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallbackId(value: Double): Self = StObject.set(x, "callbackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackIdUndefined: Self = StObject.set(x, "callbackId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacteristicId(value: String): Self = this.set("characteristicId", value.asInstanceOf[js.Any])
+    def setNeedNotify(value: Boolean): Self = StObject.set(x, "needNotify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeedNotify(value: Boolean): Self = this.set("needNotify", value.asInstanceOf[js.Any])
+    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceId(value: String): Self = this.set("serviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: ArrayBuffer): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCallbackId(value: Double): Self = this.set("callbackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCallbackId: Self = this.set("callbackId", js.undefined)
+    def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

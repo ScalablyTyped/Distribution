@@ -5,12 +5,13 @@ import typings.std.MediaStreamConstraints
 import typings.std.RTCAnswerOptions
 import typings.std.RTCConfiguration
 import typings.std.RTCOfferOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionAnswerOptions extends js.Object {
+trait SessionAnswerOptions extends StObject {
   
   var extraHeaders: js.UndefOr[js.Array[String]] = js.native
   
@@ -37,69 +38,57 @@ object SessionAnswerOptions {
   }
   
   @scala.inline
-  implicit class SessionAnswerOptionsOps[Self <: SessionAnswerOptions] (val x: Self) extends AnyVal {
+  implicit class SessionAnswerOptionsMutableBuilder[Self <: SessionAnswerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = this.set("extraHeaders", js.Array(value :_*))
+    def setMediaConstraints(value: MediaStreamConstraints): Self = StObject.set(x, "mediaConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = this.set("extraHeaders", value.asInstanceOf[js.Any])
+    def setMediaConstraintsUndefined: Self = StObject.set(x, "mediaConstraints", js.undefined)
     
     @scala.inline
-    def deleteExtraHeaders: Self = this.set("extraHeaders", js.undefined)
+    def setMediaStream(value: MediaStream): Self = StObject.set(x, "mediaStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaConstraints(value: MediaStreamConstraints): Self = this.set("mediaConstraints", value.asInstanceOf[js.Any])
+    def setMediaStreamUndefined: Self = StObject.set(x, "mediaStream", js.undefined)
     
     @scala.inline
-    def deleteMediaConstraints: Self = this.set("mediaConstraints", js.undefined)
+    def setPcConfig(value: RTCConfiguration): Self = StObject.set(x, "pcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaStream(value: MediaStream): Self = this.set("mediaStream", value.asInstanceOf[js.Any])
+    def setPcConfigUndefined: Self = StObject.set(x, "pcConfig", js.undefined)
     
     @scala.inline
-    def deleteMediaStream: Self = this.set("mediaStream", js.undefined)
+    def setRtcAnswerConstraints(value: RTCAnswerOptions): Self = StObject.set(x, "rtcAnswerConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcConfig(value: RTCConfiguration): Self = this.set("pcConfig", value.asInstanceOf[js.Any])
+    def setRtcAnswerConstraintsUndefined: Self = StObject.set(x, "rtcAnswerConstraints", js.undefined)
     
     @scala.inline
-    def deletePcConfig: Self = this.set("pcConfig", js.undefined)
+    def setRtcConstraints(value: js.Any): Self = StObject.set(x, "rtcConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtcAnswerConstraints(value: RTCAnswerOptions): Self = this.set("rtcAnswerConstraints", value.asInstanceOf[js.Any])
+    def setRtcConstraintsUndefined: Self = StObject.set(x, "rtcConstraints", js.undefined)
     
     @scala.inline
-    def deleteRtcAnswerConstraints: Self = this.set("rtcAnswerConstraints", js.undefined)
+    def setRtcOfferConstraints(value: RTCOfferOptions): Self = StObject.set(x, "rtcOfferConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtcConstraints(value: js.Any): Self = this.set("rtcConstraints", value.asInstanceOf[js.Any])
+    def setRtcOfferConstraintsUndefined: Self = StObject.set(x, "rtcOfferConstraints", js.undefined)
     
     @scala.inline
-    def deleteRtcConstraints: Self = this.set("rtcConstraints", js.undefined)
+    def setSessionTimersExpires(value: Double): Self = StObject.set(x, "sessionTimersExpires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtcOfferConstraints(value: RTCOfferOptions): Self = this.set("rtcOfferConstraints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRtcOfferConstraints: Self = this.set("rtcOfferConstraints", js.undefined)
-    
-    @scala.inline
-    def setSessionTimersExpires(value: Double): Self = this.set("sessionTimersExpires", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionTimersExpires: Self = this.set("sessionTimersExpires", js.undefined)
+    def setSessionTimersExpiresUndefined: Self = StObject.set(x, "sessionTimersExpires", js.undefined)
   }
 }

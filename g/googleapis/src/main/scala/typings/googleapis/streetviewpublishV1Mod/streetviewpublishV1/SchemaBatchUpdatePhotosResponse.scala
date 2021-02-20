@@ -1,5 +1,6 @@
 package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response to batch update of metadata of one or more Photos.
   */
 @js.native
-trait SchemaBatchUpdatePhotosResponse extends js.Object {
+trait SchemaBatchUpdatePhotosResponse extends StObject {
   
   /**
     * List of results for each individual Photo updated, in the same order as
@@ -25,27 +26,15 @@ object SchemaBatchUpdatePhotosResponse {
   }
   
   @scala.inline
-  implicit class SchemaBatchUpdatePhotosResponseOps[Self <: SchemaBatchUpdatePhotosResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchUpdatePhotosResponseMutableBuilder[Self <: SchemaBatchUpdatePhotosResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResults(value: js.Array[SchemaPhotoResponse]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResultsVarargs(value: SchemaPhotoResponse*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[SchemaPhotoResponse]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setResultsVarargs(value: SchemaPhotoResponse*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

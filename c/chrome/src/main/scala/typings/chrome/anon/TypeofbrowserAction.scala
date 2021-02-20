@@ -8,12 +8,13 @@ import typings.chrome.chrome.browserAction.PopupDetails
 import typings.chrome.chrome.browserAction.TabDetails
 import typings.chrome.chrome.browserAction.TabIconDetails
 import typings.chrome.chrome.browserAction.TitleDetails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofbrowserAction extends js.Object {
+trait TypeofbrowserAction extends StObject {
   
   def disable(): Unit = js.native
   def disable(tabId: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native

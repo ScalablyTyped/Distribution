@@ -1,11 +1,12 @@
 package typings.opentypeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlyphOptions extends js.Object {
+trait GlyphOptions extends StObject {
   
   var advanceWidth: js.UndefOr[Double] = js.native
   
@@ -38,87 +39,75 @@ object GlyphOptions {
   }
   
   @scala.inline
-  implicit class GlyphOptionsOps[Self <: GlyphOptions] (val x: Self) extends AnyVal {
+  implicit class GlyphOptionsMutableBuilder[Self <: GlyphOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvanceWidth(value: Double): Self = StObject.set(x, "advanceWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvanceWidthUndefined: Self = StObject.set(x, "advanceWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvanceWidth(value: Double): Self = this.set("advanceWidth", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteAdvanceWidth: Self = this.set("advanceWidth", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: Font): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setUnicode(value: Double): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: Path): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setUnicodes(value: js.Array[Double]): Self = StObject.set(x, "unicodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnicode(value: Double): Self = this.set("unicode", value.asInstanceOf[js.Any])
+    def setUnicodesUndefined: Self = StObject.set(x, "unicodes", js.undefined)
     
     @scala.inline
-    def deleteUnicode: Self = this.set("unicode", js.undefined)
+    def setUnicodesVarargs(value: Double*): Self = StObject.set(x, "unicodes", js.Array(value :_*))
     
     @scala.inline
-    def setUnicodesVarargs(value: Double*): Self = this.set("unicodes", js.Array(value :_*))
+    def setXMax(value: Double): Self = StObject.set(x, "xMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnicodes(value: js.Array[Double]): Self = this.set("unicodes", value.asInstanceOf[js.Any])
+    def setXMaxUndefined: Self = StObject.set(x, "xMax", js.undefined)
     
     @scala.inline
-    def deleteUnicodes: Self = this.set("unicodes", js.undefined)
+    def setXMin(value: Double): Self = StObject.set(x, "xMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXMax(value: Double): Self = this.set("xMax", value.asInstanceOf[js.Any])
+    def setXMinUndefined: Self = StObject.set(x, "xMin", js.undefined)
     
     @scala.inline
-    def deleteXMax: Self = this.set("xMax", js.undefined)
+    def setYMax(value: Double): Self = StObject.set(x, "yMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXMin(value: Double): Self = this.set("xMin", value.asInstanceOf[js.Any])
+    def setYMaxUndefined: Self = StObject.set(x, "yMax", js.undefined)
     
     @scala.inline
-    def deleteXMin: Self = this.set("xMin", js.undefined)
+    def setYMin(value: Double): Self = StObject.set(x, "yMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYMax(value: Double): Self = this.set("yMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYMax: Self = this.set("yMax", js.undefined)
-    
-    @scala.inline
-    def setYMin(value: Double): Self = this.set("yMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYMin: Self = this.set("yMin", js.undefined)
+    def setYMinUndefined: Self = StObject.set(x, "yMin", js.undefined)
   }
 }

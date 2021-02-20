@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionGroupOption extends js.Object {
+trait OptionGroupOption extends StObject {
   
   /**
     * If the option requires a port, specifies the default port for the option.
@@ -96,126 +97,114 @@ object OptionGroupOption {
   }
   
   @scala.inline
-  implicit class OptionGroupOptionOps[Self <: OptionGroupOption] (val x: Self) extends AnyVal {
+  implicit class OptionGroupOptionMutableBuilder[Self <: OptionGroupOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultPort(value: IntegerOptional): Self = StObject.set(x, "DefaultPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultPortUndefined: Self = StObject.set(x, "DefaultPort", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPort(value: IntegerOptional): Self = this.set("DefaultPort", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDefaultPort: Self = this.set("DefaultPort", js.undefined)
+    def setEngineName(value: String): Self = StObject.set(x, "EngineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEngineNameUndefined: Self = StObject.set(x, "EngineName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setMajorEngineVersion(value: String): Self = StObject.set(x, "MajorEngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineName(value: String): Self = this.set("EngineName", value.asInstanceOf[js.Any])
+    def setMajorEngineVersionUndefined: Self = StObject.set(x, "MajorEngineVersion", js.undefined)
     
     @scala.inline
-    def deleteEngineName: Self = this.set("EngineName", js.undefined)
+    def setMinimumRequiredMinorEngineVersion(value: String): Self = StObject.set(x, "MinimumRequiredMinorEngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorEngineVersion(value: String): Self = this.set("MajorEngineVersion", value.asInstanceOf[js.Any])
+    def setMinimumRequiredMinorEngineVersionUndefined: Self = StObject.set(x, "MinimumRequiredMinorEngineVersion", js.undefined)
     
     @scala.inline
-    def deleteMajorEngineVersion: Self = this.set("MajorEngineVersion", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumRequiredMinorEngineVersion(value: String): Self = this.set("MinimumRequiredMinorEngineVersion", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMinimumRequiredMinorEngineVersion: Self = this.set("MinimumRequiredMinorEngineVersion", js.undefined)
+    def setOptionGroupOptionSettings(value: OptionGroupOptionSettingsList): Self = StObject.set(x, "OptionGroupOptionSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOptionGroupOptionSettingsUndefined: Self = StObject.set(x, "OptionGroupOptionSettings", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setOptionGroupOptionSettingsVarargs(value: OptionGroupOptionSetting*): Self = StObject.set(x, "OptionGroupOptionSettings", js.Array(value :_*))
     
     @scala.inline
-    def setOptionGroupOptionSettingsVarargs(value: OptionGroupOptionSetting*): Self = this.set("OptionGroupOptionSettings", js.Array(value :_*))
+    def setOptionGroupOptionVersions(value: OptionGroupOptionVersionsList): Self = StObject.set(x, "OptionGroupOptionVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionGroupOptionSettings(value: OptionGroupOptionSettingsList): Self = this.set("OptionGroupOptionSettings", value.asInstanceOf[js.Any])
+    def setOptionGroupOptionVersionsUndefined: Self = StObject.set(x, "OptionGroupOptionVersions", js.undefined)
     
     @scala.inline
-    def deleteOptionGroupOptionSettings: Self = this.set("OptionGroupOptionSettings", js.undefined)
+    def setOptionGroupOptionVersionsVarargs(value: OptionVersion*): Self = StObject.set(x, "OptionGroupOptionVersions", js.Array(value :_*))
     
     @scala.inline
-    def setOptionGroupOptionVersionsVarargs(value: OptionVersion*): Self = this.set("OptionGroupOptionVersions", js.Array(value :_*))
+    def setOptionsConflictsWith(value: OptionsConflictsWith): Self = StObject.set(x, "OptionsConflictsWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionGroupOptionVersions(value: OptionGroupOptionVersionsList): Self = this.set("OptionGroupOptionVersions", value.asInstanceOf[js.Any])
+    def setOptionsConflictsWithUndefined: Self = StObject.set(x, "OptionsConflictsWith", js.undefined)
     
     @scala.inline
-    def deleteOptionGroupOptionVersions: Self = this.set("OptionGroupOptionVersions", js.undefined)
+    def setOptionsConflictsWithVarargs(value: String*): Self = StObject.set(x, "OptionsConflictsWith", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsConflictsWithVarargs(value: String*): Self = this.set("OptionsConflictsWith", js.Array(value :_*))
+    def setOptionsDependedOn(value: OptionsDependedOn): Self = StObject.set(x, "OptionsDependedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsConflictsWith(value: OptionsConflictsWith): Self = this.set("OptionsConflictsWith", value.asInstanceOf[js.Any])
+    def setOptionsDependedOnUndefined: Self = StObject.set(x, "OptionsDependedOn", js.undefined)
     
     @scala.inline
-    def deleteOptionsConflictsWith: Self = this.set("OptionsConflictsWith", js.undefined)
+    def setOptionsDependedOnVarargs(value: String*): Self = StObject.set(x, "OptionsDependedOn", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsDependedOnVarargs(value: String*): Self = this.set("OptionsDependedOn", js.Array(value :_*))
+    def setPermanent(value: Boolean): Self = StObject.set(x, "Permanent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsDependedOn(value: OptionsDependedOn): Self = this.set("OptionsDependedOn", value.asInstanceOf[js.Any])
+    def setPermanentUndefined: Self = StObject.set(x, "Permanent", js.undefined)
     
     @scala.inline
-    def deleteOptionsDependedOn: Self = this.set("OptionsDependedOn", js.undefined)
+    def setPersistent(value: Boolean): Self = StObject.set(x, "Persistent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermanent(value: Boolean): Self = this.set("Permanent", value.asInstanceOf[js.Any])
+    def setPersistentUndefined: Self = StObject.set(x, "Persistent", js.undefined)
     
     @scala.inline
-    def deletePermanent: Self = this.set("Permanent", js.undefined)
+    def setPortRequired(value: Boolean): Self = StObject.set(x, "PortRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistent(value: Boolean): Self = this.set("Persistent", value.asInstanceOf[js.Any])
+    def setPortRequiredUndefined: Self = StObject.set(x, "PortRequired", js.undefined)
     
     @scala.inline
-    def deletePersistent: Self = this.set("Persistent", js.undefined)
+    def setRequiresAutoMinorEngineVersionUpgrade(value: Boolean): Self = StObject.set(x, "RequiresAutoMinorEngineVersionUpgrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortRequired(value: Boolean): Self = this.set("PortRequired", value.asInstanceOf[js.Any])
+    def setRequiresAutoMinorEngineVersionUpgradeUndefined: Self = StObject.set(x, "RequiresAutoMinorEngineVersionUpgrade", js.undefined)
     
     @scala.inline
-    def deletePortRequired: Self = this.set("PortRequired", js.undefined)
+    def setSupportsOptionVersionDowngrade(value: BooleanOptional): Self = StObject.set(x, "SupportsOptionVersionDowngrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiresAutoMinorEngineVersionUpgrade(value: Boolean): Self = this.set("RequiresAutoMinorEngineVersionUpgrade", value.asInstanceOf[js.Any])
+    def setSupportsOptionVersionDowngradeUndefined: Self = StObject.set(x, "SupportsOptionVersionDowngrade", js.undefined)
     
     @scala.inline
-    def deleteRequiresAutoMinorEngineVersionUpgrade: Self = this.set("RequiresAutoMinorEngineVersionUpgrade", js.undefined)
+    def setVpcOnly(value: Boolean): Self = StObject.set(x, "VpcOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsOptionVersionDowngrade(value: BooleanOptional): Self = this.set("SupportsOptionVersionDowngrade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsOptionVersionDowngrade: Self = this.set("SupportsOptionVersionDowngrade", js.undefined)
-    
-    @scala.inline
-    def setVpcOnly(value: Boolean): Self = this.set("VpcOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcOnly: Self = this.set("VpcOnly", js.undefined)
+    def setVpcOnlyUndefined: Self = StObject.set(x, "VpcOnly", js.undefined)
   }
 }

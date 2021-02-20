@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionDailyStats extends js.Object {
+trait ExtensionDailyStats extends StObject {
   
   /**
     * List of extension statistics data points
@@ -47,36 +48,24 @@ object ExtensionDailyStats {
   }
   
   @scala.inline
-  implicit class ExtensionDailyStatsOps[Self <: ExtensionDailyStats] (val x: Self) extends AnyVal {
+  implicit class ExtensionDailyStatsMutableBuilder[Self <: ExtensionDailyStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDailyStats(value: js.Array[ExtensionDailyStat]): Self = StObject.set(x, "dailyStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDailyStatsVarargs(value: ExtensionDailyStat*): Self = StObject.set(x, "dailyStats", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyStatsVarargs(value: ExtensionDailyStat*): Self = this.set("dailyStats", js.Array(value :_*))
+    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyStats(value: js.Array[ExtensionDailyStat]): Self = this.set("dailyStats", value.asInstanceOf[js.Any])
+    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionId(value: String): Self = this.set("extensionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtensionName(value: String): Self = this.set("extensionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherName(value: String): Self = this.set("publisherName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatCount(value: Double): Self = this.set("statCount", value.asInstanceOf[js.Any])
+    def setStatCount(value: Double): Self = StObject.set(x, "statCount", value.asInstanceOf[js.Any])
   }
 }

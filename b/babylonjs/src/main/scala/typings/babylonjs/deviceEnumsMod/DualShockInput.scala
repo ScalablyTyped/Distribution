@@ -1,7 +1,7 @@
 package typings.babylonjs.deviceEnumsMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.babylonjs.deviceTypesMod._DeviceInput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ sealed trait DualShockInput
   extends _DeviceInput[js.Any]
 @JSImport("babylonjs/DeviceInput/InputDevices/deviceEnums", "DualShockInput")
 @js.native
-object DualShockInput extends js.Object {
+object DualShockInput extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DualShockInput with Double] = js.native
@@ -19,132 +19,110 @@ object DualShockInput extends js.Object {
   /** Circle */
   @js.native
   sealed trait Circle extends DualShockInput
-  /* 1 */ @js.native
-  object Circle extends TopLevel[Circle with Double]
+  /* 1 */ val Circle: typings.babylonjs.deviceEnumsMod.DualShockInput.Circle with Double = js.native
   
   /** Cross */
   @js.native
   sealed trait Cross extends DualShockInput
-  /* 0 */ @js.native
-  object Cross extends TopLevel[Cross with Double]
+  /* 0 */ val Cross: typings.babylonjs.deviceEnumsMod.DualShockInput.Cross with Double = js.native
   
   /** DPadDown */
   @js.native
   sealed trait DPadDown extends DualShockInput
-  /* 13 */ @js.native
-  object DPadDown extends TopLevel[DPadDown with Double]
+  /* 13 */ val DPadDown: typings.babylonjs.deviceEnumsMod.DualShockInput.DPadDown with Double = js.native
   
   /** DPadLeft */
   @js.native
   sealed trait DPadLeft extends DualShockInput
-  /* 14 */ @js.native
-  object DPadLeft extends TopLevel[DPadLeft with Double]
+  /* 14 */ val DPadLeft: typings.babylonjs.deviceEnumsMod.DualShockInput.DPadLeft with Double = js.native
   
   /** DRight */
   @js.native
   sealed trait DPadRight extends DualShockInput
-  /* 15 */ @js.native
-  object DPadRight extends TopLevel[DPadRight with Double]
+  /* 15 */ val DPadRight: typings.babylonjs.deviceEnumsMod.DualShockInput.DPadRight with Double = js.native
   
   /** DPadUp */
   @js.native
   sealed trait DPadUp extends DualShockInput
-  /* 12 */ @js.native
-  object DPadUp extends TopLevel[DPadUp with Double]
+  /* 12 */ val DPadUp: typings.babylonjs.deviceEnumsMod.DualShockInput.DPadUp with Double = js.native
   
   /** Home */
   @js.native
   sealed trait Home extends DualShockInput
-  /* 16 */ @js.native
-  object Home extends TopLevel[Home with Double]
+  /* 16 */ val Home: typings.babylonjs.deviceEnumsMod.DualShockInput.Home with Double = js.native
   
   /** L1 */
   @js.native
   sealed trait L1 extends DualShockInput
-  /* 4 */ @js.native
-  object L1 extends TopLevel[L1 with Double]
+  /* 4 */ val L1: typings.babylonjs.deviceEnumsMod.DualShockInput.L1 with Double = js.native
   
   /** L2 */
   @js.native
   sealed trait L2 extends DualShockInput
-  /* 6 */ @js.native
-  object L2 extends TopLevel[L2 with Double]
+  /* 6 */ val L2: typings.babylonjs.deviceEnumsMod.DualShockInput.L2 with Double = js.native
   
   /** L3 */
   @js.native
   sealed trait L3 extends DualShockInput
-  /* 10 */ @js.native
-  object L3 extends TopLevel[L3 with Double]
+  /* 10 */ val L3: typings.babylonjs.deviceEnumsMod.DualShockInput.L3 with Double = js.native
   
   /** LStickXAxis */
   @js.native
   sealed trait LStickXAxis extends DualShockInput
-  /* 18 */ @js.native
-  object LStickXAxis extends TopLevel[LStickXAxis with Double]
+  /* 18 */ val LStickXAxis: typings.babylonjs.deviceEnumsMod.DualShockInput.LStickXAxis with Double = js.native
   
   /** LStickYAxis */
   @js.native
   sealed trait LStickYAxis extends DualShockInput
-  /* 19 */ @js.native
-  object LStickYAxis extends TopLevel[LStickYAxis with Double]
+  /* 19 */ val LStickYAxis: typings.babylonjs.deviceEnumsMod.DualShockInput.LStickYAxis with Double = js.native
   
   /** Options */
   @js.native
   sealed trait Options extends DualShockInput
-  /* 9 */ @js.native
-  object Options extends TopLevel[Options with Double]
+  /* 9 */ val Options: typings.babylonjs.deviceEnumsMod.DualShockInput.Options with Double = js.native
   
   /** R1 */
   @js.native
   sealed trait R1 extends DualShockInput
-  /* 5 */ @js.native
-  object R1 extends TopLevel[R1 with Double]
+  /* 5 */ val R1: typings.babylonjs.deviceEnumsMod.DualShockInput.R1 with Double = js.native
   
   /** R2 */
   @js.native
   sealed trait R2 extends DualShockInput
-  /* 7 */ @js.native
-  object R2 extends TopLevel[R2 with Double]
+  /* 7 */ val R2: typings.babylonjs.deviceEnumsMod.DualShockInput.R2 with Double = js.native
   
   /** R3 */
   @js.native
   sealed trait R3 extends DualShockInput
-  /* 11 */ @js.native
-  object R3 extends TopLevel[R3 with Double]
+  /* 11 */ val R3: typings.babylonjs.deviceEnumsMod.DualShockInput.R3 with Double = js.native
   
   /** RStickXAxis */
   @js.native
   sealed trait RStickXAxis extends DualShockInput
-  /* 20 */ @js.native
-  object RStickXAxis extends TopLevel[RStickXAxis with Double]
+  /* 20 */ val RStickXAxis: typings.babylonjs.deviceEnumsMod.DualShockInput.RStickXAxis with Double = js.native
   
   /** RStickYAxis */
   @js.native
   sealed trait RStickYAxis extends DualShockInput
-  /* 21 */ @js.native
-  object RStickYAxis extends TopLevel[RStickYAxis with Double]
+  /* 21 */ val RStickYAxis: typings.babylonjs.deviceEnumsMod.DualShockInput.RStickYAxis with Double = js.native
   
   /** Share */
   @js.native
   sealed trait Share extends DualShockInput
-  /* 8 */ @js.native
-  object Share extends TopLevel[Share with Double]
+  /* 8 */ val Share: typings.babylonjs.deviceEnumsMod.DualShockInput.Share with Double = js.native
   
   /** Square */
   @js.native
   sealed trait Square extends DualShockInput
-  /* 2 */ @js.native
-  object Square extends TopLevel[Square with Double]
+  /* 2 */ val Square: typings.babylonjs.deviceEnumsMod.DualShockInput.Square with Double = js.native
   
   /** TouchPad */
   @js.native
   sealed trait TouchPad extends DualShockInput
-  /* 17 */ @js.native
-  object TouchPad extends TopLevel[TouchPad with Double]
+  /* 17 */ val TouchPad: typings.babylonjs.deviceEnumsMod.DualShockInput.TouchPad with Double = js.native
   
   /** Triangle */
   @js.native
   sealed trait Triangle extends DualShockInput
-  /* 3 */ @js.native
-  object Triangle extends TopLevel[Triangle with Double]
+  /* 3 */ val Triangle: typings.babylonjs.deviceEnumsMod.DualShockInput.Triangle with Double = js.native
 }

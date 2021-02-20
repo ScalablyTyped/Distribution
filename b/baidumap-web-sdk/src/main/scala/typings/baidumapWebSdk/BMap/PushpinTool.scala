@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushpinTool extends js.Object {
+trait PushpinTool extends StObject {
   
   def close(): Boolean = js.native
   
@@ -38,39 +39,27 @@ object PushpinTool {
   }
   
   @scala.inline
-  implicit class PushpinToolOps[Self <: PushpinTool] (val x: Self) extends AnyVal {
+  implicit class PushpinToolMutableBuilder[Self <: PushpinTool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCursor(value: () => String): Self = StObject.set(x, "getCursor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIcon(value: () => Icon): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Boolean): Self = this.set("close", js.Any.fromFunction0(value))
+    def setOnmarkend(value: typings.baidumapWebSdk.anon.Marker => Unit): Self = StObject.set(x, "onmarkend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCursor(value: () => String): Self = this.set("getCursor", js.Any.fromFunction0(value))
+    def setOpen(value: () => Boolean): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIcon(value: () => Icon): Self = this.set("getIcon", js.Any.fromFunction0(value))
+    def setSetCursor(value: String => String): Self = StObject.set(x, "setCursor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnmarkend(value: typings.baidumapWebSdk.anon.Marker => Unit): Self = this.set("onmarkend", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOpen(value: () => Boolean): Self = this.set("open", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCursor(value: String => String): Self = this.set("setCursor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetIcon(value: Icon => Icon): Self = this.set("setIcon", js.Any.fromFunction1(value))
+    def setSetIcon(value: Icon => Icon): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
   }
 }

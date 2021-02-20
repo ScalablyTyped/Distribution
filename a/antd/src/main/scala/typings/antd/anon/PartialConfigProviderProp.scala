@@ -6,13 +6,14 @@ import typings.antd.configProviderSizeContextMod.SizeType
 import typings.antd.renderEmptyMod.RenderEmptyHandler
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/config-provider.ConfigProviderProps> */
 @js.native
-trait PartialConfigProviderProp extends js.Object {
+trait PartialConfigProviderProp extends StObject {
   
   var autoInsertSpaceInButton: js.UndefOr[Boolean] = js.native
   
@@ -55,114 +56,102 @@ object PartialConfigProviderProp {
   }
   
   @scala.inline
-  implicit class PartialConfigProviderPropOps[Self <: PartialConfigProviderProp] (val x: Self) extends AnyVal {
+  implicit class PartialConfigProviderPropMutableBuilder[Self <: PartialConfigProviderProp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoInsertSpaceInButton(value: Boolean): Self = StObject.set(x, "autoInsertSpaceInButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoInsertSpaceInButtonUndefined: Self = StObject.set(x, "autoInsertSpaceInButton", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoInsertSpaceInButton(value: Boolean): Self = this.set("autoInsertSpaceInButton", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteAutoInsertSpaceInButton: Self = this.set("autoInsertSpaceInButton", js.undefined)
+    def setComponentSize(value: SizeType): Self = StObject.set(x, "componentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setComponentSizeUndefined: Self = StObject.set(x, "componentSize", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setCsp(value: CSPConfig): Self = StObject.set(x, "csp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentSize(value: SizeType): Self = this.set("componentSize", value.asInstanceOf[js.Any])
+    def setCspUndefined: Self = StObject.set(x, "csp", js.undefined)
     
     @scala.inline
-    def deleteComponentSize: Self = this.set("componentSize", js.undefined)
+    def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsp(value: CSPConfig): Self = this.set("csp", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteCsp: Self = this.set("csp", js.undefined)
+    def setDropdownMatchSelectWidth(value: Boolean): Self = StObject.set(x, "dropdownMatchSelectWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: DirectionType): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDropdownMatchSelectWidthUndefined: Self = StObject.set(x, "dropdownMatchSelectWidth", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setForm(value: ValidateMessages): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropdownMatchSelectWidth(value: Boolean): Self = this.set("dropdownMatchSelectWidth", value.asInstanceOf[js.Any])
+    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
     @scala.inline
-    def deleteDropdownMatchSelectWidth: Self = this.set("dropdownMatchSelectWidth", js.undefined)
+    def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForm(value: ValidateMessages): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
     
     @scala.inline
-    def deleteForm: Self = this.set("form", js.undefined)
+    def setGetTargetContainer(value: () => HTMLElement): Self = StObject.set(x, "getTargetContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = this.set("getPopupContainer", js.Any.fromFunction1(value))
+    def setGetTargetContainerUndefined: Self = StObject.set(x, "getTargetContainer", js.undefined)
     
     @scala.inline
-    def deleteGetPopupContainer: Self = this.set("getPopupContainer", js.undefined)
+    def setInput(value: AutoComplete): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTargetContainer(value: () => HTMLElement): Self = this.set("getTargetContainer", js.Any.fromFunction0(value))
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteGetTargetContainer: Self = this.set("getTargetContainer", js.undefined)
+    def setLocale(value: typings.antd.localeProviderMod.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: AutoComplete): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setPageHeader(value: Ghost): Self = StObject.set(x, "pageHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: typings.antd.localeProviderMod.Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setPageHeaderUndefined: Self = StObject.set(x, "pageHeader", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageHeader(value: Ghost): Self = this.set("pageHeader", value.asInstanceOf[js.Any])
+    def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
     @scala.inline
-    def deletePageHeader: Self = this.set("pageHeader", js.undefined)
+    def setRenderEmpty(value: /* componentName */ js.UndefOr[String] => ReactNode): Self = StObject.set(x, "renderEmpty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    def setRenderEmptyUndefined: Self = StObject.set(x, "renderEmpty", js.undefined)
     
     @scala.inline
-    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    def setSpace(value: Size): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderEmpty(value: /* componentName */ js.UndefOr[String] => ReactNode): Self = this.set("renderEmpty", js.Any.fromFunction1(value))
+    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def deleteRenderEmpty: Self = this.set("renderEmpty", js.undefined)
+    def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpace(value: Size): Self = this.set("space", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpace: Self = this.set("space", js.undefined)
-    
-    @scala.inline
-    def setVirtual(value: Boolean): Self = this.set("virtual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtual: Self = this.set("virtual", js.undefined)
+    def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
   }
 }

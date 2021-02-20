@@ -1,14 +1,17 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/flat/flip", JSImport.Namespace)
-@js.native
-object flipMod extends js.Object {
+object flipMod {
   
+  @JSImport("ol/geom/flat/flip", "flipXY")
+  @js.native
   def flipXY(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): js.Array[Double] = js.native
+  @JSImport("ol/geom/flat/flip", "flipXY")
+  @js.native
   def flipXY(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -17,6 +20,8 @@ object flipMod extends js.Object {
     opt_dest: js.UndefOr[scala.Nothing],
     opt_destOffset: Double
   ): js.Array[Double] = js.native
+  @JSImport("ol/geom/flat/flip", "flipXY")
+  @js.native
   def flipXY(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -24,6 +29,8 @@ object flipMod extends js.Object {
     stride: Double,
     opt_dest: js.Array[Double]
   ): js.Array[Double] = js.native
+  @JSImport("ol/geom/flat/flip", "flipXY")
+  @js.native
   def flipXY(
     flatCoordinates: js.Array[Double],
     offset: Double,

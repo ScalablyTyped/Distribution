@@ -1,12 +1,13 @@
 package typings.ionic.definitionsMod
 
 import typings.ionic.anon.IdNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISession extends js.Object {
+trait ISession extends StObject {
   
   def getUser(): IdNumber = js.native
   
@@ -39,39 +40,27 @@ object ISession {
   }
   
   @scala.inline
-  implicit class ISessionOps[Self <: ISession] (val x: Self) extends AnyVal {
+  implicit class ISessionMutableBuilder[Self <: ISession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetUser(value: () => IdNumber): Self = StObject.set(x, "getUser", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetUserToken(value: () => String): Self = StObject.set(x, "getUserToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLoggedIn(value: () => Boolean): Self = StObject.set(x, "isLoggedIn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetUser(value: () => IdNumber): Self = this.set("getUser", js.Any.fromFunction0(value))
+    def setLogin(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "login", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetUserToken(value: () => String): Self = this.set("getUserToken", js.Any.fromFunction0(value))
+    def setLogout(value: () => js.Promise[Unit]): Self = StObject.set(x, "logout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsLoggedIn(value: () => Boolean): Self = this.set("isLoggedIn", js.Any.fromFunction0(value))
+    def setSsoLogin(value: String => js.Promise[Unit]): Self = StObject.set(x, "ssoLogin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLogin(value: (String, String) => js.Promise[Unit]): Self = this.set("login", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLogout(value: () => js.Promise[Unit]): Self = this.set("logout", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSsoLogin(value: String => js.Promise[Unit]): Self = this.set("ssoLogin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTokenLogin(value: String => js.Promise[Unit]): Self = this.set("tokenLogin", js.Any.fromFunction1(value))
+    def setTokenLogin(value: String => js.Promise[Unit]): Self = StObject.set(x, "tokenLogin", js.Any.fromFunction1(value))
   }
 }

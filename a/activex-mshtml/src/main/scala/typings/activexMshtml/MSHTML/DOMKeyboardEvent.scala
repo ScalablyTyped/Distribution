@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMKeyboardEvent extends js.Object {
+trait DOMKeyboardEvent extends StObject {
   
   @JSName("MSHTML.DOMKeyboardEvent_typekey")
   var MSHTMLDotDOMKeyboardEvent_typekey: DOMKeyboardEvent = js.native

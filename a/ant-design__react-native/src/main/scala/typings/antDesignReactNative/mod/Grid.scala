@@ -2,6 +2,7 @@ package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.gridMod.GridProps
 import typings.antDesignReactNative.gridMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Grid () extends default
 /* static members */
-@JSImport("@ant-design/react-native", "Grid")
-@js.native
-object Grid extends js.Object {
+object Grid {
   
-  var defaultProps: GridProps = js.native
+  @JSImport("@ant-design/react-native", "Grid")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "Grid.defaultProps")
+  @js.native
+  def defaultProps: GridProps = js.native
+  @scala.inline
+  def defaultProps_=(x: GridProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

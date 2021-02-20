@@ -3,6 +3,7 @@ package typings.bizcharts.mod
 import typings.bizcharts.anon.Style
 import typings.react.mod.CSSProperties
 import typings.react.mod.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,144 +65,132 @@ object TooltipProps {
   }
   
   @scala.inline
-  implicit class TooltipPropsOps[Self <: TooltipProps] (val x: Self) extends AnyVal {
+  implicit class TooltipPropsMutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerTpl(value: String): Self = StObject.set(x, "containerTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerTplUndefined: Self = StObject.set(x, "containerTpl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrosshairs(value: Style | Boolean): Self = StObject.set(x, "crosshairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerTpl(value: String): Self = this.set("containerTpl", value.asInstanceOf[js.Any])
+    def setCrosshairsUndefined: Self = StObject.set(x, "crosshairs", js.undefined)
     
     @scala.inline
-    def deleteContainerTpl: Self = this.set("containerTpl", js.undefined)
+    def setEnterable(value: Boolean): Self = StObject.set(x, "enterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairs(value: Style | Boolean): Self = this.set("crosshairs", value.asInstanceOf[js.Any])
+    def setEnterableUndefined: Self = StObject.set(x, "enterable", js.undefined)
     
     @scala.inline
-    def deleteCrosshairs: Self = this.set("crosshairs", js.undefined)
+    def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterable(value: Boolean): Self = this.set("enterable", value.asInstanceOf[js.Any])
+    def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
     @scala.inline
-    def deleteEnterable: Self = this.set("enterable", js.undefined)
+    def `setG2-tooltip`(value: CSSProperties): Self = StObject.set(x, "g2-tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollow(value: Boolean): Self = this.set("follow", value.asInstanceOf[js.Any])
+    def `setG2-tooltip-list`(value: CSSProperties): Self = StObject.set(x, "g2-tooltip-list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFollow: Self = this.set("follow", js.undefined)
+    def `setG2-tooltip-list-item`(value: CSSProperties): Self = StObject.set(x, "g2-tooltip-list-item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setG2-tooltip`(value: CSSProperties): Self = this.set("g2-tooltip", value.asInstanceOf[js.Any])
+    def `setG2-tooltip-list-itemUndefined`: Self = StObject.set(x, "g2-tooltip-list-item", js.undefined)
     
     @scala.inline
-    def `deleteG2-tooltip`: Self = this.set("g2-tooltip", js.undefined)
+    def `setG2-tooltip-listUndefined`: Self = StObject.set(x, "g2-tooltip-list", js.undefined)
     
     @scala.inline
-    def `setG2-tooltip-list`(value: CSSProperties): Self = this.set("g2-tooltip-list", value.asInstanceOf[js.Any])
+    def `setG2-tooltip-marker`(value: CSSProperties): Self = StObject.set(x, "g2-tooltip-marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteG2-tooltip-list`: Self = this.set("g2-tooltip-list", js.undefined)
+    def `setG2-tooltip-markerUndefined`: Self = StObject.set(x, "g2-tooltip-marker", js.undefined)
     
     @scala.inline
-    def `setG2-tooltip-list-item`(value: CSSProperties): Self = this.set("g2-tooltip-list-item", value.asInstanceOf[js.Any])
+    def `setG2-tooltip-title`(value: CSSProperties): Self = StObject.set(x, "g2-tooltip-title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteG2-tooltip-list-item`: Self = this.set("g2-tooltip-list-item", js.undefined)
+    def `setG2-tooltip-titleUndefined`: Self = StObject.set(x, "g2-tooltip-title", js.undefined)
     
     @scala.inline
-    def `setG2-tooltip-marker`(value: CSSProperties): Self = this.set("g2-tooltip-marker", value.asInstanceOf[js.Any])
+    def `setG2-tooltipUndefined`: Self = StObject.set(x, "g2-tooltip", js.undefined)
     
     @scala.inline
-    def `deleteG2-tooltip-marker`: Self = this.set("g2-tooltip-marker", js.undefined)
+    def setHideMarkers(value: Boolean): Self = StObject.set(x, "hideMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setG2-tooltip-title`(value: CSSProperties): Self = this.set("g2-tooltip-title", value.asInstanceOf[js.Any])
+    def setHideMarkersUndefined: Self = StObject.set(x, "hideMarkers", js.undefined)
     
     @scala.inline
-    def `deleteG2-tooltip-title`: Self = this.set("g2-tooltip-title", js.undefined)
+    def setHtmlContent(value: (/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[_]]) => String): Self = StObject.set(x, "htmlContent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHideMarkers(value: Boolean): Self = this.set("hideMarkers", value.asInstanceOf[js.Any])
+    def setHtmlContentUndefined: Self = StObject.set(x, "htmlContent", js.undefined)
     
     @scala.inline
-    def deleteHideMarkers: Self = this.set("hideMarkers", js.undefined)
+    def setInPlot(value: Boolean): Self = StObject.set(x, "inPlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlContent(value: (/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[_]]) => String): Self = this.set("htmlContent", js.Any.fromFunction2(value))
+    def setInPlotUndefined: Self = StObject.set(x, "inPlot", js.undefined)
     
     @scala.inline
-    def deleteHtmlContent: Self = this.set("htmlContent", js.undefined)
+    def setItemTpl(value: String): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInPlot(value: Boolean): Self = this.set("inPlot", value.asInstanceOf[js.Any])
+    def setItemTplUndefined: Self = StObject.set(x, "itemTpl", js.undefined)
     
     @scala.inline
-    def deleteInPlot: Self = this.set("inPlot", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemTpl(value: String): Self = this.set("itemTpl", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteItemTpl: Self = this.set("itemTpl", js.undefined)
+    def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: PositionType): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
+    def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
     
     @scala.inline
-    def deleteShared: Self = this.set("shared", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTitle(value: Boolean): Self = this.set("showTitle", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteShowTitle: Self = this.set("showTitle", js.undefined)
+    def setTriggerOn(value: triggerOnType): Self = StObject.set(x, "triggerOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTriggerOnUndefined: Self = StObject.set(x, "triggerOn", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerOn(value: triggerOnType): Self = this.set("triggerOn", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTriggerOn: Self = this.set("triggerOn", js.undefined)
+    def setUseHtml(value: Boolean): Self = StObject.set(x, "useHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUseHtml(value: Boolean): Self = this.set("useHtml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseHtml: Self = this.set("useHtml", js.undefined)
+    def setUseHtmlUndefined: Self = StObject.set(x, "useHtml", js.undefined)
   }
 }

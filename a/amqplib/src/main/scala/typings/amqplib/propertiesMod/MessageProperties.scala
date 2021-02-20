@@ -1,11 +1,12 @@
 package typings.amqplib.propertiesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageProperties extends js.Object {
+trait MessageProperties extends StObject {
   
   var appId: js.UndefOr[js.Any] = js.native
   
@@ -44,99 +45,87 @@ object MessageProperties {
   }
   
   @scala.inline
-  implicit class MessagePropertiesOps[Self <: MessageProperties] (val x: Self) extends AnyVal {
+  implicit class MessagePropertiesMutableBuilder[Self <: MessageProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: js.Any): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterId(value: js.Any): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: MessagePropertyHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
     @scala.inline
-    def setAppId(value: js.Any): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setContentEncoding(value: js.Any): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
     
     @scala.inline
-    def setClusterId(value: js.Any): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    def setContentType(value: js.Any): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setContentEncoding(value: js.Any): Self = this.set("contentEncoding", value.asInstanceOf[js.Any])
+    def setCorrelationId(value: js.Any): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentEncoding: Self = this.set("contentEncoding", js.undefined)
+    def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
     
     @scala.inline
-    def setContentType(value: js.Any): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setDeliveryMode(value: js.Any): Self = StObject.set(x, "deliveryMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setDeliveryModeUndefined: Self = StObject.set(x, "deliveryMode", js.undefined)
     
     @scala.inline
-    def setCorrelationId(value: js.Any): Self = this.set("correlationId", value.asInstanceOf[js.Any])
+    def setExpiration(value: js.Any): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCorrelationId: Self = this.set("correlationId", js.undefined)
+    def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
     @scala.inline
-    def setDeliveryMode(value: js.Any): Self = this.set("deliveryMode", value.asInstanceOf[js.Any])
+    def setHeaders(value: MessagePropertyHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeliveryMode: Self = this.set("deliveryMode", js.undefined)
+    def setMessageId(value: js.Any): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: js.Any): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
     @scala.inline
-    def deleteExpiration: Self = this.set("expiration", js.undefined)
+    def setPriority(value: js.Any): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: js.Any): Self = this.set("messageId", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteMessageId: Self = this.set("messageId", js.undefined)
+    def setReplyTo(value: js.Any): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: js.Any): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyTo(value: js.Any): Self = this.set("replyTo", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteReplyTo: Self = this.set("replyTo", js.undefined)
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: js.Any): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setUserId(value: js.Any): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: js.Any): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Branding extends js.Object {
+trait Branding extends StObject {
   
   /**
     * Settings used to apply the account’s branding to email receipts, invoices,
@@ -42,48 +43,36 @@ object Branding {
   }
   
   @scala.inline
-  implicit class BrandingOps[Self <: Branding] (val x: Self) extends AnyVal {
+  implicit class BrandingMutableBuilder[Self <: Branding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranding(value: Icon): Self = StObject.set(x, "branding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrandingUndefined: Self = StObject.set(x, "branding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCard_payments(value: Declineon): Self = StObject.set(x, "card_payments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranding(value: Icon): Self = this.set("branding", value.asInstanceOf[js.Any])
+    def setCard_paymentsUndefined: Self = StObject.set(x, "card_payments", js.undefined)
     
     @scala.inline
-    def deleteBranding: Self = this.set("branding", js.undefined)
+    def setDashboard(value: Displayname): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCard_payments(value: Declineon): Self = this.set("card_payments", value.asInstanceOf[js.Any])
+    def setDashboardUndefined: Self = StObject.set(x, "dashboard", js.undefined)
     
     @scala.inline
-    def deleteCard_payments: Self = this.set("card_payments", js.undefined)
+    def setPayments(value: Statementdescriptor): Self = StObject.set(x, "payments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboard(value: Displayname): Self = this.set("dashboard", value.asInstanceOf[js.Any])
+    def setPaymentsUndefined: Self = StObject.set(x, "payments", js.undefined)
     
     @scala.inline
-    def deleteDashboard: Self = this.set("dashboard", js.undefined)
+    def setPayouts(value: Debitnegativebalances): Self = StObject.set(x, "payouts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayments(value: Statementdescriptor): Self = this.set("payments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayments: Self = this.set("payments", js.undefined)
-    
-    @scala.inline
-    def setPayouts(value: Debitnegativebalances): Self = this.set("payouts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayouts: Self = this.set("payouts", js.undefined)
+    def setPayoutsUndefined: Self = StObject.set(x, "payouts", js.undefined)
   }
 }

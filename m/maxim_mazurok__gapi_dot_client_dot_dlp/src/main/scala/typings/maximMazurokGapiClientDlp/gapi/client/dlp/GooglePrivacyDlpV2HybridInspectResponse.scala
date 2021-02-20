@@ -1,9 +1,10 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
 @js.native
-trait GooglePrivacyDlpV2HybridInspectResponse extends js.Object
+trait GooglePrivacyDlpV2HybridInspectResponse extends StObject

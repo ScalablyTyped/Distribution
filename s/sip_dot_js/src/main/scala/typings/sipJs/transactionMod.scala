@@ -6,16 +6,16 @@ import typings.sipJs.coreTransportMod.Transport
 import typings.sipJs.logMod.Logger
 import typings.sipJs.transactionStateMod.TransactionState
 import typings.sipJs.transactionUserMod.TransactionUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/transactions/transaction", JSImport.Namespace)
-@js.native
-object transactionMod extends js.Object {
+object transactionMod {
   
+  @JSImport("sip.js/lib/core/transactions/transaction", "Transaction")
   @js.native
-  abstract class Transaction protected () extends js.Object {
+  abstract class Transaction protected () extends StObject {
     protected def this(
       _transport: Transport,
       _user: TransactionUser,

@@ -2,6 +2,7 @@ package typings.antdMobile.mod
 
 import typings.antdMobile.anon.PrefixClsSize
 import typings.antdMobile.wingBlankMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class WingBlank () extends default
 /* static members */
-@JSImport("antd-mobile", "WingBlank")
-@js.native
-object WingBlank extends js.Object {
+object WingBlank {
   
-  var defaultProps: PrefixClsSize = js.native
+  @JSImport("antd-mobile", "WingBlank")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile", "WingBlank.defaultProps")
+  @js.native
+  def defaultProps: PrefixClsSize = js.native
+  @scala.inline
+  def defaultProps_=(x: PrefixClsSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

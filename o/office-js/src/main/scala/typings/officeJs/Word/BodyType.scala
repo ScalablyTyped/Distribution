@@ -1,17 +1,18 @@
 package typings.officeJs.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BodyType extends js.Object
+sealed trait BodyType extends StObject
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.BodyType")
 @js.native
-object BodyType extends js.Object {
+object BodyType extends StObject {
   
   @js.native
   sealed trait footer extends BodyType

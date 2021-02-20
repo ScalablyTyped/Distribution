@@ -1,12 +1,14 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// legacy alias
 // declare type Spawn = StructureSpawn;
 @js.native
-trait Spawning extends js.Object {
+trait Spawning extends StObject {
   
   /**
     * Cancel spawning immediately. Energy spent on spawning is not returned.
@@ -62,44 +64,32 @@ object Spawning {
   }
   
   @scala.inline
-  implicit class SpawningOps[Self <: Spawning] (val x: Self) extends AnyVal {
+  implicit class SpawningMutableBuilder[Self <: Spawning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => ScreepsReturnCode with (OK | ERR_NOT_OWNER)): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirections(value: js.Array[DirectionConstant]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectionsVarargs(value: DirectionConstant*): Self = StObject.set(x, "directions", js.Array(value :_*))
     
     @scala.inline
-    def setCancel(value: () => ScreepsReturnCode with (OK | ERR_NOT_OWNER)): Self = this.set("cancel", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionsVarargs(value: DirectionConstant*): Self = this.set("directions", js.Array(value :_*))
+    def setNeedTime(value: Double): Self = StObject.set(x, "needTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirections(value: js.Array[DirectionConstant]): Self = this.set("directions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNeedTime(value: Double): Self = this.set("needTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemainingTime(value: Double): Self = this.set("remainingTime", value.asInstanceOf[js.Any])
+    def setRemainingTime(value: Double): Self = StObject.set(x, "remainingTime", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSetDirections(
       value: js.Array[DirectionConstant] => ScreepsReturnCode with (OK | ERR_NOT_OWNER | ERR_INVALID_ARGS)
-    ): Self = this.set("setDirections", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "setDirections", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSpawn(value: StructureSpawn): Self = this.set("spawn", value.asInstanceOf[js.Any])
+    def setSpawn(value: StructureSpawn): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
   }
 }

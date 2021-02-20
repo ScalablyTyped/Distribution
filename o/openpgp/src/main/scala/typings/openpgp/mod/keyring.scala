@@ -1,28 +1,29 @@
 package typings.openpgp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openpgp", "keyring")
-@js.native
-object keyring extends js.Object {
+object keyring {
   
-  @js.native
-  object keyring extends js.Object {
+  object keyring {
     
     /**
       * Array of keys
       * @param keys The keys to store in this array
       */
+    @JSImport("openpgp", "keyring.keyring.KeyArray")
+    @js.native
     def KeyArray(keys: js.Array[_]): Unit = js.native
     
+    @JSImport("openpgp", "keyring.keyring.Keyring")
     @js.native
     /**
       * Initialization routine for the keyring.
       * @param storeHandler class implementing loadPublic(), loadPrivate(), storePublic(), and storePrivate() methods
       */
-    class Keyring () extends js.Object {
+    class Keyring () extends StObject {
       def this(storeHandler: typings.openpgp.mod.keyring.localstore.LocalStore) = this()
       
       /**
@@ -65,11 +66,11 @@ object keyring extends js.Object {
     }
   }
   
-  @js.native
-  object localstore extends js.Object {
+  object localstore {
     
+    @JSImport("openpgp", "keyring.localstore.LocalStore")
     @js.native
-    class LocalStore protected () extends js.Object {
+    class LocalStore protected () extends StObject {
       /**
         * The class that deals with storage of the keyring.
         * Currently the only option is to use HTML5 local storage.

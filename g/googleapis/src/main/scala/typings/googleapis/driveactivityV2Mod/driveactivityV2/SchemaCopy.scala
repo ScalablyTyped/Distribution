@@ -1,5 +1,6 @@
 package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object was created by copying an existing object.
   */
 @js.native
-trait SchemaCopy extends js.Object {
+trait SchemaCopy extends StObject {
   
   /**
     * The the original object.
@@ -24,24 +25,12 @@ object SchemaCopy {
   }
   
   @scala.inline
-  implicit class SchemaCopyOps[Self <: SchemaCopy] (val x: Self) extends AnyVal {
+  implicit class SchemaCopyMutableBuilder[Self <: SchemaCopy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOriginalObject(value: SchemaTargetReference): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOriginalObject(value: SchemaTargetReference): Self = this.set("originalObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalObject: Self = this.set("originalObject", js.undefined)
+    def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
   }
 }

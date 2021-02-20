@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options - Options object to configure the stencil parameters.
   */
 @js.native
-trait StencilParameters extends js.Object {
+trait StencilParameters extends StObject {
   
   /**
     * Sets operation to perform if stencil test is failed. See {@link pc.GraphicsDevice#setStencilOperation}.
@@ -70,39 +71,27 @@ object StencilParameters {
   }
   
   @scala.inline
-  implicit class StencilParametersOps[Self <: StencilParameters] (val x: Self) extends AnyVal {
+  implicit class StencilParametersMutableBuilder[Self <: StencilParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFail(value: Double): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunc(value: Double): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadMask(value: Double): Self = StObject.set(x, "readMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: Double): Self = this.set("fail", value.asInstanceOf[js.Any])
+    def setRef(value: Double): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunc(value: Double): Self = this.set("func", value.asInstanceOf[js.Any])
+    def setWriteMask(value: Double): Self = StObject.set(x, "writeMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadMask(value: Double): Self = this.set("readMask", value.asInstanceOf[js.Any])
+    def setZfail(value: Double): Self = StObject.set(x, "zfail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRef(value: Double): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWriteMask(value: Double): Self = this.set("writeMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZfail(value: Double): Self = this.set("zfail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZpass(value: Double): Self = this.set("zpass", value.asInstanceOf[js.Any])
+    def setZpass(value: Double): Self = StObject.set(x, "zpass", value.asInstanceOf[js.Any])
   }
 }

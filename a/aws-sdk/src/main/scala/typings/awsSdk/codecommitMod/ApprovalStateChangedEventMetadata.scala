@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApprovalStateChangedEventMetadata extends js.Object {
+trait ApprovalStateChangedEventMetadata extends StObject {
   
   /**
     * The approval status for the pull request.
@@ -26,30 +27,18 @@ object ApprovalStateChangedEventMetadata {
   }
   
   @scala.inline
-  implicit class ApprovalStateChangedEventMetadataOps[Self <: ApprovalStateChangedEventMetadata] (val x: Self) extends AnyVal {
+  implicit class ApprovalStateChangedEventMetadataMutableBuilder[Self <: ApprovalStateChangedEventMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalStatus(value: ApprovalState): Self = StObject.set(x, "approvalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalStatusUndefined: Self = StObject.set(x, "approvalStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalStatus(value: ApprovalState): Self = this.set("approvalStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApprovalStatus: Self = this.set("approvalStatus", js.undefined)
-    
-    @scala.inline
-    def setRevisionId(value: RevisionId): Self = this.set("revisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitPullRequestCompletionOptions extends js.Object {
+trait GitPullRequestCompletionOptions extends StObject {
   
   /**
     * If true, policies will be explicitly bypassed while the pull request is completed.
@@ -59,39 +60,27 @@ object GitPullRequestCompletionOptions {
   }
   
   @scala.inline
-  implicit class GitPullRequestCompletionOptionsOps[Self <: GitPullRequestCompletionOptions] (val x: Self) extends AnyVal {
+  implicit class GitPullRequestCompletionOptionsMutableBuilder[Self <: GitPullRequestCompletionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBypassPolicy(value: Boolean): Self = StObject.set(x, "bypassPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBypassReason(value: String): Self = StObject.set(x, "bypassReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteSourceBranch(value: Boolean): Self = StObject.set(x, "deleteSourceBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBypassPolicy(value: Boolean): Self = this.set("bypassPolicy", value.asInstanceOf[js.Any])
+    def setMergeCommitMessage(value: String): Self = StObject.set(x, "mergeCommitMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBypassReason(value: String): Self = this.set("bypassReason", value.asInstanceOf[js.Any])
+    def setSquashMerge(value: Boolean): Self = StObject.set(x, "squashMerge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteSourceBranch(value: Boolean): Self = this.set("deleteSourceBranch", value.asInstanceOf[js.Any])
+    def setTransitionWorkItems(value: Boolean): Self = StObject.set(x, "transitionWorkItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeCommitMessage(value: String): Self = this.set("mergeCommitMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSquashMerge(value: Boolean): Self = this.set("squashMerge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionWorkItems(value: Boolean): Self = this.set("transitionWorkItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggeredByAutoComplete(value: Boolean): Self = this.set("triggeredByAutoComplete", value.asInstanceOf[js.Any])
+    def setTriggeredByAutoComplete(value: Boolean): Self = StObject.set(x, "triggeredByAutoComplete", value.asInstanceOf[js.Any])
   }
 }

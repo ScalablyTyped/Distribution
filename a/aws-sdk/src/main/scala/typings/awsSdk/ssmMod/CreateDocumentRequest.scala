@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDocumentRequest extends js.Object {
+trait CreateDocumentRequest extends StObject {
   
   /**
     * A list of key and value pairs that describe attachments to a version of a document.
@@ -61,75 +62,63 @@ object CreateDocumentRequest {
   }
   
   @scala.inline
-  implicit class CreateDocumentRequestOps[Self <: CreateDocumentRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDocumentRequestMutableBuilder[Self <: CreateDocumentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: AttachmentsSourceList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentsVarargs(value: AttachmentsSource*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
     
     @scala.inline
-    def setContent(value: DocumentContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setContent(value: DocumentContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: DocumentName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "DocumentFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsVarargs(value: AttachmentsSource*): Self = this.set("Attachments", js.Array(value :_*))
+    def setDocumentFormatUndefined: Self = StObject.set(x, "DocumentFormat", js.undefined)
     
     @scala.inline
-    def setAttachments(value: AttachmentsSourceList): Self = this.set("Attachments", value.asInstanceOf[js.Any])
+    def setDocumentType(value: DocumentType): Self = StObject.set(x, "DocumentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachments: Self = this.set("Attachments", js.undefined)
+    def setDocumentTypeUndefined: Self = StObject.set(x, "DocumentType", js.undefined)
     
     @scala.inline
-    def setDocumentFormat(value: DocumentFormat): Self = this.set("DocumentFormat", value.asInstanceOf[js.Any])
+    def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentFormat: Self = this.set("DocumentFormat", js.undefined)
+    def setRequires(value: DocumentRequiresList): Self = StObject.set(x, "Requires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentType(value: DocumentType): Self = this.set("DocumentType", value.asInstanceOf[js.Any])
+    def setRequiresUndefined: Self = StObject.set(x, "Requires", js.undefined)
     
     @scala.inline
-    def deleteDocumentType: Self = this.set("DocumentType", js.undefined)
+    def setRequiresVarargs(value: DocumentRequires*): Self = StObject.set(x, "Requires", js.Array(value :_*))
     
     @scala.inline
-    def setRequiresVarargs(value: DocumentRequires*): Self = this.set("Requires", js.Array(value :_*))
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequires(value: DocumentRequiresList): Self = this.set("Requires", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteRequires: Self = this.set("Requires", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setVersionName(value: DocumentVersionName): Self = StObject.set(x, "VersionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetType(value: TargetType): Self = this.set("TargetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetType: Self = this.set("TargetType", js.undefined)
-    
-    @scala.inline
-    def setVersionName(value: DocumentVersionName): Self = this.set("VersionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionName: Self = this.set("VersionName", js.undefined)
+    def setVersionNameUndefined: Self = StObject.set(x, "VersionName", js.undefined)
   }
 }

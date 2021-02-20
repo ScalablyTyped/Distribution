@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Shared request debug options for all cloudsearch RPC methods.
   */
 @js.native
-trait SchemaDebugOptions extends js.Object {
+trait SchemaDebugOptions extends StObject {
   
   /**
     * If set, the request will enable debugging features of Cloud Search. Only
@@ -25,24 +26,12 @@ object SchemaDebugOptions {
   }
   
   @scala.inline
-  implicit class SchemaDebugOptionsOps[Self <: SchemaDebugOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaDebugOptionsMutableBuilder[Self <: SchemaDebugOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableDebugging(value: Boolean): Self = StObject.set(x, "enableDebugging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnableDebugging(value: Boolean): Self = this.set("enableDebugging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableDebugging: Self = this.set("enableDebugging", js.undefined)
+    def setEnableDebuggingUndefined: Self = StObject.set(x, "enableDebugging", js.undefined)
   }
 }

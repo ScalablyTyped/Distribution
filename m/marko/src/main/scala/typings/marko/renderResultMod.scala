@@ -5,13 +5,12 @@ import typings.marko.domElementMod.DomElement
 import typings.marko.markoBooleans.`false`
 import typings.std.Document
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("marko/src/runtime/html/RenderResult", JSImport.Namespace)
-@js.native
-object renderResultMod extends js.Object {
+object renderResultMod {
   
   @js.native
   trait RenderResult extends DomElement {

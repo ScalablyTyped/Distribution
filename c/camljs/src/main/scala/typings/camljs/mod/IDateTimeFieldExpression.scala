@@ -1,12 +1,13 @@
 package typings.camljs.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDateTimeFieldExpression extends js.Object {
+trait IDateTimeFieldExpression extends StObject {
   
   /** Checks whether the value of the field is equal to the specified value.
     The datetime value should be defined in ISO 8601 format! */

@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.rendering
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * process.
   */
 @js.native
-trait StrokeAttributes extends js.Object {
+trait StrokeAttributes extends StObject {
   
   /**
     * Array of ink on and off lengths, measured in user coordinate space.
@@ -95,39 +96,27 @@ object StrokeAttributes {
   }
   
   @scala.inline
-  implicit class StrokeAttributesOps[Self <: StrokeAttributes] (val x: Self) extends AnyVal {
+  implicit class StrokeAttributesMutableBuilder[Self <: StrokeAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashArray(value: SafeArray[Double]): Self = StObject.set(x, "DashArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndCapType(value: Double): Self = StObject.set(x, "EndCapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJoinType(value: Double): Self = StObject.set(x, "JoinType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashArray(value: SafeArray[Double]): Self = this.set("DashArray", value.asInstanceOf[js.Any])
+    def setLineArray(value: SafeArray[Double]): Self = StObject.set(x, "LineArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCapType(value: Double): Self = this.set("EndCapType", value.asInstanceOf[js.Any])
+    def setMiterLimit(value: Double): Self = StObject.set(x, "MiterLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoinType(value: Double): Self = this.set("JoinType", value.asInstanceOf[js.Any])
+    def setStartCapType(value: Double): Self = StObject.set(x, "StartCapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineArray(value: SafeArray[Double]): Self = this.set("LineArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMiterLimit(value: Double): Self = this.set("MiterLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartCapType(value: Double): Self = this.set("StartCapType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = this.set("StrokeWidth", value.asInstanceOf[js.Any])
+    def setStrokeWidth(value: Double): Self = StObject.set(x, "StrokeWidth", value.asInstanceOf[js.Any])
   }
 }

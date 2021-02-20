@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * object is deleted its metadata is deleted too.
   */
 @js.native
-trait SchemaDeveloperMetadata extends js.Object {
+trait SchemaDeveloperMetadata extends StObject {
   
   /**
     * The location where the metadata is associated.
@@ -55,48 +56,36 @@ object SchemaDeveloperMetadata {
   }
   
   @scala.inline
-  implicit class SchemaDeveloperMetadataOps[Self <: SchemaDeveloperMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaDeveloperMetadataMutableBuilder[Self <: SchemaDeveloperMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: SchemaDeveloperMetadataLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadataId(value: Double): Self = StObject.set(x, "metadataId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: SchemaDeveloperMetadataLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMetadataIdUndefined: Self = StObject.set(x, "metadataId", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMetadataKey(value: String): Self = StObject.set(x, "metadataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataId(value: Double): Self = this.set("metadataId", value.asInstanceOf[js.Any])
+    def setMetadataKeyUndefined: Self = StObject.set(x, "metadataKey", js.undefined)
     
     @scala.inline
-    def deleteMetadataId: Self = this.set("metadataId", js.undefined)
+    def setMetadataValue(value: String): Self = StObject.set(x, "metadataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataKey(value: String): Self = this.set("metadataKey", value.asInstanceOf[js.Any])
+    def setMetadataValueUndefined: Self = StObject.set(x, "metadataValue", js.undefined)
     
     @scala.inline
-    def deleteMetadataKey: Self = this.set("metadataKey", js.undefined)
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataValue(value: String): Self = this.set("metadataValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadataValue: Self = this.set("metadataValue", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

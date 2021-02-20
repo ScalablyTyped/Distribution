@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2InspectResult extends js.Object {
+trait GooglePrivacyDlpV2InspectResult extends StObject {
   
   /** List of findings for an item. */
   var findings: js.UndefOr[js.Array[GooglePrivacyDlpV2Finding]] = js.native
@@ -25,33 +26,21 @@ object GooglePrivacyDlpV2InspectResult {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2InspectResultOps[Self <: GooglePrivacyDlpV2InspectResult] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2InspectResultMutableBuilder[Self <: GooglePrivacyDlpV2InspectResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindings(value: js.Array[GooglePrivacyDlpV2Finding]): Self = StObject.set(x, "findings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindingsTruncated(value: Boolean): Self = StObject.set(x, "findingsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindingsTruncatedUndefined: Self = StObject.set(x, "findingsTruncated", js.undefined)
     
     @scala.inline
-    def setFindingsVarargs(value: GooglePrivacyDlpV2Finding*): Self = this.set("findings", js.Array(value :_*))
+    def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
     
     @scala.inline
-    def setFindings(value: js.Array[GooglePrivacyDlpV2Finding]): Self = this.set("findings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFindings: Self = this.set("findings", js.undefined)
-    
-    @scala.inline
-    def setFindingsTruncated(value: Boolean): Self = this.set("findingsTruncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFindingsTruncated: Self = this.set("findingsTruncated", js.undefined)
+    def setFindingsVarargs(value: GooglePrivacyDlpV2Finding*): Self = StObject.set(x, "findings", js.Array(value :_*))
   }
 }

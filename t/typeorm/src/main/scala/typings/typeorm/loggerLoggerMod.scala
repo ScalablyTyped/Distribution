@@ -5,16 +5,15 @@ import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import typings.typeorm.typeormStrings.info
 import typings.typeorm.typeormStrings.log
 import typings.typeorm.typeormStrings.warn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/logger/Logger", JSImport.Namespace)
-@js.native
-object loggerLoggerMod extends js.Object {
+object loggerLoggerMod {
   
   @js.native
-  trait Logger extends js.Object {
+  trait Logger extends StObject {
     
     /**
       * Logs events from the migrations run process.

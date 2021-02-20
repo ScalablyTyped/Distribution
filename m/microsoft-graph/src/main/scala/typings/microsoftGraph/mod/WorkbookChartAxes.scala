@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,45 +26,33 @@ object WorkbookChartAxes {
   }
   
   @scala.inline
-  implicit class WorkbookChartAxesOps[Self <: WorkbookChartAxes] (val x: Self) extends AnyVal {
+  implicit class WorkbookChartAxesMutableBuilder[Self <: WorkbookChartAxes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoryAxis(value: NullableOption[WorkbookChartAxis]): Self = StObject.set(x, "categoryAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryAxisNull: Self = StObject.set(x, "categoryAxis", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
     
     @scala.inline
-    def setCategoryAxis(value: NullableOption[WorkbookChartAxis]): Self = this.set("categoryAxis", value.asInstanceOf[js.Any])
+    def setSeriesAxis(value: NullableOption[WorkbookChartAxis]): Self = StObject.set(x, "seriesAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategoryAxis: Self = this.set("categoryAxis", js.undefined)
+    def setSeriesAxisNull: Self = StObject.set(x, "seriesAxis", null)
     
     @scala.inline
-    def setCategoryAxisNull: Self = this.set("categoryAxis", null)
+    def setSeriesAxisUndefined: Self = StObject.set(x, "seriesAxis", js.undefined)
     
     @scala.inline
-    def setSeriesAxis(value: NullableOption[WorkbookChartAxis]): Self = this.set("seriesAxis", value.asInstanceOf[js.Any])
+    def setValueAxis(value: NullableOption[WorkbookChartAxis]): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeriesAxis: Self = this.set("seriesAxis", js.undefined)
+    def setValueAxisNull: Self = StObject.set(x, "valueAxis", null)
     
     @scala.inline
-    def setSeriesAxisNull: Self = this.set("seriesAxis", null)
-    
-    @scala.inline
-    def setValueAxis(value: NullableOption[WorkbookChartAxis]): Self = this.set("valueAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueAxis: Self = this.set("valueAxis", js.undefined)
-    
-    @scala.inline
-    def setValueAxisNull: Self = this.set("valueAxis", null)
+    def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
   }
 }

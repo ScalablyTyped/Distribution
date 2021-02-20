@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Segment extends js.Object {
+trait Segment extends StObject {
   
   /** A dynamic segment definition in the request. */
   var dynamicSegment: js.UndefOr[DynamicSegment] = js.native
@@ -22,30 +23,18 @@ object Segment {
   }
   
   @scala.inline
-  implicit class SegmentOps[Self <: Segment] (val x: Self) extends AnyVal {
+  implicit class SegmentMutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicSegment(value: DynamicSegment): Self = StObject.set(x, "dynamicSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicSegmentUndefined: Self = StObject.set(x, "dynamicSegment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicSegment(value: DynamicSegment): Self = this.set("dynamicSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDynamicSegment: Self = this.set("dynamicSegment", js.undefined)
-    
-    @scala.inline
-    def setSegmentId(value: String): Self = this.set("segmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentId: Self = this.set("segmentId", js.undefined)
+    def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionUrlMapsValidateRequest extends js.Object {
+trait RegionUrlMapsValidateRequest extends StObject {
   
   /** Content of the UrlMap to be validated. */
   var resource: js.UndefOr[UrlMap] = js.native
@@ -19,24 +20,12 @@ object RegionUrlMapsValidateRequest {
   }
   
   @scala.inline
-  implicit class RegionUrlMapsValidateRequestOps[Self <: RegionUrlMapsValidateRequest] (val x: Self) extends AnyVal {
+  implicit class RegionUrlMapsValidateRequestMutableBuilder[Self <: RegionUrlMapsValidateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResource(value: UrlMap): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResource(value: UrlMap): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

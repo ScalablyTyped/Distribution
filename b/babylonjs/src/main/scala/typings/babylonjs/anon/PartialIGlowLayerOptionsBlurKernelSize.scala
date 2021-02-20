@@ -2,13 +2,14 @@ package typings.babylonjs.anon
 
 import typings.babylonjs.BABYLON.Camera
 import typings.babylonjs.BABYLON.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<babylonjs.BABYLON.IGlowLayerOptions> */
 @js.native
-trait PartialIGlowLayerOptionsBlurKernelSize extends js.Object {
+trait PartialIGlowLayerOptionsBlurKernelSize extends StObject {
   
   var blurKernelSize: js.UndefOr[Double] = js.native
   
@@ -31,57 +32,45 @@ object PartialIGlowLayerOptionsBlurKernelSize {
   }
   
   @scala.inline
-  implicit class PartialIGlowLayerOptionsBlurKernelSizeOps[Self <: PartialIGlowLayerOptionsBlurKernelSize] (val x: Self) extends AnyVal {
+  implicit class PartialIGlowLayerOptionsBlurKernelSizeMutableBuilder[Self <: PartialIGlowLayerOptionsBlurKernelSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlurKernelSize(value: Double): Self = StObject.set(x, "blurKernelSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlurKernelSizeUndefined: Self = StObject.set(x, "blurKernelSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurKernelSize(value: Double): Self = this.set("blurKernelSize", value.asInstanceOf[js.Any])
+    def setCameraNull: Self = StObject.set(x, "camera", null)
     
     @scala.inline
-    def deleteBlurKernelSize: Self = this.set("blurKernelSize", js.undefined)
+    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
     @scala.inline
-    def setCamera(value: Nullable[Camera]): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setMainTextureFixedSize(value: Double): Self = StObject.set(x, "mainTextureFixedSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCamera: Self = this.set("camera", js.undefined)
+    def setMainTextureFixedSizeUndefined: Self = StObject.set(x, "mainTextureFixedSize", js.undefined)
     
     @scala.inline
-    def setCameraNull: Self = this.set("camera", null)
+    def setMainTextureRatio(value: Double): Self = StObject.set(x, "mainTextureRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainTextureFixedSize(value: Double): Self = this.set("mainTextureFixedSize", value.asInstanceOf[js.Any])
+    def setMainTextureRatioUndefined: Self = StObject.set(x, "mainTextureRatio", js.undefined)
     
     @scala.inline
-    def deleteMainTextureFixedSize: Self = this.set("mainTextureFixedSize", js.undefined)
+    def setMainTextureSamples(value: Double): Self = StObject.set(x, "mainTextureSamples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainTextureRatio(value: Double): Self = this.set("mainTextureRatio", value.asInstanceOf[js.Any])
+    def setMainTextureSamplesUndefined: Self = StObject.set(x, "mainTextureSamples", js.undefined)
     
     @scala.inline
-    def deleteMainTextureRatio: Self = this.set("mainTextureRatio", js.undefined)
+    def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainTextureSamples(value: Double): Self = this.set("mainTextureSamples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMainTextureSamples: Self = this.set("mainTextureSamples", js.undefined)
-    
-    @scala.inline
-    def setRenderingGroupId(value: Double): Self = this.set("renderingGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderingGroupId: Self = this.set("renderingGroupId", js.undefined)
+    def setRenderingGroupIdUndefined: Self = StObject.set(x, "renderingGroupId", js.undefined)
   }
 }

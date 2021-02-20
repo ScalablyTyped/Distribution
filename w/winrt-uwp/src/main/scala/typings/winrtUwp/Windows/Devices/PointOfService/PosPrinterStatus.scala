@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the status of a point-of-service printer, such as the power state of the printer. */
 @js.native
-trait PosPrinterStatus extends js.Object {
+trait PosPrinterStatus extends StObject {
   
   /** Gets extended information about the power state of the point-of-service printer that the original equipment manufacturer (OEM) defines. Value is only valid if the PosPrinterStatus.StatusKind property is PosPrinterStatusKind.Extended. */
   var extendedStatus: Double = js.native
@@ -23,24 +24,12 @@ object PosPrinterStatus {
   }
   
   @scala.inline
-  implicit class PosPrinterStatusOps[Self <: PosPrinterStatus] (val x: Self) extends AnyVal {
+  implicit class PosPrinterStatusMutableBuilder[Self <: PosPrinterStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtendedStatus(value: Double): Self = this.set("extendedStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusKind(value: PosPrinterStatusKind): Self = this.set("statusKind", value.asInstanceOf[js.Any])
+    def setStatusKind(value: PosPrinterStatusKind): Self = StObject.set(x, "statusKind", value.asInstanceOf[js.Any])
   }
 }

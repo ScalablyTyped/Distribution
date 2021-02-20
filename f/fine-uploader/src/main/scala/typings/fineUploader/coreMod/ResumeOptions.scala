@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResumeOptions extends js.Object {
+trait ResumeOptions extends StObject {
   
   /**
     * Define custom keys used to identify this file among other resume records.
@@ -46,42 +47,30 @@ object ResumeOptions {
   }
   
   @scala.inline
-  implicit class ResumeOptionsOps[Self <: ResumeOptions] (val x: Self) extends AnyVal {
+  implicit class ResumeOptionsMutableBuilder[Self <: ResumeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomKeys(value: js.Function): Self = StObject.set(x, "customKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomKeysUndefined: Self = StObject.set(x, "customKeys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomKeys(value: js.Function): Self = this.set("customKeys", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteCustomKeys: Self = this.set("customKeys", js.undefined)
+    def setParamNames(value: ParamNamesOptions): Self = StObject.set(x, "paramNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setParamNamesUndefined: Self = StObject.set(x, "paramNames", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setRecordsExpireIn(value: Double): Self = StObject.set(x, "recordsExpireIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamNames(value: ParamNamesOptions): Self = this.set("paramNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParamNames: Self = this.set("paramNames", js.undefined)
-    
-    @scala.inline
-    def setRecordsExpireIn(value: Double): Self = this.set("recordsExpireIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordsExpireIn: Self = this.set("recordsExpireIn", js.undefined)
+    def setRecordsExpireInUndefined: Self = StObject.set(x, "recordsExpireIn", js.undefined)
   }
 }

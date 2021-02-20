@@ -1,16 +1,17 @@
 package typings.arrayFrom
 
 import typings.arrayFrom.anon.FnCall
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("array.from/polyfill", JSImport.Namespace)
-@js.native
-object polyfillMod extends js.Object {
+object polyfillMod {
   
   /**
     * Gets the optimal `Array.from` implementation to use.
     */
+  @JSImport("array.from/polyfill", JSImport.Namespace)
+  @js.native
   def apply(): FnCall = js.native
 }

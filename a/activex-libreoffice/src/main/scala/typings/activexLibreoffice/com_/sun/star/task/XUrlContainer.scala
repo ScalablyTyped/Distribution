@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,30 +59,18 @@ object XUrlContainer {
   }
   
   @scala.inline
-  implicit class XUrlContainerOps[Self <: XUrlContainer] (val x: Self) extends AnyVal {
+  implicit class XUrlContainerMutableBuilder[Self <: XUrlContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddUrl(value: (String, Boolean) => Unit): Self = StObject.set(x, "addUrl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindUrl(value: String => String): Self = StObject.set(x, "findUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetUrls(value: Boolean => SafeArray[String]): Self = StObject.set(x, "getUrls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddUrl(value: (String, Boolean) => Unit): Self = this.set("addUrl", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setFindUrl(value: String => String): Self = this.set("findUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetUrls(value: Boolean => SafeArray[String]): Self = this.set("getUrls", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveUrl(value: String => Unit): Self = this.set("removeUrl", js.Any.fromFunction1(value))
+    def setRemoveUrl(value: String => Unit): Self = StObject.set(x, "removeUrl", js.Any.fromFunction1(value))
   }
 }

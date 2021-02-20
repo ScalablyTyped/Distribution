@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopupTemplateProperties extends js.Object {
+trait PopupTemplateProperties extends StObject {
   
   /**
     * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [action](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) or [action toggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html) objects.
@@ -86,93 +87,81 @@ object PopupTemplateProperties {
   }
   
   @scala.inline
-  implicit class PopupTemplatePropertiesOps[Self <: PopupTemplateProperties] (val x: Self) extends AnyVal {
+  implicit class PopupTemplatePropertiesMutableBuilder[Self <: PopupTemplateProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: CollectionProperties[ActionButtonProperties | ActionToggleProperties]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: (ActionButtonProperties | ActionToggleProperties)*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: (ActionButtonProperties | ActionToggleProperties)*): Self = this.set("actions", js.Array(value :_*))
+    def setContent(value: js.Array[ContentProperties] | String | js.Function | js.Promise[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: CollectionProperties[ActionButtonProperties | ActionToggleProperties]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setContentVarargs(value: ContentProperties*): Self = StObject.set(x, "content", js.Array(value :_*))
     
     @scala.inline
-    def setContentVarargs(value: ContentProperties*): Self = this.set("content", js.Array(value :_*))
+    def setExpressionInfos(value: js.Array[popupExpressionInfoProperties]): Self = StObject.set(x, "expressionInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: js.Array[ContentProperties] | String | js.Function | js.Promise[_]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setExpressionInfosUndefined: Self = StObject.set(x, "expressionInfos", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setExpressionInfosVarargs(value: popupExpressionInfoProperties*): Self = StObject.set(x, "expressionInfos", js.Array(value :_*))
     
     @scala.inline
-    def setExpressionInfosVarargs(value: popupExpressionInfoProperties*): Self = this.set("expressionInfos", js.Array(value :_*))
+    def setFieldInfos(value: js.Array[FieldInfoProperties]): Self = StObject.set(x, "fieldInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionInfos(value: js.Array[popupExpressionInfoProperties]): Self = this.set("expressionInfos", value.asInstanceOf[js.Any])
+    def setFieldInfosUndefined: Self = StObject.set(x, "fieldInfos", js.undefined)
     
     @scala.inline
-    def deleteExpressionInfos: Self = this.set("expressionInfos", js.undefined)
+    def setFieldInfosVarargs(value: FieldInfoProperties*): Self = StObject.set(x, "fieldInfos", js.Array(value :_*))
     
     @scala.inline
-    def setFieldInfosVarargs(value: FieldInfoProperties*): Self = this.set("fieldInfos", js.Array(value :_*))
+    def setLastEditInfoEnabled(value: Boolean): Self = StObject.set(x, "lastEditInfoEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldInfos(value: js.Array[FieldInfoProperties]): Self = this.set("fieldInfos", value.asInstanceOf[js.Any])
+    def setLastEditInfoEnabledUndefined: Self = StObject.set(x, "lastEditInfoEnabled", js.undefined)
     
     @scala.inline
-    def deleteFieldInfos: Self = this.set("fieldInfos", js.undefined)
+    def setLayerOptions(value: LayerOptionsProperties): Self = StObject.set(x, "layerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEditInfoEnabled(value: Boolean): Self = this.set("lastEditInfoEnabled", value.asInstanceOf[js.Any])
+    def setLayerOptionsUndefined: Self = StObject.set(x, "layerOptions", js.undefined)
     
     @scala.inline
-    def deleteLastEditInfoEnabled: Self = this.set("lastEditInfoEnabled", js.undefined)
+    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerOptions(value: LayerOptionsProperties): Self = this.set("layerOptions", value.asInstanceOf[js.Any])
+    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
     @scala.inline
-    def deleteLayerOptions: Self = this.set("layerOptions", js.undefined)
+    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
     
     @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = this.set("outFields", js.Array(value :_*))
+    def setOverwriteActions(value: Boolean): Self = StObject.set(x, "overwriteActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutFields(value: js.Array[String]): Self = this.set("outFields", value.asInstanceOf[js.Any])
+    def setOverwriteActionsUndefined: Self = StObject.set(x, "overwriteActions", js.undefined)
     
     @scala.inline
-    def deleteOutFields: Self = this.set("outFields", js.undefined)
+    def setRelatedRecordsInfo(value: RelatedRecordsInfoProperties): Self = StObject.set(x, "relatedRecordsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwriteActions(value: Boolean): Self = this.set("overwriteActions", value.asInstanceOf[js.Any])
+    def setRelatedRecordsInfoUndefined: Self = StObject.set(x, "relatedRecordsInfo", js.undefined)
     
     @scala.inline
-    def deleteOverwriteActions: Self = this.set("overwriteActions", js.undefined)
+    def setTitle(value: String | js.Function | js.Promise[_]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedRecordsInfo(value: RelatedRecordsInfoProperties): Self = this.set("relatedRecordsInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelatedRecordsInfo: Self = this.set("relatedRecordsInfo", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String | js.Function | js.Promise[_]): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

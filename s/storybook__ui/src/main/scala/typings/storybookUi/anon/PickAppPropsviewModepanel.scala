@@ -1,13 +1,14 @@
 package typings.storybookUi.anon
 
 import typings.reactSizeme.mod.WithSizeOnSizeCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/ui.@storybook/ui/dist/app.AppProps, 'viewMode' | 'panelCount' | 'docsOnly' | 'layout'> & react-sizeme.react-sizeme.WithSizeProps */
 @js.native
-trait PickAppPropsviewModepanel extends js.Object {
+trait PickAppPropsviewModepanel extends StObject {
   
   var docsOnly: Boolean = js.native
   
@@ -33,40 +34,28 @@ object PickAppPropsviewModepanel {
   }
   
   @scala.inline
-  implicit class PickAppPropsviewModepanelOps[Self <: PickAppPropsviewModepanel] (val x: Self) extends AnyVal {
+  implicit class PickAppPropsviewModepanelMutableBuilder[Self <: PickAppPropsviewModepanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocsOnly(value: Boolean): Self = this.set("docsOnly", value.asInstanceOf[js.Any])
+    def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLayout(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['layout'] */ js.Any
-    ): Self = this.set("layout", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelCount(value: Double): Self = this.set("panelCount", value.asInstanceOf[js.Any])
+    def setOnSize(value: /* size */ typings.reactSizeme.anon.Height => Unit): Self = StObject.set(x, "onSize", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnSizeUndefined: Self = StObject.set(x, "onSize", js.undefined)
+    
+    @scala.inline
+    def setPanelCount(value: Double): Self = StObject.set(x, "panelCount", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setViewMode(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
-    ): Self = this.set("viewMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnSize(value: /* size */ typings.reactSizeme.anon.Height => Unit): Self = this.set("onSize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnSize: Self = this.set("onSize", js.undefined)
+    ): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

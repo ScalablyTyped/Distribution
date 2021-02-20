@@ -1,12 +1,13 @@
 package typings.expoConfigureSplashScreen.anon
 
 import typings.colorString.mod.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DarkMode extends js.Object {
+trait DarkMode extends StObject {
   
   var backgroundColor: Color = js.native
   
@@ -23,33 +24,21 @@ object DarkMode {
   }
   
   @scala.inline
-  implicit class DarkModeOps[Self <: DarkMode] (val x: Self) extends AnyVal {
+  implicit class DarkModeMutableBuilder[Self <: DarkMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDarkMode(value: BackgroundColorStatusBar): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setStatusBar(value: `1`): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDarkMode(value: BackgroundColorStatusBar): Self = this.set("darkMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDarkMode: Self = this.set("darkMode", js.undefined)
-    
-    @scala.inline
-    def setStatusBar(value: `1`): Self = this.set("statusBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusBar: Self = this.set("statusBar", js.undefined)
+    def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
   }
 }

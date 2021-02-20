@@ -1,16 +1,16 @@
 package typings.fastCsvParse
 
 import typings.fastCsvParse.parserOptionsMod.ParserOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fast-csv/parse/build/src/parser/column/ColumnFormatter", JSImport.Namespace)
-@js.native
-object columnFormatterMod extends js.Object {
+object columnFormatterMod {
   
+  @JSImport("@fast-csv/parse/build/src/parser/column/ColumnFormatter", "ColumnFormatter")
   @js.native
-  class ColumnFormatter protected () extends js.Object {
+  class ColumnFormatter protected () extends StObject {
     def this(parserOptions: ParserOptions) = this()
     
     def format(col: String): String = js.native

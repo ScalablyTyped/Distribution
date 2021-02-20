@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,16 +30,18 @@ class GossipBlockResponse () extends IGossipBlockResponse {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse")
-@js.native
-object GossipBlockResponse extends js.Object {
+object GossipBlockResponse {
   
   /**
     * Creates a new GossipBlockResponse instance using the specified properties.
     * @param [properties] Properties to set
     * @returns GossipBlockResponse instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.create")
+  @js.native
   def create(): GossipBlockResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.create")
+  @js.native
   def create(properties: IGossipBlockResponse): GossipBlockResponse = js.native
   
   /**
@@ -49,9 +52,17 @@ object GossipBlockResponse extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.decode")
+  @js.native
   def decode(reader: Reader): GossipBlockResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.decode")
+  @js.native
   def decode(reader: Reader, length: Double): GossipBlockResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.decode")
+  @js.native
   def decode(reader: Uint8Array): GossipBlockResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): GossipBlockResponse = js.native
   
   /**
@@ -61,7 +72,11 @@ object GossipBlockResponse extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): GossipBlockResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): GossipBlockResponse = js.native
   
   /**
@@ -70,7 +85,11 @@ object GossipBlockResponse extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.encode")
+  @js.native
   def encode(message: IGossipBlockResponse): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.encode")
+  @js.native
   def encode(message: IGossipBlockResponse, writer: Writer): Writer = js.native
   
   /**
@@ -79,7 +98,11 @@ object GossipBlockResponse extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IGossipBlockResponse): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IGossipBlockResponse, writer: Writer): Writer = js.native
   
   /**
@@ -87,6 +110,8 @@ object GossipBlockResponse extends js.Object {
     * @param object Plain object
     * @returns GossipBlockResponse
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): GossipBlockResponse = js.native
   
   /**
@@ -95,7 +120,11 @@ object GossipBlockResponse extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.toObject")
+  @js.native
   def toObject(message: GossipBlockResponse): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.toObject")
+  @js.native
   def toObject(message: GossipBlockResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -103,5 +132,7 @@ object GossipBlockResponse extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipBlockResponse.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

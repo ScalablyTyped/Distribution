@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InteractionMixin extends js.Object {
+trait InteractionMixin extends StObject {
   
   def clearInteractionHandle(clearHandle: Double): Unit = js.native
   
@@ -30,27 +31,15 @@ object InteractionMixin {
   }
   
   @scala.inline
-  implicit class InteractionMixinOps[Self <: InteractionMixin] (val x: Self) extends AnyVal {
+  implicit class InteractionMixinMutableBuilder[Self <: InteractionMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearInteractionHandle(value: Double => Unit): Self = StObject.set(x, "clearInteractionHandle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateInteractionHandle(value: () => Double): Self = StObject.set(x, "createInteractionHandle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClearInteractionHandle(value: Double => Unit): Self = this.set("clearInteractionHandle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateInteractionHandle(value: () => Double): Self = this.set("createInteractionHandle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRunAfterInteractions(value: js.Function0[_] => Unit): Self = this.set("runAfterInteractions", js.Any.fromFunction1(value))
+    def setRunAfterInteractions(value: js.Function0[_] => Unit): Self = StObject.set(x, "runAfterInteractions", js.Any.fromFunction1(value))
   }
 }

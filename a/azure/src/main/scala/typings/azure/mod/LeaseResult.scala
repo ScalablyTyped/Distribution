@@ -1,12 +1,13 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "LeaseResult")
 @js.native
-class LeaseResult () extends js.Object {
+class LeaseResult () extends StObject {
   def this(container: String) = this()
   def this(container: String, blob: String) = this()
   def this(container: String, blob: String, id: String) = this()

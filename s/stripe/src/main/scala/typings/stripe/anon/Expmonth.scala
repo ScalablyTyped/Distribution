@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Expmonth extends js.Object {
+trait Expmonth extends StObject {
   
   var exp_month: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object Expmonth {
   }
   
   @scala.inline
-  implicit class ExpmonthOps[Self <: Expmonth] (val x: Self) extends AnyVal {
+  implicit class ExpmonthMutableBuilder[Self <: Expmonth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExp_monthUndefined: Self = StObject.set(x, "exp_month", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExp_month(value: Double): Self = this.set("exp_month", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExp_month: Self = this.set("exp_month", js.undefined)
-    
-    @scala.inline
-    def setExp_year(value: Double): Self = this.set("exp_year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExp_year: Self = this.set("exp_year", js.undefined)
+    def setExp_yearUndefined: Self = StObject.set(x, "exp_year", js.undefined)
   }
 }

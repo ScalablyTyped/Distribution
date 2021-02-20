@@ -1,12 +1,13 @@
 package typings.clearbladejsServer.CbServer
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimerCreateOptions extends js.Object {
+trait TimerCreateOptions extends StObject {
   
   var description: js.UndefOr[String] = js.native
   
@@ -31,60 +32,48 @@ object TimerCreateOptions {
   }
   
   @scala.inline
-  implicit class TimerCreateOptionsOps[Self <: TimerCreateOptions] (val x: Self) extends AnyVal {
+  implicit class TimerCreateOptionsMutableBuilder[Self <: TimerCreateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setRepeats(value: Double): Self = StObject.set(x, "repeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequency(value: Double): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    def setRepeatsUndefined: Self = StObject.set(x, "repeats", js.undefined)
     
     @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    def setService_name(value: String): Self = StObject.set(x, "service_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeats(value: Double): Self = this.set("repeats", value.asInstanceOf[js.Any])
+    def setService_nameUndefined: Self = StObject.set(x, "service_name", js.undefined)
     
     @scala.inline
-    def deleteRepeats: Self = this.set("repeats", js.undefined)
+    def setStart_time(value: Date): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService_name(value: String): Self = this.set("service_name", value.asInstanceOf[js.Any])
+    def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
     
     @scala.inline
-    def deleteService_name: Self = this.set("service_name", js.undefined)
+    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_time(value: Date): Self = this.set("start_time", value.asInstanceOf[js.Any])
+    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
     
     @scala.inline
-    def deleteStart_time: Self = this.set("start_time", js.undefined)
+    def setUser_token(value: String): Self = StObject.set(x, "user_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_id: Self = this.set("user_id", js.undefined)
-    
-    @scala.inline
-    def setUser_token(value: String): Self = this.set("user_token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_token: Self = this.set("user_token", js.undefined)
+    def setUser_tokenUndefined: Self = StObject.set(x, "user_token", js.undefined)
   }
 }

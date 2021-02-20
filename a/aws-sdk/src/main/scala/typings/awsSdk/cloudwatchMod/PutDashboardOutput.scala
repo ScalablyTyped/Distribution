@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutDashboardOutput extends js.Object {
+trait PutDashboardOutput extends StObject {
   
   /**
     * If the input for PutDashboard was correct and the dashboard was successfully created or modified, this result is empty. If this result includes only warning messages, then the input was valid enough for the dashboard to be created or modified, but some elements of the dashboard might not render. If this result includes error messages, the input was not valid and the operation failed.
@@ -21,27 +22,15 @@ object PutDashboardOutput {
   }
   
   @scala.inline
-  implicit class PutDashboardOutputOps[Self <: PutDashboardOutput] (val x: Self) extends AnyVal {
+  implicit class PutDashboardOutputMutableBuilder[Self <: PutDashboardOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashboardValidationMessages(value: DashboardValidationMessages): Self = StObject.set(x, "DashboardValidationMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashboardValidationMessagesUndefined: Self = StObject.set(x, "DashboardValidationMessages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDashboardValidationMessagesVarargs(value: DashboardValidationMessage*): Self = this.set("DashboardValidationMessages", js.Array(value :_*))
-    
-    @scala.inline
-    def setDashboardValidationMessages(value: DashboardValidationMessages): Self = this.set("DashboardValidationMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDashboardValidationMessages: Self = this.set("DashboardValidationMessages", js.undefined)
+    def setDashboardValidationMessagesVarargs(value: DashboardValidationMessage*): Self = StObject.set(x, "DashboardValidationMessages", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.preact.jsxCsstypeMod
 
 import typings.preact.preactStrings.`[referrerpolicy]_`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -228,7 +229,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.`[wrap]`
   - typings.preact.preactStrings.`[xmlns]`
 */
-trait HtmlAttributes extends js.Object
+trait HtmlAttributes extends StObject
 object HtmlAttributes {
   
   @scala.inline

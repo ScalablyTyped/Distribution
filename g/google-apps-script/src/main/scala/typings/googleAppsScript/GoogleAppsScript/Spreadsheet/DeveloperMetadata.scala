@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Access and modify developer metadata. To create new developer metadata use Range.addDeveloperMetadata(key), Sheet.addDeveloperMetadata(key), or Spreadsheet.addDeveloperMetadata(key).
   */
 @js.native
-trait DeveloperMetadata extends js.Object {
+trait DeveloperMetadata extends StObject {
   
   def getId(): Integer = js.native
   
@@ -60,57 +61,45 @@ object DeveloperMetadata {
   }
   
   @scala.inline
-  implicit class DeveloperMetadataOps[Self <: DeveloperMetadata] (val x: Self) extends AnyVal {
+  implicit class DeveloperMetadataMutableBuilder[Self <: DeveloperMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetKey(value: () => String): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLocation(value: () => DeveloperMetadataLocation): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => Integer): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetValue(value: () => String | Null): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetKey(value: () => String): Self = this.set("getKey", js.Any.fromFunction0(value))
+    def setGetVisibility(value: () => DeveloperMetadataVisibility): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocation(value: () => DeveloperMetadataLocation): Self = this.set("getLocation", js.Any.fromFunction0(value))
+    def setMoveToColumn(value: Range => DeveloperMetadata): Self = StObject.set(x, "moveToColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValue(value: () => String | Null): Self = this.set("getValue", js.Any.fromFunction0(value))
+    def setMoveToRow(value: Range => DeveloperMetadata): Self = StObject.set(x, "moveToRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetVisibility(value: () => DeveloperMetadataVisibility): Self = this.set("getVisibility", js.Any.fromFunction0(value))
+    def setMoveToSheet(value: Sheet => DeveloperMetadata): Self = StObject.set(x, "moveToSheet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveToColumn(value: Range => DeveloperMetadata): Self = this.set("moveToColumn", js.Any.fromFunction1(value))
+    def setMoveToSpreadsheet(value: () => DeveloperMetadata): Self = StObject.set(x, "moveToSpreadsheet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMoveToRow(value: Range => DeveloperMetadata): Self = this.set("moveToRow", js.Any.fromFunction1(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMoveToSheet(value: Sheet => DeveloperMetadata): Self = this.set("moveToSheet", js.Any.fromFunction1(value))
+    def setSetKey(value: String => DeveloperMetadata): Self = StObject.set(x, "setKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveToSpreadsheet(value: () => DeveloperMetadata): Self = this.set("moveToSpreadsheet", js.Any.fromFunction0(value))
+    def setSetValue(value: String => DeveloperMetadata): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetKey(value: String => DeveloperMetadata): Self = this.set("setKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValue(value: String => DeveloperMetadata): Self = this.set("setValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVisibility(value: DeveloperMetadataVisibility => DeveloperMetadata): Self = this.set("setVisibility", js.Any.fromFunction1(value))
+    def setSetVisibility(value: DeveloperMetadataVisibility => DeveloperMetadata): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
   }
 }

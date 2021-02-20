@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Database instance clone request.
   */
 @js.native
-trait SchemaInstancesCloneRequest extends js.Object {
+trait SchemaInstancesCloneRequest extends StObject {
   
   /**
     * Contains details about the clone operation.
@@ -24,24 +25,12 @@ object SchemaInstancesCloneRequest {
   }
   
   @scala.inline
-  implicit class SchemaInstancesCloneRequestOps[Self <: SchemaInstancesCloneRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaInstancesCloneRequestMutableBuilder[Self <: SchemaInstancesCloneRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloneContext(value: SchemaCloneContext): Self = StObject.set(x, "cloneContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloneContext(value: SchemaCloneContext): Self = this.set("cloneContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloneContext: Self = this.set("cloneContext", js.undefined)
+    def setCloneContextUndefined: Self = StObject.set(x, "cloneContext", js.undefined)
   }
 }

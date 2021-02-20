@@ -2,12 +2,13 @@ package typings.jpm.anon
 
 import typings.jpm.contextMenuMod.Context
 import typings.jpm.contextMenuMod.ItemMenuSeparator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentScript extends js.Object {
+trait ContentScript extends StObject {
   
   var contentScript: js.UndefOr[String | js.Array[String]] = js.native
   

@@ -1,11 +1,12 @@
 package typings.tinymce.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Env extends js.Object {
+trait Env extends StObject {
   
   var android: Boolean = js.native
   
@@ -59,60 +60,48 @@ object Env {
   }
   
   @scala.inline
-  implicit class EnvOps[Self <: Env] (val x: Self) extends AnyVal {
+  implicit class EnvMutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCeFalse(value: Boolean): Self = StObject.set(x, "ceFalse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentEditable(value: Boolean): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid(value: Boolean): Self = this.set("android", value.asInstanceOf[js.Any])
+    def setDocumentMode(value: Boolean): Self = StObject.set(x, "documentMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCeFalse(value: Boolean): Self = this.set("ceFalse", value.asInstanceOf[js.Any])
+    def setFileApi(value: Boolean): Self = StObject.set(x, "fileApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentEditable(value: Boolean): Self = this.set("contentEditable", value.asInstanceOf[js.Any])
+    def setGecko(value: Boolean): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentMode(value: Boolean): Self = this.set("documentMode", value.asInstanceOf[js.Any])
+    def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileApi(value: Boolean): Self = this.set("fileApi", value.asInstanceOf[js.Any])
+    def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGecko(value: Boolean): Self = this.set("gecko", value.asInstanceOf[js.Any])
+    def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIOS(value: Boolean): Self = this.set("iOS", value.asInstanceOf[js.Any])
+    def setNoCaretAfter(value: Boolean): Self = StObject.set(x, "noCaretAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIe(value: Boolean): Self = this.set("ie", value.asInstanceOf[js.Any])
+    def setOpera(value: Boolean): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMac(value: Boolean): Self = this.set("mac", value.asInstanceOf[js.Any])
+    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCaretAfter(value: Boolean): Self = this.set("noCaretAfter", value.asInstanceOf[js.Any])
+    def setTransparentSrc(value: Boolean): Self = StObject.set(x, "transparentSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpera(value: Boolean): Self = this.set("opera", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRange(value: Boolean): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransparentSrc(value: Boolean): Self = this.set("transparentSrc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebKit(value: Boolean): Self = this.set("webKit", value.asInstanceOf[js.Any])
+    def setWebKit(value: Boolean): Self = StObject.set(x, "webKit", value.asInstanceOf[js.Any])
   }
 }

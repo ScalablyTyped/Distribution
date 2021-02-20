@@ -1,12 +1,13 @@
 package typings.tern.ternMod
 
 import typings.tern.anon.Depth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompletionsQueryResult extends js.Object {
+trait CompletionsQueryResult extends StObject {
   
   // TODO depends on completionsquery settings -> conditional types?
   /**
@@ -40,33 +41,21 @@ object CompletionsQueryResult {
   }
   
   @scala.inline
-  implicit class CompletionsQueryResultOps[Self <: CompletionsQueryResult] (val x: Self) extends AnyVal {
+  implicit class CompletionsQueryResultMutableBuilder[Self <: CompletionsQueryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletions(value: js.Array[Depth | String]): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionsVarargs(value: (Depth | String)*): Self = StObject.set(x, "completions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionsVarargs(value: (Depth | String)*): Self = this.set("completions", js.Array(value :_*))
+    def setIsProperty(value: Boolean): Self = StObject.set(x, "isProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletions(value: js.Array[Depth | String]): Self = this.set("completions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnd(value: Double | Position): Self = this.set("end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsProperty(value: Boolean): Self = this.set("isProperty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double | Position): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

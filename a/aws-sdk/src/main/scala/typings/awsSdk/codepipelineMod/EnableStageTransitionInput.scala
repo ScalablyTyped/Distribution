@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnableStageTransitionInput extends js.Object {
+trait EnableStageTransitionInput extends StObject {
   
   /**
     * The name of the pipeline in which you want to enable the flow of artifacts from one stage to another.
@@ -31,27 +32,15 @@ object EnableStageTransitionInput {
   }
   
   @scala.inline
-  implicit class EnableStageTransitionInputOps[Self <: EnableStageTransitionInput] (val x: Self) extends AnyVal {
+  implicit class EnableStageTransitionInputMutableBuilder[Self <: EnableStageTransitionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = this.set("pipelineName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStageName(value: StageName): Self = this.set("stageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionType(value: StageTransitionType): Self = this.set("transitionType", value.asInstanceOf[js.Any])
+    def setTransitionType(value: StageTransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
   }
 }

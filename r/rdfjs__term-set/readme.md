@@ -11,8 +11,8 @@ Set for RDFJS Terms
 | Full name          | @rdfjs/term-set |
 | Keywords           | rdf, rdfjs, set, term |
 | # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 603 |
+| # dependents       | 9 |
+| # downloads        | 4868 |
 | # stars            | 0 |
 
 ## Links

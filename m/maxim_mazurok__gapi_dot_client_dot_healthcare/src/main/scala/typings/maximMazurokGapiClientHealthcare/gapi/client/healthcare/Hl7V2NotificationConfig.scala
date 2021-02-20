@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hl7V2NotificationConfig extends js.Object {
+trait Hl7V2NotificationConfig extends StObject {
   
   /**
     * Restricts notifications sent for messages matching a filter. If this is empty, all messages are matched. Syntax:
@@ -39,30 +40,18 @@ object Hl7V2NotificationConfig {
   }
   
   @scala.inline
-  implicit class Hl7V2NotificationConfigOps[Self <: Hl7V2NotificationConfig] (val x: Self) extends AnyVal {
+  implicit class Hl7V2NotificationConfigMutableBuilder[Self <: Hl7V2NotificationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
-    
-    @scala.inline
-    def setPubsubTopic(value: String): Self = this.set("pubsubTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubsubTopic: Self = this.set("pubsubTopic", js.undefined)
+    def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
   }
 }

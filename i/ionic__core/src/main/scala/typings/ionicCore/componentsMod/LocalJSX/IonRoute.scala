@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ionicCore.routeInterfaceMod.NavigationHookCallback
 import typings.ionicCore.routeInterfaceMod.NavigationHookResult
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonRoute extends js.Object {
+trait IonRoute extends StObject {
   
   /**
     * A navigation hook that is fired when the route tries to enter. Returning `true` allows the navigation to proceed, while returning `false` causes it to be cancelled. Returning a `NavigationHookOptions` object causes the router to redirect to the path specified.
@@ -50,51 +51,39 @@ object IonRoute {
   }
   
   @scala.inline
-  implicit class IonRouteOps[Self <: IonRoute] (val x: Self) extends AnyVal {
+  implicit class IonRouteMutableBuilder[Self <: IonRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeEnter(value: () => NavigationHookResult | js.Promise[NavigationHookResult]): Self = StObject.set(x, "beforeEnter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeEnterUndefined: Self = StObject.set(x, "beforeEnter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeLeave(value: () => NavigationHookResult | js.Promise[NavigationHookResult]): Self = StObject.set(x, "beforeLeave", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComponent(value: String): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setBeforeLeaveUndefined: Self = StObject.set(x, "beforeLeave", js.undefined)
     
     @scala.inline
-    def setBeforeEnter(value: () => NavigationHookResult | js.Promise[NavigationHookResult]): Self = this.set("beforeEnter", js.Any.fromFunction0(value))
+    def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeforeEnter: Self = this.set("beforeEnter", js.undefined)
+    def setComponentProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeLeave(value: () => NavigationHookResult | js.Promise[NavigationHookResult]): Self = this.set("beforeLeave", js.Any.fromFunction0(value))
+    def setComponentPropsUndefined: Self = StObject.set(x, "componentProps", js.undefined)
     
     @scala.inline
-    def deleteBeforeLeave: Self = this.set("beforeLeave", js.undefined)
+    def setOnIonRouteDataChanged(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "onIonRouteDataChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComponentProps(value: StringDictionary[js.Any]): Self = this.set("componentProps", value.asInstanceOf[js.Any])
+    def setOnIonRouteDataChangedUndefined: Self = StObject.set(x, "onIonRouteDataChanged", js.undefined)
     
     @scala.inline
-    def deleteComponentProps: Self = this.set("componentProps", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnIonRouteDataChanged(value: /* event */ CustomEvent[_] => Unit): Self = this.set("onIonRouteDataChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnIonRouteDataChanged: Self = this.set("onIonRouteDataChanged", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.webcola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +20,21 @@ class Layout3D protected ()
   ) = this()
 }
 /* static members */
-@JSImport("webcola", "Layout3D")
-@js.native
-object Layout3D extends js.Object {
+object Layout3D {
   
-  var dims: js.Array[String] = js.native
+  @JSImport("webcola", "Layout3D")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var k: Double = js.native
+  @JSImport("webcola", "Layout3D.dims")
+  @js.native
+  def dims: js.Array[String] = js.native
+  @scala.inline
+  def dims_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dims")(x.asInstanceOf[js.Any])
+  
+  @JSImport("webcola", "Layout3D.k")
+  @js.native
+  def k: Double = js.native
+  @scala.inline
+  def k_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("k")(x.asInstanceOf[js.Any])
 }

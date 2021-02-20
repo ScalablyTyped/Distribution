@@ -9,14 +9,14 @@ import typings.babylonjs.pointerDragBehaviorMod.PointerDragBehavior
 import typings.babylonjs.rotationGizmoMod.RotationGizmo
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/planeRotationGizmo", JSImport.Namespace)
-@js.native
-object planeRotationGizmoMod extends js.Object {
+object planeRotationGizmoMod {
   
+  @JSImport("babylonjs/Gizmos/planeRotationGizmo", "PlaneRotationGizmo")
   @js.native
   class PlaneRotationGizmo protected () extends Gizmo {
     /**
@@ -88,9 +88,16 @@ object planeRotationGizmoMod extends js.Object {
     var updateRotationPath: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object PlaneRotationGizmo extends js.Object {
+  object PlaneRotationGizmo {
     
-    var _CircleConstants: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/planeRotationGizmo", "PlaneRotationGizmo")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Gizmos/planeRotationGizmo", "PlaneRotationGizmo._CircleConstants")
+    @js.native
+    def _CircleConstants: js.Any = js.native
+    @scala.inline
+    def _CircleConstants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CircleConstants")(x.asInstanceOf[js.Any])
   }
 }

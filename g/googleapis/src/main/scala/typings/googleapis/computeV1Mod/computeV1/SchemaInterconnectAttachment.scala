@@ -1,5 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * v1.interconnectAttachments ==)
   */
 @js.native
-trait SchemaInterconnectAttachment extends js.Object {
+trait SchemaInterconnectAttachment extends StObject {
   
   /**
     * Determines whether this Attachment will carry packets. Not present for
@@ -183,165 +184,153 @@ object SchemaInterconnectAttachment {
   }
   
   @scala.inline
-  implicit class SchemaInterconnectAttachmentOps[Self <: SchemaInterconnectAttachment] (val x: Self) extends AnyVal {
+  implicit class SchemaInterconnectAttachmentMutableBuilder[Self <: SchemaInterconnectAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminEnabled(value: Boolean): Self = StObject.set(x, "adminEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminEnabledUndefined: Self = StObject.set(x, "adminEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBandwidth(value: String): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminEnabled(value: Boolean): Self = this.set("adminEnabled", value.asInstanceOf[js.Any])
+    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
     @scala.inline
-    def deleteAdminEnabled: Self = this.set("adminEnabled", js.undefined)
+    def setCandidateSubnets(value: js.Array[String]): Self = StObject.set(x, "candidateSubnets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidth(value: String): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    def setCandidateSubnetsUndefined: Self = StObject.set(x, "candidateSubnets", js.undefined)
     
     @scala.inline
-    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    def setCandidateSubnetsVarargs(value: String*): Self = StObject.set(x, "candidateSubnets", js.Array(value :_*))
     
     @scala.inline
-    def setCandidateSubnetsVarargs(value: String*): Self = this.set("candidateSubnets", js.Array(value :_*))
+    def setCloudRouterIpAddress(value: String): Self = StObject.set(x, "cloudRouterIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandidateSubnets(value: js.Array[String]): Self = this.set("candidateSubnets", value.asInstanceOf[js.Any])
+    def setCloudRouterIpAddressUndefined: Self = StObject.set(x, "cloudRouterIpAddress", js.undefined)
     
     @scala.inline
-    def deleteCandidateSubnets: Self = this.set("candidateSubnets", js.undefined)
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudRouterIpAddress(value: String): Self = this.set("cloudRouterIpAddress", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCloudRouterIpAddress: Self = this.set("cloudRouterIpAddress", js.undefined)
+    def setCustomerRouterIpAddress(value: String): Self = StObject.set(x, "customerRouterIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setCustomerRouterIpAddressUndefined: Self = StObject.set(x, "customerRouterIpAddress", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerRouterIpAddress(value: String): Self = this.set("customerRouterIpAddress", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCustomerRouterIpAddress: Self = this.set("customerRouterIpAddress", js.undefined)
+    def setEdgeAvailabilityDomain(value: String): Self = StObject.set(x, "edgeAvailabilityDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEdgeAvailabilityDomainUndefined: Self = StObject.set(x, "edgeAvailabilityDomain", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setGoogleReferenceId(value: String): Self = StObject.set(x, "googleReferenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeAvailabilityDomain(value: String): Self = this.set("edgeAvailabilityDomain", value.asInstanceOf[js.Any])
+    def setGoogleReferenceIdUndefined: Self = StObject.set(x, "googleReferenceId", js.undefined)
     
     @scala.inline
-    def deleteEdgeAvailabilityDomain: Self = this.set("edgeAvailabilityDomain", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleReferenceId(value: String): Self = this.set("googleReferenceId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGoogleReferenceId: Self = this.set("googleReferenceId", js.undefined)
+    def setInterconnect(value: String): Self = StObject.set(x, "interconnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInterconnectUndefined: Self = StObject.set(x, "interconnect", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterconnect(value: String): Self = this.set("interconnect", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInterconnect: Self = this.set("interconnect", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setOperationalStatus(value: String): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPairingKey(value: String): Self = StObject.set(x, "pairingKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationalStatus(value: String): Self = this.set("operationalStatus", value.asInstanceOf[js.Any])
+    def setPairingKeyUndefined: Self = StObject.set(x, "pairingKey", js.undefined)
     
     @scala.inline
-    def deleteOperationalStatus: Self = this.set("operationalStatus", js.undefined)
+    def setPartnerAsn(value: String): Self = StObject.set(x, "partnerAsn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPairingKey(value: String): Self = this.set("pairingKey", value.asInstanceOf[js.Any])
+    def setPartnerAsnUndefined: Self = StObject.set(x, "partnerAsn", js.undefined)
     
     @scala.inline
-    def deletePairingKey: Self = this.set("pairingKey", js.undefined)
+    def setPartnerMetadata(value: SchemaInterconnectAttachmentPartnerMetadata): Self = StObject.set(x, "partnerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerAsn(value: String): Self = this.set("partnerAsn", value.asInstanceOf[js.Any])
+    def setPartnerMetadataUndefined: Self = StObject.set(x, "partnerMetadata", js.undefined)
     
     @scala.inline
-    def deletePartnerAsn: Self = this.set("partnerAsn", js.undefined)
+    def setPrivateInterconnectInfo(value: SchemaInterconnectAttachmentPrivateInfo): Self = StObject.set(x, "privateInterconnectInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerMetadata(value: SchemaInterconnectAttachmentPartnerMetadata): Self = this.set("partnerMetadata", value.asInstanceOf[js.Any])
+    def setPrivateInterconnectInfoUndefined: Self = StObject.set(x, "privateInterconnectInfo", js.undefined)
     
     @scala.inline
-    def deletePartnerMetadata: Self = this.set("partnerMetadata", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateInterconnectInfo(value: SchemaInterconnectAttachmentPrivateInfo): Self = this.set("privateInterconnectInfo", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePrivateInterconnectInfo: Self = this.set("privateInterconnectInfo", js.undefined)
+    def setRouter(value: String): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouter(value: String): Self = this.set("router", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteRouter: Self = this.set("router", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setVlanTag8021q(value: Double): Self = StObject.set(x, "vlanTag8021q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVlanTag8021q(value: Double): Self = this.set("vlanTag8021q", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVlanTag8021q: Self = this.set("vlanTag8021q", js.undefined)
+    def setVlanTag8021qUndefined: Self = StObject.set(x, "vlanTag8021q", js.undefined)
   }
 }

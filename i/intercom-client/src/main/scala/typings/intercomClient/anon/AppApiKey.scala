@@ -1,11 +1,12 @@
 package typings.intercomClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppApiKey extends js.Object {
+trait AppApiKey extends StObject {
   
   var appApiKey: String = js.native
   
@@ -20,24 +21,12 @@ object AppApiKey {
   }
   
   @scala.inline
-  implicit class AppApiKeyOps[Self <: AppApiKey] (val x: Self) extends AnyVal {
+  implicit class AppApiKeyMutableBuilder[Self <: AppApiKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppApiKey(value: String): Self = StObject.set(x, "appApiKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppApiKey(value: String): Self = this.set("appApiKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
   }
 }

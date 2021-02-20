@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListStackInstancesForProvisionedProductOutput extends js.Object {
+trait ListStackInstancesForProvisionedProductOutput extends StObject {
   
   /**
     * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
@@ -26,33 +27,21 @@ object ListStackInstancesForProvisionedProductOutput {
   }
   
   @scala.inline
-  implicit class ListStackInstancesForProvisionedProductOutputOps[Self <: ListStackInstancesForProvisionedProductOutput] (val x: Self) extends AnyVal {
+  implicit class ListStackInstancesForProvisionedProductOutputMutableBuilder[Self <: ListStackInstancesForProvisionedProductOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStackInstances(value: StackInstances): Self = StObject.set(x, "StackInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    def setStackInstancesUndefined: Self = StObject.set(x, "StackInstances", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
-    
-    @scala.inline
-    def setStackInstancesVarargs(value: StackInstance*): Self = this.set("StackInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setStackInstances(value: StackInstances): Self = this.set("StackInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackInstances: Self = this.set("StackInstances", js.undefined)
+    def setStackInstancesVarargs(value: StackInstance*): Self = StObject.set(x, "StackInstances", js.Array(value :_*))
   }
 }

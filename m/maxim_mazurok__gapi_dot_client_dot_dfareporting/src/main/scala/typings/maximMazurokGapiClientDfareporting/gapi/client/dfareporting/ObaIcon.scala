@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObaIcon extends js.Object {
+trait ObaIcon extends StObject {
   
   /** URL to redirect to when an OBA icon is clicked. */
   var iconClickThroughUrl: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object ObaIcon {
   }
   
   @scala.inline
-  implicit class ObaIconOps[Self <: ObaIcon] (val x: Self) extends AnyVal {
+  implicit class ObaIconMutableBuilder[Self <: ObaIcon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconClickThroughUrl(value: String): Self = StObject.set(x, "iconClickThroughUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconClickThroughUrlUndefined: Self = StObject.set(x, "iconClickThroughUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconClickTrackingUrl(value: String): Self = StObject.set(x, "iconClickTrackingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconClickThroughUrl(value: String): Self = this.set("iconClickThroughUrl", value.asInstanceOf[js.Any])
+    def setIconClickTrackingUrlUndefined: Self = StObject.set(x, "iconClickTrackingUrl", js.undefined)
     
     @scala.inline
-    def deleteIconClickThroughUrl: Self = this.set("iconClickThroughUrl", js.undefined)
+    def setIconViewTrackingUrl(value: String): Self = StObject.set(x, "iconViewTrackingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconClickTrackingUrl(value: String): Self = this.set("iconClickTrackingUrl", value.asInstanceOf[js.Any])
+    def setIconViewTrackingUrlUndefined: Self = StObject.set(x, "iconViewTrackingUrl", js.undefined)
     
     @scala.inline
-    def deleteIconClickTrackingUrl: Self = this.set("iconClickTrackingUrl", js.undefined)
+    def setProgram(value: String): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconViewTrackingUrl(value: String): Self = this.set("iconViewTrackingUrl", value.asInstanceOf[js.Any])
+    def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
     
     @scala.inline
-    def deleteIconViewTrackingUrl: Self = this.set("iconViewTrackingUrl", js.undefined)
+    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgram(value: String): Self = this.set("program", value.asInstanceOf[js.Any])
+    def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
     
     @scala.inline
-    def deleteProgram: Self = this.set("program", js.undefined)
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceUrl(value: String): Self = this.set("resourceUrl", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteResourceUrl: Self = this.set("resourceUrl", js.undefined)
+    def setXPosition(value: String): Self = StObject.set(x, "xPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setXPositionUndefined: Self = StObject.set(x, "xPosition", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setYPosition(value: String): Self = StObject.set(x, "yPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXPosition(value: String): Self = this.set("xPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXPosition: Self = this.set("xPosition", js.undefined)
-    
-    @scala.inline
-    def setYPosition(value: String): Self = this.set("yPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYPosition: Self = this.set("yPosition", js.undefined)
+    def setYPositionUndefined: Self = StObject.set(x, "yPosition", js.undefined)
   }
 }

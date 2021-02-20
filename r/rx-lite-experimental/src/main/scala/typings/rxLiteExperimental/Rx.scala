@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.rxCore.Rx.IPromise
 import typings.rxCore.Rx.IScheduler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx")
-@js.native
-object Rx extends js.Object {
+object Rx {
   
   @js.native
-  trait Observable[T] extends js.Object {
+  trait Observable[T] extends StObject {
     
     /**
       *  Repeats source as long as condition holds emulating a do while loop.
@@ -82,7 +81,7 @@ object Rx extends js.Object {
   }
   
   @js.native
-  trait ObservableStatic extends js.Object {
+  trait ObservableStatic extends StObject {
     
     /**
       *  Uses selector to determine which source in sources to use.

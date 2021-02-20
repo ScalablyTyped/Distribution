@@ -1,18 +1,19 @@
 package typings.microsoftAjax.Sys.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Key extends js.Object
+sealed trait Key extends StObject
 /**
   * Describes key codes.
   * The values correspond to values in the Document Object Model (DOM).
   */
 @JSGlobal("Sys.UI.Key")
 @js.native
-object Key extends js.Object {
+object Key extends StObject {
   
   /**
     * Represents the BACKSPACE key.

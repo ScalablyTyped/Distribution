@@ -1,10 +1,15 @@
 package typings.vscodeLanguageserverProtocol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object protocolMod {
+  
+  type DocumentSelector = js.Array[
+    java.lang.String | typings.vscodeLanguageserverProtocol.protocolMod.DocumentFilter
+  ]
   
   type ClientCapabilities = typings.vscodeLanguageserverProtocol.protocolMod._ClientCapabilities with typings.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.WorkspaceFoldersClientCapabilities with typings.vscodeLanguageserverProtocol.protocolConfigurationMod.ConfigurationClientCapabilities with typings.vscodeLanguageserverProtocol.protocolProgressMod.WorkDoneProgressClientCapabilities
   
@@ -15,10 +20,6 @@ package object protocolMod {
   type DocumentHighlightOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
   
   type DocumentRangeFormattingOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
-  
-  type DocumentSelector = js.Array[
-    java.lang.String | typings.vscodeLanguageserverProtocol.protocolMod.DocumentFilter
-  ]
   
   type DocumentSymbolOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
   

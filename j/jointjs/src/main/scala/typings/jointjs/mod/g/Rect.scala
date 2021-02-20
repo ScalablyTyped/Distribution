@@ -1,5 +1,6 @@
 package typings.jointjs.mod.g
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -125,10 +126,10 @@ class Rect () extends PlainRect {
   
   def union(rect: PlainRect): Rect = js.native
 }
-/* static members */
-@JSImport("jointjs", "g.Rect")
-@js.native
-object Rect extends js.Object {
+object Rect {
   
+  /* static member */
+  @JSImport("jointjs", "g.Rect.fromEllipse")
+  @js.native
   def fromEllipse(e: Ellipse): Rect = js.native
 }

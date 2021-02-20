@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachmentInfoProperties extends js.Object {
+trait AttachmentInfoProperties extends StObject {
   
   /**
     * The content type of the attachment.
@@ -86,81 +87,69 @@ object AttachmentInfoProperties {
   }
   
   @scala.inline
-  implicit class AttachmentInfoPropertiesOps[Self <: AttachmentInfoProperties] (val x: Self) extends AnyVal {
+  implicit class AttachmentInfoPropertiesMutableBuilder[Self <: AttachmentInfoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExifInfo(value: js.Array[ExifInfo]): Self = StObject.set(x, "exifInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setExifInfoUndefined: Self = StObject.set(x, "exifInfo", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setExifInfoVarargs(value: ExifInfo*): Self = StObject.set(x, "exifInfo", js.Array(value :_*))
     
     @scala.inline
-    def setExifInfoVarargs(value: ExifInfo*): Self = this.set("exifInfo", js.Array(value :_*))
+    def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExifInfo(value: js.Array[ExifInfo]): Self = this.set("exifInfo", value.asInstanceOf[js.Any])
+    def setGlobalIdUndefined: Self = StObject.set(x, "globalId", js.undefined)
     
     @scala.inline
-    def deleteExifInfo: Self = this.set("exifInfo", js.undefined)
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalId(value: String): Self = this.set("globalId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGlobalId: Self = this.set("globalId", js.undefined)
+    def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: String): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setParentGlobalId(value: Double): Self = StObject.set(x, "parentGlobalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentGlobalIdUndefined: Self = StObject.set(x, "parentGlobalId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParentObjectId(value: Double): Self = StObject.set(x, "parentObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentGlobalId(value: Double): Self = this.set("parentGlobalId", value.asInstanceOf[js.Any])
+    def setParentObjectIdUndefined: Self = StObject.set(x, "parentObjectId", js.undefined)
     
     @scala.inline
-    def deleteParentGlobalId: Self = this.set("parentGlobalId", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentObjectId(value: Double): Self = this.set("parentObjectId", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteParentObjectId: Self = this.set("parentObjectId", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

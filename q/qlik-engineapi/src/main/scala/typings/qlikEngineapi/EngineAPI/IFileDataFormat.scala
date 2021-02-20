@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * FileDataFormat...
   */
 @js.native
-trait IFileDataFormat extends js.Object {
+trait IFileDataFormat extends StObject {
   
   /**
     * Character set used in the file.
@@ -107,51 +108,39 @@ object IFileDataFormat {
   }
   
   @scala.inline
-  implicit class IFileDataFormatOps[Self <: IFileDataFormat] (val x: Self) extends AnyVal {
+  implicit class IFileDataFormatMutableBuilder[Self <: IFileDataFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQCodePage(value: Double): Self = StObject.set(x, "qCodePage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQComment(value: String): Self = StObject.set(x, "qComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQDelimiter(value: IDelimiterInfo): Self = StObject.set(x, "qDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQCodePage(value: Double): Self = this.set("qCodePage", value.asInstanceOf[js.Any])
+    def setQFixedWidthDelimiters(value: String): Self = StObject.set(x, "qFixedWidthDelimiters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQComment(value: String): Self = this.set("qComment", value.asInstanceOf[js.Any])
+    def setQHeaderSize(value: Double): Self = StObject.set(x, "qHeaderSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDelimiter(value: IDelimiterInfo): Self = this.set("qDelimiter", value.asInstanceOf[js.Any])
+    def setQIgnoreEOF(value: Boolean): Self = StObject.set(x, "qIgnoreEOF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFixedWidthDelimiters(value: String): Self = this.set("qFixedWidthDelimiters", value.asInstanceOf[js.Any])
+    def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHeaderSize(value: Double): Self = this.set("qHeaderSize", value.asInstanceOf[js.Any])
+    def setQQuote(value: String): Self = StObject.set(x, "qQuote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIgnoreEOF(value: Boolean): Self = this.set("qIgnoreEOF", value.asInstanceOf[js.Any])
+    def setQRecordSize(value: Double): Self = StObject.set(x, "qRecordSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLabel(value: String): Self = this.set("qLabel", value.asInstanceOf[js.Any])
+    def setQTabSize(value: Double): Self = StObject.set(x, "qTabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQQuote(value: String): Self = this.set("qQuote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQRecordSize(value: Double): Self = this.set("qRecordSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTabSize(value: Double): Self = this.set("qTabSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQType(value: FileDataFormatType): Self = this.set("qType", value.asInstanceOf[js.Any])
+    def setQType(value: FileDataFormatType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

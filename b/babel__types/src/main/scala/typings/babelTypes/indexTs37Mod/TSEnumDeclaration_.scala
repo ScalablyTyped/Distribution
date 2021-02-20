@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.TSEnumDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,48 +36,36 @@ object TSEnumDeclaration_ {
   }
   
   @scala.inline
-  implicit class TSEnumDeclaration_Ops[Self <: TSEnumDeclaration_] (val x: Self) extends AnyVal {
+  implicit class TSEnumDeclaration_MutableBuilder[Self <: TSEnumDeclaration_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstNull: Self = StObject.set(x, "const", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Identifier_): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDeclareNull: Self = StObject.set(x, "declare", null)
     
     @scala.inline
-    def setMembersVarargs(value: TSEnumMember_ *): Self = this.set("members", js.Array(value :_*))
+    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers(value: js.Array[TSEnumMember_]): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setInitializer(value: Expression): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TSEnumDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setInitializerNull: Self = StObject.set(x, "initializer", null)
     
     @scala.inline
-    def setConst(value: Boolean): Self = this.set("const", value.asInstanceOf[js.Any])
+    def setMembers(value: js.Array[TSEnumMember_]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstNull: Self = this.set("const", null)
+    def setMembersVarargs(value: TSEnumMember_ *): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setDeclare(value: Boolean): Self = this.set("declare", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeclareNull: Self = this.set("declare", null)
-    
-    @scala.inline
-    def setInitializer(value: Expression): Self = this.set("initializer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitializerNull: Self = this.set("initializer", null)
+    def setType(value: TSEnumDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

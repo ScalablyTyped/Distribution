@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecognizeCelebritiesResponse extends js.Object {
+trait RecognizeCelebritiesResponse extends StObject {
   
   /**
     * Details about each celebrity found in the image. Amazon Rekognition can detect a maximum of 64 celebrities in an image.
@@ -31,42 +32,30 @@ object RecognizeCelebritiesResponse {
   }
   
   @scala.inline
-  implicit class RecognizeCelebritiesResponseOps[Self <: RecognizeCelebritiesResponse] (val x: Self) extends AnyVal {
+  implicit class RecognizeCelebritiesResponseMutableBuilder[Self <: RecognizeCelebritiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCelebrityFaces(value: CelebrityList): Self = StObject.set(x, "CelebrityFaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCelebrityFacesUndefined: Self = StObject.set(x, "CelebrityFaces", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCelebrityFacesVarargs(value: Celebrity*): Self = StObject.set(x, "CelebrityFaces", js.Array(value :_*))
     
     @scala.inline
-    def setCelebrityFacesVarargs(value: Celebrity*): Self = this.set("CelebrityFaces", js.Array(value :_*))
+    def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCelebrityFaces(value: CelebrityList): Self = this.set("CelebrityFaces", value.asInstanceOf[js.Any])
+    def setOrientationCorrectionUndefined: Self = StObject.set(x, "OrientationCorrection", js.undefined)
     
     @scala.inline
-    def deleteCelebrityFaces: Self = this.set("CelebrityFaces", js.undefined)
+    def setUnrecognizedFaces(value: ComparedFaceList): Self = StObject.set(x, "UnrecognizedFaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientationCorrection(value: OrientationCorrection): Self = this.set("OrientationCorrection", value.asInstanceOf[js.Any])
+    def setUnrecognizedFacesUndefined: Self = StObject.set(x, "UnrecognizedFaces", js.undefined)
     
     @scala.inline
-    def deleteOrientationCorrection: Self = this.set("OrientationCorrection", js.undefined)
-    
-    @scala.inline
-    def setUnrecognizedFacesVarargs(value: ComparedFace*): Self = this.set("UnrecognizedFaces", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnrecognizedFaces(value: ComparedFaceList): Self = this.set("UnrecognizedFaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnrecognizedFaces: Self = this.set("UnrecognizedFaces", js.undefined)
+    def setUnrecognizedFacesVarargs(value: ComparedFace*): Self = StObject.set(x, "UnrecognizedFaces", js.Array(value :_*))
   }
 }

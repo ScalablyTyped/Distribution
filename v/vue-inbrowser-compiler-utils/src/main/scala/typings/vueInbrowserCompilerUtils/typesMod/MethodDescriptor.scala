@@ -1,6 +1,7 @@
 package typings.vueInbrowserCompilerUtils.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,63 +34,51 @@ object MethodDescriptor {
   }
   
   @scala.inline
-  implicit class MethodDescriptorOps[Self <: MethodDescriptor] (val x: Self) extends AnyVal {
+  implicit class MethodDescriptorMutableBuilder[Self <: MethodDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifiers(value: js.Array[String]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiersVarargs(value: String*): Self = this.set("modifiers", js.Array(value :_*))
+    def setParams(value: js.Array[Param]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiers(value: js.Array[String]): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    def setParamsVarargs(value: Param*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def setParamsVarargs(value: Param*): Self = this.set("params", js.Array(value :_*))
+    def setReturns(value: UnnamedParam): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Array[Param]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setTags(value: StringDictionary[js.Array[BlockTag]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturns(value: UnnamedParam): Self = this.set("returns", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteReturns: Self = this.set("returns", js.undefined)
+    def setThrows(value: UnnamedParam): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: StringDictionary[js.Array[BlockTag]]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setThrows(value: UnnamedParam): Self = this.set("throws", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrows: Self = this.set("throws", js.undefined)
+    def setThrowsUndefined: Self = StObject.set(x, "throws", js.undefined)
   }
 }

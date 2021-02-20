@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Globalization.DateTimeFormatting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDateTimeFormatterStatics extends js.Object {
+trait IDateTimeFormatterStatics extends StObject {
   
   var longDate: DateTimeFormatter = js.native
   
@@ -29,30 +30,18 @@ object IDateTimeFormatterStatics {
   }
   
   @scala.inline
-  implicit class IDateTimeFormatterStaticsOps[Self <: IDateTimeFormatterStatics] (val x: Self) extends AnyVal {
+  implicit class IDateTimeFormatterStaticsMutableBuilder[Self <: IDateTimeFormatterStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLongDate(value: DateTimeFormatter): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLongTime(value: DateTimeFormatter): Self = StObject.set(x, "longTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShortDate(value: DateTimeFormatter): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongDate(value: DateTimeFormatter): Self = this.set("longDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLongTime(value: DateTimeFormatter): Self = this.set("longTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortDate(value: DateTimeFormatter): Self = this.set("shortDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortTime(value: DateTimeFormatter): Self = this.set("shortTime", value.asInstanceOf[js.Any])
+    def setShortTime(value: DateTimeFormatter): Self = StObject.set(x, "shortTime", value.asInstanceOf[js.Any])
   }
 }

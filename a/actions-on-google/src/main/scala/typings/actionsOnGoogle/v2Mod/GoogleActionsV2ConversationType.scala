@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.NEW
   - typings.actionsOnGoogle.actionsOnGoogleStrings.ACTIVE
 */
-trait GoogleActionsV2ConversationType extends js.Object
+trait GoogleActionsV2ConversationType extends StObject
 object GoogleActionsV2ConversationType {
   
   @scala.inline

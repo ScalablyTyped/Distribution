@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameSessionConnectionInfo extends js.Object {
+trait GameSessionConnectionInfo extends StObject {
   
   /**
     * DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
@@ -41,51 +42,39 @@ object GameSessionConnectionInfo {
   }
   
   @scala.inline
-  implicit class GameSessionConnectionInfoOps[Self <: GameSessionConnectionInfo] (val x: Self) extends AnyVal {
+  implicit class GameSessionConnectionInfoMutableBuilder[Self <: GameSessionConnectionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsName(value: DnsName): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGameSessionArn(value: ArnStringModel): Self = StObject.set(x, "GameSessionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsName(value: DnsName): Self = this.set("DnsName", value.asInstanceOf[js.Any])
+    def setGameSessionArnUndefined: Self = StObject.set(x, "GameSessionArn", js.undefined)
     
     @scala.inline
-    def deleteDnsName: Self = this.set("DnsName", js.undefined)
+    def setIpAddress(value: StringModel): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionArn(value: ArnStringModel): Self = this.set("GameSessionArn", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     
     @scala.inline
-    def deleteGameSessionArn: Self = this.set("GameSessionArn", js.undefined)
+    def setMatchedPlayerSessions(value: MatchedPlayerSessionList): Self = StObject.set(x, "MatchedPlayerSessions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: StringModel): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    def setMatchedPlayerSessionsUndefined: Self = StObject.set(x, "MatchedPlayerSessions", js.undefined)
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    def setMatchedPlayerSessionsVarargs(value: MatchedPlayerSession*): Self = StObject.set(x, "MatchedPlayerSessions", js.Array(value :_*))
     
     @scala.inline
-    def setMatchedPlayerSessionsVarargs(value: MatchedPlayerSession*): Self = this.set("MatchedPlayerSessions", js.Array(value :_*))
+    def setPort(value: PositiveInteger): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedPlayerSessions(value: MatchedPlayerSessionList): Self = this.set("MatchedPlayerSessions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchedPlayerSessions: Self = this.set("MatchedPlayerSessions", js.undefined)
-    
-    @scala.inline
-    def setPort(value: PositiveInteger): Self = this.set("Port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

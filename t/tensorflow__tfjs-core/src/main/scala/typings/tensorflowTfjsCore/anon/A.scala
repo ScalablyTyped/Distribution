@@ -4,12 +4,13 @@ import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait A[T /* <: Tensor[Rank] */] extends js.Object {
+trait A[T /* <: Tensor[Rank] */] extends StObject {
   
   var a: T | TensorLike = js.native
   
@@ -34,63 +35,51 @@ object A {
   }
   
   @scala.inline
-  implicit class AOps[Self <: A[_], T /* <: Tensor[Rank] */] (val x: Self with A[T]) extends AnyVal {
+  implicit class AMutableBuilder[Self <: A[_], T /* <: Tensor[Rank] */] (val x: Self with A[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: T | TensorLike): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAVarargs(value: Uint8Array*): Self = StObject.set(x, "a", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAVarargs(value: Uint8Array*): Self = this.set("a", js.Array(value :_*))
+    def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
     
     @scala.inline
-    def setA(value: T | TensorLike): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setB(value: T | TensorLike): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBVarargs(value: Uint8Array*): Self = this.set("b", js.Array(value :_*))
+    def setBVarargs(value: Uint8Array*): Self = StObject.set(x, "b", js.Array(value :_*))
     
     @scala.inline
-    def setB(value: T | TensorLike): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setBias(value: Tensor[Rank] | TensorLike): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = this.set("activation", value.asInstanceOf[js.Any])
+    def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
     @scala.inline
-    def deleteActivation: Self = this.set("activation", js.undefined)
+    def setBiasVarargs(value: Uint8Array*): Self = StObject.set(x, "bias", js.Array(value :_*))
     
     @scala.inline
-    def setBiasVarargs(value: Uint8Array*): Self = this.set("bias", js.Array(value :_*))
+    def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBias(value: Tensor[Rank] | TensorLike): Self = this.set("bias", value.asInstanceOf[js.Any])
+    def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
     
     @scala.inline
-    def deleteBias: Self = this.set("bias", js.undefined)
+    def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreluActivationWeights(value: Tensor[Rank]): Self = this.set("preluActivationWeights", value.asInstanceOf[js.Any])
+    def setTransposeAUndefined: Self = StObject.set(x, "transposeA", js.undefined)
     
     @scala.inline
-    def deletePreluActivationWeights: Self = this.set("preluActivationWeights", js.undefined)
+    def setTransposeB(value: Boolean): Self = StObject.set(x, "transposeB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransposeA(value: Boolean): Self = this.set("transposeA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransposeA: Self = this.set("transposeA", js.undefined)
-    
-    @scala.inline
-    def setTransposeB(value: Boolean): Self = this.set("transposeB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransposeB: Self = this.set("transposeB", js.undefined)
+    def setTransposeBUndefined: Self = StObject.set(x, "transposeB", js.undefined)
   }
 }

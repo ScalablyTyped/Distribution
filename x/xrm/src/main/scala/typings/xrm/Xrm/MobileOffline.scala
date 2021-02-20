@@ -3,6 +3,7 @@ package typings.xrm.Xrm
 import org.scalablytyped.runtime.StringDictionary
 import typings.xrm.Xrm.Async.OfflineOperationSuccessCallbackObject
 import typings.xrm.Xrm.Async.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
   */
 @js.native
-trait MobileOffline extends js.Object {
+trait MobileOffline extends StObject {
   
   /**
     * Creates an entity record in mobile clients while working in the offline mode.

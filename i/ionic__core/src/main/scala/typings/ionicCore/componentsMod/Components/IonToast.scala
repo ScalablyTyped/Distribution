@@ -10,12 +10,13 @@ import typings.ionicCore.mod.Color
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.toastInterfaceMod.ToastButton
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonToast extends js.Object {
+trait IonToast extends StObject {
   
   /**
     * If `true`, the toast will animate.

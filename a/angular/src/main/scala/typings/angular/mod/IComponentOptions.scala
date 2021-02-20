@@ -1,6 +1,7 @@
 package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Component definition object (a simplified directive definition object)
   */
 @js.native
-trait IComponentOptions extends js.Object {
+trait IComponentOptions extends StObject {
   
   /**
     * Define DOM attribute binding to component properties. Component properties are always bound to the component
@@ -76,78 +77,66 @@ object IComponentOptions {
   }
   
   @scala.inline
-  implicit class IComponentOptionsOps[Self <: IComponentOptions] (val x: Self) extends AnyVal {
+  implicit class IComponentOptionsMutableBuilder[Self <: IComponentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindings(value: StringDictionary[String]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setController(value: String | Injectable[IControllerConstructor]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindings(value: StringDictionary[String]): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBindings: Self = this.set("bindings", js.undefined)
+    def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
     @scala.inline
-    def setControllerVarargs(value: (String | IControllerConstructor)*): Self = this.set("controller", js.Array(value :_*))
+    def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = this.set("controller", js.Any.fromFunction1(value))
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def setController(value: String | Injectable[IControllerConstructor]): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setRequire(value: StringDictionary[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllerAs(value: String): Self = this.set("controllerAs", value.asInstanceOf[js.Any])
+    def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
     @scala.inline
-    def deleteControllerAs: Self = this.set("controllerAs", js.undefined)
+    def setTemplate(value: String | (Injectable[js.Function1[/* repeated */ _, String]])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire(value: StringDictionary[String]): Self = this.set("require", value.asInstanceOf[js.Any])
+    def setTemplateFunction1(value: /* repeated */ _ => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRequire: Self = this.set("require", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def setTemplateVarargs(value: (String | (js.Function1[js.Any, String]))*): Self = this.set("template", js.Array(value :_*))
+    def setTemplateUrl(value: String | (Injectable[js.Function1[/* repeated */ _, String]])): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateFunction1(value: /* repeated */ _ => String): Self = this.set("template", js.Any.fromFunction1(value))
+    def setTemplateUrlFunction1(value: /* repeated */ _ => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTemplate(value: String | (Injectable[js.Function1[/* repeated */ _, String]])): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUrlVarargs(value: (String | (js.Function1[js.Any, String]))*): Self = StObject.set(x, "templateUrl", js.Array(value :_*))
     
     @scala.inline
-    def setTemplateUrlVarargs(value: (String | (js.Function1[js.Any, String]))*): Self = this.set("templateUrl", js.Array(value :_*))
+    def setTemplateVarargs(value: (String | (js.Function1[js.Any, String]))*): Self = StObject.set(x, "template", js.Array(value :_*))
     
     @scala.inline
-    def setTemplateUrlFunction1(value: /* repeated */ _ => String): Self = this.set("templateUrl", js.Any.fromFunction1(value))
+    def setTransclude(value: Boolean | StringDictionary[String]): Self = StObject.set(x, "transclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateUrl(value: String | (Injectable[js.Function1[/* repeated */ _, String]])): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
-    
-    @scala.inline
-    def setTransclude(value: Boolean | StringDictionary[String]): Self = this.set("transclude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransclude: Self = this.set("transclude", js.undefined)
+    def setTranscludeUndefined: Self = StObject.set(x, "transclude", js.undefined)
   }
 }

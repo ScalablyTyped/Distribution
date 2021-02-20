@@ -1,5 +1,6 @@
 package typings.googleapis.mlV1Mod.mlV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents results of a training job. Output only.
   */
 @js.native
-trait SchemaGoogleCloudMlV1TrainingOutput extends js.Object {
+trait SchemaGoogleCloudMlV1TrainingOutput extends StObject {
   
   /**
     * Details related to built-in algorithms job. Only set for built-in
@@ -52,57 +53,45 @@ object SchemaGoogleCloudMlV1TrainingOutput {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudMlV1TrainingOutputOps[Self <: SchemaGoogleCloudMlV1TrainingOutput] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudMlV1TrainingOutputMutableBuilder[Self <: SchemaGoogleCloudMlV1TrainingOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuiltInAlgorithmOutput(value: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput): Self = StObject.set(x, "builtInAlgorithmOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuiltInAlgorithmOutputUndefined: Self = StObject.set(x, "builtInAlgorithmOutput", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletedTrialCount(value: String): Self = StObject.set(x, "completedTrialCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuiltInAlgorithmOutput(value: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput): Self = this.set("builtInAlgorithmOutput", value.asInstanceOf[js.Any])
+    def setCompletedTrialCountUndefined: Self = StObject.set(x, "completedTrialCount", js.undefined)
     
     @scala.inline
-    def deleteBuiltInAlgorithmOutput: Self = this.set("builtInAlgorithmOutput", js.undefined)
+    def setConsumedMLUnits(value: Double): Self = StObject.set(x, "consumedMLUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedTrialCount(value: String): Self = this.set("completedTrialCount", value.asInstanceOf[js.Any])
+    def setConsumedMLUnitsUndefined: Self = StObject.set(x, "consumedMLUnits", js.undefined)
     
     @scala.inline
-    def deleteCompletedTrialCount: Self = this.set("completedTrialCount", js.undefined)
+    def setIsBuiltInAlgorithmJob(value: Boolean): Self = StObject.set(x, "isBuiltInAlgorithmJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumedMLUnits(value: Double): Self = this.set("consumedMLUnits", value.asInstanceOf[js.Any])
+    def setIsBuiltInAlgorithmJobUndefined: Self = StObject.set(x, "isBuiltInAlgorithmJob", js.undefined)
     
     @scala.inline
-    def deleteConsumedMLUnits: Self = this.set("consumedMLUnits", js.undefined)
+    def setIsHyperparameterTuningJob(value: Boolean): Self = StObject.set(x, "isHyperparameterTuningJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBuiltInAlgorithmJob(value: Boolean): Self = this.set("isBuiltInAlgorithmJob", value.asInstanceOf[js.Any])
+    def setIsHyperparameterTuningJobUndefined: Self = StObject.set(x, "isHyperparameterTuningJob", js.undefined)
     
     @scala.inline
-    def deleteIsBuiltInAlgorithmJob: Self = this.set("isBuiltInAlgorithmJob", js.undefined)
+    def setTrials(value: js.Array[SchemaGoogleCloudMlV1HyperparameterOutput]): Self = StObject.set(x, "trials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHyperparameterTuningJob(value: Boolean): Self = this.set("isHyperparameterTuningJob", value.asInstanceOf[js.Any])
+    def setTrialsUndefined: Self = StObject.set(x, "trials", js.undefined)
     
     @scala.inline
-    def deleteIsHyperparameterTuningJob: Self = this.set("isHyperparameterTuningJob", js.undefined)
-    
-    @scala.inline
-    def setTrialsVarargs(value: SchemaGoogleCloudMlV1HyperparameterOutput*): Self = this.set("trials", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrials(value: js.Array[SchemaGoogleCloudMlV1HyperparameterOutput]): Self = this.set("trials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrials: Self = this.set("trials", js.undefined)
+    def setTrialsVarargs(value: SchemaGoogleCloudMlV1HyperparameterOutput*): Self = StObject.set(x, "trials", js.Array(value :_*))
   }
 }

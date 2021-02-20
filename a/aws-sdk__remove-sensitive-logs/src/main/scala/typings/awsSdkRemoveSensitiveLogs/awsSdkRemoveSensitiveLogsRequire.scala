@@ -1,5 +1,6 @@
 package typings.awsSdkRemoveSensitiveLogs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@aws-sdk/remove-sensitive-logs", JSImport.Namespace)
 @js.native
-object awsSdkRemoveSensitiveLogsRequire extends js.Object
+object awsSdkRemoveSensitiveLogsRequire extends StObject

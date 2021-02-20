@@ -1,11 +1,12 @@
 package typings.awsSdk.simpledbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutAttributesRequest extends js.Object {
+trait PutAttributesRequest extends StObject {
   
   /**
     * The list of attributes.
@@ -36,36 +37,24 @@ object PutAttributesRequest {
   }
   
   @scala.inline
-  implicit class PutAttributesRequestOps[Self <: PutAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class PutAttributesRequestMutableBuilder[Self <: PutAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: ReplaceableAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesVarargs(value: ReplaceableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: ReplaceableAttribute*): Self = this.set("Attributes", js.Array(value :_*))
+    def setExpected(value: UpdateCondition): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: ReplaceableAttributeList): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("DomainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemName(value: String): Self = this.set("ItemName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpected(value: UpdateCondition): Self = this.set("Expected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpected: Self = this.set("Expected", js.undefined)
+    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

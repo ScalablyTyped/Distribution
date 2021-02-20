@@ -5,6 +5,7 @@ import typings.ecmarkdown.ecmarkdownStrings.star
 import typings.ecmarkdown.ecmarkdownStrings.tick
 import typings.ecmarkdown.ecmarkdownStrings.tilde
 import typings.ecmarkdown.ecmarkdownStrings.underscore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,32 +28,32 @@ object FormatNode {
     nonTerminal: String,
     optional: Boolean,
     params: String
-  ): FormatNode = {
+  ): typings.ecmarkdown.nodeTypesMod.PipeNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nonTerminal = nonTerminal.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FormatNode]
+    __obj.asInstanceOf[typings.ecmarkdown.nodeTypesMod.PipeNode]
   }
   
   @scala.inline
-  def TildeNode(contents: js.Array[FragmentNode], location: LocationRange, name: tilde): FormatNode = {
+  def StarNode(contents: js.Array[FragmentNode], location: LocationRange, name: star): typings.ecmarkdown.nodeTypesMod.StarNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FormatNode]
+    __obj.asInstanceOf[typings.ecmarkdown.nodeTypesMod.StarNode]
   }
   
   @scala.inline
-  def StarNode(contents: js.Array[FragmentNode], location: LocationRange, name: star): FormatNode = {
+  def TickNode(contents: js.Array[FragmentNode], location: LocationRange, name: tick): typings.ecmarkdown.nodeTypesMod.TickNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FormatNode]
+    __obj.asInstanceOf[typings.ecmarkdown.nodeTypesMod.TickNode]
   }
   
   @scala.inline
-  def UnderscoreNode(contents: js.Array[FragmentNode], location: LocationRange, name: underscore): FormatNode = {
+  def TildeNode(contents: js.Array[FragmentNode], location: LocationRange, name: tilde): typings.ecmarkdown.nodeTypesMod.TildeNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FormatNode]
+    __obj.asInstanceOf[typings.ecmarkdown.nodeTypesMod.TildeNode]
   }
   
   @scala.inline
-  def TickNode(contents: js.Array[FragmentNode], location: LocationRange, name: tick): FormatNode = {
+  def UnderscoreNode(contents: js.Array[FragmentNode], location: LocationRange, name: underscore): typings.ecmarkdown.nodeTypesMod.UnderscoreNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FormatNode]
+    __obj.asInstanceOf[typings.ecmarkdown.nodeTypesMod.UnderscoreNode]
   }
 }

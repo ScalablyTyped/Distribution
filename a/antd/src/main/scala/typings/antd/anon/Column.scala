@@ -2,12 +2,13 @@ package typings.antd.anon
 
 import typings.antd.tableInterfaceMod.ColumnType
 import typings.antd.tableInterfaceMod.SortOrder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Column[RecordType] extends js.Object {
+trait Column[RecordType] extends StObject {
   
   var column: ColumnType[RecordType] = js.native
   
@@ -22,27 +23,15 @@ object Column {
   }
   
   @scala.inline
-  implicit class ColumnOps[Self <: Column[_], RecordType] (val x: Self with Column[RecordType]) extends AnyVal {
+  implicit class ColumnMutableBuilder[Self <: Column[_], RecordType] (val x: Self with Column[RecordType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumn(value: ColumnType[RecordType]): Self = this.set("column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrder(value: SortOrder): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrderNull: Self = this.set("order", null)
+    def setOrderNull: Self = StObject.set(x, "order", null)
   }
 }

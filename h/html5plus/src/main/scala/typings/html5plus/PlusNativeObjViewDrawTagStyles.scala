@@ -5,6 +5,7 @@ import typings.html5plus.html5plusStrings.img
 import typings.html5plus.html5plusStrings.input
 import typings.html5plus.html5plusStrings.rect
 import typings.html5plus.html5plusStrings.richtext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
 @js.native
-trait PlusNativeObjViewDrawTagStyles extends js.Object {
+trait PlusNativeObjViewDrawTagStyles extends StObject {
   
   /**
     * 矩形区域颜色
@@ -132,84 +133,72 @@ object PlusNativeObjViewDrawTagStyles {
   }
   
   @scala.inline
-  implicit class PlusNativeObjViewDrawTagStylesOps[Self <: PlusNativeObjViewDrawTagStyles] (val x: Self) extends AnyVal {
+  implicit class PlusNativeObjViewDrawTagStylesMutableBuilder[Self <: PlusNativeObjViewDrawTagStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setInputStyles(value: PlusNativeObjInputStyles): Self = StObject.set(x, "inputStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInputStylesUndefined: Self = StObject.set(x, "inputStyles", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPosition(value: PlusNativeObjPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputStyles(value: PlusNativeObjInputStyles): Self = this.set("inputStyles", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteInputStyles: Self = this.set("inputStyles", js.undefined)
+    def setRectStyles(value: PlusNativeObjRectStyles): Self = StObject.set(x, "rectStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: PlusNativeObjPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRectStylesUndefined: Self = StObject.set(x, "rectStyles", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setRichTextStyles(value: PlusNativeObjRichTextStyles): Self = StObject.set(x, "richTextStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRectStyles(value: PlusNativeObjRectStyles): Self = this.set("rectStyles", value.asInstanceOf[js.Any])
+    def setRichTextStylesUndefined: Self = StObject.set(x, "richTextStyles", js.undefined)
     
     @scala.inline
-    def deleteRectStyles: Self = this.set("rectStyles", js.undefined)
+    def setSprite(value: PlusNativeObjPosition): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRichTextStyles(value: PlusNativeObjRichTextStyles): Self = this.set("richTextStyles", value.asInstanceOf[js.Any])
+    def setSpriteUndefined: Self = StObject.set(x, "sprite", js.undefined)
     
     @scala.inline
-    def deleteRichTextStyles: Self = this.set("richTextStyles", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSprite(value: PlusNativeObjPosition): Self = this.set("sprite", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def deleteSprite: Self = this.set("sprite", js.undefined)
+    def setTag(value: img | rect | font | richtext | input): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: img | rect | font | richtext | input): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTextStyles(value: PlusNativeObjTextStyles): Self = StObject.set(x, "textStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTextStylesUndefined: Self = StObject.set(x, "textStyles", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTextStyles(value: PlusNativeObjTextStyles): Self = this.set("textStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyles: Self = this.set("textStyles", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

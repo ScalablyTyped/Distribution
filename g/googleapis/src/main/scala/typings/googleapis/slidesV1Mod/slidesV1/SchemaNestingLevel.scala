@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * given level of nesting.
   */
 @js.native
-trait SchemaNestingLevel extends js.Object {
+trait SchemaNestingLevel extends StObject {
   
   /**
     * The style of a bullet at this level of nesting.
@@ -25,24 +26,12 @@ object SchemaNestingLevel {
   }
   
   @scala.inline
-  implicit class SchemaNestingLevelOps[Self <: SchemaNestingLevel] (val x: Self) extends AnyVal {
+  implicit class SchemaNestingLevelMutableBuilder[Self <: SchemaNestingLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulletStyle(value: SchemaTextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBulletStyle(value: SchemaTextStyle): Self = this.set("bulletStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBulletStyle: Self = this.set("bulletStyle", js.undefined)
+    def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
   }
 }

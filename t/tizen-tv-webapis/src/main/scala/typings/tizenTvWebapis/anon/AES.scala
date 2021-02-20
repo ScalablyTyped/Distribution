@@ -6,12 +6,13 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`3`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`4`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`5`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AES extends js.Object {
+trait AES extends StObject {
   
   /**
     * AES encryption
@@ -52,36 +53,24 @@ object AES {
   }
   
   @scala.inline
-  implicit class AESOps[Self <: AES] (val x: Self) extends AnyVal {
+  implicit class AESMutableBuilder[Self <: AES] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAES(value: `3`): Self = StObject.set(x, "AES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNONE(value: `5`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTKIP(value: `2`): Self = StObject.set(x, "TKIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAES(value: `3`): Self = this.set("AES", value.asInstanceOf[js.Any])
+    def setTKIP_AES_MIXED(value: `4`): Self = StObject.set(x, "TKIP_AES_MIXED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNONE(value: `5`): Self = this.set("NONE", value.asInstanceOf[js.Any])
+    def setUNKNOWN(value: `6`): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTKIP(value: `2`): Self = this.set("TKIP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTKIP_AES_MIXED(value: `4`): Self = this.set("TKIP_AES_MIXED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUNKNOWN(value: `6`): Self = this.set("UNKNOWN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWEP(value: `1`): Self = this.set("WEP", value.asInstanceOf[js.Any])
+    def setWEP(value: `1`): Self = StObject.set(x, "WEP", value.asInstanceOf[js.Any])
   }
 }

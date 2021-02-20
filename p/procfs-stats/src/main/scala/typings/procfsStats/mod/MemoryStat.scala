@@ -1,11 +1,12 @@
 package typings.procfsStats.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemoryStat extends js.Object {
+trait MemoryStat extends StObject {
   
   var data: String = js.native
   
@@ -30,39 +31,27 @@ object MemoryStat {
   }
   
   @scala.inline
-  implicit class MemoryStatOps[Self <: MemoryStat] (val x: Self) extends AnyVal {
+  implicit class MemoryStatMutableBuilder[Self <: MemoryStat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDt(value: String): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLib(value: String): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setResident(value: String): Self = StObject.set(x, "resident", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDt(value: String): Self = this.set("dt", value.asInstanceOf[js.Any])
+    def setShare(value: String): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLib(value: String): Self = this.set("lib", value.asInstanceOf[js.Any])
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResident(value: String): Self = this.set("resident", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShare(value: String): Self = this.set("share", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

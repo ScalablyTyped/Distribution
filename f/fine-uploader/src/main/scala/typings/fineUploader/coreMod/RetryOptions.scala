@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetryOptions extends js.Object {
+trait RetryOptions extends StObject {
   
   /**
     * The number of seconds to wait between auto retry attempts
@@ -44,42 +45,30 @@ object RetryOptions {
   }
   
   @scala.inline
-  implicit class RetryOptionsOps[Self <: RetryOptions] (val x: Self) extends AnyVal {
+  implicit class RetryOptionsMutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoAttemptDelay(value: Double): Self = StObject.set(x, "autoAttemptDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoAttemptDelayUndefined: Self = StObject.set(x, "autoAttemptDelay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableAuto(value: Boolean): Self = StObject.set(x, "enableAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAttemptDelay(value: Double): Self = this.set("autoAttemptDelay", value.asInstanceOf[js.Any])
+    def setEnableAutoUndefined: Self = StObject.set(x, "enableAuto", js.undefined)
     
     @scala.inline
-    def deleteAutoAttemptDelay: Self = this.set("autoAttemptDelay", js.undefined)
+    def setMaxAutoAttempts(value: Double): Self = StObject.set(x, "maxAutoAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAuto(value: Boolean): Self = this.set("enableAuto", value.asInstanceOf[js.Any])
+    def setMaxAutoAttemptsUndefined: Self = StObject.set(x, "maxAutoAttempts", js.undefined)
     
     @scala.inline
-    def deleteEnableAuto: Self = this.set("enableAuto", js.undefined)
+    def setPreventRetryResponseProperty(value: String): Self = StObject.set(x, "preventRetryResponseProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAutoAttempts(value: Double): Self = this.set("maxAutoAttempts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAutoAttempts: Self = this.set("maxAutoAttempts", js.undefined)
-    
-    @scala.inline
-    def setPreventRetryResponseProperty(value: String): Self = this.set("preventRetryResponseProperty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreventRetryResponseProperty: Self = this.set("preventRetryResponseProperty", js.undefined)
+    def setPreventRetryResponsePropertyUndefined: Self = StObject.set(x, "preventRetryResponseProperty", js.undefined)
   }
 }

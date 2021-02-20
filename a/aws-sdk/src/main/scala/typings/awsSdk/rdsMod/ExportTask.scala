@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportTask extends js.Object {
+trait ExportTask extends StObject {
   
   /**
     * The data exported from the snapshot. Valid values are the following:    database - Export all the data from a specified database.    database.table table-name - Export a table of the snapshot. This format is valid only for RDS for MySQL, RDS for MariaDB, and Aurora MySQL.    database.schema schema-name - Export a database schema of the snapshot. This format is valid only for RDS for PostgreSQL and Aurora PostgreSQL.    database.schema.table table-name - Export a table of the database schema. This format is valid only for RDS for PostgreSQL and Aurora PostgreSQL.  
@@ -91,111 +92,99 @@ object ExportTask {
   }
   
   @scala.inline
-  implicit class ExportTaskOps[Self <: ExportTask] (val x: Self) extends AnyVal {
+  implicit class ExportTaskMutableBuilder[Self <: ExportTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportOnly(value: StringList): Self = StObject.set(x, "ExportOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportOnlyUndefined: Self = StObject.set(x, "ExportOnly", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportOnlyVarargs(value: String*): Self = StObject.set(x, "ExportOnly", js.Array(value :_*))
     
     @scala.inline
-    def setExportOnlyVarargs(value: String*): Self = this.set("ExportOnly", js.Array(value :_*))
+    def setExportTaskIdentifier(value: String): Self = StObject.set(x, "ExportTaskIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportOnly(value: StringList): Self = this.set("ExportOnly", value.asInstanceOf[js.Any])
+    def setExportTaskIdentifierUndefined: Self = StObject.set(x, "ExportTaskIdentifier", js.undefined)
     
     @scala.inline
-    def deleteExportOnly: Self = this.set("ExportOnly", js.undefined)
+    def setFailureCause(value: String): Self = StObject.set(x, "FailureCause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportTaskIdentifier(value: String): Self = this.set("ExportTaskIdentifier", value.asInstanceOf[js.Any])
+    def setFailureCauseUndefined: Self = StObject.set(x, "FailureCause", js.undefined)
     
     @scala.inline
-    def deleteExportTaskIdentifier: Self = this.set("ExportTaskIdentifier", js.undefined)
+    def setIamRoleArn(value: String): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCause(value: String): Self = this.set("FailureCause", value.asInstanceOf[js.Any])
+    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
     @scala.inline
-    def deleteFailureCause: Self = this.set("FailureCause", js.undefined)
+    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRoleArn(value: String): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    def setPercentProgress(value: Integer): Self = StObject.set(x, "PercentProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setPercentProgressUndefined: Self = StObject.set(x, "PercentProgress", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentProgress(value: Integer): Self = this.set("PercentProgress", value.asInstanceOf[js.Any])
+    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
     @scala.inline
-    def deletePercentProgress: Self = this.set("PercentProgress", js.undefined)
+    def setS3Prefix(value: String): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Bucket(value: String): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
     
     @scala.inline
-    def deleteS3Bucket: Self = this.set("S3Bucket", js.undefined)
+    def setSnapshotTime(value: TStamp): Self = StObject.set(x, "SnapshotTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Prefix(value: String): Self = this.set("S3Prefix", value.asInstanceOf[js.Any])
+    def setSnapshotTimeUndefined: Self = StObject.set(x, "SnapshotTime", js.undefined)
     
     @scala.inline
-    def deleteS3Prefix: Self = this.set("S3Prefix", js.undefined)
+    def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotTime(value: TStamp): Self = this.set("SnapshotTime", value.asInstanceOf[js.Any])
+    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
     @scala.inline
-    def deleteSnapshotTime: Self = this.set("SnapshotTime", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceArn(value: String): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
+    def setTaskEndTime(value: TStamp): Self = StObject.set(x, "TaskEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTaskEndTimeUndefined: Self = StObject.set(x, "TaskEndTime", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTaskStartTime(value: TStamp): Self = StObject.set(x, "TaskStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskEndTime(value: TStamp): Self = this.set("TaskEndTime", value.asInstanceOf[js.Any])
+    def setTaskStartTimeUndefined: Self = StObject.set(x, "TaskStartTime", js.undefined)
     
     @scala.inline
-    def deleteTaskEndTime: Self = this.set("TaskEndTime", js.undefined)
+    def setTotalExtractedDataInGB(value: Integer): Self = StObject.set(x, "TotalExtractedDataInGB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskStartTime(value: TStamp): Self = this.set("TaskStartTime", value.asInstanceOf[js.Any])
+    def setTotalExtractedDataInGBUndefined: Self = StObject.set(x, "TotalExtractedDataInGB", js.undefined)
     
     @scala.inline
-    def deleteTaskStartTime: Self = this.set("TaskStartTime", js.undefined)
+    def setWarningMessage(value: String): Self = StObject.set(x, "WarningMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalExtractedDataInGB(value: Integer): Self = this.set("TotalExtractedDataInGB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalExtractedDataInGB: Self = this.set("TotalExtractedDataInGB", js.undefined)
-    
-    @scala.inline
-    def setWarningMessage(value: String): Self = this.set("WarningMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarningMessage: Self = this.set("WarningMessage", js.undefined)
+    def setWarningMessageUndefined: Self = StObject.set(x, "WarningMessage", js.undefined)
   }
 }

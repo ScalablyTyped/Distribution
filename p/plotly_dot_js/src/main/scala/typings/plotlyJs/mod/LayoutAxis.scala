@@ -66,6 +66,7 @@ import typings.plotlyJs.plotlyJsStrings.toaxisPlussignmarker
 import typings.plotlyJs.plotlyJsStrings.top
 import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -183,66 +184,54 @@ object LayoutAxis {
   }
   
   @scala.inline
-  implicit class LayoutAxisOps[Self <: LayoutAxis] (val x: Self) extends AnyVal {
+  implicit class LayoutAxisMutableBuilder[Self <: LayoutAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: free | AxisName): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngle(value: js.Any): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomargin(value: Boolean): Self = StObject.set(x, "automargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: free | AxisName): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setAutotick(value: Boolean): Self = StObject.set(x, "autotick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: js.Any): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setConstrain(value: range | domain): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomargin(value: Boolean): Self = this.set("automargin", value.asInstanceOf[js.Any])
+    def setConstraintoward(value: left | center | right | top | middle | bottom): Self = StObject.set(x, "constraintoward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutotick(value: Boolean): Self = this.set("autotick", value.asInstanceOf[js.Any])
+    def setDomain(value: js.Array[Double]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstrain(value: range | domain): Self = this.set("constrain", value.asInstanceOf[js.Any])
+    def setDomainVarargs(value: Double*): Self = StObject.set(x, "domain", js.Array(value :_*))
     
     @scala.inline
-    def setConstraintoward(value: left | center | right | top | middle | bottom): Self = this.set("constraintoward", value.asInstanceOf[js.Any])
+    def setLayer(value: (`above traces`) | (`below traces`)): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainVarargs(value: Double*): Self = this.set("domain", js.Array(value :_*))
+    def setOverlaying(value: free | AxisName): Self = StObject.set(x, "overlaying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: js.Array[Double]): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: (`above traces`) | (`below traces`)): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setRangeselector(value: PartialRangeSelectorActivecolor): Self = StObject.set(x, "rangeselector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlaying(value: free | AxisName): Self = this.set("overlaying", value.asInstanceOf[js.Any])
+    def setRangeslider(value: PartialRangeSlider): Self = StObject.set(x, "rangeslider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setScaleanchor(value: AxisName): Self = StObject.set(x, "scaleanchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeselector(value: PartialRangeSelectorActivecolor): Self = this.set("rangeselector", value.asInstanceOf[js.Any])
+    def setScaleratio(value: Double): Self = StObject.set(x, "scaleratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeslider(value: PartialRangeSlider): Self = this.set("rangeslider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleanchor(value: AxisName): Self = this.set("scaleanchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleratio(value: Double): Self = this.set("scaleratio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSide(value: top | bottom | left | right | clockwise | counterclockwise): Self = this.set("side", value.asInstanceOf[js.Any])
+    def setSide(value: top | bottom | left | right | clockwise | counterclockwise): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
   }
 }

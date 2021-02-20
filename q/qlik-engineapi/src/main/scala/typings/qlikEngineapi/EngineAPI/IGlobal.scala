@@ -4,6 +4,7 @@ import typings.qlikEngineapi.anon.QBnfDefs
 import typings.qlikEngineapi.anon.QBnfHash
 import typings.qlikEngineapi.anon.QFolder
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,7 +100,7 @@ trait IGlobal extends IGeneratedAPI {
   def createApp(qAppName: String): js.Promise[_] = js.native
   def createApp(qAppName: String, qLocalizedScriptMainSection: String): js.Promise[_] = js.native
   
-   // ?Result
+  // ?Result
   /**
     * Creates an app and opens an engine session.
     * This operation is possible only in Qlik Sense Desktop.
@@ -264,7 +265,7 @@ trait IGlobal extends IGeneratedAPI {
     */
   def getActiveDoc(): js.Promise[IApp] = js.native
   
-   // ?Result
+  // ?Result
   /**
     * Retrieves the meta data of an app.
     * @param qAppID - Identifier of the app, as returned by the CreateApp method.

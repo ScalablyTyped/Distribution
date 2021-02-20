@@ -1,6 +1,7 @@
 package typings.extjs.Ext.chart
 
 import typings.extjs.Ext.chart.series.ICartesian
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,60 +39,48 @@ object ILineSeries {
   }
   
   @scala.inline
-  implicit class ILineSeriesOps[Self <: ILineSeries] (val x: Self) extends AnyVal {
+  implicit class ILineSeriesMutableBuilder[Self <: ILineSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrawSeries(value: () => Unit): Self = StObject.set(x, "drawSeries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawSeriesUndefined: Self = StObject.set(x, "drawSeries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawSeries(value: () => Unit): Self = this.set("drawSeries", js.Any.fromFunction0(value))
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteDrawSeries: Self = this.set("drawSeries", js.undefined)
+    def setMarkerConfig(value: js.Any): Self = StObject.set(x, "markerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setMarkerConfigUndefined: Self = StObject.set(x, "markerConfig", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setSelectionTolerance(value: Double): Self = StObject.set(x, "selectionTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerConfig(value: js.Any): Self = this.set("markerConfig", value.asInstanceOf[js.Any])
+    def setSelectionToleranceUndefined: Self = StObject.set(x, "selectionTolerance", js.undefined)
     
     @scala.inline
-    def deleteMarkerConfig: Self = this.set("markerConfig", js.undefined)
+    def setShowMarkers(value: Boolean): Self = StObject.set(x, "showMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionTolerance(value: Double): Self = this.set("selectionTolerance", value.asInstanceOf[js.Any])
+    def setShowMarkersUndefined: Self = StObject.set(x, "showMarkers", js.undefined)
     
     @scala.inline
-    def deleteSelectionTolerance: Self = this.set("selectionTolerance", js.undefined)
+    def setSmooth(value: js.Any): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMarkers(value: Boolean): Self = this.set("showMarkers", value.asInstanceOf[js.Any])
+    def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
     
     @scala.inline
-    def deleteShowMarkers: Self = this.set("showMarkers", js.undefined)
+    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmooth(value: js.Any): Self = this.set("smooth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmooth: Self = this.set("smooth", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

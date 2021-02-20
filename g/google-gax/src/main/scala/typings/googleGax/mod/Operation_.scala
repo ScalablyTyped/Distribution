@@ -4,9 +4,10 @@ import typings.googleGax.gaxMod.BackoffSettings
 import typings.googleGax.gaxMod.CallOptions
 import typings.googleGax.longRunningDescriptorMod.LongRunningDescriptor
 import typings.googleGax.longrunningMod.LROOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "Operation")
 @js.native
@@ -37,4 +38,3 @@ class Operation_ protected ()
     callOptions: CallOptions
   ) = this()
 }
-

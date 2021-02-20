@@ -1,12 +1,13 @@
 package typings.iobroker.mod.global.ioBroker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the rights a user or group has to change objects */
 @js.native
-trait ObjectPermissions extends js.Object {
+trait ObjectPermissions extends StObject {
   
   /** The access rights for files */
   var file: ObjectOperationPermissions = js.native
@@ -34,33 +35,21 @@ object ObjectPermissions {
   }
   
   @scala.inline
-  implicit class ObjectPermissionsOps[Self <: ObjectPermissions] (val x: Self) extends AnyVal {
+  implicit class ObjectPermissionsMutableBuilder[Self <: ObjectPermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile(value: ObjectOperationPermissions): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObject(value: ObjectOperationPermissions): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: ObjectOperationPermissions): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: ObjectOperationPermissions): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setObject(value: ObjectOperationPermissions): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsers(value: ObjectOperationPermissions): Self = this.set("users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: ObjectOperationPermissions): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setUsers(value: ObjectOperationPermissions): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }
 }

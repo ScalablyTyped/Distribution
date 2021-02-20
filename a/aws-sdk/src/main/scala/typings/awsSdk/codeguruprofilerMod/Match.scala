@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Match extends js.Object {
+trait Match extends StObject {
   
   /**
     * The location in the profiling graph that contains a recommendation found during analysis.
@@ -31,36 +32,24 @@ object Match {
   }
   
   @scala.inline
-  implicit class MatchOps[Self <: Match] (val x: Self) extends AnyVal {
+  implicit class MatchMutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameAddress(value: String): Self = StObject.set(x, "frameAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameAddressUndefined: Self = StObject.set(x, "frameAddress", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetFramesIndex(value: Integer): Self = StObject.set(x, "targetFramesIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameAddress(value: String): Self = this.set("frameAddress", value.asInstanceOf[js.Any])
+    def setTargetFramesIndexUndefined: Self = StObject.set(x, "targetFramesIndex", js.undefined)
     
     @scala.inline
-    def deleteFrameAddress: Self = this.set("frameAddress", js.undefined)
+    def setThresholdBreachValue(value: Double): Self = StObject.set(x, "thresholdBreachValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetFramesIndex(value: Integer): Self = this.set("targetFramesIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetFramesIndex: Self = this.set("targetFramesIndex", js.undefined)
-    
-    @scala.inline
-    def setThresholdBreachValue(value: Double): Self = this.set("thresholdBreachValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThresholdBreachValue: Self = this.set("thresholdBreachValue", js.undefined)
+    def setThresholdBreachValueUndefined: Self = StObject.set(x, "thresholdBreachValue", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,78 +70,66 @@ object ConceptMapGroup {
   }
   
   @scala.inline
-  implicit class ConceptMapGroupOps[Self <: ConceptMapGroup] (val x: Self) extends AnyVal {
+  implicit class ConceptMapGroupMutableBuilder[Self <: ConceptMapGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: js.Array[ConceptMapGroupElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementVarargs(value: ConceptMapGroupElement*): Self = StObject.set(x, "element", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: uri): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementVarargs(value: ConceptMapGroupElement*): Self = this.set("element", js.Array(value :_*))
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setElement(value: js.Array[ConceptMapGroupElement]): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_source(value: Element): Self = this.set("_source", value.asInstanceOf[js.Any])
+    def setSourceVersionUndefined: Self = StObject.set(x, "sourceVersion", js.undefined)
     
     @scala.inline
-    def delete_source: Self = this.set("_source", js.undefined)
+    def setTarget(value: uri): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sourceVersion(value: Element): Self = this.set("_sourceVersion", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def delete_sourceVersion: Self = this.set("_sourceVersion", js.undefined)
+    def setTargetVersion(value: String): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_target(value: Element): Self = this.set("_target", value.asInstanceOf[js.Any])
+    def setTargetVersionUndefined: Self = StObject.set(x, "targetVersion", js.undefined)
     
     @scala.inline
-    def delete_target: Self = this.set("_target", js.undefined)
+    def setUnmapped(value: ConceptMapGroupUnmapped): Self = StObject.set(x, "unmapped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_targetVersion(value: Element): Self = this.set("_targetVersion", value.asInstanceOf[js.Any])
+    def setUnmappedUndefined: Self = StObject.set(x, "unmapped", js.undefined)
     
     @scala.inline
-    def delete_targetVersion: Self = this.set("_targetVersion", js.undefined)
+    def set_source(value: Element): Self = StObject.set(x, "_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: uri): Self = this.set("source", value.asInstanceOf[js.Any])
+    def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def set_sourceVersion(value: Element): Self = StObject.set(x, "_sourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceVersion(value: String): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
+    def set_sourceVersionUndefined: Self = StObject.set(x, "_sourceVersion", js.undefined)
     
     @scala.inline
-    def deleteSourceVersion: Self = this.set("sourceVersion", js.undefined)
+    def set_target(value: Element): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: uri): Self = this.set("target", value.asInstanceOf[js.Any])
+    def set_targetUndefined: Self = StObject.set(x, "_target", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def set_targetVersion(value: Element): Self = StObject.set(x, "_targetVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetVersion(value: String): Self = this.set("targetVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetVersion: Self = this.set("targetVersion", js.undefined)
-    
-    @scala.inline
-    def setUnmapped(value: ConceptMapGroupUnmapped): Self = this.set("unmapped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnmapped: Self = this.set("unmapped", js.undefined)
+    def set_targetVersionUndefined: Self = StObject.set(x, "_targetVersion", js.undefined)
   }
 }

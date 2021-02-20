@@ -1,12 +1,13 @@
 package typings.nodeTelegramBotApi.mod
 
 import typings.request.mod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConstructorOptions extends js.Object {
+trait ConstructorOptions extends StObject {
   
   var baseApiUrl: js.UndefOr[String] = js.native
   
@@ -29,54 +30,42 @@ object ConstructorOptions {
   }
   
   @scala.inline
-  implicit class ConstructorOptionsOps[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class ConstructorOptionsMutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseApiUrl(value: String): Self = StObject.set(x, "baseApiUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseApiUrlUndefined: Self = StObject.set(x, "baseApiUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilepath(value: Boolean): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseApiUrl(value: String): Self = this.set("baseApiUrl", value.asInstanceOf[js.Any])
+    def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
     
     @scala.inline
-    def deleteBaseApiUrl: Self = this.set("baseApiUrl", js.undefined)
+    def setOnlyFirstMatch(value: Boolean): Self = StObject.set(x, "onlyFirstMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilepath(value: Boolean): Self = this.set("filepath", value.asInstanceOf[js.Any])
+    def setOnlyFirstMatchUndefined: Self = StObject.set(x, "onlyFirstMatch", js.undefined)
     
     @scala.inline
-    def deleteFilepath: Self = this.set("filepath", js.undefined)
+    def setPolling(value: Boolean | PollingOptions): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyFirstMatch(value: Boolean): Self = this.set("onlyFirstMatch", value.asInstanceOf[js.Any])
+    def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
     
     @scala.inline
-    def deleteOnlyFirstMatch: Self = this.set("onlyFirstMatch", js.undefined)
+    def setRequest(value: Options): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolling(value: Boolean | PollingOptions): Self = this.set("polling", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deletePolling: Self = this.set("polling", js.undefined)
+    def setWebHook(value: Boolean | WebHookOptions): Self = StObject.set(x, "webHook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: Options): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
-    
-    @scala.inline
-    def setWebHook(value: Boolean | WebHookOptions): Self = this.set("webHook", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebHook: Self = this.set("webHook", js.undefined)
+    def setWebHookUndefined: Self = StObject.set(x, "webHook", js.undefined)
   }
 }

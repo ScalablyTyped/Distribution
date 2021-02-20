@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiThreadedCalculation extends js.Object {
+trait MultiThreadedCalculation extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -40,39 +41,27 @@ object MultiThreadedCalculation {
   }
   
   @scala.inline
-  implicit class MultiThreadedCalculationOps[Self <: MultiThreadedCalculation] (val x: Self) extends AnyVal {
+  implicit class MultiThreadedCalculationMutableBuilder[Self <: MultiThreadedCalculation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotMultiThreadedCalculation_typekey(value: MultiThreadedCalculation): Self = StObject.set(x, "Excel.MultiThreadedCalculation_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setThreadCount(value: Double): Self = StObject.set(x, "ThreadCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotMultiThreadedCalculation_typekey(value: MultiThreadedCalculation): Self = this.set("Excel.MultiThreadedCalculation_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreadCount(value: Double): Self = this.set("ThreadCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreadMode(value: XlThreadMode): Self = this.set("ThreadMode", value.asInstanceOf[js.Any])
+    def setThreadMode(value: XlThreadMode): Self = StObject.set(x, "ThreadMode", value.asInstanceOf[js.Any])
   }
 }

@@ -3,16 +3,16 @@ package typings.netconf
 import typings.netconf.anon.Action
 import typings.netconf.anon.Host
 import typings.netconf.anon.Hostname
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("netconf", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("netconf", "Client")
   @js.native
-  class Client protected () extends js.Object {
+  class Client protected () extends StObject {
     /**
       * Creates a new Client object by passing in the connection parameters. Both password and private key authentication methods are supported
       */

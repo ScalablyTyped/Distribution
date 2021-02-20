@@ -2,12 +2,13 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tensorflowTfjsConverter.compiledApiMod.MetaGraphDef.IMetaInfoDef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMetaGraphDef extends js.Object {
+trait IMetaGraphDef extends StObject {
   
   /** MetaGraphDef assetFileDef */
   var assetFileDef: js.UndefOr[js.Array[IAssetFileDef] | Null] = js.native
@@ -36,75 +37,63 @@ object IMetaGraphDef {
   }
   
   @scala.inline
-  implicit class IMetaGraphDefOps[Self <: IMetaGraphDef] (val x: Self) extends AnyVal {
+  implicit class IMetaGraphDefMutableBuilder[Self <: IMetaGraphDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetFileDef(value: js.Array[IAssetFileDef]): Self = StObject.set(x, "assetFileDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetFileDefNull: Self = StObject.set(x, "assetFileDef", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetFileDefUndefined: Self = StObject.set(x, "assetFileDef", js.undefined)
     
     @scala.inline
-    def setAssetFileDefVarargs(value: IAssetFileDef*): Self = this.set("assetFileDef", js.Array(value :_*))
+    def setAssetFileDefVarargs(value: IAssetFileDef*): Self = StObject.set(x, "assetFileDef", js.Array(value :_*))
     
     @scala.inline
-    def setAssetFileDef(value: js.Array[IAssetFileDef]): Self = this.set("assetFileDef", value.asInstanceOf[js.Any])
+    def setCollectionDef(value: StringDictionary[ICollectionDef]): Self = StObject.set(x, "collectionDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssetFileDef: Self = this.set("assetFileDef", js.undefined)
+    def setCollectionDefNull: Self = StObject.set(x, "collectionDef", null)
     
     @scala.inline
-    def setAssetFileDefNull: Self = this.set("assetFileDef", null)
+    def setCollectionDefUndefined: Self = StObject.set(x, "collectionDef", js.undefined)
     
     @scala.inline
-    def setCollectionDef(value: StringDictionary[ICollectionDef]): Self = this.set("collectionDef", value.asInstanceOf[js.Any])
+    def setGraphDef(value: IGraphDef): Self = StObject.set(x, "graphDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollectionDef: Self = this.set("collectionDef", js.undefined)
+    def setGraphDefNull: Self = StObject.set(x, "graphDef", null)
     
     @scala.inline
-    def setCollectionDefNull: Self = this.set("collectionDef", null)
+    def setGraphDefUndefined: Self = StObject.set(x, "graphDef", js.undefined)
     
     @scala.inline
-    def setGraphDef(value: IGraphDef): Self = this.set("graphDef", value.asInstanceOf[js.Any])
+    def setMetaInfoDef(value: IMetaInfoDef): Self = StObject.set(x, "metaInfoDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGraphDef: Self = this.set("graphDef", js.undefined)
+    def setMetaInfoDefNull: Self = StObject.set(x, "metaInfoDef", null)
     
     @scala.inline
-    def setGraphDefNull: Self = this.set("graphDef", null)
+    def setMetaInfoDefUndefined: Self = StObject.set(x, "metaInfoDef", js.undefined)
     
     @scala.inline
-    def setMetaInfoDef(value: IMetaInfoDef): Self = this.set("metaInfoDef", value.asInstanceOf[js.Any])
+    def setSaverDef(value: ISaverDef): Self = StObject.set(x, "saverDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetaInfoDef: Self = this.set("metaInfoDef", js.undefined)
+    def setSaverDefNull: Self = StObject.set(x, "saverDef", null)
     
     @scala.inline
-    def setMetaInfoDefNull: Self = this.set("metaInfoDef", null)
+    def setSaverDefUndefined: Self = StObject.set(x, "saverDef", js.undefined)
     
     @scala.inline
-    def setSaverDef(value: ISaverDef): Self = this.set("saverDef", value.asInstanceOf[js.Any])
+    def setSignatureDef(value: StringDictionary[ISignatureDef]): Self = StObject.set(x, "signatureDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSaverDef: Self = this.set("saverDef", js.undefined)
+    def setSignatureDefNull: Self = StObject.set(x, "signatureDef", null)
     
     @scala.inline
-    def setSaverDefNull: Self = this.set("saverDef", null)
-    
-    @scala.inline
-    def setSignatureDef(value: StringDictionary[ISignatureDef]): Self = this.set("signatureDef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignatureDef: Self = this.set("signatureDef", js.undefined)
-    
-    @scala.inline
-    def setSignatureDefNull: Self = this.set("signatureDef", null)
+    def setSignatureDefUndefined: Self = StObject.set(x, "signatureDef", js.undefined)
   }
 }

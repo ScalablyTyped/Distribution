@@ -1,5 +1,6 @@
 package typings.smartFoxServer.global.SFS2X
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,10 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion
 //#region Managers
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Managers.html
-@JSGlobal("SFS2X.Managers")
-@js.native
-object Managers extends js.Object {
+object Managers {
   
+  @JSGlobal("SFS2X.Managers.BuddyManager")
   @js.native
   class BuddyManager protected ()
     extends typings.smartFoxServer.SFS2X.Managers.BuddyManager {
@@ -21,6 +21,7 @@ object Managers extends js.Object {
     def this(sfs: typings.smartFoxServer.SFS2X.SmartFox) = this()
   }
   
+  @JSGlobal("SFS2X.Managers.RoomManager")
   @js.native
   class RoomManager protected ()
     extends typings.smartFoxServer.SFS2X.Managers.RoomManager {
@@ -31,6 +32,7 @@ object Managers extends js.Object {
     def this(sfs: typings.smartFoxServer.SFS2X.SmartFox) = this()
   }
   
+  @JSGlobal("SFS2X.Managers.UserManager")
   @js.native
   class UserManager protected ()
     extends typings.smartFoxServer.SFS2X.Managers.UserManager {

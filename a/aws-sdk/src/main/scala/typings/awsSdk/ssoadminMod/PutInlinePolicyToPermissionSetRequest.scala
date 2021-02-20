@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutInlinePolicyToPermissionSetRequest extends js.Object {
+trait PutInlinePolicyToPermissionSetRequest extends StObject {
   
   /**
     * The IAM inline policy to attach to a PermissionSet.
@@ -35,27 +36,15 @@ object PutInlinePolicyToPermissionSetRequest {
   }
   
   @scala.inline
-  implicit class PutInlinePolicyToPermissionSetRequestOps[Self <: PutInlinePolicyToPermissionSetRequest] (val x: Self) extends AnyVal {
+  implicit class PutInlinePolicyToPermissionSetRequestMutableBuilder[Self <: PutInlinePolicyToPermissionSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInlinePolicy(value: PermissionSetPolicyDocument): Self = StObject.set(x, "InlinePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInlinePolicy(value: PermissionSetPolicyDocument): Self = this.set("InlinePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = this.set("InstanceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermissionSetArn(value: PermissionSetArn): Self = this.set("PermissionSetArn", value.asInstanceOf[js.Any])
+    def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
   }
 }

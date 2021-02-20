@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinSpaceAttrs extends js.Object {
+trait LinSpaceAttrs extends StObject {
   
   var num: Double = js.native
   
@@ -22,27 +23,15 @@ object LinSpaceAttrs {
   }
   
   @scala.inline
-  implicit class LinSpaceAttrsOps[Self <: LinSpaceAttrs] (val x: Self) extends AnyVal {
+  implicit class LinSpaceAttrsMutableBuilder[Self <: LinSpaceAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNum(value: Double): Self = this.set("num", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: Double): Self = this.set("stop", value.asInstanceOf[js.Any])
+    def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
   }
 }

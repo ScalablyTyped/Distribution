@@ -4,6 +4,7 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.`21`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,51 +31,39 @@ object DialogAlertProps {
   }
   
   @scala.inline
-  implicit class DialogAlertPropsOps[Self <: DialogAlertProps] (val x: Self) extends AnyVal {
+  implicit class DialogAlertPropsMutableBuilder[Self <: DialogAlertProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirmAccessibilityLabel(value: String): Self = StObject.set(x, "confirmAccessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfirmAccessibilityLabelUndefined: Self = StObject.set(x, "confirmAccessibilityLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmText(value: String): Self = this.set("confirmText", value.asInstanceOf[js.Any])
+    def setConfirmTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "confirmTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmAccessibilityLabel(value: String): Self = this.set("confirmAccessibilityLabel", value.asInstanceOf[js.Any])
+    def setConfirmTextStyleNull: Self = StObject.set(x, "confirmTextStyle", null)
     
     @scala.inline
-    def deleteConfirmAccessibilityLabel: Self = this.set("confirmAccessibilityLabel", js.undefined)
+    def setConfirmTextStyleUndefined: Self = StObject.set(x, "confirmTextStyle", js.undefined)
     
     @scala.inline
-    def setConfirmTextStyle(value: StyleProp[TextStyle]): Self = this.set("confirmTextStyle", value.asInstanceOf[js.Any])
+    def setFooterWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "footerWrapperStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfirmTextStyle: Self = this.set("confirmTextStyle", js.undefined)
+    def setFooterWrapperStyleNull: Self = StObject.set(x, "footerWrapperStyle", null)
     
     @scala.inline
-    def setConfirmTextStyleNull: Self = this.set("confirmTextStyle", null)
+    def setFooterWrapperStyleUndefined: Self = StObject.set(x, "footerWrapperStyle", js.undefined)
     
     @scala.inline
-    def setFooterWrapperStyle(value: StyleProp[ViewStyle]): Self = this.set("footerWrapperStyle", value.asInstanceOf[js.Any])
+    def setOnConfirm(value: (/* data */ js.Any, /* args */ `21`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteFooterWrapperStyle: Self = this.set("footerWrapperStyle", js.undefined)
-    
-    @scala.inline
-    def setFooterWrapperStyleNull: Self = this.set("footerWrapperStyle", null)
-    
-    @scala.inline
-    def setOnConfirm(value: (/* data */ js.Any, /* args */ `21`) => Unit): Self = this.set("onConfirm", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnConfirm: Self = this.set("onConfirm", js.undefined)
+    def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
   }
 }

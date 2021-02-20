@@ -1,11 +1,12 @@
 package typings.awsSdk.ivsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetChannelRequest extends js.Object {
+trait BatchGetChannelRequest extends StObject {
   
   /**
     * Array of ARNs, one per channel.
@@ -21,24 +22,12 @@ object BatchGetChannelRequest {
   }
   
   @scala.inline
-  implicit class BatchGetChannelRequestOps[Self <: BatchGetChannelRequest] (val x: Self) extends AnyVal {
+  implicit class BatchGetChannelRequestMutableBuilder[Self <: BatchGetChannelRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArns(value: ChannelArnList): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArnsVarargs(value: ChannelArn*): Self = this.set("arns", js.Array(value :_*))
-    
-    @scala.inline
-    def setArns(value: ChannelArnList): Self = this.set("arns", value.asInstanceOf[js.Any])
+    def setArnsVarargs(value: ChannelArn*): Self = StObject.set(x, "arns", js.Array(value :_*))
   }
 }

@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.Numerics.Vector3
 import typings.winrtUwp.Windows.Foundation.Point
 import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.anon.Results
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides convenience methods to facilitate geometric math for a camera device, combining the intrinsic properties of that camera with correlated depth frames to provide screen-space pixel to camera-space coordinate projections. */
 @js.native
-trait PerceptionDepthCorrelatedCameraIntrinsics extends js.Object {
+trait PerceptionDepthCorrelatedCameraIntrinsics extends StObject {
   
   /**
     * Unprojects all pixels in an image from camera image space out into the coordinate frame of the camera device, using the corresponding depth values from a correlated depth camera.
@@ -55,30 +56,18 @@ object PerceptionDepthCorrelatedCameraIntrinsics {
   }
   
   @scala.inline
-  implicit class PerceptionDepthCorrelatedCameraIntrinsicsOps[Self <: PerceptionDepthCorrelatedCameraIntrinsics] (val x: Self) extends AnyVal {
+  implicit class PerceptionDepthCorrelatedCameraIntrinsicsMutableBuilder[Self <: PerceptionDepthCorrelatedCameraIntrinsics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUnprojectAllPixelsAtCorrelatedDepthAsync(value: PerceptionDepthFrame => Results): Self = StObject.set(x, "unprojectAllPixelsAtCorrelatedDepthAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUnprojectPixelAtCorrelatedDepth(value: (Point, PerceptionDepthFrame) => Vector3): Self = StObject.set(x, "unprojectPixelAtCorrelatedDepth", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnprojectPixelsAtCorrelatedDepth(value: (Point, PerceptionDepthFrame) => Vector3): Self = StObject.set(x, "unprojectPixelsAtCorrelatedDepth", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUnprojectAllPixelsAtCorrelatedDepthAsync(value: PerceptionDepthFrame => Results): Self = this.set("unprojectAllPixelsAtCorrelatedDepthAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnprojectPixelAtCorrelatedDepth(value: (Point, PerceptionDepthFrame) => Vector3): Self = this.set("unprojectPixelAtCorrelatedDepth", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnprojectPixelsAtCorrelatedDepth(value: (Point, PerceptionDepthFrame) => Vector3): Self = this.set("unprojectPixelsAtCorrelatedDepth", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnprojectRegionPixelsAtCorrelatedDepthAsync(value: (Rect, PerceptionDepthFrame) => Results): Self = this.set("unprojectRegionPixelsAtCorrelatedDepthAsync", js.Any.fromFunction2(value))
+    def setUnprojectRegionPixelsAtCorrelatedDepthAsync(value: (Rect, PerceptionDepthFrame) => Results): Self = StObject.set(x, "unprojectRegionPixelsAtCorrelatedDepthAsync", js.Any.fromFunction2(value))
   }
 }

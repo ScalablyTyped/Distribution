@@ -1,6 +1,7 @@
 package typings.umbraco.umbraco.services
 
 import typings.angular.mod.IScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A service containing all logic for all of the Umbraco TinyMCE plugins
   */
 @js.native
-trait ITinyMceService extends js.Object {
+trait ITinyMceService extends StObject {
   
   /**
     * @ngdoc method
@@ -92,33 +93,21 @@ object ITinyMceService {
   }
   
   @scala.inline
-  implicit class ITinyMceServiceOps[Self <: ITinyMceService] (val x: Self) extends AnyVal {
+  implicit class ITinyMceServiceMutableBuilder[Self <: ITinyMceService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: () => js.Array[ITinyMcePlugin]): Self = StObject.set(x, "configuration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateInsertEmbeddedMedia(value: (js.Object, IScope) => Unit): Self = StObject.set(x, "createInsertEmbeddedMedia", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateInsertMacro(value: (js.Object, IScope) => Unit): Self = StObject.set(x, "createInsertMacro", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setConfiguration(value: () => js.Array[ITinyMcePlugin]): Self = this.set("configuration", js.Any.fromFunction0(value))
+    def setCreateMediaPicker(value: js.Object => Unit): Self = StObject.set(x, "createMediaPicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateInsertEmbeddedMedia(value: (js.Object, IScope) => Unit): Self = this.set("createInsertEmbeddedMedia", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCreateInsertMacro(value: (js.Object, IScope) => Unit): Self = this.set("createInsertMacro", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCreateMediaPicker(value: js.Object => Unit): Self = this.set("createMediaPicker", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDefaultPrevalues(value: () => IConfiguration): Self = this.set("defaultPrevalues", js.Any.fromFunction0(value))
+    def setDefaultPrevalues(value: () => IConfiguration): Self = StObject.set(x, "defaultPrevalues", js.Any.fromFunction0(value))
   }
 }

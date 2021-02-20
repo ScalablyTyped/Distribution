@@ -1,33 +1,37 @@
 package typings.babylonjs
 
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Events/keyboardEvents", JSImport.Namespace)
-@js.native
-object keyboardEventsMod extends js.Object {
+object keyboardEventsMod {
   
+  @JSImport("babylonjs/Events/keyboardEvents", "KeyboardEventTypes")
   @js.native
-  class KeyboardEventTypes () extends js.Object
+  class KeyboardEventTypes () extends StObject
   /* static members */
-  @js.native
-  object KeyboardEventTypes extends js.Object {
+  object KeyboardEventTypes {
     
     /**
       * The keydown event is fired when a key becomes active (pressed).
       */
+    @JSImport("babylonjs/Events/keyboardEvents", "KeyboardEventTypes.KEYDOWN")
+    @js.native
     val KEYDOWN: Double = js.native
     
     /**
       * The keyup event is fired when a key has been released.
       */
+    @JSImport("babylonjs/Events/keyboardEvents", "KeyboardEventTypes.KEYUP")
+    @js.native
     val KEYUP: Double = js.native
   }
   
+  @JSImport("babylonjs/Events/keyboardEvents", "KeyboardInfo")
   @js.native
-  class KeyboardInfo protected () extends js.Object {
+  class KeyboardInfo protected () extends StObject {
     /**
       * Instantiates a new keyboard info.
       * This class is used to store keyboard related info for the onKeyboardObservable event.
@@ -56,6 +60,7 @@ object keyboardEventsMod extends js.Object {
     var `type`: Double = js.native
   }
   
+  @JSImport("babylonjs/Events/keyboardEvents", "KeyboardInfoPre")
   @js.native
   class KeyboardInfoPre protected () extends KeyboardInfo {
     /**

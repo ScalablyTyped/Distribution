@@ -5,16 +5,16 @@ import typings.awsSdkClientKmsNode.kmsconfigurationMod.KMSConfiguration
 import typings.awsSdkClientKmsNode.kmsconfigurationMod.KMSResolvedConfiguration
 import typings.awsSdkClientKmsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.commandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/KMSClient", JSImport.Namespace)
-@js.native
-object kmsclientMod extends js.Object {
+object kmsclientMod {
   
+  @JSImport("@aws-sdk/client-kms-node/KMSClient", "KMSClient")
   @js.native
-  class KMSClient protected () extends js.Object {
+  class KMSClient protected () extends StObject {
     def this(configuration: KMSConfiguration) = this()
     
     val config: KMSResolvedConfiguration = js.native

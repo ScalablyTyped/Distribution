@@ -5,12 +5,13 @@ import typings.googleapis.alphaMod.computeAlpha.Options
 import typings.googleapis.googleapisStrings.alpha
 import typings.googleapis.googleapisStrings.beta
 import typings.googleapis.googleapisStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn46 extends js.Object {
+trait Fn46 extends StObject {
   
   def apply(options: Options): Compute = js.native
   def apply(options: typings.googleapis.betaMod.computeBeta.Options): typings.googleapis.betaMod.computeBeta.Compute = js.native

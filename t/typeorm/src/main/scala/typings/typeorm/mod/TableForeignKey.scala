@@ -2,6 +2,7 @@ package typings.typeorm.mod
 
 import typings.typeorm.metadataForeignKeyMetadataMod.ForeignKeyMetadata
 import typings.typeorm.optionsTableForeignKeyOptionsMod.TableForeignKeyOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,12 @@ class TableForeignKey protected ()
   def this(options: TableForeignKeyOptions) = this()
 }
 /* static members */
-@JSImport("typeorm", "TableForeignKey")
-@js.native
-object TableForeignKey extends js.Object {
+object TableForeignKey {
   
   /**
     * Creates a new table foreign key from the given foreign key metadata.
     */
+  @JSImport("typeorm", "TableForeignKey.create")
+  @js.native
   def create(metadata: ForeignKeyMetadata): typings.typeorm.tableTableForeignKeyMod.TableForeignKey = js.native
 }

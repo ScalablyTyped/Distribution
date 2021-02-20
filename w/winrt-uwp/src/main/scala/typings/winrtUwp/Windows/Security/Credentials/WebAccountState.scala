@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.Credentials
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebAccountState extends js.Object
+sealed trait WebAccountState extends StObject
 /** Describes the state of a WebAccount object. */
 @JSGlobal("Windows.Security.Credentials.WebAccountState")
 @js.native
-object WebAccountState extends js.Object {
+object WebAccountState extends StObject {
   
   /** The account is connected. */
   @js.native

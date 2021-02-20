@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionInstanceGroupsListInstancesRequest extends js.Object {
+trait RegionInstanceGroupsListInstancesRequest extends StObject {
   
   /** Instances in which state should be returned. Valid options are: 'ALL', 'RUNNING'. By default, it lists all instances. */
   var instanceState: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object RegionInstanceGroupsListInstancesRequest {
   }
   
   @scala.inline
-  implicit class RegionInstanceGroupsListInstancesRequestOps[Self <: RegionInstanceGroupsListInstancesRequest] (val x: Self) extends AnyVal {
+  implicit class RegionInstanceGroupsListInstancesRequestMutableBuilder[Self <: RegionInstanceGroupsListInstancesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceState(value: String): Self = StObject.set(x, "instanceState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceStateUndefined: Self = StObject.set(x, "instanceState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceState(value: String): Self = this.set("instanceState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceState: Self = this.set("instanceState", js.undefined)
-    
-    @scala.inline
-    def setPortName(value: String): Self = this.set("portName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortName: Self = this.set("portName", js.undefined)
+    def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
   }
 }

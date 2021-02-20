@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Replication extends js.Object {
+trait Replication extends StObject {
   
   /** The Secret will automatically be replicated without any restrictions. */
   var automatic: js.UndefOr[Automatic] = js.native
@@ -22,30 +23,18 @@ object Replication {
   }
   
   @scala.inline
-  implicit class ReplicationOps[Self <: Replication] (val x: Self) extends AnyVal {
+  implicit class ReplicationMutableBuilder[Self <: Replication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomatic(value: Automatic): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserManaged(value: UserManaged): Self = StObject.set(x, "userManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatic(value: Automatic): Self = this.set("automatic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutomatic: Self = this.set("automatic", js.undefined)
-    
-    @scala.inline
-    def setUserManaged(value: UserManaged): Self = this.set("userManaged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserManaged: Self = this.set("userManaged", js.undefined)
+    def setUserManagedUndefined: Self = StObject.set(x, "userManaged", js.undefined)
   }
 }

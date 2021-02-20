@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FloatingObjectTextWrapSide extends js.Object
+sealed trait FloatingObjectTextWrapSide extends StObject
 /**
   * Lists values specifying how text can wrap around a floating object's left and right sides.
   */
 @JSGlobal("FloatingObjectTextWrapSide")
 @js.native
-object FloatingObjectTextWrapSide extends js.Object {
+object FloatingObjectTextWrapSide extends StObject {
   
   /**
     * Wraps text to both the left and right of the shape.

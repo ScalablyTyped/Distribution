@@ -3,13 +3,14 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.drawing.PolyPolygonBezierCoords
 import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** properties that are used for {@link DataSeries} that display symbols. */
 @js.native
-trait Symbol extends js.Object {
+trait Symbol extends StObject {
   
   /**
     * The color used for drawing the border of symbols.
@@ -65,39 +66,27 @@ object Symbol {
   }
   
   @scala.inline
-  implicit class SymbolOps[Self <: Symbol] (val x: Self) extends AnyVal {
+  implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillColor(value: Double): Self = StObject.set(x, "FillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: Double): Self = this.set("BorderColor", value.asInstanceOf[js.Any])
+    def setPolygonCoords(value: PolyPolygonBezierCoords): Self = StObject.set(x, "PolygonCoords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: Double): Self = this.set("FillColor", value.asInstanceOf[js.Any])
+    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphic(value: XGraphic): Self = this.set("Graphic", value.asInstanceOf[js.Any])
+    def setStandardSymbol(value: Double): Self = StObject.set(x, "StandardSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonCoords(value: PolyPolygonBezierCoords): Self = this.set("PolygonCoords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandardSymbol(value: Double): Self = this.set("StandardSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: SymbolStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
+    def setStyle(value: SymbolStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Linux extends js.Object {
+trait Linux extends StObject {
   
   var AllowAllDevices: Boolean = js.native
   
@@ -22,33 +23,21 @@ object Linux {
   }
   
   @scala.inline
-  implicit class LinuxOps[Self <: Linux] (val x: Self) extends AnyVal {
+  implicit class LinuxMutableBuilder[Self <: Linux] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAllDevices(value: Boolean): Self = StObject.set(x, "AllowAllDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
     
     @scala.inline
-    def setAllowAllDevices(value: Boolean): Self = this.set("AllowAllDevices", value.asInstanceOf[js.Any])
+    def setDevices(value: js.Array[PluginDevice]): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilitiesVarargs(value: String*): Self = this.set("Capabilities", js.Array(value :_*))
-    
-    @scala.inline
-    def setCapabilities(value: js.Array[String]): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDevicesVarargs(value: PluginDevice*): Self = this.set("Devices", js.Array(value :_*))
-    
-    @scala.inline
-    def setDevices(value: js.Array[PluginDevice]): Self = this.set("Devices", value.asInstanceOf[js.Any])
+    def setDevicesVarargs(value: PluginDevice*): Self = StObject.set(x, "Devices", js.Array(value :_*))
   }
 }

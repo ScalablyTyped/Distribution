@@ -1,11 +1,12 @@
 package typings.awsSdk.cloud9Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEnvironmentMembershipsResult extends js.Object {
+trait DescribeEnvironmentMembershipsResult extends StObject {
   
   /**
     * Information about the environment members for the environment.
@@ -26,33 +27,21 @@ object DescribeEnvironmentMembershipsResult {
   }
   
   @scala.inline
-  implicit class DescribeEnvironmentMembershipsResultOps[Self <: DescribeEnvironmentMembershipsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeEnvironmentMembershipsResultMutableBuilder[Self <: DescribeEnvironmentMembershipsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMemberships(value: EnvironmentMembersList): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembershipsVarargs(value: EnvironmentMember*): Self = StObject.set(x, "memberships", js.Array(value :_*))
     
     @scala.inline
-    def setMembershipsVarargs(value: EnvironmentMember*): Self = this.set("memberships", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberships(value: EnvironmentMembersList): Self = this.set("memberships", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemberships: Self = this.set("memberships", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

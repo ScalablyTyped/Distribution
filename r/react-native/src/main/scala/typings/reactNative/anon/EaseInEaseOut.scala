@@ -1,12 +1,13 @@
 package typings.reactNative.anon
 
 import typings.reactNative.mod.LayoutAnimationConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EaseInEaseOut extends js.Object {
+trait EaseInEaseOut extends StObject {
   
   var easeInEaseOut: LayoutAnimationConfig = js.native
   
@@ -23,27 +24,15 @@ object EaseInEaseOut {
   }
   
   @scala.inline
-  implicit class EaseInEaseOutOps[Self <: EaseInEaseOut] (val x: Self) extends AnyVal {
+  implicit class EaseInEaseOutMutableBuilder[Self <: EaseInEaseOut] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEaseInEaseOut(value: LayoutAnimationConfig): Self = StObject.set(x, "easeInEaseOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinear(value: LayoutAnimationConfig): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEaseInEaseOut(value: LayoutAnimationConfig): Self = this.set("easeInEaseOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinear(value: LayoutAnimationConfig): Self = this.set("linear", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpring(value: LayoutAnimationConfig): Self = this.set("spring", value.asInstanceOf[js.Any])
+    def setSpring(value: LayoutAnimationConfig): Self = StObject.set(x, "spring", value.asInstanceOf[js.Any])
   }
 }

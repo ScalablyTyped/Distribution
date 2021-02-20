@@ -1,12 +1,13 @@
 package typings.novaEditorNode.anon
 
 import typings.novaEditorNode.novaEditorNodeStrings.FileSystemBitField
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait T extends js.Object {
+trait T extends StObject {
   
   var __t: FileSystemBitField = js.native
 }
@@ -19,21 +20,9 @@ object T {
   }
   
   @scala.inline
-  implicit class TOps[Self <: T] (val x: Self) extends AnyVal {
+  implicit class TMutableBuilder[Self <: T] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set__t(value: FileSystemBitField): Self = this.set("__t", value.asInstanceOf[js.Any])
+    def set__t(value: FileSystemBitField): Self = StObject.set(x, "__t", value.asInstanceOf[js.Any])
   }
 }

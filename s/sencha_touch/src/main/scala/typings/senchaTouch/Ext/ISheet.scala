@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,90 +69,78 @@ object ISheet {
   }
   
   @scala.inline
-  implicit class ISheetOps[Self <: ISheet] (val x: Self) extends AnyVal {
+  implicit class ISheetMutableBuilder[Self <: ISheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnter(value: java.lang.String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExit(value: java.lang.String): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnter(value: java.lang.String): Self = this.set("enter", value.asInstanceOf[js.Any])
+    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
     @scala.inline
-    def deleteEnter: Self = this.set("enter", js.undefined)
+    def setGetEnter(value: () => java.lang.String): Self = StObject.set(x, "getEnter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExit(value: java.lang.String): Self = this.set("exit", value.asInstanceOf[js.Any])
+    def setGetEnterUndefined: Self = StObject.set(x, "getEnter", js.undefined)
     
     @scala.inline
-    def deleteExit: Self = this.set("exit", js.undefined)
+    def setGetExit(value: () => java.lang.String): Self = StObject.set(x, "getExit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnter(value: () => java.lang.String): Self = this.set("getEnter", js.Any.fromFunction0(value))
+    def setGetExitUndefined: Self = StObject.set(x, "getExit", js.undefined)
     
     @scala.inline
-    def deleteGetEnter: Self = this.set("getEnter", js.undefined)
+    def setGetStretchX(value: () => Boolean): Self = StObject.set(x, "getStretchX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetExit(value: () => java.lang.String): Self = this.set("getExit", js.Any.fromFunction0(value))
+    def setGetStretchXUndefined: Self = StObject.set(x, "getStretchX", js.undefined)
     
     @scala.inline
-    def deleteGetExit: Self = this.set("getExit", js.undefined)
+    def setGetStretchY(value: () => Boolean): Self = StObject.set(x, "getStretchY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStretchX(value: () => Boolean): Self = this.set("getStretchX", js.Any.fromFunction0(value))
+    def setGetStretchYUndefined: Self = StObject.set(x, "getStretchY", js.undefined)
     
     @scala.inline
-    def deleteGetStretchX: Self = this.set("getStretchX", js.undefined)
+    def setSetEnter(value: /* enter */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStretchY(value: () => Boolean): Self = this.set("getStretchY", js.Any.fromFunction0(value))
+    def setSetEnterUndefined: Self = StObject.set(x, "setEnter", js.undefined)
     
     @scala.inline
-    def deleteGetStretchY: Self = this.set("getStretchY", js.undefined)
+    def setSetExit(value: /* exit */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setExit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnter(value: /* enter */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setEnter", js.Any.fromFunction1(value))
+    def setSetExitUndefined: Self = StObject.set(x, "setExit", js.undefined)
     
     @scala.inline
-    def deleteSetEnter: Self = this.set("setEnter", js.undefined)
+    def setSetStretchX(value: /* stretchX */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStretchX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetExit(value: /* exit */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setExit", js.Any.fromFunction1(value))
+    def setSetStretchXUndefined: Self = StObject.set(x, "setStretchX", js.undefined)
     
     @scala.inline
-    def deleteSetExit: Self = this.set("setExit", js.undefined)
+    def setSetStretchY(value: /* stretchY */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStretchY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetStretchX(value: /* stretchX */ js.UndefOr[Boolean] => Unit): Self = this.set("setStretchX", js.Any.fromFunction1(value))
+    def setSetStretchYUndefined: Self = StObject.set(x, "setStretchY", js.undefined)
     
     @scala.inline
-    def deleteSetStretchX: Self = this.set("setStretchX", js.undefined)
+    def setStretchX(value: Boolean): Self = StObject.set(x, "stretchX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetStretchY(value: /* stretchY */ js.UndefOr[Boolean] => Unit): Self = this.set("setStretchY", js.Any.fromFunction1(value))
+    def setStretchXUndefined: Self = StObject.set(x, "stretchX", js.undefined)
     
     @scala.inline
-    def deleteSetStretchY: Self = this.set("setStretchY", js.undefined)
+    def setStretchY(value: Boolean): Self = StObject.set(x, "stretchY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStretchX(value: Boolean): Self = this.set("stretchX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStretchX: Self = this.set("stretchX", js.undefined)
-    
-    @scala.inline
-    def setStretchY(value: Boolean): Self = this.set("stretchY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStretchY: Self = this.set("stretchY", js.undefined)
+    def setStretchYUndefined: Self = StObject.set(x, "stretchY", js.undefined)
   }
 }

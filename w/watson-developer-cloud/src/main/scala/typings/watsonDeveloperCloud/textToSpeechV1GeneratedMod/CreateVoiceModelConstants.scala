@@ -1,72 +1,61 @@
 package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `createVoiceModel` operation. */
-@JSImport("watson-developer-cloud/text-to-speech/v1-generated", "CreateVoiceModelConstants")
-@js.native
-object CreateVoiceModelConstants extends js.Object {
+object CreateVoiceModelConstants {
   
   @js.native
-  sealed trait Language extends js.Object
+  sealed trait Language extends StObject
   /** The language of the new custom voice model. Omit the parameter to use the the default language, `en-US`. */
+  @JSImport("watson-developer-cloud/text-to-speech/v1-generated", "CreateVoiceModelConstants.Language")
   @js.native
-  object Language extends js.Object {
+  object Language extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Language with String] = js.native
     
     @js.native
     sealed trait DE_DE extends Language
-    /* "de-DE" */ @js.native
-    object DE_DE extends TopLevel[DE_DE with String]
+    /* "de-DE" */ val DE_DE: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language.DE_DE with String = js.native
     
     @js.native
     sealed trait EN_GB extends Language
-    /* "en-GB" */ @js.native
-    object EN_GB extends TopLevel[EN_GB with String]
+    /* "en-GB" */ val EN_GB: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language.EN_GB with String = js.native
     
     @js.native
     sealed trait EN_US extends Language
-    /* "en-US" */ @js.native
-    object EN_US extends TopLevel[EN_US with String]
+    /* "en-US" */ val EN_US: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language.EN_US with String = js.native
     
     @js.native
     sealed trait ES_ES extends Language
-    /* "es-ES" */ @js.native
-    object ES_ES extends TopLevel[ES_ES with String]
+    /* "es-ES" */ val ES_ES: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language.ES_ES with String = js.native
     
     @js.native
     sealed trait ES_LA extends Language
-    /* "es-LA" */ @js.native
-    object ES_LA extends TopLevel[ES_LA with String]
+    /* "es-LA" */ val ES_LA: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language.ES_LA with String = js.native
     
     @js.native
     sealed trait ES_US extends Language
-    /* "es-US" */ @js.native
-    object ES_US extends TopLevel[ES_US with String]
+    /* "es-US" */ val ES_US: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language.ES_US with String = js.native
     
     @js.native
     sealed trait FR_FR extends Language
-    /* "fr-FR" */ @js.native
-    object FR_FR extends TopLevel[FR_FR with String]
+    /* "fr-FR" */ val FR_FR: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language.FR_FR with String = js.native
     
     @js.native
     sealed trait IT_IT extends Language
-    /* "it-IT" */ @js.native
-    object IT_IT extends TopLevel[IT_IT with String]
+    /* "it-IT" */ val IT_IT: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language.IT_IT with String = js.native
     
     @js.native
     sealed trait JA_JP extends Language
-    /* "ja-JP" */ @js.native
-    object JA_JP extends TopLevel[JA_JP with String]
+    /* "ja-JP" */ val JA_JP: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language.JA_JP with String = js.native
     
     @js.native
     sealed trait PT_BR extends Language
-    /* "pt-BR" */ @js.native
-    object PT_BR extends TopLevel[PT_BR with String]
+    /* "pt-BR" */ val PT_BR: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language.PT_BR with String = js.native
   }
 }

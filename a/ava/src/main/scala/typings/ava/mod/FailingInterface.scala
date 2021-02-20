@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailingInterface[Context] extends js.Object {
+trait FailingInterface[Context] extends StObject {
   
   /** Declare a concurrent test. The test is expected to fail. */
   def apply(title: String, implementation: Implementation[Context]): Unit = js.native

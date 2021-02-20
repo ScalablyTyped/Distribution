@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Target
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetachFromTargetRequest extends js.Object {
+trait DetachFromTargetRequest extends StObject {
   
   /**
     * Session to detach.
@@ -26,30 +27,18 @@ object DetachFromTargetRequest {
   }
   
   @scala.inline
-  implicit class DetachFromTargetRequestOps[Self <: DetachFromTargetRequest] (val x: Self) extends AnyVal {
+  implicit class DetachFromTargetRequestMutableBuilder[Self <: DetachFromTargetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionId(value: SessionID): Self = this.set("sessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
-    
-    @scala.inline
-    def setTargetId(value: TargetID): Self = this.set("targetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetId: Self = this.set("targetId", js.undefined)
+    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

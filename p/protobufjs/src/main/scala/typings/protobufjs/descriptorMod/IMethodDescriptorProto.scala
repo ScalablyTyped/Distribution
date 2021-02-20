@@ -1,11 +1,12 @@
 package typings.protobufjs.descriptorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMethodDescriptorProto extends js.Object {
+trait IMethodDescriptorProto extends StObject {
   
   var clientStreaming: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object IMethodDescriptorProto {
   }
   
   @scala.inline
-  implicit class IMethodDescriptorProtoOps[Self <: IMethodDescriptorProto] (val x: Self) extends AnyVal {
+  implicit class IMethodDescriptorProtoMutableBuilder[Self <: IMethodDescriptorProto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientStreaming(value: Boolean): Self = StObject.set(x, "clientStreaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientStreamingUndefined: Self = StObject.set(x, "clientStreaming", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientStreaming(value: Boolean): Self = this.set("clientStreaming", value.asInstanceOf[js.Any])
+    def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
     
     @scala.inline
-    def deleteClientStreaming: Self = this.set("clientStreaming", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputType(value: String): Self = this.set("inputType", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInputType: Self = this.set("inputType", js.undefined)
+    def setOptions(value: IMethodOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOutputType(value: String): Self = StObject.set(x, "outputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: IMethodOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOutputTypeUndefined: Self = StObject.set(x, "outputType", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setServerStreaming(value: Boolean): Self = StObject.set(x, "serverStreaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputType(value: String): Self = this.set("outputType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputType: Self = this.set("outputType", js.undefined)
-    
-    @scala.inline
-    def setServerStreaming(value: Boolean): Self = this.set("serverStreaming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerStreaming: Self = this.set("serverStreaming", js.undefined)
+    def setServerStreamingUndefined: Self = StObject.set(x, "serverStreaming", js.undefined)
   }
 }

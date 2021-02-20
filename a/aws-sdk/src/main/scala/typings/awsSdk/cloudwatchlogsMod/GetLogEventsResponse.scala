@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLogEventsResponse extends js.Object {
+trait GetLogEventsResponse extends StObject {
   
   /**
     * The events.
@@ -31,39 +32,27 @@ object GetLogEventsResponse {
   }
   
   @scala.inline
-  implicit class GetLogEventsResponseOps[Self <: GetLogEventsResponse] (val x: Self) extends AnyVal {
+  implicit class GetLogEventsResponseMutableBuilder[Self <: GetLogEventsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: OutputLogEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventsVarargs(value: OutputLogEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: OutputLogEvent*): Self = this.set("events", js.Array(value :_*))
+    def setNextBackwardToken(value: NextToken): Self = StObject.set(x, "nextBackwardToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: OutputLogEvents): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setNextBackwardTokenUndefined: Self = StObject.set(x, "nextBackwardToken", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setNextForwardToken(value: NextToken): Self = StObject.set(x, "nextForwardToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextBackwardToken(value: NextToken): Self = this.set("nextBackwardToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextBackwardToken: Self = this.set("nextBackwardToken", js.undefined)
-    
-    @scala.inline
-    def setNextForwardToken(value: NextToken): Self = this.set("nextForwardToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextForwardToken: Self = this.set("nextForwardToken", js.undefined)
+    def setNextForwardTokenUndefined: Self = StObject.set(x, "nextForwardToken", js.undefined)
   }
 }

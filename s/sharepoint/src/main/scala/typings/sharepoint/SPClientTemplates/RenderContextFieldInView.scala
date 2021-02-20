@@ -2,6 +2,7 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,33 +119,21 @@ object RenderContextFieldInView {
   }
   
   @scala.inline
-  implicit class RenderContextFieldInViewOps[Self <: RenderContextFieldInView] (val x: Self) extends AnyVal {
+  implicit class RenderContextFieldInViewMutableBuilder[Self <: RenderContextFieldInView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentFieldSchema(value: FieldSchemaInForm | FieldSchemaInView): Self = StObject.set(x, "CurrentFieldSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentFieldValue(value: js.Any): Self = StObject.set(x, "CurrentFieldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldControlsModes(value: StringDictionary[ClientControlMode]): Self = StObject.set(x, "FieldControlsModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentFieldSchema(value: FieldSchemaInForm | FieldSchemaInView): Self = this.set("CurrentFieldSchema", value.asInstanceOf[js.Any])
+    def setFormContext(value: ClientFormContext): Self = StObject.set(x, "FormContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentFieldValue(value: js.Any): Self = this.set("CurrentFieldValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldControlsModes(value: StringDictionary[ClientControlMode]): Self = this.set("FieldControlsModes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormContext(value: ClientFormContext): Self = this.set("FormContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormUniqueId(value: String): Self = this.set("FormUniqueId", value.asInstanceOf[js.Any])
+    def setFormUniqueId(value: String): Self = StObject.set(x, "FormUniqueId", value.asInstanceOf[js.Any])
   }
 }

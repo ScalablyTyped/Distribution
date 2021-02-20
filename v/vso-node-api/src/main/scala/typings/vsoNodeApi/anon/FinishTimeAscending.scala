@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinishTimeAscending extends js.Object {
+trait FinishTimeAscending extends StObject {
   
   var finishTimeAscending: scala.Double = js.native
   
@@ -35,36 +36,24 @@ object FinishTimeAscending {
   }
   
   @scala.inline
-  implicit class FinishTimeAscendingOps[Self <: FinishTimeAscending] (val x: Self) extends AnyVal {
+  implicit class FinishTimeAscendingMutableBuilder[Self <: FinishTimeAscending] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinishTimeAscending(value: scala.Double): Self = StObject.set(x, "finishTimeAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinishTimeDescending(value: scala.Double): Self = StObject.set(x, "finishTimeDescending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueueTimeAscending(value: scala.Double): Self = StObject.set(x, "queueTimeAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishTimeAscending(value: scala.Double): Self = this.set("finishTimeAscending", value.asInstanceOf[js.Any])
+    def setQueueTimeDescending(value: scala.Double): Self = StObject.set(x, "queueTimeDescending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishTimeDescending(value: scala.Double): Self = this.set("finishTimeDescending", value.asInstanceOf[js.Any])
+    def setStartTimeAscending(value: scala.Double): Self = StObject.set(x, "startTimeAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueTimeAscending(value: scala.Double): Self = this.set("queueTimeAscending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueTimeDescending(value: scala.Double): Self = this.set("queueTimeDescending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTimeAscending(value: scala.Double): Self = this.set("startTimeAscending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTimeDescending(value: scala.Double): Self = this.set("startTimeDescending", value.asInstanceOf[js.Any])
+    def setStartTimeDescending(value: scala.Double): Self = StObject.set(x, "startTimeDescending", value.asInstanceOf[js.Any])
   }
 }

@@ -1,17 +1,12 @@
 package typings.activexLibreoffice.com_.sun.star.sdb
 
 import typings.activexLibreoffice.com_.sun.star.awt.XTabControllerModel
-import typings.activexLibreoffice.com_.sun.star.container.XChild
-import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
-import typings.activexLibreoffice.com_.sun.star.form.XConfirmDeleteBroadcaster
-import typings.activexLibreoffice.com_.sun.star.form.XDatabaseParameterBroadcaster
-import typings.activexLibreoffice.com_.sun.star.form.XFormController
+import typings.activexLibreoffice.com_.sun.star.form.FormController
 import typings.activexLibreoffice.com_.sun.star.frame.XController
-import typings.activexLibreoffice.com_.sun.star.frame.XDispatchProvider
 import typings.activexLibreoffice.com_.sun.star.frame.XModel
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.ui.XContextMenuInterception
-import typings.activexLibreoffice.com_.sun.star.util.XModifyBroadcaster
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,15 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait DataSourceBrowser
-  extends XFormController
-     with XDispatchProvider
-     with XChild
-     with XEnumerationAccess
-     with XModifyBroadcaster
-     with XConfirmDeleteBroadcaster
-     with XSQLErrorBroadcaster
-     with XRowSetApproveBroadcaster
-     with XDatabaseParameterBroadcaster
+  extends FormController
      with XController
      with XInitialization
      with XContextMenuInterception {

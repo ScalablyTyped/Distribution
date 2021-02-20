@@ -1,12 +1,13 @@
 package typings.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Matrix")
 @js.native
-class Matrix () extends js.Object {
+class Matrix () extends StObject {
   def this(m: js.Array[Double]) = this()
   
   def bake(): this.type = js.native

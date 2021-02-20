@@ -1,12 +1,13 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'pl' | 'paddingLeft'> */
 @js.native
-trait PaddingLeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait PaddingLeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   var paddingLeft: js.UndefOr[
     ResponsiveValue[
@@ -31,22 +32,7 @@ object PaddingLeftProps {
   }
   
   @scala.inline
-  implicit class PaddingLeftPropsOps[Self <: PaddingLeftProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with PaddingLeftProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPaddingLeftVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = this.set("paddingLeft", js.Array(value :_*))
+  implicit class PaddingLeftPropsMutableBuilder[Self <: PaddingLeftProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with PaddingLeftProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setPaddingLeft(
@@ -54,16 +40,16 @@ object PaddingLeftProps {
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
           ThemeType
         ]
-    ): Self = this.set("paddingLeft", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingLeft: Self = this.set("paddingLeft", js.undefined)
+    def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
     
     @scala.inline
-    def setPaddingLeftNull: Self = this.set("paddingLeft", null)
+    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
     @scala.inline
-    def setPlVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = this.set("pl", js.Array(value :_*))
+    def setPaddingLeftVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
     
     @scala.inline
     def setPl(
@@ -71,12 +57,15 @@ object PaddingLeftProps {
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
           ThemeType
         ]
-    ): Self = this.set("pl", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePl: Self = this.set("pl", js.undefined)
+    def setPlNull: Self = StObject.set(x, "pl", null)
     
     @scala.inline
-    def setPlNull: Self = this.set("pl", null)
+    def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
+    
+    @scala.inline
+    def setPlVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
   }
 }

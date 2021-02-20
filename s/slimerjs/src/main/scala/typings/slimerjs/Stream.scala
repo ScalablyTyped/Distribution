@@ -1,11 +1,12 @@
 package typings.slimerjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stream extends js.Object {
+trait Stream extends StObject {
   
   def atEnd(): Boolean = js.native
   
@@ -41,42 +42,30 @@ object Stream {
   }
   
   @scala.inline
-  implicit class StreamOps[Self <: Stream] (val x: Self) extends AnyVal {
+  implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtEnd(value: () => Boolean): Self = StObject.set(x, "atEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAtEnd(value: () => Boolean): Self = this.set("atEnd", js.Any.fromFunction0(value))
+    def setRead(value: () => String): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setReadLine(value: () => String): Self = StObject.set(x, "readLine", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
+    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRead(value: () => String): Self = this.set("read", js.Any.fromFunction0(value))
+    def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadLine(value: () => String): Self = this.set("readLine", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSeek(value: Double => Unit): Self = this.set("seek", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWrite(value: String => Unit): Self = this.set("write", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteLine(value: String => Unit): Self = this.set("writeLine", js.Any.fromFunction1(value))
+    def setWriteLine(value: String => Unit): Self = StObject.set(x, "writeLine", js.Any.fromFunction1(value))
   }
 }

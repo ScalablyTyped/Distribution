@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientAlertcenter.anon.Fields
 import typings.maximMazurokGapiClientAlertcenter.anon.Key
 import typings.maximMazurokGapiClientAlertcenter.anon.Oauthtoken
 import typings.maximMazurokGapiClientAlertcenter.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlertsResource extends js.Object {
+trait AlertsResource extends StObject {
   
   /** Performs batch delete operation on alerts. */
   def batchDelete(request: Callback): Request[BatchDeleteAlertsResponse] = js.native

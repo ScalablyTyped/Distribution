@@ -1,13 +1,14 @@
 package typings.rxjs
 
 import typings.rxjs.typesMod.MonoTypeOperatorFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/operators/skipWhile", JSImport.Namespace)
-@js.native
-object skipWhileMod extends js.Object {
+object skipWhileMod {
   
+  @JSImport("rxjs/internal/operators/skipWhile", "skipWhile")
+  @js.native
   def skipWhile[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): MonoTypeOperatorFunction[T] = js.native
 }

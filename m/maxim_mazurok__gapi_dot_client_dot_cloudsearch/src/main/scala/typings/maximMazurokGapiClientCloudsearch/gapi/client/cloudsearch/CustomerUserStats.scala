@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomerUserStats extends js.Object {
+trait CustomerUserStats extends StObject {
   
   /** Date for which session stats were calculated. Stats calculated on the next day close to midnight are returned. */
   var date: js.UndefOr[Date] = js.native
@@ -28,42 +29,30 @@ object CustomerUserStats {
   }
   
   @scala.inline
-  implicit class CustomerUserStatsOps[Self <: CustomerUserStats] (val x: Self) extends AnyVal {
+  implicit class CustomerUserStatsMutableBuilder[Self <: CustomerUserStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOneDayActiveUsersCount(value: String): Self = StObject.set(x, "oneDayActiveUsersCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setOneDayActiveUsersCountUndefined: Self = StObject.set(x, "oneDayActiveUsersCount", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setSevenDaysActiveUsersCount(value: String): Self = StObject.set(x, "sevenDaysActiveUsersCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneDayActiveUsersCount(value: String): Self = this.set("oneDayActiveUsersCount", value.asInstanceOf[js.Any])
+    def setSevenDaysActiveUsersCountUndefined: Self = StObject.set(x, "sevenDaysActiveUsersCount", js.undefined)
     
     @scala.inline
-    def deleteOneDayActiveUsersCount: Self = this.set("oneDayActiveUsersCount", js.undefined)
+    def setThirtyDaysActiveUsersCount(value: String): Self = StObject.set(x, "thirtyDaysActiveUsersCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSevenDaysActiveUsersCount(value: String): Self = this.set("sevenDaysActiveUsersCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSevenDaysActiveUsersCount: Self = this.set("sevenDaysActiveUsersCount", js.undefined)
-    
-    @scala.inline
-    def setThirtyDaysActiveUsersCount(value: String): Self = this.set("thirtyDaysActiveUsersCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThirtyDaysActiveUsersCount: Self = this.set("thirtyDaysActiveUsersCount", js.undefined)
+    def setThirtyDaysActiveUsersCountUndefined: Self = StObject.set(x, "thirtyDaysActiveUsersCount", js.undefined)
   }
 }

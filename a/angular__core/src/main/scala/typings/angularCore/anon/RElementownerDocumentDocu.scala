@@ -9,13 +9,14 @@ import typings.angularCore.mod.TrustedScript
 import typings.angularCore.mod.TrustedScriptURL
 import typings.std.Document
 import typings.std.EventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @angular/core.@angular/core.RElement & {  ownerDocument :std.Document} */
 @js.native
-trait RElementownerDocumentDocu extends js.Object {
+trait RElementownerDocumentDocu extends StObject {
   
   def addEventListener(`type`: String, listener: EventListener): Unit = js.native
   def addEventListener(`type`: String, listener: EventListener, useCapture: Boolean): Unit = js.native

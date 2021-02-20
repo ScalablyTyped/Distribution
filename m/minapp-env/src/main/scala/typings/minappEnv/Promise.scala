@@ -1,5 +1,6 @@
 package typings.minappEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the completion of an asynchronous operation
   */
 @js.native
-trait Promise[T] extends js.Object {
+trait Promise[T] extends StObject {
   
   /**
     * Attaches a callback for only the rejection of the Promise.

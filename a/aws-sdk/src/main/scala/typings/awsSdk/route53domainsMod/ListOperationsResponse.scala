@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListOperationsResponse extends js.Object {
+trait ListOperationsResponse extends StObject {
   
   /**
     * If there are more operations than you specified for MaxItems in the request, submit another request and include the value of NextPageMarker in the value of Marker.
@@ -26,30 +27,18 @@ object ListOperationsResponse {
   }
   
   @scala.inline
-  implicit class ListOperationsResponseOps[Self <: ListOperationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListOperationsResponseMutableBuilder[Self <: ListOperationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageMarker(value: PageMarker): Self = StObject.set(x, "NextPageMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageMarkerUndefined: Self = StObject.set(x, "NextPageMarker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperations(value: OperationSummaryList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationsVarargs(value: OperationSummary*): Self = this.set("Operations", js.Array(value :_*))
-    
-    @scala.inline
-    def setOperations(value: OperationSummaryList): Self = this.set("Operations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextPageMarker(value: PageMarker): Self = this.set("NextPageMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageMarker: Self = this.set("NextPageMarker", js.undefined)
+    def setOperationsVarargs(value: OperationSummary*): Self = StObject.set(x, "Operations", js.Array(value :_*))
   }
 }

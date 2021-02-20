@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentSpan extends js.Object {
+trait DocumentSpan extends StObject {
   
   /**
     * If DocumentSpan.textSpan is the span for name of the declaration,
@@ -36,48 +37,36 @@ object DocumentSpan {
   }
   
   @scala.inline
-  implicit class DocumentSpanOps[Self <: DocumentSpan] (val x: Self) extends AnyVal {
+  implicit class DocumentSpanMutableBuilder[Self <: DocumentSpan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextSpan(value: TextSpan): Self = StObject.set(x, "contextSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextSpanUndefined: Self = StObject.set(x, "contextSpan", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: java.lang.String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setOriginalContextSpan(value: TextSpan): Self = StObject.set(x, "originalContextSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextSpan(value: TextSpan): Self = this.set("textSpan", value.asInstanceOf[js.Any])
+    def setOriginalContextSpanUndefined: Self = StObject.set(x, "originalContextSpan", js.undefined)
     
     @scala.inline
-    def setContextSpan(value: TextSpan): Self = this.set("contextSpan", value.asInstanceOf[js.Any])
+    def setOriginalFileName(value: java.lang.String): Self = StObject.set(x, "originalFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContextSpan: Self = this.set("contextSpan", js.undefined)
+    def setOriginalFileNameUndefined: Self = StObject.set(x, "originalFileName", js.undefined)
     
     @scala.inline
-    def setOriginalContextSpan(value: TextSpan): Self = this.set("originalContextSpan", value.asInstanceOf[js.Any])
+    def setOriginalTextSpan(value: TextSpan): Self = StObject.set(x, "originalTextSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOriginalContextSpan: Self = this.set("originalContextSpan", js.undefined)
+    def setOriginalTextSpanUndefined: Self = StObject.set(x, "originalTextSpan", js.undefined)
     
     @scala.inline
-    def setOriginalFileName(value: java.lang.String): Self = this.set("originalFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalFileName: Self = this.set("originalFileName", js.undefined)
-    
-    @scala.inline
-    def setOriginalTextSpan(value: TextSpan): Self = this.set("originalTextSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalTextSpan: Self = this.set("originalTextSpan", js.undefined)
+    def setTextSpan(value: TextSpan): Self = StObject.set(x, "textSpan", value.asInstanceOf[js.Any])
   }
 }

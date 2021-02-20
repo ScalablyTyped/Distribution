@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SaveOptions extends js.Object {
+trait SaveOptions extends StObject {
   
   /**
     * The client is supposed to include the content on save.
@@ -21,24 +22,12 @@ object SaveOptions {
   }
   
   @scala.inline
-  implicit class SaveOptionsOps[Self <: SaveOptions] (val x: Self) extends AnyVal {
+  implicit class SaveOptionsMutableBuilder[Self <: SaveOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeText(value: Boolean): Self = StObject.set(x, "includeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIncludeText(value: Boolean): Self = this.set("includeText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeText: Self = this.set("includeText", js.undefined)
+    def setIncludeTextUndefined: Self = StObject.set(x, "includeText", js.undefined)
   }
 }

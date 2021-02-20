@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PredictedIntent extends js.Object {
+trait PredictedIntent extends StObject {
   
   /**
     * The name of the intent that Amazon Lex suggests satisfies the user's intent.
@@ -31,36 +32,24 @@ object PredictedIntent {
   }
   
   @scala.inline
-  implicit class PredictedIntentOps[Self <: PredictedIntent] (val x: Self) extends AnyVal {
+  implicit class PredictedIntentMutableBuilder[Self <: PredictedIntent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNluIntentConfidence(value: IntentConfidence): Self = StObject.set(x, "nluIntentConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentName(value: IntentName): Self = this.set("intentName", value.asInstanceOf[js.Any])
+    def setNluIntentConfidenceUndefined: Self = StObject.set(x, "nluIntentConfidence", js.undefined)
     
     @scala.inline
-    def deleteIntentName: Self = this.set("intentName", js.undefined)
+    def setSlots(value: StringMap): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNluIntentConfidence(value: IntentConfidence): Self = this.set("nluIntentConfidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNluIntentConfidence: Self = this.set("nluIntentConfidence", js.undefined)
-    
-    @scala.inline
-    def setSlots(value: StringMap): Self = this.set("slots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlots: Self = this.set("slots", js.undefined)
+    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }
 }

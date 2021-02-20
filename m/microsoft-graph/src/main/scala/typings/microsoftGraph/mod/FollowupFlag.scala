@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FollowupFlag extends js.Object {
+trait FollowupFlag extends StObject {
   
   // The date and time that the follow-up was finished.
   var completedDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
@@ -31,54 +32,42 @@ object FollowupFlag {
   }
   
   @scala.inline
-  implicit class FollowupFlagOps[Self <: FollowupFlag] (val x: Self) extends AnyVal {
+  implicit class FollowupFlagMutableBuilder[Self <: FollowupFlag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletedDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedDateTimeNull: Self = StObject.set(x, "completedDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
     
     @scala.inline
-    def setCompletedDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("completedDateTime", value.asInstanceOf[js.Any])
+    def setDueDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "dueDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompletedDateTime: Self = this.set("completedDateTime", js.undefined)
+    def setDueDateTimeNull: Self = StObject.set(x, "dueDateTime", null)
     
     @scala.inline
-    def setCompletedDateTimeNull: Self = this.set("completedDateTime", null)
+    def setDueDateTimeUndefined: Self = StObject.set(x, "dueDateTime", js.undefined)
     
     @scala.inline
-    def setDueDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("dueDateTime", value.asInstanceOf[js.Any])
+    def setFlagStatus(value: NullableOption[FollowupFlagStatus]): Self = StObject.set(x, "flagStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDueDateTime: Self = this.set("dueDateTime", js.undefined)
+    def setFlagStatusNull: Self = StObject.set(x, "flagStatus", null)
     
     @scala.inline
-    def setDueDateTimeNull: Self = this.set("dueDateTime", null)
+    def setFlagStatusUndefined: Self = StObject.set(x, "flagStatus", js.undefined)
     
     @scala.inline
-    def setFlagStatus(value: NullableOption[FollowupFlagStatus]): Self = this.set("flagStatus", value.asInstanceOf[js.Any])
+    def setStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlagStatus: Self = this.set("flagStatus", js.undefined)
+    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
     @scala.inline
-    def setFlagStatusNull: Self = this.set("flagStatus", null)
-    
-    @scala.inline
-    def setStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("startDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDateTime: Self = this.set("startDateTime", js.undefined)
-    
-    @scala.inline
-    def setStartDateTimeNull: Self = this.set("startDateTime", null)
+    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
   }
 }

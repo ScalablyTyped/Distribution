@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ssm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters extends js.Object {
+trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters extends StObject {
   
   /**
     * Information about the command(s) to execute.
@@ -65,75 +66,63 @@ object MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters {
   }
   
   @scala.inline
-  implicit class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOps[Self <: MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters] (val x: Self) extends AnyVal {
+  implicit class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersMutableBuilder[Self <: MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentHash(value: String): Self = StObject.set(x, "documentHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setDocumentHashType(value: String): Self = StObject.set(x, "documentHashType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setDocumentHashTypeUndefined: Self = StObject.set(x, "documentHashType", js.undefined)
     
     @scala.inline
-    def setDocumentHash(value: String): Self = this.set("documentHash", value.asInstanceOf[js.Any])
+    def setDocumentHashUndefined: Self = StObject.set(x, "documentHash", js.undefined)
     
     @scala.inline
-    def deleteDocumentHash: Self = this.set("documentHash", js.undefined)
+    def setNotificationConfig(value: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentHashType(value: String): Self = this.set("documentHashType", value.asInstanceOf[js.Any])
+    def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
     
     @scala.inline
-    def deleteDocumentHashType: Self = this.set("documentHashType", js.undefined)
+    def setOutputS3Bucket(value: String): Self = StObject.set(x, "outputS3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationConfig(value: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig): Self = this.set("notificationConfig", value.asInstanceOf[js.Any])
+    def setOutputS3BucketUndefined: Self = StObject.set(x, "outputS3Bucket", js.undefined)
     
     @scala.inline
-    def deleteNotificationConfig: Self = this.set("notificationConfig", js.undefined)
+    def setOutputS3KeyPrefix(value: String): Self = StObject.set(x, "outputS3KeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputS3Bucket(value: String): Self = this.set("outputS3Bucket", value.asInstanceOf[js.Any])
+    def setOutputS3KeyPrefixUndefined: Self = StObject.set(x, "outputS3KeyPrefix", js.undefined)
     
     @scala.inline
-    def deleteOutputS3Bucket: Self = this.set("outputS3Bucket", js.undefined)
+    def setParameters(value: js.Array[MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputS3KeyPrefix(value: String): Self = this.set("outputS3KeyPrefix", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteOutputS3KeyPrefix: Self = this.set("outputS3KeyPrefix", js.undefined)
+    def setParametersVarargs(value: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setParametersVarargs(value: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter*): Self = this.set("parameters", js.Array(value :_*))
+    def setServiceRoleArn(value: String): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Array[MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRoleArn(value: String): Self = this.set("serviceRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceRoleArn: Self = this.set("serviceRoleArn", js.undefined)
-    
-    @scala.inline
-    def setTimeoutSeconds(value: Double): Self = this.set("timeoutSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutSeconds: Self = this.set("timeoutSeconds", js.undefined)
+    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
   }
 }

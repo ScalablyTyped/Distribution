@@ -1,15 +1,15 @@
 package typings.twilioSync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-sync/lib/utils/uri", JSImport.Namespace)
-@js.native
-object uriMod extends js.Object {
+object uriMod {
   
+  @JSImport("twilio-sync/lib/utils/uri", "UriBuilder")
   @js.native
-  class UriBuilder protected () extends js.Object {
+  class UriBuilder protected () extends StObject {
     def this(base: String) = this()
     
     var args: js.Array[String] = js.native

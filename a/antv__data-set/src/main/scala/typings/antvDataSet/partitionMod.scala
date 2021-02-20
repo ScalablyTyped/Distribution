@@ -1,15 +1,14 @@
 package typings.antvDataSet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/data-set/lib/api/partition", JSImport.Namespace)
-@js.native
-object partitionMod extends js.Object {
+object partitionMod {
   
   @js.native
-  trait PartitionApi extends js.Object {
+  trait PartitionApi extends StObject {
     
     def group(group_by: String): js.Any = js.native
     def group(group_by: String, order_by: String): js.Any = js.native

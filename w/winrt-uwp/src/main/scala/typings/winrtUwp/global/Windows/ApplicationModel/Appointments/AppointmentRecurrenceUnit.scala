@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the frequency for which an appointment occurs. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit")
 @js.native
-object AppointmentRecurrenceUnit extends js.Object {
+object AppointmentRecurrenceUnit extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

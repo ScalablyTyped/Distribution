@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioStream extends js.Object {
+trait AudioStream extends StObject {
   
   /** Required. Audio bitrate in bits per second. Must be between 1 and 10,000,000. */
   var bitrateBps: js.UndefOr[Double] = js.native
@@ -38,60 +39,48 @@ object AudioStream {
   }
   
   @scala.inline
-  implicit class AudioStreamOps[Self <: AudioStream] (val x: Self) extends AnyVal {
+  implicit class AudioStreamMutableBuilder[Self <: AudioStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrateBps(value: Double): Self = this.set("bitrateBps", value.asInstanceOf[js.Any])
+    def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
     
     @scala.inline
-    def deleteBitrateBps: Self = this.set("bitrateBps", js.undefined)
+    def setChannelLayout(value: js.Array[String]): Self = StObject.set(x, "channelLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelCount(value: Double): Self = this.set("channelCount", value.asInstanceOf[js.Any])
+    def setChannelLayoutUndefined: Self = StObject.set(x, "channelLayout", js.undefined)
     
     @scala.inline
-    def deleteChannelCount: Self = this.set("channelCount", js.undefined)
+    def setChannelLayoutVarargs(value: String*): Self = StObject.set(x, "channelLayout", js.Array(value :_*))
     
     @scala.inline
-    def setChannelLayoutVarargs(value: String*): Self = this.set("channelLayout", js.Array(value :_*))
+    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelLayout(value: js.Array[String]): Self = this.set("channelLayout", value.asInstanceOf[js.Any])
+    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
     @scala.inline
-    def deleteChannelLayout: Self = this.set("channelLayout", js.undefined)
+    def setMapping(value: js.Array[AudioAtom]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: String): Self = this.set("codec", value.asInstanceOf[js.Any])
+    def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
     @scala.inline
-    def deleteCodec: Self = this.set("codec", js.undefined)
+    def setMappingVarargs(value: AudioAtom*): Self = StObject.set(x, "mapping", js.Array(value :_*))
     
     @scala.inline
-    def setMappingVarargs(value: AudioAtom*): Self = this.set("mapping", js.Array(value :_*))
+    def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapping(value: js.Array[AudioAtom]): Self = this.set("mapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMapping: Self = this.set("mapping", js.undefined)
-    
-    @scala.inline
-    def setSampleRateHertz(value: Double): Self = this.set("sampleRateHertz", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRateHertz: Self = this.set("sampleRateHertz", js.undefined)
+    def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
   }
 }

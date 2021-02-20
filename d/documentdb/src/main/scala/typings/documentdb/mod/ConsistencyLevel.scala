@@ -1,5 +1,6 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.documentdb.documentdbStrings.Session
   - typings.documentdb.documentdbStrings.Eventual
 */
-trait ConsistencyLevel extends js.Object
+trait ConsistencyLevel extends StObject
 object ConsistencyLevel {
   
   @scala.inline

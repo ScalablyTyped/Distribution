@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFFileInformationType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFileInformation extends js.Object {
+trait IFileInformation extends StObject {
   
   def Clear(): Unit = js.native
   
@@ -30,30 +31,18 @@ object IFileInformation {
   }
   
   @scala.inline
-  implicit class IFileInformationOps[Self <: IFileInformation] (val x: Self) extends AnyVal {
+  implicit class IFileInformationMutableBuilder[Self <: IFileInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailMessage(value: IEmailMessageInformation): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtractFromFile(value: String => Unit): Self = StObject.set(x, "ExtractFromFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("Clear", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEmailMessage(value: IEmailMessageInformation): Self = this.set("EmailMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtractFromFile(value: String => Unit): Self = this.set("ExtractFromFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFileType(value: MFFileInformationType): Self = this.set("FileType", value.asInstanceOf[js.Any])
+    def setFileType(value: MFFileInformationType): Self = StObject.set(x, "FileType", value.asInstanceOf[js.Any])
   }
 }

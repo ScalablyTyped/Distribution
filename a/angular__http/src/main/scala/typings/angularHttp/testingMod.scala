@@ -1,18 +1,19 @@
 package typings.angularHttp
 
 import typings.angularHttp.mod.Request
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/http/testing", JSImport.Namespace)
-@js.native
-object testingMod extends js.Object {
+object testingMod {
   
+  @JSImport("@angular/http/testing", "MockBackend")
   @js.native
   class MockBackend ()
     extends typings.angularHttp.testingTestingMod.MockBackend
   
+  @JSImport("@angular/http/testing", "MockConnection")
   @js.native
   class MockConnection protected ()
     extends typings.angularHttp.testingTestingMod.MockConnection {

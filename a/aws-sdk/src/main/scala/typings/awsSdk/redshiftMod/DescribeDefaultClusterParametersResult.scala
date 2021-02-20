@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDefaultClusterParametersResult extends js.Object {
+trait DescribeDefaultClusterParametersResult extends StObject {
   
   var DefaultClusterParameters: js.UndefOr[typings.awsSdk.redshiftMod.DefaultClusterParameters] = js.native
 }
@@ -18,24 +19,12 @@ object DescribeDefaultClusterParametersResult {
   }
   
   @scala.inline
-  implicit class DescribeDefaultClusterParametersResultOps[Self <: DescribeDefaultClusterParametersResult] (val x: Self) extends AnyVal {
+  implicit class DescribeDefaultClusterParametersResultMutableBuilder[Self <: DescribeDefaultClusterParametersResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultClusterParameters(value: DefaultClusterParameters): Self = StObject.set(x, "DefaultClusterParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultClusterParameters(value: DefaultClusterParameters): Self = this.set("DefaultClusterParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultClusterParameters: Self = this.set("DefaultClusterParameters", js.undefined)
+    def setDefaultClusterParametersUndefined: Self = StObject.set(x, "DefaultClusterParameters", js.undefined)
   }
 }

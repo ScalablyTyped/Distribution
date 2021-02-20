@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.apiV1Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartHomeV1QueryRequestDevices extends js.Object {
+trait SmartHomeV1QueryRequestDevices extends StObject {
   
   var customData: js.UndefOr[ApiClientObjectMap[_]] = js.native
   
@@ -21,27 +22,15 @@ object SmartHomeV1QueryRequestDevices {
   }
   
   @scala.inline
-  implicit class SmartHomeV1QueryRequestDevicesOps[Self <: SmartHomeV1QueryRequestDevices] (val x: Self) extends AnyVal {
+  implicit class SmartHomeV1QueryRequestDevicesMutableBuilder[Self <: SmartHomeV1QueryRequestDevices] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomData(value: ApiClientObjectMap[_]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomData(value: ApiClientObjectMap[_]): Self = this.set("customData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomData: Self = this.set("customData", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

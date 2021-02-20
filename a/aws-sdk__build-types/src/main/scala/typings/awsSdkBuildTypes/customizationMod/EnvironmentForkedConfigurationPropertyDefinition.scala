@@ -1,6 +1,7 @@
 package typings.awsSdkBuildTypes.customizationMod
 
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.forked
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,30 +48,18 @@ object EnvironmentForkedConfigurationPropertyDefinition {
   }
   
   @scala.inline
-  implicit class EnvironmentForkedConfigurationPropertyDefinitionOps[Self <: EnvironmentForkedConfigurationPropertyDefinition] (val x: Self) extends AnyVal {
+  implicit class EnvironmentForkedConfigurationPropertyDefinitionMutableBuilder[Self <: EnvironmentForkedConfigurationPropertyDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowser(value: ConfigurationPropertyDefinitionRuntimeAttributes with AdditionalDocumentation): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNode(value: ConfigurationPropertyDefinitionRuntimeAttributes with AdditionalDocumentation): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: forked): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowser(value: ConfigurationPropertyDefinitionRuntimeAttributes with AdditionalDocumentation): Self = this.set("browser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: ConfigurationPropertyDefinitionRuntimeAttributes with AdditionalDocumentation): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: forked): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniversal(value: ConfigurationPropertyDefinitionRuntimeAttributes with AdditionalDocumentation): Self = this.set("universal", value.asInstanceOf[js.Any])
+    def setUniversal(value: ConfigurationPropertyDefinitionRuntimeAttributes with AdditionalDocumentation): Self = StObject.set(x, "universal", value.asInstanceOf[js.Any])
   }
 }

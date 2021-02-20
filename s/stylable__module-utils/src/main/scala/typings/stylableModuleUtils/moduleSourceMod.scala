@@ -1,14 +1,15 @@
 package typings.stylableModuleUtils
 
 import typings.stylableCore.stylableTransformerMod.StylableResults
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@stylable/module-utils/cjs/module-source", JSImport.Namespace)
-@js.native
-object moduleSourceMod extends js.Object {
+object moduleSourceMod {
   
+  @JSImport("@stylable/module-utils/cjs/module-source", "createModuleSource")
+  @js.native
   def createModuleSource(
     stylableResult: StylableResults,
     moduleFormat: js.UndefOr[String],
@@ -21,6 +22,8 @@ object moduleSourceMod extends js.Object {
     afterModule: js.UndefOr[js.Array[String]]
   ): String = js.native
   
+  @JSImport("@stylable/module-utils/cjs/module-source", "generateModuleSource")
+  @js.native
   def generateModuleSource(
     stylableResult: StylableResults,
     moduleId: String,
@@ -33,6 +36,8 @@ object moduleSourceMod extends js.Object {
     exportsArgument: String,
     afterModule: String
   ): String = js.native
+  @JSImport("@stylable/module-utils/cjs/module-source", "generateModuleSource")
+  @js.native
   def generateModuleSource(
     stylableResult: StylableResults,
     moduleId: String,

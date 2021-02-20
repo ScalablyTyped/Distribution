@@ -3,13 +3,14 @@ package typings.materialTextfield.anon
 import typings.materialTextfield.foundationMod.MDCTextFieldCharacterCounterFoundation
 import typings.materialTextfield.helperTextFoundationMod.MDCTextFieldHelperTextFoundation
 import typings.materialTextfield.iconFoundationMod.MDCTextFieldIconFoundation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material/textfield.@material/textfield/types.MDCTextFieldFoundationMap> */
 @js.native
-trait PartialMDCTextFieldFounda extends js.Object {
+trait PartialMDCTextFieldFounda extends StObject {
   
   var characterCounter: js.UndefOr[MDCTextFieldCharacterCounterFoundation] = js.native
   
@@ -28,42 +29,30 @@ object PartialMDCTextFieldFounda {
   }
   
   @scala.inline
-  implicit class PartialMDCTextFieldFoundaOps[Self <: PartialMDCTextFieldFounda] (val x: Self) extends AnyVal {
+  implicit class PartialMDCTextFieldFoundaMutableBuilder[Self <: PartialMDCTextFieldFounda] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacterCounter(value: MDCTextFieldCharacterCounterFoundation): Self = StObject.set(x, "characterCounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharacterCounterUndefined: Self = StObject.set(x, "characterCounter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHelperText(value: MDCTextFieldHelperTextFoundation): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterCounter(value: MDCTextFieldCharacterCounterFoundation): Self = this.set("characterCounter", value.asInstanceOf[js.Any])
+    def setHelperTextUndefined: Self = StObject.set(x, "helperText", js.undefined)
     
     @scala.inline
-    def deleteCharacterCounter: Self = this.set("characterCounter", js.undefined)
+    def setLeadingIcon(value: MDCTextFieldIconFoundation): Self = StObject.set(x, "leadingIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelperText(value: MDCTextFieldHelperTextFoundation): Self = this.set("helperText", value.asInstanceOf[js.Any])
+    def setLeadingIconUndefined: Self = StObject.set(x, "leadingIcon", js.undefined)
     
     @scala.inline
-    def deleteHelperText: Self = this.set("helperText", js.undefined)
+    def setTrailingIcon(value: MDCTextFieldIconFoundation): Self = StObject.set(x, "trailingIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeadingIcon(value: MDCTextFieldIconFoundation): Self = this.set("leadingIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLeadingIcon: Self = this.set("leadingIcon", js.undefined)
-    
-    @scala.inline
-    def setTrailingIcon(value: MDCTextFieldIconFoundation): Self = this.set("trailingIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailingIcon: Self = this.set("trailingIcon", js.undefined)
+    def setTrailingIconUndefined: Self = StObject.set(x, "trailingIcon", js.undefined)
   }
 }

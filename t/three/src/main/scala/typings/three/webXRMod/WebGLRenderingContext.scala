@@ -1,11 +1,12 @@
 package typings.three.webXRMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebGLRenderingContext extends js.Object {
+trait WebGLRenderingContext extends StObject {
   
   def makeXRCompatible(): js.Promise[Unit] = js.native
 }
@@ -18,21 +19,9 @@ object WebGLRenderingContext {
   }
   
   @scala.inline
-  implicit class WebGLRenderingContextOps[Self <: WebGLRenderingContext] (val x: Self) extends AnyVal {
+  implicit class WebGLRenderingContextMutableBuilder[Self <: WebGLRenderingContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMakeXRCompatible(value: () => js.Promise[Unit]): Self = this.set("makeXRCompatible", js.Any.fromFunction0(value))
+    def setMakeXRCompatible(value: () => js.Promise[Unit]): Self = StObject.set(x, "makeXRCompatible", js.Any.fromFunction0(value))
   }
 }

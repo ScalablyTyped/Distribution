@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProtectiveEquipmentBodyPart extends js.Object {
+trait ProtectiveEquipmentBodyPart extends StObject {
   
   /**
     * The confidence that Amazon Rekognition has in the detection accuracy of the detected body part. 
@@ -31,39 +32,27 @@ object ProtectiveEquipmentBodyPart {
   }
   
   @scala.inline
-  implicit class ProtectiveEquipmentBodyPartOps[Self <: ProtectiveEquipmentBodyPart] (val x: Self) extends AnyVal {
+  implicit class ProtectiveEquipmentBodyPartMutableBuilder[Self <: ProtectiveEquipmentBodyPart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEquipmentDetections(value: EquipmentDetections): Self = StObject.set(x, "EquipmentDetections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    def setEquipmentDetectionsUndefined: Self = StObject.set(x, "EquipmentDetections", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    def setEquipmentDetectionsVarargs(value: EquipmentDetection*): Self = StObject.set(x, "EquipmentDetections", js.Array(value :_*))
     
     @scala.inline
-    def setEquipmentDetectionsVarargs(value: EquipmentDetection*): Self = this.set("EquipmentDetections", js.Array(value :_*))
+    def setName(value: BodyPart): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquipmentDetections(value: EquipmentDetections): Self = this.set("EquipmentDetections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEquipmentDetections: Self = this.set("EquipmentDetections", js.undefined)
-    
-    @scala.inline
-    def setName(value: BodyPart): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

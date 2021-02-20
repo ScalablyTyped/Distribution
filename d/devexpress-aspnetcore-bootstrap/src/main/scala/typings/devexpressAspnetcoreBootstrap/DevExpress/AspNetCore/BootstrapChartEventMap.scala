@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,81 +82,69 @@ object BootstrapChartEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapChartEventMapOps[Self <: BootstrapChartEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapChartEventMapMutableBuilder[Self <: BootstrapChartEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgumentAxisClick(value: BootstrapChartElementClickEventArgs): Self = StObject.set(x, "argumentAxisClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisposing(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "disposing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDone(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentAxisClick(value: BootstrapChartElementClickEventArgs): Self = this.set("argumentAxisClick", value.asInstanceOf[js.Any])
+    def setDrawn(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "drawn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisposing(value: BootstrapChartEventArgsBase): Self = this.set("disposing", value.asInstanceOf[js.Any])
+    def setExported(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDone(value: BootstrapChartEventArgsBase): Self = this.set("done", value.asInstanceOf[js.Any])
+    def setExporting(value: BootstrapChartExportEventArgs): Self = StObject.set(x, "exporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawn(value: BootstrapChartEventArgsBase): Self = this.set("drawn", value.asInstanceOf[js.Any])
+    def setFileSaving(value: BootstrapChartExportEventArgs): Self = StObject.set(x, "fileSaving", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExported(value: BootstrapChartEventArgsBase): Self = this.set("exported", value.asInstanceOf[js.Any])
+    def setIncidentOccurred(value: BootstrapChartErrorEventArgs): Self = StObject.set(x, "incidentOccurred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExporting(value: BootstrapChartExportEventArgs): Self = this.set("exporting", value.asInstanceOf[js.Any])
+    def setInit(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSaving(value: BootstrapChartExportEventArgs): Self = this.set("fileSaving", value.asInstanceOf[js.Any])
+    def setLegendClick(value: BootstrapChartElementClickEventArgs): Self = StObject.set(x, "legendClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncidentOccurred(value: BootstrapChartErrorEventArgs): Self = this.set("incidentOccurred", value.asInstanceOf[js.Any])
+    def setOptionChanged(value: BootstrapChartOptionChangedEventArgs): Self = StObject.set(x, "optionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: BootstrapChartEventArgsBase): Self = this.set("init", value.asInstanceOf[js.Any])
+    def setPointClick(value: BootstrapChartElementClickEventArgs): Self = StObject.set(x, "pointClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendClick(value: BootstrapChartElementClickEventArgs): Self = this.set("legendClick", value.asInstanceOf[js.Any])
+    def setPointHoverChanged(value: BootstrapChartElementActionEventArgs): Self = StObject.set(x, "pointHoverChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionChanged(value: BootstrapChartOptionChangedEventArgs): Self = this.set("optionChanged", value.asInstanceOf[js.Any])
+    def setPointSelectionChanged(value: BootstrapChartElementActionEventArgs): Self = StObject.set(x, "pointSelectionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointClick(value: BootstrapChartElementClickEventArgs): Self = this.set("pointClick", value.asInstanceOf[js.Any])
+    def setSeriesClick(value: BootstrapChartElementClickEventArgs): Self = StObject.set(x, "seriesClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointHoverChanged(value: BootstrapChartElementActionEventArgs): Self = this.set("pointHoverChanged", value.asInstanceOf[js.Any])
+    def setSeriesHoverChanged(value: BootstrapChartElementActionEventArgs): Self = StObject.set(x, "seriesHoverChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointSelectionChanged(value: BootstrapChartElementActionEventArgs): Self = this.set("pointSelectionChanged", value.asInstanceOf[js.Any])
+    def setSeriesSelectionChanged(value: BootstrapChartElementActionEventArgs): Self = StObject.set(x, "seriesSelectionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesClick(value: BootstrapChartElementClickEventArgs): Self = this.set("seriesClick", value.asInstanceOf[js.Any])
+    def setTooltipHidden(value: BootstrapChartElementActionEventArgs): Self = StObject.set(x, "tooltipHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesHoverChanged(value: BootstrapChartElementActionEventArgs): Self = this.set("seriesHoverChanged", value.asInstanceOf[js.Any])
+    def setTooltipShown(value: BootstrapChartElementActionEventArgs): Self = StObject.set(x, "tooltipShown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesSelectionChanged(value: BootstrapChartElementActionEventArgs): Self = this.set("seriesSelectionChanged", value.asInstanceOf[js.Any])
+    def setZoomEnd(value: BootstrapChartZoomEndEventArgs): Self = StObject.set(x, "zoomEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipHidden(value: BootstrapChartElementActionEventArgs): Self = this.set("tooltipHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltipShown(value: BootstrapChartElementActionEventArgs): Self = this.set("tooltipShown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomEnd(value: BootstrapChartZoomEndEventArgs): Self = this.set("zoomEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomStart(value: BootstrapChartEventArgsBase): Self = this.set("zoomStart", value.asInstanceOf[js.Any])
+    def setZoomStart(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "zoomStart", value.asInstanceOf[js.Any])
   }
 }

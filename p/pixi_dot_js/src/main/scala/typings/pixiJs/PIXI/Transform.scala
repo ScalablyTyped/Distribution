@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait Transform extends js.Object {
+trait Transform extends StObject {
   
   /**
     * The locally unique ID of the local transform
@@ -204,81 +205,69 @@ object Transform {
   }
   
   @scala.inline
-  implicit class TransformOps[Self <: Transform] (val x: Self) extends AnyVal {
+  implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalTransform(value: Matrix): Self = StObject.set(x, "localTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPivot(value: ObservablePoint): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentLocalID(value: Double): Self = this.set("_currentLocalID", value.asInstanceOf[js.Any])
+    def setPosition(value: ObservablePoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_cx(value: Double): Self = this.set("_cx", value.asInstanceOf[js.Any])
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_cy(value: Double): Self = this.set("_cy", value.asInstanceOf[js.Any])
+    def setScale(value: ObservablePoint): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_localID(value: Double): Self = this.set("_localID", value.asInstanceOf[js.Any])
+    def setSetFromMatrix(value: Matrix => Unit): Self = StObject.set(x, "setFromMatrix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_parentID(value: Double): Self = this.set("_parentID", value.asInstanceOf[js.Any])
+    def setSkew(value: ObservablePoint): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_rotation(value: Double): Self = this.set("_rotation", value.asInstanceOf[js.Any])
+    def setUpdateLocalTransform(value: () => Unit): Self = StObject.set(x, "updateLocalTransform", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_sx(value: Double): Self = this.set("_sx", value.asInstanceOf[js.Any])
+    def setUpdateSkew(value: () => Unit): Self = StObject.set(x, "updateSkew", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_sy(value: Double): Self = this.set("_sy", value.asInstanceOf[js.Any])
+    def setUpdateTransform(value: Transform => Unit): Self = StObject.set(x, "updateTransform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_worldID(value: Double): Self = this.set("_worldID", value.asInstanceOf[js.Any])
+    def setWorldTransform(value: Matrix): Self = StObject.set(x, "worldTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalTransform(value: Matrix): Self = this.set("localTransform", value.asInstanceOf[js.Any])
+    def set_currentLocalID(value: Double): Self = StObject.set(x, "_currentLocalID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: () => Unit): Self = this.set("onChange", js.Any.fromFunction0(value))
+    def set_cx(value: Double): Self = StObject.set(x, "_cx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivot(value: ObservablePoint): Self = this.set("pivot", value.asInstanceOf[js.Any])
+    def set_cy(value: Double): Self = StObject.set(x, "_cy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: ObservablePoint): Self = this.set("position", value.asInstanceOf[js.Any])
+    def set_localID(value: Double): Self = StObject.set(x, "_localID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def set_parentID(value: Double): Self = StObject.set(x, "_parentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: ObservablePoint): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def set_rotation(value: Double): Self = StObject.set(x, "_rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetFromMatrix(value: Matrix => Unit): Self = this.set("setFromMatrix", js.Any.fromFunction1(value))
+    def set_sx(value: Double): Self = StObject.set(x, "_sx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkew(value: ObservablePoint): Self = this.set("skew", value.asInstanceOf[js.Any])
+    def set_sy(value: Double): Self = StObject.set(x, "_sy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateLocalTransform(value: () => Unit): Self = this.set("updateLocalTransform", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateSkew(value: () => Unit): Self = this.set("updateSkew", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateTransform(value: Transform => Unit): Self = this.set("updateTransform", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWorldTransform(value: Matrix): Self = this.set("worldTransform", value.asInstanceOf[js.Any])
+    def set_worldID(value: Double): Self = StObject.set(x, "_worldID", value.asInstanceOf[js.Any])
   }
 }

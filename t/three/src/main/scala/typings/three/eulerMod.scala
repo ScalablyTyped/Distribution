@@ -4,16 +4,16 @@ import typings.three.matrix4Mod.Matrix4
 import typings.three.quaternionMod.Quaternion
 import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Euler", JSImport.Namespace)
-@js.native
-object eulerMod extends js.Object {
+object eulerMod {
   
+  @JSImport("three/src/math/Euler", "Euler")
   @js.native
-  class Euler () extends js.Object {
+  class Euler () extends StObject {
     def this(x: Double) = this()
     def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
@@ -90,11 +90,22 @@ object eulerMod extends js.Object {
     var z: Double = js.native
   }
   /* static members */
-  @js.native
-  object Euler extends js.Object {
+  object Euler {
     
-    var DefaultOrder: String = js.native
+    @JSImport("three/src/math/Euler", "Euler")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var RotationOrders: js.Array[String] = js.native
+    @JSImport("three/src/math/Euler", "Euler.DefaultOrder")
+    @js.native
+    def DefaultOrder: String = js.native
+    @scala.inline
+    def DefaultOrder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
+    
+    @JSImport("three/src/math/Euler", "Euler.RotationOrders")
+    @js.native
+    def RotationOrders: js.Array[String] = js.native
+    @scala.inline
+    def RotationOrders_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
   }
 }

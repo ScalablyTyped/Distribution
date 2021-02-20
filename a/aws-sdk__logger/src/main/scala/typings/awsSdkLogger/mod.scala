@@ -1,14 +1,14 @@
 package typings.awsSdkLogger
 
 import typings.awsSdkTypes.loggerMod.LoggerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/logger", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@aws-sdk/logger", "Logger")
   @js.native
   class Logger protected ()
     extends typings.awsSdkTypes.loggerMod.Logger {
@@ -31,9 +31,10 @@ object mod extends js.Object {
     var write: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Logger extends js.Object {
+  object Logger {
     
+    @JSImport("@aws-sdk/logger", "Logger.logLevelPriority")
+    @js.native
     val logLevelPriority: js.Any = js.native
   }
 }

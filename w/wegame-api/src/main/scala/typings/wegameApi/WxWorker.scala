@@ -1,12 +1,13 @@
 package typings.wegameApi
 
 import typings.wegameApi.anon.Message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WxWorker extends js.Object {
+trait WxWorker extends StObject {
   
   /**
     * 监听接收主线程/Worker 线程向当前线程发送的消息
@@ -38,27 +39,15 @@ object WxWorker {
   }
   
   @scala.inline
-  implicit class WxWorkerOps[Self <: WxWorker] (val x: Self) extends AnyVal {
+  implicit class WxWorkerMutableBuilder[Self <: WxWorker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnMessage(value: js.Function1[/* res */ Message, Unit] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnMessage(value: js.Function1[/* res */ Message, Unit] => Unit): Self = this.set("onMessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPostMessage(value: js.Any => Unit): Self = this.set("postMessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTerminate(value: () => Unit): Self = this.set("terminate", js.Any.fromFunction0(value))
+    def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }
 }

@@ -1,13 +1,14 @@
 package typings.toposort
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("toposort", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("toposort", JSImport.Namespace)
+  @js.native
   def apply[T](edges: js.Array[js.Tuple2[T, js.UndefOr[T]]]): js.Array[T] = js.native
   
   /**
@@ -20,5 +21,7 @@ object mod extends js.Object {
     * @returns a list of vertices, sorted from "start" to "end"
     * @throws if there are any cycles in the graph
     */
+  @JSImport("toposort", "array")
+  @js.native
   def array[T](nodes: js.Array[T], edges: js.Array[js.Tuple2[T, js.UndefOr[T]]]): js.Array[T] = js.native
 }

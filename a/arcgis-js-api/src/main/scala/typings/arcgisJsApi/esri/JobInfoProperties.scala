@@ -11,12 +11,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`job-submitted`
 import typings.arcgisJsApi.arcgisJsApiStrings.`job-succeeded`
 import typings.arcgisJsApi.arcgisJsApiStrings.`job-timed-out`
 import typings.arcgisJsApi.arcgisJsApiStrings.`job-waiting`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobInfoProperties extends js.Object {
+trait JobInfoProperties extends StObject {
   
   /**
     * The unique job ID assigned by ArcGIS Server.
@@ -50,41 +51,29 @@ object JobInfoProperties {
   }
   
   @scala.inline
-  implicit class JobInfoPropertiesOps[Self <: JobInfoProperties] (val x: Self) extends AnyVal {
+  implicit class JobInfoPropertiesMutableBuilder[Self <: JobInfoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
     def setJobStatus(
       value: `job-cancelled` | `job-cancelling` | `job-deleted` | `job-deleting` | `job-timed-out` | `job-executing` | `job-failed` | `job-new` | `job-submitted` | `job-succeeded` | `job-waiting`
-    ): Self = this.set("jobStatus", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "jobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJobStatus: Self = this.set("jobStatus", js.undefined)
+    def setJobStatusUndefined: Self = StObject.set(x, "jobStatus", js.undefined)
     
     @scala.inline
-    def setMessagesVarargs(value: GPMessageProperties*): Self = this.set("messages", js.Array(value :_*))
+    def setMessages(value: js.Array[GPMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: js.Array[GPMessageProperties]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setMessagesVarargs(value: GPMessageProperties*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

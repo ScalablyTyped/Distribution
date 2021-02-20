@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetIPSetResponse extends js.Object {
+trait GetIPSetResponse extends StObject {
   
   /**
     * 
@@ -26,30 +27,18 @@ object GetIPSetResponse {
   }
   
   @scala.inline
-  implicit class GetIPSetResponseOps[Self <: GetIPSetResponse] (val x: Self) extends AnyVal {
+  implicit class GetIPSetResponseMutableBuilder[Self <: GetIPSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIPSet(value: IPSet): Self = StObject.set(x, "IPSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIPSetUndefined: Self = StObject.set(x, "IPSet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPSet(value: IPSet): Self = this.set("IPSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIPSet: Self = this.set("IPSet", js.undefined)
-    
-    @scala.inline
-    def setLockToken(value: LockToken): Self = this.set("LockToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLockToken: Self = this.set("LockToken", js.undefined)
+    def setLockTokenUndefined: Self = StObject.set(x, "LockToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseColumnOrderState[D /* <: js.Object */] extends js.Object {
+trait UseColumnOrderState[D /* <: js.Object */] extends StObject {
   
   var columnOrder: js.Array[IdType[D]] = js.native
 }
@@ -18,24 +19,12 @@ object UseColumnOrderState {
   }
   
   @scala.inline
-  implicit class UseColumnOrderStateOps[Self <: UseColumnOrderState[_], D /* <: js.Object */] (val x: Self with UseColumnOrderState[D]) extends AnyVal {
+  implicit class UseColumnOrderStateMutableBuilder[Self <: UseColumnOrderState[_], D /* <: js.Object */] (val x: Self with UseColumnOrderState[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnOrder(value: js.Array[IdType[D]]): Self = StObject.set(x, "columnOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumnOrderVarargs(value: IdType[D]*): Self = this.set("columnOrder", js.Array(value :_*))
-    
-    @scala.inline
-    def setColumnOrder(value: js.Array[IdType[D]]): Self = this.set("columnOrder", value.asInstanceOf[js.Any])
+    def setColumnOrderVarargs(value: IdType[D]*): Self = StObject.set(x, "columnOrder", js.Array(value :_*))
   }
 }

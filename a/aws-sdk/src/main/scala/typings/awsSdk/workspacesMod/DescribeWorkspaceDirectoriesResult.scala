@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeWorkspaceDirectoriesResult extends js.Object {
+trait DescribeWorkspaceDirectoriesResult extends StObject {
   
   /**
     * Information about the directories.
@@ -26,33 +27,21 @@ object DescribeWorkspaceDirectoriesResult {
   }
   
   @scala.inline
-  implicit class DescribeWorkspaceDirectoriesResultOps[Self <: DescribeWorkspaceDirectoriesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeWorkspaceDirectoriesResultMutableBuilder[Self <: DescribeWorkspaceDirectoriesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectories(value: DirectoryList): Self = StObject.set(x, "Directories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoriesUndefined: Self = StObject.set(x, "Directories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoriesVarargs(value: WorkspaceDirectory*): Self = StObject.set(x, "Directories", js.Array(value :_*))
     
     @scala.inline
-    def setDirectoriesVarargs(value: WorkspaceDirectory*): Self = this.set("Directories", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectories(value: DirectoryList): Self = this.set("Directories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectories: Self = this.set("Directories", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

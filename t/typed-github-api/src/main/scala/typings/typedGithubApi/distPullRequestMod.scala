@@ -7,14 +7,14 @@ import typings.typedGithubApi.interfacesPullRequestMod.PullRequest
 import typings.typedGithubApi.interfacesPullRequestMod.Review
 import typings.typedGithubApi.interfacesPullRequestMod.Team
 import typings.typedGithubApi.pullRequestMod.ReviewComment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-github-api/dist/pull-request", JSImport.Namespace)
-@js.native
-object distPullRequestMod extends js.Object {
+object distPullRequestMod {
   
+  @JSImport("typed-github-api/dist/pull-request", "PullRequestClass")
   @js.native
   class PullRequestClass protected ()
     extends GitHubRef
@@ -26,6 +26,7 @@ object distPullRequestMod extends js.Object {
     var reviewCommentsUri: js.Any = js.native
   }
   
+  @JSImport("typed-github-api/dist/pull-request", "ReviewClass")
   @js.native
   class ReviewClass protected ()
     extends GitHubRef
@@ -35,7 +36,8 @@ object distPullRequestMod extends js.Object {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.interfacesIssueMod.IssueComment because Already inherited
-  - typings.typedGithubApi.interfacesPullRequestMod.ReviewComment because var conflicts: body, createdAt, createdBy, htmlUri, id, updatedAt. Inlined diffHunk, position */ @js.native
+  - typings.typedGithubApi.interfacesPullRequestMod.ReviewComment because var conflicts: body, createdAt, createdBy, htmlUri, id, updatedAt. Inlined diffHunk, position */ @JSImport("typed-github-api/dist/pull-request", "ReviewCommentClass")
+  @js.native
   class ReviewCommentClass protected () extends IssueCommentClass {
     def this(data: ReviewComment, options: OptionsOrRef) = this()
     
@@ -44,6 +46,7 @@ object distPullRequestMod extends js.Object {
     var position: Double = js.native
   }
   
+  @JSImport("typed-github-api/dist/pull-request", "TeamClass")
   @js.native
   class TeamClass protected ()
     extends GitHubRef

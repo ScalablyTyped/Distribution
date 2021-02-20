@@ -2,16 +2,16 @@ package typings.sodiumjs
 
 import typings.sodiumjs.lambdaMod.Lambda2_
 import typings.sodiumjs.streamMod.StreamWithSend
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sodiumjs/dist/typings/sodium/CoalesceHandler", JSImport.Namespace)
-@js.native
-object coalesceHandlerMod extends js.Object {
+object coalesceHandlerMod {
   
+  @JSImport("sodiumjs/dist/typings/sodium/CoalesceHandler", "CoalesceHandler")
   @js.native
-  class CoalesceHandler[A] protected () extends js.Object {
+  class CoalesceHandler[A] protected () extends StObject {
     def this(f: js.Function2[/* l */ A, /* r */ A, A], out: StreamWithSend[A]) = this()
     def this(f: Lambda2_[A, A, A], out: StreamWithSend[A]) = this()
     

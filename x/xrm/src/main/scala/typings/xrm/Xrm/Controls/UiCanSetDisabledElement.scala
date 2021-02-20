@@ -1,5 +1,6 @@
 package typings.xrm.Xrm.Controls
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for UI elements which can have the disabled value updated.
   */
 @js.native
-trait UiCanSetDisabledElement extends js.Object {
+trait UiCanSetDisabledElement extends StObject {
   
   /**
     * Sets the state of the control to either enabled, or disabled.
@@ -25,21 +26,9 @@ object UiCanSetDisabledElement {
   }
   
   @scala.inline
-  implicit class UiCanSetDisabledElementOps[Self <: UiCanSetDisabledElement] (val x: Self) extends AnyVal {
+  implicit class UiCanSetDisabledElementMutableBuilder[Self <: UiCanSetDisabledElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetDisabled(value: Boolean => Unit): Self = this.set("setDisabled", js.Any.fromFunction1(value))
+    def setSetDisabled(value: Boolean => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
   }
 }

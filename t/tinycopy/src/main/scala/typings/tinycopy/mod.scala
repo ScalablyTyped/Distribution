@@ -5,24 +5,14 @@ import typings.std.Error
 import typings.std.NodeListOf
 import typings.tinycopy.tinycopyStrings.error
 import typings.tinycopy.tinycopyStrings.success
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tinycopy", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  trait TinyCopy extends js.Object {
-    
-    def on(`type`: String, action: js.Function1[/* e */ String | Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(`type`: error, action: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_success(`type`: success, action: js.Function1[/* data */ String, Unit]): this.type = js.native
-  }
-  
+  @JSImport("tinycopy", JSImport.Default)
   @js.native
   class default protected () extends TinyCopy {
     def this(trigger: Element, target: String) = this()
@@ -30,12 +20,23 @@ object mod extends js.Object {
     def this(trigger: Element, target: NodeListOf[Element]) = this()
   }
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("tinycopy", "default.exec")
+    @js.native
     def exec(
       value: String,
       callback: js.Function2[/* err */ js.UndefOr[Error], /* data */ js.UndefOr[String], Unit]
     ): Unit = js.native
+  }
+  
+  @js.native
+  trait TinyCopy extends StObject {
+    
+    def on(`type`: String, action: js.Function1[/* e */ String | Error, Unit]): this.type = js.native
+    @JSName("on")
+    def on_error(`type`: error, action: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    @JSName("on")
+    def on_success(`type`: success, action: js.Function1[/* data */ String, Unit]): this.type = js.native
   }
 }

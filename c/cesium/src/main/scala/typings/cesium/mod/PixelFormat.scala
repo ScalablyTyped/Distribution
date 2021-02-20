@@ -1,51 +1,44 @@
 package typings.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PixelFormat extends js.Object
+sealed trait PixelFormat extends StObject
 @JSImport("cesium", "PixelFormat")
 @js.native
-object PixelFormat extends js.Object {
+object PixelFormat extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PixelFormat with Double] = js.native
   
   @js.native
   sealed trait ALPHA extends PixelFormat
-  /* 2 */ @js.native
-  object ALPHA extends TopLevel[ALPHA with Double]
+  /* 2 */ val ALPHA: typings.cesium.mod.PixelFormat.ALPHA with Double = js.native
   
   @js.native
   sealed trait DEPTH_COMPONENT extends PixelFormat
-  /* 0 */ @js.native
-  object DEPTH_COMPONENT extends TopLevel[DEPTH_COMPONENT with Double]
+  /* 0 */ val DEPTH_COMPONENT: typings.cesium.mod.PixelFormat.DEPTH_COMPONENT with Double = js.native
   
   @js.native
   sealed trait DEPTH_STENCIL extends PixelFormat
-  /* 1 */ @js.native
-  object DEPTH_STENCIL extends TopLevel[DEPTH_STENCIL with Double]
+  /* 1 */ val DEPTH_STENCIL: typings.cesium.mod.PixelFormat.DEPTH_STENCIL with Double = js.native
   
   @js.native
   sealed trait LUMINANCE extends PixelFormat
-  /* 5 */ @js.native
-  object LUMINANCE extends TopLevel[LUMINANCE with Double]
+  /* 5 */ val LUMINANCE: typings.cesium.mod.PixelFormat.LUMINANCE with Double = js.native
   
   @js.native
   sealed trait LUMINANCE_ALPHA extends PixelFormat
-  /* 6 */ @js.native
-  object LUMINANCE_ALPHA extends TopLevel[LUMINANCE_ALPHA with Double]
+  /* 6 */ val LUMINANCE_ALPHA: typings.cesium.mod.PixelFormat.LUMINANCE_ALPHA with Double = js.native
   
   @js.native
   sealed trait RGB extends PixelFormat
-  /* 3 */ @js.native
-  object RGB extends TopLevel[RGB with Double]
+  /* 3 */ val RGB: typings.cesium.mod.PixelFormat.RGB with Double = js.native
   
   @js.native
   sealed trait RGBA extends PixelFormat
-  /* 4 */ @js.native
-  object RGBA extends TopLevel[RGBA with Double]
+  /* 4 */ val RGBA: typings.cesium.mod.PixelFormat.RGBA with Double = js.native
 }

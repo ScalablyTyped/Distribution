@@ -1,11 +1,12 @@
 package typings.awsSdk.route53resolverMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetResolverQueryLogConfigRequest extends js.Object {
+trait GetResolverQueryLogConfigRequest extends StObject {
   
   /**
     * The ID of the Resolver query logging configuration that you want to get information about.
@@ -21,21 +22,9 @@ object GetResolverQueryLogConfigRequest {
   }
   
   @scala.inline
-  implicit class GetResolverQueryLogConfigRequestOps[Self <: GetResolverQueryLogConfigRequest] (val x: Self) extends AnyVal {
+  implicit class GetResolverQueryLogConfigRequestMutableBuilder[Self <: GetResolverQueryLogConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResolverQueryLogConfigId(value: ResourceId): Self = this.set("ResolverQueryLogConfigId", value.asInstanceOf[js.Any])
+    def setResolverQueryLogConfigId(value: ResourceId): Self = StObject.set(x, "ResolverQueryLogConfigId", value.asInstanceOf[js.Any])
   }
 }

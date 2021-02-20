@@ -4,6 +4,7 @@ import typings.facebookJsSdk.facebookJsSdkStrings.async
 import typings.facebookJsSdk.facebookJsSdkStrings.iframe
 import typings.facebookJsSdk.facebookJsSdkStrings.page
 import typings.facebookJsSdk.facebookJsSdkStrings.popup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //
 ////////////////////////
 @js.native
-trait DialogParams extends js.Object {
+trait DialogParams extends StObject {
   
   var app_id: js.UndefOr[String] = js.native
   
@@ -31,36 +32,24 @@ object DialogParams {
   }
   
   @scala.inline
-  implicit class DialogParamsOps[Self <: DialogParams] (val x: Self) extends AnyVal {
+  implicit class DialogParamsMutableBuilder[Self <: DialogParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplay(value: page | iframe | async | popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp_id(value: String): Self = this.set("app_id", value.asInstanceOf[js.Any])
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def deleteApp_id: Self = this.set("app_id", js.undefined)
+    def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: page | iframe | async | popup): Self = this.set("display", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
-    
-    @scala.inline
-    def setRedirect_uri(value: String): Self = this.set("redirect_uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirect_uri: Self = this.set("redirect_uri", js.undefined)
+    def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
   }
 }

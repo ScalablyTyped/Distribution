@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateVersion extends js.Object {
+trait TemplateVersion extends StObject {
   
   /**
     * The time that this template version was created.
@@ -61,81 +62,69 @@ object TemplateVersion {
   }
   
   @scala.inline
-  implicit class TemplateVersionOps[Self <: TemplateVersion] (val x: Self) extends AnyVal {
+  implicit class TemplateVersionMutableBuilder[Self <: TemplateVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSetConfigurations(value: DataSetConfigurationList): Self = StObject.set(x, "DataSetConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: Timestamp_): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setDataSetConfigurationsUndefined: Self = StObject.set(x, "DataSetConfigurations", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setDataSetConfigurationsVarargs(value: DataSetConfiguration*): Self = StObject.set(x, "DataSetConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setDataSetConfigurationsVarargs(value: DataSetConfiguration*): Self = this.set("DataSetConfigurations", js.Array(value :_*))
+    def setDescription(value: VersionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSetConfigurations(value: DataSetConfigurationList): Self = this.set("DataSetConfigurations", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDataSetConfigurations: Self = this.set("DataSetConfigurations", js.undefined)
+    def setErrors(value: TemplateErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: VersionDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setErrorsVarargs(value: TemplateError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: TemplateError*): Self = this.set("Errors", js.Array(value :_*))
+    def setSheets(value: SheetList): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: TemplateErrorList): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    def setSheetsUndefined: Self = StObject.set(x, "Sheets", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("Errors", js.undefined)
+    def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "Sheets", js.Array(value :_*))
     
     @scala.inline
-    def setSheetsVarargs(value: Sheet*): Self = this.set("Sheets", js.Array(value :_*))
+    def setSourceEntityArn(value: Arn): Self = StObject.set(x, "SourceEntityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheets(value: SheetList): Self = this.set("Sheets", value.asInstanceOf[js.Any])
+    def setSourceEntityArnUndefined: Self = StObject.set(x, "SourceEntityArn", js.undefined)
     
     @scala.inline
-    def deleteSheets: Self = this.set("Sheets", js.undefined)
+    def setStatus(value: ResourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceEntityArn(value: Arn): Self = this.set("SourceEntityArn", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSourceEntityArn: Self = this.set("SourceEntityArn", js.undefined)
+    def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ResourceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThemeArn(value: Arn): Self = this.set("ThemeArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThemeArn: Self = this.set("ThemeArn", js.undefined)
-    
-    @scala.inline
-    def setVersionNumber(value: VersionNumber): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionNumber: Self = this.set("VersionNumber", js.undefined)
+    def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
   }
 }

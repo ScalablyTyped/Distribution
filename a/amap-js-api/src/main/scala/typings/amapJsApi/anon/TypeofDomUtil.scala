@@ -193,12 +193,13 @@ import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofDomUtil extends js.Object {
+trait TypeofDomUtil extends StObject {
   
   /**
     * 给DOM元素添加一个className
@@ -1166,6 +1167,7 @@ trait TypeofDomUtil extends js.Object {
   @JSName("create")
   def create_wbr(tagName: wbr, parent: HTMLElement, className: String): HTMLElement = js.native
   
+  // this
   /**
     * 清空DOM元素
     * @param dom DOM元素

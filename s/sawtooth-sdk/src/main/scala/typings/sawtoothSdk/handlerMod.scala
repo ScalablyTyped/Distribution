@@ -1,16 +1,16 @@
 package typings.sawtoothSdk
 
 import typings.sawtoothSdk.contextMod.Context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sawtooth-sdk/processor/handler", JSImport.Namespace)
-@js.native
-object handlerMod extends js.Object {
+object handlerMod {
   
+  @JSImport("sawtooth-sdk/processor/handler", "TransactionHandler")
   @js.native
-  class TransactionHandler protected () extends js.Object {
+  class TransactionHandler protected () extends StObject {
     /**
       * @param transactionFamilyName - the name of the
       * transaction family that this handler can process, e.g. "intkey"

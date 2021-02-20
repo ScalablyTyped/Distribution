@@ -1,5 +1,6 @@
 package typings.fibjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @brief base64vlq 编码与解码模块
   * @detail 引用方式：,```JavaScript,var encoding = require('encoding');,var base64vlq = encoding.base64vlq;,```,或者,```JavaScript,var base64vlq = require('base64vlq');,```
   */
-@JSImport("base64vlq", JSImport.Namespace)
-@js.native
-object base64vlqMod extends js.Object {
+object base64vlqMod {
   
+  @JSImport("base64vlq", "decode")
+  @js.native
   def decode(data: String): js.Array[_] = js.native
   
+  @JSImport("base64vlq", "encode")
+  @js.native
   def encode(data: js.Array[_]): String = js.native
+  @JSImport("base64vlq", "encode")
+  @js.native
   def encode(data: Double): String = js.native
 }

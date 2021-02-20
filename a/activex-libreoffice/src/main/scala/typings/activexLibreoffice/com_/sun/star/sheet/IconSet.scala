@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,30 +38,18 @@ object IconSet {
   }
   
   @scala.inline
-  implicit class IconSetOps[Self <: IconSet] (val x: Self) extends AnyVal {
+  implicit class IconSetMutableBuilder[Self <: IconSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconSetEntries(value: SafeArray[XIconSetEntry]): Self = StObject.set(x, "IconSetEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIcons(value: Double): Self = StObject.set(x, "Icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReverse(value: Boolean): Self = StObject.set(x, "Reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconSetEntries(value: SafeArray[XIconSetEntry]): Self = this.set("IconSetEntries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIcons(value: Double): Self = this.set("Icons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReverse(value: Boolean): Self = this.set("Reverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowValue(value: Boolean): Self = this.set("ShowValue", value.asInstanceOf[js.Any])
+    def setShowValue(value: Boolean): Self = StObject.set(x, "ShowValue", value.asInstanceOf[js.Any])
   }
 }

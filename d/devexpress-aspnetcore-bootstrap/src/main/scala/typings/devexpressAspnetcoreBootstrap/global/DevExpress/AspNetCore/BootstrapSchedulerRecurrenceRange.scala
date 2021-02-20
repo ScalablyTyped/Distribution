@@ -1,12 +1,13 @@
 package typings.devexpressAspnetcoreBootstrap.global.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerRecurrenceRange")
 @js.native
-object BootstrapSchedulerRecurrenceRange extends js.Object {
+object BootstrapSchedulerRecurrenceRange extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[

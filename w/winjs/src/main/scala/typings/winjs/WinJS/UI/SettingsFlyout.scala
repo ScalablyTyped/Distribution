@@ -2,6 +2,7 @@ package typings.winjs.WinJS.UI
 
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides users with fast, in-context access to settings that affect the current Windows Store app.
   **/
 @js.native
-trait SettingsFlyout extends js.Object {
+trait SettingsFlyout extends StObject {
   
   //#endregion Events
   //#region Methods

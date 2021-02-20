@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * These functions are intended for use in extensions.
   */
 @js.native
-trait CoreGraphManipulationExt extends js.Object {
+trait CoreGraphManipulationExt extends StObject {
   
   /**
     * Remove scratchpad data. You should remove scratchpad data only at your own namespaces.

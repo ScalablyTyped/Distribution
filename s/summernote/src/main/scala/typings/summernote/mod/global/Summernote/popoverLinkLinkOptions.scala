@@ -1,5 +1,6 @@
 package typings.summernote.mod.global.Summernote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.summernote.summernoteStrings.linkDialogShow
   - typings.summernote.summernoteStrings.unlink
 */
-trait popoverLinkLinkOptions extends js.Object
+trait popoverLinkLinkOptions extends StObject
 object popoverLinkLinkOptions {
   
   @scala.inline

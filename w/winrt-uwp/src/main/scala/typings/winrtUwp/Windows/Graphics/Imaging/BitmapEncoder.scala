@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains methods to create, edit and save images. */
 @js.native
-trait BitmapEncoder extends js.Object {
+trait BitmapEncoder extends StObject {
   
   /** The metadata for the container. */
   var bitmapContainerProperties: BitmapProperties = js.native

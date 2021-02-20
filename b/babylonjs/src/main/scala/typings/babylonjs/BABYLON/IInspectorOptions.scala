@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInspectorOptions extends js.Object {
+trait IInspectorOptions extends StObject {
   
   /**
     * Display in embed mode (both panes on the right)
@@ -72,87 +73,75 @@ object IInspectorOptions {
   }
   
   @scala.inline
-  implicit class IInspectorOptionsOps[Self <: IInspectorOptions] (val x: Self) extends AnyVal {
+  implicit class IInspectorOptionsMutableBuilder[Self <: IInspectorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmbedMode(value: Boolean): Self = StObject.set(x, "embedMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmbedModeUndefined: Self = StObject.set(x, "embedMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableClose(value: Boolean): Self = StObject.set(x, "enableClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedMode(value: Boolean): Self = this.set("embedMode", value.asInstanceOf[js.Any])
+    def setEnableCloseUndefined: Self = StObject.set(x, "enableClose", js.undefined)
     
     @scala.inline
-    def deleteEmbedMode: Self = this.set("embedMode", js.undefined)
+    def setEnablePopup(value: Boolean): Self = StObject.set(x, "enablePopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableClose(value: Boolean): Self = this.set("enableClose", value.asInstanceOf[js.Any])
+    def setEnablePopupUndefined: Self = StObject.set(x, "enablePopup", js.undefined)
     
     @scala.inline
-    def deleteEnableClose: Self = this.set("enableClose", js.undefined)
+    def setExplorerExtensibility(value: js.Array[IExplorerExtensibilityGroup]): Self = StObject.set(x, "explorerExtensibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePopup(value: Boolean): Self = this.set("enablePopup", value.asInstanceOf[js.Any])
+    def setExplorerExtensibilityUndefined: Self = StObject.set(x, "explorerExtensibility", js.undefined)
     
     @scala.inline
-    def deleteEnablePopup: Self = this.set("enablePopup", js.undefined)
+    def setExplorerExtensibilityVarargs(value: IExplorerExtensibilityGroup*): Self = StObject.set(x, "explorerExtensibility", js.Array(value :_*))
     
     @scala.inline
-    def setExplorerExtensibilityVarargs(value: IExplorerExtensibilityGroup*): Self = this.set("explorerExtensibility", js.Array(value :_*))
+    def setGlobalRoot(value: HTMLElement): Self = StObject.set(x, "globalRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplorerExtensibility(value: js.Array[IExplorerExtensibilityGroup]): Self = this.set("explorerExtensibility", value.asInstanceOf[js.Any])
+    def setGlobalRootUndefined: Self = StObject.set(x, "globalRoot", js.undefined)
     
     @scala.inline
-    def deleteExplorerExtensibility: Self = this.set("explorerExtensibility", js.undefined)
+    def setHandleResize(value: Boolean): Self = StObject.set(x, "handleResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalRoot(value: HTMLElement): Self = this.set("globalRoot", value.asInstanceOf[js.Any])
+    def setHandleResizeUndefined: Self = StObject.set(x, "handleResize", js.undefined)
     
     @scala.inline
-    def deleteGlobalRoot: Self = this.set("globalRoot", js.undefined)
+    def setInitialTab(value: DebugLayerTab): Self = StObject.set(x, "initialTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleResize(value: Boolean): Self = this.set("handleResize", value.asInstanceOf[js.Any])
+    def setInitialTabUndefined: Self = StObject.set(x, "initialTab", js.undefined)
     
     @scala.inline
-    def deleteHandleResize: Self = this.set("handleResize", js.undefined)
+    def setInspectorURL(value: String): Self = StObject.set(x, "inspectorURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialTab(value: DebugLayerTab): Self = this.set("initialTab", value.asInstanceOf[js.Any])
+    def setInspectorURLUndefined: Self = StObject.set(x, "inspectorURL", js.undefined)
     
     @scala.inline
-    def deleteInitialTab: Self = this.set("initialTab", js.undefined)
+    def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspectorURL(value: String): Self = this.set("inspectorURL", value.asInstanceOf[js.Any])
+    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     @scala.inline
-    def deleteInspectorURL: Self = this.set("inspectorURL", js.undefined)
+    def setShowExplorer(value: Boolean): Self = StObject.set(x, "showExplorer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay(value: Boolean): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    def setShowExplorerUndefined: Self = StObject.set(x, "showExplorer", js.undefined)
     
     @scala.inline
-    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    def setShowInspector(value: Boolean): Self = StObject.set(x, "showInspector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowExplorer(value: Boolean): Self = this.set("showExplorer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowExplorer: Self = this.set("showExplorer", js.undefined)
-    
-    @scala.inline
-    def setShowInspector(value: Boolean): Self = this.set("showInspector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowInspector: Self = this.set("showInspector", js.undefined)
+    def setShowInspectorUndefined: Self = StObject.set(x, "showInspector", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactCalendarTimeline.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReactCalendarGroupRendererProps[CustomGroup /* <: TimelineGroupBase */] extends js.Object {
+trait ReactCalendarGroupRendererProps[CustomGroup /* <: TimelineGroupBase */] extends StObject {
   
   var group: CustomGroup = js.native
   
@@ -20,27 +21,15 @@ object ReactCalendarGroupRendererProps {
   }
   
   @scala.inline
-  implicit class ReactCalendarGroupRendererPropsOps[Self <: ReactCalendarGroupRendererProps[_], CustomGroup /* <: TimelineGroupBase */] (val x: Self with ReactCalendarGroupRendererProps[CustomGroup]) extends AnyVal {
+  implicit class ReactCalendarGroupRendererPropsMutableBuilder[Self <: ReactCalendarGroupRendererProps[_], CustomGroup /* <: TimelineGroupBase */] (val x: Self with ReactCalendarGroupRendererProps[CustomGroup]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: CustomGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsRightSidebar(value: Boolean): Self = StObject.set(x, "isRightSidebar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroup(value: CustomGroup): Self = this.set("group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsRightSidebar(value: Boolean): Self = this.set("isRightSidebar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsRightSidebar: Self = this.set("isRightSidebar", js.undefined)
+    def setIsRightSidebarUndefined: Self = StObject.set(x, "isRightSidebar", js.undefined)
   }
 }

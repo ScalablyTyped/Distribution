@@ -2,6 +2,7 @@ package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Scene
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,13 +23,13 @@ class GameObject protected ()
     */
   def this(scene: Scene, `type`: String) = this()
 }
-/* static members */
-@JSImport("phaser", "GameObjects.GameObject")
-@js.native
-object GameObject extends js.Object {
+object GameObject {
   
   /**
     * The bitmask that `GameObject.renderFlags` is compared against to determine if the Game Object will render or not.
     */
+  /* static member */
+  @JSImport("phaser", "GameObjects.GameObject.RENDER_MASK")
+  @js.native
   val RENDER_MASK: integer = js.native
 }

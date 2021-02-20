@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectFiles extends js.Object {
+trait IObjectFiles extends StObject {
   
   val Count: Double = js.native
   
@@ -35,36 +36,24 @@ object IObjectFiles {
   }
   
   @scala.inline
-  implicit class IObjectFilesOps[Self <: IObjectFiles] (val x: Self) extends AnyVal {
+  implicit class IObjectFilesMutableBuilder[Self <: IObjectFiles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetObjectFileByNameForFileSystem(value: String => IObjectFile): Self = StObject.set(x, "GetObjectFileByNameForFileSystem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetObjectFileIndexByNameForFileSystem(value: String => Double): Self = StObject.set(x, "GetObjectFileIndexByNameForFileSystem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setItem(value: Double => IObjectFile): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetObjectFileByNameForFileSystem(value: String => IObjectFile): Self = this.set("GetObjectFileByNameForFileSystem", js.Any.fromFunction1(value))
+    def setSort(value: IObjectFileComparer => Unit): Self = StObject.set(x, "Sort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetObjectFileIndexByNameForFileSystem(value: String => Double): Self = this.set("GetObjectFileIndexByNameForFileSystem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setItem(value: Double => IObjectFile): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSort(value: IObjectFileComparer => Unit): Self = this.set("Sort", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToJSON(value: () => String): Self = this.set("ToJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
   }
 }

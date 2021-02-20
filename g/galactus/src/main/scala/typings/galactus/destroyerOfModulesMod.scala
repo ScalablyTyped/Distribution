@@ -4,16 +4,16 @@ import typings.floraColossus.walkerMod.Module
 import typings.galactus.anon.RelativePaths
 import typings.galactus.anon.RootDirectory
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("galactus/lib/DestroyerOfModules", JSImport.Namespace)
-@js.native
-object destroyerOfModulesMod extends js.Object {
+object destroyerOfModulesMod {
   
+  @JSImport("galactus/lib/DestroyerOfModules", "DestroyerOfModules")
   @js.native
-  class DestroyerOfModules protected () extends js.Object {
+  class DestroyerOfModules protected () extends StObject {
     def this(hasRootDirectoryWalkerShouldKeepModuleTest: RootDirectory) = this()
     
     def collectKeptModules(hasRelativePaths: RelativePaths): js.Promise[ModuleMap] = js.native

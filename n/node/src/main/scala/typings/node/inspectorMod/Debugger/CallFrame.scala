@@ -1,6 +1,7 @@
 package typings.node.inspectorMod.Debugger
 
 import typings.node.inspectorMod.Runtime.RemoteObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JavaScript call frame. Array of call frames form the call stack.
   */
 @js.native
-trait CallFrame extends js.Object {
+trait CallFrame extends StObject {
   
   /**
     * Call frame identifier. This identifier is only valid while the virtual machine is paused.
@@ -68,51 +69,39 @@ object CallFrame {
   }
   
   @scala.inline
-  implicit class CallFrameOps[Self <: CallFrame] (val x: Self) extends AnyVal {
+  implicit class CallFrameMutableBuilder[Self <: CallFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunctionLocation(value: Location): Self = StObject.set(x, "functionLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionLocationUndefined: Self = StObject.set(x, "functionLocation", js.undefined)
     
     @scala.inline
-    def setCallFrameId(value: CallFrameId): Self = this.set("callFrameId", value.asInstanceOf[js.Any])
+    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: String): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setReturnValue(value: RemoteObject): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopeChainVarargs(value: Scope*): Self = this.set("scopeChain", js.Array(value :_*))
+    def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
     
     @scala.inline
-    def setScopeChain(value: js.Array[Scope]): Self = this.set("scopeChain", value.asInstanceOf[js.Any])
+    def setScopeChain(value: js.Array[Scope]): Self = StObject.set(x, "scopeChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThis(value: RemoteObject): Self = this.set("this", value.asInstanceOf[js.Any])
+    def setScopeChainVarargs(value: Scope*): Self = StObject.set(x, "scopeChain", js.Array(value :_*))
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setThis(value: RemoteObject): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionLocation(value: Location): Self = this.set("functionLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFunctionLocation: Self = this.set("functionLocation", js.undefined)
-    
-    @scala.inline
-    def setReturnValue(value: RemoteObject): Self = this.set("returnValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnValue: Self = this.set("returnValue", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

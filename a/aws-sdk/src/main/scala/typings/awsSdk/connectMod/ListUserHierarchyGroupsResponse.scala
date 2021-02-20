@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUserHierarchyGroupsResponse extends js.Object {
+trait ListUserHierarchyGroupsResponse extends StObject {
   
   /**
     * If there are additional results, this is the token for the next set of results.
@@ -26,33 +27,21 @@ object ListUserHierarchyGroupsResponse {
   }
   
   @scala.inline
-  implicit class ListUserHierarchyGroupsResponseOps[Self <: ListUserHierarchyGroupsResponse] (val x: Self) extends AnyVal {
+  implicit class ListUserHierarchyGroupsResponseMutableBuilder[Self <: ListUserHierarchyGroupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserHierarchyGroupSummaryList(value: HierarchyGroupSummaryList): Self = StObject.set(x, "UserHierarchyGroupSummaryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setUserHierarchyGroupSummaryListUndefined: Self = StObject.set(x, "UserHierarchyGroupSummaryList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setUserHierarchyGroupSummaryListVarargs(value: HierarchyGroupSummary*): Self = this.set("UserHierarchyGroupSummaryList", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserHierarchyGroupSummaryList(value: HierarchyGroupSummaryList): Self = this.set("UserHierarchyGroupSummaryList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserHierarchyGroupSummaryList: Self = this.set("UserHierarchyGroupSummaryList", js.undefined)
+    def setUserHierarchyGroupSummaryListVarargs(value: HierarchyGroupSummary*): Self = StObject.set(x, "UserHierarchyGroupSummaryList", js.Array(value :_*))
   }
 }

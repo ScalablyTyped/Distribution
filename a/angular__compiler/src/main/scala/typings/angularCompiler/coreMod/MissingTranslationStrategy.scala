@@ -1,31 +1,28 @@
 package typings.angularCompiler.coreMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MissingTranslationStrategy extends js.Object
+sealed trait MissingTranslationStrategy extends StObject
 @JSImport("@angular/compiler/src/core", "MissingTranslationStrategy")
 @js.native
-object MissingTranslationStrategy extends js.Object {
+object MissingTranslationStrategy extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MissingTranslationStrategy with Double] = js.native
   
   @js.native
   sealed trait Error extends MissingTranslationStrategy
-  /* 0 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  /* 0 */ val Error: typings.angularCompiler.coreMod.MissingTranslationStrategy.Error with Double = js.native
   
   @js.native
   sealed trait Ignore extends MissingTranslationStrategy
-  /* 2 */ @js.native
-  object Ignore extends TopLevel[Ignore with Double]
+  /* 2 */ val Ignore: typings.angularCompiler.coreMod.MissingTranslationStrategy.Ignore with Double = js.native
   
   @js.native
   sealed trait Warning extends MissingTranslationStrategy
-  /* 1 */ @js.native
-  object Warning extends TopLevel[Warning with Double]
+  /* 1 */ val Warning: typings.angularCompiler.coreMod.MissingTranslationStrategy.Warning with Double = js.native
 }

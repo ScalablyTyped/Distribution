@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetingValueDemogAgeCriteria extends js.Object {
+trait TargetingValueDemogAgeCriteria extends StObject {
   
   var demogAgeCriteriaIds: js.UndefOr[js.Array[String]] = js.native
 }
@@ -18,27 +19,15 @@ object TargetingValueDemogAgeCriteria {
   }
   
   @scala.inline
-  implicit class TargetingValueDemogAgeCriteriaOps[Self <: TargetingValueDemogAgeCriteria] (val x: Self) extends AnyVal {
+  implicit class TargetingValueDemogAgeCriteriaMutableBuilder[Self <: TargetingValueDemogAgeCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDemogAgeCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "demogAgeCriteriaIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDemogAgeCriteriaIdsUndefined: Self = StObject.set(x, "demogAgeCriteriaIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDemogAgeCriteriaIdsVarargs(value: String*): Self = this.set("demogAgeCriteriaIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setDemogAgeCriteriaIds(value: js.Array[String]): Self = this.set("demogAgeCriteriaIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDemogAgeCriteriaIds: Self = this.set("demogAgeCriteriaIds", js.undefined)
+    def setDemogAgeCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "demogAgeCriteriaIds", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReactionValueFormats extends js.Object {
+trait ReactionValueFormats extends StObject {
   
   /**
     * The Emoji Version 1.0 graphic of the reaction. These graphics are interpreted slightly differently on different operating systems.
@@ -31,36 +32,24 @@ object ReactionValueFormats {
   }
   
   @scala.inline
-  implicit class ReactionValueFormatsOps[Self <: ReactionValueFormats] (val x: Self) extends AnyVal {
+  implicit class ReactionValueFormatsMutableBuilder[Self <: ReactionValueFormats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmoji(value: ReactionEmoji): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShortCode(value: ReactionShortCode): Self = StObject.set(x, "shortCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmoji(value: ReactionEmoji): Self = this.set("emoji", value.asInstanceOf[js.Any])
+    def setShortCodeUndefined: Self = StObject.set(x, "shortCode", js.undefined)
     
     @scala.inline
-    def deleteEmoji: Self = this.set("emoji", js.undefined)
+    def setUnicode(value: ReactionUnicode): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortCode(value: ReactionShortCode): Self = this.set("shortCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortCode: Self = this.set("shortCode", js.undefined)
-    
-    @scala.inline
-    def setUnicode(value: ReactionUnicode): Self = this.set("unicode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnicode: Self = this.set("unicode", js.undefined)
+    def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
   }
 }

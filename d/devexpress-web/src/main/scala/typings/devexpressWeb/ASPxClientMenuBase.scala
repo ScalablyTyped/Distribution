@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,51 +105,39 @@ object ASPxClientMenuBase {
   }
   
   @scala.inline
-  implicit class ASPxClientMenuBaseOps[Self <: ASPxClientMenuBase] (val x: Self) extends AnyVal {
+  implicit class ASPxClientMenuBaseMutableBuilder[Self <: ASPxClientMenuBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseUp(value: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "CloseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetItem(value: Double => ASPxClientMenuItem): Self = StObject.set(x, "GetItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItemByName(value: String => ASPxClientMenuItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloseUp(value: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]]): Self = this.set("CloseUp", value.asInstanceOf[js.Any])
+    def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItem(value: Double => ASPxClientMenuItem): Self = this.set("GetItem", js.Any.fromFunction1(value))
+    def setGetRootItem(value: () => ASPxClientMenuItem): Self = StObject.set(x, "GetRootItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemByName(value: String => ASPxClientMenuItem): Self = this.set("GetItemByName", js.Any.fromFunction1(value))
+    def setGetSelectedItem(value: () => ASPxClientMenuItem): Self = StObject.set(x, "GetSelectedItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemCount(value: () => Double): Self = this.set("GetItemCount", js.Any.fromFunction0(value))
+    def setItemClick(value: ASPxClientEvent[ASPxClientMenuItemClickEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRootItem(value: () => ASPxClientMenuItem): Self = this.set("GetRootItem", js.Any.fromFunction0(value))
+    def setItemMouseOut(value: ASPxClientEvent[ASPxClientMenuItemMouseEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "ItemMouseOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSelectedItem(value: () => ASPxClientMenuItem): Self = this.set("GetSelectedItem", js.Any.fromFunction0(value))
+    def setItemMouseOver(value: ASPxClientEvent[ASPxClientMenuItemMouseEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "ItemMouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemClick(value: ASPxClientEvent[ASPxClientMenuItemClickEventHandler[ASPxClientMenuBase]]): Self = this.set("ItemClick", value.asInstanceOf[js.Any])
+    def setPopUp(value: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "PopUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemMouseOut(value: ASPxClientEvent[ASPxClientMenuItemMouseEventHandler[ASPxClientMenuBase]]): Self = this.set("ItemMouseOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemMouseOver(value: ASPxClientEvent[ASPxClientMenuItemMouseEventHandler[ASPxClientMenuBase]]): Self = this.set("ItemMouseOver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopUp(value: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]]): Self = this.set("PopUp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetSelectedItem(value: ASPxClientMenuItem => Unit): Self = this.set("SetSelectedItem", js.Any.fromFunction1(value))
+    def setSetSelectedItem(value: ASPxClientMenuItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
   }
 }

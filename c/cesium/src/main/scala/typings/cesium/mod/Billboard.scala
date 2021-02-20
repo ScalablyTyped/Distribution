@@ -3,13 +3,14 @@ package typings.cesium.mod
 import typings.cesium.mod.Billboard.CreateImageCallback
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Billboard")
 @js.native
-class Billboard () extends js.Object {
+class Billboard () extends StObject {
   
   var alignedAxis: Cartesian3 = js.native
   
@@ -67,9 +68,7 @@ class Billboard () extends js.Object {
   
   var width: Double = js.native
 }
-@JSImport("cesium", "Billboard")
-@js.native
-object Billboard extends js.Object {
+object Billboard {
   
   type CreateImageCallback = js.Function1[
     /* id */ String, 

@@ -2,12 +2,13 @@ package typings.cassanknex.mod
 
 import typings.cassandraDriver.mod.Client
 import typings.cassandraDriver.mod.ClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DriverOptions extends js.Object {
+trait DriverOptions extends StObject {
   
   var connection: js.UndefOr[Client | ClientOptions] = js.native
   
@@ -22,30 +23,18 @@ object DriverOptions {
   }
   
   @scala.inline
-  implicit class DriverOptionsOps[Self <: DriverOptions] (val x: Self) extends AnyVal {
+  implicit class DriverOptionsMutableBuilder[Self <: DriverOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: Client | ClientOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: Client | ClientOptions): Self = this.set("connection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnection: Self = this.set("connection", js.undefined)
-    
-    @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
   }
 }

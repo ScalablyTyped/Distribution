@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReelMediaViewerFeedResponseUser extends js.Object {
+trait ListReelMediaViewerFeedResponseUser extends StObject {
   
   var account_type: js.UndefOr[Double] = js.native
   
@@ -118,279 +119,267 @@ object ListReelMediaViewerFeedResponseUser {
   }
   
   @scala.inline
-  implicit class ListReelMediaViewerFeedResponseUserOps[Self <: ListReelMediaViewerFeedResponseUser] (val x: Self) extends AnyVal {
+  implicit class ListReelMediaViewerFeedResponseUserMutableBuilder[Self <: ListReelMediaViewerFeedResponseUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_type(value: Double): Self = StObject.set(x, "account_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccount_typeUndefined: Self = StObject.set(x, "account_type", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddress_street(value: String): Self = StObject.set(x, "address_street", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull_name(value: String): Self = this.set("full_name", value.asInstanceOf[js.Any])
+    def setAddress_streetUndefined: Self = StObject.set(x, "address_street", js.undefined)
     
     @scala.inline
-    def setIs_private(value: Boolean): Self = this.set("is_private", value.asInstanceOf[js.Any])
+    def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_verified(value: Boolean): Self = this.set("is_verified", value.asInstanceOf[js.Any])
+    def setAllowed_commenter_typeUndefined: Self = StObject.set(x, "allowed_commenter_type", js.undefined)
     
     @scala.inline
-    def setPk(value: Double): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_pic_id(value: String): Self = this.set("profile_pic_id", value.asInstanceOf[js.Any])
+    def setBiographyUndefined: Self = StObject.set(x, "biography", js.undefined)
     
     @scala.inline
-    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
+    def setBiography_with_entities(value: ListReelMediaViewerFeedResponseBiographyWithEntities): Self = StObject.set(x, "biography_with_entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setBiography_with_entitiesUndefined: Self = StObject.set(x, "biography_with_entities", js.undefined)
     
     @scala.inline
-    def setAccount_type(value: Double): Self = this.set("account_type", value.asInstanceOf[js.Any])
+    def setBusiness_contact_method(value: String): Self = StObject.set(x, "business_contact_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccount_type: Self = this.set("account_type", js.undefined)
+    def setBusiness_contact_methodUndefined: Self = StObject.set(x, "business_contact_method", js.undefined)
     
     @scala.inline
-    def setAddress_street(value: String): Self = this.set("address_street", value.asInstanceOf[js.Any])
+    def setCan_boost_post(value: Boolean): Self = StObject.set(x, "can_boost_post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_street: Self = this.set("address_street", js.undefined)
+    def setCan_boost_postUndefined: Self = StObject.set(x, "can_boost_post", js.undefined)
     
     @scala.inline
-    def setAllowed_commenter_type(value: String): Self = this.set("allowed_commenter_type", value.asInstanceOf[js.Any])
+    def setCan_hide_category(value: Boolean): Self = StObject.set(x, "can_hide_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowed_commenter_type: Self = this.set("allowed_commenter_type", js.undefined)
+    def setCan_hide_categoryUndefined: Self = StObject.set(x, "can_hide_category", js.undefined)
     
     @scala.inline
-    def setBiography(value: String): Self = this.set("biography", value.asInstanceOf[js.Any])
+    def setCan_hide_public_contacts(value: Boolean): Self = StObject.set(x, "can_hide_public_contacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBiography: Self = this.set("biography", js.undefined)
+    def setCan_hide_public_contactsUndefined: Self = StObject.set(x, "can_hide_public_contacts", js.undefined)
     
     @scala.inline
-    def setBiography_with_entities(value: ListReelMediaViewerFeedResponseBiographyWithEntities): Self = this.set("biography_with_entities", value.asInstanceOf[js.Any])
+    def setCan_see_organic_insights(value: Boolean): Self = StObject.set(x, "can_see_organic_insights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBiography_with_entities: Self = this.set("biography_with_entities", js.undefined)
+    def setCan_see_organic_insightsUndefined: Self = StObject.set(x, "can_see_organic_insights", js.undefined)
     
     @scala.inline
-    def setBusiness_contact_method(value: String): Self = this.set("business_contact_method", value.asInstanceOf[js.Any])
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBusiness_contact_method: Self = this.set("business_contact_method", js.undefined)
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def setCan_boost_post(value: Boolean): Self = this.set("can_boost_post", value.asInstanceOf[js.Any])
+    def setCity_id(value: Double): Self = StObject.set(x, "city_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCan_boost_post: Self = this.set("can_boost_post", js.undefined)
+    def setCity_idUndefined: Self = StObject.set(x, "city_id", js.undefined)
     
     @scala.inline
-    def setCan_hide_category(value: Boolean): Self = this.set("can_hide_category", value.asInstanceOf[js.Any])
+    def setCity_name(value: String): Self = StObject.set(x, "city_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCan_hide_category: Self = this.set("can_hide_category", js.undefined)
+    def setCity_nameUndefined: Self = StObject.set(x, "city_name", js.undefined)
     
     @scala.inline
-    def setCan_hide_public_contacts(value: Boolean): Self = this.set("can_hide_public_contacts", value.asInstanceOf[js.Any])
+    def setContact_phone_number(value: String): Self = StObject.set(x, "contact_phone_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCan_hide_public_contacts: Self = this.set("can_hide_public_contacts", js.undefined)
+    def setContact_phone_numberUndefined: Self = StObject.set(x, "contact_phone_number", js.undefined)
     
     @scala.inline
-    def setCan_see_organic_insights(value: Boolean): Self = this.set("can_see_organic_insights", value.asInstanceOf[js.Any])
+    def setDirect_messaging(value: String): Self = StObject.set(x, "direct_messaging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCan_see_organic_insights: Self = this.set("can_see_organic_insights", js.undefined)
+    def setDirect_messagingUndefined: Self = StObject.set(x, "direct_messaging", js.undefined)
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setExternal_lynx_url(value: String): Self = StObject.set(x, "external_lynx_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setExternal_lynx_urlUndefined: Self = StObject.set(x, "external_lynx_url", js.undefined)
     
     @scala.inline
-    def setCity_id(value: Double): Self = this.set("city_id", value.asInstanceOf[js.Any])
+    def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCity_id: Self = this.set("city_id", js.undefined)
+    def setExternal_urlUndefined: Self = StObject.set(x, "external_url", js.undefined)
     
     @scala.inline
-    def setCity_name(value: String): Self = this.set("city_name", value.asInstanceOf[js.Any])
+    def setFb_page_call_to_action_id(value: String): Self = StObject.set(x, "fb_page_call_to_action_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCity_name: Self = this.set("city_name", js.undefined)
+    def setFb_page_call_to_action_idUndefined: Self = StObject.set(x, "fb_page_call_to_action_id", js.undefined)
     
     @scala.inline
-    def setContact_phone_number(value: String): Self = this.set("contact_phone_number", value.asInstanceOf[js.Any])
+    def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContact_phone_number: Self = this.set("contact_phone_number", js.undefined)
+    def setFollower_countUndefined: Self = StObject.set(x, "follower_count", js.undefined)
     
     @scala.inline
-    def setDirect_messaging(value: String): Self = this.set("direct_messaging", value.asInstanceOf[js.Any])
+    def setFollowing_count(value: Double): Self = StObject.set(x, "following_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirect_messaging: Self = this.set("direct_messaging", js.undefined)
+    def setFollowing_countUndefined: Self = StObject.set(x, "following_count", js.undefined)
     
     @scala.inline
-    def setExternal_lynx_url(value: String): Self = this.set("external_lynx_url", value.asInstanceOf[js.Any])
+    def setFollowing_tag_count(value: Double): Self = StObject.set(x, "following_tag_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternal_lynx_url: Self = this.set("external_lynx_url", js.undefined)
+    def setFollowing_tag_countUndefined: Self = StObject.set(x, "following_tag_count", js.undefined)
     
     @scala.inline
-    def setExternal_url(value: String): Self = this.set("external_url", value.asInstanceOf[js.Any])
+    def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternal_url: Self = this.set("external_url", js.undefined)
+    def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFb_page_call_to_action_id(value: String): Self = this.set("fb_page_call_to_action_id", value.asInstanceOf[js.Any])
+    def setHas_anonymous_profile_pictureUndefined: Self = StObject.set(x, "has_anonymous_profile_picture", js.undefined)
     
     @scala.inline
-    def deleteFb_page_call_to_action_id: Self = this.set("fb_page_call_to_action_id", js.undefined)
+    def setHas_biography_translation(value: Boolean): Self = StObject.set(x, "has_biography_translation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollower_count(value: Double): Self = this.set("follower_count", value.asInstanceOf[js.Any])
+    def setHas_biography_translationUndefined: Self = StObject.set(x, "has_biography_translation", js.undefined)
     
     @scala.inline
-    def deleteFollower_count: Self = this.set("follower_count", js.undefined)
+    def setInstagram_location_id(value: String): Self = StObject.set(x, "instagram_location_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowing_count(value: Double): Self = this.set("following_count", value.asInstanceOf[js.Any])
+    def setInstagram_location_idUndefined: Self = StObject.set(x, "instagram_location_id", js.undefined)
     
     @scala.inline
-    def deleteFollowing_count: Self = this.set("following_count", js.undefined)
+    def setIs_business(value: Boolean): Self = StObject.set(x, "is_business", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowing_tag_count(value: Double): Self = this.set("following_tag_count", value.asInstanceOf[js.Any])
+    def setIs_businessUndefined: Self = StObject.set(x, "is_business", js.undefined)
     
     @scala.inline
-    def deleteFollowing_tag_count: Self = this.set("following_tag_count", js.undefined)
+    def setIs_call_to_action_enabled(value: Boolean): Self = StObject.set(x, "is_call_to_action_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_anonymous_profile_picture(value: Boolean): Self = this.set("has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+    def setIs_call_to_action_enabledUndefined: Self = StObject.set(x, "is_call_to_action_enabled", js.undefined)
     
     @scala.inline
-    def deleteHas_anonymous_profile_picture: Self = this.set("has_anonymous_profile_picture", js.undefined)
+    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_biography_translation(value: Boolean): Self = this.set("has_biography_translation", value.asInstanceOf[js.Any])
+    def setIs_unpublished(value: Boolean): Self = StObject.set(x, "is_unpublished", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHas_biography_translation: Self = this.set("has_biography_translation", js.undefined)
+    def setIs_unpublishedUndefined: Self = StObject.set(x, "is_unpublished", js.undefined)
     
     @scala.inline
-    def setInstagram_location_id(value: String): Self = this.set("instagram_location_id", value.asInstanceOf[js.Any])
+    def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstagram_location_id: Self = this.set("instagram_location_id", js.undefined)
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_business(value: Boolean): Self = this.set("is_business", value.asInstanceOf[js.Any])
+    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
     @scala.inline
-    def deleteIs_business: Self = this.set("is_business", js.undefined)
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_call_to_action_enabled(value: Boolean): Self = this.set("is_call_to_action_enabled", value.asInstanceOf[js.Any])
+    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
     @scala.inline
-    def deleteIs_call_to_action_enabled: Self = this.set("is_call_to_action_enabled", js.undefined)
+    def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_unpublished(value: Boolean): Self = this.set("is_unpublished", value.asInstanceOf[js.Any])
+    def setMedia_countUndefined: Self = StObject.set(x, "media_count", js.undefined)
     
     @scala.inline
-    def deleteIs_unpublished: Self = this.set("is_unpublished", js.undefined)
+    def setMutual_followers_count(value: Double): Self = StObject.set(x, "mutual_followers_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setMutual_followers_countUndefined: Self = StObject.set(x, "mutual_followers_count", js.undefined)
     
     @scala.inline
-    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_count(value: Double): Self = this.set("media_count", value.asInstanceOf[js.Any])
+    def setPublic_email(value: String): Self = StObject.set(x, "public_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMedia_count: Self = this.set("media_count", js.undefined)
+    def setPublic_emailUndefined: Self = StObject.set(x, "public_email", js.undefined)
     
     @scala.inline
-    def setMutual_followers_count(value: Double): Self = this.set("mutual_followers_count", value.asInstanceOf[js.Any])
+    def setPublic_phone_country_code(value: String): Self = StObject.set(x, "public_phone_country_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMutual_followers_count: Self = this.set("mutual_followers_count", js.undefined)
+    def setPublic_phone_country_codeUndefined: Self = StObject.set(x, "public_phone_country_code", js.undefined)
     
     @scala.inline
-    def setPublic_email(value: String): Self = this.set("public_email", value.asInstanceOf[js.Any])
+    def setPublic_phone_number(value: String): Self = StObject.set(x, "public_phone_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublic_email: Self = this.set("public_email", js.undefined)
+    def setPublic_phone_numberUndefined: Self = StObject.set(x, "public_phone_number", js.undefined)
     
     @scala.inline
-    def setPublic_phone_country_code(value: String): Self = this.set("public_phone_country_code", value.asInstanceOf[js.Any])
+    def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublic_phone_country_code: Self = this.set("public_phone_country_code", js.undefined)
+    def setReel_auto_archiveUndefined: Self = StObject.set(x, "reel_auto_archive", js.undefined)
     
     @scala.inline
-    def setPublic_phone_number(value: String): Self = this.set("public_phone_number", value.asInstanceOf[js.Any])
+    def setShould_show_category(value: Boolean): Self = StObject.set(x, "should_show_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublic_phone_number: Self = this.set("public_phone_number", js.undefined)
+    def setShould_show_categoryUndefined: Self = StObject.set(x, "should_show_category", js.undefined)
     
     @scala.inline
-    def setReel_auto_archive(value: String): Self = this.set("reel_auto_archive", value.asInstanceOf[js.Any])
+    def setShould_show_public_contacts(value: Boolean): Self = StObject.set(x, "should_show_public_contacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReel_auto_archive: Self = this.set("reel_auto_archive", js.undefined)
+    def setShould_show_public_contactsUndefined: Self = StObject.set(x, "should_show_public_contacts", js.undefined)
     
     @scala.inline
-    def setShould_show_category(value: Boolean): Self = this.set("should_show_category", value.asInstanceOf[js.Any])
+    def setShould_show_tabbed_inbox(value: Boolean): Self = StObject.set(x, "should_show_tabbed_inbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShould_show_category: Self = this.set("should_show_category", js.undefined)
+    def setShould_show_tabbed_inboxUndefined: Self = StObject.set(x, "should_show_tabbed_inbox", js.undefined)
     
     @scala.inline
-    def setShould_show_public_contacts(value: Boolean): Self = this.set("should_show_public_contacts", value.asInstanceOf[js.Any])
+    def setShow_insights_terms(value: Boolean): Self = StObject.set(x, "show_insights_terms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShould_show_public_contacts: Self = this.set("should_show_public_contacts", js.undefined)
+    def setShow_insights_termsUndefined: Self = StObject.set(x, "show_insights_terms", js.undefined)
     
     @scala.inline
-    def setShould_show_tabbed_inbox(value: Boolean): Self = this.set("should_show_tabbed_inbox", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShould_show_tabbed_inbox: Self = this.set("should_show_tabbed_inbox", js.undefined)
+    def setZip(value: String): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow_insights_terms(value: Boolean): Self = this.set("show_insights_terms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow_insights_terms: Self = this.set("show_insights_terms", js.undefined)
-    
-    @scala.inline
-    def setZip(value: String): Self = this.set("zip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZip: Self = this.set("zip", js.undefined)
+    def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.off
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.verbose
 import typings.vscodeLanguageserverTypes.mod.DocumentUri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,60 +67,48 @@ object _InitializeParams {
   }
   
   @scala.inline
-  implicit class _InitializeParamsOps[Self <: _InitializeParams] (val x: Self) extends AnyVal {
+  implicit class _InitializeParamsMutableBuilder[Self <: _InitializeParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: ClientCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientInfo(value: Name): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
     
     @scala.inline
-    def setCapabilities(value: ClientCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setInitializationOptions(value: js.Any): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientInfo(value: Name): Self = this.set("clientInfo", value.asInstanceOf[js.Any])
+    def setInitializationOptionsUndefined: Self = StObject.set(x, "initializationOptions", js.undefined)
     
     @scala.inline
-    def deleteClientInfo: Self = this.set("clientInfo", js.undefined)
+    def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializationOptions(value: js.Any): Self = this.set("initializationOptions", value.asInstanceOf[js.Any])
+    def setProcessIdNull: Self = StObject.set(x, "processId", null)
     
     @scala.inline
-    def deleteInitializationOptions: Self = this.set("initializationOptions", js.undefined)
+    def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessId(value: Double): Self = this.set("processId", value.asInstanceOf[js.Any])
+    def setRootPathNull: Self = StObject.set(x, "rootPath", null)
     
     @scala.inline
-    def setProcessIdNull: Self = this.set("processId", null)
+    def setRootPathUndefined: Self = StObject.set(x, "rootPath", js.undefined)
     
     @scala.inline
-    def setRootPath(value: String): Self = this.set("rootPath", value.asInstanceOf[js.Any])
+    def setRootUri(value: DocumentUri): Self = StObject.set(x, "rootUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRootPath: Self = this.set("rootPath", js.undefined)
+    def setRootUriNull: Self = StObject.set(x, "rootUri", null)
     
     @scala.inline
-    def setRootPathNull: Self = this.set("rootPath", null)
+    def setTrace(value: off | messages | verbose): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootUri(value: DocumentUri): Self = this.set("rootUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRootUriNull: Self = this.set("rootUri", null)
-    
-    @scala.inline
-    def setTrace(value: off | messages | verbose): Self = this.set("trace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrace: Self = this.set("trace", js.undefined)
+    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
   }
 }

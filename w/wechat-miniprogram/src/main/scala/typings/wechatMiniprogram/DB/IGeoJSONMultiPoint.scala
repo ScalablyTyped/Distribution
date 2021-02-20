@@ -1,6 +1,7 @@
 package typings.wechatMiniprogram.DB
 
 import typings.wechatMiniprogram.wechatMiniprogramStrings.MultiPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object IGeoJSONMultiPoint {
   }
   
   @scala.inline
-  implicit class IGeoJSONMultiPointOps[Self <: IGeoJSONMultiPoint] (val x: Self) extends AnyVal {
+  implicit class IGeoJSONMultiPointMutableBuilder[Self <: IGeoJSONMultiPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordinates(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordinatesVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCoordinatesVarargs(value: (js.Tuple2[Double, Double])*): Self = this.set("coordinates", js.Array(value :_*))
-    
-    @scala.inline
-    def setCoordinates(value: js.Array[js.Tuple2[Double, Double]]): Self = this.set("coordinates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MultiPoint): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MultiPoint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

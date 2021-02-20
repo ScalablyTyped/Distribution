@@ -1,6 +1,7 @@
 package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The runtime logging config of the job.
   */
 @js.native
-trait SchemaLoggingConfig extends js.Object {
+trait SchemaLoggingConfig extends StObject {
   
   /**
     * The per-package log levels for the driver. This may include
@@ -28,24 +29,12 @@ object SchemaLoggingConfig {
   }
   
   @scala.inline
-  implicit class SchemaLoggingConfigOps[Self <: SchemaLoggingConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaLoggingConfigMutableBuilder[Self <: SchemaLoggingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriverLogLevels(value: StringDictionary[String]): Self = StObject.set(x, "driverLogLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDriverLogLevels(value: StringDictionary[String]): Self = this.set("driverLogLevels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriverLogLevels: Self = this.set("driverLogLevels", js.undefined)
+    def setDriverLogLevelsUndefined: Self = StObject.set(x, "driverLogLevels", js.undefined)
   }
 }

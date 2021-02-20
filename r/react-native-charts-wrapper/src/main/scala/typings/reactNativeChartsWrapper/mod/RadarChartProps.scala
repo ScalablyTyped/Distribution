@@ -1,5 +1,6 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,72 +35,60 @@ object RadarChartProps {
   }
   
   @scala.inline
-  implicit class RadarChartPropsOps[Self <: RadarChartProps] (val x: Self) extends AnyVal {
+  implicit class RadarChartPropsMutableBuilder[Self <: RadarChartProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: RadarData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawWeb(value: Boolean): Self = StObject.set(x, "drawWeb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: RadarData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDrawWebUndefined: Self = StObject.set(x, "drawWeb", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setSkipWebLineCount(value: Double): Self = StObject.set(x, "skipWebLineCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawWeb(value: Boolean): Self = this.set("drawWeb", value.asInstanceOf[js.Any])
+    def setSkipWebLineCountUndefined: Self = StObject.set(x, "skipWebLineCount", js.undefined)
     
     @scala.inline
-    def deleteDrawWeb: Self = this.set("drawWeb", js.undefined)
+    def setWebAlpha(value: Double): Self = StObject.set(x, "webAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipWebLineCount(value: Double): Self = this.set("skipWebLineCount", value.asInstanceOf[js.Any])
+    def setWebAlphaUndefined: Self = StObject.set(x, "webAlpha", js.undefined)
     
     @scala.inline
-    def deleteSkipWebLineCount: Self = this.set("skipWebLineCount", js.undefined)
+    def setWebColor(value: Color): Self = StObject.set(x, "webColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebAlpha(value: Double): Self = this.set("webAlpha", value.asInstanceOf[js.Any])
+    def setWebColorInner(value: Color): Self = StObject.set(x, "webColorInner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebAlpha: Self = this.set("webAlpha", js.undefined)
+    def setWebColorInnerUndefined: Self = StObject.set(x, "webColorInner", js.undefined)
     
     @scala.inline
-    def setWebColor(value: Color): Self = this.set("webColor", value.asInstanceOf[js.Any])
+    def setWebColorUndefined: Self = StObject.set(x, "webColor", js.undefined)
     
     @scala.inline
-    def deleteWebColor: Self = this.set("webColor", js.undefined)
+    def setWebLineWidth(value: Double): Self = StObject.set(x, "webLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebColorInner(value: Color): Self = this.set("webColorInner", value.asInstanceOf[js.Any])
+    def setWebLineWidthInner(value: Double): Self = StObject.set(x, "webLineWidthInner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebColorInner: Self = this.set("webColorInner", js.undefined)
+    def setWebLineWidthInnerUndefined: Self = StObject.set(x, "webLineWidthInner", js.undefined)
     
     @scala.inline
-    def setWebLineWidth(value: Double): Self = this.set("webLineWidth", value.asInstanceOf[js.Any])
+    def setWebLineWidthUndefined: Self = StObject.set(x, "webLineWidth", js.undefined)
     
     @scala.inline
-    def deleteWebLineWidth: Self = this.set("webLineWidth", js.undefined)
+    def setYAxis(value: yAxis): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebLineWidthInner(value: Double): Self = this.set("webLineWidthInner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebLineWidthInner: Self = this.set("webLineWidthInner", js.undefined)
-    
-    @scala.inline
-    def setYAxis(value: yAxis): Self = this.set("yAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxis: Self = this.set("yAxis", js.undefined)
+    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

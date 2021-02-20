@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SeccompProfile defines a pod/container's seccomp profile settings. Only one profile source may be set.
   */
 @js.native
-trait SeccompProfile extends js.Object {
+trait SeccompProfile extends StObject {
   
   /**
     * localhostProfile indicates a profile defined in a file on the node should be used. The profile must be preconfigured on the node to work. Must be a descending path, relative to the kubelet's configured seccomp profile location. Must only be set if type is "Localhost".
@@ -33,27 +34,15 @@ object SeccompProfile {
   }
   
   @scala.inline
-  implicit class SeccompProfileOps[Self <: SeccompProfile] (val x: Self) extends AnyVal {
+  implicit class SeccompProfileMutableBuilder[Self <: SeccompProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalhostProfile(value: Input[String]): Self = StObject.set(x, "localhostProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalhostProfileUndefined: Self = StObject.set(x, "localhostProfile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocalhostProfile(value: Input[String]): Self = this.set("localhostProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalhostProfile: Self = this.set("localhostProfile", js.undefined)
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

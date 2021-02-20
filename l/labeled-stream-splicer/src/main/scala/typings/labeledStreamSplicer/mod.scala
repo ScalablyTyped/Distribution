@@ -8,27 +8,48 @@ import typings.node.NodeJS.WritableStream
 import typings.node.anon.Chunk
 import typings.node.streamMod.TransformOptions
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("labeled-stream-splicer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("labeled-stream-splicer", JSImport.Namespace)
+  @js.native
   def apply(): splicer = js.native
+  @JSImport("labeled-stream-splicer", JSImport.Namespace)
+  @js.native
   def apply(streams: js.UndefOr[scala.Nothing], opts: TransformOptions): splicer = js.native
+  @JSImport("labeled-stream-splicer", JSImport.Namespace)
+  @js.native
   def apply(streams: LabeledStreamList): splicer = js.native
+  @JSImport("labeled-stream-splicer", JSImport.Namespace)
+  @js.native
   def apply(streams: LabeledStreamList, opts: TransformOptions): splicer = js.native
   
+  @JSImport("labeled-stream-splicer", "obj")
+  @js.native
   def obj(): splicer = js.native
+  @JSImport("labeled-stream-splicer", "obj")
+  @js.native
   def obj(streams: js.UndefOr[scala.Nothing], opts: TransformOptions): splicer = js.native
+  @JSImport("labeled-stream-splicer", "obj")
+  @js.native
   def obj(streams: LabeledStreamList): splicer = js.native
+  @JSImport("labeled-stream-splicer", "obj")
+  @js.native
   def obj(streams: LabeledStreamList, opts: TransformOptions): splicer = js.native
+  
+  type Index = Double | String
+  
+  type LabeledStreamList = js.Array[String | Stream | js.Array[Stream]]
+  
+  type Stream = ReadableStream | WritableStream | ReadWriteStream
   
   /* Inlined parent std.Omit<node.stream.Duplex, 'push' | 'unshift'> */
   @js.native
-  trait splicer extends js.Object {
+  trait splicer extends StObject {
     
     def _destroy(error: Error, callback: js.Function1[/* error */ Error | Null, Unit]): Unit = js.native
     @JSName("_destroy")
@@ -75,8 +96,6 @@ object mod extends js.Object {
     @JSName("cork")
     var cork_Original: js.Function0[Unit] = js.native
     
-    var defaultMaxListeners: js.UndefOr[js.Any] = js.native
-    
     def destroy(): Unit = js.native
     @JSName("destroy")
     var destroy_Original: js.Function0[Unit] = js.native
@@ -92,13 +111,9 @@ object mod extends js.Object {
     @JSName("end")
     var end_Original: js.Function0[Unit] = js.native
     
-    var errorMonitor: js.UndefOr[js.Any] = js.native
-    
     def eventNames(): js.Array[String | js.Symbol] = js.native
     @JSName("eventNames")
     var eventNames_Original: js.Function0[js.Array[String | js.Symbol]] = js.native
-    
-    var from: js.UndefOr[js.Any] = js.native
     
     def get(index: Index): js.UndefOr[Stream] = js.native
     
@@ -246,10 +261,4 @@ object mod extends js.Object {
     @JSName("write")
     var write_Original: js.Function1[/* chunk */ js.Any, Boolean] = js.native
   }
-  
-  type Index = Double | String
-  
-  type LabeledStreamList = js.Array[String | Stream | js.Array[Stream]]
-  
-  type Stream = ReadableStream | WritableStream | ReadWriteStream
 }

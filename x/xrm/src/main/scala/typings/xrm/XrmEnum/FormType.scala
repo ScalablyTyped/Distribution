@@ -8,6 +8,7 @@ import typings.xrm.xrmNumbers.`3`
 import typings.xrm.xrmNumbers.`4`
 import typings.xrm.xrmNumbers.`5`
 import typings.xrm.xrmNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmNumbers.`5`
   - typings.xrm.xrmNumbers.`11`
 */
-trait FormType extends js.Object
+trait FormType extends StObject
 object FormType {
   
   @scala.inline

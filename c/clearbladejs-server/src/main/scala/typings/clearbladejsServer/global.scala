@@ -3,27 +3,28 @@ package typings.clearbladejsServer
 import typings.clearbladejsServer.CbServer.ClearBladeGlobal
 import typings.clearbladejsServer.CbServer.ReqTypes
 import typings.clearbladejsServer.CbServer.Resp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var ClearBlade: ClearBladeGlobal = js.native
-  
-  @js.native
-  object CbServer extends js.Object {
+  object CbServer {
     
-    var ClearBlade: ClearBladeGlobal = js.native
-    
-    var req: ReqTypes = js.native
-    
-    var resp: Resp = js.native
-    
+    @JSGlobal("CbServer")
     @js.native
-    object MessagingQOS extends js.Object {
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("CbServer.ClearBlade")
+    @js.native
+    def ClearBlade: ClearBladeGlobal = js.native
+    @scala.inline
+    def ClearBlade_=(x: ClearBladeGlobal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("CbServer.MessagingQOS")
+    @js.native
+    object MessagingQOS extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.clearbladejsServer.CbServer.MessagingQOS with Double] = js.native
@@ -35,8 +36,9 @@ object global extends js.Object {
       /* 2 */ val MESSAGING_QOS_EXACTLY_ONCE: typings.clearbladejsServer.CbServer.MessagingQOS.MESSAGING_QOS_EXACTLY_ONCE with Double = js.native
     }
     
+    @JSGlobal("CbServer.QueryConditions")
     @js.native
-    object QueryConditions extends js.Object {
+    object QueryConditions extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.clearbladejsServer.CbServer.QueryConditions with String] = js.native
@@ -56,8 +58,9 @@ object global extends js.Object {
       /* "NEQ" */ val QUERY_NOTEQUAL: typings.clearbladejsServer.CbServer.QueryConditions.QUERY_NOTEQUAL with String = js.native
     }
     
+    @JSGlobal("CbServer.QuerySortDirections")
     @js.native
-    object QuerySortDirections extends js.Object {
+    object QuerySortDirections extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.clearbladejsServer.CbServer.QuerySortDirections with String] = js.native
@@ -67,8 +70,9 @@ object global extends js.Object {
       /* "DESC" */ val QUERY_SORT_DESCENDING: typings.clearbladejsServer.CbServer.QuerySortDirections.QUERY_SORT_DESCENDING with String = js.native
     }
     
+    @JSGlobal("CbServer.TriggerModule")
     @js.native
-    object TriggerModule extends js.Object {
+    object TriggerModule extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.clearbladejsServer.CbServer.TriggerModule with String] = js.native
@@ -81,5 +85,23 @@ object global extends js.Object {
       
       /* "User" */ val USER: typings.clearbladejsServer.CbServer.TriggerModule.USER with String = js.native
     }
+    
+    @JSGlobal("CbServer.req")
+    @js.native
+    def req: ReqTypes = js.native
+    @scala.inline
+    def req_=(x: ReqTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("CbServer.resp")
+    @js.native
+    def resp: Resp = js.native
+    @scala.inline
+    def resp_=(x: Resp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resp")(x.asInstanceOf[js.Any])
   }
+  
+  @JSGlobal("ClearBlade")
+  @js.native
+  def ClearBlade: ClearBladeGlobal = js.native
+  @scala.inline
+  def ClearBlade_=(x: ClearBladeGlobal): Unit = js.Dynamic.global.updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
 }

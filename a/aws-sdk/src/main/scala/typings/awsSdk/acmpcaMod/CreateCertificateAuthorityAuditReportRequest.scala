@@ -1,11 +1,12 @@
 package typings.awsSdk.acmpcaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCertificateAuthorityAuditReportRequest extends js.Object {
+trait CreateCertificateAuthorityAuditReportRequest extends StObject {
   
   /**
     * The format in which to create the report. This can be either JSON or CSV.
@@ -35,27 +36,15 @@ object CreateCertificateAuthorityAuditReportRequest {
   }
   
   @scala.inline
-  implicit class CreateCertificateAuthorityAuditReportRequestOps[Self <: CreateCertificateAuthorityAuditReportRequest] (val x: Self) extends AnyVal {
+  implicit class CreateCertificateAuthorityAuditReportRequestMutableBuilder[Self <: CreateCertificateAuthorityAuditReportRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditReportResponseFormat(value: AuditReportResponseFormat): Self = StObject.set(x, "AuditReportResponseFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuditReportResponseFormat(value: AuditReportResponseFormat): Self = this.set("AuditReportResponseFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
   }
 }

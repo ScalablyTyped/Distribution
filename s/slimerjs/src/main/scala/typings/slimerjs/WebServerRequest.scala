@@ -1,12 +1,13 @@
 package typings.slimerjs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebServerRequest extends js.Object {
+trait WebServerRequest extends StObject {
   
   var headers: StringDictionary[String] = js.native
   
@@ -36,36 +37,24 @@ object WebServerRequest {
   }
   
   @scala.inline
-  implicit class WebServerRequestOps[Self <: WebServerRequest] (val x: Self) extends AnyVal {
+  implicit class WebServerRequestMutableBuilder[Self <: WebServerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpVersion(value: Double): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpVersion(value: Double): Self = this.set("httpVersion", value.asInstanceOf[js.Any])
+    def setPostRaw(value: String): Self = StObject.set(x, "postRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPost(value: String): Self = this.set("post", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostRaw(value: String): Self = this.set("postRaw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

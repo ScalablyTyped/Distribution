@@ -1,13 +1,13 @@
 package typings.awsSdkClientCognitoIdentityBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity-browser/model/_IdentityPoolShortDescription", JSImport.Namespace)
-@js.native
-object identityPoolShortDescriptionMod extends js.Object {
+object identityPoolShortDescriptionMod {
   
-  @JSName("_IdentityPoolShortDescription")
+  @JSImport("@aws-sdk/client-cognito-identity-browser/model/_IdentityPoolShortDescription", "_IdentityPoolShortDescription")
+  @js.native
   val IdentityPoolShortDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

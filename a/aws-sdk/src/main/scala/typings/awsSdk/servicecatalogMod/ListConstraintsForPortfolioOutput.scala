@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListConstraintsForPortfolioOutput extends js.Object {
+trait ListConstraintsForPortfolioOutput extends StObject {
   
   /**
     * Information about the constraints.
@@ -26,33 +27,21 @@ object ListConstraintsForPortfolioOutput {
   }
   
   @scala.inline
-  implicit class ListConstraintsForPortfolioOutputOps[Self <: ListConstraintsForPortfolioOutput] (val x: Self) extends AnyVal {
+  implicit class ListConstraintsForPortfolioOutputMutableBuilder[Self <: ListConstraintsForPortfolioOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraintDetails(value: ConstraintDetails): Self = StObject.set(x, "ConstraintDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintDetailsUndefined: Self = StObject.set(x, "ConstraintDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstraintDetailsVarargs(value: ConstraintDetail*): Self = StObject.set(x, "ConstraintDetails", js.Array(value :_*))
     
     @scala.inline
-    def setConstraintDetailsVarargs(value: ConstraintDetail*): Self = this.set("ConstraintDetails", js.Array(value :_*))
+    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraintDetails(value: ConstraintDetails): Self = this.set("ConstraintDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConstraintDetails: Self = this.set("ConstraintDetails", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
   }
 }

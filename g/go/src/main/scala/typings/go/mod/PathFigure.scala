@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {boolean=} filled optional: whether the figure is filled (default is true).
   * @param {boolean=} shadowed optional: whether the figure may be drawn with a shadow (default is true).
   */
-class PathFigure () extends js.Object {
+class PathFigure () extends StObject {
   def this(sx: Double) = this()
   def this(sx: js.UndefOr[scala.Nothing], sy: Double) = this()
   def this(sx: Double, sy: Double) = this()

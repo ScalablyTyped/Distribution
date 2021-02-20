@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.created
 import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,44 +56,32 @@ object FetchResourcesParams {
   }
   
   @scala.inline
-  implicit class FetchResourcesParamsOps[Self <: FetchResourcesParams] (val x: Self) extends AnyVal {
+  implicit class FetchResourcesParamsMutableBuilder[Self <: FetchResourcesParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNum(value: Double): Self = this.set("num", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNum: Self = this.set("num", js.undefined)
+    def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
     
     @scala.inline
     def setSortField(
       value: created | typings.arcgisJsApi.arcgisJsApiStrings.size | typings.arcgisJsApi.arcgisJsApiStrings.`type`
-    ): Self = this.set("sortField", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortField: Self = this.set("sortField", js.undefined)
+    def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
     
     @scala.inline
-    def setSortOrder(value: asc_ | desc_): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    def setSortOrder(value: asc_ | desc_): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

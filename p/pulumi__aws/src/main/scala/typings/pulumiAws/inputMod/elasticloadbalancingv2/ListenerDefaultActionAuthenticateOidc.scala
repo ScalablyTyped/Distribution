@@ -2,12 +2,13 @@ package typings.pulumiAws.inputMod.elasticloadbalancingv2
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListenerDefaultActionAuthenticateOidc extends js.Object {
+trait ListenerDefaultActionAuthenticateOidc extends StObject {
   
   /**
     * The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
@@ -80,66 +81,54 @@ object ListenerDefaultActionAuthenticateOidc {
   }
   
   @scala.inline
-  implicit class ListenerDefaultActionAuthenticateOidcOps[Self <: ListenerDefaultActionAuthenticateOidc] (val x: Self) extends AnyVal {
+  implicit class ListenerDefaultActionAuthenticateOidcMutableBuilder[Self <: ListenerDefaultActionAuthenticateOidc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationRequestExtraParams(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "authenticationRequestExtraParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationRequestExtraParamsUndefined: Self = StObject.set(x, "authenticationRequestExtraParams", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizationEndpoint(value: Input[String]): Self = StObject.set(x, "authorizationEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationEndpoint(value: Input[String]): Self = this.set("authorizationEndpoint", value.asInstanceOf[js.Any])
+    def setClientId(value: Input[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: Input[String]): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setClientSecret(value: Input[String]): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientSecret(value: Input[String]): Self = this.set("clientSecret", value.asInstanceOf[js.Any])
+    def setIssuer(value: Input[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: Input[String]): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setOnUnauthenticatedRequest(value: Input[String]): Self = StObject.set(x, "onUnauthenticatedRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenEndpoint(value: Input[String]): Self = this.set("tokenEndpoint", value.asInstanceOf[js.Any])
+    def setOnUnauthenticatedRequestUndefined: Self = StObject.set(x, "onUnauthenticatedRequest", js.undefined)
     
     @scala.inline
-    def setUserInfoEndpoint(value: Input[String]): Self = this.set("userInfoEndpoint", value.asInstanceOf[js.Any])
+    def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationRequestExtraParams(value: Input[StringDictionary[Input[String]]]): Self = this.set("authenticationRequestExtraParams", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationRequestExtraParams: Self = this.set("authenticationRequestExtraParams", js.undefined)
+    def setSessionCookieName(value: Input[String]): Self = StObject.set(x, "sessionCookieName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUnauthenticatedRequest(value: Input[String]): Self = this.set("onUnauthenticatedRequest", value.asInstanceOf[js.Any])
+    def setSessionCookieNameUndefined: Self = StObject.set(x, "sessionCookieName", js.undefined)
     
     @scala.inline
-    def deleteOnUnauthenticatedRequest: Self = this.set("onUnauthenticatedRequest", js.undefined)
+    def setSessionTimeout(value: Input[Double]): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: Input[String]): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setTokenEndpoint(value: Input[String]): Self = StObject.set(x, "tokenEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionCookieName(value: Input[String]): Self = this.set("sessionCookieName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionCookieName: Self = this.set("sessionCookieName", js.undefined)
-    
-    @scala.inline
-    def setSessionTimeout(value: Input[Double]): Self = this.set("sessionTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionTimeout: Self = this.set("sessionTimeout", js.undefined)
+    def setUserInfoEndpoint(value: Input[String]): Self = StObject.set(x, "userInfoEndpoint", value.asInstanceOf[js.Any])
   }
 }

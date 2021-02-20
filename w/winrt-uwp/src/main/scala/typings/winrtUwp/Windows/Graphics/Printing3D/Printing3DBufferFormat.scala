@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Printing3DBufferFormat extends js.Object
+sealed trait Printing3DBufferFormat extends StObject
 /** Specifies the format used by the buffer. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DBufferFormat")
 @js.native
-object Printing3DBufferFormat extends js.Object {
+object Printing3DBufferFormat extends StObject {
   
   /** A buffer of type double. */
   @js.native

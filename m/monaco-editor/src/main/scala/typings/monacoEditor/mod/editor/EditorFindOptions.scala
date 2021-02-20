@@ -3,13 +3,14 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.monacoEditorStrings.always
 import typings.monacoEditor.monacoEditorStrings.multiline
 import typings.monacoEditor.monacoEditorStrings.never
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IEditorFindOptions>> */
 @js.native
-trait EditorFindOptions extends js.Object {
+trait EditorFindOptions extends StObject {
   
   val addExtraSpaceOnTop: Boolean = js.native
   
@@ -36,33 +37,21 @@ object EditorFindOptions {
   }
   
   @scala.inline
-  implicit class EditorFindOptionsOps[Self <: EditorFindOptions] (val x: Self) extends AnyVal {
+  implicit class EditorFindOptionsMutableBuilder[Self <: EditorFindOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddExtraSpaceOnTop(value: Boolean): Self = StObject.set(x, "addExtraSpaceOnTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFindInSelection(value: never | always | multiline): Self = StObject.set(x, "autoFindInSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCursorMoveOnType(value: Boolean): Self = StObject.set(x, "cursorMoveOnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddExtraSpaceOnTop(value: Boolean): Self = this.set("addExtraSpaceOnTop", value.asInstanceOf[js.Any])
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFindInSelection(value: never | always | multiline): Self = this.set("autoFindInSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCursorMoveOnType(value: Boolean): Self = this.set("cursorMoveOnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeedSearchStringFromSelection(value: Boolean): Self = this.set("seedSearchStringFromSelection", value.asInstanceOf[js.Any])
+    def setSeedSearchStringFromSelection(value: Boolean): Self = StObject.set(x, "seedSearchStringFromSelection", value.asInstanceOf[js.Any])
   }
 }

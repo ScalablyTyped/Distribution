@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines a section in the document.
   */
 @js.native
-trait Section extends js.Object {
+trait Section extends StObject {
   
   /**
     * Provides access to the section's footers.
@@ -50,39 +51,27 @@ object Section {
   }
   
   @scala.inline
-  implicit class SectionOps[Self <: Section] (val x: Self) extends AnyVal {
+  implicit class SectionMutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFooters(value: js.Array[HeaderFooter]): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFootersVarargs(value: HeaderFooter*): Self = StObject.set(x, "footers", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: js.Array[HeaderFooter]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootersVarargs(value: HeaderFooter*): Self = this.set("footers", js.Array(value :_*))
+    def setHeadersVarargs(value: HeaderFooter*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setFooters(value: js.Array[HeaderFooter]): Self = this.set("footers", value.asInstanceOf[js.Any])
+    def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersVarargs(value: HeaderFooter*): Self = this.set("headers", js.Array(value :_*))
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Array[HeaderFooter]): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterval(value: Interval): Self = this.set("interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

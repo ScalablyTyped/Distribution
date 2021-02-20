@@ -1,11 +1,12 @@
 package typings.awsSdk.ebsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompleteSnapshotRequest extends js.Object {
+trait CompleteSnapshotRequest extends StObject {
   
   /**
     * The number of blocks that were written to the snapshot.
@@ -41,42 +42,30 @@ object CompleteSnapshotRequest {
   }
   
   @scala.inline
-  implicit class CompleteSnapshotRequestOps[Self <: CompleteSnapshotRequest] (val x: Self) extends AnyVal {
+  implicit class CompleteSnapshotRequestMutableBuilder[Self <: CompleteSnapshotRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangedBlocksCount(value: ChangedBlocksCount): Self = StObject.set(x, "ChangedBlocksCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChecksum(value: Checksum): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChecksumAggregationMethod(value: ChecksumAggregationMethod): Self = StObject.set(x, "ChecksumAggregationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedBlocksCount(value: ChangedBlocksCount): Self = this.set("ChangedBlocksCount", value.asInstanceOf[js.Any])
+    def setChecksumAggregationMethodUndefined: Self = StObject.set(x, "ChecksumAggregationMethod", js.undefined)
     
     @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksum(value: Checksum): Self = this.set("Checksum", value.asInstanceOf[js.Any])
+    def setChecksumAlgorithmUndefined: Self = StObject.set(x, "ChecksumAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteChecksum: Self = this.set("Checksum", js.undefined)
+    def setChecksumUndefined: Self = StObject.set(x, "Checksum", js.undefined)
     
     @scala.inline
-    def setChecksumAggregationMethod(value: ChecksumAggregationMethod): Self = this.set("ChecksumAggregationMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChecksumAggregationMethod: Self = this.set("ChecksumAggregationMethod", js.undefined)
-    
-    @scala.inline
-    def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = this.set("ChecksumAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChecksumAlgorithm: Self = this.set("ChecksumAlgorithm", js.undefined)
+    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
   }
 }

@@ -9,12 +9,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.`strict-origin`
 import typings.devtoolsProtocol.devtoolsProtocolStrings.`unsafe-url`
 import typings.devtoolsProtocol.devtoolsProtocolStrings.origin
 import typings.devtoolsProtocol.mod.Protocol.Security.MixedContentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Request extends js.Object {
+trait Request extends StObject {
   
   /**
     * True when the request has POST data. Note that postData might still be omitted when this flag is true when the data is too long.
@@ -92,80 +93,68 @@ object Request {
   }
   
   @scala.inline
-  implicit class RequestOps[Self <: Request] (val x: Self) extends AnyVal {
+  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasPostData(value: Boolean): Self = StObject.set(x, "hasPostData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasPostDataUndefined: Self = StObject.set(x, "hasPostData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setInitialPriority(value: ResourcePriority): Self = StObject.set(x, "initialPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialPriority(value: ResourcePriority): Self = this.set("initialPriority", value.asInstanceOf[js.Any])
+    def setIsLinkPreload(value: Boolean): Self = StObject.set(x, "isLinkPreload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setIsLinkPreloadUndefined: Self = StObject.set(x, "isLinkPreload", js.undefined)
+    
+    @scala.inline
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMixedContentType(value: MixedContentType): Self = StObject.set(x, "mixedContentType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMixedContentTypeUndefined: Self = StObject.set(x, "mixedContentType", js.undefined)
+    
+    @scala.inline
+    def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPostDataEntries(value: js.Array[PostDataEntry]): Self = StObject.set(x, "postDataEntries", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPostDataEntriesUndefined: Self = StObject.set(x, "postDataEntries", js.undefined)
+    
+    @scala.inline
+    def setPostDataEntriesVarargs(value: PostDataEntry*): Self = StObject.set(x, "postDataEntries", js.Array(value :_*))
+    
+    @scala.inline
+    def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     
     @scala.inline
     def setReferrerPolicy(
       value: `unsafe-url` | `no-referrer-when-downgrade` | `no-referrer` | origin | `origin-when-cross-origin` | `same-origin` | `strict-origin` | `strict-origin-when-cross-origin`
-    ): Self = this.set("referrerPolicy", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTrustTokenParams(value: TrustTokenParams): Self = StObject.set(x, "trustTokenParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPostData(value: Boolean): Self = this.set("hasPostData", value.asInstanceOf[js.Any])
+    def setTrustTokenParamsUndefined: Self = StObject.set(x, "trustTokenParams", js.undefined)
     
     @scala.inline
-    def deleteHasPostData: Self = this.set("hasPostData", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLinkPreload(value: Boolean): Self = this.set("isLinkPreload", value.asInstanceOf[js.Any])
+    def setUrlFragment(value: String): Self = StObject.set(x, "urlFragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsLinkPreload: Self = this.set("isLinkPreload", js.undefined)
-    
-    @scala.inline
-    def setMixedContentType(value: MixedContentType): Self = this.set("mixedContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMixedContentType: Self = this.set("mixedContentType", js.undefined)
-    
-    @scala.inline
-    def setPostData(value: String): Self = this.set("postData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostData: Self = this.set("postData", js.undefined)
-    
-    @scala.inline
-    def setPostDataEntriesVarargs(value: PostDataEntry*): Self = this.set("postDataEntries", js.Array(value :_*))
-    
-    @scala.inline
-    def setPostDataEntries(value: js.Array[PostDataEntry]): Self = this.set("postDataEntries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostDataEntries: Self = this.set("postDataEntries", js.undefined)
-    
-    @scala.inline
-    def setTrustTokenParams(value: TrustTokenParams): Self = this.set("trustTokenParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustTokenParams: Self = this.set("trustTokenParams", js.undefined)
-    
-    @scala.inline
-    def setUrlFragment(value: String): Self = this.set("urlFragment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlFragment: Self = this.set("urlFragment", js.undefined)
+    def setUrlFragmentUndefined: Self = StObject.set(x, "urlFragment", js.undefined)
   }
 }

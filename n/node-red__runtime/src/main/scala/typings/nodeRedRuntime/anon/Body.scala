@@ -1,11 +1,12 @@
 package typings.nodeRedRuntime.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Body extends js.Object {
+trait Body extends StObject {
   
   var body: String = js.native
   
@@ -29,39 +30,27 @@ object Body {
   }
   
   @scala.inline
-  implicit class BodyOps[Self <: Body] (val x: Self) extends AnyVal {
+  implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLibrary(value: String): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLibrary(value: String): Self = this.set("library", value.asInstanceOf[js.Any])
+    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Object): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReq(value: js.Object): Self = this.set("req", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReq: Self = this.set("req", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -329,87 +330,75 @@ object XAccessibleText {
   }
   
   @scala.inline
-  implicit class XAccessibleTextOps[Self <: XAccessibleText] (val x: Self) extends AnyVal {
+  implicit class XAccessibleTextMutableBuilder[Self <: XAccessibleText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaretPosition(value: Double): Self = StObject.set(x, "CaretPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharacterCount(value: Double): Self = StObject.set(x, "CharacterCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyText(value: (Double, Double) => Boolean): Self = StObject.set(x, "copyText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCaretPosition(value: Double): Self = this.set("CaretPosition", value.asInstanceOf[js.Any])
+    def setGetCaretPosition(value: () => Double): Self = StObject.set(x, "getCaretPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCharacterCount(value: Double): Self = this.set("CharacterCount", value.asInstanceOf[js.Any])
+    def setGetCharacter(value: Double => String): Self = StObject.set(x, "getCharacter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectedText(value: String): Self = this.set("SelectedText", value.asInstanceOf[js.Any])
+    def setGetCharacterAttributes(value: (Double, SeqEquiv[String]) => SafeArray[PropertyValue]): Self = StObject.set(x, "getCharacterAttributes", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelectionEnd(value: Double): Self = this.set("SelectionEnd", value.asInstanceOf[js.Any])
+    def setGetCharacterBounds(value: Double => Rectangle): Self = StObject.set(x, "getCharacterBounds", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectionStart(value: Double): Self = this.set("SelectionStart", value.asInstanceOf[js.Any])
+    def setGetCharacterCount(value: () => Double): Self = StObject.set(x, "getCharacterCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setGetIndexAtPoint(value: Point => Double): Self = StObject.set(x, "getIndexAtPoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopyText(value: (Double, Double) => Boolean): Self = this.set("copyText", js.Any.fromFunction2(value))
+    def setGetSelectedText(value: () => String): Self = StObject.set(x, "getSelectedText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCaretPosition(value: () => Double): Self = this.set("getCaretPosition", js.Any.fromFunction0(value))
+    def setGetSelectionEnd(value: () => Double): Self = StObject.set(x, "getSelectionEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCharacter(value: Double => String): Self = this.set("getCharacter", js.Any.fromFunction1(value))
+    def setGetSelectionStart(value: () => Double): Self = StObject.set(x, "getSelectionStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCharacterAttributes(value: (Double, SeqEquiv[String]) => SafeArray[PropertyValue]): Self = this.set("getCharacterAttributes", js.Any.fromFunction2(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCharacterBounds(value: Double => Rectangle): Self = this.set("getCharacterBounds", js.Any.fromFunction1(value))
+    def setGetTextAtIndex(value: (Double, Double) => TextSegment): Self = StObject.set(x, "getTextAtIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCharacterCount(value: () => Double): Self = this.set("getCharacterCount", js.Any.fromFunction0(value))
+    def setGetTextBeforeIndex(value: (Double, Double) => TextSegment): Self = StObject.set(x, "getTextBeforeIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetIndexAtPoint(value: Point => Double): Self = this.set("getIndexAtPoint", js.Any.fromFunction1(value))
+    def setGetTextBehindIndex(value: (Double, Double) => TextSegment): Self = StObject.set(x, "getTextBehindIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSelectedText(value: () => String): Self = this.set("getSelectedText", js.Any.fromFunction0(value))
+    def setGetTextRange(value: (Double, Double) => String): Self = StObject.set(x, "getTextRange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSelectionEnd(value: () => Double): Self = this.set("getSelectionEnd", js.Any.fromFunction0(value))
+    def setSelectedText(value: String): Self = StObject.set(x, "SelectedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSelectionStart(value: () => Double): Self = this.set("getSelectionStart", js.Any.fromFunction0(value))
+    def setSelectionEnd(value: Double): Self = StObject.set(x, "SelectionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setSelectionStart(value: Double): Self = StObject.set(x, "SelectionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTextAtIndex(value: (Double, Double) => TextSegment): Self = this.set("getTextAtIndex", js.Any.fromFunction2(value))
+    def setSetCaretPosition(value: Double => Boolean): Self = StObject.set(x, "setCaretPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTextBeforeIndex(value: (Double, Double) => TextSegment): Self = this.set("getTextBeforeIndex", js.Any.fromFunction2(value))
+    def setSetSelection(value: (Double, Double) => Boolean): Self = StObject.set(x, "setSelection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetTextBehindIndex(value: (Double, Double) => TextSegment): Self = this.set("getTextBehindIndex", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetTextRange(value: (Double, Double) => String): Self = this.set("getTextRange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetCaretPosition(value: Double => Boolean): Self = this.set("setCaretPosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSelection(value: (Double, Double) => Boolean): Self = this.set("setSelection", js.Any.fromFunction2(value))
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

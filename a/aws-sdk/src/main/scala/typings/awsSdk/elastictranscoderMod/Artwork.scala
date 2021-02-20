@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Artwork extends js.Object {
+trait Artwork extends StObject {
   
   /**
     * The format of album art, if any. Valid formats are .jpg and .png.
@@ -51,60 +52,48 @@ object Artwork {
   }
   
   @scala.inline
-  implicit class ArtworkOps[Self <: Artwork] (val x: Self) extends AnyVal {
+  implicit class ArtworkMutableBuilder[Self <: Artwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbumArtFormat(value: JpgOrPng): Self = StObject.set(x, "AlbumArtFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbumArtFormatUndefined: Self = StObject.set(x, "AlbumArtFormat", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumArtFormat(value: JpgOrPng): Self = this.set("AlbumArtFormat", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def deleteAlbumArtFormat: Self = this.set("AlbumArtFormat", js.undefined)
+    def setInputKey(value: WatermarkKey): Self = StObject.set(x, "InputKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setInputKeyUndefined: Self = StObject.set(x, "InputKey", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setMaxHeight(value: DigitsOrAuto): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputKey(value: WatermarkKey): Self = this.set("InputKey", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
     
     @scala.inline
-    def deleteInputKey: Self = this.set("InputKey", js.undefined)
+    def setMaxWidth(value: DigitsOrAuto): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: DigitsOrAuto): Self = this.set("MaxHeight", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("MaxHeight", js.undefined)
+    def setPaddingPolicy(value: PaddingPolicy): Self = StObject.set(x, "PaddingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: DigitsOrAuto): Self = this.set("MaxWidth", value.asInstanceOf[js.Any])
+    def setPaddingPolicyUndefined: Self = StObject.set(x, "PaddingPolicy", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("MaxWidth", js.undefined)
+    def setSizingPolicy(value: SizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingPolicy(value: PaddingPolicy): Self = this.set("PaddingPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingPolicy: Self = this.set("PaddingPolicy", js.undefined)
-    
-    @scala.inline
-    def setSizingPolicy(value: SizingPolicy): Self = this.set("SizingPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizingPolicy: Self = this.set("SizingPolicy", js.undefined)
+    def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
   }
 }

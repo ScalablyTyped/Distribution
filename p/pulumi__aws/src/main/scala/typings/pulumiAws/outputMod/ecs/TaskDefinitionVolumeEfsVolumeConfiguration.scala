@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ecs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskDefinitionVolumeEfsVolumeConfiguration extends js.Object {
+trait TaskDefinitionVolumeEfsVolumeConfiguration extends StObject {
   
   /**
     * The authorization configuration details for the Amazon EFS file system.
@@ -41,45 +42,33 @@ object TaskDefinitionVolumeEfsVolumeConfiguration {
   }
   
   @scala.inline
-  implicit class TaskDefinitionVolumeEfsVolumeConfigurationOps[Self <: TaskDefinitionVolumeEfsVolumeConfiguration] (val x: Self) extends AnyVal {
+  implicit class TaskDefinitionVolumeEfsVolumeConfigurationMutableBuilder[Self <: TaskDefinitionVolumeEfsVolumeConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationConfig(value: TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemId(value: String): Self = this.set("fileSystemId", value.asInstanceOf[js.Any])
+    def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationConfig(value: TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig): Self = this.set("authorizationConfig", value.asInstanceOf[js.Any])
+    def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationConfig: Self = this.set("authorizationConfig", js.undefined)
+    def setTransitEncryption(value: String): Self = StObject.set(x, "transitEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootDirectory(value: String): Self = this.set("rootDirectory", value.asInstanceOf[js.Any])
+    def setTransitEncryptionPort(value: Double): Self = StObject.set(x, "transitEncryptionPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRootDirectory: Self = this.set("rootDirectory", js.undefined)
+    def setTransitEncryptionPortUndefined: Self = StObject.set(x, "transitEncryptionPort", js.undefined)
     
     @scala.inline
-    def setTransitEncryption(value: String): Self = this.set("transitEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitEncryption: Self = this.set("transitEncryption", js.undefined)
-    
-    @scala.inline
-    def setTransitEncryptionPort(value: Double): Self = this.set("transitEncryptionPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitEncryptionPort: Self = this.set("transitEncryptionPort", js.undefined)
+    def setTransitEncryptionUndefined: Self = StObject.set(x, "transitEncryption", js.undefined)
   }
 }

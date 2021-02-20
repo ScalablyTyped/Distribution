@@ -1,11 +1,12 @@
 package typings.jwplayer.jwplayer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdCompanionsParam extends js.Object {
+trait AdCompanionsParam extends StObject {
   
   var companions: js.Array[_] = js.native
   
@@ -20,27 +21,15 @@ object AdCompanionsParam {
   }
   
   @scala.inline
-  implicit class AdCompanionsParamOps[Self <: AdCompanionsParam] (val x: Self) extends AnyVal {
+  implicit class AdCompanionsParamMutableBuilder[Self <: AdCompanionsParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanions(value: js.Array[_]): Self = StObject.set(x, "companions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompanionsVarargs(value: js.Any*): Self = StObject.set(x, "companions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompanionsVarargs(value: js.Any*): Self = this.set("companions", js.Array(value :_*))
-    
-    @scala.inline
-    def setCompanions(value: js.Array[_]): Self = this.set("companions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

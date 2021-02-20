@@ -1,6 +1,6 @@
 package typings.asana.mod.auth
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,6 +44,28 @@ trait BaseBrowserFlow extends Flow {
     */
   def startAuthorization(authUrl: String, state: String): js.Any = js.native
 }
-@JSImport("asana", "auth.BaseBrowserFlow")
-@js.native
-object BaseBrowserFlow extends TopLevel[BaseBrowserFlowStatic]
+object BaseBrowserFlow {
+  
+  @JSImport("asana", "auth.BaseBrowserFlow")
+  @js.native
+  val ^ : BaseBrowserFlowStatic = js.native
+  
+  @scala.inline
+  implicit class BaseBrowserFlowMutableBuilder[Self <: BaseBrowserFlow] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAsanaBaseUrl(value: () => String): Self = StObject.set(x, "asanaBaseUrl", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setFinishAuthorization(value: String => Unit): Self = StObject.set(x, "finishAuthorization", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGetStateParam(value: () => String): Self = StObject.set(x, "getStateParam", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setReceiverUrl(value: () => String): Self = StObject.set(x, "receiverUrl", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setStartAuthorization(value: (String, String) => js.Any): Self = StObject.set(x, "startAuthorization", js.Any.fromFunction2(value))
+  }
+}

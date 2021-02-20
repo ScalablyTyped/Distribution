@@ -1,11 +1,12 @@
 package typings.expoLocation.locationTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationGeocodingOptions extends js.Object {
+trait LocationGeocodingOptions extends StObject {
   
   /**
     * Whether to force using Google Maps API instead of the native implementation.
@@ -22,24 +23,12 @@ object LocationGeocodingOptions {
   }
   
   @scala.inline
-  implicit class LocationGeocodingOptionsOps[Self <: LocationGeocodingOptions] (val x: Self) extends AnyVal {
+  implicit class LocationGeocodingOptionsMutableBuilder[Self <: LocationGeocodingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUseGoogleMaps(value: Boolean): Self = StObject.set(x, "useGoogleMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUseGoogleMaps(value: Boolean): Self = this.set("useGoogleMaps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseGoogleMaps: Self = this.set("useGoogleMaps", js.undefined)
+    def setUseGoogleMapsUndefined: Self = StObject.set(x, "useGoogleMaps", js.undefined)
   }
 }

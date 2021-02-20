@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a client-side equivalent of the splitter's SplitterPane object.
   */
 @js.native
-trait ASPxClientSplitterPane extends js.Object {
+trait ASPxClientSplitterPane extends StObject {
   
   /**
     * Collapses the current pane and occupies its space by maximizing the specified pane. true if the current pane has been collapsed successfully; otherwise, false.

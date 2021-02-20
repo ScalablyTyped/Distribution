@@ -1,5 +1,6 @@
 package typings.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 // chayns.register()
 @js.native
-trait RegisterConfig extends js.Object {
+trait RegisterConfig extends StObject {
   
   var appName: js.UndefOr[String] = js.native
   
@@ -34,54 +35,42 @@ object RegisterConfig {
   }
   
   @scala.inline
-  implicit class RegisterConfigOps[Self <: RegisterConfig] (val x: Self) extends AnyVal {
+  implicit class RegisterConfigMutableBuilder[Self <: RegisterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
+    def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
     
     @scala.inline
-    def deleteAppName: Self = this.set("appName", js.undefined)
+    def setCallbackPrefix(value: String): Self = StObject.set(x, "callbackPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResize(value: Boolean): Self = this.set("autoResize", value.asInstanceOf[js.Any])
+    def setCallbackPrefixUndefined: Self = StObject.set(x, "callbackPrefix", js.undefined)
     
     @scala.inline
-    def deleteAutoResize: Self = this.set("autoResize", js.undefined)
+    def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackPrefix(value: String): Self = this.set("callbackPrefix", value.asInstanceOf[js.Any])
+    def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
     
     @scala.inline
-    def deleteCallbackPrefix: Self = this.set("callbackPrefix", js.undefined)
+    def setInitialHeight(value: Double): Self = StObject.set(x, "initialHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssPrefix(value: String): Self = this.set("cssPrefix", value.asInstanceOf[js.Any])
+    def setInitialHeightUndefined: Self = StObject.set(x, "initialHeight", js.undefined)
     
     @scala.inline
-    def deleteCssPrefix: Self = this.set("cssPrefix", js.undefined)
+    def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialHeight(value: Double): Self = this.set("initialHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialHeight: Self = this.set("initialHeight", js.undefined)
-    
-    @scala.inline
-    def setStrictMode(value: Boolean): Self = this.set("strictMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictMode: Self = this.set("strictMode", js.undefined)
+    def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
   }
 }

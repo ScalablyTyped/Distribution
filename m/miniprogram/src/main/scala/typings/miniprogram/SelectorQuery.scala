@@ -1,11 +1,12 @@
 package typings.miniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectorQuery extends js.Object {
+trait SelectorQuery extends StObject {
   
   /**
     * Put the location of the current selected node into the query
@@ -74,36 +75,24 @@ object SelectorQuery {
   }
   
   @scala.inline
-  implicit class SelectorQueryOps[Self <: SelectorQuery] (val x: Self) extends AnyVal {
+  implicit class SelectorQueryMutableBuilder[Self <: SelectorQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingClientRect(value: () => SelectorQuery): Self = StObject.set(x, "boundingClientRect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExec(value: SelectorQueryExecCallback => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScrollOffset(value: () => SelectorQuery): Self = StObject.set(x, "scrollOffset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBoundingClientRect(value: () => SelectorQuery): Self = this.set("boundingClientRect", js.Any.fromFunction0(value))
+    def setSelect(value: String => SelectorQuery): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExec(value: SelectorQueryExecCallback => Unit): Self = this.set("exec", js.Any.fromFunction1(value))
+    def setSelectAll(value: String => SelectorQuery): Self = StObject.set(x, "selectAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollOffset(value: () => SelectorQuery): Self = this.set("scrollOffset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSelect(value: String => SelectorQuery): Self = this.set("select", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectAll(value: String => SelectorQuery): Self = this.set("selectAll", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectViewport(value: () => SelectorQuery): Self = this.set("selectViewport", js.Any.fromFunction0(value))
+    def setSelectViewport(value: () => SelectorQuery): Self = StObject.set(x, "selectViewport", js.Any.fromFunction0(value))
   }
 }

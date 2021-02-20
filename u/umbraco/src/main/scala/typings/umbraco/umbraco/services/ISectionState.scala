@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Section State
   */
 @js.native
-trait ISectionState extends js.Object {
+trait ISectionState extends StObject {
   
   //The currently active section
   var currentSection: js.Any = js.native
@@ -24,24 +25,12 @@ object ISectionState {
   }
   
   @scala.inline
-  implicit class ISectionStateOps[Self <: ISectionState] (val x: Self) extends AnyVal {
+  implicit class ISectionStateMutableBuilder[Self <: ISectionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentSection(value: js.Any): Self = StObject.set(x, "currentSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentSection(value: js.Any): Self = this.set("currentSection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowSearchResults(value: Boolean): Self = this.set("showSearchResults", value.asInstanceOf[js.Any])
+    def setShowSearchResults(value: Boolean): Self = StObject.set(x, "showSearchResults", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.antdMobile.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Am extends js.Object {
+trait Am extends StObject {
   
   var am: js.UndefOr[String] = js.native
   
@@ -30,45 +31,33 @@ object Am {
   }
   
   @scala.inline
-  implicit class AmOps[Self <: Am] (val x: Self) extends AnyVal {
+  implicit class AmMutableBuilder[Self <: Am] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmUndefined: Self = StObject.set(x, "am", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: String): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHour(value: String): Self = this.set("hour", value.asInstanceOf[js.Any])
+    def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinute(value: String): Self = this.set("minute", value.asInstanceOf[js.Any])
+    def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: String): Self = this.set("month", value.asInstanceOf[js.Any])
+    def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYear(value: String): Self = this.set("year", value.asInstanceOf[js.Any])
+    def setPmUndefined: Self = StObject.set(x, "pm", js.undefined)
     
     @scala.inline
-    def setAm(value: String): Self = this.set("am", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAm: Self = this.set("am", js.undefined)
-    
-    @scala.inline
-    def setPm(value: String): Self = this.set("pm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePm: Self = this.set("pm", js.undefined)
+    def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

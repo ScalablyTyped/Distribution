@@ -3,13 +3,12 @@ package typings.`3dBinPacking`
 import typings.`3dBinPacking`.bws.packer.Instance
 import typings.`3dBinPacking`.bws.packer.InstanceArray
 import typings.`3dBinPacking`.bws.packer.Wrapper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   /**
     * <p> A set of programs that calculate the best fit for boxes on a pallet migrated from language C. </p>
@@ -21,8 +20,7 @@ object global extends js.Object {
     * @author Bill Knechtel, <br>
     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
     */
-  @js.native
-  object boxologic extends js.Object {
+  object boxologic {
     
     /**
       * A box, trying to pack into a {@link Pallet}.
@@ -30,6 +28,7 @@ object global extends js.Object {
       * @author Bill Knechtel, <br>
       *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
       */
+    @JSGlobal("boxologic.Box")
     @js.native
     class Box protected ()
       extends typings.`3dBinPacking`.boxologic.Box {
@@ -53,6 +52,7 @@ object global extends js.Object {
       * @author Bill Knechtel, <br>
       *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
       */
+    @JSGlobal("boxologic.Boxologic")
     @js.native
     class Boxologic protected ()
       extends typings.`3dBinPacking`.boxologic.Boxologic {
@@ -72,6 +72,7 @@ object global extends js.Object {
       *
       * @author Jeongho Nam <http://samchon.org>
       */
+    @JSGlobal("boxologic.Instance")
     @js.native
     abstract class Instance protected ()
       extends typings.`3dBinPacking`.boxologic.Instance {
@@ -91,6 +92,7 @@ object global extends js.Object {
       * @author Bill Knechtel, <br>
       *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
       */
+    @JSGlobal("boxologic.Pallet")
     @js.native
     class Pallet protected ()
       extends typings.`3dBinPacking`.boxologic.Pallet {
@@ -110,6 +112,7 @@ object global extends js.Object {
       * @author Bill Knechtel, <br>
       *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
       */
+    @JSGlobal("boxologic.Scrap")
     @js.native
     /**
       * Default Constructor.
@@ -126,15 +129,11 @@ object global extends js.Object {
     }
   }
   
-  @js.native
-  object bws extends js.Object {
+  object bws {
     
-    @js.native
-    object packer extends js.Object {
+    object packer {
       
-      @JSName("_Test")
-      def Test(): Unit = js.native
-      
+      @JSGlobal("bws.packer.GAWrapperArray")
       @js.native
       class GAWrapperArray protected ()
         extends typings.`3dBinPacking`.bws.packer.GAWrapperArray {
@@ -155,6 +154,7 @@ object global extends js.Object {
         *
         * @author Jeongho Nam <http://samchon.org>
         */
+      @JSGlobal("bws.packer.InstanceArray")
       @js.native
       /**
         * Default Constructor.
@@ -170,6 +170,7 @@ object global extends js.Object {
         *
         * @author Jeongho Nam <http://samchon.org>
         */
+      @JSGlobal("bws.packer.InstanceForm")
       @js.native
       /**
         * Default Constructor.
@@ -186,6 +187,7 @@ object global extends js.Object {
         *
         * @author Jeongho Nam <http://samchon.org>
         */
+      @JSGlobal("bws.packer.InstanceFormArray")
       @js.native
       /**
         * Default Constructor.
@@ -212,6 +214,7 @@ object global extends js.Object {
         *
         * @author Jeongho Nam <http://samchon.org>
         */
+      @JSGlobal("bws.packer.Packer")
       @js.native
       /**
         * Default Constructor.
@@ -235,6 +238,7 @@ object global extends js.Object {
         *
         * @author Jeongho Nam <http://samchon.org>
         */
+      @JSGlobal("bws.packer.PackerForm")
       @js.native
       /**
         * Default Constructor.
@@ -258,6 +262,7 @@ object global extends js.Object {
         *
         * @author Jeongho Nam <http://samchon.org>
         */
+      @JSGlobal("bws.packer.Product")
       @js.native
       /**
         * Default Constructor.
@@ -275,6 +280,10 @@ object global extends js.Object {
         def this(name: String, width: Double, height: Double, length: Double) = this()
       }
       
+      @JSGlobal("bws.packer._Test")
+      @js.native
+      def Test(): Unit = js.native
+      
       /**
         * <p> Wrap represents an act wrap(ping). </p>
         *
@@ -287,6 +296,7 @@ object global extends js.Object {
         *
         * @author Jeongho Nam <http://samchon.org>
         */
+      @JSGlobal("bws.packer.Wrap")
       @js.native
       class Wrap protected ()
         extends typings.`3dBinPacking`.bws.packer.Wrap {
@@ -337,6 +347,7 @@ object global extends js.Object {
         *
         * @author Jeongho Nam <http://samchon.org>
         */
+      @JSGlobal("bws.packer.Wrapper")
       @js.native
       /**
         * Default Constructor.
@@ -360,6 +371,7 @@ object global extends js.Object {
         def this(name: String, price: Double, width: Double, height: Double, length: Double, thickness: Double) = this()
       }
       
+      @JSGlobal("bws.packer.WrapperArray")
       @js.native
       /**
         * Default Constructor.
@@ -372,6 +384,7 @@ object global extends js.Object {
         *
         * @author Jeongho Nam <http://samchon.org>
         */
+      @JSGlobal("bws.packer.WrapperGroup")
       @js.native
       /**
         * Default Constructor.

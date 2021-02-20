@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,36 +84,24 @@ object TableAutoFormat {
   }
   
   @scala.inline
-  implicit class TableAutoFormatOps[Self <: TableAutoFormat] (val x: Self) extends AnyVal {
+  implicit class TableAutoFormatMutableBuilder[Self <: TableAutoFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeBackground(value: Boolean): Self = StObject.set(x, "IncludeBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeBorder(value: Boolean): Self = StObject.set(x, "IncludeBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeFont(value: Boolean): Self = StObject.set(x, "IncludeFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeBackground(value: Boolean): Self = this.set("IncludeBackground", value.asInstanceOf[js.Any])
+    def setIncludeJustify(value: Boolean): Self = StObject.set(x, "IncludeJustify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeBorder(value: Boolean): Self = this.set("IncludeBorder", value.asInstanceOf[js.Any])
+    def setIncludeNumberFormat(value: Boolean): Self = StObject.set(x, "IncludeNumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeFont(value: Boolean): Self = this.set("IncludeFont", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeJustify(value: Boolean): Self = this.set("IncludeJustify", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeNumberFormat(value: Boolean): Self = this.set("IncludeNumberFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeWidthAndHeight(value: Boolean): Self = this.set("IncludeWidthAndHeight", value.asInstanceOf[js.Any])
+    def setIncludeWidthAndHeight(value: Boolean): Self = StObject.set(x, "IncludeWidthAndHeight", value.asInstanceOf[js.Any])
   }
 }

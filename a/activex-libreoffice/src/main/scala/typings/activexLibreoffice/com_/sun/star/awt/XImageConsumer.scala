@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,33 +91,21 @@ object XImageConsumer {
   }
   
   @scala.inline
-  implicit class XImageConsumerOps[Self <: XImageConsumer] (val x: Self) extends AnyVal {
+  implicit class XImageConsumerMutableBuilder[Self <: XImageConsumer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: (Double, XImageProducer) => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInit(value: (Double, Double) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetColorModel(value: (Double, SeqEquiv[Double], Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setColorModel", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setComplete(value: (Double, XImageProducer) => Unit): Self = this.set("complete", js.Any.fromFunction2(value))
+    def setSetPixelsByBytes(value: (Double, Double, Double, Double, SeqEquiv[Double], Double, Double) => Unit): Self = StObject.set(x, "setPixelsByBytes", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setInit(value: (Double, Double) => Unit): Self = this.set("init", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetColorModel(value: (Double, SeqEquiv[Double], Double, Double, Double, Double) => Unit): Self = this.set("setColorModel", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setSetPixelsByBytes(value: (Double, Double, Double, Double, SeqEquiv[Double], Double, Double) => Unit): Self = this.set("setPixelsByBytes", js.Any.fromFunction7(value))
-    
-    @scala.inline
-    def setSetPixelsByLongs(value: (Double, Double, Double, Double, SeqEquiv[Double], Double, Double) => Unit): Self = this.set("setPixelsByLongs", js.Any.fromFunction7(value))
+    def setSetPixelsByLongs(value: (Double, Double, Double, Double, SeqEquiv[Double], Double, Double) => Unit): Self = StObject.set(x, "setPixelsByLongs", js.Any.fromFunction7(value))
   }
 }

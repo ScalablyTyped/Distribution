@@ -36,6 +36,7 @@ import typings.chromeApps.chromeAppsStrings.reserved_
 import typings.chromeApps.chromeAppsStrings.standard_
 import typings.chromeApps.chromeAppsStrings.synchronous_
 import typings.chromeApps.chromeAppsStrings.vendor_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,9 +57,185 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * regular parameters will be undefined in this case.
   * @see[Accessing Hardware Devices]{@link https://developer.chrome.com/apps/app_usb}
   */
-@JSGlobal("chrome.usb")
-@js.native
-object usb extends js.Object {
+object usb {
+  
+  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
+  object Direction {
+    
+    @JSGlobal("chrome.usb.Direction")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("chrome.usb.Direction.IN")
+    @js.native
+    def IN: in_ = js.native
+    @scala.inline
+    def IN_=(x: in_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.Direction.OUT")
+    @js.native
+    def OUT: out_ = js.native
+    @scala.inline
+    def OUT_=(x: out_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUT")(x.asInstanceOf[js.Any])
+  }
+  
+  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
+  object Recipient {
+    
+    @JSGlobal("chrome.usb.Recipient")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("chrome.usb.Recipient.DEVICE")
+    @js.native
+    def DEVICE: device__ = js.native
+    @scala.inline
+    def DEVICE_=(x: device__): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEVICE")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.Recipient.ENDPOINT")
+    @js.native
+    def ENDPOINT: endpoint_ = js.native
+    @scala.inline
+    def ENDPOINT_=(x: endpoint_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENDPOINT")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.Recipient.INTERFACE")
+    @js.native
+    def INTERFACE: interface_ = js.native
+    @scala.inline
+    def INTERFACE_=(x: interface_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERFACE")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.Recipient.OTHER")
+    @js.native
+    def OTHER: other_ = js.native
+    @scala.inline
+    def OTHER_=(x: other_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OTHER")(x.asInstanceOf[js.Any])
+  }
+  
+  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
+  object RequestType {
+    
+    @JSGlobal("chrome.usb.RequestType")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("chrome.usb.RequestType.CLASS")
+    @js.native
+    def CLASS: class_ = js.native
+    @scala.inline
+    def CLASS_=(x: class_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.RequestType.RESERVED")
+    @js.native
+    def RESERVED: reserved_ = js.native
+    @scala.inline
+    def RESERVED_=(x: reserved_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.RequestType.STANDARD")
+    @js.native
+    def STANDARD: standard_ = js.native
+    @scala.inline
+    def STANDARD_=(x: standard_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STANDARD")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.RequestType.VENDOR")
+    @js.native
+    def VENDOR: vendor_ = js.native
+    @scala.inline
+    def VENDOR_=(x: vendor_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VENDOR")(x.asInstanceOf[js.Any])
+  }
+  
+  object SynchronizationType {
+    
+    @JSGlobal("chrome.usb.SynchronizationType")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("chrome.usb.SynchronizationType.ADAPTIVE")
+    @js.native
+    def ADAPTIVE: adaptive_ = js.native
+    @scala.inline
+    def ADAPTIVE_=(x: adaptive_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADAPTIVE")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.SynchronizationType.ASYNCHRONOUS")
+    @js.native
+    def ASYNCHRONOUS: asynchronous_ = js.native
+    @scala.inline
+    def ASYNCHRONOUS_=(x: asynchronous_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ASYNCHRONOUS")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.SynchronizationType.SYNCHRONOUS")
+    @js.native
+    def SYNCHRONOUS: synchronous_ = js.native
+    @scala.inline
+    def SYNCHRONOUS_=(x: synchronous_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNCHRONOUS")(x.asInstanceOf[js.Any])
+  }
+  
+  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
+  object TransferType {
+    
+    @JSGlobal("chrome.usb.TransferType")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("chrome.usb.TransferType.BULK")
+    @js.native
+    def BULK: bulk_ = js.native
+    @scala.inline
+    def BULK_=(x: bulk_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BULK")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.TransferType.CONTROL")
+    @js.native
+    def CONTROL: control_ = js.native
+    @scala.inline
+    def CONTROL_=(x: control_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTROL")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.TransferType.INTERRUPT")
+    @js.native
+    def INTERRUPT: interrupt_ = js.native
+    @scala.inline
+    def INTERRUPT_=(x: interrupt_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.TransferType.ISOCHRONOUS")
+    @js.native
+    def ISOCHRONOUS: isochronous_ = js.native
+    @scala.inline
+    def ISOCHRONOUS_=(x: isochronous_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISOCHRONOUS")(x.asInstanceOf[js.Any])
+  }
+  
+  object UsageType {
+    
+    @JSGlobal("chrome.usb.UsageType")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("chrome.usb.UsageType.DATA")
+    @js.native
+    def DATA: data_ = js.native
+    @scala.inline
+    def DATA_=(x: data_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.UsageType.EXPLICIT_FEEDBACK")
+    @js.native
+    def EXPLICIT_FEEDBACK: explicitFeedback = js.native
+    @scala.inline
+    def EXPLICIT_FEEDBACK_=(x: explicitFeedback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXPLICIT_FEEDBACK")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.UsageType.FEEDBACK")
+    @js.native
+    def FEEDBACK: feedback_ = js.native
+    @scala.inline
+    def FEEDBACK_=(x: feedback_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FEEDBACK")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.UsageType.NOTIFICATION")
+    @js.native
+    def NOTIFICATION: notification_ = js.native
+    @scala.inline
+    def NOTIFICATION_=(x: notification_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTIFICATION")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.usb.UsageType.PERIODIC")
+    @js.native
+    def PERIODIC: periodic_ = js.native
+    @scala.inline
+    def PERIODIC_=(x: periodic_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERIODIC")(x.asInstanceOf[js.Any])
+  }
   
   /**
     * @description Performs a bulk transfer on the specified device.
@@ -66,6 +243,8 @@ object usb extends js.Object {
     * @param transferInfo The transfer parameters.
     * @param callback
     */
+  @JSGlobal("chrome.usb.bulkTransfer")
+  @js.native
   def bulkTransfer(
     handle: ConnectionHandle,
     transferInfo: GenericTransferInfo,
@@ -83,6 +262,8 @@ object usb extends js.Object {
     * @param interfaceNumber The interface to be claimed.
     * @param callback
     */
+  @JSGlobal("chrome.usb.claimInterface")
+  @js.native
   def claimInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = js.native
   
   /**
@@ -91,7 +272,11 @@ object usb extends js.Object {
     * @param handle The ConnectionHandle to close.
     * @param [callback]
     */
+  @JSGlobal("chrome.usb.closeDevice")
+  @js.native
   def closeDevice(handle: ConnectionHandle): Unit = js.native
+  @JSGlobal("chrome.usb.closeDevice")
+  @js.native
   def closeDevice(handle: ConnectionHandle, callback: js.Function0[Unit]): Unit = js.native
   
   /**
@@ -102,6 +287,8 @@ object usb extends js.Object {
     * @param transferInfo Transfer info
     * @param callback
     */
+  @JSGlobal("chrome.usb.controlTransfer")
+  @js.native
   def controlTransfer(
     handle: ConnectionHandle,
     transferInfo: TransferInfo,
@@ -119,6 +306,8 @@ object usb extends js.Object {
     * @requires(CrOS) Chrome OS if you specify *interfaceId*
     * @param callback
     */
+  @JSGlobal("chrome.usb.findDevices")
+  @js.native
   def findDevices(options: InterfaceId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = js.native
   /**
     * Finds USB devices specified by the vendor, product and (optionally) interface IDs and if permissions allow opens them for use.
@@ -129,6 +318,8 @@ object usb extends js.Object {
     *                  - productId: The product ID.
     * @param callback
     */
+  @JSGlobal("chrome.usb.findDevices")
+  @js.native
   def findDevices(options: ProductId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = js.native
   
   /**
@@ -137,6 +328,8 @@ object usb extends js.Object {
     * @param handle An open connection to the device.
     * @param callback
     */
+  @JSGlobal("chrome.usb.getConfiguration")
+  @js.native
   def getConfiguration(handle: ConnectionHandle, callback: js.Function1[/* config */ ConfigDescriptor, Unit]): Unit = js.native
   
   /**
@@ -145,6 +338,8 @@ object usb extends js.Object {
     * @param device The Device to fetch descriptors from.
     * @param callback
     */
+  @JSGlobal("chrome.usb.getConfigurations")
+  @js.native
   def getConfigurations(device: Device, callback: js.Function1[/* configs */ js.Array[ConfigDescriptor], Unit]): Unit = js.native
   
   /**
@@ -153,6 +348,8 @@ object usb extends js.Object {
     * @param options The properties to search for on target devices.
     * @param callback
     */
+  @JSGlobal("chrome.usb.getDevices")
+  @js.native
   def getDevices(options: Filters, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
   
   /**
@@ -167,6 +364,8 @@ object usb extends js.Object {
     *                   If multiple filters are provided, devices matching any filter will be displayed.
     * @param callback Invoked with a list of chosen Devices.
     */
+  @JSGlobal("chrome.usb.getUserSelectedDevices")
+  @js.native
   def getUserSelectedDevices(options: Multiple, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
   
   /**
@@ -175,6 +374,8 @@ object usb extends js.Object {
     * @param transferInfo The transfer parameters.
     * @param callback
     */
+  @JSGlobal("chrome.usb.interruptTransfer")
+  @js.native
   def interruptTransfer(
     handle: ConnectionHandle,
     transferInfo: GenericTransferInfo,
@@ -187,6 +388,8 @@ object usb extends js.Object {
     * @param transferInfo
     * @param callback
     */
+  @JSGlobal("chrome.usb.isochronousTransfer")
+  @js.native
   def isochronousTransfer(
     handle: ConnectionHandle,
     transferInfo: IsochronousTransferInfo,
@@ -198,6 +401,8 @@ object usb extends js.Object {
     * @param handle An open connection to the device.
     * @param callback
     */
+  @JSGlobal("chrome.usb.listInterfaces")
+  @js.native
   def listInterfaces(
     handle: ConnectionHandle,
     callback: js.Function1[/* descriptors */ js.Array[InterfaceDescriptor], Unit]
@@ -211,6 +416,8 @@ object usb extends js.Object {
     * or through **getUserSelectedDevices**.
     * @since Chrome 42.
     */
+  @JSGlobal("chrome.usb.onDeviceAdded")
+  @js.native
   val onDeviceAdded: DeviceEvent = js.native
   
   /**
@@ -218,6 +425,8 @@ object usb extends js.Object {
     * See **onDeviceAdded** for which events are delivered.
     * @since Chrome 42.
     */
+  @JSGlobal("chrome.usb.onDeviceRemoved")
+  @js.native
   val onDeviceRemoved: DeviceEvent = js.native
   
   /**
@@ -226,6 +435,8 @@ object usb extends js.Object {
     * @param device The device to open.
     * @param callback
     */
+  @JSGlobal("chrome.usb.openDevice")
+  @js.native
   def openDevice(device: Device, callback: js.Function1[/* handle */ ConnectionHandle, Unit]): Unit = js.native
   
   /**
@@ -234,12 +445,16 @@ object usb extends js.Object {
     * @param interfaceNumber The interface to be released.
     * @param callback
     */
+  @JSGlobal("chrome.usb.releaseInterface")
+  @js.native
   def releaseInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * @deprecated Since Chrome 40.
     * @requires(CrOS) Chrome OS specific. This operation is now implicitly performed as a part of *openDevice*.
     */
+  @JSGlobal("chrome.usb.requestAccess")
+  @js.native
   def requestAccess(device: Device, interfaceId: integer, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
   
   /**
@@ -249,6 +464,8 @@ object usb extends js.Object {
     * @param handle A connection handle to reset.
     * @param callback
     */
+  @JSGlobal("chrome.usb.resetDevice")
+  @js.native
   def resetDevice(handle: ConnectionHandle, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
   
   /**
@@ -262,6 +479,8 @@ object usb extends js.Object {
     * @param configurationValue
     * @param callback
     */
+  @JSGlobal("chrome.usb.setConfiguration")
+  @js.native
   def setConfiguration(handle: ConnectionHandle, configurationValue: integer, callback: js.Function0[Unit]): Unit = js.native
   
   /**
@@ -271,82 +490,12 @@ object usb extends js.Object {
     * @param alternateSetting The alternate setting to configure.
     * @param callback
     */
+  @JSGlobal("chrome.usb.setInterfaceAlternateSetting")
+  @js.native
   def setInterfaceAlternateSetting(
     handle: ConnectionHandle,
     interfaceNumber: integer,
     alternateSetting: integer,
     callback: js.Function0[Unit]
   ): Unit = js.native
-  
-  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
-  @js.native
-  object Direction extends js.Object {
-    
-    var IN: in_ = js.native
-    
-    var OUT: out_ = js.native
-  }
-  
-  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
-  @js.native
-  object Recipient extends js.Object {
-    
-    var DEVICE: device__ = js.native
-    
-    var ENDPOINT: endpoint_ = js.native
-    
-    var INTERFACE: interface_ = js.native
-    
-    var OTHER: other_ = js.native
-  }
-  
-  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
-  @js.native
-  object RequestType extends js.Object {
-    
-    var CLASS: class_ = js.native
-    
-    var RESERVED: reserved_ = js.native
-    
-    var STANDARD: standard_ = js.native
-    
-    var VENDOR: vendor_ = js.native
-  }
-  
-  @js.native
-  object SynchronizationType extends js.Object {
-    
-    var ADAPTIVE: adaptive_ = js.native
-    
-    var ASYNCHRONOUS: asynchronous_ = js.native
-    
-    var SYNCHRONOUS: synchronous_ = js.native
-  }
-  
-  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
-  @js.native
-  object TransferType extends js.Object {
-    
-    var BULK: bulk_ = js.native
-    
-    var CONTROL: control_ = js.native
-    
-    var INTERRUPT: interrupt_ = js.native
-    
-    var ISOCHRONOUS: isochronous_ = js.native
-  }
-  
-  @js.native
-  object UsageType extends js.Object {
-    
-    var DATA: data_ = js.native
-    
-    var EXPLICIT_FEEDBACK: explicitFeedback = js.native
-    
-    var FEEDBACK: feedback_ = js.native
-    
-    var NOTIFICATION: notification_ = js.native
-    
-    var PERIODIC: periodic_ = js.native
-  }
 }

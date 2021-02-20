@@ -1,11 +1,12 @@
 package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDeploymentUpdate extends js.Object {
+trait SchemaDeploymentUpdate extends StObject {
   
   /**
     * Output only. The user-provided default credential to use when deploying
@@ -44,45 +45,33 @@ object SchemaDeploymentUpdate {
   }
   
   @scala.inline
-  implicit class SchemaDeploymentUpdateOps[Self <: SchemaDeploymentUpdate] (val x: Self) extends AnyVal {
+  implicit class SchemaDeploymentUpdateMutableBuilder[Self <: SchemaDeploymentUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredential(value: SchemaCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredential(value: SchemaCredential): Self = this.set("credential", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCredential: Self = this.set("credential", js.undefined)
+    def setLabels(value: js.Array[SchemaDeploymentUpdateLabelEntry]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLabelsVarargs(value: SchemaDeploymentUpdateLabelEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: SchemaDeploymentUpdateLabelEntry*): Self = this.set("labels", js.Array(value :_*))
+    def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[SchemaDeploymentUpdateLabelEntry]): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
-    
-    @scala.inline
-    def setManifest(value: String): Self = this.set("manifest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManifest: Self = this.set("manifest", js.undefined)
+    def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
   }
 }

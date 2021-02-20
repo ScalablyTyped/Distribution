@@ -27,38 +27,61 @@ import typings.std.DOMTokenList
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/react/dist/types/components/utils", JSImport.Namespace)
-@js.native
-object utilsMod extends js.Object {
+object utilsMod {
   
+  @JSImport("@ionic/react/dist/types/components/utils", "attachProps")
+  @js.native
   def attachProps(node: HTMLElement, newProps: js.Any): Unit = js.native
+  @JSImport("@ionic/react/dist/types/components/utils", "attachProps")
+  @js.native
   def attachProps(node: HTMLElement, newProps: js.Any, oldProps: js.Any): Unit = js.native
   
+  @JSImport("@ionic/react/dist/types/components/utils", "camelToDashCase")
+  @js.native
   def camelToDashCase(str: String): String = js.native
   
+  @JSImport("@ionic/react/dist/types/components/utils", "createForwardRef")
+  @js.native
   def createForwardRef[PropType, ElementType](ReactComponent: js.Any, displayName: String): ForwardRefExoticComponent[
     (PropsWithoutRef[IonicReactExternalProps[PropType, ElementType]]) with RefAttributes[ElementType]
   ] = js.native
   
+  @JSImport("@ionic/react/dist/types/components/utils", "dashToPascalCase")
+  @js.native
   def dashToPascalCase(str: String): String = js.native
   
+  @JSImport("@ionic/react/dist/types/components/utils", "getClassName")
+  @js.native
   def getClassName(classList: DOMTokenList, newProps: js.Any, oldProps: js.Any): String = js.native
   
+  @JSImport("@ionic/react/dist/types/components/utils", "getConfig")
+  @js.native
   def getConfig(): Config_ | Null = js.native
   
+  @JSImport("@ionic/react/dist/types/components/utils", "getPlatforms")
+  @js.native
   def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
   
+  @JSImport("@ionic/react/dist/types/components/utils", "isCoveredByReact")
+  @js.native
   def isCoveredByReact(eventNameSuffix: String): Boolean = js.native
   
+  @JSImport("@ionic/react/dist/types/components/utils", "isPlatform")
+  @js.native
   def isPlatform(platform: Platforms): Boolean = js.native
   
+  @JSImport("@ionic/react/dist/types/components/utils", "syncEvent")
+  @js.native
   def syncEvent(node: ElementeventskeystringeEv, eventName: String): Unit = js.native
+  @JSImport("@ionic/react/dist/types/components/utils", "syncEvent")
+  @js.native
   def syncEvent(
     node: ElementeventskeystringeEv,
     eventName: String,

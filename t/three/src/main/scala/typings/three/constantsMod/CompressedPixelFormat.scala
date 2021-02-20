@@ -1,15 +1,15 @@
 package typings.three.constantsMod
 
+import typings.three.constantsMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CompressedPixelFormat extends js.Object
-@JSImport("three/src/constants", "CompressedPixelFormat")
-@js.native
-object CompressedPixelFormat extends js.Object {
+sealed trait CompressedPixelFormat extends StObject
+object CompressedPixelFormat {
   
-  @JSBracketAccess
-  def apply(value: scala.Nothing): js.UndefOr[CompressedPixelFormat with scala.Nothing] = js.native
+  @scala.inline
+  def apply(value: scala.Nothing): js.UndefOr[CompressedPixelFormat with scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("CompressedPixelFormat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CompressedPixelFormat with scala.Nothing]]
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceDataSyncItem extends js.Object {
+trait ResourceDataSyncItem extends StObject {
   
   /**
     * The status reported by the last sync.
@@ -66,78 +67,66 @@ object ResourceDataSyncItem {
   }
   
   @scala.inline
-  implicit class ResourceDataSyncItemOps[Self <: ResourceDataSyncItem] (val x: Self) extends AnyVal {
+  implicit class ResourceDataSyncItemMutableBuilder[Self <: ResourceDataSyncItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastStatus(value: LastResourceDataSyncStatus): Self = StObject.set(x, "LastStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastStatusUndefined: Self = StObject.set(x, "LastStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastSuccessfulSyncTime(value: LastSuccessfulResourceDataSyncTime): Self = StObject.set(x, "LastSuccessfulSyncTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStatus(value: LastResourceDataSyncStatus): Self = this.set("LastStatus", value.asInstanceOf[js.Any])
+    def setLastSuccessfulSyncTimeUndefined: Self = StObject.set(x, "LastSuccessfulSyncTime", js.undefined)
     
     @scala.inline
-    def deleteLastStatus: Self = this.set("LastStatus", js.undefined)
+    def setLastSyncStatusMessage(value: LastResourceDataSyncMessage): Self = StObject.set(x, "LastSyncStatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSuccessfulSyncTime(value: LastSuccessfulResourceDataSyncTime): Self = this.set("LastSuccessfulSyncTime", value.asInstanceOf[js.Any])
+    def setLastSyncStatusMessageUndefined: Self = StObject.set(x, "LastSyncStatusMessage", js.undefined)
     
     @scala.inline
-    def deleteLastSuccessfulSyncTime: Self = this.set("LastSuccessfulSyncTime", js.undefined)
+    def setLastSyncTime(value: LastResourceDataSyncTime): Self = StObject.set(x, "LastSyncTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSyncStatusMessage(value: LastResourceDataSyncMessage): Self = this.set("LastSyncStatusMessage", value.asInstanceOf[js.Any])
+    def setLastSyncTimeUndefined: Self = StObject.set(x, "LastSyncTime", js.undefined)
     
     @scala.inline
-    def deleteLastSyncStatusMessage: Self = this.set("LastSyncStatusMessage", js.undefined)
+    def setS3Destination(value: ResourceDataSyncS3Destination): Self = StObject.set(x, "S3Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSyncTime(value: LastResourceDataSyncTime): Self = this.set("LastSyncTime", value.asInstanceOf[js.Any])
+    def setS3DestinationUndefined: Self = StObject.set(x, "S3Destination", js.undefined)
     
     @scala.inline
-    def deleteLastSyncTime: Self = this.set("LastSyncTime", js.undefined)
+    def setSyncCreatedTime(value: ResourceDataSyncCreatedTime): Self = StObject.set(x, "SyncCreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Destination(value: ResourceDataSyncS3Destination): Self = this.set("S3Destination", value.asInstanceOf[js.Any])
+    def setSyncCreatedTimeUndefined: Self = StObject.set(x, "SyncCreatedTime", js.undefined)
     
     @scala.inline
-    def deleteS3Destination: Self = this.set("S3Destination", js.undefined)
+    def setSyncLastModifiedTime(value: ResourceDataSyncLastModifiedTime): Self = StObject.set(x, "SyncLastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncCreatedTime(value: ResourceDataSyncCreatedTime): Self = this.set("SyncCreatedTime", value.asInstanceOf[js.Any])
+    def setSyncLastModifiedTimeUndefined: Self = StObject.set(x, "SyncLastModifiedTime", js.undefined)
     
     @scala.inline
-    def deleteSyncCreatedTime: Self = this.set("SyncCreatedTime", js.undefined)
+    def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncLastModifiedTime(value: ResourceDataSyncLastModifiedTime): Self = this.set("SyncLastModifiedTime", value.asInstanceOf[js.Any])
+    def setSyncNameUndefined: Self = StObject.set(x, "SyncName", js.undefined)
     
     @scala.inline
-    def deleteSyncLastModifiedTime: Self = this.set("SyncLastModifiedTime", js.undefined)
+    def setSyncSource(value: ResourceDataSyncSourceWithState): Self = StObject.set(x, "SyncSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncName(value: ResourceDataSyncName): Self = this.set("SyncName", value.asInstanceOf[js.Any])
+    def setSyncSourceUndefined: Self = StObject.set(x, "SyncSource", js.undefined)
     
     @scala.inline
-    def deleteSyncName: Self = this.set("SyncName", js.undefined)
+    def setSyncType(value: ResourceDataSyncType): Self = StObject.set(x, "SyncType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncSource(value: ResourceDataSyncSourceWithState): Self = this.set("SyncSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncSource: Self = this.set("SyncSource", js.undefined)
-    
-    @scala.inline
-    def setSyncType(value: ResourceDataSyncType): Self = this.set("SyncType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncType: Self = this.set("SyncType", js.undefined)
+    def setSyncTypeUndefined: Self = StObject.set(x, "SyncType", js.undefined)
   }
 }

@@ -4,16 +4,16 @@ import typings.appBuilderLib.packagerMod.Packager
 import typings.builderUtil.fsMod.Filter
 import typings.fsExtra.mod.Stats
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/util/AppFileWalker", JSImport.Namespace)
-@js.native
-object appFileWalkerMod extends js.Object {
+object appFileWalkerMod {
   
+  @JSImport("app-builder-lib/out/util/AppFileWalker", "FileCopyHelper")
   @js.native
-  abstract class FileCopyHelper protected () extends js.Object {
+  abstract class FileCopyHelper protected () extends StObject {
     protected def this(
       matcher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileMatcher */ js.Any,
       filter: Null,

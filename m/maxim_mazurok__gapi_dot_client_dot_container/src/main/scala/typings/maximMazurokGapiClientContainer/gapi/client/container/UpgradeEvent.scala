@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpgradeEvent extends js.Object {
+trait UpgradeEvent extends StObject {
   
   /** Required. The current version before the upgrade. */
   var currentVersion: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object UpgradeEvent {
   }
   
   @scala.inline
-  implicit class UpgradeEventOps[Self <: UpgradeEvent] (val x: Self) extends AnyVal {
+  implicit class UpgradeEventMutableBuilder[Self <: UpgradeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentVersion(value: String): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentVersion(value: String): Self = this.set("currentVersion", value.asInstanceOf[js.Any])
+    def setOperationStartTime(value: String): Self = StObject.set(x, "operationStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrentVersion: Self = this.set("currentVersion", js.undefined)
+    def setOperationStartTimeUndefined: Self = StObject.set(x, "operationStartTime", js.undefined)
     
     @scala.inline
-    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationStartTime(value: String): Self = this.set("operationStartTime", value.asInstanceOf[js.Any])
+    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperationStartTime: Self = this.set("operationStartTime", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setTargetVersion(value: String): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
-    
-    @scala.inline
-    def setTargetVersion(value: String): Self = this.set("targetVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetVersion: Self = this.set("targetVersion", js.undefined)
+    def setTargetVersionUndefined: Self = StObject.set(x, "targetVersion", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.redisInfo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stats extends js.Object {
+trait Stats extends StObject {
   
   var active_defrag_hits: String = js.native
   
@@ -95,96 +96,84 @@ object Stats {
   }
   
   @scala.inline
-  implicit class StatsOps[Self <: Stats] (val x: Self) extends AnyVal {
+  implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive_defrag_hits(value: String): Self = StObject.set(x, "active_defrag_hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActive_defrag_key_hits(value: String): Self = StObject.set(x, "active_defrag_key_hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActive_defrag_key_misses(value: String): Self = StObject.set(x, "active_defrag_key_misses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive_defrag_hits(value: String): Self = this.set("active_defrag_hits", value.asInstanceOf[js.Any])
+    def setActive_defrag_misses(value: String): Self = StObject.set(x, "active_defrag_misses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive_defrag_key_hits(value: String): Self = this.set("active_defrag_key_hits", value.asInstanceOf[js.Any])
+    def setEvicted_keys(value: String): Self = StObject.set(x, "evicted_keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive_defrag_key_misses(value: String): Self = this.set("active_defrag_key_misses", value.asInstanceOf[js.Any])
+    def setExpired_keys(value: String): Self = StObject.set(x, "expired_keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive_defrag_misses(value: String): Self = this.set("active_defrag_misses", value.asInstanceOf[js.Any])
+    def setExpired_stale_perc(value: String): Self = StObject.set(x, "expired_stale_perc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvicted_keys(value: String): Self = this.set("evicted_keys", value.asInstanceOf[js.Any])
+    def setExpired_time_cap_reached_count(value: String): Self = StObject.set(x, "expired_time_cap_reached_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpired_keys(value: String): Self = this.set("expired_keys", value.asInstanceOf[js.Any])
+    def setInstantaneous_input_kbps(value: String): Self = StObject.set(x, "instantaneous_input_kbps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpired_stale_perc(value: String): Self = this.set("expired_stale_perc", value.asInstanceOf[js.Any])
+    def setInstantaneous_ops_per_sec(value: String): Self = StObject.set(x, "instantaneous_ops_per_sec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpired_time_cap_reached_count(value: String): Self = this.set("expired_time_cap_reached_count", value.asInstanceOf[js.Any])
+    def setInstantaneous_output_kbps(value: String): Self = StObject.set(x, "instantaneous_output_kbps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstantaneous_input_kbps(value: String): Self = this.set("instantaneous_input_kbps", value.asInstanceOf[js.Any])
+    def setKeyspace_hits(value: String): Self = StObject.set(x, "keyspace_hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstantaneous_ops_per_sec(value: String): Self = this.set("instantaneous_ops_per_sec", value.asInstanceOf[js.Any])
+    def setKeyspace_misses(value: String): Self = StObject.set(x, "keyspace_misses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstantaneous_output_kbps(value: String): Self = this.set("instantaneous_output_kbps", value.asInstanceOf[js.Any])
+    def setLatest_fork_usec(value: String): Self = StObject.set(x, "latest_fork_usec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyspace_hits(value: String): Self = this.set("keyspace_hits", value.asInstanceOf[js.Any])
+    def setMigrate_cached_sockets(value: String): Self = StObject.set(x, "migrate_cached_sockets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyspace_misses(value: String): Self = this.set("keyspace_misses", value.asInstanceOf[js.Any])
+    def setPubsub_channels(value: String): Self = StObject.set(x, "pubsub_channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatest_fork_usec(value: String): Self = this.set("latest_fork_usec", value.asInstanceOf[js.Any])
+    def setPubsub_patterns(value: String): Self = StObject.set(x, "pubsub_patterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrate_cached_sockets(value: String): Self = this.set("migrate_cached_sockets", value.asInstanceOf[js.Any])
+    def setRejected_connections(value: String): Self = StObject.set(x, "rejected_connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubsub_channels(value: String): Self = this.set("pubsub_channels", value.asInstanceOf[js.Any])
+    def setSlave_expires_tracked_keys(value: String): Self = StObject.set(x, "slave_expires_tracked_keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubsub_patterns(value: String): Self = this.set("pubsub_patterns", value.asInstanceOf[js.Any])
+    def setSync_full(value: String): Self = StObject.set(x, "sync_full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejected_connections(value: String): Self = this.set("rejected_connections", value.asInstanceOf[js.Any])
+    def setSync_partial_err(value: String): Self = StObject.set(x, "sync_partial_err", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlave_expires_tracked_keys(value: String): Self = this.set("slave_expires_tracked_keys", value.asInstanceOf[js.Any])
+    def setSync_partial_ok(value: String): Self = StObject.set(x, "sync_partial_ok", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSync_full(value: String): Self = this.set("sync_full", value.asInstanceOf[js.Any])
+    def setTotal_commands_processed(value: String): Self = StObject.set(x, "total_commands_processed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSync_partial_err(value: String): Self = this.set("sync_partial_err", value.asInstanceOf[js.Any])
+    def setTotal_connections_received(value: String): Self = StObject.set(x, "total_connections_received", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSync_partial_ok(value: String): Self = this.set("sync_partial_ok", value.asInstanceOf[js.Any])
+    def setTotal_net_input_bytes(value: String): Self = StObject.set(x, "total_net_input_bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_commands_processed(value: String): Self = this.set("total_commands_processed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_connections_received(value: String): Self = this.set("total_connections_received", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_net_input_bytes(value: String): Self = this.set("total_net_input_bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_net_output_bytes(value: String): Self = this.set("total_net_output_bytes", value.asInstanceOf[js.Any])
+    def setTotal_net_output_bytes(value: String): Self = StObject.set(x, "total_net_output_bytes", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.filepond.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilePondHookProps extends js.Object {
+trait FilePondHookProps extends StObject {
   
   /**
     * FilePond is about to add this file.
@@ -37,36 +38,24 @@ object FilePondHookProps {
   }
   
   @scala.inline
-  implicit class FilePondHookPropsOps[Self <: FilePondHookProps] (val x: Self) extends AnyVal {
+  implicit class FilePondHookPropsMutableBuilder[Self <: FilePondHookProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeAddFile(value: /* item */ FilePondFile => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "beforeAddFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeAddFileUndefined: Self = StObject.set(x, "beforeAddFile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeDropFile(value: /* file */ FilePondFile | String => Boolean): Self = StObject.set(x, "beforeDropFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeAddFile(value: /* item */ FilePondFile => Boolean | js.Promise[Boolean]): Self = this.set("beforeAddFile", js.Any.fromFunction1(value))
+    def setBeforeDropFileUndefined: Self = StObject.set(x, "beforeDropFile", js.undefined)
     
     @scala.inline
-    def deleteBeforeAddFile: Self = this.set("beforeAddFile", js.undefined)
+    def setBeforeRemoveFile(value: /* item */ FilePondFile => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "beforeRemoveFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeDropFile(value: /* file */ FilePondFile | String => Boolean): Self = this.set("beforeDropFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteBeforeDropFile: Self = this.set("beforeDropFile", js.undefined)
-    
-    @scala.inline
-    def setBeforeRemoveFile(value: /* item */ FilePondFile => Boolean | js.Promise[Boolean]): Self = this.set("beforeRemoveFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteBeforeRemoveFile: Self = this.set("beforeRemoveFile", js.undefined)
+    def setBeforeRemoveFileUndefined: Self = StObject.set(x, "beforeRemoveFile", js.undefined)
   }
 }

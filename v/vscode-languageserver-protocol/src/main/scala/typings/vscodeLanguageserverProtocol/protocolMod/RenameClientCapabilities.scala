@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenameClientCapabilities extends js.Object {
+trait RenameClientCapabilities extends StObject {
   
   /**
     * Whether rename supports dynamic registration.
@@ -29,30 +30,18 @@ object RenameClientCapabilities {
   }
   
   @scala.inline
-  implicit class RenameClientCapabilitiesOps[Self <: RenameClientCapabilities] (val x: Self) extends AnyVal {
+  implicit class RenameClientCapabilitiesMutableBuilder[Self <: RenameClientCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrepareSupport(value: Boolean): Self = StObject.set(x, "prepareSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = this.set("dynamicRegistration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDynamicRegistration: Self = this.set("dynamicRegistration", js.undefined)
-    
-    @scala.inline
-    def setPrepareSupport(value: Boolean): Self = this.set("prepareSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrepareSupport: Self = this.set("prepareSupport", js.undefined)
+    def setPrepareSupportUndefined: Self = StObject.set(x, "prepareSupport", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.nodal.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,36 +25,24 @@ object IComparison {
   }
   
   @scala.inline
-  implicit class IComparisonOps[Self <: IComparison] (val x: Self) extends AnyVal {
+  implicit class IComparisonMutableBuilder[Self <: IComparison] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set__count(value: Double): Self = StObject.set(x, "__count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set__countUndefined: Self = StObject.set(x, "__count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set__offset(value: Double): Self = StObject.set(x, "__offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__count(value: Double): Self = this.set("__count", value.asInstanceOf[js.Any])
+    def set__offsetUndefined: Self = StObject.set(x, "__offset", js.undefined)
     
     @scala.inline
-    def delete__count: Self = this.set("__count", js.undefined)
+    def set__order(value: String): Self = StObject.set(x, "__order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__offset(value: Double): Self = this.set("__offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete__offset: Self = this.set("__offset", js.undefined)
-    
-    @scala.inline
-    def set__order(value: String): Self = this.set("__order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete__order: Self = this.set("__order", js.undefined)
+    def set__orderUndefined: Self = StObject.set(x, "__order", js.undefined)
   }
 }

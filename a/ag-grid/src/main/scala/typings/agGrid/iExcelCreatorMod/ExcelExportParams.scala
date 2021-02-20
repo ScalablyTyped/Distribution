@@ -1,6 +1,7 @@
 package typings.agGrid.iExcelCreatorMod
 
 import typings.agGrid.exportParamsMod.ExportParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object ExcelExportParams {
   }
   
   @scala.inline
-  implicit class ExcelExportParamsOps[Self <: ExcelExportParams] (val x: Self) extends AnyVal {
+  implicit class ExcelExportParamsMutableBuilder[Self <: ExcelExportParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSheetNameUndefined: Self = StObject.set(x, "sheetName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuppressTextAsCDATA(value: Boolean): Self = StObject.set(x, "suppressTextAsCDATA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetName(value: String): Self = this.set("sheetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetName: Self = this.set("sheetName", js.undefined)
-    
-    @scala.inline
-    def setSuppressTextAsCDATA(value: Boolean): Self = this.set("suppressTextAsCDATA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressTextAsCDATA: Self = this.set("suppressTextAsCDATA", js.undefined)
+    def setSuppressTextAsCDATAUndefined: Self = StObject.set(x, "suppressTextAsCDATA", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IQueryAPI extends js.Object {
+trait IQueryAPI extends StObject {
   
   /**
     * Execute a filter on the input stream of documents, resulting in a subset of the input stream that matches the given filter.

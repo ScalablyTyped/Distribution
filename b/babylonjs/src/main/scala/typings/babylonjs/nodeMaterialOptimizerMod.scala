@@ -1,16 +1,16 @@
 package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Optimizers/nodeMaterialOptimizer", JSImport.Namespace)
-@js.native
-object nodeMaterialOptimizerMod extends js.Object {
+object nodeMaterialOptimizerMod {
   
+  @JSImport("babylonjs/Materials/Node/Optimizers/nodeMaterialOptimizer", "NodeMaterialOptimizer")
   @js.native
-  class NodeMaterialOptimizer () extends js.Object {
+  class NodeMaterialOptimizer () extends StObject {
     
     /**
       * Function used to optimize a NodeMaterial graph

@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountRecoverySettingType extends js.Object {
+trait AccountRecoverySettingType extends StObject {
   
   /**
     * The list of RecoveryOptionTypes.
@@ -21,27 +22,15 @@ object AccountRecoverySettingType {
   }
   
   @scala.inline
-  implicit class AccountRecoverySettingTypeOps[Self <: AccountRecoverySettingType] (val x: Self) extends AnyVal {
+  implicit class AccountRecoverySettingTypeMutableBuilder[Self <: AccountRecoverySettingType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecoveryMechanisms(value: RecoveryMechanismsType): Self = StObject.set(x, "RecoveryMechanisms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecoveryMechanismsUndefined: Self = StObject.set(x, "RecoveryMechanisms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecoveryMechanismsVarargs(value: RecoveryOptionType*): Self = this.set("RecoveryMechanisms", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecoveryMechanisms(value: RecoveryMechanismsType): Self = this.set("RecoveryMechanisms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecoveryMechanisms: Self = this.set("RecoveryMechanisms", js.undefined)
+    def setRecoveryMechanismsVarargs(value: RecoveryOptionType*): Self = StObject.set(x, "RecoveryMechanisms", js.Array(value :_*))
   }
 }

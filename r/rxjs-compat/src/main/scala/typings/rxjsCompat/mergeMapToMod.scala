@@ -1,16 +1,19 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operators/mergeMapTo", JSImport.Namespace)
-@js.native
-object mergeMapToMod extends js.Object {
+object mergeMapToMod {
   
+  @JSImport("rxjs-compat/operators/mergeMapTo", "mergeMapTo")
+  @js.native
   def mergeMapTo[T, R](
     innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
   ): js.Any = js.native
+  @JSImport("rxjs-compat/operators/mergeMapTo", "mergeMapTo")
+  @js.native
   def mergeMapTo[T, R](
     innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any,
     concurrent: Double

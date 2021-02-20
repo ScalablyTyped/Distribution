@@ -10,16 +10,16 @@ import typings.sipJs.simpleUserDelegateMod.SimpleUserDelegate
 import typings.sipJs.simpleUserOptionsMod.SimpleUserOptions
 import typings.std.MediaStream
 import typings.std.MediaStreamTrack
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/platform/web/simple-user/simple-user", JSImport.Namespace)
-@js.native
-object simpleUserSimpleUserMod extends js.Object {
+object simpleUserSimpleUserMod {
   
+  @JSImport("sip.js/lib/platform/web/simple-user/simple-user", "SimpleUser")
   @js.native
-  class SimpleUser protected () extends js.Object {
+  class SimpleUser protected () extends StObject {
     /**
       * Constructs a new instance of the `SimpleUser` class.
       * @param server - SIP WebSocket Server URL.

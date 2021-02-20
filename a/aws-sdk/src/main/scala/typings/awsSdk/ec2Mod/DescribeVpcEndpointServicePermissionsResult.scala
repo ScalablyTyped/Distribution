@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVpcEndpointServicePermissionsResult extends js.Object {
+trait DescribeVpcEndpointServicePermissionsResult extends StObject {
   
   /**
     * Information about one or more allowed principals.
@@ -26,33 +27,21 @@ object DescribeVpcEndpointServicePermissionsResult {
   }
   
   @scala.inline
-  implicit class DescribeVpcEndpointServicePermissionsResultOps[Self <: DescribeVpcEndpointServicePermissionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeVpcEndpointServicePermissionsResultMutableBuilder[Self <: DescribeVpcEndpointServicePermissionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedPrincipals(value: AllowedPrincipalSet): Self = StObject.set(x, "AllowedPrincipals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedPrincipalsUndefined: Self = StObject.set(x, "AllowedPrincipals", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedPrincipalsVarargs(value: AllowedPrincipal*): Self = StObject.set(x, "AllowedPrincipals", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedPrincipalsVarargs(value: AllowedPrincipal*): Self = this.set("AllowedPrincipals", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedPrincipals(value: AllowedPrincipalSet): Self = this.set("AllowedPrincipals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowedPrincipals: Self = this.set("AllowedPrincipals", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

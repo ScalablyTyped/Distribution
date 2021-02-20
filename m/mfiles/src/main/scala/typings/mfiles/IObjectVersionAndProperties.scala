@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectVersionAndProperties extends js.Object {
+trait IObjectVersionAndProperties extends StObject {
   
   def Clone(): IObjectVersionAndProperties = js.native
   
@@ -32,33 +33,21 @@ object IObjectVersionAndProperties {
   }
   
   @scala.inline
-  implicit class IObjectVersionAndPropertiesOps[Self <: IObjectVersionAndProperties] (val x: Self) extends AnyVal {
+  implicit class IObjectVersionAndPropertiesMutableBuilder[Self <: IObjectVersionAndProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IObjectVersionAndProperties): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperties(value: IPropertyValues): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IObjectVersionAndProperties): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setVault(value: IVault): Self = StObject.set(x, "Vault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjVer(value: IObjVer): Self = this.set("ObjVer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: IPropertyValues): Self = this.set("Properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVault(value: IVault): Self = this.set("Vault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionData(value: IObjectVersion): Self = this.set("VersionData", value.asInstanceOf[js.Any])
+    def setVersionData(value: IObjectVersion): Self = StObject.set(x, "VersionData", value.asInstanceOf[js.Any])
   }
 }

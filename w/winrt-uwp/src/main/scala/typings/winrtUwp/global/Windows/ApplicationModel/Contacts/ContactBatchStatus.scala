@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies if the last batch access operation was successful or if there was a server error. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactBatchStatus")
 @js.native
-object ContactBatchStatus extends js.Object {
+object ContactBatchStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

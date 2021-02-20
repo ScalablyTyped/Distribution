@@ -1,11 +1,12 @@
 package typings.winrt.Windows.ApplicationModel.DataTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDataTransferManagerStatics extends js.Object {
+trait IDataTransferManagerStatics extends StObject {
   
   def getForCurrentView(): DataTransferManager = js.native
   
@@ -20,24 +21,12 @@ object IDataTransferManagerStatics {
   }
   
   @scala.inline
-  implicit class IDataTransferManagerStaticsOps[Self <: IDataTransferManagerStatics] (val x: Self) extends AnyVal {
+  implicit class IDataTransferManagerStaticsMutableBuilder[Self <: IDataTransferManagerStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetForCurrentView(value: () => DataTransferManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetForCurrentView(value: () => DataTransferManager): Self = this.set("getForCurrentView", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowShareUI(value: () => Unit): Self = this.set("showShareUI", js.Any.fromFunction0(value))
+    def setShowShareUI(value: () => Unit): Self = StObject.set(x, "showShareUI", js.Any.fromFunction0(value))
   }
 }

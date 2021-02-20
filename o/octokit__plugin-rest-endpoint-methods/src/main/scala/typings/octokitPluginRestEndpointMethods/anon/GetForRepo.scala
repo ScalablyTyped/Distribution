@@ -1,11 +1,12 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetForRepo extends js.Object {
+trait GetForRepo extends StObject {
   
   var get: `757` = js.native
   
@@ -22,27 +23,15 @@ object GetForRepo {
   }
   
   @scala.inline
-  implicit class GetForRepoOps[Self <: GetForRepo] (val x: Self) extends AnyVal {
+  implicit class GetForRepoMutableBuilder[Self <: GetForRepo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: `757`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllCommonlyUsed(value: `758`): Self = StObject.set(x, "getAllCommonlyUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet(value: `757`): Self = this.set("get", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetAllCommonlyUsed(value: `758`): Self = this.set("getAllCommonlyUsed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetForRepo(value: `759`): Self = this.set("getForRepo", value.asInstanceOf[js.Any])
+    def setGetForRepo(value: `759`): Self = StObject.set(x, "getForRepo", value.asInstanceOf[js.Any])
   }
 }

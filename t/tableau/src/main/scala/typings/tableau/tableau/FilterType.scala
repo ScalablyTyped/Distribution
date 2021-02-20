@@ -1,14 +1,15 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FilterType extends js.Object
+sealed trait FilterType extends StObject
 @JSGlobal("tableau.FilterType")
 @js.native
-object FilterType extends js.Object {
+object FilterType extends StObject {
   
   /** Categorical filters are used to filter to a set of values within the domain. */
   @js.native

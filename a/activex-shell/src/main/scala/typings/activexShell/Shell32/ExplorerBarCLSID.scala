@@ -4,6 +4,7 @@ import typings.activexShell.activexShellStrings.`Leftcurlybracket30D02401-6A81-1
 import typings.activexShell.activexShellStrings.`LeftcurlybracketEFA24E61-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`
 import typings.activexShell.activexShellStrings.`LeftcurlybracketEFA24E62-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`
 import typings.activexShell.activexShellStrings.`LeftcurlybracketEFA24E64-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShell.activexShellStrings.`LeftcurlybracketEFA24E62-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`
   - typings.activexShell.activexShellStrings.`Leftcurlybracket30D02401-6A81-11d0-8274-00C04FD5AE38Rightcurlybracket`
 */
-trait ExplorerBarCLSID extends js.Object
+trait ExplorerBarCLSID extends StObject
 object ExplorerBarCLSID {
   
   @scala.inline

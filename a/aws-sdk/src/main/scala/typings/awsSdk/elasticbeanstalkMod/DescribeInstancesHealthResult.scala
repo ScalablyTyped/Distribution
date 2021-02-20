@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeInstancesHealthResult extends js.Object {
+trait DescribeInstancesHealthResult extends StObject {
   
   /**
     * Detailed health information about each instance. The output differs slightly between Linux and Windows environments. There is a difference in the members that are supported under the &lt;CPUUtilization&gt; type.
@@ -31,39 +32,27 @@ object DescribeInstancesHealthResult {
   }
   
   @scala.inline
-  implicit class DescribeInstancesHealthResultOps[Self <: DescribeInstancesHealthResult] (val x: Self) extends AnyVal {
+  implicit class DescribeInstancesHealthResultMutableBuilder[Self <: DescribeInstancesHealthResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceHealthList(value: InstanceHealthList): Self = StObject.set(x, "InstanceHealthList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceHealthListUndefined: Self = StObject.set(x, "InstanceHealthList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceHealthListVarargs(value: SingleInstanceHealth*): Self = StObject.set(x, "InstanceHealthList", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceHealthListVarargs(value: SingleInstanceHealth*): Self = this.set("InstanceHealthList", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceHealthList(value: InstanceHealthList): Self = this.set("InstanceHealthList", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteInstanceHealthList: Self = this.set("InstanceHealthList", js.undefined)
+    def setRefreshedAt(value: RefreshedAt): Self = StObject.set(x, "RefreshedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRefreshedAt(value: RefreshedAt): Self = this.set("RefreshedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshedAt: Self = this.set("RefreshedAt", js.undefined)
+    def setRefreshedAtUndefined: Self = StObject.set(x, "RefreshedAt", js.undefined)
   }
 }

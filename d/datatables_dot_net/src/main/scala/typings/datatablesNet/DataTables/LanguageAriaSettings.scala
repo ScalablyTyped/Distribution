@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LanguageAriaSettings extends js.Object {
+trait LanguageAriaSettings extends StObject {
   
   var paginate: js.UndefOr[LanguagePaginateSettings] = js.native
   
@@ -22,30 +23,18 @@ object LanguageAriaSettings {
   }
   
   @scala.inline
-  implicit class LanguageAriaSettingsOps[Self <: LanguageAriaSettings] (val x: Self) extends AnyVal {
+  implicit class LanguageAriaSettingsMutableBuilder[Self <: LanguageAriaSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaginate(value: LanguagePaginateSettings): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSortAscending(value: String): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortAscending(value: String): Self = this.set("sortAscending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortDescending(value: String): Self = this.set("sortDescending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaginate(value: LanguagePaginateSettings): Self = this.set("paginate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaginate: Self = this.set("paginate", js.undefined)
+    def setSortDescending(value: String): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
   }
 }

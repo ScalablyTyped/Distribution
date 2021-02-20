@@ -1,11 +1,12 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DraggableEvent extends js.Object {
+trait DraggableEvent extends StObject {
   
   var element: js.UndefOr[JQuery | js.Object] = js.native
   
@@ -30,60 +31,48 @@ object DraggableEvent {
   }
   
   @scala.inline
-  implicit class DraggableEventOps[Self <: DraggableEvent] (val x: Self) extends AnyVal {
+  implicit class DraggableEventMutableBuilder[Self <: DraggableEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: JQuery | js.Object): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: js.Object): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: JQuery | js.Object): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setOffset(value: js.Object): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: js.Object): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setPos(value: Postion): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: js.Object): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPosUndefined: Self = StObject.set(x, "pos", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setSmallOffset(value: js.Object): Self = StObject.set(x, "smallOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPos(value: Postion): Self = this.set("pos", value.asInstanceOf[js.Any])
+    def setSmallOffsetUndefined: Self = StObject.set(x, "smallOffset", js.undefined)
     
     @scala.inline
-    def deletePos: Self = this.set("pos", js.undefined)
+    def setStartOffset(value: js.Object): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallOffset(value: js.Object): Self = this.set("smallOffset", value.asInstanceOf[js.Any])
+    def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
     
     @scala.inline
-    def deleteSmallOffset: Self = this.set("smallOffset", js.undefined)
+    def setTarget(value: JQuery | js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartOffset(value: js.Object): Self = this.set("startOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartOffset: Self = this.set("startOffset", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: JQuery | js.Object): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

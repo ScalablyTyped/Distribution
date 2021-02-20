@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePolicyVersionResponse extends js.Object {
+trait CreatePolicyVersionResponse extends StObject {
   
   /**
     * A structure containing details about the new policy version.
@@ -21,24 +22,12 @@ object CreatePolicyVersionResponse {
   }
   
   @scala.inline
-  implicit class CreatePolicyVersionResponseOps[Self <: CreatePolicyVersionResponse] (val x: Self) extends AnyVal {
+  implicit class CreatePolicyVersionResponseMutableBuilder[Self <: CreatePolicyVersionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyVersion(value: PolicyVersion): Self = StObject.set(x, "PolicyVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyVersion(value: PolicyVersion): Self = this.set("PolicyVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyVersion: Self = this.set("PolicyVersion", js.undefined)
+    def setPolicyVersionUndefined: Self = StObject.set(x, "PolicyVersion", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.popcorn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopcornLocale extends js.Object {
+trait PopcornLocale extends StObject {
   
   def get(): String = js.native
   
@@ -20,24 +21,12 @@ object PopcornLocale {
   }
   
   @scala.inline
-  implicit class PopcornLocaleOps[Self <: PopcornLocale] (val x: Self) extends AnyVal {
+  implicit class PopcornLocaleMutableBuilder[Self <: PopcornLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet(value: () => String): Self = this.set("get", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: String => js.Any): Self = this.set("set", js.Any.fromFunction1(value))
+    def setSet(value: String => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

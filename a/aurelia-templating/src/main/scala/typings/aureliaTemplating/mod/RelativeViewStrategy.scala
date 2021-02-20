@@ -1,12 +1,13 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "RelativeViewStrategy")
 @js.native
-class RelativeViewStrategy protected () extends js.Object {
+class RelativeViewStrategy protected () extends StObject {
   /**
     * Creates an instance of RelativeViewStrategy.
     * @param path The relative path to the view.

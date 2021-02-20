@@ -3,12 +3,13 @@ package typings.bootpag
 import typings.bootpag.JqueryBootpag.Options
 import typings.bootpag.JqueryBootpag.PageEventHandler
 import typings.bootpag.bootpagStrings.page
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * jQuery Bootpag plugin main method
@@ -32,24 +33,12 @@ object JQuery {
   }
   
   @scala.inline
-  implicit class JQueryOps[Self <: JQuery] (val x: Self) extends AnyVal {
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBootpag(value: Options => JQuery): Self = StObject.set(x, "bootpag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBootpag(value: Options => JQuery): Self = this.set("bootpag", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOn(value: (page, PageEventHandler) => JQuery): Self = this.set("on", js.Any.fromFunction2(value))
+    def setOn(value: (page, PageEventHandler) => JQuery): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

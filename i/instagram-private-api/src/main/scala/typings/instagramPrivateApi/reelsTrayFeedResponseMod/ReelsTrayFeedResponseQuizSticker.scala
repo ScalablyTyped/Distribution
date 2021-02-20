@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReelsTrayFeedResponseQuizSticker extends js.Object {
+trait ReelsTrayFeedResponseQuizSticker extends StObject {
   
   var correct_answer: Double = js.native
   
@@ -47,51 +48,39 @@ object ReelsTrayFeedResponseQuizSticker {
   }
   
   @scala.inline
-  implicit class ReelsTrayFeedResponseQuizStickerOps[Self <: ReelsTrayFeedResponseQuizSticker] (val x: Self) extends AnyVal {
+  implicit class ReelsTrayFeedResponseQuizStickerMutableBuilder[Self <: ReelsTrayFeedResponseQuizSticker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrect_answer(value: Double): Self = StObject.set(x, "correct_answer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrect_answer(value: Double): Self = this.set("correct_answer", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_background_color(value: String): Self = this.set("end_background_color", value.asInstanceOf[js.Any])
+    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinished(value: Boolean): Self = this.set("finished", value.asInstanceOf[js.Any])
+    def setQuiz_id(value: String): Self = StObject.set(x, "quiz_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestion(value: String): Self = this.set("question", value.asInstanceOf[js.Any])
+    def setTallies(value: js.Array[ReelsTrayFeedResponseTalliesItem]): Self = StObject.set(x, "tallies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuiz_id(value: String): Self = this.set("quiz_id", value.asInstanceOf[js.Any])
+    def setTalliesVarargs(value: ReelsTrayFeedResponseTalliesItem*): Self = StObject.set(x, "tallies", js.Array(value :_*))
     
     @scala.inline
-    def setStart_background_color(value: String): Self = this.set("start_background_color", value.asInstanceOf[js.Any])
+    def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTalliesVarargs(value: ReelsTrayFeedResponseTalliesItem*): Self = this.set("tallies", js.Array(value :_*))
-    
-    @scala.inline
-    def setTallies(value: js.Array[ReelsTrayFeedResponseTalliesItem]): Self = this.set("tallies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText_color(value: String): Self = this.set("text_color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewer_can_answer(value: Boolean): Self = this.set("viewer_can_answer", value.asInstanceOf[js.Any])
+    def setViewer_can_answer(value: Boolean): Self = StObject.set(x, "viewer_can_answer", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetJourneyDateRangeKpiResponse extends js.Object {
+trait GetJourneyDateRangeKpiResponse extends StObject {
   
   var JourneyDateRangeKpiResponse: typings.awsSdk.pinpointMod.JourneyDateRangeKpiResponse = js.native
 }
@@ -18,21 +19,9 @@ object GetJourneyDateRangeKpiResponse {
   }
   
   @scala.inline
-  implicit class GetJourneyDateRangeKpiResponseOps[Self <: GetJourneyDateRangeKpiResponse] (val x: Self) extends AnyVal {
+  implicit class GetJourneyDateRangeKpiResponseMutableBuilder[Self <: GetJourneyDateRangeKpiResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJourneyDateRangeKpiResponse(value: JourneyDateRangeKpiResponse): Self = this.set("JourneyDateRangeKpiResponse", value.asInstanceOf[js.Any])
+    def setJourneyDateRangeKpiResponse(value: JourneyDateRangeKpiResponse): Self = StObject.set(x, "JourneyDateRangeKpiResponse", value.asInstanceOf[js.Any])
   }
 }

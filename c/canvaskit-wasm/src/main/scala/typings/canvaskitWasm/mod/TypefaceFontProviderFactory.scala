@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypefaceFontProviderFactory extends js.Object {
+trait TypefaceFontProviderFactory extends StObject {
   
   /**
     * Return an empty TypefaceFontProvider
@@ -21,21 +22,9 @@ object TypefaceFontProviderFactory {
   }
   
   @scala.inline
-  implicit class TypefaceFontProviderFactoryOps[Self <: TypefaceFontProviderFactory] (val x: Self) extends AnyVal {
+  implicit class TypefaceFontProviderFactoryMutableBuilder[Self <: TypefaceFontProviderFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMake(value: () => TypefaceFontProvider): Self = this.set("Make", js.Any.fromFunction0(value))
+    def setMake(value: () => TypefaceFontProvider): Self = StObject.set(x, "Make", js.Any.fromFunction0(value))
   }
 }

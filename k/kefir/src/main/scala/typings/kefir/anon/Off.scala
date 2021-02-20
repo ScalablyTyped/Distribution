@@ -1,11 +1,12 @@
 package typings.kefir.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Off extends js.Object {
+trait Off extends StObject {
   
   var off: js.Function = js.native
   
@@ -20,24 +21,12 @@ object Off {
   }
   
   @scala.inline
-  implicit class OffOps[Self <: Off] (val x: Self) extends AnyVal {
+  implicit class OffMutableBuilder[Self <: Off] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOff(value: js.Function): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOff(value: js.Function): Self = this.set("off", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOn(value: js.Function): Self = this.set("on", value.asInstanceOf[js.Any])
+    def setOn(value: js.Function): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
   }
 }

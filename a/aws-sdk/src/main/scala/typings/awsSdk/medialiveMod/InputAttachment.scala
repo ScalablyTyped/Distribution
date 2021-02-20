@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputAttachment extends js.Object {
+trait InputAttachment extends StObject {
   
   /**
     * User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input.
@@ -36,42 +37,30 @@ object InputAttachment {
   }
   
   @scala.inline
-  implicit class InputAttachmentOps[Self <: InputAttachment] (val x: Self) extends AnyVal {
+  implicit class InputAttachmentMutableBuilder[Self <: InputAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticInputFailoverSettings(value: AutomaticInputFailoverSettings): Self = StObject.set(x, "AutomaticInputFailoverSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticInputFailoverSettingsUndefined: Self = StObject.set(x, "AutomaticInputFailoverSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputAttachmentName(value: string): Self = StObject.set(x, "InputAttachmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticInputFailoverSettings(value: AutomaticInputFailoverSettings): Self = this.set("AutomaticInputFailoverSettings", value.asInstanceOf[js.Any])
+    def setInputAttachmentNameUndefined: Self = StObject.set(x, "InputAttachmentName", js.undefined)
     
     @scala.inline
-    def deleteAutomaticInputFailoverSettings: Self = this.set("AutomaticInputFailoverSettings", js.undefined)
+    def setInputId(value: string): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputAttachmentName(value: string): Self = this.set("InputAttachmentName", value.asInstanceOf[js.Any])
+    def setInputIdUndefined: Self = StObject.set(x, "InputId", js.undefined)
     
     @scala.inline
-    def deleteInputAttachmentName: Self = this.set("InputAttachmentName", js.undefined)
+    def setInputSettings(value: InputSettings): Self = StObject.set(x, "InputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputId(value: string): Self = this.set("InputId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputId: Self = this.set("InputId", js.undefined)
-    
-    @scala.inline
-    def setInputSettings(value: InputSettings): Self = this.set("InputSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputSettings: Self = this.set("InputSettings", js.undefined)
+    def setInputSettingsUndefined: Self = StObject.set(x, "InputSettings", js.undefined)
   }
 }

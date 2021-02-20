@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListNotebookExecutionsInput extends js.Object {
+trait ListNotebookExecutionsInput extends StObject {
   
   /**
     * The unique ID of the editor associated with the notebook execution.
@@ -41,48 +42,36 @@ object ListNotebookExecutionsInput {
   }
   
   @scala.inline
-  implicit class ListNotebookExecutionsInputOps[Self <: ListNotebookExecutionsInput] (val x: Self) extends AnyVal {
+  implicit class ListNotebookExecutionsInputMutableBuilder[Self <: ListNotebookExecutionsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEditorId(value: XmlStringMaxLen256): Self = StObject.set(x, "EditorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditorIdUndefined: Self = StObject.set(x, "EditorId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: Date): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorId(value: XmlStringMaxLen256): Self = this.set("EditorId", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
     
     @scala.inline
-    def deleteEditorId: Self = this.set("EditorId", js.undefined)
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Date): Self = this.set("From", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("From", js.undefined)
+    def setStatus(value: NotebookExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setTo(value: Date): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: NotebookExecutionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTo(value: Date): Self = this.set("To", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("To", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }
 }

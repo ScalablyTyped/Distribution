@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefsArrowOptions extends js.Object {
+trait DefsArrowOptions extends StObject {
   
   var children: js.UndefOr[js.Array[DefsOptions]] = js.native
   
@@ -32,69 +33,57 @@ object DefsArrowOptions {
   }
   
   @scala.inline
-  implicit class DefsArrowOptionsOps[Self <: DefsArrowOptions] (val x: Self) extends AnyVal {
+  implicit class DefsArrowOptionsMutableBuilder[Self <: DefsArrowOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[DefsOptions]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: DefsOptions*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: DefsOptions*): Self = this.set("children", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[DefsOptions]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setMarkerHeight(value: Double): Self = StObject.set(x, "markerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMarkerHeightUndefined: Self = StObject.set(x, "markerHeight", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMarkerWidth(value: Double): Self = StObject.set(x, "markerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerHeight(value: Double): Self = this.set("markerHeight", value.asInstanceOf[js.Any])
+    def setMarkerWidthUndefined: Self = StObject.set(x, "markerWidth", js.undefined)
     
     @scala.inline
-    def deleteMarkerHeight: Self = this.set("markerHeight", js.undefined)
+    def setRefX(value: Double): Self = StObject.set(x, "refX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerWidth(value: Double): Self = this.set("markerWidth", value.asInstanceOf[js.Any])
+    def setRefXUndefined: Self = StObject.set(x, "refX", js.undefined)
     
     @scala.inline
-    def deleteMarkerWidth: Self = this.set("markerWidth", js.undefined)
+    def setRefY(value: Double): Self = StObject.set(x, "refY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefX(value: Double): Self = this.set("refX", value.asInstanceOf[js.Any])
+    def setRefYUndefined: Self = StObject.set(x, "refY", js.undefined)
     
     @scala.inline
-    def deleteRefX: Self = this.set("refX", js.undefined)
+    def setRender(value: Boolean): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefY(value: Double): Self = this.set("refY", value.asInstanceOf[js.Any])
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deleteRefY: Self = this.set("refY", js.undefined)
+    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: Boolean): Self = this.set("render", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
-    
-    @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagName: Self = this.set("tagName", js.undefined)
+    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }

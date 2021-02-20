@@ -1,5 +1,6 @@
 package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * deeplinking. This endpoint is meant for only iOS requests.
   */
 @js.native
-trait SchemaGetIosReopenAttributionRequest extends js.Object {
+trait SchemaGetIosReopenAttributionRequest extends StObject {
   
   /**
     * APP bundle ID.
@@ -39,36 +40,24 @@ object SchemaGetIosReopenAttributionRequest {
   }
   
   @scala.inline
-  implicit class SchemaGetIosReopenAttributionRequestOps[Self <: SchemaGetIosReopenAttributionRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGetIosReopenAttributionRequestMutableBuilder[Self <: SchemaGetIosReopenAttributionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestedLink(value: String): Self = StObject.set(x, "requestedLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: String): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    def setRequestedLinkUndefined: Self = StObject.set(x, "requestedLink", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedLink(value: String): Self = this.set("requestedLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedLink: Self = this.set("requestedLink", js.undefined)
-    
-    @scala.inline
-    def setSdkVersion(value: String): Self = this.set("sdkVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSdkVersion: Self = this.set("sdkVersion", js.undefined)
+    def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
   }
 }

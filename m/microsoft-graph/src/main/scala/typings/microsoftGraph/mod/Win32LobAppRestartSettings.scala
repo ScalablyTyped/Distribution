@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Win32LobAppRestartSettings extends js.Object {
+trait Win32LobAppRestartSettings extends StObject {
   
   // The number of minutes before the restart time to display the countdown dialog for pending restarts.
   var countdownDisplayBeforeRestartInMinutes: js.UndefOr[Double] = js.native
@@ -25,39 +26,27 @@ object Win32LobAppRestartSettings {
   }
   
   @scala.inline
-  implicit class Win32LobAppRestartSettingsOps[Self <: Win32LobAppRestartSettings] (val x: Self) extends AnyVal {
+  implicit class Win32LobAppRestartSettingsMutableBuilder[Self <: Win32LobAppRestartSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountdownDisplayBeforeRestartInMinutes(value: Double): Self = StObject.set(x, "countdownDisplayBeforeRestartInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountdownDisplayBeforeRestartInMinutesUndefined: Self = StObject.set(x, "countdownDisplayBeforeRestartInMinutes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGracePeriodInMinutes(value: Double): Self = StObject.set(x, "gracePeriodInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountdownDisplayBeforeRestartInMinutes(value: Double): Self = this.set("countdownDisplayBeforeRestartInMinutes", value.asInstanceOf[js.Any])
+    def setGracePeriodInMinutesUndefined: Self = StObject.set(x, "gracePeriodInMinutes", js.undefined)
     
     @scala.inline
-    def deleteCountdownDisplayBeforeRestartInMinutes: Self = this.set("countdownDisplayBeforeRestartInMinutes", js.undefined)
+    def setRestartNotificationSnoozeDurationInMinutes(value: NullableOption[Double]): Self = StObject.set(x, "restartNotificationSnoozeDurationInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGracePeriodInMinutes(value: Double): Self = this.set("gracePeriodInMinutes", value.asInstanceOf[js.Any])
+    def setRestartNotificationSnoozeDurationInMinutesNull: Self = StObject.set(x, "restartNotificationSnoozeDurationInMinutes", null)
     
     @scala.inline
-    def deleteGracePeriodInMinutes: Self = this.set("gracePeriodInMinutes", js.undefined)
-    
-    @scala.inline
-    def setRestartNotificationSnoozeDurationInMinutes(value: NullableOption[Double]): Self = this.set("restartNotificationSnoozeDurationInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestartNotificationSnoozeDurationInMinutes: Self = this.set("restartNotificationSnoozeDurationInMinutes", js.undefined)
-    
-    @scala.inline
-    def setRestartNotificationSnoozeDurationInMinutesNull: Self = this.set("restartNotificationSnoozeDurationInMinutes", null)
+    def setRestartNotificationSnoozeDurationInMinutesUndefined: Self = StObject.set(x, "restartNotificationSnoozeDurationInMinutes", js.undefined)
   }
 }

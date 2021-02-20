@@ -2,6 +2,7 @@ package typings.knockback.Knockback
 
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,27 +30,15 @@ object ViewModel {
   }
   
   @scala.inline
-  implicit class ViewModelOps[Self <: ViewModel] (val x: Self) extends AnyVal {
+  implicit class ViewModelMutableBuilder[Self <: ViewModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtend(value: js.Any => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModel(value: () => Model[_, ModelSetOptions, js.Object]): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtend(value: js.Any => js.Any): Self = this.set("extend", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setModel(value: () => Model[_, ModelSetOptions, js.Object]): Self = this.set("model", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShareOptions(value: () => ViewModelOptions): Self = this.set("shareOptions", js.Any.fromFunction0(value))
+    def setShareOptions(value: () => ViewModelOptions): Self = StObject.set(x, "shareOptions", js.Any.fromFunction0(value))
   }
 }

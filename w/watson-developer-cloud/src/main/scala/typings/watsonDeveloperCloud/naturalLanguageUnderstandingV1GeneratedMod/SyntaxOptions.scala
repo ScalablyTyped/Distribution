@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returns tokens and sentences from the input text. */
 @js.native
-trait SyntaxOptions extends js.Object {
+trait SyntaxOptions extends StObject {
   
   /** Set this to `true` to return sentence information. */
   var sentences: js.UndefOr[Boolean] = js.native
@@ -23,30 +24,18 @@ object SyntaxOptions {
   }
   
   @scala.inline
-  implicit class SyntaxOptionsOps[Self <: SyntaxOptions] (val x: Self) extends AnyVal {
+  implicit class SyntaxOptionsMutableBuilder[Self <: SyntaxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSentences(value: Boolean): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTokens(value: SyntaxOptionsTokens): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentences(value: Boolean): Self = this.set("sentences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentences: Self = this.set("sentences", js.undefined)
-    
-    @scala.inline
-    def setTokens(value: SyntaxOptionsTokens): Self = this.set("tokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokens: Self = this.set("tokens", js.undefined)
+    def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
   }
 }

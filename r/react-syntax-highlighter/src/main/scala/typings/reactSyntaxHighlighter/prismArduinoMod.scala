@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/prism/arduino", JSImport.Namespace)
-@js.native
-object prismArduinoMod extends js.Object {
+object prismArduinoMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/prism/arduino", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

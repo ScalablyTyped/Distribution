@@ -3,37 +3,47 @@ package typings.dateFns
 import typings.dateFns.anon.UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
 import typings.dateFns.anon.UseAdditionalWeekYearTokensWeekStartsOn
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/parse", JSImport.Namespace)
-@js.native
-object esmParseMod extends js.Object {
+object esmParseMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/esm/parse", JSImport.Default)
+    @js.native
     def apply(dateString: String, formatString: String, referenceDate: Double): Date = js.native
+    @JSImport("date-fns/esm/parse", JSImport.Default)
+    @js.native
     def apply(
       dateString: String,
       formatString: String,
       referenceDate: Double,
       options: UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
     ): Date = js.native
+    @JSImport("date-fns/esm/parse", JSImport.Default)
+    @js.native
     def apply(
       dateString: String,
       formatString: String,
       referenceDate: Double,
       options: UseAdditionalWeekYearTokensWeekStartsOn
     ): Date = js.native
+    @JSImport("date-fns/esm/parse", JSImport.Default)
+    @js.native
     def apply(dateString: String, formatString: String, referenceDate: Date): Date = js.native
+    @JSImport("date-fns/esm/parse", JSImport.Default)
+    @js.native
     def apply(
       dateString: String,
       formatString: String,
       referenceDate: Date,
       options: UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
     ): Date = js.native
+    @JSImport("date-fns/esm/parse", JSImport.Default)
+    @js.native
     def apply(
       dateString: String,
       formatString: String,

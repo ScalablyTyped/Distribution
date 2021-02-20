@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BadgeTemplateType extends js.Object
+sealed trait BadgeTemplateType extends StObject
 /** Specifies the template to use for a tile's badge overlay. Used by BadgeUpdateManager.getTemplateContent . */
 @JSGlobal("Windows.UI.Notifications.BadgeTemplateType")
 @js.native
-object BadgeTemplateType extends js.Object {
+object BadgeTemplateType extends StObject {
   
   /** A system-provided glyph image. For more information, see Badge overview. */
   @js.native

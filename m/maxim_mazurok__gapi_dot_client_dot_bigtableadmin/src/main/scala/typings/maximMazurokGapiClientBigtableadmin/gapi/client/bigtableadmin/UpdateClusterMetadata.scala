@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateClusterMetadata extends js.Object {
+trait UpdateClusterMetadata extends StObject {
   
   /** The time at which the operation failed or was completed successfully. */
   var finishTime: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object UpdateClusterMetadata {
   }
   
   @scala.inline
-  implicit class UpdateClusterMetadataOps[Self <: UpdateClusterMetadata] (val x: Self) extends AnyVal {
+  implicit class UpdateClusterMetadataMutableBuilder[Self <: UpdateClusterMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinishTimeUndefined: Self = StObject.set(x, "finishTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalRequest(value: Cluster): Self = StObject.set(x, "originalRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishTime(value: String): Self = this.set("finishTime", value.asInstanceOf[js.Any])
+    def setOriginalRequestUndefined: Self = StObject.set(x, "originalRequest", js.undefined)
     
     @scala.inline
-    def deleteFinishTime: Self = this.set("finishTime", js.undefined)
+    def setRequestTime(value: String): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalRequest(value: Cluster): Self = this.set("originalRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalRequest: Self = this.set("originalRequest", js.undefined)
-    
-    @scala.inline
-    def setRequestTime(value: String): Self = this.set("requestTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestTime: Self = this.set("requestTime", js.undefined)
+    def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
   }
 }

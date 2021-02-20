@@ -2,12 +2,13 @@ package typings.wxServerSdk.anon
 
 import typings.wxServerSdk.mod.Point
 import typings.wxServerSdk.wxServerSdkBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceField extends js.Object {
+trait DistanceField extends StObject {
   
   var distanceField: String = js.native
   

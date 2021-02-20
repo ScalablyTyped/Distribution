@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountStatusStatistics extends js.Object {
+trait AccountStatusStatistics extends StObject {
   
   /** Number of active offers. */
   var active: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object AccountStatusStatistics {
   }
   
   @scala.inline
-  implicit class AccountStatusStatisticsOps[Self <: AccountStatusStatistics] (val x: Self) extends AnyVal {
+  implicit class AccountStatusStatisticsMutableBuilder[Self <: AccountStatusStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisapproved(value: String): Self = StObject.set(x, "disapproved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setDisapprovedUndefined: Self = StObject.set(x, "disapproved", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setExpiring(value: String): Self = StObject.set(x, "expiring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisapproved(value: String): Self = this.set("disapproved", value.asInstanceOf[js.Any])
+    def setExpiringUndefined: Self = StObject.set(x, "expiring", js.undefined)
     
     @scala.inline
-    def deleteDisapproved: Self = this.set("disapproved", js.undefined)
+    def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiring(value: String): Self = this.set("expiring", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiring: Self = this.set("expiring", js.undefined)
-    
-    @scala.inline
-    def setPending(value: String): Self = this.set("pending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePending: Self = this.set("pending", js.undefined)
+    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
   }
 }

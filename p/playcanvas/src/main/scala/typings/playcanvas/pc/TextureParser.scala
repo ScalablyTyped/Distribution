@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.playcanvas.anon.Original
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and opening of texture assets.
   */
 @js.native
-trait TextureParser extends js.Object {
+trait TextureParser extends StObject {
   
   /**
     * Load the texture from the remote URL. When loaded (or failed),

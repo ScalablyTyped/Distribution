@@ -1,11 +1,12 @@
 package typings.safariExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafariWebPageProxy extends js.Object {
+trait SafariWebPageProxy extends StObject {
   
   def dispatchMessage(name: String): Unit = js.native
   def dispatchMessage(name: String, message: js.Any): Unit = js.native

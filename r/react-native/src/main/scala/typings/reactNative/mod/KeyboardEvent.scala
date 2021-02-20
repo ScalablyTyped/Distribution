@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyboardEvent extends js.Object {
+trait KeyboardEvent extends StObject {
   
   var duration: Double = js.native
   
@@ -32,33 +33,21 @@ object KeyboardEvent {
   }
   
   @scala.inline
-  implicit class KeyboardEventOps[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
+  implicit class KeyboardEventMutableBuilder[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEasing(value: KeyboardEventEasing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndCoordinates(value: ScreenRect): Self = StObject.set(x, "endCoordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setIsEventFromThisApp(value: Boolean): Self = StObject.set(x, "isEventFromThisApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: KeyboardEventEasing): Self = this.set("easing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndCoordinates(value: ScreenRect): Self = this.set("endCoordinates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsEventFromThisApp(value: Boolean): Self = this.set("isEventFromThisApp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartCoordinates(value: ScreenRect): Self = this.set("startCoordinates", value.asInstanceOf[js.Any])
+    def setStartCoordinates(value: ScreenRect): Self = StObject.set(x, "startCoordinates", value.asInstanceOf[js.Any])
   }
 }

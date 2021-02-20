@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinalHyperParameterTuningJobObjectiveMetric extends js.Object {
+trait FinalHyperParameterTuningJobObjectiveMetric extends StObject {
   
   /**
     * The name of the objective metric.
@@ -31,30 +32,18 @@ object FinalHyperParameterTuningJobObjectiveMetric {
   }
   
   @scala.inline
-  implicit class FinalHyperParameterTuningJobObjectiveMetricOps[Self <: FinalHyperParameterTuningJobObjectiveMetric] (val x: Self) extends AnyVal {
+  implicit class FinalHyperParameterTuningJobObjectiveMetricMutableBuilder[Self <: FinalHyperParameterTuningJobObjectiveMetric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: HyperParameterTuningJobObjectiveType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: MetricValue): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: HyperParameterTuningJobObjectiveType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setValue(value: MetricValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

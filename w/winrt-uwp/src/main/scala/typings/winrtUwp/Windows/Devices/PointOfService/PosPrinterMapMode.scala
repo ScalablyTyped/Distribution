@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PosPrinterMapMode extends js.Object
+sealed trait PosPrinterMapMode extends StObject
 /** Describes the valid units of measure for point-of-service printers. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterMapMode")
 @js.native
-object PosPrinterMapMode extends js.Object {
+object PosPrinterMapMode extends StObject {
   
   /** The dot width for the point-of-service printer. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAccountAuthorizationDetailsResponse extends js.Object {
+trait GetAccountAuthorizationDetailsResponse extends StObject {
   
   /**
     * A list containing information about IAM groups.
@@ -46,66 +47,54 @@ object GetAccountAuthorizationDetailsResponse {
   }
   
   @scala.inline
-  implicit class GetAccountAuthorizationDetailsResponseOps[Self <: GetAccountAuthorizationDetailsResponse] (val x: Self) extends AnyVal {
+  implicit class GetAccountAuthorizationDetailsResponseMutableBuilder[Self <: GetAccountAuthorizationDetailsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupDetailList(value: groupDetailListType): Self = StObject.set(x, "GroupDetailList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupDetailListUndefined: Self = StObject.set(x, "GroupDetailList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupDetailListVarargs(value: GroupDetail*): Self = StObject.set(x, "GroupDetailList", js.Array(value :_*))
     
     @scala.inline
-    def setGroupDetailListVarargs(value: GroupDetail*): Self = this.set("GroupDetailList", js.Array(value :_*))
+    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupDetailList(value: groupDetailListType): Self = this.set("GroupDetailList", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def deleteGroupDetailList: Self = this.set("GroupDetailList", js.undefined)
+    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    def setPolicies(value: ManagedPolicyDetailListType): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setPoliciesVarargs(value: ManagedPolicyDetail*): Self = StObject.set(x, "Policies", js.Array(value :_*))
     
     @scala.inline
-    def setPoliciesVarargs(value: ManagedPolicyDetail*): Self = this.set("Policies", js.Array(value :_*))
+    def setRoleDetailList(value: roleDetailListType): Self = StObject.set(x, "RoleDetailList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicies(value: ManagedPolicyDetailListType): Self = this.set("Policies", value.asInstanceOf[js.Any])
+    def setRoleDetailListUndefined: Self = StObject.set(x, "RoleDetailList", js.undefined)
     
     @scala.inline
-    def deletePolicies: Self = this.set("Policies", js.undefined)
+    def setRoleDetailListVarargs(value: RoleDetail*): Self = StObject.set(x, "RoleDetailList", js.Array(value :_*))
     
     @scala.inline
-    def setRoleDetailListVarargs(value: RoleDetail*): Self = this.set("RoleDetailList", js.Array(value :_*))
+    def setUserDetailList(value: userDetailListType): Self = StObject.set(x, "UserDetailList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleDetailList(value: roleDetailListType): Self = this.set("RoleDetailList", value.asInstanceOf[js.Any])
+    def setUserDetailListUndefined: Self = StObject.set(x, "UserDetailList", js.undefined)
     
     @scala.inline
-    def deleteRoleDetailList: Self = this.set("RoleDetailList", js.undefined)
-    
-    @scala.inline
-    def setUserDetailListVarargs(value: UserDetail*): Self = this.set("UserDetailList", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserDetailList(value: userDetailListType): Self = this.set("UserDetailList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDetailList: Self = this.set("UserDetailList", js.undefined)
+    def setUserDetailListVarargs(value: UserDetail*): Self = StObject.set(x, "UserDetailList", js.Array(value :_*))
   }
 }

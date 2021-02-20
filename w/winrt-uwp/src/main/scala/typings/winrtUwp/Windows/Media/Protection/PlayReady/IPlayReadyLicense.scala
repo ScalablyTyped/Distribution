@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a PlayReady license. */
 @js.native
-trait IPlayReadyLicense extends js.Object {
+trait IPlayReadyLicense extends StObject {
   
   /** Gets the chain depth of the license chain represented by the current IPlayReadyLicense interface. */
   var chainDepth: Double = js.native
@@ -51,39 +52,27 @@ object IPlayReadyLicense {
   }
   
   @scala.inline
-  implicit class IPlayReadyLicenseOps[Self <: IPlayReadyLicense] (val x: Self) extends AnyVal {
+  implicit class IPlayReadyLicenseMutableBuilder[Self <: IPlayReadyLicense] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChainDepth(value: Double): Self = StObject.set(x, "chainDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainAccountID(value: String): Self = StObject.set(x, "domainAccountID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChainDepth(value: Double): Self = this.set("chainDepth", value.asInstanceOf[js.Any])
+    def setExpireAfterFirstPlay(value: Double): Self = StObject.set(x, "expireAfterFirstPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainAccountID(value: String): Self = this.set("domainAccountID", value.asInstanceOf[js.Any])
+    def setFullyEvaluated(value: Boolean): Self = StObject.set(x, "fullyEvaluated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: Date): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    def setGetKIDAtChainDepth(value: Double => String): Self = StObject.set(x, "getKIDAtChainDepth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpireAfterFirstPlay(value: Double): Self = this.set("expireAfterFirstPlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFullyEvaluated(value: Boolean): Self = this.set("fullyEvaluated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetKIDAtChainDepth(value: Double => String): Self = this.set("getKIDAtChainDepth", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUsableForPlay(value: Boolean): Self = this.set("usableForPlay", value.asInstanceOf[js.Any])
+    def setUsableForPlay(value: Boolean): Self = StObject.set(x, "usableForPlay", value.asInstanceOf[js.Any])
   }
 }

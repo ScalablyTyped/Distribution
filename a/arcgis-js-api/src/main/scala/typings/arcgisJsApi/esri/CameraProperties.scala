@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CameraProperties extends js.Object {
+trait CameraProperties extends StObject {
   
   /**
     * The field of view of the camera in degrees.
@@ -44,42 +45,30 @@ object CameraProperties {
   }
   
   @scala.inline
-  implicit class CameraPropertiesOps[Self <: CameraProperties] (val x: Self) extends AnyVal {
+  implicit class CameraPropertiesMutableBuilder[Self <: CameraProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFovUndefined: Self = StObject.set(x, "fov", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFov(value: Double): Self = this.set("fov", value.asInstanceOf[js.Any])
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteFov: Self = this.set("fov", js.undefined)
+    def setPosition(value: PointProperties): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: PointProperties): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setTilt(value: Double): Self = this.set("tilt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTilt: Self = this.set("tilt", js.undefined)
+    def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
   }
 }

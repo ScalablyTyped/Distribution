@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.sharedSecret
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
-trait WorkforceIntegrationEncryptionProtocol extends js.Object
+trait WorkforceIntegrationEncryptionProtocol extends StObject
 object WorkforceIntegrationEncryptionProtocol {
   
   @scala.inline

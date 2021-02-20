@@ -1,6 +1,7 @@
 package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,60 +33,48 @@ object MapStyleItemStylers {
   }
   
   @scala.inline
-  implicit class MapStyleItemStylersOps[Self <: MapStyleItemStylers] (val x: Self) extends AnyVal {
+  implicit class MapStyleItemStylersMutableBuilder[Self <: MapStyleItemStylers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurZoomRegion(value: String): Self = StObject.set(x, "curZoomRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCurZoomRegionId(value: String): Self = StObject.set(x, "curZoomRegionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setCurZoomRegionIdUndefined: Self = StObject.set(x, "curZoomRegionId", js.undefined)
     
     @scala.inline
-    def setCurZoomRegion(value: String): Self = this.set("curZoomRegion", value.asInstanceOf[js.Any])
+    def setCurZoomRegionUndefined: Self = StObject.set(x, "curZoomRegion", js.undefined)
     
     @scala.inline
-    def deleteCurZoomRegion: Self = this.set("curZoomRegion", js.undefined)
+    def setFontsize(value: String): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurZoomRegionId(value: String): Self = this.set("curZoomRegionId", value.asInstanceOf[js.Any])
+    def setFontsizeUndefined: Self = StObject.set(x, "fontsize", js.undefined)
     
     @scala.inline
-    def deleteCurZoomRegionId: Self = this.set("curZoomRegionId", js.undefined)
+    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontsize(value: String): Self = this.set("fontsize", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteFontsize: Self = this.set("fontsize", js.undefined)
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: String): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

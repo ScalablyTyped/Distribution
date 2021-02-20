@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalytics.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConversionPathValue extends js.Object {
+trait ConversionPathValue extends StObject {
   
   /** A conversion path dimension value, containing a list of interactions with their attributes. */
   var conversionPathValue: js.UndefOr[js.Array[InteractionType]] = js.native
@@ -22,33 +23,21 @@ object ConversionPathValue {
   }
   
   @scala.inline
-  implicit class ConversionPathValueOps[Self <: ConversionPathValue] (val x: Self) extends AnyVal {
+  implicit class ConversionPathValueMutableBuilder[Self <: ConversionPathValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversionPathValue(value: js.Array[InteractionType]): Self = StObject.set(x, "conversionPathValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversionPathValueUndefined: Self = StObject.set(x, "conversionPathValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversionPathValueVarargs(value: InteractionType*): Self = StObject.set(x, "conversionPathValue", js.Array(value :_*))
     
     @scala.inline
-    def setConversionPathValueVarargs(value: InteractionType*): Self = this.set("conversionPathValue", js.Array(value :_*))
+    def setPrimitiveValue(value: String): Self = StObject.set(x, "primitiveValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionPathValue(value: js.Array[InteractionType]): Self = this.set("conversionPathValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConversionPathValue: Self = this.set("conversionPathValue", js.undefined)
-    
-    @scala.inline
-    def setPrimitiveValue(value: String): Self = this.set("primitiveValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimitiveValue: Self = this.set("primitiveValue", js.undefined)
+    def setPrimitiveValueUndefined: Self = StObject.set(x, "primitiveValue", js.undefined)
   }
 }

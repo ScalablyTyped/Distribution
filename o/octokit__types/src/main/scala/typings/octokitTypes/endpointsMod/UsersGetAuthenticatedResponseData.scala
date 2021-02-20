@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Collaborators
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsersGetAuthenticatedResponseData extends js.Object {
+trait UsersGetAuthenticatedResponseData extends StObject {
   
   var avatar_url: String = js.native
   
@@ -136,135 +137,123 @@ object UsersGetAuthenticatedResponseData {
   }
   
   @scala.inline
-  implicit class UsersGetAuthenticatedResponseDataOps[Self <: UsersGetAuthenticatedResponseData] (val x: Self) extends AnyVal {
+  implicit class UsersGetAuthenticatedResponseDataMutableBuilder[Self <: UsersGetAuthenticatedResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlog(value: String): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatar_url(value: String): Self = this.set("avatar_url", value.asInstanceOf[js.Any])
+    def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBio(value: String): Self = this.set("bio", value.asInstanceOf[js.Any])
+    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlog(value: String): Self = this.set("blog", value.asInstanceOf[js.Any])
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollaborators(value: Double): Self = this.set("collaborators", value.asInstanceOf[js.Any])
+    def setDisk_usage(value: Double): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany(value: String): Self = this.set("company", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setEvents_url(value: String): Self = StObject.set(x, "events_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisk_usage(value: Double): Self = this.set("disk_usage", value.asInstanceOf[js.Any])
+    def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFollowers_url(value: String): Self = StObject.set(x, "followers_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents_url(value: String): Self = this.set("events_url", value.asInstanceOf[js.Any])
+    def setFollowing(value: Double): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowers(value: Double): Self = this.set("followers", value.asInstanceOf[js.Any])
+    def setFollowing_url(value: String): Self = StObject.set(x, "following_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowers_url(value: String): Self = this.set("followers_url", value.asInstanceOf[js.Any])
+    def setGists_url(value: String): Self = StObject.set(x, "gists_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowing(value: Double): Self = this.set("following", value.asInstanceOf[js.Any])
+    def setGravatar_id(value: String): Self = StObject.set(x, "gravatar_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowing_url(value: String): Self = this.set("following_url", value.asInstanceOf[js.Any])
+    def setHireable(value: Boolean): Self = StObject.set(x, "hireable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGists_url(value: String): Self = this.set("gists_url", value.asInstanceOf[js.Any])
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravatar_id(value: String): Self = this.set("gravatar_id", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHireable(value: Boolean): Self = this.set("hireable", value.asInstanceOf[js.Any])
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
+    def setOrganizations_url(value: String): Self = StObject.set(x, "organizations_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwned_private_repos(value: Double): Self = StObject.set(x, "owned_private_repos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def setPlan(value: Collaborators): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizations_url(value: String): Self = this.set("organizations_url", value.asInstanceOf[js.Any])
+    def setPrivate_gists(value: Double): Self = StObject.set(x, "private_gists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwned_private_repos(value: Double): Self = this.set("owned_private_repos", value.asInstanceOf[js.Any])
+    def setPublic_gists(value: Double): Self = StObject.set(x, "public_gists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlan(value: Collaborators): Self = this.set("plan", value.asInstanceOf[js.Any])
+    def setPublic_repos(value: Double): Self = StObject.set(x, "public_repos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivate_gists(value: Double): Self = this.set("private_gists", value.asInstanceOf[js.Any])
+    def setReceived_events_url(value: String): Self = StObject.set(x, "received_events_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublic_gists(value: Double): Self = this.set("public_gists", value.asInstanceOf[js.Any])
+    def setRepos_url(value: String): Self = StObject.set(x, "repos_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublic_repos(value: Double): Self = this.set("public_repos", value.asInstanceOf[js.Any])
+    def setSite_admin(value: Boolean): Self = StObject.set(x, "site_admin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceived_events_url(value: String): Self = this.set("received_events_url", value.asInstanceOf[js.Any])
+    def setStarred_url(value: String): Self = StObject.set(x, "starred_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepos_url(value: String): Self = this.set("repos_url", value.asInstanceOf[js.Any])
+    def setSubscriptions_url(value: String): Self = StObject.set(x, "subscriptions_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSite_admin(value: Boolean): Self = this.set("site_admin", value.asInstanceOf[js.Any])
+    def setTotal_private_repos(value: Double): Self = StObject.set(x, "total_private_repos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarred_url(value: String): Self = this.set("starred_url", value.asInstanceOf[js.Any])
+    def setTwitter_username(value: String): Self = StObject.set(x, "twitter_username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptions_url(value: String): Self = this.set("subscriptions_url", value.asInstanceOf[js.Any])
+    def setTwo_factor_authentication(value: Boolean): Self = StObject.set(x, "two_factor_authentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_private_repos(value: Double): Self = this.set("total_private_repos", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwitter_username(value: String): Self = this.set("twitter_username", value.asInstanceOf[js.Any])
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwo_factor_authentication(value: Boolean): Self = this.set("two_factor_authentication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

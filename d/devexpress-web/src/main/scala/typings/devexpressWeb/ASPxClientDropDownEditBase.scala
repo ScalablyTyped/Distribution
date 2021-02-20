@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,36 +106,24 @@ object ASPxClientDropDownEditBase {
   }
   
   @scala.inline
-  implicit class ASPxClientDropDownEditBaseOps[Self <: ASPxClientDropDownEditBase] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDropDownEditBaseMutableBuilder[Self <: ASPxClientDropDownEditBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustDropDownWindow(value: () => Unit): Self = StObject.set(x, "AdjustDropDownWindow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseUp(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDropDownEditBase]]): Self = StObject.set(x, "CloseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropDown(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDropDownEditBase]]): Self = StObject.set(x, "DropDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustDropDownWindow(value: () => Unit): Self = this.set("AdjustDropDownWindow", js.Any.fromFunction0(value))
+    def setHideDropDown(value: () => Unit): Self = StObject.set(x, "HideDropDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCloseUp(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDropDownEditBase]]): Self = this.set("CloseUp", value.asInstanceOf[js.Any])
+    def setQueryCloseUp(value: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientDropDownEditBase]]): Self = StObject.set(x, "QueryCloseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropDown(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDropDownEditBase]]): Self = this.set("DropDown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHideDropDown(value: () => Unit): Self = this.set("HideDropDown", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryCloseUp(value: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientDropDownEditBase]]): Self = this.set("QueryCloseUp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowDropDown(value: () => Unit): Self = this.set("ShowDropDown", js.Any.fromFunction0(value))
+    def setShowDropDown(value: () => Unit): Self = StObject.set(x, "ShowDropDown", js.Any.fromFunction0(value))
   }
 }

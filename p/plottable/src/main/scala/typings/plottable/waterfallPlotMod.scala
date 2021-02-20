@@ -3,14 +3,14 @@ package typings.plottable
 import typings.plottable.barPlotMod.Bar
 import typings.plottable.commonsMod.IAccessorScaleBinding
 import typings.plottable.interfacesMod.IAccessor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/plots/waterfallPlot", JSImport.Namespace)
-@js.native
-object waterfallPlotMod extends js.Object {
+object waterfallPlotMod {
   
+  @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall")
   @js.native
   class Waterfall[X, Y] () extends Bar[X, Double] {
     
@@ -55,19 +55,46 @@ object waterfallPlotMod extends js.Object {
     def total[T](): IAccessorScaleBinding[T, Boolean] = js.native
   }
   /* static members */
-  @js.native
-  object Waterfall extends js.Object {
+  object Waterfall {
     
-    var _BAR_DECLINE_CLASS: js.Any = js.native
+    @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _BAR_GROWTH_CLASS: js.Any = js.native
+    @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._BAR_DECLINE_CLASS")
+    @js.native
+    def _BAR_DECLINE_CLASS: js.Any = js.native
+    @scala.inline
+    def _BAR_DECLINE_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_DECLINE_CLASS")(x.asInstanceOf[js.Any])
     
-    var _BAR_TOTAL_CLASS: js.Any = js.native
+    @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._BAR_GROWTH_CLASS")
+    @js.native
+    def _BAR_GROWTH_CLASS: js.Any = js.native
+    @scala.inline
+    def _BAR_GROWTH_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_GROWTH_CLASS")(x.asInstanceOf[js.Any])
     
-    var _CONNECTOR_AREA_CLASS: js.Any = js.native
+    @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._BAR_TOTAL_CLASS")
+    @js.native
+    def _BAR_TOTAL_CLASS: js.Any = js.native
+    @scala.inline
+    def _BAR_TOTAL_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_TOTAL_CLASS")(x.asInstanceOf[js.Any])
     
-    var _CONNECTOR_CLASS: js.Any = js.native
+    @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._CONNECTOR_AREA_CLASS")
+    @js.native
+    def _CONNECTOR_AREA_CLASS: js.Any = js.native
+    @scala.inline
+    def _CONNECTOR_AREA_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CONNECTOR_AREA_CLASS")(x.asInstanceOf[js.Any])
     
-    var _TOTAL_KEY: js.Any = js.native
+    @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._CONNECTOR_CLASS")
+    @js.native
+    def _CONNECTOR_CLASS: js.Any = js.native
+    @scala.inline
+    def _CONNECTOR_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CONNECTOR_CLASS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._TOTAL_KEY")
+    @js.native
+    def _TOTAL_KEY: js.Any = js.native
+    @scala.inline
+    def _TOTAL_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOTAL_KEY")(x.asInstanceOf[js.Any])
   }
 }

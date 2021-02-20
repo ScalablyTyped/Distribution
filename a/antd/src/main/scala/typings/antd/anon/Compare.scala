@@ -2,12 +2,13 @@ package typings.antd.anon
 
 import typings.antd.tableInterfaceMod.CompareFn
 import typings.antd.tableInterfaceMod.SortOrder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Compare[RecordType] extends js.Object {
+trait Compare[RecordType] extends StObject {
   
   var compare: js.UndefOr[CompareFn[RecordType]] = js.native
   
@@ -23,30 +24,18 @@ object Compare {
   }
   
   @scala.inline
-  implicit class CompareOps[Self <: Compare[_], RecordType] (val x: Self with Compare[RecordType]) extends AnyVal {
+  implicit class CompareMutableBuilder[Self <: Compare[_], RecordType] (val x: Self with Compare[RecordType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompare(value: (RecordType, RecordType, /* sortOrder */ js.UndefOr[SortOrder]) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiple(value: Double): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompare(value: (RecordType, RecordType, /* sortOrder */ js.UndefOr[SortOrder]) => Double): Self = this.set("compare", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteCompare: Self = this.set("compare", js.undefined)
-    
-    @scala.inline
-    def setMultiple(value: Double): Self = this.set("multiple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

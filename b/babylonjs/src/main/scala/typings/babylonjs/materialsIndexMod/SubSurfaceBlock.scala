@@ -2,6 +2,7 @@ package typings.babylonjs.materialsIndexMod
 
 import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,7 @@ class SubSurfaceBlock protected ()
   def this(name: String) = this()
 }
 /* static members */
-@JSImport("babylonjs/Materials/index", "SubSurfaceBlock")
-@js.native
-object SubSurfaceBlock extends js.Object {
+object SubSurfaceBlock {
   
   /**
     * Gets the main code of the block (fragment side)
@@ -29,6 +28,8 @@ object SubSurfaceBlock extends js.Object {
     * @param worldPosVarName name of the variable holding the world position
     * @returns the shader code
     */
+  @JSImport("babylonjs/Materials/index", "SubSurfaceBlock.GetCode")
+  @js.native
   def GetCode(
     state: NodeMaterialBuildState,
     ssBlock: Nullable[typings.babylonjs.subSurfaceBlockMod.SubSurfaceBlock],

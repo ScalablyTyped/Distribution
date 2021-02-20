@@ -1,17 +1,15 @@
 package typings.angularCompiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/shadow_css", JSImport.Namespace)
-@js.native
-object shadowCssMod extends js.Object {
+object shadowCssMod {
   
-  def processRules(input: String, ruleCallback: js.Function1[/* rule */ CssRule, CssRule]): String = js.native
-  
+  @JSImport("@angular/compiler/src/shadow_css", "CssRule")
   @js.native
-  class CssRule protected () extends js.Object {
+  class CssRule protected () extends StObject {
     def this(selector: String, content: String) = this()
     
     var content: String = js.native
@@ -19,8 +17,9 @@ object shadowCssMod extends js.Object {
     var selector: String = js.native
   }
   
+  @JSImport("@angular/compiler/src/shadow_css", "ShadowCss")
   @js.native
-  class ShadowCss () extends js.Object {
+  class ShadowCss () extends StObject {
     
     var _applySelectorScope: js.Any = js.native
     
@@ -63,4 +62,8 @@ object shadowCssMod extends js.Object {
     
     var strictStyling: Boolean = js.native
   }
+  
+  @JSImport("@angular/compiler/src/shadow_css", "processRules")
+  @js.native
+  def processRules(input: String, ruleCallback: js.Function1[/* rule */ CssRule, CssRule]): String = js.native
 }

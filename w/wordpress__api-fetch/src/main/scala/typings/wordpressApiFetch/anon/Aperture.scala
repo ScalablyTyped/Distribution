@@ -1,11 +1,12 @@
 package typings.wordpressApiFetch.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Aperture extends js.Object {
+trait Aperture extends StObject {
   
   var aperture: String = js.native
   
@@ -53,57 +54,45 @@ object Aperture {
   }
   
   @scala.inline
-  implicit class ApertureOps[Self <: Aperture] (val x: Self) extends AnyVal {
+  implicit class ApertureMutableBuilder[Self <: Aperture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAperture(value: String): Self = StObject.set(x, "aperture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCamera(value: String): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAperture(value: String): Self = this.set("aperture", value.asInstanceOf[js.Any])
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera(value: String): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setCreated_timestamp(value: String): Self = StObject.set(x, "created_timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setCredit(value: String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setFocal_length(value: String): Self = StObject.set(x, "focal_length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_timestamp(value: String): Self = this.set("created_timestamp", value.asInstanceOf[js.Any])
+    def setIso(value: String): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredit(value: String): Self = this.set("credit", value.asInstanceOf[js.Any])
+    def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocal_length(value: String): Self = this.set("focal_length", value.asInstanceOf[js.Any])
+    def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
     @scala.inline
-    def setIso(value: String): Self = this.set("iso", value.asInstanceOf[js.Any])
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywordsVarargs(value: String*): Self = this.set("keywords", js.Array(value :_*))
+    def setShutter_speed(value: String): Self = StObject.set(x, "shutter_speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: js.Array[String]): Self = this.set("keywords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShutter_speed(value: String): Self = this.set("shutter_speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

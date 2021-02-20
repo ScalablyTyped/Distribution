@@ -1,6 +1,7 @@
 package typings.firebaseAuthTypes.mod
 
 import typings.firebaseAuthTypes.anon.DisplayName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphQLScalarTypeConfig extends js.Object {
+trait GraphQLScalarTypeConfig extends StObject {
   
   var description: js.UndefOr[String] = js.native
   
@@ -26,42 +27,30 @@ object GraphQLScalarTypeConfig {
   }
   
   @scala.inline
-  implicit class GraphQLScalarTypeConfigOps[Self <: GraphQLScalarTypeConfig] (val x: Self) extends AnyVal {
+  implicit class GraphQLScalarTypeConfigMutableBuilder[Self <: GraphQLScalarTypeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParseLiteral(value: /* valueAST */ Value => _): Self = StObject.set(x, "parseLiteral", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSerialize(value: js.Any => js.Any): Self = this.set("serialize", js.Any.fromFunction1(value))
+    def setParseLiteralUndefined: Self = StObject.set(x, "parseLiteral", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setParseValue(value: /* value */ js.Any => _): Self = StObject.set(x, "parseValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setParseValueUndefined: Self = StObject.set(x, "parseValue", js.undefined)
     
     @scala.inline
-    def setParseLiteral(value: /* valueAST */ Value => _): Self = this.set("parseLiteral", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteParseLiteral: Self = this.set("parseLiteral", js.undefined)
-    
-    @scala.inline
-    def setParseValue(value: /* value */ js.Any => _): Self = this.set("parseValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteParseValue: Self = this.set("parseValue", js.undefined)
+    def setSerialize(value: js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputTransformer extends js.Object {
+trait InputTransformer extends StObject {
   
   /**
     * Map of JSON paths to be extracted from the event. You can then insert these in the template in InputTemplate to produce the output you want to be sent to the target.  InputPathsMap is an array key-value pairs, where each value is a valid JSON path. You can have as many as 10 key-value pairs. You must use JSON dot notation, not bracket notation. The keys cannot start with "AWS." 
@@ -26,27 +27,15 @@ object InputTransformer {
   }
   
   @scala.inline
-  implicit class InputTransformerOps[Self <: InputTransformer] (val x: Self) extends AnyVal {
+  implicit class InputTransformerMutableBuilder[Self <: InputTransformer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputPathsMap(value: TransformerPaths): Self = StObject.set(x, "InputPathsMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputPathsMapUndefined: Self = StObject.set(x, "InputPathsMap", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputTemplate(value: TransformerInput): Self = this.set("InputTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputPathsMap(value: TransformerPaths): Self = this.set("InputPathsMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputPathsMap: Self = this.set("InputPathsMap", js.undefined)
+    def setInputTemplate(value: TransformerInput): Self = StObject.set(x, "InputTemplate", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetStackPolicyInput extends js.Object {
+trait SetStackPolicyInput extends StObject {
   
   /**
     * The name or unique stack ID that you want to associate a policy with.
@@ -31,33 +32,21 @@ object SetStackPolicyInput {
   }
   
   @scala.inline
-  implicit class SetStackPolicyInputOps[Self <: SetStackPolicyInput] (val x: Self) extends AnyVal {
+  implicit class SetStackPolicyInputMutableBuilder[Self <: SetStackPolicyInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStackPolicyBody(value: StackPolicyBody): Self = StObject.set(x, "StackPolicyBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStackPolicyBodyUndefined: Self = StObject.set(x, "StackPolicyBody", js.undefined)
     
     @scala.inline
-    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    def setStackPolicyURL(value: StackPolicyURL): Self = StObject.set(x, "StackPolicyURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackPolicyBody(value: StackPolicyBody): Self = this.set("StackPolicyBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackPolicyBody: Self = this.set("StackPolicyBody", js.undefined)
-    
-    @scala.inline
-    def setStackPolicyURL(value: StackPolicyURL): Self = this.set("StackPolicyURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackPolicyURL: Self = this.set("StackPolicyURL", js.undefined)
+    def setStackPolicyURLUndefined: Self = StObject.set(x, "StackPolicyURL", js.undefined)
   }
 }

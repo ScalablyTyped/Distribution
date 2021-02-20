@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageScanFindingsSummary extends js.Object {
+trait ImageScanFindingsSummary extends StObject {
   
   /**
     * The image vulnerability counts, sorted by severity.
@@ -31,36 +32,24 @@ object ImageScanFindingsSummary {
   }
   
   @scala.inline
-  implicit class ImageScanFindingsSummaryOps[Self <: ImageScanFindingsSummary] (val x: Self) extends AnyVal {
+  implicit class ImageScanFindingsSummaryMutableBuilder[Self <: ImageScanFindingsSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindingSeverityCounts(value: FindingSeverityCounts): Self = StObject.set(x, "findingSeverityCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindingSeverityCountsUndefined: Self = StObject.set(x, "findingSeverityCounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageScanCompletedAt(value: ScanTimestamp): Self = StObject.set(x, "imageScanCompletedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingSeverityCounts(value: FindingSeverityCounts): Self = this.set("findingSeverityCounts", value.asInstanceOf[js.Any])
+    def setImageScanCompletedAtUndefined: Self = StObject.set(x, "imageScanCompletedAt", js.undefined)
     
     @scala.inline
-    def deleteFindingSeverityCounts: Self = this.set("findingSeverityCounts", js.undefined)
+    def setVulnerabilitySourceUpdatedAt(value: VulnerabilitySourceUpdateTimestamp): Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageScanCompletedAt(value: ScanTimestamp): Self = this.set("imageScanCompletedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageScanCompletedAt: Self = this.set("imageScanCompletedAt", js.undefined)
-    
-    @scala.inline
-    def setVulnerabilitySourceUpdatedAt(value: VulnerabilitySourceUpdateTimestamp): Self = this.set("vulnerabilitySourceUpdatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVulnerabilitySourceUpdatedAt: Self = this.set("vulnerabilitySourceUpdatedAt", js.undefined)
+    def setVulnerabilitySourceUpdatedAtUndefined: Self = StObject.set(x, "vulnerabilitySourceUpdatedAt", js.undefined)
   }
 }

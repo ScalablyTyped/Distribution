@@ -1,12 +1,13 @@
 package typings.baconjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baconjs/types/internal/functionconstruction", JSImport.Namespace)
-@js.native
-object functionconstructionMod extends js.Object {
+object functionconstructionMod {
   
+  @JSImport("baconjs/types/internal/functionconstruction", "makeFunction")
+  @js.native
   def makeFunction(f: js.Function, args: js.Array[_]): js.Any = js.native
 }

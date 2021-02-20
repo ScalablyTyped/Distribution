@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgTreeGridRowSelectorsMethods extends js.Object {
+trait IgTreeGridRowSelectorsMethods extends StObject {
   
   /**
     * Changes the check state of a row by index to specified value
@@ -90,51 +91,39 @@ object IgTreeGridRowSelectorsMethods {
   }
   
   @scala.inline
-  implicit class IgTreeGridRowSelectorsMethodsOps[Self <: IgTreeGridRowSelectorsMethods] (val x: Self) extends AnyVal {
+  implicit class IgTreeGridRowSelectorsMethodsMutableBuilder[Self <: IgTreeGridRowSelectorsMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeCheckState(value: (Double, Boolean) => Unit): Self = StObject.set(x, "changeCheckState", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeCheckStateById(value: (js.Object, Boolean) => Unit): Self = StObject.set(x, "changeCheckStateById", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeCheckState(value: (Double, Boolean) => Unit): Self = this.set("changeCheckState", js.Any.fromFunction2(value))
+    def setCheckStateById(value: js.Object => String): Self = StObject.set(x, "checkStateById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangeCheckStateById(value: (js.Object, Boolean) => Unit): Self = this.set("changeCheckStateById", js.Any.fromFunction2(value))
+    def setCheckedRows(value: () => js.Array[_]): Self = StObject.set(x, "checkedRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeLocale(value: () => Unit): Self = this.set("changeLocale", js.Any.fromFunction0(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckStateById(value: js.Object => String): Self = this.set("checkStateById", js.Any.fromFunction1(value))
+    def setPartiallyCheckedRows(value: () => js.Array[_]): Self = StObject.set(x, "partiallyCheckedRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckedRows(value: () => js.Array[_]): Self = this.set("checkedRows", js.Any.fromFunction0(value))
+    def setRsRenderColgroup(value: () => Unit): Self = StObject.set(x, "rsRenderColgroup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setToggleCheckState(value: Double => Unit): Self = StObject.set(x, "toggleCheckState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPartiallyCheckedRows(value: () => js.Array[_]): Self = this.set("partiallyCheckedRows", js.Any.fromFunction0(value))
+    def setToggleCheckStateById(value: js.Object => Unit): Self = StObject.set(x, "toggleCheckStateById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRsRenderColgroup(value: () => Unit): Self = this.set("rsRenderColgroup", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToggleCheckState(value: Double => Unit): Self = this.set("toggleCheckState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggleCheckStateById(value: js.Object => Unit): Self = this.set("toggleCheckStateById", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUncheckedRows(value: () => js.Array[_]): Self = this.set("uncheckedRows", js.Any.fromFunction0(value))
+    def setUncheckedRows(value: () => js.Array[_]): Self = StObject.set(x, "uncheckedRows", js.Any.fromFunction0(value))
   }
 }

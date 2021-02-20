@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomAvailabilityZone extends js.Object {
+trait CustomAvailabilityZone extends StObject {
   
   /**
     * The identifier of the custom AZ. Amazon RDS generates a unique identifier when a custom AZ is created.
@@ -36,42 +37,30 @@ object CustomAvailabilityZone {
   }
   
   @scala.inline
-  implicit class CustomAvailabilityZoneOps[Self <: CustomAvailabilityZone] (val x: Self) extends AnyVal {
+  implicit class CustomAvailabilityZoneMutableBuilder[Self <: CustomAvailabilityZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomAvailabilityZoneIdUndefined: Self = StObject.set(x, "CustomAvailabilityZoneId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomAvailabilityZoneName(value: String): Self = StObject.set(x, "CustomAvailabilityZoneName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAvailabilityZoneId(value: String): Self = this.set("CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
+    def setCustomAvailabilityZoneNameUndefined: Self = StObject.set(x, "CustomAvailabilityZoneName", js.undefined)
     
     @scala.inline
-    def deleteCustomAvailabilityZoneId: Self = this.set("CustomAvailabilityZoneId", js.undefined)
+    def setCustomAvailabilityZoneStatus(value: String): Self = StObject.set(x, "CustomAvailabilityZoneStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAvailabilityZoneName(value: String): Self = this.set("CustomAvailabilityZoneName", value.asInstanceOf[js.Any])
+    def setCustomAvailabilityZoneStatusUndefined: Self = StObject.set(x, "CustomAvailabilityZoneStatus", js.undefined)
     
     @scala.inline
-    def deleteCustomAvailabilityZoneName: Self = this.set("CustomAvailabilityZoneName", js.undefined)
+    def setVpnDetails(value: VpnDetails): Self = StObject.set(x, "VpnDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAvailabilityZoneStatus(value: String): Self = this.set("CustomAvailabilityZoneStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomAvailabilityZoneStatus: Self = this.set("CustomAvailabilityZoneStatus", js.undefined)
-    
-    @scala.inline
-    def setVpnDetails(value: VpnDetails): Self = this.set("VpnDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnDetails: Self = this.set("VpnDetails", js.undefined)
+    def setVpnDetailsUndefined: Self = StObject.set(x, "VpnDetails", js.undefined)
   }
 }

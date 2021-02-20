@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AndroidRoboTest extends js.Object {
+trait AndroidRoboTest extends StObject {
   
   /** The initial activity that should be used to start the app. Optional */
   var appInitialActivity: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object AndroidRoboTest {
   }
   
   @scala.inline
-  implicit class AndroidRoboTestOps[Self <: AndroidRoboTest] (val x: Self) extends AnyVal {
+  implicit class AndroidRoboTestMutableBuilder[Self <: AndroidRoboTest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppInitialActivity(value: String): Self = StObject.set(x, "appInitialActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppInitialActivityUndefined: Self = StObject.set(x, "appInitialActivity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBootstrapPackageId(value: String): Self = StObject.set(x, "bootstrapPackageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppInitialActivity(value: String): Self = this.set("appInitialActivity", value.asInstanceOf[js.Any])
+    def setBootstrapPackageIdUndefined: Self = StObject.set(x, "bootstrapPackageId", js.undefined)
     
     @scala.inline
-    def deleteAppInitialActivity: Self = this.set("appInitialActivity", js.undefined)
+    def setBootstrapRunnerClass(value: String): Self = StObject.set(x, "bootstrapRunnerClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootstrapPackageId(value: String): Self = this.set("bootstrapPackageId", value.asInstanceOf[js.Any])
+    def setBootstrapRunnerClassUndefined: Self = StObject.set(x, "bootstrapRunnerClass", js.undefined)
     
     @scala.inline
-    def deleteBootstrapPackageId: Self = this.set("bootstrapPackageId", js.undefined)
+    def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootstrapRunnerClass(value: String): Self = this.set("bootstrapRunnerClass", value.asInstanceOf[js.Any])
+    def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
     
     @scala.inline
-    def deleteBootstrapRunnerClass: Self = this.set("bootstrapRunnerClass", js.undefined)
+    def setMaxSteps(value: Double): Self = StObject.set(x, "maxSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDepth(value: Double): Self = this.set("maxDepth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxDepth: Self = this.set("maxDepth", js.undefined)
-    
-    @scala.inline
-    def setMaxSteps(value: Double): Self = this.set("maxSteps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxSteps: Self = this.set("maxSteps", js.undefined)
+    def setMaxStepsUndefined: Self = StObject.set(x, "maxSteps", js.undefined)
   }
 }

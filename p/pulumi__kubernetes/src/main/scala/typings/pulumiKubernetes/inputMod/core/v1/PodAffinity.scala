@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Pod affinity is a group of inter pod affinity scheduling rules.
   */
 @js.native
-trait PodAffinity extends js.Object {
+trait PodAffinity extends StObject {
   
   /**
     * The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
@@ -30,36 +31,24 @@ object PodAffinity {
   }
   
   @scala.inline
-  implicit class PodAffinityOps[Self <: PodAffinity] (val x: Self) extends AnyVal {
+  implicit class PodAffinityMutableBuilder[Self <: PodAffinity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreferredDuringSchedulingIgnoredDuringExecution(value: Input[js.Array[Input[WeightedPodAffinityTerm]]]): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreferredDuringSchedulingIgnoredDuringExecutionUndefined: Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreferredDuringSchedulingIgnoredDuringExecutionVarargs(value: Input[WeightedPodAffinityTerm]*): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", js.Array(value :_*))
     
     @scala.inline
-    def setPreferredDuringSchedulingIgnoredDuringExecutionVarargs(value: Input[WeightedPodAffinityTerm]*): Self = this.set("preferredDuringSchedulingIgnoredDuringExecution", js.Array(value :_*))
+    def setRequiredDuringSchedulingIgnoredDuringExecution(value: Input[js.Array[Input[PodAffinityTerm]]]): Self = StObject.set(x, "requiredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredDuringSchedulingIgnoredDuringExecution(value: Input[js.Array[Input[WeightedPodAffinityTerm]]]): Self = this.set("preferredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
+    def setRequiredDuringSchedulingIgnoredDuringExecutionUndefined: Self = StObject.set(x, "requiredDuringSchedulingIgnoredDuringExecution", js.undefined)
     
     @scala.inline
-    def deletePreferredDuringSchedulingIgnoredDuringExecution: Self = this.set("preferredDuringSchedulingIgnoredDuringExecution", js.undefined)
-    
-    @scala.inline
-    def setRequiredDuringSchedulingIgnoredDuringExecutionVarargs(value: Input[PodAffinityTerm]*): Self = this.set("requiredDuringSchedulingIgnoredDuringExecution", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequiredDuringSchedulingIgnoredDuringExecution(value: Input[js.Array[Input[PodAffinityTerm]]]): Self = this.set("requiredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredDuringSchedulingIgnoredDuringExecution: Self = this.set("requiredDuringSchedulingIgnoredDuringExecution", js.undefined)
+    def setRequiredDuringSchedulingIgnoredDuringExecutionVarargs(value: Input[PodAffinityTerm]*): Self = StObject.set(x, "requiredDuringSchedulingIgnoredDuringExecution", js.Array(value :_*))
   }
 }

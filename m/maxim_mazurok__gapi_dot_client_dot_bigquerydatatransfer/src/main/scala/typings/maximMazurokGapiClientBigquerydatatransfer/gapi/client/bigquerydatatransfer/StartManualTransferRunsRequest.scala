@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigquerydatatransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartManualTransferRunsRequest extends js.Object {
+trait StartManualTransferRunsRequest extends StObject {
   
   /** Specific run_time for a transfer run to be started. The requested_run_time must not be in the future. */
   var requestedRunTime: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object StartManualTransferRunsRequest {
   }
   
   @scala.inline
-  implicit class StartManualTransferRunsRequestOps[Self <: StartManualTransferRunsRequest] (val x: Self) extends AnyVal {
+  implicit class StartManualTransferRunsRequestMutableBuilder[Self <: StartManualTransferRunsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestedRunTime(value: String): Self = StObject.set(x, "requestedRunTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestedRunTimeUndefined: Self = StObject.set(x, "requestedRunTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestedTimeRange(value: TimeRange): Self = StObject.set(x, "requestedTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedRunTime(value: String): Self = this.set("requestedRunTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedRunTime: Self = this.set("requestedRunTime", js.undefined)
-    
-    @scala.inline
-    def setRequestedTimeRange(value: TimeRange): Self = this.set("requestedTimeRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedTimeRange: Self = this.set("requestedTimeRange", js.undefined)
+    def setRequestedTimeRangeUndefined: Self = StObject.set(x, "requestedTimeRange", js.undefined)
   }
 }

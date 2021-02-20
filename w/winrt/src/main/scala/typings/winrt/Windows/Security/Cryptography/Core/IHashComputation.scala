@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
 import typings.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHashComputation extends js.Object {
+trait IHashComputation extends StObject {
   
   def append(data: IBuffer): Unit = js.native
   
@@ -21,24 +22,12 @@ object IHashComputation {
   }
   
   @scala.inline
-  implicit class IHashComputationOps[Self <: IHashComputation] (val x: Self) extends AnyVal {
+  implicit class IHashComputationMutableBuilder[Self <: IHashComputation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: IBuffer => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppend(value: IBuffer => Unit): Self = this.set("append", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetValueAndReset(value: () => IBuffer): Self = this.set("getValueAndReset", js.Any.fromFunction0(value))
+    def setGetValueAndReset(value: () => IBuffer): Self = StObject.set(x, "getValueAndReset", js.Any.fromFunction0(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.ethersprojectConstants
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/constants/lib/strings", JSImport.Namespace)
-@js.native
-object stringsMod extends js.Object {
+object stringsMod {
   
+  @JSImport("@ethersproject/constants/lib/strings", "EtherSymbol")
+  @js.native
   val EtherSymbol: /* "\\u039E" */ String = js.native
 }

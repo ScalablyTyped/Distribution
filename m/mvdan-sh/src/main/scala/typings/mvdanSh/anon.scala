@@ -6,16 +6,15 @@ import typings.mvdanSh.mod.Parser
 import typings.mvdanSh.mod.ParserOption
 import typings.mvdanSh.mod.Printer
 import typings.mvdanSh.mod.PrinterOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait BinaryNextLine extends js.Object {
+  trait BinaryNextLine extends StObject {
     
     def BinaryNextLine(enabled: Boolean): PrinterOption = js.native
     

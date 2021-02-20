@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentOnTypeFormattingOptions extends js.Object {
+trait DocumentOnTypeFormattingOptions extends StObject {
   
   /**
     * A character on which formatting should be triggered, like `}`.
@@ -26,30 +27,18 @@ object DocumentOnTypeFormattingOptions {
   }
   
   @scala.inline
-  implicit class DocumentOnTypeFormattingOptionsOps[Self <: DocumentOnTypeFormattingOptions] (val x: Self) extends AnyVal {
+  implicit class DocumentOnTypeFormattingOptionsMutableBuilder[Self <: DocumentOnTypeFormattingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstTriggerCharacter(value: String): Self = StObject.set(x, "firstTriggerCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMoreTriggerCharacter(value: js.Array[String]): Self = StObject.set(x, "moreTriggerCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMoreTriggerCharacterUndefined: Self = StObject.set(x, "moreTriggerCharacter", js.undefined)
     
     @scala.inline
-    def setFirstTriggerCharacter(value: String): Self = this.set("firstTriggerCharacter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMoreTriggerCharacterVarargs(value: String*): Self = this.set("moreTriggerCharacter", js.Array(value :_*))
-    
-    @scala.inline
-    def setMoreTriggerCharacter(value: js.Array[String]): Self = this.set("moreTriggerCharacter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMoreTriggerCharacter: Self = this.set("moreTriggerCharacter", js.undefined)
+    def setMoreTriggerCharacterVarargs(value: String*): Self = StObject.set(x, "moreTriggerCharacter", js.Array(value :_*))
   }
 }

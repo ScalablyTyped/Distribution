@@ -4,13 +4,14 @@ import typings.stellarBase.mod.MemoType
 import typings.stellarSdk.anon.keyinaccountledgeroperati
 import typings.stellarSdk.horizonApiMod.Horizon.FeeBumpTransactionResponse
 import typings.stellarSdk.horizonApiMod.Horizon.InnerTransactionResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent utility-types.utility-types.Omit<stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.TransactionResponse, 'ledger'> */
 @js.native
-trait TransactionRecord extends js.Object {
+trait TransactionRecord extends StObject {
   
   var _links: keyinaccountledgeroperati = js.native
   

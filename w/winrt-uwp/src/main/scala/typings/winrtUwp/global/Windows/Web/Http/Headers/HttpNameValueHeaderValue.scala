@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
 import typings.winrtUwp.anon.NameValueHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,21 +23,24 @@ class HttpNameValueHeaderValue protected ()
     */
   def this(name: String, value: String) = this()
 }
-/* static members */
-@JSGlobal("Windows.Web.Http.Headers.HttpNameValueHeaderValue")
-@js.native
-object HttpNameValueHeaderValue extends js.Object {
+object HttpNameValueHeaderValue {
   
   /**
     * Converts a string to an HttpNameValueHeaderValue instance.
     * @param input A string that represents the name and value.
     * @return An HttpNameValueHeaderValue instance.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpNameValueHeaderValue.parse")
+  @js.native
   def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpNameValueHeaderValue = js.native
   
   /**
     * Determines whether a string is valid HttpNameValueHeaderValue information.
     * @param input The string to validate.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpNameValueHeaderValue.tryParse")
+  @js.native
   def tryParse(input: String): NameValueHeaderValue = js.native
 }

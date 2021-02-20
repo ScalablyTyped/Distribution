@@ -1,11 +1,12 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TYPES extends js.Object
+sealed trait TYPES extends StObject
 /**
   * Various GL data format types.
   *
@@ -23,7 +24,7 @@ sealed trait TYPES extends js.Object
   */
 @JSGlobal("PIXI.TYPES")
 @js.native
-object TYPES extends js.Object {
+object TYPES extends StObject {
   
   @js.native
   sealed trait FLOAT extends TYPES

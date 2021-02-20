@@ -1,12 +1,11 @@
 package typings.timeSpan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("time-span", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   Simplified high resolution timing.
@@ -24,10 +23,12 @@ object mod extends js.Object {
   //=> 1.7453186
   ```
   */
+  @JSImport("time-span", JSImport.Namespace)
+  @js.native
   def apply(): TimeEndFunction = js.native
   
   @js.native
-  trait TimeEndFunction extends js.Object {
+  trait TimeEndFunction extends StObject {
     
     /**
     		@returns Elapsed milliseconds.

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IngestionInfo extends js.Object {
+trait IngestionInfo extends StObject {
   
   /**
     * The backup ingestion URL that you should use to stream video to YouTube. You have the option of simultaneously streaming the content that you are sending to the ingestionAddress to
@@ -37,48 +38,36 @@ object IngestionInfo {
   }
   
   @scala.inline
-  implicit class IngestionInfoOps[Self <: IngestionInfo] (val x: Self) extends AnyVal {
+  implicit class IngestionInfoMutableBuilder[Self <: IngestionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupIngestionAddress(value: String): Self = StObject.set(x, "backupIngestionAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupIngestionAddressUndefined: Self = StObject.set(x, "backupIngestionAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIngestionAddress(value: String): Self = StObject.set(x, "ingestionAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupIngestionAddress(value: String): Self = this.set("backupIngestionAddress", value.asInstanceOf[js.Any])
+    def setIngestionAddressUndefined: Self = StObject.set(x, "ingestionAddress", js.undefined)
     
     @scala.inline
-    def deleteBackupIngestionAddress: Self = this.set("backupIngestionAddress", js.undefined)
+    def setRtmpsBackupIngestionAddress(value: String): Self = StObject.set(x, "rtmpsBackupIngestionAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngestionAddress(value: String): Self = this.set("ingestionAddress", value.asInstanceOf[js.Any])
+    def setRtmpsBackupIngestionAddressUndefined: Self = StObject.set(x, "rtmpsBackupIngestionAddress", js.undefined)
     
     @scala.inline
-    def deleteIngestionAddress: Self = this.set("ingestionAddress", js.undefined)
+    def setRtmpsIngestionAddress(value: String): Self = StObject.set(x, "rtmpsIngestionAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtmpsBackupIngestionAddress(value: String): Self = this.set("rtmpsBackupIngestionAddress", value.asInstanceOf[js.Any])
+    def setRtmpsIngestionAddressUndefined: Self = StObject.set(x, "rtmpsIngestionAddress", js.undefined)
     
     @scala.inline
-    def deleteRtmpsBackupIngestionAddress: Self = this.set("rtmpsBackupIngestionAddress", js.undefined)
+    def setStreamName(value: String): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtmpsIngestionAddress(value: String): Self = this.set("rtmpsIngestionAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRtmpsIngestionAddress: Self = this.set("rtmpsIngestionAddress", js.undefined)
-    
-    @scala.inline
-    def setStreamName(value: String): Self = this.set("streamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamName: Self = this.set("streamName", js.undefined)
+    def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.mapbox.mod.global.L.mapbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeocoderControl_ extends js.Object {
+trait GeocoderControl_ extends StObject {
   
   def getURL(): String = js.native
   
@@ -47,36 +48,24 @@ object GeocoderControl_ {
   }
   
   @scala.inline
-  implicit class GeocoderControl_Ops[Self <: GeocoderControl_] (val x: Self) extends AnyVal {
+  implicit class GeocoderControl_MutableBuilder[Self <: GeocoderControl_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOn(value: (String, js.Function) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnAdd(value: Map_ => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetURL(value: () => String): Self = this.set("getURL", js.Any.fromFunction0(value))
+    def setSetID(value: String => js.Any): Self = StObject.set(x, "setID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOn(value: (String, js.Function) => js.Any): Self = this.set("on", js.Any.fromFunction2(value))
+    def setSetTileJSON(value: js.Any => js.Any): Self = StObject.set(x, "setTileJSON", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAdd(value: Map_ => js.Any): Self = this.set("onAdd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetID(value: String => js.Any): Self = this.set("setID", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTileJSON(value: js.Any => js.Any): Self = this.set("setTileJSON", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetURL(value: String => js.Any): Self = this.set("setURL", js.Any.fromFunction1(value))
+    def setSetURL(value: String => js.Any): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
   }
 }

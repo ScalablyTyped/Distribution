@@ -1,12 +1,13 @@
 package typings.thrift.mod
 
 import typings.node.httpMod.RequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectOptions extends js.Object {
+trait ConnectOptions extends StObject {
   
   var connect_timeout: js.UndefOr[Double] = js.native
   
@@ -39,84 +40,72 @@ object ConnectOptions {
   }
   
   @scala.inline
-  implicit class ConnectOptionsOps[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+  implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnect_timeout(value: Double): Self = StObject.set(x, "connect_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnect_timeoutUndefined: Self = StObject.set(x, "connect_timeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect_timeout(value: Double): Self = this.set("connect_timeout", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteConnect_timeout: Self = this.set("connect_timeout", js.undefined)
+    def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: HttpHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setMax_attempts(value: Double): Self = StObject.set(x, "max_attempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttps(value: Boolean): Self = this.set("https", value.asInstanceOf[js.Any])
+    def setMax_attemptsUndefined: Self = StObject.set(x, "max_attempts", js.undefined)
     
     @scala.inline
-    def deleteHttps: Self = this.set("https", js.undefined)
+    def setNodeOptions(value: RequestOptions | typings.node.httpsMod.RequestOptions): Self = StObject.set(x, "nodeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_attempts(value: Double): Self = this.set("max_attempts", value.asInstanceOf[js.Any])
+    def setNodeOptionsUndefined: Self = StObject.set(x, "nodeOptions", js.undefined)
     
     @scala.inline
-    def deleteMax_attempts: Self = this.set("max_attempts", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeOptions(value: RequestOptions | typings.node.httpsMod.RequestOptions): Self = this.set("nodeOptions", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteNodeOptions: Self = this.set("nodeOptions", js.undefined)
+    def setProtocol(value: TProtocolConstructor): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setRetry_max_delay(value: Double): Self = StObject.set(x, "retry_max_delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: TProtocolConstructor): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setRetry_max_delayUndefined: Self = StObject.set(x, "retry_max_delay", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetry_max_delay(value: Double): Self = this.set("retry_max_delay", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteRetry_max_delay: Self = this.set("retry_max_delay", js.undefined)
+    def setTransport(value: TTransportConstructor): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setTransport(value: TTransportConstructor): Self = this.set("transport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport: Self = this.set("transport", js.undefined)
+    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
   }
 }

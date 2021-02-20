@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListCustomerSegmentsResponse")
 @js.native
-class ListCustomerSegmentsResponse () extends js.Object {
+class ListCustomerSegmentsResponse () extends StObject {
   
   /**
     * A pagination cursor to be used in subsequent calls to __ListCustomerSegments__ to retrieve the next set of query results.

@@ -1,5 +1,6 @@
 package typings.googleapis.datastoreV1Mod.datastoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The options shared by read requests.
   */
 @js.native
-trait SchemaReadOptions extends js.Object {
+trait SchemaReadOptions extends StObject {
   
   /**
     * The non-transactional read consistency to use. Cannot be set to `STRONG`
@@ -31,30 +32,18 @@ object SchemaReadOptions {
   }
   
   @scala.inline
-  implicit class SchemaReadOptionsOps[Self <: SchemaReadOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaReadOptionsMutableBuilder[Self <: SchemaReadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadConsistency(value: String): Self = StObject.set(x, "readConsistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadConsistencyUndefined: Self = StObject.set(x, "readConsistency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadConsistency(value: String): Self = this.set("readConsistency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadConsistency: Self = this.set("readConsistency", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: String): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

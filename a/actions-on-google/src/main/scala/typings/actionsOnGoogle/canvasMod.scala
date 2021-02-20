@@ -2,16 +2,16 @@ package typings.actionsOnGoogle
 
 import typings.actionsOnGoogle.commonMod.JsonObject
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("actions-on-google/dist/service/actionssdk/conversation/canvas", JSImport.Namespace)
-@js.native
-object canvasMod extends js.Object {
+object canvasMod {
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/canvas", "Canvas")
   @js.native
-  class Canvas protected () extends js.Object {
+  class Canvas protected () extends StObject {
     /** @hidden */
     def this(user: GoogleActionsV2Input) = this()
     

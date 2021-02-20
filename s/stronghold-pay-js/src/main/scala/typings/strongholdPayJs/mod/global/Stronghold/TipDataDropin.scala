@@ -1,12 +1,13 @@
 package typings.strongholdPayJs.mod.global.Stronghold
 
 import typings.strongholdPayJs.anon.DisplayMessage_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TipDataDropin extends js.Object {
+trait TipDataDropin extends StObject {
   
   /**
     * The amount to charge, specified in the smallest divisible currency unit. For example, number of cents of United States dollar.
@@ -26,30 +27,18 @@ object TipDataDropin {
   }
   
   @scala.inline
-  implicit class TipDataDropinOps[Self <: TipDataDropin] (val x: Self) extends AnyVal {
+  implicit class TipDataDropinMutableBuilder[Self <: TipDataDropin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeneficiaryName(value: String): Self = StObject.set(x, "beneficiaryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetails(value: DisplayMessage_): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBeneficiaryName(value: String): Self = this.set("beneficiaryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetails(value: DisplayMessage_): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
   }
 }

@@ -4,13 +4,14 @@ import typings.nodal.anon.Count
 import typings.nodal.anon.Data
 import typings.nodal.anon.Fields
 import typings.nodal.anon.Meta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "APIConstructor")
 @js.native
-class APIConstructor () extends js.Object {
+class APIConstructor () extends StObject {
   
   def error(message: String, details: String): Meta = js.native
   

@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartTagActions extends js.Object {
+trait SmartTagActions extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -40,39 +41,27 @@ object SmartTagActions {
   }
   
   @scala.inline
-  implicit class SmartTagActionsOps[Self <: SmartTagActions] (val x: Self) extends AnyVal {
+  implicit class SmartTagActionsMutableBuilder[Self <: SmartTagActions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setItem(value: js.Any => SmartTagAction): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setReloadActions(value: () => Unit): Self = StObject.set(x, "ReloadActions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setItem(value: js.Any => SmartTagAction): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReloadActions(value: () => Unit): Self = this.set("ReloadActions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWordDotSmartTagActions_typekey(value: SmartTagActions): Self = this.set("Word.SmartTagActions_typekey", value.asInstanceOf[js.Any])
+    def setWordDotSmartTagActions_typekey(value: SmartTagActions): Self = StObject.set(x, "Word.SmartTagActions_typekey", value.asInstanceOf[js.Any])
   }
 }

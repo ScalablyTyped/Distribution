@@ -1,11 +1,12 @@
 package typings.reactTable.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Data[D /* <: js.Object */] extends js.Object {
+trait Data[D /* <: js.Object */] extends StObject {
   
   var data: js.Array[D] = js.native
   
@@ -22,33 +23,21 @@ object Data {
   }
   
   @scala.inline
-  implicit class DataOps[Self <: Data[_], D /* <: js.Object */] (val x: Self with Data[D]) extends AnyVal {
+  implicit class DataMutableBuilder[Self <: Data[_], D /* <: js.Object */] (val x: Self with Data[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: D*): Self = this.set("data", js.Array(value :_*))
+    def setSubRows(value: js.Array[D]): Self = StObject.set(x, "subRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[D]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubRowsVarargs(value: D*): Self = this.set("subRows", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubRows(value: js.Array[D]): Self = this.set("subRows", value.asInstanceOf[js.Any])
+    def setSubRowsVarargs(value: D*): Self = StObject.set(x, "subRows", js.Array(value :_*))
   }
 }

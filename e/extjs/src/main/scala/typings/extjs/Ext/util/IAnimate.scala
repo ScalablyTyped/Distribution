@@ -2,6 +2,7 @@ package typings.extjs.Ext.util
 
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,60 +52,48 @@ object IAnimate {
   }
   
   @scala.inline
-  implicit class IAnimateOps[Self <: IAnimate] (val x: Self) extends AnyVal {
+  implicit class IAnimateMutableBuilder[Self <: IAnimate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetActiveAnimation(value: () => _): Self = StObject.set(x, "getActiveAnimation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAnimate(value: js.Any): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setGetActiveAnimationUndefined: Self = StObject.set(x, "getActiveAnimation", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setHasActiveFx(value: () => _): Self = StObject.set(x, "hasActiveFx", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveAnimation(value: () => _): Self = this.set("getActiveAnimation", js.Any.fromFunction0(value))
+    def setHasActiveFxUndefined: Self = StObject.set(x, "hasActiveFx", js.undefined)
     
     @scala.inline
-    def deleteGetActiveAnimation: Self = this.set("getActiveAnimation", js.undefined)
+    def setSequenceFx(value: () => _): Self = StObject.set(x, "sequenceFx", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasActiveFx(value: () => _): Self = this.set("hasActiveFx", js.Any.fromFunction0(value))
+    def setSequenceFxUndefined: Self = StObject.set(x, "sequenceFx", js.undefined)
     
     @scala.inline
-    def deleteHasActiveFx: Self = this.set("hasActiveFx", js.undefined)
+    def setStopAnimation(value: () => IElement): Self = StObject.set(x, "stopAnimation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSequenceFx(value: () => _): Self = this.set("sequenceFx", js.Any.fromFunction0(value))
+    def setStopAnimationUndefined: Self = StObject.set(x, "stopAnimation", js.undefined)
     
     @scala.inline
-    def deleteSequenceFx: Self = this.set("sequenceFx", js.undefined)
+    def setStopFx(value: () => IElement): Self = StObject.set(x, "stopFx", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStopAnimation(value: () => IElement): Self = this.set("stopAnimation", js.Any.fromFunction0(value))
+    def setStopFxUndefined: Self = StObject.set(x, "stopFx", js.undefined)
     
     @scala.inline
-    def deleteStopAnimation: Self = this.set("stopAnimation", js.undefined)
+    def setSyncFx(value: () => _): Self = StObject.set(x, "syncFx", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStopFx(value: () => IElement): Self = this.set("stopFx", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteStopFx: Self = this.set("stopFx", js.undefined)
-    
-    @scala.inline
-    def setSyncFx(value: () => _): Self = this.set("syncFx", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSyncFx: Self = this.set("syncFx", js.undefined)
+    def setSyncFxUndefined: Self = StObject.set(x, "syncFx", js.undefined)
   }
 }

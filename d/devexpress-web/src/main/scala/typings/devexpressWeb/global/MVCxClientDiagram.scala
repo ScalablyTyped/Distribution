@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class MVCxClientDiagram ()
   extends typings.devexpressWeb.ASPxClientDiagram
-/* static members */
-@JSGlobal("MVCxClientDiagram")
-@js.native
-object MVCxClientDiagram extends js.Object {
+object MVCxClientDiagram {
   
   /**
     * Converts the specified object to the MVCxClientDiagram type. The converted client object.
     * @param obj The client object to be type cast.
     */
+  /* static member */
+  @JSGlobal("MVCxClientDiagram.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.MVCxClientDiagram = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCampaignsResponse extends js.Object {
+trait ListCampaignsResponse extends StObject {
   
   /**
     * A list of the campaigns.
@@ -26,33 +27,21 @@ object ListCampaignsResponse {
   }
   
   @scala.inline
-  implicit class ListCampaignsResponseOps[Self <: ListCampaignsResponse] (val x: Self) extends AnyVal {
+  implicit class ListCampaignsResponseMutableBuilder[Self <: ListCampaignsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCampaigns(value: Campaigns): Self = StObject.set(x, "campaigns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaignsUndefined: Self = StObject.set(x, "campaigns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaignsVarargs(value: CampaignSummary*): Self = StObject.set(x, "campaigns", js.Array(value :_*))
     
     @scala.inline
-    def setCampaignsVarargs(value: CampaignSummary*): Self = this.set("campaigns", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaigns(value: Campaigns): Self = this.set("campaigns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCampaigns: Self = this.set("campaigns", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

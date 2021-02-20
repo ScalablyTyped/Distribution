@@ -1,11 +1,12 @@
 package typings.bootstrapMultiselect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Templates extends js.Object {
+trait Templates extends StObject {
   
   var button: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object Templates {
   }
   
   @scala.inline
-  implicit class TemplatesOps[Self <: Templates] (val x: Self) extends AnyVal {
+  implicit class TemplatesMutableBuilder[Self <: Templates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: String): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivider(value: String): Self = this.set("divider", value.asInstanceOf[js.Any])
+    def setFilterClearBtn(value: String): Self = StObject.set(x, "filterClearBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDivider: Self = this.set("divider", js.undefined)
+    def setFilterClearBtnUndefined: Self = StObject.set(x, "filterClearBtn", js.undefined)
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setLi(value: String): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterClearBtn(value: String): Self = this.set("filterClearBtn", value.asInstanceOf[js.Any])
+    def setLiGroup(value: String): Self = StObject.set(x, "liGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilterClearBtn: Self = this.set("filterClearBtn", js.undefined)
+    def setLiGroupUndefined: Self = StObject.set(x, "liGroup", js.undefined)
     
     @scala.inline
-    def setLi(value: String): Self = this.set("li", value.asInstanceOf[js.Any])
+    def setLiUndefined: Self = StObject.set(x, "li", js.undefined)
     
     @scala.inline
-    def deleteLi: Self = this.set("li", js.undefined)
+    def setUl(value: String): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiGroup(value: String): Self = this.set("liGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLiGroup: Self = this.set("liGroup", js.undefined)
-    
-    @scala.inline
-    def setUl(value: String): Self = this.set("ul", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUl: Self = this.set("ul", js.undefined)
+    def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
   }
 }

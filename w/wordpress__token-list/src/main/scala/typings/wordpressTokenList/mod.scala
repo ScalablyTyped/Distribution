@@ -1,16 +1,26 @@
 package typings.wordpressTokenList
 
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/token-list", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@wordpress/token-list", JSImport.Default)
+  @js.native
+  /**
+    * Constructs a new instance of TokenList.
+    *
+    * @param {string} initialValue Initial value to assign.
+    */
+  class default () extends TokenList {
+    def this(initialValue: String) = this()
+  }
   
   @js.native
-  trait TokenList extends js.Object {
+  trait TokenList extends StObject {
     
     /** @type {string} */
     var _currentValue: String = js.native
@@ -160,15 +170,5 @@ object mod extends js.Object {
       * @param {Parameters<Array<string>['values']>} args
       */
     def values(): IterableIterator[String] = js.native
-  }
-  
-  @js.native
-  /**
-    * Constructs a new instance of TokenList.
-    *
-    * @param {string} initialValue Initial value to assign.
-    */
-  class default () extends TokenList {
-    def this(initialValue: String) = this()
   }
 }

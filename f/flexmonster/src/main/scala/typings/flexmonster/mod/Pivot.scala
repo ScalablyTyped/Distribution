@@ -6,12 +6,13 @@ import typings.flexmonster.anon.GetData
 import typings.flexmonster.anon.GetNumberFormat
 import typings.flexmonster.anon.IgnoreScroll
 import typings.flexmonster.anon.IsRemoved
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pivot extends js.Object {
+trait Pivot extends StObject {
   
   def addCalculatedMeasure(measure: Measure): Unit = js.native
   

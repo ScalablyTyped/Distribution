@@ -1,11 +1,12 @@
 package typings.agoraRtcSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheResource extends js.Object {
+trait CacheResource extends StObject {
   
   /**
     * Whether or not to store the audio mixing file in the cache.
@@ -65,48 +66,36 @@ object CacheResource {
   }
   
   @scala.inline
-  implicit class CacheResourceOps[Self <: CacheResource] (val x: Self) extends AnyVal {
+  implicit class CacheResourceMutableBuilder[Self <: CacheResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheResource(value: Boolean): Self = StObject.set(x, "cacheResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheResourceUndefined: Self = StObject.set(x, "cacheResource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCycle(value: Double): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
     
     @scala.inline
-    def setPlayTime(value: Double): Self = this.set("playTime", value.asInstanceOf[js.Any])
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheResource(value: Boolean): Self = this.set("cacheResource", value.asInstanceOf[js.Any])
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheResource: Self = this.set("cacheResource", js.undefined)
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def setCycle(value: Double): Self = this.set("cycle", value.asInstanceOf[js.Any])
+    def setPlayTime(value: Double): Self = StObject.set(x, "playTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCycle: Self = this.set("cycle", js.undefined)
+    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
-    
-    @scala.inline
-    def setReplace(value: Boolean): Self = this.set("replace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplace: Self = this.set("replace", js.undefined)
+    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
   }
 }

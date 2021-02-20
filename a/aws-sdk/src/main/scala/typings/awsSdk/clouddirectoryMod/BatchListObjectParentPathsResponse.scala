@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchListObjectParentPathsResponse extends js.Object {
+trait BatchListObjectParentPathsResponse extends StObject {
   
   /**
     * The pagination token.
@@ -26,33 +27,21 @@ object BatchListObjectParentPathsResponse {
   }
   
   @scala.inline
-  implicit class BatchListObjectParentPathsResponseOps[Self <: BatchListObjectParentPathsResponse] (val x: Self) extends AnyVal {
+  implicit class BatchListObjectParentPathsResponseMutableBuilder[Self <: BatchListObjectParentPathsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathToObjectIdentifiersList(value: PathToObjectIdentifiersList): Self = StObject.set(x, "PathToObjectIdentifiersList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPathToObjectIdentifiersListUndefined: Self = StObject.set(x, "PathToObjectIdentifiersList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPathToObjectIdentifiersListVarargs(value: PathToObjectIdentifiers*): Self = this.set("PathToObjectIdentifiersList", js.Array(value :_*))
-    
-    @scala.inline
-    def setPathToObjectIdentifiersList(value: PathToObjectIdentifiersList): Self = this.set("PathToObjectIdentifiersList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathToObjectIdentifiersList: Self = this.set("PathToObjectIdentifiersList", js.undefined)
+    def setPathToObjectIdentifiersListVarargs(value: PathToObjectIdentifiers*): Self = StObject.set(x, "PathToObjectIdentifiersList", js.Array(value :_*))
   }
 }

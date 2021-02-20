@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScoredEmailAddress extends js.Object {
+trait ScoredEmailAddress extends StObject {
   
   // The email address.
   var address: js.UndefOr[NullableOption[String]] = js.native
@@ -30,54 +31,42 @@ object ScoredEmailAddress {
   }
   
   @scala.inline
-  implicit class ScoredEmailAddressOps[Self <: ScoredEmailAddress] (val x: Self) extends AnyVal {
+  implicit class ScoredEmailAddressMutableBuilder[Self <: ScoredEmailAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressNull: Self = StObject.set(x, "address", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def setAddress(value: NullableOption[String]): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setItemId(value: NullableOption[String]): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setItemIdNull: Self = StObject.set(x, "itemId", null)
     
     @scala.inline
-    def setAddressNull: Self = this.set("address", null)
+    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
     @scala.inline
-    def setItemId(value: NullableOption[String]): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    def setRelevanceScore(value: NullableOption[Double]): Self = StObject.set(x, "relevanceScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemId: Self = this.set("itemId", js.undefined)
+    def setRelevanceScoreNull: Self = StObject.set(x, "relevanceScore", null)
     
     @scala.inline
-    def setItemIdNull: Self = this.set("itemId", null)
+    def setRelevanceScoreUndefined: Self = StObject.set(x, "relevanceScore", js.undefined)
     
     @scala.inline
-    def setRelevanceScore(value: NullableOption[Double]): Self = this.set("relevanceScore", value.asInstanceOf[js.Any])
+    def setSelectionLikelihood(value: NullableOption[SelectionLikelihoodInfo]): Self = StObject.set(x, "selectionLikelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelevanceScore: Self = this.set("relevanceScore", js.undefined)
+    def setSelectionLikelihoodNull: Self = StObject.set(x, "selectionLikelihood", null)
     
     @scala.inline
-    def setRelevanceScoreNull: Self = this.set("relevanceScore", null)
-    
-    @scala.inline
-    def setSelectionLikelihood(value: NullableOption[SelectionLikelihoodInfo]): Self = this.set("selectionLikelihood", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionLikelihood: Self = this.set("selectionLikelihood", js.undefined)
-    
-    @scala.inline
-    def setSelectionLikelihoodNull: Self = this.set("selectionLikelihood", null)
+    def setSelectionLikelihoodUndefined: Self = StObject.set(x, "selectionLikelihood", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Measure extends js.Object {
+trait Measure extends StObject {
   
   /**
     * Get the text property associated to the raw value property holding theformatted value related to
@@ -63,36 +64,24 @@ object Measure {
   }
   
   @scala.inline
-  implicit class MeasureOps[Self <: Measure] (val x: Self) extends AnyVal {
+  implicit class MeasureMutableBuilder[Self <: Measure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFormattedValueProperty(value: () => js.Any): Self = StObject.set(x, "getFormattedValueProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFormattedValueProperty(value: () => js.Any): Self = this.set("getFormattedValueProperty", js.Any.fromFunction0(value))
+    def setGetRawValueProperty(value: () => js.Any): Self = StObject.set(x, "getRawValueProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelText(value: () => String): Self = this.set("getLabelText", js.Any.fromFunction0(value))
+    def setGetUnitProperty(value: () => js.Any): Self = StObject.set(x, "getUnitProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRawValueProperty(value: () => js.Any): Self = this.set("getRawValueProperty", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUnitProperty(value: () => js.Any): Self = this.set("getUnitProperty", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsUpdatable(value: () => Boolean): Self = this.set("isUpdatable", js.Any.fromFunction0(value))
+    def setIsUpdatable(value: () => Boolean): Self = StObject.set(x, "isUpdatable", js.Any.fromFunction0(value))
   }
 }

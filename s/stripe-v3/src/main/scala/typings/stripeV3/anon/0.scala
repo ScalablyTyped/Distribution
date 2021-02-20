@@ -2,12 +2,13 @@ package typings.stripeV3.anon
 
 import typings.stripeV3.stripe.BillingDetails
 import typings.stripeV3.stripe.elements.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `0` extends js.Object {
+trait `0` extends StObject {
   
   /**
     * The billing_details associated with the card.
@@ -29,27 +30,15 @@ object `0` {
   }
   
   @scala.inline
-  implicit class `0Ops`[Self <: `0`] (val x: Self) extends AnyVal {
+  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilling_details(value: BillingDetails): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCard(value: Element | Token): Self = this.set("card", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBilling_details(value: BillingDetails): Self = this.set("billing_details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBilling_details: Self = this.set("billing_details", js.undefined)
+    def setCard(value: Element | Token): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
   }
 }

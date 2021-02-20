@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SearchOrdersDateTimeFilter")
 @js.native
-class SearchOrdersDateTimeFilter () extends js.Object {
+class SearchOrdersDateTimeFilter () extends StObject {
   
   /**
     * Time range for filtering on the `closed_at` timestamp.

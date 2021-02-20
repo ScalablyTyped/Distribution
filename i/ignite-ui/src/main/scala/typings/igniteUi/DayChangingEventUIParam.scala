@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DayChangingEventUIParam extends js.Object {
+trait DayChangingEventUIParam extends StObject {
   
   /**
     * Gets a reference to the currently selected date.
@@ -31,36 +32,24 @@ object DayChangingEventUIParam {
   }
   
   @scala.inline
-  implicit class DayChangingEventUIParamOps[Self <: DayChangingEventUIParam] (val x: Self) extends AnyVal {
+  implicit class DayChangingEventUIParamMutableBuilder[Self <: DayChangingEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentSelectedDate(value: js.Any): Self = StObject.set(x, "currentSelectedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentSelectedDateUndefined: Self = StObject.set(x, "currentSelectedDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewSelectedDate(value: js.Any): Self = StObject.set(x, "newSelectedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSelectedDate(value: js.Any): Self = this.set("currentSelectedDate", value.asInstanceOf[js.Any])
+    def setNewSelectedDateUndefined: Self = StObject.set(x, "newSelectedDate", js.undefined)
     
     @scala.inline
-    def deleteCurrentSelectedDate: Self = this.set("currentSelectedDate", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewSelectedDate(value: js.Any): Self = this.set("newSelectedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewSelectedDate: Self = this.set("newSelectedDate", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

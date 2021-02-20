@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontSizeProps[TLength] extends js.Object {
+trait FontSizeProps[TLength] extends StObject {
   
   val fontSize: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object FontSizeProps {
   }
   
   @scala.inline
-  implicit class FontSizePropsOps[Self <: FontSizeProps[_], TLength] (val x: Self with FontSizeProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFontSizeVarargs(value: js.Any*): Self = this.set("fontSize", js.Array(value :_*))
+  implicit class FontSizePropsMutableBuilder[Self <: FontSizeProps[_], TLength] (val x: Self with FontSizeProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setFontSize(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ _
         ]
-    ): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    @scala.inline
+    def setFontSizeVarargs(value: js.Any*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
   }
 }

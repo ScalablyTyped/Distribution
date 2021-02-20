@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDocumentVersionsResponse extends js.Object {
+trait DescribeDocumentVersionsResponse extends StObject {
   
   /**
     * The document versions.
@@ -26,33 +27,21 @@ object DescribeDocumentVersionsResponse {
   }
   
   @scala.inline
-  implicit class DescribeDocumentVersionsResponseOps[Self <: DescribeDocumentVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDocumentVersionsResponseMutableBuilder[Self <: DescribeDocumentVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentVersions(value: DocumentVersionMetadataList): Self = StObject.set(x, "DocumentVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentVersionsUndefined: Self = StObject.set(x, "DocumentVersions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentVersionsVarargs(value: DocumentVersionMetadata*): Self = StObject.set(x, "DocumentVersions", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentVersionsVarargs(value: DocumentVersionMetadata*): Self = this.set("DocumentVersions", js.Array(value :_*))
+    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentVersions(value: DocumentVersionMetadataList): Self = this.set("DocumentVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentVersions: Self = this.set("DocumentVersions", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

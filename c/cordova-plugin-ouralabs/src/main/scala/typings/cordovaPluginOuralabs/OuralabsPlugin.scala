@@ -1,16 +1,15 @@
 package typings.cordovaPluginOuralabs
 
 import typings.cordovaPluginOuralabs.anon.DEBUG
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OuralabsPlugin")
-@js.native
-object OuralabsPlugin extends js.Object {
+object OuralabsPlugin {
   
   @js.native
-  trait OuralabsStatic extends js.Object {
+  trait OuralabsStatic extends StObject {
     
     /**
       * Log levels designate the severity of the log; used with the log() function.

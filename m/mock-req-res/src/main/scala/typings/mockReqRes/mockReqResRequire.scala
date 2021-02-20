@@ -1,5 +1,6 @@
 package typings.mockReqRes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("mock-req-res", JSImport.Namespace)
 @js.native
-object mockReqResRequire extends js.Object
+object mockReqResRequire extends StObject

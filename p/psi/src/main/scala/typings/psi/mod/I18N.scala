@@ -1,12 +1,13 @@
 package typings.psi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:interface-name I18N is established convention
 @js.native
-trait I18N extends js.Object {
+trait I18N extends StObject {
   
   var rendererFormattedStrings: RendererFormattedStrings = js.native
 }
@@ -19,21 +20,9 @@ object I18N {
   }
   
   @scala.inline
-  implicit class I18NOps[Self <: I18N] (val x: Self) extends AnyVal {
+  implicit class I18NMutableBuilder[Self <: I18N] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRendererFormattedStrings(value: RendererFormattedStrings): Self = this.set("rendererFormattedStrings", value.asInstanceOf[js.Any])
+    def setRendererFormattedStrings(value: RendererFormattedStrings): Self = StObject.set(x, "rendererFormattedStrings", value.asInstanceOf[js.Any])
   }
 }

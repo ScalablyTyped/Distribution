@@ -1,12 +1,13 @@
 package typings.babylonjs
 
 import typings.babylonjs.anon.DetectedPlanes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRFrame extends js.Object {
+trait XRFrame extends StObject {
   
   var createAnchor: js.UndefOr[
     js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.Promise[XRAnchor]]
@@ -49,66 +50,54 @@ object XRFrame {
   }
   
   @scala.inline
-  implicit class XRFrameOps[Self <: XRFrame] (val x: Self) extends AnyVal {
+  implicit class XRFrameMutableBuilder[Self <: XRFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateAnchor(value: (/* pose */ XRRigidTransform, /* space */ XRSpace) => js.Promise[XRAnchor]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateAnchorUndefined: Self = StObject.set(x, "createAnchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeaturePointCloud(value: js.Array[Double]): Self = StObject.set(x, "featurePointCloud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHitTestResults(value: XRHitTestSource => js.Array[XRHitTestResult]): Self = this.set("getHitTestResults", js.Any.fromFunction1(value))
+    def setFeaturePointCloudUndefined: Self = StObject.set(x, "featurePointCloud", js.undefined)
     
     @scala.inline
-    def setGetHitTestResultsForTransientInput(value: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult]): Self = this.set("getHitTestResultsForTransientInput", js.Any.fromFunction1(value))
+    def setFeaturePointCloudVarargs(value: Double*): Self = StObject.set(x, "featurePointCloud", js.Array(value :_*))
     
     @scala.inline
-    def setGetPose(value: (XRSpace, XRSpace) => js.UndefOr[XRPose]): Self = this.set("getPose", js.Any.fromFunction2(value))
+    def setGetHitTestResults(value: XRHitTestSource => js.Array[XRHitTestResult]): Self = StObject.set(x, "getHitTestResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetViewerPose(value: XRReferenceSpace => js.UndefOr[XRViewerPose]): Self = this.set("getViewerPose", js.Any.fromFunction1(value))
+    def setGetHitTestResultsForTransientInput(value: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult]): Self = StObject.set(x, "getHitTestResultsForTransientInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSession(value: XRSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setGetJointPose(value: (/* joint */ XRJointSpace, /* baseSpace */ XRSpace) => XRJointPose): Self = StObject.set(x, "getJointPose", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateAnchor(value: (/* pose */ XRRigidTransform, /* space */ XRSpace) => js.Promise[XRAnchor]): Self = this.set("createAnchor", js.Any.fromFunction2(value))
+    def setGetJointPoseUndefined: Self = StObject.set(x, "getJointPose", js.undefined)
     
     @scala.inline
-    def deleteCreateAnchor: Self = this.set("createAnchor", js.undefined)
+    def setGetPose(value: (XRSpace, XRSpace) => js.UndefOr[XRPose]): Self = StObject.set(x, "getPose", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFeaturePointCloudVarargs(value: Double*): Self = this.set("featurePointCloud", js.Array(value :_*))
+    def setGetViewerPose(value: XRReferenceSpace => js.UndefOr[XRViewerPose]): Self = StObject.set(x, "getViewerPose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFeaturePointCloud(value: js.Array[Double]): Self = this.set("featurePointCloud", value.asInstanceOf[js.Any])
+    def setSession(value: XRSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeaturePointCloud: Self = this.set("featurePointCloud", js.undefined)
+    def setTrackedAnchors(value: XRAnchorSet): Self = StObject.set(x, "trackedAnchors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetJointPose(value: (/* joint */ XRJointSpace, /* baseSpace */ XRSpace) => XRJointPose): Self = this.set("getJointPose", js.Any.fromFunction2(value))
+    def setTrackedAnchorsUndefined: Self = StObject.set(x, "trackedAnchors", js.undefined)
     
     @scala.inline
-    def deleteGetJointPose: Self = this.set("getJointPose", js.undefined)
+    def setWorldInformation(value: DetectedPlanes): Self = StObject.set(x, "worldInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackedAnchors(value: XRAnchorSet): Self = this.set("trackedAnchors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackedAnchors: Self = this.set("trackedAnchors", js.undefined)
-    
-    @scala.inline
-    def setWorldInformation(value: DetectedPlanes): Self = this.set("worldInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldInformation: Self = this.set("worldInformation", js.undefined)
+    def setWorldInformationUndefined: Self = StObject.set(x, "worldInformation", js.undefined)
   }
 }

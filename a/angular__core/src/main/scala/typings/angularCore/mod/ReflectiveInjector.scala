@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -125,9 +126,7 @@ abstract class ReflectiveInjector () extends Injector {
   def resolveAndInstantiate(provider: Provider): js.Any = js.native
 }
 /* static members */
-@JSImport("@angular/core", "ReflectiveInjector")
-@js.native
-object ReflectiveInjector extends js.Object {
+object ReflectiveInjector {
   
   /**
     * Creates an injector from previously resolved providers.
@@ -152,7 +151,11 @@ object ReflectiveInjector extends js.Object {
     * expect(injector.get(Car) instanceof Car).toBe(true);
     * ```
     */
+  @JSImport("@angular/core", "ReflectiveInjector.fromResolvedProviders")
+  @js.native
   def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider]): ReflectiveInjector = js.native
+  @JSImport("@angular/core", "ReflectiveInjector.fromResolvedProviders")
+  @js.native
   def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider], parent: Injector): ReflectiveInjector = js.native
   
   /**
@@ -188,6 +191,8 @@ object ReflectiveInjector extends js.Object {
     * ```
     *
     */
+  @JSImport("@angular/core", "ReflectiveInjector.resolve")
+  @js.native
   def resolve(providers: js.Array[Provider]): js.Array[ResolvedReflectiveProvider] = js.native
   
   /**
@@ -213,6 +218,10 @@ object ReflectiveInjector extends js.Object {
     * expect(injector.get(Car) instanceof Car).toBe(true);
     * ```
     */
+  @JSImport("@angular/core", "ReflectiveInjector.resolveAndCreate")
+  @js.native
   def resolveAndCreate(providers: js.Array[Provider]): ReflectiveInjector = js.native
+  @JSImport("@angular/core", "ReflectiveInjector.resolveAndCreate")
+  @js.native
   def resolveAndCreate(providers: js.Array[Provider], parent: Injector): ReflectiveInjector = js.native
 }

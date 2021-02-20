@@ -1,6 +1,7 @@
 package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,36 +40,24 @@ object RenderContextFieldInForm {
   }
   
   @scala.inline
-  implicit class RenderContextFieldInFormOps[Self <: RenderContextFieldInForm] (val x: Self) extends AnyVal {
+  implicit class RenderContextFieldInFormMutableBuilder[Self <: RenderContextFieldInForm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentFieldSchema(value: FieldSchemaInForm): Self = StObject.set(x, "CurrentFieldSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentFieldValue(value: js.Any): Self = StObject.set(x, "CurrentFieldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentGroup(value: Group): Self = StObject.set(x, "CurrentGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentFieldSchema(value: FieldSchemaInForm): Self = this.set("CurrentFieldSchema", value.asInstanceOf[js.Any])
+    def setCurrentGroupIdx(value: Double): Self = StObject.set(x, "CurrentGroupIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentFieldValue(value: js.Any): Self = this.set("CurrentFieldValue", value.asInstanceOf[js.Any])
+    def setCurrentItems(value: js.Array[Item]): Self = StObject.set(x, "CurrentItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentGroup(value: Group): Self = this.set("CurrentGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentGroupIdx(value: Double): Self = this.set("CurrentGroupIdx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentItemsVarargs(value: Item*): Self = this.set("CurrentItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setCurrentItems(value: js.Array[Item]): Self = this.set("CurrentItems", value.asInstanceOf[js.Any])
+    def setCurrentItemsVarargs(value: Item*): Self = StObject.set(x, "CurrentItems", js.Array(value :_*))
   }
 }

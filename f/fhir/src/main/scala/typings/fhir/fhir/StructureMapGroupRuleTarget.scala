@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,117 +95,105 @@ object StructureMapGroupRuleTarget {
   }
   
   @scala.inline
-  implicit class StructureMapGroupRuleTargetOps[Self <: StructureMapGroupRuleTarget] (val x: Self) extends AnyVal {
+  implicit class StructureMapGroupRuleTargetMutableBuilder[Self <: StructureMapGroupRuleTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: id): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextType(value: code): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
     
     @scala.inline
-    def set_context(value: Element): Self = this.set("_context", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def delete_context: Self = this.set("_context", js.undefined)
+    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_contextType(value: Element): Self = this.set("_contextType", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def delete_contextType: Self = this.set("_contextType", js.undefined)
+    def setListMode(value: js.Array[code]): Self = StObject.set(x, "listMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_element(value: Element): Self = this.set("_element", value.asInstanceOf[js.Any])
+    def setListModeUndefined: Self = StObject.set(x, "listMode", js.undefined)
     
     @scala.inline
-    def delete_element: Self = this.set("_element", js.undefined)
+    def setListModeVarargs(value: code*): Self = StObject.set(x, "listMode", js.Array(value :_*))
     
     @scala.inline
-    def set_listModeVarargs(value: Element*): Self = this.set("_listMode", js.Array(value :_*))
+    def setListRuleId(value: id): Self = StObject.set(x, "listRuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_listMode(value: js.Array[Element]): Self = this.set("_listMode", value.asInstanceOf[js.Any])
+    def setListRuleIdUndefined: Self = StObject.set(x, "listRuleId", js.undefined)
     
     @scala.inline
-    def delete_listMode: Self = this.set("_listMode", js.undefined)
+    def setParameter(value: js.Array[StructureMapGroupRuleTargetParameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_listRuleId(value: Element): Self = this.set("_listRuleId", value.asInstanceOf[js.Any])
+    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
     @scala.inline
-    def delete_listRuleId: Self = this.set("_listRuleId", js.undefined)
+    def setParameterVarargs(value: StructureMapGroupRuleTargetParameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
     
     @scala.inline
-    def set_transform(value: Element): Self = this.set("_transform", value.asInstanceOf[js.Any])
+    def setTransform(value: code): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_transform: Self = this.set("_transform", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def set_variable(value: Element): Self = this.set("_variable", value.asInstanceOf[js.Any])
+    def setVariable(value: id): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_variable: Self = this.set("_variable", js.undefined)
+    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
     @scala.inline
-    def setContext(value: id): Self = this.set("context", value.asInstanceOf[js.Any])
+    def set_context(value: Element): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def set_contextType(value: Element): Self = StObject.set(x, "_contextType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextType(value: code): Self = this.set("contextType", value.asInstanceOf[js.Any])
+    def set_contextTypeUndefined: Self = StObject.set(x, "_contextType", js.undefined)
     
     @scala.inline
-    def deleteContextType: Self = this.set("contextType", js.undefined)
+    def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
     
     @scala.inline
-    def setElement(value: String): Self = this.set("element", value.asInstanceOf[js.Any])
+    def set_element(value: Element): Self = StObject.set(x, "_element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def set_elementUndefined: Self = StObject.set(x, "_element", js.undefined)
     
     @scala.inline
-    def setListModeVarargs(value: code*): Self = this.set("listMode", js.Array(value :_*))
+    def set_listMode(value: js.Array[Element]): Self = StObject.set(x, "_listMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListMode(value: js.Array[code]): Self = this.set("listMode", value.asInstanceOf[js.Any])
+    def set_listModeUndefined: Self = StObject.set(x, "_listMode", js.undefined)
     
     @scala.inline
-    def deleteListMode: Self = this.set("listMode", js.undefined)
+    def set_listModeVarargs(value: Element*): Self = StObject.set(x, "_listMode", js.Array(value :_*))
     
     @scala.inline
-    def setListRuleId(value: id): Self = this.set("listRuleId", value.asInstanceOf[js.Any])
+    def set_listRuleId(value: Element): Self = StObject.set(x, "_listRuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListRuleId: Self = this.set("listRuleId", js.undefined)
+    def set_listRuleIdUndefined: Self = StObject.set(x, "_listRuleId", js.undefined)
     
     @scala.inline
-    def setParameterVarargs(value: StructureMapGroupRuleTargetParameter*): Self = this.set("parameter", js.Array(value :_*))
+    def set_transform(value: Element): Self = StObject.set(x, "_transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameter(value: js.Array[StructureMapGroupRuleTargetParameter]): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    def set_transformUndefined: Self = StObject.set(x, "_transform", js.undefined)
     
     @scala.inline
-    def deleteParameter: Self = this.set("parameter", js.undefined)
+    def set_variable(value: Element): Self = StObject.set(x, "_variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: code): Self = this.set("transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
-    
-    @scala.inline
-    def setVariable(value: id): Self = this.set("variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariable: Self = this.set("variable", js.undefined)
+    def set_variableUndefined: Self = StObject.set(x, "_variable", js.undefined)
   }
 }

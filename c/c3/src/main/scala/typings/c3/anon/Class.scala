@@ -1,11 +1,12 @@
 package typings.c3.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Class extends js.Object {
+trait Class extends StObject {
   
   /** Class to apply to the line. */
   var `class`: js.UndefOr[String] = js.native
@@ -27,48 +28,36 @@ object Class {
   }
   
   @scala.inline
-  implicit class ClassOps[Self <: Class] (val x: Self) extends AnyVal {
+  implicit class ClassMutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue_x1(value: Double): Self = StObject.set(x, "value_x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setValue_x1Undefined: Self = StObject.set(x, "value_x1", js.undefined)
     
     @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
+    def setValue_x2(value: Double): Self = StObject.set(x, "value_x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue_x1(value: Double): Self = this.set("value_x1", value.asInstanceOf[js.Any])
+    def setValue_x2Undefined: Self = StObject.set(x, "value_x2", js.undefined)
     
     @scala.inline
-    def deleteValue_x1: Self = this.set("value_x1", js.undefined)
+    def setValue_y1(value: Double): Self = StObject.set(x, "value_y1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue_x2(value: Double): Self = this.set("value_x2", value.asInstanceOf[js.Any])
+    def setValue_y1Undefined: Self = StObject.set(x, "value_y1", js.undefined)
     
     @scala.inline
-    def deleteValue_x2: Self = this.set("value_x2", js.undefined)
+    def setValue_y2(value: Double): Self = StObject.set(x, "value_y2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue_y1(value: Double): Self = this.set("value_y1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue_y1: Self = this.set("value_y1", js.undefined)
-    
-    @scala.inline
-    def setValue_y2(value: Double): Self = this.set("value_y2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue_y2: Self = this.set("value_y2", js.undefined)
+    def setValue_y2Undefined: Self = StObject.set(x, "value_y2", js.undefined)
   }
 }

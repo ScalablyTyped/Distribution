@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimecodeBurnin extends js.Object {
+trait TimecodeBurnin extends StObject {
   
   /**
     * Use Font Size (FontSize) to set the font size of any burned-in timecode. Valid values are 10, 16, 32, 48.
@@ -31,36 +32,24 @@ object TimecodeBurnin {
   }
   
   @scala.inline
-  implicit class TimecodeBurninOps[Self <: TimecodeBurnin] (val x: Self) extends AnyVal {
+  implicit class TimecodeBurninMutableBuilder[Self <: TimecodeBurnin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontSize(value: integerMin10Max48): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontSizeUndefined: Self = StObject.set(x, "FontSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: TimecodeBurninPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: integerMin10Max48): Self = this.set("FontSize", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "Position", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("FontSize", js.undefined)
+    def setPrefix(value: stringPattern): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: TimecodeBurninPosition): Self = this.set("Position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("Position", js.undefined)
-    
-    @scala.inline
-    def setPrefix(value: stringPattern): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
   }
 }

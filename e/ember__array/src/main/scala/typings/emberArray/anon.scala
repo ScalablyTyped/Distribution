@@ -1,15 +1,14 @@
 package typings.emberArray
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Fn0[T] extends js.Object {
+  trait Fn0[T] extends StObject {
     
     def apply(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _]): js.UndefOr[T] = js.native
     def apply(
@@ -38,7 +37,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait Fn1[T] extends js.Object {
+  trait Fn1[T] extends StObject {
     
     def apply(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): Boolean = js.native
     def apply(
@@ -48,7 +47,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCall[T] extends js.Object {
+  trait FnCall[T] extends StObject {
     
     def apply(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit]): Unit = js.native
     def apply(
@@ -58,7 +57,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallCallbackfnInitialValue[T] extends js.Object {
+  trait FnCallCallbackfnInitialValue[T] extends StObject {
     
     def apply(
       callbackfn: js.Function4[
@@ -82,7 +81,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallCallbackfnThisArg[T] extends js.Object {
+  trait FnCallCallbackfnThisArg[T] extends StObject {
     
     def apply[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Array[U] = js.native
     def apply[U](
@@ -92,7 +91,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallPredicateThisArg[T] extends js.Object {
+  trait FnCallPredicateThisArg[T] extends StObject {
     
     def apply(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): js.Array[T] = js.native
     def apply(

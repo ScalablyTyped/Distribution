@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mjmlReact.mjmlReactStrings.skip
 import typings.mjmlReact.mjmlReactStrings.soft
 import typings.mjmlReact.mjmlReactStrings.strict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mjml2HtmlOptions extends js.Object {
+trait Mjml2HtmlOptions extends StObject {
   
   var beautify: js.UndefOr[Boolean] = js.native
   
@@ -32,54 +33,42 @@ object Mjml2HtmlOptions {
   }
   
   @scala.inline
-  implicit class Mjml2HtmlOptionsOps[Self <: Mjml2HtmlOptions] (val x: Self) extends AnyVal {
+  implicit class Mjml2HtmlOptionsMutableBuilder[Self <: Mjml2HtmlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeautify(value: Boolean): Self = this.set("beautify", value.asInstanceOf[js.Any])
+    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
     @scala.inline
-    def deleteBeautify: Self = this.set("beautify", js.undefined)
+    def setFonts(value: StringDictionary[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
     @scala.inline
-    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    def setKeepComments(value: Boolean): Self = StObject.set(x, "keepComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFonts(value: StringDictionary[String]): Self = this.set("fonts", value.asInstanceOf[js.Any])
+    def setKeepCommentsUndefined: Self = StObject.set(x, "keepComments", js.undefined)
     
     @scala.inline
-    def deleteFonts: Self = this.set("fonts", js.undefined)
+    def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepComments(value: Boolean): Self = this.set("keepComments", value.asInstanceOf[js.Any])
+    def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
     
     @scala.inline
-    def deleteKeepComments: Self = this.set("keepComments", js.undefined)
+    def setValidationLevel(value: strict | soft | skip): Self = StObject.set(x, "validationLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinify(value: Boolean): Self = this.set("minify", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinify: Self = this.set("minify", js.undefined)
-    
-    @scala.inline
-    def setValidationLevel(value: strict | soft | skip): Self = this.set("validationLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationLevel: Self = this.set("validationLevel", js.undefined)
+    def setValidationLevelUndefined: Self = StObject.set(x, "validationLevel", js.undefined)
   }
 }

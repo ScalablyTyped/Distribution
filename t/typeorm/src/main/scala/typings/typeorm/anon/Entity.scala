@@ -1,11 +1,12 @@
 package typings.typeorm.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Entity[E1, E2] extends js.Object {
+trait Entity[E1, E2] extends StObject {
   
   var entity: E1 = js.native
   
@@ -20,30 +21,18 @@ object Entity {
   }
   
   @scala.inline
-  implicit class EntityOps[Self <: Entity[_, _], E1, E2] (val x: Self with (Entity[E1, E2])) extends AnyVal {
+  implicit class EntityMutableBuilder[Self <: Entity[_, _], E1, E2] (val x: Self with (Entity[E1, E2])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: E1): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelated(value: E2 | js.Array[E2]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
     
     @scala.inline
-    def setEntity(value: E1): Self = this.set("entity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelatedVarargs(value: E2*): Self = this.set("related", js.Array(value :_*))
-    
-    @scala.inline
-    def setRelated(value: E2 | js.Array[E2]): Self = this.set("related", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelated: Self = this.set("related", js.undefined)
+    def setRelatedVarargs(value: E2*): Self = StObject.set(x, "related", js.Array(value :_*))
   }
 }

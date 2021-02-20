@@ -1,29 +1,39 @@
 package typings.winrtUwp.Windows.UI.Input.Spatial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpatialInteractionManager extends js.Object {
+trait SpatialInteractionManager extends StObject {
   
-   /* unmapped type */ var addEventListener: js.Any = js.native
+  /* unmapped type */
+  var addEventListener: js.Any = js.native
   
-   /* unmapped type */ var getDetectedSourcesAtTimestamp: js.Any = js.native
+  /* unmapped type */
+  var getDetectedSourcesAtTimestamp: js.Any = js.native
   
-   /* unmapped type */ var oninteractiondetected: js.Any = js.native
+  /* unmapped type */
+  var oninteractiondetected: js.Any = js.native
   
-   /* unmapped type */ var onsourcedetected: js.Any = js.native
+  /* unmapped type */
+  var onsourcedetected: js.Any = js.native
   
-   /* unmapped type */ var onsourcelost: js.Any = js.native
+  /* unmapped type */
+  var onsourcelost: js.Any = js.native
   
-   /* unmapped type */ var onsourcepressed: js.Any = js.native
+  /* unmapped type */
+  var onsourcepressed: js.Any = js.native
   
-   /* unmapped type */ var onsourcereleased: js.Any = js.native
+  /* unmapped type */
+  var onsourcereleased: js.Any = js.native
   
-   /* unmapped type */ var onsourceupdated: js.Any = js.native
+  /* unmapped type */
+  var onsourceupdated: js.Any = js.native
   
-   /* unmapped type */ var removeEventListener: js.Any = js.native
+  /* unmapped type */
+  var removeEventListener: js.Any = js.native
 }
 object SpatialInteractionManager {
   
@@ -44,45 +54,33 @@ object SpatialInteractionManager {
   }
   
   @scala.inline
-  implicit class SpatialInteractionManagerOps[Self <: SpatialInteractionManager] (val x: Self) extends AnyVal {
+  implicit class SpatialInteractionManagerMutableBuilder[Self <: SpatialInteractionManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDetectedSourcesAtTimestamp(value: js.Any): Self = StObject.set(x, "getDetectedSourcesAtTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOninteractiondetected(value: js.Any): Self = StObject.set(x, "oninteractiondetected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddEventListener(value: js.Any): Self = this.set("addEventListener", value.asInstanceOf[js.Any])
+    def setOnsourcedetected(value: js.Any): Self = StObject.set(x, "onsourcedetected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDetectedSourcesAtTimestamp(value: js.Any): Self = this.set("getDetectedSourcesAtTimestamp", value.asInstanceOf[js.Any])
+    def setOnsourcelost(value: js.Any): Self = StObject.set(x, "onsourcelost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOninteractiondetected(value: js.Any): Self = this.set("oninteractiondetected", value.asInstanceOf[js.Any])
+    def setOnsourcepressed(value: js.Any): Self = StObject.set(x, "onsourcepressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsourcedetected(value: js.Any): Self = this.set("onsourcedetected", value.asInstanceOf[js.Any])
+    def setOnsourcereleased(value: js.Any): Self = StObject.set(x, "onsourcereleased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsourcelost(value: js.Any): Self = this.set("onsourcelost", value.asInstanceOf[js.Any])
+    def setOnsourceupdated(value: js.Any): Self = StObject.set(x, "onsourceupdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsourcepressed(value: js.Any): Self = this.set("onsourcepressed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnsourcereleased(value: js.Any): Self = this.set("onsourcereleased", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnsourceupdated(value: js.Any): Self = this.set("onsourceupdated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveEventListener(value: js.Any): Self = this.set("removeEventListener", value.asInstanceOf[js.Any])
+    def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
   }
 }

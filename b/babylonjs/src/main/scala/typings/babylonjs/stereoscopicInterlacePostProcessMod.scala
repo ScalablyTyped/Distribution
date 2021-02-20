@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.postProcessMod.PostProcess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/stereoscopicInterlacePostProcess", JSImport.Namespace)
-@js.native
-object stereoscopicInterlacePostProcessMod extends js.Object {
+object stereoscopicInterlacePostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/stereoscopicInterlacePostProcess", "StereoscopicInterlacePostProcess")
   @js.native
   class StereoscopicInterlacePostProcess protected () extends PostProcess {
     /**
@@ -76,6 +76,7 @@ object stereoscopicInterlacePostProcessMod extends js.Object {
     var _stepSize: js.Any = js.native
   }
   
+  @JSImport("babylonjs/PostProcesses/stereoscopicInterlacePostProcess", "StereoscopicInterlacePostProcessI")
   @js.native
   class StereoscopicInterlacePostProcessI protected () extends PostProcess {
     /**

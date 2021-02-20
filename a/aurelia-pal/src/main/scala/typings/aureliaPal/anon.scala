@@ -1,20 +1,14 @@
 package typings.aureliaPal
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.std.Element
-import typings.std.NodeList
-import typings.std.SVGElement
-import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Instantiable extends Instantiable0[XMLHttpRequest] {
+  trait TypeofXMLHttpRequest extends StObject {
     
     val DONE: Double = js.native
     
@@ -26,13 +20,31 @@ object anon extends js.Object {
     
     val UNSENT: Double = js.native
   }
-  
-  @js.native
-  trait InstantiableElement extends Instantiable0[Element]
-  
-  @js.native
-  trait InstantiableNodeList extends Instantiable0[NodeList]
-  
-  @js.native
-  trait InstantiableSVGElement extends Instantiable0[SVGElement]
+  object TypeofXMLHttpRequest {
+    
+    @scala.inline
+    def apply(DONE: Double, HEADERS_RECEIVED: Double, LOADING: Double, OPENED: Double, UNSENT: Double): TypeofXMLHttpRequest = {
+      val __obj = js.Dynamic.literal(DONE = DONE.asInstanceOf[js.Any], HEADERS_RECEIVED = HEADERS_RECEIVED.asInstanceOf[js.Any], LOADING = LOADING.asInstanceOf[js.Any], OPENED = OPENED.asInstanceOf[js.Any], UNSENT = UNSENT.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TypeofXMLHttpRequest]
+    }
+    
+    @scala.inline
+    implicit class TypeofXMLHttpRequestMutableBuilder[Self <: TypeofXMLHttpRequest] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDONE(value: Double): Self = StObject.set(x, "DONE", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHEADERS_RECEIVED(value: Double): Self = StObject.set(x, "HEADERS_RECEIVED", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLOADING(value: Double): Self = StObject.set(x, "LOADING", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOPENED(value: Double): Self = StObject.set(x, "OPENED", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUNSENT(value: Double): Self = StObject.set(x, "UNSENT", value.asInstanceOf[js.Any])
+    }
+  }
 }

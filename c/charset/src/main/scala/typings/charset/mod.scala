@@ -3,13 +3,12 @@ package typings.charset
 import typings.node.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("charset", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * guess data charset from req.headers, xml, html content-type meta tag
@@ -31,16 +30,40 @@ object mod extends js.Object {
     * @param peekSize max content peek size, default is 512
     * @return charset, lower case, e.g.: utf8, gbk, gb2312, .... If can\'t guess, return null
     */
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: String): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: String, data: js.UndefOr[scala.Nothing], peekSize: Double): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: String, data: Buffer): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: String, data: Buffer, peekSize: Double): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: IncomingHttpHeaders): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: IncomingHttpHeaders, data: js.UndefOr[scala.Nothing], peekSize: Double): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: IncomingHttpHeaders, data: Buffer): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: IncomingHttpHeaders, data: Buffer, peekSize: Double): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: IncomingMessage): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: IncomingMessage, data: js.UndefOr[scala.Nothing], peekSize: Double): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: IncomingMessage, data: Buffer): String | Null = js.native
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
   def apply(obj: IncomingMessage, data: Buffer, peekSize: Double): String | Null = js.native
 }

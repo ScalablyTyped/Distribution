@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricDatapoint extends js.Object {
+trait MetricDatapoint extends StObject {
   
   /**
     * The average.
@@ -51,60 +52,48 @@ object MetricDatapoint {
   }
   
   @scala.inline
-  implicit class MetricDatapointOps[Self <: MetricDatapoint] (val x: Self) extends AnyVal {
+  implicit class MetricDatapointMutableBuilder[Self <: MetricDatapoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverage(value: double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximum(value: double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverage(value: double): Self = this.set("average", value.asInstanceOf[js.Any])
+    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
     @scala.inline
-    def deleteAverage: Self = this.set("average", js.undefined)
+    def setMinimum(value: double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
     @scala.inline
-    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    def setSampleCount(value: double): Self = StObject.set(x, "sampleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum(value: double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    def setSampleCountUndefined: Self = StObject.set(x, "sampleCount", js.undefined)
     
     @scala.inline
-    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    def setSum(value: double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleCount(value: double): Self = this.set("sampleCount", value.asInstanceOf[js.Any])
+    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
     
     @scala.inline
-    def deleteSampleCount: Self = this.set("sampleCount", js.undefined)
+    def setTimestamp(value: timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSum(value: double): Self = this.set("sum", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteSum: Self = this.set("sum", js.undefined)
+    def setUnit(value: MetricUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: timestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: MetricUnit): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

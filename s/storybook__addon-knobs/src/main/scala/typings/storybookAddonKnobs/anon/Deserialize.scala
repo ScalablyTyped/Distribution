@@ -1,11 +1,12 @@
 package typings.storybookAddonKnobs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Deserialize extends js.Object {
+trait Deserialize extends StObject {
   
   def deserialize(v: js.Any): js.Any = js.native
   
@@ -20,24 +21,12 @@ object Deserialize {
   }
   
   @scala.inline
-  implicit class DeserializeOps[Self <: Deserialize] (val x: Self) extends AnyVal {
+  implicit class DeserializeMutableBuilder[Self <: Deserialize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeserialize(value: js.Any => js.Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeserialize(value: js.Any => js.Any): Self = this.set("deserialize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSerialize(value: js.Any => js.Any): Self = this.set("serialize", js.Any.fromFunction1(value))
+    def setSerialize(value: js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
   }
 }

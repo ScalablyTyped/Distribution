@@ -11,16 +11,16 @@ import typings.babylonjs.webXRInputMod.IWebXRInputOptions
 import typings.babylonjs.webXRInputMod.WebXRInput
 import typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/webXRDefaultExperience", JSImport.Namespace)
-@js.native
-object webXRDefaultExperienceMod extends js.Object {
+object webXRDefaultExperienceMod {
   
+  @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperience")
   @js.native
-  class WebXRDefaultExperience protected () extends js.Object {
+  class WebXRDefaultExperience protected () extends StObject {
     
     /**
       * Base experience
@@ -58,8 +58,7 @@ object webXRDefaultExperienceMod extends js.Object {
     var teleportation: WebXRMotionControllerTeleportation = js.native
   }
   /* static members */
-  @js.native
-  object WebXRDefaultExperience extends js.Object {
+  object WebXRDefaultExperience {
     
     /**
       * Creates the default xr experience
@@ -67,12 +66,17 @@ object webXRDefaultExperienceMod extends js.Object {
       * @param options options for basic configuration
       * @returns resulting WebXRDefaultExperience
       */
+    @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperience.CreateAsync")
+    @js.native
     def CreateAsync(scene: Scene): js.Promise[WebXRDefaultExperience] = js.native
+    @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperience.CreateAsync")
+    @js.native
     def CreateAsync(scene: Scene, options: WebXRDefaultExperienceOptions): js.Promise[WebXRDefaultExperience] = js.native
   }
   
+  @JSImport("babylonjs/XR/webXRDefaultExperience", "WebXRDefaultExperienceOptions")
   @js.native
-  class WebXRDefaultExperienceOptions () extends js.Object {
+  class WebXRDefaultExperienceOptions () extends StObject {
     
     /**
       * Enable or disable default UI to enter XR

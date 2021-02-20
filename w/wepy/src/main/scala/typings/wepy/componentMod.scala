@@ -1,16 +1,19 @@
 package typings.wepy
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wepy/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
+  
+  @JSImport("wepy/component", JSImport.Default)
+  @js.native
+  class default () extends component
   
   @js.native
-  trait component extends js.Object {
+  trait component extends StObject {
     
     @JSName("$apply")
     def $apply(fn: js.Function0[Unit]): Unit = js.native
@@ -51,7 +54,4 @@ object componentMod extends js.Object {
     def setData(k: String, v: js.Any): Unit = js.native
     def setData(k: js.Array[String], v: js.Any): Unit = js.native
   }
-  
-  @js.native
-  class default () extends component
 }

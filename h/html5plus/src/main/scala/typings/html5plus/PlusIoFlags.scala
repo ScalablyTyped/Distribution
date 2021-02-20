@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
 @js.native
-trait PlusIoFlags extends js.Object {
+trait PlusIoFlags extends StObject {
   
   /**
     * 是否创建对象标记
@@ -37,30 +38,18 @@ object PlusIoFlags {
   }
   
   @scala.inline
-  implicit class PlusIoFlagsOps[Self <: PlusIoFlags] (val x: Self) extends AnyVal {
+  implicit class PlusIoFlagsMutableBuilder[Self <: PlusIoFlags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: Boolean): Self = this.set("create", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
-    
-    @scala.inline
-    def setExclusive(value: Boolean): Self = this.set("exclusive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusive: Self = this.set("exclusive", js.undefined)
+    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
   }
 }

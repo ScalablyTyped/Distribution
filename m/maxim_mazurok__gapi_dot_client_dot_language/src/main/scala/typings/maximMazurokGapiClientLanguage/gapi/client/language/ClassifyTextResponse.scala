@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassifyTextResponse extends js.Object {
+trait ClassifyTextResponse extends StObject {
   
   /** Categories representing the input document. */
   var categories: js.UndefOr[js.Array[ClassificationCategory]] = js.native
@@ -19,27 +20,15 @@ object ClassifyTextResponse {
   }
   
   @scala.inline
-  implicit class ClassifyTextResponseOps[Self <: ClassifyTextResponse] (val x: Self) extends AnyVal {
+  implicit class ClassifyTextResponseMutableBuilder[Self <: ClassifyTextResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: js.Array[ClassificationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCategoriesVarargs(value: ClassificationCategory*): Self = this.set("categories", js.Array(value :_*))
-    
-    @scala.inline
-    def setCategories(value: js.Array[ClassificationCategory]): Self = this.set("categories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setCategoriesVarargs(value: ClassificationCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
   }
 }

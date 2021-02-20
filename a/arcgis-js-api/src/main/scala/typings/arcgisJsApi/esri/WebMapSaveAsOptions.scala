@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object WebMapSaveAsOptions {
   }
   
   @scala.inline
-  implicit class WebMapSaveAsOptionsOps[Self <: WebMapSaveAsOptions] (val x: Self) extends AnyVal {
+  implicit class WebMapSaveAsOptionsMutableBuilder[Self <: WebMapSaveAsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFolder(value: PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolder(value: PortalFolder): Self = this.set("folder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFolder: Self = this.set("folder", js.undefined)
-    
-    @scala.inline
-    def setIgnoreUnsupported(value: Boolean): Self = this.set("ignoreUnsupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreUnsupported: Self = this.set("ignoreUnsupported", js.undefined)
+    def setIgnoreUnsupportedUndefined: Self = StObject.set(x, "ignoreUnsupported", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFBackupType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBackupJob extends js.Object {
+trait IBackupJob extends StObject {
   
   var BackupType: MFBackupType = js.native
   
@@ -39,39 +40,27 @@ object IBackupJob {
   }
   
   @scala.inline
-  implicit class IBackupJobOps[Self <: IBackupJob] (val x: Self) extends AnyVal {
+  implicit class IBackupJobMutableBuilder[Self <: IBackupJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupType(value: MFBackupType): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IBackupJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileSizeLimitInMB(value: Double): Self = StObject.set(x, "FileSizeLimitInMB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupType(value: MFBackupType): Self = this.set("BackupType", value.asInstanceOf[js.Any])
+    def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IBackupJob): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setOverwriteExistingFiles(value: Boolean): Self = StObject.set(x, "OverwriteExistingFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSizeLimitInMB(value: Double): Self = this.set("FileSizeLimitInMB", value.asInstanceOf[js.Any])
+    def setTargetFile(value: String): Self = StObject.set(x, "TargetFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpersonation(value: IImpersonation): Self = this.set("Impersonation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverwriteExistingFiles(value: Boolean): Self = this.set("OverwriteExistingFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetFile(value: String): Self = this.set("TargetFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVaultGUID(value: String): Self = this.set("VaultGUID", value.asInstanceOf[js.Any])
+    def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
   }
 }

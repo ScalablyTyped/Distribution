@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KinesisSettings extends js.Object {
+trait KinesisSettings extends StObject {
   
   /**
     * Shows detailed control information for table definition, column definition, and table and column changes in the Kinesis message output. The default is false.
@@ -61,72 +62,60 @@ object KinesisSettings {
   }
   
   @scala.inline
-  implicit class KinesisSettingsOps[Self <: KinesisSettings] (val x: Self) extends AnyVal {
+  implicit class KinesisSettingsMutableBuilder[Self <: KinesisSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeControlDetails(value: BooleanOptional): Self = StObject.set(x, "IncludeControlDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeControlDetailsUndefined: Self = StObject.set(x, "IncludeControlDetails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeNullAndEmpty(value: BooleanOptional): Self = StObject.set(x, "IncludeNullAndEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeControlDetails(value: BooleanOptional): Self = this.set("IncludeControlDetails", value.asInstanceOf[js.Any])
+    def setIncludeNullAndEmptyUndefined: Self = StObject.set(x, "IncludeNullAndEmpty", js.undefined)
     
     @scala.inline
-    def deleteIncludeControlDetails: Self = this.set("IncludeControlDetails", js.undefined)
+    def setIncludePartitionValue(value: BooleanOptional): Self = StObject.set(x, "IncludePartitionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNullAndEmpty(value: BooleanOptional): Self = this.set("IncludeNullAndEmpty", value.asInstanceOf[js.Any])
+    def setIncludePartitionValueUndefined: Self = StObject.set(x, "IncludePartitionValue", js.undefined)
     
     @scala.inline
-    def deleteIncludeNullAndEmpty: Self = this.set("IncludeNullAndEmpty", js.undefined)
+    def setIncludeTableAlterOperations(value: BooleanOptional): Self = StObject.set(x, "IncludeTableAlterOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludePartitionValue(value: BooleanOptional): Self = this.set("IncludePartitionValue", value.asInstanceOf[js.Any])
+    def setIncludeTableAlterOperationsUndefined: Self = StObject.set(x, "IncludeTableAlterOperations", js.undefined)
     
     @scala.inline
-    def deleteIncludePartitionValue: Self = this.set("IncludePartitionValue", js.undefined)
+    def setIncludeTransactionDetails(value: BooleanOptional): Self = StObject.set(x, "IncludeTransactionDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTableAlterOperations(value: BooleanOptional): Self = this.set("IncludeTableAlterOperations", value.asInstanceOf[js.Any])
+    def setIncludeTransactionDetailsUndefined: Self = StObject.set(x, "IncludeTransactionDetails", js.undefined)
     
     @scala.inline
-    def deleteIncludeTableAlterOperations: Self = this.set("IncludeTableAlterOperations", js.undefined)
+    def setMessageFormat(value: MessageFormatValue): Self = StObject.set(x, "MessageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTransactionDetails(value: BooleanOptional): Self = this.set("IncludeTransactionDetails", value.asInstanceOf[js.Any])
+    def setMessageFormatUndefined: Self = StObject.set(x, "MessageFormat", js.undefined)
     
     @scala.inline
-    def deleteIncludeTransactionDetails: Self = this.set("IncludeTransactionDetails", js.undefined)
+    def setPartitionIncludeSchemaTable(value: BooleanOptional): Self = StObject.set(x, "PartitionIncludeSchemaTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageFormat(value: MessageFormatValue): Self = this.set("MessageFormat", value.asInstanceOf[js.Any])
+    def setPartitionIncludeSchemaTableUndefined: Self = StObject.set(x, "PartitionIncludeSchemaTable", js.undefined)
     
     @scala.inline
-    def deleteMessageFormat: Self = this.set("MessageFormat", js.undefined)
+    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionIncludeSchemaTable(value: BooleanOptional): Self = this.set("PartitionIncludeSchemaTable", value.asInstanceOf[js.Any])
+    def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "ServiceAccessRoleArn", js.undefined)
     
     @scala.inline
-    def deletePartitionIncludeSchemaTable: Self = this.set("PartitionIncludeSchemaTable", js.undefined)
+    def setStreamArn(value: String): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = this.set("ServiceAccessRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceAccessRoleArn: Self = this.set("ServiceAccessRoleArn", js.undefined)
-    
-    @scala.inline
-    def setStreamArn(value: String): Self = this.set("StreamArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamArn: Self = this.set("StreamArn", js.undefined)
+    def setStreamArnUndefined: Self = StObject.set(x, "StreamArn", js.undefined)
   }
 }

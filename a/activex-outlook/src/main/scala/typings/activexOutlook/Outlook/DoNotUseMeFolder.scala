@@ -1,12 +1,13 @@
 package typings.activexOutlook.Outlook
 
 import typings.activexStdole.stdole.StdPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoNotUseMeFolder extends js.Object {
+trait DoNotUseMeFolder extends StObject {
   
   def AddToFavorites(): Unit = js.native
   def AddToFavorites(fNoUI: js.UndefOr[scala.Nothing], Name: js.Any): Unit = js.native

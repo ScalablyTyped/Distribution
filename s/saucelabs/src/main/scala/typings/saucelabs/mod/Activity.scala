@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,42 +32,30 @@ object Activity {
   }
   
   @scala.inline
-  implicit class ActivityOps[Self <: Activity] (val x: Self) extends AnyVal {
+  implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCcy_exec_peak(value: js.Array[Double]): Self = StObject.set(x, "ccy_exec_peak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCcy_exec_peakVarargs(value: Double*): Self = StObject.set(x, "ccy_exec_peak", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatestamp(value: js.Array[String]): Self = StObject.set(x, "datestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcy_exec_peakVarargs(value: Double*): Self = this.set("ccy_exec_peak", js.Array(value :_*))
+    def setDatestampVarargs(value: String*): Self = StObject.set(x, "datestamp", js.Array(value :_*))
     
     @scala.inline
-    def setCcy_exec_peak(value: js.Array[Double]): Self = this.set("ccy_exec_peak", value.asInstanceOf[js.Any])
+    def setJobs(value: js.Array[Double]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatestampVarargs(value: String*): Self = this.set("datestamp", js.Array(value :_*))
+    def setJobsVarargs(value: Double*): Self = StObject.set(x, "jobs", js.Array(value :_*))
     
     @scala.inline
-    def setDatestamp(value: js.Array[String]): Self = this.set("datestamp", value.asInstanceOf[js.Any])
+    def setMinutes(value: js.Array[Double]): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobsVarargs(value: Double*): Self = this.set("jobs", js.Array(value :_*))
-    
-    @scala.inline
-    def setJobs(value: js.Array[Double]): Self = this.set("jobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinutesVarargs(value: Double*): Self = this.set("minutes", js.Array(value :_*))
-    
-    @scala.inline
-    def setMinutes(value: js.Array[Double]): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    def setMinutesVarargs(value: Double*): Self = StObject.set(x, "minutes", js.Array(value :_*))
   }
 }

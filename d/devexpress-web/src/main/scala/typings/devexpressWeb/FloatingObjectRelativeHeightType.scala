@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FloatingObjectRelativeHeightType extends js.Object
+sealed trait FloatingObjectRelativeHeightType extends StObject
 /**
   * Lists values specifying to what element the floating object height is relative.
   */
 @JSGlobal("FloatingObjectRelativeHeightType")
 @js.native
-object FloatingObjectRelativeHeightType extends js.Object {
+object FloatingObjectRelativeHeightType extends StObject {
   
   /**
     * Relative to bottom margin.

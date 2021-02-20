@@ -6,14 +6,14 @@ import typings.ionicCore.ionicCoreStrings.end
 import typings.ionicCore.ionicCoreStrings.start
 import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/fab-list/fab-list", JSImport.Namespace)
-@js.native
-object fabListMod extends js.Object {
+object fabListMod {
   
+  @JSImport("@ionic/core/dist/types/components/fab-list/fab-list", "FabList")
   @js.native
   class FabList () extends ComponentInterface {
     

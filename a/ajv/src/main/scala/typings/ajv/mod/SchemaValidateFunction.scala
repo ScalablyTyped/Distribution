@@ -1,11 +1,12 @@
 package typings.ajv.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaValidateFunction extends js.Object {
+trait SchemaValidateFunction extends StObject {
   
   def apply(
     schema: js.Any,

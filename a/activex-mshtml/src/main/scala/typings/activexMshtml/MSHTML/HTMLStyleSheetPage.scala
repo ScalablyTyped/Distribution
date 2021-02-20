@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLStyleSheetPage extends js.Object {
+trait HTMLStyleSheetPage extends StObject {
   
   @JSName("MSHTML.HTMLStyleSheetPage_typekey")
   var MSHTMLDotHTMLStyleSheetPage_typekey: HTMLStyleSheetPage = js.native
@@ -50,48 +51,36 @@ object HTMLStyleSheetPage {
   }
   
   @scala.inline
-  implicit class HTMLStyleSheetPageOps[Self <: HTMLStyleSheetPage] (val x: Self) extends AnyVal {
+  implicit class HTMLStyleSheetPageMutableBuilder[Self <: HTMLStyleSheetPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSHTMLDotHTMLStyleSheetPage_typekey(value: HTMLStyleSheetPage): Self = StObject.set(x, "MSHTML.HTMLStyleSheetPage_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotHTMLStyleSheetPage_typekey(value: HTMLStyleSheetPage): Self = this.set("MSHTML.HTMLStyleSheetPage_typekey", value.asInstanceOf[js.Any])
+    def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstructor(value: js.Any): Self = this.set("constructor", value.asInstanceOf[js.Any])
+    def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssText(value: String): Self = this.set("cssText", value.asInstanceOf[js.Any])
+    def setPseudoClass(value: String): Self = StObject.set(x, "pseudoClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentRule(value: IHTMLCSSRule): Self = this.set("parentRule", value.asInstanceOf[js.Any])
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentStyleSheet(value: IHTMLStyleSheet): Self = this.set("parentStyleSheet", value.asInstanceOf[js.Any])
+    def setSelectorText(value: String): Self = StObject.set(x, "selectorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPseudoClass(value: String): Self = this.set("pseudoClass", value.asInstanceOf[js.Any])
+    def setStyle(value: IHTMLRuleStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectorText(value: String): Self = this.set("selectorText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: IHTMLRuleStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

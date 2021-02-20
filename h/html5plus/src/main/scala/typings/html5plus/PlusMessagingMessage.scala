@@ -2,6 +2,7 @@ package typings.html5plus
 
 import typings.html5plus.html5plusStrings.textSlashhtml
 import typings.html5plus.html5plusStrings.textSlashplain
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/messaging.html](http://www.html5plus.org/doc/zh_cn/messaging.html)
   */
 @js.native
-trait PlusMessagingMessage extends js.Object {
+trait PlusMessagingMessage extends StObject {
   
   /**
     * 添加附件

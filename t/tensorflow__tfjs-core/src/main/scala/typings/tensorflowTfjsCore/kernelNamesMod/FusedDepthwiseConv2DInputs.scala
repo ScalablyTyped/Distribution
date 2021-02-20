@@ -2,6 +2,7 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.NamedTensorInfoMap
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,36 +27,24 @@ object FusedDepthwiseConv2DInputs {
   }
   
   @scala.inline
-  implicit class FusedDepthwiseConv2DInputsOps[Self <: FusedDepthwiseConv2DInputs] (val x: Self) extends AnyVal {
+  implicit class FusedDepthwiseConv2DInputsMutableBuilder[Self <: FusedDepthwiseConv2DInputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBias(value: TensorInfo): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: TensorInfo): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: TensorInfo): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setPreluActivationWeights(value: TensorInfo): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: TensorInfo): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
     
     @scala.inline
-    def setBias(value: TensorInfo): Self = this.set("bias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBias: Self = this.set("bias", js.undefined)
-    
-    @scala.inline
-    def setPreluActivationWeights(value: TensorInfo): Self = this.set("preluActivationWeights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreluActivationWeights: Self = this.set("preluActivationWeights", js.undefined)
+    def setX(value: TensorInfo): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
   }
 }

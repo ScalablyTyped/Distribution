@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2InspectionRule extends js.Object {
+trait GooglePrivacyDlpV2InspectionRule extends StObject {
   
   /** Exclusion rule. */
   var exclusionRule: js.UndefOr[GooglePrivacyDlpV2ExclusionRule] = js.native
@@ -22,30 +23,18 @@ object GooglePrivacyDlpV2InspectionRule {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2InspectionRuleOps[Self <: GooglePrivacyDlpV2InspectionRule] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2InspectionRuleMutableBuilder[Self <: GooglePrivacyDlpV2InspectionRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusionRule(value: GooglePrivacyDlpV2ExclusionRule): Self = StObject.set(x, "exclusionRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusionRuleUndefined: Self = StObject.set(x, "exclusionRule", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHotwordRule(value: GooglePrivacyDlpV2HotwordRule): Self = StObject.set(x, "hotwordRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusionRule(value: GooglePrivacyDlpV2ExclusionRule): Self = this.set("exclusionRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusionRule: Self = this.set("exclusionRule", js.undefined)
-    
-    @scala.inline
-    def setHotwordRule(value: GooglePrivacyDlpV2HotwordRule): Self = this.set("hotwordRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHotwordRule: Self = this.set("hotwordRule", js.undefined)
+    def setHotwordRuleUndefined: Self = StObject.set(x, "hotwordRule", js.undefined)
   }
 }

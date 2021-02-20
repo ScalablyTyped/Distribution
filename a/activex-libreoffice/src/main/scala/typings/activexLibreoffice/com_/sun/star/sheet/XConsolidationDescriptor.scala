@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,72 +104,60 @@ object XConsolidationDescriptor {
   }
   
   @scala.inline
-  implicit class XConsolidationDescriptorOps[Self <: XConsolidationDescriptor] (val x: Self) extends AnyVal {
+  implicit class XConsolidationDescriptorMutableBuilder[Self <: XConsolidationDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunction(value: GeneralFunction): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFunction(value: () => GeneralFunction): Self = StObject.set(x, "getFunction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetInsertLinks(value: () => Boolean): Self = StObject.set(x, "getInsertLinks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFunction(value: GeneralFunction): Self = this.set("Function", value.asInstanceOf[js.Any])
+    def setGetSources(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getSources", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInsertLinks(value: Boolean): Self = this.set("InsertLinks", value.asInstanceOf[js.Any])
+    def setGetStartOutputPosition(value: () => CellAddress): Self = StObject.set(x, "getStartOutputPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSources(value: SafeArray[CellRangeAddress]): Self = this.set("Sources", value.asInstanceOf[js.Any])
+    def setGetUseColumnHeaders(value: () => Boolean): Self = StObject.set(x, "getUseColumnHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStartOutputPosition(value: CellAddress): Self = this.set("StartOutputPosition", value.asInstanceOf[js.Any])
+    def setGetUseRowHeaders(value: () => Boolean): Self = StObject.set(x, "getUseRowHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUseColumnHeaders(value: Boolean): Self = this.set("UseColumnHeaders", value.asInstanceOf[js.Any])
+    def setInsertLinks(value: Boolean): Self = StObject.set(x, "InsertLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseRowHeaders(value: Boolean): Self = this.set("UseRowHeaders", value.asInstanceOf[js.Any])
+    def setSetFunction(value: GeneralFunction => Unit): Self = StObject.set(x, "setFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFunction(value: () => GeneralFunction): Self = this.set("getFunction", js.Any.fromFunction0(value))
+    def setSetInsertLinks(value: Boolean => Unit): Self = StObject.set(x, "setInsertLinks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetInsertLinks(value: () => Boolean): Self = this.set("getInsertLinks", js.Any.fromFunction0(value))
+    def setSetSources(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "setSources", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSources(value: () => SafeArray[CellRangeAddress]): Self = this.set("getSources", js.Any.fromFunction0(value))
+    def setSetStartOutputPosition(value: CellAddress => Unit): Self = StObject.set(x, "setStartOutputPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStartOutputPosition(value: () => CellAddress): Self = this.set("getStartOutputPosition", js.Any.fromFunction0(value))
+    def setSetUseColumnHeaders(value: Boolean => Unit): Self = StObject.set(x, "setUseColumnHeaders", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUseColumnHeaders(value: () => Boolean): Self = this.set("getUseColumnHeaders", js.Any.fromFunction0(value))
+    def setSetUseRowHeaders(value: Boolean => Unit): Self = StObject.set(x, "setUseRowHeaders", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUseRowHeaders(value: () => Boolean): Self = this.set("getUseRowHeaders", js.Any.fromFunction0(value))
+    def setSources(value: SafeArray[CellRangeAddress]): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetFunction(value: GeneralFunction => Unit): Self = this.set("setFunction", js.Any.fromFunction1(value))
+    def setStartOutputPosition(value: CellAddress): Self = StObject.set(x, "StartOutputPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetInsertLinks(value: Boolean => Unit): Self = this.set("setInsertLinks", js.Any.fromFunction1(value))
+    def setUseColumnHeaders(value: Boolean): Self = StObject.set(x, "UseColumnHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSources(value: SeqEquiv[CellRangeAddress] => Unit): Self = this.set("setSources", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStartOutputPosition(value: CellAddress => Unit): Self = this.set("setStartOutputPosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUseColumnHeaders(value: Boolean => Unit): Self = this.set("setUseColumnHeaders", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUseRowHeaders(value: Boolean => Unit): Self = this.set("setUseRowHeaders", js.Any.fromFunction1(value))
+    def setUseRowHeaders(value: Boolean): Self = StObject.set(x, "UseRowHeaders", value.asInstanceOf[js.Any])
   }
 }

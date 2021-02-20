@@ -1,11 +1,12 @@
 package typings.activexAdodb.ADODB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bookmark extends js.Object {
+trait Bookmark extends StObject {
   
   @JSName("ADODB.Bookmark_typekey")
   var ADODBDotBookmark_typekey: Bookmark = js.native
@@ -20,21 +21,9 @@ object Bookmark {
   }
   
   @scala.inline
-  implicit class BookmarkOps[Self <: Bookmark] (val x: Self) extends AnyVal {
+  implicit class BookmarkMutableBuilder[Self <: Bookmark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setADODBDotBookmark_typekey(value: Bookmark): Self = this.set("ADODB.Bookmark_typekey", value.asInstanceOf[js.Any])
+    def setADODBDotBookmark_typekey(value: Bookmark): Self = StObject.set(x, "ADODB.Bookmark_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -1,16 +1,24 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.dateFns.anon.FractionDigits
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/formatRFC3339WithOptions", JSImport.Namespace)
-@js.native
-object formatRFC3339WithOptionsMod extends js.Object {
+object formatRFC3339WithOptionsMod {
   
-  @js.native
-  object default extends TopLevel[CurriedFn2[FractionDigits, Date | Double, String]]
+  object default extends Shortcut {
+    
+    @JSImport("date-fns/esm/fp/formatRFC3339WithOptions", JSImport.Default)
+    @js.native
+    val ^ : CurriedFn2[FractionDigits, Date | Double, String] = js.native
+    
+    type _To = CurriedFn2[FractionDigits, Date | Double, String]
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: CurriedFn2[FractionDigits, Date | Double, String] = ^
+  }
 }

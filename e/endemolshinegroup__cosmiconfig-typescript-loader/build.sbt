@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "endemolshinegroup__cosmiconfig-typescript-loader"
-version := "3.0.2-9cc710"
+version := "3.0.2-58ac1c"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cosmiconfig" % "7.0.0-674ad4",
-  "org.scalablytyped" %%% "make-error" % "1.3.6-5f5614",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "cosmiconfig" % "7.0.0-1c6326",
+  "org.scalablytyped" %%% "make-error" % "1.3.6-854292",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

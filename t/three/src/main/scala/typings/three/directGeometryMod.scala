@@ -9,16 +9,16 @@ import typings.three.sphereMod.Sphere
 import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
 import typings.three.vector4Mod.Vector4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/core/DirectGeometry", JSImport.Namespace)
-@js.native
-object directGeometryMod extends js.Object {
+object directGeometryMod {
   
+  @JSImport("three/src/core/DirectGeometry", "DirectGeometry")
   @js.native
-  class DirectGeometry () extends js.Object {
+  class DirectGeometry () extends StObject {
     
     /**
     	 * @default null

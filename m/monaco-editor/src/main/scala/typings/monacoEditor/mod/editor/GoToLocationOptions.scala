@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IGotoLocationOptions>> */
 @js.native
-trait GoToLocationOptions extends js.Object {
+trait GoToLocationOptions extends StObject {
   
   val alternativeDeclarationCommand: String = js.native
   
@@ -51,51 +52,39 @@ object GoToLocationOptions {
   }
   
   @scala.inline
-  implicit class GoToLocationOptionsOps[Self <: GoToLocationOptions] (val x: Self) extends AnyVal {
+  implicit class GoToLocationOptionsMutableBuilder[Self <: GoToLocationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternativeDeclarationCommand(value: String): Self = StObject.set(x, "alternativeDeclarationCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativeDefinitionCommand(value: String): Self = StObject.set(x, "alternativeDefinitionCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternativeImplementationCommand(value: String): Self = StObject.set(x, "alternativeImplementationCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeDeclarationCommand(value: String): Self = this.set("alternativeDeclarationCommand", value.asInstanceOf[js.Any])
+    def setAlternativeReferenceCommand(value: String): Self = StObject.set(x, "alternativeReferenceCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeDefinitionCommand(value: String): Self = this.set("alternativeDefinitionCommand", value.asInstanceOf[js.Any])
+    def setAlternativeTypeDefinitionCommand(value: String): Self = StObject.set(x, "alternativeTypeDefinitionCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeImplementationCommand(value: String): Self = this.set("alternativeImplementationCommand", value.asInstanceOf[js.Any])
+    def setMultiple(value: GoToLocationValues): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeReferenceCommand(value: String): Self = this.set("alternativeReferenceCommand", value.asInstanceOf[js.Any])
+    def setMultipleDeclarations(value: GoToLocationValues): Self = StObject.set(x, "multipleDeclarations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeTypeDefinitionCommand(value: String): Self = this.set("alternativeTypeDefinitionCommand", value.asInstanceOf[js.Any])
+    def setMultipleDefinitions(value: GoToLocationValues): Self = StObject.set(x, "multipleDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: GoToLocationValues): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setMultipleImplementations(value: GoToLocationValues): Self = StObject.set(x, "multipleImplementations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleDeclarations(value: GoToLocationValues): Self = this.set("multipleDeclarations", value.asInstanceOf[js.Any])
+    def setMultipleReferences(value: GoToLocationValues): Self = StObject.set(x, "multipleReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleDefinitions(value: GoToLocationValues): Self = this.set("multipleDefinitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultipleImplementations(value: GoToLocationValues): Self = this.set("multipleImplementations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultipleReferences(value: GoToLocationValues): Self = this.set("multipleReferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultipleTypeDefinitions(value: GoToLocationValues): Self = this.set("multipleTypeDefinitions", value.asInstanceOf[js.Any])
+    def setMultipleTypeDefinitions(value: GoToLocationValues): Self = StObject.set(x, "multipleTypeDefinitions", value.asInstanceOf[js.Any])
   }
 }

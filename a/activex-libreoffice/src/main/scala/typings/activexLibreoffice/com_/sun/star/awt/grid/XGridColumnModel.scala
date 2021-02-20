@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,45 +123,33 @@ object XGridColumnModel {
   }
   
   @scala.inline
-  implicit class XGridColumnModelOps[Self <: XGridColumnModel] (val x: Self) extends AnyVal {
+  implicit class XGridColumnModelMutableBuilder[Self <: XGridColumnModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddColumn(value: XGridColumn => Double): Self = StObject.set(x, "addColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: SafeArray[XGridColumn]): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCount(value: Double): Self = this.set("ColumnCount", value.asInstanceOf[js.Any])
+    def setCreateColumn(value: () => XGridColumn): Self = StObject.set(x, "createColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumns(value: SafeArray[XGridColumn]): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    def setGetColumn(value: Double => XGridColumn): Self = StObject.set(x, "getColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddColumn(value: XGridColumn => Double): Self = this.set("addColumn", js.Any.fromFunction1(value))
+    def setGetColumnCount(value: () => Double): Self = StObject.set(x, "getColumnCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateColumn(value: () => XGridColumn): Self = this.set("createColumn", js.Any.fromFunction0(value))
+    def setGetColumns(value: () => SafeArray[XGridColumn]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColumn(value: Double => XGridColumn): Self = this.set("getColumn", js.Any.fromFunction1(value))
+    def setRemoveColumn(value: Double => Unit): Self = StObject.set(x, "removeColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColumnCount(value: () => Double): Self = this.set("getColumnCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetColumns(value: () => SafeArray[XGridColumn]): Self = this.set("getColumns", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveColumn(value: Double => Unit): Self = this.set("removeColumn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDefaultColumns(value: Double => Unit): Self = this.set("setDefaultColumns", js.Any.fromFunction1(value))
+    def setSetDefaultColumns(value: Double => Unit): Self = StObject.set(x, "setDefaultColumns", js.Any.fromFunction1(value))
   }
 }

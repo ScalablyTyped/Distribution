@@ -1,12 +1,13 @@
 package typings.hlsJs.mod
 
 import typings.std.HTMLMediaElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hls extends js.Object {
+trait Hls extends StObject {
   
   /**
     * calling this method will:

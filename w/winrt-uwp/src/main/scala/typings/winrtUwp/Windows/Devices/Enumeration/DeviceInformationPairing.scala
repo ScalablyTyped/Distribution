@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information and enables pairing for a device. */
 @js.native
-trait DeviceInformationPairing extends js.Object {
+trait DeviceInformationPairing extends StObject {
   
   /** Gets a value that indicates whether the device can be paired. */
   var canPair: Boolean = js.native

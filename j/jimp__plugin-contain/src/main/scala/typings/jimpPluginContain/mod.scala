@@ -1,18 +1,19 @@
 package typings.jimpPluginContain
 
 import typings.jimpCore.etcMod.ImageCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jimp/plugin-contain", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@jimp/plugin-contain", JSImport.Default)
+  @js.native
   def default(): Contain = js.native
   
   @js.native
-  trait Contain extends js.Object {
+  trait Contain extends StObject {
     
     def contain(w: Double, h: Double): this.type = js.native
     def contain(

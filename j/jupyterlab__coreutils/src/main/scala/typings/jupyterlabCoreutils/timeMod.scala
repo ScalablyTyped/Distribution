@@ -1,16 +1,14 @@
 package typings.jupyterlabCoreutils
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/coreutils/lib/time", JSImport.Namespace)
-@js.native
-object timeMod extends js.Object {
+object timeMod {
   
-  @js.native
-  object Time extends js.Object {
+  object Time {
     
     /**
       * Convert a timestring to a date format.
@@ -21,9 +19,17 @@ object timeMod extends js.Object {
       *
       * @returns A formatted date.
       */
+    @JSImport("@jupyterlab/coreutils/lib/time", "Time.format")
+    @js.native
     def format(value: String): String = js.native
+    @JSImport("@jupyterlab/coreutils/lib/time", "Time.format")
+    @js.native
     def format(value: String, timeFormat: String): String = js.native
+    @JSImport("@jupyterlab/coreutils/lib/time", "Time.format")
+    @js.native
     def format(value: Date): String = js.native
+    @JSImport("@jupyterlab/coreutils/lib/time", "Time.format")
+    @js.native
     def format(value: Date, timeFormat: String): String = js.native
     
     /**
@@ -33,7 +39,11 @@ object timeMod extends js.Object {
       *
       * @returns A formatted date.
       */
+    @JSImport("@jupyterlab/coreutils/lib/time", "Time.formatHuman")
+    @js.native
     def formatHuman(value: String): String = js.native
+    @JSImport("@jupyterlab/coreutils/lib/time", "Time.formatHuman")
+    @js.native
     def formatHuman(value: Date): String = js.native
   }
 }

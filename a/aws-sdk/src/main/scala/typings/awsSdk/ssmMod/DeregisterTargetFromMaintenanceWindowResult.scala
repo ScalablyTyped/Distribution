@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeregisterTargetFromMaintenanceWindowResult extends js.Object {
+trait DeregisterTargetFromMaintenanceWindowResult extends StObject {
   
   /**
     * The ID of the maintenance window the target was removed from.
@@ -26,30 +27,18 @@ object DeregisterTargetFromMaintenanceWindowResult {
   }
   
   @scala.inline
-  implicit class DeregisterTargetFromMaintenanceWindowResultOps[Self <: DeregisterTargetFromMaintenanceWindowResult] (val x: Self) extends AnyVal {
+  implicit class DeregisterTargetFromMaintenanceWindowResultMutableBuilder[Self <: DeregisterTargetFromMaintenanceWindowResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWindowIdUndefined: Self = StObject.set(x, "WindowId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWindowTargetId(value: MaintenanceWindowTargetId): Self = StObject.set(x, "WindowTargetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowId(value: MaintenanceWindowId): Self = this.set("WindowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowId: Self = this.set("WindowId", js.undefined)
-    
-    @scala.inline
-    def setWindowTargetId(value: MaintenanceWindowTargetId): Self = this.set("WindowTargetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowTargetId: Self = this.set("WindowTargetId", js.undefined)
+    def setWindowTargetIdUndefined: Self = StObject.set(x, "WindowTargetId", js.undefined)
   }
 }

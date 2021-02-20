@@ -1,11 +1,12 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PricingVoiceResource extends js.Object {
+trait PricingVoiceResource extends StObject {
   
   var countries: CountryResource = js.native
   
@@ -20,24 +21,12 @@ object PricingVoiceResource {
   }
   
   @scala.inline
-  implicit class PricingVoiceResourceOps[Self <: PricingVoiceResource] (val x: Self) extends AnyVal {
+  implicit class PricingVoiceResourceMutableBuilder[Self <: PricingVoiceResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountries(value: CountryResource): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCountries(value: CountryResource): Self = this.set("countries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumbers(value: NumberResource): Self = this.set("numbers", value.asInstanceOf[js.Any])
+    def setNumbers(value: NumberResource): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
   }
 }

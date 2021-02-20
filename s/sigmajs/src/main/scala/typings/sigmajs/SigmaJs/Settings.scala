@@ -1,11 +1,12 @@
 package typings.sigmajs.SigmaJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Settings extends js.Object {
+trait Settings extends StObject {
   
   // Animation settings
   var animationsTime: js.UndefOr[Double] = js.native
@@ -185,486 +186,474 @@ object Settings {
   }
   
   @scala.inline
-  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationsTime(value: Double): Self = StObject.set(x, "animationsTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationsTimeUndefined: Self = StObject.set(x, "animationsTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoRescale(value: js.Any): Self = StObject.set(x, "autoRescale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationsTime(value: Double): Self = this.set("animationsTime", value.asInstanceOf[js.Any])
+    def setAutoRescaleUndefined: Self = StObject.set(x, "autoRescale", js.undefined)
     
     @scala.inline
-    def deleteAnimationsTime: Self = this.set("animationsTime", js.undefined)
+    def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRescale(value: js.Any): Self = this.set("autoRescale", value.asInstanceOf[js.Any])
+    def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
     
     @scala.inline
-    def deleteAutoRescale: Self = this.set("autoRescale", js.undefined)
+    def setBatchEdgesDrawing(value: Boolean): Self = StObject.set(x, "batchEdgesDrawing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResize(value: Boolean): Self = this.set("autoResize", value.asInstanceOf[js.Any])
+    def setBatchEdgesDrawingUndefined: Self = StObject.set(x, "batchEdgesDrawing", js.undefined)
     
     @scala.inline
-    def deleteAutoResize: Self = this.set("autoResize", js.undefined)
+    def setBorderSize(value: Double): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEdgesDrawing(value: Boolean): Self = this.set("batchEdgesDrawing", value.asInstanceOf[js.Any])
+    def setBorderSizeUndefined: Self = StObject.set(x, "borderSize", js.undefined)
     
     @scala.inline
-    def deleteBatchEdgesDrawing: Self = this.set("batchEdgesDrawing", js.undefined)
+    def setCanvasEdgesBatchSize(value: Double): Self = StObject.set(x, "canvasEdgesBatchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderSize(value: Double): Self = this.set("borderSize", value.asInstanceOf[js.Any])
+    def setCanvasEdgesBatchSizeUndefined: Self = StObject.set(x, "canvasEdgesBatchSize", js.undefined)
     
     @scala.inline
-    def deleteBorderSize: Self = this.set("borderSize", js.undefined)
+    def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasEdgesBatchSize(value: Double): Self = this.set("canvasEdgesBatchSize", value.asInstanceOf[js.Any])
+    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
     @scala.inline
-    def deleteCanvasEdgesBatchSize: Self = this.set("canvasEdgesBatchSize", js.undefined)
+    def setDefaultEdgeColor(value: String): Self = StObject.set(x, "defaultEdgeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: Boolean): Self = this.set("clone", value.asInstanceOf[js.Any])
+    def setDefaultEdgeColorUndefined: Self = StObject.set(x, "defaultEdgeColor", js.undefined)
     
     @scala.inline
-    def deleteClone: Self = this.set("clone", js.undefined)
+    def setDefaultEdgeHoverColor(value: String): Self = StObject.set(x, "defaultEdgeHoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEdgeColor(value: String): Self = this.set("defaultEdgeColor", value.asInstanceOf[js.Any])
+    def setDefaultEdgeHoverColorUndefined: Self = StObject.set(x, "defaultEdgeHoverColor", js.undefined)
     
     @scala.inline
-    def deleteDefaultEdgeColor: Self = this.set("defaultEdgeColor", js.undefined)
+    def setDefaultEdgeType(value: String): Self = StObject.set(x, "defaultEdgeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEdgeHoverColor(value: String): Self = this.set("defaultEdgeHoverColor", value.asInstanceOf[js.Any])
+    def setDefaultEdgeTypeUndefined: Self = StObject.set(x, "defaultEdgeType", js.undefined)
     
     @scala.inline
-    def deleteDefaultEdgeHoverColor: Self = this.set("defaultEdgeHoverColor", js.undefined)
+    def setDefaultHoverLabelBGColor(value: String): Self = StObject.set(x, "defaultHoverLabelBGColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEdgeType(value: String): Self = this.set("defaultEdgeType", value.asInstanceOf[js.Any])
+    def setDefaultHoverLabelBGColorUndefined: Self = StObject.set(x, "defaultHoverLabelBGColor", js.undefined)
     
     @scala.inline
-    def deleteDefaultEdgeType: Self = this.set("defaultEdgeType", js.undefined)
+    def setDefaultLabelColor(value: String): Self = StObject.set(x, "defaultLabelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHoverLabelBGColor(value: String): Self = this.set("defaultHoverLabelBGColor", value.asInstanceOf[js.Any])
+    def setDefaultLabelColorUndefined: Self = StObject.set(x, "defaultLabelColor", js.undefined)
     
     @scala.inline
-    def deleteDefaultHoverLabelBGColor: Self = this.set("defaultHoverLabelBGColor", js.undefined)
+    def setDefaultLabelHoverColor(value: String): Self = StObject.set(x, "defaultLabelHoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLabelColor(value: String): Self = this.set("defaultLabelColor", value.asInstanceOf[js.Any])
+    def setDefaultLabelHoverColorUndefined: Self = StObject.set(x, "defaultLabelHoverColor", js.undefined)
     
     @scala.inline
-    def deleteDefaultLabelColor: Self = this.set("defaultLabelColor", js.undefined)
+    def setDefaultLabelSize(value: String): Self = StObject.set(x, "defaultLabelSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLabelHoverColor(value: String): Self = this.set("defaultLabelHoverColor", value.asInstanceOf[js.Any])
+    def setDefaultLabelSizeUndefined: Self = StObject.set(x, "defaultLabelSize", js.undefined)
     
     @scala.inline
-    def deleteDefaultLabelHoverColor: Self = this.set("defaultLabelHoverColor", js.undefined)
+    def setDefaultNodeBorderColor(value: String): Self = StObject.set(x, "defaultNodeBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLabelSize(value: String): Self = this.set("defaultLabelSize", value.asInstanceOf[js.Any])
+    def setDefaultNodeBorderColorUndefined: Self = StObject.set(x, "defaultNodeBorderColor", js.undefined)
     
     @scala.inline
-    def deleteDefaultLabelSize: Self = this.set("defaultLabelSize", js.undefined)
+    def setDefaultNodeColor(value: String): Self = StObject.set(x, "defaultNodeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNodeBorderColor(value: String): Self = this.set("defaultNodeBorderColor", value.asInstanceOf[js.Any])
+    def setDefaultNodeColorUndefined: Self = StObject.set(x, "defaultNodeColor", js.undefined)
     
     @scala.inline
-    def deleteDefaultNodeBorderColor: Self = this.set("defaultNodeBorderColor", js.undefined)
+    def setDefaultNodeHoverColor(value: String): Self = StObject.set(x, "defaultNodeHoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNodeColor(value: String): Self = this.set("defaultNodeColor", value.asInstanceOf[js.Any])
+    def setDefaultNodeHoverColorUndefined: Self = StObject.set(x, "defaultNodeHoverColor", js.undefined)
     
     @scala.inline
-    def deleteDefaultNodeColor: Self = this.set("defaultNodeColor", js.undefined)
+    def setDefaultNodeType(value: String): Self = StObject.set(x, "defaultNodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNodeHoverColor(value: String): Self = this.set("defaultNodeHoverColor", value.asInstanceOf[js.Any])
+    def setDefaultNodeTypeUndefined: Self = StObject.set(x, "defaultNodeType", js.undefined)
     
     @scala.inline
-    def deleteDefaultNodeHoverColor: Self = this.set("defaultNodeHoverColor", js.undefined)
+    def setDoubleClickEnabled(value: Boolean): Self = StObject.set(x, "doubleClickEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNodeType(value: String): Self = this.set("defaultNodeType", value.asInstanceOf[js.Any])
+    def setDoubleClickEnabledUndefined: Self = StObject.set(x, "doubleClickEnabled", js.undefined)
     
     @scala.inline
-    def deleteDefaultNodeType: Self = this.set("defaultNodeType", js.undefined)
+    def setDoubleClickTimeout(value: Double): Self = StObject.set(x, "doubleClickTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleClickEnabled(value: Boolean): Self = this.set("doubleClickEnabled", value.asInstanceOf[js.Any])
+    def setDoubleClickTimeoutUndefined: Self = StObject.set(x, "doubleClickTimeout", js.undefined)
     
     @scala.inline
-    def deleteDoubleClickEnabled: Self = this.set("doubleClickEnabled", js.undefined)
+    def setDoubleClickZoomDuration(value: Double): Self = StObject.set(x, "doubleClickZoomDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleClickTimeout(value: Double): Self = this.set("doubleClickTimeout", value.asInstanceOf[js.Any])
+    def setDoubleClickZoomDurationUndefined: Self = StObject.set(x, "doubleClickZoomDuration", js.undefined)
     
     @scala.inline
-    def deleteDoubleClickTimeout: Self = this.set("doubleClickTimeout", js.undefined)
+    def setDoubleClickZoomingRatio(value: Double): Self = StObject.set(x, "doubleClickZoomingRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleClickZoomDuration(value: Double): Self = this.set("doubleClickZoomDuration", value.asInstanceOf[js.Any])
+    def setDoubleClickZoomingRatioUndefined: Self = StObject.set(x, "doubleClickZoomingRatio", js.undefined)
     
     @scala.inline
-    def deleteDoubleClickZoomDuration: Self = this.set("doubleClickZoomDuration", js.undefined)
+    def setDoubleTapTimeout(value: Double): Self = StObject.set(x, "doubleTapTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleClickZoomingRatio(value: Double): Self = this.set("doubleClickZoomingRatio", value.asInstanceOf[js.Any])
+    def setDoubleTapTimeoutUndefined: Self = StObject.set(x, "doubleTapTimeout", js.undefined)
     
     @scala.inline
-    def deleteDoubleClickZoomingRatio: Self = this.set("doubleClickZoomingRatio", js.undefined)
+    def setDragTimeout(value: Double): Self = StObject.set(x, "dragTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleTapTimeout(value: Double): Self = this.set("doubleTapTimeout", value.asInstanceOf[js.Any])
+    def setDragTimeoutUndefined: Self = StObject.set(x, "dragTimeout", js.undefined)
     
     @scala.inline
-    def deleteDoubleTapTimeout: Self = this.set("doubleTapTimeout", js.undefined)
+    def setDrawEdges(value: Boolean): Self = StObject.set(x, "drawEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragTimeout(value: Double): Self = this.set("dragTimeout", value.asInstanceOf[js.Any])
+    def setDrawEdgesUndefined: Self = StObject.set(x, "drawEdges", js.undefined)
     
     @scala.inline
-    def deleteDragTimeout: Self = this.set("dragTimeout", js.undefined)
+    def setDrawLabels(value: Boolean): Self = StObject.set(x, "drawLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawEdges(value: Boolean): Self = this.set("drawEdges", value.asInstanceOf[js.Any])
+    def setDrawLabelsUndefined: Self = StObject.set(x, "drawLabels", js.undefined)
     
     @scala.inline
-    def deleteDrawEdges: Self = this.set("drawEdges", js.undefined)
+    def setDrawNodes(value: Boolean): Self = StObject.set(x, "drawNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawLabels(value: Boolean): Self = this.set("drawLabels", value.asInstanceOf[js.Any])
+    def setDrawNodesUndefined: Self = StObject.set(x, "drawNodes", js.undefined)
     
     @scala.inline
-    def deleteDrawLabels: Self = this.set("drawLabels", js.undefined)
+    def setEdgeColor(value: String): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawNodes(value: Boolean): Self = this.set("drawNodes", value.asInstanceOf[js.Any])
+    def setEdgeColorUndefined: Self = StObject.set(x, "edgeColor", js.undefined)
     
     @scala.inline
-    def deleteDrawNodes: Self = this.set("drawNodes", js.undefined)
+    def setEdgeHoverColor(value: String): Self = StObject.set(x, "edgeHoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeColor(value: String): Self = this.set("edgeColor", value.asInstanceOf[js.Any])
+    def setEdgeHoverColorUndefined: Self = StObject.set(x, "edgeHoverColor", js.undefined)
     
     @scala.inline
-    def deleteEdgeColor: Self = this.set("edgeColor", js.undefined)
+    def setEdgeHoverExtremities(value: Boolean): Self = StObject.set(x, "edgeHoverExtremities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeHoverColor(value: String): Self = this.set("edgeHoverColor", value.asInstanceOf[js.Any])
+    def setEdgeHoverExtremitiesUndefined: Self = StObject.set(x, "edgeHoverExtremities", js.undefined)
     
     @scala.inline
-    def deleteEdgeHoverColor: Self = this.set("edgeHoverColor", js.undefined)
+    def setEdgeHoverPrecision(value: Double): Self = StObject.set(x, "edgeHoverPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeHoverExtremities(value: Boolean): Self = this.set("edgeHoverExtremities", value.asInstanceOf[js.Any])
+    def setEdgeHoverPrecisionUndefined: Self = StObject.set(x, "edgeHoverPrecision", js.undefined)
     
     @scala.inline
-    def deleteEdgeHoverExtremities: Self = this.set("edgeHoverExtremities", js.undefined)
+    def setEdgeHoverSizeRatio(value: Double): Self = StObject.set(x, "edgeHoverSizeRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeHoverPrecision(value: Double): Self = this.set("edgeHoverPrecision", value.asInstanceOf[js.Any])
+    def setEdgeHoverSizeRatioUndefined: Self = StObject.set(x, "edgeHoverSizeRatio", js.undefined)
     
     @scala.inline
-    def deleteEdgeHoverPrecision: Self = this.set("edgeHoverPrecision", js.undefined)
+    def setEdgesPowRatio(value: Double): Self = StObject.set(x, "edgesPowRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeHoverSizeRatio(value: Double): Self = this.set("edgeHoverSizeRatio", value.asInstanceOf[js.Any])
+    def setEdgesPowRatioUndefined: Self = StObject.set(x, "edgesPowRatio", js.undefined)
     
     @scala.inline
-    def deleteEdgeHoverSizeRatio: Self = this.set("edgeHoverSizeRatio", js.undefined)
+    def setEnableCamera(value: Boolean): Self = StObject.set(x, "enableCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgesPowRatio(value: Double): Self = this.set("edgesPowRatio", value.asInstanceOf[js.Any])
+    def setEnableCameraUndefined: Self = StObject.set(x, "enableCamera", js.undefined)
     
     @scala.inline
-    def deleteEdgesPowRatio: Self = this.set("edgesPowRatio", js.undefined)
+    def setEnableEdgeHovering(value: Boolean): Self = StObject.set(x, "enableEdgeHovering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCamera(value: Boolean): Self = this.set("enableCamera", value.asInstanceOf[js.Any])
+    def setEnableEdgeHoveringUndefined: Self = StObject.set(x, "enableEdgeHovering", js.undefined)
     
     @scala.inline
-    def deleteEnableCamera: Self = this.set("enableCamera", js.undefined)
+    def setEnableHovering(value: Boolean): Self = StObject.set(x, "enableHovering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableEdgeHovering(value: Boolean): Self = this.set("enableEdgeHovering", value.asInstanceOf[js.Any])
+    def setEnableHoveringUndefined: Self = StObject.set(x, "enableHovering", js.undefined)
     
     @scala.inline
-    def deleteEnableEdgeHovering: Self = this.set("enableEdgeHovering", js.undefined)
+    def setEventsEnabled(value: Boolean): Self = StObject.set(x, "eventsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHovering(value: Boolean): Self = this.set("enableHovering", value.asInstanceOf[js.Any])
+    def setEventsEnabledUndefined: Self = StObject.set(x, "eventsEnabled", js.undefined)
     
     @scala.inline
-    def deleteEnableHovering: Self = this.set("enableHovering", js.undefined)
+    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsEnabled(value: Boolean): Self = this.set("eventsEnabled", value.asInstanceOf[js.Any])
+    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventsEnabled: Self = this.set("eventsEnabled", js.undefined)
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setHideEdgesOnMove(value: Boolean): Self = StObject.set(x, "hideEdgesOnMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setHideEdgesOnMoveUndefined: Self = StObject.set(x, "hideEdgesOnMove", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setHoverFont(value: Double): Self = StObject.set(x, "hoverFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideEdgesOnMove(value: Boolean): Self = this.set("hideEdgesOnMove", value.asInstanceOf[js.Any])
+    def setHoverFontStyle(value: String): Self = StObject.set(x, "hoverFontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideEdgesOnMove: Self = this.set("hideEdgesOnMove", js.undefined)
+    def setHoverFontStyleUndefined: Self = StObject.set(x, "hoverFontStyle", js.undefined)
     
     @scala.inline
-    def setHoverFont(value: Double): Self = this.set("hoverFont", value.asInstanceOf[js.Any])
+    def setHoverFontUndefined: Self = StObject.set(x, "hoverFont", js.undefined)
     
     @scala.inline
-    def deleteHoverFont: Self = this.set("hoverFont", js.undefined)
+    def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverFontStyle(value: String): Self = this.set("hoverFontStyle", value.asInstanceOf[js.Any])
+    def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
     
     @scala.inline
-    def deleteHoverFontStyle: Self = this.set("hoverFontStyle", js.undefined)
+    def setLabelAlignment(value: String): Self = StObject.set(x, "labelAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImmutable(value: Boolean): Self = this.set("immutable", value.asInstanceOf[js.Any])
+    def setLabelAlignmentUndefined: Self = StObject.set(x, "labelAlignment", js.undefined)
     
     @scala.inline
-    def deleteImmutable: Self = this.set("immutable", js.undefined)
+    def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAlignment(value: String): Self = this.set("labelAlignment", value.asInstanceOf[js.Any])
+    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
     @scala.inline
-    def deleteLabelAlignment: Self = this.set("labelAlignment", js.undefined)
+    def setLabelHoverBGColor(value: String): Self = StObject.set(x, "labelHoverBGColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelColor(value: String): Self = this.set("labelColor", value.asInstanceOf[js.Any])
+    def setLabelHoverBGColorUndefined: Self = StObject.set(x, "labelHoverBGColor", js.undefined)
     
     @scala.inline
-    def deleteLabelColor: Self = this.set("labelColor", js.undefined)
+    def setLabelHoverColor(value: String): Self = StObject.set(x, "labelHoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelHoverBGColor(value: String): Self = this.set("labelHoverBGColor", value.asInstanceOf[js.Any])
+    def setLabelHoverColorUndefined: Self = StObject.set(x, "labelHoverColor", js.undefined)
     
     @scala.inline
-    def deleteLabelHoverBGColor: Self = this.set("labelHoverBGColor", js.undefined)
+    def setLabelHoverShadow(value: String): Self = StObject.set(x, "labelHoverShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelHoverColor(value: String): Self = this.set("labelHoverColor", value.asInstanceOf[js.Any])
+    def setLabelHoverShadowColor(value: String): Self = StObject.set(x, "labelHoverShadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelHoverColor: Self = this.set("labelHoverColor", js.undefined)
+    def setLabelHoverShadowColorUndefined: Self = StObject.set(x, "labelHoverShadowColor", js.undefined)
     
     @scala.inline
-    def setLabelHoverShadow(value: String): Self = this.set("labelHoverShadow", value.asInstanceOf[js.Any])
+    def setLabelHoverShadowUndefined: Self = StObject.set(x, "labelHoverShadow", js.undefined)
     
     @scala.inline
-    def deleteLabelHoverShadow: Self = this.set("labelHoverShadow", js.undefined)
+    def setLabelSize(value: String): Self = StObject.set(x, "labelSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelHoverShadowColor(value: String): Self = this.set("labelHoverShadowColor", value.asInstanceOf[js.Any])
+    def setLabelSizeRatio(value: String): Self = StObject.set(x, "labelSizeRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelHoverShadowColor: Self = this.set("labelHoverShadowColor", js.undefined)
+    def setLabelSizeRatioUndefined: Self = StObject.set(x, "labelSizeRatio", js.undefined)
     
     @scala.inline
-    def setLabelSize(value: String): Self = this.set("labelSize", value.asInstanceOf[js.Any])
+    def setLabelSizeUndefined: Self = StObject.set(x, "labelSize", js.undefined)
     
     @scala.inline
-    def deleteLabelSize: Self = this.set("labelSize", js.undefined)
+    def setLabelThreshold(value: Double): Self = StObject.set(x, "labelThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelSizeRatio(value: String): Self = this.set("labelSizeRatio", value.asInstanceOf[js.Any])
+    def setLabelThresholdUndefined: Self = StObject.set(x, "labelThreshold", js.undefined)
     
     @scala.inline
-    def deleteLabelSizeRatio: Self = this.set("labelSizeRatio", js.undefined)
+    def setMaxEdgeSize(value: Double): Self = StObject.set(x, "maxEdgeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelThreshold(value: Double): Self = this.set("labelThreshold", value.asInstanceOf[js.Any])
+    def setMaxEdgeSizeUndefined: Self = StObject.set(x, "maxEdgeSize", js.undefined)
     
     @scala.inline
-    def deleteLabelThreshold: Self = this.set("labelThreshold", js.undefined)
+    def setMaxNodeSize(value: Double): Self = StObject.set(x, "maxNodeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxEdgeSize(value: Double): Self = this.set("maxEdgeSize", value.asInstanceOf[js.Any])
+    def setMaxNodeSizeUndefined: Self = StObject.set(x, "maxNodeSize", js.undefined)
     
     @scala.inline
-    def deleteMaxEdgeSize: Self = this.set("maxEdgeSize", js.undefined)
+    def setMinArrowSize(value: Double): Self = StObject.set(x, "minArrowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNodeSize(value: Double): Self = this.set("maxNodeSize", value.asInstanceOf[js.Any])
+    def setMinArrowSizeUndefined: Self = StObject.set(x, "minArrowSize", js.undefined)
     
     @scala.inline
-    def deleteMaxNodeSize: Self = this.set("maxNodeSize", js.undefined)
+    def setMinEdgeSize(value: Double): Self = StObject.set(x, "minEdgeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinArrowSize(value: Double): Self = this.set("minArrowSize", value.asInstanceOf[js.Any])
+    def setMinEdgeSizeUndefined: Self = StObject.set(x, "minEdgeSize", js.undefined)
     
     @scala.inline
-    def deleteMinArrowSize: Self = this.set("minArrowSize", js.undefined)
+    def setMinNodeSize(value: Double): Self = StObject.set(x, "minNodeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinEdgeSize(value: Double): Self = this.set("minEdgeSize", value.asInstanceOf[js.Any])
+    def setMinNodeSizeUndefined: Self = StObject.set(x, "minNodeSize", js.undefined)
     
     @scala.inline
-    def deleteMinEdgeSize: Self = this.set("minEdgeSize", js.undefined)
+    def setMouseEnabled(value: Boolean): Self = StObject.set(x, "mouseEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinNodeSize(value: Double): Self = this.set("minNodeSize", value.asInstanceOf[js.Any])
+    def setMouseEnabledUndefined: Self = StObject.set(x, "mouseEnabled", js.undefined)
     
     @scala.inline
-    def deleteMinNodeSize: Self = this.set("minNodeSize", js.undefined)
+    def setMouseInertiaDuration(value: Double): Self = StObject.set(x, "mouseInertiaDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseEnabled(value: Boolean): Self = this.set("mouseEnabled", value.asInstanceOf[js.Any])
+    def setMouseInertiaDurationUndefined: Self = StObject.set(x, "mouseInertiaDuration", js.undefined)
     
     @scala.inline
-    def deleteMouseEnabled: Self = this.set("mouseEnabled", js.undefined)
+    def setMouseInertiaRatio(value: Double): Self = StObject.set(x, "mouseInertiaRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseInertiaDuration(value: Double): Self = this.set("mouseInertiaDuration", value.asInstanceOf[js.Any])
+    def setMouseInertiaRatioUndefined: Self = StObject.set(x, "mouseInertiaRatio", js.undefined)
     
     @scala.inline
-    def deleteMouseInertiaDuration: Self = this.set("mouseInertiaDuration", js.undefined)
+    def setMouseWheelEnabled(value: Boolean): Self = StObject.set(x, "mouseWheelEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseInertiaRatio(value: Double): Self = this.set("mouseInertiaRatio", value.asInstanceOf[js.Any])
+    def setMouseWheelEnabledUndefined: Self = StObject.set(x, "mouseWheelEnabled", js.undefined)
     
     @scala.inline
-    def deleteMouseInertiaRatio: Self = this.set("mouseInertiaRatio", js.undefined)
+    def setMouseZoomDuration(value: Double): Self = StObject.set(x, "mouseZoomDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseWheelEnabled(value: Boolean): Self = this.set("mouseWheelEnabled", value.asInstanceOf[js.Any])
+    def setMouseZoomDurationUndefined: Self = StObject.set(x, "mouseZoomDuration", js.undefined)
     
     @scala.inline
-    def deleteMouseWheelEnabled: Self = this.set("mouseWheelEnabled", js.undefined)
+    def setNodeHoverColor(value: String): Self = StObject.set(x, "nodeHoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseZoomDuration(value: Double): Self = this.set("mouseZoomDuration", value.asInstanceOf[js.Any])
+    def setNodeHoverColorUndefined: Self = StObject.set(x, "nodeHoverColor", js.undefined)
     
     @scala.inline
-    def deleteMouseZoomDuration: Self = this.set("mouseZoomDuration", js.undefined)
+    def setNodesPowRatio(value: Double): Self = StObject.set(x, "nodesPowRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeHoverColor(value: String): Self = this.set("nodeHoverColor", value.asInstanceOf[js.Any])
+    def setNodesPowRatioUndefined: Self = StObject.set(x, "nodesPowRatio", js.undefined)
     
     @scala.inline
-    def deleteNodeHoverColor: Self = this.set("nodeHoverColor", js.undefined)
+    def setRescaleIgnoreSize(value: Boolean): Self = StObject.set(x, "rescaleIgnoreSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodesPowRatio(value: Double): Self = this.set("nodesPowRatio", value.asInstanceOf[js.Any])
+    def setRescaleIgnoreSizeUndefined: Self = StObject.set(x, "rescaleIgnoreSize", js.undefined)
     
     @scala.inline
-    def deleteNodesPowRatio: Self = this.set("nodesPowRatio", js.undefined)
+    def setScalingMode(value: String): Self = StObject.set(x, "scalingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRescaleIgnoreSize(value: Boolean): Self = this.set("rescaleIgnoreSize", value.asInstanceOf[js.Any])
+    def setScalingModeUndefined: Self = StObject.set(x, "scalingMode", js.undefined)
     
     @scala.inline
-    def deleteRescaleIgnoreSize: Self = this.set("rescaleIgnoreSize", js.undefined)
+    def setSideMargin(value: Double): Self = StObject.set(x, "sideMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingMode(value: String): Self = this.set("scalingMode", value.asInstanceOf[js.Any])
+    def setSideMarginUndefined: Self = StObject.set(x, "sideMargin", js.undefined)
     
     @scala.inline
-    def deleteScalingMode: Self = this.set("scalingMode", js.undefined)
+    def setSingleHover(value: Boolean): Self = StObject.set(x, "singleHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideMargin(value: Double): Self = this.set("sideMargin", value.asInstanceOf[js.Any])
+    def setSingleHoverUndefined: Self = StObject.set(x, "singleHover", js.undefined)
     
     @scala.inline
-    def deleteSideMargin: Self = this.set("sideMargin", js.undefined)
+    def setSkipErrors(value: Boolean): Self = StObject.set(x, "skipErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleHover(value: Boolean): Self = this.set("singleHover", value.asInstanceOf[js.Any])
+    def setSkipErrorsUndefined: Self = StObject.set(x, "skipErrors", js.undefined)
     
     @scala.inline
-    def deleteSingleHover: Self = this.set("singleHover", js.undefined)
+    def setTouchEnabled(value: Boolean): Self = StObject.set(x, "touchEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipErrors(value: Boolean): Self = this.set("skipErrors", value.asInstanceOf[js.Any])
+    def setTouchEnabledUndefined: Self = StObject.set(x, "touchEnabled", js.undefined)
     
     @scala.inline
-    def deleteSkipErrors: Self = this.set("skipErrors", js.undefined)
+    def setTouchInertiaDuration(value: Double): Self = StObject.set(x, "touchInertiaDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchEnabled(value: Boolean): Self = this.set("touchEnabled", value.asInstanceOf[js.Any])
+    def setTouchInertiaDurationUndefined: Self = StObject.set(x, "touchInertiaDuration", js.undefined)
     
     @scala.inline
-    def deleteTouchEnabled: Self = this.set("touchEnabled", js.undefined)
+    def setTouchInertiaRatio(value: Double): Self = StObject.set(x, "touchInertiaRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchInertiaDuration(value: Double): Self = this.set("touchInertiaDuration", value.asInstanceOf[js.Any])
+    def setTouchInertiaRatioUndefined: Self = StObject.set(x, "touchInertiaRatio", js.undefined)
     
     @scala.inline
-    def deleteTouchInertiaDuration: Self = this.set("touchInertiaDuration", js.undefined)
+    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchInertiaRatio(value: Double): Self = this.set("touchInertiaRatio", value.asInstanceOf[js.Any])
+    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     
     @scala.inline
-    def deleteTouchInertiaRatio: Self = this.set("touchInertiaRatio", js.undefined)
+    def setWebglEdgesBatchSize(value: Double): Self = StObject.set(x, "webglEdgesBatchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    def setWebglEdgesBatchSizeUndefined: Self = StObject.set(x, "webglEdgesBatchSize", js.undefined)
     
     @scala.inline
-    def deleteVerbose: Self = this.set("verbose", js.undefined)
+    def setWebglOversamplingRatio(value: Double): Self = StObject.set(x, "webglOversamplingRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebglEdgesBatchSize(value: Double): Self = this.set("webglEdgesBatchSize", value.asInstanceOf[js.Any])
+    def setWebglOversamplingRatioUndefined: Self = StObject.set(x, "webglOversamplingRatio", js.undefined)
     
     @scala.inline
-    def deleteWebglEdgesBatchSize: Self = this.set("webglEdgesBatchSize", js.undefined)
+    def setZoomMax(value: Double): Self = StObject.set(x, "zoomMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebglOversamplingRatio(value: Double): Self = this.set("webglOversamplingRatio", value.asInstanceOf[js.Any])
+    def setZoomMaxUndefined: Self = StObject.set(x, "zoomMax", js.undefined)
     
     @scala.inline
-    def deleteWebglOversamplingRatio: Self = this.set("webglOversamplingRatio", js.undefined)
+    def setZoomMin(value: Double): Self = StObject.set(x, "zoomMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomMax(value: Double): Self = this.set("zoomMax", value.asInstanceOf[js.Any])
+    def setZoomMinUndefined: Self = StObject.set(x, "zoomMin", js.undefined)
     
     @scala.inline
-    def deleteZoomMax: Self = this.set("zoomMax", js.undefined)
+    def setZoomingRatio(value: Double): Self = StObject.set(x, "zoomingRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomMin(value: Double): Self = this.set("zoomMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomMin: Self = this.set("zoomMin", js.undefined)
-    
-    @scala.inline
-    def setZoomingRatio(value: Double): Self = this.set("zoomingRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomingRatio: Self = this.set("zoomingRatio", js.undefined)
+    def setZoomingRatioUndefined: Self = StObject.set(x, "zoomingRatio", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteReportGroupInput extends js.Object {
+trait DeleteReportGroupInput extends StObject {
   
   /**
     * The ARN of the report group to delete. 
@@ -26,27 +27,15 @@ object DeleteReportGroupInput {
   }
   
   @scala.inline
-  implicit class DeleteReportGroupInputOps[Self <: DeleteReportGroupInput] (val x: Self) extends AnyVal {
+  implicit class DeleteReportGroupInputMutableBuilder[Self <: DeleteReportGroupInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteReports(value: Boolean): Self = StObject.set(x, "deleteReports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeleteReports(value: Boolean): Self = this.set("deleteReports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteReports: Self = this.set("deleteReports", js.undefined)
+    def setDeleteReportsUndefined: Self = StObject.set(x, "deleteReports", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.12]
   */
 @js.native
-trait PivotFilters extends js.Object {
+trait PivotFilters extends StObject {
   
   /**
     *
@@ -54,42 +55,30 @@ object PivotFilters {
   }
   
   @scala.inline
-  implicit class PivotFiltersOps[Self <: PivotFilters] (val x: Self) extends AnyVal {
+  implicit class PivotFiltersMutableBuilder[Self <: PivotFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFilter(value: PivotDateFilter): Self = StObject.set(x, "dateFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateFilterUndefined: Self = StObject.set(x, "dateFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelFilter(value: PivotLabelFilter): Self = StObject.set(x, "labelFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFilter(value: PivotDateFilter): Self = this.set("dateFilter", value.asInstanceOf[js.Any])
+    def setLabelFilterUndefined: Self = StObject.set(x, "labelFilter", js.undefined)
     
     @scala.inline
-    def deleteDateFilter: Self = this.set("dateFilter", js.undefined)
+    def setManualFilter(value: PivotManualFilter): Self = StObject.set(x, "manualFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFilter(value: PivotLabelFilter): Self = this.set("labelFilter", value.asInstanceOf[js.Any])
+    def setManualFilterUndefined: Self = StObject.set(x, "manualFilter", js.undefined)
     
     @scala.inline
-    def deleteLabelFilter: Self = this.set("labelFilter", js.undefined)
+    def setValueFilter(value: PivotValueFilter): Self = StObject.set(x, "valueFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualFilter(value: PivotManualFilter): Self = this.set("manualFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManualFilter: Self = this.set("manualFilter", js.undefined)
-    
-    @scala.inline
-    def setValueFilter(value: PivotValueFilter): Self = this.set("valueFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueFilter: Self = this.set("valueFilter", js.undefined)
+    def setValueFilterUndefined: Self = StObject.set(x, "valueFilter", js.undefined)
   }
 }

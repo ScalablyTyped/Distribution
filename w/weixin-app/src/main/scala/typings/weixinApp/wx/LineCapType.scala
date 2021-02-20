@@ -1,5 +1,6 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.weixinApp.weixinAppStrings.round
   - typings.weixinApp.weixinAppStrings.square
 */
-trait LineCapType extends js.Object
+trait LineCapType extends StObject
 object LineCapType {
   
   @scala.inline

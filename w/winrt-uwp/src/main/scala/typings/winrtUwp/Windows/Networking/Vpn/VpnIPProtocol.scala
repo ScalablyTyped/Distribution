@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VpnIPProtocol extends js.Object
+sealed trait VpnIPProtocol extends StObject
 /** Specifies the IP protocols (numeric values). */
 @JSGlobal("Windows.Networking.Vpn.VpnIPProtocol")
 @js.native
-object VpnIPProtocol extends js.Object {
+object VpnIPProtocol extends StObject {
   
   /** Internet Control Message Protocol (ICMP) */
   @js.native

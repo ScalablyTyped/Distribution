@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,48 +52,36 @@ object FillSymbol3DLayerProperties {
   }
   
   @scala.inline
-  implicit class FillSymbol3DLayerPropertiesOps[Self <: FillSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  implicit class FillSymbol3DLayerPropertiesMutableBuilder[Self <: FillSymbol3DLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCastShadowsUndefined: Self = StObject.set(x, "castShadows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdges(value: Edges3DProperties): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCastShadows(value: Boolean): Self = this.set("castShadows", value.asInstanceOf[js.Any])
+    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
     @scala.inline
-    def deleteCastShadows: Self = this.set("castShadows", js.undefined)
+    def setMaterial(value: FillSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdges(value: Edges3DProperties): Self = this.set("edges", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteEdges: Self = this.set("edges", js.undefined)
+    def setOutline(value: FillSymbol3DLayerOutlineProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: FillSymbol3DLayerMaterialProperties): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setPattern(value: StylePattern3DProperties): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutline(value: FillSymbol3DLayerOutlineProperties): Self = this.set("outline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
-    
-    @scala.inline
-    def setPattern(value: StylePattern3DProperties): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
   }
 }

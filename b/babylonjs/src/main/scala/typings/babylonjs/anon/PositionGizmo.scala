@@ -3,12 +3,13 @@ package typings.babylonjs.anon
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.RotationGizmo
 import typings.babylonjs.BABYLON.ScaleGizmo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PositionGizmo extends js.Object {
+trait PositionGizmo extends StObject {
   
   var boundingBoxGizmo: Nullable[typings.babylonjs.BABYLON.BoundingBoxGizmo] = js.native
   
@@ -27,42 +28,30 @@ object PositionGizmo {
   }
   
   @scala.inline
-  implicit class PositionGizmoOps[Self <: PositionGizmo] (val x: Self) extends AnyVal {
+  implicit class PositionGizmoMutableBuilder[Self <: PositionGizmo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingBoxGizmo(value: Nullable[typings.babylonjs.BABYLON.BoundingBoxGizmo]): Self = StObject.set(x, "boundingBoxGizmo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingBoxGizmoNull: Self = StObject.set(x, "boundingBoxGizmo", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPositionGizmo(value: Nullable[typings.babylonjs.BABYLON.PositionGizmo]): Self = StObject.set(x, "positionGizmo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBoxGizmo(value: Nullable[typings.babylonjs.BABYLON.BoundingBoxGizmo]): Self = this.set("boundingBoxGizmo", value.asInstanceOf[js.Any])
+    def setPositionGizmoNull: Self = StObject.set(x, "positionGizmo", null)
     
     @scala.inline
-    def setBoundingBoxGizmoNull: Self = this.set("boundingBoxGizmo", null)
+    def setRotationGizmo(value: Nullable[RotationGizmo]): Self = StObject.set(x, "rotationGizmo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionGizmo(value: Nullable[typings.babylonjs.BABYLON.PositionGizmo]): Self = this.set("positionGizmo", value.asInstanceOf[js.Any])
+    def setRotationGizmoNull: Self = StObject.set(x, "rotationGizmo", null)
     
     @scala.inline
-    def setPositionGizmoNull: Self = this.set("positionGizmo", null)
+    def setScaleGizmo(value: Nullable[ScaleGizmo]): Self = StObject.set(x, "scaleGizmo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationGizmo(value: Nullable[RotationGizmo]): Self = this.set("rotationGizmo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotationGizmoNull: Self = this.set("rotationGizmo", null)
-    
-    @scala.inline
-    def setScaleGizmo(value: Nullable[ScaleGizmo]): Self = this.set("scaleGizmo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleGizmoNull: Self = this.set("scaleGizmo", null)
+    def setScaleGizmoNull: Self = StObject.set(x, "scaleGizmo", null)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowExecutionDetail extends js.Object {
+trait WorkflowExecutionDetail extends StObject {
   
   /**
     * The configuration settings for this workflow execution including timeout values, tasklist etc.
@@ -45,39 +46,27 @@ object WorkflowExecutionDetail {
   }
   
   @scala.inline
-  implicit class WorkflowExecutionDetailOps[Self <: WorkflowExecutionDetail] (val x: Self) extends AnyVal {
+  implicit class WorkflowExecutionDetailMutableBuilder[Self <: WorkflowExecutionDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionConfiguration(value: WorkflowExecutionConfiguration): Self = StObject.set(x, "executionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionInfo(value: WorkflowExecutionInfo): Self = StObject.set(x, "executionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatestActivityTaskTimestamp(value: Timestamp): Self = StObject.set(x, "latestActivityTaskTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionConfiguration(value: WorkflowExecutionConfiguration): Self = this.set("executionConfiguration", value.asInstanceOf[js.Any])
+    def setLatestActivityTaskTimestampUndefined: Self = StObject.set(x, "latestActivityTaskTimestamp", js.undefined)
     
     @scala.inline
-    def setExecutionInfo(value: WorkflowExecutionInfo): Self = this.set("executionInfo", value.asInstanceOf[js.Any])
+    def setLatestExecutionContext(value: Data): Self = StObject.set(x, "latestExecutionContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenCounts(value: WorkflowExecutionOpenCounts): Self = this.set("openCounts", value.asInstanceOf[js.Any])
+    def setLatestExecutionContextUndefined: Self = StObject.set(x, "latestExecutionContext", js.undefined)
     
     @scala.inline
-    def setLatestActivityTaskTimestamp(value: Timestamp): Self = this.set("latestActivityTaskTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatestActivityTaskTimestamp: Self = this.set("latestActivityTaskTimestamp", js.undefined)
-    
-    @scala.inline
-    def setLatestExecutionContext(value: Data): Self = this.set("latestExecutionContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatestExecutionContext: Self = this.set("latestExecutionContext", js.undefined)
+    def setOpenCounts(value: WorkflowExecutionOpenCounts): Self = StObject.set(x, "openCounts", value.asInstanceOf[js.Any])
   }
 }

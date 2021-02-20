@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.findOperatorTypeMod.FindOperatorType
 import typings.typeorm.objectLiteralMod.ObjectLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/find-options/FindOperator", JSImport.Namespace)
-@js.native
-object findOperatorMod extends js.Object {
+object findOperatorMod {
   
+  @JSImport("typeorm/browser/find-options/FindOperator", "FindOperator")
   @js.native
-  class FindOperator[T] protected () extends js.Object {
+  class FindOperator[T] protected () extends StObject {
     def this(`type`: FindOperatorType, value: T) = this()
     def this(`type`: FindOperatorType, value: FindOperator[T]) = this()
     def this(`type`: FindOperatorType, value: T, useParameter: Boolean) = this()

@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
 import typings.winrtUwp.anon.ExpectationHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,21 +23,24 @@ class HttpExpectationHeaderValue protected ()
     */
   def this(name: String, value: String) = this()
 }
-/* static members */
-@JSGlobal("Windows.Web.Http.Headers.HttpExpectationHeaderValue")
-@js.native
-object HttpExpectationHeaderValue extends js.Object {
+object HttpExpectationHeaderValue {
   
   /**
     * Converts a string to an HttpExpectationHeaderValue instance.
     * @param input A string that represents the information in the Expect HTTP header.
     * @return An HttpExpectationHeaderValue instance.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpExpectationHeaderValue.parse")
+  @js.native
   def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpExpectationHeaderValue = js.native
   
   /**
     * Determines whether a string is valid HttpCredentialsHeaderValue information.
     * @param input The string to validate.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpExpectationHeaderValue.tryParse")
+  @js.native
   def tryParse(input: String): ExpectationHeaderValue = js.native
 }

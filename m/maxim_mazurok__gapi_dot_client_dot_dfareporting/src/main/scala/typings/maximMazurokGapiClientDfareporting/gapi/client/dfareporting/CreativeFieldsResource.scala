@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.PrettyPrintProfileId
 import typings.maximMazurokGapiClientDfareporting.anon.ProfileIdQuotaUser
 import typings.maximMazurokGapiClientDfareporting.anon.SearchString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreativeFieldsResource extends js.Object {
+trait CreativeFieldsResource extends StObject {
   
   /** Deletes an existing creative field. */
   def delete(): Request[Unit] = js.native

@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotTreemapLevelsOptions extends js.Object {
+trait PlotTreemapLevelsOptions extends StObject {
   
   /**
     * (Highcharts) Can set a `borderColor` on all points which lies on the same
@@ -76,75 +77,63 @@ object PlotTreemapLevelsOptions {
   }
   
   @scala.inline
-  implicit class PlotTreemapLevelsOptionsOps[Self <: PlotTreemapLevelsOptions] (val x: Self) extends AnyVal {
+  implicit class PlotTreemapLevelsOptionsMutableBuilder[Self <: PlotTreemapLevelsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderDashStyle(value: DashStyleValue): Self = StObject.set(x, "borderDashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: ColorString): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderDashStyleUndefined: Self = StObject.set(x, "borderDashStyle", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderDashStyle(value: DashStyleValue): Self = this.set("borderDashStyle", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderDashStyle: Self = this.set("borderDashStyle", js.undefined)
+    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setColorVariation(value: PlotTreemapLevelsColorVariationOptions): Self = StObject.set(x, "colorVariation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setColorVariationUndefined: Self = StObject.set(x, "colorVariation", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDataLabels(value: PlotTreemapLevelsDataLabelsOptions | js.Array[PlotTreemapLevelsDataLabelsOptions]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorVariation(value: PlotTreemapLevelsColorVariationOptions): Self = this.set("colorVariation", value.asInstanceOf[js.Any])
+    def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
     @scala.inline
-    def deleteColorVariation: Self = this.set("colorVariation", js.undefined)
+    def setDataLabelsVarargs(value: PlotTreemapLevelsDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
     
     @scala.inline
-    def setDataLabelsVarargs(value: PlotTreemapLevelsDataLabelsOptions*): Self = this.set("dataLabels", js.Array(value :_*))
+    def setLayoutAlgorithm(value: OptionsLayoutAlgorithmValue): Self = StObject.set(x, "layoutAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLabels(value: PlotTreemapLevelsDataLabelsOptions | js.Array[PlotTreemapLevelsDataLabelsOptions]): Self = this.set("dataLabels", value.asInstanceOf[js.Any])
+    def setLayoutAlgorithmUndefined: Self = StObject.set(x, "layoutAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteDataLabels: Self = this.set("dataLabels", js.undefined)
+    def setLayoutStartingDirection(value: OptionsLayoutStartingDirectionValue): Self = StObject.set(x, "layoutStartingDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutAlgorithm(value: OptionsLayoutAlgorithmValue): Self = this.set("layoutAlgorithm", value.asInstanceOf[js.Any])
+    def setLayoutStartingDirectionUndefined: Self = StObject.set(x, "layoutStartingDirection", js.undefined)
     
     @scala.inline
-    def deleteLayoutAlgorithm: Self = this.set("layoutAlgorithm", js.undefined)
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutStartingDirection(value: OptionsLayoutStartingDirectionValue): Self = this.set("layoutStartingDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayoutStartingDirection: Self = this.set("layoutStartingDirection", js.undefined)
-    
-    @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

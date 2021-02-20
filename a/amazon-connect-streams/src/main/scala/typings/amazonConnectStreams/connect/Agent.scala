@@ -1,5 +1,6 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * There is only ever one agent per Streams instantiation and all contacts and actions are assumed to be taken on behalf of this one agent.
   */
 @js.native
-trait Agent extends js.Object {
+trait Agent extends StObject {
   
   /**
     * Creates an outbound contact to the given endpoint.

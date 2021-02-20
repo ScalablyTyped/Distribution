@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2Result extends js.Object {
+trait GooglePrivacyDlpV2Result extends StObject {
   
   /**
     * Statistics related to the processing of hybrid inspect. Early access feature is in a pre-release state and might change or have limited support. For more information, see
@@ -31,45 +32,33 @@ object GooglePrivacyDlpV2Result {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2ResultOps[Self <: GooglePrivacyDlpV2Result] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2ResultMutableBuilder[Self <: GooglePrivacyDlpV2Result] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHybridStats(value: GooglePrivacyDlpV2HybridInspectStatistics): Self = StObject.set(x, "hybridStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHybridStatsUndefined: Self = StObject.set(x, "hybridStats", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoTypeStats(value: js.Array[GooglePrivacyDlpV2InfoTypeStats]): Self = StObject.set(x, "infoTypeStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHybridStats(value: GooglePrivacyDlpV2HybridInspectStatistics): Self = this.set("hybridStats", value.asInstanceOf[js.Any])
+    def setInfoTypeStatsUndefined: Self = StObject.set(x, "infoTypeStats", js.undefined)
     
     @scala.inline
-    def deleteHybridStats: Self = this.set("hybridStats", js.undefined)
+    def setInfoTypeStatsVarargs(value: GooglePrivacyDlpV2InfoTypeStats*): Self = StObject.set(x, "infoTypeStats", js.Array(value :_*))
     
     @scala.inline
-    def setInfoTypeStatsVarargs(value: GooglePrivacyDlpV2InfoTypeStats*): Self = this.set("infoTypeStats", js.Array(value :_*))
+    def setProcessedBytes(value: String): Self = StObject.set(x, "processedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoTypeStats(value: js.Array[GooglePrivacyDlpV2InfoTypeStats]): Self = this.set("infoTypeStats", value.asInstanceOf[js.Any])
+    def setProcessedBytesUndefined: Self = StObject.set(x, "processedBytes", js.undefined)
     
     @scala.inline
-    def deleteInfoTypeStats: Self = this.set("infoTypeStats", js.undefined)
+    def setTotalEstimatedBytes(value: String): Self = StObject.set(x, "totalEstimatedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessedBytes(value: String): Self = this.set("processedBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessedBytes: Self = this.set("processedBytes", js.undefined)
-    
-    @scala.inline
-    def setTotalEstimatedBytes(value: String): Self = this.set("totalEstimatedBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalEstimatedBytes: Self = this.set("totalEstimatedBytes", js.undefined)
+    def setTotalEstimatedBytesUndefined: Self = StObject.set(x, "totalEstimatedBytes", js.undefined)
   }
 }

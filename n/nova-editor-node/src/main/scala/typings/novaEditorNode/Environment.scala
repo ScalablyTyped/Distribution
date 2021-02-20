@@ -1,13 +1,14 @@
 package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/environment/
 @js.native
-trait Environment extends js.Object {
+trait Environment extends StObject {
   
   // undocumented in main documentation page, but referenced elsewhere
   val assistants: AssistantsRegistry = js.native

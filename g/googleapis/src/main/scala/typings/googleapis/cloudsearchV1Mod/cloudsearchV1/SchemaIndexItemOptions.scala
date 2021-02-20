@@ -1,11 +1,12 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaIndexItemOptions extends js.Object {
+trait SchemaIndexItemOptions extends StObject {
   
   /**
     * Specifies if the index request should allow gsuite principals that do not
@@ -22,24 +23,12 @@ object SchemaIndexItemOptions {
   }
   
   @scala.inline
-  implicit class SchemaIndexItemOptionsOps[Self <: SchemaIndexItemOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaIndexItemOptionsMutableBuilder[Self <: SchemaIndexItemOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowUnknownGsuitePrincipals(value: Boolean): Self = StObject.set(x, "allowUnknownGsuitePrincipals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowUnknownGsuitePrincipals(value: Boolean): Self = this.set("allowUnknownGsuitePrincipals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowUnknownGsuitePrincipals: Self = this.set("allowUnknownGsuitePrincipals", js.undefined)
+    def setAllowUnknownGsuitePrincipalsUndefined: Self = StObject.set(x, "allowUnknownGsuitePrincipals", js.undefined)
   }
 }

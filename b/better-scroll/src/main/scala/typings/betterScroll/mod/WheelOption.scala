@@ -1,11 +1,12 @@
 package typings.betterScroll.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WheelOption extends js.Object {
+trait WheelOption extends StObject {
   
   var adjustTime: Double = js.native
   
@@ -32,33 +33,21 @@ object WheelOption {
   }
   
   @scala.inline
-  implicit class WheelOptionOps[Self <: WheelOption] (val x: Self) extends AnyVal {
+  implicit class WheelOptionMutableBuilder[Self <: WheelOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustTime(value: Double): Self = StObject.set(x, "adjustTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustTime(value: Double): Self = this.set("adjustTime", value.asInstanceOf[js.Any])
+    def setWheelItemClass(value: String): Self = StObject.set(x, "wheelItemClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: Double): Self = this.set("rotate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = this.set("selectedIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWheelItemClass(value: String): Self = this.set("wheelItemClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWheelWrapperClass(value: String): Self = this.set("wheelWrapperClass", value.asInstanceOf[js.Any])
+    def setWheelWrapperClass(value: String): Self = StObject.set(x, "wheelWrapperClass", value.asInstanceOf[js.Any])
   }
 }

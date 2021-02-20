@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RandomSource extends js.Object {
+trait RandomSource extends StObject {
   
   def getRandomValues(array: Int16Array): Int16Array = js.native
   def getRandomValues(array: Int32Array): Int32Array = js.native

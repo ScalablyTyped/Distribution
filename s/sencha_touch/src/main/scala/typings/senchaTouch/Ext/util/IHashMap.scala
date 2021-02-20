@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.util
 
 import typings.senchaTouch.Ext.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,110 +116,98 @@ object IHashMap {
   }
   
   @scala.inline
-  implicit class IHashMapOps[Self <: IHashMap] (val x: Self) extends AnyVal {
+  implicit class IHashMapMutableBuilder[Self <: IHashMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (/* key */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: /* initial */ js.UndefOr[js.Any] => IHashMap): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: (/* key */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => _): Self = this.set("add", js.Any.fromFunction2(value))
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setClone_(value: () => IHashMap): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: /* initial */ js.UndefOr[js.Any] => IHashMap): Self = this.set("clear", js.Any.fromFunction1(value))
+    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
     @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setContains(value: /* value */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClone(value: () => IHashMap): Self = this.set("clone", js.Any.fromFunction0(value))
+    def setContainsKey(value: /* key */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClone: Self = this.set("clone", js.undefined)
+    def setContainsKeyUndefined: Self = StObject.set(x, "containsKey", js.undefined)
     
     @scala.inline
-    def setContains(value: /* value */ js.UndefOr[js.Any] => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IHashMap): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setContainsKey(value: /* key */ js.UndefOr[String] => Boolean): Self = this.set("containsKey", js.Any.fromFunction1(value))
+    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
     @scala.inline
-    def deleteContainsKey: Self = this.set("containsKey", js.undefined)
+    def setGet(value: /* key */ js.UndefOr[String] => _): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IHashMap): Self = this.set("each", js.Any.fromFunction2(value))
+    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteEach: Self = this.set("each", js.undefined)
+    def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
     @scala.inline
-    def setGet(value: /* key */ js.UndefOr[String] => _): Self = this.set("get", js.Any.fromFunction1(value))
+    def setGetKeys(value: () => Array): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setGetKeysUndefined: Self = StObject.set(x, "getKeys", js.undefined)
     
     @scala.inline
-    def setGetCount(value: () => Double): Self = this.set("getCount", js.Any.fromFunction0(value))
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def deleteGetCount: Self = this.set("getCount", js.undefined)
+    def setGetValues(value: () => Array): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetKeys(value: () => Array): Self = this.set("getKeys", js.Any.fromFunction0(value))
+    def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
     
     @scala.inline
-    def deleteGetKeys: Self = this.set("getKeys", js.undefined)
+    def setKeyFn(value: js.Any): Self = StObject.set(x, "keyFn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValues(value: () => Array): Self = this.set("getValues", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetValues: Self = this.set("getValues", js.undefined)
-    
-    @scala.inline
-    def setKeyFn(value: js.Any): Self = this.set("keyFn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyFn: Self = this.set("keyFn", js.undefined)
+    def setKeyFnUndefined: Self = StObject.set(x, "keyFn", js.undefined)
     
     @scala.inline
     def setRelayEvents(
       value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.mixin.IObservable
-    ): Self = this.set("relayEvents", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRelayEvents: Self = this.set("relayEvents", js.undefined)
+    def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
     @scala.inline
-    def setRemove(value: /* o */ js.UndefOr[js.Any] => Boolean): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setRemove(value: /* o */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setRemoveByKey(value: /* key */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "removeByKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveByKey(value: /* key */ js.UndefOr[String] => Boolean): Self = this.set("removeByKey", js.Any.fromFunction1(value))
+    def setRemoveByKeyUndefined: Self = StObject.set(x, "removeByKey", js.undefined)
     
     @scala.inline
-    def deleteRemoveByKey: Self = this.set("removeByKey", js.undefined)
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def setReplace(value: (/* key */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => _): Self = this.set("replace", js.Any.fromFunction2(value))
+    def setReplace(value: (/* key */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteReplace: Self = this.set("replace", js.undefined)
+    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
   }
 }

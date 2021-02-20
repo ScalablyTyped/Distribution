@@ -1,12 +1,13 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
 @js.native
-trait CommentUpdateData extends js.Object {
+trait CommentUpdateData extends StObject {
   
   /**
     *
@@ -33,30 +34,18 @@ object CommentUpdateData {
   }
   
   @scala.inline
-  implicit class CommentUpdateDataOps[Self <: CommentUpdateData] (val x: Self) extends AnyVal {
+  implicit class CommentUpdateDataMutableBuilder[Self <: CommentUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolved(value: Boolean): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
-    
-    @scala.inline
-    def setResolved(value: Boolean): Self = this.set("resolved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolved: Self = this.set("resolved", js.undefined)
+    def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
   }
 }

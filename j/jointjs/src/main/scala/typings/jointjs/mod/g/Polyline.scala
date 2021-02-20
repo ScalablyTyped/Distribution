@@ -1,14 +1,15 @@
 package typings.jointjs.mod.g
 
 import typings.jointjs.anon.Threshold
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "g.Polyline")
 @js.native
- // getter
-class Polyline () extends js.Object {
+// getter
+class Polyline () extends StObject {
   def this(points: js.Array[Point]) = this()
   def this(svgString: String) = this()
   
@@ -30,7 +31,7 @@ class Polyline () extends js.Object {
   
   def convexHull(): Polyline = js.native
   
-   // getter
+  // getter
   var end: Point | Null = js.native
   
   def equals(p: Polyline): Boolean = js.native
@@ -68,10 +69,10 @@ class Polyline () extends js.Object {
   def translate(tx: Double, ty: Double): this.type = js.native
   def translate(tx: PlainPoint): this.type = js.native
 }
-/* static members */
-@JSImport("jointjs", "g.Polyline")
-@js.native
-object Polyline extends js.Object {
+object Polyline {
   
+  /* static member */
+  @JSImport("jointjs", "g.Polyline.parse")
+  @js.native
   def parse(svgString: String): Polyline = js.native
 }

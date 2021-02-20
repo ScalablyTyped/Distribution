@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackageMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HlsPackage extends js.Object {
+trait HlsPackage extends StObject {
   
   /**
     * This setting controls how ad markers are included in the packaged OriginEndpoint.
@@ -78,87 +79,75 @@ object HlsPackage {
   }
   
   @scala.inline
-  implicit class HlsPackageOps[Self <: HlsPackage] (val x: Self) extends AnyVal {
+  implicit class HlsPackageMutableBuilder[Self <: HlsPackage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdMarkers(value: AdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdTriggers(value: AdTriggers): Self = StObject.set(x, "AdTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdMarkers(value: AdMarkers): Self = this.set("AdMarkers", value.asInstanceOf[js.Any])
+    def setAdTriggersUndefined: Self = StObject.set(x, "AdTriggers", js.undefined)
     
     @scala.inline
-    def deleteAdMarkers: Self = this.set("AdMarkers", js.undefined)
+    def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value :_*))
     
     @scala.inline
-    def setAdTriggersVarargs(value: AdTriggersElement*): Self = this.set("AdTriggers", js.Array(value :_*))
+    def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = StObject.set(x, "AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdTriggers(value: AdTriggers): Self = this.set("AdTriggers", value.asInstanceOf[js.Any])
+    def setAdsOnDeliveryRestrictionsUndefined: Self = StObject.set(x, "AdsOnDeliveryRestrictions", js.undefined)
     
     @scala.inline
-    def deleteAdTriggers: Self = this.set("AdTriggers", js.undefined)
+    def setEncryption(value: HlsEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = this.set("AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def deleteAdsOnDeliveryRestrictions: Self = this.set("AdsOnDeliveryRestrictions", js.undefined)
+    def setIncludeIframeOnlyStream(value: boolean): Self = StObject.set(x, "IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: HlsEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setIncludeIframeOnlyStreamUndefined: Self = StObject.set(x, "IncludeIframeOnlyStream", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setPlaylistType(value: PlaylistType): Self = StObject.set(x, "PlaylistType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeIframeOnlyStream(value: boolean): Self = this.set("IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
+    def setPlaylistTypeUndefined: Self = StObject.set(x, "PlaylistType", js.undefined)
     
     @scala.inline
-    def deleteIncludeIframeOnlyStream: Self = this.set("IncludeIframeOnlyStream", js.undefined)
+    def setPlaylistWindowSeconds(value: integer): Self = StObject.set(x, "PlaylistWindowSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaylistType(value: PlaylistType): Self = this.set("PlaylistType", value.asInstanceOf[js.Any])
+    def setPlaylistWindowSecondsUndefined: Self = StObject.set(x, "PlaylistWindowSeconds", js.undefined)
     
     @scala.inline
-    def deletePlaylistType: Self = this.set("PlaylistType", js.undefined)
+    def setProgramDateTimeIntervalSeconds(value: integer): Self = StObject.set(x, "ProgramDateTimeIntervalSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaylistWindowSeconds(value: integer): Self = this.set("PlaylistWindowSeconds", value.asInstanceOf[js.Any])
+    def setProgramDateTimeIntervalSecondsUndefined: Self = StObject.set(x, "ProgramDateTimeIntervalSeconds", js.undefined)
     
     @scala.inline
-    def deletePlaylistWindowSeconds: Self = this.set("PlaylistWindowSeconds", js.undefined)
+    def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgramDateTimeIntervalSeconds(value: integer): Self = this.set("ProgramDateTimeIntervalSeconds", value.asInstanceOf[js.Any])
+    def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
     
     @scala.inline
-    def deleteProgramDateTimeIntervalSeconds: Self = this.set("ProgramDateTimeIntervalSeconds", js.undefined)
+    def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentDurationSeconds(value: integer): Self = this.set("SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
     
     @scala.inline
-    def deleteSegmentDurationSeconds: Self = this.set("SegmentDurationSeconds", js.undefined)
+    def setUseAudioRenditionGroup(value: boolean): Self = StObject.set(x, "UseAudioRenditionGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamSelection(value: StreamSelection): Self = this.set("StreamSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamSelection: Self = this.set("StreamSelection", js.undefined)
-    
-    @scala.inline
-    def setUseAudioRenditionGroup(value: boolean): Self = this.set("UseAudioRenditionGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseAudioRenditionGroup: Self = this.set("UseAudioRenditionGroup", js.undefined)
+    def setUseAudioRenditionGroupUndefined: Self = StObject.set(x, "UseAudioRenditionGroup", js.undefined)
   }
 }

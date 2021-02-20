@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and to embed a cache in an agent.
   */
 @js.native
-trait SqliteDatabase extends js.Object {
+trait SqliteDatabase extends StObject {
   
   /**
     * Closes the database. You should call this function when you're done with
@@ -53,30 +54,18 @@ object SqliteDatabase {
   }
   
   @scala.inline
-  implicit class SqliteDatabaseOps[Self <: SqliteDatabase] (val x: Self) extends AnyVal {
+  implicit class SqliteDatabaseMutableBuilder[Self <: SqliteDatabase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDump(value: () => String): Self = StObject.set(x, "dump", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExec(value: String => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDump(value: () => String): Self = this.set("dump", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExec(value: String => Unit): Self = this.set("exec", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPrepare(value: String => SqliteStatement): Self = this.set("prepare", js.Any.fromFunction1(value))
+    def setPrepare(value: String => SqliteStatement): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
   }
 }

@@ -2,6 +2,7 @@ package typings.go.mod
 
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,11 +38,13 @@ class Picture () extends GraphObject {
   /**Gets or sets the rectangular area of the source image that this picture should display.*/
   var sourceRect: Rect = js.native
 }
-/* static members */
-@JSImport("go", "Picture")
-@js.native
-object Picture extends js.Object {
+object Picture {
   
+  /* static member */
+  @JSImport("go", "Picture.clearCache")
+  @js.native
   def clearCache(): Unit = js.native
+  @JSImport("go", "Picture.clearCache")
+  @js.native
   def clearCache(url: String): Unit = js.native
 }

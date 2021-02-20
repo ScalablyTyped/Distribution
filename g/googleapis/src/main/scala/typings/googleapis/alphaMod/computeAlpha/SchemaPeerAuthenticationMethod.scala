@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration for the peer authentication method.
   */
 @js.native
-trait SchemaPeerAuthenticationMethod extends js.Object {
+trait SchemaPeerAuthenticationMethod extends StObject {
   
   /**
     * Set if mTLS is used for peer authentication.
@@ -24,24 +25,12 @@ object SchemaPeerAuthenticationMethod {
   }
   
   @scala.inline
-  implicit class SchemaPeerAuthenticationMethodOps[Self <: SchemaPeerAuthenticationMethod] (val x: Self) extends AnyVal {
+  implicit class SchemaPeerAuthenticationMethodMutableBuilder[Self <: SchemaPeerAuthenticationMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMtls(value: SchemaMutualTls): Self = StObject.set(x, "mtls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMtls(value: SchemaMutualTls): Self = this.set("mtls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMtls: Self = this.set("mtls", js.undefined)
+    def setMtlsUndefined: Self = StObject.set(x, "mtls", js.undefined)
   }
 }

@@ -7,14 +7,14 @@ import typings.pulumiAws.presetMod.PresetState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "elastictranscoder")
-@js.native
-object elastictranscoder extends js.Object {
+object elastictranscoder {
   
+  @JSImport("@pulumi/aws", "elastictranscoder.Pipeline")
   @js.native
   class Pipeline protected ()
     extends typings.pulumiAws.elastictranscoderMod.Pipeline {
@@ -29,8 +29,7 @@ object elastictranscoder extends js.Object {
     def this(name: String, args: PipelineArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Pipeline extends js.Object {
+  object Pipeline {
     
     /**
       * Get an existing Pipeline resource's state with the given name, ID, and optional extra
@@ -41,18 +40,29 @@ object elastictranscoder extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = js.native
+    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = js.native
+    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PipelineState): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = js.native
+    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): typings.pulumiAws.elastictranscoderPipelineMod.Pipeline = js.native
     
     /**
       * Returns true if the given object is an instance of Pipeline.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "elastictranscoder.Pipeline.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "elastictranscoder.Preset")
   @js.native
   class Preset protected ()
     extends typings.pulumiAws.elastictranscoderMod.Preset {
@@ -67,8 +77,7 @@ object elastictranscoder extends js.Object {
     def this(name: String, args: PresetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Preset extends js.Object {
+  object Preset {
     
     /**
       * Get an existing Preset resource's state with the given name, ID, and optional extra
@@ -79,15 +88,25 @@ object elastictranscoder extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "elastictranscoder.Preset.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.presetMod.Preset = js.native
+    @JSImport("@pulumi/aws", "elastictranscoder.Preset.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.presetMod.Preset = js.native
+    @JSImport("@pulumi/aws", "elastictranscoder.Preset.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PresetState): typings.pulumiAws.presetMod.Preset = js.native
+    @JSImport("@pulumi/aws", "elastictranscoder.Preset.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PresetState, opts: CustomResourceOptions): typings.pulumiAws.presetMod.Preset = js.native
     
     /**
       * Returns true if the given object is an instance of Preset.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "elastictranscoder.Preset.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean = js.native
   }
 }

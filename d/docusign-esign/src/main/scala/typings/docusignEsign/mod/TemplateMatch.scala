@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateMatch extends js.Object {
+trait TemplateMatch extends StObject {
   
   var documentEndPage: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object TemplateMatch {
   }
   
   @scala.inline
-  implicit class TemplateMatchOps[Self <: TemplateMatch] (val x: Self) extends AnyVal {
+  implicit class TemplateMatchMutableBuilder[Self <: TemplateMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentEndPage(value: String): Self = StObject.set(x, "documentEndPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentEndPageUndefined: Self = StObject.set(x, "documentEndPage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentStartPage(value: String): Self = StObject.set(x, "documentStartPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentEndPage(value: String): Self = this.set("documentEndPage", value.asInstanceOf[js.Any])
+    def setDocumentStartPageUndefined: Self = StObject.set(x, "documentStartPage", js.undefined)
     
     @scala.inline
-    def deleteDocumentEndPage: Self = this.set("documentEndPage", js.undefined)
+    def setMatchPercentage(value: String): Self = StObject.set(x, "matchPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentStartPage(value: String): Self = this.set("documentStartPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentStartPage: Self = this.set("documentStartPage", js.undefined)
-    
-    @scala.inline
-    def setMatchPercentage(value: String): Self = this.set("matchPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchPercentage: Self = this.set("matchPercentage", js.undefined)
+    def setMatchPercentageUndefined: Self = StObject.set(x, "matchPercentage", js.undefined)
   }
 }

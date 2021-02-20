@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeDetails extends js.Object {
+trait NodeDetails extends StObject {
   
   /**
     * Specifies whether the current node is the main node for a multi-node parallel job.
@@ -26,30 +27,18 @@ object NodeDetails {
   }
   
   @scala.inline
-  implicit class NodeDetailsOps[Self <: NodeDetails] (val x: Self) extends AnyVal {
+  implicit class NodeDetailsMutableBuilder[Self <: NodeDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsMainNode(value: Boolean): Self = StObject.set(x, "isMainNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsMainNodeUndefined: Self = StObject.set(x, "isMainNode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeIndex(value: Integer): Self = StObject.set(x, "nodeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMainNode(value: Boolean): Self = this.set("isMainNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsMainNode: Self = this.set("isMainNode", js.undefined)
-    
-    @scala.inline
-    def setNodeIndex(value: Integer): Self = this.set("nodeIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeIndex: Self = this.set("nodeIndex", js.undefined)
+    def setNodeIndexUndefined: Self = StObject.set(x, "nodeIndex", js.undefined)
   }
 }

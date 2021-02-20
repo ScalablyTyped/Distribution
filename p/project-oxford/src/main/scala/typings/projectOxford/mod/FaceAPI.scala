@@ -6,13 +6,14 @@ import typings.projectOxford.mod.FaceResponses.Similar
 import typings.projectOxford.mod.FaceResponses.Verify
 import typings.projectOxford.mod.Options.Detect
 import typings.projectOxford.mod.Options.Identify
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("project-oxford", "FaceAPI")
 @js.native
-class FaceAPI () extends js.Object {
+class FaceAPI () extends StObject {
   
   /**
     * Call the Face Detected API

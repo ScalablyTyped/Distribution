@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,42 +51,30 @@ object StreamLayerPurgeOptions {
   }
   
   @scala.inline
-  implicit class StreamLayerPurgeOptionsOps[Self <: StreamLayerPurgeOptions] (val x: Self) extends AnyVal {
+  implicit class StreamLayerPurgeOptionsMutableBuilder[Self <: StreamLayerPurgeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgeReceived(value: Double): Self = StObject.set(x, "ageReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgeReceivedUndefined: Self = StObject.set(x, "ageReceived", js.undefined)
     
     @scala.inline
-    def setAge(value: Double): Self = this.set("age", value.asInstanceOf[js.Any])
+    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
     
     @scala.inline
-    def deleteAge: Self = this.set("age", js.undefined)
+    def setDisplayCount(value: Double): Self = StObject.set(x, "displayCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgeReceived(value: Double): Self = this.set("ageReceived", value.asInstanceOf[js.Any])
+    def setDisplayCountUndefined: Self = StObject.set(x, "displayCount", js.undefined)
     
     @scala.inline
-    def deleteAgeReceived: Self = this.set("ageReceived", js.undefined)
+    def setMaxObservations(value: Double): Self = StObject.set(x, "maxObservations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayCount(value: Double): Self = this.set("displayCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayCount: Self = this.set("displayCount", js.undefined)
-    
-    @scala.inline
-    def setMaxObservations(value: Double): Self = this.set("maxObservations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxObservations: Self = this.set("maxObservations", js.undefined)
+    def setMaxObservationsUndefined: Self = StObject.set(x, "maxObservations", js.undefined)
   }
 }

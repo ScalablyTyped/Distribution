@@ -2,12 +2,13 @@ package typings.blessed.mod
 
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBlessedProgramOptions extends js.Object {
+trait IBlessedProgramOptions extends StObject {
   
   var buffer: js.UndefOr[Boolean] = js.native
   
@@ -40,84 +41,72 @@ object IBlessedProgramOptions {
   }
   
   @scala.inline
-  implicit class IBlessedProgramOptionsOps[Self <: IBlessedProgramOptions] (val x: Self) extends AnyVal {
+  implicit class IBlessedProgramOptionsMutableBuilder[Self <: IBlessedProgramOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffer(value: Boolean): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    def setDump(value: Boolean): Self = StObject.set(x, "dump", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setDumpUndefined: Self = StObject.set(x, "dump", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setInput(value: Readable): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDump(value: Boolean): Self = this.set("dump", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteDump: Self = this.set("dump", js.undefined)
+    def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: Readable): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setOutput(value: Writable): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: String): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setResizeTimeout(value: Boolean): Self = StObject.set(x, "resizeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: Writable): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setResizeTimeoutUndefined: Self = StObject.set(x, "resizeTimeout", js.undefined)
     
     @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
+    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeTimeout(value: Boolean): Self = this.set("resizeTimeout", value.asInstanceOf[js.Any])
+    def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
     
     @scala.inline
-    def deleteResizeTimeout: Self = this.set("resizeTimeout", js.undefined)
+    def setTerminal(value: String): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerm(value: String): Self = this.set("term", value.asInstanceOf[js.Any])
+    def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
     
     @scala.inline
-    def deleteTerm: Self = this.set("term", js.undefined)
+    def setTput(value: String): Self = StObject.set(x, "tput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerminal(value: String): Self = this.set("terminal", value.asInstanceOf[js.Any])
+    def setTputUndefined: Self = StObject.set(x, "tput", js.undefined)
     
     @scala.inline
-    def deleteTerminal: Self = this.set("terminal", js.undefined)
+    def setZero(value: Boolean): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTput(value: String): Self = this.set("tput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTput: Self = this.set("tput", js.undefined)
-    
-    @scala.inline
-    def setZero(value: Boolean): Self = this.set("zero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZero: Self = this.set("zero", js.undefined)
+    def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
   }
 }

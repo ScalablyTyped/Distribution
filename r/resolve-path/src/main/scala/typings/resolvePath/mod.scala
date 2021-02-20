@@ -1,13 +1,14 @@
 package typings.resolvePath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("resolve-path", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("resolve-path", JSImport.Namespace)
+  @js.native
   def apply(relativePath: String): String = js.native
   /**
     * Resolve a relative path against the provided root path and return an absolute path.
@@ -19,5 +20,7 @@ object mod extends js.Object {
     *  * The relative path traverses above the root and back down
     */
   // tslint:disable-next-line unified-signatures
+  @JSImport("resolve-path", JSImport.Namespace)
+  @js.native
   def apply(rootPath: String, relativePath: String): String = js.native
 }

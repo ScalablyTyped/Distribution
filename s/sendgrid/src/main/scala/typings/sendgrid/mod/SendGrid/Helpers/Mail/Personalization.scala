@@ -2,12 +2,13 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sendgrid.anon.Cc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Personalization extends js.Object {
+trait Personalization extends StObject {
   
   def addBcc(email: Email): Unit = js.native
   
@@ -70,69 +71,57 @@ object Personalization {
   }
   
   @scala.inline
-  implicit class PersonalizationOps[Self <: Personalization] (val x: Self) extends AnyVal {
+  implicit class PersonalizationMutableBuilder[Self <: Personalization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddBcc(value: Email => Unit): Self = StObject.set(x, "addBcc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddCc(value: Email => Unit): Self = StObject.set(x, "addCc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddCustomArg(value: CustomArgs => Unit): Self = StObject.set(x, "addCustomArg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddBcc(value: Email => Unit): Self = this.set("addBcc", js.Any.fromFunction1(value))
+    def setAddHeader(value: Header => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCc(value: Email => Unit): Self = this.set("addCc", js.Any.fromFunction1(value))
+    def setAddSubstitution(value: Substitution => Unit): Self = StObject.set(x, "addSubstitution", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCustomArg(value: CustomArgs => Unit): Self = this.set("addCustomArg", js.Any.fromFunction1(value))
+    def setAddTo(value: Email => Unit): Self = StObject.set(x, "addTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddHeader(value: Header => Unit): Self = this.set("addHeader", js.Any.fromFunction1(value))
+    def setGetBccs(value: () => js.Array[Email]): Self = StObject.set(x, "getBccs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddSubstitution(value: Substitution => Unit): Self = this.set("addSubstitution", js.Any.fromFunction1(value))
+    def setGetCcs(value: () => js.Array[Email]): Self = StObject.set(x, "getCcs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddTo(value: Email => Unit): Self = this.set("addTo", js.Any.fromFunction1(value))
+    def setGetCustomArgs(value: () => js.Array[CustomArgs]): Self = StObject.set(x, "getCustomArgs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBccs(value: () => js.Array[Email]): Self = this.set("getBccs", js.Any.fromFunction0(value))
+    def setGetHeaders(value: () => js.Array[Header]): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCcs(value: () => js.Array[Email]): Self = this.set("getCcs", js.Any.fromFunction0(value))
+    def setGetSendAt(value: () => Double): Self = StObject.set(x, "getSendAt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCustomArgs(value: () => js.Array[CustomArgs]): Self = this.set("getCustomArgs", js.Any.fromFunction0(value))
+    def setGetSubject(value: () => String): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeaders(value: () => js.Array[Header]): Self = this.set("getHeaders", js.Any.fromFunction0(value))
+    def setGetSubstitutions(value: () => StringDictionary[String]): Self = StObject.set(x, "getSubstitutions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSendAt(value: () => Double): Self = this.set("getSendAt", js.Any.fromFunction0(value))
+    def setGetTos(value: () => js.Array[Email]): Self = StObject.set(x, "getTos", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubject(value: () => String): Self = this.set("getSubject", js.Any.fromFunction0(value))
+    def setSetSendAt(value: Double => Unit): Self = StObject.set(x, "setSendAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSubstitutions(value: () => StringDictionary[String]): Self = this.set("getSubstitutions", js.Any.fromFunction0(value))
+    def setSetSubject(value: String => Unit): Self = StObject.set(x, "setSubject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTos(value: () => js.Array[Email]): Self = this.set("getTos", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetSendAt(value: Double => Unit): Self = this.set("setSendAt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSubject(value: String => Unit): Self = this.set("setSubject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToJSON(value: () => Cc): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => Cc): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

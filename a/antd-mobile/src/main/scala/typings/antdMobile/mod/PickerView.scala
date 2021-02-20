@@ -2,6 +2,7 @@ package typings.antdMobile.mod
 
 import typings.antdMobile.anon.Cols
 import typings.antdMobile.pickerViewMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PickerView () extends default
 /* static members */
-@JSImport("antd-mobile", "PickerView")
-@js.native
-object PickerView extends js.Object {
+object PickerView {
   
-  var defaultProps: Cols = js.native
+  @JSImport("antd-mobile", "PickerView")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile", "PickerView.defaultProps")
+  @js.native
+  def defaultProps: Cols = js.native
+  @scala.inline
+  def defaultProps_=(x: Cols): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

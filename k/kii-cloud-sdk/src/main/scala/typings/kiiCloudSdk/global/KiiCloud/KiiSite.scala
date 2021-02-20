@@ -1,12 +1,13 @@
 package typings.kiiCloudSdk.global.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("KiiCloud.KiiSite")
 @js.native
-object KiiSite extends js.Object {
+object KiiSite extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.kiiCloudSdk.KiiCloud.KiiSite with Double] = js.native

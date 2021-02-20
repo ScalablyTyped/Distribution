@@ -1,6 +1,7 @@
 package typings.jqueryTimeentry
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -179,150 +180,138 @@ object ITimeEntryOptions {
   }
   
   @scala.inline
-  implicit class ITimeEntryOptionsOps[Self <: ITimeEntryOptions] (val x: Self) extends AnyVal {
+  implicit class ITimeEntryOptionsMutableBuilder[Self <: ITimeEntryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendText(value: String): Self = StObject.set(x, "appendText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendTextUndefined: Self = StObject.set(x, "appendText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeSetTime(value: js.Function): Self = StObject.set(x, "beforeSetTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendText(value: String): Self = this.set("appendText", value.asInstanceOf[js.Any])
+    def setBeforeSetTimeUndefined: Self = StObject.set(x, "beforeSetTime", js.undefined)
     
     @scala.inline
-    def deleteAppendText: Self = this.set("appendText", js.undefined)
+    def setBeforeShow(value: js.Function): Self = StObject.set(x, "beforeShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeSetTime(value: js.Function): Self = this.set("beforeSetTime", value.asInstanceOf[js.Any])
+    def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     
     @scala.inline
-    def deleteBeforeSetTime: Self = this.set("beforeSetTime", js.undefined)
+    def setDefaultTime(value: Date | Double | String): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeShow(value: js.Function): Self = this.set("beforeShow", value.asInstanceOf[js.Any])
+    def setDefaultTimeUndefined: Self = StObject.set(x, "defaultTime", js.undefined)
     
     @scala.inline
-    def deleteBeforeShow: Self = this.set("beforeShow", js.undefined)
+    def setInitialField(value: Double): Self = StObject.set(x, "initialField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTime(value: Date | Double | String): Self = this.set("defaultTime", value.asInstanceOf[js.Any])
+    def setInitialFieldUndefined: Self = StObject.set(x, "initialField", js.undefined)
     
     @scala.inline
-    def deleteDefaultTime: Self = this.set("defaultTime", js.undefined)
+    def setMaxTime(value: Date | Double | js.Array[Double] | String): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialField(value: Double): Self = this.set("initialField", value.asInstanceOf[js.Any])
+    def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
     
     @scala.inline
-    def deleteInitialField: Self = this.set("initialField", js.undefined)
+    def setMaxTimeVarargs(value: Double*): Self = StObject.set(x, "maxTime", js.Array(value :_*))
     
     @scala.inline
-    def setMaxTimeVarargs(value: Double*): Self = this.set("maxTime", js.Array(value :_*))
+    def setMinTime(value: Date | Double | js.Array[Double] | String): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTime(value: Date | Double | js.Array[Double] | String): Self = this.set("maxTime", value.asInstanceOf[js.Any])
+    def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
     
     @scala.inline
-    def deleteMaxTime: Self = this.set("maxTime", js.undefined)
+    def setMinTimeVarargs(value: Double*): Self = StObject.set(x, "minTime", js.Array(value :_*))
     
     @scala.inline
-    def setMinTimeVarargs(value: Double*): Self = this.set("minTime", js.Array(value :_*))
+    def setNoSeparatorEntry(value: Boolean): Self = StObject.set(x, "noSeparatorEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTime(value: Date | Double | js.Array[Double] | String): Self = this.set("minTime", value.asInstanceOf[js.Any])
+    def setNoSeparatorEntryUndefined: Self = StObject.set(x, "noSeparatorEntry", js.undefined)
     
     @scala.inline
-    def deleteMinTime: Self = this.set("minTime", js.undefined)
+    def setShowSeconds(value: Boolean): Self = StObject.set(x, "showSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSeparatorEntry(value: Boolean): Self = this.set("noSeparatorEntry", value.asInstanceOf[js.Any])
+    def setShowSecondsUndefined: Self = StObject.set(x, "showSeconds", js.undefined)
     
     @scala.inline
-    def deleteNoSeparatorEntry: Self = this.set("noSeparatorEntry", js.undefined)
+    def setSpinnerBigImage(value: String): Self = StObject.set(x, "spinnerBigImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSeconds(value: Boolean): Self = this.set("showSeconds", value.asInstanceOf[js.Any])
+    def setSpinnerBigImageUndefined: Self = StObject.set(x, "spinnerBigImage", js.undefined)
     
     @scala.inline
-    def deleteShowSeconds: Self = this.set("showSeconds", js.undefined)
+    def setSpinnerBigSize(value: js.Array[Double]): Self = StObject.set(x, "spinnerBigSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinnerBigImage(value: String): Self = this.set("spinnerBigImage", value.asInstanceOf[js.Any])
+    def setSpinnerBigSizeUndefined: Self = StObject.set(x, "spinnerBigSize", js.undefined)
     
     @scala.inline
-    def deleteSpinnerBigImage: Self = this.set("spinnerBigImage", js.undefined)
+    def setSpinnerBigSizeVarargs(value: Double*): Self = StObject.set(x, "spinnerBigSize", js.Array(value :_*))
     
     @scala.inline
-    def setSpinnerBigSizeVarargs(value: Double*): Self = this.set("spinnerBigSize", js.Array(value :_*))
+    def setSpinnerImage(value: String): Self = StObject.set(x, "spinnerImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinnerBigSize(value: js.Array[Double]): Self = this.set("spinnerBigSize", value.asInstanceOf[js.Any])
+    def setSpinnerImageUndefined: Self = StObject.set(x, "spinnerImage", js.undefined)
     
     @scala.inline
-    def deleteSpinnerBigSize: Self = this.set("spinnerBigSize", js.undefined)
+    def setSpinnerIncDecOnly(value: Boolean): Self = StObject.set(x, "spinnerIncDecOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinnerImage(value: String): Self = this.set("spinnerImage", value.asInstanceOf[js.Any])
+    def setSpinnerIncDecOnlyUndefined: Self = StObject.set(x, "spinnerIncDecOnly", js.undefined)
     
     @scala.inline
-    def deleteSpinnerImage: Self = this.set("spinnerImage", js.undefined)
+    def setSpinnerRepeat(value: js.Array[Double]): Self = StObject.set(x, "spinnerRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinnerIncDecOnly(value: Boolean): Self = this.set("spinnerIncDecOnly", value.asInstanceOf[js.Any])
+    def setSpinnerRepeatUndefined: Self = StObject.set(x, "spinnerRepeat", js.undefined)
     
     @scala.inline
-    def deleteSpinnerIncDecOnly: Self = this.set("spinnerIncDecOnly", js.undefined)
+    def setSpinnerRepeatVarargs(value: Double*): Self = StObject.set(x, "spinnerRepeat", js.Array(value :_*))
     
     @scala.inline
-    def setSpinnerRepeatVarargs(value: Double*): Self = this.set("spinnerRepeat", js.Array(value :_*))
+    def setSpinnerSize(value: js.Array[Double]): Self = StObject.set(x, "spinnerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinnerRepeat(value: js.Array[Double]): Self = this.set("spinnerRepeat", value.asInstanceOf[js.Any])
+    def setSpinnerSizeUndefined: Self = StObject.set(x, "spinnerSize", js.undefined)
     
     @scala.inline
-    def deleteSpinnerRepeat: Self = this.set("spinnerRepeat", js.undefined)
+    def setSpinnerSizeVarargs(value: Double*): Self = StObject.set(x, "spinnerSize", js.Array(value :_*))
     
     @scala.inline
-    def setSpinnerSizeVarargs(value: Double*): Self = this.set("spinnerSize", js.Array(value :_*))
+    def setTabToExit(value: Boolean): Self = StObject.set(x, "tabToExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinnerSize(value: js.Array[Double]): Self = this.set("spinnerSize", value.asInstanceOf[js.Any])
+    def setTabToExitUndefined: Self = StObject.set(x, "tabToExit", js.undefined)
     
     @scala.inline
-    def deleteSpinnerSize: Self = this.set("spinnerSize", js.undefined)
+    def setTimeSteps(value: js.Array[Double]): Self = StObject.set(x, "timeSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabToExit(value: Boolean): Self = this.set("tabToExit", value.asInstanceOf[js.Any])
+    def setTimeStepsUndefined: Self = StObject.set(x, "timeSteps", js.undefined)
     
     @scala.inline
-    def deleteTabToExit: Self = this.set("tabToExit", js.undefined)
+    def setTimeStepsVarargs(value: Double*): Self = StObject.set(x, "timeSteps", js.Array(value :_*))
     
     @scala.inline
-    def setTimeStepsVarargs(value: Double*): Self = this.set("timeSteps", js.Array(value :_*))
+    def setUnlimitedHours(value: Boolean): Self = StObject.set(x, "unlimitedHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeSteps(value: js.Array[Double]): Self = this.set("timeSteps", value.asInstanceOf[js.Any])
+    def setUnlimitedHoursUndefined: Self = StObject.set(x, "unlimitedHours", js.undefined)
     
     @scala.inline
-    def deleteTimeSteps: Self = this.set("timeSteps", js.undefined)
+    def setUseMouseWheel(value: Boolean): Self = StObject.set(x, "useMouseWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnlimitedHours(value: Boolean): Self = this.set("unlimitedHours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnlimitedHours: Self = this.set("unlimitedHours", js.undefined)
-    
-    @scala.inline
-    def setUseMouseWheel(value: Boolean): Self = this.set("useMouseWheel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseMouseWheel: Self = this.set("useMouseWheel", js.undefined)
+    def setUseMouseWheelUndefined: Self = StObject.set(x, "useMouseWheel", js.undefined)
   }
 }

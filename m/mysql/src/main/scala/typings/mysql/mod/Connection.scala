@@ -10,6 +10,7 @@ import typings.mysql.mysqlStrings.enqueue
 import typings.mysql.mysqlStrings.error
 import typings.mysql.mysqlStrings.fields
 import typings.mysql.mysqlStrings.protocol_error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

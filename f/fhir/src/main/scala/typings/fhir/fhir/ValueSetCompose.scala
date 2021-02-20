@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,57 +50,45 @@ object ValueSetCompose {
   }
   
   @scala.inline
-  implicit class ValueSetComposeOps[Self <: ValueSetCompose] (val x: Self) extends AnyVal {
+  implicit class ValueSetComposeMutableBuilder[Self <: ValueSetCompose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclude(value: js.Array[ValueSetComposeInclude]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeVarargs(value: ValueSetComposeInclude*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeVarargs(value: ValueSetComposeInclude*): Self = this.set("include", js.Array(value :_*))
+    def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: js.Array[ValueSetComposeInclude]): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
     
     @scala.inline
-    def set_inactive(value: Element): Self = this.set("_inactive", value.asInstanceOf[js.Any])
+    def setInclude(value: js.Array[ValueSetComposeInclude]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_inactive: Self = this.set("_inactive", js.undefined)
+    def setIncludeVarargs(value: ValueSetComposeInclude*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def set_lockedDate(value: Element): Self = this.set("_lockedDate", value.asInstanceOf[js.Any])
+    def setLockedDate(value: date): Self = StObject.set(x, "lockedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_lockedDate: Self = this.set("_lockedDate", js.undefined)
+    def setLockedDateUndefined: Self = StObject.set(x, "lockedDate", js.undefined)
     
     @scala.inline
-    def setExcludeVarargs(value: ValueSetComposeInclude*): Self = this.set("exclude", js.Array(value :_*))
+    def set_inactive(value: Element): Self = StObject.set(x, "_inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: js.Array[ValueSetComposeInclude]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def set_inactiveUndefined: Self = StObject.set(x, "_inactive", js.undefined)
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def set_lockedDate(value: Element): Self = StObject.set(x, "_lockedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactive(value: Boolean): Self = this.set("inactive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInactive: Self = this.set("inactive", js.undefined)
-    
-    @scala.inline
-    def setLockedDate(value: date): Self = this.set("lockedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLockedDate: Self = this.set("lockedDate", js.undefined)
+    def set_lockedDateUndefined: Self = StObject.set(x, "_lockedDate", js.undefined)
   }
 }

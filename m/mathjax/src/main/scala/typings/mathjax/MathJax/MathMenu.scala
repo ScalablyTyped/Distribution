@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MathMenu extends js.Object {
+trait MathMenu extends StObject {
   
   /*This is the hover delay for the display (in milliseconds) for submenus in the contextual menu: when the mouse
     * is over a submenu label for this long, the menu will appear. (The submenu also will appear if you click on its
@@ -82,78 +83,66 @@ object MathMenu {
   }
   
   @scala.inline
-  implicit class MathMenuOps[Self <: MathMenu] (val x: Self) extends AnyVal {
+  implicit class MathMenuMutableBuilder[Self <: MathMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHelpURL(value: String): Self = StObject.set(x, "helpURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setHelpURLUndefined: Self = StObject.set(x, "helpURL", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setSemanticsAnnotations(value: js.Any): Self = StObject.set(x, "semanticsAnnotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpURL(value: String): Self = this.set("helpURL", value.asInstanceOf[js.Any])
+    def setSemanticsAnnotationsUndefined: Self = StObject.set(x, "semanticsAnnotations", js.undefined)
     
     @scala.inline
-    def deleteHelpURL: Self = this.set("helpURL", js.undefined)
+    def setShowContext(value: Boolean): Self = StObject.set(x, "showContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemanticsAnnotations(value: js.Any): Self = this.set("semanticsAnnotations", value.asInstanceOf[js.Any])
+    def setShowContextUndefined: Self = StObject.set(x, "showContext", js.undefined)
     
     @scala.inline
-    def deleteSemanticsAnnotations: Self = this.set("semanticsAnnotations", js.undefined)
+    def setShowFontMenu(value: Boolean): Self = StObject.set(x, "showFontMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowContext(value: Boolean): Self = this.set("showContext", value.asInstanceOf[js.Any])
+    def setShowFontMenuUndefined: Self = StObject.set(x, "showFontMenu", js.undefined)
     
     @scala.inline
-    def deleteShowContext: Self = this.set("showContext", js.undefined)
+    def setShowLocale(value: Boolean): Self = StObject.set(x, "showLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFontMenu(value: Boolean): Self = this.set("showFontMenu", value.asInstanceOf[js.Any])
+    def setShowLocaleUndefined: Self = StObject.set(x, "showLocale", js.undefined)
     
     @scala.inline
-    def deleteShowFontMenu: Self = this.set("showFontMenu", js.undefined)
+    def setShowMathPlayer(value: Boolean): Self = StObject.set(x, "showMathPlayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLocale(value: Boolean): Self = this.set("showLocale", value.asInstanceOf[js.Any])
+    def setShowMathPlayerUndefined: Self = StObject.set(x, "showMathPlayer", js.undefined)
     
     @scala.inline
-    def deleteShowLocale: Self = this.set("showLocale", js.undefined)
+    def setShowRenderer(value: Boolean): Self = StObject.set(x, "showRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMathPlayer(value: Boolean): Self = this.set("showMathPlayer", value.asInstanceOf[js.Any])
+    def setShowRendererUndefined: Self = StObject.set(x, "showRenderer", js.undefined)
     
     @scala.inline
-    def deleteShowMathPlayer: Self = this.set("showMathPlayer", js.undefined)
+    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRenderer(value: Boolean): Self = this.set("showRenderer", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteShowRenderer: Self = this.set("showRenderer", js.undefined)
+    def setWindowSettings(value: js.Any): Self = StObject.set(x, "windowSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Any): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
-    
-    @scala.inline
-    def setWindowSettings(value: js.Any): Self = this.set("windowSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowSettings: Self = this.set("windowSettings", js.undefined)
+    def setWindowSettingsUndefined: Self = StObject.set(x, "windowSettings", js.undefined)
   }
 }

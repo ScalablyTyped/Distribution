@@ -11,14 +11,14 @@ import typings.ts3NodejsLibrary.responseTypesMod.ChannelGroupClientList
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelGroupCopy
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelGroupEntry
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts3-nodejs-library/lib/node/ChannelGroup", JSImport.Namespace)
-@js.native
-object channelGroupMod extends js.Object {
+object channelGroupMod {
   
+  @JSImport("ts3-nodejs-library/lib/node/ChannelGroup", "TeamSpeakChannelGroup")
   @js.native
   class TeamSpeakChannelGroup protected () extends Abstract[ChannelGroupEntry] {
     def this(parent: TeamSpeak, list: ChannelGroupEntry) = this()
@@ -119,14 +119,19 @@ object channelGroupMod extends js.Object {
     def `type`: Double = js.native
   }
   /* static members */
-  @js.native
-  object TeamSpeakChannelGroup extends js.Object {
+  object TeamSpeakChannelGroup {
     
     /** retrieves the client id from a string or teamspeak client */
+    @JSImport("ts3-nodejs-library/lib/node/ChannelGroup", "TeamSpeakChannelGroup.getId")
+    @js.native
     def getId[T /* <: GroupType */](): js.UndefOr[String] = js.native
+    @JSImport("ts3-nodejs-library/lib/node/ChannelGroup", "TeamSpeakChannelGroup.getId")
+    @js.native
     def getId[T /* <: GroupType */](channel: T): js.UndefOr[String] = js.native
     
     /** retrieves the clients from an array */
+    @JSImport("ts3-nodejs-library/lib/node/ChannelGroup", "TeamSpeakChannelGroup.getMultipleIds")
+    @js.native
     def getMultipleIds(client: MultiGroupType): js.Array[String] = js.native
     
     type GroupType = String | TeamSpeakChannelGroup

@@ -1,16 +1,21 @@
 package typings.gherkin
 
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.ILocation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gherkin/dist/src/TokenMatcher", JSImport.Namespace)
-@js.native
-object tokenMatcherMod extends js.Object {
+object tokenMatcherMod {
+  
+  @JSImport("gherkin/dist/src/TokenMatcher", JSImport.Default)
+  @js.native
+  class default () extends TokenMatcher {
+    def this(defaultDialectName: String) = this()
+  }
   
   @js.native
-  trait TokenMatcher extends js.Object {
+  trait TokenMatcher extends StObject {
     
     def _match_DocStringSeparator(token: typings.gherkin.tokenMod.default, separator: String, isOpen: Boolean): Boolean = js.native
     
@@ -62,10 +67,5 @@ object tokenMatcherMod extends js.Object {
     var setTokenMatched: js.Any = js.native
     
     var unescapeDocString: js.Any = js.native
-  }
-  
-  @js.native
-  class default () extends TokenMatcher {
-    def this(defaultDialectName: String) = this()
   }
 }

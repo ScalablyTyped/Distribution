@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleActivityTaskFailedEventAttributes extends js.Object {
+trait ScheduleActivityTaskFailedEventAttributes extends StObject {
   
   /**
     * The activityId provided in the ScheduleActivityTask decision that failed.
@@ -41,30 +42,18 @@ object ScheduleActivityTaskFailedEventAttributes {
   }
   
   @scala.inline
-  implicit class ScheduleActivityTaskFailedEventAttributesOps[Self <: ScheduleActivityTaskFailedEventAttributes] (val x: Self) extends AnyVal {
+  implicit class ScheduleActivityTaskFailedEventAttributesMutableBuilder[Self <: ScheduleActivityTaskFailedEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityType(value: ActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCause(value: ScheduleActivityTaskFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityId(value: ActivityId): Self = this.set("activityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActivityType(value: ActivityType): Self = this.set("activityType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCause(value: ScheduleActivityTaskFailedCause): Self = this.set("cause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = this.set("decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.dlmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetainRule extends js.Object {
+trait RetainRule extends StObject {
   
   /**
     * The number of snapshots to retain for each volume, up to a maximum of 1000.
@@ -31,36 +32,24 @@ object RetainRule {
   }
   
   @scala.inline
-  implicit class RetainRuleOps[Self <: RetainRule] (val x: Self) extends AnyVal {
+  implicit class RetainRuleMutableBuilder[Self <: RetainRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Count): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterval(value: Interval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Count): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
+    def setIntervalUnit(value: RetentionIntervalUnitValues): Self = StObject.set(x, "IntervalUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Interval): Self = this.set("Interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterval: Self = this.set("Interval", js.undefined)
-    
-    @scala.inline
-    def setIntervalUnit(value: RetentionIntervalUnitValues): Self = this.set("IntervalUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntervalUnit: Self = this.set("IntervalUnit", js.undefined)
+    def setIntervalUnitUndefined: Self = StObject.set(x, "IntervalUnit", js.undefined)
   }
 }

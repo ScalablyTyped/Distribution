@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientNetworkmanagement.anon.Key
 import typings.maximMazurokGapiClientNetworkmanagement.anon.Name
 import typings.maximMazurokGapiClientNetworkmanagement.anon.Oauthtoken
 import typings.maximMazurokGapiClientNetworkmanagement.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectivityTestsResource extends js.Object {
+trait ConnectivityTestsResource extends StObject {
   
   /**
     * Creates a new Connectivity Test. After you create a test, the reachability analysis is performed as part of the long running operation, which completes when the analysis completes.

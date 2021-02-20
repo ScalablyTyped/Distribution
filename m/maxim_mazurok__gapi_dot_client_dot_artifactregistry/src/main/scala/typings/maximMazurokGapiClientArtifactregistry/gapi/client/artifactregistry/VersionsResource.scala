@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientArtifactregistry.anon.Force
 import typings.maximMazurokGapiClientArtifactregistry.anon.PageSize
 import typings.maximMazurokGapiClientArtifactregistry.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersionsResource extends js.Object {
+trait VersionsResource extends StObject {
   
   /** Deletes a version and all of its content. The returned operation will complete once the version has been deleted. */
   def delete(): Request[Operation] = js.native

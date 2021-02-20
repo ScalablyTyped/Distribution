@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UdpGroupSettings extends js.Object {
+trait UdpGroupSettings extends StObject {
   
   /**
     * Specifies behavior of last resort when input video is lost, and no more backup inputs are available. When dropTs is selected the entire transport stream will stop being emitted.  When dropProgram is selected the program can be dropped from the transport stream (and replaced with null packets to meet the TS bitrate requirement).  Or, when emitProgram is chosen the transport stream will continue to be produced normally with repeat frames, black frames, or slate frames substituted for the absent input video.
@@ -31,36 +32,24 @@ object UdpGroupSettings {
   }
   
   @scala.inline
-  implicit class UdpGroupSettingsOps[Self <: UdpGroupSettings] (val x: Self) extends AnyVal {
+  implicit class UdpGroupSettingsMutableBuilder[Self <: UdpGroupSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputLossAction(value: InputLossActionForUdpOut): Self = StObject.set(x, "InputLossAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputLossActionUndefined: Self = StObject.set(x, "InputLossAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimedMetadataId3Frame(value: UdpTimedMetadataId3Frame): Self = StObject.set(x, "TimedMetadataId3Frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputLossAction(value: InputLossActionForUdpOut): Self = this.set("InputLossAction", value.asInstanceOf[js.Any])
+    def setTimedMetadataId3FrameUndefined: Self = StObject.set(x, "TimedMetadataId3Frame", js.undefined)
     
     @scala.inline
-    def deleteInputLossAction: Self = this.set("InputLossAction", js.undefined)
+    def setTimedMetadataId3Period(value: integerMin0): Self = StObject.set(x, "TimedMetadataId3Period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimedMetadataId3Frame(value: UdpTimedMetadataId3Frame): Self = this.set("TimedMetadataId3Frame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimedMetadataId3Frame: Self = this.set("TimedMetadataId3Frame", js.undefined)
-    
-    @scala.inline
-    def setTimedMetadataId3Period(value: integerMin0): Self = this.set("TimedMetadataId3Period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimedMetadataId3Period: Self = this.set("TimedMetadataId3Period", js.undefined)
+    def setTimedMetadataId3PeriodUndefined: Self = StObject.set(x, "TimedMetadataId3Period", js.undefined)
   }
 }

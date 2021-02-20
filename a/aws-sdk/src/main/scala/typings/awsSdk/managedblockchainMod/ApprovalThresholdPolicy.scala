@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApprovalThresholdPolicy extends js.Object {
+trait ApprovalThresholdPolicy extends StObject {
   
   /**
     * The duration from the time that a proposal is created until it expires. If members cast neither the required number of YES votes to approve the proposal nor the number of NO votes required to reject it before the duration expires, the proposal is EXPIRED and ProposalActions are not carried out.
@@ -31,36 +32,24 @@ object ApprovalThresholdPolicy {
   }
   
   @scala.inline
-  implicit class ApprovalThresholdPolicyOps[Self <: ApprovalThresholdPolicy] (val x: Self) extends AnyVal {
+  implicit class ApprovalThresholdPolicyMutableBuilder[Self <: ApprovalThresholdPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProposalDurationInHours(value: ProposalDurationInt): Self = StObject.set(x, "ProposalDurationInHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProposalDurationInHoursUndefined: Self = StObject.set(x, "ProposalDurationInHours", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThresholdComparator(value: ThresholdComparator): Self = StObject.set(x, "ThresholdComparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProposalDurationInHours(value: ProposalDurationInt): Self = this.set("ProposalDurationInHours", value.asInstanceOf[js.Any])
+    def setThresholdComparatorUndefined: Self = StObject.set(x, "ThresholdComparator", js.undefined)
     
     @scala.inline
-    def deleteProposalDurationInHours: Self = this.set("ProposalDurationInHours", js.undefined)
+    def setThresholdPercentage(value: ThresholdPercentageInt): Self = StObject.set(x, "ThresholdPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThresholdComparator(value: ThresholdComparator): Self = this.set("ThresholdComparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThresholdComparator: Self = this.set("ThresholdComparator", js.undefined)
-    
-    @scala.inline
-    def setThresholdPercentage(value: ThresholdPercentageInt): Self = this.set("ThresholdPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThresholdPercentage: Self = this.set("ThresholdPercentage", js.undefined)
+    def setThresholdPercentageUndefined: Self = StObject.set(x, "ThresholdPercentage", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * suggested value.
   */
 @js.native
-trait SchemaEmbeddedObjectSuggestionState extends js.Object {
+trait SchemaEmbeddedObjectSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to description.
@@ -81,84 +82,72 @@ object SchemaEmbeddedObjectSuggestionState {
   }
   
   @scala.inline
-  implicit class SchemaEmbeddedObjectSuggestionStateOps[Self <: SchemaEmbeddedObjectSuggestionState] (val x: Self) extends AnyVal {
+  implicit class SchemaEmbeddedObjectSuggestionStateMutableBuilder[Self <: SchemaEmbeddedObjectSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescriptionSuggested(value: Boolean): Self = StObject.set(x, "descriptionSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionSuggestedUndefined: Self = StObject.set(x, "descriptionSuggested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbeddedDrawingPropertiesSuggestionState(value: SchemaEmbeddedDrawingPropertiesSuggestionState): Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionSuggested(value: Boolean): Self = this.set("descriptionSuggested", value.asInstanceOf[js.Any])
+    def setEmbeddedDrawingPropertiesSuggestionStateUndefined: Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", js.undefined)
     
     @scala.inline
-    def deleteDescriptionSuggested: Self = this.set("descriptionSuggested", js.undefined)
+    def setEmbeddedObjectBorderSuggestionState(value: SchemaEmbeddedObjectBorderSuggestionState): Self = StObject.set(x, "embeddedObjectBorderSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedDrawingPropertiesSuggestionState(value: SchemaEmbeddedDrawingPropertiesSuggestionState): Self = this.set("embeddedDrawingPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    def setEmbeddedObjectBorderSuggestionStateUndefined: Self = StObject.set(x, "embeddedObjectBorderSuggestionState", js.undefined)
     
     @scala.inline
-    def deleteEmbeddedDrawingPropertiesSuggestionState: Self = this.set("embeddedDrawingPropertiesSuggestionState", js.undefined)
+    def setImagePropertiesSuggestionState(value: SchemaImagePropertiesSuggestionState): Self = StObject.set(x, "imagePropertiesSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedObjectBorderSuggestionState(value: SchemaEmbeddedObjectBorderSuggestionState): Self = this.set("embeddedObjectBorderSuggestionState", value.asInstanceOf[js.Any])
+    def setImagePropertiesSuggestionStateUndefined: Self = StObject.set(x, "imagePropertiesSuggestionState", js.undefined)
     
     @scala.inline
-    def deleteEmbeddedObjectBorderSuggestionState: Self = this.set("embeddedObjectBorderSuggestionState", js.undefined)
+    def setLinkedContentReferenceSuggestionState(value: SchemaLinkedContentReferenceSuggestionState): Self = StObject.set(x, "linkedContentReferenceSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePropertiesSuggestionState(value: SchemaImagePropertiesSuggestionState): Self = this.set("imagePropertiesSuggestionState", value.asInstanceOf[js.Any])
+    def setLinkedContentReferenceSuggestionStateUndefined: Self = StObject.set(x, "linkedContentReferenceSuggestionState", js.undefined)
     
     @scala.inline
-    def deleteImagePropertiesSuggestionState: Self = this.set("imagePropertiesSuggestionState", js.undefined)
+    def setMarginBottomSuggested(value: Boolean): Self = StObject.set(x, "marginBottomSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedContentReferenceSuggestionState(value: SchemaLinkedContentReferenceSuggestionState): Self = this.set("linkedContentReferenceSuggestionState", value.asInstanceOf[js.Any])
+    def setMarginBottomSuggestedUndefined: Self = StObject.set(x, "marginBottomSuggested", js.undefined)
     
     @scala.inline
-    def deleteLinkedContentReferenceSuggestionState: Self = this.set("linkedContentReferenceSuggestionState", js.undefined)
+    def setMarginLeftSuggested(value: Boolean): Self = StObject.set(x, "marginLeftSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginBottomSuggested(value: Boolean): Self = this.set("marginBottomSuggested", value.asInstanceOf[js.Any])
+    def setMarginLeftSuggestedUndefined: Self = StObject.set(x, "marginLeftSuggested", js.undefined)
     
     @scala.inline
-    def deleteMarginBottomSuggested: Self = this.set("marginBottomSuggested", js.undefined)
+    def setMarginRightSuggested(value: Boolean): Self = StObject.set(x, "marginRightSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeftSuggested(value: Boolean): Self = this.set("marginLeftSuggested", value.asInstanceOf[js.Any])
+    def setMarginRightSuggestedUndefined: Self = StObject.set(x, "marginRightSuggested", js.undefined)
     
     @scala.inline
-    def deleteMarginLeftSuggested: Self = this.set("marginLeftSuggested", js.undefined)
+    def setMarginTopSuggested(value: Boolean): Self = StObject.set(x, "marginTopSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginRightSuggested(value: Boolean): Self = this.set("marginRightSuggested", value.asInstanceOf[js.Any])
+    def setMarginTopSuggestedUndefined: Self = StObject.set(x, "marginTopSuggested", js.undefined)
     
     @scala.inline
-    def deleteMarginRightSuggested: Self = this.set("marginRightSuggested", js.undefined)
+    def setSizeSuggestionState(value: SchemaSizeSuggestionState): Self = StObject.set(x, "sizeSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTopSuggested(value: Boolean): Self = this.set("marginTopSuggested", value.asInstanceOf[js.Any])
+    def setSizeSuggestionStateUndefined: Self = StObject.set(x, "sizeSuggestionState", js.undefined)
     
     @scala.inline
-    def deleteMarginTopSuggested: Self = this.set("marginTopSuggested", js.undefined)
+    def setTitleSuggested(value: Boolean): Self = StObject.set(x, "titleSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeSuggestionState(value: SchemaSizeSuggestionState): Self = this.set("sizeSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeSuggestionState: Self = this.set("sizeSuggestionState", js.undefined)
-    
-    @scala.inline
-    def setTitleSuggested(value: Boolean): Self = this.set("titleSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleSuggested: Self = this.set("titleSuggested", js.undefined)
+    def setTitleSuggestedUndefined: Self = StObject.set(x, "titleSuggested", js.undefined)
   }
 }

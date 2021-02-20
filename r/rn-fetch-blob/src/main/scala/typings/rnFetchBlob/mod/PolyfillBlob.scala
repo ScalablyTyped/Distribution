@@ -1,6 +1,7 @@
 package typings.rnFetchBlob.mod
 
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,13 +64,17 @@ class PolyfillBlob protected () extends EventTarget {
   def slice(start: Double, end: Double): PolyfillBlob = js.native
   def slice(start: Double, end: Double, contentType: String): PolyfillBlob = js.native
 }
-@JSImport("rn-fetch-blob", "PolyfillBlob")
-@js.native
-object PolyfillBlob extends js.Object {
+object PolyfillBlob {
   
+  @JSImport("rn-fetch-blob", "PolyfillBlob.build")
+  @js.native
   def build(data: js.Any, cType: js.Any): js.Promise[PolyfillBlob] = js.native
   
+  @JSImport("rn-fetch-blob", "PolyfillBlob.clearCache")
+  @js.native
   def clearCache(): Unit = js.native
   
+  @JSImport("rn-fetch-blob", "PolyfillBlob.setLog")
+  @js.native
   def setLog(level: Double): Unit = js.native
 }

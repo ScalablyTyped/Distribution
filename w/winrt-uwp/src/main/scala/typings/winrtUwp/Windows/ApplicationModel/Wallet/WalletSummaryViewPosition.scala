@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WalletSummaryViewPosition extends js.Object
+sealed trait WalletSummaryViewPosition extends StObject
 /** Describes the position in the summary view of a wallet item that a WalletItemCustomProperty should be displayed. */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletSummaryViewPosition")
 @js.native
-object WalletSummaryViewPosition extends js.Object {
+object WalletSummaryViewPosition extends StObject {
   
   /** The first summary line. */
   @js.native

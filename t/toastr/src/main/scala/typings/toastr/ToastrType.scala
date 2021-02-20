@@ -1,5 +1,6 @@
 package typings.toastr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.toastr.toastrStrings.success
   - typings.toastr.toastrStrings.warning
 */
-trait ToastrType extends js.Object
+trait ToastrType extends StObject
 object ToastrType {
   
   @scala.inline

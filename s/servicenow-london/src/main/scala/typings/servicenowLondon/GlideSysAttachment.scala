@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideSysAttachment extends js.Object {
+trait GlideSysAttachment extends StObject {
   
   def copy(sourceTable: String, sourceSysId: String, destinationTable: String, destinationSysId: String): Unit = js.native
   
@@ -41,42 +42,30 @@ object GlideSysAttachment {
   }
   
   @scala.inline
-  implicit class GlideSysAttachmentOps[Self <: GlideSysAttachment] (val x: Self) extends AnyVal {
+  implicit class GlideSysAttachmentMutableBuilder[Self <: GlideSysAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: (String, String, String, String) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteAttachment(value: String => Unit): Self = StObject.set(x, "deleteAttachment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetContent(value: ScopedGlideRecord => js.Any): Self = StObject.set(x, "getContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopy(value: (String, String, String, String) => Unit): Self = this.set("copy", js.Any.fromFunction4(value))
+    def setGetContentBase64(value: ScopedGlideRecord => String): Self = StObject.set(x, "getContentBase64", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteAttachment(value: String => Unit): Self = this.set("deleteAttachment", js.Any.fromFunction1(value))
+    def setGetContentStream(value: String => js.Object): Self = StObject.set(x, "getContentStream", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetContent(value: ScopedGlideRecord => js.Any): Self = this.set("getContent", js.Any.fromFunction1(value))
+    def setWrite(value: (ScopedGlideRecord, String, String, js.Any) => String): Self = StObject.set(x, "write", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetContentBase64(value: ScopedGlideRecord => String): Self = this.set("getContentBase64", js.Any.fromFunction1(value))
+    def setWriteBase64(value: (ScopedGlideRecord, String, String, String) => String): Self = StObject.set(x, "writeBase64", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetContentStream(value: String => js.Object): Self = this.set("getContentStream", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWrite(value: (ScopedGlideRecord, String, String, js.Any) => String): Self = this.set("write", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setWriteBase64(value: (ScopedGlideRecord, String, String, String) => String): Self = this.set("writeBase64", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setWriteContentStream(value: (ScopedGlideRecord, String, String, js.Object) => String): Self = this.set("writeContentStream", js.Any.fromFunction4(value))
+    def setWriteContentStream(value: (ScopedGlideRecord, String, String, js.Object) => String): Self = StObject.set(x, "writeContentStream", js.Any.fromFunction4(value))
   }
 }

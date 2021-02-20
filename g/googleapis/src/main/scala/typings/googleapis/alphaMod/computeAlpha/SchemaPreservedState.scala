@@ -1,6 +1,7 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Preserved state for a given instance.
   */
 @js.native
-trait SchemaPreservedState extends js.Object {
+trait SchemaPreservedState extends StObject {
   
   /**
     * Preserved disks defined for this instance. This map is keyed with the
@@ -31,30 +32,18 @@ object SchemaPreservedState {
   }
   
   @scala.inline
-  implicit class SchemaPreservedStateOps[Self <: SchemaPreservedState] (val x: Self) extends AnyVal {
+  implicit class SchemaPreservedStateMutableBuilder[Self <: SchemaPreservedState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisks(value: StringDictionary[SchemaPreservedStatePreservedDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisks(value: StringDictionary[SchemaPreservedStatePreservedDisk]): Self = this.set("disks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisks: Self = this.set("disks", js.undefined)
-    
-    @scala.inline
-    def setMetadata(value: StringDictionary[String]): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

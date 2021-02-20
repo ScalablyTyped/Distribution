@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,93 +53,81 @@ object ActivityHistoryItem {
   }
   
   @scala.inline
-  implicit class ActivityHistoryItemOps[Self <: ActivityHistoryItem] (val x: Self) extends AnyVal {
+  implicit class ActivityHistoryItemMutableBuilder[Self <: ActivityHistoryItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDurationSeconds(value: NullableOption[Double]): Self = StObject.set(x, "activeDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveDurationSecondsNull: Self = StObject.set(x, "activeDurationSeconds", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveDurationSecondsUndefined: Self = StObject.set(x, "activeDurationSeconds", js.undefined)
     
     @scala.inline
-    def setActiveDurationSeconds(value: NullableOption[Double]): Self = this.set("activeDurationSeconds", value.asInstanceOf[js.Any])
+    def setActivity(value: UserActivity): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveDurationSeconds: Self = this.set("activeDurationSeconds", js.undefined)
+    def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
     
     @scala.inline
-    def setActiveDurationSecondsNull: Self = this.set("activeDurationSeconds", null)
+    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivity(value: UserActivity): Self = this.set("activity", value.asInstanceOf[js.Any])
+    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
     @scala.inline
-    def deleteActivity: Self = this.set("activity", js.undefined)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
     
     @scala.inline
-    def setCreatedDateTimeNull: Self = this.set("createdDateTime", null)
+    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
     @scala.inline
-    def setExpirationDateTime(value: NullableOption[String]): Self = this.set("expirationDateTime", value.asInstanceOf[js.Any])
+    def setLastActiveDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastActiveDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirationDateTime: Self = this.set("expirationDateTime", js.undefined)
+    def setLastActiveDateTimeNull: Self = StObject.set(x, "lastActiveDateTime", null)
     
     @scala.inline
-    def setExpirationDateTimeNull: Self = this.set("expirationDateTime", null)
+    def setLastActiveDateTimeUndefined: Self = StObject.set(x, "lastActiveDateTime", js.undefined)
     
     @scala.inline
-    def setLastActiveDateTime(value: NullableOption[String]): Self = this.set("lastActiveDateTime", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastActiveDateTime: Self = this.set("lastActiveDateTime", js.undefined)
+    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
     @scala.inline
-    def setLastActiveDateTimeNull: Self = this.set("lastActiveDateTime", null)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setStartedDateTime(value: String): Self = StObject.set(x, "startedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setStartedDateTimeUndefined: Self = StObject.set(x, "startedDateTime", js.undefined)
     
     @scala.inline
-    def setLastModifiedDateTimeNull: Self = this.set("lastModifiedDateTime", null)
+    def setStatus(value: NullableOption[Status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedDateTime(value: String): Self = this.set("startedDateTime", value.asInstanceOf[js.Any])
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def deleteStartedDateTime: Self = this.set("startedDateTime", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setStatus(value: NullableOption[Status]): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUserTimezone(value: NullableOption[String]): Self = StObject.set(x, "userTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUserTimezoneNull: Self = StObject.set(x, "userTimezone", null)
     
     @scala.inline
-    def setStatusNull: Self = this.set("status", null)
-    
-    @scala.inline
-    def setUserTimezone(value: NullableOption[String]): Self = this.set("userTimezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserTimezone: Self = this.set("userTimezone", js.undefined)
-    
-    @scala.inline
-    def setUserTimezoneNull: Self = this.set("userTimezone", null)
+    def setUserTimezoneUndefined: Self = StObject.set(x, "userTimezone", js.undefined)
   }
 }

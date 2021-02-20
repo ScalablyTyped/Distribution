@@ -1,11 +1,12 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILanguageInfo extends js.Object {
+trait ILanguageInfo extends StObject {
   
   var codemirror_mode: js.UndefOr[String | ICodeMirrorMode] = js.native
   
@@ -24,39 +25,27 @@ object ILanguageInfo {
   }
   
   @scala.inline
-  implicit class ILanguageInfoOps[Self <: ILanguageInfo] (val x: Self) extends AnyVal {
+  implicit class ILanguageInfoMutableBuilder[Self <: ILanguageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodemirror_mode(value: String | ICodeMirrorMode): Self = StObject.set(x, "codemirror_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodemirror_modeUndefined: Self = StObject.set(x, "codemirror_mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
     
     @scala.inline
-    def setCodemirror_mode(value: String | ICodeMirrorMode): Self = this.set("codemirror_mode", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodemirror_mode: Self = this.set("codemirror_mode", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimetype(value: String): Self = this.set("mimetype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimetype: Self = this.set("mimetype", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

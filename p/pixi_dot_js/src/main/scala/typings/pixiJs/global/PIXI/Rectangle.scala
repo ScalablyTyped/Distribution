@@ -1,5 +1,6 @@
 package typings.pixiJs.global.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,10 +37,11 @@ class Rectangle ()
   def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }
-/* static members */
-@JSGlobal("PIXI.Rectangle")
-@js.native
-object Rectangle extends js.Object {
+object Rectangle {
+  
+  @JSGlobal("PIXI.Rectangle")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A constant empty rectangle.
@@ -49,5 +51,10 @@ object Rectangle extends js.Object {
     * @member {PIXI.Rectangle}
     * @return {PIXI.Rectangle} An empty rectangle
     */
-  var EMPTY: typings.pixiJs.PIXI.Rectangle = js.native
+  /* static member */
+  @JSGlobal("PIXI.Rectangle.EMPTY")
+  @js.native
+  def EMPTY: typings.pixiJs.PIXI.Rectangle = js.native
+  @scala.inline
+  def EMPTY_=(x: typings.pixiJs.PIXI.Rectangle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
 }

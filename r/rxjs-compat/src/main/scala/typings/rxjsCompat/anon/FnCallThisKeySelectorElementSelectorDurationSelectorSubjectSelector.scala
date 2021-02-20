@@ -1,11 +1,12 @@
 package typings.rxjsCompat.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCallThisKeySelectorElementSelectorDurationSelectorSubjectSelector extends js.Object {
+trait FnCallThisKeySelectorElementSelectorDurationSelectorSubjectSelector extends StObject {
   
   def apply[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = js.native
   def apply[T, K](

@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentConfiguration extends js.Object {
+trait AgentConfiguration extends StObject {
   
   /**
     *  Parameters used by the profiler. The valid parameters are:     MaxStackDepth - The maximum depth of the stacks in the code that is represented in the profile. For example, if CodeGuru Profiler finds a method A, which calls method B, which calls method C, which calls method D, then the depth is 4. If the maxDepth is set to 2, then the profiler evaluates A and B.     MemoryUsageLimitPercent - The percentage of memory that is used by the profiler.    MinimumTimeForReportingInMilliseconds - The minimum time in milliseconds between sending reports.     ReportingIntervalInMilliseconds - The reporting interval in milliseconds used to report profiles.     SamplingIntervalInMilliseconds - The sampling interval in milliseconds that is used to profile samples.   
@@ -31,30 +32,18 @@ object AgentConfiguration {
   }
   
   @scala.inline
-  implicit class AgentConfigurationOps[Self <: AgentConfiguration] (val x: Self) extends AnyVal {
+  implicit class AgentConfigurationMutableBuilder[Self <: AgentConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentParameters(value: AgentParameters): Self = StObject.set(x, "agentParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentParametersUndefined: Self = StObject.set(x, "agentParameters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriodInSeconds(value: Integer): Self = StObject.set(x, "periodInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodInSeconds(value: Integer): Self = this.set("periodInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShouldProfile(value: Boolean): Self = this.set("shouldProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAgentParameters(value: AgentParameters): Self = this.set("agentParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAgentParameters: Self = this.set("agentParameters", js.undefined)
+    def setShouldProfile(value: Boolean): Self = StObject.set(x, "shouldProfile", value.asInstanceOf[js.Any])
   }
 }

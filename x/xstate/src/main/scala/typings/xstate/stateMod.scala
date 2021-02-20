@@ -21,25 +21,16 @@ import typings.xstate.typesMod.TransitionDefinition
 import typings.xstate.typesMod.Typestate
 import typings.xstate.xstateStrings.configuration
 import typings.xstate.xstateStrings.transitions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xstate/lib/State", JSImport.Namespace)
-@js.native
-object stateMod extends js.Object {
+object stateMod {
   
-  def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, _, Context[TC]]): ActionObject[TC, TE] = js.native
-  
-  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: String): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
-  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: js.Object): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
-  
-  def stateValuesEqual(): Boolean = js.native
-  def stateValuesEqual(a: js.UndefOr[StateValue], b: StateValue): Boolean = js.native
-  def stateValuesEqual(a: StateValue): Boolean = js.native
-  
+  @JSImport("xstate/lib/State", "State")
   @js.native
-  class State[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */] protected () extends js.Object {
+  class State[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */] protected () extends StObject {
     /**
       * Creates a new State instance.
       * @param value The state value
@@ -129,13 +120,14 @@ object stateMod extends js.Object {
     var value: StateValue = js.native
   }
   /* static members */
-  @js.native
-  object State extends js.Object {
+  object State {
     
     /**
       * Creates a new State instance for the given `config`.
       * @param config The state config
       */
+    @JSImport("xstate/lib/State", "State.create")
+    @js.native
     def create[TC, TE /* <: EventObject */](config: StateConfig[TC, TE]): State[TC, TE, _, Context[TC]] = js.native
     
     /**
@@ -143,9 +135,17 @@ object stateMod extends js.Object {
       * @param stateValue
       * @param context
       */
+    @JSImport("xstate/lib/State", "State.from")
+    @js.native
     def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Context[TC]]): State[TC, TE, _, Context[TC]] = js.native
+    @JSImport("xstate/lib/State", "State.from")
+    @js.native
     def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Context[TC]], context: TC): State[TC, TE, _, Context[TC]] = js.native
+    @JSImport("xstate/lib/State", "State.from")
+    @js.native
     def from[TC, TE /* <: EventObject */](stateValue: StateValue): State[TC, TE, _, Context[TC]] = js.native
+    @JSImport("xstate/lib/State", "State.from")
+    @js.native
     def from[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, _, Context[TC]] = js.native
     
     /**
@@ -153,7 +153,32 @@ object stateMod extends js.Object {
       * @param stateValue
       * @param context
       */
+    @JSImport("xstate/lib/State", "State.inert")
+    @js.native
     def inert[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Context[TC]], context: TC): State[TC, TE, _, Context[TC]] = js.native
+    @JSImport("xstate/lib/State", "State.inert")
+    @js.native
     def inert[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, _, Context[TC]] = js.native
   }
+  
+  @JSImport("xstate/lib/State", "bindActionToState")
+  @js.native
+  def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, _, Context[TC]]): ActionObject[TC, TE] = js.native
+  
+  @JSImport("xstate/lib/State", "isState")
+  @js.native
+  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: String): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
+  @JSImport("xstate/lib/State", "isState")
+  @js.native
+  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: js.Object): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
+  
+  @JSImport("xstate/lib/State", "stateValuesEqual")
+  @js.native
+  def stateValuesEqual(): Boolean = js.native
+  @JSImport("xstate/lib/State", "stateValuesEqual")
+  @js.native
+  def stateValuesEqual(a: js.UndefOr[StateValue], b: StateValue): Boolean = js.native
+  @JSImport("xstate/lib/State", "stateValuesEqual")
+  @js.native
+  def stateValuesEqual(a: StateValue): Boolean = js.native
 }

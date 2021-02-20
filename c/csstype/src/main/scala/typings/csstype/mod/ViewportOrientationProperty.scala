@@ -1,5 +1,6 @@
 package typings.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.landscape
   - typings.csstype.csstypeStrings.portrait
 */
-trait ViewportOrientationProperty extends js.Object
+trait ViewportOrientationProperty extends StObject
 object ViewportOrientationProperty {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2AuxiliaryTable extends js.Object {
+trait GooglePrivacyDlpV2AuxiliaryTable extends StObject {
   
   /** Required. Quasi-identifier columns. */
   var quasiIds: js.UndefOr[js.Array[GooglePrivacyDlpV2QuasiIdField]] = js.native
@@ -25,39 +26,27 @@ object GooglePrivacyDlpV2AuxiliaryTable {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2AuxiliaryTableOps[Self <: GooglePrivacyDlpV2AuxiliaryTable] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2AuxiliaryTableMutableBuilder[Self <: GooglePrivacyDlpV2AuxiliaryTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuasiIds(value: js.Array[GooglePrivacyDlpV2QuasiIdField]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuasiIdsVarargs(value: GooglePrivacyDlpV2QuasiIdField*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
     
     @scala.inline
-    def setQuasiIdsVarargs(value: GooglePrivacyDlpV2QuasiIdField*): Self = this.set("quasiIds", js.Array(value :_*))
+    def setRelativeFrequency(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "relativeFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuasiIds(value: js.Array[GooglePrivacyDlpV2QuasiIdField]): Self = this.set("quasiIds", value.asInstanceOf[js.Any])
+    def setRelativeFrequencyUndefined: Self = StObject.set(x, "relativeFrequency", js.undefined)
     
     @scala.inline
-    def deleteQuasiIds: Self = this.set("quasiIds", js.undefined)
+    def setTable(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeFrequency(value: GooglePrivacyDlpV2FieldId): Self = this.set("relativeFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelativeFrequency: Self = this.set("relativeFrequency", js.undefined)
-    
-    @scala.inline
-    def setTable(value: GooglePrivacyDlpV2BigQueryTable): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

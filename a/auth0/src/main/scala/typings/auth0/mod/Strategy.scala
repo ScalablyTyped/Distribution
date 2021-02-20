@@ -1,5 +1,6 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +66,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.auth0.auth0Strings.yammer
   - typings.auth0.auth0Strings.yandex
 */
-trait Strategy extends js.Object
+trait Strategy extends StObject
 object Strategy {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a rectangle that defines a geographic area. */
 @js.native
-trait GeoboundingBox extends js.Object {
+trait GeoboundingBox extends StObject {
   
   /** Gets the altitude reference system used by the GeoboundingBox . */
   var altitudeReferenceSystem: AltitudeReferenceSystem = js.native
@@ -50,42 +51,30 @@ object GeoboundingBox {
   }
   
   @scala.inline
-  implicit class GeoboundingBoxOps[Self <: GeoboundingBox] (val x: Self) extends AnyVal {
+  implicit class GeoboundingBoxMutableBuilder[Self <: GeoboundingBox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenter(value: BasicGeoposition): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeoshapeType(value: GeoshapeType): Self = StObject.set(x, "geoshapeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = this.set("altitudeReferenceSystem", value.asInstanceOf[js.Any])
+    def setMaxAltitude(value: Double): Self = StObject.set(x, "maxAltitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: BasicGeoposition): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setMinAltitude(value: Double): Self = StObject.set(x, "minAltitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoshapeType(value: GeoshapeType): Self = this.set("geoshapeType", value.asInstanceOf[js.Any])
+    def setNorthwestCorner(value: BasicGeoposition): Self = StObject.set(x, "northwestCorner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAltitude(value: Double): Self = this.set("maxAltitude", value.asInstanceOf[js.Any])
+    def setSoutheastCorner(value: BasicGeoposition): Self = StObject.set(x, "southeastCorner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinAltitude(value: Double): Self = this.set("minAltitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNorthwestCorner(value: BasicGeoposition): Self = this.set("northwestCorner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoutheastCorner(value: BasicGeoposition): Self = this.set("southeastCorner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpatialReferenceId(value: Double): Self = this.set("spatialReferenceId", value.asInstanceOf[js.Any])
+    def setSpatialReferenceId(value: Double): Self = StObject.set(x, "spatialReferenceId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,14 @@
 package typings.reactSortableTree.anon
 
 import typings.reactSortableTree.mod.TreeItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-sortable-tree.react-sortable-tree.TreeNode & {  ignoreCollapsed :boolean | undefined} */
 @js.native
-trait TreeNodeignoreCollapsedbo extends js.Object {
+trait TreeNodeignoreCollapsedbo extends StObject {
   
   var ignoreCollapsed: js.UndefOr[Boolean] = js.native
   
@@ -22,27 +23,15 @@ object TreeNodeignoreCollapsedbo {
   }
   
   @scala.inline
-  implicit class TreeNodeignoreCollapsedboOps[Self <: TreeNodeignoreCollapsedbo] (val x: Self) extends AnyVal {
+  implicit class TreeNodeignoreCollapsedboMutableBuilder[Self <: TreeNodeignoreCollapsedbo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNode(value: TreeItem): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIgnoreCollapsed(value: Boolean): Self = this.set("ignoreCollapsed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreCollapsed: Self = this.set("ignoreCollapsed", js.undefined)
+    def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

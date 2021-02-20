@@ -1,12 +1,13 @@
 package typings.puppeteer.mod
 
 import typings.puppeteer.anon.ErrorText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Request extends js.Object {
+trait Request extends StObject {
   
   /**
     * Aborts request.

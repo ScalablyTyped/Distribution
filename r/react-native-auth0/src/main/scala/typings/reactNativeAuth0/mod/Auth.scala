@@ -1,12 +1,13 @@
 package typings.reactNativeAuth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-auth0", "Auth")
 @js.native
-class Auth () extends js.Object {
+class Auth () extends StObject {
   
   def authorizeUrl(params: AuthorizeUrlParams): String = js.native
   

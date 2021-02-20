@@ -1,11 +1,12 @@
 package typings.awsSdk.sqsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendMessageBatchResult extends js.Object {
+trait SendMessageBatchResult extends StObject {
   
   /**
     * A list of  BatchResultErrorEntry  items with error details about each message that can't be enqueued.
@@ -26,30 +27,18 @@ object SendMessageBatchResult {
   }
   
   @scala.inline
-  implicit class SendMessageBatchResultOps[Self <: SendMessageBatchResult] (val x: Self) extends AnyVal {
+  implicit class SendMessageBatchResultMutableBuilder[Self <: SendMessageBatchResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailed(value: BatchResultErrorEntryList): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedVarargs(value: BatchResultErrorEntry*): Self = StObject.set(x, "Failed", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuccessful(value: SendMessageBatchResultEntryList): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedVarargs(value: BatchResultErrorEntry*): Self = this.set("Failed", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailed(value: BatchResultErrorEntryList): Self = this.set("Failed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccessfulVarargs(value: SendMessageBatchResultEntry*): Self = this.set("Successful", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuccessful(value: SendMessageBatchResultEntryList): Self = this.set("Successful", value.asInstanceOf[js.Any])
+    def setSuccessfulVarargs(value: SendMessageBatchResultEntry*): Self = StObject.set(x, "Successful", js.Array(value :_*))
   }
 }

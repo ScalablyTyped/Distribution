@@ -1,50 +1,43 @@
 package typings.grumblerScripts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grumbler-scripts/config/constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
+object constantsMod {
   
   @js.native
-  sealed trait ENV extends js.Object
+  sealed trait ENV extends StObject
+  @JSImport("grumbler-scripts/config/constants", "ENV")
   @js.native
-  object ENV extends js.Object {
+  object ENV extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[ENV with String] = js.native
     
     @js.native
     sealed trait DEMO extends ENV
-    /* "demo" */ @js.native
-    object DEMO extends TopLevel[DEMO with String]
+    /* "demo" */ val DEMO: typings.grumblerScripts.constantsMod.ENV.DEMO with String = js.native
     
     @js.native
     sealed trait LOCAL extends ENV
-    /* "local" */ @js.native
-    object LOCAL extends TopLevel[LOCAL with String]
+    /* "local" */ val LOCAL: typings.grumblerScripts.constantsMod.ENV.LOCAL with String = js.native
     
     @js.native
     sealed trait PRODUCTION extends ENV
-    /* "production" */ @js.native
-    object PRODUCTION extends TopLevel[PRODUCTION with String]
+    /* "production" */ val PRODUCTION: typings.grumblerScripts.constantsMod.ENV.PRODUCTION with String = js.native
     
     @js.native
     sealed trait SANDBOX extends ENV
-    /* "sandbox" */ @js.native
-    object SANDBOX extends TopLevel[SANDBOX with String]
+    /* "sandbox" */ val SANDBOX: typings.grumblerScripts.constantsMod.ENV.SANDBOX with String = js.native
     
     @js.native
     sealed trait STAGE extends ENV
-    /* "stage" */ @js.native
-    object STAGE extends TopLevel[STAGE with String]
+    /* "stage" */ val STAGE: typings.grumblerScripts.constantsMod.ENV.STAGE with String = js.native
     
     @js.native
     sealed trait TEST extends ENV
-    /* "test" */ @js.native
-    object TEST extends TopLevel[TEST with String]
+    /* "test" */ val TEST: typings.grumblerScripts.constantsMod.ENV.TEST with String = js.native
   }
 }

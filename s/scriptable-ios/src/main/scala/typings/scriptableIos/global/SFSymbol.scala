@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class SFSymbol protected ()
   extends typings.scriptableIos.SFSymbol
-/* static members */
-@JSGlobal("SFSymbol")
-@js.native
-object SFSymbol extends js.Object {
+object SFSymbol {
   
   /**
     * _Constructs an SF symbol._
@@ -28,5 +26,8 @@ object SFSymbol extends js.Object {
     * @param symbolName - Name of the symbol.
     * @see https://docs.scriptable.app/sfsymbol/#named
     */
+  /* static member */
+  @JSGlobal("SFSymbol.named")
+  @js.native
   def named(symbolName: String): typings.scriptableIos.SFSymbol = js.native
 }

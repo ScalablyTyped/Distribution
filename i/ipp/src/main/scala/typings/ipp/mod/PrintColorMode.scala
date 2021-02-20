@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.`process-bi-level`
   - typings.ipp.ippStrings.`process-monochrome`
 */
-trait PrintColorMode extends js.Object
+trait PrintColorMode extends StObject
 object PrintColorMode {
   
   @scala.inline

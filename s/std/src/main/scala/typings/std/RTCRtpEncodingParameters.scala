@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,60 +31,48 @@ object RTCRtpEncodingParameters {
   }
   
   @scala.inline
-  implicit class RTCRtpEncodingParametersOps[Self <: RTCRtpEncodingParameters] (val x: Self) extends AnyVal {
+  implicit class RTCRtpEncodingParametersMutableBuilder[Self <: RTCRtpEncodingParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: scala.Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodecPayloadType(value: Double): Self = StObject.set(x, "codecPayloadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: scala.Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setCodecPayloadTypeUndefined: Self = StObject.set(x, "codecPayloadType", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setDtx(value: RTCDtxStatus): Self = StObject.set(x, "dtx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodecPayloadType(value: Double): Self = this.set("codecPayloadType", value.asInstanceOf[js.Any])
+    def setDtxUndefined: Self = StObject.set(x, "dtx", js.undefined)
     
     @scala.inline
-    def deleteCodecPayloadType: Self = this.set("codecPayloadType", js.undefined)
+    def setMaxBitrate(value: Double): Self = StObject.set(x, "maxBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDtx(value: RTCDtxStatus): Self = this.set("dtx", value.asInstanceOf[js.Any])
+    def setMaxBitrateUndefined: Self = StObject.set(x, "maxBitrate", js.undefined)
     
     @scala.inline
-    def deleteDtx: Self = this.set("dtx", js.undefined)
+    def setMaxFramerate(value: Double): Self = StObject.set(x, "maxFramerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBitrate(value: Double): Self = this.set("maxBitrate", value.asInstanceOf[js.Any])
+    def setMaxFramerateUndefined: Self = StObject.set(x, "maxFramerate", js.undefined)
     
     @scala.inline
-    def deleteMaxBitrate: Self = this.set("maxBitrate", js.undefined)
+    def setPtime(value: Double): Self = StObject.set(x, "ptime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFramerate(value: Double): Self = this.set("maxFramerate", value.asInstanceOf[js.Any])
+    def setPtimeUndefined: Self = StObject.set(x, "ptime", js.undefined)
     
     @scala.inline
-    def deleteMaxFramerate: Self = this.set("maxFramerate", js.undefined)
+    def setScaleResolutionDownBy(value: Double): Self = StObject.set(x, "scaleResolutionDownBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPtime(value: Double): Self = this.set("ptime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePtime: Self = this.set("ptime", js.undefined)
-    
-    @scala.inline
-    def setScaleResolutionDownBy(value: Double): Self = this.set("scaleResolutionDownBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleResolutionDownBy: Self = this.set("scaleResolutionDownBy", js.undefined)
+    def setScaleResolutionDownByUndefined: Self = StObject.set(x, "scaleResolutionDownBy", js.undefined)
   }
 }

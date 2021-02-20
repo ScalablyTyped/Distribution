@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StickerSet extends js.Object {
+trait StickerSet extends StObject {
   
   var contains_masks: Boolean = js.native
   
@@ -24,33 +25,21 @@ object StickerSet {
   }
   
   @scala.inline
-  implicit class StickerSetOps[Self <: StickerSet] (val x: Self) extends AnyVal {
+  implicit class StickerSetMutableBuilder[Self <: StickerSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains_masks(value: Boolean): Self = StObject.set(x, "contains_masks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStickers(value: js.Array[Sticker]): Self = StObject.set(x, "stickers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContains_masks(value: Boolean): Self = this.set("contains_masks", value.asInstanceOf[js.Any])
+    def setStickersVarargs(value: Sticker*): Self = StObject.set(x, "stickers", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStickersVarargs(value: Sticker*): Self = this.set("stickers", js.Array(value :_*))
-    
-    @scala.inline
-    def setStickers(value: js.Array[Sticker]): Self = this.set("stickers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

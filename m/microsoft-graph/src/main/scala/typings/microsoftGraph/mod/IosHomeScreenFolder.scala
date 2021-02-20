@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object IosHomeScreenFolder {
   }
   
   @scala.inline
-  implicit class IosHomeScreenFolderOps[Self <: IosHomeScreenFolder] (val x: Self) extends AnyVal {
+  implicit class IosHomeScreenFolderMutableBuilder[Self <: IosHomeScreenFolder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPages(value: js.Array[IosHomeScreenFolderPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPagesVarargs(value: IosHomeScreenFolderPage*): Self = this.set("pages", js.Array(value :_*))
-    
-    @scala.inline
-    def setPages(value: js.Array[IosHomeScreenFolderPage]): Self = this.set("pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePages: Self = this.set("pages", js.undefined)
+    def setPagesVarargs(value: IosHomeScreenFolderPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
   }
 }

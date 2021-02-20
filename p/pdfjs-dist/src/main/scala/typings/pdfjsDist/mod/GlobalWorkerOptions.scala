@@ -1,11 +1,12 @@
 package typings.pdfjsDist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalWorkerOptions extends js.Object {
+trait GlobalWorkerOptions extends StObject {
   
   var workerSrc: String = js.native
 }
@@ -18,21 +19,9 @@ object GlobalWorkerOptions {
   }
   
   @scala.inline
-  implicit class GlobalWorkerOptionsOps[Self <: GlobalWorkerOptions] (val x: Self) extends AnyVal {
+  implicit class GlobalWorkerOptionsMutableBuilder[Self <: GlobalWorkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkerSrc(value: String): Self = this.set("workerSrc", value.asInstanceOf[js.Any])
+    def setWorkerSrc(value: String): Self = StObject.set(x, "workerSrc", value.asInstanceOf[js.Any])
   }
 }

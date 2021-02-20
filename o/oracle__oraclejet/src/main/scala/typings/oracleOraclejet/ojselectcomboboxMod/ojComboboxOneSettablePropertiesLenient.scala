@@ -23,6 +23,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.pending
 import typings.oracleOraclejet.oracleOraclejetStrings.rawValue
 import typings.oracleOraclejet.oracleOraclejetStrings.valid
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,201 +96,189 @@ object ojComboboxOneSettablePropertiesLenient {
   }
   
   @scala.inline
-  implicit class ojComboboxOneSettablePropertiesLenientOps[Self <: ojComboboxOneSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojComboboxOneSettablePropertiesLenient[K, D])) extends AnyVal {
+  implicit class ojComboboxOneSettablePropertiesLenientMutableBuilder[Self <: ojComboboxOneSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojComboboxOneSettablePropertiesLenient[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncValidators(value: js.Array[AsyncValidator[_]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsyncValidatorsVarargs(value: AsyncValidator[js.Any]*): Self = StObject.set(x, "asyncValidators", js.Array(value :_*))
     
     @scala.inline
-    def setAsyncValidatorsVarargs(value: AsyncValidator[js.Any]*): Self = this.set("asyncValidators", js.Array(value :_*))
+    def setConverter(value: Converter[_] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncValidators(value: js.Array[AsyncValidator[_]]): Self = this.set("asyncValidators", value.asInstanceOf[js.Any])
+    def setConverterNull: Self = StObject.set(x, "converter", null)
     
     @scala.inline
-    def deleteAsyncValidators: Self = this.set("asyncValidators", js.undefined)
+    def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
     
     @scala.inline
-    def setConverter(value: Converter[_] | RegisteredConverter): Self = this.set("converter", value.asInstanceOf[js.Any])
+    def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConverter: Self = this.set("converter", js.undefined)
+    def setDescribedByNull: Self = StObject.set(x, "describedBy", null)
     
     @scala.inline
-    def setConverterNull: Self = this.set("converter", null)
+    def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
     
     @scala.inline
-    def setDescribedBy(value: String): Self = this.set("describedBy", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescribedBy: Self = this.set("describedBy", js.undefined)
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setDescribedByNull: Self = this.set("describedBy", null)
+    def setDisplayOptions(value: ConverterHint): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFilterOnOpen(value: none | rawValue): Self = StObject.set(x, "filterOnOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayOptions(value: ConverterHint): Self = this.set("displayOptions", value.asInstanceOf[js.Any])
+    def setFilterOnOpenUndefined: Self = StObject.set(x, "filterOnOpen", js.undefined)
     
     @scala.inline
-    def deleteDisplayOptions: Self = this.set("displayOptions", js.undefined)
+    def setHelp(value: Instruction): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterOnOpen(value: none | rawValue): Self = this.set("filterOnOpen", value.asInstanceOf[js.Any])
+    def setHelpHints(value: Definition): Self = StObject.set(x, "helpHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilterOnOpen: Self = this.set("filterOnOpen", js.undefined)
+    def setHelpHintsUndefined: Self = StObject.set(x, "helpHints", js.undefined)
     
     @scala.inline
-    def setHelp(value: Instruction): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
     @scala.inline
-    def deleteHelp: Self = this.set("help", js.undefined)
+    def setLabelHint(value: String): Self = StObject.set(x, "labelHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpHints(value: Definition): Self = this.set("helpHints", value.asInstanceOf[js.Any])
+    def setLabelHintUndefined: Self = StObject.set(x, "labelHint", js.undefined)
     
     @scala.inline
-    def deleteHelpHints: Self = this.set("helpHints", js.undefined)
+    def setMessagesCustom(value: js.Array[^]): Self = StObject.set(x, "messagesCustom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelHint(value: String): Self = this.set("labelHint", value.asInstanceOf[js.Any])
+    def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
     
     @scala.inline
-    def deleteLabelHint: Self = this.set("labelHint", js.undefined)
+    def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesCustomVarargs(value: ^ *): Self = this.set("messagesCustom", js.Array(value :_*))
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesCustom(value: js.Array[^]): Self = this.set("messagesCustom", value.asInstanceOf[js.Any])
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
     @scala.inline
-    def deleteMessagesCustom: Self = this.set("messagesCustom", js.undefined)
+    def setOptionRenderer(value: /* param0 */ OptionContext => Element): Self = StObject.set(x, "optionRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    def setOptionRendererNull: Self = StObject.set(x, "optionRenderer", null)
     
     @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
-    
-    @scala.inline
-    def setOptionRenderer(value: /* param0 */ OptionContext => Element): Self = this.set("optionRenderer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOptionRenderer: Self = this.set("optionRenderer", js.undefined)
-    
-    @scala.inline
-    def setOptionRendererNull: Self = this.set("optionRenderer", null)
-    
-    @scala.inline
-    def setOptionsVarargs(
-      value: (typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup)*
-    ): Self = this.set("options", js.Array(value :_*))
+    def setOptionRendererUndefined: Self = StObject.set(x, "optionRenderer", js.undefined)
     
     @scala.inline
     def setOptions(
       value: (js.Array[
           typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
         ]) | (DataProvider[K, D])
-    ): Self = this.set("options", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsKeys(value: Children): Self = StObject.set(x, "optionsKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsNull: Self = this.set("options", null)
+    def setOptionsKeysUndefined: Self = StObject.set(x, "optionsKeys", js.undefined)
     
     @scala.inline
-    def setOptionsKeys(value: Children): Self = this.set("optionsKeys", value.asInstanceOf[js.Any])
+    def setOptionsNull: Self = StObject.set(x, "options", null)
     
     @scala.inline
-    def deleteOptionsKeys: Self = this.set("optionsKeys", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setPickerAttributes(value: Class): Self = this.set("pickerAttributes", value.asInstanceOf[js.Any])
+    def setOptionsVarargs(
+      value: (typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup)*
+    ): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def deletePickerAttributes: Self = this.set("pickerAttributes", js.undefined)
+    def setPickerAttributes(value: Class): Self = StObject.set(x, "pickerAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setPickerAttributesUndefined: Self = StObject.set(x, "pickerAttributes", js.undefined)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderNull: Self = this.set("placeholder", null)
+    def setPlaceholderNull: Self = StObject.set(x, "placeholder", null)
     
     @scala.inline
-    def setRawValue(value: String): Self = this.set("rawValue", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteRawValue: Self = this.set("rawValue", js.undefined)
+    def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawValueNull: Self = this.set("rawValue", null)
+    def setRawValueNull: Self = StObject.set(x, "rawValue", null)
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setRawValueUndefined: Self = StObject.set(x, "rawValue", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslations(value: FilterFurther): Self = this.set("translations", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteTranslations: Self = this.set("translations", js.undefined)
+    def setTranslations(value: FilterFurther): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValid(value: valid | pending | invalidHidden | invalidShown): Self = this.set("valid", value.asInstanceOf[js.Any])
+    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
     @scala.inline
-    def deleteValid: Self = this.set("valid", js.undefined)
+    def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidatorsVarargs(value: (Validator[js.Any] | RegisteredValidator)*): Self = this.set("validators", js.Array(value :_*))
+    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     
     @scala.inline
-    def setValidators(value: js.Array[Validator[_] | RegisteredValidator]): Self = this.set("validators", value.asInstanceOf[js.Any])
+    def setValidators(value: js.Array[Validator[_] | RegisteredValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidators: Self = this.set("validators", js.undefined)
+    def setValidatorsNull: Self = StObject.set(x, "validators", null)
     
     @scala.inline
-    def setValidatorsNull: Self = this.set("validators", null)
+    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValidatorsVarargs(value: (Validator[js.Any] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value :_*))
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueOption(value: LabelValue): Self = this.set("valueOption", value.asInstanceOf[js.Any])
+    def setValueOption(value: LabelValue): Self = StObject.set(x, "valueOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValueOption: Self = this.set("valueOption", js.undefined)
+    def setValueOptionUndefined: Self = StObject.set(x, "valueOption", js.undefined)
+    
+    @scala.inline
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

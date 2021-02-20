@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStreetsideOptions extends js.Object {
+trait IStreetsideOptions extends StObject {
   
   /** A boolean indicating if the ability to navigate between image bubbles should be disabled in streetside map mode. Default: false */
   var disablePanoramaNavigation: js.UndefOr[Boolean] = js.native
@@ -57,90 +58,78 @@ object IStreetsideOptions {
   }
   
   @scala.inline
-  implicit class IStreetsideOptionsOps[Self <: IStreetsideOptions] (val x: Self) extends AnyVal {
+  implicit class IStreetsideOptionsMutableBuilder[Self <: IStreetsideOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisablePanoramaNavigation(value: Boolean): Self = StObject.set(x, "disablePanoramaNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisablePanoramaNavigationUndefined: Self = StObject.set(x, "disablePanoramaNavigation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationToLookAt(value: Location): Self = StObject.set(x, "locationToLookAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePanoramaNavigation(value: Boolean): Self = this.set("disablePanoramaNavigation", value.asInstanceOf[js.Any])
+    def setLocationToLookAtUndefined: Self = StObject.set(x, "locationToLookAt", js.undefined)
     
     @scala.inline
-    def deleteDisablePanoramaNavigation: Self = this.set("disablePanoramaNavigation", js.undefined)
+    def setOnErrorLoading(value: () => Unit): Self = StObject.set(x, "onErrorLoading", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLocationToLookAt(value: Location): Self = this.set("locationToLookAt", value.asInstanceOf[js.Any])
+    def setOnErrorLoadingUndefined: Self = StObject.set(x, "onErrorLoading", js.undefined)
     
     @scala.inline
-    def deleteLocationToLookAt: Self = this.set("locationToLookAt", js.undefined)
+    def setOnSuccessLoading(value: () => Unit): Self = StObject.set(x, "onSuccessLoading", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnErrorLoading(value: () => Unit): Self = this.set("onErrorLoading", js.Any.fromFunction0(value))
+    def setOnSuccessLoadingUndefined: Self = StObject.set(x, "onSuccessLoading", js.undefined)
     
     @scala.inline
-    def deleteOnErrorLoading: Self = this.set("onErrorLoading", js.undefined)
+    def setOverviewMapMode(value: OverviewMapMode): Self = StObject.set(x, "overviewMapMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSuccessLoading(value: () => Unit): Self = this.set("onSuccessLoading", js.Any.fromFunction0(value))
+    def setOverviewMapModeUndefined: Self = StObject.set(x, "overviewMapMode", js.undefined)
     
     @scala.inline
-    def deleteOnSuccessLoading: Self = this.set("onSuccessLoading", js.undefined)
+    def setPanoramaInfo(value: IPanoramaInfo): Self = StObject.set(x, "panoramaInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverviewMapMode(value: OverviewMapMode): Self = this.set("overviewMapMode", value.asInstanceOf[js.Any])
+    def setPanoramaInfoUndefined: Self = StObject.set(x, "panoramaInfo", js.undefined)
     
     @scala.inline
-    def deleteOverviewMapMode: Self = this.set("overviewMapMode", js.undefined)
+    def setPanoramaLookupRadius(value: Double): Self = StObject.set(x, "panoramaLookupRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanoramaInfo(value: IPanoramaInfo): Self = this.set("panoramaInfo", value.asInstanceOf[js.Any])
+    def setPanoramaLookupRadiusUndefined: Self = StObject.set(x, "panoramaLookupRadius", js.undefined)
     
     @scala.inline
-    def deletePanoramaInfo: Self = this.set("panoramaInfo", js.undefined)
+    def setShowCurrentAddress(value: Boolean): Self = StObject.set(x, "showCurrentAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanoramaLookupRadius(value: Double): Self = this.set("panoramaLookupRadius", value.asInstanceOf[js.Any])
+    def setShowCurrentAddressUndefined: Self = StObject.set(x, "showCurrentAddress", js.undefined)
     
     @scala.inline
-    def deletePanoramaLookupRadius: Self = this.set("panoramaLookupRadius", js.undefined)
+    def setShowExitButton(value: Boolean): Self = StObject.set(x, "showExitButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCurrentAddress(value: Boolean): Self = this.set("showCurrentAddress", value.asInstanceOf[js.Any])
+    def setShowExitButtonUndefined: Self = StObject.set(x, "showExitButton", js.undefined)
     
     @scala.inline
-    def deleteShowCurrentAddress: Self = this.set("showCurrentAddress", js.undefined)
+    def setShowHeadingCompass(value: Boolean): Self = StObject.set(x, "showHeadingCompass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowExitButton(value: Boolean): Self = this.set("showExitButton", value.asInstanceOf[js.Any])
+    def setShowHeadingCompassUndefined: Self = StObject.set(x, "showHeadingCompass", js.undefined)
     
     @scala.inline
-    def deleteShowExitButton: Self = this.set("showExitButton", js.undefined)
+    def setShowProblemReporting(value: Boolean): Self = StObject.set(x, "showProblemReporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHeadingCompass(value: Boolean): Self = this.set("showHeadingCompass", value.asInstanceOf[js.Any])
+    def setShowProblemReportingUndefined: Self = StObject.set(x, "showProblemReporting", js.undefined)
     
     @scala.inline
-    def deleteShowHeadingCompass: Self = this.set("showHeadingCompass", js.undefined)
+    def setShowZoomButtons(value: Boolean): Self = StObject.set(x, "showZoomButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowProblemReporting(value: Boolean): Self = this.set("showProblemReporting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowProblemReporting: Self = this.set("showProblemReporting", js.undefined)
-    
-    @scala.inline
-    def setShowZoomButtons(value: Boolean): Self = this.set("showZoomButtons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowZoomButtons: Self = this.set("showZoomButtons", js.undefined)
+    def setShowZoomButtonsUndefined: Self = StObject.set(x, "showZoomButtons", js.undefined)
   }
 }

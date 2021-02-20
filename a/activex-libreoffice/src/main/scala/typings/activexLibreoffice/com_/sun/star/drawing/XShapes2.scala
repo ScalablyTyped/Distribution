@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since LibreOffice 4.2
   */
 @js.native
-trait XShapes2 extends js.Object {
+trait XShapes2 extends StObject {
   
   /**
     * Insert a new shape to the bottom of the stack.
@@ -34,24 +35,12 @@ object XShapes2 {
   }
   
   @scala.inline
-  implicit class XShapes2Ops[Self <: XShapes2] (val x: Self) extends AnyVal {
+  implicit class XShapes2MutableBuilder[Self <: XShapes2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddBottom(value: XShape => Unit): Self = StObject.set(x, "addBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddBottom(value: XShape => Unit): Self = this.set("addBottom", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAddTop(value: XShape => Unit): Self = this.set("addTop", js.Any.fromFunction1(value))
+    def setAddTop(value: XShape => Unit): Self = StObject.set(x, "addTop", js.Any.fromFunction1(value))
   }
 }

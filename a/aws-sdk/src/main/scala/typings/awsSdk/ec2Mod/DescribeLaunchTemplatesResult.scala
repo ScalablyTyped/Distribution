@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLaunchTemplatesResult extends js.Object {
+trait DescribeLaunchTemplatesResult extends StObject {
   
   /**
     * Information about the launch templates.
@@ -26,33 +27,21 @@ object DescribeLaunchTemplatesResult {
   }
   
   @scala.inline
-  implicit class DescribeLaunchTemplatesResultOps[Self <: DescribeLaunchTemplatesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeLaunchTemplatesResultMutableBuilder[Self <: DescribeLaunchTemplatesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLaunchTemplates(value: LaunchTemplateSet): Self = StObject.set(x, "LaunchTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLaunchTemplatesUndefined: Self = StObject.set(x, "LaunchTemplates", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchTemplatesVarargs(value: LaunchTemplate*): Self = StObject.set(x, "LaunchTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setLaunchTemplatesVarargs(value: LaunchTemplate*): Self = this.set("LaunchTemplates", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplates(value: LaunchTemplateSet): Self = this.set("LaunchTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchTemplates: Self = this.set("LaunchTemplates", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

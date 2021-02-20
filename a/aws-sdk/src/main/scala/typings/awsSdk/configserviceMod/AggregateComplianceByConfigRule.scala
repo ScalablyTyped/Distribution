@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregateComplianceByConfigRule extends js.Object {
+trait AggregateComplianceByConfigRule extends StObject {
   
   /**
     * The 12-digit account ID of the source account.
@@ -36,42 +37,30 @@ object AggregateComplianceByConfigRule {
   }
   
   @scala.inline
-  implicit class AggregateComplianceByConfigRuleOps[Self <: AggregateComplianceByConfigRule] (val x: Self) extends AnyVal {
+  implicit class AggregateComplianceByConfigRuleMutableBuilder[Self <: AggregateComplianceByConfigRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    def setCompliance(value: Compliance): Self = StObject.set(x, "Compliance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRegion(value: AwsRegion): Self = this.set("AwsRegion", value.asInstanceOf[js.Any])
+    def setComplianceUndefined: Self = StObject.set(x, "Compliance", js.undefined)
     
     @scala.inline
-    def deleteAwsRegion: Self = this.set("AwsRegion", js.undefined)
+    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompliance(value: Compliance): Self = this.set("Compliance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompliance: Self = this.set("Compliance", js.undefined)
-    
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigRuleName: Self = this.set("ConfigRuleName", js.undefined)
+    def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.coinbase.coinbaseStrings.exchange_withdrawal
   - typings.coinbase.coinbaseStrings.vault_withdrawal
 */
-trait TransactionType extends js.Object
+trait TransactionType extends StObject
 object TransactionType {
   
   @scala.inline

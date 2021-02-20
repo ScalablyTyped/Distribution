@@ -1,5 +1,6 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object ClientGrantPage {
   }
   
   @scala.inline
-  implicit class ClientGrantPageOps[Self <: ClientGrantPage] (val x: Self) extends AnyVal {
+  implicit class ClientGrantPageMutableBuilder[Self <: ClientGrantPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_grants(value: js.Array[ClientGrant]): Self = StObject.set(x, "client_grants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClient_grantsVarargs(value: ClientGrant*): Self = this.set("client_grants", js.Array(value :_*))
-    
-    @scala.inline
-    def setClient_grants(value: js.Array[ClientGrant]): Self = this.set("client_grants", value.asInstanceOf[js.Any])
+    def setClient_grantsVarargs(value: ClientGrant*): Self = StObject.set(x, "client_grants", js.Array(value :_*))
   }
 }

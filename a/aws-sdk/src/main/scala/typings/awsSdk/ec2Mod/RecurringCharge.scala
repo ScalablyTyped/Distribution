@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecurringCharge extends js.Object {
+trait RecurringCharge extends StObject {
   
   /**
     * The amount of the recurring charge.
@@ -26,30 +27,18 @@ object RecurringCharge {
   }
   
   @scala.inline
-  implicit class RecurringChargeOps[Self <: RecurringCharge] (val x: Self) extends AnyVal {
+  implicit class RecurringChargeMutableBuilder[Self <: RecurringCharge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "Amount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrequency(value: RecurringChargeFrequency): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("Amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmount: Self = this.set("Amount", js.undefined)
-    
-    @scala.inline
-    def setFrequency(value: RecurringChargeFrequency): Self = this.set("Frequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrequency: Self = this.set("Frequency", js.undefined)
+    def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
   }
 }

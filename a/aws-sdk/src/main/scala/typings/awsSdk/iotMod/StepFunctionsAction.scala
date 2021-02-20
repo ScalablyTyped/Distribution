@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepFunctionsAction extends js.Object {
+trait StepFunctionsAction extends StObject {
   
   /**
     * (Optional) A name will be given to the state machine execution consisting of this prefix followed by a UUID. Step Functions automatically creates a unique name for each state machine execution if one is not provided.
@@ -31,30 +32,18 @@ object StepFunctionsAction {
   }
   
   @scala.inline
-  implicit class StepFunctionsActionOps[Self <: StepFunctionsAction] (val x: Self) extends AnyVal {
+  implicit class StepFunctionsActionMutableBuilder[Self <: StepFunctionsAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionNamePrefix(value: ExecutionNamePrefix): Self = StObject.set(x, "executionNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionNamePrefixUndefined: Self = StObject.set(x, "executionNamePrefix", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStateMachineName(value: StateMachineName): Self = this.set("stateMachineName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecutionNamePrefix(value: ExecutionNamePrefix): Self = this.set("executionNamePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionNamePrefix: Self = this.set("executionNamePrefix", js.undefined)
+    def setStateMachineName(value: StateMachineName): Self = StObject.set(x, "stateMachineName", value.asInstanceOf[js.Any])
   }
 }

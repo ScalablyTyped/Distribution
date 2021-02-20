@@ -3,12 +3,13 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 import typings.tensorflowTfjsConverter.compiledApiMod.OpDef.IArgDef
 import typings.tensorflowTfjsConverter.compiledApiMod.OpDef.IAttrDef
 import typings.tensorflowTfjsConverter.compiledApiMod.OpDef.IOpDeprecation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOpDef extends js.Object {
+trait IOpDef extends StObject {
   
   /** OpDef allowsUninitializedInput */
   var allowsUninitializedInput: js.UndefOr[Boolean | Null] = js.native
@@ -52,126 +53,114 @@ object IOpDef {
   }
   
   @scala.inline
-  implicit class IOpDefOps[Self <: IOpDef] (val x: Self) extends AnyVal {
+  implicit class IOpDefMutableBuilder[Self <: IOpDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowsUninitializedInput(value: Boolean): Self = StObject.set(x, "allowsUninitializedInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowsUninitializedInputNull: Self = StObject.set(x, "allowsUninitializedInput", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowsUninitializedInputUndefined: Self = StObject.set(x, "allowsUninitializedInput", js.undefined)
     
     @scala.inline
-    def setAllowsUninitializedInput(value: Boolean): Self = this.set("allowsUninitializedInput", value.asInstanceOf[js.Any])
+    def setAttr(value: js.Array[IAttrDef]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowsUninitializedInput: Self = this.set("allowsUninitializedInput", js.undefined)
+    def setAttrNull: Self = StObject.set(x, "attr", null)
     
     @scala.inline
-    def setAllowsUninitializedInputNull: Self = this.set("allowsUninitializedInput", null)
+    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
     @scala.inline
-    def setAttrVarargs(value: IAttrDef*): Self = this.set("attr", js.Array(value :_*))
+    def setAttrVarargs(value: IAttrDef*): Self = StObject.set(x, "attr", js.Array(value :_*))
     
     @scala.inline
-    def setAttr(value: js.Array[IAttrDef]): Self = this.set("attr", value.asInstanceOf[js.Any])
+    def setDeprecation(value: IOpDeprecation): Self = StObject.set(x, "deprecation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttr: Self = this.set("attr", js.undefined)
+    def setDeprecationNull: Self = StObject.set(x, "deprecation", null)
     
     @scala.inline
-    def setAttrNull: Self = this.set("attr", null)
+    def setDeprecationUndefined: Self = StObject.set(x, "deprecation", js.undefined)
     
     @scala.inline
-    def setDeprecation(value: IOpDeprecation): Self = this.set("deprecation", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeprecation: Self = this.set("deprecation", js.undefined)
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def setDeprecationNull: Self = this.set("deprecation", null)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setInputArg(value: js.Array[IArgDef]): Self = StObject.set(x, "inputArg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setInputArgNull: Self = StObject.set(x, "inputArg", null)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setInputArgUndefined: Self = StObject.set(x, "inputArg", js.undefined)
     
     @scala.inline
-    def setInputArgVarargs(value: IArgDef*): Self = this.set("inputArg", js.Array(value :_*))
+    def setInputArgVarargs(value: IArgDef*): Self = StObject.set(x, "inputArg", js.Array(value :_*))
     
     @scala.inline
-    def setInputArg(value: js.Array[IArgDef]): Self = this.set("inputArg", value.asInstanceOf[js.Any])
+    def setIsAggregate(value: Boolean): Self = StObject.set(x, "isAggregate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputArg: Self = this.set("inputArg", js.undefined)
+    def setIsAggregateNull: Self = StObject.set(x, "isAggregate", null)
     
     @scala.inline
-    def setInputArgNull: Self = this.set("inputArg", null)
+    def setIsAggregateUndefined: Self = StObject.set(x, "isAggregate", js.undefined)
     
     @scala.inline
-    def setIsAggregate(value: Boolean): Self = this.set("isAggregate", value.asInstanceOf[js.Any])
+    def setIsCommutative(value: Boolean): Self = StObject.set(x, "isCommutative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAggregate: Self = this.set("isAggregate", js.undefined)
+    def setIsCommutativeNull: Self = StObject.set(x, "isCommutative", null)
     
     @scala.inline
-    def setIsAggregateNull: Self = this.set("isAggregate", null)
+    def setIsCommutativeUndefined: Self = StObject.set(x, "isCommutative", js.undefined)
     
     @scala.inline
-    def setIsCommutative(value: Boolean): Self = this.set("isCommutative", value.asInstanceOf[js.Any])
+    def setIsStateful(value: Boolean): Self = StObject.set(x, "isStateful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsCommutative: Self = this.set("isCommutative", js.undefined)
+    def setIsStatefulNull: Self = StObject.set(x, "isStateful", null)
     
     @scala.inline
-    def setIsCommutativeNull: Self = this.set("isCommutative", null)
+    def setIsStatefulUndefined: Self = StObject.set(x, "isStateful", js.undefined)
     
     @scala.inline
-    def setIsStateful(value: Boolean): Self = this.set("isStateful", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsStateful: Self = this.set("isStateful", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setIsStatefulNull: Self = this.set("isStateful", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOutputArg(value: js.Array[IArgDef]): Self = StObject.set(x, "outputArg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOutputArgNull: Self = StObject.set(x, "outputArg", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setOutputArgUndefined: Self = StObject.set(x, "outputArg", js.undefined)
     
     @scala.inline
-    def setOutputArgVarargs(value: IArgDef*): Self = this.set("outputArg", js.Array(value :_*))
+    def setOutputArgVarargs(value: IArgDef*): Self = StObject.set(x, "outputArg", js.Array(value :_*))
     
     @scala.inline
-    def setOutputArg(value: js.Array[IArgDef]): Self = this.set("outputArg", value.asInstanceOf[js.Any])
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputArg: Self = this.set("outputArg", js.undefined)
+    def setSummaryNull: Self = StObject.set(x, "summary", null)
     
     @scala.inline
-    def setOutputArgNull: Self = this.set("outputArg", null)
-    
-    @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
-    
-    @scala.inline
-    def setSummaryNull: Self = this.set("summary", null)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

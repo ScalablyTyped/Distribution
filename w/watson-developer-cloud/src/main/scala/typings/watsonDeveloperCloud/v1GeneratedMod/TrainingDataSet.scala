@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TrainingDataSet. */
 @js.native
-trait TrainingDataSet extends js.Object {
+trait TrainingDataSet extends StObject {
   
   /** The collection id associated with this training data set. */
   var collection_id: js.UndefOr[String] = js.native
@@ -26,39 +27,27 @@ object TrainingDataSet {
   }
   
   @scala.inline
-  implicit class TrainingDataSetOps[Self <: TrainingDataSet] (val x: Self) extends AnyVal {
+  implicit class TrainingDataSetMutableBuilder[Self <: TrainingDataSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection_id(value: String): Self = this.set("collection_id", value.asInstanceOf[js.Any])
+    def setEnvironment_idUndefined: Self = StObject.set(x, "environment_id", js.undefined)
     
     @scala.inline
-    def deleteCollection_id: Self = this.set("collection_id", js.undefined)
+    def setQueries(value: js.Array[TrainingQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment_id(value: String): Self = this.set("environment_id", value.asInstanceOf[js.Any])
+    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
     @scala.inline
-    def deleteEnvironment_id: Self = this.set("environment_id", js.undefined)
-    
-    @scala.inline
-    def setQueriesVarargs(value: TrainingQuery*): Self = this.set("queries", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueries(value: js.Array[TrainingQuery]): Self = this.set("queries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueries: Self = this.set("queries", js.undefined)
+    def setQueriesVarargs(value: TrainingQuery*): Self = StObject.set(x, "queries", js.Array(value :_*))
   }
 }

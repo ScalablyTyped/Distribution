@@ -5,6 +5,7 @@ import typings.activexDao.activexDaoNumbers.`1`
 import typings.activexDao.activexDaoNumbers.`2`
 import typings.activexDao.activexDaoNumbers.`3`
 import typings.activexDao.activexDaoNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexDao.activexDaoNumbers.`1`
   - typings.activexDao.activexDaoNumbers.`2`
 */
-trait CursorDriverEnum extends js.Object
+trait CursorDriverEnum extends StObject
 object CursorDriverEnum {
   
   @scala.inline

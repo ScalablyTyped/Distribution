@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvisioningPreferences extends js.Object {
+trait ProvisioningPreferences extends StObject {
   
   /**
     * One or more AWS accounts that will have access to the provisioned product. Applicable only to a CFN_STACKSET provisioned product type. The AWS accounts specified should be within the list of accounts in the STACKSET constraint. To get the list of accounts in the STACKSET constraint, use the DescribeProvisioningParameters operation. If no values are specified, the default value is all accounts from the STACKSET constraint.
@@ -46,60 +47,48 @@ object ProvisioningPreferences {
   }
   
   @scala.inline
-  implicit class ProvisioningPreferencesOps[Self <: ProvisioningPreferences] (val x: Self) extends AnyVal {
+  implicit class ProvisioningPreferencesMutableBuilder[Self <: ProvisioningPreferences] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStackSetAccounts(value: StackSetAccounts): Self = StObject.set(x, "StackSetAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStackSetAccountsUndefined: Self = StObject.set(x, "StackSetAccounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStackSetAccountsVarargs(value: AccountId*): Self = StObject.set(x, "StackSetAccounts", js.Array(value :_*))
     
     @scala.inline
-    def setStackSetAccountsVarargs(value: AccountId*): Self = this.set("StackSetAccounts", js.Array(value :_*))
+    def setStackSetFailureToleranceCount(value: StackSetFailureToleranceCount): Self = StObject.set(x, "StackSetFailureToleranceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackSetAccounts(value: StackSetAccounts): Self = this.set("StackSetAccounts", value.asInstanceOf[js.Any])
+    def setStackSetFailureToleranceCountUndefined: Self = StObject.set(x, "StackSetFailureToleranceCount", js.undefined)
     
     @scala.inline
-    def deleteStackSetAccounts: Self = this.set("StackSetAccounts", js.undefined)
+    def setStackSetFailureTolerancePercentage(value: StackSetFailureTolerancePercentage): Self = StObject.set(x, "StackSetFailureTolerancePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackSetFailureToleranceCount(value: StackSetFailureToleranceCount): Self = this.set("StackSetFailureToleranceCount", value.asInstanceOf[js.Any])
+    def setStackSetFailureTolerancePercentageUndefined: Self = StObject.set(x, "StackSetFailureTolerancePercentage", js.undefined)
     
     @scala.inline
-    def deleteStackSetFailureToleranceCount: Self = this.set("StackSetFailureToleranceCount", js.undefined)
+    def setStackSetMaxConcurrencyCount(value: StackSetMaxConcurrencyCount): Self = StObject.set(x, "StackSetMaxConcurrencyCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackSetFailureTolerancePercentage(value: StackSetFailureTolerancePercentage): Self = this.set("StackSetFailureTolerancePercentage", value.asInstanceOf[js.Any])
+    def setStackSetMaxConcurrencyCountUndefined: Self = StObject.set(x, "StackSetMaxConcurrencyCount", js.undefined)
     
     @scala.inline
-    def deleteStackSetFailureTolerancePercentage: Self = this.set("StackSetFailureTolerancePercentage", js.undefined)
+    def setStackSetMaxConcurrencyPercentage(value: StackSetMaxConcurrencyPercentage): Self = StObject.set(x, "StackSetMaxConcurrencyPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackSetMaxConcurrencyCount(value: StackSetMaxConcurrencyCount): Self = this.set("StackSetMaxConcurrencyCount", value.asInstanceOf[js.Any])
+    def setStackSetMaxConcurrencyPercentageUndefined: Self = StObject.set(x, "StackSetMaxConcurrencyPercentage", js.undefined)
     
     @scala.inline
-    def deleteStackSetMaxConcurrencyCount: Self = this.set("StackSetMaxConcurrencyCount", js.undefined)
+    def setStackSetRegions(value: StackSetRegions): Self = StObject.set(x, "StackSetRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackSetMaxConcurrencyPercentage(value: StackSetMaxConcurrencyPercentage): Self = this.set("StackSetMaxConcurrencyPercentage", value.asInstanceOf[js.Any])
+    def setStackSetRegionsUndefined: Self = StObject.set(x, "StackSetRegions", js.undefined)
     
     @scala.inline
-    def deleteStackSetMaxConcurrencyPercentage: Self = this.set("StackSetMaxConcurrencyPercentage", js.undefined)
-    
-    @scala.inline
-    def setStackSetRegionsVarargs(value: Region*): Self = this.set("StackSetRegions", js.Array(value :_*))
-    
-    @scala.inline
-    def setStackSetRegions(value: StackSetRegions): Self = this.set("StackSetRegions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackSetRegions: Self = this.set("StackSetRegions", js.undefined)
+    def setStackSetRegionsVarargs(value: Region*): Self = StObject.set(x, "StackSetRegions", js.Array(value :_*))
   }
 }

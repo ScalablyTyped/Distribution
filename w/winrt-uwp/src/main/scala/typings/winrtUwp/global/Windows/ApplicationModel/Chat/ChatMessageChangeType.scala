@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the type of change made to a chat message. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChangeType")
 @js.native
-object ChatMessageChangeType extends js.Object {
+object ChatMessageChangeType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType with Double] = js.native

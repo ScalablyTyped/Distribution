@@ -1,9 +1,11 @@
 package typings.twilioVideo.mod
 
 import typings.node.eventsMod.EventEmitter
+import typings.node.eventsMod.EventEmitterOptions
 import typings.std.Map
 import typings.twilioVideo.mod.Participant.Identity
 import typings.twilioVideo.mod.Track.SID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("twilio-video", "Participant")
 @js.native
 class Participant () extends EventEmitter {
+  def this(options: EventEmitterOptions) = this()
   
   var audioTracks: Map[SID, AudioTrackPublication] = js.native
   
@@ -30,9 +33,7 @@ class Participant () extends EventEmitter {
   
   var videoTracks: Map[SID, VideoTrackPublication] = js.native
 }
-@JSImport("twilio-video", "Participant")
-@js.native
-object Participant extends js.Object {
+object Participant {
   
   type Identity = String
   

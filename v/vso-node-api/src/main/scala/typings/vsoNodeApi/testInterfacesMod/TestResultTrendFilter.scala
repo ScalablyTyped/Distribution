@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.testInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestResultTrendFilter extends js.Object {
+trait TestResultTrendFilter extends StObject {
   
   var branchNames: js.Array[String] = js.native
   
@@ -42,54 +43,42 @@ object TestResultTrendFilter {
   }
   
   @scala.inline
-  implicit class TestResultTrendFilterOps[Self <: TestResultTrendFilter] (val x: Self) extends AnyVal {
+  implicit class TestResultTrendFilterMutableBuilder[Self <: TestResultTrendFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranchNames(value: js.Array[String]): Self = StObject.set(x, "branchNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchNamesVarargs(value: String*): Self = StObject.set(x, "branchNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildCount(value: Double): Self = StObject.set(x, "buildCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchNamesVarargs(value: String*): Self = this.set("branchNames", js.Array(value :_*))
+    def setDefinitionIds(value: js.Array[Double]): Self = StObject.set(x, "definitionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchNames(value: js.Array[String]): Self = this.set("branchNames", value.asInstanceOf[js.Any])
+    def setDefinitionIdsVarargs(value: Double*): Self = StObject.set(x, "definitionIds", js.Array(value :_*))
     
     @scala.inline
-    def setBuildCount(value: Double): Self = this.set("buildCount", value.asInstanceOf[js.Any])
+    def setEnvDefinitionIds(value: js.Array[Double]): Self = StObject.set(x, "envDefinitionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionIdsVarargs(value: Double*): Self = this.set("definitionIds", js.Array(value :_*))
+    def setEnvDefinitionIdsVarargs(value: Double*): Self = StObject.set(x, "envDefinitionIds", js.Array(value :_*))
     
     @scala.inline
-    def setDefinitionIds(value: js.Array[Double]): Self = this.set("definitionIds", value.asInstanceOf[js.Any])
+    def setMaxCompleteDate(value: Date): Self = StObject.set(x, "maxCompleteDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvDefinitionIdsVarargs(value: Double*): Self = this.set("envDefinitionIds", js.Array(value :_*))
+    def setPublishContext(value: String): Self = StObject.set(x, "publishContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvDefinitionIds(value: js.Array[Double]): Self = this.set("envDefinitionIds", value.asInstanceOf[js.Any])
+    def setTestRunTitles(value: js.Array[String]): Self = StObject.set(x, "testRunTitles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCompleteDate(value: Date): Self = this.set("maxCompleteDate", value.asInstanceOf[js.Any])
+    def setTestRunTitlesVarargs(value: String*): Self = StObject.set(x, "testRunTitles", js.Array(value :_*))
     
     @scala.inline
-    def setPublishContext(value: String): Self = this.set("publishContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestRunTitlesVarargs(value: String*): Self = this.set("testRunTitles", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestRunTitles(value: js.Array[String]): Self = this.set("testRunTitles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrendDays(value: Double): Self = this.set("trendDays", value.asInstanceOf[js.Any])
+    def setTrendDays(value: Double): Self = StObject.set(x, "trendDays", value.asInstanceOf[js.Any])
   }
 }

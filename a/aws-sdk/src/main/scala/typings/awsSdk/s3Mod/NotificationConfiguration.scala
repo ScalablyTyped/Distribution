@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationConfiguration extends js.Object {
+trait NotificationConfiguration extends StObject {
   
   /**
     * Describes the AWS Lambda functions to invoke and the events for which to invoke them.
@@ -31,45 +32,33 @@ object NotificationConfiguration {
   }
   
   @scala.inline
-  implicit class NotificationConfigurationOps[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
+  implicit class NotificationConfigurationMutableBuilder[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLambdaFunctionConfigurations(value: LambdaFunctionConfigurationList): Self = StObject.set(x, "LambdaFunctionConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLambdaFunctionConfigurationsUndefined: Self = StObject.set(x, "LambdaFunctionConfigurations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLambdaFunctionConfigurationsVarargs(value: LambdaFunctionConfiguration*): Self = StObject.set(x, "LambdaFunctionConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setLambdaFunctionConfigurationsVarargs(value: LambdaFunctionConfiguration*): Self = this.set("LambdaFunctionConfigurations", js.Array(value :_*))
+    def setQueueConfigurations(value: QueueConfigurationList): Self = StObject.set(x, "QueueConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaFunctionConfigurations(value: LambdaFunctionConfigurationList): Self = this.set("LambdaFunctionConfigurations", value.asInstanceOf[js.Any])
+    def setQueueConfigurationsUndefined: Self = StObject.set(x, "QueueConfigurations", js.undefined)
     
     @scala.inline
-    def deleteLambdaFunctionConfigurations: Self = this.set("LambdaFunctionConfigurations", js.undefined)
+    def setQueueConfigurationsVarargs(value: QueueConfiguration*): Self = StObject.set(x, "QueueConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setQueueConfigurationsVarargs(value: QueueConfiguration*): Self = this.set("QueueConfigurations", js.Array(value :_*))
+    def setTopicConfigurations(value: TopicConfigurationList): Self = StObject.set(x, "TopicConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueConfigurations(value: QueueConfigurationList): Self = this.set("QueueConfigurations", value.asInstanceOf[js.Any])
+    def setTopicConfigurationsUndefined: Self = StObject.set(x, "TopicConfigurations", js.undefined)
     
     @scala.inline
-    def deleteQueueConfigurations: Self = this.set("QueueConfigurations", js.undefined)
-    
-    @scala.inline
-    def setTopicConfigurationsVarargs(value: TopicConfiguration*): Self = this.set("TopicConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopicConfigurations(value: TopicConfigurationList): Self = this.set("TopicConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicConfigurations: Self = this.set("TopicConfigurations", js.undefined)
+    def setTopicConfigurationsVarargs(value: TopicConfiguration*): Self = StObject.set(x, "TopicConfigurations", js.Array(value :_*))
   }
 }

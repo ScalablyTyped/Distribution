@@ -1,11 +1,12 @@
 package typings.jqueryAjaxfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryParam extends js.Object {
+trait JQueryParam extends StObject {
   
   /**
     * Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.

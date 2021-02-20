@@ -1,5 +1,6 @@
 package typings.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,51 +31,39 @@ object ForStatement {
   }
   
   @scala.inline
-  implicit class ForStatementOps[Self <: ForStatement] (val x: Self) extends AnyVal {
+  implicit class ForStatementMutableBuilder[Self <: ForStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInit(value: VariableDeclaration | Expression): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitNull: Self = StObject.set(x, "init", null)
     
     @scala.inline
-    def setBody(value: Statement): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def setType(value: typings.estree.estreeStrings.ForStatement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: VariableDeclaration | Expression): Self = this.set("init", value.asInstanceOf[js.Any])
+    def setTestNull: Self = StObject.set(x, "test", null)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
     @scala.inline
-    def setInitNull: Self = this.set("init", null)
+    def setType(value: typings.estree.estreeStrings.ForStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTest(value: Expression): Self = this.set("test", value.asInstanceOf[js.Any])
+    def setUpdate(value: Expression): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
+    def setUpdateNull: Self = StObject.set(x, "update", null)
     
     @scala.inline
-    def setTestNull: Self = this.set("test", null)
-    
-    @scala.inline
-    def setUpdate(value: Expression): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
-    
-    @scala.inline
-    def setUpdateNull: Self = this.set("update", null)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

@@ -1,9 +1,9 @@
 package typings.restify.mod
 
-import typings.bunyan.mod.^
 import typings.node.Buffer
 import typings.spdy.mod.Server_
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,7 +91,7 @@ trait Server
   def listen(args: js.Any*): js.Any = js.native
   
   /** bunyan instance. */
-  var log: ^ = js.native
+  var log: typings.bunyan.mod.^ = js.native
   
   /** Name of the server. */
   var name: String = js.native

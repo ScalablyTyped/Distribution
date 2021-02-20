@@ -8,16 +8,16 @@ import typings.reactNativeNavigation.optionProcessorsStoreMod.OptionProcessorsSt
 import typings.reactNativeNavigation.optionsMod.Options
 import typings.reactNativeNavigation.storeMod.Store
 import typings.reactNativeNavigation.uniqueIdProviderMod.UniqueIdProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-navigation/lib/dist/commands/OptionsProcessor", JSImport.Namespace)
-@js.native
-object optionsProcessorMod extends js.Object {
+object optionsProcessorMod {
   
+  @JSImport("react-native-navigation/lib/dist/commands/OptionsProcessor", "OptionsProcessor")
   @js.native
-  class OptionsProcessor protected () extends js.Object {
+  class OptionsProcessor protected () extends StObject {
     def this(
       store: Store,
       uniqueIdProvider: UniqueIdProvider,

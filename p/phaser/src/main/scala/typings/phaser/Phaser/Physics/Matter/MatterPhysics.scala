@@ -26,6 +26,7 @@ import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
 import typings.phaser.Phaser.Types.Physics.Matter.MatterWorldConfig
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,7 +81,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You can find details, documentation and examples on the Matter JS website: https://brm.io/matter-js/
   */
 @js.native
-trait MatterPhysics extends js.Object {
+trait MatterPhysics extends StObject {
   
   /**
     * An instance of the Matter Factory. This class provides lots of functions for creating a

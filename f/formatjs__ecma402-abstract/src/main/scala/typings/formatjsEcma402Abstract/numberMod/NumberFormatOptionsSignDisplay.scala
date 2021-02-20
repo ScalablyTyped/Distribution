@@ -1,5 +1,6 @@
 package typings.formatjsEcma402Abstract.numberMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.never
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.exceptZero
 */
-trait NumberFormatOptionsSignDisplay extends js.Object
+trait NumberFormatOptionsSignDisplay extends StObject
 object NumberFormatOptionsSignDisplay {
   
   @scala.inline

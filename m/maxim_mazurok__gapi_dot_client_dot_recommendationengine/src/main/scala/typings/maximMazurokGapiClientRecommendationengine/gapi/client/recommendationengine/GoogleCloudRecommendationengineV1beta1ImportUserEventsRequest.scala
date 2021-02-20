@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest extends StObject {
   
   /** Optional. The desired location of errors incurred during the Import. */
   var errorsConfig: js.UndefOr[GoogleCloudRecommendationengineV1beta1ImportErrorsConfig] = js.native
@@ -29,36 +30,24 @@ object GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ImportUserEventsRequestOps[Self <: GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1ImportUserEventsRequestMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorsConfig(value: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig): Self = StObject.set(x, "errorsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorsConfigUndefined: Self = StObject.set(x, "errorsConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputConfig(value: GoogleCloudRecommendationengineV1beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsConfig(value: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig): Self = this.set("errorsConfig", value.asInstanceOf[js.Any])
+    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
     @scala.inline
-    def deleteErrorsConfig: Self = this.set("errorsConfig", js.undefined)
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfig(value: GoogleCloudRecommendationengineV1beta1InputConfig): Self = this.set("inputConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputConfig: Self = this.set("inputConfig", js.undefined)
-    
-    @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

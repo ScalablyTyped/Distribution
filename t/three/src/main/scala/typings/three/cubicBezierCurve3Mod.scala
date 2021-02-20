@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.curveMod.Curve
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/extras/curves/CubicBezierCurve3", JSImport.Namespace)
-@js.native
-object cubicBezierCurve3Mod extends js.Object {
+object cubicBezierCurve3Mod {
   
+  @JSImport("three/src/extras/curves/CubicBezierCurve3", "CubicBezierCurve3")
   @js.native
   class CubicBezierCurve3 protected () extends Curve[Vector3] {
     def this(v0: Vector3, v1: Vector3, v2: Vector3, v3: Vector3) = this()

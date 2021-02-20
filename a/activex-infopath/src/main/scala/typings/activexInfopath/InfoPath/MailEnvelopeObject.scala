@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MailEnvelopeObject extends js.Object {
+trait MailEnvelopeObject extends StObject {
   
   var BCC: String = js.native
   
@@ -37,36 +38,24 @@ object MailEnvelopeObject {
   }
   
   @scala.inline
-  implicit class MailEnvelopeObjectOps[Self <: MailEnvelopeObject] (val x: Self) extends AnyVal {
+  implicit class MailEnvelopeObjectMutableBuilder[Self <: MailEnvelopeObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCC(value: String): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoPathDotMailEnvelopeObject_typekey(value: MailEnvelopeObject): Self = StObject.set(x, "InfoPath.MailEnvelopeObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBCC(value: String): Self = this.set("BCC", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCC(value: String): Self = this.set("CC", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPathDotMailEnvelopeObject_typekey(value: MailEnvelopeObject): Self = this.set("InfoPath.MailEnvelopeObject_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("To", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

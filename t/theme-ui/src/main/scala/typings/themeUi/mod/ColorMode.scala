@@ -1,8 +1,8 @@
 package typings.themeUi.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +61,63 @@ trait ColorMode
     */
   var text: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any = js.native
 }
-@JSImport("theme-ui", "ColorMode")
-@js.native
-object ColorMode
-  extends TopLevel[ComponentType[js.Object]]
+object ColorMode {
+  
+  @JSImport("theme-ui", "ColorMode")
+  @js.native
+  val ^ : ComponentType[js.Object] = js.native
+  
+  @scala.inline
+  implicit class ColorModeMutableBuilder[Self <: ColorMode] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAccent(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
+    ): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAccentUndefined: Self = StObject.set(x, "accent", js.undefined)
+    
+    @scala.inline
+    def setBackground(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
+    ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHighlight(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
+    ): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    
+    @scala.inline
+    def setMuted(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
+    ): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    
+    @scala.inline
+    def setPrimary(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
+    ): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    
+    @scala.inline
+    def setSecondary(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
+    ): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    
+    @scala.inline
+    def setText(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
+    ): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
+}

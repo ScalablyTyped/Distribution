@@ -53,23 +53,24 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import typings.vsoNodeApi.vssinterfacesMod.JsonPatchDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/GitApi", JSImport.Namespace)
-@js.native
-object gitApiMod extends js.Object {
+object gitApiMod {
   
+  @JSImport("vso-node-api/GitApi", "GitApi")
   @js.native
   class GitApi protected () extends IGitApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
   /* static members */
-  @js.native
-  object GitApi extends js.Object {
+  object GitApi {
     
+    @JSImport("vso-node-api/GitApi", "GitApi.RESOURCE_AREA_ID")
+    @js.native
     val RESOURCE_AREA_ID: String = js.native
   }
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateTimeParameter extends js.Object {
+trait DateTimeParameter extends StObject {
   
   /**
     * A display name for the date-time parameter.
@@ -26,27 +27,15 @@ object DateTimeParameter {
   }
   
   @scala.inline
-  implicit class DateTimeParameterOps[Self <: DateTimeParameter] (val x: Self) extends AnyVal {
+  implicit class DateTimeParameterMutableBuilder[Self <: DateTimeParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValues(value: TimestampList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: Timestamp_ *): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: TimestampList): Self = this.set("Values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: Timestamp_ *): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

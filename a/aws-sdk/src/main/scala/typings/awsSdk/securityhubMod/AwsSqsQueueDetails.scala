@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsSqsQueueDetails extends js.Object {
+trait AwsSqsQueueDetails extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dead-letter queue to which Amazon SQS moves messages after the value of maxReceiveCount is exceeded. 
@@ -36,42 +37,30 @@ object AwsSqsQueueDetails {
   }
   
   @scala.inline
-  implicit class AwsSqsQueueDetailsOps[Self <: AwsSqsQueueDetails] (val x: Self) extends AnyVal {
+  implicit class AwsSqsQueueDetailsMutableBuilder[Self <: AwsSqsQueueDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeadLetterTargetArn(value: NonEmptyString): Self = StObject.set(x, "DeadLetterTargetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadLetterTargetArnUndefined: Self = StObject.set(x, "DeadLetterTargetArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKmsDataKeyReusePeriodSeconds(value: Integer): Self = StObject.set(x, "KmsDataKeyReusePeriodSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetterTargetArn(value: NonEmptyString): Self = this.set("DeadLetterTargetArn", value.asInstanceOf[js.Any])
+    def setKmsDataKeyReusePeriodSecondsUndefined: Self = StObject.set(x, "KmsDataKeyReusePeriodSeconds", js.undefined)
     
     @scala.inline
-    def deleteDeadLetterTargetArn: Self = this.set("DeadLetterTargetArn", js.undefined)
+    def setKmsMasterKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsDataKeyReusePeriodSeconds(value: Integer): Self = this.set("KmsDataKeyReusePeriodSeconds", value.asInstanceOf[js.Any])
+    def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "KmsMasterKeyId", js.undefined)
     
     @scala.inline
-    def deleteKmsDataKeyReusePeriodSeconds: Self = this.set("KmsDataKeyReusePeriodSeconds", js.undefined)
+    def setQueueName(value: NonEmptyString): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsMasterKeyId(value: NonEmptyString): Self = this.set("KmsMasterKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsMasterKeyId: Self = this.set("KmsMasterKeyId", js.undefined)
-    
-    @scala.inline
-    def setQueueName(value: NonEmptyString): Self = this.set("QueueName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueueName: Self = this.set("QueueName", js.undefined)
+    def setQueueNameUndefined: Self = StObject.set(x, "QueueName", js.undefined)
   }
 }

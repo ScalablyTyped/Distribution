@@ -3,6 +3,8 @@ package typings.tensorflowTfjsLayers.recurrentMod
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsLayers.topologyMod.Layer
+import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNNCell")
 @js.native
 abstract class RNNCell () extends Layer {
+  def this(args: LayerArgs) = this()
   
   var dropoutMask: Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   

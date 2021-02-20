@@ -3,13 +3,16 @@ package typings.reactSketchapp
 import typings.react.mod.Component
 import typings.reactSketchapp.anon.IsInAParentText
 import typings.reactSketchapp.propsMod.TextProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-sketchapp/lib/components/Svg/Text", JSImport.Namespace)
-@js.native
-object textMod extends js.Object {
+object textMod {
+  
+  @JSImport("react-sketchapp/lib/components/Svg/Text", JSImport.Default)
+  @js.native
+  class default () extends Text
   
   @js.native
   trait Text
@@ -17,7 +20,4 @@ object textMod extends js.Object {
     
     def getChildContext(): IsInAParentText = js.native
   }
-  
-  @js.native
-  class default () extends Text
 }

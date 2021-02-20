@@ -1,11 +1,12 @@
 package typings.highlightJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VuePlugin extends js.Object {
+trait VuePlugin extends StObject {
   
   def install(vue: js.Any): Unit = js.native
 }
@@ -18,21 +19,9 @@ object VuePlugin {
   }
   
   @scala.inline
-  implicit class VuePluginOps[Self <: VuePlugin] (val x: Self) extends AnyVal {
+  implicit class VuePluginMutableBuilder[Self <: VuePlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstall(value: js.Any => Unit): Self = this.set("install", js.Any.fromFunction1(value))
+    def setInstall(value: js.Any => Unit): Self = StObject.set(x, "install", js.Any.fromFunction1(value))
   }
 }

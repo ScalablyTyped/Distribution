@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateModelVersionResult extends js.Object {
+trait CreateModelVersionResult extends StObject {
   
   /**
     * The model ID.
@@ -36,42 +37,30 @@ object CreateModelVersionResult {
   }
   
   @scala.inline
-  implicit class CreateModelVersionResultOps[Self <: CreateModelVersionResult] (val x: Self) extends AnyVal {
+  implicit class CreateModelVersionResultMutableBuilder[Self <: CreateModelVersionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModelIdUndefined: Self = StObject.set(x, "modelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelType(value: ModelTypeEnum): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelId(value: modelIdentifier): Self = this.set("modelId", value.asInstanceOf[js.Any])
+    def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
     
     @scala.inline
-    def deleteModelId: Self = this.set("modelId", js.undefined)
+    def setModelVersionNumber(value: nonEmptyString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelType(value: ModelTypeEnum): Self = this.set("modelType", value.asInstanceOf[js.Any])
+    def setModelVersionNumberUndefined: Self = StObject.set(x, "modelVersionNumber", js.undefined)
     
     @scala.inline
-    def deleteModelType: Self = this.set("modelType", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelVersionNumber(value: nonEmptyString): Self = this.set("modelVersionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelVersionNumber: Self = this.set("modelVersionNumber", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

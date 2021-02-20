@@ -1,5 +1,6 @@
 package typings.googleapis.languageV1Mod.languageV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a sentence in the input document.
   */
 @js.native
-trait SchemaSentence extends js.Object {
+trait SchemaSentence extends StObject {
   
   /**
     * For calls to AnalyzeSentiment or if
@@ -31,30 +32,18 @@ object SchemaSentence {
   }
   
   @scala.inline
-  implicit class SchemaSentenceOps[Self <: SchemaSentence] (val x: Self) extends AnyVal {
+  implicit class SchemaSentenceMutableBuilder[Self <: SchemaSentence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSentiment(value: SchemaSentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setText(value: SchemaTextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentiment(value: SchemaSentiment): Self = this.set("sentiment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentiment: Self = this.set("sentiment", js.undefined)
-    
-    @scala.inline
-    def setText(value: SchemaTextSpan): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

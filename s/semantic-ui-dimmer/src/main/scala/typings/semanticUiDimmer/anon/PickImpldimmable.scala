@@ -1,12 +1,13 @@
 package typings.semanticUiDimmer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.ClassNameSettings._Impl, 'dimmable'> */
 @js.native
-trait PickImpldimmable extends js.Object {
+trait PickImpldimmable extends StObject {
   
   var dimmable: String = js.native
 }
@@ -19,21 +20,9 @@ object PickImpldimmable {
   }
   
   @scala.inline
-  implicit class PickImpldimmableOps[Self <: PickImpldimmable] (val x: Self) extends AnyVal {
+  implicit class PickImpldimmableMutableBuilder[Self <: PickImpldimmable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDimmable(value: String): Self = this.set("dimmable", value.asInstanceOf[js.Any])
+    def setDimmable(value: String): Self = StObject.set(x, "dimmable", value.asInstanceOf[js.Any])
   }
 }

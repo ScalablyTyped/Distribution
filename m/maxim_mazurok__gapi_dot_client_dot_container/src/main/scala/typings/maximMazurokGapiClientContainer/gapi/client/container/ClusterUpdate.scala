@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterUpdate extends js.Object {
+trait ClusterUpdate extends StObject {
   
   /** Configurations for the various addons available to run in the cluster. */
   var desiredAddonsConfig: js.UndefOr[AddonsConfig] = js.native
@@ -104,147 +105,135 @@ object ClusterUpdate {
   }
   
   @scala.inline
-  implicit class ClusterUpdateOps[Self <: ClusterUpdate] (val x: Self) extends AnyVal {
+  implicit class ClusterUpdateMutableBuilder[Self <: ClusterUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredAddonsConfig(value: AddonsConfig): Self = StObject.set(x, "desiredAddonsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredAddonsConfigUndefined: Self = StObject.set(x, "desiredAddonsConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesiredBinaryAuthorization(value: BinaryAuthorization): Self = StObject.set(x, "desiredBinaryAuthorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredAddonsConfig(value: AddonsConfig): Self = this.set("desiredAddonsConfig", value.asInstanceOf[js.Any])
+    def setDesiredBinaryAuthorizationUndefined: Self = StObject.set(x, "desiredBinaryAuthorization", js.undefined)
     
     @scala.inline
-    def deleteDesiredAddonsConfig: Self = this.set("desiredAddonsConfig", js.undefined)
+    def setDesiredClusterAutoscaling(value: ClusterAutoscaling): Self = StObject.set(x, "desiredClusterAutoscaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredBinaryAuthorization(value: BinaryAuthorization): Self = this.set("desiredBinaryAuthorization", value.asInstanceOf[js.Any])
+    def setDesiredClusterAutoscalingUndefined: Self = StObject.set(x, "desiredClusterAutoscaling", js.undefined)
     
     @scala.inline
-    def deleteDesiredBinaryAuthorization: Self = this.set("desiredBinaryAuthorization", js.undefined)
+    def setDesiredDatabaseEncryption(value: DatabaseEncryption): Self = StObject.set(x, "desiredDatabaseEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredClusterAutoscaling(value: ClusterAutoscaling): Self = this.set("desiredClusterAutoscaling", value.asInstanceOf[js.Any])
+    def setDesiredDatabaseEncryptionUndefined: Self = StObject.set(x, "desiredDatabaseEncryption", js.undefined)
     
     @scala.inline
-    def deleteDesiredClusterAutoscaling: Self = this.set("desiredClusterAutoscaling", js.undefined)
+    def setDesiredDefaultSnatStatus(value: DefaultSnatStatus): Self = StObject.set(x, "desiredDefaultSnatStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredDatabaseEncryption(value: DatabaseEncryption): Self = this.set("desiredDatabaseEncryption", value.asInstanceOf[js.Any])
+    def setDesiredDefaultSnatStatusUndefined: Self = StObject.set(x, "desiredDefaultSnatStatus", js.undefined)
     
     @scala.inline
-    def deleteDesiredDatabaseEncryption: Self = this.set("desiredDatabaseEncryption", js.undefined)
+    def setDesiredImageType(value: String): Self = StObject.set(x, "desiredImageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredDefaultSnatStatus(value: DefaultSnatStatus): Self = this.set("desiredDefaultSnatStatus", value.asInstanceOf[js.Any])
+    def setDesiredImageTypeUndefined: Self = StObject.set(x, "desiredImageType", js.undefined)
     
     @scala.inline
-    def deleteDesiredDefaultSnatStatus: Self = this.set("desiredDefaultSnatStatus", js.undefined)
+    def setDesiredIntraNodeVisibilityConfig(value: IntraNodeVisibilityConfig): Self = StObject.set(x, "desiredIntraNodeVisibilityConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredImageType(value: String): Self = this.set("desiredImageType", value.asInstanceOf[js.Any])
+    def setDesiredIntraNodeVisibilityConfigUndefined: Self = StObject.set(x, "desiredIntraNodeVisibilityConfig", js.undefined)
     
     @scala.inline
-    def deleteDesiredImageType: Self = this.set("desiredImageType", js.undefined)
+    def setDesiredLocations(value: js.Array[String]): Self = StObject.set(x, "desiredLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredIntraNodeVisibilityConfig(value: IntraNodeVisibilityConfig): Self = this.set("desiredIntraNodeVisibilityConfig", value.asInstanceOf[js.Any])
+    def setDesiredLocationsUndefined: Self = StObject.set(x, "desiredLocations", js.undefined)
     
     @scala.inline
-    def deleteDesiredIntraNodeVisibilityConfig: Self = this.set("desiredIntraNodeVisibilityConfig", js.undefined)
+    def setDesiredLocationsVarargs(value: String*): Self = StObject.set(x, "desiredLocations", js.Array(value :_*))
     
     @scala.inline
-    def setDesiredLocationsVarargs(value: String*): Self = this.set("desiredLocations", js.Array(value :_*))
+    def setDesiredLoggingService(value: String): Self = StObject.set(x, "desiredLoggingService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredLocations(value: js.Array[String]): Self = this.set("desiredLocations", value.asInstanceOf[js.Any])
+    def setDesiredLoggingServiceUndefined: Self = StObject.set(x, "desiredLoggingService", js.undefined)
     
     @scala.inline
-    def deleteDesiredLocations: Self = this.set("desiredLocations", js.undefined)
+    def setDesiredMasterAuthorizedNetworksConfig(value: MasterAuthorizedNetworksConfig): Self = StObject.set(x, "desiredMasterAuthorizedNetworksConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredLoggingService(value: String): Self = this.set("desiredLoggingService", value.asInstanceOf[js.Any])
+    def setDesiredMasterAuthorizedNetworksConfigUndefined: Self = StObject.set(x, "desiredMasterAuthorizedNetworksConfig", js.undefined)
     
     @scala.inline
-    def deleteDesiredLoggingService: Self = this.set("desiredLoggingService", js.undefined)
+    def setDesiredMasterVersion(value: String): Self = StObject.set(x, "desiredMasterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredMasterAuthorizedNetworksConfig(value: MasterAuthorizedNetworksConfig): Self = this.set("desiredMasterAuthorizedNetworksConfig", value.asInstanceOf[js.Any])
+    def setDesiredMasterVersionUndefined: Self = StObject.set(x, "desiredMasterVersion", js.undefined)
     
     @scala.inline
-    def deleteDesiredMasterAuthorizedNetworksConfig: Self = this.set("desiredMasterAuthorizedNetworksConfig", js.undefined)
+    def setDesiredMonitoringService(value: String): Self = StObject.set(x, "desiredMonitoringService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredMasterVersion(value: String): Self = this.set("desiredMasterVersion", value.asInstanceOf[js.Any])
+    def setDesiredMonitoringServiceUndefined: Self = StObject.set(x, "desiredMonitoringService", js.undefined)
     
     @scala.inline
-    def deleteDesiredMasterVersion: Self = this.set("desiredMasterVersion", js.undefined)
+    def setDesiredNodePoolAutoscaling(value: NodePoolAutoscaling): Self = StObject.set(x, "desiredNodePoolAutoscaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredMonitoringService(value: String): Self = this.set("desiredMonitoringService", value.asInstanceOf[js.Any])
+    def setDesiredNodePoolAutoscalingUndefined: Self = StObject.set(x, "desiredNodePoolAutoscaling", js.undefined)
     
     @scala.inline
-    def deleteDesiredMonitoringService: Self = this.set("desiredMonitoringService", js.undefined)
+    def setDesiredNodePoolId(value: String): Self = StObject.set(x, "desiredNodePoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredNodePoolAutoscaling(value: NodePoolAutoscaling): Self = this.set("desiredNodePoolAutoscaling", value.asInstanceOf[js.Any])
+    def setDesiredNodePoolIdUndefined: Self = StObject.set(x, "desiredNodePoolId", js.undefined)
     
     @scala.inline
-    def deleteDesiredNodePoolAutoscaling: Self = this.set("desiredNodePoolAutoscaling", js.undefined)
+    def setDesiredNodeVersion(value: String): Self = StObject.set(x, "desiredNodeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredNodePoolId(value: String): Self = this.set("desiredNodePoolId", value.asInstanceOf[js.Any])
+    def setDesiredNodeVersionUndefined: Self = StObject.set(x, "desiredNodeVersion", js.undefined)
     
     @scala.inline
-    def deleteDesiredNodePoolId: Self = this.set("desiredNodePoolId", js.undefined)
+    def setDesiredPrivateClusterConfig(value: PrivateClusterConfig): Self = StObject.set(x, "desiredPrivateClusterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredNodeVersion(value: String): Self = this.set("desiredNodeVersion", value.asInstanceOf[js.Any])
+    def setDesiredPrivateClusterConfigUndefined: Self = StObject.set(x, "desiredPrivateClusterConfig", js.undefined)
     
     @scala.inline
-    def deleteDesiredNodeVersion: Self = this.set("desiredNodeVersion", js.undefined)
+    def setDesiredReleaseChannel(value: ReleaseChannel): Self = StObject.set(x, "desiredReleaseChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredPrivateClusterConfig(value: PrivateClusterConfig): Self = this.set("desiredPrivateClusterConfig", value.asInstanceOf[js.Any])
+    def setDesiredReleaseChannelUndefined: Self = StObject.set(x, "desiredReleaseChannel", js.undefined)
     
     @scala.inline
-    def deleteDesiredPrivateClusterConfig: Self = this.set("desiredPrivateClusterConfig", js.undefined)
+    def setDesiredResourceUsageExportConfig(value: ResourceUsageExportConfig): Self = StObject.set(x, "desiredResourceUsageExportConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredReleaseChannel(value: ReleaseChannel): Self = this.set("desiredReleaseChannel", value.asInstanceOf[js.Any])
+    def setDesiredResourceUsageExportConfigUndefined: Self = StObject.set(x, "desiredResourceUsageExportConfig", js.undefined)
     
     @scala.inline
-    def deleteDesiredReleaseChannel: Self = this.set("desiredReleaseChannel", js.undefined)
+    def setDesiredShieldedNodes(value: ShieldedNodes): Self = StObject.set(x, "desiredShieldedNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredResourceUsageExportConfig(value: ResourceUsageExportConfig): Self = this.set("desiredResourceUsageExportConfig", value.asInstanceOf[js.Any])
+    def setDesiredShieldedNodesUndefined: Self = StObject.set(x, "desiredShieldedNodes", js.undefined)
     
     @scala.inline
-    def deleteDesiredResourceUsageExportConfig: Self = this.set("desiredResourceUsageExportConfig", js.undefined)
+    def setDesiredVerticalPodAutoscaling(value: VerticalPodAutoscaling): Self = StObject.set(x, "desiredVerticalPodAutoscaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredShieldedNodes(value: ShieldedNodes): Self = this.set("desiredShieldedNodes", value.asInstanceOf[js.Any])
+    def setDesiredVerticalPodAutoscalingUndefined: Self = StObject.set(x, "desiredVerticalPodAutoscaling", js.undefined)
     
     @scala.inline
-    def deleteDesiredShieldedNodes: Self = this.set("desiredShieldedNodes", js.undefined)
+    def setDesiredWorkloadIdentityConfig(value: WorkloadIdentityConfig): Self = StObject.set(x, "desiredWorkloadIdentityConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredVerticalPodAutoscaling(value: VerticalPodAutoscaling): Self = this.set("desiredVerticalPodAutoscaling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredVerticalPodAutoscaling: Self = this.set("desiredVerticalPodAutoscaling", js.undefined)
-    
-    @scala.inline
-    def setDesiredWorkloadIdentityConfig(value: WorkloadIdentityConfig): Self = this.set("desiredWorkloadIdentityConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredWorkloadIdentityConfig: Self = this.set("desiredWorkloadIdentityConfig", js.undefined)
+    def setDesiredWorkloadIdentityConfigUndefined: Self = StObject.set(x, "desiredWorkloadIdentityConfig", js.undefined)
   }
 }

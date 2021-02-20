@@ -1,26 +1,72 @@
 package typings.jupyterlabServices
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import typings.jupyterlabServices.anon.CLOSED
-import typings.jupyterlabServices.anon.Instantiable
-import typings.jupyterlabServices.anon.InstantiableRequest
 import typings.jupyterlabServices.anon.PartialISettings
+import typings.jupyterlabServices.anon.TypeofWebSocket
 import typings.std.Error
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
 import typings.std.TypeError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/services/lib/serverconnection", JSImport.Namespace)
-@js.native
-object serverconnectionMod extends js.Object {
+object serverconnectionMod {
   
-  @js.native
-  object ServerConnection extends js.Object {
+  object ServerConnection {
+    
+    /**
+      * A wrapped error for a network error.
+      */
+    @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.NetworkError")
+    @js.native
+    class NetworkError protected () extends Error {
+      /**
+        * Create a new network error.
+        */
+      def this(original: TypeError) = this()
+    }
+    
+    /**
+      * A wrapped error for a fetch response.
+      */
+    @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.ResponseError")
+    @js.native
+    class ResponseError protected () extends Error {
+      /**
+        * Create a new response error.
+        */
+      def this(response: Response) = this()
+      def this(response: Response, message: String) = this()
+      def this(response: Response, message: js.UndefOr[scala.Nothing], traceback: String) = this()
+      def this(response: Response, message: String, traceback: String) = this()
+      
+      /**
+        * The response associated with the error.
+        */
+      var response: Response = js.native
+      
+      /**
+        * The traceback associated with the error.
+        */
+      var traceback: String = js.native
+    }
+    object ResponseError {
+      
+      /**
+        * Create a ResponseError from a response, handling the traceback and message
+        * as appropriate.
+        *
+        * @param response The response object.
+        *
+        * @returns A promise that resolves with a `ResponseError` object.
+        */
+      /* static member */
+      @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.ResponseError.create")
+      @js.native
+      def create(response: Response): js.Promise[ResponseError] = js.native
+    }
     
     /**
       * Make an request to the notebook server.
@@ -42,6 +88,8 @@ object serverconnectionMod extends js.Object {
       * If there is no body data, we set the content type to `application/json`
       * because it is required by the Notebook server.
       */
+    @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.makeRequest")
+    @js.native
     def makeRequest(url: String, init: RequestInit, settings: ISettings): js.Promise[Response] = js.native
     
     /**
@@ -51,7 +99,11 @@ object serverconnectionMod extends js.Object {
       *
       * @returns The full settings object.
       */
+    @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.makeSettings")
+    @js.native
     def makeSettings(): ISettings = js.native
+    @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.makeSettings")
+    @js.native
     def makeSettings(options: PartialISettings): ISettings = js.native
     
     /**
@@ -60,22 +112,22 @@ object serverconnectionMod extends js.Object {
       * [[makeSettings]].  The default settings are given in [[defaultSettings]].
       */
     @js.native
-    trait ISettings extends js.Object {
+    trait ISettings extends StObject {
       
       /**
         * The `Headers` object constructor.
         */
-      val Headers: Instantiable with Instantiable0[typings.std.global.Headers] = js.native
+      val Headers: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Headers */ js.Any = js.native
       
       /**
         * The `Request` object constructor.
         */
-      val Request: InstantiableRequest with (Instantiable1[/* input */ RequestInfo, typings.std.global.Request]) = js.native
+      val Request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Request */ js.Any = js.native
       
       /**
         * The `WebSocket` object constructor.
         */
-      val WebSocket: CLOSED with (Instantiable1[/* url */ String, typings.std.global.WebSocket]) = js.native
+      val WebSocket: TypeofWebSocket = js.native
       
       /**
         * The app url of the JupyterLab application.
@@ -107,55 +159,6 @@ object serverconnectionMod extends js.Object {
         * The base ws url of the server.
         */
       val wsUrl: String = js.native
-    }
-    
-    /**
-      * A wrapped error for a network error.
-      */
-    @js.native
-    class NetworkError protected () extends Error {
-      /**
-        * Create a new network error.
-        */
-      def this(original: TypeError) = this()
-    }
-    
-    /**
-      * A wrapped error for a fetch response.
-      */
-    @js.native
-    class ResponseError protected () extends Error {
-      /**
-        * Create a new response error.
-        */
-      def this(response: Response) = this()
-      def this(response: Response, message: String) = this()
-      def this(response: Response, message: js.UndefOr[scala.Nothing], traceback: String) = this()
-      def this(response: Response, message: String, traceback: String) = this()
-      
-      /**
-        * The response associated with the error.
-        */
-      var response: Response = js.native
-      
-      /**
-        * The traceback associated with the error.
-        */
-      var traceback: String = js.native
-    }
-    /* static members */
-    @js.native
-    object ResponseError extends js.Object {
-      
-      /**
-        * Create a ResponseError from a response, handling the traceback and message
-        * as appropriate.
-        *
-        * @param response The response object.
-        *
-        * @returns A promise that resolves with a `ResponseError` object.
-        */
-      def create(response: Response): js.Promise[ResponseError] = js.native
     }
   }
 }

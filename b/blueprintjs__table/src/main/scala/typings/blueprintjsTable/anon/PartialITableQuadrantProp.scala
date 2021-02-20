@@ -10,13 +10,14 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/table.@blueprintjs/table/lib/esm/quadrants/tableQuadrant.ITableQuadrantProps> */
 @js.native
-trait PartialITableQuadrantProp extends js.Object {
+trait PartialITableQuadrantProp extends StObject {
   
   var bodyRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
   
@@ -62,104 +63,92 @@ object PartialITableQuadrantProp {
   }
   
   @scala.inline
-  implicit class PartialITableQuadrantPropOps[Self <: PartialITableQuadrantProp] (val x: Self) extends AnyVal {
+  implicit class PartialITableQuadrantPropMutableBuilder[Self <: PartialITableQuadrantProp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyRef(value: /* ref */ HTMLElement | Null => _): Self = StObject.set(x, "bodyRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBodyRef(value: /* ref */ HTMLElement | Null => _): Self = this.set("bodyRef", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteBodyRef: Self = this.set("bodyRef", js.undefined)
+    def setBodyRefUndefined: Self = StObject.set(x, "bodyRef", js.undefined)
     
     @scala.inline
     def setBodyRenderer(
       value: (/* quadrantType */ js.UndefOr[QuadrantType], /* showFrozenRowsOnly */ js.UndefOr[Boolean], /* showFrozenColumnsOnly */ js.UndefOr[Boolean]) => Element
-    ): Self = this.set("bodyRenderer", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "bodyRenderer", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteBodyRenderer: Self = this.set("bodyRenderer", js.undefined)
+    def setBodyRendererUndefined: Self = StObject.set(x, "bodyRenderer", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setColumnHeaderCellRenderer(value: /* showFrozenColumnsOnly */ js.UndefOr[Boolean] => Element): Self = this.set("columnHeaderCellRenderer", js.Any.fromFunction1(value))
+    def setColumnHeaderCellRenderer(value: /* showFrozenColumnsOnly */ js.UndefOr[Boolean] => Element): Self = StObject.set(x, "columnHeaderCellRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnHeaderCellRenderer: Self = this.set("columnHeaderCellRenderer", js.undefined)
+    def setColumnHeaderCellRendererUndefined: Self = StObject.set(x, "columnHeaderCellRenderer", js.undefined)
     
     @scala.inline
-    def setEnableRowHeader(value: Boolean): Self = this.set("enableRowHeader", value.asInstanceOf[js.Any])
+    def setEnableRowHeader(value: Boolean): Self = StObject.set(x, "enableRowHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableRowHeader: Self = this.set("enableRowHeader", js.undefined)
+    def setEnableRowHeaderUndefined: Self = StObject.set(x, "enableRowHeader", js.undefined)
     
     @scala.inline
-    def setGrid(value: Grid): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def setMenuRenderer(value: () => Element): Self = this.set("menuRenderer", js.Any.fromFunction0(value))
+    def setMenuRenderer(value: () => Element): Self = StObject.set(x, "menuRenderer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteMenuRenderer: Self = this.set("menuRenderer", js.undefined)
+    def setMenuRendererUndefined: Self = StObject.set(x, "menuRenderer", js.undefined)
     
     @scala.inline
-    def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def setOnWheel(value: WheelEvent[HTMLDivElement] => Unit): Self = this.set("onWheel", js.Any.fromFunction1(value))
+    def setOnWheel(value: WheelEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
     @scala.inline
-    def setQuadrantRef(value: /* ref */ HTMLElement | Null => _): Self = this.set("quadrantRef", js.Any.fromFunction1(value))
+    def setQuadrantRef(value: /* ref */ HTMLElement | Null => _): Self = StObject.set(x, "quadrantRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteQuadrantRef: Self = this.set("quadrantRef", js.undefined)
+    def setQuadrantRefUndefined: Self = StObject.set(x, "quadrantRef", js.undefined)
     
     @scala.inline
-    def setQuadrantType(value: QuadrantType): Self = this.set("quadrantType", value.asInstanceOf[js.Any])
+    def setQuadrantType(value: QuadrantType): Self = StObject.set(x, "quadrantType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuadrantType: Self = this.set("quadrantType", js.undefined)
+    def setQuadrantTypeUndefined: Self = StObject.set(x, "quadrantType", js.undefined)
     
     @scala.inline
-    def setRowHeaderCellRenderer(value: /* showFrozenRowsOnly */ js.UndefOr[Boolean] => Element): Self = this.set("rowHeaderCellRenderer", js.Any.fromFunction1(value))
+    def setRowHeaderCellRenderer(value: /* showFrozenRowsOnly */ js.UndefOr[Boolean] => Element): Self = StObject.set(x, "rowHeaderCellRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRowHeaderCellRenderer: Self = this.set("rowHeaderCellRenderer", js.undefined)
+    def setRowHeaderCellRendererUndefined: Self = StObject.set(x, "rowHeaderCellRenderer", js.undefined)
     
     @scala.inline
-    def setScrollContainerRef(value: /* ref */ HTMLElement | Null => _): Self = this.set("scrollContainerRef", js.Any.fromFunction1(value))
+    def setScrollContainerRef(value: /* ref */ HTMLElement | Null => _): Self = StObject.set(x, "scrollContainerRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollContainerRef: Self = this.set("scrollContainerRef", js.undefined)
+    def setScrollContainerRefUndefined: Self = StObject.set(x, "scrollContainerRef", js.undefined)
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

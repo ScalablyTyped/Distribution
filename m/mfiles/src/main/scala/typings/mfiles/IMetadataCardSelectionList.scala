@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMetadataCardSelectionList extends js.Object {
+trait IMetadataCardSelectionList extends StObject {
   
   def AutoSelect(identifier: String): Unit = js.native
   
@@ -38,39 +39,27 @@ object IMetadataCardSelectionList {
   }
   
   @scala.inline
-  implicit class IMetadataCardSelectionListOps[Self <: IMetadataCardSelectionList] (val x: Self) extends AnyVal {
+  implicit class IMetadataCardSelectionListMutableBuilder[Self <: IMetadataCardSelectionList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoSelect(value: String => Unit): Self = StObject.set(x, "AutoSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSelect(value: String => Unit): Self = this.set("AutoSelect", js.Any.fromFunction1(value))
+    def setFilteringValue(value: String): Self = StObject.set(x, "FilteringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: IEvents): Self = this.set("Events", value.asInstanceOf[js.Any])
+    def setItems(value: js.Any): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilteringValue(value: String): Self = this.set("FilteringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItems(value: js.Any): Self = this.set("Items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMoreResults(value: Boolean): Self = this.set("MoreResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetFilter(value: (String, Double, Double) => Unit): Self = this.set("SetFilter", js.Any.fromFunction3(value))
+    def setSetFilter(value: (String, Double, Double) => Unit): Self = StObject.set(x, "SetFilter", js.Any.fromFunction3(value))
   }
 }

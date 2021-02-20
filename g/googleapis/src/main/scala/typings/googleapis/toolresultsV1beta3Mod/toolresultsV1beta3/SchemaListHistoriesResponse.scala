@@ -1,5 +1,6 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for HistoryService.List
   */
 @js.native
-trait SchemaListHistoriesResponse extends js.Object {
+trait SchemaListHistoriesResponse extends StObject {
   
   /**
     * Histories.
@@ -34,33 +35,21 @@ object SchemaListHistoriesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListHistoriesResponseOps[Self <: SchemaListHistoriesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListHistoriesResponseMutableBuilder[Self <: SchemaListHistoriesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistories(value: js.Array[SchemaHistory]): Self = StObject.set(x, "histories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHistoriesUndefined: Self = StObject.set(x, "histories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistoriesVarargs(value: SchemaHistory*): Self = StObject.set(x, "histories", js.Array(value :_*))
     
     @scala.inline
-    def setHistoriesVarargs(value: SchemaHistory*): Self = this.set("histories", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistories(value: js.Array[SchemaHistory]): Self = this.set("histories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistories: Self = this.set("histories", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

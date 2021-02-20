@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VPC extends js.Object {
+trait VPC extends StObject {
   
   var VPCId: js.UndefOr[typings.awsSdk.route53Mod.VPCId] = js.native
   
@@ -23,30 +24,18 @@ object VPC {
   }
   
   @scala.inline
-  implicit class VPCOps[Self <: VPC] (val x: Self) extends AnyVal {
+  implicit class VPCMutableBuilder[Self <: VPC] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVPCId(value: VPCId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVPCIdUndefined: Self = StObject.set(x, "VPCId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVPCRegion(value: VPCRegion): Self = StObject.set(x, "VPCRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVPCId(value: VPCId): Self = this.set("VPCId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVPCId: Self = this.set("VPCId", js.undefined)
-    
-    @scala.inline
-    def setVPCRegion(value: VPCRegion): Self = this.set("VPCRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVPCRegion: Self = this.set("VPCRegion", js.undefined)
+    def setVPCRegionUndefined: Self = StObject.set(x, "VPCRegion", js.undefined)
   }
 }

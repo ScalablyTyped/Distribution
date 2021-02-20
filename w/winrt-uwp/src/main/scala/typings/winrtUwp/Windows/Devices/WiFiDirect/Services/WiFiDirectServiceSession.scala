@@ -10,13 +10,14 @@ import typings.winrtUwp.Windows.Networking.Sockets.StreamSocketListener
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.remoteportadded
 import typings.winrtUwp.winrtUwpStrings.sessionstatuschanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Wi-Fi Direct Services (WFDS) session. */
 @js.native
-trait WiFiDirectServiceSession extends js.Object {
+trait WiFiDirectServiceSession extends StObject {
   
   /**
     * Adds a DatagramSocket to the session. Your code creates the DatagramSocket before calling this method. Associating a socket to the session causes port information to be sent to the remote device(s) in the session. (In terms of this API, a RemotePortAdded event is raised on each remote device in the session, specifying the UDP protocol.) A remote device can use that information to open a socket and connect back to the local machine.

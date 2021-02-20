@@ -1,5 +1,6 @@
 package typings.rax.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,120 +51,108 @@ object WebViewHTMLAttributes {
   }
   
   @scala.inline
-  implicit class WebViewHTMLAttributesOps[Self <: WebViewHTMLAttributes[_], T] (val x: Self with WebViewHTMLAttributes[T]) extends AnyVal {
+  implicit class WebViewHTMLAttributesMutableBuilder[Self <: WebViewHTMLAttributes[_], T] (val x: Self with WebViewHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFullScreen(value: Boolean): Self = StObject.set(x, "allowFullScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowFullScreenUndefined: Self = StObject.set(x, "allowFullScreen", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowpopups(value: Boolean): Self = StObject.set(x, "allowpopups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFullScreen(value: Boolean): Self = this.set("allowFullScreen", value.asInstanceOf[js.Any])
+    def setAllowpopupsUndefined: Self = StObject.set(x, "allowpopups", js.undefined)
     
     @scala.inline
-    def deleteAllowFullScreen: Self = this.set("allowFullScreen", js.undefined)
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowpopups(value: Boolean): Self = this.set("allowpopups", value.asInstanceOf[js.Any])
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def deleteAllowpopups: Self = this.set("allowpopups", js.undefined)
+    def setAutosize(value: Boolean): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setBlinkfeatures(value: String): Self = StObject.set(x, "blinkfeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutosize(value: Boolean): Self = this.set("autosize", value.asInstanceOf[js.Any])
+    def setBlinkfeaturesUndefined: Self = StObject.set(x, "blinkfeatures", js.undefined)
     
     @scala.inline
-    def deleteAutosize: Self = this.set("autosize", js.undefined)
+    def setDisableblinkfeatures(value: String): Self = StObject.set(x, "disableblinkfeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlinkfeatures(value: String): Self = this.set("blinkfeatures", value.asInstanceOf[js.Any])
+    def setDisableblinkfeaturesUndefined: Self = StObject.set(x, "disableblinkfeatures", js.undefined)
     
     @scala.inline
-    def deleteBlinkfeatures: Self = this.set("blinkfeatures", js.undefined)
+    def setDisableguestresize(value: Boolean): Self = StObject.set(x, "disableguestresize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableblinkfeatures(value: String): Self = this.set("disableblinkfeatures", value.asInstanceOf[js.Any])
+    def setDisableguestresizeUndefined: Self = StObject.set(x, "disableguestresize", js.undefined)
     
     @scala.inline
-    def deleteDisableblinkfeatures: Self = this.set("disableblinkfeatures", js.undefined)
+    def setDisablewebsecurity(value: Boolean): Self = StObject.set(x, "disablewebsecurity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableguestresize(value: Boolean): Self = this.set("disableguestresize", value.asInstanceOf[js.Any])
+    def setDisablewebsecurityUndefined: Self = StObject.set(x, "disablewebsecurity", js.undefined)
     
     @scala.inline
-    def deleteDisableguestresize: Self = this.set("disableguestresize", js.undefined)
+    def setGuestinstance(value: String): Self = StObject.set(x, "guestinstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablewebsecurity(value: Boolean): Self = this.set("disablewebsecurity", value.asInstanceOf[js.Any])
+    def setGuestinstanceUndefined: Self = StObject.set(x, "guestinstance", js.undefined)
     
     @scala.inline
-    def deleteDisablewebsecurity: Self = this.set("disablewebsecurity", js.undefined)
+    def setHttpreferrer(value: String): Self = StObject.set(x, "httpreferrer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuestinstance(value: String): Self = this.set("guestinstance", value.asInstanceOf[js.Any])
+    def setHttpreferrerUndefined: Self = StObject.set(x, "httpreferrer", js.undefined)
     
     @scala.inline
-    def deleteGuestinstance: Self = this.set("guestinstance", js.undefined)
+    def setNodeintegration(value: Boolean): Self = StObject.set(x, "nodeintegration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpreferrer(value: String): Self = this.set("httpreferrer", value.asInstanceOf[js.Any])
+    def setNodeintegrationUndefined: Self = StObject.set(x, "nodeintegration", js.undefined)
     
     @scala.inline
-    def deleteHttpreferrer: Self = this.set("httpreferrer", js.undefined)
+    def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeintegration(value: Boolean): Self = this.set("nodeintegration", value.asInstanceOf[js.Any])
+    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
     @scala.inline
-    def deleteNodeintegration: Self = this.set("nodeintegration", js.undefined)
+    def setPlugins(value: Boolean): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartition(value: String): Self = this.set("partition", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deletePartition: Self = this.set("partition", js.undefined)
+    def setPreload(value: String): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: Boolean): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreload(value: String): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def deletePreload: Self = this.set("preload", js.undefined)
+    def setUseragent(value: String): Self = StObject.set(x, "useragent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setUseragentUndefined: Self = StObject.set(x, "useragent", js.undefined)
     
     @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
+    def setWebpreferences(value: String): Self = StObject.set(x, "webpreferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseragent(value: String): Self = this.set("useragent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseragent: Self = this.set("useragent", js.undefined)
-    
-    @scala.inline
-    def setWebpreferences(value: String): Self = this.set("webpreferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebpreferences: Self = this.set("webpreferences", js.undefined)
+    def setWebpreferencesUndefined: Self = StObject.set(x, "webpreferences", js.undefined)
   }
 }

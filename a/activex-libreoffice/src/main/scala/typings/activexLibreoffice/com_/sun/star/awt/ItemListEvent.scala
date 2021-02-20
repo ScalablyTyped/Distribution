@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.com_.sun.star.beans.Optional
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,27 +49,15 @@ object ItemListEvent {
   }
   
   @scala.inline
-  implicit class ItemListEventOps[Self <: ItemListEvent] (val x: Self) extends AnyVal {
+  implicit class ItemListEventMutableBuilder[Self <: ItemListEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemImageURL(value: Optional[String]): Self = StObject.set(x, "ItemImageURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemPosition(value: Double): Self = StObject.set(x, "ItemPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemImageURL(value: Optional[String]): Self = this.set("ItemImageURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemPosition(value: Double): Self = this.set("ItemPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemText(value: Optional[String]): Self = this.set("ItemText", value.asInstanceOf[js.Any])
+    def setItemText(value: Optional[String]): Self = StObject.set(x, "ItemText", value.asInstanceOf[js.Any])
   }
 }

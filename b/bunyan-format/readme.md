@@ -10,9 +10,9 @@ Writable stream that formats bunyan records that are piped into it.
 | ------------------ | :-------------: |
 | Full name          | bunyan-format |
 | Keywords           | bunyan, stream, log, logger, format, pretty, color, style |
-| # releases         | 1 |
-| # dependents       | 94 |
-| # downloads        | 817050 |
+| # releases         | 0 |
+| # dependents       | 129 |
+| # downloads        | 2150153 |
 | # stars            | 5 |
 
 ## Links

@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeObjectsInput extends js.Object {
+trait DescribeObjectsInput extends StObject {
   
   /**
     * Indicates whether any expressions in the object should be evaluated when the object descriptions are returned.
@@ -36,39 +37,27 @@ object DescribeObjectsInput {
   }
   
   @scala.inline
-  implicit class DescribeObjectsInputOps[Self <: DescribeObjectsInput] (val x: Self) extends AnyVal {
+  implicit class DescribeObjectsInputMutableBuilder[Self <: DescribeObjectsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvaluateExpressions(value: Boolean): Self = StObject.set(x, "evaluateExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvaluateExpressionsUndefined: Self = StObject.set(x, "evaluateExpressions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIdsVarargs(value: id*): Self = this.set("objectIds", js.Array(value :_*))
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def setObjectIds(value: idList): Self = this.set("objectIds", value.asInstanceOf[js.Any])
+    def setObjectIds(value: idList): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineId(value: id): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
+    def setObjectIdsVarargs(value: id*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
     
     @scala.inline
-    def setEvaluateExpressions(value: Boolean): Self = this.set("evaluateExpressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvaluateExpressions: Self = this.set("evaluateExpressions", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
   }
 }

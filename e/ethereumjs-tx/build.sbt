@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "ethereumjs-tx"
-version := "2.1.2-f38f0a"
+version := "2.1.2-64e8b0"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20200515Z-a08c0a",
-  "org.scalablytyped" %%% "ethereumjs-common" % "1.5.2-d7a2a3",
-  "org.scalablytyped" %%% "ethereumjs-util" % "7.0.7-8d37c3",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
-  "org.scalablytyped" %%% "rlp" % "2.2.6-047988",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20200515Z-c652d8",
+  "org.scalablytyped" %%% "ethereumjs-common" % "1.5.2-df68f2",
+  "org.scalablytyped" %%% "ethereumjs-util" % "7.0.7-ba0671",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-50d3d9",
+  "org.scalablytyped" %%% "rlp" % "2.2.6-c509c4",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

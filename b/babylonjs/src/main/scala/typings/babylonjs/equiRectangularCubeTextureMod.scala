@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/equiRectangularCubeTexture", JSImport.Namespace)
-@js.native
-object equiRectangularCubeTextureMod extends js.Object {
+object equiRectangularCubeTextureMod {
   
+  @JSImport("babylonjs/Materials/Textures/equiRectangularCubeTexture", "EquiRectangularCubeTexture")
   @js.native
   class EquiRectangularCubeTexture protected () extends BaseTexture {
     /**
@@ -136,10 +136,17 @@ object equiRectangularCubeTextureMod extends js.Object {
     var url: String = js.native
   }
   /* static members */
-  @js.native
-  object EquiRectangularCubeTexture extends js.Object {
+  object EquiRectangularCubeTexture {
+    
+    @JSImport("babylonjs/Materials/Textures/equiRectangularCubeTexture", "EquiRectangularCubeTexture")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** The six faces of the cube. */
-    var _FacesMapping: js.Any = js.native
+    @JSImport("babylonjs/Materials/Textures/equiRectangularCubeTexture", "EquiRectangularCubeTexture._FacesMapping")
+    @js.native
+    def _FacesMapping: js.Any = js.native
+    @scala.inline
+    def _FacesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FacesMapping")(x.asInstanceOf[js.Any])
   }
 }

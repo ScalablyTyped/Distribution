@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Denoise extends js.Object {
+trait Denoise extends StObject {
   
   /** Set strength of the denoise. Enter a value between 0 and 1. The higher the value, the smoother the image. 0 is no denoising. The default is 0. */
   var strength: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object Denoise {
   }
   
   @scala.inline
-  implicit class DenoiseOps[Self <: Denoise] (val x: Self) extends AnyVal {
+  implicit class DenoiseMutableBuilder[Self <: Denoise] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTune(value: String): Self = StObject.set(x, "tune", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrength(value: Double): Self = this.set("strength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrength: Self = this.set("strength", js.undefined)
-    
-    @scala.inline
-    def setTune(value: String): Self = this.set("tune", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTune: Self = this.set("tune", js.undefined)
+    def setTuneUndefined: Self = StObject.set(x, "tune", js.undefined)
   }
 }

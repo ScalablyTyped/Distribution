@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeidentifyConfig extends js.Object {
+trait DeidentifyConfig extends StObject {
   
   /** Configures de-id of application/DICOM content. */
   var dicom: js.UndefOr[DicomConfig] = js.native
@@ -28,42 +29,30 @@ object DeidentifyConfig {
   }
   
   @scala.inline
-  implicit class DeidentifyConfigOps[Self <: DeidentifyConfig] (val x: Self) extends AnyVal {
+  implicit class DeidentifyConfigMutableBuilder[Self <: DeidentifyConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDicom(value: DicomConfig): Self = StObject.set(x, "dicom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDicomUndefined: Self = StObject.set(x, "dicom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFhir(value: FhirConfig): Self = StObject.set(x, "fhir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDicom(value: DicomConfig): Self = this.set("dicom", value.asInstanceOf[js.Any])
+    def setFhirUndefined: Self = StObject.set(x, "fhir", js.undefined)
     
     @scala.inline
-    def deleteDicom: Self = this.set("dicom", js.undefined)
+    def setImage(value: ImageConfig): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFhir(value: FhirConfig): Self = this.set("fhir", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteFhir: Self = this.set("fhir", js.undefined)
+    def setText(value: TextConfig): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ImageConfig): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
-    
-    @scala.inline
-    def setText(value: TextConfig): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

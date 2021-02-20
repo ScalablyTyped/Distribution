@@ -1,11 +1,12 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachmentLoader extends js.Object {
+trait AttachmentLoader extends StObject {
   
   def newBoundingBoxAttachment(skin: Skin, name: String): BoundingBoxAttachment = js.native
   
@@ -35,36 +36,24 @@ object AttachmentLoader {
   }
   
   @scala.inline
-  implicit class AttachmentLoaderOps[Self <: AttachmentLoader] (val x: Self) extends AnyVal {
+  implicit class AttachmentLoaderMutableBuilder[Self <: AttachmentLoader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewBoundingBoxAttachment(value: (Skin, String) => BoundingBoxAttachment): Self = StObject.set(x, "newBoundingBoxAttachment", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewClippingAttachment(value: (Skin, String) => ClippingAttachment): Self = StObject.set(x, "newClippingAttachment", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewMeshAttachment(value: (Skin, String, String) => MeshAttachment): Self = StObject.set(x, "newMeshAttachment", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setNewBoundingBoxAttachment(value: (Skin, String) => BoundingBoxAttachment): Self = this.set("newBoundingBoxAttachment", js.Any.fromFunction2(value))
+    def setNewPathAttachment(value: (Skin, String) => PathAttachment): Self = StObject.set(x, "newPathAttachment", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNewClippingAttachment(value: (Skin, String) => ClippingAttachment): Self = this.set("newClippingAttachment", js.Any.fromFunction2(value))
+    def setNewPointAttachment(value: (Skin, String) => PointAttachment): Self = StObject.set(x, "newPointAttachment", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNewMeshAttachment(value: (Skin, String, String) => MeshAttachment): Self = this.set("newMeshAttachment", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setNewPathAttachment(value: (Skin, String) => PathAttachment): Self = this.set("newPathAttachment", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setNewPointAttachment(value: (Skin, String) => PointAttachment): Self = this.set("newPointAttachment", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setNewRegionAttachment(value: (Skin, String, String) => RegionAttachment): Self = this.set("newRegionAttachment", js.Any.fromFunction3(value))
+    def setNewRegionAttachment(value: (Skin, String, String) => RegionAttachment): Self = StObject.set(x, "newRegionAttachment", js.Any.fromFunction3(value))
   }
 }

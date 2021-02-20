@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the PlayReady-ND download engine used to stream protected media content from a transmitter. */
 @js.native
-trait INDDownloadEngine extends js.Object {
+trait INDDownloadEngine extends StObject {
   
   /** Gets the maximum threshold of the sample buffer. */
   var bufferFullMaxThresholdInSamples: Double = js.native
@@ -62,45 +63,33 @@ object INDDownloadEngine {
   }
   
   @scala.inline
-  implicit class INDDownloadEngineOps[Self <: INDDownloadEngine] (val x: Self) extends AnyVal {
+  implicit class INDDownloadEngineMutableBuilder[Self <: INDDownloadEngine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBufferFullMaxThresholdInSamples(value: Double): Self = StObject.set(x, "bufferFullMaxThresholdInSamples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferFullMinThresholdInSamples(value: Double): Self = StObject.set(x, "bufferFullMinThresholdInSamples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanSeek(value: Boolean): Self = StObject.set(x, "canSeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferFullMaxThresholdInSamples(value: Double): Self = this.set("bufferFullMaxThresholdInSamples", value.asInstanceOf[js.Any])
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBufferFullMinThresholdInSamples(value: Double): Self = this.set("bufferFullMinThresholdInSamples", value.asInstanceOf[js.Any])
+    def setNotifier(value: NDDownloadEngineNotifier): Self = StObject.set(x, "notifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSeek(value: Boolean): Self = this.set("canSeek", value.asInstanceOf[js.Any])
+    def setOpen(value: (Uri, js.Array[Double]) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotifier(value: NDDownloadEngineNotifier): Self = this.set("notifier", value.asInstanceOf[js.Any])
+    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOpen(value: (Uri, js.Array[Double]) => Unit): Self = this.set("open", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResume(value: () => Unit): Self = this.set("resume", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSeek(value: Double => Unit): Self = this.set("seek", js.Any.fromFunction1(value))
+    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
   }
 }

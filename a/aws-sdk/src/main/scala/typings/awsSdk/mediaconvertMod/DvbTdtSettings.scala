@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DvbTdtSettings extends js.Object {
+trait DvbTdtSettings extends StObject {
   
   /**
     * The number of milliseconds between instances of this table in the output transport stream.
@@ -21,24 +22,12 @@ object DvbTdtSettings {
   }
   
   @scala.inline
-  implicit class DvbTdtSettingsOps[Self <: DvbTdtSettings] (val x: Self) extends AnyVal {
+  implicit class DvbTdtSettingsMutableBuilder[Self <: DvbTdtSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTdtInterval(value: integerMin1000Max30000): Self = StObject.set(x, "TdtInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTdtInterval(value: integerMin1000Max30000): Self = this.set("TdtInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTdtInterval: Self = this.set("TdtInterval", js.undefined)
+    def setTdtIntervalUndefined: Self = StObject.set(x, "TdtInterval", js.undefined)
   }
 }

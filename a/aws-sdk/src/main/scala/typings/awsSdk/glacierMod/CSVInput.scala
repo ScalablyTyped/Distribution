@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CSVInput extends js.Object {
+trait CSVInput extends StObject {
   
   /**
     * A single character used to indicate that a row should be ignored when the character is present at the start of that row.
@@ -46,54 +47,42 @@ object CSVInput {
   }
   
   @scala.inline
-  implicit class CSVInputOps[Self <: CSVInput] (val x: Self) extends AnyVal {
+  implicit class CSVInputMutableBuilder[Self <: CSVInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldDelimiter(value: String): Self = StObject.set(x, "FieldDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: String): Self = this.set("Comments", value.asInstanceOf[js.Any])
+    def setFieldDelimiterUndefined: Self = StObject.set(x, "FieldDelimiter", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("Comments", js.undefined)
+    def setFileHeaderInfo(value: FileHeaderInfo): Self = StObject.set(x, "FileHeaderInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldDelimiter(value: String): Self = this.set("FieldDelimiter", value.asInstanceOf[js.Any])
+    def setFileHeaderInfoUndefined: Self = StObject.set(x, "FileHeaderInfo", js.undefined)
     
     @scala.inline
-    def deleteFieldDelimiter: Self = this.set("FieldDelimiter", js.undefined)
+    def setQuoteCharacter(value: String): Self = StObject.set(x, "QuoteCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileHeaderInfo(value: FileHeaderInfo): Self = this.set("FileHeaderInfo", value.asInstanceOf[js.Any])
+    def setQuoteCharacterUndefined: Self = StObject.set(x, "QuoteCharacter", js.undefined)
     
     @scala.inline
-    def deleteFileHeaderInfo: Self = this.set("FileHeaderInfo", js.undefined)
+    def setQuoteEscapeCharacter(value: String): Self = StObject.set(x, "QuoteEscapeCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuoteCharacter(value: String): Self = this.set("QuoteCharacter", value.asInstanceOf[js.Any])
+    def setQuoteEscapeCharacterUndefined: Self = StObject.set(x, "QuoteEscapeCharacter", js.undefined)
     
     @scala.inline
-    def deleteQuoteCharacter: Self = this.set("QuoteCharacter", js.undefined)
+    def setRecordDelimiter(value: String): Self = StObject.set(x, "RecordDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuoteEscapeCharacter(value: String): Self = this.set("QuoteEscapeCharacter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuoteEscapeCharacter: Self = this.set("QuoteEscapeCharacter", js.undefined)
-    
-    @scala.inline
-    def setRecordDelimiter(value: String): Self = this.set("RecordDelimiter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordDelimiter: Self = this.set("RecordDelimiter", js.undefined)
+    def setRecordDelimiterUndefined: Self = StObject.set(x, "RecordDelimiter", js.undefined)
   }
 }

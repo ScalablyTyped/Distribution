@@ -1,5 +1,6 @@
 package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Upload line items response.
   */
 @js.native
-trait SchemaUploadLineItemsResponse extends js.Object {
+trait SchemaUploadLineItemsResponse extends StObject {
   
   /**
     * Status of upload.
@@ -24,24 +25,12 @@ object SchemaUploadLineItemsResponse {
   }
   
   @scala.inline
-  implicit class SchemaUploadLineItemsResponseOps[Self <: SchemaUploadLineItemsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaUploadLineItemsResponseMutableBuilder[Self <: SchemaUploadLineItemsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUploadStatus(value: SchemaUploadStatus): Self = StObject.set(x, "uploadStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUploadStatus(value: SchemaUploadStatus): Self = this.set("uploadStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadStatus: Self = this.set("uploadStatus", js.undefined)
+    def setUploadStatusUndefined: Self = StObject.set(x, "uploadStatus", js.undefined)
   }
 }

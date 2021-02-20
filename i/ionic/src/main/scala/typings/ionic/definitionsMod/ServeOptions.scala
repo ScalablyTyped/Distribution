@@ -1,11 +1,12 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServeOptions extends js.Object {
+trait ServeOptions extends StObject {
   
   var `--`: js.Array[String] = js.native
   
@@ -63,90 +64,78 @@ object ServeOptions {
   }
   
   @scala.inline
-  implicit class ServeOptionsOps[Self <: ServeOptions] (val x: Self) extends AnyVal {
+  implicit class ServeOptionsMutableBuilder[Self <: ServeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `set--`(value: js.Array[String]): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set--Varargs`(value: String*): Self = this.set("--", js.Array(value :_*))
+    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set--`(value: js.Array[String]): Self = this.set("--", value.asInstanceOf[js.Any])
+    def setBrowserOption(value: String): Self = StObject.set(x, "browserOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setBrowserOptionUndefined: Self = StObject.set(x, "browserOption", js.undefined)
     
     @scala.inline
-    def setDevapp(value: Boolean): Self = this.set("devapp", value.asInstanceOf[js.Any])
+    def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("engine", value.asInstanceOf[js.Any])
+    def setDevapp(value: Boolean): Self = StObject.set(x, "devapp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLab(value: Boolean): Self = this.set("lab", value.asInstanceOf[js.Any])
+    def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabHost(value: String): Self = this.set("labHost", value.asInstanceOf[js.Any])
+    def setExternalAddressRequired(value: Boolean): Self = StObject.set(x, "externalAddressRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabPort(value: Double): Self = this.set("labPort", value.asInstanceOf[js.Any])
+    def setExternalAddressRequiredUndefined: Self = StObject.set(x, "externalAddressRequired", js.undefined)
     
     @scala.inline
-    def setLivereload(value: Boolean): Self = this.set("livereload", value.asInstanceOf[js.Any])
+    def setLab(value: Boolean): Self = StObject.set(x, "lab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setLabHost(value: String): Self = StObject.set(x, "labHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setLabPort(value: Double): Self = StObject.set(x, "labPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxy(value: Boolean): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    def setLivereload(value: Boolean): Self = StObject.set(x, "livereload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowser(value: String): Self = this.set("browser", value.asInstanceOf[js.Any])
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrowser: Self = this.set("browser", js.undefined)
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserOption(value: String): Self = this.set("browserOption", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteBrowserOption: Self = this.set("browserOption", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalAddressRequired(value: Boolean): Self = this.set("externalAddressRequired", value.asInstanceOf[js.Any])
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalAddressRequired: Self = this.set("externalAddressRequired", js.undefined)
+    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setProxy(value: Boolean): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProject: Self = this.set("project", js.undefined)
-    
-    @scala.inline
-    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerbose: Self = this.set("verbose", js.undefined)
+    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

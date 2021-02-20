@@ -1,5 +1,6 @@
 package typings.giphyApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.giphyApi.giphyApiStrings.html
   - typings.giphyApi.giphyApiStrings.json
 */
-trait Format extends js.Object
+trait Format extends StObject
 object Format {
   
   @scala.inline

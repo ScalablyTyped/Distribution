@@ -3,13 +3,12 @@ package typings.chrome.global.chrome
 import typings.chrome.chrome.enterprise.networkingAttributes.NetworkDetails
 import typings.chrome.chrome.enterprise.platformKeys.Token
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("chrome.enterprise")
-@js.native
-object enterprise extends js.Object {
+object enterprise {
   
   ////////////////////
   // Enterprise Device Attributes
@@ -21,15 +20,22 @@ object enterprise extends js.Object {
     * Important: This API works only on Chrome OS.
     * Note: This API is only for extensions pre-installed by policy.
     */
-  @js.native
-  object deviceAttributes extends js.Object {
+  object deviceAttributes {
     
+    @JSGlobal("chrome.enterprise.deviceAttributes.getDeviceAnnotatedLocation")
+    @js.native
     def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit = js.native
     
+    @JSGlobal("chrome.enterprise.deviceAttributes.getDeviceAssetId")
+    @js.native
     def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit = js.native
     
+    @JSGlobal("chrome.enterprise.deviceAttributes.getDeviceSerialNumber")
+    @js.native
     def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit = js.native
     
+    @JSGlobal("chrome.enterprise.deviceAttributes.getDirectoryDeviceId")
+    @js.native
     def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit = js.native
   }
   
@@ -41,9 +47,10 @@ object enterprise extends js.Object {
     * Important: This API works only on Chrome OS.
     * @since Chrome 85.
     */
-  @js.native
-  object networkingAttributes extends js.Object {
+  object networkingAttributes {
     
+    @JSGlobal("chrome.enterprise.networkingAttributes.getNetworkDetails")
+    @js.native
     def getNetworkDetails(callback: js.Function1[/* networkDetails */ NetworkDetails, Unit]): Unit = js.native
   }
   
@@ -57,30 +64,47 @@ object enterprise extends js.Object {
     * Important: This API works only on Chrome OS.
     * Note:  This API is only for extensions pre-installed by policy.
     */
-  @js.native
-  object platformKeys extends js.Object {
+  object platformKeys {
     
+    @JSGlobal("chrome.enterprise.platformKeys.challengeMachineKey")
+    @js.native
     def challengeMachineKey(challenge: ArrayBuffer, callback: js.Function1[/* response */ ArrayBuffer, Unit]): Unit = js.native
+    @JSGlobal("chrome.enterprise.platformKeys.challengeMachineKey")
+    @js.native
     def challengeMachineKey(
       challenge: ArrayBuffer,
       registerKey: Boolean,
       callback: js.Function1[/* response */ ArrayBuffer, Unit]
     ): Unit = js.native
     
+    @JSGlobal("chrome.enterprise.platformKeys.challengeUserKey")
+    @js.native
     def challengeUserKey(
       challenge: ArrayBuffer,
       registerKey: Boolean,
       callback: js.Function1[/* response */ ArrayBuffer, Unit]
     ): Unit = js.native
     
+    @JSGlobal("chrome.enterprise.platformKeys.getCertificates")
+    @js.native
     def getCertificates(tokenId: String, callback: js.Function1[/* certificates */ js.Array[ArrayBuffer], Unit]): Unit = js.native
     
+    @JSGlobal("chrome.enterprise.platformKeys.getTokens")
+    @js.native
     def getTokens(callback: js.Function1[/* tokens */ js.Array[Token], Unit]): Unit = js.native
     
+    @JSGlobal("chrome.enterprise.platformKeys.importCertificate")
+    @js.native
     def importCertificate(tokenId: String, certificate: ArrayBuffer): Unit = js.native
+    @JSGlobal("chrome.enterprise.platformKeys.importCertificate")
+    @js.native
     def importCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
     
+    @JSGlobal("chrome.enterprise.platformKeys.removeCertificate")
+    @js.native
     def removeCertificate(tokenId: String, certificate: ArrayBuffer): Unit = js.native
+    @JSGlobal("chrome.enterprise.platformKeys.removeCertificate")
+    @js.native
     def removeCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
   }
 }

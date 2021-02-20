@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhysicsImpostorParameters extends js.Object {
+trait PhysicsImpostorParameters extends StObject {
   
   /**
     * The collision margin around a soft object
@@ -93,105 +94,93 @@ object PhysicsImpostorParameters {
   }
   
   @scala.inline
-  implicit class PhysicsImpostorParametersOps[Self <: PhysicsImpostorParameters] (val x: Self) extends AnyVal {
+  implicit class PhysicsImpostorParametersMutableBuilder[Self <: PhysicsImpostorParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableBidirectionalTransformation(value: Boolean): Self = StObject.set(x, "disableBidirectionalTransformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMass(value: Double): Self = this.set("mass", value.asInstanceOf[js.Any])
+    def setDisableBidirectionalTransformationUndefined: Self = StObject.set(x, "disableBidirectionalTransformation", js.undefined)
     
     @scala.inline
-    def setDamping(value: Double): Self = this.set("damping", value.asInstanceOf[js.Any])
+    def setFixedPoints(value: Double): Self = StObject.set(x, "fixedPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDamping: Self = this.set("damping", js.undefined)
+    def setFixedPointsUndefined: Self = StObject.set(x, "fixedPoints", js.undefined)
     
     @scala.inline
-    def setDisableBidirectionalTransformation(value: Boolean): Self = this.set("disableBidirectionalTransformation", value.asInstanceOf[js.Any])
+    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableBidirectionalTransformation: Self = this.set("disableBidirectionalTransformation", js.undefined)
+    def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
     @scala.inline
-    def setFixedPoints(value: Double): Self = this.set("fixedPoints", value.asInstanceOf[js.Any])
+    def setIgnoreParent(value: Boolean): Self = StObject.set(x, "ignoreParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFixedPoints: Self = this.set("fixedPoints", js.undefined)
+    def setIgnoreParentUndefined: Self = StObject.set(x, "ignoreParent", js.undefined)
     
     @scala.inline
-    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
+    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFriction: Self = this.set("friction", js.undefined)
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def setIgnoreParent(value: Boolean): Self = this.set("ignoreParent", value.asInstanceOf[js.Any])
+    def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreParent: Self = this.set("ignoreParent", js.undefined)
+    def setNativeOptions(value: js.Any): Self = StObject.set(x, "nativeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setNativeOptionsUndefined: Self = StObject.set(x, "nativeOptions", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeOptions(value: js.Any): Self = this.set("nativeOptions", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteNativeOptions: Self = this.set("nativeOptions", js.undefined)
+    def setPositionIterations(value: Double): Self = StObject.set(x, "positionIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: js.Any): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPositionIterationsUndefined: Self = StObject.set(x, "positionIterations", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionIterations(value: Double): Self = this.set("positionIterations", value.asInstanceOf[js.Any])
+    def setPressureUndefined: Self = StObject.set(x, "pressure", js.undefined)
     
     @scala.inline
-    def deletePositionIterations: Self = this.set("positionIterations", js.undefined)
+    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressure(value: Double): Self = this.set("pressure", value.asInstanceOf[js.Any])
+    def setRestitutionUndefined: Self = StObject.set(x, "restitution", js.undefined)
     
     @scala.inline
-    def deletePressure: Self = this.set("pressure", js.undefined)
+    def setShape(value: js.Any): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestitution(value: Double): Self = this.set("restitution", value.asInstanceOf[js.Any])
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def deleteRestitution: Self = this.set("restitution", js.undefined)
+    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: js.Any): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setVelocityIterations(value: Double): Self = StObject.set(x, "velocityIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStiffness(value: Double): Self = this.set("stiffness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStiffness: Self = this.set("stiffness", js.undefined)
-    
-    @scala.inline
-    def setVelocityIterations(value: Double): Self = this.set("velocityIterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVelocityIterations: Self = this.set("velocityIterations", js.undefined)
+    def setVelocityIterationsUndefined: Self = StObject.set(x, "velocityIterations", js.undefined)
   }
 }

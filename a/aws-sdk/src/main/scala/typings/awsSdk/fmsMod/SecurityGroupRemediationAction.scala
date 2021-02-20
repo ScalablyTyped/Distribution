@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityGroupRemediationAction extends js.Object {
+trait SecurityGroupRemediationAction extends StObject {
   
   /**
     * Brief description of the action that will be performed.
@@ -36,42 +37,30 @@ object SecurityGroupRemediationAction {
   }
   
   @scala.inline
-  implicit class SecurityGroupRemediationActionOps[Self <: SecurityGroupRemediationAction] (val x: Self) extends AnyVal {
+  implicit class SecurityGroupRemediationActionMutableBuilder[Self <: SecurityGroupRemediationAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: RemediationActionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDefaultAction(value: Boolean): Self = StObject.set(x, "IsDefaultAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: RemediationActionDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIsDefaultActionUndefined: Self = StObject.set(x, "IsDefaultAction", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setRemediationActionType(value: RemediationActionType): Self = StObject.set(x, "RemediationActionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefaultAction(value: Boolean): Self = this.set("IsDefaultAction", value.asInstanceOf[js.Any])
+    def setRemediationActionTypeUndefined: Self = StObject.set(x, "RemediationActionType", js.undefined)
     
     @scala.inline
-    def deleteIsDefaultAction: Self = this.set("IsDefaultAction", js.undefined)
+    def setRemediationResult(value: SecurityGroupRuleDescription): Self = StObject.set(x, "RemediationResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemediationActionType(value: RemediationActionType): Self = this.set("RemediationActionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemediationActionType: Self = this.set("RemediationActionType", js.undefined)
-    
-    @scala.inline
-    def setRemediationResult(value: SecurityGroupRuleDescription): Self = this.set("RemediationResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemediationResult: Self = this.set("RemediationResult", js.undefined)
+    def setRemediationResultUndefined: Self = StObject.set(x, "RemediationResult", js.undefined)
   }
 }

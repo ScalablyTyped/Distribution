@@ -5,6 +5,7 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLFormElement
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,87 +44,75 @@ object SearchBoxProps {
   }
   
   @scala.inline
-  implicit class SearchBoxPropsOps[Self <: SearchBoxProps] (val x: Self) extends AnyVal {
+  implicit class SearchBoxPropsMutableBuilder[Self <: SearchBoxProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setFocusShortcuts(value: js.Array[String]): Self = StObject.set(x, "focusShortcuts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRefinement(value: String): Self = this.set("defaultRefinement", value.asInstanceOf[js.Any])
+    def setFocusShortcutsUndefined: Self = StObject.set(x, "focusShortcuts", js.undefined)
     
     @scala.inline
-    def deleteDefaultRefinement: Self = this.set("defaultRefinement", js.undefined)
+    def setFocusShortcutsVarargs(value: String*): Self = StObject.set(x, "focusShortcuts", js.Array(value :_*))
     
     @scala.inline
-    def setFocusShortcutsVarargs(value: String*): Self = this.set("focusShortcuts", js.Array(value :_*))
+    def setLoadingIndicator(value: Element): Self = StObject.set(x, "loadingIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusShortcuts(value: js.Array[String]): Self = this.set("focusShortcuts", value.asInstanceOf[js.Any])
+    def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
     
     @scala.inline
-    def deleteFocusShortcuts: Self = this.set("focusShortcuts", js.undefined)
+    def setOnChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadingIndicator(value: Element): Self = this.set("loadingIndicator", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteLoadingIndicator: Self = this.set("loadingIndicator", js.undefined)
+    def setOnReset(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => _): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => _): Self = this.set("onChange", js.Any.fromFunction1(value))
+    def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnSubmit(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => _): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReset(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => _): Self = this.set("onReset", js.Any.fromFunction1(value))
+    def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
     @scala.inline
-    def deleteOnReset: Self = this.set("onReset", js.undefined)
+    def setReset(value: Element): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSubmit(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => _): Self = this.set("onSubmit", js.Any.fromFunction1(value))
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteOnSubmit: Self = this.set("onSubmit", js.undefined)
+    def setSearchAsYouType(value: Boolean): Self = StObject.set(x, "searchAsYouType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: Element): Self = this.set("reset", value.asInstanceOf[js.Any])
+    def setSearchAsYouTypeUndefined: Self = StObject.set(x, "searchAsYouType", js.undefined)
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setShowLoadingIndicator(value: Boolean): Self = StObject.set(x, "showLoadingIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchAsYouType(value: Boolean): Self = this.set("searchAsYouType", value.asInstanceOf[js.Any])
+    def setShowLoadingIndicatorUndefined: Self = StObject.set(x, "showLoadingIndicator", js.undefined)
     
     @scala.inline
-    def deleteSearchAsYouType: Self = this.set("searchAsYouType", js.undefined)
+    def setSubmit(value: Element): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLoadingIndicator(value: Boolean): Self = this.set("showLoadingIndicator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowLoadingIndicator: Self = this.set("showLoadingIndicator", js.undefined)
-    
-    @scala.inline
-    def setSubmit(value: Element): Self = this.set("submit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmit: Self = this.set("submit", js.undefined)
+    def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
   }
 }

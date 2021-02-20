@@ -1,11 +1,12 @@
 package typings.iotaLibJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Addresses extends js.Object {
+trait Addresses extends StObject {
   
   var addresses: js.UndefOr[js.Array[String]] = js.native
   
@@ -24,54 +25,42 @@ object Addresses {
   }
   
   @scala.inline
-  implicit class AddressesOps[Self <: Addresses] (val x: Self) extends AnyVal {
+  implicit class AddressesMutableBuilder[Self <: Addresses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
     @scala.inline
-    def setAddressesVarargs(value: String*): Self = this.set("addresses", js.Array(value :_*))
+    def setApprovees(value: js.Array[String]): Self = StObject.set(x, "approvees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddresses(value: js.Array[String]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setApproveesUndefined: Self = StObject.set(x, "approvees", js.undefined)
     
     @scala.inline
-    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    def setApproveesVarargs(value: String*): Self = StObject.set(x, "approvees", js.Array(value :_*))
     
     @scala.inline
-    def setApproveesVarargs(value: String*): Self = this.set("approvees", js.Array(value :_*))
+    def setBundles(value: js.Array[String]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovees(value: js.Array[String]): Self = this.set("approvees", value.asInstanceOf[js.Any])
+    def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
     @scala.inline
-    def deleteApprovees: Self = this.set("approvees", js.undefined)
+    def setBundlesVarargs(value: String*): Self = StObject.set(x, "bundles", js.Array(value :_*))
     
     @scala.inline
-    def setBundlesVarargs(value: String*): Self = this.set("bundles", js.Array(value :_*))
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundles(value: js.Array[String]): Self = this.set("bundles", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteBundles: Self = this.set("bundles", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

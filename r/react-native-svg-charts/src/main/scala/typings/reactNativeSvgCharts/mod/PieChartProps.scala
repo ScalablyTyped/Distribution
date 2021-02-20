@@ -1,5 +1,6 @@
 package typings.reactNativeSvgCharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,66 +33,54 @@ object PieChartProps {
   }
   
   @scala.inline
-  implicit class PieChartPropsOps[Self <: PieChartProps[_], T /* <: PieChartData */] (val x: Self with PieChartProps[T]) extends AnyVal {
+  implicit class PieChartPropsMutableBuilder[Self <: PieChartProps[_], T /* <: PieChartData */] (val x: Self with PieChartProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInnerRadius(value: Double | String): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAngle(value: Double): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
     @scala.inline
-    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    def setLabelRadius(value: Double | String): Self = StObject.set(x, "labelRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerRadius(value: Double | String): Self = this.set("innerRadius", value.asInstanceOf[js.Any])
+    def setLabelRadiusUndefined: Self = StObject.set(x, "labelRadius", js.undefined)
     
     @scala.inline
-    def deleteInnerRadius: Self = this.set("innerRadius", js.undefined)
+    def setOuterRadius(value: Double | String): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelRadius(value: Double | String): Self = this.set("labelRadius", value.asInstanceOf[js.Any])
+    def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
     
     @scala.inline
-    def deleteLabelRadius: Self = this.set("labelRadius", js.undefined)
+    def setPadAngle(value: Double): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterRadius(value: Double | String): Self = this.set("outerRadius", value.asInstanceOf[js.Any])
+    def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
     
     @scala.inline
-    def deleteOuterRadius: Self = this.set("outerRadius", js.undefined)
+    def setSort(value: (T, T) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPadAngle(value: Double): Self = this.set("padAngle", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deletePadAngle: Self = this.set("padAngle", js.undefined)
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: (T, T) => Double): Self = this.set("sort", js.Any.fromFunction2(value))
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setValueAccessor(value: /* props */ AccessorFunctionProps[T] => Double): Self = StObject.set(x, "valueAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
-    
-    @scala.inline
-    def setValueAccessor(value: /* props */ AccessorFunctionProps[T] => Double): Self = this.set("valueAccessor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteValueAccessor: Self = this.set("valueAccessor", js.undefined)
+    def setValueAccessorUndefined: Self = StObject.set(x, "valueAccessor", js.undefined)
   }
 }

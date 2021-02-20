@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListContributorInsightsOutput extends js.Object {
+trait ListContributorInsightsOutput extends StObject {
   
   /**
     * A list of ContributorInsightsSummary.
@@ -26,33 +27,21 @@ object ListContributorInsightsOutput {
   }
   
   @scala.inline
-  implicit class ListContributorInsightsOutputOps[Self <: ListContributorInsightsOutput] (val x: Self) extends AnyVal {
+  implicit class ListContributorInsightsOutputMutableBuilder[Self <: ListContributorInsightsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContributorInsightsSummaries(value: ContributorInsightsSummaries): Self = StObject.set(x, "ContributorInsightsSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContributorInsightsSummariesUndefined: Self = StObject.set(x, "ContributorInsightsSummaries", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContributorInsightsSummariesVarargs(value: ContributorInsightsSummary*): Self = StObject.set(x, "ContributorInsightsSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setContributorInsightsSummariesVarargs(value: ContributorInsightsSummary*): Self = this.set("ContributorInsightsSummaries", js.Array(value :_*))
+    def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributorInsightsSummaries(value: ContributorInsightsSummaries): Self = this.set("ContributorInsightsSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContributorInsightsSummaries: Self = this.set("ContributorInsightsSummaries", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextTokenString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

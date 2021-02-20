@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Services.Store
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides status info for a package that is associated with a download or installation request. */
 @js.native
-trait StorePackageUpdateStatus extends js.Object {
+trait StorePackageUpdateStatus extends StObject {
   
   /** The number of bytes that have been downloaded. */
   var packageBytesDownloaded: Double = js.native
@@ -42,36 +43,24 @@ object StorePackageUpdateStatus {
   }
   
   @scala.inline
-  implicit class StorePackageUpdateStatusOps[Self <: StorePackageUpdateStatus] (val x: Self) extends AnyVal {
+  implicit class StorePackageUpdateStatusMutableBuilder[Self <: StorePackageUpdateStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPackageBytesDownloaded(value: Double): Self = StObject.set(x, "packageBytesDownloaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPackageDownloadProgress(value: Double): Self = StObject.set(x, "packageDownloadProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageDownloadSizeInBytes(value: Double): Self = StObject.set(x, "packageDownloadSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageBytesDownloaded(value: Double): Self = this.set("packageBytesDownloaded", value.asInstanceOf[js.Any])
+    def setPackageFamilyName(value: String): Self = StObject.set(x, "packageFamilyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageDownloadProgress(value: Double): Self = this.set("packageDownloadProgress", value.asInstanceOf[js.Any])
+    def setPackageUpdateState(value: StorePackageUpdateState): Self = StObject.set(x, "packageUpdateState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageDownloadSizeInBytes(value: Double): Self = this.set("packageDownloadSizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPackageFamilyName(value: String): Self = this.set("packageFamilyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPackageUpdateState(value: StorePackageUpdateState): Self = this.set("packageUpdateState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalDownloadProgress(value: Double): Self = this.set("totalDownloadProgress", value.asInstanceOf[js.Any])
+    def setTotalDownloadProgress(value: Double): Self = StObject.set(x, "totalDownloadProgress", value.asInstanceOf[js.Any])
   }
 }

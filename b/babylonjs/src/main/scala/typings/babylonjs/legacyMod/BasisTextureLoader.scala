@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Legacy/legacy", "_BasisTextureLoader")
 @js.native
 class BasisTextureLoader ()
-  extends typings.babylonjs.basisTextureLoaderMod.BasisTextureLoader
+  extends typings.babylonjs.indexMod.BasisTextureLoader

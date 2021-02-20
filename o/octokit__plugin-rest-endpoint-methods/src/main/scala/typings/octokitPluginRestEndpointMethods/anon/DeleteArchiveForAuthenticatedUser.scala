@@ -1,11 +1,12 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteArchiveForAuthenticatedUser extends js.Object {
+trait DeleteArchiveForAuthenticatedUser extends StObject {
   
   var cancelImport: `763` = js.native
   
@@ -83,84 +84,72 @@ object DeleteArchiveForAuthenticatedUser {
   }
   
   @scala.inline
-  implicit class DeleteArchiveForAuthenticatedUserOps[Self <: DeleteArchiveForAuthenticatedUser] (val x: Self) extends AnyVal {
+  implicit class DeleteArchiveForAuthenticatedUserMutableBuilder[Self <: DeleteArchiveForAuthenticatedUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelImport(value: `763`): Self = StObject.set(x, "cancelImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteArchiveForAuthenticatedUser(value: `764`): Self = StObject.set(x, "deleteArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteArchiveForOrg(value: `765`): Self = StObject.set(x, "deleteArchiveForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelImport(value: `763`): Self = this.set("cancelImport", value.asInstanceOf[js.Any])
+    def setDownloadArchiveForOrg(value: `766`): Self = StObject.set(x, "downloadArchiveForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteArchiveForAuthenticatedUser(value: `764`): Self = this.set("deleteArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setGetArchiveForAuthenticatedUser(value: `767`): Self = StObject.set(x, "getArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteArchiveForOrg(value: `765`): Self = this.set("deleteArchiveForOrg", value.asInstanceOf[js.Any])
+    def setGetCommitAuthors(value: `768`): Self = StObject.set(x, "getCommitAuthors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadArchiveForOrg(value: `766`): Self = this.set("downloadArchiveForOrg", value.asInstanceOf[js.Any])
+    def setGetImportStatus(value: `769`): Self = StObject.set(x, "getImportStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetArchiveForAuthenticatedUser(value: `767`): Self = this.set("getArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setGetLargeFiles(value: `770`): Self = StObject.set(x, "getLargeFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCommitAuthors(value: `768`): Self = this.set("getCommitAuthors", value.asInstanceOf[js.Any])
+    def setGetStatusForAuthenticatedUser(value: `771`): Self = StObject.set(x, "getStatusForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetImportStatus(value: `769`): Self = this.set("getImportStatus", value.asInstanceOf[js.Any])
+    def setGetStatusForOrg(value: `772`): Self = StObject.set(x, "getStatusForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLargeFiles(value: `770`): Self = this.set("getLargeFiles", value.asInstanceOf[js.Any])
+    def setListForAuthenticatedUser(value: `773`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStatusForAuthenticatedUser(value: `771`): Self = this.set("getStatusForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setListForOrg(value: `774`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStatusForOrg(value: `772`): Self = this.set("getStatusForOrg", value.asInstanceOf[js.Any])
+    def setListReposForOrg(value: `775`): Self = StObject.set(x, "listReposForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListForAuthenticatedUser(value: `773`): Self = this.set("listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setListReposForUser(value: `776`): Self = StObject.set(x, "listReposForUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListForOrg(value: `774`): Self = this.set("listForOrg", value.asInstanceOf[js.Any])
+    def setMapCommitAuthor(value: `777`): Self = StObject.set(x, "mapCommitAuthor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListReposForOrg(value: `775`): Self = this.set("listReposForOrg", value.asInstanceOf[js.Any])
+    def setSetLfsPreference(value: `778`): Self = StObject.set(x, "setLfsPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListReposForUser(value: `776`): Self = this.set("listReposForUser", value.asInstanceOf[js.Any])
+    def setStartForAuthenticatedUser(value: `779`): Self = StObject.set(x, "startForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapCommitAuthor(value: `777`): Self = this.set("mapCommitAuthor", value.asInstanceOf[js.Any])
+    def setStartForOrg(value: `780`): Self = StObject.set(x, "startForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetLfsPreference(value: `778`): Self = this.set("setLfsPreference", value.asInstanceOf[js.Any])
+    def setStartImport(value: `781`): Self = StObject.set(x, "startImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartForAuthenticatedUser(value: `779`): Self = this.set("startForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setUnlockRepoForAuthenticatedUser(value: `782`): Self = StObject.set(x, "unlockRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartForOrg(value: `780`): Self = this.set("startForOrg", value.asInstanceOf[js.Any])
+    def setUnlockRepoForOrg(value: `783`): Self = StObject.set(x, "unlockRepoForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartImport(value: `781`): Self = this.set("startImport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnlockRepoForAuthenticatedUser(value: `782`): Self = this.set("unlockRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnlockRepoForOrg(value: `783`): Self = this.set("unlockRepoForOrg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateImport(value: `784`): Self = this.set("updateImport", value.asInstanceOf[js.Any])
+    def setUpdateImport(value: `784`): Self = StObject.set(x, "updateImport", value.asInstanceOf[js.Any])
   }
 }

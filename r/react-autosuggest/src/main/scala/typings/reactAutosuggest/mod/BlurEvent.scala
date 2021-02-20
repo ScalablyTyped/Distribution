@@ -1,11 +1,12 @@
 package typings.reactAutosuggest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlurEvent[TSuggestion] extends js.Object {
+trait BlurEvent[TSuggestion] extends StObject {
   
   var highlightedSuggestion: TSuggestion = js.native
 }
@@ -18,21 +19,9 @@ object BlurEvent {
   }
   
   @scala.inline
-  implicit class BlurEventOps[Self <: BlurEvent[_], TSuggestion] (val x: Self with BlurEvent[TSuggestion]) extends AnyVal {
+  implicit class BlurEventMutableBuilder[Self <: BlurEvent[_], TSuggestion] (val x: Self with BlurEvent[TSuggestion]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHighlightedSuggestion(value: TSuggestion): Self = this.set("highlightedSuggestion", value.asInstanceOf[js.Any])
+    def setHighlightedSuggestion(value: TSuggestion): Self = StObject.set(x, "highlightedSuggestion", value.asInstanceOf[js.Any])
   }
 }

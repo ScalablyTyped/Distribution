@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvisionedPlan extends js.Object {
+trait ProvisionedPlan extends StObject {
   
   // For example, 'Enabled'.
   var capabilityStatus: js.UndefOr[NullableOption[String]] = js.native
@@ -25,45 +26,33 @@ object ProvisionedPlan {
   }
   
   @scala.inline
-  implicit class ProvisionedPlanOps[Self <: ProvisionedPlan] (val x: Self) extends AnyVal {
+  implicit class ProvisionedPlanMutableBuilder[Self <: ProvisionedPlan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilityStatus(value: NullableOption[String]): Self = StObject.set(x, "capabilityStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilityStatusNull: Self = StObject.set(x, "capabilityStatus", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilityStatusUndefined: Self = StObject.set(x, "capabilityStatus", js.undefined)
     
     @scala.inline
-    def setCapabilityStatus(value: NullableOption[String]): Self = this.set("capabilityStatus", value.asInstanceOf[js.Any])
+    def setProvisioningStatus(value: NullableOption[String]): Self = StObject.set(x, "provisioningStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapabilityStatus: Self = this.set("capabilityStatus", js.undefined)
+    def setProvisioningStatusNull: Self = StObject.set(x, "provisioningStatus", null)
     
     @scala.inline
-    def setCapabilityStatusNull: Self = this.set("capabilityStatus", null)
+    def setProvisioningStatusUndefined: Self = StObject.set(x, "provisioningStatus", js.undefined)
     
     @scala.inline
-    def setProvisioningStatus(value: NullableOption[String]): Self = this.set("provisioningStatus", value.asInstanceOf[js.Any])
+    def setService(value: NullableOption[String]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProvisioningStatus: Self = this.set("provisioningStatus", js.undefined)
+    def setServiceNull: Self = StObject.set(x, "service", null)
     
     @scala.inline
-    def setProvisioningStatusNull: Self = this.set("provisioningStatus", null)
-    
-    @scala.inline
-    def setService(value: NullableOption[String]): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
-    
-    @scala.inline
-    def setServiceNull: Self = this.set("service", null)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

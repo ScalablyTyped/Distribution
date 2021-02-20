@@ -6,12 +6,13 @@ import typings.chrome.chrome.identity.TokenDetails
 import typings.chrome.chrome.identity.TokenInformation
 import typings.chrome.chrome.identity.UserInfo
 import typings.chrome.chrome.identity.WebAuthFlowOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofidentity extends js.Object {
+trait Typeofidentity extends StObject {
   
   def getAccounts(callback: js.Function1[/* accounts */ js.Array[AccountInfo], Unit]): Unit = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceAccessDetails extends js.Object {
+trait InstanceAccessDetails extends StObject {
   
   /**
     * For SSH access, the public key to use when accessing your instance For OpenSSH clients (e.g., command line SSH), you should save this value to tempkey-cert.pub.
@@ -66,81 +67,69 @@ object InstanceAccessDetails {
   }
   
   @scala.inline
-  implicit class InstanceAccessDetailsOps[Self <: InstanceAccessDetails] (val x: Self) extends AnyVal {
+  implicit class InstanceAccessDetailsMutableBuilder[Self <: InstanceAccessDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertKey(value: String): Self = StObject.set(x, "certKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertKeyUndefined: Self = StObject.set(x, "certKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiresAt(value: IsoDate): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertKey(value: String): Self = this.set("certKey", value.asInstanceOf[js.Any])
+    def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
     
     @scala.inline
-    def deleteCertKey: Self = this.set("certKey", js.undefined)
+    def setHostKeys(value: HostKeysList): Self = StObject.set(x, "hostKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiresAt(value: IsoDate): Self = this.set("expiresAt", value.asInstanceOf[js.Any])
+    def setHostKeysUndefined: Self = StObject.set(x, "hostKeys", js.undefined)
     
     @scala.inline
-    def deleteExpiresAt: Self = this.set("expiresAt", js.undefined)
+    def setHostKeysVarargs(value: HostKeyAttributes*): Self = StObject.set(x, "hostKeys", js.Array(value :_*))
     
     @scala.inline
-    def setHostKeysVarargs(value: HostKeyAttributes*): Self = this.set("hostKeys", js.Array(value :_*))
+    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostKeys(value: HostKeysList): Self = this.set("hostKeys", value.asInstanceOf[js.Any])
+    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
     @scala.inline
-    def deleteHostKeys: Self = this.set("hostKeys", js.undefined)
+    def setIpAddress(value: IpAddress): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceName(value: ResourceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     @scala.inline
-    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: IpAddress): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    def setPasswordData(value: PasswordData): Self = StObject.set(x, "passwordData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    def setPasswordDataUndefined: Self = StObject.set(x, "passwordData", js.undefined)
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordData(value: PasswordData): Self = this.set("passwordData", value.asInstanceOf[js.Any])
+    def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
     
     @scala.inline
-    def deletePasswordData: Self = this.set("passwordData", js.undefined)
+    def setProtocol(value: InstanceAccessProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKey(value: String): Self = this.set("privateKey", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deletePrivateKey: Self = this.set("privateKey", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: InstanceAccessProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

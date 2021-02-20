@@ -2,6 +2,7 @@ package typings.vegaTypings.transformMod
 
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.quantile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,57 +32,45 @@ object QuantileTransform {
   }
   
   @scala.inline
-  implicit class QuantileTransformOps[Self <: QuantileTransform] (val x: Self) extends AnyVal {
+  implicit class QuantileTransformMutableBuilder[Self <: QuantileTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: (js.Array[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsVarargs(value: (String | SignalRef)*): Self = StObject.set(x, "as", js.Array(value :_*))
     
     @scala.inline
-    def setField(value: FieldRef): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: quantile): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsVarargs(value: (String | SignalRef)*): Self = this.set("as", js.Array(value :_*))
+    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
     @scala.inline
-    def setAs(value: (js.Array[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setProbs(value: js.Array[Double] | SignalRef): Self = StObject.set(x, "probs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupbyVarargs(value: FieldRef*): Self = this.set("groupby", js.Array(value :_*))
+    def setProbsUndefined: Self = StObject.set(x, "probs", js.undefined)
     
     @scala.inline
-    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = this.set("groupby", value.asInstanceOf[js.Any])
+    def setProbsVarargs(value: Double*): Self = StObject.set(x, "probs", js.Array(value :_*))
     
     @scala.inline
-    def deleteGroupby: Self = this.set("groupby", js.undefined)
+    def setStep(value: Double | SignalRef): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProbsVarargs(value: Double*): Self = this.set("probs", js.Array(value :_*))
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def setProbs(value: js.Array[Double] | SignalRef): Self = this.set("probs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProbs: Self = this.set("probs", js.undefined)
-    
-    @scala.inline
-    def setStep(value: Double | SignalRef): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setType(value: quantile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

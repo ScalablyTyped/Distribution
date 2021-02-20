@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityInfo extends js.Object {
+trait IdentityInfo extends StObject {
   
   /**
     * The address or domain of the identity.
@@ -31,36 +32,24 @@ object IdentityInfo {
   }
   
   @scala.inline
-  implicit class IdentityInfoOps[Self <: IdentityInfo] (val x: Self) extends AnyVal {
+  implicit class IdentityInfoMutableBuilder[Self <: IdentityInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityName(value: Identity): Self = StObject.set(x, "IdentityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityNameUndefined: Self = StObject.set(x, "IdentityName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityName(value: Identity): Self = this.set("IdentityName", value.asInstanceOf[js.Any])
+    def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
     
     @scala.inline
-    def deleteIdentityName: Self = this.set("IdentityName", js.undefined)
+    def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityType(value: IdentityType): Self = this.set("IdentityType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityType: Self = this.set("IdentityType", js.undefined)
-    
-    @scala.inline
-    def setSendingEnabled(value: Enabled): Self = this.set("SendingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendingEnabled: Self = this.set("SendingEnabled", js.undefined)
+    def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
   }
 }

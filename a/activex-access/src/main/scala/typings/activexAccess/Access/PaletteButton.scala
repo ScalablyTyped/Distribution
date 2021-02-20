@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaletteButton extends js.Object {
+trait PaletteButton extends StObject {
   
   @JSName("Access.PaletteButton_typekey")
   var AccessDotPaletteButton_typekey: PaletteButton = js.native

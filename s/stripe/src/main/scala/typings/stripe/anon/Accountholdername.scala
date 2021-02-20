@@ -2,12 +2,13 @@ package typings.stripe.anon
 
 import typings.stripe.stripeStrings.company
 import typings.stripe.stripeStrings.individual
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Accountholdername extends js.Object {
+trait Accountholdername extends StObject {
   
   /**
     * The name of the person or business that owns the bank account. This
@@ -63,51 +64,39 @@ object Accountholdername {
   }
   
   @scala.inline
-  implicit class AccountholdernameOps[Self <: Accountholdername] (val x: Self) extends AnyVal {
+  implicit class AccountholdernameMutableBuilder[Self <: Accountholdername] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccount_holder_nameUndefined: Self = StObject.set(x, "account_holder_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_number(value: String): Self = this.set("account_number", value.asInstanceOf[js.Any])
+    def setAccount_holder_typeNull: Self = StObject.set(x, "account_holder_type", null)
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setAccount_holder_typeUndefined: Self = StObject.set(x, "account_holder_type", js.undefined)
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: String): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_holder_name(value: String): Self = this.set("account_holder_name", value.asInstanceOf[js.Any])
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccount_holder_name: Self = this.set("account_holder_name", js.undefined)
+    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_holder_type(value: individual | company): Self = this.set("account_holder_type", value.asInstanceOf[js.Any])
+    def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccount_holder_type: Self = this.set("account_holder_type", js.undefined)
-    
-    @scala.inline
-    def setAccount_holder_typeNull: Self = this.set("account_holder_type", null)
-    
-    @scala.inline
-    def setRouting_number(value: String): Self = this.set("routing_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouting_number: Self = this.set("routing_number", js.undefined)
+    def setRouting_numberUndefined: Self = StObject.set(x, "routing_number", js.undefined)
   }
 }

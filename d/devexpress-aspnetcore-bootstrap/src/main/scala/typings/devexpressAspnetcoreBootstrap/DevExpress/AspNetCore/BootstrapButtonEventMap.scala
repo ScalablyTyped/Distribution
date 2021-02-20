@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object BootstrapButtonEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapButtonEventMapOps[Self <: BootstrapButtonEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapButtonEventMapMutableBuilder[Self <: BootstrapButtonEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClick(value: ButtonClickEventArgs): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGotFocus(value: EventArgs): Self = StObject.set(x, "gotFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedChanged(value: ProcessingModeEventArgs): Self = this.set("checkedChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClick(value: ButtonClickEventArgs): Self = this.set("click", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGotFocus(value: EventArgs): Self = this.set("gotFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLostFocus(value: EventArgs): Self = this.set("lostFocus", value.asInstanceOf[js.Any])
+    def setLostFocus(value: EventArgs): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
   }
 }

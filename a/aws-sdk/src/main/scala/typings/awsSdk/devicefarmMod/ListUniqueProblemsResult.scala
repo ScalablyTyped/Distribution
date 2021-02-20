@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUniqueProblemsResult extends js.Object {
+trait ListUniqueProblemsResult extends StObject {
   
   /**
     * If the number of items that are returned is significantly large, this is an identifier that is also returned. It can be used in a subsequent call to this operation to return the next set of items in the list.
@@ -26,30 +27,18 @@ object ListUniqueProblemsResult {
   }
   
   @scala.inline
-  implicit class ListUniqueProblemsResultOps[Self <: ListUniqueProblemsResult] (val x: Self) extends AnyVal {
+  implicit class ListUniqueProblemsResultMutableBuilder[Self <: ListUniqueProblemsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUniqueProblems(value: UniqueProblemsByExecutionResultMap): Self = StObject.set(x, "uniqueProblems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setUniqueProblems(value: UniqueProblemsByExecutionResultMap): Self = this.set("uniqueProblems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueProblems: Self = this.set("uniqueProblems", js.undefined)
+    def setUniqueProblemsUndefined: Self = StObject.set(x, "uniqueProblems", js.undefined)
   }
 }

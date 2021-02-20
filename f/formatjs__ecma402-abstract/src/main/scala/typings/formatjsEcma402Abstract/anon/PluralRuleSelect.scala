@@ -6,12 +6,13 @@ import typings.formatjsEcma402Abstract.pluralRulesGetOperandsMod.OperandsRecord
 import typings.formatjsEcma402Abstract.typesPluralRulesMod.LDMLPluralRule
 import typings.formatjsEcma402Abstract.typesPluralRulesMod.PluralRulesInternal
 import typings.std.Intl.PluralRules
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluralRuleSelect extends js.Object {
+trait PluralRuleSelect extends StObject {
   
   @JSName("PluralRuleSelect")
   def PluralRuleSelect_cardinal(locale: String, `type`: cardinal, n: Double, operands: OperandsRecord): LDMLPluralRule = js.native

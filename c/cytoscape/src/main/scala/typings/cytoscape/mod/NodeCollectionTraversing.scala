@@ -1,11 +1,12 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeCollectionTraversing extends js.Object {
+trait NodeCollectionTraversing extends StObject {
   
   /**
     * Get the edges connected to the nodes in the collection.

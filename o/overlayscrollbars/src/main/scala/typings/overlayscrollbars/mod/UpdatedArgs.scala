@@ -1,11 +1,12 @@
 package typings.overlayscrollbars.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdatedArgs extends js.Object {
+trait UpdatedArgs extends StObject {
   
   var forced: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object UpdatedArgs {
   }
   
   @scala.inline
-  implicit class UpdatedArgsOps[Self <: UpdatedArgs] (val x: Self) extends AnyVal {
+  implicit class UpdatedArgsMutableBuilder[Self <: UpdatedArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForced(value: Boolean): Self = this.set("forced", value.asInstanceOf[js.Any])
+    def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
   }
 }

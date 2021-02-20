@@ -1,12 +1,13 @@
 package typings.jsoneditor.mod
 
 import typings.ajv.mod.ErrorObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaValidationError extends js.Object {
+trait SchemaValidationError extends StObject {
   
   var error: ErrorObject = js.native
   
@@ -24,27 +25,15 @@ object SchemaValidationError {
   }
   
   @scala.inline
-  implicit class SchemaValidationErrorOps[Self <: SchemaValidationError] (val x: Self) extends AnyVal {
+  implicit class SchemaValidationErrorMutableBuilder[Self <: SchemaValidationError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: ErrorObject): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: ErrorObject): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: Node): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: SchemaValidationErrorType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: SchemaValidationErrorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.activexExcel.Excel
 import typings.activexOffice.Office.MsoEditingType
 import typings.activexOffice.Office.MsoSegmentType
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShapeNode extends js.Object {
+trait ShapeNode extends StObject {
   
   val Application: js.Any = js.native
   
@@ -43,39 +44,27 @@ object ShapeNode {
   }
   
   @scala.inline
-  implicit class ShapeNodeOps[Self <: ShapeNode] (val x: Self) extends AnyVal {
+  implicit class ShapeNodeMutableBuilder[Self <: ShapeNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditingType(value: MsoEditingType): Self = StObject.set(x, "EditingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotShapeNode_typekey(value: ShapeNode): Self = StObject.set(x, "Excel.ShapeNode_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditingType(value: MsoEditingType): Self = this.set("EditingType", value.asInstanceOf[js.Any])
+    def setPoints(value: SafeArray[Double]): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotShapeNode_typekey(value: ShapeNode): Self = this.set("Excel.ShapeNode_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoints(value: SafeArray[Double]): Self = this.set("Points", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSegmentType(value: MsoSegmentType): Self = this.set("SegmentType", value.asInstanceOf[js.Any])
+    def setSegmentType(value: MsoSegmentType): Self = StObject.set(x, "SegmentType", value.asInstanceOf[js.Any])
   }
 }

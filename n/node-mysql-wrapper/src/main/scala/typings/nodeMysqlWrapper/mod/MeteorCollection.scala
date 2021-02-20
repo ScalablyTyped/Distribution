@@ -5,13 +5,14 @@ import typings.nodeMysqlWrapper.Mongo.Cursor
 import typings.nodeMysqlWrapper.anon.Fetch
 import typings.nodeMysqlWrapper.anon.Fields
 import typings.nodeMysqlWrapper.anon.Reactive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "MeteorCollection")
 @js.native
-class MeteorCollection[T] protected () extends js.Object {
+class MeteorCollection[T] protected () extends StObject {
   def this(table: Table[T]) = this()
   def this(table: Table[T], name: String) = this()
   

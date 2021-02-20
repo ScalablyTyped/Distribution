@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportTime extends js.Object {
+trait ReportTime extends StObject {
   
   var reportTime: js.UndefOr[String] = js.native
   
@@ -20,33 +21,21 @@ object ReportTime {
   }
   
   @scala.inline
-  implicit class ReportTimeOps[Self <: ReportTime] (val x: Self) extends AnyVal {
+  implicit class ReportTimeMutableBuilder[Self <: ReportTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReportTimeUndefined: Self = StObject.set(x, "reportTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSystemRamFreeInfo(value: js.Array[String]): Self = StObject.set(x, "systemRamFreeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportTime(value: String): Self = this.set("reportTime", value.asInstanceOf[js.Any])
+    def setSystemRamFreeInfoUndefined: Self = StObject.set(x, "systemRamFreeInfo", js.undefined)
     
     @scala.inline
-    def deleteReportTime: Self = this.set("reportTime", js.undefined)
-    
-    @scala.inline
-    def setSystemRamFreeInfoVarargs(value: String*): Self = this.set("systemRamFreeInfo", js.Array(value :_*))
-    
-    @scala.inline
-    def setSystemRamFreeInfo(value: js.Array[String]): Self = this.set("systemRamFreeInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemRamFreeInfo: Self = this.set("systemRamFreeInfo", js.undefined)
+    def setSystemRamFreeInfoVarargs(value: String*): Self = StObject.set(x, "systemRamFreeInfo", js.Array(value :_*))
   }
 }

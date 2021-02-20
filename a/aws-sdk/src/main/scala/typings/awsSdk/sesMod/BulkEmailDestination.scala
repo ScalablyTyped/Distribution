@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkEmailDestination extends js.Object {
+trait BulkEmailDestination extends StObject {
   
   var Destination: typings.awsSdk.sesMod.Destination = js.native
   
@@ -28,36 +29,24 @@ object BulkEmailDestination {
   }
   
   @scala.inline
-  implicit class BulkEmailDestinationOps[Self <: BulkEmailDestination] (val x: Self) extends AnyVal {
+  implicit class BulkEmailDestinationMutableBuilder[Self <: BulkEmailDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplacementTags(value: MessageTagList): Self = StObject.set(x, "ReplacementTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplacementTagsUndefined: Self = StObject.set(x, "ReplacementTags", js.undefined)
     
     @scala.inline
-    def setDestination(value: Destination): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    def setReplacementTagsVarargs(value: MessageTag*): Self = StObject.set(x, "ReplacementTags", js.Array(value :_*))
     
     @scala.inline
-    def setReplacementTagsVarargs(value: MessageTag*): Self = this.set("ReplacementTags", js.Array(value :_*))
+    def setReplacementTemplateData(value: TemplateData): Self = StObject.set(x, "ReplacementTemplateData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplacementTags(value: MessageTagList): Self = this.set("ReplacementTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplacementTags: Self = this.set("ReplacementTags", js.undefined)
-    
-    @scala.inline
-    def setReplacementTemplateData(value: TemplateData): Self = this.set("ReplacementTemplateData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplacementTemplateData: Self = this.set("ReplacementTemplateData", js.undefined)
+    def setReplacementTemplateDataUndefined: Self = StObject.set(x, "ReplacementTemplateData", js.undefined)
   }
 }

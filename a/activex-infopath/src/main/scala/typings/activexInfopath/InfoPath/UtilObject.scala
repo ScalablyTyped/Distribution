@@ -1,12 +1,13 @@
 package typings.activexInfopath.InfoPath
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UtilObject extends js.Object {
+trait UtilObject extends StObject {
   
   val Date: VarDate = js.native
   
@@ -32,30 +33,18 @@ object UtilObject {
   }
   
   @scala.inline
-  implicit class UtilObjectOps[Self <: UtilObject] (val x: Self) extends AnyVal {
+  implicit class UtilObjectMutableBuilder[Self <: UtilObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: VarDate): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoPathDotUtilObject_typekey(value: UtilObject): Self = StObject.set(x, "InfoPath.UtilObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatch(value: (String, String) => Boolean): Self = StObject.set(x, "Match", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDate(value: VarDate): Self = this.set("Date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfoPathDotUtilObject_typekey(value: UtilObject): Self = this.set("InfoPath.UtilObject_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatch(value: (String, String) => Boolean): Self = this.set("Match", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMath(value: MathObject): Self = this.set("Math", value.asInstanceOf[js.Any])
+    def setMath(value: MathObject): Self = StObject.set(x, "Math", value.asInstanceOf[js.Any])
   }
 }

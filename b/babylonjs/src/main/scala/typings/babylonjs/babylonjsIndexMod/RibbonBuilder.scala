@@ -3,6 +3,7 @@ package typings.babylonjs.babylonjsIndexMod
 import typings.babylonjs.anon.CloseArray
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class RibbonBuilder ()
   extends typings.babylonjs.buildersIndexMod.RibbonBuilder
 /* static members */
-@JSImport("babylonjs/Meshes/index", "RibbonBuilder")
-@js.native
-object RibbonBuilder extends js.Object {
+object RibbonBuilder {
   
   /**
     * Creates a ribbon mesh. The ribbon is a parametric shape.  It has no predefined shape. Its final shape will depend on the input parameters
@@ -39,6 +38,10 @@ object RibbonBuilder extends js.Object {
     * @see https://doc.babylonjs.com/how_to/ribbon_tutorial
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     */
+  @JSImport("babylonjs/Meshes/index", "RibbonBuilder.CreateRibbon")
+  @js.native
   def CreateRibbon(name: String, options: CloseArray): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs/Meshes/index", "RibbonBuilder.CreateRibbon")
+  @js.native
   def CreateRibbon(name: String, options: CloseArray, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }

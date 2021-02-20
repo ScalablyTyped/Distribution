@@ -1,17 +1,19 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.commonTypesMod.IgResponse
 import typings.instagramPrivateApi.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/qp.repository", JSImport.Namespace)
-@js.native
-object qpRepositoryMod extends js.Object {
+object qpRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/qp.repository", "QpRepository")
   @js.native
-  class QpRepository () extends Repository {
+  class QpRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def batchFetch(): js.Promise[IgResponse[_]] = js.native
     

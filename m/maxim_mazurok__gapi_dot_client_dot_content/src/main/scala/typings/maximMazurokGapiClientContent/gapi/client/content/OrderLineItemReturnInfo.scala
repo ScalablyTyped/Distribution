@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderLineItemReturnInfo extends js.Object {
+trait OrderLineItemReturnInfo extends StObject {
   
   /** Required. How many days later the item can be returned. */
   var daysToReturn: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object OrderLineItemReturnInfo {
   }
   
   @scala.inline
-  implicit class OrderLineItemReturnInfoOps[Self <: OrderLineItemReturnInfo] (val x: Self) extends AnyVal {
+  implicit class OrderLineItemReturnInfoMutableBuilder[Self <: OrderLineItemReturnInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaysToReturn(value: Double): Self = StObject.set(x, "daysToReturn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaysToReturnUndefined: Self = StObject.set(x, "daysToReturn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsReturnable(value: Boolean): Self = StObject.set(x, "isReturnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysToReturn(value: Double): Self = this.set("daysToReturn", value.asInstanceOf[js.Any])
+    def setIsReturnableUndefined: Self = StObject.set(x, "isReturnable", js.undefined)
     
     @scala.inline
-    def deleteDaysToReturn: Self = this.set("daysToReturn", js.undefined)
+    def setPolicyUrl(value: String): Self = StObject.set(x, "policyUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReturnable(value: Boolean): Self = this.set("isReturnable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsReturnable: Self = this.set("isReturnable", js.undefined)
-    
-    @scala.inline
-    def setPolicyUrl(value: String): Self = this.set("policyUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyUrl: Self = this.set("policyUrl", js.undefined)
+    def setPolicyUrlUndefined: Self = StObject.set(x, "policyUrl", js.undefined)
   }
 }

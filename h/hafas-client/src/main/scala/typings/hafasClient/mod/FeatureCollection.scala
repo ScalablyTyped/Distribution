@@ -1,11 +1,12 @@
 package typings.hafasClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureCollection extends js.Object {
+trait FeatureCollection extends StObject {
   
   var features: js.Array[Feature] = js.native
   
@@ -21,27 +22,15 @@ object FeatureCollection {
   }
   
   @scala.inline
-  implicit class FeatureCollectionOps[Self <: FeatureCollection] (val x: Self) extends AnyVal {
+  implicit class FeatureCollectionMutableBuilder[Self <: FeatureCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFeaturesVarargs(value: Feature*): Self = this.set("features", js.Array(value :_*))
-    
-    @scala.inline
-    def setFeatures(value: js.Array[Feature]): Self = this.set("features", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.hafasClient.hafasClientStrings.FeatureCollection): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.hafasClient.hafasClientStrings.FeatureCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

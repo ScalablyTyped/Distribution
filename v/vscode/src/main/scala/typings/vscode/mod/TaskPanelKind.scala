@@ -1,15 +1,15 @@
 package typings.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TaskPanelKind extends js.Object
+sealed trait TaskPanelKind extends StObject
 @JSImport("vscode", "TaskPanelKind")
 @js.native
-object TaskPanelKind extends js.Object {
+object TaskPanelKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskPanelKind with Double] = js.native
@@ -20,22 +20,19 @@ object TaskPanelKind extends js.Object {
     */
   @js.native
   sealed trait Dedicated extends TaskPanelKind
-  /* 2 */ @js.native
-  object Dedicated extends TopLevel[Dedicated with Double]
+  /* 2 */ val Dedicated: typings.vscode.mod.TaskPanelKind.Dedicated with Double = js.native
   
   /**
     * Creates a new panel whenever this task is executed.
     */
   @js.native
   sealed trait New extends TaskPanelKind
-  /* 3 */ @js.native
-  object New extends TopLevel[New with Double]
+  /* 3 */ val New: typings.vscode.mod.TaskPanelKind.New with Double = js.native
   
   /**
     * Shares a panel with other tasks. This is the default.
     */
   @js.native
   sealed trait Shared extends TaskPanelKind
-  /* 1 */ @js.native
-  object Shared extends TopLevel[Shared with Double]
+  /* 1 */ val Shared: typings.vscode.mod.TaskPanelKind.Shared with Double = js.native
 }

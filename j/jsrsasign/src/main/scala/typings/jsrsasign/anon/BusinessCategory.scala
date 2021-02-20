@@ -1,11 +1,12 @@
 package typings.jsrsasign.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BusinessCategory extends js.Object {
+trait BusinessCategory extends StObject {
   
   var C: String = js.native
   
@@ -71,72 +72,60 @@ object BusinessCategory {
   }
   
   @scala.inline
-  implicit class BusinessCategoryOps[Self <: BusinessCategory] (val x: Self) extends AnyVal {
+  implicit class BusinessCategoryMutableBuilder[Self <: BusinessCategory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusinessCategory(value: String): Self = StObject.set(x, "businessCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCN(value: String): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setC(value: String): Self = this.set("C", value.asInstanceOf[js.Any])
+    def setDC(value: String): Self = StObject.set(x, "DC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCN(value: String): Self = this.set("CN", value.asInstanceOf[js.Any])
+    def setDN(value: String): Self = StObject.set(x, "DN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDC(value: String): Self = this.set("DC", value.asInstanceOf[js.Any])
+    def setE(value: String): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDN(value: String): Self = this.set("DN", value.asInstanceOf[js.Any])
+    def setJurisdictionOfIncorporationC(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: String): Self = this.set("E", value.asInstanceOf[js.Any])
+    def setJurisdictionOfIncorporationL(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL(value: String): Self = this.set("L", value.asInstanceOf[js.Any])
+    def setJurisdictionOfIncorporationSP(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationSP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setO(value: String): Self = this.set("O", value.asInstanceOf[js.Any])
+    def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOU(value: String): Self = this.set("OU", value.asInstanceOf[js.Any])
+    def setO(value: String): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSN(value: String): Self = this.set("SN", value.asInstanceOf[js.Any])
+    def setOU(value: String): Self = StObject.set(x, "OU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setST(value: String): Self = this.set("ST", value.asInstanceOf[js.Any])
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSTREET(value: String): Self = this.set("STREET", value.asInstanceOf[js.Any])
+    def setSN(value: String): Self = StObject.set(x, "SN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUID(value: String): Self = this.set("UID", value.asInstanceOf[js.Any])
+    def setST(value: String): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessCategory(value: String): Self = this.set("businessCategory", value.asInstanceOf[js.Any])
+    def setSTREET(value: String): Self = StObject.set(x, "STREET", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdictionOfIncorporationC(value: String): Self = this.set("jurisdictionOfIncorporationC", value.asInstanceOf[js.Any])
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdictionOfIncorporationL(value: String): Self = this.set("jurisdictionOfIncorporationL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJurisdictionOfIncorporationSP(value: String): Self = this.set("jurisdictionOfIncorporationSP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    def setUID(value: String): Self = StObject.set(x, "UID", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,63 +68,51 @@ object BootstrapComboBoxEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapComboBoxEventMapOps[Self <: BootstrapComboBoxEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapComboBoxEventMapMutableBuilder[Self <: BootstrapComboBoxEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonClick(value: ButtonEditClickEventArgs): Self = StObject.set(x, "buttonClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = this.set("beginCallback", value.asInstanceOf[js.Any])
+    def setCloseUp(value: EventArgs): Self = StObject.set(x, "closeUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonClick(value: ButtonEditClickEventArgs): Self = this.set("buttonClick", value.asInstanceOf[js.Any])
+    def setCustomHighlighting(value: ListEditCustomHighlightingEventArgs): Self = StObject.set(x, "customHighlighting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = this.set("callbackError", value.asInstanceOf[js.Any])
+    def setDropDown(value: EventArgs): Self = StObject.set(x, "dropDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseUp(value: EventArgs): Self = this.set("closeUp", value.asInstanceOf[js.Any])
+    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomHighlighting(value: ListEditCustomHighlightingEventArgs): Self = this.set("customHighlighting", value.asInstanceOf[js.Any])
+    def setItemFiltering(value: ListEditItemFilteringEventArgs): Self = StObject.set(x, "itemFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropDown(value: EventArgs): Self = this.set("dropDown", value.asInstanceOf[js.Any])
+    def setKeyDown(value: EditKeyEventArgs): Self = StObject.set(x, "keyDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = this.set("endCallback", value.asInstanceOf[js.Any])
+    def setKeyPress(value: EditKeyEventArgs): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemFiltering(value: ListEditItemFilteringEventArgs): Self = this.set("itemFiltering", value.asInstanceOf[js.Any])
+    def setKeyUp(value: EditKeyEventArgs): Self = StObject.set(x, "keyUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyDown(value: EditKeyEventArgs): Self = this.set("keyDown", value.asInstanceOf[js.Any])
+    def setQueryCloseUp(value: CancelEventArgs): Self = StObject.set(x, "queryCloseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPress(value: EditKeyEventArgs): Self = this.set("keyPress", value.asInstanceOf[js.Any])
+    def setSelectedIndexChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "selectedIndexChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyUp(value: EditKeyEventArgs): Self = this.set("keyUp", value.asInstanceOf[js.Any])
+    def setTextChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryCloseUp(value: CancelEventArgs): Self = this.set("queryCloseUp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedIndexChanged(value: ProcessingModeEventArgs): Self = this.set("selectedIndexChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextChanged(value: ProcessingModeEventArgs): Self = this.set("textChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserInput(value: EventArgs): Self = this.set("userInput", value.asInstanceOf[js.Any])
+    def setUserInput(value: EventArgs): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
   }
 }

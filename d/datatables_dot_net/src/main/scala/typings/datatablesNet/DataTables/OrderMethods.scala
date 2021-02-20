@@ -2,6 +2,7 @@ package typings.datatablesNet.DataTables
 
 import typings.datatablesNet.JQuery
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion "ajax-methods"
 //#region "order-methods"
 @js.native
-trait OrderMethods extends js.Object {
+trait OrderMethods extends StObject {
   
   /**
     * Get the ordering applied to the table.

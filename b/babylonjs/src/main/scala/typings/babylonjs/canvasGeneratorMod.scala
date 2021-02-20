@@ -1,19 +1,18 @@
 package typings.babylonjs
 
 import typings.std.OffscreenCanvas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/canvasGenerator", JSImport.Namespace)
-@js.native
-object canvasGeneratorMod extends js.Object {
+object canvasGeneratorMod {
   
+  @JSImport("babylonjs/Misc/canvasGenerator", "CanvasGenerator")
   @js.native
-  class CanvasGenerator () extends js.Object
+  class CanvasGenerator () extends StObject
   /* static members */
-  @js.native
-  object CanvasGenerator extends js.Object {
+  object CanvasGenerator {
     
     /**
       * Create a new canvas (or offscreen canvas depending on the context)
@@ -21,6 +20,8 @@ object canvasGeneratorMod extends js.Object {
       * @param height defines the expected height
       * @return a new canvas or offscreen canvas
       */
+    @JSImport("babylonjs/Misc/canvasGenerator", "CanvasGenerator.CreateCanvas")
+    @js.native
     def CreateCanvas(width: Double, height: Double): HTMLCanvasElement | OffscreenCanvas = js.native
   }
 }

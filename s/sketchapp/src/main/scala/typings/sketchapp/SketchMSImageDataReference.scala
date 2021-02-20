@@ -3,12 +3,13 @@ package typings.sketchapp
 import typings.sketchapp.anon.Data
 import typings.sketchapp.sketchappStrings.imageData
 import typings.sketchapp.sketchappStrings.jSONOriginalDataReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSImageDataReference extends js.Object {
+trait SketchMSImageDataReference extends StObject {
   
   var _class: jSONOriginalDataReference = js.native
   
@@ -29,33 +30,21 @@ object SketchMSImageDataReference {
   }
   
   @scala.inline
-  implicit class SketchMSImageDataReferenceOps[Self <: SketchMSImageDataReference] (val x: Self) extends AnyVal {
+  implicit class SketchMSImageDataReferenceMutableBuilder[Self <: SketchMSImageDataReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSha1(value: Data): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_class(value: jSONOriginalDataReference): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: jSONOriginalDataReference): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def set_ref(value: String): Self = StObject.set(x, "_ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_ref(value: String): Self = this.set("_ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_ref_class(value: imageData): Self = this.set("_ref_class", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setData(value: Data): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSha1(value: Data): Self = this.set("sha1", value.asInstanceOf[js.Any])
+    def set_ref_class(value: imageData): Self = StObject.set(x, "_ref_class", value.asInstanceOf[js.Any])
   }
 }

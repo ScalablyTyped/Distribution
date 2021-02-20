@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Placement Assignment.
   */
 @js.native
-trait SchemaPlacementAssignment extends js.Object {
+trait SchemaPlacementAssignment extends StObject {
   
   /**
     * Whether this placement assignment is active. When true, the placement
@@ -42,42 +43,30 @@ object SchemaPlacementAssignment {
   }
   
   @scala.inline
-  implicit class SchemaPlacementAssignmentOps[Self <: SchemaPlacementAssignment] (val x: Self) extends AnyVal {
+  implicit class SchemaPlacementAssignmentMutableBuilder[Self <: SchemaPlacementAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setPlacementIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "placementIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setPlacementIdDimensionValueUndefined: Self = StObject.set(x, "placementIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setPlacementId(value: String): Self = this.set("placementId", value.asInstanceOf[js.Any])
+    def setPlacementIdUndefined: Self = StObject.set(x, "placementId", js.undefined)
     
     @scala.inline
-    def deletePlacementId: Self = this.set("placementId", js.undefined)
+    def setSslRequired(value: Boolean): Self = StObject.set(x, "sslRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementIdDimensionValue(value: SchemaDimensionValue): Self = this.set("placementIdDimensionValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlacementIdDimensionValue: Self = this.set("placementIdDimensionValue", js.undefined)
-    
-    @scala.inline
-    def setSslRequired(value: Boolean): Self = this.set("sslRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslRequired: Self = this.set("sslRequired", js.undefined)
+    def setSslRequiredUndefined: Self = StObject.set(x, "sslRequired", js.undefined)
   }
 }

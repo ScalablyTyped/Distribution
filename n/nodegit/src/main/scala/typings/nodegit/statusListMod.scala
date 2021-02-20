@@ -3,16 +3,16 @@ package typings.nodegit
 import typings.nodegit.diffPerfDataMod.DiffPerfdata
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.statusOptionsMod.StatusOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/status-list", JSImport.Namespace)
-@js.native
-object statusListMod extends js.Object {
+object statusListMod {
   
+  @JSImport("nodegit/status-list", "StatusList")
   @js.native
-  class StatusList () extends js.Object {
+  class StatusList () extends StObject {
     
     def entrycount(): Double = js.native
     
@@ -21,10 +21,13 @@ object statusListMod extends js.Object {
     def getPerfdata(): js.Promise[DiffPerfdata] = js.native
   }
   /* static members */
-  @js.native
-  object StatusList extends js.Object {
+  object StatusList {
     
+    @JSImport("nodegit/status-list", "StatusList.create")
+    @js.native
     def create(repo: Repository): js.Promise[StatusList] = js.native
+    @JSImport("nodegit/status-list", "StatusList.create")
+    @js.native
     def create(repo: Repository, opts: StatusOptions): js.Promise[StatusList] = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Member extends js.Object {
+trait Member extends StObject {
   
   /**
     * The ID of the member account.
@@ -57,45 +58,33 @@ object Member {
   }
   
   @scala.inline
-  implicit class MemberOps[Self <: Member] (val x: Self) extends AnyVal {
+  implicit class MemberMutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectorIdUndefined: Self = StObject.set(x, "DetectorId", js.undefined)
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    def setInvitedAt(value: String): Self = StObject.set(x, "InvitedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterId(value: String): Self = this.set("MasterId", value.asInstanceOf[js.Any])
+    def setInvitedAtUndefined: Self = StObject.set(x, "InvitedAt", js.undefined)
     
     @scala.inline
-    def setRelationshipStatus(value: String): Self = this.set("RelationshipStatus", value.asInstanceOf[js.Any])
+    def setMasterId(value: String): Self = StObject.set(x, "MasterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedAt(value: String): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    def setRelationshipStatus(value: String): Self = StObject.set(x, "RelationshipStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetectorId: Self = this.set("DetectorId", js.undefined)
-    
-    @scala.inline
-    def setInvitedAt(value: String): Self = this.set("InvitedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvitedAt: Self = this.set("InvitedAt", js.undefined)
+    def setUpdatedAt(value: String): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

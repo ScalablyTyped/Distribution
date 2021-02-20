@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportUserField extends js.Object {
+trait ExportUserField extends StObject {
   
   var export_as: js.UndefOr[String] = js.native
   
@@ -20,27 +21,15 @@ object ExportUserField {
   }
   
   @scala.inline
-  implicit class ExportUserFieldOps[Self <: ExportUserField] (val x: Self) extends AnyVal {
+  implicit class ExportUserFieldMutableBuilder[Self <: ExportUserField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExport_as(value: String): Self = StObject.set(x, "export_as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExport_asUndefined: Self = StObject.set(x, "export_as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExport_as(value: String): Self = this.set("export_as", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExport_as: Self = this.set("export_as", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

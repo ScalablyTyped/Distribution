@@ -1,12 +1,19 @@
 package typings.browserfs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("browserfs/dist/node/core/global", JSImport.Namespace)
-@js.native
-object globalMod extends js.Object {
+object globalMod {
   
-  var default: js.Any = js.native
+  @JSImport("browserfs/dist/node/core/global", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("browserfs/dist/node/core/global", JSImport.Default)
+  @js.native
+  def default: js.Any = js.native
+  @scala.inline
+  def default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

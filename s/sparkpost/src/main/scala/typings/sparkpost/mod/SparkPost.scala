@@ -11,12 +11,13 @@ import typings.sparkpost.anon.Search
 import typings.sparkpost.anon.Send
 import typings.sparkpost.anon.Update
 import typings.sparkpost.anon.Upsert
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SparkPost extends js.Object {
+trait SparkPost extends StObject {
   
   def delete(options: Options): js.Promise[Response[_]] = js.native
   def delete(options: Options, callback: Callback[_]): Unit = js.native

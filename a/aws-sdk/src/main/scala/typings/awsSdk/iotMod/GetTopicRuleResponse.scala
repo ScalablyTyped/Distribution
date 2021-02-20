@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTopicRuleResponse extends js.Object {
+trait GetTopicRuleResponse extends StObject {
   
   /**
     * The rule.
@@ -26,30 +27,18 @@ object GetTopicRuleResponse {
   }
   
   @scala.inline
-  implicit class GetTopicRuleResponseOps[Self <: GetTopicRuleResponse] (val x: Self) extends AnyVal {
+  implicit class GetTopicRuleResponseMutableBuilder[Self <: GetTopicRuleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRule(value: TopicRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleArn(value: RuleArn): Self = StObject.set(x, "ruleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleArnUndefined: Self = StObject.set(x, "ruleArn", js.undefined)
     
     @scala.inline
-    def setRule(value: TopicRule): Self = this.set("rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
-    
-    @scala.inline
-    def setRuleArn(value: RuleArn): Self = this.set("ruleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleArn: Self = this.set("ruleArn", js.undefined)
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

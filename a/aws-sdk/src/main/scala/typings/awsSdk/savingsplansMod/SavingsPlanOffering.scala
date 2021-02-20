@@ -1,11 +1,12 @@
 package typings.awsSdk.savingsplansMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavingsPlanOffering extends js.Object {
+trait SavingsPlanOffering extends StObject {
   
   /**
     * The currency.
@@ -71,90 +72,78 @@ object SavingsPlanOffering {
   }
   
   @scala.inline
-  implicit class SavingsPlanOfferingOps[Self <: SavingsPlanOffering] (val x: Self) extends AnyVal {
+  implicit class SavingsPlanOfferingMutableBuilder[Self <: SavingsPlanOffering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrency(value: CurrencyCode): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: SavingsPlanDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: CurrencyCode): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setDurationSeconds(value: SavingsPlansDuration): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: SavingsPlanDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setOfferingId(value: UUID): Self = StObject.set(x, "offeringId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationSeconds(value: SavingsPlansDuration): Self = this.set("durationSeconds", value.asInstanceOf[js.Any])
+    def setOfferingIdUndefined: Self = StObject.set(x, "offeringId", js.undefined)
     
     @scala.inline
-    def deleteDurationSeconds: Self = this.set("durationSeconds", js.undefined)
+    def setOperation(value: SavingsPlanOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferingId(value: UUID): Self = this.set("offeringId", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteOfferingId: Self = this.set("offeringId", js.undefined)
+    def setPaymentOption(value: SavingsPlanPaymentOption): Self = StObject.set(x, "paymentOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: SavingsPlanOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setPaymentOptionUndefined: Self = StObject.set(x, "paymentOption", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setPlanType(value: SavingsPlanType): Self = StObject.set(x, "planType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentOption(value: SavingsPlanPaymentOption): Self = this.set("paymentOption", value.asInstanceOf[js.Any])
+    def setPlanTypeUndefined: Self = StObject.set(x, "planType", js.undefined)
     
     @scala.inline
-    def deletePaymentOption: Self = this.set("paymentOption", js.undefined)
+    def setProductTypes(value: SavingsPlanProductTypeList): Self = StObject.set(x, "productTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanType(value: SavingsPlanType): Self = this.set("planType", value.asInstanceOf[js.Any])
+    def setProductTypesUndefined: Self = StObject.set(x, "productTypes", js.undefined)
     
     @scala.inline
-    def deletePlanType: Self = this.set("planType", js.undefined)
+    def setProductTypesVarargs(value: SavingsPlanProductType*): Self = StObject.set(x, "productTypes", js.Array(value :_*))
     
     @scala.inline
-    def setProductTypesVarargs(value: SavingsPlanProductType*): Self = this.set("productTypes", js.Array(value :_*))
+    def setProperties(value: SavingsPlanOfferingPropertyList): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductTypes(value: SavingsPlanProductTypeList): Self = this.set("productTypes", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteProductTypes: Self = this.set("productTypes", js.undefined)
+    def setPropertiesVarargs(value: SavingsPlanOfferingProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def setPropertiesVarargs(value: SavingsPlanOfferingProperty*): Self = this.set("properties", js.Array(value :_*))
+    def setServiceCode(value: SavingsPlanServiceCode): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: SavingsPlanOfferingPropertyList): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setServiceCodeUndefined: Self = StObject.set(x, "serviceCode", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setUsageType(value: SavingsPlanUsageType): Self = StObject.set(x, "usageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceCode(value: SavingsPlanServiceCode): Self = this.set("serviceCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceCode: Self = this.set("serviceCode", js.undefined)
-    
-    @scala.inline
-    def setUsageType(value: SavingsPlanUsageType): Self = this.set("usageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageType: Self = this.set("usageType", js.undefined)
+    def setUsageTypeUndefined: Self = StObject.set(x, "usageType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.wordpressApiFetch.mod.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Settings extends js.Object {
+trait Settings extends StObject {
   
   var date_format: String = js.native
   
@@ -62,63 +63,51 @@ object Settings {
   }
   
   @scala.inline
-  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate_format(value: String): Self = StObject.set(x, "date_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefault_category(value: Double): Self = StObject.set(x, "default_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault_comment_status(value: OpenOrClosed): Self = StObject.set(x, "default_comment_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate_format(value: String): Self = this.set("date_format", value.asInstanceOf[js.Any])
+    def setDefault_ping_status(value: OpenOrClosed): Self = StObject.set(x, "default_ping_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_category(value: Double): Self = this.set("default_category", value.asInstanceOf[js.Any])
+    def setDefault_post_format(value: String): Self = StObject.set(x, "default_post_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_comment_status(value: OpenOrClosed): Self = this.set("default_comment_status", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_ping_status(value: OpenOrClosed): Self = this.set("default_ping_status", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_post_format(value: String): Self = this.set("default_post_format", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPosts_per_page(value: Double): Self = StObject.set(x, "posts_per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setStart_of_week(value: Double): Self = StObject.set(x, "start_of_week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setTime_format(value: String): Self = StObject.set(x, "time_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosts_per_page(value: Double): Self = this.set("posts_per_page", value.asInstanceOf[js.Any])
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_of_week(value: Double): Self = this.set("start_of_week", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime_format(value: String): Self = this.set("time_format", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUse_smilies(value: Boolean): Self = this.set("use_smilies", value.asInstanceOf[js.Any])
+    def setUse_smilies(value: Boolean): Self = StObject.set(x, "use_smilies", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLunaClientRequest extends js.Object {
+trait CreateLunaClientRequest extends StObject {
   
   /**
     * The contents of a Base64-Encoded X.509 v3 certificate to be installed on the HSMs used by this client.
@@ -26,27 +27,15 @@ object CreateLunaClientRequest {
   }
   
   @scala.inline
-  implicit class CreateLunaClientRequestOps[Self <: CreateLunaClientRequest] (val x: Self) extends AnyVal {
+  implicit class CreateLunaClientRequestMutableBuilder[Self <: CreateLunaClientRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: ClientLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificate(value: Certificate): Self = this.set("Certificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: ClientLabel): Self = this.set("Label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("Label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
   }
 }

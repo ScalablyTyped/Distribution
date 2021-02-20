@@ -1,5 +1,6 @@
 package typings.c3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.c3.c3Strings.donut
   - typings.c3.c3Strings.gauge
 */
-trait ChartType extends js.Object
+trait ChartType extends StObject
 object ChartType {
   
   @scala.inline

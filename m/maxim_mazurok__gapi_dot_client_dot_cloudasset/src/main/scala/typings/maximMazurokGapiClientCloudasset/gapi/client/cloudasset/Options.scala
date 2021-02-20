@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /**
     * Optional. If true, the response will include access analysis from identities to resources via service account impersonation. This is a very expensive operation, because many derived
@@ -56,54 +57,42 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyzeServiceAccountImpersonation(value: Boolean): Self = StObject.set(x, "analyzeServiceAccountImpersonation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyzeServiceAccountImpersonationUndefined: Self = StObject.set(x, "analyzeServiceAccountImpersonation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandGroups(value: Boolean): Self = StObject.set(x, "expandGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyzeServiceAccountImpersonation(value: Boolean): Self = this.set("analyzeServiceAccountImpersonation", value.asInstanceOf[js.Any])
+    def setExpandGroupsUndefined: Self = StObject.set(x, "expandGroups", js.undefined)
     
     @scala.inline
-    def deleteAnalyzeServiceAccountImpersonation: Self = this.set("analyzeServiceAccountImpersonation", js.undefined)
+    def setExpandResources(value: Boolean): Self = StObject.set(x, "expandResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandGroups(value: Boolean): Self = this.set("expandGroups", value.asInstanceOf[js.Any])
+    def setExpandResourcesUndefined: Self = StObject.set(x, "expandResources", js.undefined)
     
     @scala.inline
-    def deleteExpandGroups: Self = this.set("expandGroups", js.undefined)
+    def setExpandRoles(value: Boolean): Self = StObject.set(x, "expandRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandResources(value: Boolean): Self = this.set("expandResources", value.asInstanceOf[js.Any])
+    def setExpandRolesUndefined: Self = StObject.set(x, "expandRoles", js.undefined)
     
     @scala.inline
-    def deleteExpandResources: Self = this.set("expandResources", js.undefined)
+    def setOutputGroupEdges(value: Boolean): Self = StObject.set(x, "outputGroupEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandRoles(value: Boolean): Self = this.set("expandRoles", value.asInstanceOf[js.Any])
+    def setOutputGroupEdgesUndefined: Self = StObject.set(x, "outputGroupEdges", js.undefined)
     
     @scala.inline
-    def deleteExpandRoles: Self = this.set("expandRoles", js.undefined)
+    def setOutputResourceEdges(value: Boolean): Self = StObject.set(x, "outputResourceEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputGroupEdges(value: Boolean): Self = this.set("outputGroupEdges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputGroupEdges: Self = this.set("outputGroupEdges", js.undefined)
-    
-    @scala.inline
-    def setOutputResourceEdges(value: Boolean): Self = this.set("outputResourceEdges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputResourceEdges: Self = this.set("outputResourceEdges", js.undefined)
+    def setOutputResourceEdgesUndefined: Self = StObject.set(x, "outputResourceEdges", js.undefined)
   }
 }

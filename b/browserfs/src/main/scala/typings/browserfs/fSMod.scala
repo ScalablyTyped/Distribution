@@ -21,16 +21,32 @@ import typings.node.fsMod.FSWatcher
 import typings.node.fsMod.ReadStream
 import typings.node.fsMod.WriteStream
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("browserfs/dist/node/core/FS", JSImport.Namespace)
-@js.native
-object fSMod extends js.Object {
+object fSMod {
+  
+  @JSImport("browserfs/dist/node/core/FS", JSImport.Default)
+  @js.native
+  class default () extends FS
+  /* static members */
+  object default {
+    
+    @JSImport("browserfs/dist/node/core/FS", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("browserfs/dist/node/core/FS", "default.Stats")
+    @js.native
+    def Stats: TypeofStats = js.native
+    @scala.inline
+    def Stats_=(x: TypeofStats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stats")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
-  trait FS extends js.Object {
+  trait FS extends StObject {
     
     var F_OK: Double = js.native
     
@@ -935,14 +951,5 @@ object fSMod extends js.Object {
       * Retrieve the FS object backing the fs module.
       */
     def getFSModule(): FS = js.native
-  }
-  
-  @js.native
-  class default () extends FS
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var Stats: TypeofStats = js.native
   }
 }

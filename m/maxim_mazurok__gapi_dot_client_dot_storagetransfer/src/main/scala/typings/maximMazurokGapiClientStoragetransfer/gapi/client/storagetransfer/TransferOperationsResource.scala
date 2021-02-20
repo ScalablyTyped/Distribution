@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientStoragetransfer.anon.Oauthtoken
 import typings.maximMazurokGapiClientStoragetransfer.anon.PageSize
 import typings.maximMazurokGapiClientStoragetransfer.anon.PrettyPrint
 import typings.maximMazurokGapiClientStoragetransfer.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransferOperationsResource extends js.Object {
+trait TransferOperationsResource extends StObject {
   
   /**
     * Cancels a transfer. Use the transferOperations.get method to check if the cancellation succeeded or if the operation completed despite the `cancel` request. When you cancel an

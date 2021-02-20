@@ -2,6 +2,7 @@ package typings.officeJs.Office
 
 import typings.officeJs.Office.MailboxEnums.RecipientType
 import typings.officeJs.Office.MailboxEnums.ResponseType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
-trait EmailAddressDetails extends js.Object {
+trait EmailAddressDetails extends StObject {
   
   /**
     * Gets the response that an attendee returned for an appointment. 
@@ -54,30 +55,18 @@ object EmailAddressDetails {
   }
   
   @scala.inline
-  implicit class EmailAddressDetailsOps[Self <: EmailAddressDetails] (val x: Self) extends AnyVal {
+  implicit class EmailAddressDetailsMutableBuilder[Self <: EmailAddressDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppointmentResponse(value: ResponseType | String): Self = StObject.set(x, "appointmentResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppointmentResponse(value: ResponseType | String): Self = this.set("appointmentResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmailAddress(value: String): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecipientType(value: RecipientType | String): Self = this.set("recipientType", value.asInstanceOf[js.Any])
+    def setRecipientType(value: RecipientType | String): Self = StObject.set(x, "recipientType", value.asInstanceOf[js.Any])
   }
 }

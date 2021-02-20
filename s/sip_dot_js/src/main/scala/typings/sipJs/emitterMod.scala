@@ -1,16 +1,33 @@
 package typings.sipJs
 
 import typings.sipJs.anon.Once
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/emitter", JSImport.Namespace)
-@js.native
-object emitterMod extends js.Object {
+object emitterMod {
+  
+  @JSImport("sip.js/lib/api/emitter", "EmitterImpl")
+  @js.native
+  class EmitterImpl[T] () extends Emitter[T] {
+    
+    /**
+      * Emit change.
+      * @param data - Data to emit.
+      */
+    def emit(data: T): Unit = js.native
+    
+    var listeners: js.Any = js.native
+    
+    /**
+      * Removes all listeners previously registered with addListener.
+      */
+    def removeAllListeners(): Unit = js.native
+  }
   
   @js.native
-  trait Emitter[T] extends js.Object {
+  trait Emitter[T] extends StObject {
     
     /**
       * Sets up a function that will be called whenever the target changes.
@@ -48,22 +65,5 @@ object emitterMod extends js.Object {
       * @param listener - Callback function.
       */
     def removeListener(listener: js.Function1[/* data */ T, Unit]): Unit = js.native
-  }
-  
-  @js.native
-  class EmitterImpl[T] () extends Emitter[T] {
-    
-    /**
-      * Emit change.
-      * @param data - Data to emit.
-      */
-    def emit(data: T): Unit = js.native
-    
-    var listeners: js.Any = js.native
-    
-    /**
-      * Removes all listeners previously registered with addListener.
-      */
-    def removeAllListeners(): Unit = js.native
   }
 }

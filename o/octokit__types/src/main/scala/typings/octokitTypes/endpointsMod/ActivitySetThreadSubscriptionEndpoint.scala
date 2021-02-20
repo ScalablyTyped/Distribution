@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivitySetThreadSubscriptionEndpoint extends js.Object {
+trait ActivitySetThreadSubscriptionEndpoint extends StObject {
   
   /**
     * Unsubscribes and subscribes you to a conversation. Set `ignored` to `true` to block all notifications from this thread.
@@ -23,27 +24,15 @@ object ActivitySetThreadSubscriptionEndpoint {
   }
   
   @scala.inline
-  implicit class ActivitySetThreadSubscriptionEndpointOps[Self <: ActivitySetThreadSubscriptionEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActivitySetThreadSubscriptionEndpointMutableBuilder[Self <: ActivitySetThreadSubscriptionEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setThread_id(value: Double): Self = this.set("thread_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIgnored(value: Boolean): Self = this.set("ignored", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnored: Self = this.set("ignored", js.undefined)
+    def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
   }
 }

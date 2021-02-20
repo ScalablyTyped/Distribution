@@ -1,22 +1,15 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable2
 import typings.std.RTCErrorEventInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("RTCErrorEvent")
 @js.native
 class RTCErrorEvent protected ()
   extends typings.std.RTCErrorEvent {
   def this(`type`: java.lang.String, eventInitDict: RTCErrorEventInit) = this()
 }
-@JSGlobal("RTCErrorEvent")
-@js.native
-object RTCErrorEvent
-  extends Instantiable2[
-      /* type */ java.lang.String, 
-      /* eventInitDict */ RTCErrorEventInit, 
-      typings.std.RTCErrorEvent
-    ]

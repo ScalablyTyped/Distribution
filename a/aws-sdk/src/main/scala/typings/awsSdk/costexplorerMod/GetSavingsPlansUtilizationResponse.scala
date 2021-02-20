@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSavingsPlansUtilizationResponse extends js.Object {
+trait GetSavingsPlansUtilizationResponse extends StObject {
   
   /**
     * The amount of cost/commitment you used your Savings Plans. This allows you to specify date ranges.
@@ -26,30 +27,18 @@ object GetSavingsPlansUtilizationResponse {
   }
   
   @scala.inline
-  implicit class GetSavingsPlansUtilizationResponseOps[Self <: GetSavingsPlansUtilizationResponse] (val x: Self) extends AnyVal {
+  implicit class GetSavingsPlansUtilizationResponseMutableBuilder[Self <: GetSavingsPlansUtilizationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSavingsPlansUtilizationsByTime(value: SavingsPlansUtilizationsByTime): Self = StObject.set(x, "SavingsPlansUtilizationsByTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSavingsPlansUtilizationsByTimeUndefined: Self = StObject.set(x, "SavingsPlansUtilizationsByTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSavingsPlansUtilizationsByTimeVarargs(value: SavingsPlansUtilizationByTime*): Self = StObject.set(x, "SavingsPlansUtilizationsByTime", js.Array(value :_*))
     
     @scala.inline
-    def setTotal(value: SavingsPlansUtilizationAggregates): Self = this.set("Total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSavingsPlansUtilizationsByTimeVarargs(value: SavingsPlansUtilizationByTime*): Self = this.set("SavingsPlansUtilizationsByTime", js.Array(value :_*))
-    
-    @scala.inline
-    def setSavingsPlansUtilizationsByTime(value: SavingsPlansUtilizationsByTime): Self = this.set("SavingsPlansUtilizationsByTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSavingsPlansUtilizationsByTime: Self = this.set("SavingsPlansUtilizationsByTime", js.undefined)
+    def setTotal(value: SavingsPlansUtilizationAggregates): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
   }
 }

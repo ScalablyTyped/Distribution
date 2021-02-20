@@ -1,6 +1,7 @@
 package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Allows tuning how model updates are done.
 // https://docs.angularjs.org/api/ng/directive/ngModelOptions
 @js.native
-trait INgModelOptions extends js.Object {
+trait INgModelOptions extends StObject {
   
   var allowInvalid: js.UndefOr[Boolean] = js.native
   
@@ -42,60 +43,48 @@ object INgModelOptions {
   }
   
   @scala.inline
-  implicit class INgModelOptionsOps[Self <: INgModelOptions] (val x: Self) extends AnyVal {
+  implicit class INgModelOptionsMutableBuilder[Self <: INgModelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowInvalid(value: Boolean): Self = StObject.set(x, "allowInvalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowInvalidUndefined: Self = StObject.set(x, "allowInvalid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebounce(value: Double | StringDictionary[Double]): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowInvalid(value: Boolean): Self = this.set("allowInvalid", value.asInstanceOf[js.Any])
+    def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
     
     @scala.inline
-    def deleteAllowInvalid: Self = this.set("allowInvalid", js.undefined)
+    def setGetterSetter(value: Boolean): Self = StObject.set(x, "getterSetter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebounce(value: Double | StringDictionary[Double]): Self = this.set("debounce", value.asInstanceOf[js.Any])
+    def setGetterSetterUndefined: Self = StObject.set(x, "getterSetter", js.undefined)
     
     @scala.inline
-    def deleteDebounce: Self = this.set("debounce", js.undefined)
+    def setTimeSecondsFormat(value: String): Self = StObject.set(x, "timeSecondsFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetterSetter(value: Boolean): Self = this.set("getterSetter", value.asInstanceOf[js.Any])
+    def setTimeSecondsFormatUndefined: Self = StObject.set(x, "timeSecondsFormat", js.undefined)
     
     @scala.inline
-    def deleteGetterSetter: Self = this.set("getterSetter", js.undefined)
+    def setTimeStripZeroSeconds(value: Boolean): Self = StObject.set(x, "timeStripZeroSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeSecondsFormat(value: String): Self = this.set("timeSecondsFormat", value.asInstanceOf[js.Any])
+    def setTimeStripZeroSecondsUndefined: Self = StObject.set(x, "timeStripZeroSeconds", js.undefined)
     
     @scala.inline
-    def deleteTimeSecondsFormat: Self = this.set("timeSecondsFormat", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStripZeroSeconds(value: Boolean): Self = this.set("timeStripZeroSeconds", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteTimeStripZeroSeconds: Self = this.set("timeStripZeroSeconds", js.undefined)
+    def setUpdateOn(value: String): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
-    
-    @scala.inline
-    def setUpdateOn(value: String): Self = this.set("updateOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateOn: Self = this.set("updateOn", js.undefined)
+    def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
   }
 }

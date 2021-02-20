@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Destination extends js.Object {
+trait Destination extends StObject {
   
   /**
     * The recipients to place on the BCC: line of the message.
@@ -31,45 +32,33 @@ object Destination {
   }
   
   @scala.inline
-  implicit class DestinationOps[Self <: Destination] (val x: Self) extends AnyVal {
+  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBccAddresses(value: AddressList): Self = StObject.set(x, "BccAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBccAddressesUndefined: Self = StObject.set(x, "BccAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBccAddressesVarargs(value: Address*): Self = StObject.set(x, "BccAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setBccAddressesVarargs(value: Address*): Self = this.set("BccAddresses", js.Array(value :_*))
+    def setCcAddresses(value: AddressList): Self = StObject.set(x, "CcAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBccAddresses(value: AddressList): Self = this.set("BccAddresses", value.asInstanceOf[js.Any])
+    def setCcAddressesUndefined: Self = StObject.set(x, "CcAddresses", js.undefined)
     
     @scala.inline
-    def deleteBccAddresses: Self = this.set("BccAddresses", js.undefined)
+    def setCcAddressesVarargs(value: Address*): Self = StObject.set(x, "CcAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setCcAddressesVarargs(value: Address*): Self = this.set("CcAddresses", js.Array(value :_*))
+    def setToAddresses(value: AddressList): Self = StObject.set(x, "ToAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcAddresses(value: AddressList): Self = this.set("CcAddresses", value.asInstanceOf[js.Any])
+    def setToAddressesUndefined: Self = StObject.set(x, "ToAddresses", js.undefined)
     
     @scala.inline
-    def deleteCcAddresses: Self = this.set("CcAddresses", js.undefined)
-    
-    @scala.inline
-    def setToAddressesVarargs(value: Address*): Self = this.set("ToAddresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setToAddresses(value: AddressList): Self = this.set("ToAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToAddresses: Self = this.set("ToAddresses", js.undefined)
+    def setToAddressesVarargs(value: Address*): Self = StObject.set(x, "ToAddresses", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.bmapgl.BMapGL
 
 import typings.bmapgl.anon.Content
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,21 +25,9 @@ object CustomLayer {
   }
   
   @scala.inline
-  implicit class CustomLayerOps[Self <: CustomLayer] (val x: Self) extends AnyVal {
+  implicit class CustomLayerMutableBuilder[Self <: CustomLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnhotspotclick(value: Content => Unit): Self = this.set("onhotspotclick", js.Any.fromFunction1(value))
+    def setOnhotspotclick(value: Content => Unit): Self = StObject.set(x, "onhotspotclick", js.Any.fromFunction1(value))
   }
 }

@@ -5,6 +5,7 @@ import typings.nodeSass.nodeSassStrings.compact
 import typings.nodeSass.nodeSassStrings.compressed
 import typings.nodeSass.nodeSassStrings.expanded
 import typings.nodeSass.nodeSassStrings.nested
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,132 +59,120 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setFunctions(value: FunctionDeclarations[SassFunction]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setImporter(value: Importer | js.Array[Importer]): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctions(value: FunctionDeclarations[SassFunction]): Self = this.set("functions", value.asInstanceOf[js.Any])
+    def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
     
     @scala.inline
-    def deleteFunctions: Self = this.set("functions", js.undefined)
+    def setImporterVarargs(value: Importer*): Self = StObject.set(x, "importer", js.Array(value :_*))
     
     @scala.inline
-    def setImporterVarargs(value: Importer*): Self = this.set("importer", js.Array(value :_*))
+    def setIncludePaths(value: js.Array[String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImporter(value: Importer | js.Array[Importer]): Self = this.set("importer", value.asInstanceOf[js.Any])
+    def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
     
     @scala.inline
-    def deleteImporter: Self = this.set("importer", js.undefined)
+    def setIncludePathsVarargs(value: String*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
     
     @scala.inline
-    def setIncludePathsVarargs(value: String*): Self = this.set("includePaths", js.Array(value :_*))
+    def setIndentType(value: String): Self = StObject.set(x, "indentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludePaths(value: js.Array[String]): Self = this.set("includePaths", value.asInstanceOf[js.Any])
+    def setIndentTypeUndefined: Self = StObject.set(x, "indentType", js.undefined)
     
     @scala.inline
-    def deleteIncludePaths: Self = this.set("includePaths", js.undefined)
+    def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentType(value: String): Self = this.set("indentType", value.asInstanceOf[js.Any])
+    def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
     
     @scala.inline
-    def deleteIndentType: Self = this.set("indentType", js.undefined)
+    def setIndentedSyntax(value: Boolean): Self = StObject.set(x, "indentedSyntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentWidth(value: Double): Self = this.set("indentWidth", value.asInstanceOf[js.Any])
+    def setIndentedSyntaxUndefined: Self = StObject.set(x, "indentedSyntax", js.undefined)
     
     @scala.inline
-    def deleteIndentWidth: Self = this.set("indentWidth", js.undefined)
+    def setLinefeed(value: String): Self = StObject.set(x, "linefeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentedSyntax(value: Boolean): Self = this.set("indentedSyntax", value.asInstanceOf[js.Any])
+    def setLinefeedUndefined: Self = StObject.set(x, "linefeed", js.undefined)
     
     @scala.inline
-    def deleteIndentedSyntax: Self = this.set("indentedSyntax", js.undefined)
+    def setOmitSourceMapUrl(value: Boolean): Self = StObject.set(x, "omitSourceMapUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinefeed(value: String): Self = this.set("linefeed", value.asInstanceOf[js.Any])
+    def setOmitSourceMapUrlUndefined: Self = StObject.set(x, "omitSourceMapUrl", js.undefined)
     
     @scala.inline
-    def deleteLinefeed: Self = this.set("linefeed", js.undefined)
+    def setOutFile(value: String): Self = StObject.set(x, "outFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOmitSourceMapUrl(value: Boolean): Self = this.set("omitSourceMapUrl", value.asInstanceOf[js.Any])
+    def setOutFileUndefined: Self = StObject.set(x, "outFile", js.undefined)
     
     @scala.inline
-    def deleteOmitSourceMapUrl: Self = this.set("omitSourceMapUrl", js.undefined)
+    def setOutputStyle(value: compact | compressed | expanded | nested): Self = StObject.set(x, "outputStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutFile(value: String): Self = this.set("outFile", value.asInstanceOf[js.Any])
+    def setOutputStyleUndefined: Self = StObject.set(x, "outputStyle", js.undefined)
     
     @scala.inline
-    def deleteOutFile: Self = this.set("outFile", js.undefined)
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputStyle(value: compact | compressed | expanded | nested): Self = this.set("outputStyle", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def deleteOutputStyle: Self = this.set("outputStyle", js.undefined)
+    def setSourceComments(value: Boolean): Self = StObject.set(x, "sourceComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setSourceCommentsUndefined: Self = StObject.set(x, "sourceComments", js.undefined)
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setSourceMap(value: Boolean | String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceComments(value: Boolean): Self = this.set("sourceComments", value.asInstanceOf[js.Any])
+    def setSourceMapContents(value: Boolean): Self = StObject.set(x, "sourceMapContents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceComments: Self = this.set("sourceComments", js.undefined)
+    def setSourceMapContentsUndefined: Self = StObject.set(x, "sourceMapContents", js.undefined)
     
     @scala.inline
-    def setSourceMap(value: Boolean | String): Self = this.set("sourceMap", value.asInstanceOf[js.Any])
+    def setSourceMapEmbed(value: Boolean): Self = StObject.set(x, "sourceMapEmbed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceMap: Self = this.set("sourceMap", js.undefined)
+    def setSourceMapEmbedUndefined: Self = StObject.set(x, "sourceMapEmbed", js.undefined)
     
     @scala.inline
-    def setSourceMapContents(value: Boolean): Self = this.set("sourceMapContents", value.asInstanceOf[js.Any])
+    def setSourceMapRoot(value: String): Self = StObject.set(x, "sourceMapRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceMapContents: Self = this.set("sourceMapContents", js.undefined)
+    def setSourceMapRootUndefined: Self = StObject.set(x, "sourceMapRoot", js.undefined)
     
     @scala.inline
-    def setSourceMapEmbed(value: Boolean): Self = this.set("sourceMapEmbed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceMapEmbed: Self = this.set("sourceMapEmbed", js.undefined)
-    
-    @scala.inline
-    def setSourceMapRoot(value: String): Self = this.set("sourceMapRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceMapRoot: Self = this.set("sourceMapRoot", js.undefined)
+    def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
   }
 }

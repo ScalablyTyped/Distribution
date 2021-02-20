@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.logging
 
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.3
   */
 @js.native
-trait LogRecord extends js.Object {
+trait LogRecord extends StObject {
   
   /**
     * specifies the level of the log event
@@ -66,42 +67,30 @@ object LogRecord {
   }
   
   @scala.inline
-  implicit class LogRecordOps[Self <: LogRecord] (val x: Self) extends AnyVal {
+  implicit class LogRecordMutableBuilder[Self <: LogRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogTime(value: DateTime): Self = StObject.set(x, "LogTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoggerName(value: String): Self = StObject.set(x, "LoggerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("Level", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogTime(value: DateTime): Self = this.set("LogTime", value.asInstanceOf[js.Any])
+    def setSequenceNumber(value: Double): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggerName(value: String): Self = this.set("LoggerName", value.asInstanceOf[js.Any])
+    def setSourceClassName(value: String): Self = StObject.set(x, "SourceClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setSourceMethodName(value: String): Self = StObject.set(x, "SourceMethodName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequenceNumber(value: Double): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceClassName(value: String): Self = this.set("SourceClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceMethodName(value: String): Self = this.set("SourceMethodName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreadID(value: String): Self = this.set("ThreadID", value.asInstanceOf[js.Any])
+    def setThreadID(value: String): Self = StObject.set(x, "ThreadID", value.asInstanceOf[js.Any])
   }
 }

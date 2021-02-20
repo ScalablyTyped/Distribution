@@ -1,6 +1,7 @@
 package typings.umbraco.umbraco.services
 
 import typings.umbraco.anon.Url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Search content
   */
 @js.native
-trait ISearchContent extends js.Object {
+trait ISearchContent extends StObject {
   
   var editorPath: String = js.native
   
@@ -30,33 +31,21 @@ object ISearchContent {
   }
   
   @scala.inline
-  implicit class ISearchContentOps[Self <: ISearchContent] (val x: Self) extends AnyVal {
+  implicit class ISearchContentMutableBuilder[Self <: ISearchContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEditorPath(value: String): Self = StObject.set(x, "editorPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMenuUrl(value: String): Self = StObject.set(x, "menuUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorPath(value: String): Self = this.set("editorPath", value.asInstanceOf[js.Any])
+    def setMetaData(value: Url): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMenuUrl(value: String): Self = this.set("menuUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetaData(value: Url): Self = this.set("metaData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubTitle(value: String): Self = this.set("subTitle", value.asInstanceOf[js.Any])
+    def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
   }
 }

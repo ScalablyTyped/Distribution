@@ -1,12 +1,13 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("documentdb", "QueryIterator")
 @js.native
-class QueryIterator[TResultRow] protected () extends js.Object {
+class QueryIterator[TResultRow] protected () extends StObject {
   def this(
     documentclient: DocumentClient,
     query: DocumentQuery,

@@ -9,12 +9,13 @@ import typings.googleCloudStorage.googleCloudStorageStrings.write
 import typings.googleCloudStorage.signerMod.Query
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSignedUrlConfig extends js.Object {
+trait GetSignedUrlConfig extends StObject {
   
   var accessibleAt: js.UndefOr[String | Double | Date] = js.native
   
@@ -51,90 +52,78 @@ object GetSignedUrlConfig {
   }
   
   @scala.inline
-  implicit class GetSignedUrlConfigOps[Self <: GetSignedUrlConfig] (val x: Self) extends AnyVal {
+  implicit class GetSignedUrlConfigMutableBuilder[Self <: GetSignedUrlConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleAt(value: String | Double | Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibleAtUndefined: Self = StObject.set(x, "accessibleAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAction(value: read | write | delete_ | resumable): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: read | write | delete_ | resumable): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires(value: String | Double | Date): Self = this.set("expires", value.asInstanceOf[js.Any])
+    def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
     
     @scala.inline
-    def setAccessibleAt(value: String | Double | Date): Self = this.set("accessibleAt", value.asInstanceOf[js.Any])
+    def setContentMd5(value: String): Self = StObject.set(x, "contentMd5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessibleAt: Self = this.set("accessibleAt", js.undefined)
+    def setContentMd5Undefined: Self = StObject.set(x, "contentMd5", js.undefined)
     
     @scala.inline
-    def setCname(value: String): Self = this.set("cname", value.asInstanceOf[js.Any])
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCname: Self = this.set("cname", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setContentMd5(value: String): Self = this.set("contentMd5", value.asInstanceOf[js.Any])
+    def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentMd5: Self = this.set("contentMd5", js.undefined)
+    def setExtensionHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "extensionHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setExtensionHeadersUndefined: Self = StObject.set(x, "extensionHeaders", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setPromptSaveAs(value: String): Self = StObject.set(x, "promptSaveAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionHeaders(value: OutgoingHttpHeaders): Self = this.set("extensionHeaders", value.asInstanceOf[js.Any])
+    def setPromptSaveAsUndefined: Self = StObject.set(x, "promptSaveAs", js.undefined)
     
     @scala.inline
-    def deleteExtensionHeaders: Self = this.set("extensionHeaders", js.undefined)
+    def setQueryParams(value: Query): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromptSaveAs(value: String): Self = this.set("promptSaveAs", value.asInstanceOf[js.Any])
+    def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     
     @scala.inline
-    def deletePromptSaveAs: Self = this.set("promptSaveAs", js.undefined)
+    def setResponseDisposition(value: String): Self = StObject.set(x, "responseDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParams(value: Query): Self = this.set("queryParams", value.asInstanceOf[js.Any])
+    def setResponseDispositionUndefined: Self = StObject.set(x, "responseDisposition", js.undefined)
     
     @scala.inline
-    def deleteQueryParams: Self = this.set("queryParams", js.undefined)
+    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDisposition(value: String): Self = this.set("responseDisposition", value.asInstanceOf[js.Any])
+    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
     @scala.inline
-    def deleteResponseDisposition: Self = this.set("responseDisposition", js.undefined)
+    def setVersion(value: v2 | v4): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    def setVirtualHostedStyle(value: Boolean): Self = StObject.set(x, "virtualHostedStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: v2 | v4): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVirtualHostedStyle(value: Boolean): Self = this.set("virtualHostedStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualHostedStyle: Self = this.set("virtualHostedStyle", js.undefined)
+    def setVirtualHostedStyleUndefined: Self = StObject.set(x, "virtualHostedStyle", js.undefined)
   }
 }

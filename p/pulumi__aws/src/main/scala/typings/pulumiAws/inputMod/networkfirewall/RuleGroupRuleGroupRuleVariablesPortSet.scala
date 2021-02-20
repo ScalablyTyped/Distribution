@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.networkfirewall
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleGroupRuleVariablesPortSet extends js.Object {
+trait RuleGroupRuleGroupRuleVariablesPortSet extends StObject {
   
   /**
     * An unique alphanumeric string to identify the `portSet`.
@@ -27,24 +28,12 @@ object RuleGroupRuleGroupRuleVariablesPortSet {
   }
   
   @scala.inline
-  implicit class RuleGroupRuleGroupRuleVariablesPortSetOps[Self <: RuleGroupRuleGroupRuleVariablesPortSet] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleGroupRuleVariablesPortSetMutableBuilder[Self <: RuleGroupRuleGroupRuleVariablesPortSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKey(value: Input[String]): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPortSet(value: Input[RuleGroupRuleGroupRuleVariablesPortSetPortSet]): Self = this.set("portSet", value.asInstanceOf[js.Any])
+    def setPortSet(value: Input[RuleGroupRuleGroupRuleVariablesPortSetPortSet]): Self = StObject.set(x, "portSet", value.asInstanceOf[js.Any])
   }
 }

@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Devices.Bluetooth.Background.RfcommInboundConnec
 import typings.winrtUwp.Windows.Devices.Bluetooth.Background.RfcommOutboundConnectionInformation
 import typings.winrtUwp.Windows.Networking.HostName
 import typings.winrtUwp.Windows.Networking.Sockets.SocketProtectionLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that launches a background task when an RFCOMM inbound or outbound connections are established. */
 @js.native
-trait RfcommConnectionTrigger extends js.Object {
+trait RfcommConnectionTrigger extends StObject {
   
   /** Gets or sets whether the app wants to handle multiple connections at a time. */
   var allowMultipleConnections: Boolean = js.native
@@ -42,33 +43,21 @@ object RfcommConnectionTrigger {
   }
   
   @scala.inline
-  implicit class RfcommConnectionTriggerOps[Self <: RfcommConnectionTrigger] (val x: Self) extends AnyVal {
+  implicit class RfcommConnectionTriggerMutableBuilder[Self <: RfcommConnectionTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMultipleConnections(value: Boolean): Self = StObject.set(x, "allowMultipleConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInboundConnection(value: RfcommInboundConnectionInformation): Self = StObject.set(x, "inboundConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutboundConnection(value: RfcommOutboundConnectionInformation): Self = StObject.set(x, "outboundConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultipleConnections(value: Boolean): Self = this.set("allowMultipleConnections", value.asInstanceOf[js.Any])
+    def setProtectionLevel(value: SocketProtectionLevel): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboundConnection(value: RfcommInboundConnectionInformation): Self = this.set("inboundConnection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutboundConnection(value: RfcommOutboundConnectionInformation): Self = this.set("outboundConnection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtectionLevel(value: SocketProtectionLevel): Self = this.set("protectionLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteHostName(value: HostName): Self = this.set("remoteHostName", value.asInstanceOf[js.Any])
+    def setRemoteHostName(value: HostName): Self = StObject.set(x, "remoteHostName", value.asInstanceOf[js.Any])
   }
 }

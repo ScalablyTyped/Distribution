@@ -51,6 +51,7 @@ import typings.plotlyJs.plotlyJsStrings.toaxisPlussignacrossPlussignmarker
 import typings.plotlyJs.plotlyJsStrings.toaxisPlussignmarker
 import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,33 +136,21 @@ object SceneAxis {
   }
   
   @scala.inline
-  implicit class SceneAxisOps[Self <: SceneAxis] (val x: Self) extends AnyVal {
+  implicit class SceneAxisMutableBuilder[Self <: SceneAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundcolor(value: Color): Self = StObject.set(x, "backgroundcolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "backgroundcolor", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowaxeslabels(value: Boolean): Self = StObject.set(x, "showaxeslabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("backgroundcolor", js.Array(value :_*))
+    def setShowbackground(value: Boolean): Self = StObject.set(x, "showbackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundcolor(value: Color): Self = this.set("backgroundcolor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowaxeslabels(value: Boolean): Self = this.set("showaxeslabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowbackground(value: Boolean): Self = this.set("showbackground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpikesides(value: Boolean): Self = this.set("spikesides", value.asInstanceOf[js.Any])
+    def setSpikesides(value: Boolean): Self = StObject.set(x, "spikesides", value.asInstanceOf[js.Any])
   }
 }

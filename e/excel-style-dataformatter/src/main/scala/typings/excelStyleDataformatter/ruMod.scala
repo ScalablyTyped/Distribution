@@ -1,11 +1,20 @@
 package typings.excelStyleDataformatter
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.excelStyleDataformatter.mod.LocalesOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("excel-style-dataformatter/lib/locales/ru", JSImport.Namespace)
-@js.native
-object ruMod extends TopLevel[LocalesOptions]
+object ruMod extends Shortcut {
+  
+  @JSImport("excel-style-dataformatter/lib/locales/ru", JSImport.Namespace)
+  @js.native
+  val ^ : LocalesOptions = js.native
+  
+  type _To = LocalesOptions
+  
+  /* This means you don't have to write `^`, but can instead just say `ruMod.foo` */
+  override def _to: LocalesOptions = ^
+}

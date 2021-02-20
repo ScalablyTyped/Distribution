@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableTextLabelsPagination extends js.Object {
+trait MUIDataTableTextLabelsPagination extends StObject {
   
   var displayRows: String = js.native
   
@@ -26,33 +27,21 @@ object MUIDataTableTextLabelsPagination {
   }
   
   @scala.inline
-  implicit class MUIDataTableTextLabelsPaginationOps[Self <: MUIDataTableTextLabelsPagination] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableTextLabelsPaginationMutableBuilder[Self <: MUIDataTableTextLabelsPagination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayRows(value: String): Self = StObject.set(x, "displayRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJumpToPage(value: String): Self = StObject.set(x, "jumpToPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayRows(value: String): Self = this.set("displayRows", value.asInstanceOf[js.Any])
+    def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJumpToPage(value: String): Self = this.set("jumpToPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrevious(value: String): Self = this.set("previous", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowsPerPage(value: String): Self = this.set("rowsPerPage", value.asInstanceOf[js.Any])
+    def setRowsPerPage(value: String): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
   }
 }

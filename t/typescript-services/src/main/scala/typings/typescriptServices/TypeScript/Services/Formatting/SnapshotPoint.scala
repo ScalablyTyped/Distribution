@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript.Services.Formatting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshotPoint extends js.Object {
+trait SnapshotPoint extends StObject {
   
   def add(offset: Double): SnapshotPoint = js.native
   
@@ -29,30 +30,18 @@ object SnapshotPoint {
   }
   
   @scala.inline
-  implicit class SnapshotPointOps[Self <: SnapshotPoint] (val x: Self) extends AnyVal {
+  implicit class SnapshotPointMutableBuilder[Self <: SnapshotPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Double => SnapshotPoint): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetContainingLine(value: () => ITextSnapshotLine): Self = StObject.set(x, "getContainingLine", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: Double => SnapshotPoint): Self = this.set("add", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetContainingLine(value: () => ITextSnapshotLine): Self = this.set("getContainingLine", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapshot(value: ITextSnapshot): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    def setSnapshot(value: ITextSnapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
   }
 }

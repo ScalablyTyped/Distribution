@@ -1,6 +1,7 @@
 package typings.angular.mod
 
 import typings.angular.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see https://docs.angularjs.org/api/ng/type/$cacheFactory.Cache
   */
 @js.native
-trait ICacheObject extends js.Object {
+trait ICacheObject extends StObject {
   
   /**
     * Destroys the Cache object entirely, removing it from the $cacheFactory set.

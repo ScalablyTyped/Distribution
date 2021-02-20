@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,57 +45,45 @@ object CarePlanActivity {
   }
   
   @scala.inline
-  implicit class CarePlanActivityOps[Self <: CarePlanActivity] (val x: Self) extends AnyVal {
+  implicit class CarePlanActivityMutableBuilder[Self <: CarePlanActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetail(value: CarePlanActivityDetail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutcomeCodeableConcept(value: js.Array[CodeableConcept]): Self = StObject.set(x, "outcomeCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetail(value: CarePlanActivityDetail): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setOutcomeCodeableConceptUndefined: Self = StObject.set(x, "outcomeCodeableConcept", js.undefined)
     
     @scala.inline
-    def deleteDetail: Self = this.set("detail", js.undefined)
+    def setOutcomeCodeableConceptVarargs(value: CodeableConcept*): Self = StObject.set(x, "outcomeCodeableConcept", js.Array(value :_*))
     
     @scala.inline
-    def setOutcomeCodeableConceptVarargs(value: CodeableConcept*): Self = this.set("outcomeCodeableConcept", js.Array(value :_*))
+    def setOutcomeReference(value: js.Array[Reference]): Self = StObject.set(x, "outcomeReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutcomeCodeableConcept(value: js.Array[CodeableConcept]): Self = this.set("outcomeCodeableConcept", value.asInstanceOf[js.Any])
+    def setOutcomeReferenceUndefined: Self = StObject.set(x, "outcomeReference", js.undefined)
     
     @scala.inline
-    def deleteOutcomeCodeableConcept: Self = this.set("outcomeCodeableConcept", js.undefined)
+    def setOutcomeReferenceVarargs(value: Reference*): Self = StObject.set(x, "outcomeReference", js.Array(value :_*))
     
     @scala.inline
-    def setOutcomeReferenceVarargs(value: Reference*): Self = this.set("outcomeReference", js.Array(value :_*))
+    def setProgress(value: js.Array[Annotation]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutcomeReference(value: js.Array[Reference]): Self = this.set("outcomeReference", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deleteOutcomeReference: Self = this.set("outcomeReference", js.undefined)
+    def setProgressVarargs(value: Annotation*): Self = StObject.set(x, "progress", js.Array(value :_*))
     
     @scala.inline
-    def setProgressVarargs(value: Annotation*): Self = this.set("progress", js.Array(value :_*))
+    def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: js.Array[Annotation]): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
-    
-    @scala.inline
-    def setReference(value: Reference): Self = this.set("reference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReference: Self = this.set("reference", js.undefined)
+    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,27 +28,15 @@ object ArtifactSourceTrigger {
   }
   
   @scala.inline
-  implicit class ArtifactSourceTriggerOps[Self <: ArtifactSourceTrigger] (val x: Self) extends AnyVal {
+  implicit class ArtifactSourceTriggerMutableBuilder[Self <: ArtifactSourceTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactAlias(value: String): Self = StObject.set(x, "artifactAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTriggerConditions(value: js.Array[ArtifactFilter]): Self = StObject.set(x, "triggerConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArtifactAlias(value: String): Self = this.set("artifactAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerConditionsVarargs(value: ArtifactFilter*): Self = this.set("triggerConditions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTriggerConditions(value: js.Array[ArtifactFilter]): Self = this.set("triggerConditions", value.asInstanceOf[js.Any])
+    def setTriggerConditionsVarargs(value: ArtifactFilter*): Self = StObject.set(x, "triggerConditions", js.Array(value :_*))
   }
 }

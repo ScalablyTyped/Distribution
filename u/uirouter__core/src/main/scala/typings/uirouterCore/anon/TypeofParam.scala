@@ -7,6 +7,7 @@ import typings.uirouterCore.paramTypeMod.ParamType
 import typings.uirouterCore.paramsInterfaceMod.RawParams
 import typings.uirouterCore.paramsMod.Param
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

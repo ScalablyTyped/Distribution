@@ -2,12 +2,13 @@ package typings.activexAccess.Access
 
 import typings.activexOffice.Office.MsoEncoding
 import typings.activexOffice.Office.MsoTargetBrowser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultWebOptions extends js.Object {
+trait DefaultWebOptions extends StObject {
   
   @JSName("Access.DefaultWebOptions_typekey")
   var AccessDotDefaultWebOptions_typekey: DefaultWebOptions = js.native
@@ -69,66 +70,54 @@ object DefaultWebOptions {
   }
   
   @scala.inline
-  implicit class DefaultWebOptionsOps[Self <: DefaultWebOptions] (val x: Self) extends AnyVal {
+  implicit class DefaultWebOptionsMutableBuilder[Self <: DefaultWebOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDotDefaultWebOptions_typekey(value: DefaultWebOptions): Self = StObject.set(x, "Access.DefaultWebOptions_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysSaveInDefaultEncoding(value: Boolean): Self = StObject.set(x, "AlwaysSaveInDefaultEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessDotDefaultWebOptions_typekey(value: DefaultWebOptions): Self = this.set("Access.DefaultWebOptions_typekey", value.asInstanceOf[js.Any])
+    def setCheckIfOfficeIsHTMLEditor(value: Boolean): Self = StObject.set(x, "CheckIfOfficeIsHTMLEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysSaveInDefaultEncoding(value: Boolean): Self = this.set("AlwaysSaveInDefaultEncoding", value.asInstanceOf[js.Any])
+    def setDownloadComponents(value: Boolean): Self = StObject.set(x, "DownloadComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setEncoding(value: MsoEncoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckIfOfficeIsHTMLEditor(value: Boolean): Self = this.set("CheckIfOfficeIsHTMLEditor", value.asInstanceOf[js.Any])
+    def setFolderSuffix(value: String): Self = StObject.set(x, "FolderSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadComponents(value: Boolean): Self = this.set("DownloadComponents", value.asInstanceOf[js.Any])
+    def setFollowedHyperlinkColor(value: AcColorIndex): Self = StObject.set(x, "FollowedHyperlinkColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: MsoEncoding): Self = this.set("Encoding", value.asInstanceOf[js.Any])
+    def setHyperlinkColor(value: AcColorIndex): Self = StObject.set(x, "HyperlinkColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderSuffix(value: String): Self = this.set("FolderSuffix", value.asInstanceOf[js.Any])
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFollowedHyperlinkColor(value: AcColorIndex): Self = this.set("FollowedHyperlinkColor", value.asInstanceOf[js.Any])
+    def setLocationOfComponents(value: String): Self = StObject.set(x, "LocationOfComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlinkColor(value: AcColorIndex): Self = this.set("HyperlinkColor", value.asInstanceOf[js.Any])
+    def setOrganizeInFolder(value: Boolean): Self = StObject.set(x, "OrganizeInFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = this.set("IsMemberSafe", js.Any.fromFunction1(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationOfComponents(value: String): Self = this.set("LocationOfComponents", value.asInstanceOf[js.Any])
+    def setTargetBrowser(value: MsoTargetBrowser): Self = StObject.set(x, "TargetBrowser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizeInFolder(value: Boolean): Self = this.set("OrganizeInFolder", value.asInstanceOf[js.Any])
+    def setUnderlineHyperlinks(value: Boolean): Self = StObject.set(x, "UnderlineHyperlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetBrowser(value: MsoTargetBrowser): Self = this.set("TargetBrowser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderlineHyperlinks(value: Boolean): Self = this.set("UnderlineHyperlinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseLongFileNames(value: Boolean): Self = this.set("UseLongFileNames", value.asInstanceOf[js.Any])
+    def setUseLongFileNames(value: Boolean): Self = StObject.set(x, "UseLongFileNames", value.asInstanceOf[js.Any])
   }
 }

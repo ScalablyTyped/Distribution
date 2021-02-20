@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListenerTimeout extends js.Object {
+trait ListenerTimeout extends StObject {
   
   var grpc: js.UndefOr[GrpcTimeout] = js.native
   
@@ -33,42 +34,30 @@ object ListenerTimeout {
   }
   
   @scala.inline
-  implicit class ListenerTimeoutOps[Self <: ListenerTimeout] (val x: Self) extends AnyVal {
+  implicit class ListenerTimeoutMutableBuilder[Self <: ListenerTimeout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrpc(value: GrpcTimeout): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrpcUndefined: Self = StObject.set(x, "grpc", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttp(value: HttpTimeout): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrpc(value: GrpcTimeout): Self = this.set("grpc", value.asInstanceOf[js.Any])
+    def setHttp2(value: HttpTimeout): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrpc: Self = this.set("grpc", js.undefined)
+    def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
     
     @scala.inline
-    def setHttp(value: HttpTimeout): Self = this.set("http", value.asInstanceOf[js.Any])
+    def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     
     @scala.inline
-    def deleteHttp: Self = this.set("http", js.undefined)
+    def setTcp(value: TcpTimeout): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp2(value: HttpTimeout): Self = this.set("http2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttp2: Self = this.set("http2", js.undefined)
-    
-    @scala.inline
-    def setTcp(value: TcpTimeout): Self = this.set("tcp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcp: Self = this.set("tcp", js.undefined)
+    def setTcpUndefined: Self = StObject.set(x, "tcp", js.undefined)
   }
 }

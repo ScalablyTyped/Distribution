@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,33 +31,21 @@ object ClassedColorSliderProperties {
   }
   
   @scala.inline
-  implicit class ClassedColorSliderPropertiesOps[Self <: ClassedColorSliderProperties] (val x: Self) extends AnyVal {
+  implicit class ClassedColorSliderPropertiesMutableBuilder[Self <: ClassedColorSliderProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreaks(value: js.Array[ClassedColorSliderBreaks]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBreaksVarargs(value: ClassedColorSliderBreaks*): Self = StObject.set(x, "breaks", js.Array(value :_*))
     
     @scala.inline
-    def setBreaksVarargs(value: ClassedColorSliderBreaks*): Self = this.set("breaks", js.Array(value :_*))
+    def setViewModel(value: ClassedColorSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreaks(value: js.Array[ClassedColorSliderBreaks]): Self = this.set("breaks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBreaks: Self = this.set("breaks", js.undefined)
-    
-    @scala.inline
-    def setViewModel(value: ClassedColorSliderViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.qiniuJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompletedResult extends js.Object {
+trait CompletedResult extends StObject {
   
   var avinfo: js.UndefOr[AvAudioInfo] = js.native
   
@@ -42,51 +43,39 @@ object CompletedResult {
   }
   
   @scala.inline
-  implicit class CompletedResultOps[Self <: CompletedResult] (val x: Self) extends AnyVal {
+  implicit class CompletedResultMutableBuilder[Self <: CompletedResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvinfo(value: AvAudioInfo): Self = StObject.set(x, "avinfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvinfoUndefined: Self = StObject.set(x, "avinfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt(value: String): Self = this.set("ext", value.asInstanceOf[js.Any])
+    def setImageInfo(value: AvImageInfo): Self = StObject.set(x, "imageInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setImageInfoUndefined: Self = StObject.set(x, "imageInfo", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistentid(value: String): Self = this.set("persistentid", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSec(value: String): Self = this.set("sec", value.asInstanceOf[js.Any])
+    def setPersistentid(value: String): Self = StObject.set(x, "persistentid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSec(value: String): Self = StObject.set(x, "sec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvinfo(value: AvAudioInfo): Self = this.set("avinfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvinfo: Self = this.set("avinfo", js.undefined)
-    
-    @scala.inline
-    def setImageInfo(value: AvImageInfo): Self = this.set("imageInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageInfo: Self = this.set("imageInfo", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

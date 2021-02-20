@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoftwarePackage extends js.Object {
+trait SoftwarePackage extends StObject {
   
   /**
     * The architecture used for the software package.
@@ -41,48 +42,36 @@ object SoftwarePackage {
   }
   
   @scala.inline
-  implicit class SoftwarePackageOps[Self <: SoftwarePackage] (val x: Self) extends AnyVal {
+  implicit class SoftwarePackageMutableBuilder[Self <: SoftwarePackage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchitecture(value: NonEmptyString): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchitectureUndefined: Self = StObject.set(x, "Architecture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEpoch(value: NonEmptyString): Self = StObject.set(x, "Epoch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchitecture(value: NonEmptyString): Self = this.set("Architecture", value.asInstanceOf[js.Any])
+    def setEpochUndefined: Self = StObject.set(x, "Epoch", js.undefined)
     
     @scala.inline
-    def deleteArchitecture: Self = this.set("Architecture", js.undefined)
+    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpoch(value: NonEmptyString): Self = this.set("Epoch", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteEpoch: Self = this.set("Epoch", js.undefined)
+    def setRelease(value: NonEmptyString): Self = StObject.set(x, "Release", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setReleaseUndefined: Self = StObject.set(x, "Release", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setVersion(value: NonEmptyString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelease(value: NonEmptyString): Self = this.set("Release", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelease: Self = this.set("Release", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: NonEmptyString): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.titanium.Titanium.UI
 
 import typings.titanium.Attribute
 import typings.titanium.Titanium.Proxy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

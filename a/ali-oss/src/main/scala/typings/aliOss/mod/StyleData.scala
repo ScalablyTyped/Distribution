@@ -1,19 +1,20 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StyleData extends js.Object {
+trait StyleData extends StObject {
   
-   // style name
+  // style name
   var Content: String = js.native
   
-   // style content
+  // style content
   var CreateTime: String = js.native
   
-   // style create time
+  // style create time
   var LastModifyTime: String = js.native
   
   var Name: String = js.native
@@ -27,30 +28,18 @@ object StyleData {
   }
   
   @scala.inline
-  implicit class StyleDataOps[Self <: StyleData] (val x: Self) extends AnyVal {
+  implicit class StyleDataMutableBuilder[Self <: StyleData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTime(value: String): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastModifyTime(value: String): Self = StObject.set(x, "LastModifyTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("Content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreateTime(value: String): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastModifyTime(value: String): Self = this.set("LastModifyTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

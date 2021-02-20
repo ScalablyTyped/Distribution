@@ -1,11 +1,12 @@
 package typings.grpcGrpcJs.loadBalancingConfigMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EdsLbConfig extends js.Object {
+trait EdsLbConfig extends StObject {
   
   var cluster: String = js.native
   
@@ -40,45 +41,33 @@ object EdsLbConfig {
   }
   
   @scala.inline
-  implicit class EdsLbConfigOps[Self <: EdsLbConfig] (val x: Self) extends AnyVal {
+  implicit class EdsLbConfigMutableBuilder[Self <: EdsLbConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdsServiceName(value: String): Self = StObject.set(x, "edsServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdsServiceNameUndefined: Self = StObject.set(x, "edsServiceName", js.undefined)
     
     @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setEndpointPickingPolicy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "endpointPickingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointPickingPolicyVarargs(value: LoadBalancingConfig*): Self = this.set("endpointPickingPolicy", js.Array(value :_*))
+    def setEndpointPickingPolicyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "endpointPickingPolicy", js.Array(value :_*))
     
     @scala.inline
-    def setEndpointPickingPolicy(value: js.Array[LoadBalancingConfig]): Self = this.set("endpointPickingPolicy", value.asInstanceOf[js.Any])
+    def setLocalityPickingPolicy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "localityPickingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalityPickingPolicyVarargs(value: LoadBalancingConfig*): Self = this.set("localityPickingPolicy", js.Array(value :_*))
+    def setLocalityPickingPolicyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "localityPickingPolicy", js.Array(value :_*))
     
     @scala.inline
-    def setLocalityPickingPolicy(value: js.Array[LoadBalancingConfig]): Self = this.set("localityPickingPolicy", value.asInstanceOf[js.Any])
+    def setLrsLoadReportingServerName(value: String): Self = StObject.set(x, "lrsLoadReportingServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdsServiceName(value: String): Self = this.set("edsServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEdsServiceName: Self = this.set("edsServiceName", js.undefined)
-    
-    @scala.inline
-    def setLrsLoadReportingServerName(value: String): Self = this.set("lrsLoadReportingServerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLrsLoadReportingServerName: Self = this.set("lrsLoadReportingServerName", js.undefined)
+    def setLrsLoadReportingServerNameUndefined: Self = StObject.set(x, "lrsLoadReportingServerName", js.undefined)
   }
 }

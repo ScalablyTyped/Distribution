@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PokemonEvolution extends js.Object {
+trait PokemonEvolution extends StObject {
   
   var conditions: js.UndefOr[js.Array[String]] = js.native
   
@@ -34,72 +35,60 @@ object PokemonEvolution {
   }
   
   @scala.inline
-  implicit class PokemonEvolutionOps[Self <: PokemonEvolution] (val x: Self) extends AnyVal {
+  implicit class PokemonEvolutionMutableBuilder[Self <: PokemonEvolution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: js.Array[String]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionsVarargs(value: String*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setHappiness(value: Boolean): Self = StObject.set(x, "happiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: String*): Self = this.set("conditions", js.Array(value :_*))
+    def setHappinessUndefined: Self = StObject.set(x, "happiness", js.undefined)
     
     @scala.inline
-    def setConditions(value: js.Array[String]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setHold_item(value: String): Self = StObject.set(x, "hold_item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setHold_itemUndefined: Self = StObject.set(x, "hold_item", js.undefined)
     
     @scala.inline
-    def setHappiness(value: Boolean): Self = this.set("happiness", value.asInstanceOf[js.Any])
+    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHappiness: Self = this.set("happiness", js.undefined)
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def setHold_item(value: String): Self = this.set("hold_item", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHold_item: Self = this.set("hold_item", js.undefined)
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def setItem(value: String): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setLevel_up(value: Boolean): Self = StObject.set(x, "level_up", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setLevel_upUndefined: Self = StObject.set(x, "level_up", js.undefined)
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMove_learned(value: String): Self = StObject.set(x, "move_learned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setMove_learnedUndefined: Self = StObject.set(x, "move_learned", js.undefined)
     
     @scala.inline
-    def setLevel_up(value: Boolean): Self = this.set("level_up", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLevel_up: Self = this.set("level_up", js.undefined)
+    def setTrade(value: Boolean): Self = StObject.set(x, "trade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove_learned(value: String): Self = this.set("move_learned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMove_learned: Self = this.set("move_learned", js.undefined)
-    
-    @scala.inline
-    def setTrade(value: Boolean): Self = this.set("trade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrade: Self = this.set("trade", js.undefined)
+    def setTradeUndefined: Self = StObject.set(x, "trade", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.anon
 
 import typings.devtoolsProtocol.mod.Protocol.Debugger.SetScriptSourceRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.SetScriptSourceResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnTypeSetScriptSourceResponse extends js.Object {
+trait ReturnTypeSetScriptSourceResponse extends StObject {
   
   var paramsType: js.Array[SetScriptSourceRequest] = js.native
   
@@ -22,27 +23,15 @@ object ReturnTypeSetScriptSourceResponse {
   }
   
   @scala.inline
-  implicit class ReturnTypeSetScriptSourceResponseOps[Self <: ReturnTypeSetScriptSourceResponse] (val x: Self) extends AnyVal {
+  implicit class ReturnTypeSetScriptSourceResponseMutableBuilder[Self <: ReturnTypeSetScriptSourceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamsType(value: js.Array[SetScriptSourceRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamsTypeVarargs(value: SetScriptSourceRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParamsTypeVarargs(value: SetScriptSourceRequest*): Self = this.set("paramsType", js.Array(value :_*))
-    
-    @scala.inline
-    def setParamsType(value: js.Array[SetScriptSourceRequest]): Self = this.set("paramsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnType(value: SetScriptSourceResponse): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setReturnType(value: SetScriptSourceResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

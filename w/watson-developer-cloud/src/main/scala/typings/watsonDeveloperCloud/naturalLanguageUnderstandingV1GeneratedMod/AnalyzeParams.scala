@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ************************/
 /** Parameters for the `analyze` operation. */
 @js.native
-trait AnalyzeParams extends js.Object {
+trait AnalyzeParams extends StObject {
   
   /** Set this to `false` to disable webpage cleaning. To learn more about webpage cleaning, see the [Analyzing webpages](https://cloud.ibm.com/docs/services/natural-language-understanding/analyzing-webpages.html) documentation. */
   var clean: js.UndefOr[Boolean] = js.native
@@ -54,87 +55,75 @@ object AnalyzeParams {
   }
   
   @scala.inline
-  implicit class AnalyzeParamsOps[Self <: AnalyzeParams] (val x: Self) extends AnyVal {
+  implicit class AnalyzeParamsMutableBuilder[Self <: AnalyzeParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFallback_to_raw(value: Boolean): Self = StObject.set(x, "fallback_to_raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: Features): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setFallback_to_rawUndefined: Self = StObject.set(x, "fallback_to_raw", js.undefined)
     
     @scala.inline
-    def setClean(value: Boolean): Self = this.set("clean", value.asInstanceOf[js.Any])
+    def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClean: Self = this.set("clean", js.undefined)
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallback_to_raw(value: Boolean): Self = this.set("fallback_to_raw", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFallback_to_raw: Self = this.set("fallback_to_raw", js.undefined)
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setLimit_text_characters(value: Double): Self = StObject.set(x, "limit_text_characters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLimit_text_charactersUndefined: Self = StObject.set(x, "limit_text_characters", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setReturn_analyzed_text(value: Boolean): Self = StObject.set(x, "return_analyzed_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit_text_characters(value: Double): Self = this.set("limit_text_characters", value.asInstanceOf[js.Any])
+    def setReturn_analyzed_textUndefined: Self = StObject.set(x, "return_analyzed_text", js.undefined)
     
     @scala.inline
-    def deleteLimit_text_characters: Self = this.set("limit_text_characters", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_analyzed_text(value: Boolean): Self = this.set("return_analyzed_text", value.asInstanceOf[js.Any])
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def deleteReturn_analyzed_text: Self = this.set("return_analyzed_text", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setXpath(value: String): Self = this.set("xpath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXpath: Self = this.set("xpath", js.undefined)
+    def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
   }
 }

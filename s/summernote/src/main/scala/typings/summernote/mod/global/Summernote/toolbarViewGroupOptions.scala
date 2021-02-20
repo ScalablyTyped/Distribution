@@ -1,5 +1,6 @@
 package typings.summernote.mod.global.Summernote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.summernote.summernoteStrings.codeview
   - typings.summernote.summernoteStrings.help
 */
-trait toolbarViewGroupOptions extends js.Object
+trait toolbarViewGroupOptions extends StObject
 object toolbarViewGroupOptions {
   
   @scala.inline

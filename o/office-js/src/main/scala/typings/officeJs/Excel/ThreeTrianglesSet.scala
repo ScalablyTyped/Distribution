@@ -1,6 +1,7 @@
 package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object ThreeTrianglesSet {
   }
   
   @scala.inline
-  implicit class ThreeTrianglesSetOps[Self <: ThreeTrianglesSet] (val x: Self) extends AnyVal {
+  implicit class ThreeTrianglesSetMutableBuilder[Self <: ThreeTrianglesSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGreenUpTriangle(value: Icon): Self = StObject.set(x, "greenUpTriangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRedDownTriangle(value: Icon): Self = StObject.set(x, "redDownTriangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGreenUpTriangle(value: Icon): Self = this.set("greenUpTriangle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedDownTriangle(value: Icon): Self = this.set("redDownTriangle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYellowDash(value: Icon): Self = this.set("yellowDash", value.asInstanceOf[js.Any])
+    def setYellowDash(value: Icon): Self = StObject.set(x, "yellowDash", value.asInstanceOf[js.Any])
   }
 }

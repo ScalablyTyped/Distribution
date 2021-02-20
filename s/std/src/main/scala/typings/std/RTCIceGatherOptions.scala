@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCIceGatherOptions extends js.Object {
+trait RTCIceGatherOptions extends StObject {
   
   var gatherPolicy: js.UndefOr[RTCIceGatherPolicy] = js.native
   
@@ -20,33 +21,21 @@ object RTCIceGatherOptions {
   }
   
   @scala.inline
-  implicit class RTCIceGatherOptionsOps[Self <: RTCIceGatherOptions] (val x: Self) extends AnyVal {
+  implicit class RTCIceGatherOptionsMutableBuilder[Self <: RTCIceGatherOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatherPolicy(value: RTCIceGatherPolicy): Self = StObject.set(x, "gatherPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatherPolicyUndefined: Self = StObject.set(x, "gatherPolicy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIceservers(value: js.Array[RTCIceServer]): Self = StObject.set(x, "iceservers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatherPolicy(value: RTCIceGatherPolicy): Self = this.set("gatherPolicy", value.asInstanceOf[js.Any])
+    def setIceserversUndefined: Self = StObject.set(x, "iceservers", js.undefined)
     
     @scala.inline
-    def deleteGatherPolicy: Self = this.set("gatherPolicy", js.undefined)
-    
-    @scala.inline
-    def setIceserversVarargs(value: RTCIceServer*): Self = this.set("iceservers", js.Array(value :_*))
-    
-    @scala.inline
-    def setIceservers(value: js.Array[RTCIceServer]): Self = this.set("iceservers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIceservers: Self = this.set("iceservers", js.undefined)
+    def setIceserversVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceservers", js.Array(value :_*))
   }
 }

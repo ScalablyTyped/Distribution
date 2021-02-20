@@ -1,12 +1,13 @@
 package typings.vueTemplateCompiler.mod
 
 import typings.vue.vnodeMod.VNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompiledResultFunctions extends js.Object {
+trait CompiledResultFunctions extends StObject {
   
   def render(): VNode = js.native
   
@@ -21,27 +22,15 @@ object CompiledResultFunctions {
   }
   
   @scala.inline
-  implicit class CompiledResultFunctionsOps[Self <: CompiledResultFunctions] (val x: Self) extends AnyVal {
+  implicit class CompiledResultFunctionsMutableBuilder[Self <: CompiledResultFunctions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRender(value: () => VNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStaticRenderFns(value: js.Array[js.Function0[VNode]]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRender(value: () => VNode): Self = this.set("render", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStaticRenderFnsVarargs(value: js.Function0[VNode]*): Self = this.set("staticRenderFns", js.Array(value :_*))
-    
-    @scala.inline
-    def setStaticRenderFns(value: js.Array[js.Function0[VNode]]): Self = this.set("staticRenderFns", value.asInstanceOf[js.Any])
+    def setStaticRenderFnsVarargs(value: js.Function0[VNode]*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
   }
 }

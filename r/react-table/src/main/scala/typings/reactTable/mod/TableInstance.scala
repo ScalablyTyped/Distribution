@@ -3,6 +3,7 @@ package typings.reactTable.mod
 import typings.reactTable.anon.PartialTableToggleHideAll
 import typings.std.Partial
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Omit<react-table.react-table.TableOptions<D>, 'columns' | 'pageCount'> */
 /* Inlined parent react-table.react-table.UseTableInstanceProps<D> */
 @js.native
-trait TableInstance[D /* <: js.Object */] extends js.Object {
+trait TableInstance[D /* <: js.Object */] extends StObject {
   
   var allColumns: js.Array[ColumnInstance[D]] = js.native
   

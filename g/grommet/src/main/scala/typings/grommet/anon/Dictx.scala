@@ -1,6 +1,7 @@
 package typings.grommet.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,36 +25,24 @@ object Dictx {
   }
   
   @scala.inline
-  implicit class DictxOps[Self <: Dictx] (val x: Self) extends AnyVal {
+  implicit class DictxMutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLarge(value: BorderSize): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMedium(value: BorderSize): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLarge(value: BorderSize): Self = this.set("large", value.asInstanceOf[js.Any])
+    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
     @scala.inline
-    def deleteLarge: Self = this.set("large", js.undefined)
+    def setSmall(value: BorderSize): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedium(value: BorderSize): Self = this.set("medium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedium: Self = this.set("medium", js.undefined)
-    
-    @scala.inline
-    def setSmall(value: BorderSize): Self = this.set("small", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmall: Self = this.set("small", js.undefined)
+    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ByteSize extends js.Object {
+trait ByteSize extends StObject {
   
   var byteSize: js.UndefOr[Double] = js.native
   
@@ -30,60 +31,48 @@ object ByteSize {
   }
   
   @scala.inline
-  implicit class ByteSizeOps[Self <: ByteSize] (val x: Self) extends AnyVal {
+  implicit class ByteSizeMutableBuilder[Self <: ByteSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByteSizeUndefined: Self = StObject.set(x, "byteSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextLink(value: String): Self = StObject.set(x, "contextLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByteSize(value: Double): Self = this.set("byteSize", value.asInstanceOf[js.Any])
+    def setContextLinkUndefined: Self = StObject.set(x, "contextLink", js.undefined)
     
     @scala.inline
-    def deleteByteSize: Self = this.set("byteSize", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextLink(value: String): Self = this.set("contextLink", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteContextLink: Self = this.set("contextLink", js.undefined)
+    def setThumbnailHeight(value: Double): Self = StObject.set(x, "thumbnailHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setThumbnailHeightUndefined: Self = StObject.set(x, "thumbnailHeight", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setThumbnailLink(value: String): Self = StObject.set(x, "thumbnailLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailHeight(value: Double): Self = this.set("thumbnailHeight", value.asInstanceOf[js.Any])
+    def setThumbnailLinkUndefined: Self = StObject.set(x, "thumbnailLink", js.undefined)
     
     @scala.inline
-    def deleteThumbnailHeight: Self = this.set("thumbnailHeight", js.undefined)
+    def setThumbnailWidth(value: Double): Self = StObject.set(x, "thumbnailWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailLink(value: String): Self = this.set("thumbnailLink", value.asInstanceOf[js.Any])
+    def setThumbnailWidthUndefined: Self = StObject.set(x, "thumbnailWidth", js.undefined)
     
     @scala.inline
-    def deleteThumbnailLink: Self = this.set("thumbnailLink", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailWidth(value: Double): Self = this.set("thumbnailWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailWidth: Self = this.set("thumbnailWidth", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

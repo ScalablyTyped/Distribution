@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.WiFi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiAccessStatus extends js.Object
+sealed trait WiFiAccessStatus extends StObject
 /** Used to report the results of an attempt to request access to a Wi-Fi adapter. */
 @JSGlobal("Windows.Devices.WiFi.WiFiAccessStatus")
 @js.native
-object WiFiAccessStatus extends js.Object {
+object WiFiAccessStatus extends StObject {
   
   /** Access has been allowed. */
   @js.native

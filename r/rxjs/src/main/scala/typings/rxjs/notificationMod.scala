@@ -1,21 +1,20 @@
 package typings.rxjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.rxjsStrings.C
 import typings.rxjs.rxjsStrings.E
 import typings.rxjs.rxjsStrings.N
 import typings.rxjs.typesMod.PartialObserver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/Notification", JSImport.Namespace)
-@js.native
-object notificationMod extends js.Object {
+object notificationMod {
   
+  @JSImport("rxjs/internal/Notification", "Notification")
   @js.native
-  class Notification[T] protected () extends js.Object {
+  class Notification[T] protected () extends StObject {
     def this(kind: C) = this()
     def this(kind: E) = this()
     def this(kind: N) = this()
@@ -103,16 +102,25 @@ object notificationMod extends js.Object {
     var value: js.UndefOr[T] = js.native
   }
   /* static members */
-  @js.native
-  object Notification extends js.Object {
+  object Notification {
     
-    var completeNotification: js.Any = js.native
+    @JSImport("rxjs/internal/Notification", "Notification")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rxjs/internal/Notification", "Notification.completeNotification")
+    @js.native
+    def completeNotification: js.Any = js.native
+    @scala.inline
+    def completeNotification_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeNotification")(x.asInstanceOf[js.Any])
     
     /**
       * A shortcut to create a Notification instance of the type `complete`.
       * @return {Notification<any>} The valueless "complete" Notification.
       * @nocollapse
       */
+    @JSImport("rxjs/internal/Notification", "Notification.createComplete")
+    @js.native
     def createComplete(): Notification[_] = js.native
     
     /**
@@ -123,7 +131,11 @@ object notificationMod extends js.Object {
       * argument.
       * @nocollapse
       */
+    @JSImport("rxjs/internal/Notification", "Notification.createError")
+    @js.native
     def createError[T](): Notification[T] = js.native
+    @JSImport("rxjs/internal/Notification", "Notification.createError")
+    @js.native
     def createError[T](err: js.Any): Notification[T] = js.native
     
     /**
@@ -134,32 +146,36 @@ object notificationMod extends js.Object {
       * argument.
       * @nocollapse
       */
+    @JSImport("rxjs/internal/Notification", "Notification.createNext")
+    @js.native
     def createNext[T](value: T): Notification[T] = js.native
     
-    var undefinedValueNotification: js.Any = js.native
+    @JSImport("rxjs/internal/Notification", "Notification.undefinedValueNotification")
+    @js.native
+    def undefinedValueNotification: js.Any = js.native
+    @scala.inline
+    def undefinedValueNotification_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedValueNotification")(x.asInstanceOf[js.Any])
   }
   
   @js.native
-  sealed trait NotificationKind extends js.Object
+  sealed trait NotificationKind extends StObject
+  @JSImport("rxjs/internal/Notification", "NotificationKind")
   @js.native
-  object NotificationKind extends js.Object {
+  object NotificationKind extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[NotificationKind with String] = js.native
     
     @js.native
     sealed trait COMPLETE extends NotificationKind
-    /* "C" */ @js.native
-    object COMPLETE extends TopLevel[COMPLETE with String]
+    /* "C" */ val COMPLETE: typings.rxjs.notificationMod.NotificationKind.COMPLETE with String = js.native
     
     @js.native
     sealed trait ERROR extends NotificationKind
-    /* "E" */ @js.native
-    object ERROR extends TopLevel[ERROR with String]
+    /* "E" */ val ERROR: typings.rxjs.notificationMod.NotificationKind.ERROR with String = js.native
     
     @js.native
     sealed trait NEXT extends NotificationKind
-    /* "N" */ @js.native
-    object NEXT extends TopLevel[NEXT with String]
+    /* "N" */ val NEXT: typings.rxjs.notificationMod.NotificationKind.NEXT with String = js.native
   }
 }

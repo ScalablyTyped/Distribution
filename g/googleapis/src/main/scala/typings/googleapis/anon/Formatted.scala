@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Formatted extends js.Object {
+trait Formatted extends StObject {
   
   var familyName: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object Formatted {
   }
   
   @scala.inline
-  implicit class FormattedOps[Self <: Formatted] (val x: Self) extends AnyVal {
+  implicit class FormattedMutableBuilder[Self <: Formatted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    def setFormattedUndefined: Self = StObject.set(x, "formatted", js.undefined)
     
     @scala.inline
-    def deleteFamilyName: Self = this.set("familyName", js.undefined)
+    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatted(value: String): Self = this.set("formatted", value.asInstanceOf[js.Any])
+    def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
     
     @scala.inline
-    def deleteFormatted: Self = this.set("formatted", js.undefined)
+    def setHonorificPrefix(value: String): Self = StObject.set(x, "honorificPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
+    def setHonorificPrefixUndefined: Self = StObject.set(x, "honorificPrefix", js.undefined)
     
     @scala.inline
-    def deleteGivenName: Self = this.set("givenName", js.undefined)
+    def setHonorificSuffix(value: String): Self = StObject.set(x, "honorificSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHonorificPrefix(value: String): Self = this.set("honorificPrefix", value.asInstanceOf[js.Any])
+    def setHonorificSuffixUndefined: Self = StObject.set(x, "honorificSuffix", js.undefined)
     
     @scala.inline
-    def deleteHonorificPrefix: Self = this.set("honorificPrefix", js.undefined)
+    def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHonorificSuffix(value: String): Self = this.set("honorificSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHonorificSuffix: Self = this.set("honorificSuffix", js.undefined)
-    
-    @scala.inline
-    def setMiddleName(value: String): Self = this.set("middleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMiddleName: Self = this.set("middleName", js.undefined)
+    def setMiddleNameUndefined: Self = StObject.set(x, "middleName", js.undefined)
   }
 }

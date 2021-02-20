@@ -6,16 +6,16 @@ import typings.babylonjs.anon.RepeatKey
 import typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes
 import typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
 import typings.babylonjs.nodeMaterialBuildStateSharedDataMod.NodeMaterialBuildStateSharedData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/nodeMaterialBuildState", JSImport.Namespace)
-@js.native
-object nodeMaterialBuildStateMod extends js.Object {
+object nodeMaterialBuildStateMod {
   
+  @JSImport("babylonjs/Materials/Node/nodeMaterialBuildState", "NodeMaterialBuildState")
   @js.native
-  class NodeMaterialBuildState () extends js.Object {
+  class NodeMaterialBuildState () extends StObject {
     
     /** @hidden */
     var _attributeDeclaration: String = js.native

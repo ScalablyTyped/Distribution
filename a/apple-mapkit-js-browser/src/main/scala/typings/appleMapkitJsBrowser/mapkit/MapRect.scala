@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A rectangular area on a two-dimensional map projection.
   */
 @js.native
-trait MapRect extends js.Object {
+trait MapRect extends StObject {
   
   /**
     * Returns a copy of a map rectangle.
@@ -78,7 +79,7 @@ object MapRect {
   @scala.inline
   def apply(
     copy: () => MapRect,
-    equals: MapRect => Boolean,
+    equals_ : MapRect => Boolean,
     maxX: Double,
     maxY: Double,
     midX: Double,
@@ -90,59 +91,48 @@ object MapRect {
     size: MapSize,
     toCoordinateRegion: () => CoordinateRegion
   ): MapRect = {
-    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), equals = js.Any.fromFunction1(equals), maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], midX = midX.asInstanceOf[js.Any], midY = midY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], scale = js.Any.fromFunction2(scale), size = size.asInstanceOf[js.Any], toCoordinateRegion = js.Any.fromFunction0(toCoordinateRegion))
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], midX = midX.asInstanceOf[js.Any], midY = midY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], scale = js.Any.fromFunction2(scale), size = size.asInstanceOf[js.Any], toCoordinateRegion = js.Any.fromFunction0(toCoordinateRegion))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[MapRect]
   }
   
   @scala.inline
-  implicit class MapRectOps[Self <: MapRect] (val x: Self) extends AnyVal {
+  implicit class MapRectMutableBuilder[Self <: MapRect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: () => MapRect): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquals_(value: MapRect => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: () => MapRect): Self = this.set("copy", js.Any.fromFunction0(value))
+    def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: MapRect => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setMidX(value: Double): Self = StObject.set(x, "midX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxX(value: Double): Self = this.set("maxX", value.asInstanceOf[js.Any])
+    def setMidY(value: Double): Self = StObject.set(x, "midY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxY(value: Double): Self = this.set("maxY", value.asInstanceOf[js.Any])
+    def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMidX(value: Double): Self = this.set("midX", value.asInstanceOf[js.Any])
+    def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMidY(value: Double): Self = this.set("midY", value.asInstanceOf[js.Any])
+    def setOrigin(value: MapPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinX(value: Double): Self = this.set("minX", value.asInstanceOf[js.Any])
+    def setScale(value: (Double, MapPoint) => MapRect): Self = StObject.set(x, "scale", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMinY(value: Double): Self = this.set("minY", value.asInstanceOf[js.Any])
+    def setSize(value: MapSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: MapPoint): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: (Double, MapPoint) => MapRect): Self = this.set("scale", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSize(value: MapSize): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToCoordinateRegion(value: () => CoordinateRegion): Self = this.set("toCoordinateRegion", js.Any.fromFunction0(value))
+    def setToCoordinateRegion(value: () => CoordinateRegion): Self = StObject.set(x, "toCoordinateRegion", js.Any.fromFunction0(value))
   }
 }

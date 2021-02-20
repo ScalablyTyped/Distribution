@@ -2,24 +2,24 @@ package typings.workerRpc
 
 import typings.workerRpc.rpcProviderMod.RpcProvider.Dispatcher
 import typings.workerRpc.rpcProviderMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("worker-rpc", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("worker-rpc", "RpcProvider")
   @js.native
   class RpcProvider protected () extends default {
     def this(_dispatch: Dispatcher) = this()
     def this(_dispatch: Dispatcher, _rpcTimeout: Double) = this()
   }
-  @js.native
-  object RpcProvider extends js.Object {
+  object RpcProvider {
     
+    @JSImport("worker-rpc", "RpcProvider.MessageType")
     @js.native
-    object MessageType extends js.Object {
+    object MessageType extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.workerRpc.rpcProviderMod.RpcProvider.MessageType with Double] = js.native

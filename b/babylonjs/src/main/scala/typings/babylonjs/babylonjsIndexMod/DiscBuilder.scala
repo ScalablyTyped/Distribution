@@ -3,6 +3,7 @@ package typings.babylonjs.babylonjsIndexMod
 import typings.babylonjs.anon.Tessellation
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class DiscBuilder ()
   extends typings.babylonjs.buildersIndexMod.DiscBuilder
 /* static members */
-@JSImport("babylonjs/Meshes/index", "DiscBuilder")
-@js.native
-object DiscBuilder extends js.Object {
+object DiscBuilder {
   
   /**
     * Creates a plane polygonal mesh.  By default, this is a disc
@@ -30,6 +29,10 @@ object DiscBuilder extends js.Object {
     * @returns the plane polygonal mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#disc-or-regular-polygon
     */
+  @JSImport("babylonjs/Meshes/index", "DiscBuilder.CreateDisc")
+  @js.native
   def CreateDisc(name: String, options: Tessellation): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs/Meshes/index", "DiscBuilder.CreateDisc")
+  @js.native
   def CreateDisc(name: String, options: Tessellation, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }

@@ -1,11 +1,12 @@
 package typings.jqueryNotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryNotifyInstance extends js.Object {
+trait JQueryNotifyInstance extends StObject {
   
   def close(): Unit = js.native
   
@@ -32,33 +33,21 @@ object JQueryNotifyInstance {
   }
   
   @scala.inline
-  implicit class JQueryNotifyInstanceOps[Self <: JQueryNotifyInstance] (val x: Self) extends AnyVal {
+  implicit class JQueryNotifyInstanceMutableBuilder[Self <: JQueryNotifyInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setElement(value: JQuery): Self = this.set("element", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpen(value: () => Unit): Self = this.set("open", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOptions(value: JQueryNotifyOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOptions(value: JQueryNotifyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

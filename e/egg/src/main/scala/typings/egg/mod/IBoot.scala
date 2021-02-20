@@ -1,11 +1,12 @@
 package typings.egg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBoot extends js.Object {
+trait IBoot extends StObject {
   
   /**
     * Do some thing before app close
@@ -54,60 +55,48 @@ object IBoot {
   }
   
   @scala.inline
-  implicit class IBootOps[Self <: IBoot] (val x: Self) extends AnyVal {
+  implicit class IBootMutableBuilder[Self <: IBoot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "beforeClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigDidLoad(value: () => Unit): Self = StObject.set(x, "configDidLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeforeClose(value: () => js.Promise[Unit]): Self = this.set("beforeClose", js.Any.fromFunction0(value))
+    def setConfigDidLoadUndefined: Self = StObject.set(x, "configDidLoad", js.undefined)
     
     @scala.inline
-    def deleteBeforeClose: Self = this.set("beforeClose", js.undefined)
+    def setConfigWillLoad(value: () => Unit): Self = StObject.set(x, "configWillLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfigDidLoad(value: () => Unit): Self = this.set("configDidLoad", js.Any.fromFunction0(value))
+    def setConfigWillLoadUndefined: Self = StObject.set(x, "configWillLoad", js.undefined)
     
     @scala.inline
-    def deleteConfigDidLoad: Self = this.set("configDidLoad", js.undefined)
+    def setDidLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "didLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfigWillLoad(value: () => Unit): Self = this.set("configWillLoad", js.Any.fromFunction0(value))
+    def setDidLoadUndefined: Self = StObject.set(x, "didLoad", js.undefined)
     
     @scala.inline
-    def deleteConfigWillLoad: Self = this.set("configWillLoad", js.undefined)
+    def setDidReady(value: () => js.Promise[Unit]): Self = StObject.set(x, "didReady", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDidLoad(value: () => js.Promise[Unit]): Self = this.set("didLoad", js.Any.fromFunction0(value))
+    def setDidReadyUndefined: Self = StObject.set(x, "didReady", js.undefined)
     
     @scala.inline
-    def deleteDidLoad: Self = this.set("didLoad", js.undefined)
+    def setServerDidReady(value: () => js.Promise[Unit]): Self = StObject.set(x, "serverDidReady", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDidReady(value: () => js.Promise[Unit]): Self = this.set("didReady", js.Any.fromFunction0(value))
+    def setServerDidReadyUndefined: Self = StObject.set(x, "serverDidReady", js.undefined)
     
     @scala.inline
-    def deleteDidReady: Self = this.set("didReady", js.undefined)
+    def setWillReady(value: () => js.Promise[Unit]): Self = StObject.set(x, "willReady", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setServerDidReady(value: () => js.Promise[Unit]): Self = this.set("serverDidReady", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteServerDidReady: Self = this.set("serverDidReady", js.undefined)
-    
-    @scala.inline
-    def setWillReady(value: () => js.Promise[Unit]): Self = this.set("willReady", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteWillReady: Self = this.set("willReady", js.undefined)
+    def setWillReadyUndefined: Self = StObject.set(x, "willReady", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindMarkerOptions extends js.Object {
+trait FindMarkerOptions extends StObject {
   
   /** Only include markers that contain the given Point, inclusive. */
   var containsPoint: js.UndefOr[PointCompatible] = js.native
@@ -43,72 +44,60 @@ object FindMarkerOptions {
   }
   
   @scala.inline
-  implicit class FindMarkerOptionsOps[Self <: FindMarkerOptions] (val x: Self) extends AnyVal {
+  implicit class FindMarkerOptionsMutableBuilder[Self <: FindMarkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsPoint(value: PointCompatible): Self = StObject.set(x, "containsPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsPointUndefined: Self = StObject.set(x, "containsPoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsRange(value: RangeCompatible): Self = StObject.set(x, "containsRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsPoint(value: PointCompatible): Self = this.set("containsPoint", value.asInstanceOf[js.Any])
+    def setContainsRangeUndefined: Self = StObject.set(x, "containsRange", js.undefined)
     
     @scala.inline
-    def deleteContainsPoint: Self = this.set("containsPoint", js.undefined)
+    def setEndPosition(value: PointCompatible): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsRange(value: RangeCompatible): Self = this.set("containsRange", value.asInstanceOf[js.Any])
+    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
     @scala.inline
-    def deleteContainsRange: Self = this.set("containsRange", js.undefined)
+    def setEndRow(value: Double): Self = StObject.set(x, "endRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPosition(value: PointCompatible): Self = this.set("endPosition", value.asInstanceOf[js.Any])
+    def setEndRowUndefined: Self = StObject.set(x, "endRow", js.undefined)
     
     @scala.inline
-    def deleteEndPosition: Self = this.set("endPosition", js.undefined)
+    def setEndsInRange(value: RangeCompatible): Self = StObject.set(x, "endsInRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndRow(value: Double): Self = this.set("endRow", value.asInstanceOf[js.Any])
+    def setEndsInRangeUndefined: Self = StObject.set(x, "endsInRange", js.undefined)
     
     @scala.inline
-    def deleteEndRow: Self = this.set("endRow", js.undefined)
+    def setIntersectsRow(value: Double): Self = StObject.set(x, "intersectsRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndsInRange(value: RangeCompatible): Self = this.set("endsInRange", value.asInstanceOf[js.Any])
+    def setIntersectsRowUndefined: Self = StObject.set(x, "intersectsRow", js.undefined)
     
     @scala.inline
-    def deleteEndsInRange: Self = this.set("endsInRange", js.undefined)
+    def setStartPosition(value: PointCompatible): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersectsRow(value: Double): Self = this.set("intersectsRow", value.asInstanceOf[js.Any])
+    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
     @scala.inline
-    def deleteIntersectsRow: Self = this.set("intersectsRow", js.undefined)
+    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPosition(value: PointCompatible): Self = this.set("startPosition", value.asInstanceOf[js.Any])
+    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
     
     @scala.inline
-    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
+    def setStartsInRange(value: RangeCompatible): Self = StObject.set(x, "startsInRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRow: Self = this.set("startRow", js.undefined)
-    
-    @scala.inline
-    def setStartsInRange(value: RangeCompatible): Self = this.set("startsInRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartsInRange: Self = this.set("startsInRange", js.undefined)
+    def setStartsInRangeUndefined: Self = StObject.set(x, "startsInRange", js.undefined)
   }
 }

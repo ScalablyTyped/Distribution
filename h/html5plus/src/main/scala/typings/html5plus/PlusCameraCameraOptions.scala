@@ -5,6 +5,7 @@ import typings.html5plus.html5plusStrings._documentsSlash
 import typings.html5plus.html5plusStrings._downloadsSlash
 import typings.html5plus.html5plusStrings.`1`
 import typings.html5plus.html5plusStrings.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
   */
 @js.native
-trait PlusCameraCameraOptions extends js.Object {
+trait PlusCameraCameraOptions extends StObject {
   
   /**
     * 拍照或摄像文件保存的路径
@@ -95,60 +96,48 @@ object PlusCameraCameraOptions {
   }
   
   @scala.inline
-  implicit class PlusCameraCameraOptionsOps[Self <: PlusCameraCameraOptions] (val x: Self) extends AnyVal {
+  implicit class PlusCameraCameraOptionsMutableBuilder[Self <: PlusCameraCameraOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilename(value: _docSlash | _documentsSlash | _downloadsSlash): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: _docSlash | _documentsSlash | _downloadsSlash): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setIndex(value: `1` | `2`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setOptimize(value: Boolean): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: `1` | `2`): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setPopover(value: PlusCameraPopPosition): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimize(value: Boolean): Self = this.set("optimize", value.asInstanceOf[js.Any])
+    def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
     
     @scala.inline
-    def deleteOptimize: Self = this.set("optimize", js.undefined)
+    def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopover(value: PlusCameraPopPosition): Self = this.set("popover", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def deletePopover: Self = this.set("popover", js.undefined)
+    def setVideoMaximumDuration(value: Double): Self = StObject.set(x, "videoMaximumDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: String): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
-    
-    @scala.inline
-    def setVideoMaximumDuration(value: Double): Self = this.set("videoMaximumDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoMaximumDuration: Self = this.set("videoMaximumDuration", js.undefined)
+    def setVideoMaximumDurationUndefined: Self = StObject.set(x, "videoMaximumDuration", js.undefined)
   }
 }

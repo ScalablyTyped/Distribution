@@ -1,5 +1,6 @@
 package typings.typescriptServices.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class SyntaxNodeInvariantsChecker ()
   extends typings.typescriptServices.TypeScript.SyntaxNodeInvariantsChecker
-/* static members */
-@JSImport("typescript-services", "SyntaxNodeInvariantsChecker")
-@js.native
-object SyntaxNodeInvariantsChecker extends js.Object {
+object SyntaxNodeInvariantsChecker {
   
+  /* static member */
+  @JSImport("typescript-services", "SyntaxNodeInvariantsChecker.checkInvariants")
+  @js.native
   def checkInvariants(node: typings.typescriptServices.TypeScript.SyntaxNode): Unit = js.native
 }

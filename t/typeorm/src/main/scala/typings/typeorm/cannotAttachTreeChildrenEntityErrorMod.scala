@@ -1,14 +1,14 @@
 package typings.typeorm
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/error/CannotAttachTreeChildrenEntityError", JSImport.Namespace)
-@js.native
-object cannotAttachTreeChildrenEntityErrorMod extends js.Object {
+object cannotAttachTreeChildrenEntityErrorMod {
   
+  @JSImport("typeorm/browser/error/CannotAttachTreeChildrenEntityError", "CannotAttachTreeChildrenEntityError")
   @js.native
   class CannotAttachTreeChildrenEntityError protected () extends Error {
     def this(entityName: String) = this()

@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetProfileResponse extends js.Object {
+trait GetProfileResponse extends StObject {
   
   /**
     * The details of the room profile requested. Required.
@@ -21,24 +22,12 @@ object GetProfileResponse {
   }
   
   @scala.inline
-  implicit class GetProfileResponseOps[Self <: GetProfileResponse] (val x: Self) extends AnyVal {
+  implicit class GetProfileResponseMutableBuilder[Self <: GetProfileResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProfile(value: Profile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProfile(value: Profile): Self = this.set("Profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfile: Self = this.set("Profile", js.undefined)
+    def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
   }
 }

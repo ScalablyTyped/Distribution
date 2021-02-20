@@ -4,6 +4,7 @@ import typings.esquery.esqueryStrings.adjacent
 import typings.esquery.esqueryStrings.child
 import typings.esquery.esqueryStrings.descendant
 import typings.esquery.esqueryStrings.sibling
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,27 +29,15 @@ object BinarySelectorAtom {
   }
   
   @scala.inline
-  implicit class BinarySelectorAtomOps[Self <: BinarySelectorAtom] (val x: Self) extends AnyVal {
+  implicit class BinarySelectorAtomMutableBuilder[Self <: BinarySelectorAtom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeft(value: SubjectSelector): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRight(value: SubjectSelector): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLeft(value: SubjectSelector): Self = this.set("left", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRight(value: SubjectSelector): Self = this.set("right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: child | sibling | adjacent | descendant): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: child | sibling | adjacent | descendant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

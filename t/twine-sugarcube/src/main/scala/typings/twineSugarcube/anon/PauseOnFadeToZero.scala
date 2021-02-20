@@ -1,11 +1,12 @@
 package typings.twineSugarcube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PauseOnFadeToZero extends js.Object {
+trait PauseOnFadeToZero extends StObject {
   
   /**
     * Determines whether the audio subsystem automatically pauses tracks that have been faded to 0 volume (silent).
@@ -37,24 +38,12 @@ object PauseOnFadeToZero {
   }
   
   @scala.inline
-  implicit class PauseOnFadeToZeroOps[Self <: PauseOnFadeToZero] (val x: Self) extends AnyVal {
+  implicit class PauseOnFadeToZeroMutableBuilder[Self <: PauseOnFadeToZero] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPauseOnFadeToZero(value: Boolean): Self = StObject.set(x, "pauseOnFadeToZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPauseOnFadeToZero(value: Boolean): Self = this.set("pauseOnFadeToZero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreloadMetadata(value: Boolean): Self = this.set("preloadMetadata", value.asInstanceOf[js.Any])
+    def setPreloadMetadata(value: Boolean): Self = StObject.set(x, "preloadMetadata", value.asInstanceOf[js.Any])
   }
 }

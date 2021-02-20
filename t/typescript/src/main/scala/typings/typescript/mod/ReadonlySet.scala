@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,27 +31,15 @@ object ReadonlySet {
   }
   
   @scala.inline
-  implicit class ReadonlySetOps[Self <: ReadonlySet[_], T] (val x: Self with ReadonlySet[T]) extends AnyVal {
+  implicit class ReadonlySetMutableBuilder[Self <: ReadonlySet[_], T] (val x: Self with ReadonlySet[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntries(value: () => Iterator[js.Tuple2[T, T]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForEach(value: js.Function2[/* value */ T, /* key */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntries(value: () => Iterator[js.Tuple2[T, T]]): Self = this.set("entries", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setForEach(value: js.Function2[/* value */ T, /* key */ T, Unit] => Unit): Self = this.set("forEach", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValues(value: () => Iterator[T]): Self = this.set("values", js.Any.fromFunction0(value))
+    def setValues(value: () => Iterator[T]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhysicsVortexEventOptions extends js.Object {
+trait PhysicsVortexEventOptions extends StObject {
   
   /**
     * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when above the treshold.
@@ -59,39 +60,27 @@ object PhysicsVortexEventOptions {
   }
   
   @scala.inline
-  implicit class PhysicsVortexEventOptionsOps[Self <: PhysicsVortexEventOptions] (val x: Self) extends AnyVal {
+  implicit class PhysicsVortexEventOptionsMutableBuilder[Self <: PhysicsVortexEventOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCentrifugalForceMultiplier(value: Double): Self = StObject.set(x, "centrifugalForceMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCentripetalForceMultiplier(value: Double): Self = StObject.set(x, "centripetalForceMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCentripetalForceThreshold(value: Double): Self = StObject.set(x, "centripetalForceThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCentrifugalForceMultiplier(value: Double): Self = this.set("centrifugalForceMultiplier", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCentripetalForceMultiplier(value: Double): Self = this.set("centripetalForceMultiplier", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCentripetalForceThreshold(value: Double): Self = this.set("centripetalForceThreshold", value.asInstanceOf[js.Any])
+    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrength(value: Double): Self = this.set("strength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdraftForceMultiplier(value: Double): Self = this.set("updraftForceMultiplier", value.asInstanceOf[js.Any])
+    def setUpdraftForceMultiplier(value: Double): Self = StObject.set(x, "updraftForceMultiplier", value.asInstanceOf[js.Any])
   }
 }

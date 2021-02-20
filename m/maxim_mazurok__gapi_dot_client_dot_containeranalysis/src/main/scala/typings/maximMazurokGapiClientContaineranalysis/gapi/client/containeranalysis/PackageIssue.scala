@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PackageIssue extends js.Object {
+trait PackageIssue extends StObject {
   
   /** Required. The location of the vulnerability. */
   var affectedLocation: js.UndefOr[VulnerabilityLocation] = js.native
@@ -25,36 +26,24 @@ object PackageIssue {
   }
   
   @scala.inline
-  implicit class PackageIssueOps[Self <: PackageIssue] (val x: Self) extends AnyVal {
+  implicit class PackageIssueMutableBuilder[Self <: PackageIssue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffectedLocation(value: VulnerabilityLocation): Self = StObject.set(x, "affectedLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffectedLocationUndefined: Self = StObject.set(x, "affectedLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFixedLocation(value: VulnerabilityLocation): Self = StObject.set(x, "fixedLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffectedLocation(value: VulnerabilityLocation): Self = this.set("affectedLocation", value.asInstanceOf[js.Any])
+    def setFixedLocationUndefined: Self = StObject.set(x, "fixedLocation", js.undefined)
     
     @scala.inline
-    def deleteAffectedLocation: Self = this.set("affectedLocation", js.undefined)
+    def setSeverityName(value: String): Self = StObject.set(x, "severityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedLocation(value: VulnerabilityLocation): Self = this.set("fixedLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixedLocation: Self = this.set("fixedLocation", js.undefined)
-    
-    @scala.inline
-    def setSeverityName(value: String): Self = this.set("severityName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverityName: Self = this.set("severityName", js.undefined)
+    def setSeverityNameUndefined: Self = StObject.set(x, "severityName", js.undefined)
   }
 }

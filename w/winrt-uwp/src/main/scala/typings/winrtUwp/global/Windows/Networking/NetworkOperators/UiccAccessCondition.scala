@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes the conditions placed on operations using a UICC application. */
 @JSGlobal("Windows.Networking.NetworkOperators.UiccAccessCondition")
 @js.native
-object UiccAccessCondition extends js.Object {
+object UiccAccessCondition extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

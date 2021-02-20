@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketCountByEffectivePermission extends js.Object {
+trait BucketCountByEffectivePermission extends StObject {
   
   /**
     * The total number of buckets that allow the general public to have read or write access to the bucket.
@@ -36,42 +37,30 @@ object BucketCountByEffectivePermission {
   }
   
   @scala.inline
-  implicit class BucketCountByEffectivePermissionOps[Self <: BucketCountByEffectivePermission] (val x: Self) extends AnyVal {
+  implicit class BucketCountByEffectivePermissionMutableBuilder[Self <: BucketCountByEffectivePermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPubliclyAccessible(value: long): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPubliclyReadable(value: long): Self = StObject.set(x, "publiclyReadable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubliclyAccessible(value: long): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
+    def setPubliclyReadableUndefined: Self = StObject.set(x, "publiclyReadable", js.undefined)
     
     @scala.inline
-    def deletePubliclyAccessible: Self = this.set("publiclyAccessible", js.undefined)
+    def setPubliclyWritable(value: long): Self = StObject.set(x, "publiclyWritable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubliclyReadable(value: long): Self = this.set("publiclyReadable", value.asInstanceOf[js.Any])
+    def setPubliclyWritableUndefined: Self = StObject.set(x, "publiclyWritable", js.undefined)
     
     @scala.inline
-    def deletePubliclyReadable: Self = this.set("publiclyReadable", js.undefined)
+    def setUnknown(value: long): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubliclyWritable(value: long): Self = this.set("publiclyWritable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubliclyWritable: Self = this.set("publiclyWritable", js.undefined)
-    
-    @scala.inline
-    def setUnknown(value: long): Self = this.set("unknown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknown: Self = this.set("unknown", js.undefined)
+    def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
   }
 }

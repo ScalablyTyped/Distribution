@@ -1,5 +1,6 @@
 package typings.googleapis.classroomV1Mod.classroomV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Student work for a short answer question.
   */
 @js.native
-trait SchemaShortAnswerSubmission extends js.Object {
+trait SchemaShortAnswerSubmission extends StObject {
   
   /**
     * Student response to a short-answer question.
@@ -24,24 +25,12 @@ object SchemaShortAnswerSubmission {
   }
   
   @scala.inline
-  implicit class SchemaShortAnswerSubmissionOps[Self <: SchemaShortAnswerSubmission] (val x: Self) extends AnyVal {
+  implicit class SchemaShortAnswerSubmissionMutableBuilder[Self <: SchemaShortAnswerSubmission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnswer(value: String): Self = this.set("answer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnswer: Self = this.set("answer", js.undefined)
+    def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
   }
 }

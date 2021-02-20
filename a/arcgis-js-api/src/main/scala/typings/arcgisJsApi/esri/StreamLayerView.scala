@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`data-received`
 import typings.arcgisJsApi.arcgisJsApiStrings.`update-rate`
 import typings.arcgisJsApi.arcgisJsApiStrings.connected
 import typings.arcgisJsApi.arcgisJsApiStrings.disconnected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

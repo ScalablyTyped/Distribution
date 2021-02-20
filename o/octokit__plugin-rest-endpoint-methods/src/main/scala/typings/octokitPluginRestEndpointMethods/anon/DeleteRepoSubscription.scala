@@ -1,11 +1,12 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteRepoSubscription extends js.Object {
+trait DeleteRepoSubscription extends StObject {
   
   var checkRepoIsStarredByAuthenticatedUser: `589` = js.native
   
@@ -110,111 +111,99 @@ object DeleteRepoSubscription {
   }
   
   @scala.inline
-  implicit class DeleteRepoSubscriptionOps[Self <: DeleteRepoSubscription] (val x: Self) extends AnyVal {
+  implicit class DeleteRepoSubscriptionMutableBuilder[Self <: DeleteRepoSubscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckRepoIsStarredByAuthenticatedUser(value: `589`): Self = StObject.set(x, "checkRepoIsStarredByAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteRepoSubscription(value: `590`): Self = StObject.set(x, "deleteRepoSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteThreadSubscription(value: `591`): Self = StObject.set(x, "deleteThreadSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckRepoIsStarredByAuthenticatedUser(value: `589`): Self = this.set("checkRepoIsStarredByAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setGetFeeds(value: `592`): Self = StObject.set(x, "getFeeds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteRepoSubscription(value: `590`): Self = this.set("deleteRepoSubscription", value.asInstanceOf[js.Any])
+    def setGetRepoSubscription(value: `593`): Self = StObject.set(x, "getRepoSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteThreadSubscription(value: `591`): Self = this.set("deleteThreadSubscription", value.asInstanceOf[js.Any])
+    def setGetThread(value: `594`): Self = StObject.set(x, "getThread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetFeeds(value: `592`): Self = this.set("getFeeds", value.asInstanceOf[js.Any])
+    def setGetThreadSubscriptionForAuthenticatedUser(value: `595`): Self = StObject.set(x, "getThreadSubscriptionForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRepoSubscription(value: `593`): Self = this.set("getRepoSubscription", value.asInstanceOf[js.Any])
+    def setListEventsForAuthenticatedUser(value: `596`): Self = StObject.set(x, "listEventsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetThread(value: `594`): Self = this.set("getThread", value.asInstanceOf[js.Any])
+    def setListNotificationsForAuthenticatedUser(value: `597`): Self = StObject.set(x, "listNotificationsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetThreadSubscriptionForAuthenticatedUser(value: `595`): Self = this.set("getThreadSubscriptionForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setListOrgEventsForAuthenticatedUser(value: `598`): Self = StObject.set(x, "listOrgEventsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListEventsForAuthenticatedUser(value: `596`): Self = this.set("listEventsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setListPublicEvents(value: `599`): Self = StObject.set(x, "listPublicEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListNotificationsForAuthenticatedUser(value: `597`): Self = this.set("listNotificationsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setListPublicEventsForRepoNetwork(value: `600`): Self = StObject.set(x, "listPublicEventsForRepoNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListOrgEventsForAuthenticatedUser(value: `598`): Self = this.set("listOrgEventsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setListPublicEventsForUser(value: `601`): Self = StObject.set(x, "listPublicEventsForUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListPublicEvents(value: `599`): Self = this.set("listPublicEvents", value.asInstanceOf[js.Any])
+    def setListPublicOrgEvents(value: `602`): Self = StObject.set(x, "listPublicOrgEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListPublicEventsForRepoNetwork(value: `600`): Self = this.set("listPublicEventsForRepoNetwork", value.asInstanceOf[js.Any])
+    def setListReceivedEventsForUser(value: `603`): Self = StObject.set(x, "listReceivedEventsForUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListPublicEventsForUser(value: `601`): Self = this.set("listPublicEventsForUser", value.asInstanceOf[js.Any])
+    def setListReceivedPublicEventsForUser(value: `604`): Self = StObject.set(x, "listReceivedPublicEventsForUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListPublicOrgEvents(value: `602`): Self = this.set("listPublicOrgEvents", value.asInstanceOf[js.Any])
+    def setListRepoEvents(value: `605`): Self = StObject.set(x, "listRepoEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListReceivedEventsForUser(value: `603`): Self = this.set("listReceivedEventsForUser", value.asInstanceOf[js.Any])
+    def setListRepoNotificationsForAuthenticatedUser(value: `606`): Self = StObject.set(x, "listRepoNotificationsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListReceivedPublicEventsForUser(value: `604`): Self = this.set("listReceivedPublicEventsForUser", value.asInstanceOf[js.Any])
+    def setListReposStarredByAuthenticatedUser(value: `607`): Self = StObject.set(x, "listReposStarredByAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListRepoEvents(value: `605`): Self = this.set("listRepoEvents", value.asInstanceOf[js.Any])
+    def setListReposStarredByUser(value: `608`): Self = StObject.set(x, "listReposStarredByUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListRepoNotificationsForAuthenticatedUser(value: `606`): Self = this.set("listRepoNotificationsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setListReposWatchedByUser(value: `609`): Self = StObject.set(x, "listReposWatchedByUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListReposStarredByAuthenticatedUser(value: `607`): Self = this.set("listReposStarredByAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setListStargazersForRepo(value: `610`): Self = StObject.set(x, "listStargazersForRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListReposStarredByUser(value: `608`): Self = this.set("listReposStarredByUser", value.asInstanceOf[js.Any])
+    def setListWatchedReposForAuthenticatedUser(value: `611`): Self = StObject.set(x, "listWatchedReposForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListReposWatchedByUser(value: `609`): Self = this.set("listReposWatchedByUser", value.asInstanceOf[js.Any])
+    def setListWatchersForRepo(value: `612`): Self = StObject.set(x, "listWatchersForRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListStargazersForRepo(value: `610`): Self = this.set("listStargazersForRepo", value.asInstanceOf[js.Any])
+    def setMarkNotificationsAsRead(value: `613`): Self = StObject.set(x, "markNotificationsAsRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListWatchedReposForAuthenticatedUser(value: `611`): Self = this.set("listWatchedReposForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setMarkRepoNotificationsAsRead(value: `614`): Self = StObject.set(x, "markRepoNotificationsAsRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListWatchersForRepo(value: `612`): Self = this.set("listWatchersForRepo", value.asInstanceOf[js.Any])
+    def setMarkThreadAsRead(value: `615`): Self = StObject.set(x, "markThreadAsRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkNotificationsAsRead(value: `613`): Self = this.set("markNotificationsAsRead", value.asInstanceOf[js.Any])
+    def setSetRepoSubscription(value: `616`): Self = StObject.set(x, "setRepoSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkRepoNotificationsAsRead(value: `614`): Self = this.set("markRepoNotificationsAsRead", value.asInstanceOf[js.Any])
+    def setSetThreadSubscription(value: `617`): Self = StObject.set(x, "setThreadSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkThreadAsRead(value: `615`): Self = this.set("markThreadAsRead", value.asInstanceOf[js.Any])
+    def setStarRepoForAuthenticatedUser(value: `618`): Self = StObject.set(x, "starRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetRepoSubscription(value: `616`): Self = this.set("setRepoSubscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetThreadSubscription(value: `617`): Self = this.set("setThreadSubscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStarRepoForAuthenticatedUser(value: `618`): Self = this.set("starRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnstarRepoForAuthenticatedUser(value: `619`): Self = this.set("unstarRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setUnstarRepoForAuthenticatedUser(value: `619`): Self = StObject.set(x, "unstarRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
   }
 }

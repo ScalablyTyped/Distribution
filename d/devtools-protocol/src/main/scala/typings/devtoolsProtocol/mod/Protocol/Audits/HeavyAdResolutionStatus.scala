@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Audits
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdBlocked
   - typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdWarning
 */
-trait HeavyAdResolutionStatus extends js.Object
+trait HeavyAdResolutionStatus extends StObject
 object HeavyAdResolutionStatus {
   
   @scala.inline

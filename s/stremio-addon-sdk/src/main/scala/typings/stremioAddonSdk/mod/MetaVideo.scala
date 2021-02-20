@@ -1,11 +1,12 @@
 package typings.stremioAddonSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetaVideo extends js.Object {
+trait MetaVideo extends StObject {
   
   /**
     * Set to true to explicitly state that this video is available for streaming, from your addon.
@@ -80,72 +81,60 @@ object MetaVideo {
   }
   
   @scala.inline
-  implicit class MetaVideoOps[Self <: MetaVideo] (val x: Self) extends AnyVal {
+  implicit class MetaVideoMutableBuilder[Self <: MetaVideo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEpisode(value: Double): Self = StObject.set(x, "episode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setEpisodeUndefined: Self = StObject.set(x, "episode", js.undefined)
     
     @scala.inline
-    def setReleased(value: String): Self = this.set("released", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: Boolean): Self = this.set("available", value.asInstanceOf[js.Any])
+    def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
     
     @scala.inline
-    def deleteAvailable: Self = this.set("available", js.undefined)
+    def setReleased(value: String): Self = StObject.set(x, "released", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpisode(value: Double): Self = this.set("episode", value.asInstanceOf[js.Any])
+    def setSeason(value: Double): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEpisode: Self = this.set("episode", js.undefined)
+    def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
     
     @scala.inline
-    def setOverview(value: String): Self = this.set("overview", value.asInstanceOf[js.Any])
+    def setStreams(value: js.Array[Stream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverview: Self = this.set("overview", js.undefined)
+    def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
     
     @scala.inline
-    def setSeason(value: Double): Self = this.set("season", value.asInstanceOf[js.Any])
+    def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value :_*))
     
     @scala.inline
-    def deleteSeason: Self = this.set("season", js.undefined)
+    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamsVarargs(value: Stream*): Self = this.set("streams", js.Array(value :_*))
+    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     
     @scala.inline
-    def setStreams(value: js.Array[Stream]): Self = this.set("streams", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStreams: Self = this.set("streams", js.undefined)
+    def setTrailer(value: String): Self = StObject.set(x, "trailer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnail(value: String): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
-    
-    @scala.inline
-    def setTrailer(value: String): Self = this.set("trailer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailer: Self = this.set("trailer", js.undefined)
+    def setTrailerUndefined: Self = StObject.set(x, "trailer", js.undefined)
   }
 }

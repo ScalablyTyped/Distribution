@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemData extends js.Object {
+trait MemData extends StObject {
   
   var active: Double = js.native
   
@@ -53,54 +54,42 @@ object MemData {
   }
   
   @scala.inline
-  implicit class MemDataOps[Self <: MemData] (val x: Self) extends AnyVal {
+  implicit class MemDataMutableBuilder[Self <: MemData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuffcache(value: Double): Self = StObject.set(x, "buffcache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Double): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setBuffers(value: Double): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: Double): Self = this.set("available", value.asInstanceOf[js.Any])
+    def setCached(value: Double): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffcache(value: Double): Self = this.set("buffcache", value.asInstanceOf[js.Any])
+    def setFree(value: Double): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffers(value: Double): Self = this.set("buffers", value.asInstanceOf[js.Any])
+    def setSlab(value: Double): Self = StObject.set(x, "slab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCached(value: Double): Self = this.set("cached", value.asInstanceOf[js.Any])
+    def setSwapfree(value: Double): Self = StObject.set(x, "swapfree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFree(value: Double): Self = this.set("free", value.asInstanceOf[js.Any])
+    def setSwaptotal(value: Double): Self = StObject.set(x, "swaptotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlab(value: Double): Self = this.set("slab", value.asInstanceOf[js.Any])
+    def setSwapused(value: Double): Self = StObject.set(x, "swapused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwapfree(value: Double): Self = this.set("swapfree", value.asInstanceOf[js.Any])
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwaptotal(value: Double): Self = this.set("swaptotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwapused(value: Double): Self = this.set("swapused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsed(value: Double): Self = this.set("used", value.asInstanceOf[js.Any])
+    def setUsed(value: Double): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
   }
 }

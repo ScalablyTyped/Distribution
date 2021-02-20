@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,75 +55,63 @@ object NutritionOrderOralDiet {
   }
   
   @scala.inline
-  implicit class NutritionOrderOralDietOps[Self <: NutritionOrderOralDiet] (val x: Self) extends AnyVal {
+  implicit class NutritionOrderOralDietMutableBuilder[Self <: NutritionOrderOralDiet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFluidConsistencyType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "fluidConsistencyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFluidConsistencyTypeUndefined: Self = StObject.set(x, "fluidConsistencyType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFluidConsistencyTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "fluidConsistencyType", js.Array(value :_*))
     
     @scala.inline
-    def set_instruction(value: Element): Self = this.set("_instruction", value.asInstanceOf[js.Any])
+    def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_instruction: Self = this.set("_instruction", js.undefined)
+    def setInstructionUndefined: Self = StObject.set(x, "instruction", js.undefined)
     
     @scala.inline
-    def setFluidConsistencyTypeVarargs(value: CodeableConcept*): Self = this.set("fluidConsistencyType", js.Array(value :_*))
+    def setNutrient(value: js.Array[NutritionOrderOralDietNutrient]): Self = StObject.set(x, "nutrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFluidConsistencyType(value: js.Array[CodeableConcept]): Self = this.set("fluidConsistencyType", value.asInstanceOf[js.Any])
+    def setNutrientUndefined: Self = StObject.set(x, "nutrient", js.undefined)
     
     @scala.inline
-    def deleteFluidConsistencyType: Self = this.set("fluidConsistencyType", js.undefined)
+    def setNutrientVarargs(value: NutritionOrderOralDietNutrient*): Self = StObject.set(x, "nutrient", js.Array(value :_*))
     
     @scala.inline
-    def setInstruction(value: String): Self = this.set("instruction", value.asInstanceOf[js.Any])
+    def setSchedule(value: js.Array[Timing]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstruction: Self = this.set("instruction", js.undefined)
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def setNutrientVarargs(value: NutritionOrderOralDietNutrient*): Self = this.set("nutrient", js.Array(value :_*))
+    def setScheduleVarargs(value: Timing*): Self = StObject.set(x, "schedule", js.Array(value :_*))
     
     @scala.inline
-    def setNutrient(value: js.Array[NutritionOrderOralDietNutrient]): Self = this.set("nutrient", value.asInstanceOf[js.Any])
+    def setTexture(value: js.Array[NutritionOrderOralDietTexture]): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNutrient: Self = this.set("nutrient", js.undefined)
+    def setTextureUndefined: Self = StObject.set(x, "texture", js.undefined)
     
     @scala.inline
-    def setScheduleVarargs(value: Timing*): Self = this.set("schedule", js.Array(value :_*))
+    def setTextureVarargs(value: NutritionOrderOralDietTexture*): Self = StObject.set(x, "texture", js.Array(value :_*))
     
     @scala.inline
-    def setSchedule(value: js.Array[Timing]): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setTextureVarargs(value: NutritionOrderOralDietTexture*): Self = this.set("texture", js.Array(value :_*))
+    def setTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def setTexture(value: js.Array[NutritionOrderOralDietTexture]): Self = this.set("texture", value.asInstanceOf[js.Any])
+    def set_instruction(value: Element): Self = StObject.set(x, "_instruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTexture: Self = this.set("texture", js.undefined)
-    
-    @scala.inline
-    def setTypeVarargs(value: CodeableConcept*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: js.Array[CodeableConcept]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_instructionUndefined: Self = StObject.set(x, "_instruction", js.undefined)
   }
 }

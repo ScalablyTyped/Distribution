@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * VolumeMount describes a mounting of a Volume within a container.
   */
 @js.native
-trait SchemaVolumeMount extends js.Object {
+trait SchemaVolumeMount extends StObject {
   
   /**
     * Path within the container at which the volume should be mounted.  Must
@@ -50,48 +51,36 @@ object SchemaVolumeMount {
   }
   
   @scala.inline
-  implicit class SchemaVolumeMountOps[Self <: SchemaVolumeMount] (val x: Self) extends AnyVal {
+  implicit class SchemaVolumeMountMutableBuilder[Self <: SchemaVolumeMount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMountPathUndefined: Self = StObject.set(x, "mountPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMountPropagation(value: String): Self = StObject.set(x, "mountPropagation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountPath(value: String): Self = this.set("mountPath", value.asInstanceOf[js.Any])
+    def setMountPropagationUndefined: Self = StObject.set(x, "mountPropagation", js.undefined)
     
     @scala.inline
-    def deleteMountPath: Self = this.set("mountPath", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountPropagation(value: String): Self = this.set("mountPropagation", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMountPropagation: Self = this.set("mountPropagation", js.undefined)
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSubPath(value: String): Self = StObject.set(x, "subPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
-    
-    @scala.inline
-    def setSubPath(value: String): Self = this.set("subPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubPath: Self = this.set("subPath", js.undefined)
+    def setSubPathUndefined: Self = StObject.set(x, "subPath", js.undefined)
   }
 }

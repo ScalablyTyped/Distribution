@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.msk
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterOpenMonitoringPrometheusNodeExporter extends js.Object {
+trait ClusterOpenMonitoringPrometheusNodeExporter extends StObject {
   
   /**
     * Indicates whether you want to enable or disable the JMX Exporter.
@@ -22,21 +23,9 @@ object ClusterOpenMonitoringPrometheusNodeExporter {
   }
   
   @scala.inline
-  implicit class ClusterOpenMonitoringPrometheusNodeExporterOps[Self <: ClusterOpenMonitoringPrometheusNodeExporter] (val x: Self) extends AnyVal {
+  implicit class ClusterOpenMonitoringPrometheusNodeExporterMutableBuilder[Self <: ClusterOpenMonitoringPrometheusNodeExporter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabledInBroker(value: Input[Boolean]): Self = this.set("enabledInBroker", value.asInstanceOf[js.Any])
+    def setEnabledInBroker(value: Input[Boolean]): Self = StObject.set(x, "enabledInBroker", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.raygun.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OfflineStorageOptions extends js.Object {
+trait OfflineStorageOptions extends StObject {
   
   var cacheLimit: js.UndefOr[Double] = js.native
   
@@ -20,27 +21,15 @@ object OfflineStorageOptions {
   }
   
   @scala.inline
-  implicit class OfflineStorageOptionsOps[Self <: OfflineStorageOptions] (val x: Self) extends AnyVal {
+  implicit class OfflineStorageOptionsMutableBuilder[Self <: OfflineStorageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheLimit(value: Double): Self = StObject.set(x, "cacheLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheLimitUndefined: Self = StObject.set(x, "cacheLimit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCachePath(value: String): Self = this.set("cachePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCacheLimit(value: Double): Self = this.set("cacheLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCacheLimit: Self = this.set("cacheLimit", js.undefined)
+    def setCachePath(value: String): Self = StObject.set(x, "cachePath", value.asInstanceOf[js.Any])
   }
 }

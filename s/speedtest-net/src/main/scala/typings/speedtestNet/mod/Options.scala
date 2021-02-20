@@ -1,11 +1,12 @@
 package typings.speedtestNet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /**
     * Set to `true` to accept the Ookla GDPR terms. This must be done
@@ -59,80 +60,68 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptGdpr(value: Boolean): Self = StObject.set(x, "acceptGdpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptGdprUndefined: Self = StObject.set(x, "acceptGdpr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceptLicense(value: Boolean): Self = StObject.set(x, "acceptLicense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptGdpr(value: Boolean): Self = this.set("acceptGdpr", value.asInstanceOf[js.Any])
+    def setAcceptLicenseUndefined: Self = StObject.set(x, "acceptLicense", js.undefined)
     
     @scala.inline
-    def deleteAcceptGdpr: Self = this.set("acceptGdpr", js.undefined)
+    def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptLicense(value: Boolean): Self = this.set("acceptLicense", value.asInstanceOf[js.Any])
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def deleteAcceptLicense: Self = this.set("acceptLicense", js.undefined)
+    def setBinaryVersion(value: String): Self = StObject.set(x, "binaryVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: String): Self = this.set("binary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
-    
-    @scala.inline
-    def setBinaryVersion(value: String): Self = this.set("binaryVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBinaryVersion: Self = this.set("binaryVersion", js.undefined)
+    def setBinaryVersionUndefined: Self = StObject.set(x, "binaryVersion", js.undefined)
     
     @scala.inline
     def setCancel(
       value: (/* setCancelHandler */ js.UndefOr[js.Symbol], /* newHandler */ js.UndefOr[js.Function0[Unit]]) => Boolean | Unit
-    ): Self = this.set("cancel", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "cancel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setProgress(value: /* event */ js.UndefOr[SpeedTestEvent] => Unit): Self = this.set("progress", js.Any.fromFunction1(value))
+    def setProgress(value: /* event */ js.UndefOr[SpeedTestEvent] => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def setServerId(value: String): Self = this.set("serverId", value.asInstanceOf[js.Any])
+    def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServerId: Self = this.set("serverId", js.undefined)
+    def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
     
     @scala.inline
-    def setSourceIp(value: String): Self = this.set("sourceIp", value.asInstanceOf[js.Any])
+    def setSourceIp(value: String): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceIp: Self = this.set("sourceIp", js.undefined)
+    def setSourceIpUndefined: Self = StObject.set(x, "sourceIp", js.undefined)
     
     @scala.inline
-    def setVerbosity(value: Double): Self = this.set("verbosity", value.asInstanceOf[js.Any])
+    def setVerbosity(value: Double): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVerbosity: Self = this.set("verbosity", js.undefined)
+    def setVerbosityUndefined: Self = StObject.set(x, "verbosity", js.undefined)
   }
 }

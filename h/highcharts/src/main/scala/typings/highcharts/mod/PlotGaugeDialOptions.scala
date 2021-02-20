@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotGaugeDialOptions extends js.Object {
+trait PlotGaugeDialOptions extends StObject {
   
   /**
     * (Highcharts) The background or fill color of the gauge's dial.
@@ -63,66 +64,54 @@ object PlotGaugeDialOptions {
   }
   
   @scala.inline
-  implicit class PlotGaugeDialOptionsOps[Self <: PlotGaugeDialOptions] (val x: Self) extends AnyVal {
+  implicit class PlotGaugeDialOptionsMutableBuilder[Self <: PlotGaugeDialOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseLength(value: String): Self = StObject.set(x, "baseLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBaseLengthUndefined: Self = StObject.set(x, "baseLength", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBaseWidth(value: Double): Self = StObject.set(x, "baseWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseLength(value: String): Self = this.set("baseLength", value.asInstanceOf[js.Any])
+    def setBaseWidthUndefined: Self = StObject.set(x, "baseWidth", js.undefined)
     
     @scala.inline
-    def deleteBaseLength: Self = this.set("baseLength", js.undefined)
+    def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseWidth(value: Double): Self = this.set("baseWidth", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteBaseWidth: Self = this.set("baseWidth", js.undefined)
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setRearLength(value: String): Self = StObject.set(x, "rearLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: String): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setRearLengthUndefined: Self = StObject.set(x, "rearLength", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setTopWidth(value: Double): Self = StObject.set(x, "topWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRearLength(value: String): Self = this.set("rearLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRearLength: Self = this.set("rearLength", js.undefined)
-    
-    @scala.inline
-    def setTopWidth(value: Double): Self = this.set("topWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopWidth: Self = this.set("topWidth", js.undefined)
+    def setTopWidthUndefined: Self = StObject.set(x, "topWidth", js.undefined)
   }
 }

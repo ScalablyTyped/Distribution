@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,33 +63,21 @@ object ArcGISMapServiceCapabilitiesExportMap {
   }
   
   @scala.inline
-  implicit class ArcGISMapServiceCapabilitiesExportMapOps[Self <: ArcGISMapServiceCapabilitiesExportMap] (val x: Self) extends AnyVal {
+  implicit class ArcGISMapServiceCapabilitiesExportMapMutableBuilder[Self <: ArcGISMapServiceCapabilitiesExportMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSupportsDynamicLayers(value: Boolean): Self = StObject.set(x, "supportsDynamicLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportsModification(value: Boolean): Self = StObject.set(x, "supportsModification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportsSublayerDefinitionExpression(value: Boolean): Self = StObject.set(x, "supportsSublayerDefinitionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsDynamicLayers(value: Boolean): Self = this.set("supportsDynamicLayers", value.asInstanceOf[js.Any])
+    def setSupportsSublayerVisibility(value: Boolean): Self = StObject.set(x, "supportsSublayerVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsModification(value: Boolean): Self = this.set("supportsModification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsSublayerDefinitionExpression(value: Boolean): Self = this.set("supportsSublayerDefinitionExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsSublayerVisibility(value: Boolean): Self = this.set("supportsSublayerVisibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsSublayersChanges(value: Boolean): Self = this.set("supportsSublayersChanges", value.asInstanceOf[js.Any])
+    def setSupportsSublayersChanges(value: Boolean): Self = StObject.set(x, "supportsSublayersChanges", value.asInstanceOf[js.Any])
   }
 }

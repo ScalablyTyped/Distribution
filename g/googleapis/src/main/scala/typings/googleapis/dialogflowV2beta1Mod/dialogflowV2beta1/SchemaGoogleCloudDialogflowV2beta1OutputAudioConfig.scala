@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Instructs the speech synthesizer how to generate the output audio content.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig extends StObject {
   
   /**
     * Required. Audio encoding of the synthesized audio content.
@@ -38,36 +39,24 @@ object SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1OutputAudioConfigOps[Self <: SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1OutputAudioConfigMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioEncoding(value: String): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioEncodingUndefined: Self = StObject.set(x, "audioEncoding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioEncoding(value: String): Self = this.set("audioEncoding", value.asInstanceOf[js.Any])
+    def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
     
     @scala.inline
-    def deleteAudioEncoding: Self = this.set("audioEncoding", js.undefined)
+    def setSynthesizeSpeechConfig(value: SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig): Self = StObject.set(x, "synthesizeSpeechConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleRateHertz(value: Double): Self = this.set("sampleRateHertz", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRateHertz: Self = this.set("sampleRateHertz", js.undefined)
-    
-    @scala.inline
-    def setSynthesizeSpeechConfig(value: SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig): Self = this.set("synthesizeSpeechConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSynthesizeSpeechConfig: Self = this.set("synthesizeSpeechConfig", js.undefined)
+    def setSynthesizeSpeechConfigUndefined: Self = StObject.set(x, "synthesizeSpeechConfig", js.undefined)
   }
 }

@@ -3,12 +3,13 @@ package typings.cadesplugin.CAPICOM
 import typings.cadesplugin.cadespluginNumbers.`0`
 import typings.cadesplugin.cadespluginNumbers.`1`
 import typings.cadesplugin.cadespluginNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CAPICOM_CERTIFICATE_INCLUDE_OPTION extends js.Object {
+trait CAPICOM_CERTIFICATE_INCLUDE_OPTION extends StObject {
   
   val CAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT: `0` = js.native
   
@@ -29,27 +30,15 @@ object CAPICOM_CERTIFICATE_INCLUDE_OPTION {
   }
   
   @scala.inline
-  implicit class CAPICOM_CERTIFICATE_INCLUDE_OPTIONOps[Self <: CAPICOM_CERTIFICATE_INCLUDE_OPTION] (val x: Self) extends AnyVal {
+  implicit class CAPICOM_CERTIFICATE_INCLUDE_OPTIONMutableBuilder[Self <: CAPICOM_CERTIFICATE_INCLUDE_OPTION] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT(value: `0`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_CERTIFICATE_INCLUDE_END_ENTITY_ONLY(value: `2`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_INCLUDE_END_ENTITY_ONLY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT(value: `0`): Self = this.set("CAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_CERTIFICATE_INCLUDE_END_ENTITY_ONLY(value: `2`): Self = this.set("CAPICOM_CERTIFICATE_INCLUDE_END_ENTITY_ONLY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_CERTIFICATE_INCLUDE_WHOLE_CHAIN(value: `1`): Self = this.set("CAPICOM_CERTIFICATE_INCLUDE_WHOLE_CHAIN", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_INCLUDE_WHOLE_CHAIN(value: `1`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_INCLUDE_WHOLE_CHAIN", value.asInstanceOf[js.Any])
   }
 }

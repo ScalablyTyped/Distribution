@@ -1,10 +1,20 @@
 package typings.htmlValidator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
+  @scala.inline
+  def apply(options: typings.htmlValidator.mod.OptionsForExternalUrlAsValidationTargetAndObjectAsResult): js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults]]
+  @scala.inline
+  def apply(options: typings.htmlValidator.mod.OptionsForExternalUrlAsValidationTargetAndTextAsResults): js.Promise[java.lang.String] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[java.lang.String]]
+  @scala.inline
+  def apply(options: typings.htmlValidator.mod.OptionsForHtmlFileAsValidationTargetAndObjectAsResult): js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.htmlValidator.mod.ParsedJsonAsValidationResults]]
+  @scala.inline
+  def apply(options: typings.htmlValidator.mod.OptionsForHtmlFileAsValidationTargetAndTextAsResults): js.Promise[java.lang.String] = typings.htmlValidator.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[java.lang.String]]
   
   type ValidationMessageLocationObject = typings.htmlValidator.mod.ValidationMessageSimpleObject with typings.htmlValidator.mod.ValidationMessageBasicLocationObject
   

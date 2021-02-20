@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateInvitationsRequest extends js.Object {
+trait CreateInvitationsRequest extends StObject {
   
   /**
     * An array that lists AWS account IDs, one for each account to send the invitation to.
@@ -31,36 +32,24 @@ object CreateInvitationsRequest {
   }
   
   @scala.inline
-  implicit class CreateInvitationsRequestOps[Self <: CreateInvitationsRequest] (val x: Self) extends AnyVal {
+  implicit class CreateInvitationsRequestMutableBuilder[Self <: CreateInvitationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountIds(value: listOfString): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdsVarargs(value: string*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableEmailNotification(value: boolean): Self = StObject.set(x, "disableEmailNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountIdsVarargs(value: string*): Self = this.set("accountIds", js.Array(value :_*))
+    def setDisableEmailNotificationUndefined: Self = StObject.set(x, "disableEmailNotification", js.undefined)
     
     @scala.inline
-    def setAccountIds(value: listOfString): Self = this.set("accountIds", value.asInstanceOf[js.Any])
+    def setMessage(value: string): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableEmailNotification(value: boolean): Self = this.set("disableEmailNotification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableEmailNotification: Self = this.set("disableEmailNotification", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: string): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

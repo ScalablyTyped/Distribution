@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetHostedZoneResponse extends js.Object {
+trait GetHostedZoneResponse extends StObject {
   
   /**
     * A complex type that lists the Amazon Route 53 name servers for the specified hosted zone.
@@ -31,36 +32,24 @@ object GetHostedZoneResponse {
   }
   
   @scala.inline
-  implicit class GetHostedZoneResponseOps[Self <: GetHostedZoneResponse] (val x: Self) extends AnyVal {
+  implicit class GetHostedZoneResponseMutableBuilder[Self <: GetHostedZoneResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegationSet(value: DelegationSet): Self = StObject.set(x, "DelegationSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelegationSetUndefined: Self = StObject.set(x, "DelegationSet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostedZone(value: HostedZone): Self = StObject.set(x, "HostedZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostedZone(value: HostedZone): Self = this.set("HostedZone", value.asInstanceOf[js.Any])
+    def setVPCs(value: VPCs): Self = StObject.set(x, "VPCs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegationSet(value: DelegationSet): Self = this.set("DelegationSet", value.asInstanceOf[js.Any])
+    def setVPCsUndefined: Self = StObject.set(x, "VPCs", js.undefined)
     
     @scala.inline
-    def deleteDelegationSet: Self = this.set("DelegationSet", js.undefined)
-    
-    @scala.inline
-    def setVPCsVarargs(value: VPC*): Self = this.set("VPCs", js.Array(value :_*))
-    
-    @scala.inline
-    def setVPCs(value: VPCs): Self = this.set("VPCs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVPCs: Self = this.set("VPCs", js.undefined)
+    def setVPCsVarargs(value: VPC*): Self = StObject.set(x, "VPCs", js.Array(value :_*))
   }
 }

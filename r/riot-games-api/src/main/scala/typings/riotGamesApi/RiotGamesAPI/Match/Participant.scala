@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.Match
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Participant extends js.Object {
+trait Participant extends StObject {
   
   var championId: Double = js.native
   
@@ -47,54 +48,42 @@ object Participant {
   }
   
   @scala.inline
-  implicit class ParticipantOps[Self <: Participant] (val x: Self) extends AnyVal {
+  implicit class ParticipantMutableBuilder[Self <: Participant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighestAchievedSeasonTier(value: String): Self = StObject.set(x, "highestAchievedSeasonTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMasteries(value: js.Array[Mastery]): Self = StObject.set(x, "masteries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChampionId(value: Double): Self = this.set("championId", value.asInstanceOf[js.Any])
+    def setMasteriesVarargs(value: Mastery*): Self = StObject.set(x, "masteries", js.Array(value :_*))
     
     @scala.inline
-    def setHighestAchievedSeasonTier(value: String): Self = this.set("highestAchievedSeasonTier", value.asInstanceOf[js.Any])
+    def setParticipantId(value: Double): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasteriesVarargs(value: Mastery*): Self = this.set("masteries", js.Array(value :_*))
+    def setRunes(value: js.Array[Rune]): Self = StObject.set(x, "runes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasteries(value: js.Array[Mastery]): Self = this.set("masteries", value.asInstanceOf[js.Any])
+    def setRunesVarargs(value: Rune*): Self = StObject.set(x, "runes", js.Array(value :_*))
     
     @scala.inline
-    def setParticipantId(value: Double): Self = this.set("participantId", value.asInstanceOf[js.Any])
+    def setSpell1Id(value: Double): Self = StObject.set(x, "spell1Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunesVarargs(value: Rune*): Self = this.set("runes", js.Array(value :_*))
+    def setSpell2Id(value: Double): Self = StObject.set(x, "spell2Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunes(value: js.Array[Rune]): Self = this.set("runes", value.asInstanceOf[js.Any])
+    def setStats(value: ParticipantStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpell1Id(value: Double): Self = this.set("spell1Id", value.asInstanceOf[js.Any])
+    def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpell2Id(value: Double): Self = this.set("spell2Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStats(value: ParticipantStats): Self = this.set("stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeamId(value: Double): Self = this.set("teamId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeline(value: ParticipantTimeline): Self = this.set("timeline", value.asInstanceOf[js.Any])
+    def setTimeline(value: ParticipantTimeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
   }
 }

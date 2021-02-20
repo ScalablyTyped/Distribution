@@ -2,12 +2,13 @@ package typings.winrt.Windows.System
 
 import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.UI.ViewManagement.ViewSizePreference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILauncherOptions extends js.Object {
+trait ILauncherOptions extends StObject {
   
   var contentType: String = js.native
   
@@ -43,42 +44,30 @@ object ILauncherOptions {
   }
   
   @scala.inline
-  implicit class ILauncherOptionsOps[Self <: ILauncherOptions] (val x: Self) extends AnyVal {
+  implicit class ILauncherOptionsMutableBuilder[Self <: ILauncherOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredRemainingView(value: ViewSizePreference): Self = StObject.set(x, "desiredRemainingView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayApplicationPicker(value: Boolean): Self = StObject.set(x, "displayApplicationPicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setFallbackUri(value: Uri): Self = StObject.set(x, "fallbackUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredRemainingView(value: ViewSizePreference): Self = this.set("desiredRemainingView", value.asInstanceOf[js.Any])
+    def setPreferredApplicationDisplayName(value: String): Self = StObject.set(x, "preferredApplicationDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayApplicationPicker(value: Boolean): Self = this.set("displayApplicationPicker", value.asInstanceOf[js.Any])
+    def setPreferredApplicationPackageFamilyName(value: String): Self = StObject.set(x, "preferredApplicationPackageFamilyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallbackUri(value: Uri): Self = this.set("fallbackUri", value.asInstanceOf[js.Any])
+    def setTreatAsUntrusted(value: Boolean): Self = StObject.set(x, "treatAsUntrusted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredApplicationDisplayName(value: String): Self = this.set("preferredApplicationDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferredApplicationPackageFamilyName(value: String): Self = this.set("preferredApplicationPackageFamilyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTreatAsUntrusted(value: Boolean): Self = this.set("treatAsUntrusted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUI(value: LauncherUIOptions): Self = this.set("uI", value.asInstanceOf[js.Any])
+    def setUI(value: LauncherUIOptions): Self = StObject.set(x, "uI", value.asInstanceOf[js.Any])
   }
 }

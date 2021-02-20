@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A request message for Execution.Execute.
   */
 @js.native
-trait SchemaBuildBazelRemoteExecutionV2ExecuteRequest extends js.Object {
+trait SchemaBuildBazelRemoteExecutionV2ExecuteRequest extends StObject {
   
   /**
     * The digest of the Action to execute.
@@ -44,42 +45,30 @@ object SchemaBuildBazelRemoteExecutionV2ExecuteRequest {
   }
   
   @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2ExecuteRequestOps[Self <: SchemaBuildBazelRemoteExecutionV2ExecuteRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaBuildBazelRemoteExecutionV2ExecuteRequestMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2ExecuteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "actionDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionDigestUndefined: Self = StObject.set(x, "actionDigest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionPolicy(value: SchemaBuildBazelRemoteExecutionV2ExecutionPolicy): Self = StObject.set(x, "executionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = this.set("actionDigest", value.asInstanceOf[js.Any])
+    def setExecutionPolicyUndefined: Self = StObject.set(x, "executionPolicy", js.undefined)
     
     @scala.inline
-    def deleteActionDigest: Self = this.set("actionDigest", js.undefined)
+    def setResultsCachePolicy(value: SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy): Self = StObject.set(x, "resultsCachePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionPolicy(value: SchemaBuildBazelRemoteExecutionV2ExecutionPolicy): Self = this.set("executionPolicy", value.asInstanceOf[js.Any])
+    def setResultsCachePolicyUndefined: Self = StObject.set(x, "resultsCachePolicy", js.undefined)
     
     @scala.inline
-    def deleteExecutionPolicy: Self = this.set("executionPolicy", js.undefined)
+    def setSkipCacheLookup(value: Boolean): Self = StObject.set(x, "skipCacheLookup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultsCachePolicy(value: SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy): Self = this.set("resultsCachePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultsCachePolicy: Self = this.set("resultsCachePolicy", js.undefined)
-    
-    @scala.inline
-    def setSkipCacheLookup(value: Boolean): Self = this.set("skipCacheLookup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipCacheLookup: Self = this.set("skipCacheLookup", js.undefined)
+    def setSkipCacheLookupUndefined: Self = StObject.set(x, "skipCacheLookup", js.undefined)
   }
 }

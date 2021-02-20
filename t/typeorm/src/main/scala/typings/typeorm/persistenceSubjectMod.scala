@@ -7,16 +7,16 @@ import typings.typeorm.metadataColumnMetadataMod.ColumnMetadata
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.metadataRelationMetadataMod.RelationMetadata
 import typings.typeorm.persistenceSubjectChangeMapMod.SubjectChangeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/persistence/Subject", JSImport.Namespace)
-@js.native
-object persistenceSubjectMod extends js.Object {
+object persistenceSubjectMod {
   
+  @JSImport("typeorm/persistence/Subject", "Subject")
   @js.native
-  class Subject protected () extends js.Object {
+  class Subject protected () extends StObject {
     def this(options: CanBeRecovered) = this()
     
     /**

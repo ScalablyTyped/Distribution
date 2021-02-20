@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterizationRequest extends js.Object {
+trait ParameterizationRequest extends StObject {
   
   /**
     * Get the description of the parameterization on which this requestoperates on
@@ -52,30 +53,18 @@ object ParameterizationRequest {
   }
   
   @scala.inline
-  implicit class ParameterizationRequestOps[Self <: ParameterizationRequest] (val x: Self) extends AnyVal {
+  implicit class ParameterizationRequestMutableBuilder[Self <: ParameterizationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetParameterization(value: () => Parameterization): Self = StObject.set(x, "getParameterization", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetURIToParameterizationEntitySet(value: String => Unit): Self = StObject.set(x, "getURIToParameterizationEntitySet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetURIToParameterizationEntry(value: String => Unit): Self = StObject.set(x, "getURIToParameterizationEntry", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetParameterization(value: () => Parameterization): Self = this.set("getParameterization", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetURIToParameterizationEntitySet(value: String => Unit): Self = this.set("getURIToParameterizationEntitySet", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetURIToParameterizationEntry(value: String => Unit): Self = this.set("getURIToParameterizationEntry", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetParameterValue(value: (String, String, String) => Unit): Self = this.set("setParameterValue", js.Any.fromFunction3(value))
+    def setSetParameterValue(value: (String, String, String) => Unit): Self = StObject.set(x, "setParameterValue", js.Any.fromFunction3(value))
   }
 }

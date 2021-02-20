@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object InfragisticsModeSettings {
   }
   
   @scala.inline
-  implicit class InfragisticsModeSettingsOps[Self <: InfragisticsModeSettings] (val x: Self) extends AnyVal {
+  implicit class InfragisticsModeSettingsMutableBuilder[Self <: InfragisticsModeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVisibilityTester(value: js.Any): Self = StObject.set(x, "visibilityTester", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setVisibilityTester(value: js.Any): Self = this.set("visibilityTester", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibilityTester: Self = this.set("visibilityTester", js.undefined)
+    def setVisibilityTesterUndefined: Self = StObject.set(x, "visibilityTester", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeUploadBufferOutput extends js.Object {
+trait DescribeUploadBufferOutput extends StObject {
   
   /**
     * An array of the gateway's local disk IDs that are configured as working storage. Each local disk ID is specified as a string (minimum length of 1 and maximum length of 300). If no local disks are configured as working storage, then the DiskIds array is empty.
@@ -33,45 +34,33 @@ object DescribeUploadBufferOutput {
   }
   
   @scala.inline
-  implicit class DescribeUploadBufferOutputOps[Self <: DescribeUploadBufferOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeUploadBufferOutputMutableBuilder[Self <: DescribeUploadBufferOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiskIdsUndefined: Self = StObject.set(x, "DiskIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
     
     @scala.inline
-    def setDiskIdsVarargs(value: DiskId*): Self = this.set("DiskIds", js.Array(value :_*))
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskIds(value: DiskIds): Self = this.set("DiskIds", value.asInstanceOf[js.Any])
+    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
     @scala.inline
-    def deleteDiskIds: Self = this.set("DiskIds", js.undefined)
+    def setUploadBufferAllocatedInBytes(value: long): Self = StObject.set(x, "UploadBufferAllocatedInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setUploadBufferAllocatedInBytesUndefined: Self = StObject.set(x, "UploadBufferAllocatedInBytes", js.undefined)
     
     @scala.inline
-    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    def setUploadBufferUsedInBytes(value: long): Self = StObject.set(x, "UploadBufferUsedInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadBufferAllocatedInBytes(value: long): Self = this.set("UploadBufferAllocatedInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadBufferAllocatedInBytes: Self = this.set("UploadBufferAllocatedInBytes", js.undefined)
-    
-    @scala.inline
-    def setUploadBufferUsedInBytes(value: long): Self = this.set("UploadBufferUsedInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadBufferUsedInBytes: Self = this.set("UploadBufferUsedInBytes", js.undefined)
+    def setUploadBufferUsedInBytesUndefined: Self = StObject.set(x, "UploadBufferUsedInBytes", js.undefined)
   }
 }

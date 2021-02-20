@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutFileEntry extends js.Object {
+trait PutFileEntry extends StObject {
   
   /**
     * The content of the file, if a source file is not specified.
@@ -36,39 +37,27 @@ object PutFileEntry {
   }
   
   @scala.inline
-  implicit class PutFileEntryOps[Self <: PutFileEntry] (val x: Self) extends AnyVal {
+  implicit class PutFileEntryMutableBuilder[Self <: PutFileEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileContent(value: FileContent): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileContentUndefined: Self = StObject.set(x, "fileContent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePath(value: Path): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
     
     @scala.inline
-    def setFileContent(value: FileContent): Self = this.set("fileContent", value.asInstanceOf[js.Any])
+    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileContent: Self = this.set("fileContent", js.undefined)
+    def setSourceFile(value: SourceFileSpecifier): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileMode(value: FileModeTypeEnum): Self = this.set("fileMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileMode: Self = this.set("fileMode", js.undefined)
-    
-    @scala.inline
-    def setSourceFile(value: SourceFileSpecifier): Self = this.set("sourceFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceFile: Self = this.set("sourceFile", js.undefined)
+    def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
   }
 }

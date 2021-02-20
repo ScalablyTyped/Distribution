@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * subscribed to a particular event type.
   */
 @js.native
-trait EventSubscriptionVendor extends js.Object {
+trait EventSubscriptionVendor extends StObject {
   
   /**
     * Adds a subscription keyed by an event type.

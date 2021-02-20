@@ -1,12 +1,13 @@
 package typings.bingmaps.global.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.MapTypeId")
 @js.native
-object MapTypeId extends js.Object {
+object MapTypeId extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.MapTypeId with Double] = js.native

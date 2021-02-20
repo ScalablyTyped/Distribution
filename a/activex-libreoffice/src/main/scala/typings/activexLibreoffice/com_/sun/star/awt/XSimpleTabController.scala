@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,45 +98,33 @@ object XSimpleTabController {
   }
   
   @scala.inline
-  implicit class XSimpleTabControllerOps[Self <: XSimpleTabController] (val x: Self) extends AnyVal {
+  implicit class XSimpleTabControllerMutableBuilder[Self <: XSimpleTabController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivateTab(value: Double => Unit): Self = StObject.set(x, "activateTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveTabID(value: Double): Self = StObject.set(x, "ActiveTabID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddTabListener(value: XTabListener => Unit): Self = StObject.set(x, "addTabListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActiveTabID(value: Double): Self = this.set("ActiveTabID", value.asInstanceOf[js.Any])
+    def setGetActiveTabID(value: () => Double): Self = StObject.set(x, "getActiveTabID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActivateTab(value: Double => Unit): Self = this.set("activateTab", js.Any.fromFunction1(value))
+    def setGetTabProps(value: Double => SafeArray[NamedValue]): Self = StObject.set(x, "getTabProps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddTabListener(value: XTabListener => Unit): Self = this.set("addTabListener", js.Any.fromFunction1(value))
+    def setInsertTab(value: () => Double): Self = StObject.set(x, "insertTab", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveTabID(value: () => Double): Self = this.set("getActiveTabID", js.Any.fromFunction0(value))
+    def setRemoveTab(value: Double => Unit): Self = StObject.set(x, "removeTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTabProps(value: Double => SafeArray[NamedValue]): Self = this.set("getTabProps", js.Any.fromFunction1(value))
+    def setRemoveTabListener(value: XTabListener => Unit): Self = StObject.set(x, "removeTabListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertTab(value: () => Double): Self = this.set("insertTab", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveTab(value: Double => Unit): Self = this.set("removeTab", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveTabListener(value: XTabListener => Unit): Self = this.set("removeTabListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTabProps(value: (Double, SeqEquiv[NamedValue]) => Unit): Self = this.set("setTabProps", js.Any.fromFunction2(value))
+    def setSetTabProps(value: (Double, SeqEquiv[NamedValue]) => Unit): Self = StObject.set(x, "setTabProps", js.Any.fromFunction2(value))
   }
 }

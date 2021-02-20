@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
 import typings.vsoNodeApi.formInputInterfacesMod.InputDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArtifactTypeDefinition extends js.Object {
+trait ArtifactTypeDefinition extends StObject {
   
   var displayName: String = js.native
   
@@ -30,33 +31,21 @@ object ArtifactTypeDefinition {
   }
   
   @scala.inline
-  implicit class ArtifactTypeDefinitionOps[Self <: ArtifactTypeDefinition] (val x: Self) extends AnyVal {
+  implicit class ArtifactTypeDefinitionMutableBuilder[Self <: ArtifactTypeDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDescriptorsVarargs(value: InputDescriptor*): Self = this.set("inputDescriptors", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputDescriptors(value: js.Array[InputDescriptor]): Self = this.set("inputDescriptors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniqueSourceIdentifier(value: String): Self = this.set("uniqueSourceIdentifier", value.asInstanceOf[js.Any])
+    def setUniqueSourceIdentifier(value: String): Self = StObject.set(x, "uniqueSourceIdentifier", value.asInstanceOf[js.Any])
   }
 }

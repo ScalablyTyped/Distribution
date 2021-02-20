@@ -1,13 +1,14 @@
 package typings.algoliaClientSearch.anon
 
 import typings.algoliaClientSearch.mod.ListClustersResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<@algolia/client-search.@algolia/client-search.ListClustersResponse>> */
 @js.native
-trait ReadonlyPromiseListCluste extends js.Object {
+trait ReadonlyPromiseListCluste extends StObject {
   
   def `catch`[TResult](): js.Promise[ListClustersResponse | TResult] = js.native
   
@@ -31,27 +32,15 @@ object ReadonlyPromiseListCluste {
   }
   
   @scala.inline
-  implicit class ReadonlyPromiseListClusteOps[Self <: ReadonlyPromiseListCluste] (val x: Self) extends AnyVal {
+  implicit class ReadonlyPromiseListClusteMutableBuilder[Self <: ReadonlyPromiseListCluste] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatch(value: () => js.Promise[ListClustersResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinally(value: () => js.Promise[ListClustersResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCatch(value: () => js.Promise[ListClustersResponse | js.Any]): Self = this.set("catch", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFinally(value: () => js.Promise[ListClustersResponse]): Self = this.set("finally", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = this.set("then", js.Any.fromFunction0(value))
+    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

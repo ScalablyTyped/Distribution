@@ -5,16 +5,16 @@ import typings.fastCsvParse.typesMod.HeaderArray
 import typings.fastCsvParse.typesMod.Row
 import typings.fastCsvParse.typesMod.RowArray
 import typings.fastCsvParse.typesMod.RowValidatorCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fast-csv/parse/build/src/transforms/HeaderTransformer", JSImport.Namespace)
-@js.native
-object headerTransformerMod extends js.Object {
+object headerTransformerMod {
   
+  @JSImport("@fast-csv/parse/build/src/transforms/HeaderTransformer", "HeaderTransformer")
   @js.native
-  class HeaderTransformer[O /* <: Row[_] */] protected () extends js.Object {
+  class HeaderTransformer[O /* <: Row[_] */] protected () extends StObject {
     def this(parserOptions: ParserOptions) = this()
     
     var headers: HeaderArray | Null = js.native

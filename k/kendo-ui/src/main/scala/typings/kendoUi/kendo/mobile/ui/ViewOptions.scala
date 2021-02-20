@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.mobile.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewOptions extends js.Object {
+trait ViewOptions extends StObject {
   
   var afterShow: js.UndefOr[js.Function1[/* e */ ViewAfterShowEvent, Unit]] = js.native
   
@@ -48,114 +49,102 @@ object ViewOptions {
   }
   
   @scala.inline
-  implicit class ViewOptionsOps[Self <: ViewOptions] (val x: Self) extends AnyVal {
+  implicit class ViewOptionsMutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterShow(value: /* e */ ViewAfterShowEvent => Unit): Self = StObject.set(x, "afterShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterShowUndefined: Self = StObject.set(x, "afterShow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeHide(value: /* e */ ViewBeforeHideEvent => Unit): Self = StObject.set(x, "beforeHide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterShow(value: /* e */ ViewAfterShowEvent => Unit): Self = this.set("afterShow", js.Any.fromFunction1(value))
+    def setBeforeHideUndefined: Self = StObject.set(x, "beforeHide", js.undefined)
     
     @scala.inline
-    def deleteAfterShow: Self = this.set("afterShow", js.undefined)
+    def setBeforeShow(value: /* e */ ViewBeforeShowEvent => Unit): Self = StObject.set(x, "beforeShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeHide(value: /* e */ ViewBeforeHideEvent => Unit): Self = this.set("beforeHide", js.Any.fromFunction1(value))
+    def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     
     @scala.inline
-    def deleteBeforeHide: Self = this.set("beforeHide", js.undefined)
+    def setHide(value: /* e */ ViewHideEvent => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeShow(value: /* e */ ViewBeforeShowEvent => Unit): Self = this.set("beforeShow", js.Any.fromFunction1(value))
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteBeforeShow: Self = this.set("beforeShow", js.undefined)
+    def setInit(value: /* e */ ViewInitEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHide(value: /* e */ ViewHideEvent => Unit): Self = this.set("hide", js.Any.fromFunction1(value))
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: /* e */ ViewInitEvent => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setScroller(value: js.Any): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReload(value: Boolean): Self = this.set("reload", value.asInstanceOf[js.Any])
+    def setScrollerUndefined: Self = StObject.set(x, "scroller", js.undefined)
     
     @scala.inline
-    def deleteReload: Self = this.set("reload", js.undefined)
+    def setShow(value: /* e */ ViewShowEvent => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScroller(value: js.Any): Self = this.set("scroller", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteScroller: Self = this.set("scroller", js.undefined)
+    def setStretch(value: Boolean): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: /* e */ ViewShowEvent => Unit): Self = this.set("show", js.Any.fromFunction1(value))
+    def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStretch(value: Boolean): Self = this.set("stretch", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStretch: Self = this.set("stretch", js.undefined)
+    def setTransitionEnd(value: /* e */ ViewTransitionEndEvent => Unit): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTransitionEndUndefined: Self = StObject.set(x, "transitionEnd", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTransitionStart(value: /* e */ ViewTransitionStartEvent => Unit): Self = StObject.set(x, "transitionStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransitionEnd(value: /* e */ ViewTransitionEndEvent => Unit): Self = this.set("transitionEnd", js.Any.fromFunction1(value))
+    def setTransitionStartUndefined: Self = StObject.set(x, "transitionStart", js.undefined)
     
     @scala.inline
-    def deleteTransitionEnd: Self = this.set("transitionEnd", js.undefined)
+    def setUseNativeScrolling(value: Boolean): Self = StObject.set(x, "useNativeScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionStart(value: /* e */ ViewTransitionStartEvent => Unit): Self = this.set("transitionStart", js.Any.fromFunction1(value))
+    def setUseNativeScrollingUndefined: Self = StObject.set(x, "useNativeScrolling", js.undefined)
     
     @scala.inline
-    def deleteTransitionStart: Self = this.set("transitionStart", js.undefined)
+    def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseNativeScrolling(value: Boolean): Self = this.set("useNativeScrolling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseNativeScrolling: Self = this.set("useNativeScrolling", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Boolean): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

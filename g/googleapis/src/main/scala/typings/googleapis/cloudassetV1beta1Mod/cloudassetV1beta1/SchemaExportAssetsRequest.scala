@@ -1,5 +1,6 @@
 package typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Export asset request.
   */
 @js.native
-trait SchemaExportAssetsRequest extends js.Object {
+trait SchemaExportAssetsRequest extends StObject {
   
   /**
     * A list of asset types of which to take a snapshot for. For example:
@@ -49,45 +50,33 @@ object SchemaExportAssetsRequest {
   }
   
   @scala.inline
-  implicit class SchemaExportAssetsRequestOps[Self <: SchemaExportAssetsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaExportAssetsRequestMutableBuilder[Self <: SchemaExportAssetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetTypesUndefined: Self = StObject.set(x, "assetTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAssetTypesVarargs(value: String*): Self = this.set("assetTypes", js.Array(value :_*))
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetTypes(value: js.Array[String]): Self = this.set("assetTypes", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteAssetTypes: Self = this.set("assetTypes", js.undefined)
+    def setOutputConfig(value: SchemaOutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputConfig(value: SchemaOutputConfig): Self = this.set("outputConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputConfig: Self = this.set("outputConfig", js.undefined)
-    
-    @scala.inline
-    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadTime: Self = this.set("readTime", js.undefined)
+    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
   }
 }

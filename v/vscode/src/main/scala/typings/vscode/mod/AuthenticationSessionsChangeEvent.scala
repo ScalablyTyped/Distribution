@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticationSessionsChangeEvent extends js.Object {
+trait AuthenticationSessionsChangeEvent extends StObject {
   
   /**
     * The [authenticationProvider](#AuthenticationProvider) that has had its sessions change.
@@ -21,21 +22,9 @@ object AuthenticationSessionsChangeEvent {
   }
   
   @scala.inline
-  implicit class AuthenticationSessionsChangeEventOps[Self <: AuthenticationSessionsChangeEvent] (val x: Self) extends AnyVal {
+  implicit class AuthenticationSessionsChangeEventMutableBuilder[Self <: AuthenticationSessionsChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvider(value: AuthenticationProviderInformation): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setProvider(value: AuthenticationProviderInformation): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesServer.anon.Effects
 import typings.minecraftScriptingTypesShared.MinecraftFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines how the entity can be healed by the player. This doesn't control how much health the entity can have; you must use the Health component for that instead.
   */
 @js.native
-trait IHealableComponent extends js.Object {
+trait IHealableComponent extends StObject {
   
   /**
     * The filter group that defines the conditions for this trigger
@@ -37,33 +38,21 @@ object IHealableComponent {
   }
   
   @scala.inline
-  implicit class IHealableComponentOps[Self <: IHealableComponent] (val x: Self) extends AnyVal {
+  implicit class IHealableComponentMutableBuilder[Self <: IHealableComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce_use(value: Boolean): Self = StObject.set(x, "force_use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce_use(value: Boolean): Self = this.set("force_use", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[Effects]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: Effects*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[Effects]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilters(value: MinecraftFilter): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setItemsVarargs(value: Effects*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

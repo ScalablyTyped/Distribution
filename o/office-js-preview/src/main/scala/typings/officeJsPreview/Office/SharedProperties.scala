@@ -1,6 +1,7 @@
 package typings.officeJsPreview.Office
 
 import typings.officeJsPreview.Office.MailboxEnums.DelegatePermissions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
-trait SharedProperties extends js.Object {
+trait SharedProperties extends StObject {
   
   /**
     * The permissions that the delegate has on a shared folder.
@@ -64,30 +65,18 @@ object SharedProperties {
   }
   
   @scala.inline
-  implicit class SharedPropertiesOps[Self <: SharedProperties] (val x: Self) extends AnyVal {
+  implicit class SharedPropertiesMutableBuilder[Self <: SharedProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegatePermissions(value: DelegatePermissions): Self = StObject.set(x, "delegatePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetMailbox(value: String): Self = StObject.set(x, "targetMailbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegatePermissions(value: DelegatePermissions): Self = this.set("delegatePermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetMailbox(value: String): Self = this.set("targetMailbox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetRestUrl(value: String): Self = this.set("targetRestUrl", value.asInstanceOf[js.Any])
+    def setTargetRestUrl(value: String): Self = StObject.set(x, "targetRestUrl", value.asInstanceOf[js.Any])
   }
 }

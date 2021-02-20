@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeTextVerticalOverflow extends js.Object
+sealed trait ShapeTextVerticalOverflow extends StObject
 /**
   *
   * Specifies the vertical overflow for the text frame in a shape.
@@ -14,7 +15,7 @@ sealed trait ShapeTextVerticalOverflow extends js.Object
   */
 @JSGlobal("Excel.ShapeTextVerticalOverflow")
 @js.native
-object ShapeTextVerticalOverflow extends js.Object {
+object ShapeTextVerticalOverflow extends StObject {
   
   /**
     * Hide text that does not fit vertically within the text frame.

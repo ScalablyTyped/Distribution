@@ -1,11 +1,12 @@
 package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OSNotificationPayload extends js.Object {
+trait OSNotificationPayload extends StObject {
   
   var actionButtons: js.Array[OSActionButton] = js.native
   
@@ -61,117 +62,105 @@ object OSNotificationPayload {
   }
   
   @scala.inline
-  implicit class OSNotificationPayloadOps[Self <: OSNotificationPayload] (val x: Self) extends AnyVal {
+  implicit class OSNotificationPayloadMutableBuilder[Self <: OSNotificationPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionButtons(value: js.Array[OSActionButton]): Self = StObject.set(x, "actionButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionButtonsVarargs(value: OSActionButton*): Self = StObject.set(x, "actionButtons", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalData(value: js.Any): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionButtonsVarargs(value: OSActionButton*): Self = this.set("actionButtons", js.Array(value :_*))
+    def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
     
     @scala.inline
-    def setActionButtons(value: js.Array[OSActionButton]): Self = this.set("actionButtons", value.asInstanceOf[js.Any])
+    def setBackgroundImageLayout(value: OSBackgroundImageLayout): Self = StObject.set(x, "backgroundImageLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBackgroundImageLayoutUndefined: Self = StObject.set(x, "backgroundImageLayout", js.undefined)
     
     @scala.inline
-    def setNotificationID(value: String): Self = this.set("notificationID", value.asInstanceOf[js.Any])
+    def setBigPicture(value: String): Self = StObject.set(x, "bigPicture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawPayload(value: String): Self = this.set("rawPayload", value.asInstanceOf[js.Any])
+    def setBigPictureUndefined: Self = StObject.set(x, "bigPicture", js.undefined)
     
     @scala.inline
-    def setSound(value: String): Self = this.set("sound", value.asInstanceOf[js.Any])
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setFromProjectNumber(value: String): Self = StObject.set(x, "fromProjectNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalData(value: js.Any): Self = this.set("additionalData", value.asInstanceOf[js.Any])
+    def setFromProjectNumberUndefined: Self = StObject.set(x, "fromProjectNumber", js.undefined)
     
     @scala.inline
-    def deleteAdditionalData: Self = this.set("additionalData", js.undefined)
+    def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundImageLayout(value: OSBackgroundImageLayout): Self = this.set("backgroundImageLayout", value.asInstanceOf[js.Any])
+    def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
     
     @scala.inline
-    def deleteBackgroundImageLayout: Self = this.set("backgroundImageLayout", js.undefined)
+    def setGroupMessage(value: String): Self = StObject.set(x, "groupMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigPicture(value: String): Self = this.set("bigPicture", value.asInstanceOf[js.Any])
+    def setGroupMessageUndefined: Self = StObject.set(x, "groupMessage", js.undefined)
     
     @scala.inline
-    def deleteBigPicture: Self = this.set("bigPicture", js.undefined)
+    def setLargeIcon(value: String): Self = StObject.set(x, "largeIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromProjectNumber(value: String): Self = this.set("fromProjectNumber", value.asInstanceOf[js.Any])
+    def setLargeIconUndefined: Self = StObject.set(x, "largeIcon", js.undefined)
     
     @scala.inline
-    def deleteFromProjectNumber: Self = this.set("fromProjectNumber", js.undefined)
+    def setLaunchURL(value: String): Self = StObject.set(x, "launchURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupKey(value: String): Self = this.set("groupKey", value.asInstanceOf[js.Any])
+    def setLaunchURLUndefined: Self = StObject.set(x, "launchURL", js.undefined)
     
     @scala.inline
-    def deleteGroupKey: Self = this.set("groupKey", js.undefined)
+    def setLedColor(value: String): Self = StObject.set(x, "ledColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupMessage(value: String): Self = this.set("groupMessage", value.asInstanceOf[js.Any])
+    def setLedColorUndefined: Self = StObject.set(x, "ledColor", js.undefined)
     
     @scala.inline
-    def deleteGroupMessage: Self = this.set("groupMessage", js.undefined)
+    def setLockScreenVisibility(value: OSLockScreenVisibility): Self = StObject.set(x, "lockScreenVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLargeIcon(value: String): Self = this.set("largeIcon", value.asInstanceOf[js.Any])
+    def setLockScreenVisibilityUndefined: Self = StObject.set(x, "lockScreenVisibility", js.undefined)
     
     @scala.inline
-    def deleteLargeIcon: Self = this.set("largeIcon", js.undefined)
+    def setNotificationID(value: String): Self = StObject.set(x, "notificationID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchURL(value: String): Self = this.set("launchURL", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLaunchURL: Self = this.set("launchURL", js.undefined)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setLedColor(value: String): Self = this.set("ledColor", value.asInstanceOf[js.Any])
+    def setRawPayload(value: String): Self = StObject.set(x, "rawPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLedColor: Self = this.set("ledColor", js.undefined)
+    def setSmallIcon(value: String): Self = StObject.set(x, "smallIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockScreenVisibility(value: OSLockScreenVisibility): Self = this.set("lockScreenVisibility", value.asInstanceOf[js.Any])
+    def setSmallIconAccentColor(value: String): Self = StObject.set(x, "smallIconAccentColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockScreenVisibility: Self = this.set("lockScreenVisibility", js.undefined)
+    def setSmallIconAccentColorUndefined: Self = StObject.set(x, "smallIconAccentColor", js.undefined)
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setSmallIconUndefined: Self = StObject.set(x, "smallIcon", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallIcon(value: String): Self = this.set("smallIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmallIcon: Self = this.set("smallIcon", js.undefined)
-    
-    @scala.inline
-    def setSmallIconAccentColor(value: String): Self = this.set("smallIconAccentColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmallIconAccentColor: Self = this.set("smallIconAccentColor", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

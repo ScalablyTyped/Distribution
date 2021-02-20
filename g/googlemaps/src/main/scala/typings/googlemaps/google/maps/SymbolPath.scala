@@ -1,18 +1,19 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SymbolPath extends js.Object
+sealed trait SymbolPath extends StObject
 /**
   * Built-in symbol paths.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#SymbolPath Maps JavaScript API}
   */
 @JSGlobal("google.maps.SymbolPath")
 @js.native
-object SymbolPath extends js.Object {
+object SymbolPath extends StObject {
   
   /**
     * A backward-pointing closed arrow.

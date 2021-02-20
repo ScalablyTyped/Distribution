@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The object containing the actions and the objects the actions act upon. */
 @js.native
-trait SemanticRolesResult extends js.Object {
+trait SemanticRolesResult extends StObject {
   
   /** The extracted action from the sentence. */
   var action: js.UndefOr[SemanticRolesResultAction] = js.native
@@ -29,42 +30,30 @@ object SemanticRolesResult {
   }
   
   @scala.inline
-  implicit class SemanticRolesResultOps[Self <: SemanticRolesResult] (val x: Self) extends AnyVal {
+  implicit class SemanticRolesResultMutableBuilder[Self <: SemanticRolesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: SemanticRolesResultAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObject(value: SemanticRolesResultObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: SemanticRolesResultAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setSentence(value: String): Self = StObject.set(x, "sentence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: SemanticRolesResultObject): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setSentenceUndefined: Self = StObject.set(x, "sentence", js.undefined)
     
     @scala.inline
-    def deleteObject: Self = this.set("object", js.undefined)
+    def setSubject(value: SemanticRolesResultSubject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentence(value: String): Self = this.set("sentence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentence: Self = this.set("sentence", js.undefined)
-    
-    @scala.inline
-    def setSubject(value: SemanticRolesResultSubject): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

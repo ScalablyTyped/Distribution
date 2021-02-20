@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HotKeyDetection extends js.Object {
+trait HotKeyDetection extends StObject {
   
   /** The age of the hot key measured from when it was first detected. */
   var hotKeyAge: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object HotKeyDetection {
   }
   
   @scala.inline
-  implicit class HotKeyDetectionOps[Self <: HotKeyDetection] (val x: Self) extends AnyVal {
+  implicit class HotKeyDetectionMutableBuilder[Self <: HotKeyDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHotKeyAge(value: String): Self = StObject.set(x, "hotKeyAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHotKeyAgeUndefined: Self = StObject.set(x, "hotKeyAge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotKeyAge(value: String): Self = this.set("hotKeyAge", value.asInstanceOf[js.Any])
+    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
     @scala.inline
-    def deleteHotKeyAge: Self = this.set("hotKeyAge", js.undefined)
+    def setUserStepName(value: String): Self = StObject.set(x, "userStepName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemName: Self = this.set("systemName", js.undefined)
-    
-    @scala.inline
-    def setUserStepName(value: String): Self = this.set("userStepName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserStepName: Self = this.set("userStepName", js.undefined)
+    def setUserStepNameUndefined: Self = StObject.set(x, "userStepName", js.undefined)
   }
 }

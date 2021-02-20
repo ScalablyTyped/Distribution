@@ -1,11 +1,12 @@
 package typings.msRestAzure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthResponse extends js.Object {
+trait AuthResponse extends StObject {
   
   var credentials: DeviceTokenCredentials | ApplicationTokenCredentials | UserTokenCredentials = js.native
   
@@ -23,27 +24,15 @@ object AuthResponse {
   }
   
   @scala.inline
-  implicit class AuthResponseOps[Self <: AuthResponse] (val x: Self) extends AnyVal {
+  implicit class AuthResponseMutableBuilder[Self <: AuthResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentials(value: DeviceTokenCredentials | ApplicationTokenCredentials | UserTokenCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubscriptions(value: js.Array[LinkedSubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCredentials(value: DeviceTokenCredentials | ApplicationTokenCredentials | UserTokenCredentials): Self = this.set("credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionsVarargs(value: LinkedSubscription*): Self = this.set("subscriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscriptions(value: js.Array[LinkedSubscription]): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
+    def setSubscriptionsVarargs(value: LinkedSubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
   }
 }

@@ -8,6 +8,7 @@ import typings.sequelize.anon.Subtype
 import typings.sequelize.anon.Type
 import typings.sequelize.anon.Values
 import typings.sequelize.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +50,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```
   */
 @js.native
-trait DataTypes extends js.Object {
+trait DataTypes extends StObject {
   
   var ABSTRACT: DataTypeAbstract = js.native
   

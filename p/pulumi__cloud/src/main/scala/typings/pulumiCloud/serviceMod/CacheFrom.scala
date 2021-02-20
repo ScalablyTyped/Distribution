@@ -1,11 +1,12 @@
 package typings.pulumiCloud.serviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheFrom extends js.Object {
+trait CacheFrom extends StObject {
   
   /**
     * An optional list of build stages to use for caching. Each build stage in this list will be built explicitly and
@@ -22,27 +23,15 @@ object CacheFrom {
   }
   
   @scala.inline
-  implicit class CacheFromOps[Self <: CacheFrom] (val x: Self) extends AnyVal {
+  implicit class CacheFromMutableBuilder[Self <: CacheFrom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStages(value: js.Array[String]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStagesVarargs(value: String*): Self = this.set("stages", js.Array(value :_*))
-    
-    @scala.inline
-    def setStages(value: js.Array[String]): Self = this.set("stages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStages: Self = this.set("stages", js.undefined)
+    def setStagesVarargs(value: String*): Self = StObject.set(x, "stages", js.Array(value :_*))
   }
 }

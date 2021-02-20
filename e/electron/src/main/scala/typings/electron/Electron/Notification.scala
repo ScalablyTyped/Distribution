@@ -11,6 +11,7 @@ import typings.electron.electronStrings.normal
 import typings.electron.electronStrings.reply
 import typings.electron.electronStrings.show
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

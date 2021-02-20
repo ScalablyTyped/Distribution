@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrafficPolicySummary extends js.Object {
+trait TrafficPolicySummary extends StObject {
   
   /**
     * The ID that Amazon Route 53 assigned to the traffic policy when you created it.
@@ -47,33 +48,21 @@ object TrafficPolicySummary {
   }
   
   @scala.inline
-  implicit class TrafficPolicySummaryOps[Self <: TrafficPolicySummary] (val x: Self) extends AnyVal {
+  implicit class TrafficPolicySummaryMutableBuilder[Self <: TrafficPolicySummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatestVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "LatestVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: TrafficPolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: TrafficPolicyId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setTrafficPolicyCount(value: TrafficPolicyVersion): Self = StObject.set(x, "TrafficPolicyCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestVersion(value: TrafficPolicyVersion): Self = this.set("LatestVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: TrafficPolicyName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrafficPolicyCount(value: TrafficPolicyVersion): Self = this.set("TrafficPolicyCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: RRType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: RRType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

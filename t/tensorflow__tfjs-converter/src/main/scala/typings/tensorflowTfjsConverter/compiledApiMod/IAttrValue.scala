@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
 import typings.tensorflowTfjsConverter.compiledApiMod.AttrValue.IListValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAttrValue extends js.Object {
+trait IAttrValue extends StObject {
   
   /** AttrValue b */
   var b: js.UndefOr[Boolean | Null] = js.native
@@ -47,108 +48,96 @@ object IAttrValue {
   }
   
   @scala.inline
-  implicit class IAttrValueOps[Self <: IAttrValue] (val x: Self) extends AnyVal {
+  implicit class IAttrValueMutableBuilder[Self <: IAttrValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setB(value: Boolean): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBNull: Self = StObject.set(x, "b", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
     
     @scala.inline
-    def setB(value: Boolean): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteB: Self = this.set("b", js.undefined)
+    def setFNull: Self = StObject.set(x, "f", null)
     
     @scala.inline
-    def setBNull: Self = this.set("b", null)
+    def setFUndefined: Self = StObject.set(x, "f", js.undefined)
     
     @scala.inline
-    def setF(value: Double): Self = this.set("f", value.asInstanceOf[js.Any])
+    def setFunc(value: INameAttrList): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteF: Self = this.set("f", js.undefined)
+    def setFuncNull: Self = StObject.set(x, "func", null)
     
     @scala.inline
-    def setFNull: Self = this.set("f", null)
+    def setFuncUndefined: Self = StObject.set(x, "func", js.undefined)
     
     @scala.inline
-    def setFunc(value: INameAttrList): Self = this.set("func", value.asInstanceOf[js.Any])
+    def setI(value: Double | String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFunc: Self = this.set("func", js.undefined)
+    def setINull: Self = StObject.set(x, "i", null)
     
     @scala.inline
-    def setFuncNull: Self = this.set("func", null)
+    def setIUndefined: Self = StObject.set(x, "i", js.undefined)
     
     @scala.inline
-    def setI(value: Double | String): Self = this.set("i", value.asInstanceOf[js.Any])
+    def setList(value: IListValue): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteI: Self = this.set("i", js.undefined)
+    def setListNull: Self = StObject.set(x, "list", null)
     
     @scala.inline
-    def setINull: Self = this.set("i", null)
+    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
     @scala.inline
-    def setList(value: IListValue): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteList: Self = this.set("list", js.undefined)
+    def setPlaceholderNull: Self = StObject.set(x, "placeholder", null)
     
     @scala.inline
-    def setListNull: Self = this.set("list", null)
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setSNull: Self = StObject.set(x, "s", null)
     
     @scala.inline
-    def setPlaceholderNull: Self = this.set("placeholder", null)
+    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
     @scala.inline
-    def setS(value: String): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setShape(value: ITensorShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteS: Self = this.set("s", js.undefined)
+    def setShapeNull: Self = StObject.set(x, "shape", null)
     
     @scala.inline
-    def setSNull: Self = this.set("s", null)
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def setShape(value: ITensorShape): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setTensor(value: ITensor): Self = StObject.set(x, "tensor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setTensorNull: Self = StObject.set(x, "tensor", null)
     
     @scala.inline
-    def setShapeNull: Self = this.set("shape", null)
+    def setTensorUndefined: Self = StObject.set(x, "tensor", js.undefined)
     
     @scala.inline
-    def setTensor(value: ITensor): Self = this.set("tensor", value.asInstanceOf[js.Any])
+    def setType(value: DataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTensor: Self = this.set("tensor", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setTensorNull: Self = this.set("tensor", null)
-    
-    @scala.inline
-    def setType(value: DataType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setTypeNull: Self = this.set("type", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

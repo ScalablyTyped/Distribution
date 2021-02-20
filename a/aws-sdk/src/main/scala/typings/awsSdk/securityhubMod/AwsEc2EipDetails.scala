@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsEc2EipDetails extends js.Object {
+trait AwsEc2EipDetails extends StObject {
   
   /**
     * The identifier that AWS assigns to represent the allocation of the Elastic IP address for use with Amazon VPC.
@@ -66,78 +67,66 @@ object AwsEc2EipDetails {
   }
   
   @scala.inline
-  implicit class AwsEc2EipDetailsOps[Self <: AwsEc2EipDetails] (val x: Self) extends AnyVal {
+  implicit class AwsEc2EipDetailsMutableBuilder[Self <: AwsEc2EipDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationId(value: NonEmptyString): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociationId(value: NonEmptyString): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationId(value: NonEmptyString): Self = this.set("AllocationId", value.asInstanceOf[js.Any])
+    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
     @scala.inline
-    def deleteAllocationId: Self = this.set("AllocationId", js.undefined)
+    def setDomain(value: NonEmptyString): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationId(value: NonEmptyString): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
     @scala.inline
-    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    def setInstanceId(value: NonEmptyString): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: NonEmptyString): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
+    def setNetworkBorderGroup(value: NonEmptyString): Self = StObject.set(x, "NetworkBorderGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: NonEmptyString): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setNetworkBorderGroupUndefined: Self = StObject.set(x, "NetworkBorderGroup", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setNetworkInterfaceId(value: NonEmptyString): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkBorderGroup(value: NonEmptyString): Self = this.set("NetworkBorderGroup", value.asInstanceOf[js.Any])
+    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
     
     @scala.inline
-    def deleteNetworkBorderGroup: Self = this.set("NetworkBorderGroup", js.undefined)
+    def setNetworkInterfaceOwnerId(value: NonEmptyString): Self = StObject.set(x, "NetworkInterfaceOwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaceId(value: NonEmptyString): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    def setNetworkInterfaceOwnerIdUndefined: Self = StObject.set(x, "NetworkInterfaceOwnerId", js.undefined)
     
     @scala.inline
-    def deleteNetworkInterfaceId: Self = this.set("NetworkInterfaceId", js.undefined)
+    def setPrivateIpAddress(value: NonEmptyString): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaceOwnerId(value: NonEmptyString): Self = this.set("NetworkInterfaceOwnerId", value.asInstanceOf[js.Any])
+    def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
     
     @scala.inline
-    def deleteNetworkInterfaceOwnerId: Self = this.set("NetworkInterfaceOwnerId", js.undefined)
+    def setPublicIp(value: NonEmptyString): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateIpAddress(value: NonEmptyString): Self = this.set("PrivateIpAddress", value.asInstanceOf[js.Any])
+    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
     
     @scala.inline
-    def deletePrivateIpAddress: Self = this.set("PrivateIpAddress", js.undefined)
+    def setPublicIpv4Pool(value: NonEmptyString): Self = StObject.set(x, "PublicIpv4Pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicIp(value: NonEmptyString): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
-    
-    @scala.inline
-    def setPublicIpv4Pool(value: NonEmptyString): Self = this.set("PublicIpv4Pool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicIpv4Pool: Self = this.set("PublicIpv4Pool", js.undefined)
+    def setPublicIpv4PoolUndefined: Self = StObject.set(x, "PublicIpv4Pool", js.undefined)
   }
 }

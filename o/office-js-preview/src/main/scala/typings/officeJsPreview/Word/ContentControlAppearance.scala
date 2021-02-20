@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContentControlAppearance extends js.Object
+sealed trait ContentControlAppearance extends StObject
 /**
   *
   * Either bounding box, or tags, or hidden.
@@ -15,7 +16,7 @@ sealed trait ContentControlAppearance extends js.Object
   */
 @JSGlobal("Word.ContentControlAppearance")
 @js.native
-object ContentControlAppearance extends js.Object {
+object ContentControlAppearance extends StObject {
   
   /**
     * Represents a content control shown as a shaded rectangle or bounding box (with optional title).

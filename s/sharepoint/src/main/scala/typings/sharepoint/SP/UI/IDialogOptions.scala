@@ -1,13 +1,14 @@
 package typings.sharepoint.SP.UI
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for dialog creation */
 @js.native
-trait IDialogOptions extends js.Object {
+trait IDialogOptions extends StObject {
   
   /** specifies if maximize button should be shown on the dialog */
   var allowMaximize: js.UndefOr[Boolean] = js.native
@@ -63,108 +64,96 @@ object IDialogOptions {
   }
   
   @scala.inline
-  implicit class IDialogOptionsOps[Self <: IDialogOptions] (val x: Self) extends AnyVal {
+  implicit class IDialogOptionsMutableBuilder[Self <: IDialogOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMaximize(value: Boolean): Self = StObject.set(x, "allowMaximize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowMaximizeUndefined: Self = StObject.set(x, "allowMaximize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMaximize(value: Boolean): Self = this.set("allowMaximize", value.asInstanceOf[js.Any])
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def deleteAllowMaximize: Self = this.set("allowMaximize", js.undefined)
+    def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Any): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setAutoSizeStartWidth(value: Double): Self = StObject.set(x, "autoSizeStartWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setAutoSizeStartWidthUndefined: Self = StObject.set(x, "autoSizeStartWidth", js.undefined)
     
     @scala.inline
-    def setAutoSize(value: Boolean): Self = this.set("autoSize", value.asInstanceOf[js.Any])
+    def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
     
     @scala.inline
-    def deleteAutoSize: Self = this.set("autoSize", js.undefined)
+    def setDialogReturnValueCallback(value: (/* dialogResult */ DialogResult, /* returnValue */ js.Any) => Unit): Self = StObject.set(x, "dialogReturnValueCallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAutoSizeStartWidth(value: Double): Self = this.set("autoSizeStartWidth", value.asInstanceOf[js.Any])
+    def setDialogReturnValueCallbackUndefined: Self = StObject.set(x, "dialogReturnValueCallback", js.undefined)
     
     @scala.inline
-    def deleteAutoSizeStartWidth: Self = this.set("autoSizeStartWidth", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialogReturnValueCallback(value: (/* dialogResult */ DialogResult, /* returnValue */ js.Any) => Unit): Self = this.set("dialogReturnValueCallback", js.Any.fromFunction2(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDialogReturnValueCallback: Self = this.set("dialogReturnValueCallback", js.undefined)
+    def setHtml(value: HTMLElement): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setIncludeScrollBarPadding(value: Boolean): Self = StObject.set(x, "includeScrollBarPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: HTMLElement): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setIncludeScrollBarPaddingUndefined: Self = StObject.set(x, "includeScrollBarPadding", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setShowClose(value: Boolean): Self = StObject.set(x, "showClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeScrollBarPadding(value: Boolean): Self = this.set("includeScrollBarPadding", value.asInstanceOf[js.Any])
+    def setShowCloseUndefined: Self = StObject.set(x, "showClose", js.undefined)
     
     @scala.inline
-    def deleteIncludeScrollBarPadding: Self = this.set("includeScrollBarPadding", js.undefined)
+    def setShowMaximized(value: Boolean): Self = StObject.set(x, "showMaximized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowClose(value: Boolean): Self = this.set("showClose", value.asInstanceOf[js.Any])
+    def setShowMaximizedUndefined: Self = StObject.set(x, "showMaximized", js.undefined)
     
     @scala.inline
-    def deleteShowClose: Self = this.set("showClose", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMaximized(value: Boolean): Self = this.set("showMaximized", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteShowMaximized: Self = this.set("showMaximized", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

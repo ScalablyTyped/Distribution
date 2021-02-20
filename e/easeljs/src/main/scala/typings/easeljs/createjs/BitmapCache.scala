@@ -1,12 +1,13 @@
 package typings.easeljs.createjs
 
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BitmapCache extends js.Object {
+trait BitmapCache extends StObject {
   
   // properties
   var cacheID: Double = js.native

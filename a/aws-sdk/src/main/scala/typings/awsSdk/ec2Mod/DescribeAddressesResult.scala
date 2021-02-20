@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAddressesResult extends js.Object {
+trait DescribeAddressesResult extends StObject {
   
   /**
     * Information about the Elastic IP addresses.
@@ -21,27 +22,15 @@ object DescribeAddressesResult {
   }
   
   @scala.inline
-  implicit class DescribeAddressesResultOps[Self <: DescribeAddressesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeAddressesResultMutableBuilder[Self <: DescribeAddressesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: AddressList): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddressesVarargs(value: Address*): Self = this.set("Addresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setAddresses(value: AddressList): Self = this.set("Addresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddresses: Self = this.set("Addresses", js.undefined)
+    def setAddressesVarargs(value: Address*): Self = StObject.set(x, "Addresses", js.Array(value :_*))
   }
 }

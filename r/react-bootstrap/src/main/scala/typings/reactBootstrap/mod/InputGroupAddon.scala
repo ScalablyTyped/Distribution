@@ -1,7 +1,6 @@
 package typings.reactBootstrap.mod
 
-import typings.react.mod.Component
-import typings.reactBootstrap.inputGroupAddonMod.InputGroupAddonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-bootstrap", "InputGroupAddon")
 @js.native
 class InputGroupAddon ()
-  extends Component[InputGroupAddonProps, js.Object, js.Any]
+  extends typings.reactBootstrap.libMod.InputGroupAddon

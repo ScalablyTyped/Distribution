@@ -3,12 +3,13 @@ package typings.cadesplugin.CAPICOM
 import typings.cadesplugin.cadespluginNumbers.`0`
 import typings.cadesplugin.cadespluginNumbers.`2`
 import typings.cadesplugin.cadespluginNumbers.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EKUPlugin extends js.Object {
+trait EKUPlugin extends StObject {
   
   val CAPICOM_EKU_CLIENT_AUTH: `2` = js.native
   
@@ -25,27 +26,15 @@ object EKUPlugin {
   }
   
   @scala.inline
-  implicit class EKUPluginOps[Self <: EKUPlugin] (val x: Self) extends AnyVal {
+  implicit class EKUPluginMutableBuilder[Self <: EKUPlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_EKU_CLIENT_AUTH(value: `2`): Self = StObject.set(x, "CAPICOM_EKU_CLIENT_AUTH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_EKU_OTHER(value: `0`): Self = StObject.set(x, "CAPICOM_EKU_OTHER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCAPICOM_EKU_CLIENT_AUTH(value: `2`): Self = this.set("CAPICOM_EKU_CLIENT_AUTH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_EKU_OTHER(value: `0`): Self = this.set("CAPICOM_EKU_OTHER", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_EKU_SMARTCARD_LOGON(value: `5`): Self = this.set("CAPICOM_EKU_SMARTCARD_LOGON", value.asInstanceOf[js.Any])
+    def setCAPICOM_EKU_SMARTCARD_LOGON(value: `5`): Self = StObject.set(x, "CAPICOM_EKU_SMARTCARD_LOGON", value.asInstanceOf[js.Any])
   }
 }

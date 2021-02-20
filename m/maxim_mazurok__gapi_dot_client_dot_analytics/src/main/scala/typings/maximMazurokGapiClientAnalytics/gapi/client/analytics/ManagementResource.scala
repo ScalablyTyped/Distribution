@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagementResource extends js.Object {
+trait ManagementResource extends StObject {
   
   var accountSummaries: AccountSummariesResource = js.native
   
@@ -77,78 +78,66 @@ object ManagementResource {
   }
   
   @scala.inline
-  implicit class ManagementResourceOps[Self <: ManagementResource] (val x: Self) extends AnyVal {
+  implicit class ManagementResourceMutableBuilder[Self <: ManagementResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountSummaries(value: AccountSummariesResource): Self = StObject.set(x, "accountSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountUserLinks(value: AccountUserLinksResource): Self = StObject.set(x, "accountUserLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccounts(value: AccountsResource): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountSummaries(value: AccountSummariesResource): Self = this.set("accountSummaries", value.asInstanceOf[js.Any])
+    def setClientId(value: ClientIdResource): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountUserLinks(value: AccountUserLinksResource): Self = this.set("accountUserLinks", value.asInstanceOf[js.Any])
+    def setCustomDataSources(value: CustomDataSourcesResource): Self = StObject.set(x, "customDataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccounts(value: AccountsResource): Self = this.set("accounts", value.asInstanceOf[js.Any])
+    def setCustomDimensions(value: CustomDimensionsResource): Self = StObject.set(x, "customDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientIdResource): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setCustomMetrics(value: CustomMetricsResource): Self = StObject.set(x, "customMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDataSources(value: CustomDataSourcesResource): Self = this.set("customDataSources", value.asInstanceOf[js.Any])
+    def setExperiments(value: ExperimentsResource): Self = StObject.set(x, "experiments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDimensions(value: CustomDimensionsResource): Self = this.set("customDimensions", value.asInstanceOf[js.Any])
+    def setFilters(value: FiltersResource): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMetrics(value: CustomMetricsResource): Self = this.set("customMetrics", value.asInstanceOf[js.Any])
+    def setGoals(value: GoalsResource): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperiments(value: ExperimentsResource): Self = this.set("experiments", value.asInstanceOf[js.Any])
+    def setProfileFilterLinks(value: ProfileFilterLinksResource): Self = StObject.set(x, "profileFilterLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FiltersResource): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setProfileUserLinks(value: ProfileUserLinksResource): Self = StObject.set(x, "profileUserLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoals(value: GoalsResource): Self = this.set("goals", value.asInstanceOf[js.Any])
+    def setProfiles(value: ProfilesResource): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileFilterLinks(value: ProfileFilterLinksResource): Self = this.set("profileFilterLinks", value.asInstanceOf[js.Any])
+    def setRemarketingAudience(value: RemarketingAudienceResource): Self = StObject.set(x, "remarketingAudience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileUserLinks(value: ProfileUserLinksResource): Self = this.set("profileUserLinks", value.asInstanceOf[js.Any])
+    def setSegments(value: SegmentsResource): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfiles(value: ProfilesResource): Self = this.set("profiles", value.asInstanceOf[js.Any])
+    def setUnsampledReports(value: UnsampledReportsResource): Self = StObject.set(x, "unsampledReports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemarketingAudience(value: RemarketingAudienceResource): Self = this.set("remarketingAudience", value.asInstanceOf[js.Any])
+    def setUploads(value: UploadsResource): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: SegmentsResource): Self = this.set("segments", value.asInstanceOf[js.Any])
+    def setWebPropertyAdWordsLinks(value: WebPropertyAdWordsLinksResource): Self = StObject.set(x, "webPropertyAdWordsLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnsampledReports(value: UnsampledReportsResource): Self = this.set("unsampledReports", value.asInstanceOf[js.Any])
+    def setWebproperties(value: WebpropertiesResource): Self = StObject.set(x, "webproperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploads(value: UploadsResource): Self = this.set("uploads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebPropertyAdWordsLinks(value: WebPropertyAdWordsLinksResource): Self = this.set("webPropertyAdWordsLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebproperties(value: WebpropertiesResource): Self = this.set("webproperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebpropertyUserLinks(value: WebpropertyUserLinksResource): Self = this.set("webpropertyUserLinks", value.asInstanceOf[js.Any])
+    def setWebpropertyUserLinks(value: WebpropertyUserLinksResource): Self = StObject.set(x, "webpropertyUserLinks", value.asInstanceOf[js.Any])
   }
 }

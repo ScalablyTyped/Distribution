@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.UI.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dictionary of options for <Titanium.UI.iPad.Popover.show>.
   */
 @js.native
-trait ShowPopoverParams extends js.Object {
+trait ShowPopoverParams extends StObject {
   
   /**
     * Indicates whether to animate showing the popover.
@@ -36,33 +37,21 @@ object ShowPopoverParams {
   }
   
   @scala.inline
-  implicit class ShowPopoverParamsOps[Self <: ShowPopoverParams] (val x: Self) extends AnyVal {
+  implicit class ShowPopoverParamsMutableBuilder[Self <: ShowPopoverParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRect(value: Dimension): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
-    
-    @scala.inline
-    def setRect(value: Dimension): Self = this.set("rect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRect: Self = this.set("rect", js.undefined)
+    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAnomalySubscriptionsRequest extends js.Object {
+trait GetAnomalySubscriptionsRequest extends StObject {
   
   /**
     *  The number of entries a paginated response contains. 
@@ -36,45 +37,33 @@ object GetAnomalySubscriptionsRequest {
   }
   
   @scala.inline
-  implicit class GetAnomalySubscriptionsRequestOps[Self <: GetAnomalySubscriptionsRequest] (val x: Self) extends AnyVal {
+  implicit class GetAnomalySubscriptionsRequestMutableBuilder[Self <: GetAnomalySubscriptionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: PageSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setMonitorArnUndefined: Self = StObject.set(x, "MonitorArn", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitorArn(value: GenericString): Self = this.set("MonitorArn", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def deleteMonitorArn: Self = this.set("MonitorArn", js.undefined)
+    def setSubscriptionArnList(value: Values): Self = StObject.set(x, "SubscriptionArnList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    def setSubscriptionArnListUndefined: Self = StObject.set(x, "SubscriptionArnList", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionArnListVarargs(value: Value*): Self = this.set("SubscriptionArnList", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscriptionArnList(value: Values): Self = this.set("SubscriptionArnList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionArnList: Self = this.set("SubscriptionArnList", js.undefined)
+    def setSubscriptionArnListVarargs(value: Value*): Self = StObject.set(x, "SubscriptionArnList", js.Array(value :_*))
   }
 }

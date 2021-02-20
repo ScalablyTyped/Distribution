@@ -1,12 +1,13 @@
 package typings.asn1js.mod
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILocalHexBlock extends js.Object {
+trait ILocalHexBlock extends StObject {
   
   /**
     * Base function for converting block from BER encoded array of bytes

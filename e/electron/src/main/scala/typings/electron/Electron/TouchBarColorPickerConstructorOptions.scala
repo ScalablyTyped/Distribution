@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TouchBarColorPickerConstructorOptions extends js.Object {
+trait TouchBarColorPickerConstructorOptions extends StObject {
   
   /**
     * Array of hex color strings to appear as possible colors to select.
@@ -31,39 +32,27 @@ object TouchBarColorPickerConstructorOptions {
   }
   
   @scala.inline
-  implicit class TouchBarColorPickerConstructorOptionsOps[Self <: TouchBarColorPickerConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class TouchBarColorPickerConstructorOptionsMutableBuilder[Self <: TouchBarColorPickerConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableColors(value: js.Array[String]): Self = StObject.set(x, "availableColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableColorsUndefined: Self = StObject.set(x, "availableColors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailableColorsVarargs(value: String*): Self = StObject.set(x, "availableColors", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableColorsVarargs(value: String*): Self = this.set("availableColors", js.Array(value :_*))
+    def setChange(value: /* color */ String => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAvailableColors(value: js.Array[String]): Self = this.set("availableColors", value.asInstanceOf[js.Any])
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteAvailableColors: Self = this.set("availableColors", js.undefined)
+    def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* color */ String => Unit): Self = this.set("change", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
-    
-    @scala.inline
-    def setSelectedColor(value: String): Self = this.set("selectedColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedColor: Self = this.set("selectedColor", js.undefined)
+    def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
   }
 }

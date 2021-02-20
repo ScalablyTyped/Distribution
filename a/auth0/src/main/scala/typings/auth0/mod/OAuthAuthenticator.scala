@@ -1,13 +1,14 @@
 package typings.auth0.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0", "OAuthAuthenticator")
 @js.native
-class OAuthAuthenticator protected () extends js.Object {
+class OAuthAuthenticator protected () extends StObject {
   def this(options: OAuthClientOptions) = this()
   
   def authorizationCodeGrant(data: AuthorizationCodeGrantOptions): js.Promise[SignInToken] = js.native

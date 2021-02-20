@@ -6,12 +6,13 @@ import typings.reactVis.reactVisStrings.left
 import typings.reactVis.reactVisStrings.right
 import typings.reactVis.reactVisStrings.top
 import typings.reactVis.reactVisStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BOTTOM_ extends js.Object {
+trait BOTTOM_ extends StObject {
   
   var BOTTOM: bottom = js.native
   
@@ -34,36 +35,24 @@ object BOTTOM_ {
   }
   
   @scala.inline
-  implicit class BOTTOM_Ops[Self <: BOTTOM_] (val x: Self) extends AnyVal {
+  implicit class BOTTOM_MutableBuilder[Self <: BOTTOM_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBOTTOM(value: bottom): Self = StObject.set(x, "BOTTOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHORIZONTAL(value: horizontal): Self = StObject.set(x, "HORIZONTAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLEFT(value: left): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBOTTOM(value: bottom): Self = this.set("BOTTOM", value.asInstanceOf[js.Any])
+    def setRIGHT(value: right): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHORIZONTAL(value: horizontal): Self = this.set("HORIZONTAL", value.asInstanceOf[js.Any])
+    def setTOP(value: top): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLEFT(value: left): Self = this.set("LEFT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRIGHT(value: right): Self = this.set("RIGHT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTOP(value: top): Self = this.set("TOP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVERTICAL(value: vertical): Self = this.set("VERTICAL", value.asInstanceOf[js.Any])
+    def setVERTICAL(value: vertical): Self = StObject.set(x, "VERTICAL", value.asInstanceOf[js.Any])
   }
 }

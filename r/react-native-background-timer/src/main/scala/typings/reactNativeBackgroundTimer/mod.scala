@@ -1,18 +1,20 @@
 package typings.reactNativeBackgroundTimer
 
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-background-timer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("react-native-background-timer", JSImport.Default)
+  @js.native
   val default: BackgroundTimer = js.native
   
   /*~ You can declare properties of the module using const, let, or var */
   @js.native
-  trait BackgroundTimer extends js.Object {
+  trait BackgroundTimer extends StObject {
     
     def backgroundClockMethod(callback: js.Function0[Unit], delay: Double): Unit = js.native
     
@@ -37,4 +39,9 @@ object mod extends js.Object {
   type IntervalId = Double
   
   type TimeoutId = Double
+  
+  type _To = BackgroundTimer
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: BackgroundTimer = default
 }

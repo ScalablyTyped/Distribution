@@ -3,6 +3,7 @@ package typings.w3cWebUsb
 import typings.std.EventTarget
 import typings.w3cWebUsb.w3cWebUsbStrings.connect
 import typings.w3cWebUsb.w3cWebUsbStrings.disconnect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

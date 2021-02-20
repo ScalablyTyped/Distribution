@@ -5,6 +5,7 @@ import typings.leaflet.anon.namestringHTMLElementDefa
 import typings.leaflet.mod.Control_.Attribution
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -161,7 +162,7 @@ class Map_ protected () extends Evented {
   
   def project(latlng: LatLngExpression, zoom: Double): Point_ = js.native
   
-   // Alternatively, HandlerClass: new(map: Map) => Handler
+  // Alternatively, HandlerClass: new(map: Map) => Handler
   def remove(): this.type = js.native
   
   def removeControl(control: Control_): this.type = js.native

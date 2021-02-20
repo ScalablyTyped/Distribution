@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FolderView extends js.Object {
+trait FolderView extends StObject {
   
   // The method by which the folder should be sorted.
   var sortBy: js.UndefOr[NullableOption[String]] = js.native
@@ -25,45 +26,33 @@ object FolderView {
   }
   
   @scala.inline
-  implicit class FolderViewOps[Self <: FolderView] (val x: Self) extends AnyVal {
+  implicit class FolderViewMutableBuilder[Self <: FolderView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSortBy(value: NullableOption[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSortByNull: Self = StObject.set(x, "sortBy", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
     @scala.inline
-    def setSortBy(value: NullableOption[String]): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    def setSortOrder(value: NullableOption[String]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+    def setSortOrderNull: Self = StObject.set(x, "sortOrder", null)
     
     @scala.inline
-    def setSortByNull: Self = this.set("sortBy", null)
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
     @scala.inline
-    def setSortOrder(value: NullableOption[String]): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    def setViewType(value: NullableOption[String]): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    def setViewTypeNull: Self = StObject.set(x, "viewType", null)
     
     @scala.inline
-    def setSortOrderNull: Self = this.set("sortOrder", null)
-    
-    @scala.inline
-    def setViewType(value: NullableOption[String]): Self = this.set("viewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewType: Self = this.set("viewType", js.undefined)
-    
-    @scala.inline
-    def setViewTypeNull: Self = this.set("viewType", null)
+    def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
   }
 }

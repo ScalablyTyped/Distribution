@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelSpotFleetRequestsErrorItem extends js.Object {
+trait CancelSpotFleetRequestsErrorItem extends StObject {
   
   /**
     * The error.
@@ -26,30 +27,18 @@ object CancelSpotFleetRequestsErrorItem {
   }
   
   @scala.inline
-  implicit class CancelSpotFleetRequestsErrorItemOps[Self <: CancelSpotFleetRequestsErrorItem] (val x: Self) extends AnyVal {
+  implicit class CancelSpotFleetRequestsErrorItemMutableBuilder[Self <: CancelSpotFleetRequestsErrorItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: CancelSpotFleetRequestsError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: CancelSpotFleetRequestsError): Self = this.set("Error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
-    
-    @scala.inline
-    def setSpotFleetRequestId(value: String): Self = this.set("SpotFleetRequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpotFleetRequestId: Self = this.set("SpotFleetRequestId", js.undefined)
+    def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
   }
 }

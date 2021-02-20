@@ -1,11 +1,12 @@
 package typings.fridaGum.Java
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MethodSpec extends js.Object {
+trait MethodSpec extends StObject {
   
   /**
     * Argument types. Defaults to `[]` if omitted.

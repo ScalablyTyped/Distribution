@@ -1,14 +1,15 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CompletionItemKind extends js.Object
+sealed trait CompletionItemKind extends StObject
 @JSGlobal("CompletionItemKind")
 @js.native
-object CompletionItemKind extends js.Object {
+object CompletionItemKind extends StObject {
   
   @js.native
   sealed trait Argument extends CompletionItemKind

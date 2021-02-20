@@ -4,12 +4,13 @@ import typings.d3pie.d3pie.ID3PieTextOptions
 import typings.d3pie.d3pieStrings.`pie-center`
 import typings.d3pie.d3pieStrings.`top-center`
 import typings.d3pie.d3pieStrings.`top-left`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Location extends js.Object {
+trait Location extends StObject {
   
   var location: js.UndefOr[`top-center` | `top-left` | `pie-center`] = js.native
   
@@ -28,42 +29,30 @@ object Location {
   }
   
   @scala.inline
-  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: `top-center` | `top-left` | `pie-center`): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubtitle(value: ID3PieTextOptions): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: `top-center` | `top-left` | `pie-center`): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setTitle(value: ID3PieTextOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitle(value: ID3PieTextOptions): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    def setTitleSubtitlePadding(value: Double): Self = StObject.set(x, "titleSubtitlePadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    def setTitleSubtitlePaddingUndefined: Self = StObject.set(x, "titleSubtitlePadding", js.undefined)
     
     @scala.inline
-    def setTitle(value: ID3PieTextOptions): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTitleSubtitlePadding(value: Double): Self = this.set("titleSubtitlePadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleSubtitlePadding: Self = this.set("titleSubtitlePadding", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

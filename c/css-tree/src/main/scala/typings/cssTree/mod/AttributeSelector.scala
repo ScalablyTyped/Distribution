@@ -1,5 +1,6 @@
 package typings.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,42 +32,30 @@ object AttributeSelector {
   }
   
   @scala.inline
-  implicit class AttributeSelectorOps[Self <: AttributeSelector] (val x: Self) extends AnyVal {
+  implicit class AttributeSelectorMutableBuilder[Self <: AttributeSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlagsNull: Self = StObject.set(x, "flags", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatcher(value: String): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Identifier): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMatcherNull: Self = StObject.set(x, "matcher", null)
     
     @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.AttributeSelector): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setName(value: Identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: String): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setType(value: typings.cssTree.cssTreeStrings.AttributeSelector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagsNull: Self = this.set("flags", null)
+    def setValue(value: StringNode | Identifier): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatcher(value: String): Self = this.set("matcher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatcherNull: Self = this.set("matcher", null)
-    
-    @scala.inline
-    def setValue(value: StringNode | Identifier): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

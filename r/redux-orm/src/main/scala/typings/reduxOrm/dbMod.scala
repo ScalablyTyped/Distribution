@@ -8,27 +8,47 @@ import typings.reduxOrm.modelMod.AnyModel
 import typings.reduxOrm.ormMod.IndexedModelClasses
 import typings.reduxOrm.tableMod.ModelTableOpts
 import typings.std.Extract
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-orm/db", JSImport.Namespace)
-@js.native
-object dbMod extends js.Object {
+object dbMod {
   
-  def createDatabase[I /* <: IndexedModelClasses[
-    _, 
-    Extract[
-      /* keyof any */ String, 
-      /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
-    ]
-  ] */](schemaSpec: SchemaSpec[I]): Database[
-    I, 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-    */ typings.reduxOrm.reduxOrmStrings.createDatabase with TopLevel[I]
-  ] = js.native
+  object default {
+    
+    @JSImport("redux-orm/db", "default.default")
+    @js.native
+    def default[I /* <: IndexedModelClasses[
+        _, 
+        Extract[
+          /* keyof any */ String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
+        ]
+      ] */](schemaSpec: SchemaSpec[I]): Database[
+        I, 
+        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
+      */ typings.reduxOrm.reduxOrmStrings.default with TopLevel[I]
+      ] = js.native
+    
+    @JSImport("redux-orm/db", "default.createDatabase")
+    @js.native
+    def createDatabase[I /* <: IndexedModelClasses[
+        _, 
+        Extract[
+          /* keyof any */ String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
+        ]
+      ] */](schemaSpec: SchemaSpec[I]): Database[
+        I, 
+        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
+      */ typings.reduxOrm.reduxOrmStrings.createDatabase with TopLevel[I]
+      ] = js.native
+  }
   
+  @JSImport("redux-orm/db", "Table")
   @js.native
   /**
     * Creates a new {@link Table} instance.
@@ -47,33 +67,18 @@ object dbMod extends js.Object {
     def this(userOpts: ModelTableOpts[MClass]) = this()
   }
   
+  @JSImport("redux-orm/db", "createDatabase")
   @js.native
-  object default extends js.Object {
-    
-    def createDatabase[I /* <: IndexedModelClasses[
-        _, 
-        Extract[
-          /* keyof any */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
-        ]
-      ] */](schemaSpec: SchemaSpec[I]): Database[
-        I, 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.createDatabase with TopLevel[I]
-      ] = js.native
-    
-    def default[I /* <: IndexedModelClasses[
-        _, 
-        Extract[
-          /* keyof any */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
-        ]
-      ] */](schemaSpec: SchemaSpec[I]): Database[
-        I, 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.default with TopLevel[I]
-      ] = js.native
-  }
+  def createDatabase[I /* <: IndexedModelClasses[
+    _, 
+    Extract[
+      /* keyof any */ String, 
+      /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
+    ]
+  ] */](schemaSpec: SchemaSpec[I]): Database[
+    I, 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
+    */ typings.reduxOrm.reduxOrmStrings.createDatabase with TopLevel[I]
+  ] = js.native
 }

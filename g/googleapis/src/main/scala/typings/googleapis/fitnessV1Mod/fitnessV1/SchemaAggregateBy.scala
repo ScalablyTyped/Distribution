@@ -1,5 +1,6 @@
 package typings.googleapis.fitnessV1Mod.fitnessV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The specification of which data to aggregate.
   */
 @js.native
-trait SchemaAggregateBy extends js.Object {
+trait SchemaAggregateBy extends StObject {
   
   /**
     * A data source ID to aggregate. Mutually exclusive of dataTypeName. Only
@@ -35,30 +36,18 @@ object SchemaAggregateBy {
   }
   
   @scala.inline
-  implicit class SchemaAggregateByOps[Self <: SchemaAggregateBy] (val x: Self) extends AnyVal {
+  implicit class SchemaAggregateByMutableBuilder[Self <: SchemaAggregateBy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
-    
-    @scala.inline
-    def setDataTypeName(value: String): Self = this.set("dataTypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataTypeName: Self = this.set("dataTypeName", js.undefined)
+    def setDataTypeNameUndefined: Self = StObject.set(x, "dataTypeName", js.undefined)
   }
 }

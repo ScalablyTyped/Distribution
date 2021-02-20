@@ -1,16 +1,16 @@
 package typings.grpcGrpcJs
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/stream-decoder", JSImport.Namespace)
-@js.native
-object streamDecoderMod extends js.Object {
+object streamDecoderMod {
   
+  @JSImport("@grpc/grpc-js/build/src/stream-decoder", "StreamDecoder")
   @js.native
-  class StreamDecoder () extends js.Object {
+  class StreamDecoder () extends StObject {
     
     var readCompressFlag: js.Any = js.native
     

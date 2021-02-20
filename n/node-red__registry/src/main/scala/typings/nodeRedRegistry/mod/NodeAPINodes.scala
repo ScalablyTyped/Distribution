@@ -1,12 +1,13 @@
 package typings.nodeRedRegistry.mod
 
 import typings.nodeRedRegistry.anon.Credentials
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeAPINodes extends js.Object {
+trait NodeAPINodes extends StObject {
   
   /**
     * Adds a set of credentials for the given node id.
@@ -47,15 +48,11 @@ trait NodeAPINodes extends js.Object {
     * @param constructor - the constructor function for this node type
     * @param opts - optional additional options for the node
     */
+  def registerType[TNode /* <: Node[TCreds] */, TNodeDef /* <: NodeDef */, TSets, TCreds](`type`: String, constructor: NodeConstructor[TNode, TNodeDef, TCreds]): Unit = js.native
   def registerType[TNode /* <: Node[TCreds] */, TNodeDef /* <: NodeDef */, TSets, TCreds](
     `type`: String,
-     // tslint:disable-line:no-unnecessary-generics
-  constructor: NodeConstructor[TNode, TNodeDef, TCreds]
-  ): Unit = js.native
-  def registerType[TNode /* <: Node[TCreds] */, TNodeDef /* <: NodeDef */, TSets, TCreds](
-    `type`: String,
-     // tslint:disable-line:no-unnecessary-generics
-  constructor: NodeConstructor[TNode, TNodeDef, TCreds],
-    opts: Credentials[TCreds, TSets]
+    constructor: NodeConstructor[TNode, TNodeDef, TCreds],
+    // tslint:disable-line:no-unnecessary-generics
+  opts: Credentials[TCreds, TSets]
   ): Unit = js.native
 }

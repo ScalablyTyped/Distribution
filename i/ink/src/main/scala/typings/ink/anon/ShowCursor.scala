@@ -1,11 +1,12 @@
 package typings.ink.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShowCursor extends js.Object {
+trait ShowCursor extends StObject {
   
   var showCursor: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object ShowCursor {
   }
   
   @scala.inline
-  implicit class ShowCursorOps[Self <: ShowCursor] (val x: Self) extends AnyVal {
+  implicit class ShowCursorMutableBuilder[Self <: ShowCursor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShowCursor(value: Boolean): Self = StObject.set(x, "showCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShowCursor(value: Boolean): Self = this.set("showCursor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowCursor: Self = this.set("showCursor", js.undefined)
+    def setShowCursorUndefined: Self = StObject.set(x, "showCursor", js.undefined)
   }
 }

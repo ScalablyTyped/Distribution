@@ -1,15 +1,15 @@
 package typings.jestCucumber
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-cucumber/dist/src/reporting/formatters/formatter-loggers/FormatterConsoleLogger", JSImport.Namespace)
-@js.native
-object formatterConsoleLoggerMod extends js.Object {
+object formatterConsoleLoggerMod {
   
+  @JSImport("jest-cucumber/dist/src/reporting/formatters/formatter-loggers/FormatterConsoleLogger", "FormatterConsoleLogger")
   @js.native
-  class FormatterConsoleLogger () extends js.Object {
+  class FormatterConsoleLogger () extends StObject {
     
     def log(logText: String): Unit = js.native
   }

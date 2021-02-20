@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SalesforceStandardObjectAttachmentConfiguration extends js.Object {
+trait SalesforceStandardObjectAttachmentConfiguration extends StObject {
   
   /**
     * The name of the field used for the document title.
@@ -26,33 +27,21 @@ object SalesforceStandardObjectAttachmentConfiguration {
   }
   
   @scala.inline
-  implicit class SalesforceStandardObjectAttachmentConfigurationOps[Self <: SalesforceStandardObjectAttachmentConfiguration] (val x: Self) extends AnyVal {
+  implicit class SalesforceStandardObjectAttachmentConfigurationMutableBuilder[Self <: SalesforceStandardObjectAttachmentConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentTitleFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DocumentTitleFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentTitleFieldNameUndefined: Self = StObject.set(x, "DocumentTitleFieldName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "FieldMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentTitleFieldName(value: DataSourceFieldName): Self = this.set("DocumentTitleFieldName", value.asInstanceOf[js.Any])
+    def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
     
     @scala.inline
-    def deleteDocumentTitleFieldName: Self = this.set("DocumentTitleFieldName", js.undefined)
-    
-    @scala.inline
-    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = this.set("FieldMappings", js.Array(value :_*))
-    
-    @scala.inline
-    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = this.set("FieldMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldMappings: Self = this.set("FieldMappings", js.undefined)
+    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
   }
 }

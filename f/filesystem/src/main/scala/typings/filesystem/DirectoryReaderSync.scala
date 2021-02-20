@@ -1,5 +1,6 @@
 package typings.filesystem
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * </ul>
   */
 @js.native
-trait DirectoryReaderSync extends js.Object {
+trait DirectoryReaderSync extends StObject {
   
   /**
     * Read the next block of entries from this directory.
@@ -30,21 +31,9 @@ object DirectoryReaderSync {
   }
   
   @scala.inline
-  implicit class DirectoryReaderSyncOps[Self <: DirectoryReaderSync] (val x: Self) extends AnyVal {
+  implicit class DirectoryReaderSyncMutableBuilder[Self <: DirectoryReaderSync] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReadEntries(value: () => js.Array[EntrySync]): Self = this.set("readEntries", js.Any.fromFunction0(value))
+    def setReadEntries(value: () => js.Array[EntrySync]): Self = StObject.set(x, "readEntries", js.Any.fromFunction0(value))
   }
 }

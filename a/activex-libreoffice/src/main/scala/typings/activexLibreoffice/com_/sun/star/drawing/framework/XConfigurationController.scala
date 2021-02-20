@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -222,51 +223,39 @@ object XConfigurationController {
   }
   
   @scala.inline
-  implicit class XConfigurationControllerOps[Self <: XConfigurationController] (val x: Self) extends AnyVal {
+  implicit class XConfigurationControllerMutableBuilder[Self <: XConfigurationController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentConfiguration(value: XConfiguration): Self = StObject.set(x, "CurrentConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentConfiguration(value: () => XConfiguration): Self = StObject.set(x, "getCurrentConfiguration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRequestedConfiguration(value: () => XConfiguration): Self = StObject.set(x, "getRequestedConfiguration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentConfiguration(value: XConfiguration): Self = this.set("CurrentConfiguration", value.asInstanceOf[js.Any])
+    def setGetResource(value: XResourceId => XResource): Self = StObject.set(x, "getResource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestedConfiguration(value: XConfiguration): Self = this.set("RequestedConfiguration", value.asInstanceOf[js.Any])
+    def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentConfiguration(value: () => XConfiguration): Self = this.set("getCurrentConfiguration", js.Any.fromFunction0(value))
+    def setRequestResourceActivation(value: (XResourceId, ResourceActivationMode) => Unit): Self = StObject.set(x, "requestResourceActivation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetRequestedConfiguration(value: () => XConfiguration): Self = this.set("getRequestedConfiguration", js.Any.fromFunction0(value))
+    def setRequestResourceDeactivation(value: XResourceId => Unit): Self = StObject.set(x, "requestResourceDeactivation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetResource(value: XResourceId => XResource): Self = this.set("getResource", js.Any.fromFunction1(value))
+    def setRequestedConfiguration(value: XConfiguration): Self = StObject.set(x, "RequestedConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLock(value: () => Unit): Self = this.set("lock", js.Any.fromFunction0(value))
+    def setRestoreConfiguration(value: XConfiguration => Unit): Self = StObject.set(x, "restoreConfiguration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestResourceActivation(value: (XResourceId, ResourceActivationMode) => Unit): Self = this.set("requestResourceActivation", js.Any.fromFunction2(value))
+    def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRequestResourceDeactivation(value: XResourceId => Unit): Self = this.set("requestResourceDeactivation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRestoreConfiguration(value: XConfiguration => Unit): Self = this.set("restoreConfiguration", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnlock(value: () => Unit): Self = this.set("unlock", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

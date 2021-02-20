@@ -1,11 +1,12 @@
 package typings.winrt.Windows.ApplicationModel.DataTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStandardDataFormatsStatics extends js.Object {
+trait IStandardDataFormatsStatics extends StObject {
   
   var bitmap: String = js.native
   
@@ -28,36 +29,24 @@ object IStandardDataFormatsStatics {
   }
   
   @scala.inline
-  implicit class IStandardDataFormatsStaticsOps[Self <: IStandardDataFormatsStatics] (val x: Self) extends AnyVal {
+  implicit class IStandardDataFormatsStaticsMutableBuilder[Self <: IStandardDataFormatsStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitmap(value: String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRtf(value: String): Self = StObject.set(x, "rtf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmap(value: String): Self = this.set("bitmap", value.asInstanceOf[js.Any])
+    def setStorageItems(value: String): Self = StObject.set(x, "storageItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtf(value: String): Self = this.set("rtf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageItems(value: String): Self = this.set("storageItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

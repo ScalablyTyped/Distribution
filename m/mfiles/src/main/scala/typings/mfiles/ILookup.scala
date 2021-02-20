@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFBuiltInObjectType
 import typings.mfiles.MFiles.MFSpecialObjectFlag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILookup extends js.Object {
+trait ILookup extends StObject {
   
   def Clone(): ILookup = js.native
   
@@ -58,57 +59,45 @@ object ILookup {
   }
   
   @scala.inline
-  implicit class ILookupOps[Self <: ILookup] (val x: Self) extends AnyVal {
+  implicit class ILookupMutableBuilder[Self <: ILookup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => ILookup): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloneFrom(value: ILookup => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ILookup): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setDisplayID(value: String): Self = StObject.set(x, "DisplayID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneFrom(value: ILookup => Unit): Self = this.set("CloneFrom", js.Any.fromFunction1(value))
+    def setDisplayIDAvailable(value: Boolean): Self = StObject.set(x, "DisplayIDAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("Deleted", value.asInstanceOf[js.Any])
+    def setDisplayValue(value: String): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayID(value: String): Self = this.set("DisplayID", value.asInstanceOf[js.Any])
+    def setGetFormattedDisplayValue(value: (Boolean, Boolean, Boolean) => String): Self = StObject.set(x, "GetFormattedDisplayValue", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDisplayIDAvailable(value: Boolean): Self = this.set("DisplayIDAvailable", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayValue(value: String): Self = this.set("DisplayValue", value.asInstanceOf[js.Any])
+    def setItem(value: Double): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetFormattedDisplayValue(value: (Boolean, Boolean, Boolean) => String): Self = this.set("GetFormattedDisplayValue", js.Any.fromFunction3(value))
+    def setItemGUID(value: String): Self = StObject.set(x, "ItemGUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("Hidden", value.asInstanceOf[js.Any])
+    def setObjectFlags(value: MFSpecialObjectFlag): Self = StObject.set(x, "ObjectFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: Double): Self = this.set("Item", value.asInstanceOf[js.Any])
+    def setObjectType(value: MFBuiltInObjectType | Double): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemGUID(value: String): Self = this.set("ItemGUID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectFlags(value: MFSpecialObjectFlag): Self = this.set("ObjectFlags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectType(value: MFBuiltInObjectType | Double): Self = this.set("ObjectType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

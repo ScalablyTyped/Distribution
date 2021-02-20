@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WalkingRouteResult extends js.Object {
+trait WalkingRouteResult extends StObject {
   
   var city: String = js.native
   
@@ -32,33 +33,21 @@ object WalkingRouteResult {
   }
   
   @scala.inline
-  implicit class WalkingRouteResultOps[Self <: WalkingRouteResult] (val x: Self) extends AnyVal {
+  implicit class WalkingRouteResultMutableBuilder[Self <: WalkingRouteResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEnd(value: () => LocalResultPoi): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNumPlans(value: () => Double): Self = StObject.set(x, "getNumPlans", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setGetPlan(value: Double => RoutePlan): Self = StObject.set(x, "getPlan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEnd(value: () => LocalResultPoi): Self = this.set("getEnd", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNumPlans(value: () => Double): Self = this.set("getNumPlans", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPlan(value: Double => RoutePlan): Self = this.set("getPlan", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetStart(value: () => LocalResultPoi): Self = this.set("getStart", js.Any.fromFunction0(value))
+    def setGetStart(value: () => LocalResultPoi): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
   }
 }

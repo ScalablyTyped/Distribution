@@ -1,6 +1,7 @@
 package typings.sequelize.mod
 
 import typings.sequelize.anon.Msg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,90 +105,78 @@ object DefineAttributeColumnOptions {
   }
   
   @scala.inline
-  implicit class DefineAttributeColumnOptionsOps[Self <: DefineAttributeColumnOptions] (val x: Self) extends AnyVal {
+  implicit class DefineAttributeColumnOptionsMutableBuilder[Self <: DefineAttributeColumnOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String | DataTypeAbstract): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def setAutoIncrement(value: Boolean): Self = this.set("autoIncrement", value.asInstanceOf[js.Any])
+    def setGet(value: () => _): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteAutoIncrement: Self = this.set("autoIncrement", js.undefined)
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setOnDelete(value: String): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
     
     @scala.inline
-    def setGet(value: () => _): Self = this.set("get", js.Any.fromFunction0(value))
+    def setOnUpdate(value: String): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
     
     @scala.inline
-    def setOnDelete(value: String): Self = this.set("onDelete", value.asInstanceOf[js.Any])
+    def setPrimaryKey(value: Boolean): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnDelete: Self = this.set("onDelete", js.undefined)
+    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
     @scala.inline
-    def setOnUpdate(value: String): Self = this.set("onUpdate", value.asInstanceOf[js.Any])
+    def setReferences(value: DefineAttributeColumnReferencesOptions): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnUpdate: Self = this.set("onUpdate", js.undefined)
+    def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
     
     @scala.inline
-    def setPrimaryKey(value: Boolean): Self = this.set("primaryKey", value.asInstanceOf[js.Any])
+    def setSet(value: /* val */ js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePrimaryKey: Self = this.set("primaryKey", js.undefined)
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     @scala.inline
-    def setReferences(value: DefineAttributeColumnReferencesOptions): Self = this.set("references", value.asInstanceOf[js.Any])
+    def setType(value: String | DataTypeAbstract): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReferences: Self = this.set("references", js.undefined)
+    def setUnique(value: Boolean | String | Msg): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: /* val */ js.Any => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
     
     @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setValidate(value: DefineValidateOptions): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnique(value: Boolean | String | Msg): Self = this.set("unique", value.asInstanceOf[js.Any])
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
     @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
+    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidate(value: DefineValidateOptions): Self = this.set("validate", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

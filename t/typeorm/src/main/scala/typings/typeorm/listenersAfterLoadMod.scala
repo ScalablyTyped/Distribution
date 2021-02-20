@@ -1,13 +1,14 @@
 package typings.typeorm
 
 import typings.std.PropertyDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/decorator/listeners/AfterLoad", JSImport.Namespace)
-@js.native
-object listenersAfterLoadMod extends js.Object {
+object listenersAfterLoadMod {
   
+  @JSImport("typeorm/decorator/listeners/AfterLoad", "AfterLoad")
+  @js.native
   def AfterLoad(): PropertyDecorator = js.native
 }

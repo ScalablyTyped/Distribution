@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetOnPremisesInstancesOutput extends js.Object {
+trait BatchGetOnPremisesInstancesOutput extends StObject {
   
   /**
     * Information about the on-premises instances.
@@ -21,27 +22,15 @@ object BatchGetOnPremisesInstancesOutput {
   }
   
   @scala.inline
-  implicit class BatchGetOnPremisesInstancesOutputOps[Self <: BatchGetOnPremisesInstancesOutput] (val x: Self) extends AnyVal {
+  implicit class BatchGetOnPremisesInstancesOutputMutableBuilder[Self <: BatchGetOnPremisesInstancesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceInfos(value: InstanceInfoList): Self = StObject.set(x, "instanceInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceInfosUndefined: Self = StObject.set(x, "instanceInfos", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceInfosVarargs(value: InstanceInfo*): Self = this.set("instanceInfos", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstanceInfos(value: InstanceInfoList): Self = this.set("instanceInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceInfos: Self = this.set("instanceInfos", js.undefined)
+    def setInstanceInfosVarargs(value: InstanceInfo*): Self = StObject.set(x, "instanceInfos", js.Array(value :_*))
   }
 }

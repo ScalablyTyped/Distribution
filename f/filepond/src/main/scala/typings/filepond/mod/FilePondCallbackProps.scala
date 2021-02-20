@@ -1,11 +1,12 @@
 package typings.filepond.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilePondCallbackProps extends js.Object {
+trait FilePondCallbackProps extends StObject {
   
   /* Called when a file is clicked or tapped. **/
   var onactivatefile: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.native
@@ -99,124 +100,112 @@ object FilePondCallbackProps {
   }
   
   @scala.inline
-  implicit class FilePondCallbackPropsOps[Self <: FilePondCallbackProps] (val x: Self) extends AnyVal {
+  implicit class FilePondCallbackPropsMutableBuilder[Self <: FilePondCallbackProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnactivatefile(value: /* file */ FilePondFile => Unit): Self = StObject.set(x, "onactivatefile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnactivatefileUndefined: Self = StObject.set(x, "onactivatefile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnaddfile(value: (/* error */ FilePondErrorDescription | Null, /* file */ FilePondFile) => Unit): Self = StObject.set(x, "onaddfile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnactivatefile(value: /* file */ FilePondFile => Unit): Self = this.set("onactivatefile", js.Any.fromFunction1(value))
+    def setOnaddfileUndefined: Self = StObject.set(x, "onaddfile", js.undefined)
     
     @scala.inline
-    def deleteOnactivatefile: Self = this.set("onactivatefile", js.undefined)
+    def setOnaddfileprogress(value: (/* file */ FilePondFile, /* progress */ Double) => Unit): Self = StObject.set(x, "onaddfileprogress", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnaddfile(value: (/* error */ FilePondErrorDescription | Null, /* file */ FilePondFile) => Unit): Self = this.set("onaddfile", js.Any.fromFunction2(value))
+    def setOnaddfileprogressUndefined: Self = StObject.set(x, "onaddfileprogress", js.undefined)
     
     @scala.inline
-    def deleteOnaddfile: Self = this.set("onaddfile", js.undefined)
+    def setOnaddfilestart(value: /* file */ FilePondFile => Unit): Self = StObject.set(x, "onaddfilestart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnaddfileprogress(value: (/* file */ FilePondFile, /* progress */ Double) => Unit): Self = this.set("onaddfileprogress", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnaddfileprogress: Self = this.set("onaddfileprogress", js.undefined)
-    
-    @scala.inline
-    def setOnaddfilestart(value: /* file */ FilePondFile => Unit): Self = this.set("onaddfilestart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnaddfilestart: Self = this.set("onaddfilestart", js.undefined)
+    def setOnaddfilestartUndefined: Self = StObject.set(x, "onaddfilestart", js.undefined)
     
     @scala.inline
     def setOnerror(
       value: (/* error */ FilePondErrorDescription, /* file */ js.UndefOr[FilePondFile], /* status */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("onerror", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onerror", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnerror: Self = this.set("onerror", js.undefined)
+    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
     @scala.inline
-    def setOninit(value: () => Unit): Self = this.set("oninit", js.Any.fromFunction0(value))
+    def setOninit(value: () => Unit): Self = StObject.set(x, "oninit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOninit: Self = this.set("oninit", js.undefined)
+    def setOninitUndefined: Self = StObject.set(x, "oninit", js.undefined)
     
     @scala.inline
-    def setOnpreparefile(value: (/* file */ FilePondFile, /* output */ js.Any) => Unit): Self = this.set("onpreparefile", js.Any.fromFunction2(value))
+    def setOnpreparefile(value: (/* file */ FilePondFile, /* output */ js.Any) => Unit): Self = StObject.set(x, "onpreparefile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnpreparefile: Self = this.set("onpreparefile", js.undefined)
+    def setOnpreparefileUndefined: Self = StObject.set(x, "onpreparefile", js.undefined)
     
     @scala.inline
-    def setOnprocessfile(value: (/* error */ FilePondErrorDescription | Null, /* file */ FilePondFile) => Unit): Self = this.set("onprocessfile", js.Any.fromFunction2(value))
+    def setOnprocessfile(value: (/* error */ FilePondErrorDescription | Null, /* file */ FilePondFile) => Unit): Self = StObject.set(x, "onprocessfile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnprocessfile: Self = this.set("onprocessfile", js.undefined)
+    def setOnprocessfileUndefined: Self = StObject.set(x, "onprocessfile", js.undefined)
     
     @scala.inline
-    def setOnprocessfileabort(value: /* file */ FilePondFile => Unit): Self = this.set("onprocessfileabort", js.Any.fromFunction1(value))
+    def setOnprocessfileabort(value: /* file */ FilePondFile => Unit): Self = StObject.set(x, "onprocessfileabort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnprocessfileabort: Self = this.set("onprocessfileabort", js.undefined)
+    def setOnprocessfileabortUndefined: Self = StObject.set(x, "onprocessfileabort", js.undefined)
     
     @scala.inline
-    def setOnprocessfileprogress(value: (/* file */ FilePondFile, /* progress */ Double) => Unit): Self = this.set("onprocessfileprogress", js.Any.fromFunction2(value))
+    def setOnprocessfileprogress(value: (/* file */ FilePondFile, /* progress */ Double) => Unit): Self = StObject.set(x, "onprocessfileprogress", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnprocessfileprogress: Self = this.set("onprocessfileprogress", js.undefined)
+    def setOnprocessfileprogressUndefined: Self = StObject.set(x, "onprocessfileprogress", js.undefined)
     
     @scala.inline
-    def setOnprocessfilerevert(value: /* file */ FilePondFile => Unit): Self = this.set("onprocessfilerevert", js.Any.fromFunction1(value))
+    def setOnprocessfilerevert(value: /* file */ FilePondFile => Unit): Self = StObject.set(x, "onprocessfilerevert", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnprocessfilerevert: Self = this.set("onprocessfilerevert", js.undefined)
+    def setOnprocessfilerevertUndefined: Self = StObject.set(x, "onprocessfilerevert", js.undefined)
     
     @scala.inline
-    def setOnprocessfiles(value: () => Unit): Self = this.set("onprocessfiles", js.Any.fromFunction0(value))
+    def setOnprocessfiles(value: () => Unit): Self = StObject.set(x, "onprocessfiles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnprocessfiles: Self = this.set("onprocessfiles", js.undefined)
+    def setOnprocessfilesUndefined: Self = StObject.set(x, "onprocessfiles", js.undefined)
     
     @scala.inline
-    def setOnprocessfilestart(value: /* file */ FilePondFile => Unit): Self = this.set("onprocessfilestart", js.Any.fromFunction1(value))
+    def setOnprocessfilestart(value: /* file */ FilePondFile => Unit): Self = StObject.set(x, "onprocessfilestart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnprocessfilestart: Self = this.set("onprocessfilestart", js.undefined)
+    def setOnprocessfilestartUndefined: Self = StObject.set(x, "onprocessfilestart", js.undefined)
     
     @scala.inline
-    def setOnremovefile(value: (/* error */ FilePondErrorDescription | Null, /* file */ FilePondFile) => Unit): Self = this.set("onremovefile", js.Any.fromFunction2(value))
+    def setOnremovefile(value: (/* error */ FilePondErrorDescription | Null, /* file */ FilePondFile) => Unit): Self = StObject.set(x, "onremovefile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnremovefile: Self = this.set("onremovefile", js.undefined)
+    def setOnremovefileUndefined: Self = StObject.set(x, "onremovefile", js.undefined)
     
     @scala.inline
-    def setOnreorderfiles(value: /* files */ js.Array[FilePondFile] => Unit): Self = this.set("onreorderfiles", js.Any.fromFunction1(value))
+    def setOnreorderfiles(value: /* files */ js.Array[FilePondFile] => Unit): Self = StObject.set(x, "onreorderfiles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnreorderfiles: Self = this.set("onreorderfiles", js.undefined)
+    def setOnreorderfilesUndefined: Self = StObject.set(x, "onreorderfiles", js.undefined)
     
     @scala.inline
-    def setOnupdatefiles(value: /* files */ js.Array[FilePondFile] => Unit): Self = this.set("onupdatefiles", js.Any.fromFunction1(value))
+    def setOnupdatefiles(value: /* files */ js.Array[FilePondFile] => Unit): Self = StObject.set(x, "onupdatefiles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnupdatefiles: Self = this.set("onupdatefiles", js.undefined)
+    def setOnupdatefilesUndefined: Self = StObject.set(x, "onupdatefiles", js.undefined)
     
     @scala.inline
     def setOnwarning(
       value: (/* error */ js.Any, /* file */ js.UndefOr[FilePondFile], /* status */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("onwarning", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onwarning", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnwarning: Self = this.set("onwarning", js.undefined)
+    def setOnwarningUndefined: Self = StObject.set(x, "onwarning", js.undefined)
   }
 }

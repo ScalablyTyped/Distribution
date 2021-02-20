@@ -1,11 +1,12 @@
 package typings.dateFns.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateTime extends js.Object {
+trait DateTime extends StObject {
   
   def date(args: js.Any*): js.Any = js.native
   
@@ -26,27 +27,15 @@ object DateTime {
   }
   
   @scala.inline
-  implicit class DateTimeOps[Self <: DateTime] (val x: Self) extends AnyVal {
+  implicit class DateTimeMutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateTime(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dateTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDate(value: /* repeated */ js.Any => js.Any): Self = this.set("date", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDateTime(value: /* repeated */ js.Any => js.Any): Self = this.set("dateTime", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTime(value: /* repeated */ js.Any => js.Any): Self = this.set("time", js.Any.fromFunction1(value))
+    def setTime(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "time", js.Any.fromFunction1(value))
   }
 }

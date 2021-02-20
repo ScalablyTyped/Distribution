@@ -1,5 +1,6 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object ClusterAllocationExplainParams {
   }
   
   @scala.inline
-  implicit class ClusterAllocationExplainParamsOps[Self <: ClusterAllocationExplainParams] (val x: Self) extends AnyVal {
+  implicit class ClusterAllocationExplainParamsMutableBuilder[Self <: ClusterAllocationExplainParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeDiskInfo(value: Boolean): Self = StObject.set(x, "includeDiskInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeDiskInfoUndefined: Self = StObject.set(x, "includeDiskInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeYesDecisions(value: Boolean): Self = StObject.set(x, "includeYesDecisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDiskInfo(value: Boolean): Self = this.set("includeDiskInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeDiskInfo: Self = this.set("includeDiskInfo", js.undefined)
-    
-    @scala.inline
-    def setIncludeYesDecisions(value: Boolean): Self = this.set("includeYesDecisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeYesDecisions: Self = this.set("includeYesDecisions", js.undefined)
+    def setIncludeYesDecisionsUndefined: Self = StObject.set(x, "includeYesDecisions", js.undefined)
   }
 }

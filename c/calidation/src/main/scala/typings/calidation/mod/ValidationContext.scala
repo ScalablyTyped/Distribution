@@ -1,13 +1,14 @@
 package typings.calidation.mod
 
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<calidation.calidation.FormContext<T>, 'register' | 'unregister'> */
 @js.native
-trait ValidationContext[T /* <: js.Object */] extends js.Object {
+trait ValidationContext[T /* <: js.Object */] extends StObject {
   
   var dirty: Dirty[T] = js.native
   
@@ -46,45 +47,33 @@ object ValidationContext {
   }
   
   @scala.inline
-  implicit class ValidationContextOps[Self <: ValidationContext[_], T /* <: js.Object */] (val x: Self with ValidationContext[T]) extends AnyVal {
+  implicit class ValidationContextMutableBuilder[Self <: ValidationContext[_], T /* <: js.Object */] (val x: Self with ValidationContext[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirty(value: Dirty[T]): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrors(value: Errors[T]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: Fields[T]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirty(value: Dirty[T]): Self = this.set("dirty", value.asInstanceOf[js.Any])
+    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: Errors[T]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFields(value: Fields[T]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setSetError(value: /* delta */ Errors[T] => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsValid(value: Boolean): Self = this.set("isValid", value.asInstanceOf[js.Any])
+    def setSetField(value: /* delta */ Partial[T] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResetAll(value: () => Unit): Self = this.set("resetAll", js.Any.fromFunction0(value))
+    def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetError(value: /* delta */ Errors[T] => Unit): Self = this.set("setError", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetField(value: /* delta */ Partial[T] => Unit): Self = this.set("setField", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = this.set("submit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSubmitted(value: Boolean): Self = this.set("submitted", value.asInstanceOf[js.Any])
+    def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
   }
 }

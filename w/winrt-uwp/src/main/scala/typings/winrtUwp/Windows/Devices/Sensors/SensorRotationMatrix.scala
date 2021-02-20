@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a 3x3 rotation matrix. */
 @js.native
-trait SensorRotationMatrix extends js.Object {
+trait SensorRotationMatrix extends StObject {
   
   /** Gets the value at row 1, column 1 of the given rotation matrix. */
   var m11: Double = js.native
@@ -54,45 +55,33 @@ object SensorRotationMatrix {
   }
   
   @scala.inline
-  implicit class SensorRotationMatrixOps[Self <: SensorRotationMatrix] (val x: Self) extends AnyVal {
+  implicit class SensorRotationMatrixMutableBuilder[Self <: SensorRotationMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setM12(value: Double): Self = StObject.set(x, "m12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setM13(value: Double): Self = StObject.set(x, "m13", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM11(value: Double): Self = this.set("m11", value.asInstanceOf[js.Any])
+    def setM21(value: Double): Self = StObject.set(x, "m21", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM12(value: Double): Self = this.set("m12", value.asInstanceOf[js.Any])
+    def setM22(value: Double): Self = StObject.set(x, "m22", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM13(value: Double): Self = this.set("m13", value.asInstanceOf[js.Any])
+    def setM23(value: Double): Self = StObject.set(x, "m23", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM21(value: Double): Self = this.set("m21", value.asInstanceOf[js.Any])
+    def setM31(value: Double): Self = StObject.set(x, "m31", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM22(value: Double): Self = this.set("m22", value.asInstanceOf[js.Any])
+    def setM32(value: Double): Self = StObject.set(x, "m32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM23(value: Double): Self = this.set("m23", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM31(value: Double): Self = this.set("m31", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM32(value: Double): Self = this.set("m32", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM33(value: Double): Self = this.set("m33", value.asInstanceOf[js.Any])
+    def setM33(value: Double): Self = StObject.set(x, "m33", value.asInstanceOf[js.Any])
   }
 }

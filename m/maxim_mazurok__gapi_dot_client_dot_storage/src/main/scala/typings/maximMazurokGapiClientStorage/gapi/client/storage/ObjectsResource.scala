@@ -18,12 +18,13 @@ import typings.maximMazurokGapiClientStorage.anon.IfSourceGenerationNotMatch
 import typings.maximMazurokGapiClientStorage.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientStorage.anon.KmsKeyName
 import typings.maximMazurokGapiClientStorage.anon.OauthtokenObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectsResource extends js.Object {
+trait ObjectsResource extends StObject {
   
   /** Concatenates a list of existing objects into a new object in the same bucket. */
   def compose(request: DestinationBucket): Request[Object] = js.native

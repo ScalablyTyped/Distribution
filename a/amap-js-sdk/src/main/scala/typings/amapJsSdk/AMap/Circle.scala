@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Circle extends js.Object {
+trait Circle extends StObject {
   
   def contains(point: LngLat): Boolean = js.native
   
@@ -56,57 +57,45 @@ object Circle {
   }
   
   @scala.inline
-  implicit class CircleOps[Self <: Circle] (val x: Self) extends AnyVal {
+  implicit class CircleMutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: LngLat => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBounds(value: () => Bounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCenter(value: () => LngLat): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContains(value: LngLat => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    def setGetExtData(value: () => js.Any): Self = StObject.set(x, "getExtData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBounds(value: () => Bounds): Self = this.set("getBounds", js.Any.fromFunction0(value))
+    def setGetOptions(value: () => CircleOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCenter(value: () => LngLat): Self = this.set("getCenter", js.Any.fromFunction0(value))
+    def setGetRadius(value: () => Double): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetExtData(value: () => js.Any): Self = this.set("getExtData", js.Any.fromFunction0(value))
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOptions(value: () => CircleOptions): Self = this.set("getOptions", js.Any.fromFunction0(value))
+    def setSetCenter(value: LngLat => Unit): Self = StObject.set(x, "setCenter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRadius(value: () => Double): Self = this.set("getRadius", js.Any.fromFunction0(value))
+    def setSetExtData(value: js.Any => Unit): Self = StObject.set(x, "setExtData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCenter(value: LngLat => Unit): Self = this.set("setCenter", js.Any.fromFunction1(value))
+    def setSetOptions(value: CircleOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetExtData(value: js.Any => Unit): Self = this.set("setExtData", js.Any.fromFunction1(value))
+    def setSetRadius(value: Double => Unit): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMap(value: Map => Unit): Self = this.set("setMap", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOptions(value: CircleOptions => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRadius(value: Double => Unit): Self = this.set("setRadius", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

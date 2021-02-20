@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2UiElementsLinkOutSuggestion extends js.Object {
+trait GoogleActionsV2UiElementsLinkOutSuggestion extends StObject {
   
   /**
     * The name of the app or site this chip is linking to. The chip will be
@@ -38,36 +39,24 @@ object GoogleActionsV2UiElementsLinkOutSuggestion {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2UiElementsLinkOutSuggestionOps[Self <: GoogleActionsV2UiElementsLinkOutSuggestion] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2UiElementsLinkOutSuggestionMutableBuilder[Self <: GoogleActionsV2UiElementsLinkOutSuggestion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationName(value: String): Self = this.set("destinationName", value.asInstanceOf[js.Any])
+    def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
     
     @scala.inline
-    def deleteDestinationName: Self = this.set("destinationName", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = this.set("openUrlAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenUrlAction: Self = this.set("openUrlAction", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

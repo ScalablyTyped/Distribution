@@ -4,12 +4,13 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`0`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`1`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`2`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CELLULAR extends js.Object {
+trait CELLULAR extends StObject {
   
   /**
     * Connected to a cellular network.
@@ -40,30 +41,18 @@ object CELLULAR {
   }
   
   @scala.inline
-  implicit class CELLULAROps[Self <: CELLULAR] (val x: Self) extends AnyVal {
+  implicit class CELLULARMutableBuilder[Self <: CELLULAR] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCELLULAR(value: `2`): Self = StObject.set(x, "CELLULAR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDISCONNECTED(value: `0`): Self = StObject.set(x, "DISCONNECTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setETHERNET(value: `3`): Self = StObject.set(x, "ETHERNET", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCELLULAR(value: `2`): Self = this.set("CELLULAR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDISCONNECTED(value: `0`): Self = this.set("DISCONNECTED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setETHERNET(value: `3`): Self = this.set("ETHERNET", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIFI(value: `1`): Self = this.set("WIFI", value.asInstanceOf[js.Any])
+    def setWIFI(value: `1`): Self = StObject.set(x, "WIFI", value.asInstanceOf[js.Any])
   }
 }

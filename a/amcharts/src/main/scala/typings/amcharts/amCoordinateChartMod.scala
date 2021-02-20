@@ -1,12 +1,15 @@
 package typings.amcharts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/AmCoordinateChart", JSImport.Namespace)
-@js.native
-object amCoordinateChartMod extends js.Object {
+object amCoordinateChartMod {
+  
+  @JSImport("amcharts/AmCoordinateChart", JSImport.Default)
+  @js.native
+  class default () extends AmCoordinateChart
   
   @js.native
   trait AmCoordinateChart
@@ -157,7 +160,4 @@ object amCoordinateChartMod extends js.Object {
       */
     var valueAxes: js.Array[_] = js.native
   }
-  
-  @js.native
-  class default () extends AmCoordinateChart
 }

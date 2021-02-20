@@ -1,19 +1,19 @@
 package typings.ndnJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.ndnJs.blobMod.Blob
 import typings.ndnJs.nameMod.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ndn-js/signature", JSImport.Namespace)
-@js.native
-object signatureMod extends js.Object {
+object signatureMod {
   
+  @JSImport("ndn-js/signature", "DigestSha256Signature")
   @js.native
   class DigestSha256Signature () extends SignatureBase[DigestSha256Signature]
   
+  @JSImport("ndn-js/signature", "GenericSignature")
   @js.native
   class GenericSignature () extends SignatureBase[GenericSignature] {
     
@@ -25,11 +25,13 @@ object signatureMod extends js.Object {
     def setSignatureInfoEncoding(encoding: Blob, typeCode: Double): Unit = js.native
   }
   
+  @JSImport("ndn-js/signature", "HmacWithSha25Signature")
   @js.native
   class HmacWithSha25Signature () extends SignatureBaseKl[HmacWithSha25Signature]
   
+  @JSImport("ndn-js/signature", "KeyLocator")
   @js.native
-  class KeyLocator () extends js.Object {
+  class KeyLocator () extends StObject {
     def this(kl: KeyLocator) = this()
     
     def clear(): Unit = js.native
@@ -48,33 +50,36 @@ object signatureMod extends js.Object {
   }
   
   @js.native
-  sealed trait KeyLocatorType extends js.Object
+  sealed trait KeyLocatorType extends StObject
+  @JSImport("ndn-js/signature", "KeyLocatorType")
   @js.native
-  object KeyLocatorType extends js.Object {
+  object KeyLocatorType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[KeyLocatorType with Double] = js.native
     
     @js.native
     sealed trait KEYNAME extends KeyLocatorType
-    /* 1 */ @js.native
-    object KEYNAME extends TopLevel[KEYNAME with Double]
+    /* 1 */ val KEYNAME: typings.ndnJs.signatureMod.KeyLocatorType.KEYNAME with Double = js.native
     
     @js.native
     sealed trait KEY_LOCATOR_DIGEST extends KeyLocatorType
-    /* 2 */ @js.native
-    object KEY_LOCATOR_DIGEST extends TopLevel[KEY_LOCATOR_DIGEST with Double]
+    /* 2 */ val KEY_LOCATOR_DIGEST: typings.ndnJs.signatureMod.KeyLocatorType.KEY_LOCATOR_DIGEST with Double = js.native
   }
   
+  @JSImport("ndn-js/signature", "Sha256WithEcdsaSignature")
   @js.native
   class Sha256WithEcdsaSignature () extends SignatureBaseKlVp[Sha256WithEcdsaSignature]
   
+  @JSImport("ndn-js/signature", "Sha256WithRsaSignature")
   @js.native
   class Sha256WithRsaSignature () extends SignatureBaseKlVp[Sha256WithRsaSignature]
   
+  @JSImport("ndn-js/signature", "Signature")
   @js.native
-  abstract class Signature () extends js.Object
+  abstract class Signature () extends StObject
   
+  @JSImport("ndn-js/signature", "SignatureBase")
   @js.native
   class SignatureBase[T /* <: Signature */] () extends Signature {
     
@@ -83,6 +88,7 @@ object signatureMod extends js.Object {
     def setSignature(sigValue: Blob): Unit = js.native
   }
   
+  @JSImport("ndn-js/signature", "SignatureBaseKl")
   @js.native
   class SignatureBaseKl[T /* <: Signature */] () extends SignatureBase[T] {
     
@@ -92,6 +98,7 @@ object signatureMod extends js.Object {
     def setKeyLocator(kl: KeyLocator): Unit = js.native
   }
   
+  @JSImport("ndn-js/signature", "SignatureBaseKlVp")
   @js.native
   class SignatureBaseKlVp[T /* <: Signature */] () extends SignatureBaseKl[T] {
     
@@ -101,8 +108,9 @@ object signatureMod extends js.Object {
     def setValidityPeriod(validity: ValidityPeriod): Unit = js.native
   }
   
+  @JSImport("ndn-js/signature", "ValidityPeriod")
   @js.native
-  class ValidityPeriod () extends js.Object {
+  class ValidityPeriod () extends StObject {
     def this(validity: ValidityPeriod) = this()
     def this(notBefore: Double, notAfter: Double) = this()
     

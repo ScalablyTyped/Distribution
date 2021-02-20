@@ -1,5 +1,6 @@
 package typings.officeJsPreview.OfficeExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * indicate that all of the font properties are loaded.
   */
 @js.native
-trait LoadOption extends js.Object {
+trait LoadOption extends StObject {
   
   /**
     * A comma-delimited string, or array of strings, that specifies the navigation properties to load.
@@ -59,48 +60,36 @@ object LoadOption {
   }
   
   @scala.inline
-  implicit class LoadOptionOps[Self <: LoadOption] (val x: Self) extends AnyVal {
+  implicit class LoadOptionMutableBuilder[Self <: LoadOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpand(value: String | js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
     
     @scala.inline
-    def setExpandVarargs(value: String*): Self = this.set("expand", js.Array(value :_*))
+    def setSelect(value: String | js.Array[String]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: String | js.Array[String]): Self = this.set("expand", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value :_*))
     
     @scala.inline
-    def setSelectVarargs(value: String*): Self = this.set("select", js.Array(value :_*))
+    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: String | js.Array[String]): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip(value: Double): Self = this.set("skip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
-    
-    @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

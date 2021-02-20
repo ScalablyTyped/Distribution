@@ -1,11 +1,12 @@
 package typings.antdMobile.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtraProps extends js.Object {
+trait ExtraProps extends StObject {
   
   var extraProps: RenderBodyComponent = js.native
   
@@ -20,24 +21,12 @@ object ExtraProps {
   }
   
   @scala.inline
-  implicit class ExtraPropsOps[Self <: ExtraProps] (val x: Self) extends AnyVal {
+  implicit class ExtraPropsMutableBuilder[Self <: ExtraProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtraProps(value: RenderBodyComponent): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtraProps(value: RenderBodyComponent): Self = this.set("extraProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestProps(value: ClassName): Self = this.set("restProps", value.asInstanceOf[js.Any])
+    def setRestProps(value: ClassName): Self = StObject.set(x, "restProps", value.asInstanceOf[js.Any])
   }
 }

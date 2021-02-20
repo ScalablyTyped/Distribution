@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,42 +48,30 @@ object CatchEvent {
   }
   
   @scala.inline
-  implicit class CatchEventOps[Self <: CatchEvent] (val x: Self) extends AnyVal {
+  implicit class CatchEventMutableBuilder[Self <: CatchEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataOutputAssociations(value: js.Array[DataOutputAssociation]): Self = StObject.set(x, "dataOutputAssociations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataOutputAssociationsVarargs(value: DataOutputAssociation*): Self = StObject.set(x, "dataOutputAssociations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataOutputs(value: js.Array[DataOutput]): Self = StObject.set(x, "dataOutputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataOutputAssociationsVarargs(value: DataOutputAssociation*): Self = this.set("dataOutputAssociations", js.Array(value :_*))
+    def setDataOutputsVarargs(value: DataOutput*): Self = StObject.set(x, "dataOutputs", js.Array(value :_*))
     
     @scala.inline
-    def setDataOutputAssociations(value: js.Array[DataOutputAssociation]): Self = this.set("dataOutputAssociations", value.asInstanceOf[js.Any])
+    def setEventDefinitions(value: js.Array[EventDefinition]): Self = StObject.set(x, "eventDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataOutputsVarargs(value: DataOutput*): Self = this.set("dataOutputs", js.Array(value :_*))
+    def setEventDefinitionsVarargs(value: EventDefinition*): Self = StObject.set(x, "eventDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setDataOutputs(value: js.Array[DataOutput]): Self = this.set("dataOutputs", value.asInstanceOf[js.Any])
+    def setOutputSet(value: OutputSet): Self = StObject.set(x, "outputSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventDefinitionsVarargs(value: EventDefinition*): Self = this.set("eventDefinitions", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventDefinitions(value: js.Array[EventDefinition]): Self = this.set("eventDefinitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputSet(value: OutputSet): Self = this.set("outputSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParallelMultiple(value: Boolean): Self = this.set("parallelMultiple", value.asInstanceOf[js.Any])
+    def setParallelMultiple(value: Boolean): Self = StObject.set(x, "parallelMultiple", value.asInstanceOf[js.Any])
   }
 }

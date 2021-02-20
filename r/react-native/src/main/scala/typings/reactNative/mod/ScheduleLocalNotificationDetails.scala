@@ -6,12 +6,13 @@ import typings.reactNative.reactNativeStrings.minute
 import typings.reactNative.reactNativeStrings.month
 import typings.reactNative.reactNativeStrings.week
 import typings.reactNative.reactNativeStrings.year
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleLocalNotificationDetails extends js.Object {
+trait ScheduleLocalNotificationDetails extends StObject {
   
   var alertAction: js.UndefOr[String] = js.native
   
@@ -42,78 +43,66 @@ object ScheduleLocalNotificationDetails {
   }
   
   @scala.inline
-  implicit class ScheduleLocalNotificationDetailsOps[Self <: ScheduleLocalNotificationDetails] (val x: Self) extends AnyVal {
+  implicit class ScheduleLocalNotificationDetailsMutableBuilder[Self <: ScheduleLocalNotificationDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertAction(value: String): Self = StObject.set(x, "alertAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertActionUndefined: Self = StObject.set(x, "alertAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlertBody(value: String): Self = StObject.set(x, "alertBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertAction(value: String): Self = this.set("alertAction", value.asInstanceOf[js.Any])
+    def setAlertBodyUndefined: Self = StObject.set(x, "alertBody", js.undefined)
     
     @scala.inline
-    def deleteAlertAction: Self = this.set("alertAction", js.undefined)
+    def setAlertTitle(value: String): Self = StObject.set(x, "alertTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertBody(value: String): Self = this.set("alertBody", value.asInstanceOf[js.Any])
+    def setAlertTitleUndefined: Self = StObject.set(x, "alertTitle", js.undefined)
     
     @scala.inline
-    def deleteAlertBody: Self = this.set("alertBody", js.undefined)
+    def setApplicationIconBadgeNumber(value: Double): Self = StObject.set(x, "applicationIconBadgeNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertTitle(value: String): Self = this.set("alertTitle", value.asInstanceOf[js.Any])
+    def setApplicationIconBadgeNumberUndefined: Self = StObject.set(x, "applicationIconBadgeNumber", js.undefined)
     
     @scala.inline
-    def deleteAlertTitle: Self = this.set("alertTitle", js.undefined)
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationIconBadgeNumber(value: Double): Self = this.set("applicationIconBadgeNumber", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def deleteApplicationIconBadgeNumber: Self = this.set("applicationIconBadgeNumber", js.undefined)
+    def setFireDate(value: Double | String): Self = StObject.set(x, "fireDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setFireDateUndefined: Self = StObject.set(x, "fireDate", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setIsSilent(value: Boolean): Self = StObject.set(x, "isSilent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFireDate(value: Double | String): Self = this.set("fireDate", value.asInstanceOf[js.Any])
+    def setIsSilentUndefined: Self = StObject.set(x, "isSilent", js.undefined)
     
     @scala.inline
-    def deleteFireDate: Self = this.set("fireDate", js.undefined)
+    def setRepeatInterval(value: year | month | week | day | hour | minute): Self = StObject.set(x, "repeatInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSilent(value: Boolean): Self = this.set("isSilent", value.asInstanceOf[js.Any])
+    def setRepeatIntervalUndefined: Self = StObject.set(x, "repeatInterval", js.undefined)
     
     @scala.inline
-    def deleteIsSilent: Self = this.set("isSilent", js.undefined)
+    def setSoundName(value: String): Self = StObject.set(x, "soundName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatInterval(value: year | month | week | day | hour | minute): Self = this.set("repeatInterval", value.asInstanceOf[js.Any])
+    def setSoundNameUndefined: Self = StObject.set(x, "soundName", js.undefined)
     
     @scala.inline
-    def deleteRepeatInterval: Self = this.set("repeatInterval", js.undefined)
+    def setUserInfo(value: js.Object): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoundName(value: String): Self = this.set("soundName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoundName: Self = this.set("soundName", js.undefined)
-    
-    @scala.inline
-    def setUserInfo(value: js.Object): Self = this.set("userInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInfo: Self = this.set("userInfo", js.undefined)
+    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
   }
 }

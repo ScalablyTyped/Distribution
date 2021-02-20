@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.GizmoAxisCache
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,7 @@ class Gizmo ()
   gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.Gizmo")
-@js.native
-object Gizmo extends js.Object {
+object Gizmo {
   
   /**
     * Subscribes to pointer up, down, and hover events. Used for responsive gizmos.
@@ -28,6 +27,8 @@ object Gizmo extends js.Object {
     * @param gizmoAxisCache Gizmo axis definition used for reactive gizmo UI
     * @returns {Observer<PointerInfo>} pointerObserver
     */
+  @JSGlobal("BABYLON.Gizmo.GizmoAxisPointerObserver")
+  @js.native
   def GizmoAxisPointerObserver(
     gizmoLayer: typings.babylonjs.BABYLON.UtilityLayerRenderer,
     gizmoAxisCache: Map[typings.babylonjs.BABYLON.Mesh, GizmoAxisCache]

@@ -1,5 +1,6 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,54 +59,42 @@ object RelatedItem {
   }
   
   @scala.inline
-  implicit class RelatedItemOps[Self <: RelatedItem] (val x: Self) extends AnyVal {
+  implicit class RelatedItemMutableBuilder[Self <: RelatedItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_iconUrl(value: () => String): Self = StObject.set(x, "get_iconUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_itemId(value: () => Double): Self = StObject.set(x, "get_itemId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_listId(value: () => String): Self = StObject.set(x, "get_listId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_iconUrl(value: () => String): Self = this.set("get_iconUrl", js.Any.fromFunction0(value))
+    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_itemId(value: () => Double): Self = this.set("get_itemId", js.Any.fromFunction0(value))
+    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_listId(value: () => String): Self = this.set("get_listId", js.Any.fromFunction0(value))
+    def setGet_webId(value: () => String): Self = StObject.set(x, "get_webId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_title(value: () => String): Self = this.set("get_title", js.Any.fromFunction0(value))
+    def setSet_iconUrl(value: String => Unit): Self = StObject.set(x, "set_iconUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_url(value: () => String): Self = this.set("get_url", js.Any.fromFunction0(value))
+    def setSet_itemId(value: Double => Unit): Self = StObject.set(x, "set_itemId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_webId(value: () => String): Self = this.set("get_webId", js.Any.fromFunction0(value))
+    def setSet_listId(value: String => Unit): Self = StObject.set(x, "set_listId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_iconUrl(value: String => Unit): Self = this.set("set_iconUrl", js.Any.fromFunction1(value))
+    def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_itemId(value: Double => Unit): Self = this.set("set_itemId", js.Any.fromFunction1(value))
+    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_listId(value: String => Unit): Self = this.set("set_listId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_title(value: String => Unit): Self = this.set("set_title", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = this.set("set_url", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_webId(value: String => Unit): Self = this.set("set_webId", js.Any.fromFunction1(value))
+    def setSet_webId(value: String => Unit): Self = StObject.set(x, "set_webId", js.Any.fromFunction1(value))
   }
 }

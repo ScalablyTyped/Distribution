@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CampaignFlight extends js.Object {
+trait CampaignFlight extends StObject {
   
   /**
     * Required. The dates that the campaign is expected to run. They are resolved relative to the parent advertiser's time zone. * The dates specified here will not affect serving. They
@@ -30,30 +31,18 @@ object CampaignFlight {
   }
   
   @scala.inline
-  implicit class CampaignFlightOps[Self <: CampaignFlight] (val x: Self) extends AnyVal {
+  implicit class CampaignFlightMutableBuilder[Self <: CampaignFlight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlannedDates(value: DateRange): Self = StObject.set(x, "plannedDates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlannedDatesUndefined: Self = StObject.set(x, "plannedDates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlannedSpendAmountMicros(value: String): Self = StObject.set(x, "plannedSpendAmountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlannedDates(value: DateRange): Self = this.set("plannedDates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlannedDates: Self = this.set("plannedDates", js.undefined)
-    
-    @scala.inline
-    def setPlannedSpendAmountMicros(value: String): Self = this.set("plannedSpendAmountMicros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlannedSpendAmountMicros: Self = this.set("plannedSpendAmountMicros", js.undefined)
+    def setPlannedSpendAmountMicrosUndefined: Self = StObject.set(x, "plannedSpendAmountMicros", js.undefined)
   }
 }

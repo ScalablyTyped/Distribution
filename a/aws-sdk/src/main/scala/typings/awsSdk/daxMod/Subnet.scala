@@ -1,11 +1,12 @@
 package typings.awsSdk.daxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Subnet extends js.Object {
+trait Subnet extends StObject {
   
   /**
     * The Availability Zone (AZ) for the subnet.
@@ -26,30 +27,18 @@ object Subnet {
   }
   
   @scala.inline
-  implicit class SubnetOps[Self <: Subnet] (val x: Self) extends AnyVal {
+  implicit class SubnetMutableBuilder[Self <: Subnet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubnetAvailabilityZone(value: String): Self = StObject.set(x, "SubnetAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubnetAvailabilityZoneUndefined: Self = StObject.set(x, "SubnetAvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubnetIdentifier(value: String): Self = StObject.set(x, "SubnetIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetAvailabilityZone(value: String): Self = this.set("SubnetAvailabilityZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetAvailabilityZone: Self = this.set("SubnetAvailabilityZone", js.undefined)
-    
-    @scala.inline
-    def setSubnetIdentifier(value: String): Self = this.set("SubnetIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetIdentifier: Self = this.set("SubnetIdentifier", js.undefined)
+    def setSubnetIdentifierUndefined: Self = StObject.set(x, "SubnetIdentifier", js.undefined)
   }
 }

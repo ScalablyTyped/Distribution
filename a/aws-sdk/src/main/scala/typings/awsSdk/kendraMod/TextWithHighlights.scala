@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextWithHighlights extends js.Object {
+trait TextWithHighlights extends StObject {
   
   /**
     * The beginning and end of the text that should be highlighted.
@@ -26,33 +27,21 @@ object TextWithHighlights {
   }
   
   @scala.inline
-  implicit class TextWithHighlightsOps[Self <: TextWithHighlights] (val x: Self) extends AnyVal {
+  implicit class TextWithHighlightsMutableBuilder[Self <: TextWithHighlights] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlights(value: HighlightList): Self = StObject.set(x, "Highlights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightsUndefined: Self = StObject.set(x, "Highlights", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlightsVarargs(value: Highlight*): Self = StObject.set(x, "Highlights", js.Array(value :_*))
     
     @scala.inline
-    def setHighlightsVarargs(value: Highlight*): Self = this.set("Highlights", js.Array(value :_*))
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlights(value: HighlightList): Self = this.set("Highlights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighlights: Self = this.set("Highlights", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("Text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
   }
 }

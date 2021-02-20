@@ -1,14 +1,14 @@
 package typings.forkTsCheckerWebpackPlugin
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fork-ts-checker-webpack-plugin/lib/error/OperationCanceledError", JSImport.Namespace)
-@js.native
-object operationCanceledErrorMod extends js.Object {
+object operationCanceledErrorMod {
   
+  @JSImport("fork-ts-checker-webpack-plugin/lib/error/OperationCanceledError", "OperationCanceledError")
   @js.native
   class OperationCanceledError () extends Error {
     

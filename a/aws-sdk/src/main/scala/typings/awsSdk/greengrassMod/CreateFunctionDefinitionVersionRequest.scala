@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFunctionDefinitionVersionRequest extends js.Object {
+trait CreateFunctionDefinitionVersionRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
@@ -36,42 +37,30 @@ object CreateFunctionDefinitionVersionRequest {
   }
   
   @scala.inline
-  implicit class CreateFunctionDefinitionVersionRequestOps[Self <: CreateFunctionDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateFunctionDefinitionVersionRequestMutableBuilder[Self <: CreateFunctionDefinitionVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultConfig(value: FunctionDefaultConfig): Self = StObject.set(x, "DefaultConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionDefinitionId(value: string): Self = this.set("FunctionDefinitionId", value.asInstanceOf[js.Any])
+    def setDefaultConfigUndefined: Self = StObject.set(x, "DefaultConfig", js.undefined)
     
     @scala.inline
-    def setAmznClientToken(value: string): Self = this.set("AmznClientToken", value.asInstanceOf[js.Any])
+    def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmznClientToken: Self = this.set("AmznClientToken", js.undefined)
+    def setFunctions(value: listOfFunction): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultConfig(value: FunctionDefaultConfig): Self = this.set("DefaultConfig", value.asInstanceOf[js.Any])
+    def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
     
     @scala.inline
-    def deleteDefaultConfig: Self = this.set("DefaultConfig", js.undefined)
-    
-    @scala.inline
-    def setFunctionsVarargs(value: Function*): Self = this.set("Functions", js.Array(value :_*))
-    
-    @scala.inline
-    def setFunctions(value: listOfFunction): Self = this.set("Functions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFunctions: Self = this.set("Functions", js.undefined)
+    def setFunctionsVarargs(value: Function*): Self = StObject.set(x, "Functions", js.Array(value :_*))
   }
 }

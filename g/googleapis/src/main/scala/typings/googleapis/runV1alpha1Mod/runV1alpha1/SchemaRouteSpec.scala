@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * RouteSpec holds the desired state of the Route (from the client).
   */
 @js.native
-trait SchemaRouteSpec extends js.Object {
+trait SchemaRouteSpec extends StObject {
   
   /**
     * Deprecated and not currently populated by Cloud Run. See
@@ -33,33 +34,21 @@ object SchemaRouteSpec {
   }
   
   @scala.inline
-  implicit class SchemaRouteSpecOps[Self <: SchemaRouteSpec] (val x: Self) extends AnyVal {
+  implicit class SchemaRouteSpecMutableBuilder[Self <: SchemaRouteSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTraffic(value: js.Array[SchemaTrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneration(value: Double): Self = this.set("generation", value.asInstanceOf[js.Any])
+    def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
     
     @scala.inline
-    def deleteGeneration: Self = this.set("generation", js.undefined)
-    
-    @scala.inline
-    def setTrafficVarargs(value: SchemaTrafficTarget*): Self = this.set("traffic", js.Array(value :_*))
-    
-    @scala.inline
-    def setTraffic(value: js.Array[SchemaTrafficTarget]): Self = this.set("traffic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraffic: Self = this.set("traffic", js.undefined)
+    def setTrafficVarargs(value: SchemaTrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
   }
 }

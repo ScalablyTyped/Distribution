@@ -1,12 +1,11 @@
 package typings.openui5.sap.ui.model
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.type")
-@js.native
-object `type` extends js.Object {
+object `type` {
   
   @js.native
   trait Boolean extends SimpleType

@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHighlightLayerOptions extends js.Object {
+trait IHighlightLayerOptions extends StObject {
   
   /**
     * Alpha blending mode used to apply the blur. Default is combine.
@@ -70,54 +71,42 @@ object IHighlightLayerOptions {
   }
   
   @scala.inline
-  implicit class IHighlightLayerOptionsOps[Self <: IHighlightLayerOptions] (val x: Self) extends AnyVal {
+  implicit class IHighlightLayerOptionsMutableBuilder[Self <: IHighlightLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlurHorizontalSize(value: Double): Self = StObject.set(x, "blurHorizontalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlurTextureSizeRatio(value: Double): Self = StObject.set(x, "blurTextureSizeRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaBlendingMode(value: Double): Self = this.set("alphaBlendingMode", value.asInstanceOf[js.Any])
+    def setBlurVerticalSize(value: Double): Self = StObject.set(x, "blurVerticalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurHorizontalSize(value: Double): Self = this.set("blurHorizontalSize", value.asInstanceOf[js.Any])
+    def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurTextureSizeRatio(value: Double): Self = this.set("blurTextureSizeRatio", value.asInstanceOf[js.Any])
+    def setCameraNull: Self = StObject.set(x, "camera", null)
     
     @scala.inline
-    def setBlurVerticalSize(value: Double): Self = this.set("blurVerticalSize", value.asInstanceOf[js.Any])
+    def setIsStroke(value: Boolean): Self = StObject.set(x, "isStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainTextureRatio(value: Double): Self = this.set("mainTextureRatio", value.asInstanceOf[js.Any])
+    def setIsStrokeUndefined: Self = StObject.set(x, "isStroke", js.undefined)
     
     @scala.inline
-    def setRenderingGroupId(value: Double): Self = this.set("renderingGroupId", value.asInstanceOf[js.Any])
+    def setMainTextureFixedSize(value: Double): Self = StObject.set(x, "mainTextureFixedSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera(value: Nullable[Camera]): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setMainTextureFixedSizeUndefined: Self = StObject.set(x, "mainTextureFixedSize", js.undefined)
     
     @scala.inline
-    def setCameraNull: Self = this.set("camera", null)
+    def setMainTextureRatio(value: Double): Self = StObject.set(x, "mainTextureRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStroke(value: Boolean): Self = this.set("isStroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsStroke: Self = this.set("isStroke", js.undefined)
-    
-    @scala.inline
-    def setMainTextureFixedSize(value: Double): Self = this.set("mainTextureFixedSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMainTextureFixedSize: Self = this.set("mainTextureFixedSize", js.undefined)
+    def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
   }
 }

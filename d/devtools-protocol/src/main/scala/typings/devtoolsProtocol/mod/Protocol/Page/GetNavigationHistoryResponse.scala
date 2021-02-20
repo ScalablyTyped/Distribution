@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetNavigationHistoryResponse extends js.Object {
+trait GetNavigationHistoryResponse extends StObject {
   
   /**
     * Index of the current navigation history entry.
@@ -27,27 +28,15 @@ object GetNavigationHistoryResponse {
   }
   
   @scala.inline
-  implicit class GetNavigationHistoryResponseOps[Self <: GetNavigationHistoryResponse] (val x: Self) extends AnyVal {
+  implicit class GetNavigationHistoryResponseMutableBuilder[Self <: GetNavigationHistoryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentIndex(value: integer): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntries(value: js.Array[NavigationEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentIndex(value: integer): Self = this.set("currentIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntriesVarargs(value: NavigationEntry*): Self = this.set("entries", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntries(value: js.Array[NavigationEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    def setEntriesVarargs(value: NavigationEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

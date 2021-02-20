@@ -3,6 +3,7 @@ package typings.prettier.mod
 import typings.prettier.anon.`0`
 import typings.prettier.prettierBooleans.`true`
 import typings.prettier.prettierStrings.path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,9 @@ trait PathArraySupportOption
   extends BaseSupportOption[path]
      with _SupportOption {
   
-  var array: `true` = js.native
-  
   var default: js.Array[`0`] = js.native
+  
+  var array: `true` = js.native
 }
 object PathArraySupportOption {
   
@@ -26,27 +27,15 @@ object PathArraySupportOption {
   }
   
   @scala.inline
-  implicit class PathArraySupportOptionOps[Self <: PathArraySupportOption] (val x: Self) extends AnyVal {
+  implicit class PathArraySupportOptionMutableBuilder[Self <: PathArraySupportOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: `true`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefault(value: js.Array[`0`]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArray(value: `true`): Self = this.set("array", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultVarargs(value: `0`*): Self = this.set("default", js.Array(value :_*))
-    
-    @scala.inline
-    def setDefault(value: js.Array[`0`]): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setDefaultVarargs(value: `0`*): Self = StObject.set(x, "default", js.Array(value :_*))
   }
 }

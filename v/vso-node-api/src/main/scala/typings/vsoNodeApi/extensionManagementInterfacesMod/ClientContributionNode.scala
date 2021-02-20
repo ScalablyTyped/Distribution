@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientContributionNode extends js.Object {
+trait ClientContributionNode extends StObject {
   
   /**
     * List of ids for contributions which are children to the current contribution.
@@ -31,33 +32,21 @@ object ClientContributionNode {
   }
   
   @scala.inline
-  implicit class ClientContributionNodeOps[Self <: ClientContributionNode] (val x: Self) extends AnyVal {
+  implicit class ClientContributionNodeMutableBuilder[Self <: ClientContributionNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContribution(value: ClientContribution): Self = StObject.set(x, "contribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: String*): Self = this.set("children", js.Array(value :_*))
+    def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[String]): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContribution(value: ClientContribution): Self = this.set("contribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentsVarargs(value: String*): Self = this.set("parents", js.Array(value :_*))
-    
-    @scala.inline
-    def setParents(value: js.Array[String]): Self = this.set("parents", value.asInstanceOf[js.Any])
+    def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
   }
 }

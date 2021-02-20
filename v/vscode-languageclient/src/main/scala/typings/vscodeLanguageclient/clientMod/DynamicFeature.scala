@@ -3,12 +3,13 @@ package typings.vscodeLanguageclient.clientMod
 import typings.vscodeLanguageserverProtocol.protocolMod.ClientCapabilities
 import typings.vscodeLanguageserverProtocol.protocolMod.InitializeParams
 import typings.vscodeLanguageserverProtocol.protocolMod.ServerCapabilities
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamicFeature[RO] extends js.Object {
+trait DynamicFeature[RO] extends StObject {
   
   /**
     * Called when the client is stopped to dispose this feature. Usually a feature

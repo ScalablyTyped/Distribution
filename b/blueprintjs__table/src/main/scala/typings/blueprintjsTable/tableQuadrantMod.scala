@@ -1,6 +1,5 @@
 package typings.blueprintjsTable
 
-import org.scalablytyped.runtime.TopLevel
 import typings.blueprintjsCore.mod.AbstractComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsTable.anon.PartialITableQuadrantProp
@@ -13,13 +12,74 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrant", JSImport.Namespace)
-@js.native
-object tableQuadrantMod extends js.Object {
+object tableQuadrantMod {
+  
+  @js.native
+  sealed trait QuadrantType extends StObject
+  @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrant", "QuadrantType")
+  @js.native
+  object QuadrantType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[QuadrantType with String] = js.native
+    
+    /**
+      * The left quadrant, containing row headers and frozen columns.
+      */
+    @js.native
+    sealed trait LEFT extends QuadrantType
+    /* "left" */ val LEFT: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.LEFT with String = js.native
+    
+    /**
+      * The main quadrant beneath any frozen rows or columns.
+      */
+    @js.native
+    sealed trait MAIN extends QuadrantType
+    /* "main" */ val MAIN: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.MAIN with String = js.native
+    
+    /**
+      * The top quadrant, containing column headers and frozen rows.
+      */
+    @js.native
+    sealed trait TOP extends QuadrantType
+    /* "top" */ val TOP: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.TOP with String = js.native
+    
+    /**
+      * The top-left quadrant, containing the headers and cells common to both
+      * the frozen columns and frozen rows.
+      */
+    @js.native
+    sealed trait TOP_LEFT extends QuadrantType
+    /* "top-left" */ val TOP_LEFT: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.TOP_LEFT with String = js.native
+  }
+  
+  @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrant", "TableQuadrant")
+  @js.native
+  class TableQuadrant protected ()
+    extends AbstractComponent2[ITableQuadrantProps, js.Object, js.Object] {
+    def this(props: ITableQuadrantProps) = this()
+    def this(props: ITableQuadrantProps, context: js.Any) = this()
+    
+    var getQuadrantCssClass: js.Any = js.native
+  }
+  /* static members */
+  object TableQuadrant {
+    
+    @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrant", "TableQuadrant")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrant", "TableQuadrant.defaultProps")
+    @js.native
+    def defaultProps: PartialITableQuadrantProp = js.native
+    @scala.inline
+    def defaultProps_=(x: PartialITableQuadrantProp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait ITableQuadrantProps extends IProps {
@@ -115,60 +175,5 @@ object tableQuadrantMod extends js.Object {
       * CSS styles to apply to the quadrant's outermost element.
       */
     var style: js.UndefOr[CSSProperties] = js.native
-  }
-  
-  @js.native
-  sealed trait QuadrantType extends js.Object
-  @js.native
-  object QuadrantType extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[QuadrantType with String] = js.native
-    
-    /**
-      * The left quadrant, containing row headers and frozen columns.
-      */
-    @js.native
-    sealed trait LEFT extends QuadrantType
-    /* "left" */ @js.native
-    object LEFT extends TopLevel[LEFT with String]
-    
-    /**
-      * The main quadrant beneath any frozen rows or columns.
-      */
-    @js.native
-    sealed trait MAIN extends QuadrantType
-    /* "main" */ @js.native
-    object MAIN extends TopLevel[MAIN with String]
-    
-    /**
-      * The top quadrant, containing column headers and frozen rows.
-      */
-    @js.native
-    sealed trait TOP extends QuadrantType
-    /* "top" */ @js.native
-    object TOP extends TopLevel[TOP with String]
-    
-    /**
-      * The top-left quadrant, containing the headers and cells common to both
-      * the frozen columns and frozen rows.
-      */
-    @js.native
-    sealed trait TOP_LEFT extends QuadrantType
-    /* "top-left" */ @js.native
-    object TOP_LEFT extends TopLevel[TOP_LEFT with String]
-  }
-  
-  @js.native
-  class TableQuadrant ()
-    extends AbstractComponent2[ITableQuadrantProps, js.Object, js.Object] {
-    
-    var getQuadrantCssClass: js.Any = js.native
-  }
-  /* static members */
-  @js.native
-  object TableQuadrant extends js.Object {
-    
-    var defaultProps: PartialITableQuadrantProp = js.native
   }
 }

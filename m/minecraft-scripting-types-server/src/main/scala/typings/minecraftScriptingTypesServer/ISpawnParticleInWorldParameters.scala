@@ -2,6 +2,7 @@ package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.ParticleEffect
 import typings.minecraftScriptingTypesShared.VectorArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is used to create a static particle effect in the world. This particle effect is visible to all players. Any effect defined in a JSON file (both in your resource pack and in Minecraft) can be used here. Once the effect is spawned you won't be able to control it further.
   */
 @js.native
-trait ISpawnParticleInWorldParameters extends js.Object {
+trait ISpawnParticleInWorldParameters extends StObject {
   
   /**
     * The dimension in which you want to spawn the effect. Can be "overworld", "nether", or "the end"
@@ -38,27 +39,15 @@ object ISpawnParticleInWorldParameters {
   }
   
   @scala.inline
-  implicit class ISpawnParticleInWorldParametersOps[Self <: ISpawnParticleInWorldParameters] (val x: Self) extends AnyVal {
+  implicit class ISpawnParticleInWorldParametersMutableBuilder[Self <: ISpawnParticleInWorldParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffect(value: ParticleEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDimension(value: String): Self = this.set("dimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEffect(value: ParticleEffect): Self = this.set("effect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: VectorArray): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: VectorArray): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

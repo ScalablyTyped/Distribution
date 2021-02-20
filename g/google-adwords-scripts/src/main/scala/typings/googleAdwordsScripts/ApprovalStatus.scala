@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PORN
   - typings.googleAdwordsScripts.googleAdwordsScriptsStrings.UNCHECKED
 */
-trait ApprovalStatus extends js.Object
+trait ApprovalStatus extends StObject
 object ApprovalStatus {
   
   @scala.inline

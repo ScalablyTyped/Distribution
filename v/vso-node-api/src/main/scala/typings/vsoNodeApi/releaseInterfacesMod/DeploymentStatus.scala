@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeploymentStatus extends js.Object
+sealed trait DeploymentStatus extends StObject
 @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "DeploymentStatus")
 @js.native
-object DeploymentStatus extends js.Object {
+object DeploymentStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeploymentStatus with Double] = js.native
@@ -19,54 +19,47 @@ object DeploymentStatus extends js.Object {
     */
   @js.native
   sealed trait All extends DeploymentStatus
-  /* 31 */ @js.native
-  object All extends TopLevel[All with Double]
+  /* 31 */ val All: typings.vsoNodeApi.releaseInterfacesMod.DeploymentStatus.All with Double = js.native
   
   /**
     * The deployment status is failed.
     */
   @js.native
   sealed trait Failed extends DeploymentStatus
-  /* 16 */ @js.native
-  object Failed extends TopLevel[Failed with Double]
+  /* 16 */ val Failed: typings.vsoNodeApi.releaseInterfacesMod.DeploymentStatus.Failed with Double = js.native
   
   /**
     * The deployment status is inprogress.
     */
   @js.native
   sealed trait InProgress extends DeploymentStatus
-  /* 2 */ @js.native
-  object InProgress extends TopLevel[InProgress with Double]
+  /* 2 */ val InProgress: typings.vsoNodeApi.releaseInterfacesMod.DeploymentStatus.InProgress with Double = js.native
   
   /**
     * The deployment status is not deployed.
     */
   @js.native
   sealed trait NotDeployed extends DeploymentStatus
-  /* 1 */ @js.native
-  object NotDeployed extends TopLevel[NotDeployed with Double]
+  /* 1 */ val NotDeployed: typings.vsoNodeApi.releaseInterfacesMod.DeploymentStatus.NotDeployed with Double = js.native
   
   /**
     * The deployment status is partiallysucceeded.
     */
   @js.native
   sealed trait PartiallySucceeded extends DeploymentStatus
-  /* 8 */ @js.native
-  object PartiallySucceeded extends TopLevel[PartiallySucceeded with Double]
+  /* 8 */ val PartiallySucceeded: typings.vsoNodeApi.releaseInterfacesMod.DeploymentStatus.PartiallySucceeded with Double = js.native
   
   /**
     * The deployment status is succeeded.
     */
   @js.native
   sealed trait Succeeded extends DeploymentStatus
-  /* 4 */ @js.native
-  object Succeeded extends TopLevel[Succeeded with Double]
+  /* 4 */ val Succeeded: typings.vsoNodeApi.releaseInterfacesMod.DeploymentStatus.Succeeded with Double = js.native
   
   /**
     * The deployment status is undefined.
     */
   @js.native
   sealed trait Undefined extends DeploymentStatus
-  /* 0 */ @js.native
-  object Undefined extends TopLevel[Undefined with Double]
+  /* 0 */ val Undefined: typings.vsoNodeApi.releaseInterfacesMod.DeploymentStatus.Undefined with Double = js.native
 }

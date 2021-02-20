@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelAccArrowNextPage extends js.Object {
+trait LabelAccArrowNextPage extends StObject {
   
   var labelAccArrowNextPage: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object LabelAccArrowNextPage {
   }
   
   @scala.inline
-  implicit class LabelAccArrowNextPageOps[Self <: LabelAccArrowNextPage] (val x: Self) extends AnyVal {
+  implicit class LabelAccArrowNextPageMutableBuilder[Self <: LabelAccArrowNextPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelAccArrowNextPage(value: String): Self = StObject.set(x, "labelAccArrowNextPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelAccArrowNextPageUndefined: Self = StObject.set(x, "labelAccArrowNextPage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelAccArrowPreviousPage(value: String): Self = StObject.set(x, "labelAccArrowPreviousPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAccArrowNextPage(value: String): Self = this.set("labelAccArrowNextPage", value.asInstanceOf[js.Any])
+    def setLabelAccArrowPreviousPageUndefined: Self = StObject.set(x, "labelAccArrowPreviousPage", js.undefined)
     
     @scala.inline
-    def deleteLabelAccArrowNextPage: Self = this.set("labelAccArrowNextPage", js.undefined)
+    def setLabelAccFilmStrip(value: String): Self = StObject.set(x, "labelAccFilmStrip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAccArrowPreviousPage(value: String): Self = this.set("labelAccArrowPreviousPage", value.asInstanceOf[js.Any])
+    def setLabelAccFilmStripUndefined: Self = StObject.set(x, "labelAccFilmStrip", js.undefined)
     
     @scala.inline
-    def deleteLabelAccArrowPreviousPage: Self = this.set("labelAccArrowPreviousPage", js.undefined)
+    def setTipArrowNextPage(value: String): Self = StObject.set(x, "tipArrowNextPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAccFilmStrip(value: String): Self = this.set("labelAccFilmStrip", value.asInstanceOf[js.Any])
+    def setTipArrowNextPageUndefined: Self = StObject.set(x, "tipArrowNextPage", js.undefined)
     
     @scala.inline
-    def deleteLabelAccFilmStrip: Self = this.set("labelAccFilmStrip", js.undefined)
+    def setTipArrowPreviousPage(value: String): Self = StObject.set(x, "tipArrowPreviousPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTipArrowNextPage(value: String): Self = this.set("tipArrowNextPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTipArrowNextPage: Self = this.set("tipArrowNextPage", js.undefined)
-    
-    @scala.inline
-    def setTipArrowPreviousPage(value: String): Self = this.set("tipArrowPreviousPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTipArrowPreviousPage: Self = this.set("tipArrowPreviousPage", js.undefined)
+    def setTipArrowPreviousPageUndefined: Self = StObject.set(x, "tipArrowPreviousPage", js.undefined)
   }
 }

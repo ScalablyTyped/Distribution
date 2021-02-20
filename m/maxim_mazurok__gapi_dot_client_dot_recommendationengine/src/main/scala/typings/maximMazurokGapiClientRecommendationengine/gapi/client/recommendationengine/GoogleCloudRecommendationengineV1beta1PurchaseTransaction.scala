@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1PurchaseTransaction extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1PurchaseTransaction extends StObject {
   
   /**
     * Optional. All the costs associated with the product. These can be manufacturing costs, shipping expenses not borne by the end user, or any other costs. Total product cost such that
@@ -47,56 +48,44 @@ object GoogleCloudRecommendationengineV1beta1PurchaseTransaction {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PurchaseTransactionOps[Self <: GoogleCloudRecommendationengineV1beta1PurchaseTransaction] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class GoogleCloudRecommendationengineV1beta1PurchaseTransactionMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PurchaseTransaction] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction with TopLevel[js.Any]
-    ): Self = this.set("costs", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "costs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCosts: Self = this.set("costs", js.undefined)
+    def setCostsUndefined: Self = StObject.set(x, "costs", js.undefined)
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setRevenue(value: Double): Self = this.set("revenue", value.asInstanceOf[js.Any])
+    def setRevenue(value: Double): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRevenue: Self = this.set("revenue", js.undefined)
+    def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
     
     @scala.inline
     def setTaxes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction with TopLevel[js.Any]
-    ): Self = this.set("taxes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTaxes: Self = this.set("taxes", js.undefined)
+    def setTaxesUndefined: Self = StObject.set(x, "taxes", js.undefined)
   }
 }

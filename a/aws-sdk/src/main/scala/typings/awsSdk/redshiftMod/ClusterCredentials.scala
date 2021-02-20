@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterCredentials extends js.Object {
+trait ClusterCredentials extends StObject {
   
   /**
     * A temporary password that authorizes the user name returned by DbUser to log on to the database DbName. 
@@ -31,36 +32,24 @@ object ClusterCredentials {
   }
   
   @scala.inline
-  implicit class ClusterCredentialsOps[Self <: ClusterCredentials] (val x: Self) extends AnyVal {
+  implicit class ClusterCredentialsMutableBuilder[Self <: ClusterCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDbPassword(value: SensitiveString): Self = StObject.set(x, "DbPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDbPasswordUndefined: Self = StObject.set(x, "DbPassword", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbPassword(value: SensitiveString): Self = this.set("DbPassword", value.asInstanceOf[js.Any])
+    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
     @scala.inline
-    def deleteDbPassword: Self = this.set("DbPassword", js.undefined)
+    def setExpiration(value: TStamp): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbUser(value: String): Self = this.set("DbUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDbUser: Self = this.set("DbUser", js.undefined)
-    
-    @scala.inline
-    def setExpiration(value: TStamp): Self = this.set("Expiration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiration: Self = this.set("Expiration", js.undefined)
+    def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
   }
 }

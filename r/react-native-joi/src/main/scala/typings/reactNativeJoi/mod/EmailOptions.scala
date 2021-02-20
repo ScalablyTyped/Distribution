@@ -1,11 +1,12 @@
 package typings.reactNativeJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailOptions extends js.Object {
+trait EmailOptions extends StObject {
   
   /**
     * Numerical threshold at which an email address is considered invalid
@@ -31,39 +32,27 @@ object EmailOptions {
   }
   
   @scala.inline
-  implicit class EmailOptionsOps[Self <: EmailOptions] (val x: Self) extends AnyVal {
+  implicit class EmailOptionsMutableBuilder[Self <: EmailOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorLevel(value: Double | Boolean): Self = StObject.set(x, "errorLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorLevelUndefined: Self = StObject.set(x, "errorLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinDomainAtoms(value: Double): Self = StObject.set(x, "minDomainAtoms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorLevel(value: Double | Boolean): Self = this.set("errorLevel", value.asInstanceOf[js.Any])
+    def setMinDomainAtomsUndefined: Self = StObject.set(x, "minDomainAtoms", js.undefined)
     
     @scala.inline
-    def deleteErrorLevel: Self = this.set("errorLevel", js.undefined)
+    def setTldWhitelist(value: js.Array[String] | js.Object): Self = StObject.set(x, "tldWhitelist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDomainAtoms(value: Double): Self = this.set("minDomainAtoms", value.asInstanceOf[js.Any])
+    def setTldWhitelistUndefined: Self = StObject.set(x, "tldWhitelist", js.undefined)
     
     @scala.inline
-    def deleteMinDomainAtoms: Self = this.set("minDomainAtoms", js.undefined)
-    
-    @scala.inline
-    def setTldWhitelistVarargs(value: String*): Self = this.set("tldWhitelist", js.Array(value :_*))
-    
-    @scala.inline
-    def setTldWhitelist(value: js.Array[String] | js.Object): Self = this.set("tldWhitelist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTldWhitelist: Self = this.set("tldWhitelist", js.undefined)
+    def setTldWhitelistVarargs(value: String*): Self = StObject.set(x, "tldWhitelist", js.Array(value :_*))
   }
 }

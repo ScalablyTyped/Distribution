@@ -1,5 +1,6 @@
 package typings.jupyterlabServices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@jupyterlab/services", JSImport.Namespace)
 @js.native
-object jupyterlabServicesRequire extends js.Object
+object jupyterlabServicesRequire extends StObject

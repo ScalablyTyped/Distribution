@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationCodeConfigurationUpdate extends js.Object {
+trait ApplicationCodeConfigurationUpdate extends StObject {
   
   /**
     * Describes updates to the code content type.
@@ -26,30 +27,18 @@ object ApplicationCodeConfigurationUpdate {
   }
   
   @scala.inline
-  implicit class ApplicationCodeConfigurationUpdateOps[Self <: ApplicationCodeConfigurationUpdate] (val x: Self) extends AnyVal {
+  implicit class ApplicationCodeConfigurationUpdateMutableBuilder[Self <: ApplicationCodeConfigurationUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeContentTypeUpdate(value: CodeContentType): Self = StObject.set(x, "CodeContentTypeUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeContentTypeUpdateUndefined: Self = StObject.set(x, "CodeContentTypeUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeContentUpdate(value: CodeContentUpdate): Self = StObject.set(x, "CodeContentUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeContentTypeUpdate(value: CodeContentType): Self = this.set("CodeContentTypeUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeContentTypeUpdate: Self = this.set("CodeContentTypeUpdate", js.undefined)
-    
-    @scala.inline
-    def setCodeContentUpdate(value: CodeContentUpdate): Self = this.set("CodeContentUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeContentUpdate: Self = this.set("CodeContentUpdate", js.undefined)
+    def setCodeContentUpdateUndefined: Self = StObject.set(x, "CodeContentUpdate", js.undefined)
   }
 }

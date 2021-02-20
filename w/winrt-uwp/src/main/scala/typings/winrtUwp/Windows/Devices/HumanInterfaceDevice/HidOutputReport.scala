@@ -1,20 +1,22 @@
 package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an output report. */
 @js.native
-trait HidOutputReport extends js.Object {
+trait HidOutputReport extends StObject {
   
   /** Retrieves, or sets, the data associated with a given output report. */
   var data: IBuffer = js.native
   
   var getBooleanControl: js.Any = js.native
   
-   /* unmapped type */ /**
+  /* unmapped type */
+  /**
     * Retrieves the boolean control associated with the given controlDescription.
     * @param controlDescription Describes the Boolean control.
     * @return A HidBooleanControl object.
@@ -23,7 +25,8 @@ trait HidOutputReport extends js.Object {
   
   var getNumericControl: js.Any = js.native
   
-   /* unmapped type */ /**
+  /* unmapped type */
+  /**
     * Retrieves the numeric control associated with the given controlDescription.
     * @param controlDescription Describes the numeric control.
     * @return A HidNumericControl object.
@@ -49,36 +52,24 @@ object HidOutputReport {
   }
   
   @scala.inline
-  implicit class HidOutputReportOps[Self <: HidOutputReport] (val x: Self) extends AnyVal {
+  implicit class HidOutputReportMutableBuilder[Self <: HidOutputReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBooleanControl(value: js.Any): Self = StObject.set(x, "getBooleanControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBooleanControlByDescription(value: HidBooleanControlDescription => HidBooleanControl): Self = StObject.set(x, "getBooleanControlByDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setData(value: IBuffer): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGetNumericControl(value: js.Any): Self = StObject.set(x, "getNumericControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetBooleanControl(value: js.Any): Self = this.set("getBooleanControl", value.asInstanceOf[js.Any])
+    def setGetNumericControlByDescription(value: HidNumericControlDescription => HidNumericControl): Self = StObject.set(x, "getNumericControlByDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBooleanControlByDescription(value: HidBooleanControlDescription => HidBooleanControl): Self = this.set("getBooleanControlByDescription", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetNumericControl(value: js.Any): Self = this.set("getNumericControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetNumericControlByDescription(value: HidNumericControlDescription => HidNumericControl): Self = this.set("getNumericControlByDescription", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

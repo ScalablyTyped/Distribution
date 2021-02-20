@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRdsDbSubnetGroup extends js.Object {
+trait AwsRdsDbSubnetGroup extends StObject {
   
   /**
     * The ARN of the subnet group.
@@ -46,57 +47,45 @@ object AwsRdsDbSubnetGroup {
   }
   
   @scala.inline
-  implicit class AwsRdsDbSubnetGroupOps[Self <: AwsRdsDbSubnetGroup] (val x: Self) extends AnyVal {
+  implicit class AwsRdsDbSubnetGroupMutableBuilder[Self <: AwsRdsDbSubnetGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDbSubnetGroupArn(value: NonEmptyString): Self = StObject.set(x, "DbSubnetGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDbSubnetGroupArnUndefined: Self = StObject.set(x, "DbSubnetGroupArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDbSubnetGroupDescription(value: NonEmptyString): Self = StObject.set(x, "DbSubnetGroupDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbSubnetGroupArn(value: NonEmptyString): Self = this.set("DbSubnetGroupArn", value.asInstanceOf[js.Any])
+    def setDbSubnetGroupDescriptionUndefined: Self = StObject.set(x, "DbSubnetGroupDescription", js.undefined)
     
     @scala.inline
-    def deleteDbSubnetGroupArn: Self = this.set("DbSubnetGroupArn", js.undefined)
+    def setDbSubnetGroupName(value: NonEmptyString): Self = StObject.set(x, "DbSubnetGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbSubnetGroupDescription(value: NonEmptyString): Self = this.set("DbSubnetGroupDescription", value.asInstanceOf[js.Any])
+    def setDbSubnetGroupNameUndefined: Self = StObject.set(x, "DbSubnetGroupName", js.undefined)
     
     @scala.inline
-    def deleteDbSubnetGroupDescription: Self = this.set("DbSubnetGroupDescription", js.undefined)
+    def setSubnetGroupStatus(value: NonEmptyString): Self = StObject.set(x, "SubnetGroupStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbSubnetGroupName(value: NonEmptyString): Self = this.set("DbSubnetGroupName", value.asInstanceOf[js.Any])
+    def setSubnetGroupStatusUndefined: Self = StObject.set(x, "SubnetGroupStatus", js.undefined)
     
     @scala.inline
-    def deleteDbSubnetGroupName: Self = this.set("DbSubnetGroupName", js.undefined)
+    def setSubnets(value: AwsRdsDbSubnetGroupSubnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetGroupStatus(value: NonEmptyString): Self = this.set("SubnetGroupStatus", value.asInstanceOf[js.Any])
+    def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
     @scala.inline
-    def deleteSubnetGroupStatus: Self = this.set("SubnetGroupStatus", js.undefined)
+    def setSubnetsVarargs(value: AwsRdsDbSubnetGroupSubnet*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetsVarargs(value: AwsRdsDbSubnetGroupSubnet*): Self = this.set("Subnets", js.Array(value :_*))
+    def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnets(value: AwsRdsDbSubnetGroupSubnets): Self = this.set("Subnets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnets: Self = this.set("Subnets", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: NonEmptyString): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

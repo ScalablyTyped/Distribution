@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Poi extends js.Object {
+trait Poi extends StObject {
   
   var adcode: String = js.native
   
@@ -78,78 +79,66 @@ object Poi {
   }
   
   @scala.inline
-  implicit class PoiOps[Self <: Poi] (val x: Self) extends AnyVal {
+  implicit class PoiMutableBuilder[Self <: Poi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdname(value: String): Self = StObject.set(x, "adname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdcode(value: String): Self = this.set("adcode", value.asInstanceOf[js.Any])
+    def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setCityname(value: String): Self = StObject.set(x, "cityname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdname(value: String): Self = this.set("adname", value.asInstanceOf[js.Any])
+    def setDiscount(value: Boolean): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCitycode(value: String): Self = this.set("citycode", value.asInstanceOf[js.Any])
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCityname(value: String): Self = this.set("cityname", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscount(value: Boolean): Self = this.set("discount", value.asInstanceOf[js.Any])
+    def setEntr_location(value: LngLat): Self = StObject.set(x, "entr_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setExit_location(value: LngLat): Self = StObject.set(x, "exit_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setGroupbuy(value: Boolean): Self = StObject.set(x, "groupbuy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntr_location(value: LngLat): Self = this.set("entr_location", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExit_location(value: LngLat): Self = this.set("exit_location", value.asInstanceOf[js.Any])
+    def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupbuy(value: Boolean): Self = this.set("groupbuy", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPcode(value: String): Self = StObject.set(x, "pcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: LngLat): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcode(value: String): Self = this.set("pcode", value.asInstanceOf[js.Any])
+    def setTel(value: String): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPname(value: String): Self = this.set("pname", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostcode(value: String): Self = this.set("postcode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTel(value: String): Self = this.set("tel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
+    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
   }
 }

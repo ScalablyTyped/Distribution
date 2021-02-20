@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IIPInformation extends js.Object {
+trait IIPInformation extends StObject {
   
   var networkAdapter: NetworkAdapter = js.native
   
@@ -20,24 +21,12 @@ object IIPInformation {
   }
   
   @scala.inline
-  implicit class IIPInformationOps[Self <: IIPInformation] (val x: Self) extends AnyVal {
+  implicit class IIPInformationMutableBuilder[Self <: IIPInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkAdapter(value: NetworkAdapter): Self = StObject.set(x, "networkAdapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNetworkAdapter(value: NetworkAdapter): Self = this.set("networkAdapter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefixLength(value: Double): Self = this.set("prefixLength", value.asInstanceOf[js.Any])
+    def setPrefixLength(value: Double): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
   }
 }

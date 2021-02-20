@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describe a container image
   */
 @js.native
-trait ContainerImage extends js.Object {
+trait ContainerImage extends StObject {
   
   /**
     * Names by which this image is known. e.g. ["k8s.gcr.io/hyperkube:v1.0.7", "dockerhub.io/google_containers/hyperkube:v1.0.7"]
@@ -30,30 +31,18 @@ object ContainerImage {
   }
   
   @scala.inline
-  implicit class ContainerImageOps[Self <: ContainerImage] (val x: Self) extends AnyVal {
+  implicit class ContainerImageMutableBuilder[Self <: ContainerImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamesVarargs(value: Input[String]*): Self = StObject.set(x, "names", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeBytes(value: Input[Double]): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamesVarargs(value: Input[String]*): Self = this.set("names", js.Array(value :_*))
-    
-    @scala.inline
-    def setNames(value: Input[js.Array[Input[String]]]): Self = this.set("names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizeBytes(value: Input[Double]): Self = this.set("sizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeBytes: Self = this.set("sizeBytes", js.undefined)
+    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
   }
 }

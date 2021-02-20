@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivateCertificateAuthorityRequest extends js.Object {
+trait ActivateCertificateAuthorityRequest extends StObject {
   
   /** Required. The signed CA certificate issued from FetchCertificateAuthorityCsrResponse.pem_csr. */
   var pemCaCertificate: js.UndefOr[String] = js.native
@@ -31,36 +32,24 @@ object ActivateCertificateAuthorityRequest {
   }
   
   @scala.inline
-  implicit class ActivateCertificateAuthorityRequestOps[Self <: ActivateCertificateAuthorityRequest] (val x: Self) extends AnyVal {
+  implicit class ActivateCertificateAuthorityRequestMutableBuilder[Self <: ActivateCertificateAuthorityRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPemCaCertificate(value: String): Self = StObject.set(x, "pemCaCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPemCaCertificateUndefined: Self = StObject.set(x, "pemCaCertificate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPemCaCertificate(value: String): Self = this.set("pemCaCertificate", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
     @scala.inline
-    def deletePemCaCertificate: Self = this.set("pemCaCertificate", js.undefined)
+    def setSubordinateConfig(value: SubordinateConfig): Self = StObject.set(x, "subordinateConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
-    
-    @scala.inline
-    def setSubordinateConfig(value: SubordinateConfig): Self = this.set("subordinateConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubordinateConfig: Self = this.set("subordinateConfig", js.undefined)
+    def setSubordinateConfigUndefined: Self = StObject.set(x, "subordinateConfig", js.undefined)
   }
 }

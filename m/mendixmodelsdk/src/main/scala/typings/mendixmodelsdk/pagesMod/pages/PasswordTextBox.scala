@@ -10,6 +10,7 @@ import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayout
 import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgument
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,16 +32,20 @@ class PasswordTextBox protected () extends LoginTextBox {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox")
-@js.native
-object PasswordTextBox extends js.Object {
+object PasswordTextBox {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.create")
+  @js.native
   def create(model: IModel): PasswordTextBox = js.native
   
   /**
@@ -51,6 +56,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInBuildingBlockUnderWidget")
+  @js.native
   def createInBuildingBlockUnderWidget(container: BuildingBlock): PasswordTextBox = js.native
   
   /**
@@ -61,6 +69,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInBuildingBlockUnderWidgets")
+  @js.native
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): PasswordTextBox = js.native
   
   /**
@@ -71,6 +82,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInDataViewUnderFooterWidget")
+  @js.native
   def createInDataViewUnderFooterWidget(container: DataView): PasswordTextBox = js.native
   
   /**
@@ -81,6 +95,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInDataViewUnderFooterWidgets")
+  @js.native
   def createInDataViewUnderFooterWidgets(container: DataView): PasswordTextBox = js.native
   
   /**
@@ -91,6 +108,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInDataViewUnderWidget")
+  @js.native
   def createInDataViewUnderWidget(container: DataView): PasswordTextBox = js.native
   
   /**
@@ -101,6 +121,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInDataViewUnderWidgets")
+  @js.native
   def createInDataViewUnderWidgets(container: DataView): PasswordTextBox = js.native
   
   /**
@@ -111,6 +134,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInDivContainerUnderWidget")
+  @js.native
   def createInDivContainerUnderWidget(container: DivContainer): PasswordTextBox = js.native
   
   /**
@@ -121,6 +147,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInDivContainerUnderWidgets")
+  @js.native
   def createInDivContainerUnderWidgets(container: DivContainer): PasswordTextBox = js.native
   
   /**
@@ -131,6 +160,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInGroupBoxUnderWidget")
+  @js.native
   def createInGroupBoxUnderWidget(container: GroupBox): PasswordTextBox = js.native
   
   /**
@@ -141,6 +173,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInGroupBoxUnderWidgets")
+  @js.native
   def createInGroupBoxUnderWidgets(container: GroupBox): PasswordTextBox = js.native
   
   /**
@@ -151,6 +186,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInHeaderUnderLeftWidget")
+  @js.native
   def createInHeaderUnderLeftWidget(container: Header): PasswordTextBox = js.native
   
   /**
@@ -161,6 +199,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInHeaderUnderLeftWidgets")
+  @js.native
   def createInHeaderUnderLeftWidgets(container: Header): PasswordTextBox = js.native
   
   /**
@@ -171,6 +212,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInHeaderUnderRightWidget")
+  @js.native
   def createInHeaderUnderRightWidget(container: Header): PasswordTextBox = js.native
   
   /**
@@ -181,6 +225,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInHeaderUnderRightWidgets")
+  @js.native
   def createInHeaderUnderRightWidgets(container: Header): PasswordTextBox = js.native
   
   /**
@@ -191,6 +238,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInLayoutCallArgumentUnderWidget")
+  @js.native
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): PasswordTextBox = js.native
   
   /**
@@ -201,6 +251,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): PasswordTextBox = js.native
   
   /**
@@ -211,6 +264,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInLayoutGridColumnUnderWidget")
+  @js.native
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): PasswordTextBox = js.native
   
   /**
@@ -221,6 +277,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInLayoutGridColumnUnderWidgets")
+  @js.native
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): PasswordTextBox = js.native
   
   /**
@@ -231,6 +290,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInLayoutUnderWidget")
+  @js.native
   def createInLayoutUnderWidget(container: Layout): PasswordTextBox = js.native
   
   /**
@@ -241,6 +303,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInLayoutUnderWidgets")
+  @js.native
   def createInLayoutUnderWidgets(container: Layout): PasswordTextBox = js.native
   
   /**
@@ -251,6 +316,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInListViewTemplateUnderWidget")
+  @js.native
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): PasswordTextBox = js.native
   
   /**
@@ -261,6 +329,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInListViewTemplateUnderWidgets")
+  @js.native
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): PasswordTextBox = js.native
   
   /**
@@ -271,6 +342,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInListViewUnderWidget")
+  @js.native
   def createInListViewUnderWidget(container: ListView): PasswordTextBox = js.native
   
   /**
@@ -281,6 +355,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInListViewUnderWidgets")
+  @js.native
   def createInListViewUnderWidgets(container: ListView): PasswordTextBox = js.native
   
   /**
@@ -291,6 +368,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.1.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInMasterDetailRegionUnderWidget")
+  @js.native
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): PasswordTextBox = js.native
   
   /**
@@ -301,6 +381,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.23.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInNativeLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): PasswordTextBox = js.native
   
   /**
@@ -311,6 +394,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInNativeLayoutContentUnderSidebarWidgets")
+  @js.native
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): PasswordTextBox = js.native
   
   /**
@@ -321,6 +407,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInNativeLayoutContentUnderWidgets")
+  @js.native
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): PasswordTextBox = js.native
   
   /**
@@ -331,6 +420,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.22.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInNativeLayoutUnderHeaderWidget")
+  @js.native
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): PasswordTextBox = js.native
   
   /**
@@ -341,6 +433,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInNativeLayoutUnderWidgets")
+  @js.native
   def createInNativeLayoutUnderWidgets(container: NativeLayout): PasswordTextBox = js.native
   
   /**
@@ -351,6 +446,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInNavigationListItemUnderWidget")
+  @js.native
   def createInNavigationListItemUnderWidget(container: NavigationListItem): PasswordTextBox = js.native
   
   /**
@@ -361,6 +459,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInNavigationListItemUnderWidgets")
+  @js.native
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): PasswordTextBox = js.native
   
   /**
@@ -371,6 +472,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInScrollContainerRegionUnderWidget")
+  @js.native
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): PasswordTextBox = js.native
   
   /**
@@ -381,6 +485,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInScrollContainerRegionUnderWidgets")
+  @js.native
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): PasswordTextBox = js.native
   
   /**
@@ -391,6 +498,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInSnippetUnderWidget")
+  @js.native
   def createInSnippetUnderWidget(container: Snippet): PasswordTextBox = js.native
   
   /**
@@ -401,6 +511,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInSnippetUnderWidgets")
+  @js.native
   def createInSnippetUnderWidgets(container: Snippet): PasswordTextBox = js.native
   
   /**
@@ -411,6 +524,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInSplitPaneUnderFirstWidget")
+  @js.native
   def createInSplitPaneUnderFirstWidget(container: SplitPane): PasswordTextBox = js.native
   
   /**
@@ -421,6 +537,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInSplitPaneUnderFirstWidgets")
+  @js.native
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): PasswordTextBox = js.native
   
   /**
@@ -431,6 +550,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInSplitPaneUnderSecondWidget")
+  @js.native
   def createInSplitPaneUnderSecondWidget(container: SplitPane): PasswordTextBox = js.native
   
   /**
@@ -441,6 +563,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInSplitPaneUnderSecondWidgets")
+  @js.native
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): PasswordTextBox = js.native
   
   /**
@@ -451,6 +576,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInTabPageUnderWidget")
+  @js.native
   def createInTabPageUnderWidget(container: TabPage): PasswordTextBox = js.native
   
   /**
@@ -461,6 +589,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInTabPageUnderWidgets")
+  @js.native
   def createInTabPageUnderWidgets(container: TabPage): PasswordTextBox = js.native
   
   /**
@@ -471,6 +602,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInTableCellUnderWidget")
+  @js.native
   def createInTableCellUnderWidget(container: TableCell): PasswordTextBox = js.native
   
   /**
@@ -481,6 +615,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInTableCellUnderWidgets")
+  @js.native
   def createInTableCellUnderWidgets(container: TableCell): PasswordTextBox = js.native
   
   /**
@@ -491,6 +628,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInTemplateGridContentsUnderWidget")
+  @js.native
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): PasswordTextBox = js.native
   
   /**
@@ -501,6 +641,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInTemplateGridContentsUnderWidgets")
+  @js.native
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): PasswordTextBox = js.native
   
   /**
@@ -511,6 +654,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInVerticalFlowUnderWidgets")
+  @js.native
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): PasswordTextBox = js.native
   
   /**
@@ -521,6 +667,9 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInWebLayoutContentUnderWidgets")
+  @js.native
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): PasswordTextBox = js.native
   
   /**
@@ -531,9 +680,22 @@ object PasswordTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.2.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.createInWidgetValueUnderWidgets")
+  @js.native
   def createInWidgetValueUnderWidgets(container: WidgetValue): PasswordTextBox = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PasswordTextBox.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

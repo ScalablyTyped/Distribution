@@ -1,12 +1,13 @@
 package typings.clearbladejsServer.CbServer
 
 import typings.clearbladejsServer.anon.Request
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearBladeInt extends js.Object {
+trait ClearBladeInt extends StObject {
   
   def Code(): typings.clearbladejsServer.CbServer.Code = js.native
   

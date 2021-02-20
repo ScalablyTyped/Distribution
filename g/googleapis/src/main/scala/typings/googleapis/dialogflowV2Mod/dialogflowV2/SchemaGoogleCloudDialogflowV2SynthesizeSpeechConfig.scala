@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration of how speech should be synthesized.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig extends js.Object {
+trait SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig extends StObject {
   
   /**
     * Optional. An identifier which selects &#39;audio effects&#39; profiles
@@ -58,51 +59,39 @@ object SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfigOps[Self <: SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfigMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffectsProfileId(value: js.Array[String]): Self = StObject.set(x, "effectsProfileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectsProfileIdUndefined: Self = StObject.set(x, "effectsProfileId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffectsProfileIdVarargs(value: String*): Self = StObject.set(x, "effectsProfileId", js.Array(value :_*))
     
     @scala.inline
-    def setEffectsProfileIdVarargs(value: String*): Self = this.set("effectsProfileId", js.Array(value :_*))
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectsProfileId(value: js.Array[String]): Self = this.set("effectsProfileId", value.asInstanceOf[js.Any])
+    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
     @scala.inline
-    def deleteEffectsProfileId: Self = this.set("effectsProfileId", js.undefined)
+    def setSpeakingRate(value: Double): Self = StObject.set(x, "speakingRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    def setSpeakingRateUndefined: Self = StObject.set(x, "speakingRate", js.undefined)
     
     @scala.inline
-    def deletePitch: Self = this.set("pitch", js.undefined)
+    def setVoice(value: SchemaGoogleCloudDialogflowV2VoiceSelectionParams): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeakingRate(value: Double): Self = this.set("speakingRate", value.asInstanceOf[js.Any])
+    def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
     
     @scala.inline
-    def deleteSpeakingRate: Self = this.set("speakingRate", js.undefined)
+    def setVolumeGainDb(value: Double): Self = StObject.set(x, "volumeGainDb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoice(value: SchemaGoogleCloudDialogflowV2VoiceSelectionParams): Self = this.set("voice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoice: Self = this.set("voice", js.undefined)
-    
-    @scala.inline
-    def setVolumeGainDb(value: Double): Self = this.set("volumeGainDb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeGainDb: Self = this.set("volumeGainDb", js.undefined)
+    def setVolumeGainDbUndefined: Self = StObject.set(x, "volumeGainDb", js.undefined)
   }
 }

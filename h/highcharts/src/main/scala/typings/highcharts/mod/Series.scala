@@ -2,13 +2,14 @@ package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.highchartsStrings._empty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Series")
 @js.native
-class Series protected () extends js.Object {
+class Series protected () extends StObject {
   /**
     * This is the base series prototype that all other series types inherit
     * from. A new series is initialized either through the series option

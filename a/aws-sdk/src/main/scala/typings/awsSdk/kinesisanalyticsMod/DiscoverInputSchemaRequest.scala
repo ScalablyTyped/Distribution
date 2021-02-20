@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiscoverInputSchemaRequest extends js.Object {
+trait DiscoverInputSchemaRequest extends StObject {
   
   /**
     * The InputProcessingConfiguration to use to preprocess the records before discovering the schema of the records.
@@ -41,48 +42,36 @@ object DiscoverInputSchemaRequest {
   }
   
   @scala.inline
-  implicit class DiscoverInputSchemaRequestOps[Self <: DiscoverInputSchemaRequest] (val x: Self) extends AnyVal {
+  implicit class DiscoverInputSchemaRequestMutableBuilder[Self <: DiscoverInputSchemaRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = StObject.set(x, "InputProcessingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputProcessingConfigurationUndefined: Self = StObject.set(x, "InputProcessingConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputStartingPositionConfiguration(value: InputStartingPositionConfiguration): Self = StObject.set(x, "InputStartingPositionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputProcessingConfiguration(value: InputProcessingConfiguration): Self = this.set("InputProcessingConfiguration", value.asInstanceOf[js.Any])
+    def setInputStartingPositionConfigurationUndefined: Self = StObject.set(x, "InputStartingPositionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteInputProcessingConfiguration: Self = this.set("InputProcessingConfiguration", js.undefined)
+    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputStartingPositionConfiguration(value: InputStartingPositionConfiguration): Self = this.set("InputStartingPositionConfiguration", value.asInstanceOf[js.Any])
+    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
     
     @scala.inline
-    def deleteInputStartingPositionConfiguration: Self = this.set("InputStartingPositionConfiguration", js.undefined)
+    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceARN(value: ResourceARN): Self = this.set("ResourceARN", value.asInstanceOf[js.Any])
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
     @scala.inline
-    def deleteResourceARN: Self = this.set("ResourceARN", js.undefined)
+    def setS3Configuration(value: S3Configuration): Self = StObject.set(x, "S3Configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
-    
-    @scala.inline
-    def setS3Configuration(value: S3Configuration): Self = this.set("S3Configuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Configuration: Self = this.set("S3Configuration", js.undefined)
+    def setS3ConfigurationUndefined: Self = StObject.set(x, "S3Configuration", js.undefined)
   }
 }

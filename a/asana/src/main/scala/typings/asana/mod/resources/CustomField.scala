@@ -1,11 +1,13 @@
 package typings.asana.mod.resources
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomField extends Resource {
+trait CustomField
+  extends typings.asana.mod.resources.Resource {
   
   var enabled: Boolean = js.native
   

@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IKeyAlgorithmNamesStatics extends js.Object {
+trait IKeyAlgorithmNamesStatics extends StObject {
   
   var dsa: String = js.native
   
@@ -41,42 +42,30 @@ object IKeyAlgorithmNamesStatics {
   }
   
   @scala.inline
-  implicit class IKeyAlgorithmNamesStaticsOps[Self <: IKeyAlgorithmNamesStatics] (val x: Self) extends AnyVal {
+  implicit class IKeyAlgorithmNamesStaticsMutableBuilder[Self <: IKeyAlgorithmNamesStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDsa(value: String): Self = StObject.set(x, "dsa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEcdh256(value: String): Self = StObject.set(x, "ecdh256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEcdh384(value: String): Self = StObject.set(x, "ecdh384", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDsa(value: String): Self = this.set("dsa", value.asInstanceOf[js.Any])
+    def setEcdh521(value: String): Self = StObject.set(x, "ecdh521", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcdh256(value: String): Self = this.set("ecdh256", value.asInstanceOf[js.Any])
+    def setEcdsa256(value: String): Self = StObject.set(x, "ecdsa256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcdh384(value: String): Self = this.set("ecdh384", value.asInstanceOf[js.Any])
+    def setEcdsa384(value: String): Self = StObject.set(x, "ecdsa384", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcdh521(value: String): Self = this.set("ecdh521", value.asInstanceOf[js.Any])
+    def setEcdsa521(value: String): Self = StObject.set(x, "ecdsa521", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcdsa256(value: String): Self = this.set("ecdsa256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEcdsa384(value: String): Self = this.set("ecdsa384", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEcdsa521(value: String): Self = this.set("ecdsa521", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRsa(value: String): Self = this.set("rsa", value.asInstanceOf[js.Any])
+    def setRsa(value: String): Self = StObject.set(x, "rsa", value.asInstanceOf[js.Any])
   }
 }

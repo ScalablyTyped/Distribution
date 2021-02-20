@@ -1,12 +1,13 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Alert")
 @js.native
-class Alert protected () extends js.Object {
+class Alert protected () extends StObject {
   /**
     * @param {!WebDriver} driver The driver controlling the browser this alert
     *     is attached to.

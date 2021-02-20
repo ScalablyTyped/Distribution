@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDropdownMenuOptions extends js.Object {
+trait IDropdownMenuOptions extends StObject {
   
   var alignment: js.UndefOr[String] = js.native
   
@@ -36,78 +37,66 @@ object IDropdownMenuOptions {
   }
   
   @scala.inline
-  implicit class IDropdownMenuOptionsOps[Self <: IDropdownMenuOptions] (val x: Self) extends AnyVal {
+  implicit class IDropdownMenuOptionsMutableBuilder[Self <: IDropdownMenuOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setClickOpen(value: Boolean): Self = StObject.set(x, "clickOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoclose(value: Boolean): Self = this.set("autoclose", value.asInstanceOf[js.Any])
+    def setClickOpenUndefined: Self = StObject.set(x, "clickOpen", js.undefined)
     
     @scala.inline
-    def deleteAutoclose: Self = this.set("autoclose", js.undefined)
+    def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickOpen(value: Boolean): Self = this.set("clickOpen", value.asInstanceOf[js.Any])
+    def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
     
     @scala.inline
-    def deleteClickOpen: Self = this.set("clickOpen", js.undefined)
+    def setClosingTime(value: Double): Self = StObject.set(x, "closingTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnClick(value: Boolean): Self = this.set("closeOnClick", value.asInstanceOf[js.Any])
+    def setClosingTimeUndefined: Self = StObject.set(x, "closingTime", js.undefined)
     
     @scala.inline
-    def deleteCloseOnClick: Self = this.set("closeOnClick", js.undefined)
+    def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosingTime(value: Double): Self = this.set("closingTime", value.asInstanceOf[js.Any])
+    def setDisableHoverUndefined: Self = StObject.set(x, "disableHover", js.undefined)
     
     @scala.inline
-    def deleteClosingTime: Self = this.set("closingTime", js.undefined)
+    def setForceFollow(value: Boolean): Self = StObject.set(x, "forceFollow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableHover(value: Boolean): Self = this.set("disableHover", value.asInstanceOf[js.Any])
+    def setForceFollowUndefined: Self = StObject.set(x, "forceFollow", js.undefined)
     
     @scala.inline
-    def deleteDisableHover: Self = this.set("disableHover", js.undefined)
+    def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceFollow(value: Boolean): Self = this.set("forceFollow", value.asInstanceOf[js.Any])
+    def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
     
     @scala.inline
-    def deleteForceFollow: Self = this.set("forceFollow", js.undefined)
+    def setRightClass(value: String): Self = StObject.set(x, "rightClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverDelay(value: Double): Self = this.set("hoverDelay", value.asInstanceOf[js.Any])
+    def setRightClassUndefined: Self = StObject.set(x, "rightClass", js.undefined)
     
     @scala.inline
-    def deleteHoverDelay: Self = this.set("hoverDelay", js.undefined)
+    def setVerticalClass(value: String): Self = StObject.set(x, "verticalClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightClass(value: String): Self = this.set("rightClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightClass: Self = this.set("rightClass", js.undefined)
-    
-    @scala.inline
-    def setVerticalClass(value: String): Self = this.set("verticalClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalClass: Self = this.set("verticalClass", js.undefined)
+    def setVerticalClassUndefined: Self = StObject.set(x, "verticalClass", js.undefined)
   }
 }

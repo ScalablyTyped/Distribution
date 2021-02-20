@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildSummary extends js.Object {
+trait BuildSummary extends StObject {
   
   /**
     * The batch build ARN.
@@ -41,51 +42,39 @@ object BuildSummary {
   }
   
   @scala.inline
-  implicit class BuildSummaryOps[Self <: BuildSummary] (val x: Self) extends AnyVal {
+  implicit class BuildSummaryMutableBuilder[Self <: BuildSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildStatus(value: StatusType): Self = StObject.set(x, "buildStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setBuildStatusUndefined: Self = StObject.set(x, "buildStatus", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setPrimaryArtifact(value: ResolvedArtifact): Self = StObject.set(x, "primaryArtifact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildStatus(value: StatusType): Self = this.set("buildStatus", value.asInstanceOf[js.Any])
+    def setPrimaryArtifactUndefined: Self = StObject.set(x, "primaryArtifact", js.undefined)
     
     @scala.inline
-    def deleteBuildStatus: Self = this.set("buildStatus", js.undefined)
+    def setRequestedOn(value: Timestamp): Self = StObject.set(x, "requestedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryArtifact(value: ResolvedArtifact): Self = this.set("primaryArtifact", value.asInstanceOf[js.Any])
+    def setRequestedOnUndefined: Self = StObject.set(x, "requestedOn", js.undefined)
     
     @scala.inline
-    def deletePrimaryArtifact: Self = this.set("primaryArtifact", js.undefined)
+    def setSecondaryArtifacts(value: ResolvedSecondaryArtifacts): Self = StObject.set(x, "secondaryArtifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedOn(value: Timestamp): Self = this.set("requestedOn", value.asInstanceOf[js.Any])
+    def setSecondaryArtifactsUndefined: Self = StObject.set(x, "secondaryArtifacts", js.undefined)
     
     @scala.inline
-    def deleteRequestedOn: Self = this.set("requestedOn", js.undefined)
-    
-    @scala.inline
-    def setSecondaryArtifactsVarargs(value: ResolvedArtifact*): Self = this.set("secondaryArtifacts", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecondaryArtifacts(value: ResolvedSecondaryArtifacts): Self = this.set("secondaryArtifacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryArtifacts: Self = this.set("secondaryArtifacts", js.undefined)
+    def setSecondaryArtifactsVarargs(value: ResolvedArtifact*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value :_*))
   }
 }

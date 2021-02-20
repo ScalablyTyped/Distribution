@@ -1,12 +1,13 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "YearMonth")
 @js.native
-class YearMonth protected () extends TemporalAccessor {
+class YearMonth protected () extends Temporal {
   
   def atDay(dayOfMonth: Double): LocalDate = js.native
   
@@ -64,20 +65,37 @@ class YearMonth protected () extends TemporalAccessor {
   
   def year(): Double = js.native
 }
-/* static members */
-@JSImport("js-joda", "YearMonth")
-@js.native
-object YearMonth extends js.Object {
+object YearMonth {
   
+  /* static member */
+  @JSImport("js-joda", "YearMonth.from")
+  @js.native
   def from(temporal: TemporalAccessor): YearMonth = js.native
   
+  /* static member */
+  @JSImport("js-joda", "YearMonth.now")
+  @js.native
   def now(): YearMonth = js.native
+  @JSImport("js-joda", "YearMonth.now")
+  @js.native
   def now(zoneIdOrClock: Clock): YearMonth = js.native
+  @JSImport("js-joda", "YearMonth.now")
+  @js.native
   def now(zoneIdOrClock: ZoneId): YearMonth = js.native
   
+  @JSImport("js-joda", "YearMonth.of")
+  @js.native
   def of(year: Double, monthOrNumber: Double): YearMonth = js.native
+  /* static member */
+  @JSImport("js-joda", "YearMonth.of")
+  @js.native
   def of(year: Double, monthOrNumber: Month): YearMonth = js.native
   
+  /* static member */
+  @JSImport("js-joda", "YearMonth.parse")
+  @js.native
   def parse(text: String): YearMonth = js.native
+  @JSImport("js-joda", "YearMonth.parse")
+  @js.native
   def parse(text: String, formatter: DateTimeFormatter): YearMonth = js.native
 }

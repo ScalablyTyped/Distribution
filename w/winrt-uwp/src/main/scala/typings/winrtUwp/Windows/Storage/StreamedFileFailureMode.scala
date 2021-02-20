@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StreamedFileFailureMode extends js.Object
+sealed trait StreamedFileFailureMode extends StObject
 /** Indicates the reason that data could not be streamed. */
 @JSGlobal("Windows.Storage.StreamedFileFailureMode")
 @js.native
-object StreamedFileFailureMode extends js.Object {
+object StreamedFileFailureMode extends StObject {
   
   /** The data could not be accessed. */
   @js.native

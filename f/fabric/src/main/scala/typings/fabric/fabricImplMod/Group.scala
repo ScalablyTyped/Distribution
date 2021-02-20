@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -133,14 +134,14 @@ class Group ()
   var useSetOnGroup: js.UndefOr[Boolean] = js.native
 }
 /* static members */
-@JSImport("fabric/fabric-impl", "Group")
-@js.native
-object Group extends js.Object {
+object Group {
   
   /**
     * Returns {@link fabric.Group} instance from an object representation
     * @param object Object to create a group from
     * @param [callback] Callback to invoke when an group instance is created
     */
+  @JSImport("fabric/fabric-impl", "Group.fromObject")
+  @js.native
   def fromObject(`object`: js.Any, callback: js.Function1[/* group */ this.type, _]): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WMTSSublayerProperties extends js.Object {
+trait WMTSSublayerProperties extends StObject {
   
   /**
     * Description for the WMTS sublayer.
@@ -100,99 +101,87 @@ object WMTSSublayerProperties {
   }
   
   @scala.inline
-  implicit class WMTSSublayerPropertiesOps[Self <: WMTSSublayerProperties] (val x: Self) extends AnyVal {
+  implicit class WMTSSublayerPropertiesMutableBuilder[Self <: WMTSSublayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFullExtentUndefined: Self = StObject.set(x, "fullExtent", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullExtent(value: ExtentProperties): Self = this.set("fullExtent", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFullExtent: Self = this.set("fullExtent", js.undefined)
+    def setImageFormat(value: String): Self = StObject.set(x, "imageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImageFormatUndefined: Self = StObject.set(x, "imageFormat", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setImageFormats(value: js.Array[String]): Self = StObject.set(x, "imageFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageFormat(value: String): Self = this.set("imageFormat", value.asInstanceOf[js.Any])
+    def setImageFormatsUndefined: Self = StObject.set(x, "imageFormats", js.undefined)
     
     @scala.inline
-    def deleteImageFormat: Self = this.set("imageFormat", js.undefined)
+    def setImageFormatsVarargs(value: String*): Self = StObject.set(x, "imageFormats", js.Array(value :_*))
     
     @scala.inline
-    def setImageFormatsVarargs(value: String*): Self = this.set("imageFormats", js.Array(value :_*))
+    def setLayer(value: WMTSLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageFormats(value: js.Array[String]): Self = this.set("imageFormats", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteImageFormats: Self = this.set("imageFormats", js.undefined)
+    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: WMTSLayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setStyleIdUndefined: Self = StObject.set(x, "styleId", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setStyles(value: CollectionProperties[WMTSStyleProperties]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleId(value: String): Self = this.set("styleId", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteStyleId: Self = this.set("styleId", js.undefined)
+    def setStylesVarargs(value: WMTSStyleProperties*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def setStylesVarargs(value: WMTSStyleProperties*): Self = this.set("styles", js.Array(value :_*))
+    def setTileMatrixSet(value: TileMatrixSetProperties): Self = StObject.set(x, "tileMatrixSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: CollectionProperties[WMTSStyleProperties]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTileMatrixSetId(value: String): Self = StObject.set(x, "tileMatrixSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setTileMatrixSetIdUndefined: Self = StObject.set(x, "tileMatrixSetId", js.undefined)
     
     @scala.inline
-    def setTileMatrixSet(value: TileMatrixSetProperties): Self = this.set("tileMatrixSet", value.asInstanceOf[js.Any])
+    def setTileMatrixSetUndefined: Self = StObject.set(x, "tileMatrixSet", js.undefined)
     
     @scala.inline
-    def deleteTileMatrixSet: Self = this.set("tileMatrixSet", js.undefined)
+    def setTileMatrixSets(value: CollectionProperties[TileMatrixSetProperties]): Self = StObject.set(x, "tileMatrixSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileMatrixSetId(value: String): Self = this.set("tileMatrixSetId", value.asInstanceOf[js.Any])
+    def setTileMatrixSetsUndefined: Self = StObject.set(x, "tileMatrixSets", js.undefined)
     
     @scala.inline
-    def deleteTileMatrixSetId: Self = this.set("tileMatrixSetId", js.undefined)
+    def setTileMatrixSetsVarargs(value: TileMatrixSetProperties*): Self = StObject.set(x, "tileMatrixSets", js.Array(value :_*))
     
     @scala.inline
-    def setTileMatrixSetsVarargs(value: TileMatrixSetProperties*): Self = this.set("tileMatrixSets", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileMatrixSets(value: CollectionProperties[TileMatrixSetProperties]): Self = this.set("tileMatrixSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileMatrixSets: Self = this.set("tileMatrixSets", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

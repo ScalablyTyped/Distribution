@@ -1,11 +1,12 @@
 package typings.vscodeJsonrpc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgressParams[T] extends js.Object {
+trait ProgressParams[T] extends StObject {
   
   /**
     * The progress token provided by the client or server.
@@ -26,24 +27,12 @@ object ProgressParams {
   }
   
   @scala.inline
-  implicit class ProgressParamsOps[Self <: ProgressParams[_], T] (val x: Self with ProgressParams[T]) extends AnyVal {
+  implicit class ProgressParamsMutableBuilder[Self <: ProgressParams[_], T] (val x: Self with ProgressParams[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setToken(value: ProgressToken): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: T): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

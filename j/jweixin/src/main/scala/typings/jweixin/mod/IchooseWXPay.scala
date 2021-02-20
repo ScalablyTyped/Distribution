@@ -1,5 +1,6 @@
 package typings.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,20 +10,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IchooseWXPay extends BaseParams {
   
-   // 支付签名随机串，不长于 32 位
+  // 支付签名随机串，不长于 32 位
   @JSName("package")
   var _package: String = js.native
   
-   // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
+  // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
   var nonceStr: String = js.native
   
-   // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+  // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
   var paySign: String = js.native
   
-   // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
+  // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
   var signType: String = js.native
   
-   // 支付签名
+  // 支付签名
   // 支付成功后的回调函数
   @JSName("success")
   def success_MIchooseWXPay(res: js.Any): Unit = js.native
@@ -46,36 +47,24 @@ object IchooseWXPay {
   }
   
   @scala.inline
-  implicit class IchooseWXPayOps[Self <: IchooseWXPay] (val x: Self) extends AnyVal {
+  implicit class IchooseWXPayMutableBuilder[Self <: IchooseWXPay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_package(value: String): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNonceStr(value: String): Self = this.set("nonceStr", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaySign(value: String): Self = this.set("paySign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignType(value: String): Self = this.set("signType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: js.Any => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

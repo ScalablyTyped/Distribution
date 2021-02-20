@@ -2,6 +2,7 @@ package typings.xrm.XrmEnum
 
 import typings.xrm.xrmStrings.`false`
 import typings.xrm.xrmStrings.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.`true`
   - typings.xrm.xrmStrings.`false`
 */
-trait CmdBarDisplay extends js.Object
+trait CmdBarDisplay extends StObject
 object CmdBarDisplay {
   
   @scala.inline

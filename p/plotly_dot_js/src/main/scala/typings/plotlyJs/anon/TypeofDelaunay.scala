@@ -6,6 +6,7 @@ import typings.d3Delaunay.mod.Delaunay.GetCoordinate
 import typings.d3Delaunay.mod.Delaunay.Point
 import typings.std.ArrayLike
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

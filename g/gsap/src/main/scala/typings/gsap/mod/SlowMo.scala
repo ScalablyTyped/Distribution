@@ -1,5 +1,6 @@
 package typings.gsap.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class SlowMo ()
   extends typings.gsap.gsap.SlowMo
-/* static members */
-@JSImport("gsap", "SlowMo")
-@js.native
-object SlowMo extends js.Object {
+object SlowMo {
   
-  var ease: typings.gsap.gsap.SlowMo = js.native
+  @JSImport("gsap", "SlowMo")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("gsap", "SlowMo.ease")
+  @js.native
+  def ease: typings.gsap.gsap.SlowMo = js.native
+  @scala.inline
+  def ease_=(x: typings.gsap.gsap.SlowMo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ease")(x.asInstanceOf[js.Any])
 }

@@ -156,12 +156,13 @@ import typings.monacoEditor.monacoEditorStrings.top
 import typings.monacoEditor.monacoEditorStrings.trailing
 import typings.monacoEditor.monacoEditorStrings.tree
 import typings.monacoEditor.monacoEditorStrings.wordWrapColumn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorOptionsType extends js.Object {
+trait EditorOptionsType extends StObject {
   
   var acceptSuggestionOnCommitCharacter: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.acceptSuggestionOnCommitCharacter, 
@@ -608,377 +609,365 @@ object EditorOptionsType {
   }
   
   @scala.inline
-  implicit class EditorOptionsTypeOps[Self <: EditorOptionsType] (val x: Self) extends AnyVal {
+  implicit class EditorOptionsTypeMutableBuilder[Self <: EditorOptionsType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptSuggestionOnCommitCharacter(value: IEditorOption[acceptSuggestionOnCommitCharacter, Boolean]): Self = StObject.set(x, "acceptSuggestionOnCommitCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptSuggestionOnEnter(value: IEditorOption[acceptSuggestionOnEnter, on | off | smart]): Self = StObject.set(x, "acceptSuggestionOnEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibilityPageSize(value: IEditorOption[accessibilityPageSize, Double]): Self = StObject.set(x, "accessibilityPageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptSuggestionOnCommitCharacter(value: IEditorOption[acceptSuggestionOnCommitCharacter, Boolean]): Self = this.set("acceptSuggestionOnCommitCharacter", value.asInstanceOf[js.Any])
+    def setAccessibilitySupport(value: IEditorOption[accessibilitySupport, AccessibilitySupport]): Self = StObject.set(x, "accessibilitySupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptSuggestionOnEnter(value: IEditorOption[acceptSuggestionOnEnter, on | off | smart]): Self = this.set("acceptSuggestionOnEnter", value.asInstanceOf[js.Any])
+    def setAriaLabel(value: IEditorOption[ariaLabel, String]): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityPageSize(value: IEditorOption[accessibilityPageSize, Double]): Self = this.set("accessibilityPageSize", value.asInstanceOf[js.Any])
+    def setAutoClosingBrackets(value: IEditorOption[autoClosingBrackets, EditorAutoClosingStrategy]): Self = StObject.set(x, "autoClosingBrackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilitySupport(value: IEditorOption[accessibilitySupport, AccessibilitySupport]): Self = this.set("accessibilitySupport", value.asInstanceOf[js.Any])
+    def setAutoClosingOvertype(value: IEditorOption[autoClosingOvertype, EditorAutoClosingOvertypeStrategy]): Self = StObject.set(x, "autoClosingOvertype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaLabel(value: IEditorOption[ariaLabel, String]): Self = this.set("ariaLabel", value.asInstanceOf[js.Any])
+    def setAutoClosingQuotes(value: IEditorOption[autoClosingQuotes, EditorAutoClosingStrategy]): Self = StObject.set(x, "autoClosingQuotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoClosingBrackets(value: IEditorOption[autoClosingBrackets, EditorAutoClosingStrategy]): Self = this.set("autoClosingBrackets", value.asInstanceOf[js.Any])
+    def setAutoIndent(value: IEditorOption[autoIndent, EditorAutoIndentStrategy]): Self = StObject.set(x, "autoIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoClosingOvertype(value: IEditorOption[autoClosingOvertype, EditorAutoClosingOvertypeStrategy]): Self = this.set("autoClosingOvertype", value.asInstanceOf[js.Any])
+    def setAutoSurround(value: IEditorOption[autoSurround, EditorAutoSurroundStrategy]): Self = StObject.set(x, "autoSurround", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoClosingQuotes(value: IEditorOption[autoClosingQuotes, EditorAutoClosingStrategy]): Self = this.set("autoClosingQuotes", value.asInstanceOf[js.Any])
+    def setAutomaticLayout(value: IEditorOption[automaticLayout, Boolean]): Self = StObject.set(x, "automaticLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoIndent(value: IEditorOption[autoIndent, EditorAutoIndentStrategy]): Self = this.set("autoIndent", value.asInstanceOf[js.Any])
+    def setCodeLens(value: IEditorOption[codeLens, Boolean]): Self = StObject.set(x, "codeLens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSurround(value: IEditorOption[autoSurround, EditorAutoSurroundStrategy]): Self = this.set("autoSurround", value.asInstanceOf[js.Any])
+    def setColorDecorators(value: IEditorOption[colorDecorators, Boolean]): Self = StObject.set(x, "colorDecorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticLayout(value: IEditorOption[automaticLayout, Boolean]): Self = this.set("automaticLayout", value.asInstanceOf[js.Any])
+    def setColumnSelection(value: IEditorOption[columnSelection, Boolean]): Self = StObject.set(x, "columnSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeLens(value: IEditorOption[codeLens, Boolean]): Self = this.set("codeLens", value.asInstanceOf[js.Any])
+    def setComments(value: IEditorOption[comments, EditorCommentsOptions]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorDecorators(value: IEditorOption[colorDecorators, Boolean]): Self = this.set("colorDecorators", value.asInstanceOf[js.Any])
+    def setContextmenu(value: IEditorOption[contextmenu, Boolean]): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSelection(value: IEditorOption[columnSelection, Boolean]): Self = this.set("columnSelection", value.asInstanceOf[js.Any])
+    def setCopyWithSyntaxHighlighting(value: IEditorOption[copyWithSyntaxHighlighting, Boolean]): Self = StObject.set(x, "copyWithSyntaxHighlighting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: IEditorOption[comments, EditorCommentsOptions]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setCursorBlinking(value: IEditorOption[cursorBlinking, TextEditorCursorBlinkingStyle]): Self = StObject.set(x, "cursorBlinking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextmenu(value: IEditorOption[contextmenu, Boolean]): Self = this.set("contextmenu", value.asInstanceOf[js.Any])
+    def setCursorSmoothCaretAnimation(value: IEditorOption[cursorSmoothCaretAnimation, Boolean]): Self = StObject.set(x, "cursorSmoothCaretAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyWithSyntaxHighlighting(value: IEditorOption[copyWithSyntaxHighlighting, Boolean]): Self = this.set("copyWithSyntaxHighlighting", value.asInstanceOf[js.Any])
+    def setCursorStyle(value: IEditorOption[cursorStyle, TextEditorCursorStyle]): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorBlinking(value: IEditorOption[cursorBlinking, TextEditorCursorBlinkingStyle]): Self = this.set("cursorBlinking", value.asInstanceOf[js.Any])
+    def setCursorSurroundingLines(value: IEditorOption[cursorSurroundingLines, Double]): Self = StObject.set(x, "cursorSurroundingLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorSmoothCaretAnimation(value: IEditorOption[cursorSmoothCaretAnimation, Boolean]): Self = this.set("cursorSmoothCaretAnimation", value.asInstanceOf[js.Any])
+    def setCursorSurroundingLinesStyle(value: IEditorOption[cursorSurroundingLinesStyle, default | all]): Self = StObject.set(x, "cursorSurroundingLinesStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorStyle(value: IEditorOption[cursorStyle, TextEditorCursorStyle]): Self = this.set("cursorStyle", value.asInstanceOf[js.Any])
+    def setCursorWidth(value: IEditorOption[cursorWidth, Double]): Self = StObject.set(x, "cursorWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorSurroundingLines(value: IEditorOption[cursorSurroundingLines, Double]): Self = this.set("cursorSurroundingLines", value.asInstanceOf[js.Any])
+    def setDefinitionLinkOpensInPeek(value: IEditorOption[definitionLinkOpensInPeek, Boolean]): Self = StObject.set(x, "definitionLinkOpensInPeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorSurroundingLinesStyle(value: IEditorOption[cursorSurroundingLinesStyle, default | all]): Self = this.set("cursorSurroundingLinesStyle", value.asInstanceOf[js.Any])
+    def setDisableLayerHinting(value: IEditorOption[disableLayerHinting, Boolean]): Self = StObject.set(x, "disableLayerHinting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorWidth(value: IEditorOption[cursorWidth, Double]): Self = this.set("cursorWidth", value.asInstanceOf[js.Any])
+    def setDisableMonospaceOptimizations(value: IEditorOption[disableMonospaceOptimizations, Boolean]): Self = StObject.set(x, "disableMonospaceOptimizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionLinkOpensInPeek(value: IEditorOption[definitionLinkOpensInPeek, Boolean]): Self = this.set("definitionLinkOpensInPeek", value.asInstanceOf[js.Any])
+    def setDragAndDrop(value: IEditorOption[dragAndDrop, Boolean]): Self = StObject.set(x, "dragAndDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableLayerHinting(value: IEditorOption[disableLayerHinting, Boolean]): Self = this.set("disableLayerHinting", value.asInstanceOf[js.Any])
+    def setEditorClassName(value: IEditorOption[editorClassName, String]): Self = StObject.set(x, "editorClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableMonospaceOptimizations(value: IEditorOption[disableMonospaceOptimizations, Boolean]): Self = this.set("disableMonospaceOptimizations", value.asInstanceOf[js.Any])
+    def setEmptySelectionClipboard(value: IEditorOption[emptySelectionClipboard, Boolean]): Self = StObject.set(x, "emptySelectionClipboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragAndDrop(value: IEditorOption[dragAndDrop, Boolean]): Self = this.set("dragAndDrop", value.asInstanceOf[js.Any])
+    def setExtraEditorClassName(value: IEditorOption[extraEditorClassName, String]): Self = StObject.set(x, "extraEditorClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorClassName(value: IEditorOption[editorClassName, String]): Self = this.set("editorClassName", value.asInstanceOf[js.Any])
+    def setFastScrollSensitivity(value: IEditorOption[fastScrollSensitivity, Double]): Self = StObject.set(x, "fastScrollSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptySelectionClipboard(value: IEditorOption[emptySelectionClipboard, Boolean]): Self = this.set("emptySelectionClipboard", value.asInstanceOf[js.Any])
+    def setFind(value: IEditorOption[find, EditorFindOptions]): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraEditorClassName(value: IEditorOption[extraEditorClassName, String]): Self = this.set("extraEditorClassName", value.asInstanceOf[js.Any])
+    def setFixedOverflowWidgets(value: IEditorOption[fixedOverflowWidgets, Boolean]): Self = StObject.set(x, "fixedOverflowWidgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastScrollSensitivity(value: IEditorOption[fastScrollSensitivity, Double]): Self = this.set("fastScrollSensitivity", value.asInstanceOf[js.Any])
+    def setFolding(value: IEditorOption[folding, Boolean]): Self = StObject.set(x, "folding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFind(value: IEditorOption[find, EditorFindOptions]): Self = this.set("find", value.asInstanceOf[js.Any])
+    def setFoldingHighlight(value: IEditorOption[foldingHighlight, Boolean]): Self = StObject.set(x, "foldingHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedOverflowWidgets(value: IEditorOption[fixedOverflowWidgets, Boolean]): Self = this.set("fixedOverflowWidgets", value.asInstanceOf[js.Any])
+    def setFoldingStrategy(value: IEditorOption[foldingStrategy, auto | indentation]): Self = StObject.set(x, "foldingStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolding(value: IEditorOption[folding, Boolean]): Self = this.set("folding", value.asInstanceOf[js.Any])
+    def setFontFamily(value: IEditorOption[fontFamily, String]): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFoldingHighlight(value: IEditorOption[foldingHighlight, Boolean]): Self = this.set("foldingHighlight", value.asInstanceOf[js.Any])
+    def setFontInfo(value: IEditorOption[fontInfo, FontInfo]): Self = StObject.set(x, "fontInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFoldingStrategy(value: IEditorOption[foldingStrategy, auto | indentation]): Self = this.set("foldingStrategy", value.asInstanceOf[js.Any])
+    def setFontLigatures2(value: IEditorOption[fontLigatures, String]): Self = StObject.set(x, "fontLigatures2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: IEditorOption[fontFamily, String]): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSize(value: IEditorOption[fontSize, Double]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontInfo(value: IEditorOption[fontInfo, FontInfo]): Self = this.set("fontInfo", value.asInstanceOf[js.Any])
+    def setFontWeight(value: IEditorOption[fontWeight, String]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontLigatures2(value: IEditorOption[fontLigatures, String]): Self = this.set("fontLigatures2", value.asInstanceOf[js.Any])
+    def setFormatOnPaste(value: IEditorOption[formatOnPaste, Boolean]): Self = StObject.set(x, "formatOnPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: IEditorOption[fontSize, Double]): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFormatOnType(value: IEditorOption[formatOnType, Boolean]): Self = StObject.set(x, "formatOnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: IEditorOption[fontWeight, String]): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setGlyphMargin(value: IEditorOption[glyphMargin, Boolean]): Self = StObject.set(x, "glyphMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatOnPaste(value: IEditorOption[formatOnPaste, Boolean]): Self = this.set("formatOnPaste", value.asInstanceOf[js.Any])
+    def setGotoLocation(value: IEditorOption[gotoLocation, GoToLocationOptions]): Self = StObject.set(x, "gotoLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatOnType(value: IEditorOption[formatOnType, Boolean]): Self = this.set("formatOnType", value.asInstanceOf[js.Any])
+    def setHideCursorInOverviewRuler(value: IEditorOption[hideCursorInOverviewRuler, Boolean]): Self = StObject.set(x, "hideCursorInOverviewRuler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphMargin(value: IEditorOption[glyphMargin, Boolean]): Self = this.set("glyphMargin", value.asInstanceOf[js.Any])
+    def setHighlightActiveIndentGuide(value: IEditorOption[highlightActiveIndentGuide, Boolean]): Self = StObject.set(x, "highlightActiveIndentGuide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGotoLocation(value: IEditorOption[gotoLocation, GoToLocationOptions]): Self = this.set("gotoLocation", value.asInstanceOf[js.Any])
+    def setHover(value: IEditorOption[hover, EditorHoverOptions]): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideCursorInOverviewRuler(value: IEditorOption[hideCursorInOverviewRuler, Boolean]): Self = this.set("hideCursorInOverviewRuler", value.asInstanceOf[js.Any])
+    def setInDiffEditor(value: IEditorOption[inDiffEditor, Boolean]): Self = StObject.set(x, "inDiffEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightActiveIndentGuide(value: IEditorOption[highlightActiveIndentGuide, Boolean]): Self = this.set("highlightActiveIndentGuide", value.asInstanceOf[js.Any])
+    def setLayoutInfo(value: IEditorOption[layoutInfo, EditorLayoutInfo]): Self = StObject.set(x, "layoutInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: IEditorOption[hover, EditorHoverOptions]): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setLetterSpacing(value: IEditorOption[letterSpacing, Double]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInDiffEditor(value: IEditorOption[inDiffEditor, Boolean]): Self = this.set("inDiffEditor", value.asInstanceOf[js.Any])
+    def setLightbulb(value: IEditorOption[lightbulb, EditorLightbulbOptions]): Self = StObject.set(x, "lightbulb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutInfo(value: IEditorOption[layoutInfo, EditorLayoutInfo]): Self = this.set("layoutInfo", value.asInstanceOf[js.Any])
+    def setLineDecorationsWidth(value: IEditorOption[lineDecorationsWidth, String | Double]): Self = StObject.set(x, "lineDecorationsWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterSpacing(value: IEditorOption[letterSpacing, Double]): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    def setLineHeight(value: IEditorOption[lineHeight, Double]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightbulb(value: IEditorOption[lightbulb, EditorLightbulbOptions]): Self = this.set("lightbulb", value.asInstanceOf[js.Any])
+    def setLineNumbers(value: IEditorOption[lineNumbers, InternalEditorRenderLineNumbersOptions]): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineDecorationsWidth(value: IEditorOption[lineDecorationsWidth, String | Double]): Self = this.set("lineDecorationsWidth", value.asInstanceOf[js.Any])
+    def setLineNumbersMinChars(value: IEditorOption[lineNumbersMinChars, Double]): Self = StObject.set(x, "lineNumbersMinChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: IEditorOption[lineHeight, Double]): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setLinks(value: IEditorOption[links, Boolean]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumbers(value: IEditorOption[lineNumbers, InternalEditorRenderLineNumbersOptions]): Self = this.set("lineNumbers", value.asInstanceOf[js.Any])
+    def setMatchBrackets(value: IEditorOption[matchBrackets, always | never | near]): Self = StObject.set(x, "matchBrackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumbersMinChars(value: IEditorOption[lineNumbersMinChars, Double]): Self = this.set("lineNumbersMinChars", value.asInstanceOf[js.Any])
+    def setMinimap(value: IEditorOption[minimap, EditorMinimapOptions]): Self = StObject.set(x, "minimap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: IEditorOption[links, Boolean]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setMouseStyle(value: IEditorOption[mouseStyle, default | text | copy]): Self = StObject.set(x, "mouseStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchBrackets(value: IEditorOption[matchBrackets, always | never | near]): Self = this.set("matchBrackets", value.asInstanceOf[js.Any])
+    def setMouseWheelScrollSensitivity(value: IEditorOption[mouseWheelScrollSensitivity, Double]): Self = StObject.set(x, "mouseWheelScrollSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimap(value: IEditorOption[minimap, EditorMinimapOptions]): Self = this.set("minimap", value.asInstanceOf[js.Any])
+    def setMouseWheelZoom(value: IEditorOption[mouseWheelZoom, Boolean]): Self = StObject.set(x, "mouseWheelZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseStyle(value: IEditorOption[mouseStyle, default | text | copy]): Self = this.set("mouseStyle", value.asInstanceOf[js.Any])
+    def setMultiCursorMergeOverlapping(value: IEditorOption[multiCursorMergeOverlapping, Boolean]): Self = StObject.set(x, "multiCursorMergeOverlapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseWheelScrollSensitivity(value: IEditorOption[mouseWheelScrollSensitivity, Double]): Self = this.set("mouseWheelScrollSensitivity", value.asInstanceOf[js.Any])
+    def setMultiCursorModifier(value: IEditorOption[multiCursorModifier, altKey | metaKey | ctrlKey]): Self = StObject.set(x, "multiCursorModifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseWheelZoom(value: IEditorOption[mouseWheelZoom, Boolean]): Self = this.set("mouseWheelZoom", value.asInstanceOf[js.Any])
+    def setMultiCursorPaste(value: IEditorOption[multiCursorPaste, spread | full]): Self = StObject.set(x, "multiCursorPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiCursorMergeOverlapping(value: IEditorOption[multiCursorMergeOverlapping, Boolean]): Self = this.set("multiCursorMergeOverlapping", value.asInstanceOf[js.Any])
+    def setOccurrencesHighlight(value: IEditorOption[occurrencesHighlight, Boolean]): Self = StObject.set(x, "occurrencesHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiCursorModifier(value: IEditorOption[multiCursorModifier, altKey | metaKey | ctrlKey]): Self = this.set("multiCursorModifier", value.asInstanceOf[js.Any])
+    def setOverviewRulerBorder(value: IEditorOption[overviewRulerBorder, Boolean]): Self = StObject.set(x, "overviewRulerBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiCursorPaste(value: IEditorOption[multiCursorPaste, spread | full]): Self = this.set("multiCursorPaste", value.asInstanceOf[js.Any])
+    def setOverviewRulerLanes(value: IEditorOption[overviewRulerLanes, Double]): Self = StObject.set(x, "overviewRulerLanes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccurrencesHighlight(value: IEditorOption[occurrencesHighlight, Boolean]): Self = this.set("occurrencesHighlight", value.asInstanceOf[js.Any])
+    def setPadding(value: IEditorOption[padding, InternalEditorPaddingOptions]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverviewRulerBorder(value: IEditorOption[overviewRulerBorder, Boolean]): Self = this.set("overviewRulerBorder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverviewRulerLanes(value: IEditorOption[overviewRulerLanes, Double]): Self = this.set("overviewRulerLanes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPadding(value: IEditorOption[padding, InternalEditorPaddingOptions]): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameterHints(value: IEditorOption[parameterHints, InternalParameterHintOptions]): Self = this.set("parameterHints", value.asInstanceOf[js.Any])
+    def setParameterHints(value: IEditorOption[parameterHints, InternalParameterHintOptions]): Self = StObject.set(x, "parameterHints", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPeekWidgetDefaultFocus(
       value: IEditorOption[peekWidgetDefaultFocus, tree | typings.monacoEditor.monacoEditorStrings.editor]
-    ): Self = this.set("peekWidgetDefaultFocus", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "peekWidgetDefaultFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelRatio(value: IEditorOption[pixelRatio, Double]): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    def setPixelRatio(value: IEditorOption[pixelRatio, Double]): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuickSuggestions(value: IEditorOption[quickSuggestions, ValidQuickSuggestionsOptions]): Self = this.set("quickSuggestions", value.asInstanceOf[js.Any])
+    def setQuickSuggestions(value: IEditorOption[quickSuggestions, ValidQuickSuggestionsOptions]): Self = StObject.set(x, "quickSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuickSuggestionsDelay(value: IEditorOption[quickSuggestionsDelay, Double]): Self = this.set("quickSuggestionsDelay", value.asInstanceOf[js.Any])
+    def setQuickSuggestionsDelay(value: IEditorOption[quickSuggestionsDelay, Double]): Self = StObject.set(x, "quickSuggestionsDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: IEditorOption[readOnly, Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setReadOnly(value: IEditorOption[readOnly, Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenameOnType(value: IEditorOption[renameOnType, Boolean]): Self = this.set("renameOnType", value.asInstanceOf[js.Any])
+    def setRenameOnType(value: IEditorOption[renameOnType, Boolean]): Self = StObject.set(x, "renameOnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderControlCharacters(value: IEditorOption[renderControlCharacters, Boolean]): Self = this.set("renderControlCharacters", value.asInstanceOf[js.Any])
+    def setRenderControlCharacters(value: IEditorOption[renderControlCharacters, Boolean]): Self = StObject.set(x, "renderControlCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderFinalNewline(value: IEditorOption[renderFinalNewline, Boolean]): Self = this.set("renderFinalNewline", value.asInstanceOf[js.Any])
+    def setRenderFinalNewline(value: IEditorOption[renderFinalNewline, Boolean]): Self = StObject.set(x, "renderFinalNewline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderIndentGuides(value: IEditorOption[renderIndentGuides, Boolean]): Self = this.set("renderIndentGuides", value.asInstanceOf[js.Any])
+    def setRenderIndentGuides(value: IEditorOption[renderIndentGuides, Boolean]): Self = StObject.set(x, "renderIndentGuides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderLineHighlight(value: IEditorOption[renderLineHighlight, all | line | none | gutter]): Self = this.set("renderLineHighlight", value.asInstanceOf[js.Any])
+    def setRenderLineHighlight(value: IEditorOption[renderLineHighlight, all | line | none | gutter]): Self = StObject.set(x, "renderLineHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderLineHighlightOnlyWhenFocus(value: IEditorOption[renderLineHighlightOnlyWhenFocus, Boolean]): Self = this.set("renderLineHighlightOnlyWhenFocus", value.asInstanceOf[js.Any])
+    def setRenderLineHighlightOnlyWhenFocus(value: IEditorOption[renderLineHighlightOnlyWhenFocus, Boolean]): Self = StObject.set(x, "renderLineHighlightOnlyWhenFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderValidationDecorations(value: IEditorOption[renderValidationDecorations, on | off | editable]): Self = this.set("renderValidationDecorations", value.asInstanceOf[js.Any])
+    def setRenderValidationDecorations(value: IEditorOption[renderValidationDecorations, on | off | editable]): Self = StObject.set(x, "renderValidationDecorations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderWhitespace(value: IEditorOption[renderWhitespace, all | none | boundary | selection | trailing]): Self = this.set("renderWhitespace", value.asInstanceOf[js.Any])
+    def setRenderWhitespace(value: IEditorOption[renderWhitespace, all | none | boundary | selection | trailing]): Self = StObject.set(x, "renderWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevealHorizontalRightPadding(value: IEditorOption[revealHorizontalRightPadding, Double]): Self = this.set("revealHorizontalRightPadding", value.asInstanceOf[js.Any])
+    def setRevealHorizontalRightPadding(value: IEditorOption[revealHorizontalRightPadding, Double]): Self = StObject.set(x, "revealHorizontalRightPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoundedSelection(value: IEditorOption[roundedSelection, Boolean]): Self = this.set("roundedSelection", value.asInstanceOf[js.Any])
+    def setRoundedSelection(value: IEditorOption[roundedSelection, Boolean]): Self = StObject.set(x, "roundedSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulers(value: IEditorOption[rulers, js.Object]): Self = this.set("rulers", value.asInstanceOf[js.Any])
+    def setRulers(value: IEditorOption[rulers, js.Object]): Self = StObject.set(x, "rulers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollBeyondLastColumn(value: IEditorOption[scrollBeyondLastColumn, Double]): Self = this.set("scrollBeyondLastColumn", value.asInstanceOf[js.Any])
+    def setScrollBeyondLastColumn(value: IEditorOption[scrollBeyondLastColumn, Double]): Self = StObject.set(x, "scrollBeyondLastColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollBeyondLastLine(value: IEditorOption[scrollBeyondLastLine, Boolean]): Self = this.set("scrollBeyondLastLine", value.asInstanceOf[js.Any])
+    def setScrollBeyondLastLine(value: IEditorOption[scrollBeyondLastLine, Boolean]): Self = StObject.set(x, "scrollBeyondLastLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPredominantAxis(value: IEditorOption[scrollPredominantAxis, Boolean]): Self = this.set("scrollPredominantAxis", value.asInstanceOf[js.Any])
+    def setScrollPredominantAxis(value: IEditorOption[scrollPredominantAxis, Boolean]): Self = StObject.set(x, "scrollPredominantAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbar(value: IEditorOption[scrollbar, InternalEditorScrollbarOptions]): Self = this.set("scrollbar", value.asInstanceOf[js.Any])
+    def setScrollbar(value: IEditorOption[scrollbar, InternalEditorScrollbarOptions]): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectOnLineNumbers(value: IEditorOption[selectOnLineNumbers, Boolean]): Self = this.set("selectOnLineNumbers", value.asInstanceOf[js.Any])
+    def setSelectOnLineNumbers(value: IEditorOption[selectOnLineNumbers, Boolean]): Self = StObject.set(x, "selectOnLineNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionClipboard(value: IEditorOption[selectionClipboard, Boolean]): Self = this.set("selectionClipboard", value.asInstanceOf[js.Any])
+    def setSelectionClipboard(value: IEditorOption[selectionClipboard, Boolean]): Self = StObject.set(x, "selectionClipboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionHighlight(value: IEditorOption[selectionHighlight, Boolean]): Self = this.set("selectionHighlight", value.asInstanceOf[js.Any])
+    def setSelectionHighlight(value: IEditorOption[selectionHighlight, Boolean]): Self = StObject.set(x, "selectionHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDeprecated(value: IEditorOption[showDeprecated, Boolean]): Self = this.set("showDeprecated", value.asInstanceOf[js.Any])
+    def setShowDeprecated(value: IEditorOption[showDeprecated, Boolean]): Self = StObject.set(x, "showDeprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFoldingControls(value: IEditorOption[showFoldingControls, always | mouseover]): Self = this.set("showFoldingControls", value.asInstanceOf[js.Any])
+    def setShowFoldingControls(value: IEditorOption[showFoldingControls, always | mouseover]): Self = StObject.set(x, "showFoldingControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowUnused(value: IEditorOption[showUnused, Boolean]): Self = this.set("showUnused", value.asInstanceOf[js.Any])
+    def setShowUnused(value: IEditorOption[showUnused, Boolean]): Self = StObject.set(x, "showUnused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmoothScrolling(value: IEditorOption[smoothScrolling, Boolean]): Self = this.set("smoothScrolling", value.asInstanceOf[js.Any])
+    def setSmoothScrolling(value: IEditorOption[smoothScrolling, Boolean]): Self = StObject.set(x, "smoothScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippetSuggestions(value: IEditorOption[snippetSuggestions, none | top | bottom | `inline`]): Self = this.set("snippetSuggestions", value.asInstanceOf[js.Any])
+    def setSnippetSuggestions(value: IEditorOption[snippetSuggestions, none | top | bottom | `inline`]): Self = StObject.set(x, "snippetSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopRenderingLineAfter(value: IEditorOption[stopRenderingLineAfter, Double]): Self = this.set("stopRenderingLineAfter", value.asInstanceOf[js.Any])
+    def setStopRenderingLineAfter(value: IEditorOption[stopRenderingLineAfter, Double]): Self = StObject.set(x, "stopRenderingLineAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggest(value: IEditorOption[suggest, InternalSuggestOptions]): Self = this.set("suggest", value.asInstanceOf[js.Any])
+    def setSuggest(value: IEditorOption[suggest, InternalSuggestOptions]): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestFontSize(value: IEditorOption[suggestFontSize, Double]): Self = this.set("suggestFontSize", value.asInstanceOf[js.Any])
+    def setSuggestFontSize(value: IEditorOption[suggestFontSize, Double]): Self = StObject.set(x, "suggestFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestLineHeight(value: IEditorOption[suggestLineHeight, Double]): Self = this.set("suggestLineHeight", value.asInstanceOf[js.Any])
+    def setSuggestLineHeight(value: IEditorOption[suggestLineHeight, Double]): Self = StObject.set(x, "suggestLineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestOnTriggerCharacters(value: IEditorOption[suggestOnTriggerCharacters, Boolean]): Self = this.set("suggestOnTriggerCharacters", value.asInstanceOf[js.Any])
+    def setSuggestOnTriggerCharacters(value: IEditorOption[suggestOnTriggerCharacters, Boolean]): Self = StObject.set(x, "suggestOnTriggerCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestSelection(value: IEditorOption[suggestSelection, first | recentlyUsed | recentlyUsedByPrefix]): Self = this.set("suggestSelection", value.asInstanceOf[js.Any])
+    def setSuggestSelection(value: IEditorOption[suggestSelection, first | recentlyUsed | recentlyUsedByPrefix]): Self = StObject.set(x, "suggestSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabCompletion(value: IEditorOption[tabCompletion, on | off | onlySnippets]): Self = this.set("tabCompletion", value.asInstanceOf[js.Any])
+    def setTabCompletion(value: IEditorOption[tabCompletion, on | off | onlySnippets]): Self = StObject.set(x, "tabCompletion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabFocusMode(value: IEditorOption[tabFocusMode, Boolean]): Self = this.set("tabFocusMode", value.asInstanceOf[js.Any])
+    def setTabFocusMode(value: IEditorOption[tabFocusMode, Boolean]): Self = StObject.set(x, "tabFocusMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabIndex(value: IEditorOption[tabIndex, Double]): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    def setTabIndex(value: IEditorOption[tabIndex, Double]): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnfoldOnClickAfterEndOfLine(value: IEditorOption[unfoldOnClickAfterEndOfLine, Boolean]): Self = this.set("unfoldOnClickAfterEndOfLine", value.asInstanceOf[js.Any])
+    def setUnfoldOnClickAfterEndOfLine(value: IEditorOption[unfoldOnClickAfterEndOfLine, Boolean]): Self = StObject.set(x, "unfoldOnClickAfterEndOfLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnusualLineTerminators(value: IEditorOption[unusualLineTerminators, off | prompt | auto]): Self = this.set("unusualLineTerminators", value.asInstanceOf[js.Any])
+    def setUnusualLineTerminators(value: IEditorOption[unusualLineTerminators, off | prompt | auto]): Self = StObject.set(x, "unusualLineTerminators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseTabStops(value: IEditorOption[useTabStops, Boolean]): Self = this.set("useTabStops", value.asInstanceOf[js.Any])
+    def setUseTabStops(value: IEditorOption[useTabStops, Boolean]): Self = StObject.set(x, "useTabStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordSeparators(value: IEditorOption[wordSeparators, String]): Self = this.set("wordSeparators", value.asInstanceOf[js.Any])
+    def setWordSeparators(value: IEditorOption[wordSeparators, String]): Self = StObject.set(x, "wordSeparators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordWrap(value: IEditorOption[wordWrap, on | off | wordWrapColumn | bounded]): Self = this.set("wordWrap", value.asInstanceOf[js.Any])
+    def setWordWrap(value: IEditorOption[wordWrap, on | off | wordWrapColumn | bounded]): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordWrapBreakAfterCharacters(value: IEditorOption[wordWrapBreakAfterCharacters, String]): Self = this.set("wordWrapBreakAfterCharacters", value.asInstanceOf[js.Any])
+    def setWordWrapBreakAfterCharacters(value: IEditorOption[wordWrapBreakAfterCharacters, String]): Self = StObject.set(x, "wordWrapBreakAfterCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordWrapBreakBeforeCharacters(value: IEditorOption[wordWrapBreakBeforeCharacters, String]): Self = this.set("wordWrapBreakBeforeCharacters", value.asInstanceOf[js.Any])
+    def setWordWrapBreakBeforeCharacters(value: IEditorOption[wordWrapBreakBeforeCharacters, String]): Self = StObject.set(x, "wordWrapBreakBeforeCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordWrapColumn(value: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapColumn, Double]): Self = this.set("wordWrapColumn", value.asInstanceOf[js.Any])
+    def setWordWrapColumn(value: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapColumn, Double]): Self = StObject.set(x, "wordWrapColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordWrapMinified(value: IEditorOption[wordWrapMinified, Boolean]): Self = this.set("wordWrapMinified", value.asInstanceOf[js.Any])
+    def setWordWrapMinified(value: IEditorOption[wordWrapMinified, Boolean]): Self = StObject.set(x, "wordWrapMinified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrappingIndent(value: IEditorOption[wrappingIndent, WrappingIndent]): Self = this.set("wrappingIndent", value.asInstanceOf[js.Any])
+    def setWrappingIndent(value: IEditorOption[wrappingIndent, WrappingIndent]): Self = StObject.set(x, "wrappingIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrappingInfo(value: IEditorOption[wrappingInfo, EditorWrappingInfo]): Self = this.set("wrappingInfo", value.asInstanceOf[js.Any])
+    def setWrappingInfo(value: IEditorOption[wrappingInfo, EditorWrappingInfo]): Self = StObject.set(x, "wrappingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrappingStrategy(value: IEditorOption[wrappingStrategy, simple | advanced]): Self = this.set("wrappingStrategy", value.asInstanceOf[js.Any])
+    def setWrappingStrategy(value: IEditorOption[wrappingStrategy, simple | advanced]): Self = StObject.set(x, "wrappingStrategy", value.asInstanceOf[js.Any])
   }
 }

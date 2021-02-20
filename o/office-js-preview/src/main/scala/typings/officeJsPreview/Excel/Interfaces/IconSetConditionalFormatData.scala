@@ -23,13 +23,14 @@ import typings.officeJsPreview.officeJsPreviewStrings.ThreeSymbols2
 import typings.officeJsPreview.officeJsPreviewStrings.ThreeTrafficLights1
 import typings.officeJsPreview.officeJsPreviewStrings.ThreeTrafficLights2
 import typings.officeJsPreview.officeJsPreviewStrings.ThreeTriangles
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `iconSetConditionalFormat.toJSON()`. */
 @js.native
-trait IconSetConditionalFormatData extends js.Object {
+trait IconSetConditionalFormatData extends StObject {
   
   /**
     *
@@ -74,47 +75,35 @@ object IconSetConditionalFormatData {
   }
   
   @scala.inline
-  implicit class IconSetConditionalFormatDataOps[Self <: IconSetConditionalFormatData] (val x: Self) extends AnyVal {
+  implicit class IconSetConditionalFormatDataMutableBuilder[Self <: IconSetConditionalFormatData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCriteria(value: js.Array[ConditionalIconCriterion]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCriteriaVarargs(value: ConditionalIconCriterion*): Self = StObject.set(x, "criteria", js.Array(value :_*))
     
     @scala.inline
-    def setCriteriaVarargs(value: ConditionalIconCriterion*): Self = this.set("criteria", js.Array(value :_*))
+    def setReverseIconOrder(value: Boolean): Self = StObject.set(x, "reverseIconOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteria(value: js.Array[ConditionalIconCriterion]): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    def setReverseIconOrderUndefined: Self = StObject.set(x, "reverseIconOrder", js.undefined)
     
     @scala.inline
-    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    def setShowIconOnly(value: Boolean): Self = StObject.set(x, "showIconOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverseIconOrder(value: Boolean): Self = this.set("reverseIconOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReverseIconOrder: Self = this.set("reverseIconOrder", js.undefined)
-    
-    @scala.inline
-    def setShowIconOnly(value: Boolean): Self = this.set("showIconOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowIconOnly: Self = this.set("showIconOnly", js.undefined)
+    def setShowIconOnlyUndefined: Self = StObject.set(x, "showIconOnly", js.undefined)
     
     @scala.inline
     def setStyle(
       value: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes
-    ): Self = this.set("style", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

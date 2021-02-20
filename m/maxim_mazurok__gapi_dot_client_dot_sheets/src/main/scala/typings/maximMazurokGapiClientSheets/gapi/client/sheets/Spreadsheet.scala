@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Spreadsheet extends js.Object {
+trait Spreadsheet extends StObject {
   
   /** Output only. A list of data source refresh schedules. */
   var dataSourceSchedules: js.UndefOr[js.Array[DataSourceRefreshSchedule]] = js.native
@@ -40,81 +41,69 @@ object Spreadsheet {
   }
   
   @scala.inline
-  implicit class SpreadsheetOps[Self <: Spreadsheet] (val x: Self) extends AnyVal {
+  implicit class SpreadsheetMutableBuilder[Self <: Spreadsheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceSchedules(value: js.Array[DataSourceRefreshSchedule]): Self = StObject.set(x, "dataSourceSchedules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceSchedulesUndefined: Self = StObject.set(x, "dataSourceSchedules", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceSchedulesVarargs(value: DataSourceRefreshSchedule*): Self = StObject.set(x, "dataSourceSchedules", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourceSchedulesVarargs(value: DataSourceRefreshSchedule*): Self = this.set("dataSourceSchedules", js.Array(value :_*))
+    def setDataSources(value: js.Array[DataSource]): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceSchedules(value: js.Array[DataSourceRefreshSchedule]): Self = this.set("dataSourceSchedules", value.asInstanceOf[js.Any])
+    def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
     
     @scala.inline
-    def deleteDataSourceSchedules: Self = this.set("dataSourceSchedules", js.undefined)
+    def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourcesVarargs(value: DataSource*): Self = this.set("dataSources", js.Array(value :_*))
+    def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSources(value: js.Array[DataSource]): Self = this.set("dataSources", value.asInstanceOf[js.Any])
+    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
     @scala.inline
-    def deleteDataSources: Self = this.set("dataSources", js.undefined)
+    def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
     
     @scala.inline
-    def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = this.set("developerMetadata", js.Array(value :_*))
+    def setNamedRanges(value: js.Array[NamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = this.set("developerMetadata", value.asInstanceOf[js.Any])
+    def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
     
     @scala.inline
-    def deleteDeveloperMetadata: Self = this.set("developerMetadata", js.undefined)
+    def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
     
     @scala.inline
-    def setNamedRangesVarargs(value: NamedRange*): Self = this.set("namedRanges", js.Array(value :_*))
+    def setProperties(value: SpreadsheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedRanges(value: js.Array[NamedRange]): Self = this.set("namedRanges", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteNamedRanges: Self = this.set("namedRanges", js.undefined)
+    def setSheets(value: js.Array[Sheet]): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: SpreadsheetProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
     
     @scala.inline
-    def setSheetsVarargs(value: Sheet*): Self = this.set("sheets", js.Array(value :_*))
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheets(value: js.Array[Sheet]): Self = this.set("sheets", value.asInstanceOf[js.Any])
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
     @scala.inline
-    def deleteSheets: Self = this.set("sheets", js.undefined)
+    def setSpreadsheetUrl(value: String): Self = StObject.set(x, "spreadsheetUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
-    
-    @scala.inline
-    def setSpreadsheetUrl(value: String): Self = this.set("spreadsheetUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetUrl: Self = this.set("spreadsheetUrl", js.undefined)
+    def setSpreadsheetUrlUndefined: Self = StObject.set(x, "spreadsheetUrl", js.undefined)
   }
 }

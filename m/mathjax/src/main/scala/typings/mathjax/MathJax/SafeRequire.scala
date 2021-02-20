@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafeRequire extends js.Object {
+trait SafeRequire extends StObject {
   
   var HTML: js.UndefOr[Boolean] = js.native
   
@@ -58,144 +59,132 @@ object SafeRequire {
   }
   
   @scala.inline
-  implicit class SafeRequireOps[Self <: SafeRequire] (val x: Self) extends AnyVal {
+  implicit class SafeRequireMutableBuilder[Self <: SafeRequire] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmscd(value: Boolean): Self = StObject.set(x, "amscd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTML(value: Boolean): Self = this.set("HTML", value.asInstanceOf[js.Any])
+    def setAmscdUndefined: Self = StObject.set(x, "amscd", js.undefined)
     
     @scala.inline
-    def deleteHTML: Self = this.set("HTML", js.undefined)
+    def setAmsmath(value: Boolean): Self = StObject.set(x, "amsmath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: Boolean): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setAmsmathUndefined: Self = StObject.set(x, "amsmath", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setAmssymbols(value: Boolean): Self = StObject.set(x, "amssymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmscd(value: Boolean): Self = this.set("amscd", value.asInstanceOf[js.Any])
+    def setAmssymbolsUndefined: Self = StObject.set(x, "amssymbols", js.undefined)
     
     @scala.inline
-    def deleteAmscd: Self = this.set("amscd", js.undefined)
+    def setAutobold(value: Boolean): Self = StObject.set(x, "autobold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmsmath(value: Boolean): Self = this.set("amsmath", value.asInstanceOf[js.Any])
+    def setAutoboldUndefined: Self = StObject.set(x, "autobold", js.undefined)
     
     @scala.inline
-    def deleteAmsmath: Self = this.set("amsmath", js.undefined)
+    def `setAutoload-all`(value: Boolean): Self = StObject.set(x, "autoload-all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmssymbols(value: Boolean): Self = this.set("amssymbols", value.asInstanceOf[js.Any])
+    def `setAutoload-allUndefined`: Self = StObject.set(x, "autoload-all", js.undefined)
     
     @scala.inline
-    def deleteAmssymbols: Self = this.set("amssymbols", js.undefined)
+    def setBbox(value: Boolean): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutobold(value: Boolean): Self = this.set("autobold", value.asInstanceOf[js.Any])
+    def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
     
     @scala.inline
-    def deleteAutobold: Self = this.set("autobold", js.undefined)
+    def setBegingroup(value: Boolean): Self = StObject.set(x, "begingroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutoload-all`(value: Boolean): Self = this.set("autoload-all", value.asInstanceOf[js.Any])
+    def setBegingroupUndefined: Self = StObject.set(x, "begingroup", js.undefined)
     
     @scala.inline
-    def `deleteAutoload-all`: Self = this.set("autoload-all", js.undefined)
+    def setBoldsymbol(value: Boolean): Self = StObject.set(x, "boldsymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBbox(value: Boolean): Self = this.set("bbox", value.asInstanceOf[js.Any])
+    def setBoldsymbolUndefined: Self = StObject.set(x, "boldsymbol", js.undefined)
     
     @scala.inline
-    def deleteBbox: Self = this.set("bbox", js.undefined)
+    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBegingroup(value: Boolean): Self = this.set("begingroup", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteBegingroup: Self = this.set("begingroup", js.undefined)
+    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoldsymbol(value: Boolean): Self = this.set("boldsymbol", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBoldsymbol: Self = this.set("boldsymbol", js.undefined)
+    def setEnclose(value: Boolean): Self = StObject.set(x, "enclose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setEncloseUndefined: Self = StObject.set(x, "enclose", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setExtpfeil(value: Boolean): Self = StObject.set(x, "extpfeil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Boolean): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setExtpfeilUndefined: Self = StObject.set(x, "extpfeil", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setHTML(value: Boolean): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnclose(value: Boolean): Self = this.set("enclose", value.asInstanceOf[js.Any])
+    def setHTMLUndefined: Self = StObject.set(x, "HTML", js.undefined)
     
     @scala.inline
-    def deleteEnclose: Self = this.set("enclose", js.undefined)
+    def setMathchoice(value: Boolean): Self = StObject.set(x, "mathchoice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtpfeil(value: Boolean): Self = this.set("extpfeil", value.asInstanceOf[js.Any])
+    def setMathchoiceUndefined: Self = StObject.set(x, "mathchoice", js.undefined)
     
     @scala.inline
-    def deleteExtpfeil: Self = this.set("extpfeil", js.undefined)
+    def setMhchem(value: Boolean): Self = StObject.set(x, "mhchem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMathchoice(value: Boolean): Self = this.set("mathchoice", value.asInstanceOf[js.Any])
+    def setMhchemUndefined: Self = StObject.set(x, "mhchem", js.undefined)
     
     @scala.inline
-    def deleteMathchoice: Self = this.set("mathchoice", js.undefined)
+    def setNewcommand(value: Boolean): Self = StObject.set(x, "newcommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMhchem(value: Boolean): Self = this.set("mhchem", value.asInstanceOf[js.Any])
+    def setNewcommandUndefined: Self = StObject.set(x, "newcommand", js.undefined)
     
     @scala.inline
-    def deleteMhchem: Self = this.set("mhchem", js.undefined)
+    def setNoErrors(value: Boolean): Self = StObject.set(x, "noErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewcommand(value: Boolean): Self = this.set("newcommand", value.asInstanceOf[js.Any])
+    def setNoErrorsUndefined: Self = StObject.set(x, "noErrors", js.undefined)
     
     @scala.inline
-    def deleteNewcommand: Self = this.set("newcommand", js.undefined)
+    def setNoUndefined(value: Boolean): Self = StObject.set(x, "noUndefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoErrors(value: Boolean): Self = this.set("noErrors", value.asInstanceOf[js.Any])
+    def setNoUndefinedUndefined: Self = StObject.set(x, "noUndefined", js.undefined)
     
     @scala.inline
-    def deleteNoErrors: Self = this.set("noErrors", js.undefined)
+    def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoUndefined(value: Boolean): Self = this.set("noUndefined", value.asInstanceOf[js.Any])
+    def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
     
     @scala.inline
-    def deleteNoUndefined: Self = this.set("noUndefined", js.undefined)
+    def setVerb(value: Boolean): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnicode(value: Boolean): Self = this.set("unicode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnicode: Self = this.set("unicode", js.undefined)
-    
-    @scala.inline
-    def setVerb(value: Boolean): Self = this.set("verb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerb: Self = this.set("verb", js.undefined)
+    def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
   }
 }

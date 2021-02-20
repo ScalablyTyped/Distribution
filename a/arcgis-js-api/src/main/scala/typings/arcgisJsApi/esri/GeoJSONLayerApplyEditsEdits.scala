@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,45 +44,33 @@ object GeoJSONLayerApplyEditsEdits {
   }
   
   @scala.inline
-  implicit class GeoJSONLayerApplyEditsEditsOps[Self <: GeoJSONLayerApplyEditsEdits] (val x: Self) extends AnyVal {
+  implicit class GeoJSONLayerApplyEditsEditsMutableBuilder[Self <: GeoJSONLayerApplyEditsEdits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = StObject.set(x, "addFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddFeaturesUndefined: Self = StObject.set(x, "addFeatures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "addFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setAddFeaturesVarargs(value: Graphic*): Self = this.set("addFeatures", js.Array(value :_*))
+    def setDeleteFeatures(value: (js.Array[_ | Graphic]) | Collection[Graphic]): Self = StObject.set(x, "deleteFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = this.set("addFeatures", value.asInstanceOf[js.Any])
+    def setDeleteFeaturesUndefined: Self = StObject.set(x, "deleteFeatures", js.undefined)
     
     @scala.inline
-    def deleteAddFeatures: Self = this.set("addFeatures", js.undefined)
+    def setDeleteFeaturesVarargs(value: (js.Any | Graphic)*): Self = StObject.set(x, "deleteFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setDeleteFeaturesVarargs(value: (js.Any | Graphic)*): Self = this.set("deleteFeatures", js.Array(value :_*))
+    def setUpdateFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = StObject.set(x, "updateFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteFeatures(value: (js.Array[_ | Graphic]) | Collection[Graphic]): Self = this.set("deleteFeatures", value.asInstanceOf[js.Any])
+    def setUpdateFeaturesUndefined: Self = StObject.set(x, "updateFeatures", js.undefined)
     
     @scala.inline
-    def deleteDeleteFeatures: Self = this.set("deleteFeatures", js.undefined)
-    
-    @scala.inline
-    def setUpdateFeaturesVarargs(value: Graphic*): Self = this.set("updateFeatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdateFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = this.set("updateFeatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateFeatures: Self = this.set("updateFeatures", js.undefined)
+    def setUpdateFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "updateFeatures", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.amapJsApiPlaceSearch.anon
 
 import typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Indoordata extends js.Object {
+trait Indoordata extends StObject {
   
   var indoor_data: Cpid = js.native
   
@@ -21,24 +22,12 @@ object Indoordata {
   }
   
   @scala.inline
-  implicit class IndoordataOps[Self <: Indoordata] (val x: Self) extends AnyVal {
+  implicit class IndoordataMutableBuilder[Self <: Indoordata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndoor_data(value: Cpid): Self = StObject.set(x, "indoor_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIndoor_data(value: Cpid): Self = this.set("indoor_data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndoor_map(value: `true`): Self = this.set("indoor_map", value.asInstanceOf[js.Any])
+    def setIndoor_map(value: `true`): Self = StObject.set(x, "indoor_map", value.asInstanceOf[js.Any])
   }
 }

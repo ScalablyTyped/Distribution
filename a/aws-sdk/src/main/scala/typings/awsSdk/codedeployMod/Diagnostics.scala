@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Diagnostics extends js.Object {
+trait Diagnostics extends StObject {
   
   /**
     * The associated error code:   Success: The specified script ran.   ScriptMissing: The specified script was not found in the specified location.   ScriptNotExecutable: The specified script is not a recognized executable file type.   ScriptTimedOut: The specified script did not finish running in the specified time period.   ScriptFailed: The specified script failed to run as expected.   UnknownError: The specified script did not run for an unknown reason.  
@@ -36,42 +37,30 @@ object Diagnostics {
   }
   
   @scala.inline
-  implicit class DiagnosticsOps[Self <: Diagnostics] (val x: Self) extends AnyVal {
+  implicit class DiagnosticsMutableBuilder[Self <: Diagnostics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: LifecycleErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogTail(value: LogTail): Self = StObject.set(x, "logTail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: LifecycleErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setLogTailUndefined: Self = StObject.set(x, "logTail", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setMessage(value: LifecycleMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogTail(value: LogTail): Self = this.set("logTail", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteLogTail: Self = this.set("logTail", js.undefined)
+    def setScriptName(value: ScriptName): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: LifecycleMessage): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
-    
-    @scala.inline
-    def setScriptName(value: ScriptName): Self = this.set("scriptName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptName: Self = this.set("scriptName", js.undefined)
+    def setScriptNameUndefined: Self = StObject.set(x, "scriptName", js.undefined)
   }
 }

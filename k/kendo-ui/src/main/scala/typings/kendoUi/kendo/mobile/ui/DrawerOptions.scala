@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.mobile.ui
 
 import typings.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrawerOptions extends js.Object {
+trait DrawerOptions extends StObject {
   
   var afterHide: js.UndefOr[js.Function1[/* e */ DrawerAfterHideEvent, Unit]] = js.native
   
@@ -41,90 +42,78 @@ object DrawerOptions {
   }
   
   @scala.inline
-  implicit class DrawerOptionsOps[Self <: DrawerOptions] (val x: Self) extends AnyVal {
+  implicit class DrawerOptionsMutableBuilder[Self <: DrawerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterHide(value: /* e */ DrawerAfterHideEvent => Unit): Self = StObject.set(x, "afterHide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterHideUndefined: Self = StObject.set(x, "afterHide", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeShow(value: /* e */ DrawerEvent => Unit): Self = StObject.set(x, "beforeShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterHide(value: /* e */ DrawerAfterHideEvent => Unit): Self = this.set("afterHide", js.Any.fromFunction1(value))
+    def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     
     @scala.inline
-    def deleteAfterHide: Self = this.set("afterHide", js.undefined)
+    def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeShow(value: /* e */ DrawerEvent => Unit): Self = this.set("beforeShow", js.Any.fromFunction1(value))
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteBeforeShow: Self = this.set("beforeShow", js.undefined)
+    def setHide(value: /* e */ DrawerHideEvent => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainer(value: JQuery): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setInit(value: /* e */ DrawerInitEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHide(value: /* e */ DrawerHideEvent => Unit): Self = this.set("hide", js.Any.fromFunction1(value))
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: /* e */ DrawerInitEvent => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setShow(value: /* e */ DrawerShowEvent => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setSwipeToOpen(value: Boolean): Self = StObject.set(x, "swipeToOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: /* e */ DrawerShowEvent => Unit): Self = this.set("show", js.Any.fromFunction1(value))
+    def setSwipeToOpenUndefined: Self = StObject.set(x, "swipeToOpen", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setSwipeToOpenViews(value: js.Any): Self = StObject.set(x, "swipeToOpenViews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeToOpen(value: Boolean): Self = this.set("swipeToOpen", value.asInstanceOf[js.Any])
+    def setSwipeToOpenViewsUndefined: Self = StObject.set(x, "swipeToOpenViews", js.undefined)
     
     @scala.inline
-    def deleteSwipeToOpen: Self = this.set("swipeToOpen", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeToOpenViews(value: js.Any): Self = this.set("swipeToOpenViews", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSwipeToOpenViews: Self = this.set("swipeToOpenViews", js.undefined)
+    def setViews(value: js.Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setViews(value: js.Any): Self = this.set("views", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViews: Self = this.set("views", js.undefined)
+    def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
   }
 }

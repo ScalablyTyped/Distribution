@@ -1,5 +1,6 @@
 package typings.vexflow.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GhostNote extends StemmableNote {
   
-   //inconsistent type: void -> GhostNote
+  //inconsistent type: void -> GhostNote
   def addToModifierContext(): GhostNote = js.native
   
   def draw(): Unit = js.native

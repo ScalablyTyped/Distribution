@@ -1,11 +1,12 @@
 package typings.awsSdk.qldbsessionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecuteStatementResult extends js.Object {
+trait ExecuteStatementResult extends StObject {
   
   /**
     * Contains the details of the first fetched page.
@@ -21,24 +22,12 @@ object ExecuteStatementResult {
   }
   
   @scala.inline
-  implicit class ExecuteStatementResultOps[Self <: ExecuteStatementResult] (val x: Self) extends AnyVal {
+  implicit class ExecuteStatementResultMutableBuilder[Self <: ExecuteStatementResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstPage(value: Page): Self = StObject.set(x, "FirstPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFirstPage(value: Page): Self = this.set("FirstPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirstPage: Self = this.set("FirstPage", js.undefined)
+    def setFirstPageUndefined: Self = StObject.set(x, "FirstPage", js.undefined)
   }
 }

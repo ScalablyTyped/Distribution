@@ -3,14 +3,14 @@ package typings.buffer
 import typings.buffer.anon.Data
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("buffer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("buffer", "Buffer")
   @js.native
   class Buffer protected () extends Uint8Array {
     /**
@@ -353,8 +353,7 @@ object mod extends js.Object {
     def writeUIntLE(value: Double, offset: Double, byteLength: Double, noAssert: Boolean): Double = js.native
   }
   /* static members */
-  @js.native
-  object Buffer extends js.Object {
+  object Buffer {
     
     /**
       * Allocates a new buffer of {size} octets.
@@ -364,13 +363,29 @@ object mod extends js.Object {
       *    If parameter is omitted, buffer will be filled with zeros.
       * @param encoding encoding used for call to buf.fill while initializing
       */
+    @JSImport("buffer", "Buffer.alloc")
+    @js.native
     def alloc(size: Double): Buffer = js.native
+    @JSImport("buffer", "Buffer.alloc")
+    @js.native
     def alloc(size: Double, fill: js.UndefOr[scala.Nothing], encoding: String): Buffer = js.native
+    @JSImport("buffer", "Buffer.alloc")
+    @js.native
     def alloc(size: Double, fill: String): Buffer = js.native
+    @JSImport("buffer", "Buffer.alloc")
+    @js.native
     def alloc(size: Double, fill: String, encoding: String): Buffer = js.native
+    @JSImport("buffer", "Buffer.alloc")
+    @js.native
     def alloc(size: Double, fill: Double): Buffer = js.native
+    @JSImport("buffer", "Buffer.alloc")
+    @js.native
     def alloc(size: Double, fill: Double, encoding: String): Buffer = js.native
+    @JSImport("buffer", "Buffer.alloc")
+    @js.native
     def alloc(size: Double, fill: Buffer): Buffer = js.native
+    @JSImport("buffer", "Buffer.alloc")
+    @js.native
     def alloc(size: Double, fill: Buffer, encoding: String): Buffer = js.native
     
     /**
@@ -379,6 +394,8 @@ object mod extends js.Object {
       *
       * @param size count of octets to allocate
       */
+    @JSImport("buffer", "Buffer.allocUnsafe")
+    @js.native
     def allocUnsafe(size: Double): Buffer = js.native
     
     /**
@@ -387,6 +404,8 @@ object mod extends js.Object {
       *
       * @param size count of octets to allocate
       */
+    @JSImport("buffer", "Buffer.allocUnsafeSlow")
+    @js.native
     def allocUnsafeSlow(size: Double): Buffer = js.native
     
     /**
@@ -396,12 +415,18 @@ object mod extends js.Object {
       * @param string string to test.
       * @param encoding encoding used to evaluate (defaults to 'utf8')
       */
+    @JSImport("buffer", "Buffer.byteLength")
+    @js.native
     def byteLength(string: String): Double = js.native
+    @JSImport("buffer", "Buffer.byteLength")
+    @js.native
     def byteLength(string: String, encoding: String): Double = js.native
     
     /**
       * The same as buf1.compare(buf2).
       */
+    @JSImport("buffer", "Buffer.compare")
+    @js.native
     def compare(buf1: Uint8Array, buf2: Uint8Array): Double = js.native
     
     /**
@@ -415,7 +440,11 @@ object mod extends js.Object {
       * @param totalLength Total length of the buffers when concatenated.
       *   If totalLength is not provided, it is read from the buffers in the list. However, this adds an additional loop to the function, so it is faster to provide the length explicitly.
       */
+    @JSImport("buffer", "Buffer.concat")
+    @js.native
     def concat(list: js.Array[Uint8Array]): Buffer = js.native
+    @JSImport("buffer", "Buffer.concat")
+    @js.native
     def concat(list: js.Array[Uint8Array], totalLength: Double): Buffer = js.native
     
     /**
@@ -428,22 +457,36 @@ object mod extends js.Object {
       * @param byteOffset
       * @param length
       */
+    @JSImport("buffer", "Buffer.from")
+    @js.native
     def from(arrayBuffer: ArrayBuffer): Buffer = js.native
+    @JSImport("buffer", "Buffer.from")
+    @js.native
     def from(arrayBuffer: ArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
+    @JSImport("buffer", "Buffer.from")
+    @js.native
     def from(arrayBuffer: ArrayBuffer, byteOffset: Double): Buffer = js.native
+    @JSImport("buffer", "Buffer.from")
+    @js.native
     def from(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): Buffer = js.native
     /**
       * Allocates a new Buffer using an {array} of octets.
       *
       * @param array
       */
+    @JSImport("buffer", "Buffer.from")
+    @js.native
     def from(array: js.Array[_]): Buffer = js.native
     /**
       * Copies the passed {buffer} data onto a new Buffer instance.
       *
       * @param buffer
       */
+    @JSImport("buffer", "Buffer.from")
+    @js.native
     def from(buffer: Buffer): Buffer = js.native
+    @JSImport("buffer", "Buffer.from")
+    @js.native
     def from(buffer: Uint8Array): Buffer = js.native
     /**
       * Creates a new Buffer containing the given JavaScript string {str}.
@@ -452,7 +495,11 @@ object mod extends js.Object {
       *
       * @param str
       */
+    @JSImport("buffer", "Buffer.from")
+    @js.native
     def from(str: String): Buffer = js.native
+    @JSImport("buffer", "Buffer.from")
+    @js.native
     def from(str: String, encoding: String): Buffer = js.native
     
     /**
@@ -460,6 +507,8 @@ object mod extends js.Object {
       *
       * @param obj object to test.
       */
+    @JSImport("buffer", "Buffer.isBuffer")
+    @js.native
     def isBuffer(obj: js.Any): /* is buffer.buffer.Buffer */ Boolean = js.native
     
     /**
@@ -468,6 +517,8 @@ object mod extends js.Object {
       *
       * @param encoding string to test.
       */
+    @JSImport("buffer", "Buffer.isEncoding")
+    @js.native
     def isEncoding(encoding: String): Boolean = js.native
   }
 }

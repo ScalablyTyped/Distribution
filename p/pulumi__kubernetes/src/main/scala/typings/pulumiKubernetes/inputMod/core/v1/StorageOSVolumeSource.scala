@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a StorageOS persistent volume resource.
   */
 @js.native
-trait StorageOSVolumeSource extends js.Object {
+trait StorageOSVolumeSource extends StObject {
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
@@ -45,48 +46,36 @@ object StorageOSVolumeSource {
   }
   
   @scala.inline
-  implicit class StorageOSVolumeSourceOps[Self <: StorageOSVolumeSource] (val x: Self) extends AnyVal {
+  implicit class StorageOSVolumeSourceMutableBuilder[Self <: StorageOSVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsType(value: Input[String]): Self = this.set("fsType", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteFsType: Self = this.set("fsType", js.undefined)
+    def setSecretRef(value: Input[LocalObjectReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setVolumeName(value: Input[String]): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretRef(value: Input[LocalObjectReference]): Self = this.set("secretRef", value.asInstanceOf[js.Any])
+    def setVolumeNameUndefined: Self = StObject.set(x, "volumeName", js.undefined)
     
     @scala.inline
-    def deleteSecretRef: Self = this.set("secretRef", js.undefined)
+    def setVolumeNamespace(value: Input[String]): Self = StObject.set(x, "volumeNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeName(value: Input[String]): Self = this.set("volumeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeName: Self = this.set("volumeName", js.undefined)
-    
-    @scala.inline
-    def setVolumeNamespace(value: Input[String]): Self = this.set("volumeNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeNamespace: Self = this.set("volumeNamespace", js.undefined)
+    def setVolumeNamespaceUndefined: Self = StObject.set(x, "volumeNamespace", js.undefined)
   }
 }

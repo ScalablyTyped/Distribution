@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemberSharedItems extends js.Object {
+trait MemberSharedItems extends StObject {
   
   /**
     * List of information about shared envelopes.
@@ -43,59 +44,47 @@ object MemberSharedItems {
   }
   
   @scala.inline
-  implicit class MemberSharedItemsOps[Self <: MemberSharedItems] (val x: Self) extends AnyVal {
+  implicit class MemberSharedItemsMutableBuilder[Self <: MemberSharedItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvelopes(value: js.Array[/* Information about the shared item. */ SharedItem]): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnvelopesVarargs(value: (/* Information about the shared item. */ SharedItem)*): Self = this.set("envelopes", js.Array(value :_*))
-    
-    @scala.inline
-    def setEnvelopes(value: js.Array[/* Information about the shared item. */ SharedItem]): Self = this.set("envelopes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvelopes: Self = this.set("envelopes", js.undefined)
+    def setEnvelopesVarargs(value: (/* Information about the shared item. */ SharedItem)*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setFoldersVarargs(value: FolderSharedItem*): Self = this.set("folders", js.Array(value :_*))
+    def setFolders(value: js.Array[FolderSharedItem]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolders(value: js.Array[FolderSharedItem]): Self = this.set("folders", value.asInstanceOf[js.Any])
+    def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
     @scala.inline
-    def deleteFolders: Self = this.set("folders", js.undefined)
+    def setFoldersVarargs(value: FolderSharedItem*): Self = StObject.set(x, "folders", js.Array(value :_*))
     
     @scala.inline
-    def setTemplatesVarargs(value: (/* Information about shared templates. */ TemplateSharedItem)*): Self = this.set("templates", js.Array(value :_*))
+    def setTemplates(value: js.Array[/* Information about shared templates. */ TemplateSharedItem]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplates(value: js.Array[/* Information about shared templates. */ TemplateSharedItem]): Self = this.set("templates", value.asInstanceOf[js.Any])
+    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
     @scala.inline
-    def deleteTemplates: Self = this.set("templates", js.undefined)
+    def setTemplatesVarargs(value: (/* Information about shared templates. */ TemplateSharedItem)*): Self = StObject.set(x, "templates", js.Array(value :_*))
     
     @scala.inline
-    def setUser(value: UserInfo): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: UserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

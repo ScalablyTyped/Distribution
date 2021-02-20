@@ -1,5 +1,6 @@
 package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Holds one or more instances of `ClaimReview` markup for a webpage.
   */
 @js.native
-trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage extends js.Object {
+trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage extends StObject {
   
   /**
     * Info about the author of this claim review. Similar to the above,
@@ -62,57 +63,45 @@ object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage {
   }
   
   @scala.inline
-  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPageOps[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPageMutableBuilder[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClaimReviewAuthor(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor): Self = StObject.set(x, "claimReviewAuthor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClaimReviewAuthorUndefined: Self = StObject.set(x, "claimReviewAuthor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClaimReviewMarkups(value: js.Array[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup]): Self = StObject.set(x, "claimReviewMarkups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimReviewAuthor(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor): Self = this.set("claimReviewAuthor", value.asInstanceOf[js.Any])
+    def setClaimReviewMarkupsUndefined: Self = StObject.set(x, "claimReviewMarkups", js.undefined)
     
     @scala.inline
-    def deleteClaimReviewAuthor: Self = this.set("claimReviewAuthor", js.undefined)
+    def setClaimReviewMarkupsVarargs(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup*): Self = StObject.set(x, "claimReviewMarkups", js.Array(value :_*))
     
     @scala.inline
-    def setClaimReviewMarkupsVarargs(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup*): Self = this.set("claimReviewMarkups", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimReviewMarkups(value: js.Array[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup]): Self = this.set("claimReviewMarkups", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteClaimReviewMarkups: Self = this.set("claimReviewMarkups", js.undefined)
+    def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPublishDate(value: String): Self = StObject.set(x, "publishDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageUrl(value: String): Self = this.set("pageUrl", value.asInstanceOf[js.Any])
+    def setPublishDateUndefined: Self = StObject.set(x, "publishDate", js.undefined)
     
     @scala.inline
-    def deletePageUrl: Self = this.set("pageUrl", js.undefined)
+    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishDate(value: String): Self = this.set("publishDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishDate: Self = this.set("publishDate", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: String): Self = this.set("versionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("versionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

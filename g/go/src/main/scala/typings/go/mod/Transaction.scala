@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Construct an object holding an empty list of ChangedEvents and no .name.
   */
-class Transaction () extends js.Object {
+class Transaction () extends StObject {
   
   /**
     * This predicate returns true if you can call .redo, namely when .isComplete is true.

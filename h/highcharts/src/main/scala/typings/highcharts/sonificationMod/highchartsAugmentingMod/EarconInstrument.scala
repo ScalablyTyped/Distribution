@@ -1,5 +1,6 @@
 package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Define an Instrument and the options for playing it.
   */
 @js.native
-trait EarconInstrument extends js.Object {
+trait EarconInstrument extends StObject {
   
   /**
     * An instrument instance or the name of the instrument in the
@@ -30,24 +31,12 @@ object EarconInstrument {
   }
   
   @scala.inline
-  implicit class EarconInstrumentOps[Self <: EarconInstrument] (val x: Self) extends AnyVal {
+  implicit class EarconInstrumentMutableBuilder[Self <: EarconInstrument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstrument(value: String | Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstrument(value: String | Instrument): Self = this.set("instrument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayOptions(value: InstrumentPlayOptionsObject): Self = this.set("playOptions", value.asInstanceOf[js.Any])
+    def setPlayOptions(value: InstrumentPlayOptionsObject): Self = StObject.set(x, "playOptions", value.asInstanceOf[js.Any])
   }
 }

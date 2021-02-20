@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryObjectsReturnType extends js.Object {
+trait QueryObjectsReturnType extends StObject {
   
   /**
     * Array with objects.
@@ -21,21 +22,9 @@ object QueryObjectsReturnType {
   }
   
   @scala.inline
-  implicit class QueryObjectsReturnTypeOps[Self <: QueryObjectsReturnType] (val x: Self) extends AnyVal {
+  implicit class QueryObjectsReturnTypeMutableBuilder[Self <: QueryObjectsReturnType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObjects(value: RemoteObject): Self = this.set("objects", value.asInstanceOf[js.Any])
+    def setObjects(value: RemoteObject): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
   }
 }

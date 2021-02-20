@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeElasticIpsRequest extends js.Object {
+trait DescribeElasticIpsRequest extends StObject {
   
   /**
     * The instance ID. If you include this parameter, DescribeElasticIps returns a description of the Elastic IP addresses associated with the specified instance.
@@ -31,39 +32,27 @@ object DescribeElasticIpsRequest {
   }
   
   @scala.inline
-  implicit class DescribeElasticIpsRequestOps[Self <: DescribeElasticIpsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeElasticIpsRequestMutableBuilder[Self <: DescribeElasticIpsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIps(value: Strings): Self = StObject.set(x, "Ips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setIpsUndefined: Self = StObject.set(x, "Ips", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setIpsVarargs(value: String*): Self = StObject.set(x, "Ips", js.Array(value :_*))
     
     @scala.inline
-    def setIpsVarargs(value: String*): Self = this.set("Ips", js.Array(value :_*))
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIps(value: Strings): Self = this.set("Ips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIps: Self = this.set("Ips", js.undefined)
-    
-    @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

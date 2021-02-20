@@ -1,14 +1,15 @@
 package typings.ethersprojectWordlists
 
 import typings.ethersprojectWordlists.wordlistMod.Wordlist
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/wordlists/lib/lang-ja", JSImport.Namespace)
-@js.native
-object langJaMod extends js.Object {
+object langJaMod {
   
+  @JSImport("@ethersproject/wordlists/lib/lang-ja", "langJa")
+  @js.native
   val langJa: LangJa_ = js.native
   
   @js.native

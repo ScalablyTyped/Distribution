@@ -1,9 +1,10 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "ServiceManagementService")
 @js.native
-class ServiceManagementService () extends js.Object
+class ServiceManagementService () extends StObject

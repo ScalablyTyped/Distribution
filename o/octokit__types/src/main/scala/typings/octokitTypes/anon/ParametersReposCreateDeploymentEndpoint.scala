@@ -6,12 +6,13 @@ import typings.octokitTypes.endpointsMod.ReposCreateDeploymentResponse202Data
 import typings.octokitTypes.endpointsMod.ReposCreateDeploymentResponse409Data
 import typings.octokitTypes.endpointsMod.ReposCreateDeploymentResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReposCreateDeploymentEndpoint extends js.Object {
+trait ParametersReposCreateDeploymentEndpoint extends StObject {
   
   var parameters: ReposCreateDeploymentEndpoint = js.native
   
@@ -36,31 +37,19 @@ object ParametersReposCreateDeploymentEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReposCreateDeploymentEndpointOps[Self <: ParametersReposCreateDeploymentEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReposCreateDeploymentEndpointMutableBuilder[Self <: ParametersReposCreateDeploymentEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReposCreateDeploymentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReposCreateDeploymentEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ReposCreateDeploymentRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setRequest(value: ReposCreateDeploymentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResponse(
       value: OctokitResponse[
           ReposCreateDeploymentResponseData | ReposCreateDeploymentResponse202Data | ReposCreateDeploymentResponse409Data
         ]
-    ): Self = this.set("response", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

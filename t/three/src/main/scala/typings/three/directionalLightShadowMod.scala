@@ -1,18 +1,20 @@
 package typings.three
 
+import typings.three.cameraMod.Camera
 import typings.three.lightShadowMod.LightShadow
 import typings.three.orthographicCameraMod.OrthographicCamera
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/lights/DirectionalLightShadow", JSImport.Namespace)
-@js.native
-object directionalLightShadowMod extends js.Object {
+object directionalLightShadowMod {
   
+  @JSImport("three/src/lights/DirectionalLightShadow", "DirectionalLightShadow")
   @js.native
-  class DirectionalLightShadow () extends LightShadow {
+  class DirectionalLightShadow protected () extends LightShadow {
+    def this(camera: Camera) = this()
     
     @JSName("camera")
     var camera_DirectionalLightShadow: OrthographicCamera = js.native

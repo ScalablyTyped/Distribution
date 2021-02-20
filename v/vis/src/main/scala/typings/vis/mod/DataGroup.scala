@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataGroup extends js.Object {
+trait DataGroup extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object DataGroup {
   }
   
   @scala.inline
-  implicit class DataGroupOps[Self <: DataGroup] (val x: Self) extends AnyVal {
+  implicit class DataGroupMutableBuilder[Self <: DataGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setId(value: IdType): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: IdType): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNestedGroups(value: js.Array[IdType]): Self = StObject.set(x, "nestedGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setNestedGroupsUndefined: Self = StObject.set(x, "nestedGroups", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setNestedGroupsVarargs(value: IdType*): Self = StObject.set(x, "nestedGroups", js.Array(value :_*))
     
     @scala.inline
-    def setNestedGroupsVarargs(value: IdType*): Self = this.set("nestedGroups", js.Array(value :_*))
+    def setOptions(value: DataGroupOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedGroups(value: js.Array[IdType]): Self = this.set("nestedGroups", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteNestedGroups: Self = this.set("nestedGroups", js.undefined)
+    def setShowNested(value: Boolean): Self = StObject.set(x, "showNested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: DataGroupOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setShowNestedUndefined: Self = StObject.set(x, "showNested", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowNested(value: Boolean): Self = this.set("showNested", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteShowNested: Self = this.set("showNested", js.undefined)
+    def setSubgroupOrder(value: String | js.Function0[Unit]): Self = StObject.set(x, "subgroupOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSubgroupOrderFunction0(value: () => Unit): Self = StObject.set(x, "subgroupOrder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setSubgroupOrderUndefined: Self = StObject.set(x, "subgroupOrder", js.undefined)
     
     @scala.inline
-    def setSubgroupOrderFunction0(value: () => Unit): Self = this.set("subgroupOrder", js.Any.fromFunction0(value))
+    def setSubgroupStack(value: SubGroupStackOptions | Boolean): Self = StObject.set(x, "subgroupStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubgroupOrder(value: String | js.Function0[Unit]): Self = this.set("subgroupOrder", value.asInstanceOf[js.Any])
+    def setSubgroupStackUndefined: Self = StObject.set(x, "subgroupStack", js.undefined)
     
     @scala.inline
-    def deleteSubgroupOrder: Self = this.set("subgroupOrder", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubgroupStack(value: SubGroupStackOptions | Boolean): Self = this.set("subgroupStack", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSubgroupStack: Self = this.set("subgroupStack", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

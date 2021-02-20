@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.max
 import typings.arcgisJsApi.arcgisJsApiStrings.min
 import typings.arcgisJsApi.arcgisJsApiStrings.tick
 import typings.arcgisJsApi.arcgisJsApiStrings.value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,72 +78,60 @@ object SmartMappingSliderBaseProperties {
   }
   
   @scala.inline
-  implicit class SmartMappingSliderBasePropertiesOps[Self <: SmartMappingSliderBaseProperties] (val x: Self) extends AnyVal {
+  implicit class SmartMappingSliderBasePropertiesMutableBuilder[Self <: SmartMappingSliderBaseProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistogramConfig(value: HistogramConfig): Self = StObject.set(x, "histogramConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHistogramConfig(value: HistogramConfig): Self = this.set("histogramConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistogramConfig: Self = this.set("histogramConfig", js.undefined)
+    def setHistogramConfigUndefined: Self = StObject.set(x, "histogramConfig", js.undefined)
     
     @scala.inline
     def setInputFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | value], /* index */ js.UndefOr[Double]) => String
-    ): Self = this.set("inputFormatFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "inputFormatFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInputFormatFunction: Self = this.set("inputFormatFunction", js.undefined)
+    def setInputFormatFunctionUndefined: Self = StObject.set(x, "inputFormatFunction", js.undefined)
     
     @scala.inline
     def setInputParseFunction(
       value: (/* value */ String, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => Double
-    ): Self = this.set("inputParseFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "inputParseFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInputParseFunction: Self = this.set("inputParseFunction", js.undefined)
+    def setInputParseFunctionUndefined: Self = StObject.set(x, "inputParseFunction", js.undefined)
     
     @scala.inline
     def setLabelFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | value], /* index */ js.UndefOr[Double]) => String
-    ): Self = this.set("labelFormatFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "labelFormatFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteLabelFormatFunction: Self = this.set("labelFormatFunction", js.undefined)
+    def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def setZoomOptions(value: SmartMappingSliderBaseZoomOptions): Self = this.set("zoomOptions", value.asInstanceOf[js.Any])
+    def setZoomOptions(value: SmartMappingSliderBaseZoomOptions): Self = StObject.set(x, "zoomOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZoomOptions: Self = this.set("zoomOptions", js.undefined)
+    def setZoomOptionsUndefined: Self = StObject.set(x, "zoomOptions", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceShadowEnrichActivity extends js.Object {
+trait DeviceShadowEnrichActivity extends StObject {
   
   /**
     * The name of the attribute that is added to the message.
@@ -41,36 +42,24 @@ object DeviceShadowEnrichActivity {
   }
   
   @scala.inline
-  implicit class DeviceShadowEnrichActivityOps[Self <: DeviceShadowEnrichActivity] (val x: Self) extends AnyVal {
+  implicit class DeviceShadowEnrichActivityMutableBuilder[Self <: DeviceShadowEnrichActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: AttributeName): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribute(value: AttributeName): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def setName(value: ActivityName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThingName(value: AttributeName): Self = this.set("thingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: ActivityName): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setThingName(value: AttributeName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

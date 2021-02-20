@@ -4,12 +4,13 @@ import typings.chrome.chrome.serial.ConnectionInfo
 import typings.chrome.chrome.serial.ConnectionOptions
 import typings.chrome.chrome.serial.DeviceInfo
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofserial extends js.Object {
+trait Typeofserial extends StObject {
   
   val DataBits: EIGHT = js.native
   
@@ -83,74 +84,62 @@ object Typeofserial {
   }
   
   @scala.inline
-  implicit class TypeofserialOps[Self <: Typeofserial] (val x: Self) extends AnyVal {
+  implicit class TypeofserialMutableBuilder[Self <: Typeofserial] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataBits(value: EIGHT): Self = this.set("DataBits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParityBit(value: EVEN): Self = this.set("ParityBit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopBits(value: ONE): Self = this.set("StopBits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClearBreak(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = this.set("clearBreak", js.Any.fromFunction2(value))
+    def setClearBreak(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "clearBreak", js.Any.fromFunction2(value))
     
     @scala.inline
     def setConnect(
       value: (String, ConnectionOptions, js.Function1[/* connectionInfo */ ConnectionInfo, Unit]) => Unit
-    ): Self = this.set("connect", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "connect", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDisconnect(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = this.set("disconnect", js.Any.fromFunction2(value))
+    def setDataBits(value: EIGHT): Self = StObject.set(x, "DataBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlush(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = this.set("flush", js.Any.fromFunction2(value))
+    def setDisconnect(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetConnections(value: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit] => Unit): Self = this.set("getConnections", js.Any.fromFunction1(value))
+    def setFlush(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetControlSignals(value: (Double, js.Function1[/* signals */ js.Object, Unit]) => Unit): Self = this.set("getControlSignals", js.Any.fromFunction2(value))
+    def setGetConnections(value: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit] => Unit): Self = StObject.set(x, "getConnections", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDevices(value: js.Function1[/* ports */ js.Array[DeviceInfo], Unit] => Unit): Self = this.set("getDevices", js.Any.fromFunction1(value))
+    def setGetControlSignals(value: (Double, js.Function1[/* signals */ js.Object, Unit]) => Unit): Self = StObject.set(x, "getControlSignals", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetInfo(value: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit] => Unit): Self = this.set("getInfo", js.Any.fromFunction1(value))
+    def setGetDevices(value: js.Function1[/* ports */ js.Array[DeviceInfo], Unit] => Unit): Self = StObject.set(x, "getDevices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReceive(value: TypeofonReceive): Self = this.set("onReceive", value.asInstanceOf[js.Any])
+    def setGetInfo(value: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReceiveError(value: TypeofonReceiveError): Self = this.set("onReceiveError", value.asInstanceOf[js.Any])
+    def setOnReceive(value: TypeofonReceive): Self = StObject.set(x, "onReceive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSend(value: (Double, ArrayBuffer, js.Function1[/* sendInfo */ js.Object, Unit]) => Unit): Self = this.set("send", js.Any.fromFunction3(value))
+    def setOnReceiveError(value: TypeofonReceiveError): Self = StObject.set(x, "onReceiveError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetBreak(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = this.set("setBreak", js.Any.fromFunction2(value))
+    def setParityBit(value: EVEN): Self = StObject.set(x, "ParityBit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetControlSignals(value: (Double, js.Object, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = this.set("setControlSignals", js.Any.fromFunction3(value))
+    def setSend(value: (Double, ArrayBuffer, js.Function1[/* sendInfo */ js.Object, Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetPaused(value: (Double, Boolean, js.Function0[Unit]) => Unit): Self = this.set("setPaused", js.Any.fromFunction3(value))
+    def setSetBreak(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "setBreak", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdate(value: (Double, ConnectionOptions, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = this.set("update", js.Any.fromFunction3(value))
+    def setSetControlSignals(value: (Double, js.Object, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "setControlSignals", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setSetPaused(value: (Double, Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setPaused", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setStopBits(value: ONE): Self = StObject.set(x, "StopBits", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUpdate(value: (Double, ConnectionOptions, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

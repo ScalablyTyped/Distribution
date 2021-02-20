@@ -3,12 +3,13 @@ package typings.reachRouter.mod
 import typings.history.mod.LocationState
 import typings.reachRouter.anon.PushState
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistorySource extends js.Object {
+trait HistorySource extends StObject {
   
   def addEventListener(name: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
   
@@ -32,30 +33,18 @@ object HistorySource {
   }
   
   @scala.inline
-  implicit class HistorySourceOps[Self <: HistorySource] (val x: Self) extends AnyVal {
+  implicit class HistorySourceMutableBuilder[Self <: HistorySource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEventListener(value: (String, js.Function1[/* event */ Event, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHistory(value: PushState): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddEventListener(value: (String, js.Function1[/* event */ Event, Unit]) => Unit): Self = this.set("addEventListener", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setHistory(value: PushState): Self = this.set("history", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: WindowLocation[LocationState]): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveEventListener(value: (String, js.Function1[/* event */ Event, Unit]) => Unit): Self = this.set("removeEventListener", js.Any.fromFunction2(value))
+    def setRemoveEventListener(value: (String, js.Function1[/* event */ Event, Unit]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
   }
 }

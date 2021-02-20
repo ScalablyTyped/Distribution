@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergeMetadata extends js.Object {
+trait MergeMetadata extends StObject {
   
   /**
     * A Boolean value indicating whether the merge has been made.
@@ -36,42 +37,30 @@ object MergeMetadata {
   }
   
   @scala.inline
-  implicit class MergeMetadataOps[Self <: MergeMetadata] (val x: Self) extends AnyVal {
+  implicit class MergeMetadataMutableBuilder[Self <: MergeMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsMerged(value: IsMerged): Self = StObject.set(x, "isMerged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsMergedUndefined: Self = StObject.set(x, "isMerged", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMergeCommitId(value: CommitId): Self = StObject.set(x, "mergeCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMerged(value: IsMerged): Self = this.set("isMerged", value.asInstanceOf[js.Any])
+    def setMergeCommitIdUndefined: Self = StObject.set(x, "mergeCommitId", js.undefined)
     
     @scala.inline
-    def deleteIsMerged: Self = this.set("isMerged", js.undefined)
+    def setMergeOption(value: MergeOptionTypeEnum): Self = StObject.set(x, "mergeOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeCommitId(value: CommitId): Self = this.set("mergeCommitId", value.asInstanceOf[js.Any])
+    def setMergeOptionUndefined: Self = StObject.set(x, "mergeOption", js.undefined)
     
     @scala.inline
-    def deleteMergeCommitId: Self = this.set("mergeCommitId", js.undefined)
+    def setMergedBy(value: Arn): Self = StObject.set(x, "mergedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeOption(value: MergeOptionTypeEnum): Self = this.set("mergeOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergeOption: Self = this.set("mergeOption", js.undefined)
-    
-    @scala.inline
-    def setMergedBy(value: Arn): Self = this.set("mergedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergedBy: Self = this.set("mergedBy", js.undefined)
+    def setMergedByUndefined: Self = StObject.set(x, "mergedBy", js.undefined)
   }
 }

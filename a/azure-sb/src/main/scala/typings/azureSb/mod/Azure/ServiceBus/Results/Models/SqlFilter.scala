@@ -1,6 +1,7 @@
 package typings.azureSb.mod.Azure.ServiceBus.Results.Models
 
 import typings.azureSb.mod.Azure.ServiceBus.Dictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-filter
   */
 @js.native
-trait SqlFilter extends js.Object {
+trait SqlFilter extends StObject {
   
   val CompatibilityLevel: String = js.native
   
@@ -28,36 +29,24 @@ object SqlFilter {
   }
   
   @scala.inline
-  implicit class SqlFilterOps[Self <: SqlFilter] (val x: Self) extends AnyVal {
+  implicit class SqlFilterMutableBuilder[Self <: SqlFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompatibilityLevel(value: String): Self = StObject.set(x, "CompatibilityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameters(value: Dictionary[_]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def setCompatibilityLevel(value: String): Self = this.set("CompatibilityLevel", value.asInstanceOf[js.Any])
+    def setRequiresPreprocessing(value: String): Self = StObject.set(x, "RequiresPreprocessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlExpression(value: String): Self = this.set("SqlExpression", value.asInstanceOf[js.Any])
+    def setRequiresPreprocessingUndefined: Self = StObject.set(x, "RequiresPreprocessing", js.undefined)
     
     @scala.inline
-    def setParameters(value: Dictionary[_]): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
-    
-    @scala.inline
-    def setRequiresPreprocessing(value: String): Self = this.set("RequiresPreprocessing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiresPreprocessing: Self = this.set("RequiresPreprocessing", js.undefined)
+    def setSqlExpression(value: String): Self = StObject.set(x, "SqlExpression", value.asInstanceOf[js.Any])
   }
 }

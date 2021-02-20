@@ -1,13 +1,14 @@
 package typings.dockerode.mod
 
 import typings.node.streamMod.Duplex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dockerode", "Exec")
 @js.native
-class Exec protected () extends js.Object {
+class Exec protected () extends StObject {
   def this(modem: js.Any, id: String) = this()
   
   var id: String = js.native

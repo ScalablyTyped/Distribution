@@ -1,17 +1,18 @@
 package typings.microsoftAjax.Sys.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MouseButton extends js.Object
+sealed trait MouseButton extends StObject
 /**
   * Describes mouse button locations.
   */
 @JSGlobal("Sys.UI.MouseButton")
 @js.native
-object MouseButton extends js.Object {
+object MouseButton extends StObject {
   
   /**
     * Represents the left mouse button.

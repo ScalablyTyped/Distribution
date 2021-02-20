@@ -1,11 +1,12 @@
 package typings.d3pie.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasPadding extends js.Object {
+trait CanvasPadding extends StObject {
   
   var canvasPadding: js.UndefOr[Bottom] = js.native
   
@@ -26,48 +27,36 @@ object CanvasPadding {
   }
   
   @scala.inline
-  implicit class CanvasPaddingOps[Self <: CanvasPadding] (val x: Self) extends AnyVal {
+  implicit class CanvasPaddingMutableBuilder[Self <: CanvasPadding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvasPadding(value: Bottom): Self = StObject.set(x, "canvasPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanvasPaddingUndefined: Self = StObject.set(x, "canvasPadding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasPadding(value: Bottom): Self = this.set("canvasPadding", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteCanvasPadding: Self = this.set("canvasPadding", js.undefined)
+    def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: Background): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setGradient(value: ColorEnabled): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssPrefix(value: String): Self = this.set("cssPrefix", value.asInstanceOf[js.Any])
+    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
     @scala.inline
-    def deleteCssPrefix: Self = this.set("cssPrefix", js.undefined)
+    def setPieCenterOffset(value: X): Self = StObject.set(x, "pieCenterOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradient(value: ColorEnabled): Self = this.set("gradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGradient: Self = this.set("gradient", js.undefined)
-    
-    @scala.inline
-    def setPieCenterOffset(value: X): Self = this.set("pieCenterOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePieCenterOffset: Self = this.set("pieCenterOffset", js.undefined)
+    def setPieCenterOffsetUndefined: Self = StObject.set(x, "pieCenterOffset", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.sharepoint.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.sharepoint.sharepointNumbers.`3`
   - typings.sharepoint.sharepointNumbers.`4`
 */
-trait RowType extends js.Object
+trait RowType extends StObject
 object RowType {
   
   @scala.inline

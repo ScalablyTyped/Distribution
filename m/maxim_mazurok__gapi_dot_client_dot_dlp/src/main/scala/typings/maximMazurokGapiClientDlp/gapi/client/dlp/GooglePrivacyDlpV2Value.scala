@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2Value extends js.Object {
+trait GooglePrivacyDlpV2Value extends StObject {
   
   /** boolean */
   var booleanValue: js.UndefOr[Boolean] = js.native
@@ -40,66 +41,54 @@ object GooglePrivacyDlpV2Value {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2ValueOps[Self <: GooglePrivacyDlpV2Value] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2ValueMutableBuilder[Self <: GooglePrivacyDlpV2Value] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateValue(value: GoogleTypeDate): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBooleanValue(value: Boolean): Self = this.set("booleanValue", value.asInstanceOf[js.Any])
+    def setDateValueUndefined: Self = StObject.set(x, "dateValue", js.undefined)
     
     @scala.inline
-    def deleteBooleanValue: Self = this.set("booleanValue", js.undefined)
+    def setDayOfWeekValue(value: String): Self = StObject.set(x, "dayOfWeekValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateValue(value: GoogleTypeDate): Self = this.set("dateValue", value.asInstanceOf[js.Any])
+    def setDayOfWeekValueUndefined: Self = StObject.set(x, "dayOfWeekValue", js.undefined)
     
     @scala.inline
-    def deleteDateValue: Self = this.set("dateValue", js.undefined)
+    def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayOfWeekValue(value: String): Self = this.set("dayOfWeekValue", value.asInstanceOf[js.Any])
+    def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
     
     @scala.inline
-    def deleteDayOfWeekValue: Self = this.set("dayOfWeekValue", js.undefined)
+    def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatValue(value: Double): Self = this.set("floatValue", value.asInstanceOf[js.Any])
+    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
     @scala.inline
-    def deleteFloatValue: Self = this.set("floatValue", js.undefined)
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegerValue(value: String): Self = this.set("integerValue", value.asInstanceOf[js.Any])
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     
     @scala.inline
-    def deleteIntegerValue: Self = this.set("integerValue", js.undefined)
+    def setTimeValue(value: GoogleTypeTimeOfDay): Self = StObject.set(x, "timeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
+    def setTimeValueUndefined: Self = StObject.set(x, "timeValue", js.undefined)
     
     @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+    def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeValue(value: GoogleTypeTimeOfDay): Self = this.set("timeValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeValue: Self = this.set("timeValue", js.undefined)
-    
-    @scala.inline
-    def setTimestampValue(value: String): Self = this.set("timestampValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampValue: Self = this.set("timestampValue", js.undefined)
+    def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
   }
 }

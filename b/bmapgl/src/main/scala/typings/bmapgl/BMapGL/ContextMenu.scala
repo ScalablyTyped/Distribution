@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextMenu extends js.Object {
+trait ContextMenu extends StObject {
   
   def addItem(item: MenuItem): Unit = js.native
   
@@ -38,39 +39,27 @@ object ContextMenu {
   }
   
   @scala.inline
-  implicit class ContextMenuOps[Self <: ContextMenu] (val x: Self) extends AnyVal {
+  implicit class ContextMenuMutableBuilder[Self <: ContextMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddItem(value: MenuItem => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSeparator(value: () => Unit): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItem(value: Double => MenuItem): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddItem(value: MenuItem => Unit): Self = this.set("addItem", js.Any.fromFunction1(value))
+    def setOnclose(value: typings.bmapgl.anon.Pixel => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddSeparator(value: () => Unit): Self = this.set("addSeparator", js.Any.fromFunction0(value))
+    def setOnopen(value: typings.bmapgl.anon.Pixel => Unit): Self = StObject.set(x, "onopen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItem(value: Double => MenuItem): Self = this.set("getItem", js.Any.fromFunction1(value))
+    def setRemoveItem(value: MenuItem => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnclose(value: typings.bmapgl.anon.Pixel => Unit): Self = this.set("onclose", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnopen(value: typings.bmapgl.anon.Pixel => Unit): Self = this.set("onopen", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveItem(value: MenuItem => Unit): Self = this.set("removeItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveSeparator(value: Double => Unit): Self = this.set("removeSeparator", js.Any.fromFunction1(value))
+    def setRemoveSeparator(value: Double => Unit): Self = StObject.set(x, "removeSeparator", js.Any.fromFunction1(value))
   }
 }

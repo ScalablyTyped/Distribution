@@ -1,5 +1,6 @@
 package typings.slickgrid.Slick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object OnSelectedRowsChangedEventArgs {
   }
   
   @scala.inline
-  implicit class OnSelectedRowsChangedEventArgsOps[Self <: OnSelectedRowsChangedEventArgs[_], T /* <: SlickData */] (val x: Self with OnSelectedRowsChangedEventArgs[T]) extends AnyVal {
+  implicit class OnSelectedRowsChangedEventArgsMutableBuilder[Self <: OnSelectedRowsChangedEventArgs[_], T /* <: SlickData */] (val x: Self with OnSelectedRowsChangedEventArgs[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRows(value: js.Array[Double]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRowsVarargs(value: Double*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[Double]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setRowsVarargs(value: Double*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

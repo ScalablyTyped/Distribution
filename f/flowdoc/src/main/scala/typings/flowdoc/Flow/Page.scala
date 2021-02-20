@@ -2,6 +2,7 @@ package typings.flowdoc.Flow
 
 import typings.flowdoc.Node
 import typings.flowdoc.flowdocStrings.PAGE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,36 +35,24 @@ object Page {
   }
   
   @scala.inline
-  implicit class PageOps[Self <: Page] (val x: Self) extends AnyVal {
+  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildren(value: js.Array[Screen | Image | Rectangle | Ellipse | Diamond]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: (Screen | Image | Rectangle | Ellipse | Diamond)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setStartNodeID(value: String): Self = StObject.set(x, "startNodeID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: (Screen | Image | Rectangle | Ellipse | Diamond)*): Self = this.set("children", js.Array(value :_*))
+    def setStartNodeIDUndefined: Self = StObject.set(x, "startNodeID", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.Array[Screen | Image | Rectangle | Ellipse | Diamond]): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: PAGE): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartNodeID(value: String): Self = this.set("startNodeID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartNodeID: Self = this.set("startNodeID", js.undefined)
+    def setType(value: PAGE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

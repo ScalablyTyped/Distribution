@@ -2,12 +2,13 @@ package typings.ava.mod
 
 import typings.std.Error
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThrowsExpectation extends js.Object {
+trait ThrowsExpectation extends StObject {
   
   /** The thrown error must have a code that equals the given string or number. */
   var code: js.UndefOr[String | Double] = js.native
@@ -33,48 +34,36 @@ object ThrowsExpectation {
   }
   
   @scala.inline
-  implicit class ThrowsExpectationOps[Self <: ThrowsExpectation] (val x: Self) extends AnyVal {
+  implicit class ThrowsExpectationMutableBuilder[Self <: ThrowsExpectation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceOf(value: Constructor): Self = StObject.set(x, "instanceOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String | Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setInstanceOfUndefined: Self = StObject.set(x, "instanceOf", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setIs(value: Error): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceOf(value: Constructor): Self = this.set("instanceOf", value.asInstanceOf[js.Any])
+    def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     
     @scala.inline
-    def deleteInstanceOf: Self = this.set("instanceOf", js.undefined)
+    def setMessage(value: String | RegExp): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs(value: Error): Self = this.set("is", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteIs: Self = this.set("is", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String | RegExp): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

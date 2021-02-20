@@ -1,12 +1,13 @@
 package typings.fancybox
 
 import typings.jquery.JQuery.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyBoxInstanceMethods extends js.Object {
+trait FancyBoxInstanceMethods extends StObject {
   
   /**
     * Activates current instance - brings container to the front and enables keyboard,

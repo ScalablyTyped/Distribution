@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FloatingPointList extends js.Object {
+trait FloatingPointList extends StObject {
   
   /** Elements of the list. */
   var elements: js.UndefOr[js.Array[Double]] = js.native
@@ -19,27 +20,15 @@ object FloatingPointList {
   }
   
   @scala.inline
-  implicit class FloatingPointListOps[Self <: FloatingPointList] (val x: Self) extends AnyVal {
+  implicit class FloatingPointListMutableBuilder[Self <: FloatingPointList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setElementsVarargs(value: Double*): Self = this.set("elements", js.Array(value :_*))
-    
-    @scala.inline
-    def setElements(value: js.Array[Double]): Self = this.set("elements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElements: Self = this.set("elements", js.undefined)
+    def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
   }
 }

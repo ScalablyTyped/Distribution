@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0.3
   */
 @js.native
-trait ControlCommand extends js.Object {
+trait ControlCommand extends StObject {
   
   /**
     * specifies a sequence of named values which are used as argument for the command. The number and type of arguments depend on the the command and
@@ -31,24 +32,12 @@ object ControlCommand {
   }
   
   @scala.inline
-  implicit class ControlCommandOps[Self <: ControlCommand] (val x: Self) extends AnyVal {
+  implicit class ControlCommandMutableBuilder[Self <: ControlCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: SafeArray[NamedValue]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArguments(value: SafeArray[NamedValue]): Self = this.set("Arguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
   }
 }

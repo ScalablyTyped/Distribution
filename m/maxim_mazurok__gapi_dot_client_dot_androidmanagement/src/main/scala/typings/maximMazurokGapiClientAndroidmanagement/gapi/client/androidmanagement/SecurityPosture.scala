@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityPosture extends js.Object {
+trait SecurityPosture extends StObject {
   
   /** Device's security posture value. */
   var devicePosture: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object SecurityPosture {
   }
   
   @scala.inline
-  implicit class SecurityPostureOps[Self <: SecurityPosture] (val x: Self) extends AnyVal {
+  implicit class SecurityPostureMutableBuilder[Self <: SecurityPosture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevicePosture(value: String): Self = StObject.set(x, "devicePosture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevicePostureUndefined: Self = StObject.set(x, "devicePosture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostureDetails(value: js.Array[PostureDetail]): Self = StObject.set(x, "postureDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevicePosture(value: String): Self = this.set("devicePosture", value.asInstanceOf[js.Any])
+    def setPostureDetailsUndefined: Self = StObject.set(x, "postureDetails", js.undefined)
     
     @scala.inline
-    def deleteDevicePosture: Self = this.set("devicePosture", js.undefined)
-    
-    @scala.inline
-    def setPostureDetailsVarargs(value: PostureDetail*): Self = this.set("postureDetails", js.Array(value :_*))
-    
-    @scala.inline
-    def setPostureDetails(value: js.Array[PostureDetail]): Self = this.set("postureDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostureDetails: Self = this.set("postureDetails", js.undefined)
+    def setPostureDetailsVarargs(value: PostureDetail*): Self = StObject.set(x, "postureDetails", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.phantomjs
 
 import typings.phantomjs.anon.Charset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystem extends js.Object {
+trait FileSystem extends StObject {
   
   def absolute(path: String): String = js.native
   

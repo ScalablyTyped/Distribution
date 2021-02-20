@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.codedeploy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute extends js.Object {
+trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute extends StObject {
   
   /**
     * List of Amazon Resource Names (ARNs) of the load balancer listeners.
@@ -21,24 +22,12 @@ object DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute {
   }
   
   @scala.inline
-  implicit class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOps[Self <: DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute] (val x: Self) extends AnyVal {
+  implicit class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteMutableBuilder[Self <: DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListenerArns(value: js.Array[String]): Self = StObject.set(x, "listenerArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setListenerArnsVarargs(value: String*): Self = this.set("listenerArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setListenerArns(value: js.Array[String]): Self = this.set("listenerArns", value.asInstanceOf[js.Any])
+    def setListenerArnsVarargs(value: String*): Self = StObject.set(x, "listenerArns", js.Array(value :_*))
   }
 }

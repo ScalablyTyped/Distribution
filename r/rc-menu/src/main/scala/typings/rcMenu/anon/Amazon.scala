@@ -1,11 +1,12 @@
 package typings.rcMenu.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Amazon extends js.Object {
+trait Amazon extends StObject {
   
   var amazon: Phone = js.native
   
@@ -41,42 +42,30 @@ object Amazon {
   }
   
   @scala.inline
-  implicit class AmazonOps[Self <: Amazon] (val x: Self) extends AnyVal {
+  implicit class AmazonMutableBuilder[Self <: Amazon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmazon(value: Phone): Self = StObject.set(x, "amazon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroid(value: Phone): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAny(value: js.Any): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmazon(value: Phone): Self = this.set("amazon", value.asInstanceOf[js.Any])
+    def setApple(value: Device): Self = StObject.set(x, "apple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid(value: Phone): Self = this.set("android", value.asInstanceOf[js.Any])
+    def setOther(value: Blackberry): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAny(value: js.Any): Self = this.set("any", value.asInstanceOf[js.Any])
+    def setPhone(value: js.Any): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApple(value: Device): Self = this.set("apple", value.asInstanceOf[js.Any])
+    def setTablet(value: js.Any): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOther(value: Blackberry): Self = this.set("other", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhone(value: js.Any): Self = this.set("phone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTablet(value: js.Any): Self = this.set("tablet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindows(value: Phone): Self = this.set("windows", value.asInstanceOf[js.Any])
+    def setWindows(value: Phone): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
   }
 }

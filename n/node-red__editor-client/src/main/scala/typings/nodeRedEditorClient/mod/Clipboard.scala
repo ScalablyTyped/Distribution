@@ -1,12 +1,13 @@
 package typings.nodeRedEditorClient.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Clipboard extends js.Object {
+trait Clipboard extends StObject {
   
   def copyText(value: js.Any, element: HTMLElement, msg: String): Boolean = js.native
   

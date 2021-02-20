@@ -9,6 +9,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -175,192 +176,180 @@ object IPersonaSharedProps {
   }
   
   @scala.inline
-  implicit class IPersonaSharedPropsOps[Self <: IPersonaSharedProps] (val x: Self) extends AnyVal {
+  implicit class IPersonaSharedPropsMutableBuilder[Self <: IPersonaSharedProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPhoneInitials(value: Boolean): Self = StObject.set(x, "allowPhoneInitials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPhoneInitialsUndefined: Self = StObject.set(x, "allowPhoneInitials", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoinProps(value: IPersonaCoinProps): Self = StObject.set(x, "coinProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPhoneInitials(value: Boolean): Self = this.set("allowPhoneInitials", value.asInstanceOf[js.Any])
+    def setCoinPropsUndefined: Self = StObject.set(x, "coinProps", js.undefined)
     
     @scala.inline
-    def deleteAllowPhoneInitials: Self = this.set("allowPhoneInitials", js.undefined)
+    def setCoinSize(value: Double): Self = StObject.set(x, "coinSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoinProps(value: IPersonaCoinProps): Self = this.set("coinProps", value.asInstanceOf[js.Any])
+    def setCoinSizeUndefined: Self = StObject.set(x, "coinSize", js.undefined)
     
     @scala.inline
-    def deleteCoinProps: Self = this.set("coinProps", js.undefined)
+    def setHidePersonaDetails(value: Boolean): Self = StObject.set(x, "hidePersonaDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoinSize(value: Double): Self = this.set("coinSize", value.asInstanceOf[js.Any])
+    def setHidePersonaDetailsUndefined: Self = StObject.set(x, "hidePersonaDetails", js.undefined)
     
     @scala.inline
-    def deleteCoinSize: Self = this.set("coinSize", js.undefined)
+    def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidePersonaDetails(value: Boolean): Self = this.set("hidePersonaDetails", value.asInstanceOf[js.Any])
+    def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
     
     @scala.inline
-    def deleteHidePersonaDetails: Self = this.set("hidePersonaDetails", js.undefined)
+    def setImageInitials(value: String): Self = StObject.set(x, "imageInitials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageAlt(value: String): Self = this.set("imageAlt", value.asInstanceOf[js.Any])
+    def setImageInitialsUndefined: Self = StObject.set(x, "imageInitials", js.undefined)
     
     @scala.inline
-    def deleteImageAlt: Self = this.set("imageAlt", js.undefined)
+    def setImageShouldFadeIn(value: Boolean): Self = StObject.set(x, "imageShouldFadeIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageInitials(value: String): Self = this.set("imageInitials", value.asInstanceOf[js.Any])
+    def setImageShouldFadeInUndefined: Self = StObject.set(x, "imageShouldFadeIn", js.undefined)
     
     @scala.inline
-    def deleteImageInitials: Self = this.set("imageInitials", js.undefined)
+    def setImageShouldStartVisible(value: Boolean): Self = StObject.set(x, "imageShouldStartVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageShouldFadeIn(value: Boolean): Self = this.set("imageShouldFadeIn", value.asInstanceOf[js.Any])
+    def setImageShouldStartVisibleUndefined: Self = StObject.set(x, "imageShouldStartVisible", js.undefined)
     
     @scala.inline
-    def deleteImageShouldFadeIn: Self = this.set("imageShouldFadeIn", js.undefined)
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageShouldStartVisible(value: Boolean): Self = this.set("imageShouldStartVisible", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteImageShouldStartVisible: Self = this.set("imageShouldStartVisible", js.undefined)
+    def setInitialsColor(value: PersonaInitialsColor | String): Self = StObject.set(x, "initialsColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setInitialsColorUndefined: Self = StObject.set(x, "initialsColor", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setIsOutOfOffice(value: Boolean): Self = StObject.set(x, "isOutOfOffice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialsColor(value: PersonaInitialsColor | String): Self = this.set("initialsColor", value.asInstanceOf[js.Any])
+    def setIsOutOfOfficeUndefined: Self = StObject.set(x, "isOutOfOffice", js.undefined)
     
     @scala.inline
-    def deleteInitialsColor: Self = this.set("initialsColor", js.undefined)
+    def setOnPhotoLoadingStateChange(value: /* newImageLoadState */ ImageLoadState => Unit): Self = StObject.set(x, "onPhotoLoadingStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsOutOfOffice(value: Boolean): Self = this.set("isOutOfOffice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsOutOfOffice: Self = this.set("isOutOfOffice", js.undefined)
-    
-    @scala.inline
-    def setOnPhotoLoadingStateChange(value: /* newImageLoadState */ ImageLoadState => Unit): Self = this.set("onPhotoLoadingStateChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnPhotoLoadingStateChange: Self = this.set("onPhotoLoadingStateChange", js.undefined)
+    def setOnPhotoLoadingStateChangeUndefined: Self = StObject.set(x, "onPhotoLoadingStateChange", js.undefined)
     
     @scala.inline
     def setOnRenderCoin(
       value: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null
-    ): Self = this.set("onRenderCoin", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onRenderCoin", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnRenderCoin: Self = this.set("onRenderCoin", js.undefined)
+    def setOnRenderCoinUndefined: Self = StObject.set(x, "onRenderCoin", js.undefined)
     
     @scala.inline
     def setOnRenderInitials(
       value: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null
-    ): Self = this.set("onRenderInitials", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onRenderInitials", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnRenderInitials: Self = this.set("onRenderInitials", js.undefined)
+    def setOnRenderInitialsUndefined: Self = StObject.set(x, "onRenderInitials", js.undefined)
     
     @scala.inline
     def setOnRenderPersonaCoin(
       value: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null
-    ): Self = this.set("onRenderPersonaCoin", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onRenderPersonaCoin", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnRenderPersonaCoin: Self = this.set("onRenderPersonaCoin", js.undefined)
+    def setOnRenderPersonaCoinUndefined: Self = StObject.set(x, "onRenderPersonaCoin", js.undefined)
     
     @scala.inline
-    def setOptionalText(value: String): Self = this.set("optionalText", value.asInstanceOf[js.Any])
+    def setOptionalText(value: String): Self = StObject.set(x, "optionalText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptionalText: Self = this.set("optionalText", js.undefined)
+    def setOptionalTextUndefined: Self = StObject.set(x, "optionalText", js.undefined)
     
     @scala.inline
-    def setPresence(value: PersonaPresence): Self = this.set("presence", value.asInstanceOf[js.Any])
+    def setPresence(value: PersonaPresence): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePresence: Self = this.set("presence", js.undefined)
+    def setPresenceColors(value: Available): Self = StObject.set(x, "presenceColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresenceColors(value: Available): Self = this.set("presenceColors", value.asInstanceOf[js.Any])
+    def setPresenceColorsUndefined: Self = StObject.set(x, "presenceColors", js.undefined)
     
     @scala.inline
-    def deletePresenceColors: Self = this.set("presenceColors", js.undefined)
+    def setPresenceTitle(value: String): Self = StObject.set(x, "presenceTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresenceTitle(value: String): Self = this.set("presenceTitle", value.asInstanceOf[js.Any])
+    def setPresenceTitleUndefined: Self = StObject.set(x, "presenceTitle", js.undefined)
     
     @scala.inline
-    def deletePresenceTitle: Self = this.set("presenceTitle", js.undefined)
+    def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
     
     @scala.inline
-    def setPrimaryText(value: String): Self = this.set("primaryText", value.asInstanceOf[js.Any])
+    def setPrimaryText(value: String): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrimaryText: Self = this.set("primaryText", js.undefined)
+    def setPrimaryTextUndefined: Self = StObject.set(x, "primaryText", js.undefined)
     
     @scala.inline
-    def setSecondaryText(value: String): Self = this.set("secondaryText", value.asInstanceOf[js.Any])
+    def setSecondaryText(value: String): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecondaryText: Self = this.set("secondaryText", js.undefined)
+    def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
     
     @scala.inline
-    def setShowInitialsUntilImageLoads(value: Boolean): Self = this.set("showInitialsUntilImageLoads", value.asInstanceOf[js.Any])
+    def setShowInitialsUntilImageLoads(value: Boolean): Self = StObject.set(x, "showInitialsUntilImageLoads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowInitialsUntilImageLoads: Self = this.set("showInitialsUntilImageLoads", js.undefined)
+    def setShowInitialsUntilImageLoadsUndefined: Self = StObject.set(x, "showInitialsUntilImageLoads", js.undefined)
     
     @scala.inline
-    def setShowSecondaryText(value: Boolean): Self = this.set("showSecondaryText", value.asInstanceOf[js.Any])
+    def setShowSecondaryText(value: Boolean): Self = StObject.set(x, "showSecondaryText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowSecondaryText: Self = this.set("showSecondaryText", js.undefined)
+    def setShowSecondaryTextUndefined: Self = StObject.set(x, "showSecondaryText", js.undefined)
     
     @scala.inline
-    def setShowUnknownPersonaCoin(value: Boolean): Self = this.set("showUnknownPersonaCoin", value.asInstanceOf[js.Any])
+    def setShowUnknownPersonaCoin(value: Boolean): Self = StObject.set(x, "showUnknownPersonaCoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowUnknownPersonaCoin: Self = this.set("showUnknownPersonaCoin", js.undefined)
+    def setShowUnknownPersonaCoinUndefined: Self = StObject.set(x, "showUnknownPersonaCoin", js.undefined)
     
     @scala.inline
-    def setSize(value: PersonaSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: PersonaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setTertiaryText(value: String): Self = this.set("tertiaryText", value.asInstanceOf[js.Any])
+    def setTertiaryText(value: String): Self = StObject.set(x, "tertiaryText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTertiaryText: Self = this.set("tertiaryText", js.undefined)
+    def setTertiaryTextUndefined: Self = StObject.set(x, "tertiaryText", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

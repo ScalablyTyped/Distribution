@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelPackageSummary extends js.Object {
+trait ModelPackageSummary extends StObject {
   
   /**
     * A timestamp that shows when the model package was created.
@@ -46,36 +47,24 @@ object ModelPackageSummary {
   }
   
   @scala.inline
-  implicit class ModelPackageSummaryOps[Self <: ModelPackageSummary] (val x: Self) extends AnyVal {
+  implicit class ModelPackageSummaryMutableBuilder[Self <: ModelPackageSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModelPackageArn(value: ModelPackageArn): Self = StObject.set(x, "ModelPackageArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelPackageDescription(value: EntityDescription): Self = StObject.set(x, "ModelPackageDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setModelPackageDescriptionUndefined: Self = StObject.set(x, "ModelPackageDescription", js.undefined)
     
     @scala.inline
-    def setModelPackageArn(value: ModelPackageArn): Self = this.set("ModelPackageArn", value.asInstanceOf[js.Any])
+    def setModelPackageName(value: EntityName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelPackageName(value: EntityName): Self = this.set("ModelPackageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModelPackageStatus(value: ModelPackageStatus): Self = this.set("ModelPackageStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModelPackageDescription(value: EntityDescription): Self = this.set("ModelPackageDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelPackageDescription: Self = this.set("ModelPackageDescription", js.undefined)
+    def setModelPackageStatus(value: ModelPackageStatus): Self = StObject.set(x, "ModelPackageStatus", value.asInstanceOf[js.Any])
   }
 }

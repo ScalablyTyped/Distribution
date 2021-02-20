@@ -1,11 +1,12 @@
 package typings.box2d.Box2D.Collision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2ContactID extends js.Object {
+trait b2ContactID extends StObject {
   
   /**
     * Copies the Contact ID.
@@ -38,30 +39,18 @@ object b2ContactID {
   }
   
   @scala.inline
-  implicit class b2ContactIDOps[Self <: b2ContactID] (val x: Self) extends AnyVal {
+  implicit class b2ContactIDMutableBuilder[Self <: b2ContactID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: () => b2ContactID): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: Double): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: () => b2ContactID): Self = this.set("Copy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setKey(value: Double): Self = this.set("Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSet(value: b2ContactID => Unit): Self = this.set("Set", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFeatures(value: Features): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setSet(value: b2ContactID => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
   }
 }

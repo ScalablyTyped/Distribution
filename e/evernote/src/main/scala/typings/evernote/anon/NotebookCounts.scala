@@ -1,12 +1,13 @@
 package typings.evernote.anon
 
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotebookCounts extends js.Object {
+trait NotebookCounts extends StObject {
   
   var notebookCounts: js.UndefOr[Map[typings.evernote.mod.Types.Guid, Double]] = js.native
   
@@ -23,36 +24,24 @@ object NotebookCounts {
   }
   
   @scala.inline
-  implicit class NotebookCountsOps[Self <: NotebookCounts] (val x: Self) extends AnyVal {
+  implicit class NotebookCountsMutableBuilder[Self <: NotebookCounts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotebookCounts(value: Map[typings.evernote.mod.Types.Guid, Double]): Self = StObject.set(x, "notebookCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotebookCountsUndefined: Self = StObject.set(x, "notebookCounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagCounts(value: Map[typings.evernote.mod.Types.Guid, Double]): Self = StObject.set(x, "tagCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookCounts(value: Map[typings.evernote.mod.Types.Guid, Double]): Self = this.set("notebookCounts", value.asInstanceOf[js.Any])
+    def setTagCountsUndefined: Self = StObject.set(x, "tagCounts", js.undefined)
     
     @scala.inline
-    def deleteNotebookCounts: Self = this.set("notebookCounts", js.undefined)
+    def setTrashCount(value: Double): Self = StObject.set(x, "trashCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagCounts(value: Map[typings.evernote.mod.Types.Guid, Double]): Self = this.set("tagCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagCounts: Self = this.set("tagCounts", js.undefined)
-    
-    @scala.inline
-    def setTrashCount(value: Double): Self = this.set("trashCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrashCount: Self = this.set("trashCount", js.undefined)
+    def setTrashCountUndefined: Self = StObject.set(x, "trashCount", js.undefined)
   }
 }

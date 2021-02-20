@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InspectRequestedEvent extends js.Object {
+trait InspectRequestedEvent extends StObject {
   
   var hints: js.Any = js.native
   
@@ -21,24 +22,12 @@ object InspectRequestedEvent {
   }
   
   @scala.inline
-  implicit class InspectRequestedEventOps[Self <: InspectRequestedEvent] (val x: Self) extends AnyVal {
+  implicit class InspectRequestedEventMutableBuilder[Self <: InspectRequestedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHints(value: js.Any): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHints(value: js.Any): Self = this.set("hints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObject(value: RemoteObject): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

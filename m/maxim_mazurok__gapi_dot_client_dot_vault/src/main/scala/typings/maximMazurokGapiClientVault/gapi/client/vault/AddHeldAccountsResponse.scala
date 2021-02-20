@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVault.gapi.client.vault
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddHeldAccountsResponse extends js.Object {
+trait AddHeldAccountsResponse extends StObject {
   
   /** The list of responses, in the same order as the batch request. */
   var responses: js.UndefOr[js.Array[AddHeldAccountResult]] = js.native
@@ -19,27 +20,15 @@ object AddHeldAccountsResponse {
   }
   
   @scala.inline
-  implicit class AddHeldAccountsResponseOps[Self <: AddHeldAccountsResponse] (val x: Self) extends AnyVal {
+  implicit class AddHeldAccountsResponseMutableBuilder[Self <: AddHeldAccountsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResponses(value: js.Array[AddHeldAccountResult]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResponsesVarargs(value: AddHeldAccountResult*): Self = this.set("responses", js.Array(value :_*))
-    
-    @scala.inline
-    def setResponses(value: js.Array[AddHeldAccountResult]): Self = this.set("responses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponses: Self = this.set("responses", js.undefined)
+    def setResponsesVarargs(value: AddHeldAccountResult*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

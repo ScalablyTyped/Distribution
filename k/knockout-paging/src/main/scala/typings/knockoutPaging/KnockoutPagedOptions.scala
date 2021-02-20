@@ -1,11 +1,12 @@
 package typings.knockoutPaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutPagedOptions extends js.Object {
+trait KnockoutPagedOptions extends StObject {
   
   var pageGenerator: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object KnockoutPagedOptions {
   }
   
   @scala.inline
-  implicit class KnockoutPagedOptionsOps[Self <: KnockoutPagedOptions] (val x: Self) extends AnyVal {
+  implicit class KnockoutPagedOptionsMutableBuilder[Self <: KnockoutPagedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageGenerator(value: String): Self = StObject.set(x, "pageGenerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageGeneratorUndefined: Self = StObject.set(x, "pageGenerator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageGenerator(value: String): Self = this.set("pageGenerator", value.asInstanceOf[js.Any])
+    def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
     
     @scala.inline
-    def deletePageGenerator: Self = this.set("pageGenerator", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumber(value: Double): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageNumber: Self = this.set("pageNumber", js.undefined)
-    
-    @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
   }
 }

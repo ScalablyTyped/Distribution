@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlockPublicAccessConfiguration extends js.Object {
+trait BlockPublicAccessConfiguration extends StObject {
   
   /**
     * Indicates whether EMR block public access is enabled (true) or disabled (false). By default, the value is false for accounts that have created EMR clusters before July 2019. For accounts created after this, the default is true.
@@ -26,30 +27,18 @@ object BlockPublicAccessConfiguration {
   }
   
   @scala.inline
-  implicit class BlockPublicAccessConfigurationOps[Self <: BlockPublicAccessConfiguration] (val x: Self) extends AnyVal {
+  implicit class BlockPublicAccessConfigurationMutableBuilder[Self <: BlockPublicAccessConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockPublicSecurityGroupRules(value: Boolean): Self = StObject.set(x, "BlockPublicSecurityGroupRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermittedPublicSecurityGroupRuleRanges(value: PortRanges): Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermittedPublicSecurityGroupRuleRangesUndefined: Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", js.undefined)
     
     @scala.inline
-    def setBlockPublicSecurityGroupRules(value: Boolean): Self = this.set("BlockPublicSecurityGroupRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermittedPublicSecurityGroupRuleRangesVarargs(value: PortRange*): Self = this.set("PermittedPublicSecurityGroupRuleRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setPermittedPublicSecurityGroupRuleRanges(value: PortRanges): Self = this.set("PermittedPublicSecurityGroupRuleRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermittedPublicSecurityGroupRuleRanges: Self = this.set("PermittedPublicSecurityGroupRuleRanges", js.undefined)
+    def setPermittedPublicSecurityGroupRuleRangesVarargs(value: PortRange*): Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", js.Array(value :_*))
   }
 }

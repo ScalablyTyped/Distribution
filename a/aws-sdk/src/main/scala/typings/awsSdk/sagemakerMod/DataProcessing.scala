@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataProcessing extends js.Object {
+trait DataProcessing extends StObject {
   
   /**
     * A JSONPath expression used to select a portion of the input data to pass to the algorithm. Use the InputFilter parameter to exclude fields, such as an ID column, from the input. If you want Amazon SageMaker to pass the entire input dataset to the algorithm, accept the default value $. Examples: "$", "$[1:]", "$.features" 
@@ -31,36 +32,24 @@ object DataProcessing {
   }
   
   @scala.inline
-  implicit class DataProcessingOps[Self <: DataProcessing] (val x: Self) extends AnyVal {
+  implicit class DataProcessingMutableBuilder[Self <: DataProcessing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputFilter(value: JsonPath): Self = StObject.set(x, "InputFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputFilterUndefined: Self = StObject.set(x, "InputFilter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJoinSource(value: JoinSource): Self = StObject.set(x, "JoinSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFilter(value: JsonPath): Self = this.set("InputFilter", value.asInstanceOf[js.Any])
+    def setJoinSourceUndefined: Self = StObject.set(x, "JoinSource", js.undefined)
     
     @scala.inline
-    def deleteInputFilter: Self = this.set("InputFilter", js.undefined)
+    def setOutputFilter(value: JsonPath): Self = StObject.set(x, "OutputFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoinSource(value: JoinSource): Self = this.set("JoinSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJoinSource: Self = this.set("JoinSource", js.undefined)
-    
-    @scala.inline
-    def setOutputFilter(value: JsonPath): Self = this.set("OutputFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputFilter: Self = this.set("OutputFilter", js.undefined)
+    def setOutputFilterUndefined: Self = StObject.set(x, "OutputFilter", js.undefined)
   }
 }

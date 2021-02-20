@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.networking.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ServiceBackendPort is the service port being referenced.
   */
 @js.native
-trait ServiceBackendPort extends js.Object {
+trait ServiceBackendPort extends StObject {
   
   /**
     * Name is the name of the port on the Service. This is a mutually exclusive setting with "Number".
@@ -29,24 +30,12 @@ object ServiceBackendPort {
   }
   
   @scala.inline
-  implicit class ServiceBackendPortOps[Self <: ServiceBackendPort] (val x: Self) extends AnyVal {
+  implicit class ServiceBackendPortMutableBuilder[Self <: ServiceBackendPort] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

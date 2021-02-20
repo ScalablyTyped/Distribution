@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html)
   */
 @js.native
-trait colorRamps extends js.Object {
+trait colorRamps extends StObject {
   
   /**
     * Returns all color ramps available in smartMapping [color schemes](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html).
@@ -54,30 +55,18 @@ object colorRamps {
   }
   
   @scala.inline
-  implicit class colorRampsOps[Self <: colorRamps] (val x: Self) extends AnyVal {
+  implicit class colorRampsMutableBuilder[Self <: colorRamps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: () => js.Array[colorRampsColorRamp]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByName(value: String => colorRampsColorRamp): Self = StObject.set(x, "byName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setByTag(value: colorRampsByTagParams => js.Array[colorRampsColorRamp]): Self = StObject.set(x, "byTag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAll(value: () => js.Array[colorRampsColorRamp]): Self = this.set("all", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setByName(value: String => colorRampsColorRamp): Self = this.set("byName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setByTag(value: colorRampsByTagParams => js.Array[colorRampsColorRamp]): Self = this.set("byTag", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNames(value: () => js.Array[String]): Self = this.set("names", js.Any.fromFunction0(value))
+    def setNames(value: () => js.Array[String]): Self = StObject.set(x, "names", js.Any.fromFunction0(value))
   }
 }

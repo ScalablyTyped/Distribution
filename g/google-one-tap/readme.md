@@ -3,6 +3,24 @@
 
 Typings are for version 1.0
 
+## Library description:
+Google One Tap Login
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | google-one-tap |
+| Keywords           | google one tap, google sign in, google sign up |
+| # releases         | 4 |
+| # dependents       | 0 |
+| # downloads        | 114 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/BurakGur/google-one-tap#readme)
+- [Bugs](https://github.com/BurakGur/google-one-tap/issues)
+- [Repository](https://github.com/BurakGur/google-one-tap)
+- [Npm](https://www.npmjs.com/package/google-one-tap)
+    
 
 
 ## Note

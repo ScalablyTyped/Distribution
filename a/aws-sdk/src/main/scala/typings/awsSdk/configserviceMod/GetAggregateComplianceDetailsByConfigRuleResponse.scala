@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAggregateComplianceDetailsByConfigRuleResponse extends js.Object {
+trait GetAggregateComplianceDetailsByConfigRuleResponse extends StObject {
   
   /**
     * Returns an AggregateEvaluationResults object.
@@ -26,33 +27,21 @@ object GetAggregateComplianceDetailsByConfigRuleResponse {
   }
   
   @scala.inline
-  implicit class GetAggregateComplianceDetailsByConfigRuleResponseOps[Self <: GetAggregateComplianceDetailsByConfigRuleResponse] (val x: Self) extends AnyVal {
+  implicit class GetAggregateComplianceDetailsByConfigRuleResponseMutableBuilder[Self <: GetAggregateComplianceDetailsByConfigRuleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateEvaluationResults(value: AggregateEvaluationResultList): Self = StObject.set(x, "AggregateEvaluationResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateEvaluationResultsUndefined: Self = StObject.set(x, "AggregateEvaluationResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregateEvaluationResultsVarargs(value: AggregateEvaluationResult*): Self = StObject.set(x, "AggregateEvaluationResults", js.Array(value :_*))
     
     @scala.inline
-    def setAggregateEvaluationResultsVarargs(value: AggregateEvaluationResult*): Self = this.set("AggregateEvaluationResults", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateEvaluationResults(value: AggregateEvaluationResultList): Self = this.set("AggregateEvaluationResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregateEvaluationResults: Self = this.set("AggregateEvaluationResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,18 +1,18 @@
 package typings.three
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/core/Clock", JSImport.Namespace)
-@js.native
-object clockMod extends js.Object {
+object clockMod {
   
+  @JSImport("three/src/core/Clock", "Clock")
   @js.native
   /**
   	 * @param [autoStart=true] Automatically start the clock.
   	 */
-  class Clock () extends js.Object {
+  class Clock () extends StObject {
     def this(autoStart: Boolean) = this()
     
     /**

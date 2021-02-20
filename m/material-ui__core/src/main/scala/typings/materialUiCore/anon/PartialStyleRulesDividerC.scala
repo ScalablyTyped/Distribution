@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Divider.DividerClassKey>> */
 @js.native
-trait PartialStyleRulesDividerC extends js.Object {
+trait PartialStyleRulesDividerC extends StObject {
   
   var absolute: js.UndefOr[CSSProperties] = js.native
   
@@ -28,48 +29,36 @@ object PartialStyleRulesDividerC {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesDividerCOps[Self <: PartialStyleRulesDividerC] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesDividerCMutableBuilder[Self <: PartialStyleRulesDividerC] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolute(value: CSSProperties): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInset(value: CSSProperties): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsolute(value: CSSProperties): Self = this.set("absolute", value.asInstanceOf[js.Any])
+    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
     @scala.inline
-    def deleteAbsolute: Self = this.set("absolute", js.undefined)
+    def setLight(value: CSSProperties): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInset(value: CSSProperties): Self = this.set("inset", value.asInstanceOf[js.Any])
+    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
     @scala.inline
-    def deleteInset: Self = this.set("inset", js.undefined)
+    def setMiddle(value: CSSProperties): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLight(value: CSSProperties): Self = this.set("light", value.asInstanceOf[js.Any])
+    def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
     
     @scala.inline
-    def deleteLight: Self = this.set("light", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiddle(value: CSSProperties): Self = this.set("middle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMiddle: Self = this.set("middle", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

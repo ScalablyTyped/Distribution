@@ -1,17 +1,20 @@
 package typings.ow
 
 import typings.ow.predicateMod.Predicate
+import typings.ow.predicateMod.PredicateOptions
 import typings.std.ArrayBufferLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ow/dist/source/predicates/array-buffer", JSImport.Namespace)
-@js.native
-object arrayBufferMod extends js.Object {
+object arrayBufferMod {
   
+  @JSImport("ow/dist/source/predicates/array-buffer", "ArrayBufferPredicate")
   @js.native
-  class ArrayBufferPredicate[T /* <: ArrayBufferLike */] () extends Predicate[T] {
+  class ArrayBufferPredicate[T /* <: ArrayBufferLike */] protected () extends Predicate[T] {
+    def this(`type`: String) = this()
+    def this(`type`: String, options: PredicateOptions) = this()
     
     /**
       Test an array buffer to have a specific byte length.

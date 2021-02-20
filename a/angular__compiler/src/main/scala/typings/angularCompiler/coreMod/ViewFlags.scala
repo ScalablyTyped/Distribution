@@ -2,6 +2,7 @@ package typings.angularCompiler.coreMod
 
 import typings.angularCompiler.angularCompilerNumbers.`0`
 import typings.angularCompiler.angularCompilerNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularCompiler.angularCompilerNumbers.`0`
   - typings.angularCompiler.angularCompilerNumbers.`2`
 */
-trait ViewFlags extends js.Object
+trait ViewFlags extends StObject
 object ViewFlags {
   
   @scala.inline

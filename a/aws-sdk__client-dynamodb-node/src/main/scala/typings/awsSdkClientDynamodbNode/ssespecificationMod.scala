@@ -1,13 +1,13 @@
 package typings.awsSdkClientDynamodbNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-node/model/_SSESpecification", JSImport.Namespace)
-@js.native
-object ssespecificationMod extends js.Object {
+object ssespecificationMod {
   
-  @JSName("_SSESpecification")
+  @JSImport("@aws-sdk/client-dynamodb-node/model/_SSESpecification", "_SSESpecification")
+  @js.native
   val SSESpecification: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

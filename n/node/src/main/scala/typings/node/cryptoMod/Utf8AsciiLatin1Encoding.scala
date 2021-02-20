@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.node.nodeStrings.ascii
   - typings.node.nodeStrings.latin1
 */
-trait Utf8AsciiLatin1Encoding extends js.Object
+trait Utf8AsciiLatin1Encoding extends StObject
 object Utf8AsciiLatin1Encoding {
   
   @scala.inline

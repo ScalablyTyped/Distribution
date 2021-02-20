@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaAttributeType extends js.Object {
+trait SchemaAttributeType extends StObject {
   
   /**
     * The attribute data type.
@@ -51,60 +52,48 @@ object SchemaAttributeType {
   }
   
   @scala.inline
-  implicit class SchemaAttributeTypeOps[Self <: SchemaAttributeType] (val x: Self) extends AnyVal {
+  implicit class SchemaAttributeTypeMutableBuilder[Self <: SchemaAttributeType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeDataType(value: AttributeDataType): Self = StObject.set(x, "AttributeDataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeDataTypeUndefined: Self = StObject.set(x, "AttributeDataType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeveloperOnlyAttribute(value: BooleanType): Self = StObject.set(x, "DeveloperOnlyAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeDataType(value: AttributeDataType): Self = this.set("AttributeDataType", value.asInstanceOf[js.Any])
+    def setDeveloperOnlyAttributeUndefined: Self = StObject.set(x, "DeveloperOnlyAttribute", js.undefined)
     
     @scala.inline
-    def deleteAttributeDataType: Self = this.set("AttributeDataType", js.undefined)
+    def setMutable(value: BooleanType): Self = StObject.set(x, "Mutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperOnlyAttribute(value: BooleanType): Self = this.set("DeveloperOnlyAttribute", value.asInstanceOf[js.Any])
+    def setMutableUndefined: Self = StObject.set(x, "Mutable", js.undefined)
     
     @scala.inline
-    def deleteDeveloperOnlyAttribute: Self = this.set("DeveloperOnlyAttribute", js.undefined)
+    def setName(value: CustomAttributeNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutable(value: BooleanType): Self = this.set("Mutable", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMutable: Self = this.set("Mutable", js.undefined)
+    def setNumberAttributeConstraints(value: NumberAttributeConstraintsType): Self = StObject.set(x, "NumberAttributeConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: CustomAttributeNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNumberAttributeConstraintsUndefined: Self = StObject.set(x, "NumberAttributeConstraints", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRequired(value: BooleanType): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberAttributeConstraints(value: NumberAttributeConstraintsType): Self = this.set("NumberAttributeConstraints", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "Required", js.undefined)
     
     @scala.inline
-    def deleteNumberAttributeConstraints: Self = this.set("NumberAttributeConstraints", js.undefined)
+    def setStringAttributeConstraints(value: StringAttributeConstraintsType): Self = StObject.set(x, "StringAttributeConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: BooleanType): Self = this.set("Required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("Required", js.undefined)
-    
-    @scala.inline
-    def setStringAttributeConstraints(value: StringAttributeConstraintsType): Self = this.set("StringAttributeConstraints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringAttributeConstraints: Self = this.set("StringAttributeConstraints", js.undefined)
+    def setStringAttributeConstraintsUndefined: Self = StObject.set(x, "StringAttributeConstraints", js.undefined)
   }
 }

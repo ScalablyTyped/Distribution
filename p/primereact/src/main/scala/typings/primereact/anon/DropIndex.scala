@@ -1,11 +1,12 @@
 package typings.primereact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropIndex extends js.Object {
+trait DropIndex extends StObject {
   
   var columns: js.Any = js.native
   
@@ -22,27 +23,15 @@ object DropIndex {
   }
   
   @scala.inline
-  implicit class DropIndexOps[Self <: DropIndex] (val x: Self) extends AnyVal {
+  implicit class DropIndexMutableBuilder[Self <: DropIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragIndex(value: Double): Self = StObject.set(x, "dragIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumns(value: js.Any): Self = this.set("columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDragIndex(value: Double): Self = this.set("dragIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDropIndex(value: Double): Self = this.set("dropIndex", value.asInstanceOf[js.Any])
+    def setDropIndex(value: Double): Self = StObject.set(x, "dropIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a client-side equivalent of the SchedulerViewType object.
   */
 @js.native
-trait ASPxSchedulerViewType extends js.Object {
+trait ASPxSchedulerViewType extends StObject {
   
   /**
     * Gets a string representation equivalent to the SchedulerViewType.Agenda enumeration for use in client scripts.
@@ -62,39 +63,27 @@ object ASPxSchedulerViewType {
   }
   
   @scala.inline
-  implicit class ASPxSchedulerViewTypeOps[Self <: ASPxSchedulerViewType] (val x: Self) extends AnyVal {
+  implicit class ASPxSchedulerViewTypeMutableBuilder[Self <: ASPxSchedulerViewType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgenda(value: String): Self = StObject.set(x, "Agenda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDay(value: String): Self = StObject.set(x, "Day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullWeek(value: String): Self = StObject.set(x, "FullWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgenda(value: String): Self = this.set("Agenda", value.asInstanceOf[js.Any])
+    def setMonth(value: String): Self = StObject.set(x, "Month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: String): Self = this.set("Day", value.asInstanceOf[js.Any])
+    def setTimeline(value: String): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullWeek(value: String): Self = this.set("FullWeek", value.asInstanceOf[js.Any])
+    def setWeek(value: String): Self = StObject.set(x, "Week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: String): Self = this.set("Month", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeline(value: String): Self = this.set("Timeline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeek(value: String): Self = this.set("Week", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkWeek(value: String): Self = this.set("WorkWeek", value.asInstanceOf[js.Any])
+    def setWorkWeek(value: String): Self = StObject.set(x, "WorkWeek", value.asInstanceOf[js.Any])
   }
 }

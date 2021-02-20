@@ -1,16 +1,16 @@
 package typings.babylonjs
 
 import typings.babylonjs.soundMod.Sound
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Audio/weightedsound", JSImport.Namespace)
-@js.native
-object weightedsoundMod extends js.Object {
+object weightedsoundMod {
   
+  @JSImport("babylonjs/Audio/weightedsound", "WeightedSound")
   @js.native
-  class WeightedSound protected () extends js.Object {
+  class WeightedSound protected () extends StObject {
     /**
       * Creates a new WeightedSound from the list of sounds given.
       * @param loop When true a Sound will be selected and played when the current playing Sound completes.

@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEventTypesResponse extends js.Object {
+trait DescribeEventTypesResponse extends StObject {
   
   /**
     * A list of event types that match the filter criteria. Event types have a category (issue, accountNotification, or scheduledChange), a service (for example, EC2, RDS, DATAPIPELINE, BILLING), and a code (in the format AWS_SERVICE_DESCRIPTION ; for example, AWS_EC2_SYSTEM_MAINTENANCE_EVENT).
@@ -26,33 +27,21 @@ object DescribeEventTypesResponse {
   }
   
   @scala.inline
-  implicit class DescribeEventTypesResponseOps[Self <: DescribeEventTypesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeEventTypesResponseMutableBuilder[Self <: DescribeEventTypesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventTypes(value: EventTypeList_): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventTypesVarargs(value: EventType_ *): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEventTypesVarargs(value: EventType_ *): Self = this.set("eventTypes", js.Array(value :_*))
+    def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTypes(value: EventTypeList_): Self = this.set("eventTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventTypes: Self = this.set("eventTypes", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: nextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

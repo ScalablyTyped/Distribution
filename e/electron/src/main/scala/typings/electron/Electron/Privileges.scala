@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Privileges extends js.Object {
+trait Privileges extends StObject {
   
   /**
     * Default false.
@@ -51,60 +52,48 @@ object Privileges {
   }
   
   @scala.inline
-  implicit class PrivilegesOps[Self <: Privileges] (val x: Self) extends AnyVal {
+  implicit class PrivilegesMutableBuilder[Self <: Privileges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowServiceWorkers(value: Boolean): Self = StObject.set(x, "allowServiceWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowServiceWorkersUndefined: Self = StObject.set(x, "allowServiceWorkers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBypassCSP(value: Boolean): Self = StObject.set(x, "bypassCSP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowServiceWorkers(value: Boolean): Self = this.set("allowServiceWorkers", value.asInstanceOf[js.Any])
+    def setBypassCSPUndefined: Self = StObject.set(x, "bypassCSP", js.undefined)
     
     @scala.inline
-    def deleteAllowServiceWorkers: Self = this.set("allowServiceWorkers", js.undefined)
+    def setCorsEnabled(value: Boolean): Self = StObject.set(x, "corsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBypassCSP(value: Boolean): Self = this.set("bypassCSP", value.asInstanceOf[js.Any])
+    def setCorsEnabledUndefined: Self = StObject.set(x, "corsEnabled", js.undefined)
     
     @scala.inline
-    def deleteBypassCSP: Self = this.set("bypassCSP", js.undefined)
+    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorsEnabled(value: Boolean): Self = this.set("corsEnabled", value.asInstanceOf[js.Any])
+    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
     @scala.inline
-    def deleteCorsEnabled: Self = this.set("corsEnabled", js.undefined)
+    def setStandard(value: Boolean): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
     
     @scala.inline
-    def deleteSecure: Self = this.set("secure", js.undefined)
+    def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandard(value: Boolean): Self = this.set("standard", value.asInstanceOf[js.Any])
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
     @scala.inline
-    def deleteStandard: Self = this.set("standard", js.undefined)
+    def setSupportFetchAPI(value: Boolean): Self = StObject.set(x, "supportFetchAPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStream(value: Boolean): Self = this.set("stream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
-    
-    @scala.inline
-    def setSupportFetchAPI(value: Boolean): Self = this.set("supportFetchAPI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportFetchAPI: Self = this.set("supportFetchAPI", js.undefined)
+    def setSupportFetchAPIUndefined: Self = StObject.set(x, "supportFetchAPI", js.undefined)
   }
 }

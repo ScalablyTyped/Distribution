@@ -5,17 +5,17 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.serdeMod.StreamCollector
 import typings.awsSdkTypes.utilMod.Decoder
 import typings.awsSdkTypes.utilMod.Encoder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/protocol-rest/build/RestParser", JSImport.Namespace)
-@js.native
-object restParserMod extends js.Object {
+object restParserMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponseParser<StreamType> * / any */ @js.native
-  class RestParser[StreamType] protected () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponseParser<StreamType> * / any */ @JSImport("@aws-sdk/protocol-rest/build/RestParser", "RestParser")
+  @js.native
+  class RestParser[StreamType] protected () extends StObject {
     def this(
       bodyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodyParser */ js.Any,
       bodyCollector: StreamCollector,

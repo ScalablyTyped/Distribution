@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,45 +120,33 @@ object XDesktop {
   }
   
   @scala.inline
-  implicit class XDesktopOps[Self <: XDesktop] (val x: Self) extends AnyVal {
+  implicit class XDesktopMutableBuilder[Self <: XDesktop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTerminateListener(value: XTerminateListener => Unit): Self = StObject.set(x, "addTerminateListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponents(value: XEnumerationAccess): Self = StObject.set(x, "Components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentComponent(value: XComponent): Self = StObject.set(x, "CurrentComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: XEnumerationAccess): Self = this.set("Components", value.asInstanceOf[js.Any])
+    def setCurrentFrame(value: XFrame): Self = StObject.set(x, "CurrentFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentComponent(value: XComponent): Self = this.set("CurrentComponent", value.asInstanceOf[js.Any])
+    def setGetComponents(value: () => XEnumerationAccess): Self = StObject.set(x, "getComponents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentFrame(value: XFrame): Self = this.set("CurrentFrame", value.asInstanceOf[js.Any])
+    def setGetCurrentComponent(value: () => XComponent): Self = StObject.set(x, "getCurrentComponent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddTerminateListener(value: XTerminateListener => Unit): Self = this.set("addTerminateListener", js.Any.fromFunction1(value))
+    def setGetCurrentFrame(value: () => XFrame): Self = StObject.set(x, "getCurrentFrame", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetComponents(value: () => XEnumerationAccess): Self = this.set("getComponents", js.Any.fromFunction0(value))
+    def setRemoveTerminateListener(value: XTerminateListener => Unit): Self = StObject.set(x, "removeTerminateListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentComponent(value: () => XComponent): Self = this.set("getCurrentComponent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetCurrentFrame(value: () => XFrame): Self = this.set("getCurrentFrame", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveTerminateListener(value: XTerminateListener => Unit): Self = this.set("removeTerminateListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTerminate(value: () => Boolean): Self = this.set("terminate", js.Any.fromFunction0(value))
+    def setTerminate(value: () => Boolean): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }
 }

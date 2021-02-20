@@ -1,6 +1,7 @@
 package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response to the CheckIn method.
   */
 @js.native
-trait SchemaCheckInResponse extends js.Object {
+trait SchemaCheckInResponse extends StObject {
   
   /**
     * The deadline by which the worker must request an extension.  The backend
@@ -33,30 +34,18 @@ object SchemaCheckInResponse {
   }
   
   @scala.inline
-  implicit class SchemaCheckInResponseOps[Self <: SchemaCheckInResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaCheckInResponseMutableBuilder[Self <: SchemaCheckInResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeadline(value: String): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadline(value: String): Self = this.set("deadline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeadline: Self = this.set("deadline", js.undefined)
-    
-    @scala.inline
-    def setMetadata(value: StringDictionary[js.Any]): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

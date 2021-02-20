@@ -2,12 +2,13 @@ package typings.oauth2Server.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TokenOptions extends js.Object {
+trait TokenOptions extends StObject {
   
   /**
     * Lifetime of generated access tokens in seconds (default = 1 hour)
@@ -48,54 +49,42 @@ object TokenOptions {
   }
   
   @scala.inline
-  implicit class TokenOptionsOps[Self <: TokenOptions] (val x: Self) extends AnyVal {
+  implicit class TokenOptionsMutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessTokenLifetime(value: Double): Self = StObject.set(x, "accessTokenLifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenLifetimeUndefined: Self = StObject.set(x, "accessTokenLifetime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowExtendedTokenAttributes(value: Boolean): Self = StObject.set(x, "allowExtendedTokenAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessTokenLifetime(value: Double): Self = this.set("accessTokenLifetime", value.asInstanceOf[js.Any])
+    def setAllowExtendedTokenAttributesUndefined: Self = StObject.set(x, "allowExtendedTokenAttributes", js.undefined)
     
     @scala.inline
-    def deleteAccessTokenLifetime: Self = this.set("accessTokenLifetime", js.undefined)
+    def setAlwaysIssueNewRefreshToken(value: Boolean): Self = StObject.set(x, "alwaysIssueNewRefreshToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowExtendedTokenAttributes(value: Boolean): Self = this.set("allowExtendedTokenAttributes", value.asInstanceOf[js.Any])
+    def setAlwaysIssueNewRefreshTokenUndefined: Self = StObject.set(x, "alwaysIssueNewRefreshToken", js.undefined)
     
     @scala.inline
-    def deleteAllowExtendedTokenAttributes: Self = this.set("allowExtendedTokenAttributes", js.undefined)
+    def setExtendedGrantTypes(value: StringDictionary[Instantiable1[/* options */ TokenOptions, AbstractGrantType]]): Self = StObject.set(x, "extendedGrantTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysIssueNewRefreshToken(value: Boolean): Self = this.set("alwaysIssueNewRefreshToken", value.asInstanceOf[js.Any])
+    def setExtendedGrantTypesUndefined: Self = StObject.set(x, "extendedGrantTypes", js.undefined)
     
     @scala.inline
-    def deleteAlwaysIssueNewRefreshToken: Self = this.set("alwaysIssueNewRefreshToken", js.undefined)
+    def setRefreshTokenLifetime(value: Double): Self = StObject.set(x, "refreshTokenLifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedGrantTypes(value: StringDictionary[Instantiable1[/* options */ TokenOptions, AbstractGrantType]]): Self = this.set("extendedGrantTypes", value.asInstanceOf[js.Any])
+    def setRefreshTokenLifetimeUndefined: Self = StObject.set(x, "refreshTokenLifetime", js.undefined)
     
     @scala.inline
-    def deleteExtendedGrantTypes: Self = this.set("extendedGrantTypes", js.undefined)
+    def setRequireClientAuthentication(value: js.Object): Self = StObject.set(x, "requireClientAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshTokenLifetime(value: Double): Self = this.set("refreshTokenLifetime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshTokenLifetime: Self = this.set("refreshTokenLifetime", js.undefined)
-    
-    @scala.inline
-    def setRequireClientAuthentication(value: js.Object): Self = this.set("requireClientAuthentication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireClientAuthentication: Self = this.set("requireClientAuthentication", js.undefined)
+    def setRequireClientAuthenticationUndefined: Self = StObject.set(x, "requireClientAuthentication", js.undefined)
   }
 }

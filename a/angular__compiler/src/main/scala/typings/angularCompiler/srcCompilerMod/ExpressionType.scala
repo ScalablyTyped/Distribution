@@ -2,6 +2,7 @@ package typings.angularCompiler.srcCompilerMod
 
 import typings.angularCompiler.outputAstMod.ExpressionType_
 import typings.angularCompiler.outputAstMod.TypeModifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

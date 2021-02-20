@@ -1,11 +1,12 @@
 package typings.akuminaCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Templates extends js.Object {
+trait Templates extends StObject {
   
   /**
     * Bind error templates for widgets
@@ -42,39 +43,27 @@ object Templates {
   }
   
   @scala.inline
-  implicit class TemplatesOps[Self <: Templates] (val x: Self) extends AnyVal {
+  implicit class TemplatesMutableBuilder[Self <: Templates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindErrorTemplateForWidgets(value: js.Any => Unit): Self = StObject.set(x, "BindErrorTemplateForWidgets", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCoreTemplate(value: String => String): Self = StObject.set(x, "GetCoreTemplate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetErrorTemplate(value: js.Object => js.Promise[_]): Self = StObject.set(x, "GetErrorTemplate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindErrorTemplateForWidgets(value: js.Any => Unit): Self = this.set("BindErrorTemplateForWidgets", js.Any.fromFunction1(value))
+    def setGetViewPrefix(value: () => Unit): Self = StObject.set(x, "GetViewPrefix", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCoreTemplate(value: String => String): Self = this.set("GetCoreTemplate", js.Any.fromFunction1(value))
+    def setGetVirtualMasterTemplate(value: () => String): Self = StObject.set(x, "GetVirtualMasterTemplate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetErrorTemplate(value: js.Object => js.Promise[_]): Self = this.set("GetErrorTemplate", js.Any.fromFunction1(value))
+    def setParseTemplate(value: (String, js.Any) => js.Promise[_]): Self = StObject.set(x, "ParseTemplate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetViewPrefix(value: () => Unit): Self = this.set("GetViewPrefix", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVirtualMasterTemplate(value: () => String): Self = this.set("GetVirtualMasterTemplate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setParseTemplate(value: (String, js.Any) => js.Promise[_]): Self = this.set("ParseTemplate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRequestTemplateFromServer(value: String => js.Promise[_]): Self = this.set("RequestTemplateFromServer", js.Any.fromFunction1(value))
+    def setRequestTemplateFromServer(value: String => js.Promise[_]): Self = StObject.set(x, "RequestTemplateFromServer", js.Any.fromFunction1(value))
   }
 }

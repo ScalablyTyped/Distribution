@@ -1,5 +1,6 @@
 package typings.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.coinbase.coinbaseStrings.waiting_for_signature
   - typings.coinbase.coinbaseStrings.waiting_for_clearing
 */
-trait TransactionStatus extends js.Object
+trait TransactionStatus extends StObject
 object TransactionStatus {
   
   @scala.inline

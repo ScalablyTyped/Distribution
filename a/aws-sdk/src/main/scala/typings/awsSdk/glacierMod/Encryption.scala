@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Encryption extends js.Object {
+trait Encryption extends StObject {
   
   /**
     * The server-side encryption algorithm used when storing job results in Amazon S3, for example AES256 or aws:kms.
@@ -31,36 +32,24 @@ object Encryption {
   }
   
   @scala.inline
-  implicit class EncryptionOps[Self <: Encryption] (val x: Self) extends AnyVal {
+  implicit class EncryptionMutableBuilder[Self <: Encryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKMSContext(value: String): Self = StObject.set(x, "KMSContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionType(value: EncryptionType): Self = this.set("EncryptionType", value.asInstanceOf[js.Any])
+    def setKMSContextUndefined: Self = StObject.set(x, "KMSContext", js.undefined)
     
     @scala.inline
-    def deleteEncryptionType: Self = this.set("EncryptionType", js.undefined)
+    def setKMSKeyId(value: String): Self = StObject.set(x, "KMSKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSContext(value: String): Self = this.set("KMSContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKMSContext: Self = this.set("KMSContext", js.undefined)
-    
-    @scala.inline
-    def setKMSKeyId(value: String): Self = this.set("KMSKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKMSKeyId: Self = this.set("KMSKeyId", js.undefined)
+    def setKMSKeyIdUndefined: Self = StObject.set(x, "KMSKeyId", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,24 +31,12 @@ object ComplexType {
   }
   
   @scala.inline
-  implicit class ComplexTypeOps[Self <: ComplexType] (val x: Self) extends AnyVal {
+  implicit class ComplexTypeMutableBuilder[Self <: ComplexType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddProperty(value: DataProperty => ComplexType): Self = StObject.set(x, "addProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddProperty(value: DataProperty => ComplexType): Self = this.set("addProperty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetProperties(value: () => js.Array[DataProperty]): Self = this.set("getProperties", js.Any.fromFunction0(value))
+    def setGetProperties(value: () => js.Array[DataProperty]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
   }
 }

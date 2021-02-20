@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Condition extends js.Object {
+trait Condition extends StObject {
   
   /**
     * The state of the crawler to which this condition applies.
@@ -41,48 +42,36 @@ object Condition {
   }
   
   @scala.inline
-  implicit class ConditionOps[Self <: Condition] (val x: Self) extends AnyVal {
+  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrawlState(value: CrawlState): Self = StObject.set(x, "CrawlState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrawlStateUndefined: Self = StObject.set(x, "CrawlState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrawlerName(value: NameString): Self = StObject.set(x, "CrawlerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawlState(value: CrawlState): Self = this.set("CrawlState", value.asInstanceOf[js.Any])
+    def setCrawlerNameUndefined: Self = StObject.set(x, "CrawlerName", js.undefined)
     
     @scala.inline
-    def deleteCrawlState: Self = this.set("CrawlState", js.undefined)
+    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawlerName(value: NameString): Self = this.set("CrawlerName", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
     @scala.inline
-    def deleteCrawlerName: Self = this.set("CrawlerName", js.undefined)
+    def setLogicalOperator(value: LogicalOperator): Self = StObject.set(x, "LogicalOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: NameString): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setLogicalOperatorUndefined: Self = StObject.set(x, "LogicalOperator", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("JobName", js.undefined)
+    def setState(value: JobRunState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalOperator(value: LogicalOperator): Self = this.set("LogicalOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogicalOperator: Self = this.set("LogicalOperator", js.undefined)
-    
-    @scala.inline
-    def setState(value: JobRunState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

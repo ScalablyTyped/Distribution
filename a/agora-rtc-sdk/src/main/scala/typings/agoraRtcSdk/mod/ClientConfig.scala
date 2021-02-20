@@ -5,6 +5,7 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.live
 import typings.agoraRtcSdk.agoraRtcSdkStrings.rtc
 import typings.agoraRtcSdk.agoraRtcSdkStrings.vp8_
 import typings.agoraRtcSdk.anon.Forceturn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * var client = AgoraRTC.createClient(config);```
   */
 @js.native
-trait ClientConfig extends js.Object {
+trait ClientConfig extends StObject {
   
   /**
     * The codec the Web browser uses for encoding.
@@ -104,39 +105,27 @@ object ClientConfig {
   }
   
   @scala.inline
-  implicit class ClientConfigOps[Self <: ClientConfig] (val x: Self) extends AnyVal {
+  implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodec(value: vp8_ | h264_): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: live | rtc): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProxyServer(value: String): Self = StObject.set(x, "proxyServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: vp8_ | h264_): Self = this.set("codec", value.asInstanceOf[js.Any])
+    def setProxyServerUndefined: Self = StObject.set(x, "proxyServer", js.undefined)
     
     @scala.inline
-    def setMode(value: live | rtc): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setTurnServer(value: js.Array[Forceturn]): Self = StObject.set(x, "turnServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyServer(value: String): Self = this.set("proxyServer", value.asInstanceOf[js.Any])
+    def setTurnServerUndefined: Self = StObject.set(x, "turnServer", js.undefined)
     
     @scala.inline
-    def deleteProxyServer: Self = this.set("proxyServer", js.undefined)
-    
-    @scala.inline
-    def setTurnServerVarargs(value: Forceturn*): Self = this.set("turnServer", js.Array(value :_*))
-    
-    @scala.inline
-    def setTurnServer(value: js.Array[Forceturn]): Self = this.set("turnServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTurnServer: Self = this.set("turnServer", js.undefined)
+    def setTurnServerVarargs(value: Forceturn*): Self = StObject.set(x, "turnServer", js.Array(value :_*))
   }
 }

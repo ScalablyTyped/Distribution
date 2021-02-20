@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Thumbnails extends js.Object {
+trait Thumbnails extends StObject {
   
   /**
     *  To better control resolution and aspect ratio of thumbnails, we recommend that you use the values MaxWidth, MaxHeight, SizingPolicy, and PaddingPolicy instead of Resolution and AspectRatio. The two groups of settings are mutually exclusive. Do not use them together.  The aspect ratio of thumbnails. Valid values include:  auto, 1:1, 4:3, 3:2, 16:9  If you specify auto, Elastic Transcoder tries to preserve the aspect ratio of the video in the output file.
@@ -56,66 +57,54 @@ object Thumbnails {
   }
   
   @scala.inline
-  implicit class ThumbnailsOps[Self <: Thumbnails] (val x: Self) extends AnyVal {
+  implicit class ThumbnailsMutableBuilder[Self <: Thumbnails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "AspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAspectRatioUndefined: Self = StObject.set(x, "AspectRatio", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: JpgOrPng): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspectRatio(value: AspectRatio): Self = this.set("AspectRatio", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def deleteAspectRatio: Self = this.set("AspectRatio", js.undefined)
+    def setInterval(value: Digits): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: JpgOrPng): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setMaxHeight(value: DigitsOrAuto): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Digits): Self = this.set("Interval", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("Interval", js.undefined)
+    def setMaxWidth(value: DigitsOrAuto): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: DigitsOrAuto): Self = this.set("MaxHeight", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("MaxHeight", js.undefined)
+    def setPaddingPolicy(value: PaddingPolicy): Self = StObject.set(x, "PaddingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: DigitsOrAuto): Self = this.set("MaxWidth", value.asInstanceOf[js.Any])
+    def setPaddingPolicyUndefined: Self = StObject.set(x, "PaddingPolicy", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("MaxWidth", js.undefined)
+    def setResolution(value: ThumbnailResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingPolicy(value: PaddingPolicy): Self = this.set("PaddingPolicy", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
     
     @scala.inline
-    def deletePaddingPolicy: Self = this.set("PaddingPolicy", js.undefined)
+    def setSizingPolicy(value: SizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: ThumbnailResolution): Self = this.set("Resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("Resolution", js.undefined)
-    
-    @scala.inline
-    def setSizingPolicy(value: SizingPolicy): Self = this.set("SizingPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizingPolicy: Self = this.set("SizingPolicy", js.undefined)
+    def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
   }
 }

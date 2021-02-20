@@ -4,13 +4,14 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.mod.ButtonInformation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.PricingCardProps> */
 @js.native
-trait PartialPricingCardProps extends js.Object {
+trait PartialPricingCardProps extends StObject {
   
   var button: js.UndefOr[ButtonInformation] = js.native
   
@@ -43,102 +44,90 @@ object PartialPricingCardProps {
   }
   
   @scala.inline
-  implicit class PartialPricingCardPropsOps[Self <: PartialPricingCardProps] (val x: Self) extends AnyVal {
+  implicit class PartialPricingCardPropsMutableBuilder[Self <: PartialPricingCardProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: ButtonInformation): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: ButtonInformation): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setInfo(value: js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setInfoStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "infoStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    def setInfoStyleNull: Self = StObject.set(x, "infoStyle", null)
     
     @scala.inline
-    def setInfoVarargs(value: String*): Self = this.set("info", js.Array(value :_*))
+    def setInfoStyleUndefined: Self = StObject.set(x, "infoStyle", js.undefined)
     
     @scala.inline
-    def setInfo(value: js.Array[String]): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
+    def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
     
     @scala.inline
-    def setInfoStyle(value: StyleProp[TextStyle]): Self = this.set("infoStyle", value.asInstanceOf[js.Any])
+    def setOnButtonPress(value: () => Unit): Self = StObject.set(x, "onButtonPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteInfoStyle: Self = this.set("infoStyle", js.undefined)
+    def setOnButtonPressUndefined: Self = StObject.set(x, "onButtonPress", js.undefined)
     
     @scala.inline
-    def setInfoStyleNull: Self = this.set("infoStyle", null)
+    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnButtonPress(value: () => Unit): Self = this.set("onButtonPress", js.Any.fromFunction0(value))
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
     @scala.inline
-    def deleteOnButtonPress: Self = this.set("onButtonPress", js.undefined)
+    def setPricingStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "pricingStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: String): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setPricingStyleNull: Self = StObject.set(x, "pricingStyle", null)
     
     @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setPricingStyleUndefined: Self = StObject.set(x, "pricingStyle", js.undefined)
     
     @scala.inline
-    def setPricingStyle(value: StyleProp[TextStyle]): Self = this.set("pricingStyle", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePricingStyle: Self = this.set("pricingStyle", js.undefined)
+    def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingStyleNull: Self = this.set("pricingStyle", null)
+    def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTitleStyle(value: StyleProp[TextStyle]): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
+    def setWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
+    def setWrapperStyleNull: Self = StObject.set(x, "wrapperStyle", null)
     
     @scala.inline
-    def setTitleStyleNull: Self = this.set("titleStyle", null)
-    
-    @scala.inline
-    def setWrapperStyle(value: StyleProp[ViewStyle]): Self = this.set("wrapperStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperStyle: Self = this.set("wrapperStyle", js.undefined)
-    
-    @scala.inline
-    def setWrapperStyleNull: Self = this.set("wrapperStyle", null)
+    def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
   }
 }

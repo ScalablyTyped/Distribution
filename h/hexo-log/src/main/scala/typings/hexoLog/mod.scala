@@ -3,15 +3,18 @@ package typings.hexoLog
 import typings.hexoBunyan.mod.^
 import typings.hexoLog.anon.Debug
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hexo-log", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("hexo-log", JSImport.Namespace)
+  @js.native
   def apply(): HexoLogger = js.native
+  @JSImport("hexo-log", JSImport.Namespace)
+  @js.native
   def apply(options: Debug): HexoLogger = js.native
   
   @js.native

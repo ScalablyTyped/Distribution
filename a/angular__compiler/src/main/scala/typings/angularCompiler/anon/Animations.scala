@@ -3,12 +3,13 @@ package typings.angularCompiler.anon
 import typings.angularCompiler.compileMetadataMod.CompileStylesheetMetadata
 import typings.angularCompiler.coreMod.ViewEncapsulation
 import typings.angularCompiler.mlParserParserMod.ParseTreeResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animations extends js.Object {
+trait Animations extends StObject {
   
   var animations: js.Array[_] = js.native
   
@@ -51,84 +52,72 @@ object Animations {
   }
   
   @scala.inline
-  implicit class AnimationsOps[Self <: Animations] (val x: Self) extends AnyVal {
+  implicit class AnimationsMutableBuilder[Self <: Animations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimations(value: js.Array[_]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationsVarargs(value: js.Any*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationsVarargs(value: js.Any*): Self = this.set("animations", js.Array(value :_*))
+    def setEncapsulationNull: Self = StObject.set(x, "encapsulation", null)
     
     @scala.inline
-    def setAnimations(value: js.Array[_]): Self = this.set("animations", value.asInstanceOf[js.Any])
+    def setExternalStylesheets(value: js.Array[CompileStylesheetMetadata]): Self = StObject.set(x, "externalStylesheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalStylesheetsVarargs(value: CompileStylesheetMetadata*): Self = this.set("externalStylesheets", js.Array(value :_*))
+    def setExternalStylesheetsVarargs(value: CompileStylesheetMetadata*): Self = StObject.set(x, "externalStylesheets", js.Array(value :_*))
     
     @scala.inline
-    def setExternalStylesheets(value: js.Array[CompileStylesheetMetadata]): Self = this.set("externalStylesheets", value.asInstanceOf[js.Any])
+    def setHtmlAst(value: ParseTreeResult): Self = StObject.set(x, "htmlAst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInline(value: Boolean): Self = this.set("isInline", value.asInstanceOf[js.Any])
+    def setHtmlAstNull: Self = StObject.set(x, "htmlAst", null)
     
     @scala.inline
-    def setNgContentSelectorsVarargs(value: String*): Self = this.set("ngContentSelectors", js.Array(value :_*))
+    def setInterpolation(value: js.Tuple2[String, String]): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNgContentSelectors(value: js.Array[String]): Self = this.set("ngContentSelectors", value.asInstanceOf[js.Any])
+    def setInterpolationNull: Self = StObject.set(x, "interpolation", null)
     
     @scala.inline
-    def setPreserveWhitespaces(value: Boolean): Self = this.set("preserveWhitespaces", value.asInstanceOf[js.Any])
+    def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleUrlsVarargs(value: String*): Self = this.set("styleUrls", js.Array(value :_*))
+    def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleUrls(value: js.Array[String]): Self = this.set("styleUrls", value.asInstanceOf[js.Any])
+    def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
     
     @scala.inline
-    def setStylesVarargs(value: String*): Self = this.set("styles", js.Array(value :_*))
+    def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Array[String]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncapsulation(value: ViewEncapsulation): Self = this.set("encapsulation", value.asInstanceOf[js.Any])
+    def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
     
     @scala.inline
-    def setEncapsulationNull: Self = this.set("encapsulation", null)
+    def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlAst(value: ParseTreeResult): Self = this.set("htmlAst", value.asInstanceOf[js.Any])
+    def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def setHtmlAstNull: Self = this.set("htmlAst", null)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolation(value: js.Tuple2[String, String]): Self = this.set("interpolation", value.asInstanceOf[js.Any])
+    def setTemplateNull: Self = StObject.set(x, "template", null)
     
     @scala.inline
-    def setInterpolationNull: Self = this.set("interpolation", null)
+    def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplateNull: Self = this.set("template", null)
-    
-    @scala.inline
-    def setTemplateUrl(value: String): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplateUrlNull: Self = this.set("templateUrl", null)
+    def setTemplateUrlNull: Self = StObject.set(x, "templateUrl", null)
   }
 }

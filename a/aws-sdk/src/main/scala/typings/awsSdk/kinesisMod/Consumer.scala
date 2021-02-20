@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Consumer extends js.Object {
+trait Consumer extends StObject {
   
   /**
     * When you register a consumer, Kinesis Data Streams generates an ARN for it. You need this ARN to be able to call SubscribeToShard. If you delete a consumer and then create a new one with the same name, it won't have the same ARN. That's because consumer ARNs contain the creation timestamp. This is important to keep in mind if you have IAM policies that reference consumer ARNs.
@@ -41,30 +42,18 @@ object Consumer {
   }
   
   @scala.inline
-  implicit class ConsumerOps[Self <: Consumer] (val x: Self) extends AnyVal {
+  implicit class ConsumerMutableBuilder[Self <: Consumer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumerARN(value: ConsumerARN): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerCreationTimestamp(value: Timestamp): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumerName(value: ConsumerName): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerARN(value: ConsumerARN): Self = this.set("ConsumerARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConsumerCreationTimestamp(value: Timestamp): Self = this.set("ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConsumerName(value: ConsumerName): Self = this.set("ConsumerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConsumerStatus(value: ConsumerStatus): Self = this.set("ConsumerStatus", value.asInstanceOf[js.Any])
+    def setConsumerStatus(value: ConsumerStatus): Self = StObject.set(x, "ConsumerStatus", value.asInstanceOf[js.Any])
   }
 }

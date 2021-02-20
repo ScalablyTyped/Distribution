@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartLegendLabelOptions extends js.Object {
+trait ChartLegendLabelOptions extends StObject {
   
   var boxWidth: js.UndefOr[Double] = js.native
   
@@ -19,7 +20,9 @@ trait ChartLegendLabelOptions extends js.Object {
   
   var fontStyle: js.UndefOr[String] = js.native
   
-  var generateLabels: js.UndefOr[js.Function1[/* chart */ Chart, js.Array[ChartLegendLabelItem]]] = js.native
+  var generateLabels: js.UndefOr[
+    js.Function1[/* chart */ typings.chartJs.mod.Chart, js.Array[ChartLegendLabelItem]]
+  ] = js.native
   
   var padding: js.UndefOr[Double] = js.native
   
@@ -34,75 +37,63 @@ object ChartLegendLabelOptions {
   }
   
   @scala.inline
-  implicit class ChartLegendLabelOptionsOps[Self <: ChartLegendLabelOptions] (val x: Self) extends AnyVal {
+  implicit class ChartLegendLabelOptionsMutableBuilder[Self <: ChartLegendLabelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoxWidth(value: Double): Self = StObject.set(x, "boxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoxWidthUndefined: Self = StObject.set(x, "boxWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: (/* legendItem */ ChartLegendLabelItem, /* data */ ChartData) => _): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBoxWidth(value: Double): Self = this.set("boxWidth", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteBoxWidth: Self = this.set("boxWidth", js.undefined)
+    def setFontColor(value: ChartColor): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: (/* legendItem */ ChartLegendLabelItem, /* data */ ChartData) => _): Self = this.set("filter", js.Any.fromFunction2(value))
+    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFontColorVarargs(value: String*): Self = StObject.set(x, "fontColor", js.Array(value :_*))
     
     @scala.inline
-    def setFontColorVarargs(value: String*): Self = this.set("fontColor", js.Array(value :_*))
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: ChartColor): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteFontColor: Self = this.set("fontColor", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setGenerateLabels(value: /* chart */ typings.chartJs.mod.Chart => js.Array[ChartLegendLabelItem]): Self = StObject.set(x, "generateLabels", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setGenerateLabelsUndefined: Self = StObject.set(x, "generateLabels", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateLabels(value: /* chart */ Chart => js.Array[ChartLegendLabelItem]): Self = this.set("generateLabels", js.Any.fromFunction1(value))
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteGenerateLabels: Self = this.set("generateLabels", js.undefined)
+    def setUsePointStyle(value: Boolean): Self = StObject.set(x, "usePointStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
-    
-    @scala.inline
-    def setUsePointStyle(value: Boolean): Self = this.set("usePointStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePointStyle: Self = this.set("usePointStyle", js.undefined)
+    def setUsePointStyleUndefined: Self = StObject.set(x, "usePointStyle", js.undefined)
   }
 }

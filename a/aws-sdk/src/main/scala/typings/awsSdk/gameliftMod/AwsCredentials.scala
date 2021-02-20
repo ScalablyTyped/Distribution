@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsCredentials extends js.Object {
+trait AwsCredentials extends StObject {
   
   /**
     * Temporary key allowing access to the Amazon GameLift S3 account.
@@ -31,36 +32,24 @@ object AwsCredentials {
   }
   
   @scala.inline
-  implicit class AwsCredentialsOps[Self <: AwsCredentials] (val x: Self) extends AnyVal {
+  implicit class AwsCredentialsMutableBuilder[Self <: AwsCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyId(value: NonEmptyString): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretAccessKey(value: NonEmptyString): Self = StObject.set(x, "SecretAccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKeyId(value: NonEmptyString): Self = this.set("AccessKeyId", value.asInstanceOf[js.Any])
+    def setSecretAccessKeyUndefined: Self = StObject.set(x, "SecretAccessKey", js.undefined)
     
     @scala.inline
-    def deleteAccessKeyId: Self = this.set("AccessKeyId", js.undefined)
+    def setSessionToken(value: NonEmptyString): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretAccessKey(value: NonEmptyString): Self = this.set("SecretAccessKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretAccessKey: Self = this.set("SecretAccessKey", js.undefined)
-    
-    @scala.inline
-    def setSessionToken(value: NonEmptyString): Self = this.set("SessionToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionToken: Self = this.set("SessionToken", js.undefined)
+    def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
   }
 }

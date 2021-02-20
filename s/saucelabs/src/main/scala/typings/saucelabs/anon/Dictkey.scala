@@ -1,6 +1,7 @@
 package typings.saucelabs.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object Dictkey {
   }
   
   @scala.inline
-  implicit class DictkeyOps[Self <: Dictkey] (val x: Self) extends AnyVal {
+  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLower_boundary(value: Double): Self = StObject.set(x, "lower_boundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLower_boundaryUndefined: Self = StObject.set(x, "lower_boundary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpper_boundary(value: Double): Self = StObject.set(x, "upper_boundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLower_boundary(value: Double): Self = this.set("lower_boundary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLower_boundary: Self = this.set("lower_boundary", js.undefined)
-    
-    @scala.inline
-    def setUpper_boundary(value: Double): Self = this.set("upper_boundary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpper_boundary: Self = this.set("upper_boundary", js.undefined)
+    def setUpper_boundaryUndefined: Self = StObject.set(x, "upper_boundary", js.undefined)
   }
 }

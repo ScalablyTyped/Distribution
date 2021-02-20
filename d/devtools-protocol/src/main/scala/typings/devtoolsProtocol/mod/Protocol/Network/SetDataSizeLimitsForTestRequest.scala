@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetDataSizeLimitsForTestRequest extends js.Object {
+trait SetDataSizeLimitsForTestRequest extends StObject {
   
   /**
     * Maximum per-resource size.
@@ -27,24 +28,12 @@ object SetDataSizeLimitsForTestRequest {
   }
   
   @scala.inline
-  implicit class SetDataSizeLimitsForTestRequestOps[Self <: SetDataSizeLimitsForTestRequest] (val x: Self) extends AnyVal {
+  implicit class SetDataSizeLimitsForTestRequestMutableBuilder[Self <: SetDataSizeLimitsForTestRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResourceSize(value: integer): Self = StObject.set(x, "maxResourceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxResourceSize(value: integer): Self = this.set("maxResourceSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxTotalSize(value: integer): Self = this.set("maxTotalSize", value.asInstanceOf[js.Any])
+    def setMaxTotalSize(value: integer): Self = StObject.set(x, "maxTotalSize", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** base class for ASN.1 DER structured class */
 @js.native
-trait DERAbstractStructured extends js.Object {
+trait DERAbstractStructured extends StObject {
   
   /**
     * append an ASN1Object to internal array
@@ -35,30 +36,18 @@ object DERAbstractStructured {
   }
   
   @scala.inline
-  implicit class DERAbstractStructuredOps[Self <: DERAbstractStructured] (val x: Self) extends AnyVal {
+  implicit class DERAbstractStructuredMutableBuilder[Self <: DERAbstractStructured] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendASN1Object(value: ASN1Object => Unit): Self = StObject.set(x, "appendASN1Object", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsn1Array(value: js.Array[ASN1Object]): Self = StObject.set(x, "asn1Array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsn1ArrayVarargs(value: ASN1Object*): Self = StObject.set(x, "asn1Array", js.Array(value :_*))
     
     @scala.inline
-    def setAppendASN1Object(value: ASN1Object => Unit): Self = this.set("appendASN1Object", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAsn1ArrayVarargs(value: ASN1Object*): Self = this.set("asn1Array", js.Array(value :_*))
-    
-    @scala.inline
-    def setAsn1Array(value: js.Array[ASN1Object]): Self = this.set("asn1Array", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetByASN1ObjectArray(value: js.Array[ASN1Object] => String): Self = this.set("setByASN1ObjectArray", js.Any.fromFunction1(value))
+    def setSetByASN1ObjectArray(value: js.Array[ASN1Object] => String): Self = StObject.set(x, "setByASN1ObjectArray", js.Any.fromFunction1(value))
   }
 }

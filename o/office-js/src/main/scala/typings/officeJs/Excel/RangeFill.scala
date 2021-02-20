@@ -27,6 +27,7 @@ import typings.officeJs.officeJsStrings.SemiGray75
 import typings.officeJs.officeJsStrings.Solid
 import typings.officeJs.officeJsStrings.Up
 import typings.officeJs.officeJsStrings.Vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

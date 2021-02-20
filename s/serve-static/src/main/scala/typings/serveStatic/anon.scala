@@ -1,16 +1,15 @@
 package typings.serveStatic
 
 import typings.mime.mod.TypeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Typeofm extends js.Object {
+  trait Typeofm extends StObject {
     
     def define(mimes: TypeMap): Unit = js.native
     def define(mimes: TypeMap, force: Boolean): Unit = js.native

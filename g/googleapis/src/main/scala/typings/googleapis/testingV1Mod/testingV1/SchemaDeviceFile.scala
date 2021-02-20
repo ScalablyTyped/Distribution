@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single device file description.
   */
 @js.native
-trait SchemaDeviceFile extends js.Object {
+trait SchemaDeviceFile extends StObject {
   
   /**
     * A reference to an opaque binary blob file
@@ -29,30 +30,18 @@ object SchemaDeviceFile {
   }
   
   @scala.inline
-  implicit class SchemaDeviceFileOps[Self <: SchemaDeviceFile] (val x: Self) extends AnyVal {
+  implicit class SchemaDeviceFileMutableBuilder[Self <: SchemaDeviceFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObbFile(value: SchemaObbFile): Self = StObject.set(x, "obbFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObbFileUndefined: Self = StObject.set(x, "obbFile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegularFile(value: SchemaRegularFile): Self = StObject.set(x, "regularFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObbFile(value: SchemaObbFile): Self = this.set("obbFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObbFile: Self = this.set("obbFile", js.undefined)
-    
-    @scala.inline
-    def setRegularFile(value: SchemaRegularFile): Self = this.set("regularFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegularFile: Self = this.set("regularFile", js.undefined)
+    def setRegularFileUndefined: Self = StObject.set(x, "regularFile", js.undefined)
   }
 }

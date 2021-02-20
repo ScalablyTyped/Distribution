@@ -1,11 +1,12 @@
 package typings.awsSdk.simpledbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainMetadataResult extends js.Object {
+trait DomainMetadataResult extends StObject {
   
   /**
     * The number of unique attribute names in the domain.
@@ -51,60 +52,48 @@ object DomainMetadataResult {
   }
   
   @scala.inline
-  implicit class DomainMetadataResultOps[Self <: DomainMetadataResult] (val x: Self) extends AnyVal {
+  implicit class DomainMetadataResultMutableBuilder[Self <: DomainMetadataResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeNameCount(value: Integer): Self = StObject.set(x, "AttributeNameCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameCountUndefined: Self = StObject.set(x, "AttributeNameCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeNamesSizeBytes(value: Long): Self = StObject.set(x, "AttributeNamesSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeNameCount(value: Integer): Self = this.set("AttributeNameCount", value.asInstanceOf[js.Any])
+    def setAttributeNamesSizeBytesUndefined: Self = StObject.set(x, "AttributeNamesSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteAttributeNameCount: Self = this.set("AttributeNameCount", js.undefined)
+    def setAttributeValueCount(value: Integer): Self = StObject.set(x, "AttributeValueCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeNamesSizeBytes(value: Long): Self = this.set("AttributeNamesSizeBytes", value.asInstanceOf[js.Any])
+    def setAttributeValueCountUndefined: Self = StObject.set(x, "AttributeValueCount", js.undefined)
     
     @scala.inline
-    def deleteAttributeNamesSizeBytes: Self = this.set("AttributeNamesSizeBytes", js.undefined)
+    def setAttributeValuesSizeBytes(value: Long): Self = StObject.set(x, "AttributeValuesSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeValueCount(value: Integer): Self = this.set("AttributeValueCount", value.asInstanceOf[js.Any])
+    def setAttributeValuesSizeBytesUndefined: Self = StObject.set(x, "AttributeValuesSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteAttributeValueCount: Self = this.set("AttributeValueCount", js.undefined)
+    def setItemCount(value: Integer): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeValuesSizeBytes(value: Long): Self = this.set("AttributeValuesSizeBytes", value.asInstanceOf[js.Any])
+    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
     @scala.inline
-    def deleteAttributeValuesSizeBytes: Self = this.set("AttributeValuesSizeBytes", js.undefined)
+    def setItemNamesSizeBytes(value: Long): Self = StObject.set(x, "ItemNamesSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCount(value: Integer): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    def setItemNamesSizeBytesUndefined: Self = StObject.set(x, "ItemNamesSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    def setTimestamp(value: Integer): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemNamesSizeBytes(value: Long): Self = this.set("ItemNamesSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemNamesSizeBytes: Self = this.set("ItemNamesSizeBytes", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Integer): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

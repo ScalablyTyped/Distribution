@@ -6,6 +6,7 @@ import typings.chrome.chrome.omnibox.OmniboxInputEnteredEvent
 import typings.chrome.chrome.omnibox.OmniboxInputStartedEvent
 import typings.chrome.chrome.omnibox.OmniboxSuggestionDeletedEvent
 import typings.chrome.chrome.omnibox.Suggestion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,19 +19,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Manifest:  "omnibox": {...}
   * @since Chrome 9.
   */
-@JSGlobal("chrome.omnibox")
-@js.native
-object omnibox extends js.Object {
+object omnibox {
   
-  var onDeleteSuggestion: OmniboxSuggestionDeletedEvent = js.native
+  @JSGlobal("chrome.omnibox")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var onInputCancelled: OmniboxInputCancelledEvent = js.native
+  @JSGlobal("chrome.omnibox.onDeleteSuggestion")
+  @js.native
+  def onDeleteSuggestion: OmniboxSuggestionDeletedEvent = js.native
+  @scala.inline
+  def onDeleteSuggestion_=(x: OmniboxSuggestionDeletedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onDeleteSuggestion")(x.asInstanceOf[js.Any])
   
-  var onInputChanged: OmniboxInputChangedEvent = js.native
+  @JSGlobal("chrome.omnibox.onInputCancelled")
+  @js.native
+  def onInputCancelled: OmniboxInputCancelledEvent = js.native
+  @scala.inline
+  def onInputCancelled_=(x: OmniboxInputCancelledEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onInputCancelled")(x.asInstanceOf[js.Any])
   
-  var onInputEntered: OmniboxInputEnteredEvent = js.native
+  @JSGlobal("chrome.omnibox.onInputChanged")
+  @js.native
+  def onInputChanged: OmniboxInputChangedEvent = js.native
+  @scala.inline
+  def onInputChanged_=(x: OmniboxInputChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onInputChanged")(x.asInstanceOf[js.Any])
   
-  var onInputStarted: OmniboxInputStartedEvent = js.native
+  @JSGlobal("chrome.omnibox.onInputEntered")
+  @js.native
+  def onInputEntered: OmniboxInputEnteredEvent = js.native
+  @scala.inline
+  def onInputEntered_=(x: OmniboxInputEnteredEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onInputEntered")(x.asInstanceOf[js.Any])
   
+  @JSGlobal("chrome.omnibox.onInputStarted")
+  @js.native
+  def onInputStarted: OmniboxInputStartedEvent = js.native
+  @scala.inline
+  def onInputStarted_=(x: OmniboxInputStartedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onInputStarted")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("chrome.omnibox.setDefaultSuggestion")
+  @js.native
   def setDefaultSuggestion(suggestion: Suggestion): Unit = js.native
 }

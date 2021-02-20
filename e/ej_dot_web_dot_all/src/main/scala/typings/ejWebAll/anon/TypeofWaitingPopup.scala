@@ -1,21 +1,35 @@
 package typings.ejWebAll.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.WaitingPopup
-import typings.ejWebAll.ej.WaitingPopup.Model
-import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofWaitingPopup
-  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), WaitingPopup]
-     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, WaitingPopup] {
+trait TypeofWaitingPopup extends StObject {
   
+  /* static member */
   var Locale: js.Any = js.native
   
+  /* static member */
   var fn: WaitingPopup = js.native
+}
+object TypeofWaitingPopup {
+  
+  @scala.inline
+  def apply(Locale: js.Any, fn: WaitingPopup): TypeofWaitingPopup = {
+    val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofWaitingPopup]
+  }
+  
+  @scala.inline
+  implicit class TypeofWaitingPopupMutableBuilder[Self <: TypeofWaitingPopup] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setFn(value: WaitingPopup): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+  }
 }

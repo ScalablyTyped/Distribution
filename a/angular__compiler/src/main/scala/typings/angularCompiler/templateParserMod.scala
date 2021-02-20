@@ -21,29 +21,22 @@ import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.angularCompiler.srcUtilMod.Console
 import typings.angularCompiler.templateAstMod.TemplateAst
 import typings.angularCompiler.templateAstMod.TemplateAstVisitor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/template_parser/template_parser", JSImport.Namespace)
-@js.native
-object templateParserMod extends js.Object {
+object templateParserMod {
   
-  def createElementCssSelector(elementName: String, attributes: js.Array[js.Tuple2[String, String]]): CssSelector = js.native
-  
-  def isEmptyExpression(ast: AST): Boolean = js.native
-  
-  def removeSummaryDuplicates[T /* <: TypeCompileTypeMetadata */](items: js.Array[T]): js.Array[T] = js.native
-  
-  def splitClasses(classAttrValue: String): js.Array[String] = js.native
-  
+  @JSImport("@angular/compiler/src/template_parser/template_parser", "TemplateParseError")
   @js.native
   class TemplateParseError protected () extends ParseError {
     def this(message: String, span: ParseSourceSpan, level: ParseErrorLevel) = this()
   }
   
+  @JSImport("@angular/compiler/src/template_parser/template_parser", "TemplateParseResult")
   @js.native
-  class TemplateParseResult () extends js.Object {
+  class TemplateParseResult () extends StObject {
     def this(templateAst: js.Array[TemplateAst]) = this()
     def this(templateAst: js.UndefOr[scala.Nothing], usedPipes: js.Array[CompilePipeSummary]) = this()
     def this(templateAst: js.Array[TemplateAst], usedPipes: js.Array[CompilePipeSummary]) = this()
@@ -75,8 +68,9 @@ object templateParserMod extends js.Object {
     var usedPipes: js.UndefOr[js.Array[CompilePipeSummary]] = js.native
   }
   
+  @JSImport("@angular/compiler/src/template_parser/template_parser", "TemplateParser")
   @js.native
-  class TemplateParser protected () extends js.Object {
+  class TemplateParser protected () extends StObject {
     def this(
       _config: CompilerConfig,
       _reflector: CompileReflector,
@@ -163,4 +157,20 @@ object templateParserMod extends js.Object {
       schemas: js.Array[SchemaMetadata]
     ): TemplateParseResult = js.native
   }
+  
+  @JSImport("@angular/compiler/src/template_parser/template_parser", "createElementCssSelector")
+  @js.native
+  def createElementCssSelector(elementName: String, attributes: js.Array[js.Tuple2[String, String]]): CssSelector = js.native
+  
+  @JSImport("@angular/compiler/src/template_parser/template_parser", "isEmptyExpression")
+  @js.native
+  def isEmptyExpression(ast: AST): Boolean = js.native
+  
+  @JSImport("@angular/compiler/src/template_parser/template_parser", "removeSummaryDuplicates")
+  @js.native
+  def removeSummaryDuplicates[T /* <: TypeCompileTypeMetadata */](items: js.Array[T]): js.Array[T] = js.native
+  
+  @JSImport("@angular/compiler/src/template_parser/template_parser", "splitClasses")
+  @js.native
+  def splitClasses(classAttrValue: String): js.Array[String] = js.native
 }

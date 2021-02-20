@@ -1,11 +1,12 @@
 package typings.dynogels.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Throughput extends js.Object {
+trait Throughput extends StObject {
   
   var readCapacity: Double = js.native
   
@@ -20,24 +21,12 @@ object Throughput {
   }
   
   @scala.inline
-  implicit class ThroughputOps[Self <: Throughput] (val x: Self) extends AnyVal {
+  implicit class ThroughputMutableBuilder[Self <: Throughput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReadCapacity(value: Double): Self = this.set("readCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWriteCapacity(value: Double): Self = this.set("writeCapacity", value.asInstanceOf[js.Any])
+    def setWriteCapacity(value: Double): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // We don't just use ComponentType or SFC types because you are not supposed to attach statics to this
 // object, but rather to the original function.
 @js.native
-trait ExoticComponent[P] extends js.Object {
+trait ExoticComponent[P] extends StObject {
   
   /**
     * **NOTE**: Exotic components are not callable.

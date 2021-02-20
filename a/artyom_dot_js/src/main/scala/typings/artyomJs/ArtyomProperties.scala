@@ -1,12 +1,13 @@
 package typings.artyomJs
 
 import typings.artyomJs.anon.FatalityPromiseCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArtyomProperties extends js.Object {
+trait ArtyomProperties extends StObject {
   
   var continuous: js.UndefOr[Boolean] = js.native
   
@@ -47,102 +48,90 @@ object ArtyomProperties {
   }
   
   @scala.inline
-  implicit class ArtyomPropertiesOps[Self <: ArtyomProperties] (val x: Self) extends AnyVal {
+  implicit class ArtyomPropertiesMutableBuilder[Self <: ArtyomProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def setListen(value: Boolean): Self = this.set("listen", value.asInstanceOf[js.Any])
+    def setExecutionKeyword(value: String): Self = StObject.set(x, "executionKeyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuous(value: Boolean): Self = this.set("continuous", value.asInstanceOf[js.Any])
+    def setExecutionKeywordUndefined: Self = StObject.set(x, "executionKeyword", js.undefined)
     
     @scala.inline
-    def deleteContinuous: Self = this.set("continuous", js.undefined)
+    def setHelpers(value: FatalityPromiseCallback): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionKeyword(value: String): Self = this.set("executionKeyword", value.asInstanceOf[js.Any])
+    def setListen(value: Boolean): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutionKeyword: Self = this.set("executionKeyword", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpers(value: FatalityPromiseCallback): Self = this.set("helpers", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteHelpers: Self = this.set("helpers", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setObeyKeyword(value: String): Self = StObject.set(x, "obeyKeyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setObeyKeywordUndefined: Self = StObject.set(x, "obeyKeyword", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setObeying(value: Boolean): Self = StObject.set(x, "obeying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObeyKeyword(value: String): Self = this.set("obeyKeyword", value.asInstanceOf[js.Any])
+    def setObeyingUndefined: Self = StObject.set(x, "obeying", js.undefined)
     
     @scala.inline
-    def deleteObeyKeyword: Self = this.set("obeyKeyword", js.undefined)
+    def setRecognizing(value: Boolean): Self = StObject.set(x, "recognizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObeying(value: Boolean): Self = this.set("obeying", value.asInstanceOf[js.Any])
+    def setRecognizingUndefined: Self = StObject.set(x, "recognizing", js.undefined)
     
     @scala.inline
-    def deleteObeying: Self = this.set("obeying", js.undefined)
+    def setSoundex(value: Boolean): Self = StObject.set(x, "soundex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecognizing(value: Boolean): Self = this.set("recognizing", value.asInstanceOf[js.Any])
+    def setSoundexUndefined: Self = StObject.set(x, "soundex", js.undefined)
     
     @scala.inline
-    def deleteRecognizing: Self = this.set("recognizing", js.undefined)
+    def setSpeaking(value: Boolean): Self = StObject.set(x, "speaking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoundex(value: Boolean): Self = this.set("soundex", value.asInstanceOf[js.Any])
+    def setSpeakingUndefined: Self = StObject.set(x, "speaking", js.undefined)
     
     @scala.inline
-    def deleteSoundex: Self = this.set("soundex", js.undefined)
+    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeaking(value: Boolean): Self = this.set("speaking", value.asInstanceOf[js.Any])
+    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
     @scala.inline
-    def deleteSpeaking: Self = this.set("speaking", js.undefined)
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeed: Self = this.set("speed", js.undefined)
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

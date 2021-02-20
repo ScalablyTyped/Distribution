@@ -1,5 +1,6 @@
 package typings.ckeditorCkeditor5Utils.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.insert
   - typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.delete
 */
-trait Change extends js.Object
+trait Change extends StObject
 object Change {
   
   @scala.inline

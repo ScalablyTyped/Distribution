@@ -1,13 +1,12 @@
 package typings.tablesorter
 
 import typings.tablesorter.relativeSortingMod.RelativeSorting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/Sorting/RelativeSortDefinition", JSImport.Namespace)
-@js.native
-object relativeSortDefinitionMod extends js.Object {
+object relativeSortDefinitionMod {
   
   type RelativeSortDefinition = js.Tuple2[Double, RelativeSorting]
 }

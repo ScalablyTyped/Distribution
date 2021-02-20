@@ -1,16 +1,16 @@
 package typings.protractor
 
 import typings.protractor.browserMod.ProtractorBrowser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protractor/built/debugger", JSImport.Namespace)
-@js.native
-object debuggerMod extends js.Object {
+object debuggerMod {
   
+  @JSImport("protractor/built/debugger", "DebugHelper")
   @js.native
-  class DebugHelper protected () extends js.Object {
+  class DebugHelper protected () extends StObject {
     def this(browserUnderDebug_ : ProtractorBrowser) = this()
     
     var browserUnderDebug_ : js.Any = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioCodecOptions extends js.Object {
+trait AudioCodecOptions extends StObject {
   
   /**
     * You can only choose an audio bit depth when you specify flac or pcm for the value of Audio:Codec. The bit depth of a sample is how many bits of information are included in the audio samples. The higher the bit depth, the better the audio, but the larger the file. Valid values are 16 and 24. The most common bit depth is 24.
@@ -36,42 +37,30 @@ object AudioCodecOptions {
   }
   
   @scala.inline
-  implicit class AudioCodecOptionsOps[Self <: AudioCodecOptions] (val x: Self) extends AnyVal {
+  implicit class AudioCodecOptionsMutableBuilder[Self <: AudioCodecOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitDepth(value: AudioBitDepth): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitOrder(value: AudioBitOrder): Self = StObject.set(x, "BitOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitDepth(value: AudioBitDepth): Self = this.set("BitDepth", value.asInstanceOf[js.Any])
+    def setBitOrderUndefined: Self = StObject.set(x, "BitOrder", js.undefined)
     
     @scala.inline
-    def deleteBitDepth: Self = this.set("BitDepth", js.undefined)
+    def setProfile(value: AudioCodecProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitOrder(value: AudioBitOrder): Self = this.set("BitOrder", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
     
     @scala.inline
-    def deleteBitOrder: Self = this.set("BitOrder", js.undefined)
+    def setSigned(value: AudioSigned): Self = StObject.set(x, "Signed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: AudioCodecProfile): Self = this.set("Profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfile: Self = this.set("Profile", js.undefined)
-    
-    @scala.inline
-    def setSigned(value: AudioSigned): Self = this.set("Signed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigned: Self = this.set("Signed", js.undefined)
+    def setSignedUndefined: Self = StObject.set(x, "Signed", js.undefined)
   }
 }

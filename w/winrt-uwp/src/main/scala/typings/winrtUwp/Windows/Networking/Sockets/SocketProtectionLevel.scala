@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocketProtectionLevel extends js.Object
+sealed trait SocketProtectionLevel extends StObject
 /** Specifies the level of encryption to use on a StreamSocket object. */
 @JSGlobal("Windows.Networking.Sockets.SocketProtectionLevel")
 @js.native
-object SocketProtectionLevel extends js.Object {
+object SocketProtectionLevel extends StObject {
   
   /** A Bluetooth socket that prefers that encryption be used, but allows a NULL cipher (no encryption) based on the configuration of the target server. */
   @js.native

@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 1.1.2
   */
 @js.native
-trait DocumentIndexMarkAsian extends js.Object {
+trait DocumentIndexMarkAsian extends StObject {
   
   /** contains the reading of the primary key of the index entry. It is used to build a hierarchical document index. */
   var PrimaryKeyReading: String = js.native
@@ -30,27 +31,15 @@ object DocumentIndexMarkAsian {
   }
   
   @scala.inline
-  implicit class DocumentIndexMarkAsianOps[Self <: DocumentIndexMarkAsian] (val x: Self) extends AnyVal {
+  implicit class DocumentIndexMarkAsianMutableBuilder[Self <: DocumentIndexMarkAsian] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrimaryKeyReading(value: String): Self = StObject.set(x, "PrimaryKeyReading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecondaryKeyReading(value: String): Self = StObject.set(x, "SecondaryKeyReading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrimaryKeyReading(value: String): Self = this.set("PrimaryKeyReading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondaryKeyReading(value: String): Self = this.set("SecondaryKeyReading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextReading(value: String): Self = this.set("TextReading", value.asInstanceOf[js.Any])
+    def setTextReading(value: String): Self = StObject.set(x, "TextReading", value.asInstanceOf[js.Any])
   }
 }

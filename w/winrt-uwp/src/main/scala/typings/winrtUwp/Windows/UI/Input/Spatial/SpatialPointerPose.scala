@@ -1,15 +1,18 @@
 package typings.winrtUwp.Windows.UI.Input.Spatial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpatialPointerPose extends js.Object {
+trait SpatialPointerPose extends StObject {
   
-   /* unmapped type */ var head: js.Any = js.native
+  /* unmapped type */
+  var head: js.Any = js.native
   
-   /* unmapped type */ var timestamp: js.Any = js.native
+  /* unmapped type */
+  var timestamp: js.Any = js.native
 }
 object SpatialPointerPose {
   
@@ -20,24 +23,12 @@ object SpatialPointerPose {
   }
   
   @scala.inline
-  implicit class SpatialPointerPoseOps[Self <: SpatialPointerPose] (val x: Self) extends AnyVal {
+  implicit class SpatialPointerPoseMutableBuilder[Self <: SpatialPointerPose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHead(value: js.Any): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHead(value: js.Any): Self = this.set("head", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: js.Any): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

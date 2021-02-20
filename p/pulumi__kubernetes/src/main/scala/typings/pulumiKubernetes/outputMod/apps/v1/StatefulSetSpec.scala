@@ -3,6 +3,7 @@ package typings.pulumiKubernetes.outputMod.apps.v1
 import typings.pulumiKubernetes.outputMod.core.v1.PersistentVolumeClaim
 import typings.pulumiKubernetes.outputMod.core.v1.PodTemplateSpec
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A StatefulSetSpec is the specification of a StatefulSet.
   */
 @js.native
-trait StatefulSetSpec extends js.Object {
+trait StatefulSetSpec extends StObject {
   
   /**
     * podManagementPolicy controls how pods are created during initial scale up, when replacing pods on nodes, or when scaling down. The default policy is `OrderedReady`, where pods are created in increasing order (pod-0, then pod-1, etc) and the controller will wait until each pod is ready before continuing. When scaling down, the pods are removed in the opposite order. The alternative policy is `Parallel` which will create pods in parallel to match the desired scale without waiting, and on scale down will delete all pods at once.
@@ -71,45 +72,33 @@ object StatefulSetSpec {
   }
   
   @scala.inline
-  implicit class StatefulSetSpecOps[Self <: StatefulSetSpec] (val x: Self) extends AnyVal {
+  implicit class StatefulSetSpecMutableBuilder[Self <: StatefulSetSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPodManagementPolicy(value: String): Self = StObject.set(x, "podManagementPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevisionHistoryLimit(value: Double): Self = StObject.set(x, "revisionHistoryLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPodManagementPolicy(value: String): Self = this.set("podManagementPolicy", value.asInstanceOf[js.Any])
+    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicas(value: Double): Self = this.set("replicas", value.asInstanceOf[js.Any])
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionHistoryLimit(value: Double): Self = this.set("revisionHistoryLimit", value.asInstanceOf[js.Any])
+    def setTemplate(value: PodTemplateSpec): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: LabelSelector): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setUpdateStrategy(value: StatefulSetUpdateStrategy): Self = StObject.set(x, "updateStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    def setVolumeClaimTemplates(value: js.Array[PersistentVolumeClaim]): Self = StObject.set(x, "volumeClaimTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: PodTemplateSpec): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateStrategy(value: StatefulSetUpdateStrategy): Self = this.set("updateStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeClaimTemplatesVarargs(value: PersistentVolumeClaim*): Self = this.set("volumeClaimTemplates", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumeClaimTemplates(value: js.Array[PersistentVolumeClaim]): Self = this.set("volumeClaimTemplates", value.asInstanceOf[js.Any])
+    def setVolumeClaimTemplatesVarargs(value: PersistentVolumeClaim*): Self = StObject.set(x, "volumeClaimTemplates", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.mirrorV1Mod.mirrorV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A subscription to events on a collection.
   */
 @js.native
-trait SchemaSubscription extends js.Object {
+trait SchemaSubscription extends StObject {
   
   /**
     * The URL where notifications should be delivered (must start with
@@ -75,75 +76,63 @@ object SchemaSubscription {
   }
   
   @scala.inline
-  implicit class SchemaSubscriptionOps[Self <: SchemaSubscription] (val x: Self) extends AnyVal {
+  implicit class SchemaSubscriptionMutableBuilder[Self <: SchemaSubscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackUrl(value: String): Self = this.set("callbackUrl", value.asInstanceOf[js.Any])
+    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
     @scala.inline
-    def deleteCallbackUrl: Self = this.set("callbackUrl", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection(value: String): Self = this.set("collection", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCollection: Self = this.set("collection", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNotification(value: SchemaNotification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setOperation(value: js.Array[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: SchemaNotification): Self = this.set("notification", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
+    def setOperationVarargs(value: String*): Self = StObject.set(x, "operation", js.Array(value :_*))
     
     @scala.inline
-    def setOperationVarargs(value: String*): Self = this.set("operation", js.Array(value :_*))
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: js.Array[String]): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setUserTokenUndefined: Self = StObject.set(x, "userToken", js.undefined)
     
     @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setVerifyToken(value: String): Self = StObject.set(x, "verifyToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserToken(value: String): Self = this.set("userToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserToken: Self = this.set("userToken", js.undefined)
-    
-    @scala.inline
-    def setVerifyToken(value: String): Self = this.set("verifyToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyToken: Self = this.set("verifyToken", js.undefined)
+    def setVerifyTokenUndefined: Self = StObject.set(x, "verifyToken", js.undefined)
   }
 }

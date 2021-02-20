@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesUpdateAdmChannelInputMod.UpdateA
 import typings.awsSdkClientPinpointBrowser.typesUpdateAdmChannelOutputMod.UpdateAdmChannelOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateAdmChannelCommand", JSImport.Namespace)
-@js.native
-object updateAdmChannelCommandMod extends js.Object {
+object updateAdmChannelCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateAdmChannelCommand", "UpdateAdmChannelCommand")
   @js.native
   class UpdateAdmChannelCommand protected () extends Command[
           InputTypesUnion, 

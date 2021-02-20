@@ -2,14 +2,21 @@ package typings.reactNativeElements.mod
 
 import typings.react.mod.Component
 import typings.reactNative.mod.TextInput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-elements", "SearchBar")
 @js.native
-class SearchBar ()
+class SearchBar protected ()
   extends Component[SearchBarProps, js.Any, js.Any] {
+  def this(props: SearchBarProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: SearchBarProps, context: js.Any) = this()
   
   /**
     * Call blur on the TextInput

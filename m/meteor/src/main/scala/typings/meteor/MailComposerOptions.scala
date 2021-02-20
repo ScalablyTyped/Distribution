@@ -1,11 +1,12 @@
 package typings.meteor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MailComposerOptions extends js.Object {
+trait MailComposerOptions extends StObject {
   
   var charset: String = js.native
   
@@ -32,33 +33,21 @@ object MailComposerOptions {
   }
   
   @scala.inline
-  implicit class MailComposerOptionsOps[Self <: MailComposerOptions] (val x: Self) extends AnyVal {
+  implicit class MailComposerOptionsMutableBuilder[Self <: MailComposerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEscapeSMTP(value: Boolean): Self = StObject.set(x, "escapeSMTP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharset(value: String): Self = this.set("charset", value.asInstanceOf[js.Any])
+    def setForceEmbeddedImages(value: Boolean): Self = StObject.set(x, "forceEmbeddedImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEscapeSMTP(value: Boolean): Self = this.set("escapeSMTP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForceEmbeddedImages(value: Boolean): Self = this.set("forceEmbeddedImages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeepBcc(value: Boolean): Self = this.set("keepBcc", value.asInstanceOf[js.Any])
+    def setKeepBcc(value: Boolean): Self = StObject.set(x, "keepBcc", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,45 +45,33 @@ object IkConstraintData {
   }
   
   @scala.inline
-  implicit class IkConstraintDataOps[Self <: IkConstraintData] (val x: Self) extends AnyVal {
+  implicit class IkConstraintDataMutableBuilder[Self <: IkConstraintData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBendDirection(value: Double): Self = StObject.set(x, "bendDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value :_*))
     
     @scala.inline
-    def setBendDirection(value: Double): Self = this.set("bendDirection", value.asInstanceOf[js.Any])
+    def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBonesVarargs(value: BoneData*): Self = this.set("bones", js.Array(value :_*))
+    def setMix(value: Double): Self = StObject.set(x, "mix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBones(value: js.Array[BoneData]): Self = this.set("bones", value.asInstanceOf[js.Any])
+    def setSoftness(value: Double): Self = StObject.set(x, "softness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompress(value: Boolean): Self = this.set("compress", value.asInstanceOf[js.Any])
+    def setStretch(value: Boolean): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMix(value: Double): Self = this.set("mix", value.asInstanceOf[js.Any])
+    def setTarget(value: BoneData): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoftness(value: Double): Self = this.set("softness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStretch(value: Boolean): Self = this.set("stretch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: BoneData): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniform(value: Boolean): Self = this.set("uniform", value.asInstanceOf[js.Any])
+    def setUniform(value: Boolean): Self = StObject.set(x, "uniform", value.asInstanceOf[js.Any])
   }
 }

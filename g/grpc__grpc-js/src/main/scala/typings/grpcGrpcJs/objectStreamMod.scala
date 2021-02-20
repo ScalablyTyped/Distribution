@@ -25,13 +25,12 @@ import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
 import typings.std.Error
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/object-stream", JSImport.Namespace)
-@js.native
-object objectStreamMod extends js.Object {
+object objectStreamMod {
   
   @js.native
   trait IntermediateObjectReadable[T] extends Readable
@@ -55,7 +54,7 @@ object objectStreamMod extends js.Object {
   
   /* Inlined {read (size : number | undefined): U, _write (chunk : T, encoding : string, callback : std.Function): void, write (chunk : T, cb : std.Function | undefined): boolean, write (chunk : T, encoding : any | undefined, cb : std.Function | undefined): boolean, end (): void, end (chunk : T, cb : std.Function | undefined): void, end (chunk : T, encoding : any | undefined, cb : std.Function | undefined): void} & node.stream.Duplex & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectWritable<T> & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectReadable<U> */
   @js.native
-  trait ObjectDuplex[T, U] extends js.Object {
+  trait ObjectDuplex[T, U] extends StObject {
     
     def _destroy(error: Null, callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native
     def _destroy(error: Error, callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native
@@ -432,7 +431,7 @@ object objectStreamMod extends js.Object {
   
   /* Inlined {read (size : number | undefined): T} & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'data', T> & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.IntermediateObjectReadable<T> */
   @js.native
-  trait ObjectReadable[T] extends js.Object {
+  trait ObjectReadable[T] extends StObject {
     
     def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
     def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native

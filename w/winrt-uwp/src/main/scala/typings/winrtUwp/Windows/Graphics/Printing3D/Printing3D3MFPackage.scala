@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a 3D Manufacturing Format (3MF) package. */
 @js.native
-trait Printing3D3MFPackage extends js.Object {
+trait Printing3D3MFPackage extends StObject {
   
   /**
     * Creates a Printing3DModel object from a 3D Manufacturing Format (3MF) file stream.
@@ -61,39 +62,27 @@ object Printing3D3MFPackage {
   }
   
   @scala.inline
-  implicit class Printing3D3MFPackageOps[Self <: Printing3D3MFPackage] (val x: Self) extends AnyVal {
+  implicit class Printing3D3MFPackageMutableBuilder[Self <: Printing3D3MFPackage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadModelFromPackageAsync(value: IRandomAccessStream => IPromiseWithIAsyncOperation[Printing3DModel]): Self = StObject.set(x, "loadModelFromPackageAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModelPart(value: IRandomAccessStream): Self = StObject.set(x, "modelPart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrintTicket(value: IRandomAccessStream): Self = StObject.set(x, "printTicket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadModelFromPackageAsync(value: IRandomAccessStream => IPromiseWithIAsyncOperation[Printing3DModel]): Self = this.set("loadModelFromPackageAsync", js.Any.fromFunction1(value))
+    def setSaveAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStream]): Self = StObject.set(x, "saveAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setModelPart(value: IRandomAccessStream): Self = this.set("modelPart", value.asInstanceOf[js.Any])
+    def setSaveModelToPackageAsync(value: Printing3DModel => IPromiseWithIAsyncAction): Self = StObject.set(x, "saveModelToPackageAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrintTicket(value: IRandomAccessStream): Self = this.set("printTicket", value.asInstanceOf[js.Any])
+    def setTextures(value: IVector[Printing3DTextureResource]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStream]): Self = this.set("saveAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSaveModelToPackageAsync(value: Printing3DModel => IPromiseWithIAsyncAction): Self = this.set("saveModelToPackageAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTextures(value: IVector[Printing3DTextureResource]): Self = this.set("textures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnail(value: Printing3DTextureResource): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    def setThumbnail(value: Printing3DTextureResource): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

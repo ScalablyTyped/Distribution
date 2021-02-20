@@ -1,11 +1,12 @@
 package typings.awsSdk.savingsplansMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParentSavingsPlanOffering extends js.Object {
+trait ParentSavingsPlanOffering extends StObject {
   
   /**
     * The currency.
@@ -46,54 +47,42 @@ object ParentSavingsPlanOffering {
   }
   
   @scala.inline
-  implicit class ParentSavingsPlanOfferingOps[Self <: ParentSavingsPlanOffering] (val x: Self) extends AnyVal {
+  implicit class ParentSavingsPlanOfferingMutableBuilder[Self <: ParentSavingsPlanOffering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrency(value: CurrencyCode): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDurationSeconds(value: SavingsPlansDuration): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: CurrencyCode): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setOfferingId(value: UUID): Self = StObject.set(x, "offeringId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationSeconds(value: SavingsPlansDuration): Self = this.set("durationSeconds", value.asInstanceOf[js.Any])
+    def setOfferingIdUndefined: Self = StObject.set(x, "offeringId", js.undefined)
     
     @scala.inline
-    def deleteDurationSeconds: Self = this.set("durationSeconds", js.undefined)
+    def setPaymentOption(value: SavingsPlanPaymentOption): Self = StObject.set(x, "paymentOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferingId(value: UUID): Self = this.set("offeringId", value.asInstanceOf[js.Any])
+    def setPaymentOptionUndefined: Self = StObject.set(x, "paymentOption", js.undefined)
     
     @scala.inline
-    def deleteOfferingId: Self = this.set("offeringId", js.undefined)
+    def setPlanDescription(value: SavingsPlanDescription): Self = StObject.set(x, "planDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentOption(value: SavingsPlanPaymentOption): Self = this.set("paymentOption", value.asInstanceOf[js.Any])
+    def setPlanDescriptionUndefined: Self = StObject.set(x, "planDescription", js.undefined)
     
     @scala.inline
-    def deletePaymentOption: Self = this.set("paymentOption", js.undefined)
+    def setPlanType(value: SavingsPlanType): Self = StObject.set(x, "planType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanDescription(value: SavingsPlanDescription): Self = this.set("planDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlanDescription: Self = this.set("planDescription", js.undefined)
-    
-    @scala.inline
-    def setPlanType(value: SavingsPlanType): Self = this.set("planType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlanType: Self = this.set("planType", js.undefined)
+    def setPlanTypeUndefined: Self = StObject.set(x, "planType", js.undefined)
   }
 }

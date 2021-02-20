@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceSoftwareOptions extends js.Object {
+trait ServiceSoftwareOptions extends StObject {
   
   /**
     * Timestamp, in Epoch time, until which you can manually request a service software update. After this date, we automatically update your service software.
@@ -56,66 +57,54 @@ object ServiceSoftwareOptions {
   }
   
   @scala.inline
-  implicit class ServiceSoftwareOptionsOps[Self <: ServiceSoftwareOptions] (val x: Self) extends AnyVal {
+  implicit class ServiceSoftwareOptionsMutableBuilder[Self <: ServiceSoftwareOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomatedUpdateDate(value: DeploymentCloseDateTimeStamp): Self = StObject.set(x, "AutomatedUpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomatedUpdateDateUndefined: Self = StObject.set(x, "AutomatedUpdateDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancellable(value: Boolean): Self = StObject.set(x, "Cancellable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedUpdateDate(value: DeploymentCloseDateTimeStamp): Self = this.set("AutomatedUpdateDate", value.asInstanceOf[js.Any])
+    def setCancellableUndefined: Self = StObject.set(x, "Cancellable", js.undefined)
     
     @scala.inline
-    def deleteAutomatedUpdateDate: Self = this.set("AutomatedUpdateDate", js.undefined)
+    def setCurrentVersion(value: String): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancellable(value: Boolean): Self = this.set("Cancellable", value.asInstanceOf[js.Any])
+    def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
     
     @scala.inline
-    def deleteCancellable: Self = this.set("Cancellable", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentVersion(value: String): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCurrentVersion: Self = this.set("CurrentVersion", js.undefined)
+    def setNewVersion(value: String): Self = StObject.set(x, "NewVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setNewVersionUndefined: Self = StObject.set(x, "NewVersion", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setOptionalDeployment(value: Boolean): Self = StObject.set(x, "OptionalDeployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewVersion(value: String): Self = this.set("NewVersion", value.asInstanceOf[js.Any])
+    def setOptionalDeploymentUndefined: Self = StObject.set(x, "OptionalDeployment", js.undefined)
     
     @scala.inline
-    def deleteNewVersion: Self = this.set("NewVersion", js.undefined)
+    def setUpdateAvailable(value: Boolean): Self = StObject.set(x, "UpdateAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalDeployment(value: Boolean): Self = this.set("OptionalDeployment", value.asInstanceOf[js.Any])
+    def setUpdateAvailableUndefined: Self = StObject.set(x, "UpdateAvailable", js.undefined)
     
     @scala.inline
-    def deleteOptionalDeployment: Self = this.set("OptionalDeployment", js.undefined)
+    def setUpdateStatus(value: DeploymentStatus): Self = StObject.set(x, "UpdateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateAvailable(value: Boolean): Self = this.set("UpdateAvailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateAvailable: Self = this.set("UpdateAvailable", js.undefined)
-    
-    @scala.inline
-    def setUpdateStatus(value: DeploymentStatus): Self = this.set("UpdateStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateStatus: Self = this.set("UpdateStatus", js.undefined)
+    def setUpdateStatusUndefined: Self = StObject.set(x, "UpdateStatus", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
 import typings.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICryptographicEngineStatics extends js.Object {
+trait ICryptographicEngineStatics extends StObject {
   
   def decrypt(key: CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = js.native
   
@@ -45,39 +46,27 @@ object ICryptographicEngineStatics {
   }
   
   @scala.inline
-  implicit class ICryptographicEngineStaticsOps[Self <: ICryptographicEngineStatics] (val x: Self) extends AnyVal {
+  implicit class ICryptographicEngineStaticsMutableBuilder[Self <: ICryptographicEngineStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecrypt(value: (CryptographicKey, IBuffer, IBuffer) => IBuffer): Self = StObject.set(x, "decrypt", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecryptAndAuthenticate(value: (CryptographicKey, IBuffer, IBuffer, IBuffer, IBuffer) => IBuffer): Self = StObject.set(x, "decryptAndAuthenticate", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeriveKeyMaterial(value: (CryptographicKey, KeyDerivationParameters, Double) => IBuffer): Self = StObject.set(x, "deriveKeyMaterial", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDecrypt(value: (CryptographicKey, IBuffer, IBuffer) => IBuffer): Self = this.set("decrypt", js.Any.fromFunction3(value))
+    def setEncrypt(value: (CryptographicKey, IBuffer, IBuffer) => IBuffer): Self = StObject.set(x, "encrypt", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDecryptAndAuthenticate(value: (CryptographicKey, IBuffer, IBuffer, IBuffer, IBuffer) => IBuffer): Self = this.set("decryptAndAuthenticate", js.Any.fromFunction5(value))
+    def setEncryptAndAuthenticate(value: (CryptographicKey, IBuffer, IBuffer, IBuffer) => EncryptedAndAuthenticatedData): Self = StObject.set(x, "encryptAndAuthenticate", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDeriveKeyMaterial(value: (CryptographicKey, KeyDerivationParameters, Double) => IBuffer): Self = this.set("deriveKeyMaterial", js.Any.fromFunction3(value))
+    def setSign(value: (CryptographicKey, IBuffer) => IBuffer): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEncrypt(value: (CryptographicKey, IBuffer, IBuffer) => IBuffer): Self = this.set("encrypt", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setEncryptAndAuthenticate(value: (CryptographicKey, IBuffer, IBuffer, IBuffer) => EncryptedAndAuthenticatedData): Self = this.set("encryptAndAuthenticate", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSign(value: (CryptographicKey, IBuffer) => IBuffer): Self = this.set("sign", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVerifySignature(value: (CryptographicKey, IBuffer, IBuffer) => Boolean): Self = this.set("verifySignature", js.Any.fromFunction3(value))
+    def setVerifySignature(value: (CryptographicKey, IBuffer, IBuffer) => Boolean): Self = StObject.set(x, "verifySignature", js.Any.fromFunction3(value))
   }
 }

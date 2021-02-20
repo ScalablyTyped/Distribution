@@ -2,16 +2,16 @@ package typings.twilsock
 
 import typings.std.Set
 import typings.twilsock.abstractmessageMod.AbstractMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/protocol/messages/initReply", JSImport.Namespace)
-@js.native
-object initReplyMod extends js.Object {
+object initReplyMod {
   
+  @JSImport("twilsock/lib/protocol/messages/initReply", "ContinuationTokenStatus")
   @js.native
-  class ContinuationTokenStatus () extends js.Object {
+  class ContinuationTokenStatus () extends StObject {
     
     val reissue_message: String = js.native
     
@@ -20,6 +20,7 @@ object initReplyMod extends js.Object {
     val reissued: Boolean = js.native
   }
   
+  @JSImport("twilsock/lib/protocol/messages/initReply", "InitReply")
   @js.native
   class InitReply protected () extends AbstractMessage {
     def this(

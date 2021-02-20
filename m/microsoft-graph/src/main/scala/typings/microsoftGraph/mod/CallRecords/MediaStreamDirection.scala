@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod.CallRecords
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.callerToCallee
   - typings.microsoftGraph.microsoftGraphStrings.calleeToCaller
 */
-trait MediaStreamDirection extends js.Object
+trait MediaStreamDirection extends StObject
 object MediaStreamDirection {
   
   @scala.inline

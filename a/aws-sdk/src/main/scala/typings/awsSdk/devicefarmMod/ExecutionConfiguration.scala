@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionConfiguration extends js.Object {
+trait ExecutionConfiguration extends StObject {
   
   /**
     * True if account cleanup is enabled at the beginning of the test. Otherwise, false.
@@ -41,48 +42,36 @@ object ExecutionConfiguration {
   }
   
   @scala.inline
-  implicit class ExecutionConfigurationOps[Self <: ExecutionConfiguration] (val x: Self) extends AnyVal {
+  implicit class ExecutionConfigurationMutableBuilder[Self <: ExecutionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountsCleanup(value: AccountsCleanup): Self = StObject.set(x, "accountsCleanup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountsCleanupUndefined: Self = StObject.set(x, "accountsCleanup", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppPackagesCleanup(value: AppPackagesCleanup): Self = StObject.set(x, "appPackagesCleanup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountsCleanup(value: AccountsCleanup): Self = this.set("accountsCleanup", value.asInstanceOf[js.Any])
+    def setAppPackagesCleanupUndefined: Self = StObject.set(x, "appPackagesCleanup", js.undefined)
     
     @scala.inline
-    def deleteAccountsCleanup: Self = this.set("accountsCleanup", js.undefined)
+    def setJobTimeoutMinutes(value: JobTimeoutMinutes): Self = StObject.set(x, "jobTimeoutMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppPackagesCleanup(value: AppPackagesCleanup): Self = this.set("appPackagesCleanup", value.asInstanceOf[js.Any])
+    def setJobTimeoutMinutesUndefined: Self = StObject.set(x, "jobTimeoutMinutes", js.undefined)
     
     @scala.inline
-    def deleteAppPackagesCleanup: Self = this.set("appPackagesCleanup", js.undefined)
+    def setSkipAppResign(value: SkipAppResign): Self = StObject.set(x, "skipAppResign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobTimeoutMinutes(value: JobTimeoutMinutes): Self = this.set("jobTimeoutMinutes", value.asInstanceOf[js.Any])
+    def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
     
     @scala.inline
-    def deleteJobTimeoutMinutes: Self = this.set("jobTimeoutMinutes", js.undefined)
+    def setVideoCapture(value: VideoCapture): Self = StObject.set(x, "videoCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipAppResign(value: SkipAppResign): Self = this.set("skipAppResign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipAppResign: Self = this.set("skipAppResign", js.undefined)
-    
-    @scala.inline
-    def setVideoCapture(value: VideoCapture): Self = this.set("videoCapture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoCapture: Self = this.set("videoCapture", js.undefined)
+    def setVideoCaptureUndefined: Self = StObject.set(x, "videoCapture", js.undefined)
   }
 }

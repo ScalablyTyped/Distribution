@@ -2,6 +2,7 @@ package typings.stripe.mod.invoices
 
 import typings.stripe.mod.IDataOptions
 import typings.stripe.mod.subscriptions.ISubscriptionUpdateItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,81 +81,69 @@ object IInvoiceUpcomingOptions {
   }
   
   @scala.inline
-  implicit class IInvoiceUpcomingOptionsOps[Self <: IInvoiceUpcomingOptions] (val x: Self) extends AnyVal {
+  implicit class IInvoiceUpcomingOptionsMutableBuilder[Self <: IInvoiceUpcomingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoupon(value: String): Self = this.set("coupon", value.asInstanceOf[js.Any])
+    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
     @scala.inline
-    def deleteCoupon: Self = this.set("coupon", js.undefined)
+    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomer(value: String): Self = this.set("customer", value.asInstanceOf[js.Any])
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
     @scala.inline
-    def deleteCustomer: Self = this.set("customer", js.undefined)
+    def setSubscription_cancel_at_period_end(value: Boolean): Self = StObject.set(x, "subscription_cancel_at_period_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    def setSubscription_cancel_at_period_endUndefined: Self = StObject.set(x, "subscription_cancel_at_period_end", js.undefined)
     
     @scala.inline
-    def deleteSubscription: Self = this.set("subscription", js.undefined)
+    def setSubscription_items(value: js.Array[ISubscriptionUpdateItem]): Self = StObject.set(x, "subscription_items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription_cancel_at_period_end(value: Boolean): Self = this.set("subscription_cancel_at_period_end", value.asInstanceOf[js.Any])
+    def setSubscription_itemsUndefined: Self = StObject.set(x, "subscription_items", js.undefined)
     
     @scala.inline
-    def deleteSubscription_cancel_at_period_end: Self = this.set("subscription_cancel_at_period_end", js.undefined)
+    def setSubscription_itemsVarargs(value: ISubscriptionUpdateItem*): Self = StObject.set(x, "subscription_items", js.Array(value :_*))
     
     @scala.inline
-    def setSubscription_itemsVarargs(value: ISubscriptionUpdateItem*): Self = this.set("subscription_items", js.Array(value :_*))
+    def setSubscription_plan(value: String): Self = StObject.set(x, "subscription_plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription_items(value: js.Array[ISubscriptionUpdateItem]): Self = this.set("subscription_items", value.asInstanceOf[js.Any])
+    def setSubscription_planUndefined: Self = StObject.set(x, "subscription_plan", js.undefined)
     
     @scala.inline
-    def deleteSubscription_items: Self = this.set("subscription_items", js.undefined)
+    def setSubscription_prorate(value: Boolean): Self = StObject.set(x, "subscription_prorate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription_plan(value: String): Self = this.set("subscription_plan", value.asInstanceOf[js.Any])
+    def setSubscription_prorateUndefined: Self = StObject.set(x, "subscription_prorate", js.undefined)
     
     @scala.inline
-    def deleteSubscription_plan: Self = this.set("subscription_plan", js.undefined)
+    def setSubscription_proration_date(value: Double): Self = StObject.set(x, "subscription_proration_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription_prorate(value: Boolean): Self = this.set("subscription_prorate", value.asInstanceOf[js.Any])
+    def setSubscription_proration_dateUndefined: Self = StObject.set(x, "subscription_proration_date", js.undefined)
     
     @scala.inline
-    def deleteSubscription_prorate: Self = this.set("subscription_prorate", js.undefined)
+    def setSubscription_quantity(value: Double): Self = StObject.set(x, "subscription_quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription_proration_date(value: Double): Self = this.set("subscription_proration_date", value.asInstanceOf[js.Any])
+    def setSubscription_quantityUndefined: Self = StObject.set(x, "subscription_quantity", js.undefined)
     
     @scala.inline
-    def deleteSubscription_proration_date: Self = this.set("subscription_proration_date", js.undefined)
+    def setSubscription_trial_end(value: Double): Self = StObject.set(x, "subscription_trial_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription_quantity(value: Double): Self = this.set("subscription_quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscription_quantity: Self = this.set("subscription_quantity", js.undefined)
-    
-    @scala.inline
-    def setSubscription_trial_end(value: Double): Self = this.set("subscription_trial_end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscription_trial_end: Self = this.set("subscription_trial_end", js.undefined)
+    def setSubscription_trial_endUndefined: Self = StObject.set(x, "subscription_trial_end", js.undefined)
   }
 }

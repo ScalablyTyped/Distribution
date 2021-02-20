@@ -1,11 +1,12 @@
 package typings.jqueryStickem
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StickemSettings extends js.Object {
+trait StickemSettings extends StObject {
   
   /**
     * selector for content container, sizes matched with `item`
@@ -56,66 +57,54 @@ object StickemSettings {
   }
   
   @scala.inline
-  implicit class StickemSettingsOps[Self <: StickemSettings] (val x: Self) extends AnyVal {
+  implicit class StickemSettingsMutableBuilder[Self <: StickemSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndStickClass(value: String): Self = StObject.set(x, "endStickClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setEndStickClassUndefined: Self = StObject.set(x, "endStickClass", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndStickClass(value: String): Self = this.set("endStickClass", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteEndStickClass: Self = this.set("endStickClass", js.undefined)
+    def setOffset(value: Double | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: String): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setOnStick(value: () => Unit): Self = StObject.set(x, "onStick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOffset(value: Double | String): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOnStickUndefined: Self = StObject.set(x, "onStick", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOnUnstick(value: () => Unit): Self = StObject.set(x, "onUnstick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnStick(value: () => Unit): Self = this.set("onStick", js.Any.fromFunction0(value))
+    def setOnUnstickUndefined: Self = StObject.set(x, "onUnstick", js.undefined)
     
     @scala.inline
-    def deleteOnStick: Self = this.set("onStick", js.undefined)
+    def setStart(value: Double | String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUnstick(value: () => Unit): Self = this.set("onUnstick", js.Any.fromFunction0(value))
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteOnUnstick: Self = this.set("onUnstick", js.undefined)
+    def setStickClass(value: String): Self = StObject.set(x, "stickClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Double | String): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setStickClass(value: String): Self = this.set("stickClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStickClass: Self = this.set("stickClass", js.undefined)
+    def setStickClassUndefined: Self = StObject.set(x, "stickClass", js.undefined)
   }
 }

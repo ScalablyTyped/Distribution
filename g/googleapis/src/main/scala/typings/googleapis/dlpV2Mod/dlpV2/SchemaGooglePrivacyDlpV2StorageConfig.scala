@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Shared message indicating Cloud storage type.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2StorageConfig extends js.Object {
+trait SchemaGooglePrivacyDlpV2StorageConfig extends StObject {
   
   /**
     * BigQuery options specification.
@@ -36,42 +37,30 @@ object SchemaGooglePrivacyDlpV2StorageConfig {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2StorageConfigOps[Self <: SchemaGooglePrivacyDlpV2StorageConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2StorageConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2StorageConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBigQueryOptions(value: SchemaGooglePrivacyDlpV2BigQueryOptions): Self = StObject.set(x, "bigQueryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBigQueryOptionsUndefined: Self = StObject.set(x, "bigQueryOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudStorageOptions(value: SchemaGooglePrivacyDlpV2CloudStorageOptions): Self = StObject.set(x, "cloudStorageOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigQueryOptions(value: SchemaGooglePrivacyDlpV2BigQueryOptions): Self = this.set("bigQueryOptions", value.asInstanceOf[js.Any])
+    def setCloudStorageOptionsUndefined: Self = StObject.set(x, "cloudStorageOptions", js.undefined)
     
     @scala.inline
-    def deleteBigQueryOptions: Self = this.set("bigQueryOptions", js.undefined)
+    def setDatastoreOptions(value: SchemaGooglePrivacyDlpV2DatastoreOptions): Self = StObject.set(x, "datastoreOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudStorageOptions(value: SchemaGooglePrivacyDlpV2CloudStorageOptions): Self = this.set("cloudStorageOptions", value.asInstanceOf[js.Any])
+    def setDatastoreOptionsUndefined: Self = StObject.set(x, "datastoreOptions", js.undefined)
     
     @scala.inline
-    def deleteCloudStorageOptions: Self = this.set("cloudStorageOptions", js.undefined)
+    def setTimespanConfig(value: SchemaGooglePrivacyDlpV2TimespanConfig): Self = StObject.set(x, "timespanConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatastoreOptions(value: SchemaGooglePrivacyDlpV2DatastoreOptions): Self = this.set("datastoreOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDatastoreOptions: Self = this.set("datastoreOptions", js.undefined)
-    
-    @scala.inline
-    def setTimespanConfig(value: SchemaGooglePrivacyDlpV2TimespanConfig): Self = this.set("timespanConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimespanConfig: Self = this.set("timespanConfig", js.undefined)
+    def setTimespanConfigUndefined: Self = StObject.set(x, "timespanConfig", js.undefined)
   }
 }

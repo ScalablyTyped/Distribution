@@ -1,18 +1,19 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "MerchantAccount")
 @js.native
-class MerchantAccount () extends js.Object {
+class MerchantAccount () extends StObject {
+  
+  var default: Boolean = js.native
   
   var business: js.UndefOr[MerchantBusinessResponse] = js.native
   
   var currencyIsoCode: String = js.native
-  
-  var default: Boolean = js.native
   
   var funding: MerchantFunding = js.native
   

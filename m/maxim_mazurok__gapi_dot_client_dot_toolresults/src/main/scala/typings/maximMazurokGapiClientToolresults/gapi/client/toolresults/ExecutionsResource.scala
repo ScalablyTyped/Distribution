@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientToolresults.anon.AltCallback
 import typings.maximMazurokGapiClientToolresults.anon.RequestId
 import typings.maximMazurokGapiClientToolresults.anon.Uploadprotocol
 import typings.maximMazurokGapiClientToolresults.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionsResource extends js.Object {
+trait ExecutionsResource extends StObject {
   
   var clusters: ClustersResource = js.native
   

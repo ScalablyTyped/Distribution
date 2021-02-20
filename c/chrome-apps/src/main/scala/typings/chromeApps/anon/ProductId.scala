@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductId extends js.Object {
+trait ProductId extends StObject {
   
   var productId: integer = js.native
   
@@ -21,24 +22,12 @@ object ProductId {
   }
   
   @scala.inline
-  implicit class ProductIdOps[Self <: ProductId] (val x: Self) extends AnyVal {
+  implicit class ProductIdMutableBuilder[Self <: ProductId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProductId(value: integer): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVendorId(value: integer): Self = this.set("vendorId", value.asInstanceOf[js.Any])
+    def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
   }
 }

@@ -9,12 +9,13 @@ import typings.ariaQuery.ariaQueryStrings.string
 import typings.ariaQuery.ariaQueryStrings.token
 import typings.ariaQuery.ariaQueryStrings.tokenlist
 import typings.ariaQuery.ariaQueryStrings.tristate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ARIAPropertyDefinition extends js.Object {
+trait ARIAPropertyDefinition extends StObject {
   
   var allowundefined: js.UndefOr[Boolean] = js.native
   
@@ -32,36 +33,24 @@ object ARIAPropertyDefinition {
   }
   
   @scala.inline
-  implicit class ARIAPropertyDefinitionOps[Self <: ARIAPropertyDefinition] (val x: Self) extends AnyVal {
+  implicit class ARIAPropertyDefinitionMutableBuilder[Self <: ARIAPropertyDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowundefined(value: Boolean): Self = StObject.set(x, "allowundefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowundefinedUndefined: Self = StObject.set(x, "allowundefined", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: string | id | idlist | integer | number | boolean | token | tokenlist | tristate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: string | id | idlist | integer | number | boolean | token | tokenlist | tristate): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValue(value: js.Array[String | Boolean]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowundefined(value: Boolean): Self = this.set("allowundefined", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteAllowundefined: Self = this.set("allowundefined", js.undefined)
-    
-    @scala.inline
-    def setValueVarargs(value: (String | Boolean)*): Self = this.set("value", js.Array(value :_*))
-    
-    @scala.inline
-    def setValue(value: js.Array[String | Boolean]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueVarargs(value: (String | Boolean)*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

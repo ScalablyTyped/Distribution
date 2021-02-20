@@ -7,30 +7,38 @@ import typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.
 import typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.macos
 import typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.web
 import typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.windows
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@unimodules/react-native-adapter/build/Platform", JSImport.Namespace)
-@js.native
-object platformMod extends js.Object {
+object platformMod {
   
-  trait _PlatformSelectOSType extends js.Object
-  
-  @js.native
-  object default extends js.Object {
+  object default {
+    
+    @JSImport("@unimodules/react-native-adapter/build/Platform", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Denotes the currently running platform.
       * Can be one of ios, android, web.
       */
-    var OS: ios | android | windows | macos | web = js.native
+    @JSImport("@unimodules/react-native-adapter/build/Platform", "default.OS")
+    @js.native
+    def OS: ios | android | windows | macos | web = js.native
+    @scala.inline
+    def OS_=(x: ios | android | windows | macos | web): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OS")(x.asInstanceOf[js.Any])
     
     /**
       * Denotes if the DOM API is available in the current environment.
       * The DOM is not available in native React runtimes and Node.js.
       */
-    var isDOMAvailable: Boolean = js.native
+    @JSImport("@unimodules/react-native-adapter/build/Platform", "default.isDOMAvailable")
+    @js.native
+    def isDOMAvailable: Boolean = js.native
+    @scala.inline
+    def isDOMAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDOMAvailable")(x.asInstanceOf[js.Any])
     
     /**
       * Returns the value with the matching platform.
@@ -40,7 +48,11 @@ object platformMod extends js.Object {
       * @android android, native, default
       * @web web, default
       */
-    var select: PlatformSelect = js.native
+    @JSImport("@unimodules/react-native-adapter/build/Platform", "default.select")
+    @js.native
+    def select: PlatformSelect = js.native
+    @scala.inline
+    def select_=(x: PlatformSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
   }
   
   type PlatformSelect = js.Function1[
@@ -57,4 +69,6 @@ object platformMod extends js.Object {
     - typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.default
   */
   type PlatformSelectOSType = _PlatformSelectOSType | PlatformOSType
+  
+  trait _PlatformSelectOSType extends StObject
 }

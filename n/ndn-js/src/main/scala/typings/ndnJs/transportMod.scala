@@ -1,18 +1,18 @@
 package typings.ndnJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ndn-js/transport", JSImport.Namespace)
-@js.native
-object transportMod extends js.Object {
+object transportMod {
   
+  @JSImport("ndn-js/transport", "TcpTransport")
   @js.native
   class TcpTransport () extends Transport
-  @js.native
-  object TcpTransport extends js.Object {
+  object TcpTransport {
     
+    @JSImport("ndn-js/transport", "TcpTransport.ConnectionInfo")
     @js.native
     class ConnectionInfo protected () extends TransportConnectionInfo {
       def this(host: String, port: Double) = this()
@@ -21,26 +21,36 @@ object transportMod extends js.Object {
     }
   }
   
+  @JSImport("ndn-js/transport", "Transport")
   @js.native
-  abstract class Transport () extends js.Object {
+  abstract class Transport () extends StObject {
     
     def isLocal(): Boolean = js.native
   }
   /* static members */
-  @js.native
-  object Transport extends js.Object {
+  object Transport {
     
-    var ConnectionInfo: TransportConnectionInfo = js.native
+    @JSImport("ndn-js/transport", "Transport")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ndn-js/transport", "Transport.ConnectionInfo")
+    @js.native
+    def ConnectionInfo: TransportConnectionInfo = js.native
+    @scala.inline
+    def ConnectionInfo_=(x: TransportConnectionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConnectionInfo")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("ndn-js/transport", "TransportConnectionInfo")
   @js.native
-  abstract class TransportConnectionInfo () extends js.Object
+  abstract class TransportConnectionInfo () extends StObject
   
+  @JSImport("ndn-js/transport", "UnixTransport")
   @js.native
   class UnixTransport () extends Transport
-  @js.native
-  object UnixTransport extends js.Object {
+  object UnixTransport {
     
+    @JSImport("ndn-js/transport", "UnixTransport.ConnectionInfo")
     @js.native
     class ConnectionInfo protected () extends TransportConnectionInfo {
       def this(filePath: String) = this()
@@ -49,11 +59,12 @@ object transportMod extends js.Object {
     }
   }
   
+  @JSImport("ndn-js/transport", "WebSocketTransport")
   @js.native
   class WebSocketTransport () extends Transport
-  @js.native
-  object WebSocketTransport extends js.Object {
+  object WebSocketTransport {
     
+    @JSImport("ndn-js/transport", "WebSocketTransport.ConnectionInfo")
     @js.native
     class ConnectionInfo protected () extends TransportConnectionInfo {
       def this(hostOrUri: String) = this()

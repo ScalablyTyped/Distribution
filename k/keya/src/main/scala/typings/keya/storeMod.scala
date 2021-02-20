@@ -1,16 +1,23 @@
 package typings.keya
 
 import typings.keya.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("keya/out/core/Store", JSImport.Namespace)
-@js.native
-object storeMod extends js.Object {
+object storeMod {
+  
+  @JSImport("keya/out/core/Store", JSImport.Default)
+  @js.native
+  abstract class default[T] protected () extends Store[T] {
+    def this(name: String) = this()
+  }
+  
+  type HydrateFunction[T] = js.Function1[/* stored */ String, js.Promise[T] | T]
   
   @js.native
-  trait Store[T] extends js.Object {
+  trait Store[T] extends StObject {
     
     def all(): js.Promise[js.Array[Key[T]]] = js.native
     
@@ -47,13 +54,6 @@ object storeMod extends js.Object {
     
     var version: Double = js.native
   }
-  
-  @js.native
-  abstract class default[T] protected () extends Store[T] {
-    def this(name: String) = this()
-  }
-  
-  type HydrateFunction[T] = js.Function1[/* stored */ String, js.Promise[T] | T]
   
   type StringifyFunction[T] = js.Function1[/* prepared */ T, js.Promise[String] | String]
 }

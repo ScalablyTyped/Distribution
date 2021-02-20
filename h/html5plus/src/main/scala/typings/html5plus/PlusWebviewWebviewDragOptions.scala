@@ -7,6 +7,7 @@ import typings.html5plus.html5plusStrings.ltr
 import typings.html5plus.html5plusStrings.right
 import typings.html5plus.html5plusStrings.rtl
 import typings.html5plus.html5plusStrings.silent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewDragOptions extends js.Object {
+trait PlusWebviewWebviewDragOptions extends StObject {
   
   /**
     * 滑屏操作回调事件触发步长
@@ -69,36 +70,24 @@ object PlusWebviewWebviewDragOptions {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewDragOptionsOps[Self <: PlusWebviewWebviewDragOptions] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewDragOptionsMutableBuilder[Self <: PlusWebviewWebviewDragOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallbackStep(value: Double): Self = StObject.set(x, "callbackStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackStepUndefined: Self = StObject.set(x, "callbackStep", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: rtl | left | ltr | right): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackStep(value: Double): Self = this.set("callbackStep", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteCallbackStep: Self = this.set("callbackStep", js.undefined)
+    def setMoveMode(value: followFinger | silent | bounce): Self = StObject.set(x, "moveMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: rtl | left | ltr | right): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
-    
-    @scala.inline
-    def setMoveMode(value: followFinger | silent | bounce): Self = this.set("moveMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMoveMode: Self = this.set("moveMode", js.undefined)
+    def setMoveModeUndefined: Self = StObject.set(x, "moveMode", js.undefined)
   }
 }

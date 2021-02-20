@@ -1,11 +1,12 @@
 package typings.cassanknex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LimitableQueryBuilder extends js.Object {
+trait LimitableQueryBuilder extends StObject {
   
   def limit(limit: Double): this.type = js.native
   
@@ -20,24 +21,12 @@ object LimitableQueryBuilder {
   }
   
   @scala.inline
-  implicit class LimitableQueryBuilderOps[Self <: LimitableQueryBuilder] (val x: Self) extends AnyVal {
+  implicit class LimitableQueryBuilderMutableBuilder[Self <: LimitableQueryBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: Double => LimitableQueryBuilder): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLimit(value: Double => LimitableQueryBuilder): Self = this.set("limit", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLimitPerPartition(value: Double => LimitableQueryBuilder): Self = this.set("limitPerPartition", js.Any.fromFunction1(value))
+    def setLimitPerPartition(value: Double => LimitableQueryBuilder): Self = StObject.set(x, "limitPerPartition", js.Any.fromFunction1(value))
   }
 }

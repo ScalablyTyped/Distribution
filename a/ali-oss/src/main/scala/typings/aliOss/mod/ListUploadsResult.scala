@@ -1,11 +1,12 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUploadsResult extends js.Object {
+trait ListUploadsResult extends StObject {
   
   var bucket: String = js.native
   
@@ -35,39 +36,27 @@ object ListUploadsResult {
   }
   
   @scala.inline
-  implicit class ListUploadsResultOps[Self <: ListUploadsResult] (val x: Self) extends AnyVal {
+  implicit class ListUploadsResultMutableBuilder[Self <: ListUploadsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextKeyMarker(value: js.Any): Self = StObject.set(x, "nextKeyMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setNextUploadIdMarker(value: js.Any): Self = StObject.set(x, "nextUploadIdMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: Boolean): Self = this.set("isTruncated", value.asInstanceOf[js.Any])
+    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextKeyMarker(value: js.Any): Self = this.set("nextKeyMarker", value.asInstanceOf[js.Any])
+    def setUploads(value: js.Array[Upload]): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextUploadIdMarker(value: js.Any): Self = this.set("nextUploadIdMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = this.set("res", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadsVarargs(value: Upload*): Self = this.set("uploads", js.Array(value :_*))
-    
-    @scala.inline
-    def setUploads(value: js.Array[Upload]): Self = this.set("uploads", value.asInstanceOf[js.Any])
+    def setUploadsVarargs(value: Upload*): Self = StObject.set(x, "uploads", js.Array(value :_*))
   }
 }

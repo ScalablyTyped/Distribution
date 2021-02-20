@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2beta1IntentMessageRbmText extends js.Object {
+trait GoogleCloudDialogflowV2beta1IntentMessageRbmText extends StObject {
   
   /** Optional. One or more suggestions to show to the user. */
   var rbmSuggestion: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion]] = js.native
@@ -22,33 +23,21 @@ object GoogleCloudDialogflowV2beta1IntentMessageRbmText {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmTextOps[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmText] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmTextMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRbmSuggestion(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion]): Self = StObject.set(x, "rbmSuggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRbmSuggestionUndefined: Self = StObject.set(x, "rbmSuggestion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRbmSuggestionVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion*): Self = StObject.set(x, "rbmSuggestion", js.Array(value :_*))
     
     @scala.inline
-    def setRbmSuggestionVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion*): Self = this.set("rbmSuggestion", js.Array(value :_*))
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRbmSuggestion(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion]): Self = this.set("rbmSuggestion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRbmSuggestion: Self = this.set("rbmSuggestion", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

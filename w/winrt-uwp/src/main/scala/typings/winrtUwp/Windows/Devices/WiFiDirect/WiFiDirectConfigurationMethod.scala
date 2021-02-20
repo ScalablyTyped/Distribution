@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiDirectConfigurationMethod extends js.Object
+sealed trait WiFiDirectConfigurationMethod extends StObject
 /** Specifies a Wi-Fi Direct configuration method. Configuration is how a user tells one piece of Wi-Fi Direct equipment to connect to another piece of Wi-Fi Direct equipment. */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConfigurationMethod")
 @js.native
-object WiFiDirectConfigurationMethod extends js.Object {
+object WiFiDirectConfigurationMethod extends StObject {
   
   /** This device accepts connections from devices that provide the PIN this device currently displays. */
   @js.native

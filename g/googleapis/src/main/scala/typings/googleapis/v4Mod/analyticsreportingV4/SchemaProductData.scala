@@ -1,5 +1,6 @@
 package typings.googleapis.v4Mod.analyticsreportingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details of the products in an e-commerce transaction.
   */
 @js.native
-trait SchemaProductData extends js.Object {
+trait SchemaProductData extends StObject {
   
   /**
     * The total revenue from purchased product items.
@@ -40,42 +41,30 @@ object SchemaProductData {
   }
   
   @scala.inline
-  implicit class SchemaProductDataOps[Self <: SchemaProductData] (val x: Self) extends AnyVal {
+  implicit class SchemaProductDataMutableBuilder[Self <: SchemaProductData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemRevenue(value: Double): Self = StObject.set(x, "itemRevenue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemRevenueUndefined: Self = StObject.set(x, "itemRevenue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemRevenue(value: Double): Self = this.set("itemRevenue", value.asInstanceOf[js.Any])
+    def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
     
     @scala.inline
-    def deleteItemRevenue: Self = this.set("itemRevenue", js.undefined)
+    def setProductQuantity(value: String): Self = StObject.set(x, "productQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductName(value: String): Self = this.set("productName", value.asInstanceOf[js.Any])
+    def setProductQuantityUndefined: Self = StObject.set(x, "productQuantity", js.undefined)
     
     @scala.inline
-    def deleteProductName: Self = this.set("productName", js.undefined)
+    def setProductSku(value: String): Self = StObject.set(x, "productSku", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductQuantity(value: String): Self = this.set("productQuantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductQuantity: Self = this.set("productQuantity", js.undefined)
-    
-    @scala.inline
-    def setProductSku(value: String): Self = this.set("productSku", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductSku: Self = this.set("productSku", js.undefined)
+    def setProductSkuUndefined: Self = StObject.set(x, "productSku", js.undefined)
   }
 }

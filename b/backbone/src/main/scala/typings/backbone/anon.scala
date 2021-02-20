@@ -8,9 +8,7 @@ import typings.backbone.mod.CombinedModelConstructorOptions
 import typings.backbone.mod.History_
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
-import typings.backbone.mod.Router
 import typings.backbone.mod.RouterOptions
-import typings.backbone.mod.View
 import typings.backbone.mod.ViewOptions
 import typings.jquery.JQuery
 import typings.jquery.JQuery.PlainObject
@@ -25,100 +23,81 @@ import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.HTMLSelectElement
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait TypeofCollection
-    extends Instantiable0[Collection[Model[js.Any, ModelSetOptions, js.Object]]]
-       with Instantiable1[
-          /* models */ js.Array[
-            (/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any) | js.Object
-          ], 
-          Collection[Model[js.Any, ModelSetOptions, js.Object]]
-        ]
-       with Instantiable2[
-          js.UndefOr[
-            /* models */ js.Array[
-              (/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any) | js.Object
-            ]
-          ], 
-          /* options */ js.Any, 
-          Collection[Model[js.Any, ModelSetOptions, js.Object]]
-        ] {
+  trait TypeofCollection extends StObject {
     
     /**
       * Do not use, prefer TypeScript's extend functionality.
       **/
+    /* static member */
     def extend(properties: js.Any): js.Any = js.native
     def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
   }
   
   @js.native
-  trait TypeofHistory extends Instantiable0[History_] {
+  trait TypeofHistory extends StObject {
     
+    /* static member */
     var started: Boolean = js.native
   }
+  object TypeofHistory {
+    
+    @scala.inline
+    def apply(started: Boolean): TypeofHistory = {
+      val __obj = js.Dynamic.literal(started = started.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TypeofHistory]
+    }
+    
+    @scala.inline
+    implicit class TypeofHistoryMutableBuilder[Self <: TypeofHistory] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    }
+  }
   
   @js.native
-  trait TypeofModel
-    extends Instantiable0[Model[js.Object, js.Object, js.Object]]
-       with Instantiable1[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ /* attributes */ js.Any, 
-          Model[js.Object, js.Object, js.Object]
-        ]
-       with Instantiable2[
-          js.UndefOr[
-            /* import warning: RewrittenClass.unapply cls was tparam T */ /* attributes */ js.Any
-          ], 
-          /* options */ CombinedModelConstructorOptions[
-            /* import warning: RewrittenClass.unapply cls was tparam E */ js.Any, 
-            Model[js.Any, ModelSetOptions, js.Object]
-          ], 
-          Model[js.Object, js.Object, js.Object]
-        ] {
+  trait TypeofModel extends StObject {
     
     /**
       * Do not use, prefer TypeScript's extend functionality.
       **/
+    /* static member */
     def extend(properties: js.Any): js.Any = js.native
     def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
   }
   
   @js.native
-  trait TypeofRouter
-    extends Instantiable0[Router]
-       with Instantiable1[/* options */ RouterOptions, Router] {
+  trait TypeofRouter extends StObject {
     
     /**
       * Do not use, prefer TypeScript's extend functionality.
       **/
+    /* static member */
     def extend(properties: js.Any): js.Any = js.native
     def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
   }
   
   @js.native
-  trait TypeofView
-    extends Instantiable0[View[Model[js.Any, ModelSetOptions, js.Object]]]
-       with Instantiable1[
-          /* options */ ViewOptions[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any], 
-          View[Model[js.Any, ModelSetOptions, js.Object]]
-        ] {
+  trait TypeofView extends StObject {
     
     /**
       * Do not use, prefer TypeScript's extend functionality.
       **/
+    /* static member */
     def extend(properties: js.Any): js.Any = js.native
     def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
   }
   
   @js.native
-  trait Typeofbackbone extends js.Object {
+  trait Typeofbackbone extends StObject {
     
     /**
       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
@@ -290,7 +269,15 @@ object anon extends js.Object {
     @JSName("$")
     def $_T_PlainObjectWildcard[T /* <: PlainObject[_] */](`object`: T): JQuery[T] = js.native
     
-    var Collection: TypeofCollection = js.native
+    var Collection: (Instantiable2[
+        /* models */ js.UndefOr[
+          js.Array[
+            (/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any) | js.Object
+          ]
+        ], 
+        /* options */ js.UndefOr[js.Any], 
+        typings.backbone.mod.Collection[Model[js.Any, ModelSetOptions, js.Object]]
+      ]) with TypeofCollection = js.native
     
     val Events: typings.backbone.mod.Events = js.native
     
@@ -306,19 +293,33 @@ object anon extends js.Object {
       */
     var EventsMixin: Instantiable0[typings.backbone.mod.EventsMixin] = js.native
     
-    var History: TypeofHistory = js.native
+    var History: Instantiable0[History_] with TypeofHistory = js.native
     
     /**
       * E - Extensions to the model constructor options. You can accept additional constructor options
       * by listing them in the E parameter.
       */
-    var Model: TypeofModel = js.native
+    var Model: (Instantiable2[
+        /* attributes */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* options */ js.UndefOr[
+          CombinedModelConstructorOptions[
+            /* import warning: RewrittenClass.unapply cls was tparam E */ js.Any, 
+            typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]
+          ]
+        ], 
+        typings.backbone.mod.Model[js.Object, js.Object, js.Object]
+      ]) with TypeofModel = js.native
     
     var ModelBase: Instantiable0[typings.backbone.mod.ModelBase] = js.native
     
-    var Router: TypeofRouter = js.native
+    var Router: (Instantiable1[/* options */ js.UndefOr[RouterOptions], typings.backbone.mod.Router]) with TypeofRouter = js.native
     
-    var View: TypeofView = js.native
+    var View: (Instantiable1[
+        /* options */ js.UndefOr[
+          ViewOptions[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any]
+        ], 
+        typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]
+      ]) with TypeofView = js.native
     
     def ajax(): JQueryXHR = js.native
     def ajax(options: JQueryAjaxSettings): JQueryXHR = js.native

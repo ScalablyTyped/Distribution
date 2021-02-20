@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.rendering
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait IntegerBitmapLayout extends js.Object {
+trait IntegerBitmapLayout extends StObject {
   
   /**
     * Color space the bitmap colors shall be interpreted within.
@@ -91,39 +92,27 @@ object IntegerBitmapLayout {
   }
   
   @scala.inline
-  implicit class IntegerBitmapLayoutOps[Self <: IntegerBitmapLayout] (val x: Self) extends AnyVal {
+  implicit class IntegerBitmapLayoutMutableBuilder[Self <: IntegerBitmapLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorSpace(value: XIntegerBitmapColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsMsbFirst(value: Boolean): Self = StObject.set(x, "IsMsbFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPalette(value: XBitmapPalette): Self = StObject.set(x, "Palette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpace(value: XIntegerBitmapColorSpace): Self = this.set("ColorSpace", value.asInstanceOf[js.Any])
+    def setPlaneStride(value: Double): Self = StObject.set(x, "PlaneStride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMsbFirst(value: Boolean): Self = this.set("IsMsbFirst", value.asInstanceOf[js.Any])
+    def setScanLineBytes(value: Double): Self = StObject.set(x, "ScanLineBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPalette(value: XBitmapPalette): Self = this.set("Palette", value.asInstanceOf[js.Any])
+    def setScanLineStride(value: Double): Self = StObject.set(x, "ScanLineStride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaneStride(value: Double): Self = this.set("PlaneStride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScanLineBytes(value: Double): Self = this.set("ScanLineBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScanLineStride(value: Double): Self = this.set("ScanLineStride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScanLines(value: Double): Self = this.set("ScanLines", value.asInstanceOf[js.Any])
+    def setScanLines(value: Double): Self = StObject.set(x, "ScanLines", value.asInstanceOf[js.Any])
   }
 }

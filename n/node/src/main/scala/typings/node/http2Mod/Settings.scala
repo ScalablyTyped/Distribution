@@ -1,11 +1,12 @@
 package typings.node.http2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Settings extends js.Object {
+trait Settings extends StObject {
   
   var enableConnectProtocol: js.UndefOr[Boolean] = js.native
   
@@ -30,60 +31,48 @@ object Settings {
   }
   
   @scala.inline
-  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableConnectProtocol(value: Boolean): Self = StObject.set(x, "enableConnectProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableConnectProtocolUndefined: Self = StObject.set(x, "enableConnectProtocol", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnablePush(value: Boolean): Self = StObject.set(x, "enablePush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableConnectProtocol(value: Boolean): Self = this.set("enableConnectProtocol", value.asInstanceOf[js.Any])
+    def setEnablePushUndefined: Self = StObject.set(x, "enablePush", js.undefined)
     
     @scala.inline
-    def deleteEnableConnectProtocol: Self = this.set("enableConnectProtocol", js.undefined)
+    def setHeaderTableSize(value: Double): Self = StObject.set(x, "headerTableSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePush(value: Boolean): Self = this.set("enablePush", value.asInstanceOf[js.Any])
+    def setHeaderTableSizeUndefined: Self = StObject.set(x, "headerTableSize", js.undefined)
     
     @scala.inline
-    def deleteEnablePush: Self = this.set("enablePush", js.undefined)
+    def setInitialWindowSize(value: Double): Self = StObject.set(x, "initialWindowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTableSize(value: Double): Self = this.set("headerTableSize", value.asInstanceOf[js.Any])
+    def setInitialWindowSizeUndefined: Self = StObject.set(x, "initialWindowSize", js.undefined)
     
     @scala.inline
-    def deleteHeaderTableSize: Self = this.set("headerTableSize", js.undefined)
+    def setMaxConcurrentStreams(value: Double): Self = StObject.set(x, "maxConcurrentStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialWindowSize(value: Double): Self = this.set("initialWindowSize", value.asInstanceOf[js.Any])
+    def setMaxConcurrentStreamsUndefined: Self = StObject.set(x, "maxConcurrentStreams", js.undefined)
     
     @scala.inline
-    def deleteInitialWindowSize: Self = this.set("initialWindowSize", js.undefined)
+    def setMaxFrameSize(value: Double): Self = StObject.set(x, "maxFrameSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrentStreams(value: Double): Self = this.set("maxConcurrentStreams", value.asInstanceOf[js.Any])
+    def setMaxFrameSizeUndefined: Self = StObject.set(x, "maxFrameSize", js.undefined)
     
     @scala.inline
-    def deleteMaxConcurrentStreams: Self = this.set("maxConcurrentStreams", js.undefined)
+    def setMaxHeaderListSize(value: Double): Self = StObject.set(x, "maxHeaderListSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFrameSize(value: Double): Self = this.set("maxFrameSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxFrameSize: Self = this.set("maxFrameSize", js.undefined)
-    
-    @scala.inline
-    def setMaxHeaderListSize(value: Double): Self = this.set("maxHeaderListSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxHeaderListSize: Self = this.set("maxHeaderListSize", js.undefined)
+    def setMaxHeaderListSizeUndefined: Self = StObject.set(x, "maxHeaderListSize", js.undefined)
   }
 }

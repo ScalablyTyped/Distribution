@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods to enable and retrieve message change revisions. */
 @js.native
-trait ChatMessageChangeTracker extends js.Object {
+trait ChatMessageChangeTracker extends StObject {
   
   /** Enables change tracking for the messages in the message store. */
   def enable(): Unit = js.native
@@ -29,27 +30,15 @@ object ChatMessageChangeTracker {
   }
   
   @scala.inline
-  implicit class ChatMessageChangeTrackerOps[Self <: ChatMessageChangeTracker] (val x: Self) extends AnyVal {
+  implicit class ChatMessageChangeTrackerMutableBuilder[Self <: ChatMessageChangeTracker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetChangeReader(value: () => ChatMessageChangeReader): Self = StObject.set(x, "getChangeReader", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetChangeReader(value: () => ChatMessageChangeReader): Self = this.set("getChangeReader", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

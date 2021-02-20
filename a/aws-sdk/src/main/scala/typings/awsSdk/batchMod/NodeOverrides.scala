@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeOverrides extends js.Object {
+trait NodeOverrides extends StObject {
   
   /**
     * The node property overrides for the job.
@@ -26,33 +27,21 @@ object NodeOverrides {
   }
   
   @scala.inline
-  implicit class NodeOverridesOps[Self <: NodeOverrides] (val x: Self) extends AnyVal {
+  implicit class NodeOverridesMutableBuilder[Self <: NodeOverrides] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodePropertyOverrides(value: NodePropertyOverrides): Self = StObject.set(x, "nodePropertyOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodePropertyOverridesUndefined: Self = StObject.set(x, "nodePropertyOverrides", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodePropertyOverridesVarargs(value: NodePropertyOverride*): Self = StObject.set(x, "nodePropertyOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setNodePropertyOverridesVarargs(value: NodePropertyOverride*): Self = this.set("nodePropertyOverrides", js.Array(value :_*))
+    def setNumNodes(value: Integer): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodePropertyOverrides(value: NodePropertyOverrides): Self = this.set("nodePropertyOverrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodePropertyOverrides: Self = this.set("nodePropertyOverrides", js.undefined)
-    
-    @scala.inline
-    def setNumNodes(value: Integer): Self = this.set("numNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumNodes: Self = this.set("numNodes", js.undefined)
+    def setNumNodesUndefined: Self = StObject.set(x, "numNodes", js.undefined)
   }
 }

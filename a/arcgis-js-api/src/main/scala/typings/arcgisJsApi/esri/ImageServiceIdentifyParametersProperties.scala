@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageServiceIdentifyParametersProperties extends js.Object {
+trait ImageServiceIdentifyParametersProperties extends StObject {
   
   /**
     * Input geometry that defines the location to be identified.
@@ -86,78 +87,66 @@ object ImageServiceIdentifyParametersProperties {
   }
   
   @scala.inline
-  implicit class ImageServiceIdentifyParametersPropertiesOps[Self <: ImageServiceIdentifyParametersProperties] (val x: Self) extends AnyVal {
+  implicit class ImageServiceIdentifyParametersPropertiesMutableBuilder[Self <: ImageServiceIdentifyParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeometry(value: PointProperties | PolygonProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxItemCount(value: Double): Self = StObject.set(x, "maxItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometry(value: PointProperties | PolygonProperties): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    def setMaxItemCountUndefined: Self = StObject.set(x, "maxItemCount", js.undefined)
     
     @scala.inline
-    def deleteGeometry: Self = this.set("geometry", js.undefined)
+    def setMosaicRule(value: MosaicRuleProperties): Self = StObject.set(x, "mosaicRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItemCount(value: Double): Self = this.set("maxItemCount", value.asInstanceOf[js.Any])
+    def setMosaicRuleUndefined: Self = StObject.set(x, "mosaicRule", js.undefined)
     
     @scala.inline
-    def deleteMaxItemCount: Self = this.set("maxItemCount", js.undefined)
+    def setPixelSize(value: PointProperties): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMosaicRule(value: MosaicRuleProperties): Self = this.set("mosaicRule", value.asInstanceOf[js.Any])
+    def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
     
     @scala.inline
-    def deleteMosaicRule: Self = this.set("mosaicRule", js.undefined)
+    def setRenderingRule(value: RasterFunctionProperties): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelSize(value: PointProperties): Self = this.set("pixelSize", value.asInstanceOf[js.Any])
+    def setRenderingRuleUndefined: Self = StObject.set(x, "renderingRule", js.undefined)
     
     @scala.inline
-    def deletePixelSize: Self = this.set("pixelSize", js.undefined)
+    def setRenderingRules(value: RasterFunctionProperties): Self = StObject.set(x, "renderingRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderingRule(value: RasterFunctionProperties): Self = this.set("renderingRule", value.asInstanceOf[js.Any])
+    def setRenderingRulesUndefined: Self = StObject.set(x, "renderingRules", js.undefined)
     
     @scala.inline
-    def deleteRenderingRule: Self = this.set("renderingRule", js.undefined)
+    def setReturnCatalogItems(value: Boolean): Self = StObject.set(x, "returnCatalogItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderingRules(value: RasterFunctionProperties): Self = this.set("renderingRules", value.asInstanceOf[js.Any])
+    def setReturnCatalogItemsUndefined: Self = StObject.set(x, "returnCatalogItems", js.undefined)
     
     @scala.inline
-    def deleteRenderingRules: Self = this.set("renderingRules", js.undefined)
+    def setReturnGeometry(value: Boolean): Self = StObject.set(x, "returnGeometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnCatalogItems(value: Boolean): Self = this.set("returnCatalogItems", value.asInstanceOf[js.Any])
+    def setReturnGeometryUndefined: Self = StObject.set(x, "returnGeometry", js.undefined)
     
     @scala.inline
-    def deleteReturnCatalogItems: Self = this.set("returnCatalogItems", js.undefined)
+    def setReturnPixelValues(value: Boolean): Self = StObject.set(x, "returnPixelValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnGeometry(value: Boolean): Self = this.set("returnGeometry", value.asInstanceOf[js.Any])
+    def setReturnPixelValuesUndefined: Self = StObject.set(x, "returnPixelValues", js.undefined)
     
     @scala.inline
-    def deleteReturnGeometry: Self = this.set("returnGeometry", js.undefined)
+    def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnPixelValues(value: Boolean): Self = this.set("returnPixelValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnPixelValues: Self = this.set("returnPixelValues", js.undefined)
-    
-    @scala.inline
-    def setTimeExtent(value: TimeExtentProperties): Self = this.set("timeExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeExtent: Self = this.set("timeExtent", js.undefined)
+    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
   }
 }

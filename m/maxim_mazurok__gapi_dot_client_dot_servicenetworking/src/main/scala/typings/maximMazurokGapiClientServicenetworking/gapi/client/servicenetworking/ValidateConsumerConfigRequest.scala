@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateConsumerConfigRequest extends js.Object {
+trait ValidateConsumerConfigRequest extends StObject {
   
   /**
     * Required. The network that the consumer is using to connect with services. Must be in the form of projects/{project}/global/networks/{network} {project} is a project number, as in
@@ -35,42 +36,30 @@ object ValidateConsumerConfigRequest {
   }
   
   @scala.inline
-  implicit class ValidateConsumerConfigRequestOps[Self <: ValidateConsumerConfigRequest] (val x: Self) extends AnyVal {
+  implicit class ValidateConsumerConfigRequestMutableBuilder[Self <: ValidateConsumerConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumerProject(value: ConsumerProject): Self = StObject.set(x, "consumerProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerNetwork(value: String): Self = this.set("consumerNetwork", value.asInstanceOf[js.Any])
+    def setConsumerProjectUndefined: Self = StObject.set(x, "consumerProject", js.undefined)
     
     @scala.inline
-    def deleteConsumerNetwork: Self = this.set("consumerNetwork", js.undefined)
+    def setRangeReservation(value: RangeReservation): Self = StObject.set(x, "rangeReservation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerProject(value: ConsumerProject): Self = this.set("consumerProject", value.asInstanceOf[js.Any])
+    def setRangeReservationUndefined: Self = StObject.set(x, "rangeReservation", js.undefined)
     
     @scala.inline
-    def deleteConsumerProject: Self = this.set("consumerProject", js.undefined)
+    def setValidateNetwork(value: Boolean): Self = StObject.set(x, "validateNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeReservation(value: RangeReservation): Self = this.set("rangeReservation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeReservation: Self = this.set("rangeReservation", js.undefined)
-    
-    @scala.inline
-    def setValidateNetwork(value: Boolean): Self = this.set("validateNetwork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateNetwork: Self = this.set("validateNetwork", js.undefined)
+    def setValidateNetworkUndefined: Self = StObject.set(x, "validateNetwork", js.undefined)
   }
 }

@@ -11,6 +11,7 @@ import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Geom.Point
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

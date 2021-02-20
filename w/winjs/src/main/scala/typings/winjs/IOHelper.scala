@@ -1,6 +1,7 @@
 package typings.winjs
 
 import typings.winjs.WinJS.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Utility class for easy access to operations on application folders
 **/
 @js.native
-trait IOHelper extends js.Object {
+trait IOHelper extends StObject {
   
   /**
     * Determines whether the specified file exists in the folder.

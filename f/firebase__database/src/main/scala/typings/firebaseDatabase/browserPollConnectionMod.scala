@@ -7,40 +7,14 @@ import typings.firebaseDatabase.transportMod.Transport
 import typings.std.Document
 import typings.std.HTMLIFrameElement
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", JSImport.Namespace)
-@js.native
-object browserPollConnectionMod extends js.Object {
+object browserPollConnectionMod {
   
-  val FIREBASE_LONGPOLL_CALLBACK_ID_PARAM: /* "cb" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_CLOSE_COMMAND: /* "close" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_COMMAND_CB_NAME: /* "pLPCommand" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_DATA_CB_NAME: /* "pRTLPCB" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_DATA_PARAM: /* "d" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_DISCONN_FRAME_PARAM: /* "disconn" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_DISCONN_FRAME_REQUEST_PARAM: /* "dframe" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_ID_PARAM: /* "id" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_PW_PARAM: /* "pw" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_SEGMENTS_IN_PACKET: /* "ts" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_SEGMENT_NUM_PARAM: /* "seg" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_SERIAL_PARAM: /* "ser" */ String = js.native
-  
-  val FIREBASE_LONGPOLL_START_PARAM: /* "start" */ String = js.native
-  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection")
   @js.native
   class BrowserPollConnection protected () extends Transport {
     /**
@@ -153,28 +127,98 @@ object browserPollConnectionMod extends js.Object {
     def urlFn(params: js.Object): String = js.native
   }
   /* static members */
-  @js.native
-  object BrowserPollConnection extends js.Object {
+  object BrowserPollConnection {
+    
+    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Forces long polling to be considered as a potential transport
       */
+    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.forceAllow")
+    @js.native
     def forceAllow(): Unit = js.native
     
-    var forceAllow_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.forceAllow_")
+    @js.native
+    def forceAllow_ : js.Any = js.native
+    @scala.inline
+    def forceAllow__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAllow_")(x.asInstanceOf[js.Any])
     
     /**
       * Forces longpolling to not be considered as a potential transport
       */
+    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.forceDisallow")
+    @js.native
     def forceDisallow(): Unit = js.native
     
-    var forceDisallow_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.forceDisallow_")
+    @js.native
+    def forceDisallow_ : js.Any = js.native
+    @scala.inline
+    def forceDisallow__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceDisallow_")(x.asInstanceOf[js.Any])
     
+    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.isAvailable")
+    @js.native
     def isAvailable(): Boolean = js.native
   }
   
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_CALLBACK_ID_PARAM")
   @js.native
-  class FirebaseIFrameScriptHolder protected () extends js.Object {
+  val FIREBASE_LONGPOLL_CALLBACK_ID_PARAM: /* "cb" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_CLOSE_COMMAND")
+  @js.native
+  val FIREBASE_LONGPOLL_CLOSE_COMMAND: /* "close" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_COMMAND_CB_NAME")
+  @js.native
+  val FIREBASE_LONGPOLL_COMMAND_CB_NAME: /* "pLPCommand" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_DATA_CB_NAME")
+  @js.native
+  val FIREBASE_LONGPOLL_DATA_CB_NAME: /* "pRTLPCB" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_DATA_PARAM")
+  @js.native
+  val FIREBASE_LONGPOLL_DATA_PARAM: /* "d" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_DISCONN_FRAME_PARAM")
+  @js.native
+  val FIREBASE_LONGPOLL_DISCONN_FRAME_PARAM: /* "disconn" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_DISCONN_FRAME_REQUEST_PARAM")
+  @js.native
+  val FIREBASE_LONGPOLL_DISCONN_FRAME_REQUEST_PARAM: /* "dframe" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_ID_PARAM")
+  @js.native
+  val FIREBASE_LONGPOLL_ID_PARAM: /* "id" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_PW_PARAM")
+  @js.native
+  val FIREBASE_LONGPOLL_PW_PARAM: /* "pw" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_SEGMENTS_IN_PACKET")
+  @js.native
+  val FIREBASE_LONGPOLL_SEGMENTS_IN_PACKET: /* "ts" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_SEGMENT_NUM_PARAM")
+  @js.native
+  val FIREBASE_LONGPOLL_SEGMENT_NUM_PARAM: /* "seg" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_SERIAL_PARAM")
+  @js.native
+  val FIREBASE_LONGPOLL_SERIAL_PARAM: /* "ser" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_START_PARAM")
+  @js.native
+  val FIREBASE_LONGPOLL_START_PARAM: /* "start" */ String = js.native
+  
+  @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FirebaseIFrameScriptHolder")
+  @js.native
+  class FirebaseIFrameScriptHolder protected () extends StObject {
     /**
       * @param commandCB - The callback to be called when control commands are recevied from the server.
       * @param onMessageCB - The callback to be triggered when responses arrive from the server.
@@ -259,8 +303,11 @@ object browserPollConnectionMod extends js.Object {
     def urlFn(a: js.Object): String = js.native
   }
   /* static members */
-  @js.native
-  object FirebaseIFrameScriptHolder extends js.Object {
+  object FirebaseIFrameScriptHolder {
+    
+    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FirebaseIFrameScriptHolder")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Each browser has its own funny way to handle iframes. Here we mush them all together into one object that I can
@@ -268,7 +315,11 @@ object browserPollConnectionMod extends js.Object {
       * @private
       * @return {Element}
       */
-    var createIFrame_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FirebaseIFrameScriptHolder.createIFrame_")
+    @js.native
+    def createIFrame_ : js.Any = js.native
+    @scala.inline
+    def createIFrame__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createIFrame_")(x.asInstanceOf[js.Any])
   }
   
   @js.native

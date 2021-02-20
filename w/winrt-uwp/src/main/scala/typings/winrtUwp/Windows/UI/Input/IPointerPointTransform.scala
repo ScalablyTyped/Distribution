@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.UI.Input
 import typings.winrtUwp.Windows.Foundation.Point
 import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.anon.OutPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides generalized transformation functions. */
 @js.native
-trait IPointerPointTransform extends js.Object {
+trait IPointerPointTransform extends StObject {
   
   /** Gets the inverse of the specified transformation. */
   var inverse: IPointerPointTransform = js.native
@@ -36,27 +37,15 @@ object IPointerPointTransform {
   }
   
   @scala.inline
-  implicit class IPointerPointTransformOps[Self <: IPointerPointTransform] (val x: Self) extends AnyVal {
+  implicit class IPointerPointTransformMutableBuilder[Self <: IPointerPointTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInverse(value: IPointerPointTransform): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransformBounds(value: Rect => Rect): Self = StObject.set(x, "transformBounds", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInverse(value: IPointerPointTransform): Self = this.set("inverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransformBounds(value: Rect => Rect): Self = this.set("transformBounds", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTryTransform(value: Point => OutPoint): Self = this.set("tryTransform", js.Any.fromFunction1(value))
+    def setTryTransform(value: Point => OutPoint): Self = StObject.set(x, "tryTransform", js.Any.fromFunction1(value))
   }
 }

@@ -2,16 +2,16 @@ package typings.homeworks
 
 import typings.angularCore.mod.Renderer2
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("homeworks/lib/ng2-homeworks/src/core/manager", JSImport.Namespace)
-@js.native
-object managerMod extends js.Object {
+object managerMod {
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/core/manager", "HomeworksManager")
   @js.native
-  class HomeworksManager protected () extends js.Object {
+  class HomeworksManager protected () extends StObject {
     def this(renderer: Renderer2, component: String) = this()
     def this(renderer: Renderer2, component: String, alias: String) = this()
     

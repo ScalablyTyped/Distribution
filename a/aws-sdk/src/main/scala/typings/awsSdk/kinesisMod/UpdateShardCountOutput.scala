@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateShardCountOutput extends js.Object {
+trait UpdateShardCountOutput extends StObject {
   
   /**
     * The current number of shards.
@@ -31,36 +32,24 @@ object UpdateShardCountOutput {
   }
   
   @scala.inline
-  implicit class UpdateShardCountOutputOps[Self <: UpdateShardCountOutput] (val x: Self) extends AnyVal {
+  implicit class UpdateShardCountOutputMutableBuilder[Self <: UpdateShardCountOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "CurrentShardCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentShardCountUndefined: Self = StObject.set(x, "CurrentShardCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentShardCount(value: PositiveIntegerObject): Self = this.set("CurrentShardCount", value.asInstanceOf[js.Any])
+    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
     
     @scala.inline
-    def deleteCurrentShardCount: Self = this.set("CurrentShardCount", js.undefined)
+    def setTargetShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "TargetShardCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamName: Self = this.set("StreamName", js.undefined)
-    
-    @scala.inline
-    def setTargetShardCount(value: PositiveIntegerObject): Self = this.set("TargetShardCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetShardCount: Self = this.set("TargetShardCount", js.undefined)
+    def setTargetShardCountUndefined: Self = StObject.set(x, "TargetShardCount", js.undefined)
   }
 }

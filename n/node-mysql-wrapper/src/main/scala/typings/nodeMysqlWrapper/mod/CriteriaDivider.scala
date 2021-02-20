@@ -1,12 +1,13 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "CriteriaDivider")
 @js.native
-class CriteriaDivider[T] protected () extends js.Object {
+class CriteriaDivider[T] protected () extends StObject {
   def this(table: Table[T]) = this()
   
   var _table: js.Any = js.native

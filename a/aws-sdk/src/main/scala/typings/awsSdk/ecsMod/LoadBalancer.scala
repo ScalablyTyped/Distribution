@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadBalancer extends js.Object {
+trait LoadBalancer extends StObject {
   
   /**
     * The name of the container (as it appears in a container definition) to associate with the load balancer.
@@ -36,42 +37,30 @@ object LoadBalancer {
   }
   
   @scala.inline
-  implicit class LoadBalancerOps[Self <: LoadBalancer] (val x: Self) extends AnyVal {
+  implicit class LoadBalancerMutableBuilder[Self <: LoadBalancer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerPort(value: BoxedInteger): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
     
     @scala.inline
-    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    def setLoadBalancerName(value: String): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerPort(value: BoxedInteger): Self = this.set("containerPort", value.asInstanceOf[js.Any])
+    def setLoadBalancerNameUndefined: Self = StObject.set(x, "loadBalancerName", js.undefined)
     
     @scala.inline
-    def deleteContainerPort: Self = this.set("containerPort", js.undefined)
+    def setTargetGroupArn(value: String): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerName(value: String): Self = this.set("loadBalancerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadBalancerName: Self = this.set("loadBalancerName", js.undefined)
-    
-    @scala.inline
-    def setTargetGroupArn(value: String): Self = this.set("targetGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGroupArn: Self = this.set("targetGroupArn", js.undefined)
+    def setTargetGroupArnUndefined: Self = StObject.set(x, "targetGroupArn", js.undefined)
   }
 }

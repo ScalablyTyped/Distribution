@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/simplexPerlin3DBlock", JSImport.Namespace)
-@js.native
-object simplexPerlin3DBlockMod extends js.Object {
+object simplexPerlin3DBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/simplexPerlin3DBlock", "SimplexPerlin3DBlock")
   @js.native
   class SimplexPerlin3DBlock protected () extends NodeMaterialBlock {
     /**

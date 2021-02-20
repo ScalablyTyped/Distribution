@@ -1,37 +1,33 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTCapNoiseFilter extends js.Object
+sealed trait EnumDWTCapNoiseFilter extends StObject
 /** ICAP_NOISEFILTER values. */
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_CapNoiseFilter")
 @js.native
-object EnumDWTCapNoiseFilter extends js.Object {
+object EnumDWTCapNoiseFilter extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWTCapNoiseFilter with Double] = js.native
   
   @js.native
   sealed trait TWNF_AUTO extends EnumDWTCapNoiseFilter
-  /* 1 */ @js.native
-  object TWNF_AUTO extends TopLevel[TWNF_AUTO with Double]
+  /* 1 */ val TWNF_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapNoiseFilter.TWNF_AUTO with Double = js.native
   
   @js.native
   sealed trait TWNF_LONEPIXEL extends EnumDWTCapNoiseFilter
-  /* 2 */ @js.native
-  object TWNF_LONEPIXEL extends TopLevel[TWNF_LONEPIXEL with Double]
+  /* 2 */ val TWNF_LONEPIXEL: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapNoiseFilter.TWNF_LONEPIXEL with Double = js.native
   
   @js.native
   sealed trait TWNF_MAJORITYRULE extends EnumDWTCapNoiseFilter
-  /* 3 */ @js.native
-  object TWNF_MAJORITYRULE extends TopLevel[TWNF_MAJORITYRULE with Double]
+  /* 3 */ val TWNF_MAJORITYRULE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapNoiseFilter.TWNF_MAJORITYRULE with Double = js.native
   
   @js.native
   sealed trait TWNF_NONE extends EnumDWTCapNoiseFilter
-  /* 0 */ @js.native
-  object TWNF_NONE extends TopLevel[TWNF_NONE with Double]
+  /* 0 */ val TWNF_NONE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapNoiseFilter.TWNF_NONE with Double = js.native
 }

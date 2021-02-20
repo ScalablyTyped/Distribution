@@ -4,12 +4,13 @@ import typings.electron.electronStrings.bottom
 import typings.electron.electronStrings.detach
 import typings.electron.electronStrings.right
 import typings.electron.electronStrings.undocked
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenDevToolsOptions extends js.Object {
+trait OpenDevToolsOptions extends StObject {
   
   /**
     * Whether to bring the opened devtools window to the foreground. The default is
@@ -33,27 +34,15 @@ object OpenDevToolsOptions {
   }
   
   @scala.inline
-  implicit class OpenDevToolsOptionsOps[Self <: OpenDevToolsOptions] (val x: Self) extends AnyVal {
+  implicit class OpenDevToolsOptionsMutableBuilder[Self <: OpenDevToolsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMode(value: right | bottom | undocked | detach): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActivate(value: Boolean): Self = this.set("activate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivate: Self = this.set("activate", js.undefined)
+    def setMode(value: right | bottom | undocked | detach): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

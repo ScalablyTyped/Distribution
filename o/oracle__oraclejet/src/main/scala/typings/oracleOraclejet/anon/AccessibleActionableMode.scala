@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibleActionableMode extends js.Object {
+trait AccessibleActionableMode extends StObject {
   
   var accessibleActionableMode: js.UndefOr[String] = js.native
   
@@ -108,294 +109,282 @@ object AccessibleActionableMode {
   }
   
   @scala.inline
-  implicit class AccessibleActionableModeOps[Self <: AccessibleActionableMode] (val x: Self) extends AnyVal {
+  implicit class AccessibleActionableModeMutableBuilder[Self <: AccessibleActionableMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleActionableMode(value: String): Self = StObject.set(x, "accessibleActionableMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibleActionableModeUndefined: Self = StObject.set(x, "accessibleActionableMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibleColumnContext(value: String): Self = StObject.set(x, "accessibleColumnContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleActionableMode(value: String): Self = this.set("accessibleActionableMode", value.asInstanceOf[js.Any])
+    def setAccessibleColumnContextUndefined: Self = StObject.set(x, "accessibleColumnContext", js.undefined)
     
     @scala.inline
-    def deleteAccessibleActionableMode: Self = this.set("accessibleActionableMode", js.undefined)
+    def setAccessibleColumnEndHeaderContext(value: String): Self = StObject.set(x, "accessibleColumnEndHeaderContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleColumnContext(value: String): Self = this.set("accessibleColumnContext", value.asInstanceOf[js.Any])
+    def setAccessibleColumnEndHeaderContextUndefined: Self = StObject.set(x, "accessibleColumnEndHeaderContext", js.undefined)
     
     @scala.inline
-    def deleteAccessibleColumnContext: Self = this.set("accessibleColumnContext", js.undefined)
+    def setAccessibleColumnHeaderContext(value: String): Self = StObject.set(x, "accessibleColumnHeaderContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleColumnEndHeaderContext(value: String): Self = this.set("accessibleColumnEndHeaderContext", value.asInstanceOf[js.Any])
+    def setAccessibleColumnHeaderContextUndefined: Self = StObject.set(x, "accessibleColumnHeaderContext", js.undefined)
     
     @scala.inline
-    def deleteAccessibleColumnEndHeaderContext: Self = this.set("accessibleColumnEndHeaderContext", js.undefined)
+    def setAccessibleColumnSelected(value: String): Self = StObject.set(x, "accessibleColumnSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleColumnHeaderContext(value: String): Self = this.set("accessibleColumnHeaderContext", value.asInstanceOf[js.Any])
+    def setAccessibleColumnSelectedUndefined: Self = StObject.set(x, "accessibleColumnSelected", js.undefined)
     
     @scala.inline
-    def deleteAccessibleColumnHeaderContext: Self = this.set("accessibleColumnHeaderContext", js.undefined)
+    def setAccessibleColumnSpanContext(value: String): Self = StObject.set(x, "accessibleColumnSpanContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleColumnSelected(value: String): Self = this.set("accessibleColumnSelected", value.asInstanceOf[js.Any])
+    def setAccessibleColumnSpanContextUndefined: Self = StObject.set(x, "accessibleColumnSpanContext", js.undefined)
     
     @scala.inline
-    def deleteAccessibleColumnSelected: Self = this.set("accessibleColumnSelected", js.undefined)
+    def setAccessibleFirstColumn(value: String): Self = StObject.set(x, "accessibleFirstColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleColumnSpanContext(value: String): Self = this.set("accessibleColumnSpanContext", value.asInstanceOf[js.Any])
+    def setAccessibleFirstColumnUndefined: Self = StObject.set(x, "accessibleFirstColumn", js.undefined)
     
     @scala.inline
-    def deleteAccessibleColumnSpanContext: Self = this.set("accessibleColumnSpanContext", js.undefined)
+    def setAccessibleFirstRow(value: String): Self = StObject.set(x, "accessibleFirstRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleFirstColumn(value: String): Self = this.set("accessibleFirstColumn", value.asInstanceOf[js.Any])
+    def setAccessibleFirstRowUndefined: Self = StObject.set(x, "accessibleFirstRow", js.undefined)
     
     @scala.inline
-    def deleteAccessibleFirstColumn: Self = this.set("accessibleFirstColumn", js.undefined)
+    def setAccessibleLastColumn(value: String): Self = StObject.set(x, "accessibleLastColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleFirstRow(value: String): Self = this.set("accessibleFirstRow", value.asInstanceOf[js.Any])
+    def setAccessibleLastColumnUndefined: Self = StObject.set(x, "accessibleLastColumn", js.undefined)
     
     @scala.inline
-    def deleteAccessibleFirstRow: Self = this.set("accessibleFirstRow", js.undefined)
+    def setAccessibleLastRow(value: String): Self = StObject.set(x, "accessibleLastRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleLastColumn(value: String): Self = this.set("accessibleLastColumn", value.asInstanceOf[js.Any])
+    def setAccessibleLastRowUndefined: Self = StObject.set(x, "accessibleLastRow", js.undefined)
     
     @scala.inline
-    def deleteAccessibleLastColumn: Self = this.set("accessibleLastColumn", js.undefined)
+    def setAccessibleLevelContext(value: String): Self = StObject.set(x, "accessibleLevelContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleLastRow(value: String): Self = this.set("accessibleLastRow", value.asInstanceOf[js.Any])
+    def setAccessibleLevelContextUndefined: Self = StObject.set(x, "accessibleLevelContext", js.undefined)
     
     @scala.inline
-    def deleteAccessibleLastRow: Self = this.set("accessibleLastRow", js.undefined)
+    def setAccessibleMultiCellSelected(value: String): Self = StObject.set(x, "accessibleMultiCellSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleLevelContext(value: String): Self = this.set("accessibleLevelContext", value.asInstanceOf[js.Any])
+    def setAccessibleMultiCellSelectedUndefined: Self = StObject.set(x, "accessibleMultiCellSelected", js.undefined)
     
     @scala.inline
-    def deleteAccessibleLevelContext: Self = this.set("accessibleLevelContext", js.undefined)
+    def setAccessibleNavigationMode(value: String): Self = StObject.set(x, "accessibleNavigationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleMultiCellSelected(value: String): Self = this.set("accessibleMultiCellSelected", value.asInstanceOf[js.Any])
+    def setAccessibleNavigationModeUndefined: Self = StObject.set(x, "accessibleNavigationMode", js.undefined)
     
     @scala.inline
-    def deleteAccessibleMultiCellSelected: Self = this.set("accessibleMultiCellSelected", js.undefined)
+    def setAccessibleRangeSelectModeOff(value: String): Self = StObject.set(x, "accessibleRangeSelectModeOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleNavigationMode(value: String): Self = this.set("accessibleNavigationMode", value.asInstanceOf[js.Any])
+    def setAccessibleRangeSelectModeOffUndefined: Self = StObject.set(x, "accessibleRangeSelectModeOff", js.undefined)
     
     @scala.inline
-    def deleteAccessibleNavigationMode: Self = this.set("accessibleNavigationMode", js.undefined)
+    def setAccessibleRangeSelectModeOn(value: String): Self = StObject.set(x, "accessibleRangeSelectModeOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRangeSelectModeOff(value: String): Self = this.set("accessibleRangeSelectModeOff", value.asInstanceOf[js.Any])
+    def setAccessibleRangeSelectModeOnUndefined: Self = StObject.set(x, "accessibleRangeSelectModeOn", js.undefined)
     
     @scala.inline
-    def deleteAccessibleRangeSelectModeOff: Self = this.set("accessibleRangeSelectModeOff", js.undefined)
+    def setAccessibleRowCollapsed(value: String): Self = StObject.set(x, "accessibleRowCollapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRangeSelectModeOn(value: String): Self = this.set("accessibleRangeSelectModeOn", value.asInstanceOf[js.Any])
+    def setAccessibleRowCollapsedUndefined: Self = StObject.set(x, "accessibleRowCollapsed", js.undefined)
     
     @scala.inline
-    def deleteAccessibleRangeSelectModeOn: Self = this.set("accessibleRangeSelectModeOn", js.undefined)
+    def setAccessibleRowContext(value: String): Self = StObject.set(x, "accessibleRowContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRowCollapsed(value: String): Self = this.set("accessibleRowCollapsed", value.asInstanceOf[js.Any])
+    def setAccessibleRowContextUndefined: Self = StObject.set(x, "accessibleRowContext", js.undefined)
     
     @scala.inline
-    def deleteAccessibleRowCollapsed: Self = this.set("accessibleRowCollapsed", js.undefined)
+    def setAccessibleRowEndHeaderContext(value: String): Self = StObject.set(x, "accessibleRowEndHeaderContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRowContext(value: String): Self = this.set("accessibleRowContext", value.asInstanceOf[js.Any])
+    def setAccessibleRowEndHeaderContextUndefined: Self = StObject.set(x, "accessibleRowEndHeaderContext", js.undefined)
     
     @scala.inline
-    def deleteAccessibleRowContext: Self = this.set("accessibleRowContext", js.undefined)
+    def setAccessibleRowExpanded(value: String): Self = StObject.set(x, "accessibleRowExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRowEndHeaderContext(value: String): Self = this.set("accessibleRowEndHeaderContext", value.asInstanceOf[js.Any])
+    def setAccessibleRowExpandedUndefined: Self = StObject.set(x, "accessibleRowExpanded", js.undefined)
     
     @scala.inline
-    def deleteAccessibleRowEndHeaderContext: Self = this.set("accessibleRowEndHeaderContext", js.undefined)
+    def setAccessibleRowHeaderContext(value: String): Self = StObject.set(x, "accessibleRowHeaderContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRowExpanded(value: String): Self = this.set("accessibleRowExpanded", value.asInstanceOf[js.Any])
+    def setAccessibleRowHeaderContextUndefined: Self = StObject.set(x, "accessibleRowHeaderContext", js.undefined)
     
     @scala.inline
-    def deleteAccessibleRowExpanded: Self = this.set("accessibleRowExpanded", js.undefined)
+    def setAccessibleRowSelected(value: String): Self = StObject.set(x, "accessibleRowSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRowHeaderContext(value: String): Self = this.set("accessibleRowHeaderContext", value.asInstanceOf[js.Any])
+    def setAccessibleRowSelectedUndefined: Self = StObject.set(x, "accessibleRowSelected", js.undefined)
     
     @scala.inline
-    def deleteAccessibleRowHeaderContext: Self = this.set("accessibleRowHeaderContext", js.undefined)
+    def setAccessibleRowSpanContext(value: String): Self = StObject.set(x, "accessibleRowSpanContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRowSelected(value: String): Self = this.set("accessibleRowSelected", value.asInstanceOf[js.Any])
+    def setAccessibleRowSpanContextUndefined: Self = StObject.set(x, "accessibleRowSpanContext", js.undefined)
     
     @scala.inline
-    def deleteAccessibleRowSelected: Self = this.set("accessibleRowSelected", js.undefined)
+    def setAccessibleSelectionAffordanceBottom(value: String): Self = StObject.set(x, "accessibleSelectionAffordanceBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRowSpanContext(value: String): Self = this.set("accessibleRowSpanContext", value.asInstanceOf[js.Any])
+    def setAccessibleSelectionAffordanceBottomUndefined: Self = StObject.set(x, "accessibleSelectionAffordanceBottom", js.undefined)
     
     @scala.inline
-    def deleteAccessibleRowSpanContext: Self = this.set("accessibleRowSpanContext", js.undefined)
+    def setAccessibleSelectionAffordanceTop(value: String): Self = StObject.set(x, "accessibleSelectionAffordanceTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleSelectionAffordanceBottom(value: String): Self = this.set("accessibleSelectionAffordanceBottom", value.asInstanceOf[js.Any])
+    def setAccessibleSelectionAffordanceTopUndefined: Self = StObject.set(x, "accessibleSelectionAffordanceTop", js.undefined)
     
     @scala.inline
-    def deleteAccessibleSelectionAffordanceBottom: Self = this.set("accessibleSelectionAffordanceBottom", js.undefined)
+    def setAccessibleSortAscending(value: String): Self = StObject.set(x, "accessibleSortAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleSelectionAffordanceTop(value: String): Self = this.set("accessibleSelectionAffordanceTop", value.asInstanceOf[js.Any])
+    def setAccessibleSortAscendingUndefined: Self = StObject.set(x, "accessibleSortAscending", js.undefined)
     
     @scala.inline
-    def deleteAccessibleSelectionAffordanceTop: Self = this.set("accessibleSelectionAffordanceTop", js.undefined)
+    def setAccessibleSortDescending(value: String): Self = StObject.set(x, "accessibleSortDescending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleSortAscending(value: String): Self = this.set("accessibleSortAscending", value.asInstanceOf[js.Any])
+    def setAccessibleSortDescendingUndefined: Self = StObject.set(x, "accessibleSortDescending", js.undefined)
     
     @scala.inline
-    def deleteAccessibleSortAscending: Self = this.set("accessibleSortAscending", js.undefined)
+    def setAccessibleStateSelected(value: String): Self = StObject.set(x, "accessibleStateSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleSortDescending(value: String): Self = this.set("accessibleSortDescending", value.asInstanceOf[js.Any])
+    def setAccessibleStateSelectedUndefined: Self = StObject.set(x, "accessibleStateSelected", js.undefined)
     
     @scala.inline
-    def deleteAccessibleSortDescending: Self = this.set("accessibleSortDescending", js.undefined)
+    def setAccessibleSummaryEstimate(value: String): Self = StObject.set(x, "accessibleSummaryEstimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleStateSelected(value: String): Self = this.set("accessibleStateSelected", value.asInstanceOf[js.Any])
+    def setAccessibleSummaryEstimateUndefined: Self = StObject.set(x, "accessibleSummaryEstimate", js.undefined)
     
     @scala.inline
-    def deleteAccessibleStateSelected: Self = this.set("accessibleStateSelected", js.undefined)
+    def setAccessibleSummaryExact(value: String): Self = StObject.set(x, "accessibleSummaryExact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleSummaryEstimate(value: String): Self = this.set("accessibleSummaryEstimate", value.asInstanceOf[js.Any])
+    def setAccessibleSummaryExactUndefined: Self = StObject.set(x, "accessibleSummaryExact", js.undefined)
     
     @scala.inline
-    def deleteAccessibleSummaryEstimate: Self = this.set("accessibleSummaryEstimate", js.undefined)
+    def setAccessibleSummaryExpanded(value: String): Self = StObject.set(x, "accessibleSummaryExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleSummaryExact(value: String): Self = this.set("accessibleSummaryExact", value.asInstanceOf[js.Any])
+    def setAccessibleSummaryExpandedUndefined: Self = StObject.set(x, "accessibleSummaryExpanded", js.undefined)
     
     @scala.inline
-    def deleteAccessibleSummaryExact: Self = this.set("accessibleSummaryExact", js.undefined)
+    def setLabelCut(value: String): Self = StObject.set(x, "labelCut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleSummaryExpanded(value: String): Self = this.set("accessibleSummaryExpanded", value.asInstanceOf[js.Any])
+    def setLabelCutUndefined: Self = StObject.set(x, "labelCut", js.undefined)
     
     @scala.inline
-    def deleteAccessibleSummaryExpanded: Self = this.set("accessibleSummaryExpanded", js.undefined)
+    def setLabelDisableNonContiguous(value: String): Self = StObject.set(x, "labelDisableNonContiguous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCut(value: String): Self = this.set("labelCut", value.asInstanceOf[js.Any])
+    def setLabelDisableNonContiguousUndefined: Self = StObject.set(x, "labelDisableNonContiguous", js.undefined)
     
     @scala.inline
-    def deleteLabelCut: Self = this.set("labelCut", js.undefined)
+    def setLabelEnableNonContiguous(value: String): Self = StObject.set(x, "labelEnableNonContiguous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDisableNonContiguous(value: String): Self = this.set("labelDisableNonContiguous", value.asInstanceOf[js.Any])
+    def setLabelEnableNonContiguousUndefined: Self = StObject.set(x, "labelEnableNonContiguous", js.undefined)
     
     @scala.inline
-    def deleteLabelDisableNonContiguous: Self = this.set("labelDisableNonContiguous", js.undefined)
+    def setLabelPaste(value: String): Self = StObject.set(x, "labelPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelEnableNonContiguous(value: String): Self = this.set("labelEnableNonContiguous", value.asInstanceOf[js.Any])
+    def setLabelPasteUndefined: Self = StObject.set(x, "labelPaste", js.undefined)
     
     @scala.inline
-    def deleteLabelEnableNonContiguous: Self = this.set("labelEnableNonContiguous", js.undefined)
+    def setLabelResize(value: String): Self = StObject.set(x, "labelResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelPaste(value: String): Self = this.set("labelPaste", value.asInstanceOf[js.Any])
+    def setLabelResizeDialogSubmit(value: String): Self = StObject.set(x, "labelResizeDialogSubmit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelPaste: Self = this.set("labelPaste", js.undefined)
+    def setLabelResizeDialogSubmitUndefined: Self = StObject.set(x, "labelResizeDialogSubmit", js.undefined)
     
     @scala.inline
-    def setLabelResize(value: String): Self = this.set("labelResize", value.asInstanceOf[js.Any])
+    def setLabelResizeHeight(value: String): Self = StObject.set(x, "labelResizeHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelResize: Self = this.set("labelResize", js.undefined)
+    def setLabelResizeHeightUndefined: Self = StObject.set(x, "labelResizeHeight", js.undefined)
     
     @scala.inline
-    def setLabelResizeDialogSubmit(value: String): Self = this.set("labelResizeDialogSubmit", value.asInstanceOf[js.Any])
+    def setLabelResizeUndefined: Self = StObject.set(x, "labelResize", js.undefined)
     
     @scala.inline
-    def deleteLabelResizeDialogSubmit: Self = this.set("labelResizeDialogSubmit", js.undefined)
+    def setLabelResizeWidth(value: String): Self = StObject.set(x, "labelResizeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelResizeHeight(value: String): Self = this.set("labelResizeHeight", value.asInstanceOf[js.Any])
+    def setLabelResizeWidthUndefined: Self = StObject.set(x, "labelResizeWidth", js.undefined)
     
     @scala.inline
-    def deleteLabelResizeHeight: Self = this.set("labelResizeHeight", js.undefined)
+    def setLabelSortCol(value: String): Self = StObject.set(x, "labelSortCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelResizeWidth(value: String): Self = this.set("labelResizeWidth", value.asInstanceOf[js.Any])
+    def setLabelSortColAsc(value: String): Self = StObject.set(x, "labelSortColAsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelResizeWidth: Self = this.set("labelResizeWidth", js.undefined)
+    def setLabelSortColAscUndefined: Self = StObject.set(x, "labelSortColAsc", js.undefined)
     
     @scala.inline
-    def setLabelSortCol(value: String): Self = this.set("labelSortCol", value.asInstanceOf[js.Any])
+    def setLabelSortColDsc(value: String): Self = StObject.set(x, "labelSortColDsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelSortCol: Self = this.set("labelSortCol", js.undefined)
+    def setLabelSortColDscUndefined: Self = StObject.set(x, "labelSortColDsc", js.undefined)
     
     @scala.inline
-    def setLabelSortColAsc(value: String): Self = this.set("labelSortColAsc", value.asInstanceOf[js.Any])
+    def setLabelSortColUndefined: Self = StObject.set(x, "labelSortCol", js.undefined)
     
     @scala.inline
-    def deleteLabelSortColAsc: Self = this.set("labelSortColAsc", js.undefined)
+    def setLabelSortRow(value: String): Self = StObject.set(x, "labelSortRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelSortColDsc(value: String): Self = this.set("labelSortColDsc", value.asInstanceOf[js.Any])
+    def setLabelSortRowAsc(value: String): Self = StObject.set(x, "labelSortRowAsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelSortColDsc: Self = this.set("labelSortColDsc", js.undefined)
+    def setLabelSortRowAscUndefined: Self = StObject.set(x, "labelSortRowAsc", js.undefined)
     
     @scala.inline
-    def setLabelSortRow(value: String): Self = this.set("labelSortRow", value.asInstanceOf[js.Any])
+    def setLabelSortRowDsc(value: String): Self = StObject.set(x, "labelSortRowDsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelSortRow: Self = this.set("labelSortRow", js.undefined)
+    def setLabelSortRowDscUndefined: Self = StObject.set(x, "labelSortRowDsc", js.undefined)
     
     @scala.inline
-    def setLabelSortRowAsc(value: String): Self = this.set("labelSortRowAsc", value.asInstanceOf[js.Any])
+    def setLabelSortRowUndefined: Self = StObject.set(x, "labelSortRow", js.undefined)
     
     @scala.inline
-    def deleteLabelSortRowAsc: Self = this.set("labelSortRowAsc", js.undefined)
+    def setMsgFetchingData(value: String): Self = StObject.set(x, "msgFetchingData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelSortRowDsc(value: String): Self = this.set("labelSortRowDsc", value.asInstanceOf[js.Any])
+    def setMsgFetchingDataUndefined: Self = StObject.set(x, "msgFetchingData", js.undefined)
     
     @scala.inline
-    def deleteLabelSortRowDsc: Self = this.set("labelSortRowDsc", js.undefined)
+    def setMsgNoData(value: String): Self = StObject.set(x, "msgNoData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsgFetchingData(value: String): Self = this.set("msgFetchingData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMsgFetchingData: Self = this.set("msgFetchingData", js.undefined)
-    
-    @scala.inline
-    def setMsgNoData(value: String): Self = this.set("msgNoData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMsgNoData: Self = this.set("msgNoData", js.undefined)
+    def setMsgNoDataUndefined: Self = StObject.set(x, "msgNoData", js.undefined)
   }
 }

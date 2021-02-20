@@ -16,14 +16,14 @@ import typings.std.HTMLVideoElement
 import typings.std.ImageBitmap
 import typings.std.ImageData
 import typings.std.TextMetrics
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/datagrid/lib/graphicscontext", JSImport.Namespace)
-@js.native
-object graphicscontextMod extends js.Object {
+object graphicscontextMod {
   
+  @JSImport("@lumino/datagrid/lib/graphicscontext", "GraphicsContext")
   @js.native
   class GraphicsContext protected () extends IDisposable {
     /**

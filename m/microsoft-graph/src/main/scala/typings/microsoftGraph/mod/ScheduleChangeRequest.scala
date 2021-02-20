@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,90 +33,78 @@ object ScheduleChangeRequest {
   }
   
   @scala.inline
-  implicit class ScheduleChangeRequestOps[Self <: ScheduleChangeRequest] (val x: Self) extends AnyVal {
+  implicit class ScheduleChangeRequestMutableBuilder[Self <: ScheduleChangeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignedTo(value: NullableOption[ScheduleChangeRequestActor]): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignedToNull: Self = StObject.set(x, "assignedTo", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
     
     @scala.inline
-    def setAssignedTo(value: NullableOption[ScheduleChangeRequestActor]): Self = this.set("assignedTo", value.asInstanceOf[js.Any])
+    def setManagerActionDateTime(value: NullableOption[String]): Self = StObject.set(x, "managerActionDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignedTo: Self = this.set("assignedTo", js.undefined)
+    def setManagerActionDateTimeNull: Self = StObject.set(x, "managerActionDateTime", null)
     
     @scala.inline
-    def setAssignedToNull: Self = this.set("assignedTo", null)
+    def setManagerActionDateTimeUndefined: Self = StObject.set(x, "managerActionDateTime", js.undefined)
     
     @scala.inline
-    def setManagerActionDateTime(value: NullableOption[String]): Self = this.set("managerActionDateTime", value.asInstanceOf[js.Any])
+    def setManagerActionMessage(value: NullableOption[String]): Self = StObject.set(x, "managerActionMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManagerActionDateTime: Self = this.set("managerActionDateTime", js.undefined)
+    def setManagerActionMessageNull: Self = StObject.set(x, "managerActionMessage", null)
     
     @scala.inline
-    def setManagerActionDateTimeNull: Self = this.set("managerActionDateTime", null)
+    def setManagerActionMessageUndefined: Self = StObject.set(x, "managerActionMessage", js.undefined)
     
     @scala.inline
-    def setManagerActionMessage(value: NullableOption[String]): Self = this.set("managerActionMessage", value.asInstanceOf[js.Any])
+    def setManagerUserId(value: NullableOption[String]): Self = StObject.set(x, "managerUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManagerActionMessage: Self = this.set("managerActionMessage", js.undefined)
+    def setManagerUserIdNull: Self = StObject.set(x, "managerUserId", null)
     
     @scala.inline
-    def setManagerActionMessageNull: Self = this.set("managerActionMessage", null)
+    def setManagerUserIdUndefined: Self = StObject.set(x, "managerUserId", js.undefined)
     
     @scala.inline
-    def setManagerUserId(value: NullableOption[String]): Self = this.set("managerUserId", value.asInstanceOf[js.Any])
+    def setSenderDateTime(value: NullableOption[String]): Self = StObject.set(x, "senderDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManagerUserId: Self = this.set("managerUserId", js.undefined)
+    def setSenderDateTimeNull: Self = StObject.set(x, "senderDateTime", null)
     
     @scala.inline
-    def setManagerUserIdNull: Self = this.set("managerUserId", null)
+    def setSenderDateTimeUndefined: Self = StObject.set(x, "senderDateTime", js.undefined)
     
     @scala.inline
-    def setSenderDateTime(value: NullableOption[String]): Self = this.set("senderDateTime", value.asInstanceOf[js.Any])
+    def setSenderMessage(value: NullableOption[String]): Self = StObject.set(x, "senderMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSenderDateTime: Self = this.set("senderDateTime", js.undefined)
+    def setSenderMessageNull: Self = StObject.set(x, "senderMessage", null)
     
     @scala.inline
-    def setSenderDateTimeNull: Self = this.set("senderDateTime", null)
+    def setSenderMessageUndefined: Self = StObject.set(x, "senderMessage", js.undefined)
     
     @scala.inline
-    def setSenderMessage(value: NullableOption[String]): Self = this.set("senderMessage", value.asInstanceOf[js.Any])
+    def setSenderUserId(value: NullableOption[String]): Self = StObject.set(x, "senderUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSenderMessage: Self = this.set("senderMessage", js.undefined)
+    def setSenderUserIdNull: Self = StObject.set(x, "senderUserId", null)
     
     @scala.inline
-    def setSenderMessageNull: Self = this.set("senderMessage", null)
+    def setSenderUserIdUndefined: Self = StObject.set(x, "senderUserId", js.undefined)
     
     @scala.inline
-    def setSenderUserId(value: NullableOption[String]): Self = this.set("senderUserId", value.asInstanceOf[js.Any])
+    def setState(value: NullableOption[ScheduleChangeState]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSenderUserId: Self = this.set("senderUserId", js.undefined)
+    def setStateNull: Self = StObject.set(x, "state", null)
     
     @scala.inline
-    def setSenderUserIdNull: Self = this.set("senderUserId", null)
-    
-    @scala.inline
-    def setState(value: NullableOption[ScheduleChangeState]): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setStateNull: Self = this.set("state", null)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

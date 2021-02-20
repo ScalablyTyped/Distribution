@@ -1,11 +1,12 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDealServingMetadata extends js.Object {
+trait SchemaDealServingMetadata extends StObject {
   
   /**
     * True if alcohol ads are allowed for this deal (read-only). This field is
@@ -29,30 +30,18 @@ object SchemaDealServingMetadata {
   }
   
   @scala.inline
-  implicit class SchemaDealServingMetadataOps[Self <: SchemaDealServingMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaDealServingMetadataMutableBuilder[Self <: SchemaDealServingMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlcoholAdsAllowed(value: Boolean): Self = StObject.set(x, "alcoholAdsAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlcoholAdsAllowedUndefined: Self = StObject.set(x, "alcoholAdsAllowed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDealPauseStatus(value: SchemaDealServingMetadataDealPauseStatus): Self = StObject.set(x, "dealPauseStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlcoholAdsAllowed(value: Boolean): Self = this.set("alcoholAdsAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlcoholAdsAllowed: Self = this.set("alcoholAdsAllowed", js.undefined)
-    
-    @scala.inline
-    def setDealPauseStatus(value: SchemaDealServingMetadataDealPauseStatus): Self = this.set("dealPauseStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDealPauseStatus: Self = this.set("dealPauseStatus", js.undefined)
+    def setDealPauseStatusUndefined: Self = StObject.set(x, "dealPauseStatus", js.undefined)
   }
 }

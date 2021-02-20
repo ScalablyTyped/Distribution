@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortRange extends js.Object {
+trait PortRange extends StObject {
   
   /**
     * The first port in the range.
@@ -26,30 +27,18 @@ object PortRange {
   }
   
   @scala.inline
-  implicit class PortRangeOps[Self <: PortRange] (val x: Self) extends AnyVal {
+  implicit class PortRangeMutableBuilder[Self <: PortRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: Integer): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTo(value: Integer): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Integer): Self = this.set("From", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrom: Self = this.set("From", js.undefined)
-    
-    @scala.inline
-    def setTo(value: Integer): Self = this.set("To", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("To", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reachRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait History extends js.Object {
+trait History extends StObject {
   
   def listen(listener: HistoryListener): HistoryUnsubscribe = js.native
   
@@ -29,30 +30,18 @@ object History {
   }
   
   @scala.inline
-  implicit class HistoryOps[Self <: History] (val x: Self) extends AnyVal {
+  implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListen(value: HistoryListener => HistoryUnsubscribe): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocation(value: HistoryLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListen(value: HistoryListener => HistoryUnsubscribe): Self = this.set("listen", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLocation(value: HistoryLocation): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNavigate(value: NavigateFn): Self = this.set("navigate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitioning(value: Boolean): Self = this.set("transitioning", value.asInstanceOf[js.Any])
+    def setTransitioning(value: Boolean): Self = StObject.set(x, "transitioning", value.asInstanceOf[js.Any])
   }
 }

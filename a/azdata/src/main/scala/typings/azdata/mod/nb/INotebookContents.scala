@@ -1,11 +1,12 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INotebookContents extends js.Object {
+trait INotebookContents extends StObject {
   
   val cells: js.Array[ICellContents] = js.native
   
@@ -29,33 +30,21 @@ object INotebookContents {
   }
   
   @scala.inline
-  implicit class INotebookContentsOps[Self <: INotebookContents] (val x: Self) extends AnyVal {
+  implicit class INotebookContentsMutableBuilder[Self <: INotebookContents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCells(value: js.Array[ICellContents]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellsVarargs(value: ICellContents*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: INotebookMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellsVarargs(value: ICellContents*): Self = this.set("cells", js.Array(value :_*))
+    def setNbformat(value: Double): Self = StObject.set(x, "nbformat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCells(value: js.Array[ICellContents]): Self = this.set("cells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadata(value: INotebookMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNbformat(value: Double): Self = this.set("nbformat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNbformat_minor(value: Double): Self = this.set("nbformat_minor", value.asInstanceOf[js.Any])
+    def setNbformat_minor(value: Double): Self = StObject.set(x, "nbformat_minor", value.asInstanceOf[js.Any])
   }
 }

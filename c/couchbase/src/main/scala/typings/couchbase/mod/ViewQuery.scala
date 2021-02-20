@@ -1,9 +1,9 @@
 package typings.couchbase.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.couchbase.mod.ViewQuery.ErrorMode
 import typings.couchbase.mod.ViewQuery.Order
 import typings.couchbase.mod.ViewQuery.Update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("couchbase", "ViewQuery")
 @js.native
-class ViewQuery () extends js.Object {
+class ViewQuery () extends StObject {
   
   /**
     * Allows you to specify custom view options that may not be available though the fluent interface defined by this class.
@@ -122,25 +122,16 @@ class ViewQuery () extends js.Object {
     */
   def stale(stale: Update): ViewQuery = js.native
 }
-/* static members */
-@JSImport("couchbase", "ViewQuery")
-@js.native
-object ViewQuery extends js.Object {
-  
-  /**
-    * Instantiates a ViewQuery object for the specified design document and view name.
-    * @param ddoc The design document to use.
-    * @param name The view to use.
-    */
-  def from(ddoc: String, name: String): ViewQuery = js.native
+object ViewQuery {
   
   @js.native
-  sealed trait ErrorMode extends js.Object
+  sealed trait ErrorMode extends StObject
   /**
     * Enumeration for specifying on_error behaviour.
     */
+  @JSImport("couchbase", "ViewQuery.ErrorMode")
   @js.native
-  object ErrorMode extends js.Object {
+  object ErrorMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ErrorMode with Double] = js.native
@@ -150,25 +141,24 @@ object ViewQuery extends js.Object {
       */
     @js.native
     sealed trait CONTINUE extends ErrorMode
-    /* 0 */ @js.native
-    object CONTINUE extends TopLevel[CONTINUE with Double]
+    /* 0 */ val CONTINUE: typings.couchbase.mod.ViewQuery.ErrorMode.CONTINUE with Double = js.native
     
     /**
       * Stops and errors query when an error occurs.
       */
     @js.native
     sealed trait STOP extends ErrorMode
-    /* 1 */ @js.native
-    object STOP extends TopLevel[STOP with Double]
+    /* 1 */ val STOP: typings.couchbase.mod.ViewQuery.ErrorMode.STOP with Double = js.native
   }
   
   @js.native
-  sealed trait Order extends js.Object
+  sealed trait Order extends StObject
   /**
     * Enumeration for specifying view result ordering.
     */
+  @JSImport("couchbase", "ViewQuery.Order")
   @js.native
-  object Order extends js.Object {
+  object Order extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Order with Double] = js.native
@@ -178,25 +168,24 @@ object ViewQuery extends js.Object {
       */
     @js.native
     sealed trait ASCENDING extends Order
-    /* 0 */ @js.native
-    object ASCENDING extends TopLevel[ASCENDING with Double]
+    /* 0 */ val ASCENDING: typings.couchbase.mod.ViewQuery.Order.ASCENDING with Double = js.native
     
     /**
       * Orders with higher values first and lower values last.
       */
     @js.native
     sealed trait DESCENDING extends Order
-    /* 1 */ @js.native
-    object DESCENDING extends TopLevel[DESCENDING with Double]
+    /* 1 */ val DESCENDING: typings.couchbase.mod.ViewQuery.Order.DESCENDING with Double = js.native
   }
   
   @js.native
-  sealed trait Update extends js.Object
+  sealed trait Update extends StObject
   /**
     * Enumeration for specifying view update semantics.
     */
+  @JSImport("couchbase", "ViewQuery.Update")
   @js.native
-  object Update extends js.Object {
+  object Update extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Update with Double] = js.native
@@ -206,23 +195,30 @@ object ViewQuery extends js.Object {
       */
     @js.native
     sealed trait AFTER extends Update
-    /* 2 */ @js.native
-    object AFTER extends TopLevel[AFTER with Double]
+    /* 2 */ val AFTER: typings.couchbase.mod.ViewQuery.Update.AFTER with Double = js.native
     
     /**
       * Causes the view to be fully indexed before results are retrieved.
       */
     @js.native
     sealed trait BEFORE extends Update
-    /* 0 */ @js.native
-    object BEFORE extends TopLevel[BEFORE with Double]
+    /* 0 */ val BEFORE: typings.couchbase.mod.ViewQuery.Update.BEFORE with Double = js.native
     
     /**
       * Allows the index to stay in whatever state it is already in prior retrieval of the query results.
       */
     @js.native
     sealed trait NONE extends Update
-    /* 1 */ @js.native
-    object NONE extends TopLevel[NONE with Double]
+    /* 1 */ val NONE: typings.couchbase.mod.ViewQuery.Update.NONE with Double = js.native
   }
+  
+  /**
+    * Instantiates a ViewQuery object for the specified design document and view name.
+    * @param ddoc The design document to use.
+    * @param name The view to use.
+    */
+  /* static member */
+  @JSImport("couchbase", "ViewQuery.from")
+  @js.native
+  def from(ddoc: String, name: String): ViewQuery = js.native
 }

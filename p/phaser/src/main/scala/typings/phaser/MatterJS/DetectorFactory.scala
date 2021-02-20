@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectorFactory extends js.Object {
+trait DetectorFactory extends StObject {
   
   /**
     * Returns `true` if both supplied collision filters will allow a collision to occur.
@@ -38,24 +39,12 @@ object DetectorFactory {
   }
   
   @scala.inline
-  implicit class DetectorFactoryOps[Self <: DetectorFactory] (val x: Self) extends AnyVal {
+  implicit class DetectorFactoryMutableBuilder[Self <: DetectorFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanCollide(value: (ICollisionFilter, ICollisionFilter) => Boolean): Self = StObject.set(x, "canCollide", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanCollide(value: (ICollisionFilter, ICollisionFilter) => Boolean): Self = this.set("canCollide", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCollisions(value: (js.Array[IPair], Engine) => js.Array[ICollisionData]): Self = this.set("collisions", js.Any.fromFunction2(value))
+    def setCollisions(value: (js.Array[IPair], Engine) => js.Array[ICollisionData]): Self = StObject.set(x, "collisions", js.Any.fromFunction2(value))
   }
 }

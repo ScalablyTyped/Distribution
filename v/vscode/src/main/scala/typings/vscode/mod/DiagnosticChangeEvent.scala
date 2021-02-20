@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagnosticChangeEvent extends js.Object {
+trait DiagnosticChangeEvent extends StObject {
   
   /**
     * An array of resources for which diagnostics have changed.
@@ -21,24 +22,12 @@ object DiagnosticChangeEvent {
   }
   
   @scala.inline
-  implicit class DiagnosticChangeEventOps[Self <: DiagnosticChangeEvent] (val x: Self) extends AnyVal {
+  implicit class DiagnosticChangeEventMutableBuilder[Self <: DiagnosticChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUris(value: js.Array[Uri]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUrisVarargs(value: Uri*): Self = this.set("uris", js.Array(value :_*))
-    
-    @scala.inline
-    def setUris(value: js.Array[Uri]): Self = this.set("uris", value.asInstanceOf[js.Any])
+    def setUrisVarargs(value: Uri*): Self = StObject.set(x, "uris", js.Array(value :_*))
   }
 }

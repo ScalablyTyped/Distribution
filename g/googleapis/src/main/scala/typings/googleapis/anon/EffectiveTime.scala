@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EffectiveTime extends js.Object {
+trait EffectiveTime extends StObject {
   
   var effectiveTime: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object EffectiveTime {
   }
   
   @scala.inline
-  implicit class EffectiveTimeOps[Self <: EffectiveTime] (val x: Self) extends AnyVal {
+  implicit class EffectiveTimeMutableBuilder[Self <: EffectiveTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffectiveTime(value: String): Self = StObject.set(x, "effectiveTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectiveTimeUndefined: Self = StObject.set(x, "effectiveTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveTime(value: String): Self = this.set("effectiveTime", value.asInstanceOf[js.Any])
+    def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
     
     @scala.inline
-    def deleteEffectiveTime: Self = this.set("effectiveTime", js.undefined)
+    def setRetentionPeriod(value: String): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLocked(value: Boolean): Self = this.set("isLocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsLocked: Self = this.set("isLocked", js.undefined)
-    
-    @scala.inline
-    def setRetentionPeriod(value: String): Self = this.set("retentionPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetentionPeriod: Self = this.set("retentionPeriod", js.undefined)
+    def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
   }
 }

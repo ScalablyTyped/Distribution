@@ -1,11 +1,12 @@
 package typings.awsSdk.sqsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReceiveMessageResult extends js.Object {
+trait ReceiveMessageResult extends StObject {
   
   /**
     * A list of messages.
@@ -21,27 +22,15 @@ object ReceiveMessageResult {
   }
   
   @scala.inline
-  implicit class ReceiveMessageResultOps[Self <: ReceiveMessageResult] (val x: Self) extends AnyVal {
+  implicit class ReceiveMessageResultMutableBuilder[Self <: ReceiveMessageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessages(value: MessageList): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessagesVarargs(value: Message*): Self = this.set("Messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: MessageList): Self = this.set("Messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessages: Self = this.set("Messages", js.undefined)
+    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "Messages", js.Array(value :_*))
   }
 }

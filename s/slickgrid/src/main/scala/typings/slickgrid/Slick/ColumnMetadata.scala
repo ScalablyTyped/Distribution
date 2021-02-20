@@ -1,11 +1,12 @@
 package typings.slickgrid.Slick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnMetadata[T /* <: SlickData */] extends js.Object {
+trait ColumnMetadata[T /* <: SlickData */] extends StObject {
   
   /**
     * Number of columns this cell will span. Can also contain "*" to indicate that the cell should span the rest of the row.
@@ -41,50 +42,38 @@ object ColumnMetadata {
   }
   
   @scala.inline
-  implicit class ColumnMetadataOps[Self <: ColumnMetadata[_], T /* <: SlickData */] (val x: Self with ColumnMetadata[T]) extends AnyVal {
+  implicit class ColumnMetadataMutableBuilder[Self <: ColumnMetadata[_], T /* <: SlickData */] (val x: Self with ColumnMetadata[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColspan(value: Double | String): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColspanUndefined: Self = StObject.set(x, "colspan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColspan(value: Double | String): Self = this.set("colspan", value.asInstanceOf[js.Any])
+    def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
     @scala.inline
-    def deleteColspan: Self = this.set("colspan", js.undefined)
+    def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditor(value: js.Any): Self = this.set("editor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEditor: Self = this.set("editor", js.undefined)
-    
-    @scala.inline
-    def setFocusable(value: Boolean): Self = this.set("focusable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFocusable: Self = this.set("focusable", js.undefined)
+    def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
     @scala.inline
     def setFormatter(
       value: (/* row */ Double, /* cell */ Double, /* value */ js.Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
-    ): Self = this.set("formatter", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "formatter", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
   }
 }

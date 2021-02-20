@@ -8,6 +8,7 @@ import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.browserfs.xmlHttpRequestMod.XmlHttpRequest
 import typings.browserfs.xmlHttpRequestMod.XmlHttpRequestOptions
 import typings.browserfs.xmlHttpRequestMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

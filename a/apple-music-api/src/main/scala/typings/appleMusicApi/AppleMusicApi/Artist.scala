@@ -1,6 +1,7 @@
 package typings.appleMusicApi.AppleMusicApi
 
 import typings.appleMusicApi.appleMusicApiStrings.artists
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,33 +27,21 @@ object Artist {
   }
   
   @scala.inline
-  implicit class ArtistOps[Self <: Artist] (val x: Self) extends AnyVal {
+  implicit class ArtistMutableBuilder[Self <: Artist] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: typings.appleMusicApi.anon.EditorialNotes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelationships(value: ArtistRelationships): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: artists): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
     @scala.inline
-    def setAttributes(value: typings.appleMusicApi.anon.EditorialNotes): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
-    
-    @scala.inline
-    def setRelationships(value: ArtistRelationships): Self = this.set("relationships", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationships: Self = this.set("relationships", js.undefined)
+    def setType(value: artists): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

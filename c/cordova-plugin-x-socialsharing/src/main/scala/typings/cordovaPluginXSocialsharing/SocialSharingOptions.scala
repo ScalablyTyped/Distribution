@@ -1,12 +1,13 @@
 package typings.cordovaPluginXSocialsharing
 
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocialSharingOptions extends js.Object {
+trait SocialSharingOptions extends StObject {
   
   var appPackageName: js.UndefOr[String] = js.native
   
@@ -29,54 +30,42 @@ object SocialSharingOptions {
   }
   
   @scala.inline
-  implicit class SocialSharingOptionsOps[Self <: SocialSharingOptions] (val x: Self) extends AnyVal {
+  implicit class SocialSharingOptionsMutableBuilder[Self <: SocialSharingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppPackageName(value: String): Self = StObject.set(x, "appPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppPackageNameUndefined: Self = StObject.set(x, "appPackageName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChooserTitle(value: String): Self = StObject.set(x, "chooserTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppPackageName(value: String): Self = this.set("appPackageName", value.asInstanceOf[js.Any])
+    def setChooserTitleUndefined: Self = StObject.set(x, "chooserTitle", js.undefined)
     
     @scala.inline
-    def deleteAppPackageName: Self = this.set("appPackageName", js.undefined)
+    def setFiles(value: ArrayLike[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChooserTitle(value: String): Self = this.set("chooserTitle", value.asInstanceOf[js.Any])
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def deleteChooserTitle: Self = this.set("chooserTitle", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: ArrayLike[String]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

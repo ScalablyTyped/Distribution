@@ -4,12 +4,13 @@ import typings.chrome.chrome.printerProvider.CapabilityRequestedEvent
 import typings.chrome.chrome.printerProvider.PrintRequestedEvent
 import typings.chrome.chrome.printerProvider.PrinterInfoRequestedEvent
 import typings.chrome.chrome.printerProvider.PrinterRequestedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofprinterProvider extends js.Object {
+trait TypeofprinterProvider extends StObject {
   
   var onGetCapabilityRequested: CapabilityRequestedEvent = js.native
   
@@ -33,30 +34,18 @@ object TypeofprinterProvider {
   }
   
   @scala.inline
-  implicit class TypeofprinterProviderOps[Self <: TypeofprinterProvider] (val x: Self) extends AnyVal {
+  implicit class TypeofprinterProviderMutableBuilder[Self <: TypeofprinterProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnGetCapabilityRequested(value: CapabilityRequestedEvent): Self = StObject.set(x, "onGetCapabilityRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnGetPrintersRequested(value: PrinterRequestedEvent): Self = StObject.set(x, "onGetPrintersRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnGetUsbPrinterInfoRequested(value: PrinterInfoRequestedEvent): Self = StObject.set(x, "onGetUsbPrinterInfoRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnGetCapabilityRequested(value: CapabilityRequestedEvent): Self = this.set("onGetCapabilityRequested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnGetPrintersRequested(value: PrinterRequestedEvent): Self = this.set("onGetPrintersRequested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnGetUsbPrinterInfoRequested(value: PrinterInfoRequestedEvent): Self = this.set("onGetUsbPrinterInfoRequested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnPrintRequested(value: PrintRequestedEvent): Self = this.set("onPrintRequested", value.asInstanceOf[js.Any])
+    def setOnPrintRequested(value: PrintRequestedEvent): Self = StObject.set(x, "onPrintRequested", value.asInstanceOf[js.Any])
   }
 }

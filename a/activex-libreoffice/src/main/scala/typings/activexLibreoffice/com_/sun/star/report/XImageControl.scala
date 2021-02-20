@@ -18,6 +18,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -174,27 +175,15 @@ object XImageControl {
   }
   
   @scala.inline
-  implicit class XImageControlOps[Self <: XImageControl] (val x: Self) extends AnyVal {
+  implicit class XImageControlMutableBuilder[Self <: XImageControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageURL(value: String): Self = StObject.set(x, "ImageURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreserveIRI(value: Boolean): Self = StObject.set(x, "PreserveIRI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImageURL(value: String): Self = this.set("ImageURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreserveIRI(value: Boolean): Self = this.set("PreserveIRI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleMode(value: Double): Self = this.set("ScaleMode", value.asInstanceOf[js.Any])
+    def setScaleMode(value: Double): Self = StObject.set(x, "ScaleMode", value.asInstanceOf[js.Any])
   }
 }

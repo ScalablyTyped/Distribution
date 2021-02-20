@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,30 +40,18 @@ object TabUnselectedEvent {
   }
   
   @scala.inline
-  implicit class TabUnselectedEventOps[Self <: TabUnselectedEvent] (val x: Self) extends AnyVal {
+  implicit class TabUnselectedEventMutableBuilder[Self <: TabUnselectedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreviousIndex(value: Double): Self = StObject.set(x, "previousIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousTab(value: Tab): Self = StObject.set(x, "previousTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousIndex(value: Double): Self = this.set("previousIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousTab(value: Tab): Self = this.set("previousTab", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTab(value: Tab): Self = this.set("tab", value.asInstanceOf[js.Any])
+    def setTab(value: Tab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

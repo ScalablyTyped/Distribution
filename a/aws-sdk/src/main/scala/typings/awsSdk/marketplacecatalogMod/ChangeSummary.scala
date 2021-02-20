@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeSummary extends js.Object {
+trait ChangeSummary extends StObject {
   
   /**
     * The type of the change.
@@ -36,45 +37,33 @@ object ChangeSummary {
   }
   
   @scala.inline
-  implicit class ChangeSummaryOps[Self <: ChangeSummary] (val x: Self) extends AnyVal {
+  implicit class ChangeSummaryMutableBuilder[Self <: ChangeSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeType(value: ChangeType): Self = StObject.set(x, "ChangeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeTypeUndefined: Self = StObject.set(x, "ChangeType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetails(value: Json): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: ChangeType): Self = this.set("ChangeType", value.asInstanceOf[js.Any])
+    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
     @scala.inline
-    def deleteChangeType: Self = this.set("ChangeType", js.undefined)
+    def setEntity(value: Entity): Self = StObject.set(x, "Entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: Json): Self = this.set("Details", value.asInstanceOf[js.Any])
+    def setEntityUndefined: Self = StObject.set(x, "Entity", js.undefined)
     
     @scala.inline
-    def deleteDetails: Self = this.set("Details", js.undefined)
+    def setErrorDetailList(value: ErrorDetailList): Self = StObject.set(x, "ErrorDetailList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: Entity): Self = this.set("Entity", value.asInstanceOf[js.Any])
+    def setErrorDetailListUndefined: Self = StObject.set(x, "ErrorDetailList", js.undefined)
     
     @scala.inline
-    def deleteEntity: Self = this.set("Entity", js.undefined)
-    
-    @scala.inline
-    def setErrorDetailListVarargs(value: ErrorDetail*): Self = this.set("ErrorDetailList", js.Array(value :_*))
-    
-    @scala.inline
-    def setErrorDetailList(value: ErrorDetailList): Self = this.set("ErrorDetailList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorDetailList: Self = this.set("ErrorDetailList", js.undefined)
+    def setErrorDetailListVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetailList", js.Array(value :_*))
   }
 }

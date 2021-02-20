@@ -1,11 +1,12 @@
 package typings.reactNavigationStack.vendorTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackCardInterpolatedStyle extends js.Object {
+trait StackCardInterpolatedStyle extends StObject {
   
   /**
     * Interpolated style for the view representing the card.
@@ -36,42 +37,30 @@ object StackCardInterpolatedStyle {
   }
   
   @scala.inline
-  implicit class StackCardInterpolatedStyleOps[Self <: StackCardInterpolatedStyle] (val x: Self) extends AnyVal {
+  implicit class StackCardInterpolatedStyleMutableBuilder[Self <: StackCardInterpolatedStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardStyle(value: js.Any): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardStyleUndefined: Self = StObject.set(x, "cardStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerStyle(value: js.Any): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardStyle(value: js.Any): Self = this.set("cardStyle", value.asInstanceOf[js.Any])
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def deleteCardStyle: Self = this.set("cardStyle", js.undefined)
+    def setOverlayStyle(value: js.Any): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerStyle(value: js.Any): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setShadowStyle(value: js.Any): Self = StObject.set(x, "shadowStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayStyle(value: js.Any): Self = this.set("overlayStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverlayStyle: Self = this.set("overlayStyle", js.undefined)
-    
-    @scala.inline
-    def setShadowStyle(value: js.Any): Self = this.set("shadowStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowStyle: Self = this.set("shadowStyle", js.undefined)
+    def setShadowStyleUndefined: Self = StObject.set(x, "shadowStyle", js.undefined)
   }
 }

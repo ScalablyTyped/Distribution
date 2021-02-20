@@ -1,5 +1,6 @@
 package typings.hafasClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It parses data from the API differently, add additional information, or enable non-default methods.
   */
 @js.native
-trait Profile extends js.Object {
+trait Profile extends StObject {
   
   var endpoint: String = js.native
   
@@ -38,63 +39,51 @@ object Profile {
   }
   
   @scala.inline
-  implicit class ProfileOps[Self <: Profile] (val x: Self) extends AnyVal {
+  implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJourneysWalkingSpeed(value: Boolean): Self = StObject.set(x, "journeysWalkingSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJourneysWalkingSpeedUndefined: Self = StObject.set(x, "journeysWalkingSpeed", js.undefined)
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setProducts(value: js.Array[ProductType]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductsVarargs(value: ProductType*): Self = this.set("products", js.Array(value :_*))
+    def setProductsVarargs(value: ProductType*): Self = StObject.set(x, "products", js.Array(value :_*))
     
     @scala.inline
-    def setProducts(value: js.Array[ProductType]): Self = this.set("products", value.asInstanceOf[js.Any])
+    def setRadar(value: Boolean): Self = StObject.set(x, "radar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setRadarUndefined: Self = StObject.set(x, "radar", js.undefined)
     
     @scala.inline
-    def setJourneysWalkingSpeed(value: Boolean): Self = this.set("journeysWalkingSpeed", value.asInstanceOf[js.Any])
+    def setReachableFrom(value: Boolean): Self = StObject.set(x, "reachableFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJourneysWalkingSpeed: Self = this.set("journeysWalkingSpeed", js.undefined)
+    def setReachableFromUndefined: Self = StObject.set(x, "reachableFrom", js.undefined)
     
     @scala.inline
-    def setRadar(value: Boolean): Self = this.set("radar", value.asInstanceOf[js.Any])
+    def setRefreshJourney(value: Boolean): Self = StObject.set(x, "refreshJourney", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadar: Self = this.set("radar", js.undefined)
+    def setRefreshJourneyUndefined: Self = StObject.set(x, "refreshJourney", js.undefined)
     
     @scala.inline
-    def setReachableFrom(value: Boolean): Self = this.set("reachableFrom", value.asInstanceOf[js.Any])
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReachableFrom: Self = this.set("reachableFrom", js.undefined)
+    def setTrip(value: Boolean): Self = StObject.set(x, "trip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshJourney(value: Boolean): Self = this.set("refreshJourney", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshJourney: Self = this.set("refreshJourney", js.undefined)
-    
-    @scala.inline
-    def setTrip(value: Boolean): Self = this.set("trip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrip: Self = this.set("trip", js.undefined)
+    def setTripUndefined: Self = StObject.set(x, "trip", js.undefined)
   }
 }

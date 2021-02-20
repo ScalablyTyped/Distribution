@@ -1,11 +1,12 @@
 package typings.wordpressApiFetch.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProtectedRaw extends js.Object {
+trait ProtectedRaw extends StObject {
   
   var `protected`: Boolean = js.native
   
@@ -21,24 +22,12 @@ object ProtectedRaw {
   }
   
   @scala.inline
-  implicit class ProtectedRawOps[Self <: ProtectedRaw] (val x: Self) extends AnyVal {
+  implicit class ProtectedRawMutableBuilder[Self <: ProtectedRaw] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProtected(value: Boolean): Self = this.set("protected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
   }
 }

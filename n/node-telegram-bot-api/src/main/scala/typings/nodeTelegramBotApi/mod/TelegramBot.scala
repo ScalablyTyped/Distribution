@@ -25,6 +25,7 @@ import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.webhook_error
 import typings.std.Error
 import typings.std.RegExp
 import typings.std.RegExpExecArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

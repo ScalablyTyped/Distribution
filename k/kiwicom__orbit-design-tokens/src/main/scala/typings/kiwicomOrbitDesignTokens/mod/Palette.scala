@@ -1,11 +1,12 @@
 package typings.kiwicomOrbitDesignTokens.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Palette extends js.Object {
+trait Palette extends StObject {
   
   var blue: StatusColor = js.native
   
@@ -44,45 +45,33 @@ object Palette {
   }
   
   @scala.inline
-  implicit class PaletteOps[Self <: Palette] (val x: Self) extends AnyVal {
+  implicit class PaletteMutableBuilder[Self <: Palette] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlue(value: StatusColor): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloud(value: CloudColor): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGreen(value: StatusColor): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue(value: StatusColor): Self = this.set("blue", value.asInstanceOf[js.Any])
+    def setInk(value: InkColor): Self = StObject.set(x, "ink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloud(value: CloudColor): Self = this.set("cloud", value.asInstanceOf[js.Any])
+    def setOrange(value: StatusColor): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen(value: StatusColor): Self = this.set("green", value.asInstanceOf[js.Any])
+    def setProduct(value: ProductColor): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInk(value: InkColor): Self = this.set("ink", value.asInstanceOf[js.Any])
+    def setRed(value: StatusColor): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange(value: StatusColor): Self = this.set("orange", value.asInstanceOf[js.Any])
+    def setSocial(value: SocialColor): Self = StObject.set(x, "social", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: ProductColor): Self = this.set("product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRed(value: StatusColor): Self = this.set("red", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSocial(value: SocialColor): Self = this.set("social", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhite(value: WhiteColor): Self = this.set("white", value.asInstanceOf[js.Any])
+    def setWhite(value: WhiteColor): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
   }
 }

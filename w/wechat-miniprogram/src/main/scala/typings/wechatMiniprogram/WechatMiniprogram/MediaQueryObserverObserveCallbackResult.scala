@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaQueryObserverObserveCallbackResult extends js.Object {
+trait MediaQueryObserverObserveCallbackResult extends StObject {
   
   /** 页面的当前状态是否满足所指定的 media query */
   var matches: Boolean = js.native
@@ -19,21 +20,9 @@ object MediaQueryObserverObserveCallbackResult {
   }
   
   @scala.inline
-  implicit class MediaQueryObserverObserveCallbackResultOps[Self <: MediaQueryObserverObserveCallbackResult] (val x: Self) extends AnyVal {
+  implicit class MediaQueryObserverObserveCallbackResultMutableBuilder[Self <: MediaQueryObserverObserveCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMatches(value: Boolean): Self = this.set("matches", value.asInstanceOf[js.Any])
+    def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
   }
 }

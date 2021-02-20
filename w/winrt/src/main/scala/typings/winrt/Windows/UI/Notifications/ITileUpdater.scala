@@ -4,12 +4,13 @@ import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITileUpdater extends js.Object {
+trait ITileUpdater extends StObject {
   
   def addToSchedule(scheduledTile: ScheduledTileNotification): Unit = js.native
   

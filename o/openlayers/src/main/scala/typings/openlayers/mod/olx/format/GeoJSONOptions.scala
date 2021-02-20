@@ -1,12 +1,13 @@
 package typings.openlayers.mod.olx.format
 
 import typings.openlayers.mod.ProjectionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoJSONOptions extends js.Object {
+trait GeoJSONOptions extends StObject {
   
   var defaultDataProjection: ProjectionLike = js.native
   
@@ -23,36 +24,24 @@ object GeoJSONOptions {
   }
   
   @scala.inline
-  implicit class GeoJSONOptionsOps[Self <: GeoJSONOptions] (val x: Self) extends AnyVal {
+  implicit class GeoJSONOptionsMutableBuilder[Self <: GeoJSONOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultDataProjection(value: ProjectionLike): Self = StObject.set(x, "defaultDataProjection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultDataProjectionUndefined: Self = StObject.set(x, "defaultDataProjection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDataProjection(value: ProjectionLike): Self = this.set("defaultDataProjection", value.asInstanceOf[js.Any])
+    def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
     
     @scala.inline
-    def deleteDefaultDataProjection: Self = this.set("defaultDataProjection", js.undefined)
+    def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureProjection(value: ProjectionLike): Self = this.set("featureProjection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatureProjection: Self = this.set("featureProjection", js.undefined)
-    
-    @scala.inline
-    def setGeometryName(value: String): Self = this.set("geometryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeometryName: Self = this.set("geometryName", js.undefined)
+    def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.sparqljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ordering extends js.Object {
+trait Ordering extends StObject {
   
   var descending: js.UndefOr[Boolean] = js.native
   
@@ -20,27 +21,15 @@ object Ordering {
   }
   
   @scala.inline
-  implicit class OrderingOps[Self <: Ordering] (val x: Self) extends AnyVal {
+  implicit class OrderingMutableBuilder[Self <: Ordering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpression(value: Expression): Self = this.set("expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescending(value: Boolean): Self = this.set("descending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescending: Self = this.set("descending", js.undefined)
+    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }
 }

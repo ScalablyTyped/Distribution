@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFSignaturePromptInfoType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISignatureSettings extends js.Object {
+trait ISignatureSettings extends StObject {
   
   var AdditionalInfo: String = js.native
   
@@ -54,54 +55,42 @@ object ISignatureSettings {
   }
   
   @scala.inline
-  implicit class ISignatureSettingsOps[Self <: ISignatureSettings] (val x: Self) extends AnyVal {
+  implicit class ISignatureSettingsMutableBuilder[Self <: ISignatureSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalInfo(value: String): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => ISignatureSettings): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFreeFormTextPropertyID(value: Double): Self = StObject.set(x, "FreeFormTextPropertyID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalInfo(value: String): Self = this.set("AdditionalInfo", value.asInstanceOf[js.Any])
+    def setIsFreeFormTextPrompted(value: Boolean): Self = StObject.set(x, "IsFreeFormTextPrompted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ISignatureSettings): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setIsRequired(value: Boolean): Self = StObject.set(x, "IsRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreeFormTextPropertyID(value: Double): Self = this.set("FreeFormTextPropertyID", value.asInstanceOf[js.Any])
+    def setIsSeparateSignatureObject(value: Boolean): Self = StObject.set(x, "IsSeparateSignatureObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFreeFormTextPrompted(value: Boolean): Self = this.set("IsFreeFormTextPrompted", value.asInstanceOf[js.Any])
+    def setManifestationPropertyID(value: Double): Self = StObject.set(x, "ManifestationPropertyID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRequired(value: Boolean): Self = this.set("IsRequired", value.asInstanceOf[js.Any])
+    def setPromptInfoType(value: MFSignaturePromptInfoType): Self = StObject.set(x, "PromptInfoType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSeparateSignatureObject(value: Boolean): Self = this.set("IsSeparateSignatureObject", value.asInstanceOf[js.Any])
+    def setSignatureIdentifier(value: String): Self = StObject.set(x, "SignatureIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestationPropertyID(value: Double): Self = this.set("ManifestationPropertyID", value.asInstanceOf[js.Any])
+    def setSignaturePromptInfoFixed(value: ISignaturePromptInfo): Self = StObject.set(x, "SignaturePromptInfoFixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromptInfoType(value: MFSignaturePromptInfoType): Self = this.set("PromptInfoType", value.asInstanceOf[js.Any])
+    def setSignaturePromptInfoMetadataBased(value: ISignaturePromptInfoMetadataBased): Self = StObject.set(x, "SignaturePromptInfoMetadataBased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureIdentifier(value: String): Self = this.set("SignatureIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignaturePromptInfoFixed(value: ISignaturePromptInfo): Self = this.set("SignaturePromptInfoFixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignaturePromptInfoMetadataBased(value: ISignaturePromptInfoMetadataBased): Self = this.set("SignaturePromptInfoMetadataBased", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignaturePromptInfoSelectable(value: ISignaturePromptInfoSelectable): Self = this.set("SignaturePromptInfoSelectable", value.asInstanceOf[js.Any])
+    def setSignaturePromptInfoSelectable(value: ISignaturePromptInfoSelectable): Self = StObject.set(x, "SignaturePromptInfoSelectable", value.asInstanceOf[js.Any])
   }
 }

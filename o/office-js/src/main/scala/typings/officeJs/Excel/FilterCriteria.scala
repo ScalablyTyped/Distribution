@@ -46,6 +46,7 @@ import typings.officeJs.officeJsStrings.Unknown_
 import typings.officeJs.officeJsStrings.Values
 import typings.officeJs.officeJsStrings.YearToDate
 import typings.officeJs.officeJsStrings.Yesterday
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,7 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.2]
   */
 @js.native
-trait FilterCriteria extends js.Object {
+trait FilterCriteria extends StObject {
   
   /**
     *
@@ -147,76 +148,64 @@ object FilterCriteria {
   }
   
   @scala.inline
-  implicit class FilterCriteriaOps[Self <: FilterCriteria] (val x: Self) extends AnyVal {
+  implicit class FilterCriteriaMutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCriterion1(value: String): Self = StObject.set(x, "criterion1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterOn(
-      value: FilterOn | BottomItems | BottomPercent | CellColor | Dynamic | FontColor | Values | TopItems | TopPercent | typings.officeJs.officeJsStrings.Icon | Custom
-    ): Self = this.set("filterOn", value.asInstanceOf[js.Any])
+    def setCriterion1Undefined: Self = StObject.set(x, "criterion1", js.undefined)
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCriterion2(value: String): Self = StObject.set(x, "criterion2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
-    
-    @scala.inline
-    def setCriterion1(value: String): Self = this.set("criterion1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCriterion1: Self = this.set("criterion1", js.undefined)
-    
-    @scala.inline
-    def setCriterion2(value: String): Self = this.set("criterion2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCriterion2: Self = this.set("criterion2", js.undefined)
+    def setCriterion2Undefined: Self = StObject.set(x, "criterion2", js.undefined)
     
     @scala.inline
     def setDynamicCriteria(
       value: DynamicFilterCriteria | Unknown_ | AboveAverage | AllDatesInPeriodApril | AllDatesInPeriodAugust | AllDatesInPeriodDecember | AllDatesInPeriodFebruray | AllDatesInPeriodJanuary | AllDatesInPeriodJuly | AllDatesInPeriodJune | AllDatesInPeriodMarch | AllDatesInPeriodMay | AllDatesInPeriodNovember | AllDatesInPeriodOctober | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodSeptember | BelowAverage | LastMonth | LastQuarter | LastWeek | LastYear | NextMonth | NextQuarter | NextWeek | NextYear | ThisMonth | ThisQuarter | ThisWeek | ThisYear | Today | Tomorrow | YearToDate | Yesterday
-    ): Self = this.set("dynamicCriteria", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dynamicCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDynamicCriteria: Self = this.set("dynamicCriteria", js.undefined)
+    def setDynamicCriteriaUndefined: Self = StObject.set(x, "dynamicCriteria", js.undefined)
     
     @scala.inline
-    def setIcon(value: Icon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setFilterOn(
+      value: FilterOn | BottomItems | BottomPercent | CellColor | Dynamic | FontColor | Values | TopItems | TopPercent | typings.officeJs.officeJsStrings.Icon | Custom
+    ): Self = StObject.set(x, "filterOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: FilterOperator | And | Or): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
+    def setOperator(value: FilterOperator | And | Or): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubField(value: String): Self = this.set("subField", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def deleteSubField: Self = this.set("subField", js.undefined)
+    def setSubField(value: String): Self = StObject.set(x, "subField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuesVarargs(value: (String | FilterDatetime)*): Self = this.set("values", js.Array(value :_*))
+    def setSubFieldUndefined: Self = StObject.set(x, "subField", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[String | FilterDatetime]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[String | FilterDatetime]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    @scala.inline
+    def setValuesVarargs(value: (String | FilterDatetime)*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

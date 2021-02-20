@@ -1,6 +1,7 @@
 package typings.strongholdPayJs.mod
 
 import typings.strongholdPayJs.mod.global.Stronghold.ClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

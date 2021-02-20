@@ -1,14 +1,15 @@
 package typings.utilPromisify
 
-import typings.utilPromisify.anon.Call
+import typings.utilPromisify.anon.FnCall
 import typings.utilPromisify.anon.Typeofpromisify
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("util.promisify/polyfill", JSImport.Namespace)
-@js.native
-object polyfillMod extends js.Object {
+object polyfillMod {
   
-  def apply(): Call | Typeofpromisify = js.native
+  @JSImport("util.promisify/polyfill", JSImport.Namespace)
+  @js.native
+  def apply(): FnCall | Typeofpromisify = js.native
 }

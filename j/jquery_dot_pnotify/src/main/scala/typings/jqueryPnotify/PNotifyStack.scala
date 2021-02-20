@@ -2,12 +2,13 @@ package typings.jqueryPnotify
 
 import typings.jquery.JQuery
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PNotifyStack extends js.Object {
+trait PNotifyStack extends StObject {
   
   var context: js.UndefOr[JQuery[HTMLElement]] = js.native
   
@@ -36,72 +37,60 @@ object PNotifyStack {
   }
   
   @scala.inline
-  implicit class PNotifyStackOps[Self <: PNotifyStack] (val x: Self) extends AnyVal {
+  implicit class PNotifyStackMutableBuilder[Self <: PNotifyStack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: JQuery[HTMLElement]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDir1(value: String): Self = StObject.set(x, "dir1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: JQuery[HTMLElement]): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDir1Undefined: Self = StObject.set(x, "dir1", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setDir2(value: String): Self = StObject.set(x, "dir2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir1(value: String): Self = this.set("dir1", value.asInstanceOf[js.Any])
+    def setDir2Undefined: Self = StObject.set(x, "dir2", js.undefined)
     
     @scala.inline
-    def deleteDir1: Self = this.set("dir1", js.undefined)
+    def setFirstpos1(value: Double): Self = StObject.set(x, "firstpos1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir2(value: String): Self = this.set("dir2", value.asInstanceOf[js.Any])
+    def setFirstpos1Undefined: Self = StObject.set(x, "firstpos1", js.undefined)
     
     @scala.inline
-    def deleteDir2: Self = this.set("dir2", js.undefined)
+    def setFirstpos2(value: Double): Self = StObject.set(x, "firstpos2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstpos1(value: Double): Self = this.set("firstpos1", value.asInstanceOf[js.Any])
+    def setFirstpos2Undefined: Self = StObject.set(x, "firstpos2", js.undefined)
     
     @scala.inline
-    def deleteFirstpos1: Self = this.set("firstpos1", js.undefined)
+    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstpos2(value: Double): Self = this.set("firstpos2", value.asInstanceOf[js.Any])
+    def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
     @scala.inline
-    def deleteFirstpos2: Self = this.set("firstpos2", js.undefined)
+    def setPush(value: String): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
     @scala.inline
-    def deleteModal: Self = this.set("modal", js.undefined)
+    def setSpacing1(value: Double): Self = StObject.set(x, "spacing1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPush(value: String): Self = this.set("push", value.asInstanceOf[js.Any])
+    def setSpacing1Undefined: Self = StObject.set(x, "spacing1", js.undefined)
     
     @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
+    def setSpacing2(value: Double): Self = StObject.set(x, "spacing2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacing1(value: Double): Self = this.set("spacing1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacing1: Self = this.set("spacing1", js.undefined)
-    
-    @scala.inline
-    def setSpacing2(value: Double): Self = this.set("spacing2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacing2: Self = this.set("spacing2", js.undefined)
+    def setSpacing2Undefined: Self = StObject.set(x, "spacing2", js.undefined)
   }
 }

@@ -1,15 +1,17 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/symbol/rxSubscriber", JSImport.Namespace)
-@js.native
-object rxSubscriberMod extends js.Object {
+object rxSubscriberMod {
   
-  @JSName("$$rxSubscriber")
+  @JSImport("rxjs/internal/symbol/rxSubscriber", "$$rxSubscriber")
+  @js.native
   val $rxSubscriber: String | js.Symbol = js.native
   
+  @JSImport("rxjs/internal/symbol/rxSubscriber", "rxSubscriber")
+  @js.native
   val rxSubscriber: String | js.Symbol = js.native
 }

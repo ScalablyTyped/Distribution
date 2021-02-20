@@ -2,6 +2,7 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,27 +42,15 @@ object GitConflictDirectoryFile {
   }
   
   @scala.inline
-  implicit class GitConflictDirectoryFileOps[Self <: GitConflictDirectoryFile] (val x: Self) extends AnyVal {
+  implicit class GitConflictDirectoryFileMutableBuilder[Self <: GitConflictDirectoryFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResolution(value: GitResolutionPathConflict): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceTree(value: GitTreeRef): Self = StObject.set(x, "sourceTree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResolution(value: GitResolutionPathConflict): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceTree(value: GitTreeRef): Self = this.set("sourceTree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetBlob(value: GitBlobRef): Self = this.set("targetBlob", value.asInstanceOf[js.Any])
+    def setTargetBlob(value: GitBlobRef): Self = StObject.set(x, "targetBlob", value.asInstanceOf[js.Any])
   }
 }

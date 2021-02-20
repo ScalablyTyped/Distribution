@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MailMergeDataSource extends js.Object {
+trait MailMergeDataSource extends StObject {
   
   var ActiveRecord: WdMailMergeActiveRecord = js.native
   

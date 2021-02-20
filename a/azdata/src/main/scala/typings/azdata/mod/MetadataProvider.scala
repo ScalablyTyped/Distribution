@@ -1,6 +1,7 @@
 package typings.azdata.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object MetadataProvider {
   }
   
   @scala.inline
-  implicit class MetadataProviderOps[Self <: MetadataProvider] (val x: Self) extends AnyVal {
+  implicit class MetadataProviderMutableBuilder[Self <: MetadataProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDatabases(value: String => Thenable[js.Array[DatabaseInfo | String]]): Self = StObject.set(x, "getDatabases", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMetadata(value: String => Thenable[ProviderMetadata]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTableInfo(value: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]]): Self = StObject.set(x, "getTableInfo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDatabases(value: String => Thenable[js.Array[DatabaseInfo | String]]): Self = this.set("getDatabases", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetMetadata(value: String => Thenable[ProviderMetadata]): Self = this.set("getMetadata", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetTableInfo(value: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]]): Self = this.set("getTableInfo", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetViewInfo(value: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]]): Self = this.set("getViewInfo", js.Any.fromFunction2(value))
+    def setGetViewInfo(value: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]]): Self = StObject.set(x, "getViewInfo", js.Any.fromFunction2(value))
   }
 }

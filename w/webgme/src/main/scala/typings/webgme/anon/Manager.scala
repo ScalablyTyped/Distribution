@@ -2,12 +2,13 @@ package typings.webgme.anon
 
 import typings.webgme.webgmeStrings.memory
 import typings.webgme.webgmeStrings.redis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Manager extends js.Object {
+trait Manager extends StObject {
   
   /**
     * If true will start a webhook-manager from the server.
@@ -34,24 +35,12 @@ object Manager {
   }
   
   @scala.inline
-  implicit class ManagerOps[Self <: Manager] (val x: Self) extends AnyVal {
+  implicit class ManagerMutableBuilder[Self <: Manager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManager(value: memory | redis): Self = this.set("manager", value.asInstanceOf[js.Any])
+    def setManager(value: memory | redis): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
   }
 }

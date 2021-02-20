@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationDetails extends js.Object {
+trait ReplicationDetails extends StObject {
   
   /**
     * Specifies whether the bucket is configured to replicate one or more objects to any destination.
@@ -31,39 +32,27 @@ object ReplicationDetails {
   }
   
   @scala.inline
-  implicit class ReplicationDetailsOps[Self <: ReplicationDetails] (val x: Self) extends AnyVal {
+  implicit class ReplicationDetailsMutableBuilder[Self <: ReplicationDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplicated(value: boolean): Self = StObject.set(x, "replicated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplicatedExternally(value: boolean): Self = StObject.set(x, "replicatedExternally", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicatedExternallyUndefined: Self = StObject.set(x, "replicatedExternally", js.undefined)
     
     @scala.inline
-    def setReplicated(value: boolean): Self = this.set("replicated", value.asInstanceOf[js.Any])
+    def setReplicatedUndefined: Self = StObject.set(x, "replicated", js.undefined)
     
     @scala.inline
-    def deleteReplicated: Self = this.set("replicated", js.undefined)
+    def setReplicationAccounts(value: listOfString): Self = StObject.set(x, "replicationAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicatedExternally(value: boolean): Self = this.set("replicatedExternally", value.asInstanceOf[js.Any])
+    def setReplicationAccountsUndefined: Self = StObject.set(x, "replicationAccounts", js.undefined)
     
     @scala.inline
-    def deleteReplicatedExternally: Self = this.set("replicatedExternally", js.undefined)
-    
-    @scala.inline
-    def setReplicationAccountsVarargs(value: string*): Self = this.set("replicationAccounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicationAccounts(value: listOfString): Self = this.set("replicationAccounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationAccounts: Self = this.set("replicationAccounts", js.undefined)
+    def setReplicationAccountsVarargs(value: string*): Self = StObject.set(x, "replicationAccounts", js.Array(value :_*))
   }
 }

@@ -13,6 +13,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.EdgeRight
 import typings.officeJsPreview.officeJsPreviewStrings.EdgeTop
 import typings.officeJsPreview.officeJsPreviewStrings.InsideHorizontal
 import typings.officeJsPreview.officeJsPreviewStrings.InsideVertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

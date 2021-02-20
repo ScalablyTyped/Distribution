@@ -1,12 +1,13 @@
 package typings.googleCloudStorage.fileMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateSignedPostPolicyV4Options extends js.Object {
+trait GenerateSignedPostPolicyV4Options extends StObject {
   
   var bucketBoundHostname: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object GenerateSignedPostPolicyV4Options {
   }
   
   @scala.inline
-  implicit class GenerateSignedPostPolicyV4OptionsOps[Self <: GenerateSignedPostPolicyV4Options] (val x: Self) extends AnyVal {
+  implicit class GenerateSignedPostPolicyV4OptionsMutableBuilder[Self <: GenerateSignedPostPolicyV4Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketBoundHostname(value: String): Self = StObject.set(x, "bucketBoundHostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketBoundHostnameUndefined: Self = StObject.set(x, "bucketBoundHostname", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: js.Array[js.Object]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires(value: String | Double | Date): Self = this.set("expires", value.asInstanceOf[js.Any])
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def setBucketBoundHostname(value: String): Self = this.set("bucketBoundHostname", value.asInstanceOf[js.Any])
+    def setConditionsVarargs(value: js.Object*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def deleteBucketBoundHostname: Self = this.set("bucketBoundHostname", js.undefined)
+    def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: js.Object*): Self = this.set("conditions", js.Array(value :_*))
+    def setFields(value: PolicyFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[js.Object]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setVirtualHostedStyle(value: Boolean): Self = StObject.set(x, "virtualHostedStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: PolicyFields): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
-    
-    @scala.inline
-    def setVirtualHostedStyle(value: Boolean): Self = this.set("virtualHostedStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualHostedStyle: Self = this.set("virtualHostedStyle", js.undefined)
+    def setVirtualHostedStyleUndefined: Self = StObject.set(x, "virtualHostedStyle", js.undefined)
   }
 }

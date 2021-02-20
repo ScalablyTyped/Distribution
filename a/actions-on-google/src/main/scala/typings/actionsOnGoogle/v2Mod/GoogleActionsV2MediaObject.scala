@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2MediaObject extends js.Object {
+trait GoogleActionsV2MediaObject extends StObject {
   
   /**
     * The url pointing to the media content.
@@ -42,48 +43,36 @@ object GoogleActionsV2MediaObject {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2MediaObjectOps[Self <: GoogleActionsV2MediaObject] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2MediaObjectMutableBuilder[Self <: GoogleActionsV2MediaObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentUrl(value: String): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+    def setIcon(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLargeImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "largeImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: GoogleActionsV2UiElementsImage): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setLargeImageUndefined: Self = StObject.set(x, "largeImage", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLargeImage(value: GoogleActionsV2UiElementsImage): Self = this.set("largeImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLargeImage: Self = this.set("largeImage", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -1,15 +1,15 @@
 package typings.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.angularCoreStrings.any
 import typings.angularCore.angularCoreStrings.platform
 import typings.angularCore.angularCoreStrings.root
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Injectable extends js.Object {
+trait Injectable extends StObject {
   
   /**
     * Determines which injectors will provide the injectable,
@@ -22,8 +22,24 @@ trait Injectable extends js.Object {
     * modules share one instance.
     *
     */
-  var providedIn: js.UndefOr[Type[_] | root | platform | any | Null] = js.native
+  var providedIn: js.UndefOr[typings.angularCore.mod.Type[_] | root | platform | any | Null] = js.native
 }
-@JSImport("@angular/core", "Injectable")
-@js.native
-object Injectable extends TopLevel[InjectableDecorator]
+object Injectable {
+  
+  @JSImport("@angular/core", "Injectable")
+  @js.native
+  val ^ : InjectableDecorator = js.native
+  
+  @scala.inline
+  implicit class InjectableMutableBuilder[Self <: Injectable] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setProvidedIn(value: typings.angularCore.mod.Type[_] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
+    
+    @scala.inline
+    def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
+  }
+}

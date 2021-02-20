@@ -1,12 +1,13 @@
 package typings.dav.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined dav.dav.Partial<dav.dav.Account> */
 @js.native
-trait AccountOptions extends js.Object {
+trait AccountOptions extends StObject {
   
   var addressBooks: js.UndefOr[js.Array[AddressBook]] = js.native
   
@@ -33,72 +34,60 @@ object AccountOptions {
   }
   
   @scala.inline
-  implicit class AccountOptionsOps[Self <: AccountOptions] (val x: Self) extends AnyVal {
+  implicit class AccountOptionsMutableBuilder[Self <: AccountOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressBooks(value: js.Array[AddressBook]): Self = StObject.set(x, "addressBooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressBooksUndefined: Self = StObject.set(x, "addressBooks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressBooksVarargs(value: AddressBook*): Self = StObject.set(x, "addressBooks", js.Array(value :_*))
     
     @scala.inline
-    def setAddressBooksVarargs(value: AddressBook*): Self = this.set("addressBooks", js.Array(value :_*))
+    def setCalendars(value: js.Array[Calendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressBooks(value: js.Array[AddressBook]): Self = this.set("addressBooks", value.asInstanceOf[js.Any])
+    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
     @scala.inline
-    def deleteAddressBooks: Self = this.set("addressBooks", js.undefined)
+    def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
     
     @scala.inline
-    def setCalendarsVarargs(value: Calendar*): Self = this.set("calendars", js.Array(value :_*))
+    def setConstructor(value: /* options */ js.UndefOr[AccountOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalendars(value: js.Array[Calendar]): Self = this.set("calendars", value.asInstanceOf[js.Any])
+    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
     @scala.inline
-    def deleteCalendars: Self = this.set("calendars", js.undefined)
+    def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstructor(value: /* options */ js.UndefOr[AccountOptions] => js.Any): Self = this.set("constructor", js.Any.fromFunction1(value))
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def deleteConstructor: Self = this.set("constructor", js.undefined)
+    def setHomeUrl(value: String): Self = StObject.set(x, "homeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: Credentials): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setHomeUrlUndefined: Self = StObject.set(x, "homeUrl", js.undefined)
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setPrincipalUrl(value: String): Self = StObject.set(x, "principalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeUrl(value: String): Self = this.set("homeUrl", value.asInstanceOf[js.Any])
+    def setPrincipalUrlUndefined: Self = StObject.set(x, "principalUrl", js.undefined)
     
     @scala.inline
-    def deleteHomeUrl: Self = this.set("homeUrl", js.undefined)
+    def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalUrl(value: String): Self = this.set("principalUrl", value.asInstanceOf[js.Any])
+    def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
     
     @scala.inline
-    def deletePrincipalUrl: Self = this.set("principalUrl", js.undefined)
+    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootUrl(value: String): Self = this.set("rootUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootUrl: Self = this.set("rootUrl", js.undefined)
-    
-    @scala.inline
-    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

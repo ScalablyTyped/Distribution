@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for network diagnostics reported for a client.
   */
 @js.native
-trait SchemaNetworkDiagnostics extends js.Object {
+trait SchemaNetworkDiagnostics extends StObject {
   
   /**
     * The Android network subtype.
@@ -63,60 +64,48 @@ object SchemaNetworkDiagnostics {
   }
   
   @scala.inline
-  implicit class SchemaNetworkDiagnosticsOps[Self <: SchemaNetworkDiagnostics] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworkDiagnosticsMutableBuilder[Self <: SchemaNetworkDiagnostics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidNetworkSubtype(value: Double): Self = StObject.set(x, "androidNetworkSubtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidNetworkSubtypeUndefined: Self = StObject.set(x, "androidNetworkSubtype", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidNetworkType(value: Double): Self = StObject.set(x, "androidNetworkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidNetworkSubtype(value: Double): Self = this.set("androidNetworkSubtype", value.asInstanceOf[js.Any])
+    def setAndroidNetworkTypeUndefined: Self = StObject.set(x, "androidNetworkType", js.undefined)
     
     @scala.inline
-    def deleteAndroidNetworkSubtype: Self = this.set("androidNetworkSubtype", js.undefined)
+    def setIosNetworkType(value: Double): Self = StObject.set(x, "iosNetworkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidNetworkType(value: Double): Self = this.set("androidNetworkType", value.asInstanceOf[js.Any])
+    def setIosNetworkTypeUndefined: Self = StObject.set(x, "iosNetworkType", js.undefined)
     
     @scala.inline
-    def deleteAndroidNetworkType: Self = this.set("androidNetworkType", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosNetworkType(value: Double): Self = this.set("iosNetworkType", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIosNetworkType: Self = this.set("iosNetworkType", js.undefined)
+    def setNetworkOperatorCode(value: String): Self = StObject.set(x, "networkOperatorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNetworkOperatorCodeUndefined: Self = StObject.set(x, "networkOperatorCode", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNetworkOperatorName(value: String): Self = StObject.set(x, "networkOperatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkOperatorCode(value: String): Self = this.set("networkOperatorCode", value.asInstanceOf[js.Any])
+    def setNetworkOperatorNameUndefined: Self = StObject.set(x, "networkOperatorName", js.undefined)
     
     @scala.inline
-    def deleteNetworkOperatorCode: Self = this.set("networkOperatorCode", js.undefined)
+    def setRegistrationLatencyMillis(value: Double): Self = StObject.set(x, "registrationLatencyMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkOperatorName(value: String): Self = this.set("networkOperatorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkOperatorName: Self = this.set("networkOperatorName", js.undefined)
-    
-    @scala.inline
-    def setRegistrationLatencyMillis(value: Double): Self = this.set("registrationLatencyMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistrationLatencyMillis: Self = this.set("registrationLatencyMillis", js.undefined)
+    def setRegistrationLatencyMillisUndefined: Self = StObject.set(x, "registrationLatencyMillis", js.undefined)
   }
 }

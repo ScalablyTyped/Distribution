@@ -1,13 +1,13 @@
 package typings.ecol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ecol/lib/test/linear", JSImport.Namespace)
-@js.native
-object linearMod extends js.Object {
+object linearMod {
   
-  @JSName("test_linear_containers")
+  @JSImport("ecol/lib/test/linear", "test_linear_containers")
+  @js.native
   def testLinearContainers(): Unit = js.native
 }

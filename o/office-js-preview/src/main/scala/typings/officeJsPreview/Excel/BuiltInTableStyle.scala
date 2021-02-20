@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BuiltInTableStyle extends js.Object
+sealed trait BuiltInTableStyle extends StObject
 /**
   *
   * Represents a built-in table style.
@@ -15,7 +16,7 @@ sealed trait BuiltInTableStyle extends js.Object
   */
 @JSGlobal("Excel.BuiltInTableStyle")
 @js.native
-object BuiltInTableStyle extends js.Object {
+object BuiltInTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and dark.

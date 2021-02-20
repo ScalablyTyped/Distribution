@@ -1,12 +1,13 @@
 package typings.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMethod extends js.Object {
+trait IMethod extends StObject {
   
   /** Method options */
   var options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.native
@@ -35,48 +36,36 @@ object IMethod {
   }
   
   @scala.inline
-  implicit class IMethodOps[Self <: IMethod] (val x: Self) extends AnyVal {
+  implicit class IMethodMutableBuilder[Self <: IMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptions(value: StringDictionary[js.UndefOr[js.Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestStream(value: Boolean): Self = StObject.set(x, "requestStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestType(value: String): Self = this.set("requestType", value.asInstanceOf[js.Any])
+    def setRequestStreamUndefined: Self = StObject.set(x, "requestStream", js.undefined)
     
     @scala.inline
-    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: StringDictionary[js.UndefOr[js.Any]]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setResponseStream(value: Boolean): Self = StObject.set(x, "responseStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setResponseStreamUndefined: Self = StObject.set(x, "responseStream", js.undefined)
     
     @scala.inline
-    def setRequestStream(value: Boolean): Self = this.set("requestStream", value.asInstanceOf[js.Any])
+    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestStream: Self = this.set("requestStream", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseStream(value: Boolean): Self = this.set("responseStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseStream: Self = this.set("responseStream", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

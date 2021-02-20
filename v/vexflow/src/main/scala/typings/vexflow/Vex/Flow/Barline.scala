@@ -1,5 +1,6 @@
 package typings.vexflow.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,14 +20,13 @@ trait Barline extends StaveModifier {
   
   def setX(x: Double): Barline = js.native
 }
-@JSGlobal("Vex.Flow.Barline")
-@js.native
-object Barline extends js.Object {
+object Barline {
   
   @js.native
-  sealed trait `type` extends js.Object
+  sealed trait `type` extends StObject
+  @JSGlobal("Vex.Flow.Barline.type")
   @js.native
-  object `type` extends js.Object {
+  object `type` extends StObject {
     
     @js.native
     sealed trait DOUBLE extends `type`

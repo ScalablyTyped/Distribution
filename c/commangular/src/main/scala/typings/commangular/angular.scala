@@ -1,6 +1,7 @@
 package typings.commangular
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Extending the angular rootScope to include the dispatch function in all scopes.
   */
-@JSGlobal("angular")
-@js.native
-object angular extends js.Object {
+object angular {
   
   @js.native
-  trait IRootScopeService extends js.Object {
+  trait IRootScopeService extends StObject {
     
     /**
       * Commangular method to execute a command.

@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarTextColor extends js.Object {
+trait CalendarTextColor extends StObject {
   
   var calendarTextColor: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object CalendarTextColor {
   }
   
   @scala.inline
-  implicit class CalendarTextColorOps[Self <: CalendarTextColor] (val x: Self) extends AnyVal {
+  implicit class CalendarTextColorMutableBuilder[Self <: CalendarTextColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarTextColor(value: String): Self = StObject.set(x, "calendarTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarTextColorUndefined: Self = StObject.set(x, "calendarTextColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalendarYearBackgroundColor(value: String): Self = StObject.set(x, "calendarYearBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarTextColor(value: String): Self = this.set("calendarTextColor", value.asInstanceOf[js.Any])
+    def setCalendarYearBackgroundColorUndefined: Self = StObject.set(x, "calendarYearBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteCalendarTextColor: Self = this.set("calendarTextColor", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarYearBackgroundColor(value: String): Self = this.set("calendarYearBackgroundColor", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCalendarYearBackgroundColor: Self = this.set("calendarYearBackgroundColor", js.undefined)
+    def setHeaderColor(value: String): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setSelectColor(value: String): Self = StObject.set(x, "selectColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderColor(value: String): Self = this.set("headerColor", value.asInstanceOf[js.Any])
+    def setSelectColorUndefined: Self = StObject.set(x, "selectColor", js.undefined)
     
     @scala.inline
-    def deleteHeaderColor: Self = this.set("headerColor", js.undefined)
+    def setSelectTextColor(value: String): Self = StObject.set(x, "selectTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectColor(value: String): Self = this.set("selectColor", value.asInstanceOf[js.Any])
+    def setSelectTextColorUndefined: Self = StObject.set(x, "selectTextColor", js.undefined)
     
     @scala.inline
-    def deleteSelectColor: Self = this.set("selectColor", js.undefined)
+    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectTextColor(value: String): Self = this.set("selectTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectTextColor: Self = this.set("selectTextColor", js.undefined)
-    
-    @scala.inline
-    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

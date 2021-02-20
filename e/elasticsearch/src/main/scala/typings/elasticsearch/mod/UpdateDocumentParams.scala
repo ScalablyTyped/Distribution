@@ -3,6 +3,7 @@ package typings.elasticsearch.mod
 import typings.elasticsearch.elasticsearchStrings.force
 import typings.elasticsearch.elasticsearchStrings.internal
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,129 +57,117 @@ object UpdateDocumentParams {
   }
   
   @scala.inline
-  implicit class UpdateDocumentParamsOps[Self <: UpdateDocumentParams] (val x: Self) extends AnyVal {
+  implicit class UpdateDocumentParamsMutableBuilder[Self <: UpdateDocumentParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: NameList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sourceVarargs(value: String*): Self = this.set("_source", js.Array(value :_*))
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def set_source(value: NameList): Self = this.set("_source", value.asInstanceOf[js.Any])
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_source: Self = this.set("_source", js.undefined)
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def set_sourceExcludeVarargs(value: String*): Self = this.set("_sourceExclude", js.Array(value :_*))
+    def setRefresh(value: Refresh): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sourceExclude(value: NameList): Self = this.set("_sourceExclude", value.asInstanceOf[js.Any])
+    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
     
     @scala.inline
-    def delete_sourceExclude: Self = this.set("_sourceExclude", js.undefined)
+    def setRetryOnConflict(value: Double): Self = StObject.set(x, "retryOnConflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sourceIncludeVarargs(value: String*): Self = this.set("_sourceInclude", js.Array(value :_*))
+    def setRetryOnConflictUndefined: Self = StObject.set(x, "retryOnConflict", js.undefined)
     
     @scala.inline
-    def set_sourceInclude(value: NameList): Self = this.set("_sourceInclude", value.asInstanceOf[js.Any])
+    def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sourceInclude: Self = this.set("_sourceInclude", js.undefined)
+    def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: NameList): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setTimestamp(value: Date | Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setTtl(value: TimeSpan): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: Refresh): Self = this.set("refresh", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    def setVersionType(value: internal | force): Self = StObject.set(x, "versionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryOnConflict(value: Double): Self = this.set("retryOnConflict", value.asInstanceOf[js.Any])
+    def setVersionTypeUndefined: Self = StObject.set(x, "versionType", js.undefined)
     
     @scala.inline
-    def deleteRetryOnConflict: Self = this.set("retryOnConflict", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def setRouting(value: String): Self = this.set("routing", value.asInstanceOf[js.Any])
+    def setWaitForActiveShards(value: String): Self = StObject.set(x, "waitForActiveShards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRouting: Self = this.set("routing", js.undefined)
+    def setWaitForActiveShardsUndefined: Self = StObject.set(x, "waitForActiveShards", js.undefined)
     
     @scala.inline
-    def setTimeout(value: TimeSpan): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def set_source(value: NameList): Self = StObject.set(x, "_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def set_sourceExclude(value: NameList): Self = StObject.set(x, "_sourceExclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Date | Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def set_sourceExcludeUndefined: Self = StObject.set(x, "_sourceExclude", js.undefined)
     
     @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def set_sourceExcludeVarargs(value: String*): Self = StObject.set(x, "_sourceExclude", js.Array(value :_*))
     
     @scala.inline
-    def setTtl(value: TimeSpan): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    def set_sourceInclude(value: NameList): Self = StObject.set(x, "_sourceInclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTtl: Self = this.set("ttl", js.undefined)
+    def set_sourceIncludeUndefined: Self = StObject.set(x, "_sourceInclude", js.undefined)
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def set_sourceIncludeVarargs(value: String*): Self = StObject.set(x, "_sourceInclude", js.Array(value :_*))
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
     
     @scala.inline
-    def setVersionType(value: internal | force): Self = this.set("versionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionType: Self = this.set("versionType", js.undefined)
-    
-    @scala.inline
-    def setWaitForActiveShards(value: String): Self = this.set("waitForActiveShards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForActiveShards: Self = this.set("waitForActiveShards", js.undefined)
+    def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value :_*))
   }
 }

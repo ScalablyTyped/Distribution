@@ -1,11 +1,12 @@
 package typings.tampermonkey.Tampermonkey
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbortHandle[TReturn] extends js.Object {
+trait AbortHandle[TReturn] extends StObject {
   
   def abort(): TReturn = js.native
 }
@@ -18,21 +19,9 @@ object AbortHandle {
   }
   
   @scala.inline
-  implicit class AbortHandleOps[Self <: AbortHandle[_], TReturn] (val x: Self with AbortHandle[TReturn]) extends AnyVal {
+  implicit class AbortHandleMutableBuilder[Self <: AbortHandle[_], TReturn] (val x: Self with AbortHandle[TReturn]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAbort(value: () => TReturn): Self = this.set("abort", js.Any.fromFunction0(value))
+    def setAbort(value: () => TReturn): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
   }
 }

@@ -13,13 +13,14 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.quantumprocessed
 import typings.winrtUwp.winrtUwpStrings.quantumstarted
 import typings.winrtUwp.winrtUwpStrings.unrecoverableerroroccurred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio graph of connected input, output, and submix nodes that manipulate and route audio. */
 @js.native
-trait AudioGraph extends js.Object {
+trait AudioGraph extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

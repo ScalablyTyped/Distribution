@@ -16,6 +16,7 @@ import typings.plotlyJs.plotlyJsStrings.pixel
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.start
 import typings.plotlyJs.plotlyJsStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -329,132 +330,120 @@ object Annotations {
   }
   
   @scala.inline
-  implicit class AnnotationsOps[Self <: Annotations] (val x: Self) extends AnyVal {
+  implicit class AnnotationsMutableBuilder[Self <: Annotations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowcolor(value: String): Self = StObject.set(x, "arrowcolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrowhead(value: Double): Self = StObject.set(x, "arrowhead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: left | center | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setArrowside(value: end | start): Self = StObject.set(x, "arrowside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowcolor(value: String): Self = this.set("arrowcolor", value.asInstanceOf[js.Any])
+    def setArrowsize(value: Double): Self = StObject.set(x, "arrowsize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowhead(value: Double): Self = this.set("arrowhead", value.asInstanceOf[js.Any])
+    def setArrowwidth(value: Double): Self = StObject.set(x, "arrowwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowside(value: end | start): Self = this.set("arrowside", value.asInstanceOf[js.Any])
+    def setAx(value: Double): Self = StObject.set(x, "ax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowsize(value: Double): Self = this.set("arrowsize", value.asInstanceOf[js.Any])
+    def setAxref(value: pixel | XAxisName): Self = StObject.set(x, "axref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowwidth(value: Double): Self = this.set("arrowwidth", value.asInstanceOf[js.Any])
+    def setAy(value: Double): Self = StObject.set(x, "ay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAx(value: Double): Self = this.set("ax", value.asInstanceOf[js.Any])
+    def setAyref(value: pixel | YAxisName): Self = StObject.set(x, "ayref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxref(value: pixel | XAxisName): Self = this.set("axref", value.asInstanceOf[js.Any])
+    def setBorderpad(value: Double): Self = StObject.set(x, "borderpad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAy(value: Double): Self = this.set("ay", value.asInstanceOf[js.Any])
+    def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAyref(value: pixel | YAxisName): Self = this.set("ayref", value.asInstanceOf[js.Any])
+    def setCaptureevents(value: Boolean): Self = StObject.set(x, "captureevents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderpad(value: Double): Self = this.set("borderpad", value.asInstanceOf[js.Any])
+    def setClicktoshow(value: `false` | onoff | onout): Self = StObject.set(x, "clicktoshow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderwidth(value: Double): Self = this.set("borderwidth", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureevents(value: Boolean): Self = this.set("captureevents", value.asInstanceOf[js.Any])
+    def setHoverlabel(value: PartialHoverLabel): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClicktoshow(value: `false` | onoff | onout): Self = this.set("clicktoshow", value.asInstanceOf[js.Any])
+    def setHovertext(value: String): Self = StObject.set(x, "hovertext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverlabel(value: PartialHoverLabel): Self = this.set("hoverlabel", value.asInstanceOf[js.Any])
+    def setShowarrow(value: Boolean): Self = StObject.set(x, "showarrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHovertext(value: String): Self = this.set("hovertext", value.asInstanceOf[js.Any])
+    def setStandoff(value: Double): Self = StObject.set(x, "standoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setStartarrowhead(value: Double): Self = StObject.set(x, "startarrowhead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowarrow(value: Boolean): Self = this.set("showarrow", value.asInstanceOf[js.Any])
+    def setStartarrowsize(value: Double): Self = StObject.set(x, "startarrowsize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandoff(value: Double): Self = this.set("standoff", value.asInstanceOf[js.Any])
+    def setStartstandoff(value: Double): Self = StObject.set(x, "startstandoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartarrowhead(value: Double): Self = this.set("startarrowhead", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartarrowsize(value: Double): Self = this.set("startarrowsize", value.asInstanceOf[js.Any])
+    def setTextangle(value: String): Self = StObject.set(x, "textangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartstandoff(value: Double): Self = this.set("startstandoff", value.asInstanceOf[js.Any])
+    def setValign(value: top | middle | bottom): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextangle(value: String): Self = this.set("textangle", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValign(value: top | middle | bottom): Self = this.set("valign", value.asInstanceOf[js.Any])
+    def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setXanchor(value: auto | left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXclick(value: js.Any): Self = StObject.set(x, "xclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double | String): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setXref(value: paper | XAxisName): Self = StObject.set(x, "xref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXanchor(value: auto | left | center | right): Self = this.set("xanchor", value.asInstanceOf[js.Any])
+    def setXshift(value: Double): Self = StObject.set(x, "xshift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXclick(value: js.Any): Self = this.set("xclick", value.asInstanceOf[js.Any])
+    def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXref(value: paper | XAxisName): Self = this.set("xref", value.asInstanceOf[js.Any])
+    def setYanchor(value: auto | top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXshift(value: Double): Self = this.set("xshift", value.asInstanceOf[js.Any])
+    def setYclick(value: js.Any): Self = StObject.set(x, "yclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double | String): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setYref(value: paper | YAxisName): Self = StObject.set(x, "yref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYanchor(value: auto | top | middle | bottom): Self = this.set("yanchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYclick(value: js.Any): Self = this.set("yclick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYref(value: paper | YAxisName): Self = this.set("yref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYshift(value: Double): Self = this.set("yshift", value.asInstanceOf[js.Any])
+    def setYshift(value: Double): Self = StObject.set(x, "yshift", value.asInstanceOf[js.Any])
   }
 }

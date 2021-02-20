@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignatureLineObject extends js.Object {
+trait SignatureLineObject extends StObject {
   
   val Id: String = js.native
   
@@ -48,42 +49,30 @@ object SignatureLineObject {
   }
   
   @scala.inline
-  implicit class SignatureLineObjectOps[Self <: SignatureLineObject] (val x: Self) extends AnyVal {
+  implicit class SignatureLineObjectMutableBuilder[Self <: SignatureLineObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoPathDotSignatureLineObject_typekey(value: SignatureLineObject): Self = StObject.set(x, "InfoPath.SignatureLineObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSign(value: (String, String, String, String) => Boolean): Self = StObject.set(x, "Sign", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setSignature(value: SignatureObject): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPathDotSignatureLineObject_typekey(value: SignatureLineObject): Self = this.set("InfoPath.SignatureLineObject_typekey", value.asInstanceOf[js.Any])
+    def setSignatureAppearanceType(value: XdSignatureAppearanceType): Self = StObject.set(x, "SignatureAppearanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSign(value: (String, String, String, String) => Boolean): Self = this.set("Sign", js.Any.fromFunction4(value))
+    def setSuggestedSigner(value: String): Self = StObject.set(x, "SuggestedSigner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignature(value: SignatureObject): Self = this.set("Signature", value.asInstanceOf[js.Any])
+    def setSuggestedSignerEmailAddress(value: String): Self = StObject.set(x, "SuggestedSignerEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureAppearanceType(value: XdSignatureAppearanceType): Self = this.set("SignatureAppearanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedSigner(value: String): Self = this.set("SuggestedSigner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedSignerEmailAddress(value: String): Self = this.set("SuggestedSignerEmailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedSignerTitle(value: String): Self = this.set("SuggestedSignerTitle", value.asInstanceOf[js.Any])
+    def setSuggestedSignerTitle(value: String): Self = StObject.set(x, "SuggestedSignerTitle", value.asInstanceOf[js.Any])
   }
 }

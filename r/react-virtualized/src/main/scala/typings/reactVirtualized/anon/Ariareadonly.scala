@@ -16,12 +16,13 @@ import typings.reactVirtualized.reactVirtualizedNumbers.`30`
 import typings.reactVirtualized.reactVirtualizedStrings.auto
 import typings.reactVirtualized.reactVirtualizedStrings.grid
 import typings.reactVirtualized.reactVirtualizedStrings.rowgroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ariareadonly extends js.Object {
+trait Ariareadonly extends StObject {
   
   var `aria-label`: grid = js.native
   
@@ -104,87 +105,75 @@ object Ariareadonly {
   }
   
   @scala.inline
-  implicit class AriareadonlyOps[Self <: Ariareadonly] (val x: Self) extends AnyVal {
+  implicit class AriareadonlyMutableBuilder[Self <: Ariareadonly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAria-label`(value: grid): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAria-readonly`(value: `true`): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoContainerWidth(value: `false`): Self = StObject.set(x, "autoContainerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-label`(value: grid): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    def setAutoHeight(value: `false`): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-readonly`(value: `true`): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
+    def setAutoWidth(value: `false`): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoContainerWidth(value: `false`): Self = this.set("autoContainerWidth", value.asInstanceOf[js.Any])
+    def setCellRangeRenderer(value: /* params */ GridCellRangeProps => js.Array[ReactNode]): Self = StObject.set(x, "cellRangeRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoHeight(value: `false`): Self = this.set("autoHeight", value.asInstanceOf[js.Any])
+    def setContainerRole(value: rowgroup): Self = StObject.set(x, "containerRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWidth(value: `false`): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    def setEstimatedColumnSize(value: `100`): Self = StObject.set(x, "estimatedColumnSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellRangeRenderer(value: /* params */ GridCellRangeProps => js.Array[ReactNode]): Self = this.set("cellRangeRenderer", js.Any.fromFunction1(value))
+    def setEstimatedRowSize(value: `30`): Self = StObject.set(x, "estimatedRowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerRole(value: rowgroup): Self = this.set("containerRole", value.asInstanceOf[js.Any])
+    def setGetScrollbarSize(value: () => Double): Self = StObject.set(x, "getScrollbarSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEstimatedColumnSize(value: `100`): Self = this.set("estimatedColumnSize", value.asInstanceOf[js.Any])
+    def setNoContentRenderer(value: () => ReactNode): Self = StObject.set(x, "noContentRenderer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEstimatedRowSize(value: `30`): Self = this.set("estimatedRowSize", value.asInstanceOf[js.Any])
+    def setOnScroll(value: () => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScrollbarSize(value: () => Double): Self = this.set("getScrollbarSize", js.Any.fromFunction0(value))
+    def setOnScrollbarPresenceChange(value: () => Unit): Self = StObject.set(x, "onScrollbarPresenceChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNoContentRenderer(value: () => ReactNode): Self = this.set("noContentRenderer", js.Any.fromFunction0(value))
+    def setOnSectionRendered(value: () => Unit): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnScroll(value: () => Unit): Self = this.set("onScroll", js.Any.fromFunction0(value))
+    def setOverscanColumnCount(value: `0`): Self = StObject.set(x, "overscanColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnScrollbarPresenceChange(value: () => Unit): Self = this.set("onScrollbarPresenceChange", js.Any.fromFunction0(value))
+    def setOverscanIndicesGetter(value: /* params */ OverscanIndicesGetterParams => OverscanIndices): Self = StObject.set(x, "overscanIndicesGetter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSectionRendered(value: () => Unit): Self = this.set("onSectionRendered", js.Any.fromFunction0(value))
+    def setOverscanRowCount(value: `10`): Self = StObject.set(x, "overscanRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanColumnCount(value: `0`): Self = this.set("overscanColumnCount", value.asInstanceOf[js.Any])
+    def setRole(value: grid): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanIndicesGetter(value: /* params */ OverscanIndicesGetterParams => OverscanIndices): Self = this.set("overscanIndicesGetter", js.Any.fromFunction1(value))
+    def setScrollToAlignment(value: auto): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanRowCount(value: `10`): Self = this.set("overscanRowCount", value.asInstanceOf[js.Any])
+    def setScrollToColumn(value: `-1`): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: grid): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setScrollToRow(value: `-1`): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollToAlignment(value: auto): Self = this.set("scrollToAlignment", value.asInstanceOf[js.Any])
+    def setScrollingResetTimeInterval(value: /* 150 */ Double): Self = StObject.set(x, "scrollingResetTimeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollToColumn(value: `-1`): Self = this.set("scrollToColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollToRow(value: `-1`): Self = this.set("scrollToRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollingResetTimeInterval(value: /* 150 */ Double): Self = this.set("scrollingResetTimeInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabIndex(value: `0`): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    def setTabIndex(value: `0`): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
   }
 }

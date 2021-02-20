@@ -1,98 +1,82 @@
 package typings.riotGamesApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object RiotGamesAPI extends js.Object {
+  object RiotGamesAPI {
     
     /**
       * champion-v1.2
       */
-    @js.native
-    object Champion extends js.Object
+    object Champion
     
     /**
       * championmastery
       */
-    @js.native
-    object ChampionMastery extends js.Object
+    object ChampionMastery
     
     /**
       * current-game-v1.0
       */
-    @js.native
-    object CurrentGame extends js.Object
+    object CurrentGame
     
     /**
       * featured-games-v1.0
       */
-    @js.native
-    object FeaturedGames extends js.Object
+    object FeaturedGames
     
     /**
       * game-v1.3
       */
-    @js.native
-    object Game extends js.Object
+    object Game
     
     /**
       * league-v2.5
       */
-    @js.native
-    object League extends js.Object
+    object League
     
     /**
       * lol-static-data-v1.2
       */
-    @js.native
-    object LolStaticData extends js.Object
+    object LolStaticData
     
     /**
       * lol-status-v1.0
       */
-    @js.native
-    object LolStatus extends js.Object
+    object LolStatus
     
     /**
       * match-v2.2
       */
-    @js.native
-    object Match extends js.Object
+    object Match
     
     /**
       * matchlist-v2.2
       */
-    @js.native
-    object MatchList extends js.Object
+    object MatchList
     
     /**
       * stats-v1.3
       */
-    @js.native
-    object Stats extends js.Object
+    object Stats
     
     /**
       * summoner-v1.4
       */
-    @js.native
-    object Summoner extends js.Object
+    object Summoner
     
     /**
       * team-v2.4
       */
-    @js.native
-    object Team extends js.Object
+    object Team
     
     /**
       * tournament-provider-v1
       */
-    @js.native
-    object TournamentProvider extends js.Object
+    object TournamentProvider
   }
 }

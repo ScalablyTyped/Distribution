@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartialGroupByKeyInstruction extends js.Object {
+trait PartialGroupByKeyInstruction extends StObject {
   
   /** Describes the input to the partial group-by-key instruction. */
   var input: js.UndefOr[InstructionInput] = js.native
@@ -43,65 +44,53 @@ object PartialGroupByKeyInstruction {
   }
   
   @scala.inline
-  implicit class PartialGroupByKeyInstructionOps[Self <: PartialGroupByKeyInstruction] (val x: Self) extends AnyVal {
+  implicit class PartialGroupByKeyInstructionMutableBuilder[Self <: PartialGroupByKeyInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInput(value: InstructionInput): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setInput(value: InstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInputElementCodec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction with TopLevel[js.Any]
-    ): Self = this.set("inputElementCodec", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "inputElementCodec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputElementCodec: Self = this.set("inputElementCodec", js.undefined)
+    def setInputElementCodecUndefined: Self = StObject.set(x, "inputElementCodec", js.undefined)
     
     @scala.inline
-    def setOriginalCombineValuesInputStoreName(value: String): Self = this.set("originalCombineValuesInputStoreName", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteOriginalCombineValuesInputStoreName: Self = this.set("originalCombineValuesInputStoreName", js.undefined)
+    def setOriginalCombineValuesInputStoreName(value: String): Self = StObject.set(x, "originalCombineValuesInputStoreName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalCombineValuesStepName(value: String): Self = this.set("originalCombineValuesStepName", value.asInstanceOf[js.Any])
+    def setOriginalCombineValuesInputStoreNameUndefined: Self = StObject.set(x, "originalCombineValuesInputStoreName", js.undefined)
     
     @scala.inline
-    def deleteOriginalCombineValuesStepName: Self = this.set("originalCombineValuesStepName", js.undefined)
+    def setOriginalCombineValuesStepName(value: String): Self = StObject.set(x, "originalCombineValuesStepName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideInputsVarargs(value: SideInputInfo*): Self = this.set("sideInputs", js.Array(value :_*))
+    def setOriginalCombineValuesStepNameUndefined: Self = StObject.set(x, "originalCombineValuesStepName", js.undefined)
     
     @scala.inline
-    def setSideInputs(value: js.Array[SideInputInfo]): Self = this.set("sideInputs", value.asInstanceOf[js.Any])
+    def setSideInputs(value: js.Array[SideInputInfo]): Self = StObject.set(x, "sideInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSideInputs: Self = this.set("sideInputs", js.undefined)
+    def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
+    
+    @scala.inline
+    def setSideInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
     
     @scala.inline
     def setValueCombiningFn(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.PartialGroupByKeyInstruction with TopLevel[js.Any]
-    ): Self = this.set("valueCombiningFn", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "valueCombiningFn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValueCombiningFn: Self = this.set("valueCombiningFn", js.undefined)
+    def setValueCombiningFnUndefined: Self = StObject.set(x, "valueCombiningFn", js.undefined)
   }
 }

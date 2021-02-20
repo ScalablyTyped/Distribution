@@ -2,252 +2,637 @@ package typings.akuminaCore.mod.Digispace
 
 import typings.akuminaCore.mod.IConstants
 import typings.jquery.JQueryDeferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Digispace.ConfigurationContext")
 @js.native
-class ConfigurationContext () extends js.Object
-/* static members */
-@JSImport("akumina-core", "Digispace.ConfigurationContext")
-@js.native
-object ConfigurationContext extends js.Object {
+class ConfigurationContext () extends StObject
+object ConfigurationContext {
+  
+  @JSImport("akumina-core", "Digispace.ConfigurationContext")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Currently Active languages {LanguageID, ID, FallBack, Name, Code, etc...} */
-  var ActiveLanguages: js.Array[_] = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.ActiveLanguages")
+  @js.native
+  def ActiveLanguages: js.Array[js.Any] = js.native
+  @scala.inline
+  def ActiveLanguages_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ActiveLanguages")(x.asInstanceOf[js.Any])
   
-  var AkTokenDuration: Double = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.AkTokenDuration")
+  @js.native
+  def AkTokenDuration: Double = js.native
+  @scala.inline
+  def AkTokenDuration_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AkTokenDuration")(x.asInstanceOf[js.Any])
   
-  var AppManagerLoggedInTime: js.Any = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.AppManagerLoggedInTime")
+  @js.native
+  def AppManagerLoggedInTime: js.Any = js.native
+  @scala.inline
+  def AppManagerLoggedInTime_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AppManagerLoggedInTime")(x.asInstanceOf[js.Any])
   
-  var ApplicationInsightsKey: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.ApplicationInsightsKey")
+  @js.native
+  def ApplicationInsightsKey: String = js.native
+  @scala.inline
+  def ApplicationInsightsKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplicationInsightsKey")(x.asInstanceOf[js.Any])
   
   /** All confguratoin constants */
-  var CONSTANTS: IConstants = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.CONSTANTS")
+  @js.native
+  def CONSTANTS: IConstants = js.native
+  @scala.inline
+  def CONSTANTS_=(x: IConstants): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONSTANTS")(x.asInstanceOf[js.Any])
   
   /** Caching strategy time */
-  var CachingStrategyInterval: Double = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.CachingStrategyInterval")
+  @js.native
+  def CachingStrategyInterval: Double = js.native
+  @scala.inline
+  def CachingStrategyInterval_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CachingStrategyInterval")(x.asInstanceOf[js.Any])
   
   /** Site URL  */
-  var ConfigurationSiteUrl: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.ConfigurationSiteUrl")
+  @js.native
+  def ConfigurationSiteUrl: String = js.native
+  @scala.inline
+  def ConfigurationSiteUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConfigurationSiteUrl")(x.asInstanceOf[js.Any])
   
   /** All container layouts objects */
-  var ContainerLayouts: js.Array[_] = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.ContainerLayouts")
+  @js.native
+  def ContainerLayouts: js.Array[js.Any] = js.native
+  @scala.inline
+  def ContainerLayouts_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContainerLayouts")(x.asInstanceOf[js.Any])
   
-  var DashboardEnableEditMode: Boolean = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.DashboardEnableEditMode")
+  @js.native
+  def DashboardEnableEditMode: Boolean = js.native
+  @scala.inline
+  def DashboardEnableEditMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DashboardEnableEditMode")(x.asInstanceOf[js.Any])
   
-  var DashboardGridHeight: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.DashboardGridHeight")
+  @js.native
+  def DashboardGridHeight: String = js.native
+  @scala.inline
+  def DashboardGridHeight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DashboardGridHeight")(x.asInstanceOf[js.Any])
   
-  var DashboardGridWidth: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.DashboardGridWidth")
+  @js.native
+  def DashboardGridWidth: String = js.native
+  @scala.inline
+  def DashboardGridWidth_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DashboardGridWidth")(x.asInstanceOf[js.Any])
   
   /** Dashboard Instance Site URL */
-  var DashboardInstanceSiteUrl: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.DashboardInstanceSiteUrl")
+  @js.native
+  def DashboardInstanceSiteUrl: String = js.native
+  @scala.inline
+  def DashboardInstanceSiteUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DashboardInstanceSiteUrl")(x.asInstanceOf[js.Any])
   
-  var DashboardView: js.Array[String] = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.DashboardView")
+  @js.native
+  def DashboardView: js.Array[String] = js.native
+  @scala.inline
+  def DashboardView_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DashboardView")(x.asInstanceOf[js.Any])
   
-  var DashboardWidgetDefaultSize: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.DashboardWidgetDefaultSize")
+  @js.native
+  def DashboardWidgetDefaultSize: String = js.native
+  @scala.inline
+  def DashboardWidgetDefaultSize_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DashboardWidgetDefaultSize")(x.asInstanceOf[js.Any])
   
-  var DashboardZoneIds: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.DashboardZoneIds")
+  @js.native
+  def DashboardZoneIds: String = js.native
+  @scala.inline
+  def DashboardZoneIds_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DashboardZoneIds")(x.asInstanceOf[js.Any])
   
-  var DefaultLanguage: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.DefaultLanguage")
+  @js.native
+  def DefaultLanguage: String = js.native
+  @scala.inline
+  def DefaultLanguage_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultLanguage")(x.asInstanceOf[js.Any])
   
   /** Associative Array of objects */
-  var DepartmentSiteMap: js.Array[_] = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.DepartmentSiteMap")
+  @js.native
+  def DepartmentSiteMap: js.Array[js.Any] = js.native
+  @scala.inline
+  def DepartmentSiteMap_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DepartmentSiteMap")(x.asInstanceOf[js.Any])
   
-   /* Added */ /** Is site using AzureAD ID */
-  var EnableAzureAD: Boolean = js.native
+  /* Added */
+  /** Is site using AzureAD ID */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.EnableAzureAD")
+  @js.native
+  def EnableAzureAD: Boolean = js.native
+  @scala.inline
+  def EnableAzureAD_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EnableAzureAD")(x.asInstanceOf[js.Any])
   
   /** Is in Debug mode */
-  var EnableDebugMode: Boolean = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.EnableDebugMode")
+  @js.native
+  def EnableDebugMode: Boolean = js.native
+  @scala.inline
+  def EnableDebugMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EnableDebugMode")(x.asInstanceOf[js.Any])
   
-  var EnableReusableContent: Boolean = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.EnableReusableContent")
+  @js.native
+  def EnableReusableContent: Boolean = js.native
+  @scala.inline
+  def EnableReusableContent_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EnableReusableContent")(x.asInstanceOf[js.Any])
   
   /**
     * #MARK - It is comming as Undefined
     */
-  var ErrorRedirectUrl: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.ErrorRedirectUrl")
+  @js.native
+  def ErrorRedirectUrl: String = js.native
+  @scala.inline
+  def ErrorRedirectUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ErrorRedirectUrl")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.GetAdditionalLoaderConfigurations")
+  @js.native
   def GetAdditionalLoaderConfigurations(): Unit = js.native
   
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.GetDefaultLanguage")
+  @js.native
   def GetDefaultLanguage(): js.Any = js.native
   
   /**
     * Get site visible languages
     * @param languages
     */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.GetSiteVisibleLanguages")
+  @js.native
   def GetSiteVisibleLanguages(languages: js.Any): js.Any = js.native
   
-  var GoogleMapKey: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.GoogleMapKey")
+  @js.native
+  def GoogleMapKey: String = js.native
+  @scala.inline
+  def GoogleMapKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GoogleMapKey")(x.asInstanceOf[js.Any])
   
-  var GraphClientId: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.GraphClientId")
+  @js.native
+  def GraphClientId: String = js.native
+  @scala.inline
+  def GraphClientId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GraphClientId")(x.asInstanceOf[js.Any])
   
-  var GraphRedirectUrl: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.GraphRedirectUrl")
+  @js.native
+  def GraphRedirectUrl: String = js.native
+  @scala.inline
+  def GraphRedirectUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GraphRedirectUrl")(x.asInstanceOf[js.Any])
   
-  var GraphSubscriptionId: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.GraphSubscriptionId")
+  @js.native
+  def GraphSubscriptionId: String = js.native
+  @scala.inline
+  def GraphSubscriptionId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GraphSubscriptionId")(x.asInstanceOf[js.Any])
   
-  var GroupTagsExtension: js.Any = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.GroupTagsExtension")
+  @js.native
+  def GroupTagsExtension: js.Any = js.native
+  @scala.inline
+  def GroupTagsExtension_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupTagsExtension")(x.asInstanceOf[js.Any])
   
-  var GroupTypeExtension: js.Any = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.GroupTypeExtension")
+  @js.native
+  def GroupTypeExtension: js.Any = js.native
+  @scala.inline
+  def GroupTypeExtension_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupTypeExtension")(x.asInstanceOf[js.Any])
   
-  var InstanceRowLimit: Double = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.InstanceRowLimit")
+  @js.native
+  def InstanceRowLimit: Double = js.native
+  @scala.inline
+  def InstanceRowLimit_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstanceRowLimit")(x.asInstanceOf[js.Any])
   
   /** Loing URL for login to interchange */
-  var InterchangeLoginURL: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.InterchangeLoginURL")
+  @js.native
+  def InterchangeLoginURL: String = js.native
+  @scala.inline
+  def InterchangeLoginURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InterchangeLoginURL")(x.asInstanceOf[js.Any])
   
-  var InterchangeQueryKey: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.InterchangeQueryKey")
+  @js.native
+  def InterchangeQueryKey: String = js.native
+  @scala.inline
+  def InterchangeQueryKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InterchangeQueryKey")(x.asInstanceOf[js.Any])
   
   /** URL to Interchange */
-  var InterchangeURL: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.InterchangeURL")
+  @js.native
+  def InterchangeURL: String = js.native
+  @scala.inline
+  def InterchangeURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InterchangeURL")(x.asInstanceOf[js.Any])
   
   /** Internal widget dependency map */
-  var InternalWidgetDependencyMap: js.Array[_] = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.InternalWidgetDependencyMap")
+  @js.native
+  def InternalWidgetDependencyMap: js.Array[js.Any] = js.native
+  @scala.inline
+  def InternalWidgetDependencyMap_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InternalWidgetDependencyMap")(x.asInstanceOf[js.Any])
   
   /** Instance Ids for widgets */
-  var InternalWidgetInstanceIds: js.Any = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.InternalWidgetInstanceIds")
+  @js.native
+  def InternalWidgetInstanceIds: js.Any = js.native
+  @scala.inline
+  def InternalWidgetInstanceIds_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InternalWidgetInstanceIds")(x.asInstanceOf[js.Any])
   
   /** Is user loggied into app manager */
-  var IsAppManagerLoggedIn: Boolean = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.IsAppManagerLoggedIn")
+  @js.native
+  def IsAppManagerLoggedIn: Boolean = js.native
+  @scala.inline
+  def IsAppManagerLoggedIn_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsAppManagerLoggedIn")(x.asInstanceOf[js.Any])
   
   /** Is Site multilingual  */
-  var IsMultiLingualEnabled: Boolean = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.IsMultiLingualEnabled")
+  @js.native
+  def IsMultiLingualEnabled: Boolean = js.native
+  @scala.inline
+  def IsMultiLingualEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsMultiLingualEnabled")(x.asInstanceOf[js.Any])
   
-  var IsNotFoundPage: Boolean = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.IsNotFoundPage")
+  @js.native
+  def IsNotFoundPage: Boolean = js.native
+  @scala.inline
+  def IsNotFoundPage_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsNotFoundPage")(x.asInstanceOf[js.Any])
   
   /** Is workspace is enabled or not */
-  var IsWorkspacesEnabled: Boolean = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.IsWorkspacesEnabled")
+  @js.native
+  def IsWorkspacesEnabled: Boolean = js.native
+  @scala.inline
+  def IsWorkspacesEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsWorkspacesEnabled")(x.asInstanceOf[js.Any])
   
   /** Language neutral Listsname  */
-  var LanguageNeutralLists: js.Any = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.LanguageNeutralLists")
+  @js.native
+  def LanguageNeutralLists: js.Any = js.native
+  @scala.inline
+  def LanguageNeutralLists_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LanguageNeutralLists")(x.asInstanceOf[js.Any])
   
   /**
     * Load Active Languages
     * @param activeLanguages
     */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.LoadActiveLanguages")
+  @js.native
   def LoadActiveLanguages(activeLanguages: js.Any): Unit = js.native
   
   /** HTML template for Loading */
-  var LoadingTemplateHtml: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.LoadingTemplateHtml")
+  @js.native
+  def LoadingTemplateHtml: String = js.native
+  @scala.inline
+  def LoadingTemplateHtml_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoadingTemplateHtml")(x.asInstanceOf[js.Any])
   
   /**
     * Map department objects to associative array
     * @param sitedepartments
     * @returns Associative array.
     */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.MapDepartmentSites")
+  @js.native
   def MapDepartmentSites(sitedepartments: js.Any): js.Array[_] = js.native
   
-  var NotFoundPage: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.NotFoundPage")
+  @js.native
+  def NotFoundPage: String = js.native
+  @scala.inline
+  def NotFoundPage_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotFoundPage")(x.asInstanceOf[js.Any])
   
-  var PageBuilderDefaultLayoutId: Double = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.PageBuilderDefaultLayoutId")
+  @js.native
+  def PageBuilderDefaultLayoutId: Double = js.native
+  @scala.inline
+  def PageBuilderDefaultLayoutId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageBuilderDefaultLayoutId")(x.asInstanceOf[js.Any])
   
   /** All premade page layout objects */
-  var PageLayouts: js.Array[_] = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.PageLayouts")
+  @js.native
+  def PageLayouts: js.Array[js.Any] = js.native
+  @scala.inline
+  def PageLayouts_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageLayouts")(x.asInstanceOf[js.Any])
   
-  var PageRouteInfo: js.Any = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.PageRouteInfo")
+  @js.native
+  def PageRouteInfo: js.Any = js.native
+  @scala.inline
+  def PageRouteInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageRouteInfo")(x.asInstanceOf[js.Any])
   
   /** Contains Array of pageTypes object */
-  var PageTypes: js.Array[_] = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.PageTypes")
+  @js.native
+  def PageTypes: js.Array[js.Any] = js.native
+  @scala.inline
+  def PageTypes_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageTypes")(x.asInstanceOf[js.Any])
   
-  var PageWidgetDefaultSize: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.PageWidgetDefaultSize")
+  @js.native
+  def PageWidgetDefaultSize: String = js.native
+  @scala.inline
+  def PageWidgetDefaultSize_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageWidgetDefaultSize")(x.asInstanceOf[js.Any])
   
   /** SP Lists with persona enabled */
-  var PersonaEnabledLists: js.Any = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.PersonaEnabledLists")
+  @js.native
+  def PersonaEnabledLists: js.Any = js.native
+  @scala.inline
+  def PersonaEnabledLists_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PersonaEnabledLists")(x.asInstanceOf[js.Any])
   
-  var PersonaSelectionMode: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.PersonaSelectionMode")
+  @js.native
+  def PersonaSelectionMode: String = js.native
+  @scala.inline
+  def PersonaSelectionMode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PersonaSelectionMode")(x.asInstanceOf[js.Any])
   
-   /* Added */ /** All personas */
-  var Personas: js.Array[_] = js.native
+  /* Added */
+  /** All personas */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.Personas")
+  @js.native
+  def Personas: js.Array[js.Any] = js.native
+  @scala.inline
+  def Personas_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Personas")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.PopulateTemplateURLPrefix")
+  @js.native
   def PopulateTemplateURLPrefix(): Unit = js.native
   
-  var RemoteListSiteUrl: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.RemoteListSiteUrl")
+  @js.native
+  def RemoteListSiteUrl: String = js.native
+  @scala.inline
+  def RemoteListSiteUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RemoteListSiteUrl")(x.asInstanceOf[js.Any])
   
   /**
     * Returns currect caching strategy
     * @param cachingStrategy
     */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.ResolveCachingStrategy")
+  @js.native
   def ResolveCachingStrategy(cachingStrategy: js.Any): Double = js.native
   
-  var ReusableContentList: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.ReusableContentList")
+  @js.native
+  def ReusableContentList: String = js.native
+  @scala.inline
+  def ReusableContentList_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReusableContentList")(x.asInstanceOf[js.Any])
   
   /** Time to wait for script loading */
-  var ScriptTimeout: Double = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.ScriptTimeout")
+  @js.native
+  def ScriptTimeout: Double = js.native
+  @scala.inline
+  def ScriptTimeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScriptTimeout")(x.asInstanceOf[js.Any])
   
   /** Pages to be excluded in search */
-  var SearchPageExclusionList: js.Array[String] = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.SearchPageExclusionList")
+  @js.native
+  def SearchPageExclusionList: js.Array[String] = js.native
+  @scala.inline
+  def SearchPageExclusionList_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SearchPageExclusionList")(x.asInstanceOf[js.Any])
   
   /**
     * Set default language
     * @param defaultLanguage
     */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.SetDefaultLanguage")
+  @js.native
   def SetDefaultLanguage(defaultLanguage: js.Any): Unit = js.native
   
   /**
     * Set Site visible Languages.
     * @param languages
     */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.SetSiteVisibleLanguages")
+  @js.native
   def SetSiteVisibleLanguages(languages: js.Any): js.Any = js.native
   
   /** settings object */
-  var Settings: js.Any = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.Settings")
+  @js.native
+  def Settings: js.Any = js.native
+  @scala.inline
+  def Settings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Settings")(x.asInstanceOf[js.Any])
   
-  var SiteImageObj: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.SiteImageObj")
+  @js.native
+  def SiteImageObj: String = js.native
+  @scala.inline
+  def SiteImageObj_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SiteImageObj")(x.asInstanceOf[js.Any])
   
   /** JSON string */
-  var SiteLogoObj: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.SiteLogoObj")
+  @js.native
+  def SiteLogoObj: String = js.native
+  @scala.inline
+  def SiteLogoObj_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SiteLogoObj")(x.asInstanceOf[js.Any])
   
-  var SiteVisibleLanguages: js.Any = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.SiteVisibleLanguages")
+  @js.native
+  def SiteVisibleLanguages: js.Any = js.native
+  @scala.inline
+  def SiteVisibleLanguages_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SiteVisibleLanguages")(x.asInstanceOf[js.Any])
   
-  var SkypeApiKey: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.SkypeApiKey")
+  @js.native
+  def SkypeApiKey: String = js.native
   
-  var SkypeApiKeyCC: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.SkypeApiKeyCC")
+  @js.native
+  def SkypeApiKeyCC: String = js.native
+  @scala.inline
+  def SkypeApiKeyCC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SkypeApiKeyCC")(x.asInstanceOf[js.Any])
   
-  var TemplateCoreFolderName: String = js.native
+  @scala.inline
+  def SkypeApiKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SkypeApiKey")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.TemplateCoreFolderName")
+  @js.native
+  def TemplateCoreFolderName: String = js.native
+  @scala.inline
+  def TemplateCoreFolderName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TemplateCoreFolderName")(x.asInstanceOf[js.Any])
   
   /** Template Folder name */
-  var TemplateFolderName: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.TemplateFolderName")
+  @js.native
+  def TemplateFolderName: String = js.native
+  @scala.inline
+  def TemplateFolderName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TemplateFolderName")(x.asInstanceOf[js.Any])
   
-  var TemplateURLPrefix: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.TemplateURLPrefix")
+  @js.native
+  def TemplateURLPrefix: String = js.native
+  @scala.inline
+  def TemplateURLPrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TemplateURLPrefix")(x.asInstanceOf[js.Any])
   
-  var TenantUrl: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.TenantUrl")
+  @js.native
+  def TenantUrl: String = js.native
+  @scala.inline
+  def TenantUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TenantUrl")(x.asInstanceOf[js.Any])
   
   /** Current Theme */
-  var Theme: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.Theme")
+  @js.native
+  def Theme: String = js.native
+  @scala.inline
+  def Theme_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Theme")(x.asInstanceOf[js.Any])
   
-  var UseEncryption: Boolean = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.UseEncryption")
+  @js.native
+  def UseEncryption: Boolean = js.native
+  @scala.inline
+  def UseEncryption_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UseEncryption")(x.asInstanceOf[js.Any])
   
-  var WidgetDependencyMap: js.Array[_] = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.WidgetDependencyMap")
+  @js.native
+  def WidgetDependencyMap: js.Array[js.Any] = js.native
+  @scala.inline
+  def WidgetDependencyMap_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WidgetDependencyMap")(x.asInstanceOf[js.Any])
   
   /** Widget Instance URL */
-  var WidgetInstanceSiteUrl: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.WidgetInstanceSiteUrl")
+  @js.native
+  def WidgetInstanceSiteUrl: String = js.native
+  @scala.inline
+  def WidgetInstanceSiteUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WidgetInstanceSiteUrl")(x.asInstanceOf[js.Any])
   
-  var WorkspaceThemesAvailable: js.Array[String] = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.WorkspaceThemesAvailable")
+  @js.native
+  def WorkspaceThemesAvailable: js.Array[String] = js.native
+  @scala.inline
+  def WorkspaceThemesAvailable_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkspaceThemesAvailable")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.clearCache")
+  @js.native
   def clearCache(): Unit = js.native
   
   /**
     * GetCacheKey
     * @param attribute
     */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.getCacheKey")
+  @js.native
   def getCacheKey(attribute: String): String = js.native
   
   /**
     * Get Language Neutral cache key
     * @param key
     */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.getCacheKeyLanguageNeutral")
+  @js.native
   def getCacheKeyLanguageNeutral(key: String): String = js.native
   
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.loadDigispaceConfiguration")
+  @js.native
   def loadDigispaceConfiguration(): JQueryDeferred[_] = js.native
   
   /**
     * @param isLoggedIn
     * @param loggedInTime
     */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.setAppManagerLogin")
+  @js.native
   def setAppManagerLogin(isLoggedIn: Boolean, loggedInTime: js.Any): Unit = js.native
   
   /**
     * Set configuration from digispace object passed.
     * @param digispaceConfiguration
     */
+  /* static member */
+  @JSImport("akumina-core", "Digispace.ConfigurationContext.setDigispaceConfiguration")
+  @js.native
   def setDigispaceConfiguration(digispaceConfiguration: js.Any): Unit = js.native
 }

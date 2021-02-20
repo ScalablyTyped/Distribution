@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientPrivateca.anon.Callback
 import typings.maximMazurokGapiClientPrivateca.anon.Fields
 import typings.maximMazurokGapiClientPrivateca.anon.Key
 import typings.maximMazurokGapiClientPrivateca.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateRevocationListsResource extends js.Object {
+trait CertificateRevocationListsResource extends StObject {
   
   /** Returns a CertificateRevocationList. */
   def get(): Request[CertificateRevocationList] = js.native

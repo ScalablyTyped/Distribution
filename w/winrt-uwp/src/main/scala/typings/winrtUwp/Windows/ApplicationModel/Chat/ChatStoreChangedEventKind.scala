@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatStoreChangedEventKind extends js.Object
+sealed trait ChatStoreChangedEventKind extends StObject
 /** Specifies the type of change that occurred for a ChatMessageStoreChanged event. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatStoreChangedEventKind")
 @js.native
-object ChatStoreChangedEventKind extends js.Object {
+object ChatStoreChangedEventKind extends StObject {
   
   /** A chat conversation has been deleted */
   @js.native

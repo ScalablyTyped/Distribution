@@ -3,6 +3,7 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.auto
 import typings.reactNative.reactNativeStrings.center
 import typings.reactNative.reactNativeStrings.fill
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,54 +56,42 @@ object TabBarIOSProps {
   }
   
   @scala.inline
-  implicit class TabBarIOSPropsOps[Self <: TabBarIOSProps] (val x: Self) extends AnyVal {
+  implicit class TabBarIOSPropsMutableBuilder[Self <: TabBarIOSProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarTintColor(value: ColorValue): Self = StObject.set(x, "barTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarTintColorUndefined: Self = StObject.set(x, "barTintColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemPositioning(value: fill | center | auto): Self = StObject.set(x, "itemPositioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarTintColor(value: ColorValue): Self = this.set("barTintColor", value.asInstanceOf[js.Any])
+    def setItemPositioningUndefined: Self = StObject.set(x, "itemPositioning", js.undefined)
     
     @scala.inline
-    def deleteBarTintColor: Self = this.set("barTintColor", js.undefined)
+    def setTintColor(value: ColorValue): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemPositioning(value: fill | center | auto): Self = this.set("itemPositioning", value.asInstanceOf[js.Any])
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def deleteItemPositioning: Self = this.set("itemPositioning", js.undefined)
+    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: ColorValue): Self = this.set("tintColor", value.asInstanceOf[js.Any])
+    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
     
     @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    def setUnselectedItemTintColor(value: ColorValue): Self = StObject.set(x, "unselectedItemTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslucent(value: Boolean): Self = this.set("translucent", value.asInstanceOf[js.Any])
+    def setUnselectedItemTintColorUndefined: Self = StObject.set(x, "unselectedItemTintColor", js.undefined)
     
     @scala.inline
-    def deleteTranslucent: Self = this.set("translucent", js.undefined)
+    def setUnselectedTintColor(value: ColorValue): Self = StObject.set(x, "unselectedTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnselectedItemTintColor(value: ColorValue): Self = this.set("unselectedItemTintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnselectedItemTintColor: Self = this.set("unselectedItemTintColor", js.undefined)
-    
-    @scala.inline
-    def setUnselectedTintColor(value: ColorValue): Self = this.set("unselectedTintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnselectedTintColor: Self = this.set("unselectedTintColor", js.undefined)
+    def setUnselectedTintColorUndefined: Self = StObject.set(x, "unselectedTintColor", js.undefined)
   }
 }

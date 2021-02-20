@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Pre-compiled SQL statement.
   */
 @js.native
-trait SqliteStatement extends js.Object {
+trait SqliteStatement extends StObject {
   
   def bindBlob(index: Double, bytes: String): Unit = js.native
   def bindBlob(index: Double, bytes: js.Array[Double]): Unit = js.native

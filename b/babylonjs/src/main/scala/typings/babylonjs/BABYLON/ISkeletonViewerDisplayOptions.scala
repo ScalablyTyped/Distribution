@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISkeletonViewerDisplayOptions extends js.Object {
+trait ISkeletonViewerDisplayOptions extends StObject {
   
   /** Length of each local axis */
   var localAxesSize: js.UndefOr[Double] = js.native
@@ -40,66 +41,54 @@ object ISkeletonViewerDisplayOptions {
   }
   
   @scala.inline
-  implicit class ISkeletonViewerDisplayOptionsOps[Self <: ISkeletonViewerDisplayOptions] (val x: Self) extends AnyVal {
+  implicit class ISkeletonViewerDisplayOptionsMutableBuilder[Self <: ISkeletonViewerDisplayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalAxesSize(value: Double): Self = StObject.set(x, "localAxesSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalAxesSizeUndefined: Self = StObject.set(x, "localAxesSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMidStep(value: Double): Self = StObject.set(x, "midStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAxesSize(value: Double): Self = this.set("localAxesSize", value.asInstanceOf[js.Any])
+    def setMidStepFactor(value: Double): Self = StObject.set(x, "midStepFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocalAxesSize: Self = this.set("localAxesSize", js.undefined)
+    def setMidStepFactorUndefined: Self = StObject.set(x, "midStepFactor", js.undefined)
     
     @scala.inline
-    def setMidStep(value: Double): Self = this.set("midStep", value.asInstanceOf[js.Any])
+    def setMidStepUndefined: Self = StObject.set(x, "midStep", js.undefined)
     
     @scala.inline
-    def deleteMidStep: Self = this.set("midStep", js.undefined)
+    def setShowLocalAxes(value: Boolean): Self = StObject.set(x, "showLocalAxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMidStepFactor(value: Double): Self = this.set("midStepFactor", value.asInstanceOf[js.Any])
+    def setShowLocalAxesUndefined: Self = StObject.set(x, "showLocalAxes", js.undefined)
     
     @scala.inline
-    def deleteMidStepFactor: Self = this.set("midStepFactor", js.undefined)
+    def setSphereBaseSize(value: Double): Self = StObject.set(x, "sphereBaseSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLocalAxes(value: Boolean): Self = this.set("showLocalAxes", value.asInstanceOf[js.Any])
+    def setSphereBaseSizeUndefined: Self = StObject.set(x, "sphereBaseSize", js.undefined)
     
     @scala.inline
-    def deleteShowLocalAxes: Self = this.set("showLocalAxes", js.undefined)
+    def setSphereFactor(value: Double): Self = StObject.set(x, "sphereFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSphereBaseSize(value: Double): Self = this.set("sphereBaseSize", value.asInstanceOf[js.Any])
+    def setSphereFactorUndefined: Self = StObject.set(x, "sphereFactor", js.undefined)
     
     @scala.inline
-    def deleteSphereBaseSize: Self = this.set("sphereBaseSize", js.undefined)
+    def setSphereScaleUnit(value: Double): Self = StObject.set(x, "sphereScaleUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSphereFactor(value: Double): Self = this.set("sphereFactor", value.asInstanceOf[js.Any])
+    def setSphereScaleUnitUndefined: Self = StObject.set(x, "sphereScaleUnit", js.undefined)
     
     @scala.inline
-    def deleteSphereFactor: Self = this.set("sphereFactor", js.undefined)
+    def setSpurFollowsChild(value: Boolean): Self = StObject.set(x, "spurFollowsChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSphereScaleUnit(value: Double): Self = this.set("sphereScaleUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSphereScaleUnit: Self = this.set("sphereScaleUnit", js.undefined)
-    
-    @scala.inline
-    def setSpurFollowsChild(value: Boolean): Self = this.set("spurFollowsChild", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpurFollowsChild: Self = this.set("spurFollowsChild", js.undefined)
+    def setSpurFollowsChildUndefined: Self = StObject.set(x, "spurFollowsChild", js.undefined)
   }
 }

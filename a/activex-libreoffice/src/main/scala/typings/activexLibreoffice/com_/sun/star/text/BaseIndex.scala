@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.style.GraphicLocation
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -158,90 +159,78 @@ object BaseIndex {
   }
   
   @scala.inline
-  implicit class BaseIndexOps[Self <: BaseIndex] (val x: Self) extends AnyVal {
+  implicit class BaseIndexMutableBuilder[Self <: BaseIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackGraphicFilter(value: String): Self = StObject.set(x, "BackGraphicFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackGraphicLocation(value: GraphicLocation): Self = StObject.set(x, "BackGraphicLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: Color): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setBackGraphicURL(value: String): Self = StObject.set(x, "BackGraphicURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicFilter(value: String): Self = this.set("BackGraphicFilter", value.asInstanceOf[js.Any])
+    def setBackTransparent(value: Boolean): Self = StObject.set(x, "BackTransparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicLocation(value: GraphicLocation): Self = this.set("BackGraphicLocation", value.asInstanceOf[js.Any])
+    def setContentSection(value: XTextSection): Self = StObject.set(x, "ContentSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicURL(value: String): Self = this.set("BackGraphicURL", value.asInstanceOf[js.Any])
+    def setCreateFromChapter(value: Boolean): Self = StObject.set(x, "CreateFromChapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackTransparent(value: Boolean): Self = this.set("BackTransparent", value.asInstanceOf[js.Any])
+    def setHeaderSection(value: XTextSection): Self = StObject.set(x, "HeaderSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentSection(value: XTextSection): Self = this.set("ContentSection", value.asInstanceOf[js.Any])
+    def setIsProtected(value: Boolean): Self = StObject.set(x, "IsProtected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFromChapter(value: Boolean): Self = this.set("CreateFromChapter", value.asInstanceOf[js.Any])
+    def setLevelFormat(value: XIndexReplace): Self = StObject.set(x, "LevelFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderSection(value: XTextSection): Self = this.set("HeaderSection", value.asInstanceOf[js.Any])
+    def setParaStyleHeading(value: String): Self = StObject.set(x, "ParaStyleHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsProtected(value: Boolean): Self = this.set("IsProtected", value.asInstanceOf[js.Any])
+    def setParaStyleLevel1(value: String): Self = StObject.set(x, "ParaStyleLevel1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelFormat(value: XIndexReplace): Self = this.set("LevelFormat", value.asInstanceOf[js.Any])
+    def setParaStyleLevel10(value: String): Self = StObject.set(x, "ParaStyleLevel10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleHeading(value: String): Self = this.set("ParaStyleHeading", value.asInstanceOf[js.Any])
+    def setParaStyleLevel2(value: String): Self = StObject.set(x, "ParaStyleLevel2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleLevel1(value: String): Self = this.set("ParaStyleLevel1", value.asInstanceOf[js.Any])
+    def setParaStyleLevel3(value: String): Self = StObject.set(x, "ParaStyleLevel3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleLevel10(value: String): Self = this.set("ParaStyleLevel10", value.asInstanceOf[js.Any])
+    def setParaStyleLevel4(value: String): Self = StObject.set(x, "ParaStyleLevel4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleLevel2(value: String): Self = this.set("ParaStyleLevel2", value.asInstanceOf[js.Any])
+    def setParaStyleLevel5(value: String): Self = StObject.set(x, "ParaStyleLevel5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleLevel3(value: String): Self = this.set("ParaStyleLevel3", value.asInstanceOf[js.Any])
+    def setParaStyleLevel6(value: String): Self = StObject.set(x, "ParaStyleLevel6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleLevel4(value: String): Self = this.set("ParaStyleLevel4", value.asInstanceOf[js.Any])
+    def setParaStyleLevel7(value: String): Self = StObject.set(x, "ParaStyleLevel7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleLevel5(value: String): Self = this.set("ParaStyleLevel5", value.asInstanceOf[js.Any])
+    def setParaStyleLevel8(value: String): Self = StObject.set(x, "ParaStyleLevel8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleLevel6(value: String): Self = this.set("ParaStyleLevel6", value.asInstanceOf[js.Any])
+    def setParaStyleLevel9(value: String): Self = StObject.set(x, "ParaStyleLevel9", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleLevel7(value: String): Self = this.set("ParaStyleLevel7", value.asInstanceOf[js.Any])
+    def setParaStyleSeparator(value: String): Self = StObject.set(x, "ParaStyleSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleLevel8(value: String): Self = this.set("ParaStyleLevel8", value.asInstanceOf[js.Any])
+    def setTextColumns(value: XTextColumns): Self = StObject.set(x, "TextColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaStyleLevel9(value: String): Self = this.set("ParaStyleLevel9", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParaStyleSeparator(value: String): Self = this.set("ParaStyleSeparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextColumns(value: XTextColumns): Self = this.set("TextColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

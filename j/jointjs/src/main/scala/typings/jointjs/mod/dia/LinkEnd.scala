@@ -1,5 +1,6 @@
 package typings.jointjs.mod.dia
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jointjs.jointjsStrings.source
   - typings.jointjs.jointjsStrings.target
 */
-trait LinkEnd extends js.Object
+trait LinkEnd extends StObject
 object LinkEnd {
   
   @scala.inline

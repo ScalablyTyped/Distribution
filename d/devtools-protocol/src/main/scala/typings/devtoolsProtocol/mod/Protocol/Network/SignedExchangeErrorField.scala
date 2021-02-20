@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.signatureValidityUrl
   - typings.devtoolsProtocol.devtoolsProtocolStrings.signatureTimestamps
 */
-trait SignedExchangeErrorField extends js.Object
+trait SignedExchangeErrorField extends StObject
 object SignedExchangeErrorField {
   
   @scala.inline

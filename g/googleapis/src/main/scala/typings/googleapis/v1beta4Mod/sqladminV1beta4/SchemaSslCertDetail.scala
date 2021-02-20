@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SslCertDetail.
   */
 @js.native
-trait SchemaSslCertDetail extends js.Object {
+trait SchemaSslCertDetail extends StObject {
   
   /**
     * The public information about the cert.
@@ -30,30 +31,18 @@ object SchemaSslCertDetail {
   }
   
   @scala.inline
-  implicit class SchemaSslCertDetailOps[Self <: SchemaSslCertDetail] (val x: Self) extends AnyVal {
+  implicit class SchemaSslCertDetailMutableBuilder[Self <: SchemaSslCertDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertInfo(value: SchemaSslCert): Self = StObject.set(x, "certInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertInfoUndefined: Self = StObject.set(x, "certInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertPrivateKey(value: String): Self = StObject.set(x, "certPrivateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertInfo(value: SchemaSslCert): Self = this.set("certInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertInfo: Self = this.set("certInfo", js.undefined)
-    
-    @scala.inline
-    def setCertPrivateKey(value: String): Self = this.set("certPrivateKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertPrivateKey: Self = this.set("certPrivateKey", js.undefined)
+    def setCertPrivateKeyUndefined: Self = StObject.set(x, "certPrivateKey", js.undefined)
   }
 }

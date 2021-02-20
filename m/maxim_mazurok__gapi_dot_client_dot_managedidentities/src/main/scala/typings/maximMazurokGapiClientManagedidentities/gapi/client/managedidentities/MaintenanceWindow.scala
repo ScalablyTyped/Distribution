@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedidentities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintenanceWindow extends js.Object {
+trait MaintenanceWindow extends StObject {
   
   /** Daily cycle. */
   var dailyCycle: js.UndefOr[DailyCycle] = js.native
@@ -22,30 +23,18 @@ object MaintenanceWindow {
   }
   
   @scala.inline
-  implicit class MaintenanceWindowOps[Self <: MaintenanceWindow] (val x: Self) extends AnyVal {
+  implicit class MaintenanceWindowMutableBuilder[Self <: MaintenanceWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDailyCycle(value: DailyCycle): Self = StObject.set(x, "dailyCycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDailyCycleUndefined: Self = StObject.set(x, "dailyCycle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWeeklyCycle(value: WeeklyCycle): Self = StObject.set(x, "weeklyCycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyCycle(value: DailyCycle): Self = this.set("dailyCycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDailyCycle: Self = this.set("dailyCycle", js.undefined)
-    
-    @scala.inline
-    def setWeeklyCycle(value: WeeklyCycle): Self = this.set("weeklyCycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeeklyCycle: Self = this.set("weeklyCycle", js.undefined)
+    def setWeeklyCycleUndefined: Self = StObject.set(x, "weeklyCycle", js.undefined)
   }
 }

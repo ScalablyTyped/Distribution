@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.chart.series
 
 import typings.senchaTouch.Ext.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,114 +96,102 @@ object IPie {
   }
   
   @scala.inline
-  implicit class IPieOps[Self <: IPie] (val x: Self) extends AnyVal {
+  implicit class IPieMutableBuilder[Self <: IPie] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllows(value: Double): Self = StObject.set(x, "Allows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowsUndefined: Self = StObject.set(x, "Allows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDonut(value: js.Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllows(value: Double): Self = this.set("Allows", value.asInstanceOf[js.Any])
+    def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
     
     @scala.inline
-    def deleteAllows: Self = this.set("Allows", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDonut(value: js.Any): Self = this.set("donut", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteDonut: Self = this.set("donut", js.undefined)
+    def setGetDonut(value: () => _): Self = StObject.set(x, "getDonut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setGetDonutUndefined: Self = StObject.set(x, "getDonut", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setGetItemForAngle(value: /* angle */ js.UndefOr[Double] => _): Self = StObject.set(x, "getItemForAngle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDonut(value: () => _): Self = this.set("getDonut", js.Any.fromFunction0(value))
+    def setGetItemForAngleUndefined: Self = StObject.set(x, "getItemForAngle", js.undefined)
     
     @scala.inline
-    def deleteGetDonut: Self = this.set("getDonut", js.undefined)
+    def setGetItemForPoint(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetItemForAngle(value: /* angle */ js.UndefOr[Double] => _): Self = this.set("getItemForAngle", js.Any.fromFunction1(value))
+    def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)
     
     @scala.inline
-    def deleteGetItemForAngle: Self = this.set("getItemForAngle", js.undefined)
+    def setGetLabelField(value: () => String): Self = StObject.set(x, "getLabelField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemForPoint(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => _): Self = this.set("getItemForPoint", js.Any.fromFunction2(value))
+    def setGetLabelFieldUndefined: Self = StObject.set(x, "getLabelField", js.undefined)
     
     @scala.inline
-    def deleteGetItemForPoint: Self = this.set("getItemForPoint", js.undefined)
+    def setGetTotalAngle(value: () => Double): Self = StObject.set(x, "getTotalAngle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelField(value: () => String): Self = this.set("getLabelField", js.Any.fromFunction0(value))
+    def setGetTotalAngleUndefined: Self = StObject.set(x, "getTotalAngle", js.undefined)
     
     @scala.inline
-    def deleteGetLabelField: Self = this.set("getLabelField", js.undefined)
+    def setHidden(value: Array): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTotalAngle(value: () => Double): Self = this.set("getTotalAngle", js.Any.fromFunction0(value))
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteGetTotalAngle: Self = this.set("getTotalAngle", js.undefined)
+    def setLabelField(value: String): Self = StObject.set(x, "labelField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Array): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setLabelFieldUndefined: Self = StObject.set(x, "labelField", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setProvideLegendInfo(value: /* target */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "provideLegendInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabelField(value: String): Self = this.set("labelField", value.asInstanceOf[js.Any])
+    def setProvideLegendInfoUndefined: Self = StObject.set(x, "provideLegendInfo", js.undefined)
     
     @scala.inline
-    def deleteLabelField: Self = this.set("labelField", js.undefined)
+    def setSetDonut(value: /* donut */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDonut", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProvideLegendInfo(value: /* target */ js.UndefOr[js.Any] => Unit): Self = this.set("provideLegendInfo", js.Any.fromFunction1(value))
+    def setSetDonutUndefined: Self = StObject.set(x, "setDonut", js.undefined)
     
     @scala.inline
-    def deleteProvideLegendInfo: Self = this.set("provideLegendInfo", js.undefined)
+    def setSetHidden(value: /* hidden */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDonut(value: /* donut */ js.UndefOr[js.Any] => Unit): Self = this.set("setDonut", js.Any.fromFunction1(value))
+    def setSetHiddenUndefined: Self = StObject.set(x, "setHidden", js.undefined)
     
     @scala.inline
-    def deleteSetDonut: Self = this.set("setDonut", js.undefined)
+    def setSetLabelField(value: /* labelField */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setLabelField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHidden(value: /* hidden */ js.UndefOr[Array] => Unit): Self = this.set("setHidden", js.Any.fromFunction1(value))
+    def setSetLabelFieldUndefined: Self = StObject.set(x, "setLabelField", js.undefined)
     
     @scala.inline
-    def deleteSetHidden: Self = this.set("setHidden", js.undefined)
+    def setSetTotalAngle(value: /* totalAngle */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTotalAngle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLabelField(value: /* labelField */ js.UndefOr[String] => Unit): Self = this.set("setLabelField", js.Any.fromFunction1(value))
+    def setSetTotalAngleUndefined: Self = StObject.set(x, "setTotalAngle", js.undefined)
     
     @scala.inline
-    def deleteSetLabelField: Self = this.set("setLabelField", js.undefined)
+    def setTotalAngle(value: Double): Self = StObject.set(x, "totalAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTotalAngle(value: /* totalAngle */ js.UndefOr[Double] => Unit): Self = this.set("setTotalAngle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetTotalAngle: Self = this.set("setTotalAngle", js.undefined)
-    
-    @scala.inline
-    def setTotalAngle(value: Double): Self = this.set("totalAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalAngle: Self = this.set("totalAngle", js.undefined)
+    def setTotalAngleUndefined: Self = StObject.set(x, "totalAngle", js.undefined)
   }
 }

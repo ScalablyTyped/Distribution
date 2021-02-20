@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Description of which voice to use for speech synthesis.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2VoiceSelectionParams extends js.Object {
+trait SchemaGoogleCloudDialogflowV2VoiceSelectionParams extends StObject {
   
   /**
     * Optional. The name of the voice. If not set, the service will choose a
@@ -35,30 +36,18 @@ object SchemaGoogleCloudDialogflowV2VoiceSelectionParams {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2VoiceSelectionParamsOps[Self <: SchemaGoogleCloudDialogflowV2VoiceSelectionParams] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2VoiceSelectionParamsMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2VoiceSelectionParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSsmlGender(value: String): Self = StObject.set(x, "ssmlGender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSsmlGender(value: String): Self = this.set("ssmlGender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsmlGender: Self = this.set("ssmlGender", js.undefined)
+    def setSsmlGenderUndefined: Self = StObject.set(x, "ssmlGender", js.undefined)
   }
 }

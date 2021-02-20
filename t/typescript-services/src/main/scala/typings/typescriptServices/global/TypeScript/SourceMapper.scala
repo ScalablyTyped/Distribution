@@ -1,5 +1,6 @@
 package typings.typescriptServices.global.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +18,16 @@ class SourceMapper protected ()
     resolvePath: js.Function1[/* path */ String, String]
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.SourceMapper")
-@js.native
-object SourceMapper extends js.Object {
+object SourceMapper {
   
-  var MapFileExtension: String = js.native
+  @JSGlobal("TypeScript.SourceMapper")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("TypeScript.SourceMapper.MapFileExtension")
+  @js.native
+  def MapFileExtension: String = js.native
+  @scala.inline
+  def MapFileExtension_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MapFileExtension")(x.asInstanceOf[js.Any])
 }

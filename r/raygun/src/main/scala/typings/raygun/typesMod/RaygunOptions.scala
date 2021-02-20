@@ -1,12 +1,13 @@
 package typings.raygun.typesMod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaygunOptions extends js.Object {
+trait RaygunOptions extends StObject {
   
   var apiKey: String = js.native
   
@@ -49,121 +50,109 @@ object RaygunOptions {
   }
   
   @scala.inline
-  implicit class RaygunOptionsOps[Self <: RaygunOptions] (val x: Self) extends AnyVal {
+  implicit class RaygunOptionsMutableBuilder[Self <: RaygunOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchFrequency(value: Double): Self = StObject.set(x, "batchFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKey(value: String): Self = this.set("apiKey", value.asInstanceOf[js.Any])
+    def setBatchFrequencyUndefined: Self = StObject.set(x, "batchFrequency", js.undefined)
     
     @scala.inline
-    def setBatch(value: Boolean): Self = this.set("batch", value.asInstanceOf[js.Any])
+    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     @scala.inline
-    def deleteBatch: Self = this.set("batch", js.undefined)
+    def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchFrequency(value: Double): Self = this.set("batchFrequency", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteBatchFrequency: Self = this.set("batchFrequency", js.undefined)
-    
-    @scala.inline
-    def setFiltersVarargs(value: String*): Self = this.set("filters", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilters(value: js.Array[String]): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
     def setGroupingKey(
       value: (/* message */ Message, /* exception */ Error | String, /* customData */ CustomData, /* request */ js.UndefOr[RequestParams], /* tags */ js.UndefOr[js.Array[Tag]]) => String
-    ): Self = this.set("groupingKey", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "groupingKey", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteGroupingKey: Self = this.set("groupingKey", js.undefined)
+    def setGroupingKeyUndefined: Self = StObject.set(x, "groupingKey", js.undefined)
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setInnerErrorFieldName(value: String): Self = this.set("innerErrorFieldName", value.asInstanceOf[js.Any])
+    def setInnerErrorFieldName(value: String): Self = StObject.set(x, "innerErrorFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInnerErrorFieldName: Self = this.set("innerErrorFieldName", js.undefined)
+    def setInnerErrorFieldNameUndefined: Self = StObject.set(x, "innerErrorFieldName", js.undefined)
     
     @scala.inline
-    def setIsOffline(value: Boolean): Self = this.set("isOffline", value.asInstanceOf[js.Any])
+    def setIsOffline(value: Boolean): Self = StObject.set(x, "isOffline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsOffline: Self = this.set("isOffline", js.undefined)
+    def setIsOfflineUndefined: Self = StObject.set(x, "isOffline", js.undefined)
     
     @scala.inline
-    def setOfflineStorage(value: IOfflineStorage): Self = this.set("offlineStorage", value.asInstanceOf[js.Any])
+    def setOfflineStorage(value: IOfflineStorage): Self = StObject.set(x, "offlineStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOfflineStorage: Self = this.set("offlineStorage", js.undefined)
+    def setOfflineStorageOptions(value: OfflineStorageOptions): Self = StObject.set(x, "offlineStorageOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfflineStorageOptions(value: OfflineStorageOptions): Self = this.set("offlineStorageOptions", value.asInstanceOf[js.Any])
+    def setOfflineStorageOptionsUndefined: Self = StObject.set(x, "offlineStorageOptions", js.undefined)
     
     @scala.inline
-    def deleteOfflineStorageOptions: Self = this.set("offlineStorageOptions", js.undefined)
+    def setOfflineStorageUndefined: Self = StObject.set(x, "offlineStorage", js.undefined)
     
     @scala.inline
     def setOnBeforeSend(
       value: (/* message */ Message, /* exception */ Error | String, /* customData */ CustomData, /* request */ js.UndefOr[RequestParams], /* tags */ js.UndefOr[js.Array[Tag]]) => Message
-    ): Self = this.set("onBeforeSend", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "onBeforeSend", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteOnBeforeSend: Self = this.set("onBeforeSend", js.undefined)
+    def setOnBeforeSendUndefined: Self = StObject.set(x, "onBeforeSend", js.undefined)
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setReportColumnNumbers(value: Boolean): Self = this.set("reportColumnNumbers", value.asInstanceOf[js.Any])
+    def setReportColumnNumbers(value: Boolean): Self = StObject.set(x, "reportColumnNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReportColumnNumbers: Self = this.set("reportColumnNumbers", js.undefined)
+    def setReportColumnNumbersUndefined: Self = StObject.set(x, "reportColumnNumbers", js.undefined)
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[Tag]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setUseHumanStringForObject(value: Boolean): Self = this.set("useHumanStringForObject", value.asInstanceOf[js.Any])
+    def setUseHumanStringForObject(value: Boolean): Self = StObject.set(x, "useHumanStringForObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseHumanStringForObject: Self = this.set("useHumanStringForObject", js.undefined)
+    def setUseHumanStringForObjectUndefined: Self = StObject.set(x, "useHumanStringForObject", js.undefined)
     
     @scala.inline
-    def setUseSSL(value: Boolean): Self = this.set("useSSL", value.asInstanceOf[js.Any])
+    def setUseSSL(value: Boolean): Self = StObject.set(x, "useSSL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseSSL: Self = this.set("useSSL", js.undefined)
+    def setUseSSLUndefined: Self = StObject.set(x, "useSSL", js.undefined)
   }
 }

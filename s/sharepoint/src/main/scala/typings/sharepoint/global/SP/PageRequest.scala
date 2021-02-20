@@ -1,5 +1,6 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PageRequest ()
   extends typings.sharepoint.SP.PageRequest
-/* static members */
-@JSGlobal("SP.PageRequest")
-@js.native
-object PageRequest extends js.Object {
+object PageRequest {
   
+  /* static member */
+  @JSGlobal("SP.PageRequest.doGet")
+  @js.native
   def doGet(
     url: String,
     expectedContentType: String,
@@ -28,6 +29,9 @@ object PageRequest extends js.Object {
     ]
   ): Unit = js.native
   
+  /* static member */
+  @JSGlobal("SP.PageRequest.doPost")
+  @js.native
   def doPost(
     url: String,
     body: String,

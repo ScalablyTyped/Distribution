@@ -1,11 +1,12 @@
 package typings.jsGraphAlgorithms.JsGraphs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KruskalMST extends js.Object {
+trait KruskalMST extends StObject {
   
   var mst: js.Array[Edge] = js.native
 }
@@ -18,24 +19,12 @@ object KruskalMST {
   }
   
   @scala.inline
-  implicit class KruskalMSTOps[Self <: KruskalMST] (val x: Self) extends AnyVal {
+  implicit class KruskalMSTMutableBuilder[Self <: KruskalMST] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMst(value: js.Array[Edge]): Self = StObject.set(x, "mst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMstVarargs(value: Edge*): Self = this.set("mst", js.Array(value :_*))
-    
-    @scala.inline
-    def setMst(value: js.Array[Edge]): Self = this.set("mst", value.asInstanceOf[js.Any])
+    def setMstVarargs(value: Edge*): Self = StObject.set(x, "mst", js.Array(value :_*))
   }
 }

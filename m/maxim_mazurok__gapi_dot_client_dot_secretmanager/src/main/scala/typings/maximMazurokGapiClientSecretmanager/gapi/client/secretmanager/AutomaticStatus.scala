@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutomaticStatus extends js.Object {
+trait AutomaticStatus extends StObject {
   
   /** Output only. The customer-managed encryption status of the SecretVersion. Only populated if customer-managed encryption is used. */
   var customerManagedEncryption: js.UndefOr[CustomerManagedEncryptionStatus] = js.native
@@ -19,24 +20,12 @@ object AutomaticStatus {
   }
   
   @scala.inline
-  implicit class AutomaticStatusOps[Self <: AutomaticStatus] (val x: Self) extends AnyVal {
+  implicit class AutomaticStatusMutableBuilder[Self <: AutomaticStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerManagedEncryption(value: CustomerManagedEncryptionStatus): Self = StObject.set(x, "customerManagedEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomerManagedEncryption(value: CustomerManagedEncryptionStatus): Self = this.set("customerManagedEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerManagedEncryption: Self = this.set("customerManagedEncryption", js.undefined)
+    def setCustomerManagedEncryptionUndefined: Self = StObject.set(x, "customerManagedEncryption", js.undefined)
   }
 }

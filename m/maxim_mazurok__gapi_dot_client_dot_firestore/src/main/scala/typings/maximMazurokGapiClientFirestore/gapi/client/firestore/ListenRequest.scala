@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListenRequest extends js.Object {
+trait ListenRequest extends StObject {
   
   /** A target to add to this stream. */
   var addTarget: js.UndefOr[Target] = js.native
@@ -30,40 +31,28 @@ object ListenRequest {
   }
   
   @scala.inline
-  implicit class ListenRequestOps[Self <: ListenRequest] (val x: Self) extends AnyVal {
+  implicit class ListenRequestMutableBuilder[Self <: ListenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTarget(value: Target): Self = StObject.set(x, "addTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddTarget(value: Target): Self = this.set("addTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddTarget: Self = this.set("addTarget", js.undefined)
+    def setAddTargetUndefined: Self = StObject.set(x, "addTarget", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.ListenRequest with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setRemoveTarget(value: Double): Self = this.set("removeTarget", value.asInstanceOf[js.Any])
+    def setRemoveTarget(value: Double): Self = StObject.set(x, "removeTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemoveTarget: Self = this.set("removeTarget", js.undefined)
+    def setRemoveTargetUndefined: Self = StObject.set(x, "removeTarget", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.independent
 import typings.vegaTypings.vegaTypingsStrings.isocontour
 import typings.vegaTypings.vegaTypingsStrings.shared
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,90 +44,78 @@ object IsocontourTransform {
   }
   
   @scala.inline
-  implicit class IsocontourTransformOps[Self <: IsocontourTransform] (val x: Self) extends AnyVal {
+  implicit class IsocontourTransformMutableBuilder[Self <: IsocontourTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsNull: Self = StObject.set(x, "as", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def setType(value: isocontour): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setField(value: String | TransformField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: String | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setLevels(value: Double | SignalRef): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsNull: Self = this.set("as", null)
+    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
     @scala.inline
-    def setField(value: String | TransformField): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setNice(value: Boolean | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
     
     @scala.inline
-    def setLevels(value: Double | SignalRef): Self = this.set("levels", value.asInstanceOf[js.Any])
+    def setResolve(value: shared | independent | SignalRef): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLevels: Self = this.set("levels", js.undefined)
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
     @scala.inline
-    def setNice(value: Boolean | SignalRef): Self = this.set("nice", value.asInstanceOf[js.Any])
+    def setScale(value: Double | TransformField): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNice: Self = this.set("nice", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def setResolve(value: shared | independent | SignalRef): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    def setSmooth(value: Boolean | SignalRef): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
+    def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
     
     @scala.inline
-    def setScale(value: Double | TransformField): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setThresholds(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
     
     @scala.inline
-    def setSmooth(value: Boolean | SignalRef): Self = this.set("smooth", value.asInstanceOf[js.Any])
+    def setThresholdsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
     
     @scala.inline
-    def deleteSmooth: Self = this.set("smooth", js.undefined)
+    def setTranslate(value: js.Array[Double] | TransformField): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThresholdsVarargs(value: (Double | SignalRef)*): Self = this.set("thresholds", js.Array(value :_*))
+    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
     @scala.inline
-    def setThresholds(value: (js.Array[Double | SignalRef]) | SignalRef): Self = this.set("thresholds", value.asInstanceOf[js.Any])
+    def setTranslateVarargs(value: Double*): Self = StObject.set(x, "translate", js.Array(value :_*))
     
     @scala.inline
-    def deleteThresholds: Self = this.set("thresholds", js.undefined)
+    def setType(value: isocontour): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslateVarargs(value: Double*): Self = this.set("translate", js.Array(value :_*))
+    def setZero(value: Boolean | SignalRef): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslate(value: js.Array[Double] | TransformField): Self = this.set("translate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslate: Self = this.set("translate", js.undefined)
-    
-    @scala.inline
-    def setZero(value: Boolean | SignalRef): Self = this.set("zero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZero: Self = this.set("zero", js.undefined)
+    def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
   }
 }

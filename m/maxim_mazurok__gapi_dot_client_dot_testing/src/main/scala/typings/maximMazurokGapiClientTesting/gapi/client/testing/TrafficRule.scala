@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrafficRule extends js.Object {
+trait TrafficRule extends StObject {
   
   /** Bandwidth in kbits/second. */
   var bandwidth: js.UndefOr[Double] = js.native
@@ -31,48 +32,36 @@ object TrafficRule {
   }
   
   @scala.inline
-  implicit class TrafficRuleOps[Self <: TrafficRule] (val x: Self) extends AnyVal {
+  implicit class TrafficRuleMutableBuilder[Self <: TrafficRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBurst(value: Double): Self = StObject.set(x, "burst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidth(value: Double): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    def setBurstUndefined: Self = StObject.set(x, "burst", js.undefined)
     
     @scala.inline
-    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBurst(value: Double): Self = this.set("burst", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteBurst: Self = this.set("burst", js.undefined)
+    def setPacketDuplicationRatio(value: Double): Self = StObject.set(x, "packetDuplicationRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: String): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setPacketDuplicationRatioUndefined: Self = StObject.set(x, "packetDuplicationRatio", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setPacketLossRatio(value: Double): Self = StObject.set(x, "packetLossRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacketDuplicationRatio(value: Double): Self = this.set("packetDuplicationRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacketDuplicationRatio: Self = this.set("packetDuplicationRatio", js.undefined)
-    
-    @scala.inline
-    def setPacketLossRatio(value: Double): Self = this.set("packetLossRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacketLossRatio: Self = this.set("packetLossRatio", js.undefined)
+    def setPacketLossRatioUndefined: Self = StObject.set(x, "packetLossRatio", js.undefined)
   }
 }

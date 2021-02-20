@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewPullToRefreshStyles extends js.Object {
+trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
   
   /**
     * 下拉刷新控件颜色
@@ -102,72 +103,60 @@ object PlusWebviewWebviewPullToRefreshStyles {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewPullToRefreshStylesOps[Self <: PlusWebviewWebviewPullToRefreshStyles] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewPullToRefreshStylesMutableBuilder[Self <: PlusWebviewWebviewPullToRefreshStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentdown(value: js.Any): Self = StObject.set(x, "contentdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setContentdownUndefined: Self = StObject.set(x, "contentdown", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setContentover(value: js.Any): Self = StObject.set(x, "contentover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentdown(value: js.Any): Self = this.set("contentdown", value.asInstanceOf[js.Any])
+    def setContentoverUndefined: Self = StObject.set(x, "contentover", js.undefined)
     
     @scala.inline
-    def deleteContentdown: Self = this.set("contentdown", js.undefined)
+    def setContentrefresh(value: js.Any): Self = StObject.set(x, "contentrefresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentover(value: js.Any): Self = this.set("contentover", value.asInstanceOf[js.Any])
+    def setContentrefreshUndefined: Self = StObject.set(x, "contentrefresh", js.undefined)
     
     @scala.inline
-    def deleteContentover: Self = this.set("contentover", js.undefined)
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentrefresh(value: js.Any): Self = this.set("contentrefresh", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteContentrefresh: Self = this.set("contentrefresh", js.undefined)
+    def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: String): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: String): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setSupport(value: Boolean): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setSupport(value: Boolean): Self = this.set("support", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupport: Self = this.set("support", js.undefined)
+    def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
   }
 }

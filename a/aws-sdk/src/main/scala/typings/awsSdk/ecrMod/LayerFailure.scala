@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerFailure extends js.Object {
+trait LayerFailure extends StObject {
   
   /**
     * The failure code associated with the failure.
@@ -31,36 +32,24 @@ object LayerFailure {
   }
   
   @scala.inline
-  implicit class LayerFailureOps[Self <: LayerFailure] (val x: Self) extends AnyVal {
+  implicit class LayerFailureMutableBuilder[Self <: LayerFailure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureCode(value: LayerFailureCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureReason(value: LayerFailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCode(value: LayerFailureCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    def setLayerDigest(value: BatchedOperationLayerDigest): Self = StObject.set(x, "layerDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: LayerFailureReason): Self = this.set("failureReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
-    
-    @scala.inline
-    def setLayerDigest(value: BatchedOperationLayerDigest): Self = this.set("layerDigest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayerDigest: Self = this.set("layerDigest", js.undefined)
+    def setLayerDigestUndefined: Self = StObject.set(x, "layerDigest", js.undefined)
   }
 }

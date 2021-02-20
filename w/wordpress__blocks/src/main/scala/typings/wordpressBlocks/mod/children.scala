@@ -4,13 +4,12 @@ import typings.react.mod.ReactChild
 import typings.std.ArrayLike
 import typings.std.Node
 import typings.std.ParentNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/blocks", "children")
-@js.native
-object children extends js.Object {
+object children {
   
   /**
     * Given two or more block nodes, returns a new block node representing a
@@ -18,6 +17,8 @@ object children extends js.Object {
     *
     * @param blockNodes - Block nodes to concatenate.
     */
+  @JSImport("@wordpress/blocks", "children.concat")
+  @js.native
   def concat(blockNodes: ReactChild*): js.Array[ReactChild] = js.native
   
   /**
@@ -26,6 +27,8 @@ object children extends js.Object {
     *
     * @param domNodes - list of DOM nodes to convert.
     */
+  @JSImport("@wordpress/blocks", "children.fromDOM")
+  @js.native
   def fromDOM(domNodes: ArrayLike[Node]): js.Array[ReactChild] = js.native
   
   /**
@@ -33,6 +36,8 @@ object children extends js.Object {
     *
     * @param children - Block children object to convert.
     */
+  @JSImport("@wordpress/blocks", "children.getChildrenArray")
+  @js.native
   def getChildrenArray(children: js.Array[ReactChild]): js.Array[ReactChild] = js.native
   
   /**
@@ -41,6 +46,8 @@ object children extends js.Object {
     *
     * @param selector - DOM selector.
     */
+  @JSImport("@wordpress/blocks", "children.matcher")
+  @js.native
   def matcher(selector: String): js.Function1[/* domNode */ Node with ParentNode, js.Array[ReactChild]] = js.native
   
   /**
@@ -48,5 +55,7 @@ object children extends js.Object {
     *
     * @param children - Block node(s) to convert to string.
     */
+  @JSImport("@wordpress/blocks", "children.toHTML")
+  @js.native
   def toHTML(children: js.Array[ReactChild]): String = js.native
 }

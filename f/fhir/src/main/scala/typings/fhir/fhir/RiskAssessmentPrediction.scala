@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,81 +75,69 @@ object RiskAssessmentPrediction {
   }
   
   @scala.inline
-  implicit class RiskAssessmentPredictionOps[Self <: RiskAssessmentPrediction] (val x: Self) extends AnyVal {
+  implicit class RiskAssessmentPredictionMutableBuilder[Self <: RiskAssessmentPrediction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutcome(value: CodeableConcept): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProbabilityDecimal(value: decimal): Self = StObject.set(x, "probabilityDecimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProbabilityDecimalUndefined: Self = StObject.set(x, "probabilityDecimal", js.undefined)
     
     @scala.inline
-    def setOutcome(value: CodeableConcept): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    def setProbabilityRange(value: Range): Self = StObject.set(x, "probabilityRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_probabilityDecimal(value: Element): Self = this.set("_probabilityDecimal", value.asInstanceOf[js.Any])
+    def setProbabilityRangeUndefined: Self = StObject.set(x, "probabilityRange", js.undefined)
     
     @scala.inline
-    def delete_probabilityDecimal: Self = this.set("_probabilityDecimal", js.undefined)
+    def setQualitativeRisk(value: CodeableConcept): Self = StObject.set(x, "qualitativeRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_rationale(value: Element): Self = this.set("_rationale", value.asInstanceOf[js.Any])
+    def setQualitativeRiskUndefined: Self = StObject.set(x, "qualitativeRisk", js.undefined)
     
     @scala.inline
-    def delete_rationale: Self = this.set("_rationale", js.undefined)
+    def setRationale(value: String): Self = StObject.set(x, "rationale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_relativeRisk(value: Element): Self = this.set("_relativeRisk", value.asInstanceOf[js.Any])
+    def setRationaleUndefined: Self = StObject.set(x, "rationale", js.undefined)
     
     @scala.inline
-    def delete_relativeRisk: Self = this.set("_relativeRisk", js.undefined)
+    def setRelativeRisk(value: decimal): Self = StObject.set(x, "relativeRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProbabilityDecimal(value: decimal): Self = this.set("probabilityDecimal", value.asInstanceOf[js.Any])
+    def setRelativeRiskUndefined: Self = StObject.set(x, "relativeRisk", js.undefined)
     
     @scala.inline
-    def deleteProbabilityDecimal: Self = this.set("probabilityDecimal", js.undefined)
+    def setWhenPeriod(value: Period): Self = StObject.set(x, "whenPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProbabilityRange(value: Range): Self = this.set("probabilityRange", value.asInstanceOf[js.Any])
+    def setWhenPeriodUndefined: Self = StObject.set(x, "whenPeriod", js.undefined)
     
     @scala.inline
-    def deleteProbabilityRange: Self = this.set("probabilityRange", js.undefined)
+    def setWhenRange(value: Range): Self = StObject.set(x, "whenRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualitativeRisk(value: CodeableConcept): Self = this.set("qualitativeRisk", value.asInstanceOf[js.Any])
+    def setWhenRangeUndefined: Self = StObject.set(x, "whenRange", js.undefined)
     
     @scala.inline
-    def deleteQualitativeRisk: Self = this.set("qualitativeRisk", js.undefined)
+    def set_probabilityDecimal(value: Element): Self = StObject.set(x, "_probabilityDecimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRationale(value: String): Self = this.set("rationale", value.asInstanceOf[js.Any])
+    def set_probabilityDecimalUndefined: Self = StObject.set(x, "_probabilityDecimal", js.undefined)
     
     @scala.inline
-    def deleteRationale: Self = this.set("rationale", js.undefined)
+    def set_rationale(value: Element): Self = StObject.set(x, "_rationale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeRisk(value: decimal): Self = this.set("relativeRisk", value.asInstanceOf[js.Any])
+    def set_rationaleUndefined: Self = StObject.set(x, "_rationale", js.undefined)
     
     @scala.inline
-    def deleteRelativeRisk: Self = this.set("relativeRisk", js.undefined)
+    def set_relativeRisk(value: Element): Self = StObject.set(x, "_relativeRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhenPeriod(value: Period): Self = this.set("whenPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhenPeriod: Self = this.set("whenPeriod", js.undefined)
-    
-    @scala.inline
-    def setWhenRange(value: Range): Self = this.set("whenRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhenRange: Self = this.set("whenRange", js.undefined)
+    def set_relativeRiskUndefined: Self = StObject.set(x, "_relativeRisk", js.undefined)
   }
 }

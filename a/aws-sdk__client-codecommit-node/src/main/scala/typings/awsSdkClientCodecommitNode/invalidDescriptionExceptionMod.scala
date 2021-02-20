@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/InvalidDescriptionException", JSImport.Namespace)
-@js.native
-object invalidDescriptionExceptionMod extends js.Object {
+object invalidDescriptionExceptionMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/InvalidDescriptionException", "InvalidDescriptionException")
+  @js.native
   val InvalidDescriptionException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

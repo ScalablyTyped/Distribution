@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlapTableViewResultCell extends js.Object {
+trait OlapTableViewResultCell extends StObject {
   
   /**
     * Returns the ordinal of this cell used to determine its position into the data cells' grid.
@@ -41,30 +42,18 @@ object OlapTableViewResultCell {
   }
   
   @scala.inline
-  implicit class OlapTableViewResultCellOps[Self <: OlapTableViewResultCell] (val x: Self) extends AnyVal {
+  implicit class OlapTableViewResultCellMutableBuilder[Self <: OlapTableViewResultCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellOrdinal(value: () => Double): Self = StObject.set(x, "cellOrdinal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormattedValue(value: () => String): Self = StObject.set(x, "formattedValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultCellIndex(value: () => Double): Self = StObject.set(x, "resultCellIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCellOrdinal(value: () => Double): Self = this.set("cellOrdinal", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFormattedValue(value: () => String): Self = this.set("formattedValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResultCellIndex(value: () => Double): Self = this.set("resultCellIndex", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValue(value: () => js.Object): Self = this.set("value", js.Any.fromFunction0(value))
+    def setValue(value: () => js.Object): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
   }
 }

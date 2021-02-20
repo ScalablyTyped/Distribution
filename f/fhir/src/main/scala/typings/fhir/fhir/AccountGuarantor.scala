@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,39 +40,27 @@ object AccountGuarantor {
   }
   
   @scala.inline
-  implicit class AccountGuarantorOps[Self <: AccountGuarantor] (val x: Self) extends AnyVal {
+  implicit class AccountGuarantorMutableBuilder[Self <: AccountGuarantor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnHold(value: Boolean): Self = StObject.set(x, "onHold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnHoldUndefined: Self = StObject.set(x, "onHold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParty(value: Reference): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParty(value: Reference): Self = this.set("party", value.asInstanceOf[js.Any])
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_onHold(value: Element): Self = this.set("_onHold", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def delete_onHold: Self = this.set("_onHold", js.undefined)
+    def set_onHold(value: Element): Self = StObject.set(x, "_onHold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHold(value: Boolean): Self = this.set("onHold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnHold: Self = this.set("onHold", js.undefined)
-    
-    @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def set_onHoldUndefined: Self = StObject.set(x, "_onHold", js.undefined)
   }
 }

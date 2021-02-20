@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GitRefUpdateStatus extends js.Object
+sealed trait GitRefUpdateStatus extends StObject
 @JSImport("vso-node-api/interfaces/GitInterfaces", "GitRefUpdateStatus")
 @js.native
-object GitRefUpdateStatus extends js.Object {
+object GitRefUpdateStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitRefUpdateStatus with Double] = js.native
@@ -19,126 +19,110 @@ object GitRefUpdateStatus extends js.Object {
     */
   @js.native
   sealed trait CreateBranchPermissionRequired extends GitRefUpdateStatus
-  /* 8 */ @js.native
-  object CreateBranchPermissionRequired extends TopLevel[CreateBranchPermissionRequired with Double]
+  /* 8 */ val CreateBranchPermissionRequired: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.CreateBranchPermissionRequired with Double = js.native
   
   /**
     * The ref update request could not be completed because the user lacks the permission to create a tag
     */
   @js.native
   sealed trait CreateTagPermissionRequired extends GitRefUpdateStatus
-  /* 9 */ @js.native
-  object CreateTagPermissionRequired extends TopLevel[CreateTagPermissionRequired with Double]
+  /* 9 */ val CreateTagPermissionRequired: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.CreateTagPermissionRequired with Double = js.native
   
   /**
     * Indicates that the ref update request could not be completed because part of the graph would be disconnected by this change, and the caller does not have ForcePush permission on the repository.
     */
   @js.native
   sealed trait ForcePushRequired extends GitRefUpdateStatus
-  /* 1 */ @js.native
-  object ForcePushRequired extends TopLevel[ForcePushRequired with Double]
+  /* 1 */ val ForcePushRequired: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.ForcePushRequired with Double = js.native
   
   /**
     * Indicates that the ref update request could not be completed because the ref name presented in the request was not valid.
     */
   @js.native
   sealed trait InvalidRefName extends GitRefUpdateStatus
-  /* 3 */ @js.native
-  object InvalidRefName extends TopLevel[InvalidRefName with Double]
+  /* 3 */ val InvalidRefName: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.InvalidRefName with Double = js.native
   
   /**
     * The ref update could not be completed because the ref is locked by another user.
     */
   @js.native
   sealed trait Locked extends GitRefUpdateStatus
-  /* 11 */ @js.native
-  object Locked extends TopLevel[Locked with Double]
+  /* 11 */ val Locked: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.Locked with Double = js.native
   
   /**
     * The ref update request could not be completed because the user lacks note creation permissions required to write this note
     */
   @js.native
   sealed trait ManageNotePermissionRequired extends GitRefUpdateStatus
-  /* 7 */ @js.native
-  object ManageNotePermissionRequired extends TopLevel[ManageNotePermissionRequired with Double]
+  /* 7 */ val ManageNotePermissionRequired: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.ManageNotePermissionRequired with Double = js.native
   
   /**
     * The ref update could not be completed because, in case-insensitive mode, the ref name conflicts with an existing, differently-cased ref name.
     */
   @js.native
   sealed trait RefNameConflict extends GitRefUpdateStatus
-  /* 12 */ @js.native
-  object RefNameConflict extends TopLevel[RefNameConflict with Double]
+  /* 12 */ val RefNameConflict: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.RefNameConflict with Double = js.native
   
   /**
     * The ref update could not be completed because it was rejected by the plugin.
     */
   @js.native
   sealed trait RejectedByPlugin extends GitRefUpdateStatus
-  /* 10 */ @js.native
-  object RejectedByPlugin extends TopLevel[RejectedByPlugin with Double]
+  /* 10 */ val RejectedByPlugin: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.RejectedByPlugin with Double = js.native
   
   /**
     * The ref update could not be completed because it was rejected by policy.
     */
   @js.native
   sealed trait RejectedByPolicy extends GitRefUpdateStatus
-  /* 13 */ @js.native
-  object RejectedByPolicy extends TopLevel[RejectedByPolicy with Double]
+  /* 13 */ val RejectedByPolicy: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.RejectedByPolicy with Double = js.native
   
   /**
     * Indicates that the ref update request could not be completed because the old object ID presented in the request was not the object ID of the ref when the database attempted the update. The most likely scenario is that the caller lost a race to update the ref.
     */
   @js.native
   sealed trait StaleOldObjectId extends GitRefUpdateStatus
-  /* 2 */ @js.native
-  object StaleOldObjectId extends TopLevel[StaleOldObjectId with Double]
+  /* 2 */ val StaleOldObjectId: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.StaleOldObjectId with Double = js.native
   
   /**
     * Indicates that the ref update request was completed successfully.
     */
   @js.native
   sealed trait Succeeded extends GitRefUpdateStatus
-  /* 0 */ @js.native
-  object Succeeded extends TopLevel[Succeeded with Double]
+  /* 0 */ val Succeeded: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.Succeeded with Double = js.native
   
   /**
     * Indicates that the ref update request was completed successfully, but the passed-in ref was corrupt - as in, the old object ID was bad.  This should only happen during deletes.
     */
   @js.native
   sealed trait SucceededCorruptRef extends GitRefUpdateStatus
-  /* 15 */ @js.native
-  object SucceededCorruptRef extends TopLevel[SucceededCorruptRef with Double]
+  /* 15 */ val SucceededCorruptRef: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.SucceededCorruptRef with Double = js.native
   
   /**
     * Indicates that the ref update request was completed successfully, but the ref doesn't actually exist so no changes were made.  This should only happen during deletes.
     */
   @js.native
   sealed trait SucceededNonExistentRef extends GitRefUpdateStatus
-  /* 14 */ @js.native
-  object SucceededNonExistentRef extends TopLevel[SucceededNonExistentRef with Double]
+  /* 14 */ val SucceededNonExistentRef: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.SucceededNonExistentRef with Double = js.native
   
   /**
     * The request was not processed
     */
   @js.native
   sealed trait Unprocessed extends GitRefUpdateStatus
-  /* 4 */ @js.native
-  object Unprocessed extends TopLevel[Unprocessed with Double]
+  /* 4 */ val Unprocessed: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.Unprocessed with Double = js.native
   
   /**
     * The ref update request could not be completed because the new object ID for the ref could not be resolved to a commit object (potentially through any number of tags)
     */
   @js.native
   sealed trait UnresolvableToCommit extends GitRefUpdateStatus
-  /* 5 */ @js.native
-  object UnresolvableToCommit extends TopLevel[UnresolvableToCommit with Double]
+  /* 5 */ val UnresolvableToCommit: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.UnresolvableToCommit with Double = js.native
   
   /**
     * The ref update request could not be completed because the user lacks write permissions required to write this ref
     */
   @js.native
   sealed trait WritePermissionRequired extends GitRefUpdateStatus
-  /* 6 */ @js.native
-  object WritePermissionRequired extends TopLevel[WritePermissionRequired with Double]
+  /* 6 */ val WritePermissionRequired: typings.vsoNodeApi.gitInterfacesMod.GitRefUpdateStatus.WritePermissionRequired with Double = js.native
 }

@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmsEncodedLength extends js.Object {
+trait SmsEncodedLength extends StObject {
   
   var byteCountLastSegment: Double = js.native
   
@@ -32,33 +33,21 @@ object SmsEncodedLength {
   }
   
   @scala.inline
-  implicit class SmsEncodedLengthOps[Self <: SmsEncodedLength] (val x: Self) extends AnyVal {
+  implicit class SmsEncodedLengthMutableBuilder[Self <: SmsEncodedLength] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByteCountLastSegment(value: Double): Self = StObject.set(x, "byteCountLastSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesPerSegment(value: Double): Self = StObject.set(x, "bytesPerSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharacterCountLastSegment(value: Double): Self = StObject.set(x, "characterCountLastSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByteCountLastSegment(value: Double): Self = this.set("byteCountLastSegment", value.asInstanceOf[js.Any])
+    def setCharactersPerSegment(value: Double): Self = StObject.set(x, "charactersPerSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesPerSegment(value: Double): Self = this.set("bytesPerSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCharacterCountLastSegment(value: Double): Self = this.set("characterCountLastSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCharactersPerSegment(value: Double): Self = this.set("charactersPerSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSegmentCount(value: Double): Self = this.set("segmentCount", value.asInstanceOf[js.Any])
+    def setSegmentCount(value: Double): Self = StObject.set(x, "segmentCount", value.asInstanceOf[js.Any])
   }
 }

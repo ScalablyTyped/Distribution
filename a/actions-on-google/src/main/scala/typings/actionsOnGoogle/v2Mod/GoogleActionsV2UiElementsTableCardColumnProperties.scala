@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2UiElementsTableCardColumnProperties extends js.Object {
+trait GoogleActionsV2UiElementsTableCardColumnProperties extends StObject {
   
   /**
     * Header text for the column.
@@ -27,30 +28,18 @@ object GoogleActionsV2UiElementsTableCardColumnProperties {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2UiElementsTableCardColumnPropertiesOps[Self <: GoogleActionsV2UiElementsTableCardColumnProperties] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2UiElementsTableCardColumnPropertiesMutableBuilder[Self <: GoogleActionsV2UiElementsTableCardColumnProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHorizontalAlignment(value: GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
-    
-    @scala.inline
-    def setHorizontalAlignment(value: GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
   }
 }

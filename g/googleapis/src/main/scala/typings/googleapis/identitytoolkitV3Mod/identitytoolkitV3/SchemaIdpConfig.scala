@@ -1,5 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Template for a single idp configuration.
   */
 @js.native
-trait SchemaIdpConfig extends js.Object {
+trait SchemaIdpConfig extends StObject {
   
   /**
     * OAuth2 client ID.
@@ -50,57 +51,45 @@ object SchemaIdpConfig {
   }
   
   @scala.inline
-  implicit class SchemaIdpConfigOps[Self <: SchemaIdpConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaIdpConfigMutableBuilder[Self <: SchemaIdpConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setExperimentPercent(value: Double): Self = StObject.set(x, "experimentPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setExperimentPercentUndefined: Self = StObject.set(x, "experimentPercent", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimentPercent(value: Double): Self = this.set("experimentPercent", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deleteExperimentPercent: Self = this.set("experimentPercent", js.undefined)
+    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setWhitelistedAudiences(value: js.Array[String]): Self = StObject.set(x, "whitelistedAudiences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecret(value: String): Self = this.set("secret", value.asInstanceOf[js.Any])
+    def setWhitelistedAudiencesUndefined: Self = StObject.set(x, "whitelistedAudiences", js.undefined)
     
     @scala.inline
-    def deleteSecret: Self = this.set("secret", js.undefined)
-    
-    @scala.inline
-    def setWhitelistedAudiencesVarargs(value: String*): Self = this.set("whitelistedAudiences", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhitelistedAudiences(value: js.Array[String]): Self = this.set("whitelistedAudiences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelistedAudiences: Self = this.set("whitelistedAudiences", js.undefined)
+    def setWhitelistedAudiencesVarargs(value: String*): Self = StObject.set(x, "whitelistedAudiences", js.Array(value :_*))
   }
 }

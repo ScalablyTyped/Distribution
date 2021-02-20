@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,47 +92,35 @@ object XFont {
   }
   
   @scala.inline
-  implicit class XFontOps[Self <: XFont] (val x: Self) extends AnyVal {
+  implicit class XFontMutableBuilder[Self <: XFont] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontMetric(value: SimpleFontMetric): Self = StObject.set(x, "FontMetric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCharWidth(value: String => Double): Self = StObject.set(x, "getCharWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontDescriptor(value: FontDescriptor): Self = this.set("FontDescriptor", value.asInstanceOf[js.Any])
+    def setGetCharWidths(value: (String, String) => SafeArray[Double]): Self = StObject.set(x, "getCharWidths", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFontMetric(value: SimpleFontMetric): Self = this.set("FontMetric", value.asInstanceOf[js.Any])
+    def setGetFontDescriptor(value: () => FontDescriptor): Self = StObject.set(x, "getFontDescriptor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCharWidth(value: String => Double): Self = this.set("getCharWidth", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetCharWidths(value: (String, String) => SafeArray[Double]): Self = this.set("getCharWidths", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetFontDescriptor(value: () => FontDescriptor): Self = this.set("getFontDescriptor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFontMetric(value: () => SimpleFontMetric): Self = this.set("getFontMetric", js.Any.fromFunction0(value))
+    def setGetFontMetric(value: () => SimpleFontMetric): Self = StObject.set(x, "getFontMetric", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetKernPairs(
       value: (js.Array[SeqEquiv[String]], js.Array[SeqEquiv[String]], js.Array[SeqEquiv[Double]]) => Unit
-    ): Self = this.set("getKernPairs", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "getKernPairs", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetStringWidth(value: String => Double): Self = this.set("getStringWidth", js.Any.fromFunction1(value))
+    def setGetStringWidth(value: String => Double): Self = StObject.set(x, "getStringWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStringWidthArray(value: (String, js.Array[SeqEquiv[Double]]) => Double): Self = this.set("getStringWidthArray", js.Any.fromFunction2(value))
+    def setGetStringWidthArray(value: (String, js.Array[SeqEquiv[Double]]) => Double): Self = StObject.set(x, "getStringWidthArray", js.Any.fromFunction2(value))
   }
 }

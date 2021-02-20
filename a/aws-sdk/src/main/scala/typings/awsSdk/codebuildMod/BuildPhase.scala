@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildPhase extends js.Object {
+trait BuildPhase extends StObject {
   
   /**
     * Additional information about a build phase, especially to help troubleshoot a failed build.
@@ -46,57 +47,45 @@ object BuildPhase {
   }
   
   @scala.inline
-  implicit class BuildPhaseOps[Self <: BuildPhase] (val x: Self) extends AnyVal {
+  implicit class BuildPhaseMutableBuilder[Self <: BuildPhase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContexts(value: PhaseContexts): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextsVarargs(value: PhaseContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
     @scala.inline
-    def setContextsVarargs(value: PhaseContext*): Self = this.set("contexts", js.Array(value :_*))
+    def setDurationInSeconds(value: WrapperLong): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContexts(value: PhaseContexts): Self = this.set("contexts", value.asInstanceOf[js.Any])
+    def setDurationInSecondsUndefined: Self = StObject.set(x, "durationInSeconds", js.undefined)
     
     @scala.inline
-    def deleteContexts: Self = this.set("contexts", js.undefined)
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationInSeconds(value: WrapperLong): Self = this.set("durationInSeconds", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteDurationInSeconds: Self = this.set("durationInSeconds", js.undefined)
+    def setPhaseStatus(value: StatusType): Self = StObject.set(x, "phaseStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setPhaseStatusUndefined: Self = StObject.set(x, "phaseStatus", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setPhaseType(value: BuildPhaseType): Self = StObject.set(x, "phaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhaseStatus(value: StatusType): Self = this.set("phaseStatus", value.asInstanceOf[js.Any])
+    def setPhaseTypeUndefined: Self = StObject.set(x, "phaseType", js.undefined)
     
     @scala.inline
-    def deletePhaseStatus: Self = this.set("phaseStatus", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhaseType(value: BuildPhaseType): Self = this.set("phaseType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhaseType: Self = this.set("phaseType", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

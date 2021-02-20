@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.anon
 
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.GetCredentialRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.GetCredentialResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnTypeGetCredentialResponse extends js.Object {
+trait ReturnTypeGetCredentialResponse extends StObject {
   
   var paramsType: js.Array[GetCredentialRequest] = js.native
   
@@ -22,27 +23,15 @@ object ReturnTypeGetCredentialResponse {
   }
   
   @scala.inline
-  implicit class ReturnTypeGetCredentialResponseOps[Self <: ReturnTypeGetCredentialResponse] (val x: Self) extends AnyVal {
+  implicit class ReturnTypeGetCredentialResponseMutableBuilder[Self <: ReturnTypeGetCredentialResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamsType(value: js.Array[GetCredentialRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamsTypeVarargs(value: GetCredentialRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParamsTypeVarargs(value: GetCredentialRequest*): Self = this.set("paramsType", js.Array(value :_*))
-    
-    @scala.inline
-    def setParamsType(value: js.Array[GetCredentialRequest]): Self = this.set("paramsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnType(value: GetCredentialResponse): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setReturnType(value: GetCredentialResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

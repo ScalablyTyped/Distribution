@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Metadata for online images.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage extends js.Object {
+trait SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage extends StObject {
   
   /**
     * (Deprecated) Overall relevancy score for the image.
@@ -29,30 +30,18 @@ object SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImageOps[Self <: SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImageMutableBuilder[Self <: SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

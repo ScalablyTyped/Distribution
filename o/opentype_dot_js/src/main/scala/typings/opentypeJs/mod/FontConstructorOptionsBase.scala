@@ -1,11 +1,12 @@
 package typings.opentypeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontConstructorOptionsBase extends js.Object {
+trait FontConstructorOptionsBase extends StObject {
   
   var ascender: Double = js.native
   
@@ -26,33 +27,21 @@ object FontConstructorOptionsBase {
   }
   
   @scala.inline
-  implicit class FontConstructorOptionsBaseOps[Self <: FontConstructorOptionsBase] (val x: Self) extends AnyVal {
+  implicit class FontConstructorOptionsBaseMutableBuilder[Self <: FontConstructorOptionsBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescender(value: Double): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscender(value: Double): Self = this.set("ascender", value.asInstanceOf[js.Any])
+    def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescender(value: Double): Self = this.set("descender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleName(value: String): Self = this.set("styleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnitsPerEm(value: Double): Self = this.set("unitsPerEm", value.asInstanceOf[js.Any])
+    def setUnitsPerEm(value: Double): Self = StObject.set(x, "unitsPerEm", value.asInstanceOf[js.Any])
   }
 }

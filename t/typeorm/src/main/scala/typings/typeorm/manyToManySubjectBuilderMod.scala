@@ -3,16 +3,16 @@ package typings.typeorm
 import typings.typeorm.objectLiteralMod.ObjectLiteral
 import typings.typeorm.relationMetadataMod.RelationMetadata
 import typings.typeorm.subjectMod.Subject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/persistence/subject-builder/ManyToManySubjectBuilder", JSImport.Namespace)
-@js.native
-object manyToManySubjectBuilderMod extends js.Object {
+object manyToManySubjectBuilderMod {
   
+  @JSImport("typeorm/browser/persistence/subject-builder/ManyToManySubjectBuilder", "ManyToManySubjectBuilder")
   @js.native
-  class ManyToManySubjectBuilder protected () extends js.Object {
+  class ManyToManySubjectBuilder protected () extends StObject {
     def this(subjects: js.Array[Subject]) = this()
     
     /**

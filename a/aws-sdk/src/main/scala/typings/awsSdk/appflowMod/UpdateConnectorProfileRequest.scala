@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateConnectorProfileRequest extends js.Object {
+trait UpdateConnectorProfileRequest extends StObject {
   
   /**
     *  Indicates the connection mode and if it is public or private. 
@@ -35,27 +36,15 @@ object UpdateConnectorProfileRequest {
   }
   
   @scala.inline
-  implicit class UpdateConnectorProfileRequestOps[Self <: UpdateConnectorProfileRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateConnectorProfileRequestMutableBuilder[Self <: UpdateConnectorProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "connectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorProfileConfig(value: ConnectorProfileConfig): Self = StObject.set(x, "connectorProfileConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectionMode(value: ConnectionMode): Self = this.set("connectionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConnectorProfileConfig(value: ConnectorProfileConfig): Self = this.set("connectorProfileConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = this.set("connectorProfileName", value.asInstanceOf[js.Any])
+    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
   }
 }

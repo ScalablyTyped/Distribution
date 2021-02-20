@@ -1,11 +1,12 @@
 package typings.jsrsasign.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnyExtendedKeyUsage extends js.Object {
+trait AnyExtendedKeyUsage extends StObject {
   
   var MD2withRSA: String = js.native
   
@@ -254,255 +255,243 @@ object AnyExtendedKeyUsage {
   }
   
   @scala.inline
-  implicit class AnyExtendedKeyUsageOps[Self <: AnyExtendedKeyUsage] (val x: Self) extends AnyVal {
+  implicit class AnyExtendedKeyUsageMutableBuilder[Self <: AnyExtendedKeyUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnyExtendedKeyUsage(value: String): Self = StObject.set(x, "anyExtendedKeyUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticated(value: String): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorityInfoAccess(value: String): Self = StObject.set(x, "authorityInfoAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMD2withRSA(value: String): Self = this.set("MD2withRSA", value.asInstanceOf[js.Any])
+    def setAuthorityKeyIdentifier(value: String): Self = StObject.set(x, "authorityKeyIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMD4withRSA(value: String): Self = this.set("MD4withRSA", value.asInstanceOf[js.Any])
+    def setBasicConstraints(value: String): Self = StObject.set(x, "basicConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMD5withRSA(value: String): Self = this.set("MD5withRSA", value.asInstanceOf[js.Any])
+    def setBusinessCategory(value: String): Self = StObject.set(x, "businessCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA1withDSA(value: String): Self = this.set("SHA1withDSA", value.asInstanceOf[js.Any])
+    def setCRLDistributionPoints(value: String): Self = StObject.set(x, "cRLDistributionPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA1withECDSA(value: String): Self = this.set("SHA1withECDSA", value.asInstanceOf[js.Any])
+    def setCaIssuers(value: String): Self = StObject.set(x, "caIssuers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA1withRSA(value: String): Self = this.set("SHA1withRSA", value.asInstanceOf[js.Any])
+    def setCertificatePolicies(value: String): Self = StObject.set(x, "certificatePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA224withDSA(value: String): Self = this.set("SHA224withDSA", value.asInstanceOf[js.Any])
+    def setClientAuth(value: String): Self = StObject.set(x, "clientAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA224withECDSA(value: String): Self = this.set("SHA224withECDSA", value.asInstanceOf[js.Any])
+    def setCodeSigning(value: String): Self = StObject.set(x, "codeSigning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA224withRSA(value: String): Self = this.set("SHA224withRSA", value.asInstanceOf[js.Any])
+    def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA256withDSA(value: String): Self = this.set("SHA256withDSA", value.asInstanceOf[js.Any])
+    def setCountryName(value: String): Self = StObject.set(x, "countryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA256withECDSA(value: String): Self = this.set("SHA256withECDSA", value.asInstanceOf[js.Any])
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA256withRSA(value: String): Self = this.set("SHA256withRSA", value.asInstanceOf[js.Any])
+    def setDes(value: String): Self = StObject.set(x, "des", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA384withECDSA(value: String): Self = this.set("SHA384withECDSA", value.asInstanceOf[js.Any])
+    def setDigested(value: String): Self = StObject.set(x, "digested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA384withRSA(value: String): Self = this.set("SHA384withRSA", value.asInstanceOf[js.Any])
+    def setDistinguishedName(value: String): Self = StObject.set(x, "distinguishedName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA512withECDSA(value: String): Self = this.set("SHA512withECDSA", value.asInstanceOf[js.Any])
+    def setDomainComponent(value: String): Self = StObject.set(x, "domainComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA512withRSA(value: String): Self = this.set("SHA512withRSA", value.asInstanceOf[js.Any])
+    def setDsa(value: String): Self = StObject.set(x, "dsa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnyExtendedKeyUsage(value: String): Self = this.set("anyExtendedKeyUsage", value.asInstanceOf[js.Any])
+    def setEcPublicKey(value: String): Self = StObject.set(x, "ecPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticated(value: String): Self = this.set("authenticated", value.asInstanceOf[js.Any])
+    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorityInfoAccess(value: String): Self = this.set("authorityInfoAccess", value.asInstanceOf[js.Any])
+    def setEmailProtection(value: String): Self = StObject.set(x, "emailProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorityKeyIdentifier(value: String): Self = this.set("authorityKeyIdentifier", value.asInstanceOf[js.Any])
+    def setEncrypted(value: String): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicConstraints(value: String): Self = this.set("basicConstraints", value.asInstanceOf[js.Any])
+    def setEnveloped(value: String): Self = StObject.set(x, "enveloped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessCategory(value: String): Self = this.set("businessCategory", value.asInstanceOf[js.Any])
+    def setExtKeyUsage(value: String): Self = StObject.set(x, "extKeyUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCRLDistributionPoints(value: String): Self = this.set("cRLDistributionPoints", value.asInstanceOf[js.Any])
+    def setExtensionRequest(value: String): Self = StObject.set(x, "extensionRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaIssuers(value: String): Self = this.set("caIssuers", value.asInstanceOf[js.Any])
+    def setIssuerAltName(value: String): Self = StObject.set(x, "issuerAltName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificatePolicies(value: String): Self = this.set("certificatePolicies", value.asInstanceOf[js.Any])
+    def setJurisdictionOfIncorporationC(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientAuth(value: String): Self = this.set("clientAuth", value.asInstanceOf[js.Any])
+    def setJurisdictionOfIncorporationL(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeSigning(value: String): Self = this.set("codeSigning", value.asInstanceOf[js.Any])
+    def setJurisdictionOfIncorporationSP(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationSP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonName(value: String): Self = this.set("commonName", value.asInstanceOf[js.Any])
+    def setKeyUsage(value: String): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryName(value: String): Self = this.set("countryName", value.asInstanceOf[js.Any])
+    def setLocalityName(value: String): Self = StObject.set(x, "localityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setMD2withRSA(value: String): Self = StObject.set(x, "MD2withRSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDes(value: String): Self = this.set("des", value.asInstanceOf[js.Any])
+    def setMD4withRSA(value: String): Self = StObject.set(x, "MD4withRSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigested(value: String): Self = this.set("digested", value.asInstanceOf[js.Any])
+    def setMD5withRSA(value: String): Self = StObject.set(x, "MD5withRSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistinguishedName(value: String): Self = this.set("distinguishedName", value.asInstanceOf[js.Any])
+    def setMd2(value: String): Self = StObject.set(x, "md2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainComponent(value: String): Self = this.set("domainComponent", value.asInstanceOf[js.Any])
+    def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDsa(value: String): Self = this.set("dsa", value.asInstanceOf[js.Any])
+    def setNameConstraints(value: String): Self = StObject.set(x, "nameConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcPublicKey(value: String): Self = this.set("ecPublicKey", value.asInstanceOf[js.Any])
+    def setOcsp(value: String): Self = StObject.set(x, "ocsp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: String): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    def setOcspSigning(value: String): Self = StObject.set(x, "ocspSigning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailProtection(value: String): Self = this.set("emailProtection", value.asInstanceOf[js.Any])
+    def setOrganizationName(value: String): Self = StObject.set(x, "organizationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypted(value: String): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    def setOrganizationalUnitName(value: String): Self = StObject.set(x, "organizationalUnitName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnveloped(value: String): Self = this.set("enveloped", value.asInstanceOf[js.Any])
+    def setPkcs5PBES2(value: String): Self = StObject.set(x, "pkcs5PBES2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtKeyUsage(value: String): Self = this.set("extKeyUsage", value.asInstanceOf[js.Any])
+    def setPkcs5PBKDF2(value: String): Self = StObject.set(x, "pkcs5PBKDF2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionRequest(value: String): Self = this.set("extensionRequest", value.asInstanceOf[js.Any])
+    def setPolicyConstraints(value: String): Self = StObject.set(x, "policyConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuerAltName(value: String): Self = this.set("issuerAltName", value.asInstanceOf[js.Any])
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdictionOfIncorporationC(value: String): Self = this.set("jurisdictionOfIncorporationC", value.asInstanceOf[js.Any])
+    def setRipemd160(value: String): Self = StObject.set(x, "ripemd160", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdictionOfIncorporationL(value: String): Self = this.set("jurisdictionOfIncorporationL", value.asInstanceOf[js.Any])
+    def setRsaEncryption(value: String): Self = StObject.set(x, "rsaEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdictionOfIncorporationSP(value: String): Self = this.set("jurisdictionOfIncorporationSP", value.asInstanceOf[js.Any])
+    def setSHA1withDSA(value: String): Self = StObject.set(x, "SHA1withDSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyUsage(value: String): Self = this.set("keyUsage", value.asInstanceOf[js.Any])
+    def setSHA1withECDSA(value: String): Self = StObject.set(x, "SHA1withECDSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalityName(value: String): Self = this.set("localityName", value.asInstanceOf[js.Any])
+    def setSHA1withRSA(value: String): Self = StObject.set(x, "SHA1withRSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd2(value: String): Self = this.set("md2", value.asInstanceOf[js.Any])
+    def setSHA224withDSA(value: String): Self = StObject.set(x, "SHA224withDSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd5(value: String): Self = this.set("md5", value.asInstanceOf[js.Any])
+    def setSHA224withECDSA(value: String): Self = StObject.set(x, "SHA224withECDSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameConstraints(value: String): Self = this.set("nameConstraints", value.asInstanceOf[js.Any])
+    def setSHA224withRSA(value: String): Self = StObject.set(x, "SHA224withRSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOcsp(value: String): Self = this.set("ocsp", value.asInstanceOf[js.Any])
+    def setSHA256withDSA(value: String): Self = StObject.set(x, "SHA256withDSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOcspSigning(value: String): Self = this.set("ocspSigning", value.asInstanceOf[js.Any])
+    def setSHA256withECDSA(value: String): Self = StObject.set(x, "SHA256withECDSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationName(value: String): Self = this.set("organizationName", value.asInstanceOf[js.Any])
+    def setSHA256withRSA(value: String): Self = StObject.set(x, "SHA256withRSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationalUnitName(value: String): Self = this.set("organizationalUnitName", value.asInstanceOf[js.Any])
+    def setSHA384withECDSA(value: String): Self = StObject.set(x, "SHA384withECDSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPkcs5PBES2(value: String): Self = this.set("pkcs5PBES2", value.asInstanceOf[js.Any])
+    def setSHA384withRSA(value: String): Self = StObject.set(x, "SHA384withRSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPkcs5PBKDF2(value: String): Self = this.set("pkcs5PBKDF2", value.asInstanceOf[js.Any])
+    def setSHA512withECDSA(value: String): Self = StObject.set(x, "SHA512withECDSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyConstraints(value: String): Self = this.set("policyConstraints", value.asInstanceOf[js.Any])
+    def setSHA512withRSA(value: String): Self = StObject.set(x, "SHA512withRSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    def setSecp256k1(value: String): Self = StObject.set(x, "secp256k1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRipemd160(value: String): Self = this.set("ripemd160", value.asInstanceOf[js.Any])
+    def setSecp256r1(value: String): Self = StObject.set(x, "secp256r1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaEncryption(value: String): Self = this.set("rsaEncryption", value.asInstanceOf[js.Any])
+    def setSecp384r1(value: String): Self = StObject.set(x, "secp384r1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecp256k1(value: String): Self = this.set("secp256k1", value.asInstanceOf[js.Any])
+    def setServerAuth(value: String): Self = StObject.set(x, "serverAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecp256r1(value: String): Self = this.set("secp256r1", value.asInstanceOf[js.Any])
+    def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecp384r1(value: String): Self = this.set("secp384r1", value.asInstanceOf[js.Any])
+    def setSha224(value: String): Self = StObject.set(x, "sha224", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerAuth(value: String): Self = this.set("serverAuth", value.asInstanceOf[js.Any])
+    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha1(value: String): Self = this.set("sha1", value.asInstanceOf[js.Any])
+    def setSha384(value: String): Self = StObject.set(x, "sha384", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha224(value: String): Self = this.set("sha224", value.asInstanceOf[js.Any])
+    def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha256(value: String): Self = this.set("sha256", value.asInstanceOf[js.Any])
+    def setSigned(value: String): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha384(value: String): Self = this.set("sha384", value.asInstanceOf[js.Any])
+    def setStateOrProvinceName(value: String): Self = StObject.set(x, "stateOrProvinceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha512(value: String): Self = this.set("sha512", value.asInstanceOf[js.Any])
+    def setStreetAddress(value: String): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigned(value: String): Self = this.set("signed", value.asInstanceOf[js.Any])
+    def setSubjectAltName(value: String): Self = StObject.set(x, "subjectAltName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateOrProvinceName(value: String): Self = this.set("stateOrProvinceName", value.asInstanceOf[js.Any])
+    def setSubjectKeyIdentifier(value: String): Self = StObject.set(x, "subjectKeyIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreetAddress(value: String): Self = this.set("streetAddress", value.asInstanceOf[js.Any])
+    def setSurname(value: String): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectAltName(value: String): Self = this.set("subjectAltName", value.asInstanceOf[js.Any])
+    def setTimeStamping(value: String): Self = StObject.set(x, "timeStamping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectKeyIdentifier(value: String): Self = this.set("subjectKeyIdentifier", value.asInstanceOf[js.Any])
+    def setTstinfo(value: String): Self = StObject.set(x, "tstinfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurname(value: String): Self = this.set("surname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeStamping(value: String): Self = this.set("timeStamping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTstinfo(value: String): Self = this.set("tstinfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

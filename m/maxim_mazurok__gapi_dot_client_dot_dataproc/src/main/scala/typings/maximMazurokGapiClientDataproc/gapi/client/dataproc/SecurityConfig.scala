@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityConfig extends js.Object {
+trait SecurityConfig extends StObject {
   
   /** Kerberos related configuration. */
   var kerberosConfig: js.UndefOr[KerberosConfig] = js.native
@@ -19,24 +20,12 @@ object SecurityConfig {
   }
   
   @scala.inline
-  implicit class SecurityConfigOps[Self <: SecurityConfig] (val x: Self) extends AnyVal {
+  implicit class SecurityConfigMutableBuilder[Self <: SecurityConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKerberosConfig(value: KerberosConfig): Self = StObject.set(x, "kerberosConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKerberosConfig(value: KerberosConfig): Self = this.set("kerberosConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKerberosConfig: Self = this.set("kerberosConfig", js.undefined)
+    def setKerberosConfigUndefined: Self = StObject.set(x, "kerberosConfig", js.undefined)
   }
 }

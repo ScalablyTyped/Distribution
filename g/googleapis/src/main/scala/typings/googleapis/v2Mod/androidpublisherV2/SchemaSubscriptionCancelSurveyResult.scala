@@ -1,5 +1,6 @@
 package typings.googleapis.v2Mod.androidpublisherV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * cancellation flow (cancellation reason survey).
   */
 @js.native
-trait SchemaSubscriptionCancelSurveyResult extends js.Object {
+trait SchemaSubscriptionCancelSurveyResult extends StObject {
   
   /**
     * The cancellation reason the user chose in the survey. Possible values
@@ -33,30 +34,18 @@ object SchemaSubscriptionCancelSurveyResult {
   }
   
   @scala.inline
-  implicit class SchemaSubscriptionCancelSurveyResultOps[Self <: SchemaSubscriptionCancelSurveyResult] (val x: Self) extends AnyVal {
+  implicit class SchemaSubscriptionCancelSurveyResultMutableBuilder[Self <: SchemaSubscriptionCancelSurveyResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelSurveyReason(value: Double): Self = StObject.set(x, "cancelSurveyReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelSurveyReasonUndefined: Self = StObject.set(x, "cancelSurveyReason", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserInputCancelReason(value: String): Self = StObject.set(x, "userInputCancelReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelSurveyReason(value: Double): Self = this.set("cancelSurveyReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCancelSurveyReason: Self = this.set("cancelSurveyReason", js.undefined)
-    
-    @scala.inline
-    def setUserInputCancelReason(value: String): Self = this.set("userInputCancelReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInputCancelReason: Self = this.set("userInputCancelReason", js.undefined)
+    def setUserInputCancelReasonUndefined: Self = StObject.set(x, "userInputCancelReason", js.undefined)
   }
 }

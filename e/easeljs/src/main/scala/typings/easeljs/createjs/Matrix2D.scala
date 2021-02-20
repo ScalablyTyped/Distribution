@@ -1,12 +1,13 @@
 package typings.easeljs.createjs
 
 import typings.easeljs.anon.Rotation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Matrix2D extends js.Object {
+trait Matrix2D extends StObject {
   
   // properties
   var a: Double = js.native

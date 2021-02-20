@@ -1,17 +1,18 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PivotTableSummarizeFunction extends js.Object
+sealed trait PivotTableSummarizeFunction extends StObject
 /**
   * An enumeration of functions that summarize pivot table data.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction")
 @js.native
-object PivotTableSummarizeFunction extends js.Object {
+object PivotTableSummarizeFunction extends StObject {
   
   @js.native
   sealed trait AVERAGE extends PivotTableSummarizeFunction

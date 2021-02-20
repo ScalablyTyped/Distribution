@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,36 +21,24 @@ object PeriodicWaveOptions {
   }
   
   @scala.inline
-  implicit class PeriodicWaveOptionsOps[Self <: PeriodicWaveOptions] (val x: Self) extends AnyVal {
+  implicit class PeriodicWaveOptionsMutableBuilder[Self <: PeriodicWaveOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImag(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImagUndefined: Self = StObject.set(x, "imag", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImagVarargs(value: Double*): Self = StObject.set(x, "imag", js.Array(value :_*))
     
     @scala.inline
-    def setImagVarargs(value: Double*): Self = this.set("imag", js.Array(value :_*))
+    def setReal(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImag(value: js.Array[Double] | Float32Array): Self = this.set("imag", value.asInstanceOf[js.Any])
+    def setRealUndefined: Self = StObject.set(x, "real", js.undefined)
     
     @scala.inline
-    def deleteImag: Self = this.set("imag", js.undefined)
-    
-    @scala.inline
-    def setRealVarargs(value: Double*): Self = this.set("real", js.Array(value :_*))
-    
-    @scala.inline
-    def setReal(value: js.Array[Double] | Float32Array): Self = this.set("real", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReal: Self = this.set("real", js.undefined)
+    def setRealVarargs(value: Double*): Self = StObject.set(x, "real", js.Array(value :_*))
   }
 }

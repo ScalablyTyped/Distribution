@@ -2,14 +2,14 @@ package typings.rrule
 
 import typings.rrule.typesMod.ParsedOptions
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rrule/dist/esm/src/datetime", JSImport.Namespace)
-@js.native
-object datetimeMod extends js.Object {
+object datetimeMod {
   
+  @JSImport("rrule/dist/esm/src/datetime", "DateTime")
   @js.native
   class DateTime protected () extends Time {
     def this(
@@ -61,14 +61,16 @@ object datetimeMod extends js.Object {
     var year: Double = js.native
   }
   /* static members */
-  @js.native
-  object DateTime extends js.Object {
+  object DateTime {
     
+    @JSImport("rrule/dist/esm/src/datetime", "DateTime.fromDate")
+    @js.native
     def fromDate(date: Date): DateTime = js.native
   }
   
+  @JSImport("rrule/dist/esm/src/datetime", "Time")
   @js.native
-  class Time protected () extends js.Object {
+  class Time protected () extends StObject {
     def this(hour: Double, minute: Double, second: Double, millisecond: Double) = this()
     
     def getHours(): Double = js.native

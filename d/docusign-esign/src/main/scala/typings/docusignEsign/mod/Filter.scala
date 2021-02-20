@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filter extends js.Object {
+trait Filter extends StObject {
   
   /**
     * When set to **true**, the current user needs to take action on the item.
@@ -93,84 +94,72 @@ object Filter {
   }
   
   @scala.inline
-  implicit class FilterOps[Self <: Filter] (val x: Self) extends AnyVal {
+  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionRequired(value: String): Self = StObject.set(x, "actionRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionRequiredUndefined: Self = StObject.set(x, "actionRequired", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionRequired(value: String): Self = this.set("actionRequired", value.asInstanceOf[js.Any])
+    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
     @scala.inline
-    def deleteActionRequired: Self = this.set("actionRequired", js.undefined)
+    def setFolderIds(value: String): Self = StObject.set(x, "folderIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires(value: String): Self = this.set("expires", value.asInstanceOf[js.Any])
+    def setFolderIdsUndefined: Self = StObject.set(x, "folderIds", js.undefined)
     
     @scala.inline
-    def deleteExpires: Self = this.set("expires", js.undefined)
+    def setFromDateTime(value: String): Self = StObject.set(x, "fromDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderIds(value: String): Self = this.set("folderIds", value.asInstanceOf[js.Any])
+    def setFromDateTimeUndefined: Self = StObject.set(x, "fromDateTime", js.undefined)
     
     @scala.inline
-    def deleteFolderIds: Self = this.set("folderIds", js.undefined)
+    def setIsTemplate(value: String): Self = StObject.set(x, "isTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDateTime(value: String): Self = this.set("fromDateTime", value.asInstanceOf[js.Any])
+    def setIsTemplateUndefined: Self = StObject.set(x, "isTemplate", js.undefined)
     
     @scala.inline
-    def deleteFromDateTime: Self = this.set("fromDateTime", js.undefined)
+    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTemplate(value: String): Self = this.set("isTemplate", value.asInstanceOf[js.Any])
+    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsTemplate: Self = this.set("isTemplate", js.undefined)
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     @scala.inline
-    def setOrder(value: String): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setSearchTarget(value: String): Self = StObject.set(x, "searchTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setSearchTargetUndefined: Self = StObject.set(x, "searchTarget", js.undefined)
     
     @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchTarget(value: String): Self = this.set("searchTarget", value.asInstanceOf[js.Any])
+    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
     @scala.inline
-    def deleteSearchTarget: Self = this.set("searchTarget", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSearchText: Self = this.set("searchText", js.undefined)
+    def setToDateTime(value: String): Self = StObject.set(x, "toDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setToDateTime(value: String): Self = this.set("toDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToDateTime: Self = this.set("toDateTime", js.undefined)
+    def setToDateTimeUndefined: Self = StObject.set(x, "toDateTime", js.undefined)
   }
 }

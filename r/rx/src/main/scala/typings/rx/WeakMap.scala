@@ -1,11 +1,12 @@
 package typings.rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WeakMap[K, V] extends js.Object {
+trait WeakMap[K, V] extends StObject {
   
   def clear(): Unit = js.native
   

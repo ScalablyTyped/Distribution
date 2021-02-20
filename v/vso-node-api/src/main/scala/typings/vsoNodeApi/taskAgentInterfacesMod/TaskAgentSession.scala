@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskAgentSession extends js.Object {
+trait TaskAgentSession extends StObject {
   
   /**
     * Gets or sets the agent which is the target of the session.
@@ -45,33 +46,21 @@ object TaskAgentSession {
   }
   
   @scala.inline
-  implicit class TaskAgentSessionOps[Self <: TaskAgentSession] (val x: Self) extends AnyVal {
+  implicit class TaskAgentSessionMutableBuilder[Self <: TaskAgentSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgent(value: TaskAgentReference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionKey(value: TaskAgentSessionKey): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgent(value: TaskAgentReference): Self = this.set("agent", value.asInstanceOf[js.Any])
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionKey(value: TaskAgentSessionKey): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwnerName(value: String): Self = this.set("ownerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemCapabilities(value: StringDictionary[String]): Self = this.set("systemCapabilities", value.asInstanceOf[js.Any])
+    def setSystemCapabilities(value: StringDictionary[String]): Self = StObject.set(x, "systemCapabilities", value.asInstanceOf[js.Any])
   }
 }

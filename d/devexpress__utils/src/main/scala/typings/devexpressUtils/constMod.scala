@@ -1,15 +1,15 @@
 package typings.devexpressUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/intervals/const", JSImport.Namespace)
-@js.native
-object constMod extends js.Object {
+object constMod {
   
+  @JSImport("@devexpress/utils/lib/intervals/const", "ConstInterval")
   @js.native
-  abstract class ConstInterval () extends js.Object {
+  abstract class ConstInterval () extends StObject {
     
     val center: Double = js.native
     
@@ -36,9 +36,10 @@ object constMod extends js.Object {
     val start: Double = js.native
   }
   /* static members */
-  @js.native
-  object ConstInterval extends js.Object {
+  object ConstInterval {
     
+    @JSImport("@devexpress/utils/lib/intervals/const", "ConstInterval.isCollapsed")
+    @js.native
     def isCollapsed(intervals: js.Array[ConstInterval]): Boolean = js.native
   }
 }

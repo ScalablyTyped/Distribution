@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiConfigHandler extends js.Object {
+trait ApiConfigHandler extends StObject {
   
   /** Action to take when users access resources that require authentication. Defaults to redirect. */
   var authFailAction: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object ApiConfigHandler {
   }
   
   @scala.inline
-  implicit class ApiConfigHandlerOps[Self <: ApiConfigHandler] (val x: Self) extends AnyVal {
+  implicit class ApiConfigHandlerMutableBuilder[Self <: ApiConfigHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthFailAction(value: String): Self = StObject.set(x, "authFailAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthFailActionUndefined: Self = StObject.set(x, "authFailAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthFailAction(value: String): Self = this.set("authFailAction", value.asInstanceOf[js.Any])
+    def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
     
     @scala.inline
-    def deleteAuthFailAction: Self = this.set("authFailAction", js.undefined)
+    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
+    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     
     @scala.inline
-    def deleteLogin: Self = this.set("login", js.undefined)
+    def setSecurityLevel(value: String): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript(value: String): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
     
     @scala.inline
-    def deleteScript: Self = this.set("script", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityLevel(value: String): Self = this.set("securityLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityLevel: Self = this.set("securityLevel", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

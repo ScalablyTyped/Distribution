@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,17 +11,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class KnownCSimFilePaths ()
   extends typings.winrtUwp.Windows.Networking.NetworkOperators.KnownCSimFilePaths
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths")
-@js.native
-object KnownCSimFilePaths extends js.Object {
+object KnownCSimFilePaths {
+  
+  @JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Static property that gets the EFSPN path. */
-  var efSpn: IVectorView[Double] = js.native
+  /* static member */
+  @JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths.efSpn")
+  @js.native
+  def efSpn: IVectorView[Double] = js.native
+  @scala.inline
+  def efSpn_=(x: IVectorView[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("efSpn")(x.asInstanceOf[js.Any])
   
   /** Static property that gets the GID1 path. */
-  var gid1: IVectorView[Double] = js.native
+  /* static member */
+  @JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths.gid1")
+  @js.native
+  def gid1: IVectorView[Double] = js.native
+  @scala.inline
+  def gid1_=(x: IVectorView[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gid1")(x.asInstanceOf[js.Any])
   
   /** Static property that gets the GID2 path. */
-  var gid2: IVectorView[Double] = js.native
+  /* static member */
+  @JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths.gid2")
+  @js.native
+  def gid2: IVectorView[Double] = js.native
+  @scala.inline
+  def gid2_=(x: IVectorView[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gid2")(x.asInstanceOf[js.Any])
 }

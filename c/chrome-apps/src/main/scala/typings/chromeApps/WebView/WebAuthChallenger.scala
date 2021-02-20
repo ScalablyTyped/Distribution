@@ -1,12 +1,13 @@
 package typings.chromeApps.WebView
 
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAuthChallenger extends js.Object {
+trait WebAuthChallenger extends StObject {
   
   var host: String = js.native
   
@@ -21,24 +22,12 @@ object WebAuthChallenger {
   }
   
   @scala.inline
-  implicit class WebAuthChallengerOps[Self <: WebAuthChallenger] (val x: Self) extends AnyVal {
+  implicit class WebAuthChallengerMutableBuilder[Self <: WebAuthChallenger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPort(value: integer): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

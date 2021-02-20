@@ -1,11 +1,12 @@
 package typings.awsSdk.acmpcaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCertificateAuthorityCertificateResponse extends js.Object {
+trait GetCertificateAuthorityCertificateResponse extends StObject {
   
   /**
     * Base64-encoded certificate authority (CA) certificate.
@@ -26,30 +27,18 @@ object GetCertificateAuthorityCertificateResponse {
   }
   
   @scala.inline
-  implicit class GetCertificateAuthorityCertificateResponseOps[Self <: GetCertificateAuthorityCertificateResponse] (val x: Self) extends AnyVal {
+  implicit class GetCertificateAuthorityCertificateResponseMutableBuilder[Self <: GetCertificateAuthorityCertificateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: CertificateBody): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateChain(value: CertificateChain): Self = StObject.set(x, "CertificateChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateChainUndefined: Self = StObject.set(x, "CertificateChain", js.undefined)
     
     @scala.inline
-    def setCertificate(value: CertificateBody): Self = this.set("Certificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificate: Self = this.set("Certificate", js.undefined)
-    
-    @scala.inline
-    def setCertificateChain(value: CertificateChain): Self = this.set("CertificateChain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateChain: Self = this.set("CertificateChain", js.undefined)
+    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
   }
 }

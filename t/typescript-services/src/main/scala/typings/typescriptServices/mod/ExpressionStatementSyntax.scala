@@ -2,6 +2,7 @@ package typings.typescriptServices.mod
 
 import typings.typescriptServices.TypeScript.IExpressionSyntax
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +13,10 @@ class ExpressionStatementSyntax protected ()
   extends typings.typescriptServices.TypeScript.ExpressionStatementSyntax {
   def this(expression: IExpressionSyntax, semicolonToken: ISyntaxToken, parsedInStrictMode: Boolean) = this()
 }
-/* static members */
-@JSImport("typescript-services", "ExpressionStatementSyntax")
-@js.native
-object ExpressionStatementSyntax extends js.Object {
+object ExpressionStatementSyntax {
   
+  /* static member */
+  @JSImport("typescript-services", "ExpressionStatementSyntax.create1")
+  @js.native
   def create1(expression: IExpressionSyntax): typings.typescriptServices.TypeScript.ExpressionStatementSyntax = js.native
 }

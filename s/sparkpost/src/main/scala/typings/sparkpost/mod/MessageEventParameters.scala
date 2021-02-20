@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageEventParameters extends js.Object {
+trait MessageEventParameters extends StObject {
   
   /** delimited list of bounce classification codes to search. (See Bounce Classification Codes.) */
   var bounce_classes: js.UndefOr[(js.Array[String | Double]) | String | Double] = js.native
@@ -64,144 +65,132 @@ object MessageEventParameters {
   }
   
   @scala.inline
-  implicit class MessageEventParametersOps[Self <: MessageEventParameters] (val x: Self) extends AnyVal {
+  implicit class MessageEventParametersMutableBuilder[Self <: MessageEventParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounce_classes(value: (js.Array[String | Double]) | String | Double): Self = StObject.set(x, "bounce_classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBounce_classesUndefined: Self = StObject.set(x, "bounce_classes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBounce_classesVarargs(value: (String | Double)*): Self = StObject.set(x, "bounce_classes", js.Array(value :_*))
     
     @scala.inline
-    def setBounce_classesVarargs(value: (String | Double)*): Self = this.set("bounce_classes", js.Array(value :_*))
+    def setCampaign_ids(value: js.Array[String] | String): Self = StObject.set(x, "campaign_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounce_classes(value: (js.Array[String | Double]) | String | Double): Self = this.set("bounce_classes", value.asInstanceOf[js.Any])
+    def setCampaign_idsUndefined: Self = StObject.set(x, "campaign_ids", js.undefined)
     
     @scala.inline
-    def deleteBounce_classes: Self = this.set("bounce_classes", js.undefined)
+    def setCampaign_idsVarargs(value: String*): Self = StObject.set(x, "campaign_ids", js.Array(value :_*))
     
     @scala.inline
-    def setCampaign_idsVarargs(value: String*): Self = this.set("campaign_ids", js.Array(value :_*))
+    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaign_ids(value: js.Array[String] | String): Self = this.set("campaign_ids", value.asInstanceOf[js.Any])
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def deleteCampaign_ids: Self = this.set("campaign_ids", js.undefined)
+    def setEvents(value: js.Array[String] | String): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
+    def setFriendly_froms(value: js.Array[String] | String): Self = StObject.set(x, "friendly_froms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[String] | String): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setFriendly_fromsUndefined: Self = StObject.set(x, "friendly_froms", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setFriendly_fromsVarargs(value: String*): Self = StObject.set(x, "friendly_froms", js.Array(value :_*))
     
     @scala.inline
-    def setFriendly_fromsVarargs(value: String*): Self = this.set("friendly_froms", js.Array(value :_*))
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendly_froms(value: js.Array[String] | String): Self = this.set("friendly_froms", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteFriendly_froms: Self = this.set("friendly_froms", js.undefined)
+    def setMessage_ids(value: js.Array[String] | String): Self = StObject.set(x, "message_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setMessage_idsUndefined: Self = StObject.set(x, "message_ids", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setMessage_idsVarargs(value: String*): Self = StObject.set(x, "message_ids", js.Array(value :_*))
     
     @scala.inline
-    def setMessage_idsVarargs(value: String*): Self = this.set("message_ids", js.Array(value :_*))
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage_ids(value: js.Array[String] | String): Self = this.set("message_ids", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteMessage_ids: Self = this.set("message_ids", js.undefined)
+    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setReason(value: js.Array[String] | String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPer_page(value: Double): Self = this.set("per_page", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deletePer_page: Self = this.set("per_page", js.undefined)
+    def setReasonVarargs(value: String*): Self = StObject.set(x, "reason", js.Array(value :_*))
     
     @scala.inline
-    def setReasonVarargs(value: String*): Self = this.set("reason", js.Array(value :_*))
+    def setRecipients(value: js.Array[String] | String): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: js.Array[String] | String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientsVarargs(value: String*): Self = this.set("recipients", js.Array(value :_*))
+    def setSubaccounts(value: js.Array[Double] | Double): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipients(value: js.Array[String] | String): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
     
     @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    def setSubaccountsVarargs(value: Double*): Self = StObject.set(x, "subaccounts", js.Array(value :_*))
     
     @scala.inline
-    def setSubaccountsVarargs(value: Double*): Self = this.set("subaccounts", js.Array(value :_*))
+    def setTemplate_ids(value: js.Array[String] | String): Self = StObject.set(x, "template_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubaccounts(value: js.Array[Double] | Double): Self = this.set("subaccounts", value.asInstanceOf[js.Any])
+    def setTemplate_idsUndefined: Self = StObject.set(x, "template_ids", js.undefined)
     
     @scala.inline
-    def deleteSubaccounts: Self = this.set("subaccounts", js.undefined)
+    def setTemplate_idsVarargs(value: String*): Self = StObject.set(x, "template_ids", js.Array(value :_*))
     
     @scala.inline
-    def setTemplate_idsVarargs(value: String*): Self = this.set("template_ids", js.Array(value :_*))
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate_ids(value: js.Array[String] | String): Self = this.set("template_ids", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteTemplate_ids: Self = this.set("template_ids", js.undefined)
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setTransmission_ids(value: js.Array[String] | String): Self = StObject.set(x, "transmission_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setTransmission_idsUndefined: Self = StObject.set(x, "transmission_ids", js.undefined)
     
     @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
-    
-    @scala.inline
-    def setTransmission_idsVarargs(value: String*): Self = this.set("transmission_ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransmission_ids(value: js.Array[String] | String): Self = this.set("transmission_ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransmission_ids: Self = this.set("transmission_ids", js.undefined)
+    def setTransmission_idsVarargs(value: String*): Self = StObject.set(x, "transmission_ids", js.Array(value :_*))
   }
 }

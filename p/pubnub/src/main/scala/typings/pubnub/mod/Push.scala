@@ -1,11 +1,12 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Push extends js.Object {
+trait Push extends StObject {
   
   def addChannels(params: PushChannelParameters): js.Promise[Unit] = js.native
   def addChannels(params: PushChannelParameters, callback: StatusCallback): Unit = js.native

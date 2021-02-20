@@ -1,13 +1,13 @@
 package typings.awsSdkClientXrayNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/model/_Alias", JSImport.Namespace)
-@js.native
-object aliasMod extends js.Object {
+object aliasMod {
   
-  @JSName("_Alias")
+  @JSImport("@aws-sdk/client-xray-node/model/_Alias", "_Alias")
+  @js.native
   val Alias: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

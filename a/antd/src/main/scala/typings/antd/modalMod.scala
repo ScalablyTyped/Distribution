@@ -1,5 +1,6 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.OmitModalStaticFunctionsw
 import typings.antd.anon.PartialModalProps
 import typings.antd.anon.RootPrefixCls
@@ -9,19 +10,20 @@ import typings.antd.modalModalMod.ModalProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/modal", JSImport.Namespace)
-@js.native
-object modalMod extends js.Object {
+object modalMod extends Shortcut {
   
+  @JSImport("antd/lib/modal", JSImport.Default)
+  @js.native
   val default: ModalType = js.native
   
   /* Inlined antd.antd/lib/modal/Modal.ModalInterface & antd.antd/lib/modal/confirm.ModalStaticFunctions & {destroyAll (): void,   config :(hasRootPrefixCls : {  rootPrefixCls :string | undefined}): void} */
   @js.native
-  trait ModalType extends js.Object {
+  trait ModalType extends StObject {
     
     def apply(props: PropsWithChildren[ModalProps]): ReactElement | Null = js.native
     def apply(props: PropsWithChildren[ModalProps], context: js.Any): ReactElement | Null = js.native
@@ -52,4 +54,9 @@ object modalMod extends js.Object {
     
     var warning: ModalFunc = js.native
   }
+  
+  type _To = ModalType
+  
+  /* This means you don't have to write `default`, but can instead just say `modalMod.foo` */
+  override def _to: ModalType = default
 }

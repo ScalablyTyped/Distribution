@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for CreateDatabase.
   */
 @js.native
-trait SchemaCreateDatabaseRequest extends js.Object {
+trait SchemaCreateDatabaseRequest extends StObject {
   
   /**
     * Required. A `CREATE DATABASE` statement, which specifies the ID of the
@@ -36,33 +37,21 @@ object SchemaCreateDatabaseRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreateDatabaseRequestOps[Self <: SchemaCreateDatabaseRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateDatabaseRequestMutableBuilder[Self <: SchemaCreateDatabaseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateStatement(value: String): Self = StObject.set(x, "createStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateStatementUndefined: Self = StObject.set(x, "createStatement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraStatements(value: js.Array[String]): Self = StObject.set(x, "extraStatements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateStatement(value: String): Self = this.set("createStatement", value.asInstanceOf[js.Any])
+    def setExtraStatementsUndefined: Self = StObject.set(x, "extraStatements", js.undefined)
     
     @scala.inline
-    def deleteCreateStatement: Self = this.set("createStatement", js.undefined)
-    
-    @scala.inline
-    def setExtraStatementsVarargs(value: String*): Self = this.set("extraStatements", js.Array(value :_*))
-    
-    @scala.inline
-    def setExtraStatements(value: js.Array[String]): Self = this.set("extraStatements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtraStatements: Self = this.set("extraStatements", js.undefined)
+    def setExtraStatementsVarargs(value: String*): Self = StObject.set(x, "extraStatements", js.Array(value :_*))
   }
 }

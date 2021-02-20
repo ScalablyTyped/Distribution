@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Media.Devices
 import typings.winrtUwp.Windows.Media.MediaProperties.IMediaEncodingProperties
 import typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio
 import typings.winrtUwp.Windows.Media.MediaProperties.MediaThumbnailFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for managing the low shutter lag photo capture mode on the capture device. */
 @js.native
-trait LowLagPhotoControl extends js.Object {
+trait LowLagPhotoControl extends StObject {
   
   /** Gets or sets the desired size for thumbnails, which is the largest length of the image, either width or height. */
   var desiredThumbnailSize: Double = js.native
@@ -52,36 +53,24 @@ object LowLagPhotoControl {
   }
   
   @scala.inline
-  implicit class LowLagPhotoControlOps[Self <: LowLagPhotoControl] (val x: Self) extends AnyVal {
+  implicit class LowLagPhotoControlMutableBuilder[Self <: LowLagPhotoControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredThumbnailSize(value: Double): Self = StObject.set(x, "desiredThumbnailSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentFrameRate(value: () => MediaRatio): Self = StObject.set(x, "getCurrentFrameRate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetHighestConcurrentFrameRate(value: IMediaEncodingProperties => MediaRatio): Self = StObject.set(x, "getHighestConcurrentFrameRate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDesiredThumbnailSize(value: Double): Self = this.set("desiredThumbnailSize", value.asInstanceOf[js.Any])
+    def setHardwareAcceleratedThumbnailSupported(value: Double): Self = StObject.set(x, "hardwareAcceleratedThumbnailSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentFrameRate(value: () => MediaRatio): Self = this.set("getCurrentFrameRate", js.Any.fromFunction0(value))
+    def setThumbnailEnabled(value: Boolean): Self = StObject.set(x, "thumbnailEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHighestConcurrentFrameRate(value: IMediaEncodingProperties => MediaRatio): Self = this.set("getHighestConcurrentFrameRate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHardwareAcceleratedThumbnailSupported(value: Double): Self = this.set("hardwareAcceleratedThumbnailSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnailEnabled(value: Boolean): Self = this.set("thumbnailEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnailFormat(value: MediaThumbnailFormat): Self = this.set("thumbnailFormat", value.asInstanceOf[js.Any])
+    def setThumbnailFormat(value: MediaThumbnailFormat): Self = StObject.set(x, "thumbnailFormat", value.asInstanceOf[js.Any])
   }
 }

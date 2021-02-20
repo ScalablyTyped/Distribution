@@ -1,11 +1,12 @@
 package typings.awsSdk.qldbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KinesisConfiguration extends js.Object {
+trait KinesisConfiguration extends StObject {
   
   /**
     * Enables QLDB to publish multiple data records in a single Kinesis Data Streams record. To learn more, see KPL Key Concepts in the Amazon Kinesis Data Streams Developer Guide.
@@ -26,27 +27,15 @@ object KinesisConfiguration {
   }
   
   @scala.inline
-  implicit class KinesisConfigurationOps[Self <: KinesisConfiguration] (val x: Self) extends AnyVal {
+  implicit class KinesisConfigurationMutableBuilder[Self <: KinesisConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationEnabled(value: Boolean): Self = StObject.set(x, "AggregationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationEnabledUndefined: Self = StObject.set(x, "AggregationEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStreamArn(value: Arn): Self = this.set("StreamArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAggregationEnabled(value: Boolean): Self = this.set("AggregationEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregationEnabled: Self = this.set("AggregationEnabled", js.undefined)
+    def setStreamArn(value: Arn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
   }
 }

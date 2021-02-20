@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Emulation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetFocusEmulationEnabledRequest extends js.Object {
+trait SetFocusEmulationEnabledRequest extends StObject {
   
   /**
     * Whether to enable to disable focus emulation.
@@ -21,21 +22,9 @@ object SetFocusEmulationEnabledRequest {
   }
   
   @scala.inline
-  implicit class SetFocusEmulationEnabledRequestOps[Self <: SetFocusEmulationEnabledRequest] (val x: Self) extends AnyVal {
+  implicit class SetFocusEmulationEnabledRequestMutableBuilder[Self <: SetFocusEmulationEnabledRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

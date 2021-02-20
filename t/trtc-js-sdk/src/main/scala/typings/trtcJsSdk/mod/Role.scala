@@ -1,5 +1,6 @@
 package typings.trtcJsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.trtcJsSdk.trtcJsSdkStrings.anchor
   - typings.trtcJsSdk.trtcJsSdkStrings.audience
 */
-trait Role extends js.Object
+trait Role extends StObject
 object Role {
   
   @scala.inline

@@ -9,13 +9,14 @@ import typings.octokitTypes.octokitTypesStrings.heart
 import typings.octokitTypes.octokitTypesStrings.hooray
 import typings.octokitTypes.octokitTypesStrings.laugh
 import typings.octokitTypes.octokitTypesStrings.rocket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  team_id :number,   discussion_number :number,   content :'+1' | '-1' | 'laugh' | 'confused' | 'heart' | 'hooray' | 'rocket' | 'eyes'} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'squirrel-girl'> */
 @js.native
-trait ReactionsCreateForTeamDiscussionLegacyEndpoint extends js.Object {
+trait ReactionsCreateForTeamDiscussionLegacyEndpoint extends StObject {
   
   /**
     * The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the team discussion.
@@ -42,30 +43,18 @@ object ReactionsCreateForTeamDiscussionLegacyEndpoint {
   }
   
   @scala.inline
-  implicit class ReactionsCreateForTeamDiscussionLegacyEndpointOps[Self <: ReactionsCreateForTeamDiscussionLegacyEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReactionsCreateForTeamDiscussionLegacyEndpointMutableBuilder[Self <: ReactionsCreateForTeamDiscussionLegacyEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaType(value: `9`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDiscussion_number(value: Double): Self = this.set("discussion_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `9`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeam_id(value: Double): Self = this.set("team_id", value.asInstanceOf[js.Any])
+    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

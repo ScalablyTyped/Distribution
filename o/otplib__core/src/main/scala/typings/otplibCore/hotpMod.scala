@@ -10,34 +10,22 @@ import typings.otplibCore.utilsMod.OTP
 import typings.otplibCore.utilsMod.OTPOptions
 import typings.otplibCore.utilsMod.SecretKey
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@otplib/core/hotp", JSImport.Namespace)
-@js.native
-object hotpMod extends js.Object {
+object hotpMod {
   
-  def hotpCheck[T /* <: HOTPOptions_[_] */](token: String, secret: SecretKey, counter: Double, options: T): Boolean = js.native
-  
-  def hotpCounter(counter: Double): HexString = js.native
-  
-  val hotpCreateHmacKey: CreateHmacKey[HexString] = js.native
-  
-  def hotpDefaultOptions[T /* <: HOTPOptions_[_] */](): Partial[T] = js.native
-  
-  def hotpDigestToToken(hexDigest: HexString, digits: Double): String = js.native
-  
-  def hotpKeyuri[T /* <: HOTPOptions_[_] */](accountName: String, issuer: String, secret: SecretKey, counter: Double, options: T): String = js.native
-  
-  def hotpOptions[T /* <: HOTPOptions_[_] */](opt: Partial[T]): T = js.native
-  
-  def hotpOptionsValidator[T /* <: HOTPOptions_[_] */](options: Partial[T]): Unit = js.native
-  
-  def hotpToken[T /* <: HOTPOptions_[_] */](secret: SecretKey, counter: Double, options: T): String = js.native
-  
+  @JSImport("@otplib/core/hotp", "HOTP")
   @js.native
+  /**
+    * Constructs the class with defaultOptions set.
+    *
+    * @param defaultOptions used to override or add existing defaultOptions.
+    */
   class HOTP[T /* <: HOTPOptions_[String] */] () extends OTP[T] {
+    def this(defaultOptions: Partial[T]) = this()
     
     /**
       * Reference: [[hotpCheck]]
@@ -60,6 +48,42 @@ object hotpMod extends js.Object {
       */
     def verify(opts: Counter): Boolean = js.native
   }
+  
+  @JSImport("@otplib/core/hotp", "hotpCheck")
+  @js.native
+  def hotpCheck[T /* <: HOTPOptions_[_] */](token: String, secret: SecretKey, counter: Double, options: T): Boolean = js.native
+  
+  @JSImport("@otplib/core/hotp", "hotpCounter")
+  @js.native
+  def hotpCounter(counter: Double): HexString = js.native
+  
+  @JSImport("@otplib/core/hotp", "hotpCreateHmacKey")
+  @js.native
+  val hotpCreateHmacKey: CreateHmacKey[HexString] = js.native
+  
+  @JSImport("@otplib/core/hotp", "hotpDefaultOptions")
+  @js.native
+  def hotpDefaultOptions[T /* <: HOTPOptions_[_] */](): Partial[T] = js.native
+  
+  @JSImport("@otplib/core/hotp", "hotpDigestToToken")
+  @js.native
+  def hotpDigestToToken(hexDigest: HexString, digits: Double): String = js.native
+  
+  @JSImport("@otplib/core/hotp", "hotpKeyuri")
+  @js.native
+  def hotpKeyuri[T /* <: HOTPOptions_[_] */](accountName: String, issuer: String, secret: SecretKey, counter: Double, options: T): String = js.native
+  
+  @JSImport("@otplib/core/hotp", "hotpOptions")
+  @js.native
+  def hotpOptions[T /* <: HOTPOptions_[_] */](opt: Partial[T]): T = js.native
+  
+  @JSImport("@otplib/core/hotp", "hotpOptionsValidator")
+  @js.native
+  def hotpOptionsValidator[T /* <: HOTPOptions_[_] */](options: Partial[T]): Unit = js.native
+  
+  @JSImport("@otplib/core/hotp", "hotpToken")
+  @js.native
+  def hotpToken[T /* <: HOTPOptions_[_] */](secret: SecretKey, counter: Double, options: T): String = js.native
   
   @js.native
   trait HOTPOptions_[T] extends OTPOptions {

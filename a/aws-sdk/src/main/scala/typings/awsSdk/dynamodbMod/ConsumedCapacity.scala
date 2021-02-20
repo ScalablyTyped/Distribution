@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsumedCapacity extends js.Object {
+trait ConsumedCapacity extends StObject {
   
   /**
     * The total number of capacity units consumed by the operation.
@@ -51,60 +52,48 @@ object ConsumedCapacity {
   }
   
   @scala.inline
-  implicit class ConsumedCapacityOps[Self <: ConsumedCapacity] (val x: Self) extends AnyVal {
+  implicit class ConsumedCapacityMutableBuilder[Self <: ConsumedCapacity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalSecondaryIndexes(value: SecondaryIndexesCapacityMap): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityUnits(value: ConsumedCapacityUnits): Self = this.set("CapacityUnits", value.asInstanceOf[js.Any])
+    def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
     
     @scala.inline
-    def deleteCapacityUnits: Self = this.set("CapacityUnits", js.undefined)
+    def setLocalSecondaryIndexes(value: SecondaryIndexesCapacityMap): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalSecondaryIndexes(value: SecondaryIndexesCapacityMap): Self = this.set("GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
     
     @scala.inline
-    def deleteGlobalSecondaryIndexes: Self = this.set("GlobalSecondaryIndexes", js.undefined)
+    def setReadCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalSecondaryIndexes(value: SecondaryIndexesCapacityMap): Self = this.set("LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+    def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
     
     @scala.inline
-    def deleteLocalSecondaryIndexes: Self = this.set("LocalSecondaryIndexes", js.undefined)
+    def setTable(value: Capacity): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadCapacityUnits(value: ConsumedCapacityUnits): Self = this.set("ReadCapacityUnits", value.asInstanceOf[js.Any])
+    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadCapacityUnits: Self = this.set("ReadCapacityUnits", js.undefined)
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
     @scala.inline
-    def setTable(value: Capacity): Self = this.set("Table", value.asInstanceOf[js.Any])
+    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
     
     @scala.inline
-    def deleteTable: Self = this.set("Table", js.undefined)
+    def setWriteCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
-    
-    @scala.inline
-    def setWriteCapacityUnits(value: ConsumedCapacityUnits): Self = this.set("WriteCapacityUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteCapacityUnits: Self = this.set("WriteCapacityUnits", js.undefined)
+    def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
   }
 }

@@ -16,13 +16,14 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.right
 import typings.wechatMiniprogram.wechatMiniprogramStrings.round
 import typings.wechatMiniprogram.wechatMiniprogramStrings.square
 import typings.wechatMiniprogram.wechatMiniprogramStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** canvas 组件的绘图上下文。CanvasContext 是旧版的接口， 新版 Canvas 2D 接口与 Web 一致。 */
 @js.native
-trait CanvasContext extends js.Object {
+trait CanvasContext extends StObject {
   
   /** [CanvasContext.arc(number x, number y, number r, number sAngle, number eAngle, boolean counterclockwise)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.arc.html)
   *

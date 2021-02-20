@@ -1,5 +1,6 @@
 package typings.reactMapGl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +19,9 @@ package object mod {
   type EasingFunction = js.Function1[/* t */ scala.Double, scala.Double]
   
   type EventManager = js.Any
+  
+  @scala.inline
+  def MapContext: typings.react.mod.Context[typings.reactMapGl.mod.MapContextProps] = typings.reactMapGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("_MapContext").asInstanceOf[typings.react.mod.Context[typings.reactMapGl.mod.MapContextProps]]
   
   type SVGRedrawOptions = typings.reactMapGl.mod.HTMLRedrawOptions
   

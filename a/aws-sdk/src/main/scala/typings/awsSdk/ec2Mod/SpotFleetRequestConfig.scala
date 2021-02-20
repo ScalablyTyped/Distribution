@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpotFleetRequestConfig extends js.Object {
+trait SpotFleetRequestConfig extends StObject {
   
   /**
     * The progress of the Spot Fleet request. If there is an error, the status is error. After all requests are placed, the status is pending_fulfillment. If the size of the fleet is equal to or greater than its target capacity, the status is fulfilled. If the size of the fleet is decreased, the status is pending_termination while Spot Instances are terminating.
@@ -46,57 +47,45 @@ object SpotFleetRequestConfig {
   }
   
   @scala.inline
-  implicit class SpotFleetRequestConfigOps[Self <: SpotFleetRequestConfig] (val x: Self) extends AnyVal {
+  implicit class SpotFleetRequestConfigMutableBuilder[Self <: SpotFleetRequestConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityStatus(value: ActivityStatus): Self = StObject.set(x, "ActivityStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityStatusUndefined: Self = StObject.set(x, "ActivityStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: MillisecondDateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityStatus(value: ActivityStatus): Self = this.set("ActivityStatus", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
     @scala.inline
-    def deleteActivityStatus: Self = this.set("ActivityStatus", js.undefined)
+    def setSpotFleetRequestConfig(value: SpotFleetRequestConfigData): Self = StObject.set(x, "SpotFleetRequestConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: MillisecondDateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    def setSpotFleetRequestConfigUndefined: Self = StObject.set(x, "SpotFleetRequestConfig", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotFleetRequestConfig(value: SpotFleetRequestConfigData): Self = this.set("SpotFleetRequestConfig", value.asInstanceOf[js.Any])
+    def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
     
     @scala.inline
-    def deleteSpotFleetRequestConfig: Self = this.set("SpotFleetRequestConfig", js.undefined)
+    def setSpotFleetRequestState(value: BatchState): Self = StObject.set(x, "SpotFleetRequestState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotFleetRequestId(value: String): Self = this.set("SpotFleetRequestId", value.asInstanceOf[js.Any])
+    def setSpotFleetRequestStateUndefined: Self = StObject.set(x, "SpotFleetRequestState", js.undefined)
     
     @scala.inline
-    def deleteSpotFleetRequestId: Self = this.set("SpotFleetRequestId", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotFleetRequestState(value: BatchState): Self = this.set("SpotFleetRequestState", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSpotFleetRequestState: Self = this.set("SpotFleetRequestState", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectDebitProcessorInformation extends js.Object {
+trait DirectDebitProcessorInformation extends StObject {
   
   /**
     * The branch code of the bank used for direct debit.
@@ -108,90 +109,78 @@ object DirectDebitProcessorInformation {
   }
   
   @scala.inline
-  implicit class DirectDebitProcessorInformationOps[Self <: DirectDebitProcessorInformation] (val x: Self) extends AnyVal {
+  implicit class DirectDebitProcessorInformationMutableBuilder[Self <: DirectDebitProcessorInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBankBranchCode(value: String): Self = StObject.set(x, "bankBranchCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBankBranchCodeUndefined: Self = StObject.set(x, "bankBranchCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBankCheckDigit(value: String): Self = StObject.set(x, "bankCheckDigit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankBranchCode(value: String): Self = this.set("bankBranchCode", value.asInstanceOf[js.Any])
+    def setBankCheckDigitUndefined: Self = StObject.set(x, "bankCheckDigit", js.undefined)
     
     @scala.inline
-    def deleteBankBranchCode: Self = this.set("bankBranchCode", js.undefined)
+    def setBankCode(value: String): Self = StObject.set(x, "bankCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankCheckDigit(value: String): Self = this.set("bankCheckDigit", value.asInstanceOf[js.Any])
+    def setBankCodeUndefined: Self = StObject.set(x, "bankCode", js.undefined)
     
     @scala.inline
-    def deleteBankCheckDigit: Self = this.set("bankCheckDigit", js.undefined)
+    def setBankName(value: String): Self = StObject.set(x, "bankName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankCode(value: String): Self = this.set("bankCode", value.asInstanceOf[js.Any])
+    def setBankNameUndefined: Self = StObject.set(x, "bankName", js.undefined)
     
     @scala.inline
-    def deleteBankCode: Self = this.set("bankCode", js.undefined)
+    def setBankTransferAccountName(value: String): Self = StObject.set(x, "bankTransferAccountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankName(value: String): Self = this.set("bankName", value.asInstanceOf[js.Any])
+    def setBankTransferAccountNameUndefined: Self = StObject.set(x, "bankTransferAccountName", js.undefined)
     
     @scala.inline
-    def deleteBankName: Self = this.set("bankName", js.undefined)
+    def setBankTransferAccountNumber(value: String): Self = StObject.set(x, "bankTransferAccountNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankTransferAccountName(value: String): Self = this.set("bankTransferAccountName", value.asInstanceOf[js.Any])
+    def setBankTransferAccountNumberUndefined: Self = StObject.set(x, "bankTransferAccountNumber", js.undefined)
     
     @scala.inline
-    def deleteBankTransferAccountName: Self = this.set("bankTransferAccountName", js.undefined)
+    def setBankTransferType(value: String): Self = StObject.set(x, "bankTransferType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankTransferAccountNumber(value: String): Self = this.set("bankTransferAccountNumber", value.asInstanceOf[js.Any])
+    def setBankTransferTypeUndefined: Self = StObject.set(x, "bankTransferType", js.undefined)
     
     @scala.inline
-    def deleteBankTransferAccountNumber: Self = this.set("bankTransferAccountNumber", js.undefined)
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankTransferType(value: String): Self = this.set("bankTransferType", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteBankTransferType: Self = this.set("bankTransferType", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setIBAN(value: String): Self = StObject.set(x, "iBAN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstName(value: String): Self = this.set("firstName", value.asInstanceOf[js.Any])
+    def setIBANUndefined: Self = StObject.set(x, "iBAN", js.undefined)
     
     @scala.inline
-    def deleteFirstName: Self = this.set("firstName", js.undefined)
+    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIBAN(value: String): Self = this.set("iBAN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIBAN: Self = this.set("iBAN", js.undefined)
-    
-    @scala.inline
-    def setLastName(value: String): Self = this.set("lastName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastName: Self = this.set("lastName", js.undefined)
+    def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
   }
 }

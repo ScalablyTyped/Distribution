@@ -1,5 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,51 +56,39 @@ object IFindNearRouteOptions {
   }
   
   @scala.inline
-  implicit class IFindNearRouteOptionsOps[Self <: IFindNearRouteOptions] (val x: Self) extends AnyVal {
+  implicit class IFindNearRouteOptionsMutableBuilder[Self <: IFindNearRouteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvoid(value: js.Array[String]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvoidVarargs(value: String*): Self = StObject.set(x, "avoid", js.Array(value :_*))
     
     @scala.inline
-    def setAvoidVarargs(value: String*): Self = this.set("avoid", js.Array(value :_*))
+    def setDistanceBeforeFirstTurn(value: Double): Self = StObject.set(x, "distanceBeforeFirstTurn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoid(value: js.Array[String]): Self = this.set("avoid", value.asInstanceOf[js.Any])
+    def setDistanceBeforeFirstTurnUndefined: Self = StObject.set(x, "distanceBeforeFirstTurn", js.undefined)
     
     @scala.inline
-    def deleteAvoid: Self = this.set("avoid", js.undefined)
+    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceBeforeFirstTurn(value: Double): Self = this.set("distanceBeforeFirstTurn", value.asInstanceOf[js.Any])
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteDistanceBeforeFirstTurn: Self = this.set("distanceBeforeFirstTurn", js.undefined)
+    def setOptimize(value: String): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setTravelMode(value: String): Self = StObject.set(x, "travelMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimize(value: String): Self = this.set("optimize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptimize: Self = this.set("optimize", js.undefined)
-    
-    @scala.inline
-    def setTravelMode(value: String): Self = this.set("travelMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTravelMode: Self = this.set("travelMode", js.undefined)
+    def setTravelModeUndefined: Self = StObject.set(x, "travelMode", js.undefined)
   }
 }

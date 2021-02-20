@@ -1,16 +1,23 @@
 package typings.bitwise
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/esm/buffer/read-u-int", JSImport.Namespace)
-@js.native
-object bufferReadUIntMod extends js.Object {
+object bufferReadUIntMod {
   
+  @JSImport("bitwise/esm/buffer/read-u-int", JSImport.Default)
+  @js.native
   def default(buffer: Buffer): Double = js.native
+  @JSImport("bitwise/esm/buffer/read-u-int", JSImport.Default)
+  @js.native
   def default(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
+  @JSImport("bitwise/esm/buffer/read-u-int", JSImport.Default)
+  @js.native
   def default(buffer: Buffer, offset: Double): Double = js.native
+  @JSImport("bitwise/esm/buffer/read-u-int", JSImport.Default)
+  @js.native
   def default(buffer: Buffer, offset: Double, length: Double): Double = js.native
 }

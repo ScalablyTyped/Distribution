@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the type of throttle count to check for in a GetThrottleCount request. */
 @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskThrottleCounter")
 @js.native
-object BackgroundTaskThrottleCounter extends js.Object {
+object BackgroundTaskThrottleCounter extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

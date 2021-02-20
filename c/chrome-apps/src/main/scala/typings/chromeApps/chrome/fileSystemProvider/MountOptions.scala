@@ -1,12 +1,13 @@
 package typings.chromeApps.chrome.fileSystemProvider
 
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MountOptions extends js.Object {
+trait MountOptions extends StObject {
   
   /** A human-readable name for the file system. */
   var displayName: String = js.native
@@ -48,48 +49,36 @@ object MountOptions {
   }
   
   @scala.inline
-  implicit class MountOptionsOps[Self <: MountOptions] (val x: Self) extends AnyVal {
+  implicit class MountOptionsMutableBuilder[Self <: MountOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenedFilesLimit(value: integer): Self = StObject.set(x, "openedFilesLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setOpenedFilesLimitUndefined: Self = StObject.set(x, "openedFilesLimit", js.undefined)
     
     @scala.inline
-    def setFileSystemId(value: String): Self = this.set("fileSystemId", value.asInstanceOf[js.Any])
+    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenedFilesLimit(value: integer): Self = this.set("openedFilesLimit", value.asInstanceOf[js.Any])
+    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
     @scala.inline
-    def deleteOpenedFilesLimit: Self = this.set("openedFilesLimit", js.undefined)
+    def setSupportsNotifyTag(value: Boolean): Self = StObject.set(x, "supportsNotifyTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistent(value: Boolean): Self = this.set("persistent", value.asInstanceOf[js.Any])
+    def setSupportsNotifyTagUndefined: Self = StObject.set(x, "supportsNotifyTag", js.undefined)
     
     @scala.inline
-    def deletePersistent: Self = this.set("persistent", js.undefined)
+    def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsNotifyTag(value: Boolean): Self = this.set("supportsNotifyTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsNotifyTag: Self = this.set("supportsNotifyTag", js.undefined)
-    
-    @scala.inline
-    def setWritable(value: Boolean): Self = this.set("writable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWritable: Self = this.set("writable", js.undefined)
+    def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
   }
 }

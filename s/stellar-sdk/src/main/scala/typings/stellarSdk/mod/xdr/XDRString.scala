@@ -1,6 +1,7 @@
 package typings.stellarSdk.mod.xdr
 
 import typings.stellarSdk.stellarSdkNumbers._4294967295
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

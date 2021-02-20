@@ -3,6 +3,7 @@ package typings.photonui.photonui
 import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ trait Container extends Widget {
   
   var containerNode: HTMLElement = js.native
   
-   // readonly
+  // readonly
   var horizontalChildExpansion: Boolean = js.native
   
   def removeChild(widget: Widget): Unit = js.native
@@ -60,36 +61,24 @@ object Container {
   }
   
   @scala.inline
-  implicit class ContainerOps[Self <: Container] (val x: Self) extends AnyVal {
+  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChild(value: Widget): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerNode(value: HTMLElement): Self = StObject.set(x, "containerNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChild(value: Widget): Self = this.set("child", value.asInstanceOf[js.Any])
+    def setHorizontalChildExpansion(value: Boolean): Self = StObject.set(x, "horizontalChildExpansion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildName(value: String): Self = this.set("childName", value.asInstanceOf[js.Any])
+    def setRemoveChild(value: Widget => Unit): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainerNode(value: HTMLElement): Self = this.set("containerNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHorizontalChildExpansion(value: Boolean): Self = this.set("horizontalChildExpansion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveChild(value: Widget => Unit): Self = this.set("removeChild", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVerticalChildExpansion(value: Boolean): Self = this.set("verticalChildExpansion", value.asInstanceOf[js.Any])
+    def setVerticalChildExpansion(value: Boolean): Self = StObject.set(x, "verticalChildExpansion", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.CardDismissDelay
 import typings.officeUiFabricReact.hoverCardTypesMod.IHoverCardProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,15 @@ class HoverCardBase protected ()
   def this(props: IHoverCardProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react", "HoverCardBase")
-@js.native
-object HoverCardBase extends js.Object {
+object HoverCardBase {
   
-  var defaultProps: CardDismissDelay = js.native
+  @JSImport("office-ui-fabric-react", "HoverCardBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "HoverCardBase.defaultProps")
+  @js.native
+  def defaultProps: CardDismissDelay = js.native
+  @scala.inline
+  def defaultProps_=(x: CardDismissDelay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

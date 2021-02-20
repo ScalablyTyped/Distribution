@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddOrderNotesRequest extends js.Object {
+trait AddOrderNotesRequest extends StObject {
   
   /** The list of notes to add. */
   var notes: js.UndefOr[js.Array[MarketplaceNote]] = js.native
@@ -19,27 +20,15 @@ object AddOrderNotesRequest {
   }
   
   @scala.inline
-  implicit class AddOrderNotesRequestOps[Self <: AddOrderNotesRequest] (val x: Self) extends AnyVal {
+  implicit class AddOrderNotesRequestMutableBuilder[Self <: AddOrderNotesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotes(value: js.Array[MarketplaceNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNotesVarargs(value: MarketplaceNote*): Self = this.set("notes", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotes(value: js.Array[MarketplaceNote]): Self = this.set("notes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setNotesVarargs(value: MarketplaceNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
   }
 }

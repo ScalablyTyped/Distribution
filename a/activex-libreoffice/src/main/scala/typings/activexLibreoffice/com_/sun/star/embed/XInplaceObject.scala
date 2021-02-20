@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.KeyEvent
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,27 +62,15 @@ object XInplaceObject {
   }
   
   @scala.inline
-  implicit class XInplaceObjectOps[Self <: XInplaceObject] (val x: Self) extends AnyVal {
+  implicit class XInplaceObjectMutableBuilder[Self <: XInplaceObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableModeless(value: Boolean => Unit): Self = StObject.set(x, "enableModeless", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetObjectRectangles(value: (Rectangle, Rectangle) => Unit): Self = StObject.set(x, "setObjectRectangles", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnableModeless(value: Boolean => Unit): Self = this.set("enableModeless", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetObjectRectangles(value: (Rectangle, Rectangle) => Unit): Self = this.set("setObjectRectangles", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTranslateAccelerators(value: SeqEquiv[KeyEvent] => Unit): Self = this.set("translateAccelerators", js.Any.fromFunction1(value))
+    def setTranslateAccelerators(value: SeqEquiv[KeyEvent] => Unit): Self = StObject.set(x, "translateAccelerators", js.Any.fromFunction1(value))
   }
 }

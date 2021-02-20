@@ -4,6 +4,7 @@ import typings.babylonjs.WebGLProgram
 import typings.babylonjs.WebGLRenderingContext
 import typings.std.WebGLShader
 import typings.std.WebGLTransformFeedback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

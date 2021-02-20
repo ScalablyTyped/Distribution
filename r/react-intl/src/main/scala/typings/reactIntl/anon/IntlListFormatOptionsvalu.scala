@@ -9,13 +9,14 @@ import typings.reactIntl.reactIntlStrings.lookup
 import typings.reactIntl.reactIntlStrings.narrow
 import typings.reactIntl.reactIntlStrings.short
 import typings.reactIntl.reactIntlStrings.unit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @formatjs/intl-listformat.@formatjs/intl-listformat.IntlListFormatOptions & {  value :std.Array<react.react.ReactNode>} */
 @js.native
-trait IntlListFormatOptionsvalu extends js.Object {
+trait IntlListFormatOptionsvalu extends StObject {
   
   /**
     * The locale matching algorithm to use.
@@ -54,42 +55,30 @@ object IntlListFormatOptionsvalu {
   }
   
   @scala.inline
-  implicit class IntlListFormatOptionsvaluOps[Self <: IntlListFormatOptionsvalu] (val x: Self) extends AnyVal {
+  implicit class IntlListFormatOptionsvaluMutableBuilder[Self <: IntlListFormatOptionsvalu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueVarargs(value: ReactNode*): Self = this.set("value", js.Array(value :_*))
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Array[ReactNode]): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setType(value: conjunction | disjunction | unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleMatcher(value: (`best fit`) | lookup): Self = this.set("localeMatcher", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteLocaleMatcher: Self = this.set("localeMatcher", js.undefined)
+    def setValue(value: js.Array[ReactNode]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: long | short | narrow): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setType(value: conjunction | disjunction | unit): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setValueVarargs(value: ReactNode*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

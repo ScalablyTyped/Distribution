@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,36 +73,24 @@ object XSessionManagerClient {
   }
   
   @scala.inline
-  implicit class XSessionManagerClientOps[Self <: XSessionManagerClient] (val x: Self) extends AnyVal {
+  implicit class XSessionManagerClientMutableBuilder[Self <: XSessionManagerClient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSessionManagerListener(value: XSessionManagerListener => Unit): Self = StObject.set(x, "addSessionManagerListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelShutdown(value: () => Boolean): Self = StObject.set(x, "cancelShutdown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInteractionDone(value: XSessionManagerListener => Unit): Self = StObject.set(x, "interactionDone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddSessionManagerListener(value: XSessionManagerListener => Unit): Self = this.set("addSessionManagerListener", js.Any.fromFunction1(value))
+    def setQueryInteraction(value: XSessionManagerListener => Unit): Self = StObject.set(x, "queryInteraction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancelShutdown(value: () => Boolean): Self = this.set("cancelShutdown", js.Any.fromFunction0(value))
+    def setRemoveSessionManagerListener(value: XSessionManagerListener => Unit): Self = StObject.set(x, "removeSessionManagerListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInteractionDone(value: XSessionManagerListener => Unit): Self = this.set("interactionDone", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQueryInteraction(value: XSessionManagerListener => Unit): Self = this.set("queryInteraction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveSessionManagerListener(value: XSessionManagerListener => Unit): Self = this.set("removeSessionManagerListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSaveDone(value: XSessionManagerListener => Unit): Self = this.set("saveDone", js.Any.fromFunction1(value))
+    def setSaveDone(value: XSessionManagerListener => Unit): Self = StObject.set(x, "saveDone", js.Any.fromFunction1(value))
   }
 }

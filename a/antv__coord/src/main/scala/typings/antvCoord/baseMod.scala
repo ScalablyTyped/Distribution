@@ -4,13 +4,18 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.antvCoord.interfaceMod.CoordinateCfg
 import typings.antvCoord.interfaceMod.ICoordinate
 import typings.antvCoord.interfaceMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/coord/lib/coord/base", JSImport.Namespace)
-@js.native
-object baseMod extends js.Object {
+object baseMod {
+  
+  @JSImport("@antv/coord/lib/coord/base", JSImport.Default)
+  @js.native
+  abstract class default protected () extends Coordinate {
+    def this(cfg: CoordinateCfg) = this()
+  }
   
   @js.native
   trait Coordinate extends ICoordinate {
@@ -82,11 +87,6 @@ object baseMod extends js.Object {
     var startAngle_Coordinate: Double = js.native
     
     var width: Double = js.native
-  }
-  
-  @js.native
-  abstract class default protected () extends Coordinate {
-    def this(cfg: CoordinateCfg) = this()
   }
   
   type CoordinateCtor = Instantiable1[/* cfg */ js.Any, Coordinate]

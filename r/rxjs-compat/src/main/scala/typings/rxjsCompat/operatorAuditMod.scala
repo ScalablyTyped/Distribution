@@ -1,13 +1,14 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/audit", JSImport.Namespace)
-@js.native
-object operatorAuditMod extends js.Object {
+object operatorAuditMod {
   
+  @JSImport("rxjs-compat/operator/audit", "audit")
+  @js.native
   def audit[T](
     durationSelector: js.Function1[
       /* value */ T, 

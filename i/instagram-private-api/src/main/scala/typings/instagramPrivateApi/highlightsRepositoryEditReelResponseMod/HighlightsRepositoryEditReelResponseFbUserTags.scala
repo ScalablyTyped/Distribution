@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.highlightsRepositoryEditReelResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightsRepositoryEditReelResponseFbUserTags extends js.Object {
+trait HighlightsRepositoryEditReelResponseFbUserTags extends StObject {
   
   var in: js.Array[_] = js.native
 }
@@ -18,24 +19,12 @@ object HighlightsRepositoryEditReelResponseFbUserTags {
   }
   
   @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseFbUserTagsOps[Self <: HighlightsRepositoryEditReelResponseFbUserTags] (val x: Self) extends AnyVal {
+  implicit class HighlightsRepositoryEditReelResponseFbUserTagsMutableBuilder[Self <: HighlightsRepositoryEditReelResponseFbUserTags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIn(value: js.Array[_]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInVarargs(value: js.Any*): Self = this.set("in", js.Array(value :_*))
-    
-    @scala.inline
-    def setIn(value: js.Array[_]): Self = this.set("in", value.asInstanceOf[js.Any])
+    def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
   }
 }

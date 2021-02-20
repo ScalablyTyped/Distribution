@@ -1,16 +1,16 @@
 package typings.dateFns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/formatISODuration/index", JSImport.Namespace)
-@js.native
-object dateFnsFormatISODurationIndexMod extends js.Object {
+object dateFnsFormatISODurationIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/formatISODuration/index", JSImport.Default)
+    @js.native
     def apply(duration: typings.dateFns.mod.Duration): String = js.native
   }
 }

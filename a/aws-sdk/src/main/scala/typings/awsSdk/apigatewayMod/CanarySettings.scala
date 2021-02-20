@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanarySettings extends js.Object {
+trait CanarySettings extends StObject {
   
   /**
     * The ID of the canary deployment.
@@ -36,42 +37,30 @@ object CanarySettings {
   }
   
   @scala.inline
-  implicit class CanarySettingsOps[Self <: CanarySettings] (val x: Self) extends AnyVal {
+  implicit class CanarySettingsMutableBuilder[Self <: CanarySettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPercentTraffic(value: Double): Self = StObject.set(x, "percentTraffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: String): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    def setPercentTrafficUndefined: Self = StObject.set(x, "percentTraffic", js.undefined)
     
     @scala.inline
-    def deleteDeploymentId: Self = this.set("deploymentId", js.undefined)
+    def setStageVariableOverrides(value: MapOfStringToString): Self = StObject.set(x, "stageVariableOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentTraffic(value: Double): Self = this.set("percentTraffic", value.asInstanceOf[js.Any])
+    def setStageVariableOverridesUndefined: Self = StObject.set(x, "stageVariableOverrides", js.undefined)
     
     @scala.inline
-    def deletePercentTraffic: Self = this.set("percentTraffic", js.undefined)
+    def setUseStageCache(value: Boolean): Self = StObject.set(x, "useStageCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageVariableOverrides(value: MapOfStringToString): Self = this.set("stageVariableOverrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageVariableOverrides: Self = this.set("stageVariableOverrides", js.undefined)
-    
-    @scala.inline
-    def setUseStageCache(value: Boolean): Self = this.set("useStageCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseStageCache: Self = this.set("useStageCache", js.undefined)
+    def setUseStageCacheUndefined: Self = StObject.set(x, "useStageCache", js.undefined)
   }
 }

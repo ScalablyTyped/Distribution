@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientLanguage.anon.Fields
 import typings.maximMazurokGapiClientLanguage.anon.Key
 import typings.maximMazurokGapiClientLanguage.anon.Oauthtoken
 import typings.maximMazurokGapiClientLanguage.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentsResource extends js.Object {
+trait DocumentsResource extends StObject {
   
   /** Finds named entities (currently proper names and common nouns) in the text along with entity types, salience, mentions for each entity, and other properties. */
   def analyzeEntities(request: Accesstoken): Request[AnalyzeEntitiesResponse] = js.native

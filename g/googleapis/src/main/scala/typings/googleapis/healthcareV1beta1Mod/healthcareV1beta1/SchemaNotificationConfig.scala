@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies where notifications should be sent upon changes to a data store.
   */
 @js.native
-trait SchemaNotificationConfig extends js.Object {
+trait SchemaNotificationConfig extends StObject {
   
   /**
     * The [Cloud Pub/Sub](https://cloud.google.com/pubsub/docs/) topic that
@@ -35,24 +36,12 @@ object SchemaNotificationConfig {
   }
   
   @scala.inline
-  implicit class SchemaNotificationConfigOps[Self <: SchemaNotificationConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaNotificationConfigMutableBuilder[Self <: SchemaNotificationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPubsubTopic(value: String): Self = this.set("pubsubTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubsubTopic: Self = this.set("pubsubTopic", js.undefined)
+    def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
   }
 }

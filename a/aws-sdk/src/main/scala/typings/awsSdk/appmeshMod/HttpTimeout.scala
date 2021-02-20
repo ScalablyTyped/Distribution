@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpTimeout extends js.Object {
+trait HttpTimeout extends StObject {
   
   /**
     * An object that represents an idle timeout. An idle timeout bounds the amount of time that a connection may be idle. The default value is none.
@@ -26,30 +27,18 @@ object HttpTimeout {
   }
   
   @scala.inline
-  implicit class HttpTimeoutOps[Self <: HttpTimeout] (val x: Self) extends AnyVal {
+  implicit class HttpTimeoutMutableBuilder[Self <: HttpTimeout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdle(value: Duration): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPerRequest(value: Duration): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdle(value: Duration): Self = this.set("idle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdle: Self = this.set("idle", js.undefined)
-    
-    @scala.inline
-    def setPerRequest(value: Duration): Self = this.set("perRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerRequest: Self = this.set("perRequest", js.undefined)
+    def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
   }
 }

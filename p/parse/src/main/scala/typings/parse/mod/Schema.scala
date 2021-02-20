@@ -1,6 +1,7 @@
 package typings.parse.mod
 
 import typings.parse.mod.global.Parse.Attributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,10 +27,7 @@ class Schema[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] prote
   extends typings.parse.mod.global.Parse.Schema[T] {
   def this(className: String) = this()
 }
-/* static members */
-@JSImport("parse", "Schema")
-@js.native
-object Schema extends js.Object {
+object Schema {
   
   /**
     * Static method to get all schemas
@@ -37,5 +35,8 @@ object Schema extends js.Object {
     * @return A promise that is resolved with the result when
     * the query completes.
     */
+  /* static member */
+  @JSImport("parse", "Schema.all")
+  @js.native
   def all(): js.Promise[js.Array[typings.parse.mod.global.Parse.Schema[_]]] = js.native
 }

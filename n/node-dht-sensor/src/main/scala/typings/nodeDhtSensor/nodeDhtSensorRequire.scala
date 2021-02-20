@@ -1,5 +1,6 @@
 package typings.nodeDhtSensor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("node-dht-sensor", JSImport.Namespace)
 @js.native
-object nodeDhtSensorRequire extends js.Object
+object nodeDhtSensorRequire extends StObject

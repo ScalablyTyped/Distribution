@@ -1,7 +1,10 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.playcanvas.anon.App
 import typings.playcanvas.anon.Enabled
 import typings.playcanvas.anon.TypeofScriptType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ScriptComponent extends Component {
   
+  def create(nameOrType: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])): ScriptType = js.native
+  def create(nameOrType: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType]), args: Enabled): ScriptType = js.native
   /**
     * Create a script instance and attach to an entity script component.
     * @example
@@ -36,9 +41,8 @@ trait ScriptComponent extends Component {
     */
   def create(nameOrType: String): ScriptType = js.native
   def create(nameOrType: String, args: Enabled): ScriptType = js.native
-  def create(nameOrType: TypeofScriptType): ScriptType = js.native
-  def create(nameOrType: TypeofScriptType, args: Enabled): ScriptType = js.native
   
+  def destroy(nameOrType: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
   /**
     * Destroy the script instance that is attached to an entity.
     * @example
@@ -47,8 +51,8 @@ trait ScriptComponent extends Component {
     * @returns If it was successfully destroyed.
     */
   def destroy(nameOrType: String): Boolean = js.native
-  def destroy(nameOrType: TypeofScriptType): Boolean = js.native
   
+  def get(nameOrType: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])): ScriptType | Null = js.native
   /**
     * Get a script instance (if attached).
     * @example
@@ -57,8 +61,8 @@ trait ScriptComponent extends Component {
     * @returns If script is attached, the instance is returned. Otherwise null is returned.
     */
   def get(nameOrType: String): ScriptType | Null = js.native
-  def get(nameOrType: TypeofScriptType): ScriptType | Null = js.native
   
+  def has(nameOrType: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
   /**
     * Detect if script is attached to an entity.
     * @example
@@ -69,8 +73,8 @@ trait ScriptComponent extends Component {
     * @returns If script is attached to an entity.
     */
   def has(nameOrType: String): Boolean = js.native
-  def has(nameOrType: TypeofScriptType): Boolean = js.native
   
+  def move(nameOrType: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType]), ind: Double): Boolean = js.native
   /**
     * Move script instance to different position to alter update order of scripts within entity.
     * @example
@@ -80,7 +84,6 @@ trait ScriptComponent extends Component {
     * @returns If it was successfully moved.
     */
   def move(nameOrType: String, ind: Double): Boolean = js.native
-  def move(nameOrType: TypeofScriptType, ind: Double): Boolean = js.native
   
   /**
     * An array of all script instances attached to an entity. This Array shall not be modified by developer.

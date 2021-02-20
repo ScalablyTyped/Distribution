@@ -2,13 +2,14 @@ package typings.squareConnect.mod
 
 import typings.squareConnect.squareConnectStrings.CLOSED
 import typings.squareConnect.squareConnectStrings.OPEN
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ShiftFilter")
 @js.native
-class ShiftFilter () extends js.Object {
+class ShiftFilter () extends StObject {
   
   /**
     * Fetch shifts for the specified employees. DEPRECATED at version 2020-08-26. Use `team_member_ids` instead.

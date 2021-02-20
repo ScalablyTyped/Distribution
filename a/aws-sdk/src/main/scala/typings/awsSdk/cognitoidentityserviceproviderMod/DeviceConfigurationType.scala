@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceConfigurationType extends js.Object {
+trait DeviceConfigurationType extends StObject {
   
   /**
     * Indicates whether a challenge is required on a new device. Only applicable to a new device.
@@ -26,30 +27,18 @@ object DeviceConfigurationType {
   }
   
   @scala.inline
-  implicit class DeviceConfigurationTypeOps[Self <: DeviceConfigurationType] (val x: Self) extends AnyVal {
+  implicit class DeviceConfigurationTypeMutableBuilder[Self <: DeviceConfigurationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChallengeRequiredOnNewDevice(value: BooleanType): Self = StObject.set(x, "ChallengeRequiredOnNewDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChallengeRequiredOnNewDeviceUndefined: Self = StObject.set(x, "ChallengeRequiredOnNewDevice", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceOnlyRememberedOnUserPrompt(value: BooleanType): Self = StObject.set(x, "DeviceOnlyRememberedOnUserPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallengeRequiredOnNewDevice(value: BooleanType): Self = this.set("ChallengeRequiredOnNewDevice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChallengeRequiredOnNewDevice: Self = this.set("ChallengeRequiredOnNewDevice", js.undefined)
-    
-    @scala.inline
-    def setDeviceOnlyRememberedOnUserPrompt(value: BooleanType): Self = this.set("DeviceOnlyRememberedOnUserPrompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceOnlyRememberedOnUserPrompt: Self = this.set("DeviceOnlyRememberedOnUserPrompt", js.undefined)
+    def setDeviceOnlyRememberedOnUserPromptUndefined: Self = StObject.set(x, "DeviceOnlyRememberedOnUserPrompt", js.undefined)
   }
 }

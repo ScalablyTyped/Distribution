@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesDeleteBackupInputMod.DeleteBacku
 import typings.awsSdkClientDynamodbBrowser.typesDeleteBackupOutputMod.DeleteBackupOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/DeleteBackupCommand", JSImport.Namespace)
-@js.native
-object deleteBackupCommandMod extends js.Object {
+object deleteBackupCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/DeleteBackupCommand", "DeleteBackupCommand")
   @js.native
   class DeleteBackupCommand protected () extends Command[
           InputTypesUnion, 

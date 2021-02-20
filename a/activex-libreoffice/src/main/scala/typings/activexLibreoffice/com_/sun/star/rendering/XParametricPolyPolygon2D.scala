@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,33 +68,21 @@ object XParametricPolyPolygon2D {
   }
   
   @scala.inline
-  implicit class XParametricPolyPolygon2DOps[Self <: XParametricPolyPolygon2D] (val x: Self) extends AnyVal {
+  implicit class XParametricPolyPolygon2DMutableBuilder[Self <: XParametricPolyPolygon2D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorSpace(value: XColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetColor(value: Double => SafeArray[ColorComponent]): Self = StObject.set(x, "getColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetColorSpace(value: () => XColorSpace): Self = StObject.set(x, "getColorSpace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColorSpace(value: XColorSpace): Self = this.set("ColorSpace", value.asInstanceOf[js.Any])
+    def setGetOutline(value: Double => XPolyPolygon2D): Self = StObject.set(x, "getOutline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColor(value: Double => SafeArray[ColorComponent]): Self = this.set("getColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetColorSpace(value: () => XColorSpace): Self = this.set("getColorSpace", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetOutline(value: Double => XPolyPolygon2D): Self = this.set("getOutline", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPointColor(value: RealPoint2D => SafeArray[ColorComponent]): Self = this.set("getPointColor", js.Any.fromFunction1(value))
+    def setGetPointColor(value: RealPoint2D => SafeArray[ColorComponent]): Self = StObject.set(x, "getPointColor", js.Any.fromFunction1(value))
   }
 }

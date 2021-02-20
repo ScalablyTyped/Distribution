@@ -1,11 +1,12 @@
 package typings.jsrsasign.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hash extends js.Object {
+trait Hash extends StObject {
   
   var hash: Alg = js.native
   
@@ -20,24 +21,12 @@ object Hash {
   }
   
   @scala.inline
-  implicit class HashOps[Self <: Hash] (val x: Self) extends AnyVal {
+  implicit class HashMutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: Alg): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHash(value: Alg): Self = this.set("hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOid(value: String): Self = this.set("oid", value.asInstanceOf[js.Any])
+    def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
   }
 }

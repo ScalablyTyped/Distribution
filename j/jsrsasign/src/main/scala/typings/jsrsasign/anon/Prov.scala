@@ -1,11 +1,12 @@
 package typings.jsrsasign.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Prov extends js.Object {
+trait Prov extends StObject {
   
   var alg: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Prov {
   }
   
   @scala.inline
-  implicit class ProvOps[Self <: Prov] (val x: Self) extends AnyVal {
+  implicit class ProvMutableBuilder[Self <: Prov] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProv(value: String): Self = StObject.set(x, "prov", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlg(value: String): Self = this.set("alg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlg: Self = this.set("alg", js.undefined)
-    
-    @scala.inline
-    def setProv(value: String): Self = this.set("prov", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProv: Self = this.set("prov", js.undefined)
+    def setProvUndefined: Self = StObject.set(x, "prov", js.undefined)
   }
 }

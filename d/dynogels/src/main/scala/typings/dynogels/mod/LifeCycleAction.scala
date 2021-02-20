@@ -1,5 +1,6 @@
 package typings.dynogels.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.dynogels.dynogelsStrings.update
   - typings.dynogels.dynogelsStrings.destroy
 */
-trait LifeCycleAction extends js.Object
+trait LifeCycleAction extends StObject
 object LifeCycleAction {
   
   @scala.inline

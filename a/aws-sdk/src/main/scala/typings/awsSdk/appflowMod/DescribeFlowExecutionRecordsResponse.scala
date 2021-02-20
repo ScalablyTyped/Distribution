@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeFlowExecutionRecordsResponse extends js.Object {
+trait DescribeFlowExecutionRecordsResponse extends StObject {
   
   /**
     *  Returns a list of all instances when this flow was run. 
@@ -26,33 +27,21 @@ object DescribeFlowExecutionRecordsResponse {
   }
   
   @scala.inline
-  implicit class DescribeFlowExecutionRecordsResponseOps[Self <: DescribeFlowExecutionRecordsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeFlowExecutionRecordsResponseMutableBuilder[Self <: DescribeFlowExecutionRecordsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlowExecutions(value: FlowExecutionList): Self = StObject.set(x, "flowExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlowExecutionsUndefined: Self = StObject.set(x, "flowExecutions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowExecutionsVarargs(value: ExecutionRecord*): Self = StObject.set(x, "flowExecutions", js.Array(value :_*))
     
     @scala.inline
-    def setFlowExecutionsVarargs(value: ExecutionRecord*): Self = this.set("flowExecutions", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowExecutions(value: FlowExecutionList): Self = this.set("flowExecutions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlowExecutions: Self = this.set("flowExecutions", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

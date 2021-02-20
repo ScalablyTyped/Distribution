@@ -1,5 +1,6 @@
 package typings.escpos.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.escpos.escposStrings.S24
   - typings.escpos.escposStrings.D24
 */
-trait BITMAP_FORMAT_TYPE extends js.Object
+trait BITMAP_FORMAT_TYPE extends StObject
 object BITMAP_FORMAT_TYPE {
   
   @scala.inline

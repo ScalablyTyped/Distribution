@@ -3,6 +3,7 @@ package typings.stellarSdk.serverApiMod.ServerApi
 import typings.stellarBase.mod.AssetType
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.createPassiveOffer
 import typings.stellarSdk.horizonApiMod.Horizon.PriceR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

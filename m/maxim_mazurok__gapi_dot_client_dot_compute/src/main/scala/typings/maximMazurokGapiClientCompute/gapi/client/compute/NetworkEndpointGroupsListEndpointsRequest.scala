@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkEndpointGroupsListEndpointsRequest extends js.Object {
+trait NetworkEndpointGroupsListEndpointsRequest extends StObject {
   
   /**
     * Optional query parameter for showing the health status of each network endpoint. Valid options are SKIP or SHOW. If you don't specify this parameter, the health status of network
@@ -22,24 +23,12 @@ object NetworkEndpointGroupsListEndpointsRequest {
   }
   
   @scala.inline
-  implicit class NetworkEndpointGroupsListEndpointsRequestOps[Self <: NetworkEndpointGroupsListEndpointsRequest] (val x: Self) extends AnyVal {
+  implicit class NetworkEndpointGroupsListEndpointsRequestMutableBuilder[Self <: NetworkEndpointGroupsListEndpointsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthStatus(value: String): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHealthStatus(value: String): Self = this.set("healthStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthStatus: Self = this.set("healthStatus", js.undefined)
+    def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartListElement extends js.Object {
+trait PartListElement extends StObject {
   
   /**
     * The byte range of a part, inclusive of the upper value of the range.
@@ -26,30 +27,18 @@ object PartListElement {
   }
   
   @scala.inline
-  implicit class PartListElementOps[Self <: PartListElement] (val x: Self) extends AnyVal {
+  implicit class PartListElementMutableBuilder[Self <: PartListElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRangeInBytes(value: String): Self = StObject.set(x, "RangeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangeInBytesUndefined: Self = StObject.set(x, "RangeInBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSHA256TreeHash(value: String): Self = StObject.set(x, "SHA256TreeHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeInBytes(value: String): Self = this.set("RangeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeInBytes: Self = this.set("RangeInBytes", js.undefined)
-    
-    @scala.inline
-    def setSHA256TreeHash(value: String): Self = this.set("SHA256TreeHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSHA256TreeHash: Self = this.set("SHA256TreeHash", js.undefined)
+    def setSHA256TreeHashUndefined: Self = StObject.set(x, "SHA256TreeHash", js.undefined)
   }
 }

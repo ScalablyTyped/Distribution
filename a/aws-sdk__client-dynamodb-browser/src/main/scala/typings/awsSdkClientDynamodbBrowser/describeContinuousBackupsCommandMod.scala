@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesDescribeContinuousBackupsInputMo
 import typings.awsSdkClientDynamodbBrowser.typesDescribeContinuousBackupsOutputMod.DescribeContinuousBackupsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/DescribeContinuousBackupsCommand", JSImport.Namespace)
-@js.native
-object describeContinuousBackupsCommandMod extends js.Object {
+object describeContinuousBackupsCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/DescribeContinuousBackupsCommand", "DescribeContinuousBackupsCommand")
   @js.native
   class DescribeContinuousBackupsCommand protected () extends Command[
           InputTypesUnion, 

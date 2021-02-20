@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.3
   */
 @js.native
-trait Duration extends js.Object {
+trait Duration extends StObject {
   
   /** contains the days. */
   var Days: Double = js.native
@@ -58,42 +59,30 @@ object Duration {
   }
   
   @scala.inline
-  implicit class DurationOps[Self <: Duration] (val x: Self) extends AnyVal {
+  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHours(value: Double): Self = StObject.set(x, "Hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinutes(value: Double): Self = StObject.set(x, "Minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDays(value: Double): Self = this.set("Days", value.asInstanceOf[js.Any])
+    def setMonths(value: Double): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHours(value: Double): Self = this.set("Hours", value.asInstanceOf[js.Any])
+    def setNanoSeconds(value: Double): Self = StObject.set(x, "NanoSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinutes(value: Double): Self = this.set("Minutes", value.asInstanceOf[js.Any])
+    def setNegative(value: Boolean): Self = StObject.set(x, "Negative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonths(value: Double): Self = this.set("Months", value.asInstanceOf[js.Any])
+    def setSeconds(value: Double): Self = StObject.set(x, "Seconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNanoSeconds(value: Double): Self = this.set("NanoSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNegative(value: Boolean): Self = this.set("Negative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeconds(value: Double): Self = this.set("Seconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYears(value: Double): Self = this.set("Years", value.asInstanceOf[js.Any])
+    def setYears(value: Double): Self = StObject.set(x, "Years", value.asInstanceOf[js.Any])
   }
 }

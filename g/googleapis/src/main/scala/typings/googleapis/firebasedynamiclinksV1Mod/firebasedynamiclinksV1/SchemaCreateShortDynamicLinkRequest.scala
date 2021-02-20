@@ -1,5 +1,6 @@
 package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to create a short Dynamic Link.
   */
 @js.native
-trait SchemaCreateShortDynamicLinkRequest extends js.Object {
+trait SchemaCreateShortDynamicLinkRequest extends StObject {
   
   /**
     * Information about the Dynamic Link to be shortened. [Learn
@@ -45,42 +46,30 @@ object SchemaCreateShortDynamicLinkRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreateShortDynamicLinkRequestOps[Self <: SchemaCreateShortDynamicLinkRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateShortDynamicLinkRequestMutableBuilder[Self <: SchemaCreateShortDynamicLinkRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicLinkInfo(value: SchemaDynamicLinkInfo): Self = StObject.set(x, "dynamicLinkInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicLinkInfoUndefined: Self = StObject.set(x, "dynamicLinkInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLongDynamicLink(value: String): Self = StObject.set(x, "longDynamicLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicLinkInfo(value: SchemaDynamicLinkInfo): Self = this.set("dynamicLinkInfo", value.asInstanceOf[js.Any])
+    def setLongDynamicLinkUndefined: Self = StObject.set(x, "longDynamicLink", js.undefined)
     
     @scala.inline
-    def deleteDynamicLinkInfo: Self = this.set("dynamicLinkInfo", js.undefined)
+    def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongDynamicLink(value: String): Self = this.set("longDynamicLink", value.asInstanceOf[js.Any])
+    def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
     
     @scala.inline
-    def deleteLongDynamicLink: Self = this.set("longDynamicLink", js.undefined)
+    def setSuffix(value: SchemaSuffix): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSdkVersion(value: String): Self = this.set("sdkVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSdkVersion: Self = this.set("sdkVersion", js.undefined)
-    
-    @scala.inline
-    def setSuffix(value: SchemaSuffix): Self = this.set("suffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

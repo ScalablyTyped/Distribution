@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -320,414 +321,402 @@ object Measure {
   }
   
   @scala.inline
-  implicit class MeasureOps[Self <: Measure] (val x: Self) extends AnyVal {
+  implicit class MeasureMutableBuilder[Self <: Measure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalDate(value: date): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalDateUndefined: Self = StObject.set(x, "approvalDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClinicalRecommendationStatement(value: markdown): Self = StObject.set(x, "clinicalRecommendationStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setClinicalRecommendationStatementUndefined: Self = StObject.set(x, "clinicalRecommendationStatement", js.undefined)
     
     @scala.inline
-    def set_approvalDate(value: Element): Self = this.set("_approvalDate", value.asInstanceOf[js.Any])
+    def setCompositeScoring(value: CodeableConcept): Self = StObject.set(x, "compositeScoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_approvalDate: Self = this.set("_approvalDate", js.undefined)
+    def setCompositeScoringUndefined: Self = StObject.set(x, "compositeScoring", js.undefined)
     
     @scala.inline
-    def set_clinicalRecommendationStatement(value: Element): Self = this.set("_clinicalRecommendationStatement", value.asInstanceOf[js.Any])
+    def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_clinicalRecommendationStatement: Self = this.set("_clinicalRecommendationStatement", js.undefined)
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def set_copyright(value: Element): Self = this.set("_copyright", value.asInstanceOf[js.Any])
+    def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
     @scala.inline
-    def delete_copyright: Self = this.set("_copyright", js.undefined)
+    def setContributor(value: js.Array[Contributor]): Self = StObject.set(x, "contributor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def setContributorUndefined: Self = StObject.set(x, "contributor", js.undefined)
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def setContributorVarargs(value: Contributor*): Self = StObject.set(x, "contributor", js.Array(value :_*))
     
     @scala.inline
-    def set_definitionVarargs(value: Element*): Self = this.set("_definition", js.Array(value :_*))
+    def setCopyright(value: markdown): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_definition(value: js.Array[Element]): Self = this.set("_definition", value.asInstanceOf[js.Any])
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def delete_definition: Self = this.set("_definition", js.undefined)
+    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setDefinition(value: js.Array[markdown]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_disclaimer(value: Element): Self = this.set("_disclaimer", value.asInstanceOf[js.Any])
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def delete_disclaimer: Self = this.set("_disclaimer", js.undefined)
+    def setDefinitionVarargs(value: markdown*): Self = StObject.set(x, "definition", js.Array(value :_*))
     
     @scala.inline
-    def set_experimental(value: Element): Self = this.set("_experimental", value.asInstanceOf[js.Any])
+    def setDescription(value: markdown): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_experimental: Self = this.set("_experimental", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set_guidance(value: Element): Self = this.set("_guidance", value.asInstanceOf[js.Any])
+    def setDisclaimer(value: markdown): Self = StObject.set(x, "disclaimer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_guidance: Self = this.set("_guidance", js.undefined)
+    def setDisclaimerUndefined: Self = StObject.set(x, "disclaimer", js.undefined)
     
     @scala.inline
-    def set_improvementNotation(value: Element): Self = this.set("_improvementNotation", value.asInstanceOf[js.Any])
+    def setEffectivePeriod(value: Period): Self = StObject.set(x, "effectivePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_improvementNotation: Self = this.set("_improvementNotation", js.undefined)
+    def setEffectivePeriodUndefined: Self = StObject.set(x, "effectivePeriod", js.undefined)
     
     @scala.inline
-    def set_lastReviewDate(value: Element): Self = this.set("_lastReviewDate", value.asInstanceOf[js.Any])
+    def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_lastReviewDate: Self = this.set("_lastReviewDate", js.undefined)
+    def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setGroup(value: js.Array[MeasureGroup]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def set_publisher(value: Element): Self = this.set("_publisher", value.asInstanceOf[js.Any])
+    def setGroupVarargs(value: MeasureGroup*): Self = StObject.set(x, "group", js.Array(value :_*))
     
     @scala.inline
-    def delete_publisher: Self = this.set("_publisher", js.undefined)
+    def setGuidance(value: markdown): Self = StObject.set(x, "guidance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_purpose(value: Element): Self = this.set("_purpose", value.asInstanceOf[js.Any])
+    def setGuidanceUndefined: Self = StObject.set(x, "guidance", js.undefined)
     
     @scala.inline
-    def delete_purpose: Self = this.set("_purpose", js.undefined)
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_rateAggregation(value: Element): Self = this.set("_rateAggregation", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def delete_rateAggregation: Self = this.set("_rateAggregation", js.undefined)
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def set_rationale(value: Element): Self = this.set("_rationale", value.asInstanceOf[js.Any])
+    def setImprovementNotation(value: String): Self = StObject.set(x, "improvementNotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_rationale: Self = this.set("_rationale", js.undefined)
+    def setImprovementNotationUndefined: Self = StObject.set(x, "improvementNotation", js.undefined)
     
     @scala.inline
-    def set_riskAdjustment(value: Element): Self = this.set("_riskAdjustment", value.asInstanceOf[js.Any])
+    def setJurisdiction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_riskAdjustment: Self = this.set("_riskAdjustment", js.undefined)
+    def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
     
     @scala.inline
-    def set_set(value: Element): Self = this.set("_set", value.asInstanceOf[js.Any])
+    def setJurisdictionVarargs(value: CodeableConcept*): Self = StObject.set(x, "jurisdiction", js.Array(value :_*))
     
     @scala.inline
-    def delete_set: Self = this.set("_set", js.undefined)
+    def setLastReviewDate(value: date): Self = StObject.set(x, "lastReviewDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setLastReviewDateUndefined: Self = StObject.set(x, "lastReviewDate", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setLibrary(value: js.Array[Reference]): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
     
     @scala.inline
-    def delete_title: Self = this.set("_title", js.undefined)
+    def setLibraryVarargs(value: Reference*): Self = StObject.set(x, "library", js.Array(value :_*))
     
     @scala.inline
-    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_url: Self = this.set("_url", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set_usage(value: Element): Self = this.set("_usage", value.asInstanceOf[js.Any])
+    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_usage: Self = this.set("_usage", js.undefined)
+    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     @scala.inline
-    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    def setPurpose(value: markdown): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_version: Self = this.set("_version", js.undefined)
+    def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
     @scala.inline
-    def setApprovalDate(value: date): Self = this.set("approvalDate", value.asInstanceOf[js.Any])
+    def setRateAggregation(value: String): Self = StObject.set(x, "rateAggregation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApprovalDate: Self = this.set("approvalDate", js.undefined)
+    def setRateAggregationUndefined: Self = StObject.set(x, "rateAggregation", js.undefined)
     
     @scala.inline
-    def setClinicalRecommendationStatement(value: markdown): Self = this.set("clinicalRecommendationStatement", value.asInstanceOf[js.Any])
+    def setRationale(value: markdown): Self = StObject.set(x, "rationale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClinicalRecommendationStatement: Self = this.set("clinicalRecommendationStatement", js.undefined)
+    def setRationaleUndefined: Self = StObject.set(x, "rationale", js.undefined)
     
     @scala.inline
-    def setCompositeScoring(value: CodeableConcept): Self = this.set("compositeScoring", value.asInstanceOf[js.Any])
+    def setRelatedArtifact(value: js.Array[RelatedArtifact]): Self = StObject.set(x, "relatedArtifact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompositeScoring: Self = this.set("compositeScoring", js.undefined)
+    def setRelatedArtifactUndefined: Self = StObject.set(x, "relatedArtifact", js.undefined)
     
     @scala.inline
-    def setContactVarargs(value: ContactDetail*): Self = this.set("contact", js.Array(value :_*))
+    def setRelatedArtifactVarargs(value: RelatedArtifact*): Self = StObject.set(x, "relatedArtifact", js.Array(value :_*))
     
     @scala.inline
-    def setContact(value: js.Array[ContactDetail]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setRiskAdjustment(value: String): Self = StObject.set(x, "riskAdjustment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setRiskAdjustmentUndefined: Self = StObject.set(x, "riskAdjustment", js.undefined)
     
     @scala.inline
-    def setContributorVarargs(value: Contributor*): Self = this.set("contributor", js.Array(value :_*))
+    def setScoring(value: CodeableConcept): Self = StObject.set(x, "scoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributor(value: js.Array[Contributor]): Self = this.set("contributor", value.asInstanceOf[js.Any])
+    def setScoringUndefined: Self = StObject.set(x, "scoring", js.undefined)
     
     @scala.inline
-    def deleteContributor: Self = this.set("contributor", js.undefined)
+    def setSet(value: String): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: markdown): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setSupplementalData(value: js.Array[MeasureSupplementalData]): Self = StObject.set(x, "supplementalData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setSupplementalDataUndefined: Self = StObject.set(x, "supplementalData", js.undefined)
     
     @scala.inline
-    def setDefinitionVarargs(value: markdown*): Self = this.set("definition", js.Array(value :_*))
+    def setSupplementalDataVarargs(value: MeasureSupplementalData*): Self = StObject.set(x, "supplementalData", js.Array(value :_*))
     
     @scala.inline
-    def setDefinition(value: js.Array[markdown]): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setDescription(value: markdown): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setTopic(value: js.Array[CodeableConcept]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
     @scala.inline
-    def setDisclaimer(value: markdown): Self = this.set("disclaimer", value.asInstanceOf[js.Any])
+    def setTopicVarargs(value: CodeableConcept*): Self = StObject.set(x, "topic", js.Array(value :_*))
     
     @scala.inline
-    def deleteDisclaimer: Self = this.set("disclaimer", js.undefined)
+    def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectivePeriod(value: Period): Self = this.set("effectivePeriod", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteEffectivePeriod: Self = this.set("effectivePeriod", js.undefined)
+    def setTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def setExperimental(value: Boolean): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setGroupVarargs(value: MeasureGroup*): Self = this.set("group", js.Array(value :_*))
+    def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: js.Array[MeasureGroup]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setUseContext(value: js.Array[UsageContext]): Self = StObject.set(x, "useContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuidance(value: markdown): Self = this.set("guidance", value.asInstanceOf[js.Any])
+    def setUseContextUndefined: Self = StObject.set(x, "useContext", js.undefined)
     
     @scala.inline
-    def deleteGuidance: Self = this.set("guidance", js.undefined)
+    def setUseContextVarargs(value: UsageContext*): Self = StObject.set(x, "useContext", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def set_approvalDate(value: Element): Self = StObject.set(x, "_approvalDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImprovementNotation(value: String): Self = this.set("improvementNotation", value.asInstanceOf[js.Any])
+    def set_approvalDateUndefined: Self = StObject.set(x, "_approvalDate", js.undefined)
     
     @scala.inline
-    def deleteImprovementNotation: Self = this.set("improvementNotation", js.undefined)
+    def set_clinicalRecommendationStatement(value: Element): Self = StObject.set(x, "_clinicalRecommendationStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdictionVarargs(value: CodeableConcept*): Self = this.set("jurisdiction", js.Array(value :_*))
+    def set_clinicalRecommendationStatementUndefined: Self = StObject.set(x, "_clinicalRecommendationStatement", js.undefined)
     
     @scala.inline
-    def setJurisdiction(value: js.Array[CodeableConcept]): Self = this.set("jurisdiction", value.asInstanceOf[js.Any])
+    def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJurisdiction: Self = this.set("jurisdiction", js.undefined)
+    def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
     @scala.inline
-    def setLastReviewDate(value: date): Self = this.set("lastReviewDate", value.asInstanceOf[js.Any])
+    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastReviewDate: Self = this.set("lastReviewDate", js.undefined)
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
     @scala.inline
-    def setLibraryVarargs(value: Reference*): Self = this.set("library", js.Array(value :_*))
+    def set_definition(value: js.Array[Element]): Self = StObject.set(x, "_definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLibrary(value: js.Array[Reference]): Self = this.set("library", value.asInstanceOf[js.Any])
+    def set_definitionUndefined: Self = StObject.set(x, "_definition", js.undefined)
     
     @scala.inline
-    def deleteLibrary: Self = this.set("library", js.undefined)
+    def set_definitionVarargs(value: Element*): Self = StObject.set(x, "_definition", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def setPublisher(value: String): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    def set_disclaimer(value: Element): Self = StObject.set(x, "_disclaimer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublisher: Self = this.set("publisher", js.undefined)
+    def set_disclaimerUndefined: Self = StObject.set(x, "_disclaimer", js.undefined)
     
     @scala.inline
-    def setPurpose(value: markdown): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    def set_experimental(value: Element): Self = StObject.set(x, "_experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePurpose: Self = this.set("purpose", js.undefined)
+    def set_experimentalUndefined: Self = StObject.set(x, "_experimental", js.undefined)
     
     @scala.inline
-    def setRateAggregation(value: String): Self = this.set("rateAggregation", value.asInstanceOf[js.Any])
+    def set_guidance(value: Element): Self = StObject.set(x, "_guidance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRateAggregation: Self = this.set("rateAggregation", js.undefined)
+    def set_guidanceUndefined: Self = StObject.set(x, "_guidance", js.undefined)
     
     @scala.inline
-    def setRationale(value: markdown): Self = this.set("rationale", value.asInstanceOf[js.Any])
+    def set_improvementNotation(value: Element): Self = StObject.set(x, "_improvementNotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRationale: Self = this.set("rationale", js.undefined)
+    def set_improvementNotationUndefined: Self = StObject.set(x, "_improvementNotation", js.undefined)
     
     @scala.inline
-    def setRelatedArtifactVarargs(value: RelatedArtifact*): Self = this.set("relatedArtifact", js.Array(value :_*))
+    def set_lastReviewDate(value: Element): Self = StObject.set(x, "_lastReviewDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedArtifact(value: js.Array[RelatedArtifact]): Self = this.set("relatedArtifact", value.asInstanceOf[js.Any])
+    def set_lastReviewDateUndefined: Self = StObject.set(x, "_lastReviewDate", js.undefined)
     
     @scala.inline
-    def deleteRelatedArtifact: Self = this.set("relatedArtifact", js.undefined)
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiskAdjustment(value: String): Self = this.set("riskAdjustment", value.asInstanceOf[js.Any])
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def deleteRiskAdjustment: Self = this.set("riskAdjustment", js.undefined)
+    def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoring(value: CodeableConcept): Self = this.set("scoring", value.asInstanceOf[js.Any])
+    def set_publisherUndefined: Self = StObject.set(x, "_publisher", js.undefined)
     
     @scala.inline
-    def deleteScoring: Self = this.set("scoring", js.undefined)
+    def set_purpose(value: Element): Self = StObject.set(x, "_purpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: String): Self = this.set("set", value.asInstanceOf[js.Any])
+    def set_purposeUndefined: Self = StObject.set(x, "_purpose", js.undefined)
     
     @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def set_rateAggregation(value: Element): Self = StObject.set(x, "_rateAggregation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupplementalDataVarargs(value: MeasureSupplementalData*): Self = this.set("supplementalData", js.Array(value :_*))
+    def set_rateAggregationUndefined: Self = StObject.set(x, "_rateAggregation", js.undefined)
     
     @scala.inline
-    def setSupplementalData(value: js.Array[MeasureSupplementalData]): Self = this.set("supplementalData", value.asInstanceOf[js.Any])
+    def set_rationale(value: Element): Self = StObject.set(x, "_rationale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSupplementalData: Self = this.set("supplementalData", js.undefined)
+    def set_rationaleUndefined: Self = StObject.set(x, "_rationale", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def set_riskAdjustment(value: Element): Self = StObject.set(x, "_riskAdjustment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def set_riskAdjustmentUndefined: Self = StObject.set(x, "_riskAdjustment", js.undefined)
     
     @scala.inline
-    def setTopicVarargs(value: CodeableConcept*): Self = this.set("topic", js.Array(value :_*))
+    def set_set(value: Element): Self = StObject.set(x, "_set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopic(value: js.Array[CodeableConcept]): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def set_setUndefined: Self = StObject.set(x, "_set", js.undefined)
     
     @scala.inline
-    def deleteTopic: Self = this.set("topic", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeVarargs(value: CodeableConcept*): Self = this.set("type", js.Array(value :_*))
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
     @scala.inline
-    def setType(value: js.Array[CodeableConcept]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
     
     @scala.inline
-    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
+    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     @scala.inline
-    def setUsage(value: String): Self = this.set("usage", value.asInstanceOf[js.Any])
+    def set_usage(value: Element): Self = StObject.set(x, "_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
+    def set_usageUndefined: Self = StObject.set(x, "_usage", js.undefined)
     
     @scala.inline
-    def setUseContextVarargs(value: UsageContext*): Self = this.set("useContext", js.Array(value :_*))
+    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseContext(value: js.Array[UsageContext]): Self = this.set("useContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseContext: Self = this.set("useContext", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

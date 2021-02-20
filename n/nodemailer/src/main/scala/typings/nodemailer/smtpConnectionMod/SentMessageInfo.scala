@@ -1,11 +1,12 @@
 package typings.nodemailer.smtpConnectionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SentMessageInfo extends js.Object {
+trait SentMessageInfo extends StObject {
   
   /** an array of accepted recipient addresses. Normally this array should contain at least one address except when in LMTP mode. In this case the message itself might have succeeded but all recipients were rejected after sending the message. */
   var accepted: js.Array[String] = js.native
@@ -44,51 +45,39 @@ object SentMessageInfo {
   }
   
   @scala.inline
-  implicit class SentMessageInfoOps[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
+  implicit class SentMessageInfoMutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccepted(value: js.Array[String]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptedVarargs(value: String*): Self = StObject.set(x, "accepted", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvelopeTime(value: Double): Self = StObject.set(x, "envelopeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptedVarargs(value: String*): Self = this.set("accepted", js.Array(value :_*))
+    def setMessageSize(value: Double): Self = StObject.set(x, "messageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccepted(value: js.Array[String]): Self = this.set("accepted", value.asInstanceOf[js.Any])
+    def setMessageTime(value: Double): Self = StObject.set(x, "messageTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeTime(value: Double): Self = this.set("envelopeTime", value.asInstanceOf[js.Any])
+    def setRejected(value: js.Array[String]): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageSize(value: Double): Self = this.set("messageSize", value.asInstanceOf[js.Any])
+    def setRejectedErrors(value: js.Array[SMTPError]): Self = StObject.set(x, "rejectedErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageTime(value: Double): Self = this.set("messageTime", value.asInstanceOf[js.Any])
+    def setRejectedErrorsUndefined: Self = StObject.set(x, "rejectedErrors", js.undefined)
     
     @scala.inline
-    def setRejectedVarargs(value: String*): Self = this.set("rejected", js.Array(value :_*))
+    def setRejectedErrorsVarargs(value: SMTPError*): Self = StObject.set(x, "rejectedErrors", js.Array(value :_*))
     
     @scala.inline
-    def setRejected(value: js.Array[String]): Self = this.set("rejected", value.asInstanceOf[js.Any])
+    def setRejectedVarargs(value: String*): Self = StObject.set(x, "rejected", js.Array(value :_*))
     
     @scala.inline
-    def setResponse(value: String): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRejectedErrorsVarargs(value: SMTPError*): Self = this.set("rejectedErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setRejectedErrors(value: js.Array[SMTPError]): Self = this.set("rejectedErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRejectedErrors: Self = this.set("rejectedErrors", js.undefined)
+    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

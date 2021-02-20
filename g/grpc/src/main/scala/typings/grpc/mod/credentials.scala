@@ -1,19 +1,20 @@
 package typings.grpc.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grpc", "credentials")
-@js.native
-object credentials extends js.Object {
+object credentials {
   
   /**
     * Combine any number of CallCredentials into a single CallCredentials object
     * @param credentials The CallCredentials to compose
     * @return A credentials object that combines all of the input credentials
     */
+  @JSImport("grpc", "credentials.combineCallCredentials")
+  @js.native
   def combineCallCredentials(credentials: CallCredentials*): CallCredentials = js.native
   
   /**
@@ -23,6 +24,8 @@ object credentials extends js.Object {
     * @param credentials The CallCredentials to compose
     * @return A credentials object that combines all of the input credentials
     */
+  @JSImport("grpc", "credentials.combineChannelCredentials")
+  @js.native
   def combineChannelCredentials(channelCredential: ChannelCredentials, credentials: CallCredentials*): ChannelCredentials = js.native
   
   /**
@@ -30,6 +33,8 @@ object credentials extends js.Object {
     * @param googleCredential The Google credential object to use
     * @return The resulting credentials object
     */
+  @JSImport("grpc", "credentials.createFromGoogleCredential")
+  @js.native
   def createFromGoogleCredential(googleCredential: GoogleOAuth2Client): CallCredentials = js.native
   
   /**
@@ -40,6 +45,8 @@ object credentials extends js.Object {
     * @param metadataGenerator The function that generates metadata
     * @return The credentials object
     */
+  @JSImport("grpc", "credentials.createFromMetadataGenerator")
+  @js.native
   def createFromMetadataGenerator(metadataGenerator: metadataGenerator): CallCredentials = js.native
   
   /**
@@ -47,6 +54,8 @@ object credentials extends js.Object {
     * does not use SSL. This cannot be composed with anything.
     * @return The insecure credentials object
     */
+  @JSImport("grpc", "credentials.createInsecure")
+  @js.native
   def createInsecure(): ChannelCredentials = js.native
   
   /**
@@ -58,55 +67,87 @@ object credentials extends js.Object {
     * @param verifyOptions Additional peer verification options, if desired
     * @return The SSL Credentials object
     */
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(
     rootCerts: js.UndefOr[scala.Nothing],
     privateKey: js.UndefOr[scala.Nothing],
     certChain: js.UndefOr[scala.Nothing],
     verifyOptions: VerifyOptions
   ): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(rootCerts: js.UndefOr[scala.Nothing], privateKey: js.UndefOr[scala.Nothing], certChain: Buffer): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(
     rootCerts: js.UndefOr[scala.Nothing],
     privateKey: js.UndefOr[scala.Nothing],
     certChain: Buffer,
     verifyOptions: VerifyOptions
   ): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(rootCerts: js.UndefOr[scala.Nothing], privateKey: Buffer): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(
     rootCerts: js.UndefOr[scala.Nothing],
     privateKey: Buffer,
     certChain: js.UndefOr[scala.Nothing],
     verifyOptions: VerifyOptions
   ): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(rootCerts: js.UndefOr[scala.Nothing], privateKey: Buffer, certChain: Buffer): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(
     rootCerts: js.UndefOr[scala.Nothing],
     privateKey: Buffer,
     certChain: Buffer,
     verifyOptions: VerifyOptions
   ): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(rootCerts: Buffer): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(
     rootCerts: Buffer,
     privateKey: js.UndefOr[scala.Nothing],
     certChain: js.UndefOr[scala.Nothing],
     verifyOptions: VerifyOptions
   ): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(rootCerts: Buffer, privateKey: js.UndefOr[scala.Nothing], certChain: Buffer): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(
     rootCerts: Buffer,
     privateKey: js.UndefOr[scala.Nothing],
     certChain: Buffer,
     verifyOptions: VerifyOptions
   ): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(rootCerts: Buffer, privateKey: Buffer): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(
     rootCerts: Buffer,
     privateKey: Buffer,
     certChain: js.UndefOr[scala.Nothing],
     verifyOptions: VerifyOptions
   ): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Buffer): ChannelCredentials = js.native
+  @JSImport("grpc", "credentials.createSsl")
+  @js.native
   def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Buffer, verifyOptions: VerifyOptions): ChannelCredentials = js.native
 }

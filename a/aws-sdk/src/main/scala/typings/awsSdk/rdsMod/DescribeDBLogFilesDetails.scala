@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDBLogFilesDetails extends js.Object {
+trait DescribeDBLogFilesDetails extends StObject {
   
   /**
     * A POSIX timestamp when the last log entry was written.
@@ -31,36 +32,24 @@ object DescribeDBLogFilesDetails {
   }
   
   @scala.inline
-  implicit class DescribeDBLogFilesDetailsOps[Self <: DescribeDBLogFilesDetails] (val x: Self) extends AnyVal {
+  implicit class DescribeDBLogFilesDetailsMutableBuilder[Self <: DescribeDBLogFilesDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastWritten(value: Long): Self = StObject.set(x, "LastWritten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastWrittenUndefined: Self = StObject.set(x, "LastWritten", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogFileName(value: String): Self = StObject.set(x, "LogFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastWritten(value: Long): Self = this.set("LastWritten", value.asInstanceOf[js.Any])
+    def setLogFileNameUndefined: Self = StObject.set(x, "LogFileName", js.undefined)
     
     @scala.inline
-    def deleteLastWritten: Self = this.set("LastWritten", js.undefined)
+    def setSize(value: Long): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogFileName(value: String): Self = this.set("LogFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogFileName: Self = this.set("LogFileName", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Long): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("Size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
   }
 }

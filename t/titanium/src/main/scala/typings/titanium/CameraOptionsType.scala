@@ -2,6 +2,7 @@ package typings.titanium
 
 import typings.titanium.Titanium.UI.Matrix2D
 import typings.titanium.Titanium.UI.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Simple object for specifying options to [showCamera](Titanium.Media.showCamera).
   */
 @js.native
-trait CameraOptionsType extends js.Object {
+trait CameraOptionsType extends StObject {
   
   /**
     * Specifies if the media should be editable after capture/selection.
@@ -118,135 +119,123 @@ object CameraOptionsType {
   }
   
   @scala.inline
-  implicit class CameraOptionsTypeOps[Self <: CameraOptionsType] (val x: Self) extends AnyVal {
+  implicit class CameraOptionsTypeMutableBuilder[Self <: CameraOptionsType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowEditing(value: Boolean): Self = StObject.set(x, "allowEditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowEditingUndefined: Self = StObject.set(x, "allowEditing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidback(value: /* param0 */ FailureResponse => Unit): Self = StObject.set(x, "androidback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllowEditing(value: Boolean): Self = this.set("allowEditing", value.asInstanceOf[js.Any])
+    def setAndroidbackUndefined: Self = StObject.set(x, "androidback", js.undefined)
     
     @scala.inline
-    def deleteAllowEditing: Self = this.set("allowEditing", js.undefined)
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidback(value: /* param0 */ FailureResponse => Unit): Self = this.set("androidback", js.Any.fromFunction1(value))
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def deleteAndroidback: Self = this.set("androidback", js.undefined)
+    def setArrowDirection(value: Double): Self = StObject.set(x, "arrowDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setArrowDirectionUndefined: Self = StObject.set(x, "arrowDirection", js.undefined)
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowDirection(value: Double): Self = this.set("arrowDirection", value.asInstanceOf[js.Any])
+    def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
     
     @scala.inline
-    def deleteArrowDirection: Self = this.set("arrowDirection", js.undefined)
+    def setAutorotate(value: Boolean): Self = StObject.set(x, "autorotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutohide(value: Boolean): Self = this.set("autohide", value.asInstanceOf[js.Any])
+    def setAutorotateUndefined: Self = StObject.set(x, "autorotate", js.undefined)
     
     @scala.inline
-    def deleteAutohide: Self = this.set("autohide", js.undefined)
+    def setCancel(value: /* param0 */ FailureResponse => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutorotate(value: Boolean): Self = this.set("autorotate", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteAutorotate: Self = this.set("autorotate", js.undefined)
+    def setError(value: /* param0 */ FailureResponse => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancel(value: /* param0 */ FailureResponse => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setInPopOver(value: Boolean): Self = StObject.set(x, "inPopOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* param0 */ FailureResponse => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setInPopOverUndefined: Self = StObject.set(x, "inPopOver", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setMediaTypes(value: js.Array[String]): Self = StObject.set(x, "mediaTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInPopOver(value: Boolean): Self = this.set("inPopOver", value.asInstanceOf[js.Any])
+    def setMediaTypesUndefined: Self = StObject.set(x, "mediaTypes", js.undefined)
     
     @scala.inline
-    def deleteInPopOver: Self = this.set("inPopOver", js.undefined)
+    def setMediaTypesVarargs(value: String*): Self = StObject.set(x, "mediaTypes", js.Array(value :_*))
     
     @scala.inline
-    def setMediaTypesVarargs(value: String*): Self = this.set("mediaTypes", js.Array(value :_*))
+    def setOverlay(value: View): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaTypes(value: js.Array[String]): Self = this.set("mediaTypes", value.asInstanceOf[js.Any])
+    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     @scala.inline
-    def deleteMediaTypes: Self = this.set("mediaTypes", js.undefined)
+    def setPopoverView(value: View): Self = StObject.set(x, "popoverView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay(value: View): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    def setPopoverViewUndefined: Self = StObject.set(x, "popoverView", js.undefined)
     
     @scala.inline
-    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    def setSaveToPhotoGallery(value: Boolean): Self = StObject.set(x, "saveToPhotoGallery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopoverView(value: View): Self = this.set("popoverView", value.asInstanceOf[js.Any])
+    def setSaveToPhotoGalleryUndefined: Self = StObject.set(x, "saveToPhotoGallery", js.undefined)
     
     @scala.inline
-    def deletePopoverView: Self = this.set("popoverView", js.undefined)
+    def setShowControls(value: Boolean): Self = StObject.set(x, "showControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveToPhotoGallery(value: Boolean): Self = this.set("saveToPhotoGallery", value.asInstanceOf[js.Any])
+    def setShowControlsUndefined: Self = StObject.set(x, "showControls", js.undefined)
     
     @scala.inline
-    def deleteSaveToPhotoGallery: Self = this.set("saveToPhotoGallery", js.undefined)
+    def setSuccess(value: /* param0 */ CameraMediaItemType => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowControls(value: Boolean): Self = this.set("showControls", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteShowControls: Self = this.set("showControls", js.undefined)
+    def setTransform(value: Matrix2D): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: /* param0 */ CameraMediaItemType => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setVideoMaximumDuration(value: Double): Self = StObject.set(x, "videoMaximumDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: Matrix2D): Self = this.set("transform", value.asInstanceOf[js.Any])
+    def setVideoMaximumDurationUndefined: Self = StObject.set(x, "videoMaximumDuration", js.undefined)
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setVideoQuality(value: Double): Self = StObject.set(x, "videoQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoMaximumDuration(value: Double): Self = this.set("videoMaximumDuration", value.asInstanceOf[js.Any])
+    def setVideoQualityUndefined: Self = StObject.set(x, "videoQuality", js.undefined)
     
     @scala.inline
-    def deleteVideoMaximumDuration: Self = this.set("videoMaximumDuration", js.undefined)
+    def setWhichCamera(value: Double): Self = StObject.set(x, "whichCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoQuality(value: Double): Self = this.set("videoQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoQuality: Self = this.set("videoQuality", js.undefined)
-    
-    @scala.inline
-    def setWhichCamera(value: Double): Self = this.set("whichCamera", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhichCamera: Self = this.set("whichCamera", js.undefined)
+    def setWhichCameraUndefined: Self = StObject.set(x, "whichCamera", js.undefined)
   }
 }

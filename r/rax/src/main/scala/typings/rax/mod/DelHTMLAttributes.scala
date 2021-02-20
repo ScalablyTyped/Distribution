@@ -1,5 +1,6 @@
 package typings.rax.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object DelHTMLAttributes {
   }
   
   @scala.inline
-  implicit class DelHTMLAttributesOps[Self <: DelHTMLAttributes[_], T] (val x: Self with DelHTMLAttributes[T]) extends AnyVal {
+  implicit class DelHTMLAttributesMutableBuilder[Self <: DelHTMLAttributes[_], T] (val x: Self with DelHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCite(value: String): Self = this.set("cite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCite: Self = this.set("cite", js.undefined)
-    
-    @scala.inline
-    def setDateTime(value: String): Self = this.set("dateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDateTime: Self = this.set("dateTime", js.undefined)
+    def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
   }
 }

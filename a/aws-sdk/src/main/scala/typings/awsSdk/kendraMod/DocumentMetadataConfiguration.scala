@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentMetadataConfiguration extends js.Object {
+trait DocumentMetadataConfiguration extends StObject {
   
   /**
     * The name of the index field.
@@ -36,36 +37,24 @@ object DocumentMetadataConfiguration {
   }
   
   @scala.inline
-  implicit class DocumentMetadataConfigurationOps[Self <: DocumentMetadataConfiguration] (val x: Self) extends AnyVal {
+  implicit class DocumentMetadataConfigurationMutableBuilder[Self <: DocumentMetadataConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: DocumentMetadataConfigurationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelevance(value: Relevance): Self = StObject.set(x, "Relevance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelevanceUndefined: Self = StObject.set(x, "Relevance", js.undefined)
     
     @scala.inline
-    def setName(value: DocumentMetadataConfigurationName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSearch(value: Search): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: DocumentAttributeValueType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "Search", js.undefined)
     
     @scala.inline
-    def setRelevance(value: Relevance): Self = this.set("Relevance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelevance: Self = this.set("Relevance", js.undefined)
-    
-    @scala.inline
-    def setSearch(value: Search): Self = this.set("Search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("Search", js.undefined)
+    def setType(value: DocumentAttributeValueType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

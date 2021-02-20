@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,84 +70,72 @@ object CompositionSection {
   }
   
   @scala.inline
-  implicit class CompositionSectionOps[Self <: CompositionSection] (val x: Self) extends AnyVal {
+  implicit class CompositionSectionMutableBuilder[Self <: CompositionSection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmptyReason(value: CodeableConcept): Self = StObject.set(x, "emptyReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_mode(value: Element): Self = this.set("_mode", value.asInstanceOf[js.Any])
+    def setEmptyReasonUndefined: Self = StObject.set(x, "emptyReason", js.undefined)
     
     @scala.inline
-    def delete_mode: Self = this.set("_mode", js.undefined)
+    def setEntry(value: js.Array[Reference]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
     
     @scala.inline
-    def delete_title: Self = this.set("_title", js.undefined)
+    def setEntryVarargs(value: Reference*): Self = StObject.set(x, "entry", js.Array(value :_*))
     
     @scala.inline
-    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setEmptyReason(value: CodeableConcept): Self = this.set("emptyReason", value.asInstanceOf[js.Any])
+    def setOrderedBy(value: CodeableConcept): Self = StObject.set(x, "orderedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmptyReason: Self = this.set("emptyReason", js.undefined)
+    def setOrderedByUndefined: Self = StObject.set(x, "orderedBy", js.undefined)
     
     @scala.inline
-    def setEntryVarargs(value: Reference*): Self = this.set("entry", js.Array(value :_*))
+    def setSection(value: js.Array[CompositionSection]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntry(value: js.Array[Reference]): Self = this.set("entry", value.asInstanceOf[js.Any])
+    def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
     
     @scala.inline
-    def deleteEntry: Self = this.set("entry", js.undefined)
+    def setSectionVarargs(value: CompositionSection*): Self = StObject.set(x, "section", js.Array(value :_*))
     
     @scala.inline
-    def setMode(value: code): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setText(value: Narrative): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setOrderedBy(value: CodeableConcept): Self = this.set("orderedBy", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderedBy: Self = this.set("orderedBy", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setSectionVarargs(value: CompositionSection*): Self = this.set("section", js.Array(value :_*))
+    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSection(value: js.Array[CompositionSection]): Self = this.set("section", value.asInstanceOf[js.Any])
+    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
     
     @scala.inline
-    def deleteSection: Self = this.set("section", js.undefined)
+    def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: Narrative): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.three.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Derivatives extends js.Object {
+trait Derivatives extends StObject {
   
   var derivatives: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object Derivatives {
   }
   
   @scala.inline
-  implicit class DerivativesOps[Self <: Derivatives] (val x: Self) extends AnyVal {
+  implicit class DerivativesMutableBuilder[Self <: Derivatives] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDerivatives(value: Boolean): Self = StObject.set(x, "derivatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDerivativesUndefined: Self = StObject.set(x, "derivatives", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawBuffers(value: Boolean): Self = StObject.set(x, "drawBuffers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDerivatives(value: Boolean): Self = this.set("derivatives", value.asInstanceOf[js.Any])
+    def setDrawBuffersUndefined: Self = StObject.set(x, "drawBuffers", js.undefined)
     
     @scala.inline
-    def deleteDerivatives: Self = this.set("derivatives", js.undefined)
+    def setFragDepth(value: Boolean): Self = StObject.set(x, "fragDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawBuffers(value: Boolean): Self = this.set("drawBuffers", value.asInstanceOf[js.Any])
+    def setFragDepthUndefined: Self = StObject.set(x, "fragDepth", js.undefined)
     
     @scala.inline
-    def deleteDrawBuffers: Self = this.set("drawBuffers", js.undefined)
+    def setShaderTextureLOD(value: Boolean): Self = StObject.set(x, "shaderTextureLOD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragDepth(value: Boolean): Self = this.set("fragDepth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFragDepth: Self = this.set("fragDepth", js.undefined)
-    
-    @scala.inline
-    def setShaderTextureLOD(value: Boolean): Self = this.set("shaderTextureLOD", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShaderTextureLOD: Self = this.set("shaderTextureLOD", js.undefined)
+    def setShaderTextureLODUndefined: Self = StObject.set(x, "shaderTextureLOD", js.undefined)
   }
 }

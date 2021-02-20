@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlueRecord extends js.Object {
+trait GlueRecord extends StObject {
   
   /** Required. Domain name of the host in Punycode format. */
   var hostName: js.UndefOr[String] = js.native
@@ -25,42 +26,30 @@ object GlueRecord {
   }
   
   @scala.inline
-  implicit class GlueRecordOps[Self <: GlueRecord] (val x: Self) extends AnyVal {
+  implicit class GlueRecordMutableBuilder[Self <: GlueRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostNameUndefined: Self = StObject.set(x, "hostName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpv4Addresses(value: js.Array[String]): Self = StObject.set(x, "ipv4Addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostName(value: String): Self = this.set("hostName", value.asInstanceOf[js.Any])
+    def setIpv4AddressesUndefined: Self = StObject.set(x, "ipv4Addresses", js.undefined)
     
     @scala.inline
-    def deleteHostName: Self = this.set("hostName", js.undefined)
+    def setIpv4AddressesVarargs(value: String*): Self = StObject.set(x, "ipv4Addresses", js.Array(value :_*))
     
     @scala.inline
-    def setIpv4AddressesVarargs(value: String*): Self = this.set("ipv4Addresses", js.Array(value :_*))
+    def setIpv6Addresses(value: js.Array[String]): Self = StObject.set(x, "ipv6Addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv4Addresses(value: js.Array[String]): Self = this.set("ipv4Addresses", value.asInstanceOf[js.Any])
+    def setIpv6AddressesUndefined: Self = StObject.set(x, "ipv6Addresses", js.undefined)
     
     @scala.inline
-    def deleteIpv4Addresses: Self = this.set("ipv4Addresses", js.undefined)
-    
-    @scala.inline
-    def setIpv6AddressesVarargs(value: String*): Self = this.set("ipv6Addresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setIpv6Addresses(value: js.Array[String]): Self = this.set("ipv6Addresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpv6Addresses: Self = this.set("ipv6Addresses", js.undefined)
+    def setIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "ipv6Addresses", js.Array(value :_*))
   }
 }

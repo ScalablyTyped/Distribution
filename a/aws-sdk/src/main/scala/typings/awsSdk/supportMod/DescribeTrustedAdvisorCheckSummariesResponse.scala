@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTrustedAdvisorCheckSummariesResponse extends js.Object {
+trait DescribeTrustedAdvisorCheckSummariesResponse extends StObject {
   
   /**
     * The summary information for the requested Trusted Advisor checks.
@@ -21,24 +22,12 @@ object DescribeTrustedAdvisorCheckSummariesResponse {
   }
   
   @scala.inline
-  implicit class DescribeTrustedAdvisorCheckSummariesResponseOps[Self <: DescribeTrustedAdvisorCheckSummariesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeTrustedAdvisorCheckSummariesResponseMutableBuilder[Self <: DescribeTrustedAdvisorCheckSummariesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSummaries(value: TrustedAdvisorCheckSummaryList): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSummariesVarargs(value: TrustedAdvisorCheckSummary*): Self = this.set("summaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setSummaries(value: TrustedAdvisorCheckSummaryList): Self = this.set("summaries", value.asInstanceOf[js.Any])
+    def setSummariesVarargs(value: TrustedAdvisorCheckSummary*): Self = StObject.set(x, "summaries", js.Array(value :_*))
   }
 }

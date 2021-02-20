@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPackageVersionAssetResult extends js.Object {
+trait GetPackageVersionAssetResult extends StObject {
   
   /**
     *  The binary file, or asset, that is downloaded.
@@ -36,42 +37,30 @@ object GetPackageVersionAssetResult {
   }
   
   @scala.inline
-  implicit class GetPackageVersionAssetResultOps[Self <: GetPackageVersionAssetResult] (val x: Self) extends AnyVal {
+  implicit class GetPackageVersionAssetResultMutableBuilder[Self <: GetPackageVersionAssetResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetName(value: AssetName): Self = StObject.set(x, "assetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetNameUndefined: Self = StObject.set(x, "assetName", js.undefined)
     
     @scala.inline
-    def setAsset(value: Asset): Self = this.set("asset", value.asInstanceOf[js.Any])
+    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
     @scala.inline
-    def deleteAsset: Self = this.set("asset", js.undefined)
+    def setPackageVersion(value: PackageVersion): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetName(value: AssetName): Self = this.set("assetName", value.asInstanceOf[js.Any])
+    def setPackageVersionRevision(value: PackageVersionRevision): Self = StObject.set(x, "packageVersionRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssetName: Self = this.set("assetName", js.undefined)
+    def setPackageVersionRevisionUndefined: Self = StObject.set(x, "packageVersionRevision", js.undefined)
     
     @scala.inline
-    def setPackageVersion(value: PackageVersion): Self = this.set("packageVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageVersion: Self = this.set("packageVersion", js.undefined)
-    
-    @scala.inline
-    def setPackageVersionRevision(value: PackageVersionRevision): Self = this.set("packageVersionRevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageVersionRevision: Self = this.set("packageVersionRevision", js.undefined)
+    def setPackageVersionUndefined: Self = StObject.set(x, "packageVersion", js.undefined)
   }
 }

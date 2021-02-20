@@ -1,11 +1,12 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorksheetDimensionProperties extends js.Object {
+trait WorksheetDimensionProperties extends StObject {
   
   /**
     * @see https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.developerMetadata#DeveloperMetadata
@@ -32,33 +33,21 @@ object WorksheetDimensionProperties {
   }
   
   @scala.inline
-  implicit class WorksheetDimensionPropertiesOps[Self <: WorksheetDimensionProperties] (val x: Self) extends AnyVal {
+  implicit class WorksheetDimensionPropertiesMutableBuilder[Self <: WorksheetDimensionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHiddenByFilter(value: Boolean): Self = StObject.set(x, "hiddenByFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = this.set("developerMetadata", js.Array(value :_*))
+    def setHiddenByUser(value: Boolean): Self = StObject.set(x, "hiddenByUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = this.set("developerMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHiddenByFilter(value: Boolean): Self = this.set("hiddenByFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHiddenByUser(value: Boolean): Self = this.set("hiddenByUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPixelSize(value: Double): Self = this.set("pixelSize", value.asInstanceOf[js.Any])
+    def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
   }
 }

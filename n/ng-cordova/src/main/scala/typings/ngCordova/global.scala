@@ -1,18 +1,17 @@
 package typings.ngCordova
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object ngCordova extends js.Object {
+  object ngCordova {
     
+    @JSGlobal("ngCordova.AndroidTheme")
     @js.native
-    object AndroidTheme extends js.Object {
+    object AndroidTheme extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.ngCordova.ngCordova.AndroidTheme with Double] = js.native

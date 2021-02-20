@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SigningProfileParameter extends js.Object {
+trait SigningProfileParameter extends StObject {
   
   /**
     * Certificate ARN.
@@ -31,36 +32,24 @@ object SigningProfileParameter {
   }
   
   @scala.inline
-  implicit class SigningProfileParameterOps[Self <: SigningProfileParameter] (val x: Self) extends AnyVal {
+  implicit class SigningProfileParameterMutableBuilder[Self <: SigningProfileParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificatePathOnDevice(value: CertificatePathOnDevice): Self = StObject.set(x, "certificatePathOnDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    def setCertificatePathOnDeviceUndefined: Self = StObject.set(x, "certificatePathOnDevice", js.undefined)
     
     @scala.inline
-    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificatePathOnDevice(value: CertificatePathOnDevice): Self = this.set("certificatePathOnDevice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificatePathOnDevice: Self = this.set("certificatePathOnDevice", js.undefined)
-    
-    @scala.inline
-    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

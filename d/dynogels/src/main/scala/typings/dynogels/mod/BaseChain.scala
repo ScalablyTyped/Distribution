@@ -1,11 +1,12 @@
 package typings.dynogels.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseChain[T] extends js.Object {
+trait BaseChain[T] extends StObject {
   
   def beginsWith(value: js.Any): T = js.native
   
@@ -33,8 +34,8 @@ object BaseChain {
   def apply[T](
     beginsWith: js.Any => T,
     between: (js.Any, js.Any) => T,
-    eq: js.Any => T,
-    equals: js.Any => T,
+    eq_ : js.Any => T,
+    equals_ : js.Any => T,
     exists: () => T,
     gt: js.Any => T,
     gte: js.Any => T,
@@ -42,54 +43,44 @@ object BaseChain {
     lte: js.Any => T,
     `null`: () => T
   ): BaseChain[T] = {
-    val __obj = js.Dynamic.literal(beginsWith = js.Any.fromFunction1(beginsWith), between = js.Any.fromFunction2(between), eq = js.Any.fromFunction1(eq), equals = js.Any.fromFunction1(equals), exists = js.Any.fromFunction0(exists), gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte))
+    val __obj = js.Dynamic.literal(beginsWith = js.Any.fromFunction1(beginsWith), between = js.Any.fromFunction2(between), exists = js.Any.fromFunction0(exists), gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte))
+    __obj.updateDynamic("eq")(js.Any.fromFunction1(eq_))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.updateDynamic("null")(js.Any.fromFunction0(`null`))
     __obj.asInstanceOf[BaseChain[T]]
   }
   
   @scala.inline
-  implicit class BaseChainOps[Self <: BaseChain[_], T] (val x: Self with BaseChain[T]) extends AnyVal {
+  implicit class BaseChainMutableBuilder[Self <: BaseChain[_], T] (val x: Self with BaseChain[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginsWith(value: js.Any => T): Self = StObject.set(x, "beginsWith", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBetween(value: (js.Any, js.Any) => T): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEq_(value: js.Any => T): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeginsWith(value: js.Any => T): Self = this.set("beginsWith", js.Any.fromFunction1(value))
+    def setEquals_(value: js.Any => T): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBetween(value: (js.Any, js.Any) => T): Self = this.set("between", js.Any.fromFunction2(value))
+    def setExists(value: () => T): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEq(value: js.Any => T): Self = this.set("eq", js.Any.fromFunction1(value))
+    def setGt(value: js.Any => T): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEquals(value: js.Any => T): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setGte(value: js.Any => T): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExists(value: () => T): Self = this.set("exists", js.Any.fromFunction0(value))
+    def setLt(value: js.Any => T): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGt(value: js.Any => T): Self = this.set("gt", js.Any.fromFunction1(value))
+    def setLte(value: js.Any => T): Self = StObject.set(x, "lte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGte(value: js.Any => T): Self = this.set("gte", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLt(value: js.Any => T): Self = this.set("lt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLte(value: js.Any => T): Self = this.set("lte", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNull(value: () => T): Self = this.set("null", js.Any.fromFunction0(value))
+    def setNull(value: () => T): Self = StObject.set(x, "null", js.Any.fromFunction0(value))
   }
 }

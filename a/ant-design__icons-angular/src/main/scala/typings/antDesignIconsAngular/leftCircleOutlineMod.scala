@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/LeftCircleOutline", JSImport.Namespace)
-@js.native
-object leftCircleOutlineMod extends js.Object {
+object leftCircleOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/LeftCircleOutline", "LeftCircleOutline")
+  @js.native
   val LeftCircleOutline: IconDefinition = js.native
 }

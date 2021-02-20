@@ -5,16 +5,16 @@ import typings.angularCompiler.mlParserLexerMod.TokenizeOptions
 import typings.angularCompiler.srcParseUtilMod.ParseError
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.angularCompiler.tagsMod.TagDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/ml_parser/parser", JSImport.Namespace)
-@js.native
-object mlParserParserMod extends js.Object {
+object mlParserParserMod {
   
+  @JSImport("@angular/compiler/src/ml_parser/parser", "ParseTreeResult")
   @js.native
-  class ParseTreeResult protected () extends js.Object {
+  class ParseTreeResult protected () extends StObject {
     def this(rootNodes: js.Array[Node], errors: js.Array[ParseError]) = this()
     
     var errors: js.Array[ParseError] = js.native
@@ -22,8 +22,9 @@ object mlParserParserMod extends js.Object {
     var rootNodes: js.Array[Node] = js.native
   }
   
+  @JSImport("@angular/compiler/src/ml_parser/parser", "Parser")
   @js.native
-  class Parser protected () extends js.Object {
+  class Parser protected () extends StObject {
     def this(getTagDefinition: js.Function1[/* tagName */ String, TagDefinition]) = this()
     
     def getTagDefinition(tagName: String): TagDefinition = js.native
@@ -32,6 +33,7 @@ object mlParserParserMod extends js.Object {
     def parse(source: String, url: String, options: TokenizeOptions): ParseTreeResult = js.native
   }
   
+  @JSImport("@angular/compiler/src/ml_parser/parser", "TreeError")
   @js.native
   class TreeError protected () extends ParseError {
     def this(elementName: String, span: ParseSourceSpan, msg: String) = this()
@@ -40,10 +42,13 @@ object mlParserParserMod extends js.Object {
     var elementName: String | Null = js.native
   }
   /* static members */
-  @js.native
-  object TreeError extends js.Object {
+  object TreeError {
     
+    @JSImport("@angular/compiler/src/ml_parser/parser", "TreeError.create")
+    @js.native
     def create(elementName: String, span: ParseSourceSpan, msg: String): TreeError = js.native
+    @JSImport("@angular/compiler/src/ml_parser/parser", "TreeError.create")
+    @js.native
     def create(elementName: Null, span: ParseSourceSpan, msg: String): TreeError = js.native
   }
 }

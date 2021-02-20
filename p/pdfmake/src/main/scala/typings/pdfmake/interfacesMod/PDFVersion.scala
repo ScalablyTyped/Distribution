@@ -1,5 +1,6 @@
 package typings.pdfmake.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pdfmake.pdfmakeStrings.`1Dot7`
   - typings.pdfmake.pdfmakeStrings.`1Dot7ext3`
 */
-trait PDFVersion extends js.Object
+trait PDFVersion extends StObject
 object PDFVersion {
   
   @scala.inline

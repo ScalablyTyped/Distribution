@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * myEmitter.emit("error", "x")  // <- Will catch this type error
   */
 @js.native
-trait TypedEventEmitter[Events] extends js.Object {
+trait TypedEventEmitter[Events] extends StObject {
   
   def addListener[E /* <: /* keyof Events */ String */](
     event: E,

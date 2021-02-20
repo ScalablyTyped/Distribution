@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScalingParameters extends js.Object {
+trait ScalingParameters extends StObject {
   
   /**
     * The instance type that you want to preconfigure for your domain. For example, search.m1.small.
@@ -31,36 +32,24 @@ object ScalingParameters {
   }
   
   @scala.inline
-  implicit class ScalingParametersOps[Self <: ScalingParameters] (val x: Self) extends AnyVal {
+  implicit class ScalingParametersMutableBuilder[Self <: ScalingParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredInstanceType(value: PartitionInstanceType): Self = StObject.set(x, "DesiredInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredInstanceTypeUndefined: Self = StObject.set(x, "DesiredInstanceType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesiredPartitionCount(value: UIntValue): Self = StObject.set(x, "DesiredPartitionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredInstanceType(value: PartitionInstanceType): Self = this.set("DesiredInstanceType", value.asInstanceOf[js.Any])
+    def setDesiredPartitionCountUndefined: Self = StObject.set(x, "DesiredPartitionCount", js.undefined)
     
     @scala.inline
-    def deleteDesiredInstanceType: Self = this.set("DesiredInstanceType", js.undefined)
+    def setDesiredReplicationCount(value: UIntValue): Self = StObject.set(x, "DesiredReplicationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredPartitionCount(value: UIntValue): Self = this.set("DesiredPartitionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredPartitionCount: Self = this.set("DesiredPartitionCount", js.undefined)
-    
-    @scala.inline
-    def setDesiredReplicationCount(value: UIntValue): Self = this.set("DesiredReplicationCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredReplicationCount: Self = this.set("DesiredReplicationCount", js.undefined)
+    def setDesiredReplicationCountUndefined: Self = StObject.set(x, "DesiredReplicationCount", js.undefined)
   }
 }

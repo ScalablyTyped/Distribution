@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchSystemInstancesResponse extends js.Object {
+trait SearchSystemInstancesResponse extends StObject {
   
   /**
     * The string to specify as nextToken when you request the next page of results. 
@@ -26,33 +27,21 @@ object SearchSystemInstancesResponse {
   }
   
   @scala.inline
-  implicit class SearchSystemInstancesResponseOps[Self <: SearchSystemInstancesResponse] (val x: Self) extends AnyVal {
+  implicit class SearchSystemInstancesResponseMutableBuilder[Self <: SearchSystemInstancesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSummaries(value: SystemInstanceSummaries): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setSummariesVarargs(value: SystemInstanceSummary*): Self = this.set("summaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setSummaries(value: SystemInstanceSummaries): Self = this.set("summaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaries: Self = this.set("summaries", js.undefined)
+    def setSummariesVarargs(value: SystemInstanceSummary*): Self = StObject.set(x, "summaries", js.Array(value :_*))
   }
 }

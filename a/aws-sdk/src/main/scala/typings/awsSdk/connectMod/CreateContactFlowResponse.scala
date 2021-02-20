@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateContactFlowResponse extends js.Object {
+trait CreateContactFlowResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the contact flow.
@@ -26,30 +27,18 @@ object CreateContactFlowResponse {
   }
   
   @scala.inline
-  implicit class CreateContactFlowResponseOps[Self <: CreateContactFlowResponse] (val x: Self) extends AnyVal {
+  implicit class CreateContactFlowResponseMutableBuilder[Self <: CreateContactFlowResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactFlowArn(value: ARN): Self = StObject.set(x, "ContactFlowArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactFlowArnUndefined: Self = StObject.set(x, "ContactFlowArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactFlowId(value: ContactFlowId): Self = StObject.set(x, "ContactFlowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactFlowArn(value: ARN): Self = this.set("ContactFlowArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContactFlowArn: Self = this.set("ContactFlowArn", js.undefined)
-    
-    @scala.inline
-    def setContactFlowId(value: ContactFlowId): Self = this.set("ContactFlowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContactFlowId: Self = this.set("ContactFlowId", js.undefined)
+    def setContactFlowIdUndefined: Self = StObject.set(x, "ContactFlowId", js.undefined)
   }
 }

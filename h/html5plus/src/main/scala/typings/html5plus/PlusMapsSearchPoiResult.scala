@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
 @js.native
-trait PlusMapsSearchPoiResult extends js.Object {
+trait PlusMapsSearchPoiResult extends StObject {
   
   /**
     * 当前页的POI检索结果数
@@ -69,54 +70,42 @@ object PlusMapsSearchPoiResult {
   }
   
   @scala.inline
-  implicit class PlusMapsSearchPoiResultOps[Self <: PlusMapsSearchPoiResult] (val x: Self) extends AnyVal {
+  implicit class PlusMapsSearchPoiResultMutableBuilder[Self <: PlusMapsSearchPoiResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentNumber(value: Double): Self = StObject.set(x, "currentNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentNumberUndefined: Self = StObject.set(x, "currentNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPosition(value: () => PlusMapsPosition): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPosition(value: () => PlusMapsPosition): Self = this.set("getPosition", js.Any.fromFunction0(value))
+    def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentNumber(value: Double): Self = this.set("currentNumber", value.asInstanceOf[js.Any])
+    def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
     
     @scala.inline
-    def deleteCurrentNumber: Self = this.set("currentNumber", js.undefined)
+    def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageIndex(value: Double): Self = this.set("pageIndex", value.asInstanceOf[js.Any])
+    def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
     
     @scala.inline
-    def deletePageIndex: Self = this.set("pageIndex", js.undefined)
+    def setPoiList(value: js.Array[_]): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumber(value: Double): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
+    def setPoiListUndefined: Self = StObject.set(x, "poiList", js.undefined)
     
     @scala.inline
-    def deletePageNumber: Self = this.set("pageNumber", js.undefined)
+    def setPoiListVarargs(value: js.Any*): Self = StObject.set(x, "poiList", js.Array(value :_*))
     
     @scala.inline
-    def setPoiListVarargs(value: js.Any*): Self = this.set("poiList", js.Array(value :_*))
+    def setTotalNumber(value: Double): Self = StObject.set(x, "totalNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoiList(value: js.Array[_]): Self = this.set("poiList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoiList: Self = this.set("poiList", js.undefined)
-    
-    @scala.inline
-    def setTotalNumber(value: Double): Self = this.set("totalNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalNumber: Self = this.set("totalNumber", js.undefined)
+    def setTotalNumberUndefined: Self = StObject.set(x, "totalNumber", js.undefined)
   }
 }

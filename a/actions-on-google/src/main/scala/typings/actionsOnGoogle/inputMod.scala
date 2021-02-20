@@ -2,17 +2,17 @@ package typings.actionsOnGoogle
 
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2RawInput
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2RawInputInputType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("actions-on-google/dist/service/actionssdk/conversation/input", JSImport.Namespace)
-@js.native
-object inputMod extends js.Object {
+object inputMod {
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/input", "Input")
   @js.native
   /** @hidden */
-  class Input () extends js.Object {
+  class Input () extends StObject {
     def this(input: GoogleActionsV2RawInput) = this()
     
     /**

@@ -1,11 +1,12 @@
 package typings.reactNative
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageQueue extends js.Object {
+trait MessageQueue extends StObject {
   
   def getCallableModule(name: String): js.Object = js.native
   
@@ -26,27 +27,15 @@ object MessageQueue {
   }
   
   @scala.inline
-  implicit class MessageQueueOps[Self <: MessageQueue] (val x: Self) extends AnyVal {
+  implicit class MessageQueueMutableBuilder[Self <: MessageQueue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCallableModule(value: String => js.Object): Self = StObject.set(x, "getCallableModule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegisterCallableModule(value: (String, js.Object) => Unit): Self = StObject.set(x, "registerCallableModule", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetCallableModule(value: String => js.Object): Self = this.set("getCallableModule", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterCallableModule(value: (String, js.Object) => Unit): Self = this.set("registerCallableModule", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRegisterLazyCallableModule(value: (String, js.Function0[js.Object]) => Unit): Self = this.set("registerLazyCallableModule", js.Any.fromFunction2(value))
+    def setRegisterLazyCallableModule(value: (String, js.Function0[js.Object]) => Unit): Self = StObject.set(x, "registerLazyCallableModule", js.Any.fromFunction2(value))
   }
 }

@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminGetSelfHostedRunnerGroup
 import typings.octokitTypes.endpointsMod.EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseRequestOptions
 import typings.octokitTypes.endpointsMod.EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint extends js.Object {
+trait ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint extends StObject {
   
   var parameters: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpointOps[Self <: ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpointMutableBuilder[Self <: ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

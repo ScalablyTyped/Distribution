@@ -1,11 +1,12 @@
 package typings.hafasClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefreshJourneyOptions extends js.Object {
+trait RefreshJourneyOptions extends StObject {
   
   /**
     * parse & expose entrances of stops/stations?
@@ -58,60 +59,48 @@ object RefreshJourneyOptions {
   }
   
   @scala.inline
-  implicit class RefreshJourneyOptionsOps[Self <: RefreshJourneyOptions] (val x: Self) extends AnyVal {
+  implicit class RefreshJourneyOptionsMutableBuilder[Self <: RefreshJourneyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntrances(value: Boolean): Self = this.set("entrances", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteEntrances: Self = this.set("entrances", js.undefined)
+    def setPolylines(value: Boolean): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setRemarks(value: Boolean): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylines(value: Boolean): Self = this.set("polylines", value.asInstanceOf[js.Any])
+    def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
     
     @scala.inline
-    def deletePolylines: Self = this.set("polylines", js.undefined)
+    def setStopovers(value: Boolean): Self = StObject.set(x, "stopovers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemarks(value: Boolean): Self = this.set("remarks", value.asInstanceOf[js.Any])
+    def setStopoversUndefined: Self = StObject.set(x, "stopovers", js.undefined)
     
     @scala.inline
-    def deleteRemarks: Self = this.set("remarks", js.undefined)
+    def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopovers(value: Boolean): Self = this.set("stopovers", value.asInstanceOf[js.Any])
+    def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
     
     @scala.inline
-    def deleteStopovers: Self = this.set("stopovers", js.undefined)
+    def setTickets(value: Boolean): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubStops(value: Boolean): Self = this.set("subStops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubStops: Self = this.set("subStops", js.undefined)
-    
-    @scala.inline
-    def setTickets(value: Boolean): Self = this.set("tickets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTickets: Self = this.set("tickets", js.undefined)
+    def setTicketsUndefined: Self = StObject.set(x, "tickets", js.undefined)
   }
 }

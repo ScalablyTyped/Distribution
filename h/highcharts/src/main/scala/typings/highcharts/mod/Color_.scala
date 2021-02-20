@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Color")
 @js.native
-class Color_ protected () extends js.Object {
+class Color_ protected () extends StObject {
   /**
     * Handle color operations. Some object methods are chainable.
     *
@@ -61,9 +62,7 @@ class Color_ protected () extends js.Object {
   def tweenTo(to: Color_, pos: Double): ColorString = js.native
 }
 /* static members */
-@JSImport("highcharts", "Color")
-@js.native
-object Color_ extends js.Object {
+object Color_ {
   
   /**
     * Creates a color instance out of a color string or object.
@@ -73,5 +72,7 @@ object Color_ extends js.Object {
     *
     * @return Color instance.
     */
+  @JSImport("highcharts", "Color.parse")
+  @js.native
   def parse(input: ColorType): Color_ = js.native
 }

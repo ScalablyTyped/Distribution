@@ -1,11 +1,12 @@
 package typings.awsSdk.ivsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportPlaybackKeyPairRequest extends js.Object {
+trait ImportPlaybackKeyPairRequest extends StObject {
   
   /**
     * An arbitrary string (a nickname) assigned to a playback key pair that helps the customer identify that resource. The value does not need to be unique.
@@ -31,33 +32,21 @@ object ImportPlaybackKeyPairRequest {
   }
   
   @scala.inline
-  implicit class ImportPlaybackKeyPairRequestOps[Self <: ImportPlaybackKeyPairRequest] (val x: Self) extends AnyVal {
+  implicit class ImportPlaybackKeyPairRequestMutableBuilder[Self <: ImportPlaybackKeyPairRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: PlaybackKeyPairName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicKeyMaterial(value: PlaybackPublicKeyMaterial): Self = StObject.set(x, "publicKeyMaterial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKeyMaterial(value: PlaybackPublicKeyMaterial): Self = this.set("publicKeyMaterial", value.asInstanceOf[js.Any])
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: PlaybackKeyPairName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

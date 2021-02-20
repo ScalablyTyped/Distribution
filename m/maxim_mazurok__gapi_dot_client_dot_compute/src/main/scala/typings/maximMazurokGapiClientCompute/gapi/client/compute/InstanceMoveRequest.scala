@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceMoveRequest extends js.Object {
+trait InstanceMoveRequest extends StObject {
   
   /**
     * The URL of the destination zone to move the instance. This can be a full or partial URL. For example, the following are all valid URLs to a zone:
@@ -32,30 +33,18 @@ object InstanceMoveRequest {
   }
   
   @scala.inline
-  implicit class InstanceMoveRequestOps[Self <: InstanceMoveRequest] (val x: Self) extends AnyVal {
+  implicit class InstanceMoveRequestMutableBuilder[Self <: InstanceMoveRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationZone(value: String): Self = StObject.set(x, "destinationZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationZoneUndefined: Self = StObject.set(x, "destinationZone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetInstance(value: String): Self = StObject.set(x, "targetInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationZone(value: String): Self = this.set("destinationZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationZone: Self = this.set("destinationZone", js.undefined)
-    
-    @scala.inline
-    def setTargetInstance(value: String): Self = this.set("targetInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetInstance: Self = this.set("targetInstance", js.undefined)
+    def setTargetInstanceUndefined: Self = StObject.set(x, "targetInstance", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,48 +108,36 @@ object ASPxClientProgressBar {
   }
   
   @scala.inline
-  implicit class ASPxClientProgressBarOps[Self <: ASPxClientProgressBar] (val x: Self) extends AnyVal {
+  implicit class ASPxClientProgressBarMutableBuilder[Self <: ASPxClientProgressBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMaximum(value: () => Double): Self = StObject.set(x, "GetMaximum", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMinimum(value: () => Double): Self = StObject.set(x, "GetMinimum", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayText(value: () => String): Self = this.set("GetDisplayText", js.Any.fromFunction0(value))
+    def setGetPercent(value: () => Double): Self = StObject.set(x, "GetPercent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaximum(value: () => Double): Self = this.set("GetMaximum", js.Any.fromFunction0(value))
+    def setGetPosition(value: () => Double): Self = StObject.set(x, "GetPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMinimum(value: () => Double): Self = this.set("GetMinimum", js.Any.fromFunction0(value))
+    def setSetCustomDisplayFormat(value: String => Unit): Self = StObject.set(x, "SetCustomDisplayFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPercent(value: () => Double): Self = this.set("GetPercent", js.Any.fromFunction0(value))
+    def setSetMaximum(value: Double => Unit): Self = StObject.set(x, "SetMaximum", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPosition(value: () => Double): Self = this.set("GetPosition", js.Any.fromFunction0(value))
+    def setSetMinMaxValues(value: (Double, Double) => Unit): Self = StObject.set(x, "SetMinMaxValues", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetCustomDisplayFormat(value: String => Unit): Self = this.set("SetCustomDisplayFormat", js.Any.fromFunction1(value))
+    def setSetMinimum(value: Double => Unit): Self = StObject.set(x, "SetMinimum", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaximum(value: Double => Unit): Self = this.set("SetMaximum", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMinMaxValues(value: (Double, Double) => Unit): Self = this.set("SetMinMaxValues", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetMinimum(value: Double => Unit): Self = this.set("SetMinimum", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPosition(value: Double => Unit): Self = this.set("SetPosition", js.Any.fromFunction1(value))
+    def setSetPosition(value: Double => Unit): Self = StObject.set(x, "SetPosition", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllFields extends js.Object {
+trait AllFields extends StObject {
   
   var allFields: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object AllFields {
   }
   
   @scala.inline
-  implicit class AllFieldsOps[Self <: AllFields] (val x: Self) extends AnyVal {
+  implicit class AllFieldsMutableBuilder[Self <: AllFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllFields(value: String): Self = StObject.set(x, "allFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllFieldsUndefined: Self = StObject.set(x, "allFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnFields(value: String): Self = StObject.set(x, "columnFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllFields(value: String): Self = this.set("allFields", value.asInstanceOf[js.Any])
+    def setColumnFieldsUndefined: Self = StObject.set(x, "columnFields", js.undefined)
     
     @scala.inline
-    def deleteAllFields: Self = this.set("allFields", js.undefined)
+    def setDataFields(value: String): Self = StObject.set(x, "dataFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnFields(value: String): Self = this.set("columnFields", value.asInstanceOf[js.Any])
+    def setDataFieldsUndefined: Self = StObject.set(x, "dataFields", js.undefined)
     
     @scala.inline
-    def deleteColumnFields: Self = this.set("columnFields", js.undefined)
+    def setFilterFields(value: String): Self = StObject.set(x, "filterFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFields(value: String): Self = this.set("dataFields", value.asInstanceOf[js.Any])
+    def setFilterFieldsUndefined: Self = StObject.set(x, "filterFields", js.undefined)
     
     @scala.inline
-    def deleteDataFields: Self = this.set("dataFields", js.undefined)
+    def setRowFields(value: String): Self = StObject.set(x, "rowFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterFields(value: String): Self = this.set("filterFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterFields: Self = this.set("filterFields", js.undefined)
-    
-    @scala.inline
-    def setRowFields(value: String): Self = this.set("rowFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowFields: Self = this.set("rowFields", js.undefined)
+    def setRowFieldsUndefined: Self = StObject.set(x, "rowFields", js.undefined)
   }
 }

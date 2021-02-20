@@ -1,11 +1,12 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryPositionOptions extends js.Object {
+trait JQueryPositionOptions extends StObject {
   
   var at: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object JQueryPositionOptions {
   }
   
   @scala.inline
-  implicit class JQueryPositionOptionsOps[Self <: JQueryPositionOptions] (val x: Self) extends AnyVal {
+  implicit class JQueryPositionOptionsMutableBuilder[Self <: JQueryPositionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAt(value: String): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollision(value: String): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAt(value: String): Self = this.set("at", value.asInstanceOf[js.Any])
+    def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
     
     @scala.inline
-    def deleteAt: Self = this.set("at", js.undefined)
+    def setMy(value: String): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollision(value: String): Self = this.set("collision", value.asInstanceOf[js.Any])
+    def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
     @scala.inline
-    def deleteCollision: Self = this.set("collision", js.undefined)
+    def setOf(value: js.Any): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMy(value: String): Self = this.set("my", value.asInstanceOf[js.Any])
+    def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
     
     @scala.inline
-    def deleteMy: Self = this.set("my", js.undefined)
+    def setUsing(value: js.Function): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOf(value: js.Any): Self = this.set("of", value.asInstanceOf[js.Any])
+    def setUsingUndefined: Self = StObject.set(x, "using", js.undefined)
     
     @scala.inline
-    def deleteOf: Self = this.set("of", js.undefined)
+    def setWithin(value: js.Any): Self = StObject.set(x, "within", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsing(value: js.Function): Self = this.set("using", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsing: Self = this.set("using", js.undefined)
-    
-    @scala.inline
-    def setWithin(value: js.Any): Self = this.set("within", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithin: Self = this.set("within", js.undefined)
+    def setWithinUndefined: Self = StObject.set(x, "within", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.playcanvas.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseMouse extends js.Object {
+trait UseMouse extends StObject {
   
   var useMouse: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object UseMouse {
   }
   
   @scala.inline
-  implicit class UseMouseOps[Self <: UseMouse] (val x: Self) extends AnyVal {
+  implicit class UseMouseMutableBuilder[Self <: UseMouse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUseMouse(value: Boolean): Self = StObject.set(x, "useMouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUseMouseUndefined: Self = StObject.set(x, "useMouse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseTouch(value: Boolean): Self = StObject.set(x, "useTouch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseMouse(value: Boolean): Self = this.set("useMouse", value.asInstanceOf[js.Any])
+    def setUseTouchUndefined: Self = StObject.set(x, "useTouch", js.undefined)
     
     @scala.inline
-    def deleteUseMouse: Self = this.set("useMouse", js.undefined)
+    def setUseXr(value: Boolean): Self = StObject.set(x, "useXr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseTouch(value: Boolean): Self = this.set("useTouch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseTouch: Self = this.set("useTouch", js.undefined)
-    
-    @scala.inline
-    def setUseXr(value: Boolean): Self = this.set("useXr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseXr: Self = this.set("useXr", js.undefined)
+    def setUseXrUndefined: Self = StObject.set(x, "useXr", js.undefined)
   }
 }

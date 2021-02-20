@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Adds messages to the log._
   * @see https://docs.scriptable.app/console
   */
-@JSGlobal("console")
-@js.native
-object console extends js.Object {
+object console {
   
   /**
     * _Logs an error message to the console._
@@ -21,6 +20,8 @@ object console extends js.Object {
     * @param message - Message to log to the console.
     * @see https://docs.scriptable.app/console/#error
     */
+  @JSGlobal("console.error")
+  @js.native
   def error(message: js.Any): Unit = js.native
   
   /**
@@ -32,6 +33,8 @@ object console extends js.Object {
     * @param message - Message to log to the console.
     * @see https://docs.scriptable.app/console/#log
     */
+  @JSGlobal("console.log")
+  @js.native
   def log(message: js.Any): Unit = js.native
   
   /**
@@ -43,5 +46,7 @@ object console extends js.Object {
     * @param message - Message to log to the console.
     * @see https://docs.scriptable.app/console/#warn
     */
+  @JSGlobal("console.warn")
+  @js.native
   def warn(message: js.Any): Unit = js.native
 }

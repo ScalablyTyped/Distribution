@@ -1,13 +1,14 @@
 package typings.smoothScrollbar
 
 import typings.smoothScrollbar.scrollbarMod.Scrollbar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("smooth-scrollbar/events/select", JSImport.Namespace)
-@js.native
-object selectMod extends js.Object {
+object selectMod {
   
+  @JSImport("smooth-scrollbar/events/select", "selectHandler")
+  @js.native
   def selectHandler(scrollbar: Scrollbar): Unit = js.native
 }

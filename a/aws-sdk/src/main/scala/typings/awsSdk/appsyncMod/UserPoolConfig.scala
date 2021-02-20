@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolConfig extends js.Object {
+trait UserPoolConfig extends StObject {
   
   /**
     * A regular expression for validating the incoming Amazon Cognito user pool app client ID.
@@ -36,33 +37,21 @@ object UserPoolConfig {
   }
   
   @scala.inline
-  implicit class UserPoolConfigOps[Self <: UserPoolConfig] (val x: Self) extends AnyVal {
+  implicit class UserPoolConfigMutableBuilder[Self <: UserPoolConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppIdClientRegex(value: String): Self = StObject.set(x, "appIdClientRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdClientRegexUndefined: Self = StObject.set(x, "appIdClientRegex", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRegion(value: String): Self = this.set("awsRegion", value.asInstanceOf[js.Any])
+    def setDefaultAction(value: DefaultAction): Self = StObject.set(x, "defaultAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultAction(value: DefaultAction): Self = this.set("defaultAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserPoolId(value: String): Self = this.set("userPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppIdClientRegex(value: String): Self = this.set("appIdClientRegex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppIdClientRegex: Self = this.set("appIdClientRegex", js.undefined)
+    def setUserPoolId(value: String): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
   }
 }

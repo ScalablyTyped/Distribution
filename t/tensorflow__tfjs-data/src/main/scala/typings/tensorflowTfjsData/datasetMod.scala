@@ -3,23 +3,16 @@ package typings.tensorflowTfjsData
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
 import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
 import typings.tensorflowTfjsData.typesMod.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-data/dist/dataset", JSImport.Namespace)
-@js.native
-object datasetMod extends js.Object {
+object datasetMod {
   
-  def array[T /* <: TensorContainer */](items: js.Array[T]): Dataset[T] = js.native
-  
-  def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]]): Dataset[T] = js.native
-  def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]], size: Double): Dataset[T] = js.native
-  
-  def zip[O /* <: TensorContainer */](datasets: DatasetContainer): Dataset[O] = js.native
-  
+  @JSImport("@tensorflow/tfjs-data/dist/dataset", "Dataset")
   @js.native
-  abstract class Dataset[T /* <: TensorContainer */] () extends js.Object {
+  abstract class Dataset[T /* <: TensorContainer */] () extends StObject {
     
     /**
       * Groups elements into batches.
@@ -306,11 +299,27 @@ object datasetMod extends js.Object {
     def toArrayForTest(): js.Promise[js.Array[T]] = js.native
   }
   /* static members */
-  @js.native
-  object Dataset extends js.Object {
+  object Dataset {
     
+    @JSImport("@tensorflow/tfjs-data/dist/dataset", "Dataset.MAX_BUFFER_SIZE")
+    @js.native
     val MAX_BUFFER_SIZE: /* 10000 */ Double = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-data/dist/dataset", "array")
+  @js.native
+  def array[T /* <: TensorContainer */](items: js.Array[T]): Dataset[T] = js.native
+  
+  @JSImport("@tensorflow/tfjs-data/dist/dataset", "datasetFromIteratorFn")
+  @js.native
+  def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]]): Dataset[T] = js.native
+  @JSImport("@tensorflow/tfjs-data/dist/dataset", "datasetFromIteratorFn")
+  @js.native
+  def datasetFromIteratorFn[T /* <: TensorContainer */](iteratorFn: js.Function0[js.Promise[LazyIterator[T]]], size: Double): Dataset[T] = js.native
+  
+  @JSImport("@tensorflow/tfjs-data/dist/dataset", "zip")
+  @js.native
+  def zip[O /* <: TensorContainer */](datasets: DatasetContainer): Dataset[O] = js.native
   
   type DatasetContainer = Container[Dataset[TensorContainer]]
 }

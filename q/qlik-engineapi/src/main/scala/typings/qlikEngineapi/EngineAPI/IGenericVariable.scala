@@ -1,6 +1,7 @@
 package typings.qlikEngineapi.EngineAPI
 
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,42 +96,30 @@ object IGenericVariable {
   }
   
   @scala.inline
-  implicit class IGenericVariableOps[Self <: IGenericVariable] (val x: Self) extends AnyVal {
+  implicit class IGenericVariableMutableBuilder[Self <: IGenericVariable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetInfo(value: () => js.Promise[INxInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLayout(value: () => js.Promise[IGenericVariableLayout]): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = this.set("applyPatches", js.Any.fromFunction1(value))
+    def setGetProperties(value: () => js.Promise[IGenericVariableProperties]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInfo(value: () => js.Promise[INxInfo]): Self = this.set("getInfo", js.Any.fromFunction0(value))
+    def setSetDualValue(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "setDualValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetLayout(value: () => js.Promise[IGenericVariableLayout]): Self = this.set("getLayout", js.Any.fromFunction0(value))
+    def setSetNumValue(value: Double => js.Promise[Unit]): Self = StObject.set(x, "setNumValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetProperties(value: () => js.Promise[IGenericVariableProperties]): Self = this.set("getProperties", js.Any.fromFunction0(value))
+    def setSetProperties(value: IGenericVariableProperties => js.Promise[Unit]): Self = StObject.set(x, "setProperties", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDualValue(value: (String, Double) => js.Promise[Unit]): Self = this.set("setDualValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetNumValue(value: Double => js.Promise[Unit]): Self = this.set("setNumValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetProperties(value: IGenericVariableProperties => js.Promise[Unit]): Self = this.set("setProperties", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStringValue(value: String => js.Promise[Unit]): Self = this.set("setStringValue", js.Any.fromFunction1(value))
+    def setSetStringValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "setStringValue", js.Any.fromFunction1(value))
   }
 }

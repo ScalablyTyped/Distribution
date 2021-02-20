@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateApplicationInput extends js.Object {
+trait UpdateApplicationInput extends StObject {
   
   /**
     * The current name of the application you want to change.
@@ -26,30 +27,18 @@ object UpdateApplicationInput {
   }
   
   @scala.inline
-  implicit class UpdateApplicationInputOps[Self <: UpdateApplicationInput] (val x: Self) extends AnyVal {
+  implicit class UpdateApplicationInputMutableBuilder[Self <: UpdateApplicationInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewApplicationName(value: ApplicationName): Self = StObject.set(x, "newApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("applicationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationName: Self = this.set("applicationName", js.undefined)
-    
-    @scala.inline
-    def setNewApplicationName(value: ApplicationName): Self = this.set("newApplicationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewApplicationName: Self = this.set("newApplicationName", js.undefined)
+    def setNewApplicationNameUndefined: Self = StObject.set(x, "newApplicationName", js.undefined)
   }
 }

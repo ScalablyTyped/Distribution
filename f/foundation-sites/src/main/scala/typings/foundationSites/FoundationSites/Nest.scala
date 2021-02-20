@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Nest extends js.Object {
+trait Nest extends StObject {
   
   def Burn(menu: js.Any, `type`: js.Any): Unit = js.native
   
@@ -20,24 +21,12 @@ object Nest {
   }
   
   @scala.inline
-  implicit class NestOps[Self <: Nest] (val x: Self) extends AnyVal {
+  implicit class NestMutableBuilder[Self <: Nest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBurn(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "Burn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBurn(value: (js.Any, js.Any) => Unit): Self = this.set("Burn", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setFeather(value: (js.Any, js.Any) => Unit): Self = this.set("Feather", js.Any.fromFunction2(value))
+    def setFeather(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "Feather", js.Any.fromFunction2(value))
   }
 }

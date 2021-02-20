@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SaveOptionsConfiguration extends js.Object {
+trait SaveOptionsConfiguration extends StObject {
   
   var allowConcurrentSaves: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object SaveOptionsConfiguration {
   }
   
   @scala.inline
-  implicit class SaveOptionsConfigurationOps[Self <: SaveOptionsConfiguration] (val x: Self) extends AnyVal {
+  implicit class SaveOptionsConfigurationMutableBuilder[Self <: SaveOptionsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowConcurrentSaves(value: Boolean): Self = StObject.set(x, "allowConcurrentSaves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowConcurrentSavesUndefined: Self = StObject.set(x, "allowConcurrentSaves", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowConcurrentSaves(value: Boolean): Self = this.set("allowConcurrentSaves", value.asInstanceOf[js.Any])
+    def setDataServiceUndefined: Self = StObject.set(x, "dataService", js.undefined)
     
     @scala.inline
-    def deleteAllowConcurrentSaves: Self = this.set("allowConcurrentSaves", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataService(value: DataService): Self = this.set("dataService", value.asInstanceOf[js.Any])
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def deleteDataService: Self = this.set("dataService", js.undefined)
+    def setTag(value: js.Object): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
-    
-    @scala.inline
-    def setTag(value: js.Object): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

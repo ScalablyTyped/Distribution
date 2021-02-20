@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVirtualRouterOutput extends js.Object {
+trait DescribeVirtualRouterOutput extends StObject {
   
   /**
     * The full description of your virtual router.
@@ -21,21 +22,9 @@ object DescribeVirtualRouterOutput {
   }
   
   @scala.inline
-  implicit class DescribeVirtualRouterOutputOps[Self <: DescribeVirtualRouterOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeVirtualRouterOutputMutableBuilder[Self <: DescribeVirtualRouterOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVirtualRouter(value: VirtualRouterData): Self = this.set("virtualRouter", value.asInstanceOf[js.Any])
+    def setVirtualRouter(value: VirtualRouterData): Self = StObject.set(x, "virtualRouter", value.asInstanceOf[js.Any])
   }
 }

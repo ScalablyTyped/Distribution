@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiDirectAdvertisementListenStateDiscoverability extends js.Object
+sealed trait WiFiDirectAdvertisementListenStateDiscoverability extends StObject
 /** Specifies whether the Wi-Fi Direct device is listening and discoverable. */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectAdvertisementListenStateDiscoverability")
 @js.native
-object WiFiDirectAdvertisementListenStateDiscoverability extends js.Object {
+object WiFiDirectAdvertisementListenStateDiscoverability extends StObject {
   
   /** The device is discoverable when the app is in the foreground or in the background. */
   @js.native

@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.connectionConnectionMod.Connection
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/metadata-builder/ClosureJunctionEntityMetadataBuilder", JSImport.Namespace)
-@js.native
-object metadataBuilderClosureJunctionEntityMetadataBuilderMod extends js.Object {
+object metadataBuilderClosureJunctionEntityMetadataBuilderMod {
   
+  @JSImport("typeorm/metadata-builder/ClosureJunctionEntityMetadataBuilder", "ClosureJunctionEntityMetadataBuilder")
   @js.native
-  class ClosureJunctionEntityMetadataBuilder protected () extends js.Object {
+  class ClosureJunctionEntityMetadataBuilder protected () extends StObject {
     def this(connection: Connection) = this()
     
     /**

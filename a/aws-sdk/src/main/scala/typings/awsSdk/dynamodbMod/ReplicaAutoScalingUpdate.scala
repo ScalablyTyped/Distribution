@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicaAutoScalingUpdate extends js.Object {
+trait ReplicaAutoScalingUpdate extends StObject {
   
   /**
     * The Region where the replica exists.
@@ -28,36 +29,24 @@ object ReplicaAutoScalingUpdate {
   }
   
   @scala.inline
-  implicit class ReplicaAutoScalingUpdateOps[Self <: ReplicaAutoScalingUpdate] (val x: Self) extends AnyVal {
+  implicit class ReplicaAutoScalingUpdateMutableBuilder[Self <: ReplicaAutoScalingUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplicaGlobalSecondaryIndexUpdates(value: ReplicaGlobalSecondaryIndexAutoScalingUpdateList): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicaGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", js.undefined)
     
     @scala.inline
-    def setRegionName(value: RegionName): Self = this.set("RegionName", value.asInstanceOf[js.Any])
+    def setReplicaGlobalSecondaryIndexUpdatesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", js.Array(value :_*))
     
     @scala.inline
-    def setReplicaGlobalSecondaryIndexUpdatesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingUpdate*): Self = this.set("ReplicaGlobalSecondaryIndexUpdates", js.Array(value :_*))
+    def setReplicaProvisionedReadCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaGlobalSecondaryIndexUpdates(value: ReplicaGlobalSecondaryIndexAutoScalingUpdateList): Self = this.set("ReplicaGlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaGlobalSecondaryIndexUpdates: Self = this.set("ReplicaGlobalSecondaryIndexUpdates", js.undefined)
-    
-    @scala.inline
-    def setReplicaProvisionedReadCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = this.set("ReplicaProvisionedReadCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaProvisionedReadCapacityAutoScalingUpdate: Self = this.set("ReplicaProvisionedReadCapacityAutoScalingUpdate", js.undefined)
+    def setReplicaProvisionedReadCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingUpdate", js.undefined)
   }
 }

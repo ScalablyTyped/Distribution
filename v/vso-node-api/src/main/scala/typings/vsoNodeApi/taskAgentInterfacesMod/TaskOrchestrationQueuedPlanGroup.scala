@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskOrchestrationQueuedPlanGroup extends js.Object {
+trait TaskOrchestrationQueuedPlanGroup extends StObject {
   
   var definition: TaskOrchestrationOwner = js.native
   
@@ -35,39 +36,27 @@ object TaskOrchestrationQueuedPlanGroup {
   }
   
   @scala.inline
-  implicit class TaskOrchestrationQueuedPlanGroupOps[Self <: TaskOrchestrationQueuedPlanGroup] (val x: Self) extends AnyVal {
+  implicit class TaskOrchestrationQueuedPlanGroupMutableBuilder[Self <: TaskOrchestrationQueuedPlanGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinition(value: TaskOrchestrationOwner): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwner(value: TaskOrchestrationOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlanGroup(value: String): Self = StObject.set(x, "planGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: TaskOrchestrationOwner): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setPlans(value: js.Array[TaskOrchestrationQueuedPlan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: TaskOrchestrationOwner): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPlansVarargs(value: TaskOrchestrationQueuedPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
     
     @scala.inline
-    def setPlanGroup(value: String): Self = this.set("planGroup", value.asInstanceOf[js.Any])
+    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlansVarargs(value: TaskOrchestrationQueuedPlan*): Self = this.set("plans", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlans(value: js.Array[TaskOrchestrationQueuedPlan]): Self = this.set("plans", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProject(value: ProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueuePosition(value: Double): Self = this.set("queuePosition", value.asInstanceOf[js.Any])
+    def setQueuePosition(value: Double): Self = StObject.set(x, "queuePosition", value.asInstanceOf[js.Any])
   }
 }

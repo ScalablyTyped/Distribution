@@ -3,6 +3,7 @@ package typings.activexOffice.Office
 import typings.activexOffice.activexOfficeNumbers.`1`
 import typings.activexOffice.activexOfficeNumbers.`2`
 import typings.activexOffice.activexOfficeNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`1`
   - typings.activexOffice.activexOfficeNumbers.`2`
 */
-trait XlDisplayBlanksAs extends js.Object
+trait XlDisplayBlanksAs extends StObject
 object XlDisplayBlanksAs {
   
   @scala.inline

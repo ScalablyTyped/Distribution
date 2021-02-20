@@ -1,11 +1,12 @@
 package typings.jssip.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserAgentConfiguration extends js.Object {
+trait UserAgentConfiguration extends StObject {
   
   var authorization_user: js.UndefOr[String] = js.native
   
@@ -54,129 +55,117 @@ object UserAgentConfiguration {
   }
   
   @scala.inline
-  implicit class UserAgentConfigurationOps[Self <: UserAgentConfiguration] (val x: Self) extends AnyVal {
+  implicit class UserAgentConfigurationMutableBuilder[Self <: UserAgentConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorization_user(value: String): Self = StObject.set(x, "authorization_user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorization_userUndefined: Self = StObject.set(x, "authorization_user", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnection_recovery_max_interval(value: Double): Self = StObject.set(x, "connection_recovery_max_interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocketsVarargs(value: Socket*): Self = this.set("sockets", js.Array(value :_*))
+    def setConnection_recovery_max_intervalUndefined: Self = StObject.set(x, "connection_recovery_max_interval", js.undefined)
     
     @scala.inline
-    def setSockets(value: Socket | js.Array[Socket]): Self = this.set("sockets", value.asInstanceOf[js.Any])
+    def setConnection_recovery_min_interval(value: Double): Self = StObject.set(x, "connection_recovery_min_interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setConnection_recovery_min_intervalUndefined: Self = StObject.set(x, "connection_recovery_min_interval", js.undefined)
     
     @scala.inline
-    def setAuthorization_user(value: String): Self = this.set("authorization_user", value.asInstanceOf[js.Any])
+    def setContact_uri(value: String): Self = StObject.set(x, "contact_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthorization_user: Self = this.set("authorization_user", js.undefined)
+    def setContact_uriUndefined: Self = StObject.set(x, "contact_uri", js.undefined)
     
     @scala.inline
-    def setConnection_recovery_max_interval(value: Double): Self = this.set("connection_recovery_max_interval", value.asInstanceOf[js.Any])
+    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnection_recovery_max_interval: Self = this.set("connection_recovery_max_interval", js.undefined)
+    def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
     
     @scala.inline
-    def setConnection_recovery_min_interval(value: Double): Self = this.set("connection_recovery_min_interval", value.asInstanceOf[js.Any])
+    def setHa1(value: String): Self = StObject.set(x, "ha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnection_recovery_min_interval: Self = this.set("connection_recovery_min_interval", js.undefined)
+    def setHa1Undefined: Self = StObject.set(x, "ha1", js.undefined)
     
     @scala.inline
-    def setContact_uri(value: String): Self = this.set("contact_uri", value.asInstanceOf[js.Any])
+    def setInstance_id(value: String): Self = StObject.set(x, "instance_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContact_uri: Self = this.set("contact_uri", js.undefined)
+    def setInstance_idUndefined: Self = StObject.set(x, "instance_id", js.undefined)
     
     @scala.inline
-    def setDisplay_name(value: String): Self = this.set("display_name", value.asInstanceOf[js.Any])
+    def setNo_answer_timeout(value: Double): Self = StObject.set(x, "no_answer_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplay_name: Self = this.set("display_name", js.undefined)
+    def setNo_answer_timeoutUndefined: Self = StObject.set(x, "no_answer_timeout", js.undefined)
     
     @scala.inline
-    def setHa1(value: String): Self = this.set("ha1", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHa1: Self = this.set("ha1", js.undefined)
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def setInstance_id(value: String): Self = this.set("instance_id", value.asInstanceOf[js.Any])
+    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstance_id: Self = this.set("instance_id", js.undefined)
+    def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
     
     @scala.inline
-    def setNo_answer_timeout(value: Double): Self = this.set("no_answer_timeout", value.asInstanceOf[js.Any])
+    def setRegister(value: Boolean): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNo_answer_timeout: Self = this.set("no_answer_timeout", js.undefined)
+    def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setRegister_expires(value: Double): Self = StObject.set(x, "register_expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setRegister_expiresUndefined: Self = StObject.set(x, "register_expires", js.undefined)
     
     @scala.inline
-    def setRealm(value: String): Self = this.set("realm", value.asInstanceOf[js.Any])
+    def setRegistrar_server(value: String): Self = StObject.set(x, "registrar_server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRealm: Self = this.set("realm", js.undefined)
+    def setRegistrar_serverUndefined: Self = StObject.set(x, "registrar_server", js.undefined)
     
     @scala.inline
-    def setRegister(value: Boolean): Self = this.set("register", value.asInstanceOf[js.Any])
+    def setSession_timers(value: Boolean): Self = StObject.set(x, "session_timers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegister: Self = this.set("register", js.undefined)
+    def setSession_timersUndefined: Self = StObject.set(x, "session_timers", js.undefined)
     
     @scala.inline
-    def setRegister_expires(value: Double): Self = this.set("register_expires", value.asInstanceOf[js.Any])
+    def setSession_timers_refresh_method(value: String): Self = StObject.set(x, "session_timers_refresh_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegister_expires: Self = this.set("register_expires", js.undefined)
+    def setSession_timers_refresh_methodUndefined: Self = StObject.set(x, "session_timers_refresh_method", js.undefined)
     
     @scala.inline
-    def setRegistrar_server(value: String): Self = this.set("registrar_server", value.asInstanceOf[js.Any])
+    def setSockets(value: Socket | js.Array[Socket]): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegistrar_server: Self = this.set("registrar_server", js.undefined)
+    def setSocketsVarargs(value: Socket*): Self = StObject.set(x, "sockets", js.Array(value :_*))
     
     @scala.inline
-    def setSession_timers(value: Boolean): Self = this.set("session_timers", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSession_timers: Self = this.set("session_timers", js.undefined)
+    def setUse_reloaded_route(value: Boolean): Self = StObject.set(x, "use_reloaded_route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession_timers_refresh_method(value: String): Self = this.set("session_timers_refresh_method", value.asInstanceOf[js.Any])
+    def setUse_reloaded_routeUndefined: Self = StObject.set(x, "use_reloaded_route", js.undefined)
     
     @scala.inline
-    def deleteSession_timers_refresh_method: Self = this.set("session_timers_refresh_method", js.undefined)
+    def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse_reloaded_route(value: Boolean): Self = this.set("use_reloaded_route", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUse_reloaded_route: Self = this.set("use_reloaded_route", js.undefined)
-    
-    @scala.inline
-    def setUser_agent(value: String): Self = this.set("user_agent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_agent: Self = this.set("user_agent", js.undefined)
+    def setUser_agentUndefined: Self = StObject.set(x, "user_agent", js.undefined)
   }
 }

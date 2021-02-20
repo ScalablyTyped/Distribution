@@ -3,16 +3,16 @@ package typings.angularCompiler
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.coreMod.Component
 import typings.angularCompiler.outputAstMod.ExternalReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/compile_reflector", JSImport.Namespace)
-@js.native
-object compileReflectorMod extends js.Object {
+object compileReflectorMod {
   
+  @JSImport("@angular/compiler/src/compile_reflector", "CompileReflector")
   @js.native
-  abstract class CompileReflector () extends js.Object {
+  abstract class CompileReflector () extends StObject {
     
     def annotations(typeOrFunc: js.Any): js.Array[_] = js.native
     

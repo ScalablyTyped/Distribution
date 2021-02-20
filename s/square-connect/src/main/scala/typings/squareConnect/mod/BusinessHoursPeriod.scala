@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "BusinessHoursPeriod")
 @js.native
-class BusinessHoursPeriod () extends js.Object {
+class BusinessHoursPeriod () extends StObject {
   
   /**
     * The day of week for this time period. See [DayOfWeek](#type-dayofweek) for possible values

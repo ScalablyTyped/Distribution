@@ -1,9 +1,9 @@
 package typings.twilioVideo.mod
 
-import typings.std.HTMLMediaElement
-import typings.std.HTMLVideoElement
+import typings.node.eventsMod.EventEmitterOptions
 import typings.twilioVideo.mod.Track.Priority
 import typings.twilioVideo.mod.Track.SID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,20 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class RemoteVideoTrack ()
   extends VideoTrack
      with RemoteTrack {
-  
-  /* InferMemberOverrides */
-  override def attach(): HTMLVideoElement = js.native
-  /* InferMemberOverrides */
-  override def attach(element: String): HTMLVideoElement = js.native
-  /* InferMemberOverrides */
-  override def attach(element: HTMLMediaElement): HTMLVideoElement = js.native
-  
-  /* InferMemberOverrides */
-  override def detach(): js.Array[HTMLMediaElement] = js.native
-  /* InferMemberOverrides */
-  override def detach(element: String): js.Array[HTMLMediaElement] = js.native
-  /* InferMemberOverrides */
-  override def detach(element: HTMLMediaElement): js.Array[HTMLMediaElement] = js.native
+  def this(options: EventEmitterOptions) = this()
   
   var isSwitchedOff: Boolean = js.native
   

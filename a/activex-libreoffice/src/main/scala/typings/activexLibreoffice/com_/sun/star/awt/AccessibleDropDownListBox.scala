@@ -1,10 +1,9 @@
 package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
+import typings.activexLibreoffice.com_.sun.star.accessibility.AccessibleContext
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessible
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleAction
-import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleContext
-import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleEventBroadcaster
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleEventListener
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleExtendedComponent
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleKeyBinding
@@ -12,6 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleRelatio
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleStateSet
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +26,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait AccessibleDropDownListBox
-  extends XAccessibleExtendedComponent
-     with XAccessibleContext
-     with XAccessibleEventBroadcaster
+  extends AccessibleContext
+     with XAccessibleExtendedComponent
      with XAccessibleAction
 object AccessibleDropDownListBox {
   

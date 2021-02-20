@@ -3,13 +3,14 @@ package typings.node.cryptoMod
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("crypto", "DiffieHellman")
 @js.native
-class DiffieHellman_ protected () extends js.Object {
+class DiffieHellman_ protected () extends StObject {
   
   def computeSecret(other_public_key: String, input_encoding: HexBase64Latin1Encoding): Buffer = js.native
   def computeSecret(

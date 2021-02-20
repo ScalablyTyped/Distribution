@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamingConfigTask extends js.Object {
+trait StreamingConfigTask extends StObject {
   
   /** Chunk size for commit streams from the harness to windmill. */
   var commitStreamChunkSizeBytes: js.UndefOr[String] = js.native
@@ -42,67 +43,55 @@ object StreamingConfigTask {
   }
   
   @scala.inline
-  implicit class StreamingConfigTaskOps[Self <: StreamingConfigTask] (val x: Self) extends AnyVal {
+  implicit class StreamingConfigTaskMutableBuilder[Self <: StreamingConfigTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitStreamChunkSizeBytes(value: String): Self = StObject.set(x, "commitStreamChunkSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitStreamChunkSizeBytesUndefined: Self = StObject.set(x, "commitStreamChunkSizeBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDataStreamChunkSizeBytes(value: String): Self = StObject.set(x, "getDataStreamChunkSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitStreamChunkSizeBytes(value: String): Self = this.set("commitStreamChunkSizeBytes", value.asInstanceOf[js.Any])
+    def setGetDataStreamChunkSizeBytesUndefined: Self = StObject.set(x, "getDataStreamChunkSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteCommitStreamChunkSizeBytes: Self = this.set("commitStreamChunkSizeBytes", js.undefined)
+    def setMaxWorkItemCommitBytes(value: String): Self = StObject.set(x, "maxWorkItemCommitBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDataStreamChunkSizeBytes(value: String): Self = this.set("getDataStreamChunkSizeBytes", value.asInstanceOf[js.Any])
+    def setMaxWorkItemCommitBytesUndefined: Self = StObject.set(x, "maxWorkItemCommitBytes", js.undefined)
     
     @scala.inline
-    def deleteGetDataStreamChunkSizeBytes: Self = this.set("getDataStreamChunkSizeBytes", js.undefined)
+    def setStreamingComputationConfigs(value: js.Array[StreamingComputationConfig]): Self = StObject.set(x, "streamingComputationConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWorkItemCommitBytes(value: String): Self = this.set("maxWorkItemCommitBytes", value.asInstanceOf[js.Any])
+    def setStreamingComputationConfigsUndefined: Self = StObject.set(x, "streamingComputationConfigs", js.undefined)
     
     @scala.inline
-    def deleteMaxWorkItemCommitBytes: Self = this.set("maxWorkItemCommitBytes", js.undefined)
-    
-    @scala.inline
-    def setStreamingComputationConfigsVarargs(value: StreamingComputationConfig*): Self = this.set("streamingComputationConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setStreamingComputationConfigs(value: js.Array[StreamingComputationConfig]): Self = this.set("streamingComputationConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamingComputationConfigs: Self = this.set("streamingComputationConfigs", js.undefined)
+    def setStreamingComputationConfigsVarargs(value: StreamingComputationConfig*): Self = StObject.set(x, "streamingComputationConfigs", js.Array(value :_*))
     
     @scala.inline
     def setUserStepToStateFamilyNameMap(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingConfigTask with TopLevel[js.Any]
-    ): Self = this.set("userStepToStateFamilyNameMap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "userStepToStateFamilyNameMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserStepToStateFamilyNameMap: Self = this.set("userStepToStateFamilyNameMap", js.undefined)
+    def setUserStepToStateFamilyNameMapUndefined: Self = StObject.set(x, "userStepToStateFamilyNameMap", js.undefined)
     
     @scala.inline
-    def setWindmillServiceEndpoint(value: String): Self = this.set("windmillServiceEndpoint", value.asInstanceOf[js.Any])
+    def setWindmillServiceEndpoint(value: String): Self = StObject.set(x, "windmillServiceEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWindmillServiceEndpoint: Self = this.set("windmillServiceEndpoint", js.undefined)
+    def setWindmillServiceEndpointUndefined: Self = StObject.set(x, "windmillServiceEndpoint", js.undefined)
     
     @scala.inline
-    def setWindmillServicePort(value: String): Self = this.set("windmillServicePort", value.asInstanceOf[js.Any])
+    def setWindmillServicePort(value: String): Self = StObject.set(x, "windmillServicePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWindmillServicePort: Self = this.set("windmillServicePort", js.undefined)
+    def setWindmillServicePortUndefined: Self = StObject.set(x, "windmillServicePort", js.undefined)
   }
 }

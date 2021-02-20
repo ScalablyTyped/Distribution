@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridColumnSortable extends js.Object {
+trait GridColumnSortable extends StObject {
   
   var allowUnsort: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object GridColumnSortable {
   }
   
   @scala.inline
-  implicit class GridColumnSortableOps[Self <: GridColumnSortable] (val x: Self) extends AnyVal {
+  implicit class GridColumnSortableMutableBuilder[Self <: GridColumnSortable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowUnsort(value: Boolean): Self = StObject.set(x, "allowUnsort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUnsortUndefined: Self = StObject.set(x, "allowUnsort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUnsort(value: Boolean): Self = this.set("allowUnsort", value.asInstanceOf[js.Any])
+    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
     @scala.inline
-    def deleteAllowUnsort: Self = this.set("allowUnsort", js.undefined)
+    def setInitialDirection(value: String): Self = StObject.set(x, "initialDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompare(value: js.Function): Self = this.set("compare", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompare: Self = this.set("compare", js.undefined)
-    
-    @scala.inline
-    def setInitialDirection(value: String): Self = this.set("initialDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialDirection: Self = this.set("initialDirection", js.undefined)
+    def setInitialDirectionUndefined: Self = StObject.set(x, "initialDirection", js.undefined)
   }
 }

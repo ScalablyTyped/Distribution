@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object specifying the sentiment extraction enrichment and related parameters. */
 @js.native
-trait NluEnrichmentSentiment extends js.Object {
+trait NluEnrichmentSentiment extends StObject {
   
   /** When `true`, sentiment analysis is performed on the entire field. */
   var document: js.UndefOr[Boolean] = js.native
@@ -23,33 +24,21 @@ object NluEnrichmentSentiment {
   }
   
   @scala.inline
-  implicit class NluEnrichmentSentimentOps[Self <: NluEnrichmentSentiment] (val x: Self) extends AnyVal {
+  implicit class NluEnrichmentSentimentMutableBuilder[Self <: NluEnrichmentSentiment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument(value: Boolean): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: Boolean): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
-    
-    @scala.inline
-    def setTargetsVarargs(value: String*): Self = this.set("targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargets(value: js.Array[String]): Self = this.set("targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargets: Self = this.set("targets", js.undefined)
+    def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

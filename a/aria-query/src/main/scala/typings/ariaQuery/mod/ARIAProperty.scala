@@ -1,5 +1,6 @@
 package typings.ariaQuery.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +56,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ariaQuery.ariaQueryStrings.`aria-pressed`
   - typings.ariaQuery.ariaQueryStrings.`aria-selected`
 */
-trait ARIAProperty extends js.Object
+trait ARIAProperty extends StObject
 object ARIAProperty {
   
   @scala.inline

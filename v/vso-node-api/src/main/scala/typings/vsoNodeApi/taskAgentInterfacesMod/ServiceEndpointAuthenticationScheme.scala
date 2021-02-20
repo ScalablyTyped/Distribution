@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import typings.vsoNodeApi.formInputInterfacesMod.InputDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceEndpointAuthenticationScheme extends js.Object {
+trait ServiceEndpointAuthenticationScheme extends StObject {
   
   var authorizationHeaders: js.Array[AuthorizationHeader] = js.native
   
@@ -30,36 +31,24 @@ object ServiceEndpointAuthenticationScheme {
   }
   
   @scala.inline
-  implicit class ServiceEndpointAuthenticationSchemeOps[Self <: ServiceEndpointAuthenticationScheme] (val x: Self) extends AnyVal {
+  implicit class ServiceEndpointAuthenticationSchemeMutableBuilder[Self <: ServiceEndpointAuthenticationScheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationHeaders(value: js.Array[AuthorizationHeader]): Self = StObject.set(x, "authorizationHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationHeadersVarargs(value: AuthorizationHeader*): Self = StObject.set(x, "authorizationHeaders", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationHeadersVarargs(value: AuthorizationHeader*): Self = this.set("authorizationHeaders", js.Array(value :_*))
+    def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationHeaders(value: js.Array[AuthorizationHeader]): Self = this.set("authorizationHeaders", value.asInstanceOf[js.Any])
+    def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputDescriptorsVarargs(value: InputDescriptor*): Self = this.set("inputDescriptors", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputDescriptors(value: js.Array[InputDescriptor]): Self = this.set("inputDescriptors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

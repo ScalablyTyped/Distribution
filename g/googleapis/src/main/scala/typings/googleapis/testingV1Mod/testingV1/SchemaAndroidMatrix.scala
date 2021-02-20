@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * are ignored.
   */
 @js.native
-trait SchemaAndroidMatrix extends js.Object {
+trait SchemaAndroidMatrix extends StObject {
   
   /**
     * Required. The ids of the set of Android device to be used. Use the
@@ -47,54 +48,42 @@ object SchemaAndroidMatrix {
   }
   
   @scala.inline
-  implicit class SchemaAndroidMatrixOps[Self <: SchemaAndroidMatrix] (val x: Self) extends AnyVal {
+  implicit class SchemaAndroidMatrixMutableBuilder[Self <: SchemaAndroidMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidModelIds(value: js.Array[String]): Self = StObject.set(x, "androidModelIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidModelIdsUndefined: Self = StObject.set(x, "androidModelIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidModelIdsVarargs(value: String*): Self = StObject.set(x, "androidModelIds", js.Array(value :_*))
     
     @scala.inline
-    def setAndroidModelIdsVarargs(value: String*): Self = this.set("androidModelIds", js.Array(value :_*))
+    def setAndroidVersionIds(value: js.Array[String]): Self = StObject.set(x, "androidVersionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidModelIds(value: js.Array[String]): Self = this.set("androidModelIds", value.asInstanceOf[js.Any])
+    def setAndroidVersionIdsUndefined: Self = StObject.set(x, "androidVersionIds", js.undefined)
     
     @scala.inline
-    def deleteAndroidModelIds: Self = this.set("androidModelIds", js.undefined)
+    def setAndroidVersionIdsVarargs(value: String*): Self = StObject.set(x, "androidVersionIds", js.Array(value :_*))
     
     @scala.inline
-    def setAndroidVersionIdsVarargs(value: String*): Self = this.set("androidVersionIds", js.Array(value :_*))
+    def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidVersionIds(value: js.Array[String]): Self = this.set("androidVersionIds", value.asInstanceOf[js.Any])
+    def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
     @scala.inline
-    def deleteAndroidVersionIds: Self = this.set("androidVersionIds", js.undefined)
+    def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
     
     @scala.inline
-    def setLocalesVarargs(value: String*): Self = this.set("locales", js.Array(value :_*))
+    def setOrientations(value: js.Array[String]): Self = StObject.set(x, "orientations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocales(value: js.Array[String]): Self = this.set("locales", value.asInstanceOf[js.Any])
+    def setOrientationsUndefined: Self = StObject.set(x, "orientations", js.undefined)
     
     @scala.inline
-    def deleteLocales: Self = this.set("locales", js.undefined)
-    
-    @scala.inline
-    def setOrientationsVarargs(value: String*): Self = this.set("orientations", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrientations(value: js.Array[String]): Self = this.set("orientations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientations: Self = this.set("orientations", js.undefined)
+    def setOrientationsVarargs(value: String*): Self = StObject.set(x, "orientations", js.Array(value :_*))
   }
 }

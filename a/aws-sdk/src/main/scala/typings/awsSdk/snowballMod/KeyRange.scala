@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyRange extends js.Object {
+trait KeyRange extends StObject {
   
   /**
     * The key that starts an optional key range for an export job. Ranges are inclusive and UTF-8 binary sorted.
@@ -26,30 +27,18 @@ object KeyRange {
   }
   
   @scala.inline
-  implicit class KeyRangeOps[Self <: KeyRange] (val x: Self) extends AnyVal {
+  implicit class KeyRangeMutableBuilder[Self <: KeyRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginMarker(value: String): Self = StObject.set(x, "BeginMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginMarkerUndefined: Self = StObject.set(x, "BeginMarker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndMarker(value: String): Self = StObject.set(x, "EndMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginMarker(value: String): Self = this.set("BeginMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeginMarker: Self = this.set("BeginMarker", js.undefined)
-    
-    @scala.inline
-    def setEndMarker(value: String): Self = this.set("EndMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndMarker: Self = this.set("EndMarker", js.undefined)
+    def setEndMarkerUndefined: Self = StObject.set(x, "EndMarker", js.undefined)
   }
 }

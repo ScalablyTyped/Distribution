@@ -1,11 +1,12 @@
 package typings.durandal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurandalHistoryOptions extends js.Object {
+trait DurandalHistoryOptions extends StObject {
   
   /**
     * Use hash change when present.
@@ -49,54 +50,42 @@ object DurandalHistoryOptions {
   }
   
   @scala.inline
-  implicit class DurandalHistoryOptionsOps[Self <: DurandalHistoryOptions] (val x: Self) extends AnyVal {
+  implicit class DurandalHistoryOptionsMutableBuilder[Self <: DurandalHistoryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHashChange(value: Boolean): Self = StObject.set(x, "hashChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHashChangeUndefined: Self = StObject.set(x, "hashChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashChange(value: Boolean): Self = this.set("hashChange", value.asInstanceOf[js.Any])
+    def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
     
     @scala.inline
-    def deleteHashChange: Self = this.set("hashChange", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushState(value: Boolean): Self = this.set("pushState", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deletePushState: Self = this.set("pushState", js.undefined)
+    def setRouteHandler(value: /* fragment */ String => Unit): Self = StObject.set(x, "routeHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRouteHandlerUndefined: Self = StObject.set(x, "routeHandler", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteHandler(value: /* fragment */ String => Unit): Self = this.set("routeHandler", js.Any.fromFunction1(value))
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def deleteRouteHandler: Self = this.set("routeHandler", js.undefined)
+    def setStartRoute(value: String): Self = StObject.set(x, "startRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
-    
-    @scala.inline
-    def setStartRoute(value: String): Self = this.set("startRoute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRoute: Self = this.set("startRoute", js.undefined)
+    def setStartRouteUndefined: Self = StObject.set(x, "startRoute", js.undefined)
   }
 }

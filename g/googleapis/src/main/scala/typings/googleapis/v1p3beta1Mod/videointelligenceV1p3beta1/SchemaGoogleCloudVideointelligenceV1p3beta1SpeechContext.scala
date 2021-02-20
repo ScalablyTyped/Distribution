@@ -1,5 +1,6 @@
 package typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and phrases in the results.
   */
 @js.native
-trait SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext extends js.Object {
+trait SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext extends StObject {
   
   /**
     * *Optional* A list of strings containing words and phrases
@@ -31,27 +32,15 @@ object SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContextOps[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContextMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPhrases(value: js.Array[String]): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPhrasesVarargs(value: String*): Self = this.set("phrases", js.Array(value :_*))
-    
-    @scala.inline
-    def setPhrases(value: js.Array[String]): Self = this.set("phrases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhrases: Self = this.set("phrases", js.undefined)
+    def setPhrasesVarargs(value: String*): Self = StObject.set(x, "phrases", js.Array(value :_*))
   }
 }

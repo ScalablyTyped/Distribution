@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessLogSettings extends js.Object {
+trait AccessLogSettings extends StObject {
   
   /**
     * The ARN of the CloudWatch Logs log group to receive access logs.
@@ -26,30 +27,18 @@ object AccessLogSettings {
   }
   
   @scala.inline
-  implicit class AccessLogSettingsOps[Self <: AccessLogSettings] (val x: Self) extends AnyVal {
+  implicit class AccessLogSettingsMutableBuilder[Self <: AccessLogSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationArn(value: Arn): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationArnUndefined: Self = StObject.set(x, "DestinationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: StringWithLengthBetween1And1024): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationArn(value: Arn): Self = this.set("DestinationArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationArn: Self = this.set("DestinationArn", js.undefined)
-    
-    @scala.inline
-    def setFormat(value: StringWithLengthBetween1And1024): Self = this.set("Format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
   }
 }

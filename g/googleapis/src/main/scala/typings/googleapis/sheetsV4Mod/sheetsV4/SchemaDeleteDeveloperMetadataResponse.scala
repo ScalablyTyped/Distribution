@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response from deleting developer metadata.
   */
 @js.native
-trait SchemaDeleteDeveloperMetadataResponse extends js.Object {
+trait SchemaDeleteDeveloperMetadataResponse extends StObject {
   
   /**
     * The metadata that was deleted.
@@ -24,27 +25,15 @@ object SchemaDeleteDeveloperMetadataResponse {
   }
   
   @scala.inline
-  implicit class SchemaDeleteDeveloperMetadataResponseOps[Self <: SchemaDeleteDeveloperMetadataResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaDeleteDeveloperMetadataResponseMutableBuilder[Self <: SchemaDeleteDeveloperMetadataResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletedDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = StObject.set(x, "deletedDeveloperMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedDeveloperMetadataUndefined: Self = StObject.set(x, "deletedDeveloperMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeletedDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = this.set("deletedDeveloperMetadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeletedDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = this.set("deletedDeveloperMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletedDeveloperMetadata: Self = this.set("deletedDeveloperMetadata", js.undefined)
+    def setDeletedDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "deletedDeveloperMetadata", js.Array(value :_*))
   }
 }

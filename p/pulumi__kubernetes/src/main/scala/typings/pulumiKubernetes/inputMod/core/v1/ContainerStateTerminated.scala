@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ContainerStateTerminated is a terminated state of a container.
   */
 @js.native
-trait ContainerStateTerminated extends js.Object {
+trait ContainerStateTerminated extends StObject {
   
   /**
     * Container's ID in the format 'docker://<container_id>'
@@ -55,57 +56,45 @@ object ContainerStateTerminated {
   }
   
   @scala.inline
-  implicit class ContainerStateTerminatedOps[Self <: ContainerStateTerminated] (val x: Self) extends AnyVal {
+  implicit class ContainerStateTerminatedMutableBuilder[Self <: ContainerStateTerminated] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerID(value: Input[String]): Self = StObject.set(x, "containerID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerIDUndefined: Self = StObject.set(x, "containerID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExitCode(value: Input[Double]): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitCode(value: Input[Double]): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    def setFinishedAt(value: Input[String]): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerID(value: Input[String]): Self = this.set("containerID", value.asInstanceOf[js.Any])
+    def setFinishedAtUndefined: Self = StObject.set(x, "finishedAt", js.undefined)
     
     @scala.inline
-    def deleteContainerID: Self = this.set("containerID", js.undefined)
+    def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishedAt(value: Input[String]): Self = this.set("finishedAt", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteFinishedAt: Self = this.set("finishedAt", js.undefined)
+    def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Input[String]): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setSignal(value: Input[Double]): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: Input[String]): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setStartedAt(value: Input[String]): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignal(value: Input[Double]): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
-    
-    @scala.inline
-    def setStartedAt(value: Input[String]): Self = this.set("startedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartedAt: Self = this.set("startedAt", js.undefined)
+    def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
   }
 }

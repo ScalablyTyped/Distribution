@@ -5,6 +5,7 @@ import typings.std.Record
 import typings.wordpressApiFetch.anon.Blockversion
 import typings.wordpressApiFetch.anon.Dictk
 import typings.wordpressApiFetch.anon.Protected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,105 +105,93 @@ object BasePost {
   }
   
   @scala.inline
-  implicit class BasePostOps[Self <: BasePost[_], T /* <: Context */] (val x: Self with BasePost[T]) extends AnyVal {
+  implicit class BasePostMutableBuilder[Self <: BasePost[_], T /* <: Context */] (val x: Self with BasePost[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategories(value: js.Array[Double]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoriesVarargs(value: Double*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setAuthor(value: Double): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setComment_status(value: OpenOrClosed): Self = StObject.set(x, "comment_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoriesVarargs(value: Double*): Self = this.set("categories", js.Array(value :_*))
+    def setContent(value: Contextual[T, Protected, Blockversion]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[Double]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment_status(value: OpenOrClosed): Self = this.set("comment_status", value.asInstanceOf[js.Any])
+    def setDate_gmt(value: String): Self = StObject.set(x, "date_gmt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Contextual[T, Protected, Blockversion]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setExcerpt(value: Contextual[T, Protected, js.Object]): Self = StObject.set(x, "excerpt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setFeatured_media(value: Double): Self = StObject.set(x, "featured_media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate_gmt(value: String): Self = this.set("date_gmt", value.asInstanceOf[js.Any])
+    def setFormat(value: PostFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcerpt(value: Contextual[T, Protected, js.Object]): Self = this.set("excerpt", value.asInstanceOf[js.Any])
+    def setGenerated_slug(value: String): Self = StObject.set(x, "generated_slug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatured_media(value: Double): Self = this.set("featured_media", value.asInstanceOf[js.Any])
+    def setGuid(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: PostFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerated_slug(value: String): Self = this.set("generated_slug", value.asInstanceOf[js.Any])
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuid(value: Contextual[T, js.Object, js.Object]): Self = this.set("guid", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Array[_]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMetaVarargs(value: js.Any*): Self = StObject.set(x, "meta", js.Array(value :_*))
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaVarargs(value: js.Any*): Self = this.set("meta", js.Array(value :_*))
+    def setModified_gmt(value: String): Self = StObject.set(x, "modified_gmt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Array[_]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModified(value: String): Self = this.set("modified", value.asInstanceOf[js.Any])
+    def setPermalink_template(value: String): Self = StObject.set(x, "permalink_template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModified_gmt(value: String): Self = this.set("modified_gmt", value.asInstanceOf[js.Any])
+    def setPing_status(value: OpenOrClosed): Self = StObject.set(x, "ping_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermalink_template(value: String): Self = this.set("permalink_template", value.asInstanceOf[js.Any])
+    def setStatus(value: PostStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPing_status(value: OpenOrClosed): Self = this.set("ping_status", value.asInstanceOf[js.Any])
+    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlug(value: String): Self = this.set("slug", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: PostStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setSticky(value: Boolean): Self = this.set("sticky", value.asInstanceOf[js.Any])
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setTitle(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: Contextual[T, js.Object, js.Object]): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

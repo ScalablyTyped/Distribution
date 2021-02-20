@@ -1,11 +1,12 @@
 package typings.layuiSrc.layui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableResponseRename extends js.Object {
+trait TableResponseRename extends StObject {
   
   var countName: String = js.native
   
@@ -26,33 +27,21 @@ object TableResponseRename {
   }
   
   @scala.inline
-  implicit class TableResponseRenameOps[Self <: TableResponseRename] (val x: Self) extends AnyVal {
+  implicit class TableResponseRenameMutableBuilder[Self <: TableResponseRename] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountName(value: String): Self = StObject.set(x, "countName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataName(value: String): Self = StObject.set(x, "dataName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMsgName(value: String): Self = StObject.set(x, "msgName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountName(value: String): Self = this.set("countName", value.asInstanceOf[js.Any])
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataName(value: String): Self = this.set("dataName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMsgName(value: String): Self = this.set("msgName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusName(value: String): Self = this.set("statusName", value.asInstanceOf[js.Any])
+    def setStatusName(value: String): Self = StObject.set(x, "statusName", value.asInstanceOf[js.Any])
   }
 }

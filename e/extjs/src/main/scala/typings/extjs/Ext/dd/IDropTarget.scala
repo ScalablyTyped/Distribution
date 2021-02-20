@@ -1,6 +1,7 @@
 package typings.extjs.Ext.dd
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,74 +89,62 @@ object IDropTarget {
   }
   
   @scala.inline
-  implicit class IDropTargetOps[Self <: IDropTarget] (val x: Self) extends AnyVal {
+  implicit class IDropTargetMutableBuilder[Self <: IDropTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDdGroup(value: String): Self = StObject.set(x, "ddGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDdGroupUndefined: Self = StObject.set(x, "ddGroup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropAllowed(value: String): Self = StObject.set(x, "dropAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDdGroup(value: String): Self = this.set("ddGroup", value.asInstanceOf[js.Any])
+    def setDropAllowedUndefined: Self = StObject.set(x, "dropAllowed", js.undefined)
     
     @scala.inline
-    def deleteDdGroup: Self = this.set("ddGroup", js.undefined)
+    def setDropNotAllowed(value: String): Self = StObject.set(x, "dropNotAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropAllowed(value: String): Self = this.set("dropAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDropAllowed: Self = this.set("dropAllowed", js.undefined)
-    
-    @scala.inline
-    def setDropNotAllowed(value: String): Self = this.set("dropNotAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDropNotAllowed: Self = this.set("dropNotAllowed", js.undefined)
+    def setDropNotAllowedUndefined: Self = StObject.set(x, "dropNotAllowed", js.undefined)
     
     @scala.inline
     def setNotifyDrop(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean
-    ): Self = this.set("notifyDrop", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "notifyDrop", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteNotifyDrop: Self = this.set("notifyDrop", js.undefined)
+    def setNotifyDropUndefined: Self = StObject.set(x, "notifyDrop", js.undefined)
     
     @scala.inline
     def setNotifyEnter(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
-    ): Self = this.set("notifyEnter", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "notifyEnter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteNotifyEnter: Self = this.set("notifyEnter", js.undefined)
+    def setNotifyEnterUndefined: Self = StObject.set(x, "notifyEnter", js.undefined)
     
     @scala.inline
     def setNotifyOut(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("notifyOut", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "notifyOut", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteNotifyOut: Self = this.set("notifyOut", js.undefined)
+    def setNotifyOutUndefined: Self = StObject.set(x, "notifyOut", js.undefined)
     
     @scala.inline
     def setNotifyOver(
       value: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String
-    ): Self = this.set("notifyOver", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "notifyOver", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteNotifyOver: Self = this.set("notifyOver", js.undefined)
+    def setNotifyOverUndefined: Self = StObject.set(x, "notifyOver", js.undefined)
     
     @scala.inline
-    def setOverClass(value: String): Self = this.set("overClass", value.asInstanceOf[js.Any])
+    def setOverClass(value: String): Self = StObject.set(x, "overClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverClass: Self = this.set("overClass", js.undefined)
+    def setOverClassUndefined: Self = StObject.set(x, "overClass", js.undefined)
   }
 }

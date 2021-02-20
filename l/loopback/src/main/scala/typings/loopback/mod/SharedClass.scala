@@ -1,6 +1,7 @@
 package typings.loopback.mod
 
 import typings.loopback.anon.IncludeDisabled
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "SharedClass")
 @js.native
-class SharedClass protected () extends js.Object {
+class SharedClass protected () extends StObject {
   def this(name: String, constructor: js.Function0[Unit]) = this()
   
   /** The SharedClass name */
@@ -95,13 +96,13 @@ class SharedClass protected () extends js.Object {
     */
   def resolve(resolver: js.Function0[Unit]): Unit = js.native
 }
-/* static members */
-@JSImport("loopback", "SharedClass")
-@js.native
-object SharedClass extends js.Object {
+object SharedClass {
   
   /**
     * Normalize HTTP path.
     */
+  /* static member */
+  @JSImport("loopback", "SharedClass.normalizeHttpPath")
+  @js.native
   def normalizeHttpPath(): Unit = js.native
 }

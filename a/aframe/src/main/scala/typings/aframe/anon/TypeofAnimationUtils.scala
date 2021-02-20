@@ -1,12 +1,13 @@
 package typings.aframe.anon
 
 import typings.three.animationClipMod.AnimationClip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofAnimationUtils extends js.Object {
+trait TypeofAnimationUtils extends StObject {
   
   def arraySlice(array: js.Any, from: Double, to: Double): js.Any = js.native
   

@@ -1,15 +1,12 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("IDBRequest")
 @js.native
 class IDBRequest ()
   extends typings.std.IDBRequest[js.Any]
-@JSGlobal("IDBRequest")
-@js.native
-object IDBRequest
-  extends Instantiable0[typings.std.IDBRequest[js.Any]]

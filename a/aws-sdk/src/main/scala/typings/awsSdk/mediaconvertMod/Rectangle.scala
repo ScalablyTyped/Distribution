@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rectangle extends js.Object {
+trait Rectangle extends StObject {
   
   /**
     * Height of rectangle in pixels. Specify only even numbers.
@@ -36,42 +37,30 @@ object Rectangle {
   }
   
   @scala.inline
-  implicit class RectangleOps[Self <: Rectangle] (val x: Self) extends AnyVal {
+  implicit class RectangleMutableBuilder[Self <: Rectangle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: integerMin2Max2147483647): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidth(value: integerMin2Max2147483647): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: integerMin2Max2147483647): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("Height", js.undefined)
+    def setX(value: integerMin0Max2147483647): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: integerMin2Max2147483647): Self = this.set("Width", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "X", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("Width", js.undefined)
+    def setY(value: integerMin0Max2147483647): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: integerMin0Max2147483647): Self = this.set("X", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("X", js.undefined)
-    
-    @scala.inline
-    def setY(value: integerMin0Max2147483647): Self = this.set("Y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("Y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
   }
 }

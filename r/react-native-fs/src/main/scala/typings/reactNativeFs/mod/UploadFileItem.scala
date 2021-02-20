@@ -1,11 +1,12 @@
 package typings.reactNativeFs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadFileItem extends js.Object {
+trait UploadFileItem extends StObject {
   
   // Name of the file, if not defined then filename is used
   var filename: String = js.native
@@ -27,30 +28,18 @@ object UploadFileItem {
   }
   
   @scala.inline
-  implicit class UploadFileItemOps[Self <: UploadFileItem] (val x: Self) extends AnyVal {
+  implicit class UploadFileItemMutableBuilder[Self <: UploadFileItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiletype(value: String): Self = StObject.set(x, "filetype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilepath(value: String): Self = this.set("filepath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFiletype(value: String): Self = this.set("filetype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

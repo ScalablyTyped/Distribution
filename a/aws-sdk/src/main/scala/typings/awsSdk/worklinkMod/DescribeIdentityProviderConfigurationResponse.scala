@@ -1,11 +1,12 @@
 package typings.awsSdk.worklinkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeIdentityProviderConfigurationResponse extends js.Object {
+trait DescribeIdentityProviderConfigurationResponse extends StObject {
   
   /**
     * The SAML metadata document provided by the user’s identity provider.
@@ -31,36 +32,24 @@ object DescribeIdentityProviderConfigurationResponse {
   }
   
   @scala.inline
-  implicit class DescribeIdentityProviderConfigurationResponseOps[Self <: DescribeIdentityProviderConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeIdentityProviderConfigurationResponseMutableBuilder[Self <: DescribeIdentityProviderConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityProviderSamlMetadata(value: SamlMetadata): Self = StObject.set(x, "IdentityProviderSamlMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityProviderSamlMetadataUndefined: Self = StObject.set(x, "IdentityProviderSamlMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityProviderType(value: IdentityProviderType): Self = StObject.set(x, "IdentityProviderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityProviderSamlMetadata(value: SamlMetadata): Self = this.set("IdentityProviderSamlMetadata", value.asInstanceOf[js.Any])
+    def setIdentityProviderTypeUndefined: Self = StObject.set(x, "IdentityProviderType", js.undefined)
     
     @scala.inline
-    def deleteIdentityProviderSamlMetadata: Self = this.set("IdentityProviderSamlMetadata", js.undefined)
+    def setServiceProviderSamlMetadata(value: SamlMetadata): Self = StObject.set(x, "ServiceProviderSamlMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityProviderType(value: IdentityProviderType): Self = this.set("IdentityProviderType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityProviderType: Self = this.set("IdentityProviderType", js.undefined)
-    
-    @scala.inline
-    def setServiceProviderSamlMetadata(value: SamlMetadata): Self = this.set("ServiceProviderSamlMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceProviderSamlMetadata: Self = this.set("ServiceProviderSamlMetadata", js.undefined)
+    def setServiceProviderSamlMetadataUndefined: Self = StObject.set(x, "ServiceProviderSamlMetadata", js.undefined)
   }
 }

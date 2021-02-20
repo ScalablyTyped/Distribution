@@ -12,12 +12,13 @@ import typings.chrome.chrome.bookmarks.BookmarkMovedEvent
 import typings.chrome.chrome.bookmarks.BookmarkRemovedEvent
 import typings.chrome.chrome.bookmarks.BookmarkSearchQuery
 import typings.chrome.chrome.bookmarks.BookmarkTreeNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofbookmarks extends js.Object {
+trait Typeofbookmarks extends StObject {
   
   var MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE: Double = js.native
   

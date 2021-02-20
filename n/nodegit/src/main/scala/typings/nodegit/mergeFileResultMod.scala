@@ -1,15 +1,15 @@
 package typings.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/merge-file-result", JSImport.Namespace)
-@js.native
-object mergeFileResultMod extends js.Object {
+object mergeFileResultMod {
   
+  @JSImport("nodegit/merge-file-result", "MergeFileResult")
   @js.native
-  class MergeFileResult () extends js.Object {
+  class MergeFileResult () extends StObject {
     
     var automergeable: Double = js.native
     

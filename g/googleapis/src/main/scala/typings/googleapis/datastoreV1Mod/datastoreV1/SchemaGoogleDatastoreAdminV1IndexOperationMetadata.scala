@@ -1,5 +1,6 @@
 package typings.googleapis.datastoreV1Mod.datastoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Metadata for Index operations.
   */
 @js.native
-trait SchemaGoogleDatastoreAdminV1IndexOperationMetadata extends js.Object {
+trait SchemaGoogleDatastoreAdminV1IndexOperationMetadata extends StObject {
   
   /**
     * Metadata common to all Datastore Admin operations.
@@ -34,36 +35,24 @@ object SchemaGoogleDatastoreAdminV1IndexOperationMetadata {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1IndexOperationMetadataOps[Self <: SchemaGoogleDatastoreAdminV1IndexOperationMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDatastoreAdminV1IndexOperationMetadataMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1IndexOperationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommon(value: SchemaGoogleDatastoreAdminV1CommonMetadata): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexId(value: String): Self = StObject.set(x, "indexId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommon(value: SchemaGoogleDatastoreAdminV1CommonMetadata): Self = this.set("common", value.asInstanceOf[js.Any])
+    def setIndexIdUndefined: Self = StObject.set(x, "indexId", js.undefined)
     
     @scala.inline
-    def deleteCommon: Self = this.set("common", js.undefined)
+    def setProgressEntities(value: SchemaGoogleDatastoreAdminV1Progress): Self = StObject.set(x, "progressEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexId(value: String): Self = this.set("indexId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexId: Self = this.set("indexId", js.undefined)
-    
-    @scala.inline
-    def setProgressEntities(value: SchemaGoogleDatastoreAdminV1Progress): Self = this.set("progressEntities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressEntities: Self = this.set("progressEntities", js.undefined)
+    def setProgressEntitiesUndefined: Self = StObject.set(x, "progressEntities", js.undefined)
   }
 }

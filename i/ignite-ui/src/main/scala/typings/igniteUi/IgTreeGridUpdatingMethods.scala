@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgTreeGridUpdatingMethods extends js.Object {
+trait IgTreeGridUpdatingMethods extends StObject {
   
   /**
     * Adds a new child to a specific row. It also creates a transaction and updates the UI.

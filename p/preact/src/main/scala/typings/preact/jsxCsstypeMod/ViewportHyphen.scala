@@ -1,11 +1,12 @@
 package typings.preact.jsxCsstypeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewportHyphen[TLength] extends js.Object {
+trait ViewportHyphen[TLength] extends StObject {
   
   var `-ms-height`: js.UndefOr[ViewportHeightProperty[TLength]] = js.native
   
@@ -62,156 +63,144 @@ object ViewportHyphen {
   }
   
   @scala.inline
-  implicit class ViewportHyphenOps[Self <: ViewportHyphen[_], TLength] (val x: Self with ViewportHyphen[TLength]) extends AnyVal {
+  implicit class ViewportHyphenMutableBuilder[Self <: ViewportHyphen[_], TLength] (val x: Self with ViewportHyphen[TLength]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `set-ms-height`(value: ViewportHeightProperty[TLength]): Self = StObject.set(x, "-ms-height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `set-ms-heightUndefined`: Self = StObject.set(x, "-ms-height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `set-ms-max-height`(value: ViewportMaxHeightProperty[TLength]): Self = StObject.set(x, "-ms-max-height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-height`(value: ViewportHeightProperty[TLength]): Self = this.set("-ms-height", value.asInstanceOf[js.Any])
+    def `set-ms-max-heightUndefined`: Self = StObject.set(x, "-ms-max-height", js.undefined)
     
     @scala.inline
-    def `delete-ms-height`: Self = this.set("-ms-height", js.undefined)
+    def `set-ms-max-width`(value: ViewportMaxWidthProperty[TLength]): Self = StObject.set(x, "-ms-max-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-max-height`(value: ViewportMaxHeightProperty[TLength]): Self = this.set("-ms-max-height", value.asInstanceOf[js.Any])
+    def `set-ms-max-widthUndefined`: Self = StObject.set(x, "-ms-max-width", js.undefined)
     
     @scala.inline
-    def `delete-ms-max-height`: Self = this.set("-ms-max-height", js.undefined)
+    def `set-ms-max-zoom`(value: ViewportMaxZoomProperty): Self = StObject.set(x, "-ms-max-zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-max-width`(value: ViewportMaxWidthProperty[TLength]): Self = this.set("-ms-max-width", value.asInstanceOf[js.Any])
+    def `set-ms-max-zoomUndefined`: Self = StObject.set(x, "-ms-max-zoom", js.undefined)
     
     @scala.inline
-    def `delete-ms-max-width`: Self = this.set("-ms-max-width", js.undefined)
+    def `set-ms-min-height`(value: ViewportMinHeightProperty[TLength]): Self = StObject.set(x, "-ms-min-height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-max-zoom`(value: ViewportMaxZoomProperty): Self = this.set("-ms-max-zoom", value.asInstanceOf[js.Any])
+    def `set-ms-min-heightUndefined`: Self = StObject.set(x, "-ms-min-height", js.undefined)
     
     @scala.inline
-    def `delete-ms-max-zoom`: Self = this.set("-ms-max-zoom", js.undefined)
+    def `set-ms-min-width`(value: ViewportMinWidthProperty[TLength]): Self = StObject.set(x, "-ms-min-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-min-height`(value: ViewportMinHeightProperty[TLength]): Self = this.set("-ms-min-height", value.asInstanceOf[js.Any])
+    def `set-ms-min-widthUndefined`: Self = StObject.set(x, "-ms-min-width", js.undefined)
     
     @scala.inline
-    def `delete-ms-min-height`: Self = this.set("-ms-min-height", js.undefined)
+    def `set-ms-min-zoom`(value: ViewportMinZoomProperty): Self = StObject.set(x, "-ms-min-zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-min-width`(value: ViewportMinWidthProperty[TLength]): Self = this.set("-ms-min-width", value.asInstanceOf[js.Any])
+    def `set-ms-min-zoomUndefined`: Self = StObject.set(x, "-ms-min-zoom", js.undefined)
     
     @scala.inline
-    def `delete-ms-min-width`: Self = this.set("-ms-min-width", js.undefined)
+    def `set-ms-orientation`(value: ViewportOrientationProperty): Self = StObject.set(x, "-ms-orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-min-zoom`(value: ViewportMinZoomProperty): Self = this.set("-ms-min-zoom", value.asInstanceOf[js.Any])
+    def `set-ms-orientationUndefined`: Self = StObject.set(x, "-ms-orientation", js.undefined)
     
     @scala.inline
-    def `delete-ms-min-zoom`: Self = this.set("-ms-min-zoom", js.undefined)
+    def `set-ms-user-zoom`(value: ViewportUserZoomProperty): Self = StObject.set(x, "-ms-user-zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-orientation`(value: ViewportOrientationProperty): Self = this.set("-ms-orientation", value.asInstanceOf[js.Any])
+    def `set-ms-user-zoomUndefined`: Self = StObject.set(x, "-ms-user-zoom", js.undefined)
     
     @scala.inline
-    def `delete-ms-orientation`: Self = this.set("-ms-orientation", js.undefined)
+    def `set-ms-width`(value: ViewportWidthProperty[TLength]): Self = StObject.set(x, "-ms-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-user-zoom`(value: ViewportUserZoomProperty): Self = this.set("-ms-user-zoom", value.asInstanceOf[js.Any])
+    def `set-ms-widthUndefined`: Self = StObject.set(x, "-ms-width", js.undefined)
     
     @scala.inline
-    def `delete-ms-user-zoom`: Self = this.set("-ms-user-zoom", js.undefined)
+    def `set-ms-zoom`(value: ViewportZoomProperty): Self = StObject.set(x, "-ms-zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-width`(value: ViewportWidthProperty[TLength]): Self = this.set("-ms-width", value.asInstanceOf[js.Any])
+    def `set-ms-zoomUndefined`: Self = StObject.set(x, "-ms-zoom", js.undefined)
     
     @scala.inline
-    def `delete-ms-width`: Self = this.set("-ms-width", js.undefined)
+    def `set-o-orientation`(value: ViewportOrientationProperty): Self = StObject.set(x, "-o-orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-ms-zoom`(value: ViewportZoomProperty): Self = this.set("-ms-zoom", value.asInstanceOf[js.Any])
+    def `set-o-orientationUndefined`: Self = StObject.set(x, "-o-orientation", js.undefined)
     
     @scala.inline
-    def `delete-ms-zoom`: Self = this.set("-ms-zoom", js.undefined)
+    def setHeight(value: ViewportHeightProperty[TLength]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-o-orientation`(value: ViewportOrientationProperty): Self = this.set("-o-orientation", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def `delete-o-orientation`: Self = this.set("-o-orientation", js.undefined)
+    def `setMax-height`(value: ViewportMaxHeightProperty[TLength]): Self = StObject.set(x, "max-height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: ViewportHeightProperty[TLength]): Self = this.set("height", value.asInstanceOf[js.Any])
+    def `setMax-heightUndefined`: Self = StObject.set(x, "max-height", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def `setMax-width`(value: ViewportMaxWidthProperty[TLength]): Self = StObject.set(x, "max-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-height`(value: ViewportMaxHeightProperty[TLength]): Self = this.set("max-height", value.asInstanceOf[js.Any])
+    def `setMax-widthUndefined`: Self = StObject.set(x, "max-width", js.undefined)
     
     @scala.inline
-    def `deleteMax-height`: Self = this.set("max-height", js.undefined)
+    def `setMax-zoom`(value: ViewportMaxZoomProperty): Self = StObject.set(x, "max-zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-width`(value: ViewportMaxWidthProperty[TLength]): Self = this.set("max-width", value.asInstanceOf[js.Any])
+    def `setMax-zoomUndefined`: Self = StObject.set(x, "max-zoom", js.undefined)
     
     @scala.inline
-    def `deleteMax-width`: Self = this.set("max-width", js.undefined)
+    def `setMin-height`(value: ViewportMinHeightProperty[TLength]): Self = StObject.set(x, "min-height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-zoom`(value: ViewportMaxZoomProperty): Self = this.set("max-zoom", value.asInstanceOf[js.Any])
+    def `setMin-heightUndefined`: Self = StObject.set(x, "min-height", js.undefined)
     
     @scala.inline
-    def `deleteMax-zoom`: Self = this.set("max-zoom", js.undefined)
+    def `setMin-width`(value: ViewportMinWidthProperty[TLength]): Self = StObject.set(x, "min-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMin-height`(value: ViewportMinHeightProperty[TLength]): Self = this.set("min-height", value.asInstanceOf[js.Any])
+    def `setMin-widthUndefined`: Self = StObject.set(x, "min-width", js.undefined)
     
     @scala.inline
-    def `deleteMin-height`: Self = this.set("min-height", js.undefined)
+    def `setMin-zoom`(value: ViewportMinZoomProperty): Self = StObject.set(x, "min-zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMin-width`(value: ViewportMinWidthProperty[TLength]): Self = this.set("min-width", value.asInstanceOf[js.Any])
+    def `setMin-zoomUndefined`: Self = StObject.set(x, "min-zoom", js.undefined)
     
     @scala.inline
-    def `deleteMin-width`: Self = this.set("min-width", js.undefined)
+    def setOrientation(value: ViewportOrientationProperty): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMin-zoom`(value: ViewportMinZoomProperty): Self = this.set("min-zoom", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def `deleteMin-zoom`: Self = this.set("min-zoom", js.undefined)
+    def `setUser-zoom`(value: ViewportUserZoomProperty): Self = StObject.set(x, "user-zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: ViewportOrientationProperty): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def `setUser-zoomUndefined`: Self = StObject.set(x, "user-zoom", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setWidth(value: ViewportWidthProperty[TLength]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setUser-zoom`(value: ViewportUserZoomProperty): Self = this.set("user-zoom", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def `deleteUser-zoom`: Self = this.set("user-zoom", js.undefined)
+    def setZoom(value: ViewportZoomProperty): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: ViewportWidthProperty[TLength]): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: ViewportZoomProperty): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

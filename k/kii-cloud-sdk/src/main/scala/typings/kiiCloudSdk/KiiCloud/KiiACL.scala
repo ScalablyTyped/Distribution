@@ -2,6 +2,7 @@ package typings.kiiCloudSdk.KiiCloud
 
 import typings.kiiCloudSdk.anon.Failure
 import typings.kiiCloudSdk.anon.Success
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a KiiACL object
   */
 @js.native
-trait KiiACL extends js.Object {
+trait KiiACL extends StObject {
   
   /**
     * Get the list of active ACLs associated with this object from the server

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-sizeRange.html)
   */
 @js.native
-trait sizeRange extends js.Object {
+trait sizeRange extends StObject {
   
   /**
     * Generates a suggested size range (i.e.
@@ -28,21 +29,9 @@ object sizeRange {
   }
   
   @scala.inline
-  implicit class sizeRangeOps[Self <: sizeRange] (val x: Self) extends AnyVal {
+  implicit class sizeRangeMutableBuilder[Self <: sizeRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSizeRange(value: sizeRangeSizeRangeParams => js.Promise[SizeRangeResult]): Self = this.set("sizeRange", js.Any.fromFunction1(value))
+    def setSizeRange(value: sizeRangeSizeRangeParams => js.Promise[SizeRangeResult]): Self = StObject.set(x, "sizeRange", js.Any.fromFunction1(value))
   }
 }

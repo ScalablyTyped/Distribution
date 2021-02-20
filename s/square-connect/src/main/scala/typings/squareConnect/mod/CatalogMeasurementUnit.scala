@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogMeasurementUnit")
 @js.native
-class CatalogMeasurementUnit () extends js.Object {
+class CatalogMeasurementUnit () extends StObject {
   
   /**
     * Indicates the unit used to measure the quantity of a catalog item variation.

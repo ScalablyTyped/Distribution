@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemediationConfiguration extends js.Object {
+trait RemediationConfiguration extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of remediation configuration.
@@ -80,81 +81,69 @@ object RemediationConfiguration {
   }
   
   @scala.inline
-  implicit class RemediationConfigurationOps[Self <: RemediationConfiguration] (val x: Self) extends AnyVal {
+  implicit class RemediationConfigurationMutableBuilder[Self <: RemediationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: StringWithCharLimit1024): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomatic(value: Boolean): Self = StObject.set(x, "Automatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
+    def setAutomaticUndefined: Self = StObject.set(x, "Automatic", js.undefined)
     
     @scala.inline
-    def setTargetId(value: StringWithCharLimit256): Self = this.set("TargetId", value.asInstanceOf[js.Any])
+    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetType(value: RemediationTargetType): Self = this.set("TargetType", value.asInstanceOf[js.Any])
+    def setCreatedByService(value: StringWithCharLimit1024): Self = StObject.set(x, "CreatedByService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: StringWithCharLimit1024): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCreatedByServiceUndefined: Self = StObject.set(x, "CreatedByService", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setExecutionControls(value: ExecutionControls): Self = StObject.set(x, "ExecutionControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatic(value: Boolean): Self = this.set("Automatic", value.asInstanceOf[js.Any])
+    def setExecutionControlsUndefined: Self = StObject.set(x, "ExecutionControls", js.undefined)
     
     @scala.inline
-    def deleteAutomatic: Self = this.set("Automatic", js.undefined)
+    def setMaximumAutomaticAttempts(value: AutoRemediationAttempts): Self = StObject.set(x, "MaximumAutomaticAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedByService(value: StringWithCharLimit1024): Self = this.set("CreatedByService", value.asInstanceOf[js.Any])
+    def setMaximumAutomaticAttemptsUndefined: Self = StObject.set(x, "MaximumAutomaticAttempts", js.undefined)
     
     @scala.inline
-    def deleteCreatedByService: Self = this.set("CreatedByService", js.undefined)
+    def setParameters(value: RemediationParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionControls(value: ExecutionControls): Self = this.set("ExecutionControls", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def deleteExecutionControls: Self = this.set("ExecutionControls", js.undefined)
+    def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumAutomaticAttempts(value: AutoRemediationAttempts): Self = this.set("MaximumAutomaticAttempts", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
     @scala.inline
-    def deleteMaximumAutomaticAttempts: Self = this.set("MaximumAutomaticAttempts", js.undefined)
+    def setRetryAttemptSeconds(value: AutoRemediationAttemptSeconds): Self = StObject.set(x, "RetryAttemptSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: RemediationParameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setRetryAttemptSecondsUndefined: Self = StObject.set(x, "RetryAttemptSeconds", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setTargetId(value: StringWithCharLimit256): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: String): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    def setTargetType(value: RemediationTargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setTargetVersion(value: String): Self = StObject.set(x, "TargetVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryAttemptSeconds(value: AutoRemediationAttemptSeconds): Self = this.set("RetryAttemptSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetryAttemptSeconds: Self = this.set("RetryAttemptSeconds", js.undefined)
-    
-    @scala.inline
-    def setTargetVersion(value: String): Self = this.set("TargetVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetVersion: Self = this.set("TargetVersion", js.undefined)
+    def setTargetVersionUndefined: Self = StObject.set(x, "TargetVersion", js.undefined)
   }
 }

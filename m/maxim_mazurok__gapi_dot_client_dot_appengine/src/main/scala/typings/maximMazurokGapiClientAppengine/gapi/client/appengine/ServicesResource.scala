@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientAppengine.anon.AltAppsId
 import typings.maximMazurokGapiClientAppengine.anon.FieldsKey
 import typings.maximMazurokGapiClientAppengine.anon.MigrateTraffic
 import typings.maximMazurokGapiClientAppengine.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServicesResource extends js.Object {
+trait ServicesResource extends StObject {
   
   /** Deletes the specified service and all enclosed versions. */
   def delete(): Request[Operation] = js.native

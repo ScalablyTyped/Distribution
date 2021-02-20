@@ -8,14 +8,14 @@ import typings.mendixmodelsdk.structuresMod.IStructureClass
 import typings.mendixmodelsdk.structuresMod.Structure
 import typings.mendixmodelsdk.structuresMod.aliases.IContainer
 import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/properties/EnumListProperty", JSImport.Namespace)
-@js.native
-object enumListPropertyMod extends js.Object {
+object enumListPropertyMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/EnumListProperty", "EnumListProperty")
   @js.native
   class EnumListProperty[T /* <: AbstractEnum */] protected () extends PrimitiveListProperty[T] {
     def this(

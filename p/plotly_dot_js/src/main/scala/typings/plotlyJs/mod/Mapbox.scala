@@ -3,12 +3,13 @@ package typings.plotlyJs.mod
 import typings.plotlyJs.anon.PartialDomain
 import typings.plotlyJs.anon.PartialMapboxCenter
 import typings.plotlyJs.anon.PartialMapboxLayersCircle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mapbox extends js.Object {
+trait Mapbox extends StObject {
   
   var accesstoken: String = js.native
   
@@ -47,48 +48,36 @@ object Mapbox {
   }
   
   @scala.inline
-  implicit class MapboxOps[Self <: Mapbox] (val x: Self) extends AnyVal {
+  implicit class MapboxMutableBuilder[Self <: Mapbox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccesstoken(value: String): Self = StObject.set(x, "accesstoken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenter(value: PartialMapboxCenter): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccesstoken(value: String): Self = this.set("accesstoken", value.asInstanceOf[js.Any])
+    def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBearing(value: Double): Self = this.set("bearing", value.asInstanceOf[js.Any])
+    def setLayers(value: js.Array[PartialMapboxLayersCircle]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: PartialMapboxCenter): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setLayersVarargs(value: PartialMapboxLayersCircle*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
     @scala.inline
-    def setDomain(value: PartialDomain): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayersVarargs(value: PartialMapboxLayersCircle*): Self = this.set("layers", js.Array(value :_*))
+    def setStyle(value: Double | String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayers(value: js.Array[PartialMapboxLayersCircle]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    def setUirevision(value: Double | String): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: Double | String): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUirevision(value: Double | String): Self = this.set("uirevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

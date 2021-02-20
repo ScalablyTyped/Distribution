@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy extends js.Object {
+trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy extends StObject {
   
   /**
     * Which container image sources are allowed. Currently only RBE-supported registry (gcr.io) is allowed. One can allow all repositories under a project or one specific repository only.
@@ -50,72 +51,60 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy {
   }
   
   @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyOps[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy] (val x: Self) extends AnyVal {
+  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerImageSources(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = StObject.set(x, "containerImageSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerImageSourcesUndefined: Self = StObject.set(x, "containerImageSources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDockerAddCapabilities(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = StObject.set(x, "dockerAddCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerImageSources(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = this.set("containerImageSources", value.asInstanceOf[js.Any])
+    def setDockerAddCapabilitiesUndefined: Self = StObject.set(x, "dockerAddCapabilities", js.undefined)
     
     @scala.inline
-    def deleteContainerImageSources: Self = this.set("containerImageSources", js.undefined)
+    def setDockerChrootPath(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = StObject.set(x, "dockerChrootPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerAddCapabilities(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = this.set("dockerAddCapabilities", value.asInstanceOf[js.Any])
+    def setDockerChrootPathUndefined: Self = StObject.set(x, "dockerChrootPath", js.undefined)
     
     @scala.inline
-    def deleteDockerAddCapabilities: Self = this.set("dockerAddCapabilities", js.undefined)
+    def setDockerNetwork(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = StObject.set(x, "dockerNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerChrootPath(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = this.set("dockerChrootPath", value.asInstanceOf[js.Any])
+    def setDockerNetworkUndefined: Self = StObject.set(x, "dockerNetwork", js.undefined)
     
     @scala.inline
-    def deleteDockerChrootPath: Self = this.set("dockerChrootPath", js.undefined)
+    def setDockerPrivileged(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = StObject.set(x, "dockerPrivileged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerNetwork(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = this.set("dockerNetwork", value.asInstanceOf[js.Any])
+    def setDockerPrivilegedUndefined: Self = StObject.set(x, "dockerPrivileged", js.undefined)
     
     @scala.inline
-    def deleteDockerNetwork: Self = this.set("dockerNetwork", js.undefined)
+    def setDockerRunAsRoot(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = StObject.set(x, "dockerRunAsRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerPrivileged(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = this.set("dockerPrivileged", value.asInstanceOf[js.Any])
+    def setDockerRunAsRootUndefined: Self = StObject.set(x, "dockerRunAsRoot", js.undefined)
     
     @scala.inline
-    def deleteDockerPrivileged: Self = this.set("dockerPrivileged", js.undefined)
+    def setDockerRuntime(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = StObject.set(x, "dockerRuntime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerRunAsRoot(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = this.set("dockerRunAsRoot", value.asInstanceOf[js.Any])
+    def setDockerRuntimeUndefined: Self = StObject.set(x, "dockerRuntime", js.undefined)
     
     @scala.inline
-    def deleteDockerRunAsRoot: Self = this.set("dockerRunAsRoot", js.undefined)
+    def setDockerSiblingContainers(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = StObject.set(x, "dockerSiblingContainers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerRuntime(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = this.set("dockerRuntime", value.asInstanceOf[js.Any])
+    def setDockerSiblingContainersUndefined: Self = StObject.set(x, "dockerSiblingContainers", js.undefined)
     
     @scala.inline
-    def deleteDockerRuntime: Self = this.set("dockerRuntime", js.undefined)
+    def setLinuxIsolation(value: String): Self = StObject.set(x, "linuxIsolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerSiblingContainers(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = this.set("dockerSiblingContainers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDockerSiblingContainers: Self = this.set("dockerSiblingContainers", js.undefined)
-    
-    @scala.inline
-    def setLinuxIsolation(value: String): Self = this.set("linuxIsolation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinuxIsolation: Self = this.set("linuxIsolation", js.undefined)
+    def setLinuxIsolationUndefined: Self = StObject.set(x, "linuxIsolation", js.undefined)
   }
 }

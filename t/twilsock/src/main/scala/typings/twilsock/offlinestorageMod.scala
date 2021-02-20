@@ -1,23 +1,24 @@
 package typings.twilsock
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/offlinestorage", JSImport.Namespace)
-@js.native
-object offlinestorageMod extends js.Object {
+object offlinestorageMod {
   
+  @JSImport("twilsock/lib/offlinestorage", "OfflineProductStorage")
   @js.native
-  class OfflineProductStorage protected () extends js.Object {
+  class OfflineProductStorage protected () extends StObject {
     def this(id: String) = this()
     
     val id: String = js.native
   }
-  /* static members */
-  @js.native
-  object OfflineProductStorage extends js.Object {
+  object OfflineProductStorage {
     
+    /* static member */
+    @JSImport("twilsock/lib/offlinestorage", "OfflineProductStorage.create")
+    @js.native
     def create(productPayload: js.Any): OfflineProductStorage = js.native
   }
 }

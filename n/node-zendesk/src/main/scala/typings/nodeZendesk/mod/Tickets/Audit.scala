@@ -1,12 +1,13 @@
 package typings.nodeZendesk.mod.Tickets
 
 import typings.nodeZendesk.mod.ZendeskID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Audit extends js.Object {
+trait Audit extends StObject {
   
   val author_id: ZendeskID = js.native
   
@@ -31,51 +32,39 @@ object Audit {
   }
   
   @scala.inline
-  implicit class AuditOps[Self <: Audit] (val x: Self) extends AnyVal {
+  implicit class AuditMutableBuilder[Self <: Audit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor_id(value: ZendeskID): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvents(value: js.Array[_]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor_id(value: ZendeskID): Self = this.set("author_id", value.asInstanceOf[js.Any])
+    def setEventsNull: Self = StObject.set(x, "events", null)
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setEventsVarargs(value: js.Any*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: ZendeskID): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: ZendeskID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicket_id(value: ZendeskID): Self = this.set("ticket_id", value.asInstanceOf[js.Any])
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsVarargs(value: js.Any*): Self = this.set("events", js.Array(value :_*))
+    def setMetadataNull: Self = StObject.set(x, "metadata", null)
     
     @scala.inline
-    def setEvents(value: js.Array[_]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setTicket_id(value: ZendeskID): Self = StObject.set(x, "ticket_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsNull: Self = this.set("events", null)
+    def setVia(value: Via): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadataNull: Self = this.set("metadata", null)
-    
-    @scala.inline
-    def setVia(value: Via): Self = this.set("via", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViaNull: Self = this.set("via", null)
+    def setViaNull: Self = StObject.set(x, "via", null)
   }
 }

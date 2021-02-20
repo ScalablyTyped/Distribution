@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BusinessReportRecurrence extends js.Object {
+trait BusinessReportRecurrence extends StObject {
   
   /**
     * The start date.
@@ -21,24 +22,12 @@ object BusinessReportRecurrence {
   }
   
   @scala.inline
-  implicit class BusinessReportRecurrenceOps[Self <: BusinessReportRecurrence] (val x: Self) extends AnyVal {
+  implicit class BusinessReportRecurrenceMutableBuilder[Self <: BusinessReportRecurrence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStartDate(value: Date): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStartDate(value: Date): Self = this.set("StartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+    def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
   }
 }

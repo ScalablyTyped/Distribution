@@ -1,6 +1,7 @@
 package typings.extjs.Ext.layout.container
 
 import typings.extjs.Ext.layout.ISizePolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,78 +66,66 @@ object IBox {
   }
   
   @scala.inline
-  implicit class IBoxOps[Self <: IBox] (val x: Self) extends AnyVal {
+  implicit class IBoxMutableBuilder[Self <: IBox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheFlexes(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "cacheFlexes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheFlexesUndefined: Self = StObject.set(x, "cacheFlexes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCacheFlexes(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("cacheFlexes", js.Any.fromFunction1(value))
+    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
     @scala.inline
-    def deleteCacheFlexes: Self = this.set("cacheFlexes", js.undefined)
+    def setCompleteLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "completeLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("calculate", js.Any.fromFunction1(value))
+    def setCompleteLayoutUndefined: Self = StObject.set(x, "completeLayout", js.undefined)
     
     @scala.inline
-    def deleteCalculate: Self = this.set("calculate", js.undefined)
+    def setDefaultMargins(value: js.Any): Self = StObject.set(x, "defaultMargins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("completeLayout", js.Any.fromFunction1(value))
+    def setDefaultMarginsUndefined: Self = StObject.set(x, "defaultMargins", js.undefined)
     
     @scala.inline
-    def deleteCompleteLayout: Self = this.set("completeLayout", js.undefined)
+    def setFinishedLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultMargins(value: js.Any): Self = this.set("defaultMargins", value.asInstanceOf[js.Any])
+    def setFinishedLayoutUndefined: Self = StObject.set(x, "finishedLayout", js.undefined)
     
     @scala.inline
-    def deleteDefaultMargins: Self = this.set("defaultMargins", js.undefined)
+    def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishedLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("finishedLayout", js.Any.fromFunction1(value))
+    def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
     @scala.inline
-    def deleteFinishedLayout: Self = this.set("finishedLayout", js.undefined)
+    def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFlex(value: Double): Self = this.set("flex", value.asInstanceOf[js.Any])
+    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
     @scala.inline
-    def deleteFlex: Self = this.set("flex", js.undefined)
+    def setPack(value: String): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = this.set("getItemSizePolicy", js.Any.fromFunction2(value))
+    def setPackUndefined: Self = StObject.set(x, "pack", js.undefined)
     
     @scala.inline
-    def deleteGetItemSizePolicy: Self = this.set("getItemSizePolicy", js.undefined)
+    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPack(value: String): Self = this.set("pack", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deletePack: Self = this.set("pack", js.undefined)
+    def setStretchMaxPartner(value: js.Any): Self = StObject.set(x, "stretchMaxPartner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: String): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
-    
-    @scala.inline
-    def setStretchMaxPartner(value: js.Any): Self = this.set("stretchMaxPartner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStretchMaxPartner: Self = this.set("stretchMaxPartner", js.undefined)
+    def setStretchMaxPartnerUndefined: Self = StObject.set(x, "stretchMaxPartner", js.undefined)
   }
 }

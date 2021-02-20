@@ -6,6 +6,7 @@ import typings.apolloProtobufjs.mod.Reader
 import typings.apolloProtobufjs.mod.Writer
 import typings.apolloReportingProtobuf.protobufMod.IField
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,16 +22,18 @@ class Field ()
   def this(properties: IField) = this()
 }
 /* static members */
-@JSImport("apollo-reporting-protobuf", "Field")
-@js.native
-object Field extends js.Object {
+object Field {
   
   /**
     * Creates a new Field instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Field instance
     */
+  @JSImport("apollo-reporting-protobuf", "Field.create")
+  @js.native
   def create(): typings.apolloReportingProtobuf.protobufMod.Field = js.native
+  @JSImport("apollo-reporting-protobuf", "Field.create")
+  @js.native
   def create(properties: IField): typings.apolloReportingProtobuf.protobufMod.Field = js.native
   
   /**
@@ -41,9 +44,17 @@ object Field extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("apollo-reporting-protobuf", "Field.decode")
+  @js.native
   def decode(reader: Reader): typings.apolloReportingProtobuf.protobufMod.Field = js.native
+  @JSImport("apollo-reporting-protobuf", "Field.decode")
+  @js.native
   def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.protobufMod.Field = js.native
+  @JSImport("apollo-reporting-protobuf", "Field.decode")
+  @js.native
   def decode(reader: Uint8Array): typings.apolloReportingProtobuf.protobufMod.Field = js.native
+  @JSImport("apollo-reporting-protobuf", "Field.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): typings.apolloReportingProtobuf.protobufMod.Field = js.native
   
   /**
@@ -53,7 +64,11 @@ object Field extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("apollo-reporting-protobuf", "Field.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.protobufMod.Field = js.native
+  @JSImport("apollo-reporting-protobuf", "Field.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): typings.apolloReportingProtobuf.protobufMod.Field = js.native
   
   /**
@@ -62,7 +77,11 @@ object Field extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("apollo-reporting-protobuf", "Field.encode")
+  @js.native
   def encode(message: IField): Writer = js.native
+  @JSImport("apollo-reporting-protobuf", "Field.encode")
+  @js.native
   def encode(message: IField, writer: Writer): Writer = js.native
   
   /**
@@ -71,7 +90,11 @@ object Field extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("apollo-reporting-protobuf", "Field.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IField): Writer = js.native
+  @JSImport("apollo-reporting-protobuf", "Field.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IField, writer: Writer): Writer = js.native
   
   /**
@@ -79,6 +102,8 @@ object Field extends js.Object {
     * @param object Plain object
     * @returns Field
     */
+  @JSImport("apollo-reporting-protobuf", "Field.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): typings.apolloReportingProtobuf.protobufMod.Field = js.native
   
   /**
@@ -87,7 +112,11 @@ object Field extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("apollo-reporting-protobuf", "Field.toObject")
+  @js.native
   def toObject(message: typings.apolloReportingProtobuf.protobufMod.Field): StringDictionary[js.Any] = js.native
+  @JSImport("apollo-reporting-protobuf", "Field.toObject")
+  @js.native
   def toObject(message: typings.apolloReportingProtobuf.protobufMod.Field, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -95,5 +124,7 @@ object Field extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("apollo-reporting-protobuf", "Field.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

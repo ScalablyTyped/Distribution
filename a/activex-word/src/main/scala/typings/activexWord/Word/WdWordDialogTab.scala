@@ -86,6 +86,7 @@ import typings.activexWord.activexWordNumbers.`786`
 import typings.activexWord.activexWordNumbers.`790`
 import typings.activexWord.activexWordNumbers.`800000`
 import typings.activexWord.activexWordNumbers.`800001`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -178,7 +179,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`2000004`
   - typings.activexWord.activexWordNumbers.`2000002`
 */
-trait WdWordDialogTab extends js.Object
+trait WdWordDialogTab extends StObject
 object WdWordDialogTab {
   
   @scala.inline

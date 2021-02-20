@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchGameSessionsInput extends js.Object {
+trait SearchGameSessionsInput extends StObject {
   
   /**
     * A unique identifier for an alias associated with the fleet to search for active game sessions. You can use either the alias ID or ARN value. Each request must reference either a fleet ID or alias ID, but not both.
@@ -46,54 +47,42 @@ object SearchGameSessionsInput {
   }
   
   @scala.inline
-  implicit class SearchGameSessionsInputOps[Self <: SearchGameSessionsInput] (val x: Self) extends AnyVal {
+  implicit class SearchGameSessionsInputMutableBuilder[Self <: SearchGameSessionsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasIdUndefined: Self = StObject.set(x, "AliasId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterExpression(value: NonZeroAndMaxString): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasId(value: AliasIdOrArn): Self = this.set("AliasId", value.asInstanceOf[js.Any])
+    def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
     
     @scala.inline
-    def deleteAliasId: Self = this.set("AliasId", js.undefined)
+    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterExpression(value: NonZeroAndMaxString): Self = this.set("FilterExpression", value.asInstanceOf[js.Any])
+    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
     @scala.inline
-    def deleteFilterExpression: Self = this.set("FilterExpression", js.undefined)
+    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: PositiveInteger): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setSortExpression(value: NonZeroAndMaxString): Self = StObject.set(x, "SortExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSortExpression(value: NonZeroAndMaxString): Self = this.set("SortExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortExpression: Self = this.set("SortExpression", js.undefined)
+    def setSortExpressionUndefined: Self = StObject.set(x, "SortExpression", js.undefined)
   }
 }

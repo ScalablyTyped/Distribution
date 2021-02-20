@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Presents the details of SMS message events to the background work item that handles messages while your app is suspended. */
 @js.native
-trait SmsReceivedEventDetails extends js.Object {
+trait SmsReceivedEventDetails extends StObject {
   
   /** Gets the binary message object for the SMS message received by the background task. */
   var binaryMessage: SmsBinaryMessage = js.native
@@ -34,30 +35,18 @@ object SmsReceivedEventDetails {
   }
   
   @scala.inline
-  implicit class SmsReceivedEventDetailsOps[Self <: SmsReceivedEventDetails] (val x: Self) extends AnyVal {
+  implicit class SmsReceivedEventDetailsMutableBuilder[Self <: SmsReceivedEventDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryMessage(value: SmsBinaryMessage): Self = StObject.set(x, "binaryMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryMessage(value: SmsBinaryMessage): Self = this.set("binaryMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = this.set("messageClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageIndex(value: Double): Self = this.set("messageIndex", value.asInstanceOf[js.Any])
+    def setMessageIndex(value: Double): Self = StObject.set(x, "messageIndex", value.asInstanceOf[js.Any])
   }
 }

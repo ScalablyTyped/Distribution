@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.v3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ************************/
 /** Behavior. */
 @js.native
-trait Behavior extends js.Object {
+trait Behavior extends StObject {
   
   /** The category of the characteristic: `behavior` for temporal data. */
   var category: String = js.native
@@ -32,30 +33,18 @@ object Behavior {
   }
   
   @scala.inline
-  implicit class BehaviorOps[Self <: Behavior] (val x: Self) extends AnyVal {
+  implicit class BehaviorMutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPercentage(value: Double): Self = this.set("percentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrait_id(value: String): Self = this.set("trait_id", value.asInstanceOf[js.Any])
+    def setTrait_id(value: String): Self = StObject.set(x, "trait_id", value.asInstanceOf[js.Any])
   }
 }

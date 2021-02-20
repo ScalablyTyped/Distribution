@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientIam.anon.Accesstoken
 import typings.maximMazurokGapiClientIam.anon.Alt
 import typings.maximMazurokGapiClientIam.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IamPoliciesResource extends js.Object {
+trait IamPoliciesResource extends StObject {
   
   /**
     * Lints, or validates, an IAM policy. Currently checks the google.iam.v1.Binding.condition field, which contains a condition expression for a role binding. Successful calls to this

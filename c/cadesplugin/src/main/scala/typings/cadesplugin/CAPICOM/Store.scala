@@ -1,12 +1,13 @@
 package typings.cadesplugin.CAPICOM
 
 import typings.cadesplugin.CADESCommon.ValuesOf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Store extends js.Object {
+trait Store extends StObject {
   
   val Certificates: typings.cadesplugin.CAPICOM.Certificates = js.native
   

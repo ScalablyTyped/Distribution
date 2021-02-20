@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The period during which some deployable was active in a runtime.
   */
 @js.native
-trait SchemaDeployment extends js.Object {
+trait SchemaDeployment extends StObject {
   
   /**
     * Address of the runtime element hosting this deployment.
@@ -55,63 +56,51 @@ object SchemaDeployment {
   }
   
   @scala.inline
-  implicit class SchemaDeploymentOps[Self <: SchemaDeployment] (val x: Self) extends AnyVal {
+  implicit class SchemaDeploymentMutableBuilder[Self <: SchemaDeployment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setDeployTime(value: String): Self = StObject.set(x, "deployTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: String): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setDeployTimeUndefined: Self = StObject.set(x, "deployTime", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployTime(value: String): Self = this.set("deployTime", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteDeployTime: Self = this.set("deployTime", js.undefined)
+    def setResourceUri(value: js.Array[String]): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setResourceUriVarargs(value: String*): Self = StObject.set(x, "resourceUri", js.Array(value :_*))
     
     @scala.inline
-    def setResourceUriVarargs(value: String*): Self = this.set("resourceUri", js.Array(value :_*))
+    def setUndeployTime(value: String): Self = StObject.set(x, "undeployTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceUri(value: js.Array[String]): Self = this.set("resourceUri", value.asInstanceOf[js.Any])
+    def setUndeployTimeUndefined: Self = StObject.set(x, "undeployTime", js.undefined)
     
     @scala.inline
-    def deleteResourceUri: Self = this.set("resourceUri", js.undefined)
+    def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndeployTime(value: String): Self = this.set("undeployTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUndeployTime: Self = this.set("undeployTime", js.undefined)
-    
-    @scala.inline
-    def setUserEmail(value: String): Self = this.set("userEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEmail: Self = this.set("userEmail", js.undefined)
+    def setUserEmailUndefined: Self = StObject.set(x, "userEmail", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddSlicerResponse extends js.Object {
+trait AddSlicerResponse extends StObject {
   
   /** The newly added slicer. */
   var slicer: js.UndefOr[Slicer] = js.native
@@ -19,24 +20,12 @@ object AddSlicerResponse {
   }
   
   @scala.inline
-  implicit class AddSlicerResponseOps[Self <: AddSlicerResponse] (val x: Self) extends AnyVal {
+  implicit class AddSlicerResponseMutableBuilder[Self <: AddSlicerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSlicer(value: Slicer): Self = StObject.set(x, "slicer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSlicer(value: Slicer): Self = this.set("slicer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlicer: Self = this.set("slicer", js.undefined)
+    def setSlicerUndefined: Self = StObject.set(x, "slicer", js.undefined)
   }
 }

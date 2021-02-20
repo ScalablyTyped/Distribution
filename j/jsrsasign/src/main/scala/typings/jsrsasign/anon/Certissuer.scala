@@ -1,11 +1,12 @@
 package typings.jsrsasign.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Certissuer extends js.Object {
+trait Certissuer extends StObject {
   
   var certissuer: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object Certissuer {
   }
   
   @scala.inline
-  implicit class CertissuerOps[Self <: Certissuer] (val x: Self) extends AnyVal {
+  implicit class CertissuerMutableBuilder[Self <: Certissuer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertissuer(value: String): Self = StObject.set(x, "certissuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertissuerUndefined: Self = StObject.set(x, "certissuer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertsubject(value: String): Self = StObject.set(x, "certsubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLdapstr(value: String): Self = this.set("ldapstr", value.asInstanceOf[js.Any])
+    def setCertsubjectUndefined: Self = StObject.set(x, "certsubject", js.undefined)
     
     @scala.inline
-    def setCertissuer(value: String): Self = this.set("certissuer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertissuer: Self = this.set("certissuer", js.undefined)
-    
-    @scala.inline
-    def setCertsubject(value: String): Self = this.set("certsubject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertsubject: Self = this.set("certsubject", js.undefined)
+    def setLdapstr(value: String): Self = StObject.set(x, "ldapstr", value.asInstanceOf[js.Any])
   }
 }

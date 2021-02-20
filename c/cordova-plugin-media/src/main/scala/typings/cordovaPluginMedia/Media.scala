@@ -1,6 +1,7 @@
 package typings.cordovaPluginMedia
 
 import typings.std.MediaError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * W3C specification and may deprecate the current APIs.
   */
 @js.native
-trait Media extends js.Object {
+trait Media extends StObject {
   
   /** The duration of the media, in seconds. */
   var duration: Double = js.native

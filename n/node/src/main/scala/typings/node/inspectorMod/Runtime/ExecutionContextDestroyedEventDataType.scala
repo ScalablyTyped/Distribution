@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionContextDestroyedEventDataType extends js.Object {
+trait ExecutionContextDestroyedEventDataType extends StObject {
   
   /**
     * Id of the destroyed context
@@ -21,21 +22,9 @@ object ExecutionContextDestroyedEventDataType {
   }
   
   @scala.inline
-  implicit class ExecutionContextDestroyedEventDataTypeOps[Self <: ExecutionContextDestroyedEventDataType] (val x: Self) extends AnyVal {
+  implicit class ExecutionContextDestroyedEventDataTypeMutableBuilder[Self <: ExecutionContextDestroyedEventDataType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = this.set("executionContextId", value.asInstanceOf[js.Any])
+    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
   }
 }

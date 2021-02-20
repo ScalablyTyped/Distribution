@@ -3,12 +3,13 @@ package typings.androiduix.android.graphics
 import typings.androiduix.android.graphics.Paint.Style
 import typings.androiduix.androidui.image.NetImage
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Canvas extends js.Object {
+trait Canvas extends StObject {
   
   var _mCanvasContent: js.Any = js.native
   

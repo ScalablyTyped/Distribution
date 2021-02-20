@@ -2,13 +2,14 @@ package typings.aureliaTemplating.mod
 
 import typings.std.DocumentFragment
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewCompiler")
 @js.native
-class ViewCompiler protected () extends js.Object {
+class ViewCompiler protected () extends StObject {
   /**
     * Creates an instance of ViewCompiler.
     * @param bindingLanguage The default data binding language and syntax used during view compilation.
@@ -41,9 +42,9 @@ class ViewCompiler protected () extends js.Object {
   def compile(source: Element, resources: ViewResources_, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
 }
 /* static members */
-@JSImport("aurelia-templating", "ViewCompiler")
-@js.native
-object ViewCompiler extends js.Object {
+object ViewCompiler {
   
+  @JSImport("aurelia-templating", "ViewCompiler.inject")
+  @js.native
   def inject(): js.Any = js.native
 }

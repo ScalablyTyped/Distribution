@@ -37,6 +37,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.valueOptionChanged
 import typings.std.CustomEvent
 import typings.std.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -321,9 +322,7 @@ trait ojSelectOne[K, D]
   
   var valueOption: LabelValue = js.native
 }
-@JSImport("@oracle/oraclejet/ojselectcombobox", "ojSelectOne")
-@js.native
-object ojSelectOne extends js.Object {
+object ojSelectOne {
   
   type ojAnimateEnd = CustomEvent[Action]
   

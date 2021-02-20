@@ -8,14 +8,14 @@ import typings.angularHttp.interfacesMod.XSRFStrategy
 import typings.angularHttp.staticRequestMod.Request
 import typings.angularHttp.staticResponseMod.Response
 import typings.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/http/src/backends/xhr_backend", JSImport.Namespace)
-@js.native
-object xhrBackendMod extends js.Object {
+object xhrBackendMod {
   
+  @JSImport("@angular/http/src/backends/xhr_backend", "CookieXSRFStrategy")
   @js.native
   class CookieXSRFStrategy () extends XSRFStrategy {
     def this(_cookieName: String) = this()
@@ -27,6 +27,7 @@ object xhrBackendMod extends js.Object {
     var _headerName: js.Any = js.native
   }
   
+  @JSImport("@angular/http/src/backends/xhr_backend", "XHRBackend")
   @js.native
   class XHRBackend protected () extends ConnectionBackend {
     def this(_browserXHR: BrowserXhr, _baseResponseOptions: ResponseOptions, _xsrfStrategy: XSRFStrategy) = this()
@@ -40,6 +41,7 @@ object xhrBackendMod extends js.Object {
     def createConnection(request: Request): XHRConnection = js.native
   }
   
+  @JSImport("@angular/http/src/backends/xhr_backend", "XHRConnection")
   @js.native
   class XHRConnection protected () extends Connection {
     def this(req: Request, browserXHR: BrowserXhr) = this()

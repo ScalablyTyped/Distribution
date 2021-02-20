@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisAccessibilityOptionsObject extends js.Object {
+trait AxisAccessibilityOptionsObject extends StObject {
   
   /**
     * (Highcharts) Description for an axis to expose to screen reader users.
@@ -35,36 +36,24 @@ object AxisAccessibilityOptionsObject {
   }
   
   @scala.inline
-  implicit class AxisAccessibilityOptionsObjectOps[Self <: AxisAccessibilityOptionsObject] (val x: Self) extends AnyVal {
+  implicit class AxisAccessibilityOptionsObjectMutableBuilder[Self <: AxisAccessibilityOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setRangeDescription(value: String): Self = StObject.set(x, "rangeDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setRangeDescription(value: String): Self = this.set("rangeDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeDescription: Self = this.set("rangeDescription", js.undefined)
+    def setRangeDescriptionUndefined: Self = StObject.set(x, "rangeDescription", js.undefined)
   }
 }

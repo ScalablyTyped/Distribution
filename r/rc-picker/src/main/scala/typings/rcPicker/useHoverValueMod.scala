@@ -1,14 +1,15 @@
 package typings.rcPicker
 
 import typings.rcPicker.useValueTextsMod.ValueTextConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-picker/es/hooks/useHoverValue", JSImport.Namespace)
-@js.native
-object useHoverValueMod extends js.Object {
+object useHoverValueMod {
   
+  @JSImport("rc-picker/es/hooks/useHoverValue", JSImport.Default)
+  @js.native
   def default[DateType](valueText: String, hasFormatListGenerateConfigLocale: ValueTextConfig[DateType]): js.Tuple3[
     String, 
     js.Function1[/* date */ DateType, Unit], 

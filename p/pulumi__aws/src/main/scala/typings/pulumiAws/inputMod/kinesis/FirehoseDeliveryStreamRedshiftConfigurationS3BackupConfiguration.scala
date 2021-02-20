@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesis
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration extends js.Object {
+trait FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration extends StObject {
   
   /**
     * The ARN of the S3 bucket
@@ -63,64 +64,52 @@ object FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration {
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOps[Self <: FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration] (val x: Self) extends AnyVal {
+  implicit class FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketArn(value: Input[String]): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferInterval(value: Input[Double]): Self = StObject.set(x, "bufferInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBufferIntervalUndefined: Self = StObject.set(x, "bufferInterval", js.undefined)
     
     @scala.inline
-    def setBucketArn(value: Input[String]): Self = this.set("bucketArn", value.asInstanceOf[js.Any])
+    def setBufferSize(value: Input[Double]): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBufferInterval(value: Input[Double]): Self = this.set("bufferInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBufferInterval: Self = this.set("bufferInterval", js.undefined)
-    
-    @scala.inline
-    def setBufferSize(value: Input[Double]): Self = this.set("bufferSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBufferSize: Self = this.set("bufferSize", js.undefined)
+    def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
     
     @scala.inline
     def setCloudwatchLoggingOptions(
       value: Input[
           FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions
         ]
-    ): Self = this.set("cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudwatchLoggingOptions: Self = this.set("cloudwatchLoggingOptions", js.undefined)
+    def setCloudwatchLoggingOptionsUndefined: Self = StObject.set(x, "cloudwatchLoggingOptions", js.undefined)
     
     @scala.inline
-    def setCompressionFormat(value: Input[String]): Self = this.set("compressionFormat", value.asInstanceOf[js.Any])
+    def setCompressionFormat(value: Input[String]): Self = StObject.set(x, "compressionFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompressionFormat: Self = this.set("compressionFormat", js.undefined)
+    def setCompressionFormatUndefined: Self = StObject.set(x, "compressionFormat", js.undefined)
     
     @scala.inline
-    def setKmsKeyArn(value: Input[String]): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+    def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     
     @scala.inline
-    def setPrefix(value: Input[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

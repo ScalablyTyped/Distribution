@@ -1,5 +1,6 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,242 +73,230 @@ object IGeoObjectOptions {
   }
   
   @scala.inline
-  implicit class IGeoObjectOptionsOps[Self <: IGeoObjectOptions] (val x: Self) extends AnyVal {
+  implicit class IGeoObjectOptionsMutableBuilder[Self <: IGeoObjectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconCaptionMaxWidth(value: Double): Self = StObject.set(x, "iconCaptionMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconCaptionMaxWidthUndefined: Self = StObject.set(x, "iconCaptionMaxWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconCaptionMaxWidth(value: Double): Self = this.set("iconCaptionMaxWidth", value.asInstanceOf[js.Any])
+    def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
     
     @scala.inline
-    def deleteIconCaptionMaxWidth: Self = this.set("iconCaptionMaxWidth", js.undefined)
+    def setIconContentLayout(value: String | IClassConstructor[ILayout]): Self = StObject.set(x, "iconContentLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconColor(value: String): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    def setIconContentLayoutUndefined: Self = StObject.set(x, "iconContentLayout", js.undefined)
     
     @scala.inline
-    def deleteIconColor: Self = this.set("iconColor", js.undefined)
+    def setIconContentOffset(value: js.Array[Double]): Self = StObject.set(x, "iconContentOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconContentLayout(value: String | IClassConstructor[ILayout]): Self = this.set("iconContentLayout", value.asInstanceOf[js.Any])
+    def setIconContentOffsetUndefined: Self = StObject.set(x, "iconContentOffset", js.undefined)
     
     @scala.inline
-    def deleteIconContentLayout: Self = this.set("iconContentLayout", js.undefined)
+    def setIconContentOffsetVarargs(value: Double*): Self = StObject.set(x, "iconContentOffset", js.Array(value :_*))
     
     @scala.inline
-    def setIconContentOffsetVarargs(value: Double*): Self = this.set("iconContentOffset", js.Array(value :_*))
+    def setIconContentPadding(value: js.Array[Double]): Self = StObject.set(x, "iconContentPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconContentOffset(value: js.Array[Double]): Self = this.set("iconContentOffset", value.asInstanceOf[js.Any])
+    def setIconContentPaddingUndefined: Self = StObject.set(x, "iconContentPadding", js.undefined)
     
     @scala.inline
-    def deleteIconContentOffset: Self = this.set("iconContentOffset", js.undefined)
+    def setIconContentPaddingVarargs(value: Double*): Self = StObject.set(x, "iconContentPadding", js.Array(value :_*))
     
     @scala.inline
-    def setIconContentPaddingVarargs(value: Double*): Self = this.set("iconContentPadding", js.Array(value :_*))
+    def setIconContentSize(value: js.Array[Double]): Self = StObject.set(x, "iconContentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconContentPadding(value: js.Array[Double]): Self = this.set("iconContentPadding", value.asInstanceOf[js.Any])
+    def setIconContentSizeUndefined: Self = StObject.set(x, "iconContentSize", js.undefined)
     
     @scala.inline
-    def deleteIconContentPadding: Self = this.set("iconContentPadding", js.undefined)
+    def setIconContentSizeVarargs(value: Double*): Self = StObject.set(x, "iconContentSize", js.Array(value :_*))
     
     @scala.inline
-    def setIconContentSizeVarargs(value: Double*): Self = this.set("iconContentSize", js.Array(value :_*))
+    def setIconImageClipRect(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "iconImageClipRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconContentSize(value: js.Array[Double]): Self = this.set("iconContentSize", value.asInstanceOf[js.Any])
+    def setIconImageClipRectUndefined: Self = StObject.set(x, "iconImageClipRect", js.undefined)
     
     @scala.inline
-    def deleteIconContentSize: Self = this.set("iconContentSize", js.undefined)
+    def setIconImageClipRectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "iconImageClipRect", js.Array(value :_*))
     
     @scala.inline
-    def setIconImageClipRectVarargs(value: js.Array[Double]*): Self = this.set("iconImageClipRect", js.Array(value :_*))
+    def setIconImageHref(value: String): Self = StObject.set(x, "iconImageHref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconImageClipRect(value: js.Array[js.Array[Double]]): Self = this.set("iconImageClipRect", value.asInstanceOf[js.Any])
+    def setIconImageHrefUndefined: Self = StObject.set(x, "iconImageHref", js.undefined)
     
     @scala.inline
-    def deleteIconImageClipRect: Self = this.set("iconImageClipRect", js.undefined)
+    def setIconImageOffset(value: js.Array[Double]): Self = StObject.set(x, "iconImageOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconImageHref(value: String): Self = this.set("iconImageHref", value.asInstanceOf[js.Any])
+    def setIconImageOffsetUndefined: Self = StObject.set(x, "iconImageOffset", js.undefined)
     
     @scala.inline
-    def deleteIconImageHref: Self = this.set("iconImageHref", js.undefined)
+    def setIconImageOffsetVarargs(value: Double*): Self = StObject.set(x, "iconImageOffset", js.Array(value :_*))
     
     @scala.inline
-    def setIconImageOffsetVarargs(value: Double*): Self = this.set("iconImageOffset", js.Array(value :_*))
+    def setIconImageShape(value: IShape): Self = StObject.set(x, "iconImageShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconImageOffset(value: js.Array[Double]): Self = this.set("iconImageOffset", value.asInstanceOf[js.Any])
+    def setIconImageShapeNull: Self = StObject.set(x, "iconImageShape", null)
     
     @scala.inline
-    def deleteIconImageOffset: Self = this.set("iconImageOffset", js.undefined)
+    def setIconImageShapeUndefined: Self = StObject.set(x, "iconImageShape", js.undefined)
     
     @scala.inline
-    def setIconImageShape(value: IShape): Self = this.set("iconImageShape", value.asInstanceOf[js.Any])
+    def setIconImageSize(value: js.Array[Double]): Self = StObject.set(x, "iconImageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconImageShape: Self = this.set("iconImageShape", js.undefined)
+    def setIconImageSizeUndefined: Self = StObject.set(x, "iconImageSize", js.undefined)
     
     @scala.inline
-    def setIconImageShapeNull: Self = this.set("iconImageShape", null)
+    def setIconImageSizeVarargs(value: Double*): Self = StObject.set(x, "iconImageSize", js.Array(value :_*))
     
     @scala.inline
-    def setIconImageSizeVarargs(value: Double*): Self = this.set("iconImageSize", js.Array(value :_*))
+    def setIconLayout(value: String | IClassConstructor[ILayout]): Self = StObject.set(x, "iconLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconImageSize(value: js.Array[Double]): Self = this.set("iconImageSize", value.asInstanceOf[js.Any])
+    def setIconLayoutUndefined: Self = StObject.set(x, "iconLayout", js.undefined)
     
     @scala.inline
-    def deleteIconImageSize: Self = this.set("iconImageSize", js.undefined)
+    def setIconMaxHeight(value: Double): Self = StObject.set(x, "iconMaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconLayout(value: String | IClassConstructor[ILayout]): Self = this.set("iconLayout", value.asInstanceOf[js.Any])
+    def setIconMaxHeightUndefined: Self = StObject.set(x, "iconMaxHeight", js.undefined)
     
     @scala.inline
-    def deleteIconLayout: Self = this.set("iconLayout", js.undefined)
+    def setIconMaxWidth(value: Double): Self = StObject.set(x, "iconMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconMaxHeight(value: Double): Self = this.set("iconMaxHeight", value.asInstanceOf[js.Any])
+    def setIconMaxWidthUndefined: Self = StObject.set(x, "iconMaxWidth", js.undefined)
     
     @scala.inline
-    def deleteIconMaxHeight: Self = this.set("iconMaxHeight", js.undefined)
+    def setIconOffset(value: js.Array[Double]): Self = StObject.set(x, "iconOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconMaxWidth(value: Double): Self = this.set("iconMaxWidth", value.asInstanceOf[js.Any])
+    def setIconOffsetUndefined: Self = StObject.set(x, "iconOffset", js.undefined)
     
     @scala.inline
-    def deleteIconMaxWidth: Self = this.set("iconMaxWidth", js.undefined)
+    def setIconOffsetVarargs(value: Double*): Self = StObject.set(x, "iconOffset", js.Array(value :_*))
     
     @scala.inline
-    def setIconOffsetVarargs(value: Double*): Self = this.set("iconOffset", js.Array(value :_*))
+    def setIconShadow(value: Boolean): Self = StObject.set(x, "iconShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconOffset(value: js.Array[Double]): Self = this.set("iconOffset", value.asInstanceOf[js.Any])
+    def setIconShadowImageClipRect(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "iconShadowImageClipRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconOffset: Self = this.set("iconOffset", js.undefined)
+    def setIconShadowImageClipRectUndefined: Self = StObject.set(x, "iconShadowImageClipRect", js.undefined)
     
     @scala.inline
-    def setIconShadow(value: Boolean): Self = this.set("iconShadow", value.asInstanceOf[js.Any])
+    def setIconShadowImageClipRectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "iconShadowImageClipRect", js.Array(value :_*))
     
     @scala.inline
-    def deleteIconShadow: Self = this.set("iconShadow", js.undefined)
+    def setIconShadowImageHref(value: String): Self = StObject.set(x, "iconShadowImageHref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconShadowImageClipRectVarargs(value: js.Array[Double]*): Self = this.set("iconShadowImageClipRect", js.Array(value :_*))
+    def setIconShadowImageHrefUndefined: Self = StObject.set(x, "iconShadowImageHref", js.undefined)
     
     @scala.inline
-    def setIconShadowImageClipRect(value: js.Array[js.Array[Double]]): Self = this.set("iconShadowImageClipRect", value.asInstanceOf[js.Any])
+    def setIconShadowImageOffset(value: js.Array[Double]): Self = StObject.set(x, "iconShadowImageOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconShadowImageClipRect: Self = this.set("iconShadowImageClipRect", js.undefined)
+    def setIconShadowImageOffsetUndefined: Self = StObject.set(x, "iconShadowImageOffset", js.undefined)
     
     @scala.inline
-    def setIconShadowImageHref(value: String): Self = this.set("iconShadowImageHref", value.asInstanceOf[js.Any])
+    def setIconShadowImageOffsetVarargs(value: Double*): Self = StObject.set(x, "iconShadowImageOffset", js.Array(value :_*))
     
     @scala.inline
-    def deleteIconShadowImageHref: Self = this.set("iconShadowImageHref", js.undefined)
+    def setIconShadowImageSize(value: js.Array[Double]): Self = StObject.set(x, "iconShadowImageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconShadowImageOffsetVarargs(value: Double*): Self = this.set("iconShadowImageOffset", js.Array(value :_*))
+    def setIconShadowImageSizeUndefined: Self = StObject.set(x, "iconShadowImageSize", js.undefined)
     
     @scala.inline
-    def setIconShadowImageOffset(value: js.Array[Double]): Self = this.set("iconShadowImageOffset", value.asInstanceOf[js.Any])
+    def setIconShadowImageSizeVarargs(value: Double*): Self = StObject.set(x, "iconShadowImageSize", js.Array(value :_*))
     
     @scala.inline
-    def deleteIconShadowImageOffset: Self = this.set("iconShadowImageOffset", js.undefined)
+    def setIconShadowLayout(value: String | IClassConstructor[ILayout]): Self = StObject.set(x, "iconShadowLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconShadowImageSizeVarargs(value: Double*): Self = this.set("iconShadowImageSize", js.Array(value :_*))
+    def setIconShadowLayoutUndefined: Self = StObject.set(x, "iconShadowLayout", js.undefined)
     
     @scala.inline
-    def setIconShadowImageSize(value: js.Array[Double]): Self = this.set("iconShadowImageSize", value.asInstanceOf[js.Any])
+    def setIconShadowOffset(value: js.Array[Double]): Self = StObject.set(x, "iconShadowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconShadowImageSize: Self = this.set("iconShadowImageSize", js.undefined)
+    def setIconShadowOffsetUndefined: Self = StObject.set(x, "iconShadowOffset", js.undefined)
     
     @scala.inline
-    def setIconShadowLayout(value: String | IClassConstructor[ILayout]): Self = this.set("iconShadowLayout", value.asInstanceOf[js.Any])
+    def setIconShadowOffsetVarargs(value: Double*): Self = StObject.set(x, "iconShadowOffset", js.Array(value :_*))
     
     @scala.inline
-    def deleteIconShadowLayout: Self = this.set("iconShadowLayout", js.undefined)
+    def setIconShadowUndefined: Self = StObject.set(x, "iconShadow", js.undefined)
     
     @scala.inline
-    def setIconShadowOffsetVarargs(value: Double*): Self = this.set("iconShadowOffset", js.Array(value :_*))
-    
-    @scala.inline
-    def setIconShadowOffset(value: js.Array[Double]): Self = this.set("iconShadowOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconShadowOffset: Self = this.set("iconShadowOffset", js.undefined)
+    def setLineStringOverlay(value: OverlayKey): Self = StObject.set(x, "lineStringOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLineStringOverlayFunction3(
       value: (/* geometry */ IPixelLineStringGeometry, /* data */ IDataManager | js.Object, /* options */ js.Object) => js.Promise[String | IClassConstructor[IOverlay]]
-    ): Self = this.set("lineStringOverlay", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "lineStringOverlay", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setLineStringOverlay(value: OverlayKey): Self = this.set("lineStringOverlay", value.asInstanceOf[js.Any])
+    def setLineStringOverlayUndefined: Self = StObject.set(x, "lineStringOverlay", js.undefined)
     
     @scala.inline
-    def deleteLineStringOverlay: Self = this.set("lineStringOverlay", js.undefined)
+    def setPointOverlay(value: OverlayKey): Self = StObject.set(x, "pointOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPointOverlayFunction3(
       value: (/* geometry */ IPixelLineStringGeometry, /* data */ IDataManager | js.Object, /* options */ js.Object) => js.Promise[String | IClassConstructor[IOverlay]]
-    ): Self = this.set("pointOverlay", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "pointOverlay", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPointOverlay(value: OverlayKey): Self = this.set("pointOverlay", value.asInstanceOf[js.Any])
+    def setPointOverlayUndefined: Self = StObject.set(x, "pointOverlay", js.undefined)
     
     @scala.inline
-    def deletePointOverlay: Self = this.set("pointOverlay", js.undefined)
+    def setPolygonOverlay(value: OverlayKey): Self = StObject.set(x, "polygonOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPolygonOverlayFunction3(
       value: (/* geometry */ IPixelLineStringGeometry, /* data */ IDataManager | js.Object, /* options */ js.Object) => js.Promise[String | IClassConstructor[IOverlay]]
-    ): Self = this.set("polygonOverlay", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "polygonOverlay", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPolygonOverlay(value: OverlayKey): Self = this.set("polygonOverlay", value.asInstanceOf[js.Any])
+    def setPolygonOverlayUndefined: Self = StObject.set(x, "polygonOverlay", js.undefined)
     
     @scala.inline
-    def deletePolygonOverlay: Self = this.set("polygonOverlay", js.undefined)
+    def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreset(value: String): Self = this.set("preset", value.asInstanceOf[js.Any])
+    def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     
     @scala.inline
-    def deletePreset: Self = this.set("preset", js.undefined)
+    def setRectangleOverlay(value: OverlayKey): Self = StObject.set(x, "rectangleOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRectangleOverlayFunction3(
       value: (/* geometry */ IPixelLineStringGeometry, /* data */ IDataManager | js.Object, /* options */ js.Object) => js.Promise[String | IClassConstructor[IOverlay]]
-    ): Self = this.set("rectangleOverlay", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "rectangleOverlay", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRectangleOverlay(value: OverlayKey): Self = this.set("rectangleOverlay", value.asInstanceOf[js.Any])
+    def setRectangleOverlayUndefined: Self = StObject.set(x, "rectangleOverlay", js.undefined)
     
     @scala.inline
-    def deleteRectangleOverlay: Self = this.set("rectangleOverlay", js.undefined)
+    def setSetMapCursorInDragging(value: Boolean): Self = StObject.set(x, "setMapCursorInDragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetMapCursorInDragging(value: Boolean): Self = this.set("setMapCursorInDragging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetMapCursorInDragging: Self = this.set("setMapCursorInDragging", js.undefined)
+    def setSetMapCursorInDraggingUndefined: Self = StObject.set(x, "setMapCursorInDragging", js.undefined)
   }
 }

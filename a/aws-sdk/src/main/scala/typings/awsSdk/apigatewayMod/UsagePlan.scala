@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsagePlan extends js.Object {
+trait UsagePlan extends StObject {
   
   /**
     * The associated API stages of a usage plan.
@@ -56,69 +57,57 @@ object UsagePlan {
   }
   
   @scala.inline
-  implicit class UsagePlanOps[Self <: UsagePlan] (val x: Self) extends AnyVal {
+  implicit class UsagePlanMutableBuilder[Self <: UsagePlan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiStages(value: ListOfApiStage): Self = StObject.set(x, "apiStages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiStagesUndefined: Self = StObject.set(x, "apiStages", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiStagesVarargs(value: ApiStage*): Self = StObject.set(x, "apiStages", js.Array(value :_*))
     
     @scala.inline
-    def setApiStagesVarargs(value: ApiStage*): Self = this.set("apiStages", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiStages(value: ListOfApiStage): Self = this.set("apiStages", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteApiStages: Self = this.set("apiStages", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setProductCode(value: String): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setQuota(value: QuotaSettings): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCode(value: String): Self = this.set("productCode", value.asInstanceOf[js.Any])
+    def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
     
     @scala.inline
-    def deleteProductCode: Self = this.set("productCode", js.undefined)
+    def setTags(value: MapOfStringToString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuota(value: QuotaSettings): Self = this.set("quota", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteQuota: Self = this.set("quota", js.undefined)
+    def setThrottle(value: ThrottleSettings): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: MapOfStringToString): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setThrottle(value: ThrottleSettings): Self = this.set("throttle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottle: Self = this.set("throttle", js.undefined)
+    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
   }
 }

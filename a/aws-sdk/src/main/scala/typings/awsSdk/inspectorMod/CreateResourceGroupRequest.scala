@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateResourceGroupRequest extends js.Object {
+trait CreateResourceGroupRequest extends StObject {
   
   /**
     * A collection of keys and an array of possible values, '[{"key":"key1","values":["Value1","Value2"]},{"key":"Key2","values":["Value3"]}]'. For example,'[{"key":"Name","values":["TestEC2Instance"]}]'.
@@ -21,24 +22,12 @@ object CreateResourceGroupRequest {
   }
   
   @scala.inline
-  implicit class CreateResourceGroupRequestOps[Self <: CreateResourceGroupRequest] (val x: Self) extends AnyVal {
+  implicit class CreateResourceGroupRequestMutableBuilder[Self <: CreateResourceGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceGroupTags(value: ResourceGroupTags): Self = StObject.set(x, "resourceGroupTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceGroupTagsVarargs(value: ResourceGroupTag*): Self = this.set("resourceGroupTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceGroupTags(value: ResourceGroupTags): Self = this.set("resourceGroupTags", value.asInstanceOf[js.Any])
+    def setResourceGroupTagsVarargs(value: ResourceGroupTag*): Self = StObject.set(x, "resourceGroupTags", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.extjs.Ext.data
 
 import typings.extjs.Ext.util.IObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,134 +140,122 @@ object IProxy {
   }
   
   @scala.inline
-  implicit class IProxyOps[Self <: IProxy] (val x: Self) extends AnyVal {
+  implicit class IProxyMutableBuilder[Self <: IProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatch(value: /* options */ js.UndefOr[js.Any] => IBatch): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchActions(value: Boolean): Self = StObject.set(x, "batchActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchActionsUndefined: Self = StObject.set(x, "batchActions", js.undefined)
     
     @scala.inline
-    def setBatch(value: /* options */ js.UndefOr[js.Any] => IBatch): Self = this.set("batch", js.Any.fromFunction1(value))
+    def setBatchOrder(value: String): Self = StObject.set(x, "batchOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatch: Self = this.set("batch", js.undefined)
+    def setBatchOrderUndefined: Self = StObject.set(x, "batchOrder", js.undefined)
     
     @scala.inline
-    def setBatchActions(value: Boolean): Self = this.set("batchActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchActions: Self = this.set("batchActions", js.undefined)
-    
-    @scala.inline
-    def setBatchOrder(value: String): Self = this.set("batchOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchOrder: Self = this.set("batchOrder", js.undefined)
+    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     @scala.inline
     def setCreate(
       value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("create", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
     def setDestroy(
       value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("destroy", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def setGetModel(value: () => IModel): Self = this.set("getModel", js.Any.fromFunction0(value))
+    def setGetModel(value: () => IModel): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetModel: Self = this.set("getModel", js.undefined)
+    def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
     
     @scala.inline
-    def setGetReader(value: () => typings.extjs.Ext.data.reader.IReader): Self = this.set("getReader", js.Any.fromFunction0(value))
+    def setGetReader(value: () => typings.extjs.Ext.data.reader.IReader): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetReader: Self = this.set("getReader", js.undefined)
+    def setGetReaderUndefined: Self = StObject.set(x, "getReader", js.undefined)
     
     @scala.inline
-    def setGetWriter(value: () => typings.extjs.Ext.data.writer.IWriter): Self = this.set("getWriter", js.Any.fromFunction0(value))
+    def setGetWriter(value: () => typings.extjs.Ext.data.writer.IWriter): Self = StObject.set(x, "getWriter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetWriter: Self = this.set("getWriter", js.undefined)
+    def setGetWriterUndefined: Self = StObject.set(x, "getWriter", js.undefined)
     
     @scala.inline
-    def setIsProxy(value: Boolean): Self = this.set("isProxy", value.asInstanceOf[js.Any])
+    def setIsProxy(value: Boolean): Self = StObject.set(x, "isProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsProxy: Self = this.set("isProxy", js.undefined)
+    def setIsProxyUndefined: Self = StObject.set(x, "isProxy", js.undefined)
     
     @scala.inline
-    def setIsSynchronous(value: Boolean): Self = this.set("isSynchronous", value.asInstanceOf[js.Any])
+    def setIsSynchronous(value: Boolean): Self = StObject.set(x, "isSynchronous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsSynchronous: Self = this.set("isSynchronous", js.undefined)
+    def setIsSynchronousUndefined: Self = StObject.set(x, "isSynchronous", js.undefined)
     
     @scala.inline
-    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
     def setRead(
       value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("read", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def setReader(value: js.Any): Self = this.set("reader", value.asInstanceOf[js.Any])
+    def setReader(value: js.Any): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReader: Self = this.set("reader", js.undefined)
+    def setReaderUndefined: Self = StObject.set(x, "reader", js.undefined)
     
     @scala.inline
-    def setSetModel(value: (/* model */ js.UndefOr[js.Any], /* setOnStore */ js.UndefOr[Boolean]) => Unit): Self = this.set("setModel", js.Any.fromFunction2(value))
+    def setSetModel(value: (/* model */ js.UndefOr[js.Any], /* setOnStore */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSetModel: Self = this.set("setModel", js.undefined)
+    def setSetModelUndefined: Self = StObject.set(x, "setModel", js.undefined)
     
     @scala.inline
-    def setSetReader(value: /* reader */ js.UndefOr[js.Any] => typings.extjs.Ext.data.reader.IReader): Self = this.set("setReader", js.Any.fromFunction1(value))
+    def setSetReader(value: /* reader */ js.UndefOr[js.Any] => typings.extjs.Ext.data.reader.IReader): Self = StObject.set(x, "setReader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetReader: Self = this.set("setReader", js.undefined)
+    def setSetReaderUndefined: Self = StObject.set(x, "setReader", js.undefined)
     
     @scala.inline
-    def setSetWriter(value: /* writer */ js.UndefOr[js.Any] => typings.extjs.Ext.data.writer.IWriter): Self = this.set("setWriter", js.Any.fromFunction1(value))
+    def setSetWriter(value: /* writer */ js.UndefOr[js.Any] => typings.extjs.Ext.data.writer.IWriter): Self = StObject.set(x, "setWriter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetWriter: Self = this.set("setWriter", js.undefined)
+    def setSetWriterUndefined: Self = StObject.set(x, "setWriter", js.undefined)
     
     @scala.inline
     def setUpdate(
       value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("update", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def setWriter(value: js.Any): Self = this.set("writer", value.asInstanceOf[js.Any])
+    def setWriter(value: js.Any): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWriter: Self = this.set("writer", js.undefined)
+    def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SigningKey extends js.Object {
+trait SigningKey extends StObject {
   
   /** key_id is an identifier for the signing key. */
   var keyId: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object SigningKey {
   }
   
   @scala.inline
-  implicit class SigningKeyOps[Self <: SigningKey] (val x: Self) extends AnyVal {
+  implicit class SigningKeyMutableBuilder[Self <: SigningKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyScheme(value: String): Self = StObject.set(x, "keyScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: String): Self = this.set("keyId", value.asInstanceOf[js.Any])
+    def setKeySchemeUndefined: Self = StObject.set(x, "keyScheme", js.undefined)
     
     @scala.inline
-    def deleteKeyId: Self = this.set("keyId", js.undefined)
+    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyScheme(value: String): Self = this.set("keyScheme", value.asInstanceOf[js.Any])
+    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
     
     @scala.inline
-    def deleteKeyScheme: Self = this.set("keyScheme", js.undefined)
+    def setPublicKeyValue(value: String): Self = StObject.set(x, "publicKeyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyType(value: String): Self = this.set("keyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyType: Self = this.set("keyType", js.undefined)
-    
-    @scala.inline
-    def setPublicKeyValue(value: String): Self = this.set("publicKeyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKeyValue: Self = this.set("publicKeyValue", js.undefined)
+    def setPublicKeyValueUndefined: Self = StObject.set(x, "publicKeyValue", js.undefined)
   }
 }

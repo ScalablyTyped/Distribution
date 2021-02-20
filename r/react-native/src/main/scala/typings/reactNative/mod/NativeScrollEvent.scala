@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeScrollEvent extends js.Object {
+trait NativeScrollEvent extends StObject {
   
   var contentInset: NativeScrollRectangle = js.native
   
@@ -34,39 +35,27 @@ object NativeScrollEvent {
   }
   
   @scala.inline
-  implicit class NativeScrollEventOps[Self <: NativeScrollEvent] (val x: Self) extends AnyVal {
+  implicit class NativeScrollEventMutableBuilder[Self <: NativeScrollEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentInset(value: NativeScrollRectangle): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentOffset(value: NativeScrollPoint): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentSize(value: NativeScrollSize): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentInset(value: NativeScrollRectangle): Self = this.set("contentInset", value.asInstanceOf[js.Any])
+    def setLayoutMeasurement(value: NativeScrollSize): Self = StObject.set(x, "layoutMeasurement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentOffset(value: NativeScrollPoint): Self = this.set("contentOffset", value.asInstanceOf[js.Any])
+    def setVelocity(value: NativeScrollVelocity): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentSize(value: NativeScrollSize): Self = this.set("contentSize", value.asInstanceOf[js.Any])
+    def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
     
     @scala.inline
-    def setLayoutMeasurement(value: NativeScrollSize): Self = this.set("layoutMeasurement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomScale(value: Double): Self = this.set("zoomScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVelocity(value: NativeScrollVelocity): Self = this.set("velocity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVelocity: Self = this.set("velocity", js.undefined)
+    def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostureDetail extends js.Object {
+trait PostureDetail extends StObject {
   
   /** Corresponding admin-facing advice to mitigate this security risk and improve the security posture of the device. */
   var advice: js.UndefOr[js.Array[UserFacingMessage]] = js.native
@@ -22,33 +23,21 @@ object PostureDetail {
   }
   
   @scala.inline
-  implicit class PostureDetailOps[Self <: PostureDetail] (val x: Self) extends AnyVal {
+  implicit class PostureDetailMutableBuilder[Self <: PostureDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvice(value: js.Array[UserFacingMessage]): Self = StObject.set(x, "advice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdviceUndefined: Self = StObject.set(x, "advice", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdviceVarargs(value: UserFacingMessage*): Self = StObject.set(x, "advice", js.Array(value :_*))
     
     @scala.inline
-    def setAdviceVarargs(value: UserFacingMessage*): Self = this.set("advice", js.Array(value :_*))
+    def setSecurityRisk(value: String): Self = StObject.set(x, "securityRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvice(value: js.Array[UserFacingMessage]): Self = this.set("advice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdvice: Self = this.set("advice", js.undefined)
-    
-    @scala.inline
-    def setSecurityRisk(value: String): Self = this.set("securityRisk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityRisk: Self = this.set("securityRisk", js.undefined)
+    def setSecurityRiskUndefined: Self = StObject.set(x, "securityRisk", js.undefined)
   }
 }

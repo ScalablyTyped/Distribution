@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AngleAlignment extends js.Object
+sealed trait AngleAlignment extends StObject
 @JSGlobal("__esri.CIM.AngleAlignment")
 @js.native
-object AngleAlignment extends js.Object {
+object AngleAlignment extends StObject {
   
   /**
     * Points remain aligned to the display when the map is rotated.

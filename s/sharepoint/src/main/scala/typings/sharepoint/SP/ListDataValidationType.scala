@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ListDataValidationType extends js.Object
+sealed trait ListDataValidationType extends StObject
 @JSGlobal("SP.ListDataValidationType")
 @js.native
-object ListDataValidationType extends js.Object {
+object ListDataValidationType extends StObject {
   
   @js.native
   sealed trait choiceField extends ListDataValidationType

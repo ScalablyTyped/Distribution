@@ -8,14 +8,14 @@ import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/depthOfFieldMergePostProcess", JSImport.Namespace)
-@js.native
-object depthOfFieldMergePostProcessMod extends js.Object {
+object depthOfFieldMergePostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/depthOfFieldMergePostProcess", "DepthOfFieldMergePostProcess")
   @js.native
   class DepthOfFieldMergePostProcess protected () extends PostProcess {
     /**
@@ -67,8 +67,9 @@ object depthOfFieldMergePostProcessMod extends js.Object {
     ): Unit = js.native
   }
   
+  @JSImport("babylonjs/PostProcesses/depthOfFieldMergePostProcess", "DepthOfFieldMergePostProcessOptions")
   @js.native
-  class DepthOfFieldMergePostProcessOptions () extends js.Object {
+  class DepthOfFieldMergePostProcessOptions () extends StObject {
     
     /**
       * Parameters to perform the merge of bloom effect

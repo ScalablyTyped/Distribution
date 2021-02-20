@@ -1,15 +1,15 @@
 package typings.ngxInfiniteScroll
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ngx-infinite-scroll/src/services/axis-resolver", JSImport.Namespace)
-@js.native
-object axisResolverMod extends js.Object {
+object axisResolverMod {
   
+  @JSImport("ngx-infinite-scroll/src/services/axis-resolver", "AxisResolver")
   @js.native
-  class AxisResolver () extends js.Object {
+  class AxisResolver () extends StObject {
     def this(vertical: Boolean) = this()
     
     def clientHeightKey(): js.Any = js.native

@@ -1,11 +1,12 @@
 package typings.nanp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Nanp extends js.Object {
+trait Nanp extends StObject {
   
   /**
     * Test if a string is a North American Number Plan (phone) number.

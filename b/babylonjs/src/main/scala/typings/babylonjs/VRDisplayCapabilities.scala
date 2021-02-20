@@ -1,11 +1,12 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VRDisplayCapabilities extends js.Object {
+trait VRDisplayCapabilities extends StObject {
   
   val canPresent: Boolean = js.native
   
@@ -32,33 +33,21 @@ object VRDisplayCapabilities {
   }
   
   @scala.inline
-  implicit class VRDisplayCapabilitiesOps[Self <: VRDisplayCapabilities] (val x: Self) extends AnyVal {
+  implicit class VRDisplayCapabilitiesMutableBuilder[Self <: VRDisplayCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanPresent(value: Boolean): Self = StObject.set(x, "canPresent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasExternalDisplay(value: Boolean): Self = StObject.set(x, "hasExternalDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasOrientation(value: Boolean): Self = StObject.set(x, "hasOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanPresent(value: Boolean): Self = this.set("canPresent", value.asInstanceOf[js.Any])
+    def setHasPosition(value: Boolean): Self = StObject.set(x, "hasPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasExternalDisplay(value: Boolean): Self = this.set("hasExternalDisplay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasOrientation(value: Boolean): Self = this.set("hasOrientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasPosition(value: Boolean): Self = this.set("hasPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxLayers(value: Double): Self = this.set("maxLayers", value.asInstanceOf[js.Any])
+    def setMaxLayers(value: Double): Self = StObject.set(x, "maxLayers", value.asInstanceOf[js.Any])
   }
 }

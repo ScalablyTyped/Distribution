@@ -1,5 +1,6 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iobroker.iobrokerStrings.once
   - typings.iobroker.iobrokerStrings.extension
 */
-trait InstanceMode extends js.Object
+trait InstanceMode extends StObject
 object InstanceMode {
   
   @scala.inline

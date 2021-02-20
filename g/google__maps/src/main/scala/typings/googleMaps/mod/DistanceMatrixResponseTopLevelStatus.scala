@@ -1,5 +1,6 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleMaps.googleMapsStrings.REQUEST_DENIED
   - typings.googleMaps.googleMapsStrings.UNKNOWN_ERROR
 */
-trait DistanceMatrixResponseTopLevelStatus extends js.Object
+trait DistanceMatrixResponseTopLevelStatus extends StObject
 object DistanceMatrixResponseTopLevelStatus {
   
   @scala.inline

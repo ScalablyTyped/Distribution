@@ -2,12 +2,13 @@ package typings.mongodb.mod
 
 import typings.mongodb.anon.IdObjectId
 import typings.mongodb.anon.NModified
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateWriteOpResult extends js.Object {
+trait UpdateWriteOpResult extends StObject {
   
   var connection: js.Any = js.native
   
@@ -37,36 +38,24 @@ object UpdateWriteOpResult {
   }
   
   @scala.inline
-  implicit class UpdateWriteOpResultOps[Self <: UpdateWriteOpResult] (val x: Self) extends AnyVal {
+  implicit class UpdateWriteOpResultMutableBuilder[Self <: UpdateWriteOpResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchedCount(value: scala.Double): Self = StObject.set(x, "matchedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifiedCount(value: scala.Double): Self = StObject.set(x, "modifiedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: js.Any): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setResult(value: NModified): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedCount(value: scala.Double): Self = this.set("matchedCount", value.asInstanceOf[js.Any])
+    def setUpsertedCount(value: scala.Double): Self = StObject.set(x, "upsertedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedCount(value: scala.Double): Self = this.set("modifiedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: NModified): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpsertedCount(value: scala.Double): Self = this.set("upsertedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpsertedId(value: IdObjectId): Self = this.set("upsertedId", value.asInstanceOf[js.Any])
+    def setUpsertedId(value: IdObjectId): Self = StObject.set(x, "upsertedId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.three.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindingsPerObject extends js.Object {
+trait BindingsPerObject extends StObject {
   
   var bindingsPerObject: Double = js.native
   
@@ -20,24 +21,12 @@ object BindingsPerObject {
   }
   
   @scala.inline
-  implicit class BindingsPerObjectOps[Self <: BindingsPerObject] (val x: Self) extends AnyVal {
+  implicit class BindingsPerObjectMutableBuilder[Self <: BindingsPerObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindingsPerObject(value: Double): Self = StObject.set(x, "bindingsPerObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBindingsPerObject(value: Double): Self = this.set("bindingsPerObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjects(value: InUse): Self = this.set("objects", value.asInstanceOf[js.Any])
+    def setObjects(value: InUse): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
   }
 }

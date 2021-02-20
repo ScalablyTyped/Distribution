@@ -1,12 +1,13 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "NodeNavigator")
 @js.native
-class NodeNavigator protected () extends js.Object {
+class NodeNavigator protected () extends StObject {
   def this(other: NodeNavigator) = this()
   def this(sourceFile: SourceFile) = this()
   

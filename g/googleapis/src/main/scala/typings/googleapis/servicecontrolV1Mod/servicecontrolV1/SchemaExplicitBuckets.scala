@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describing buckets with arbitrary user-provided width.
   */
 @js.native
-trait SchemaExplicitBuckets extends js.Object {
+trait SchemaExplicitBuckets extends StObject {
   
   /**
     * &#39;bound&#39; is a list of strictly increasing boundaries between
@@ -34,27 +35,15 @@ object SchemaExplicitBuckets {
   }
   
   @scala.inline
-  implicit class SchemaExplicitBucketsOps[Self <: SchemaExplicitBuckets] (val x: Self) extends AnyVal {
+  implicit class SchemaExplicitBucketsMutableBuilder[Self <: SchemaExplicitBuckets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBoundsVarargs(value: Double*): Self = this.set("bounds", js.Array(value :_*))
-    
-    @scala.inline
-    def setBounds(value: js.Array[Double]): Self = this.set("bounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
   }
 }

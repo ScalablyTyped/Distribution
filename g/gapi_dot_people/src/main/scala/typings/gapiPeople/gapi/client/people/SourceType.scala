@@ -1,5 +1,6 @@
 package typings.gapiPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gapiPeople.gapiPeopleStrings.DOMAIN_PROFILE
   - typings.gapiPeople.gapiPeopleStrings.CONTACT
 */
-trait SourceType extends js.Object
+trait SourceType extends StObject
 object SourceType {
   
   @scala.inline

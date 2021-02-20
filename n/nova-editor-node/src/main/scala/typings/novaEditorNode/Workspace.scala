@@ -4,13 +4,14 @@ import typings.novaEditorNode.anon.AllowDirectories
 import typings.novaEditorNode.anon.Buttons
 import typings.novaEditorNode.anon.Label
 import typings.novaEditorNode.anon.Placeholder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/workspace/
 @js.native
-trait Workspace extends js.Object {
+trait Workspace extends StObject {
   
   val activeTextEditor: TextEditor = js.native
   

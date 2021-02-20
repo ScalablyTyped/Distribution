@@ -1,11 +1,12 @@
 package typings.bootstrapNotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
   
   def notify(message: String): NotifyReturn = js.native
   def notify(opts: NotifyOptions): NotifyReturn = js.native

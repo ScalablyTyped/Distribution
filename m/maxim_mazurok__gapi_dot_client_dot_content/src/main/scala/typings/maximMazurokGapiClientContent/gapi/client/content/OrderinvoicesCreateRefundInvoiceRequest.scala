@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderinvoicesCreateRefundInvoiceRequest extends js.Object {
+trait OrderinvoicesCreateRefundInvoiceRequest extends StObject {
   
   /** [required] The ID of the invoice. */
   var invoiceId: js.UndefOr[String] = js.native
@@ -31,51 +32,39 @@ object OrderinvoicesCreateRefundInvoiceRequest {
   }
   
   @scala.inline
-  implicit class OrderinvoicesCreateRefundInvoiceRequestOps[Self <: OrderinvoicesCreateRefundInvoiceRequest] (val x: Self) extends AnyVal {
+  implicit class OrderinvoicesCreateRefundInvoiceRequestMutableBuilder[Self <: OrderinvoicesCreateRefundInvoiceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoiceId(value: String): Self = this.set("invoiceId", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def deleteInvoiceId: Self = this.set("invoiceId", js.undefined)
+    def setRefundOnlyOption(value: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption): Self = StObject.set(x, "refundOnlyOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setRefundOnlyOptionUndefined: Self = StObject.set(x, "refundOnlyOption", js.undefined)
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    def setReturnOption(value: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption): Self = StObject.set(x, "returnOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefundOnlyOption(value: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption): Self = this.set("refundOnlyOption", value.asInstanceOf[js.Any])
+    def setReturnOptionUndefined: Self = StObject.set(x, "returnOption", js.undefined)
     
     @scala.inline
-    def deleteRefundOnlyOption: Self = this.set("refundOnlyOption", js.undefined)
+    def setShipmentInvoices(value: js.Array[ShipmentInvoice]): Self = StObject.set(x, "shipmentInvoices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnOption(value: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption): Self = this.set("returnOption", value.asInstanceOf[js.Any])
+    def setShipmentInvoicesUndefined: Self = StObject.set(x, "shipmentInvoices", js.undefined)
     
     @scala.inline
-    def deleteReturnOption: Self = this.set("returnOption", js.undefined)
-    
-    @scala.inline
-    def setShipmentInvoicesVarargs(value: ShipmentInvoice*): Self = this.set("shipmentInvoices", js.Array(value :_*))
-    
-    @scala.inline
-    def setShipmentInvoices(value: js.Array[ShipmentInvoice]): Self = this.set("shipmentInvoices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipmentInvoices: Self = this.set("shipmentInvoices", js.undefined)
+    def setShipmentInvoicesVarargs(value: ShipmentInvoice*): Self = StObject.set(x, "shipmentInvoices", js.Array(value :_*))
   }
 }

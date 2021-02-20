@@ -2,14 +2,14 @@ package typings.samchon
 
 import typings.samchon.iexternalserverMod.IExternalServer
 import typings.samchon.iexternalserverarrayMod.IExternalServerArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/external/derived/ExternalServerArray", JSImport.Namespace)
-@js.native
-object externalServerArrayMod extends js.Object {
+object externalServerArrayMod {
   
+  @JSImport("samchon/templates/external/derived/ExternalServerArray", "ExternalServerArray")
   @js.native
   /**
     * Default Constructor.

@@ -1,11 +1,12 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaybeRevisionedDocument extends js.Object {
+trait MaybeRevisionedDocument extends StObject {
   
   var _rev: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object MaybeRevisionedDocument {
   }
   
   @scala.inline
-  implicit class MaybeRevisionedDocumentOps[Self <: MaybeRevisionedDocument] (val x: Self) extends AnyVal {
+  implicit class MaybeRevisionedDocumentMutableBuilder[Self <: MaybeRevisionedDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_rev(value: String): Self = this.set("_rev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_rev: Self = this.set("_rev", js.undefined)
+    def set_revUndefined: Self = StObject.set(x, "_rev", js.undefined)
   }
 }

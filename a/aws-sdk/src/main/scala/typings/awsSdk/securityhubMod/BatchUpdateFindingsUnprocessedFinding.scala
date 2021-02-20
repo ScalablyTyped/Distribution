@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchUpdateFindingsUnprocessedFinding extends js.Object {
+trait BatchUpdateFindingsUnprocessedFinding extends StObject {
   
   /**
     * The code associated with the error.
@@ -35,27 +36,15 @@ object BatchUpdateFindingsUnprocessedFinding {
   }
   
   @scala.inline
-  implicit class BatchUpdateFindingsUnprocessedFindingOps[Self <: BatchUpdateFindingsUnprocessedFinding] (val x: Self) extends AnyVal {
+  implicit class BatchUpdateFindingsUnprocessedFindingMutableBuilder[Self <: BatchUpdateFindingsUnprocessedFinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: NonEmptyString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessage(value: NonEmptyString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrorCode(value: NonEmptyString): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorMessage(value: NonEmptyString): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFindingIdentifier(value: AwsSecurityFindingIdentifier): Self = this.set("FindingIdentifier", value.asInstanceOf[js.Any])
+    def setFindingIdentifier(value: AwsSecurityFindingIdentifier): Self = StObject.set(x, "FindingIdentifier", value.asInstanceOf[js.Any])
   }
 }

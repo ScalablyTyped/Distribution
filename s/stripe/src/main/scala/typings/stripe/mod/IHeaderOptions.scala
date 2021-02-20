@@ -1,11 +1,12 @@
 package typings.stripe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHeaderOptions extends js.Object {
+trait IHeaderOptions extends StObject {
   
   var api_key: js.UndefOr[String] = js.native
   
@@ -43,45 +44,33 @@ object IHeaderOptions {
   }
   
   @scala.inline
-  implicit class IHeaderOptionsOps[Self <: IHeaderOptions] (val x: Self) extends AnyVal {
+  implicit class IHeaderOptionsMutableBuilder[Self <: IHeaderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApi_keyUndefined: Self = StObject.set(x, "api_key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi_key(value: String): Self = this.set("api_key", value.asInstanceOf[js.Any])
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteApi_key: Self = this.set("api_key", js.undefined)
+    def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
     
     @scala.inline
-    def setExpandVarargs(value: String*): Self = this.set("expand", js.Array(value :_*))
+    def setIdempotency_key(value: String): Self = StObject.set(x, "idempotency_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: js.Array[String]): Self = this.set("expand", value.asInstanceOf[js.Any])
+    def setIdempotency_keyUndefined: Self = StObject.set(x, "idempotency_key", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setStripe_account(value: String): Self = StObject.set(x, "stripe_account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdempotency_key(value: String): Self = this.set("idempotency_key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdempotency_key: Self = this.set("idempotency_key", js.undefined)
-    
-    @scala.inline
-    def setStripe_account(value: String): Self = this.set("stripe_account", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripe_account: Self = this.set("stripe_account", js.undefined)
+    def setStripe_accountUndefined: Self = StObject.set(x, "stripe_account", js.undefined)
   }
 }

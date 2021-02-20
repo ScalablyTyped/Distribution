@@ -1,11 +1,12 @@
 package typings.awsSdk.serverlessapplicationrepositoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCloudFormationChangeSetResponse extends js.Object {
+trait CreateCloudFormationChangeSetResponse extends StObject {
   
   /**
     * The application Amazon Resource Name (ARN).
@@ -38,42 +39,30 @@ object CreateCloudFormationChangeSetResponse {
   }
   
   @scala.inline
-  implicit class CreateCloudFormationChangeSetResponseOps[Self <: CreateCloudFormationChangeSetResponse] (val x: Self) extends AnyVal {
+  implicit class CreateCloudFormationChangeSetResponseMutableBuilder[Self <: CreateCloudFormationChangeSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeSetId(value: string): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSetId(value: string): Self = this.set("ChangeSetId", value.asInstanceOf[js.Any])
+    def setSemanticVersionUndefined: Self = StObject.set(x, "SemanticVersion", js.undefined)
     
     @scala.inline
-    def deleteChangeSetId: Self = this.set("ChangeSetId", js.undefined)
+    def setStackId(value: string): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemanticVersion(value: string): Self = this.set("SemanticVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSemanticVersion: Self = this.set("SemanticVersion", js.undefined)
-    
-    @scala.inline
-    def setStackId(value: string): Self = this.set("StackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

@@ -36,13 +36,14 @@ import typings.rbx.rbxStrings.top
 import typings.rbx.rbxStrings.uppercase
 import typings.rbx.rbxStrings.warning
 import typings.rbx.rbxStrings.white
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<rbx.rbx/base/helpers/badge.BadgeHelpersProps & rbx.rbx/base/helpers/float.FloatHelpersProps & rbx.rbx/base/helpers/overflow.OverflowHelpersProps & rbx.rbx/base/helpers/overlay.OverlayHelpersProps & rbx.rbx/base/helpers/tooltip.TooltipHelpersProps & rbx.rbx/base/helpers/typography.TypographyHelpersProps & rbx.rbx/base/helpers/visibility.VisibilityHelpersProps & rbx.rbx/base/helpers/other.OtherHelpersProps & rbx.rbx/base/helpers/responsive.ResponsiveHelpersProps & {  className :string | undefined}, 'hidden' | 'overlay' | 'italic' | 'relative' | 'tooltip' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly'> */
 @js.native
-trait PickBadgeHelpersPropsFloaBackgroundColor extends js.Object {
+trait PickBadgeHelpersPropsFloaBackgroundColor extends StObject {
   
   var backgroundColor: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -135,226 +136,214 @@ object PickBadgeHelpersPropsFloaBackgroundColor {
   }
   
   @scala.inline
-  implicit class PickBadgeHelpersPropsFloaBackgroundColorOps[Self <: PickBadgeHelpersPropsFloaBackgroundColor] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class PickBadgeHelpersPropsFloaBackgroundColorMutableBuilder[Self <: PickBadgeHelpersPropsFloaBackgroundColor] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBackgroundColor(
       value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-    ): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def setBadge(value: Double | String): Self = this.set("badge", value.asInstanceOf[js.Any])
+    def setBadge(value: Double | String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBadge: Self = this.set("badge", js.undefined)
+    def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = this.set("badgeColor", value.asInstanceOf[js.Any])
+    def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
     
     @scala.inline
-    def deleteBadgeColor: Self = this.set("badgeColor", js.undefined)
+    def setBadgeOutlined(value: Boolean): Self = StObject.set(x, "badgeOutlined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeOutlined(value: Boolean): Self = this.set("badgeOutlined", value.asInstanceOf[js.Any])
+    def setBadgeOutlinedUndefined: Self = StObject.set(x, "badgeOutlined", js.undefined)
     
     @scala.inline
-    def deleteBadgeOutlined: Self = this.set("badgeOutlined", js.undefined)
+    def setBadgeRounded(value: Boolean): Self = StObject.set(x, "badgeRounded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeRounded(value: Boolean): Self = this.set("badgeRounded", value.asInstanceOf[js.Any])
+    def setBadgeRoundedUndefined: Self = StObject.set(x, "badgeRounded", js.undefined)
     
     @scala.inline
-    def deleteBadgeRounded: Self = this.set("badgeRounded", js.undefined)
+    def setBadgeSize(value: small | medium | large): Self = StObject.set(x, "badgeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeSize(value: small | medium | large): Self = this.set("badgeSize", value.asInstanceOf[js.Any])
+    def setBadgeSizeUndefined: Self = StObject.set(x, "badgeSize", js.undefined)
     
     @scala.inline
-    def deleteBadgeSize: Self = this.set("badgeSize", js.undefined)
+    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setClearfix(value: Boolean): Self = this.set("clearfix", value.asInstanceOf[js.Any])
+    def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClearfix: Self = this.set("clearfix", js.undefined)
+    def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
     
     @scala.inline
-    def setClipped(value: Boolean): Self = this.set("clipped", value.asInstanceOf[js.Any])
+    def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClipped: Self = this.set("clipped", js.undefined)
+    def setClippedUndefined: Self = StObject.set(x, "clipped", js.undefined)
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def setInvisible(value: Boolean): Self = this.set("invisible", value.asInstanceOf[js.Any])
+    def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvisible: Self = this.set("invisible", js.undefined)
+    def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
     
     @scala.inline
-    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItalic: Self = this.set("italic", js.undefined)
+    def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
     
     @scala.inline
-    def setMarginless(value: Boolean): Self = this.set("marginless", value.asInstanceOf[js.Any])
+    def setMarginless(value: Boolean): Self = StObject.set(x, "marginless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginless: Self = this.set("marginless", js.undefined)
+    def setMarginlessUndefined: Self = StObject.set(x, "marginless", js.undefined)
     
     @scala.inline
-    def setOverlay(value: Boolean): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     @scala.inline
-    def setPaddingless(value: Boolean): Self = this.set("paddingless", value.asInstanceOf[js.Any])
+    def setPaddingless(value: Boolean): Self = StObject.set(x, "paddingless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingless: Self = this.set("paddingless", js.undefined)
+    def setPaddinglessUndefined: Self = StObject.set(x, "paddingless", js.undefined)
     
     @scala.inline
-    def setPull(value: left | right): Self = this.set("pull", value.asInstanceOf[js.Any])
+    def setPull(value: left | right): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePull: Self = this.set("pull", js.undefined)
+    def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
     
     @scala.inline
-    def setRadiusless(value: Boolean): Self = this.set("radiusless", value.asInstanceOf[js.Any])
+    def setRadiusless(value: Boolean): Self = StObject.set(x, "radiusless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadiusless: Self = this.set("radiusless", js.undefined)
+    def setRadiuslessUndefined: Self = StObject.set(x, "radiusless", js.undefined)
     
     @scala.inline
-    def setRelative(value: Boolean): Self = this.set("relative", value.asInstanceOf[js.Any])
+    def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelative: Self = this.set("relative", js.undefined)
+    def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
     
     @scala.inline
-    def setResponsive(value: typings.rbx.rbxStrings.PickBadgeHelpersPropsFloaBackgroundColor with TopLevel[js.Any]): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    def setResponsive(value: typings.rbx.rbxStrings.PickBadgeHelpersPropsFloaBackgroundColor with TopLevel[js.Any]): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
     @scala.inline
-    def setShadowless(value: Boolean): Self = this.set("shadowless", value.asInstanceOf[js.Any])
+    def setShadowless(value: Boolean): Self = StObject.set(x, "shadowless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShadowless: Self = this.set("shadowless", js.undefined)
+    def setShadowlessUndefined: Self = StObject.set(x, "shadowless", js.undefined)
     
     @scala.inline
-    def setSrOnly(value: Boolean): Self = this.set("srOnly", value.asInstanceOf[js.Any])
+    def setSrOnly(value: Boolean): Self = StObject.set(x, "srOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSrOnly: Self = this.set("srOnly", js.undefined)
+    def setSrOnlyUndefined: Self = StObject.set(x, "srOnly", js.undefined)
     
     @scala.inline
-    def setTextAlign(value: centered | justified | left | right): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    def setTextAlign(value: centered | justified | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     @scala.inline
     def setTextColor(
       value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-    ): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     @scala.inline
     def setTextSize(
       value: typings.rbx.rbxNumbers.`1` | typings.rbx.rbxNumbers.`2` | typings.rbx.rbxNumbers.`3` | typings.rbx.rbxNumbers.`4` | typings.rbx.rbxNumbers.`5` | typings.rbx.rbxNumbers.`6` | `7`
-    ): Self = this.set("textSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextSize: Self = this.set("textSize", js.undefined)
+    def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
     
     @scala.inline
-    def setTextTransform(value: capitalized | lowercase | uppercase): Self = this.set("textTransform", value.asInstanceOf[js.Any])
+    def setTextTransform(value: capitalized | lowercase | uppercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextTransform: Self = this.set("textTransform", js.undefined)
+    def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
     
     @scala.inline
-    def setTextWeight(value: light | medium | normal | semibold | bold): Self = this.set("textWeight", value.asInstanceOf[js.Any])
+    def setTextWeight(value: light | medium | normal | semibold | bold): Self = StObject.set(x, "textWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextWeight: Self = this.set("textWeight", js.undefined)
+    def setTextWeightUndefined: Self = StObject.set(x, "textWeight", js.undefined)
     
     @scala.inline
-    def setTooltip(value: Double | String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTooltip(value: Double | String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipActive(value: Boolean): Self = StObject.set(x, "tooltipActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipActive(value: Boolean): Self = this.set("tooltipActive", value.asInstanceOf[js.Any])
+    def setTooltipActiveUndefined: Self = StObject.set(x, "tooltipActive", js.undefined)
     
     @scala.inline
-    def deleteTooltipActive: Self = this.set("tooltipActive", js.undefined)
+    def setTooltipColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "tooltipColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = this.set("tooltipColor", value.asInstanceOf[js.Any])
+    def setTooltipColorUndefined: Self = StObject.set(x, "tooltipColor", js.undefined)
     
     @scala.inline
-    def deleteTooltipColor: Self = this.set("tooltipColor", js.undefined)
+    def setTooltipMultiline(value: Boolean): Self = StObject.set(x, "tooltipMultiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipMultiline(value: Boolean): Self = this.set("tooltipMultiline", value.asInstanceOf[js.Any])
+    def setTooltipMultilineUndefined: Self = StObject.set(x, "tooltipMultiline", js.undefined)
     
     @scala.inline
-    def deleteTooltipMultiline: Self = this.set("tooltipMultiline", js.undefined)
+    def setTooltipPosition(value: top | right | bottom | left): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipPosition(value: top | right | bottom | left): Self = this.set("tooltipPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipPosition: Self = this.set("tooltipPosition", js.undefined)
+    def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
     
     @scala.inline
     def setTooltipResponsive(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
       */ typings.rbx.rbxStrings.PickBadgeHelpersPropsFloaBackgroundColor with TopLevel[js.Any]
-    ): Self = this.set("tooltipResponsive", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltipResponsive: Self = this.set("tooltipResponsive", js.undefined)
+    def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)
     
     @scala.inline
-    def setUnselectable(value: Boolean): Self = this.set("unselectable", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteUnselectable: Self = this.set("unselectable", js.undefined)
+    def setUnselectable(value: Boolean): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
   }
 }

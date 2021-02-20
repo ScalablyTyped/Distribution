@@ -14,12 +14,13 @@ import typings.maximMazurokGapiClientPrivateca.anon.UpdateMask
 import typings.maximMazurokGapiClientPrivateca.anon.UploadType
 import typings.maximMazurokGapiClientPrivateca.anon.Uploadprotocol
 import typings.maximMazurokGapiClientPrivateca.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateAuthoritiesResource extends js.Object {
+trait CertificateAuthoritiesResource extends StObject {
   
   def activate(request: Accesstoken, body: ActivateCertificateAuthorityRequest): Request[Operation] = js.native
   /**

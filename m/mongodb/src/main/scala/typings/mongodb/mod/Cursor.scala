@@ -3,6 +3,8 @@ package typings.mongodb.mod
 import typings.mongodb.anon.Transform
 import typings.node.Buffer
 import typings.node.streamMod.Readable
+import typings.node.streamMod.ReadableOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mongodb", "Cursor")
 @js.native
 class Cursor[T] () extends Readable {
+  def this(opts: ReadableOptions) = this()
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#addCursorFlag */
   def addCursorFlag(flag: String, value: Boolean): Cursor[T] = js.native
@@ -22,7 +25,7 @@ class Cursor[T] () extends Readable {
   
   def bufferedCount(): scala.Double = js.native
   
-   // still returns the same type
+  // still returns the same type
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#close */
   def close(): js.Promise[CursorResult] = js.native
   def close(callback: MongoCallback[CursorResult]): Unit = js.native

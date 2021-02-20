@@ -1,11 +1,12 @@
 package typings.activexLibreoffice.com_.sun.star.script
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventListener extends js.Object {
+trait EventListener extends StObject {
   
   var AddListenerParam: String = js.native
   
@@ -32,33 +33,21 @@ object EventListener {
   }
   
   @scala.inline
-  implicit class EventListenerOps[Self <: EventListener] (val x: Self) extends AnyVal {
+  implicit class EventListenerMutableBuilder[Self <: EventListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddListenerParam(value: String): Self = StObject.set(x, "AddListenerParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllListener(value: XAllListener): Self = StObject.set(x, "AllListener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventMethod(value: String): Self = StObject.set(x, "EventMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddListenerParam(value: String): Self = this.set("AddListenerParam", value.asInstanceOf[js.Any])
+    def setHelper(value: js.Any): Self = StObject.set(x, "Helper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllListener(value: XAllListener): Self = this.set("AllListener", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventMethod(value: String): Self = this.set("EventMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHelper(value: js.Any): Self = this.set("Helper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListenerType(value: String): Self = this.set("ListenerType", value.asInstanceOf[js.Any])
+    def setListenerType(value: String): Self = StObject.set(x, "ListenerType", value.asInstanceOf[js.Any])
   }
 }

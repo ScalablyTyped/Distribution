@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,7 +91,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.screeps.screepsStrings.XZHO2
   - typings.screeps.screepsStrings.KO
 */
-trait ResourceConstantSansEnergy extends js.Object
+trait ResourceConstantSansEnergy extends StObject
 object ResourceConstantSansEnergy {
   
   @scala.inline

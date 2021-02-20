@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoboStartingIntent extends js.Object {
+trait RoboStartingIntent extends StObject {
   
   /** An intent that starts the main launcher activity. */
   var launcherActivity: js.UndefOr[js.Any] = js.native
@@ -25,36 +26,24 @@ object RoboStartingIntent {
   }
   
   @scala.inline
-  implicit class RoboStartingIntentOps[Self <: RoboStartingIntent] (val x: Self) extends AnyVal {
+  implicit class RoboStartingIntentMutableBuilder[Self <: RoboStartingIntent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLauncherActivity(value: js.Any): Self = StObject.set(x, "launcherActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLauncherActivityUndefined: Self = StObject.set(x, "launcherActivity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartActivity(value: StartActivityIntent): Self = StObject.set(x, "startActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLauncherActivity(value: js.Any): Self = this.set("launcherActivity", value.asInstanceOf[js.Any])
+    def setStartActivityUndefined: Self = StObject.set(x, "startActivity", js.undefined)
     
     @scala.inline
-    def deleteLauncherActivity: Self = this.set("launcherActivity", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartActivity(value: StartActivityIntent): Self = this.set("startActivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartActivity: Self = this.set("startActivity", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

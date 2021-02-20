@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.three.mod.PropertyBinding
 import typings.three.propertyBindingMod.ParseTrackNameResults
 import typings.three.propertyBindingMod.PropertyBinding.Composite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

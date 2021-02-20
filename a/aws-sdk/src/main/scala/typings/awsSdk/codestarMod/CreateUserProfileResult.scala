@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateUserProfileResult extends js.Object {
+trait CreateUserProfileResult extends StObject {
   
   /**
     * The date the user profile was created, in timestamp format.
@@ -46,51 +47,39 @@ object CreateUserProfileResult {
   }
   
   @scala.inline
-  implicit class CreateUserProfileResultOps[Self <: CreateUserProfileResult] (val x: Self) extends AnyVal {
+  implicit class CreateUserProfileResultMutableBuilder[Self <: CreateUserProfileResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTimestamp(value: CreatedTimestamp): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "createdTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: UserProfileDisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserArn(value: UserArn): Self = this.set("userArn", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setCreatedTimestamp(value: CreatedTimestamp): Self = this.set("createdTimestamp", value.asInstanceOf[js.Any])
+    def setEmailAddress(value: Email): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("createdTimestamp", js.undefined)
+    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: UserProfileDisplayName): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setLastModifiedTimestamp(value: LastModifiedTimestamp): Self = StObject.set(x, "lastModifiedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setLastModifiedTimestampUndefined: Self = StObject.set(x, "lastModifiedTimestamp", js.undefined)
     
     @scala.inline
-    def setEmailAddress(value: Email): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    def setSshPublicKey(value: SshPublicKey): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
     
     @scala.inline
-    def setLastModifiedTimestamp(value: LastModifiedTimestamp): Self = this.set("lastModifiedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedTimestamp: Self = this.set("lastModifiedTimestamp", js.undefined)
-    
-    @scala.inline
-    def setSshPublicKey(value: SshPublicKey): Self = this.set("sshPublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSshPublicKey: Self = this.set("sshPublicKey", js.undefined)
+    def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
   }
 }

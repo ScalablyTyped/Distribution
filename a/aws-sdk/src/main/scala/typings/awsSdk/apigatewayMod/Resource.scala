@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Resource extends js.Object {
+trait Resource extends StObject {
   
   /**
     * The resource's identifier.
@@ -41,48 +42,36 @@ object Resource {
   }
   
   @scala.inline
-  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    def setPathPart(value: String): Self = StObject.set(x, "pathPart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentId: Self = this.set("parentId", js.undefined)
+    def setPathPartUndefined: Self = StObject.set(x, "pathPart", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setResourceMethods(value: MapOfMethod): Self = StObject.set(x, "resourceMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathPart(value: String): Self = this.set("pathPart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathPart: Self = this.set("pathPart", js.undefined)
-    
-    @scala.inline
-    def setResourceMethods(value: MapOfMethod): Self = this.set("resourceMethods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceMethods: Self = this.set("resourceMethods", js.undefined)
+    def setResourceMethodsUndefined: Self = StObject.set(x, "resourceMethods", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactNativeNavigation.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModalOptions extends js.Object {
+trait ModalOptions extends StObject {
   
   /**
     * Control wether this modal should be dismiss using swipe gesture when the modalPresentationStyle = 'pageSheet'
@@ -22,24 +23,12 @@ object ModalOptions {
   }
   
   @scala.inline
-  implicit class ModalOptionsOps[Self <: ModalOptions] (val x: Self) extends AnyVal {
+  implicit class ModalOptionsMutableBuilder[Self <: ModalOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSwipeToDismiss(value: Boolean): Self = StObject.set(x, "swipeToDismiss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSwipeToDismiss(value: Boolean): Self = this.set("swipeToDismiss", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwipeToDismiss: Self = this.set("swipeToDismiss", js.undefined)
+    def setSwipeToDismissUndefined: Self = StObject.set(x, "swipeToDismiss", js.undefined)
   }
 }

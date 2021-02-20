@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientTagmanager.anon.Fields
 import typings.maximMazurokGapiClientTagmanager.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
 import typings.maximMazurokGapiClientTagmanager.anon.OauthtokenPath
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZonesResource extends js.Object {
+trait ZonesResource extends StObject {
   
   def create(request: Alt, body: Zone): Request[Zone] = js.native
   /** Creates a GTM Zone. */

@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OneDriveConfiguration extends js.Object {
+trait OneDriveConfiguration extends StObject {
   
   /**
     * A Boolean value that specifies whether local groups are disabled (True) or enabled (False). 
@@ -51,60 +52,48 @@ object OneDriveConfiguration {
   }
   
   @scala.inline
-  implicit class OneDriveConfigurationOps[Self <: OneDriveConfiguration] (val x: Self) extends AnyVal {
+  implicit class OneDriveConfigurationMutableBuilder[Self <: OneDriveConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableLocalGroups(value: Boolean): Self = StObject.set(x, "DisableLocalGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableLocalGroupsUndefined: Self = StObject.set(x, "DisableLocalGroups", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = StObject.set(x, "ExclusionPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneDriveUsers(value: OneDriveUsers): Self = this.set("OneDriveUsers", value.asInstanceOf[js.Any])
+    def setExclusionPatternsUndefined: Self = StObject.set(x, "ExclusionPatterns", js.undefined)
     
     @scala.inline
-    def setSecretArn(value: SecretArn): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
+    def setExclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = StObject.set(x, "ExclusionPatterns", js.Array(value :_*))
     
     @scala.inline
-    def setTenantDomain(value: TenantDomain): Self = this.set("TenantDomain", value.asInstanceOf[js.Any])
+    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "FieldMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableLocalGroups(value: Boolean): Self = this.set("DisableLocalGroups", value.asInstanceOf[js.Any])
+    def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
     
     @scala.inline
-    def deleteDisableLocalGroups: Self = this.set("DisableLocalGroups", js.undefined)
+    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
     
     @scala.inline
-    def setExclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("ExclusionPatterns", js.Array(value :_*))
+    def setInclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = StObject.set(x, "InclusionPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("ExclusionPatterns", value.asInstanceOf[js.Any])
+    def setInclusionPatternsUndefined: Self = StObject.set(x, "InclusionPatterns", js.undefined)
     
     @scala.inline
-    def deleteExclusionPatterns: Self = this.set("ExclusionPatterns", js.undefined)
+    def setInclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = StObject.set(x, "InclusionPatterns", js.Array(value :_*))
     
     @scala.inline
-    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = this.set("FieldMappings", js.Array(value :_*))
+    def setOneDriveUsers(value: OneDriveUsers): Self = StObject.set(x, "OneDriveUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = this.set("FieldMappings", value.asInstanceOf[js.Any])
+    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFieldMappings: Self = this.set("FieldMappings", js.undefined)
-    
-    @scala.inline
-    def setInclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("InclusionPatterns", js.Array(value :_*))
-    
-    @scala.inline
-    def setInclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("InclusionPatterns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclusionPatterns: Self = this.set("InclusionPatterns", js.undefined)
+    def setTenantDomain(value: TenantDomain): Self = StObject.set(x, "TenantDomain", value.asInstanceOf[js.Any])
   }
 }

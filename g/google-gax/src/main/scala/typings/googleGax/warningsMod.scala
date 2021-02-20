@@ -1,12 +1,13 @@
 package typings.googleGax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-gax/build/src/warnings", JSImport.Namespace)
-@js.native
-object warningsMod extends js.Object {
+object warningsMod {
+  
+  @JSImport("google-gax/build/src/warnings", "warn")
+  @js.native
   def warn(code: String, message: String): Unit = js.native
 }
-

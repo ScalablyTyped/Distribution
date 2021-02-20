@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.navTypesMod.INavProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class NavBase protected ()
   def this(props: INavProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "NavBase")
-@js.native
-object NavBase extends js.Object {
+object NavBase {
   
-  var defaultProps: INavProps = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "NavBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "NavBase.defaultProps")
+  @js.native
+  def defaultProps: INavProps = js.native
+  @scala.inline
+  def defaultProps_=(x: INavProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

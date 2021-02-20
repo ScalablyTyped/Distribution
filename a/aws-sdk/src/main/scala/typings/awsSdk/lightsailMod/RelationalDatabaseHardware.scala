@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelationalDatabaseHardware extends js.Object {
+trait RelationalDatabaseHardware extends StObject {
   
   /**
     * The number of vCPUs for the database.
@@ -31,36 +32,24 @@ object RelationalDatabaseHardware {
   }
   
   @scala.inline
-  implicit class RelationalDatabaseHardwareOps[Self <: RelationalDatabaseHardware] (val x: Self) extends AnyVal {
+  implicit class RelationalDatabaseHardwareMutableBuilder[Self <: RelationalDatabaseHardware] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpuCount(value: integer): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiskSizeInGb(value: integer): Self = StObject.set(x, "diskSizeInGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuCount(value: integer): Self = this.set("cpuCount", value.asInstanceOf[js.Any])
+    def setDiskSizeInGbUndefined: Self = StObject.set(x, "diskSizeInGb", js.undefined)
     
     @scala.inline
-    def deleteCpuCount: Self = this.set("cpuCount", js.undefined)
+    def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSizeInGb(value: integer): Self = this.set("diskSizeInGb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiskSizeInGb: Self = this.set("diskSizeInGb", js.undefined)
-    
-    @scala.inline
-    def setRamSizeInGb(value: float): Self = this.set("ramSizeInGb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRamSizeInGb: Self = this.set("ramSizeInGb", js.undefined)
+    def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
   }
 }

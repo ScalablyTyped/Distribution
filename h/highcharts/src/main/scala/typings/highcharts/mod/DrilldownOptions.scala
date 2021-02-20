@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrilldownOptions extends js.Object {
+trait DrilldownOptions extends StObject {
   
   /**
     * (Highcharts, Highmaps) Additional styles to apply to the X axis label for
@@ -78,57 +79,45 @@ object DrilldownOptions {
   }
   
   @scala.inline
-  implicit class DrilldownOptionsOps[Self <: DrilldownOptions] (val x: Self) extends AnyVal {
+  implicit class DrilldownOptionsMutableBuilder[Self <: DrilldownOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveAxisLabelStyle(value: CSSObject): Self = StObject.set(x, "activeAxisLabelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveAxisLabelStyleUndefined: Self = StObject.set(x, "activeAxisLabelStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveDataLabelStyle(value: CSSObject | DrilldownActiveDataLabelStyleOptions): Self = StObject.set(x, "activeDataLabelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveAxisLabelStyle(value: CSSObject): Self = this.set("activeAxisLabelStyle", value.asInstanceOf[js.Any])
+    def setActiveDataLabelStyleUndefined: Self = StObject.set(x, "activeDataLabelStyle", js.undefined)
     
     @scala.inline
-    def deleteActiveAxisLabelStyle: Self = this.set("activeAxisLabelStyle", js.undefined)
+    def setAllowPointDrilldown(value: Boolean): Self = StObject.set(x, "allowPointDrilldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDataLabelStyle(value: CSSObject | DrilldownActiveDataLabelStyleOptions): Self = this.set("activeDataLabelStyle", value.asInstanceOf[js.Any])
+    def setAllowPointDrilldownUndefined: Self = StObject.set(x, "allowPointDrilldown", js.undefined)
     
     @scala.inline
-    def deleteActiveDataLabelStyle: Self = this.set("activeDataLabelStyle", js.undefined)
+    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPointDrilldown(value: Boolean): Self = this.set("allowPointDrilldown", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteAllowPointDrilldown: Self = this.set("allowPointDrilldown", js.undefined)
+    def setDrillUpButton(value: DrilldownDrillUpButtonOptions): Self = StObject.set(x, "drillUpButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setDrillUpButtonUndefined: Self = StObject.set(x, "drillUpButton", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setSeries(value: js.Array[SeriesOptionsType]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillUpButton(value: DrilldownDrillUpButtonOptions): Self = this.set("drillUpButton", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteDrillUpButton: Self = this.set("drillUpButton", js.undefined)
-    
-    @scala.inline
-    def setSeriesVarargs(value: SeriesOptionsType*): Self = this.set("series", js.Array(value :_*))
-    
-    @scala.inline
-    def setSeries(value: js.Array[SeriesOptionsType]): Self = this.set("series", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSeriesVarargs(value: SeriesOptionsType*): Self = StObject.set(x, "series", js.Array(value :_*))
   }
 }

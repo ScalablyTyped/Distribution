@@ -6,6 +6,7 @@ import typings.googleapis.anon.FeatureName
 import typings.googleapis.anon.RoleSets
 import typings.googleapis.anon.SizeType
 import typings.googleapis.anon.Targets
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An item with user information and settings.
   */
 @js.native
-trait SchemaAbout extends js.Object {
+trait SchemaAbout extends StObject {
   
   /**
     * Information about supported additional roles per file type. The most
@@ -162,198 +163,186 @@ object SchemaAbout {
   }
   
   @scala.inline
-  implicit class SchemaAboutOps[Self <: SchemaAbout] (val x: Self) extends AnyVal {
+  implicit class SchemaAboutMutableBuilder[Self <: SchemaAbout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalRoleInfo(value: js.Array[RoleSets]): Self = StObject.set(x, "additionalRoleInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalRoleInfoUndefined: Self = StObject.set(x, "additionalRoleInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalRoleInfoVarargs(value: RoleSets*): Self = StObject.set(x, "additionalRoleInfo", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalRoleInfoVarargs(value: RoleSets*): Self = this.set("additionalRoleInfo", js.Array(value :_*))
+    def setCanCreateTeamDrives(value: Boolean): Self = StObject.set(x, "canCreateTeamDrives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalRoleInfo(value: js.Array[RoleSets]): Self = this.set("additionalRoleInfo", value.asInstanceOf[js.Any])
+    def setCanCreateTeamDrivesUndefined: Self = StObject.set(x, "canCreateTeamDrives", js.undefined)
     
     @scala.inline
-    def deleteAdditionalRoleInfo: Self = this.set("additionalRoleInfo", js.undefined)
+    def setDomainSharingPolicy(value: String): Self = StObject.set(x, "domainSharingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanCreateTeamDrives(value: Boolean): Self = this.set("canCreateTeamDrives", value.asInstanceOf[js.Any])
+    def setDomainSharingPolicyUndefined: Self = StObject.set(x, "domainSharingPolicy", js.undefined)
     
     @scala.inline
-    def deleteCanCreateTeamDrives: Self = this.set("canCreateTeamDrives", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainSharingPolicy(value: String): Self = this.set("domainSharingPolicy", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDomainSharingPolicy: Self = this.set("domainSharingPolicy", js.undefined)
+    def setExportFormats(value: js.Array[Targets]): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setExportFormatsUndefined: Self = StObject.set(x, "exportFormats", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setExportFormatsVarargs(value: Targets*): Self = StObject.set(x, "exportFormats", js.Array(value :_*))
     
     @scala.inline
-    def setExportFormatsVarargs(value: Targets*): Self = this.set("exportFormats", js.Array(value :_*))
+    def setFeatures(value: js.Array[FeatureName]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportFormats(value: js.Array[Targets]): Self = this.set("exportFormats", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteExportFormats: Self = this.set("exportFormats", js.undefined)
+    def setFeaturesVarargs(value: FeatureName*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: FeatureName*): Self = this.set("features", js.Array(value :_*))
+    def setFolderColorPalette(value: js.Array[String]): Self = StObject.set(x, "folderColorPalette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[FeatureName]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setFolderColorPaletteUndefined: Self = StObject.set(x, "folderColorPalette", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setFolderColorPaletteVarargs(value: String*): Self = StObject.set(x, "folderColorPalette", js.Array(value :_*))
     
     @scala.inline
-    def setFolderColorPaletteVarargs(value: String*): Self = this.set("folderColorPalette", js.Array(value :_*))
+    def setImportFormats(value: js.Array[Targets]): Self = StObject.set(x, "importFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderColorPalette(value: js.Array[String]): Self = this.set("folderColorPalette", value.asInstanceOf[js.Any])
+    def setImportFormatsUndefined: Self = StObject.set(x, "importFormats", js.undefined)
     
     @scala.inline
-    def deleteFolderColorPalette: Self = this.set("folderColorPalette", js.undefined)
+    def setImportFormatsVarargs(value: Targets*): Self = StObject.set(x, "importFormats", js.Array(value :_*))
     
     @scala.inline
-    def setImportFormatsVarargs(value: Targets*): Self = this.set("importFormats", js.Array(value :_*))
+    def setIsCurrentAppInstalled(value: Boolean): Self = StObject.set(x, "isCurrentAppInstalled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportFormats(value: js.Array[Targets]): Self = this.set("importFormats", value.asInstanceOf[js.Any])
+    def setIsCurrentAppInstalledUndefined: Self = StObject.set(x, "isCurrentAppInstalled", js.undefined)
     
     @scala.inline
-    def deleteImportFormats: Self = this.set("importFormats", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCurrentAppInstalled(value: Boolean): Self = this.set("isCurrentAppInstalled", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIsCurrentAppInstalled: Self = this.set("isCurrentAppInstalled", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLargestChangeId(value: String): Self = StObject.set(x, "largestChangeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setLargestChangeIdUndefined: Self = StObject.set(x, "largestChangeId", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setMaxUploadSizes(value: js.Array[SizeType]): Self = StObject.set(x, "maxUploadSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLargestChangeId(value: String): Self = this.set("largestChangeId", value.asInstanceOf[js.Any])
+    def setMaxUploadSizesUndefined: Self = StObject.set(x, "maxUploadSizes", js.undefined)
     
     @scala.inline
-    def deleteLargestChangeId: Self = this.set("largestChangeId", js.undefined)
+    def setMaxUploadSizesVarargs(value: SizeType*): Self = StObject.set(x, "maxUploadSizes", js.Array(value :_*))
     
     @scala.inline
-    def setMaxUploadSizesVarargs(value: SizeType*): Self = this.set("maxUploadSizes", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxUploadSizes(value: js.Array[SizeType]): Self = this.set("maxUploadSizes", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaxUploadSizes: Self = this.set("maxUploadSizes", js.undefined)
+    def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setQuotaBytesByService(value: js.Array[BytesUsed]): Self = StObject.set(x, "quotaBytesByService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionId(value: String): Self = this.set("permissionId", value.asInstanceOf[js.Any])
+    def setQuotaBytesByServiceUndefined: Self = StObject.set(x, "quotaBytesByService", js.undefined)
     
     @scala.inline
-    def deletePermissionId: Self = this.set("permissionId", js.undefined)
+    def setQuotaBytesByServiceVarargs(value: BytesUsed*): Self = StObject.set(x, "quotaBytesByService", js.Array(value :_*))
     
     @scala.inline
-    def setQuotaBytesByServiceVarargs(value: BytesUsed*): Self = this.set("quotaBytesByService", js.Array(value :_*))
+    def setQuotaBytesTotal(value: String): Self = StObject.set(x, "quotaBytesTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaBytesByService(value: js.Array[BytesUsed]): Self = this.set("quotaBytesByService", value.asInstanceOf[js.Any])
+    def setQuotaBytesTotalUndefined: Self = StObject.set(x, "quotaBytesTotal", js.undefined)
     
     @scala.inline
-    def deleteQuotaBytesByService: Self = this.set("quotaBytesByService", js.undefined)
+    def setQuotaBytesUsed(value: String): Self = StObject.set(x, "quotaBytesUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaBytesTotal(value: String): Self = this.set("quotaBytesTotal", value.asInstanceOf[js.Any])
+    def setQuotaBytesUsedAggregate(value: String): Self = StObject.set(x, "quotaBytesUsedAggregate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuotaBytesTotal: Self = this.set("quotaBytesTotal", js.undefined)
+    def setQuotaBytesUsedAggregateUndefined: Self = StObject.set(x, "quotaBytesUsedAggregate", js.undefined)
     
     @scala.inline
-    def setQuotaBytesUsed(value: String): Self = this.set("quotaBytesUsed", value.asInstanceOf[js.Any])
+    def setQuotaBytesUsedInTrash(value: String): Self = StObject.set(x, "quotaBytesUsedInTrash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuotaBytesUsed: Self = this.set("quotaBytesUsed", js.undefined)
+    def setQuotaBytesUsedInTrashUndefined: Self = StObject.set(x, "quotaBytesUsedInTrash", js.undefined)
     
     @scala.inline
-    def setQuotaBytesUsedAggregate(value: String): Self = this.set("quotaBytesUsedAggregate", value.asInstanceOf[js.Any])
+    def setQuotaBytesUsedUndefined: Self = StObject.set(x, "quotaBytesUsed", js.undefined)
     
     @scala.inline
-    def deleteQuotaBytesUsedAggregate: Self = this.set("quotaBytesUsedAggregate", js.undefined)
+    def setQuotaType(value: String): Self = StObject.set(x, "quotaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaBytesUsedInTrash(value: String): Self = this.set("quotaBytesUsedInTrash", value.asInstanceOf[js.Any])
+    def setQuotaTypeUndefined: Self = StObject.set(x, "quotaType", js.undefined)
     
     @scala.inline
-    def deleteQuotaBytesUsedInTrash: Self = this.set("quotaBytesUsedInTrash", js.undefined)
+    def setRemainingChangeIds(value: String): Self = StObject.set(x, "remainingChangeIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaType(value: String): Self = this.set("quotaType", value.asInstanceOf[js.Any])
+    def setRemainingChangeIdsUndefined: Self = StObject.set(x, "remainingChangeIds", js.undefined)
     
     @scala.inline
-    def deleteQuotaType: Self = this.set("quotaType", js.undefined)
+    def setRootFolderId(value: String): Self = StObject.set(x, "rootFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemainingChangeIds(value: String): Self = this.set("remainingChangeIds", value.asInstanceOf[js.Any])
+    def setRootFolderIdUndefined: Self = StObject.set(x, "rootFolderId", js.undefined)
     
     @scala.inline
-    def deleteRemainingChangeIds: Self = this.set("remainingChangeIds", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootFolderId(value: String): Self = this.set("rootFolderId", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteRootFolderId: Self = this.set("rootFolderId", js.undefined)
+    def setTeamDriveThemes(value: js.Array[BackgroundImageLink]): Self = StObject.set(x, "teamDriveThemes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setTeamDriveThemesUndefined: Self = StObject.set(x, "teamDriveThemes", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setTeamDriveThemesVarargs(value: BackgroundImageLink*): Self = StObject.set(x, "teamDriveThemes", js.Array(value :_*))
     
     @scala.inline
-    def setTeamDriveThemesVarargs(value: BackgroundImageLink*): Self = this.set("teamDriveThemes", js.Array(value :_*))
+    def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamDriveThemes(value: js.Array[BackgroundImageLink]): Self = this.set("teamDriveThemes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeamDriveThemes: Self = this.set("teamDriveThemes", js.undefined)
-    
-    @scala.inline
-    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

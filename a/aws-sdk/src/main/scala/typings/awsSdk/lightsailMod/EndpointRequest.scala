@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointRequest extends js.Object {
+trait EndpointRequest extends StObject {
   
   /**
     * The name of the container for the endpoint.
@@ -31,30 +32,18 @@ object EndpointRequest {
   }
   
   @scala.inline
-  implicit class EndpointRequestOps[Self <: EndpointRequest] (val x: Self) extends AnyVal {
+  implicit class EndpointRequestMutableBuilder[Self <: EndpointRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerPort(value: integer): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthCheck(value: ContainerServiceHealthCheckConfig): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContainerPort(value: integer): Self = this.set("containerPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHealthCheck(value: ContainerServiceHealthCheckConfig): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
+    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
   }
 }

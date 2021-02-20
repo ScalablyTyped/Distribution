@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersionData extends js.Object {
+trait VersionData extends StObject {
   
   var docker: js.UndefOr[String] = js.native
   
@@ -77,198 +78,186 @@ object VersionData {
   }
   
   @scala.inline
-  implicit class VersionDataOps[Self <: VersionData] (val x: Self) extends AnyVal {
+  implicit class VersionDataMutableBuilder[Self <: VersionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocker(value: String): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDockerUndefined: Self = StObject.set(x, "docker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDotnet(value: String): Self = StObject.set(x, "dotnet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocker(value: String): Self = this.set("docker", value.asInstanceOf[js.Any])
+    def setDotnetUndefined: Self = StObject.set(x, "dotnet", js.undefined)
     
     @scala.inline
-    def deleteDocker: Self = this.set("docker", js.undefined)
+    def setGcc(value: String): Self = StObject.set(x, "gcc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotnet(value: String): Self = this.set("dotnet", value.asInstanceOf[js.Any])
+    def setGccUndefined: Self = StObject.set(x, "gcc", js.undefined)
     
     @scala.inline
-    def deleteDotnet: Self = this.set("dotnet", js.undefined)
+    def setGit(value: String): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcc(value: String): Self = this.set("gcc", value.asInstanceOf[js.Any])
+    def setGitUndefined: Self = StObject.set(x, "git", js.undefined)
     
     @scala.inline
-    def deleteGcc: Self = this.set("gcc", js.undefined)
+    def setGrunt(value: String): Self = StObject.set(x, "grunt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGit(value: String): Self = this.set("git", value.asInstanceOf[js.Any])
+    def setGruntUndefined: Self = StObject.set(x, "grunt", js.undefined)
     
     @scala.inline
-    def deleteGit: Self = this.set("git", js.undefined)
+    def setGulp(value: String): Self = StObject.set(x, "gulp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrunt(value: String): Self = this.set("grunt", value.asInstanceOf[js.Any])
+    def setGulpUndefined: Self = StObject.set(x, "gulp", js.undefined)
     
     @scala.inline
-    def deleteGrunt: Self = this.set("grunt", js.undefined)
+    def setJava_(value: String): Self = StObject.set(x, "java", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGulp(value: String): Self = this.set("gulp", value.asInstanceOf[js.Any])
+    def setJava_Undefined: Self = StObject.set(x, "java", js.undefined)
     
     @scala.inline
-    def deleteGulp: Self = this.set("gulp", js.undefined)
+    def setKernel(value: String): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJava_(value: String): Self = this.set("java", value.asInstanceOf[js.Any])
+    def setKernelUndefined: Self = StObject.set(x, "kernel", js.undefined)
     
     @scala.inline
-    def deleteJava_ : Self = this.set("java", js.undefined)
+    def setMongodb(value: String): Self = StObject.set(x, "mongodb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernel(value: String): Self = this.set("kernel", value.asInstanceOf[js.Any])
+    def setMongodbUndefined: Self = StObject.set(x, "mongodb", js.undefined)
     
     @scala.inline
-    def deleteKernel: Self = this.set("kernel", js.undefined)
+    def setMysql(value: String): Self = StObject.set(x, "mysql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMongodb(value: String): Self = this.set("mongodb", value.asInstanceOf[js.Any])
+    def setMysqlUndefined: Self = StObject.set(x, "mysql", js.undefined)
     
     @scala.inline
-    def deleteMongodb: Self = this.set("mongodb", js.undefined)
+    def setNginx(value: String): Self = StObject.set(x, "nginx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMysql(value: String): Self = this.set("mysql", value.asInstanceOf[js.Any])
+    def setNginxUndefined: Self = StObject.set(x, "nginx", js.undefined)
     
     @scala.inline
-    def deleteMysql: Self = this.set("mysql", js.undefined)
+    def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNginx(value: String): Self = this.set("nginx", value.asInstanceOf[js.Any])
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def deleteNginx: Self = this.set("nginx", js.undefined)
+    def setNpm(value: String): Self = StObject.set(x, "npm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: String): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setNpmUndefined: Self = StObject.set(x, "npm", js.undefined)
     
     @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
+    def setOpenssl(value: String): Self = StObject.set(x, "openssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNpm(value: String): Self = this.set("npm", value.asInstanceOf[js.Any])
+    def setOpensslUndefined: Self = StObject.set(x, "openssl", js.undefined)
     
     @scala.inline
-    def deleteNpm: Self = this.set("npm", js.undefined)
+    def setPerl(value: String): Self = StObject.set(x, "perl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenssl(value: String): Self = this.set("openssl", value.asInstanceOf[js.Any])
+    def setPerlUndefined: Self = StObject.set(x, "perl", js.undefined)
     
     @scala.inline
-    def deleteOpenssl: Self = this.set("openssl", js.undefined)
+    def setPhp(value: String): Self = StObject.set(x, "php", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerl(value: String): Self = this.set("perl", value.asInstanceOf[js.Any])
+    def setPhpUndefined: Self = StObject.set(x, "php", js.undefined)
     
     @scala.inline
-    def deletePerl: Self = this.set("perl", js.undefined)
+    def setPip(value: String): Self = StObject.set(x, "pip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhp(value: String): Self = this.set("php", value.asInstanceOf[js.Any])
+    def setPip3(value: String): Self = StObject.set(x, "pip3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhp: Self = this.set("php", js.undefined)
+    def setPip3Undefined: Self = StObject.set(x, "pip3", js.undefined)
     
     @scala.inline
-    def setPip(value: String): Self = this.set("pip", value.asInstanceOf[js.Any])
+    def setPipUndefined: Self = StObject.set(x, "pip", js.undefined)
     
     @scala.inline
-    def deletePip: Self = this.set("pip", js.undefined)
+    def setPm2(value: String): Self = StObject.set(x, "pm2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPip3(value: String): Self = this.set("pip3", value.asInstanceOf[js.Any])
+    def setPm2Undefined: Self = StObject.set(x, "pm2", js.undefined)
     
     @scala.inline
-    def deletePip3: Self = this.set("pip3", js.undefined)
+    def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPm2(value: String): Self = this.set("pm2", value.asInstanceOf[js.Any])
+    def setPostfixUndefined: Self = StObject.set(x, "postfix", js.undefined)
     
     @scala.inline
-    def deletePm2: Self = this.set("pm2", js.undefined)
+    def setPostgresql(value: String): Self = StObject.set(x, "postgresql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostfix(value: String): Self = this.set("postfix", value.asInstanceOf[js.Any])
+    def setPostgresqlUndefined: Self = StObject.set(x, "postgresql", js.undefined)
     
     @scala.inline
-    def deletePostfix: Self = this.set("postfix", js.undefined)
+    def setPython(value: String): Self = StObject.set(x, "python", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostgresql(value: String): Self = this.set("postgresql", value.asInstanceOf[js.Any])
+    def setPython3(value: String): Self = StObject.set(x, "python3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePostgresql: Self = this.set("postgresql", js.undefined)
+    def setPython3Undefined: Self = StObject.set(x, "python3", js.undefined)
     
     @scala.inline
-    def setPython(value: String): Self = this.set("python", value.asInstanceOf[js.Any])
+    def setPythonUndefined: Self = StObject.set(x, "python", js.undefined)
     
     @scala.inline
-    def deletePython: Self = this.set("python", js.undefined)
+    def setRedis(value: String): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPython3(value: String): Self = this.set("python3", value.asInstanceOf[js.Any])
+    def setRedisUndefined: Self = StObject.set(x, "redis", js.undefined)
     
     @scala.inline
-    def deletePython3: Self = this.set("python3", js.undefined)
+    def setSystemOpenssl(value: String): Self = StObject.set(x, "systemOpenssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedis(value: String): Self = this.set("redis", value.asInstanceOf[js.Any])
+    def setSystemOpensslLib(value: String): Self = StObject.set(x, "systemOpensslLib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRedis: Self = this.set("redis", js.undefined)
+    def setSystemOpensslLibUndefined: Self = StObject.set(x, "systemOpensslLib", js.undefined)
     
     @scala.inline
-    def setSystemOpenssl(value: String): Self = this.set("systemOpenssl", value.asInstanceOf[js.Any])
+    def setSystemOpensslUndefined: Self = StObject.set(x, "systemOpenssl", js.undefined)
     
     @scala.inline
-    def deleteSystemOpenssl: Self = this.set("systemOpenssl", js.undefined)
+    def setTsc(value: String): Self = StObject.set(x, "tsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemOpensslLib(value: String): Self = this.set("systemOpensslLib", value.asInstanceOf[js.Any])
+    def setTscUndefined: Self = StObject.set(x, "tsc", js.undefined)
     
     @scala.inline
-    def deleteSystemOpensslLib: Self = this.set("systemOpensslLib", js.undefined)
+    def setV8(value: String): Self = StObject.set(x, "v8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTsc(value: String): Self = this.set("tsc", value.asInstanceOf[js.Any])
+    def setV8Undefined: Self = StObject.set(x, "v8", js.undefined)
     
     @scala.inline
-    def deleteTsc: Self = this.set("tsc", js.undefined)
+    def setVirtualbox(value: String): Self = StObject.set(x, "virtualbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV8(value: String): Self = this.set("v8", value.asInstanceOf[js.Any])
+    def setVirtualboxUndefined: Self = StObject.set(x, "virtualbox", js.undefined)
     
     @scala.inline
-    def deleteV8: Self = this.set("v8", js.undefined)
+    def setYarn(value: String): Self = StObject.set(x, "yarn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualbox(value: String): Self = this.set("virtualbox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualbox: Self = this.set("virtualbox", js.undefined)
-    
-    @scala.inline
-    def setYarn(value: String): Self = this.set("yarn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYarn: Self = this.set("yarn", js.undefined)
+    def setYarnUndefined: Self = StObject.set(x, "yarn", js.undefined)
   }
 }

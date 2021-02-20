@@ -3,6 +3,7 @@ package typings.stellarSdk.mod
 import typings.stellarBase.mod.MemoType
 import typings.stellarBase.mod.TransactionBuilder.TransactionBuilderOptions
 import typings.stellarBase.xdrMod.default.TransactionEnvelope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,10 @@ class TransactionBuilder protected ()
   def this(sourceAccount: typings.stellarBase.mod.Account, options: TransactionBuilderOptions) = this()
 }
 /* static members */
-@JSImport("stellar-sdk", "TransactionBuilder")
-@js.native
-object TransactionBuilder extends js.Object {
+object TransactionBuilder {
   
+  @JSImport("stellar-sdk", "TransactionBuilder.buildFeeBumpTransaction")
+  @js.native
   def buildFeeBumpTransaction(
     feeSource: typings.stellarBase.mod.Keypair,
     baseFee: String,
@@ -29,10 +30,14 @@ object TransactionBuilder extends js.Object {
     networkPassphrase: String
   ): typings.stellarBase.mod.FeeBumpTransaction = js.native
   
+  @JSImport("stellar-sdk", "TransactionBuilder.fromXDR")
+  @js.native
   def fromXDR(envelope: String, networkPassphrase: String): (typings.stellarBase.mod.Transaction[
     typings.stellarBase.mod.Memo[MemoType], 
     js.Array[typings.stellarBase.mod.Operation]
   ]) | typings.stellarBase.mod.FeeBumpTransaction = js.native
+  @JSImport("stellar-sdk", "TransactionBuilder.fromXDR")
+  @js.native
   def fromXDR(envelope: TransactionEnvelope, networkPassphrase: String): (typings.stellarBase.mod.Transaction[
     typings.stellarBase.mod.Memo[MemoType], 
     js.Array[typings.stellarBase.mod.Operation]

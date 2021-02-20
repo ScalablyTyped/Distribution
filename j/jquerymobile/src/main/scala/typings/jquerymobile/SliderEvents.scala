@@ -1,12 +1,13 @@
 package typings.jquerymobile
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SliderEvents extends js.Object {
+trait SliderEvents extends StObject {
   
   var create: js.UndefOr[JQueryMobileEvent] = js.native
   
@@ -23,36 +24,24 @@ object SliderEvents {
   }
   
   @scala.inline
-  implicit class SliderEventsOps[Self <: SliderEvents] (val x: Self) extends AnyVal {
+  implicit class SliderEventsMutableBuilder[Self <: SliderEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSlidestart(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "slidestart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = this.set("create", js.Any.fromFunction2(value))
+    def setSlidestartUndefined: Self = StObject.set(x, "slidestart", js.undefined)
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setSlidestop(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "slidestop", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSlidestart(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = this.set("slidestart", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSlidestart: Self = this.set("slidestart", js.undefined)
-    
-    @scala.inline
-    def setSlidestop(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = this.set("slidestop", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSlidestop: Self = this.set("slidestop", js.undefined)
+    def setSlidestopUndefined: Self = StObject.set(x, "slidestop", js.undefined)
   }
 }

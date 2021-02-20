@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFObjectWindowResultCode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectWindowResult extends js.Object {
+trait IObjectWindowResult extends StObject {
   
   val AccessControlList: IAccessControlList = js.native
   
@@ -39,39 +40,27 @@ object IObjectWindowResult {
   }
   
   @scala.inline
-  implicit class IObjectWindowResultOps[Self <: IObjectWindowResult] (val x: Self) extends AnyVal {
+  implicit class IObjectWindowResultMutableBuilder[Self <: IObjectWindowResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperties(value: IPropertyValues): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
+    def setResult(value: MFObjectWindowResultCode): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjVer(value: IObjVer): Self = this.set("ObjVer", value.asInstanceOf[js.Any])
+    def setSelectedFileClass(value: IFileClass): Self = StObject.set(x, "SelectedFileClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: IPropertyValues): Self = this.set("Properties", value.asInstanceOf[js.Any])
+    def setUseAsDefaults(value: Boolean): Self = StObject.set(x, "UseAsDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: MFObjectWindowResultCode): Self = this.set("Result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedFileClass(value: IFileClass): Self = this.set("SelectedFileClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseAsDefaults(value: Boolean): Self = this.set("UseAsDefaults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

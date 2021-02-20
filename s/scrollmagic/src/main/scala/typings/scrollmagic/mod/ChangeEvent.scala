@@ -2,6 +2,7 @@ package typings.scrollmagic.mod
 
 import typings.scrollmagic.scrollmagicStrings.change
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,24 +33,12 @@ object ChangeEvent {
   }
   
   @scala.inline
-  implicit class ChangeEventOps[Self <: ChangeEvent] (val x: Self) extends AnyVal {
+  implicit class ChangeEventMutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewval(value: js.Any): Self = StObject.set(x, "newval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewval(value: js.Any): Self = this.set("newval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhat(value: String): Self = this.set("what", value.asInstanceOf[js.Any])
+    def setWhat(value: String): Self = StObject.set(x, "what", value.asInstanceOf[js.Any])
   }
 }

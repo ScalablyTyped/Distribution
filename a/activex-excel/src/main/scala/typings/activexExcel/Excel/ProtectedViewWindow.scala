@@ -2,12 +2,13 @@ package typings.activexExcel.Excel
 
 import typings.activexExcel.activexExcelNumbers.`0`
 import typings.activexExcel.activexExcelNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProtectedViewWindow extends js.Object {
+trait ProtectedViewWindow extends StObject {
   
   def Activate(): Unit = js.native
   

@@ -1,13 +1,12 @@
 package typings.recurlyRecurlyJs
 
 import typings.recurlyRecurlyJs.errorMod.RecurlyError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@recurly/recurly-js/lib/pricing/promise", JSImport.Namespace)
-@js.native
-object promiseMod extends js.Object {
+object promiseMod {
   
   @js.native
   trait PricingPromise[T, PricingMethods]

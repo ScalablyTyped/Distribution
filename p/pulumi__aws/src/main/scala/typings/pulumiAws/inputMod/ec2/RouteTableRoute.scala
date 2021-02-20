@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.ec2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteTableRoute extends js.Object {
+trait RouteTableRoute extends StObject {
   
   /**
     * The CIDR block of the route.
@@ -72,84 +73,72 @@ object RouteTableRoute {
   }
   
   @scala.inline
-  implicit class RouteTableRouteOps[Self <: RouteTableRoute] (val x: Self) extends AnyVal {
+  implicit class RouteTableRouteMutableBuilder[Self <: RouteTableRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEgressOnlyGatewayId(value: Input[String]): Self = StObject.set(x, "egressOnlyGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrBlock(value: Input[String]): Self = this.set("cidrBlock", value.asInstanceOf[js.Any])
+    def setEgressOnlyGatewayIdUndefined: Self = StObject.set(x, "egressOnlyGatewayId", js.undefined)
     
     @scala.inline
-    def deleteCidrBlock: Self = this.set("cidrBlock", js.undefined)
+    def setGatewayId(value: Input[String]): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEgressOnlyGatewayId(value: Input[String]): Self = this.set("egressOnlyGatewayId", value.asInstanceOf[js.Any])
+    def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
     
     @scala.inline
-    def deleteEgressOnlyGatewayId: Self = this.set("egressOnlyGatewayId", js.undefined)
+    def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayId(value: Input[String]): Self = this.set("gatewayId", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
     @scala.inline
-    def deleteGatewayId: Self = this.set("gatewayId", js.undefined)
+    def setIpv6CidrBlock(value: Input[String]): Self = StObject.set(x, "ipv6CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: Input[String]): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    def setIpv6CidrBlockUndefined: Self = StObject.set(x, "ipv6CidrBlock", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    def setLocalGatewayId(value: Input[String]): Self = StObject.set(x, "localGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6CidrBlock(value: Input[String]): Self = this.set("ipv6CidrBlock", value.asInstanceOf[js.Any])
+    def setLocalGatewayIdUndefined: Self = StObject.set(x, "localGatewayId", js.undefined)
     
     @scala.inline
-    def deleteIpv6CidrBlock: Self = this.set("ipv6CidrBlock", js.undefined)
+    def setNatGatewayId(value: Input[String]): Self = StObject.set(x, "natGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalGatewayId(value: Input[String]): Self = this.set("localGatewayId", value.asInstanceOf[js.Any])
+    def setNatGatewayIdUndefined: Self = StObject.set(x, "natGatewayId", js.undefined)
     
     @scala.inline
-    def deleteLocalGatewayId: Self = this.set("localGatewayId", js.undefined)
+    def setNetworkInterfaceId(value: Input[String]): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatGatewayId(value: Input[String]): Self = this.set("natGatewayId", value.asInstanceOf[js.Any])
+    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
     
     @scala.inline
-    def deleteNatGatewayId: Self = this.set("natGatewayId", js.undefined)
+    def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaceId(value: Input[String]): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
     
     @scala.inline
-    def deleteNetworkInterfaceId: Self = this.set("networkInterfaceId", js.undefined)
+    def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitGatewayId(value: Input[String]): Self = this.set("transitGatewayId", value.asInstanceOf[js.Any])
+    def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
     
     @scala.inline
-    def deleteTransitGatewayId: Self = this.set("transitGatewayId", js.undefined)
+    def setVpcPeeringConnectionId(value: Input[String]): Self = StObject.set(x, "vpcPeeringConnectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcEndpointId(value: Input[String]): Self = this.set("vpcEndpointId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcEndpointId: Self = this.set("vpcEndpointId", js.undefined)
-    
-    @scala.inline
-    def setVpcPeeringConnectionId(value: Input[String]): Self = this.set("vpcPeeringConnectionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcPeeringConnectionId: Self = this.set("vpcPeeringConnectionId", js.undefined)
+    def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "vpcPeeringConnectionId", js.undefined)
   }
 }

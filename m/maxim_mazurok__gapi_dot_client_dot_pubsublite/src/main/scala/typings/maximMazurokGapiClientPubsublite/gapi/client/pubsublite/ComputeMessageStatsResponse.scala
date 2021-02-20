@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComputeMessageStatsResponse extends js.Object {
+trait ComputeMessageStatsResponse extends StObject {
   
   /** The number of quota bytes accounted to these messages. */
   var messageBytes: js.UndefOr[String] = js.native
@@ -34,42 +35,30 @@ object ComputeMessageStatsResponse {
   }
   
   @scala.inline
-  implicit class ComputeMessageStatsResponseOps[Self <: ComputeMessageStatsResponse] (val x: Self) extends AnyVal {
+  implicit class ComputeMessageStatsResponseMutableBuilder[Self <: ComputeMessageStatsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageBytes(value: String): Self = StObject.set(x, "messageBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageBytesUndefined: Self = StObject.set(x, "messageBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageCount(value: String): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageBytes(value: String): Self = this.set("messageBytes", value.asInstanceOf[js.Any])
+    def setMessageCountUndefined: Self = StObject.set(x, "messageCount", js.undefined)
     
     @scala.inline
-    def deleteMessageBytes: Self = this.set("messageBytes", js.undefined)
+    def setMinimumEventTime(value: String): Self = StObject.set(x, "minimumEventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageCount(value: String): Self = this.set("messageCount", value.asInstanceOf[js.Any])
+    def setMinimumEventTimeUndefined: Self = StObject.set(x, "minimumEventTime", js.undefined)
     
     @scala.inline
-    def deleteMessageCount: Self = this.set("messageCount", js.undefined)
+    def setMinimumPublishTime(value: String): Self = StObject.set(x, "minimumPublishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumEventTime(value: String): Self = this.set("minimumEventTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumEventTime: Self = this.set("minimumEventTime", js.undefined)
-    
-    @scala.inline
-    def setMinimumPublishTime(value: String): Self = this.set("minimumPublishTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumPublishTime: Self = this.set("minimumPublishTime", js.undefined)
+    def setMinimumPublishTimeUndefined: Self = StObject.set(x, "minimumPublishTime", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.chrome.chrome.scriptBadge.AttentionDetails
 import typings.chrome.chrome.scriptBadge.GetPopupDetails
 import typings.chrome.chrome.scriptBadge.ScriptBadgeClickedEvent
 import typings.chrome.chrome.scriptBadge.SetPopupDetails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofscriptBadge extends js.Object {
+trait TypeofscriptBadge extends StObject {
   
   def getAttention(details: AttentionDetails): Unit = js.native
   
@@ -33,30 +34,18 @@ object TypeofscriptBadge {
   }
   
   @scala.inline
-  implicit class TypeofscriptBadgeOps[Self <: TypeofscriptBadge] (val x: Self) extends AnyVal {
+  implicit class TypeofscriptBadgeMutableBuilder[Self <: TypeofscriptBadge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAttention(value: AttentionDetails => Unit): Self = StObject.set(x, "getAttention", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPopup(value: (GetPopupDetails, js.Function) => Unit): Self = StObject.set(x, "getPopup", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnClicked(value: ScriptBadgeClickedEvent): Self = StObject.set(x, "onClicked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAttention(value: AttentionDetails => Unit): Self = this.set("getAttention", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPopup(value: (GetPopupDetails, js.Function) => Unit): Self = this.set("getPopup", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOnClicked(value: ScriptBadgeClickedEvent): Self = this.set("onClicked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetPopup(value: SetPopupDetails => Unit): Self = this.set("setPopup", js.Any.fromFunction1(value))
+    def setSetPopup(value: SetPopupDetails => Unit): Self = StObject.set(x, "setPopup", js.Any.fromFunction1(value))
   }
 }

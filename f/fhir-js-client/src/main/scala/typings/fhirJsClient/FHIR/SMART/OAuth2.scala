@@ -1,5 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SMART on FHIR OAuth2 authorization helper methods and settings
   */
 @js.native
-trait OAuth2 extends js.Object {
+trait OAuth2 extends StObject {
   
   /**
     * Initiate the OAuth2 authorization workflow

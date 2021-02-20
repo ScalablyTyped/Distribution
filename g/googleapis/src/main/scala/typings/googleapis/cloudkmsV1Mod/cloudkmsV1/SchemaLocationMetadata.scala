@@ -1,5 +1,6 @@
 package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Cloud KMS metadata for the given google.cloud.location.Location.
   */
 @js.native
-trait SchemaLocationMetadata extends js.Object {
+trait SchemaLocationMetadata extends StObject {
   
   /**
     * Indicates whether CryptoKeys with protection_level HSM can be created in
@@ -25,24 +26,12 @@ object SchemaLocationMetadata {
   }
   
   @scala.inline
-  implicit class SchemaLocationMetadataOps[Self <: SchemaLocationMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaLocationMetadataMutableBuilder[Self <: SchemaLocationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHsmAvailable(value: Boolean): Self = StObject.set(x, "hsmAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHsmAvailable(value: Boolean): Self = this.set("hsmAvailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHsmAvailable: Self = this.set("hsmAvailable", js.undefined)
+    def setHsmAvailableUndefined: Self = StObject.set(x, "hsmAvailable", js.undefined)
   }
 }

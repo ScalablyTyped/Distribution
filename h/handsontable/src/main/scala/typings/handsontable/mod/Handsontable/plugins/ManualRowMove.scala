@@ -3,6 +3,7 @@ package typings.handsontable.mod.Handsontable.plugins
 import typings.handsontable.mod.Handsontable.plugins.moveUI.BacklightUI
 import typings.handsontable.mod.Handsontable.plugins.moveUI.GuidelineUI
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,42 +60,30 @@ object ManualRowMove {
   }
   
   @scala.inline
-  implicit class ManualRowMoveOps[Self <: ManualRowMove] (val x: Self) extends AnyVal {
+  implicit class ManualRowMoveMutableBuilder[Self <: ManualRowMove] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBacklight(value: BacklightUI): Self = StObject.set(x, "backlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragRow(value: (Double, Double) => Boolean): Self = StObject.set(x, "dragRow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragRows(value: (js.Array[Double], Double) => Boolean): Self = StObject.set(x, "dragRows", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBacklight(value: BacklightUI): Self = this.set("backlight", value.asInstanceOf[js.Any])
+    def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragRow(value: (Double, Double) => Boolean): Self = this.set("dragRow", js.Any.fromFunction2(value))
+    def setGuideline(value: GuidelineUI): Self = StObject.set(x, "guideline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragRows(value: (js.Array[Double], Double) => Boolean): Self = this.set("dragRows", js.Any.fromFunction2(value))
+    def setIsMovePossible(value: (js.Array[Double], Double) => Boolean): Self = StObject.set(x, "isMovePossible", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEventManager(value: EventManager): Self = this.set("eventManager", value.asInstanceOf[js.Any])
+    def setMoveRow(value: (Double, Double) => Boolean): Self = StObject.set(x, "moveRow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGuideline(value: GuidelineUI): Self = this.set("guideline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsMovePossible(value: (js.Array[Double], Double) => Boolean): Self = this.set("isMovePossible", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMoveRow(value: (Double, Double) => Boolean): Self = this.set("moveRow", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMoveRows(value: (js.Array[Double], Double) => Boolean): Self = this.set("moveRows", js.Any.fromFunction2(value))
+    def setMoveRows(value: (js.Array[Double], Double) => Boolean): Self = StObject.set(x, "moveRows", js.Any.fromFunction2(value))
   }
 }

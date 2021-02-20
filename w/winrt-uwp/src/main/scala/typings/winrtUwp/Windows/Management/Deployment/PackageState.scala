@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Management.Deployment
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PackageState extends js.Object
+sealed trait PackageState extends StObject
 /** Represents the state of the package. */
 @JSGlobal("Windows.Management.Deployment.PackageState")
 @js.native
-object PackageState extends js.Object {
+object PackageState extends StObject {
   
   /** The license of the package is not valid. */
   @js.native

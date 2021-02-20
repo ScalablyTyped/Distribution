@@ -1,11 +1,12 @@
 package typings.styledSystemCss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleThemeProperties extends js.Object {
+trait ScaleThemeProperties extends StObject {
   
   /**
     * | Prop        | CSS Property | Theme Field  |
@@ -225,202 +226,190 @@ object ScaleThemeProperties {
   }
   
   @scala.inline
-  implicit class ScaleThemePropertiesOps[Self <: ScaleThemeProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBorderStylesVarargs(value: js.Any*): Self = this.set("borderStyles", js.Array(value :_*))
+  implicit class ScaleThemePropertiesMutableBuilder[Self <: ScaleThemeProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBorderStyles(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ _
         ]
-    ): Self = this.set("borderStyles", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderStyles: Self = this.set("borderStyles", js.undefined)
+    def setBorderStylesUndefined: Self = StObject.set(x, "borderStyles", js.undefined)
     
     @scala.inline
-    def setBorderWidthsVarargs(value: js.Any*): Self = this.set("borderWidths", js.Array(value :_*))
+    def setBorderStylesVarargs(value: js.Any*): Self = StObject.set(x, "borderStyles", js.Array(value :_*))
     
     @scala.inline
     def setBorderWidths(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<{}> */ _
         ]
-    ): Self = this.set("borderWidths", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderWidths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderWidths: Self = this.set("borderWidths", js.undefined)
+    def setBorderWidthsUndefined: Self = StObject.set(x, "borderWidths", js.undefined)
     
     @scala.inline
-    def setBordersVarargs(value: js.Any*): Self = this.set("borders", js.Array(value :_*))
+    def setBorderWidthsVarargs(value: js.Any*): Self = StObject.set(x, "borderWidths", js.Array(value :_*))
     
     @scala.inline
     def setBorders(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ _
         ]
-    ): Self = this.set("borders", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorders: Self = this.set("borders", js.undefined)
+    def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
     @scala.inline
-    def setColorsVarargs(value: js.Any*): Self = this.set("colors", js.Array(value :_*))
+    def setBordersVarargs(value: js.Any*): Self = StObject.set(x, "borders", js.Array(value :_*))
     
     @scala.inline
     def setColors(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ _
         ]
-    ): Self = this.set("colors", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def setFontSizesVarargs(value: js.Any*): Self = this.set("fontSizes", js.Array(value :_*))
+    def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
     def setFontSizes(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ _
         ]
-    ): Self = this.set("fontSizes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSizes: Self = this.set("fontSizes", js.undefined)
+    def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
     
     @scala.inline
-    def setFontWeightsVarargs(value: js.Any*): Self = this.set("fontWeights", js.Array(value :_*))
+    def setFontSizesVarargs(value: js.Any*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
     
     @scala.inline
     def setFontWeights(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _
         ]
-    ): Self = this.set("fontWeights", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontWeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontWeights: Self = this.set("fontWeights", js.undefined)
+    def setFontWeightsUndefined: Self = StObject.set(x, "fontWeights", js.undefined)
     
     @scala.inline
-    def setFontsVarargs(value: js.Any*): Self = this.set("fonts", js.Array(value :_*))
+    def setFontWeightsVarargs(value: js.Any*): Self = StObject.set(x, "fontWeights", js.Array(value :_*))
     
     @scala.inline
     def setFonts(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _
         ]
-    ): Self = this.set("fonts", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFonts: Self = this.set("fonts", js.undefined)
+    def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
     @scala.inline
-    def setLetterSpacingsVarargs(value: js.Any*): Self = this.set("letterSpacings", js.Array(value :_*))
+    def setFontsVarargs(value: js.Any*): Self = StObject.set(x, "fonts", js.Array(value :_*))
     
     @scala.inline
     def setLetterSpacings(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<string | number> */ _
         ]
-    ): Self = this.set("letterSpacings", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "letterSpacings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLetterSpacings: Self = this.set("letterSpacings", js.undefined)
+    def setLetterSpacingsUndefined: Self = StObject.set(x, "letterSpacings", js.undefined)
     
     @scala.inline
-    def setLineHeightsVarargs(value: js.Any*): Self = this.set("lineHeights", js.Array(value :_*))
+    def setLetterSpacingsVarargs(value: js.Any*): Self = StObject.set(x, "letterSpacings", js.Array(value :_*))
     
     @scala.inline
     def setLineHeights(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<string> */ _
         ]
-    ): Self = this.set("lineHeights", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lineHeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineHeights: Self = this.set("lineHeights", js.undefined)
+    def setLineHeightsUndefined: Self = StObject.set(x, "lineHeights", js.undefined)
     
     @scala.inline
-    def setRadiiVarargs(value: js.Any*): Self = this.set("radii", js.Array(value :_*))
+    def setLineHeightsVarargs(value: js.Any*): Self = StObject.set(x, "lineHeights", js.Array(value :_*))
     
     @scala.inline
     def setRadii(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<{}> */ _
         ]
-    ): Self = this.set("radii", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadii: Self = this.set("radii", js.undefined)
+    def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
     
     @scala.inline
-    def setShadowsVarargs(value: js.Any*): Self = this.set("shadows", js.Array(value :_*))
+    def setRadiiVarargs(value: js.Any*): Self = StObject.set(x, "radii", js.Array(value :_*))
     
     @scala.inline
     def setShadows(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _
         ]
-    ): Self = this.set("shadows", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShadows: Self = this.set("shadows", js.undefined)
+    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
     @scala.inline
-    def setSizesVarargs(value: js.Any*): Self = this.set("sizes", js.Array(value :_*))
+    def setShadowsVarargs(value: js.Any*): Self = StObject.set(x, "shadows", js.Array(value :_*))
     
     @scala.inline
     def setSizes(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ _
         ]
-    ): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSizes: Self = this.set("sizes", js.undefined)
+    def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
     @scala.inline
-    def setSpaceVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number> */ js.Any)*
-    ): Self = this.set("space", js.Array(value :_*))
+    def setSizesVarargs(value: js.Any*): Self = StObject.set(x, "sizes", js.Array(value :_*))
     
     @scala.inline
     def setSpace(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number> */ js.Any
         ]
-    ): Self = this.set("space", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpace: Self = this.set("space", js.undefined)
+    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def setZIndicesVarargs(value: js.Any*): Self = this.set("zIndices", js.Array(value :_*))
+    def setSpaceVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number> */ js.Any)*
+    ): Self = StObject.set(x, "space", js.Array(value :_*))
     
     @scala.inline
     def setZIndices(
       value: ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _
         ]
-    ): Self = this.set("zIndices", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "zIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZIndices: Self = this.set("zIndices", js.undefined)
+    def setZIndicesUndefined: Self = StObject.set(x, "zIndices", js.undefined)
+    
+    @scala.inline
+    def setZIndicesVarargs(value: js.Any*): Self = StObject.set(x, "zIndices", js.Array(value :_*))
   }
 }

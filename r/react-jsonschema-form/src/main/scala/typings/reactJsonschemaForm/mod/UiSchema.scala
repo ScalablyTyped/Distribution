@@ -2,6 +2,7 @@ package typings.reactJsonschemaForm.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.StatelessComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,63 +41,51 @@ object UiSchema {
   }
   
   @scala.inline
-  implicit class UiSchemaOps[Self <: UiSchema] (val x: Self) extends AnyVal {
+  implicit class UiSchemaMutableBuilder[Self <: UiSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUiColonArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[_]]): Self = StObject.set(x, "ui:ArrayFieldTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUiColonArrayFieldTemplateUndefined: Self = StObject.set(x, "ui:ArrayFieldTemplate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUiColonFieldTemplate(value: StatelessComponent[FieldTemplateProps]): Self = StObject.set(x, "ui:FieldTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiColonArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[_]]): Self = this.set("ui:ArrayFieldTemplate", value.asInstanceOf[js.Any])
+    def setUiColonFieldTemplateUndefined: Self = StObject.set(x, "ui:FieldTemplate", js.undefined)
     
     @scala.inline
-    def deleteUiColonArrayFieldTemplate: Self = this.set("ui:ArrayFieldTemplate", js.undefined)
+    def setUiColonObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[_]]): Self = StObject.set(x, "ui:ObjectFieldTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiColonFieldTemplate(value: StatelessComponent[FieldTemplateProps]): Self = this.set("ui:FieldTemplate", value.asInstanceOf[js.Any])
+    def setUiColonObjectFieldTemplateUndefined: Self = StObject.set(x, "ui:ObjectFieldTemplate", js.undefined)
     
     @scala.inline
-    def deleteUiColonFieldTemplate: Self = this.set("ui:FieldTemplate", js.undefined)
+    def setUiColonfield(value: Field | String): Self = StObject.set(x, "ui:field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiColonObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[_]]): Self = this.set("ui:ObjectFieldTemplate", value.asInstanceOf[js.Any])
+    def setUiColonfieldUndefined: Self = StObject.set(x, "ui:field", js.undefined)
     
     @scala.inline
-    def deleteUiColonObjectFieldTemplate: Self = this.set("ui:ObjectFieldTemplate", js.undefined)
+    def setUiColonoptions(value: StringDictionary[Boolean | Double | String | js.Object | js.Array[_] | Null]): Self = StObject.set(x, "ui:options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiColonfield(value: Field | String): Self = this.set("ui:field", value.asInstanceOf[js.Any])
+    def setUiColonoptionsUndefined: Self = StObject.set(x, "ui:options", js.undefined)
     
     @scala.inline
-    def deleteUiColonfield: Self = this.set("ui:field", js.undefined)
+    def setUiColonorder(value: js.Array[String]): Self = StObject.set(x, "ui:order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiColonoptions(value: StringDictionary[Boolean | Double | String | js.Object | js.Array[_] | Null]): Self = this.set("ui:options", value.asInstanceOf[js.Any])
+    def setUiColonorderUndefined: Self = StObject.set(x, "ui:order", js.undefined)
     
     @scala.inline
-    def deleteUiColonoptions: Self = this.set("ui:options", js.undefined)
+    def setUiColonorderVarargs(value: String*): Self = StObject.set(x, "ui:order", js.Array(value :_*))
     
     @scala.inline
-    def setUiColonorderVarargs(value: String*): Self = this.set("ui:order", js.Array(value :_*))
+    def setUiColonwidget(value: Widget | String): Self = StObject.set(x, "ui:widget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiColonorder(value: js.Array[String]): Self = this.set("ui:order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUiColonorder: Self = this.set("ui:order", js.undefined)
-    
-    @scala.inline
-    def setUiColonwidget(value: Widget | String): Self = this.set("ui:widget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUiColonwidget: Self = this.set("ui:widget", js.undefined)
+    def setUiColonwidgetUndefined: Self = StObject.set(x, "ui:widget", js.undefined)
   }
 }

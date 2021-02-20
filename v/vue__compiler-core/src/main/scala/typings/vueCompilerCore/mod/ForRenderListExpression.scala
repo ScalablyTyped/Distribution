@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`14`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,24 +30,12 @@ object ForRenderListExpression {
   }
   
   @scala.inline
-  implicit class ForRenderListExpressionOps[Self <: ForRenderListExpression] (val x: Self) extends AnyVal {
+  implicit class ForRenderListExpressionMutableBuilder[Self <: ForRenderListExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: js.Tuple2[ExpressionNode, ForIteratorExpression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArguments(value: js.Tuple2[ExpressionNode, ForIteratorExpression]): Self = this.set("arguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCallee(value: js.Symbol): Self = this.set("callee", value.asInstanceOf[js.Any])
+    def setCallee(value: js.Symbol): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
   }
 }

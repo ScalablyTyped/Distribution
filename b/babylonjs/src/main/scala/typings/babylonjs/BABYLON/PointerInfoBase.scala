@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.std.MouseWheelEvent
 import typings.std.PointerEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointerInfoBase extends js.Object {
+trait PointerInfoBase extends StObject {
   
   /**
     * Defines the related dom event
@@ -29,24 +30,12 @@ object PointerInfoBase {
   }
   
   @scala.inline
-  implicit class PointerInfoBaseOps[Self <: PointerInfoBase] (val x: Self) extends AnyVal {
+  implicit class PointerInfoBaseMutableBuilder[Self <: PointerInfoBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: PointerEvent | MouseWheelEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvent(value: PointerEvent | MouseWheelEvent): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

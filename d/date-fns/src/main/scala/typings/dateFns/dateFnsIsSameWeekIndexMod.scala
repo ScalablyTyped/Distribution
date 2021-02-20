@@ -1,24 +1,38 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/isSameWeek/index", JSImport.Namespace)
-@js.native
-object dateFnsIsSameWeekIndexMod extends js.Object {
+object dateFnsIsSameWeekIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/isSameWeek/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Double): Boolean = js.native
+    @JSImport("date-fns/isSameWeek/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Double, options: typings.dateFns.anon.Locale): Boolean = js.native
+    @JSImport("date-fns/isSameWeek/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Date): Boolean = js.native
+    @JSImport("date-fns/isSameWeek/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Date, options: typings.dateFns.anon.Locale): Boolean = js.native
+    @JSImport("date-fns/isSameWeek/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Double): Boolean = js.native
+    @JSImport("date-fns/isSameWeek/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Double, options: typings.dateFns.anon.Locale): Boolean = js.native
+    @JSImport("date-fns/isSameWeek/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Date): Boolean = js.native
+    @JSImport("date-fns/isSameWeek/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Date, options: typings.dateFns.anon.Locale): Boolean = js.native
   }
 }

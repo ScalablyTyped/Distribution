@@ -2,13 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.com_.sun.star.beans.Pair
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides convenient access to the list of items in a list box */
 @js.native
-trait XItemList extends js.Object {
+trait XItemList extends StObject {
   
   /** retrieves the texts and images of all items in the list */
   val AllItems: SafeArray[Pair[String, String]] = js.native
@@ -154,72 +155,60 @@ object XItemList {
   }
   
   @scala.inline
-  implicit class XItemListOps[Self <: XItemList] (val x: Self) extends AnyVal {
+  implicit class XItemListMutableBuilder[Self <: XItemList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddItemListListener(value: XItemListListener => Unit): Self = StObject.set(x, "addItemListListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllItems(value: SafeArray[Pair[String, String]]): Self = StObject.set(x, "AllItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAllItems(value: () => SafeArray[Pair[String, String]]): Self = StObject.set(x, "getAllItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAllItems(value: SafeArray[Pair[String, String]]): Self = this.set("AllItems", value.asInstanceOf[js.Any])
+    def setGetItemData(value: Double => js.Any): Self = StObject.set(x, "getItemData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemCount(value: Double): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    def setGetItemImage(value: Double => String): Self = StObject.set(x, "getItemImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddItemListListener(value: XItemListListener => Unit): Self = this.set("addItemListListener", js.Any.fromFunction1(value))
+    def setGetItemText(value: Double => String): Self = StObject.set(x, "getItemText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllItems(value: () => SafeArray[Pair[String, String]]): Self = this.set("getAllItems", js.Any.fromFunction0(value))
+    def setGetItemTextAndImage(value: Double => Pair[String, String]): Self = StObject.set(x, "getItemTextAndImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItemData(value: Double => js.Any): Self = this.set("getItemData", js.Any.fromFunction1(value))
+    def setInsertItem(value: (Double, String, String) => Unit): Self = StObject.set(x, "insertItem", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetItemImage(value: Double => String): Self = this.set("getItemImage", js.Any.fromFunction1(value))
+    def setInsertItemImage(value: (Double, String) => Unit): Self = StObject.set(x, "insertItemImage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetItemText(value: Double => String): Self = this.set("getItemText", js.Any.fromFunction1(value))
+    def setInsertItemText(value: (Double, String) => Unit): Self = StObject.set(x, "insertItemText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetItemTextAndImage(value: Double => Pair[String, String]): Self = this.set("getItemTextAndImage", js.Any.fromFunction1(value))
+    def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertItem(value: (Double, String, String) => Unit): Self = this.set("insertItem", js.Any.fromFunction3(value))
+    def setRemoveAllItems(value: () => Unit): Self = StObject.set(x, "removeAllItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInsertItemImage(value: (Double, String) => Unit): Self = this.set("insertItemImage", js.Any.fromFunction2(value))
+    def setRemoveItem(value: Double => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertItemText(value: (Double, String) => Unit): Self = this.set("insertItemText", js.Any.fromFunction2(value))
+    def setRemoveItemListListener(value: XItemListListener => Unit): Self = StObject.set(x, "removeItemListListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAllItems(value: () => Unit): Self = this.set("removeAllItems", js.Any.fromFunction0(value))
+    def setSetItemData(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setItemData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveItem(value: Double => Unit): Self = this.set("removeItem", js.Any.fromFunction1(value))
+    def setSetItemImage(value: (Double, String) => Unit): Self = StObject.set(x, "setItemImage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveItemListListener(value: XItemListListener => Unit): Self = this.set("removeItemListListener", js.Any.fromFunction1(value))
+    def setSetItemText(value: (Double, String) => Unit): Self = StObject.set(x, "setItemText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetItemData(value: (Double, js.Any) => Unit): Self = this.set("setItemData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetItemImage(value: (Double, String) => Unit): Self = this.set("setItemImage", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetItemText(value: (Double, String) => Unit): Self = this.set("setItemText", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetItemTextAndImage(value: (Double, String, String) => Unit): Self = this.set("setItemTextAndImage", js.Any.fromFunction3(value))
+    def setSetItemTextAndImage(value: (Double, String, String) => Unit): Self = StObject.set(x, "setItemTextAndImage", js.Any.fromFunction3(value))
   }
 }

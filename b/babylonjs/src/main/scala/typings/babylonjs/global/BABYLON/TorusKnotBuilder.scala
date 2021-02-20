@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.anon.Tube
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TorusKnotBuilder ()
   extends typings.babylonjs.BABYLON.TorusKnotBuilder
 /* static members */
-@JSGlobal("BABYLON.TorusKnotBuilder")
-@js.native
-object TorusKnotBuilder extends js.Object {
+object TorusKnotBuilder {
   
   /**
     * Creates a torus knot mesh
@@ -29,5 +28,7 @@ object TorusKnotBuilder extends js.Object {
     * @returns the torus knot mesh
     * @see  https://doc.babylonjs.com/how_to/set_shapes#torus-knot
     */
+  @JSGlobal("BABYLON.TorusKnotBuilder.CreateTorusKnot")
+  @js.native
   def CreateTorusKnot(name: String, options: Tube, scene: js.Any): typings.babylonjs.BABYLON.Mesh = js.native
 }

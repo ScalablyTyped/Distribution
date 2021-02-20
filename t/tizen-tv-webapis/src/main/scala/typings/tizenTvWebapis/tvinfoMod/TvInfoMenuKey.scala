@@ -1,15 +1,15 @@
 package typings.tizenTvWebapis.tvinfoMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TvInfoMenuKey extends js.Object
+sealed trait TvInfoMenuKey extends StObject
 @JSImport("tizen-tv-webapis/tvinfo", "TvInfoMenuKey")
 @js.native
-object TvInfoMenuKey extends js.Object {
+object TvInfoMenuKey extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TvInfoMenuKey with Double] = js.native
@@ -22,8 +22,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait ACCESSIBILITY_FOCUS_ZOOM extends TvInfoMenuKey
-  /* 12 */ @js.native
-  object ACCESSIBILITY_FOCUS_ZOOM extends TopLevel[ACCESSIBILITY_FOCUS_ZOOM with Double]
+  /* 12 */ val ACCESSIBILITY_FOCUS_ZOOM: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.ACCESSIBILITY_FOCUS_ZOOM with Double = js.native
   
   /**
     * High Contrast menu value
@@ -33,8 +32,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait ACCESSIBILITY_HIGH_CONTRAST extends TvInfoMenuKey
-  /* 13 */ @js.native
-  object ACCESSIBILITY_HIGH_CONTRAST extends TopLevel[ACCESSIBILITY_HIGH_CONTRAST with Double]
+  /* 13 */ val ACCESSIBILITY_HIGH_CONTRAST: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.ACCESSIBILITY_HIGH_CONTRAST with Double = js.native
   
   /**
     * voice guide speed
@@ -47,8 +45,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait ACCESSIBILITY_VOICE_GUIDE_SPEED extends TvInfoMenuKey
-  /* 20 */ @js.native
-  object ACCESSIBILITY_VOICE_GUIDE_SPEED extends TopLevel[ACCESSIBILITY_VOICE_GUIDE_SPEED with Double]
+  /* 20 */ val ACCESSIBILITY_VOICE_GUIDE_SPEED: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.ACCESSIBILITY_VOICE_GUIDE_SPEED with Double = js.native
   
   /**
     * Caption text background color
@@ -65,8 +62,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_BG_COLOR_KEY extends TvInfoMenuKey
-  /* 6 */ @js.native
-  object CAPTION_BG_COLOR_KEY extends TopLevel[CAPTION_BG_COLOR_KEY with Double]
+  /* 6 */ val CAPTION_BG_COLOR_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_BG_COLOR_KEY with Double = js.native
   
   /**
     * Caption text background opacity
@@ -81,8 +77,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_BG_OPACITY_KEY extends TvInfoMenuKey
-  /* 7 */ @js.native
-  object CAPTION_BG_OPACITY_KEY extends TopLevel[CAPTION_BG_OPACITY_KEY with Double]
+  /* 7 */ val CAPTION_BG_OPACITY_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_BG_OPACITY_KEY with Double = js.native
   
   /**
     * Caption text edge color
@@ -99,8 +94,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_EDGE_COLOR_KEY extends TvInfoMenuKey
-  /* 9 */ @js.native
-  object CAPTION_EDGE_COLOR_KEY extends TopLevel[CAPTION_EDGE_COLOR_KEY with Double]
+  /* 9 */ val CAPTION_EDGE_COLOR_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_EDGE_COLOR_KEY with Double = js.native
   
   /**
     * Caption text edge type
@@ -113,8 +107,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_EDGE_TYPE_KEY extends TvInfoMenuKey
-  /* 8 */ @js.native
-  object CAPTION_EDGE_TYPE_KEY extends TopLevel[CAPTION_EDGE_TYPE_KEY with Double]
+  /* 8 */ val CAPTION_EDGE_TYPE_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_EDGE_TYPE_KEY with Double = js.native
   
   /**
     * Caption text foreground color
@@ -131,8 +124,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_FG_COLOR_KEY extends TvInfoMenuKey
-  /* 4 */ @js.native
-  object CAPTION_FG_COLOR_KEY extends TopLevel[CAPTION_FG_COLOR_KEY with Double]
+  /* 4 */ val CAPTION_FG_COLOR_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_FG_COLOR_KEY with Double = js.native
   
   /**
     * Caption text foreground opacity
@@ -147,8 +139,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_FG_OPACITY_KEY extends TvInfoMenuKey
-  /* 5 */ @js.native
-  object CAPTION_FG_OPACITY_KEY extends TopLevel[CAPTION_FG_OPACITY_KEY with Double]
+  /* 5 */ val CAPTION_FG_OPACITY_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_FG_OPACITY_KEY with Double = js.native
   
   /**
     * expected value TvInfoMenuValue
@@ -160,8 +151,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_FONT_SIZE_KEY extends TvInfoMenuKey
-  /* 2 */ @js.native
-  object CAPTION_FONT_SIZE_KEY extends TopLevel[CAPTION_FONT_SIZE_KEY with Double]
+  /* 2 */ val CAPTION_FONT_SIZE_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_FONT_SIZE_KEY with Double = js.native
   
   /**
     * Caption font style. Default: Style 6
@@ -177,8 +167,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_FONT_STYLE_KEY extends TvInfoMenuKey
-  /* 3 */ @js.native
-  object CAPTION_FONT_STYLE_KEY extends TopLevel[CAPTION_FONT_STYLE_KEY with Double]
+  /* 3 */ val CAPTION_FONT_STYLE_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_FONT_STYLE_KEY with Double = js.native
   
   /**
     * Caption mode. Default: Service 6
@@ -201,8 +190,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_MODE_KEY extends TvInfoMenuKey
-  /* 1 */ @js.native
-  object CAPTION_MODE_KEY extends TopLevel[CAPTION_MODE_KEY with Double]
+  /* 1 */ val CAPTION_MODE_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_MODE_KEY with Double = js.native
   
   /**
     * Caption On/Off
@@ -212,8 +200,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_ONOFF_KEY extends TvInfoMenuKey
-  /* 0 */ @js.native
-  object CAPTION_ONOFF_KEY extends TopLevel[CAPTION_ONOFF_KEY with Double]
+  /* 0 */ val CAPTION_ONOFF_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_ONOFF_KEY with Double = js.native
   
   /**
     * caption style
@@ -224,8 +211,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_STYLE_KEY extends TvInfoMenuKey
-  /* 21 */ @js.native
-  object CAPTION_STYLE_KEY extends TopLevel[CAPTION_STYLE_KEY with Double]
+  /* 21 */ val CAPTION_STYLE_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_STYLE_KEY with Double = js.native
   
   /**
     * Caption text window color
@@ -242,8 +228,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_WINDOW_COLOR_KEY extends TvInfoMenuKey
-  /* 10 */ @js.native
-  object CAPTION_WINDOW_COLOR_KEY extends TopLevel[CAPTION_WINDOW_COLOR_KEY with Double]
+  /* 10 */ val CAPTION_WINDOW_COLOR_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_WINDOW_COLOR_KEY with Double = js.native
   
   /**
     * Caption text window opacity
@@ -258,8 +243,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait CAPTION_WINDOW_OPACITY_KEY extends TvInfoMenuKey
-  /* 11 */ @js.native
-  object CAPTION_WINDOW_OPACITY_KEY extends TopLevel[CAPTION_WINDOW_OPACITY_KEY with Double]
+  /* 11 */ val CAPTION_WINDOW_OPACITY_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.CAPTION_WINDOW_OPACITY_KEY with Double = js.native
   
   /**
     * Primary Audio Language
@@ -353,8 +337,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait PRIMARY_AUDIO_LANGUAGE_KEY extends TvInfoMenuKey
-  /* 18 */ @js.native
-  object PRIMARY_AUDIO_LANGUAGE_KEY extends TopLevel[PRIMARY_AUDIO_LANGUAGE_KEY with Double]
+  /* 18 */ val PRIMARY_AUDIO_LANGUAGE_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.PRIMARY_AUDIO_LANGUAGE_KEY with Double = js.native
   
   /**
     * Secondary Audio Language
@@ -448,8 +431,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait SECONDARY_AUDIO_LANGUAGE_KEY extends TvInfoMenuKey
-  /* 19 */ @js.native
-  object SECONDARY_AUDIO_LANGUAGE_KEY extends TopLevel[SECONDARY_AUDIO_LANGUAGE_KEY with Double]
+  /* 19 */ val SECONDARY_AUDIO_LANGUAGE_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.SECONDARY_AUDIO_LANGUAGE_KEY with Double = js.native
   
   /**
     * Channel-bound apps ticker menu value
@@ -460,8 +442,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait SMARTHUB_CHANNEL_BOUND_APPS_TICKER extends TvInfoMenuKey
-  /* 14 */ @js.native
-  object SMARTHUB_CHANNEL_BOUND_APPS_TICKER extends TopLevel[SMARTHUB_CHANNEL_BOUND_APPS_TICKER with Double]
+  /* 14 */ val SMARTHUB_CHANNEL_BOUND_APPS_TICKER: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.SMARTHUB_CHANNEL_BOUND_APPS_TICKER with Double = js.native
   
   /**
     * Subtitle mode
@@ -471,8 +452,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait SUBTITLE_MODE_KEY extends TvInfoMenuKey
-  /* 17 */ @js.native
-  object SUBTITLE_MODE_KEY extends TopLevel[SUBTITLE_MODE_KEY with Double]
+  /* 17 */ val SUBTITLE_MODE_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.SUBTITLE_MODE_KEY with Double = js.native
   
   /**
     * Subtitles On/Off
@@ -482,8 +462,7 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait SUBTITLE_ONOFF_KEY extends TvInfoMenuKey
-  /* 16 */ @js.native
-  object SUBTITLE_ONOFF_KEY extends TopLevel[SUBTITLE_ONOFF_KEY with Double]
+  /* 16 */ val SUBTITLE_ONOFF_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.SUBTITLE_ONOFF_KEY with Double = js.native
   
   /**
     * Voice guide menu value
@@ -493,6 +472,5 @@ object TvInfoMenuKey extends js.Object {
     */
   @js.native
   sealed trait VOICE_GUIDE_KEY extends TvInfoMenuKey
-  /* 15 */ @js.native
-  object VOICE_GUIDE_KEY extends TopLevel[VOICE_GUIDE_KEY with Double]
+  /* 15 */ val VOICE_GUIDE_KEY: typings.tizenTvWebapis.tvinfoMod.TvInfoMenuKey.VOICE_GUIDE_KEY with Double = js.native
 }

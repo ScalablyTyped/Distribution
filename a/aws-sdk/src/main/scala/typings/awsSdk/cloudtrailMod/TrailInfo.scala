@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrailInfo extends js.Object {
+trait TrailInfo extends StObject {
   
   /**
     * The AWS region in which a trail was created.
@@ -31,36 +32,24 @@ object TrailInfo {
   }
   
   @scala.inline
-  implicit class TrailInfoOps[Self <: TrailInfo] (val x: Self) extends AnyVal {
+  implicit class TrailInfoMutableBuilder[Self <: TrailInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHomeRegion(value: String): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHomeRegionUndefined: Self = StObject.set(x, "HomeRegion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeRegion(value: String): Self = this.set("HomeRegion", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteHomeRegion: Self = this.set("HomeRegion", js.undefined)
+    def setTrailARN(value: String): Self = StObject.set(x, "TrailARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setTrailARN(value: String): Self = this.set("TrailARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailARN: Self = this.set("TrailARN", js.undefined)
+    def setTrailARNUndefined: Self = StObject.set(x, "TrailARN", js.undefined)
   }
 }

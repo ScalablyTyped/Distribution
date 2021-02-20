@@ -1,12 +1,13 @@
 package typings.akuminaCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Expression")
 @js.native
-class Expression () extends js.Object {
+class Expression () extends StObject {
   
   def And(expression: js.Any): Expression = js.native
   

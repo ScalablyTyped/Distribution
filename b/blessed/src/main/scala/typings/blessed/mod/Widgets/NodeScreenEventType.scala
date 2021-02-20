@@ -1,5 +1,6 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blessed.blessedStrings.`element mouseout`
   - typings.blessed.blessedStrings.`element mouseup`
 */
-trait NodeScreenEventType extends js.Object
+trait NodeScreenEventType extends StObject
 object NodeScreenEventType {
   
   @scala.inline

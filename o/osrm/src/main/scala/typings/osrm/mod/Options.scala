@@ -1,11 +1,12 @@
 package typings.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /**
     * Limits the search to segments with given bearing in degrees towards true north in clockwise direction. Null or array with [{value},{range}]
@@ -41,66 +42,54 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBearings(value: js.Array[Bearing]): Self = StObject.set(x, "bearings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBearingsNull: Self = StObject.set(x, "bearings", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBearingsUndefined: Self = StObject.set(x, "bearings", js.undefined)
     
     @scala.inline
-    def setBearingsVarargs(value: Bearing*): Self = this.set("bearings", js.Array(value :_*))
+    def setBearingsVarargs(value: Bearing*): Self = StObject.set(x, "bearings", js.Array(value :_*))
     
     @scala.inline
-    def setBearings(value: js.Array[Bearing]): Self = this.set("bearings", value.asInstanceOf[js.Any])
+    def setCoordinates(value: js.Array[Coordinate]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBearings: Self = this.set("bearings", js.undefined)
+    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
     @scala.inline
-    def setBearingsNull: Self = this.set("bearings", null)
+    def setCoordinatesVarargs(value: Coordinate*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
     @scala.inline
-    def setCoordinatesVarargs(value: Coordinate*): Self = this.set("coordinates", js.Array(value :_*))
+    def setGenerate_hints(value: Boolean): Self = StObject.set(x, "generate_hints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinates(value: js.Array[Coordinate]): Self = this.set("coordinates", value.asInstanceOf[js.Any])
+    def setGenerate_hintsUndefined: Self = StObject.set(x, "generate_hints", js.undefined)
     
     @scala.inline
-    def deleteCoordinates: Self = this.set("coordinates", js.undefined)
+    def setHints(value: js.Array[Hint]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerate_hints(value: Boolean): Self = this.set("generate_hints", value.asInstanceOf[js.Any])
+    def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
     @scala.inline
-    def deleteGenerate_hints: Self = this.set("generate_hints", js.undefined)
+    def setHintsVarargs(value: Hint*): Self = StObject.set(x, "hints", js.Array(value :_*))
     
     @scala.inline
-    def setHintsVarargs(value: Hint*): Self = this.set("hints", js.Array(value :_*))
+    def setRadiuses(value: js.Array[Radius]): Self = StObject.set(x, "radiuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHints(value: js.Array[Hint]): Self = this.set("hints", value.asInstanceOf[js.Any])
+    def setRadiusesNull: Self = StObject.set(x, "radiuses", null)
     
     @scala.inline
-    def deleteHints: Self = this.set("hints", js.undefined)
+    def setRadiusesUndefined: Self = StObject.set(x, "radiuses", js.undefined)
     
     @scala.inline
-    def setRadiusesVarargs(value: Radius*): Self = this.set("radiuses", js.Array(value :_*))
-    
-    @scala.inline
-    def setRadiuses(value: js.Array[Radius]): Self = this.set("radiuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadiuses: Self = this.set("radiuses", js.undefined)
-    
-    @scala.inline
-    def setRadiusesNull: Self = this.set("radiuses", null)
+    def setRadiusesVarargs(value: Radius*): Self = StObject.set(x, "radiuses", js.Array(value :_*))
   }
 }

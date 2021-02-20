@@ -1,11 +1,12 @@
 package typings.procfsStats.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnixSocket extends js.Object {
+trait UnixSocket extends StObject {
   
   var Flags: String = js.native
   
@@ -41,42 +42,30 @@ object UnixSocket {
   }
   
   @scala.inline
-  implicit class UnixSocketOps[Self <: UnixSocket] (val x: Self) extends AnyVal {
+  implicit class UnixSocketMutableBuilder[Self <: UnixSocket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlags(value: String): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInode(value: String): Self = StObject.set(x, "Inode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNum(value: String): Self = StObject.set(x, "Num", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: String): Self = this.set("Flags", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInode(value: String): Self = this.set("Inode", value.asInstanceOf[js.Any])
+    def setProtocol(value: String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum(value: String): Self = this.set("Num", value.asInstanceOf[js.Any])
+    def setRefCount(value: String): Self = StObject.set(x, "RefCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setSt(value: String): Self = StObject.set(x, "St", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("Protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefCount(value: String): Self = this.set("RefCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSt(value: String): Self = this.set("St", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

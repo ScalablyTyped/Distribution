@@ -1,11 +1,12 @@
 package typings.hapiHapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Vary extends js.Object {
+trait Vary extends StObject {
   
   var vary: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Vary {
   }
   
   @scala.inline
-  implicit class VaryOps[Self <: Vary] (val x: Self) extends AnyVal {
+  implicit class VaryMutableBuilder[Self <: Vary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVary(value: Boolean): Self = StObject.set(x, "vary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVary(value: Boolean): Self = this.set("vary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeak(value: Boolean): Self = this.set("weak", value.asInstanceOf[js.Any])
+    def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
   }
 }

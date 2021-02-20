@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorOptions extends js.Object {
+trait EditorOptions extends StObject {
   
   var BaseIndentSize: js.UndefOr[Double] = js.native
   
@@ -34,39 +35,27 @@ object EditorOptions {
   }
   
   @scala.inline
-  implicit class EditorOptionsOps[Self <: EditorOptions] (val x: Self) extends AnyVal {
+  implicit class EditorOptionsMutableBuilder[Self <: EditorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseIndentSize(value: Double): Self = StObject.set(x, "BaseIndentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseIndentSizeUndefined: Self = StObject.set(x, "BaseIndentSize", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConvertTabsToSpaces(value: Boolean): Self = StObject.set(x, "ConvertTabsToSpaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertTabsToSpaces(value: Boolean): Self = this.set("ConvertTabsToSpaces", value.asInstanceOf[js.Any])
+    def setIndentSize(value: Double): Self = StObject.set(x, "IndentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentSize(value: Double): Self = this.set("IndentSize", value.asInstanceOf[js.Any])
+    def setIndentStyle(value: IndentStyle): Self = StObject.set(x, "IndentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentStyle(value: IndentStyle): Self = this.set("IndentStyle", value.asInstanceOf[js.Any])
+    def setNewLineCharacter(value: java.lang.String): Self = StObject.set(x, "NewLineCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLineCharacter(value: java.lang.String): Self = this.set("NewLineCharacter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabSize(value: Double): Self = this.set("TabSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBaseIndentSize(value: Double): Self = this.set("BaseIndentSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBaseIndentSize: Self = this.set("BaseIndentSize", js.undefined)
+    def setTabSize(value: Double): Self = StObject.set(x, "TabSize", value.asInstanceOf[js.Any])
   }
 }

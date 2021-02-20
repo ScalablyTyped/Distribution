@@ -1,8 +1,8 @@
 package typings.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.cesium.anon.FaceForward
 import typings.cesium.mod.MaterialAppearance.MaterialSupport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,31 +20,27 @@ class MaterialAppearance () extends Appearance {
   
   val vertexFormat: VertexFormat = js.native
 }
-@JSImport("cesium", "MaterialAppearance")
-@js.native
-object MaterialAppearance extends js.Object {
+object MaterialAppearance {
   
   @js.native
-  sealed trait MaterialSupport extends js.Object
+  sealed trait MaterialSupport extends StObject
+  @JSImport("cesium", "MaterialAppearance.MaterialSupport")
   @js.native
-  object MaterialSupport extends js.Object {
+  object MaterialSupport extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[MaterialSupport with Double] = js.native
     
     @js.native
     sealed trait ALL extends MaterialSupport
-    /* 2 */ @js.native
-    object ALL extends TopLevel[ALL with Double]
+    /* 2 */ val ALL: typings.cesium.mod.MaterialAppearance.MaterialSupport.ALL with Double = js.native
     
     @js.native
     sealed trait BASIC extends MaterialSupport
-    /* 0 */ @js.native
-    object BASIC extends TopLevel[BASIC with Double]
+    /* 0 */ val BASIC: typings.cesium.mod.MaterialAppearance.MaterialSupport.BASIC with Double = js.native
     
     @js.native
     sealed trait TEXTURED extends MaterialSupport
-    /* 1 */ @js.native
-    object TEXTURED extends TopLevel[TEXTURED with Double]
+    /* 1 */ val TEXTURED: typings.cesium.mod.MaterialAppearance.MaterialSupport.TEXTURED with Double = js.native
   }
 }

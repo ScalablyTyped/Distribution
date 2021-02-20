@@ -1,12 +1,13 @@
 package typings.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiscriminatorObject extends js.Object {
+trait DiscriminatorObject extends StObject {
   
   var mapping: js.UndefOr[StringDictionary[String]] = js.native
   
@@ -21,27 +22,15 @@ object DiscriminatorObject {
   }
   
   @scala.inline
-  implicit class DiscriminatorObjectOps[Self <: DiscriminatorObject] (val x: Self) extends AnyVal {
+  implicit class DiscriminatorObjectMutableBuilder[Self <: DiscriminatorObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMapping(value: StringDictionary[String]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertyName(value: String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMapping(value: StringDictionary[String]): Self = this.set("mapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMapping: Self = this.set("mapping", js.undefined)
+    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

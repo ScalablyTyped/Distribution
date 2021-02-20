@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlacementStepPosition extends js.Object
+sealed trait PlacementStepPosition extends StObject
 @JSGlobal("__esri.CIM.PlacementStepPosition")
 @js.native
-object PlacementStepPosition extends js.Object {
+object PlacementStepPosition extends StObject {
   
   /**
     * The marker bounds.

@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListMultiplexProgramsResponse extends js.Object {
+trait ListMultiplexProgramsResponse extends StObject {
   
   /**
     * List of multiplex programs.
@@ -26,33 +27,21 @@ object ListMultiplexProgramsResponse {
   }
   
   @scala.inline
-  implicit class ListMultiplexProgramsResponseOps[Self <: ListMultiplexProgramsResponse] (val x: Self) extends AnyVal {
+  implicit class ListMultiplexProgramsResponseMutableBuilder[Self <: ListMultiplexProgramsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultiplexPrograms(value: listOfMultiplexProgramSummary): Self = StObject.set(x, "MultiplexPrograms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiplexProgramsUndefined: Self = StObject.set(x, "MultiplexPrograms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiplexProgramsVarargs(value: MultiplexProgramSummary*): Self = StObject.set(x, "MultiplexPrograms", js.Array(value :_*))
     
     @scala.inline
-    def setMultiplexProgramsVarargs(value: MultiplexProgramSummary*): Self = this.set("MultiplexPrograms", js.Array(value :_*))
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplexPrograms(value: listOfMultiplexProgramSummary): Self = this.set("MultiplexPrograms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiplexPrograms: Self = this.set("MultiplexPrograms", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

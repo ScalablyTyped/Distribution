@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.awt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   */
 @js.native
-trait SystemDependentXWindow extends js.Object {
+trait SystemDependentXWindow extends StObject {
   
   /** The display pointer. */
   var DisplayPointer: Double = js.native
@@ -29,24 +30,12 @@ object SystemDependentXWindow {
   }
   
   @scala.inline
-  implicit class SystemDependentXWindowOps[Self <: SystemDependentXWindow] (val x: Self) extends AnyVal {
+  implicit class SystemDependentXWindowMutableBuilder[Self <: SystemDependentXWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayPointer(value: Double): Self = StObject.set(x, "DisplayPointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisplayPointer(value: Double): Self = this.set("DisplayPointer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowHandle(value: Double): Self = this.set("WindowHandle", value.asInstanceOf[js.Any])
+    def setWindowHandle(value: Double): Self = StObject.set(x, "WindowHandle", value.asInstanceOf[js.Any])
   }
 }

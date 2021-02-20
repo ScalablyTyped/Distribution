@@ -1,12 +1,13 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Filters object is a collection of the Filters that will be applied to an ImageFile when you call the Apply method on the ImageProcess object. */
 @js.native
-trait Filters extends js.Object {
+trait Filters extends StObject {
   
   /** Returns the specified item in the collection by position or FilterID */
   def apply(Index: Double): Filter = js.native

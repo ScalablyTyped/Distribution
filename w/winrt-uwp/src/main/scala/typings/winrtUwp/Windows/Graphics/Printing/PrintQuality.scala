@@ -1,23 +1,24 @@
 package typings.winrtUwp.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintQuality extends js.Object
+sealed trait PrintQuality extends StObject
 /** Specifies the print quality options for the printed output. */
 @JSGlobal("Windows.Graphics.Printing.PrintQuality")
 @js.native
-object PrintQuality extends js.Object {
-  
-  /** The option to automatically select the print quality. */
-  @js.native
-  sealed trait automatic extends PrintQuality
+object PrintQuality extends StObject {
   
   /** The default print quality option. */
   @js.native
   sealed trait default extends PrintQuality
+  
+  /** The option to automatically select the print quality. */
+  @js.native
+  sealed trait automatic extends PrintQuality
   
   /** The Draft print quality option. */
   @js.native

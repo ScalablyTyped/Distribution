@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesDeleteAdmChannelInputMod.DeleteA
 import typings.awsSdkClientPinpointBrowser.typesDeleteAdmChannelOutputMod.DeleteAdmChannelOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteAdmChannelCommand", JSImport.Namespace)
-@js.native
-object deleteAdmChannelCommandMod extends js.Object {
+object deleteAdmChannelCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteAdmChannelCommand", "DeleteAdmChannelCommand")
   @js.native
   class DeleteAdmChannelCommand protected () extends Command[
           InputTypesUnion, 

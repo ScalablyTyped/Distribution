@@ -15,12 +15,13 @@ import typings.storybookApi.urlMod.QueryParams
 import typings.storybookApi.versionsMod.UnknownEntries
 import typings.storybookApi.versionsMod.Versions
 import typings.storybookTheming.typesMod.ThemeVars
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomQueryParams extends js.Object {
+trait CustomQueryParams extends StObject {
   
   var customQueryParams: QueryParams = js.native
   
@@ -99,99 +100,87 @@ object CustomQueryParams {
   }
   
   @scala.inline
-  implicit class CustomQueryParamsOps[Self <: CustomQueryParams] (val x: Self) extends AnyVal {
+  implicit class CustomQueryParamsMutableBuilder[Self <: CustomQueryParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomQueryParams(value: QueryParams): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDismissedVersionNotification(value: String): Self = StObject.set(x, "dismissedVersionNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomQueryParams(value: QueryParams): Self = this.set("customQueryParams", value.asInstanceOf[js.Any])
+    def setLastVersionCheck(value: Double): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismissedVersionNotification(value: String): Self = this.set("dismissedVersionNotification", value.asInstanceOf[js.Any])
+    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobals(value: Args): Self = this.set("globals", value.asInstanceOf[js.Any])
+    def setLocation(value: WindowLocation[js.Object]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastVersionCheck(value: Double): Self = this.set("lastVersionCheck", value.asInstanceOf[js.Any])
+    def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: Layout): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     
     @scala.inline
-    def setLocation(value: WindowLocation[js.Object]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationsVarargs(value: Notification*): Self = this.set("notifications", js.Array(value :_*))
+    def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
     
     @scala.inline
-    def setNotifications(value: js.Array[Notification]): Self = this.set("notifications", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefId(value: String): Self = this.set("refId", value.asInstanceOf[js.Any])
+    def setRefs(value: Record[String, ComposedRef]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefs(value: Record[String, ComposedRef]): Self = this.set("refs", value.asInstanceOf[js.Any])
+    def setReleaseNotesViewed(value: js.Array[String]): Self = StObject.set(x, "releaseNotesViewed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseNotesViewedVarargs(value: String*): Self = this.set("releaseNotesViewed", js.Array(value :_*))
+    def setReleaseNotesViewedVarargs(value: String*): Self = StObject.set(x, "releaseNotesViewed", js.Array(value :_*))
     
     @scala.inline
-    def setReleaseNotesViewed(value: js.Array[String]): Self = this.set("releaseNotesViewed", value.asInstanceOf[js.Any])
+    def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedPanel(value: String): Self = this.set("selectedPanel", value.asInstanceOf[js.Any])
+    def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettings(value: Settings): Self = this.set("settings", value.asInstanceOf[js.Any])
+    def setShortcuts(value: Shortcuts): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortcuts(value: Shortcuts): Self = this.set("shortcuts", value.asInstanceOf[js.Any])
+    def setStoriesConfigured(value: Boolean): Self = StObject.set(x, "storiesConfigured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoriesConfigured(value: Boolean): Self = this.set("storiesConfigured", value.asInstanceOf[js.Any])
+    def setStoriesFailed(value: typings.std.Error): Self = StObject.set(x, "storiesFailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoriesHash(value: StoriesHash): Self = this.set("storiesHash", value.asInstanceOf[js.Any])
+    def setStoriesFailedUndefined: Self = StObject.set(x, "storiesFailed", js.undefined)
     
     @scala.inline
-    def setStoryId(value: String): Self = this.set("storyId", value.asInstanceOf[js.Any])
+    def setStoriesHash(value: StoriesHash): Self = StObject.set(x, "storiesHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: ThemeVars): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUi(value: UI): Self = this.set("ui", value.asInstanceOf[js.Any])
+    def setTheme(value: ThemeVars): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersions(value: Versions with UnknownEntries): Self = this.set("versions", value.asInstanceOf[js.Any])
+    def setUi(value: UI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewMode(value: String): Self = this.set("viewMode", value.asInstanceOf[js.Any])
+    def setVersions(value: Versions with UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigate(value: NavigateFn): Self = this.set("navigate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNavigate: Self = this.set("navigate", js.undefined)
-    
-    @scala.inline
-    def setStoriesFailed(value: typings.std.Error): Self = this.set("storiesFailed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoriesFailed: Self = this.set("storiesFailed", js.undefined)
+    def setViewMode(value: String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

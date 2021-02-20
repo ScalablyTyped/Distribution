@@ -1,5 +1,6 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object SetWifiListOptions {
   }
   
   @scala.inline
-  implicit class SetWifiListOptionsOps[Self <: SetWifiListOptions] (val x: Self) extends AnyVal {
+  implicit class SetWifiListOptionsMutableBuilder[Self <: SetWifiListOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWifiList(value: js.Array[SetWifiList]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWifiListVarargs(value: SetWifiList*): Self = this.set("wifiList", js.Array(value :_*))
-    
-    @scala.inline
-    def setWifiList(value: js.Array[SetWifiList]): Self = this.set("wifiList", value.asInstanceOf[js.Any])
+    def setWifiListVarargs(value: SetWifiList*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
   }
 }

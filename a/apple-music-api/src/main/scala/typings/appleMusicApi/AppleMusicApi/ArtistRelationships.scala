@@ -1,12 +1,13 @@
 package typings.appleMusicApi.AppleMusicApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/artist/relationships
 @js.native
-trait ArtistRelationships extends js.Object {
+trait ArtistRelationships extends StObject {
   
   var albums: Relationship[Album] = js.native
   
@@ -21,27 +22,15 @@ object ArtistRelationships {
   }
   
   @scala.inline
-  implicit class ArtistRelationshipsOps[Self <: ArtistRelationships] (val x: Self) extends AnyVal {
+  implicit class ArtistRelationshipsMutableBuilder[Self <: ArtistRelationships] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbums(value: Relationship[Album]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenres(value: Relationship[Genre]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlbums(value: Relationship[Album]): Self = this.set("albums", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGenres(value: Relationship[Genre]): Self = this.set("genres", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenres: Self = this.set("genres", js.undefined)
+    def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
   }
 }

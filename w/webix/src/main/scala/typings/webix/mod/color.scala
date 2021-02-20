@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait color extends js.Object {
+trait color extends StObject {
   
   def hexToDec(hex: String): Double = js.native
   
@@ -19,7 +19,3 @@ trait color extends js.Object {
   
   def toRgb(rgb: String): js.Array[_] = js.native
 }
-@JSImport("webix", "color")
-@js.native
-object color
-  extends TopLevel[typings.webix.webix.color]

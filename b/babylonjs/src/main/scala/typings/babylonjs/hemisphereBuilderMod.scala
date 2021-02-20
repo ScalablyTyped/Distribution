@@ -2,19 +2,18 @@ package typings.babylonjs
 
 import typings.babylonjs.anon.Segments
 import typings.babylonjs.meshMod.Mesh
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/Builders/hemisphereBuilder", JSImport.Namespace)
-@js.native
-object hemisphereBuilderMod extends js.Object {
+object hemisphereBuilderMod {
   
+  @JSImport("babylonjs/Meshes/Builders/hemisphereBuilder", "HemisphereBuilder")
   @js.native
-  class HemisphereBuilder () extends js.Object
+  class HemisphereBuilder () extends StObject
   /* static members */
-  @js.native
-  object HemisphereBuilder extends js.Object {
+  object HemisphereBuilder {
     
     /**
       * Creates a hemisphere mesh
@@ -23,6 +22,8 @@ object hemisphereBuilderMod extends js.Object {
       * @param scene defines the hosting scene
       * @returns the hemisphere mesh
       */
+    @JSImport("babylonjs/Meshes/Builders/hemisphereBuilder", "HemisphereBuilder.CreateHemisphere")
+    @js.native
     def CreateHemisphere(name: String, options: Segments, scene: js.Any): Mesh = js.native
   }
 }

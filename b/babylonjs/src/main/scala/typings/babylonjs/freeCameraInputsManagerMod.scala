@@ -6,17 +6,17 @@ import typings.babylonjs.freeCameraMod.FreeCamera
 import typings.babylonjs.freeCameraMouseInputMod.FreeCameraMouseInput
 import typings.babylonjs.freeCameraMouseWheelInputMod.FreeCameraMouseWheelInput
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/freeCameraInputsManager", JSImport.Namespace)
-@js.native
-object freeCameraInputsManagerMod extends js.Object {
+object freeCameraInputsManagerMod {
   
   /**
     * Interface representing a free camera inputs manager
     */
+  @JSImport("babylonjs/Cameras/freeCameraInputsManager", "FreeCameraInputsManager")
   @js.native
   class FreeCameraInputsManager protected () extends CameraInputsManager[FreeCamera] {
     /**

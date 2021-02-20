@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CreditDisplay")
 @js.native
-class CreditDisplay protected () extends js.Object {
+class CreditDisplay protected () extends StObject {
   def this(container: HTMLElement) = this()
   def this(container: HTMLElement, delimiter: String) = this()
   def this(container: HTMLElement, delimiter: js.UndefOr[scala.Nothing], viewport: HTMLElement) = this()
@@ -31,10 +32,16 @@ class CreditDisplay protected () extends js.Object {
   
   def update(): Unit = js.native
 }
-/* static members */
-@JSImport("cesium", "CreditDisplay")
-@js.native
-object CreditDisplay extends js.Object {
+object CreditDisplay {
   
-  var cesiumCredit: Credit = js.native
+  @JSImport("cesium", "CreditDisplay")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("cesium", "CreditDisplay.cesiumCredit")
+  @js.native
+  def cesiumCredit: Credit = js.native
+  @scala.inline
+  def cesiumCredit_=(x: Credit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cesiumCredit")(x.asInstanceOf[js.Any])
 }

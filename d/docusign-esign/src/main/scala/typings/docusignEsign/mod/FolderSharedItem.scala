@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FolderSharedItem extends js.Object {
+trait FolderSharedItem extends StObject {
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
@@ -78,92 +79,80 @@ object FolderSharedItem {
   }
   
   @scala.inline
-  implicit class FolderSharedItemOps[Self <: FolderSharedItem] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class FolderSharedItemMutableBuilder[Self <: FolderSharedItem] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setFolderId(value: String): Self = this.set("folderId", value.asInstanceOf[js.Any])
+    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFolderId: Self = this.set("folderId", js.undefined)
+    def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOwner(value: UserInfo): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setOwner(value: UserInfo): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setParentFolderId(value: String): Self = this.set("parentFolderId", value.asInstanceOf[js.Any])
+    def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentFolderId: Self = this.set("parentFolderId", js.undefined)
+    def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
     
     @scala.inline
-    def setParentFolderUri(value: String): Self = this.set("parentFolderUri", value.asInstanceOf[js.Any])
+    def setParentFolderUri(value: String): Self = StObject.set(x, "parentFolderUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentFolderUri: Self = this.set("parentFolderUri", js.undefined)
+    def setParentFolderUriUndefined: Self = StObject.set(x, "parentFolderUri", js.undefined)
     
     @scala.inline
-    def setShared(value: String): Self = this.set("shared", value.asInstanceOf[js.Any])
+    def setShared(value: String): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShared: Self = this.set("shared", js.undefined)
+    def setSharedGroups(value: js.Array[/* Information about items shared among groups. */ MemberGroupSharedItem]): Self = StObject.set(x, "sharedGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedGroupsVarargs(value: (/* Information about items shared among groups. */ MemberGroupSharedItem)*): Self = this.set("sharedGroups", js.Array(value :_*))
+    def setSharedGroupsUndefined: Self = StObject.set(x, "sharedGroups", js.undefined)
     
     @scala.inline
-    def setSharedGroups(value: js.Array[/* Information about items shared among groups. */ MemberGroupSharedItem]): Self = this.set("sharedGroups", value.asInstanceOf[js.Any])
+    def setSharedGroupsVarargs(value: (/* Information about items shared among groups. */ MemberGroupSharedItem)*): Self = StObject.set(x, "sharedGroups", js.Array(value :_*))
     
     @scala.inline
-    def deleteSharedGroups: Self = this.set("sharedGroups", js.undefined)
+    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
     @scala.inline
-    def setSharedUsersVarargs(value: (/* Information about a shared item. */ UserSharedItem)*): Self = this.set("sharedUsers", js.Array(value :_*))
+    def setSharedUsers(value: js.Array[/* Information about a shared item. */ UserSharedItem]): Self = StObject.set(x, "sharedUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedUsers(value: js.Array[/* Information about a shared item. */ UserSharedItem]): Self = this.set("sharedUsers", value.asInstanceOf[js.Any])
+    def setSharedUsersUndefined: Self = StObject.set(x, "sharedUsers", js.undefined)
     
     @scala.inline
-    def deleteSharedUsers: Self = this.set("sharedUsers", js.undefined)
+    def setSharedUsersVarargs(value: (/* Information about a shared item. */ UserSharedItem)*): Self = StObject.set(x, "sharedUsers", js.Array(value :_*))
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
     @scala.inline
-    def setUser(value: UserInfo): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: UserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

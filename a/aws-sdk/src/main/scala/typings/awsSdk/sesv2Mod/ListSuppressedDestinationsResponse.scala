@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSuppressedDestinationsResponse extends js.Object {
+trait ListSuppressedDestinationsResponse extends StObject {
   
   /**
     * A token that indicates that there are additional email addresses on the suppression list for your account. To view additional suppressed addresses, issue another request to ListSuppressedDestinations, and pass this token in the NextToken parameter.
@@ -26,33 +27,21 @@ object ListSuppressedDestinationsResponse {
   }
   
   @scala.inline
-  implicit class ListSuppressedDestinationsResponseOps[Self <: ListSuppressedDestinationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListSuppressedDestinationsResponseMutableBuilder[Self <: ListSuppressedDestinationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuppressedDestinationSummaries(value: SuppressedDestinationSummaries): Self = StObject.set(x, "SuppressedDestinationSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSuppressedDestinationSummariesUndefined: Self = StObject.set(x, "SuppressedDestinationSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSuppressedDestinationSummariesVarargs(value: SuppressedDestinationSummary*): Self = this.set("SuppressedDestinationSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuppressedDestinationSummaries(value: SuppressedDestinationSummaries): Self = this.set("SuppressedDestinationSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressedDestinationSummaries: Self = this.set("SuppressedDestinationSummaries", js.undefined)
+    def setSuppressedDestinationSummariesVarargs(value: SuppressedDestinationSummary*): Self = StObject.set(x, "SuppressedDestinationSummaries", js.Array(value :_*))
   }
 }

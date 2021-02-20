@@ -1,12 +1,13 @@
 package typings.luaparse.astMod
 
 import typings.luaparse.anon.End
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Base[TType /* <: String */] extends js.Object {
+trait Base[TType /* <: String */] extends StObject {
   
   var loc: js.UndefOr[End] = js.native
   
@@ -22,27 +23,15 @@ object Base {
   }
   
   @scala.inline
-  implicit class BaseOps[Self <: Base[_], TType /* <: String */] (val x: Self with Base[TType]) extends AnyVal {
+  implicit class BaseMutableBuilder[Self <: Base[_], TType /* <: String */] (val x: Self with Base[TType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoc(value: End): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: TType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoc(value: End): Self = this.set("loc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
+    def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

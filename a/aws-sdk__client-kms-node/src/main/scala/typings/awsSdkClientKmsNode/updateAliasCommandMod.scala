@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsNode.typesUpdateAliasInputMod.UpdateAliasInput
 import typings.awsSdkClientKmsNode.typesUpdateAliasOutputMod.UpdateAliasOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/commands/UpdateAliasCommand", JSImport.Namespace)
-@js.native
-object updateAliasCommandMod extends js.Object {
+object updateAliasCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-node/commands/UpdateAliasCommand", "UpdateAliasCommand")
   @js.native
   class UpdateAliasCommand protected () extends Command[
           InputTypesUnion, 

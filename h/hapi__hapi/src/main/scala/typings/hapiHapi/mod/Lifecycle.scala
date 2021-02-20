@@ -4,15 +4,12 @@ import typings.hapiBoom.mod.Boom
 import typings.node.Buffer
 import typings.node.streamMod.Stream
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@hapi/hapi", "Lifecycle")
-@js.native
-object Lifecycle extends js.Object {
-  
-  trait _FailAction extends js.Object
+object Lifecycle {
   
   /**
     * Various configuration options allows defining how errors are handled. For example, when invalid payload is received or malformed cookie, instead of returning an error, the framework can be
@@ -67,4 +64,6 @@ object Lifecycle extends js.Object {
   type ReturnValue = ReturnValueTypes | js.Promise[ReturnValueTypes]
   
   type ReturnValueTypes = Null | String | Double | Boolean | Buffer | Error | Boom[js.Any] | Stream | js.Object | js.Array[js.Object] | js.Symbol | ResponseToolkit
+  
+  trait _FailAction extends StObject
 }

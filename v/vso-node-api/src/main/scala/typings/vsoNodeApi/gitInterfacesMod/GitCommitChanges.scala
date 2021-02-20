@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitCommitChanges extends js.Object {
+trait GitCommitChanges extends StObject {
   
   var changeCounts: ChangeCountDictionary = js.native
   
@@ -20,27 +21,15 @@ object GitCommitChanges {
   }
   
   @scala.inline
-  implicit class GitCommitChangesOps[Self <: GitCommitChanges] (val x: Self) extends AnyVal {
+  implicit class GitCommitChangesMutableBuilder[Self <: GitCommitChanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeCounts(value: ChangeCountDictionary): Self = StObject.set(x, "changeCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChanges(value: js.Array[GitChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChangeCounts(value: ChangeCountDictionary): Self = this.set("changeCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChangesVarargs(value: GitChange*): Self = this.set("changes", js.Array(value :_*))
-    
-    @scala.inline
-    def setChanges(value: js.Array[GitChange]): Self = this.set("changes", value.asInstanceOf[js.Any])
+    def setChangesVarargs(value: GitChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
   }
 }

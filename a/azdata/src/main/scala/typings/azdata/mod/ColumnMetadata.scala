@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnMetadata extends js.Object {
+trait ColumnMetadata extends StObject {
   
   var defaultValue: String = js.native
   
@@ -72,48 +73,36 @@ object ColumnMetadata {
   }
   
   @scala.inline
-  implicit class ColumnMetadataOps[Self <: ColumnMetadata] (val x: Self) extends AnyVal {
+  implicit class ColumnMetadataMutableBuilder[Self <: ColumnMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEscapedName(value: String): Self = StObject.set(x, "escapedName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasExtendedProperties(value: Boolean): Self = StObject.set(x, "hasExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setIsCalculated(value: Boolean): Self = StObject.set(x, "isCalculated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapedName(value: String): Self = this.set("escapedName", value.asInstanceOf[js.Any])
+    def setIsComputed(value: Boolean): Self = StObject.set(x, "isComputed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasExtendedProperties(value: Boolean): Self = this.set("hasExtendedProperties", value.asInstanceOf[js.Any])
+    def setIsDeterministic(value: Boolean): Self = StObject.set(x, "isDeterministic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCalculated(value: Boolean): Self = this.set("isCalculated", value.asInstanceOf[js.Any])
+    def setIsIdentity(value: Boolean): Self = StObject.set(x, "isIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComputed(value: Boolean): Self = this.set("isComputed", value.asInstanceOf[js.Any])
+    def setIsKey(value: Boolean): Self = StObject.set(x, "isKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDeterministic(value: Boolean): Self = this.set("isDeterministic", value.asInstanceOf[js.Any])
+    def setIsTrustworthyForUniqueness(value: Boolean): Self = StObject.set(x, "isTrustworthyForUniqueness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIdentity(value: Boolean): Self = this.set("isIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsKey(value: Boolean): Self = this.set("isKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsTrustworthyForUniqueness(value: Boolean): Self = this.set("isTrustworthyForUniqueness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrdinal(value: Double): Self = this.set("ordinal", value.asInstanceOf[js.Any])
+    def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
   }
 }

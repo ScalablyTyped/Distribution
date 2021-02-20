@@ -1,11 +1,12 @@
 package typings.awsSdk.timestreamqueryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Datum extends js.Object {
+trait Datum extends StObject {
   
   /**
     *  Indicates if the data point is an array. 
@@ -41,54 +42,42 @@ object Datum {
   }
   
   @scala.inline
-  implicit class DatumOps[Self <: Datum] (val x: Self) extends AnyVal {
+  implicit class DatumMutableBuilder[Self <: Datum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayValue(value: DatumList): Self = StObject.set(x, "ArrayValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayValueUndefined: Self = StObject.set(x, "ArrayValue", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayValueVarargs(value: Datum*): Self = StObject.set(x, "ArrayValue", js.Array(value :_*))
     
     @scala.inline
-    def setArrayValueVarargs(value: Datum*): Self = this.set("ArrayValue", js.Array(value :_*))
+    def setNullValue(value: NullableBoolean): Self = StObject.set(x, "NullValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayValue(value: DatumList): Self = this.set("ArrayValue", value.asInstanceOf[js.Any])
+    def setNullValueUndefined: Self = StObject.set(x, "NullValue", js.undefined)
     
     @scala.inline
-    def deleteArrayValue: Self = this.set("ArrayValue", js.undefined)
+    def setRowValue(value: Row): Self = StObject.set(x, "RowValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullValue(value: NullableBoolean): Self = this.set("NullValue", value.asInstanceOf[js.Any])
+    def setRowValueUndefined: Self = StObject.set(x, "RowValue", js.undefined)
     
     @scala.inline
-    def deleteNullValue: Self = this.set("NullValue", js.undefined)
+    def setScalarValue(value: ScalarValue): Self = StObject.set(x, "ScalarValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowValue(value: Row): Self = this.set("RowValue", value.asInstanceOf[js.Any])
+    def setScalarValueUndefined: Self = StObject.set(x, "ScalarValue", js.undefined)
     
     @scala.inline
-    def deleteRowValue: Self = this.set("RowValue", js.undefined)
+    def setTimeSeriesValue(value: TimeSeriesDataPointList): Self = StObject.set(x, "TimeSeriesValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalarValue(value: ScalarValue): Self = this.set("ScalarValue", value.asInstanceOf[js.Any])
+    def setTimeSeriesValueUndefined: Self = StObject.set(x, "TimeSeriesValue", js.undefined)
     
     @scala.inline
-    def deleteScalarValue: Self = this.set("ScalarValue", js.undefined)
-    
-    @scala.inline
-    def setTimeSeriesValueVarargs(value: TimeSeriesDataPoint*): Self = this.set("TimeSeriesValue", js.Array(value :_*))
-    
-    @scala.inline
-    def setTimeSeriesValue(value: TimeSeriesDataPointList): Self = this.set("TimeSeriesValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSeriesValue: Self = this.set("TimeSeriesValue", js.undefined)
+    def setTimeSeriesValueVarargs(value: TimeSeriesDataPoint*): Self = StObject.set(x, "TimeSeriesValue", js.Array(value :_*))
   }
 }

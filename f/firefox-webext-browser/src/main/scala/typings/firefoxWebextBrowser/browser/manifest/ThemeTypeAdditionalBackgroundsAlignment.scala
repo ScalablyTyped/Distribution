@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`right center`
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`right top`
 */
-trait ThemeTypeAdditionalBackgroundsAlignment extends js.Object
+trait ThemeTypeAdditionalBackgroundsAlignment extends StObject
 object ThemeTypeAdditionalBackgroundsAlignment {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefTransaction extends js.Object {
+trait RefTransaction extends StObject {
   
   var bin_outputs: js.Array[BinOutput] = js.native
   
@@ -32,63 +33,51 @@ object RefTransaction {
   }
   
   @scala.inline
-  implicit class RefTransactionOps[Self <: RefTransaction] (val x: Self) extends AnyVal {
+  implicit class RefTransactionMutableBuilder[Self <: RefTransaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBin_outputs(value: js.Array[BinOutput]): Self = StObject.set(x, "bin_outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBin_outputsVarargs(value: BinOutput*): Self = StObject.set(x, "bin_outputs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtra_data(value: String): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBin_outputsVarargs(value: BinOutput*): Self = this.set("bin_outputs", js.Array(value :_*))
+    def setExtra_dataUndefined: Self = StObject.set(x, "extra_data", js.undefined)
     
     @scala.inline
-    def setBin_outputs(value: js.Array[BinOutput]): Self = this.set("bin_outputs", value.asInstanceOf[js.Any])
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setInputs(value: js.Array[Input]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputsVarargs(value: Input*): Self = this.set("inputs", js.Array(value :_*))
+    def setInputsVarargs(value: Input*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputs(value: js.Array[Input]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setLock_time(value: Double): Self = StObject.set(x, "lock_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtra_data(value: String): Self = this.set("extra_data", value.asInstanceOf[js.Any])
+    def setLock_timeUndefined: Self = StObject.set(x, "lock_time", js.undefined)
     
     @scala.inline
-    def deleteExtra_data: Self = this.set("extra_data", js.undefined)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLock_time(value: Double): Self = this.set("lock_time", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteLock_time: Self = this.set("lock_time", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setVersion_group_id(value: Double): Self = StObject.set(x, "version_group_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersion_group_id(value: Double): Self = this.set("version_group_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion_group_id: Self = this.set("version_group_id", js.undefined)
+    def setVersion_group_idUndefined: Self = StObject.set(x, "version_group_id", js.undefined)
   }
 }

@@ -10,6 +10,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.months
 import typings.arcgisJsApi.arcgisJsApiStrings.seconds
 import typings.arcgisJsApi.arcgisJsApiStrings.weeks
 import typings.arcgisJsApi.arcgisJsApiStrings.years
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

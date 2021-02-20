@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContinuousIntegration extends js.Object {
+trait ContinuousIntegration extends StObject {
   
   var continuousIntegration: scala.Double = js.native
   
@@ -29,30 +30,18 @@ object ContinuousIntegration {
   }
   
   @scala.inline
-  implicit class ContinuousIntegrationOps[Self <: ContinuousIntegration] (val x: Self) extends AnyVal {
+  implicit class ContinuousIntegrationMutableBuilder[Self <: ContinuousIntegration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuousIntegration(value: scala.Double): Self = StObject.set(x, "continuousIntegration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManual(value: scala.Double): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuousIntegration(value: scala.Double): Self = this.set("continuousIntegration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManual(value: scala.Double): Self = this.set("manual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchedule(value: scala.Double): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setSchedule(value: scala.Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
   }
 }

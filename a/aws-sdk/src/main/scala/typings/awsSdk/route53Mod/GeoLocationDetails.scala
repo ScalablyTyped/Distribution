@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoLocationDetails extends js.Object {
+trait GeoLocationDetails extends StObject {
   
   /**
     * The two-letter code for the continent.
@@ -46,54 +47,42 @@ object GeoLocationDetails {
   }
   
   @scala.inline
-  implicit class GeoLocationDetailsOps[Self <: GeoLocationDetails] (val x: Self) extends AnyVal {
+  implicit class GeoLocationDetailsMutableBuilder[Self <: GeoLocationDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinentCode(value: GeoLocationContinentCode): Self = StObject.set(x, "ContinentCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinentCodeUndefined: Self = StObject.set(x, "ContinentCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinentName(value: GeoLocationContinentName): Self = StObject.set(x, "ContinentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinentCode(value: GeoLocationContinentCode): Self = this.set("ContinentCode", value.asInstanceOf[js.Any])
+    def setContinentNameUndefined: Self = StObject.set(x, "ContinentName", js.undefined)
     
     @scala.inline
-    def deleteContinentCode: Self = this.set("ContinentCode", js.undefined)
+    def setCountryCode(value: GeoLocationCountryCode): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinentName(value: GeoLocationContinentName): Self = this.set("ContinentName", value.asInstanceOf[js.Any])
+    def setCountryCodeUndefined: Self = StObject.set(x, "CountryCode", js.undefined)
     
     @scala.inline
-    def deleteContinentName: Self = this.set("ContinentName", js.undefined)
+    def setCountryName(value: GeoLocationCountryName): Self = StObject.set(x, "CountryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: GeoLocationCountryCode): Self = this.set("CountryCode", value.asInstanceOf[js.Any])
+    def setCountryNameUndefined: Self = StObject.set(x, "CountryName", js.undefined)
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("CountryCode", js.undefined)
+    def setSubdivisionCode(value: GeoLocationSubdivisionCode): Self = StObject.set(x, "SubdivisionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryName(value: GeoLocationCountryName): Self = this.set("CountryName", value.asInstanceOf[js.Any])
+    def setSubdivisionCodeUndefined: Self = StObject.set(x, "SubdivisionCode", js.undefined)
     
     @scala.inline
-    def deleteCountryName: Self = this.set("CountryName", js.undefined)
+    def setSubdivisionName(value: GeoLocationSubdivisionName): Self = StObject.set(x, "SubdivisionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubdivisionCode(value: GeoLocationSubdivisionCode): Self = this.set("SubdivisionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubdivisionCode: Self = this.set("SubdivisionCode", js.undefined)
-    
-    @scala.inline
-    def setSubdivisionName(value: GeoLocationSubdivisionName): Self = this.set("SubdivisionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubdivisionName: Self = this.set("SubdivisionName", js.undefined)
+    def setSubdivisionNameUndefined: Self = StObject.set(x, "SubdivisionName", js.undefined)
   }
 }

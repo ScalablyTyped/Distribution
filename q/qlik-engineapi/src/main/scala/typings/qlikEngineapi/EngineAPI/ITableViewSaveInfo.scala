@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TableViewSaveInfo...
   */
 @js.native
-trait ITableViewSaveInfo extends js.Object {
+trait ITableViewSaveInfo extends StObject {
   
   /**
     * List of the broom points in the database model viewer.
@@ -47,39 +48,27 @@ object ITableViewSaveInfo {
   }
   
   @scala.inline
-  implicit class ITableViewSaveInfoOps[Self <: ITableViewSaveInfo] (val x: Self) extends AnyVal {
+  implicit class ITableViewSaveInfoMutableBuilder[Self <: ITableViewSaveInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQBroomPoints(value: js.Array[ITableViewBroomPointSaveInfo]): Self = StObject.set(x, "qBroomPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQBroomPointsVarargs(value: ITableViewBroomPointSaveInfo*): Self = StObject.set(x, "qBroomPoints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQConnectionPoints(value: js.Array[ITableViewConnectionPointSaveInfo]): Self = StObject.set(x, "qConnectionPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQBroomPointsVarargs(value: ITableViewBroomPointSaveInfo*): Self = this.set("qBroomPoints", js.Array(value :_*))
+    def setQConnectionPointsVarargs(value: ITableViewConnectionPointSaveInfo*): Self = StObject.set(x, "qConnectionPoints", js.Array(value :_*))
     
     @scala.inline
-    def setQBroomPoints(value: js.Array[ITableViewBroomPointSaveInfo]): Self = this.set("qBroomPoints", value.asInstanceOf[js.Any])
+    def setQTables(value: js.Array[ITableViewTableWinSaveInfo]): Self = StObject.set(x, "qTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQConnectionPointsVarargs(value: ITableViewConnectionPointSaveInfo*): Self = this.set("qConnectionPoints", js.Array(value :_*))
+    def setQTablesVarargs(value: ITableViewTableWinSaveInfo*): Self = StObject.set(x, "qTables", js.Array(value :_*))
     
     @scala.inline
-    def setQConnectionPoints(value: js.Array[ITableViewConnectionPointSaveInfo]): Self = this.set("qConnectionPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTablesVarargs(value: ITableViewTableWinSaveInfo*): Self = this.set("qTables", js.Array(value :_*))
-    
-    @scala.inline
-    def setQTables(value: js.Array[ITableViewTableWinSaveInfo]): Self = this.set("qTables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQZoomFactor(value: Double): Self = this.set("qZoomFactor", value.asInstanceOf[js.Any])
+    def setQZoomFactor(value: Double): Self = StObject.set(x, "qZoomFactor", value.asInstanceOf[js.Any])
   }
 }

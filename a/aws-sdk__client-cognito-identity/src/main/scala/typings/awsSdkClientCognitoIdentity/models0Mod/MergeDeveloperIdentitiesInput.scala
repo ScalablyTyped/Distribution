@@ -1,11 +1,12 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergeDeveloperIdentitiesInput extends js.Object {
+trait MergeDeveloperIdentitiesInput extends StObject {
   
   /**
     * <p>User identifier for the destination user. The value should be a
@@ -33,9 +34,43 @@ trait MergeDeveloperIdentitiesInput extends js.Object {
     */
   var SourceUserIdentifier: js.UndefOr[String] = js.native
 }
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "MergeDeveloperIdentitiesInput")
-@js.native
-object MergeDeveloperIdentitiesInput extends js.Object {
+object MergeDeveloperIdentitiesInput {
   
+  @scala.inline
+  def apply(): MergeDeveloperIdentitiesInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[MergeDeveloperIdentitiesInput]
+  }
+  
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "MergeDeveloperIdentitiesInput.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: MergeDeveloperIdentitiesInput): js.Any = js.native
+  
+  @scala.inline
+  implicit class MergeDeveloperIdentitiesInputMutableBuilder[Self <: MergeDeveloperIdentitiesInput] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDestinationUserIdentifier(value: String): Self = StObject.set(x, "DestinationUserIdentifier", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDestinationUserIdentifierUndefined: Self = StObject.set(x, "DestinationUserIdentifier", js.undefined)
+    
+    @scala.inline
+    def setDeveloperProviderName(value: String): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeveloperProviderNameUndefined: Self = StObject.set(x, "DeveloperProviderName", js.undefined)
+    
+    @scala.inline
+    def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    
+    @scala.inline
+    def setSourceUserIdentifier(value: String): Self = StObject.set(x, "SourceUserIdentifier", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSourceUserIdentifierUndefined: Self = StObject.set(x, "SourceUserIdentifier", js.undefined)
+  }
 }

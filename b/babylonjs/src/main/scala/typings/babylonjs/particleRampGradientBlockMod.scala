@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/Particle/particleRampGradientBlock", JSImport.Namespace)
-@js.native
-object particleRampGradientBlockMod extends js.Object {
+object particleRampGradientBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Particle/particleRampGradientBlock", "ParticleRampGradientBlock")
   @js.native
   class ParticleRampGradientBlock protected () extends NodeMaterialBlock {
     /**

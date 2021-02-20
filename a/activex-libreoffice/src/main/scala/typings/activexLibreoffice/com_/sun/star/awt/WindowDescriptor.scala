@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.awt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes a window. */
 @js.native
-trait WindowDescriptor extends js.Object {
+trait WindowDescriptor extends StObject {
   
   /**
     * specifies the position and size of the window.
@@ -64,36 +65,24 @@ object WindowDescriptor {
   }
   
   @scala.inline
-  implicit class WindowDescriptorOps[Self <: WindowDescriptor] (val x: Self) extends AnyVal {
+  implicit class WindowDescriptorMutableBuilder[Self <: WindowDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: Rectangle): Self = StObject.set(x, "Bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParent(value: XWindowPeer): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParentIndex(value: Double): Self = StObject.set(x, "ParentIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: Rectangle): Self = this.set("Bounds", value.asInstanceOf[js.Any])
+    def setType(value: WindowClass): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: XWindowPeer): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setWindowAttributes(value: Double): Self = StObject.set(x, "WindowAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentIndex(value: Double): Self = this.set("ParentIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WindowClass): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowAttributes(value: Double): Self = this.set("WindowAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowServiceName(value: String): Self = this.set("WindowServiceName", value.asInstanceOf[js.Any])
+    def setWindowServiceName(value: String): Self = StObject.set(x, "WindowServiceName", value.asInstanceOf[js.Any])
   }
 }

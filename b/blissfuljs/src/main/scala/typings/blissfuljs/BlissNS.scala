@@ -418,13 +418,12 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import typings.std.Window
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BlissNS")
-@js.native
-object BlissNS extends js.Object {
+object BlissNS {
   
   @js.native
   trait AriaRequestEvent extends Event {
@@ -435,7 +434,7 @@ object BlissNS extends js.Object {
   }
   
   @js.native
-  trait BlissBindedArray[T] extends js.Object {
+  trait BlissBindedArray[T] extends StObject {
     
     def all(method: String, args: js.Any*): Array[_] = js.native
     @JSName("all")
@@ -491,7 +490,7 @@ object BlissNS extends js.Object {
   }
   
   @js.native
-  trait BlissCollectionArray[T] extends js.Object {
+  trait BlissCollectionArray[T] extends StObject {
     
     def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): BlissCollectionArray[T] = js.native
     def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, useCapture: Boolean): BlissCollectionArray[T] = js.native
@@ -541,10 +540,14 @@ object BlissNS extends js.Object {
     def transition(properties: js.Object, duration: Double): Array[js.Promise[T]] = js.native
   }
   
+  type BlissDecoratedArrayElement[T] = Array[T] with BlissCollectionArray[T]
+  
+  type BlissDecoratedElement[T] = Element with T
+  
   // Native methods added into "_" property, but methods that return "void" now return thi stype in order to be chainables
   // Methods are All HTMLElement a ELement methods
   @js.native
-  trait BlissNativeExtentions[T] extends js.Object {
+  trait BlissNativeExtentions[T] extends StObject {
     
     def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): T = js.native
     def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, useCapture: Boolean): T = js.native
@@ -1402,7 +1405,10 @@ object BlissNS extends js.Object {
   }
   
   @js.native
-  trait BlissStatic extends js.Object {
+  trait BlissStatic extends StObject {
+    
+    def apply[T](selector: String): BlissDecoratedElement[T] = js.native
+    def apply[T](selector: String, context: Element): BlissDecoratedElement[T] = js.native
     
     @JSName("$")
     def $(expr: Node): js.Array[Node] = js.native
@@ -1426,9 +1432,6 @@ object BlissNS extends js.Object {
     def $_T_BlissDecoratedArrayElement[T](selector: String): BlissDecoratedArrayElement[T] = js.native
     @JSName("$")
     def $_T_BlissDecoratedArrayElement[T](selector: String, context: Element): BlissDecoratedArrayElement[T] = js.native
-    
-    def apply[T](selector: String): BlissDecoratedElement[T] = js.native
-    def apply[T](selector: String, context: Element): BlissDecoratedElement[T] = js.native
     
     def Class(options: DictpropertyName): js.Object = js.native
     @JSName("Class")
@@ -1835,8 +1838,4 @@ object BlissNS extends js.Object {
     
     val detail: String | Null = js.native
   }
-  
-  type BlissDecoratedArrayElement[T] = Array[T] with BlissCollectionArray[T]
-  
-  type BlissDecoratedElement[T] = Element with T
 }

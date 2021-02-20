@@ -1,11 +1,12 @@
 package typings.sharepoint.SP.Utilities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Utility extends js.Object {
+trait Utility extends StObject {
   
   var lAYOUTS_LATESTVERSION_RELATIVE_URL: String = js.native
   
@@ -20,24 +21,12 @@ object Utility {
   }
   
   @scala.inline
-  implicit class UtilityOps[Self <: Utility] (val x: Self) extends AnyVal {
+  implicit class UtilityMutableBuilder[Self <: Utility] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLAYOUTS_LATESTVERSION_RELATIVE_URL(value: String): Self = StObject.set(x, "lAYOUTS_LATESTVERSION_RELATIVE_URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLAYOUTS_LATESTVERSION_RELATIVE_URL(value: String): Self = this.set("lAYOUTS_LATESTVERSION_RELATIVE_URL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLAYOUTS_LATESTVERSION_URL(value: String): Self = this.set("lAYOUTS_LATESTVERSION_URL", value.asInstanceOf[js.Any])
+    def setLAYOUTS_LATESTVERSION_URL(value: String): Self = StObject.set(x, "lAYOUTS_LATESTVERSION_URL", value.asInstanceOf[js.Any])
   }
 }

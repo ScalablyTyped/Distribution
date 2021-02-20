@@ -1,6 +1,7 @@
 package typings.reactNavigationNative.anon
 
 import typings.reactNavigationNative.useScrollToTopMod.ScrollableView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,21 +20,9 @@ object ScrollToTop {
   }
   
   @scala.inline
-  implicit class ScrollToTopOps[Self <: ScrollToTop] (val x: Self) extends AnyVal {
+  implicit class ScrollToTopMutableBuilder[Self <: ScrollToTop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScrollToTop(value: () => Unit): Self = this.set("scrollToTop", js.Any.fromFunction0(value))
+    def setScrollToTop(value: () => Unit): Self = StObject.set(x, "scrollToTop", js.Any.fromFunction0(value))
   }
 }

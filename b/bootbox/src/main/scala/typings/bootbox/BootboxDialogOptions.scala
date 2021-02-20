@@ -5,6 +5,7 @@ import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,41 +31,29 @@ object BootboxDialogOptions {
   }
   
   @scala.inline
-  implicit class BootboxDialogOptionsOps[Self <: BootboxDialogOptions[_], T] (val x: Self with BootboxDialogOptions[T]) extends AnyVal {
+  implicit class BootboxDialogOptionsMutableBuilder[Self <: BootboxDialogOptions[_], T] (val x: Self with BootboxDialogOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterVertical(value: Boolean): Self = StObject.set(x, "centerVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessageFunction2(value: (/* index */ Double, /* html */ String) => String | Element | JQuery[HTMLElement]): Self = this.set("message", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMessageVarargs(value: js.Any*): Self = this.set("message", js.Array(value :_*))
+    def setCenterVerticalUndefined: Self = StObject.set(x, "centerVertical", js.undefined)
     
     @scala.inline
     def setMessage(
       value: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
-    ): Self = this.set("message", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterVertical(value: Boolean): Self = this.set("centerVertical", value.asInstanceOf[js.Any])
+    def setMessageFunction2(value: (/* index */ Double, /* html */ String) => String | Element | JQuery[HTMLElement]): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteCenterVertical: Self = this.set("centerVertical", js.undefined)
+    def setMessageVarargs(value: js.Any*): Self = StObject.set(x, "message", js.Array(value :_*))
     
     @scala.inline
-    def setSwapButtonOrder(value: Boolean): Self = this.set("swapButtonOrder", value.asInstanceOf[js.Any])
+    def setSwapButtonOrder(value: Boolean): Self = StObject.set(x, "swapButtonOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSwapButtonOrder: Self = this.set("swapButtonOrder", js.undefined)
+    def setSwapButtonOrderUndefined: Self = StObject.set(x, "swapButtonOrder", js.undefined)
   }
 }

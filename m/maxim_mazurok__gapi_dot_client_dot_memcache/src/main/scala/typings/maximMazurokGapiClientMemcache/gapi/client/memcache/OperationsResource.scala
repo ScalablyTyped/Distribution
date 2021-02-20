@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientMemcache.anon.Alt
 import typings.maximMazurokGapiClientMemcache.anon.PageSize
 import typings.maximMazurokGapiClientMemcache.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperationsResource extends js.Object {
+trait OperationsResource extends StObject {
   
   def cancel(request: Alt, body: CancelOperationRequest): Request[js.Object] = js.native
   /**

@@ -1,5 +1,6 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object CheckSessionOptions {
   }
   
   @scala.inline
-  implicit class CheckSessionOptionsOps[Self <: CheckSessionOptions] (val x: Self) extends AnyVal {
+  implicit class CheckSessionOptionsMutableBuilder[Self <: CheckSessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUsePostMessage(value: Boolean): Self = StObject.set(x, "usePostMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUsePostMessage(value: Boolean): Self = this.set("usePostMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePostMessage: Self = this.set("usePostMessage", js.undefined)
+    def setUsePostMessageUndefined: Self = StObject.set(x, "usePostMessage", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoteObjSpec extends js.Object {
+trait RemoteObjSpec extends StObject {
   
   /**
     * If set, cell edits will be handled remotely
@@ -56,66 +57,54 @@ object RemoteObjSpec {
   }
   
   @scala.inline
-  implicit class RemoteObjSpecOps[Self <: RemoteObjSpec] (val x: Self) extends AnyVal {
+  implicit class RemoteObjSpecMutableBuilder[Self <: RemoteObjSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellEdit(value: Boolean): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellEditUndefined: Self = StObject.set(x, "cellEdit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropRow(value: Boolean): Self = StObject.set(x, "dropRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellEdit(value: Boolean): Self = this.set("cellEdit", value.asInstanceOf[js.Any])
+    def setDropRowUndefined: Self = StObject.set(x, "dropRow", js.undefined)
     
     @scala.inline
-    def deleteCellEdit: Self = this.set("cellEdit", js.undefined)
+    def setExportCSV(value: Boolean): Self = StObject.set(x, "exportCSV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropRow(value: Boolean): Self = this.set("dropRow", value.asInstanceOf[js.Any])
+    def setExportCSVUndefined: Self = StObject.set(x, "exportCSV", js.undefined)
     
     @scala.inline
-    def deleteDropRow: Self = this.set("dropRow", js.undefined)
+    def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportCSV(value: Boolean): Self = this.set("exportCSV", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteExportCSV: Self = this.set("exportCSV", js.undefined)
+    def setInsertRow(value: Boolean): Self = StObject.set(x, "insertRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: Boolean): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setInsertRowUndefined: Self = StObject.set(x, "insertRow", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertRow(value: Boolean): Self = this.set("insertRow", value.asInstanceOf[js.Any])
+    def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
     @scala.inline
-    def deleteInsertRow: Self = this.set("insertRow", js.undefined)
+    def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagination(value: Boolean): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deletePagination: Self = this.set("pagination", js.undefined)
+    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: Boolean): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
-    
-    @scala.inline
-    def setSort(value: Boolean): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

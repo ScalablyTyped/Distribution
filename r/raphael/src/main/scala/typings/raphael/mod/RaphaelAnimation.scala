@@ -1,11 +1,12 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelAnimation extends js.Object {
+trait RaphaelAnimation extends StObject {
   
   /**
     * Creates a copy this existing animation object with the given delay.
@@ -31,24 +32,12 @@ object RaphaelAnimation {
   }
   
   @scala.inline
-  implicit class RaphaelAnimationOps[Self <: RaphaelAnimation] (val x: Self) extends AnyVal {
+  implicit class RaphaelAnimationMutableBuilder[Self <: RaphaelAnimation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double => RaphaelAnimation): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDelay(value: Double => RaphaelAnimation): Self = this.set("delay", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRepeat(value: Double => RaphaelAnimation): Self = this.set("repeat", js.Any.fromFunction1(value))
+    def setRepeat(value: Double => RaphaelAnimation): Self = StObject.set(x, "repeat", js.Any.fromFunction1(value))
   }
 }

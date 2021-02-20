@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Web.Http
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HttpResponseMessageSource extends js.Object
+sealed trait HttpResponseMessageSource extends StObject
 /** Indicates the source of the data received in the HttpResponseMessage . */
 @JSGlobal("Windows.Web.Http.HttpResponseMessageSource")
 @js.native
-object HttpResponseMessageSource extends js.Object {
+object HttpResponseMessageSource extends StObject {
   
   /** The data was from the local cache. */
   @js.native

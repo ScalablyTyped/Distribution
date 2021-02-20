@@ -4,6 +4,7 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,9 +38,7 @@ class VolumetricLightScatteringPostProcess protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/PostProcesses/index", "VolumetricLightScatteringPostProcess")
-@js.native
-object VolumetricLightScatteringPostProcess extends js.Object {
+object VolumetricLightScatteringPostProcess {
   
   /**
     * Creates a default mesh for the Volumeric Light Scattering post-process
@@ -47,5 +46,7 @@ object VolumetricLightScatteringPostProcess extends js.Object {
     * @param scene The scene where to create the mesh
     * @return the default mesh
     */
+  @JSImport("babylonjs/PostProcesses/index", "VolumetricLightScatteringPostProcess.CreateDefaultMesh")
+  @js.native
   def CreateDefaultMesh(name: String, scene: Scene): Mesh = js.native
 }

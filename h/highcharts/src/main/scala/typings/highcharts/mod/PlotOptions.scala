@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotOptions extends js.Object {
+trait PlotOptions extends StObject {
   
   /**
     * (Highstock) Acceleration bands (ABANDS). This series requires the
@@ -1974,630 +1975,618 @@ object PlotOptions {
   }
   
   @scala.inline
-  implicit class PlotOptionsOps[Self <: PlotOptions] (val x: Self) extends AnyVal {
+  implicit class PlotOptionsMutableBuilder[Self <: PlotOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbands(value: PlotAbandsOptions): Self = StObject.set(x, "abands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbandsUndefined: Self = StObject.set(x, "abands", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAd(value: PlotAdOptions): Self = StObject.set(x, "ad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbands(value: PlotAbandsOptions): Self = this.set("abands", value.asInstanceOf[js.Any])
+    def setAdUndefined: Self = StObject.set(x, "ad", js.undefined)
     
     @scala.inline
-    def deleteAbands: Self = this.set("abands", js.undefined)
+    def setAo(value: PlotAoOptions): Self = StObject.set(x, "ao", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAd(value: PlotAdOptions): Self = this.set("ad", value.asInstanceOf[js.Any])
+    def setAoUndefined: Self = StObject.set(x, "ao", js.undefined)
     
     @scala.inline
-    def deleteAd: Self = this.set("ad", js.undefined)
+    def setApo(value: PlotApoOptions): Self = StObject.set(x, "apo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAo(value: PlotAoOptions): Self = this.set("ao", value.asInstanceOf[js.Any])
+    def setApoUndefined: Self = StObject.set(x, "apo", js.undefined)
     
     @scala.inline
-    def deleteAo: Self = this.set("ao", js.undefined)
+    def setArea(value: PlotAreaOptions): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApo(value: PlotApoOptions): Self = this.set("apo", value.asInstanceOf[js.Any])
+    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
     @scala.inline
-    def deleteApo: Self = this.set("apo", js.undefined)
+    def setArearange(value: PlotArearangeOptions): Self = StObject.set(x, "arearange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: PlotAreaOptions): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setArearangeUndefined: Self = StObject.set(x, "arearange", js.undefined)
     
     @scala.inline
-    def deleteArea: Self = this.set("area", js.undefined)
+    def setAreaspline(value: PlotAreasplineOptions): Self = StObject.set(x, "areaspline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArearange(value: PlotArearangeOptions): Self = this.set("arearange", value.asInstanceOf[js.Any])
+    def setAreasplineUndefined: Self = StObject.set(x, "areaspline", js.undefined)
     
     @scala.inline
-    def deleteArearange: Self = this.set("arearange", js.undefined)
+    def setAreasplinerange(value: PlotAreasplinerangeOptions): Self = StObject.set(x, "areasplinerange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaspline(value: PlotAreasplineOptions): Self = this.set("areaspline", value.asInstanceOf[js.Any])
+    def setAreasplinerangeUndefined: Self = StObject.set(x, "areasplinerange", js.undefined)
     
     @scala.inline
-    def deleteAreaspline: Self = this.set("areaspline", js.undefined)
+    def setAroon(value: PlotAroonOptions): Self = StObject.set(x, "aroon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreasplinerange(value: PlotAreasplinerangeOptions): Self = this.set("areasplinerange", value.asInstanceOf[js.Any])
+    def setAroonUndefined: Self = StObject.set(x, "aroon", js.undefined)
     
     @scala.inline
-    def deleteAreasplinerange: Self = this.set("areasplinerange", js.undefined)
+    def setAroonoscillator(value: PlotAroonoscillatorOptions): Self = StObject.set(x, "aroonoscillator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAroon(value: PlotAroonOptions): Self = this.set("aroon", value.asInstanceOf[js.Any])
+    def setAroonoscillatorUndefined: Self = StObject.set(x, "aroonoscillator", js.undefined)
     
     @scala.inline
-    def deleteAroon: Self = this.set("aroon", js.undefined)
+    def setAtr(value: PlotAtrOptions): Self = StObject.set(x, "atr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAroonoscillator(value: PlotAroonoscillatorOptions): Self = this.set("aroonoscillator", value.asInstanceOf[js.Any])
+    def setAtrUndefined: Self = StObject.set(x, "atr", js.undefined)
     
     @scala.inline
-    def deleteAroonoscillator: Self = this.set("aroonoscillator", js.undefined)
+    def setBar(value: PlotBarOptions): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtr(value: PlotAtrOptions): Self = this.set("atr", value.asInstanceOf[js.Any])
+    def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
     @scala.inline
-    def deleteAtr: Self = this.set("atr", js.undefined)
+    def setBb(value: PlotBbOptions): Self = StObject.set(x, "bb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBar(value: PlotBarOptions): Self = this.set("bar", value.asInstanceOf[js.Any])
+    def setBbUndefined: Self = StObject.set(x, "bb", js.undefined)
     
     @scala.inline
-    def deleteBar: Self = this.set("bar", js.undefined)
+    def setBellcurve(value: PlotBellcurveOptions): Self = StObject.set(x, "bellcurve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBb(value: PlotBbOptions): Self = this.set("bb", value.asInstanceOf[js.Any])
+    def setBellcurveUndefined: Self = StObject.set(x, "bellcurve", js.undefined)
     
     @scala.inline
-    def deleteBb: Self = this.set("bb", js.undefined)
+    def setBoxplot(value: PlotBoxplotOptions): Self = StObject.set(x, "boxplot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBellcurve(value: PlotBellcurveOptions): Self = this.set("bellcurve", value.asInstanceOf[js.Any])
+    def setBoxplotUndefined: Self = StObject.set(x, "boxplot", js.undefined)
     
     @scala.inline
-    def deleteBellcurve: Self = this.set("bellcurve", js.undefined)
+    def setBubble(value: PlotBubbleOptions): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxplot(value: PlotBoxplotOptions): Self = this.set("boxplot", value.asInstanceOf[js.Any])
+    def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
     
     @scala.inline
-    def deleteBoxplot: Self = this.set("boxplot", js.undefined)
+    def setBullet(value: PlotBulletOptions): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubble(value: PlotBubbleOptions): Self = this.set("bubble", value.asInstanceOf[js.Any])
+    def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
     
     @scala.inline
-    def deleteBubble: Self = this.set("bubble", js.undefined)
+    def setCandlestick(value: PlotCandlestickOptions): Self = StObject.set(x, "candlestick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBullet(value: PlotBulletOptions): Self = this.set("bullet", value.asInstanceOf[js.Any])
+    def setCandlestickUndefined: Self = StObject.set(x, "candlestick", js.undefined)
     
     @scala.inline
-    def deleteBullet: Self = this.set("bullet", js.undefined)
+    def setCci(value: PlotCciOptions): Self = StObject.set(x, "cci", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandlestick(value: PlotCandlestickOptions): Self = this.set("candlestick", value.asInstanceOf[js.Any])
+    def setCciUndefined: Self = StObject.set(x, "cci", js.undefined)
     
     @scala.inline
-    def deleteCandlestick: Self = this.set("candlestick", js.undefined)
+    def setChaikin(value: PlotChaikinOptions): Self = StObject.set(x, "chaikin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCci(value: PlotCciOptions): Self = this.set("cci", value.asInstanceOf[js.Any])
+    def setChaikinUndefined: Self = StObject.set(x, "chaikin", js.undefined)
     
     @scala.inline
-    def deleteCci: Self = this.set("cci", js.undefined)
+    def setCmf(value: PlotCmfOptions): Self = StObject.set(x, "cmf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChaikin(value: PlotChaikinOptions): Self = this.set("chaikin", value.asInstanceOf[js.Any])
+    def setCmfUndefined: Self = StObject.set(x, "cmf", js.undefined)
     
     @scala.inline
-    def deleteChaikin: Self = this.set("chaikin", js.undefined)
+    def setColumn(value: PlotColumnOptions): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmf(value: PlotCmfOptions): Self = this.set("cmf", value.asInstanceOf[js.Any])
+    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     @scala.inline
-    def deleteCmf: Self = this.set("cmf", js.undefined)
+    def setColumnpyramid(value: PlotColumnpyramidOptions): Self = StObject.set(x, "columnpyramid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: PlotColumnOptions): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setColumnpyramidUndefined: Self = StObject.set(x, "columnpyramid", js.undefined)
     
     @scala.inline
-    def deleteColumn: Self = this.set("column", js.undefined)
+    def setColumnrange(value: PlotColumnrangeOptions): Self = StObject.set(x, "columnrange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnpyramid(value: PlotColumnpyramidOptions): Self = this.set("columnpyramid", value.asInstanceOf[js.Any])
+    def setColumnrangeUndefined: Self = StObject.set(x, "columnrange", js.undefined)
     
     @scala.inline
-    def deleteColumnpyramid: Self = this.set("columnpyramid", js.undefined)
+    def setCylinder(value: PlotCylinderOptions): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnrange(value: PlotColumnrangeOptions): Self = this.set("columnrange", value.asInstanceOf[js.Any])
+    def setCylinderUndefined: Self = StObject.set(x, "cylinder", js.undefined)
     
     @scala.inline
-    def deleteColumnrange: Self = this.set("columnrange", js.undefined)
+    def setDema(value: PlotDemaOptions): Self = StObject.set(x, "dema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCylinder(value: PlotCylinderOptions): Self = this.set("cylinder", value.asInstanceOf[js.Any])
+    def setDemaUndefined: Self = StObject.set(x, "dema", js.undefined)
     
     @scala.inline
-    def deleteCylinder: Self = this.set("cylinder", js.undefined)
+    def setDependencywheel(value: PlotDependencywheelOptions): Self = StObject.set(x, "dependencywheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDema(value: PlotDemaOptions): Self = this.set("dema", value.asInstanceOf[js.Any])
+    def setDependencywheelUndefined: Self = StObject.set(x, "dependencywheel", js.undefined)
     
     @scala.inline
-    def deleteDema: Self = this.set("dema", js.undefined)
+    def setDpo(value: PlotDpoOptions): Self = StObject.set(x, "dpo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencywheel(value: PlotDependencywheelOptions): Self = this.set("dependencywheel", value.asInstanceOf[js.Any])
+    def setDpoUndefined: Self = StObject.set(x, "dpo", js.undefined)
     
     @scala.inline
-    def deleteDependencywheel: Self = this.set("dependencywheel", js.undefined)
+    def setDumbbell(value: PlotDumbbellOptions): Self = StObject.set(x, "dumbbell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpo(value: PlotDpoOptions): Self = this.set("dpo", value.asInstanceOf[js.Any])
+    def setDumbbellUndefined: Self = StObject.set(x, "dumbbell", js.undefined)
     
     @scala.inline
-    def deleteDpo: Self = this.set("dpo", js.undefined)
+    def setEma(value: PlotEmaOptions): Self = StObject.set(x, "ema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDumbbell(value: PlotDumbbellOptions): Self = this.set("dumbbell", value.asInstanceOf[js.Any])
+    def setEmaUndefined: Self = StObject.set(x, "ema", js.undefined)
     
     @scala.inline
-    def deleteDumbbell: Self = this.set("dumbbell", js.undefined)
+    def setErrorbar(value: PlotErrorbarOptions): Self = StObject.set(x, "errorbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEma(value: PlotEmaOptions): Self = this.set("ema", value.asInstanceOf[js.Any])
+    def setErrorbarUndefined: Self = StObject.set(x, "errorbar", js.undefined)
     
     @scala.inline
-    def deleteEma: Self = this.set("ema", js.undefined)
+    def setFlags(value: PlotFlagsOptions): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorbar(value: PlotErrorbarOptions): Self = this.set("errorbar", value.asInstanceOf[js.Any])
+    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def deleteErrorbar: Self = this.set("errorbar", js.undefined)
+    def setFunnel(value: PlotFunnelOptions): Self = StObject.set(x, "funnel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: PlotFlagsOptions): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setFunnel3d(value: PlotFunnel3dOptions): Self = StObject.set(x, "funnel3d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlags: Self = this.set("flags", js.undefined)
+    def setFunnel3dUndefined: Self = StObject.set(x, "funnel3d", js.undefined)
     
     @scala.inline
-    def setFunnel(value: PlotFunnelOptions): Self = this.set("funnel", value.asInstanceOf[js.Any])
+    def setFunnelUndefined: Self = StObject.set(x, "funnel", js.undefined)
     
     @scala.inline
-    def deleteFunnel: Self = this.set("funnel", js.undefined)
+    def setGantt(value: PlotGanttOptions): Self = StObject.set(x, "gantt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunnel3d(value: PlotFunnel3dOptions): Self = this.set("funnel3d", value.asInstanceOf[js.Any])
+    def setGanttUndefined: Self = StObject.set(x, "gantt", js.undefined)
     
     @scala.inline
-    def deleteFunnel3d: Self = this.set("funnel3d", js.undefined)
+    def setGauge(value: PlotGaugeOptions): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGantt(value: PlotGanttOptions): Self = this.set("gantt", value.asInstanceOf[js.Any])
+    def setGaugeUndefined: Self = StObject.set(x, "gauge", js.undefined)
     
     @scala.inline
-    def deleteGantt: Self = this.set("gantt", js.undefined)
+    def setHeatmap(value: PlotHeatmapOptions): Self = StObject.set(x, "heatmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGauge(value: PlotGaugeOptions): Self = this.set("gauge", value.asInstanceOf[js.Any])
+    def setHeatmapUndefined: Self = StObject.set(x, "heatmap", js.undefined)
     
     @scala.inline
-    def deleteGauge: Self = this.set("gauge", js.undefined)
+    def setHistogram(value: PlotHistogramOptions): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeatmap(value: PlotHeatmapOptions): Self = this.set("heatmap", value.asInstanceOf[js.Any])
+    def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
     
     @scala.inline
-    def deleteHeatmap: Self = this.set("heatmap", js.undefined)
+    def setIkh(value: PlotIkhOptions): Self = StObject.set(x, "ikh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistogram(value: PlotHistogramOptions): Self = this.set("histogram", value.asInstanceOf[js.Any])
+    def setIkhUndefined: Self = StObject.set(x, "ikh", js.undefined)
     
     @scala.inline
-    def deleteHistogram: Self = this.set("histogram", js.undefined)
+    def setItem(value: PlotItemOptions): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIkh(value: PlotIkhOptions): Self = this.set("ikh", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteIkh: Self = this.set("ikh", js.undefined)
+    def setKeltnerchannels(value: PlotKeltnerchannelsOptions): Self = StObject.set(x, "keltnerchannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: PlotItemOptions): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setKeltnerchannelsUndefined: Self = StObject.set(x, "keltnerchannels", js.undefined)
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setLine(value: PlotLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeltnerchannels(value: PlotKeltnerchannelsOptions): Self = this.set("keltnerchannels", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteKeltnerchannels: Self = this.set("keltnerchannels", js.undefined)
+    def setLinearregression(value: PlotLinearregressionOptions): Self = StObject.set(x, "linearregression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: PlotLineOptions): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setLinearregressionUndefined: Self = StObject.set(x, "linearregression", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setLinearregressionangle(value: PlotLinearregressionangleOptions): Self = StObject.set(x, "linearregressionangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearregression(value: PlotLinearregressionOptions): Self = this.set("linearregression", value.asInstanceOf[js.Any])
+    def setLinearregressionangleUndefined: Self = StObject.set(x, "linearregressionangle", js.undefined)
     
     @scala.inline
-    def deleteLinearregression: Self = this.set("linearregression", js.undefined)
+    def setLinearregressionintercept(value: PlotLinearregressioninterceptOptions): Self = StObject.set(x, "linearregressionintercept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearregressionangle(value: PlotLinearregressionangleOptions): Self = this.set("linearregressionangle", value.asInstanceOf[js.Any])
+    def setLinearregressioninterceptUndefined: Self = StObject.set(x, "linearregressionintercept", js.undefined)
     
     @scala.inline
-    def deleteLinearregressionangle: Self = this.set("linearregressionangle", js.undefined)
+    def setLinearregressionslope(value: PlotLinearregressionslopeOptions): Self = StObject.set(x, "linearregressionslope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearregressionintercept(value: PlotLinearregressioninterceptOptions): Self = this.set("linearregressionintercept", value.asInstanceOf[js.Any])
+    def setLinearregressionslopeUndefined: Self = StObject.set(x, "linearregressionslope", js.undefined)
     
     @scala.inline
-    def deleteLinearregressionintercept: Self = this.set("linearregressionintercept", js.undefined)
+    def setLollipop(value: PlotLollipopOptions): Self = StObject.set(x, "lollipop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearregressionslope(value: PlotLinearregressionslopeOptions): Self = this.set("linearregressionslope", value.asInstanceOf[js.Any])
+    def setLollipopUndefined: Self = StObject.set(x, "lollipop", js.undefined)
     
     @scala.inline
-    def deleteLinearregressionslope: Self = this.set("linearregressionslope", js.undefined)
+    def setMacd(value: PlotMacdOptions): Self = StObject.set(x, "macd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLollipop(value: PlotLollipopOptions): Self = this.set("lollipop", value.asInstanceOf[js.Any])
+    def setMacdUndefined: Self = StObject.set(x, "macd", js.undefined)
     
     @scala.inline
-    def deleteLollipop: Self = this.set("lollipop", js.undefined)
+    def setMap(value: PlotMapOptions): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMacd(value: PlotMacdOptions): Self = this.set("macd", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteMacd: Self = this.set("macd", js.undefined)
+    def setMapbubble(value: PlotMapbubbleOptions): Self = StObject.set(x, "mapbubble", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: PlotMapOptions): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMapbubbleUndefined: Self = StObject.set(x, "mapbubble", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setMapline(value: PlotMaplineOptions): Self = StObject.set(x, "mapline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapbubble(value: PlotMapbubbleOptions): Self = this.set("mapbubble", value.asInstanceOf[js.Any])
+    def setMaplineUndefined: Self = StObject.set(x, "mapline", js.undefined)
     
     @scala.inline
-    def deleteMapbubble: Self = this.set("mapbubble", js.undefined)
+    def setMappoint(value: PlotMappointOptions): Self = StObject.set(x, "mappoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapline(value: PlotMaplineOptions): Self = this.set("mapline", value.asInstanceOf[js.Any])
+    def setMappointUndefined: Self = StObject.set(x, "mappoint", js.undefined)
     
     @scala.inline
-    def deleteMapline: Self = this.set("mapline", js.undefined)
+    def setMfi(value: PlotMfiOptions): Self = StObject.set(x, "mfi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMappoint(value: PlotMappointOptions): Self = this.set("mappoint", value.asInstanceOf[js.Any])
+    def setMfiUndefined: Self = StObject.set(x, "mfi", js.undefined)
     
     @scala.inline
-    def deleteMappoint: Self = this.set("mappoint", js.undefined)
+    def setMomentum(value: PlotMomentumOptions): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMfi(value: PlotMfiOptions): Self = this.set("mfi", value.asInstanceOf[js.Any])
+    def setMomentumUndefined: Self = StObject.set(x, "momentum", js.undefined)
     
     @scala.inline
-    def deleteMfi: Self = this.set("mfi", js.undefined)
+    def setNatr(value: PlotNatrOptions): Self = StObject.set(x, "natr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMomentum(value: PlotMomentumOptions): Self = this.set("momentum", value.asInstanceOf[js.Any])
+    def setNatrUndefined: Self = StObject.set(x, "natr", js.undefined)
     
     @scala.inline
-    def deleteMomentum: Self = this.set("momentum", js.undefined)
+    def setNetworkgraph(value: PlotNetworkgraphOptions): Self = StObject.set(x, "networkgraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatr(value: PlotNatrOptions): Self = this.set("natr", value.asInstanceOf[js.Any])
+    def setNetworkgraphUndefined: Self = StObject.set(x, "networkgraph", js.undefined)
     
     @scala.inline
-    def deleteNatr: Self = this.set("natr", js.undefined)
+    def setOhlc(value: PlotOhlcOptions): Self = StObject.set(x, "ohlc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkgraph(value: PlotNetworkgraphOptions): Self = this.set("networkgraph", value.asInstanceOf[js.Any])
+    def setOhlcUndefined: Self = StObject.set(x, "ohlc", js.undefined)
     
     @scala.inline
-    def deleteNetworkgraph: Self = this.set("networkgraph", js.undefined)
+    def setOrganization(value: PlotOrganizationOptions): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOhlc(value: PlotOhlcOptions): Self = this.set("ohlc", value.asInstanceOf[js.Any])
+    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
     @scala.inline
-    def deleteOhlc: Self = this.set("ohlc", js.undefined)
+    def setPackedbubble(value: PlotPackedbubbleOptions): Self = StObject.set(x, "packedbubble", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: PlotOrganizationOptions): Self = this.set("organization", value.asInstanceOf[js.Any])
+    def setPackedbubbleUndefined: Self = StObject.set(x, "packedbubble", js.undefined)
     
     @scala.inline
-    def deleteOrganization: Self = this.set("organization", js.undefined)
+    def setPareto(value: PlotParetoOptions): Self = StObject.set(x, "pareto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackedbubble(value: PlotPackedbubbleOptions): Self = this.set("packedbubble", value.asInstanceOf[js.Any])
+    def setParetoUndefined: Self = StObject.set(x, "pareto", js.undefined)
     
     @scala.inline
-    def deletePackedbubble: Self = this.set("packedbubble", js.undefined)
+    def setPc(value: PlotPcOptions): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPareto(value: PlotParetoOptions): Self = this.set("pareto", value.asInstanceOf[js.Any])
+    def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
     
     @scala.inline
-    def deletePareto: Self = this.set("pareto", js.undefined)
+    def setPie(value: PlotPieOptions): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPc(value: PlotPcOptions): Self = this.set("pc", value.asInstanceOf[js.Any])
+    def setPieUndefined: Self = StObject.set(x, "pie", js.undefined)
     
     @scala.inline
-    def deletePc: Self = this.set("pc", js.undefined)
+    def setPivotpoints(value: PlotPivotpointsOptions): Self = StObject.set(x, "pivotpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPie(value: PlotPieOptions): Self = this.set("pie", value.asInstanceOf[js.Any])
+    def setPivotpointsUndefined: Self = StObject.set(x, "pivotpoints", js.undefined)
     
     @scala.inline
-    def deletePie: Self = this.set("pie", js.undefined)
+    def setPolygon(value: PlotPolygonOptions): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotpoints(value: PlotPivotpointsOptions): Self = this.set("pivotpoints", value.asInstanceOf[js.Any])
+    def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
     
     @scala.inline
-    def deletePivotpoints: Self = this.set("pivotpoints", js.undefined)
+    def setPpo(value: PlotPpoOptions): Self = StObject.set(x, "ppo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygon(value: PlotPolygonOptions): Self = this.set("polygon", value.asInstanceOf[js.Any])
+    def setPpoUndefined: Self = StObject.set(x, "ppo", js.undefined)
     
     @scala.inline
-    def deletePolygon: Self = this.set("polygon", js.undefined)
+    def setPriceenvelopes(value: PlotPriceenvelopesOptions): Self = StObject.set(x, "priceenvelopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPpo(value: PlotPpoOptions): Self = this.set("ppo", value.asInstanceOf[js.Any])
+    def setPriceenvelopesUndefined: Self = StObject.set(x, "priceenvelopes", js.undefined)
     
     @scala.inline
-    def deletePpo: Self = this.set("ppo", js.undefined)
+    def setPsar(value: PlotPsarOptions): Self = StObject.set(x, "psar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceenvelopes(value: PlotPriceenvelopesOptions): Self = this.set("priceenvelopes", value.asInstanceOf[js.Any])
+    def setPsarUndefined: Self = StObject.set(x, "psar", js.undefined)
     
     @scala.inline
-    def deletePriceenvelopes: Self = this.set("priceenvelopes", js.undefined)
+    def setPyramid(value: PlotPyramidOptions): Self = StObject.set(x, "pyramid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPsar(value: PlotPsarOptions): Self = this.set("psar", value.asInstanceOf[js.Any])
+    def setPyramid3d(value: PlotPyramid3dOptions): Self = StObject.set(x, "pyramid3d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePsar: Self = this.set("psar", js.undefined)
+    def setPyramid3dUndefined: Self = StObject.set(x, "pyramid3d", js.undefined)
     
     @scala.inline
-    def setPyramid(value: PlotPyramidOptions): Self = this.set("pyramid", value.asInstanceOf[js.Any])
+    def setPyramidUndefined: Self = StObject.set(x, "pyramid", js.undefined)
     
     @scala.inline
-    def deletePyramid: Self = this.set("pyramid", js.undefined)
+    def setRoc(value: PlotRocOptions): Self = StObject.set(x, "roc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPyramid3d(value: PlotPyramid3dOptions): Self = this.set("pyramid3d", value.asInstanceOf[js.Any])
+    def setRocUndefined: Self = StObject.set(x, "roc", js.undefined)
     
     @scala.inline
-    def deletePyramid3d: Self = this.set("pyramid3d", js.undefined)
+    def setRsi(value: PlotRsiOptions): Self = StObject.set(x, "rsi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoc(value: PlotRocOptions): Self = this.set("roc", value.asInstanceOf[js.Any])
+    def setRsiUndefined: Self = StObject.set(x, "rsi", js.undefined)
     
     @scala.inline
-    def deleteRoc: Self = this.set("roc", js.undefined)
+    def setSankey(value: PlotSankeyOptions): Self = StObject.set(x, "sankey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsi(value: PlotRsiOptions): Self = this.set("rsi", value.asInstanceOf[js.Any])
+    def setSankeyUndefined: Self = StObject.set(x, "sankey", js.undefined)
     
     @scala.inline
-    def deleteRsi: Self = this.set("rsi", js.undefined)
+    def setScatter(value: PlotScatterOptions): Self = StObject.set(x, "scatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSankey(value: PlotSankeyOptions): Self = this.set("sankey", value.asInstanceOf[js.Any])
+    def setScatter3d(value: PlotScatter3dOptions): Self = StObject.set(x, "scatter3d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSankey: Self = this.set("sankey", js.undefined)
+    def setScatter3dUndefined: Self = StObject.set(x, "scatter3d", js.undefined)
     
     @scala.inline
-    def setScatter(value: PlotScatterOptions): Self = this.set("scatter", value.asInstanceOf[js.Any])
+    def setScatterUndefined: Self = StObject.set(x, "scatter", js.undefined)
     
     @scala.inline
-    def deleteScatter: Self = this.set("scatter", js.undefined)
+    def setSeries(value: PlotSeriesOptions): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScatter3d(value: PlotScatter3dOptions): Self = this.set("scatter3d", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteScatter3d: Self = this.set("scatter3d", js.undefined)
+    def setSlowstochastic(value: PlotSlowstochasticOptions): Self = StObject.set(x, "slowstochastic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: PlotSeriesOptions): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSlowstochasticUndefined: Self = StObject.set(x, "slowstochastic", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSma(value: PlotSmaOptions): Self = StObject.set(x, "sma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlowstochastic(value: PlotSlowstochasticOptions): Self = this.set("slowstochastic", value.asInstanceOf[js.Any])
+    def setSmaUndefined: Self = StObject.set(x, "sma", js.undefined)
     
     @scala.inline
-    def deleteSlowstochastic: Self = this.set("slowstochastic", js.undefined)
+    def setSolidgauge(value: PlotSolidgaugeOptions): Self = StObject.set(x, "solidgauge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSma(value: PlotSmaOptions): Self = this.set("sma", value.asInstanceOf[js.Any])
+    def setSolidgaugeUndefined: Self = StObject.set(x, "solidgauge", js.undefined)
     
     @scala.inline
-    def deleteSma: Self = this.set("sma", js.undefined)
+    def setSpline(value: PlotSplineOptions): Self = StObject.set(x, "spline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSolidgauge(value: PlotSolidgaugeOptions): Self = this.set("solidgauge", value.asInstanceOf[js.Any])
+    def setSplineUndefined: Self = StObject.set(x, "spline", js.undefined)
     
     @scala.inline
-    def deleteSolidgauge: Self = this.set("solidgauge", js.undefined)
+    def setStochastic(value: PlotStochasticOptions): Self = StObject.set(x, "stochastic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpline(value: PlotSplineOptions): Self = this.set("spline", value.asInstanceOf[js.Any])
+    def setStochasticUndefined: Self = StObject.set(x, "stochastic", js.undefined)
     
     @scala.inline
-    def deleteSpline: Self = this.set("spline", js.undefined)
+    def setStreamgraph(value: PlotStreamgraphOptions): Self = StObject.set(x, "streamgraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStochastic(value: PlotStochasticOptions): Self = this.set("stochastic", value.asInstanceOf[js.Any])
+    def setStreamgraphUndefined: Self = StObject.set(x, "streamgraph", js.undefined)
     
     @scala.inline
-    def deleteStochastic: Self = this.set("stochastic", js.undefined)
+    def setSunburst(value: PlotSunburstOptions): Self = StObject.set(x, "sunburst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamgraph(value: PlotStreamgraphOptions): Self = this.set("streamgraph", value.asInstanceOf[js.Any])
+    def setSunburstUndefined: Self = StObject.set(x, "sunburst", js.undefined)
     
     @scala.inline
-    def deleteStreamgraph: Self = this.set("streamgraph", js.undefined)
+    def setSupertrend(value: PlotSupertrendOptions): Self = StObject.set(x, "supertrend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSunburst(value: PlotSunburstOptions): Self = this.set("sunburst", value.asInstanceOf[js.Any])
+    def setSupertrendUndefined: Self = StObject.set(x, "supertrend", js.undefined)
     
     @scala.inline
-    def deleteSunburst: Self = this.set("sunburst", js.undefined)
+    def setTema(value: PlotTemaOptions): Self = StObject.set(x, "tema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupertrend(value: PlotSupertrendOptions): Self = this.set("supertrend", value.asInstanceOf[js.Any])
+    def setTemaUndefined: Self = StObject.set(x, "tema", js.undefined)
     
     @scala.inline
-    def deleteSupertrend: Self = this.set("supertrend", js.undefined)
+    def setTilemap(value: PlotTilemapOptions): Self = StObject.set(x, "tilemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTema(value: PlotTemaOptions): Self = this.set("tema", value.asInstanceOf[js.Any])
+    def setTilemapUndefined: Self = StObject.set(x, "tilemap", js.undefined)
     
     @scala.inline
-    def deleteTema: Self = this.set("tema", js.undefined)
+    def setTimeline(value: PlotTimelineOptions): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTilemap(value: PlotTilemapOptions): Self = this.set("tilemap", value.asInstanceOf[js.Any])
+    def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
     
     @scala.inline
-    def deleteTilemap: Self = this.set("tilemap", js.undefined)
+    def setTreemap(value: PlotTreemapOptions): Self = StObject.set(x, "treemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeline(value: PlotTimelineOptions): Self = this.set("timeline", value.asInstanceOf[js.Any])
+    def setTreemapUndefined: Self = StObject.set(x, "treemap", js.undefined)
     
     @scala.inline
-    def deleteTimeline: Self = this.set("timeline", js.undefined)
+    def setTrendline(value: PlotTrendlineOptions): Self = StObject.set(x, "trendline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreemap(value: PlotTreemapOptions): Self = this.set("treemap", value.asInstanceOf[js.Any])
+    def setTrendlineUndefined: Self = StObject.set(x, "trendline", js.undefined)
     
     @scala.inline
-    def deleteTreemap: Self = this.set("treemap", js.undefined)
+    def setTrix(value: PlotTrixOptions): Self = StObject.set(x, "trix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrendline(value: PlotTrendlineOptions): Self = this.set("trendline", value.asInstanceOf[js.Any])
+    def setTrixUndefined: Self = StObject.set(x, "trix", js.undefined)
     
     @scala.inline
-    def deleteTrendline: Self = this.set("trendline", js.undefined)
+    def setVariablepie(value: PlotVariablepieOptions): Self = StObject.set(x, "variablepie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrix(value: PlotTrixOptions): Self = this.set("trix", value.asInstanceOf[js.Any])
+    def setVariablepieUndefined: Self = StObject.set(x, "variablepie", js.undefined)
     
     @scala.inline
-    def deleteTrix: Self = this.set("trix", js.undefined)
+    def setVariwide(value: PlotVariwideOptions): Self = StObject.set(x, "variwide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariablepie(value: PlotVariablepieOptions): Self = this.set("variablepie", value.asInstanceOf[js.Any])
+    def setVariwideUndefined: Self = StObject.set(x, "variwide", js.undefined)
     
     @scala.inline
-    def deleteVariablepie: Self = this.set("variablepie", js.undefined)
+    def setVbp(value: PlotVbpOptions): Self = StObject.set(x, "vbp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariwide(value: PlotVariwideOptions): Self = this.set("variwide", value.asInstanceOf[js.Any])
+    def setVbpUndefined: Self = StObject.set(x, "vbp", js.undefined)
     
     @scala.inline
-    def deleteVariwide: Self = this.set("variwide", js.undefined)
+    def setVector(value: PlotVectorOptions): Self = StObject.set(x, "vector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVbp(value: PlotVbpOptions): Self = this.set("vbp", value.asInstanceOf[js.Any])
+    def setVectorUndefined: Self = StObject.set(x, "vector", js.undefined)
     
     @scala.inline
-    def deleteVbp: Self = this.set("vbp", js.undefined)
+    def setVenn(value: PlotVennOptions): Self = StObject.set(x, "venn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVector(value: PlotVectorOptions): Self = this.set("vector", value.asInstanceOf[js.Any])
+    def setVennUndefined: Self = StObject.set(x, "venn", js.undefined)
     
     @scala.inline
-    def deleteVector: Self = this.set("vector", js.undefined)
+    def setVwap(value: PlotVwapOptions): Self = StObject.set(x, "vwap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVenn(value: PlotVennOptions): Self = this.set("venn", value.asInstanceOf[js.Any])
+    def setVwapUndefined: Self = StObject.set(x, "vwap", js.undefined)
     
     @scala.inline
-    def deleteVenn: Self = this.set("venn", js.undefined)
+    def setWaterfall(value: PlotWaterfallOptions): Self = StObject.set(x, "waterfall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVwap(value: PlotVwapOptions): Self = this.set("vwap", value.asInstanceOf[js.Any])
+    def setWaterfallUndefined: Self = StObject.set(x, "waterfall", js.undefined)
     
     @scala.inline
-    def deleteVwap: Self = this.set("vwap", js.undefined)
+    def setWilliamsr(value: PlotWilliamsrOptions): Self = StObject.set(x, "williamsr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaterfall(value: PlotWaterfallOptions): Self = this.set("waterfall", value.asInstanceOf[js.Any])
+    def setWilliamsrUndefined: Self = StObject.set(x, "williamsr", js.undefined)
     
     @scala.inline
-    def deleteWaterfall: Self = this.set("waterfall", js.undefined)
+    def setWindbarb(value: PlotWindbarbOptions): Self = StObject.set(x, "windbarb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWilliamsr(value: PlotWilliamsrOptions): Self = this.set("williamsr", value.asInstanceOf[js.Any])
+    def setWindbarbUndefined: Self = StObject.set(x, "windbarb", js.undefined)
     
     @scala.inline
-    def deleteWilliamsr: Self = this.set("williamsr", js.undefined)
+    def setWma(value: PlotWmaOptions): Self = StObject.set(x, "wma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindbarb(value: PlotWindbarbOptions): Self = this.set("windbarb", value.asInstanceOf[js.Any])
+    def setWmaUndefined: Self = StObject.set(x, "wma", js.undefined)
     
     @scala.inline
-    def deleteWindbarb: Self = this.set("windbarb", js.undefined)
+    def setWordcloud(value: PlotWordcloudOptions): Self = StObject.set(x, "wordcloud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWma(value: PlotWmaOptions): Self = this.set("wma", value.asInstanceOf[js.Any])
+    def setWordcloudUndefined: Self = StObject.set(x, "wordcloud", js.undefined)
     
     @scala.inline
-    def deleteWma: Self = this.set("wma", js.undefined)
+    def setXrange(value: PlotXrangeOptions): Self = StObject.set(x, "xrange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordcloud(value: PlotWordcloudOptions): Self = this.set("wordcloud", value.asInstanceOf[js.Any])
+    def setXrangeUndefined: Self = StObject.set(x, "xrange", js.undefined)
     
     @scala.inline
-    def deleteWordcloud: Self = this.set("wordcloud", js.undefined)
+    def setZigzag(value: PlotZigzagOptions): Self = StObject.set(x, "zigzag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXrange(value: PlotXrangeOptions): Self = this.set("xrange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXrange: Self = this.set("xrange", js.undefined)
-    
-    @scala.inline
-    def setZigzag(value: PlotZigzagOptions): Self = this.set("zigzag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZigzag: Self = this.set("zigzag", js.undefined)
+    def setZigzagUndefined: Self = StObject.set(x, "zigzag", js.undefined)
   }
 }

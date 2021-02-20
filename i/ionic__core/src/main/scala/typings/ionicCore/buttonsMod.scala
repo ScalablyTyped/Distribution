@@ -1,14 +1,14 @@
 package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/buttons/buttons", JSImport.Namespace)
-@js.native
-object buttonsMod extends js.Object {
+object buttonsMod {
   
+  @JSImport("@ionic/core/dist/types/components/buttons/buttons", "Buttons")
   @js.native
   class Buttons () extends ComponentInterface {
     

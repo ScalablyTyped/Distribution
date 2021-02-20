@@ -1,5 +1,6 @@
 package typings.oauth2Implicit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("oauth2-implicit", JSImport.Namespace)
 @js.native
-object oauth2ImplicitRequire extends js.Object
+object oauth2ImplicitRequire extends StObject

@@ -1,6 +1,7 @@
 package typings.mangopay2NodejsSdk.mod.user
 
 import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,27 +40,15 @@ object UserData {
   }
   
   @scala.inline
-  implicit class UserDataOps[Self <: UserData] (val x: Self) extends AnyVal {
+  implicit class UserDataMutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKYCLevel(value: KYCLevel): Self = StObject.set(x, "KYCLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEmail(value: String): Self = this.set("Email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKYCLevel(value: KYCLevel): Self = this.set("KYCLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPersonType(value: PersonType): Self = this.set("PersonType", value.asInstanceOf[js.Any])
+    def setPersonType(value: PersonType): Self = StObject.set(x, "PersonType", value.asInstanceOf[js.Any])
   }
 }

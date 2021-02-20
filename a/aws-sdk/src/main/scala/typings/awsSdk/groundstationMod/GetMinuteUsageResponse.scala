@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMinuteUsageResponse extends js.Object {
+trait GetMinuteUsageResponse extends StObject {
   
   /**
     * Estimated number of minutes remaining for an account, specific to the month being requested.
@@ -41,48 +42,36 @@ object GetMinuteUsageResponse {
   }
   
   @scala.inline
-  implicit class GetMinuteUsageResponseOps[Self <: GetMinuteUsageResponse] (val x: Self) extends AnyVal {
+  implicit class GetMinuteUsageResponseMutableBuilder[Self <: GetMinuteUsageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEstimatedMinutesRemaining(value: Integer): Self = StObject.set(x, "estimatedMinutesRemaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEstimatedMinutesRemainingUndefined: Self = StObject.set(x, "estimatedMinutesRemaining", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsReservedMinutesCustomer(value: Boolean): Self = StObject.set(x, "isReservedMinutesCustomer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedMinutesRemaining(value: Integer): Self = this.set("estimatedMinutesRemaining", value.asInstanceOf[js.Any])
+    def setIsReservedMinutesCustomerUndefined: Self = StObject.set(x, "isReservedMinutesCustomer", js.undefined)
     
     @scala.inline
-    def deleteEstimatedMinutesRemaining: Self = this.set("estimatedMinutesRemaining", js.undefined)
+    def setTotalReservedMinuteAllocation(value: Integer): Self = StObject.set(x, "totalReservedMinuteAllocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReservedMinutesCustomer(value: Boolean): Self = this.set("isReservedMinutesCustomer", value.asInstanceOf[js.Any])
+    def setTotalReservedMinuteAllocationUndefined: Self = StObject.set(x, "totalReservedMinuteAllocation", js.undefined)
     
     @scala.inline
-    def deleteIsReservedMinutesCustomer: Self = this.set("isReservedMinutesCustomer", js.undefined)
+    def setTotalScheduledMinutes(value: Integer): Self = StObject.set(x, "totalScheduledMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalReservedMinuteAllocation(value: Integer): Self = this.set("totalReservedMinuteAllocation", value.asInstanceOf[js.Any])
+    def setTotalScheduledMinutesUndefined: Self = StObject.set(x, "totalScheduledMinutes", js.undefined)
     
     @scala.inline
-    def deleteTotalReservedMinuteAllocation: Self = this.set("totalReservedMinuteAllocation", js.undefined)
+    def setUpcomingMinutesScheduled(value: Integer): Self = StObject.set(x, "upcomingMinutesScheduled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalScheduledMinutes(value: Integer): Self = this.set("totalScheduledMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalScheduledMinutes: Self = this.set("totalScheduledMinutes", js.undefined)
-    
-    @scala.inline
-    def setUpcomingMinutesScheduled(value: Integer): Self = this.set("upcomingMinutesScheduled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpcomingMinutesScheduled: Self = this.set("upcomingMinutesScheduled", js.undefined)
+    def setUpcomingMinutesScheduledUndefined: Self = StObject.set(x, "upcomingMinutesScheduled", js.undefined)
   }
 }

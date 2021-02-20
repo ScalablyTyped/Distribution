@@ -3,6 +3,7 @@ package typings.webpack.anon
 import typings.webpack.webpackOptionsMod.RuleSetConditionOrConditions
 import typings.webpack.webpackOptionsMod.RuleSetConditions
 import typings.webpack.webpackOptionsMod._RuleSetCondition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,63 +50,51 @@ object And {
   }
   
   @scala.inline
-  implicit class AndOps[Self <: And] (val x: Self) extends AnyVal {
+  implicit class AndMutableBuilder[Self <: And] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnd(value: RuleSetConditions): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclude(value: RuleSetConditionOrConditions): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnd(value: RuleSetConditions): Self = this.set("and", value.asInstanceOf[js.Any])
+    def setExcludeFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAnd: Self = this.set("and", js.undefined)
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def setExcludeFunction1(value: /* value */ String => Boolean): Self = this.set("exclude", js.Any.fromFunction1(value))
+    def setInclude(value: RuleSetConditionOrConditions): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: RuleSetConditionOrConditions): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setIncludeFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def setIncludeFunction1(value: /* value */ String => Boolean): Self = this.set("include", js.Any.fromFunction1(value))
+    def setNot(value: RuleSetConditions): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: RuleSetConditionOrConditions): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setOr(value: RuleSetConditions): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNot(value: RuleSetConditions): Self = this.set("not", value.asInstanceOf[js.Any])
+    def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
     
     @scala.inline
-    def deleteNot: Self = this.set("not", js.undefined)
+    def setTest(value: RuleSetConditionOrConditions): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOr(value: RuleSetConditions): Self = this.set("or", value.asInstanceOf[js.Any])
+    def setTestFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOr: Self = this.set("or", js.undefined)
-    
-    @scala.inline
-    def setTestFunction1(value: /* value */ String => Boolean): Self = this.set("test", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTest(value: RuleSetConditionOrConditions): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

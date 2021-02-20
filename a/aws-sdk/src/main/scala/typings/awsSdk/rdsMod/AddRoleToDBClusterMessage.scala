@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddRoleToDBClusterMessage extends js.Object {
+trait AddRoleToDBClusterMessage extends StObject {
   
   /**
     * The name of the DB cluster to associate the IAM role with.
@@ -31,30 +32,18 @@ object AddRoleToDBClusterMessage {
   }
   
   @scala.inline
-  implicit class AddRoleToDBClusterMessageOps[Self <: AddRoleToDBClusterMessage] (val x: Self) extends AnyVal {
+  implicit class AddRoleToDBClusterMessageMutableBuilder[Self <: AddRoleToDBClusterMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeatureName(value: String): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureNameUndefined: Self = StObject.set(x, "FeatureName", js.undefined)
     
     @scala.inline
-    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: String): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFeatureName(value: String): Self = this.set("FeatureName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatureName: Self = this.set("FeatureName", js.undefined)
+    def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

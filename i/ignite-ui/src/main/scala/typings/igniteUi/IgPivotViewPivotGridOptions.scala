@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -154,171 +155,159 @@ object IgPivotViewPivotGridOptions {
   }
   
   @scala.inline
-  implicit class IgPivotViewPivotGridOptionsOps[Self <: IgPivotViewPivotGridOptions] (val x: Self) extends AnyVal {
+  implicit class IgPivotViewPivotGridOptionsMutableBuilder[Self <: IgPivotViewPivotGridOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowHeaderColumnsSorting(value: Boolean): Self = StObject.set(x, "allowHeaderColumnsSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowHeaderColumnsSortingUndefined: Self = StObject.set(x, "allowHeaderColumnsSorting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowHeaderRowsSorting(value: Boolean): Self = StObject.set(x, "allowHeaderRowsSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHeaderColumnsSorting(value: Boolean): Self = this.set("allowHeaderColumnsSorting", value.asInstanceOf[js.Any])
+    def setAllowHeaderRowsSortingUndefined: Self = StObject.set(x, "allowHeaderRowsSorting", js.undefined)
     
     @scala.inline
-    def deleteAllowHeaderColumnsSorting: Self = this.set("allowHeaderColumnsSorting", js.undefined)
+    def setAllowSorting(value: Boolean): Self = StObject.set(x, "allowSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHeaderRowsSorting(value: Boolean): Self = this.set("allowHeaderRowsSorting", value.asInstanceOf[js.Any])
+    def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
     
     @scala.inline
-    def deleteAllowHeaderRowsSorting: Self = this.set("allowHeaderRowsSorting", js.undefined)
+    def setCompactColumnHeaderIndentation(value: Double): Self = StObject.set(x, "compactColumnHeaderIndentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSorting(value: Boolean): Self = this.set("allowSorting", value.asInstanceOf[js.Any])
+    def setCompactColumnHeaderIndentationUndefined: Self = StObject.set(x, "compactColumnHeaderIndentation", js.undefined)
     
     @scala.inline
-    def deleteAllowSorting: Self = this.set("allowSorting", js.undefined)
+    def setCompactColumnHeaders(value: Boolean): Self = StObject.set(x, "compactColumnHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompactColumnHeaderIndentation(value: Double): Self = this.set("compactColumnHeaderIndentation", value.asInstanceOf[js.Any])
+    def setCompactColumnHeadersUndefined: Self = StObject.set(x, "compactColumnHeaders", js.undefined)
     
     @scala.inline
-    def deleteCompactColumnHeaderIndentation: Self = this.set("compactColumnHeaderIndentation", js.undefined)
+    def setCompactRowHeaderIndentation(value: Double): Self = StObject.set(x, "compactRowHeaderIndentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompactColumnHeaders(value: Boolean): Self = this.set("compactColumnHeaders", value.asInstanceOf[js.Any])
+    def setCompactRowHeaderIndentationUndefined: Self = StObject.set(x, "compactRowHeaderIndentation", js.undefined)
     
     @scala.inline
-    def deleteCompactColumnHeaders: Self = this.set("compactColumnHeaders", js.undefined)
+    def setCustomMoveValidation(value: js.Function): Self = StObject.set(x, "customMoveValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompactRowHeaderIndentation(value: Double): Self = this.set("compactRowHeaderIndentation", value.asInstanceOf[js.Any])
+    def setCustomMoveValidationUndefined: Self = StObject.set(x, "customMoveValidation", js.undefined)
     
     @scala.inline
-    def deleteCompactRowHeaderIndentation: Self = this.set("compactRowHeaderIndentation", js.undefined)
+    def setDefaultRowHeaderWidth(value: Double): Self = StObject.set(x, "defaultRowHeaderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMoveValidation(value: js.Function): Self = this.set("customMoveValidation", value.asInstanceOf[js.Any])
+    def setDefaultRowHeaderWidthUndefined: Self = StObject.set(x, "defaultRowHeaderWidth", js.undefined)
     
     @scala.inline
-    def deleteCustomMoveValidation: Self = this.set("customMoveValidation", js.undefined)
+    def setDisableColumnsDropArea(value: Boolean): Self = StObject.set(x, "disableColumnsDropArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRowHeaderWidth(value: Double): Self = this.set("defaultRowHeaderWidth", value.asInstanceOf[js.Any])
+    def setDisableColumnsDropAreaUndefined: Self = StObject.set(x, "disableColumnsDropArea", js.undefined)
     
     @scala.inline
-    def deleteDefaultRowHeaderWidth: Self = this.set("defaultRowHeaderWidth", js.undefined)
+    def setDisableFiltersDropArea(value: Boolean): Self = StObject.set(x, "disableFiltersDropArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableColumnsDropArea(value: Boolean): Self = this.set("disableColumnsDropArea", value.asInstanceOf[js.Any])
+    def setDisableFiltersDropAreaUndefined: Self = StObject.set(x, "disableFiltersDropArea", js.undefined)
     
     @scala.inline
-    def deleteDisableColumnsDropArea: Self = this.set("disableColumnsDropArea", js.undefined)
+    def setDisableMeasuresDropArea(value: Boolean): Self = StObject.set(x, "disableMeasuresDropArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableFiltersDropArea(value: Boolean): Self = this.set("disableFiltersDropArea", value.asInstanceOf[js.Any])
+    def setDisableMeasuresDropAreaUndefined: Self = StObject.set(x, "disableMeasuresDropArea", js.undefined)
     
     @scala.inline
-    def deleteDisableFiltersDropArea: Self = this.set("disableFiltersDropArea", js.undefined)
+    def setDisableRowsDropArea(value: Boolean): Self = StObject.set(x, "disableRowsDropArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableMeasuresDropArea(value: Boolean): Self = this.set("disableMeasuresDropArea", value.asInstanceOf[js.Any])
+    def setDisableRowsDropAreaUndefined: Self = StObject.set(x, "disableRowsDropArea", js.undefined)
     
     @scala.inline
-    def deleteDisableMeasuresDropArea: Self = this.set("disableMeasuresDropArea", js.undefined)
+    def setDragAndDropSettings(value: IgPivotViewPivotGridOptionsDragAndDropSettings): Self = StObject.set(x, "dragAndDropSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableRowsDropArea(value: Boolean): Self = this.set("disableRowsDropArea", value.asInstanceOf[js.Any])
+    def setDragAndDropSettingsUndefined: Self = StObject.set(x, "dragAndDropSettings", js.undefined)
     
     @scala.inline
-    def deleteDisableRowsDropArea: Self = this.set("disableRowsDropArea", js.undefined)
+    def setDropDownParent(value: js.Any): Self = StObject.set(x, "dropDownParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragAndDropSettings(value: IgPivotViewPivotGridOptionsDragAndDropSettings): Self = this.set("dragAndDropSettings", value.asInstanceOf[js.Any])
+    def setDropDownParentUndefined: Self = StObject.set(x, "dropDownParent", js.undefined)
     
     @scala.inline
-    def deleteDragAndDropSettings: Self = this.set("dragAndDropSettings", js.undefined)
+    def setFirstLevelSortDirection(value: js.Any): Self = StObject.set(x, "firstLevelSortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropDownParent(value: js.Any): Self = this.set("dropDownParent", value.asInstanceOf[js.Any])
+    def setFirstLevelSortDirectionUndefined: Self = StObject.set(x, "firstLevelSortDirection", js.undefined)
     
     @scala.inline
-    def deleteDropDownParent: Self = this.set("dropDownParent", js.undefined)
+    def setFirstSortDirection(value: js.Any): Self = StObject.set(x, "firstSortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLevelSortDirection(value: js.Any): Self = this.set("firstLevelSortDirection", value.asInstanceOf[js.Any])
+    def setFirstSortDirectionUndefined: Self = StObject.set(x, "firstSortDirection", js.undefined)
     
     @scala.inline
-    def deleteFirstLevelSortDirection: Self = this.set("firstLevelSortDirection", js.undefined)
+    def setGridOptions(value: IgPivotViewPivotGridOptionsGridOptions): Self = StObject.set(x, "gridOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstSortDirection(value: js.Any): Self = this.set("firstSortDirection", value.asInstanceOf[js.Any])
+    def setGridOptionsUndefined: Self = StObject.set(x, "gridOptions", js.undefined)
     
     @scala.inline
-    def deleteFirstSortDirection: Self = this.set("firstSortDirection", js.undefined)
+    def setHideColumnsDropArea(value: Boolean): Self = StObject.set(x, "hideColumnsDropArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridOptions(value: IgPivotViewPivotGridOptionsGridOptions): Self = this.set("gridOptions", value.asInstanceOf[js.Any])
+    def setHideColumnsDropAreaUndefined: Self = StObject.set(x, "hideColumnsDropArea", js.undefined)
     
     @scala.inline
-    def deleteGridOptions: Self = this.set("gridOptions", js.undefined)
+    def setHideFiltersDropArea(value: Boolean): Self = StObject.set(x, "hideFiltersDropArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideColumnsDropArea(value: Boolean): Self = this.set("hideColumnsDropArea", value.asInstanceOf[js.Any])
+    def setHideFiltersDropAreaUndefined: Self = StObject.set(x, "hideFiltersDropArea", js.undefined)
     
     @scala.inline
-    def deleteHideColumnsDropArea: Self = this.set("hideColumnsDropArea", js.undefined)
+    def setHideMeasuresDropArea(value: Boolean): Self = StObject.set(x, "hideMeasuresDropArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideFiltersDropArea(value: Boolean): Self = this.set("hideFiltersDropArea", value.asInstanceOf[js.Any])
+    def setHideMeasuresDropAreaUndefined: Self = StObject.set(x, "hideMeasuresDropArea", js.undefined)
     
     @scala.inline
-    def deleteHideFiltersDropArea: Self = this.set("hideFiltersDropArea", js.undefined)
+    def setHideRowsDropArea(value: Boolean): Self = StObject.set(x, "hideRowsDropArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideMeasuresDropArea(value: Boolean): Self = this.set("hideMeasuresDropArea", value.asInstanceOf[js.Any])
+    def setHideRowsDropAreaUndefined: Self = StObject.set(x, "hideRowsDropArea", js.undefined)
     
     @scala.inline
-    def deleteHideMeasuresDropArea: Self = this.set("hideMeasuresDropArea", js.undefined)
+    def setIsParentInFrontForColumns(value: Boolean): Self = StObject.set(x, "isParentInFrontForColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideRowsDropArea(value: Boolean): Self = this.set("hideRowsDropArea", value.asInstanceOf[js.Any])
+    def setIsParentInFrontForColumnsUndefined: Self = StObject.set(x, "isParentInFrontForColumns", js.undefined)
     
     @scala.inline
-    def deleteHideRowsDropArea: Self = this.set("hideRowsDropArea", js.undefined)
+    def setIsParentInFrontForRows(value: Boolean): Self = StObject.set(x, "isParentInFrontForRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsParentInFrontForColumns(value: Boolean): Self = this.set("isParentInFrontForColumns", value.asInstanceOf[js.Any])
+    def setIsParentInFrontForRowsUndefined: Self = StObject.set(x, "isParentInFrontForRows", js.undefined)
     
     @scala.inline
-    def deleteIsParentInFrontForColumns: Self = this.set("isParentInFrontForColumns", js.undefined)
+    def setLevelSortDirections(value: js.Array[IgPivotViewPivotGridOptionsLevelSortDirection]): Self = StObject.set(x, "levelSortDirections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsParentInFrontForRows(value: Boolean): Self = this.set("isParentInFrontForRows", value.asInstanceOf[js.Any])
+    def setLevelSortDirectionsUndefined: Self = StObject.set(x, "levelSortDirections", js.undefined)
     
     @scala.inline
-    def deleteIsParentInFrontForRows: Self = this.set("isParentInFrontForRows", js.undefined)
+    def setLevelSortDirectionsVarargs(value: IgPivotViewPivotGridOptionsLevelSortDirection*): Self = StObject.set(x, "levelSortDirections", js.Array(value :_*))
     
     @scala.inline
-    def setLevelSortDirectionsVarargs(value: IgPivotViewPivotGridOptionsLevelSortDirection*): Self = this.set("levelSortDirections", js.Array(value :_*))
+    def setRowHeadersLayout(value: js.Any): Self = StObject.set(x, "rowHeadersLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelSortDirections(value: js.Array[IgPivotViewPivotGridOptionsLevelSortDirection]): Self = this.set("levelSortDirections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevelSortDirections: Self = this.set("levelSortDirections", js.undefined)
-    
-    @scala.inline
-    def setRowHeadersLayout(value: js.Any): Self = this.set("rowHeadersLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowHeadersLayout: Self = this.set("rowHeadersLayout", js.undefined)
+    def setRowHeadersLayoutUndefined: Self = StObject.set(x, "rowHeadersLayout", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AvailableCapacity extends js.Object {
+trait AvailableCapacity extends StObject {
   
   /**
     * The number of instances that can be launched onto the Dedicated Host depending on the host's available capacity. For Dedicated Hosts that support multiple instance types, this parameter represents the number of instances for each instance size that is supported on the host.
@@ -26,33 +27,21 @@ object AvailableCapacity {
   }
   
   @scala.inline
-  implicit class AvailableCapacityOps[Self <: AvailableCapacity] (val x: Self) extends AnyVal {
+  implicit class AvailableCapacityMutableBuilder[Self <: AvailableCapacity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableInstanceCapacity(value: AvailableInstanceCapacityList): Self = StObject.set(x, "AvailableInstanceCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableInstanceCapacityUndefined: Self = StObject.set(x, "AvailableInstanceCapacity", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailableInstanceCapacityVarargs(value: InstanceCapacity*): Self = StObject.set(x, "AvailableInstanceCapacity", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableInstanceCapacityVarargs(value: InstanceCapacity*): Self = this.set("AvailableInstanceCapacity", js.Array(value :_*))
+    def setAvailableVCpus(value: Integer): Self = StObject.set(x, "AvailableVCpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableInstanceCapacity(value: AvailableInstanceCapacityList): Self = this.set("AvailableInstanceCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailableInstanceCapacity: Self = this.set("AvailableInstanceCapacity", js.undefined)
-    
-    @scala.inline
-    def setAvailableVCpus(value: Integer): Self = this.set("AvailableVCpus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailableVCpus: Self = this.set("AvailableVCpus", js.undefined)
+    def setAvailableVCpusUndefined: Self = StObject.set(x, "AvailableVCpus", js.undefined)
   }
 }

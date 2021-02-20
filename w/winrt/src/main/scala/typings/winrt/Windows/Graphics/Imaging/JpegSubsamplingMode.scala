@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JpegSubsamplingMode extends js.Object
+sealed trait JpegSubsamplingMode extends StObject
 @JSGlobal("Windows.Graphics.Imaging.JpegSubsamplingMode")
 @js.native
-object JpegSubsamplingMode extends js.Object {
+object JpegSubsamplingMode extends StObject {
   
   @js.native
   sealed trait default extends JpegSubsamplingMode

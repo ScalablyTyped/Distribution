@@ -1,26 +1,48 @@
 package typings.reactTabsRedux
 
-import typings.react.mod.Component
 import typings.reactTabsRedux.tabContentMod.TabContentProps
 import typings.reactTabsRedux.tabLinkMod.TabLinkProps
 import typings.reactTabsRedux.tabsMod.TabsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-tabs-redux", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("react-tabs-redux", "TabContent")
   @js.native
-  class TabContent ()
-    extends Component[TabContentProps, js.Object, js.Any]
+  class TabContent protected ()
+    extends typings.reactTabsRedux.tabContentMod.TabContent {
+    def this(props: TabContentProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TabContentProps, context: js.Any) = this()
+  }
   
+  @JSImport("react-tabs-redux", "TabLink")
   @js.native
-  class TabLink ()
-    extends Component[TabLinkProps, js.Object, js.Any]
+  class TabLink protected ()
+    extends typings.reactTabsRedux.tabLinkMod.TabLink {
+    def this(props: TabLinkProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TabLinkProps, context: js.Any) = this()
+  }
   
+  @JSImport("react-tabs-redux", "Tabs")
   @js.native
-  class Tabs ()
-    extends Component[TabsProps, js.Object, js.Any]
+  class Tabs protected ()
+    extends typings.reactTabsRedux.tabsMod.Tabs {
+    def this(props: TabsProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TabsProps, context: js.Any) = this()
+  }
 }

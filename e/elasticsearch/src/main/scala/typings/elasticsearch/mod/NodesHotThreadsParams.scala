@@ -3,6 +3,7 @@ package typings.elasticsearch.mod
 import typings.elasticsearch.elasticsearchStrings.blocked
 import typings.elasticsearch.elasticsearchStrings.cpu
 import typings.elasticsearch.elasticsearchStrings.wait
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,60 +34,48 @@ object NodesHotThreadsParams {
   }
   
   @scala.inline
-  implicit class NodesHotThreadsParamsOps[Self <: NodesHotThreadsParams] (val x: Self) extends AnyVal {
+  implicit class NodesHotThreadsParamsMutableBuilder[Self <: NodesHotThreadsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreIdleThreads(value: Boolean): Self = StObject.set(x, "ignoreIdleThreads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreIdleThreadsUndefined: Self = StObject.set(x, "ignoreIdleThreads", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterval(value: TimeSpan): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeIdVarargs(value: String*): Self = this.set("nodeId", js.Array(value :_*))
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def setNodeId(value: NameList): Self = this.set("nodeId", value.asInstanceOf[js.Any])
+    def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreIdleThreads(value: Boolean): Self = this.set("ignoreIdleThreads", value.asInstanceOf[js.Any])
+    def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
     
     @scala.inline
-    def deleteIgnoreIdleThreads: Self = this.set("ignoreIdleThreads", js.undefined)
+    def setSnapshots(value: Double): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: TimeSpan): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshots(value: Double): Self = this.set("snapshots", value.asInstanceOf[js.Any])
+    def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
     @scala.inline
-    def deleteSnapshots: Self = this.set("snapshots", js.undefined)
+    def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreads(value: Double): Self = this.set("threads", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteThreads: Self = this.set("threads", js.undefined)
+    def setType(value: cpu | wait | blocked): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: TimeSpan): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setType(value: cpu | wait | blocked): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

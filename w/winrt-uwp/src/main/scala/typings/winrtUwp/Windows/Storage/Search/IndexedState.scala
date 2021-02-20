@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.Search
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IndexedState extends js.Object
+sealed trait IndexedState extends StObject
 /** Indicates whether a StorageFolder is included in the system index. */
 @JSGlobal("Windows.Storage.Search.IndexedState")
 @js.native
-object IndexedState extends js.Object {
+object IndexedState extends StObject {
   
   /** The folder contains indexed content. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharingSettings extends js.Object {
+trait SharingSettings extends StObject {
   
   /**
     * Whether to include the notebook cell output when sharing the notebook. The default is Disabled.
@@ -31,36 +32,24 @@ object SharingSettings {
   }
   
   @scala.inline
-  implicit class SharingSettingsOps[Self <: SharingSettings] (val x: Self) extends AnyVal {
+  implicit class SharingSettingsMutableBuilder[Self <: SharingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotebookOutputOption(value: NotebookOutputOption): Self = StObject.set(x, "NotebookOutputOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotebookOutputOptionUndefined: Self = StObject.set(x, "NotebookOutputOption", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3KmsKeyId(value: KmsKeyId): Self = StObject.set(x, "S3KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookOutputOption(value: NotebookOutputOption): Self = this.set("NotebookOutputOption", value.asInstanceOf[js.Any])
+    def setS3KmsKeyIdUndefined: Self = StObject.set(x, "S3KmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteNotebookOutputOption: Self = this.set("NotebookOutputOption", js.undefined)
+    def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3KmsKeyId(value: KmsKeyId): Self = this.set("S3KmsKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3KmsKeyId: Self = this.set("S3KmsKeyId", js.undefined)
-    
-    @scala.inline
-    def setS3OutputPath(value: S3Uri): Self = this.set("S3OutputPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3OutputPath: Self = this.set("S3OutputPath", js.undefined)
+    def setS3OutputPathUndefined: Self = StObject.set(x, "S3OutputPath", js.undefined)
   }
 }

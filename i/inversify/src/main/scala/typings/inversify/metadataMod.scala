@@ -1,13 +1,13 @@
 package typings.inversify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify/dts/planning/metadata", JSImport.Namespace)
-@js.native
-object metadataMod extends js.Object {
+object metadataMod {
   
+  @JSImport("inversify/dts/planning/metadata", "Metadata")
   @js.native
   class Metadata protected ()
     extends typings.inversify.interfacesMod.interfaces.Metadata {

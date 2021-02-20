@@ -4,21 +4,18 @@ import typings.std.Element
 import typings.std.HTMLElement
 import typings.typesettable.abstractMeasurerMod.IDimensions
 import typings.typesettable.anon.Write
-import typings.typesettable.contextsMod.IPenFactoryContext
-import typings.typesettable.contextsMod.IRulerFactoryContext
+import typings.typesettable.contextsMod.ITypesetterContext
 import typings.typesettable.writerMod.ITransform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typesettable/build/src/contexts/html", JSImport.Namespace)
-@js.native
-object htmlMod extends js.Object {
+object htmlMod {
   
+  @JSImport("typesettable/build/src/contexts/html", "HtmlContext")
   @js.native
-  class HtmlContext protected ()
-    extends IPenFactoryContext[HTMLElement]
-       with IRulerFactoryContext {
+  class HtmlContext protected () extends ITypesetterContext[HTMLElement] {
     /**
       * @param element - The CSS font styles applied to `element` will determine the
       * size of text measurements. Also the default text block container.
@@ -43,15 +40,17 @@ object htmlMod extends js.Object {
     def setAddTitle(addTitle: Boolean): Unit = js.native
   }
   
+  @JSImport("typesettable/build/src/contexts/html", "HtmlUtils")
   @js.native
-  class HtmlUtils () extends js.Object
+  class HtmlUtils () extends StObject
   /* static members */
-  @js.native
-  object HtmlUtils extends js.Object {
+  object HtmlUtils {
     
     /**
       * Adds the variadic classnames to the Element
       */
+    @JSImport("typesettable/build/src/contexts/html", "HtmlUtils.addClasses")
+    @js.native
     def addClasses(element: Element, classNames: String*): Unit = js.native
     
     /**
@@ -60,16 +59,22 @@ object htmlMod extends js.Object {
       *
       * Returns the new element.
       */
+    @JSImport("typesettable/build/src/contexts/html", "HtmlUtils.append")
+    @js.native
     def append(element: Element, tagName: String, classNames: String*): HTMLElement = js.native
     
     /**
       * Creates and returns a new HTMLElement with the attached classnames.
       */
+    @JSImport("typesettable/build/src/contexts/html", "HtmlUtils.create")
+    @js.native
     def create(tagName: String, classNames: String*): HTMLElement = js.native
     
     /**
       * Returns the width/height of HTMLElement's bounding box
       */
+    @JSImport("typesettable/build/src/contexts/html", "HtmlUtils.getDimensions")
+    @js.native
     def getDimensions(element: HTMLElement): IDimensions = js.native
   }
 }

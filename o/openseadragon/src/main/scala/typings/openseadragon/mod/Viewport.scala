@@ -1,13 +1,14 @@
 package typings.openseadragon.mod
 
 import typings.openseadragon.anon.DefaultZoomLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "Viewport")
 @js.native
-class Viewport protected () extends js.Object {
+class Viewport protected () extends StObject {
   def this(options: DefaultZoomLevel) = this()
   
   def applyConstraints(): Viewport = js.native
@@ -42,7 +43,7 @@ class Viewport protected () extends js.Object {
   
   def getAspectRatio(): js.Any = js.native
   
-   // TODO: determine return type
+  // TODO: determine return type
   def getBounds(): Rect = js.native
   def getBounds(current: Boolean): Rect = js.native
   

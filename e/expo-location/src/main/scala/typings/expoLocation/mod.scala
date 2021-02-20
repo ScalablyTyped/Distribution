@@ -20,71 +20,16 @@ import typings.expoLocation.locationTypesMod.LocationProviderStatus
 import typings.expoLocation.locationTypesMod.LocationRegion
 import typings.expoLocation.locationTypesMod.LocationSubscription
 import typings.expoLocation.locationTypesMod.LocationTaskOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo-location", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val EventEmitter: typings.unimodulesCore.mod.EventEmitter = js.native
-  
-  def enableNetworkProviderAsync(): js.Promise[Unit] = js.native
-  
-  def geocodeAsync(address: String): js.Promise[js.Array[LocationGeocodedLocation]] = js.native
-  def geocodeAsync(address: String, options: LocationGeocodingOptions): js.Promise[js.Array[LocationGeocodedLocation]] = js.native
-  
-  def getCurrentPositionAsync(): js.Promise[LocationObject] = js.native
-  def getCurrentPositionAsync(options: LocationOptions): js.Promise[LocationObject] = js.native
-  
-  @JSName("_getCurrentWatchId")
-  def getCurrentWatchId(): Double = js.native
-  
-  def getHeadingAsync(): js.Promise[LocationHeadingObject] = js.native
-  
-  def getLastKnownPositionAsync(): js.Promise[LocationObject | Null] = js.native
-  def getLastKnownPositionAsync(options: LocationLastKnownOptions): js.Promise[LocationObject | Null] = js.native
-  
-  def getPermissionsAsync(): js.Promise[LocationPermissionResponse] = js.native
-  
-  def getProviderStatusAsync(): js.Promise[LocationProviderStatus] = js.native
-  
-  def hasServicesEnabledAsync(): js.Promise[Boolean] = js.native
-  
-  def hasStartedGeofencingAsync(taskName: String): js.Promise[Boolean] = js.native
-  
-  def hasStartedLocationUpdatesAsync(taskName: String): js.Promise[Boolean] = js.native
-  
-  def installWebGeolocationPolyfill(): Unit = js.native
-  
-  def isBackgroundLocationAvailableAsync(): js.Promise[Boolean] = js.native
-  
-  def requestPermissionsAsync(): js.Promise[LocationPermissionResponse] = js.native
-  
-  def reverseGeocodeAsync(location: PickLocationGeocodedLocat): js.Promise[js.Array[LocationGeocodedAddress]] = js.native
-  def reverseGeocodeAsync(location: PickLocationGeocodedLocat, options: LocationGeocodingOptions): js.Promise[js.Array[LocationGeocodedAddress]] = js.native
-  
-  def setApiKey(apiKey: String): Unit = js.native
-  
-  def setGoogleApiKey(apiKey: String): Unit = js.native
-  
-  def startGeofencingAsync(taskName: String): js.Promise[Unit] = js.native
-  def startGeofencingAsync(taskName: String, regions: js.Array[LocationRegion]): js.Promise[Unit] = js.native
-  
-  def startLocationUpdatesAsync(taskName: String): js.Promise[Unit] = js.native
-  def startLocationUpdatesAsync(taskName: String, options: LocationTaskOptions): js.Promise[Unit] = js.native
-  
-  def stopGeofencingAsync(taskName: String): js.Promise[Unit] = js.native
-  
-  def stopLocationUpdatesAsync(taskName: String): js.Promise[Unit] = js.native
-  
-  def watchHeadingAsync(callback: LocationHeadingCallback): js.Promise[LocationSubscription] = js.native
-  
-  def watchPositionAsync(options: LocationOptions, callback: LocationCallback): js.Promise[Remove] = js.native
-  
+  @JSImport("expo-location", "Accuracy")
   @js.native
-  object Accuracy extends js.Object {
+  object Accuracy extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LocationAccuracy with Double] = js.native
@@ -102,8 +47,9 @@ object mod extends js.Object {
     /* 1 */ val Lowest: typings.expoLocation.locationTypesMod.LocationAccuracy.Lowest with Double = js.native
   }
   
+  @JSImport("expo-location", "ActivityType")
   @js.native
-  object ActivityType extends js.Object {
+  object ActivityType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LocationActivityType with Double] = js.native
@@ -119,8 +65,13 @@ object mod extends js.Object {
     /* 4 */ val OtherNavigation: typings.expoLocation.locationTypesMod.LocationActivityType.OtherNavigation with Double = js.native
   }
   
+  @JSImport("expo-location", "EventEmitter")
   @js.native
-  object GeofencingEventType extends js.Object {
+  val EventEmitter: typings.unimodulesCore.mod.EventEmitter = js.native
+  
+  @JSImport("expo-location", "GeofencingEventType")
+  @js.native
+  object GeofencingEventType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LocationGeofencingEventType with Double] = js.native
@@ -130,8 +81,9 @@ object mod extends js.Object {
     /* 2 */ val Exit: typings.expoLocation.locationTypesMod.LocationGeofencingEventType.Exit with Double = js.native
   }
   
+  @JSImport("expo-location", "GeofencingRegionState")
   @js.native
-  object GeofencingRegionState extends js.Object {
+  object GeofencingRegionState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LocationGeofencingRegionState with Double] = js.native
@@ -143,8 +95,9 @@ object mod extends js.Object {
     /* 0 */ val Unknown: typings.expoLocation.locationTypesMod.LocationGeofencingRegionState.Unknown with Double = js.native
   }
   
+  @JSImport("expo-location", "LocationAccuracy")
   @js.native
-  object LocationAccuracy extends js.Object {
+  object LocationAccuracy extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.expoLocation.locationTypesMod.LocationAccuracy with Double] = js.native
@@ -162,8 +115,9 @@ object mod extends js.Object {
     /* 1 */ val Lowest: typings.expoLocation.locationTypesMod.LocationAccuracy.Lowest with Double = js.native
   }
   
+  @JSImport("expo-location", "LocationActivityType")
   @js.native
-  object LocationActivityType extends js.Object {
+  object LocationActivityType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.expoLocation.locationTypesMod.LocationActivityType with Double] = js.native
@@ -179,8 +133,9 @@ object mod extends js.Object {
     /* 4 */ val OtherNavigation: typings.expoLocation.locationTypesMod.LocationActivityType.OtherNavigation with Double = js.native
   }
   
+  @JSImport("expo-location", "LocationGeofencingEventType")
   @js.native
-  object LocationGeofencingEventType extends js.Object {
+  object LocationGeofencingEventType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.expoLocation.locationTypesMod.LocationGeofencingEventType with Double] = js.native
@@ -190,8 +145,9 @@ object mod extends js.Object {
     /* 2 */ val Exit: typings.expoLocation.locationTypesMod.LocationGeofencingEventType.Exit with Double = js.native
   }
   
+  @JSImport("expo-location", "LocationGeofencingRegionState")
   @js.native
-  object LocationGeofencingRegionState extends js.Object {
+  object LocationGeofencingRegionState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.expoLocation.locationTypesMod.LocationGeofencingRegionState with Double] = js.native
@@ -203,8 +159,9 @@ object mod extends js.Object {
     /* 0 */ val Unknown: typings.expoLocation.locationTypesMod.LocationGeofencingRegionState.Unknown with Double = js.native
   }
   
+  @JSImport("expo-location", "PermissionStatus")
   @js.native
-  object PermissionStatus extends js.Object {
+  object PermissionStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.unimodulesPermissionsInterface.mod.PermissionStatus with String] = js.native
@@ -215,4 +172,114 @@ object mod extends js.Object {
     
     /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED with String = js.native
   }
+  
+  @JSImport("expo-location", "enableNetworkProviderAsync")
+  @js.native
+  def enableNetworkProviderAsync(): js.Promise[Unit] = js.native
+  
+  @JSImport("expo-location", "geocodeAsync")
+  @js.native
+  def geocodeAsync(address: String): js.Promise[js.Array[LocationGeocodedLocation]] = js.native
+  @JSImport("expo-location", "geocodeAsync")
+  @js.native
+  def geocodeAsync(address: String, options: LocationGeocodingOptions): js.Promise[js.Array[LocationGeocodedLocation]] = js.native
+  
+  @JSImport("expo-location", "getCurrentPositionAsync")
+  @js.native
+  def getCurrentPositionAsync(): js.Promise[LocationObject] = js.native
+  @JSImport("expo-location", "getCurrentPositionAsync")
+  @js.native
+  def getCurrentPositionAsync(options: LocationOptions): js.Promise[LocationObject] = js.native
+  
+  @JSImport("expo-location", "_getCurrentWatchId")
+  @js.native
+  def getCurrentWatchId(): Double = js.native
+  
+  @JSImport("expo-location", "getHeadingAsync")
+  @js.native
+  def getHeadingAsync(): js.Promise[LocationHeadingObject] = js.native
+  
+  @JSImport("expo-location", "getLastKnownPositionAsync")
+  @js.native
+  def getLastKnownPositionAsync(): js.Promise[LocationObject | Null] = js.native
+  @JSImport("expo-location", "getLastKnownPositionAsync")
+  @js.native
+  def getLastKnownPositionAsync(options: LocationLastKnownOptions): js.Promise[LocationObject | Null] = js.native
+  
+  @JSImport("expo-location", "getPermissionsAsync")
+  @js.native
+  def getPermissionsAsync(): js.Promise[LocationPermissionResponse] = js.native
+  
+  @JSImport("expo-location", "getProviderStatusAsync")
+  @js.native
+  def getProviderStatusAsync(): js.Promise[LocationProviderStatus] = js.native
+  
+  @JSImport("expo-location", "hasServicesEnabledAsync")
+  @js.native
+  def hasServicesEnabledAsync(): js.Promise[Boolean] = js.native
+  
+  @JSImport("expo-location", "hasStartedGeofencingAsync")
+  @js.native
+  def hasStartedGeofencingAsync(taskName: String): js.Promise[Boolean] = js.native
+  
+  @JSImport("expo-location", "hasStartedLocationUpdatesAsync")
+  @js.native
+  def hasStartedLocationUpdatesAsync(taskName: String): js.Promise[Boolean] = js.native
+  
+  @JSImport("expo-location", "installWebGeolocationPolyfill")
+  @js.native
+  def installWebGeolocationPolyfill(): Unit = js.native
+  
+  @JSImport("expo-location", "isBackgroundLocationAvailableAsync")
+  @js.native
+  def isBackgroundLocationAvailableAsync(): js.Promise[Boolean] = js.native
+  
+  @JSImport("expo-location", "requestPermissionsAsync")
+  @js.native
+  def requestPermissionsAsync(): js.Promise[LocationPermissionResponse] = js.native
+  
+  @JSImport("expo-location", "reverseGeocodeAsync")
+  @js.native
+  def reverseGeocodeAsync(location: PickLocationGeocodedLocat): js.Promise[js.Array[LocationGeocodedAddress]] = js.native
+  @JSImport("expo-location", "reverseGeocodeAsync")
+  @js.native
+  def reverseGeocodeAsync(location: PickLocationGeocodedLocat, options: LocationGeocodingOptions): js.Promise[js.Array[LocationGeocodedAddress]] = js.native
+  
+  @JSImport("expo-location", "setApiKey")
+  @js.native
+  def setApiKey(apiKey: String): Unit = js.native
+  
+  @JSImport("expo-location", "setGoogleApiKey")
+  @js.native
+  def setGoogleApiKey(apiKey: String): Unit = js.native
+  
+  @JSImport("expo-location", "startGeofencingAsync")
+  @js.native
+  def startGeofencingAsync(taskName: String): js.Promise[Unit] = js.native
+  @JSImport("expo-location", "startGeofencingAsync")
+  @js.native
+  def startGeofencingAsync(taskName: String, regions: js.Array[LocationRegion]): js.Promise[Unit] = js.native
+  
+  @JSImport("expo-location", "startLocationUpdatesAsync")
+  @js.native
+  def startLocationUpdatesAsync(taskName: String): js.Promise[Unit] = js.native
+  @JSImport("expo-location", "startLocationUpdatesAsync")
+  @js.native
+  def startLocationUpdatesAsync(taskName: String, options: LocationTaskOptions): js.Promise[Unit] = js.native
+  
+  @JSImport("expo-location", "stopGeofencingAsync")
+  @js.native
+  def stopGeofencingAsync(taskName: String): js.Promise[Unit] = js.native
+  
+  @JSImport("expo-location", "stopLocationUpdatesAsync")
+  @js.native
+  def stopLocationUpdatesAsync(taskName: String): js.Promise[Unit] = js.native
+  
+  @JSImport("expo-location", "watchHeadingAsync")
+  @js.native
+  def watchHeadingAsync(callback: LocationHeadingCallback): js.Promise[LocationSubscription] = js.native
+  
+  @JSImport("expo-location", "watchPositionAsync")
+  @js.native
+  def watchPositionAsync(options: LocationOptions, callback: LocationCallback): js.Promise[Remove] = js.native
 }

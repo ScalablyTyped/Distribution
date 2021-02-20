@@ -1,19 +1,15 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/reflect/apply", JSImport.Namespace)
-@js.native
-object applyMod
-  extends TopLevel[
-      js.Function3[
-        /* target */ Function, 
-        /* thisArgument */ js.Any, 
-        /* argumentsList */ ArrayLike[js.Any], 
-        js.Any
-      ]
-    ]
+object applyMod {
+  
+  /* was `typeof core.Reflect.apply` */
+  @JSImport("core-js/fn/reflect/apply", JSImport.Namespace)
+  @js.native
+  def apply(target: Function, thisArgument: js.Any, argumentsList: ArrayLike[_]): js.Any = js.native
+}

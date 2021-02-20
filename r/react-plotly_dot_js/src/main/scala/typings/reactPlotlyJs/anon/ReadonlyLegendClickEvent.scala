@@ -4,13 +4,14 @@ import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.Frame
 import typings.plotlyJs.mod.PlotlyHTMLElement
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<plotly.js.plotly.js.LegendClickEvent> */
 @js.native
-trait ReadonlyLegendClickEvent extends js.Object {
+trait ReadonlyLegendClickEvent extends StObject {
   
   val config: typings.plotlyJs.anon.PartialConfig = js.native
   
@@ -52,57 +53,45 @@ object ReadonlyLegendClickEvent {
   }
   
   @scala.inline
-  implicit class ReadonlyLegendClickEventOps[Self <: ReadonlyLegendClickEvent] (val x: Self) extends AnyVal {
+  implicit class ReadonlyLegendClickEventMutableBuilder[Self <: ReadonlyLegendClickEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: typings.plotlyJs.anon.PartialConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: typings.plotlyJs.anon.PartialConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setCurveNumber(value: Double): Self = this.set("curveNumber", value.asInstanceOf[js.Any])
+    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: Data*): Self = this.set("data", js.Array(value :_*))
+    def setExpandedIndex(value: Double): Self = StObject.set(x, "expandedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[Data]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: MouseEvent): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
     @scala.inline
-    def setExpandedIndex(value: Double): Self = this.set("expandedIndex", value.asInstanceOf[js.Any])
+    def setFullData(value: js.Array[Data]): Self = StObject.set(x, "fullData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramesVarargs(value: Frame*): Self = this.set("frames", js.Array(value :_*))
+    def setFullDataVarargs(value: Data*): Self = StObject.set(x, "fullData", js.Array(value :_*))
     
     @scala.inline
-    def setFrames(value: js.Array[Frame]): Self = this.set("frames", value.asInstanceOf[js.Any])
+    def setFullLayout(value: typings.plotlyJs.anon.PartialLayout): Self = StObject.set(x, "fullLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullDataVarargs(value: Data*): Self = this.set("fullData", js.Array(value :_*))
+    def setLayout(value: typings.plotlyJs.anon.PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullData(value: js.Array[Data]): Self = this.set("fullData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFullLayout(value: typings.plotlyJs.anon.PartialLayout): Self = this.set("fullLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayout(value: typings.plotlyJs.anon.PartialLayout): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: PlotlyHTMLElement): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setNode(value: PlotlyHTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

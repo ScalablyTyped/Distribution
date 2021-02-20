@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotScatterClusterLayoutAlgorithmOptions extends js.Object {
+trait PlotScatterClusterLayoutAlgorithmOptions extends StObject {
   
   /**
     * (Highcharts, Highmaps) When `type` is set to `kmeans`, `distance` is a
@@ -95,48 +96,36 @@ object PlotScatterClusterLayoutAlgorithmOptions {
   }
   
   @scala.inline
-  implicit class PlotScatterClusterLayoutAlgorithmOptionsOps[Self <: PlotScatterClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
+  implicit class PlotScatterClusterLayoutAlgorithmOptionsMutableBuilder[Self <: PlotScatterClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGridSize(value: Double | String): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double | String): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridSize(value: Double | String): Self = this.set("gridSize", value.asInstanceOf[js.Any])
+    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
     @scala.inline
-    def deleteGridSize: Self = this.set("gridSize", js.undefined)
+    def setKmeansThreshold(value: Double): Self = StObject.set(x, "kmeansThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
+    def setKmeansThresholdUndefined: Self = StObject.set(x, "kmeansThreshold", js.undefined)
     
     @scala.inline
-    def deleteIterations: Self = this.set("iterations", js.undefined)
+    def setType(value: String | js.Function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmeansThreshold(value: Double): Self = this.set("kmeansThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmeansThreshold: Self = this.set("kmeansThreshold", js.undefined)
-    
-    @scala.inline
-    def setType(value: String | js.Function): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

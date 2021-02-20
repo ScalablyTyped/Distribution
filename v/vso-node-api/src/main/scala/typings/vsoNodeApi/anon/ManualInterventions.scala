@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManualInterventions extends js.Object {
+trait ManualInterventions extends StObject {
   
   var approvals: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object ManualInterventions {
   }
   
   @scala.inline
-  implicit class ManualInterventionsOps[Self <: ManualInterventions] (val x: Self) extends AnyVal {
+  implicit class ManualInterventionsMutableBuilder[Self <: ManualInterventions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovals(value: scala.Double): Self = StObject.set(x, "approvals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifacts(value: scala.Double): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironments(value: scala.Double): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovals(value: scala.Double): Self = this.set("approvals", value.asInstanceOf[js.Any])
+    def setManualInterventions(value: scala.Double): Self = StObject.set(x, "manualInterventions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifacts(value: scala.Double): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironments(value: scala.Double): Self = this.set("environments", value.asInstanceOf[js.Any])
+    def setTags(value: scala.Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualInterventions(value: scala.Double): Self = this.set("manualInterventions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTags(value: scala.Double): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: scala.Double): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariables(value: scala.Double): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

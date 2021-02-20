@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A selection in the ASPxHtmlEditor.
   */
 @js.native
-trait ASPxClientHtmlEditorSelection extends js.Object {
+trait ASPxClientHtmlEditorSelection extends StObject {
   
   /**
     * Returns an array of the currently selected elements.
@@ -52,33 +53,21 @@ object ASPxClientHtmlEditorSelection {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorSelectionOps[Self <: ASPxClientHtmlEditorSelection] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorSelectionMutableBuilder[Self <: ASPxClientHtmlEditorSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetElements(value: () => js.Array[_]): Self = StObject.set(x, "GetElements", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHtml(value: () => String): Self = StObject.set(x, "GetHtml", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSelectedElement(value: () => js.Any): Self = StObject.set(x, "GetSelectedElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetElements(value: () => js.Array[_]): Self = this.set("GetElements", js.Any.fromFunction0(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHtml(value: () => String): Self = this.set("GetHtml", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSelectedElement(value: () => js.Any): Self = this.set("GetSelectedElement", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetText(value: () => String): Self = this.set("GetText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetHtml(value: (String, Boolean) => Unit): Self = this.set("SetHtml", js.Any.fromFunction2(value))
+    def setSetHtml(value: (String, Boolean) => Unit): Self = StObject.set(x, "SetHtml", js.Any.fromFunction2(value))
   }
 }

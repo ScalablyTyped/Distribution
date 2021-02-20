@@ -1,6 +1,7 @@
 package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,24 +26,12 @@ object ObjectOptions {
   }
   
   @scala.inline
-  implicit class ObjectOptionsOps[Self <: ObjectOptions] (val x: Self) extends AnyVal {
+  implicit class ObjectOptionsMutableBuilder[Self <: ObjectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialize(value: /* options */ js.UndefOr[ObjectOptions] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInitialize(value: /* options */ js.UndefOr[ObjectOptions] => Unit): Self = this.set("initialize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteInitialize: Self = this.set("initialize", js.undefined)
+    def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
   }
 }

@@ -2,12 +2,16 @@ package typings.stellarBase.mod.Operation
 
 import typings.stellarBase.mod.Asset
 import typings.stellarBase.mod.OperationType.ManageSellOffer
+import typings.stellarBase.mod._Operation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManageSellOffer_ extends BaseOperation[ManageSellOffer] {
+trait ManageSellOffer_
+  extends BaseOperation[ManageSellOffer]
+     with _Operation {
   
   var amount: String = js.native
   
@@ -36,33 +40,21 @@ object ManageSellOffer_ {
   }
   
   @scala.inline
-  implicit class ManageSellOffer_Ops[Self <: ManageSellOffer_] (val x: Self) extends AnyVal {
+  implicit class ManageSellOffer_MutableBuilder[Self <: ManageSellOffer_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuying(value: Asset): Self = StObject.set(x, "buying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuying(value: Asset): Self = this.set("buying", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOfferId(value: String): Self = this.set("offerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrice(value: String): Self = this.set("price", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelling(value: Asset): Self = this.set("selling", value.asInstanceOf[js.Any])
+    def setSelling(value: Asset): Self = StObject.set(x, "selling", value.asInstanceOf[js.Any])
   }
 }

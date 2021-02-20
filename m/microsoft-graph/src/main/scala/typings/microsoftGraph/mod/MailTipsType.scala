@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.recipientScope
   - typings.microsoftGraph.microsoftGraphStrings.recipientSuggestions
 */
-trait MailTipsType extends js.Object
+trait MailTipsType extends StObject
 object MailTipsType {
   
   @scala.inline

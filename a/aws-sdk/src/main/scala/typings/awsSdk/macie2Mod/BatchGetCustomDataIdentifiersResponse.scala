@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetCustomDataIdentifiersResponse extends js.Object {
+trait BatchGetCustomDataIdentifiersResponse extends StObject {
   
   /**
     * An array of objects, one for each custom data identifier that meets the criteria specified in the request.
@@ -26,36 +27,24 @@ object BatchGetCustomDataIdentifiersResponse {
   }
   
   @scala.inline
-  implicit class BatchGetCustomDataIdentifiersResponseOps[Self <: BatchGetCustomDataIdentifiersResponse] (val x: Self) extends AnyVal {
+  implicit class BatchGetCustomDataIdentifiersResponseMutableBuilder[Self <: BatchGetCustomDataIdentifiersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomDataIdentifiers(value: listOfBatchGetCustomDataIdentifierSummary): Self = StObject.set(x, "customDataIdentifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomDataIdentifiersUndefined: Self = StObject.set(x, "customDataIdentifiers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomDataIdentifiersVarargs(value: BatchGetCustomDataIdentifierSummary*): Self = StObject.set(x, "customDataIdentifiers", js.Array(value :_*))
     
     @scala.inline
-    def setCustomDataIdentifiersVarargs(value: BatchGetCustomDataIdentifierSummary*): Self = this.set("customDataIdentifiers", js.Array(value :_*))
+    def setNotFoundIdentifierIds(value: listOfString): Self = StObject.set(x, "notFoundIdentifierIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDataIdentifiers(value: listOfBatchGetCustomDataIdentifierSummary): Self = this.set("customDataIdentifiers", value.asInstanceOf[js.Any])
+    def setNotFoundIdentifierIdsUndefined: Self = StObject.set(x, "notFoundIdentifierIds", js.undefined)
     
     @scala.inline
-    def deleteCustomDataIdentifiers: Self = this.set("customDataIdentifiers", js.undefined)
-    
-    @scala.inline
-    def setNotFoundIdentifierIdsVarargs(value: string*): Self = this.set("notFoundIdentifierIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotFoundIdentifierIds(value: listOfString): Self = this.set("notFoundIdentifierIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotFoundIdentifierIds: Self = this.set("notFoundIdentifierIds", js.undefined)
+    def setNotFoundIdentifierIdsVarargs(value: string*): Self = StObject.set(x, "notFoundIdentifierIds", js.Array(value :_*))
   }
 }

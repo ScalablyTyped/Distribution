@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlarmHistoryItem extends js.Object {
+trait AlarmHistoryItem extends StObject {
   
   /**
     * The descriptive name for the alarm.
@@ -46,54 +47,42 @@ object AlarmHistoryItem {
   }
   
   @scala.inline
-  implicit class AlarmHistoryItemOps[Self <: AlarmHistoryItem] (val x: Self) extends AnyVal {
+  implicit class AlarmHistoryItemMutableBuilder[Self <: AlarmHistoryItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlarmName(value: AlarmName): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlarmNameUndefined: Self = StObject.set(x, "AlarmName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlarmType(value: AlarmType): Self = StObject.set(x, "AlarmType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarmName(value: AlarmName): Self = this.set("AlarmName", value.asInstanceOf[js.Any])
+    def setAlarmTypeUndefined: Self = StObject.set(x, "AlarmType", js.undefined)
     
     @scala.inline
-    def deleteAlarmName: Self = this.set("AlarmName", js.undefined)
+    def setHistoryData(value: HistoryData): Self = StObject.set(x, "HistoryData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarmType(value: AlarmType): Self = this.set("AlarmType", value.asInstanceOf[js.Any])
+    def setHistoryDataUndefined: Self = StObject.set(x, "HistoryData", js.undefined)
     
     @scala.inline
-    def deleteAlarmType: Self = this.set("AlarmType", js.undefined)
+    def setHistoryItemType(value: HistoryItemType): Self = StObject.set(x, "HistoryItemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryData(value: HistoryData): Self = this.set("HistoryData", value.asInstanceOf[js.Any])
+    def setHistoryItemTypeUndefined: Self = StObject.set(x, "HistoryItemType", js.undefined)
     
     @scala.inline
-    def deleteHistoryData: Self = this.set("HistoryData", js.undefined)
+    def setHistorySummary(value: HistorySummary): Self = StObject.set(x, "HistorySummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryItemType(value: HistoryItemType): Self = this.set("HistoryItemType", value.asInstanceOf[js.Any])
+    def setHistorySummaryUndefined: Self = StObject.set(x, "HistorySummary", js.undefined)
     
     @scala.inline
-    def deleteHistoryItemType: Self = this.set("HistoryItemType", js.undefined)
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistorySummary(value: HistorySummary): Self = this.set("HistorySummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistorySummary: Self = this.set("HistorySummary", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

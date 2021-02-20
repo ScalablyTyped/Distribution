@@ -1,11 +1,12 @@
 package typings.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSTreeStaticDefaultsCore extends js.Object {
+trait JSTreeStaticDefaultsCore extends StObject {
   
   /**
     * the open / close animation duration in milliseconds - set this to `false` to disable the animation (default is `200`)
@@ -186,99 +187,87 @@ object JSTreeStaticDefaultsCore {
   }
   
   @scala.inline
-  implicit class JSTreeStaticDefaultsCoreOps[Self <: JSTreeStaticDefaultsCore] (val x: Self) extends AnyVal {
+  implicit class JSTreeStaticDefaultsCoreMutableBuilder[Self <: JSTreeStaticDefaultsCore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheck_callback(value: js.Any): Self = StObject.set(x, "check_callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: () => js.Any): Self = this.set("error", js.Any.fromFunction0(value))
+    def setCheck_callbackUndefined: Self = StObject.set(x, "check_callback", js.undefined)
     
     @scala.inline
-    def setAnimation(value: js.Any): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setCheck_callback(value: js.Any): Self = this.set("check_callback", value.asInstanceOf[js.Any])
+    def setDblclick_toggle(value: Boolean): Self = StObject.set(x, "dblclick_toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCheck_callback: Self = this.set("check_callback", js.undefined)
+    def setDblclick_toggleUndefined: Self = StObject.set(x, "dblclick_toggle", js.undefined)
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setError(value: () => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setExpand_selected_onload(value: Boolean): Self = StObject.set(x, "expand_selected_onload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick_toggle(value: Boolean): Self = this.set("dblclick_toggle", value.asInstanceOf[js.Any])
+    def setExpand_selected_onloadUndefined: Self = StObject.set(x, "expand_selected_onload", js.undefined)
     
     @scala.inline
-    def deleteDblclick_toggle: Self = this.set("dblclick_toggle", js.undefined)
+    def setForce_text(value: Boolean): Self = StObject.set(x, "force_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand_selected_onload(value: Boolean): Self = this.set("expand_selected_onload", value.asInstanceOf[js.Any])
+    def setForce_textUndefined: Self = StObject.set(x, "force_text", js.undefined)
     
     @scala.inline
-    def deleteExpand_selected_onload: Self = this.set("expand_selected_onload", js.undefined)
+    def setKeyboard(value: JSTreeStaticDefaultsCoreKeyboard): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce_text(value: Boolean): Self = this.set("force_text", value.asInstanceOf[js.Any])
+    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def deleteForce_text: Self = this.set("force_text", js.undefined)
+    def setLoaded_state(value: Boolean): Self = StObject.set(x, "loaded_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: JSTreeStaticDefaultsCoreKeyboard): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setLoaded_stateUndefined: Self = StObject.set(x, "loaded_state", js.undefined)
     
     @scala.inline
-    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaded_state(value: Boolean): Self = this.set("loaded_state", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteLoaded_state: Self = this.set("loaded_state", js.undefined)
+    def setRestore_focus(value: Boolean): Self = StObject.set(x, "restore_focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setRestore_focusUndefined: Self = StObject.set(x, "restore_focus", js.undefined)
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setStrings(value: js.Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestore_focus(value: Boolean): Self = this.set("restore_focus", value.asInstanceOf[js.Any])
+    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     
     @scala.inline
-    def deleteRestore_focus: Self = this.set("restore_focus", js.undefined)
+    def setThemes(value: JSTreeStaticDefaultsCoreThemes): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrings(value: js.Any): Self = this.set("strings", value.asInstanceOf[js.Any])
+    def setThemesUndefined: Self = StObject.set(x, "themes", js.undefined)
     
     @scala.inline
-    def deleteStrings: Self = this.set("strings", js.undefined)
+    def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThemes(value: JSTreeStaticDefaultsCoreThemes): Self = this.set("themes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThemes: Self = this.set("themes", js.undefined)
-    
-    @scala.inline
-    def setWorker(value: Boolean): Self = this.set("worker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorker: Self = this.set("worker", js.undefined)
+    def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
   }
 }

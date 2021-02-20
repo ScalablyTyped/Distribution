@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePresignedPortalUrlResponse extends js.Object {
+trait CreatePresignedPortalUrlResponse extends StObject {
   
   /**
     * The pre-signed URL to the portal. The URL contains the portal ID and a session token that lets you access the portal. The URL has the following format.  https://&lt;portal-id&gt;.app.iotsitewise.aws/auth?token=&lt;encrypted-token&gt; 
@@ -21,21 +22,9 @@ object CreatePresignedPortalUrlResponse {
   }
   
   @scala.inline
-  implicit class CreatePresignedPortalUrlResponseOps[Self <: CreatePresignedPortalUrlResponse] (val x: Self) extends AnyVal {
+  implicit class CreatePresignedPortalUrlResponseMutableBuilder[Self <: CreatePresignedPortalUrlResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPresignedPortalUrl(value: Url): Self = this.set("presignedPortalUrl", value.asInstanceOf[js.Any])
+    def setPresignedPortalUrl(value: Url): Self = StObject.set(x, "presignedPortalUrl", value.asInstanceOf[js.Any])
   }
 }

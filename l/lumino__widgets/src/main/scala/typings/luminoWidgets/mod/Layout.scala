@@ -3,6 +3,7 @@ package typings.luminoWidgets.mod
 import typings.luminoWidgets.layoutMod.Layout.HorizontalAlignment
 import typings.luminoWidgets.layoutMod.Layout.IOptions
 import typings.luminoWidgets.layoutMod.Layout.VerticalAlignment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,7 @@ abstract class Layout ()
   extends typings.luminoWidgets.layoutMod.Layout {
   def this(options: IOptions) = this()
 }
-@JSImport("@lumino/widgets", "Layout")
-@js.native
-object Layout extends js.Object {
+object Layout {
   
   /**
     * Get the horizontal alignment for a widget.
@@ -39,6 +38,8 @@ object Layout extends js.Object {
     *
     * Some layout implementations may ignore horizontal alignment.
     */
+  @JSImport("@lumino/widgets", "Layout.getHorizontalAlignment")
+  @js.native
   def getHorizontalAlignment(widget: typings.luminoWidgets.widgetMod.Widget): HorizontalAlignment = js.native
   
   /**
@@ -58,6 +59,8 @@ object Layout extends js.Object {
     *
     * Some layout implementations may ignore vertical alignment.
     */
+  @JSImport("@lumino/widgets", "Layout.getVerticalAlignment")
+  @js.native
   def getVerticalAlignment(widget: typings.luminoWidgets.widgetMod.Widget): VerticalAlignment = js.native
   
   /**
@@ -81,6 +84,8 @@ object Layout extends js.Object {
     * message to widget's parent, provided the parent has a layout
     * installed.
     */
+  @JSImport("@lumino/widgets", "Layout.setHorizontalAlignment")
+  @js.native
   def setHorizontalAlignment(widget: typings.luminoWidgets.widgetMod.Widget, value: HorizontalAlignment): Unit = js.native
   
   /**
@@ -104,5 +109,7 @@ object Layout extends js.Object {
     * message to widget's parent, provided the parent has a layout
     * installed.
     */
+  @JSImport("@lumino/widgets", "Layout.setVerticalAlignment")
+  @js.native
   def setVerticalAlignment(widget: typings.luminoWidgets.widgetMod.Widget, value: VerticalAlignment): Unit = js.native
 }

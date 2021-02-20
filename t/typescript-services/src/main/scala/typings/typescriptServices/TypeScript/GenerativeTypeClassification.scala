@@ -1,14 +1,15 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GenerativeTypeClassification extends js.Object
+sealed trait GenerativeTypeClassification extends StObject
 @JSGlobal("TypeScript.GenerativeTypeClassification")
 @js.native
-object GenerativeTypeClassification extends js.Object {
+object GenerativeTypeClassification extends StObject {
   
   @js.native
   sealed trait Closed extends GenerativeTypeClassification

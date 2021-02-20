@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListJobsByStatusRequest extends js.Object {
+trait ListJobsByStatusRequest extends StObject {
   
   /**
     *  To list jobs in chronological order by the date and time that they were submitted, enter true. To list jobs in reverse chronological order, enter false. 
@@ -31,33 +32,21 @@ object ListJobsByStatusRequest {
   }
   
   @scala.inline
-  implicit class ListJobsByStatusRequestOps[Self <: ListJobsByStatusRequest] (val x: Self) extends AnyVal {
+  implicit class ListJobsByStatusRequestMutableBuilder[Self <: ListJobsByStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscending(value: Ascending): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAscendingUndefined: Self = StObject.set(x, "Ascending", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageToken(value: Id): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: JobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
     @scala.inline
-    def setAscending(value: Ascending): Self = this.set("Ascending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAscending: Self = this.set("Ascending", js.undefined)
-    
-    @scala.inline
-    def setPageToken(value: Id): Self = this.set("PageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageToken: Self = this.set("PageToken", js.undefined)
+    def setStatus(value: JobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

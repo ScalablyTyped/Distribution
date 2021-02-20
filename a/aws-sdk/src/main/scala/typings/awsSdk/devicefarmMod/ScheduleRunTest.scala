@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleRunTest extends js.Object {
+trait ScheduleRunTest extends StObject {
   
   /**
     * The test's filter.
@@ -42,45 +43,33 @@ object ScheduleRunTest {
   }
   
   @scala.inline
-  implicit class ScheduleRunTestOps[Self <: ScheduleRunTest] (val x: Self) extends AnyVal {
+  implicit class ScheduleRunTestMutableBuilder[Self <: ScheduleRunTest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameters(value: TestParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TestType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def setFilter(value: Filter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setTestPackageArn(value: AmazonResourceName): Self = StObject.set(x, "testPackageArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setTestPackageArnUndefined: Self = StObject.set(x, "testPackageArn", js.undefined)
     
     @scala.inline
-    def setParameters(value: TestParameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setTestSpecArn(value: AmazonResourceName): Self = StObject.set(x, "testSpecArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setTestSpecArnUndefined: Self = StObject.set(x, "testSpecArn", js.undefined)
     
     @scala.inline
-    def setTestPackageArn(value: AmazonResourceName): Self = this.set("testPackageArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestPackageArn: Self = this.set("testPackageArn", js.undefined)
-    
-    @scala.inline
-    def setTestSpecArn(value: AmazonResourceName): Self = this.set("testSpecArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestSpecArn: Self = this.set("testSpecArn", js.undefined)
+    def setType(value: TestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

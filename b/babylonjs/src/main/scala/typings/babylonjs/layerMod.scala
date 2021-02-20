@@ -7,16 +7,16 @@ import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Layers/layer", JSImport.Namespace)
-@js.native
-object layerMod extends js.Object {
+object layerMod {
   
+  @JSImport("babylonjs/Layers/layer", "Layer")
   @js.native
-  class Layer protected () extends js.Object {
+  class Layer protected () extends StObject {
     /**
       * Instantiates a new layer.
       * This represents a full screen 2d layer.

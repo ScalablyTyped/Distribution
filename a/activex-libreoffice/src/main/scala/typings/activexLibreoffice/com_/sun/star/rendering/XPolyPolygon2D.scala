@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,45 +77,33 @@ object XPolyPolygon2D {
   }
   
   @scala.inline
-  implicit class XPolyPolygon2DOps[Self <: XPolyPolygon2D] (val x: Self) extends AnyVal {
+  implicit class XPolyPolygon2DMutableBuilder[Self <: XPolyPolygon2D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPolyPolygon(value: (RealPoint2D, XPolyPolygon2D) => Unit): Self = StObject.set(x, "addPolyPolygon", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillRule(value: FillRule): Self = StObject.set(x, "FillRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFillRule(value: () => FillRule): Self = StObject.set(x, "getFillRule", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFillRule(value: FillRule): Self = this.set("FillRule", value.asInstanceOf[js.Any])
+    def setGetNumberOfPolygonPoints(value: Double => Double): Self = StObject.set(x, "getNumberOfPolygonPoints", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNumberOfPolygons(value: Double): Self = this.set("NumberOfPolygons", value.asInstanceOf[js.Any])
+    def setGetNumberOfPolygons(value: () => Double): Self = StObject.set(x, "getNumberOfPolygons", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddPolyPolygon(value: (RealPoint2D, XPolyPolygon2D) => Unit): Self = this.set("addPolyPolygon", js.Any.fromFunction2(value))
+    def setIsClosed(value: Double => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFillRule(value: () => FillRule): Self = this.set("getFillRule", js.Any.fromFunction0(value))
+    def setNumberOfPolygons(value: Double): Self = StObject.set(x, "NumberOfPolygons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNumberOfPolygonPoints(value: Double => Double): Self = this.set("getNumberOfPolygonPoints", js.Any.fromFunction1(value))
+    def setSetClosed(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setClosed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetNumberOfPolygons(value: () => Double): Self = this.set("getNumberOfPolygons", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsClosed(value: Double => Boolean): Self = this.set("isClosed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetClosed(value: (Double, Boolean) => Unit): Self = this.set("setClosed", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetFillRule(value: FillRule => Unit): Self = this.set("setFillRule", js.Any.fromFunction1(value))
+    def setSetFillRule(value: FillRule => Unit): Self = StObject.set(x, "setFillRule", js.Any.fromFunction1(value))
   }
 }

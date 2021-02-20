@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,78 +55,66 @@ object RootNode {
   }
   
   @scala.inline
-  implicit class RootNodeOps[Self <: RootNode] (val x: Self) extends AnyVal {
+  implicit class RootNodeMutableBuilder[Self <: RootNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCached(value: Double): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setCached(value: Double): Self = this.set("cached", value.asInstanceOf[js.Any])
+    def setCodegenNode(value: TemplateChildNode | JSChildNode | BlockStatement): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: TemplateChildNode*): Self = this.set("children", js.Array(value :_*))
+    def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.Array[TemplateChildNode]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentsVarargs(value: String*): Self = this.set("components", js.Array(value :_*))
+    def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
     
     @scala.inline
-    def setComponents(value: js.Array[String]): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setDirectives(value: js.Array[String]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectivesVarargs(value: String*): Self = this.set("directives", js.Array(value :_*))
+    def setDirectivesVarargs(value: String*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
     @scala.inline
-    def setDirectives(value: js.Array[String]): Self = this.set("directives", value.asInstanceOf[js.Any])
+    def setHelpers(value: js.Array[js.Symbol]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpersVarargs(value: js.Symbol*): Self = this.set("helpers", js.Array(value :_*))
+    def setHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "helpers", js.Array(value :_*))
     
     @scala.inline
-    def setHelpers(value: js.Array[js.Symbol]): Self = this.set("helpers", value.asInstanceOf[js.Any])
+    def setHoists(value: js.Array[JSChildNode | Null]): Self = StObject.set(x, "hoists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoistsVarargs(value: (JSChildNode | Null)*): Self = this.set("hoists", js.Array(value :_*))
+    def setHoistsVarargs(value: (JSChildNode | Null)*): Self = StObject.set(x, "hoists", js.Array(value :_*))
     
     @scala.inline
-    def setHoists(value: js.Array[JSChildNode | Null]): Self = this.set("hoists", value.asInstanceOf[js.Any])
+    def setImports(value: js.Array[ImportItem]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportsVarargs(value: ImportItem*): Self = this.set("imports", js.Array(value :_*))
+    def setImportsVarargs(value: ImportItem*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
-    def setImports(value: js.Array[ImportItem]): Self = this.set("imports", value.asInstanceOf[js.Any])
+    def setSsrHelpers(value: js.Array[js.Symbol]): Self = StObject.set(x, "ssrHelpers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemps(value: Double): Self = this.set("temps", value.asInstanceOf[js.Any])
+    def setSsrHelpersUndefined: Self = StObject.set(x, "ssrHelpers", js.undefined)
     
     @scala.inline
-    def setType(value: `0`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setSsrHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "ssrHelpers", js.Array(value :_*))
     
     @scala.inline
-    def setCodegenNode(value: TemplateChildNode | JSChildNode | BlockStatement): Self = this.set("codegenNode", value.asInstanceOf[js.Any])
+    def setTemps(value: Double): Self = StObject.set(x, "temps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodegenNode: Self = this.set("codegenNode", js.undefined)
-    
-    @scala.inline
-    def setSsrHelpersVarargs(value: js.Symbol*): Self = this.set("ssrHelpers", js.Array(value :_*))
-    
-    @scala.inline
-    def setSsrHelpers(value: js.Array[js.Symbol]): Self = this.set("ssrHelpers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsrHelpers: Self = this.set("ssrHelpers", js.undefined)
+    def setType(value: `0`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

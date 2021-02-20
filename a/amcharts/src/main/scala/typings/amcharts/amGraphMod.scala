@@ -1,16 +1,19 @@
 package typings.amcharts
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/AmGraph", JSImport.Namespace)
-@js.native
-object amGraphMod extends js.Object {
+object amGraphMod {
+  
+  @JSImport("amcharts/AmGraph", JSImport.Default)
+  @js.native
+  class default () extends AmGraph
   
   @js.native
-  trait AmGraph extends js.Object {
+  trait AmGraph extends StObject {
     
     /**
       * Text which screen readers will read if user rolls-over the bullet/column or sets focus using tab key
@@ -762,7 +765,4 @@ object amGraphMod extends js.Object {
       */
     var yField: String = js.native
   }
-  
-  @js.native
-  class default () extends AmGraph
 }

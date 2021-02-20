@@ -25,6 +25,7 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.s
 import typings.elasticElasticsearch.elasticElasticsearchStrings.t
 import typings.elasticElasticsearch.elasticElasticsearchStrings.tb
 import typings.elasticElasticsearch.elasticElasticsearchStrings.yellow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,111 +70,99 @@ object CatIndices {
   }
   
   @scala.inline
-  implicit class CatIndicesOps[Self <: CatIndices] (val x: Self) extends AnyVal {
+  implicit class CatIndicesMutableBuilder[Self <: CatIndices] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytes(value: b | k | kb | m | mb | g | gb | t | tb | p | pb): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytes(value: b | k | kb | m | mb | g | gb | t | tb | p | pb): Self = this.set("bytes", value.asInstanceOf[js.Any])
+    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
     @scala.inline
-    def deleteBytes: Self = this.set("bytes", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = this.set("expand_wildcards", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteExpand_wildcards: Self = this.set("expand_wildcards", js.undefined)
+    def setH(value: String | js.Array[String]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
     
     @scala.inline
-    def setHVarargs(value: String*): Self = this.set("h", js.Array(value :_*))
+    def setHealth(value: green | yellow | red): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH(value: String | js.Array[String]): Self = this.set("h", value.asInstanceOf[js.Any])
+    def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
     
     @scala.inline
-    def deleteH: Self = this.set("h", js.undefined)
+    def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealth(value: green | yellow | red): Self = this.set("health", value.asInstanceOf[js.Any])
+    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
     @scala.inline
-    def deleteHealth: Self = this.set("health", js.undefined)
+    def setInclude_unloaded_segments(value: Boolean): Self = StObject.set(x, "include_unloaded_segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp(value: Boolean): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setInclude_unloaded_segmentsUndefined: Self = StObject.set(x, "include_unloaded_segments", js.undefined)
     
     @scala.inline
-    def deleteHelp: Self = this.set("help", js.undefined)
+    def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_unloaded_segments(value: Boolean): Self = this.set("include_unloaded_segments", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteInclude_unloaded_segments: Self = this.set("include_unloaded_segments", js.undefined)
+    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
     @scala.inline
-    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String | js.Array[String]): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal(value: Boolean): Self = this.set("local", value.asInstanceOf[js.Any])
+    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
     @scala.inline
-    def deleteLocal: Self = this.set("local", js.undefined)
+    def setPri(value: Boolean): Self = StObject.set(x, "pri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster_timeout(value: String): Self = this.set("master_timeout", value.asInstanceOf[js.Any])
+    def setPriUndefined: Self = StObject.set(x, "pri", js.undefined)
     
     @scala.inline
-    def deleteMaster_timeout: Self = this.set("master_timeout", js.undefined)
+    def setS(value: String | js.Array[String]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPri(value: Boolean): Self = this.set("pri", value.asInstanceOf[js.Any])
+    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
     @scala.inline
-    def deletePri: Self = this.set("pri", js.undefined)
+    def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value :_*))
     
     @scala.inline
-    def setSVarargs(value: String*): Self = this.set("s", js.Array(value :_*))
+    def setTime(value: d | h | m | s | ms | micros | nanos): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS(value: String | js.Array[String]): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteS: Self = this.set("s", js.undefined)
+    def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: d | h | m | s | ms | micros | nanos): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
-    
-    @scala.inline
-    def setV(value: Boolean): Self = this.set("v", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteV: Self = this.set("v", js.undefined)
+    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

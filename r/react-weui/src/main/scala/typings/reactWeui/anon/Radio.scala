@@ -1,11 +1,12 @@
 package typings.reactWeui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Radio extends js.Object {
+trait Radio extends StObject {
   
   var checkbox: Boolean = js.native
   
@@ -38,39 +39,27 @@ object Radio {
   }
   
   @scala.inline
-  implicit class RadioOps[Self <: Radio] (val x: Self) extends AnyVal {
+  implicit class RadioMutableBuilder[Self <: Radio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckbox(value: Boolean): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRadio(value: Boolean): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckbox(value: Boolean): Self = this.set("checkbox", value.asInstanceOf[js.Any])
+    def setSelectPos(value: js.Any): Self = StObject.set(x, "selectPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadio(value: Boolean): Self = this.set("radio", value.asInstanceOf[js.Any])
+    def setSwitch(value: Boolean): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: Boolean): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setVcode(value: Boolean): Self = StObject.set(x, "vcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectPos(value: js.Any): Self = this.set("selectPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwitch(value: Boolean): Self = this.set("switch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVcode(value: Boolean): Self = this.set("vcode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarn(value: Boolean): Self = this.set("warn", value.asInstanceOf[js.Any])
+    def setWarn(value: Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
   }
 }

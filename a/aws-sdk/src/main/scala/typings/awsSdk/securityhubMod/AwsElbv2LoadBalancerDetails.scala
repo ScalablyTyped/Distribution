@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsElbv2LoadBalancerDetails extends js.Object {
+trait AwsElbv2LoadBalancerDetails extends StObject {
   
   /**
     * The Availability Zones for the load balancer.
@@ -66,84 +67,72 @@ object AwsElbv2LoadBalancerDetails {
   }
   
   @scala.inline
-  implicit class AwsElbv2LoadBalancerDetailsOps[Self <: AwsElbv2LoadBalancerDetails] (val x: Self) extends AnyVal {
+  implicit class AwsElbv2LoadBalancerDetailsMutableBuilder[Self <: AwsElbv2LoadBalancerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    def setCanonicalHostedZoneId(value: NonEmptyString): Self = StObject.set(x, "CanonicalHostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZones(value: AvailabilityZones): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    def setCanonicalHostedZoneIdUndefined: Self = StObject.set(x, "CanonicalHostedZoneId", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    def setCreatedTime(value: NonEmptyString): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanonicalHostedZoneId(value: NonEmptyString): Self = this.set("CanonicalHostedZoneId", value.asInstanceOf[js.Any])
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def deleteCanonicalHostedZoneId: Self = this.set("CanonicalHostedZoneId", js.undefined)
+    def setDNSName(value: NonEmptyString): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: NonEmptyString): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setDNSNameUndefined: Self = StObject.set(x, "DNSName", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setIpAddressType(value: NonEmptyString): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDNSName(value: NonEmptyString): Self = this.set("DNSName", value.asInstanceOf[js.Any])
+    def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
     
     @scala.inline
-    def deleteDNSName: Self = this.set("DNSName", js.undefined)
+    def setScheme(value: NonEmptyString): Self = StObject.set(x, "Scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddressType(value: NonEmptyString): Self = this.set("IpAddressType", value.asInstanceOf[js.Any])
+    def setSchemeUndefined: Self = StObject.set(x, "Scheme", js.undefined)
     
     @scala.inline
-    def deleteIpAddressType: Self = this.set("IpAddressType", js.undefined)
+    def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheme(value: NonEmptyString): Self = this.set("Scheme", value.asInstanceOf[js.Any])
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteScheme: Self = this.set("Scheme", js.undefined)
+    def setSecurityGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupsVarargs(value: NonEmptyString*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    def setState(value: LoadBalancerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroups(value: SecurityGroups): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: LoadBalancerState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: NonEmptyString): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: NonEmptyString): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

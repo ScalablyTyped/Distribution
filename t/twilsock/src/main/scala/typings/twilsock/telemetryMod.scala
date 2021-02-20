@@ -2,14 +2,14 @@ package typings.twilsock
 
 import typings.twilsock.abstractmessageMod.AbstractMessage
 import typings.twilsock.protocolMod.Protocol.MessageType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/protocol/messages/telemetry", JSImport.Namespace)
-@js.native
-object telemetryMod extends js.Object {
+object telemetryMod {
   
+  @JSImport("twilsock/lib/protocol/messages/telemetry", "Telemetry")
   @js.native
   class Telemetry protected () extends AbstractMessage {
     def this(events: js.Array[TelemetryEvent]) = this()
@@ -19,47 +19,47 @@ object telemetryMod extends js.Object {
     val method: MessageType = js.native
   }
   
+  @JSImport("twilsock/lib/protocol/messages/telemetry", "TelemetryEvent")
   @js.native
-  class TelemetryEvent protected () extends js.Object {
+  class TelemetryEvent protected () extends StObject {
     def this(
-       // relative to event send time
-    start: Double,
-       // relative to event send time
+      start: Double,
+      // relative to event send time
     end: Double,
-      title: String,
+      // relative to event send time
+    title: String,
       details: String
     ) = this()
     def this(
-       // relative to event send time
-    start: Double,
-       // relative to event send time
+      start: Double,
+      // relative to event send time
     end: Double,
-      title: String,
+      // relative to event send time
+    title: String,
       details: String,
-       // optional, default will be random assigned by backend
-    id: String
+      id: String
     ) = this()
     def this(
-       // relative to event send time
-    start: Double,
-       // relative to event send time
+      start: Double,
+      // relative to event send time
     end: Double,
-      title: String,
+      // relative to event send time
+    title: String,
       details: String,
-       // optional, default will be random assigned by backend
-    id: js.UndefOr[scala.Nothing],
-      `type`: String
+      id: js.UndefOr[scala.Nothing],
+      // optional, default will be random assigned by backend
+    `type`: String
     ) = this()
     def this(
-       // relative to event send time
-    start: Double,
-       // relative to event send time
+      start: Double,
+      // relative to event send time
     end: Double,
-      title: String,
+      // relative to event send time
+    title: String,
       details: String,
-       // optional, default will be random assigned by backend
-    id: String,
-      `type`: String
+      id: String,
+      // optional, default will be random assigned by backend
+    `type`: String
     ) = this()
     
     val details: String = js.native

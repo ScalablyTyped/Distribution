@@ -5,6 +5,7 @@ import typings.pulumiAws.accountAliasMod.AccountAliasState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class AccountAlias protected ()
   def this(name: String, args: AccountAliasArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws/iam", "AccountAlias")
-@js.native
-object AccountAlias extends js.Object {
+object AccountAlias {
   
   /**
     * Get an existing AccountAlias resource's state with the given name, ID, and optional extra
@@ -37,14 +36,24 @@ object AccountAlias extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws/iam", "AccountAlias.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.accountAliasMod.AccountAlias = js.native
+  @JSImport("@pulumi/aws/iam", "AccountAlias.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.accountAliasMod.AccountAlias = js.native
+  @JSImport("@pulumi/aws/iam", "AccountAlias.get")
+  @js.native
   def get(name: String, id: Input[ID], state: AccountAliasState): typings.pulumiAws.accountAliasMod.AccountAlias = js.native
+  @JSImport("@pulumi/aws/iam", "AccountAlias.get")
+  @js.native
   def get(name: String, id: Input[ID], state: AccountAliasState, opts: CustomResourceOptions): typings.pulumiAws.accountAliasMod.AccountAlias = js.native
   
   /**
     * Returns true if the given object is an instance of AccountAlias.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws/iam", "AccountAlias.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountAlias.AccountAlias */ Boolean = js.native
 }

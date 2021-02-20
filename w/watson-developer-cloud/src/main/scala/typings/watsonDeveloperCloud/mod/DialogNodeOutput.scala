@@ -1,6 +1,7 @@
 package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,33 +27,21 @@ object DialogNodeOutput {
   }
   
   @scala.inline
-  implicit class DialogNodeOutputOps[Self <: DialogNodeOutput] (val x: Self) extends AnyVal {
+  implicit class DialogNodeOutputMutableBuilder[Self <: DialogNodeOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeneric(value: js.Array[DialogNodeOutputGeneric]): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenericUndefined: Self = StObject.set(x, "generic", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenericVarargs(value: DialogNodeOutputGeneric*): Self = StObject.set(x, "generic", js.Array(value :_*))
     
     @scala.inline
-    def setGenericVarargs(value: DialogNodeOutputGeneric*): Self = this.set("generic", js.Array(value :_*))
+    def setModifiers(value: DialogNodeOutputModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneric(value: js.Array[DialogNodeOutputGeneric]): Self = this.set("generic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeneric: Self = this.set("generic", js.undefined)
-    
-    @scala.inline
-    def setModifiers(value: DialogNodeOutputModifiers): Self = this.set("modifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
   }
 }

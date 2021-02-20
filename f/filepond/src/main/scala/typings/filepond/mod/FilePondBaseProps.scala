@@ -2,12 +2,13 @@ package typings.filepond.mod
 
 import typings.filepond.filepondStrings.after
 import typings.filepond.filepondStrings.before
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilePondBaseProps extends js.Object {
+trait FilePondBaseProps extends StObject {
   
   /**
     * Enable or disable file browser.
@@ -152,165 +153,153 @@ object FilePondBaseProps {
   }
   
   @scala.inline
-  implicit class FilePondBasePropsOps[Self <: FilePondBaseProps] (val x: Self) extends AnyVal {
+  implicit class FilePondBasePropsMutableBuilder[Self <: FilePondBaseProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowBrowse(value: Boolean): Self = StObject.set(x, "allowBrowse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowBrowseUndefined: Self = StObject.set(x, "allowBrowse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowDirectoriesOnly(value: Boolean): Self = StObject.set(x, "allowDirectoriesOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowBrowse(value: Boolean): Self = this.set("allowBrowse", value.asInstanceOf[js.Any])
+    def setAllowDirectoriesOnlyUndefined: Self = StObject.set(x, "allowDirectoriesOnly", js.undefined)
     
     @scala.inline
-    def deleteAllowBrowse: Self = this.set("allowBrowse", js.undefined)
+    def setAllowDrop(value: Boolean): Self = StObject.set(x, "allowDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDirectoriesOnly(value: Boolean): Self = this.set("allowDirectoriesOnly", value.asInstanceOf[js.Any])
+    def setAllowDropUndefined: Self = StObject.set(x, "allowDrop", js.undefined)
     
     @scala.inline
-    def deleteAllowDirectoriesOnly: Self = this.set("allowDirectoriesOnly", js.undefined)
+    def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDrop(value: Boolean): Self = this.set("allowDrop", value.asInstanceOf[js.Any])
+    def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
     
     @scala.inline
-    def deleteAllowDrop: Self = this.set("allowDrop", js.undefined)
+    def setAllowPaste(value: Boolean): Self = StObject.set(x, "allowPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultiple(value: Boolean): Self = this.set("allowMultiple", value.asInstanceOf[js.Any])
+    def setAllowPasteUndefined: Self = StObject.set(x, "allowPaste", js.undefined)
     
     @scala.inline
-    def deleteAllowMultiple: Self = this.set("allowMultiple", js.undefined)
+    def setAllowProcess(value: Boolean): Self = StObject.set(x, "allowProcess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPaste(value: Boolean): Self = this.set("allowPaste", value.asInstanceOf[js.Any])
+    def setAllowProcessUndefined: Self = StObject.set(x, "allowProcess", js.undefined)
     
     @scala.inline
-    def deleteAllowPaste: Self = this.set("allowPaste", js.undefined)
+    def setAllowReorder(value: Boolean): Self = StObject.set(x, "allowReorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowProcess(value: Boolean): Self = this.set("allowProcess", value.asInstanceOf[js.Any])
+    def setAllowReorderUndefined: Self = StObject.set(x, "allowReorder", js.undefined)
     
     @scala.inline
-    def deleteAllowProcess: Self = this.set("allowProcess", js.undefined)
+    def setAllowReplace(value: Boolean): Self = StObject.set(x, "allowReplace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowReorder(value: Boolean): Self = this.set("allowReorder", value.asInstanceOf[js.Any])
+    def setAllowReplaceUndefined: Self = StObject.set(x, "allowReplace", js.undefined)
     
     @scala.inline
-    def deleteAllowReorder: Self = this.set("allowReorder", js.undefined)
+    def setAllowRevert(value: Boolean): Self = StObject.set(x, "allowRevert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowReplace(value: Boolean): Self = this.set("allowReplace", value.asInstanceOf[js.Any])
+    def setAllowRevertUndefined: Self = StObject.set(x, "allowRevert", js.undefined)
     
     @scala.inline
-    def deleteAllowReplace: Self = this.set("allowReplace", js.undefined)
+    def setAllowSyncAcceptAttribute(value: Boolean): Self = StObject.set(x, "allowSyncAcceptAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowRevert(value: Boolean): Self = this.set("allowRevert", value.asInstanceOf[js.Any])
+    def setAllowSyncAcceptAttributeUndefined: Self = StObject.set(x, "allowSyncAcceptAttribute", js.undefined)
     
     @scala.inline
-    def deleteAllowRevert: Self = this.set("allowRevert", js.undefined)
+    def setCaptureMethod(value: CaptureAttribute): Self = StObject.set(x, "captureMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSyncAcceptAttribute(value: Boolean): Self = this.set("allowSyncAcceptAttribute", value.asInstanceOf[js.Any])
+    def setCaptureMethodNull: Self = StObject.set(x, "captureMethod", null)
     
     @scala.inline
-    def deleteAllowSyncAcceptAttribute: Self = this.set("allowSyncAcceptAttribute", js.undefined)
+    def setCaptureMethodUndefined: Self = StObject.set(x, "captureMethod", js.undefined)
     
     @scala.inline
-    def setCaptureMethod(value: CaptureAttribute): Self = this.set("captureMethod", value.asInstanceOf[js.Any])
+    def setCheckValidity(value: Boolean): Self = StObject.set(x, "checkValidity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaptureMethod: Self = this.set("captureMethod", js.undefined)
+    def setCheckValidityUndefined: Self = StObject.set(x, "checkValidity", js.undefined)
     
     @scala.inline
-    def setCaptureMethodNull: Self = this.set("captureMethod", null)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckValidity(value: Boolean): Self = this.set("checkValidity", value.asInstanceOf[js.Any])
+    def setClassNameNull: Self = StObject.set(x, "className", null)
     
     @scala.inline
-    def deleteCheckValidity: Self = this.set("checkValidity", js.undefined)
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setClassNameNull: Self = this.set("className", null)
+    def setForceRevert(value: Boolean): Self = StObject.set(x, "forceRevert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setForceRevertUndefined: Self = StObject.set(x, "forceRevert", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceRevert(value: Boolean): Self = this.set("forceRevert", value.asInstanceOf[js.Any])
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def deleteForceRevert: Self = this.set("forceRevert", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setItemInsertInterval(value: Double): Self = StObject.set(x, "itemInsertInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setItemInsertIntervalUndefined: Self = StObject.set(x, "itemInsertInterval", js.undefined)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setItemInsertLocation(value: before | after | (js.Function2[/* a */ FilePondFile, /* b */ FilePondFile, Double])): Self = StObject.set(x, "itemInsertLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemInsertInterval(value: Double): Self = this.set("itemInsertInterval", value.asInstanceOf[js.Any])
+    def setItemInsertLocationFreedom(value: Boolean): Self = StObject.set(x, "itemInsertLocationFreedom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemInsertInterval: Self = this.set("itemInsertInterval", js.undefined)
+    def setItemInsertLocationFreedomUndefined: Self = StObject.set(x, "itemInsertLocationFreedom", js.undefined)
     
     @scala.inline
-    def setItemInsertLocationFunction2(value: (/* a */ FilePondFile, /* b */ FilePondFile) => Double): Self = this.set("itemInsertLocation", js.Any.fromFunction2(value))
+    def setItemInsertLocationFunction2(value: (/* a */ FilePondFile, /* b */ FilePondFile) => Double): Self = StObject.set(x, "itemInsertLocation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setItemInsertLocation(value: before | after | (js.Function2[/* a */ FilePondFile, /* b */ FilePondFile, Double])): Self = this.set("itemInsertLocation", value.asInstanceOf[js.Any])
+    def setItemInsertLocationUndefined: Self = StObject.set(x, "itemInsertLocation", js.undefined)
     
     @scala.inline
-    def deleteItemInsertLocation: Self = this.set("itemInsertLocation", js.undefined)
+    def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemInsertLocationFreedom(value: Boolean): Self = this.set("itemInsertLocationFreedom", value.asInstanceOf[js.Any])
+    def setMaxFilesNull: Self = StObject.set(x, "maxFiles", null)
     
     @scala.inline
-    def deleteItemInsertLocationFreedom: Self = this.set("itemInsertLocationFreedom", js.undefined)
+    def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
     
     @scala.inline
-    def setMaxFiles(value: Double): Self = this.set("maxFiles", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxFiles: Self = this.set("maxFiles", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMaxFilesNull: Self = this.set("maxFiles", null)
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

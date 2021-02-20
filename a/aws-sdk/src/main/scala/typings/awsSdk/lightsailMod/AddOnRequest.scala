@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddOnRequest extends js.Object {
+trait AddOnRequest extends StObject {
   
   /**
     * The add-on type.
@@ -26,27 +27,15 @@ object AddOnRequest {
   }
   
   @scala.inline
-  implicit class AddOnRequestOps[Self <: AddOnRequest] (val x: Self) extends AnyVal {
+  implicit class AddOnRequestMutableBuilder[Self <: AddOnRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOnType(value: AddOnType): Self = StObject.set(x, "addOnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoSnapshotAddOnRequest(value: AutoSnapshotAddOnRequest): Self = StObject.set(x, "autoSnapshotAddOnRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddOnType(value: AddOnType): Self = this.set("addOnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAutoSnapshotAddOnRequest(value: AutoSnapshotAddOnRequest): Self = this.set("autoSnapshotAddOnRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoSnapshotAddOnRequest: Self = this.set("autoSnapshotAddOnRequest", js.undefined)
+    def setAutoSnapshotAddOnRequestUndefined: Self = StObject.set(x, "autoSnapshotAddOnRequest", js.undefined)
   }
 }

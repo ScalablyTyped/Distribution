@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,39 +60,27 @@ object XPrintJob {
   }
   
   @scala.inline
-  implicit class XPrintJobOps[Self <: XPrintJob] (val x: Self) extends AnyVal {
+  implicit class XPrintJobMutableBuilder[Self <: XPrintJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelJob(value: () => Unit): Self = StObject.set(x, "cancelJob", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPrintOptions(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPrintOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPrintable(value: () => XPrintable): Self = StObject.set(x, "getPrintable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPrintOptions(value: SafeArray[PropertyValue]): Self = this.set("PrintOptions", value.asInstanceOf[js.Any])
+    def setGetPrinter(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPrinter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPrintable(value: XPrintable): Self = this.set("Printable", value.asInstanceOf[js.Any])
+    def setPrintOptions(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PrintOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrinter(value: SafeArray[PropertyValue]): Self = this.set("Printer", value.asInstanceOf[js.Any])
+    def setPrintable(value: XPrintable): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelJob(value: () => Unit): Self = this.set("cancelJob", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPrintOptions(value: () => SafeArray[PropertyValue]): Self = this.set("getPrintOptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPrintable(value: () => XPrintable): Self = this.set("getPrintable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPrinter(value: () => SafeArray[PropertyValue]): Self = this.set("getPrinter", js.Any.fromFunction0(value))
+    def setPrinter(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Printer", value.asInstanceOf[js.Any])
   }
 }

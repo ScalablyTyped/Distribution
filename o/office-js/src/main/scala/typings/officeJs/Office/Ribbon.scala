@@ -1,5 +1,6 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **Requirement set**: Ribbon 1.1
   */
 @js.native
-trait Ribbon extends js.Object {
+trait Ribbon extends StObject {
   
   /**
     * Sends a request to Office to update the ribbon.
@@ -36,21 +37,9 @@ object Ribbon {
   }
   
   @scala.inline
-  implicit class RibbonOps[Self <: Ribbon] (val x: Self) extends AnyVal {
+  implicit class RibbonMutableBuilder[Self <: Ribbon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequestUpdate(value: RibbonUpdaterData => js.Promise[Unit]): Self = this.set("requestUpdate", js.Any.fromFunction1(value))
+    def setRequestUpdate(value: RibbonUpdaterData => js.Promise[Unit]): Self = StObject.set(x, "requestUpdate", js.Any.fromFunction1(value))
   }
 }

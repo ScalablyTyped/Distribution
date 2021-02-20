@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setHelpText("This connector can connect to multiple data endpoints.");
   */
 @js.native
-trait Config extends js.Object {
+trait Config extends StObject {
   
   def build(): Config = js.native
   
@@ -61,51 +62,39 @@ object Config {
   }
   
   @scala.inline
-  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: () => Config): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewCheckbox(value: () => Checkbox): Self = StObject.set(x, "newCheckbox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewInfo(value: () => Info): Self = StObject.set(x, "newInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuild(value: () => Config): Self = this.set("build", js.Any.fromFunction0(value))
+    def setNewOptionBuilder(value: () => OptionBuilder): Self = StObject.set(x, "newOptionBuilder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewCheckbox(value: () => Checkbox): Self = this.set("newCheckbox", js.Any.fromFunction0(value))
+    def setNewSelectMultiple(value: () => SelectMultiple): Self = StObject.set(x, "newSelectMultiple", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewInfo(value: () => Info): Self = this.set("newInfo", js.Any.fromFunction0(value))
+    def setNewSelectSingle(value: () => SelectSingle): Self = StObject.set(x, "newSelectSingle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewOptionBuilder(value: () => OptionBuilder): Self = this.set("newOptionBuilder", js.Any.fromFunction0(value))
+    def setNewTextArea(value: () => TextArea): Self = StObject.set(x, "newTextArea", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewSelectMultiple(value: () => SelectMultiple): Self = this.set("newSelectMultiple", js.Any.fromFunction0(value))
+    def setNewTextInput(value: () => TextInput): Self = StObject.set(x, "newTextInput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewSelectSingle(value: () => SelectSingle): Self = this.set("newSelectSingle", js.Any.fromFunction0(value))
+    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewTextArea(value: () => TextArea): Self = this.set("newTextArea", js.Any.fromFunction0(value))
+    def setSetDateRangeRequired(value: Boolean => Config): Self = StObject.set(x, "setDateRangeRequired", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNewTextInput(value: () => TextInput): Self = this.set("newTextInput", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrintJson(value: () => String): Self = this.set("printJson", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDateRangeRequired(value: Boolean => Config): Self = this.set("setDateRangeRequired", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetIsSteppedConfig(value: Boolean => Config): Self = this.set("setIsSteppedConfig", js.Any.fromFunction1(value))
+    def setSetIsSteppedConfig(value: Boolean => Config): Self = StObject.set(x, "setIsSteppedConfig", js.Any.fromFunction1(value))
   }
 }

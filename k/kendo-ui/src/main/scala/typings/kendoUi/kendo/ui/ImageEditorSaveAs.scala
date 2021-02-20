@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageEditorSaveAs extends js.Object {
+trait ImageEditorSaveAs extends StObject {
   
   var fileName: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object ImageEditorSaveAs {
   }
   
   @scala.inline
-  implicit class ImageEditorSaveAsOps[Self <: ImageEditorSaveAs] (val x: Self) extends AnyVal {
+  implicit class ImageEditorSaveAsMutableBuilder[Self <: ImageEditorSaveAs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setProxyTarget(value: String): Self = StObject.set(x, "proxyTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceProxy(value: Boolean): Self = this.set("forceProxy", value.asInstanceOf[js.Any])
+    def setProxyTargetUndefined: Self = StObject.set(x, "proxyTarget", js.undefined)
     
     @scala.inline
-    def deleteForceProxy: Self = this.set("forceProxy", js.undefined)
+    def setProxyURL(value: Boolean): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyTarget(value: String): Self = this.set("proxyTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxyTarget: Self = this.set("proxyTarget", js.undefined)
-    
-    @scala.inline
-    def setProxyURL(value: Boolean): Self = this.set("proxyURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxyURL: Self = this.set("proxyURL", js.undefined)
+    def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
   }
 }

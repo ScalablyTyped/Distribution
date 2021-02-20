@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Payments extends js.Object {
+trait Payments extends StObject {
   
   /**
     * Reserved: TBD
@@ -38,48 +39,36 @@ object Payments {
   }
   
   @scala.inline
-  implicit class PaymentsOps[Self <: Payments] (val x: Self) extends AnyVal {
+  implicit class PaymentsMutableBuilder[Self <: Payments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setPaymentDate(value: String): Self = StObject.set(x, "paymentDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPaymentDateUndefined: Self = StObject.set(x, "paymentDate", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPaymentId(value: String): Self = StObject.set(x, "paymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentDate(value: String): Self = this.set("paymentDate", value.asInstanceOf[js.Any])
+    def setPaymentIdUndefined: Self = StObject.set(x, "paymentId", js.undefined)
     
     @scala.inline
-    def deletePaymentDate: Self = this.set("paymentDate", js.undefined)
+    def setPaymentNumber(value: String): Self = StObject.set(x, "paymentNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentId(value: String): Self = this.set("paymentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentId: Self = this.set("paymentId", js.undefined)
-    
-    @scala.inline
-    def setPaymentNumber(value: String): Self = this.set("paymentNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentNumber: Self = this.set("paymentNumber", js.undefined)
+    def setPaymentNumberUndefined: Self = StObject.set(x, "paymentNumber", js.undefined)
   }
 }

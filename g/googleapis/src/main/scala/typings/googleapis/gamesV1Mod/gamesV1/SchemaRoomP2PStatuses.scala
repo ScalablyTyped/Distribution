@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for an update on the status of peers in a room.
   */
 @js.native
-trait SchemaRoomP2PStatuses extends js.Object {
+trait SchemaRoomP2PStatuses extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
@@ -30,33 +31,21 @@ object SchemaRoomP2PStatuses {
   }
   
   @scala.inline
-  implicit class SchemaRoomP2PStatusesOps[Self <: SchemaRoomP2PStatuses] (val x: Self) extends AnyVal {
+  implicit class SchemaRoomP2PStatusesMutableBuilder[Self <: SchemaRoomP2PStatuses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdates(value: js.Array[SchemaRoomP2PStatus]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setUpdatesVarargs(value: SchemaRoomP2PStatus*): Self = this.set("updates", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdates(value: js.Array[SchemaRoomP2PStatus]): Self = this.set("updates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdates: Self = this.set("updates", js.undefined)
+    def setUpdatesVarargs(value: SchemaRoomP2PStatus*): Self = StObject.set(x, "updates", js.Array(value :_*))
   }
 }

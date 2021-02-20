@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateMeetingDialOutRequest extends js.Object {
+trait CreateMeetingDialOutRequest extends StObject {
   
   /**
     * Phone number used as the caller ID when the remote party receives a call.
@@ -41,30 +42,18 @@ object CreateMeetingDialOutRequest {
   }
   
   @scala.inline
-  implicit class CreateMeetingDialOutRequestOps[Self <: CreateMeetingDialOutRequest] (val x: Self) extends AnyVal {
+  implicit class CreateMeetingDialOutRequestMutableBuilder[Self <: CreateMeetingDialOutRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "FromPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJoinToken(value: JoinTokenString): Self = StObject.set(x, "JoinToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPhoneNumber(value: E164PhoneNumber): Self = this.set("FromPhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJoinToken(value: JoinTokenString): Self = this.set("JoinToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeetingId(value: GuidString): Self = this.set("MeetingId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToPhoneNumber(value: E164PhoneNumber): Self = this.set("ToPhoneNumber", value.asInstanceOf[js.Any])
+    def setToPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "ToPhoneNumber", value.asInstanceOf[js.Any])
   }
 }

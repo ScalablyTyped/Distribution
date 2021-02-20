@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.anon.Radius
 import typings.three.bufferGeometryMod.BufferGeometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/CircleBufferGeometry", JSImport.Namespace)
-@js.native
-object circleBufferGeometryMod extends js.Object {
+object circleBufferGeometryMod {
   
+  @JSImport("three/src/geometries/CircleBufferGeometry", "CircleBufferGeometry")
   @js.native
   /**
   	 * @param [radius=1]

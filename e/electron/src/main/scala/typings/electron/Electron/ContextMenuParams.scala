@@ -11,12 +11,13 @@ import typings.electron.electronStrings.plugin
 import typings.electron.electronStrings.touch
 import typings.electron.electronStrings.touchMenu
 import typings.electron.electronStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextMenuParams extends js.Object {
+trait ContextMenuParams extends StObject {
   
   /**
     * An array of suggested words to show the user to replace the `misspelledWord`.
@@ -149,78 +150,66 @@ object ContextMenuParams {
   }
   
   @scala.inline
-  implicit class ContextMenuParamsOps[Self <: ContextMenuParams] (val x: Self) extends AnyVal {
+  implicit class ContextMenuParamsMutableBuilder[Self <: ContextMenuParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDictionarySuggestions(value: js.Array[String]): Self = StObject.set(x, "dictionarySuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDictionarySuggestionsVarargs(value: String*): Self = StObject.set(x, "dictionarySuggestions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditFlags(value: EditFlags): Self = StObject.set(x, "editFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictionarySuggestionsVarargs(value: String*): Self = this.set("dictionarySuggestions", js.Array(value :_*))
+    def setFrameCharset(value: String): Self = StObject.set(x, "frameCharset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictionarySuggestions(value: js.Array[String]): Self = this.set("dictionarySuggestions", value.asInstanceOf[js.Any])
+    def setFrameURL(value: String): Self = StObject.set(x, "frameURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditFlags(value: EditFlags): Self = this.set("editFlags", value.asInstanceOf[js.Any])
+    def setHasImageContents(value: Boolean): Self = StObject.set(x, "hasImageContents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameCharset(value: String): Self = this.set("frameCharset", value.asInstanceOf[js.Any])
+    def setInputFieldType(value: String): Self = StObject.set(x, "inputFieldType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameURL(value: String): Self = this.set("frameURL", value.asInstanceOf[js.Any])
+    def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasImageContents(value: Boolean): Self = this.set("hasImageContents", value.asInstanceOf[js.Any])
+    def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFieldType(value: String): Self = this.set("inputFieldType", value.asInstanceOf[js.Any])
+    def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEditable(value: Boolean): Self = this.set("isEditable", value.asInstanceOf[js.Any])
+    def setMediaFlags(value: MediaFlags): Self = StObject.set(x, "mediaFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkText(value: String): Self = this.set("linkText", value.asInstanceOf[js.Any])
+    def setMediaType(value: none | image | audio | video | canvas | file | plugin): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkURL(value: String): Self = this.set("linkURL", value.asInstanceOf[js.Any])
+    def setMenuSourceType(value: none | mouse | keyboard | touch | touchMenu): Self = StObject.set(x, "menuSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaFlags(value: MediaFlags): Self = this.set("mediaFlags", value.asInstanceOf[js.Any])
+    def setMisspelledWord(value: String): Self = StObject.set(x, "misspelledWord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: none | image | audio | video | canvas | file | plugin): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setPageURL(value: String): Self = StObject.set(x, "pageURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuSourceType(value: none | mouse | keyboard | touch | touchMenu): Self = this.set("menuSourceType", value.asInstanceOf[js.Any])
+    def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMisspelledWord(value: String): Self = this.set("misspelledWord", value.asInstanceOf[js.Any])
+    def setSrcURL(value: String): Self = StObject.set(x, "srcURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageURL(value: String): Self = this.set("pageURL", value.asInstanceOf[js.Any])
+    def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionText(value: String): Self = this.set("selectionText", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrcURL(value: String): Self = this.set("srcURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleText(value: String): Self = this.set("titleText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

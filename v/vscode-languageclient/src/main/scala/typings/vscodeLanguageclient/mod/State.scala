@@ -1,12 +1,13 @@
 package typings.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient", "State")
 @js.native
-object State extends js.Object {
+object State extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.vscodeLanguageclient.clientMod.State with Double] = js.native

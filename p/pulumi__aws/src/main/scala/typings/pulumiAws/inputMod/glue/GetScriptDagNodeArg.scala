@@ -1,11 +1,12 @@
 package typings.pulumiAws.inputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetScriptDagNodeArg extends js.Object {
+trait GetScriptDagNodeArg extends StObject {
   
   /**
     * The name of the argument or property.
@@ -31,30 +32,18 @@ object GetScriptDagNodeArg {
   }
   
   @scala.inline
-  implicit class GetScriptDagNodeArgOps[Self <: GetScriptDagNodeArg] (val x: Self) extends AnyVal {
+  implicit class GetScriptDagNodeArgMutableBuilder[Self <: GetScriptDagNodeArg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParam(value: Boolean): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParam(value: Boolean): Self = this.set("param", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParam: Self = this.set("param", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -26,12 +26,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.u32
 import typings.arcgisJsApi.arcgisJsApiStrings.u8
 import typings.arcgisJsApi.arcgisJsApiStrings.unknown
 import typings.std.AbortSignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcGISImageService extends js.Object {
+trait ArcGISImageService extends StObject {
   
   /**
     * Describes the layer's supported capabilities.

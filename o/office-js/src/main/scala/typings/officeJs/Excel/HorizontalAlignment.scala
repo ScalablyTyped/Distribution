@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HorizontalAlignment extends js.Object
+sealed trait HorizontalAlignment extends StObject
 /**
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.HorizontalAlignment")
 @js.native
-object HorizontalAlignment extends js.Object {
+object HorizontalAlignment extends StObject {
   
   @js.native
   sealed trait center extends HorizontalAlignment

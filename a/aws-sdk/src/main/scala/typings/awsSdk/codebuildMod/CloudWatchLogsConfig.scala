@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudWatchLogsConfig extends js.Object {
+trait CloudWatchLogsConfig extends StObject {
   
   /**
     *  The group name of the logs in Amazon CloudWatch Logs. For more information, see Working with Log Groups and Log Streams. 
@@ -31,33 +32,21 @@ object CloudWatchLogsConfig {
   }
   
   @scala.inline
-  implicit class CloudWatchLogsConfigOps[Self <: CloudWatchLogsConfig] (val x: Self) extends AnyVal {
+  implicit class CloudWatchLogsConfigMutableBuilder[Self <: CloudWatchLogsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: LogsConfigStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: LogsConfigStatusType): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStreamName(value: String): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupName: Self = this.set("groupName", js.undefined)
-    
-    @scala.inline
-    def setStreamName(value: String): Self = this.set("streamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamName: Self = this.set("streamName", js.undefined)
+    def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
   }
 }

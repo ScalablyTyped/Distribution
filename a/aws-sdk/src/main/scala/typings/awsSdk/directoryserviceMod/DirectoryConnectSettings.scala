@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectoryConnectSettings extends js.Object {
+trait DirectoryConnectSettings extends StObject {
   
   /**
     * A list of one or more IP addresses of DNS servers or domain controllers in the on-premises directory.
@@ -36,36 +37,24 @@ object DirectoryConnectSettings {
   }
   
   @scala.inline
-  implicit class DirectoryConnectSettingsOps[Self <: DirectoryConnectSettings] (val x: Self) extends AnyVal {
+  implicit class DirectoryConnectSettingsMutableBuilder[Self <: DirectoryConnectSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerDnsIps(value: DnsIpAddrs): Self = StObject.set(x, "CustomerDnsIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerDnsIpsVarargs(value: IpAddr*): Self = StObject.set(x, "CustomerDnsIps", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomerUserName(value: UserName): Self = StObject.set(x, "CustomerUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerDnsIpsVarargs(value: IpAddr*): Self = this.set("CustomerDnsIps", js.Array(value :_*))
+    def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerDnsIps(value: DnsIpAddrs): Self = this.set("CustomerDnsIps", value.asInstanceOf[js.Any])
+    def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
     @scala.inline
-    def setCustomerUserName(value: UserName): Self = this.set("CustomerUserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubnetIdsVarargs(value: SubnetId*): Self = this.set("SubnetIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubnetIds(value: SubnetIds): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

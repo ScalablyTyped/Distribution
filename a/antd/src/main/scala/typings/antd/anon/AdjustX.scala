@@ -1,11 +1,12 @@
 package typings.antd.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdjustX extends js.Object {
+trait AdjustX extends StObject {
   
   var adjustX: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object AdjustX {
   }
   
   @scala.inline
-  implicit class AdjustXOps[Self <: AdjustX] (val x: Self) extends AnyVal {
+  implicit class AdjustXMutableBuilder[Self <: AdjustX] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustX(value: Boolean): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjustXUndefined: Self = StObject.set(x, "adjustX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdjustY(value: Boolean): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustX(value: Boolean): Self = this.set("adjustX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdjustX: Self = this.set("adjustX", js.undefined)
-    
-    @scala.inline
-    def setAdjustY(value: Boolean): Self = this.set("adjustY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdjustY: Self = this.set("adjustY", js.undefined)
+    def setAdjustYUndefined: Self = StObject.set(x, "adjustY", js.undefined)
   }
 }

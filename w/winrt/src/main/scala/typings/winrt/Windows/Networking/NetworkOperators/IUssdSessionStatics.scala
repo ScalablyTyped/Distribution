@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUssdSessionStatics extends js.Object {
+trait IUssdSessionStatics extends StObject {
   
   def createFromNetworkAccountId(networkAccountId: String): UssdSession = js.native
   
@@ -23,24 +24,12 @@ object IUssdSessionStatics {
   }
   
   @scala.inline
-  implicit class IUssdSessionStaticsOps[Self <: IUssdSessionStatics] (val x: Self) extends AnyVal {
+  implicit class IUssdSessionStaticsMutableBuilder[Self <: IUssdSessionStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateFromNetworkAccountId(value: String => UssdSession): Self = StObject.set(x, "createFromNetworkAccountId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateFromNetworkAccountId(value: String => UssdSession): Self = this.set("createFromNetworkAccountId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateFromNetworkInterfaceId(value: String => UssdSession): Self = this.set("createFromNetworkInterfaceId", js.Any.fromFunction1(value))
+    def setCreateFromNetworkInterfaceId(value: String => UssdSession): Self = StObject.set(x, "createFromNetworkInterfaceId", js.Any.fromFunction1(value))
   }
 }

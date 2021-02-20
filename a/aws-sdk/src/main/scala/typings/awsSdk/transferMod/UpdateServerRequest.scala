@@ -1,11 +1,12 @@
 package typings.awsSdk.transferMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateServerRequest extends js.Object {
+trait UpdateServerRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Certificate Manager (ACM) certificate. Required when Protocols is set to FTPS. To request a new public certificate, see Request a public certificate in the  AWS Certificate Manager User Guide. To import an existing certificate into ACM, see Importing certificates into ACM in the  AWS Certificate Manager User Guide. To request a private certificate to use FTPS through private IP addresses, see Request a private certificate in the  AWS Certificate Manager User Guide. Certificates with the following cryptographic algorithms and key sizes are supported:   2048-bit RSA (RSA_2048)   4096-bit RSA (RSA_4096)   Elliptic Prime Curve 256 bit (EC_prime256v1)   Elliptic Prime Curve 384 bit (EC_secp384r1)   Elliptic Prime Curve 521 bit (EC_secp521r1)    The certificate must be a valid SSL/TLS X.509 version 3 certificate with FQDN or IP address specified and information about the issuer. 
@@ -61,72 +62,60 @@ object UpdateServerRequest {
   }
   
   @scala.inline
-  implicit class UpdateServerRequestOps[Self <: UpdateServerRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateServerRequestMutableBuilder[Self <: UpdateServerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointDetails(value: EndpointDetails): Self = StObject.set(x, "EndpointDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerId(value: ServerId): Self = this.set("ServerId", value.asInstanceOf[js.Any])
+    def setEndpointDetailsUndefined: Self = StObject.set(x, "EndpointDetails", js.undefined)
     
     @scala.inline
-    def setCertificate(value: Certificate): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    def setEndpointType(value: EndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
     @scala.inline
-    def setEndpointDetails(value: EndpointDetails): Self = this.set("EndpointDetails", value.asInstanceOf[js.Any])
+    def setHostKey(value: HostKey): Self = StObject.set(x, "HostKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndpointDetails: Self = this.set("EndpointDetails", js.undefined)
+    def setHostKeyUndefined: Self = StObject.set(x, "HostKey", js.undefined)
     
     @scala.inline
-    def setEndpointType(value: EndpointType): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    def setIdentityProviderDetails(value: IdentityProviderDetails): Self = StObject.set(x, "IdentityProviderDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    def setIdentityProviderDetailsUndefined: Self = StObject.set(x, "IdentityProviderDetails", js.undefined)
     
     @scala.inline
-    def setHostKey(value: HostKey): Self = this.set("HostKey", value.asInstanceOf[js.Any])
+    def setLoggingRole(value: NullableRole): Self = StObject.set(x, "LoggingRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHostKey: Self = this.set("HostKey", js.undefined)
+    def setLoggingRoleUndefined: Self = StObject.set(x, "LoggingRole", js.undefined)
     
     @scala.inline
-    def setIdentityProviderDetails(value: IdentityProviderDetails): Self = this.set("IdentityProviderDetails", value.asInstanceOf[js.Any])
+    def setProtocols(value: Protocols): Self = StObject.set(x, "Protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentityProviderDetails: Self = this.set("IdentityProviderDetails", js.undefined)
+    def setProtocolsUndefined: Self = StObject.set(x, "Protocols", js.undefined)
     
     @scala.inline
-    def setLoggingRole(value: NullableRole): Self = this.set("LoggingRole", value.asInstanceOf[js.Any])
+    def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "Protocols", js.Array(value :_*))
     
     @scala.inline
-    def deleteLoggingRole: Self = this.set("LoggingRole", js.undefined)
+    def setSecurityPolicyName(value: SecurityPolicyName): Self = StObject.set(x, "SecurityPolicyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolsVarargs(value: Protocol*): Self = this.set("Protocols", js.Array(value :_*))
+    def setSecurityPolicyNameUndefined: Self = StObject.set(x, "SecurityPolicyName", js.undefined)
     
     @scala.inline
-    def setProtocols(value: Protocols): Self = this.set("Protocols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocols: Self = this.set("Protocols", js.undefined)
-    
-    @scala.inline
-    def setSecurityPolicyName(value: SecurityPolicyName): Self = this.set("SecurityPolicyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityPolicyName: Self = this.set("SecurityPolicyName", js.undefined)
+    def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
   }
 }

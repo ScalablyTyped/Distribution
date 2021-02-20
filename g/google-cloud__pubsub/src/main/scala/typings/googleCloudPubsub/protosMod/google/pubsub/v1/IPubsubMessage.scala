@@ -3,40 +3,84 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.protosMod.google.protobuf.ITimestamp
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a PubsubMessage. */
-trait IPubsubMessage extends js.Object {
+@js.native
+trait IPubsubMessage extends StObject {
+  
   /** PubsubMessage attributes */
-  var attributes: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+  var attributes: js.UndefOr[StringDictionary[String] | Null] = js.native
+  
   /** PubsubMessage data */
-  var data: js.UndefOr[Uint8Array | String | Null] = js.undefined
+  var data: js.UndefOr[Uint8Array | String | Null] = js.native
+  
   /** PubsubMessage messageId */
-  var messageId: js.UndefOr[String | Null] = js.undefined
+  var messageId: js.UndefOr[String | Null] = js.native
+  
   /** PubsubMessage orderingKey */
-  var orderingKey: js.UndefOr[String | Null] = js.undefined
+  var orderingKey: js.UndefOr[String | Null] = js.native
+  
   /** PubsubMessage publishTime */
-  var publishTime: js.UndefOr[ITimestamp | Null] = js.undefined
+  var publishTime: js.UndefOr[ITimestamp | Null] = js.native
 }
-
 object IPubsubMessage {
+  
   @scala.inline
-  def apply(
-    attributes: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
-    data: js.UndefOr[Null | Uint8Array | String] = js.undefined,
-    messageId: js.UndefOr[Null | String] = js.undefined,
-    orderingKey: js.UndefOr[Null | String] = js.undefined,
-    publishTime: js.UndefOr[Null | ITimestamp] = js.undefined
-  ): IPubsubMessage = {
+  def apply(): IPubsubMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageId)) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (!js.isUndefined(orderingKey)) __obj.updateDynamic("orderingKey")(orderingKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishTime)) __obj.updateDynamic("publishTime")(publishTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPubsubMessage]
   }
+  
+  @scala.inline
+  implicit class IPubsubMessageMutableBuilder[Self <: IPubsubMessage] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAttributesNull: Self = StObject.set(x, "attributes", null)
+    
+    @scala.inline
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    @scala.inline
+    def setData(value: Uint8Array | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDataNull: Self = StObject.set(x, "data", null)
+    
+    @scala.inline
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    @scala.inline
+    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMessageIdNull: Self = StObject.set(x, "messageId", null)
+    
+    @scala.inline
+    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    
+    @scala.inline
+    def setOrderingKey(value: String): Self = StObject.set(x, "orderingKey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOrderingKeyNull: Self = StObject.set(x, "orderingKey", null)
+    
+    @scala.inline
+    def setOrderingKeyUndefined: Self = StObject.set(x, "orderingKey", js.undefined)
+    
+    @scala.inline
+    def setPublishTime(value: ITimestamp): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPublishTimeNull: Self = StObject.set(x, "publishTime", null)
+    
+    @scala.inline
+    def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
+  }
 }
-

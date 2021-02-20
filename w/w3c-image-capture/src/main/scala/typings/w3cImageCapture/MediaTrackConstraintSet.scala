@@ -4,12 +4,13 @@ import typings.w3cImageCapture.W3C.ConstrainPoint2D
 import typings.webrtc.W3C.ConstrainBoolean
 import typings.webrtc.W3C.ConstrainDouble
 import typings.webrtc.W3C.ConstrainString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaTrackConstraintSet extends js.Object {
+trait MediaTrackConstraintSet extends StObject {
   
   var brightness: js.UndefOr[ConstrainDouble] = js.native
   
@@ -48,114 +49,102 @@ object MediaTrackConstraintSet {
   }
   
   @scala.inline
-  implicit class MediaTrackConstraintSetOps[Self <: MediaTrackConstraintSet] (val x: Self) extends AnyVal {
+  implicit class MediaTrackConstraintSetMutableBuilder[Self <: MediaTrackConstraintSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrightness(value: ConstrainDouble): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorTemperature(value: ConstrainDouble): Self = StObject.set(x, "colorTemperature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: ConstrainDouble): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    def setColorTemperatureUndefined: Self = StObject.set(x, "colorTemperature", js.undefined)
     
     @scala.inline
-    def deleteBrightness: Self = this.set("brightness", js.undefined)
+    def setContrast(value: ConstrainDouble): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorTemperature(value: ConstrainDouble): Self = this.set("colorTemperature", value.asInstanceOf[js.Any])
+    def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
     
     @scala.inline
-    def deleteColorTemperature: Self = this.set("colorTemperature", js.undefined)
+    def setExposureCompensation(value: ConstrainDouble): Self = StObject.set(x, "exposureCompensation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: ConstrainDouble): Self = this.set("contrast", value.asInstanceOf[js.Any])
+    def setExposureCompensationUndefined: Self = StObject.set(x, "exposureCompensation", js.undefined)
     
     @scala.inline
-    def deleteContrast: Self = this.set("contrast", js.undefined)
+    def setExposureMode(value: ConstrainString): Self = StObject.set(x, "exposureMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureCompensation(value: ConstrainDouble): Self = this.set("exposureCompensation", value.asInstanceOf[js.Any])
+    def setExposureModeUndefined: Self = StObject.set(x, "exposureMode", js.undefined)
     
     @scala.inline
-    def deleteExposureCompensation: Self = this.set("exposureCompensation", js.undefined)
+    def setExposureModeVarargs(value: String*): Self = StObject.set(x, "exposureMode", js.Array(value :_*))
     
     @scala.inline
-    def setExposureModeVarargs(value: String*): Self = this.set("exposureMode", js.Array(value :_*))
+    def setFocusDistance(value: ConstrainDouble): Self = StObject.set(x, "focusDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureMode(value: ConstrainString): Self = this.set("exposureMode", value.asInstanceOf[js.Any])
+    def setFocusDistanceUndefined: Self = StObject.set(x, "focusDistance", js.undefined)
     
     @scala.inline
-    def deleteExposureMode: Self = this.set("exposureMode", js.undefined)
+    def setFocusMode(value: ConstrainString): Self = StObject.set(x, "focusMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusDistance(value: ConstrainDouble): Self = this.set("focusDistance", value.asInstanceOf[js.Any])
+    def setFocusModeUndefined: Self = StObject.set(x, "focusMode", js.undefined)
     
     @scala.inline
-    def deleteFocusDistance: Self = this.set("focusDistance", js.undefined)
+    def setFocusModeVarargs(value: String*): Self = StObject.set(x, "focusMode", js.Array(value :_*))
     
     @scala.inline
-    def setFocusModeVarargs(value: String*): Self = this.set("focusMode", js.Array(value :_*))
+    def setIso(value: ConstrainDouble): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusMode(value: ConstrainString): Self = this.set("focusMode", value.asInstanceOf[js.Any])
+    def setIsoUndefined: Self = StObject.set(x, "iso", js.undefined)
     
     @scala.inline
-    def deleteFocusMode: Self = this.set("focusMode", js.undefined)
+    def setPointsOfInterest(value: ConstrainPoint2D): Self = StObject.set(x, "pointsOfInterest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIso(value: ConstrainDouble): Self = this.set("iso", value.asInstanceOf[js.Any])
+    def setPointsOfInterestUndefined: Self = StObject.set(x, "pointsOfInterest", js.undefined)
     
     @scala.inline
-    def deleteIso: Self = this.set("iso", js.undefined)
+    def setPointsOfInterestVarargs(value: Point2D*): Self = StObject.set(x, "pointsOfInterest", js.Array(value :_*))
     
     @scala.inline
-    def setPointsOfInterestVarargs(value: Point2D*): Self = this.set("pointsOfInterest", js.Array(value :_*))
+    def setSaturation(value: ConstrainDouble): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointsOfInterest(value: ConstrainPoint2D): Self = this.set("pointsOfInterest", value.asInstanceOf[js.Any])
+    def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
     
     @scala.inline
-    def deletePointsOfInterest: Self = this.set("pointsOfInterest", js.undefined)
+    def setSharpness(value: ConstrainDouble): Self = StObject.set(x, "sharpness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturation(value: ConstrainDouble): Self = this.set("saturation", value.asInstanceOf[js.Any])
+    def setSharpnessUndefined: Self = StObject.set(x, "sharpness", js.undefined)
     
     @scala.inline
-    def deleteSaturation: Self = this.set("saturation", js.undefined)
+    def setTorch(value: ConstrainBoolean): Self = StObject.set(x, "torch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharpness(value: ConstrainDouble): Self = this.set("sharpness", value.asInstanceOf[js.Any])
+    def setTorchUndefined: Self = StObject.set(x, "torch", js.undefined)
     
     @scala.inline
-    def deleteSharpness: Self = this.set("sharpness", js.undefined)
+    def setWhiteBalanceMode(value: ConstrainString): Self = StObject.set(x, "whiteBalanceMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTorch(value: ConstrainBoolean): Self = this.set("torch", value.asInstanceOf[js.Any])
+    def setWhiteBalanceModeUndefined: Self = StObject.set(x, "whiteBalanceMode", js.undefined)
     
     @scala.inline
-    def deleteTorch: Self = this.set("torch", js.undefined)
+    def setWhiteBalanceModeVarargs(value: String*): Self = StObject.set(x, "whiteBalanceMode", js.Array(value :_*))
     
     @scala.inline
-    def setWhiteBalanceModeVarargs(value: String*): Self = this.set("whiteBalanceMode", js.Array(value :_*))
+    def setZoom(value: ConstrainDouble): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhiteBalanceMode(value: ConstrainString): Self = this.set("whiteBalanceMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhiteBalanceMode: Self = this.set("whiteBalanceMode", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: ConstrainDouble): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

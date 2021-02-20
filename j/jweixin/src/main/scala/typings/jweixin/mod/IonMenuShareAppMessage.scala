@@ -3,6 +3,7 @@ package typings.jweixin.mod
 import typings.jweixin.jweixinStrings.link
 import typings.jweixin.jweixinStrings.music
 import typings.jweixin.jweixinStrings.video或link
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,26 +14,26 @@ trait IonMenuShareAppMessage extends BaseParams {
   // 用户取消分享后执行的回调函数
   def cancel(): Unit = js.native
   
-          // 分享类型,music、video或link，不填默认为link
+  // 分享类型,music、video或link，不填默认为link
   var dataUrl: js.UndefOr[String] = js.native
   
-      // 分享标题
+  // 分享标题
   var desc: String = js.native
   
-      // 分享链接
+  // 分享链接
   var imgUrl: String = js.native
   
-      // 分享描述
+  // 分享描述
   var link: String = js.native
   
-   // 如果type是music或video，则要提供数据链接，默认为空
+  // 如果type是music或video，则要提供数据链接，默认为空
   // 用户确认分享后执行的回调函数
   @JSName("success")
   def success_MIonMenuShareAppMessage(): Unit = js.native
   
   var title: String = js.native
   
-      // 分享图标
+  // 分享图标
   var `type`: js.UndefOr[music | video或link | link] = js.native
 }
 object IonMenuShareAppMessage {
@@ -44,48 +45,36 @@ object IonMenuShareAppMessage {
   }
   
   @scala.inline
-  implicit class IonMenuShareAppMessageOps[Self <: IonMenuShareAppMessage] (val x: Self) extends AnyVal {
+  implicit class IonMenuShareAppMessageMutableBuilder[Self <: IonMenuShareAppMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
+    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setImgUrl(value: String): Self = StObject.set(x, "imgUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImgUrl(value: String): Self = this.set("imgUrl", value.asInstanceOf[js.Any])
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSuccess(value: () => Unit): Self = this.set("success", js.Any.fromFunction0(value))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setType(value: music | video或link | link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataUrl(value: String): Self = this.set("dataUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataUrl: Self = this.set("dataUrl", js.undefined)
-    
-    @scala.inline
-    def setType(value: music | video或link | link): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

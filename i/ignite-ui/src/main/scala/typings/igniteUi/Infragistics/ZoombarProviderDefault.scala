@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZoombarProviderDefault extends js.Object {
+trait ZoombarProviderDefault extends StObject {
   
   /**
     * Will be called before the provider instance is deleted (to unbind jQuery events, etc.)

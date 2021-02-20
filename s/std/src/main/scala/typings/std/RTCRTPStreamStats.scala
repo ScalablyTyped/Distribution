@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,84 +40,72 @@ object RTCRTPStreamStats {
   }
   
   @scala.inline
-  implicit class RTCRTPStreamStatsOps[Self <: RTCRTPStreamStats] (val x: Self) extends AnyVal {
+  implicit class RTCRTPStreamStatsMutableBuilder[Self <: RTCRTPStreamStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociateStatsId(value: java.lang.String): Self = StObject.set(x, "associateStatsId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociateStatsIdUndefined: Self = StObject.set(x, "associateStatsId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodecId(value: java.lang.String): Self = StObject.set(x, "codecId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociateStatsId(value: java.lang.String): Self = this.set("associateStatsId", value.asInstanceOf[js.Any])
+    def setCodecIdUndefined: Self = StObject.set(x, "codecId", js.undefined)
     
     @scala.inline
-    def deleteAssociateStatsId: Self = this.set("associateStatsId", js.undefined)
+    def setFirCount(value: Double): Self = StObject.set(x, "firCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodecId(value: java.lang.String): Self = this.set("codecId", value.asInstanceOf[js.Any])
+    def setFirCountUndefined: Self = StObject.set(x, "firCount", js.undefined)
     
     @scala.inline
-    def deleteCodecId: Self = this.set("codecId", js.undefined)
+    def setIsRemote(value: scala.Boolean): Self = StObject.set(x, "isRemote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirCount(value: Double): Self = this.set("firCount", value.asInstanceOf[js.Any])
+    def setIsRemoteUndefined: Self = StObject.set(x, "isRemote", js.undefined)
     
     @scala.inline
-    def deleteFirCount: Self = this.set("firCount", js.undefined)
+    def setMediaTrackId(value: java.lang.String): Self = StObject.set(x, "mediaTrackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRemote(value: scala.Boolean): Self = this.set("isRemote", value.asInstanceOf[js.Any])
+    def setMediaTrackIdUndefined: Self = StObject.set(x, "mediaTrackId", js.undefined)
     
     @scala.inline
-    def deleteIsRemote: Self = this.set("isRemote", js.undefined)
+    def setMediaType(value: java.lang.String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaTrackId(value: java.lang.String): Self = this.set("mediaTrackId", value.asInstanceOf[js.Any])
+    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
     @scala.inline
-    def deleteMediaTrackId: Self = this.set("mediaTrackId", js.undefined)
+    def setNackCount(value: Double): Self = StObject.set(x, "nackCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: java.lang.String): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setNackCountUndefined: Self = StObject.set(x, "nackCount", js.undefined)
     
     @scala.inline
-    def deleteMediaType: Self = this.set("mediaType", js.undefined)
+    def setPliCount(value: Double): Self = StObject.set(x, "pliCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNackCount(value: Double): Self = this.set("nackCount", value.asInstanceOf[js.Any])
+    def setPliCountUndefined: Self = StObject.set(x, "pliCount", js.undefined)
     
     @scala.inline
-    def deleteNackCount: Self = this.set("nackCount", js.undefined)
+    def setSliCount(value: Double): Self = StObject.set(x, "sliCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPliCount(value: Double): Self = this.set("pliCount", value.asInstanceOf[js.Any])
+    def setSliCountUndefined: Self = StObject.set(x, "sliCount", js.undefined)
     
     @scala.inline
-    def deletePliCount: Self = this.set("pliCount", js.undefined)
+    def setSsrc(value: java.lang.String): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSliCount(value: Double): Self = this.set("sliCount", value.asInstanceOf[js.Any])
+    def setSsrcUndefined: Self = StObject.set(x, "ssrc", js.undefined)
     
     @scala.inline
-    def deleteSliCount: Self = this.set("sliCount", js.undefined)
+    def setTransportId(value: java.lang.String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsrc(value: java.lang.String): Self = this.set("ssrc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsrc: Self = this.set("ssrc", js.undefined)
-    
-    @scala.inline
-    def setTransportId(value: java.lang.String): Self = this.set("transportId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransportId: Self = this.set("transportId", js.undefined)
+    def setTransportIdUndefined: Self = StObject.set(x, "transportId", js.undefined)
   }
 }

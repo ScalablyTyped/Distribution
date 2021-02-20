@@ -1,6 +1,7 @@
 package typings.vscode.mod
 
 import typings.vscode.anon.Authority
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,9 +89,7 @@ class Uri protected () extends ConfigurationScope {
   def `with`(change: Authority): Uri = js.native
 }
 /* static members */
-@JSImport("vscode", "Uri")
-@js.native
-object Uri extends js.Object {
+object Uri {
   
   /**
     * Create an URI from a file system path. The [scheme](#Uri.scheme)
@@ -114,6 +113,8 @@ object Uri extends js.Object {
     * @param path A file system or UNC path.
     * @return A new Uri instance.
     */
+  @JSImport("vscode", "Uri.file")
+  @js.native
   def file(path: String): Uri = js.native
   
   /**
@@ -136,6 +137,8 @@ object Uri extends js.Object {
     * @param pathSegments One more more path fragments
     * @returns A new uri which path is joined with the given fragments
     */
+  @JSImport("vscode", "Uri.joinPath")
+  @js.native
   def joinPath(base: Uri, pathSegments: String*): Uri = js.native
   
   /**
@@ -151,6 +154,10 @@ object Uri extends js.Object {
     * @param strict Throw an error when `value` is empty or when no `scheme` can be parsed.
     * @return A new Uri instance.
     */
+  @JSImport("vscode", "Uri.parse")
+  @js.native
   def parse(value: String): Uri = js.native
+  @JSImport("vscode", "Uri.parse")
+  @js.native
   def parse(value: String, strict: Boolean): Uri = js.native
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.document
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,27 +52,15 @@ object XViewDataSupplier {
   }
   
   @scala.inline
-  implicit class XViewDataSupplierOps[Self <: XViewDataSupplier] (val x: Self) extends AnyVal {
+  implicit class XViewDataSupplierMutableBuilder[Self <: XViewDataSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetViewData(value: () => XIndexAccess): Self = StObject.set(x, "getViewData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetViewData(value: XIndexAccess => Unit): Self = StObject.set(x, "setViewData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setViewData(value: XIndexAccess): Self = this.set("ViewData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetViewData(value: () => XIndexAccess): Self = this.set("getViewData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetViewData(value: XIndexAccess => Unit): Self = this.set("setViewData", js.Any.fromFunction1(value))
+    def setViewData(value: XIndexAccess): Self = StObject.set(x, "ViewData", value.asInstanceOf[js.Any])
   }
 }

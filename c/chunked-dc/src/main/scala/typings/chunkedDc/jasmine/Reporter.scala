@@ -1,11 +1,12 @@
 package typings.chunkedDc.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reporter extends js.Object {
+trait Reporter extends StObject {
   
   def log(str: String): Unit = js.native
   
@@ -35,36 +36,24 @@ object Reporter {
   }
   
   @scala.inline
-  implicit class ReporterOps[Self <: Reporter] (val x: Self) extends AnyVal {
+  implicit class ReporterMutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReportRunnerResults(value: Runner => Unit): Self = StObject.set(x, "reportRunnerResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportRunnerStarting(value: Runner => Unit): Self = StObject.set(x, "reportRunnerStarting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLog(value: String => Unit): Self = this.set("log", js.Any.fromFunction1(value))
+    def setReportSpecResults(value: Spec => Unit): Self = StObject.set(x, "reportSpecResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReportRunnerResults(value: Runner => Unit): Self = this.set("reportRunnerResults", js.Any.fromFunction1(value))
+    def setReportSpecStarting(value: Spec => Unit): Self = StObject.set(x, "reportSpecStarting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReportRunnerStarting(value: Runner => Unit): Self = this.set("reportRunnerStarting", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReportSpecResults(value: Spec => Unit): Self = this.set("reportSpecResults", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReportSpecStarting(value: Spec => Unit): Self = this.set("reportSpecStarting", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReportSuiteResults(value: Suite => Unit): Self = this.set("reportSuiteResults", js.Any.fromFunction1(value))
+    def setReportSuiteResults(value: Suite => Unit): Self = StObject.set(x, "reportSuiteResults", js.Any.fromFunction1(value))
   }
 }

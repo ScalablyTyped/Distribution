@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInstallabilityErrorsResponse extends js.Object {
+trait GetInstallabilityErrorsResponse extends StObject {
   
   var installabilityErrors: js.Array[InstallabilityError] = js.native
 }
@@ -18,24 +19,12 @@ object GetInstallabilityErrorsResponse {
   }
   
   @scala.inline
-  implicit class GetInstallabilityErrorsResponseOps[Self <: GetInstallabilityErrorsResponse] (val x: Self) extends AnyVal {
+  implicit class GetInstallabilityErrorsResponseMutableBuilder[Self <: GetInstallabilityErrorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstallabilityErrors(value: js.Array[InstallabilityError]): Self = StObject.set(x, "installabilityErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstallabilityErrorsVarargs(value: InstallabilityError*): Self = this.set("installabilityErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstallabilityErrors(value: js.Array[InstallabilityError]): Self = this.set("installabilityErrors", value.asInstanceOf[js.Any])
+    def setInstallabilityErrorsVarargs(value: InstallabilityError*): Self = StObject.set(x, "installabilityErrors", js.Array(value :_*))
   }
 }

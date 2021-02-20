@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly
   - typings.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly
 */
-trait DefenderMonitorFileActivity extends js.Object
+trait DefenderMonitorFileActivity extends StObject
 object DefenderMonitorFileActivity {
   
   @scala.inline

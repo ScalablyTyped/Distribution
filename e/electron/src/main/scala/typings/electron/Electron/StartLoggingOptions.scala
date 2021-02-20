@@ -3,12 +3,13 @@ package typings.electron.Electron
 import typings.electron.electronStrings.default
 import typings.electron.electronStrings.everything
 import typings.electron.electronStrings.includeSensitive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartLoggingOptions extends js.Object {
+trait StartLoggingOptions extends StObject {
   
   /**
     * What kinds of data should be captured. By default, only metadata about requests
@@ -33,30 +34,18 @@ object StartLoggingOptions {
   }
   
   @scala.inline
-  implicit class StartLoggingOptionsOps[Self <: StartLoggingOptions] (val x: Self) extends AnyVal {
+  implicit class StartLoggingOptionsMutableBuilder[Self <: StartLoggingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureMode(value: default | includeSensitive | everything): Self = StObject.set(x, "captureMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptureModeUndefined: Self = StObject.set(x, "captureMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureMode(value: default | includeSensitive | everything): Self = this.set("captureMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaptureMode: Self = this.set("captureMode", js.undefined)
-    
-    @scala.inline
-    def setMaxFileSize(value: Double): Self = this.set("maxFileSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxFileSize: Self = this.set("maxFileSize", js.undefined)
+    def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
   }
 }

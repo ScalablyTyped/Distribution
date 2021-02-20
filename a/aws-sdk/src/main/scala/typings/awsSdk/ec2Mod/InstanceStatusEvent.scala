@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceStatusEvent extends js.Object {
+trait InstanceStatusEvent extends StObject {
   
   /**
     * The event code.
@@ -46,54 +47,42 @@ object InstanceStatusEvent {
   }
   
   @scala.inline
-  implicit class InstanceStatusEventOps[Self <: InstanceStatusEvent] (val x: Self) extends AnyVal {
+  implicit class InstanceStatusEventMutableBuilder[Self <: InstanceStatusEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: EventCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: EventCode): Self = this.set("Code", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("Code", js.undefined)
+    def setInstanceEventId(value: InstanceEventId): Self = StObject.set(x, "InstanceEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setInstanceEventIdUndefined: Self = StObject.set(x, "InstanceEventId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setNotAfter(value: DateTime): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceEventId(value: InstanceEventId): Self = this.set("InstanceEventId", value.asInstanceOf[js.Any])
+    def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
     
     @scala.inline
-    def deleteInstanceEventId: Self = this.set("InstanceEventId", js.undefined)
+    def setNotBefore(value: DateTime): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAfter(value: DateTime): Self = this.set("NotAfter", value.asInstanceOf[js.Any])
+    def setNotBeforeDeadline(value: DateTime): Self = StObject.set(x, "NotBeforeDeadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotAfter: Self = this.set("NotAfter", js.undefined)
+    def setNotBeforeDeadlineUndefined: Self = StObject.set(x, "NotBeforeDeadline", js.undefined)
     
     @scala.inline
-    def setNotBefore(value: DateTime): Self = this.set("NotBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotBefore: Self = this.set("NotBefore", js.undefined)
-    
-    @scala.inline
-    def setNotBeforeDeadline(value: DateTime): Self = this.set("NotBeforeDeadline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotBeforeDeadline: Self = this.set("NotBeforeDeadline", js.undefined)
+    def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
   }
 }

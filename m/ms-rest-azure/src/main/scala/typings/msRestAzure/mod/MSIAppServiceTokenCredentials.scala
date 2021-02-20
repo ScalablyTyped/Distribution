@@ -1,6 +1,7 @@
 package typings.msRestAzure.mod
 
 import typings.msRestAzure.msRestAzureStrings.`2017-09-01`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

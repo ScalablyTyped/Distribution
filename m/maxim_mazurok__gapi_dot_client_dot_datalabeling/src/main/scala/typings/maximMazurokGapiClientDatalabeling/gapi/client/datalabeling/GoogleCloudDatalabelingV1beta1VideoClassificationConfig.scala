@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1VideoClassificationConfig extends js.Object {
+trait GoogleCloudDatalabelingV1beta1VideoClassificationConfig extends StObject {
   
   /**
     * Required. The list of annotation spec set configs. Since watching a video clip takes much longer time than an image, we support label with multiple AnnotationSpecSet at the same
@@ -25,33 +26,21 @@ object GoogleCloudDatalabelingV1beta1VideoClassificationConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1VideoClassificationConfigOps[Self <: GoogleCloudDatalabelingV1beta1VideoClassificationConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1VideoClassificationConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1VideoClassificationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationSpecSetConfigs(value: js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig]): Self = StObject.set(x, "annotationSpecSetConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationSpecSetConfigsUndefined: Self = StObject.set(x, "annotationSpecSetConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationSpecSetConfigsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig*): Self = StObject.set(x, "annotationSpecSetConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotationSpecSetConfigsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig*): Self = this.set("annotationSpecSetConfigs", js.Array(value :_*))
+    def setApplyShotDetection(value: Boolean): Self = StObject.set(x, "applyShotDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationSpecSetConfigs(value: js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig]): Self = this.set("annotationSpecSetConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnnotationSpecSetConfigs: Self = this.set("annotationSpecSetConfigs", js.undefined)
-    
-    @scala.inline
-    def setApplyShotDetection(value: Boolean): Self = this.set("applyShotDetection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplyShotDetection: Self = this.set("applyShotDetection", js.undefined)
+    def setApplyShotDetectionUndefined: Self = StObject.set(x, "applyShotDetection", js.undefined)
   }
 }

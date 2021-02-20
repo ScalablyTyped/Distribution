@@ -3,6 +3,7 @@ package typings.deezerSdk.DeezerSdk
 import typings.deezerSdk.anon.AccessToken_
 import typings.deezerSdk.deezerSdkStrings.connected
 import typings.deezerSdk.deezerSdkStrings.not_authorized
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See: {@link https://developers.deezer.com/sdk/javascript/login | DZ.login}
   */
 @js.native
-trait LoginResponse extends js.Object {
+trait LoginResponse extends StObject {
   
   var authResponse: AccessToken_ = js.native
   
@@ -28,27 +29,15 @@ object LoginResponse {
   }
   
   @scala.inline
-  implicit class LoginResponseOps[Self <: LoginResponse] (val x: Self) extends AnyVal {
+  implicit class LoginResponseMutableBuilder[Self <: LoginResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthResponse(value: AccessToken_): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatus(value: connected | not_authorized): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuthResponse(value: AccessToken_): Self = this.set("authResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: connected | not_authorized): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserID(value: String): Self = this.set("userID", value.asInstanceOf[js.Any])
+    def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
   }
 }

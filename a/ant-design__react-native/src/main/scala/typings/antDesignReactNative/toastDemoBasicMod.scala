@@ -2,13 +2,16 @@ package typings.antDesignReactNative
 
 import typings.antDesignReactNative.anon.EnableMask
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/toast/demo/basic", JSImport.Namespace)
-@js.native
-object toastDemoBasicMod extends js.Object {
+object toastDemoBasicMod {
+  
+  @JSImport("@ant-design/react-native/lib/toast/demo/basic", JSImport.Default)
+  @js.native
+  class default () extends ToastExample
   
   @js.native
   trait ToastExample
@@ -24,7 +27,4 @@ object toastDemoBasicMod extends js.Object {
     
     var timer: js.Any = js.native
   }
-  
-  @js.native
-  class default () extends ToastExample
 }

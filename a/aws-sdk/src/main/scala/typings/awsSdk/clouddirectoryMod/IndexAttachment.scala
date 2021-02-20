@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexAttachment extends js.Object {
+trait IndexAttachment extends StObject {
   
   /**
     * The indexed attribute values.
@@ -26,33 +27,21 @@ object IndexAttachment {
   }
   
   @scala.inline
-  implicit class IndexAttachmentOps[Self <: IndexAttachment] (val x: Self) extends AnyVal {
+  implicit class IndexAttachmentMutableBuilder[Self <: IndexAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexedAttributes(value: AttributeKeyAndValueList): Self = StObject.set(x, "IndexedAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexedAttributesUndefined: Self = StObject.set(x, "IndexedAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexedAttributesVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "IndexedAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setIndexedAttributesVarargs(value: AttributeKeyAndValue*): Self = this.set("IndexedAttributes", js.Array(value :_*))
+    def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexedAttributes(value: AttributeKeyAndValueList): Self = this.set("IndexedAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexedAttributes: Self = this.set("IndexedAttributes", js.undefined)
-    
-    @scala.inline
-    def setObjectIdentifier(value: ObjectIdentifier): Self = this.set("ObjectIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectIdentifier: Self = this.set("ObjectIdentifier", js.undefined)
+    def setObjectIdentifierUndefined: Self = StObject.set(x, "ObjectIdentifier", js.undefined)
   }
 }

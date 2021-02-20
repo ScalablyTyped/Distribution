@@ -1,6 +1,7 @@
 package typings.gm.mod
 
 import typings.gm.gmStrings.Xor_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gm.gmStrings.`Noise-Random`
   - typings.gm.gmStrings.`Noise-Uniform`
 */
-trait ChannelOperator extends js.Object
+trait ChannelOperator extends StObject
 object ChannelOperator {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest extends js.Object {
+trait GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest extends StObject {
   
   /** The collection of entity types to update or create. */
   var entityTypeBatchInline: js.UndefOr[GoogleCloudDialogflowV2EntityTypeBatch] = js.native
@@ -34,42 +35,30 @@ object GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2BatchUpdateEntityTypesRequestOps[Self <: GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2BatchUpdateEntityTypesRequestMutableBuilder[Self <: GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityTypeBatchInline(value: GoogleCloudDialogflowV2EntityTypeBatch): Self = StObject.set(x, "entityTypeBatchInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityTypeBatchInlineUndefined: Self = StObject.set(x, "entityTypeBatchInline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityTypeBatchUri(value: String): Self = StObject.set(x, "entityTypeBatchUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityTypeBatchInline(value: GoogleCloudDialogflowV2EntityTypeBatch): Self = this.set("entityTypeBatchInline", value.asInstanceOf[js.Any])
+    def setEntityTypeBatchUriUndefined: Self = StObject.set(x, "entityTypeBatchUri", js.undefined)
     
     @scala.inline
-    def deleteEntityTypeBatchInline: Self = this.set("entityTypeBatchInline", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityTypeBatchUri(value: String): Self = this.set("entityTypeBatchUri", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteEntityTypeBatchUri: Self = this.set("entityTypeBatchUri", js.undefined)
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
-    
-    @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

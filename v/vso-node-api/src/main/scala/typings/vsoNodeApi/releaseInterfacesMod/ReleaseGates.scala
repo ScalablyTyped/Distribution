@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseGates extends js.Object {
+trait ReleaseGates extends StObject {
   
   var deploymentJobs: js.Array[DeploymentJob] = js.native
   
@@ -39,42 +40,30 @@ object ReleaseGates {
   }
   
   @scala.inline
-  implicit class ReleaseGatesOps[Self <: ReleaseGates] (val x: Self) extends AnyVal {
+  implicit class ReleaseGatesMutableBuilder[Self <: ReleaseGates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentJobs(value: js.Array[DeploymentJob]): Self = StObject.set(x, "deploymentJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentJobsVarargs(value: DeploymentJob*): Self = StObject.set(x, "deploymentJobs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentJobsVarargs(value: DeploymentJob*): Self = this.set("deploymentJobs", js.Array(value :_*))
+    def setLastModifiedOn(value: Date): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentJobs(value: js.Array[DeploymentJob]): Self = this.set("deploymentJobs", value.asInstanceOf[js.Any])
+    def setRunPlanId(value: String): Self = StObject.set(x, "runPlanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setStabilizationCompletedOn(value: Date): Self = StObject.set(x, "stabilizationCompletedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedOn(value: Date): Self = this.set("lastModifiedOn", value.asInstanceOf[js.Any])
+    def setStartedOn(value: Date): Self = StObject.set(x, "startedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunPlanId(value: String): Self = this.set("runPlanId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStabilizationCompletedOn(value: Date): Self = this.set("stabilizationCompletedOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartedOn(value: Date): Self = this.set("startedOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: GateStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: GateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

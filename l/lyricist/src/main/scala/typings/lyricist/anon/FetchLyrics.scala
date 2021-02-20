@@ -1,12 +1,13 @@
 package typings.lyricist.anon
 
 import typings.lyricist.mod.LyricistTextFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FetchLyrics extends js.Object {
+trait FetchLyrics extends StObject {
   
   var fetchLyrics: js.UndefOr[Boolean] = js.native
   
@@ -21,30 +22,18 @@ object FetchLyrics {
   }
   
   @scala.inline
-  implicit class FetchLyricsOps[Self <: FetchLyrics] (val x: Self) extends AnyVal {
+  implicit class FetchLyricsMutableBuilder[Self <: FetchLyrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFetchLyrics(value: Boolean): Self = StObject.set(x, "fetchLyrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFetchLyricsUndefined: Self = StObject.set(x, "fetchLyrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextFormat(value: LyricistTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchLyrics(value: Boolean): Self = this.set("fetchLyrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFetchLyrics: Self = this.set("fetchLyrics", js.undefined)
-    
-    @scala.inline
-    def setTextFormat(value: LyricistTextFormat): Self = this.set("textFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
+    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

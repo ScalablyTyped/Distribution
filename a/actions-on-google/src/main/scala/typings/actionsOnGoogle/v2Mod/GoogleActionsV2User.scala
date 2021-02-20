@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2User extends js.Object {
+trait GoogleActionsV2User extends StObject {
   
   /**
     * An OAuth2 token that identifies the user in your system. Only
@@ -78,84 +79,72 @@ object GoogleActionsV2User {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2UserOps[Self <: GoogleActionsV2User] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2UserMutableBuilder[Self <: GoogleActionsV2User] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    def setLastSeen(value: String): Self = StObject.set(x, "lastSeen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    def setLastSeenUndefined: Self = StObject.set(x, "lastSeen", js.undefined)
     
     @scala.inline
-    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSeen(value: String): Self = this.set("lastSeen", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLastSeen: Self = this.set("lastSeen", js.undefined)
+    def setPackageEntitlements(value: js.Array[GoogleActionsV2PackageEntitlement]): Self = StObject.set(x, "packageEntitlements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setPackageEntitlementsUndefined: Self = StObject.set(x, "packageEntitlements", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setPackageEntitlementsVarargs(value: GoogleActionsV2PackageEntitlement*): Self = StObject.set(x, "packageEntitlements", js.Array(value :_*))
     
     @scala.inline
-    def setPackageEntitlementsVarargs(value: GoogleActionsV2PackageEntitlement*): Self = this.set("packageEntitlements", js.Array(value :_*))
+    def setPermissions(value: js.Array[GoogleActionsV2UserPermissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageEntitlements(value: js.Array[GoogleActionsV2PackageEntitlement]): Self = this.set("packageEntitlements", value.asInstanceOf[js.Any])
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def deletePackageEntitlements: Self = this.set("packageEntitlements", js.undefined)
+    def setPermissionsVarargs(value: GoogleActionsV2UserPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionsVarargs(value: GoogleActionsV2UserPermissions*): Self = this.set("permissions", js.Array(value :_*))
+    def setProfile(value: GoogleActionsV2UserProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: js.Array[GoogleActionsV2UserPermissions]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: GoogleActionsV2UserProfile): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setUserStorage(value: String): Self = StObject.set(x, "userStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUserStorageUndefined: Self = StObject.set(x, "userStorage", js.undefined)
     
     @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserVerificationStatus(value: GoogleActionsV2UserUserVerificationStatus): Self = StObject.set(x, "userVerificationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserStorage(value: String): Self = this.set("userStorage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserStorage: Self = this.set("userStorage", js.undefined)
-    
-    @scala.inline
-    def setUserVerificationStatus(value: GoogleActionsV2UserUserVerificationStatus): Self = this.set("userVerificationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserVerificationStatus: Self = this.set("userVerificationStatus", js.undefined)
+    def setUserVerificationStatusUndefined: Self = StObject.set(x, "userVerificationStatus", js.undefined)
   }
 }

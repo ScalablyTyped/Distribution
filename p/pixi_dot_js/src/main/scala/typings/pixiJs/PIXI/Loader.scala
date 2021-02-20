@@ -3,6 +3,7 @@ package typings.pixiJs.PIXI
 import typings.pixiJs.PIXI.Loader.ILoaderSignal
 import typings.std.Partial
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +60,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {number} [concurrency=10] - The number of resources to load concurrently.
   */
 @js.native
-trait Loader extends js.Object {
+trait Loader extends StObject {
   
   //tslint:disable-next-line:ban-types forbidden-types
   def add(name: String, url: String): this.type = js.native
@@ -148,9 +149,13 @@ trait Loader extends js.Object {
   //tslint:disable-next-line:ban-types forbidden-types
   def use(fn: js.Function): this.type = js.native
 }
-@JSGlobal("PIXI.Loader")
-@js.native
-object Loader extends js.Object {
+object Loader {
+  
+  /**
+    * @memberof PIXI.Loader
+    * @typedef {object} ICallbackID
+    */
+  type ICallbackID = js.Any
   
   /**
     * @memberof PIXI.Loader
@@ -160,7 +165,7 @@ object Loader extends js.Object {
     * @property {ISignalDetach} detach - Detach specific callback by ID
     */
   @js.native
-  trait ILoaderSignal extends js.Object {
+  trait ILoaderSignal extends StObject {
     
     def add(callback: js.Function1[/* repeated */ js.Any, _]): ICallbackID = js.native
     def add(callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): ICallbackID = js.native
@@ -176,12 +181,6 @@ object Loader extends js.Object {
     @JSName("once")
     var once_Original: ISignalCallback = js.native
   }
-  
-  /**
-    * @memberof PIXI.Loader
-    * @typedef {object} ICallbackID
-    */
-  type ICallbackID = js.Any
   
   /**
     * @memberof PIXI.Loader

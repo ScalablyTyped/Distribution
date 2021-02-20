@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The device policy for a given managed device.
   */
 @js.native
-trait SchemaPolicy extends js.Object {
+trait SchemaPolicy extends StObject {
   
   /**
     * The auto-update policy for apps installed on the device.
@@ -52,45 +53,33 @@ object SchemaPolicy {
   }
   
   @scala.inline
-  implicit class SchemaPolicyOps[Self <: SchemaPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaPolicyMutableBuilder[Self <: SchemaPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoUpdatePolicy(value: String): Self = StObject.set(x, "autoUpdatePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUpdatePolicyUndefined: Self = StObject.set(x, "autoUpdatePolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaintenanceWindow(value: SchemaMaintenanceWindow): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpdatePolicy(value: String): Self = this.set("autoUpdatePolicy", value.asInstanceOf[js.Any])
+    def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
     
     @scala.inline
-    def deleteAutoUpdatePolicy: Self = this.set("autoUpdatePolicy", js.undefined)
+    def setProductAvailabilityPolicy(value: String): Self = StObject.set(x, "productAvailabilityPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintenanceWindow(value: SchemaMaintenanceWindow): Self = this.set("maintenanceWindow", value.asInstanceOf[js.Any])
+    def setProductAvailabilityPolicyUndefined: Self = StObject.set(x, "productAvailabilityPolicy", js.undefined)
     
     @scala.inline
-    def deleteMaintenanceWindow: Self = this.set("maintenanceWindow", js.undefined)
+    def setProductPolicy(value: js.Array[SchemaProductPolicy]): Self = StObject.set(x, "productPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductAvailabilityPolicy(value: String): Self = this.set("productAvailabilityPolicy", value.asInstanceOf[js.Any])
+    def setProductPolicyUndefined: Self = StObject.set(x, "productPolicy", js.undefined)
     
     @scala.inline
-    def deleteProductAvailabilityPolicy: Self = this.set("productAvailabilityPolicy", js.undefined)
-    
-    @scala.inline
-    def setProductPolicyVarargs(value: SchemaProductPolicy*): Self = this.set("productPolicy", js.Array(value :_*))
-    
-    @scala.inline
-    def setProductPolicy(value: js.Array[SchemaProductPolicy]): Self = this.set("productPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductPolicy: Self = this.set("productPolicy", js.undefined)
+    def setProductPolicyVarargs(value: SchemaProductPolicy*): Self = StObject.set(x, "productPolicy", js.Array(value :_*))
   }
 }

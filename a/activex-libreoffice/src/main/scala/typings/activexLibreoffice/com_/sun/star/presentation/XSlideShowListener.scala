@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.animations.XAnimationListener
 import typings.activexLibreoffice.com_.sun.star.animations.XAnimationNode
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,39 +68,27 @@ object XSlideShowListener {
   }
   
   @scala.inline
-  implicit class XSlideShowListenerOps[Self <: XSlideShowListener] (val x: Self) extends AnyVal {
+  implicit class XSlideShowListenerMutableBuilder[Self <: XSlideShowListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHyperLinkClicked(value: String => Unit): Self = StObject.set(x, "hyperLinkClicked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaused(value: () => Unit): Self = StObject.set(x, "paused", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResumed(value: () => Unit): Self = StObject.set(x, "resumed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHyperLinkClicked(value: String => Unit): Self = this.set("hyperLinkClicked", js.Any.fromFunction1(value))
+    def setSlideAnimationsEnded(value: () => Unit): Self = StObject.set(x, "slideAnimationsEnded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPaused(value: () => Unit): Self = this.set("paused", js.Any.fromFunction0(value))
+    def setSlideEnded(value: Boolean => Unit): Self = StObject.set(x, "slideEnded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResumed(value: () => Unit): Self = this.set("resumed", js.Any.fromFunction0(value))
+    def setSlideTransitionEnded(value: () => Unit): Self = StObject.set(x, "slideTransitionEnded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSlideAnimationsEnded(value: () => Unit): Self = this.set("slideAnimationsEnded", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSlideEnded(value: Boolean => Unit): Self = this.set("slideEnded", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSlideTransitionEnded(value: () => Unit): Self = this.set("slideTransitionEnded", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSlideTransitionStarted(value: () => Unit): Self = this.set("slideTransitionStarted", js.Any.fromFunction0(value))
+    def setSlideTransitionStarted(value: () => Unit): Self = StObject.set(x, "slideTransitionStarted", js.Any.fromFunction0(value))
   }
 }

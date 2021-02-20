@@ -3,16 +3,16 @@ package typings.winrt.global.Windows.Storage
 import typings.winrt.Windows.Storage.Compression.CompressAlgorithm
 import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Storage.Streams.IOutputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Compression")
-@js.native
-object Compression extends js.Object {
+object Compression {
   
+  @JSGlobal("Windows.Storage.Compression.CompressAlgorithm")
   @js.native
-  object CompressAlgorithm extends js.Object {
+  object CompressAlgorithm extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Storage.Compression.CompressAlgorithm with Double] = js.native
@@ -30,6 +30,7 @@ object Compression extends js.Object {
     /* 4 */ val xpressHuff: typings.winrt.Windows.Storage.Compression.CompressAlgorithm.xpressHuff with Double = js.native
   }
   
+  @JSGlobal("Windows.Storage.Compression.Compressor")
   @js.native
   class Compressor protected ()
     extends typings.winrt.Windows.Storage.Compression.Compressor {
@@ -37,6 +38,7 @@ object Compression extends js.Object {
     def this(underlyingStream: IOutputStream, algorithm: CompressAlgorithm, blockSize: Double) = this()
   }
   
+  @JSGlobal("Windows.Storage.Compression.Decompressor")
   @js.native
   class Decompressor protected ()
     extends typings.winrt.Windows.Storage.Compression.Decompressor {

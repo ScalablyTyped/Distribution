@@ -1,5 +1,6 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to apply configuration to an existing tenant project.
   */
 @js.native
-trait SchemaApplyTenantProjectConfigRequest extends js.Object {
+trait SchemaApplyTenantProjectConfigRequest extends StObject {
   
   /**
     * Configuration that should be applied to the existing tenant project.
@@ -29,30 +30,18 @@ object SchemaApplyTenantProjectConfigRequest {
   }
   
   @scala.inline
-  implicit class SchemaApplyTenantProjectConfigRequestOps[Self <: SchemaApplyTenantProjectConfigRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaApplyTenantProjectConfigRequestMutableBuilder[Self <: SchemaApplyTenantProjectConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjectConfig(value: SchemaTenantProjectConfig): Self = StObject.set(x, "projectConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectConfigUndefined: Self = StObject.set(x, "projectConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectConfig(value: SchemaTenantProjectConfig): Self = this.set("projectConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectConfig: Self = this.set("projectConfig", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

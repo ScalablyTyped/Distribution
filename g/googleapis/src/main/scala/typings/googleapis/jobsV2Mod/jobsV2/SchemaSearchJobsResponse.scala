@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Output only.  Response for SearchJob method.
   */
 @js.native
-trait SchemaSearchJobsResponse extends js.Object {
+trait SchemaSearchJobsResponse extends StObject {
   
   /**
     * The commute filter the service applied to the specified query. This
@@ -90,90 +91,78 @@ object SchemaSearchJobsResponse {
   }
   
   @scala.inline
-  implicit class SchemaSearchJobsResponseOps[Self <: SchemaSearchJobsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaSearchJobsResponseMutableBuilder[Self <: SchemaSearchJobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppliedCommuteFilter(value: SchemaCommutePreference): Self = StObject.set(x, "appliedCommuteFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppliedCommuteFilterUndefined: Self = StObject.set(x, "appliedCommuteFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppliedJobLocationFilters(value: js.Array[SchemaJobLocation]): Self = StObject.set(x, "appliedJobLocationFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppliedCommuteFilter(value: SchemaCommutePreference): Self = this.set("appliedCommuteFilter", value.asInstanceOf[js.Any])
+    def setAppliedJobLocationFiltersUndefined: Self = StObject.set(x, "appliedJobLocationFilters", js.undefined)
     
     @scala.inline
-    def deleteAppliedCommuteFilter: Self = this.set("appliedCommuteFilter", js.undefined)
+    def setAppliedJobLocationFiltersVarargs(value: SchemaJobLocation*): Self = StObject.set(x, "appliedJobLocationFilters", js.Array(value :_*))
     
     @scala.inline
-    def setAppliedJobLocationFiltersVarargs(value: SchemaJobLocation*): Self = this.set("appliedJobLocationFilters", js.Array(value :_*))
+    def setEstimatedTotalSize(value: String): Self = StObject.set(x, "estimatedTotalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppliedJobLocationFilters(value: js.Array[SchemaJobLocation]): Self = this.set("appliedJobLocationFilters", value.asInstanceOf[js.Any])
+    def setEstimatedTotalSizeUndefined: Self = StObject.set(x, "estimatedTotalSize", js.undefined)
     
     @scala.inline
-    def deleteAppliedJobLocationFilters: Self = this.set("appliedJobLocationFilters", js.undefined)
+    def setHistogramResults(value: SchemaHistogramResults): Self = StObject.set(x, "histogramResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedTotalSize(value: String): Self = this.set("estimatedTotalSize", value.asInstanceOf[js.Any])
+    def setHistogramResultsUndefined: Self = StObject.set(x, "histogramResults", js.undefined)
     
     @scala.inline
-    def deleteEstimatedTotalSize: Self = this.set("estimatedTotalSize", js.undefined)
+    def setJobView(value: String): Self = StObject.set(x, "jobView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistogramResults(value: SchemaHistogramResults): Self = this.set("histogramResults", value.asInstanceOf[js.Any])
+    def setJobViewUndefined: Self = StObject.set(x, "jobView", js.undefined)
     
     @scala.inline
-    def deleteHistogramResults: Self = this.set("histogramResults", js.undefined)
+    def setMatchingJobs(value: js.Array[SchemaMatchingJob]): Self = StObject.set(x, "matchingJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobView(value: String): Self = this.set("jobView", value.asInstanceOf[js.Any])
+    def setMatchingJobsUndefined: Self = StObject.set(x, "matchingJobs", js.undefined)
     
     @scala.inline
-    def deleteJobView: Self = this.set("jobView", js.undefined)
+    def setMatchingJobsVarargs(value: SchemaMatchingJob*): Self = StObject.set(x, "matchingJobs", js.Array(value :_*))
     
     @scala.inline
-    def setMatchingJobsVarargs(value: SchemaMatchingJob*): Self = this.set("matchingJobs", js.Array(value :_*))
+    def setMetadata(value: SchemaResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchingJobs(value: js.Array[SchemaMatchingJob]): Self = this.set("matchingJobs", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteMatchingJobs: Self = this.set("matchingJobs", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: SchemaResponseMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setNumJobsFromBroadenedQuery(value: Double): Self = StObject.set(x, "numJobsFromBroadenedQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setNumJobsFromBroadenedQueryUndefined: Self = StObject.set(x, "numJobsFromBroadenedQuery", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setSpellResult(value: SchemaSpellingCorrection): Self = StObject.set(x, "spellResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumJobsFromBroadenedQuery(value: Double): Self = this.set("numJobsFromBroadenedQuery", value.asInstanceOf[js.Any])
+    def setSpellResultUndefined: Self = StObject.set(x, "spellResult", js.undefined)
     
     @scala.inline
-    def deleteNumJobsFromBroadenedQuery: Self = this.set("numJobsFromBroadenedQuery", js.undefined)
+    def setTotalSize(value: String): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpellResult(value: SchemaSpellingCorrection): Self = this.set("spellResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpellResult: Self = this.set("spellResult", js.undefined)
-    
-    @scala.inline
-    def setTotalSize(value: String): Self = this.set("totalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

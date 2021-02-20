@@ -1,11 +1,12 @@
 package typings.pgPromise.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPromiseConfig extends js.Object {
+trait IPromiseConfig extends StObject {
   
   def all(iterable: js.Any): XPromise[_] = js.native
   

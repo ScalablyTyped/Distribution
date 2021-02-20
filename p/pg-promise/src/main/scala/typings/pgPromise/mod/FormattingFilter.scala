@@ -1,5 +1,6 @@
 package typings.pgPromise.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pgPromise.pgPromiseStrings.Colonlist
   - typings.pgPromise.pgPromiseStrings.Colonvalue
 */
-trait FormattingFilter extends js.Object
+trait FormattingFilter extends StObject
 object FormattingFilter {
   
   @scala.inline

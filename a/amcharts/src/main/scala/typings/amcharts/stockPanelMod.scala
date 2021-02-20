@@ -1,16 +1,19 @@
 package typings.amcharts
 
-import typings.amcharts.amSerialChartMod.AmSerialChart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/StockPanel", JSImport.Namespace)
-@js.native
-object stockPanelMod extends js.Object {
+object stockPanelMod {
+  
+  @JSImport("amcharts/StockPanel", JSImport.Default)
+  @js.native
+  class default () extends StockPanel
   
   @js.native
-  trait StockPanel extends AmSerialChart {
+  trait StockPanel
+    extends typings.amcharts.amSerialChartMod.default {
     
     /**
       * Adds a graph to the panel.
@@ -104,7 +107,4 @@ object stockPanelMod extends js.Object {
       */
     var trendLineThickness: Double = js.native
   }
-  
-  @js.native
-  class default () extends StockPanel
 }

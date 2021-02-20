@@ -1,5 +1,6 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,18 +18,34 @@ class DistanceDisplayCondition protected () extends Packable {
   
   var near: Double = js.native
 }
-/* static members */
-@JSImport("cesium", "DistanceDisplayCondition")
-@js.native
-object DistanceDisplayCondition extends js.Object {
+object DistanceDisplayCondition {
   
-  def clone(value: js.UndefOr[scala.Nothing], result: DistanceDisplayCondition): DistanceDisplayCondition = js.native
-  def clone(value: DistanceDisplayCondition): DistanceDisplayCondition = js.native
-  def clone(value: DistanceDisplayCondition, result: DistanceDisplayCondition): DistanceDisplayCondition = js.native
+  /* static member */
+  @JSImport("cesium", "DistanceDisplayCondition.clone")
+  @js.native
+  def clone_(): DistanceDisplayCondition = js.native
+  @JSImport("cesium", "DistanceDisplayCondition.clone")
+  @js.native
+  def clone_(value: js.UndefOr[scala.Nothing], result: DistanceDisplayCondition): DistanceDisplayCondition = js.native
+  @JSImport("cesium", "DistanceDisplayCondition.clone")
+  @js.native
+  def clone_(value: DistanceDisplayCondition): DistanceDisplayCondition = js.native
+  @JSImport("cesium", "DistanceDisplayCondition.clone")
+  @js.native
+  def clone_(value: DistanceDisplayCondition, result: DistanceDisplayCondition): DistanceDisplayCondition = js.native
   
-  def equals(left: DistanceDisplayCondition, right: DistanceDisplayCondition): Boolean = js.native
+  /* static member */
+  @JSImport("cesium", "DistanceDisplayCondition.equals")
+  @js.native
+  def equals_(left: DistanceDisplayCondition, right: DistanceDisplayCondition): Boolean = js.native
   
+  /* static member */
+  @JSImport("cesium", "DistanceDisplayCondition.pack")
+  @js.native
   def pack(value: DistanceDisplayCondition, array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
   
+  /* static member */
+  @JSImport("cesium", "DistanceDisplayCondition.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: DistanceDisplayCondition): DistanceDisplayCondition = js.native
 }

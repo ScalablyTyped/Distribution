@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The HTML converted from an input document. */
 @js.native
-trait HTMLReturn extends js.Object {
+trait HTMLReturn extends StObject {
   
   /** The author of the input document, if identified. */
   var author: js.UndefOr[String] = js.native
@@ -32,48 +33,36 @@ object HTMLReturn {
   }
   
   @scala.inline
-  implicit class HTMLReturnOps[Self <: HTMLReturn] (val x: Self) extends AnyVal {
+  implicit class HTMLReturnMutableBuilder[Self <: HTMLReturn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setNum_pages(value: String): Self = StObject.set(x, "num_pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setNum_pagesUndefined: Self = StObject.set(x, "num_pages", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setPublication_date(value: String): Self = StObject.set(x, "publication_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_pages(value: String): Self = this.set("num_pages", value.asInstanceOf[js.Any])
+    def setPublication_dateUndefined: Self = StObject.set(x, "publication_date", js.undefined)
     
     @scala.inline
-    def deleteNum_pages: Self = this.set("num_pages", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublication_date(value: String): Self = this.set("publication_date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublication_date: Self = this.set("publication_date", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

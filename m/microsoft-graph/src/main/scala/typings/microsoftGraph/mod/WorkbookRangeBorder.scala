@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,54 +38,42 @@ object WorkbookRangeBorder {
   }
   
   @scala.inline
-  implicit class WorkbookRangeBorderOps[Self <: WorkbookRangeBorder] (val x: Self) extends AnyVal {
+  implicit class WorkbookRangeBorderMutableBuilder[Self <: WorkbookRangeBorder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorNull: Self = StObject.set(x, "color", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setColor(value: NullableOption[String]): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setSideIndex(value: NullableOption[String]): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setSideIndexNull: Self = StObject.set(x, "sideIndex", null)
     
     @scala.inline
-    def setColorNull: Self = this.set("color", null)
+    def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
     
     @scala.inline
-    def setSideIndex(value: NullableOption[String]): Self = this.set("sideIndex", value.asInstanceOf[js.Any])
+    def setStyle(value: NullableOption[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSideIndex: Self = this.set("sideIndex", js.undefined)
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def setSideIndexNull: Self = this.set("sideIndex", null)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: NullableOption[String]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setWeight(value: NullableOption[String]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setWeightNull: Self = StObject.set(x, "weight", null)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
-    
-    @scala.inline
-    def setWeight(value: NullableOption[String]): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
-    
-    @scala.inline
-    def setWeightNull: Self = this.set("weight", null)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

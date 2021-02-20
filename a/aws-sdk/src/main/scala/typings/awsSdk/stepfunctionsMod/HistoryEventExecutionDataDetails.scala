@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistoryEventExecutionDataDetails extends js.Object {
+trait HistoryEventExecutionDataDetails extends StObject {
   
   /**
     * Indicates whether input or output was truncated in the response. Always false for API calls.
@@ -21,24 +22,12 @@ object HistoryEventExecutionDataDetails {
   }
   
   @scala.inline
-  implicit class HistoryEventExecutionDataDetailsOps[Self <: HistoryEventExecutionDataDetails] (val x: Self) extends AnyVal {
+  implicit class HistoryEventExecutionDataDetailsMutableBuilder[Self <: HistoryEventExecutionDataDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTruncated(value: truncated): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTruncated(value: truncated): Self = this.set("truncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncated: Self = this.set("truncated", js.undefined)
+    def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
   }
 }

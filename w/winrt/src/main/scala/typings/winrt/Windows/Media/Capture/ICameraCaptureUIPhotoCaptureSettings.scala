@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Media.Capture
 
 import typings.winrt.Windows.Foundation.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICameraCaptureUIPhotoCaptureSettings extends js.Object {
+trait ICameraCaptureUIPhotoCaptureSettings extends StObject {
   
   var allowCropping: Boolean = js.native
   
@@ -33,33 +34,21 @@ object ICameraCaptureUIPhotoCaptureSettings {
   }
   
   @scala.inline
-  implicit class ICameraCaptureUIPhotoCaptureSettingsOps[Self <: ICameraCaptureUIPhotoCaptureSettings] (val x: Self) extends AnyVal {
+  implicit class ICameraCaptureUIPhotoCaptureSettingsMutableBuilder[Self <: ICameraCaptureUIPhotoCaptureSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCropping(value: Boolean): Self = StObject.set(x, "allowCropping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCroppedAspectRatio(value: Size): Self = StObject.set(x, "croppedAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCroppedSizeInPixels(value: Size): Self = StObject.set(x, "croppedSizeInPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCropping(value: Boolean): Self = this.set("allowCropping", value.asInstanceOf[js.Any])
+    def setFormat(value: CameraCaptureUIPhotoFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCroppedAspectRatio(value: Size): Self = this.set("croppedAspectRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCroppedSizeInPixels(value: Size): Self = this.set("croppedSizeInPixels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: CameraCaptureUIPhotoFormat): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxResolution(value: CameraCaptureUIMaxPhotoResolution): Self = this.set("maxResolution", value.asInstanceOf[js.Any])
+    def setMaxResolution(value: CameraCaptureUIMaxPhotoResolution): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamicListener extends js.Object {
+trait DynamicListener extends StObject {
   
   /** The listener state for any active listener by this name. These are listeners that are available to service data plane traffic. */
   var activeState: js.UndefOr[DynamicListenerState] = js.native
@@ -37,48 +38,36 @@ object DynamicListener {
   }
   
   @scala.inline
-  implicit class DynamicListenerOps[Self <: DynamicListener] (val x: Self) extends AnyVal {
+  implicit class DynamicListenerMutableBuilder[Self <: DynamicListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveState(value: DynamicListenerState): Self = StObject.set(x, "activeState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveStateUndefined: Self = StObject.set(x, "activeState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrainingState(value: DynamicListenerState): Self = StObject.set(x, "drainingState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveState(value: DynamicListenerState): Self = this.set("activeState", value.asInstanceOf[js.Any])
+    def setDrainingStateUndefined: Self = StObject.set(x, "drainingState", js.undefined)
     
     @scala.inline
-    def deleteActiveState: Self = this.set("activeState", js.undefined)
+    def setErrorState(value: UpdateFailureState): Self = StObject.set(x, "errorState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrainingState(value: DynamicListenerState): Self = this.set("drainingState", value.asInstanceOf[js.Any])
+    def setErrorStateUndefined: Self = StObject.set(x, "errorState", js.undefined)
     
     @scala.inline
-    def deleteDrainingState: Self = this.set("drainingState", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorState(value: UpdateFailureState): Self = this.set("errorState", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteErrorState: Self = this.set("errorState", js.undefined)
+    def setWarmingState(value: DynamicListenerState): Self = StObject.set(x, "warmingState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setWarmingState(value: DynamicListenerState): Self = this.set("warmingState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarmingState: Self = this.set("warmingState", js.undefined)
+    def setWarmingStateUndefined: Self = StObject.set(x, "warmingState", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitNotificationElement extends js.Object {
+trait UIkitNotificationElement extends StObject {
   
   def close(immediate: Boolean): Unit = js.native
 }
@@ -18,21 +19,9 @@ object UIkitNotificationElement {
   }
   
   @scala.inline
-  implicit class UIkitNotificationElementOps[Self <: UIkitNotificationElement] (val x: Self) extends AnyVal {
+  implicit class UIkitNotificationElementMutableBuilder[Self <: UIkitNotificationElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: Boolean => Unit): Self = this.set("close", js.Any.fromFunction1(value))
+    def setClose(value: Boolean => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
   }
 }

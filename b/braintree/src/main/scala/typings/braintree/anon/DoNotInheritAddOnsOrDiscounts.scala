@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoNotInheritAddOnsOrDiscounts extends js.Object {
+trait DoNotInheritAddOnsOrDiscounts extends StObject {
   
   var doNotInheritAddOnsOrDiscounts: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object DoNotInheritAddOnsOrDiscounts {
   }
   
   @scala.inline
-  implicit class DoNotInheritAddOnsOrDiscountsOps[Self <: DoNotInheritAddOnsOrDiscounts] (val x: Self) extends AnyVal {
+  implicit class DoNotInheritAddOnsOrDiscountsMutableBuilder[Self <: DoNotInheritAddOnsOrDiscounts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoNotInheritAddOnsOrDiscounts(value: Boolean): Self = StObject.set(x, "doNotInheritAddOnsOrDiscounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoNotInheritAddOnsOrDiscountsUndefined: Self = StObject.set(x, "doNotInheritAddOnsOrDiscounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaypal(value: Description): Self = StObject.set(x, "paypal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoNotInheritAddOnsOrDiscounts(value: Boolean): Self = this.set("doNotInheritAddOnsOrDiscounts", value.asInstanceOf[js.Any])
+    def setPaypalUndefined: Self = StObject.set(x, "paypal", js.undefined)
     
     @scala.inline
-    def deleteDoNotInheritAddOnsOrDiscounts: Self = this.set("doNotInheritAddOnsOrDiscounts", js.undefined)
+    def setStartImmediately(value: Boolean): Self = StObject.set(x, "startImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaypal(value: Description): Self = this.set("paypal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaypal: Self = this.set("paypal", js.undefined)
-    
-    @scala.inline
-    def setStartImmediately(value: Boolean): Self = this.set("startImmediately", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartImmediately: Self = this.set("startImmediately", js.undefined)
+    def setStartImmediatelyUndefined: Self = StObject.set(x, "startImmediately", js.undefined)
   }
 }

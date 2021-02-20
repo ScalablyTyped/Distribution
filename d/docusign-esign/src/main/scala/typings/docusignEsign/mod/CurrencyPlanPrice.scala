@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrencyPlanPrice extends js.Object {
+trait CurrencyPlanPrice extends StObject {
   
   /**
     * Specifies the ISO currency code for the account.
@@ -57,54 +58,42 @@ object CurrencyPlanPrice {
   }
   
   @scala.inline
-  implicit class CurrencyPlanPriceOps[Self <: CurrencyPlanPrice] (val x: Self) extends AnyVal {
+  implicit class CurrencyPlanPriceMutableBuilder[Self <: CurrencyPlanPrice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrencySymbol(value: String): Self = StObject.set(x, "currencySymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setCurrencySymbolUndefined: Self = StObject.set(x, "currencySymbol", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setPerSeatPrice(value: String): Self = StObject.set(x, "perSeatPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencySymbol(value: String): Self = this.set("currencySymbol", value.asInstanceOf[js.Any])
+    def setPerSeatPriceUndefined: Self = StObject.set(x, "perSeatPrice", js.undefined)
     
     @scala.inline
-    def deleteCurrencySymbol: Self = this.set("currencySymbol", js.undefined)
+    def setSupportIncidentFee(value: String): Self = StObject.set(x, "supportIncidentFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerSeatPrice(value: String): Self = this.set("perSeatPrice", value.asInstanceOf[js.Any])
+    def setSupportIncidentFeeUndefined: Self = StObject.set(x, "supportIncidentFee", js.undefined)
     
     @scala.inline
-    def deletePerSeatPrice: Self = this.set("perSeatPrice", js.undefined)
+    def setSupportPlanFee(value: String): Self = StObject.set(x, "supportPlanFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportIncidentFee(value: String): Self = this.set("supportIncidentFee", value.asInstanceOf[js.Any])
+    def setSupportPlanFeeUndefined: Self = StObject.set(x, "supportPlanFee", js.undefined)
     
     @scala.inline
-    def deleteSupportIncidentFee: Self = this.set("supportIncidentFee", js.undefined)
+    def setSupportedCardTypes(value: CreditCardTypes): Self = StObject.set(x, "supportedCardTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportPlanFee(value: String): Self = this.set("supportPlanFee", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportPlanFee: Self = this.set("supportPlanFee", js.undefined)
-    
-    @scala.inline
-    def setSupportedCardTypes(value: CreditCardTypes): Self = this.set("supportedCardTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedCardTypes: Self = this.set("supportedCardTypes", js.undefined)
+    def setSupportedCardTypesUndefined: Self = StObject.set(x, "supportedCardTypes", js.undefined)
   }
 }

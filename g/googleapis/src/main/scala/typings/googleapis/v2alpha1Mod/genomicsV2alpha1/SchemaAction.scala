@@ -1,6 +1,7 @@
 package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies a single action that runs a Docker container.
   */
 @js.native
-trait SchemaAction extends js.Object {
+trait SchemaAction extends StObject {
   
   /**
     * If specified, overrides the `CMD` specified in the container. If the
@@ -131,99 +132,87 @@ object SchemaAction {
   }
   
   @scala.inline
-  implicit class SchemaActionOps[Self <: SchemaAction] (val x: Self) extends AnyVal {
+  implicit class SchemaActionMutableBuilder[Self <: SchemaAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
     @scala.inline
-    def setCommandsVarargs(value: String*): Self = this.set("commands", js.Array(value :_*))
+    def setCredentials(value: SchemaSecret): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommands(value: js.Array[String]): Self = this.set("commands", value.asInstanceOf[js.Any])
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def deleteCommands: Self = this.set("commands", js.undefined)
+    def setEntrypoint(value: String): Self = StObject.set(x, "entrypoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: SchemaSecret): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setEntrypointUndefined: Self = StObject.set(x, "entrypoint", js.undefined)
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntrypoint(value: String): Self = this.set("entrypoint", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def deleteEntrypoint: Self = this.set("entrypoint", js.undefined)
+    def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: StringDictionary[String]): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
     
     @scala.inline
-    def setFlagsVarargs(value: String*): Self = this.set("flags", js.Array(value :_*))
+    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: js.Array[String]): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
     @scala.inline
-    def deleteFlags: Self = this.set("flags", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteImageUri: Self = this.set("imageUri", js.undefined)
+    def setMounts(value: js.Array[SchemaMount]): Self = StObject.set(x, "mounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setMountsUndefined: Self = StObject.set(x, "mounts", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setMountsVarargs(value: SchemaMount*): Self = StObject.set(x, "mounts", js.Array(value :_*))
     
     @scala.inline
-    def setMountsVarargs(value: SchemaMount*): Self = this.set("mounts", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMounts(value: js.Array[SchemaMount]): Self = this.set("mounts", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMounts: Self = this.set("mounts", js.undefined)
+    def setPidNamespace(value: String): Self = StObject.set(x, "pidNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPidNamespaceUndefined: Self = StObject.set(x, "pidNamespace", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPortMappings(value: StringDictionary[Double]): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPidNamespace(value: String): Self = this.set("pidNamespace", value.asInstanceOf[js.Any])
+    def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
     
     @scala.inline
-    def deletePidNamespace: Self = this.set("pidNamespace", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortMappings(value: StringDictionary[Double]): Self = this.set("portMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortMappings: Self = this.set("portMappings", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

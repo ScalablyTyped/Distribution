@@ -13,12 +13,13 @@ import typings.typescript.mod.SyntaxKind.ThisKeyword
 import typings.typescript.mod.SyntaxKind.TrueKeyword
 import typings.typescript.mod.SyntaxKind.UniqueKeyword
 import typings.typescript.mod.SyntaxKind.Unknown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeFactory extends js.Object {
+trait NodeFactory extends StObject {
   
   def createAdd(left: Expression, right: Expression): BinaryExpression = js.native
   

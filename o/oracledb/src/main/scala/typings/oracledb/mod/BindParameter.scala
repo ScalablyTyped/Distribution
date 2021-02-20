@@ -1,11 +1,12 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindParameter extends js.Object {
+trait BindParameter extends StObject {
   
   /**
     * The direction of the bind. One of the Execute Bind Direction Constants.
@@ -54,48 +55,36 @@ object BindParameter {
   }
   
   @scala.inline
-  implicit class BindParameterOps[Self <: BindParameter] (val x: Self) extends AnyVal {
+  implicit class BindParameterMutableBuilder[Self <: BindParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxArraySize(value: Double): Self = StObject.set(x, "maxArraySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: Double): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setMaxArraySizeUndefined: Self = StObject.set(x, "maxArraySize", js.undefined)
     
     @scala.inline
-    def deleteDir: Self = this.set("dir", js.undefined)
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxArraySize(value: Double): Self = this.set("maxArraySize", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def deleteMaxArraySize: Self = this.set("maxArraySize", js.undefined)
+    def setType(value: Double | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Double | String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVal(value: js.Any): Self = this.set("val", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVal: Self = this.set("val", js.undefined)
+    def setValUndefined: Self = StObject.set(x, "val", js.undefined)
   }
 }

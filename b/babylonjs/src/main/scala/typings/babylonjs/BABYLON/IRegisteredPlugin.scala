@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines a plugin registered by the SceneLoader
   */
 @js.native
-trait IRegisteredPlugin extends js.Object {
+trait IRegisteredPlugin extends StObject {
   
   /**
     * Defines if the plugin supports binary data
@@ -32,24 +33,12 @@ object IRegisteredPlugin {
   }
   
   @scala.inline
-  implicit class IRegisteredPluginOps[Self <: IRegisteredPlugin] (val x: Self) extends AnyVal {
+  implicit class IRegisteredPluginMutableBuilder[Self <: IRegisteredPlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsBinary(value: Boolean): Self = this.set("isBinary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlugin(value: ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory): Self = this.set("plugin", value.asInstanceOf[js.Any])
+    def setPlugin(value: ISceneLoaderPlugin | ISceneLoaderPluginAsync | ISceneLoaderPluginFactory): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
   }
 }

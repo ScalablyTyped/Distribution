@@ -1,11 +1,12 @@
 package typings.itunesconnectanalytics.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsResult extends js.Object {
+trait AnalyticsResult extends StObject {
   
   var adamId: String = js.native
   
@@ -31,39 +32,27 @@ object AnalyticsResult {
   }
   
   @scala.inline
-  implicit class AnalyticsResultOps[Self <: AnalyticsResult] (val x: Self) extends AnyVal {
+  implicit class AnalyticsResultMutableBuilder[Self <: AnalyticsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdamId(value: String): Self = StObject.set(x, "adamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: js.Array[AnalyticsDataPoint]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: AnalyticsDataPoint*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setAdamId(value: String): Self = this.set("adamId", value.asInstanceOf[js.Any])
+    def setGroup(value: AnalyticsGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: AnalyticsDataPoint*): Self = this.set("data", js.Array(value :_*))
+    def setGroupNull: Self = StObject.set(x, "group", null)
     
     @scala.inline
-    def setData(value: js.Array[AnalyticsDataPoint]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setMeetsThreshold(value: Boolean): Self = StObject.set(x, "meetsThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeetsThreshold(value: Boolean): Self = this.set("meetsThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotals(value: AnalyticsTotals): Self = this.set("totals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroup(value: AnalyticsGroup): Self = this.set("group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupNull: Self = this.set("group", null)
+    def setTotals(value: AnalyticsTotals): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
   }
 }

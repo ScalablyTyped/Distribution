@@ -2,6 +2,7 @@ package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialColor
 import typings.exceljs.exceljsStrings.pattern
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object FillPattern {
   }
   
   @scala.inline
-  implicit class FillPatternOps[Self <: FillPattern] (val x: Self) extends AnyVal {
+  implicit class FillPatternMutableBuilder[Self <: FillPattern] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgColor(value: PartialColor): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFgColor(value: PartialColor): Self = StObject.set(x, "fgColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFgColor(value: PartialColor): Self = this.set("fgColor", value.asInstanceOf[js.Any])
+    def setPattern(value: FillPatterns): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: FillPatterns): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: pattern): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBgColor(value: PartialColor): Self = this.set("bgColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBgColor: Self = this.set("bgColor", js.undefined)
+    def setType(value: pattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

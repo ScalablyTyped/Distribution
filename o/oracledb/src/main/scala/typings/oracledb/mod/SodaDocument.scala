@@ -2,6 +2,7 @@ package typings.oracledb.mod
 
 import typings.node.Buffer
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SodaDocuments represents the document for SODA read and write operations.
   */
 @js.native
-trait SodaDocument extends js.Object {
+trait SodaDocument extends StObject {
   
   /** Creation time of the document as a string in the UTC time zone using an ISO8601 format. */
   val createdOn: js.UndefOr[String] = js.native
@@ -81,51 +82,39 @@ object SodaDocument {
   }
   
   @scala.inline
-  implicit class SodaDocumentOps[Self <: SodaDocument] (val x: Self) extends AnyVal {
+  implicit class SodaDocumentMutableBuilder[Self <: SodaDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedOn(value: String): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedOnUndefined: Self = StObject.set(x, "createdOn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetContent(value: () => Record[String, _]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContent(value: () => Record[String, _]): Self = this.set("getContent", js.Any.fromFunction0(value))
+    def setGetContentAsBuffer(value: () => Buffer): Self = StObject.set(x, "getContentAsBuffer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContentAsBuffer(value: () => Buffer): Self = this.set("getContentAsBuffer", js.Any.fromFunction0(value))
+    def setGetContentAsString(value: () => String): Self = StObject.set(x, "getContentAsString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContentAsString(value: () => String): Self = this.set("getContentAsString", js.Any.fromFunction0(value))
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: String): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedOn(value: String): Self = this.set("createdOn", value.asInstanceOf[js.Any])
+    def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedOn: Self = this.set("createdOn", js.undefined)
+    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setMediaType(value: String): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediaType: Self = this.set("mediaType", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

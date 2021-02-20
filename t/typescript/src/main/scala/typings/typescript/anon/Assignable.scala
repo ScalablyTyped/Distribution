@@ -1,11 +1,12 @@
 package typings.typescript.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Assignable extends js.Object {
+trait Assignable extends StObject {
   
   var assignable: Double = js.native
   
@@ -24,30 +25,18 @@ object Assignable {
   }
   
   @scala.inline
-  implicit class AssignableOps[Self <: Assignable] (val x: Self) extends AnyVal {
+  implicit class AssignableMutableBuilder[Self <: Assignable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignable(value: Double): Self = StObject.set(x, "assignable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentity(value: Double): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrictSubtype(value: Double): Self = StObject.set(x, "strictSubtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignable(value: Double): Self = this.set("assignable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentity(value: Double): Self = this.set("identity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrictSubtype(value: Double): Self = this.set("strictSubtype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtype(value: Double): Self = this.set("subtype", value.asInstanceOf[js.Any])
+    def setSubtype(value: Double): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
   }
 }

@@ -8,12 +8,13 @@ import typings.victory.anon.styledataCSSPropertiesund
 import typings.victory.anon.styledataCSSPropertiesundCandleColors
 import typings.victory.anon.styledataCSSPropertiesundColorScale
 import typings.victory.anon.stylemaxCSSPropertiesunde
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VictoryThemeDefinition extends js.Object {
+trait VictoryThemeDefinition extends StObject {
   
   var area: js.UndefOr[styledataCSSPropertiesund] = js.native
   
@@ -54,108 +55,96 @@ object VictoryThemeDefinition {
   }
   
   @scala.inline
-  implicit class VictoryThemeDefinitionOps[Self <: VictoryThemeDefinition] (val x: Self) extends AnyVal {
+  implicit class VictoryThemeDefinitionMutableBuilder[Self <: VictoryThemeDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: styledataCSSPropertiesund): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxis(value: styleaxisCSSPropertiesund): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: styledataCSSPropertiesund): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def deleteArea: Self = this.set("area", js.undefined)
+    def setBar(value: styledataCSSPropertiesund): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: styleaxisCSSPropertiesund): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setBoxplot(value: stylemaxCSSPropertiesunde): Self = StObject.set(x, "boxplot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBar(value: styledataCSSPropertiesund): Self = this.set("bar", value.asInstanceOf[js.Any])
+    def setBoxplotUndefined: Self = StObject.set(x, "boxplot", js.undefined)
     
     @scala.inline
-    def deleteBar: Self = this.set("bar", js.undefined)
+    def setCandlestick(value: styledataCSSPropertiesundCandleColors): Self = StObject.set(x, "candlestick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxplot(value: stylemaxCSSPropertiesunde): Self = this.set("boxplot", value.asInstanceOf[js.Any])
+    def setCandlestickUndefined: Self = StObject.set(x, "candlestick", js.undefined)
     
     @scala.inline
-    def deleteBoxplot: Self = this.set("boxplot", js.undefined)
+    def setChart(value: ThemeBaseProps): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandlestick(value: styledataCSSPropertiesundCandleColors): Self = this.set("candlestick", value.asInstanceOf[js.Any])
+    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
     @scala.inline
-    def deleteCandlestick: Self = this.set("candlestick", js.undefined)
+    def setErrorbar(value: borderWidthnumberundefine): Self = StObject.set(x, "errorbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: ThemeBaseProps): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setErrorbarUndefined: Self = StObject.set(x, "errorbar", js.undefined)
     
     @scala.inline
-    def deleteChart: Self = this.set("chart", js.undefined)
+    def setGroup(value: ThemeBaseProps): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorbar(value: borderWidthnumberundefine): Self = this.set("errorbar", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteErrorbar: Self = this.set("errorbar", js.undefined)
+    def setLegend(value: gutternumberundefinedorie): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: ThemeBaseProps): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setLine(value: styledataCSSPropertiesund): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegend(value: gutternumberundefinedorie): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setPie(value: styledataCSSPropertiesund): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: styledataCSSPropertiesund): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setPieUndefined: Self = StObject.set(x, "pie", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setScatter(value: styledataCSSPropertiesund): Self = StObject.set(x, "scatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPie(value: styledataCSSPropertiesund): Self = this.set("pie", value.asInstanceOf[js.Any])
+    def setScatterUndefined: Self = StObject.set(x, "scatter", js.undefined)
     
     @scala.inline
-    def deletePie: Self = this.set("pie", js.undefined)
+    def setStack(value: ThemeBaseProps): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScatter(value: styledataCSSPropertiesund): Self = this.set("scatter", value.asInstanceOf[js.Any])
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def deleteScatter: Self = this.set("scatter", js.undefined)
+    def setTooltip(value: CornerRadius): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStack(value: ThemeBaseProps): Self = this.set("stack", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
+    def setVoronoi(value: styledataCSSPropertiesundColorScale): Self = StObject.set(x, "voronoi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: CornerRadius): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
-    
-    @scala.inline
-    def setVoronoi(value: styledataCSSPropertiesundColorScale): Self = this.set("voronoi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoronoi: Self = this.set("voronoi", js.undefined)
+    def setVoronoiUndefined: Self = StObject.set(x, "voronoi", js.undefined)
   }
 }

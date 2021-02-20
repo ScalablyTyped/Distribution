@@ -1,11 +1,12 @@
 package typings.preact.jsxCsstypeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SvgPropertiesFallback[TLength] extends js.Object {
+trait SvgPropertiesFallback[TLength] extends StObject {
   
   var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]] = js.native
   
@@ -136,558 +137,546 @@ object SvgPropertiesFallback {
   }
   
   @scala.inline
-  implicit class SvgPropertiesFallbackOps[Self <: SvgPropertiesFallback[_], TLength] (val x: Self with SvgPropertiesFallback[TLength]) extends AnyVal {
+  implicit class SvgPropertiesFallbackMutableBuilder[Self <: SvgPropertiesFallback[_], TLength] (val x: Self with SvgPropertiesFallback[TLength]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignmentBaseline(value: AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlignmentBaselineVarargs(value: AlignmentBaselineProperty*): Self = StObject.set(x, "alignmentBaseline", js.Array(value :_*))
     
     @scala.inline
-    def setAlignmentBaselineVarargs(value: AlignmentBaselineProperty*): Self = this.set("alignmentBaseline", js.Array(value :_*))
+    def setBaselineShift(value: BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]]): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignmentBaseline(value: AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]): Self = this.set("alignmentBaseline", value.asInstanceOf[js.Any])
+    def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
     
     @scala.inline
-    def deleteAlignmentBaseline: Self = this.set("alignmentBaseline", js.undefined)
+    def setBaselineShiftVarargs(value: BaselineShiftProperty[TLength]*): Self = StObject.set(x, "baselineShift", js.Array(value :_*))
     
     @scala.inline
-    def setBaselineShiftVarargs(value: BaselineShiftProperty[TLength]*): Self = this.set("baselineShift", js.Array(value :_*))
+    def setClip(value: ClipProperty | js.Array[ClipProperty]): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineShift(value: BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]]): Self = this.set("baselineShift", value.asInstanceOf[js.Any])
+    def setClipPath(value: ClipPathProperty | js.Array[ClipPathProperty]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaselineShift: Self = this.set("baselineShift", js.undefined)
+    def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
     
     @scala.inline
-    def setClipVarargs(value: ClipProperty*): Self = this.set("clip", js.Array(value :_*))
+    def setClipPathVarargs(value: ClipPathProperty*): Self = StObject.set(x, "clipPath", js.Array(value :_*))
     
     @scala.inline
-    def setClip(value: ClipProperty | js.Array[ClipProperty]): Self = this.set("clip", value.asInstanceOf[js.Any])
+    def setClipRule(value: ClipRuleProperty | js.Array[ClipRuleProperty]): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClip: Self = this.set("clip", js.undefined)
+    def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
     
     @scala.inline
-    def setClipPathVarargs(value: ClipPathProperty*): Self = this.set("clipPath", js.Array(value :_*))
+    def setClipRuleVarargs(value: ClipRuleProperty*): Self = StObject.set(x, "clipRule", js.Array(value :_*))
     
     @scala.inline
-    def setClipPath(value: ClipPathProperty | js.Array[ClipPathProperty]): Self = this.set("clipPath", value.asInstanceOf[js.Any])
+    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
     @scala.inline
-    def deleteClipPath: Self = this.set("clipPath", js.undefined)
+    def setClipVarargs(value: ClipProperty*): Self = StObject.set(x, "clip", js.Array(value :_*))
     
     @scala.inline
-    def setClipRuleVarargs(value: ClipRuleProperty*): Self = this.set("clipRule", js.Array(value :_*))
+    def setColor(value: ColorProperty | js.Array[ColorProperty]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipRule(value: ClipRuleProperty | js.Array[ClipRuleProperty]): Self = this.set("clipRule", value.asInstanceOf[js.Any])
+    def setColorInterpolation(value: ColorInterpolationProperty | js.Array[ColorInterpolationProperty]): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClipRule: Self = this.set("clipRule", js.undefined)
+    def setColorInterpolationUndefined: Self = StObject.set(x, "colorInterpolation", js.undefined)
     
     @scala.inline
-    def setColorVarargs(value: ColorProperty*): Self = this.set("color", js.Array(value :_*))
+    def setColorInterpolationVarargs(value: ColorInterpolationProperty*): Self = StObject.set(x, "colorInterpolation", js.Array(value :_*))
     
     @scala.inline
-    def setColor(value: ColorProperty | js.Array[ColorProperty]): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setColorRendering(value: ColorRenderingProperty | js.Array[ColorRenderingProperty]): Self = StObject.set(x, "colorRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorRenderingUndefined: Self = StObject.set(x, "colorRendering", js.undefined)
     
     @scala.inline
-    def setColorInterpolationVarargs(value: ColorInterpolationProperty*): Self = this.set("colorInterpolation", js.Array(value :_*))
+    def setColorRenderingVarargs(value: ColorRenderingProperty*): Self = StObject.set(x, "colorRendering", js.Array(value :_*))
     
     @scala.inline
-    def setColorInterpolation(value: ColorInterpolationProperty | js.Array[ColorInterpolationProperty]): Self = this.set("colorInterpolation", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteColorInterpolation: Self = this.set("colorInterpolation", js.undefined)
+    def setColorVarargs(value: ColorProperty*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setColorRenderingVarargs(value: ColorRenderingProperty*): Self = this.set("colorRendering", js.Array(value :_*))
+    def setCursor(value: CursorProperty | js.Array[CursorProperty]): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorRendering(value: ColorRenderingProperty | js.Array[ColorRenderingProperty]): Self = this.set("colorRendering", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteColorRendering: Self = this.set("colorRendering", js.undefined)
+    def setCursorVarargs(value: CursorProperty*): Self = StObject.set(x, "cursor", js.Array(value :_*))
     
     @scala.inline
-    def setCursorVarargs(value: CursorProperty*): Self = this.set("cursor", js.Array(value :_*))
+    def setDirection(value: DirectionProperty | js.Array[DirectionProperty]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: CursorProperty | js.Array[CursorProperty]): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setDirectionVarargs(value: DirectionProperty*): Self = StObject.set(x, "direction", js.Array(value :_*))
     
     @scala.inline
-    def setDirectionVarargs(value: DirectionProperty*): Self = this.set("direction", js.Array(value :_*))
+    def setDisplay(value: DisplayProperty | js.Array[DisplayProperty]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: DirectionProperty | js.Array[DirectionProperty]): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setDisplayVarargs(value: DisplayProperty*): Self = StObject.set(x, "display", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayVarargs(value: DisplayProperty*): Self = this.set("display", js.Array(value :_*))
+    def setDominantBaseline(value: DominantBaselineProperty | js.Array[DominantBaselineProperty]): Self = StObject.set(x, "dominantBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: DisplayProperty | js.Array[DisplayProperty]): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setDominantBaselineUndefined: Self = StObject.set(x, "dominantBaseline", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setDominantBaselineVarargs(value: DominantBaselineProperty*): Self = StObject.set(x, "dominantBaseline", js.Array(value :_*))
     
     @scala.inline
-    def setDominantBaselineVarargs(value: DominantBaselineProperty*): Self = this.set("dominantBaseline", js.Array(value :_*))
+    def setFill(value: FillProperty | js.Array[FillProperty]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDominantBaseline(value: DominantBaselineProperty | js.Array[DominantBaselineProperty]): Self = this.set("dominantBaseline", value.asInstanceOf[js.Any])
+    def setFillOpacity(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDominantBaseline: Self = this.set("dominantBaseline", js.undefined)
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def setFillVarargs(value: FillProperty*): Self = this.set("fill", js.Array(value :_*))
+    def setFillOpacityVarargs(value: GlobalsNumber*): Self = StObject.set(x, "fillOpacity", js.Array(value :_*))
     
     @scala.inline
-    def setFill(value: FillProperty | js.Array[FillProperty]): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setFillRule(value: FillRuleProperty | js.Array[FillRuleProperty]): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
     
     @scala.inline
-    def setFillOpacityVarargs(value: GlobalsNumber*): Self = this.set("fillOpacity", js.Array(value :_*))
+    def setFillRuleVarargs(value: FillRuleProperty*): Self = StObject.set(x, "fillRule", js.Array(value :_*))
     
     @scala.inline
-    def setFillOpacity(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    def setFillVarargs(value: FillProperty*): Self = StObject.set(x, "fill", js.Array(value :_*))
     
     @scala.inline
-    def setFillRuleVarargs(value: FillRuleProperty*): Self = this.set("fillRule", js.Array(value :_*))
+    def setFilter(value: FilterProperty | js.Array[FilterProperty]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillRule(value: FillRuleProperty | js.Array[FillRuleProperty]): Self = this.set("fillRule", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteFillRule: Self = this.set("fillRule", js.undefined)
+    def setFilterVarargs(value: FilterProperty*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
     @scala.inline
-    def setFilterVarargs(value: FilterProperty*): Self = this.set("filter", js.Array(value :_*))
+    def setFloodColor(value: FloodColorProperty | js.Array[FloodColorProperty]): Self = StObject.set(x, "floodColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: FilterProperty | js.Array[FilterProperty]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFloodColorUndefined: Self = StObject.set(x, "floodColor", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFloodColorVarargs(value: FloodColorProperty*): Self = StObject.set(x, "floodColor", js.Array(value :_*))
     
     @scala.inline
-    def setFloodColorVarargs(value: FloodColorProperty*): Self = this.set("floodColor", js.Array(value :_*))
+    def setFloodOpacity(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "floodOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodColor(value: FloodColorProperty | js.Array[FloodColorProperty]): Self = this.set("floodColor", value.asInstanceOf[js.Any])
+    def setFloodOpacityUndefined: Self = StObject.set(x, "floodOpacity", js.undefined)
     
     @scala.inline
-    def deleteFloodColor: Self = this.set("floodColor", js.undefined)
+    def setFloodOpacityVarargs(value: GlobalsNumber*): Self = StObject.set(x, "floodOpacity", js.Array(value :_*))
     
     @scala.inline
-    def setFloodOpacityVarargs(value: GlobalsNumber*): Self = this.set("floodOpacity", js.Array(value :_*))
+    def setFont(value: FontProperty | js.Array[FontProperty]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodOpacity(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = this.set("floodOpacity", value.asInstanceOf[js.Any])
+    def setFontFamily(value: FontFamilyProperty | js.Array[FontFamilyProperty]): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloodOpacity: Self = this.set("floodOpacity", js.undefined)
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def setFontVarargs(value: FontProperty*): Self = this.set("font", js.Array(value :_*))
+    def setFontFamilyVarargs(value: FontFamilyProperty*): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
     
     @scala.inline
-    def setFont(value: FontProperty | js.Array[FontProperty]): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFontSize(value: FontSizeProperty[TLength] | js.Array[FontSizeProperty[TLength]]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setFontSizeAdjust(value: FontSizeAdjustProperty | js.Array[FontSizeAdjustProperty]): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamilyVarargs(value: FontFamilyProperty*): Self = this.set("fontFamily", js.Array(value :_*))
+    def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
     
     @scala.inline
-    def setFontFamily(value: FontFamilyProperty | js.Array[FontFamilyProperty]): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeAdjustVarargs(value: FontSizeAdjustProperty*): Self = StObject.set(x, "fontSizeAdjust", js.Array(value :_*))
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def setFontSizeVarargs(value: FontSizeProperty[TLength]*): Self = this.set("fontSize", js.Array(value :_*))
+    def setFontSizeVarargs(value: FontSizeProperty[TLength]*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
     
     @scala.inline
-    def setFontSize(value: FontSizeProperty[TLength] | js.Array[FontSizeProperty[TLength]]): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStretch(value: FontStretchProperty | js.Array[FontStretchProperty]): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
     
     @scala.inline
-    def setFontSizeAdjustVarargs(value: FontSizeAdjustProperty*): Self = this.set("fontSizeAdjust", js.Array(value :_*))
+    def setFontStretchVarargs(value: FontStretchProperty*): Self = StObject.set(x, "fontStretch", js.Array(value :_*))
     
     @scala.inline
-    def setFontSizeAdjust(value: FontSizeAdjustProperty | js.Array[FontSizeAdjustProperty]): Self = this.set("fontSizeAdjust", value.asInstanceOf[js.Any])
+    def setFontStyle(value: FontStyleProperty | js.Array[FontStyleProperty]): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSizeAdjust: Self = this.set("fontSizeAdjust", js.undefined)
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def setFontStretchVarargs(value: FontStretchProperty*): Self = this.set("fontStretch", js.Array(value :_*))
+    def setFontStyleVarargs(value: FontStyleProperty*): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
     
     @scala.inline
-    def setFontStretch(value: FontStretchProperty | js.Array[FontStretchProperty]): Self = this.set("fontStretch", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteFontStretch: Self = this.set("fontStretch", js.undefined)
+    def setFontVarargs(value: FontProperty*): Self = StObject.set(x, "font", js.Array(value :_*))
     
     @scala.inline
-    def setFontStyleVarargs(value: FontStyleProperty*): Self = this.set("fontStyle", js.Array(value :_*))
+    def setFontVariant(value: FontVariantProperty | js.Array[FontVariantProperty]): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: FontStyleProperty | js.Array[FontStyleProperty]): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setFontVariantVarargs(value: FontVariantProperty*): Self = StObject.set(x, "fontVariant", js.Array(value :_*))
     
     @scala.inline
-    def setFontVariantVarargs(value: FontVariantProperty*): Self = this.set("fontVariant", js.Array(value :_*))
+    def setFontWeight(value: FontWeightProperty | js.Array[FontWeightProperty]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariant(value: FontVariantProperty | js.Array[FontVariantProperty]): Self = this.set("fontVariant", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontVariant: Self = this.set("fontVariant", js.undefined)
+    def setFontWeightVarargs(value: FontWeightProperty*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
     
     @scala.inline
-    def setFontWeightVarargs(value: FontWeightProperty*): Self = this.set("fontWeight", js.Array(value :_*))
+    def setGlyphOrientationVertical(value: GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty]): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: FontWeightProperty | js.Array[FontWeightProperty]): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setGlyphOrientationVerticalVarargs(value: GlyphOrientationVerticalProperty*): Self = StObject.set(x, "glyphOrientationVertical", js.Array(value :_*))
     
     @scala.inline
-    def setGlyphOrientationVerticalVarargs(value: GlyphOrientationVerticalProperty*): Self = this.set("glyphOrientationVertical", js.Array(value :_*))
+    def setImageRendering(value: ImageRenderingProperty | js.Array[ImageRenderingProperty]): Self = StObject.set(x, "imageRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphOrientationVertical(value: GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty]): Self = this.set("glyphOrientationVertical", value.asInstanceOf[js.Any])
+    def setImageRenderingUndefined: Self = StObject.set(x, "imageRendering", js.undefined)
     
     @scala.inline
-    def deleteGlyphOrientationVertical: Self = this.set("glyphOrientationVertical", js.undefined)
+    def setImageRenderingVarargs(value: ImageRenderingProperty*): Self = StObject.set(x, "imageRendering", js.Array(value :_*))
     
     @scala.inline
-    def setImageRenderingVarargs(value: ImageRenderingProperty*): Self = this.set("imageRendering", js.Array(value :_*))
+    def setLetterSpacing(value: LetterSpacingProperty[TLength] | js.Array[LetterSpacingProperty[TLength]]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageRendering(value: ImageRenderingProperty | js.Array[ImageRenderingProperty]): Self = this.set("imageRendering", value.asInstanceOf[js.Any])
+    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
     @scala.inline
-    def deleteImageRendering: Self = this.set("imageRendering", js.undefined)
+    def setLetterSpacingVarargs(value: LetterSpacingProperty[TLength]*): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
     
     @scala.inline
-    def setLetterSpacingVarargs(value: LetterSpacingProperty[TLength]*): Self = this.set("letterSpacing", js.Array(value :_*))
+    def setLightingColor(value: LightingColorProperty | js.Array[LightingColorProperty]): Self = StObject.set(x, "lightingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterSpacing(value: LetterSpacingProperty[TLength] | js.Array[LetterSpacingProperty[TLength]]): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    def setLightingColorUndefined: Self = StObject.set(x, "lightingColor", js.undefined)
     
     @scala.inline
-    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    def setLightingColorVarargs(value: LightingColorProperty*): Self = StObject.set(x, "lightingColor", js.Array(value :_*))
     
     @scala.inline
-    def setLightingColorVarargs(value: LightingColorProperty*): Self = this.set("lightingColor", js.Array(value :_*))
+    def setLineHeight(value: LineHeightProperty[TLength] | js.Array[LineHeightProperty[TLength]]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightingColor(value: LightingColorProperty | js.Array[LightingColorProperty]): Self = this.set("lightingColor", value.asInstanceOf[js.Any])
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def deleteLightingColor: Self = this.set("lightingColor", js.undefined)
+    def setLineHeightVarargs(value: LineHeightProperty[TLength]*): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
     
     @scala.inline
-    def setLineHeightVarargs(value: LineHeightProperty[TLength]*): Self = this.set("lineHeight", js.Array(value :_*))
+    def setMarker(value: MarkerProperty | js.Array[MarkerProperty]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: LineHeightProperty[TLength] | js.Array[LineHeightProperty[TLength]]): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setMarkerEnd(value: MarkerEndProperty | js.Array[MarkerEndProperty]): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
     
     @scala.inline
-    def setMarkerVarargs(value: MarkerProperty*): Self = this.set("marker", js.Array(value :_*))
+    def setMarkerEndVarargs(value: MarkerEndProperty*): Self = StObject.set(x, "markerEnd", js.Array(value :_*))
     
     @scala.inline
-    def setMarker(value: MarkerProperty | js.Array[MarkerProperty]): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setMarkerMid(value: MarkerMidProperty | js.Array[MarkerMidProperty]): Self = StObject.set(x, "markerMid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setMarkerMidUndefined: Self = StObject.set(x, "markerMid", js.undefined)
     
     @scala.inline
-    def setMarkerEndVarargs(value: MarkerEndProperty*): Self = this.set("markerEnd", js.Array(value :_*))
+    def setMarkerMidVarargs(value: MarkerMidProperty*): Self = StObject.set(x, "markerMid", js.Array(value :_*))
     
     @scala.inline
-    def setMarkerEnd(value: MarkerEndProperty | js.Array[MarkerEndProperty]): Self = this.set("markerEnd", value.asInstanceOf[js.Any])
+    def setMarkerStart(value: MarkerStartProperty | js.Array[MarkerStartProperty]): Self = StObject.set(x, "markerStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarkerEnd: Self = this.set("markerEnd", js.undefined)
+    def setMarkerStartUndefined: Self = StObject.set(x, "markerStart", js.undefined)
     
     @scala.inline
-    def setMarkerMidVarargs(value: MarkerMidProperty*): Self = this.set("markerMid", js.Array(value :_*))
+    def setMarkerStartVarargs(value: MarkerStartProperty*): Self = StObject.set(x, "markerStart", js.Array(value :_*))
     
     @scala.inline
-    def setMarkerMid(value: MarkerMidProperty | js.Array[MarkerMidProperty]): Self = this.set("markerMid", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def deleteMarkerMid: Self = this.set("markerMid", js.undefined)
+    def setMarkerVarargs(value: MarkerProperty*): Self = StObject.set(x, "marker", js.Array(value :_*))
     
     @scala.inline
-    def setMarkerStartVarargs(value: MarkerStartProperty*): Self = this.set("markerStart", js.Array(value :_*))
+    def setMask(value: MaskProperty[TLength] | js.Array[MaskProperty[TLength]]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerStart(value: MarkerStartProperty | js.Array[MarkerStartProperty]): Self = this.set("markerStart", value.asInstanceOf[js.Any])
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def deleteMarkerStart: Self = this.set("markerStart", js.undefined)
+    def setMaskVarargs(value: MaskProperty[TLength]*): Self = StObject.set(x, "mask", js.Array(value :_*))
     
     @scala.inline
-    def setMaskVarargs(value: MaskProperty[TLength]*): Self = this.set("mask", js.Array(value :_*))
+    def setOpacity(value: OpacityProperty | js.Array[OpacityProperty]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMask(value: MaskProperty[TLength] | js.Array[MaskProperty[TLength]]): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setOpacityVarargs(value: OpacityProperty*): Self = StObject.set(x, "opacity", js.Array(value :_*))
     
     @scala.inline
-    def setOpacityVarargs(value: OpacityProperty*): Self = this.set("opacity", js.Array(value :_*))
+    def setOverflow(value: OverflowProperty | js.Array[OverflowProperty]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: OpacityProperty | js.Array[OpacityProperty]): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setOverflowVarargs(value: OverflowProperty*): Self = StObject.set(x, "overflow", js.Array(value :_*))
     
     @scala.inline
-    def setOverflowVarargs(value: OverflowProperty*): Self = this.set("overflow", js.Array(value :_*))
+    def setPaintOrder(value: PaintOrderProperty | js.Array[PaintOrderProperty]): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflow(value: OverflowProperty | js.Array[OverflowProperty]): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
     
     @scala.inline
-    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    def setPaintOrderVarargs(value: PaintOrderProperty*): Self = StObject.set(x, "paintOrder", js.Array(value :_*))
     
     @scala.inline
-    def setPaintOrderVarargs(value: PaintOrderProperty*): Self = this.set("paintOrder", js.Array(value :_*))
+    def setPointerEvents(value: PointerEventsProperty | js.Array[PointerEventsProperty]): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaintOrder(value: PaintOrderProperty | js.Array[PaintOrderProperty]): Self = this.set("paintOrder", value.asInstanceOf[js.Any])
+    def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
     @scala.inline
-    def deletePaintOrder: Self = this.set("paintOrder", js.undefined)
+    def setPointerEventsVarargs(value: PointerEventsProperty*): Self = StObject.set(x, "pointerEvents", js.Array(value :_*))
     
     @scala.inline
-    def setPointerEventsVarargs(value: PointerEventsProperty*): Self = this.set("pointerEvents", js.Array(value :_*))
+    def setShapeRendering(value: ShapeRenderingProperty | js.Array[ShapeRenderingProperty]): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointerEvents(value: PointerEventsProperty | js.Array[PointerEventsProperty]): Self = this.set("pointerEvents", value.asInstanceOf[js.Any])
+    def setShapeRenderingUndefined: Self = StObject.set(x, "shapeRendering", js.undefined)
     
     @scala.inline
-    def deletePointerEvents: Self = this.set("pointerEvents", js.undefined)
+    def setShapeRenderingVarargs(value: ShapeRenderingProperty*): Self = StObject.set(x, "shapeRendering", js.Array(value :_*))
     
     @scala.inline
-    def setShapeRenderingVarargs(value: ShapeRenderingProperty*): Self = this.set("shapeRendering", js.Array(value :_*))
+    def setStopColor(value: StopColorProperty | js.Array[StopColorProperty]): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeRendering(value: ShapeRenderingProperty | js.Array[ShapeRenderingProperty]): Self = this.set("shapeRendering", value.asInstanceOf[js.Any])
+    def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
     
     @scala.inline
-    def deleteShapeRendering: Self = this.set("shapeRendering", js.undefined)
+    def setStopColorVarargs(value: StopColorProperty*): Self = StObject.set(x, "stopColor", js.Array(value :_*))
     
     @scala.inline
-    def setStopColorVarargs(value: StopColorProperty*): Self = this.set("stopColor", js.Array(value :_*))
+    def setStopOpacity(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopColor(value: StopColorProperty | js.Array[StopColorProperty]): Self = this.set("stopColor", value.asInstanceOf[js.Any])
+    def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
     
     @scala.inline
-    def deleteStopColor: Self = this.set("stopColor", js.undefined)
+    def setStopOpacityVarargs(value: GlobalsNumber*): Self = StObject.set(x, "stopOpacity", js.Array(value :_*))
     
     @scala.inline
-    def setStopOpacityVarargs(value: GlobalsNumber*): Self = this.set("stopOpacity", js.Array(value :_*))
+    def setStroke(value: StrokeProperty | js.Array[StrokeProperty]): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopOpacity(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = this.set("stopOpacity", value.asInstanceOf[js.Any])
+    def setStrokeDasharray(value: StrokeDasharrayProperty[TLength] | js.Array[StrokeDasharrayProperty[TLength]]): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStopOpacity: Self = this.set("stopOpacity", js.undefined)
+    def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
     
     @scala.inline
-    def setStrokeVarargs(value: StrokeProperty*): Self = this.set("stroke", js.Array(value :_*))
+    def setStrokeDasharrayVarargs(value: StrokeDasharrayProperty[TLength]*): Self = StObject.set(x, "strokeDasharray", js.Array(value :_*))
     
     @scala.inline
-    def setStroke(value: StrokeProperty | js.Array[StrokeProperty]): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    def setStrokeDashoffset(value: StrokeDashoffsetProperty[TLength] | js.Array[StrokeDashoffsetProperty[TLength]]): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
     
     @scala.inline
-    def setStrokeDasharrayVarargs(value: StrokeDasharrayProperty[TLength]*): Self = this.set("strokeDasharray", js.Array(value :_*))
+    def setStrokeDashoffsetVarargs(value: StrokeDashoffsetProperty[TLength]*): Self = StObject.set(x, "strokeDashoffset", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeDasharray(value: StrokeDasharrayProperty[TLength] | js.Array[StrokeDasharrayProperty[TLength]]): Self = this.set("strokeDasharray", value.asInstanceOf[js.Any])
+    def setStrokeLinecap(value: StrokeLinecapProperty | js.Array[StrokeLinecapProperty]): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeDasharray: Self = this.set("strokeDasharray", js.undefined)
+    def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
     
     @scala.inline
-    def setStrokeDashoffsetVarargs(value: StrokeDashoffsetProperty[TLength]*): Self = this.set("strokeDashoffset", js.Array(value :_*))
+    def setStrokeLinecapVarargs(value: StrokeLinecapProperty*): Self = StObject.set(x, "strokeLinecap", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeDashoffset(value: StrokeDashoffsetProperty[TLength] | js.Array[StrokeDashoffsetProperty[TLength]]): Self = this.set("strokeDashoffset", value.asInstanceOf[js.Any])
+    def setStrokeLinejoin(value: StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty]): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeDashoffset: Self = this.set("strokeDashoffset", js.undefined)
+    def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
     
     @scala.inline
-    def setStrokeLinecapVarargs(value: StrokeLinecapProperty*): Self = this.set("strokeLinecap", js.Array(value :_*))
+    def setStrokeLinejoinVarargs(value: StrokeLinejoinProperty*): Self = StObject.set(x, "strokeLinejoin", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeLinecap(value: StrokeLinecapProperty | js.Array[StrokeLinecapProperty]): Self = this.set("strokeLinecap", value.asInstanceOf[js.Any])
+    def setStrokeMiterlimit(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeLinecap: Self = this.set("strokeLinecap", js.undefined)
+    def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
     
     @scala.inline
-    def setStrokeLinejoinVarargs(value: StrokeLinejoinProperty*): Self = this.set("strokeLinejoin", js.Array(value :_*))
+    def setStrokeMiterlimitVarargs(value: GlobalsNumber*): Self = StObject.set(x, "strokeMiterlimit", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeLinejoin(value: StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty]): Self = this.set("strokeLinejoin", value.asInstanceOf[js.Any])
+    def setStrokeOpacity(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeLinejoin: Self = this.set("strokeLinejoin", js.undefined)
+    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
     @scala.inline
-    def setStrokeMiterlimitVarargs(value: GlobalsNumber*): Self = this.set("strokeMiterlimit", js.Array(value :_*))
+    def setStrokeOpacityVarargs(value: GlobalsNumber*): Self = StObject.set(x, "strokeOpacity", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeMiterlimit(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = this.set("strokeMiterlimit", value.asInstanceOf[js.Any])
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def deleteStrokeMiterlimit: Self = this.set("strokeMiterlimit", js.undefined)
+    def setStrokeVarargs(value: StrokeProperty*): Self = StObject.set(x, "stroke", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeOpacityVarargs(value: GlobalsNumber*): Self = this.set("strokeOpacity", js.Array(value :_*))
+    def setStrokeWidth(value: StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]]): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeOpacity(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = this.set("strokeOpacity", value.asInstanceOf[js.Any])
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
     @scala.inline
-    def deleteStrokeOpacity: Self = this.set("strokeOpacity", js.undefined)
+    def setStrokeWidthVarargs(value: StrokeWidthProperty[TLength]*): Self = StObject.set(x, "strokeWidth", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeWidthVarargs(value: StrokeWidthProperty[TLength]*): Self = this.set("strokeWidth", js.Array(value :_*))
+    def setTextAnchor(value: TextAnchorProperty | js.Array[TextAnchorProperty]): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeWidth(value: StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]]): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
     
     @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setTextAnchorVarargs(value: TextAnchorProperty*): Self = StObject.set(x, "textAnchor", js.Array(value :_*))
     
     @scala.inline
-    def setTextAnchorVarargs(value: TextAnchorProperty*): Self = this.set("textAnchor", js.Array(value :_*))
+    def setTextDecoration(value: TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnchor(value: TextAnchorProperty | js.Array[TextAnchorProperty]): Self = this.set("textAnchor", value.asInstanceOf[js.Any])
+    def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
     
     @scala.inline
-    def deleteTextAnchor: Self = this.set("textAnchor", js.undefined)
+    def setTextDecorationVarargs(value: TextDecorationProperty[TLength]*): Self = StObject.set(x, "textDecoration", js.Array(value :_*))
     
     @scala.inline
-    def setTextDecorationVarargs(value: TextDecorationProperty[TLength]*): Self = this.set("textDecoration", js.Array(value :_*))
+    def setTextRendering(value: TextRenderingProperty | js.Array[TextRenderingProperty]): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecoration(value: TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
+    def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
     
     @scala.inline
-    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
+    def setTextRenderingVarargs(value: TextRenderingProperty*): Self = StObject.set(x, "textRendering", js.Array(value :_*))
     
     @scala.inline
-    def setTextRenderingVarargs(value: TextRenderingProperty*): Self = this.set("textRendering", js.Array(value :_*))
+    def setUnicodeBidi(value: UnicodeBidiProperty | js.Array[UnicodeBidiProperty]): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextRendering(value: TextRenderingProperty | js.Array[TextRenderingProperty]): Self = this.set("textRendering", value.asInstanceOf[js.Any])
+    def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
     
     @scala.inline
-    def deleteTextRendering: Self = this.set("textRendering", js.undefined)
+    def setUnicodeBidiVarargs(value: UnicodeBidiProperty*): Self = StObject.set(x, "unicodeBidi", js.Array(value :_*))
     
     @scala.inline
-    def setUnicodeBidiVarargs(value: UnicodeBidiProperty*): Self = this.set("unicodeBidi", js.Array(value :_*))
+    def setVectorEffect(value: VectorEffectProperty | js.Array[VectorEffectProperty]): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnicodeBidi(value: UnicodeBidiProperty | js.Array[UnicodeBidiProperty]): Self = this.set("unicodeBidi", value.asInstanceOf[js.Any])
+    def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
     
     @scala.inline
-    def deleteUnicodeBidi: Self = this.set("unicodeBidi", js.undefined)
+    def setVectorEffectVarargs(value: VectorEffectProperty*): Self = StObject.set(x, "vectorEffect", js.Array(value :_*))
     
     @scala.inline
-    def setVectorEffectVarargs(value: VectorEffectProperty*): Self = this.set("vectorEffect", js.Array(value :_*))
+    def setVisibility(value: VisibilityProperty | js.Array[VisibilityProperty]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVectorEffect(value: VectorEffectProperty | js.Array[VectorEffectProperty]): Self = this.set("vectorEffect", value.asInstanceOf[js.Any])
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
     @scala.inline
-    def deleteVectorEffect: Self = this.set("vectorEffect", js.undefined)
+    def setVisibilityVarargs(value: VisibilityProperty*): Self = StObject.set(x, "visibility", js.Array(value :_*))
     
     @scala.inline
-    def setVisibilityVarargs(value: VisibilityProperty*): Self = this.set("visibility", js.Array(value :_*))
+    def setWhiteSpace(value: WhiteSpaceProperty | js.Array[WhiteSpaceProperty]): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibility(value: VisibilityProperty | js.Array[VisibilityProperty]): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
     
     @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setWhiteSpaceVarargs(value: WhiteSpaceProperty*): Self = StObject.set(x, "whiteSpace", js.Array(value :_*))
     
     @scala.inline
-    def setWhiteSpaceVarargs(value: WhiteSpaceProperty*): Self = this.set("whiteSpace", js.Array(value :_*))
+    def setWordSpacing(value: WordSpacingProperty[TLength] | js.Array[WordSpacingProperty[TLength]]): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhiteSpace(value: WhiteSpaceProperty | js.Array[WhiteSpaceProperty]): Self = this.set("whiteSpace", value.asInstanceOf[js.Any])
+    def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
     
     @scala.inline
-    def deleteWhiteSpace: Self = this.set("whiteSpace", js.undefined)
+    def setWordSpacingVarargs(value: WordSpacingProperty[TLength]*): Self = StObject.set(x, "wordSpacing", js.Array(value :_*))
     
     @scala.inline
-    def setWordSpacingVarargs(value: WordSpacingProperty[TLength]*): Self = this.set("wordSpacing", js.Array(value :_*))
+    def setWritingMode(value: WritingModeProperty | js.Array[WritingModeProperty]): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordSpacing(value: WordSpacingProperty[TLength] | js.Array[WordSpacingProperty[TLength]]): Self = this.set("wordSpacing", value.asInstanceOf[js.Any])
+    def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
     
     @scala.inline
-    def deleteWordSpacing: Self = this.set("wordSpacing", js.undefined)
-    
-    @scala.inline
-    def setWritingModeVarargs(value: WritingModeProperty*): Self = this.set("writingMode", js.Array(value :_*))
-    
-    @scala.inline
-    def setWritingMode(value: WritingModeProperty | js.Array[WritingModeProperty]): Self = this.set("writingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWritingMode: Self = this.set("writingMode", js.undefined)
+    def setWritingModeVarargs(value: WritingModeProperty*): Self = StObject.set(x, "writingMode", js.Array(value :_*))
   }
 }

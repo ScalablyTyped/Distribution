@@ -1,5 +1,6 @@
 package typings.gestalt.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gestalt.gestaltNumbers.`11`
   - typings.gestalt.gestaltNumbers.`12`
 */
-trait UnsignedUpTo12 extends js.Object
+trait UnsignedUpTo12 extends StObject
 object UnsignedUpTo12 {
   
   @scala.inline

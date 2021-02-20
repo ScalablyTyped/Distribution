@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemberDefinition extends js.Object {
+trait MemberDefinition extends StObject {
   
   /**
     * The Amazon Cognito user group that is part of the work team.
@@ -26,30 +27,18 @@ object MemberDefinition {
   }
   
   @scala.inline
-  implicit class MemberDefinitionOps[Self <: MemberDefinition] (val x: Self) extends AnyVal {
+  implicit class MemberDefinitionMutableBuilder[Self <: MemberDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCognitoMemberDefinition(value: CognitoMemberDefinition): Self = StObject.set(x, "CognitoMemberDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCognitoMemberDefinitionUndefined: Self = StObject.set(x, "CognitoMemberDefinition", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOidcMemberDefinition(value: OidcMemberDefinition): Self = StObject.set(x, "OidcMemberDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCognitoMemberDefinition(value: CognitoMemberDefinition): Self = this.set("CognitoMemberDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCognitoMemberDefinition: Self = this.set("CognitoMemberDefinition", js.undefined)
-    
-    @scala.inline
-    def setOidcMemberDefinition(value: OidcMemberDefinition): Self = this.set("OidcMemberDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOidcMemberDefinition: Self = this.set("OidcMemberDefinition", js.undefined)
+    def setOidcMemberDefinitionUndefined: Self = StObject.set(x, "OidcMemberDefinition", js.undefined)
   }
 }

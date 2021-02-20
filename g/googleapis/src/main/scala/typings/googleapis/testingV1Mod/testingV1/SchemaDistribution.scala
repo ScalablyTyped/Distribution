@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the Android platform.
   */
 @js.native
-trait SchemaDistribution extends js.Object {
+trait SchemaDistribution extends StObject {
   
   /**
     * Output only. The estimated fraction (0-1) of the total market with this
@@ -31,30 +32,18 @@ object SchemaDistribution {
   }
   
   @scala.inline
-  implicit class SchemaDistributionOps[Self <: SchemaDistribution] (val x: Self) extends AnyVal {
+  implicit class SchemaDistributionMutableBuilder[Self <: SchemaDistribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarketShare(value: Double): Self = StObject.set(x, "marketShare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarketShareUndefined: Self = StObject.set(x, "marketShare", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeasurementTime(value: String): Self = StObject.set(x, "measurementTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarketShare(value: Double): Self = this.set("marketShare", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarketShare: Self = this.set("marketShare", js.undefined)
-    
-    @scala.inline
-    def setMeasurementTime(value: String): Self = this.set("measurementTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeasurementTime: Self = this.set("measurementTime", js.undefined)
+    def setMeasurementTimeUndefined: Self = StObject.set(x, "measurementTime", js.undefined)
   }
 }

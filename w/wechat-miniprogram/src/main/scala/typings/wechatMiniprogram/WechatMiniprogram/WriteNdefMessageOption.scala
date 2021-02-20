@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WriteNdefMessageOption extends js.Object {
+trait WriteNdefMessageOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[WriteNdefMessageCompleteCallback] = js.native
@@ -34,63 +35,51 @@ object WriteNdefMessageOption {
   }
   
   @scala.inline
-  implicit class WriteNdefMessageOptionOps[Self <: WriteNdefMessageOption] (val x: Self) extends AnyVal {
+  implicit class WriteNdefMessageOptionMutableBuilder[Self <: WriteNdefMessageOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setRecords(value: js.Array[_]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setRecordsVarargs(value: js.Any*): Self = StObject.set(x, "records", js.Array(value :_*))
     
     @scala.inline
-    def setRecordsVarargs(value: js.Any*): Self = this.set("records", js.Array(value :_*))
+    def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRecords(value: js.Array[_]): Self = this.set("records", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteRecords: Self = this.set("records", js.undefined)
+    def setTexts(value: js.Array[_]): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setTextsVarargs(value: js.Any*): Self = StObject.set(x, "texts", js.Array(value :_*))
     
     @scala.inline
-    def setTextsVarargs(value: js.Any*): Self = this.set("texts", js.Array(value :_*))
+    def setUris(value: js.Array[_]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTexts(value: js.Array[_]): Self = this.set("texts", value.asInstanceOf[js.Any])
+    def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
     @scala.inline
-    def deleteTexts: Self = this.set("texts", js.undefined)
-    
-    @scala.inline
-    def setUrisVarargs(value: js.Any*): Self = this.set("uris", js.Array(value :_*))
-    
-    @scala.inline
-    def setUris(value: js.Array[_]): Self = this.set("uris", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUris: Self = this.set("uris", js.undefined)
+    def setUrisVarargs(value: js.Any*): Self = StObject.set(x, "uris", js.Array(value :_*))
   }
 }

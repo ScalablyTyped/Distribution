@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateVersionMetadataV1Beta extends js.Object {
+trait CreateVersionMetadataV1Beta extends StObject {
   
   /** The Cloud Build ID if one was created as part of the version create. @OutputOnly */
   var cloudBuildId: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object CreateVersionMetadataV1Beta {
   }
   
   @scala.inline
-  implicit class CreateVersionMetadataV1BetaOps[Self <: CreateVersionMetadataV1Beta] (val x: Self) extends AnyVal {
+  implicit class CreateVersionMetadataV1BetaMutableBuilder[Self <: CreateVersionMetadataV1Beta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudBuildId(value: String): Self = StObject.set(x, "cloudBuildId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloudBuildId(value: String): Self = this.set("cloudBuildId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudBuildId: Self = this.set("cloudBuildId", js.undefined)
+    def setCloudBuildIdUndefined: Self = StObject.set(x, "cloudBuildId", js.undefined)
   }
 }

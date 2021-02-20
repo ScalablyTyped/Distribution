@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbstreamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamRecord extends js.Object {
+trait StreamRecord extends StObject {
   
   /**
     * The approximate date and time when the stream record was created, in UNIX epoch time format.
@@ -51,60 +52,48 @@ object StreamRecord {
   }
   
   @scala.inline
-  implicit class StreamRecordOps[Self <: StreamRecord] (val x: Self) extends AnyVal {
+  implicit class StreamRecordMutableBuilder[Self <: StreamRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproximateCreationDateTime(value: Date): Self = StObject.set(x, "ApproximateCreationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproximateCreationDateTimeUndefined: Self = StObject.set(x, "ApproximateCreationDateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeys(value: AttributeMap): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproximateCreationDateTime(value: Date): Self = this.set("ApproximateCreationDateTime", value.asInstanceOf[js.Any])
+    def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
     @scala.inline
-    def deleteApproximateCreationDateTime: Self = this.set("ApproximateCreationDateTime", js.undefined)
+    def setNewImage(value: AttributeMap): Self = StObject.set(x, "NewImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: AttributeMap): Self = this.set("Keys", value.asInstanceOf[js.Any])
+    def setNewImageUndefined: Self = StObject.set(x, "NewImage", js.undefined)
     
     @scala.inline
-    def deleteKeys: Self = this.set("Keys", js.undefined)
+    def setOldImage(value: AttributeMap): Self = StObject.set(x, "OldImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewImage(value: AttributeMap): Self = this.set("NewImage", value.asInstanceOf[js.Any])
+    def setOldImageUndefined: Self = StObject.set(x, "OldImage", js.undefined)
     
     @scala.inline
-    def deleteNewImage: Self = this.set("NewImage", js.undefined)
+    def setSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldImage(value: AttributeMap): Self = this.set("OldImage", value.asInstanceOf[js.Any])
+    def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
     
     @scala.inline
-    def deleteOldImage: Self = this.set("OldImage", js.undefined)
+    def setSizeBytes(value: PositiveLongObject): Self = StObject.set(x, "SizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequenceNumber(value: SequenceNumber): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
+    def setSizeBytesUndefined: Self = StObject.set(x, "SizeBytes", js.undefined)
     
     @scala.inline
-    def deleteSequenceNumber: Self = this.set("SequenceNumber", js.undefined)
+    def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeBytes(value: PositiveLongObject): Self = this.set("SizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeBytes: Self = this.set("SizeBytes", js.undefined)
-    
-    @scala.inline
-    def setStreamViewType(value: StreamViewType): Self = this.set("StreamViewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamViewType: Self = this.set("StreamViewType", js.undefined)
+    def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
   }
 }

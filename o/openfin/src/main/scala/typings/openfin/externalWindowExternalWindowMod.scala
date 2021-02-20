@@ -7,14 +7,18 @@ import typings.openfin.identityMod.Identity
 import typings.openfin.shapesMod.AnchorType
 import typings.openfin.shapesMod.Bounds
 import typings.openfin.windowWindowMod.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openfin/_v2/api/external-window/external-window", JSImport.Namespace)
-@js.native
-object externalWindowExternalWindowMod extends js.Object {
+object externalWindowExternalWindowMod {
   
+  @JSImport("openfin/_v2/api/external-window/external-window", JSImport.Default)
+  @js.native
+  class default () extends ExternalWindowModule
+  
+  @JSImport("openfin/_v2/api/external-window/external-window", "ExternalWindow")
   @js.native
   class ExternalWindow protected () extends EmitterBase[ExternalWindowEvents] {
     def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
@@ -282,7 +286,4 @@ object externalWindowExternalWindowMod extends js.Object {
       */
     def wrap(identity: Identity): js.Promise[ExternalWindow] = js.native
   }
-  
-  @js.native
-  class default () extends ExternalWindowModule
 }

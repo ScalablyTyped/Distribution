@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2ExclusionRule extends js.Object {
+trait GooglePrivacyDlpV2ExclusionRule extends StObject {
   
   /** Dictionary which defines the rule. */
   var dictionary: js.UndefOr[GooglePrivacyDlpV2Dictionary] = js.native
@@ -28,42 +29,30 @@ object GooglePrivacyDlpV2ExclusionRule {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2ExclusionRuleOps[Self <: GooglePrivacyDlpV2ExclusionRule] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2ExclusionRuleMutableBuilder[Self <: GooglePrivacyDlpV2ExclusionRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDictionary(value: GooglePrivacyDlpV2Dictionary): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeInfoTypes(value: GooglePrivacyDlpV2ExcludeInfoTypes): Self = StObject.set(x, "excludeInfoTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictionary(value: GooglePrivacyDlpV2Dictionary): Self = this.set("dictionary", value.asInstanceOf[js.Any])
+    def setExcludeInfoTypesUndefined: Self = StObject.set(x, "excludeInfoTypes", js.undefined)
     
     @scala.inline
-    def deleteDictionary: Self = this.set("dictionary", js.undefined)
+    def setMatchingType(value: String): Self = StObject.set(x, "matchingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeInfoTypes(value: GooglePrivacyDlpV2ExcludeInfoTypes): Self = this.set("excludeInfoTypes", value.asInstanceOf[js.Any])
+    def setMatchingTypeUndefined: Self = StObject.set(x, "matchingType", js.undefined)
     
     @scala.inline
-    def deleteExcludeInfoTypes: Self = this.set("excludeInfoTypes", js.undefined)
+    def setRegex(value: GooglePrivacyDlpV2Regex): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchingType(value: String): Self = this.set("matchingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchingType: Self = this.set("matchingType", js.undefined)
-    
-    @scala.inline
-    def setRegex(value: GooglePrivacyDlpV2Regex): Self = this.set("regex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegex: Self = this.set("regex", js.undefined)
+    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
   }
 }

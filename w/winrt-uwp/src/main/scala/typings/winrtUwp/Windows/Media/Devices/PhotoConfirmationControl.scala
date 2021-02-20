@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Devices
 
 import typings.winrtUwp.Windows.Media.MediaProperties.MediaPixelFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the photo confirmation settings on a capture device. */
 @js.native
-trait PhotoConfirmationControl extends js.Object {
+trait PhotoConfirmationControl extends StObject {
   
   /** Gets or sets a value indicating whether photo confirmation is enabled. */
   var enabled: Boolean = js.native
@@ -27,27 +28,15 @@ object PhotoConfirmationControl {
   }
   
   @scala.inline
-  implicit class PhotoConfirmationControlOps[Self <: PhotoConfirmationControl] (val x: Self) extends AnyVal {
+  implicit class PhotoConfirmationControlMutableBuilder[Self <: PhotoConfirmationControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPixelFormat(value: MediaPixelFormat): Self = StObject.set(x, "pixelFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPixelFormat(value: MediaPixelFormat): Self = this.set("pixelFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupported(value: Boolean): Self = this.set("supported", value.asInstanceOf[js.Any])
+    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
   }
 }

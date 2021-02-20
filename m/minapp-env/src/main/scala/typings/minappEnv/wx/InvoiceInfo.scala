@@ -1,12 +1,13 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 用户选中的发票列表 */
 @js.native
-trait InvoiceInfo extends js.Object {
+trait InvoiceInfo extends StObject {
   
   /** 所选发票卡券的 cardId */
   var cardId: String = js.native
@@ -26,27 +27,15 @@ object InvoiceInfo {
   }
   
   @scala.inline
-  implicit class InvoiceInfoOps[Self <: InvoiceInfo] (val x: Self) extends AnyVal {
+  implicit class InvoiceInfoMutableBuilder[Self <: InvoiceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptCode(value: String): Self = StObject.set(x, "encryptCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCardId(value: String): Self = this.set("cardId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncryptCode(value: String): Self = this.set("encryptCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherAppId(value: String): Self = this.set("publisherAppId", value.asInstanceOf[js.Any])
+    def setPublisherAppId(value: String): Self = StObject.set(x, "publisherAppId", value.asInstanceOf[js.Any])
   }
 }

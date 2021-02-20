@@ -1,11 +1,12 @@
 package typings.materialTextfield.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HELPERTEXTPERSISTENT extends js.Object {
+trait HELPERTEXTPERSISTENT extends StObject {
   
   var HELPER_TEXT_PERSISTENT: String = js.native
   
@@ -22,27 +23,15 @@ object HELPERTEXTPERSISTENT {
   }
   
   @scala.inline
-  implicit class HELPERTEXTPERSISTENTOps[Self <: HELPERTEXTPERSISTENT] (val x: Self) extends AnyVal {
+  implicit class HELPERTEXTPERSISTENTMutableBuilder[Self <: HELPERTEXTPERSISTENT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHELPER_TEXT_PERSISTENT(value: String): Self = StObject.set(x, "HELPER_TEXT_PERSISTENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHELPER_TEXT_VALIDATION_MSG(value: String): Self = StObject.set(x, "HELPER_TEXT_VALIDATION_MSG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHELPER_TEXT_PERSISTENT(value: String): Self = this.set("HELPER_TEXT_PERSISTENT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHELPER_TEXT_VALIDATION_MSG(value: String): Self = this.set("HELPER_TEXT_VALIDATION_MSG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setROOT(value: String): Self = this.set("ROOT", value.asInstanceOf[js.Any])
+    def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
   }
 }

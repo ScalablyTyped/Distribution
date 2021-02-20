@@ -2,6 +2,7 @@ package typings.openlayers.mod
 
 import typings.openlayers.mod.Tile.State
 import typings.openlayers.mod.events.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +34,7 @@ class Tile protected () extends EventTarget {
     */
   def load(): Unit = js.native
 }
-@JSImport("openlayers", "Tile")
-@js.native
-object Tile extends js.Object {
+object Tile {
   
   type State = Double
 }

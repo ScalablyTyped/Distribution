@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamingConfiguration extends js.Object {
+trait StreamingConfiguration extends StObject {
   
   /**
     * The retention period, in hours, for the Amazon Kinesis data.
@@ -31,36 +32,24 @@ object StreamingConfiguration {
   }
   
   @scala.inline
-  implicit class StreamingConfigurationOps[Self <: StreamingConfiguration] (val x: Self) extends AnyVal {
+  implicit class StreamingConfigurationMutableBuilder[Self <: StreamingConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataRetentionInHours(value: DataRetentionInHours): Self = StObject.set(x, "DataRetentionInHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
     @scala.inline
-    def setDataRetentionInHours(value: DataRetentionInHours): Self = this.set("DataRetentionInHours", value.asInstanceOf[js.Any])
+    def setStreamingNotificationTargets(value: StreamingNotificationTargetList): Self = StObject.set(x, "StreamingNotificationTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("Disabled", value.asInstanceOf[js.Any])
+    def setStreamingNotificationTargetsUndefined: Self = StObject.set(x, "StreamingNotificationTargets", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("Disabled", js.undefined)
-    
-    @scala.inline
-    def setStreamingNotificationTargetsVarargs(value: StreamingNotificationTarget*): Self = this.set("StreamingNotificationTargets", js.Array(value :_*))
-    
-    @scala.inline
-    def setStreamingNotificationTargets(value: StreamingNotificationTargetList): Self = this.set("StreamingNotificationTargets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamingNotificationTargets: Self = this.set("StreamingNotificationTargets", js.undefined)
+    def setStreamingNotificationTargetsVarargs(value: StreamingNotificationTarget*): Self = StObject.set(x, "StreamingNotificationTargets", js.Array(value :_*))
   }
 }

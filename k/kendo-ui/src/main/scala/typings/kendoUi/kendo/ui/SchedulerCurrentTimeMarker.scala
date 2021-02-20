@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerCurrentTimeMarker extends js.Object {
+trait SchedulerCurrentTimeMarker extends StObject {
   
   var updateInterval: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object SchedulerCurrentTimeMarker {
   }
   
   @scala.inline
-  implicit class SchedulerCurrentTimeMarkerOps[Self <: SchedulerCurrentTimeMarker] (val x: Self) extends AnyVal {
+  implicit class SchedulerCurrentTimeMarkerMutableBuilder[Self <: SchedulerCurrentTimeMarker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUpdateIntervalUndefined: Self = StObject.set(x, "updateInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseLocalTimezone(value: Boolean): Self = StObject.set(x, "useLocalTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateInterval(value: Double): Self = this.set("updateInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateInterval: Self = this.set("updateInterval", js.undefined)
-    
-    @scala.inline
-    def setUseLocalTimezone(value: Boolean): Self = this.set("useLocalTimezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLocalTimezone: Self = this.set("useLocalTimezone", js.undefined)
+    def setUseLocalTimezoneUndefined: Self = StObject.set(x, "useLocalTimezone", js.undefined)
   }
 }

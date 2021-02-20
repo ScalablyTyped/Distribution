@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGrantsResponse extends js.Object {
+trait ListGrantsResponse extends StObject {
   
   /**
     * A list of grants.
@@ -31,39 +32,27 @@ object ListGrantsResponse {
   }
   
   @scala.inline
-  implicit class ListGrantsResponseOps[Self <: ListGrantsResponse] (val x: Self) extends AnyVal {
+  implicit class ListGrantsResponseMutableBuilder[Self <: ListGrantsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrants(value: GrantList): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantsVarargs(value: GrantListEntry*): Self = StObject.set(x, "Grants", js.Array(value :_*))
     
     @scala.inline
-    def setGrantsVarargs(value: GrantListEntry*): Self = this.set("Grants", js.Array(value :_*))
+    def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrants(value: GrantList): Self = this.set("Grants", value.asInstanceOf[js.Any])
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def deleteGrants: Self = this.set("Grants", js.undefined)
+    def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: MarkerType): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
-    
-    @scala.inline
-    def setTruncated(value: BooleanType): Self = this.set("Truncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncated: Self = this.set("Truncated", js.undefined)
+    def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
   }
 }

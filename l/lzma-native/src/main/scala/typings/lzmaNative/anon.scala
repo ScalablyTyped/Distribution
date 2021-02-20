@@ -2,16 +2,15 @@ package typings.lzmaNative
 
 import typings.lzmaNative.mod.Preset
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Compress extends js.Object {
+  trait Compress extends StObject {
     
     def compress(buf: String, mode: Preset, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
     def compress(

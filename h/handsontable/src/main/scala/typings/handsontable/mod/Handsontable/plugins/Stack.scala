@@ -1,11 +1,12 @@
 package typings.handsontable.mod.Handsontable.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stack extends js.Object {
+trait Stack extends StObject {
   
   def isEmpty(): Boolean = js.native
   
@@ -35,39 +36,27 @@ object Stack {
   }
   
   @scala.inline
-  implicit class StackOps[Self <: Stack] (val x: Self) extends AnyVal {
+  implicit class StackMutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = this.set("isEmpty", js.Any.fromFunction0(value))
+    def setPeek(value: () => js.Any): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    def setPop(value: () => js.Any): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPeek(value: () => js.Any): Self = this.set("peek", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPop(value: () => js.Any): Self = this.set("pop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPush(value: js.Any => Unit): Self = this.set("push", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSize(value: () => Double): Self = this.set("size", js.Any.fromFunction0(value))
+    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
   }
 }

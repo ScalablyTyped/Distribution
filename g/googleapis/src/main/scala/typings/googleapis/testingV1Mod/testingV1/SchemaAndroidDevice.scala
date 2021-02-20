@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single Android device.
   */
 @js.native
-trait SchemaAndroidDevice extends js.Object {
+trait SchemaAndroidDevice extends StObject {
   
   /**
     * Required. The id of the Android device to be used. Use the
@@ -43,42 +44,30 @@ object SchemaAndroidDevice {
   }
   
   @scala.inline
-  implicit class SchemaAndroidDeviceOps[Self <: SchemaAndroidDevice] (val x: Self) extends AnyVal {
+  implicit class SchemaAndroidDeviceMutableBuilder[Self <: SchemaAndroidDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidModelId(value: String): Self = StObject.set(x, "androidModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidModelIdUndefined: Self = StObject.set(x, "androidModelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidVersionId(value: String): Self = StObject.set(x, "androidVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidModelId(value: String): Self = this.set("androidModelId", value.asInstanceOf[js.Any])
+    def setAndroidVersionIdUndefined: Self = StObject.set(x, "androidVersionId", js.undefined)
     
     @scala.inline
-    def deleteAndroidModelId: Self = this.set("androidModelId", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidVersionId(value: String): Self = this.set("androidVersionId", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteAndroidVersionId: Self = this.set("androidVersionId", js.undefined)
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
-    
-    @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

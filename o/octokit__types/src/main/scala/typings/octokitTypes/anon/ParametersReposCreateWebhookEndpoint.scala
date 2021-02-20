@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ReposCreateWebhookEndpoint
 import typings.octokitTypes.endpointsMod.ReposCreateWebhookRequestOptions
 import typings.octokitTypes.endpointsMod.ReposCreateWebhookResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReposCreateWebhookEndpoint extends js.Object {
+trait ParametersReposCreateWebhookEndpoint extends StObject {
   
   var parameters: ReposCreateWebhookEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersReposCreateWebhookEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReposCreateWebhookEndpointOps[Self <: ParametersReposCreateWebhookEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReposCreateWebhookEndpointMutableBuilder[Self <: ParametersReposCreateWebhookEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReposCreateWebhookEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ReposCreateWebhookRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReposCreateWebhookEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ReposCreateWebhookRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposCreateWebhookResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ReposCreateWebhookResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

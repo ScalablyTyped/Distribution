@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object AudioProcessingEventInit {
   }
   
   @scala.inline
-  implicit class AudioProcessingEventInitOps[Self <: AudioProcessingEventInit] (val x: Self) extends AnyVal {
+  implicit class AudioProcessingEventInitMutableBuilder[Self <: AudioProcessingEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputBuffer(value: AudioBuffer): Self = StObject.set(x, "inputBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutputBuffer(value: AudioBuffer): Self = StObject.set(x, "outputBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputBuffer(value: AudioBuffer): Self = this.set("inputBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputBuffer(value: AudioBuffer): Self = this.set("outputBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaybackTime(value: Double): Self = this.set("playbackTime", value.asInstanceOf[js.Any])
+    def setPlaybackTime(value: Double): Self = StObject.set(x, "playbackTime", value.asInstanceOf[js.Any])
   }
 }

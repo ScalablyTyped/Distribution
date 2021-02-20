@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for the iOS details resource.
   */
 @js.native
-trait SchemaInstanceIosDetails extends js.Object {
+trait SchemaInstanceIosDetails extends StObject {
   
   /**
     * Bundle identifier.
@@ -57,60 +58,48 @@ object SchemaInstanceIosDetails {
   }
   
   @scala.inline
-  implicit class SchemaInstanceIosDetailsOps[Self <: SchemaInstanceIosDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceIosDetailsMutableBuilder[Self <: SchemaInstanceIosDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleIdentifier(value: String): Self = StObject.set(x, "bundleIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdentifierUndefined: Self = StObject.set(x, "bundleIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItunesAppId(value: String): Self = StObject.set(x, "itunesAppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleIdentifier(value: String): Self = this.set("bundleIdentifier", value.asInstanceOf[js.Any])
+    def setItunesAppIdUndefined: Self = StObject.set(x, "itunesAppId", js.undefined)
     
     @scala.inline
-    def deleteBundleIdentifier: Self = this.set("bundleIdentifier", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItunesAppId(value: String): Self = this.set("itunesAppId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteItunesAppId: Self = this.set("itunesAppId", js.undefined)
+    def setPreferredForIpad(value: Boolean): Self = StObject.set(x, "preferredForIpad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPreferredForIpadUndefined: Self = StObject.set(x, "preferredForIpad", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPreferredForIphone(value: Boolean): Self = StObject.set(x, "preferredForIphone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredForIpad(value: Boolean): Self = this.set("preferredForIpad", value.asInstanceOf[js.Any])
+    def setPreferredForIphoneUndefined: Self = StObject.set(x, "preferredForIphone", js.undefined)
     
     @scala.inline
-    def deletePreferredForIpad: Self = this.set("preferredForIpad", js.undefined)
+    def setSupportIpad(value: Boolean): Self = StObject.set(x, "supportIpad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredForIphone(value: Boolean): Self = this.set("preferredForIphone", value.asInstanceOf[js.Any])
+    def setSupportIpadUndefined: Self = StObject.set(x, "supportIpad", js.undefined)
     
     @scala.inline
-    def deletePreferredForIphone: Self = this.set("preferredForIphone", js.undefined)
+    def setSupportIphone(value: Boolean): Self = StObject.set(x, "supportIphone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportIpad(value: Boolean): Self = this.set("supportIpad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportIpad: Self = this.set("supportIpad", js.undefined)
-    
-    @scala.inline
-    def setSupportIphone(value: Boolean): Self = this.set("supportIphone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportIphone: Self = this.set("supportIphone", js.undefined)
+    def setSupportIphoneUndefined: Self = StObject.set(x, "supportIphone", js.undefined)
   }
 }

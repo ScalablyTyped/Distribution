@@ -8,18 +8,18 @@ import typings.pulumiQuery.interfacesMod.AsyncQueryableGrouping
 import typings.pulumiQuery.interfacesMod.Operator
 import typings.pulumiQuery.interfacesMod.OrderKey
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/query/asyncQueryable", JSImport.Namespace)
-@js.native
-object asyncQueryableMod extends js.Object {
+object asyncQueryableMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.pulumiQuery.interfacesMod.AsyncIterator because Already inherited
   - typings.pulumiQuery.interfacesMod.AsyncIterableIterator because Already inherited
-  - typings.pulumiQuery.interfacesMod.AsyncQueryable because var conflicts: `return`, `throw`. Inlined filter, flatMap, flatMap, map, skip, skipWhile, take, takeWhile, join, groupJoin, concat, reverse, orderBy, orderByDescending, groupBy, groupBy, distinct, union, intersect, except, first, first, firstOrDefault, firstOrDefault, last, last, lastOrDefault, lastOrDefault, single, single, singleOrDefault, singleOrDefault, elementAt, elementAtOrDefault, elementAtOrDefault, defaultIfEmpty, any, any, all, contains, count, count, sum, sum, min, min, max, max, average, average, aggregate, toArray, toMap, toMap, ofType, forEach, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe */ @js.native
+  - typings.pulumiQuery.interfacesMod.AsyncQueryable because var conflicts: `return`, `throw`. Inlined filter, flatMap, flatMap, map, skip, skipWhile, take, takeWhile, join, groupJoin, concat, reverse, orderBy, orderByDescending, groupBy, groupBy, distinct, union, intersect, except, first, first, firstOrDefault, firstOrDefault, last, last, lastOrDefault, lastOrDefault, single, single, singleOrDefault, singleOrDefault, elementAt, elementAtOrDefault, elementAtOrDefault, defaultIfEmpty, any, any, all, contains, count, count, sum, sum, min, min, max, max, average, average, aggregate, toArray, toMap, toMap, ofType, forEach, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe */ @JSImport("@pulumi/query/asyncQueryable", "AsyncQueryableImpl")
+  @js.native
   class AsyncQueryableImpl[TSource] protected () extends IterableBase[TSource] {
     protected def this(source: AsyncIterableIterator[TSource]) = this()
     
@@ -416,16 +416,20 @@ object asyncQueryableMod extends js.Object {
     def union(second: AsyncQuerySource[TSource]): AsyncQueryable[TSource] = js.native
   }
   /* static members */
-  @js.native
-  object AsyncQueryableImpl extends js.Object {
+  object AsyncQueryableImpl {
     
+    @JSImport("@pulumi/query/asyncQueryable", "AsyncQueryableImpl.from")
+    @js.native
     def from[TSource](source: AsyncQuerySource[TSource]): AsyncQueryableImpl[TSource] = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.pulumiQuery.interfacesMod.AsyncIterator because Already inherited
   - typings.pulumiQuery.interfacesMod.AsyncIterableIterator because Already inherited
-  - typings.pulumiQuery.interfacesMod.GroupedAsyncIterableIterator because var conflicts: `return`, `throw`. Inlined key */ @js.native
+  - typings.pulumiQuery.interfacesMod.AsyncQueryable because Already inherited
+  - typings.pulumiQuery.interfacesMod.GroupedAsyncIterableIterator because var conflicts: `return`, `throw`. Inlined key
+  - typings.pulumiQuery.interfacesMod.AsyncQueryableGrouping because var conflicts: `return`, `throw`. Inlined  */ @JSImport("@pulumi/query/asyncQueryable", "GroupingImpl")
+  @js.native
   class GroupingImpl[TKey, TSource] protected () extends AsyncQueryableImpl[TSource] {
     def this(key: TKey, group: AsyncIterableIterator[TSource]) = this()
     

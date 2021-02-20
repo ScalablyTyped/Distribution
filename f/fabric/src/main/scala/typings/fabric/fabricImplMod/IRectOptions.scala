@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object IRectOptions {
   }
   
   @scala.inline
-  implicit class IRectOptionsOps[Self <: IRectOptions] (val x: Self) extends AnyVal {
+  implicit class IRectOptionsMutableBuilder[Self <: IRectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRx(value: Double): Self = this.set("rx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRx: Self = this.set("rx", js.undefined)
-    
-    @scala.inline
-    def setRy(value: Double): Self = this.set("ry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRy: Self = this.set("ry", js.undefined)
+    def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
   }
 }

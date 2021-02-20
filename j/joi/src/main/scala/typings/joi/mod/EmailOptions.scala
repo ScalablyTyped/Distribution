@@ -1,12 +1,13 @@
 package typings.joi.mod
 
 import typings.joi.joiBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailOptions extends js.Object {
+trait EmailOptions extends StObject {
   
   /**
     * If `true`, Unicode characters are permitted
@@ -59,57 +60,45 @@ object EmailOptions {
   }
   
   @scala.inline
-  implicit class EmailOptionsOps[Self <: EmailOptions] (val x: Self) extends AnyVal {
+  implicit class EmailOptionsMutableBuilder[Self <: EmailOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUnicodeUndefined: Self = StObject.set(x, "allowUnicode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreLength(value: Boolean): Self = StObject.set(x, "ignoreLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUnicode(value: Boolean): Self = this.set("allowUnicode", value.asInstanceOf[js.Any])
+    def setIgnoreLengthUndefined: Self = StObject.set(x, "ignoreLength", js.undefined)
     
     @scala.inline
-    def deleteAllowUnicode: Self = this.set("allowUnicode", js.undefined)
+    def setMinDomainSegments(value: Double): Self = StObject.set(x, "minDomainSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreLength(value: Boolean): Self = this.set("ignoreLength", value.asInstanceOf[js.Any])
+    def setMinDomainSegmentsUndefined: Self = StObject.set(x, "minDomainSegments", js.undefined)
     
     @scala.inline
-    def deleteIgnoreLength: Self = this.set("ignoreLength", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDomainSegments(value: Double): Self = this.set("minDomainSegments", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteMinDomainSegments: Self = this.set("minDomainSegments", js.undefined)
+    def setSeparator(value: String | js.Array[String]): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setSeparatorVarargs(value: String*): Self = StObject.set(x, "separator", js.Array(value :_*))
     
     @scala.inline
-    def setSeparatorVarargs(value: String*): Self = this.set("separator", js.Array(value :_*))
+    def setTlds(value: TopLevelDomainOptions | `false`): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparator(value: String | js.Array[String]): Self = this.set("separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeparator: Self = this.set("separator", js.undefined)
-    
-    @scala.inline
-    def setTlds(value: TopLevelDomainOptions | `false`): Self = this.set("tlds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTlds: Self = this.set("tlds", js.undefined)
+    def setTldsUndefined: Self = StObject.set(x, "tlds", js.undefined)
   }
 }

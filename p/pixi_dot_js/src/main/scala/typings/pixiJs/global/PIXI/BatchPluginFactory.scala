@@ -1,6 +1,7 @@
 package typings.pixiJs.global.PIXI
 
 import typings.pixiJs.anon.Fragment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class BatchPluginFactory ()
   extends typings.pixiJs.PIXI.BatchPluginFactory
-/* static members */
-@JSGlobal("PIXI.BatchPluginFactory")
-@js.native
-object BatchPluginFactory extends js.Object {
+object BatchPluginFactory {
   
   /**
     * Create a new BatchRenderer plugin for Renderer. this convenience can provide an easy way
@@ -48,7 +46,12 @@ object BatchPluginFactory extends js.Object {
     * @param {object} [options.geometryClass=PIXI.BatchGeometry]
     * @return {*} New batch renderer plugin
     */
+  /* static member */
+  @JSGlobal("PIXI.BatchPluginFactory.create")
+  @js.native
   def create(): js.Any = js.native
+  @JSGlobal("PIXI.BatchPluginFactory.create")
+  @js.native
   def create(options: Fragment): js.Any = js.native
   
   /**
@@ -58,6 +61,9 @@ object BatchPluginFactory extends js.Object {
     * @type {string}
     * @constant
     */
+  /* static member */
+  @JSGlobal("PIXI.BatchPluginFactory.defaultFragmentTemplate")
+  @js.native
   val defaultFragmentTemplate: String = js.native
   
   /**
@@ -67,5 +73,8 @@ object BatchPluginFactory extends js.Object {
     * @type {string}
     * @constant
     */
+  /* static member */
+  @JSGlobal("PIXI.BatchPluginFactory.defaultVertexSrc")
+  @js.native
   val defaultVertexSrc: String = js.native
 }

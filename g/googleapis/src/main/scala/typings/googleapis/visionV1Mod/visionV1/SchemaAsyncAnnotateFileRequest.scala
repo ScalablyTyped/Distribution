@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An offline file annotation request.
   */
 @js.native
-trait SchemaAsyncAnnotateFileRequest extends js.Object {
+trait SchemaAsyncAnnotateFileRequest extends StObject {
   
   /**
     * Required. Requested features.
@@ -39,45 +40,33 @@ object SchemaAsyncAnnotateFileRequest {
   }
   
   @scala.inline
-  implicit class SchemaAsyncAnnotateFileRequestOps[Self <: SchemaAsyncAnnotateFileRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAsyncAnnotateFileRequestMutableBuilder[Self <: SchemaAsyncAnnotateFileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatures(value: js.Array[SchemaFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeaturesVarargs(value: SchemaFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: SchemaFeature*): Self = this.set("features", js.Array(value :_*))
+    def setImageContext(value: SchemaImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[SchemaFeature]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setImageContextUndefined: Self = StObject.set(x, "imageContext", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setInputConfig(value: SchemaInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageContext(value: SchemaImageContext): Self = this.set("imageContext", value.asInstanceOf[js.Any])
+    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
     @scala.inline
-    def deleteImageContext: Self = this.set("imageContext", js.undefined)
+    def setOutputConfig(value: SchemaOutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfig(value: SchemaInputConfig): Self = this.set("inputConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputConfig: Self = this.set("inputConfig", js.undefined)
-    
-    @scala.inline
-    def setOutputConfig(value: SchemaOutputConfig): Self = this.set("outputConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputConfig: Self = this.set("outputConfig", js.undefined)
+    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
   }
 }

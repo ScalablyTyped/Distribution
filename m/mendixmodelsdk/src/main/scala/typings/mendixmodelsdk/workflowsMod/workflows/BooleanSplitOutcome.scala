@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,16 +46,20 @@ class BooleanSplitOutcome protected () extends ExclusiveSplitOutcome {
   @JSName("value")
   val value_FBooleanSplitOutcome: Boolean = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.BooleanSplitOutcome")
-@js.native
-object BooleanSplitOutcome extends js.Object {
+object BooleanSplitOutcome {
+  
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.BooleanSplitOutcome")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new BooleanSplitOutcome instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.BooleanSplitOutcome.create")
+  @js.native
   def create(model: IModel): BooleanSplitOutcome = js.native
   
   /**
@@ -65,9 +70,22 @@ object BooleanSplitOutcome extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.BooleanSplitOutcome.createIn")
+  @js.native
   def createIn(container: ExclusiveSplitActivity): BooleanSplitOutcome = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.BooleanSplitOutcome.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.BooleanSplitOutcome.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -1,5 +1,6 @@
 package typings.cqrsDomain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // endregion
 // region defineAggregate
 @js.native
-trait DefineAggregateOptions extends js.Object {
+trait DefineAggregateOptions extends StObject {
   
   /**
     * optional, default false
@@ -61,66 +62,54 @@ object DefineAggregateOptions {
   }
   
   @scala.inline
-  implicit class DefineAggregateOptionsOps[Self <: DefineAggregateOptions] (val x: Self) extends AnyVal {
+  implicit class DefineAggregateOptionsMutableBuilder[Self <: DefineAggregateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyLastEvent(value: Boolean): Self = StObject.set(x, "applyLastEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyLastEventUndefined: Self = StObject.set(x, "applyLastEvent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultCommandPayload(value: String): Self = StObject.set(x, "defaultCommandPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyLastEvent(value: Boolean): Self = this.set("applyLastEvent", value.asInstanceOf[js.Any])
+    def setDefaultCommandPayloadUndefined: Self = StObject.set(x, "defaultCommandPayload", js.undefined)
     
     @scala.inline
-    def deleteApplyLastEvent: Self = this.set("applyLastEvent", js.undefined)
+    def setDefaultEventPayload(value: String): Self = StObject.set(x, "defaultEventPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCommandPayload(value: String): Self = this.set("defaultCommandPayload", value.asInstanceOf[js.Any])
+    def setDefaultEventPayloadUndefined: Self = StObject.set(x, "defaultEventPayload", js.undefined)
     
     @scala.inline
-    def deleteDefaultCommandPayload: Self = this.set("defaultCommandPayload", js.undefined)
+    def setDefaultPreConditionPayload(value: String): Self = StObject.set(x, "defaultPreConditionPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEventPayload(value: String): Self = this.set("defaultEventPayload", value.asInstanceOf[js.Any])
+    def setDefaultPreConditionPayloadUndefined: Self = StObject.set(x, "defaultPreConditionPayload", js.undefined)
     
     @scala.inline
-    def deleteDefaultEventPayload: Self = this.set("defaultEventPayload", js.undefined)
+    def setDisablePersistence(value: Boolean): Self = StObject.set(x, "disablePersistence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPreConditionPayload(value: String): Self = this.set("defaultPreConditionPayload", value.asInstanceOf[js.Any])
+    def setDisablePersistenceUndefined: Self = StObject.set(x, "disablePersistence", js.undefined)
     
     @scala.inline
-    def deleteDefaultPreConditionPayload: Self = this.set("defaultPreConditionPayload", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePersistence(value: Boolean): Self = this.set("disablePersistence", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDisablePersistence: Self = this.set("disablePersistence", js.undefined)
+    def setSkipHistory(value: Boolean): Self = StObject.set(x, "skipHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSkipHistoryUndefined: Self = StObject.set(x, "skipHistory", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipHistory(value: Boolean): Self = this.set("skipHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipHistory: Self = this.set("skipHistory", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

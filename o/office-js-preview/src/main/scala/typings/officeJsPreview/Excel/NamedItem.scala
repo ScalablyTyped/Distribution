@@ -11,6 +11,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Boolean
 import typings.officeJsPreview.officeJsPreviewStrings.Double
 import typings.officeJsPreview.officeJsPreviewStrings.Error
 import typings.officeJsPreview.officeJsPreviewStrings.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

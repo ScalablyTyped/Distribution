@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAppImageConfigResponse extends js.Object {
+trait DescribeAppImageConfigResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AppImageConfig.
@@ -41,48 +42,36 @@ object DescribeAppImageConfigResponse {
   }
   
   @scala.inline
-  implicit class DescribeAppImageConfigResponseOps[Self <: DescribeAppImageConfigResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAppImageConfigResponseMutableBuilder[Self <: DescribeAppImageConfigResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppImageConfigArn(value: AppImageConfigArn): Self = StObject.set(x, "AppImageConfigArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppImageConfigArnUndefined: Self = StObject.set(x, "AppImageConfigArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppImageConfigName(value: AppImageConfigName): Self = StObject.set(x, "AppImageConfigName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppImageConfigArn(value: AppImageConfigArn): Self = this.set("AppImageConfigArn", value.asInstanceOf[js.Any])
+    def setAppImageConfigNameUndefined: Self = StObject.set(x, "AppImageConfigName", js.undefined)
     
     @scala.inline
-    def deleteAppImageConfigArn: Self = this.set("AppImageConfigArn", js.undefined)
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppImageConfigName(value: AppImageConfigName): Self = this.set("AppImageConfigName", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteAppImageConfigName: Self = this.set("AppImageConfigName", js.undefined)
+    def setKernelGatewayImageConfig(value: KernelGatewayImageConfig): Self = StObject.set(x, "KernelGatewayImageConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setKernelGatewayImageConfigUndefined: Self = StObject.set(x, "KernelGatewayImageConfig", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelGatewayImageConfig(value: KernelGatewayImageConfig): Self = this.set("KernelGatewayImageConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKernelGatewayImageConfig: Self = this.set("KernelGatewayImageConfig", js.undefined)
-    
-    @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
   }
 }

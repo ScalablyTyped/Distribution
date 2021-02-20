@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,27 +59,15 @@ object XCellRangeFormula {
   }
   
   @scala.inline
-  implicit class XCellRangeFormulaOps[Self <: XCellRangeFormula] (val x: Self) extends AnyVal {
+  implicit class XCellRangeFormulaMutableBuilder[Self <: XCellRangeFormula] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormulaArray(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "FormulaArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFormulaArray(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getFormulaArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormulaArray(value: SafeArray[SafeArray[String]]): Self = this.set("FormulaArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetFormulaArray(value: () => SafeArray[SafeArray[String]]): Self = this.set("getFormulaArray", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetFormulaArray(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = this.set("setFormulaArray", js.Any.fromFunction1(value))
+    def setSetFormulaArray(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = StObject.set(x, "setFormulaArray", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A request object used to create a DoubleClick Search report.
   */
 @js.native
-trait SchemaReportApiColumnSpec extends js.Object {
+trait SchemaReportApiColumnSpec extends StObject {
   
   /**
     * Name of a DoubleClick Search column to include in the report.
@@ -92,78 +93,66 @@ object SchemaReportApiColumnSpec {
   }
   
   @scala.inline
-  implicit class SchemaReportApiColumnSpecOps[Self <: SchemaReportApiColumnSpec] (val x: Self) extends AnyVal {
+  implicit class SchemaReportApiColumnSpecMutableBuilder[Self <: SchemaReportApiColumnSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomDimensionName(value: String): Self = StObject.set(x, "customDimensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnName(value: String): Self = this.set("columnName", value.asInstanceOf[js.Any])
+    def setCustomDimensionNameUndefined: Self = StObject.set(x, "customDimensionName", js.undefined)
     
     @scala.inline
-    def deleteColumnName: Self = this.set("columnName", js.undefined)
+    def setCustomMetricName(value: String): Self = StObject.set(x, "customMetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDimensionName(value: String): Self = this.set("customDimensionName", value.asInstanceOf[js.Any])
+    def setCustomMetricNameUndefined: Self = StObject.set(x, "customMetricName", js.undefined)
     
     @scala.inline
-    def deleteCustomDimensionName: Self = this.set("customDimensionName", js.undefined)
+    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMetricName(value: String): Self = this.set("customMetricName", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def deleteCustomMetricName: Self = this.set("customMetricName", js.undefined)
+    def setGroupByColumn(value: Boolean): Self = StObject.set(x, "groupByColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setGroupByColumnUndefined: Self = StObject.set(x, "groupByColumn", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByColumn(value: Boolean): Self = this.set("groupByColumn", value.asInstanceOf[js.Any])
+    def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
     
     @scala.inline
-    def deleteGroupByColumn: Self = this.set("groupByColumn", js.undefined)
+    def setPlatformSource(value: String): Self = StObject.set(x, "platformSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderText(value: String): Self = this.set("headerText", value.asInstanceOf[js.Any])
+    def setPlatformSourceUndefined: Self = StObject.set(x, "platformSource", js.undefined)
     
     @scala.inline
-    def deleteHeaderText: Self = this.set("headerText", js.undefined)
+    def setProductReportPerspective(value: String): Self = StObject.set(x, "productReportPerspective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformSource(value: String): Self = this.set("platformSource", value.asInstanceOf[js.Any])
+    def setProductReportPerspectiveUndefined: Self = StObject.set(x, "productReportPerspective", js.undefined)
     
     @scala.inline
-    def deletePlatformSource: Self = this.set("platformSource", js.undefined)
+    def setSavedColumnName(value: String): Self = StObject.set(x, "savedColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductReportPerspective(value: String): Self = this.set("productReportPerspective", value.asInstanceOf[js.Any])
+    def setSavedColumnNameUndefined: Self = StObject.set(x, "savedColumnName", js.undefined)
     
     @scala.inline
-    def deleteProductReportPerspective: Self = this.set("productReportPerspective", js.undefined)
+    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavedColumnName(value: String): Self = this.set("savedColumnName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSavedColumnName: Self = this.set("savedColumnName", js.undefined)
-    
-    @scala.inline
-    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

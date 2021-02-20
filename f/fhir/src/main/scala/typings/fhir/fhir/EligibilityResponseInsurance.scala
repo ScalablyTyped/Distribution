@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,39 +35,27 @@ object EligibilityResponseInsurance {
   }
   
   @scala.inline
-  implicit class EligibilityResponseInsuranceOps[Self <: EligibilityResponseInsurance] (val x: Self) extends AnyVal {
+  implicit class EligibilityResponseInsuranceMutableBuilder[Self <: EligibilityResponseInsurance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBenefitBalance(value: js.Array[EligibilityResponseInsuranceBenefitBalance]): Self = StObject.set(x, "benefitBalance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBenefitBalanceUndefined: Self = StObject.set(x, "benefitBalance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBenefitBalanceVarargs(value: EligibilityResponseInsuranceBenefitBalance*): Self = StObject.set(x, "benefitBalance", js.Array(value :_*))
     
     @scala.inline
-    def setBenefitBalanceVarargs(value: EligibilityResponseInsuranceBenefitBalance*): Self = this.set("benefitBalance", js.Array(value :_*))
+    def setContract(value: Reference): Self = StObject.set(x, "contract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBenefitBalance(value: js.Array[EligibilityResponseInsuranceBenefitBalance]): Self = this.set("benefitBalance", value.asInstanceOf[js.Any])
+    def setContractUndefined: Self = StObject.set(x, "contract", js.undefined)
     
     @scala.inline
-    def deleteBenefitBalance: Self = this.set("benefitBalance", js.undefined)
+    def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContract(value: Reference): Self = this.set("contract", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContract: Self = this.set("contract", js.undefined)
-    
-    @scala.inline
-    def setCoverage(value: Reference): Self = this.set("coverage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoverage: Self = this.set("coverage", js.undefined)
+    def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
   }
 }

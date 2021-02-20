@@ -1,5 +1,6 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.swiper.swiperStrings.hashChange
   - typings.swiper.swiperStrings.hashSet
 */
-trait HashNavigationEvent extends js.Object
+trait HashNavigationEvent extends StObject
 object HashNavigationEvent {
   
   @scala.inline

@@ -1,15 +1,15 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "vow")
-@js.native
-object vow extends js.Object {
+object vow {
   
+  @JSImport("yandex-maps", "vow.Deferred")
   @js.native
-  class Deferred () extends js.Object {
+  class Deferred () extends StObject {
     
     def promise(): Promise = js.native
     
@@ -18,8 +18,9 @@ object vow extends js.Object {
     def resolve(value: js.Object): Unit = js.native
   }
   
+  @JSImport("yandex-maps", "vow.Promise")
   @js.native
-  class Promise () extends js.Object {
+  class Promise () extends StObject {
     def this(resolver: js.Function0[Unit]) = this()
     
     def done(): Unit = js.native

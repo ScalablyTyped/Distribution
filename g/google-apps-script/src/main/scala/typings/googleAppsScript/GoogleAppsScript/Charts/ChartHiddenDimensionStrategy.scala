@@ -1,17 +1,18 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartHiddenDimensionStrategy extends js.Object
+sealed trait ChartHiddenDimensionStrategy extends StObject
 /**
   * An enumeration of how hidden dimensions in a source are expressed in a chart.
   */
 @JSGlobal("GoogleAppsScript.Charts.ChartHiddenDimensionStrategy")
 @js.native
-object ChartHiddenDimensionStrategy extends js.Object {
+object ChartHiddenDimensionStrategy extends StObject {
   
   @js.native
   sealed trait IGNORE_BOTH extends ChartHiddenDimensionStrategy

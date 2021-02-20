@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttemptDetail extends js.Object {
+trait AttemptDetail extends StObject {
   
   /**
     * Details about the container in this job attempt.
@@ -36,42 +37,30 @@ object AttemptDetail {
   }
   
   @scala.inline
-  implicit class AttemptDetailOps[Self <: AttemptDetail] (val x: Self) extends AnyVal {
+  implicit class AttemptDetailMutableBuilder[Self <: AttemptDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: AttemptContainerDetail): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartedAt(value: Long): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: AttemptContainerDetail): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedAt(value: Long): Self = this.set("startedAt", value.asInstanceOf[js.Any])
+    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
     @scala.inline
-    def deleteStartedAt: Self = this.set("startedAt", js.undefined)
+    def setStoppedAt(value: Long): Self = StObject.set(x, "stoppedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusReason(value: String): Self = this.set("statusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
-    
-    @scala.inline
-    def setStoppedAt(value: Long): Self = this.set("stoppedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoppedAt: Self = this.set("stoppedAt", js.undefined)
+    def setStoppedAtUndefined: Self = StObject.set(x, "stoppedAt", js.undefined)
   }
 }

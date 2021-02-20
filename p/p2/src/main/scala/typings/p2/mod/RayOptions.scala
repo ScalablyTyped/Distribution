@@ -1,11 +1,12 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RayOptions extends js.Object {
+trait RayOptions extends StObject {
   
   var callback: js.UndefOr[js.Function1[/* result */ RaycastResult, Unit]] = js.native
   
@@ -32,60 +33,48 @@ object RayOptions {
   }
   
   @scala.inline
-  implicit class RayOptionsOps[Self <: RayOptions] (val x: Self) extends AnyVal {
+  implicit class RayOptionsMutableBuilder[Self <: RayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: /* result */ RaycastResult => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckCollisionResponse(value: Boolean): Self = StObject.set(x, "checkCollisionResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: js.Tuple2[Double, Double]): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setCheckCollisionResponseUndefined: Self = StObject.set(x, "checkCollisionResponse", js.undefined)
     
     @scala.inline
-    def setTo(value: js.Tuple2[Double, Double]): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setCollisionGroup(value: Double): Self = StObject.set(x, "collisionGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: /* result */ RaycastResult => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setCollisionGroupUndefined: Self = StObject.set(x, "collisionGroup", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setCollisionMask(value: Double): Self = StObject.set(x, "collisionMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckCollisionResponse(value: Boolean): Self = this.set("checkCollisionResponse", value.asInstanceOf[js.Any])
+    def setCollisionMaskUndefined: Self = StObject.set(x, "collisionMask", js.undefined)
     
     @scala.inline
-    def deleteCheckCollisionResponse: Self = this.set("checkCollisionResponse", js.undefined)
+    def setFrom(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollisionGroup(value: Double): Self = this.set("collisionGroup", value.asInstanceOf[js.Any])
+    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollisionGroup: Self = this.set("collisionGroup", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setCollisionMask(value: Double): Self = this.set("collisionMask", value.asInstanceOf[js.Any])
+    def setSkipBackfaces(value: Boolean): Self = StObject.set(x, "skipBackfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollisionMask: Self = this.set("collisionMask", js.undefined)
+    def setSkipBackfacesUndefined: Self = StObject.set(x, "skipBackfaces", js.undefined)
     
     @scala.inline
-    def setMode(value: Double): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setSkipBackfaces(value: Boolean): Self = this.set("skipBackfaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipBackfaces: Self = this.set("skipBackfaces", js.undefined)
+    def setTo(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

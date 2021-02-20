@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirewallStatus extends js.Object {
+trait FirewallStatus extends StObject {
   
   /**
     * The configuration sync state for the firewall. This summarizes the sync states reported in the Config settings for all of the Availability Zones where you have configured the firewall.  When you create a firewall or update its configuration, for example by adding a rule group to its firewall policy, Network Firewall distributes the configuration changes to all zones where the firewall is in use. This summary indicates whether the configuration changes have been applied everywhere.  This status must be IN_SYNC for the firewall to be ready for use, but it doesn't indicate that the firewall is ready. The Status setting indicates firewall readiness.
@@ -31,30 +32,18 @@ object FirewallStatus {
   }
   
   @scala.inline
-  implicit class FirewallStatusOps[Self <: FirewallStatus] (val x: Self) extends AnyVal {
+  implicit class FirewallStatusMutableBuilder[Self <: FirewallStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSyncStateSummary(value: ConfigurationSyncState): Self = StObject.set(x, "ConfigurationSyncStateSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatus(value: FirewallStatusValue): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSyncStates(value: SyncStates): Self = StObject.set(x, "SyncStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationSyncStateSummary(value: ConfigurationSyncState): Self = this.set("ConfigurationSyncStateSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: FirewallStatusValue): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSyncStates(value: SyncStates): Self = this.set("SyncStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncStates: Self = this.set("SyncStates", js.undefined)
+    def setSyncStatesUndefined: Self = StObject.set(x, "SyncStates", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackageMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CmafPackageCreateOrUpdateParameters extends js.Object {
+trait CmafPackageCreateOrUpdateParameters extends StObject {
   
   var Encryption: js.UndefOr[CmafEncryption] = js.native
   
@@ -36,51 +37,39 @@ object CmafPackageCreateOrUpdateParameters {
   }
   
   @scala.inline
-  implicit class CmafPackageCreateOrUpdateParametersOps[Self <: CmafPackageCreateOrUpdateParameters] (val x: Self) extends AnyVal {
+  implicit class CmafPackageCreateOrUpdateParametersMutableBuilder[Self <: CmafPackageCreateOrUpdateParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryption(value: CmafEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHlsManifests(value: listOfHlsManifestCreateOrUpdateParameters): Self = StObject.set(x, "HlsManifests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: CmafEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setHlsManifestsUndefined: Self = StObject.set(x, "HlsManifests", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setHlsManifestsVarargs(value: HlsManifestCreateOrUpdateParameters*): Self = StObject.set(x, "HlsManifests", js.Array(value :_*))
     
     @scala.inline
-    def setHlsManifestsVarargs(value: HlsManifestCreateOrUpdateParameters*): Self = this.set("HlsManifests", js.Array(value :_*))
+    def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHlsManifests(value: listOfHlsManifestCreateOrUpdateParameters): Self = this.set("HlsManifests", value.asInstanceOf[js.Any])
+    def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
     
     @scala.inline
-    def deleteHlsManifests: Self = this.set("HlsManifests", js.undefined)
+    def setSegmentPrefix(value: string): Self = StObject.set(x, "SegmentPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentDurationSeconds(value: integer): Self = this.set("SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    def setSegmentPrefixUndefined: Self = StObject.set(x, "SegmentPrefix", js.undefined)
     
     @scala.inline
-    def deleteSegmentDurationSeconds: Self = this.set("SegmentDurationSeconds", js.undefined)
+    def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentPrefix(value: string): Self = this.set("SegmentPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentPrefix: Self = this.set("SegmentPrefix", js.undefined)
-    
-    @scala.inline
-    def setStreamSelection(value: StreamSelection): Self = this.set("StreamSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamSelection: Self = this.set("StreamSelection", js.undefined)
+    def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
   }
 }

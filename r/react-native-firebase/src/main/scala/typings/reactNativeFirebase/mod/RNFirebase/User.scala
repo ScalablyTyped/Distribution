@@ -1,12 +1,13 @@
 package typings.reactNativeFirebase.mod.RNFirebase
 
 import typings.reactNativeFirebase.mod.AuthCredential
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   /**
     * Delete the current user.

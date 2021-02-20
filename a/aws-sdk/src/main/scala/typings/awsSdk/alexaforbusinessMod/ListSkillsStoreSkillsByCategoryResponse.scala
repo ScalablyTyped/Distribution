@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSkillsStoreSkillsByCategoryResponse extends js.Object {
+trait ListSkillsStoreSkillsByCategoryResponse extends StObject {
   
   /**
     * The tokens used for pagination.
@@ -26,33 +27,21 @@ object ListSkillsStoreSkillsByCategoryResponse {
   }
   
   @scala.inline
-  implicit class ListSkillsStoreSkillsByCategoryResponseOps[Self <: ListSkillsStoreSkillsByCategoryResponse] (val x: Self) extends AnyVal {
+  implicit class ListSkillsStoreSkillsByCategoryResponseMutableBuilder[Self <: ListSkillsStoreSkillsByCategoryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkillsStoreSkills(value: SkillsStoreSkillList): Self = StObject.set(x, "SkillsStoreSkills", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSkillsStoreSkillsUndefined: Self = StObject.set(x, "SkillsStoreSkills", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSkillsStoreSkillsVarargs(value: SkillsStoreSkill*): Self = this.set("SkillsStoreSkills", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkillsStoreSkills(value: SkillsStoreSkillList): Self = this.set("SkillsStoreSkills", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkillsStoreSkills: Self = this.set("SkillsStoreSkills", js.undefined)
+    def setSkillsStoreSkillsVarargs(value: SkillsStoreSkill*): Self = StObject.set(x, "SkillsStoreSkills", js.Array(value :_*))
   }
 }

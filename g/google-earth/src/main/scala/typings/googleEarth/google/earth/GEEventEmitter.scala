@@ -1,11 +1,12 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GEEventEmitter extends js.Object {
+trait GEEventEmitter extends StObject {
   
   /**
     * Triggers an event when the user clicks a location in Google Earth with the mouse.
@@ -59,39 +60,27 @@ object GEEventEmitter {
   }
   
   @scala.inline
-  implicit class GEEventEmitterOps[Self <: GEEventEmitter] (val x: Self) extends AnyVal {
+  implicit class GEEventEmitterMutableBuilder[Self <: GEEventEmitter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: KmlMouseEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDblclick(value: KmlMouseEvent => Unit): Self = StObject.set(x, "dblclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMousedown(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mousedown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClick(value: KmlMouseEvent => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    def setMousemove(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mousemove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDblclick(value: KmlMouseEvent => Unit): Self = this.set("dblclick", js.Any.fromFunction1(value))
+    def setMouseout(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMousedown(value: KmlMouseEvent => Unit): Self = this.set("mousedown", js.Any.fromFunction1(value))
+    def setMouseover(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mouseover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMousemove(value: KmlMouseEvent => Unit): Self = this.set("mousemove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMouseout(value: KmlMouseEvent => Unit): Self = this.set("mouseout", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMouseover(value: KmlMouseEvent => Unit): Self = this.set("mouseover", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMouseup(value: KmlMouseEvent => Unit): Self = this.set("mouseup", js.Any.fromFunction1(value))
+    def setMouseup(value: KmlMouseEvent => Unit): Self = StObject.set(x, "mouseup", js.Any.fromFunction1(value))
   }
 }

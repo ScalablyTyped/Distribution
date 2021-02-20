@@ -1,5 +1,6 @@
 package typings.googleapis.binaryauthorizationV1beta1Mod.binaryauthorizationV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for BinauthzManagementService.ListAttestors.
   */
 @js.native
-trait SchemaListAttestorsResponse extends js.Object {
+trait SchemaListAttestorsResponse extends StObject {
   
   /**
     * The list of attestors.
@@ -31,33 +32,21 @@ object SchemaListAttestorsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListAttestorsResponseOps[Self <: SchemaListAttestorsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListAttestorsResponseMutableBuilder[Self <: SchemaListAttestorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttestors(value: js.Array[SchemaAttestor]): Self = StObject.set(x, "attestors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttestorsUndefined: Self = StObject.set(x, "attestors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttestorsVarargs(value: SchemaAttestor*): Self = StObject.set(x, "attestors", js.Array(value :_*))
     
     @scala.inline
-    def setAttestorsVarargs(value: SchemaAttestor*): Self = this.set("attestors", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttestors(value: js.Array[SchemaAttestor]): Self = this.set("attestors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttestors: Self = this.set("attestors", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

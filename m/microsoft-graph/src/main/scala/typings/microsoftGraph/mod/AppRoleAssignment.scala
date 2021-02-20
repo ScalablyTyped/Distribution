@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,78 +54,66 @@ object AppRoleAssignment {
   }
   
   @scala.inline
-  implicit class AppRoleAssignmentOps[Self <: AppRoleAssignment] (val x: Self) extends AnyVal {
+  implicit class AppRoleAssignmentMutableBuilder[Self <: AppRoleAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppRoleId(value: String): Self = StObject.set(x, "appRoleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppRoleIdUndefined: Self = StObject.set(x, "appRoleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppRoleId(value: String): Self = this.set("appRoleId", value.asInstanceOf[js.Any])
+    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
     @scala.inline
-    def deleteAppRoleId: Self = this.set("appRoleId", js.undefined)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setPrincipalDisplayName(value: NullableOption[String]): Self = StObject.set(x, "principalDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setPrincipalDisplayNameNull: Self = StObject.set(x, "principalDisplayName", null)
     
     @scala.inline
-    def setCreatedDateTimeNull: Self = this.set("createdDateTime", null)
+    def setPrincipalDisplayNameUndefined: Self = StObject.set(x, "principalDisplayName", js.undefined)
     
     @scala.inline
-    def setPrincipalDisplayName(value: NullableOption[String]): Self = this.set("principalDisplayName", value.asInstanceOf[js.Any])
+    def setPrincipalId(value: NullableOption[String]): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrincipalDisplayName: Self = this.set("principalDisplayName", js.undefined)
+    def setPrincipalIdNull: Self = StObject.set(x, "principalId", null)
     
     @scala.inline
-    def setPrincipalDisplayNameNull: Self = this.set("principalDisplayName", null)
+    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
     
     @scala.inline
-    def setPrincipalId(value: NullableOption[String]): Self = this.set("principalId", value.asInstanceOf[js.Any])
+    def setPrincipalType(value: NullableOption[String]): Self = StObject.set(x, "principalType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrincipalId: Self = this.set("principalId", js.undefined)
+    def setPrincipalTypeNull: Self = StObject.set(x, "principalType", null)
     
     @scala.inline
-    def setPrincipalIdNull: Self = this.set("principalId", null)
+    def setPrincipalTypeUndefined: Self = StObject.set(x, "principalType", js.undefined)
     
     @scala.inline
-    def setPrincipalType(value: NullableOption[String]): Self = this.set("principalType", value.asInstanceOf[js.Any])
+    def setResourceDisplayName(value: NullableOption[String]): Self = StObject.set(x, "resourceDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrincipalType: Self = this.set("principalType", js.undefined)
+    def setResourceDisplayNameNull: Self = StObject.set(x, "resourceDisplayName", null)
     
     @scala.inline
-    def setPrincipalTypeNull: Self = this.set("principalType", null)
+    def setResourceDisplayNameUndefined: Self = StObject.set(x, "resourceDisplayName", js.undefined)
     
     @scala.inline
-    def setResourceDisplayName(value: NullableOption[String]): Self = this.set("resourceDisplayName", value.asInstanceOf[js.Any])
+    def setResourceId(value: NullableOption[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceDisplayName: Self = this.set("resourceDisplayName", js.undefined)
+    def setResourceIdNull: Self = StObject.set(x, "resourceId", null)
     
     @scala.inline
-    def setResourceDisplayNameNull: Self = this.set("resourceDisplayName", null)
-    
-    @scala.inline
-    def setResourceId(value: NullableOption[String]): Self = this.set("resourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceId: Self = this.set("resourceId", js.undefined)
-    
-    @scala.inline
-    def setResourceIdNull: Self = this.set("resourceId", null)
+    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.wafregional
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqlInjectionMatchSetSqlInjectionMatchTuple extends js.Object {
+trait SqlInjectionMatchSetSqlInjectionMatchTuple extends StObject {
   
   /**
     * Specifies where in a web request to look for snippets of malicious SQL code.
@@ -30,24 +31,12 @@ object SqlInjectionMatchSetSqlInjectionMatchTuple {
   }
   
   @scala.inline
-  implicit class SqlInjectionMatchSetSqlInjectionMatchTupleOps[Self <: SqlInjectionMatchSetSqlInjectionMatchTuple] (val x: Self) extends AnyVal {
+  implicit class SqlInjectionMatchSetSqlInjectionMatchTupleMutableBuilder[Self <: SqlInjectionMatchSetSqlInjectionMatchTuple] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldToMatch(value: SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFieldToMatch(value: SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch): Self = this.set("fieldToMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextTransformation(value: String): Self = this.set("textTransformation", value.asInstanceOf[js.Any])
+    def setTextTransformation(value: String): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
   }
 }

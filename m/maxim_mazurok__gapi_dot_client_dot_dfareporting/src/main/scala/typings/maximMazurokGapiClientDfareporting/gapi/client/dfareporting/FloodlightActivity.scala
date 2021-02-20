@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FloodlightActivity extends js.Object {
+trait FloodlightActivity extends StObject {
   
   /** Account ID of this floodlight activity. This is a read-only field that can be left blank. */
   var accountId: js.UndefOr[String] = js.native
@@ -119,201 +120,189 @@ object FloodlightActivity {
   }
   
   @scala.inline
-  implicit class FloodlightActivityOps[Self <: FloodlightActivity] (val x: Self) extends AnyVal {
+  implicit class FloodlightActivityMutableBuilder[Self <: FloodlightActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "advertiserIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setAttributionEnabled(value: Boolean): Self = StObject.set(x, "attributionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserIdDimensionValue(value: DimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    def setAttributionEnabledUndefined: Self = StObject.set(x, "attributionEnabled", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    def setCacheBustingType(value: String): Self = StObject.set(x, "cacheBustingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributionEnabled(value: Boolean): Self = this.set("attributionEnabled", value.asInstanceOf[js.Any])
+    def setCacheBustingTypeUndefined: Self = StObject.set(x, "cacheBustingType", js.undefined)
     
     @scala.inline
-    def deleteAttributionEnabled: Self = this.set("attributionEnabled", js.undefined)
+    def setCountingMethod(value: String): Self = StObject.set(x, "countingMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheBustingType(value: String): Self = this.set("cacheBustingType", value.asInstanceOf[js.Any])
+    def setCountingMethodUndefined: Self = StObject.set(x, "countingMethod", js.undefined)
     
     @scala.inline
-    def deleteCacheBustingType: Self = this.set("cacheBustingType", js.undefined)
+    def setDefaultTags(value: js.Array[FloodlightActivityDynamicTag]): Self = StObject.set(x, "defaultTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountingMethod(value: String): Self = this.set("countingMethod", value.asInstanceOf[js.Any])
+    def setDefaultTagsUndefined: Self = StObject.set(x, "defaultTags", js.undefined)
     
     @scala.inline
-    def deleteCountingMethod: Self = this.set("countingMethod", js.undefined)
+    def setDefaultTagsVarargs(value: FloodlightActivityDynamicTag*): Self = StObject.set(x, "defaultTags", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultTagsVarargs(value: FloodlightActivityDynamicTag*): Self = this.set("defaultTags", js.Array(value :_*))
+    def setExpectedUrl(value: String): Self = StObject.set(x, "expectedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTags(value: js.Array[FloodlightActivityDynamicTag]): Self = this.set("defaultTags", value.asInstanceOf[js.Any])
+    def setExpectedUrlUndefined: Self = StObject.set(x, "expectedUrl", js.undefined)
     
     @scala.inline
-    def deleteDefaultTags: Self = this.set("defaultTags", js.undefined)
+    def setFloodlightActivityGroupId(value: String): Self = StObject.set(x, "floodlightActivityGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedUrl(value: String): Self = this.set("expectedUrl", value.asInstanceOf[js.Any])
+    def setFloodlightActivityGroupIdUndefined: Self = StObject.set(x, "floodlightActivityGroupId", js.undefined)
     
     @scala.inline
-    def deleteExpectedUrl: Self = this.set("expectedUrl", js.undefined)
+    def setFloodlightActivityGroupName(value: String): Self = StObject.set(x, "floodlightActivityGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityGroupId(value: String): Self = this.set("floodlightActivityGroupId", value.asInstanceOf[js.Any])
+    def setFloodlightActivityGroupNameUndefined: Self = StObject.set(x, "floodlightActivityGroupName", js.undefined)
     
     @scala.inline
-    def deleteFloodlightActivityGroupId: Self = this.set("floodlightActivityGroupId", js.undefined)
+    def setFloodlightActivityGroupTagString(value: String): Self = StObject.set(x, "floodlightActivityGroupTagString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityGroupName(value: String): Self = this.set("floodlightActivityGroupName", value.asInstanceOf[js.Any])
+    def setFloodlightActivityGroupTagStringUndefined: Self = StObject.set(x, "floodlightActivityGroupTagString", js.undefined)
     
     @scala.inline
-    def deleteFloodlightActivityGroupName: Self = this.set("floodlightActivityGroupName", js.undefined)
+    def setFloodlightActivityGroupType(value: String): Self = StObject.set(x, "floodlightActivityGroupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityGroupTagString(value: String): Self = this.set("floodlightActivityGroupTagString", value.asInstanceOf[js.Any])
+    def setFloodlightActivityGroupTypeUndefined: Self = StObject.set(x, "floodlightActivityGroupType", js.undefined)
     
     @scala.inline
-    def deleteFloodlightActivityGroupTagString: Self = this.set("floodlightActivityGroupTagString", js.undefined)
+    def setFloodlightConfigurationId(value: String): Self = StObject.set(x, "floodlightConfigurationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityGroupType(value: String): Self = this.set("floodlightActivityGroupType", value.asInstanceOf[js.Any])
+    def setFloodlightConfigurationIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "floodlightConfigurationIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloodlightActivityGroupType: Self = this.set("floodlightActivityGroupType", js.undefined)
+    def setFloodlightConfigurationIdDimensionValueUndefined: Self = StObject.set(x, "floodlightConfigurationIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setFloodlightConfigurationId(value: String): Self = this.set("floodlightConfigurationId", value.asInstanceOf[js.Any])
+    def setFloodlightConfigurationIdUndefined: Self = StObject.set(x, "floodlightConfigurationId", js.undefined)
     
     @scala.inline
-    def deleteFloodlightConfigurationId: Self = this.set("floodlightConfigurationId", js.undefined)
+    def setFloodlightTagType(value: String): Self = StObject.set(x, "floodlightTagType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightConfigurationIdDimensionValue(value: DimensionValue): Self = this.set("floodlightConfigurationIdDimensionValue", value.asInstanceOf[js.Any])
+    def setFloodlightTagTypeUndefined: Self = StObject.set(x, "floodlightTagType", js.undefined)
     
     @scala.inline
-    def deleteFloodlightConfigurationIdDimensionValue: Self = this.set("floodlightConfigurationIdDimensionValue", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightTagType(value: String): Self = this.set("floodlightTagType", value.asInstanceOf[js.Any])
+    def setIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "idDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloodlightTagType: Self = this.set("floodlightTagType", js.undefined)
+    def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdDimensionValue(value: DimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPublisherTags(value: js.Array[FloodlightActivityPublisherDynamicTag]): Self = StObject.set(x, "publisherTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setPublisherTagsUndefined: Self = StObject.set(x, "publisherTags", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setPublisherTagsVarargs(value: FloodlightActivityPublisherDynamicTag*): Self = StObject.set(x, "publisherTags", js.Array(value :_*))
     
     @scala.inline
-    def setPublisherTagsVarargs(value: FloodlightActivityPublisherDynamicTag*): Self = this.set("publisherTags", js.Array(value :_*))
+    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisherTags(value: js.Array[FloodlightActivityPublisherDynamicTag]): Self = this.set("publisherTags", value.asInstanceOf[js.Any])
+    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
     @scala.inline
-    def deletePublisherTags: Self = this.set("publisherTags", js.undefined)
+    def setSslCompliant(value: Boolean): Self = StObject.set(x, "sslCompliant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    def setSslCompliantUndefined: Self = StObject.set(x, "sslCompliant", js.undefined)
     
     @scala.inline
-    def deleteSecure: Self = this.set("secure", js.undefined)
+    def setSslRequired(value: Boolean): Self = StObject.set(x, "sslRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslCompliant(value: Boolean): Self = this.set("sslCompliant", value.asInstanceOf[js.Any])
+    def setSslRequiredUndefined: Self = StObject.set(x, "sslRequired", js.undefined)
     
     @scala.inline
-    def deleteSslCompliant: Self = this.set("sslCompliant", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslRequired(value: Boolean): Self = this.set("sslRequired", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSslRequired: Self = this.set("sslRequired", js.undefined)
+    def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTagFormat(value: String): Self = StObject.set(x, "tagFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    def setTagFormatUndefined: Self = StObject.set(x, "tagFormat", js.undefined)
     
     @scala.inline
-    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    def setTagString(value: String): Self = StObject.set(x, "tagString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagFormat(value: String): Self = this.set("tagFormat", value.asInstanceOf[js.Any])
+    def setTagStringUndefined: Self = StObject.set(x, "tagString", js.undefined)
     
     @scala.inline
-    def deleteTagFormat: Self = this.set("tagFormat", js.undefined)
+    def setUserDefinedVariableTypes(value: js.Array[String]): Self = StObject.set(x, "userDefinedVariableTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagString(value: String): Self = this.set("tagString", value.asInstanceOf[js.Any])
+    def setUserDefinedVariableTypesUndefined: Self = StObject.set(x, "userDefinedVariableTypes", js.undefined)
     
     @scala.inline
-    def deleteTagString: Self = this.set("tagString", js.undefined)
-    
-    @scala.inline
-    def setUserDefinedVariableTypesVarargs(value: String*): Self = this.set("userDefinedVariableTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserDefinedVariableTypes(value: js.Array[String]): Self = this.set("userDefinedVariableTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDefinedVariableTypes: Self = this.set("userDefinedVariableTypes", js.undefined)
+    def setUserDefinedVariableTypesVarargs(value: String*): Self = StObject.set(x, "userDefinedVariableTypes", js.Array(value :_*))
   }
 }

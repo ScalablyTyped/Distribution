@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExternalDocumentSources extends js.Object {
+trait ExternalDocumentSources extends StObject {
   
   /**
     * The account is enabled to allow external documents to be attached from BoxNet.
@@ -76,88 +77,76 @@ object ExternalDocumentSources {
   }
   
   @scala.inline
-  implicit class ExternalDocumentSourcesOps[Self <: ExternalDocumentSources] (val x: Self) extends AnyVal {
+  implicit class ExternalDocumentSourcesMutableBuilder[Self <: ExternalDocumentSources] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoxnetEnabled(value: String): Self = StObject.set(x, "boxnetEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBoxnetEnabled(value: String): Self = this.set("boxnetEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBoxnetEnabled: Self = this.set("boxnetEnabled", js.undefined)
+    def setBoxnetEnabledUndefined: Self = StObject.set(x, "boxnetEnabled", js.undefined)
     
     @scala.inline
     def setBoxnetMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("boxnetMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "boxnetMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxnetMetadata: Self = this.set("boxnetMetadata", js.undefined)
+    def setBoxnetMetadataUndefined: Self = StObject.set(x, "boxnetMetadata", js.undefined)
     
     @scala.inline
-    def setDropboxEnabled(value: String): Self = this.set("dropboxEnabled", value.asInstanceOf[js.Any])
+    def setDropboxEnabled(value: String): Self = StObject.set(x, "dropboxEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropboxEnabled: Self = this.set("dropboxEnabled", js.undefined)
+    def setDropboxEnabledUndefined: Self = StObject.set(x, "dropboxEnabled", js.undefined)
     
     @scala.inline
     def setDropboxMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("dropboxMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dropboxMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropboxMetadata: Self = this.set("dropboxMetadata", js.undefined)
+    def setDropboxMetadataUndefined: Self = StObject.set(x, "dropboxMetadata", js.undefined)
     
     @scala.inline
-    def setGoogleDriveEnabled(value: String): Self = this.set("googleDriveEnabled", value.asInstanceOf[js.Any])
+    def setGoogleDriveEnabled(value: String): Self = StObject.set(x, "googleDriveEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGoogleDriveEnabled: Self = this.set("googleDriveEnabled", js.undefined)
+    def setGoogleDriveEnabledUndefined: Self = StObject.set(x, "googleDriveEnabled", js.undefined)
     
     @scala.inline
     def setGoogleDriveMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("googleDriveMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "googleDriveMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGoogleDriveMetadata: Self = this.set("googleDriveMetadata", js.undefined)
+    def setGoogleDriveMetadataUndefined: Self = StObject.set(x, "googleDriveMetadata", js.undefined)
     
     @scala.inline
-    def setOneDriveEnabled(value: String): Self = this.set("oneDriveEnabled", value.asInstanceOf[js.Any])
+    def setOneDriveEnabled(value: String): Self = StObject.set(x, "oneDriveEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOneDriveEnabled: Self = this.set("oneDriveEnabled", js.undefined)
+    def setOneDriveEnabledUndefined: Self = StObject.set(x, "oneDriveEnabled", js.undefined)
     
     @scala.inline
     def setOneDriveMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("oneDriveMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "oneDriveMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOneDriveMetadata: Self = this.set("oneDriveMetadata", js.undefined)
+    def setOneDriveMetadataUndefined: Self = StObject.set(x, "oneDriveMetadata", js.undefined)
     
     @scala.inline
-    def setSalesforceEnabled(value: String): Self = this.set("salesforceEnabled", value.asInstanceOf[js.Any])
+    def setSalesforceEnabled(value: String): Self = StObject.set(x, "salesforceEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSalesforceEnabled: Self = this.set("salesforceEnabled", js.undefined)
+    def setSalesforceEnabledUndefined: Self = StObject.set(x, "salesforceEnabled", js.undefined)
     
     @scala.inline
     def setSalesforceMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("salesforceMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "salesforceMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSalesforceMetadata: Self = this.set("salesforceMetadata", js.undefined)
+    def setSalesforceMetadataUndefined: Self = StObject.set(x, "salesforceMetadata", js.undefined)
   }
 }

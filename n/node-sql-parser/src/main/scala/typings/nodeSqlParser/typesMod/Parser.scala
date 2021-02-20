@@ -1,13 +1,14 @@
 package typings.nodeSqlParser.typesMod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-sql-parser/types", "Parser")
 @js.native
-class Parser () extends js.Object {
+class Parser () extends StObject {
   
   def astify(sql: String): js.Array[AST] | AST = js.native
   def astify(sql: String, opt: Option): js.Array[AST] | AST = js.native

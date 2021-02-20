@@ -1,11 +1,12 @@
 package typings.hystrixjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CircuitBreaker extends js.Object {
+trait CircuitBreaker extends StObject {
   
   def allowRequest(): Boolean = js.native
   
@@ -29,30 +30,18 @@ object CircuitBreaker {
   }
   
   @scala.inline
-  implicit class CircuitBreakerOps[Self <: CircuitBreaker] (val x: Self) extends AnyVal {
+  implicit class CircuitBreakerMutableBuilder[Self <: CircuitBreaker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowRequest(value: () => Boolean): Self = StObject.set(x, "allowRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSingleTest(value: () => Boolean): Self = StObject.set(x, "allowSingleTest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAllowRequest(value: () => Boolean): Self = this.set("allowRequest", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setAllowSingleTest(value: () => Boolean): Self = this.set("allowSingleTest", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOpen(value: () => Boolean): Self = this.set("isOpen", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMarkSuccess(value: () => Unit): Self = this.set("markSuccess", js.Any.fromFunction0(value))
+    def setMarkSuccess(value: () => Unit): Self = StObject.set(x, "markSuccess", js.Any.fromFunction0(value))
   }
 }

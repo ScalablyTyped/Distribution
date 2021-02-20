@@ -1,12 +1,13 @@
 package typings.hapiHapi.mod
 
 import typings.hapiHapi.anon.Vhost
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerRegisterOptions extends js.Object {
+trait ServerRegisterOptions extends StObject {
   
   /**
     * if true, subsequent registrations of the same plugin are skipped without error. Cannot be used with plugin options. Defaults to false. If not set to true, an error will be thrown the second
@@ -28,30 +29,18 @@ object ServerRegisterOptions {
   }
   
   @scala.inline
-  implicit class ServerRegisterOptionsOps[Self <: ServerRegisterOptions] (val x: Self) extends AnyVal {
+  implicit class ServerRegisterOptionsMutableBuilder[Self <: ServerRegisterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoutes(value: Vhost): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnce(value: Boolean): Self = this.set("once", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnce: Self = this.set("once", js.undefined)
-    
-    @scala.inline
-    def setRoutes(value: Vhost): Self = this.set("routes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutes: Self = this.set("routes", js.undefined)
+    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
   }
 }

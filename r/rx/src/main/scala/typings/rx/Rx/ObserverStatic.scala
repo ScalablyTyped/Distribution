@@ -1,11 +1,12 @@
 package typings.rx.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObserverStatic extends js.Object {
+trait ObserverStatic extends StObject {
   
   /**
     *  Creates an observer from the specified OnNext, along with optional OnError, and OnCompleted actions.

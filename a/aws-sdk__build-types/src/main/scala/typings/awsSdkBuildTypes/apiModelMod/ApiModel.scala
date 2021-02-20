@@ -1,11 +1,12 @@
 package typings.awsSdkBuildTypes.apiModelMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiModel extends js.Object {
+trait ApiModel extends StObject {
   
   var documentation: js.UndefOr[java.lang.String] = js.native
   
@@ -28,35 +29,23 @@ object ApiModel {
   }
   
   @scala.inline
-  implicit class ApiModelOps[Self <: ApiModel] (val x: Self) extends AnyVal {
+  implicit class ApiModelMutableBuilder[Self <: ApiModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentation(value: java.lang.String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
     def setMetadata(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperations(value: OperationMap): Self = this.set("operations", value.asInstanceOf[js.Any])
+    def setOperations(value: OperationMap): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapes(value: ShapeMap): Self = this.set("shapes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDocumentation(value: java.lang.String): Self = this.set("documentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setShapes(value: ShapeMap): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrackLyricsParams extends js.Object {
+trait TrackLyricsParams extends StObject {
   
   var track_id: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object TrackLyricsParams {
   }
   
   @scala.inline
-  implicit class TrackLyricsParamsOps[Self <: TrackLyricsParams] (val x: Self) extends AnyVal {
+  implicit class TrackLyricsParamsMutableBuilder[Self <: TrackLyricsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTrack_id(value: Double): Self = StObject.set(x, "track_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTrack_idUndefined: Self = StObject.set(x, "track_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrack_mbid(value: Double): Self = StObject.set(x, "track_mbid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrack_id(value: Double): Self = this.set("track_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrack_id: Self = this.set("track_id", js.undefined)
-    
-    @scala.inline
-    def setTrack_mbid(value: Double): Self = this.set("track_mbid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrack_mbid: Self = this.set("track_mbid", js.undefined)
+    def setTrack_mbidUndefined: Self = StObject.set(x, "track_mbid", js.undefined)
   }
 }

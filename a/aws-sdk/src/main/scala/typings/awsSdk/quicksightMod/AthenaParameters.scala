@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AthenaParameters extends js.Object {
+trait AthenaParameters extends StObject {
   
   /**
     * The workgroup that Amazon Athena uses.
@@ -21,24 +22,12 @@ object AthenaParameters {
   }
   
   @scala.inline
-  implicit class AthenaParametersOps[Self <: AthenaParameters] (val x: Self) extends AnyVal {
+  implicit class AthenaParametersMutableBuilder[Self <: AthenaParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkGroup(value: WorkGroup): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkGroup(value: WorkGroup): Self = this.set("WorkGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkGroup: Self = this.set("WorkGroup", js.undefined)
+    def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
   }
 }

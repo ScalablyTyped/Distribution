@@ -1,12 +1,11 @@
 package typings.tileReduce
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tile-reduce", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Tile Reduce
@@ -31,5 +30,7 @@ object mod extends js.Object {
     *     console.log('starting')
     * })
     */
+  @JSImport("tile-reduce", JSImport.Namespace)
+  @js.native
   def apply(options: Options): Events = js.native
 }

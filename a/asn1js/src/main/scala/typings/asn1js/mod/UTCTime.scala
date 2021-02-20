@@ -2,13 +2,14 @@ package typings.asn1js.mod
 
 import typings.std.ArrayBuffer
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asn1js", "UTCTime")
 @js.native
-class UTCTime () extends LocalSimpleStringBlock {
+class UTCTime () extends VisibleString {
   def this(params: UTCTimeParams) = this()
   
   var day: Double = js.native

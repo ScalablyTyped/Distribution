@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCRtpUnhandled extends js.Object {
+trait RTCRtpUnhandled extends StObject {
   
   var muxId: js.UndefOr[java.lang.String] = js.native
   
@@ -22,36 +23,24 @@ object RTCRtpUnhandled {
   }
   
   @scala.inline
-  implicit class RTCRtpUnhandledOps[Self <: RTCRtpUnhandled] (val x: Self) extends AnyVal {
+  implicit class RTCRtpUnhandledMutableBuilder[Self <: RTCRtpUnhandled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMuxId(value: java.lang.String): Self = StObject.set(x, "muxId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMuxIdUndefined: Self = StObject.set(x, "muxId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayloadType(value: Double): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuxId(value: java.lang.String): Self = this.set("muxId", value.asInstanceOf[js.Any])
+    def setPayloadTypeUndefined: Self = StObject.set(x, "payloadType", js.undefined)
     
     @scala.inline
-    def deleteMuxId: Self = this.set("muxId", js.undefined)
+    def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadType(value: Double): Self = this.set("payloadType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayloadType: Self = this.set("payloadType", js.undefined)
-    
-    @scala.inline
-    def setSsrc(value: Double): Self = this.set("ssrc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsrc: Self = this.set("ssrc", js.undefined)
+    def setSsrcUndefined: Self = StObject.set(x, "ssrc", js.undefined)
   }
 }

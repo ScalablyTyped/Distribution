@@ -5,6 +5,7 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.itemMouseOut
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.itemMouseOver
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.popUp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

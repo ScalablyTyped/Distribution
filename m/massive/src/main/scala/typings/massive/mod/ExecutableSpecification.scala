@@ -1,11 +1,12 @@
 package typings.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutableSpecification extends js.Object {
+trait ExecutableSpecification extends StObject {
   
   /** A Database. */
   var db: Database = js.native
@@ -53,45 +54,33 @@ object ExecutableSpecification {
   }
   
   @scala.inline
-  implicit class ExecutableSpecificationOps[Self <: ExecutableSpecification] (val x: Self) extends AnyVal {
+  implicit class ExecutableSpecificationMutableBuilder[Self <: ExecutableSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnhancedFunctions(value: Boolean): Self = StObject.set(x, "enhancedFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsVariadic(value: Boolean): Self = StObject.set(x, "isVariadic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDb(value: Database): Self = this.set("db", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhancedFunctions(value: Boolean): Self = this.set("enhancedFunctions", value.asInstanceOf[js.Any])
+    def setParamCount(value: Double): Self = StObject.set(x, "paramCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVariadic(value: Boolean): Self = this.set("isVariadic", value.asInstanceOf[js.Any])
+    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSingleRow(value: Boolean): Self = StObject.set(x, "singleRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamCount(value: Double): Self = this.set("paramCount", value.asInstanceOf[js.Any])
+    def setSingleValue(value: Boolean): Self = StObject.set(x, "singleValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: String): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingleRow(value: Boolean): Self = this.set("singleRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingleValue(value: Boolean): Self = this.set("singleValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSql(value: js.Any): Self = this.set("sql", value.asInstanceOf[js.Any])
+    def setSql(value: js.Any): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
   }
 }

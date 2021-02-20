@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Captions extends js.Object {
+trait Captions extends StObject {
   
   /**
     * The array of file formats for the output captions. If you leave this value blank, Elastic Transcoder returns an error.
@@ -31,42 +32,30 @@ object Captions {
   }
   
   @scala.inline
-  implicit class CaptionsOps[Self <: Captions] (val x: Self) extends AnyVal {
+  implicit class CaptionsMutableBuilder[Self <: Captions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptionFormats(value: CaptionFormats): Self = StObject.set(x, "CaptionFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionFormatsUndefined: Self = StObject.set(x, "CaptionFormats", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaptionFormatsVarargs(value: CaptionFormat*): Self = StObject.set(x, "CaptionFormats", js.Array(value :_*))
     
     @scala.inline
-    def setCaptionFormatsVarargs(value: CaptionFormat*): Self = this.set("CaptionFormats", js.Array(value :_*))
+    def setCaptionSources(value: CaptionSources): Self = StObject.set(x, "CaptionSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptionFormats(value: CaptionFormats): Self = this.set("CaptionFormats", value.asInstanceOf[js.Any])
+    def setCaptionSourcesUndefined: Self = StObject.set(x, "CaptionSources", js.undefined)
     
     @scala.inline
-    def deleteCaptionFormats: Self = this.set("CaptionFormats", js.undefined)
+    def setCaptionSourcesVarargs(value: CaptionSource*): Self = StObject.set(x, "CaptionSources", js.Array(value :_*))
     
     @scala.inline
-    def setCaptionSourcesVarargs(value: CaptionSource*): Self = this.set("CaptionSources", js.Array(value :_*))
+    def setMergePolicy(value: CaptionMergePolicy): Self = StObject.set(x, "MergePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptionSources(value: CaptionSources): Self = this.set("CaptionSources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaptionSources: Self = this.set("CaptionSources", js.undefined)
-    
-    @scala.inline
-    def setMergePolicy(value: CaptionMergePolicy): Self = this.set("MergePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergePolicy: Self = this.set("MergePolicy", js.undefined)
+    def setMergePolicyUndefined: Self = StObject.set(x, "MergePolicy", js.undefined)
   }
 }

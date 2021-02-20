@@ -1,6 +1,7 @@
 package typings.vegaTypings.encodeMod
 
 import typings.vegaTypings.anon.Test
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,72 +30,60 @@ object ArcEncodeEntry {
   }
   
   @scala.inline
-  implicit class ArcEncodeEntryOps[Self <: ArcEncodeEntry] (val x: Self) extends AnyVal {
+  implicit class ArcEncodeEntryMutableBuilder[Self <: ArcEncodeEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCornerRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCornerRadiusVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "cornerRadius", js.Array(value :_*))
     
     @scala.inline
-    def setCornerRadiusVarargs(value: (Test with NumericValueRef)*): Self = this.set("cornerRadius", js.Array(value :_*))
+    def setEndAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCornerRadius(value: ProductionRule[NumericValueRef]): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
+    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
     @scala.inline
-    def deleteCornerRadius: Self = this.set("cornerRadius", js.undefined)
+    def setEndAngleVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "endAngle", js.Array(value :_*))
     
     @scala.inline
-    def setEndAngleVarargs(value: (Test with NumericValueRef)*): Self = this.set("endAngle", js.Array(value :_*))
+    def setInnerRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAngle(value: ProductionRule[NumericValueRef]): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
     @scala.inline
-    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    def setInnerRadiusVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "innerRadius", js.Array(value :_*))
     
     @scala.inline
-    def setInnerRadiusVarargs(value: (Test with NumericValueRef)*): Self = this.set("innerRadius", js.Array(value :_*))
+    def setOuterRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerRadius(value: ProductionRule[NumericValueRef]): Self = this.set("innerRadius", value.asInstanceOf[js.Any])
+    def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
     
     @scala.inline
-    def deleteInnerRadius: Self = this.set("innerRadius", js.undefined)
+    def setOuterRadiusVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "outerRadius", js.Array(value :_*))
     
     @scala.inline
-    def setOuterRadiusVarargs(value: (Test with NumericValueRef)*): Self = this.set("outerRadius", js.Array(value :_*))
+    def setPadAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterRadius(value: ProductionRule[NumericValueRef]): Self = this.set("outerRadius", value.asInstanceOf[js.Any])
+    def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
     
     @scala.inline
-    def deleteOuterRadius: Self = this.set("outerRadius", js.undefined)
+    def setPadAngleVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "padAngle", js.Array(value :_*))
     
     @scala.inline
-    def setPadAngleVarargs(value: (Test with NumericValueRef)*): Self = this.set("padAngle", js.Array(value :_*))
+    def setStartAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadAngle(value: ProductionRule[NumericValueRef]): Self = this.set("padAngle", value.asInstanceOf[js.Any])
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     @scala.inline
-    def deletePadAngle: Self = this.set("padAngle", js.undefined)
-    
-    @scala.inline
-    def setStartAngleVarargs(value: (Test with NumericValueRef)*): Self = this.set("startAngle", js.Array(value :_*))
-    
-    @scala.inline
-    def setStartAngle(value: ProductionRule[NumericValueRef]): Self = this.set("startAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setStartAngleVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "startAngle", js.Array(value :_*))
   }
 }

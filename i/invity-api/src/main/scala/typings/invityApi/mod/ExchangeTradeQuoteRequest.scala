@@ -1,18 +1,19 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExchangeTradeQuoteRequest extends js.Object {
+trait ExchangeTradeQuoteRequest extends StObject {
   
-   // BTC
+  // BTC
   var receive: String = js.native
   
   var send: String = js.native
   
-   // LTC
+  // LTC
   var sendStringAmount: String = js.native
 }
 object ExchangeTradeQuoteRequest {
@@ -24,27 +25,15 @@ object ExchangeTradeQuoteRequest {
   }
   
   @scala.inline
-  implicit class ExchangeTradeQuoteRequestOps[Self <: ExchangeTradeQuoteRequest] (val x: Self) extends AnyVal {
+  implicit class ExchangeTradeQuoteRequestMutableBuilder[Self <: ExchangeTradeQuoteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReceive(value: String): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReceive(value: String): Self = this.set("receive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSend(value: String): Self = this.set("send", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSendStringAmount(value: String): Self = this.set("sendStringAmount", value.asInstanceOf[js.Any])
+    def setSendStringAmount(value: String): Self = StObject.set(x, "sendStringAmount", value.asInstanceOf[js.Any])
   }
 }

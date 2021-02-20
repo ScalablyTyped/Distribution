@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/text-editor/
 @js.native
-trait TextEditor extends js.Object {
+trait TextEditor extends StObject {
   
   def addSelectionForRange(range: Range): Unit = js.native
   

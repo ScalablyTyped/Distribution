@@ -1,11 +1,12 @@
 package typings.reactVirtualized.esTableMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableRowProps extends js.Object {
+trait TableRowProps extends StObject {
   
   var className: String = js.native
   
@@ -48,72 +49,60 @@ object TableRowProps {
   }
   
   @scala.inline
-  implicit class TableRowPropsOps[Self <: TableRowProps] (val x: Self) extends AnyVal {
+  implicit class TableRowPropsMutableBuilder[Self <: TableRowProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumns(value: js.Array[_]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: js.Any*): Self = this.set("columns", js.Array(value :_*))
+    def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[_]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setOnRowClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsScrolling(value: Boolean): Self = this.set("isScrolling", value.asInstanceOf[js.Any])
+    def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setOnRowDoubleClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRowData(value: js.Any): Self = this.set("rowData", value.asInstanceOf[js.Any])
+    def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
     
     @scala.inline
-    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setOnRowMouseOut(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRowClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = this.set("onRowClick", js.Any.fromFunction1(value))
+    def setOnRowMouseOutUndefined: Self = StObject.set(x, "onRowMouseOut", js.undefined)
     
     @scala.inline
-    def deleteOnRowClick: Self = this.set("onRowClick", js.undefined)
+    def setOnRowMouseOver(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRowDoubleClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = this.set("onRowDoubleClick", js.Any.fromFunction1(value))
+    def setOnRowMouseOverUndefined: Self = StObject.set(x, "onRowMouseOver", js.undefined)
     
     @scala.inline
-    def deleteOnRowDoubleClick: Self = this.set("onRowDoubleClick", js.undefined)
+    def setOnRowRightClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowRightClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRowMouseOut(value: /* params */ RowMouseEventHandlerParams => Unit): Self = this.set("onRowMouseOut", js.Any.fromFunction1(value))
+    def setOnRowRightClickUndefined: Self = StObject.set(x, "onRowRightClick", js.undefined)
     
     @scala.inline
-    def deleteOnRowMouseOut: Self = this.set("onRowMouseOut", js.undefined)
+    def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRowMouseOver(value: /* params */ RowMouseEventHandlerParams => Unit): Self = this.set("onRowMouseOver", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnRowMouseOver: Self = this.set("onRowMouseOver", js.undefined)
-    
-    @scala.inline
-    def setOnRowRightClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = this.set("onRowRightClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnRowRightClick: Self = this.set("onRowRightClick", js.undefined)
+    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

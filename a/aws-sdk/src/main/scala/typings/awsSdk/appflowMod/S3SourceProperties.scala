@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3SourceProperties extends js.Object {
+trait S3SourceProperties extends StObject {
   
   /**
     *  The Amazon S3 bucket name where the source files are stored. 
@@ -26,27 +27,15 @@ object S3SourceProperties {
   }
   
   @scala.inline
-  implicit class S3SourcePropertiesOps[Self <: S3SourceProperties] (val x: Self) extends AnyVal {
+  implicit class S3SourcePropertiesMutableBuilder[Self <: S3SourceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBucketName(value: BucketName): Self = this.set("bucketName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBucketPrefix(value: BucketPrefix): Self = this.set("bucketPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketPrefix: Self = this.set("bucketPrefix", js.undefined)
+    def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
   }
 }

@@ -12,12 +12,13 @@ import typings.devtoolsProtocol.mod.Protocol.WebAuthn.RemoveCredentialRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.RemoveVirtualAuthenticatorRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.SetAutomaticPresenceSimulationRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.SetUserVerifiedRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAuthnApi extends js.Object {
+trait WebAuthnApi extends StObject {
   
   /**
     * Adds the credential to the specified authenticator.
@@ -99,51 +100,39 @@ object WebAuthnApi {
   }
   
   @scala.inline
-  implicit class WebAuthnApiOps[Self <: WebAuthnApi] (val x: Self) extends AnyVal {
+  implicit class WebAuthnApiMutableBuilder[Self <: WebAuthnApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCredential(value: AddCredentialRequest => js.Promise[Unit]): Self = StObject.set(x, "addCredential", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddVirtualAuthenticator(value: AddVirtualAuthenticatorRequest => js.Promise[AddVirtualAuthenticatorResponse]): Self = StObject.set(x, "addVirtualAuthenticator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearCredentials(value: ClearCredentialsRequest => js.Promise[Unit]): Self = StObject.set(x, "clearCredentials", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCredential(value: AddCredentialRequest => js.Promise[Unit]): Self = this.set("addCredential", js.Any.fromFunction1(value))
+    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddVirtualAuthenticator(value: AddVirtualAuthenticatorRequest => js.Promise[AddVirtualAuthenticatorResponse]): Self = this.set("addVirtualAuthenticator", js.Any.fromFunction1(value))
+    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearCredentials(value: ClearCredentialsRequest => js.Promise[Unit]): Self = this.set("clearCredentials", js.Any.fromFunction1(value))
+    def setGetCredential(value: GetCredentialRequest => js.Promise[GetCredentialResponse]): Self = StObject.set(x, "getCredential", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setGetCredentials(value: GetCredentialsRequest => js.Promise[GetCredentialsResponse]): Self = StObject.set(x, "getCredentials", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setRemoveCredential(value: RemoveCredentialRequest => js.Promise[Unit]): Self = StObject.set(x, "removeCredential", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCredential(value: GetCredentialRequest => js.Promise[GetCredentialResponse]): Self = this.set("getCredential", js.Any.fromFunction1(value))
+    def setRemoveVirtualAuthenticator(value: RemoveVirtualAuthenticatorRequest => js.Promise[Unit]): Self = StObject.set(x, "removeVirtualAuthenticator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCredentials(value: GetCredentialsRequest => js.Promise[GetCredentialsResponse]): Self = this.set("getCredentials", js.Any.fromFunction1(value))
+    def setSetAutomaticPresenceSimulation(value: SetAutomaticPresenceSimulationRequest => js.Promise[Unit]): Self = StObject.set(x, "setAutomaticPresenceSimulation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveCredential(value: RemoveCredentialRequest => js.Promise[Unit]): Self = this.set("removeCredential", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveVirtualAuthenticator(value: RemoveVirtualAuthenticatorRequest => js.Promise[Unit]): Self = this.set("removeVirtualAuthenticator", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetAutomaticPresenceSimulation(value: SetAutomaticPresenceSimulationRequest => js.Promise[Unit]): Self = this.set("setAutomaticPresenceSimulation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUserVerified(value: SetUserVerifiedRequest => js.Promise[Unit]): Self = this.set("setUserVerified", js.Any.fromFunction1(value))
+    def setSetUserVerified(value: SetUserVerifiedRequest => js.Promise[Unit]): Self = StObject.set(x, "setUserVerified", js.Any.fromFunction1(value))
   }
 }

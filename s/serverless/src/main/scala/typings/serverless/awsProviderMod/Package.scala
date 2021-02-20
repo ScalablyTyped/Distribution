@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Package extends js.Object {
+trait Package extends StObject {
   
   var artifact: js.UndefOr[String] = js.native
   
@@ -26,54 +27,42 @@ object Package {
   }
   
   @scala.inline
-  implicit class PackageOps[Self <: Package] (val x: Self) extends AnyVal {
+  implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifact(value: String): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactUndefined: Self = StObject.set(x, "artifact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifact(value: String): Self = this.set("artifact", value.asInstanceOf[js.Any])
+    def setExcludeDevDependencies(value: Boolean): Self = StObject.set(x, "excludeDevDependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArtifact: Self = this.set("artifact", js.undefined)
+    def setExcludeDevDependenciesUndefined: Self = StObject.set(x, "excludeDevDependencies", js.undefined)
     
     @scala.inline
-    def setExcludeVarargs(value: String*): Self = this.set("exclude", js.Array(value :_*))
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def setExclude(value: js.Array[String]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeDevDependencies(value: Boolean): Self = this.set("excludeDevDependencies", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteExcludeDevDependencies: Self = this.set("excludeDevDependencies", js.undefined)
+    def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeVarargs(value: String*): Self = this.set("include", js.Array(value :_*))
+    def setIndividually(value: Boolean): Self = StObject.set(x, "individually", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: js.Array[String]): Self = this.set("include", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
-    
-    @scala.inline
-    def setIndividually(value: Boolean): Self = this.set("individually", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndividually: Self = this.set("individually", js.undefined)
+    def setIndividuallyUndefined: Self = StObject.set(x, "individually", js.undefined)
   }
 }

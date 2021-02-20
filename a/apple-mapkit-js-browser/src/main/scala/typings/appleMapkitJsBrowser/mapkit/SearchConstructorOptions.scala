@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options that you may provide when creating a search object.
   */
 @js.native
-trait SearchConstructorOptions extends js.Object {
+trait SearchConstructorOptions extends StObject {
   
   /**
     * A map coordinate that provides a hint for the geographic area to search.
@@ -65,72 +66,60 @@ object SearchConstructorOptions {
   }
   
   @scala.inline
-  implicit class SearchConstructorOptionsOps[Self <: SearchConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class SearchConstructorOptionsMutableBuilder[Self <: SearchConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordinateUndefined: Self = StObject.set(x, "coordinate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetsUserLocation(value: Boolean): Self = StObject.set(x, "getsUserLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinate(value: Coordinate): Self = this.set("coordinate", value.asInstanceOf[js.Any])
+    def setGetsUserLocationUndefined: Self = StObject.set(x, "getsUserLocation", js.undefined)
     
     @scala.inline
-    def deleteCoordinate: Self = this.set("coordinate", js.undefined)
+    def setIncludeAddresses(value: Boolean): Self = StObject.set(x, "includeAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetsUserLocation(value: Boolean): Self = this.set("getsUserLocation", value.asInstanceOf[js.Any])
+    def setIncludeAddressesUndefined: Self = StObject.set(x, "includeAddresses", js.undefined)
     
     @scala.inline
-    def deleteGetsUserLocation: Self = this.set("getsUserLocation", js.undefined)
+    def setIncludePointsOfInterest(value: Boolean): Self = StObject.set(x, "includePointsOfInterest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAddresses(value: Boolean): Self = this.set("includeAddresses", value.asInstanceOf[js.Any])
+    def setIncludePointsOfInterestUndefined: Self = StObject.set(x, "includePointsOfInterest", js.undefined)
     
     @scala.inline
-    def deleteIncludeAddresses: Self = this.set("includeAddresses", js.undefined)
+    def setIncludeQueries(value: Boolean): Self = StObject.set(x, "includeQueries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludePointsOfInterest(value: Boolean): Self = this.set("includePointsOfInterest", value.asInstanceOf[js.Any])
+    def setIncludeQueriesUndefined: Self = StObject.set(x, "includeQueries", js.undefined)
     
     @scala.inline
-    def deleteIncludePointsOfInterest: Self = this.set("includePointsOfInterest", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeQueries(value: Boolean): Self = this.set("includeQueries", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteIncludeQueries: Self = this.set("includeQueries", js.undefined)
+    def setLimitToCountries(value: Boolean): Self = StObject.set(x, "limitToCountries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLimitToCountriesUndefined: Self = StObject.set(x, "limitToCountries", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setPointOfInterestFilter(value: PointOfInterestFilter): Self = StObject.set(x, "pointOfInterestFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitToCountries(value: Boolean): Self = this.set("limitToCountries", value.asInstanceOf[js.Any])
+    def setPointOfInterestFilterUndefined: Self = StObject.set(x, "pointOfInterestFilter", js.undefined)
     
     @scala.inline
-    def deleteLimitToCountries: Self = this.set("limitToCountries", js.undefined)
+    def setRegion(value: CoordinateRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointOfInterestFilter(value: PointOfInterestFilter): Self = this.set("pointOfInterestFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointOfInterestFilter: Self = this.set("pointOfInterestFilter", js.undefined)
-    
-    @scala.inline
-    def setRegion(value: CoordinateRegion): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

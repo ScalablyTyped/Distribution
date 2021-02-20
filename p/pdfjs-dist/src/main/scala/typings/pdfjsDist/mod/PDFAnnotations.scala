@@ -1,26 +1,27 @@
 package typings.pdfjsDist.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFAnnotations extends js.Object {
+trait PDFAnnotations extends StObject {
   
   def getData(): PDFAnnotationData = js.native
   
-   // throw new NotImplementedException()
+  // throw new NotImplementedException()
   def getEmptyContainer(tagName: String, rect: js.Array[Double]): HTMLElement = js.native
   
-   // always false
+  // always false
   def getHtmlElement(commonOjbs: js.Any): HTMLElement = js.native
   
   def getOperatorList(evaluator: js.Any): PDFPromise[_] = js.native
   
   def hasHtml(): Boolean = js.native
   
-   // deprecated
+  // deprecated
   def isViewable(): Boolean = js.native
   
   def loadResources(keys: js.Any): PDFPromise[_] = js.native
@@ -42,39 +43,27 @@ object PDFAnnotations {
   }
   
   @scala.inline
-  implicit class PDFAnnotationsOps[Self <: PDFAnnotations] (val x: Self) extends AnyVal {
+  implicit class PDFAnnotationsMutableBuilder[Self <: PDFAnnotations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetData(value: () => PDFAnnotationData): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEmptyContainer(value: (String, js.Array[Double]) => HTMLElement): Self = StObject.set(x, "getEmptyContainer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetHtmlElement(value: js.Any => HTMLElement): Self = StObject.set(x, "getHtmlElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetData(value: () => PDFAnnotationData): Self = this.set("getData", js.Any.fromFunction0(value))
+    def setGetOperatorList(value: js.Any => PDFPromise[_]): Self = StObject.set(x, "getOperatorList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEmptyContainer(value: (String, js.Array[Double]) => HTMLElement): Self = this.set("getEmptyContainer", js.Any.fromFunction2(value))
+    def setHasHtml(value: () => Boolean): Self = StObject.set(x, "hasHtml", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHtmlElement(value: js.Any => HTMLElement): Self = this.set("getHtmlElement", js.Any.fromFunction1(value))
+    def setIsViewable(value: () => Boolean): Self = StObject.set(x, "isViewable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOperatorList(value: js.Any => PDFPromise[_]): Self = this.set("getOperatorList", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHasHtml(value: () => Boolean): Self = this.set("hasHtml", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsViewable(value: () => Boolean): Self = this.set("isViewable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLoadResources(value: js.Any => PDFPromise[_]): Self = this.set("loadResources", js.Any.fromFunction1(value))
+    def setLoadResources(value: js.Any => PDFPromise[_]): Self = StObject.set(x, "loadResources", js.Any.fromFunction1(value))
   }
 }

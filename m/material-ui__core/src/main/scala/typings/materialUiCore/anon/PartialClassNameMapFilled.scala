@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/FilledInput/FilledInput.FilledInputClassKey>> */
 @js.native
-trait PartialClassNameMapFilled extends js.Object {
+trait PartialClassNameMapFilled extends StObject {
   
   var adornedEnd: js.UndefOr[String] = js.native
   
@@ -43,96 +44,84 @@ object PartialClassNameMapFilled {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapFilledOps[Self <: PartialClassNameMapFilled] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapFilledMutableBuilder[Self <: PartialClassNameMapFilled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdornedEnd(value: String): Self = StObject.set(x, "adornedEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdornedEndUndefined: Self = StObject.set(x, "adornedEnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdornedStart(value: String): Self = StObject.set(x, "adornedStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdornedEnd(value: String): Self = this.set("adornedEnd", value.asInstanceOf[js.Any])
+    def setAdornedStartUndefined: Self = StObject.set(x, "adornedStart", js.undefined)
     
     @scala.inline
-    def deleteAdornedEnd: Self = this.set("adornedEnd", js.undefined)
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdornedStart(value: String): Self = this.set("adornedStart", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteAdornedStart: Self = this.set("adornedStart", js.undefined)
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: String): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setInputAdornedEnd(value: String): Self = StObject.set(x, "inputAdornedEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFocused: Self = this.set("focused", js.undefined)
+    def setInputAdornedEndUndefined: Self = StObject.set(x, "inputAdornedEnd", js.undefined)
     
     @scala.inline
-    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setInputAdornedStart(value: String): Self = StObject.set(x, "inputAdornedStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setInputAdornedStartUndefined: Self = StObject.set(x, "inputAdornedStart", js.undefined)
     
     @scala.inline
-    def setInputAdornedEnd(value: String): Self = this.set("inputAdornedEnd", value.asInstanceOf[js.Any])
+    def setInputMarginDense(value: String): Self = StObject.set(x, "inputMarginDense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputAdornedEnd: Self = this.set("inputAdornedEnd", js.undefined)
+    def setInputMarginDenseUndefined: Self = StObject.set(x, "inputMarginDense", js.undefined)
     
     @scala.inline
-    def setInputAdornedStart(value: String): Self = this.set("inputAdornedStart", value.asInstanceOf[js.Any])
+    def setInputMultiline(value: String): Self = StObject.set(x, "inputMultiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputAdornedStart: Self = this.set("inputAdornedStart", js.undefined)
+    def setInputMultilineUndefined: Self = StObject.set(x, "inputMultiline", js.undefined)
     
     @scala.inline
-    def setInputMarginDense(value: String): Self = this.set("inputMarginDense", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteInputMarginDense: Self = this.set("inputMarginDense", js.undefined)
+    def setMultiline(value: String): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputMultiline(value: String): Self = this.set("inputMultiline", value.asInstanceOf[js.Any])
+    def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
     
     @scala.inline
-    def deleteInputMultiline: Self = this.set("inputMultiline", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiline(value: String): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteMultiline: Self = this.set("multiline", js.undefined)
+    def setUnderline(value: String): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setUnderline(value: String): Self = this.set("underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderline: Self = this.set("underline", js.undefined)
+    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
   }
 }

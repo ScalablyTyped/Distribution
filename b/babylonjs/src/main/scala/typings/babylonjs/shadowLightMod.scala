@@ -5,13 +5,80 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.lightMod.Light
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Lights/shadowLight", JSImport.Namespace)
-@js.native
-object shadowLightMod extends js.Object {
+object shadowLightMod {
+  
+  @JSImport("babylonjs/Lights/shadowLight", "ShadowLight")
+  @js.native
+  abstract class ShadowLight protected () extends IShadowLight {
+    /**
+      * Creates a Light object in the scene.
+      * Documentation : https://doc.babylonjs.com/babylon101/lights
+      * @param name The firendly name of the light
+      * @param scene The scene the light belongs too
+      */
+    def this(name: String, scene: Scene) = this()
+    
+    var _direction: Vector3 = js.native
+    
+    var _needProjectionMatrixCompute: js.Any = js.native
+    
+    var _position: Vector3 = js.native
+    
+    /* protected */ def _setDefaultShadowProjectionMatrix(matrix: Matrix, viewMatrix: Matrix, renderList: js.Array[AbstractMesh]): Unit = js.native
+    
+    /* protected */ def _setDirection(value: Vector3): Unit = js.native
+    
+    /* protected */ def _setPosition(value: Vector3): Unit = js.native
+    
+    var _shadowMaxZ: Double = js.native
+    
+    var _shadowMinZ: Double = js.native
+    
+    /**
+      * In 2d mode (needCube being false), gets the direction used to cast the shadow.
+      * Also use as the light direction on spot and directional lights.
+      */
+    @JSName("direction")
+    def direction_MShadowLight: Vector3 = js.native
+    
+    /**
+      * Returns the light rotation in euler definition.
+      * @returns the x y z rotation in local space.
+      */
+    def getRotation(): Vector3 = js.native
+    
+    /**
+      * Sets the position the shadow will be casted from. Also use as the light position for both
+      * point and spot lights.
+      */
+    @JSName("position")
+    def position_MShadowLight: Vector3 = js.native
+    
+    /**
+      * Sets the ShadowLight direction toward the passed target.
+      * @param target The point to target in local space
+      * @returns the updated ShadowLight direction
+      */
+    def setDirectionToTarget(target: Vector3): Vector3 = js.native
+    
+    /**
+      * Sets the shadow projection clipping maximum z value.
+      */
+    @JSName("shadowMaxZ")
+    def shadowMaxZ_MShadowLight: Double = js.native
+    
+    /**
+      * Gets the shadow projection clipping minimum z value.
+      */
+    @JSName("shadowMinZ")
+    def shadowMinZ_MShadowLight: Double = js.native
+  }
   
   @js.native
   trait IShadowLight extends Light {
@@ -111,64 +178,5 @@ object shadowLightMod extends js.Object {
       * The transformed position. Position of the light in world space taking parenting in account.
       */
     var transformedPosition: Vector3 = js.native
-  }
-  
-  @js.native
-  abstract class ShadowLight () extends IShadowLight {
-    
-    var _direction: Vector3 = js.native
-    
-    var _needProjectionMatrixCompute: js.Any = js.native
-    
-    var _position: Vector3 = js.native
-    
-    /* protected */ def _setDefaultShadowProjectionMatrix(matrix: Matrix, viewMatrix: Matrix, renderList: js.Array[AbstractMesh]): Unit = js.native
-    
-    /* protected */ def _setDirection(value: Vector3): Unit = js.native
-    
-    /* protected */ def _setPosition(value: Vector3): Unit = js.native
-    
-    var _shadowMaxZ: Double = js.native
-    
-    var _shadowMinZ: Double = js.native
-    
-    /**
-      * In 2d mode (needCube being false), gets the direction used to cast the shadow.
-      * Also use as the light direction on spot and directional lights.
-      */
-    @JSName("direction")
-    def direction_MShadowLight: Vector3 = js.native
-    
-    /**
-      * Returns the light rotation in euler definition.
-      * @returns the x y z rotation in local space.
-      */
-    def getRotation(): Vector3 = js.native
-    
-    /**
-      * Sets the position the shadow will be casted from. Also use as the light position for both
-      * point and spot lights.
-      */
-    @JSName("position")
-    def position_MShadowLight: Vector3 = js.native
-    
-    /**
-      * Sets the ShadowLight direction toward the passed target.
-      * @param target The point to target in local space
-      * @returns the updated ShadowLight direction
-      */
-    def setDirectionToTarget(target: Vector3): Vector3 = js.native
-    
-    /**
-      * Sets the shadow projection clipping maximum z value.
-      */
-    @JSName("shadowMaxZ")
-    def shadowMaxZ_MShadowLight: Double = js.native
-    
-    /**
-      * Gets the shadow projection clipping minimum z value.
-      */
-    @JSName("shadowMinZ")
-    def shadowMinZ_MShadowLight: Double = js.native
   }
 }

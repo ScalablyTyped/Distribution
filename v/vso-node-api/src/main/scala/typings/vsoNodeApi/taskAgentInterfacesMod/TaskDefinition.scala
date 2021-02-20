@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskDefinition extends js.Object {
+trait TaskDefinition extends StObject {
   
   var agentExecution: TaskExecution = js.native
   
@@ -114,135 +115,123 @@ object TaskDefinition {
   }
   
   @scala.inline
-  implicit class TaskDefinitionOps[Self <: TaskDefinition] (val x: Self) extends AnyVal {
+  implicit class TaskDefinitionMutableBuilder[Self <: TaskDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentExecution(value: TaskExecution): Self = StObject.set(x, "agentExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentExecution(value: TaskExecution): Self = this.set("agentExecution", value.asInstanceOf[js.Any])
+    def setContentsUploaded(value: Boolean): Self = StObject.set(x, "contentsUploaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setContributionIdentifier(value: String): Self = StObject.set(x, "contributionIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setContributionVersion(value: String): Self = StObject.set(x, "contributionVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentsUploaded(value: Boolean): Self = this.set("contentsUploaded", value.asInstanceOf[js.Any])
+    def setDataSourceBindings(value: js.Array[DataSourceBinding]): Self = StObject.set(x, "dataSourceBindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributionIdentifier(value: String): Self = this.set("contributionIdentifier", value.asInstanceOf[js.Any])
+    def setDataSourceBindingsVarargs(value: DataSourceBinding*): Self = StObject.set(x, "dataSourceBindings", js.Array(value :_*))
     
     @scala.inline
-    def setContributionVersion(value: String): Self = this.set("contributionVersion", value.asInstanceOf[js.Any])
+    def setDefinitionType(value: String): Self = StObject.set(x, "definitionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceBindingsVarargs(value: DataSourceBinding*): Self = this.set("dataSourceBindings", js.Array(value :_*))
+    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceBindings(value: js.Array[DataSourceBinding]): Self = this.set("dataSourceBindings", value.asInstanceOf[js.Any])
+    def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
     
     @scala.inline
-    def setDefinitionType(value: String): Self = this.set("definitionType", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemandsVarargs(value: js.Any*): Self = this.set("demands", js.Array(value :_*))
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = this.set("demands", value.asInstanceOf[js.Any])
+    def setExecution(value: StringDictionary[js.Any]): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setGroups(value: js.Array[TaskGroupDefinition]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecution(value: StringDictionary[js.Any]): Self = this.set("execution", value.asInstanceOf[js.Any])
+    def setGroupsVarargs(value: TaskGroupDefinition*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setHelpMarkDown(value: String): Self = StObject.set(x, "helpMarkDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: TaskGroupDefinition*): Self = this.set("groups", js.Array(value :_*))
+    def setHostType(value: String): Self = StObject.set(x, "hostType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Array[TaskGroupDefinition]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpMarkDown(value: String): Self = this.set("helpMarkDown", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostType(value: String): Self = this.set("hostType", value.asInstanceOf[js.Any])
+    def setInputs(value: js.Array[TaskInputDefinition]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setInputsVarargs(value: TaskInputDefinition*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInstanceNameFormat(value: String): Self = StObject.set(x, "instanceNameFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputsVarargs(value: TaskInputDefinition*): Self = this.set("inputs", js.Array(value :_*))
+    def setMinimumAgentVersion(value: String): Self = StObject.set(x, "minimumAgentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: js.Array[TaskInputDefinition]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceNameFormat(value: String): Self = this.set("instanceNameFormat", value.asInstanceOf[js.Any])
+    def setPackageLocation(value: String): Self = StObject.set(x, "packageLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumAgentVersion(value: String): Self = this.set("minimumAgentVersion", value.asInstanceOf[js.Any])
+    def setPackageType(value: String): Self = StObject.set(x, "packageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageLocation(value: String): Self = this.set("packageLocation", value.asInstanceOf[js.Any])
+    def setReleaseNotes(value: String): Self = StObject.set(x, "releaseNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageType(value: String): Self = this.set("packageType", value.asInstanceOf[js.Any])
+    def setRunsOn(value: js.Array[String]): Self = StObject.set(x, "runsOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: Boolean): Self = this.set("preview", value.asInstanceOf[js.Any])
+    def setRunsOnVarargs(value: String*): Self = StObject.set(x, "runsOn", js.Array(value :_*))
     
     @scala.inline
-    def setReleaseNotes(value: String): Self = this.set("releaseNotes", value.asInstanceOf[js.Any])
+    def setServerOwned(value: Boolean): Self = StObject.set(x, "serverOwned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunsOnVarargs(value: String*): Self = this.set("runsOn", js.Array(value :_*))
+    def setSourceDefinitions(value: js.Array[TaskSourceDefinition]): Self = StObject.set(x, "sourceDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunsOn(value: js.Array[String]): Self = this.set("runsOn", value.asInstanceOf[js.Any])
+    def setSourceDefinitionsVarargs(value: TaskSourceDefinition*): Self = StObject.set(x, "sourceDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setServerOwned(value: Boolean): Self = this.set("serverOwned", value.asInstanceOf[js.Any])
+    def setSourceLocation(value: String): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceDefinitionsVarargs(value: TaskSourceDefinition*): Self = this.set("sourceDefinitions", js.Array(value :_*))
+    def setVersion(value: TaskVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceDefinitions(value: js.Array[TaskSourceDefinition]): Self = this.set("sourceDefinitions", value.asInstanceOf[js.Any])
+    def setVisibility(value: js.Array[String]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLocation(value: String): Self = this.set("sourceLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: TaskVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibilityVarargs(value: String*): Self = this.set("visibility", js.Array(value :_*))
-    
-    @scala.inline
-    def setVisibility(value: js.Array[String]): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    def setVisibilityVarargs(value: String*): Self = StObject.set(x, "visibility", js.Array(value :_*))
   }
 }

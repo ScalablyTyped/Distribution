@@ -1,5 +1,6 @@
 package typings.opentok.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.opentok.opentokStrings.manual
   - typings.opentok.opentokStrings.always
 */
-trait ArchiveMode extends js.Object
+trait ArchiveMode extends StObject
 object ArchiveMode {
   
   @scala.inline

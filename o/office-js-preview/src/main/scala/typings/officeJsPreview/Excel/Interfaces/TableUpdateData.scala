@@ -1,12 +1,13 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
 @js.native
-trait TableUpdateData extends js.Object {
+trait TableUpdateData extends StObject {
   
   /**
     *
@@ -100,78 +101,66 @@ object TableUpdateData {
   }
   
   @scala.inline
-  implicit class TableUpdateDataOps[Self <: TableUpdateData] (val x: Self) extends AnyVal {
+  implicit class TableUpdateDataMutableBuilder[Self <: TableUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlightFirstColumn(value: Boolean): Self = StObject.set(x, "highlightFirstColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightFirstColumnUndefined: Self = StObject.set(x, "highlightFirstColumn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlightLastColumn(value: Boolean): Self = StObject.set(x, "highlightLastColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightFirstColumn(value: Boolean): Self = this.set("highlightFirstColumn", value.asInstanceOf[js.Any])
+    def setHighlightLastColumnUndefined: Self = StObject.set(x, "highlightLastColumn", js.undefined)
     
     @scala.inline
-    def deleteHighlightFirstColumn: Self = this.set("highlightFirstColumn", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightLastColumn(value: Boolean): Self = this.set("highlightLastColumn", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHighlightLastColumn: Self = this.set("highlightLastColumn", js.undefined)
+    def setShowBandedColumns(value: Boolean): Self = StObject.set(x, "showBandedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setShowBandedColumnsUndefined: Self = StObject.set(x, "showBandedColumns", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setShowBandedRows(value: Boolean): Self = StObject.set(x, "showBandedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBandedColumns(value: Boolean): Self = this.set("showBandedColumns", value.asInstanceOf[js.Any])
+    def setShowBandedRowsUndefined: Self = StObject.set(x, "showBandedRows", js.undefined)
     
     @scala.inline
-    def deleteShowBandedColumns: Self = this.set("showBandedColumns", js.undefined)
+    def setShowFilterButton(value: Boolean): Self = StObject.set(x, "showFilterButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBandedRows(value: Boolean): Self = this.set("showBandedRows", value.asInstanceOf[js.Any])
+    def setShowFilterButtonUndefined: Self = StObject.set(x, "showFilterButton", js.undefined)
     
     @scala.inline
-    def deleteShowBandedRows: Self = this.set("showBandedRows", js.undefined)
+    def setShowHeaders(value: Boolean): Self = StObject.set(x, "showHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFilterButton(value: Boolean): Self = this.set("showFilterButton", value.asInstanceOf[js.Any])
+    def setShowHeadersUndefined: Self = StObject.set(x, "showHeaders", js.undefined)
     
     @scala.inline
-    def deleteShowFilterButton: Self = this.set("showFilterButton", js.undefined)
+    def setShowTotals(value: Boolean): Self = StObject.set(x, "showTotals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHeaders(value: Boolean): Self = this.set("showHeaders", value.asInstanceOf[js.Any])
+    def setShowTotalsUndefined: Self = StObject.set(x, "showTotals", js.undefined)
     
     @scala.inline
-    def deleteShowHeaders: Self = this.set("showHeaders", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTotals(value: Boolean): Self = this.set("showTotals", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteShowTotals: Self = this.set("showTotals", js.undefined)
+    def setTableStyle(value: TableStyleUpdateData): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTableStyle(value: TableStyleUpdateData): Self = this.set("tableStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableStyle: Self = this.set("tableStyle", js.undefined)
+    def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
   }
 }

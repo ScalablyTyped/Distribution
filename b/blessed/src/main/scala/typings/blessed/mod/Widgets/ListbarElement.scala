@@ -4,6 +4,7 @@ import typings.blessed.blessedStrings.`remove item`
 import typings.blessed.blessedStrings.`select tab`
 import typings.blessed.blessedStrings.`set items`
 import typings.blessed.mod.Widgets.Types.ListbarCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

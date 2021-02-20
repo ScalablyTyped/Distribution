@@ -1,5 +1,6 @@
 package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The Docker execuctor specification.
   */
 @js.native
-trait SchemaDockerExecutor extends js.Object {
+trait SchemaDockerExecutor extends StObject {
   
   /**
     * Required. The command or newline delimited script to run. The command
@@ -34,30 +35,18 @@ object SchemaDockerExecutor {
   }
   
   @scala.inline
-  implicit class SchemaDockerExecutorOps[Self <: SchemaDockerExecutor] (val x: Self) extends AnyVal {
+  implicit class SchemaDockerExecutorMutableBuilder[Self <: SchemaDockerExecutor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageName(value: String): Self = StObject.set(x, "imageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmd(value: String): Self = this.set("cmd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCmd: Self = this.set("cmd", js.undefined)
-    
-    @scala.inline
-    def setImageName(value: String): Self = this.set("imageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageName: Self = this.set("imageName", js.undefined)
+    def setImageNameUndefined: Self = StObject.set(x, "imageName", js.undefined)
   }
 }

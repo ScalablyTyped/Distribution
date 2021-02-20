@@ -1,36 +1,32 @@
 package typings.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BlendingState extends js.Object
+sealed trait BlendingState extends StObject
 @JSImport("cesium", "BlendingState")
 @js.native
-object BlendingState extends js.Object {
+object BlendingState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BlendingState with Double] = js.native
   
   @js.native
   sealed trait ADDITIVE_BLEND extends BlendingState
-  /* 3 */ @js.native
-  object ADDITIVE_BLEND extends TopLevel[ADDITIVE_BLEND with Double]
+  /* 3 */ val ADDITIVE_BLEND: typings.cesium.mod.BlendingState.ADDITIVE_BLEND with Double = js.native
   
   @js.native
   sealed trait ALPHA_BLEND extends BlendingState
-  /* 1 */ @js.native
-  object ALPHA_BLEND extends TopLevel[ALPHA_BLEND with Double]
+  /* 1 */ val ALPHA_BLEND: typings.cesium.mod.BlendingState.ALPHA_BLEND with Double = js.native
   
   @js.native
   sealed trait DISABLED extends BlendingState
-  /* 0 */ @js.native
-  object DISABLED extends TopLevel[DISABLED with Double]
+  /* 0 */ val DISABLED: typings.cesium.mod.BlendingState.DISABLED with Double = js.native
   
   @js.native
   sealed trait PRE_MULTIPLIED_ALPHA_BLEND extends BlendingState
-  /* 2 */ @js.native
-  object PRE_MULTIPLIED_ALPHA_BLEND extends TopLevel[PRE_MULTIPLIED_ALPHA_BLEND with Double]
+  /* 2 */ val PRE_MULTIPLIED_ALPHA_BLEND: typings.cesium.mod.BlendingState.PRE_MULTIPLIED_ALPHA_BLEND with Double = js.native
 }

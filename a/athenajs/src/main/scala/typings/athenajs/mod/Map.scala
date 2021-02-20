@@ -1,13 +1,14 @@
 package typings.athenajs.mod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Map")
 @js.native
-class Map protected () extends js.Object {
+class Map protected () extends StObject {
   def this(options: MapOptions) = this()
   
   def addObject(obj: Drawable): Unit = js.native

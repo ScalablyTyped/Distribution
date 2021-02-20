@@ -1,11 +1,12 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait View[D] extends js.Object {
+trait View[D] extends StObject {
   
   var map: js.UndefOr[String | DocumentInfer[D]] = js.native
   
@@ -20,36 +21,24 @@ object View {
   }
   
   @scala.inline
-  implicit class ViewOps[Self <: View[_], D] (val x: Self with View[D]) extends AnyVal {
+  implicit class ViewMutableBuilder[Self <: View[_], D] (val x: Self with View[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMap(value: String | DocumentInfer[D]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMapFunction1(value: /* doc */ D with Document => Unit): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def setMapFunction1(value: /* doc */ D with Document => Unit): Self = this.set("map", js.Any.fromFunction1(value))
+    def setReduce(value: String | DocumentInfer[D]): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: String | DocumentInfer[D]): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setReduceFunction1(value: /* doc */ D with Document => Unit): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
-    
-    @scala.inline
-    def setReduceFunction1(value: /* doc */ D with Document => Unit): Self = this.set("reduce", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReduce(value: String | DocumentInfer[D]): Self = this.set("reduce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReduce: Self = this.set("reduce", js.undefined)
+    def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
   }
 }

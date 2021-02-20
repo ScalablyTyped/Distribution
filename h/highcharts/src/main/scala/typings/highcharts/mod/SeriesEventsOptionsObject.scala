@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeriesEventsOptionsObject extends js.Object {
+trait SeriesEventsOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) Fires after the series has finished its
@@ -82,72 +83,60 @@ object SeriesEventsOptionsObject {
   }
   
   @scala.inline
-  implicit class SeriesEventsOptionsObjectOps[Self <: SeriesEventsOptionsObject] (val x: Self) extends AnyVal {
+  implicit class SeriesEventsOptionsObjectMutableBuilder[Self <: SeriesEventsOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterAnimate(value: SeriesAfterAnimateCallbackFunction): Self = StObject.set(x, "afterAnimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterAnimateUndefined: Self = StObject.set(x, "afterAnimate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckboxClick(value: js.Function | SeriesCheckboxClickCallbackFunction): Self = StObject.set(x, "checkboxClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterAnimate(value: SeriesAfterAnimateCallbackFunction): Self = this.set("afterAnimate", value.asInstanceOf[js.Any])
+    def setCheckboxClickUndefined: Self = StObject.set(x, "checkboxClick", js.undefined)
     
     @scala.inline
-    def deleteAfterAnimate: Self = this.set("afterAnimate", js.undefined)
+    def setClick(value: SeriesClickCallbackFunction): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxClick(value: js.Function | SeriesCheckboxClickCallbackFunction): Self = this.set("checkboxClick", value.asInstanceOf[js.Any])
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def deleteCheckboxClick: Self = this.set("checkboxClick", js.undefined)
+    def setHide(value: SeriesHideCallbackFunction): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: SeriesClickCallbackFunction): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setLegendItemClick(value: SeriesLegendItemClickCallbackFunction): Self = StObject.set(x, "legendItemClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: SeriesHideCallbackFunction): Self = this.set("hide", value.asInstanceOf[js.Any])
+    def setLegendItemClickUndefined: Self = StObject.set(x, "legendItemClick", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setMouseOut(value: SeriesMouseOutCallbackFunction): Self = StObject.set(x, "mouseOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendItemClick(value: SeriesLegendItemClickCallbackFunction): Self = this.set("legendItemClick", value.asInstanceOf[js.Any])
+    def setMouseOutUndefined: Self = StObject.set(x, "mouseOut", js.undefined)
     
     @scala.inline
-    def deleteLegendItemClick: Self = this.set("legendItemClick", js.undefined)
+    def setMouseOver(value: SeriesMouseOverCallbackFunction): Self = StObject.set(x, "mouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseOut(value: SeriesMouseOutCallbackFunction): Self = this.set("mouseOut", value.asInstanceOf[js.Any])
+    def setMouseOverUndefined: Self = StObject.set(x, "mouseOver", js.undefined)
     
     @scala.inline
-    def deleteMouseOut: Self = this.set("mouseOut", js.undefined)
+    def setSetRootNode(value: js.Function): Self = StObject.set(x, "setRootNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseOver(value: SeriesMouseOverCallbackFunction): Self = this.set("mouseOver", value.asInstanceOf[js.Any])
+    def setSetRootNodeUndefined: Self = StObject.set(x, "setRootNode", js.undefined)
     
     @scala.inline
-    def deleteMouseOver: Self = this.set("mouseOver", js.undefined)
+    def setShow(value: SeriesShowCallbackFunction): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetRootNode(value: js.Function): Self = this.set("setRootNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetRootNode: Self = this.set("setRootNode", js.undefined)
-    
-    @scala.inline
-    def setShow(value: SeriesShowCallbackFunction): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

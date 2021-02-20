@@ -2,28 +2,50 @@ package typings.dateFns
 
 import typings.dateFns.anon.WeekStartsOn
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Namespace)
-@js.native
-object esmDifferenceInCalendarWeeksMod extends js.Object {
+object esmDifferenceInCalendarWeeksMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Double): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Double, options: typings.dateFns.anon.Locale): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Double, options: WeekStartsOn): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Date): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Date, options: typings.dateFns.anon.Locale): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Date, options: WeekStartsOn): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Double): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Double, options: typings.dateFns.anon.Locale): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Double, options: WeekStartsOn): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Date): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Date, options: typings.dateFns.anon.Locale): Double = js.native
+    @JSImport("date-fns/esm/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Date, options: WeekStartsOn): Double = js.native
   }
 }

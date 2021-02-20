@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MobileBroadbandPinLockState extends js.Object
+sealed trait MobileBroadbandPinLockState extends StObject
 /** Describes the possible PIN lock states of a mobile broadband PIN. */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandPinLockState")
 @js.native
-object MobileBroadbandPinLockState extends js.Object {
+object MobileBroadbandPinLockState extends StObject {
   
   /** A PIN input is required. The MobileBroadbandPinType will contain more information on which PIN is needed. */
   @js.native

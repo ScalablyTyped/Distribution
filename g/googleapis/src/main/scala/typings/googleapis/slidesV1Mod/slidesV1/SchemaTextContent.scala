@@ -1,6 +1,7 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * text box or rectangle) or a table cell in a page.
   */
 @js.native
-trait SchemaTextContent extends js.Object {
+trait SchemaTextContent extends StObject {
   
   /**
     * The bulleted lists contained in this text, keyed by list ID.
@@ -32,33 +33,21 @@ object SchemaTextContent {
   }
   
   @scala.inline
-  implicit class SchemaTextContentOps[Self <: SchemaTextContent] (val x: Self) extends AnyVal {
+  implicit class SchemaTextContentMutableBuilder[Self <: SchemaTextContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLists(value: StringDictionary[SchemaList]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextElements(value: js.Array[SchemaTextElement]): Self = StObject.set(x, "textElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLists(value: StringDictionary[SchemaList]): Self = this.set("lists", value.asInstanceOf[js.Any])
+    def setTextElementsUndefined: Self = StObject.set(x, "textElements", js.undefined)
     
     @scala.inline
-    def deleteLists: Self = this.set("lists", js.undefined)
-    
-    @scala.inline
-    def setTextElementsVarargs(value: SchemaTextElement*): Self = this.set("textElements", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextElements(value: js.Array[SchemaTextElement]): Self = this.set("textElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextElements: Self = this.set("textElements", js.undefined)
+    def setTextElementsVarargs(value: SchemaTextElement*): Self = StObject.set(x, "textElements", js.Array(value :_*))
   }
 }

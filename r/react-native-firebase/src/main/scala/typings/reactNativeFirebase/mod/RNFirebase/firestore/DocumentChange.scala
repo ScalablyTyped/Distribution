@@ -3,12 +3,13 @@ package typings.reactNativeFirebase.mod.RNFirebase.firestore
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.added
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.modified
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.removed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentChange extends js.Object {
+trait DocumentChange extends StObject {
   
   val doc: DocumentSnapshot = js.native
   
@@ -28,30 +29,18 @@ object DocumentChange {
   }
   
   @scala.inline
-  implicit class DocumentChangeOps[Self <: DocumentChange] (val x: Self) extends AnyVal {
+  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoc(value: DocumentSnapshot): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc(value: DocumentSnapshot): Self = this.set("doc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewIndex(value: Double): Self = this.set("newIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldIndex(value: Double): Self = this.set("oldIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: added | modified | removed): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: added | modified | removed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

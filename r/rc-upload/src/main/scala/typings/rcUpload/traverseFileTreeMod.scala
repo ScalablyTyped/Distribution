@@ -2,14 +2,15 @@ package typings.rcUpload
 
 import typings.rcUpload.anon.RcFilewebkitRelativePaths
 import typings.std.DataTransferItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-upload/es/traverseFileTree", JSImport.Namespace)
-@js.native
-object traverseFileTreeMod extends js.Object {
+object traverseFileTreeMod {
   
+  @JSImport("rc-upload/es/traverseFileTree", JSImport.Default)
+  @js.native
   def default(files: js.Array[InternalDataTransferItem], callback: js.Any, isAccepted: js.Any): Unit = js.native
   
   @js.native

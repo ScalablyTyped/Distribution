@@ -1,6 +1,7 @@
 package typings.pdfmake.interfacesMod
 
 import typings.pdfmake.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,57 +30,45 @@ object ContentBase {
   }
   
   @scala.inline
-  implicit class ContentBaseOps[Self <: ContentBase] (val x: Self) extends AnyVal {
+  implicit class ContentBaseMutableBuilder[Self <: ContentBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadlineLevel(value: Double): Self = StObject.set(x, "headlineLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsolutePosition(value: X): Self = this.set("absolutePosition", value.asInstanceOf[js.Any])
+    def setHeadlineLevelUndefined: Self = StObject.set(x, "headlineLevel", js.undefined)
     
     @scala.inline
-    def deleteAbsolutePosition: Self = this.set("absolutePosition", js.undefined)
+    def setPageBreak(value: PageBreak): Self = StObject.set(x, "pageBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadlineLevel(value: Double): Self = this.set("headlineLevel", value.asInstanceOf[js.Any])
+    def setPageBreakUndefined: Self = StObject.set(x, "pageBreak", js.undefined)
     
     @scala.inline
-    def deleteHeadlineLevel: Self = this.set("headlineLevel", js.undefined)
+    def setPageOrientation(value: PageOrientation): Self = StObject.set(x, "pageOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageBreak(value: PageBreak): Self = this.set("pageBreak", value.asInstanceOf[js.Any])
+    def setPageOrientationUndefined: Self = StObject.set(x, "pageOrientation", js.undefined)
     
     @scala.inline
-    def deletePageBreak: Self = this.set("pageBreak", js.undefined)
+    def setRelativePosition(value: X): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageOrientation(value: PageOrientation): Self = this.set("pageOrientation", value.asInstanceOf[js.Any])
+    def setRelativePositionUndefined: Self = StObject.set(x, "relativePosition", js.undefined)
     
     @scala.inline
-    def deletePageOrientation: Self = this.set("pageOrientation", js.undefined)
+    def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativePosition(value: X): Self = this.set("relativePosition", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteRelativePosition: Self = this.set("relativePosition", js.undefined)
-    
-    @scala.inline
-    def setStyleVarargs(value: String*): Self = this.set("style", js.Array(value :_*))
-    
-    @scala.inline
-    def setStyle(value: String | js.Array[String] | Style): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
   }
 }

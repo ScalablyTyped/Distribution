@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorePage extends js.Object {
+trait StorePage extends StObject {
   
   /** Unique ID of this page. Assigned by the server. Immutable once assigned. */
   var id: js.UndefOr[String] = js.native
@@ -31,42 +32,30 @@ object StorePage {
   }
   
   @scala.inline
-  implicit class StorePageOps[Self <: StorePage] (val x: Self) extends AnyVal {
+  implicit class StorePageMutableBuilder[Self <: StorePage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLink(value: js.Array[String]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLinkVarargs(value: String*): Self = StObject.set(x, "link", js.Array(value :_*))
     
     @scala.inline
-    def setLinkVarargs(value: String*): Self = this.set("link", js.Array(value :_*))
+    def setName(value: js.Array[LocalizedText]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: js.Array[String]): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
-    
-    @scala.inline
-    def setNameVarargs(value: LocalizedText*): Self = this.set("name", js.Array(value :_*))
-    
-    @scala.inline
-    def setName(value: js.Array[LocalizedText]): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameVarargs(value: LocalizedText*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

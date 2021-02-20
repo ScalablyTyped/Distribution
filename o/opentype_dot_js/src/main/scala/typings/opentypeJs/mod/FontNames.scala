@@ -1,11 +1,12 @@
 package typings.opentypeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontNames extends js.Object {
+trait FontNames extends StObject {
   
   var copyright: LocalizedName = js.native
   
@@ -59,60 +60,48 @@ object FontNames {
   }
   
   @scala.inline
-  implicit class FontNamesOps[Self <: FontNames] (val x: Self) extends AnyVal {
+  implicit class FontNamesMutableBuilder[Self <: FontNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: LocalizedName): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: LocalizedName): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesigner(value: LocalizedName): Self = StObject.set(x, "designer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: LocalizedName): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setDesignerURL(value: LocalizedName): Self = StObject.set(x, "designerURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: LocalizedName): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFontFamily(value: LocalizedName): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesigner(value: LocalizedName): Self = this.set("designer", value.asInstanceOf[js.Any])
+    def setFontSubfamily(value: LocalizedName): Self = StObject.set(x, "fontSubfamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesignerURL(value: LocalizedName): Self = this.set("designerURL", value.asInstanceOf[js.Any])
+    def setFullName(value: LocalizedName): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: LocalizedName): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setLicense(value: LocalizedName): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSubfamily(value: LocalizedName): Self = this.set("fontSubfamily", value.asInstanceOf[js.Any])
+    def setLicenseURL(value: LocalizedName): Self = StObject.set(x, "licenseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullName(value: LocalizedName): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    def setManufacturer(value: LocalizedName): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicense(value: LocalizedName): Self = this.set("license", value.asInstanceOf[js.Any])
+    def setManufacturerURL(value: LocalizedName): Self = StObject.set(x, "manufacturerURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseURL(value: LocalizedName): Self = this.set("licenseURL", value.asInstanceOf[js.Any])
+    def setPostScriptName(value: LocalizedName): Self = StObject.set(x, "postScriptName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: LocalizedName): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setTrademark(value: LocalizedName): Self = StObject.set(x, "trademark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturerURL(value: LocalizedName): Self = this.set("manufacturerURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostScriptName(value: LocalizedName): Self = this.set("postScriptName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrademark(value: LocalizedName): Self = this.set("trademark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: LocalizedName): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: LocalizedName): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains information related to the reminder alert.
   */
 @js.native
-trait ASPxClientReminderAlertNotification extends js.Object {
+trait ASPxClientReminderAlertNotification extends StObject {
   
   /**
     * Gets the appointment associated with the reminder.
@@ -62,39 +63,27 @@ object ASPxClientReminderAlertNotification {
   }
   
   @scala.inline
-  implicit class ASPxClientReminderAlertNotificationOps[Self <: ASPxClientReminderAlertNotification] (val x: Self) extends AnyVal {
+  implicit class ASPxClientReminderAlertNotificationMutableBuilder[Self <: ASPxClientReminderAlertNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppointment(value: ASPxClientAppointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAppointment(value: () => ASPxClientAppointment): Self = StObject.set(x, "GetAppointment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetReminder(value: () => ASPxClientReminder): Self = StObject.set(x, "GetReminder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAppointment(value: () => ASPxClientAppointment): Self = this.set("GetAppointment", js.Any.fromFunction0(value))
+    def setGetReminderId(value: () => String): Self = StObject.set(x, "GetReminderId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetReminder(value: () => ASPxClientReminder): Self = this.set("GetReminder", js.Any.fromFunction0(value))
+    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetReminderId(value: () => String): Self = this.set("GetReminderId", js.Any.fromFunction0(value))
+    def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppointment(value: ASPxClientAppointment): Self = this.set("appointment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandled(value: Boolean): Self = this.set("handled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIgnore(value: Boolean): Self = this.set("ignore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReminder(value: ASPxClientReminder): Self = this.set("reminder", value.asInstanceOf[js.Any])
+    def setReminder(value: ASPxClientReminder): Self = StObject.set(x, "reminder", value.asInstanceOf[js.Any])
   }
 }

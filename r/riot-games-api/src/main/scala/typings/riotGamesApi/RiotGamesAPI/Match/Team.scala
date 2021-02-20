@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.Match
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Team extends js.Object {
+trait Team extends StObject {
   
   var bans: js.Array[BannedChampion] = js.native
   
@@ -59,63 +60,51 @@ object Team {
   }
   
   @scala.inline
-  implicit class TeamOps[Self <: Team] (val x: Self) extends AnyVal {
+  implicit class TeamMutableBuilder[Self <: Team] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBans(value: js.Array[BannedChampion]): Self = StObject.set(x, "bans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBansVarargs(value: BannedChampion*): Self = StObject.set(x, "bans", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaronKills(value: Double): Self = StObject.set(x, "baronKills", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBansVarargs(value: BannedChampion*): Self = this.set("bans", js.Array(value :_*))
+    def setDominionVictoryScore(value: Double): Self = StObject.set(x, "dominionVictoryScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBans(value: js.Array[BannedChampion]): Self = this.set("bans", value.asInstanceOf[js.Any])
+    def setDragonKills(value: Double): Self = StObject.set(x, "dragonKills", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaronKills(value: Double): Self = this.set("baronKills", value.asInstanceOf[js.Any])
+    def setFirstBaron(value: Boolean): Self = StObject.set(x, "firstBaron", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDominionVictoryScore(value: Double): Self = this.set("dominionVictoryScore", value.asInstanceOf[js.Any])
+    def setFirstBlood(value: Boolean): Self = StObject.set(x, "firstBlood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragonKills(value: Double): Self = this.set("dragonKills", value.asInstanceOf[js.Any])
+    def setFirstDragon(value: Boolean): Self = StObject.set(x, "firstDragon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstBaron(value: Boolean): Self = this.set("firstBaron", value.asInstanceOf[js.Any])
+    def setFirstInhibitor(value: Boolean): Self = StObject.set(x, "firstInhibitor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstBlood(value: Boolean): Self = this.set("firstBlood", value.asInstanceOf[js.Any])
+    def setFirstTower(value: Boolean): Self = StObject.set(x, "firstTower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDragon(value: Boolean): Self = this.set("firstDragon", value.asInstanceOf[js.Any])
+    def setInhibitorKills(value: Double): Self = StObject.set(x, "inhibitorKills", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstInhibitor(value: Boolean): Self = this.set("firstInhibitor", value.asInstanceOf[js.Any])
+    def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstTower(value: Boolean): Self = this.set("firstTower", value.asInstanceOf[js.Any])
+    def setTowerKills(value: Double): Self = StObject.set(x, "towerKills", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInhibitorKills(value: Double): Self = this.set("inhibitorKills", value.asInstanceOf[js.Any])
+    def setVilemawKills(value: Double): Self = StObject.set(x, "vilemawKills", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamId(value: Double): Self = this.set("teamId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTowerKills(value: Double): Self = this.set("towerKills", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVilemawKills(value: Double): Self = this.set("vilemawKills", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWinner(value: Boolean): Self = this.set("winner", value.asInstanceOf[js.Any])
+    def setWinner(value: Boolean): Self = StObject.set(x, "winner", value.asInstanceOf[js.Any])
   }
 }

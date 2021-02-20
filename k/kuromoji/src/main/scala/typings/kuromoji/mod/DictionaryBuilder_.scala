@@ -2,12 +2,13 @@ package typings.kuromoji.mod
 
 import typings.doublearray.doublearray.DoubleArray
 import typings.kuromoji.anon.Tokeninfodictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DictionaryBuilder_ extends js.Object {
+trait DictionaryBuilder_ extends StObject {
   
   def addTokenInfoDictionary(text: String): DictionaryBuilder_ = js.native
   
@@ -52,57 +53,45 @@ object DictionaryBuilder_ {
   }
   
   @scala.inline
-  implicit class DictionaryBuilder_Ops[Self <: DictionaryBuilder_] (val x: Self) extends AnyVal {
+  implicit class DictionaryBuilder_MutableBuilder[Self <: DictionaryBuilder_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTokenInfoDictionary(value: String => DictionaryBuilder_): Self = StObject.set(x, "addTokenInfoDictionary", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuild(value: () => DynamicDictionaries): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildConnectionCosts(value: () => ConnectionCosts): Self = StObject.set(x, "buildConnectionCosts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddTokenInfoDictionary(value: String => DictionaryBuilder_): Self = this.set("addTokenInfoDictionary", js.Any.fromFunction1(value))
+    def setBuildDoubleArray(value: () => DoubleArray): Self = StObject.set(x, "buildDoubleArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuild(value: () => DynamicDictionaries): Self = this.set("build", js.Any.fromFunction0(value))
+    def setBuildTokenInfoDictionary(value: () => Tokeninfodictionary): Self = StObject.set(x, "buildTokenInfoDictionary", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuildConnectionCosts(value: () => ConnectionCosts): Self = this.set("buildConnectionCosts", js.Any.fromFunction0(value))
+    def setBuildUnknownDictionary(value: () => UnknownDictionary): Self = StObject.set(x, "buildUnknownDictionary", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuildDoubleArray(value: () => DoubleArray): Self = this.set("buildDoubleArray", js.Any.fromFunction0(value))
+    def setCharDef(value: String => DictionaryBuilder_): Self = StObject.set(x, "charDef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuildTokenInfoDictionary(value: () => Tokeninfodictionary): Self = this.set("buildTokenInfoDictionary", js.Any.fromFunction0(value))
+    def setCostMatrix(value: String => DictionaryBuilder_): Self = StObject.set(x, "costMatrix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuildUnknownDictionary(value: () => UnknownDictionary): Self = this.set("buildUnknownDictionary", js.Any.fromFunction0(value))
+    def setTid_entries(value: js.Array[String]): Self = StObject.set(x, "tid_entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharDef(value: String => DictionaryBuilder_): Self = this.set("charDef", js.Any.fromFunction1(value))
+    def setTid_entriesVarargs(value: String*): Self = StObject.set(x, "tid_entries", js.Array(value :_*))
     
     @scala.inline
-    def setCostMatrix(value: String => DictionaryBuilder_): Self = this.set("costMatrix", js.Any.fromFunction1(value))
+    def setUnkDef(value: String => DictionaryBuilder_): Self = StObject.set(x, "unkDef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTid_entriesVarargs(value: String*): Self = this.set("tid_entries", js.Array(value :_*))
+    def setUnk_entries(value: js.Array[String]): Self = StObject.set(x, "unk_entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTid_entries(value: js.Array[String]): Self = this.set("tid_entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnkDef(value: String => DictionaryBuilder_): Self = this.set("unkDef", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnk_entriesVarargs(value: String*): Self = this.set("unk_entries", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnk_entries(value: js.Array[String]): Self = this.set("unk_entries", value.asInstanceOf[js.Any])
+    def setUnk_entriesVarargs(value: String*): Self = StObject.set(x, "unk_entries", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
 import typings.dockerode.anon.GID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecretReference extends js.Object {
+trait SecretReference extends StObject {
   
   var File: js.UndefOr[GID] = js.native
   
@@ -23,36 +24,24 @@ object SecretReference {
   }
   
   @scala.inline
-  implicit class SecretReferenceOps[Self <: SecretReference] (val x: Self) extends AnyVal {
+  implicit class SecretReferenceMutableBuilder[Self <: SecretReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile(value: GID): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileUndefined: Self = StObject.set(x, "File", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretID(value: String): Self = StObject.set(x, "SecretID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: GID): Self = this.set("File", value.asInstanceOf[js.Any])
+    def setSecretIDUndefined: Self = StObject.set(x, "SecretID", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("File", js.undefined)
+    def setSecretName(value: String): Self = StObject.set(x, "SecretName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretID(value: String): Self = this.set("SecretID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretID: Self = this.set("SecretID", js.undefined)
-    
-    @scala.inline
-    def setSecretName(value: String): Self = this.set("SecretName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretName: Self = this.set("SecretName", js.undefined)
+    def setSecretNameUndefined: Self = StObject.set(x, "SecretName", js.undefined)
   }
 }

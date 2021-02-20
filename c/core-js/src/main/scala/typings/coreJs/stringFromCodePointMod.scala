@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/string/from-code-point", JSImport.Namespace)
-@js.native
-object stringFromCodePointMod
-  extends TopLevel[js.Function1[/* repeated */ Double, java.lang.String]]
+object stringFromCodePointMod {
+  
+  /* was `typeof core.String.fromCodePoint` */
+  @JSImport("core-js/library/fn/string/from-code-point", JSImport.Namespace)
+  @js.native
+  def apply(codePoints: Double*): java.lang.String = js.native
+}

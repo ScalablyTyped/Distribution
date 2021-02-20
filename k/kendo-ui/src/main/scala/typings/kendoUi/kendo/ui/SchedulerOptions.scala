@@ -2,12 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.SchedulerDataSource
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerOptions extends js.Object {
+trait SchedulerOptions extends StObject {
   
   var add: js.UndefOr[js.Function1[/* e */ SchedulerAddEvent, Unit]] = js.native
   
@@ -124,345 +125,333 @@ object SchedulerOptions {
   }
   
   @scala.inline
-  implicit class SchedulerOptionsOps[Self <: SchedulerOptions] (val x: Self) extends AnyVal {
+  implicit class SchedulerOptionsMutableBuilder[Self <: SchedulerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: /* e */ SchedulerAddEvent => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllDayEventTemplate(value: String | js.Function): Self = StObject.set(x, "allDayEventTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: /* e */ SchedulerAddEvent => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setAllDayEventTemplateUndefined: Self = StObject.set(x, "allDayEventTemplate", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setAllDaySlot(value: Boolean): Self = StObject.set(x, "allDaySlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllDayEventTemplate(value: String | js.Function): Self = this.set("allDayEventTemplate", value.asInstanceOf[js.Any])
+    def setAllDaySlotUndefined: Self = StObject.set(x, "allDaySlot", js.undefined)
     
     @scala.inline
-    def deleteAllDayEventTemplate: Self = this.set("allDayEventTemplate", js.undefined)
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllDaySlot(value: Boolean): Self = this.set("allDaySlot", value.asInstanceOf[js.Any])
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def deleteAllDaySlot: Self = this.set("allDaySlot", js.undefined)
+    def setCancel(value: /* e */ SchedulerCancelEvent => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setChange(value: /* e */ SchedulerChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancel(value: /* e */ SchedulerCancelEvent => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setCurrentTimeMarker(value: Boolean | SchedulerCurrentTimeMarker): Self = StObject.set(x, "currentTimeMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* e */ SchedulerChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setCurrentTimeMarkerUndefined: Self = StObject.set(x, "currentTimeMarker", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setDataBinding(value: /* e */ SchedulerDataBindingEvent => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCurrentTimeMarker(value: Boolean | SchedulerCurrentTimeMarker): Self = this.set("currentTimeMarker", value.asInstanceOf[js.Any])
+    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def deleteCurrentTimeMarker: Self = this.set("currentTimeMarker", js.undefined)
+    def setDataBound(value: /* e */ SchedulerDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataBinding(value: /* e */ SchedulerDataBindingEvent => Unit): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    def setDataSource(value: js.Any | SchedulerDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: /* e */ SchedulerDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any | SchedulerDataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDateHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "dateHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDateHeaderTemplateUndefined: Self = StObject.set(x, "dateHeaderTemplate", js.undefined)
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setEdit(value: /* e */ SchedulerEditEvent => Unit): Self = StObject.set(x, "edit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateHeaderTemplate(value: String | js.Function): Self = this.set("dateHeaderTemplate", value.asInstanceOf[js.Any])
+    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
     @scala.inline
-    def deleteDateHeaderTemplate: Self = this.set("dateHeaderTemplate", js.undefined)
+    def setEditable(value: Boolean | SchedulerEditable): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdit(value: /* e */ SchedulerEditEvent => Unit): Self = this.set("edit", js.Any.fromFunction1(value))
+    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     @scala.inline
-    def deleteEdit: Self = this.set("edit", js.undefined)
+    def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: Boolean | SchedulerEditable): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteEditable: Self = this.set("editable", js.undefined)
+    def setEventTemplate(value: String | js.Function): Self = StObject.set(x, "eventTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Date): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setEventTemplateUndefined: Self = StObject.set(x, "eventTemplate", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setFooter(value: Boolean | SchedulerFooter): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTemplate(value: String | js.Function): Self = this.set("eventTemplate", value.asInstanceOf[js.Any])
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def deleteEventTemplate: Self = this.set("eventTemplate", js.undefined)
+    def setGroup(value: SchedulerGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: Boolean | SchedulerFooter): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setGroupHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "groupHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
+    def setGroupHeaderTemplateUndefined: Self = StObject.set(x, "groupHeaderTemplate", js.undefined)
     
     @scala.inline
-    def setGroup(value: SchedulerGroup): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupHeaderTemplate(value: String | js.Function): Self = this.set("groupHeaderTemplate", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGroupHeaderTemplate: Self = this.set("groupHeaderTemplate", js.undefined)
+    def setMajorTick(value: Double): Self = StObject.set(x, "majorTick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMajorTickUndefined: Self = StObject.set(x, "majorTick", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMajorTimeHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "majorTimeHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorTick(value: Double): Self = this.set("majorTick", value.asInstanceOf[js.Any])
+    def setMajorTimeHeaderTemplateUndefined: Self = StObject.set(x, "majorTimeHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteMajorTick: Self = this.set("majorTick", js.undefined)
+    def setMax(value: Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorTimeHeaderTemplate(value: String | js.Function): Self = this.set("majorTimeHeaderTemplate", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteMajorTimeHeaderTemplate: Self = this.set("majorTimeHeaderTemplate", js.undefined)
+    def setMessages(value: SchedulerMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Date): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMin(value: Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: SchedulerMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setMinorTickCount(value: Double): Self = StObject.set(x, "minorTickCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Date): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMinorTickCountUndefined: Self = StObject.set(x, "minorTickCount", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinorTimeHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "minorTimeHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorTickCount(value: Double): Self = this.set("minorTickCount", value.asInstanceOf[js.Any])
+    def setMinorTimeHeaderTemplateUndefined: Self = StObject.set(x, "minorTimeHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteMinorTickCount: Self = this.set("minorTickCount", js.undefined)
+    def setMobile(value: Boolean | String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorTimeHeaderTemplate(value: String | js.Function): Self = this.set("minorTimeHeaderTemplate", value.asInstanceOf[js.Any])
+    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
     
     @scala.inline
-    def deleteMinorTimeHeaderTemplate: Self = this.set("minorTimeHeaderTemplate", js.undefined)
+    def setMove(value: /* e */ SchedulerMoveEvent => Unit): Self = StObject.set(x, "move", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMobile(value: Boolean | String): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    def setMoveEnd(value: /* e */ SchedulerMoveEndEvent => Unit): Self = StObject.set(x, "moveEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMobile: Self = this.set("mobile", js.undefined)
+    def setMoveEndUndefined: Self = StObject.set(x, "moveEnd", js.undefined)
     
     @scala.inline
-    def setMove(value: /* e */ SchedulerMoveEvent => Unit): Self = this.set("move", js.Any.fromFunction1(value))
+    def setMoveStart(value: /* e */ SchedulerMoveStartEvent => Unit): Self = StObject.set(x, "moveStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMove: Self = this.set("move", js.undefined)
+    def setMoveStartUndefined: Self = StObject.set(x, "moveStart", js.undefined)
     
     @scala.inline
-    def setMoveEnd(value: /* e */ SchedulerMoveEndEvent => Unit): Self = this.set("moveEnd", js.Any.fromFunction1(value))
+    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
     @scala.inline
-    def deleteMoveEnd: Self = this.set("moveEnd", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveStart(value: /* e */ SchedulerMoveStartEvent => Unit): Self = this.set("moveStart", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMoveStart: Self = this.set("moveStart", js.undefined)
+    def setNavigate(value: /* e */ SchedulerNavigateEvent => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPdf(value: SchedulerPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigate(value: /* e */ SchedulerNavigateEvent => Unit): Self = this.set("navigate", js.Any.fromFunction1(value))
+    def setPdfExport(value: /* e */ SchedulerPdfExportEvent => Unit): Self = StObject.set(x, "pdfExport", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteNavigate: Self = this.set("navigate", js.undefined)
+    def setPdfExportUndefined: Self = StObject.set(x, "pdfExport", js.undefined)
     
     @scala.inline
-    def setPdf(value: SchedulerPdf): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
     @scala.inline
-    def deletePdf: Self = this.set("pdf", js.undefined)
+    def setRemove(value: /* e */ SchedulerRemoveEvent => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPdfExport(value: /* e */ SchedulerPdfExportEvent => Unit): Self = this.set("pdfExport", js.Any.fromFunction1(value))
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deletePdfExport: Self = this.set("pdfExport", js.undefined)
+    def setResize(value: /* e */ SchedulerResizeEvent => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: /* e */ SchedulerRemoveEvent => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setResizeEnd(value: /* e */ SchedulerResizeEndEvent => Unit): Self = StObject.set(x, "resizeEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setResizeEndUndefined: Self = StObject.set(x, "resizeEnd", js.undefined)
     
     @scala.inline
-    def setResize(value: /* e */ SchedulerResizeEvent => Unit): Self = this.set("resize", js.Any.fromFunction1(value))
+    def setResizeStart(value: /* e */ SchedulerResizeStartEvent => Unit): Self = StObject.set(x, "resizeStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setResizeStartUndefined: Self = StObject.set(x, "resizeStart", js.undefined)
     
     @scala.inline
-    def setResizeEnd(value: /* e */ SchedulerResizeEndEvent => Unit): Self = this.set("resizeEnd", js.Any.fromFunction1(value))
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def deleteResizeEnd: Self = this.set("resizeEnd", js.undefined)
+    def setResources(value: js.Array[SchedulerResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeStart(value: /* e */ SchedulerResizeStartEvent => Unit): Self = this.set("resizeStart", js.Any.fromFunction1(value))
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteResizeStart: Self = this.set("resizeStart", js.undefined)
+    def setResourcesVarargs(value: SchedulerResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: SchedulerResource*): Self = this.set("resources", js.Array(value :_*))
+    def setSave(value: /* e */ SchedulerSaveEvent => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResources(value: js.Array[SchedulerResource]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
+    def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: /* e */ SchedulerSaveEvent => Unit): Self = this.set("save", js.Any.fromFunction1(value))
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
+    def setShowWorkHours(value: Boolean): Self = StObject.set(x, "showWorkHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setShowWorkHoursUndefined: Self = StObject.set(x, "showWorkHours", js.undefined)
     
     @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setSnap(value: Boolean): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowWorkHours(value: Boolean): Self = this.set("showWorkHours", value.asInstanceOf[js.Any])
+    def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
     
     @scala.inline
-    def deleteShowWorkHours: Self = this.set("showWorkHours", js.undefined)
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnap(value: Boolean): Self = this.set("snap", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSnap: Self = this.set("snap", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setToolbar(value: js.Array[SchedulerToolbarItem]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
     @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setToolbarVarargs(value: SchedulerToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
     
     @scala.inline
-    def setToolbarVarargs(value: SchedulerToolbarItem*): Self = this.set("toolbar", js.Array(value :_*))
+    def setViews(value: js.Array[SchedulerView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolbar(value: js.Array[SchedulerToolbarItem]): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
     @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    def setViewsVarargs(value: SchedulerView*): Self = StObject.set(x, "views", js.Array(value :_*))
     
     @scala.inline
-    def setViewsVarargs(value: SchedulerView*): Self = this.set("views", js.Array(value :_*))
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViews(value: js.Array[SchedulerView]): Self = this.set("views", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteViews: Self = this.set("views", js.undefined)
+    def setWorkDayEnd(value: Date): Self = StObject.set(x, "workDayEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWorkDayEndUndefined: Self = StObject.set(x, "workDayEnd", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWorkDayStart(value: Date): Self = StObject.set(x, "workDayStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkDayEnd(value: Date): Self = this.set("workDayEnd", value.asInstanceOf[js.Any])
+    def setWorkDayStartUndefined: Self = StObject.set(x, "workDayStart", js.undefined)
     
     @scala.inline
-    def deleteWorkDayEnd: Self = this.set("workDayEnd", js.undefined)
+    def setWorkWeekEnd(value: Double): Self = StObject.set(x, "workWeekEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkDayStart(value: Date): Self = this.set("workDayStart", value.asInstanceOf[js.Any])
+    def setWorkWeekEndUndefined: Self = StObject.set(x, "workWeekEnd", js.undefined)
     
     @scala.inline
-    def deleteWorkDayStart: Self = this.set("workDayStart", js.undefined)
+    def setWorkWeekStart(value: Double): Self = StObject.set(x, "workWeekStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkWeekEnd(value: Double): Self = this.set("workWeekEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkWeekEnd: Self = this.set("workWeekEnd", js.undefined)
-    
-    @scala.inline
-    def setWorkWeekStart(value: Double): Self = this.set("workWeekStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkWeekStart: Self = this.set("workWeekStart", js.undefined)
+    def setWorkWeekStartUndefined: Self = StObject.set(x, "workWeekStart", js.undefined)
   }
 }

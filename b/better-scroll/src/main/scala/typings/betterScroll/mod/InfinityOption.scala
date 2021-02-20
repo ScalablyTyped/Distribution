@@ -1,12 +1,13 @@
 package typings.betterScroll.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfinityOption extends js.Object {
+trait InfinityOption extends StObject {
   
   def createTombstone(): Element = js.native
   
@@ -23,27 +24,15 @@ object InfinityOption {
   }
   
   @scala.inline
-  implicit class InfinityOptionOps[Self <: InfinityOption] (val x: Self) extends AnyVal {
+  implicit class InfinityOptionMutableBuilder[Self <: InfinityOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTombstone(value: () => Element): Self = StObject.set(x, "createTombstone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFetch(value: Double => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateTombstone(value: () => Element): Self = this.set("createTombstone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFetch(value: Double => Unit): Self = this.set("fetch", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRender(value: (js.Any, Element) => Element): Self = this.set("render", js.Any.fromFunction2(value))
+    def setRender(value: (js.Any, Element) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
   }
 }

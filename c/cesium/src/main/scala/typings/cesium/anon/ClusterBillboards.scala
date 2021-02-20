@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterBillboards extends js.Object {
+trait ClusterBillboards extends StObject {
   
   var clusterBillboards: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object ClusterBillboards {
   }
   
   @scala.inline
-  implicit class ClusterBillboardsOps[Self <: ClusterBillboards] (val x: Self) extends AnyVal {
+  implicit class ClusterBillboardsMutableBuilder[Self <: ClusterBillboards] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterBillboards(value: Boolean): Self = StObject.set(x, "clusterBillboards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterBillboardsUndefined: Self = StObject.set(x, "clusterBillboards", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterLabels(value: Boolean): Self = StObject.set(x, "clusterLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterBillboards(value: Boolean): Self = this.set("clusterBillboards", value.asInstanceOf[js.Any])
+    def setClusterLabelsUndefined: Self = StObject.set(x, "clusterLabels", js.undefined)
     
     @scala.inline
-    def deleteClusterBillboards: Self = this.set("clusterBillboards", js.undefined)
+    def setClusterPoints(value: Boolean): Self = StObject.set(x, "clusterPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterLabels(value: Boolean): Self = this.set("clusterLabels", value.asInstanceOf[js.Any])
+    def setClusterPointsUndefined: Self = StObject.set(x, "clusterPoints", js.undefined)
     
     @scala.inline
-    def deleteClusterLabels: Self = this.set("clusterLabels", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterPoints(value: Boolean): Self = this.set("clusterPoints", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteClusterPoints: Self = this.set("clusterPoints", js.undefined)
+    def setMinimumClusterSize(value: Double): Self = StObject.set(x, "minimumClusterSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setMinimumClusterSizeUndefined: Self = StObject.set(x, "minimumClusterSize", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setPixelRange(value: Double): Self = StObject.set(x, "pixelRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumClusterSize(value: Double): Self = this.set("minimumClusterSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumClusterSize: Self = this.set("minimumClusterSize", js.undefined)
-    
-    @scala.inline
-    def setPixelRange(value: Double): Self = this.set("pixelRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePixelRange: Self = this.set("pixelRange", js.undefined)
+    def setPixelRangeUndefined: Self = StObject.set(x, "pixelRange", js.undefined)
   }
 }

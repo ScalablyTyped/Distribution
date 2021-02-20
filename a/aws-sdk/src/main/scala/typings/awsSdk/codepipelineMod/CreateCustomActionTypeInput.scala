@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCustomActionTypeInput extends js.Object {
+trait CreateCustomActionTypeInput extends StObject {
   
   /**
     * The category of the custom action, such as a build action or a test action.
@@ -62,57 +63,45 @@ object CreateCustomActionTypeInput {
   }
   
   @scala.inline
-  implicit class CreateCustomActionTypeInputOps[Self <: CreateCustomActionTypeInput] (val x: Self) extends AnyVal {
+  implicit class CreateCustomActionTypeInputMutableBuilder[Self <: CreateCustomActionTypeInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: ActionCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationProperties(value: ActionConfigurationPropertyList): Self = StObject.set(x, "configurationProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationPropertiesUndefined: Self = StObject.set(x, "configurationProperties", js.undefined)
     
     @scala.inline
-    def setCategory(value: ActionCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setConfigurationPropertiesVarargs(value: ActionConfigurationProperty*): Self = StObject.set(x, "configurationProperties", js.Array(value :_*))
     
     @scala.inline
-    def setInputArtifactDetails(value: ArtifactDetails): Self = this.set("inputArtifactDetails", value.asInstanceOf[js.Any])
+    def setInputArtifactDetails(value: ArtifactDetails): Self = StObject.set(x, "inputArtifactDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputArtifactDetails(value: ArtifactDetails): Self = this.set("outputArtifactDetails", value.asInstanceOf[js.Any])
+    def setOutputArtifactDetails(value: ArtifactDetails): Self = StObject.set(x, "outputArtifactDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: ActionProvider): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setProvider(value: ActionProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setSettings(value: ActionTypeSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationPropertiesVarargs(value: ActionConfigurationProperty*): Self = this.set("configurationProperties", js.Array(value :_*))
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
     @scala.inline
-    def setConfigurationProperties(value: ActionConfigurationPropertyList): Self = this.set("configurationProperties", value.asInstanceOf[js.Any])
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigurationProperties: Self = this.set("configurationProperties", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setSettings(value: ActionTypeSettings): Self = this.set("settings", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

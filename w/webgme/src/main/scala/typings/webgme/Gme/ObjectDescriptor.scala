@@ -2,12 +2,13 @@ package typings.webgme.Gme
 
 import typings.webgme.GmeCommon.Dictionary
 import typings.webgme.GmeCommon.Pointer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectDescriptor extends js.Object {
+trait ObjectDescriptor extends StObject {
   
   var childrenIds: js.Array[String] = js.native
   
@@ -75,105 +76,93 @@ object ObjectDescriptor {
   }
   
   @scala.inline
-  implicit class ObjectDescriptorOps[Self <: ObjectDescriptor] (val x: Self) extends AnyVal {
+  implicit class ObjectDescriptorMutableBuilder[Self <: ObjectDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildrenIds(value: js.Array[String]): Self = StObject.set(x, "childrenIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenIdsVarargs(value: String*): Self = StObject.set(x, "childrenIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenNum(value: Double): Self = StObject.set(x, "childrenNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenIdsVarargs(value: String*): Self = this.set("childrenIds", js.Array(value :_*))
+    def setControl(value: VisualizerControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenIds(value: js.Array[String]): Self = this.set("childrenIds", value.asInstanceOf[js.Any])
+    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def setChildrenNum(value: Double): Self = this.set("childrenNum", value.asInstanceOf[js.Any])
+    def setDstObjId(value: String): Self = StObject.set(x, "dstObjId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDstObjId(value: String): Self = this.set("dstObjId", value.asInstanceOf[js.Any])
+    def setDstPos(value: Pos2D): Self = StObject.set(x, "dstPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDstPos(value: Pos2D): Self = this.set("dstPos", value.asInstanceOf[js.Any])
+    def setDstSubCompId(value: String): Self = StObject.set(x, "dstSubCompId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDstSubCompIdUndefined: Self = StObject.set(x, "dstSubCompId", js.undefined)
     
     @scala.inline
-    def setIsConnection(value: Boolean): Self = this.set("isConnection", value.asInstanceOf[js.Any])
+    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     @scala.inline
-    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointers(value: Dictionary[Pointer]): Self = this.set("pointers", value.asInstanceOf[js.Any])
+    def setIsConnection(value: Boolean): Self = StObject.set(x, "isConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setMetaInfo(value: Dictionary[String]): Self = StObject.set(x, "metaInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setMetaInfoUndefined: Self = StObject.set(x, "metaInfo", js.undefined)
     
     @scala.inline
-    def setSrcObjId(value: String): Self = this.set("srcObjId", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrcPos(value: Pos2D): Self = this.set("srcPos", value.asInstanceOf[js.Any])
+    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setPointers(value: Dictionary[Pointer]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl(value: VisualizerControl): Self = this.set("control", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControl: Self = this.set("control", js.undefined)
+    def setPreferencesHelper(value: PreferenceHelper): Self = StObject.set(x, "preferencesHelper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDstSubCompId(value: String): Self = this.set("dstSubCompId", value.asInstanceOf[js.Any])
+    def setPreferencesHelperUndefined: Self = StObject.set(x, "preferencesHelper", js.undefined)
     
     @scala.inline
-    def deleteDstSubCompId: Self = this.set("dstSubCompId", js.undefined)
+    def setReconnectable(value: Boolean): Self = StObject.set(x, "reconnectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setReconnectableUndefined: Self = StObject.set(x, "reconnectable", js.undefined)
     
     @scala.inline
-    def deleteEditable: Self = this.set("editable", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaInfo(value: Dictionary[String]): Self = this.set("metaInfo", value.asInstanceOf[js.Any])
+    def setSrcObjId(value: String): Self = StObject.set(x, "srcObjId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetaInfo: Self = this.set("metaInfo", js.undefined)
+    def setSrcPos(value: Pos2D): Self = StObject.set(x, "srcPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferencesHelper(value: PreferenceHelper): Self = this.set("preferencesHelper", value.asInstanceOf[js.Any])
+    def setSrcSubCompId(value: String): Self = StObject.set(x, "srcSubCompId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferencesHelper: Self = this.set("preferencesHelper", js.undefined)
+    def setSrcSubCompIdUndefined: Self = StObject.set(x, "srcSubCompId", js.undefined)
     
     @scala.inline
-    def setReconnectable(value: Boolean): Self = this.set("reconnectable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReconnectable: Self = this.set("reconnectable", js.undefined)
-    
-    @scala.inline
-    def setSrcSubCompId(value: String): Self = this.set("srcSubCompId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrcSubCompId: Self = this.set("srcSubCompId", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

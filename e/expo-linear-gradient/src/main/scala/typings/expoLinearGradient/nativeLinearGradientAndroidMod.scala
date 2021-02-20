@@ -2,13 +2,14 @@ package typings.expoLinearGradient
 
 import typings.expoLinearGradient.nativeLinearGradientTypesMod.NativeLinearGradientProps
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo-linear-gradient/build/NativeLinearGradient.android", JSImport.Namespace)
-@js.native
-object nativeLinearGradientAndroidMod extends js.Object {
+object nativeLinearGradientAndroidMod {
   
+  @JSImport("expo-linear-gradient/build/NativeLinearGradient.android", JSImport.Default)
+  @js.native
   def default(hasColorsLocationsStartPointEndPointChildrenStyleProps: NativeLinearGradientProps): ReactElement = js.native
 }

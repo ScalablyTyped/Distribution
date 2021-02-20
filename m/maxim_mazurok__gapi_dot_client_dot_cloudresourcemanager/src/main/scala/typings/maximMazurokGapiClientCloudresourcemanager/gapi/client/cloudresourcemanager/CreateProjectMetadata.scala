@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudresourcemanager.gapi.client.cloudresourcemanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProjectMetadata extends js.Object {
+trait CreateProjectMetadata extends StObject {
   
   /** Creation time of the project creation workflow. */
   var createTime: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object CreateProjectMetadata {
   }
   
   @scala.inline
-  implicit class CreateProjectMetadataOps[Self <: CreateProjectMetadata] (val x: Self) extends AnyVal {
+  implicit class CreateProjectMetadataMutableBuilder[Self <: CreateProjectMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGettable(value: Boolean): Self = StObject.set(x, "gettable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setGettableUndefined: Self = StObject.set(x, "gettable", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGettable(value: Boolean): Self = this.set("gettable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGettable: Self = this.set("gettable", js.undefined)
-    
-    @scala.inline
-    def setReady(value: Boolean): Self = this.set("ready", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
   }
 }

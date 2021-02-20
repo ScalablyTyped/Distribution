@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudFunction extends js.Object {
+trait CloudFunction extends StObject {
   
   /** The amount of memory in MB available for a function. Defaults to 256MB. */
   var availableMemoryMb: js.UndefOr[Double] = js.native
@@ -121,174 +122,162 @@ object CloudFunction {
   }
   
   @scala.inline
-  implicit class CloudFunctionOps[Self <: CloudFunction] (val x: Self) extends AnyVal {
+  implicit class CloudFunctionMutableBuilder[Self <: CloudFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableMemoryMb(value: Double): Self = StObject.set(x, "availableMemoryMb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAvailableMemoryMb(value: Double): Self = this.set("availableMemoryMb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailableMemoryMb: Self = this.set("availableMemoryMb", js.undefined)
+    def setAvailableMemoryMbUndefined: Self = StObject.set(x, "availableMemoryMb", js.undefined)
     
     @scala.inline
     def setBuildEnvironmentVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction with TopLevel[js.Any]
-    ): Self = this.set("buildEnvironmentVariables", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "buildEnvironmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuildEnvironmentVariables: Self = this.set("buildEnvironmentVariables", js.undefined)
+    def setBuildEnvironmentVariablesUndefined: Self = StObject.set(x, "buildEnvironmentVariables", js.undefined)
     
     @scala.inline
-    def setBuildId(value: String): Self = this.set("buildId", value.asInstanceOf[js.Any])
+    def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuildId: Self = this.set("buildId", js.undefined)
+    def setBuildIdUndefined: Self = StObject.set(x, "buildId", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setEntryPoint(value: String): Self = this.set("entryPoint", value.asInstanceOf[js.Any])
+    def setEntryPoint(value: String): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntryPoint: Self = this.set("entryPoint", js.undefined)
+    def setEntryPointUndefined: Self = StObject.set(x, "entryPoint", js.undefined)
     
     @scala.inline
     def setEnvironmentVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction with TopLevel[js.Any]
-    ): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
     @scala.inline
-    def setEventTrigger(value: EventTrigger): Self = this.set("eventTrigger", value.asInstanceOf[js.Any])
+    def setEventTrigger(value: EventTrigger): Self = StObject.set(x, "eventTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventTrigger: Self = this.set("eventTrigger", js.undefined)
+    def setEventTriggerUndefined: Self = StObject.set(x, "eventTrigger", js.undefined)
     
     @scala.inline
-    def setHttpsTrigger(value: HttpsTrigger): Self = this.set("httpsTrigger", value.asInstanceOf[js.Any])
+    def setHttpsTrigger(value: HttpsTrigger): Self = StObject.set(x, "httpsTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttpsTrigger: Self = this.set("httpsTrigger", js.undefined)
+    def setHttpsTriggerUndefined: Self = StObject.set(x, "httpsTrigger", js.undefined)
     
     @scala.inline
-    def setIngressSettings(value: String): Self = this.set("ingressSettings", value.asInstanceOf[js.Any])
+    def setIngressSettings(value: String): Self = StObject.set(x, "ingressSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIngressSettings: Self = this.set("ingressSettings", js.undefined)
+    def setIngressSettingsUndefined: Self = StObject.set(x, "ingressSettings", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.CloudFunction with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setMaxInstances(value: Double): Self = this.set("maxInstances", value.asInstanceOf[js.Any])
+    def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxInstances: Self = this.set("maxInstances", js.undefined)
+    def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def setRuntime(value: String): Self = this.set("runtime", value.asInstanceOf[js.Any])
+    def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuntime: Self = this.set("runtime", js.undefined)
+    def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
     @scala.inline
-    def setServiceAccountEmail(value: String): Self = this.set("serviceAccountEmail", value.asInstanceOf[js.Any])
+    def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServiceAccountEmail: Self = this.set("serviceAccountEmail", js.undefined)
+    def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
     
     @scala.inline
-    def setSourceArchiveUrl(value: String): Self = this.set("sourceArchiveUrl", value.asInstanceOf[js.Any])
+    def setSourceArchiveUrl(value: String): Self = StObject.set(x, "sourceArchiveUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceArchiveUrl: Self = this.set("sourceArchiveUrl", js.undefined)
+    def setSourceArchiveUrlUndefined: Self = StObject.set(x, "sourceArchiveUrl", js.undefined)
     
     @scala.inline
-    def setSourceRepository(value: SourceRepository): Self = this.set("sourceRepository", value.asInstanceOf[js.Any])
+    def setSourceRepository(value: SourceRepository): Self = StObject.set(x, "sourceRepository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceRepository: Self = this.set("sourceRepository", js.undefined)
+    def setSourceRepositoryUndefined: Self = StObject.set(x, "sourceRepository", js.undefined)
     
     @scala.inline
-    def setSourceUploadUrl(value: String): Self = this.set("sourceUploadUrl", value.asInstanceOf[js.Any])
+    def setSourceUploadUrl(value: String): Self = StObject.set(x, "sourceUploadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceUploadUrl: Self = this.set("sourceUploadUrl", js.undefined)
+    def setSourceUploadUrlUndefined: Self = StObject.set(x, "sourceUploadUrl", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     @scala.inline
-    def setVersionId(value: String): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVersionId: Self = this.set("versionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
     
     @scala.inline
-    def setVpcConnector(value: String): Self = this.set("vpcConnector", value.asInstanceOf[js.Any])
+    def setVpcConnector(value: String): Self = StObject.set(x, "vpcConnector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVpcConnector: Self = this.set("vpcConnector", js.undefined)
+    def setVpcConnectorEgressSettings(value: String): Self = StObject.set(x, "vpcConnectorEgressSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcConnectorEgressSettings(value: String): Self = this.set("vpcConnectorEgressSettings", value.asInstanceOf[js.Any])
+    def setVpcConnectorEgressSettingsUndefined: Self = StObject.set(x, "vpcConnectorEgressSettings", js.undefined)
     
     @scala.inline
-    def deleteVpcConnectorEgressSettings: Self = this.set("vpcConnectorEgressSettings", js.undefined)
+    def setVpcConnectorUndefined: Self = StObject.set(x, "vpcConnector", js.undefined)
   }
 }

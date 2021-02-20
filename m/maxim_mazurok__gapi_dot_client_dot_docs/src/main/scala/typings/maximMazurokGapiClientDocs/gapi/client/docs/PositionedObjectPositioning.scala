@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PositionedObjectPositioning extends js.Object {
+trait PositionedObjectPositioning extends StObject {
   
   /** The layout of this positioned object. */
   var layout: js.UndefOr[String] = js.native
@@ -31,36 +32,24 @@ object PositionedObjectPositioning {
   }
   
   @scala.inline
-  implicit class PositionedObjectPositioningOps[Self <: PositionedObjectPositioning] (val x: Self) extends AnyVal {
+  implicit class PositionedObjectPositioningMutableBuilder[Self <: PositionedObjectPositioning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftOffset(value: Dimension): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setTopOffset(value: Dimension): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftOffset(value: Dimension): Self = this.set("leftOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLeftOffset: Self = this.set("leftOffset", js.undefined)
-    
-    @scala.inline
-    def setTopOffset(value: Dimension): Self = this.set("topOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopOffset: Self = this.set("topOffset", js.undefined)
+    def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
   }
 }

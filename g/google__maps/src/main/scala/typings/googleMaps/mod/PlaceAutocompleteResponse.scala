@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaceAutocompleteResponse extends js.Object {
+trait PlaceAutocompleteResponse extends StObject {
   
   /**
     * When the Places service returns a status code other than `OK`, there may be an additional `error_message` field
@@ -36,30 +37,18 @@ object PlaceAutocompleteResponse {
   }
   
   @scala.inline
-  implicit class PlaceAutocompleteResponseOps[Self <: PlaceAutocompleteResponse] (val x: Self) extends AnyVal {
+  implicit class PlaceAutocompleteResponseMutableBuilder[Self <: PlaceAutocompleteResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPredictions(value: js.Array[PlaceAutocompleteResult]): Self = StObject.set(x, "predictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPredictionsVarargs(value: PlaceAutocompleteResult*): Self = StObject.set(x, "predictions", js.Array(value :_*))
     
     @scala.inline
-    def setError_message(value: String): Self = this.set("error_message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPredictionsVarargs(value: PlaceAutocompleteResult*): Self = this.set("predictions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPredictions(value: js.Array[PlaceAutocompleteResult]): Self = this.set("predictions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: PlaceAutocompleteResponseStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: PlaceAutocompleteResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

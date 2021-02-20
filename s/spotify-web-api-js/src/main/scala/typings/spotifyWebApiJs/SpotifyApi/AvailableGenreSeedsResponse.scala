@@ -1,5 +1,6 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://developer.spotify.com/web-api/get-recommendations/#available-genre-seeds
   */
 @js.native
-trait AvailableGenreSeedsResponse extends js.Object {
+trait AvailableGenreSeedsResponse extends StObject {
   
   var genres: js.Array[String] = js.native
 }
@@ -24,24 +25,12 @@ object AvailableGenreSeedsResponse {
   }
   
   @scala.inline
-  implicit class AvailableGenreSeedsResponseOps[Self <: AvailableGenreSeedsResponse] (val x: Self) extends AnyVal {
+  implicit class AvailableGenreSeedsResponseMutableBuilder[Self <: AvailableGenreSeedsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGenresVarargs(value: String*): Self = this.set("genres", js.Array(value :_*))
-    
-    @scala.inline
-    def setGenres(value: js.Array[String]): Self = this.set("genres", value.asInstanceOf[js.Any])
+    def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
   }
 }

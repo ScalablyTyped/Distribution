@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.UI.Input
 
 import typings.winrtUwp.Windows.Foundation.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the accumulated transformations for the current manipulation. */
 @js.native
-trait ManipulationDelta extends js.Object {
+trait ManipulationDelta extends StObject {
   
   /** The change in distance between touch contacts, as DIPs. For example, if the distance between two contacts changes from 100 DIPs to 200 DIPs during a manipulation, the value of Expansion would be 100.0. */
   var expansion: Double = js.native
@@ -30,30 +31,18 @@ object ManipulationDelta {
   }
   
   @scala.inline
-  implicit class ManipulationDeltaOps[Self <: ManipulationDelta] (val x: Self) extends AnyVal {
+  implicit class ManipulationDeltaMutableBuilder[Self <: ManipulationDelta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpansion(value: Double): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpansion(value: Double): Self = this.set("expansion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTranslation(value: Point): Self = this.set("translation", value.asInstanceOf[js.Any])
+    def setTranslation(value: Point): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
   }
 }

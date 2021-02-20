@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Debugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepOverRequest extends js.Object {
+trait StepOverRequest extends StObject {
   
   /**
     * The skipList specifies location ranges that should be skipped on step over.
@@ -21,27 +22,15 @@ object StepOverRequest {
   }
   
   @scala.inline
-  implicit class StepOverRequestOps[Self <: StepOverRequest] (val x: Self) extends AnyVal {
+  implicit class StepOverRequestMutableBuilder[Self <: StepOverRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSkipList(value: js.Array[LocationRange]): Self = StObject.set(x, "skipList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSkipListUndefined: Self = StObject.set(x, "skipList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSkipListVarargs(value: LocationRange*): Self = this.set("skipList", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkipList(value: js.Array[LocationRange]): Self = this.set("skipList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipList: Self = this.set("skipList", js.undefined)
+    def setSkipListVarargs(value: LocationRange*): Self = StObject.set(x, "skipList", js.Array(value :_*))
   }
 }

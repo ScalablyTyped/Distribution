@@ -5,12 +5,13 @@ import typings.googleapis.v33Mod.dfareportingV33.SchemaCustomRichMediaEvents
 import typings.googleapis.v33Mod.dfareportingV33.SchemaDateRange
 import typings.googleapis.v33Mod.dfareportingV33.SchemaDimensionValue
 import typings.googleapis.v33Mod.dfareportingV33.SchemaSortedDimension
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReachByFrequencyMetricNames extends js.Object {
+trait ReachByFrequencyMetricNames extends StObject {
   
   var activities: js.UndefOr[SchemaActivities] = js.native
   
@@ -37,78 +38,66 @@ object ReachByFrequencyMetricNames {
   }
   
   @scala.inline
-  implicit class ReachByFrequencyMetricNamesOps[Self <: ReachByFrequencyMetricNames] (val x: Self) extends AnyVal {
+  implicit class ReachByFrequencyMetricNamesMutableBuilder[Self <: ReachByFrequencyMetricNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivities(value: SchemaActivities): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomRichMediaEvents(value: SchemaCustomRichMediaEvents): Self = StObject.set(x, "customRichMediaEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivities(value: SchemaActivities): Self = this.set("activities", value.asInstanceOf[js.Any])
+    def setCustomRichMediaEventsUndefined: Self = StObject.set(x, "customRichMediaEvents", js.undefined)
     
     @scala.inline
-    def deleteActivities: Self = this.set("activities", js.undefined)
+    def setDateRange(value: SchemaDateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomRichMediaEvents(value: SchemaCustomRichMediaEvents): Self = this.set("customRichMediaEvents", value.asInstanceOf[js.Any])
+    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
     @scala.inline
-    def deleteCustomRichMediaEvents: Self = this.set("customRichMediaEvents", js.undefined)
+    def setDimensionFilters(value: js.Array[SchemaDimensionValue]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateRange(value: SchemaDateRange): Self = this.set("dateRange", value.asInstanceOf[js.Any])
+    def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
     @scala.inline
-    def deleteDateRange: Self = this.set("dateRange", js.undefined)
+    def setDimensionFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionFiltersVarargs(value: SchemaDimensionValue*): Self = this.set("dimensionFilters", js.Array(value :_*))
+    def setDimensions(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionFilters(value: js.Array[SchemaDimensionValue]): Self = this.set("dimensionFilters", value.asInstanceOf[js.Any])
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def deleteDimensionFilters: Self = this.set("dimensionFilters", js.undefined)
+    def setDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionsVarargs(value: SchemaSortedDimension*): Self = this.set("dimensions", js.Array(value :_*))
+    def setEnableAllDimensionCombinations(value: Boolean): Self = StObject.set(x, "enableAllDimensionCombinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: js.Array[SchemaSortedDimension]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setEnableAllDimensionCombinationsUndefined: Self = StObject.set(x, "enableAllDimensionCombinations", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAllDimensionCombinations(value: Boolean): Self = this.set("enableAllDimensionCombinations", value.asInstanceOf[js.Any])
+    def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
     @scala.inline
-    def deleteEnableAllDimensionCombinations: Self = this.set("enableAllDimensionCombinations", js.undefined)
+    def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
     
     @scala.inline
-    def setMetricNamesVarargs(value: String*): Self = this.set("metricNames", js.Array(value :_*))
+    def setReachByFrequencyMetricNames(value: js.Array[String]): Self = StObject.set(x, "reachByFrequencyMetricNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricNames(value: js.Array[String]): Self = this.set("metricNames", value.asInstanceOf[js.Any])
+    def setReachByFrequencyMetricNamesUndefined: Self = StObject.set(x, "reachByFrequencyMetricNames", js.undefined)
     
     @scala.inline
-    def deleteMetricNames: Self = this.set("metricNames", js.undefined)
-    
-    @scala.inline
-    def setReachByFrequencyMetricNamesVarargs(value: String*): Self = this.set("reachByFrequencyMetricNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setReachByFrequencyMetricNames(value: js.Array[String]): Self = this.set("reachByFrequencyMetricNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReachByFrequencyMetricNames: Self = this.set("reachByFrequencyMetricNames", js.undefined)
+    def setReachByFrequencyMetricNamesVarargs(value: String*): Self = StObject.set(x, "reachByFrequencyMetricNames", js.Array(value :_*))
   }
 }

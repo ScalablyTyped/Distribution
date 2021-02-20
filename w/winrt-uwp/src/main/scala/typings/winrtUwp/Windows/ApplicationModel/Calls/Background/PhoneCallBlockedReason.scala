@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneCallBlockedReason extends js.Object
+sealed trait PhoneCallBlockedReason extends StObject
 /** Provides the reason why a phone call was rejected. */
 @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneCallBlockedReason")
 @js.native
-object PhoneCallBlockedReason extends js.Object {
+object PhoneCallBlockedReason extends StObject {
   
   /** The call was rejected because it was in the blocking list. */
   @js.native

@@ -4,14 +4,14 @@ import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.segmentSegmentInterfaceMod.SegmentButtonLayout
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/segment-button/segment-button", JSImport.Namespace)
-@js.native
-object segmentButtonMod extends js.Object {
+object segmentButtonMod {
   
+  @JSImport("@ionic/core/dist/types/components/segment-button/segment-button", "SegmentButton")
   @js.native
   class SegmentButton ()
     extends ComponentInterface

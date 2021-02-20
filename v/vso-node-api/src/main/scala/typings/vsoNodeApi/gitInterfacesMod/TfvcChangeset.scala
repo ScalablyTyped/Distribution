@@ -2,6 +2,7 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,54 +76,42 @@ object TfvcChangeset {
   }
   
   @scala.inline
-  implicit class TfvcChangesetOps[Self <: TfvcChangeset] (val x: Self) extends AnyVal {
+  implicit class TfvcChangesetMutableBuilder[Self <: TfvcChangeset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChanges(value: js.Array[TfvcChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangesVarargs(value: TfvcChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setCheckinNotes(value: js.Array[CheckinNote]): Self = StObject.set(x, "checkinNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangesVarargs(value: TfvcChange*): Self = this.set("changes", js.Array(value :_*))
+    def setCheckinNotesVarargs(value: CheckinNote*): Self = StObject.set(x, "checkinNotes", js.Array(value :_*))
     
     @scala.inline
-    def setChanges(value: js.Array[TfvcChange]): Self = this.set("changes", value.asInstanceOf[js.Any])
+    def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckinNotesVarargs(value: CheckinNote*): Self = this.set("checkinNotes", js.Array(value :_*))
+    def setHasMoreChanges(value: Boolean): Self = StObject.set(x, "hasMoreChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckinNotes(value: js.Array[CheckinNote]): Self = this.set("checkinNotes", value.asInstanceOf[js.Any])
+    def setPolicyOverride(value: TfvcPolicyOverrideInfo): Self = StObject.set(x, "policyOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionId(value: String): Self = this.set("collectionId", value.asInstanceOf[js.Any])
+    def setTeamProjectIds(value: js.Array[String]): Self = StObject.set(x, "teamProjectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasMoreChanges(value: Boolean): Self = this.set("hasMoreChanges", value.asInstanceOf[js.Any])
+    def setTeamProjectIdsVarargs(value: String*): Self = StObject.set(x, "teamProjectIds", js.Array(value :_*))
     
     @scala.inline
-    def setPolicyOverride(value: TfvcPolicyOverrideInfo): Self = this.set("policyOverride", value.asInstanceOf[js.Any])
+    def setWorkItems(value: js.Array[AssociatedWorkItem]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamProjectIdsVarargs(value: String*): Self = this.set("teamProjectIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTeamProjectIds(value: js.Array[String]): Self = this.set("teamProjectIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemsVarargs(value: AssociatedWorkItem*): Self = this.set("workItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkItems(value: js.Array[AssociatedWorkItem]): Self = this.set("workItems", value.asInstanceOf[js.Any])
+    def setWorkItemsVarargs(value: AssociatedWorkItem*): Self = StObject.set(x, "workItems", js.Array(value :_*))
   }
 }

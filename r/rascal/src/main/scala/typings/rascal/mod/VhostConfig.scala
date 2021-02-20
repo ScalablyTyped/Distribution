@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rascal.anon.ConfirmPool
 import typings.rascal.rascalStrings.fixed
 import typings.rascal.rascalStrings.random
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VhostConfig extends js.Object {
+trait VhostConfig extends StObject {
   
   var assert: js.UndefOr[Boolean] = js.native
   
@@ -44,102 +45,90 @@ object VhostConfig {
   }
   
   @scala.inline
-  implicit class VhostConfigOps[Self <: VhostConfig] (val x: Self) extends AnyVal {
+  implicit class VhostConfigMutableBuilder[Self <: VhostConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindings(value: StringDictionary[BindingConfig] | js.Array[String]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssert(value: Boolean): Self = this.set("assert", value.asInstanceOf[js.Any])
+    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
     @scala.inline
-    def deleteAssert: Self = this.set("assert", js.undefined)
+    def setBindingsVarargs(value: String*): Self = StObject.set(x, "bindings", js.Array(value :_*))
     
     @scala.inline
-    def setBindingsVarargs(value: String*): Self = this.set("bindings", js.Array(value :_*))
+    def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindings(value: StringDictionary[BindingConfig] | js.Array[String]): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
     
     @scala.inline
-    def deleteBindings: Self = this.set("bindings", js.undefined)
+    def setConnection(value: ConnectionConfig): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheck(value: Boolean): Self = this.set("check", value.asInstanceOf[js.Any])
+    def setConnectionStrategy(value: random | fixed): Self = StObject.set(x, "connectionStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCheck: Self = this.set("check", js.undefined)
+    def setConnectionStrategyUndefined: Self = StObject.set(x, "connectionStrategy", js.undefined)
     
     @scala.inline
-    def setConnection(value: ConnectionConfig): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
     @scala.inline
-    def deleteConnection: Self = this.set("connection", js.undefined)
+    def setConnections(value: js.Array[ConnectionConfig]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionStrategy(value: random | fixed): Self = this.set("connectionStrategy", value.asInstanceOf[js.Any])
+    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
     @scala.inline
-    def deleteConnectionStrategy: Self = this.set("connectionStrategy", js.undefined)
+    def setConnectionsVarargs(value: ConnectionConfig*): Self = StObject.set(x, "connections", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionsVarargs(value: ConnectionConfig*): Self = this.set("connections", js.Array(value :_*))
+    def setExchanges(value: StringDictionary[ExchangeConfig] | js.Array[String]): Self = StObject.set(x, "exchanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnections(value: js.Array[ConnectionConfig]): Self = this.set("connections", value.asInstanceOf[js.Any])
+    def setExchangesUndefined: Self = StObject.set(x, "exchanges", js.undefined)
     
     @scala.inline
-    def deleteConnections: Self = this.set("connections", js.undefined)
+    def setExchangesVarargs(value: String*): Self = StObject.set(x, "exchanges", js.Array(value :_*))
     
     @scala.inline
-    def setExchangesVarargs(value: String*): Self = this.set("exchanges", js.Array(value :_*))
+    def setNamespace(value: String | Boolean): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExchanges(value: StringDictionary[ExchangeConfig] | js.Array[String]): Self = this.set("exchanges", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def deleteExchanges: Self = this.set("exchanges", js.undefined)
+    def setPublicationChannelPools(value: ConfirmPool): Self = StObject.set(x, "publicationChannelPools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: String | Boolean): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setPublicationChannelPoolsUndefined: Self = StObject.set(x, "publicationChannelPools", js.undefined)
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setPublications(value: StringDictionary[PublicationConfig]): Self = StObject.set(x, "publications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicationChannelPools(value: ConfirmPool): Self = this.set("publicationChannelPools", value.asInstanceOf[js.Any])
+    def setPublicationsUndefined: Self = StObject.set(x, "publications", js.undefined)
     
     @scala.inline
-    def deletePublicationChannelPools: Self = this.set("publicationChannelPools", js.undefined)
+    def setQueues(value: StringDictionary[QueueConfig] | js.Array[String]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublications(value: StringDictionary[PublicationConfig]): Self = this.set("publications", value.asInstanceOf[js.Any])
+    def setQueuesUndefined: Self = StObject.set(x, "queues", js.undefined)
     
     @scala.inline
-    def deletePublications: Self = this.set("publications", js.undefined)
+    def setQueuesVarargs(value: String*): Self = StObject.set(x, "queues", js.Array(value :_*))
     
     @scala.inline
-    def setQueuesVarargs(value: String*): Self = this.set("queues", js.Array(value :_*))
+    def setSubscriptions(value: StringDictionary[SubscriptionConfig]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueues(value: StringDictionary[QueueConfig] | js.Array[String]): Self = this.set("queues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueues: Self = this.set("queues", js.undefined)
-    
-    @scala.inline
-    def setSubscriptions(value: StringDictionary[SubscriptionConfig]): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptions: Self = this.set("subscriptions", js.undefined)
+    def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
   }
 }

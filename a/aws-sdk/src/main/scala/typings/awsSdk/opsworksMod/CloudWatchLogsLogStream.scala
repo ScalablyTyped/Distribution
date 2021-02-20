@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudWatchLogsLogStream extends js.Object {
+trait CloudWatchLogsLogStream extends StObject {
   
   /**
     * Specifies the max number of log events in a batch, up to 10000. The default value is 1000.
@@ -71,84 +72,72 @@ object CloudWatchLogsLogStream {
   }
   
   @scala.inline
-  implicit class CloudWatchLogsLogStreamOps[Self <: CloudWatchLogsLogStream] (val x: Self) extends AnyVal {
+  implicit class CloudWatchLogsLogStreamMutableBuilder[Self <: CloudWatchLogsLogStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchCount(value: Integer): Self = StObject.set(x, "BatchCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchCountUndefined: Self = StObject.set(x, "BatchCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchSize(value: Integer): Self = StObject.set(x, "BatchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchCount(value: Integer): Self = this.set("BatchCount", value.asInstanceOf[js.Any])
+    def setBatchSizeUndefined: Self = StObject.set(x, "BatchSize", js.undefined)
     
     @scala.inline
-    def deleteBatchCount: Self = this.set("BatchCount", js.undefined)
+    def setBufferDuration(value: Integer): Self = StObject.set(x, "BufferDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: Integer): Self = this.set("BatchSize", value.asInstanceOf[js.Any])
+    def setBufferDurationUndefined: Self = StObject.set(x, "BufferDuration", js.undefined)
     
     @scala.inline
-    def deleteBatchSize: Self = this.set("BatchSize", js.undefined)
+    def setDatetimeFormat(value: String): Self = StObject.set(x, "DatetimeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferDuration(value: Integer): Self = this.set("BufferDuration", value.asInstanceOf[js.Any])
+    def setDatetimeFormatUndefined: Self = StObject.set(x, "DatetimeFormat", js.undefined)
     
     @scala.inline
-    def deleteBufferDuration: Self = this.set("BufferDuration", js.undefined)
+    def setEncoding(value: CloudWatchLogsEncoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatetimeFormat(value: String): Self = this.set("DatetimeFormat", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "Encoding", js.undefined)
     
     @scala.inline
-    def deleteDatetimeFormat: Self = this.set("DatetimeFormat", js.undefined)
+    def setFile(value: String): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: CloudWatchLogsEncoding): Self = this.set("Encoding", value.asInstanceOf[js.Any])
+    def setFileFingerprintLines(value: String): Self = StObject.set(x, "FileFingerprintLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("Encoding", js.undefined)
+    def setFileFingerprintLinesUndefined: Self = StObject.set(x, "FileFingerprintLines", js.undefined)
     
     @scala.inline
-    def setFile(value: String): Self = this.set("File", value.asInstanceOf[js.Any])
+    def setFileUndefined: Self = StObject.set(x, "File", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("File", js.undefined)
+    def setInitialPosition(value: CloudWatchLogsInitialPosition): Self = StObject.set(x, "InitialPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileFingerprintLines(value: String): Self = this.set("FileFingerprintLines", value.asInstanceOf[js.Any])
+    def setInitialPositionUndefined: Self = StObject.set(x, "InitialPosition", js.undefined)
     
     @scala.inline
-    def deleteFileFingerprintLines: Self = this.set("FileFingerprintLines", js.undefined)
+    def setLogGroupName(value: String): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialPosition(value: CloudWatchLogsInitialPosition): Self = this.set("InitialPosition", value.asInstanceOf[js.Any])
+    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
     @scala.inline
-    def deleteInitialPosition: Self = this.set("InitialPosition", js.undefined)
+    def setMultiLineStartPattern(value: String): Self = StObject.set(x, "MultiLineStartPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: String): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
+    def setMultiLineStartPatternUndefined: Self = StObject.set(x, "MultiLineStartPattern", js.undefined)
     
     @scala.inline
-    def deleteLogGroupName: Self = this.set("LogGroupName", js.undefined)
+    def setTimeZone(value: CloudWatchLogsTimeZone): Self = StObject.set(x, "TimeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiLineStartPattern(value: String): Self = this.set("MultiLineStartPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiLineStartPattern: Self = this.set("MultiLineStartPattern", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: CloudWatchLogsTimeZone): Self = this.set("TimeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("TimeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "TimeZone", js.undefined)
   }
 }

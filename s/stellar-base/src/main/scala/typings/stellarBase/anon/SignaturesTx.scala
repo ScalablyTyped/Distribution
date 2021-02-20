@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.DecoratedSignature
 import typings.stellarBase.xdrMod.xdr.FeeBumpTransaction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignaturesTx extends js.Object {
+trait SignaturesTx extends StObject {
   
   var signatures: js.Array[DecoratedSignature] = js.native
   
@@ -22,27 +23,15 @@ object SignaturesTx {
   }
   
   @scala.inline
-  implicit class SignaturesTxOps[Self <: SignaturesTx] (val x: Self) extends AnyVal {
+  implicit class SignaturesTxMutableBuilder[Self <: SignaturesTx] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSignatures(value: js.Array[DecoratedSignature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignaturesVarargs(value: DecoratedSignature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSignaturesVarargs(value: DecoratedSignature*): Self = this.set("signatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setSignatures(value: js.Array[DecoratedSignature]): Self = this.set("signatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTx(value: FeeBumpTransaction): Self = this.set("tx", value.asInstanceOf[js.Any])
+    def setTx(value: FeeBumpTransaction): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
   }
 }

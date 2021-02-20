@@ -6,12 +6,13 @@ import typings.astTypes.kindsMod.ClassPropertyKind
 import typings.astTypes.kindsMod.MethodDefinitionKind
 import typings.astTypes.kindsMod.VariableDeclaratorKind
 import typings.astTypes.namedTypesMod.namedTypes.ClassPropertyDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassPropertyDefinitionBuilder extends js.Object {
+trait ClassPropertyDefinitionBuilder extends StObject {
   
   def apply(definition: ClassPropertyDefinitionKind): ClassPropertyDefinition = js.native
   def apply(definition: ClassPropertyKind): ClassPropertyDefinition = js.native

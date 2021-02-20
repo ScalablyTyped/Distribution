@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var DisplayPasteOptions: MsoTriState = js.native
   
@@ -32,30 +33,18 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayPasteOptions(value: MsoTriState): Self = StObject.set(x, "DisplayPasteOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoNotPromptForConvert(value: MsoTriState): Self = StObject.set(x, "DoNotPromptForConvert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPowerPointDotOptions_typekey(value: Options): Self = StObject.set(x, "PowerPoint.Options_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayPasteOptions(value: MsoTriState): Self = this.set("DisplayPasteOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDoNotPromptForConvert(value: MsoTriState): Self = this.set("DoNotPromptForConvert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotOptions_typekey(value: Options): Self = this.set("PowerPoint.Options_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowCoauthoringMergeChanges(value: Boolean): Self = this.set("ShowCoauthoringMergeChanges", value.asInstanceOf[js.Any])
+    def setShowCoauthoringMergeChanges(value: Boolean): Self = StObject.set(x, "ShowCoauthoringMergeChanges", value.asInstanceOf[js.Any])
   }
 }

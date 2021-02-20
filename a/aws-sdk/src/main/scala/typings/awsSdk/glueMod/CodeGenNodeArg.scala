@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeGenNodeArg extends js.Object {
+trait CodeGenNodeArg extends StObject {
   
   /**
     * The name of the argument or property.
@@ -31,30 +32,18 @@ object CodeGenNodeArg {
   }
   
   @scala.inline
-  implicit class CodeGenNodeArgOps[Self <: CodeGenNodeArg] (val x: Self) extends AnyVal {
+  implicit class CodeGenNodeArgMutableBuilder[Self <: CodeGenNodeArg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: CodeGenArgName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParam(value: Boolean): Self = StObject.set(x, "Param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParamUndefined: Self = StObject.set(x, "Param", js.undefined)
     
     @scala.inline
-    def setName(value: CodeGenArgName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: CodeGenArgValue): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParam(value: Boolean): Self = this.set("Param", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParam: Self = this.set("Param", js.undefined)
+    def setValue(value: CodeGenArgValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

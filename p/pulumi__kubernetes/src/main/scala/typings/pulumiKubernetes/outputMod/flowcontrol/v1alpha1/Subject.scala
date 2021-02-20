@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.flowcontrol.v1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Subject matches the originator of a request, as identified by the request authentication system. There are three ways of matching an originator; by user, group, or service account.
   */
 @js.native
-trait Subject extends js.Object {
+trait Subject extends StObject {
   
   var group: GroupSubject = js.native
   
@@ -30,30 +31,18 @@ object Subject {
   }
   
   @scala.inline
-  implicit class SubjectOps[Self <: Subject] (val x: Self) extends AnyVal {
+  implicit class SubjectMutableBuilder[Self <: Subject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: GroupSubject): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceAccount(value: ServiceAccountSubject): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: GroupSubject): Self = this.set("group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceAccount(value: ServiceAccountSubject): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: UserSubject): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: UserSubject): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

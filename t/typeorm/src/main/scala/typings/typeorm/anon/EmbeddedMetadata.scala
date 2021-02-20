@@ -1,12 +1,13 @@
 package typings.typeorm.anon
 
 import typings.typeorm.entityListenerMetadataArgsMod.EntityListenerMetadataArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmbeddedMetadata extends js.Object {
+trait EmbeddedMetadata extends StObject {
   
   var args: EntityListenerMetadataArgs = js.native
   
@@ -23,30 +24,18 @@ object EmbeddedMetadata {
   }
   
   @scala.inline
-  implicit class EmbeddedMetadataOps[Self <: EmbeddedMetadata] (val x: Self) extends AnyVal {
+  implicit class EmbeddedMetadataMutableBuilder[Self <: EmbeddedMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: EntityListenerMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmbeddedMetadata(value: typings.typeorm.embeddedMetadataMod.EmbeddedMetadata): Self = StObject.set(x, "embeddedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbeddedMetadataUndefined: Self = StObject.set(x, "embeddedMetadata", js.undefined)
     
     @scala.inline
-    def setArgs(value: EntityListenerMetadataArgs): Self = this.set("args", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntityMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = this.set("entityMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmbeddedMetadata(value: typings.typeorm.embeddedMetadataMod.EmbeddedMetadata): Self = this.set("embeddedMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmbeddedMetadata: Self = this.set("embeddedMetadata", js.undefined)
+    def setEntityMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
   }
 }

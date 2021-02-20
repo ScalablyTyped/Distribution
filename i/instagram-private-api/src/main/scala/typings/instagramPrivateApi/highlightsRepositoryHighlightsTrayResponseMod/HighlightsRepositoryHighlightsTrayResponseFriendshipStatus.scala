@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.highlightsRepositoryHighlightsTrayResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightsRepositoryHighlightsTrayResponseFriendshipStatus extends js.Object {
+trait HighlightsRepositoryHighlightsTrayResponseFriendshipStatus extends StObject {
   
   var blocking: js.UndefOr[Boolean] = js.native
   
@@ -34,60 +35,48 @@ object HighlightsRepositoryHighlightsTrayResponseFriendshipStatus {
   }
   
   @scala.inline
-  implicit class HighlightsRepositoryHighlightsTrayResponseFriendshipStatusOps[Self <: HighlightsRepositoryHighlightsTrayResponseFriendshipStatus] (val x: Self) extends AnyVal {
+  implicit class HighlightsRepositoryHighlightsTrayResponseFriendshipStatusMutableBuilder[Self <: HighlightsRepositoryHighlightsTrayResponseFriendshipStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockingUndefined: Self = StObject.set(x, "blocking", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowed_by(value: Boolean): Self = StObject.set(x, "followed_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowing(value: Boolean): Self = this.set("following", value.asInstanceOf[js.Any])
+    def setFollowed_byUndefined: Self = StObject.set(x, "followed_by", js.undefined)
     
     @scala.inline
-    def setIs_bestie(value: Boolean): Self = this.set("is_bestie", value.asInstanceOf[js.Any])
+    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_restricted(value: Boolean): Self = this.set("is_restricted", value.asInstanceOf[js.Any])
+    def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutgoing_request(value: Boolean): Self = this.set("outgoing_request", value.asInstanceOf[js.Any])
+    def setIncoming_requestUndefined: Self = StObject.set(x, "incoming_request", js.undefined)
     
     @scala.inline
-    def setBlocking(value: Boolean): Self = this.set("blocking", value.asInstanceOf[js.Any])
+    def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlocking: Self = this.set("blocking", js.undefined)
+    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowed_by(value: Boolean): Self = this.set("followed_by", value.asInstanceOf[js.Any])
+    def setIs_privateUndefined: Self = StObject.set(x, "is_private", js.undefined)
     
     @scala.inline
-    def deleteFollowed_by: Self = this.set("followed_by", js.undefined)
+    def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncoming_request(value: Boolean): Self = this.set("incoming_request", value.asInstanceOf[js.Any])
+    def setMuting(value: Boolean): Self = StObject.set(x, "muting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncoming_request: Self = this.set("incoming_request", js.undefined)
+    def setMutingUndefined: Self = StObject.set(x, "muting", js.undefined)
     
     @scala.inline
-    def setIs_private(value: Boolean): Self = this.set("is_private", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIs_private: Self = this.set("is_private", js.undefined)
-    
-    @scala.inline
-    def setMuting(value: Boolean): Self = this.set("muting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMuting: Self = this.set("muting", js.undefined)
+    def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
   }
 }

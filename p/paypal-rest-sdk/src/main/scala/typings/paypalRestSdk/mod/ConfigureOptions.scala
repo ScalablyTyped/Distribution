@@ -1,11 +1,12 @@
 package typings.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigureOptions extends js.Object {
+trait ConfigureOptions extends StObject {
   
   var authorize_url: js.UndefOr[String] = js.native
   
@@ -40,81 +41,69 @@ object ConfigureOptions {
   }
   
   @scala.inline
-  implicit class ConfigureOptionsOps[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
+  implicit class ConfigureOptionsMutableBuilder[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorize_url(value: String): Self = StObject.set(x, "authorize_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorize_urlUndefined: Self = StObject.set(x, "authorize_url", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_secret(value: String): Self = this.set("client_secret", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setAuthorize_url(value: String): Self = this.set("authorize_url", value.asInstanceOf[js.Any])
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthorize_url: Self = this.set("authorize_url", js.undefined)
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setLogout_url(value: String): Self = StObject.set(x, "logout_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setLogout_urlUndefined: Self = StObject.set(x, "logout_url", js.undefined)
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setOpenid_connect_host(value: String): Self = StObject.set(x, "openid_connect_host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogout_url(value: String): Self = this.set("logout_url", value.asInstanceOf[js.Any])
+    def setOpenid_connect_hostUndefined: Self = StObject.set(x, "openid_connect_host", js.undefined)
     
     @scala.inline
-    def deleteLogout_url: Self = this.set("logout_url", js.undefined)
+    def setOpenid_connect_port(value: String): Self = StObject.set(x, "openid_connect_port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenid_connect_host(value: String): Self = this.set("openid_connect_host", value.asInstanceOf[js.Any])
+    def setOpenid_connect_portUndefined: Self = StObject.set(x, "openid_connect_port", js.undefined)
     
     @scala.inline
-    def deleteOpenid_connect_host: Self = this.set("openid_connect_host", js.undefined)
+    def setOpenid_connect_schema(value: String): Self = StObject.set(x, "openid_connect_schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenid_connect_port(value: String): Self = this.set("openid_connect_port", value.asInstanceOf[js.Any])
+    def setOpenid_connect_schemaUndefined: Self = StObject.set(x, "openid_connect_schema", js.undefined)
     
     @scala.inline
-    def deleteOpenid_connect_port: Self = this.set("openid_connect_port", js.undefined)
+    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenid_connect_schema(value: String): Self = this.set("openid_connect_schema", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deleteOpenid_connect_schema: Self = this.set("openid_connect_schema", js.undefined)
+    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
-    
-    @scala.inline
-    def setSchema(value: String): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

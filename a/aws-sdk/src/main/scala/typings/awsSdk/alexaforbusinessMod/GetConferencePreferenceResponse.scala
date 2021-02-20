@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetConferencePreferenceResponse extends js.Object {
+trait GetConferencePreferenceResponse extends StObject {
   
   /**
     * The conference preference.
@@ -21,24 +22,12 @@ object GetConferencePreferenceResponse {
   }
   
   @scala.inline
-  implicit class GetConferencePreferenceResponseOps[Self <: GetConferencePreferenceResponse] (val x: Self) extends AnyVal {
+  implicit class GetConferencePreferenceResponseMutableBuilder[Self <: GetConferencePreferenceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreference(value: ConferencePreference): Self = StObject.set(x, "Preference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPreference(value: ConferencePreference): Self = this.set("Preference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreference: Self = this.set("Preference", js.undefined)
+    def setPreferenceUndefined: Self = StObject.set(x, "Preference", js.undefined)
   }
 }

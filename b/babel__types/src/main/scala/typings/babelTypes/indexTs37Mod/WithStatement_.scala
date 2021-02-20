@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.WithStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,27 +30,15 @@ object WithStatement_ {
   }
   
   @scala.inline
-  implicit class WithStatement_Ops[Self <: WithStatement_] (val x: Self) extends AnyVal {
+  implicit class WithStatement_MutableBuilder[Self <: WithStatement_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBody(value: Statement): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObject(value: Expression): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WithStatement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: WithStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

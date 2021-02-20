@@ -1,12 +1,13 @@
 package typings.lodash.fpMod
 
 import typings.lodash.mod.Many
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashFlow extends js.Object {
+trait LodashFlow extends StObject {
   
   def apply(func: (Many[js.Function1[/* repeated */ _, _]])*): js.Function1[/* repeated */ js.Any, _] = js.native
   def apply[A /* <: js.Array[_] */, R1, R2](f1: js.Function1[/* args */ A, R1], f2: js.Function1[/* a */ R1, R2]): js.Function1[/* args */ A, R2] = js.native

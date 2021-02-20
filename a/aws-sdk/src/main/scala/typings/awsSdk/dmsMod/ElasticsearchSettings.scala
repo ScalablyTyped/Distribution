@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElasticsearchSettings extends js.Object {
+trait ElasticsearchSettings extends StObject {
   
   /**
     * The endpoint for the Elasticsearch cluster. AWS DMS uses HTTPS if a transport protocol (http/https) is not specified.
@@ -36,36 +37,24 @@ object ElasticsearchSettings {
   }
   
   @scala.inline
-  implicit class ElasticsearchSettingsOps[Self <: ElasticsearchSettings] (val x: Self) extends AnyVal {
+  implicit class ElasticsearchSettingsMutableBuilder[Self <: ElasticsearchSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointUri(value: String): Self = StObject.set(x, "EndpointUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorRetryDuration(value: IntegerOptional): Self = StObject.set(x, "ErrorRetryDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorRetryDurationUndefined: Self = StObject.set(x, "ErrorRetryDuration", js.undefined)
     
     @scala.inline
-    def setEndpointUri(value: String): Self = this.set("EndpointUri", value.asInstanceOf[js.Any])
+    def setFullLoadErrorPercentage(value: IntegerOptional): Self = StObject.set(x, "FullLoadErrorPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = this.set("ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    def setFullLoadErrorPercentageUndefined: Self = StObject.set(x, "FullLoadErrorPercentage", js.undefined)
     
     @scala.inline
-    def setErrorRetryDuration(value: IntegerOptional): Self = this.set("ErrorRetryDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorRetryDuration: Self = this.set("ErrorRetryDuration", js.undefined)
-    
-    @scala.inline
-    def setFullLoadErrorPercentage(value: IntegerOptional): Self = this.set("FullLoadErrorPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullLoadErrorPercentage: Self = this.set("FullLoadErrorPercentage", js.undefined)
+    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
   }
 }

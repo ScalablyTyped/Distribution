@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1ListVersionsResponse extends js.Object {
+trait GoogleCloudMlV1ListVersionsResponse extends StObject {
   
   /** Optional. Pass this token as the `page_token` field of the request for a subsequent call. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object GoogleCloudMlV1ListVersionsResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1ListVersionsResponseOps[Self <: GoogleCloudMlV1ListVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1ListVersionsResponseMutableBuilder[Self <: GoogleCloudMlV1ListVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersions(value: js.Array[GoogleCloudMlV1Version]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setVersionsVarargs(value: GoogleCloudMlV1Version*): Self = this.set("versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: js.Array[GoogleCloudMlV1Version]): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
+    def setVersionsVarargs(value: GoogleCloudMlV1Version*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.cssTree.mod
 
 import typings.cssTree.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CssLocation extends js.Object {
+trait CssLocation extends StObject {
   
   var end: Column = js.native
   
@@ -23,27 +24,15 @@ object CssLocation {
   }
   
   @scala.inline
-  implicit class CssLocationOps[Self <: CssLocation] (val x: Self) extends AnyVal {
+  implicit class CssLocationMutableBuilder[Self <: CssLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Column): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnd(value: Column): Self = this.set("end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Column): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Column): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

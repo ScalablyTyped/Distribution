@@ -22,6 +22,7 @@ import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerString
 import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColonspawn_entity
 import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColonteleport
 import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColontick_world
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColonteleport
   - typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColontick_world
 */
-trait MinecraftComponent extends js.Object
+trait MinecraftComponent extends StObject
 object MinecraftComponent {
   
   /**

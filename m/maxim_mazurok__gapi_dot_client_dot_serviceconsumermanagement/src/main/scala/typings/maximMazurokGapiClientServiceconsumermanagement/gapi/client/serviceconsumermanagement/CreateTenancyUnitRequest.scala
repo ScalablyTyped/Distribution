@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTenancyUnitRequest extends js.Object {
+trait CreateTenancyUnitRequest extends StObject {
   
   /**
     * Optional. Optional service producer-provided identifier of the tenancy unit. Must be no longer than 40 characters and preferably URI friendly. If it isn't provided, a UID for the
@@ -23,24 +24,12 @@ object CreateTenancyUnitRequest {
   }
   
   @scala.inline
-  implicit class CreateTenancyUnitRequestOps[Self <: CreateTenancyUnitRequest] (val x: Self) extends AnyVal {
+  implicit class CreateTenancyUnitRequestMutableBuilder[Self <: CreateTenancyUnitRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTenancyUnitId(value: String): Self = StObject.set(x, "tenancyUnitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTenancyUnitId(value: String): Self = this.set("tenancyUnitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenancyUnitId: Self = this.set("tenancyUnitId", js.undefined)
+    def setTenancyUnitIdUndefined: Self = StObject.set(x, "tenancyUnitId", js.undefined)
   }
 }

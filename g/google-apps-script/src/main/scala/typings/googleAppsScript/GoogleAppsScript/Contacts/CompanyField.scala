@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Company field in a Contact.
   */
 @js.native
-trait CompanyField extends js.Object {
+trait CompanyField extends StObject {
   
   def deleteCompanyField(): Unit = js.native
   
@@ -41,39 +42,27 @@ object CompanyField {
   }
   
   @scala.inline
-  implicit class CompanyFieldOps[Self <: CompanyField] (val x: Self) extends AnyVal {
+  implicit class CompanyFieldMutableBuilder[Self <: CompanyField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteCompanyField(value: () => Unit): Self = StObject.set(x, "deleteCompanyField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCompanyName(value: () => String): Self = StObject.set(x, "getCompanyName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetJobTitle(value: () => String): Self = StObject.set(x, "getJobTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeleteCompanyField(value: () => Unit): Self = this.set("deleteCompanyField", js.Any.fromFunction0(value))
+    def setIsPrimary(value: () => Boolean): Self = StObject.set(x, "isPrimary", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCompanyName(value: () => String): Self = this.set("getCompanyName", js.Any.fromFunction0(value))
+    def setSetAsPrimary(value: () => CompanyField): Self = StObject.set(x, "setAsPrimary", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetJobTitle(value: () => String): Self = this.set("getJobTitle", js.Any.fromFunction0(value))
+    def setSetCompanyName(value: String => CompanyField): Self = StObject.set(x, "setCompanyName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsPrimary(value: () => Boolean): Self = this.set("isPrimary", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetAsPrimary(value: () => CompanyField): Self = this.set("setAsPrimary", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCompanyName(value: String => CompanyField): Self = this.set("setCompanyName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetJobTitle(value: String => CompanyField): Self = this.set("setJobTitle", js.Any.fromFunction1(value))
+    def setSetJobTitle(value: String => CompanyField): Self = StObject.set(x, "setJobTitle", js.Any.fromFunction1(value))
   }
 }

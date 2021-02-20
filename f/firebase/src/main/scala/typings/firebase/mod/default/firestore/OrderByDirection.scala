@@ -1,5 +1,6 @@
 package typings.firebase.mod.default.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firebase.firebaseStrings.desc
   - typings.firebase.firebaseStrings.asc
 */
-trait OrderByDirection extends js.Object
+trait OrderByDirection extends StObject
 object OrderByDirection {
   
   @scala.inline

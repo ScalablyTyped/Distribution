@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,33 +51,21 @@ object ASPxClientHintShowingEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientHintShowingEventArgsOps[Self <: ASPxClientHintShowingEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHintShowingEventArgsMutableBuilder[Self <: ASPxClientHintShowingEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentElement(value: js.Any): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHintElement(value: js.Any): Self = StObject.set(x, "hintElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentElement(value: js.Any): Self = this.set("contentElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHintElement(value: js.Any): Self = this.set("hintElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetElement(value: js.Any): Self = this.set("targetElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleElement(value: js.Any): Self = this.set("titleElement", value.asInstanceOf[js.Any])
+    def setTitleElement(value: js.Any): Self = StObject.set(x, "titleElement", value.asInstanceOf[js.Any])
   }
 }

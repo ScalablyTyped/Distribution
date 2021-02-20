@@ -11,6 +11,7 @@ import typings.chromeApps.chromeAppsStrings.screen_
 import typings.chromeApps.chromeAppsStrings.tab_
 import typings.chromeApps.chromeAppsStrings.window_
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,14 +26,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since Chrome 34.
   * @requires Permissions: 'desktopCapture'
   */
-@JSGlobal("chrome.desktopCapture")
-@js.native
-object desktopCapture extends js.Object {
+object desktopCapture {
+  
+  object DesktopCaptureSourceType {
+    
+    @JSGlobal("chrome.desktopCapture.DesktopCaptureSourceType")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("chrome.desktopCapture.DesktopCaptureSourceType.AUDIO")
+    @js.native
+    def AUDIO: audio_ = js.native
+    @scala.inline
+    def AUDIO_=(x: audio_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.desktopCapture.DesktopCaptureSourceType.SCREEN")
+    @js.native
+    def SCREEN: screen_ = js.native
+    @scala.inline
+    def SCREEN_=(x: screen_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCREEN")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.desktopCapture.DesktopCaptureSourceType.TAB")
+    @js.native
+    def TAB: tab_ = js.native
+    @scala.inline
+    def TAB_=(x: tab_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.desktopCapture.DesktopCaptureSourceType.WINDOW")
+    @js.native
+    def WINDOW: window_ = js.native
+    @scala.inline
+    def WINDOW_=(x: window_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOW")(x.asInstanceOf[js.Any])
+  }
   
   /**
     * Hides desktop media picker dialog shown by chooseDesktopMedia().
     * @param desktopMediaRequestId Id returned by chooseDesktopMedia()
     */
+  @JSGlobal("chrome.desktopCapture.cancelChooseDesktopMedia")
+  @js.native
   def cancelChooseDesktopMedia(desktopMediaRequestId: integer): Unit = js.native
   
   /**
@@ -43,6 +75,8 @@ object desktopCapture extends js.Object {
     *                 The created streamId can be used only once and expires after a few seconds when it is not used.
     * @return Request ID to be used by cancelChooseDesktopMedia
     */
+  @JSGlobal("chrome.desktopCapture.chooseDesktopMedia")
+  @js.native
   def chooseDesktopMedia(
     sources: js.Array[
       ToStringLiteral[
@@ -56,16 +90,4 @@ object desktopCapture extends js.Object {
     ],
     callback: js.Function1[/* streamId */ String, Unit]
   ): integer = js.native
-  
-  @js.native
-  object DesktopCaptureSourceType extends js.Object {
-    
-    var AUDIO: audio_ = js.native
-    
-    var SCREEN: screen_ = js.native
-    
-    var TAB: tab_ = js.native
-    
-    var WINDOW: window_ = js.native
-  }
 }

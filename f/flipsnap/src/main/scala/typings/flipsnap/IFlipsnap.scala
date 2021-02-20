@@ -1,11 +1,12 @@
 package typings.flipsnap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFlipsnap extends js.Object {
+trait IFlipsnap extends StObject {
   
   var element: HTMLElement = js.native
   

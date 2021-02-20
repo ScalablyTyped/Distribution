@@ -3,16 +3,16 @@ package typings.agGrid
 import typings.agGrid.columnMod.Column
 import typings.agGrid.gridPanelMod.GridPanel
 import typings.agGrid.headerRootCompMod.HeaderRootComp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/autoWidthCalculator", JSImport.Namespace)
-@js.native
-object autoWidthCalculatorMod extends js.Object {
+object autoWidthCalculatorMod {
   
+  @JSImport("ag-grid/dist/lib/rendering/autoWidthCalculator", "AutoWidthCalculator")
   @js.native
-  class AutoWidthCalculator () extends js.Object {
+  class AutoWidthCalculator () extends StObject {
     
     /* private */ def cloneItemIntoDummy(eCell: js.Any, eDummyContainer: js.Any): js.Any = js.native
     

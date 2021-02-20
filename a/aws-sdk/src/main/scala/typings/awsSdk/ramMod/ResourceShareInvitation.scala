@@ -1,11 +1,12 @@
 package typings.awsSdk.ramMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceShareInvitation extends js.Object {
+trait ResourceShareInvitation extends StObject {
   
   /**
     * The date and time when the invitation was sent.
@@ -56,69 +57,57 @@ object ResourceShareInvitation {
   }
   
   @scala.inline
-  implicit class ResourceShareInvitationOps[Self <: ResourceShareInvitation] (val x: Self) extends AnyVal {
+  implicit class ResourceShareInvitationMutableBuilder[Self <: ResourceShareInvitation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvitationTimestamp(value: DateTime): Self = StObject.set(x, "invitationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvitationTimestampUndefined: Self = StObject.set(x, "invitationTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReceiverAccountId(value: String): Self = StObject.set(x, "receiverAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitationTimestamp(value: DateTime): Self = this.set("invitationTimestamp", value.asInstanceOf[js.Any])
+    def setReceiverAccountIdUndefined: Self = StObject.set(x, "receiverAccountId", js.undefined)
     
     @scala.inline
-    def deleteInvitationTimestamp: Self = this.set("invitationTimestamp", js.undefined)
+    def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiverAccountId(value: String): Self = this.set("receiverAccountId", value.asInstanceOf[js.Any])
+    def setResourceShareArnUndefined: Self = StObject.set(x, "resourceShareArn", js.undefined)
     
     @scala.inline
-    def deleteReceiverAccountId: Self = this.set("receiverAccountId", js.undefined)
+    def setResourceShareAssociations(value: ResourceShareAssociationList): Self = StObject.set(x, "resourceShareAssociations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceShareArn(value: String): Self = this.set("resourceShareArn", value.asInstanceOf[js.Any])
+    def setResourceShareAssociationsUndefined: Self = StObject.set(x, "resourceShareAssociations", js.undefined)
     
     @scala.inline
-    def deleteResourceShareArn: Self = this.set("resourceShareArn", js.undefined)
+    def setResourceShareAssociationsVarargs(value: ResourceShareAssociation*): Self = StObject.set(x, "resourceShareAssociations", js.Array(value :_*))
     
     @scala.inline
-    def setResourceShareAssociationsVarargs(value: ResourceShareAssociation*): Self = this.set("resourceShareAssociations", js.Array(value :_*))
+    def setResourceShareInvitationArn(value: String): Self = StObject.set(x, "resourceShareInvitationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceShareAssociations(value: ResourceShareAssociationList): Self = this.set("resourceShareAssociations", value.asInstanceOf[js.Any])
+    def setResourceShareInvitationArnUndefined: Self = StObject.set(x, "resourceShareInvitationArn", js.undefined)
     
     @scala.inline
-    def deleteResourceShareAssociations: Self = this.set("resourceShareAssociations", js.undefined)
+    def setResourceShareName(value: String): Self = StObject.set(x, "resourceShareName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceShareInvitationArn(value: String): Self = this.set("resourceShareInvitationArn", value.asInstanceOf[js.Any])
+    def setResourceShareNameUndefined: Self = StObject.set(x, "resourceShareName", js.undefined)
     
     @scala.inline
-    def deleteResourceShareInvitationArn: Self = this.set("resourceShareInvitationArn", js.undefined)
+    def setSenderAccountId(value: String): Self = StObject.set(x, "senderAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceShareName(value: String): Self = this.set("resourceShareName", value.asInstanceOf[js.Any])
+    def setSenderAccountIdUndefined: Self = StObject.set(x, "senderAccountId", js.undefined)
     
     @scala.inline
-    def deleteResourceShareName: Self = this.set("resourceShareName", js.undefined)
+    def setStatus(value: ResourceShareInvitationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderAccountId(value: String): Self = this.set("senderAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSenderAccountId: Self = this.set("senderAccountId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ResourceShareInvitationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

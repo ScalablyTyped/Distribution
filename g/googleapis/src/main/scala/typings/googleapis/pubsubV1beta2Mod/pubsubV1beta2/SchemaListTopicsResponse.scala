@@ -1,5 +1,6 @@
 package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for the `ListTopics` method.
   */
 @js.native
-trait SchemaListTopicsResponse extends js.Object {
+trait SchemaListTopicsResponse extends StObject {
   
   /**
     * If not empty, indicates that there may be more topics that match the
@@ -30,33 +31,21 @@ object SchemaListTopicsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListTopicsResponseOps[Self <: SchemaListTopicsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListTopicsResponseMutableBuilder[Self <: SchemaListTopicsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTopics(value: js.Array[SchemaTopic]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTopicsVarargs(value: SchemaTopic*): Self = this.set("topics", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopics(value: js.Array[SchemaTopic]): Self = this.set("topics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopics: Self = this.set("topics", js.undefined)
+    def setTopicsVarargs(value: SchemaTopic*): Self = StObject.set(x, "topics", js.Array(value :_*))
   }
 }

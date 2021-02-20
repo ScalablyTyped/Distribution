@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a new event.
   */
 @js.native
-trait INewEvent extends js.Object {
+trait INewEvent extends StObject {
   
   /**
     * The user's availability status for the event. Valid values are:
@@ -84,63 +85,51 @@ object INewEvent {
   }
   
   @scala.inline
-  implicit class INewEventOps[Self <: INewEvent] (val x: Self) extends AnyVal {
+  implicit class INewEventMutableBuilder[Self <: INewEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnd_time(value: js.Any): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setEnd_timeUndefined: Self = StObject.set(x, "end_time", js.undefined)
     
     @scala.inline
-    def setStart_time(value: js.Any): Self = this.set("start_time", value.asInstanceOf[js.Any])
+    def setIs_all_day_event(value: Boolean): Self = StObject.set(x, "is_all_day_event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailability(value: String): Self = this.set("availability", value.asInstanceOf[js.Any])
+    def setIs_all_day_eventUndefined: Self = StObject.set(x, "is_all_day_event", js.undefined)
     
     @scala.inline
-    def deleteAvailability: Self = this.set("availability", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_time(value: js.Any): Self = this.set("end_time", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteEnd_time: Self = this.set("end_time", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_all_day_event(value: Boolean): Self = this.set("is_all_day_event", value.asInstanceOf[js.Any])
+    def setReminder_time(value: Double): Self = StObject.set(x, "reminder_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_all_day_event: Self = this.set("is_all_day_event", js.undefined)
+    def setReminder_timeUndefined: Self = StObject.set(x, "reminder_time", js.undefined)
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setStart_time(value: js.Any): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReminder_time(value: Double): Self = this.set("reminder_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReminder_time: Self = this.set("reminder_time", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

@@ -7,12 +7,13 @@ import typings.ckeditor.CKEDITOR.filter.disallowedContentRules
 import typings.ckeditor.CKEDITOR.filter.transformation
 import typings.ckeditor.CKEDITOR.htmlParser.element
 import typings.ckeditor.CKEDITOR.htmlParser.fragment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait filter extends js.Object {
+trait filter extends StObject {
   
   def addContentForms(forms: js.Array[_]): Unit = js.native
   
@@ -84,12 +85,18 @@ trait filter extends js.Object {
   
   val id: Double = js.native
 }
-@JSGlobal("CKEDITOR.filter")
-@js.native
-object filter extends js.Object {
+object filter {
+  
+  type allowedContentRule = String | style | StringDictionary[js.Any]
+  
+  type allowedContentRules = allowedContentRule | js.Array[allowedContentRule]
+  
+  type contentRule = String | style
+  
+  type disallowedContentRules = String | StringDictionary[js.Any]
   
   @js.native
-  trait transformation extends js.Object {
+  trait transformation extends StObject {
     
     var check: js.UndefOr[String] = js.native
     
@@ -102,7 +109,7 @@ object filter extends js.Object {
   }
   
   @js.native
-  trait transformationTools extends js.Object {
+  trait transformationTools extends StObject {
     
     def alignmentToAttribute(element: element): Unit = js.native
     
@@ -127,12 +134,4 @@ object filter extends js.Object {
     def transform(element: element, form: String): Unit = js.native
     def transform(element: element, form: style): Unit = js.native
   }
-  
-  type allowedContentRule = String | style | StringDictionary[js.Any]
-  
-  type allowedContentRules = allowedContentRule | js.Array[allowedContentRule]
-  
-  type contentRule = String | style
-  
-  type disallowedContentRules = String | StringDictionary[js.Any]
 }

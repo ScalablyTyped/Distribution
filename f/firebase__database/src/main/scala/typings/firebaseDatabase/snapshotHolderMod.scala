@@ -2,16 +2,16 @@ package typings.firebaseDatabase
 
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/SnapshotHolder", JSImport.Namespace)
-@js.native
-object snapshotHolderMod extends js.Object {
+object snapshotHolderMod {
   
+  @JSImport("@firebase/database/dist/src/core/SnapshotHolder", "SnapshotHolder")
   @js.native
-  class SnapshotHolder () extends js.Object {
+  class SnapshotHolder () extends StObject {
     
     def getNode(path: Path): Node = js.native
     

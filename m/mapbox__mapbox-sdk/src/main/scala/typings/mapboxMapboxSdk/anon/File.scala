@@ -2,12 +2,13 @@ package typings.mapboxMapboxSdk.anon
 
 import typings.std.ArrayBuffer
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait File extends js.Object {
+trait File extends StObject {
   
   var file: Blob | ArrayBuffer | String = js.native
   
@@ -26,33 +27,21 @@ object File {
   }
   
   @scala.inline
-  implicit class FileOps[Self <: File] (val x: Self) extends AnyVal {
+  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile(value: Blob | ArrayBuffer | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconId(value: String): Self = StObject.set(x, "iconId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: Blob | ArrayBuffer | String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
     
     @scala.inline
-    def setIconId(value: String): Self = this.set("iconId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleId(value: String): Self = this.set("styleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwnerId(value: String): Self = this.set("ownerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerId: Self = this.set("ownerId", js.undefined)
+    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
   }
 }

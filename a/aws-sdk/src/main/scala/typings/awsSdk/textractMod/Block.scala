@@ -1,11 +1,12 @@
 package typings.awsSdk.textractMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Block extends js.Object {
+trait Block extends StObject {
   
   /**
     * The type of text item that's recognized. In operations for text detection, the following types are returned:    PAGE - Contains a list of the LINE Block objects that are detected on a document page.    WORD - A word detected on a document page. A word is one or more ISO basic Latin script characters that aren't separated by spaces.    LINE - A string of tab-delimited, contiguous words that are detected on a document page.   In text analysis operations, the following types are returned:    PAGE - Contains a list of child Block objects that are detected on a document page.    KEY_VALUE_SET - Stores the KEY and VALUE Block objects for linked text that's detected on a document page. Use the EntityType field to determine if a KEY_VALUE_SET object is a KEY Block object or a VALUE Block object.     WORD - A word that's detected on a document page. A word is one or more ISO basic Latin script characters that aren't separated by spaces.    LINE - A string of tab-delimited, contiguous words that are detected on a document page.    TABLE - A table that's detected on a document page. A table is grid-based information with two or more rows or columns, with a cell span of one row and one column each.     CELL - A cell within a detected table. The cell is the parent of the block that contains the text in the cell.    SELECTION_ELEMENT - A selection element such as an option button (radio button) or a check box that's detected on a document page. Use the value of SelectionStatus to determine the status of the selection element.  
@@ -86,108 +87,96 @@ object Block {
   }
   
   @scala.inline
-  implicit class BlockOps[Self <: Block] (val x: Self) extends AnyVal {
+  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockType(value: BlockType): Self = StObject.set(x, "BlockType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockTypeUndefined: Self = StObject.set(x, "BlockType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnIndex(value: UInteger): Self = StObject.set(x, "ColumnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockType(value: BlockType): Self = this.set("BlockType", value.asInstanceOf[js.Any])
+    def setColumnIndexUndefined: Self = StObject.set(x, "ColumnIndex", js.undefined)
     
     @scala.inline
-    def deleteBlockType: Self = this.set("BlockType", js.undefined)
+    def setColumnSpan(value: UInteger): Self = StObject.set(x, "ColumnSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: UInteger): Self = this.set("ColumnIndex", value.asInstanceOf[js.Any])
+    def setColumnSpanUndefined: Self = StObject.set(x, "ColumnSpan", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("ColumnIndex", js.undefined)
+    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSpan(value: UInteger): Self = this.set("ColumnSpan", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def deleteColumnSpan: Self = this.set("ColumnSpan", js.undefined)
+    def setEntityTypes(value: EntityTypes): Self = StObject.set(x, "EntityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    def setEntityTypesUndefined: Self = StObject.set(x, "EntityTypes", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    def setEntityTypesVarargs(value: EntityType*): Self = StObject.set(x, "EntityTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEntityTypesVarargs(value: EntityType*): Self = this.set("EntityTypes", js.Array(value :_*))
+    def setGeometry(value: Geometry): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityTypes(value: EntityTypes): Self = this.set("EntityTypes", value.asInstanceOf[js.Any])
+    def setGeometryUndefined: Self = StObject.set(x, "Geometry", js.undefined)
     
     @scala.inline
-    def deleteEntityTypes: Self = this.set("EntityTypes", js.undefined)
+    def setId(value: NonEmptyString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometry(value: Geometry): Self = this.set("Geometry", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteGeometry: Self = this.set("Geometry", js.undefined)
+    def setPage(value: UInteger): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: NonEmptyString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "Page", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setRelationships(value: RelationshipList): Self = StObject.set(x, "Relationships", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: UInteger): Self = this.set("Page", value.asInstanceOf[js.Any])
+    def setRelationshipsUndefined: Self = StObject.set(x, "Relationships", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("Page", js.undefined)
+    def setRelationshipsVarargs(value: Relationship*): Self = StObject.set(x, "Relationships", js.Array(value :_*))
     
     @scala.inline
-    def setRelationshipsVarargs(value: Relationship*): Self = this.set("Relationships", js.Array(value :_*))
+    def setRowIndex(value: UInteger): Self = StObject.set(x, "RowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationships(value: RelationshipList): Self = this.set("Relationships", value.asInstanceOf[js.Any])
+    def setRowIndexUndefined: Self = StObject.set(x, "RowIndex", js.undefined)
     
     @scala.inline
-    def deleteRelationships: Self = this.set("Relationships", js.undefined)
+    def setRowSpan(value: UInteger): Self = StObject.set(x, "RowSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndex(value: UInteger): Self = this.set("RowIndex", value.asInstanceOf[js.Any])
+    def setRowSpanUndefined: Self = StObject.set(x, "RowSpan", js.undefined)
     
     @scala.inline
-    def deleteRowIndex: Self = this.set("RowIndex", js.undefined)
+    def setSelectionStatus(value: SelectionStatus): Self = StObject.set(x, "SelectionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowSpan(value: UInteger): Self = this.set("RowSpan", value.asInstanceOf[js.Any])
+    def setSelectionStatusUndefined: Self = StObject.set(x, "SelectionStatus", js.undefined)
     
     @scala.inline
-    def deleteRowSpan: Self = this.set("RowSpan", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionStatus(value: SelectionStatus): Self = this.set("SelectionStatus", value.asInstanceOf[js.Any])
+    def setTextType(value: TextType): Self = StObject.set(x, "TextType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectionStatus: Self = this.set("SelectionStatus", js.undefined)
+    def setTextTypeUndefined: Self = StObject.set(x, "TextType", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("Text", js.undefined)
-    
-    @scala.inline
-    def setTextType(value: TextType): Self = this.set("TextType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextType: Self = this.set("TextType", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.easeljs.createjs
 
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +47,7 @@ trait Stage extends Container {
   def tick(): Unit = js.native
   def tick(props: js.Object): Unit = js.native
   
-    // deprecated
+  // deprecated
   var tickOnUpdate: Boolean = js.native
   
   def toDataURL(backgroundColor: String, mimeType: String): String = js.native

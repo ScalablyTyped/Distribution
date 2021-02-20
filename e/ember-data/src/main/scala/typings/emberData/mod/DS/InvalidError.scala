@@ -1,6 +1,6 @@
 package typings.emberData.mod.DS
 
-import typings.emberObject.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember-data", "DS.InvalidError")
 @js.native
-class InvalidError protected () extends default {
+class InvalidError protected () extends AdapterError {
   def this(errors: js.Array[_]) = this()
 }

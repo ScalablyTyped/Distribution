@@ -1,14 +1,14 @@
 package typings.lodashDecorators
 
 import typings.lodashDecorators.applicatorMod.Applicator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/applicators/MemoizeApplicator", JSImport.Namespace)
-@js.native
-object memoizeApplicatorMod extends js.Object {
+object memoizeApplicatorMod {
   
+  @JSImport("lodash-decorators/applicators/MemoizeApplicator", "MemoizeApplicator")
   @js.native
   class MemoizeApplicator () extends Applicator
 }

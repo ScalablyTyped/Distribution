@@ -1,11 +1,12 @@
 package typings.ariClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTPstat extends js.Object {
+trait RTPstat extends StObject {
   
   /**
     * The Asterisk channels unique ID that owns this instance.
@@ -186,183 +187,171 @@ object RTPstat {
   }
   
   @scala.inline
-  implicit class RTPstatOps[Self <: RTPstat] (val x: Self) extends AnyVal {
+  implicit class RTPstatMutableBuilder[Self <: RTPstat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel_uniqueid(value: String): Self = StObject.set(x, "channel_uniqueid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocal_maxjitter(value: Double): Self = StObject.set(x, "local_maxjitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocal_maxjitterUndefined: Self = StObject.set(x, "local_maxjitter", js.undefined)
     
     @scala.inline
-    def setChannel_uniqueid(value: String): Self = this.set("channel_uniqueid", value.asInstanceOf[js.Any])
+    def setLocal_maxrxploss(value: Double): Self = StObject.set(x, "local_maxrxploss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal_ssrc(value: Double): Self = this.set("local_ssrc", value.asInstanceOf[js.Any])
+    def setLocal_maxrxplossUndefined: Self = StObject.set(x, "local_maxrxploss", js.undefined)
     
     @scala.inline
-    def setRemote_ssrc(value: Double): Self = this.set("remote_ssrc", value.asInstanceOf[js.Any])
+    def setLocal_minjitter(value: Double): Self = StObject.set(x, "local_minjitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRxcount(value: Double): Self = this.set("rxcount", value.asInstanceOf[js.Any])
+    def setLocal_minjitterUndefined: Self = StObject.set(x, "local_minjitter", js.undefined)
     
     @scala.inline
-    def setRxoctetcount(value: Double): Self = this.set("rxoctetcount", value.asInstanceOf[js.Any])
+    def setLocal_minrxploss(value: Double): Self = StObject.set(x, "local_minrxploss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRxploss(value: Double): Self = this.set("rxploss", value.asInstanceOf[js.Any])
+    def setLocal_minrxplossUndefined: Self = StObject.set(x, "local_minrxploss", js.undefined)
     
     @scala.inline
-    def setTxcount(value: Double): Self = this.set("txcount", value.asInstanceOf[js.Any])
+    def setLocal_normdevjitter(value: Double): Self = StObject.set(x, "local_normdevjitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTxoctetcount(value: Double): Self = this.set("txoctetcount", value.asInstanceOf[js.Any])
+    def setLocal_normdevjitterUndefined: Self = StObject.set(x, "local_normdevjitter", js.undefined)
     
     @scala.inline
-    def setTxploss(value: Double): Self = this.set("txploss", value.asInstanceOf[js.Any])
+    def setLocal_normdevrxploss(value: Double): Self = StObject.set(x, "local_normdevrxploss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal_maxjitter(value: Double): Self = this.set("local_maxjitter", value.asInstanceOf[js.Any])
+    def setLocal_normdevrxplossUndefined: Self = StObject.set(x, "local_normdevrxploss", js.undefined)
     
     @scala.inline
-    def deleteLocal_maxjitter: Self = this.set("local_maxjitter", js.undefined)
+    def setLocal_ssrc(value: Double): Self = StObject.set(x, "local_ssrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal_maxrxploss(value: Double): Self = this.set("local_maxrxploss", value.asInstanceOf[js.Any])
+    def setLocal_stdevjitter(value: Double): Self = StObject.set(x, "local_stdevjitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocal_maxrxploss: Self = this.set("local_maxrxploss", js.undefined)
+    def setLocal_stdevjitterUndefined: Self = StObject.set(x, "local_stdevjitter", js.undefined)
     
     @scala.inline
-    def setLocal_minjitter(value: Double): Self = this.set("local_minjitter", value.asInstanceOf[js.Any])
+    def setLocal_stdevrxploss(value: Double): Self = StObject.set(x, "local_stdevrxploss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocal_minjitter: Self = this.set("local_minjitter", js.undefined)
+    def setLocal_stdevrxplossUndefined: Self = StObject.set(x, "local_stdevrxploss", js.undefined)
     
     @scala.inline
-    def setLocal_minrxploss(value: Double): Self = this.set("local_minrxploss", value.asInstanceOf[js.Any])
+    def setMaxrtt(value: Double): Self = StObject.set(x, "maxrtt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocal_minrxploss: Self = this.set("local_minrxploss", js.undefined)
+    def setMaxrttUndefined: Self = StObject.set(x, "maxrtt", js.undefined)
     
     @scala.inline
-    def setLocal_normdevjitter(value: Double): Self = this.set("local_normdevjitter", value.asInstanceOf[js.Any])
+    def setMinrtt(value: Double): Self = StObject.set(x, "minrtt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocal_normdevjitter: Self = this.set("local_normdevjitter", js.undefined)
+    def setMinrttUndefined: Self = StObject.set(x, "minrtt", js.undefined)
     
     @scala.inline
-    def setLocal_normdevrxploss(value: Double): Self = this.set("local_normdevrxploss", value.asInstanceOf[js.Any])
+    def setNormdevrtt(value: Double): Self = StObject.set(x, "normdevrtt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocal_normdevrxploss: Self = this.set("local_normdevrxploss", js.undefined)
+    def setNormdevrttUndefined: Self = StObject.set(x, "normdevrtt", js.undefined)
     
     @scala.inline
-    def setLocal_stdevjitter(value: Double): Self = this.set("local_stdevjitter", value.asInstanceOf[js.Any])
+    def setRemote_maxjitter(value: Double): Self = StObject.set(x, "remote_maxjitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocal_stdevjitter: Self = this.set("local_stdevjitter", js.undefined)
+    def setRemote_maxjitterUndefined: Self = StObject.set(x, "remote_maxjitter", js.undefined)
     
     @scala.inline
-    def setLocal_stdevrxploss(value: Double): Self = this.set("local_stdevrxploss", value.asInstanceOf[js.Any])
+    def setRemote_maxrxploss(value: Double): Self = StObject.set(x, "remote_maxrxploss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocal_stdevrxploss: Self = this.set("local_stdevrxploss", js.undefined)
+    def setRemote_maxrxplossUndefined: Self = StObject.set(x, "remote_maxrxploss", js.undefined)
     
     @scala.inline
-    def setMaxrtt(value: Double): Self = this.set("maxrtt", value.asInstanceOf[js.Any])
+    def setRemote_minjitter(value: Double): Self = StObject.set(x, "remote_minjitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxrtt: Self = this.set("maxrtt", js.undefined)
+    def setRemote_minjitterUndefined: Self = StObject.set(x, "remote_minjitter", js.undefined)
     
     @scala.inline
-    def setMinrtt(value: Double): Self = this.set("minrtt", value.asInstanceOf[js.Any])
+    def setRemote_minrxploss(value: Double): Self = StObject.set(x, "remote_minrxploss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinrtt: Self = this.set("minrtt", js.undefined)
+    def setRemote_minrxplossUndefined: Self = StObject.set(x, "remote_minrxploss", js.undefined)
     
     @scala.inline
-    def setNormdevrtt(value: Double): Self = this.set("normdevrtt", value.asInstanceOf[js.Any])
+    def setRemote_normdevjitter(value: Double): Self = StObject.set(x, "remote_normdevjitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNormdevrtt: Self = this.set("normdevrtt", js.undefined)
+    def setRemote_normdevjitterUndefined: Self = StObject.set(x, "remote_normdevjitter", js.undefined)
     
     @scala.inline
-    def setRemote_maxjitter(value: Double): Self = this.set("remote_maxjitter", value.asInstanceOf[js.Any])
+    def setRemote_normdevrxploss(value: Double): Self = StObject.set(x, "remote_normdevrxploss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemote_maxjitter: Self = this.set("remote_maxjitter", js.undefined)
+    def setRemote_normdevrxplossUndefined: Self = StObject.set(x, "remote_normdevrxploss", js.undefined)
     
     @scala.inline
-    def setRemote_maxrxploss(value: Double): Self = this.set("remote_maxrxploss", value.asInstanceOf[js.Any])
+    def setRemote_ssrc(value: Double): Self = StObject.set(x, "remote_ssrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemote_maxrxploss: Self = this.set("remote_maxrxploss", js.undefined)
+    def setRemote_stdevjitter(value: Double): Self = StObject.set(x, "remote_stdevjitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemote_minjitter(value: Double): Self = this.set("remote_minjitter", value.asInstanceOf[js.Any])
+    def setRemote_stdevjitterUndefined: Self = StObject.set(x, "remote_stdevjitter", js.undefined)
     
     @scala.inline
-    def deleteRemote_minjitter: Self = this.set("remote_minjitter", js.undefined)
+    def setRemote_stdevrxploss(value: Double): Self = StObject.set(x, "remote_stdevrxploss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemote_minrxploss(value: Double): Self = this.set("remote_minrxploss", value.asInstanceOf[js.Any])
+    def setRemote_stdevrxplossUndefined: Self = StObject.set(x, "remote_stdevrxploss", js.undefined)
     
     @scala.inline
-    def deleteRemote_minrxploss: Self = this.set("remote_minrxploss", js.undefined)
+    def setRtt(value: Double): Self = StObject.set(x, "rtt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemote_normdevjitter(value: Double): Self = this.set("remote_normdevjitter", value.asInstanceOf[js.Any])
+    def setRttUndefined: Self = StObject.set(x, "rtt", js.undefined)
     
     @scala.inline
-    def deleteRemote_normdevjitter: Self = this.set("remote_normdevjitter", js.undefined)
+    def setRxcount(value: Double): Self = StObject.set(x, "rxcount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemote_normdevrxploss(value: Double): Self = this.set("remote_normdevrxploss", value.asInstanceOf[js.Any])
+    def setRxjitter(value: Double): Self = StObject.set(x, "rxjitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemote_normdevrxploss: Self = this.set("remote_normdevrxploss", js.undefined)
+    def setRxjitterUndefined: Self = StObject.set(x, "rxjitter", js.undefined)
     
     @scala.inline
-    def setRemote_stdevjitter(value: Double): Self = this.set("remote_stdevjitter", value.asInstanceOf[js.Any])
+    def setRxoctetcount(value: Double): Self = StObject.set(x, "rxoctetcount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemote_stdevjitter: Self = this.set("remote_stdevjitter", js.undefined)
+    def setRxploss(value: Double): Self = StObject.set(x, "rxploss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemote_stdevrxploss(value: Double): Self = this.set("remote_stdevrxploss", value.asInstanceOf[js.Any])
+    def setStdevrtt(value: Double): Self = StObject.set(x, "stdevrtt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemote_stdevrxploss: Self = this.set("remote_stdevrxploss", js.undefined)
+    def setStdevrttUndefined: Self = StObject.set(x, "stdevrtt", js.undefined)
     
     @scala.inline
-    def setRtt(value: Double): Self = this.set("rtt", value.asInstanceOf[js.Any])
+    def setTxcount(value: Double): Self = StObject.set(x, "txcount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRtt: Self = this.set("rtt", js.undefined)
+    def setTxjitter(value: Double): Self = StObject.set(x, "txjitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRxjitter(value: Double): Self = this.set("rxjitter", value.asInstanceOf[js.Any])
+    def setTxjitterUndefined: Self = StObject.set(x, "txjitter", js.undefined)
     
     @scala.inline
-    def deleteRxjitter: Self = this.set("rxjitter", js.undefined)
+    def setTxoctetcount(value: Double): Self = StObject.set(x, "txoctetcount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdevrtt(value: Double): Self = this.set("stdevrtt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdevrtt: Self = this.set("stdevrtt", js.undefined)
-    
-    @scala.inline
-    def setTxjitter(value: Double): Self = this.set("txjitter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTxjitter: Self = this.set("txjitter", js.undefined)
+    def setTxploss(value: Double): Self = StObject.set(x, "txploss", value.asInstanceOf[js.Any])
   }
 }

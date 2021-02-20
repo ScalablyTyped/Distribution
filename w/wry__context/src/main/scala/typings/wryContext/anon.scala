@@ -1,16 +1,15 @@
 package typings.wryContext
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait GetValue[TValue] extends js.Object {
+  trait GetValue[TValue] extends StObject {
     
     def getValue(): js.UndefOr[TValue] = js.native
     

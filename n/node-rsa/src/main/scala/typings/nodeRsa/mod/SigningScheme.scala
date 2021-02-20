@@ -1,5 +1,6 @@
 package typings.nodeRsa.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeRsa.nodeRsaStrings.pkcs1
   - typings.nodeRsa.nodeRsaStrings.pss
 */
-trait SigningScheme extends js.Object
+trait SigningScheme extends StObject
 object SigningScheme {
   
   @scala.inline

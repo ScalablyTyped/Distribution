@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait hasSchedulesBuilder[B] extends js.Object {
+trait hasSchedulesBuilder[B] extends StObject {
   
   def withSchedules(schedules: ExtensionScheduleInput): B = js.native
 }
@@ -18,21 +19,9 @@ object hasSchedulesBuilder {
   }
   
   @scala.inline
-  implicit class hasSchedulesBuilderOps[Self <: hasSchedulesBuilder[_], B] (val x: Self with hasSchedulesBuilder[B]) extends AnyVal {
+  implicit class hasSchedulesBuilderMutableBuilder[Self <: hasSchedulesBuilder[_], B] (val x: Self with hasSchedulesBuilder[B]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWithSchedules(value: ExtensionScheduleInput => B): Self = this.set("withSchedules", js.Any.fromFunction1(value))
+    def setWithSchedules(value: ExtensionScheduleInput => B): Self = StObject.set(x, "withSchedules", js.Any.fromFunction1(value))
   }
 }

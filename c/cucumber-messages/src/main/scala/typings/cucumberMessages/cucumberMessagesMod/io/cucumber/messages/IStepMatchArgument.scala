@@ -1,13 +1,14 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.IGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a StepMatchArgument. */
 @js.native
-trait IStepMatchArgument extends js.Object {
+trait IStepMatchArgument extends StObject {
   
   /**
     * Represents the outermost capture group of an argument. This message closely matches the
@@ -27,36 +28,24 @@ object IStepMatchArgument {
   }
   
   @scala.inline
-  implicit class IStepMatchArgumentOps[Self <: IStepMatchArgument] (val x: Self) extends AnyVal {
+  implicit class IStepMatchArgumentMutableBuilder[Self <: IStepMatchArgument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: IGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupNull: Self = StObject.set(x, "group", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setGroup(value: IGroup): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setParameterTypeName(value: String): Self = StObject.set(x, "parameterTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setParameterTypeNameNull: Self = StObject.set(x, "parameterTypeName", null)
     
     @scala.inline
-    def setGroupNull: Self = this.set("group", null)
-    
-    @scala.inline
-    def setParameterTypeName(value: String): Self = this.set("parameterTypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterTypeName: Self = this.set("parameterTypeName", js.undefined)
-    
-    @scala.inline
-    def setParameterTypeNameNull: Self = this.set("parameterTypeName", null)
+    def setParameterTypeNameUndefined: Self = StObject.set(x, "parameterTypeName", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.view
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,39 +74,27 @@ object XMultiSelectionSupplier {
   }
   
   @scala.inline
-  implicit class XMultiSelectionSupplierOps[Self <: XMultiSelectionSupplier] (val x: Self) extends AnyVal {
+  implicit class XMultiSelectionSupplierMutableBuilder[Self <: XMultiSelectionSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSelection(value: js.Any => Boolean): Self = StObject.set(x, "addSelection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearSelection(value: () => Unit): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateReverseSelectionEnumeration(value: () => XEnumeration): Self = StObject.set(x, "createReverseSelectionEnumeration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSelectionCount(value: Double): Self = this.set("SelectionCount", value.asInstanceOf[js.Any])
+    def setCreateSelectionEnumeration(value: () => XEnumeration): Self = StObject.set(x, "createSelectionEnumeration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddSelection(value: js.Any => Boolean): Self = this.set("addSelection", js.Any.fromFunction1(value))
+    def setGetSelectionCount(value: () => Double): Self = StObject.set(x, "getSelectionCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearSelection(value: () => Unit): Self = this.set("clearSelection", js.Any.fromFunction0(value))
+    def setRemoveSelection(value: js.Any => Unit): Self = StObject.set(x, "removeSelection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateReverseSelectionEnumeration(value: () => XEnumeration): Self = this.set("createReverseSelectionEnumeration", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCreateSelectionEnumeration(value: () => XEnumeration): Self = this.set("createSelectionEnumeration", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSelectionCount(value: () => Double): Self = this.set("getSelectionCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveSelection(value: js.Any => Unit): Self = this.set("removeSelection", js.Any.fromFunction1(value))
+    def setSelectionCount(value: Double): Self = StObject.set(x, "SelectionCount", value.asInstanceOf[js.Any])
   }
 }

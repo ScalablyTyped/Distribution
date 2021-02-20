@@ -1,11 +1,12 @@
 package typings.rax.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaxSVG extends js.Object {
+trait RaxSVG extends StObject {
   
   def animate(props: ClassAttributes[SVGElement] with SVGAttributes[SVGElement], children: RaxNode*): RaxSVGElement = js.native
   def animate(props: js.UndefOr[scala.Nothing], children: RaxNode*): RaxSVGElement = js.native

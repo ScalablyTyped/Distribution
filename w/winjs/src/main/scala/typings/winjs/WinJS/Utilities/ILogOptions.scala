@@ -1,5 +1,6 @@
 package typings.winjs.WinJS.Utilities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion Properties
 //#region Interfaces
 @js.native
-trait ILogOptions extends js.Object {
+trait ILogOptions extends StObject {
   
   var action: js.UndefOr[js.Function3[/* message */ String, /* tags */ String, /* type */ String, Unit]] = js.native
   
@@ -26,42 +27,30 @@ object ILogOptions {
   }
   
   @scala.inline
-  implicit class ILogOptionsOps[Self <: ILogOptions] (val x: Self) extends AnyVal {
+  implicit class ILogOptionsMutableBuilder[Self <: ILogOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: (/* message */ String, /* tags */ String, /* type */ String) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeTags(value: String): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: (/* message */ String, /* tags */ String, /* type */ String) => Unit): Self = this.set("action", js.Any.fromFunction3(value))
+    def setExcludeTagsUndefined: Self = StObject.set(x, "excludeTags", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeTags(value: String): Self = this.set("excludeTags", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteExcludeTags: Self = this.set("excludeTags", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: String): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

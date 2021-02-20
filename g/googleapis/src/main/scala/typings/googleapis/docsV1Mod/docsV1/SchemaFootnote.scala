@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A document footnote.
   */
 @js.native
-trait SchemaFootnote extends js.Object {
+trait SchemaFootnote extends StObject {
   
   /**
     * The contents of the footnote.  The indexes for a footnote&#39;s content
@@ -30,33 +31,21 @@ object SchemaFootnote {
   }
   
   @scala.inline
-  implicit class SchemaFootnoteOps[Self <: SchemaFootnote] (val x: Self) extends AnyVal {
+  implicit class SchemaFootnoteMutableBuilder[Self <: SchemaFootnote] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: js.Array[SchemaStructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
     
     @scala.inline
-    def setContentVarargs(value: SchemaStructuralElement*): Self = this.set("content", js.Array(value :_*))
+    def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: js.Array[SchemaStructuralElement]): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
-    
-    @scala.inline
-    def setFootnoteId(value: String): Self = this.set("footnoteId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFootnoteId: Self = this.set("footnoteId", js.undefined)
+    def setFootnoteIdUndefined: Self = StObject.set(x, "footnoteId", js.undefined)
   }
 }

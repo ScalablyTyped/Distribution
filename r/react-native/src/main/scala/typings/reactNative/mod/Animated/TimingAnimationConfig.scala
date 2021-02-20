@@ -1,6 +1,7 @@
 package typings.reactNative.mod.Animated
 
 import typings.reactNative.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,39 +29,27 @@ object TimingAnimationConfig {
   }
   
   @scala.inline
-  implicit class TimingAnimationConfigOps[Self <: TimingAnimationConfig] (val x: Self) extends AnyVal {
+  implicit class TimingAnimationConfigMutableBuilder[Self <: TimingAnimationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToValue(value: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation): Self = this.set("toValue", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setEasing(value: /* value */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def setEasing(value: /* value */ Double => Double): Self = this.set("easing", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setToValue(value: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
   }
 }

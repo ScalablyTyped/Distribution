@@ -1,11 +1,12 @@
 package typings.reactSortableTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreviousAndNextLocation extends js.Object {
+trait PreviousAndNextLocation extends StObject {
   
   var nextPath: NumberOrStringArray = js.native
   
@@ -29,36 +30,24 @@ object PreviousAndNextLocation {
   }
   
   @scala.inline
-  implicit class PreviousAndNextLocationOps[Self <: PreviousAndNextLocation] (val x: Self) extends AnyVal {
+  implicit class PreviousAndNextLocationMutableBuilder[Self <: PreviousAndNextLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPath(value: NumberOrStringArray): Self = StObject.set(x, "nextPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPathVarargs(value: (String | Double)*): Self = StObject.set(x, "nextPath", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextTreeIndex(value: Double): Self = StObject.set(x, "nextTreeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPathVarargs(value: (String | Double)*): Self = this.set("nextPath", js.Array(value :_*))
+    def setPrevPath(value: NumberOrStringArray): Self = StObject.set(x, "prevPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPath(value: NumberOrStringArray): Self = this.set("nextPath", value.asInstanceOf[js.Any])
+    def setPrevPathVarargs(value: (String | Double)*): Self = StObject.set(x, "prevPath", js.Array(value :_*))
     
     @scala.inline
-    def setNextTreeIndex(value: Double): Self = this.set("nextTreeIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrevPathVarargs(value: (String | Double)*): Self = this.set("prevPath", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrevPath(value: NumberOrStringArray): Self = this.set("prevPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrevTreeIndex(value: Double): Self = this.set("prevTreeIndex", value.asInstanceOf[js.Any])
+    def setPrevTreeIndex(value: Double): Self = StObject.set(x, "prevTreeIndex", value.asInstanceOf[js.Any])
   }
 }

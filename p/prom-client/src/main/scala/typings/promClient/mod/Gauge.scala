@@ -1,13 +1,14 @@
 package typings.promClient.mod
 
 import typings.promClient.mod.Gauge.Internal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prom-client", "Gauge")
 @js.native
-class Gauge[T /* <: String */] protected () extends _Metric_[T] {
+class Gauge[T /* <: String */] protected () extends Metric_[T] {
   /**
   	 * @param configuration Configuration when creating a Gauge metric. Name and Help is mandatory
   	 */
@@ -86,12 +87,10 @@ class Gauge[T /* <: String */] protected () extends _Metric_[T] {
   def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit] = js.native
   def startTimer(labels: LabelValues[T]): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit] = js.native
 }
-@JSImport("prom-client", "Gauge")
-@js.native
-object Gauge extends js.Object {
+object Gauge {
   
   @js.native
-  trait Internal[T /* <: String */] extends js.Object {
+  trait Internal[T /* <: String */] extends StObject {
     
     /**
     		 * Decrement with value

@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteProjectRequest extends js.Object {
+trait DeleteProjectRequest extends StObject {
   
   /**
     * A user- or system-generated token that identifies the entity that requested project deletion. This token can be used to repeat the request. 
@@ -31,33 +32,21 @@ object DeleteProjectRequest {
   }
   
   @scala.inline
-  implicit class DeleteProjectRequestOps[Self <: DeleteProjectRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteProjectRequestMutableBuilder[Self <: DeleteProjectRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteStack(value: DeleteStack): Self = StObject.set(x, "deleteStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ProjectId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDeleteStackUndefined: Self = StObject.set(x, "deleteStack", js.undefined)
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
-    
-    @scala.inline
-    def setDeleteStack(value: DeleteStack): Self = this.set("deleteStack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteStack: Self = this.set("deleteStack", js.undefined)
+    def setId(value: ProjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

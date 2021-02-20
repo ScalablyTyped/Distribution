@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComparedFace extends js.Object {
+trait ComparedFace extends StObject {
   
   /**
     * Bounding box of the face.
@@ -41,51 +42,39 @@ object ComparedFace {
   }
   
   @scala.inline
-  implicit class ComparedFaceOps[Self <: ComparedFace] (val x: Self) extends AnyVal {
+  implicit class ComparedFaceMutableBuilder[Self <: ComparedFace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = this.set("BoundingBox", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def deleteBoundingBox: Self = this.set("BoundingBox", js.undefined)
+    def setLandmarks(value: Landmarks): Self = StObject.set(x, "Landmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    def setLandmarksUndefined: Self = StObject.set(x, "Landmarks", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "Landmarks", js.Array(value :_*))
     
     @scala.inline
-    def setLandmarksVarargs(value: Landmark*): Self = this.set("Landmarks", js.Array(value :_*))
+    def setPose(value: Pose): Self = StObject.set(x, "Pose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandmarks(value: Landmarks): Self = this.set("Landmarks", value.asInstanceOf[js.Any])
+    def setPoseUndefined: Self = StObject.set(x, "Pose", js.undefined)
     
     @scala.inline
-    def deleteLandmarks: Self = this.set("Landmarks", js.undefined)
+    def setQuality(value: ImageQuality): Self = StObject.set(x, "Quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPose(value: Pose): Self = this.set("Pose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePose: Self = this.set("Pose", js.undefined)
-    
-    @scala.inline
-    def setQuality(value: ImageQuality): Self = this.set("Quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuality: Self = this.set("Quality", js.undefined)
+    def setQualityUndefined: Self = StObject.set(x, "Quality", js.undefined)
   }
 }

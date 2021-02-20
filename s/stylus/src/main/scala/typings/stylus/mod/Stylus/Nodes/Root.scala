@@ -1,6 +1,7 @@
 package typings.stylus.mod.Stylus.Nodes
 
 import typings.stylus.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,30 +47,18 @@ object Root {
   }
   
   @scala.inline
-  implicit class RootOps[Self <: Root] (val x: Self) extends AnyVal {
+  implicit class RootMutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPush(value: Node => scala.Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNodesVarargs(value: Node*): Self = this.set("nodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = this.set("nodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPush(value: Node => scala.Unit): Self = this.set("push", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnshift(value: Node => scala.Unit): Self = this.set("unshift", js.Any.fromFunction1(value))
+    def setUnshift(value: Node => scala.Unit): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
   }
 }

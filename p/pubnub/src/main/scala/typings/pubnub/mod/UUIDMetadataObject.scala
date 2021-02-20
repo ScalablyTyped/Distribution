@@ -1,5 +1,6 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent pubnub.pubnub.v2ObjectData<Custom> */
 /* Inlined parent pubnub.pubnub.Nullable<pubnub.pubnub.UUIDMetadataFields> */
 @js.native
-trait UUIDMetadataObject[Custom /* <: ObjectCustom */] extends js.Object {
+trait UUIDMetadataObject[Custom /* <: ObjectCustom */] extends StObject {
   
   var custom: js.UndefOr[Custom | Null] = js.native
   
@@ -34,72 +35,60 @@ object UUIDMetadataObject {
   }
   
   @scala.inline
-  implicit class UUIDMetadataObjectOps[Self <: UUIDMetadataObject[_], Custom /* <: ObjectCustom */] (val x: Self with UUIDMetadataObject[Custom]) extends AnyVal {
+  implicit class UUIDMetadataObjectMutableBuilder[Self <: UUIDMetadataObject[_], Custom /* <: ObjectCustom */] (val x: Self with UUIDMetadataObject[Custom]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomNull: Self = StObject.set(x, "custom", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def setETag(value: String): Self = this.set("eTag", value.asInstanceOf[js.Any])
+    def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setEmailNull: Self = StObject.set(x, "email", null)
     
     @scala.inline
-    def setCustom(value: Custom): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomNull: Self = this.set("custom", null)
+    def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailNull: Self = this.set("email", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setExternalIdNull: Self = this.set("externalId", null)
+    def setProfileUrl(value: String): Self = StObject.set(x, "profileUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProfileUrlNull: Self = StObject.set(x, "profileUrl", null)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProfileUrlUndefined: Self = StObject.set(x, "profileUrl", js.undefined)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
-    
-    @scala.inline
-    def setProfileUrl(value: String): Self = this.set("profileUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileUrl: Self = this.set("profileUrl", js.undefined)
-    
-    @scala.inline
-    def setProfileUrlNull: Self = this.set("profileUrl", null)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

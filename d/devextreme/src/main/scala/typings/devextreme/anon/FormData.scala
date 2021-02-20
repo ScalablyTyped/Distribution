@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.ui.dxForm
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormData extends js.Object {
+trait FormData extends StObject {
   
   var component: js.UndefOr[dxForm] = js.native
   
@@ -21,30 +22,18 @@ object FormData {
   }
   
   @scala.inline
-  implicit class FormDataOps[Self <: FormData] (val x: Self) extends AnyVal {
+  implicit class FormDataMutableBuilder[Self <: FormData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: dxForm): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: dxForm): Self = this.set("component", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
-    
-    @scala.inline
-    def setFormData(value: js.Any): Self = this.set("formData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormData: Self = this.set("formData", js.undefined)
+    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
   }
 }

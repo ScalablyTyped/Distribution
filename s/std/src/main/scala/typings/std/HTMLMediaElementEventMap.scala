@@ -1,14 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLMediaElementEventMap
-  extends ElementEventMap
-     with GlobalEventHandlersEventMap
-     with DocumentAndElementEventHandlersEventMap {
+trait HTMLMediaElementEventMap extends HTMLElementEventMap {
   
   var encrypted: MediaEncryptedEvent = js.native
   
@@ -118,24 +116,12 @@ object HTMLMediaElementEventMap {
   }
   
   @scala.inline
-  implicit class HTMLMediaElementEventMapOps[Self <: HTMLMediaElementEventMap] (val x: Self) extends AnyVal {
+  implicit class HTMLMediaElementEventMapMutableBuilder[Self <: HTMLMediaElementEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncrypted(value: MediaEncryptedEvent): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEncrypted(value: MediaEncryptedEvent): Self = this.set("encrypted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWaitingforkey(value: Event): Self = this.set("waitingforkey", value.asInstanceOf[js.Any])
+    def setWaitingforkey(value: Event): Self = StObject.set(x, "waitingforkey", value.asInstanceOf[js.Any])
   }
 }

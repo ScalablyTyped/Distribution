@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an uncompressed bitmap. */
 @js.native
-trait SoftwareBitmap extends js.Object {
+trait SoftwareBitmap extends StObject {
   
   /** Gets the alpha mode of the software bitmap. */
   var bitmapAlphaMode: BitmapAlphaMode = js.native
@@ -87,57 +88,45 @@ object SoftwareBitmap {
   }
   
   @scala.inline
-  implicit class SoftwareBitmapOps[Self <: SoftwareBitmap] (val x: Self) extends AnyVal {
+  implicit class SoftwareBitmapMutableBuilder[Self <: SoftwareBitmap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitmapAlphaMode(value: BitmapAlphaMode): Self = StObject.set(x, "bitmapAlphaMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitmapPixelFormat(value: BitmapPixelFormat): Self = StObject.set(x, "bitmapPixelFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBitmapAlphaMode(value: BitmapAlphaMode): Self = this.set("bitmapAlphaMode", value.asInstanceOf[js.Any])
+    def setCopyFromBuffer(value: IBuffer => Unit): Self = StObject.set(x, "copyFromBuffer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBitmapPixelFormat(value: BitmapPixelFormat): Self = this.set("bitmapPixelFormat", value.asInstanceOf[js.Any])
+    def setCopyTo(value: SoftwareBitmap => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setCopyToBuffer(value: IBuffer => Unit): Self = StObject.set(x, "copyToBuffer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopyFromBuffer(value: IBuffer => Unit): Self = this.set("copyFromBuffer", js.Any.fromFunction1(value))
+    def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTo(value: SoftwareBitmap => Unit): Self = this.set("copyTo", js.Any.fromFunction1(value))
+    def setDpiY(value: Double): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyToBuffer(value: IBuffer => Unit): Self = this.set("copyToBuffer", js.Any.fromFunction1(value))
+    def setGetReadOnlyView(value: () => SoftwareBitmap): Self = StObject.set(x, "getReadOnlyView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDpiX(value: Double): Self = this.set("dpiX", value.asInstanceOf[js.Any])
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpiY(value: Double): Self = this.set("dpiY", value.asInstanceOf[js.Any])
+    def setLockBuffer(value: BitmapBufferAccessMode => BitmapBuffer): Self = StObject.set(x, "lockBuffer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetReadOnlyView(value: () => SoftwareBitmap): Self = this.set("getReadOnlyView", js.Any.fromFunction0(value))
+    def setPixelHeight(value: Double): Self = StObject.set(x, "pixelHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("isReadOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLockBuffer(value: BitmapBufferAccessMode => BitmapBuffer): Self = this.set("lockBuffer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPixelHeight(value: Double): Self = this.set("pixelHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPixelWidth(value: Double): Self = this.set("pixelWidth", value.asInstanceOf[js.Any])
+    def setPixelWidth(value: Double): Self = StObject.set(x, "pixelWidth", value.asInstanceOf[js.Any])
   }
 }

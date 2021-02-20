@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleKeyDeletionResponse extends js.Object {
+trait ScheduleKeyDeletionResponse extends StObject {
   
   /**
     * The date and time after which AWS KMS deletes the customer master key (CMK).
@@ -26,30 +27,18 @@ object ScheduleKeyDeletionResponse {
   }
   
   @scala.inline
-  implicit class ScheduleKeyDeletionResponseOps[Self <: ScheduleKeyDeletionResponse] (val x: Self) extends AnyVal {
+  implicit class ScheduleKeyDeletionResponseMutableBuilder[Self <: ScheduleKeyDeletionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletionDate(value: DateType): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionDate(value: DateType): Self = this.set("DeletionDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletionDate: Self = this.set("DeletionDate", js.undefined)
-    
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
   }
 }

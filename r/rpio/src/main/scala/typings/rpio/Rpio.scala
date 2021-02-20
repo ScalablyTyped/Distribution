@@ -3,12 +3,13 @@ package typings.rpio
 import typings.node.Buffer
 import typings.rpio.RPIO_.CallbackFunction
 import typings.rpio.RPIO_.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rpio extends js.Object {
+trait Rpio extends StObject {
   
   // Constants:
   var HIGH: Double = js.native

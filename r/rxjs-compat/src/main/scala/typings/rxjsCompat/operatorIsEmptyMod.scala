@@ -1,12 +1,13 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/isEmpty", JSImport.Namespace)
-@js.native
-object operatorIsEmptyMod extends js.Object {
+object operatorIsEmptyMod {
   
+  @JSImport("rxjs-compat/operator/isEmpty", "isEmpty")
+  @js.native
   def isEmpty[T](): js.Any = js.native
 }

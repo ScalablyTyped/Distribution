@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInstanceAccessOutput extends js.Object {
+trait GetInstanceAccessOutput extends StObject {
   
   /**
     * The connection information for a fleet instance, including IP address and access credentials.
@@ -21,24 +22,12 @@ object GetInstanceAccessOutput {
   }
   
   @scala.inline
-  implicit class GetInstanceAccessOutputOps[Self <: GetInstanceAccessOutput] (val x: Self) extends AnyVal {
+  implicit class GetInstanceAccessOutputMutableBuilder[Self <: GetInstanceAccessOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceAccess(value: InstanceAccess): Self = StObject.set(x, "InstanceAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceAccess(value: InstanceAccess): Self = this.set("InstanceAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceAccess: Self = this.set("InstanceAccess", js.undefined)
+    def setInstanceAccessUndefined: Self = StObject.set(x, "InstanceAccess", js.undefined)
   }
 }

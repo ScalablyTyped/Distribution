@@ -1,12 +1,13 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import typings.googleapis.anon.Labels
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaModelDefinition extends js.Object {
+trait SchemaModelDefinition extends StObject {
   
   /**
     * [Output-only, Beta] Model options used for the first training run. These
@@ -32,33 +33,21 @@ object SchemaModelDefinition {
   }
   
   @scala.inline
-  implicit class SchemaModelDefinitionOps[Self <: SchemaModelDefinition] (val x: Self) extends AnyVal {
+  implicit class SchemaModelDefinitionMutableBuilder[Self <: SchemaModelDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModelOptions(value: Labels): Self = StObject.set(x, "modelOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModelOptionsUndefined: Self = StObject.set(x, "modelOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrainingRuns(value: js.Array[SchemaBqmlTrainingRun]): Self = StObject.set(x, "trainingRuns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelOptions(value: Labels): Self = this.set("modelOptions", value.asInstanceOf[js.Any])
+    def setTrainingRunsUndefined: Self = StObject.set(x, "trainingRuns", js.undefined)
     
     @scala.inline
-    def deleteModelOptions: Self = this.set("modelOptions", js.undefined)
-    
-    @scala.inline
-    def setTrainingRunsVarargs(value: SchemaBqmlTrainingRun*): Self = this.set("trainingRuns", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrainingRuns(value: js.Array[SchemaBqmlTrainingRun]): Self = this.set("trainingRuns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingRuns: Self = this.set("trainingRuns", js.undefined)
+    def setTrainingRunsVarargs(value: SchemaBqmlTrainingRun*): Self = StObject.set(x, "trainingRuns", js.Array(value :_*))
   }
 }

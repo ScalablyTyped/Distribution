@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTransitGatewayMulticastDomainAssociationsResult extends js.Object {
+trait GetTransitGatewayMulticastDomainAssociationsResult extends StObject {
   
   /**
     * Information about the multicast domain associations.
@@ -26,33 +27,21 @@ object GetTransitGatewayMulticastDomainAssociationsResult {
   }
   
   @scala.inline
-  implicit class GetTransitGatewayMulticastDomainAssociationsResultOps[Self <: GetTransitGatewayMulticastDomainAssociationsResult] (val x: Self) extends AnyVal {
+  implicit class GetTransitGatewayMulticastDomainAssociationsResultMutableBuilder[Self <: GetTransitGatewayMulticastDomainAssociationsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMulticastDomainAssociations(value: TransitGatewayMulticastDomainAssociationList): Self = StObject.set(x, "MulticastDomainAssociations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMulticastDomainAssociationsUndefined: Self = StObject.set(x, "MulticastDomainAssociations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMulticastDomainAssociationsVarargs(value: TransitGatewayMulticastDomainAssociation*): Self = StObject.set(x, "MulticastDomainAssociations", js.Array(value :_*))
     
     @scala.inline
-    def setMulticastDomainAssociationsVarargs(value: TransitGatewayMulticastDomainAssociation*): Self = this.set("MulticastDomainAssociations", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulticastDomainAssociations(value: TransitGatewayMulticastDomainAssociationList): Self = this.set("MulticastDomainAssociations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMulticastDomainAssociations: Self = this.set("MulticastDomainAssociations", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

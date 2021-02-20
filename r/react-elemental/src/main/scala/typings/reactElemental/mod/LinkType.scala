@@ -1,5 +1,6 @@
 package typings.reactElemental.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactElemental.reactElementalStrings.plain
   - typings.reactElemental.reactElementalStrings.underline
 */
-trait LinkType extends js.Object
+trait LinkType extends StObject
 object LinkType {
   
   @scala.inline

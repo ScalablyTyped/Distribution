@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneLineProperties extends js.Object
+sealed trait PhoneLineProperties extends StObject
 /** Indicates a set of property flags that are part of a phone line changed trigger. Multiple properties can be set at one time. */
 @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneLineProperties")
 @js.native
-object PhoneLineProperties extends js.Object {
+object PhoneLineProperties extends StObject {
   
   /** The branding options for the phone line. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateIntegrationResponseRequest extends js.Object {
+trait CreateIntegrationResponseRequest extends StObject {
   
   /**
     * The API identifier.
@@ -51,51 +52,39 @@ object CreateIntegrationResponseRequest {
   }
   
   @scala.inline
-  implicit class CreateIntegrationResponseRequestOps[Self <: CreateIntegrationResponseRequest] (val x: Self) extends AnyVal {
+  implicit class CreateIntegrationResponseRequestMutableBuilder[Self <: CreateIntegrationResponseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentHandlingStrategy(value: ContentHandlingStrategy): Self = StObject.set(x, "ContentHandlingStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentHandlingStrategyUndefined: Self = StObject.set(x, "ContentHandlingStrategy", js.undefined)
     
     @scala.inline
-    def setApiId(value: string): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    def setIntegrationId(value: string): Self = StObject.set(x, "IntegrationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationId(value: string): Self = this.set("IntegrationId", value.asInstanceOf[js.Any])
+    def setIntegrationResponseKey(value: SelectionKey): Self = StObject.set(x, "IntegrationResponseKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationResponseKey(value: SelectionKey): Self = this.set("IntegrationResponseKey", value.asInstanceOf[js.Any])
+    def setResponseParameters(value: IntegrationParameters): Self = StObject.set(x, "ResponseParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentHandlingStrategy(value: ContentHandlingStrategy): Self = this.set("ContentHandlingStrategy", value.asInstanceOf[js.Any])
+    def setResponseParametersUndefined: Self = StObject.set(x, "ResponseParameters", js.undefined)
     
     @scala.inline
-    def deleteContentHandlingStrategy: Self = this.set("ContentHandlingStrategy", js.undefined)
+    def setResponseTemplates(value: TemplateMap): Self = StObject.set(x, "ResponseTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseParameters(value: IntegrationParameters): Self = this.set("ResponseParameters", value.asInstanceOf[js.Any])
+    def setResponseTemplatesUndefined: Self = StObject.set(x, "ResponseTemplates", js.undefined)
     
     @scala.inline
-    def deleteResponseParameters: Self = this.set("ResponseParameters", js.undefined)
+    def setTemplateSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "TemplateSelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseTemplates(value: TemplateMap): Self = this.set("ResponseTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseTemplates: Self = this.set("ResponseTemplates", js.undefined)
-    
-    @scala.inline
-    def setTemplateSelectionExpression(value: SelectionExpression): Self = this.set("TemplateSelectionExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateSelectionExpression: Self = this.set("TemplateSelectionExpression", js.undefined)
+    def setTemplateSelectionExpressionUndefined: Self = StObject.set(x, "TemplateSelectionExpression", js.undefined)
   }
 }

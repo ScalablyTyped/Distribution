@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinskyOfferType extends js.Object {
+trait FinskyOfferType extends StObject {
   
   /** The finsky offer type (e.g., PURCHASE=0 RENTAL=3) */
   var finskyOfferType: js.UndefOr[Double] = js.native
@@ -31,48 +32,36 @@ object FinskyOfferType {
   }
   
   @scala.inline
-  implicit class FinskyOfferTypeOps[Self <: FinskyOfferType] (val x: Self) extends AnyVal {
+  implicit class FinskyOfferTypeMutableBuilder[Self <: FinskyOfferType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinskyOfferType(value: Double): Self = StObject.set(x, "finskyOfferType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinskyOfferTypeUndefined: Self = StObject.set(x, "finskyOfferType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGiftable(value: Boolean): Self = StObject.set(x, "giftable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinskyOfferType(value: Double): Self = this.set("finskyOfferType", value.asInstanceOf[js.Any])
+    def setGiftableUndefined: Self = StObject.set(x, "giftable", js.undefined)
     
     @scala.inline
-    def deleteFinskyOfferType: Self = this.set("finskyOfferType", js.undefined)
+    def setListPrice(value: CurrencyCode): Self = StObject.set(x, "listPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGiftable(value: Boolean): Self = this.set("giftable", value.asInstanceOf[js.Any])
+    def setListPriceUndefined: Self = StObject.set(x, "listPrice", js.undefined)
     
     @scala.inline
-    def deleteGiftable: Self = this.set("giftable", js.undefined)
+    def setRentalDuration(value: Count): Self = StObject.set(x, "rentalDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListPrice(value: CurrencyCode): Self = this.set("listPrice", value.asInstanceOf[js.Any])
+    def setRentalDurationUndefined: Self = StObject.set(x, "rentalDuration", js.undefined)
     
     @scala.inline
-    def deleteListPrice: Self = this.set("listPrice", js.undefined)
+    def setRetailPrice(value: CurrencyCode): Self = StObject.set(x, "retailPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRentalDuration(value: Count): Self = this.set("rentalDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRentalDuration: Self = this.set("rentalDuration", js.undefined)
-    
-    @scala.inline
-    def setRetailPrice(value: CurrencyCode): Self = this.set("retailPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetailPrice: Self = this.set("retailPrice", js.undefined)
+    def setRetailPriceUndefined: Self = StObject.set(x, "retailPrice", js.undefined)
   }
 }

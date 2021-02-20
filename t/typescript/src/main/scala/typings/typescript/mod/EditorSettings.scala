@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorSettings extends js.Object {
+trait EditorSettings extends StObject {
   
   var baseIndentSize: js.UndefOr[Double] = js.native
   
@@ -30,60 +31,48 @@ object EditorSettings {
   }
   
   @scala.inline
-  implicit class EditorSettingsOps[Self <: EditorSettings] (val x: Self) extends AnyVal {
+  implicit class EditorSettingsMutableBuilder[Self <: EditorSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseIndentSize(value: Double): Self = StObject.set(x, "baseIndentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseIndentSizeUndefined: Self = StObject.set(x, "baseIndentSize", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConvertTabsToSpaces(value: Boolean): Self = StObject.set(x, "convertTabsToSpaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseIndentSize(value: Double): Self = this.set("baseIndentSize", value.asInstanceOf[js.Any])
+    def setConvertTabsToSpacesUndefined: Self = StObject.set(x, "convertTabsToSpaces", js.undefined)
     
     @scala.inline
-    def deleteBaseIndentSize: Self = this.set("baseIndentSize", js.undefined)
+    def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertTabsToSpaces(value: Boolean): Self = this.set("convertTabsToSpaces", value.asInstanceOf[js.Any])
+    def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
     
     @scala.inline
-    def deleteConvertTabsToSpaces: Self = this.set("convertTabsToSpaces", js.undefined)
+    def setIndentStyle(value: IndentStyle): Self = StObject.set(x, "indentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentSize(value: Double): Self = this.set("indentSize", value.asInstanceOf[js.Any])
+    def setIndentStyleUndefined: Self = StObject.set(x, "indentStyle", js.undefined)
     
     @scala.inline
-    def deleteIndentSize: Self = this.set("indentSize", js.undefined)
+    def setNewLineCharacter(value: java.lang.String): Self = StObject.set(x, "newLineCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentStyle(value: IndentStyle): Self = this.set("indentStyle", value.asInstanceOf[js.Any])
+    def setNewLineCharacterUndefined: Self = StObject.set(x, "newLineCharacter", js.undefined)
     
     @scala.inline
-    def deleteIndentStyle: Self = this.set("indentStyle", js.undefined)
+    def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLineCharacter(value: java.lang.String): Self = this.set("newLineCharacter", value.asInstanceOf[js.Any])
+    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
     
     @scala.inline
-    def deleteNewLineCharacter: Self = this.set("newLineCharacter", js.undefined)
+    def setTrimTrailingWhitespace(value: Boolean): Self = StObject.set(x, "trimTrailingWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabSize(value: Double): Self = this.set("tabSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabSize: Self = this.set("tabSize", js.undefined)
-    
-    @scala.inline
-    def setTrimTrailingWhitespace(value: Boolean): Self = this.set("trimTrailingWhitespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrimTrailingWhitespace: Self = this.set("trimTrailingWhitespace", js.undefined)
+    def setTrimTrailingWhitespaceUndefined: Self = StObject.set(x, "trimTrailingWhitespace", js.undefined)
   }
 }

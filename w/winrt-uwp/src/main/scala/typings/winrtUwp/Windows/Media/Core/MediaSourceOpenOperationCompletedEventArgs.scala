@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the MediaSource::MediaSourceOpenOperationCompleted event. */
 @js.native
-trait MediaSourceOpenOperationCompletedEventArgs extends js.Object {
+trait MediaSourceOpenOperationCompletedEventArgs extends StObject {
   
   /** Represents the error that occurred while asynchronously opening the MediaSource . */
   var error: MediaSourceError = js.native
@@ -20,21 +21,9 @@ object MediaSourceOpenOperationCompletedEventArgs {
   }
   
   @scala.inline
-  implicit class MediaSourceOpenOperationCompletedEventArgsOps[Self <: MediaSourceOpenOperationCompletedEventArgs] (val x: Self) extends AnyVal {
+  implicit class MediaSourceOpenOperationCompletedEventArgsMutableBuilder[Self <: MediaSourceOpenOperationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: MediaSourceError): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: MediaSourceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

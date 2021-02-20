@@ -1,15 +1,14 @@
 package typings.webicon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webicon/System/Injector", JSImport.Namespace)
-@js.native
-object injectorMod extends js.Object {
+object injectorMod {
   
   @js.native
-  trait Injector extends js.Object {
+  trait Injector extends StObject {
     
     /**
       * Requires a component of the `webicon`-module.

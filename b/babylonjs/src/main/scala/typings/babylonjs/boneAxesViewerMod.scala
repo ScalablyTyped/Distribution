@@ -6,14 +6,14 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Debug/boneAxesViewer", JSImport.Namespace)
-@js.native
-object boneAxesViewerMod extends js.Object {
+object boneAxesViewerMod {
   
+  @JSImport("babylonjs/Debug/boneAxesViewer", "BoneAxesViewer")
   @js.native
   class BoneAxesViewer protected () extends AxesViewer {
     /**

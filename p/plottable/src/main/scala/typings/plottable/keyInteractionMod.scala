@@ -1,14 +1,14 @@
 package typings.plottable
 
 import typings.plottable.interactionMod.Interaction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/interactions/keyInteraction", JSImport.Namespace)
-@js.native
-object keyInteractionMod extends js.Object {
+object keyInteractionMod {
   
+  @JSImport("plottable/build/src/interactions/keyInteraction", "Key")
   @js.native
   class Key () extends Interaction {
     

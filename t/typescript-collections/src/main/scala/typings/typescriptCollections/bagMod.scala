@@ -1,16 +1,40 @@
 package typings.typescriptCollections
 
 import typings.typescriptCollections.utilMod.ILoopFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-collections/dist/lib/Bag", JSImport.Namespace)
-@js.native
-object bagMod extends js.Object {
+object bagMod {
+  
+  @JSImport("typescript-collections/dist/lib/Bag", JSImport.Default)
+  @js.native
+  /**
+    * Creates an empty bag.
+    * @class <p>A bag is a special kind of set in which members are
+    * allowed to appear more than once.</p>
+    * <p>If the inserted elements are custom objects a function
+    * which converts elements to unique strings must be provided. Example:</p>
+    *
+    * <pre>
+    * function petToString(pet) {
+    *  return pet.name;
+    * }
+    * </pre>
+    *
+    * @constructor
+    * @param {function(Object):string=} toStrFunction optional function used
+    * to convert elements to strings. If the elements aren't strings or if toString()
+    * is not appropriate, a custom function which receives an object and returns a
+    * unique string must be provided.
+    */
+  class default[T] () extends Bag[T] {
+    def this(toStrFunction: js.Function1[/* item */ T, String]) = this()
+  }
   
   @js.native
-  trait Bag[T] extends js.Object {
+  trait Bag[T] extends StObject {
     
     /**
       * Adds nCopies of the specified object to this bag.
@@ -93,29 +117,5 @@ object bagMod extends js.Object {
     def toSet(): typings.typescriptCollections.setMod.default[T] = js.native
     
     var toStrF: js.Any = js.native
-  }
-  
-  @js.native
-  /**
-    * Creates an empty bag.
-    * @class <p>A bag is a special kind of set in which members are
-    * allowed to appear more than once.</p>
-    * <p>If the inserted elements are custom objects a function
-    * which converts elements to unique strings must be provided. Example:</p>
-    *
-    * <pre>
-    * function petToString(pet) {
-    *  return pet.name;
-    * }
-    * </pre>
-    *
-    * @constructor
-    * @param {function(Object):string=} toStrFunction optional function used
-    * to convert elements to strings. If the elements aren't strings or if toString()
-    * is not appropriate, a custom function which receives an object and returns a
-    * unique string must be provided.
-    */
-  class default[T] () extends Bag[T] {
-    def this(toStrFunction: js.Function1[/* item */ T, String]) = this()
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudWatchAlarmDefinition extends js.Object {
+trait CloudWatchAlarmDefinition extends StObject {
   
   /**
     * Determines how the metric specified by MetricName is compared to the value specified by Threshold.
@@ -66,63 +67,51 @@ object CloudWatchAlarmDefinition {
   }
   
   @scala.inline
-  implicit class CloudWatchAlarmDefinitionOps[Self <: CloudWatchAlarmDefinition] (val x: Self) extends AnyVal {
+  implicit class CloudWatchAlarmDefinitionMutableBuilder[Self <: CloudWatchAlarmDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensions(value: MetricDimensionList): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
     @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = this.set("ComparisonOperator", value.asInstanceOf[js.Any])
+    def setDimensionsVarargs(value: MetricDimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setMetricName(value: String): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    def setEvaluationPeriods(value: Integer): Self = StObject.set(x, "EvaluationPeriods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Integer): Self = this.set("Period", value.asInstanceOf[js.Any])
+    def setEvaluationPeriodsUndefined: Self = StObject.set(x, "EvaluationPeriods", js.undefined)
     
     @scala.inline
-    def setThreshold(value: NonNegativeDouble): Self = this.set("Threshold", value.asInstanceOf[js.Any])
+    def setMetricName(value: String): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionsVarargs(value: MetricDimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    def setNamespace(value: String): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: MetricDimensionList): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    def setPeriod(value: Integer): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationPeriods(value: Integer): Self = this.set("EvaluationPeriods", value.asInstanceOf[js.Any])
+    def setStatistic(value: Statistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvaluationPeriods: Self = this.set("EvaluationPeriods", js.undefined)
+    def setStatisticUndefined: Self = StObject.set(x, "Statistic", js.undefined)
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    def setThreshold(value: NonNegativeDouble): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    def setUnit(value: Unit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistic(value: Statistic): Self = this.set("Statistic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatistic: Self = this.set("Statistic", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: Unit): Self = this.set("Unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("Unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

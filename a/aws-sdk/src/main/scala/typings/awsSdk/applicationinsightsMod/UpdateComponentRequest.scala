@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateComponentRequest extends js.Object {
+trait UpdateComponentRequest extends StObject {
   
   /**
     * The name of the component.
@@ -36,39 +37,27 @@ object UpdateComponentRequest {
   }
   
   @scala.inline
-  implicit class UpdateComponentRequestOps[Self <: UpdateComponentRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateComponentRequestMutableBuilder[Self <: UpdateComponentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewComponentName(value: NewComponentName): Self = StObject.set(x, "NewComponentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewComponentNameUndefined: Self = StObject.set(x, "NewComponentName", js.undefined)
     
     @scala.inline
-    def setComponentName(value: ComponentName): Self = this.set("ComponentName", value.asInstanceOf[js.Any])
+    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = this.set("ResourceGroupName", value.asInstanceOf[js.Any])
+    def setResourceList(value: ResourceList): Self = StObject.set(x, "ResourceList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewComponentName(value: NewComponentName): Self = this.set("NewComponentName", value.asInstanceOf[js.Any])
+    def setResourceListUndefined: Self = StObject.set(x, "ResourceList", js.undefined)
     
     @scala.inline
-    def deleteNewComponentName: Self = this.set("NewComponentName", js.undefined)
-    
-    @scala.inline
-    def setResourceListVarargs(value: ResourceARN*): Self = this.set("ResourceList", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceList(value: ResourceList): Self = this.set("ResourceList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceList: Self = this.set("ResourceList", js.undefined)
+    def setResourceListVarargs(value: ResourceARN*): Self = StObject.set(x, "ResourceList", js.Array(value :_*))
   }
 }

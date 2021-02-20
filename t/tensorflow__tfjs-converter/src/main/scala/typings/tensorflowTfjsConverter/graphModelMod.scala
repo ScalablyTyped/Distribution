@@ -11,23 +11,18 @@ import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveConfig
 import typings.tensorflowTfjsCore.typesMod.SaveResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-converter/dist/executor/graph_model", JSImport.Namespace)
-@js.native
-object graphModelMod extends js.Object {
+object graphModelMod {
   
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/graph_model", "DEFAULT_MODEL_NAME")
+  @js.native
   val DEFAULT_MODEL_NAME: /* "model.json" */ String = js.native
   
-  val TFHUB_SEARCH_PARAM: /* "?tfjs-format=file" */ String = js.native
-  
-  def loadGraphModel(modelUrl: String): js.Promise[GraphModel] = js.native
-  def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[GraphModel] = js.native
-  def loadGraphModel(modelUrl: IOHandler): js.Promise[GraphModel] = js.native
-  def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[GraphModel] = js.native
-  
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/graph_model", "GraphModel")
   @js.native
   class GraphModel protected () extends InferenceModel {
     /**
@@ -240,4 +235,21 @@ object graphModelMod extends js.Object {
     
     val weights: NamedTensorsMap = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/graph_model", "TFHUB_SEARCH_PARAM")
+  @js.native
+  val TFHUB_SEARCH_PARAM: /* "?tfjs-format=file" */ String = js.native
+  
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/graph_model", "loadGraphModel")
+  @js.native
+  def loadGraphModel(modelUrl: String): js.Promise[GraphModel] = js.native
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/graph_model", "loadGraphModel")
+  @js.native
+  def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[GraphModel] = js.native
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/graph_model", "loadGraphModel")
+  @js.native
+  def loadGraphModel(modelUrl: IOHandler): js.Promise[GraphModel] = js.native
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/graph_model", "loadGraphModel")
+  @js.native
+  def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[GraphModel] = js.native
 }

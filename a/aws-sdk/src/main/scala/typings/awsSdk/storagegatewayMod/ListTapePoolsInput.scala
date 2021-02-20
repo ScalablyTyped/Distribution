@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTapePoolsInput extends js.Object {
+trait ListTapePoolsInput extends StObject {
   
   /**
     * An optional number limit for the tape pools in the list returned by this call.
@@ -31,39 +32,27 @@ object ListTapePoolsInput {
   }
   
   @scala.inline
-  implicit class ListTapePoolsInputOps[Self <: ListTapePoolsInput] (val x: Self) extends AnyVal {
+  implicit class ListTapePoolsInputMutableBuilder[Self <: ListTapePoolsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: PositiveIntObject): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setPoolARNs(value: PoolARNs): Self = StObject.set(x, "PoolARNs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setPoolARNsUndefined: Self = StObject.set(x, "PoolARNs", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setPoolARNsVarargs(value: PoolARN*): Self = this.set("PoolARNs", js.Array(value :_*))
-    
-    @scala.inline
-    def setPoolARNs(value: PoolARNs): Self = this.set("PoolARNs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoolARNs: Self = this.set("PoolARNs", js.undefined)
+    def setPoolARNsVarargs(value: PoolARN*): Self = StObject.set(x, "PoolARNs", js.Array(value :_*))
   }
 }

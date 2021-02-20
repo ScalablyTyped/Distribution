@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientVision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@maxim_mazurok/gapi.client.vision", JSImport.Namespace)
 @js.native
-object maximMazurokGapiClientVisionRequire extends js.Object
+object maximMazurokGapiClientVisionRequire extends StObject

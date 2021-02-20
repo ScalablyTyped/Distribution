@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [[PaymentDataRequest|`PaymentDataRequest`]]
   */
 @js.native
-trait PaymentData extends js.Object {
+trait PaymentData extends StObject {
   
   /**
     * Major API version.
@@ -66,45 +67,33 @@ object PaymentData {
   }
   
   @scala.inline
-  implicit class PaymentDataOps[Self <: PaymentData] (val x: Self) extends AnyVal {
+  implicit class PaymentDataMutableBuilder[Self <: PaymentData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiVersionMinor(value: Double): Self = StObject.set(x, "apiVersionMinor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: Double): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def setApiVersionMinor(value: Double): Self = this.set("apiVersionMinor", value.asInstanceOf[js.Any])
+    def setPaymentMethodData(value: PaymentMethodData): Self = StObject.set(x, "paymentMethodData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethodData(value: PaymentMethodData): Self = this.set("paymentMethodData", value.asInstanceOf[js.Any])
+    def setShippingAddress(value: Address): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setShippingOptionData(value: SelectionOptionData): Self = StObject.set(x, "shippingOptionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingAddress(value: Address): Self = this.set("shippingAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingAddress: Self = this.set("shippingAddress", js.undefined)
-    
-    @scala.inline
-    def setShippingOptionData(value: SelectionOptionData): Self = this.set("shippingOptionData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingOptionData: Self = this.set("shippingOptionData", js.undefined)
+    def setShippingOptionDataUndefined: Self = StObject.set(x, "shippingOptionData", js.undefined)
   }
 }

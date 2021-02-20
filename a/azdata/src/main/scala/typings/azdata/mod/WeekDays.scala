@@ -1,66 +1,56 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WeekDays extends js.Object
+sealed trait WeekDays extends StObject
 @JSImport("azdata", "WeekDays")
 @js.native
-object WeekDays extends js.Object {
+object WeekDays extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WeekDays with Double] = js.native
   
   @js.native
   sealed trait everyDay extends WeekDays
-  /* 127 */ @js.native
-  object everyDay extends TopLevel[everyDay with Double]
+  /* 127 */ val everyDay: typings.azdata.mod.WeekDays.everyDay with Double = js.native
   
   @js.native
   sealed trait friday extends WeekDays
-  /* 32 */ @js.native
-  object friday extends TopLevel[friday with Double]
+  /* 32 */ val friday: typings.azdata.mod.WeekDays.friday with Double = js.native
   
   @js.native
   sealed trait monday extends WeekDays
-  /* 2 */ @js.native
-  object monday extends TopLevel[monday with Double]
+  /* 2 */ val monday: typings.azdata.mod.WeekDays.monday with Double = js.native
   
   @js.native
   sealed trait saturday extends WeekDays
-  /* 64 */ @js.native
-  object saturday extends TopLevel[saturday with Double]
+  /* 64 */ val saturday: typings.azdata.mod.WeekDays.saturday with Double = js.native
   
   @js.native
   sealed trait sunday extends WeekDays
-  /* 1 */ @js.native
-  object sunday extends TopLevel[sunday with Double]
+  /* 1 */ val sunday: typings.azdata.mod.WeekDays.sunday with Double = js.native
   
   @js.native
   sealed trait thursday extends WeekDays
-  /* 16 */ @js.native
-  object thursday extends TopLevel[thursday with Double]
+  /* 16 */ val thursday: typings.azdata.mod.WeekDays.thursday with Double = js.native
   
   @js.native
   sealed trait tuesday extends WeekDays
-  /* 4 */ @js.native
-  object tuesday extends TopLevel[tuesday with Double]
+  /* 4 */ val tuesday: typings.azdata.mod.WeekDays.tuesday with Double = js.native
   
   @js.native
   sealed trait wednesday extends WeekDays
-  /* 8 */ @js.native
-  object wednesday extends TopLevel[wednesday with Double]
+  /* 8 */ val wednesday: typings.azdata.mod.WeekDays.wednesday with Double = js.native
   
   @js.native
   sealed trait weekDays extends WeekDays
-  /* 62 */ @js.native
-  object weekDays extends TopLevel[weekDays with Double]
+  /* 62 */ val weekDays: typings.azdata.mod.WeekDays.weekDays with Double = js.native
   
   @js.native
   sealed trait weekEnds extends WeekDays
-  /* 65 */ @js.native
-  object weekEnds extends TopLevel[weekEnds with Double]
+  /* 65 */ val weekEnds: typings.azdata.mod.WeekDays.weekEnds with Double = js.native
 }

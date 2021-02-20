@@ -8,22 +8,16 @@ import typings.googleGax.apitypesMod.ResponseType
 import typings.googleGax.apitypesMod.ResultTuple
 import typings.googleGax.apitypesMod.SimpleCallbackFunction
 import typings.googleGax.googleErrorMod.GoogleError
-import typings.std.Promise
-import typings.std.PromiseConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-gax/build/src/call", JSImport.Namespace)
-@js.native
-object callMod extends js.Object {
-  @js.native
-  trait CancellablePromise[T] extends Promise[T] {
-    def cancel(): Unit = js.native
-  }
+object callMod {
   
+  @JSImport("google-gax/build/src/call", "OngoingCall")
   @js.native
-  class OngoingCall protected () extends js.Object {
+  class OngoingCall protected () extends StObject {
     /**
       * OngoingCall manages callback, API calls, and cancellation
       * of the API calls.
@@ -36,10 +30,7 @@ object callMod extends js.Object {
       * @private
       */
     def this(callback: APICallback) = this()
-    @JSName("callback")
-    var callback_Original: APICallback = js.native
-    var cancelFunc: js.UndefOr[js.Function0[Unit]] = js.native
-    var completed: Boolean = js.native
+    
     /**
       * Call calls the specified function. Result will be used to fulfill
       * the promise.
@@ -50,33 +41,55 @@ object callMod extends js.Object {
       *   A request object.
       */
     def call(func: SimpleCallbackFunction, argument: RequestType): Unit = js.native
+    
     def callback(): Unit = js.native
+    def callback(
+      err: Null,
+      response: js.UndefOr[ResponseType],
+      next: js.UndefOr[NextPageRequestType],
+      rawResponse: RawResponseType
+    ): Unit = js.native
+    def callback(err: Null, response: js.UndefOr[ResponseType], next: NextPageRequestType): Unit = js.native
     def callback(err: Null, response: ResponseType): Unit = js.native
-    def callback(err: Null, response: ResponseType, next: NextPageRequestType): Unit = js.native
-    def callback(err: Null, response: ResponseType, next: NextPageRequestType, rawResponse: RawResponseType): Unit = js.native
     def callback(err: GoogleError): Unit = js.native
+    def callback(
+      err: GoogleError,
+      response: js.UndefOr[ResponseType],
+      next: js.UndefOr[NextPageRequestType],
+      rawResponse: RawResponseType
+    ): Unit = js.native
+    def callback(err: GoogleError, response: js.UndefOr[ResponseType], next: NextPageRequestType): Unit = js.native
     def callback(err: GoogleError, response: ResponseType): Unit = js.native
-    def callback(err: GoogleError, response: ResponseType, next: NextPageRequestType): Unit = js.native
-    def callback(err: GoogleError, response: ResponseType, next: NextPageRequestType, rawResponse: RawResponseType): Unit = js.native
+    @JSName("callback")
+    var callback_Original: APICallback = js.native
+    
     /**
       * Cancels the ongoing promise.
       */
     def cancel(): Unit = js.native
+    
+    var cancelFunc: js.UndefOr[js.Function0[Unit]] = js.native
+    
+    var completed: Boolean = js.native
   }
   
+  @JSImport("google-gax/build/src/call", "OngoingCallPromise")
   @js.native
-  class OngoingCallPromise protected () extends OngoingCall {
-    /**
-      * GaxPromise is GRPCCallbackWrapper, but it holds a promise when
-      * the API call finishes.
-      * @param {Function} PromiseCtor - A constructor for a promise that implements
-      * the ES6 specification of promise.
-      * @constructor
-      * @private
-      */
-    def this(PromiseCtor: PromiseConstructor) = this()
+  /**
+    * GaxPromise is GRPCCallbackWrapper, but it holds a promise when
+    * the API call finishes.
+    * @constructor
+    * @private
+    */
+  class OngoingCallPromise () extends OngoingCall {
+    
     var promise: CancellablePromise[ResultTuple] = js.native
   }
   
+  @js.native
+  trait CancellablePromise[T]
+    extends js.Promise[T] {
+    
+    def cancel(): Unit = js.native
+  }
 }
-

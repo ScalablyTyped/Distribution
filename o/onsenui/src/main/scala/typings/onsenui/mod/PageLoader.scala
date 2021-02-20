@@ -1,6 +1,7 @@
 package typings.onsenui.mod
 
 import typings.onsenui.anon.Page
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("onsenui", "PageLoader")
 @js.native
-class PageLoader protected () extends js.Object {
+class PageLoader protected () extends StObject {
   def this(args: js.Any*) = this()
   
   var internalLoader: js.Function = js.native

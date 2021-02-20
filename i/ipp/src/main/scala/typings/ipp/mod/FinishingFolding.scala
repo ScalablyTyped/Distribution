@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinishingFolding extends js.Object {
+trait FinishingFolding extends StObject {
   
   var `folding-direction`: js.UndefOr[FoldingDirection] = js.native
   
@@ -22,36 +23,24 @@ object FinishingFolding {
   }
   
   @scala.inline
-  implicit class FinishingFoldingOps[Self <: FinishingFolding] (val x: Self) extends AnyVal {
+  implicit class FinishingFoldingMutableBuilder[Self <: FinishingFolding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setFolding-direction`(value: FoldingDirection): Self = StObject.set(x, "folding-direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setFolding-directionUndefined`: Self = StObject.set(x, "folding-direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setFolding-offset`(value: Double): Self = StObject.set(x, "folding-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFolding-direction`(value: FoldingDirection): Self = this.set("folding-direction", value.asInstanceOf[js.Any])
+    def `setFolding-offsetUndefined`: Self = StObject.set(x, "folding-offset", js.undefined)
     
     @scala.inline
-    def `deleteFolding-direction`: Self = this.set("folding-direction", js.undefined)
+    def `setFolding-reference-edge`(value: ReferenceEdge): Self = StObject.set(x, "folding-reference-edge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFolding-offset`(value: Double): Self = this.set("folding-offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteFolding-offset`: Self = this.set("folding-offset", js.undefined)
-    
-    @scala.inline
-    def `setFolding-reference-edge`(value: ReferenceEdge): Self = this.set("folding-reference-edge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteFolding-reference-edge`: Self = this.set("folding-reference-edge", js.undefined)
+    def `setFolding-reference-edgeUndefined`: Self = StObject.set(x, "folding-reference-edge", js.undefined)
   }
 }

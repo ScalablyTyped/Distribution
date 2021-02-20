@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutIntentRequest extends js.Object {
+trait PutIntentRequest extends StObject {
   
   /**
     * Identifies a specific revision of the $LATEST version. When you create a new intent, leave the checksum field blank. If you specify a checksum you get a BadRequestException exception. When you want to update a intent, set the checksum field to the checksum of the most recent revision of the $LATEST version. If you don't specify the  checksum field, or if the checksum does not match the $LATEST version, you get a PreconditionFailedException exception.
@@ -96,123 +97,111 @@ object PutIntentRequest {
   }
   
   @scala.inline
-  implicit class PutIntentRequestOps[Self <: PutIntentRequest] (val x: Self) extends AnyVal {
+  implicit class PutIntentRequestMutableBuilder[Self <: PutIntentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConclusionStatement(value: Statement): Self = StObject.set(x, "conclusionStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: IntentName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setConclusionStatementUndefined: Self = StObject.set(x, "conclusionStatement", js.undefined)
     
     @scala.inline
-    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    def setConfirmationPrompt(value: Prompt): Self = StObject.set(x, "confirmationPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    def setConfirmationPromptUndefined: Self = StObject.set(x, "confirmationPrompt", js.undefined)
     
     @scala.inline
-    def setConclusionStatement(value: Statement): Self = this.set("conclusionStatement", value.asInstanceOf[js.Any])
+    def setCreateVersion(value: Boolean): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConclusionStatement: Self = this.set("conclusionStatement", js.undefined)
+    def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
     
     @scala.inline
-    def setConfirmationPrompt(value: Prompt): Self = this.set("confirmationPrompt", value.asInstanceOf[js.Any])
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfirmationPrompt: Self = this.set("confirmationPrompt", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setCreateVersion(value: Boolean): Self = this.set("createVersion", value.asInstanceOf[js.Any])
+    def setDialogCodeHook(value: CodeHook): Self = StObject.set(x, "dialogCodeHook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateVersion: Self = this.set("createVersion", js.undefined)
+    def setDialogCodeHookUndefined: Self = StObject.set(x, "dialogCodeHook", js.undefined)
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFollowUpPrompt(value: FollowUpPrompt): Self = StObject.set(x, "followUpPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFollowUpPromptUndefined: Self = StObject.set(x, "followUpPrompt", js.undefined)
     
     @scala.inline
-    def setDialogCodeHook(value: CodeHook): Self = this.set("dialogCodeHook", value.asInstanceOf[js.Any])
+    def setFulfillmentActivity(value: FulfillmentActivity): Self = StObject.set(x, "fulfillmentActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDialogCodeHook: Self = this.set("dialogCodeHook", js.undefined)
+    def setFulfillmentActivityUndefined: Self = StObject.set(x, "fulfillmentActivity", js.undefined)
     
     @scala.inline
-    def setFollowUpPrompt(value: FollowUpPrompt): Self = this.set("followUpPrompt", value.asInstanceOf[js.Any])
+    def setInputContexts(value: InputContextList): Self = StObject.set(x, "inputContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFollowUpPrompt: Self = this.set("followUpPrompt", js.undefined)
+    def setInputContextsUndefined: Self = StObject.set(x, "inputContexts", js.undefined)
     
     @scala.inline
-    def setFulfillmentActivity(value: FulfillmentActivity): Self = this.set("fulfillmentActivity", value.asInstanceOf[js.Any])
+    def setInputContextsVarargs(value: InputContext*): Self = StObject.set(x, "inputContexts", js.Array(value :_*))
     
     @scala.inline
-    def deleteFulfillmentActivity: Self = this.set("fulfillmentActivity", js.undefined)
+    def setKendraConfiguration(value: KendraConfiguration): Self = StObject.set(x, "kendraConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputContextsVarargs(value: InputContext*): Self = this.set("inputContexts", js.Array(value :_*))
+    def setKendraConfigurationUndefined: Self = StObject.set(x, "kendraConfiguration", js.undefined)
     
     @scala.inline
-    def setInputContexts(value: InputContextList): Self = this.set("inputContexts", value.asInstanceOf[js.Any])
+    def setName(value: IntentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputContexts: Self = this.set("inputContexts", js.undefined)
+    def setOutputContexts(value: OutputContextList): Self = StObject.set(x, "outputContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKendraConfiguration(value: KendraConfiguration): Self = this.set("kendraConfiguration", value.asInstanceOf[js.Any])
+    def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
     @scala.inline
-    def deleteKendraConfiguration: Self = this.set("kendraConfiguration", js.undefined)
+    def setOutputContextsVarargs(value: OutputContext*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
     
     @scala.inline
-    def setOutputContextsVarargs(value: OutputContext*): Self = this.set("outputContexts", js.Array(value :_*))
+    def setParentIntentSignature(value: BuiltinIntentSignature): Self = StObject.set(x, "parentIntentSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputContexts(value: OutputContextList): Self = this.set("outputContexts", value.asInstanceOf[js.Any])
+    def setParentIntentSignatureUndefined: Self = StObject.set(x, "parentIntentSignature", js.undefined)
     
     @scala.inline
-    def deleteOutputContexts: Self = this.set("outputContexts", js.undefined)
+    def setRejectionStatement(value: Statement): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentIntentSignature(value: BuiltinIntentSignature): Self = this.set("parentIntentSignature", value.asInstanceOf[js.Any])
+    def setRejectionStatementUndefined: Self = StObject.set(x, "rejectionStatement", js.undefined)
     
     @scala.inline
-    def deleteParentIntentSignature: Self = this.set("parentIntentSignature", js.undefined)
+    def setSampleUtterances(value: IntentUtteranceList): Self = StObject.set(x, "sampleUtterances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectionStatement(value: Statement): Self = this.set("rejectionStatement", value.asInstanceOf[js.Any])
+    def setSampleUtterancesUndefined: Self = StObject.set(x, "sampleUtterances", js.undefined)
     
     @scala.inline
-    def deleteRejectionStatement: Self = this.set("rejectionStatement", js.undefined)
+    def setSampleUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "sampleUtterances", js.Array(value :_*))
     
     @scala.inline
-    def setSampleUtterancesVarargs(value: Utterance*): Self = this.set("sampleUtterances", js.Array(value :_*))
+    def setSlots(value: SlotList): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleUtterances(value: IntentUtteranceList): Self = this.set("sampleUtterances", value.asInstanceOf[js.Any])
+    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
     @scala.inline
-    def deleteSampleUtterances: Self = this.set("sampleUtterances", js.undefined)
-    
-    @scala.inline
-    def setSlotsVarargs(value: Slot*): Self = this.set("slots", js.Array(value :_*))
-    
-    @scala.inline
-    def setSlots(value: SlotList): Self = this.set("slots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlots: Self = this.set("slots", js.undefined)
+    def setSlotsVarargs(value: Slot*): Self = StObject.set(x, "slots", js.Array(value :_*))
   }
 }

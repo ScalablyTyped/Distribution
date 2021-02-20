@@ -1,14 +1,15 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmitContainer extends js.Object
+sealed trait EmitContainer extends StObject
 @JSGlobal("TypeScript.EmitContainer")
 @js.native
-object EmitContainer extends js.Object {
+object EmitContainer extends StObject {
   
   @js.native
   sealed trait Args extends EmitContainer

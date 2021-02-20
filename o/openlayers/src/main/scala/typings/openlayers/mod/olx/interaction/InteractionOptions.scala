@@ -1,6 +1,7 @@
 package typings.openlayers.mod.olx.interaction
 
 import typings.openlayers.mod.MapBrowserEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Object literal with config options for interactions.
   */
 @js.native
-trait InteractionOptions extends js.Object {
+trait InteractionOptions extends StObject {
   
   def handleEvent(event: MapBrowserEvent): Boolean = js.native
 }
@@ -22,21 +23,9 @@ object InteractionOptions {
   }
   
   @scala.inline
-  implicit class InteractionOptionsOps[Self <: InteractionOptions] (val x: Self) extends AnyVal {
+  implicit class InteractionOptionsMutableBuilder[Self <: InteractionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHandleEvent(value: MapBrowserEvent => Boolean): Self = this.set("handleEvent", js.Any.fromFunction1(value))
+    def setHandleEvent(value: MapBrowserEvent => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }
 }

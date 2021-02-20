@@ -1,12 +1,13 @@
 package typings.senchaTouch.Ext
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDomHelper extends js.Object {
+trait IDomHelper extends StObject {
   
   /** [Method] Creates new DOM element s and appends them to el
     * @param el String/HTMLElement/Ext.Element The context element
@@ -132,90 +133,78 @@ object IDomHelper {
   }
   
   @scala.inline
-  implicit class IDomHelperOps[Self <: IDomHelper] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class IDomHelperMutableBuilder[Self <: IDomHelper] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAppend(
       value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("append", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "append", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteAppend: Self = this.set("append", js.undefined)
+    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
     @scala.inline
-    def setApplyStyles(value: (/* el */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any]) => Unit): Self = this.set("applyStyles", js.Any.fromFunction2(value))
+    def setApplyStyles(value: (/* el */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "applyStyles", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteApplyStyles: Self = this.set("applyStyles", js.undefined)
+    def setApplyStylesUndefined: Self = StObject.set(x, "applyStyles", js.undefined)
     
     @scala.inline
-    def setCreateTemplate(value: /* o */ js.UndefOr[js.Any] => ITemplate): Self = this.set("createTemplate", js.Any.fromFunction1(value))
+    def setCreateTemplate(value: /* o */ js.UndefOr[js.Any] => ITemplate): Self = StObject.set(x, "createTemplate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCreateTemplate: Self = this.set("createTemplate", js.undefined)
+    def setCreateTemplateUndefined: Self = StObject.set(x, "createTemplate", js.undefined)
     
     @scala.inline
-    def setGenerateStyles(value: (/* styles */ js.UndefOr[js.Any], /* buffer */ js.UndefOr[Array]) => _): Self = this.set("generateStyles", js.Any.fromFunction2(value))
+    def setGenerateStyles(value: (/* styles */ js.UndefOr[js.Any], /* buffer */ js.UndefOr[Array]) => _): Self = StObject.set(x, "generateStyles", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGenerateStyles: Self = this.set("generateStyles", js.undefined)
+    def setGenerateStylesUndefined: Self = StObject.set(x, "generateStyles", js.undefined)
     
     @scala.inline
     def setInsertAfter(
       value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("insertAfter", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "insertAfter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInsertAfter: Self = this.set("insertAfter", js.undefined)
+    def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
     
     @scala.inline
     def setInsertBefore(
       value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("insertBefore", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "insertBefore", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInsertBefore: Self = this.set("insertBefore", js.undefined)
+    def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
     @scala.inline
     def setInsertFirst(
       value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("insertFirst", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "insertFirst", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInsertFirst: Self = this.set("insertFirst", js.undefined)
+    def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
     
     @scala.inline
     def setInsertHtml(
       value: (/* where */ js.UndefOr[java.lang.String], /* el */ js.UndefOr[js.Any], /* html */ js.UndefOr[java.lang.String]) => HTMLElement
-    ): Self = this.set("insertHtml", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "insertHtml", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInsertHtml: Self = this.set("insertHtml", js.undefined)
+    def setInsertHtmlUndefined: Self = StObject.set(x, "insertHtml", js.undefined)
     
     @scala.inline
-    def setMarkup(value: /* spec */ js.UndefOr[js.Any] => java.lang.String): Self = this.set("markup", js.Any.fromFunction1(value))
+    def setMarkup(value: /* spec */ js.UndefOr[js.Any] => java.lang.String): Self = StObject.set(x, "markup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMarkup: Self = this.set("markup", js.undefined)
+    def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
     
     @scala.inline
     def setOverwrite(
       value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("overwrite", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "overwrite", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

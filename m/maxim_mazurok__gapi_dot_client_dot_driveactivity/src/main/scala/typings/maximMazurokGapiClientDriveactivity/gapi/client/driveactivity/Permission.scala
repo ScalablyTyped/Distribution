@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Permission extends js.Object {
+trait Permission extends StObject {
   
   /** If true, the item can be discovered (e.g. in the user's "Shared with me" collection) without needing a link to the item. */
   var allowDiscovery: js.UndefOr[Boolean] = js.native
@@ -34,54 +35,42 @@ object Permission {
   }
   
   @scala.inline
-  implicit class PermissionOps[Self <: Permission] (val x: Self) extends AnyVal {
+  implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDiscovery(value: Boolean): Self = StObject.set(x, "allowDiscovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDiscoveryUndefined: Self = StObject.set(x, "allowDiscovery", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnyone(value: js.Any): Self = StObject.set(x, "anyone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDiscovery(value: Boolean): Self = this.set("allowDiscovery", value.asInstanceOf[js.Any])
+    def setAnyoneUndefined: Self = StObject.set(x, "anyone", js.undefined)
     
     @scala.inline
-    def deleteAllowDiscovery: Self = this.set("allowDiscovery", js.undefined)
+    def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnyone(value: js.Any): Self = this.set("anyone", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteAnyone: Self = this.set("anyone", js.undefined)
+    def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: Domain): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: Group): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
-    
-    @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

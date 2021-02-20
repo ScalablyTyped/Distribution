@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientClassroom.anon.IdKey
 import typings.maximMazurokGapiClientClassroom.anon.OauthtokenPrettyPrint
 import typings.maximMazurokGapiClientClassroom.anon.PageSize
 import typings.maximMazurokGapiClientClassroom.anon.ResourceUploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvitationsResource extends js.Object {
+trait InvitationsResource extends StObject {
   
   /**
     * Accepts an invitation, removing it and adding the invited user to the teachers or students (as appropriate) of the specified course. Only the invited user may accept an invitation.

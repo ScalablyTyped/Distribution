@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorWrappingInfo extends js.Object {
+trait EditorWrappingInfo extends StObject {
   
   val isDominatedByLongLines: Boolean = js.native
   
@@ -29,30 +30,18 @@ object EditorWrappingInfo {
   }
   
   @scala.inline
-  implicit class EditorWrappingInfoOps[Self <: EditorWrappingInfo] (val x: Self) extends AnyVal {
+  implicit class EditorWrappingInfoMutableBuilder[Self <: EditorWrappingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsDominatedByLongLines(value: Boolean): Self = StObject.set(x, "isDominatedByLongLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsViewportWrapping(value: Boolean): Self = StObject.set(x, "isViewportWrapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsWordWrapMinified(value: Boolean): Self = StObject.set(x, "isWordWrapMinified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDominatedByLongLines(value: Boolean): Self = this.set("isDominatedByLongLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsViewportWrapping(value: Boolean): Self = this.set("isViewportWrapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsWordWrapMinified(value: Boolean): Self = this.set("isWordWrapMinified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrappingColumn(value: Double): Self = this.set("wrappingColumn", value.asInstanceOf[js.Any])
+    def setWrappingColumn(value: Double): Self = StObject.set(x, "wrappingColumn", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRegionsRequest extends js.Object {
+trait DescribeRegionsRequest extends StObject {
   
   /**
     * Indicates whether to display all Regions, including Regions that are disabled for your account.
@@ -36,48 +37,36 @@ object DescribeRegionsRequest {
   }
   
   @scala.inline
-  implicit class DescribeRegionsRequestOps[Self <: DescribeRegionsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeRegionsRequestMutableBuilder[Self <: DescribeRegionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllRegions(value: Boolean): Self = StObject.set(x, "AllRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllRegionsUndefined: Self = StObject.set(x, "AllRegions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllRegions(value: Boolean): Self = this.set("AllRegions", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def deleteAllRegions: Self = this.set("AllRegions", js.undefined)
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setRegionNames(value: RegionNameStringList): Self = StObject.set(x, "RegionNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setRegionNamesUndefined: Self = StObject.set(x, "RegionNames", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
-    
-    @scala.inline
-    def setRegionNamesVarargs(value: String*): Self = this.set("RegionNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegionNames(value: RegionNameStringList): Self = this.set("RegionNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionNames: Self = this.set("RegionNames", js.undefined)
+    def setRegionNamesVarargs(value: String*): Self = StObject.set(x, "RegionNames", js.Array(value :_*))
   }
 }

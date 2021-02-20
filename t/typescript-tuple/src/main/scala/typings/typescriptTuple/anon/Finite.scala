@@ -1,11 +1,12 @@
 package typings.typescriptTuple.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Finite[Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */] extends js.Object {
+trait Finite[Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */] extends StObject {
   
   var finite: js.Tuple2[Tuple, js.Array[js.Any]] = js.native
   
@@ -22,27 +23,15 @@ object Finite {
   }
   
   @scala.inline
-  implicit class FiniteOps[Self <: Finite[_, _], Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */] (val x: Self with (Finite[Holder, Tuple])) extends AnyVal {
+  implicit class FiniteMutableBuilder[Self <: Finite[_, _], Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */] (val x: Self with (Finite[Holder, Tuple])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinite(value: js.Tuple2[Tuple, js.Array[js.Any]]): Self = StObject.set(x, "finite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatched(value: js.Tuple2[Holder, Tuple]): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFinite(value: js.Tuple2[Tuple, js.Array[js.Any]]): Self = this.set("finite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatched(value: js.Tuple2[Holder, Tuple]): Self = this.set("matched", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnmatched(value: js.Any): Self = this.set("unmatched", value.asInstanceOf[js.Any])
+    def setUnmatched(value: js.Any): Self = StObject.set(x, "unmatched", value.asInstanceOf[js.Any])
   }
 }

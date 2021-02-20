@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Class and confidence. */
 @js.native
-trait ClassifiedClass extends js.Object {
+trait ClassifiedClass extends StObject {
   
   /** Class label. */
   var class_name: js.UndefOr[String] = js.native
@@ -23,30 +24,18 @@ object ClassifiedClass {
   }
   
   @scala.inline
-  implicit class ClassifiedClassOps[Self <: ClassifiedClass] (val x: Self) extends AnyVal {
+  implicit class ClassifiedClassMutableBuilder[Self <: ClassifiedClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClass_name(value: String): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass_nameUndefined: Self = StObject.set(x, "class_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass_name(value: String): Self = this.set("class_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClass_name: Self = this.set("class_name", js.undefined)
-    
-    @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
   }
 }

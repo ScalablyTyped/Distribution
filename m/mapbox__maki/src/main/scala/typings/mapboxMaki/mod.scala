@@ -1,18 +1,29 @@
 package typings.mapboxMaki
 
 import typings.mapboxMaki.anon.All
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@mapbox/maki", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@mapbox/maki", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Object that can be used to organize and display icons in your app or website */
-  var layouts: All = js.native
+  @JSImport("@mapbox/maki", "layouts")
+  @js.native
+  def layouts: All = js.native
+  @scala.inline
+  def layouts_=(x: All): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layouts")(x.asInstanceOf[js.Any])
   
-  var svgArray: js.Array[SvgContent] = js.native
+  @JSImport("@mapbox/maki", "svgArray")
+  @js.native
+  def svgArray: js.Array[SvgContent] = js.native
+  @scala.inline
+  def svgArray_=(x: js.Array[SvgContent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("svgArray")(x.asInstanceOf[js.Any])
   
   type IconName = String
   

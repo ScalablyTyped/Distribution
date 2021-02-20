@@ -1,5 +1,6 @@
 package typings.cote.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,27 +22,15 @@ object SubscriberAdvertisement {
   }
   
   @scala.inline
-  implicit class SubscriberAdvertisementOps[Self <: SubscriberAdvertisement] (val x: Self) extends AnyVal {
+  implicit class SubscriberAdvertisementMutableBuilder[Self <: SubscriberAdvertisement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubscribesTo(value: js.Array[String]): Self = StObject.set(x, "subscribesTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubscribesToUndefined: Self = StObject.set(x, "subscribesTo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSubscribesToVarargs(value: String*): Self = this.set("subscribesTo", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscribesTo(value: js.Array[String]): Self = this.set("subscribesTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribesTo: Self = this.set("subscribesTo", js.undefined)
+    def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value :_*))
   }
 }

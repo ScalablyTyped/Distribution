@@ -6,12 +6,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DensifyParametersProperties extends js.Object {
+trait DensifyParametersProperties extends StObject {
   
   /**
     * If `true`, Geographic Coordinate System spatial references are used or densify geodesic will be performed.
@@ -50,45 +51,33 @@ object DensifyParametersProperties {
   }
   
   @scala.inline
-  implicit class DensifyParametersPropertiesOps[Self <: DensifyParametersProperties] (val x: Self) extends AnyVal {
+  implicit class DensifyParametersPropertiesMutableBuilder[Self <: DensifyParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeodesic(value: Boolean): Self = this.set("geodesic", value.asInstanceOf[js.Any])
+    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
     @scala.inline
-    def deleteGeodesic: Self = this.set("geodesic", js.undefined)
+    def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
     @scala.inline
-    def setGeometriesVarargs(value: GeometryProperties*): Self = this.set("geometries", js.Array(value :_*))
+    def setLengthUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometries(value: js.Array[GeometryProperties]): Self = this.set("geometries", value.asInstanceOf[js.Any])
+    def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
     
     @scala.inline
-    def deleteGeometries: Self = this.set("geometries", js.undefined)
+    def setMaxSegmentLength(value: Double): Self = StObject.set(x, "maxSegmentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = this.set("lengthUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLengthUnit: Self = this.set("lengthUnit", js.undefined)
-    
-    @scala.inline
-    def setMaxSegmentLength(value: Double): Self = this.set("maxSegmentLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxSegmentLength: Self = this.set("maxSegmentLength", js.undefined)
+    def setMaxSegmentLengthUndefined: Self = StObject.set(x, "maxSegmentLength", js.undefined)
   }
 }

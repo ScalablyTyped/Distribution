@@ -1,12 +1,13 @@
 package typings.tuyaPanelKit.anon
 
 import typings.tuyaPanelKit.mod.DpValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DpId extends js.Object {
+trait DpId extends StObject {
   
   var dpId: String = js.native
   
@@ -33,39 +34,27 @@ object DpId {
   }
   
   @scala.inline
-  implicit class DpIdOps[Self <: DpId] (val x: Self) extends AnyVal {
+  implicit class DpIdMutableBuilder[Self <: DpId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDpId(value: String): Self = StObject.set(x, "dpId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDpName(value: String): Self = StObject.set(x, "dpName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRangeKeys(value: js.Array[DpValue]): Self = StObject.set(x, "rangeKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpId(value: String): Self = this.set("dpId", value.asInstanceOf[js.Any])
+    def setRangeKeysVarargs(value: DpValue*): Self = StObject.set(x, "rangeKeys", js.Array(value :_*))
     
     @scala.inline
-    def setDpName(value: String): Self = this.set("dpName", value.asInstanceOf[js.Any])
+    def setRangeValues(value: js.Array[String]): Self = StObject.set(x, "rangeValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeKeysVarargs(value: DpValue*): Self = this.set("rangeKeys", js.Array(value :_*))
+    def setRangeValuesVarargs(value: String*): Self = StObject.set(x, "rangeValues", js.Array(value :_*))
     
     @scala.inline
-    def setRangeKeys(value: js.Array[DpValue]): Self = this.set("rangeKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRangeValuesVarargs(value: String*): Self = this.set("rangeValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setRangeValues(value: js.Array[String]): Self = this.set("rangeValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelected(value: Double): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }
 }

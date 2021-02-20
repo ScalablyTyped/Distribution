@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsecuretunnelingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenTunnelResponse extends js.Object {
+trait OpenTunnelResponse extends StObject {
   
   /**
     * The access token the destination local proxy uses to connect to AWS IoT Secure Tunneling.
@@ -36,42 +37,30 @@ object OpenTunnelResponse {
   }
   
   @scala.inline
-  implicit class OpenTunnelResponseOps[Self <: OpenTunnelResponse] (val x: Self) extends AnyVal {
+  implicit class OpenTunnelResponseMutableBuilder[Self <: OpenTunnelResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationAccessToken(value: ClientAccessToken): Self = StObject.set(x, "destinationAccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationAccessTokenUndefined: Self = StObject.set(x, "destinationAccessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceAccessToken(value: ClientAccessToken): Self = StObject.set(x, "sourceAccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationAccessToken(value: ClientAccessToken): Self = this.set("destinationAccessToken", value.asInstanceOf[js.Any])
+    def setSourceAccessTokenUndefined: Self = StObject.set(x, "sourceAccessToken", js.undefined)
     
     @scala.inline
-    def deleteDestinationAccessToken: Self = this.set("destinationAccessToken", js.undefined)
+    def setTunnelArn(value: TunnelArn): Self = StObject.set(x, "tunnelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceAccessToken(value: ClientAccessToken): Self = this.set("sourceAccessToken", value.asInstanceOf[js.Any])
+    def setTunnelArnUndefined: Self = StObject.set(x, "tunnelArn", js.undefined)
     
     @scala.inline
-    def deleteSourceAccessToken: Self = this.set("sourceAccessToken", js.undefined)
+    def setTunnelId(value: TunnelId): Self = StObject.set(x, "tunnelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTunnelArn(value: TunnelArn): Self = this.set("tunnelArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTunnelArn: Self = this.set("tunnelArn", js.undefined)
-    
-    @scala.inline
-    def setTunnelId(value: TunnelId): Self = this.set("tunnelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTunnelId: Self = this.set("tunnelId", js.undefined)
+    def setTunnelIdUndefined: Self = StObject.set(x, "tunnelId", js.undefined)
   }
 }

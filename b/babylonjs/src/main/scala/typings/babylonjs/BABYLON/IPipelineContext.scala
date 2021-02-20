@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPipelineContext extends js.Object {
+trait IPipelineContext extends StObject {
   
   /** @hidden */
   def _getFragmentShaderCode(): String | Null = js.native
@@ -41,33 +42,21 @@ object IPipelineContext {
   }
   
   @scala.inline
-  implicit class IPipelineContextOps[Self <: IPipelineContext] (val x: Self) extends AnyVal {
+  implicit class IPipelineContextMutableBuilder[Self <: IPipelineContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAsync(value: Boolean): Self = StObject.set(x, "isAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_getFragmentShaderCode(value: () => String | Null): Self = StObject.set(x, "_getFragmentShaderCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_getFragmentShaderCode(value: () => String | Null): Self = this.set("_getFragmentShaderCode", js.Any.fromFunction0(value))
+    def set_getVertexShaderCode(value: () => String | Null): Self = StObject.set(x, "_getVertexShaderCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_getVertexShaderCode(value: () => String | Null): Self = this.set("_getVertexShaderCode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def set_handlesSpectorRebuildCallback(value: js.Function1[/* compiledObject */ js.Any, Unit] => Unit): Self = this.set("_handlesSpectorRebuildCallback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsAsync(value: Boolean): Self = this.set("isAsync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsReady(value: Boolean): Self = this.set("isReady", value.asInstanceOf[js.Any])
+    def set_handlesSpectorRebuildCallback(value: js.Function1[/* compiledObject */ js.Any, Unit] => Unit): Self = StObject.set(x, "_handlesSpectorRebuildCallback", js.Any.fromFunction1(value))
   }
 }

@@ -1,14 +1,14 @@
 package typings.typedoc
 
 import typings.typedoc.typesAbstractMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/types/union", JSImport.Namespace)
-@js.native
-object unionMod extends js.Object {
+object unionMod {
   
+  @JSImport("typedoc/dist/lib/models/types/union", "UnionType")
   @js.native
   class UnionType protected () extends Type {
     def this(types: js.Array[Type]) = this()

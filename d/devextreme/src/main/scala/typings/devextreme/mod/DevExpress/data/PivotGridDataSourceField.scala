@@ -38,12 +38,13 @@ import typings.devextreme.devextremeStrings.year
 import typings.devextreme.mod.DevExpress.ui.dxPivotGridSummaryCell
 import typings.devextreme.mod.DevExpress.ui.format
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotGridDataSourceField extends js.Object {
+trait PivotGridDataSourceField extends StObject {
   
   /**
     * [descr:PivotGridDataSource.Options.fields.allowCrossGroupCalculation]
@@ -251,263 +252,251 @@ object PivotGridDataSourceField {
   }
   
   @scala.inline
-  implicit class PivotGridDataSourceFieldOps[Self <: PivotGridDataSourceField] (val x: Self) extends AnyVal {
+  implicit class PivotGridDataSourceFieldMutableBuilder[Self <: PivotGridDataSourceField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCrossGroupCalculation(value: Boolean): Self = StObject.set(x, "allowCrossGroupCalculation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowCrossGroupCalculationUndefined: Self = StObject.set(x, "allowCrossGroupCalculation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowExpandAll(value: Boolean): Self = StObject.set(x, "allowExpandAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCrossGroupCalculation(value: Boolean): Self = this.set("allowCrossGroupCalculation", value.asInstanceOf[js.Any])
+    def setAllowExpandAllUndefined: Self = StObject.set(x, "allowExpandAll", js.undefined)
     
     @scala.inline
-    def deleteAllowCrossGroupCalculation: Self = this.set("allowCrossGroupCalculation", js.undefined)
+    def setAllowFiltering(value: Boolean): Self = StObject.set(x, "allowFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowExpandAll(value: Boolean): Self = this.set("allowExpandAll", value.asInstanceOf[js.Any])
+    def setAllowFilteringUndefined: Self = StObject.set(x, "allowFiltering", js.undefined)
     
     @scala.inline
-    def deleteAllowExpandAll: Self = this.set("allowExpandAll", js.undefined)
+    def setAllowSorting(value: Boolean): Self = StObject.set(x, "allowSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFiltering(value: Boolean): Self = this.set("allowFiltering", value.asInstanceOf[js.Any])
+    def setAllowSortingBySummary(value: Boolean): Self = StObject.set(x, "allowSortingBySummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowFiltering: Self = this.set("allowFiltering", js.undefined)
+    def setAllowSortingBySummaryUndefined: Self = StObject.set(x, "allowSortingBySummary", js.undefined)
     
     @scala.inline
-    def setAllowSorting(value: Boolean): Self = this.set("allowSorting", value.asInstanceOf[js.Any])
+    def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
     
     @scala.inline
-    def deleteAllowSorting: Self = this.set("allowSorting", js.undefined)
+    def setArea(value: column | typings.devextreme.devextremeStrings.data | filter | row): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSortingBySummary(value: Boolean): Self = this.set("allowSortingBySummary", value.asInstanceOf[js.Any])
+    def setAreaIndex(value: Double): Self = StObject.set(x, "areaIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowSortingBySummary: Self = this.set("allowSortingBySummary", js.undefined)
+    def setAreaIndexUndefined: Self = StObject.set(x, "areaIndex", js.undefined)
     
     @scala.inline
-    def setArea(value: column | typings.devextreme.devextremeStrings.data | filter | row): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
     @scala.inline
-    def deleteArea: Self = this.set("area", js.undefined)
+    def setCalculateCustomSummary(value: /* options */ SummaryProcess => _): Self = StObject.set(x, "calculateCustomSummary", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAreaIndex(value: Double): Self = this.set("areaIndex", value.asInstanceOf[js.Any])
+    def setCalculateCustomSummaryUndefined: Self = StObject.set(x, "calculateCustomSummary", js.undefined)
     
     @scala.inline
-    def deleteAreaIndex: Self = this.set("areaIndex", js.undefined)
+    def setCalculateSummaryValue(value: /* e */ dxPivotGridSummaryCell => Double): Self = StObject.set(x, "calculateSummaryValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalculateCustomSummary(value: /* options */ SummaryProcess => _): Self = this.set("calculateCustomSummary", js.Any.fromFunction1(value))
+    def setCalculateSummaryValueUndefined: Self = StObject.set(x, "calculateSummaryValue", js.undefined)
     
     @scala.inline
-    def deleteCalculateCustomSummary: Self = this.set("calculateCustomSummary", js.undefined)
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculateSummaryValue(value: /* e */ dxPivotGridSummaryCell => Double): Self = this.set("calculateSummaryValue", js.Any.fromFunction1(value))
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def deleteCalculateSummaryValue: Self = this.set("calculateSummaryValue", js.undefined)
+    def setCustomizeText(value: /* cellInfo */ Value => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeText(value: /* cellInfo */ Value => String): Self = this.set("customizeText", js.Any.fromFunction1(value))
+    def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
     
     @scala.inline
-    def deleteCustomizeText: Self = this.set("customizeText", js.undefined)
+    def setDataType(value: date | number | string_): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataField(value: String): Self = this.set("dataField", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def deleteDataField: Self = this.set("dataField", js.undefined)
+    def setDisplayFolder(value: String): Self = StObject.set(x, "displayFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: date | number | string_): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setDisplayFolderUndefined: Self = StObject.set(x, "displayFolder", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFolder(value: String): Self = this.set("displayFolder", value.asInstanceOf[js.Any])
+    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     @scala.inline
-    def deleteDisplayFolder: Self = this.set("displayFolder", js.undefined)
+    def setFilterType(value: exclude | include): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
     @scala.inline
-    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    def setFilterValues(value: js.Array[_]): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterType(value: exclude | include): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    def setFilterValuesUndefined: Self = StObject.set(x, "filterValues", js.undefined)
     
     @scala.inline
-    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    def setFilterValuesVarargs(value: js.Any*): Self = StObject.set(x, "filterValues", js.Array(value :_*))
     
     @scala.inline
-    def setFilterValuesVarargs(value: js.Any*): Self = this.set("filterValues", js.Array(value :_*))
+    def setFormat(value: format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterValues(value: js.Array[_]): Self = this.set("filterValues", value.asInstanceOf[js.Any])
+    def setFormatFunction1(value: /* value */ Double | Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFilterValues: Self = this.set("filterValues", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormatFunction1(value: /* value */ Double | Date => String): Self = this.set("format", js.Any.fromFunction1(value))
+    def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: format): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setGroupIndexUndefined: Self = StObject.set(x, "groupIndex", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setGroupInterval(value: day | dayOfWeek | month | quarter | year | Double): Self = StObject.set(x, "groupInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIndex(value: Double): Self = this.set("groupIndex", value.asInstanceOf[js.Any])
+    def setGroupIntervalUndefined: Self = StObject.set(x, "groupInterval", js.undefined)
     
     @scala.inline
-    def deleteGroupIndex: Self = this.set("groupIndex", js.undefined)
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupInterval(value: day | dayOfWeek | month | quarter | year | Double): Self = this.set("groupInterval", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
     @scala.inline
-    def deleteGroupInterval: Self = this.set("groupInterval", js.undefined)
+    def setHeaderFilter(value: AllowSearch): Self = StObject.set(x, "headerFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    def setHeaderFilterUndefined: Self = StObject.set(x, "headerFilter", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    def setIsMeasure(value: Boolean): Self = StObject.set(x, "isMeasure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderFilter(value: AllowSearch): Self = this.set("headerFilter", value.asInstanceOf[js.Any])
+    def setIsMeasureUndefined: Self = StObject.set(x, "isMeasure", js.undefined)
     
     @scala.inline
-    def deleteHeaderFilter: Self = this.set("headerFilter", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMeasure(value: Boolean): Self = this.set("isMeasure", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIsMeasure: Self = this.set("isMeasure", js.undefined)
+    def setRunningTotal(value: column | row): Self = StObject.set(x, "runningTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRunningTotalUndefined: Self = StObject.set(x, "runningTotal", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSelector(value: js.Function): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunningTotal(value: column | row): Self = this.set("runningTotal", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteRunningTotal: Self = this.set("runningTotal", js.undefined)
+    def setShowGrandTotals(value: Boolean): Self = StObject.set(x, "showGrandTotals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: js.Function): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setShowGrandTotalsUndefined: Self = StObject.set(x, "showGrandTotals", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setShowTotals(value: Boolean): Self = StObject.set(x, "showTotals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGrandTotals(value: Boolean): Self = this.set("showGrandTotals", value.asInstanceOf[js.Any])
+    def setShowTotalsUndefined: Self = StObject.set(x, "showTotals", js.undefined)
     
     @scala.inline
-    def deleteShowGrandTotals: Self = this.set("showGrandTotals", js.undefined)
+    def setShowValues(value: Boolean): Self = StObject.set(x, "showValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTotals(value: Boolean): Self = this.set("showTotals", value.asInstanceOf[js.Any])
+    def setShowValuesUndefined: Self = StObject.set(x, "showValues", js.undefined)
     
     @scala.inline
-    def deleteShowTotals: Self = this.set("showTotals", js.undefined)
+    def setSortBy(value: displayText | value | none): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowValues(value: Boolean): Self = this.set("showValues", value.asInstanceOf[js.Any])
+    def setSortBySummaryField(value: String): Self = StObject.set(x, "sortBySummaryField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowValues: Self = this.set("showValues", js.undefined)
+    def setSortBySummaryFieldUndefined: Self = StObject.set(x, "sortBySummaryField", js.undefined)
     
     @scala.inline
-    def setSortBy(value: displayText | value | none): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    def setSortBySummaryPath(value: js.Array[Double | String]): Self = StObject.set(x, "sortBySummaryPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+    def setSortBySummaryPathUndefined: Self = StObject.set(x, "sortBySummaryPath", js.undefined)
     
     @scala.inline
-    def setSortBySummaryField(value: String): Self = this.set("sortBySummaryField", value.asInstanceOf[js.Any])
+    def setSortBySummaryPathVarargs(value: (Double | String)*): Self = StObject.set(x, "sortBySummaryPath", js.Array(value :_*))
     
     @scala.inline
-    def deleteSortBySummaryField: Self = this.set("sortBySummaryField", js.undefined)
+    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
     @scala.inline
-    def setSortBySummaryPathVarargs(value: (Double | String)*): Self = this.set("sortBySummaryPath", js.Array(value :_*))
+    def setSortOrder(value: asc | desc): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortBySummaryPath(value: js.Array[Double | String]): Self = this.set("sortBySummaryPath", value.asInstanceOf[js.Any])
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
     @scala.inline
-    def deleteSortBySummaryPath: Self = this.set("sortBySummaryPath", js.undefined)
+    def setSortingMethod(value: (/* a */ Children, /* b */ Children) => Double): Self = StObject.set(x, "sortingMethod", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSortOrder(value: asc | desc): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
-    
-    @scala.inline
-    def setSortingMethod(value: (/* a */ Children, /* b */ Children) => Double): Self = this.set("sortingMethod", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSortingMethod: Self = this.set("sortingMethod", js.undefined)
+    def setSortingMethodUndefined: Self = StObject.set(x, "sortingMethod", js.undefined)
     
     @scala.inline
     def setSummaryDisplayMode(
       value: absoluteVariation | percentOfColumnGrandTotal | percentOfColumnTotal | percentOfGrandTotal | percentOfRowGrandTotal | percentOfRowTotal | percentVariation
-    ): Self = this.set("summaryDisplayMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "summaryDisplayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSummaryDisplayMode: Self = this.set("summaryDisplayMode", js.undefined)
+    def setSummaryDisplayModeUndefined: Self = StObject.set(x, "summaryDisplayMode", js.undefined)
     
     @scala.inline
-    def setSummaryType(value: avg | count | custom | max | min | sum | String): Self = this.set("summaryType", value.asInstanceOf[js.Any])
+    def setSummaryType(value: avg | count | custom | max | min | sum | String): Self = StObject.set(x, "summaryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSummaryType: Self = this.set("summaryType", js.undefined)
+    def setSummaryTypeUndefined: Self = StObject.set(x, "summaryType", js.undefined)
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def setWordWrapEnabled(value: Boolean): Self = this.set("wordWrapEnabled", value.asInstanceOf[js.Any])
+    def setWordWrapEnabled(value: Boolean): Self = StObject.set(x, "wordWrapEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWordWrapEnabled: Self = this.set("wordWrapEnabled", js.undefined)
+    def setWordWrapEnabledUndefined: Self = StObject.set(x, "wordWrapEnabled", js.undefined)
   }
 }

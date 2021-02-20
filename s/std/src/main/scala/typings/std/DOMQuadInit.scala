@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMQuadInit extends js.Object {
+trait DOMQuadInit extends StObject {
   
   var p1: js.UndefOr[DOMPointInit] = js.native
   
@@ -24,42 +25,30 @@ object DOMQuadInit {
   }
   
   @scala.inline
-  implicit class DOMQuadInitOps[Self <: DOMQuadInit] (val x: Self) extends AnyVal {
+  implicit class DOMQuadInitMutableBuilder[Self <: DOMQuadInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setP1(value: DOMPointInit): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setP1Undefined: Self = StObject.set(x, "p1", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setP2(value: DOMPointInit): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP1(value: DOMPointInit): Self = this.set("p1", value.asInstanceOf[js.Any])
+    def setP2Undefined: Self = StObject.set(x, "p2", js.undefined)
     
     @scala.inline
-    def deleteP1: Self = this.set("p1", js.undefined)
+    def setP3(value: DOMPointInit): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP2(value: DOMPointInit): Self = this.set("p2", value.asInstanceOf[js.Any])
+    def setP3Undefined: Self = StObject.set(x, "p3", js.undefined)
     
     @scala.inline
-    def deleteP2: Self = this.set("p2", js.undefined)
+    def setP4(value: DOMPointInit): Self = StObject.set(x, "p4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP3(value: DOMPointInit): Self = this.set("p3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteP3: Self = this.set("p3", js.undefined)
-    
-    @scala.inline
-    def setP4(value: DOMPointInit): Self = this.set("p4", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteP4: Self = this.set("p4", js.undefined)
+    def setP4Undefined: Self = StObject.set(x, "p4", js.undefined)
   }
 }

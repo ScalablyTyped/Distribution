@@ -1,11 +1,12 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFontWeightsStatics extends js.Object {
+trait IFontWeightsStatics extends StObject {
   
   var black: FontWeight = js.native
   
@@ -50,51 +51,39 @@ object IFontWeightsStatics {
   }
   
   @scala.inline
-  implicit class IFontWeightsStaticsOps[Self <: IFontWeightsStatics] (val x: Self) extends AnyVal {
+  implicit class IFontWeightsStaticsMutableBuilder[Self <: IFontWeightsStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlack(value: FontWeight): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBold(value: FontWeight): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraBlack(value: FontWeight): Self = StObject.set(x, "extraBlack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlack(value: FontWeight): Self = this.set("black", value.asInstanceOf[js.Any])
+    def setExtraBold(value: FontWeight): Self = StObject.set(x, "extraBold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: FontWeight): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setExtraLight(value: FontWeight): Self = StObject.set(x, "extraLight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraBlack(value: FontWeight): Self = this.set("extraBlack", value.asInstanceOf[js.Any])
+    def setLight(value: FontWeight): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraBold(value: FontWeight): Self = this.set("extraBold", value.asInstanceOf[js.Any])
+    def setMedium(value: FontWeight): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraLight(value: FontWeight): Self = this.set("extraLight", value.asInstanceOf[js.Any])
+    def setNormal(value: FontWeight): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLight(value: FontWeight): Self = this.set("light", value.asInstanceOf[js.Any])
+    def setSemiBold(value: FontWeight): Self = StObject.set(x, "semiBold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedium(value: FontWeight): Self = this.set("medium", value.asInstanceOf[js.Any])
+    def setSemiLight(value: FontWeight): Self = StObject.set(x, "semiLight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormal(value: FontWeight): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSemiBold(value: FontWeight): Self = this.set("semiBold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSemiLight(value: FontWeight): Self = this.set("semiLight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThin(value: FontWeight): Self = this.set("thin", value.asInstanceOf[js.Any])
+    def setThin(value: FontWeight): Self = StObject.set(x, "thin", value.asInstanceOf[js.Any])
   }
 }

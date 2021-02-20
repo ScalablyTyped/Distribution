@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Action extends js.Object {
+trait Action extends StObject {
   
   /**
     * [HTTPS listeners] Information for using Amazon Cognito to authenticate users. Specify only when Type is authenticate-cognito.
@@ -56,63 +57,51 @@ object Action {
   }
   
   @scala.inline
-  implicit class ActionOps[Self <: Action] (val x: Self) extends AnyVal {
+  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticateCognitoConfig(value: AuthenticateCognitoActionConfig): Self = StObject.set(x, "AuthenticateCognitoConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticateCognitoConfigUndefined: Self = StObject.set(x, "AuthenticateCognitoConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthenticateOidcConfig(value: AuthenticateOidcActionConfig): Self = StObject.set(x, "AuthenticateOidcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ActionTypeEnum): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setAuthenticateOidcConfigUndefined: Self = StObject.set(x, "AuthenticateOidcConfig", js.undefined)
     
     @scala.inline
-    def setAuthenticateCognitoConfig(value: AuthenticateCognitoActionConfig): Self = this.set("AuthenticateCognitoConfig", value.asInstanceOf[js.Any])
+    def setFixedResponseConfig(value: FixedResponseActionConfig): Self = StObject.set(x, "FixedResponseConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthenticateCognitoConfig: Self = this.set("AuthenticateCognitoConfig", js.undefined)
+    def setFixedResponseConfigUndefined: Self = StObject.set(x, "FixedResponseConfig", js.undefined)
     
     @scala.inline
-    def setAuthenticateOidcConfig(value: AuthenticateOidcActionConfig): Self = this.set("AuthenticateOidcConfig", value.asInstanceOf[js.Any])
+    def setForwardConfig(value: ForwardActionConfig): Self = StObject.set(x, "ForwardConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthenticateOidcConfig: Self = this.set("AuthenticateOidcConfig", js.undefined)
+    def setForwardConfigUndefined: Self = StObject.set(x, "ForwardConfig", js.undefined)
     
     @scala.inline
-    def setFixedResponseConfig(value: FixedResponseActionConfig): Self = this.set("FixedResponseConfig", value.asInstanceOf[js.Any])
+    def setOrder(value: ActionOrder): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFixedResponseConfig: Self = this.set("FixedResponseConfig", js.undefined)
+    def setOrderUndefined: Self = StObject.set(x, "Order", js.undefined)
     
     @scala.inline
-    def setForwardConfig(value: ForwardActionConfig): Self = this.set("ForwardConfig", value.asInstanceOf[js.Any])
+    def setRedirectConfig(value: RedirectActionConfig): Self = StObject.set(x, "RedirectConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForwardConfig: Self = this.set("ForwardConfig", js.undefined)
+    def setRedirectConfigUndefined: Self = StObject.set(x, "RedirectConfig", js.undefined)
     
     @scala.inline
-    def setOrder(value: ActionOrder): Self = this.set("Order", value.asInstanceOf[js.Any])
+    def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrder: Self = this.set("Order", js.undefined)
+    def setTargetGroupArnUndefined: Self = StObject.set(x, "TargetGroupArn", js.undefined)
     
     @scala.inline
-    def setRedirectConfig(value: RedirectActionConfig): Self = this.set("RedirectConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirectConfig: Self = this.set("RedirectConfig", js.undefined)
-    
-    @scala.inline
-    def setTargetGroupArn(value: TargetGroupArn): Self = this.set("TargetGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGroupArn: Self = this.set("TargetGroupArn", js.undefined)
+    def setType(value: ActionTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

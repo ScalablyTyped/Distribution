@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Regex extends js.Object {
+trait Regex extends StObject {
   
   /**
     * The string representing the regular expression.
@@ -21,24 +22,12 @@ object Regex {
   }
   
   @scala.inline
-  implicit class RegexOps[Self <: Regex] (val x: Self) extends AnyVal {
+  implicit class RegexMutableBuilder[Self <: Regex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegexString(value: RegexPatternString): Self = StObject.set(x, "RegexString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRegexString(value: RegexPatternString): Self = this.set("RegexString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegexString: Self = this.set("RegexString", js.undefined)
+    def setRegexStringUndefined: Self = StObject.set(x, "RegexString", js.undefined)
   }
 }

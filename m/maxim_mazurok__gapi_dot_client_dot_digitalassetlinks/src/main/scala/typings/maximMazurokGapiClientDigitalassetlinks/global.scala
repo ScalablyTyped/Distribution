@@ -4,31 +4,35 @@ import typings.maximMazurokGapiClientDigitalassetlinks.gapi.client.digitalassetl
 import typings.maximMazurokGapiClientDigitalassetlinks.gapi.client.digitalassetlinks.StatementsResource
 import typings.maximMazurokGapiClientDigitalassetlinks.maximMazurokGapiClientDigitalassetlinksStrings.digitalassetlinks
 import typings.maximMazurokGapiClientDigitalassetlinks.maximMazurokGapiClientDigitalassetlinksStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Digital Asset Links API v1 */
-      def load(name: digitalassetlinks, version: v1): js.Thenable[Unit] = js.native
-      def load(name: digitalassetlinks, version: v1, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object digitalassetlinks extends js.Object {
+      object digitalassetlinks {
         
+        @JSGlobal("gapi.client.digitalassetlinks.assetlinks")
+        @js.native
         val assetlinks: AssetlinksResource = js.native
         
+        @JSGlobal("gapi.client.digitalassetlinks.statements")
+        @js.native
         val statements: StatementsResource = js.native
       }
+      
+      /** Load Digital Asset Links API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: digitalassetlinks, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: digitalassetlinks, version: v1, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

@@ -2,6 +2,7 @@ package typings.webappsecCredentialManagement
 
 import typings.std.AttestationConveyancePreference
 import typings.std.BufferSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://w3c.github.io/webauthn/#dictdef-makepublickeycredentialoptions}
   */
 @js.native
-trait PublicKeyCredentialCreationOptions extends js.Object {
+trait PublicKeyCredentialCreationOptions extends StObject {
   
   var attestation: js.UndefOr[AttestationConveyancePreference] = js.native
   
@@ -44,66 +45,54 @@ object PublicKeyCredentialCreationOptions {
   }
   
   @scala.inline
-  implicit class PublicKeyCredentialCreationOptionsOps[Self <: PublicKeyCredentialCreationOptions] (val x: Self) extends AnyVal {
+  implicit class PublicKeyCredentialCreationOptionsMutableBuilder[Self <: PublicKeyCredentialCreationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttestation(value: AttestationConveyancePreference): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthenticatorSelection(value: AuthenticatorSelectionCriteria): Self = StObject.set(x, "authenticatorSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallenge(value: BufferSource): Self = this.set("challenge", value.asInstanceOf[js.Any])
+    def setAuthenticatorSelectionUndefined: Self = StObject.set(x, "authenticatorSelection", js.undefined)
     
     @scala.inline
-    def setPubKeyCredParamsVarargs(value: PublicKeyCredentialParameters*): Self = this.set("pubKeyCredParams", js.Array(value :_*))
+    def setChallenge(value: BufferSource): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubKeyCredParams(value: js.Array[PublicKeyCredentialParameters]): Self = this.set("pubKeyCredParams", value.asInstanceOf[js.Any])
+    def setExcludeCredentials(value: js.Array[PublicKeyCredentialDescriptor]): Self = StObject.set(x, "excludeCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRp(value: PublicKeyCredentialRpEntity): Self = this.set("rp", value.asInstanceOf[js.Any])
+    def setExcludeCredentialsUndefined: Self = StObject.set(x, "excludeCredentials", js.undefined)
     
     @scala.inline
-    def setUser(value: PublicKeyCredentialUserEntity): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setExcludeCredentialsVarargs(value: PublicKeyCredentialDescriptor*): Self = StObject.set(x, "excludeCredentials", js.Array(value :_*))
     
     @scala.inline
-    def setAttestation(value: AttestationConveyancePreference): Self = this.set("attestation", value.asInstanceOf[js.Any])
+    def setExtensions(value: AuthenticationExtensionsClientInputs): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttestation: Self = this.set("attestation", js.undefined)
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setAuthenticatorSelection(value: AuthenticatorSelectionCriteria): Self = this.set("authenticatorSelection", value.asInstanceOf[js.Any])
+    def setPubKeyCredParams(value: js.Array[PublicKeyCredentialParameters]): Self = StObject.set(x, "pubKeyCredParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthenticatorSelection: Self = this.set("authenticatorSelection", js.undefined)
+    def setPubKeyCredParamsVarargs(value: PublicKeyCredentialParameters*): Self = StObject.set(x, "pubKeyCredParams", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeCredentialsVarargs(value: PublicKeyCredentialDescriptor*): Self = this.set("excludeCredentials", js.Array(value :_*))
+    def setRp(value: PublicKeyCredentialRpEntity): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeCredentials(value: js.Array[PublicKeyCredentialDescriptor]): Self = this.set("excludeCredentials", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcludeCredentials: Self = this.set("excludeCredentials", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setExtensions(value: AuthenticationExtensionsClientInputs): Self = this.set("extensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setUser(value: PublicKeyCredentialUserEntity): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

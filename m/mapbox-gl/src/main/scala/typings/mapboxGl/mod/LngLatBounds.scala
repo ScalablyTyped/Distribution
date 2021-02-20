@@ -1,5 +1,6 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,10 +61,10 @@ class LngLatBounds () extends _LngLatBoundsLike {
   def toArray(): js.Array[js.Array[Double]] = js.native
 }
 /* static members */
-@JSImport("mapbox-gl", "LngLatBounds")
-@js.native
-object LngLatBounds extends js.Object {
+object LngLatBounds {
   
   /** Convert an array to a LngLatBounds object, or return an existing LngLatBounds object unchanged. */
+  @JSImport("mapbox-gl", "LngLatBounds.convert")
+  @js.native
   def convert(input: LngLatBoundsLike): LngLatBounds = js.native
 }

@@ -1,12 +1,13 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "ActivitiesApi")
 @js.native
-class ActivitiesApi () extends js.Object {
+class ActivitiesApi () extends StObject {
   
   /**
     * Creates a new Activity.

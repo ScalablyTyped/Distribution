@@ -1,14 +1,15 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TypeRelationshipFlags extends js.Object
+sealed trait TypeRelationshipFlags extends StObject
 @JSGlobal("TypeScript.TypeRelationshipFlags")
 @js.native
-object TypeRelationshipFlags extends js.Object {
+object TypeRelationshipFlags extends StObject {
   
   @js.native
   sealed trait IncompatibleParameterTypes extends TypeRelationshipFlags

@@ -1,6 +1,7 @@
 package typings.rax.mod
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,21 +38,9 @@ object ChangeEvent {
   }
   
   @scala.inline
-  implicit class ChangeEventOps[Self <: ChangeEvent[_], T] (val x: Self with ChangeEvent[T]) extends AnyVal {
+  implicit class ChangeEventMutableBuilder[Self <: ChangeEvent[_], T] (val x: Self with ChangeEvent[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTarget(value: EventTarget with T): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: EventTarget with T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

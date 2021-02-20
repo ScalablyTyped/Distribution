@@ -1,12 +1,13 @@
 package typings.reactNativeFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-fetch-blob", "RNFetchBlobSession")
 @js.native
-class RNFetchBlobSession protected () extends js.Object {
+class RNFetchBlobSession protected () extends StObject {
   def this(name: String, list: js.Array[String]) = this()
   
   def add(path: String): RNFetchBlobSession = js.native
@@ -20,13 +21,17 @@ class RNFetchBlobSession protected () extends js.Object {
   def remove(path: String): RNFetchBlobSession = js.native
 }
 /* static members */
-@JSImport("react-native-fetch-blob", "RNFetchBlobSession")
-@js.native
-object RNFetchBlobSession extends js.Object {
+object RNFetchBlobSession {
   
+  @JSImport("react-native-fetch-blob", "RNFetchBlobSession.getSession")
+  @js.native
   def getSession(name: String): js.Any = js.native
   
+  @JSImport("react-native-fetch-blob", "RNFetchBlobSession.removeSession")
+  @js.native
   def removeSession(name: String): Unit = js.native
   
+  @JSImport("react-native-fetch-blob", "RNFetchBlobSession.setSession")
+  @js.native
   def setSession(name: String): Unit = js.native
 }

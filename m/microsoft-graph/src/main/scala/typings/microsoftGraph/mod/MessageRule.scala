@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,90 +41,78 @@ object MessageRule {
   }
   
   @scala.inline
-  implicit class MessageRuleOps[Self <: MessageRule] (val x: Self) extends AnyVal {
+  implicit class MessageRuleMutableBuilder[Self <: MessageRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: NullableOption[MessageRuleActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsNull: Self = StObject.set(x, "actions", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def setActions(value: NullableOption[MessageRuleActions]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setConditions(value: NullableOption[MessageRulePredicates]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setConditionsNull: Self = StObject.set(x, "conditions", null)
     
     @scala.inline
-    def setActionsNull: Self = this.set("actions", null)
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def setConditions(value: NullableOption[MessageRulePredicates]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setConditionsNull: Self = this.set("conditions", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setExceptions(value: NullableOption[MessageRulePredicates]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setExceptionsNull: Self = StObject.set(x, "exceptions", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
     
     @scala.inline
-    def setExceptions(value: NullableOption[MessageRulePredicates]): Self = this.set("exceptions", value.asInstanceOf[js.Any])
+    def setHasError(value: NullableOption[Boolean]): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExceptions: Self = this.set("exceptions", js.undefined)
+    def setHasErrorNull: Self = StObject.set(x, "hasError", null)
     
     @scala.inline
-    def setExceptionsNull: Self = this.set("exceptions", null)
+    def setHasErrorUndefined: Self = StObject.set(x, "hasError", js.undefined)
     
     @scala.inline
-    def setHasError(value: NullableOption[Boolean]): Self = this.set("hasError", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasError: Self = this.set("hasError", js.undefined)
+    def setIsEnabledNull: Self = StObject.set(x, "isEnabled", null)
     
     @scala.inline
-    def setHasErrorNull: Self = this.set("hasError", null)
+    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
     
     @scala.inline
-    def setIsEnabled(value: NullableOption[Boolean]): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setIsReadOnly(value: NullableOption[Boolean]): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsEnabled: Self = this.set("isEnabled", js.undefined)
+    def setIsReadOnlyNull: Self = StObject.set(x, "isReadOnly", null)
     
     @scala.inline
-    def setIsEnabledNull: Self = this.set("isEnabled", null)
+    def setIsReadOnlyUndefined: Self = StObject.set(x, "isReadOnly", js.undefined)
     
     @scala.inline
-    def setIsReadOnly(value: NullableOption[Boolean]): Self = this.set("isReadOnly", value.asInstanceOf[js.Any])
+    def setSequence(value: NullableOption[Double]): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsReadOnly: Self = this.set("isReadOnly", js.undefined)
+    def setSequenceNull: Self = StObject.set(x, "sequence", null)
     
     @scala.inline
-    def setIsReadOnlyNull: Self = this.set("isReadOnly", null)
-    
-    @scala.inline
-    def setSequence(value: NullableOption[Double]): Self = this.set("sequence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequence: Self = this.set("sequence", js.undefined)
-    
-    @scala.inline
-    def setSequenceNull: Self = this.set("sequence", null)
+    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
   }
 }

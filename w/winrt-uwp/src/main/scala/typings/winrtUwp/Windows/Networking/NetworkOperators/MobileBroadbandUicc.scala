@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Universal Integrated Circuit Card (UICC), normally called a SIM Card on a mobile broadband device. */
 @js.native
-trait MobileBroadbandUicc extends js.Object {
+trait MobileBroadbandUicc extends StObject {
   
   /**
     * Asynchronously retrieves a list of mobile broadband UICC (SIM card) applications.
@@ -30,24 +31,12 @@ object MobileBroadbandUicc {
   }
   
   @scala.inline
-  implicit class MobileBroadbandUiccOps[Self <: MobileBroadbandUicc] (val x: Self) extends AnyVal {
+  implicit class MobileBroadbandUiccMutableBuilder[Self <: MobileBroadbandUicc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetUiccAppsAsync(value: () => IPromiseWithIAsyncOperation[MobileBroadbandUiccAppsResult]): Self = StObject.set(x, "getUiccAppsAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetUiccAppsAsync(value: () => IPromiseWithIAsyncOperation[MobileBroadbandUiccAppsResult]): Self = this.set("getUiccAppsAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSimIccId(value: String): Self = this.set("simIccId", value.asInstanceOf[js.Any])
+    def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.transferMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SshPublicKey extends js.Object {
+trait SshPublicKey extends StObject {
   
   /**
     * Specifies the date that the public key was added to the user account.
@@ -31,27 +32,15 @@ object SshPublicKey {
   }
   
   @scala.inline
-  implicit class SshPublicKeyOps[Self <: SshPublicKey] (val x: Self) extends AnyVal {
+  implicit class SshPublicKeyMutableBuilder[Self <: SshPublicKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateImported(value: DateImported): Self = StObject.set(x, "DateImported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSshPublicKeyBody(value: SshPublicKeyBody): Self = StObject.set(x, "SshPublicKeyBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDateImported(value: DateImported): Self = this.set("DateImported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSshPublicKeyBody(value: SshPublicKeyBody): Self = this.set("SshPublicKeyBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSshPublicKeyId(value: SshPublicKeyId): Self = this.set("SshPublicKeyId", value.asInstanceOf[js.Any])
+    def setSshPublicKeyId(value: SshPublicKeyId): Self = StObject.set(x, "SshPublicKeyId", value.asInstanceOf[js.Any])
   }
 }

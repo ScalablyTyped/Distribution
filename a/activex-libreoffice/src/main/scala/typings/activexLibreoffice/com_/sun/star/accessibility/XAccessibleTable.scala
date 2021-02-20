@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -278,99 +279,87 @@ object XAccessibleTable {
   }
   
   @scala.inline
-  implicit class XAccessibleTableOps[Self <: XAccessibleTable] (val x: Self) extends AnyVal {
+  implicit class XAccessibleTableMutableBuilder[Self <: XAccessibleTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleCaption(value: XAccessible): Self = StObject.set(x, "AccessibleCaption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibleColumnCount(value: Double): Self = StObject.set(x, "AccessibleColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibleColumnHeaders(value: XAccessibleTable): Self = StObject.set(x, "AccessibleColumnHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleCaption(value: XAccessible): Self = this.set("AccessibleCaption", value.asInstanceOf[js.Any])
+    def setAccessibleRowCount(value: Double): Self = StObject.set(x, "AccessibleRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleColumnCount(value: Double): Self = this.set("AccessibleColumnCount", value.asInstanceOf[js.Any])
+    def setAccessibleRowHeaders(value: XAccessibleTable): Self = StObject.set(x, "AccessibleRowHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleColumnHeaders(value: XAccessibleTable): Self = this.set("AccessibleColumnHeaders", value.asInstanceOf[js.Any])
+    def setAccessibleSummary(value: XAccessible): Self = StObject.set(x, "AccessibleSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRowCount(value: Double): Self = this.set("AccessibleRowCount", value.asInstanceOf[js.Any])
+    def setGetAccessibleCaption(value: () => XAccessible): Self = StObject.set(x, "getAccessibleCaption", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccessibleRowHeaders(value: XAccessibleTable): Self = this.set("AccessibleRowHeaders", value.asInstanceOf[js.Any])
+    def setGetAccessibleCellAt(value: (Double, Double) => XAccessible): Self = StObject.set(x, "getAccessibleCellAt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAccessibleSummary(value: XAccessible): Self = this.set("AccessibleSummary", value.asInstanceOf[js.Any])
+    def setGetAccessibleColumn(value: Double => Double): Self = StObject.set(x, "getAccessibleColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectedAccessibleColumns(value: SafeArray[Double]): Self = this.set("SelectedAccessibleColumns", value.asInstanceOf[js.Any])
+    def setGetAccessibleColumnCount(value: () => Double): Self = StObject.set(x, "getAccessibleColumnCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSelectedAccessibleRows(value: SafeArray[Double]): Self = this.set("SelectedAccessibleRows", value.asInstanceOf[js.Any])
+    def setGetAccessibleColumnDescription(value: Double => String): Self = StObject.set(x, "getAccessibleColumnDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAccessibleCaption(value: () => XAccessible): Self = this.set("getAccessibleCaption", js.Any.fromFunction0(value))
+    def setGetAccessibleColumnExtentAt(value: (Double, Double) => Double): Self = StObject.set(x, "getAccessibleColumnExtentAt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAccessibleCellAt(value: (Double, Double) => XAccessible): Self = this.set("getAccessibleCellAt", js.Any.fromFunction2(value))
+    def setGetAccessibleColumnHeaders(value: () => XAccessibleTable): Self = StObject.set(x, "getAccessibleColumnHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleColumn(value: Double => Double): Self = this.set("getAccessibleColumn", js.Any.fromFunction1(value))
+    def setGetAccessibleIndex(value: (Double, Double) => Double): Self = StObject.set(x, "getAccessibleIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAccessibleColumnCount(value: () => Double): Self = this.set("getAccessibleColumnCount", js.Any.fromFunction0(value))
+    def setGetAccessibleRow(value: Double => Double): Self = StObject.set(x, "getAccessibleRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAccessibleColumnDescription(value: Double => String): Self = this.set("getAccessibleColumnDescription", js.Any.fromFunction1(value))
+    def setGetAccessibleRowCount(value: () => Double): Self = StObject.set(x, "getAccessibleRowCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleColumnExtentAt(value: (Double, Double) => Double): Self = this.set("getAccessibleColumnExtentAt", js.Any.fromFunction2(value))
+    def setGetAccessibleRowDescription(value: Double => String): Self = StObject.set(x, "getAccessibleRowDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAccessibleColumnHeaders(value: () => XAccessibleTable): Self = this.set("getAccessibleColumnHeaders", js.Any.fromFunction0(value))
+    def setGetAccessibleRowExtentAt(value: (Double, Double) => Double): Self = StObject.set(x, "getAccessibleRowExtentAt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAccessibleIndex(value: (Double, Double) => Double): Self = this.set("getAccessibleIndex", js.Any.fromFunction2(value))
+    def setGetAccessibleRowHeaders(value: () => XAccessibleTable): Self = StObject.set(x, "getAccessibleRowHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleRow(value: Double => Double): Self = this.set("getAccessibleRow", js.Any.fromFunction1(value))
+    def setGetAccessibleSummary(value: () => XAccessible): Self = StObject.set(x, "getAccessibleSummary", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleRowCount(value: () => Double): Self = this.set("getAccessibleRowCount", js.Any.fromFunction0(value))
+    def setGetSelectedAccessibleColumns(value: () => SafeArray[Double]): Self = StObject.set(x, "getSelectedAccessibleColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleRowDescription(value: Double => String): Self = this.set("getAccessibleRowDescription", js.Any.fromFunction1(value))
+    def setGetSelectedAccessibleRows(value: () => SafeArray[Double]): Self = StObject.set(x, "getSelectedAccessibleRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleRowExtentAt(value: (Double, Double) => Double): Self = this.set("getAccessibleRowExtentAt", js.Any.fromFunction2(value))
+    def setIsAccessibleColumnSelected(value: Double => Boolean): Self = StObject.set(x, "isAccessibleColumnSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAccessibleRowHeaders(value: () => XAccessibleTable): Self = this.set("getAccessibleRowHeaders", js.Any.fromFunction0(value))
+    def setIsAccessibleRowSelected(value: Double => Boolean): Self = StObject.set(x, "isAccessibleRowSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAccessibleSummary(value: () => XAccessible): Self = this.set("getAccessibleSummary", js.Any.fromFunction0(value))
+    def setIsAccessibleSelected(value: (Double, Double) => Boolean): Self = StObject.set(x, "isAccessibleSelected", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSelectedAccessibleColumns(value: () => SafeArray[Double]): Self = this.set("getSelectedAccessibleColumns", js.Any.fromFunction0(value))
+    def setSelectedAccessibleColumns(value: SafeArray[Double]): Self = StObject.set(x, "SelectedAccessibleColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSelectedAccessibleRows(value: () => SafeArray[Double]): Self = this.set("getSelectedAccessibleRows", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsAccessibleColumnSelected(value: Double => Boolean): Self = this.set("isAccessibleColumnSelected", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsAccessibleRowSelected(value: Double => Boolean): Self = this.set("isAccessibleRowSelected", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsAccessibleSelected(value: (Double, Double) => Boolean): Self = this.set("isAccessibleSelected", js.Any.fromFunction2(value))
+    def setSelectedAccessibleRows(value: SafeArray[Double]): Self = StObject.set(x, "SelectedAccessibleRows", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,39 +64,27 @@ object WorkItemUpdate {
   }
   
   @scala.inline
-  implicit class WorkItemUpdateOps[Self <: WorkItemUpdate] (val x: Self) extends AnyVal {
+  implicit class WorkItemUpdateMutableBuilder[Self <: WorkItemUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: StringDictionary[WorkItemFieldUpdate]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelations(value: WorkItemRelationUpdates): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: StringDictionary[WorkItemFieldUpdate]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setRev(value: Double): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRevisedBy(value: IdentityReference): Self = StObject.set(x, "revisedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelations(value: WorkItemRelationUpdates): Self = this.set("relations", value.asInstanceOf[js.Any])
+    def setRevisedDate(value: Date): Self = StObject.set(x, "revisedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRev(value: Double): Self = this.set("rev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevisedBy(value: IdentityReference): Self = this.set("revisedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevisedDate(value: Date): Self = this.set("revisedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemId(value: Double): Self = this.set("workItemId", value.asInstanceOf[js.Any])
+    def setWorkItemId(value: Double): Self = StObject.set(x, "workItemId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WeightedBackendService extends js.Object {
+trait WeightedBackendService extends StObject {
   
   /**
     * The full or partial URL to the default BackendService resource. Before forwarding the request to backendService, the loadbalancer applies any relevant headerActions specified as
@@ -38,36 +39,24 @@ object WeightedBackendService {
   }
   
   @scala.inline
-  implicit class WeightedBackendServiceOps[Self <: WeightedBackendService] (val x: Self) extends AnyVal {
+  implicit class WeightedBackendServiceMutableBuilder[Self <: WeightedBackendService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderAction(value: HttpHeaderAction): Self = StObject.set(x, "headerAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackendService(value: String): Self = this.set("backendService", value.asInstanceOf[js.Any])
+    def setHeaderActionUndefined: Self = StObject.set(x, "headerAction", js.undefined)
     
     @scala.inline
-    def deleteBackendService: Self = this.set("backendService", js.undefined)
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderAction(value: HttpHeaderAction): Self = this.set("headerAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderAction: Self = this.set("headerAction", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Shape")
 @js.native
-class Shape () extends js.Object {
+class Shape () extends StObject {
   def this(options: ShapeOptions) = this()
   
   var angle: Double = js.native
@@ -91,25 +92,63 @@ class Shape () extends js.Object {
   def updateBoundingRadius(): Double = js.native
 }
 /* static members */
-@JSImport("p2", "Shape")
-@js.native
-object Shape extends js.Object {
+object Shape {
   
-  var BOX: Double = js.native
+  @JSImport("p2", "Shape")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var CAPSULE: Double = js.native
+  @JSImport("p2", "Shape.BOX")
+  @js.native
+  def BOX: Double = js.native
+  @scala.inline
+  def BOX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOX")(x.asInstanceOf[js.Any])
   
-  var CIRCLE: Double = js.native
+  @JSImport("p2", "Shape.CAPSULE")
+  @js.native
+  def CAPSULE: Double = js.native
+  @scala.inline
+  def CAPSULE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPSULE")(x.asInstanceOf[js.Any])
   
-  var CONVEX: Double = js.native
+  @JSImport("p2", "Shape.CIRCLE")
+  @js.native
+  def CIRCLE: Double = js.native
+  @scala.inline
+  def CIRCLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCLE")(x.asInstanceOf[js.Any])
   
-  var HEIGHTFIELD: Double = js.native
+  @JSImport("p2", "Shape.CONVEX")
+  @js.native
+  def CONVEX: Double = js.native
+  @scala.inline
+  def CONVEX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONVEX")(x.asInstanceOf[js.Any])
   
-  var LINE: Double = js.native
+  @JSImport("p2", "Shape.HEIGHTFIELD")
+  @js.native
+  def HEIGHTFIELD: Double = js.native
+  @scala.inline
+  def HEIGHTFIELD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHTFIELD")(x.asInstanceOf[js.Any])
   
-  var PARTICLE: Double = js.native
+  @JSImport("p2", "Shape.LINE")
+  @js.native
+  def LINE: Double = js.native
+  @scala.inline
+  def LINE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE")(x.asInstanceOf[js.Any])
   
-  var PLANE: Double = js.native
+  @JSImport("p2", "Shape.PARTICLE")
+  @js.native
+  def PARTICLE: Double = js.native
+  @scala.inline
+  def PARTICLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PARTICLE")(x.asInstanceOf[js.Any])
   
-  var idCounter: Double = js.native
+  @JSImport("p2", "Shape.PLANE")
+  @js.native
+  def PLANE: Double = js.native
+  @scala.inline
+  def PLANE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLANE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("p2", "Shape.idCounter")
+  @js.native
+  def idCounter: Double = js.native
+  @scala.inline
+  def idCounter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idCounter")(x.asInstanceOf[js.Any])
 }

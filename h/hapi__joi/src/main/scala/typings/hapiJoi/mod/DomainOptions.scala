@@ -1,12 +1,13 @@
 package typings.hapiJoi.mod
 
 import typings.hapiJoi.hapiJoiBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainOptions extends js.Object {
+trait DomainOptions extends StObject {
   
   /**
     * If `true`, Unicode characters are permitted
@@ -38,36 +39,24 @@ object DomainOptions {
   }
   
   @scala.inline
-  implicit class DomainOptionsOps[Self <: DomainOptions] (val x: Self) extends AnyVal {
+  implicit class DomainOptionsMutableBuilder[Self <: DomainOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUnicodeUndefined: Self = StObject.set(x, "allowUnicode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinDomainSegments(value: Double): Self = StObject.set(x, "minDomainSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUnicode(value: Boolean): Self = this.set("allowUnicode", value.asInstanceOf[js.Any])
+    def setMinDomainSegmentsUndefined: Self = StObject.set(x, "minDomainSegments", js.undefined)
     
     @scala.inline
-    def deleteAllowUnicode: Self = this.set("allowUnicode", js.undefined)
+    def setTlds(value: TopLevelDomainOptions | `false`): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDomainSegments(value: Double): Self = this.set("minDomainSegments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinDomainSegments: Self = this.set("minDomainSegments", js.undefined)
-    
-    @scala.inline
-    def setTlds(value: TopLevelDomainOptions | `false`): Self = this.set("tlds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTlds: Self = this.set("tlds", js.undefined)
+    def setTldsUndefined: Self = StObject.set(x, "tlds", js.undefined)
   }
 }

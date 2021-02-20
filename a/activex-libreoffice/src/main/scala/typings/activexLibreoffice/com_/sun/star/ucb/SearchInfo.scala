@@ -1,13 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** information needed to (recursively) search an object. */
 @js.native
-trait SearchInfo extends js.Object {
+trait SearchInfo extends StObject {
   
   /** the search criteria. */
   var Criteria: SafeArray[SearchCriterium] = js.native
@@ -49,36 +50,24 @@ object SearchInfo {
   }
   
   @scala.inline
-  implicit class SearchInfoOps[Self <: SearchInfo] (val x: Self) extends AnyVal {
+  implicit class SearchInfoMutableBuilder[Self <: SearchInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCriteria(value: SafeArray[SearchCriterium]): Self = StObject.set(x, "Criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFollowIndirections(value: Boolean): Self = StObject.set(x, "FollowIndirections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeBase(value: Boolean): Self = StObject.set(x, "IncludeBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteria(value: SafeArray[SearchCriterium]): Self = this.set("Criteria", value.asInstanceOf[js.Any])
+    def setRecursion(value: SearchRecursion): Self = StObject.set(x, "Recursion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowIndirections(value: Boolean): Self = this.set("FollowIndirections", value.asInstanceOf[js.Any])
+    def setRespectDocViewRestrictions(value: Boolean): Self = StObject.set(x, "RespectDocViewRestrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeBase(value: Boolean): Self = this.set("IncludeBase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecursion(value: SearchRecursion): Self = this.set("Recursion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRespectDocViewRestrictions(value: Boolean): Self = this.set("RespectDocViewRestrictions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRespectFolderViewRestrictions(value: Boolean): Self = this.set("RespectFolderViewRestrictions", value.asInstanceOf[js.Any])
+    def setRespectFolderViewRestrictions(value: Boolean): Self = StObject.set(x, "RespectFolderViewRestrictions", value.asInstanceOf[js.Any])
   }
 }

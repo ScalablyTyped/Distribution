@@ -1,12 +1,13 @@
 package typings.reactBeautifulDnd.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragDropContextProps extends js.Object {
+trait DragDropContextProps extends StObject {
   
   var children: ReactNode | Null = js.native
   
@@ -37,81 +38,69 @@ object DragDropContextProps {
   }
   
   @scala.inline
-  implicit class DragDropContextPropsOps[Self <: DragDropContextProps] (val x: Self) extends AnyVal {
+  implicit class DragDropContextPropsMutableBuilder[Self <: DragDropContextProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenNull: Self = StObject.set(x, "children", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setOnDragEnd(value: (DropResult, ResponderProvided) => Unit): Self = this.set("onDragEnd", js.Any.fromFunction2(value))
+    def setDragHandleUsageInstructions(value: String): Self = StObject.set(x, "dragHandleUsageInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDragHandleUsageInstructionsUndefined: Self = StObject.set(x, "dragHandleUsageInstructions", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setEnableDefaultSensors(value: Boolean): Self = StObject.set(x, "enableDefaultSensors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenNull: Self = this.set("children", null)
+    def setEnableDefaultSensorsUndefined: Self = StObject.set(x, "enableDefaultSensors", js.undefined)
     
     @scala.inline
-    def setDragHandleUsageInstructions(value: String): Self = this.set("dragHandleUsageInstructions", value.asInstanceOf[js.Any])
+    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDragHandleUsageInstructions: Self = this.set("dragHandleUsageInstructions", js.undefined)
+    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     @scala.inline
-    def setEnableDefaultSensors(value: Boolean): Self = this.set("enableDefaultSensors", value.asInstanceOf[js.Any])
+    def setOnBeforeCapture(value: /* before */ BeforeCapture => Unit): Self = StObject.set(x, "onBeforeCapture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEnableDefaultSensors: Self = this.set("enableDefaultSensors", js.undefined)
+    def setOnBeforeCaptureUndefined: Self = StObject.set(x, "onBeforeCapture", js.undefined)
     
     @scala.inline
-    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    def setOnBeforeDragStart(value: /* initial */ DragStart => Unit): Self = StObject.set(x, "onBeforeDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteNonce: Self = this.set("nonce", js.undefined)
+    def setOnBeforeDragStartUndefined: Self = StObject.set(x, "onBeforeDragStart", js.undefined)
     
     @scala.inline
-    def setOnBeforeCapture(value: /* before */ BeforeCapture => Unit): Self = this.set("onBeforeCapture", js.Any.fromFunction1(value))
+    def setOnDragEnd(value: (DropResult, ResponderProvided) => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnBeforeCapture: Self = this.set("onBeforeCapture", js.undefined)
+    def setOnDragStart(value: (/* initial */ DragStart, /* provided */ ResponderProvided) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnBeforeDragStart(value: /* initial */ DragStart => Unit): Self = this.set("onBeforeDragStart", js.Any.fromFunction1(value))
+    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     @scala.inline
-    def deleteOnBeforeDragStart: Self = this.set("onBeforeDragStart", js.undefined)
+    def setOnDragUpdate(value: (/* initial */ DragUpdate, /* provided */ ResponderProvided) => Unit): Self = StObject.set(x, "onDragUpdate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnDragStart(value: (/* initial */ DragStart, /* provided */ ResponderProvided) => Unit): Self = this.set("onDragStart", js.Any.fromFunction2(value))
+    def setOnDragUpdateUndefined: Self = StObject.set(x, "onDragUpdate", js.undefined)
     
     @scala.inline
-    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    def setSensors(value: js.Array[Sensor]): Self = StObject.set(x, "sensors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDragUpdate(value: (/* initial */ DragUpdate, /* provided */ ResponderProvided) => Unit): Self = this.set("onDragUpdate", js.Any.fromFunction2(value))
+    def setSensorsUndefined: Self = StObject.set(x, "sensors", js.undefined)
     
     @scala.inline
-    def deleteOnDragUpdate: Self = this.set("onDragUpdate", js.undefined)
-    
-    @scala.inline
-    def setSensorsVarargs(value: Sensor*): Self = this.set("sensors", js.Array(value :_*))
-    
-    @scala.inline
-    def setSensors(value: js.Array[Sensor]): Self = this.set("sensors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSensors: Self = this.set("sensors", js.undefined)
+    def setSensorsVarargs(value: Sensor*): Self = StObject.set(x, "sensors", js.Array(value :_*))
   }
 }

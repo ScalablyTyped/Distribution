@@ -2,12 +2,13 @@ package typings.openlayers.mod.olx
 
 import typings.openlayers.mod.Coordinate_
 import typings.openlayers.mod.proj.Projection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewState extends js.Object {
+trait ViewState extends StObject {
   
   var center: Coordinate_ = js.native
   
@@ -26,30 +27,18 @@ object ViewState {
   }
   
   @scala.inline
-  implicit class ViewStateOps[Self <: ViewState] (val x: Self) extends AnyVal {
+  implicit class ViewStateMutableBuilder[Self <: ViewState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Coordinate_): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: Coordinate_): Self = this.set("center", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjection(value: Projection): Self = this.set("projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
   }
 }

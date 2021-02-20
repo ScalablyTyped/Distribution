@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the USB control transfer, the type of control request, whether the data is sent from or to the host, and the recipient of the request in the device. */
 @js.native
-trait UsbControlRequestType extends js.Object {
+trait UsbControlRequestType extends StObject {
   
   /** Gets or sets the bmRequestType value as a byte. */
   var asByte: Double = js.native
@@ -34,30 +35,18 @@ object UsbControlRequestType {
   }
   
   @scala.inline
-  implicit class UsbControlRequestTypeOps[Self <: UsbControlRequestType] (val x: Self) extends AnyVal {
+  implicit class UsbControlRequestTypeMutableBuilder[Self <: UsbControlRequestType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsByte(value: Double): Self = StObject.set(x, "asByte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlTransferType(value: UsbControlTransferType): Self = StObject.set(x, "controlTransferType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: UsbTransferDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsByte(value: Double): Self = this.set("asByte", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setControlTransferType(value: UsbControlTransferType): Self = this.set("controlTransferType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDirection(value: UsbTransferDirection): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecipient(value: UsbControlRecipient): Self = this.set("recipient", value.asInstanceOf[js.Any])
+    def setRecipient(value: UsbControlRecipient): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
   }
 }

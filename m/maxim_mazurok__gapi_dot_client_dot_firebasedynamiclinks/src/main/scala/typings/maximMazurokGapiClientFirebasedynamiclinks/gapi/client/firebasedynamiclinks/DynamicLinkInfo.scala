@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebasedynamiclinks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamicLinkInfo extends js.Object {
+trait DynamicLinkInfo extends StObject {
   
   /** Parameters used for tracking. See all tracking parameters in the [documentation](https://firebase.google.com/docs/dynamic-links/create-manually). */
   var analyticsInfo: js.UndefOr[AnalyticsInfo] = js.native
@@ -52,72 +53,60 @@ object DynamicLinkInfo {
   }
   
   @scala.inline
-  implicit class DynamicLinkInfoOps[Self <: DynamicLinkInfo] (val x: Self) extends AnyVal {
+  implicit class DynamicLinkInfoMutableBuilder[Self <: DynamicLinkInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyticsInfo(value: AnalyticsInfo): Self = StObject.set(x, "analyticsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyticsInfoUndefined: Self = StObject.set(x, "analyticsInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidInfo(value: AndroidInfo): Self = StObject.set(x, "androidInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyticsInfo(value: AnalyticsInfo): Self = this.set("analyticsInfo", value.asInstanceOf[js.Any])
+    def setAndroidInfoUndefined: Self = StObject.set(x, "androidInfo", js.undefined)
     
     @scala.inline
-    def deleteAnalyticsInfo: Self = this.set("analyticsInfo", js.undefined)
+    def setDesktopInfo(value: DesktopInfo): Self = StObject.set(x, "desktopInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidInfo(value: AndroidInfo): Self = this.set("androidInfo", value.asInstanceOf[js.Any])
+    def setDesktopInfoUndefined: Self = StObject.set(x, "desktopInfo", js.undefined)
     
     @scala.inline
-    def deleteAndroidInfo: Self = this.set("androidInfo", js.undefined)
+    def setDomainUriPrefix(value: String): Self = StObject.set(x, "domainUriPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesktopInfo(value: DesktopInfo): Self = this.set("desktopInfo", value.asInstanceOf[js.Any])
+    def setDomainUriPrefixUndefined: Self = StObject.set(x, "domainUriPrefix", js.undefined)
     
     @scala.inline
-    def deleteDesktopInfo: Self = this.set("desktopInfo", js.undefined)
+    def setDynamicLinkDomain(value: String): Self = StObject.set(x, "dynamicLinkDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainUriPrefix(value: String): Self = this.set("domainUriPrefix", value.asInstanceOf[js.Any])
+    def setDynamicLinkDomainUndefined: Self = StObject.set(x, "dynamicLinkDomain", js.undefined)
     
     @scala.inline
-    def deleteDomainUriPrefix: Self = this.set("domainUriPrefix", js.undefined)
+    def setIosInfo(value: IosInfo): Self = StObject.set(x, "iosInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicLinkDomain(value: String): Self = this.set("dynamicLinkDomain", value.asInstanceOf[js.Any])
+    def setIosInfoUndefined: Self = StObject.set(x, "iosInfo", js.undefined)
     
     @scala.inline
-    def deleteDynamicLinkDomain: Self = this.set("dynamicLinkDomain", js.undefined)
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosInfo(value: IosInfo): Self = this.set("iosInfo", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteIosInfo: Self = this.set("iosInfo", js.undefined)
+    def setNavigationInfo(value: NavigationInfo): Self = StObject.set(x, "navigationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setNavigationInfoUndefined: Self = StObject.set(x, "navigationInfo", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setSocialMetaTagInfo(value: SocialMetaTagInfo): Self = StObject.set(x, "socialMetaTagInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationInfo(value: NavigationInfo): Self = this.set("navigationInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNavigationInfo: Self = this.set("navigationInfo", js.undefined)
-    
-    @scala.inline
-    def setSocialMetaTagInfo(value: SocialMetaTagInfo): Self = this.set("socialMetaTagInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocialMetaTagInfo: Self = this.set("socialMetaTagInfo", js.undefined)
+    def setSocialMetaTagInfoUndefined: Self = StObject.set(x, "socialMetaTagInfo", js.undefined)
   }
 }

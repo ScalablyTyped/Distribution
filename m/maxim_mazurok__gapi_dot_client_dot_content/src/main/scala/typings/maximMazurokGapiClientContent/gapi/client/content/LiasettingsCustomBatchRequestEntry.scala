@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LiasettingsCustomBatchRequestEntry extends js.Object {
+trait LiasettingsCustomBatchRequestEntry extends StObject {
   
   /** The ID of the account for which to get/update account LIA settings. */
   var accountId: js.UndefOr[String] = js.native
@@ -52,84 +53,72 @@ object LiasettingsCustomBatchRequestEntry {
   }
   
   @scala.inline
-  implicit class LiasettingsCustomBatchRequestEntryOps[Self <: LiasettingsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+  implicit class LiasettingsCustomBatchRequestEntryMutableBuilder[Self <: LiasettingsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
     
     @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    def setContactName(value: String): Self = StObject.set(x, "contactName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactEmail(value: String): Self = this.set("contactEmail", value.asInstanceOf[js.Any])
+    def setContactNameUndefined: Self = StObject.set(x, "contactName", js.undefined)
     
     @scala.inline
-    def deleteContactEmail: Self = this.set("contactEmail", js.undefined)
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactName(value: String): Self = this.set("contactName", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteContactName: Self = this.set("contactName", js.undefined)
+    def setGmbEmail(value: String): Self = StObject.set(x, "gmbEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setGmbEmailUndefined: Self = StObject.set(x, "gmbEmail", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setLiaSettings(value: LiaSettings): Self = StObject.set(x, "liaSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGmbEmail(value: String): Self = this.set("gmbEmail", value.asInstanceOf[js.Any])
+    def setLiaSettingsUndefined: Self = StObject.set(x, "liaSettings", js.undefined)
     
     @scala.inline
-    def deleteGmbEmail: Self = this.set("gmbEmail", js.undefined)
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiaSettings(value: LiaSettings): Self = this.set("liaSettings", value.asInstanceOf[js.Any])
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     @scala.inline
-    def deleteLiaSettings: Self = this.set("liaSettings", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    def setPosDataProviderId(value: String): Self = StObject.set(x, "posDataProviderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setPosDataProviderIdUndefined: Self = StObject.set(x, "posDataProviderId", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setPosExternalAccountId(value: String): Self = StObject.set(x, "posExternalAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosDataProviderId(value: String): Self = this.set("posDataProviderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosDataProviderId: Self = this.set("posDataProviderId", js.undefined)
-    
-    @scala.inline
-    def setPosExternalAccountId(value: String): Self = this.set("posExternalAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosExternalAccountId: Self = this.set("posExternalAccountId", js.undefined)
+    def setPosExternalAccountIdUndefined: Self = StObject.set(x, "posExternalAccountId", js.undefined)
   }
 }

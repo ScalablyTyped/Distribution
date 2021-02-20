@@ -1,13 +1,14 @@
 package typings.pickadate.Pickadate
 
 import typings.pickadate.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // options shared between date and time pickers
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /**
     * Set the clear button text.
@@ -104,120 +105,108 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloseOnClear(value: Boolean): Self = StObject.set(x, "closeOnClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: String): Self = this.set("clear", value.asInstanceOf[js.Any])
+    def setCloseOnClearUndefined: Self = StObject.set(x, "closeOnClear", js.undefined)
     
     @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnClear(value: Boolean): Self = this.set("closeOnClear", value.asInstanceOf[js.Any])
+    def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
     
     @scala.inline
-    def deleteCloseOnClear: Self = this.set("closeOnClear", js.undefined)
+    def setContainer(value: String | JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnSelect(value: Boolean): Self = this.set("closeOnSelect", value.asInstanceOf[js.Any])
+    def setContainerHidden(value: String): Self = StObject.set(x, "containerHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseOnSelect: Self = this.set("closeOnSelect", js.undefined)
+    def setContainerHiddenUndefined: Self = StObject.set(x, "containerHidden", js.undefined)
     
     @scala.inline
-    def setContainer(value: String | JQuery): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerHidden(value: String): Self = this.set("containerHidden", value.asInstanceOf[js.Any])
+    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     @scala.inline
-    def deleteContainerHidden: Self = this.set("containerHidden", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setFormatSubmit(value: String): Self = StObject.set(x, "formatSubmit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEditable: Self = this.set("editable", js.undefined)
+    def setFormatSubmitUndefined: Self = StObject.set(x, "formatSubmit", js.undefined)
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setHiddenName(value: Boolean): Self = StObject.set(x, "hiddenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatSubmit(value: String): Self = this.set("formatSubmit", value.asInstanceOf[js.Any])
+    def setHiddenNameUndefined: Self = StObject.set(x, "hiddenName", js.undefined)
     
     @scala.inline
-    def deleteFormatSubmit: Self = this.set("formatSubmit", js.undefined)
+    def setHiddenPrefix(value: String): Self = StObject.set(x, "hiddenPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenName(value: Boolean): Self = this.set("hiddenName", value.asInstanceOf[js.Any])
+    def setHiddenPrefixUndefined: Self = StObject.set(x, "hiddenPrefix", js.undefined)
     
     @scala.inline
-    def deleteHiddenName: Self = this.set("hiddenName", js.undefined)
+    def setHiddenSuffix(value: String): Self = StObject.set(x, "hiddenSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenPrefix(value: String): Self = this.set("hiddenPrefix", value.asInstanceOf[js.Any])
+    def setHiddenSuffixUndefined: Self = StObject.set(x, "hiddenSuffix", js.undefined)
     
     @scala.inline
-    def deleteHiddenPrefix: Self = this.set("hiddenPrefix", js.undefined)
+    def setOnClose(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHiddenSuffix(value: String): Self = this.set("hiddenSuffix", value.asInstanceOf[js.Any])
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteHiddenSuffix: Self = this.set("hiddenSuffix", js.undefined)
+    def setOnOpen(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClose(value: /* event */ js.Any => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
+    def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOnRender(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnOpen(value: /* event */ js.Any => Unit): Self = this.set("onOpen", js.Any.fromFunction1(value))
+    def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
     @scala.inline
-    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    def setOnSet(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRender(value: /* event */ js.Any => Unit): Self = this.set("onRender", js.Any.fromFunction1(value))
+    def setOnSetUndefined: Self = StObject.set(x, "onSet", js.undefined)
     
     @scala.inline
-    def deleteOnRender: Self = this.set("onRender", js.undefined)
+    def setOnStart(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSet(value: /* event */ js.Any => Unit): Self = this.set("onSet", js.Any.fromFunction1(value))
+    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     
     @scala.inline
-    def deleteOnSet: Self = this.set("onSet", js.undefined)
+    def setOnStop(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnStart(value: /* event */ js.Any => Unit): Self = this.set("onStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnStart: Self = this.set("onStart", js.undefined)
-    
-    @scala.inline
-    def setOnStop(value: /* event */ js.Any => Unit): Self = this.set("onStop", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnStop: Self = this.set("onStop", js.undefined)
+    def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
   }
 }

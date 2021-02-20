@@ -1,5 +1,6 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,78 +153,66 @@ object MarkerClusterer {
   }
   
   @scala.inline
-  implicit class MarkerClustererOps[Self <: MarkerClusterer] (val x: Self) extends AnyVal {
+  implicit class MarkerClustererMutableBuilder[Self <: MarkerClusterer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddMarker(value: Marker => Unit): Self = StObject.set(x, "addMarker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddMarkers(value: js.Array[Marker] => Unit): Self = StObject.set(x, "addMarkers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearMarkers(value: () => Unit): Self = StObject.set(x, "clearMarkers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddMarker(value: Marker => Unit): Self = this.set("addMarker", js.Any.fromFunction1(value))
+    def setGetClustersCount(value: () => Double): Self = StObject.set(x, "getClustersCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddMarkers(value: js.Array[Marker] => Unit): Self = this.set("addMarkers", js.Any.fromFunction1(value))
+    def setGetGridSize(value: () => Double): Self = StObject.set(x, "getGridSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearMarkers(value: () => Unit): Self = this.set("clearMarkers", js.Any.fromFunction0(value))
+    def setGetMap(value: () => Map): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClustersCount(value: () => Double): Self = this.set("getClustersCount", js.Any.fromFunction0(value))
+    def setGetMarkers(value: () => js.Array[Marker]): Self = StObject.set(x, "getMarkers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGridSize(value: () => Double): Self = this.set("getGridSize", js.Any.fromFunction0(value))
+    def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMap(value: () => Map): Self = this.set("getMap", js.Any.fromFunction0(value))
+    def setGetMinClusterSize(value: () => Double): Self = StObject.set(x, "getMinClusterSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMarkers(value: () => js.Array[Marker]): Self = this.set("getMarkers", js.Any.fromFunction0(value))
+    def setGetStyles(value: () => js.Array[_]): Self = StObject.set(x, "getStyles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxZoom(value: () => Double): Self = this.set("getMaxZoom", js.Any.fromFunction0(value))
+    def setIsAverageCenter(value: () => Boolean): Self = StObject.set(x, "isAverageCenter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMinClusterSize(value: () => Double): Self = this.set("getMinClusterSize", js.Any.fromFunction0(value))
+    def setRemoveMarker(value: Marker => Unit): Self = StObject.set(x, "removeMarker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStyles(value: () => js.Array[_]): Self = this.set("getStyles", js.Any.fromFunction0(value))
+    def setRemoveMarkers(value: js.Array[Marker] => Unit): Self = StObject.set(x, "removeMarkers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsAverageCenter(value: () => Boolean): Self = this.set("isAverageCenter", js.Any.fromFunction0(value))
+    def setSetAverageCenter(value: Boolean => Unit): Self = StObject.set(x, "setAverageCenter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveMarker(value: Marker => Unit): Self = this.set("removeMarker", js.Any.fromFunction1(value))
+    def setSetGridSize(value: Double => Unit): Self = StObject.set(x, "setGridSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveMarkers(value: js.Array[Marker] => Unit): Self = this.set("removeMarkers", js.Any.fromFunction1(value))
+    def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAverageCenter(value: Boolean => Unit): Self = this.set("setAverageCenter", js.Any.fromFunction1(value))
+    def setSetMarkers(value: js.Array[Marker] => Unit): Self = StObject.set(x, "setMarkers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetGridSize(value: Double => Unit): Self = this.set("setGridSize", js.Any.fromFunction1(value))
+    def setSetMaxZoom(value: Double => Unit): Self = StObject.set(x, "setMaxZoom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMap(value: Map => Unit): Self = this.set("setMap", js.Any.fromFunction1(value))
+    def setSetMinClusterSize(value: Double => Unit): Self = StObject.set(x, "setMinClusterSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMarkers(value: js.Array[Marker] => Unit): Self = this.set("setMarkers", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMaxZoom(value: Double => Unit): Self = this.set("setMaxZoom", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMinClusterSize(value: Double => Unit): Self = this.set("setMinClusterSize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStyles(value: js.Array[_] => Unit): Self = this.set("setStyles", js.Any.fromFunction1(value))
+    def setSetStyles(value: js.Array[_] => Unit): Self = StObject.set(x, "setStyles", js.Any.fromFunction1(value))
   }
 }

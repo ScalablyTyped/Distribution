@@ -3,16 +3,16 @@ package typings.agGrid
 import typings.agGrid.anon.ColId
 import typings.agGrid.columnMod.Column
 import typings.agGrid.eventsMod.ColumnEventType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/sortController", JSImport.Namespace)
-@js.native
-object sortControllerMod extends js.Object {
+object sortControllerMod {
   
+  @JSImport("ag-grid/dist/lib/sortController", "SortController")
   @js.native
-  class SortController () extends js.Object {
+  class SortController () extends StObject {
     
     /* private */ def clearSortBarThisColumn(columnToSkip: js.Any, source: js.Any): js.Any = js.native
     
@@ -50,9 +50,16 @@ object sortControllerMod extends js.Object {
     def setSortModel(sortModel: js.Any, source: ColumnEventType): Unit = js.native
   }
   /* static members */
-  @js.native
-  object SortController extends js.Object {
+  object SortController {
     
-    var DEFAULT_SORTING_ORDER: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/sortController", "SortController")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ag-grid/dist/lib/sortController", "SortController.DEFAULT_SORTING_ORDER")
+    @js.native
+    def DEFAULT_SORTING_ORDER: js.Any = js.native
+    @scala.inline
+    def DEFAULT_SORTING_ORDER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SORTING_ORDER")(x.asInstanceOf[js.Any])
   }
 }

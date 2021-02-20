@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("go", "Iterable")
 @js.native
-class Iterable[T] () extends js.Object {
+class Iterable[T] () extends StObject {
   
   /*This is an interface and thus does not have a constructor.*/
   /**Gets an Iterator that can iterate over the items in the collection.*/

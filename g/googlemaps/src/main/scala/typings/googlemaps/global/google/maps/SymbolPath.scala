@@ -1,5 +1,6 @@
 package typings.googlemaps.global.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("google.maps.SymbolPath")
 @js.native
-object SymbolPath extends js.Object {
+object SymbolPath extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.googlemaps.google.maps.SymbolPath with Double] = js.native

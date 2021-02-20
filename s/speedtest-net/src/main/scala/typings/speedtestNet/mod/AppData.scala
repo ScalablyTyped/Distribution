@@ -1,12 +1,13 @@
 package typings.speedtestNet.mod
 
 import typings.speedtestNet.anon.Message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppData extends js.Object {
+trait AppData extends StObject {
   
   var ispName: String = js.native
   
@@ -36,36 +37,24 @@ object AppData {
   }
   
   @scala.inline
-  implicit class AppDataOps[Self <: AppData] (val x: Self) extends AnyVal {
+  implicit class AppDataMutableBuilder[Self <: AppData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIspName(value: String): Self = StObject.set(x, "ispName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLicense(value: Message): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLicenseKey(value: String): Self = StObject.set(x, "licenseKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIspName(value: String): Self = this.set("ispName", value.asInstanceOf[js.Any])
+    def setResultFormat(value: String): Self = StObject.set(x, "resultFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicense(value: Message): Self = this.set("license", value.asInstanceOf[js.Any])
+    def setSaveTestResultUrl(value: String): Self = StObject.set(x, "saveTestResultUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseKey(value: String): Self = this.set("licenseKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultFormat(value: String): Self = this.set("resultFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaveTestResultUrl(value: String): Self = this.set("saveTestResultUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTraceLevel(value: Double): Self = this.set("traceLevel", value.asInstanceOf[js.Any])
+    def setTraceLevel(value: Double): Self = StObject.set(x, "traceLevel", value.asInstanceOf[js.Any])
   }
 }

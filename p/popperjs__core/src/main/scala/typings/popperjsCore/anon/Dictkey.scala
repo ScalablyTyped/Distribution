@@ -3,6 +3,7 @@ package typings.popperjsCore.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.popperjsCore.typesMod.OffsetData
 import typings.popperjsCore.typesMod.Offsets
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,48 +31,36 @@ object Dictkey {
   }
   
   @scala.inline
-  implicit class DictkeyOps[Self <: Dictkey] (val x: Self) extends AnyVal {
+  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrow(value: CenterOffset): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHide(value: HasPopperEscaped): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrow(value: CenterOffset): Self = this.set("arrow", value.asInstanceOf[js.Any])
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteArrow: Self = this.set("arrow", js.undefined)
+    def setOffset(value: OffsetData): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: HasPopperEscaped): Self = this.set("hide", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setPopperOffsets(value: Offsets): Self = StObject.set(x, "popperOffsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: OffsetData): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPopperOffsetsUndefined: Self = StObject.set(x, "popperOffsets", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setPreventOverflow(value: Offsets): Self = StObject.set(x, "preventOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopperOffsets(value: Offsets): Self = this.set("popperOffsets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePopperOffsets: Self = this.set("popperOffsets", js.undefined)
-    
-    @scala.inline
-    def setPreventOverflow(value: Offsets): Self = this.set("preventOverflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreventOverflow: Self = this.set("preventOverflow", js.undefined)
+    def setPreventOverflowUndefined: Self = StObject.set(x, "preventOverflow", js.undefined)
   }
 }

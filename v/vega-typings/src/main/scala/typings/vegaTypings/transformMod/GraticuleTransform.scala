@@ -3,6 +3,7 @@ package typings.vegaTypings.transformMod
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.graticule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,69 +39,57 @@ object GraticuleTransform {
   }
   
   @scala.inline
-  implicit class GraticuleTransformOps[Self <: GraticuleTransform] (val x: Self) extends AnyVal {
+  implicit class GraticuleTransformMutableBuilder[Self <: GraticuleTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtent(value: (Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtentMajor(value: (Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef): Self = StObject.set(x, "extentMajor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtentMajorUndefined: Self = StObject.set(x, "extentMajor", js.undefined)
     
     @scala.inline
-    def setType(value: graticule): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setExtentMinor(value: (Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef): Self = StObject.set(x, "extentMinor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtent(value: (Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setExtentMinorUndefined: Self = StObject.set(x, "extentMinor", js.undefined)
     
     @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def setExtentMajor(value: (Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef): Self = this.set("extentMajor", value.asInstanceOf[js.Any])
+    def setPrecision(value: Double | SignalRef): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtentMajor: Self = this.set("extentMajor", js.undefined)
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def setExtentMinor(value: (Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef): Self = this.set("extentMinor", value.asInstanceOf[js.Any])
+    def setSignal(value: SignalName): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtentMinor: Self = this.set("extentMinor", js.undefined)
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def setPrecision(value: Double | SignalRef): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setStep(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setStepMajor(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "stepMajor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignal(value: SignalName): Self = this.set("signal", value.asInstanceOf[js.Any])
+    def setStepMajorUndefined: Self = StObject.set(x, "stepMajor", js.undefined)
     
     @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setStepMinor(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "stepMinor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStepMinorUndefined: Self = StObject.set(x, "stepMinor", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def setStepMajor(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("stepMajor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepMajor: Self = this.set("stepMajor", js.undefined)
-    
-    @scala.inline
-    def setStepMinor(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("stepMinor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepMinor: Self = this.set("stepMinor", js.undefined)
+    def setType(value: graticule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectAttributeRange extends js.Object {
+trait ObjectAttributeRange extends StObject {
   
   /**
     * The key of the attribute that the attribute range covers.
@@ -26,30 +27,18 @@ object ObjectAttributeRange {
   }
   
   @scala.inline
-  implicit class ObjectAttributeRangeOps[Self <: ObjectAttributeRange] (val x: Self) extends AnyVal {
+  implicit class ObjectAttributeRangeMutableBuilder[Self <: ObjectAttributeRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeKey(value: AttributeKey): Self = StObject.set(x, "AttributeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeKeyUndefined: Self = StObject.set(x, "AttributeKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRange(value: TypedAttributeValueRange): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeKey(value: AttributeKey): Self = this.set("AttributeKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeKey: Self = this.set("AttributeKey", js.undefined)
-    
-    @scala.inline
-    def setRange(value: TypedAttributeValueRange): Self = this.set("Range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("Range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "Range", js.undefined)
   }
 }

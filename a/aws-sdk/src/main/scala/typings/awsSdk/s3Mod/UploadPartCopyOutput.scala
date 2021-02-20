@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadPartCopyOutput extends js.Object {
+trait UploadPartCopyOutput extends StObject {
   
   /**
     * Container for all response elements.
@@ -48,60 +49,48 @@ object UploadPartCopyOutput {
   }
   
   @scala.inline
-  implicit class UploadPartCopyOutputOps[Self <: UploadPartCopyOutput] (val x: Self) extends AnyVal {
+  implicit class UploadPartCopyOutputMutableBuilder[Self <: UploadPartCopyOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyPartResult(value: CopyPartResult): Self = StObject.set(x, "CopyPartResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyPartResultUndefined: Self = StObject.set(x, "CopyPartResult", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopySourceVersionId(value: CopySourceVersionId): Self = StObject.set(x, "CopySourceVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyPartResult(value: CopyPartResult): Self = this.set("CopyPartResult", value.asInstanceOf[js.Any])
+    def setCopySourceVersionIdUndefined: Self = StObject.set(x, "CopySourceVersionId", js.undefined)
     
     @scala.inline
-    def deleteCopyPartResult: Self = this.set("CopyPartResult", js.undefined)
+    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopySourceVersionId(value: CopySourceVersionId): Self = this.set("CopySourceVersionId", value.asInstanceOf[js.Any])
+    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
     
     @scala.inline
-    def deleteCopySourceVersionId: Self = this.set("CopySourceVersionId", js.undefined)
+    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = this.set("RequestCharged", value.asInstanceOf[js.Any])
+    def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteRequestCharged: Self = this.set("RequestCharged", js.undefined)
+    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = this.set("SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
     
     @scala.inline
-    def deleteSSECustomerAlgorithm: Self = this.set("SSECustomerAlgorithm", js.undefined)
+    def setSSEKMSKeyId(value: SSEKMSKeyId): Self = StObject.set(x, "SSEKMSKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = this.set("SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+    def setSSEKMSKeyIdUndefined: Self = StObject.set(x, "SSEKMSKeyId", js.undefined)
     
     @scala.inline
-    def deleteSSECustomerKeyMD5: Self = this.set("SSECustomerKeyMD5", js.undefined)
+    def setServerSideEncryption(value: ServerSideEncryption): Self = StObject.set(x, "ServerSideEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSEKMSKeyId(value: SSEKMSKeyId): Self = this.set("SSEKMSKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSSEKMSKeyId: Self = this.set("SSEKMSKeyId", js.undefined)
-    
-    @scala.inline
-    def setServerSideEncryption(value: ServerSideEncryption): Self = this.set("ServerSideEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerSideEncryption: Self = this.set("ServerSideEncryption", js.undefined)
+    def setServerSideEncryptionUndefined: Self = StObject.set(x, "ServerSideEncryption", js.undefined)
   }
 }

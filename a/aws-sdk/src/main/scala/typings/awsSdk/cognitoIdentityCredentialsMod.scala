@@ -5,18 +5,23 @@ import typings.awsSdk.cognitoIdentityCredentialsMod.CognitoIdentityCredentials.C
 import typings.awsSdk.cognitoidentityMod.GetCredentialsForIdentityResponse
 import typings.awsSdk.cognitoidentityMod.GetIdInput
 import typings.awsSdk.cognitoidentityMod.GetOpenIdTokenInput
+import typings.awsSdk.cognitoidentityMod.IdentityId
+import typings.awsSdk.cognitoidentityMod.IdentityPoolId
 import typings.awsSdk.configBaseMod.ConfigurationOptions
 import typings.awsSdk.credentialsMod.Credentials
 import typings.awsSdk.stsMod.AssumeRoleWithWebIdentityRequest
 import typings.awsSdk.stsMod.AssumeRoleWithWebIdentityResponse
+import typings.awsSdk.stsMod.arnType
+import typings.awsSdk.stsMod.clientTokenType
+import typings.awsSdk.stsMod.roleSessionNameType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws-sdk/lib/credentials/cognito_identity_credentials", JSImport.Namespace)
-@js.native
-object cognitoIdentityCredentialsMod extends js.Object {
+object cognitoIdentityCredentialsMod {
   
+  @JSImport("aws-sdk/lib/credentials/cognito_identity_credentials", "CognitoIdentityCredentials")
   @js.native
   /**
     * Creates a new credentials object.
@@ -49,8 +54,9 @@ object cognitoIdentityCredentialsMod extends js.Object {
     var params: GetIdInput | GetOpenIdTokenInput | AssumeRoleWithWebIdentityRequest = js.native
   }
   // Needed to expose interfaces on the class
-  @js.native
-  object CognitoIdentityCredentials extends js.Object {
+  object CognitoIdentityCredentials {
+    
+    type ClientConfiguration = ConfigurationOptions
     
     /* Rewritten from type alias, can be one of: 
       - typings.awsSdk.cognitoidentityMod.GetIdInput
@@ -58,9 +64,33 @@ object cognitoIdentityCredentialsMod extends js.Object {
       - typings.awsSdk.cognitoidentityMod.GetOpenIdTokenInput
       - typings.awsSdk.stsMod.AssumeRoleWithWebIdentityRequest
     */
-    trait CognitoIdentityCredentialsInputs extends js.Object
-    
-    type ClientConfiguration = ConfigurationOptions
+    trait CognitoIdentityCredentialsInputs extends StObject
+    object CognitoIdentityCredentialsInputs {
+      
+      @scala.inline
+      def AssumeRoleWithWebIdentityRequest(RoleArn: arnType, RoleSessionName: roleSessionNameType, WebIdentityToken: clientTokenType): typings.awsSdk.stsMod.AssumeRoleWithWebIdentityRequest = {
+        val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], RoleSessionName = RoleSessionName.asInstanceOf[js.Any], WebIdentityToken = WebIdentityToken.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.awsSdk.stsMod.AssumeRoleWithWebIdentityRequest]
+      }
+      
+      @scala.inline
+      def GetCredentialsForIdentityInput(IdentityId: IdentityId): typings.awsSdk.cognitoidentityMod.GetCredentialsForIdentityInput = {
+        val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.awsSdk.cognitoidentityMod.GetCredentialsForIdentityInput]
+      }
+      
+      @scala.inline
+      def GetIdInput(IdentityPoolId: IdentityPoolId): typings.awsSdk.cognitoidentityMod.GetIdInput = {
+        val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.awsSdk.cognitoidentityMod.GetIdInput]
+      }
+      
+      @scala.inline
+      def GetOpenIdTokenInput(IdentityId: IdentityId): typings.awsSdk.cognitoidentityMod.GetOpenIdTokenInput = {
+        val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.awsSdk.cognitoidentityMod.GetOpenIdTokenInput]
+      }
+    }
     
     type CognitoIdentityOptions = CognitoIdentityCredentialsInputs with LoginId
   }

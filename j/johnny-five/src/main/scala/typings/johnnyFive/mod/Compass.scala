@@ -3,13 +3,14 @@ package typings.johnnyFive.mod
 import typings.johnnyFive.anon.Abbr
 import typings.johnnyFive.johnnyFiveStrings.change
 import typings.johnnyFive.johnnyFiveStrings.data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Compass")
 @js.native
-class Compass protected () extends js.Object {
+class Compass protected () extends StObject {
   def this(option: CompassOption) = this()
   
   val bearing: Abbr = js.native

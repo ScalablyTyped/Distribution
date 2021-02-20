@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information on the transferred socket from the Socket Broker. */
 @js.native
-trait SocketActivityInformation extends js.Object {
+trait SocketActivityInformation extends StObject {
   
   /** Get the context associated while transferring ownership of the socket. */
   var context: SocketActivityContext = js.native
@@ -46,39 +47,27 @@ object SocketActivityInformation {
   }
   
   @scala.inline
-  implicit class SocketActivityInformationOps[Self <: SocketActivityInformation] (val x: Self) extends AnyVal {
+  implicit class SocketActivityInformationMutableBuilder[Self <: SocketActivityInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: SocketActivityContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatagramSocket(value: DatagramSocket): Self = StObject.set(x, "datagramSocket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: SocketActivityContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setSocketKind(value: SocketActivityKind): Self = StObject.set(x, "socketKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatagramSocket(value: DatagramSocket): Self = this.set("datagramSocket", value.asInstanceOf[js.Any])
+    def setStreamSocket(value: StreamSocket): Self = StObject.set(x, "streamSocket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setStreamSocketListener(value: StreamSocketListener): Self = StObject.set(x, "streamSocketListener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocketKind(value: SocketActivityKind): Self = this.set("socketKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreamSocket(value: StreamSocket): Self = this.set("streamSocket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreamSocketListener(value: StreamSocketListener): Self = this.set("streamSocketListener", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskId(value: String): Self = this.set("taskId", value.asInstanceOf[js.Any])
+    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

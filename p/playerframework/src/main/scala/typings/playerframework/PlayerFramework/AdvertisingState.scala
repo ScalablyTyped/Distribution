@@ -1,15 +1,16 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AdvertisingState extends js.Object
+sealed trait AdvertisingState extends StObject
 // Enumerations
 @JSGlobal("PlayerFramework.AdvertisingState")
 @js.native
-object AdvertisingState extends js.Object {
+object AdvertisingState extends StObject {
   
   /**
     * A linear ad is playing.

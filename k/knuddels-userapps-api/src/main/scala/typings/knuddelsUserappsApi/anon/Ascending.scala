@@ -1,12 +1,13 @@
 package typings.knuddelsUserappsApi.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ascending extends js.Object {
+trait Ascending extends StObject {
   
   var ascending: js.UndefOr[Boolean] = js.native
   
@@ -23,36 +24,24 @@ object Ascending {
   }
   
   @scala.inline
-  implicit class AscendingOps[Self <: Ascending] (val x: Self) extends AnyVal {
+  implicit class AscendingMutableBuilder[Self <: Ascending] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelMapping(value: StringDictionary[String]): Self = StObject.set(x, "labelMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscending(value: Boolean): Self = this.set("ascending", value.asInstanceOf[js.Any])
+    def setLabelMappingUndefined: Self = StObject.set(x, "labelMapping", js.undefined)
     
     @scala.inline
-    def deleteAscending: Self = this.set("ascending", js.undefined)
+    def setSortIndex(value: Double): Self = StObject.set(x, "sortIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMapping(value: StringDictionary[String]): Self = this.set("labelMapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelMapping: Self = this.set("labelMapping", js.undefined)
-    
-    @scala.inline
-    def setSortIndex(value: Double): Self = this.set("sortIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortIndex: Self = this.set("sortIndex", js.undefined)
+    def setSortIndexUndefined: Self = StObject.set(x, "sortIndex", js.undefined)
   }
 }

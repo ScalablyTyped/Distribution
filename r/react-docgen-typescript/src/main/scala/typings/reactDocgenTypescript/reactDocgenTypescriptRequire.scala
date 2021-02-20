@@ -1,5 +1,6 @@
 package typings.reactDocgenTypescript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("react-docgen-typescript", JSImport.Namespace)
 @js.native
-object reactDocgenTypescriptRequire extends js.Object
+object reactDocgenTypescriptRequire extends StObject

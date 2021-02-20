@@ -1,12 +1,11 @@
 package typings.twilioSync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-sync/lib/interfaces/mutator", JSImport.Namespace)
-@js.native
-object mutatorMod extends js.Object {
+object mutatorMod {
   
   type Mutator = js.Function1[/* source */ js.Object, js.Object]
 }

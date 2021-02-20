@@ -1,6 +1,7 @@
 package typings.wordpressBlocks.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,4 +14,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.mod.TransformRaw[T]
   - typings.wordpressBlocks.mod.TransformShortcode[T]
 */
-trait Transform[T /* <: Record[String, _] */] extends js.Object
+trait Transform[T /* <: Record[String, _] */] extends StObject

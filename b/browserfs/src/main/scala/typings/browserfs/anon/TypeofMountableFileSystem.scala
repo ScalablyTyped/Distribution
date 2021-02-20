@@ -6,6 +6,7 @@ import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.browserfs.mountableFileSystemMod.MountableFileSystem
 import typings.browserfs.mountableFileSystemMod.MountableFileSystemOptions
 import typings.browserfs.mountableFileSystemMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

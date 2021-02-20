@@ -3,12 +3,13 @@ package typings.rcMenu.anon
 import typings.react.mod.ReactInstance
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Item extends js.Object {
+trait Item extends StObject {
   
   var domEvent: typings.react.mod.MouseEvent[HTMLElement, MouseEvent] = js.native
   
@@ -32,33 +33,21 @@ object Item {
   }
   
   @scala.inline
-  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomEvent(value: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItem(value: ReactInstance): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomEvent(value: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Self = this.set("domEvent", value.asInstanceOf[js.Any])
+    def setKeyPath(value: js.Array[String | Double]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: ReactInstance): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: String | Double): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyPathVarargs(value: (String | Double)*): Self = this.set("keyPath", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeyPath(value: js.Array[String | Double]): Self = this.set("keyPath", value.asInstanceOf[js.Any])
+    def setKeyPathVarargs(value: (String | Double)*): Self = StObject.set(x, "keyPath", js.Array(value :_*))
   }
 }

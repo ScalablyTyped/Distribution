@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentLink extends js.Object {
+trait EnvironmentLink extends StObject {
   
   /**
     * The name of the linked environment (the dependency).
@@ -26,30 +27,18 @@ object EnvironmentLink {
   }
   
   @scala.inline
-  implicit class EnvironmentLinkOps[Self <: EnvironmentLink] (val x: Self) extends AnyVal {
+  implicit class EnvironmentLinkMutableBuilder[Self <: EnvironmentLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentName(value: String): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkName(value: String): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentName(value: String): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
-    
-    @scala.inline
-    def setLinkName(value: String): Self = this.set("LinkName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkName: Self = this.set("LinkName", js.undefined)
+    def setLinkNameUndefined: Self = StObject.set(x, "LinkName", js.undefined)
   }
 }

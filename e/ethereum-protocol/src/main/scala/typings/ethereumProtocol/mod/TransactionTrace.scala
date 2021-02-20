@@ -1,11 +1,12 @@
 package typings.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionTrace extends js.Object {
+trait TransactionTrace extends StObject {
   
   var gas: Double = js.native
   
@@ -22,30 +23,18 @@ object TransactionTrace {
   }
   
   @scala.inline
-  implicit class TransactionTraceOps[Self <: TransactionTrace] (val x: Self) extends AnyVal {
+  implicit class TransactionTraceMutableBuilder[Self <: TransactionTrace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStructLogs(value: js.Array[StructLog]): Self = StObject.set(x, "structLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGas(value: Double): Self = this.set("gas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnValue(value: js.Any): Self = this.set("returnValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructLogsVarargs(value: StructLog*): Self = this.set("structLogs", js.Array(value :_*))
-    
-    @scala.inline
-    def setStructLogs(value: js.Array[StructLog]): Self = this.set("structLogs", value.asInstanceOf[js.Any])
+    def setStructLogsVarargs(value: StructLog*): Self = StObject.set(x, "structLogs", js.Array(value :_*))
   }
 }

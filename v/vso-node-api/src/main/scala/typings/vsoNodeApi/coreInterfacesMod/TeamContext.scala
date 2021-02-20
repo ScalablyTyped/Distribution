@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.coreInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamContext extends js.Object {
+trait TeamContext extends StObject {
   
   /**
     * The team project Id or name.  Ignored if ProjectId is set.
@@ -36,30 +37,18 @@ object TeamContext {
   }
   
   @scala.inline
-  implicit class TeamContextOps[Self <: TeamContext] (val x: Self) extends AnyVal {
+  implicit class TeamContextMutableBuilder[Self <: TeamContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeam(value: String): Self = this.set("team", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeamId(value: String): Self = this.set("teamId", value.asInstanceOf[js.Any])
+    def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
   }
 }

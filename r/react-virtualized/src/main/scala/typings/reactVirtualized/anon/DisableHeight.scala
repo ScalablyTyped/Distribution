@@ -1,12 +1,13 @@
 package typings.reactVirtualized.anon
 
 import typings.reactVirtualized.reactVirtualizedBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableHeight extends js.Object {
+trait DisableHeight extends StObject {
   
   var disableHeight: `false` = js.native
   
@@ -23,27 +24,15 @@ object DisableHeight {
   }
   
   @scala.inline
-  implicit class DisableHeightOps[Self <: DisableHeight] (val x: Self) extends AnyVal {
+  implicit class DisableHeightMutableBuilder[Self <: DisableHeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableHeight(value: `false`): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableWidth(value: `false`): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisableHeight(value: `false`): Self = this.set("disableHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisableWidth(value: `false`): Self = this.set("disableWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnResize(value: () => Unit): Self = this.set("onResize", js.Any.fromFunction0(value))
+    def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchWriteResponse extends js.Object {
+trait BatchWriteResponse extends StObject {
   
   /** The status of applying the writes. This i-th write status corresponds to the i-th write in the request. */
   var status: js.UndefOr[js.Array[Status]] = js.native
@@ -22,36 +23,24 @@ object BatchWriteResponse {
   }
   
   @scala.inline
-  implicit class BatchWriteResponseOps[Self <: BatchWriteResponse] (val x: Self) extends AnyVal {
+  implicit class BatchWriteResponseMutableBuilder[Self <: BatchWriteResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatus(value: js.Array[Status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatusVarargs(value: Status*): Self = StObject.set(x, "status", js.Array(value :_*))
     
     @scala.inline
-    def setStatusVarargs(value: Status*): Self = this.set("status", js.Array(value :_*))
+    def setWriteResults(value: js.Array[WriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: js.Array[Status]): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setWriteResultsVarargs(value: WriteResult*): Self = this.set("writeResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setWriteResults(value: js.Array[WriteResult]): Self = this.set("writeResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteResults: Self = this.set("writeResults", js.undefined)
+    def setWriteResultsVarargs(value: WriteResult*): Self = StObject.set(x, "writeResults", js.Array(value :_*))
   }
 }

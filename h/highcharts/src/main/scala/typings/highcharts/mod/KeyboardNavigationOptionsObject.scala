@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyboardNavigationOptionsObject extends js.Object {
+trait KeyboardNavigationOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable keyboard navigation for
@@ -49,51 +50,39 @@ object KeyboardNavigationOptionsObject {
   }
   
   @scala.inline
-  implicit class KeyboardNavigationOptionsObjectOps[Self <: KeyboardNavigationOptionsObject] (val x: Self) extends AnyVal {
+  implicit class KeyboardNavigationOptionsObjectMutableBuilder[Self <: KeyboardNavigationOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFocusBorder(value: KeyboardNavigationFocusBorderOptionsObject): Self = StObject.set(x, "focusBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFocusBorderUndefined: Self = StObject.set(x, "focusBorder", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setOrder(value: js.Array[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusBorder(value: KeyboardNavigationFocusBorderOptionsObject): Self = this.set("focusBorder", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteFocusBorder: Self = this.set("focusBorder", js.undefined)
+    def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
     
     @scala.inline
-    def setOrderVarargs(value: String*): Self = this.set("order", js.Array(value :_*))
+    def setSeriesNavigation(value: KeyboardNavigationSeriesNavigationOptionsObject): Self = StObject.set(x, "seriesNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: js.Array[String]): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setSeriesNavigationUndefined: Self = StObject.set(x, "seriesNavigation", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesNavigation(value: KeyboardNavigationSeriesNavigationOptionsObject): Self = this.set("seriesNavigation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeriesNavigation: Self = this.set("seriesNavigation", js.undefined)
-    
-    @scala.inline
-    def setWrapAround(value: Boolean): Self = this.set("wrapAround", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapAround: Self = this.set("wrapAround", js.undefined)
+    def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
   }
 }

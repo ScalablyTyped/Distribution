@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delegate extends js.Object {
+trait Delegate extends StObject {
   
   /** The email address of the delegate. */
   var delegateEmail: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object Delegate {
   }
   
   @scala.inline
-  implicit class DelegateOps[Self <: Delegate] (val x: Self) extends AnyVal {
+  implicit class DelegateMutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegateEmail(value: String): Self = StObject.set(x, "delegateEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelegateEmailUndefined: Self = StObject.set(x, "delegateEmail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegateEmail(value: String): Self = this.set("delegateEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelegateEmail: Self = this.set("delegateEmail", js.undefined)
-    
-    @scala.inline
-    def setVerificationStatus(value: String): Self = this.set("verificationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerificationStatus: Self = this.set("verificationStatus", js.undefined)
+    def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
   }
 }

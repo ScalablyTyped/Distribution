@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cropbottom extends js.Object {
+trait Cropbottom extends StObject {
   
   var crop_bottom: Double = js.native
   
@@ -24,30 +25,18 @@ object Cropbottom {
   }
   
   @scala.inline
-  implicit class CropbottomOps[Self <: Cropbottom] (val x: Self) extends AnyVal {
+  implicit class CropbottomMutableBuilder[Self <: Cropbottom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrop_bottom(value: Double): Self = StObject.set(x, "crop_bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrop_left(value: Double): Self = StObject.set(x, "crop_left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrop_right(value: Double): Self = StObject.set(x, "crop_right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrop_bottom(value: Double): Self = this.set("crop_bottom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCrop_left(value: Double): Self = this.set("crop_left", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCrop_right(value: Double): Self = this.set("crop_right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCrop_top(value: Double): Self = this.set("crop_top", value.asInstanceOf[js.Any])
+    def setCrop_top(value: Double): Self = StObject.set(x, "crop_top", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.hammerjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TouchAction extends js.Object {
+trait TouchAction extends StObject {
   
   def compute(): String = js.native
   
@@ -32,33 +33,21 @@ object TouchAction {
   }
   
   @scala.inline
-  implicit class TouchActionOps[Self <: TouchAction] (val x: Self) extends AnyVal {
+  implicit class TouchActionMutableBuilder[Self <: TouchAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompute(value: () => String): Self = StObject.set(x, "compute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreventDefaults(value: HammerInput => Unit): Self = StObject.set(x, "preventDefaults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreventSrc(value: js.Any => Unit): Self = StObject.set(x, "preventSrc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompute(value: () => String): Self = this.set("compute", js.Any.fromFunction0(value))
+    def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreventDefaults(value: HammerInput => Unit): Self = this.set("preventDefaults", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPreventSrc(value: js.Any => Unit): Self = this.set("preventSrc", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet(value: String => Unit): Self = this.set("set", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

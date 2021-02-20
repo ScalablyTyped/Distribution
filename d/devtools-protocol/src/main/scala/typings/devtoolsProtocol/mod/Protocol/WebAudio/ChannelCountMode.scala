@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.explicit
   - typings.devtoolsProtocol.devtoolsProtocolStrings.max
 */
-trait ChannelCountMode extends js.Object
+trait ChannelCountMode extends StObject
 object ChannelCountMode {
   
   @scala.inline

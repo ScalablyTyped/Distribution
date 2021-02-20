@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDeploymentsRequest extends js.Object {
+trait DescribeDeploymentsRequest extends StObject {
   
   /**
     * The app ID. If you include this parameter, the command returns a description of the commands associated with the specified app.
@@ -31,39 +32,27 @@ object DescribeDeploymentsRequest {
   }
   
   @scala.inline
-  implicit class DescribeDeploymentsRequestOps[Self <: DescribeDeploymentsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeDeploymentsRequestMutableBuilder[Self <: DescribeDeploymentsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: String): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdUndefined: Self = StObject.set(x, "AppId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentIds(value: Strings): Self = StObject.set(x, "DeploymentIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: String): Self = this.set("AppId", value.asInstanceOf[js.Any])
+    def setDeploymentIdsUndefined: Self = StObject.set(x, "DeploymentIds", js.undefined)
     
     @scala.inline
-    def deleteAppId: Self = this.set("AppId", js.undefined)
+    def setDeploymentIdsVarargs(value: String*): Self = StObject.set(x, "DeploymentIds", js.Array(value :_*))
     
     @scala.inline
-    def setDeploymentIdsVarargs(value: String*): Self = this.set("DeploymentIds", js.Array(value :_*))
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentIds(value: Strings): Self = this.set("DeploymentIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentIds: Self = this.set("DeploymentIds", js.undefined)
-    
-    @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

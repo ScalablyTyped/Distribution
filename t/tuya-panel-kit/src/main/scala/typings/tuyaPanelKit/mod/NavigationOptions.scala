@@ -7,12 +7,13 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.Uri
 import typings.tuyaPanelKit.themeMod.LinearGradientBackground
 import typings.tuyaPanelKit.themeMod.RadialGradientBackground
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationOptions extends js.Object {
+trait NavigationOptions extends StObject {
   
   /**
     * @desc 自定义面板背景
@@ -88,101 +89,89 @@ object NavigationOptions {
   }
   
   @scala.inline
-  implicit class NavigationOptionsOps[Self <: NavigationOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBackground(
       value: Double | String | Uri | RadialGradientBackground | (LinearGradientBackground with LinearGradientBackgroundOffset)
-    ): Self = this.set("background", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setBackgroundStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundStyle(value: StyleProp[ViewStyle]): Self = this.set("backgroundStyle", value.asInstanceOf[js.Any])
+    def setBackgroundStyleNull: Self = StObject.set(x, "backgroundStyle", null)
     
     @scala.inline
-    def deleteBackgroundStyle: Self = this.set("backgroundStyle", js.undefined)
+    def setBackgroundStyleUndefined: Self = StObject.set(x, "backgroundStyle", js.undefined)
     
     @scala.inline
-    def setBackgroundStyleNull: Self = this.set("backgroundStyle", null)
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def setEnablePopGesture(value: Boolean): Self = this.set("enablePopGesture", value.asInstanceOf[js.Any])
+    def setEnablePopGesture(value: Boolean): Self = StObject.set(x, "enablePopGesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnablePopGesture: Self = this.set("enablePopGesture", js.undefined)
+    def setEnablePopGestureUndefined: Self = StObject.set(x, "enablePopGesture", js.undefined)
     
     @scala.inline
-    def setGesture(value: Boolean): Self = this.set("gesture", value.asInstanceOf[js.Any])
+    def setGesture(value: Boolean): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGesture: Self = this.set("gesture", js.undefined)
+    def setGestureUndefined: Self = StObject.set(x, "gesture", js.undefined)
     
     @scala.inline
-    def setHideTopbar(value: Boolean): Self = this.set("hideTopbar", value.asInstanceOf[js.Any])
+    def setHideTopbar(value: Boolean): Self = StObject.set(x, "hideTopbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideTopbar: Self = this.set("hideTopbar", js.undefined)
+    def setHideTopbarUndefined: Self = StObject.set(x, "hideTopbar", js.undefined)
     
     @scala.inline
-    def setIsBleOfflineOverlay(value: Boolean): Self = this.set("isBleOfflineOverlay", value.asInstanceOf[js.Any])
+    def setIsBleOfflineOverlay(value: Boolean): Self = StObject.set(x, "isBleOfflineOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsBleOfflineOverlay: Self = this.set("isBleOfflineOverlay", js.undefined)
+    def setIsBleOfflineOverlayUndefined: Self = StObject.set(x, "isBleOfflineOverlay", js.undefined)
     
     @scala.inline
-    def setRenderStatusBar(value: () => Element): Self = this.set("renderStatusBar", js.Any.fromFunction0(value))
+    def setRenderStatusBar(value: () => Element): Self = StObject.set(x, "renderStatusBar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteRenderStatusBar: Self = this.set("renderStatusBar", js.undefined)
+    def setRenderStatusBarUndefined: Self = StObject.set(x, "renderStatusBar", js.undefined)
     
     @scala.inline
-    def setRenderTopBar(value: () => Element): Self = this.set("renderTopBar", js.Any.fromFunction0(value))
+    def setRenderTopBar(value: () => Element): Self = StObject.set(x, "renderTopBar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteRenderTopBar: Self = this.set("renderTopBar", js.undefined)
+    def setRenderTopBarUndefined: Self = StObject.set(x, "renderTopBar", js.undefined)
     
     @scala.inline
-    def setShowOfflineView(value: Boolean): Self = this.set("showOfflineView", value.asInstanceOf[js.Any])
+    def setShowOfflineView(value: Boolean): Self = StObject.set(x, "showOfflineView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowOfflineView: Self = this.set("showOfflineView", js.undefined)
+    def setShowOfflineViewUndefined: Self = StObject.set(x, "showOfflineView", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTopbarStyle(value: StyleProp[ViewStyle]): Self = this.set("topbarStyle", value.asInstanceOf[js.Any])
+    def setTopbarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "topbarStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTopbarStyle: Self = this.set("topbarStyle", js.undefined)
+    def setTopbarStyleNull: Self = StObject.set(x, "topbarStyle", null)
     
     @scala.inline
-    def setTopbarStyleNull: Self = this.set("topbarStyle", null)
+    def setTopbarStyleUndefined: Self = StObject.set(x, "topbarStyle", js.undefined)
     
     @scala.inline
-    def setTopbarTextStyle(value: StyleProp[TextStyle]): Self = this.set("topbarTextStyle", value.asInstanceOf[js.Any])
+    def setTopbarTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "topbarTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTopbarTextStyle: Self = this.set("topbarTextStyle", js.undefined)
+    def setTopbarTextStyleNull: Self = StObject.set(x, "topbarTextStyle", null)
     
     @scala.inline
-    def setTopbarTextStyleNull: Self = this.set("topbarTextStyle", null)
+    def setTopbarTextStyleUndefined: Self = StObject.set(x, "topbarTextStyle", js.undefined)
   }
 }

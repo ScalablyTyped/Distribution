@@ -1,11 +1,12 @@
 package typings.awsSdk.lakeformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Resource extends js.Object {
+trait Resource extends StObject {
   
   /**
     * The identifier for the Data Catalog. By default, the account ID. The Data Catalog is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your AWS Lake Formation environment. 
@@ -41,48 +42,36 @@ object Resource {
   }
   
   @scala.inline
-  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalog(value: CatalogResource): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogUndefined: Self = StObject.set(x, "Catalog", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataLocation(value: DataLocationResource): Self = StObject.set(x, "DataLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalog(value: CatalogResource): Self = this.set("Catalog", value.asInstanceOf[js.Any])
+    def setDataLocationUndefined: Self = StObject.set(x, "DataLocation", js.undefined)
     
     @scala.inline
-    def deleteCatalog: Self = this.set("Catalog", js.undefined)
+    def setDatabase(value: DatabaseResource): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLocation(value: DataLocationResource): Self = this.set("DataLocation", value.asInstanceOf[js.Any])
+    def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
     
     @scala.inline
-    def deleteDataLocation: Self = this.set("DataLocation", js.undefined)
+    def setTable(value: TableResource): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabase(value: DatabaseResource): Self = this.set("Database", value.asInstanceOf[js.Any])
+    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
     
     @scala.inline
-    def deleteDatabase: Self = this.set("Database", js.undefined)
+    def setTableWithColumns(value: TableWithColumnsResource): Self = StObject.set(x, "TableWithColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: TableResource): Self = this.set("Table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("Table", js.undefined)
-    
-    @scala.inline
-    def setTableWithColumns(value: TableWithColumnsResource): Self = this.set("TableWithColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableWithColumns: Self = this.set("TableWithColumns", js.undefined)
+    def setTableWithColumnsUndefined: Self = StObject.set(x, "TableWithColumns", js.undefined)
   }
 }

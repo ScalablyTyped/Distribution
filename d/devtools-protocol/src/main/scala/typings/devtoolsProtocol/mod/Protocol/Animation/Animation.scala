@@ -3,12 +3,13 @@ package typings.devtoolsProtocol.mod.Protocol.Animation
 import typings.devtoolsProtocol.devtoolsProtocolStrings.CSSAnimation
 import typings.devtoolsProtocol.devtoolsProtocolStrings.CSSTransition
 import typings.devtoolsProtocol.devtoolsProtocolStrings.WebAnimation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animation extends js.Object {
+trait Animation extends StObject {
   
   /**
     * A unique ID for `Animation` representing the sources that triggered this CSS
@@ -73,61 +74,49 @@ object Animation {
     playbackRate: Double,
     startTime: Double,
     `type`: CSSTransition | CSSAnimation | WebAnimation
-  ): Animation = {
+  ): typings.devtoolsProtocol.mod.Protocol.Animation.Animation = {
     val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pausedState = pausedState.asInstanceOf[js.Any], playState = playState.asInstanceOf[js.Any], playbackRate = playbackRate.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Animation]
+    __obj.asInstanceOf[typings.devtoolsProtocol.mod.Protocol.Animation.Animation]
   }
   
   @scala.inline
-  implicit class AnimationOps[Self <: typings.devtoolsProtocol.mod.Protocol.Animation.Animation] (val x: Self) extends AnyVal {
+  implicit class AnimationMutableBuilder[Self <: typings.devtoolsProtocol.mod.Protocol.Animation.Animation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCssId(value: String): Self = StObject.set(x, "cssId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCssIdUndefined: Self = StObject.set(x, "cssId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPausedState(value: Boolean): Self = StObject.set(x, "pausedState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPausedState(value: Boolean): Self = this.set("pausedState", value.asInstanceOf[js.Any])
+    def setPlayState(value: String): Self = StObject.set(x, "playState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayState(value: String): Self = this.set("playState", value.asInstanceOf[js.Any])
+    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaybackRate(value: Double): Self = this.set("playbackRate", value.asInstanceOf[js.Any])
+    def setSource(value: AnimationEffect): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setType(value: CSSTransition | CSSAnimation | WebAnimation): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssId(value: String): Self = this.set("cssId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCssId: Self = this.set("cssId", js.undefined)
-    
-    @scala.inline
-    def setSource(value: AnimationEffect): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setType(value: CSSTransition | CSSAnimation | WebAnimation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.EventFilter.FilterType
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,16 +39,49 @@ class EventFilter () extends IEventFilter {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "EventFilter")
-@js.native
-object EventFilter extends js.Object {
+object EventFilter {
+  
+  @js.native
+  sealed trait FilterType extends StObject
+  /** FilterType enum. */
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.FilterType")
+  @js.native
+  object FilterType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[FilterType with Double] = js.native
+    
+    @js.native
+    sealed trait FILTER_TYPE_UNSET extends FilterType
+    /* 0 */ val FILTER_TYPE_UNSET: typings.sawtoothSdk.protobufMod.EventFilter.FilterType.FILTER_TYPE_UNSET with Double = js.native
+    
+    @js.native
+    sealed trait REGEX_ALL extends FilterType
+    /* 4 */ val REGEX_ALL: typings.sawtoothSdk.protobufMod.EventFilter.FilterType.REGEX_ALL with Double = js.native
+    
+    @js.native
+    sealed trait REGEX_ANY extends FilterType
+    /* 3 */ val REGEX_ANY: typings.sawtoothSdk.protobufMod.EventFilter.FilterType.REGEX_ANY with Double = js.native
+    
+    @js.native
+    sealed trait SIMPLE_ALL extends FilterType
+    /* 2 */ val SIMPLE_ALL: typings.sawtoothSdk.protobufMod.EventFilter.FilterType.SIMPLE_ALL with Double = js.native
+    
+    @js.native
+    sealed trait SIMPLE_ANY extends FilterType
+    /* 1 */ val SIMPLE_ANY: typings.sawtoothSdk.protobufMod.EventFilter.FilterType.SIMPLE_ANY with Double = js.native
+  }
   
   /**
     * Creates a new EventFilter instance using the specified properties.
     * @param [properties] Properties to set
     * @returns EventFilter instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.create")
+  @js.native
   def create(): EventFilter = js.native
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.create")
+  @js.native
   def create(properties: IEventFilter): EventFilter = js.native
   
   /**
@@ -59,9 +92,17 @@ object EventFilter extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.decode")
+  @js.native
   def decode(reader: Reader): EventFilter = js.native
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.decode")
+  @js.native
   def decode(reader: Reader, length: Double): EventFilter = js.native
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.decode")
+  @js.native
   def decode(reader: Uint8Array): EventFilter = js.native
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): EventFilter = js.native
   
   /**
@@ -71,7 +112,11 @@ object EventFilter extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): EventFilter = js.native
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): EventFilter = js.native
   
   /**
@@ -80,7 +125,11 @@ object EventFilter extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.encode")
+  @js.native
   def encode(message: IEventFilter): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.encode")
+  @js.native
   def encode(message: IEventFilter, writer: Writer): Writer = js.native
   
   /**
@@ -89,7 +138,11 @@ object EventFilter extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IEventFilter): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IEventFilter, writer: Writer): Writer = js.native
   
   /**
@@ -97,6 +150,8 @@ object EventFilter extends js.Object {
     * @param object Plain object
     * @returns EventFilter
     */
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): EventFilter = js.native
   
   /**
@@ -105,7 +160,11 @@ object EventFilter extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.toObject")
+  @js.native
   def toObject(message: EventFilter): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.toObject")
+  @js.native
   def toObject(message: EventFilter, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -113,40 +172,7 @@ object EventFilter extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "EventFilter.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
-  
-  @js.native
-  sealed trait FilterType extends js.Object
-  /** FilterType enum. */
-  @js.native
-  object FilterType extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[FilterType with Double] = js.native
-    
-    @js.native
-    sealed trait FILTER_TYPE_UNSET extends FilterType
-    /* 0 */ @js.native
-    object FILTER_TYPE_UNSET extends TopLevel[FILTER_TYPE_UNSET with Double]
-    
-    @js.native
-    sealed trait REGEX_ALL extends FilterType
-    /* 4 */ @js.native
-    object REGEX_ALL extends TopLevel[REGEX_ALL with Double]
-    
-    @js.native
-    sealed trait REGEX_ANY extends FilterType
-    /* 3 */ @js.native
-    object REGEX_ANY extends TopLevel[REGEX_ANY with Double]
-    
-    @js.native
-    sealed trait SIMPLE_ALL extends FilterType
-    /* 2 */ @js.native
-    object SIMPLE_ALL extends TopLevel[SIMPLE_ALL with Double]
-    
-    @js.native
-    sealed trait SIMPLE_ANY extends FilterType
-    /* 1 */ @js.native
-    object SIMPLE_ANY extends TopLevel[SIMPLE_ANY with Double]
-  }
 }

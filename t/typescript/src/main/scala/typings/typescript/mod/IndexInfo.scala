@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexInfo extends js.Object {
+trait IndexInfo extends StObject {
   
   var declaration: js.UndefOr[IndexSignatureDeclaration] = js.native
   
@@ -23,30 +24,18 @@ object IndexInfo {
   }
   
   @scala.inline
-  implicit class IndexInfoOps[Self <: IndexInfo] (val x: Self) extends AnyVal {
+  implicit class IndexInfoMutableBuilder[Self <: IndexInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeclaration(value: IndexSignatureDeclaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsReadonly(value: Boolean): Self = StObject.set(x, "isReadonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadonly(value: Boolean): Self = this.set("isReadonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Type): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeclaration(value: IndexSignatureDeclaration): Self = this.set("declaration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeclaration: Self = this.set("declaration", js.undefined)
+    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

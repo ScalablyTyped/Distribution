@@ -5,16 +5,16 @@ import typings.typeorm.mod.Connection
 import typings.typeorm.mod.EntityMetadata
 import typings.typeorm.mod.SelectQueryBuilder
 import typings.typeorm.optionsViewOptionsMod.ViewOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/schema-builder/view/View", JSImport.Namespace)
-@js.native
-object viewViewMod extends js.Object {
+object viewViewMod {
   
+  @JSImport("typeorm/schema-builder/view/View", "View")
   @js.native
-  class View () extends js.Object {
+  class View () extends StObject {
     def this(options: ViewOptions) = this()
     
     /**
@@ -34,12 +34,13 @@ object viewViewMod extends js.Object {
     var name: String = js.native
   }
   /* static members */
-  @js.native
-  object View extends js.Object {
+  object View {
     
     /**
       * Creates view from a given entity metadata.
       */
+    @JSImport("typeorm/schema-builder/view/View", "View.create")
+    @js.native
     def create(entityMetadata: EntityMetadata, driver: Driver): View = js.native
   }
 }

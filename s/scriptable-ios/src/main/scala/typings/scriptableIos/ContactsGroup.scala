@@ -1,5 +1,6 @@
 package typings.scriptableIos
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/contactsgroup/#-new-contactsgroup
   */
 @js.native
-trait ContactsGroup extends js.Object {
+trait ContactsGroup extends StObject {
   
   /**
     * _Adds a contact to the group._
@@ -55,30 +56,18 @@ object ContactsGroup {
   }
   
   @scala.inline
-  implicit class ContactsGroupOps[Self <: ContactsGroup] (val x: Self) extends AnyVal {
+  implicit class ContactsGroupMutableBuilder[Self <: ContactsGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddMember(value: Contact => Unit): Self = StObject.set(x, "addMember", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddMember(value: Contact => Unit): Self = this.set("addMember", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveMember(value: Contact => Unit): Self = this.set("removeMember", js.Any.fromFunction1(value))
+    def setRemoveMember(value: Contact => Unit): Self = StObject.set(x, "removeMember", js.Any.fromFunction1(value))
   }
 }

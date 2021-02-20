@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Globalization
 
 import typings.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IApplicationLanguagesStatics extends js.Object {
+trait IApplicationLanguagesStatics extends StObject {
   
   var languages: IVectorView[String] = js.native
   
@@ -27,27 +28,15 @@ object IApplicationLanguagesStatics {
   }
   
   @scala.inline
-  implicit class IApplicationLanguagesStaticsOps[Self <: IApplicationLanguagesStatics] (val x: Self) extends AnyVal {
+  implicit class IApplicationLanguagesStaticsMutableBuilder[Self <: IApplicationLanguagesStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManifestLanguages(value: IVectorView[String]): Self = StObject.set(x, "manifestLanguages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLanguages(value: IVectorView[String]): Self = this.set("languages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManifestLanguages(value: IVectorView[String]): Self = this.set("manifestLanguages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrimaryLanguageOverride(value: String): Self = this.set("primaryLanguageOverride", value.asInstanceOf[js.Any])
+    def setPrimaryLanguageOverride(value: String): Self = StObject.set(x, "primaryLanguageOverride", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SampleChannelDataRequest extends js.Object {
+trait SampleChannelDataRequest extends StObject {
   
   /**
     * The name of the channel whose message samples are retrieved.
@@ -36,39 +37,27 @@ object SampleChannelDataRequest {
   }
   
   @scala.inline
-  implicit class SampleChannelDataRequestOps[Self <: SampleChannelDataRequest] (val x: Self) extends AnyVal {
+  implicit class SampleChannelDataRequestMutableBuilder[Self <: SampleChannelDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def setChannelName(value: ChannelName): Self = this.set("channelName", value.asInstanceOf[js.Any])
+    def setMaxMessages(value: MaxMessages): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: EndTime): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMessages(value: MaxMessages): Self = this.set("maxMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxMessages: Self = this.set("maxMessages", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: StartTime): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

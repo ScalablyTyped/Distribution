@@ -12,13 +12,14 @@ import typings.officeJs.officeJsStrings.EdgeLeft
 import typings.officeJs.officeJsStrings.EdgeRight
 import typings.officeJs.officeJsStrings.EdgeTop
 import typings.officeJs.officeJsStrings.None
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `conditionalRangeBorder.toJSON()`. */
 @js.native
-trait ConditionalRangeBorderData extends js.Object {
+trait ConditionalRangeBorderData extends StObject {
   
   /**
     *
@@ -55,36 +56,24 @@ object ConditionalRangeBorderData {
   }
   
   @scala.inline
-  implicit class ConditionalRangeBorderDataOps[Self <: ConditionalRangeBorderData] (val x: Self) extends AnyVal {
+  implicit class ConditionalRangeBorderDataMutableBuilder[Self <: ConditionalRangeBorderData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSideIndex(value: ConditionalRangeBorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setStyle(value: ConditionalRangeBorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideIndex(value: ConditionalRangeBorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight): Self = this.set("sideIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSideIndex: Self = this.set("sideIndex", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: ConditionalRangeBorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.astTypes.buildersMod
 
 import typings.astTypes.anon.CommentsLoc
 import typings.astTypes.namedTypesMod.namedTypes.ExportBatchSpecifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportBatchSpecifierBuilder extends js.Object {
+trait ExportBatchSpecifierBuilder extends StObject {
   
   def apply(): ExportBatchSpecifier = js.native
   

@@ -1,14 +1,17 @@
 package typings.uifabricUtilities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/utilities/lib/localStorage", JSImport.Namespace)
-@js.native
-object localStorageMod extends js.Object {
+object localStorageMod {
   
+  @JSImport("@uifabric/utilities/lib/localStorage", "getItem")
+  @js.native
   def getItem(key: String): String | Null = js.native
   
+  @JSImport("@uifabric/utilities/lib/localStorage", "setItem")
+  @js.native
   def setItem(key: String, data: String): Unit = js.native
 }

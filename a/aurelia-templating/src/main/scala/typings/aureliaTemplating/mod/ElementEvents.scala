@@ -2,13 +2,14 @@ package typings.aureliaTemplating.mod
 
 import typings.std.AddEventListenerOptions
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ElementEvents")
 @js.native
-class ElementEvents protected () extends js.Object {
+class ElementEvents protected () extends StObject {
   def this(element: EventTarget) = this()
   
   /**
@@ -60,9 +61,15 @@ class ElementEvents protected () extends js.Object {
   def subscribeOnce(eventName: String, handler: js.Function, captureOrOptions: AddEventListenerOptions): EventHandler = js.native
 }
 /* static members */
-@JSImport("aurelia-templating", "ElementEvents")
-@js.native
-object ElementEvents extends js.Object {
+object ElementEvents {
   
-  var defaultListenerOptions: Boolean | AddEventListenerOptions = js.native
+  @JSImport("aurelia-templating", "ElementEvents")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("aurelia-templating", "ElementEvents.defaultListenerOptions")
+  @js.native
+  def defaultListenerOptions: Boolean | AddEventListenerOptions = js.native
+  @scala.inline
+  def defaultListenerOptions_=(x: Boolean | AddEventListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultListenerOptions")(x.asInstanceOf[js.Any])
 }

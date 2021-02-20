@@ -1,11 +1,12 @@
 package typings.ssh2Streams.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Algorithms extends js.Object {
+trait Algorithms extends StObject {
   
   var cipher: js.UndefOr[js.Array[String]] = js.native
   
@@ -26,63 +27,51 @@ object Algorithms {
   }
   
   @scala.inline
-  implicit class AlgorithmsOps[Self <: Algorithms] (val x: Self) extends AnyVal {
+  implicit class AlgorithmsMutableBuilder[Self <: Algorithms] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCipher(value: js.Array[String]): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCipherVarargs(value: String*): Self = StObject.set(x, "cipher", js.Array(value :_*))
     
     @scala.inline
-    def setCipherVarargs(value: String*): Self = this.set("cipher", js.Array(value :_*))
+    def setCompress(value: js.Array[String]): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCipher(value: js.Array[String]): Self = this.set("cipher", value.asInstanceOf[js.Any])
+    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
     @scala.inline
-    def deleteCipher: Self = this.set("cipher", js.undefined)
+    def setCompressVarargs(value: String*): Self = StObject.set(x, "compress", js.Array(value :_*))
     
     @scala.inline
-    def setCompressVarargs(value: String*): Self = this.set("compress", js.Array(value :_*))
+    def setHmac(value: js.Array[String]): Self = StObject.set(x, "hmac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompress(value: js.Array[String]): Self = this.set("compress", value.asInstanceOf[js.Any])
+    def setHmacUndefined: Self = StObject.set(x, "hmac", js.undefined)
     
     @scala.inline
-    def deleteCompress: Self = this.set("compress", js.undefined)
+    def setHmacVarargs(value: String*): Self = StObject.set(x, "hmac", js.Array(value :_*))
     
     @scala.inline
-    def setHmacVarargs(value: String*): Self = this.set("hmac", js.Array(value :_*))
+    def setKex(value: js.Array[String]): Self = StObject.set(x, "kex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHmac(value: js.Array[String]): Self = this.set("hmac", value.asInstanceOf[js.Any])
+    def setKexUndefined: Self = StObject.set(x, "kex", js.undefined)
     
     @scala.inline
-    def deleteHmac: Self = this.set("hmac", js.undefined)
+    def setKexVarargs(value: String*): Self = StObject.set(x, "kex", js.Array(value :_*))
     
     @scala.inline
-    def setKexVarargs(value: String*): Self = this.set("kex", js.Array(value :_*))
+    def setServerHostKey(value: js.Array[String]): Self = StObject.set(x, "serverHostKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKex(value: js.Array[String]): Self = this.set("kex", value.asInstanceOf[js.Any])
+    def setServerHostKeyUndefined: Self = StObject.set(x, "serverHostKey", js.undefined)
     
     @scala.inline
-    def deleteKex: Self = this.set("kex", js.undefined)
-    
-    @scala.inline
-    def setServerHostKeyVarargs(value: String*): Self = this.set("serverHostKey", js.Array(value :_*))
-    
-    @scala.inline
-    def setServerHostKey(value: js.Array[String]): Self = this.set("serverHostKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerHostKey: Self = this.set("serverHostKey", js.undefined)
+    def setServerHostKeyVarargs(value: String*): Self = StObject.set(x, "serverHostKey", js.Array(value :_*))
   }
 }

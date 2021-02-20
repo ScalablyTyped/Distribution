@@ -2,12 +2,13 @@ package typings.azdata.mod.nb
 
 import typings.vscode.Thenable
 import typings.vscode.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotebookProvider extends js.Object {
+trait NotebookProvider extends StObject {
   
   def getNotebookManager(notebookUri: Uri): Thenable[NotebookManager] = js.native
   
@@ -35,33 +36,21 @@ object NotebookProvider {
   }
   
   @scala.inline
-  implicit class NotebookProviderOps[Self <: NotebookProvider] (val x: Self) extends AnyVal {
+  implicit class NotebookProviderMutableBuilder[Self <: NotebookProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNotebookManager(value: Uri => Thenable[NotebookManager]): Self = StObject.set(x, "getNotebookManager", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleNotebookClosed(value: Uri => Unit): Self = StObject.set(x, "handleNotebookClosed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNotebookManager(value: Uri => Thenable[NotebookManager]): Self = this.set("getNotebookManager", js.Any.fromFunction1(value))
+    def setStandardKernels(value: js.Array[IStandardKernel]): Self = StObject.set(x, "standardKernels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleNotebookClosed(value: Uri => Unit): Self = this.set("handleNotebookClosed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandardKernelsVarargs(value: IStandardKernel*): Self = this.set("standardKernels", js.Array(value :_*))
-    
-    @scala.inline
-    def setStandardKernels(value: js.Array[IStandardKernel]): Self = this.set("standardKernels", value.asInstanceOf[js.Any])
+    def setStandardKernelsVarargs(value: IStandardKernel*): Self = StObject.set(x, "standardKernels", js.Array(value :_*))
   }
 }

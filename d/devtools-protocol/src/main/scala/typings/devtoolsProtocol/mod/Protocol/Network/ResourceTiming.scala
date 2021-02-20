@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceTiming extends js.Object {
+trait ResourceTiming extends StObject {
   
   /**
     * Connected to the remote host.
@@ -126,72 +127,60 @@ object ResourceTiming {
   }
   
   @scala.inline
-  implicit class ResourceTimingOps[Self <: ResourceTiming] (val x: Self) extends AnyVal {
+  implicit class ResourceTimingMutableBuilder[Self <: ResourceTiming] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectEnd(value: Double): Self = StObject.set(x, "connectEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectStart(value: Double): Self = StObject.set(x, "connectStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDnsEnd(value: Double): Self = StObject.set(x, "dnsEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectEnd(value: Double): Self = this.set("connectEnd", value.asInstanceOf[js.Any])
+    def setDnsStart(value: Double): Self = StObject.set(x, "dnsStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectStart(value: Double): Self = this.set("connectStart", value.asInstanceOf[js.Any])
+    def setProxyEnd(value: Double): Self = StObject.set(x, "proxyEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsEnd(value: Double): Self = this.set("dnsEnd", value.asInstanceOf[js.Any])
+    def setProxyStart(value: Double): Self = StObject.set(x, "proxyStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsStart(value: Double): Self = this.set("dnsStart", value.asInstanceOf[js.Any])
+    def setPushEnd(value: Double): Self = StObject.set(x, "pushEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyEnd(value: Double): Self = this.set("proxyEnd", value.asInstanceOf[js.Any])
+    def setPushStart(value: Double): Self = StObject.set(x, "pushStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyStart(value: Double): Self = this.set("proxyStart", value.asInstanceOf[js.Any])
+    def setReceiveHeadersEnd(value: Double): Self = StObject.set(x, "receiveHeadersEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushEnd(value: Double): Self = this.set("pushEnd", value.asInstanceOf[js.Any])
+    def setRequestTime(value: Double): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushStart(value: Double): Self = this.set("pushStart", value.asInstanceOf[js.Any])
+    def setSendEnd(value: Double): Self = StObject.set(x, "sendEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveHeadersEnd(value: Double): Self = this.set("receiveHeadersEnd", value.asInstanceOf[js.Any])
+    def setSendStart(value: Double): Self = StObject.set(x, "sendStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTime(value: Double): Self = this.set("requestTime", value.asInstanceOf[js.Any])
+    def setSslEnd(value: Double): Self = StObject.set(x, "sslEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendEnd(value: Double): Self = this.set("sendEnd", value.asInstanceOf[js.Any])
+    def setSslStart(value: Double): Self = StObject.set(x, "sslStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendStart(value: Double): Self = this.set("sendStart", value.asInstanceOf[js.Any])
+    def setWorkerFetchStart(value: Double): Self = StObject.set(x, "workerFetchStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslEnd(value: Double): Self = this.set("sslEnd", value.asInstanceOf[js.Any])
+    def setWorkerReady(value: Double): Self = StObject.set(x, "workerReady", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslStart(value: Double): Self = this.set("sslStart", value.asInstanceOf[js.Any])
+    def setWorkerRespondWithSettled(value: Double): Self = StObject.set(x, "workerRespondWithSettled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerFetchStart(value: Double): Self = this.set("workerFetchStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerReady(value: Double): Self = this.set("workerReady", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerRespondWithSettled(value: Double): Self = this.set("workerRespondWithSettled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerStart(value: Double): Self = this.set("workerStart", value.asInstanceOf[js.Any])
+    def setWorkerStart(value: Double): Self = StObject.set(x, "workerStart", value.asInstanceOf[js.Any])
   }
 }

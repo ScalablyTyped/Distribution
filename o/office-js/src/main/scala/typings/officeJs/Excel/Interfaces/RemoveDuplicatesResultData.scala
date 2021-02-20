@@ -1,12 +1,13 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `removeDuplicatesResult.toJSON()`. */
 @js.native
-trait RemoveDuplicatesResultData extends js.Object {
+trait RemoveDuplicatesResultData extends StObject {
   
   /**
     *
@@ -33,30 +34,18 @@ object RemoveDuplicatesResultData {
   }
   
   @scala.inline
-  implicit class RemoveDuplicatesResultDataOps[Self <: RemoveDuplicatesResultData] (val x: Self) extends AnyVal {
+  implicit class RemoveDuplicatesResultDataMutableBuilder[Self <: RemoveDuplicatesResultData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemoved(value: Double): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUniqueRemaining(value: Double): Self = StObject.set(x, "uniqueRemaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoved(value: Double): Self = this.set("removed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoved: Self = this.set("removed", js.undefined)
-    
-    @scala.inline
-    def setUniqueRemaining(value: Double): Self = this.set("uniqueRemaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueRemaining: Self = this.set("uniqueRemaining", js.undefined)
+    def setUniqueRemainingUndefined: Self = StObject.set(x, "uniqueRemaining", js.undefined)
   }
 }

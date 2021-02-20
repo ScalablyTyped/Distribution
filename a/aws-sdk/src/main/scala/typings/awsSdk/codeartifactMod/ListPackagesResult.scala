@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPackagesResult extends js.Object {
+trait ListPackagesResult extends StObject {
   
   /**
     *  If there are additional results, this is the token for the next set of results. 
@@ -26,33 +27,21 @@ object ListPackagesResult {
   }
   
   @scala.inline
-  implicit class ListPackagesResultOps[Self <: ListPackagesResult] (val x: Self) extends AnyVal {
+  implicit class ListPackagesResultMutableBuilder[Self <: ListPackagesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackages(value: PackageSummaryList): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setPackagesVarargs(value: PackageSummary*): Self = this.set("packages", js.Array(value :_*))
-    
-    @scala.inline
-    def setPackages(value: PackageSummaryList): Self = this.set("packages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackages: Self = this.set("packages", js.undefined)
+    def setPackagesVarargs(value: PackageSummary*): Self = StObject.set(x, "packages", js.Array(value :_*))
   }
 }

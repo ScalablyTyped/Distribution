@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.style
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specify the alignment of a numbering level. */
 @js.native
-trait NumberingAlignment extends js.Object {
+trait NumberingAlignment extends StObject {
   
   /** set the alignment from the numbering. Use the {@link com.sun.star.style.HorizontalAlignment} enum to change the alignment. */
   var Alignment: HorizontalAlignment = js.native
@@ -34,30 +35,18 @@ object NumberingAlignment {
   }
   
   @scala.inline
-  implicit class NumberingAlignmentOps[Self <: NumberingAlignment] (val x: Self) extends AnyVal {
+  implicit class NumberingAlignmentMutableBuilder[Self <: NumberingAlignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertion(value: Double): Self = StObject.set(x, "Insertion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextMarginDistance(value: Double): Self = StObject.set(x, "TextMarginDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: HorizontalAlignment): Self = this.set("Alignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInsertion(value: Double): Self = this.set("Insertion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextMarginDistance(value: Double): Self = this.set("TextMarginDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextNumberingDistance(value: Double): Self = this.set("TextNumberingDistance", value.asInstanceOf[js.Any])
+    def setTextNumberingDistance(value: Double): Self = StObject.set(x, "TextNumberingDistance", value.asInstanceOf[js.Any])
   }
 }

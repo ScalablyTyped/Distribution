@@ -1,11 +1,12 @@
 package typings.stripe.mod.paymentMethods
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WalletData extends js.Object {
+trait WalletData extends StObject {
   
   /**
     * Owner's verified billing address. Values are verified or provided by the wallet directly (if supported) at the time of authorization or settlement. They cannot be set or mutated.
@@ -36,30 +37,18 @@ object WalletData {
   }
   
   @scala.inline
-  implicit class WalletDataOps[Self <: WalletData] (val x: Self) extends AnyVal {
+  implicit class WalletDataMutableBuilder[Self <: WalletData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilling_address(value: WalletAddress): Self = StObject.set(x, "billing_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilling_address(value: WalletAddress): Self = this.set("billing_address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShipping_address(value: WalletAddress): Self = this.set("shipping_address", value.asInstanceOf[js.Any])
+    def setShipping_address(value: WalletAddress): Self = StObject.set(x, "shipping_address", value.asInstanceOf[js.Any])
   }
 }

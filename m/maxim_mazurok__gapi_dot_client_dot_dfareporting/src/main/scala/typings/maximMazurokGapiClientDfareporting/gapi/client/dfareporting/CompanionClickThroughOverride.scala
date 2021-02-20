@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompanionClickThroughOverride extends js.Object {
+trait CompanionClickThroughOverride extends StObject {
   
   /** Click-through URL of this companion click-through override. */
   var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.native
@@ -22,30 +23,18 @@ object CompanionClickThroughOverride {
   }
   
   @scala.inline
-  implicit class CompanionClickThroughOverrideOps[Self <: CompanionClickThroughOverride] (val x: Self) extends AnyVal {
+  implicit class CompanionClickThroughOverrideMutableBuilder[Self <: CompanionClickThroughOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickThroughUrl(value: ClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickThroughUrl(value: ClickThroughUrl): Self = this.set("clickThroughUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClickThroughUrl: Self = this.set("clickThroughUrl", js.undefined)
-    
-    @scala.inline
-    def setCreativeId(value: String): Self = this.set("creativeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreativeId: Self = this.set("creativeId", js.undefined)
+    def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
   }
 }

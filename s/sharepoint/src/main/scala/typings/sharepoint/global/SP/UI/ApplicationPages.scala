@@ -4,36 +4,45 @@ import typings.sharepoint.SP.ClientRuntimeContext
 import typings.sharepoint.SP.StringResult
 import typings.sharepoint.SP.UI.ApplicationPages.ICalendarController
 import typings.sharepoint.SP.UI.ApplicationPages.SelectorType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.UI.ApplicationPages")
-@js.native
-object ApplicationPages extends js.Object {
+object ApplicationPages {
   
+  @JSGlobal("SP.UI.ApplicationPages.BaseSelectorComponent")
   @js.native
   class BaseSelectorComponent protected ()
     extends typings.sharepoint.SP.UI.ApplicationPages.BaseSelectorComponent {
     def this(key: String, `type`: SelectorType) = this()
   }
   
+  @JSGlobal("SP.UI.ApplicationPages.CalendarInstanceRepository")
   @js.native
   class CalendarInstanceRepository ()
     extends typings.sharepoint.SP.UI.ApplicationPages.CalendarInstanceRepository
-  /* static members */
-  @js.native
-  object CalendarInstanceRepository extends js.Object {
+  object CalendarInstanceRepository {
     
+    /* static member */
+    @JSGlobal("SP.UI.ApplicationPages.CalendarInstanceRepository.firstInstance")
+    @js.native
     def firstInstance(): ICalendarController = js.native
     
+    /* static member */
+    @JSGlobal("SP.UI.ApplicationPages.CalendarInstanceRepository.lookupInstance")
+    @js.native
     def lookupInstance(instanceId: String): ICalendarController = js.native
     
+    /* static member */
+    @JSGlobal("SP.UI.ApplicationPages.CalendarInstanceRepository.registerInstance")
+    @js.native
     def registerInstance(instanceId: String, contoller: ICalendarController): Unit = js.native
   }
   
+  @JSGlobal("SP.UI.ApplicationPages.CalendarScope")
   @js.native
-  object CalendarScope extends js.Object {
+  object CalendarScope extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sharepoint.SP.UI.ApplicationPages.CalendarScope with Double] = js.native
@@ -51,45 +60,55 @@ object ApplicationPages extends js.Object {
     /* 2 */ val weeklyGroup: typings.sharepoint.SP.UI.ApplicationPages.CalendarScope.weeklyGroup with Double = js.native
   }
   
+  @JSGlobal("SP.UI.ApplicationPages.CalendarSelector")
   @js.native
   class CalendarSelector ()
     extends typings.sharepoint.SP.UI.ApplicationPages.CalendarSelector
-  /* static members */
-  @js.native
-  object CalendarSelector extends js.Object {
+  object CalendarSelector {
     
+    /* static member */
+    @JSGlobal("SP.UI.ApplicationPages.CalendarSelector.instance")
+    @js.native
     def instance(): typings.sharepoint.SP.UI.ApplicationPages.CalendarSelector = js.native
   }
   
+  @JSGlobal("SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters")
   @js.native
   class ClientPeoplePickerQueryParameters ()
     extends typings.sharepoint.SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters
   
+  @JSGlobal("SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface")
   @js.native
   class ClientPeoplePickerWebServiceInterface ()
     extends typings.sharepoint.SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface
-  /* static members */
-  @js.native
-  object ClientPeoplePickerWebServiceInterface extends js.Object {
+  object ClientPeoplePickerWebServiceInterface {
     
+    /* static member */
+    @JSGlobal("SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface.clientPeoplePickerResolveUser")
+    @js.native
     def clientPeoplePickerResolveUser(
       context: ClientRuntimeContext,
       queryParams: typings.sharepoint.SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters
     ): StringResult = js.native
     
+    /* static member */
+    @JSGlobal("SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface.clientPeoplePickerSearchUser")
+    @js.native
     def clientPeoplePickerSearchUser(
       context: ClientRuntimeContext,
       queryParams: typings.sharepoint.SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters
     ): StringResult = js.native
   }
   
+  @JSGlobal("SP.UI.ApplicationPages.PeoplePickerWebServiceInterface")
   @js.native
   class PeoplePickerWebServiceInterface ()
     extends typings.sharepoint.SP.UI.ApplicationPages.PeoplePickerWebServiceInterface
-  /* static members */
-  @js.native
-  object PeoplePickerWebServiceInterface extends js.Object {
+  object PeoplePickerWebServiceInterface {
     
+    /* static member */
+    @JSGlobal("SP.UI.ApplicationPages.PeoplePickerWebServiceInterface.getSearchResults")
+    @js.native
     def getSearchResults(
       context: ClientRuntimeContext,
       searchPattern: String,
@@ -98,6 +117,9 @@ object ApplicationPages extends js.Object {
       entityTypes: String
     ): StringResult = js.native
     
+    /* static member */
+    @JSGlobal("SP.UI.ApplicationPages.PeoplePickerWebServiceInterface.getSearchResultsByHierarchy")
+    @js.native
     def getSearchResultsByHierarchy(
       context: ClientRuntimeContext,
       providerID: String,
@@ -107,18 +129,21 @@ object ApplicationPages extends js.Object {
     ): StringResult = js.native
   }
   
+  @JSGlobal("SP.UI.ApplicationPages.ResolveEntity")
   @js.native
   class ResolveEntity ()
     extends typings.sharepoint.SP.UI.ApplicationPages.ResolveEntity
   
+  @JSGlobal("SP.UI.ApplicationPages.SelectorSelectionEventArgs")
   @js.native
   class SelectorSelectionEventArgs protected ()
     extends typings.sharepoint.SP.UI.ApplicationPages.SelectorSelectionEventArgs {
     def this(entities: js.Any) = this()
   }
   
+  @JSGlobal("SP.UI.ApplicationPages.SelectorType")
   @js.native
-  object SelectorType extends js.Object {
+  object SelectorType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sharepoint.SP.UI.ApplicationPages.SelectorType with Double] = js.native

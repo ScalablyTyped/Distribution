@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Billing extends js.Object {
+trait Billing extends StObject {
   
   /**
     * Billing configurations for sending metrics to the consumer project. There can be multiple consumer destinations per service, each one must have a different monitored resource type.
@@ -22,27 +23,15 @@ object Billing {
   }
   
   @scala.inline
-  implicit class BillingOps[Self <: Billing] (val x: Self) extends AnyVal {
+  implicit class BillingMutableBuilder[Self <: Billing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumerDestinations(value: js.Array[BillingDestination]): Self = StObject.set(x, "consumerDestinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerDestinationsUndefined: Self = StObject.set(x, "consumerDestinations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConsumerDestinationsVarargs(value: BillingDestination*): Self = this.set("consumerDestinations", js.Array(value :_*))
-    
-    @scala.inline
-    def setConsumerDestinations(value: js.Array[BillingDestination]): Self = this.set("consumerDestinations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConsumerDestinations: Self = this.set("consumerDestinations", js.undefined)
+    def setConsumerDestinationsVarargs(value: BillingDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value :_*))
   }
 }

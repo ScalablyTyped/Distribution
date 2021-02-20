@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FileAttributes extends js.Object
+sealed trait FileAttributes extends StObject
 /** Describes the attributes of a file or folder. */
 @JSGlobal("Windows.Storage.FileAttributes")
 @js.native
-object FileAttributes extends js.Object {
+object FileAttributes extends StObject {
   
   /** The item is archived. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverrideAction extends js.Object {
+trait OverrideAction extends StObject {
   
   /**
     * Override the rule action setting to count.
@@ -26,30 +27,18 @@ object OverrideAction {
   }
   
   @scala.inline
-  implicit class OverrideActionOps[Self <: OverrideAction] (val x: Self) extends AnyVal {
+  implicit class OverrideActionMutableBuilder[Self <: OverrideAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: CountAction): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNone(value: NoneAction): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: CountAction): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
-    
-    @scala.inline
-    def setNone(value: NoneAction): Self = this.set("None", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNone: Self = this.set("None", js.undefined)
+    def setNoneUndefined: Self = StObject.set(x, "None", js.undefined)
   }
 }

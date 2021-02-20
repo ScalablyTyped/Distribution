@@ -1,12 +1,13 @@
 package typings.algoliaClientSearch.mod
 
 import typings.algoliaClientSearch.anon.Delete
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsequenceQuery extends js.Object {
+trait ConsequenceQuery extends StObject {
   
   /**
     * List of edits.
@@ -27,36 +28,24 @@ object ConsequenceQuery {
   }
   
   @scala.inline
-  implicit class ConsequenceQueryOps[Self <: ConsequenceQuery] (val x: Self) extends AnyVal {
+  implicit class ConsequenceQueryMutableBuilder[Self <: ConsequenceQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdits(value: js.Array[Delete]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditsUndefined: Self = StObject.set(x, "edits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditsVarargs(value: Delete*): Self = StObject.set(x, "edits", js.Array(value :_*))
     
     @scala.inline
-    def setEditsVarargs(value: Delete*): Self = this.set("edits", js.Array(value :_*))
+    def setRemove(value: js.Array[String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdits(value: js.Array[Delete]): Self = this.set("edits", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteEdits: Self = this.set("edits", js.undefined)
-    
-    @scala.inline
-    def setRemoveVarargs(value: String*): Self = this.set("remove", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemove(value: js.Array[String]): Self = this.set("remove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value :_*))
   }
 }

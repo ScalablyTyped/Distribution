@@ -9,41 +9,55 @@ import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublish
 import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.SystemapksResource
 import typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.androidpublisher
 import typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.v3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Google Play Android Developer API v3 */
-      def load(name: androidpublisher, version: v3): js.Thenable[Unit] = js.native
-      def load(name: androidpublisher, version: v3, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object androidpublisher extends js.Object {
+      object androidpublisher {
         
+        @JSGlobal("gapi.client.androidpublisher.edits")
+        @js.native
         val edits: EditsResource = js.native
         
+        @JSGlobal("gapi.client.androidpublisher.inappproducts")
+        @js.native
         val inappproducts: InappproductsResource = js.native
         
+        @JSGlobal("gapi.client.androidpublisher.internalappsharingartifacts")
+        @js.native
         val internalappsharingartifacts: InternalappsharingartifactsResource = js.native
         
+        @JSGlobal("gapi.client.androidpublisher.orders")
+        @js.native
         val orders: OrdersResource = js.native
         
+        @JSGlobal("gapi.client.androidpublisher.purchases")
+        @js.native
         val purchases: PurchasesResource = js.native
         
+        @JSGlobal("gapi.client.androidpublisher.reviews")
+        @js.native
         val reviews: ReviewsResource = js.native
         
+        @JSGlobal("gapi.client.androidpublisher.systemapks")
+        @js.native
         val systemapks: SystemapksResource = js.native
       }
+      
+      /** Load Google Play Android Developer API v3 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: androidpublisher, version: v3): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: androidpublisher, version: v3, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

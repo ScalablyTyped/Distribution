@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientSecuritycenter.anon.Callback
 import typings.maximMazurokGapiClientSecuritycenter.anon.Fields
 import typings.maximMazurokGapiClientSecuritycenter.anon.Key
 import typings.maximMazurokGapiClientSecuritycenter.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetsResource extends js.Object {
+trait AssetsResource extends StObject {
   
   /** Filters an organization's assets and groups them by their specified properties. */
   def group(request: Accesstoken): Request[GroupAssetsResponse] = js.native

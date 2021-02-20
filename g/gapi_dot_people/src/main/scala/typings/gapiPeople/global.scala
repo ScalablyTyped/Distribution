@@ -7,35 +7,35 @@ import typings.gapiPeople.gapi.client.people.people.GetBatchGetParameters
 import typings.gapiPeople.gapi.client.people.people.GetParameters
 import typings.gapiPeople.gapi.client.people.people.connections.ListParameters
 import typings.gapiPeople.gapi.client.people.people.connections.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      @js.native
-      object people extends js.Object {
+      object people {
         
-        @js.native
-        object people extends js.Object {
+        object people {
           
-          def get(parameters: GetParameters): HttpRequest[Person] = js.native
-          
-          def getBatchGet(parameters: GetBatchGetParameters): HttpRequest[BatchGetResponse] = js.native
-          
-          @js.native
-          object connections extends js.Object {
+          object connections {
             
+            @JSGlobal("gapi.client.people.people.connections.list")
+            @js.native
             def list(parameters: ListParameters): HttpRequest[Response] = js.native
           }
+          
+          @JSGlobal("gapi.client.people.people.get")
+          @js.native
+          def get(parameters: GetParameters): HttpRequest[Person] = js.native
+          
+          @JSGlobal("gapi.client.people.people.getBatchGet")
+          @js.native
+          def getBatchGet(parameters: GetBatchGetParameters): HttpRequest[BatchGetResponse] = js.native
         }
       }
     }

@@ -1,6 +1,7 @@
 package typings.simperium.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,33 +34,21 @@ object BucketEvent {
   }
   
   @scala.inline
-  implicit class BucketEventOps[Self <: BucketEvent[_], T] (val x: Self with BucketEvent[T]) extends AnyVal {
+  implicit class BucketEventMutableBuilder[Self <: BucketEvent[_], T] (val x: Self with BucketEvent[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: (Error, Change[T]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: ChangeVersion => Unit): Self = StObject.set(x, "index", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexing(value: () => Unit): Self = StObject.set(x, "indexing", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setError(value: (Error, Change[T]) => Unit): Self = this.set("error", js.Any.fromFunction2(value))
+    def setRemove(value: EntityId => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndex(value: ChangeVersion => Unit): Self = this.set("index", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIndexing(value: () => Unit): Self = this.set("indexing", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: EntityId => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: (EntityId, T, RemoteInfo[T]) => Unit): Self = this.set("update", js.Any.fromFunction3(value))
+    def setUpdate(value: (EntityId, T, RemoteInfo[T]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

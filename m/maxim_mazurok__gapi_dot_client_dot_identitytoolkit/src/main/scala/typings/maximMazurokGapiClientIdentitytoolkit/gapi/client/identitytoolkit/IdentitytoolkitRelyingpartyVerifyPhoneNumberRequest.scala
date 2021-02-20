@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest extends js.Object {
+trait IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest extends StObject {
   
   var code: js.UndefOr[String] = js.native
   
@@ -31,60 +32,48 @@ object IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest {
   }
   
   @scala.inline
-  implicit class IdentitytoolkitRelyingpartyVerifyPhoneNumberRequestOps[Self <: IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest] (val x: Self) extends AnyVal {
+  implicit class IdentitytoolkitRelyingpartyVerifyPhoneNumberRequestMutableBuilder[Self <: IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setSessionInfo(value: String): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    def setSessionInfoUndefined: Self = StObject.set(x, "sessionInfo", js.undefined)
     
     @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    def setTemporaryProof(value: String): Self = StObject.set(x, "temporaryProof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionInfo(value: String): Self = this.set("sessionInfo", value.asInstanceOf[js.Any])
+    def setTemporaryProofUndefined: Self = StObject.set(x, "temporaryProof", js.undefined)
     
     @scala.inline
-    def deleteSessionInfo: Self = this.set("sessionInfo", js.undefined)
+    def setVerificationProof(value: String): Self = StObject.set(x, "verificationProof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemporaryProof(value: String): Self = this.set("temporaryProof", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemporaryProof: Self = this.set("temporaryProof", js.undefined)
-    
-    @scala.inline
-    def setVerificationProof(value: String): Self = this.set("verificationProof", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerificationProof: Self = this.set("verificationProof", js.undefined)
+    def setVerificationProofUndefined: Self = StObject.set(x, "verificationProof", js.undefined)
   }
 }

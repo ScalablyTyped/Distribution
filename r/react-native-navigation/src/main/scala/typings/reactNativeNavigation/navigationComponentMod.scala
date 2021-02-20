@@ -10,16 +10,22 @@ import typings.reactNativeNavigation.componentEventsMod.SearchBarCancelPressedEv
 import typings.reactNativeNavigation.componentEventsMod.SearchBarUpdatedEvent
 import typings.reactNativeNavigation.navigationComponentPropsMod.NavigationComponentProps
 import typings.reactNativeNavigation.optionsMod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-navigation/lib/dist/interfaces/NavigationComponent", JSImport.Namespace)
-@js.native
-object navigationComponentMod extends js.Object {
+object navigationComponentMod {
   
+  @JSImport("react-native-navigation/lib/dist/interfaces/NavigationComponent", "NavigationComponent")
   @js.native
-  class NavigationComponent[Props, State, Snapshot] () extends Component[Props with NavigationComponentProps, State, Snapshot] {
+  class NavigationComponent[Props, State, Snapshot] protected () extends Component[Props with NavigationComponentProps, State, Snapshot] {
+    def this(props: Props with NavigationComponentProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props with NavigationComponentProps, context: js.Any) = this()
     
     def componentDidAppear(_event: ComponentDidAppearEvent): Unit = js.native
     
@@ -36,8 +42,11 @@ object navigationComponentMod extends js.Object {
     def searchBarUpdated(_event: SearchBarUpdatedEvent): Unit = js.native
   }
   /* static members */
-  @js.native
-  object NavigationComponent extends js.Object {
+  object NavigationComponent {
+    
+    @JSImport("react-native-navigation/lib/dist/interfaces/NavigationComponent", "NavigationComponent")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Options used to apply a style configuration when the screen appears.
@@ -45,6 +54,10 @@ object navigationComponentMod extends js.Object {
       * This field can either contain the concrete options to be applied, or a generator function
       * which accepts props and returns an Options object.
       */
-    var options: (js.Function1[/* props */ js.UndefOr[js.Any], Options]) | Options = js.native
+    @JSImport("react-native-navigation/lib/dist/interfaces/NavigationComponent", "NavigationComponent.options")
+    @js.native
+    def options: (js.Function1[/* props */ js.UndefOr[js.Any], Options]) | Options = js.native
+    @scala.inline
+    def options_=(x: (js.Function1[/* props */ js.UndefOr[js.Any], Options]) | Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
 }

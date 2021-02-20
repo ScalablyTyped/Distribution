@@ -1,5 +1,6 @@
 package typings.rangyinputs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("rangyinputs", JSImport.Namespace)
 @js.native
-object rangyinputsRequire extends js.Object
+object rangyinputsRequire extends StObject

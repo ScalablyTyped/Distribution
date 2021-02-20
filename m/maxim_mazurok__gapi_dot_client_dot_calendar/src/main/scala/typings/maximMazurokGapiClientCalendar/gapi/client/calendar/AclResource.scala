@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientCalendar.anon.Key
 import typings.maximMazurokGapiClientCalendar.anon.MaxResults
 import typings.maximMazurokGapiClientCalendar.anon.Oauthtoken
 import typings.maximMazurokGapiClientCalendar.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AclResource extends js.Object {
+trait AclResource extends StObject {
   
   /** Deletes an access control rule. */
   def delete(): Request[Unit] = js.native

@@ -1,13 +1,14 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operators/switchMap", JSImport.Namespace)
-@js.native
-object operatorsSwitchMapMod extends js.Object {
+object operatorsSwitchMapMod {
   
+  @JSImport("rxjs/operators/switchMap", "switchMap")
+  @js.native
   def switchMap[T, R](
     project: js.Function2[
       /* value */ T, 

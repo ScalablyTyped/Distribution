@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -169,111 +170,99 @@ object ASPxClientSeries {
   }
   
   @scala.inline
-  implicit class ASPxClientSeriesOps[Self <: ASPxClientSeries] (val x: Self) extends AnyVal {
+  implicit class ASPxClientSeriesMutableBuilder[Self <: ASPxClientSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualCrosshairEnabled(value: Boolean): Self = StObject.set(x, "actualCrosshairEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualCrosshairLabelVisibility(value: Boolean): Self = StObject.set(x, "actualCrosshairLabelVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgumentScaleType(value: String): Self = StObject.set(x, "argumentScaleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualCrosshairEnabled(value: Boolean): Self = this.set("actualCrosshairEnabled", value.asInstanceOf[js.Any])
+    def setAxisX(value: String): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualCrosshairLabelVisibility(value: Boolean): Self = this.set("actualCrosshairLabelVisibility", value.asInstanceOf[js.Any])
+    def setAxisY(value: String): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentScaleType(value: String): Self = this.set("argumentScaleType", value.asInstanceOf[js.Any])
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisX(value: String): Self = this.set("axisX", value.asInstanceOf[js.Any])
+    def setCrosshairLabelPattern(value: String): Self = StObject.set(x, "crosshairLabelPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisY(value: String): Self = this.set("axisY", value.asInstanceOf[js.Any])
+    def setCrosshairValueItems(value: js.Array[ASPxClientCrosshairValueItem]): Self = StObject.set(x, "crosshairValueItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCrosshairValueItemsVarargs(value: ASPxClientCrosshairValueItem*): Self = StObject.set(x, "crosshairValueItems", js.Array(value :_*))
     
     @scala.inline
-    def setCrosshairLabelPattern(value: String): Self = this.set("crosshairLabelPattern", value.asInstanceOf[js.Any])
+    def setFibonacciIndicators(value: js.Array[ASPxClientFibonacciIndicator]): Self = StObject.set(x, "fibonacciIndicators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairValueItemsVarargs(value: ASPxClientCrosshairValueItem*): Self = this.set("crosshairValueItems", js.Array(value :_*))
+    def setFibonacciIndicatorsVarargs(value: ASPxClientFibonacciIndicator*): Self = StObject.set(x, "fibonacciIndicators", js.Array(value :_*))
     
     @scala.inline
-    def setCrosshairValueItems(value: js.Array[ASPxClientCrosshairValueItem]): Self = this.set("crosshairValueItems", value.asInstanceOf[js.Any])
+    def setGroupedElementsPattern(value: String): Self = StObject.set(x, "groupedElementsPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFibonacciIndicatorsVarargs(value: ASPxClientFibonacciIndicator*): Self = this.set("fibonacciIndicators", js.Array(value :_*))
+    def setIndicators(value: js.Array[ASPxClientIndicator]): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFibonacciIndicators(value: js.Array[ASPxClientFibonacciIndicator]): Self = this.set("fibonacciIndicators", value.asInstanceOf[js.Any])
+    def setIndicatorsVarargs(value: ASPxClientIndicator*): Self = StObject.set(x, "indicators", js.Array(value :_*))
     
     @scala.inline
-    def setGroupedElementsPattern(value: String): Self = this.set("groupedElementsPattern", value.asInstanceOf[js.Any])
+    def setLabel(value: ASPxClientSeriesLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicatorsVarargs(value: ASPxClientIndicator*): Self = this.set("indicators", js.Array(value :_*))
+    def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicators(value: js.Array[ASPxClientIndicator]): Self = this.set("indicators", value.asInstanceOf[js.Any])
+    def setPoints(value: js.Array[ASPxClientSeriesPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: ASPxClientSeriesLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setPointsVarargs(value: ASPxClientSeriesPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setPane(value: String): Self = this.set("pane", value.asInstanceOf[js.Any])
+    def setRegressionLines(value: js.Array[ASPxClientRegressionLine]): Self = StObject.set(x, "regressionLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointsVarargs(value: ASPxClientSeriesPoint*): Self = this.set("points", js.Array(value :_*))
+    def setRegressionLinesVarargs(value: ASPxClientRegressionLine*): Self = StObject.set(x, "regressionLines", js.Array(value :_*))
     
     @scala.inline
-    def setPoints(value: js.Array[ASPxClientSeriesPoint]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setStackedGroup(value: String): Self = StObject.set(x, "stackedGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegressionLinesVarargs(value: ASPxClientRegressionLine*): Self = this.set("regressionLines", js.Array(value :_*))
+    def setTitles(value: js.Array[ASPxClientSeriesTitle]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegressionLines(value: js.Array[ASPxClientRegressionLine]): Self = this.set("regressionLines", value.asInstanceOf[js.Any])
+    def setTitlesVarargs(value: ASPxClientSeriesTitle*): Self = StObject.set(x, "titles", js.Array(value :_*))
     
     @scala.inline
-    def setStackedGroup(value: String): Self = this.set("stackedGroup", value.asInstanceOf[js.Any])
+    def setToolTipEnabled(value: Boolean): Self = StObject.set(x, "toolTipEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitlesVarargs(value: ASPxClientSeriesTitle*): Self = this.set("titles", js.Array(value :_*))
+    def setToolTipImage(value: String): Self = StObject.set(x, "toolTipImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitles(value: js.Array[ASPxClientSeriesTitle]): Self = this.set("titles", value.asInstanceOf[js.Any])
+    def setToolTipText(value: String): Self = StObject.set(x, "toolTipText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolTipEnabled(value: Boolean): Self = this.set("toolTipEnabled", value.asInstanceOf[js.Any])
+    def setTrendLines(value: js.Array[ASPxClientTrendLine]): Self = StObject.set(x, "trendLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolTipImage(value: String): Self = this.set("toolTipImage", value.asInstanceOf[js.Any])
+    def setTrendLinesVarargs(value: ASPxClientTrendLine*): Self = StObject.set(x, "trendLines", js.Array(value :_*))
     
     @scala.inline
-    def setToolTipText(value: String): Self = this.set("toolTipText", value.asInstanceOf[js.Any])
+    def setValueScaleType(value: String): Self = StObject.set(x, "valueScaleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrendLinesVarargs(value: ASPxClientTrendLine*): Self = this.set("trendLines", js.Array(value :_*))
+    def setViewType(value: String): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrendLines(value: js.Array[ASPxClientTrendLine]): Self = this.set("trendLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueScaleType(value: String): Self = this.set("valueScaleType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewType(value: String): Self = this.set("viewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

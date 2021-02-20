@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateLexBotRequest extends js.Object {
+trait DisassociateLexBotRequest extends StObject {
   
   /**
     * The name of the Amazon Lex bot. Maximum character limit of 50.
@@ -31,27 +32,15 @@ object DisassociateLexBotRequest {
   }
   
   @scala.inline
-  implicit class DisassociateLexBotRequestOps[Self <: DisassociateLexBotRequest] (val x: Self) extends AnyVal {
+  implicit class DisassociateLexBotRequestMutableBuilder[Self <: DisassociateLexBotRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBotName(value: BotName): Self = StObject.set(x, "BotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBotName(value: BotName): Self = this.set("BotName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLexRegion(value: LexRegion): Self = this.set("LexRegion", value.asInstanceOf[js.Any])
+    def setLexRegion(value: LexRegion): Self = StObject.set(x, "LexRegion", value.asInstanceOf[js.Any])
   }
 }

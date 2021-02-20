@@ -1,15 +1,14 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/metadata-args/EmbeddedMetadataArgs", JSImport.Namespace)
-@js.native
-object embeddedMetadataArgsMod extends js.Object {
+object embeddedMetadataArgsMod {
   
   @js.native
-  trait EmbeddedMetadataArgs extends js.Object {
+  trait EmbeddedMetadataArgs extends StObject {
     
     /**
       * Indicates if this embedded is array or not.

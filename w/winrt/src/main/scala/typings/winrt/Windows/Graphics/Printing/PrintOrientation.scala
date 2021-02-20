@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintOrientation extends js.Object
+sealed trait PrintOrientation extends StObject
 @JSGlobal("Windows.Graphics.Printing.PrintOrientation")
 @js.native
-object PrintOrientation extends js.Object {
+object PrintOrientation extends StObject {
   
   @js.native
   sealed trait default extends PrintOrientation

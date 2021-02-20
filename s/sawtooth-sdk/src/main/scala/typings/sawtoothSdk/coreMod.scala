@@ -1,16 +1,16 @@
 package typings.sawtoothSdk
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sawtooth-sdk/signing/core", JSImport.Namespace)
-@js.native
-object coreMod extends js.Object {
+object coreMod {
   
+  @JSImport("sawtooth-sdk/signing/core", "Context")
   @js.native
-  abstract class Context () extends js.Object {
+  abstract class Context () extends StObject {
     
     /**
       * Returns the algorithm name used for this context.
@@ -56,8 +56,9 @@ object coreMod extends js.Object {
     def verify(signature: String, message: Buffer, publicKey: PublicKey): Boolean = js.native
   }
   
+  @JSImport("sawtooth-sdk/signing/core", "NoSuchAlgorithmError")
   @js.native
-  class NoSuchAlgorithmError () extends js.Object {
+  class NoSuchAlgorithmError () extends StObject {
     def this(message: String) = this()
     
     /**
@@ -66,8 +67,9 @@ object coreMod extends js.Object {
     var name: String = js.native
   }
   
+  @JSImport("sawtooth-sdk/signing/core", "ParseError")
   @js.native
-  class ParseError () extends js.Object {
+  class ParseError () extends StObject {
     def this(message: String) = this()
     
     /**
@@ -76,8 +78,9 @@ object coreMod extends js.Object {
     var name: String = js.native
   }
   
+  @JSImport("sawtooth-sdk/signing/core", "PrivateKey")
   @js.native
-  abstract class PrivateKey () extends js.Object {
+  abstract class PrivateKey () extends StObject {
     
     /**
       * Returns the public key bytes in a Buffer.
@@ -95,8 +98,9 @@ object coreMod extends js.Object {
     def getAlgorithmName(): String = js.native
   }
   
+  @JSImport("sawtooth-sdk/signing/core", "PublicKey")
   @js.native
-  abstract class PublicKey () extends js.Object {
+  abstract class PublicKey () extends StObject {
     
     /**
       * Returns the public key bytes in a Buffer.
@@ -114,8 +118,9 @@ object coreMod extends js.Object {
     def getAlgorithmName(): String = js.native
   }
   
+  @JSImport("sawtooth-sdk/signing/core", "SigningError")
   @js.native
-  class SigningError () extends js.Object {
+  class SigningError () extends StObject {
     def this(message: String) = this()
     
     /**

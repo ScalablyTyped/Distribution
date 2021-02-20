@@ -8,6 +8,7 @@ import typings.stellarSdk.stellarSdkStrings.ledger
 import typings.stellarSdk.stellarSdkStrings.operations
 import typings.stellarSdk.stellarSdkStrings.precedes
 import typings.stellarSdk.stellarSdkStrings.succeeds
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,81 +80,69 @@ object TransactionResponse {
   }
   
   @scala.inline
-  implicit class TransactionResponseOps[Self <: TransactionResponse] (val x: Self) extends AnyVal {
+  implicit class TransactionResponseMutableBuilder[Self <: TransactionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFee_account(value: String): Self = StObject.set(x, "fee_account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFee_bump_transaction(value: FeeBumpTransactionResponse): Self = StObject.set(x, "fee_bump_transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setFee_bump_transactionUndefined: Self = StObject.set(x, "fee_bump_transaction", js.undefined)
     
     @scala.inline
-    def setFee_account(value: String): Self = this.set("fee_account", value.asInstanceOf[js.Any])
+    def setFee_charged(value: Double | String): Self = StObject.set(x, "fee_charged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFee_charged(value: Double | String): Self = this.set("fee_charged", value.asInstanceOf[js.Any])
+    def setFee_meta_xdr(value: String): Self = StObject.set(x, "fee_meta_xdr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFee_meta_xdr(value: String): Self = this.set("fee_meta_xdr", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInner_transaction(value: InnerTransactionResponse): Self = StObject.set(x, "inner_transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_fee(value: Double | String): Self = this.set("max_fee", value.asInstanceOf[js.Any])
+    def setInner_transactionUndefined: Self = StObject.set(x, "inner_transaction", js.undefined)
     
     @scala.inline
-    def setMemo_type(value: MemoType): Self = this.set("memo_type", value.asInstanceOf[js.Any])
+    def setMax_fee(value: Double | String): Self = StObject.set(x, "max_fee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation_count(value: Double): Self = this.set("operation_count", value.asInstanceOf[js.Any])
+    def setMemo(value: String): Self = StObject.set(x, "memo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaging_token(value: String): Self = this.set("paging_token", value.asInstanceOf[js.Any])
+    def setMemoUndefined: Self = StObject.set(x, "memo", js.undefined)
     
     @scala.inline
-    def setSignaturesVarargs(value: String*): Self = this.set("signatures", js.Array(value :_*))
+    def setMemo_bytes(value: String): Self = StObject.set(x, "memo_bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatures(value: js.Array[String]): Self = this.set("signatures", value.asInstanceOf[js.Any])
+    def setMemo_bytesUndefined: Self = StObject.set(x, "memo_bytes", js.undefined)
     
     @scala.inline
-    def setSource_account(value: String): Self = this.set("source_account", value.asInstanceOf[js.Any])
+    def setMemo_type(value: MemoType): Self = StObject.set(x, "memo_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_account_sequence(value: String): Self = this.set("source_account_sequence", value.asInstanceOf[js.Any])
+    def setOperation_count(value: Double): Self = StObject.set(x, "operation_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFee_bump_transaction(value: FeeBumpTransactionResponse): Self = this.set("fee_bump_transaction", value.asInstanceOf[js.Any])
+    def setPaging_token(value: String): Self = StObject.set(x, "paging_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFee_bump_transaction: Self = this.set("fee_bump_transaction", js.undefined)
+    def setSignatures(value: js.Array[String]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInner_transaction(value: InnerTransactionResponse): Self = this.set("inner_transaction", value.asInstanceOf[js.Any])
+    def setSignaturesVarargs(value: String*): Self = StObject.set(x, "signatures", js.Array(value :_*))
     
     @scala.inline
-    def deleteInner_transaction: Self = this.set("inner_transaction", js.undefined)
+    def setSource_account(value: String): Self = StObject.set(x, "source_account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemo(value: String): Self = this.set("memo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemo: Self = this.set("memo", js.undefined)
-    
-    @scala.inline
-    def setMemo_bytes(value: String): Self = this.set("memo_bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemo_bytes: Self = this.set("memo_bytes", js.undefined)
+    def setSource_account_sequence(value: String): Self = StObject.set(x, "source_account_sequence", value.asInstanceOf[js.Any])
   }
 }

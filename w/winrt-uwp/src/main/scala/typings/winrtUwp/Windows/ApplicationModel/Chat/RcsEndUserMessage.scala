@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Rich Communication Services (RCS) end user message. */
 @js.native
-trait RcsEndUserMessage extends js.Object {
+trait RcsEndUserMessage extends StObject {
   
   /** Gets the actions to which the user can respond. */
   var actions: IVectorView[RcsEndUserMessageAction] = js.native
@@ -57,39 +58,27 @@ object RcsEndUserMessage {
   }
   
   @scala.inline
-  implicit class RcsEndUserMessageOps[Self <: RcsEndUserMessage] (val x: Self) extends AnyVal {
+  implicit class RcsEndUserMessageMutableBuilder[Self <: RcsEndUserMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: IVectorView[RcsEndUserMessageAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPinRequired(value: Boolean): Self = StObject.set(x, "isPinRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSendResponseAsync(value: RcsEndUserMessageAction => IPromiseWithIAsyncAction): Self = StObject.set(x, "sendResponseAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActions(value: IVectorView[RcsEndUserMessageAction]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setSendResponseWithPinAsync(value: (RcsEndUserMessageAction, String) => IPromiseWithIAsyncAction): Self = StObject.set(x, "sendResponseWithPinAsync", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsPinRequired(value: Boolean): Self = this.set("isPinRequired", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendResponseAsync(value: RcsEndUserMessageAction => IPromiseWithIAsyncAction): Self = this.set("sendResponseAsync", js.Any.fromFunction1(value))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendResponseWithPinAsync(value: (RcsEndUserMessageAction, String) => IPromiseWithIAsyncAction): Self = this.set("sendResponseWithPinAsync", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportId(value: String): Self = this.set("transportId", value.asInstanceOf[js.Any])
+    def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
   }
 }

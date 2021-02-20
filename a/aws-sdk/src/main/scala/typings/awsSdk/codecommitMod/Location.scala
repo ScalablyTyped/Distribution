@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Location extends js.Object {
+trait Location extends StObject {
   
   /**
     * The name of the file being compared, including its extension and subdirectory, if any.
@@ -31,36 +32,24 @@ object Location {
   }
   
   @scala.inline
-  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilePosition(value: Position): Self = StObject.set(x, "filePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePath(value: Path): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    def setFilePositionUndefined: Self = StObject.set(x, "filePosition", js.undefined)
     
     @scala.inline
-    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    def setRelativeFileVersion(value: RelativeFileVersionEnum): Self = StObject.set(x, "relativeFileVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePosition(value: Position): Self = this.set("filePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilePosition: Self = this.set("filePosition", js.undefined)
-    
-    @scala.inline
-    def setRelativeFileVersion(value: RelativeFileVersionEnum): Self = this.set("relativeFileVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelativeFileVersion: Self = this.set("relativeFileVersion", js.undefined)
+    def setRelativeFileVersionUndefined: Self = StObject.set(x, "relativeFileVersion", js.undefined)
   }
 }

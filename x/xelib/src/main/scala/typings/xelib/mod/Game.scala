@@ -1,11 +1,12 @@
 package typings.xelib.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Game extends js.Object {
+trait Game extends StObject {
   
   /**
     * The filename of the game executable.
@@ -36,30 +37,18 @@ object Game {
   }
   
   @scala.inline
-  implicit class GameOps[Self <: Game] (val x: Self) extends AnyVal {
+  implicit class GameMutableBuilder[Self <: Game] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExeName(value: String): Self = StObject.set(x, "exeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: GameMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExeName(value: String): Self = this.set("exeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: GameMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortName(value: String): Self = this.set("shortName", value.asInstanceOf[js.Any])
+    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
   }
 }

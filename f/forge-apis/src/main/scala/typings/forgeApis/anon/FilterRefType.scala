@@ -1,11 +1,12 @@
 package typings.forgeApis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterRefType extends js.Object {
+trait FilterRefType extends StObject {
   
   var filterDirection: js.UndefOr[String] = js.native
   
@@ -26,57 +27,45 @@ object FilterRefType {
   }
   
   @scala.inline
-  implicit class FilterRefTypeOps[Self <: FilterRefType] (val x: Self) extends AnyVal {
+  implicit class FilterRefTypeMutableBuilder[Self <: FilterRefType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterDirection(value: String): Self = StObject.set(x, "filterDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterDirectionUndefined: Self = StObject.set(x, "filterDirection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterExtensionType(value: js.Array[String]): Self = StObject.set(x, "filterExtensionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDirection(value: String): Self = this.set("filterDirection", value.asInstanceOf[js.Any])
+    def setFilterExtensionTypeUndefined: Self = StObject.set(x, "filterExtensionType", js.undefined)
     
     @scala.inline
-    def deleteFilterDirection: Self = this.set("filterDirection", js.undefined)
+    def setFilterExtensionTypeVarargs(value: String*): Self = StObject.set(x, "filterExtensionType", js.Array(value :_*))
     
     @scala.inline
-    def setFilterExtensionTypeVarargs(value: String*): Self = this.set("filterExtensionType", js.Array(value :_*))
+    def setFilterId(value: js.Array[String]): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterExtensionType(value: js.Array[String]): Self = this.set("filterExtensionType", value.asInstanceOf[js.Any])
+    def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
     
     @scala.inline
-    def deleteFilterExtensionType: Self = this.set("filterExtensionType", js.undefined)
+    def setFilterIdVarargs(value: String*): Self = StObject.set(x, "filterId", js.Array(value :_*))
     
     @scala.inline
-    def setFilterIdVarargs(value: String*): Self = this.set("filterId", js.Array(value :_*))
+    def setFilterRefType(value: String): Self = StObject.set(x, "filterRefType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterId(value: js.Array[String]): Self = this.set("filterId", value.asInstanceOf[js.Any])
+    def setFilterRefTypeUndefined: Self = StObject.set(x, "filterRefType", js.undefined)
     
     @scala.inline
-    def deleteFilterId: Self = this.set("filterId", js.undefined)
+    def setFilterType(value: js.Array[String]): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterRefType(value: String): Self = this.set("filterRefType", value.asInstanceOf[js.Any])
+    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
     @scala.inline
-    def deleteFilterRefType: Self = this.set("filterRefType", js.undefined)
-    
-    @scala.inline
-    def setFilterTypeVarargs(value: String*): Self = this.set("filterType", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilterType(value: js.Array[String]): Self = this.set("filterType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    def setFilterTypeVarargs(value: String*): Self = StObject.set(x, "filterType", js.Array(value :_*))
   }
 }

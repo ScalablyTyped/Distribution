@@ -1,17 +1,16 @@
 package typings.amapJsApiAutocomplete
 
 import typings.amapJsApiAutocomplete.AMap.Autocomplete.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object AMap extends js.Object {
+  object AMap {
     
+    @JSGlobal("AMap.Autocomplete")
     @js.native
     /**
       * 输入提示，根据输入关键字提示匹配信息

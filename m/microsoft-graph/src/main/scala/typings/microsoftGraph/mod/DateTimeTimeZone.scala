@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateTimeTimeZone extends js.Object {
+trait DateTimeTimeZone extends StObject {
   
   /**
     * A single point of time in a combined date and time representation ({date}T{time}; for example,
@@ -25,33 +26,21 @@ object DateTimeTimeZone {
   }
   
   @scala.inline
-  implicit class DateTimeTimeZoneOps[Self <: DateTimeTimeZone] (val x: Self) extends AnyVal {
+  implicit class DateTimeTimeZoneMutableBuilder[Self <: DateTimeTimeZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeZone(value: NullableOption[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTime(value: String): Self = this.set("dateTime", value.asInstanceOf[js.Any])
+    def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
     
     @scala.inline
-    def deleteDateTime: Self = this.set("dateTime", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: NullableOption[String]): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
-    
-    @scala.inline
-    def setTimeZoneNull: Self = this.set("timeZone", null)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

@@ -2,21 +2,25 @@ package typings.materialChips
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialChips.adapterMod.MDCChipSetAdapter
-import typings.materialChips.anon.CHIPSELECTOR
-import typings.materialChips.anon.CHOICE
 import typings.materialChips.anon.PartialMDCChipSetAdapter
 import typings.materialChips.typesMod.MDCChipInteractionEventDetail
 import typings.materialChips.typesMod.MDCChipNavigationEventDetail
 import typings.materialChips.typesMod.MDCChipRemovalEventDetail
 import typings.materialChips.typesMod.MDCChipSelectionEventDetail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/chips/chip-set/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
   
+  @JSImport("@material/chips/chip-set/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCChipSetFoundation {
+    def this(adapter: PartialMDCChipSetAdapter) = this()
+  }
+  
+  @JSImport("@material/chips/chip-set/foundation", "MDCChipSetFoundation")
   @js.native
   class MDCChipSetFoundation () extends MDCFoundation[MDCChipSetAdapter] {
     def this(adapter: PartialMDCChipSetAdapter) = this()
@@ -51,30 +55,5 @@ object foundationMod extends js.Object {
       * Does not notify clients of the updated selection state.
       */
     def select(chipId: String): Unit = js.native
-  }
-  /* static members */
-  @js.native
-  object MDCChipSetFoundation extends js.Object {
-    
-    def cssClasses: CHOICE = js.native
-    
-    def defaultAdapter: MDCChipSetAdapter = js.native
-    
-    def strings: CHIPSELECTOR = js.native
-  }
-  
-  @js.native
-  class default () extends MDCChipSetFoundation {
-    def this(adapter: PartialMDCChipSetAdapter) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def cssClasses: CHOICE = js.native
-    
-    def defaultAdapter: MDCChipSetAdapter = js.native
-    
-    def strings: CHIPSELECTOR = js.native
   }
 }

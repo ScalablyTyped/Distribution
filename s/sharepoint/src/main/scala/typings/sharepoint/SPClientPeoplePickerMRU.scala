@@ -2,12 +2,13 @@ package typings.sharepoint
 
 import typings.sharepoint.anon.Dictname
 import typings.sharepoint.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SPClientPeoplePickerMRU extends js.Object {
+trait SPClientPeoplePickerMRU extends StObject {
   
   def GetItems(strKey: String): Dictname = js.native
   
@@ -24,27 +25,15 @@ object SPClientPeoplePickerMRU {
   }
   
   @scala.inline
-  implicit class SPClientPeoplePickerMRUOps[Self <: SPClientPeoplePickerMRU] (val x: Self) extends AnyVal {
+  implicit class SPClientPeoplePickerMRUMutableBuilder[Self <: SPClientPeoplePickerMRU] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetItems(value: String => Dictname): Self = StObject.set(x, "GetItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResetCache(value: () => Unit): Self = StObject.set(x, "ResetCache", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetItems(value: String => Dictname): Self = this.set("GetItems", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResetCache(value: () => Unit): Self = this.set("ResetCache", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetItem(value: (String, js.Any) => Unit): Self = this.set("SetItem", js.Any.fromFunction2(value))
+    def setSetItem(value: (String, js.Any) => Unit): Self = StObject.set(x, "SetItem", js.Any.fromFunction2(value))
   }
 }

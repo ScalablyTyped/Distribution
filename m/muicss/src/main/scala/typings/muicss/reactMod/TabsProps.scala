@@ -2,6 +2,7 @@ package typings.muicss.reactMod
 
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,36 +25,24 @@ object TabsProps {
   }
   
   @scala.inline
-  implicit class TabsPropsOps[Self <: TabsProps] (val x: Self) extends AnyVal {
+  implicit class TabsPropsMutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSelectedIndex(value: Double): Self = StObject.set(x, "defaultSelectedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSelectedIndexUndefined: Self = StObject.set(x, "defaultSelectedIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJustified(value: Boolean): Self = StObject.set(x, "justified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSelectedIndex(value: Double): Self = this.set("defaultSelectedIndex", value.asInstanceOf[js.Any])
+    def setJustifiedUndefined: Self = StObject.set(x, "justified", js.undefined)
     
     @scala.inline
-    def deleteDefaultSelectedIndex: Self = this.set("defaultSelectedIndex", js.undefined)
+    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJustified(value: Boolean): Self = this.set("justified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJustified: Self = this.set("justified", js.undefined)
-    
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = this.set("selectedIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedIndex: Self = this.set("selectedIndex", js.undefined)
+    def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
   }
 }

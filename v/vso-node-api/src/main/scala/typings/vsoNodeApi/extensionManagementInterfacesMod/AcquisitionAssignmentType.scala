@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AcquisitionAssignmentType extends js.Object
+sealed trait AcquisitionAssignmentType extends StObject
 @JSImport("vso-node-api/interfaces/ExtensionManagementInterfaces", "AcquisitionAssignmentType")
 @js.native
-object AcquisitionAssignmentType extends js.Object {
+object AcquisitionAssignmentType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AcquisitionAssignmentType with Double] = js.native
@@ -19,19 +19,16 @@ object AcquisitionAssignmentType extends js.Object {
     */
   @js.native
   sealed trait All extends AcquisitionAssignmentType
-  /* 2 */ @js.native
-  object All extends TopLevel[All with Double]
+  /* 2 */ val All: typings.vsoNodeApi.extensionManagementInterfacesMod.AcquisitionAssignmentType.All with Double = js.native
   
   /**
     * Just assign for me
     */
   @js.native
   sealed trait Me extends AcquisitionAssignmentType
-  /* 1 */ @js.native
-  object Me extends TopLevel[Me with Double]
+  /* 1 */ val Me: typings.vsoNodeApi.extensionManagementInterfacesMod.AcquisitionAssignmentType.Me with Double = js.native
   
   @js.native
   sealed trait None extends AcquisitionAssignmentType
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.vsoNodeApi.extensionManagementInterfacesMod.AcquisitionAssignmentType.None with Double = js.native
 }

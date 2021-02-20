@@ -1,11 +1,12 @@
 package typings.jsClipper.ClipperLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntersectNode extends js.Object {
+trait IntersectNode extends StObject {
   
   var edge1: TEdge = js.native
   
@@ -24,30 +25,18 @@ object IntersectNode {
   }
   
   @scala.inline
-  implicit class IntersectNodeOps[Self <: IntersectNode] (val x: Self) extends AnyVal {
+  implicit class IntersectNodeMutableBuilder[Self <: IntersectNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdge1(value: TEdge): Self = StObject.set(x, "edge1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdge2(value: TEdge): Self = StObject.set(x, "edge2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNext(value: TEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdge1(value: TEdge): Self = this.set("edge1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEdge2(value: TEdge): Self = this.set("edge2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: TEdge): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPt(value: TEdge): Self = this.set("pt", value.asInstanceOf[js.Any])
+    def setPt(value: TEdge): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,15 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SyntaxKind extends js.Object
+sealed trait SyntaxKind extends StObject
 @JSGlobal("TypeScript.SyntaxKind")
 @js.native
-object SyntaxKind extends js.Object {
+object SyntaxKind extends StObject {
   
   @js.native
   sealed trait AddAssignmentExpression extends SyntaxKind

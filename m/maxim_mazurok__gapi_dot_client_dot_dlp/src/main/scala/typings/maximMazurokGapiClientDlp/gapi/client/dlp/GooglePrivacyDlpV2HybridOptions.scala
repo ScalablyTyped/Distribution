@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2HybridOptions extends js.Object {
+trait GooglePrivacyDlpV2HybridOptions extends StObject {
   
   /** A short description of where the data is coming from. Will be stored once in the job. 256 max length. */
   var description: js.UndefOr[String] = js.native
@@ -40,49 +41,37 @@ object GooglePrivacyDlpV2HybridOptions {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2HybridOptionsOps[Self <: GooglePrivacyDlpV2HybridOptions] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2HybridOptionsMutableBuilder[Self <: GooglePrivacyDlpV2HybridOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridOptions with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setRequiredFindingLabelKeysVarargs(value: String*): Self = this.set("requiredFindingLabelKeys", js.Array(value :_*))
+    def setRequiredFindingLabelKeys(value: js.Array[String]): Self = StObject.set(x, "requiredFindingLabelKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredFindingLabelKeys(value: js.Array[String]): Self = this.set("requiredFindingLabelKeys", value.asInstanceOf[js.Any])
+    def setRequiredFindingLabelKeysUndefined: Self = StObject.set(x, "requiredFindingLabelKeys", js.undefined)
     
     @scala.inline
-    def deleteRequiredFindingLabelKeys: Self = this.set("requiredFindingLabelKeys", js.undefined)
+    def setRequiredFindingLabelKeysVarargs(value: String*): Self = StObject.set(x, "requiredFindingLabelKeys", js.Array(value :_*))
     
     @scala.inline
-    def setTableOptions(value: GooglePrivacyDlpV2TableOptions): Self = this.set("tableOptions", value.asInstanceOf[js.Any])
+    def setTableOptions(value: GooglePrivacyDlpV2TableOptions): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableOptions: Self = this.set("tableOptions", js.undefined)
+    def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
   }
 }

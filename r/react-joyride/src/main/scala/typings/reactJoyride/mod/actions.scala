@@ -12,12 +12,13 @@ import typings.reactJoyride.reactJoyrideStrings.skip
 import typings.reactJoyride.reactJoyrideStrings.start
 import typings.reactJoyride.reactJoyrideStrings.stop
 import typings.reactJoyride.reactJoyrideStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait actions extends js.Object {
+trait actions extends StObject {
   
   var CLOSE: close = js.native
   
@@ -65,54 +66,42 @@ object actions {
   }
   
   @scala.inline
-  implicit class actionsOps[Self <: actions] (val x: Self) extends AnyVal {
+  implicit class actionsMutableBuilder[Self <: actions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCLOSE(value: close): Self = StObject.set(x, "CLOSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGO(value: go): Self = StObject.set(x, "GO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setINDEX(value: index): Self = StObject.set(x, "INDEX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLOSE(value: close): Self = this.set("CLOSE", value.asInstanceOf[js.Any])
+    def setINIT(value: init): Self = StObject.set(x, "INIT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGO(value: go): Self = this.set("GO", value.asInstanceOf[js.Any])
+    def setNEXT(value: next): Self = StObject.set(x, "NEXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINDEX(value: index): Self = this.set("INDEX", value.asInstanceOf[js.Any])
+    def setPREV(value: prev): Self = StObject.set(x, "PREV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINIT(value: init): Self = this.set("INIT", value.asInstanceOf[js.Any])
+    def setRESET(value: reset): Self = StObject.set(x, "RESET", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNEXT(value: next): Self = this.set("NEXT", value.asInstanceOf[js.Any])
+    def setRESTART(value: restart): Self = StObject.set(x, "RESTART", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPREV(value: prev): Self = this.set("PREV", value.asInstanceOf[js.Any])
+    def setSKIP(value: skip): Self = StObject.set(x, "SKIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRESET(value: reset): Self = this.set("RESET", value.asInstanceOf[js.Any])
+    def setSTART(value: start): Self = StObject.set(x, "START", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRESTART(value: restart): Self = this.set("RESTART", value.asInstanceOf[js.Any])
+    def setSTOP(value: stop): Self = StObject.set(x, "STOP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSKIP(value: skip): Self = this.set("SKIP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSTART(value: start): Self = this.set("START", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSTOP(value: stop): Self = this.set("STOP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUPDATE(value: update): Self = this.set("UPDATE", value.asInstanceOf[js.Any])
+    def setUPDATE(value: update): Self = StObject.set(x, "UPDATE", value.asInstanceOf[js.Any])
   }
 }

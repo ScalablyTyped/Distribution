@@ -1,12 +1,13 @@
 package typings.dav.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dav", "Credentials")
 @js.native
-class Credentials () extends js.Object {
+class Credentials () extends StObject {
   def this(options: CredentialsOptions) = this()
   
   /**

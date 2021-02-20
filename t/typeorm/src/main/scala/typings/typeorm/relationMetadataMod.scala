@@ -11,16 +11,16 @@ import typings.typeorm.onDeleteTypeMod.OnDeleteType
 import typings.typeorm.onUpdateTypeMod.OnUpdateType
 import typings.typeorm.propertyTypeInFunctionMod.PropertyTypeFactory
 import typings.typeorm.relationTypesMod.RelationType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/metadata/RelationMetadata", JSImport.Namespace)
-@js.native
-object relationMetadataMod extends js.Object {
+object relationMetadataMod {
   
+  @JSImport("typeorm/browser/metadata/RelationMetadata", "RelationMetadata")
   @js.native
-  class RelationMetadata protected () extends js.Object {
+  class RelationMetadata protected () extends StObject {
     def this(options: ArgsEmbeddedMetadata) = this()
     
     /**

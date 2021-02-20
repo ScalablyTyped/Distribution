@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class MediaMarkerTypes ()
   extends typings.winrtUwp.Windows.Media.MediaMarkerTypes
-/* static members */
-@JSGlobal("Windows.Media.MediaMarkerTypes")
-@js.native
-object MediaMarkerTypes extends js.Object {
+object MediaMarkerTypes {
+  
+  @JSGlobal("Windows.Media.MediaMarkerTypes")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Gets the value of the Bookmark type which is returned as the string "Bookmark" */
-  var bookmark: String = js.native
+  /* static member */
+  @JSGlobal("Windows.Media.MediaMarkerTypes.bookmark")
+  @js.native
+  def bookmark: String = js.native
+  @scala.inline
+  def bookmark_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bookmark")(x.asInstanceOf[js.Any])
 }

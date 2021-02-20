@@ -1,14 +1,14 @@
 package typings.typeorm
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/error/AlreadyHasActiveConnectionError", JSImport.Namespace)
-@js.native
-object errorAlreadyHasActiveConnectionErrorMod extends js.Object {
+object errorAlreadyHasActiveConnectionErrorMod {
   
+  @JSImport("typeorm/error/AlreadyHasActiveConnectionError", "AlreadyHasActiveConnectionError")
   @js.native
   class AlreadyHasActiveConnectionError protected () extends Error {
     def this(connectionName: String) = this()

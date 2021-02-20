@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMaintenanceWindowExecutionTaskRequest extends js.Object {
+trait GetMaintenanceWindowExecutionTaskRequest extends StObject {
   
   /**
     * The ID of the specific task execution in the maintenance window task that should be retrieved.
@@ -26,24 +27,12 @@ object GetMaintenanceWindowExecutionTaskRequest {
   }
   
   @scala.inline
-  implicit class GetMaintenanceWindowExecutionTaskRequestOps[Self <: GetMaintenanceWindowExecutionTaskRequest] (val x: Self) extends AnyVal {
+  implicit class GetMaintenanceWindowExecutionTaskRequestMutableBuilder[Self <: GetMaintenanceWindowExecutionTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTaskId(value: MaintenanceWindowExecutionTaskId): Self = StObject.set(x, "TaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTaskId(value: MaintenanceWindowExecutionTaskId): Self = this.set("TaskId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = this.set("WindowExecutionId", value.asInstanceOf[js.Any])
+    def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = StObject.set(x, "WindowExecutionId", value.asInstanceOf[js.Any])
   }
 }

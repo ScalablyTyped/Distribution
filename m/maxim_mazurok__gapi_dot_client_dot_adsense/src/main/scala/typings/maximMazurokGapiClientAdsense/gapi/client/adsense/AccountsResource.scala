@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAdsense.anon.Fields
 import typings.maximMazurokGapiClientAdsense.anon.Tree
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountsResource extends js.Object {
+trait AccountsResource extends StObject {
   
   var adclients: AdclientsResource = js.native
   

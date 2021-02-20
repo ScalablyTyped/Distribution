@@ -1,11 +1,12 @@
 package typings.awsSdk.timestreamwriteMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dimension extends js.Object {
+trait Dimension extends StObject {
   
   /**
     * The data type of the dimension for the time series data point.
@@ -31,30 +32,18 @@ object Dimension {
   }
   
   @scala.inline
-  implicit class DimensionOps[Self <: Dimension] (val x: Self) extends AnyVal {
+  implicit class DimensionMutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionValueType(value: DimensionValueType): Self = StObject.set(x, "DimensionValueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionValueTypeUndefined: Self = StObject.set(x, "DimensionValueType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: StringValue256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: StringValue256): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: StringValue2048): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDimensionValueType(value: DimensionValueType): Self = this.set("DimensionValueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimensionValueType: Self = this.set("DimensionValueType", js.undefined)
+    def setValue(value: StringValue2048): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

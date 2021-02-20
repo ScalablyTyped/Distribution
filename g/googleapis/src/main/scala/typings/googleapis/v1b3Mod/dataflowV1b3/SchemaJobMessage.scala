@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A particular message pertaining to a Dataflow job.
   */
 @js.native
-trait SchemaJobMessage extends js.Object {
+trait SchemaJobMessage extends StObject {
   
   /**
     * Deprecated.
@@ -39,42 +40,30 @@ object SchemaJobMessage {
   }
   
   @scala.inline
-  implicit class SchemaJobMessageOps[Self <: SchemaJobMessage] (val x: Self) extends AnyVal {
+  implicit class SchemaJobMessageMutableBuilder[Self <: SchemaJobMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageImportance(value: String): Self = StObject.set(x, "messageImportance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMessageImportanceUndefined: Self = StObject.set(x, "messageImportance", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageImportance(value: String): Self = this.set("messageImportance", value.asInstanceOf[js.Any])
+    def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
     
     @scala.inline
-    def deleteMessageImportance: Self = this.set("messageImportance", js.undefined)
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageText(value: String): Self = this.set("messageText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageText: Self = this.set("messageText", js.undefined)
-    
-    @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

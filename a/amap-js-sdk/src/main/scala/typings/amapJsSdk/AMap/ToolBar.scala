@@ -1,6 +1,7 @@
 package typings.amapJsSdk.AMap
 
 import typings.amapJsSdk.anon.Lat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,48 +55,36 @@ object ToolBar {
   }
   
   @scala.inline
-  implicit class ToolBarOps[Self <: ToolBar] (val x: Self) extends AnyVal {
+  implicit class ToolBarMutableBuilder[Self <: ToolBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoLocation(value: () => Unit): Self = StObject.set(x, "doLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLocation(value: () => Lat): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOffset(value: () => Pixel): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoLocation(value: () => Unit): Self = this.set("doLocation", js.Any.fromFunction0(value))
+    def setHideDirection(value: () => Unit): Self = StObject.set(x, "hideDirection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocation(value: () => Lat): Self = this.set("getLocation", js.Any.fromFunction0(value))
+    def setHideLocation(value: () => Unit): Self = StObject.set(x, "hideLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOffset(value: () => Pixel): Self = this.set("getOffset", js.Any.fromFunction0(value))
+    def setHideRuler(value: () => Unit): Self = StObject.set(x, "hideRuler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHideDirection(value: () => Unit): Self = this.set("hideDirection", js.Any.fromFunction0(value))
+    def setSetOffset(value: Pixel => Unit): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideLocation(value: () => Unit): Self = this.set("hideLocation", js.Any.fromFunction0(value))
+    def setShowDirection(value: () => Unit): Self = StObject.set(x, "showDirection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHideRuler(value: () => Unit): Self = this.set("hideRuler", js.Any.fromFunction0(value))
+    def setShowLocation(value: () => Unit): Self = StObject.set(x, "showLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetOffset(value: Pixel => Unit): Self = this.set("setOffset", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowDirection(value: () => Unit): Self = this.set("showDirection", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowLocation(value: () => Unit): Self = this.set("showLocation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowRuler(value: () => Unit): Self = this.set("showRuler", js.Any.fromFunction0(value))
+    def setShowRuler(value: () => Unit): Self = StObject.set(x, "showRuler", js.Any.fromFunction0(value))
   }
 }

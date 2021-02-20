@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -151,30 +152,18 @@ object Text {
   }
   
   @scala.inline
-  implicit class TextOps[Self <: Text] (val x: Self) extends AnyVal {
+  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndRedline(value: PropertyValues): Self = StObject.set(x, "EndRedline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "EndRedline", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartRedline(value: PropertyValues): Self = StObject.set(x, "StartRedline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndRedlineVarargs(value: PropertyValue*): Self = this.set("EndRedline", js.Array(value :_*))
-    
-    @scala.inline
-    def setEndRedline(value: PropertyValues): Self = this.set("EndRedline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartRedlineVarargs(value: PropertyValue*): Self = this.set("StartRedline", js.Array(value :_*))
-    
-    @scala.inline
-    def setStartRedline(value: PropertyValues): Self = this.set("StartRedline", value.asInstanceOf[js.Any])
+    def setStartRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "StartRedline", js.Array(value :_*))
   }
 }

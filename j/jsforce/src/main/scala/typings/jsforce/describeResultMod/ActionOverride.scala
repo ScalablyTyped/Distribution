@@ -1,11 +1,12 @@
 package typings.jsforce.describeResultMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionOverride extends js.Object {
+trait ActionOverride extends StObject {
   
   var formFactor: String = js.native
   
@@ -26,39 +27,27 @@ object ActionOverride {
   }
   
   @scala.inline
-  implicit class ActionOverrideOps[Self <: ActionOverride] (val x: Self) extends AnyVal {
+  implicit class ActionOverrideMutableBuilder[Self <: ActionOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAvailableInTouch(value: Boolean): Self = StObject.set(x, "isAvailableInTouch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormFactor(value: String): Self = this.set("formFactor", value.asInstanceOf[js.Any])
+    def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAvailableInTouch(value: Boolean): Self = this.set("isAvailableInTouch", value.asInstanceOf[js.Any])
+    def setUrl(value: maybe[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setUrlNull: Self = StObject.set(x, "url", null)
     
     @scala.inline
-    def setPageId(value: String): Self = this.set("pageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: maybe[String]): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setUrlNull: Self = this.set("url", null)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

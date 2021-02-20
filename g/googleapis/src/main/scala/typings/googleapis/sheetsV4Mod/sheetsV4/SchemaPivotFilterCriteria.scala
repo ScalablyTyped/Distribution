@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Criteria for showing/hiding rows in a pivot table.
   */
 @js.native
-trait SchemaPivotFilterCriteria extends js.Object {
+trait SchemaPivotFilterCriteria extends StObject {
   
   /**
     * Values that should be included.  Values not listed here are excluded.
@@ -24,27 +25,15 @@ object SchemaPivotFilterCriteria {
   }
   
   @scala.inline
-  implicit class SchemaPivotFilterCriteriaOps[Self <: SchemaPivotFilterCriteria] (val x: Self) extends AnyVal {
+  implicit class SchemaPivotFilterCriteriaMutableBuilder[Self <: SchemaPivotFilterCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVisibleValues(value: js.Array[String]): Self = StObject.set(x, "visibleValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVisibleValuesUndefined: Self = StObject.set(x, "visibleValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVisibleValuesVarargs(value: String*): Self = this.set("visibleValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setVisibleValues(value: js.Array[String]): Self = this.set("visibleValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleValues: Self = this.set("visibleValues", js.undefined)
+    def setVisibleValuesVarargs(value: String*): Self = StObject.set(x, "visibleValues", js.Array(value :_*))
   }
 }

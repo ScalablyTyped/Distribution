@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EthernetProperties[M /* <: ManagedObject */] extends js.Object {
+trait EthernetProperties[M /* <: ManagedObject */] extends StObject {
   
   /** The authentication used by the Ethernet network. Possible values are None and 8021X. */
   var Authentication: js.UndefOr[EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]] = js.native
@@ -25,36 +26,24 @@ object EthernetProperties {
   }
   
   @scala.inline
-  implicit class EthernetPropertiesOps[Self <: EthernetProperties[_], M /* <: ManagedObject */] (val x: Self with EthernetProperties[M]) extends AnyVal {
+  implicit class EthernetPropertiesMutableBuilder[Self <: EthernetProperties[_], M /* <: ManagedObject */] (val x: Self with EthernetProperties[M]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthentication(value: EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationUndefined: Self = StObject.set(x, "Authentication", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoConnect(value: Boolean | ManagedBoolean): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthentication(value: EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]): Self = this.set("Authentication", value.asInstanceOf[js.Any])
+    def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
     
     @scala.inline
-    def deleteAuthentication: Self = this.set("Authentication", js.undefined)
+    def setEAP(value: EAPProperties): Self = StObject.set(x, "EAP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoConnect(value: Boolean | ManagedBoolean): Self = this.set("AutoConnect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoConnect: Self = this.set("AutoConnect", js.undefined)
-    
-    @scala.inline
-    def setEAP(value: EAPProperties): Self = this.set("EAP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEAP: Self = this.set("EAP", js.undefined)
+    def setEAPUndefined: Self = StObject.set(x, "EAP", js.undefined)
   }
 }

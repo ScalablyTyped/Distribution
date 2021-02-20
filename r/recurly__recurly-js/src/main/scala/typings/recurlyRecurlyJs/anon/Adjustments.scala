@@ -1,12 +1,13 @@
 package typings.recurlyRecurlyJs.anon
 
 import typings.recurlyRecurlyJs.checkoutMod.Item
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Adjustments extends js.Object {
+trait Adjustments extends StObject {
   
   /**
     * Total cost of all adjustments. This is part of the subtotal due at the next billing cycle.
@@ -63,45 +64,33 @@ object Adjustments {
   }
   
   @scala.inline
-  implicit class AdjustmentsOps[Self <: Adjustments] (val x: Self) extends AnyVal {
+  implicit class AdjustmentsMutableBuilder[Self <: Adjustments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustments(value: String): Self = StObject.set(x, "adjustments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiscount(value: String): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGiftCard(value: String): Self = StObject.set(x, "giftCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustments(value: String): Self = this.set("adjustments", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscount(value: String): Self = this.set("discount", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setGiftCard(value: String): Self = this.set("giftCard", value.asInstanceOf[js.Any])
+    def setSubscriptions(value: String): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: Item*): Self = this.set("items", js.Array(value :_*))
+    def setSubtotal(value: String): Self = StObject.set(x, "subtotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[Item]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setTaxes(value: String): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptions(value: String): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtotal(value: String): Self = this.set("subtotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaxes(value: String): Self = this.set("taxes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: String): Self = this.set("total", value.asInstanceOf[js.Any])
+    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

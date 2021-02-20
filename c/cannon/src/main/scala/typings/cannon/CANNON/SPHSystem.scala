@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SPHSystem extends js.Object {
+trait SPHSystem extends StObject {
   
   def add(particle: Particle): Unit = js.native
   
@@ -65,78 +66,66 @@ object SPHSystem {
   }
   
   @scala.inline
-  implicit class SPHSystemOps[Self <: SPHSystem] (val x: Self) extends AnyVal {
+  implicit class SPHSystemMutableBuilder[Self <: SPHSystem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Particle => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDensities(value: js.Array[Double]): Self = StObject.set(x, "densities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDensitiesVarargs(value: Double*): Self = StObject.set(x, "densities", js.Array(value :_*))
     
     @scala.inline
-    def setAdd(value: Particle => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDensitiesVarargs(value: Double*): Self = this.set("densities", js.Array(value :_*))
+    def setEps(value: Double): Self = StObject.set(x, "eps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDensities(value: js.Array[Double]): Self = this.set("densities", value.asInstanceOf[js.Any])
+    def setGetNeighbors(value: (Particle, js.Array[Particle]) => Unit): Self = StObject.set(x, "getNeighbors", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDensity(value: Double): Self = this.set("density", value.asInstanceOf[js.Any])
+    def setGradw(value: (Vec3, Vec3) => Unit): Self = StObject.set(x, "gradw", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEps(value: Double): Self = this.set("eps", value.asInstanceOf[js.Any])
+    def setNablaw(value: Double => Double): Self = StObject.set(x, "nablaw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNeighbors(value: (Particle, js.Array[Particle]) => Unit): Self = this.set("getNeighbors", js.Any.fromFunction2(value))
+    def setNeighbors(value: js.Array[Double]): Self = StObject.set(x, "neighbors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradw(value: (Vec3, Vec3) => Unit): Self = this.set("gradw", js.Any.fromFunction2(value))
+    def setNeighborsVarargs(value: Double*): Self = StObject.set(x, "neighbors", js.Array(value :_*))
     
     @scala.inline
-    def setNablaw(value: Double => Double): Self = this.set("nablaw", js.Any.fromFunction1(value))
+    def setParticles(value: js.Array[Particle]): Self = StObject.set(x, "particles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeighborsVarargs(value: Double*): Self = this.set("neighbors", js.Array(value :_*))
+    def setParticlesVarargs(value: Particle*): Self = StObject.set(x, "particles", js.Array(value :_*))
     
     @scala.inline
-    def setNeighbors(value: js.Array[Double]): Self = this.set("neighbors", value.asInstanceOf[js.Any])
+    def setPressures(value: js.Array[Double]): Self = StObject.set(x, "pressures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticlesVarargs(value: Particle*): Self = this.set("particles", js.Array(value :_*))
+    def setPressuresVarargs(value: Double*): Self = StObject.set(x, "pressures", js.Array(value :_*))
     
     @scala.inline
-    def setParticles(value: js.Array[Particle]): Self = this.set("particles", value.asInstanceOf[js.Any])
+    def setRemove(value: Particle => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPressuresVarargs(value: Double*): Self = this.set("pressures", js.Array(value :_*))
+    def setSmoothingRadius(value: Double): Self = StObject.set(x, "smoothingRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressures(value: js.Array[Double]): Self = this.set("pressures", value.asInstanceOf[js.Any])
+    def setSpeedOfSound(value: Double): Self = StObject.set(x, "speedOfSound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: Particle => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSmoothingRadius(value: Double): Self = this.set("smoothingRadius", value.asInstanceOf[js.Any])
+    def setViscosity(value: Double): Self = StObject.set(x, "viscosity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeedOfSound(value: Double): Self = this.set("speedOfSound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setViscosity(value: Double): Self = this.set("viscosity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setW(value: Double => Double): Self = this.set("w", js.Any.fromFunction1(value))
+    def setW(value: Double => Double): Self = StObject.set(x, "w", js.Any.fromFunction1(value))
   }
 }

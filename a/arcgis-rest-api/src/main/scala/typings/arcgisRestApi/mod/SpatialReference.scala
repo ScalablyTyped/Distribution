@@ -1,5 +1,6 @@
 package typings.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisRestApi.mod.SpatialReferenceWkt
   - typings.arcgisRestApi.mod.SpatialReferenceWkid
 */
-trait SpatialReference extends js.Object
+trait SpatialReference extends StObject
 object SpatialReference {
   
   @scala.inline
-  def SpatialReferenceWkt(): SpatialReference = {
+  def SpatialReferenceWkid(): typings.arcgisRestApi.mod.SpatialReferenceWkid = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[SpatialReference]
+    __obj.asInstanceOf[typings.arcgisRestApi.mod.SpatialReferenceWkid]
   }
   
   @scala.inline
-  def SpatialReferenceWkid(): SpatialReference = {
+  def SpatialReferenceWkt(): typings.arcgisRestApi.mod.SpatialReferenceWkt = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[SpatialReference]
+    __obj.asInstanceOf[typings.arcgisRestApi.mod.SpatialReferenceWkt]
   }
 }

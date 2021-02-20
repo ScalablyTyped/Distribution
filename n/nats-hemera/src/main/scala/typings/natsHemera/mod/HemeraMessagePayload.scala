@@ -1,12 +1,13 @@
 package typings.natsHemera.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HemeraMessagePayload extends js.Object {
+trait HemeraMessagePayload extends StObject {
   
   var error: Error | Null = js.native
   
@@ -27,36 +28,24 @@ object HemeraMessagePayload {
   }
   
   @scala.inline
-  implicit class HemeraMessagePayloadOps[Self <: HemeraMessagePayload] (val x: Self) extends AnyVal {
+  implicit class HemeraMessagePayloadMutableBuilder[Self <: HemeraMessagePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Any): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setRequest(value: Request$): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: Request$): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: js.Any): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrace(value: Trace): Self = this.set("trace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setTrace(value: Trace): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
   }
 }

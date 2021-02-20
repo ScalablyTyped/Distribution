@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ReposListInvitationsForAuthenticatedUse
 import typings.octokitTypes.endpointsMod.ReposListInvitationsForAuthenticatedUserRequestOptions
 import typings.octokitTypes.endpointsMod.ReposListInvitationsForAuthenticatedUserResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReposListInvitationsForAuthenticatedUserEndpoint extends js.Object {
+trait ParametersReposListInvitationsForAuthenticatedUserEndpoint extends StObject {
   
   var parameters: ReposListInvitationsForAuthenticatedUserEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersReposListInvitationsForAuthenticatedUserEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReposListInvitationsForAuthenticatedUserEndpointOps[Self <: ParametersReposListInvitationsForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReposListInvitationsForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersReposListInvitationsForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReposListInvitationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ReposListInvitationsForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReposListInvitationsForAuthenticatedUserEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ReposListInvitationsForAuthenticatedUserRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

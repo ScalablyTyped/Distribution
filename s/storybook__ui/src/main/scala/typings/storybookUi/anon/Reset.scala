@@ -4,12 +4,13 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reset extends js.Object {
+trait Reset extends StObject {
   
   var reset: MouseEventHandler[Element] = js.native
   
@@ -30,27 +31,15 @@ object Reset {
   }
   
   @scala.inline
-  implicit class ResetOps[Self <: Reset] (val x: Self) extends AnyVal {
+  implicit class ResetMutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReset(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setZoomIn(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "zoomIn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReset(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = this.set("reset", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setZoomIn(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = this.set("zoomIn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setZoomOut(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = this.set("zoomOut", js.Any.fromFunction1(value))
+    def setZoomOut(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "zoomOut", js.Any.fromFunction1(value))
   }
 }

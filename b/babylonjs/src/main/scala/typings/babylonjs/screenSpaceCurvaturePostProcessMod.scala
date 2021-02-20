@@ -6,14 +6,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/screenSpaceCurvaturePostProcess", JSImport.Namespace)
-@js.native
-object screenSpaceCurvaturePostProcessMod extends js.Object {
+object screenSpaceCurvaturePostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/screenSpaceCurvaturePostProcess", "ScreenSpaceCurvaturePostProcess")
   @js.native
   class ScreenSpaceCurvaturePostProcess protected () extends PostProcess {
     /**
@@ -53,15 +53,11 @@ object screenSpaceCurvaturePostProcessMod extends js.Object {
     var valley: Double = js.native
   }
   /* static members */
-  @js.native
-  object ScreenSpaceCurvaturePostProcess extends js.Object {
-    
-    /**
-      * Support test.
-      */
-    def IsSupported: Boolean = js.native
+  object ScreenSpaceCurvaturePostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/screenSpaceCurvaturePostProcess", "ScreenSpaceCurvaturePostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): ScreenSpaceCurvaturePostProcess = js.native
   }
 }

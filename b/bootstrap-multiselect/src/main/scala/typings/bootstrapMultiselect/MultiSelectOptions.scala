@@ -8,12 +8,13 @@ import typings.std.HTMLElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOptionsCollection
 import typings.std.HTMLSelectElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiSelectOptions extends js.Object {
+trait MultiSelectOptions extends StObject {
   
   /**
     * allSelectedText is the text displayed if all options are selected. You can disable displaying the allSelectedText by setting it to false.
@@ -296,276 +297,264 @@ object MultiSelectOptions {
   }
   
   @scala.inline
-  implicit class MultiSelectOptionsOps[Self <: MultiSelectOptions] (val x: Self) extends AnyVal {
+  implicit class MultiSelectOptionsMutableBuilder[Self <: MultiSelectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllSelectedText(value: String | Boolean): Self = StObject.set(x, "allSelectedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllSelectedTextUndefined: Self = StObject.set(x, "allSelectedText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonClass(value: String): Self = StObject.set(x, "buttonClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllSelectedText(value: String | Boolean): Self = this.set("allSelectedText", value.asInstanceOf[js.Any])
+    def setButtonClassUndefined: Self = StObject.set(x, "buttonClass", js.undefined)
     
     @scala.inline
-    def deleteAllSelectedText: Self = this.set("allSelectedText", js.undefined)
+    def setButtonContainer(value: String): Self = StObject.set(x, "buttonContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonClass(value: String): Self = this.set("buttonClass", value.asInstanceOf[js.Any])
+    def setButtonContainerUndefined: Self = StObject.set(x, "buttonContainer", js.undefined)
     
     @scala.inline
-    def deleteButtonClass: Self = this.set("buttonClass", js.undefined)
+    def setButtonText(value: (/* options */ HTMLOptionsCollection, /* select */ HTMLSelectElement) => String): Self = StObject.set(x, "buttonText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setButtonContainer(value: String): Self = this.set("buttonContainer", value.asInstanceOf[js.Any])
+    def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
     
     @scala.inline
-    def deleteButtonContainer: Self = this.set("buttonContainer", js.undefined)
+    def setButtonTitle(value: (/* options */ js.Array[HTMLOptionElement], /* select */ HTMLSelectElement) => String): Self = StObject.set(x, "buttonTitle", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setButtonText(value: (/* options */ HTMLOptionsCollection, /* select */ HTMLSelectElement) => String): Self = this.set("buttonText", js.Any.fromFunction2(value))
+    def setButtonTitleUndefined: Self = StObject.set(x, "buttonTitle", js.undefined)
     
     @scala.inline
-    def deleteButtonText: Self = this.set("buttonText", js.undefined)
+    def setButtonWidth(value: String): Self = StObject.set(x, "buttonWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonTitle(value: (/* options */ js.Array[HTMLOptionElement], /* select */ HTMLSelectElement) => String): Self = this.set("buttonTitle", js.Any.fromFunction2(value))
+    def setButtonWidthUndefined: Self = StObject.set(x, "buttonWidth", js.undefined)
     
     @scala.inline
-    def deleteButtonTitle: Self = this.set("buttonTitle", js.undefined)
+    def setCheckboxName(value: String): Self = StObject.set(x, "checkboxName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonWidth(value: String): Self = this.set("buttonWidth", value.asInstanceOf[js.Any])
+    def setCheckboxNameUndefined: Self = StObject.set(x, "checkboxName", js.undefined)
     
     @scala.inline
-    def deleteButtonWidth: Self = this.set("buttonWidth", js.undefined)
+    def setDelimiterText(value: String): Self = StObject.set(x, "delimiterText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxName(value: String): Self = this.set("checkboxName", value.asInstanceOf[js.Any])
+    def setDelimiterTextUndefined: Self = StObject.set(x, "delimiterText", js.undefined)
     
     @scala.inline
-    def deleteCheckboxName: Self = this.set("checkboxName", js.undefined)
+    def setDisableIfEmpty(value: Boolean): Self = StObject.set(x, "disableIfEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiterText(value: String): Self = this.set("delimiterText", value.asInstanceOf[js.Any])
+    def setDisableIfEmptyUndefined: Self = StObject.set(x, "disableIfEmpty", js.undefined)
     
     @scala.inline
-    def deleteDelimiterText: Self = this.set("delimiterText", js.undefined)
+    def setDisabledText(value: String): Self = StObject.set(x, "disabledText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableIfEmpty(value: Boolean): Self = this.set("disableIfEmpty", value.asInstanceOf[js.Any])
+    def setDisabledTextUndefined: Self = StObject.set(x, "disabledText", js.undefined)
     
     @scala.inline
-    def deleteDisableIfEmpty: Self = this.set("disableIfEmpty", js.undefined)
+    def setDropRight(value: Boolean): Self = StObject.set(x, "dropRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledText(value: String): Self = this.set("disabledText", value.asInstanceOf[js.Any])
+    def setDropRightUndefined: Self = StObject.set(x, "dropRight", js.undefined)
     
     @scala.inline
-    def deleteDisabledText: Self = this.set("disabledText", js.undefined)
+    def setDropUp(value: Boolean): Self = StObject.set(x, "dropUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropRight(value: Boolean): Self = this.set("dropRight", value.asInstanceOf[js.Any])
+    def setDropUpUndefined: Self = StObject.set(x, "dropUp", js.undefined)
     
     @scala.inline
-    def deleteDropRight: Self = this.set("dropRight", js.undefined)
+    def setEnableCaseInsensitiveFiltering(value: Boolean): Self = StObject.set(x, "enableCaseInsensitiveFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropUp(value: Boolean): Self = this.set("dropUp", value.asInstanceOf[js.Any])
+    def setEnableCaseInsensitiveFilteringUndefined: Self = StObject.set(x, "enableCaseInsensitiveFiltering", js.undefined)
     
     @scala.inline
-    def deleteDropUp: Self = this.set("dropUp", js.undefined)
+    def setEnableClickableOptGroups(value: Boolean): Self = StObject.set(x, "enableClickableOptGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCaseInsensitiveFiltering(value: Boolean): Self = this.set("enableCaseInsensitiveFiltering", value.asInstanceOf[js.Any])
+    def setEnableClickableOptGroupsUndefined: Self = StObject.set(x, "enableClickableOptGroups", js.undefined)
     
     @scala.inline
-    def deleteEnableCaseInsensitiveFiltering: Self = this.set("enableCaseInsensitiveFiltering", js.undefined)
+    def setEnableCollapsibleOptGroups(value: Boolean): Self = StObject.set(x, "enableCollapsibleOptGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableClickableOptGroups(value: Boolean): Self = this.set("enableClickableOptGroups", value.asInstanceOf[js.Any])
+    def setEnableCollapsibleOptGroupsUndefined: Self = StObject.set(x, "enableCollapsibleOptGroups", js.undefined)
     
     @scala.inline
-    def deleteEnableClickableOptGroups: Self = this.set("enableClickableOptGroups", js.undefined)
+    def setEnableFiltering(value: Boolean): Self = StObject.set(x, "enableFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCollapsibleOptGroups(value: Boolean): Self = this.set("enableCollapsibleOptGroups", value.asInstanceOf[js.Any])
+    def setEnableFilteringUndefined: Self = StObject.set(x, "enableFiltering", js.undefined)
     
     @scala.inline
-    def deleteEnableCollapsibleOptGroups: Self = this.set("enableCollapsibleOptGroups", js.undefined)
+    def setEnableFullValueFiltering(value: Boolean): Self = StObject.set(x, "enableFullValueFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableFiltering(value: Boolean): Self = this.set("enableFiltering", value.asInstanceOf[js.Any])
+    def setEnableFullValueFilteringUndefined: Self = StObject.set(x, "enableFullValueFiltering", js.undefined)
     
     @scala.inline
-    def deleteEnableFiltering: Self = this.set("enableFiltering", js.undefined)
+    def setEnableHTML(value: Boolean): Self = StObject.set(x, "enableHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableFullValueFiltering(value: Boolean): Self = this.set("enableFullValueFiltering", value.asInstanceOf[js.Any])
+    def setEnableHTMLUndefined: Self = StObject.set(x, "enableHTML", js.undefined)
     
     @scala.inline
-    def deleteEnableFullValueFiltering: Self = this.set("enableFullValueFiltering", js.undefined)
+    def setFilterBehavior(value: text | value | both): Self = StObject.set(x, "filterBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHTML(value: Boolean): Self = this.set("enableHTML", value.asInstanceOf[js.Any])
+    def setFilterBehaviorUndefined: Self = StObject.set(x, "filterBehavior", js.undefined)
     
     @scala.inline
-    def deleteEnableHTML: Self = this.set("enableHTML", js.undefined)
+    def setFilterPlaceholder(value: String): Self = StObject.set(x, "filterPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterBehavior(value: text | value | both): Self = this.set("filterBehavior", value.asInstanceOf[js.Any])
+    def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
     
     @scala.inline
-    def deleteFilterBehavior: Self = this.set("filterBehavior", js.undefined)
+    def setIncludeSelectAllOption(value: Boolean): Self = StObject.set(x, "includeSelectAllOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterPlaceholder(value: String): Self = this.set("filterPlaceholder", value.asInstanceOf[js.Any])
+    def setIncludeSelectAllOptionUndefined: Self = StObject.set(x, "includeSelectAllOption", js.undefined)
     
     @scala.inline
-    def deleteFilterPlaceholder: Self = this.set("filterPlaceholder", js.undefined)
+    def setInheritClass(value: Boolean): Self = StObject.set(x, "inheritClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSelectAllOption(value: Boolean): Self = this.set("includeSelectAllOption", value.asInstanceOf[js.Any])
+    def setInheritClassUndefined: Self = StObject.set(x, "inheritClass", js.undefined)
     
     @scala.inline
-    def deleteIncludeSelectAllOption: Self = this.set("includeSelectAllOption", js.undefined)
+    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInheritClass(value: Boolean): Self = this.set("inheritClass", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def deleteInheritClass: Self = this.set("inheritClass", js.undefined)
+    def setNSelectedText(value: String): Self = StObject.set(x, "nSelectedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    def setNSelectedTextUndefined: Self = StObject.set(x, "nSelectedText", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setNonSelectedText(value: String): Self = StObject.set(x, "nonSelectedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNSelectedText(value: String): Self = this.set("nSelectedText", value.asInstanceOf[js.Any])
+    def setNonSelectedTextUndefined: Self = StObject.set(x, "nonSelectedText", js.undefined)
     
     @scala.inline
-    def deleteNSelectedText: Self = this.set("nSelectedText", js.undefined)
+    def setNumberDisplayed(value: Double): Self = StObject.set(x, "numberDisplayed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonSelectedText(value: String): Self = this.set("nonSelectedText", value.asInstanceOf[js.Any])
+    def setNumberDisplayedUndefined: Self = StObject.set(x, "numberDisplayed", js.undefined)
     
     @scala.inline
-    def deleteNonSelectedText: Self = this.set("nonSelectedText", js.undefined)
+    def setOnChange(value: (/* option */ JQuery, /* checked */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNumberDisplayed(value: Double): Self = this.set("numberDisplayed", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteNumberDisplayed: Self = this.set("numberDisplayed", js.undefined)
+    def setOnDeselectAll(value: () => Unit): Self = StObject.set(x, "onDeselectAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnChange(value: (/* option */ JQuery, /* checked */ Boolean) => Unit): Self = this.set("onChange", js.Any.fromFunction2(value))
+    def setOnDeselectAllUndefined: Self = StObject.set(x, "onDeselectAll", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnDropdownHidden(value: /* event */ Event => Unit): Self = StObject.set(x, "onDropdownHidden", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDeselectAll(value: () => Unit): Self = this.set("onDeselectAll", js.Any.fromFunction0(value))
+    def setOnDropdownHiddenUndefined: Self = StObject.set(x, "onDropdownHidden", js.undefined)
     
     @scala.inline
-    def deleteOnDeselectAll: Self = this.set("onDeselectAll", js.undefined)
+    def setOnDropdownHide(value: /* event */ Event => Unit): Self = StObject.set(x, "onDropdownHide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDropdownHidden(value: /* event */ Event => Unit): Self = this.set("onDropdownHidden", js.Any.fromFunction1(value))
+    def setOnDropdownHideUndefined: Self = StObject.set(x, "onDropdownHide", js.undefined)
     
     @scala.inline
-    def deleteOnDropdownHidden: Self = this.set("onDropdownHidden", js.undefined)
+    def setOnDropdownShow(value: /* event */ Event => Unit): Self = StObject.set(x, "onDropdownShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDropdownHide(value: /* event */ Event => Unit): Self = this.set("onDropdownHide", js.Any.fromFunction1(value))
+    def setOnDropdownShowUndefined: Self = StObject.set(x, "onDropdownShow", js.undefined)
     
     @scala.inline
-    def deleteOnDropdownHide: Self = this.set("onDropdownHide", js.undefined)
+    def setOnDropdownShown(value: /* event */ Event => Unit): Self = StObject.set(x, "onDropdownShown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDropdownShow(value: /* event */ Event => Unit): Self = this.set("onDropdownShow", js.Any.fromFunction1(value))
+    def setOnDropdownShownUndefined: Self = StObject.set(x, "onDropdownShown", js.undefined)
     
     @scala.inline
-    def deleteOnDropdownShow: Self = this.set("onDropdownShow", js.undefined)
+    def setOnInitialized(value: (/* select */ HTMLSelectElement, /* container */ HTMLElement) => Unit): Self = StObject.set(x, "onInitialized", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnDropdownShown(value: /* event */ Event => Unit): Self = this.set("onDropdownShown", js.Any.fromFunction1(value))
+    def setOnInitializedUndefined: Self = StObject.set(x, "onInitialized", js.undefined)
     
     @scala.inline
-    def deleteOnDropdownShown: Self = this.set("onDropdownShown", js.undefined)
+    def setOnSelectAll(value: () => Unit): Self = StObject.set(x, "onSelectAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnInitialized(value: (/* select */ HTMLSelectElement, /* container */ HTMLElement) => Unit): Self = this.set("onInitialized", js.Any.fromFunction2(value))
+    def setOnSelectAllUndefined: Self = StObject.set(x, "onSelectAll", js.undefined)
     
     @scala.inline
-    def deleteOnInitialized: Self = this.set("onInitialized", js.undefined)
+    def setOptionClass(value: /* element */ HTMLElement => String): Self = StObject.set(x, "optionClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSelectAll(value: () => Unit): Self = this.set("onSelectAll", js.Any.fromFunction0(value))
+    def setOptionClassUndefined: Self = StObject.set(x, "optionClass", js.undefined)
     
     @scala.inline
-    def deleteOnSelectAll: Self = this.set("onSelectAll", js.undefined)
+    def setOptionLabel(value: /* element */ HTMLElement => String): Self = StObject.set(x, "optionLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOptionClass(value: /* element */ HTMLElement => String): Self = this.set("optionClass", js.Any.fromFunction1(value))
+    def setOptionLabelUndefined: Self = StObject.set(x, "optionLabel", js.undefined)
     
     @scala.inline
-    def deleteOptionClass: Self = this.set("optionClass", js.undefined)
+    def setSelectAllJustVisible(value: Boolean): Self = StObject.set(x, "selectAllJustVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionLabel(value: /* element */ HTMLElement => String): Self = this.set("optionLabel", js.Any.fromFunction1(value))
+    def setSelectAllJustVisibleUndefined: Self = StObject.set(x, "selectAllJustVisible", js.undefined)
     
     @scala.inline
-    def deleteOptionLabel: Self = this.set("optionLabel", js.undefined)
+    def setSelectAllName(value: String): Self = StObject.set(x, "selectAllName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAllJustVisible(value: Boolean): Self = this.set("selectAllJustVisible", value.asInstanceOf[js.Any])
+    def setSelectAllNameUndefined: Self = StObject.set(x, "selectAllName", js.undefined)
     
     @scala.inline
-    def deleteSelectAllJustVisible: Self = this.set("selectAllJustVisible", js.undefined)
+    def setSelectAllNumber(value: Boolean): Self = StObject.set(x, "selectAllNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAllName(value: String): Self = this.set("selectAllName", value.asInstanceOf[js.Any])
+    def setSelectAllNumberUndefined: Self = StObject.set(x, "selectAllNumber", js.undefined)
     
     @scala.inline
-    def deleteSelectAllName: Self = this.set("selectAllName", js.undefined)
+    def setSelectAllText(value: String): Self = StObject.set(x, "selectAllText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAllNumber(value: Boolean): Self = this.set("selectAllNumber", value.asInstanceOf[js.Any])
+    def setSelectAllTextUndefined: Self = StObject.set(x, "selectAllText", js.undefined)
     
     @scala.inline
-    def deleteSelectAllNumber: Self = this.set("selectAllNumber", js.undefined)
+    def setSelectAllValue(value: String | Double): Self = StObject.set(x, "selectAllValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAllText(value: String): Self = this.set("selectAllText", value.asInstanceOf[js.Any])
+    def setSelectAllValueUndefined: Self = StObject.set(x, "selectAllValue", js.undefined)
     
     @scala.inline
-    def deleteSelectAllText: Self = this.set("selectAllText", js.undefined)
+    def setSelectedClass(value: String): Self = StObject.set(x, "selectedClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAllValue(value: String | Double): Self = this.set("selectAllValue", value.asInstanceOf[js.Any])
+    def setSelectedClassUndefined: Self = StObject.set(x, "selectedClass", js.undefined)
     
     @scala.inline
-    def deleteSelectAllValue: Self = this.set("selectAllValue", js.undefined)
+    def setTemplates(value: Templates): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedClass(value: String): Self = this.set("selectedClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedClass: Self = this.set("selectedClass", js.undefined)
-    
-    @scala.inline
-    def setTemplates(value: Templates): Self = this.set("templates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplates: Self = this.set("templates", js.undefined)
+    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
   }
 }

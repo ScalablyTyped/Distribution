@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,24 +30,12 @@ object ASPxClientHtmlEditorDialogInitializedEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorDialogInitializedEventArgsOps[Self <: ASPxClientHtmlEditorDialogInitializedEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorDialogInitializedEventArgsMutableBuilder[Self <: ASPxClientHtmlEditorDialogInitializedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDialog(value: ASPxClientHtmlEditorDialogBase): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDialog(value: ASPxClientHtmlEditorDialogBase): Self = this.set("dialog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDialogName(value: String): Self = this.set("dialogName", value.asInstanceOf[js.Any])
+    def setDialogName(value: String): Self = StObject.set(x, "dialogName", value.asInstanceOf[js.Any])
   }
 }

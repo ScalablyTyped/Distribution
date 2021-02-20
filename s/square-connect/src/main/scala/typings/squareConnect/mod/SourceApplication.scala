@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SourceApplication")
 @js.native
-class SourceApplication () extends js.Object {
+class SourceApplication () extends StObject {
   
   /**
     * Read-only Square ID assigned to the application. Only used for `Product` type `EXTERNAL_API`.

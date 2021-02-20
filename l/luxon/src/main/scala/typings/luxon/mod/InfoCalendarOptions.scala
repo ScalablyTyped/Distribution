@@ -1,5 +1,6 @@
 package typings.luxon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object InfoCalendarOptions {
   }
   
   @scala.inline
-  implicit class InfoCalendarOptionsOps[Self <: InfoCalendarOptions] (val x: Self) extends AnyVal {
+  implicit class InfoCalendarOptionsMutableBuilder[Self <: InfoCalendarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutputCalendar(value: CalendarSystem): Self = StObject.set(x, "outputCalendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutputCalendar(value: CalendarSystem): Self = this.set("outputCalendar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputCalendar: Self = this.set("outputCalendar", js.undefined)
+    def setOutputCalendarUndefined: Self = StObject.set(x, "outputCalendar", js.undefined)
   }
 }

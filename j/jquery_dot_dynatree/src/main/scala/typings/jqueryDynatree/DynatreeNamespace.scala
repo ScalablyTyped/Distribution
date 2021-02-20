@@ -1,12 +1,13 @@
 package typings.jqueryDynatree
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynatreeNamespace extends js.Object {
+trait DynatreeNamespace extends StObject {
   
   def getNode(element: HTMLElement): DynaTreeNode = js.native
   
@@ -27,27 +28,15 @@ object DynatreeNamespace {
   }
   
   @scala.inline
-  implicit class DynatreeNamespaceOps[Self <: DynatreeNamespace] (val x: Self) extends AnyVal {
+  implicit class DynatreeNamespaceMutableBuilder[Self <: DynatreeNamespace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNode(value: HTMLElement => DynaTreeNode): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPersistData(value: (String, DynaTreeCookieOptions) => js.Any): Self = StObject.set(x, "getPersistData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetNode(value: HTMLElement => DynaTreeNode): Self = this.set("getNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPersistData(value: (String, DynaTreeCookieOptions) => js.Any): Self = this.set("getPersistData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

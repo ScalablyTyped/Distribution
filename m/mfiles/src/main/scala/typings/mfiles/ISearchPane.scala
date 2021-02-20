@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISearchPane extends js.Object {
+trait ISearchPane extends StObject {
   
   val Available: Boolean = js.native
   
@@ -24,30 +25,18 @@ object ISearchPane {
   }
   
   @scala.inline
-  implicit class ISearchPaneOps[Self <: ISearchPane] (val x: Self) extends AnyVal {
+  implicit class ISearchPaneMutableBuilder[Self <: ISearchPane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: Boolean): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvents(value: ISearchPaneEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetTheme(value: ITheme => Unit): Self = StObject.set(x, "SetTheme", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAvailable(value: Boolean): Self = this.set("Available", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvents(value: ISearchPaneEvents): Self = this.set("Events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetTheme(value: ITheme => Unit): Self = this.set("SetTheme", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

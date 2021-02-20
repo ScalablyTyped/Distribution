@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -141,60 +142,48 @@ object XConversionDictionary {
   }
   
   @scala.inline
-  implicit class XConversionDictionaryOps[Self <: XConversionDictionary] (val x: Self) extends AnyVal {
+  implicit class XConversionDictionaryMutableBuilder[Self <: XConversionDictionary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEntry(value: (String, String) => Unit): Self = StObject.set(x, "addEntry", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversionType(value: Double): Self = StObject.set(x, "ConversionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionType(value: Double): Self = this.set("ConversionType", value.asInstanceOf[js.Any])
+    def setGetConversionEntries(value: ConversionDirection => SafeArray[String]): Self = StObject.set(x, "getConversionEntries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocale(value: Locale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    def setGetConversionType(value: () => Double): Self = StObject.set(x, "getConversionType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setGetConversions(value: (String, Double, Double, ConversionDirection, Double) => SafeArray[String]): Self = StObject.set(x, "getConversions", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setAddEntry(value: (String, String) => Unit): Self = this.set("addEntry", js.Any.fromFunction2(value))
+    def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setGetMaxCharCount(value: ConversionDirection => Double): Self = StObject.set(x, "getMaxCharCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetConversionEntries(value: ConversionDirection => SafeArray[String]): Self = this.set("getConversionEntries", js.Any.fromFunction1(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConversionType(value: () => Double): Self = this.set("getConversionType", js.Any.fromFunction0(value))
+    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConversions(value: (String, Double, Double, ConversionDirection, Double) => SafeArray[String]): Self = this.set("getConversions", js.Any.fromFunction5(value))
+    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLocale(value: () => Locale): Self = this.set("getLocale", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxCharCount(value: ConversionDirection => Double): Self = this.set("getMaxCharCount", js.Any.fromFunction1(value))
+    def setRemoveEntry(value: (String, String) => Unit): Self = StObject.set(x, "removeEntry", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = this.set("isActive", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveEntry(value: (String, String) => Unit): Self = this.set("removeEntry", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetActive(value: Boolean => Unit): Self = this.set("setActive", js.Any.fromFunction1(value))
+    def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
   }
 }

@@ -8,13 +8,14 @@ import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference
 import typings.winrtUwp.Windows.UI.Color
 import typings.winrtUwp.anon.Second
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gets the set of properties of a DataPackageView object. */
 @js.native
-trait DataPackagePropertySetView extends js.Object {
+trait DataPackagePropertySetView extends StObject {
   
   /** Gets the Uniform Resource Identifier (URI) of the app's location in the Windows Store. */
   var applicationListingUri: Uri = js.native
@@ -107,69 +108,57 @@ object DataPackagePropertySetView {
   }
   
   @scala.inline
-  implicit class DataPackagePropertySetViewOps[Self <: DataPackagePropertySetView] (val x: Self) extends AnyVal {
+  implicit class DataPackagePropertySetViewMutableBuilder[Self <: DataPackagePropertySetView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationListingUri(value: Uri): Self = StObject.set(x, "applicationListingUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentSourceApplicationLink(value: Uri): Self = StObject.set(x, "contentSourceApplicationLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationListingUri(value: Uri): Self = this.set("applicationListingUri", value.asInstanceOf[js.Any])
+    def setContentSourceWebLink(value: Uri): Self = StObject.set(x, "contentSourceWebLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: String): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentSourceApplicationLink(value: Uri): Self = this.set("contentSourceApplicationLink", value.asInstanceOf[js.Any])
+    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentSourceWebLink(value: Uri): Self = this.set("contentSourceWebLink", value.asInstanceOf[js.Any])
+    def setFileTypes(value: IVectorView[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnterpriseId(value: String): Self = this.set("enterpriseId", value.asInstanceOf[js.Any])
+    def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFileTypes(value: IVectorView[String]): Self = this.set("fileTypes", value.asInstanceOf[js.Any])
+    def setLogoBackgroundColor(value: Color): Self = StObject.set(x, "logoBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = this.set("first", js.Any.fromFunction0(value))
+    def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasKey(value: String => Boolean): Self = this.set("hasKey", js.Any.fromFunction1(value))
+    def setPackageFamilyName(value: String): Self = StObject.set(x, "packageFamilyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogoBackgroundColor(value: Color): Self = this.set("logoBackgroundColor", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookup(value: String => js.Any): Self = this.set("lookup", js.Any.fromFunction1(value))
+    def setSplit(value: () => Second): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPackageFamilyName(value: String): Self = this.set("packageFamilyName", value.asInstanceOf[js.Any])
+    def setSquare30x30Logo(value: IRandomAccessStreamReference): Self = StObject.set(x, "square30x30Logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setThumbnail(value: RandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplit(value: () => Second): Self = this.set("split", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSquare30x30Logo(value: IRandomAccessStreamReference): Self = this.set("square30x30Logo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnail(value: RandomAccessStreamReference): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.handsontable.mod.Handsontable.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataObserver extends js.Object {
+trait DataObserver extends StObject {
   
   def destroy(): Unit = js.native
   
@@ -41,45 +42,33 @@ object DataObserver {
   }
   
   @scala.inline
-  implicit class DataObserverOps[Self <: DataObserver] (val x: Self) extends AnyVal {
+  implicit class DataObserverMutableBuilder[Self <: DataObserver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPaused(value: () => Boolean): Self = StObject.set(x, "isPaused", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObservedData(value: js.Array[_]): Self = StObject.set(x, "observedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setObservedDataVarargs(value: js.Any*): Self = StObject.set(x, "observedData", js.Array(value :_*))
     
     @scala.inline
-    def setIsPaused(value: () => Boolean): Self = this.set("isPaused", js.Any.fromFunction0(value))
+    def setObserver(value: js.Object): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObservedDataVarargs(value: js.Any*): Self = this.set("observedData", js.Array(value :_*))
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setObservedData(value: js.Array[_]): Self = this.set("observedData", value.asInstanceOf[js.Any])
+    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObserver(value: js.Object): Self = this.set("observer", value.asInstanceOf[js.Any])
+    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResume(value: () => Unit): Self = this.set("resume", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetObservedData(value: js.Any => Unit): Self = this.set("setObservedData", js.Any.fromFunction1(value))
+    def setSetObservedData(value: js.Any => Unit): Self = StObject.set(x, "setObservedData", js.Any.fromFunction1(value))
   }
 }

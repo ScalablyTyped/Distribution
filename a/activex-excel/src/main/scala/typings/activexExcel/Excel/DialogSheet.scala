@@ -3,6 +3,7 @@ package typings.activexExcel.Excel
 import typings.activexOffice.Office.MsoEnvelope
 import typings.activexOffice.Office.Script
 import typings.activexOffice.Office.Scripts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

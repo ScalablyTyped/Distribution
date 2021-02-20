@@ -1,11 +1,12 @@
 package typings.jsforce.describeResultMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PicklistEntry extends js.Object {
+trait PicklistEntry extends StObject {
   
   var active: Boolean = js.native
   
@@ -26,45 +27,33 @@ object PicklistEntry {
   }
   
   @scala.inline
-  implicit class PicklistEntryOps[Self <: PicklistEntry] (val x: Self) extends AnyVal {
+  implicit class PicklistEntryMutableBuilder[Self <: PicklistEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: maybe[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setLabelNull: Self = StObject.set(x, "label", null)
     
     @scala.inline
-    def setDefaultValue(value: Boolean): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValidFor(value: maybe[String]): Self = StObject.set(x, "validFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: maybe[String]): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setValidForNull: Self = StObject.set(x, "validFor", null)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setValidForUndefined: Self = StObject.set(x, "validFor", js.undefined)
     
     @scala.inline
-    def setLabelNull: Self = this.set("label", null)
-    
-    @scala.inline
-    def setValidFor(value: maybe[String]): Self = this.set("validFor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidFor: Self = this.set("validFor", js.undefined)
-    
-    @scala.inline
-    def setValidForNull: Self = this.set("validFor", null)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

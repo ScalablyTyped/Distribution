@@ -26,13 +26,14 @@ import typings.std.NodeListOf
 import typings.std.ParentNode
 import typings.std.ShadowRoot
 import typings.std.ShadowRootInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined petit-dom.petit-dom.PetitDom.Props<std.Element> */
 @js.native
-trait PropsElement extends js.Object {
+trait PropsElement extends StObject {
   
   var ATTRIBUTE_NODE: js.UndefOr[Double] = js.native
   
@@ -323,855 +324,843 @@ object PropsElement {
   }
   
   @scala.inline
-  implicit class PropsElementOps[Self <: PropsElement] (val x: Self) extends AnyVal {
+  implicit class PropsElementMutableBuilder[Self <: PropsElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setATTRIBUTE_NODE(value: Double): Self = this.set("ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteATTRIBUTE_NODE: Self = this.set("ATTRIBUTE_NODE", js.undefined)
-    
-    @scala.inline
-    def setCDATA_SECTION_NODE(value: Double): Self = this.set("CDATA_SECTION_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCDATA_SECTION_NODE: Self = this.set("CDATA_SECTION_NODE", js.undefined)
-    
-    @scala.inline
-    def setCOMMENT_NODE(value: Double): Self = this.set("COMMENT_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCOMMENT_NODE: Self = this.set("COMMENT_NODE", js.undefined)
-    
-    @scala.inline
-    def setDOCUMENT_FRAGMENT_NODE(value: Double): Self = this.set("DOCUMENT_FRAGMENT_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDOCUMENT_FRAGMENT_NODE: Self = this.set("DOCUMENT_FRAGMENT_NODE", js.undefined)
-    
-    @scala.inline
-    def setDOCUMENT_NODE(value: Double): Self = this.set("DOCUMENT_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDOCUMENT_NODE: Self = this.set("DOCUMENT_NODE", js.undefined)
-    
-    @scala.inline
-    def setDOCUMENT_POSITION_CONTAINED_BY(value: Double): Self = this.set("DOCUMENT_POSITION_CONTAINED_BY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDOCUMENT_POSITION_CONTAINED_BY: Self = this.set("DOCUMENT_POSITION_CONTAINED_BY", js.undefined)
-    
-    @scala.inline
-    def setDOCUMENT_POSITION_CONTAINS(value: Double): Self = this.set("DOCUMENT_POSITION_CONTAINS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDOCUMENT_POSITION_CONTAINS: Self = this.set("DOCUMENT_POSITION_CONTAINS", js.undefined)
-    
-    @scala.inline
-    def setDOCUMENT_POSITION_DISCONNECTED(value: Double): Self = this.set("DOCUMENT_POSITION_DISCONNECTED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDOCUMENT_POSITION_DISCONNECTED: Self = this.set("DOCUMENT_POSITION_DISCONNECTED", js.undefined)
-    
-    @scala.inline
-    def setDOCUMENT_POSITION_FOLLOWING(value: Double): Self = this.set("DOCUMENT_POSITION_FOLLOWING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDOCUMENT_POSITION_FOLLOWING: Self = this.set("DOCUMENT_POSITION_FOLLOWING", js.undefined)
-    
-    @scala.inline
-    def setDOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC(value: Double): Self = this.set("DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Self = this.set("DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", js.undefined)
-    
-    @scala.inline
-    def setDOCUMENT_POSITION_PRECEDING(value: Double): Self = this.set("DOCUMENT_POSITION_PRECEDING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDOCUMENT_POSITION_PRECEDING: Self = this.set("DOCUMENT_POSITION_PRECEDING", js.undefined)
-    
-    @scala.inline
-    def setDOCUMENT_TYPE_NODE(value: Double): Self = this.set("DOCUMENT_TYPE_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDOCUMENT_TYPE_NODE: Self = this.set("DOCUMENT_TYPE_NODE", js.undefined)
-    
-    @scala.inline
-    def setELEMENT_NODE(value: Double): Self = this.set("ELEMENT_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteELEMENT_NODE: Self = this.set("ELEMENT_NODE", js.undefined)
-    
-    @scala.inline
-    def setENTITY_NODE(value: Double): Self = this.set("ENTITY_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteENTITY_NODE: Self = this.set("ENTITY_NODE", js.undefined)
-    
-    @scala.inline
-    def setENTITY_REFERENCE_NODE(value: Double): Self = this.set("ENTITY_REFERENCE_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteENTITY_REFERENCE_NODE: Self = this.set("ENTITY_REFERENCE_NODE", js.undefined)
-    
-    @scala.inline
-    def setNOTATION_NODE(value: Double): Self = this.set("NOTATION_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNOTATION_NODE: Self = this.set("NOTATION_NODE", js.undefined)
-    
-    @scala.inline
-    def setPROCESSING_INSTRUCTION_NODE(value: Double): Self = this.set("PROCESSING_INSTRUCTION_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePROCESSING_INSTRUCTION_NODE: Self = this.set("PROCESSING_INSTRUCTION_NODE", js.undefined)
-    
-    @scala.inline
-    def setTEXT_NODE(value: Double): Self = this.set("TEXT_NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTEXT_NODE: Self = this.set("TEXT_NODE", js.undefined)
+    def setATTRIBUTE_NODEUndefined: Self = StObject.set(x, "ATTRIBUTE_NODE", js.undefined)
     
     @scala.inline
     def setAddEventListener(
       value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsElement, /* ev */ Event, _]) => Unit
-    ): Self = this.set("addEventListener", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteAddEventListener: Self = this.set("addEventListener", js.undefined)
+    def setAddEventListenerUndefined: Self = StObject.set(x, "addEventListener", js.undefined)
     
     @scala.inline
-    def setAfter(value: /* repeated */ Node | String => Unit): Self = this.set("after", js.Any.fromFunction1(value))
+    def setAfter(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def setAnimate(value: () => Animation): Self = this.set("animate", js.Any.fromFunction0(value))
+    def setAnimate(value: () => Animation): Self = StObject.set(x, "animate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def setAppend(value: /* repeated */ Node | String => Unit): Self = this.set("append", js.Any.fromFunction1(value))
+    def setAppend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAppend: Self = this.set("append", js.undefined)
+    def setAppendChild(value: /* newChild */ Node => Node): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendChild(value: /* newChild */ Node => Node): Self = this.set("appendChild", js.Any.fromFunction1(value))
+    def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
     
     @scala.inline
-    def deleteAppendChild: Self = this.set("appendChild", js.undefined)
+    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
     @scala.inline
-    def setAssignedSlot(value: HTMLSlotElement): Self = this.set("assignedSlot", value.asInstanceOf[js.Any])
+    def setAssignedSlot(value: HTMLSlotElement): Self = StObject.set(x, "assignedSlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignedSlot: Self = this.set("assignedSlot", js.undefined)
+    def setAssignedSlotNull: Self = StObject.set(x, "assignedSlot", null)
     
     @scala.inline
-    def setAssignedSlotNull: Self = this.set("assignedSlot", null)
+    def setAssignedSlotUndefined: Self = StObject.set(x, "assignedSlot", js.undefined)
     
     @scala.inline
-    def setAttachShadow(value: /* init */ ShadowRootInit => ShadowRoot): Self = this.set("attachShadow", js.Any.fromFunction1(value))
+    def setAttachShadow(value: /* init */ ShadowRootInit => ShadowRoot): Self = StObject.set(x, "attachShadow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAttachShadow: Self = this.set("attachShadow", js.undefined)
+    def setAttachShadowUndefined: Self = StObject.set(x, "attachShadow", js.undefined)
     
     @scala.inline
-    def setAttributes(value: NamedNodeMap): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setAttributes(value: NamedNodeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def setBaseURI(value: String): Self = this.set("baseURI", value.asInstanceOf[js.Any])
+    def setBaseURI(value: String): Self = StObject.set(x, "baseURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaseURI: Self = this.set("baseURI", js.undefined)
+    def setBaseURIUndefined: Self = StObject.set(x, "baseURI", js.undefined)
     
     @scala.inline
-    def setBefore(value: /* repeated */ Node | String => Unit): Self = this.set("before", js.Any.fromFunction1(value))
+    def setBefore(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def setChildElementCount(value: Double): Self = this.set("childElementCount", value.asInstanceOf[js.Any])
+    def setCDATA_SECTION_NODE(value: Double): Self = StObject.set(x, "CDATA_SECTION_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildElementCount: Self = this.set("childElementCount", js.undefined)
+    def setCDATA_SECTION_NODEUndefined: Self = StObject.set(x, "CDATA_SECTION_NODE", js.undefined)
     
     @scala.inline
-    def setChildNodes(value: NodeListOf[ChildNode]): Self = this.set("childNodes", value.asInstanceOf[js.Any])
+    def setCOMMENT_NODE(value: Double): Self = StObject.set(x, "COMMENT_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildNodes: Self = this.set("childNodes", js.undefined)
+    def setCOMMENT_NODEUndefined: Self = StObject.set(x, "COMMENT_NODE", js.undefined)
     
     @scala.inline
-    def setChildren(value: HTMLCollection): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setChildElementCount(value: Double): Self = StObject.set(x, "childElementCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setChildElementCountUndefined: Self = StObject.set(x, "childElementCount", js.undefined)
     
     @scala.inline
-    def setClassList(value: DOMTokenList): Self = this.set("classList", value.asInstanceOf[js.Any])
+    def setChildNodes(value: NodeListOf[ChildNode]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassList: Self = this.set("classList", js.undefined)
+    def setChildNodesUndefined: Self = StObject.set(x, "childNodes", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setChildren(value: HTMLCollection): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setClientHeight(value: Double): Self = this.set("clientHeight", value.asInstanceOf[js.Any])
+    def setClassList(value: DOMTokenList): Self = StObject.set(x, "classList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientHeight: Self = this.set("clientHeight", js.undefined)
+    def setClassListUndefined: Self = StObject.set(x, "classList", js.undefined)
     
     @scala.inline
-    def setClientLeft(value: Double): Self = this.set("clientLeft", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientLeft: Self = this.set("clientLeft", js.undefined)
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setClientTop(value: Double): Self = this.set("clientTop", value.asInstanceOf[js.Any])
+    def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientTop: Self = this.set("clientTop", js.undefined)
+    def setClientHeightUndefined: Self = StObject.set(x, "clientHeight", js.undefined)
     
     @scala.inline
-    def setClientWidth(value: Double): Self = this.set("clientWidth", value.asInstanceOf[js.Any])
+    def setClientLeft(value: Double): Self = StObject.set(x, "clientLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientWidth: Self = this.set("clientWidth", js.undefined)
+    def setClientLeftUndefined: Self = StObject.set(x, "clientLeft", js.undefined)
     
     @scala.inline
-    def setCloneNode(value: () => Node): Self = this.set("cloneNode", js.Any.fromFunction0(value))
+    def setClientTop(value: Double): Self = StObject.set(x, "clientTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloneNode: Self = this.set("cloneNode", js.undefined)
+    def setClientTopUndefined: Self = StObject.set(x, "clientTop", js.undefined)
     
     @scala.inline
-    def setClosest(value: a => HTMLAnchorElement | Null): Self = this.set("closest", js.Any.fromFunction1(value))
+    def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClosest: Self = this.set("closest", js.undefined)
+    def setClientWidthUndefined: Self = StObject.set(x, "clientWidth", js.undefined)
     
     @scala.inline
-    def setCompareDocumentPosition(value: /* other */ Node => Double): Self = this.set("compareDocumentPosition", js.Any.fromFunction1(value))
+    def setCloneNode(value: () => Node): Self = StObject.set(x, "cloneNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteCompareDocumentPosition: Self = this.set("compareDocumentPosition", js.undefined)
+    def setCloneNodeUndefined: Self = StObject.set(x, "cloneNode", js.undefined)
     
     @scala.inline
-    def setContains(value: () => Boolean): Self = this.set("contains", js.Any.fromFunction0(value))
+    def setClosest(value: a => HTMLAnchorElement | Null): Self = StObject.set(x, "closest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setClosestUndefined: Self = StObject.set(x, "closest", js.undefined)
     
     @scala.inline
-    def setContentVarargs(value: Content*): Self = this.set("content", js.Array(value :_*))
+    def setCompareDocumentPosition(value: /* other */ Node => Double): Self = StObject.set(x, "compareDocumentPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContent(value: Content | js.Array[Content]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setCompareDocumentPositionUndefined: Self = StObject.set(x, "compareDocumentPosition", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setContains(value: () => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDispatchEvent(value: /* event */ Event => Boolean): Self = this.set("dispatchEvent", js.Any.fromFunction1(value))
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def deleteDispatchEvent: Self = this.set("dispatchEvent", js.undefined)
+    def setContent(value: Content | js.Array[Content]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstChild(value: ChildNode): Self = this.set("firstChild", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteFirstChild: Self = this.set("firstChild", js.undefined)
+    def setContentVarargs(value: Content*): Self = StObject.set(x, "content", js.Array(value :_*))
     
     @scala.inline
-    def setFirstChildNull: Self = this.set("firstChild", null)
+    def setDOCUMENT_FRAGMENT_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstElementChild(value: Element): Self = this.set("firstElementChild", value.asInstanceOf[js.Any])
+    def setDOCUMENT_FRAGMENT_NODEUndefined: Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", js.undefined)
     
     @scala.inline
-    def deleteFirstElementChild: Self = this.set("firstElementChild", js.undefined)
+    def setDOCUMENT_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstElementChildNull: Self = this.set("firstElementChild", null)
+    def setDOCUMENT_NODEUndefined: Self = StObject.set(x, "DOCUMENT_NODE", js.undefined)
     
     @scala.inline
-    def setGetAnimations(value: () => js.Array[Animation]): Self = this.set("getAnimations", js.Any.fromFunction0(value))
+    def setDOCUMENT_POSITION_CONTAINED_BY(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINED_BY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetAnimations: Self = this.set("getAnimations", js.undefined)
+    def setDOCUMENT_POSITION_CONTAINED_BYUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINED_BY", js.undefined)
     
     @scala.inline
-    def setGetAttribute(value: /* qualifiedName */ String => String | Null): Self = this.set("getAttribute", js.Any.fromFunction1(value))
+    def setDOCUMENT_POSITION_CONTAINS(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetAttribute: Self = this.set("getAttribute", js.undefined)
+    def setDOCUMENT_POSITION_CONTAINSUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINS", js.undefined)
     
     @scala.inline
-    def setGetAttributeNS(value: (/* namespace */ String, /* localName */ String) => String | Null): Self = this.set("getAttributeNS", js.Any.fromFunction2(value))
+    def setDOCUMENT_POSITION_DISCONNECTED(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_DISCONNECTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetAttributeNS: Self = this.set("getAttributeNS", js.undefined)
+    def setDOCUMENT_POSITION_DISCONNECTEDUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_DISCONNECTED", js.undefined)
     
     @scala.inline
-    def setGetAttributeNames(value: () => js.Array[String]): Self = this.set("getAttributeNames", js.Any.fromFunction0(value))
+    def setDOCUMENT_POSITION_FOLLOWING(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_FOLLOWING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetAttributeNames: Self = this.set("getAttributeNames", js.undefined)
+    def setDOCUMENT_POSITION_FOLLOWINGUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_FOLLOWING", js.undefined)
     
     @scala.inline
-    def setGetAttributeNode(value: /* qualifiedName */ String => Attr | Null): Self = this.set("getAttributeNode", js.Any.fromFunction1(value))
+    def setDOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetAttributeNode: Self = this.set("getAttributeNode", js.undefined)
+    def setDOCUMENT_POSITION_IMPLEMENTATION_SPECIFICUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", js.undefined)
     
     @scala.inline
-    def setGetAttributeNodeNS(value: (/* namespace */ String, /* localName */ String) => Attr | Null): Self = this.set("getAttributeNodeNS", js.Any.fromFunction2(value))
+    def setDOCUMENT_POSITION_PRECEDING(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_PRECEDING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetAttributeNodeNS: Self = this.set("getAttributeNodeNS", js.undefined)
+    def setDOCUMENT_POSITION_PRECEDINGUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_PRECEDING", js.undefined)
     
     @scala.inline
-    def setGetBoundingClientRect(value: () => DOMRect): Self = this.set("getBoundingClientRect", js.Any.fromFunction0(value))
+    def setDOCUMENT_TYPE_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_TYPE_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetBoundingClientRect: Self = this.set("getBoundingClientRect", js.undefined)
+    def setDOCUMENT_TYPE_NODEUndefined: Self = StObject.set(x, "DOCUMENT_TYPE_NODE", js.undefined)
     
     @scala.inline
-    def setGetClientRects(value: () => DOMRectList): Self = this.set("getClientRects", js.Any.fromFunction0(value))
+    def setDispatchEvent(value: /* event */ Event => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetClientRects: Self = this.set("getClientRects", js.undefined)
+    def setDispatchEventUndefined: Self = StObject.set(x, "dispatchEvent", js.undefined)
     
     @scala.inline
-    def setGetElementsByClassName(value: /* classNames */ String => HTMLCollectionOf[Element]): Self = this.set("getElementsByClassName", js.Any.fromFunction1(value))
+    def setELEMENT_NODE(value: Double): Self = StObject.set(x, "ELEMENT_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetElementsByClassName: Self = this.set("getElementsByClassName", js.undefined)
+    def setELEMENT_NODEUndefined: Self = StObject.set(x, "ELEMENT_NODE", js.undefined)
     
     @scala.inline
-    def setGetElementsByTagName(value: a => HTMLCollectionOf[HTMLAnchorElement]): Self = this.set("getElementsByTagName", js.Any.fromFunction1(value))
+    def setENTITY_NODE(value: Double): Self = StObject.set(x, "ENTITY_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetElementsByTagName: Self = this.set("getElementsByTagName", js.undefined)
+    def setENTITY_NODEUndefined: Self = StObject.set(x, "ENTITY_NODE", js.undefined)
+    
+    @scala.inline
+    def setENTITY_REFERENCE_NODE(value: Double): Self = StObject.set(x, "ENTITY_REFERENCE_NODE", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setENTITY_REFERENCE_NODEUndefined: Self = StObject.set(x, "ENTITY_REFERENCE_NODE", js.undefined)
+    
+    @scala.inline
+    def setFirstChild(value: ChildNode): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFirstChildNull: Self = StObject.set(x, "firstChild", null)
+    
+    @scala.inline
+    def setFirstChildUndefined: Self = StObject.set(x, "firstChild", js.undefined)
+    
+    @scala.inline
+    def setFirstElementChild(value: Element): Self = StObject.set(x, "firstElementChild", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFirstElementChildNull: Self = StObject.set(x, "firstElementChild", null)
+    
+    @scala.inline
+    def setFirstElementChildUndefined: Self = StObject.set(x, "firstElementChild", js.undefined)
+    
+    @scala.inline
+    def setGetAnimations(value: () => js.Array[Animation]): Self = StObject.set(x, "getAnimations", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetAnimationsUndefined: Self = StObject.set(x, "getAnimations", js.undefined)
+    
+    @scala.inline
+    def setGetAttribute(value: /* qualifiedName */ String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGetAttributeNS(value: (/* namespace */ String, /* localName */ String) => String | Null): Self = StObject.set(x, "getAttributeNS", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setGetAttributeNSUndefined: Self = StObject.set(x, "getAttributeNS", js.undefined)
+    
+    @scala.inline
+    def setGetAttributeNames(value: () => js.Array[String]): Self = StObject.set(x, "getAttributeNames", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetAttributeNamesUndefined: Self = StObject.set(x, "getAttributeNames", js.undefined)
+    
+    @scala.inline
+    def setGetAttributeNode(value: /* qualifiedName */ String => Attr | Null): Self = StObject.set(x, "getAttributeNode", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGetAttributeNodeNS(value: (/* namespace */ String, /* localName */ String) => Attr | Null): Self = StObject.set(x, "getAttributeNodeNS", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setGetAttributeNodeNSUndefined: Self = StObject.set(x, "getAttributeNodeNS", js.undefined)
+    
+    @scala.inline
+    def setGetAttributeNodeUndefined: Self = StObject.set(x, "getAttributeNode", js.undefined)
+    
+    @scala.inline
+    def setGetAttributeUndefined: Self = StObject.set(x, "getAttribute", js.undefined)
+    
+    @scala.inline
+    def setGetBoundingClientRect(value: () => DOMRect): Self = StObject.set(x, "getBoundingClientRect", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetBoundingClientRectUndefined: Self = StObject.set(x, "getBoundingClientRect", js.undefined)
+    
+    @scala.inline
+    def setGetClientRects(value: () => DOMRectList): Self = StObject.set(x, "getClientRects", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetClientRectsUndefined: Self = StObject.set(x, "getClientRects", js.undefined)
+    
+    @scala.inline
+    def setGetElementsByClassName(value: /* classNames */ String => HTMLCollectionOf[Element]): Self = StObject.set(x, "getElementsByClassName", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGetElementsByClassNameUndefined: Self = StObject.set(x, "getElementsByClassName", js.undefined)
+    
+    @scala.inline
+    def setGetElementsByTagName(value: a => HTMLCollectionOf[HTMLAnchorElement]): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetElementsByTagNameNS(
       value: (httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, /* localName */ String) => HTMLCollectionOf[HTMLElement]
-    ): Self = this.set("getElementsByTagNameNS", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getElementsByTagNameNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetElementsByTagNameNS: Self = this.set("getElementsByTagNameNS", js.undefined)
+    def setGetElementsByTagNameNSUndefined: Self = StObject.set(x, "getElementsByTagNameNS", js.undefined)
     
     @scala.inline
-    def setGetRootNode(value: () => Node): Self = this.set("getRootNode", js.Any.fromFunction0(value))
+    def setGetElementsByTagNameUndefined: Self = StObject.set(x, "getElementsByTagName", js.undefined)
     
     @scala.inline
-    def deleteGetRootNode: Self = this.set("getRootNode", js.undefined)
+    def setGetRootNode(value: () => Node): Self = StObject.set(x, "getRootNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasAttribute(value: /* qualifiedName */ String => Boolean): Self = this.set("hasAttribute", js.Any.fromFunction1(value))
+    def setGetRootNodeUndefined: Self = StObject.set(x, "getRootNode", js.undefined)
     
     @scala.inline
-    def deleteHasAttribute: Self = this.set("hasAttribute", js.undefined)
+    def setHasAttribute(value: /* qualifiedName */ String => Boolean): Self = StObject.set(x, "hasAttribute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasAttributeNS(value: (/* namespace */ String, /* localName */ String) => Boolean): Self = this.set("hasAttributeNS", js.Any.fromFunction2(value))
+    def setHasAttributeNS(value: (/* namespace */ String, /* localName */ String) => Boolean): Self = StObject.set(x, "hasAttributeNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteHasAttributeNS: Self = this.set("hasAttributeNS", js.undefined)
+    def setHasAttributeNSUndefined: Self = StObject.set(x, "hasAttributeNS", js.undefined)
     
     @scala.inline
-    def setHasAttributes(value: () => Boolean): Self = this.set("hasAttributes", js.Any.fromFunction0(value))
+    def setHasAttributeUndefined: Self = StObject.set(x, "hasAttribute", js.undefined)
     
     @scala.inline
-    def deleteHasAttributes: Self = this.set("hasAttributes", js.undefined)
+    def setHasAttributes(value: () => Boolean): Self = StObject.set(x, "hasAttributes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasChildNodes(value: () => Boolean): Self = this.set("hasChildNodes", js.Any.fromFunction0(value))
+    def setHasAttributesUndefined: Self = StObject.set(x, "hasAttributes", js.undefined)
     
     @scala.inline
-    def deleteHasChildNodes: Self = this.set("hasChildNodes", js.undefined)
+    def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasPointerCapture(value: /* pointerId */ Double => Boolean): Self = this.set("hasPointerCapture", js.Any.fromFunction1(value))
+    def setHasChildNodesUndefined: Self = StObject.set(x, "hasChildNodes", js.undefined)
     
     @scala.inline
-    def deleteHasPointerCapture: Self = this.set("hasPointerCapture", js.undefined)
+    def setHasPointerCapture(value: /* pointerId */ Double => Boolean): Self = StObject.set(x, "hasPointerCapture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setHasPointerCaptureUndefined: Self = StObject.set(x, "hasPointerCapture", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerHTML(value: String): Self = this.set("innerHTML", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteInnerHTML: Self = this.set("innerHTML", js.undefined)
+    def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertAdjacentElement(value: (/* position */ InsertPosition, /* insertedElement */ Element) => Element | Null): Self = this.set("insertAdjacentElement", js.Any.fromFunction2(value))
+    def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
     
     @scala.inline
-    def deleteInsertAdjacentElement: Self = this.set("insertAdjacentElement", js.undefined)
+    def setInsertAdjacentElement(value: (/* position */ InsertPosition, /* insertedElement */ Element) => Element | Null): Self = StObject.set(x, "insertAdjacentElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsertAdjacentHTML(value: (/* where */ InsertPosition, /* html */ String) => Unit): Self = this.set("insertAdjacentHTML", js.Any.fromFunction2(value))
+    def setInsertAdjacentElementUndefined: Self = StObject.set(x, "insertAdjacentElement", js.undefined)
     
     @scala.inline
-    def deleteInsertAdjacentHTML: Self = this.set("insertAdjacentHTML", js.undefined)
+    def setInsertAdjacentHTML(value: (/* where */ InsertPosition, /* html */ String) => Unit): Self = StObject.set(x, "insertAdjacentHTML", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsertAdjacentText(value: (/* where */ InsertPosition, /* text */ String) => Unit): Self = this.set("insertAdjacentText", js.Any.fromFunction2(value))
+    def setInsertAdjacentHTMLUndefined: Self = StObject.set(x, "insertAdjacentHTML", js.undefined)
     
     @scala.inline
-    def deleteInsertAdjacentText: Self = this.set("insertAdjacentText", js.undefined)
+    def setInsertAdjacentText(value: (/* where */ InsertPosition, /* text */ String) => Unit): Self = StObject.set(x, "insertAdjacentText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsertBefore(value: /* newChild */ Node => Node): Self = this.set("insertBefore", js.Any.fromFunction1(value))
+    def setInsertAdjacentTextUndefined: Self = StObject.set(x, "insertAdjacentText", js.undefined)
     
     @scala.inline
-    def deleteInsertBefore: Self = this.set("insertBefore", js.undefined)
+    def setInsertBefore(value: /* newChild */ Node => Node): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsConnected(value: Boolean): Self = this.set("isConnected", value.asInstanceOf[js.Any])
+    def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
     @scala.inline
-    def deleteIsConnected: Self = this.set("isConnected", js.undefined)
+    def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefaultNamespace(value: () => Boolean): Self = this.set("isDefaultNamespace", js.Any.fromFunction0(value))
+    def setIsConnectedUndefined: Self = StObject.set(x, "isConnected", js.undefined)
     
     @scala.inline
-    def deleteIsDefaultNamespace: Self = this.set("isDefaultNamespace", js.undefined)
+    def setIsDefaultNamespace(value: () => Boolean): Self = StObject.set(x, "isDefaultNamespace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsEqualNode(value: () => Boolean): Self = this.set("isEqualNode", js.Any.fromFunction0(value))
+    def setIsDefaultNamespaceUndefined: Self = StObject.set(x, "isDefaultNamespace", js.undefined)
     
     @scala.inline
-    def deleteIsEqualNode: Self = this.set("isEqualNode", js.undefined)
+    def setIsEqualNode(value: () => Boolean): Self = StObject.set(x, "isEqualNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsSameNode(value: () => Boolean): Self = this.set("isSameNode", js.Any.fromFunction0(value))
+    def setIsEqualNodeUndefined: Self = StObject.set(x, "isEqualNode", js.undefined)
     
     @scala.inline
-    def deleteIsSameNode: Self = this.set("isSameNode", js.undefined)
+    def setIsSameNode(value: () => Boolean): Self = StObject.set(x, "isSameNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setIsSameNodeUndefined: Self = StObject.set(x, "isSameNode", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastChild(value: ChildNode): Self = this.set("lastChild", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteLastChild: Self = this.set("lastChild", js.undefined)
+    def setLastChild(value: ChildNode): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastChildNull: Self = this.set("lastChild", null)
+    def setLastChildNull: Self = StObject.set(x, "lastChild", null)
     
     @scala.inline
-    def setLastElementChild(value: Element): Self = this.set("lastElementChild", value.asInstanceOf[js.Any])
+    def setLastChildUndefined: Self = StObject.set(x, "lastChild", js.undefined)
     
     @scala.inline
-    def deleteLastElementChild: Self = this.set("lastElementChild", js.undefined)
+    def setLastElementChild(value: Element): Self = StObject.set(x, "lastElementChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastElementChildNull: Self = this.set("lastElementChild", null)
+    def setLastElementChildNull: Self = StObject.set(x, "lastElementChild", null)
     
     @scala.inline
-    def setLocalName(value: String): Self = this.set("localName", value.asInstanceOf[js.Any])
+    def setLastElementChildUndefined: Self = StObject.set(x, "lastElementChild", js.undefined)
     
     @scala.inline
-    def deleteLocalName: Self = this.set("localName", js.undefined)
+    def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookupNamespaceURI(value: () => String | Null): Self = this.set("lookupNamespaceURI", js.Any.fromFunction0(value))
+    def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
     
     @scala.inline
-    def deleteLookupNamespaceURI: Self = this.set("lookupNamespaceURI", js.undefined)
+    def setLookupNamespaceURI(value: () => String | Null): Self = StObject.set(x, "lookupNamespaceURI", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLookupPrefix(value: () => String | Null): Self = this.set("lookupPrefix", js.Any.fromFunction0(value))
+    def setLookupNamespaceURIUndefined: Self = StObject.set(x, "lookupNamespaceURI", js.undefined)
     
     @scala.inline
-    def deleteLookupPrefix: Self = this.set("lookupPrefix", js.undefined)
+    def setLookupPrefix(value: () => String | Null): Self = StObject.set(x, "lookupPrefix", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMatches(value: /* selectors */ String => Boolean): Self = this.set("matches", js.Any.fromFunction1(value))
+    def setLookupPrefixUndefined: Self = StObject.set(x, "lookupPrefix", js.undefined)
     
     @scala.inline
-    def deleteMatches: Self = this.set("matches", js.undefined)
+    def setMatches(value: /* selectors */ String => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsGetRegionContent(value: () => _): Self = this.set("msGetRegionContent", js.Any.fromFunction0(value))
+    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
     @scala.inline
-    def deleteMsGetRegionContent: Self = this.set("msGetRegionContent", js.undefined)
+    def setMsGetRegionContent(value: () => _): Self = StObject.set(x, "msGetRegionContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNamespaceURI(value: String): Self = this.set("namespaceURI", value.asInstanceOf[js.Any])
+    def setMsGetRegionContentUndefined: Self = StObject.set(x, "msGetRegionContent", js.undefined)
     
     @scala.inline
-    def deleteNamespaceURI: Self = this.set("namespaceURI", js.undefined)
+    def setNOTATION_NODE(value: Double): Self = StObject.set(x, "NOTATION_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceURINull: Self = this.set("namespaceURI", null)
+    def setNOTATION_NODEUndefined: Self = StObject.set(x, "NOTATION_NODE", js.undefined)
     
     @scala.inline
-    def setNextElementSibling(value: Element): Self = this.set("nextElementSibling", value.asInstanceOf[js.Any])
+    def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNextElementSibling: Self = this.set("nextElementSibling", js.undefined)
+    def setNamespaceURINull: Self = StObject.set(x, "namespaceURI", null)
     
     @scala.inline
-    def setNextElementSiblingNull: Self = this.set("nextElementSibling", null)
+    def setNamespaceURIUndefined: Self = StObject.set(x, "namespaceURI", js.undefined)
     
     @scala.inline
-    def setNextSibling(value: ChildNode): Self = this.set("nextSibling", value.asInstanceOf[js.Any])
+    def setNextElementSibling(value: Element): Self = StObject.set(x, "nextElementSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNextSibling: Self = this.set("nextSibling", js.undefined)
+    def setNextElementSiblingNull: Self = StObject.set(x, "nextElementSibling", null)
     
     @scala.inline
-    def setNextSiblingNull: Self = this.set("nextSibling", null)
+    def setNextElementSiblingUndefined: Self = StObject.set(x, "nextElementSibling", js.undefined)
     
     @scala.inline
-    def setNodeName(value: String): Self = this.set("nodeName", value.asInstanceOf[js.Any])
+    def setNextSibling(value: ChildNode): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodeName: Self = this.set("nodeName", js.undefined)
+    def setNextSiblingNull: Self = StObject.set(x, "nextSibling", null)
     
     @scala.inline
-    def setNodeType(value: Double): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    def setNextSiblingUndefined: Self = StObject.set(x, "nextSibling", js.undefined)
     
     @scala.inline
-    def deleteNodeType: Self = this.set("nodeType", js.undefined)
+    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeValue(value: String): Self = this.set("nodeValue", value.asInstanceOf[js.Any])
+    def setNodeNameUndefined: Self = StObject.set(x, "nodeName", js.undefined)
     
     @scala.inline
-    def deleteNodeValue: Self = this.set("nodeValue", js.undefined)
+    def setNodeType(value: Double): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeValueNull: Self = this.set("nodeValue", null)
+    def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
     
     @scala.inline
-    def setNormalize(value: () => Unit): Self = this.set("normalize", js.Any.fromFunction0(value))
+    def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNormalize: Self = this.set("normalize", js.undefined)
+    def setNodeValueNull: Self = StObject.set(x, "nodeValue", null)
     
     @scala.inline
-    def setOnfullscreenchange(value: js.ThisFunction1[PropsElement, /* ev */ Event, _]): Self = this.set("onfullscreenchange", value.asInstanceOf[js.Any])
+    def setNodeValueUndefined: Self = StObject.set(x, "nodeValue", js.undefined)
     
     @scala.inline
-    def deleteOnfullscreenchange: Self = this.set("onfullscreenchange", js.undefined)
+    def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnfullscreenchangeNull: Self = this.set("onfullscreenchange", null)
+    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
     @scala.inline
-    def setOnfullscreenerror(value: js.ThisFunction1[PropsElement, /* ev */ Event, _]): Self = this.set("onfullscreenerror", value.asInstanceOf[js.Any])
+    def setOnfullscreenchange(value: js.ThisFunction1[PropsElement, /* ev */ Event, _]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnfullscreenerror: Self = this.set("onfullscreenerror", js.undefined)
+    def setOnfullscreenchangeNull: Self = StObject.set(x, "onfullscreenchange", null)
     
     @scala.inline
-    def setOnfullscreenerrorNull: Self = this.set("onfullscreenerror", null)
+    def setOnfullscreenchangeUndefined: Self = StObject.set(x, "onfullscreenchange", js.undefined)
     
     @scala.inline
-    def setOuterHTML(value: String): Self = this.set("outerHTML", value.asInstanceOf[js.Any])
+    def setOnfullscreenerror(value: js.ThisFunction1[PropsElement, /* ev */ Event, _]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOuterHTML: Self = this.set("outerHTML", js.undefined)
+    def setOnfullscreenerrorNull: Self = StObject.set(x, "onfullscreenerror", null)
     
     @scala.inline
-    def setOwnerDocument(value: Document): Self = this.set("ownerDocument", value.asInstanceOf[js.Any])
+    def setOnfullscreenerrorUndefined: Self = StObject.set(x, "onfullscreenerror", js.undefined)
     
     @scala.inline
-    def deleteOwnerDocument: Self = this.set("ownerDocument", js.undefined)
+    def setOuterHTML(value: String): Self = StObject.set(x, "outerHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentElement(value: HTMLElement): Self = this.set("parentElement", value.asInstanceOf[js.Any])
+    def setOuterHTMLUndefined: Self = StObject.set(x, "outerHTML", js.undefined)
     
     @scala.inline
-    def deleteParentElement: Self = this.set("parentElement", js.undefined)
+    def setOwnerDocument(value: Document): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentElementNull: Self = this.set("parentElement", null)
+    def setOwnerDocumentUndefined: Self = StObject.set(x, "ownerDocument", js.undefined)
     
     @scala.inline
-    def setParentNode(value: Node with ParentNode): Self = this.set("parentNode", value.asInstanceOf[js.Any])
+    def setPROCESSING_INSTRUCTION_NODE(value: Double): Self = StObject.set(x, "PROCESSING_INSTRUCTION_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentNode: Self = this.set("parentNode", js.undefined)
+    def setPROCESSING_INSTRUCTION_NODEUndefined: Self = StObject.set(x, "PROCESSING_INSTRUCTION_NODE", js.undefined)
     
     @scala.inline
-    def setParentNodeNull: Self = this.set("parentNode", null)
+    def setParentElement(value: HTMLElement): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setParentElementNull: Self = StObject.set(x, "parentElement", null)
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
     
     @scala.inline
-    def setPrefixNull: Self = this.set("prefix", null)
+    def setParentNode(value: Node with ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepend(value: /* repeated */ Node | String => Unit): Self = this.set("prepend", js.Any.fromFunction1(value))
+    def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
     
     @scala.inline
-    def deletePrepend: Self = this.set("prepend", js.undefined)
+    def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
     
     @scala.inline
-    def setPreviousElementSibling(value: Element): Self = this.set("previousElementSibling", value.asInstanceOf[js.Any])
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreviousElementSibling: Self = this.set("previousElementSibling", js.undefined)
+    def setPrefixNull: Self = StObject.set(x, "prefix", null)
     
     @scala.inline
-    def setPreviousElementSiblingNull: Self = this.set("previousElementSibling", null)
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def setPreviousSibling(value: ChildNode): Self = this.set("previousSibling", value.asInstanceOf[js.Any])
+    def setPrepend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "prepend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePreviousSibling: Self = this.set("previousSibling", js.undefined)
+    def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
     
     @scala.inline
-    def setPreviousSiblingNull: Self = this.set("previousSibling", null)
+    def setPreviousElementSibling(value: Element): Self = StObject.set(x, "previousElementSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuerySelector(value: a => HTMLAnchorElement | Null): Self = this.set("querySelector", js.Any.fromFunction1(value))
+    def setPreviousElementSiblingNull: Self = StObject.set(x, "previousElementSibling", null)
     
     @scala.inline
-    def deleteQuerySelector: Self = this.set("querySelector", js.undefined)
+    def setPreviousElementSiblingUndefined: Self = StObject.set(x, "previousElementSibling", js.undefined)
     
     @scala.inline
-    def setQuerySelectorAll(value: a => NodeListOf[HTMLAnchorElement]): Self = this.set("querySelectorAll", js.Any.fromFunction1(value))
+    def setPreviousSibling(value: ChildNode): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuerySelectorAll: Self = this.set("querySelectorAll", js.undefined)
+    def setPreviousSiblingNull: Self = StObject.set(x, "previousSibling", null)
     
     @scala.inline
-    def setReleasePointerCapture(value: /* pointerId */ Double => Unit): Self = this.set("releasePointerCapture", js.Any.fromFunction1(value))
+    def setPreviousSiblingUndefined: Self = StObject.set(x, "previousSibling", js.undefined)
     
     @scala.inline
-    def deleteReleasePointerCapture: Self = this.set("releasePointerCapture", js.undefined)
+    def setQuerySelector(value: a => HTMLAnchorElement | Null): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
+    def setQuerySelectorAll(value: a => NodeListOf[HTMLAnchorElement]): Self = StObject.set(x, "querySelectorAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setQuerySelectorAllUndefined: Self = StObject.set(x, "querySelectorAll", js.undefined)
     
     @scala.inline
-    def setRemoveAttribute(value: /* qualifiedName */ String => Unit): Self = this.set("removeAttribute", js.Any.fromFunction1(value))
+    def setQuerySelectorUndefined: Self = StObject.set(x, "querySelector", js.undefined)
     
     @scala.inline
-    def deleteRemoveAttribute: Self = this.set("removeAttribute", js.undefined)
+    def setReleasePointerCapture(value: /* pointerId */ Double => Unit): Self = StObject.set(x, "releasePointerCapture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAttributeNS(value: (/* namespace */ String, /* localName */ String) => Unit): Self = this.set("removeAttributeNS", js.Any.fromFunction2(value))
+    def setReleasePointerCaptureUndefined: Self = StObject.set(x, "releasePointerCapture", js.undefined)
     
     @scala.inline
-    def deleteRemoveAttributeNS: Self = this.set("removeAttributeNS", js.undefined)
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemoveAttributeNode(value: /* attr */ Attr => Attr): Self = this.set("removeAttributeNode", js.Any.fromFunction1(value))
+    def setRemoveAttribute(value: /* qualifiedName */ String => Unit): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRemoveAttributeNode: Self = this.set("removeAttributeNode", js.undefined)
+    def setRemoveAttributeNS(value: (/* namespace */ String, /* localName */ String) => Unit): Self = StObject.set(x, "removeAttributeNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveChild(value: /* oldChild */ Node => Node): Self = this.set("removeChild", js.Any.fromFunction1(value))
+    def setRemoveAttributeNSUndefined: Self = StObject.set(x, "removeAttributeNS", js.undefined)
     
     @scala.inline
-    def deleteRemoveChild: Self = this.set("removeChild", js.undefined)
+    def setRemoveAttributeNode(value: /* attr */ Attr => Attr): Self = StObject.set(x, "removeAttributeNode", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setRemoveAttributeNodeUndefined: Self = StObject.set(x, "removeAttributeNode", js.undefined)
+    
+    @scala.inline
+    def setRemoveAttributeUndefined: Self = StObject.set(x, "removeAttribute", js.undefined)
+    
+    @scala.inline
+    def setRemoveChild(value: /* oldChild */ Node => Node): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setRemoveChildUndefined: Self = StObject.set(x, "removeChild", js.undefined)
     
     @scala.inline
     def setRemoveEventListener(
       value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsElement, /* ev */ Event, _]) => Unit
-    ): Self = this.set("removeEventListener", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRemoveEventListener: Self = this.set("removeEventListener", js.undefined)
+    def setRemoveEventListenerUndefined: Self = StObject.set(x, "removeEventListener", js.undefined)
     
     @scala.inline
-    def setReplaceChild(value: (/* newChild */ Node, /* oldChild */ Node) => Node): Self = this.set("replaceChild", js.Any.fromFunction2(value))
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteReplaceChild: Self = this.set("replaceChild", js.undefined)
+    def setReplaceChild(value: (/* newChild */ Node, /* oldChild */ Node) => Node): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReplaceWith(value: /* repeated */ Node | String => Unit): Self = this.set("replaceWith", js.Any.fromFunction1(value))
+    def setReplaceChildUndefined: Self = StObject.set(x, "replaceChild", js.undefined)
     
     @scala.inline
-    def deleteReplaceWith: Self = this.set("replaceWith", js.undefined)
+    def setReplaceWith(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestFullscreen(value: () => js.Promise[Unit]): Self = this.set("requestFullscreen", js.Any.fromFunction0(value))
+    def setReplaceWithUndefined: Self = StObject.set(x, "replaceWith", js.undefined)
     
     @scala.inline
-    def deleteRequestFullscreen: Self = this.set("requestFullscreen", js.undefined)
+    def setRequestFullscreen(value: () => js.Promise[Unit]): Self = StObject.set(x, "requestFullscreen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRequestPointerLock(value: () => Unit): Self = this.set("requestPointerLock", js.Any.fromFunction0(value))
+    def setRequestFullscreenUndefined: Self = StObject.set(x, "requestFullscreen", js.undefined)
     
     @scala.inline
-    def deleteRequestPointerLock: Self = this.set("requestPointerLock", js.undefined)
+    def setRequestPointerLock(value: () => Unit): Self = StObject.set(x, "requestPointerLock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScroll(value: () => Unit): Self = this.set("scroll", js.Any.fromFunction0(value))
+    def setRequestPointerLockUndefined: Self = StObject.set(x, "requestPointerLock", js.undefined)
     
     @scala.inline
-    def deleteScroll: Self = this.set("scroll", js.undefined)
+    def setScroll(value: () => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScrollBy(value: () => Unit): Self = this.set("scrollBy", js.Any.fromFunction0(value))
+    def setScrollBy(value: () => Unit): Self = StObject.set(x, "scrollBy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteScrollBy: Self = this.set("scrollBy", js.undefined)
+    def setScrollByUndefined: Self = StObject.set(x, "scrollBy", js.undefined)
     
     @scala.inline
-    def setScrollHeight(value: Double): Self = this.set("scrollHeight", value.asInstanceOf[js.Any])
+    def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollHeight: Self = this.set("scrollHeight", js.undefined)
+    def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
     
     @scala.inline
-    def setScrollIntoView(value: () => Unit): Self = this.set("scrollIntoView", js.Any.fromFunction0(value))
+    def setScrollIntoView(value: () => Unit): Self = StObject.set(x, "scrollIntoView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteScrollIntoView: Self = this.set("scrollIntoView", js.undefined)
+    def setScrollIntoViewUndefined: Self = StObject.set(x, "scrollIntoView", js.undefined)
     
     @scala.inline
-    def setScrollLeft(value: Double): Self = this.set("scrollLeft", value.asInstanceOf[js.Any])
+    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollLeft: Self = this.set("scrollLeft", js.undefined)
+    def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
     
     @scala.inline
-    def setScrollTo(value: () => Unit): Self = this.set("scrollTo", js.Any.fromFunction0(value))
+    def setScrollTo(value: () => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteScrollTo: Self = this.set("scrollTo", js.undefined)
+    def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
     
     @scala.inline
-    def setScrollTop(value: Double): Self = this.set("scrollTop", value.asInstanceOf[js.Any])
+    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollTop: Self = this.set("scrollTop", js.undefined)
+    def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
     
     @scala.inline
-    def setScrollWidth(value: Double): Self = this.set("scrollWidth", value.asInstanceOf[js.Any])
+    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     
     @scala.inline
-    def deleteScrollWidth: Self = this.set("scrollWidth", js.undefined)
+    def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetAttribute(value: (/* qualifiedName */ String, /* value */ String) => Unit): Self = this.set("setAttribute", js.Any.fromFunction2(value))
+    def setScrollWidthUndefined: Self = StObject.set(x, "scrollWidth", js.undefined)
     
     @scala.inline
-    def deleteSetAttribute: Self = this.set("setAttribute", js.undefined)
+    def setSetAttribute(value: (/* qualifiedName */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetAttributeNS(value: (/* namespace */ String, /* qualifiedName */ String, /* value */ String) => Unit): Self = this.set("setAttributeNS", js.Any.fromFunction3(value))
+    def setSetAttributeNS(value: (/* namespace */ String, /* qualifiedName */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttributeNS", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteSetAttributeNS: Self = this.set("setAttributeNS", js.undefined)
+    def setSetAttributeNSUndefined: Self = StObject.set(x, "setAttributeNS", js.undefined)
     
     @scala.inline
-    def setSetAttributeNode(value: /* attr */ Attr => Attr | Null): Self = this.set("setAttributeNode", js.Any.fromFunction1(value))
+    def setSetAttributeNode(value: /* attr */ Attr => Attr | Null): Self = StObject.set(x, "setAttributeNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetAttributeNode: Self = this.set("setAttributeNode", js.undefined)
+    def setSetAttributeNodeNS(value: /* attr */ Attr => Attr | Null): Self = StObject.set(x, "setAttributeNodeNS", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAttributeNodeNS(value: /* attr */ Attr => Attr | Null): Self = this.set("setAttributeNodeNS", js.Any.fromFunction1(value))
+    def setSetAttributeNodeNSUndefined: Self = StObject.set(x, "setAttributeNodeNS", js.undefined)
     
     @scala.inline
-    def deleteSetAttributeNodeNS: Self = this.set("setAttributeNodeNS", js.undefined)
+    def setSetAttributeNodeUndefined: Self = StObject.set(x, "setAttributeNode", js.undefined)
     
     @scala.inline
-    def setSetPointerCapture(value: /* pointerId */ Double => Unit): Self = this.set("setPointerCapture", js.Any.fromFunction1(value))
+    def setSetAttributeUndefined: Self = StObject.set(x, "setAttribute", js.undefined)
     
     @scala.inline
-    def deleteSetPointerCapture: Self = this.set("setPointerCapture", js.undefined)
+    def setSetPointerCapture(value: /* pointerId */ Double => Unit): Self = StObject.set(x, "setPointerCapture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShadowRoot(value: ShadowRoot): Self = this.set("shadowRoot", value.asInstanceOf[js.Any])
+    def setSetPointerCaptureUndefined: Self = StObject.set(x, "setPointerCapture", js.undefined)
     
     @scala.inline
-    def deleteShadowRoot: Self = this.set("shadowRoot", js.undefined)
+    def setShadowRoot(value: ShadowRoot): Self = StObject.set(x, "shadowRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowRootNull: Self = this.set("shadowRoot", null)
+    def setShadowRootNull: Self = StObject.set(x, "shadowRoot", null)
     
     @scala.inline
-    def setSlot(value: String): Self = this.set("slot", value.asInstanceOf[js.Any])
+    def setShadowRootUndefined: Self = StObject.set(x, "shadowRoot", js.undefined)
     
     @scala.inline
-    def deleteSlot: Self = this.set("slot", js.undefined)
+    def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
+    def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
     @scala.inline
-    def deleteTagName: Self = this.set("tagName", js.undefined)
+    def setTEXT_NODE(value: Double): Self = StObject.set(x, "TEXT_NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextContent(value: String): Self = this.set("textContent", value.asInstanceOf[js.Any])
+    def setTEXT_NODEUndefined: Self = StObject.set(x, "TEXT_NODE", js.undefined)
     
     @scala.inline
-    def deleteTextContent: Self = this.set("textContent", js.undefined)
+    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextContentNull: Self = this.set("textContent", null)
+    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     
     @scala.inline
-    def setToggleAttribute(value: /* qualifiedName */ String => Boolean): Self = this.set("toggleAttribute", js.Any.fromFunction1(value))
+    def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteToggleAttribute: Self = this.set("toggleAttribute", js.undefined)
+    def setTextContentNull: Self = StObject.set(x, "textContent", null)
     
     @scala.inline
-    def setWebkitMatchesSelector(value: /* selectors */ String => Boolean): Self = this.set("webkitMatchesSelector", js.Any.fromFunction1(value))
+    def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
     
     @scala.inline
-    def deleteWebkitMatchesSelector: Self = this.set("webkitMatchesSelector", js.undefined)
+    def setToggleAttribute(value: /* qualifiedName */ String => Boolean): Self = StObject.set(x, "toggleAttribute", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setToggleAttributeUndefined: Self = StObject.set(x, "toggleAttribute", js.undefined)
+    
+    @scala.inline
+    def setWebkitMatchesSelector(value: /* selectors */ String => Boolean): Self = StObject.set(x, "webkitMatchesSelector", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setWebkitMatchesSelectorUndefined: Self = StObject.set(x, "webkitMatchesSelector", js.undefined)
   }
 }

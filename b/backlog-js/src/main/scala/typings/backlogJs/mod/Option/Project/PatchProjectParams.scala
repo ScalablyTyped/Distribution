@@ -1,11 +1,12 @@
 package typings.backlogJs.mod.Option.Project
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchProjectParams extends js.Object {
+trait PatchProjectParams extends StObject {
   
   var archived: js.UndefOr[Boolean] = js.native
   
@@ -30,60 +31,48 @@ object PatchProjectParams {
   }
   
   @scala.inline
-  implicit class PatchProjectParamsOps[Self <: PatchProjectParams] (val x: Self) extends AnyVal {
+  implicit class PatchProjectParamsMutableBuilder[Self <: PatchProjectParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChartEnabled(value: Boolean): Self = StObject.set(x, "chartEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    def setChartEnabledUndefined: Self = StObject.set(x, "chartEnabled", js.undefined)
     
     @scala.inline
-    def deleteArchived: Self = this.set("archived", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartEnabled(value: Boolean): Self = this.set("chartEnabled", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteChartEnabled: Self = this.set("chartEnabled", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setProjectLeaderCanEditProjectLeader(value: Boolean): Self = StObject.set(x, "projectLeaderCanEditProjectLeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProjectLeaderCanEditProjectLeaderUndefined: Self = StObject.set(x, "projectLeaderCanEditProjectLeader", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSubtaskingEnabled(value: Boolean): Self = StObject.set(x, "subtaskingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectLeaderCanEditProjectLeader(value: Boolean): Self = this.set("projectLeaderCanEditProjectLeader", value.asInstanceOf[js.Any])
+    def setSubtaskingEnabledUndefined: Self = StObject.set(x, "subtaskingEnabled", js.undefined)
     
     @scala.inline
-    def deleteProjectLeaderCanEditProjectLeader: Self = this.set("projectLeaderCanEditProjectLeader", js.undefined)
+    def setTextFormattingRule(value: TextFormattingRule): Self = StObject.set(x, "textFormattingRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtaskingEnabled(value: Boolean): Self = this.set("subtaskingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtaskingEnabled: Self = this.set("subtaskingEnabled", js.undefined)
-    
-    @scala.inline
-    def setTextFormattingRule(value: TextFormattingRule): Self = this.set("textFormattingRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextFormattingRule: Self = this.set("textFormattingRule", js.undefined)
+    def setTextFormattingRuleUndefined: Self = StObject.set(x, "textFormattingRule", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadBalancerInfo extends js.Object {
+trait LoadBalancerInfo extends StObject {
   
   /** Type of load balancer's backend configuration. */
   var backendType: js.UndefOr[String] = js.native
@@ -31,51 +32,39 @@ object LoadBalancerInfo {
   }
   
   @scala.inline
-  implicit class LoadBalancerInfoOps[Self <: LoadBalancerInfo] (val x: Self) extends AnyVal {
+  implicit class LoadBalancerInfoMutableBuilder[Self <: LoadBalancerInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendType(value: String): Self = StObject.set(x, "backendType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackendTypeUndefined: Self = StObject.set(x, "backendType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackendUri(value: String): Self = StObject.set(x, "backendUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackendType(value: String): Self = this.set("backendType", value.asInstanceOf[js.Any])
+    def setBackendUriUndefined: Self = StObject.set(x, "backendUri", js.undefined)
     
     @scala.inline
-    def deleteBackendType: Self = this.set("backendType", js.undefined)
+    def setBackends(value: js.Array[LoadBalancerBackend]): Self = StObject.set(x, "backends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackendUri(value: String): Self = this.set("backendUri", value.asInstanceOf[js.Any])
+    def setBackendsUndefined: Self = StObject.set(x, "backends", js.undefined)
     
     @scala.inline
-    def deleteBackendUri: Self = this.set("backendUri", js.undefined)
+    def setBackendsVarargs(value: LoadBalancerBackend*): Self = StObject.set(x, "backends", js.Array(value :_*))
     
     @scala.inline
-    def setBackendsVarargs(value: LoadBalancerBackend*): Self = this.set("backends", js.Array(value :_*))
+    def setHealthCheckUri(value: String): Self = StObject.set(x, "healthCheckUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackends(value: js.Array[LoadBalancerBackend]): Self = this.set("backends", value.asInstanceOf[js.Any])
+    def setHealthCheckUriUndefined: Self = StObject.set(x, "healthCheckUri", js.undefined)
     
     @scala.inline
-    def deleteBackends: Self = this.set("backends", js.undefined)
+    def setLoadBalancerType(value: String): Self = StObject.set(x, "loadBalancerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckUri(value: String): Self = this.set("healthCheckUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthCheckUri: Self = this.set("healthCheckUri", js.undefined)
-    
-    @scala.inline
-    def setLoadBalancerType(value: String): Self = this.set("loadBalancerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadBalancerType: Self = this.set("loadBalancerType", js.undefined)
+    def setLoadBalancerTypeUndefined: Self = StObject.set(x, "loadBalancerType", js.undefined)
   }
 }

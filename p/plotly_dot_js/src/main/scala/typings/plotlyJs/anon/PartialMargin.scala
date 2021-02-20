@@ -1,12 +1,13 @@
 package typings.plotlyJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Margin> */
 @js.native
-trait PartialMargin extends js.Object {
+trait PartialMargin extends StObject {
   
   var b: js.UndefOr[Double] = js.native
   
@@ -27,48 +28,36 @@ object PartialMargin {
   }
   
   @scala.inline
-  implicit class PartialMarginOps[Self <: PartialMargin] (val x: Self) extends AnyVal {
+  implicit class PartialMarginMutableBuilder[Self <: PartialMargin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: Double): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
     @scala.inline
-    def deleteB: Self = this.set("b", js.undefined)
+    def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL(value: Double): Self = this.set("l", value.asInstanceOf[js.Any])
+    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
     
     @scala.inline
-    def deleteL: Self = this.set("l", js.undefined)
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPad(value: Double): Self = this.set("pad", value.asInstanceOf[js.Any])
+    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     @scala.inline
-    def deletePad: Self = this.set("pad", js.undefined)
+    def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteR: Self = this.set("r", js.undefined)
-    
-    @scala.inline
-    def setT(value: Double): Self = this.set("t", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteT: Self = this.set("t", js.undefined)
+    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
   }
 }

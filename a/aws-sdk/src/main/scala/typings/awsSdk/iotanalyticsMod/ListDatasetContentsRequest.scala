@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDatasetContentsRequest extends js.Object {
+trait ListDatasetContentsRequest extends StObject {
   
   /**
     * The name of the data set whose contents information you want to list.
@@ -41,45 +42,33 @@ object ListDatasetContentsRequest {
   }
   
   @scala.inline
-  implicit class ListDatasetContentsRequestOps[Self <: ListDatasetContentsRequest] (val x: Self) extends AnyVal {
+  implicit class ListDatasetContentsRequestMutableBuilder[Self <: ListDatasetContentsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasetName(value: DatasetName): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setDatasetName(value: DatasetName): Self = this.set("datasetName", value.asInstanceOf[js.Any])
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setScheduledBefore(value: Timestamp): Self = StObject.set(x, "scheduledBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setScheduledBeforeUndefined: Self = StObject.set(x, "scheduledBefore", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setScheduledOnOrAfter(value: Timestamp): Self = StObject.set(x, "scheduledOnOrAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledBefore(value: Timestamp): Self = this.set("scheduledBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledBefore: Self = this.set("scheduledBefore", js.undefined)
-    
-    @scala.inline
-    def setScheduledOnOrAfter(value: Timestamp): Self = this.set("scheduledOnOrAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledOnOrAfter: Self = this.set("scheduledOnOrAfter", js.undefined)
+    def setScheduledOnOrAfterUndefined: Self = StObject.set(x, "scheduledOnOrAfter", js.undefined)
   }
 }

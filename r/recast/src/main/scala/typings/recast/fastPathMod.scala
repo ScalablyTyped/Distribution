@@ -1,14 +1,23 @@
 package typings.recast
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("recast/lib/fast-path", JSImport.Namespace)
-@js.native
-object fastPathMod extends js.Object {
+object fastPathMod extends Shortcut {
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("recast/lib/fast-path", JSImport.Default)
+  @js.native
+  class default protected () extends FastPathType {
+    def this(value: js.Any) = this()
+  }
+  @JSImport("recast/lib/fast-path", JSImport.Default)
+  @js.native
+  val default: FastPathConstructor = js.native
   
   @js.native
   trait FastPathConstructor
@@ -18,7 +27,7 @@ object fastPathMod extends js.Object {
   }
   
   @js.native
-  trait FastPathType extends js.Object {
+  trait FastPathType extends StObject {
     
     def call(callback: js.Any, names: js.Any*): js.Any = js.native
     
@@ -57,10 +66,8 @@ object fastPathMod extends js.Object {
     def valueIsDuplicate(): js.Any = js.native
   }
   
-  @js.native
-  class default protected () extends FastPathType {
-    def this(value: js.Any) = this()
-  }
-  @js.native
-  object default extends TopLevel[FastPathConstructor]
+  type _To = FastPathConstructor
+  
+  /* This means you don't have to write `default`, but can instead just say `fastPathMod.foo` */
+  override def _to: FastPathConstructor = default
 }

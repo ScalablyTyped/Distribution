@@ -1,5 +1,6 @@
 package typings.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // calendarId: 'primary' or the calendar from which the event to be deleted
 // eventId: the event that need to be deleted from calendar (Event.id from the list/insert response)
 @js.native
-trait EventsDeleteParameters extends js.Object {
+trait EventsDeleteParameters extends StObject {
   
   var calendarId: String = js.native
   
@@ -24,30 +25,18 @@ object EventsDeleteParameters {
   }
   
   @scala.inline
-  implicit class EventsDeleteParametersOps[Self <: EventsDeleteParameters] (val x: Self) extends AnyVal {
+  implicit class EventsDeleteParametersMutableBuilder[Self <: EventsDeleteParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSendNotifications(value: Boolean): Self = StObject.set(x, "sendNotifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarId(value: String): Self = this.set("calendarId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventId(value: String): Self = this.set("eventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSendNotifications(value: Boolean): Self = this.set("sendNotifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendNotifications: Self = this.set("sendNotifications", js.undefined)
+    def setSendNotificationsUndefined: Self = StObject.set(x, "sendNotifications", js.undefined)
   }
 }

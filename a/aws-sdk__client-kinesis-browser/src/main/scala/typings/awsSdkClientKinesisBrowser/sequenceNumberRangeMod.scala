@@ -1,13 +1,13 @@
 package typings.awsSdkClientKinesisBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/model/_SequenceNumberRange", JSImport.Namespace)
-@js.native
-object sequenceNumberRangeMod extends js.Object {
+object sequenceNumberRangeMod {
   
-  @JSName("_SequenceNumberRange")
+  @JSImport("@aws-sdk/client-kinesis-browser/model/_SequenceNumberRange", "_SequenceNumberRange")
+  @js.native
   val SequenceNumberRange: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

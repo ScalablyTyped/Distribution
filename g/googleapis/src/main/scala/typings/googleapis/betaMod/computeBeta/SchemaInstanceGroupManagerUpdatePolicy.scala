@@ -1,11 +1,12 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInstanceGroupManagerUpdatePolicy extends js.Object {
+trait SchemaInstanceGroupManagerUpdatePolicy extends StObject {
   
   /**
     * The maximum number of instances that can be created above the specified
@@ -61,48 +62,36 @@ object SchemaInstanceGroupManagerUpdatePolicy {
   }
   
   @scala.inline
-  implicit class SchemaInstanceGroupManagerUpdatePolicyOps[Self <: SchemaInstanceGroupManagerUpdatePolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceGroupManagerUpdatePolicyMutableBuilder[Self <: SchemaInstanceGroupManagerUpdatePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxSurge(value: SchemaFixedOrPercent): Self = StObject.set(x, "maxSurge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxSurgeUndefined: Self = StObject.set(x, "maxSurge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxUnavailable(value: SchemaFixedOrPercent): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSurge(value: SchemaFixedOrPercent): Self = this.set("maxSurge", value.asInstanceOf[js.Any])
+    def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
     
     @scala.inline
-    def deleteMaxSurge: Self = this.set("maxSurge", js.undefined)
+    def setMinReadySec(value: Double): Self = StObject.set(x, "minReadySec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxUnavailable(value: SchemaFixedOrPercent): Self = this.set("maxUnavailable", value.asInstanceOf[js.Any])
+    def setMinReadySecUndefined: Self = StObject.set(x, "minReadySec", js.undefined)
     
     @scala.inline
-    def deleteMaxUnavailable: Self = this.set("maxUnavailable", js.undefined)
+    def setMinimalAction(value: String): Self = StObject.set(x, "minimalAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinReadySec(value: Double): Self = this.set("minReadySec", value.asInstanceOf[js.Any])
+    def setMinimalActionUndefined: Self = StObject.set(x, "minimalAction", js.undefined)
     
     @scala.inline
-    def deleteMinReadySec: Self = this.set("minReadySec", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimalAction(value: String): Self = this.set("minimalAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimalAction: Self = this.set("minimalAction", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

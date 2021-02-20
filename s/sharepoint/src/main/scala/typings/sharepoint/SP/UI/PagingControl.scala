@@ -1,12 +1,13 @@
 package typings.sharepoint.SP.UI
 
 import typings.std.HTMLSpanElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PagingControl extends js.Object {
+trait PagingControl extends StObject {
   
   def getButtonState(buttonId: Double): Double = js.native
   
@@ -46,45 +47,33 @@ object PagingControl {
   }
   
   @scala.inline
-  implicit class PagingControlOps[Self <: PagingControl] (val x: Self) extends AnyVal {
+  implicit class PagingControlMutableBuilder[Self <: PagingControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetButtonState(value: Double => Double): Self = StObject.set(x, "getButtonState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_innerContent(value: () => HTMLSpanElement): Self = StObject.set(x, "get_innerContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_innerContentClass(value: () => String): Self = StObject.set(x, "get_innerContentClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetButtonState(value: Double => Double): Self = this.set("getButtonState", js.Any.fromFunction1(value))
+    def setOnNext(value: () => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_innerContent(value: () => HTMLSpanElement): Self = this.set("get_innerContent", js.Any.fromFunction0(value))
+    def setOnPrev(value: () => Unit): Self = StObject.set(x, "onPrev", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_innerContentClass(value: () => String): Self = this.set("get_innerContentClass", js.Any.fromFunction0(value))
+    def setOnWindowResized(value: () => Unit): Self = StObject.set(x, "onWindowResized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnNext(value: () => Unit): Self = this.set("onNext", js.Any.fromFunction0(value))
+    def setPostRender(value: () => Unit): Self = StObject.set(x, "postRender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnPrev(value: () => Unit): Self = this.set("onPrev", js.Any.fromFunction0(value))
+    def setRender(value: String => String): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnWindowResized(value: () => Unit): Self = this.set("onWindowResized", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPostRender(value: () => Unit): Self = this.set("postRender", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRender(value: String => String): Self = this.set("render", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetButtonState(value: (Double, Double) => Unit): Self = this.set("setButtonState", js.Any.fromFunction2(value))
+    def setSetButtonState(value: (Double, Double) => Unit): Self = StObject.set(x, "setButtonState", js.Any.fromFunction2(value))
   }
 }

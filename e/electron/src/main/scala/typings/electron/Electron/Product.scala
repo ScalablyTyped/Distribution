@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Product extends js.Object {
+trait Product extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/product
   /**
@@ -74,48 +75,36 @@ object Product {
   }
   
   @scala.inline
-  implicit class ProductOps[Self <: Product] (val x: Self) extends AnyVal {
+  implicit class ProductMutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentLengths(value: js.Array[Double]): Self = StObject.set(x, "contentLengths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentLengthsVarargs(value: Double*): Self = StObject.set(x, "contentLengths", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLengthsVarargs(value: Double*): Self = this.set("contentLengths", js.Array(value :_*))
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLengths(value: js.Array[Double]): Self = this.set("contentLengths", value.asInstanceOf[js.Any])
+    def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentVersion(value: String): Self = this.set("contentVersion", value.asInstanceOf[js.Any])
+    def setIsDownloadable(value: Boolean): Self = StObject.set(x, "isDownloadable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setLocalizedDescription(value: String): Self = StObject.set(x, "localizedDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedPrice(value: String): Self = this.set("formattedPrice", value.asInstanceOf[js.Any])
+    def setLocalizedTitle(value: String): Self = StObject.set(x, "localizedTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDownloadable(value: Boolean): Self = this.set("isDownloadable", value.asInstanceOf[js.Any])
+    def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizedDescription(value: String): Self = this.set("localizedDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocalizedTitle(value: String): Self = this.set("localizedTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrice(value: Double): Self = this.set("price", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProductIdentifier(value: String): Self = this.set("productIdentifier", value.asInstanceOf[js.Any])
+    def setProductIdentifier(value: String): Self = StObject.set(x, "productIdentifier", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.mobxReactLite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-react-lite/dist/useAsObservableSource", JSImport.Namespace)
-@js.native
-object useAsObservableSourceMod extends js.Object {
+object useAsObservableSourceMod {
   
+  @JSImport("mobx-react-lite/dist/useAsObservableSource", "useAsObservableSource")
+  @js.native
   def useAsObservableSource[TSource](current: TSource): TSource = js.native
 }

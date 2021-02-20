@@ -2,12 +2,13 @@ package typings.rnFetchBlob.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.rnFetchBlob.anon.Decode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RNFetchBlobStatic extends js.Object {
+trait RNFetchBlobStatic extends StObject {
   
   // this require external module https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/oboe
   var JSONStream: js.Any = js.native

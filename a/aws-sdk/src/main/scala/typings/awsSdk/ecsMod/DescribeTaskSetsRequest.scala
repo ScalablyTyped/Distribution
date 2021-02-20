@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTaskSetsRequest extends js.Object {
+trait DescribeTaskSetsRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service that the task sets exist in.
@@ -36,42 +37,30 @@ object DescribeTaskSetsRequest {
   }
   
   @scala.inline
-  implicit class DescribeTaskSetsRequestOps[Self <: DescribeTaskSetsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeTaskSetsRequestMutableBuilder[Self <: DescribeTaskSetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInclude(value: TaskSetFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setIncludeVarargs(value: TaskSetField*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeVarargs(value: TaskSetField*): Self = this.set("include", js.Array(value :_*))
+    def setTaskSets(value: StringList): Self = StObject.set(x, "taskSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: TaskSetFieldList): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setTaskSetsUndefined: Self = StObject.set(x, "taskSets", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
-    
-    @scala.inline
-    def setTaskSetsVarargs(value: String*): Self = this.set("taskSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTaskSets(value: StringList): Self = this.set("taskSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskSets: Self = this.set("taskSets", js.undefined)
+    def setTaskSetsVarargs(value: String*): Self = StObject.set(x, "taskSets", js.Array(value :_*))
   }
 }

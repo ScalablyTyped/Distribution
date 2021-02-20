@@ -1,5 +1,6 @@
 package typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * build the next request if the request has been truncated.
   */
 @js.native
-trait SchemaManifestsListResponse extends js.Object {
+trait SchemaManifestsListResponse extends StObject {
   
   /**
     * Output only. Manifests contained in this list response.
@@ -30,33 +31,21 @@ object SchemaManifestsListResponse {
   }
   
   @scala.inline
-  implicit class SchemaManifestsListResponseOps[Self <: SchemaManifestsListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaManifestsListResponseMutableBuilder[Self <: SchemaManifestsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManifests(value: js.Array[SchemaManifest]): Self = StObject.set(x, "manifests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManifestsUndefined: Self = StObject.set(x, "manifests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManifestsVarargs(value: SchemaManifest*): Self = StObject.set(x, "manifests", js.Array(value :_*))
     
     @scala.inline
-    def setManifestsVarargs(value: SchemaManifest*): Self = this.set("manifests", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifests(value: js.Array[SchemaManifest]): Self = this.set("manifests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManifests: Self = this.set("manifests", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

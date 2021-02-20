@@ -1,12 +1,13 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.materialMod.Material
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableAnimation extends js.Object {
+trait DisableAnimation extends StObject {
   
   /**
     * Disable the mesh's animation sequence
@@ -42,48 +43,36 @@ object DisableAnimation {
   }
   
   @scala.inline
-  implicit class DisableAnimationOps[Self <: DisableAnimation] (val x: Self) extends AnyVal {
+  implicit class DisableAnimationMutableBuilder[Self <: DisableAnimation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableLighting(value: Boolean): Self = StObject.set(x, "disableLighting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAnimation(value: Boolean): Self = this.set("disableAnimation", value.asInstanceOf[js.Any])
+    def setDisableLightingUndefined: Self = StObject.set(x, "disableLighting", js.undefined)
     
     @scala.inline
-    def deleteDisableAnimation: Self = this.set("disableAnimation", js.undefined)
+    def setTeleportationBorderColor(value: String): Self = StObject.set(x, "teleportationBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableLighting(value: Boolean): Self = this.set("disableLighting", value.asInstanceOf[js.Any])
+    def setTeleportationBorderColorUndefined: Self = StObject.set(x, "teleportationBorderColor", js.undefined)
     
     @scala.inline
-    def deleteDisableLighting: Self = this.set("disableLighting", js.undefined)
+    def setTeleportationFillColor(value: String): Self = StObject.set(x, "teleportationFillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeleportationBorderColor(value: String): Self = this.set("teleportationBorderColor", value.asInstanceOf[js.Any])
+    def setTeleportationFillColorUndefined: Self = StObject.set(x, "teleportationFillColor", js.undefined)
     
     @scala.inline
-    def deleteTeleportationBorderColor: Self = this.set("teleportationBorderColor", js.undefined)
+    def setTorusArrowMaterial(value: Material): Self = StObject.set(x, "torusArrowMaterial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeleportationFillColor(value: String): Self = this.set("teleportationFillColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeleportationFillColor: Self = this.set("teleportationFillColor", js.undefined)
-    
-    @scala.inline
-    def setTorusArrowMaterial(value: Material): Self = this.set("torusArrowMaterial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTorusArrowMaterial: Self = this.set("torusArrowMaterial", js.undefined)
+    def setTorusArrowMaterialUndefined: Self = StObject.set(x, "torusArrowMaterial", js.undefined)
   }
 }

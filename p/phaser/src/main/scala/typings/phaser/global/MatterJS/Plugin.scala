@@ -6,6 +6,7 @@ import typings.phaser.anon.Dict
 import typings.phaser.anon.IsRange
 import typings.phaser.anon.Name
 import typings.phaser.anon.Uses
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Plugin ()
   extends typings.phaser.MatterJS.Plugin
-/* static members */
-@JSGlobal("MatterJS.Plugin")
-@js.native
-object Plugin extends js.Object {
+object Plugin {
   
   /**
     * Recursively finds all of a module's dependencies and returns a flat dependency graph.
@@ -25,7 +23,12 @@ object Plugin extends js.Object {
     * @param module {} The module.
     * @return {object} A dependency graph.
     */
+  /* static member */
+  @JSGlobal("MatterJS.Plugin.dependencies")
+  @js.native
   def dependencies(module: Dependency): js.UndefOr[StringDictionary[js.Array[String]] | String] = js.native
+  @JSGlobal("MatterJS.Plugin.dependencies")
+  @js.native
   def dependencies(module: Dependency, tracked: StringDictionary[js.Array[String]]): js.UndefOr[StringDictionary[js.Array[String]] | String] = js.native
   
   /**
@@ -37,6 +40,9 @@ object Plugin extends js.Object {
     * @param dependency {string} The dependency of the format `'module-name'` or `'module-name@version'`.
     * @return {object} The dependency parsed into its components.
     */
+  /* static member */
+  @JSGlobal("MatterJS.Plugin.dependencyParse")
+  @js.native
   def dependencyParse(dependency: Dependency): Name = js.native
   
   /**
@@ -48,6 +54,9 @@ object Plugin extends js.Object {
     * @param module {} The module.
     * @return {boolean} `true` if `plugin.for` is applicable to `module`, otherwise `false`.
     */
+  /* static member */
+  @JSGlobal("MatterJS.Plugin.isFor")
+  @js.native
   def isFor(plugin: typings.phaser.MatterJS.Plugin, module: Dict): Boolean = js.native
   
   /**
@@ -60,6 +69,9 @@ object Plugin extends js.Object {
     * @param obj {} The obj to test.
     * @return {boolean} `true` if the object can be considered a plugin otherwise `false`.
     */
+  /* static member */
+  @JSGlobal("MatterJS.Plugin.isPlugin")
+  @js.native
   def isPlugin(obj: js.Object): Boolean = js.native
   
   /**
@@ -68,6 +80,9 @@ object Plugin extends js.Object {
     * @param plugin {} The plugin to register.
     * @return {object} The plugin.
     */
+  /* static member */
+  @JSGlobal("MatterJS.Plugin.register")
+  @js.native
   def register(plugin: typings.phaser.MatterJS.Plugin): typings.phaser.MatterJS.Plugin = js.native
   
   /**
@@ -77,6 +92,9 @@ object Plugin extends js.Object {
     * @param dependency {string} The dependency.
     * @return {object} The plugin if resolved, otherwise `undefined`.
     */
+  /* static member */
+  @JSGlobal("MatterJS.Plugin.resolve")
+  @js.native
   def resolve(dependency: String): js.UndefOr[typings.phaser.MatterJS.Plugin] = js.native
   
   /**
@@ -85,8 +103,13 @@ object Plugin extends js.Object {
     * @param plugin {} The plugin.
     * @return {string} Pretty printed plugin name and version.
     */
-  def toString(plugin: String): String = js.native
-  def toString(plugin: typings.phaser.MatterJS.Plugin): String = js.native
+  /* static member */
+  @JSGlobal("MatterJS.Plugin.toString")
+  @js.native
+  def toString_(plugin: String): String = js.native
+  @JSGlobal("MatterJS.Plugin.toString")
+  @js.native
+  def toString_(plugin: typings.phaser.MatterJS.Plugin): String = js.native
   
   /**
     * Installs the plugins by calling `plugin.install` on each plugin specified in `plugins` if passed, otherwise `module.uses`.
@@ -104,6 +127,9 @@ object Plugin extends js.Object {
     * @param module {} The module install plugins on.
     * @param [plugins=module.uses] {} The plugins to install on module (optional, defaults to `module.uses`).
     */
+  /* static member */
+  @JSGlobal("MatterJS.Plugin.use")
+  @js.native
   def use(module: Uses, plugins: js.Array[typings.phaser.MatterJS.Plugin | String]): Unit = js.native
   
   /**
@@ -120,6 +146,9 @@ object Plugin extends js.Object {
     * @param range {string} The version string.
     * @return {object} The version range parsed into its components.
     */
+  /* static member */
+  @JSGlobal("MatterJS.Plugin.versionParse")
+  @js.native
   def versionParse(range: String): IsRange = js.native
   
   /**
@@ -131,5 +160,8 @@ object Plugin extends js.Object {
     * @param range {string} The range string.
     * @return {boolean} `true` if `version` satisfies `range`, otherwise `false`.
     */
+  /* static member */
+  @JSGlobal("MatterJS.Plugin.versionSatisfies")
+  @js.native
   def versionSatisfies(version: String, range: String): Boolean = js.native
 }

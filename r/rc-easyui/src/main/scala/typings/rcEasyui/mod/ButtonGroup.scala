@@ -2,6 +2,7 @@ package typings.rcEasyui.mod
 
 import typings.rcEasyui.anon.SelectionMode
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,43 +14,56 @@ class ButtonGroup protected ()
   def this(e: js.Any) = this()
 }
 /* static members */
-@JSImport("rc-easyui", "ButtonGroup")
-@js.native
-object ButtonGroup extends js.Object {
+object ButtonGroup {
   
-  var defaultProps: SelectionMode = js.native
-  
+  @JSImport("rc-easyui", "ButtonGroup")
   @js.native
-  object contextTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "ButtonGroup.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.ButtonGroup.contextTypes.locale
+      @JSImport("rc-easyui", "ButtonGroup.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "ButtonGroup.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.ButtonGroup.contextTypes.t
+      @JSImport("rc-easyui", "ButtonGroup.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
+  @JSImport("rc-easyui", "ButtonGroup.defaultProps")
   @js.native
-  object propTypes extends js.Object {
+  def defaultProps: SelectionMode = js.native
+  @scala.inline
+  def defaultProps_=(x: SelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  object propTypes {
     
-    @js.native
-    object selectionMode extends js.Object {
+    object selectionMode {
       
+      @JSImport("rc-easyui", "ButtonGroup.propTypes.selectionMode")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.ButtonGroup.propTypes.selectionMode
+      @JSImport("rc-easyui", "ButtonGroup.propTypes.selectionMode.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

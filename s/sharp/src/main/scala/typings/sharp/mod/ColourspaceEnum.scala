@@ -1,11 +1,12 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColourspaceEnum extends js.Object {
+trait ColourspaceEnum extends StObject {
   
   var `b-w`: String = js.native
   
@@ -27,33 +28,21 @@ object ColourspaceEnum {
   }
   
   @scala.inline
-  implicit class ColourspaceEnumOps[Self <: ColourspaceEnum] (val x: Self) extends AnyVal {
+  implicit class ColourspaceEnumMutableBuilder[Self <: ColourspaceEnum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setB-w`(value: String): Self = StObject.set(x, "b-w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBw(value: String): Self = StObject.set(x, "bw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCmyk(value: String): Self = StObject.set(x, "cmyk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setB-w`(value: String): Self = this.set("b-w", value.asInstanceOf[js.Any])
+    def setMultiband(value: String): Self = StObject.set(x, "multiband", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBw(value: String): Self = this.set("bw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCmyk(value: String): Self = this.set("cmyk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultiband(value: String): Self = this.set("multiband", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSrgb(value: String): Self = this.set("srgb", value.asInstanceOf[js.Any])
+    def setSrgb(value: String): Self = StObject.set(x, "srgb", value.asInstanceOf[js.Any])
   }
 }

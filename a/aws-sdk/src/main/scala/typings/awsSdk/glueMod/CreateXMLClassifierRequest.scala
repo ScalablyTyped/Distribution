@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateXMLClassifierRequest extends js.Object {
+trait CreateXMLClassifierRequest extends StObject {
   
   /**
     * An identifier of the data format that the classifier matches.
@@ -31,30 +32,18 @@ object CreateXMLClassifierRequest {
   }
   
   @scala.inline
-  implicit class CreateXMLClassifierRequestOps[Self <: CreateXMLClassifierRequest] (val x: Self) extends AnyVal {
+  implicit class CreateXMLClassifierRequestMutableBuilder[Self <: CreateXMLClassifierRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassification(value: Classification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowTag(value: RowTag): Self = StObject.set(x, "RowTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassification(value: Classification): Self = this.set("Classification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowTag(value: RowTag): Self = this.set("RowTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowTag: Self = this.set("RowTag", js.undefined)
+    def setRowTagUndefined: Self = StObject.set(x, "RowTag", js.undefined)
   }
 }

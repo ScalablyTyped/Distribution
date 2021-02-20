@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A request for sending worker messages to the service.
   */
 @js.native
-trait SchemaSendWorkerMessagesRequest extends js.Object {
+trait SchemaSendWorkerMessagesRequest extends StObject {
   
   /**
     * The [regional endpoint]
@@ -31,33 +32,21 @@ object SchemaSendWorkerMessagesRequest {
   }
   
   @scala.inline
-  implicit class SchemaSendWorkerMessagesRequestOps[Self <: SchemaSendWorkerMessagesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSendWorkerMessagesRequestMutableBuilder[Self <: SchemaSendWorkerMessagesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkerMessages(value: js.Array[SchemaWorkerMessage]): Self = StObject.set(x, "workerMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setWorkerMessagesUndefined: Self = StObject.set(x, "workerMessages", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setWorkerMessagesVarargs(value: SchemaWorkerMessage*): Self = this.set("workerMessages", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkerMessages(value: js.Array[SchemaWorkerMessage]): Self = this.set("workerMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerMessages: Self = this.set("workerMessages", js.undefined)
+    def setWorkerMessagesVarargs(value: SchemaWorkerMessage*): Self = StObject.set(x, "workerMessages", js.Array(value :_*))
   }
 }

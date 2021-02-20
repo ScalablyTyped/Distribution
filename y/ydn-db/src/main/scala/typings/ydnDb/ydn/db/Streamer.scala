@@ -1,11 +1,12 @@
 package typings.ydnDb.ydn.db
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Streamer extends js.Object {
+trait Streamer extends StObject {
   
   def collect(callback: js.Function1[/* values */ js.Array[_], Unit]): js.Any = js.native
   

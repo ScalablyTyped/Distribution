@@ -2,16 +2,15 @@ package typings.jestSinon
 
 import typings.sinon.mod.SinonMatch
 import typings.sinon.mod.SinonSpy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("jest")
-@js.native
-object jest extends js.Object {
+object jest {
   
   @js.native
-  trait Matchers[R, T] extends js.Object {
+  trait Matchers[R, T] extends StObject {
     
     def toAlwaysReturnWith(obj: js.Any): R = js.native
     

@@ -1,11 +1,12 @@
 package typings.iotaLibJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Balances extends js.Object {
+trait Balances extends StObject {
   
   var balances: js.Array[Double] = js.native
   
@@ -24,33 +25,21 @@ object Balances {
   }
   
   @scala.inline
-  implicit class BalancesOps[Self <: Balances] (val x: Self) extends AnyVal {
+  implicit class BalancesMutableBuilder[Self <: Balances] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBalances(value: js.Array[Double]): Self = StObject.set(x, "balances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBalancesVarargs(value: Double*): Self = StObject.set(x, "balances", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalancesVarargs(value: Double*): Self = this.set("balances", js.Array(value :_*))
+    def setMilestone(value: String): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalances(value: js.Array[Double]): Self = this.set("balances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMilestone(value: String): Self = this.set("milestone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMilestoneIndex(value: Double): Self = this.set("milestoneIndex", value.asInstanceOf[js.Any])
+    def setMilestoneIndex(value: Double): Self = StObject.set(x, "milestoneIndex", value.asInstanceOf[js.Any])
   }
 }

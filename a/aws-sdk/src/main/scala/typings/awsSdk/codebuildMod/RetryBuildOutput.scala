@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetryBuildOutput extends js.Object {
+trait RetryBuildOutput extends StObject {
   
   var build: js.UndefOr[Build] = js.native
 }
@@ -18,24 +19,12 @@ object RetryBuildOutput {
   }
   
   @scala.inline
-  implicit class RetryBuildOutputOps[Self <: RetryBuildOutput] (val x: Self) extends AnyVal {
+  implicit class RetryBuildOutputMutableBuilder[Self <: RetryBuildOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBuild(value: Build): Self = this.set("build", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuild: Self = this.set("build", js.undefined)
+    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
   }
 }

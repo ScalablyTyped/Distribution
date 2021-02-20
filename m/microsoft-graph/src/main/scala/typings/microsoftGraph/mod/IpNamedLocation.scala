@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object IpNamedLocation {
   }
   
   @scala.inline
-  implicit class IpNamedLocationOps[Self <: IpNamedLocation] (val x: Self) extends AnyVal {
+  implicit class IpNamedLocationMutableBuilder[Self <: IpNamedLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpRanges(value: js.Array[IpRange]): Self = StObject.set(x, "ipRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpRangesUndefined: Self = StObject.set(x, "ipRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "ipRanges", js.Array(value :_*))
     
     @scala.inline
-    def setIpRangesVarargs(value: IpRange*): Self = this.set("ipRanges", js.Array(value :_*))
+    def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpRanges(value: js.Array[IpRange]): Self = this.set("ipRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpRanges: Self = this.set("ipRanges", js.undefined)
-    
-    @scala.inline
-    def setIsTrusted(value: Boolean): Self = this.set("isTrusted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsTrusted: Self = this.set("isTrusted", js.undefined)
+    def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
   }
 }

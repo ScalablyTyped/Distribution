@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [halfExtents] - Half the distance across the box in each local axis. The constructor takes a reference of this parameter.
   */
 @js.native
-trait OrientedBox extends js.Object {
+trait OrientedBox extends StObject {
   
   /**
     * Test if a point is inside a OBB.

@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Global settings for the workspace. */
 @js.native
-trait WorkspaceSystemSettings extends js.Object {
+trait WorkspaceSystemSettings extends StObject {
   
   /** Workspace settings related to the disambiguation feature. **Note:** This feature is available only to Premium users. */
   var disambiguation: js.UndefOr[WorkspaceSystemSettingsDisambiguation] = js.native
@@ -26,36 +27,24 @@ object WorkspaceSystemSettings {
   }
   
   @scala.inline
-  implicit class WorkspaceSystemSettingsOps[Self <: WorkspaceSystemSettings] (val x: Self) extends AnyVal {
+  implicit class WorkspaceSystemSettingsMutableBuilder[Self <: WorkspaceSystemSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisambiguation(value: WorkspaceSystemSettingsDisambiguation): Self = StObject.set(x, "disambiguation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisambiguationUndefined: Self = StObject.set(x, "disambiguation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHuman_agent_assist(value: js.Object): Self = StObject.set(x, "human_agent_assist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisambiguation(value: WorkspaceSystemSettingsDisambiguation): Self = this.set("disambiguation", value.asInstanceOf[js.Any])
+    def setHuman_agent_assistUndefined: Self = StObject.set(x, "human_agent_assist", js.undefined)
     
     @scala.inline
-    def deleteDisambiguation: Self = this.set("disambiguation", js.undefined)
+    def setTooling(value: WorkspaceSystemSettingsTooling): Self = StObject.set(x, "tooling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHuman_agent_assist(value: js.Object): Self = this.set("human_agent_assist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHuman_agent_assist: Self = this.set("human_agent_assist", js.undefined)
-    
-    @scala.inline
-    def setTooling(value: WorkspaceSystemSettingsTooling): Self = this.set("tooling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooling: Self = this.set("tooling", js.undefined)
+    def setToolingUndefined: Self = StObject.set(x, "tooling", js.undefined)
   }
 }

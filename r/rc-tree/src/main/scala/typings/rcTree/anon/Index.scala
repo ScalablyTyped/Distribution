@@ -1,12 +1,13 @@
 package typings.rcTree.anon
 
 import typings.rcTree.interfaceMod.DataNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Index extends js.Object {
+trait Index extends StObject {
   
   var index: Double = js.native
   
@@ -36,36 +37,24 @@ object Index {
   }
   
   @scala.inline
-  implicit class IndexOps[Self <: Index] (val x: Self) extends AnyVal {
+  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setNode(value: DataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: typings.rcTree.interfaceMod.Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setParentPos(value: String | Double): Self = StObject.set(x, "parentPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: DataNode): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentPos(value: String | Double): Self = this.set("parentPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPos(value: String): Self = this.set("pos", value.asInstanceOf[js.Any])
+    def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
   }
 }

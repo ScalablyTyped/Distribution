@@ -1,11 +1,12 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStandardKernel extends js.Object {
+trait IStandardKernel extends StObject {
   
   val connectionProviderIds: js.Array[String] = js.native
   
@@ -22,30 +23,18 @@ object IStandardKernel {
   }
   
   @scala.inline
-  implicit class IStandardKernelOps[Self <: IStandardKernel] (val x: Self) extends AnyVal {
+  implicit class IStandardKernelMutableBuilder[Self <: IStandardKernel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionProviderIds(value: js.Array[String]): Self = StObject.set(x, "connectionProviderIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionProviderIdsVarargs(value: String*): Self = StObject.set(x, "connectionProviderIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionProviderIdsVarargs(value: String*): Self = this.set("connectionProviderIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setConnectionProviderIds(value: js.Array[String]): Self = this.set("connectionProviderIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options for a PartitionQueryRequest and PartitionReadRequest.
   */
 @js.native
-trait SchemaPartitionOptions extends js.Object {
+trait SchemaPartitionOptions extends StObject {
   
   /**
     * **Note:** This hint is currently ignored by PartitionQuery and
@@ -38,30 +39,18 @@ object SchemaPartitionOptions {
   }
   
   @scala.inline
-  implicit class SchemaPartitionOptionsOps[Self <: SchemaPartitionOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaPartitionOptionsMutableBuilder[Self <: SchemaPartitionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxPartitions(value: String): Self = StObject.set(x, "maxPartitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxPartitionsUndefined: Self = StObject.set(x, "maxPartitions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartitionSizeBytes(value: String): Self = StObject.set(x, "partitionSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPartitions(value: String): Self = this.set("maxPartitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxPartitions: Self = this.set("maxPartitions", js.undefined)
-    
-    @scala.inline
-    def setPartitionSizeBytes(value: String): Self = this.set("partitionSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionSizeBytes: Self = this.set("partitionSizeBytes", js.undefined)
+    def setPartitionSizeBytesUndefined: Self = StObject.set(x, "partitionSizeBytes", js.undefined)
   }
 }

@@ -1,15 +1,15 @@
 package typings.tsMockito
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-mockito/lib/stub/AbstractMethodStub", JSImport.Namespace)
-@js.native
-object abstractMethodStubMod extends js.Object {
+object abstractMethodStubMod {
   
+  @JSImport("ts-mockito/lib/stub/AbstractMethodStub", "AbstractMethodStub")
   @js.native
-  abstract class AbstractMethodStub () extends js.Object {
+  abstract class AbstractMethodStub () extends StObject {
     
     def getGroupIndex(): Double = js.native
     

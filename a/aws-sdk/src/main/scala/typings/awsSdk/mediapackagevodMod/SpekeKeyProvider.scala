@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackagevodMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpekeKeyProvider extends js.Object {
+trait SpekeKeyProvider extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) of an IAM role that AWS Elemental
@@ -32,30 +33,18 @@ object SpekeKeyProvider {
   }
   
   @scala.inline
-  implicit class SpekeKeyProviderOps[Self <: SpekeKeyProvider] (val x: Self) extends AnyVal {
+  implicit class SpekeKeyProviderMutableBuilder[Self <: SpekeKeyProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSystemIds(value: listOfString): Self = StObject.set(x, "SystemIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSystemIdsVarargs(value: string*): Self = StObject.set(x, "SystemIds", js.Array(value :_*))
     
     @scala.inline
-    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemIdsVarargs(value: string*): Self = this.set("SystemIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSystemIds(value: listOfString): Self = this.set("SystemIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

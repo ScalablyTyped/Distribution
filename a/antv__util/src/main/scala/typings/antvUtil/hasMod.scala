@@ -1,12 +1,13 @@
 package typings.antvUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/util/lib/has", JSImport.Namespace)
-@js.native
-object hasMod extends js.Object {
+object hasMod {
   
+  @JSImport("@antv/util/lib/has", JSImport.Default)
+  @js.native
   def default(obj: js.Object, key: js.Any): Boolean = js.native
 }

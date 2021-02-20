@@ -1,5 +1,6 @@
 package typings.vscodeJsonrpc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vscodeJsonrpc.vscodeJsonrpcStrings.messages
   - typings.vscodeJsonrpc.vscodeJsonrpcStrings.verbose
 */
-trait TraceValues extends js.Object
+trait TraceValues extends StObject
 object TraceValues {
   
   @scala.inline

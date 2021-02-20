@@ -5,42 +5,66 @@ import typings.stellarBase.anon.SponsoringId
 import typings.stellarBase.stellarBaseStrings.base64
 import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stellar-base/types/xdr", "LedgerEntryExtensionV1")
+@JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1")
 @js.native
 class LedgerEntryExtensionV1 protected ()
   extends typings.stellarBase.xdrMod.xdr.LedgerEntryExtensionV1 {
   def this(attributes: SponsoringId) = this()
 }
-/* static members */
-@JSImport("stellar-base/types/xdr", "LedgerEntryExtensionV1")
-@js.native
-object LedgerEntryExtensionV1 extends js.Object {
+object LedgerEntryExtensionV1 {
   
+  /* static member */
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.fromXDR")
+  @js.native
   def fromXDR(input: Buffer): typings.stellarBase.xdrMod.xdr.LedgerEntryExtensionV1 = js.native
-  @JSName("fromXDR")
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.fromXDR")
+  @js.native
   def fromXDR_base64(input: String, format: base64): typings.stellarBase.xdrMod.xdr.LedgerEntryExtensionV1 = js.native
-  @JSName("fromXDR")
+  /* static member */
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.fromXDR")
+  @js.native
   def fromXDR_hex(input: String, format: hex): typings.stellarBase.xdrMod.xdr.LedgerEntryExtensionV1 = js.native
-  @JSName("fromXDR")
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.fromXDR")
+  @js.native
   def fromXDR_raw(input: Buffer, format: raw): typings.stellarBase.xdrMod.xdr.LedgerEntryExtensionV1 = js.native
   
+  /* static member */
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.isValid")
+  @js.native
   def isValid(value: typings.stellarBase.xdrMod.xdr.LedgerEntryExtensionV1): Boolean = js.native
   
+  /* static member */
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.read")
+  @js.native
   def read(io: Buffer): typings.stellarBase.xdrMod.xdr.LedgerEntryExtensionV1 = js.native
   
+  /* static member */
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.toXDR")
+  @js.native
   def toXDR(value: typings.stellarBase.xdrMod.xdr.LedgerEntryExtensionV1): Buffer = js.native
   
+  /* static member */
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.validateXDR")
+  @js.native
   def validateXDR(input: Buffer): Boolean = js.native
-  @JSName("validateXDR")
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.validateXDR")
+  @js.native
   def validateXDR_base64(input: String, format: base64): Boolean = js.native
-  @JSName("validateXDR")
+  /* static member */
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.validateXDR")
+  @js.native
   def validateXDR_hex(input: String, format: hex): Boolean = js.native
-  @JSName("validateXDR")
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.validateXDR")
+  @js.native
   def validateXDR_raw(input: Buffer, format: raw): Boolean = js.native
   
+  /* static member */
+  @JSImport("stellar-base/types/xdr", "default.LedgerEntryExtensionV1.write")
+  @js.native
   def write(value: typings.stellarBase.xdrMod.xdr.LedgerEntryExtensionV1, io: Buffer): Unit = js.native
 }

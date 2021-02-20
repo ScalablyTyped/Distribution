@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ReactionsListForTeamDiscussionInOrgEndp
 import typings.octokitTypes.endpointsMod.ReactionsListForTeamDiscussionInOrgRequestOptions
 import typings.octokitTypes.endpointsMod.ReactionsListForTeamDiscussionInOrgResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReactionsListForTeamDiscussionInOrgEndpoint extends js.Object {
+trait ParametersReactionsListForTeamDiscussionInOrgEndpoint extends StObject {
   
   var parameters: ReactionsListForTeamDiscussionInOrgEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersReactionsListForTeamDiscussionInOrgEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReactionsListForTeamDiscussionInOrgEndpointOps[Self <: ParametersReactionsListForTeamDiscussionInOrgEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReactionsListForTeamDiscussionInOrgEndpointMutableBuilder[Self <: ParametersReactionsListForTeamDiscussionInOrgEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReactionsListForTeamDiscussionInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ReactionsListForTeamDiscussionInOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReactionsListForTeamDiscussionInOrgEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ReactionsListForTeamDiscussionInOrgRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReactionsListForTeamDiscussionInOrgResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ReactionsListForTeamDiscussionInOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

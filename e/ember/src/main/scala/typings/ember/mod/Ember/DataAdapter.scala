@@ -1,10 +1,11 @@
 package typings.ember.mod.Ember
 
+import typings.emberDebug.dataAdapterMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ember", "Ember.DataAdapter")
 @js.native
-class DataAdapter ()
-  extends typings.emberDebug.dataAdapterMod.DataAdapter
+class DataAdapter () extends default

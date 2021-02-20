@@ -1,12 +1,13 @@
 package typings.nvd3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis * / any */ @js.native
-trait Nvd3Axis extends js.Object {
+trait Nvd3Axis extends StObject {
   
   def axisLabel(): String = js.native
   def axisLabel(value: String): this.type = js.native

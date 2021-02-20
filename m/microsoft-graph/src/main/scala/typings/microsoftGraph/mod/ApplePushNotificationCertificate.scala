@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,57 +32,45 @@ object ApplePushNotificationCertificate {
   }
   
   @scala.inline
-  implicit class ApplePushNotificationCertificateOps[Self <: ApplePushNotificationCertificate] (val x: Self) extends AnyVal {
+  implicit class ApplePushNotificationCertificateMutableBuilder[Self <: ApplePushNotificationCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppleIdentifier(value: NullableOption[String]): Self = StObject.set(x, "appleIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppleIdentifierNull: Self = StObject.set(x, "appleIdentifier", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppleIdentifierUndefined: Self = StObject.set(x, "appleIdentifier", js.undefined)
     
     @scala.inline
-    def setAppleIdentifier(value: NullableOption[String]): Self = this.set("appleIdentifier", value.asInstanceOf[js.Any])
+    def setCertificate(value: NullableOption[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppleIdentifier: Self = this.set("appleIdentifier", js.undefined)
+    def setCertificateNull: Self = StObject.set(x, "certificate", null)
     
     @scala.inline
-    def setAppleIdentifierNull: Self = this.set("appleIdentifier", null)
+    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
     @scala.inline
-    def setCertificate(value: NullableOption[String]): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
     @scala.inline
-    def setCertificateNull: Self = this.set("certificate", null)
+    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDateTime(value: String): Self = this.set("expirationDateTime", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def deleteExpirationDateTime: Self = this.set("expirationDateTime", js.undefined)
+    def setTopicIdentifier(value: NullableOption[String]): Self = StObject.set(x, "topicIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDateTime(value: String): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setTopicIdentifierNull: Self = StObject.set(x, "topicIdentifier", null)
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
-    
-    @scala.inline
-    def setTopicIdentifier(value: NullableOption[String]): Self = this.set("topicIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicIdentifier: Self = this.set("topicIdentifier", js.undefined)
-    
-    @scala.inline
-    def setTopicIdentifierNull: Self = this.set("topicIdentifier", null)
+    def setTopicIdentifierUndefined: Self = StObject.set(x, "topicIdentifier", js.undefined)
   }
 }

@@ -6,16 +6,16 @@ import typings.guacamoleClient.keyboardMod.Keyboard.ModifierState
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/Keyboard", JSImport.Namespace)
-@js.native
-object keyboardMod extends js.Object {
+object keyboardMod {
   
+  @JSImport("guacamole-client/lib/Keyboard", "Keyboard")
   @js.native
-  class Keyboard protected () extends js.Object {
+  class Keyboard protected () extends StObject {
     /**
       * @param element
       * The Element to use to provide keyboard events. If omitted, at least one
@@ -97,11 +97,11 @@ object keyboardMod extends js.Object {
       */
     def `type`(str: String): Unit = js.native
   }
-  @js.native
-  object Keyboard extends js.Object {
+  object Keyboard {
     
+    @JSImport("guacamole-client/lib/Keyboard", "Keyboard.ModifierState")
     @js.native
-    class ModifierState () extends js.Object {
+    class ModifierState () extends StObject {
       
       /**
         * Whether alt is currently pressed.
@@ -129,14 +129,15 @@ object keyboardMod extends js.Object {
       var shift: Boolean = js.native
     }
     /* static members */
-    @js.native
-    object ModifierState extends js.Object {
+    object ModifierState {
       
       /**
         * Returns the modifier state applicable to the keyboard event given.
         * @param event The keyboard event to read.
         * @returns The current state of keyboard modifiers.
         */
+      @JSImport("guacamole-client/lib/Keyboard", "Keyboard.ModifierState.fromKeyboardEvent")
+      @js.native
       def fromKeyboardEvent(event: KeyboardEvent): ModifierState = js.native
     }
   }

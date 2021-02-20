@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolygonizeOptions extends js.Object {
+trait PolygonizeOptions extends StObject {
   
   var connectedness: js.UndefOr[Double] = js.native
   
@@ -28,45 +29,33 @@ object PolygonizeOptions {
   }
   
   @scala.inline
-  implicit class PolygonizeOptionsOps[Self <: PolygonizeOptions] (val x: Self) extends AnyVal {
+  implicit class PolygonizeOptionsMutableBuilder[Self <: PolygonizeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectedness(value: Double): Self = StObject.set(x, "connectedness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectednessUndefined: Self = StObject.set(x, "connectedness", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDst(value: Layer): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDst(value: Layer): Self = this.set("dst", value.asInstanceOf[js.Any])
+    def setMask(value: RasterBand): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixValField(value: Double): Self = this.set("pixValField", value.asInstanceOf[js.Any])
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def setSrc(value: RasterBand): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setPixValField(value: Double): Self = StObject.set(x, "pixValField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedness(value: Double): Self = this.set("connectedness", value.asInstanceOf[js.Any])
+    def setSrc(value: RasterBand): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectedness: Self = this.set("connectedness", js.undefined)
+    def setUseFloats(value: Boolean): Self = StObject.set(x, "useFloats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMask(value: RasterBand): Self = this.set("mask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
-    
-    @scala.inline
-    def setUseFloats(value: Boolean): Self = this.set("useFloats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseFloats: Self = this.set("useFloats", js.undefined)
+    def setUseFloatsUndefined: Self = StObject.set(x, "useFloats", js.undefined)
   }
 }

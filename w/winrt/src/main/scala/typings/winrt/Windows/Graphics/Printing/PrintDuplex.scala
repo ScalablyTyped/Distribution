@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintDuplex extends js.Object
+sealed trait PrintDuplex extends StObject
 @JSGlobal("Windows.Graphics.Printing.PrintDuplex")
 @js.native
-object PrintDuplex extends js.Object {
+object PrintDuplex extends StObject {
   
   @js.native
   sealed trait default extends PrintDuplex

@@ -1,12 +1,13 @@
 package typings.reactNavigationCore.anon
 
 import typings.reactNavigationRouters.typesMod.NavigationAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Noop extends js.Object {
+trait Noop extends StObject {
   
   /**
     * The action object which was dispatched.
@@ -27,24 +28,12 @@ object Noop {
   }
   
   @scala.inline
-  implicit class NoopOps[Self <: Noop] (val x: Self) extends AnyVal {
+  implicit class NoopMutableBuilder[Self <: Noop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: NavigationAction): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoop(value: Boolean): Self = this.set("noop", value.asInstanceOf[js.Any])
+    def setNoop(value: Boolean): Self = StObject.set(x, "noop", value.asInstanceOf[js.Any])
   }
 }

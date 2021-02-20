@@ -5,12 +5,13 @@ import typings.contentfulManagement.appDefinitionMod.AppDefinition
 import typings.contentfulManagement.appDefinitionMod.AppDefinitionProps
 import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofappDefinition extends js.Object {
+trait TypeofappDefinition extends StObject {
   
   def wrapAppDefinition(http: AxiosInstance, data: AppDefinitionProps): AppDefinition = js.native
   
@@ -28,26 +29,14 @@ object TypeofappDefinition {
   }
   
   @scala.inline
-  implicit class TypeofappDefinitionOps[Self <: TypeofappDefinition] (val x: Self) extends AnyVal {
+  implicit class TypeofappDefinitionMutableBuilder[Self <: TypeofappDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapAppDefinition(value: (AxiosInstance, AppDefinitionProps) => AppDefinition): Self = this.set("wrapAppDefinition", js.Any.fromFunction2(value))
+    def setWrapAppDefinition(value: (AxiosInstance, AppDefinitionProps) => AppDefinition): Self = StObject.set(x, "wrapAppDefinition", js.Any.fromFunction2(value))
     
     @scala.inline
     def setWrapAppDefinitionCollection(
       value: (AxiosInstance, CollectionProp[AppDefinitionProps]) => Collection[AppDefinition, AppDefinitionProps]
-    ): Self = this.set("wrapAppDefinitionCollection", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "wrapAppDefinitionCollection", js.Any.fromFunction2(value))
   }
 }

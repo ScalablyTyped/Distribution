@@ -1,12 +1,13 @@
 package typings.casperjs.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tester extends js.Object {
+trait Tester extends StObject {
   
   def assert(condition: Boolean): js.Any = js.native
   def assert(condition: Boolean, message: String): js.Any = js.native

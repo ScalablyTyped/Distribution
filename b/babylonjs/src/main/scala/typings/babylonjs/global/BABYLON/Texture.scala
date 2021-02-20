@@ -6,6 +6,7 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.Blob
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,17 +54,25 @@ class Texture protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.Texture")
-@js.native
-object Texture extends js.Object {
+object Texture {
+  
+  @JSGlobal("BABYLON.Texture")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Bilinear is mag = linear and min = linear and mip = nearest */
+  @JSGlobal("BABYLON.Texture.BILINEAR_SAMPLINGMODE")
+  @js.native
   val BILINEAR_SAMPLINGMODE: Double = js.native
   
   /** Texture is not repeating outside of 0..1 UVs */
+  @JSGlobal("BABYLON.Texture.CLAMP_ADDRESSMODE")
+  @js.native
   val CLAMP_ADDRESSMODE: Double = js.native
   
   /** Cubic coordinates mode */
+  @JSGlobal("BABYLON.Texture.CUBIC_MODE")
+  @js.native
   val CUBIC_MODE: Double = js.native
   
   /**
@@ -79,6 +88,8 @@ object Texture extends js.Object {
     * @param format define the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
     * @returns the created texture
     */
+  @JSGlobal("BABYLON.Texture.CreateFromBase64String")
+  @js.native
   def CreateFromBase64String(
     data: String,
     name: String,
@@ -92,42 +103,68 @@ object Texture extends js.Object {
   ): typings.babylonjs.BABYLON.Texture = js.native
   
   /** Equirectangular coordinates mode */
+  @JSGlobal("BABYLON.Texture.EQUIRECTANGULAR_MODE")
+  @js.native
   val EQUIRECTANGULAR_MODE: Double = js.native
   
   /** Explicit coordinates mode */
+  @JSGlobal("BABYLON.Texture.EXPLICIT_MODE")
+  @js.native
   val EXPLICIT_MODE: Double = js.native
   
   /** Equirectangular Fixed Mirrored coordinates mode */
+  @JSGlobal("BABYLON.Texture.FIXED_EQUIRECTANGULAR_MIRRORED_MODE")
+  @js.native
   val FIXED_EQUIRECTANGULAR_MIRRORED_MODE: Double = js.native
   
   /** Equirectangular Fixed coordinates mode */
+  @JSGlobal("BABYLON.Texture.FIXED_EQUIRECTANGULAR_MODE")
+  @js.native
   val FIXED_EQUIRECTANGULAR_MODE: Double = js.native
   
   /**
     * Gets or sets a general boolean used to indicate that texture buffers must be saved as part of the serialization process.
     * If no buffer exists, one will be created as base64 string from the internal webgl data.
     */
-  var ForceSerializeBuffers: Boolean = js.native
+  @JSGlobal("BABYLON.Texture.ForceSerializeBuffers")
+  @js.native
+  def ForceSerializeBuffers: Boolean = js.native
+  @scala.inline
+  def ForceSerializeBuffers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForceSerializeBuffers")(x.asInstanceOf[js.Any])
   
   /** Inverse Cubic coordinates mode */
+  @JSGlobal("BABYLON.Texture.INVCUBIC_MODE")
+  @js.native
   val INVCUBIC_MODE: Double = js.native
   
   /** mag = linear and min = linear and mip = none */
+  @JSGlobal("BABYLON.Texture.LINEAR_LINEAR")
+  @js.native
   val LINEAR_LINEAR: Double = js.native
   
   /** Trilinear is mag = linear and min = linear and mip = linear */
+  @JSGlobal("BABYLON.Texture.LINEAR_LINEAR_MIPLINEAR")
+  @js.native
   val LINEAR_LINEAR_MIPLINEAR: Double = js.native
   
   /** Bilinear is mag = linear and min = linear and mip = nearest */
+  @JSGlobal("BABYLON.Texture.LINEAR_LINEAR_MIPNEAREST")
+  @js.native
   val LINEAR_LINEAR_MIPNEAREST: Double = js.native
   
   /** mag = linear and min = nearest and mip = none */
+  @JSGlobal("BABYLON.Texture.LINEAR_NEAREST")
+  @js.native
   val LINEAR_NEAREST: Double = js.native
   
   /** mag = linear and min = nearest and mip = linear */
+  @JSGlobal("BABYLON.Texture.LINEAR_NEAREST_MIPLINEAR")
+  @js.native
   val LINEAR_NEAREST_MIPLINEAR: Double = js.native
   
   /** mag = linear and min = nearest and mip = nearest */
+  @JSGlobal("BABYLON.Texture.LINEAR_NEAREST_MIPNEAREST")
+  @js.native
   val LINEAR_NEAREST_MIPNEAREST: Double = js.native
   
   /**
@@ -145,6 +182,8 @@ object Texture extends js.Object {
     * @param format define the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
     * @returns the created texture
     */
+  @JSGlobal("BABYLON.Texture.LoadFromDataString")
+  @js.native
   def LoadFromDataString(
     name: String,
     buffer: js.Any,
@@ -163,33 +202,53 @@ object Texture extends js.Object {
   ): typings.babylonjs.BABYLON.Texture = js.native
   
   /** Texture is repeating and mirrored */
+  @JSGlobal("BABYLON.Texture.MIRROR_ADDRESSMODE")
+  @js.native
   val MIRROR_ADDRESSMODE: Double = js.native
   
   /** mag = nearest and min = linear and mip = none */
+  @JSGlobal("BABYLON.Texture.NEAREST_LINEAR")
+  @js.native
   val NEAREST_LINEAR: Double = js.native
   
   /** mag = nearest and min = linear and mip = linear */
+  @JSGlobal("BABYLON.Texture.NEAREST_LINEAR_MIPLINEAR")
+  @js.native
   val NEAREST_LINEAR_MIPLINEAR: Double = js.native
   
   /** mag = nearest and min = linear and mip = nearest */
+  @JSGlobal("BABYLON.Texture.NEAREST_LINEAR_MIPNEAREST")
+  @js.native
   val NEAREST_LINEAR_MIPNEAREST: Double = js.native
   
   /** mag = nearest and min = nearest and mip = none */
+  @JSGlobal("BABYLON.Texture.NEAREST_NEAREST")
+  @js.native
   val NEAREST_NEAREST: Double = js.native
   
   /** nearest is mag = nearest and min = nearest and mip = linear */
+  @JSGlobal("BABYLON.Texture.NEAREST_NEAREST_MIPLINEAR")
+  @js.native
   val NEAREST_NEAREST_MIPLINEAR: Double = js.native
   
   /** mag = nearest and min = nearest and mip = nearest */
+  @JSGlobal("BABYLON.Texture.NEAREST_NEAREST_MIPNEAREST")
+  @js.native
   val NEAREST_NEAREST_MIPNEAREST: Double = js.native
   
   /** nearest is mag = nearest and min = nearest and mip = linear */
+  @JSGlobal("BABYLON.Texture.NEAREST_SAMPLINGMODE")
+  @js.native
   val NEAREST_SAMPLINGMODE: Double = js.native
   
   /** Planar coordinates mode */
+  @JSGlobal("BABYLON.Texture.PLANAR_MODE")
+  @js.native
   val PLANAR_MODE: Double = js.native
   
   /** Projection coordinates mode */
+  @JSGlobal("BABYLON.Texture.PROJECTION_MODE")
+  @js.native
   val PROJECTION_MODE: Double = js.native
   
   /**
@@ -199,31 +258,51 @@ object Texture extends js.Object {
     * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
     * @returns The parsed texture if successful
     */
+  @JSGlobal("BABYLON.Texture.Parse")
+  @js.native
   def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.BaseTexture] = js.native
   
   /** Inverse Cubic coordinates mode */
+  @JSGlobal("BABYLON.Texture.SKYBOX_MODE")
+  @js.native
   val SKYBOX_MODE: Double = js.native
   
   /** Spherical coordinates mode */
+  @JSGlobal("BABYLON.Texture.SPHERICAL_MODE")
+  @js.native
   val SPHERICAL_MODE: Double = js.native
   
   /**
     * Gets or sets a general boolean used to indicate that textures containing direct data (buffers) must be saved as part of the serialization process
     */
-  var SerializeBuffers: Boolean = js.native
+  @JSGlobal("BABYLON.Texture.SerializeBuffers")
+  @js.native
+  def SerializeBuffers: Boolean = js.native
+  @scala.inline
+  def SerializeBuffers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerializeBuffers")(x.asInstanceOf[js.Any])
   
   /** Trilinear is mag = linear and min = linear and mip = linear */
+  @JSGlobal("BABYLON.Texture.TRILINEAR_SAMPLINGMODE")
+  @js.native
   val TRILINEAR_SAMPLINGMODE: Double = js.native
   
   /**
     * Gets or sets a boolean which defines if the texture url must be build from the serialized URL instead of just using the name and loading them side by side with the scene file
     */
-  var UseSerializedUrlIfAny: Boolean = js.native
+  @JSGlobal("BABYLON.Texture.UseSerializedUrlIfAny")
+  @js.native
+  def UseSerializedUrlIfAny: Boolean = js.native
+  @scala.inline
+  def UseSerializedUrlIfAny_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UseSerializedUrlIfAny")(x.asInstanceOf[js.Any])
   
   /** Texture is repeating outside of 0..1 UVs */
+  @JSGlobal("BABYLON.Texture.WRAP_ADDRESSMODE")
+  @js.native
   val WRAP_ADDRESSMODE: Double = js.native
   
   /** @hidden */
+  @JSGlobal("BABYLON.Texture._CreateMirror")
+  @js.native
   def _CreateMirror(
     name: String,
     renderTargetSize: Double,
@@ -232,6 +311,8 @@ object Texture extends js.Object {
   ): typings.babylonjs.BABYLON.MirrorTexture = js.native
   
   /** @hidden */
+  @JSGlobal("BABYLON.Texture._CreateRenderTargetTexture")
+  @js.native
   def _CreateRenderTargetTexture(
     name: String,
     renderTargetSize: Double,
@@ -240,5 +321,7 @@ object Texture extends js.Object {
   ): typings.babylonjs.BABYLON.RenderTargetTexture = js.native
   
   /** @hidden */
+  @JSGlobal("BABYLON.Texture._CubeTextureParser")
+  @js.native
   def _CubeTextureParser(jsonTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.CubeTexture = js.native
 }

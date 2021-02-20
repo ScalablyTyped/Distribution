@@ -1,7 +1,7 @@
 package typings.carbonComponents.mod
 
-import typings.carbonComponents.anon.ClassActive
 import typings.std.WeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +12,16 @@ class Accordion protected ()
   extends typings.carbonComponents.componentsMod.Accordion {
   def this(element: js.Any, options: js.Any) = this()
 }
-/* static members */
-@JSImport("carbon-components", "Accordion")
-@js.native
-object Accordion extends js.Object {
+object Accordion {
   
-  var components: WeakMap[js.Object, _] = js.native
+  @JSImport("carbon-components", "Accordion")
+  @js.native
+  val ^ : js.Any = js.native
   
-  def options: ClassActive = js.native
+  /* static member */
+  @JSImport("carbon-components", "Accordion.components")
+  @js.native
+  def components: WeakMap[js.Object, js.Any] = js.native
+  @scala.inline
+  def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

@@ -1,6 +1,7 @@
 package typings.officeJsPreview.Excel
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait TaskChanges extends js.Object {
+trait TaskChanges extends StObject {
   
   /**
     *
@@ -96,72 +97,60 @@ object TaskChanges {
   }
   
   @scala.inline
-  implicit class TaskChangesOps[Self <: TaskChanges] (val x: Self) extends AnyVal {
+  implicit class TaskChangesMutableBuilder[Self <: TaskChanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDueDate(value: Date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDueDateUndefined: Self = StObject.set(x, "dueDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailsToAssign(value: js.Array[String]): Self = StObject.set(x, "emailsToAssign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDueDate(value: Date): Self = this.set("dueDate", value.asInstanceOf[js.Any])
+    def setEmailsToAssignUndefined: Self = StObject.set(x, "emailsToAssign", js.undefined)
     
     @scala.inline
-    def deleteDueDate: Self = this.set("dueDate", js.undefined)
+    def setEmailsToAssignVarargs(value: String*): Self = StObject.set(x, "emailsToAssign", js.Array(value :_*))
     
     @scala.inline
-    def setEmailsToAssignVarargs(value: String*): Self = this.set("emailsToAssign", js.Array(value :_*))
+    def setEmailsToUnassign(value: js.Array[String]): Self = StObject.set(x, "emailsToUnassign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailsToAssign(value: js.Array[String]): Self = this.set("emailsToAssign", value.asInstanceOf[js.Any])
+    def setEmailsToUnassignUndefined: Self = StObject.set(x, "emailsToUnassign", js.undefined)
     
     @scala.inline
-    def deleteEmailsToAssign: Self = this.set("emailsToAssign", js.undefined)
+    def setEmailsToUnassignVarargs(value: String*): Self = StObject.set(x, "emailsToUnassign", js.Array(value :_*))
     
     @scala.inline
-    def setEmailsToUnassignVarargs(value: String*): Self = this.set("emailsToUnassign", js.Array(value :_*))
+    def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailsToUnassign(value: js.Array[String]): Self = this.set("emailsToUnassign", value.asInstanceOf[js.Any])
+    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
     @scala.inline
-    def deleteEmailsToUnassign: Self = this.set("emailsToUnassign", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentComplete(value: Double): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deletePercentComplete: Self = this.set("percentComplete", js.undefined)
+    def setRemoveAllPreviousAssignees(value: Boolean): Self = StObject.set(x, "removeAllPreviousAssignees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setRemoveAllPreviousAssigneesUndefined: Self = StObject.set(x, "removeAllPreviousAssignees", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveAllPreviousAssignees(value: Boolean): Self = this.set("removeAllPreviousAssignees", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     @scala.inline
-    def deleteRemoveAllPreviousAssignees: Self = this.set("removeAllPreviousAssignees", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: Date): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

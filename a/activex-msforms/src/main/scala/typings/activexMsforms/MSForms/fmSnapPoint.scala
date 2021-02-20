@@ -9,6 +9,7 @@ import typings.activexMsforms.activexMsformsNumbers.`5`
 import typings.activexMsforms.activexMsformsNumbers.`6`
 import typings.activexMsforms.activexMsformsNumbers.`7`
 import typings.activexMsforms.activexMsformsNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMsforms.activexMsformsNumbers.`0`
   - typings.activexMsforms.activexMsformsNumbers.`2`
 */
-trait fmSnapPoint extends js.Object
+trait fmSnapPoint extends StObject
 object fmSnapPoint {
   
   @scala.inline

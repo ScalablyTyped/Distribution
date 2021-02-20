@@ -1,5 +1,6 @@
 package typings.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 // chayns.env.user.groups
 @js.native
-trait UserGroup extends js.Object {
+trait UserGroup extends StObject {
   
   var id: Double = js.native
   
@@ -32,42 +33,30 @@ object UserGroup {
   }
   
   @scala.inline
-  implicit class UserGroupOps[Self <: UserGroup] (val x: Self) extends AnyVal {
+  implicit class UserGroupMutableBuilder[Self <: UserGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsSystemGroup(value: Boolean): Self = StObject.set(x, "isSystemGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIsSystemGroupUndefined: Self = StObject.set(x, "isSystemGroup", js.undefined)
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsActive: Self = this.set("isActive", js.undefined)
+    def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSystemGroup(value: Boolean): Self = this.set("isSystemGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsSystemGroup: Self = this.set("isSystemGroup", js.undefined)
-    
-    @scala.inline
-    def setShowName(value: String): Self = this.set("showName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowName: Self = this.set("showName", js.undefined)
+    def setShowNameUndefined: Self = StObject.set(x, "showName", js.undefined)
   }
 }

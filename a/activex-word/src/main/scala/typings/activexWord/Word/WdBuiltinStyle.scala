@@ -134,6 +134,7 @@ import typings.activexWord.activexWordNumbers.`-97`
 import typings.activexWord.activexWordNumbers.`-98`
 import typings.activexWord.activexWordNumbers.`-99`
 import typings.activexWord.activexWordNumbers.`-9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -274,7 +275,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`-28`
   - typings.activexWord.activexWordNumbers.`-267`
 */
-trait WdBuiltinStyle extends js.Object
+trait WdBuiltinStyle extends StObject
 object WdBuiltinStyle {
   
   @scala.inline

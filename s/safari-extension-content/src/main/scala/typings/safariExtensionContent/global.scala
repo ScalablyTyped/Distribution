@@ -1,18 +1,28 @@
 package typings.safariExtensionContent
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object safari extends js.Object {
+  object safari {
     
-    var extension: SafariContentExtension = js.native
+    @JSGlobal("safari")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var self: SafariContentWebPage = js.native
+    @JSGlobal("safari.extension")
+    @js.native
+    def extension: SafariContentExtension = js.native
+    @scala.inline
+    def extension_=(x: SafariContentExtension): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extension")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("safari.self")
+    @js.native
+    def self: SafariContentWebPage = js.native
+    @scala.inline
+    def self_=(x: SafariContentWebPage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
   }
 }

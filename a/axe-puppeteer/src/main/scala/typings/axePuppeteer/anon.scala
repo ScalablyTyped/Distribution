@@ -8,16 +8,15 @@ import typings.axeCore.mod.RunCallback
 import typings.axeCore.mod.RunOptions
 import typings.axeCore.mod.Spec
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait TypeofAxe extends js.Object {
+  trait TypeofAxe extends StObject {
     
     /**
     	 * Object for axe Results

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSnapshotResponse extends js.Object {
+trait GetSnapshotResponse extends StObject {
   
   /**
     * Whitelisted ComputedStyle properties for each node in the layout tree.
@@ -35,36 +36,24 @@ object GetSnapshotResponse {
   }
   
   @scala.inline
-  implicit class GetSnapshotResponseOps[Self <: GetSnapshotResponse] (val x: Self) extends AnyVal {
+  implicit class GetSnapshotResponseMutableBuilder[Self <: GetSnapshotResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputedStyles(value: js.Array[ComputedStyle]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputedStylesVarargs(value: ComputedStyle*): Self = StObject.set(x, "computedStyles", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomNodes(value: js.Array[DOMNode]): Self = StObject.set(x, "domNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputedStylesVarargs(value: ComputedStyle*): Self = this.set("computedStyles", js.Array(value :_*))
+    def setDomNodesVarargs(value: DOMNode*): Self = StObject.set(x, "domNodes", js.Array(value :_*))
     
     @scala.inline
-    def setComputedStyles(value: js.Array[ComputedStyle]): Self = this.set("computedStyles", value.asInstanceOf[js.Any])
+    def setLayoutTreeNodes(value: js.Array[LayoutTreeNode]): Self = StObject.set(x, "layoutTreeNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomNodesVarargs(value: DOMNode*): Self = this.set("domNodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setDomNodes(value: js.Array[DOMNode]): Self = this.set("domNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayoutTreeNodesVarargs(value: LayoutTreeNode*): Self = this.set("layoutTreeNodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setLayoutTreeNodes(value: js.Array[LayoutTreeNode]): Self = this.set("layoutTreeNodes", value.asInstanceOf[js.Any])
+    def setLayoutTreeNodesVarargs(value: LayoutTreeNode*): Self = StObject.set(x, "layoutTreeNodes", js.Array(value :_*))
   }
 }

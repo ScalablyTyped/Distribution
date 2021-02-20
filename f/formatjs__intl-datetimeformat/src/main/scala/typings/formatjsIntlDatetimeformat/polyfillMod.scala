@@ -1,9 +1,8 @@
 package typings.formatjsIntlDatetimeformat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/intl-datetimeformat/lib/polyfill", JSImport.Namespace)
-@js.native
-object polyfillMod extends js.Object
+object polyfillMod

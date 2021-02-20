@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelSettings extends js.Object {
+trait ChannelSettings extends StObject {
   
   /** The country of the channel. */
   var country: js.UndefOr[String] = js.native
@@ -57,105 +58,93 @@ object ChannelSettings {
   }
   
   @scala.inline
-  implicit class ChannelSettingsOps[Self <: ChannelSettings] (val x: Self) extends AnyVal {
+  implicit class ChannelSettingsMutableBuilder[Self <: ChannelSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setDefaultTab(value: String): Self = StObject.set(x, "defaultTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLanguage(value: String): Self = this.set("defaultLanguage", value.asInstanceOf[js.Any])
+    def setDefaultTabUndefined: Self = StObject.set(x, "defaultTab", js.undefined)
     
     @scala.inline
-    def deleteDefaultLanguage: Self = this.set("defaultLanguage", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTab(value: String): Self = this.set("defaultTab", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefaultTab: Self = this.set("defaultTab", js.undefined)
+    def setFeaturedChannelsTitle(value: String): Self = StObject.set(x, "featuredChannelsTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFeaturedChannelsTitleUndefined: Self = StObject.set(x, "featuredChannelsTitle", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFeaturedChannelsUrls(value: js.Array[String]): Self = StObject.set(x, "featuredChannelsUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturedChannelsTitle(value: String): Self = this.set("featuredChannelsTitle", value.asInstanceOf[js.Any])
+    def setFeaturedChannelsUrlsUndefined: Self = StObject.set(x, "featuredChannelsUrls", js.undefined)
     
     @scala.inline
-    def deleteFeaturedChannelsTitle: Self = this.set("featuredChannelsTitle", js.undefined)
+    def setFeaturedChannelsUrlsVarargs(value: String*): Self = StObject.set(x, "featuredChannelsUrls", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturedChannelsUrlsVarargs(value: String*): Self = this.set("featuredChannelsUrls", js.Array(value :_*))
+    def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturedChannelsUrls(value: js.Array[String]): Self = this.set("featuredChannelsUrls", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def deleteFeaturedChannelsUrls: Self = this.set("featuredChannelsUrls", js.undefined)
+    def setModerateComments(value: Boolean): Self = StObject.set(x, "moderateComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: String): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setModerateCommentsUndefined: Self = StObject.set(x, "moderateComments", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setProfileColor(value: String): Self = StObject.set(x, "profileColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModerateComments(value: Boolean): Self = this.set("moderateComments", value.asInstanceOf[js.Any])
+    def setProfileColorUndefined: Self = StObject.set(x, "profileColor", js.undefined)
     
     @scala.inline
-    def deleteModerateComments: Self = this.set("moderateComments", js.undefined)
+    def setShowBrowseView(value: Boolean): Self = StObject.set(x, "showBrowseView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileColor(value: String): Self = this.set("profileColor", value.asInstanceOf[js.Any])
+    def setShowBrowseViewUndefined: Self = StObject.set(x, "showBrowseView", js.undefined)
     
     @scala.inline
-    def deleteProfileColor: Self = this.set("profileColor", js.undefined)
+    def setShowRelatedChannels(value: Boolean): Self = StObject.set(x, "showRelatedChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBrowseView(value: Boolean): Self = this.set("showBrowseView", value.asInstanceOf[js.Any])
+    def setShowRelatedChannelsUndefined: Self = StObject.set(x, "showRelatedChannels", js.undefined)
     
     @scala.inline
-    def deleteShowBrowseView: Self = this.set("showBrowseView", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRelatedChannels(value: Boolean): Self = this.set("showRelatedChannels", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteShowRelatedChannels: Self = this.set("showRelatedChannels", js.undefined)
+    def setTrackingAnalyticsAccountId(value: String): Self = StObject.set(x, "trackingAnalyticsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTrackingAnalyticsAccountIdUndefined: Self = StObject.set(x, "trackingAnalyticsAccountId", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUnsubscribedTrailer(value: String): Self = StObject.set(x, "unsubscribedTrailer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackingAnalyticsAccountId(value: String): Self = this.set("trackingAnalyticsAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackingAnalyticsAccountId: Self = this.set("trackingAnalyticsAccountId", js.undefined)
-    
-    @scala.inline
-    def setUnsubscribedTrailer(value: String): Self = this.set("unsubscribedTrailer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnsubscribedTrailer: Self = this.set("unsubscribedTrailer", js.undefined)
+    def setUnsubscribedTrailerUndefined: Self = StObject.set(x, "unsubscribedTrailer", js.undefined)
   }
 }

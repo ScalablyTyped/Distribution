@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.testInterfacesMod
 
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestResultSummary extends js.Object {
+trait TestResultSummary extends StObject {
   
   var aggregatedResultsAnalysis: AggregatedResultsAnalysis = js.native
   
@@ -30,30 +31,18 @@ object TestResultSummary {
   }
   
   @scala.inline
-  implicit class TestResultSummaryOps[Self <: TestResultSummary] (val x: Self) extends AnyVal {
+  implicit class TestResultSummaryMutableBuilder[Self <: TestResultSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregatedResultsAnalysis(value: AggregatedResultsAnalysis): Self = StObject.set(x, "aggregatedResultsAnalysis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTeamProject(value: TeamProjectReference): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTestFailures(value: TestFailuresAnalysis): Self = StObject.set(x, "testFailures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregatedResultsAnalysis(value: AggregatedResultsAnalysis): Self = this.set("aggregatedResultsAnalysis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeamProject(value: TeamProjectReference): Self = this.set("teamProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestFailures(value: TestFailuresAnalysis): Self = this.set("testFailures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestResultsContext(value: TestResultsContext): Self = this.set("testResultsContext", value.asInstanceOf[js.Any])
+    def setTestResultsContext(value: TestResultsContext): Self = StObject.set(x, "testResultsContext", value.asInstanceOf[js.Any])
   }
 }

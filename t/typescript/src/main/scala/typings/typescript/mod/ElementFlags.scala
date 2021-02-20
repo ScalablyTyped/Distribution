@@ -1,41 +1,36 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ElementFlags extends js.Object
+sealed trait ElementFlags extends StObject
 @JSImport("typescript", "ElementFlags")
 @js.native
-object ElementFlags extends js.Object {
+object ElementFlags extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ElementFlags with Double] = js.native
   
   @js.native
   sealed trait Optional extends ElementFlags
-  /* 2 */ @js.native
-  object Optional extends TopLevel[Optional with Double]
+  /* 2 */ val Optional: typings.typescript.mod.ElementFlags.Optional with Double = js.native
   
   @js.native
   sealed trait Required extends ElementFlags
-  /* 1 */ @js.native
-  object Required extends TopLevel[Required with Double]
+  /* 1 */ val Required: typings.typescript.mod.ElementFlags.Required with Double = js.native
   
   @js.native
   sealed trait Rest extends ElementFlags
-  /* 4 */ @js.native
-  object Rest extends TopLevel[Rest with Double]
+  /* 4 */ val Rest: typings.typescript.mod.ElementFlags.Rest with Double = js.native
   
   @js.native
   sealed trait Variable extends ElementFlags
-  /* 12 */ @js.native
-  object Variable extends TopLevel[Variable with Double]
+  /* 12 */ val Variable: typings.typescript.mod.ElementFlags.Variable with Double = js.native
   
   @js.native
   sealed trait Variadic extends ElementFlags
-  /* 8 */ @js.native
-  object Variadic extends TopLevel[Variadic with Double]
+  /* 8 */ val Variadic: typings.typescript.mod.ElementFlags.Variadic with Double = js.native
 }

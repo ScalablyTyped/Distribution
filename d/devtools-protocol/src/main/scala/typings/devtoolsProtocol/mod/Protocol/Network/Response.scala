@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import typings.devtoolsProtocol.mod.Protocol.Security.SecurityState
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Response extends js.Object {
+trait Response extends StObject {
   
   /**
     * Cache Storage Cache Name.
@@ -143,129 +144,117 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseOps[Self <: Response] (val x: Self) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheStorageCacheName(value: String): Self = StObject.set(x, "cacheStorageCacheName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheStorageCacheNameUndefined: Self = StObject.set(x, "cacheStorageCacheName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionId(value: Double): Self = this.set("connectionId", value.asInstanceOf[js.Any])
+    def setConnectionReused(value: Boolean): Self = StObject.set(x, "connectionReused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionReused(value: Boolean): Self = this.set("connectionReused", value.asInstanceOf[js.Any])
+    def setEncodedDataLength(value: Double): Self = StObject.set(x, "encodedDataLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodedDataLength(value: Double): Self = this.set("encodedDataLength", value.asInstanceOf[js.Any])
+    def setFromDiskCache(value: Boolean): Self = StObject.set(x, "fromDiskCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setFromDiskCacheUndefined: Self = StObject.set(x, "fromDiskCache", js.undefined)
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setFromPrefetchCache(value: Boolean): Self = StObject.set(x, "fromPrefetchCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityState(value: SecurityState): Self = this.set("securityState", value.asInstanceOf[js.Any])
+    def setFromPrefetchCacheUndefined: Self = StObject.set(x, "fromPrefetchCache", js.undefined)
     
     @scala.inline
-    def setStatus(value: integer): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setFromServiceWorker(value: Boolean): Self = StObject.set(x, "fromServiceWorker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusText(value: String): Self = this.set("statusText", value.asInstanceOf[js.Any])
+    def setFromServiceWorkerUndefined: Self = StObject.set(x, "fromServiceWorker", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheStorageCacheName(value: String): Self = this.set("cacheStorageCacheName", value.asInstanceOf[js.Any])
+    def setHeadersText(value: String): Self = StObject.set(x, "headersText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheStorageCacheName: Self = this.set("cacheStorageCacheName", js.undefined)
+    def setHeadersTextUndefined: Self = StObject.set(x, "headersText", js.undefined)
     
     @scala.inline
-    def setFromDiskCache(value: Boolean): Self = this.set("fromDiskCache", value.asInstanceOf[js.Any])
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromDiskCache: Self = this.set("fromDiskCache", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPrefetchCache(value: Boolean): Self = this.set("fromPrefetchCache", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deleteFromPrefetchCache: Self = this.set("fromPrefetchCache", js.undefined)
+    def setRemoteIPAddress(value: String): Self = StObject.set(x, "remoteIPAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromServiceWorker(value: Boolean): Self = this.set("fromServiceWorker", value.asInstanceOf[js.Any])
+    def setRemoteIPAddressUndefined: Self = StObject.set(x, "remoteIPAddress", js.undefined)
     
     @scala.inline
-    def deleteFromServiceWorker: Self = this.set("fromServiceWorker", js.undefined)
+    def setRemotePort(value: integer): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersText(value: String): Self = this.set("headersText", value.asInstanceOf[js.Any])
+    def setRemotePortUndefined: Self = StObject.set(x, "remotePort", js.undefined)
     
     @scala.inline
-    def deleteHeadersText: Self = this.set("headersText", js.undefined)
+    def setRequestHeaders(value: Headers): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setRequestHeadersText(value: String): Self = StObject.set(x, "requestHeadersText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setRequestHeadersTextUndefined: Self = StObject.set(x, "requestHeadersText", js.undefined)
     
     @scala.inline
-    def setRemoteIPAddress(value: String): Self = this.set("remoteIPAddress", value.asInstanceOf[js.Any])
+    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
     @scala.inline
-    def deleteRemoteIPAddress: Self = this.set("remoteIPAddress", js.undefined)
+    def setResponseTime(value: TimeSinceEpoch): Self = StObject.set(x, "responseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemotePort(value: integer): Self = this.set("remotePort", value.asInstanceOf[js.Any])
+    def setResponseTimeUndefined: Self = StObject.set(x, "responseTime", js.undefined)
     
     @scala.inline
-    def deleteRemotePort: Self = this.set("remotePort", js.undefined)
+    def setSecurityDetails(value: SecurityDetails): Self = StObject.set(x, "securityDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestHeaders(value: Headers): Self = this.set("requestHeaders", value.asInstanceOf[js.Any])
+    def setSecurityDetailsUndefined: Self = StObject.set(x, "securityDetails", js.undefined)
     
     @scala.inline
-    def deleteRequestHeaders: Self = this.set("requestHeaders", js.undefined)
+    def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestHeadersText(value: String): Self = this.set("requestHeadersText", value.asInstanceOf[js.Any])
+    def setServiceWorkerResponseSource(value: ServiceWorkerResponseSource): Self = StObject.set(x, "serviceWorkerResponseSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestHeadersText: Self = this.set("requestHeadersText", js.undefined)
+    def setServiceWorkerResponseSourceUndefined: Self = StObject.set(x, "serviceWorkerResponseSource", js.undefined)
     
     @scala.inline
-    def setResponseTime(value: TimeSinceEpoch): Self = this.set("responseTime", value.asInstanceOf[js.Any])
+    def setStatus(value: integer): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponseTime: Self = this.set("responseTime", js.undefined)
+    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityDetails(value: SecurityDetails): Self = this.set("securityDetails", value.asInstanceOf[js.Any])
+    def setTiming(value: ResourceTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecurityDetails: Self = this.set("securityDetails", js.undefined)
+    def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
     
     @scala.inline
-    def setServiceWorkerResponseSource(value: ServiceWorkerResponseSource): Self = this.set("serviceWorkerResponseSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceWorkerResponseSource: Self = this.set("serviceWorkerResponseSource", js.undefined)
-    
-    @scala.inline
-    def setTiming(value: ResourceTiming): Self = this.set("timing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiming: Self = this.set("timing", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

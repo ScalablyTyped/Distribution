@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangAccessibilityOptions extends js.Object {
+trait LangAccessibilityOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Default announcement for new
@@ -133,138 +134,126 @@ object LangAccessibilityOptions {
   }
   
   @scala.inline
-  implicit class LangAccessibilityOptionsOps[Self <: LangAccessibilityOptions] (val x: Self) extends AnyVal {
+  implicit class LangAccessibilityOptionsMutableBuilder[Self <: LangAccessibilityOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnounceNewData(value: LangAccessibilityAnnounceNewDataOptions): Self = StObject.set(x, "announceNewData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnounceNewDataUndefined: Self = StObject.set(x, "announceNewData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxis(value: LangAccessibilityAxisOptions): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnounceNewData(value: LangAccessibilityAnnounceNewDataOptions): Self = this.set("announceNewData", value.asInstanceOf[js.Any])
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def deleteAnnounceNewData: Self = this.set("announceNewData", js.undefined)
+    def setChartContainerLabel(value: String): Self = StObject.set(x, "chartContainerLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: LangAccessibilityAxisOptions): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setChartContainerLabelUndefined: Self = StObject.set(x, "chartContainerLabel", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setChartTypes(value: LangAccessibilityChartTypesOptions): Self = StObject.set(x, "chartTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartContainerLabel(value: String): Self = this.set("chartContainerLabel", value.asInstanceOf[js.Any])
+    def setChartTypesUndefined: Self = StObject.set(x, "chartTypes", js.undefined)
     
     @scala.inline
-    def deleteChartContainerLabel: Self = this.set("chartContainerLabel", js.undefined)
+    def setCredits(value: String): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartTypes(value: LangAccessibilityChartTypesOptions): Self = this.set("chartTypes", value.asInstanceOf[js.Any])
+    def setCreditsUndefined: Self = StObject.set(x, "credits", js.undefined)
     
     @scala.inline
-    def deleteChartTypes: Self = this.set("chartTypes", js.undefined)
+    def setDefaultChartTitle(value: String): Self = StObject.set(x, "defaultChartTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredits(value: String): Self = this.set("credits", value.asInstanceOf[js.Any])
+    def setDefaultChartTitleUndefined: Self = StObject.set(x, "defaultChartTitle", js.undefined)
     
     @scala.inline
-    def deleteCredits: Self = this.set("credits", js.undefined)
+    def setDrillUpButton(value: String): Self = StObject.set(x, "drillUpButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultChartTitle(value: String): Self = this.set("defaultChartTitle", value.asInstanceOf[js.Any])
+    def setDrillUpButtonUndefined: Self = StObject.set(x, "drillUpButton", js.undefined)
     
     @scala.inline
-    def deleteDefaultChartTitle: Self = this.set("defaultChartTitle", js.undefined)
+    def setExporting(value: LangAccessibilityExportingOptions): Self = StObject.set(x, "exporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillUpButton(value: String): Self = this.set("drillUpButton", value.asInstanceOf[js.Any])
+    def setExportingUndefined: Self = StObject.set(x, "exporting", js.undefined)
     
     @scala.inline
-    def deleteDrillUpButton: Self = this.set("drillUpButton", js.undefined)
+    def setGraphicContainerLabel(value: String): Self = StObject.set(x, "graphicContainerLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExporting(value: LangAccessibilityExportingOptions): Self = this.set("exporting", value.asInstanceOf[js.Any])
+    def setGraphicContainerLabelUndefined: Self = StObject.set(x, "graphicContainerLabel", js.undefined)
     
     @scala.inline
-    def deleteExporting: Self = this.set("exporting", js.undefined)
+    def setLegend(value: LangAccessibilityLegendOptions): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphicContainerLabel(value: String): Self = this.set("graphicContainerLabel", value.asInstanceOf[js.Any])
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteGraphicContainerLabel: Self = this.set("graphicContainerLabel", js.undefined)
+    def setRangeSelector(value: LangAccessibilityRangeSelectorOptions): Self = StObject.set(x, "rangeSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegend(value: LangAccessibilityLegendOptions): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setRangeSelectorUndefined: Self = StObject.set(x, "rangeSelector", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setScreenReaderSection(value: LangAccessibilityScreenReaderSectionOptions): Self = StObject.set(x, "screenReaderSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeSelector(value: LangAccessibilityRangeSelectorOptions): Self = this.set("rangeSelector", value.asInstanceOf[js.Any])
+    def setScreenReaderSectionUndefined: Self = StObject.set(x, "screenReaderSection", js.undefined)
     
     @scala.inline
-    def deleteRangeSelector: Self = this.set("rangeSelector", js.undefined)
+    def setSeries(value: LangAccessibilitySeriesOptions): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenReaderSection(value: LangAccessibilityScreenReaderSectionOptions): Self = this.set("screenReaderSection", value.asInstanceOf[js.Any])
+    def setSeriesTypeDescriptions(value: LangAccessibilitySeriesTypeDescriptionsOptions): Self = StObject.set(x, "seriesTypeDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScreenReaderSection: Self = this.set("screenReaderSection", js.undefined)
+    def setSeriesTypeDescriptionsUndefined: Self = StObject.set(x, "seriesTypeDescriptions", js.undefined)
     
     @scala.inline
-    def setSeries(value: LangAccessibilitySeriesOptions): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSonification(value: LangAccessibilitySonificationOptions): Self = StObject.set(x, "sonification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesTypeDescriptions(value: LangAccessibilitySeriesTypeDescriptionsOptions): Self = this.set("seriesTypeDescriptions", value.asInstanceOf[js.Any])
+    def setSonificationUndefined: Self = StObject.set(x, "sonification", js.undefined)
     
     @scala.inline
-    def deleteSeriesTypeDescriptions: Self = this.set("seriesTypeDescriptions", js.undefined)
+    def setSvgContainerLabel(value: String): Self = StObject.set(x, "svgContainerLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSonification(value: LangAccessibilitySonificationOptions): Self = this.set("sonification", value.asInstanceOf[js.Any])
+    def setSvgContainerLabelUndefined: Self = StObject.set(x, "svgContainerLabel", js.undefined)
     
     @scala.inline
-    def deleteSonification: Self = this.set("sonification", js.undefined)
+    def setSvgContainerTitle(value: String): Self = StObject.set(x, "svgContainerTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgContainerLabel(value: String): Self = this.set("svgContainerLabel", value.asInstanceOf[js.Any])
+    def setSvgContainerTitleUndefined: Self = StObject.set(x, "svgContainerTitle", js.undefined)
     
     @scala.inline
-    def deleteSvgContainerLabel: Self = this.set("svgContainerLabel", js.undefined)
+    def setTable(value: LangAccessibilityTableOptions): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgContainerTitle(value: String): Self = this.set("svgContainerTitle", value.asInstanceOf[js.Any])
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
     @scala.inline
-    def deleteSvgContainerTitle: Self = this.set("svgContainerTitle", js.undefined)
+    def setThousandsSep(value: String): Self = StObject.set(x, "thousandsSep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: LangAccessibilityTableOptions): Self = this.set("table", value.asInstanceOf[js.Any])
+    def setThousandsSepUndefined: Self = StObject.set(x, "thousandsSep", js.undefined)
     
     @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setZoom(value: LangAccessibilityZoomOptions): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThousandsSep(value: String): Self = this.set("thousandsSep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThousandsSep: Self = this.set("thousandsSep", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: LangAccessibilityZoomOptions): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.natural.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lexicon extends js.Object {
+trait Lexicon extends StObject {
   
   var defaultCategory: String = js.native
   
@@ -22,27 +23,15 @@ object Lexicon {
   }
   
   @scala.inline
-  implicit class LexiconOps[Self <: Lexicon] (val x: Self) extends AnyVal {
+  implicit class LexiconMutableBuilder[Self <: Lexicon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultCategory(value: String): Self = StObject.set(x, "defaultCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParseLexicon(value: String => Unit): Self = StObject.set(x, "parseLexicon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultCategory(value: String): Self = this.set("defaultCategory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParseLexicon(value: String => Unit): Self = this.set("parseLexicon", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTagWord(value: String => js.Array[String]): Self = this.set("tagWord", js.Any.fromFunction1(value))
+    def setTagWord(value: String => js.Array[String]): Self = StObject.set(x, "tagWord", js.Any.fromFunction1(value))
   }
 }

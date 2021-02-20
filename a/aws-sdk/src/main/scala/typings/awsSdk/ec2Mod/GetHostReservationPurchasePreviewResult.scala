@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetHostReservationPurchasePreviewResult extends js.Object {
+trait GetHostReservationPurchasePreviewResult extends StObject {
   
   /**
     * The currency in which the totalUpfrontPrice and totalHourlyPrice amounts are specified. At this time, the only supported currency is USD.
@@ -36,45 +37,33 @@ object GetHostReservationPurchasePreviewResult {
   }
   
   @scala.inline
-  implicit class GetHostReservationPurchasePreviewResultOps[Self <: GetHostReservationPurchasePreviewResult] (val x: Self) extends AnyVal {
+  implicit class GetHostReservationPurchasePreviewResultMutableBuilder[Self <: GetHostReservationPurchasePreviewResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPurchase(value: PurchaseSet): Self = StObject.set(x, "Purchase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: CurrencyCodeValues): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    def setPurchaseUndefined: Self = StObject.set(x, "Purchase", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    def setPurchaseVarargs(value: Purchase*): Self = StObject.set(x, "Purchase", js.Array(value :_*))
     
     @scala.inline
-    def setPurchaseVarargs(value: Purchase*): Self = this.set("Purchase", js.Array(value :_*))
+    def setTotalHourlyPrice(value: String): Self = StObject.set(x, "TotalHourlyPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchase(value: PurchaseSet): Self = this.set("Purchase", value.asInstanceOf[js.Any])
+    def setTotalHourlyPriceUndefined: Self = StObject.set(x, "TotalHourlyPrice", js.undefined)
     
     @scala.inline
-    def deletePurchase: Self = this.set("Purchase", js.undefined)
+    def setTotalUpfrontPrice(value: String): Self = StObject.set(x, "TotalUpfrontPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalHourlyPrice(value: String): Self = this.set("TotalHourlyPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalHourlyPrice: Self = this.set("TotalHourlyPrice", js.undefined)
-    
-    @scala.inline
-    def setTotalUpfrontPrice(value: String): Self = this.set("TotalUpfrontPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalUpfrontPrice: Self = this.set("TotalUpfrontPrice", js.undefined)
+    def setTotalUpfrontPriceUndefined: Self = StObject.set(x, "TotalUpfrontPrice", js.undefined)
   }
 }

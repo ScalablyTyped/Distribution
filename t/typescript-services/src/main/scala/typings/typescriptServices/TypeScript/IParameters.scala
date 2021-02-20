@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IParameters extends js.Object {
+trait IParameters extends StObject {
   
   var ast: AST = js.native
   
@@ -41,42 +42,30 @@ object IParameters {
   }
   
   @scala.inline
-  implicit class IParametersOps[Self <: IParameters] (val x: Self) extends AnyVal {
+  implicit class IParametersMutableBuilder[Self <: IParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAstAt(value: Double => AST): Self = StObject.set(x, "astAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifierAt(value: Double => Identifier): Self = StObject.set(x, "identifierAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAst(value: AST): Self = this.set("ast", value.asInstanceOf[js.Any])
+    def setInitializerAt(value: Double => EqualsValueClause): Self = StObject.set(x, "initializerAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAstAt(value: Double => AST): Self = this.set("astAt", js.Any.fromFunction1(value))
+    def setIsOptionalAt(value: Double => Boolean): Self = StObject.set(x, "isOptionalAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIdentifierAt(value: Double => Identifier): Self = this.set("identifierAt", js.Any.fromFunction1(value))
+    def setLastParameterIsRest(value: () => Boolean): Self = StObject.set(x, "lastParameterIsRest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitializerAt(value: Double => EqualsValueClause): Self = this.set("initializerAt", js.Any.fromFunction1(value))
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOptionalAt(value: Double => Boolean): Self = this.set("isOptionalAt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLastParameterIsRest(value: () => Boolean): Self = this.set("lastParameterIsRest", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeAt(value: Double => AST): Self = this.set("typeAt", js.Any.fromFunction1(value))
+    def setTypeAt(value: Double => AST): Self = StObject.set(x, "typeAt", js.Any.fromFunction1(value))
   }
 }

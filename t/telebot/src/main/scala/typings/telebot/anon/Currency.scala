@@ -1,11 +1,12 @@
 package typings.telebot.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Currency extends js.Object {
+trait Currency extends StObject {
   
   var currency: String = js.native
   
@@ -50,78 +51,66 @@ object Currency {
   }
   
   @scala.inline
-  implicit class CurrencyOps[Self <: Currency] (val x: Self) extends AnyVal {
+  implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFlexible(value: Boolean): Self = StObject.set(x, "isFlexible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setIsFlexibleUndefined: Self = StObject.set(x, "isFlexible", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNeed(value: Email): Self = StObject.set(x, "need", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: String): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setNeedUndefined: Self = StObject.set(x, "need", js.undefined)
     
     @scala.inline
-    def setPricesVarargs(value: js.Any*): Self = this.set("prices", js.Array(value :_*))
+    def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrices(value: js.Array[_]): Self = this.set("prices", value.asInstanceOf[js.Any])
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def setProviderToken(value: String): Self = this.set("providerToken", value.asInstanceOf[js.Any])
+    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartParameter(value: String): Self = this.set("startParameter", value.asInstanceOf[js.Any])
+    def setPhoto(value: Url): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
     @scala.inline
-    def setIsFlexible(value: Boolean): Self = this.set("isFlexible", value.asInstanceOf[js.Any])
+    def setPrices(value: js.Array[_]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsFlexible: Self = this.set("isFlexible", js.undefined)
+    def setPricesVarargs(value: js.Any*): Self = StObject.set(x, "prices", js.Array(value :_*))
     
     @scala.inline
-    def setNeed(value: Email): Self = this.set("need", value.asInstanceOf[js.Any])
+    def setProviderToken(value: String): Self = StObject.set(x, "providerToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNeed: Self = this.set("need", js.undefined)
+    def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: Boolean): Self = this.set("notification", value.asInstanceOf[js.Any])
+    def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     
     @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
+    def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoto(value: Url): Self = this.set("photo", value.asInstanceOf[js.Any])
+    def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
     
     @scala.inline
-    def deletePhoto: Self = this.set("photo", js.undefined)
+    def setStartParameter(value: String): Self = StObject.set(x, "startParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyMarkup(value: js.Any): Self = this.set("replyMarkup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyMarkup: Self = this.set("replyMarkup", js.undefined)
-    
-    @scala.inline
-    def setReplyToMessage(value: Double): Self = this.set("replyToMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyToMessage: Self = this.set("replyToMessage", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

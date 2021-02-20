@@ -1,13 +1,13 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/Dual/index", JSImport.Namespace)
-@js.native
-object dualIndexMod extends js.Object {
+object dualIndexMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Dual/index", "CurrentScreenBlock")
   @js.native
   class CurrentScreenBlock protected ()
     extends typings.babylonjs.currentScreenBlockMod.CurrentScreenBlock {
@@ -18,6 +18,7 @@ object dualIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Dual/index", "FogBlock")
   @js.native
   class FogBlock protected ()
     extends typings.babylonjs.fogBlockMod.FogBlock {
@@ -28,6 +29,7 @@ object dualIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Dual/index", "LightBlock")
   @js.native
   class LightBlock protected ()
     extends typings.babylonjs.lightBlockMod.LightBlock {
@@ -38,6 +40,7 @@ object dualIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Dual/index", "ReflectionTextureBlock")
   @js.native
   class ReflectionTextureBlock protected ()
     extends typings.babylonjs.reflectionTextureBlockMod.ReflectionTextureBlock {
@@ -48,6 +51,7 @@ object dualIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Dual/index", "TextureBlock")
   @js.native
   class TextureBlock protected ()
     extends typings.babylonjs.textureBlockMod.TextureBlock {

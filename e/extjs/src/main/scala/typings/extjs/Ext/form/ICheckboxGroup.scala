@@ -2,6 +2,7 @@ package typings.extjs.Ext.form
 
 import typings.extjs.Ext.Array
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -169,240 +170,228 @@ object ICheckboxGroup {
   }
   
   @scala.inline
-  implicit class ICheckboxGroupOps[Self <: ICheckboxGroup] (val x: Self) extends AnyVal {
+  implicit class ICheckboxGroupMutableBuilder[Self <: ICheckboxGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowBlank(value: Boolean): Self = StObject.set(x, "allowBlank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowBlankUndefined: Self = StObject.set(x, "allowBlank", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchChanges(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "batchChanges", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllowBlank(value: Boolean): Self = this.set("allowBlank", value.asInstanceOf[js.Any])
+    def setBatchChangesUndefined: Self = StObject.set(x, "batchChanges", js.undefined)
     
     @scala.inline
-    def deleteAllowBlank: Self = this.set("allowBlank", js.undefined)
+    def setBeforeReset(value: () => Unit): Self = StObject.set(x, "beforeReset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBatchChanges(value: js.UndefOr[js.Any] => Unit): Self = this.set("batchChanges", js.Any.fromFunction1(value))
+    def setBeforeResetUndefined: Self = StObject.set(x, "beforeReset", js.undefined)
     
     @scala.inline
-    def deleteBatchChanges: Self = this.set("batchChanges", js.undefined)
+    def setBlankText(value: String): Self = StObject.set(x, "blankText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeReset(value: () => Unit): Self = this.set("beforeReset", js.Any.fromFunction0(value))
+    def setBlankTextUndefined: Self = StObject.set(x, "blankText", js.undefined)
     
     @scala.inline
-    def deleteBeforeReset: Self = this.set("beforeReset", js.undefined)
+    def setCheckChange(value: () => Unit): Self = StObject.set(x, "checkChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBlankText(value: String): Self = this.set("blankText", value.asInstanceOf[js.Any])
+    def setCheckChangeUndefined: Self = StObject.set(x, "checkChange", js.undefined)
     
     @scala.inline
-    def deleteBlankText: Self = this.set("blankText", js.undefined)
+    def setCheckDirty(value: () => Unit): Self = StObject.set(x, "checkDirty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckChange(value: () => Unit): Self = this.set("checkChange", js.Any.fromFunction0(value))
+    def setCheckDirtyUndefined: Self = StObject.set(x, "checkDirty", js.undefined)
     
     @scala.inline
-    def deleteCheckChange: Self = this.set("checkChange", js.undefined)
+    def setClearInvalid(value: () => Unit): Self = StObject.set(x, "clearInvalid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckDirty(value: () => Unit): Self = this.set("checkDirty", js.Any.fromFunction0(value))
+    def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
     
     @scala.inline
-    def deleteCheckDirty: Self = this.set("checkDirty", js.undefined)
+    def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearInvalid(value: () => Unit): Self = this.set("clearInvalid", js.Any.fromFunction0(value))
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteClearInvalid: Self = this.set("clearInvalid", js.undefined)
+    def setExtractFileInput(value: () => _ | HTMLElement): Self = StObject.set(x, "extractFileInput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumns(value: js.Any): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setExtractFileInputUndefined: Self = StObject.set(x, "extractFileInput", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setGetChecked(value: () => Array): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExtractFileInput(value: () => _ | HTMLElement): Self = this.set("extractFileInput", js.Any.fromFunction0(value))
+    def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
     
     @scala.inline
-    def deleteExtractFileInput: Self = this.set("extractFileInput", js.undefined)
+    def setGetErrors(value: js.Function0[Array] | (js.Function1[/* value */ js.UndefOr[js.Any], _])): Self = StObject.set(x, "getErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetChecked(value: () => Array): Self = this.set("getChecked", js.Any.fromFunction0(value))
+    def setGetErrorsFunction0(value: () => Array): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetChecked: Self = this.set("getChecked", js.undefined)
+    def setGetErrorsFunction1(value: /* value */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getErrors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetErrorsFunction1(value: /* value */ js.UndefOr[js.Any] => _): Self = this.set("getErrors", js.Any.fromFunction1(value))
+    def setGetErrorsUndefined: Self = StObject.set(x, "getErrors", js.undefined)
     
     @scala.inline
-    def setGetErrorsFunction0(value: () => Array): Self = this.set("getErrors", js.Any.fromFunction0(value))
+    def setGetModelData(value: () => _): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetErrors(value: js.Function0[Array] | (js.Function1[/* value */ js.UndefOr[js.Any], _])): Self = this.set("getErrors", value.asInstanceOf[js.Any])
+    def setGetModelDataUndefined: Self = StObject.set(x, "getModelData", js.undefined)
     
     @scala.inline
-    def deleteGetErrors: Self = this.set("getErrors", js.undefined)
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetModelData(value: () => _): Self = this.set("getModelData", js.Any.fromFunction0(value))
+    def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
     
     @scala.inline
-    def deleteGetModelData: Self = this.set("getModelData", js.undefined)
+    def setGetSubmitData(value: () => _): Self = StObject.set(x, "getSubmitData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetSubmitDataUndefined: Self = StObject.set(x, "getSubmitData", js.undefined)
     
     @scala.inline
-    def deleteGetName: Self = this.set("getName", js.undefined)
+    def setGetValue(value: () => _ | Unit): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubmitData(value: () => _): Self = this.set("getSubmitData", js.Any.fromFunction0(value))
+    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
     @scala.inline
-    def deleteGetSubmitData: Self = this.set("getSubmitData", js.undefined)
+    def setInitField(value: () => Unit): Self = StObject.set(x, "initField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetValue(value: () => _ | Unit): Self = this.set("getValue", js.Any.fromFunction0(value))
+    def setInitFieldUndefined: Self = StObject.set(x, "initField", js.undefined)
     
     @scala.inline
-    def deleteGetValue: Self = this.set("getValue", js.undefined)
+    def setInitValue(value: () => Unit): Self = StObject.set(x, "initValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitField(value: () => Unit): Self = this.set("initField", js.Any.fromFunction0(value))
+    def setInitValueUndefined: Self = StObject.set(x, "initValue", js.undefined)
     
     @scala.inline
-    def deleteInitField: Self = this.set("initField", js.undefined)
+    def setIsDirty(value: () => _ | Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitValue(value: () => Unit): Self = this.set("initValue", js.Any.fromFunction0(value))
+    def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
     @scala.inline
-    def deleteInitValue: Self = this.set("initValue", js.undefined)
+    def setIsEqual(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => _ | Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsDirty(value: () => _ | Boolean): Self = this.set("isDirty", js.Any.fromFunction0(value))
+    def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
     
     @scala.inline
-    def deleteIsDirty: Self = this.set("isDirty", js.undefined)
+    def setIsFileUpload(value: () => _ | Boolean): Self = StObject.set(x, "isFileUpload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsEqual(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => _ | Boolean): Self = this.set("isEqual", js.Any.fromFunction2(value))
+    def setIsFileUploadUndefined: Self = StObject.set(x, "isFileUpload", js.undefined)
     
     @scala.inline
-    def deleteIsEqual: Self = this.set("isEqual", js.undefined)
+    def setIsFormField(value: Boolean): Self = StObject.set(x, "isFormField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFileUpload(value: () => _ | Boolean): Self = this.set("isFileUpload", js.Any.fromFunction0(value))
+    def setIsFormFieldUndefined: Self = StObject.set(x, "isFormField", js.undefined)
     
     @scala.inline
-    def deleteIsFileUpload: Self = this.set("isFileUpload", js.undefined)
+    def setIsValid(value: () => _ | Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFormField(value: Boolean): Self = this.set("isFormField", value.asInstanceOf[js.Any])
+    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
     @scala.inline
-    def deleteIsFormField: Self = this.set("isFormField", js.undefined)
+    def setMarkInvalid(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "markInvalid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsValid(value: () => _ | Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+    def setMarkInvalidUndefined: Self = StObject.set(x, "markInvalid", js.undefined)
     
     @scala.inline
-    def deleteIsValid: Self = this.set("isValid", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkInvalid(value: js.UndefOr[js.Any] => Unit): Self = this.set("markInvalid", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMarkInvalid: Self = this.set("markInvalid", js.undefined)
+    def setOnAdd(value: /* field */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOnRemove(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAdd(value: /* field */ js.UndefOr[js.Any] => Unit): Self = this.set("onAdd", js.Any.fromFunction1(value))
+    def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
     
     @scala.inline
-    def deleteOnAdd: Self = this.set("onAdd", js.undefined)
+    def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRemove(value: /* item */ js.UndefOr[js.Any] => Unit): Self = this.set("onRemove", js.Any.fromFunction1(value))
+    def setOriginalValueUndefined: Self = StObject.set(x, "originalValue", js.undefined)
     
     @scala.inline
-    def deleteOnRemove: Self = this.set("onRemove", js.undefined)
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOriginalValue(value: js.Any): Self = this.set("originalValue", value.asInstanceOf[js.Any])
+    def setResetOriginalValue(value: () => Unit): Self = StObject.set(x, "resetOriginalValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOriginalValue: Self = this.set("originalValue", js.undefined)
+    def setResetOriginalValueUndefined: Self = StObject.set(x, "resetOriginalValue", js.undefined)
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setSetValue(value: js.UndefOr[js.Any] => ICheckboxGroup | _): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResetOriginalValue(value: () => Unit): Self = this.set("resetOriginalValue", js.Any.fromFunction0(value))
+    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
     @scala.inline
-    def deleteResetOriginalValue: Self = this.set("resetOriginalValue", js.undefined)
+    def setSubmitValue(value: Boolean): Self = StObject.set(x, "submitValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetValue(value: js.UndefOr[js.Any] => ICheckboxGroup | _): Self = this.set("setValue", js.Any.fromFunction1(value))
+    def setSubmitValueUndefined: Self = StObject.set(x, "submitValue", js.undefined)
     
     @scala.inline
-    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    def setTransformOriginalValue(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSubmitValue(value: Boolean): Self = this.set("submitValue", value.asInstanceOf[js.Any])
+    def setTransformOriginalValueUndefined: Self = StObject.set(x, "transformOriginalValue", js.undefined)
     
     @scala.inline
-    def deleteSubmitValue: Self = this.set("submitValue", js.undefined)
+    def setValidate(value: () => _ | Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTransformOriginalValue(value: js.UndefOr[js.Any] => _): Self = this.set("transformOriginalValue", js.Any.fromFunction1(value))
+    def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransformOriginalValue: Self = this.set("transformOriginalValue", js.undefined)
+    def setValidateOnChangeUndefined: Self = StObject.set(x, "validateOnChange", js.undefined)
     
     @scala.inline
-    def setValidate(value: () => _ | Boolean): Self = this.set("validate", js.Any.fromFunction0(value))
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
     @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateOnChange(value: Boolean): Self = this.set("validateOnChange", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteValidateOnChange: Self = this.set("validateOnChange", js.undefined)
+    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

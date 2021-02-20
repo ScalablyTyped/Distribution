@@ -1,16 +1,15 @@
 package typings.typedoc
 
-import org.scalablytyped.runtime.TopLevel
 import typings.typedoc.abstractMod.Reflection
 import typings.typedoc.reflectionsDeclarationMod.DeclarationReflection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/reflections/reference", JSImport.Namespace)
-@js.native
-object reflectionsReferenceMod extends js.Object {
+object reflectionsReferenceMod {
   
+  @JSImport("typedoc/dist/lib/models/reflections/reference", "ReferenceReflection")
   @js.native
   class ReferenceReflection protected () extends DeclarationReflection {
     def this(
@@ -43,21 +42,20 @@ object reflectionsReferenceMod extends js.Object {
   }
   
   @js.native
-  sealed trait ReferenceState extends js.Object
+  sealed trait ReferenceState extends StObject
+  @JSImport("typedoc/dist/lib/models/reflections/reference", "ReferenceState")
   @js.native
-  object ReferenceState extends js.Object {
+  object ReferenceState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ReferenceState with Double] = js.native
     
     @js.native
     sealed trait Resolved extends ReferenceState
-    /* 1 */ @js.native
-    object Resolved extends TopLevel[Resolved with Double]
+    /* 1 */ val Resolved: typings.typedoc.reflectionsReferenceMod.ReferenceState.Resolved with Double = js.native
     
     @js.native
     sealed trait Unresolved extends ReferenceState
-    /* 0 */ @js.native
-    object Unresolved extends TopLevel[Unresolved with Double]
+    /* 0 */ val Unresolved: typings.typedoc.reflectionsReferenceMod.ReferenceState.Unresolved with Double = js.native
   }
 }

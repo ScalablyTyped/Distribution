@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePrincipalIdFormatResult extends js.Object {
+trait DescribePrincipalIdFormatResult extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
@@ -26,33 +27,21 @@ object DescribePrincipalIdFormatResult {
   }
   
   @scala.inline
-  implicit class DescribePrincipalIdFormatResultOps[Self <: DescribePrincipalIdFormatResult] (val x: Self) extends AnyVal {
+  implicit class DescribePrincipalIdFormatResultMutableBuilder[Self <: DescribePrincipalIdFormatResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrincipals(value: PrincipalIdFormatList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPrincipalsVarargs(value: PrincipalIdFormat*): Self = this.set("Principals", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrincipals(value: PrincipalIdFormatList): Self = this.set("Principals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipals: Self = this.set("Principals", js.undefined)
+    def setPrincipalsVarargs(value: PrincipalIdFormat*): Self = StObject.set(x, "Principals", js.Array(value :_*))
   }
 }

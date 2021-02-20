@@ -1,5 +1,6 @@
 package typings.winjs.global.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +20,19 @@ class CellSpanningLayout ()
   extends typings.winjs.WinJS.UI.CellSpanningLayout {
   def this(options: js.Any) = this()
 }
-/* static members */
-@JSGlobal("WinJS.UI.CellSpanningLayout")
-@js.native
-object CellSpanningLayout extends js.Object {
+object CellSpanningLayout {
+  
+  @JSGlobal("WinJS.UI.CellSpanningLayout")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSGlobal("WinJS.UI.CellSpanningLayout.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebviewPortMapping extends js.Object {
+trait WebviewPortMapping extends StObject {
   
   /**
     * Destination port. The `webviewPort` is resolved to this port.
@@ -26,24 +27,12 @@ object WebviewPortMapping {
   }
   
   @scala.inline
-  implicit class WebviewPortMappingOps[Self <: WebviewPortMapping] (val x: Self) extends AnyVal {
+  implicit class WebviewPortMappingMutableBuilder[Self <: WebviewPortMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensionHostPort(value: Double): Self = StObject.set(x, "extensionHostPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtensionHostPort(value: Double): Self = this.set("extensionHostPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebviewPort(value: Double): Self = this.set("webviewPort", value.asInstanceOf[js.Any])
+    def setWebviewPort(value: Double): Self = StObject.set(x, "webviewPort", value.asInstanceOf[js.Any])
   }
 }

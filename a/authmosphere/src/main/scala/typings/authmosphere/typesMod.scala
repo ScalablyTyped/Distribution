@@ -1,15 +1,15 @@
 package typings.authmosphere
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("authmosphere/lib/src/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
+  @JSImport("authmosphere/lib/src/types", "LogLevel")
   @js.native
-  object LogLevel extends js.Object {
+  object LogLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.authmosphere.loggerMod.LogLevel with String] = js.native
@@ -27,8 +27,9 @@ object typesMod extends js.Object {
     /* "warn" */ val warn: typings.authmosphere.loggerMod.LogLevel.warn with String = js.native
   }
   
+  @JSImport("authmosphere/lib/src/types", "OAuthGrantType")
   @js.native
-  object OAuthGrantType extends js.Object {
+  object OAuthGrantType extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.authmosphere.oauthgranttypeMod.OAuthGrantType with String] = js.native

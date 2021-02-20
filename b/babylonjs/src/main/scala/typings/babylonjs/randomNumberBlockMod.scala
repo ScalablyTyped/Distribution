@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/randomNumberBlock", JSImport.Namespace)
-@js.native
-object randomNumberBlockMod extends js.Object {
+object randomNumberBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/randomNumberBlock", "RandomNumberBlock")
   @js.native
   class RandomNumberBlock protected () extends NodeMaterialBlock {
     /**

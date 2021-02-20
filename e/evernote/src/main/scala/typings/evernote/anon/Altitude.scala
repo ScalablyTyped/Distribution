@@ -4,12 +4,13 @@ import typings.evernote.mod.Types.LazyMap
 import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.UserID
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Altitude extends js.Object {
+trait Altitude extends StObject {
   
   var altitude: js.UndefOr[Double] = js.native
   
@@ -64,150 +65,138 @@ object Altitude {
   }
   
   @scala.inline
-  implicit class AltitudeOps[Self <: Altitude] (val x: Self) extends AnyVal {
+  implicit class AltitudeMutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationData(value: LazyMap): Self = StObject.set(x, "applicationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setApplicationDataUndefined: Self = StObject.set(x, "applicationData", js.undefined)
     
     @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationData(value: LazyMap): Self = this.set("applicationData", value.asInstanceOf[js.Any])
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def deleteApplicationData: Self = this.set("applicationData", js.undefined)
+    def setClassifications(value: Map[String, String]): Self = StObject.set(x, "classifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setClassificationsUndefined: Self = StObject.set(x, "classifications", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setConflictSourceNoteGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "conflictSourceNoteGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassifications(value: Map[String, String]): Self = this.set("classifications", value.asInstanceOf[js.Any])
+    def setConflictSourceNoteGuidUndefined: Self = StObject.set(x, "conflictSourceNoteGuid", js.undefined)
     
     @scala.inline
-    def deleteClassifications: Self = this.set("classifications", js.undefined)
+    def setContentClass(value: String): Self = StObject.set(x, "contentClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflictSourceNoteGuid(value: typings.evernote.mod.Types.Guid): Self = this.set("conflictSourceNoteGuid", value.asInstanceOf[js.Any])
+    def setContentClassUndefined: Self = StObject.set(x, "contentClass", js.undefined)
     
     @scala.inline
-    def deleteConflictSourceNoteGuid: Self = this.set("conflictSourceNoteGuid", js.undefined)
+    def setCreatorId(value: UserID): Self = StObject.set(x, "creatorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentClass(value: String): Self = this.set("contentClass", value.asInstanceOf[js.Any])
+    def setCreatorIdUndefined: Self = StObject.set(x, "creatorId", js.undefined)
     
     @scala.inline
-    def deleteContentClass: Self = this.set("contentClass", js.undefined)
+    def setLastEditedBy(value: String): Self = StObject.set(x, "lastEditedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorId(value: UserID): Self = this.set("creatorId", value.asInstanceOf[js.Any])
+    def setLastEditedByUndefined: Self = StObject.set(x, "lastEditedBy", js.undefined)
     
     @scala.inline
-    def deleteCreatorId: Self = this.set("creatorId", js.undefined)
+    def setLastEditorId(value: UserID): Self = StObject.set(x, "lastEditorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEditedBy(value: String): Self = this.set("lastEditedBy", value.asInstanceOf[js.Any])
+    def setLastEditorIdUndefined: Self = StObject.set(x, "lastEditorId", js.undefined)
     
     @scala.inline
-    def deleteLastEditedBy: Self = this.set("lastEditedBy", js.undefined)
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEditorId(value: UserID): Self = this.set("lastEditorId", value.asInstanceOf[js.Any])
+    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
     @scala.inline
-    def deleteLastEditorId: Self = this.set("lastEditorId", js.undefined)
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
     @scala.inline
-    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    def setNoteTitleQuality(value: Double): Self = StObject.set(x, "noteTitleQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setNoteTitleQualityUndefined: Self = StObject.set(x, "noteTitleQuality", js.undefined)
     
     @scala.inline
-    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    def setPlaceName(value: String): Self = StObject.set(x, "placeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteTitleQuality(value: Double): Self = this.set("noteTitleQuality", value.asInstanceOf[js.Any])
+    def setPlaceNameUndefined: Self = StObject.set(x, "placeName", js.undefined)
     
     @scala.inline
-    def deleteNoteTitleQuality: Self = this.set("noteTitleQuality", js.undefined)
+    def setReminderDoneTime(value: Timestamp): Self = StObject.set(x, "reminderDoneTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceName(value: String): Self = this.set("placeName", value.asInstanceOf[js.Any])
+    def setReminderDoneTimeUndefined: Self = StObject.set(x, "reminderDoneTime", js.undefined)
     
     @scala.inline
-    def deletePlaceName: Self = this.set("placeName", js.undefined)
+    def setReminderOrder(value: Double): Self = StObject.set(x, "reminderOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReminderDoneTime(value: Timestamp): Self = this.set("reminderDoneTime", value.asInstanceOf[js.Any])
+    def setReminderOrderUndefined: Self = StObject.set(x, "reminderOrder", js.undefined)
     
     @scala.inline
-    def deleteReminderDoneTime: Self = this.set("reminderDoneTime", js.undefined)
+    def setReminderTime(value: Timestamp): Self = StObject.set(x, "reminderTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReminderOrder(value: Double): Self = this.set("reminderOrder", value.asInstanceOf[js.Any])
+    def setReminderTimeUndefined: Self = StObject.set(x, "reminderTime", js.undefined)
     
     @scala.inline
-    def deleteReminderOrder: Self = this.set("reminderOrder", js.undefined)
+    def setShareDate(value: Timestamp): Self = StObject.set(x, "shareDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReminderTime(value: Timestamp): Self = this.set("reminderTime", value.asInstanceOf[js.Any])
+    def setShareDateUndefined: Self = StObject.set(x, "shareDate", js.undefined)
     
     @scala.inline
-    def deleteReminderTime: Self = this.set("reminderTime", js.undefined)
+    def setSharedWithBusiness(value: Boolean): Self = StObject.set(x, "sharedWithBusiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareDate(value: Timestamp): Self = this.set("shareDate", value.asInstanceOf[js.Any])
+    def setSharedWithBusinessUndefined: Self = StObject.set(x, "sharedWithBusiness", js.undefined)
     
     @scala.inline
-    def deleteShareDate: Self = this.set("shareDate", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedWithBusiness(value: Boolean): Self = this.set("sharedWithBusiness", value.asInstanceOf[js.Any])
+    def setSourceApplication(value: String): Self = StObject.set(x, "sourceApplication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharedWithBusiness: Self = this.set("sharedWithBusiness", js.undefined)
+    def setSourceApplicationUndefined: Self = StObject.set(x, "sourceApplication", js.undefined)
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
     
     @scala.inline
-    def setSourceApplication(value: String): Self = this.set("sourceApplication", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteSourceApplication: Self = this.set("sourceApplication", js.undefined)
+    def setSubjectDate(value: Timestamp): Self = StObject.set(x, "subjectDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceURL(value: String): Self = this.set("sourceURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceURL: Self = this.set("sourceURL", js.undefined)
-    
-    @scala.inline
-    def setSubjectDate(value: Timestamp): Self = this.set("subjectDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectDate: Self = this.set("subjectDate", js.undefined)
+    def setSubjectDateUndefined: Self = StObject.set(x, "subjectDate", js.undefined)
   }
 }

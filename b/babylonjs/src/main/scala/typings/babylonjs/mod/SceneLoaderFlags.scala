@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,40 +10,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SceneLoaderFlags ()
   extends typings.babylonjs.legacyMod.SceneLoaderFlags
 /* static members */
-@JSImport("babylonjs", "SceneLoaderFlags")
-@js.native
-object SceneLoaderFlags extends js.Object {
+object SceneLoaderFlags {
   
-  /**
-    * Gets or set a boolean indicating if matrix weights must be cleaned upon loading
-    */
-  def CleanBoneMatrixWeights: Boolean = js.native
-  def CleanBoneMatrixWeights_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs", "SceneLoaderFlags")
+  @js.native
+  val ^ : js.Any = js.native
   
-  /**
-    * Gets or sets a boolean indicating if entire scene must be loaded even if scene contains incremental data
-    */
-  def ForceFullSceneLoadingForIncremental: Boolean = js.native
-  def ForceFullSceneLoadingForIncremental_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs", "SceneLoaderFlags._CleanBoneMatrixWeights")
+  @js.native
+  def _CleanBoneMatrixWeights: js.Any = js.native
+  @scala.inline
+  def _CleanBoneMatrixWeights_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanBoneMatrixWeights")(x.asInstanceOf[js.Any])
   
-  /**
-    * Gets or sets a boolean indicating if loading screen must be displayed while loading a scene
-    */
-  def ShowLoadingScreen: Boolean = js.native
-  def ShowLoadingScreen_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs", "SceneLoaderFlags._ForceFullSceneLoadingForIncremental")
+  @js.native
+  def _ForceFullSceneLoadingForIncremental: js.Any = js.native
+  @scala.inline
+  def _ForceFullSceneLoadingForIncremental_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ForceFullSceneLoadingForIncremental")(x.asInstanceOf[js.Any])
   
-  var _CleanBoneMatrixWeights: js.Any = js.native
+  @JSImport("babylonjs", "SceneLoaderFlags._ShowLoadingScreen")
+  @js.native
+  def _ShowLoadingScreen: js.Any = js.native
+  @scala.inline
+  def _ShowLoadingScreen_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ShowLoadingScreen")(x.asInstanceOf[js.Any])
   
-  var _ForceFullSceneLoadingForIncremental: js.Any = js.native
-  
-  var _ShowLoadingScreen: js.Any = js.native
-  
-  var _loggingLevel: js.Any = js.native
-  
-  /**
-    * Defines the current logging level (while loading the scene)
-    * @ignorenaming
-    */
-  def loggingLevel: Double = js.native
-  def loggingLevel_=(value: Double): Unit = js.native
+  @JSImport("babylonjs", "SceneLoaderFlags._loggingLevel")
+  @js.native
+  def _loggingLevel: js.Any = js.native
+  @scala.inline
+  def _loggingLevel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_loggingLevel")(x.asInstanceOf[js.Any])
 }

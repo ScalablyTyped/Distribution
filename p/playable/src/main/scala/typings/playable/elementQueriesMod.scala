@@ -2,14 +2,14 @@ package typings.playable
 
 import typings.playable.anon.Prefix
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/core/element-queries", JSImport.Namespace)
-@js.native
-object elementQueriesMod extends js.Object {
+object elementQueriesMod {
   
+  @JSImport("playable/dist/src/modules/ui/core/element-queries", JSImport.Default)
   @js.native
   class default protected ()
     extends typings.playable.elementQueriesElementQueriesMod.default {

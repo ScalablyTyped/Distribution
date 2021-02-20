@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalDataBarDirection extends js.Object
+sealed trait ConditionalDataBarDirection extends StObject
 /**
   *
   * Represents the Data Bar direction within a cell.
@@ -14,7 +15,7 @@ sealed trait ConditionalDataBarDirection extends js.Object
   */
 @JSGlobal("Excel.ConditionalDataBarDirection")
 @js.native
-object ConditionalDataBarDirection extends js.Object {
+object ConditionalDataBarDirection extends StObject {
   
   @js.native
   sealed trait context extends ConditionalDataBarDirection

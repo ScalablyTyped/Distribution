@@ -5,16 +5,16 @@ import typings.awsSdkClientXrayNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayConfiguration
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/XRayClient", JSImport.Namespace)
-@js.native
-object xrayclientMod extends js.Object {
+object xrayclientMod {
   
+  @JSImport("@aws-sdk/client-xray-node/XRayClient", "XRayClient")
   @js.native
-  class XRayClient protected () extends js.Object {
+  class XRayClient protected () extends StObject {
     def this(configuration: XRayConfiguration) = this()
     
     val config: XRayResolvedConfiguration = js.native

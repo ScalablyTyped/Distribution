@@ -1,17 +1,18 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FlexDirection extends js.Object
+sealed trait FlexDirection extends StObject
 /**
   * Available directions for flex layouts.
   */
 @JSGlobal("sap.m.FlexDirection")
 @js.native
-object FlexDirection extends js.Object {
+object FlexDirection extends StObject {
   
   @js.native
   sealed trait Column extends FlexDirection

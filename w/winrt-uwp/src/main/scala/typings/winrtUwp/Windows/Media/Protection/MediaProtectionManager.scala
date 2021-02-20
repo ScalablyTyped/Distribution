@@ -6,13 +6,14 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.componentloadfailed
 import typings.winrtUwp.winrtUwpStrings.rebootneeded
 import typings.winrtUwp.winrtUwpStrings.servicerequested
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a content protection manager object, for an application that handles protected media content. */
 @js.native
-trait MediaProtectionManager extends js.Object {
+trait MediaProtectionManager extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

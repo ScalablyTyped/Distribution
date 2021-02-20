@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,51 +108,39 @@ object SearchDescriptor {
   }
   
   @scala.inline
-  implicit class SearchDescriptorOps[Self <: SearchDescriptor] (val x: Self) extends AnyVal {
+  implicit class SearchDescriptorMutableBuilder[Self <: SearchDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSearchBackwards(value: Boolean): Self = StObject.set(x, "SearchBackwards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSearchCaseSensitive(value: Boolean): Self = StObject.set(x, "SearchCaseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearchRegularExpression(value: Boolean): Self = StObject.set(x, "SearchRegularExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchBackwards(value: Boolean): Self = this.set("SearchBackwards", value.asInstanceOf[js.Any])
+    def setSearchSimilarity(value: Boolean): Self = StObject.set(x, "SearchSimilarity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchCaseSensitive(value: Boolean): Self = this.set("SearchCaseSensitive", value.asInstanceOf[js.Any])
+    def setSearchSimilarityAdd(value: Double): Self = StObject.set(x, "SearchSimilarityAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchRegularExpression(value: Boolean): Self = this.set("SearchRegularExpression", value.asInstanceOf[js.Any])
+    def setSearchSimilarityExchange(value: Double): Self = StObject.set(x, "SearchSimilarityExchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchSimilarity(value: Boolean): Self = this.set("SearchSimilarity", value.asInstanceOf[js.Any])
+    def setSearchSimilarityRelax(value: Boolean): Self = StObject.set(x, "SearchSimilarityRelax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchSimilarityAdd(value: Double): Self = this.set("SearchSimilarityAdd", value.asInstanceOf[js.Any])
+    def setSearchSimilarityRemove(value: Double): Self = StObject.set(x, "SearchSimilarityRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchSimilarityExchange(value: Double): Self = this.set("SearchSimilarityExchange", value.asInstanceOf[js.Any])
+    def setSearchStyles(value: Boolean): Self = StObject.set(x, "SearchStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchSimilarityRelax(value: Boolean): Self = this.set("SearchSimilarityRelax", value.asInstanceOf[js.Any])
+    def setSearchWildcard(value: Boolean): Self = StObject.set(x, "SearchWildcard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchSimilarityRemove(value: Double): Self = this.set("SearchSimilarityRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchStyles(value: Boolean): Self = this.set("SearchStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchWildcard(value: Boolean): Self = this.set("SearchWildcard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchWords(value: Boolean): Self = this.set("SearchWords", value.asInstanceOf[js.Any])
+    def setSearchWords(value: Boolean): Self = StObject.set(x, "SearchWords", value.asInstanceOf[js.Any])
   }
 }

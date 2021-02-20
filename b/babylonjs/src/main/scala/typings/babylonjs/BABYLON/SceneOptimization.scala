@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SceneOptimization extends js.Object {
+trait SceneOptimization extends StObject {
   
   /**
     * This function will be called by the SceneOptimizer when its priority is reached in order to apply the change required by the current optimization
@@ -36,27 +37,15 @@ object SceneOptimization {
   }
   
   @scala.inline
-  implicit class SceneOptimizationOps[Self <: SceneOptimization] (val x: Self) extends AnyVal {
+  implicit class SceneOptimizationMutableBuilder[Self <: SceneOptimization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApply(value: (Scene, SceneOptimizer) => Boolean): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApply(value: (Scene, SceneOptimizer) => Boolean): Self = this.set("apply", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetDescription(value: () => String): Self = this.set("getDescription", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the info about a significant other for a contact. */
 @js.native
-trait ContactSignificantOther extends js.Object {
+trait ContactSignificantOther extends StObject {
   
   /** Gets and sets the description of a significant other for a contact. The maximum string length for the description is 512 characters. */
   var description: String = js.native
@@ -26,27 +27,15 @@ object ContactSignificantOther {
   }
   
   @scala.inline
-  implicit class ContactSignificantOtherOps[Self <: ContactSignificantOther] (val x: Self) extends AnyVal {
+  implicit class ContactSignificantOtherMutableBuilder[Self <: ContactSignificantOther] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelationship(value: ContactRelationship): Self = this.set("relationship", value.asInstanceOf[js.Any])
+    def setRelationship(value: ContactRelationship): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.reactNativeChartsWrapper.anon
 
 import typings.reactNativeChartsWrapper.mod.EasingType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurationX extends js.Object {
+trait DurationX extends StObject {
   
   var durationX: js.UndefOr[Double] = js.native
   
@@ -25,42 +26,30 @@ object DurationX {
   }
   
   @scala.inline
-  implicit class DurationXOps[Self <: DurationX] (val x: Self) extends AnyVal {
+  implicit class DurationXMutableBuilder[Self <: DurationX] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationX(value: Double): Self = StObject.set(x, "durationX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationXUndefined: Self = StObject.set(x, "durationX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDurationY(value: Double): Self = StObject.set(x, "durationY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationX(value: Double): Self = this.set("durationX", value.asInstanceOf[js.Any])
+    def setDurationYUndefined: Self = StObject.set(x, "durationY", js.undefined)
     
     @scala.inline
-    def deleteDurationX: Self = this.set("durationX", js.undefined)
+    def setEasingX(value: EasingType): Self = StObject.set(x, "easingX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationY(value: Double): Self = this.set("durationY", value.asInstanceOf[js.Any])
+    def setEasingXUndefined: Self = StObject.set(x, "easingX", js.undefined)
     
     @scala.inline
-    def deleteDurationY: Self = this.set("durationY", js.undefined)
+    def setEasingY(value: EasingType): Self = StObject.set(x, "easingY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasingX(value: EasingType): Self = this.set("easingX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEasingX: Self = this.set("easingX", js.undefined)
-    
-    @scala.inline
-    def setEasingY(value: EasingType): Self = this.set("easingY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEasingY: Self = this.set("easingY", js.undefined)
+    def setEasingYUndefined: Self = StObject.set(x, "easingY", js.undefined)
   }
 }

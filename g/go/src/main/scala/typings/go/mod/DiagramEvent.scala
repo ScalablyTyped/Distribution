@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The DiagramEvent class constructor produces an empty DiagramEvent.
   */
-class DiagramEvent () extends js.Object {
+class DiagramEvent () extends StObject {
   
   /**Gets or sets whether any default actions associated with this diagram event should be avoided or cancelled.*/
   var cancel: Boolean = js.native

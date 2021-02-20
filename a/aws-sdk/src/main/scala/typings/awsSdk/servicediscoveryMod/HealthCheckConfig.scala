@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HealthCheckConfig extends js.Object {
+trait HealthCheckConfig extends StObject {
   
   /**
     * The number of consecutive health checks that an endpoint must pass or fail for Route 53 to change the current status of the endpoint from unhealthy to healthy or vice versa. For more information, see How Route 53 Determines Whether an Endpoint Is Healthy in the Route 53 Developer Guide.
@@ -31,33 +32,21 @@ object HealthCheckConfig {
   }
   
   @scala.inline
-  implicit class HealthCheckConfigOps[Self <: HealthCheckConfig] (val x: Self) extends AnyVal {
+  implicit class HealthCheckConfigMutableBuilder[Self <: HealthCheckConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureThreshold(value: FailureThreshold): Self = StObject.set(x, "FailureThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureThresholdUndefined: Self = StObject.set(x, "FailureThreshold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourcePath(value: ResourcePath): Self = StObject.set(x, "ResourcePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: HealthCheckType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setResourcePathUndefined: Self = StObject.set(x, "ResourcePath", js.undefined)
     
     @scala.inline
-    def setFailureThreshold(value: FailureThreshold): Self = this.set("FailureThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureThreshold: Self = this.set("FailureThreshold", js.undefined)
-    
-    @scala.inline
-    def setResourcePath(value: ResourcePath): Self = this.set("ResourcePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcePath: Self = this.set("ResourcePath", js.undefined)
+    def setType(value: HealthCheckType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

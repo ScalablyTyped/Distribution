@@ -1,5 +1,6 @@
 package typings.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisRestApi.arcgisRestApiStrings.esriSFSSolid
   - typings.arcgisRestApi.arcgisRestApiStrings.esriSFSVertical
 */
-trait SimpleFillSymbolStyle extends js.Object
+trait SimpleFillSymbolStyle extends StObject
 object SimpleFillSymbolStyle {
   
   @scala.inline

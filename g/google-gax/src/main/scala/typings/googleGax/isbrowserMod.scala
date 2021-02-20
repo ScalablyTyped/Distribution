@@ -1,12 +1,13 @@
 package typings.googleGax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-gax/build/src/isbrowser", JSImport.Namespace)
-@js.native
-object isbrowserMod extends js.Object {
+object isbrowserMod {
+  
+  @JSImport("google-gax/build/src/isbrowser", "isBrowser")
+  @js.native
   def isBrowser(): Boolean = js.native
 }
-

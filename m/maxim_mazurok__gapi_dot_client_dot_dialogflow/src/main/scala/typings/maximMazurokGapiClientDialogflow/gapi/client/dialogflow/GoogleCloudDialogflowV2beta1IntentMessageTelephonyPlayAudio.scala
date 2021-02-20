@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends js.Object {
+trait GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends StObject {
   
   /**
     * Required. URI to a Google Cloud Storage object containing the audio to play, e.g., "gs://bucket/object". The object must contain a single channel (mono) of linear PCM audio (2 bytes
@@ -24,24 +25,12 @@ object GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudioOps[Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudioMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioUri(value: String): Self = StObject.set(x, "audioUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAudioUri(value: String): Self = this.set("audioUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAudioUri: Self = this.set("audioUri", js.undefined)
+    def setAudioUriUndefined: Self = StObject.set(x, "audioUri", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.useXr] - Whether to allow XR input sources. Defaults to true.
   */
 @js.native
-trait ElementInput extends js.Object {
+trait ElementInput extends StObject {
   
   /**
     * Add a {@link pc.ElementComponent} to the internal list of ElementComponents that are being checked for input.
@@ -53,30 +54,18 @@ object ElementInput {
   }
   
   @scala.inline
-  implicit class ElementInputOps[Self <: ElementInput] (val x: Self) extends AnyVal {
+  implicit class ElementInputMutableBuilder[Self <: ElementInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddElement(value: ElementComponent => Unit): Self = StObject.set(x, "addElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttach(value: Element => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddElement(value: ElementComponent => Unit): Self = this.set("addElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAttach(value: Element => Unit): Self = this.set("attach", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDetach(value: () => Unit): Self = this.set("detach", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveElement(value: ElementComponent => Unit): Self = this.set("removeElement", js.Any.fromFunction1(value))
+    def setRemoveElement(value: ElementComponent => Unit): Self = StObject.set(x, "removeElement", js.Any.fromFunction1(value))
   }
 }

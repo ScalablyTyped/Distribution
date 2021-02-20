@@ -1,5 +1,6 @@
 package typings.jqueryRateit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jqueryRateit.jqueryRateitStrings.bg
   - typings.jqueryRateit.jqueryRateitStrings.font
 */
-trait RateItMode extends js.Object
+trait RateItMode extends StObject
 object RateItMode {
   
   @scala.inline

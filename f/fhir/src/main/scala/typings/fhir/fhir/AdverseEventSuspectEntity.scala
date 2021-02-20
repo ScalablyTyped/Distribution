@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,69 +65,57 @@ object AdverseEventSuspectEntity {
   }
   
   @scala.inline
-  implicit class AdverseEventSuspectEntityOps[Self <: AdverseEventSuspectEntity] (val x: Self) extends AnyVal {
+  implicit class AdverseEventSuspectEntityMutableBuilder[Self <: AdverseEventSuspectEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCausality(value: code): Self = StObject.set(x, "causality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCausalityAssessment(value: CodeableConcept): Self = StObject.set(x, "causalityAssessment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCausalityAssessmentUndefined: Self = StObject.set(x, "causalityAssessment", js.undefined)
     
     @scala.inline
-    def setInstance(value: Reference): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setCausalityAuthor(value: Reference): Self = StObject.set(x, "causalityAuthor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_causality(value: Element): Self = this.set("_causality", value.asInstanceOf[js.Any])
+    def setCausalityAuthorUndefined: Self = StObject.set(x, "causalityAuthor", js.undefined)
     
     @scala.inline
-    def delete_causality: Self = this.set("_causality", js.undefined)
+    def setCausalityMethod(value: CodeableConcept): Self = StObject.set(x, "causalityMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_causalityProductRelatedness(value: Element): Self = this.set("_causalityProductRelatedness", value.asInstanceOf[js.Any])
+    def setCausalityMethodUndefined: Self = StObject.set(x, "causalityMethod", js.undefined)
     
     @scala.inline
-    def delete_causalityProductRelatedness: Self = this.set("_causalityProductRelatedness", js.undefined)
+    def setCausalityProductRelatedness(value: String): Self = StObject.set(x, "causalityProductRelatedness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCausality(value: code): Self = this.set("causality", value.asInstanceOf[js.Any])
+    def setCausalityProductRelatednessUndefined: Self = StObject.set(x, "causalityProductRelatedness", js.undefined)
     
     @scala.inline
-    def deleteCausality: Self = this.set("causality", js.undefined)
+    def setCausalityResult(value: CodeableConcept): Self = StObject.set(x, "causalityResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCausalityAssessment(value: CodeableConcept): Self = this.set("causalityAssessment", value.asInstanceOf[js.Any])
+    def setCausalityResultUndefined: Self = StObject.set(x, "causalityResult", js.undefined)
     
     @scala.inline
-    def deleteCausalityAssessment: Self = this.set("causalityAssessment", js.undefined)
+    def setCausalityUndefined: Self = StObject.set(x, "causality", js.undefined)
     
     @scala.inline
-    def setCausalityAuthor(value: Reference): Self = this.set("causalityAuthor", value.asInstanceOf[js.Any])
+    def setInstance(value: Reference): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCausalityAuthor: Self = this.set("causalityAuthor", js.undefined)
+    def set_causality(value: Element): Self = StObject.set(x, "_causality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCausalityMethod(value: CodeableConcept): Self = this.set("causalityMethod", value.asInstanceOf[js.Any])
+    def set_causalityProductRelatedness(value: Element): Self = StObject.set(x, "_causalityProductRelatedness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCausalityMethod: Self = this.set("causalityMethod", js.undefined)
+    def set_causalityProductRelatednessUndefined: Self = StObject.set(x, "_causalityProductRelatedness", js.undefined)
     
     @scala.inline
-    def setCausalityProductRelatedness(value: String): Self = this.set("causalityProductRelatedness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCausalityProductRelatedness: Self = this.set("causalityProductRelatedness", js.undefined)
-    
-    @scala.inline
-    def setCausalityResult(value: CodeableConcept): Self = this.set("causalityResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCausalityResult: Self = this.set("causalityResult", js.undefined)
+    def set_causalityUndefined: Self = StObject.set(x, "_causality", js.undefined)
   }
 }

@@ -7,13 +7,14 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.side
 import typings.antDesignProLayout.antDesignProLayoutStrings.top
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
 import typings.antd.menuContextMod.MenuTheme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @ant-design/pro-layout.@ant-design/pro-layout/lib/SettingDrawer.MergerSettingsType<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.ProSettings> */
 @js.native
-trait MergerSettingsTypeProSett extends js.Object {
+trait MergerSettingsTypeProSett extends StObject {
   
   var colorWeak: js.UndefOr[Boolean] = js.native
   
@@ -58,120 +59,108 @@ object MergerSettingsTypeProSett {
   }
   
   @scala.inline
-  implicit class MergerSettingsTypeProSettOps[Self <: MergerSettingsTypeProSett] (val x: Self) extends AnyVal {
+  implicit class MergerSettingsTypeProSettMutableBuilder[Self <: MergerSettingsTypeProSett] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorWeak(value: Boolean): Self = StObject.set(x, "colorWeak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorWeakUndefined: Self = StObject.set(x, "colorWeak", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentWidth(value: ContentWidth): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorWeak(value: Boolean): Self = this.set("colorWeak", value.asInstanceOf[js.Any])
+    def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
     
     @scala.inline
-    def deleteColorWeak: Self = this.set("colorWeak", js.undefined)
+    def setFixSiderbar(value: Boolean): Self = StObject.set(x, "fixSiderbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentWidth(value: ContentWidth): Self = this.set("contentWidth", value.asInstanceOf[js.Any])
+    def setFixSiderbarUndefined: Self = StObject.set(x, "fixSiderbar", js.undefined)
     
     @scala.inline
-    def deleteContentWidth: Self = this.set("contentWidth", js.undefined)
+    def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixSiderbar(value: Boolean): Self = this.set("fixSiderbar", value.asInstanceOf[js.Any])
+    def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
     
     @scala.inline
-    def deleteFixSiderbar: Self = this.set("fixSiderbar", js.undefined)
+    def setFooterRender(value: `false`): Self = StObject.set(x, "footerRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedHeader(value: Boolean): Self = this.set("fixedHeader", value.asInstanceOf[js.Any])
+    def setFooterRenderUndefined: Self = StObject.set(x, "footerRender", js.undefined)
     
     @scala.inline
-    def deleteFixedHeader: Self = this.set("fixedHeader", js.undefined)
+    def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterRender(value: `false`): Self = this.set("footerRender", value.asInstanceOf[js.Any])
+    def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
     
     @scala.inline
-    def deleteFooterRender: Self = this.set("footerRender", js.undefined)
+    def setHeaderRender(value: `false`): Self = StObject.set(x, "headerRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderHeight(value: Double): Self = this.set("headerHeight", value.asInstanceOf[js.Any])
+    def setHeaderRenderUndefined: Self = StObject.set(x, "headerRender", js.undefined)
     
     @scala.inline
-    def deleteHeaderHeight: Self = this.set("headerHeight", js.undefined)
+    def setHeaderTheme(value: MenuTheme): Self = StObject.set(x, "headerTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRender(value: `false`): Self = this.set("headerRender", value.asInstanceOf[js.Any])
+    def setHeaderThemeUndefined: Self = StObject.set(x, "headerTheme", js.undefined)
     
     @scala.inline
-    def deleteHeaderRender: Self = this.set("headerRender", js.undefined)
+    def setIconfontUrl(value: String): Self = StObject.set(x, "iconfontUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTheme(value: MenuTheme): Self = this.set("headerTheme", value.asInstanceOf[js.Any])
+    def setIconfontUrlUndefined: Self = StObject.set(x, "iconfontUrl", js.undefined)
     
     @scala.inline
-    def deleteHeaderTheme: Self = this.set("headerTheme", js.undefined)
+    def setLayout(value: side | top | mix): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconfontUrl(value: String): Self = this.set("iconfontUrl", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteIconfontUrl: Self = this.set("iconfontUrl", js.undefined)
+    def setMenu(value: DefaultOpenAll): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: side | top | mix): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setMenuHeaderRender(value: `false`): Self = StObject.set(x, "menuHeaderRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setMenuHeaderRenderUndefined: Self = StObject.set(x, "menuHeaderRender", js.undefined)
     
     @scala.inline
-    def setMenu(value: DefaultOpenAll): Self = this.set("menu", value.asInstanceOf[js.Any])
+    def setMenuRender(value: `false`): Self = StObject.set(x, "menuRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMenu: Self = this.set("menu", js.undefined)
+    def setMenuRenderUndefined: Self = StObject.set(x, "menuRender", js.undefined)
     
     @scala.inline
-    def setMenuHeaderRender(value: `false`): Self = this.set("menuHeaderRender", value.asInstanceOf[js.Any])
+    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
     @scala.inline
-    def deleteMenuHeaderRender: Self = this.set("menuHeaderRender", js.undefined)
+    def setNavTheme(value: MenuTheme | realDark): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuRender(value: `false`): Self = this.set("menuRender", value.asInstanceOf[js.Any])
+    def setNavThemeUndefined: Self = StObject.set(x, "navTheme", js.undefined)
     
     @scala.inline
-    def deleteMenuRender: Self = this.set("menuRender", js.undefined)
+    def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavTheme(value: MenuTheme | realDark): Self = this.set("navTheme", value.asInstanceOf[js.Any])
+    def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
     
     @scala.inline
-    def deleteNavTheme: Self = this.set("navTheme", js.undefined)
+    def setSplitMenus(value: Boolean): Self = StObject.set(x, "splitMenus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryColor(value: String): Self = this.set("primaryColor", value.asInstanceOf[js.Any])
+    def setSplitMenusUndefined: Self = StObject.set(x, "splitMenus", js.undefined)
     
     @scala.inline
-    def deletePrimaryColor: Self = this.set("primaryColor", js.undefined)
+    def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplitMenus(value: Boolean): Self = this.set("splitMenus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplitMenus: Self = this.set("splitMenus", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String | `false`): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

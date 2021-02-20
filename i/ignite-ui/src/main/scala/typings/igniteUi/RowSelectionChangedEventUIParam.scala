@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowSelectionChangedEventUIParam extends js.Object {
+trait RowSelectionChangedEventUIParam extends StObject {
   
   /**
     * Gets reference to GridSelection.
@@ -31,39 +32,27 @@ object RowSelectionChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class RowSelectionChangedEventUIParamOps[Self <: RowSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class RowSelectionChangedEventUIParamMutableBuilder[Self <: RowSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setSelectedRows(value: js.Array[_]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRow(value: js.Any): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
     
     @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
-    
-    @scala.inline
-    def setSelectedRowsVarargs(value: js.Any*): Self = this.set("selectedRows", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedRows(value: js.Array[_]): Self = this.set("selectedRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedRows: Self = this.set("selectedRows", js.undefined)
+    def setSelectedRowsVarargs(value: js.Any*): Self = StObject.set(x, "selectedRows", js.Array(value :_*))
   }
 }

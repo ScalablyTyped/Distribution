@@ -1,11 +1,12 @@
 package typings.webpack.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Basename extends js.Object {
+trait Basename extends StObject {
   
   var basename: String = js.native
   
@@ -32,35 +33,23 @@ object Basename {
   }
   
   @scala.inline
-  implicit class BasenameOps[Self <: Basename] (val x: Self) extends AnyVal {
+  implicit class BasenameMutableBuilder[Self <: Basename] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBasename(value: String): Self = this.set("basename", value.asInstanceOf[js.Any])
+    def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChunk(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Chunk */ js.Any
-    ): Self = this.set("chunk", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnenotePatchContentCommand extends js.Object {
+trait OnenotePatchContentCommand extends StObject {
   
   // The action to perform on the target element. The possible values are: replace, append, delete, insert, or prepend.
   var action: js.UndefOr[OnenotePatchActionType] = js.native
@@ -37,48 +38,36 @@ object OnenotePatchContentCommand {
   }
   
   @scala.inline
-  implicit class OnenotePatchContentCommandOps[Self <: OnenotePatchContentCommand] (val x: Self) extends AnyVal {
+  implicit class OnenotePatchContentCommandMutableBuilder[Self <: OnenotePatchContentCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: OnenotePatchActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: NullableOption[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: OnenotePatchActionType): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setContentNull: Self = StObject.set(x, "content", null)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setContent(value: NullableOption[String]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setPosition(value: NullableOption[OnenotePatchInsertPosition]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setPositionNull: Self = StObject.set(x, "position", null)
     
     @scala.inline
-    def setContentNull: Self = this.set("content", null)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setPosition(value: NullableOption[OnenotePatchInsertPosition]): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setPositionNull: Self = this.set("position", null)
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

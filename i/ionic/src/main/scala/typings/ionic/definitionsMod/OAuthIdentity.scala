@@ -1,12 +1,13 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ A in ionic.ionic/definitions.AssociationType ]:? ionic.ionic/definitions.OAuthIdentityDetails} */
 @js.native
-trait OAuthIdentity extends js.Object {
+trait OAuthIdentity extends StObject {
   
   var bitbucket_cloud: js.UndefOr[OAuthIdentityDetails] = js.native
   
@@ -23,36 +24,24 @@ object OAuthIdentity {
   }
   
   @scala.inline
-  implicit class OAuthIdentityOps[Self <: OAuthIdentity] (val x: Self) extends AnyVal {
+  implicit class OAuthIdentityMutableBuilder[Self <: OAuthIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitbucket_cloud(value: OAuthIdentityDetails): Self = StObject.set(x, "bitbucket_cloud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitbucket_cloudUndefined: Self = StObject.set(x, "bitbucket_cloud", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitbucket_server(value: OAuthIdentityDetails): Self = StObject.set(x, "bitbucket_server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitbucket_cloud(value: OAuthIdentityDetails): Self = this.set("bitbucket_cloud", value.asInstanceOf[js.Any])
+    def setBitbucket_serverUndefined: Self = StObject.set(x, "bitbucket_server", js.undefined)
     
     @scala.inline
-    def deleteBitbucket_cloud: Self = this.set("bitbucket_cloud", js.undefined)
+    def setGithub(value: OAuthIdentityDetails): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitbucket_server(value: OAuthIdentityDetails): Self = this.set("bitbucket_server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBitbucket_server: Self = this.set("bitbucket_server", js.undefined)
-    
-    @scala.inline
-    def setGithub(value: OAuthIdentityDetails): Self = this.set("github", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGithub: Self = this.set("github", js.undefined)
+    def setGithubUndefined: Self = StObject.set(x, "github", js.undefined)
   }
 }

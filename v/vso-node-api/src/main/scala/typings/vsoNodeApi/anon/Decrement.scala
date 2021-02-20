@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Decrement extends js.Object {
+trait Decrement extends StObject {
   
   var decrement: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object Decrement {
   }
   
   @scala.inline
-  implicit class DecrementOps[Self <: Decrement] (val x: Self) extends AnyVal {
+  implicit class DecrementMutableBuilder[Self <: Decrement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecrement(value: scala.Double): Self = StObject.set(x, "decrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncrement(value: scala.Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecrement(value: scala.Double): Self = this.set("decrement", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: scala.Double): Self = this.set("delete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncrement(value: scala.Double): Self = this.set("increment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSet(value: scala.Double): Self = this.set("set", value.asInstanceOf[js.Any])
+    def setSet(value: scala.Double): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterCACertificateRequest extends js.Object {
+trait RegisterCACertificateRequest extends StObject {
   
   /**
     * Allows this CA certificate to be used for auto registration of device certificates.
@@ -46,51 +47,39 @@ object RegisterCACertificateRequest {
   }
   
   @scala.inline
-  implicit class RegisterCACertificateRequestOps[Self <: RegisterCACertificateRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterCACertificateRequestMutableBuilder[Self <: RegisterCACertificateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAutoRegistration(value: AllowAutoRegistration): Self = StObject.set(x, "allowAutoRegistration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAutoRegistrationUndefined: Self = StObject.set(x, "allowAutoRegistration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaCertificate(value: CertificatePem): Self = StObject.set(x, "caCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaCertificate(value: CertificatePem): Self = this.set("caCertificate", value.asInstanceOf[js.Any])
+    def setRegistrationConfig(value: RegistrationConfig): Self = StObject.set(x, "registrationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerificationCertificate(value: CertificatePem): Self = this.set("verificationCertificate", value.asInstanceOf[js.Any])
+    def setRegistrationConfigUndefined: Self = StObject.set(x, "registrationConfig", js.undefined)
     
     @scala.inline
-    def setAllowAutoRegistration(value: AllowAutoRegistration): Self = this.set("allowAutoRegistration", value.asInstanceOf[js.Any])
+    def setSetAsActive(value: SetAsActive): Self = StObject.set(x, "setAsActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowAutoRegistration: Self = this.set("allowAutoRegistration", js.undefined)
+    def setSetAsActiveUndefined: Self = StObject.set(x, "setAsActive", js.undefined)
     
     @scala.inline
-    def setRegistrationConfig(value: RegistrationConfig): Self = this.set("registrationConfig", value.asInstanceOf[js.Any])
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegistrationConfig: Self = this.set("registrationConfig", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setSetAsActive(value: SetAsActive): Self = this.set("setAsActive", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def deleteSetAsActive: Self = this.set("setAsActive", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setVerificationCertificate(value: CertificatePem): Self = StObject.set(x, "verificationCertificate", value.asInstanceOf[js.Any])
   }
 }

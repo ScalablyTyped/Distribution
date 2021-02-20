@@ -1,12 +1,13 @@
 package typings.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient", "SettingMonitor")
 @js.native
-class SettingMonitor protected () extends js.Object {
+class SettingMonitor protected () extends StObject {
   def this(_client: LanguageClient, _setting: String) = this()
   
   var _client: js.Any = js.native

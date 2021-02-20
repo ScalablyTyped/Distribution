@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.form
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,24 +41,12 @@ object XDeleteListener {
   }
   
   @scala.inline
-  implicit class XDeleteListenerOps[Self <: XDeleteListener] (val x: Self) extends AnyVal {
+  implicit class XDeleteListenerMutableBuilder[Self <: XDeleteListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproveDelete(value: EventObject => Boolean): Self = StObject.set(x, "approveDelete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApproveDelete(value: EventObject => Boolean): Self = this.set("approveDelete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDeleted(value: EventObject => Unit): Self = this.set("deleted", js.Any.fromFunction1(value))
+    def setDeleted(value: EventObject => Unit): Self = StObject.set(x, "deleted", js.Any.fromFunction1(value))
   }
 }

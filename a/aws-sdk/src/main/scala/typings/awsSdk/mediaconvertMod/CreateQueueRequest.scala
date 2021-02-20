@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateQueueRequest extends js.Object {
+trait CreateQueueRequest extends StObject {
   
   /**
     * Optional. A description of the queue that you are creating.
@@ -46,51 +47,39 @@ object CreateQueueRequest {
   }
   
   @scala.inline
-  implicit class CreateQueueRequestOps[Self <: CreateQueueRequest] (val x: Self) extends AnyVal {
+  implicit class CreateQueueRequestMutableBuilder[Self <: CreateQueueRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPricingPlan(value: PricingPlan): Self = StObject.set(x, "PricingPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setPricingPlanUndefined: Self = StObject.set(x, "PricingPlan", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setReservationPlanSettings(value: ReservationPlanSettings): Self = StObject.set(x, "ReservationPlanSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingPlan(value: PricingPlan): Self = this.set("PricingPlan", value.asInstanceOf[js.Any])
+    def setReservationPlanSettingsUndefined: Self = StObject.set(x, "ReservationPlanSettings", js.undefined)
     
     @scala.inline
-    def deletePricingPlan: Self = this.set("PricingPlan", js.undefined)
+    def setStatus(value: QueueStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservationPlanSettings(value: ReservationPlanSettings): Self = this.set("ReservationPlanSettings", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteReservationPlanSettings: Self = this.set("ReservationPlanSettings", js.undefined)
+    def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: QueueStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

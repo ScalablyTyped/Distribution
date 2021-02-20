@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/PhoneAndroidFontIcon", JSImport.Namespace)
-@js.native
-object phoneAndroidFontIconMod extends js.Object {
+object phoneAndroidFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/PhoneAndroidFontIcon", "PhoneAndroidFontIcon")
+  @js.native
   val PhoneAndroidFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

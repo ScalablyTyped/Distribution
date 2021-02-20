@@ -2,12 +2,13 @@ package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.ui.dxButtonGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemovedItems extends js.Object {
+trait RemovedItems extends StObject {
   
   var addedItems: js.UndefOr[js.Array[_]] = js.native
   
@@ -28,54 +29,42 @@ object RemovedItems {
   }
   
   @scala.inline
-  implicit class RemovedItemsOps[Self <: RemovedItems] (val x: Self) extends AnyVal {
+  implicit class RemovedItemsMutableBuilder[Self <: RemovedItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddedItems(value: js.Array[_]): Self = StObject.set(x, "addedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedItemsUndefined: Self = StObject.set(x, "addedItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddedItemsVarargs(value: js.Any*): Self = StObject.set(x, "addedItems", js.Array(value :_*))
     
     @scala.inline
-    def setAddedItemsVarargs(value: js.Any*): Self = this.set("addedItems", js.Array(value :_*))
+    def setComponent(value: dxButtonGroup): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedItems(value: js.Array[_]): Self = this.set("addedItems", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def deleteAddedItems: Self = this.set("addedItems", js.undefined)
+    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: dxButtonGroup): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setRemovedItems(value: js.Array[_]): Self = StObject.set(x, "removedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setRemovedItemsUndefined: Self = StObject.set(x, "removedItems", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
-    
-    @scala.inline
-    def setRemovedItemsVarargs(value: js.Any*): Self = this.set("removedItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemovedItems(value: js.Array[_]): Self = this.set("removedItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemovedItems: Self = this.set("removedItems", js.undefined)
+    def setRemovedItemsVarargs(value: js.Any*): Self = StObject.set(x, "removedItems", js.Array(value :_*))
   }
 }

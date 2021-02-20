@@ -1,14 +1,14 @@
 package typings.babylonjs
 
 import typings.babylonjs.shaderDefineExpressionMod.ShaderDefineExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Engines/Processors/Expressions/Operators/shaderDefineArithmeticOperator", JSImport.Namespace)
-@js.native
-object shaderDefineArithmeticOperatorMod extends js.Object {
+object shaderDefineArithmeticOperatorMod {
   
+  @JSImport("babylonjs/Engines/Processors/Expressions/Operators/shaderDefineArithmeticOperator", "ShaderDefineArithmeticOperator")
   @js.native
   class ShaderDefineArithmeticOperator protected () extends ShaderDefineExpression {
     def this(define: String, operand: String, testValue: String) = this()

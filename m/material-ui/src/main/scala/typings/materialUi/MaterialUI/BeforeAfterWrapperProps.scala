@@ -1,12 +1,13 @@
 package typings.materialUi.MaterialUI
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BeforeAfterWrapperProps extends js.Object {
+trait BeforeAfterWrapperProps extends StObject {
   
   var afterElementType: js.UndefOr[String] = js.native
   
@@ -29,54 +30,42 @@ object BeforeAfterWrapperProps {
   }
   
   @scala.inline
-  implicit class BeforeAfterWrapperPropsOps[Self <: BeforeAfterWrapperProps] (val x: Self) extends AnyVal {
+  implicit class BeforeAfterWrapperPropsMutableBuilder[Self <: BeforeAfterWrapperProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterElementType(value: String): Self = StObject.set(x, "afterElementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterElementTypeUndefined: Self = StObject.set(x, "afterElementType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterStyle(value: CSSProperties): Self = StObject.set(x, "afterStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterElementType(value: String): Self = this.set("afterElementType", value.asInstanceOf[js.Any])
+    def setAfterStyleUndefined: Self = StObject.set(x, "afterStyle", js.undefined)
     
     @scala.inline
-    def deleteAfterElementType: Self = this.set("afterElementType", js.undefined)
+    def setBeforeElementType(value: String): Self = StObject.set(x, "beforeElementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterStyle(value: CSSProperties): Self = this.set("afterStyle", value.asInstanceOf[js.Any])
+    def setBeforeElementTypeUndefined: Self = StObject.set(x, "beforeElementType", js.undefined)
     
     @scala.inline
-    def deleteAfterStyle: Self = this.set("afterStyle", js.undefined)
+    def setBeforeStyle(value: CSSProperties): Self = StObject.set(x, "beforeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeElementType(value: String): Self = this.set("beforeElementType", value.asInstanceOf[js.Any])
+    def setBeforeStyleUndefined: Self = StObject.set(x, "beforeStyle", js.undefined)
     
     @scala.inline
-    def deleteBeforeElementType: Self = this.set("beforeElementType", js.undefined)
+    def setElementType(value: String): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeStyle(value: CSSProperties): Self = this.set("beforeStyle", value.asInstanceOf[js.Any])
+    def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
     
     @scala.inline
-    def deleteBeforeStyle: Self = this.set("beforeStyle", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementType(value: String): Self = this.set("elementType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElementType: Self = this.set("elementType", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

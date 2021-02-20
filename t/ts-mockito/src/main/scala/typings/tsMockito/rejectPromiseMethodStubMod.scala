@@ -3,14 +3,14 @@ package typings.tsMockito
 import typings.tsMockito.abstractMethodStubMod.AbstractMethodStub
 import typings.tsMockito.matcherMod.Matcher
 import typings.tsMockito.methodStubMod.MethodStub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-mockito/lib/stub/RejectPromiseMethodStub", JSImport.Namespace)
-@js.native
-object rejectPromiseMethodStubMod extends js.Object {
+object rejectPromiseMethodStubMod {
   
+  @JSImport("ts-mockito/lib/stub/RejectPromiseMethodStub", "RejectPromiseMethodStub")
   @js.native
   class RejectPromiseMethodStub protected ()
     extends AbstractMethodStub

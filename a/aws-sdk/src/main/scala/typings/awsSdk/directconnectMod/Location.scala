@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Location extends js.Object {
+trait Location extends StObject {
   
   /**
     * The available port speeds for the location.
@@ -41,54 +42,42 @@ object Location {
   }
   
   @scala.inline
-  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailablePortSpeeds(value: AvailablePortSpeeds): Self = StObject.set(x, "availablePortSpeeds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailablePortSpeedsUndefined: Self = StObject.set(x, "availablePortSpeeds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailablePortSpeedsVarargs(value: PortSpeed*): Self = StObject.set(x, "availablePortSpeeds", js.Array(value :_*))
     
     @scala.inline
-    def setAvailablePortSpeedsVarargs(value: PortSpeed*): Self = this.set("availablePortSpeeds", js.Array(value :_*))
+    def setAvailableProviders(value: ProviderList): Self = StObject.set(x, "availableProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailablePortSpeeds(value: AvailablePortSpeeds): Self = this.set("availablePortSpeeds", value.asInstanceOf[js.Any])
+    def setAvailableProvidersUndefined: Self = StObject.set(x, "availableProviders", js.undefined)
     
     @scala.inline
-    def deleteAvailablePortSpeeds: Self = this.set("availablePortSpeeds", js.undefined)
+    def setAvailableProvidersVarargs(value: ProviderName*): Self = StObject.set(x, "availableProviders", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableProvidersVarargs(value: ProviderName*): Self = this.set("availableProviders", js.Array(value :_*))
+    def setLocationCode(value: LocationCode): Self = StObject.set(x, "locationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableProviders(value: ProviderList): Self = this.set("availableProviders", value.asInstanceOf[js.Any])
+    def setLocationCodeUndefined: Self = StObject.set(x, "locationCode", js.undefined)
     
     @scala.inline
-    def deleteAvailableProviders: Self = this.set("availableProviders", js.undefined)
+    def setLocationName(value: LocationName): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationCode(value: LocationCode): Self = this.set("locationCode", value.asInstanceOf[js.Any])
+    def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
     
     @scala.inline
-    def deleteLocationCode: Self = this.set("locationCode", js.undefined)
+    def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationName(value: LocationName): Self = this.set("locationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationName: Self = this.set("locationName", js.undefined)
-    
-    @scala.inline
-    def setRegion(value: Region): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

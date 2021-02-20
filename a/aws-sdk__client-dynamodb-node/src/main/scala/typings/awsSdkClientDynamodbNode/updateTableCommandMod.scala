@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbNode.typesUpdateTableInputMod.UpdateTableInpu
 import typings.awsSdkClientDynamodbNode.typesUpdateTableOutputMod.UpdateTableOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-node/commands/UpdateTableCommand", JSImport.Namespace)
-@js.native
-object updateTableCommandMod extends js.Object {
+object updateTableCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-node/commands/UpdateTableCommand", "UpdateTableCommand")
   @js.native
   class UpdateTableCommand protected () extends Command[
           InputTypesUnion, 

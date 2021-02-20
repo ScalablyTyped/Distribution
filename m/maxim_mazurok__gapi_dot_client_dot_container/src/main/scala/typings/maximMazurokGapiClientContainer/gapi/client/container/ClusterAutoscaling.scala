@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterAutoscaling extends js.Object {
+trait ClusterAutoscaling extends StObject {
   
   /** The list of Google Compute Engine [zones](https://cloud.google.com/compute/docs/zones#available) in which the NodePool's nodes can be created by NAP. */
   var autoprovisioningLocations: js.UndefOr[js.Array[String]] = js.native
@@ -28,48 +29,36 @@ object ClusterAutoscaling {
   }
   
   @scala.inline
-  implicit class ClusterAutoscalingOps[Self <: ClusterAutoscaling] (val x: Self) extends AnyVal {
+  implicit class ClusterAutoscalingMutableBuilder[Self <: ClusterAutoscaling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoprovisioningLocations(value: js.Array[String]): Self = StObject.set(x, "autoprovisioningLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoprovisioningLocationsUndefined: Self = StObject.set(x, "autoprovisioningLocations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoprovisioningLocationsVarargs(value: String*): Self = StObject.set(x, "autoprovisioningLocations", js.Array(value :_*))
     
     @scala.inline
-    def setAutoprovisioningLocationsVarargs(value: String*): Self = this.set("autoprovisioningLocations", js.Array(value :_*))
+    def setAutoprovisioningNodePoolDefaults(value: AutoprovisioningNodePoolDefaults): Self = StObject.set(x, "autoprovisioningNodePoolDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoprovisioningLocations(value: js.Array[String]): Self = this.set("autoprovisioningLocations", value.asInstanceOf[js.Any])
+    def setAutoprovisioningNodePoolDefaultsUndefined: Self = StObject.set(x, "autoprovisioningNodePoolDefaults", js.undefined)
     
     @scala.inline
-    def deleteAutoprovisioningLocations: Self = this.set("autoprovisioningLocations", js.undefined)
+    def setEnableNodeAutoprovisioning(value: Boolean): Self = StObject.set(x, "enableNodeAutoprovisioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoprovisioningNodePoolDefaults(value: AutoprovisioningNodePoolDefaults): Self = this.set("autoprovisioningNodePoolDefaults", value.asInstanceOf[js.Any])
+    def setEnableNodeAutoprovisioningUndefined: Self = StObject.set(x, "enableNodeAutoprovisioning", js.undefined)
     
     @scala.inline
-    def deleteAutoprovisioningNodePoolDefaults: Self = this.set("autoprovisioningNodePoolDefaults", js.undefined)
+    def setResourceLimits(value: js.Array[ResourceLimit]): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableNodeAutoprovisioning(value: Boolean): Self = this.set("enableNodeAutoprovisioning", value.asInstanceOf[js.Any])
+    def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
     
     @scala.inline
-    def deleteEnableNodeAutoprovisioning: Self = this.set("enableNodeAutoprovisioning", js.undefined)
-    
-    @scala.inline
-    def setResourceLimitsVarargs(value: ResourceLimit*): Self = this.set("resourceLimits", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceLimits(value: js.Array[ResourceLimit]): Self = this.set("resourceLimits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceLimits: Self = this.set("resourceLimits", js.undefined)
+    def setResourceLimitsVarargs(value: ResourceLimit*): Self = StObject.set(x, "resourceLimits", js.Array(value :_*))
   }
 }

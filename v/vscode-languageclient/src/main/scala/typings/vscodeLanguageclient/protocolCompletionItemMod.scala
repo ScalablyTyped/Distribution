@@ -2,13 +2,18 @@ package typings.vscodeLanguageclient
 
 import typings.vscode.mod.CompletionItem
 import typings.vscodeLanguageserverTypes.mod.CompletionItemKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient/lib/protocolCompletionItem", JSImport.Namespace)
-@js.native
-object protocolCompletionItemMod extends js.Object {
+object protocolCompletionItemMod {
+  
+  @JSImport("vscode-languageclient/lib/protocolCompletionItem", JSImport.Default)
+  @js.native
+  class default protected () extends ProtocolCompletionItem {
+    def this(label: String) = this()
+  }
   
   @js.native
   trait ProtocolCompletionItem extends CompletionItem {
@@ -22,10 +27,5 @@ object protocolCompletionItemMod extends js.Object {
     var fromEdit: Boolean = js.native
     
     var originalItemKind: CompletionItemKind = js.native
-  }
-  
-  @js.native
-  class default protected () extends ProtocolCompletionItem {
-    def this(label: String) = this()
   }
 }

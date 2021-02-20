@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Search extends js.Object {
+trait Search extends StObject {
   
   /**
     * Searches for `options.needle`. If found, this method returns the [[Range `Range`]] where the text first occurs. If `options.backwards` is `true`, the search goes backwards in the session.
@@ -61,36 +62,24 @@ object Search {
   }
   
   @scala.inline
-  implicit class SearchOps[Self <: Search] (val x: Self) extends AnyVal {
+  implicit class SearchMutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFind(value: IEditSession => Range): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindAll(value: IEditSession => js.Array[Range]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOptions(value: () => js.Any): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFind(value: IEditSession => Range): Self = this.set("find", js.Any.fromFunction1(value))
+    def setReplace(value: (String, String) => String): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFindAll(value: IEditSession => js.Array[Range]): Self = this.set("findAll", js.Any.fromFunction1(value))
+    def setSet(value: js.Any => Search): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOptions(value: () => js.Any): Self = this.set("getOptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReplace(value: (String, String) => String): Self = this.set("replace", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSet(value: js.Any => Search): Self = this.set("set", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOptions(value: js.Any => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
+    def setSetOptions(value: js.Any => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

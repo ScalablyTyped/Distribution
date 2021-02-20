@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryConfiguration extends js.Object {
+trait InventoryConfiguration extends StObject {
   
   /**
     * Contains information about where to publish the inventory results.
@@ -57,48 +58,36 @@ object InventoryConfiguration {
   }
   
   @scala.inline
-  implicit class InventoryConfigurationOps[Self <: InventoryConfiguration] (val x: Self) extends AnyVal {
+  implicit class InventoryConfigurationMutableBuilder[Self <: InventoryConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: InventoryDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilter(value: InventoryFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def setDestination(value: InventoryDestination): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    def setId(value: InventoryId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: InventoryId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setIncludedObjectVersions(value: InventoryIncludedObjectVersions): Self = StObject.set(x, "IncludedObjectVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedObjectVersions(value: InventoryIncludedObjectVersions): Self = this.set("IncludedObjectVersions", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: IsEnabled): Self = this.set("IsEnabled", value.asInstanceOf[js.Any])
+    def setOptionalFields(value: InventoryOptionalFields): Self = StObject.set(x, "OptionalFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: InventorySchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setOptionalFieldsUndefined: Self = StObject.set(x, "OptionalFields", js.undefined)
     
     @scala.inline
-    def setFilter(value: InventoryFilter): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setOptionalFieldsVarargs(value: InventoryOptionalField*): Self = StObject.set(x, "OptionalFields", js.Array(value :_*))
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
-    
-    @scala.inline
-    def setOptionalFieldsVarargs(value: InventoryOptionalField*): Self = this.set("OptionalFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setOptionalFields(value: InventoryOptionalFields): Self = this.set("OptionalFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionalFields: Self = this.set("OptionalFields", js.undefined)
+    def setSchedule(value: InventorySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
   }
 }

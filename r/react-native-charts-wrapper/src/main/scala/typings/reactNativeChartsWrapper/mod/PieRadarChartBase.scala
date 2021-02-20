@@ -1,5 +1,6 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object PieRadarChartBase {
   }
   
   @scala.inline
-  implicit class PieRadarChartBaseOps[Self <: PieRadarChartBase] (val x: Self) extends AnyVal {
+  implicit class PieRadarChartBaseMutableBuilder[Self <: PieRadarChartBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinOffset(value: Double): Self = StObject.set(x, "minOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinOffsetUndefined: Self = StObject.set(x, "minOffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinOffset(value: Double): Self = this.set("minOffset", value.asInstanceOf[js.Any])
+    def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
     
     @scala.inline
-    def deleteMinOffset: Self = this.set("minOffset", js.undefined)
+    def setRotationEnabled(value: Boolean): Self = StObject.set(x, "rotationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationAngle(value: Double): Self = this.set("rotationAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationAngle: Self = this.set("rotationAngle", js.undefined)
-    
-    @scala.inline
-    def setRotationEnabled(value: Boolean): Self = this.set("rotationEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationEnabled: Self = this.set("rotationEnabled", js.undefined)
+    def setRotationEnabledUndefined: Self = StObject.set(x, "rotationEnabled", js.undefined)
   }
 }

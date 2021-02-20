@@ -1,12 +1,13 @@
 package typings.jsprintmanager.mod.JSPM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsprintmanager", "JSPM.ClientPrintJobGroup")
 @js.native
-class ClientPrintJobGroup () extends js.Object {
+class ClientPrintJobGroup () extends StObject {
   
   /* private */ def _generateDataAsync(): js.Any = js.native
   

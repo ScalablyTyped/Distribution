@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Outline extends js.Object {
+trait Outline extends StObject {
   
   /** The dash style of the outline. */
   var dashStyle: js.UndefOr[String] = js.native
@@ -31,42 +32,30 @@ object Outline {
   }
   
   @scala.inline
-  implicit class OutlineOps[Self <: Outline] (val x: Self) extends AnyVal {
+  implicit class OutlineMutableBuilder[Self <: Outline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutlineFill(value: OutlineFill): Self = StObject.set(x, "outlineFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashStyle(value: String): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    def setOutlineFillUndefined: Self = StObject.set(x, "outlineFill", js.undefined)
     
     @scala.inline
-    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineFill(value: OutlineFill): Self = this.set("outlineFill", value.asInstanceOf[js.Any])
+    def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
     
     @scala.inline
-    def deleteOutlineFill: Self = this.set("outlineFill", js.undefined)
+    def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyState(value: String): Self = this.set("propertyState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyState: Self = this.set("propertyState", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: Dimension): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

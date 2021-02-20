@@ -2,16 +2,17 @@ package typings.popperjsCore
 
 import typings.popperjsCore.popperjsCoreStrings.height
 import typings.popperjsCore.popperjsCoreStrings.width
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@popperjs/core/lib/utils/getAltLen", JSImport.Namespace)
-@js.native
-object getAltLenMod extends js.Object {
+object getAltLenMod {
   
-  @JSName("default")
+  @JSImport("@popperjs/core/lib/utils/getAltLen", JSImport.Default)
+  @js.native
   def default_height(len: height): width | height = js.native
-  @JSName("default")
+  @JSImport("@popperjs/core/lib/utils/getAltLen", JSImport.Default)
+  @js.native
   def default_width(len: width): width | height = js.native
 }

@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_OFF
   - typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_EXPR
 */
-trait TotalModeType extends js.Object
+trait TotalModeType extends StObject
 object TotalModeType {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is updated.
   */
 @js.native
-trait SchemaGcsData extends js.Object {
+trait SchemaGcsData extends StObject {
   
   /**
     * Google Cloud Storage bucket name (see [Bucket Name
@@ -29,24 +30,12 @@ object SchemaGcsData {
   }
   
   @scala.inline
-  implicit class SchemaGcsDataOps[Self <: SchemaGcsData] (val x: Self) extends AnyVal {
+  implicit class SchemaGcsDataMutableBuilder[Self <: SchemaGcsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
   }
 }

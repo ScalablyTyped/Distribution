@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * property on the ImageProcess object for details on accessing FilterInfo objects.
   */
 @js.native
-trait FilterInfo extends js.Object {
+trait FilterInfo extends StObject {
   
   /** Returns a technical Description of what the filter does and how to use it in a filter chain */
   val Description: String = js.native
@@ -33,30 +34,18 @@ object FilterInfo {
   }
   
   @scala.inline
-  implicit class FilterInfoOps[Self <: FilterInfo] (val x: Self) extends AnyVal {
+  implicit class FilterInfoMutableBuilder[Self <: FilterInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterID(value: String): Self = StObject.set(x, "FilterID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilterID(value: String): Self = this.set("FilterID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIADotFilterInfo_typekey(value: FilterInfo): Self = this.set("WIA.FilterInfo_typekey", value.asInstanceOf[js.Any])
+    def setWIADotFilterInfo_typekey(value: FilterInfo): Self = StObject.set(x, "WIA.FilterInfo_typekey", value.asInstanceOf[js.Any])
   }
 }

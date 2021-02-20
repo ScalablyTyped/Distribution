@@ -1,5 +1,6 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,72 +75,60 @@ object MeshAttachment {
   }
   
   @scala.inline
-  implicit class MeshAttachmentOps[Self <: MeshAttachment] (val x: Self) extends AnyVal {
+  implicit class MeshAttachmentMutableBuilder[Self <: MeshAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdges(value: js.Array[Double]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdgesVarargs(value: Double*): Self = StObject.set(x, "edges", js.Array(value :_*))
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setGetParentMesh(value: () => MeshAttachment): Self = StObject.set(x, "getParentMesh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEdgesVarargs(value: Double*): Self = this.set("edges", js.Array(value :_*))
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdges(value: js.Array[Double]): Self = this.set("edges", value.asInstanceOf[js.Any])
+    def setHullLength(value: Double): Self = StObject.set(x, "hullLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetParentMesh(value: () => MeshAttachment): Self = this.set("getParentMesh", js.Any.fromFunction0(value))
+    def setNewLinkedMesh(value: () => MeshAttachment): Self = StObject.set(x, "newLinkedMesh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setParentMesh(value: js.Any): Self = StObject.set(x, "parentMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHullLength(value: Double): Self = this.set("hullLength", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLinkedMesh(value: () => MeshAttachment): Self = this.set("newLinkedMesh", js.Any.fromFunction0(value))
+    def setRegion(value: TextureRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentMesh(value: js.Any): Self = this.set("parentMesh", value.asInstanceOf[js.Any])
+    def setRegionUVs(value: ArrayLike[Double]): Self = StObject.set(x, "regionUVs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSetParentMesh(value: MeshAttachment => Unit): Self = StObject.set(x, "setParentMesh", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegion(value: TextureRegion): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setTempColor(value: Color): Self = StObject.set(x, "tempColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionUVs(value: ArrayLike[Double]): Self = this.set("regionUVs", value.asInstanceOf[js.Any])
+    def setTriangles(value: js.Array[Double]): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetParentMesh(value: MeshAttachment => Unit): Self = this.set("setParentMesh", js.Any.fromFunction1(value))
+    def setTrianglesVarargs(value: Double*): Self = StObject.set(x, "triangles", js.Array(value :_*))
     
     @scala.inline
-    def setTempColor(value: Color): Self = this.set("tempColor", value.asInstanceOf[js.Any])
+    def setUpdateUVs(value: () => Unit): Self = StObject.set(x, "updateUVs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTrianglesVarargs(value: Double*): Self = this.set("triangles", js.Array(value :_*))
+    def setUvs(value: ArrayLike[Double]): Self = StObject.set(x, "uvs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriangles(value: js.Array[Double]): Self = this.set("triangles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateUVs(value: () => Unit): Self = this.set("updateUVs", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUvs(value: ArrayLike[Double]): Self = this.set("uvs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,96 +43,84 @@ object PieChartProps {
   }
   
   @scala.inline
-  implicit class PieChartPropsOps[Self <: PieChartProps] (val x: Self) extends AnyVal {
+  implicit class PieChartPropsMutableBuilder[Self <: PieChartProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterText(value: String): Self = StObject.set(x, "centerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterTextRadiusPercent(value: Double): Self = StObject.set(x, "centerTextRadiusPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenterTextRadiusPercentUndefined: Self = StObject.set(x, "centerTextRadiusPercent", js.undefined)
     
     @scala.inline
-    def setCenterText(value: String): Self = this.set("centerText", value.asInstanceOf[js.Any])
+    def setCenterTextUndefined: Self = StObject.set(x, "centerText", js.undefined)
     
     @scala.inline
-    def deleteCenterText: Self = this.set("centerText", js.undefined)
+    def setData(value: PieData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterTextRadiusPercent(value: Double): Self = this.set("centerTextRadiusPercent", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCenterTextRadiusPercent: Self = this.set("centerTextRadiusPercent", js.undefined)
+    def setDrawEntryLabels(value: Boolean): Self = StObject.set(x, "drawEntryLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: PieData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDrawEntryLabelsUndefined: Self = StObject.set(x, "drawEntryLabels", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEntryLabelColor(value: Color): Self = StObject.set(x, "entryLabelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawEntryLabels(value: Boolean): Self = this.set("drawEntryLabels", value.asInstanceOf[js.Any])
+    def setEntryLabelColorUndefined: Self = StObject.set(x, "entryLabelColor", js.undefined)
     
     @scala.inline
-    def deleteDrawEntryLabels: Self = this.set("drawEntryLabels", js.undefined)
+    def setEntryLabelTextSize(value: Double): Self = StObject.set(x, "entryLabelTextSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryLabelColor(value: Color): Self = this.set("entryLabelColor", value.asInstanceOf[js.Any])
+    def setEntryLabelTextSizeUndefined: Self = StObject.set(x, "entryLabelTextSize", js.undefined)
     
     @scala.inline
-    def deleteEntryLabelColor: Self = this.set("entryLabelColor", js.undefined)
+    def setHoleColor(value: Color): Self = StObject.set(x, "holeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryLabelTextSize(value: Double): Self = this.set("entryLabelTextSize", value.asInstanceOf[js.Any])
+    def setHoleColorUndefined: Self = StObject.set(x, "holeColor", js.undefined)
     
     @scala.inline
-    def deleteEntryLabelTextSize: Self = this.set("entryLabelTextSize", js.undefined)
+    def setHoleRadius(value: Double): Self = StObject.set(x, "holeRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoleColor(value: Color): Self = this.set("holeColor", value.asInstanceOf[js.Any])
+    def setHoleRadiusUndefined: Self = StObject.set(x, "holeRadius", js.undefined)
     
     @scala.inline
-    def deleteHoleColor: Self = this.set("holeColor", js.undefined)
+    def setMaxAngle(value: Double): Self = StObject.set(x, "maxAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoleRadius(value: Double): Self = this.set("holeRadius", value.asInstanceOf[js.Any])
+    def setMaxAngleUndefined: Self = StObject.set(x, "maxAngle", js.undefined)
     
     @scala.inline
-    def deleteHoleRadius: Self = this.set("holeRadius", js.undefined)
+    def setStyledCenterText(value: typings.reactNativeChartsWrapper.anon.Color): Self = StObject.set(x, "styledCenterText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAngle(value: Double): Self = this.set("maxAngle", value.asInstanceOf[js.Any])
+    def setStyledCenterTextUndefined: Self = StObject.set(x, "styledCenterText", js.undefined)
     
     @scala.inline
-    def deleteMaxAngle: Self = this.set("maxAngle", js.undefined)
+    def setTransparentCircleColor(value: Color): Self = StObject.set(x, "transparentCircleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyledCenterText(value: typings.reactNativeChartsWrapper.anon.Color): Self = this.set("styledCenterText", value.asInstanceOf[js.Any])
+    def setTransparentCircleColorUndefined: Self = StObject.set(x, "transparentCircleColor", js.undefined)
     
     @scala.inline
-    def deleteStyledCenterText: Self = this.set("styledCenterText", js.undefined)
+    def setTransparentCircleRadius(value: Double): Self = StObject.set(x, "transparentCircleRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparentCircleColor(value: Color): Self = this.set("transparentCircleColor", value.asInstanceOf[js.Any])
+    def setTransparentCircleRadiusUndefined: Self = StObject.set(x, "transparentCircleRadius", js.undefined)
     
     @scala.inline
-    def deleteTransparentCircleColor: Self = this.set("transparentCircleColor", js.undefined)
+    def setUsePercentValues(value: Boolean): Self = StObject.set(x, "usePercentValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparentCircleRadius(value: Double): Self = this.set("transparentCircleRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransparentCircleRadius: Self = this.set("transparentCircleRadius", js.undefined)
-    
-    @scala.inline
-    def setUsePercentValues(value: Boolean): Self = this.set("usePercentValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePercentValues: Self = this.set("usePercentValues", js.undefined)
+    def setUsePercentValuesUndefined: Self = StObject.set(x, "usePercentValues", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.paper.paper
 
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * screen.
   */
 @js.native
-trait View extends js.Object {
+trait View extends StObject {
   
   /** 
     * Controls whether the view is automatically updated in the next animation

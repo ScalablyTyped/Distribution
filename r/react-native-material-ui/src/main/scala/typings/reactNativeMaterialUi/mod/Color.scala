@@ -1,11 +1,12 @@
 package typings.reactNativeMaterialUi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Color extends js.Object {
+trait Color extends StObject {
   
   var amber100: String = js.native
   
@@ -787,792 +788,780 @@ object Color {
   }
   
   @scala.inline
-  implicit class ColorOps[Self <: Color] (val x: Self) extends AnyVal {
+  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmber100(value: String): Self = StObject.set(x, "amber100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmber200(value: String): Self = StObject.set(x, "amber200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmber300(value: String): Self = StObject.set(x, "amber300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmber100(value: String): Self = this.set("amber100", value.asInstanceOf[js.Any])
+    def setAmber400(value: String): Self = StObject.set(x, "amber400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmber200(value: String): Self = this.set("amber200", value.asInstanceOf[js.Any])
+    def setAmber50(value: String): Self = StObject.set(x, "amber50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmber300(value: String): Self = this.set("amber300", value.asInstanceOf[js.Any])
+    def setAmber500(value: String): Self = StObject.set(x, "amber500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmber400(value: String): Self = this.set("amber400", value.asInstanceOf[js.Any])
+    def setAmber600(value: String): Self = StObject.set(x, "amber600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmber50(value: String): Self = this.set("amber50", value.asInstanceOf[js.Any])
+    def setAmber700(value: String): Self = StObject.set(x, "amber700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmber500(value: String): Self = this.set("amber500", value.asInstanceOf[js.Any])
+    def setAmber800(value: String): Self = StObject.set(x, "amber800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmber600(value: String): Self = this.set("amber600", value.asInstanceOf[js.Any])
+    def setAmber900(value: String): Self = StObject.set(x, "amber900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmber700(value: String): Self = this.set("amber700", value.asInstanceOf[js.Any])
+    def setAmberA100(value: String): Self = StObject.set(x, "amberA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmber800(value: String): Self = this.set("amber800", value.asInstanceOf[js.Any])
+    def setAmberA200(value: String): Self = StObject.set(x, "amberA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmber900(value: String): Self = this.set("amber900", value.asInstanceOf[js.Any])
+    def setAmberA400(value: String): Self = StObject.set(x, "amberA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmberA100(value: String): Self = this.set("amberA100", value.asInstanceOf[js.Any])
+    def setAmberA700(value: String): Self = StObject.set(x, "amberA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmberA200(value: String): Self = this.set("amberA200", value.asInstanceOf[js.Any])
+    def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmberA400(value: String): Self = this.set("amberA400", value.asInstanceOf[js.Any])
+    def setBlue100(value: String): Self = StObject.set(x, "blue100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmberA700(value: String): Self = this.set("amberA700", value.asInstanceOf[js.Any])
+    def setBlue200(value: String): Self = StObject.set(x, "blue200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlack(value: String): Self = this.set("black", value.asInstanceOf[js.Any])
+    def setBlue300(value: String): Self = StObject.set(x, "blue300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue100(value: String): Self = this.set("blue100", value.asInstanceOf[js.Any])
+    def setBlue400(value: String): Self = StObject.set(x, "blue400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue200(value: String): Self = this.set("blue200", value.asInstanceOf[js.Any])
+    def setBlue50(value: String): Self = StObject.set(x, "blue50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue300(value: String): Self = this.set("blue300", value.asInstanceOf[js.Any])
+    def setBlue500(value: String): Self = StObject.set(x, "blue500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue400(value: String): Self = this.set("blue400", value.asInstanceOf[js.Any])
+    def setBlue600(value: String): Self = StObject.set(x, "blue600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue50(value: String): Self = this.set("blue50", value.asInstanceOf[js.Any])
+    def setBlue700(value: String): Self = StObject.set(x, "blue700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue500(value: String): Self = this.set("blue500", value.asInstanceOf[js.Any])
+    def setBlue800(value: String): Self = StObject.set(x, "blue800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue600(value: String): Self = this.set("blue600", value.asInstanceOf[js.Any])
+    def setBlue900(value: String): Self = StObject.set(x, "blue900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue700(value: String): Self = this.set("blue700", value.asInstanceOf[js.Any])
+    def setBlueA100(value: String): Self = StObject.set(x, "blueA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue800(value: String): Self = this.set("blue800", value.asInstanceOf[js.Any])
+    def setBlueA200(value: String): Self = StObject.set(x, "blueA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue900(value: String): Self = this.set("blue900", value.asInstanceOf[js.Any])
+    def setBlueA400(value: String): Self = StObject.set(x, "blueA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueA100(value: String): Self = this.set("blueA100", value.asInstanceOf[js.Any])
+    def setBlueA700(value: String): Self = StObject.set(x, "blueA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueA200(value: String): Self = this.set("blueA200", value.asInstanceOf[js.Any])
+    def setBlueGrey100(value: String): Self = StObject.set(x, "blueGrey100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueA400(value: String): Self = this.set("blueA400", value.asInstanceOf[js.Any])
+    def setBlueGrey200(value: String): Self = StObject.set(x, "blueGrey200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueA700(value: String): Self = this.set("blueA700", value.asInstanceOf[js.Any])
+    def setBlueGrey300(value: String): Self = StObject.set(x, "blueGrey300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGrey100(value: String): Self = this.set("blueGrey100", value.asInstanceOf[js.Any])
+    def setBlueGrey400(value: String): Self = StObject.set(x, "blueGrey400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGrey200(value: String): Self = this.set("blueGrey200", value.asInstanceOf[js.Any])
+    def setBlueGrey50(value: String): Self = StObject.set(x, "blueGrey50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGrey300(value: String): Self = this.set("blueGrey300", value.asInstanceOf[js.Any])
+    def setBlueGrey500(value: String): Self = StObject.set(x, "blueGrey500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGrey400(value: String): Self = this.set("blueGrey400", value.asInstanceOf[js.Any])
+    def setBlueGrey600(value: String): Self = StObject.set(x, "blueGrey600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGrey50(value: String): Self = this.set("blueGrey50", value.asInstanceOf[js.Any])
+    def setBlueGrey700(value: String): Self = StObject.set(x, "blueGrey700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGrey500(value: String): Self = this.set("blueGrey500", value.asInstanceOf[js.Any])
+    def setBlueGrey800(value: String): Self = StObject.set(x, "blueGrey800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGrey600(value: String): Self = this.set("blueGrey600", value.asInstanceOf[js.Any])
+    def setBlueGrey900(value: String): Self = StObject.set(x, "blueGrey900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGrey700(value: String): Self = this.set("blueGrey700", value.asInstanceOf[js.Any])
+    def setBrown100(value: String): Self = StObject.set(x, "brown100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGrey800(value: String): Self = this.set("blueGrey800", value.asInstanceOf[js.Any])
+    def setBrown200(value: String): Self = StObject.set(x, "brown200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGrey900(value: String): Self = this.set("blueGrey900", value.asInstanceOf[js.Any])
+    def setBrown300(value: String): Self = StObject.set(x, "brown300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrown100(value: String): Self = this.set("brown100", value.asInstanceOf[js.Any])
+    def setBrown400(value: String): Self = StObject.set(x, "brown400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrown200(value: String): Self = this.set("brown200", value.asInstanceOf[js.Any])
+    def setBrown50(value: String): Self = StObject.set(x, "brown50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrown300(value: String): Self = this.set("brown300", value.asInstanceOf[js.Any])
+    def setBrown500(value: String): Self = StObject.set(x, "brown500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrown400(value: String): Self = this.set("brown400", value.asInstanceOf[js.Any])
+    def setBrown600(value: String): Self = StObject.set(x, "brown600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrown50(value: String): Self = this.set("brown50", value.asInstanceOf[js.Any])
+    def setBrown700(value: String): Self = StObject.set(x, "brown700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrown500(value: String): Self = this.set("brown500", value.asInstanceOf[js.Any])
+    def setBrown800(value: String): Self = StObject.set(x, "brown800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrown600(value: String): Self = this.set("brown600", value.asInstanceOf[js.Any])
+    def setBrown900(value: String): Self = StObject.set(x, "brown900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrown700(value: String): Self = this.set("brown700", value.asInstanceOf[js.Any])
+    def setCyan100(value: String): Self = StObject.set(x, "cyan100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrown800(value: String): Self = this.set("brown800", value.asInstanceOf[js.Any])
+    def setCyan200(value: String): Self = StObject.set(x, "cyan200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrown900(value: String): Self = this.set("brown900", value.asInstanceOf[js.Any])
+    def setCyan300(value: String): Self = StObject.set(x, "cyan300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan100(value: String): Self = this.set("cyan100", value.asInstanceOf[js.Any])
+    def setCyan400(value: String): Self = StObject.set(x, "cyan400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan200(value: String): Self = this.set("cyan200", value.asInstanceOf[js.Any])
+    def setCyan50(value: String): Self = StObject.set(x, "cyan50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan300(value: String): Self = this.set("cyan300", value.asInstanceOf[js.Any])
+    def setCyan500(value: String): Self = StObject.set(x, "cyan500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan400(value: String): Self = this.set("cyan400", value.asInstanceOf[js.Any])
+    def setCyan600(value: String): Self = StObject.set(x, "cyan600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan50(value: String): Self = this.set("cyan50", value.asInstanceOf[js.Any])
+    def setCyan700(value: String): Self = StObject.set(x, "cyan700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan500(value: String): Self = this.set("cyan500", value.asInstanceOf[js.Any])
+    def setCyan800(value: String): Self = StObject.set(x, "cyan800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan600(value: String): Self = this.set("cyan600", value.asInstanceOf[js.Any])
+    def setCyan900(value: String): Self = StObject.set(x, "cyan900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan700(value: String): Self = this.set("cyan700", value.asInstanceOf[js.Any])
+    def setCyanA100(value: String): Self = StObject.set(x, "cyanA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan800(value: String): Self = this.set("cyan800", value.asInstanceOf[js.Any])
+    def setCyanA200(value: String): Self = StObject.set(x, "cyanA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan900(value: String): Self = this.set("cyan900", value.asInstanceOf[js.Any])
+    def setCyanA400(value: String): Self = StObject.set(x, "cyanA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyanA100(value: String): Self = this.set("cyanA100", value.asInstanceOf[js.Any])
+    def setCyanA700(value: String): Self = StObject.set(x, "cyanA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyanA200(value: String): Self = this.set("cyanA200", value.asInstanceOf[js.Any])
+    def setDeepOrange100(value: String): Self = StObject.set(x, "deepOrange100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyanA400(value: String): Self = this.set("cyanA400", value.asInstanceOf[js.Any])
+    def setDeepOrange200(value: String): Self = StObject.set(x, "deepOrange200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyanA700(value: String): Self = this.set("cyanA700", value.asInstanceOf[js.Any])
+    def setDeepOrange300(value: String): Self = StObject.set(x, "deepOrange300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrange100(value: String): Self = this.set("deepOrange100", value.asInstanceOf[js.Any])
+    def setDeepOrange400(value: String): Self = StObject.set(x, "deepOrange400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrange200(value: String): Self = this.set("deepOrange200", value.asInstanceOf[js.Any])
+    def setDeepOrange50(value: String): Self = StObject.set(x, "deepOrange50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrange300(value: String): Self = this.set("deepOrange300", value.asInstanceOf[js.Any])
+    def setDeepOrange500(value: String): Self = StObject.set(x, "deepOrange500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrange400(value: String): Self = this.set("deepOrange400", value.asInstanceOf[js.Any])
+    def setDeepOrange600(value: String): Self = StObject.set(x, "deepOrange600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrange50(value: String): Self = this.set("deepOrange50", value.asInstanceOf[js.Any])
+    def setDeepOrange700(value: String): Self = StObject.set(x, "deepOrange700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrange500(value: String): Self = this.set("deepOrange500", value.asInstanceOf[js.Any])
+    def setDeepOrange800(value: String): Self = StObject.set(x, "deepOrange800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrange600(value: String): Self = this.set("deepOrange600", value.asInstanceOf[js.Any])
+    def setDeepOrange900(value: String): Self = StObject.set(x, "deepOrange900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrange700(value: String): Self = this.set("deepOrange700", value.asInstanceOf[js.Any])
+    def setDeepOrangeA100(value: String): Self = StObject.set(x, "deepOrangeA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrange800(value: String): Self = this.set("deepOrange800", value.asInstanceOf[js.Any])
+    def setDeepOrangeA200(value: String): Self = StObject.set(x, "deepOrangeA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrange900(value: String): Self = this.set("deepOrange900", value.asInstanceOf[js.Any])
+    def setDeepOrangeA400(value: String): Self = StObject.set(x, "deepOrangeA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrangeA100(value: String): Self = this.set("deepOrangeA100", value.asInstanceOf[js.Any])
+    def setDeepOrangeA700(value: String): Self = StObject.set(x, "deepOrangeA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrangeA200(value: String): Self = this.set("deepOrangeA200", value.asInstanceOf[js.Any])
+    def setDeepPurple100(value: String): Self = StObject.set(x, "deepPurple100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrangeA400(value: String): Self = this.set("deepOrangeA400", value.asInstanceOf[js.Any])
+    def setDeepPurple200(value: String): Self = StObject.set(x, "deepPurple200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepOrangeA700(value: String): Self = this.set("deepOrangeA700", value.asInstanceOf[js.Any])
+    def setDeepPurple300(value: String): Self = StObject.set(x, "deepPurple300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurple100(value: String): Self = this.set("deepPurple100", value.asInstanceOf[js.Any])
+    def setDeepPurple400(value: String): Self = StObject.set(x, "deepPurple400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurple200(value: String): Self = this.set("deepPurple200", value.asInstanceOf[js.Any])
+    def setDeepPurple50(value: String): Self = StObject.set(x, "deepPurple50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurple300(value: String): Self = this.set("deepPurple300", value.asInstanceOf[js.Any])
+    def setDeepPurple500(value: String): Self = StObject.set(x, "deepPurple500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurple400(value: String): Self = this.set("deepPurple400", value.asInstanceOf[js.Any])
+    def setDeepPurple600(value: String): Self = StObject.set(x, "deepPurple600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurple50(value: String): Self = this.set("deepPurple50", value.asInstanceOf[js.Any])
+    def setDeepPurple700(value: String): Self = StObject.set(x, "deepPurple700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurple500(value: String): Self = this.set("deepPurple500", value.asInstanceOf[js.Any])
+    def setDeepPurple800(value: String): Self = StObject.set(x, "deepPurple800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurple600(value: String): Self = this.set("deepPurple600", value.asInstanceOf[js.Any])
+    def setDeepPurple900(value: String): Self = StObject.set(x, "deepPurple900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurple700(value: String): Self = this.set("deepPurple700", value.asInstanceOf[js.Any])
+    def setDeepPurpleA100(value: String): Self = StObject.set(x, "deepPurpleA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurple800(value: String): Self = this.set("deepPurple800", value.asInstanceOf[js.Any])
+    def setDeepPurpleA200(value: String): Self = StObject.set(x, "deepPurpleA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurple900(value: String): Self = this.set("deepPurple900", value.asInstanceOf[js.Any])
+    def setDeepPurpleA400(value: String): Self = StObject.set(x, "deepPurpleA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurpleA100(value: String): Self = this.set("deepPurpleA100", value.asInstanceOf[js.Any])
+    def setDeepPurpleA700(value: String): Self = StObject.set(x, "deepPurpleA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurpleA200(value: String): Self = this.set("deepPurpleA200", value.asInstanceOf[js.Any])
+    def setGreen100(value: String): Self = StObject.set(x, "green100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurpleA400(value: String): Self = this.set("deepPurpleA400", value.asInstanceOf[js.Any])
+    def setGreen200(value: String): Self = StObject.set(x, "green200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepPurpleA700(value: String): Self = this.set("deepPurpleA700", value.asInstanceOf[js.Any])
+    def setGreen300(value: String): Self = StObject.set(x, "green300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen100(value: String): Self = this.set("green100", value.asInstanceOf[js.Any])
+    def setGreen400(value: String): Self = StObject.set(x, "green400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen200(value: String): Self = this.set("green200", value.asInstanceOf[js.Any])
+    def setGreen50(value: String): Self = StObject.set(x, "green50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen300(value: String): Self = this.set("green300", value.asInstanceOf[js.Any])
+    def setGreen500(value: String): Self = StObject.set(x, "green500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen400(value: String): Self = this.set("green400", value.asInstanceOf[js.Any])
+    def setGreen600(value: String): Self = StObject.set(x, "green600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen50(value: String): Self = this.set("green50", value.asInstanceOf[js.Any])
+    def setGreen700(value: String): Self = StObject.set(x, "green700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen500(value: String): Self = this.set("green500", value.asInstanceOf[js.Any])
+    def setGreen800(value: String): Self = StObject.set(x, "green800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen600(value: String): Self = this.set("green600", value.asInstanceOf[js.Any])
+    def setGreen900(value: String): Self = StObject.set(x, "green900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen700(value: String): Self = this.set("green700", value.asInstanceOf[js.Any])
+    def setGreenA100(value: String): Self = StObject.set(x, "greenA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen800(value: String): Self = this.set("green800", value.asInstanceOf[js.Any])
+    def setGreenA200(value: String): Self = StObject.set(x, "greenA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen900(value: String): Self = this.set("green900", value.asInstanceOf[js.Any])
+    def setGreenA400(value: String): Self = StObject.set(x, "greenA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreenA100(value: String): Self = this.set("greenA100", value.asInstanceOf[js.Any])
+    def setGreenA700(value: String): Self = StObject.set(x, "greenA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreenA200(value: String): Self = this.set("greenA200", value.asInstanceOf[js.Any])
+    def setGrey100(value: String): Self = StObject.set(x, "grey100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreenA400(value: String): Self = this.set("greenA400", value.asInstanceOf[js.Any])
+    def setGrey200(value: String): Self = StObject.set(x, "grey200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreenA700(value: String): Self = this.set("greenA700", value.asInstanceOf[js.Any])
+    def setGrey300(value: String): Self = StObject.set(x, "grey300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey100(value: String): Self = this.set("grey100", value.asInstanceOf[js.Any])
+    def setGrey400(value: String): Self = StObject.set(x, "grey400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey200(value: String): Self = this.set("grey200", value.asInstanceOf[js.Any])
+    def setGrey50(value: String): Self = StObject.set(x, "grey50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey300(value: String): Self = this.set("grey300", value.asInstanceOf[js.Any])
+    def setGrey500(value: String): Self = StObject.set(x, "grey500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey400(value: String): Self = this.set("grey400", value.asInstanceOf[js.Any])
+    def setGrey600(value: String): Self = StObject.set(x, "grey600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey50(value: String): Self = this.set("grey50", value.asInstanceOf[js.Any])
+    def setGrey700(value: String): Self = StObject.set(x, "grey700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey500(value: String): Self = this.set("grey500", value.asInstanceOf[js.Any])
+    def setGrey800(value: String): Self = StObject.set(x, "grey800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey600(value: String): Self = this.set("grey600", value.asInstanceOf[js.Any])
+    def setGrey900(value: String): Self = StObject.set(x, "grey900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey700(value: String): Self = this.set("grey700", value.asInstanceOf[js.Any])
+    def setIndigo100(value: String): Self = StObject.set(x, "indigo100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey800(value: String): Self = this.set("grey800", value.asInstanceOf[js.Any])
+    def setIndigo200(value: String): Self = StObject.set(x, "indigo200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey900(value: String): Self = this.set("grey900", value.asInstanceOf[js.Any])
+    def setIndigo300(value: String): Self = StObject.set(x, "indigo300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigo100(value: String): Self = this.set("indigo100", value.asInstanceOf[js.Any])
+    def setIndigo400(value: String): Self = StObject.set(x, "indigo400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigo200(value: String): Self = this.set("indigo200", value.asInstanceOf[js.Any])
+    def setIndigo50(value: String): Self = StObject.set(x, "indigo50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigo300(value: String): Self = this.set("indigo300", value.asInstanceOf[js.Any])
+    def setIndigo500(value: String): Self = StObject.set(x, "indigo500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigo400(value: String): Self = this.set("indigo400", value.asInstanceOf[js.Any])
+    def setIndigo600(value: String): Self = StObject.set(x, "indigo600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigo50(value: String): Self = this.set("indigo50", value.asInstanceOf[js.Any])
+    def setIndigo700(value: String): Self = StObject.set(x, "indigo700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigo500(value: String): Self = this.set("indigo500", value.asInstanceOf[js.Any])
+    def setIndigo800(value: String): Self = StObject.set(x, "indigo800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigo600(value: String): Self = this.set("indigo600", value.asInstanceOf[js.Any])
+    def setIndigo900(value: String): Self = StObject.set(x, "indigo900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigo700(value: String): Self = this.set("indigo700", value.asInstanceOf[js.Any])
+    def setIndigoA100(value: String): Self = StObject.set(x, "indigoA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigo800(value: String): Self = this.set("indigo800", value.asInstanceOf[js.Any])
+    def setIndigoA200(value: String): Self = StObject.set(x, "indigoA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigo900(value: String): Self = this.set("indigo900", value.asInstanceOf[js.Any])
+    def setIndigoA400(value: String): Self = StObject.set(x, "indigoA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigoA100(value: String): Self = this.set("indigoA100", value.asInstanceOf[js.Any])
+    def setIndigoA700(value: String): Self = StObject.set(x, "indigoA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigoA200(value: String): Self = this.set("indigoA200", value.asInstanceOf[js.Any])
+    def setLightBlue100(value: String): Self = StObject.set(x, "lightBlue100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigoA400(value: String): Self = this.set("indigoA400", value.asInstanceOf[js.Any])
+    def setLightBlue200(value: String): Self = StObject.set(x, "lightBlue200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigoA700(value: String): Self = this.set("indigoA700", value.asInstanceOf[js.Any])
+    def setLightBlue300(value: String): Self = StObject.set(x, "lightBlue300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlue100(value: String): Self = this.set("lightBlue100", value.asInstanceOf[js.Any])
+    def setLightBlue400(value: String): Self = StObject.set(x, "lightBlue400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlue200(value: String): Self = this.set("lightBlue200", value.asInstanceOf[js.Any])
+    def setLightBlue50(value: String): Self = StObject.set(x, "lightBlue50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlue300(value: String): Self = this.set("lightBlue300", value.asInstanceOf[js.Any])
+    def setLightBlue500(value: String): Self = StObject.set(x, "lightBlue500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlue400(value: String): Self = this.set("lightBlue400", value.asInstanceOf[js.Any])
+    def setLightBlue600(value: String): Self = StObject.set(x, "lightBlue600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlue50(value: String): Self = this.set("lightBlue50", value.asInstanceOf[js.Any])
+    def setLightBlue700(value: String): Self = StObject.set(x, "lightBlue700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlue500(value: String): Self = this.set("lightBlue500", value.asInstanceOf[js.Any])
+    def setLightBlue800(value: String): Self = StObject.set(x, "lightBlue800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlue600(value: String): Self = this.set("lightBlue600", value.asInstanceOf[js.Any])
+    def setLightBlue900(value: String): Self = StObject.set(x, "lightBlue900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlue700(value: String): Self = this.set("lightBlue700", value.asInstanceOf[js.Any])
+    def setLightBlueA100(value: String): Self = StObject.set(x, "lightBlueA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlue800(value: String): Self = this.set("lightBlue800", value.asInstanceOf[js.Any])
+    def setLightBlueA200(value: String): Self = StObject.set(x, "lightBlueA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlue900(value: String): Self = this.set("lightBlue900", value.asInstanceOf[js.Any])
+    def setLightBlueA400(value: String): Self = StObject.set(x, "lightBlueA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlueA100(value: String): Self = this.set("lightBlueA100", value.asInstanceOf[js.Any])
+    def setLightBlueA700(value: String): Self = StObject.set(x, "lightBlueA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlueA200(value: String): Self = this.set("lightBlueA200", value.asInstanceOf[js.Any])
+    def setLightGreen100(value: String): Self = StObject.set(x, "lightGreen100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlueA400(value: String): Self = this.set("lightBlueA400", value.asInstanceOf[js.Any])
+    def setLightGreen200(value: String): Self = StObject.set(x, "lightGreen200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightBlueA700(value: String): Self = this.set("lightBlueA700", value.asInstanceOf[js.Any])
+    def setLightGreen300(value: String): Self = StObject.set(x, "lightGreen300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreen100(value: String): Self = this.set("lightGreen100", value.asInstanceOf[js.Any])
+    def setLightGreen400(value: String): Self = StObject.set(x, "lightGreen400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreen200(value: String): Self = this.set("lightGreen200", value.asInstanceOf[js.Any])
+    def setLightGreen50(value: String): Self = StObject.set(x, "lightGreen50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreen300(value: String): Self = this.set("lightGreen300", value.asInstanceOf[js.Any])
+    def setLightGreen500(value: String): Self = StObject.set(x, "lightGreen500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreen400(value: String): Self = this.set("lightGreen400", value.asInstanceOf[js.Any])
+    def setLightGreen600(value: String): Self = StObject.set(x, "lightGreen600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreen50(value: String): Self = this.set("lightGreen50", value.asInstanceOf[js.Any])
+    def setLightGreen700(value: String): Self = StObject.set(x, "lightGreen700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreen500(value: String): Self = this.set("lightGreen500", value.asInstanceOf[js.Any])
+    def setLightGreen800(value: String): Self = StObject.set(x, "lightGreen800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreen600(value: String): Self = this.set("lightGreen600", value.asInstanceOf[js.Any])
+    def setLightGreen900(value: String): Self = StObject.set(x, "lightGreen900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreen700(value: String): Self = this.set("lightGreen700", value.asInstanceOf[js.Any])
+    def setLightGreenA100(value: String): Self = StObject.set(x, "lightGreenA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreen800(value: String): Self = this.set("lightGreen800", value.asInstanceOf[js.Any])
+    def setLightGreenA200(value: String): Self = StObject.set(x, "lightGreenA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreen900(value: String): Self = this.set("lightGreen900", value.asInstanceOf[js.Any])
+    def setLightGreenA400(value: String): Self = StObject.set(x, "lightGreenA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreenA100(value: String): Self = this.set("lightGreenA100", value.asInstanceOf[js.Any])
+    def setLightGreenA700(value: String): Self = StObject.set(x, "lightGreenA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreenA200(value: String): Self = this.set("lightGreenA200", value.asInstanceOf[js.Any])
+    def setLime100(value: String): Self = StObject.set(x, "lime100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreenA400(value: String): Self = this.set("lightGreenA400", value.asInstanceOf[js.Any])
+    def setLime200(value: String): Self = StObject.set(x, "lime200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightGreenA700(value: String): Self = this.set("lightGreenA700", value.asInstanceOf[js.Any])
+    def setLime300(value: String): Self = StObject.set(x, "lime300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLime100(value: String): Self = this.set("lime100", value.asInstanceOf[js.Any])
+    def setLime400(value: String): Self = StObject.set(x, "lime400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLime200(value: String): Self = this.set("lime200", value.asInstanceOf[js.Any])
+    def setLime50(value: String): Self = StObject.set(x, "lime50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLime300(value: String): Self = this.set("lime300", value.asInstanceOf[js.Any])
+    def setLime500(value: String): Self = StObject.set(x, "lime500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLime400(value: String): Self = this.set("lime400", value.asInstanceOf[js.Any])
+    def setLime600(value: String): Self = StObject.set(x, "lime600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLime50(value: String): Self = this.set("lime50", value.asInstanceOf[js.Any])
+    def setLime700(value: String): Self = StObject.set(x, "lime700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLime500(value: String): Self = this.set("lime500", value.asInstanceOf[js.Any])
+    def setLime800(value: String): Self = StObject.set(x, "lime800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLime600(value: String): Self = this.set("lime600", value.asInstanceOf[js.Any])
+    def setLime900(value: String): Self = StObject.set(x, "lime900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLime700(value: String): Self = this.set("lime700", value.asInstanceOf[js.Any])
+    def setLimeA100(value: String): Self = StObject.set(x, "limeA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLime800(value: String): Self = this.set("lime800", value.asInstanceOf[js.Any])
+    def setLimeA200(value: String): Self = StObject.set(x, "limeA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLime900(value: String): Self = this.set("lime900", value.asInstanceOf[js.Any])
+    def setLimeA400(value: String): Self = StObject.set(x, "limeA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimeA100(value: String): Self = this.set("limeA100", value.asInstanceOf[js.Any])
+    def setLimeA700(value: String): Self = StObject.set(x, "limeA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimeA200(value: String): Self = this.set("limeA200", value.asInstanceOf[js.Any])
+    def setOrange100(value: String): Self = StObject.set(x, "orange100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimeA400(value: String): Self = this.set("limeA400", value.asInstanceOf[js.Any])
+    def setOrange200(value: String): Self = StObject.set(x, "orange200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimeA700(value: String): Self = this.set("limeA700", value.asInstanceOf[js.Any])
+    def setOrange300(value: String): Self = StObject.set(x, "orange300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange100(value: String): Self = this.set("orange100", value.asInstanceOf[js.Any])
+    def setOrange400(value: String): Self = StObject.set(x, "orange400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange200(value: String): Self = this.set("orange200", value.asInstanceOf[js.Any])
+    def setOrange50(value: String): Self = StObject.set(x, "orange50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange300(value: String): Self = this.set("orange300", value.asInstanceOf[js.Any])
+    def setOrange500(value: String): Self = StObject.set(x, "orange500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange400(value: String): Self = this.set("orange400", value.asInstanceOf[js.Any])
+    def setOrange600(value: String): Self = StObject.set(x, "orange600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange50(value: String): Self = this.set("orange50", value.asInstanceOf[js.Any])
+    def setOrange700(value: String): Self = StObject.set(x, "orange700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange500(value: String): Self = this.set("orange500", value.asInstanceOf[js.Any])
+    def setOrange800(value: String): Self = StObject.set(x, "orange800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange600(value: String): Self = this.set("orange600", value.asInstanceOf[js.Any])
+    def setOrange900(value: String): Self = StObject.set(x, "orange900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange700(value: String): Self = this.set("orange700", value.asInstanceOf[js.Any])
+    def setOrangeA100(value: String): Self = StObject.set(x, "orangeA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange800(value: String): Self = this.set("orange800", value.asInstanceOf[js.Any])
+    def setOrangeA200(value: String): Self = StObject.set(x, "orangeA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange900(value: String): Self = this.set("orange900", value.asInstanceOf[js.Any])
+    def setOrangeA400(value: String): Self = StObject.set(x, "orangeA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrangeA100(value: String): Self = this.set("orangeA100", value.asInstanceOf[js.Any])
+    def setOrangeA700(value: String): Self = StObject.set(x, "orangeA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrangeA200(value: String): Self = this.set("orangeA200", value.asInstanceOf[js.Any])
+    def setPink100(value: String): Self = StObject.set(x, "pink100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrangeA400(value: String): Self = this.set("orangeA400", value.asInstanceOf[js.Any])
+    def setPink200(value: String): Self = StObject.set(x, "pink200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrangeA700(value: String): Self = this.set("orangeA700", value.asInstanceOf[js.Any])
+    def setPink300(value: String): Self = StObject.set(x, "pink300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPink100(value: String): Self = this.set("pink100", value.asInstanceOf[js.Any])
+    def setPink400(value: String): Self = StObject.set(x, "pink400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPink200(value: String): Self = this.set("pink200", value.asInstanceOf[js.Any])
+    def setPink50(value: String): Self = StObject.set(x, "pink50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPink300(value: String): Self = this.set("pink300", value.asInstanceOf[js.Any])
+    def setPink500(value: String): Self = StObject.set(x, "pink500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPink400(value: String): Self = this.set("pink400", value.asInstanceOf[js.Any])
+    def setPink600(value: String): Self = StObject.set(x, "pink600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPink50(value: String): Self = this.set("pink50", value.asInstanceOf[js.Any])
+    def setPink700(value: String): Self = StObject.set(x, "pink700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPink500(value: String): Self = this.set("pink500", value.asInstanceOf[js.Any])
+    def setPink800(value: String): Self = StObject.set(x, "pink800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPink600(value: String): Self = this.set("pink600", value.asInstanceOf[js.Any])
+    def setPink900(value: String): Self = StObject.set(x, "pink900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPink700(value: String): Self = this.set("pink700", value.asInstanceOf[js.Any])
+    def setPinkA100(value: String): Self = StObject.set(x, "pinkA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPink800(value: String): Self = this.set("pink800", value.asInstanceOf[js.Any])
+    def setPinkA200(value: String): Self = StObject.set(x, "pinkA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPink900(value: String): Self = this.set("pink900", value.asInstanceOf[js.Any])
+    def setPinkA400(value: String): Self = StObject.set(x, "pinkA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinkA100(value: String): Self = this.set("pinkA100", value.asInstanceOf[js.Any])
+    def setPinkA700(value: String): Self = StObject.set(x, "pinkA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinkA200(value: String): Self = this.set("pinkA200", value.asInstanceOf[js.Any])
+    def setPurple100(value: String): Self = StObject.set(x, "purple100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinkA400(value: String): Self = this.set("pinkA400", value.asInstanceOf[js.Any])
+    def setPurple200(value: String): Self = StObject.set(x, "purple200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinkA700(value: String): Self = this.set("pinkA700", value.asInstanceOf[js.Any])
+    def setPurple300(value: String): Self = StObject.set(x, "purple300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurple100(value: String): Self = this.set("purple100", value.asInstanceOf[js.Any])
+    def setPurple400(value: String): Self = StObject.set(x, "purple400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurple200(value: String): Self = this.set("purple200", value.asInstanceOf[js.Any])
+    def setPurple50(value: String): Self = StObject.set(x, "purple50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurple300(value: String): Self = this.set("purple300", value.asInstanceOf[js.Any])
+    def setPurple500(value: String): Self = StObject.set(x, "purple500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurple400(value: String): Self = this.set("purple400", value.asInstanceOf[js.Any])
+    def setPurple600(value: String): Self = StObject.set(x, "purple600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurple50(value: String): Self = this.set("purple50", value.asInstanceOf[js.Any])
+    def setPurple700(value: String): Self = StObject.set(x, "purple700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurple500(value: String): Self = this.set("purple500", value.asInstanceOf[js.Any])
+    def setPurple800(value: String): Self = StObject.set(x, "purple800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurple600(value: String): Self = this.set("purple600", value.asInstanceOf[js.Any])
+    def setPurple900(value: String): Self = StObject.set(x, "purple900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurple700(value: String): Self = this.set("purple700", value.asInstanceOf[js.Any])
+    def setPurpleA100(value: String): Self = StObject.set(x, "purpleA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurple800(value: String): Self = this.set("purple800", value.asInstanceOf[js.Any])
+    def setPurpleA200(value: String): Self = StObject.set(x, "purpleA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurple900(value: String): Self = this.set("purple900", value.asInstanceOf[js.Any])
+    def setPurpleA400(value: String): Self = StObject.set(x, "purpleA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurpleA100(value: String): Self = this.set("purpleA100", value.asInstanceOf[js.Any])
+    def setPurpleA700(value: String): Self = StObject.set(x, "purpleA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurpleA200(value: String): Self = this.set("purpleA200", value.asInstanceOf[js.Any])
+    def setRed100(value: String): Self = StObject.set(x, "red100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurpleA400(value: String): Self = this.set("purpleA400", value.asInstanceOf[js.Any])
+    def setRed200(value: String): Self = StObject.set(x, "red200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurpleA700(value: String): Self = this.set("purpleA700", value.asInstanceOf[js.Any])
+    def setRed300(value: String): Self = StObject.set(x, "red300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed100(value: String): Self = this.set("red100", value.asInstanceOf[js.Any])
+    def setRed400(value: String): Self = StObject.set(x, "red400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed200(value: String): Self = this.set("red200", value.asInstanceOf[js.Any])
+    def setRed50(value: String): Self = StObject.set(x, "red50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed300(value: String): Self = this.set("red300", value.asInstanceOf[js.Any])
+    def setRed500(value: String): Self = StObject.set(x, "red500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed400(value: String): Self = this.set("red400", value.asInstanceOf[js.Any])
+    def setRed600(value: String): Self = StObject.set(x, "red600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed50(value: String): Self = this.set("red50", value.asInstanceOf[js.Any])
+    def setRed700(value: String): Self = StObject.set(x, "red700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed500(value: String): Self = this.set("red500", value.asInstanceOf[js.Any])
+    def setRed800(value: String): Self = StObject.set(x, "red800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed600(value: String): Self = this.set("red600", value.asInstanceOf[js.Any])
+    def setRed900(value: String): Self = StObject.set(x, "red900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed700(value: String): Self = this.set("red700", value.asInstanceOf[js.Any])
+    def setRedA100(value: String): Self = StObject.set(x, "redA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed800(value: String): Self = this.set("red800", value.asInstanceOf[js.Any])
+    def setRedA200(value: String): Self = StObject.set(x, "redA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed900(value: String): Self = this.set("red900", value.asInstanceOf[js.Any])
+    def setRedA400(value: String): Self = StObject.set(x, "redA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedA100(value: String): Self = this.set("redA100", value.asInstanceOf[js.Any])
+    def setRedA700(value: String): Self = StObject.set(x, "redA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedA200(value: String): Self = this.set("redA200", value.asInstanceOf[js.Any])
+    def setSnackbarColor(value: String): Self = StObject.set(x, "snackbarColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedA400(value: String): Self = this.set("redA400", value.asInstanceOf[js.Any])
+    def setTeal100(value: String): Self = StObject.set(x, "teal100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedA700(value: String): Self = this.set("redA700", value.asInstanceOf[js.Any])
+    def setTeal200(value: String): Self = StObject.set(x, "teal200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnackbarColor(value: String): Self = this.set("snackbarColor", value.asInstanceOf[js.Any])
+    def setTeal300(value: String): Self = StObject.set(x, "teal300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeal100(value: String): Self = this.set("teal100", value.asInstanceOf[js.Any])
+    def setTeal400(value: String): Self = StObject.set(x, "teal400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeal200(value: String): Self = this.set("teal200", value.asInstanceOf[js.Any])
+    def setTeal50(value: String): Self = StObject.set(x, "teal50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeal300(value: String): Self = this.set("teal300", value.asInstanceOf[js.Any])
+    def setTeal500(value: String): Self = StObject.set(x, "teal500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeal400(value: String): Self = this.set("teal400", value.asInstanceOf[js.Any])
+    def setTeal600(value: String): Self = StObject.set(x, "teal600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeal50(value: String): Self = this.set("teal50", value.asInstanceOf[js.Any])
+    def setTeal700(value: String): Self = StObject.set(x, "teal700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeal500(value: String): Self = this.set("teal500", value.asInstanceOf[js.Any])
+    def setTeal800(value: String): Self = StObject.set(x, "teal800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeal600(value: String): Self = this.set("teal600", value.asInstanceOf[js.Any])
+    def setTeal900(value: String): Self = StObject.set(x, "teal900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeal700(value: String): Self = this.set("teal700", value.asInstanceOf[js.Any])
+    def setTealA100(value: String): Self = StObject.set(x, "tealA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeal800(value: String): Self = this.set("teal800", value.asInstanceOf[js.Any])
+    def setTealA200(value: String): Self = StObject.set(x, "tealA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeal900(value: String): Self = this.set("teal900", value.asInstanceOf[js.Any])
+    def setTealA400(value: String): Self = StObject.set(x, "tealA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTealA100(value: String): Self = this.set("tealA100", value.asInstanceOf[js.Any])
+    def setTealA700(value: String): Self = StObject.set(x, "tealA700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTealA200(value: String): Self = this.set("tealA200", value.asInstanceOf[js.Any])
+    def setTransparent(value: String): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTealA400(value: String): Self = this.set("tealA400", value.asInstanceOf[js.Any])
+    def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTealA700(value: String): Self = this.set("tealA700", value.asInstanceOf[js.Any])
+    def setYellow100(value: String): Self = StObject.set(x, "yellow100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparent(value: String): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    def setYellow200(value: String): Self = StObject.set(x, "yellow200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhite(value: String): Self = this.set("white", value.asInstanceOf[js.Any])
+    def setYellow300(value: String): Self = StObject.set(x, "yellow300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellow100(value: String): Self = this.set("yellow100", value.asInstanceOf[js.Any])
+    def setYellow400(value: String): Self = StObject.set(x, "yellow400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellow200(value: String): Self = this.set("yellow200", value.asInstanceOf[js.Any])
+    def setYellow50(value: String): Self = StObject.set(x, "yellow50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellow300(value: String): Self = this.set("yellow300", value.asInstanceOf[js.Any])
+    def setYellow500(value: String): Self = StObject.set(x, "yellow500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellow400(value: String): Self = this.set("yellow400", value.asInstanceOf[js.Any])
+    def setYellow600(value: String): Self = StObject.set(x, "yellow600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellow50(value: String): Self = this.set("yellow50", value.asInstanceOf[js.Any])
+    def setYellow700(value: String): Self = StObject.set(x, "yellow700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellow500(value: String): Self = this.set("yellow500", value.asInstanceOf[js.Any])
+    def setYellow800(value: String): Self = StObject.set(x, "yellow800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellow600(value: String): Self = this.set("yellow600", value.asInstanceOf[js.Any])
+    def setYellow900(value: String): Self = StObject.set(x, "yellow900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellow700(value: String): Self = this.set("yellow700", value.asInstanceOf[js.Any])
+    def setYellowA100(value: String): Self = StObject.set(x, "yellowA100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellow800(value: String): Self = this.set("yellow800", value.asInstanceOf[js.Any])
+    def setYellowA200(value: String): Self = StObject.set(x, "yellowA200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellow900(value: String): Self = this.set("yellow900", value.asInstanceOf[js.Any])
+    def setYellowA400(value: String): Self = StObject.set(x, "yellowA400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYellowA100(value: String): Self = this.set("yellowA100", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYellowA200(value: String): Self = this.set("yellowA200", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYellowA400(value: String): Self = this.set("yellowA400", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYellowA700(value: String): Self = this.set("yellowA700", value.asInstanceOf[js.Any])
+    def setYellowA700(value: String): Self = StObject.set(x, "yellowA700", value.asInstanceOf[js.Any])
   }
 }

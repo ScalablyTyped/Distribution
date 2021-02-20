@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFIndirectPropertyIDLevelType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IIndirectPropertyIDLevel extends js.Object {
+trait IIndirectPropertyIDLevel extends StObject {
   
   def Clone(): IIndirectPropertyIDLevel = js.native
   
@@ -30,30 +31,18 @@ object IIndirectPropertyIDLevel {
   }
   
   @scala.inline
-  implicit class IIndirectPropertyIDLevelOps[Self <: IIndirectPropertyIDLevel] (val x: Self) extends AnyVal {
+  implicit class IIndirectPropertyIDLevelMutableBuilder[Self <: IIndirectPropertyIDLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IIndirectPropertyIDLevel): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevelType(value: MFIndirectPropertyIDLevelType): Self = StObject.set(x, "LevelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IIndirectPropertyIDLevel): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevelType(value: MFIndirectPropertyIDLevelType): Self = this.set("LevelType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToJSON(value: () => String): Self = this.set("ToJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
   }
 }

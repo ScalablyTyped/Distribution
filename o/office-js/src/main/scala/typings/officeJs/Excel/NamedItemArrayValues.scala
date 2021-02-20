@@ -4,6 +4,7 @@ import typings.officeJs.Excel.Interfaces.NamedItemArrayValuesData
 import typings.officeJs.Excel.Interfaces.NamedItemArrayValuesLoadOptions
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.anon.Expand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

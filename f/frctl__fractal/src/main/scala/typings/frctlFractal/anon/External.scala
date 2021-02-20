@@ -1,11 +1,12 @@
 package typings.frctlFractal.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait External extends js.Object {
+trait External extends StObject {
   
   var external: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object External {
   }
   
   @scala.inline
-  implicit class ExternalOps[Self <: External] (val x: Self) extends AnyVal {
+  implicit class ExternalMutableBuilder[Self <: External] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternal(value: String): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal(value: String): Self = this.set("external", value.asInstanceOf[js.Any])
+    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
     @scala.inline
-    def deleteExternal: Self = this.set("external", js.undefined)
+    def setUi(value: String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal(value: String): Self = this.set("local", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocal: Self = this.set("local", js.undefined)
-    
-    @scala.inline
-    def setUi(value: String): Self = this.set("ui", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUi: Self = this.set("ui", js.undefined)
+    def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

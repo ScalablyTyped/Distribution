@@ -1,6 +1,7 @@
 package typings.reactRouter.mod
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait `match`[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof Params ]:? string}
-  */ typings.reactRouter.reactRouterStrings.`match` with TopLevel[js.Any] */] extends js.Object {
+  */ typings.reactRouter.reactRouterStrings.`match` with TopLevel[js.Any] */] extends StObject {
   
   var isExact: Boolean = js.native
   
@@ -29,32 +30,20 @@ object `match` {
   }
   
   @scala.inline
-  implicit class matchOps[Self <: `match`[_], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  implicit class matchMutableBuilder[Self <: `match`[_], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouter.reactRouterStrings.`match` with TopLevel[js.Any] */] (val x: Self with `match`[Params]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsExact(value: Boolean): Self = StObject.set(x, "isExact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExact(value: Boolean): Self = this.set("isExact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParams(value: Params): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

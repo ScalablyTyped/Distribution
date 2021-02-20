@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.anon
 
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BeakWidth extends js.Object {
+trait BeakWidth extends StObject {
   
   var beakWidth: Double = js.native
   
@@ -42,42 +43,30 @@ object BeakWidth {
   }
   
   @scala.inline
-  implicit class BeakWidthOps[Self <: BeakWidth] (val x: Self) extends AnyVal {
+  implicit class BeakWidthMutableBuilder[Self <: BeakWidth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionalHint(value: `7`): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGapSpace(value: Double): Self = StObject.set(x, "gapSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeakWidth(value: Double): Self = this.set("beakWidth", value.asInstanceOf[js.Any])
+    def setIsBeakVisible(value: Boolean): Self = StObject.set(x, "isBeakVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionalHint(value: `7`): Self = this.set("directionalHint", value.asInstanceOf[js.Any])
+    def setMinPagePadding(value: Double): Self = StObject.set(x, "minPagePadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGapSpace(value: Double): Self = this.set("gapSpace", value.asInstanceOf[js.Any])
+    def setPreventDismissOnLostFocus(value: Boolean): Self = StObject.set(x, "preventDismissOnLostFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBeakVisible(value: Boolean): Self = this.set("isBeakVisible", value.asInstanceOf[js.Any])
+    def setPreventDismissOnResize(value: Boolean): Self = StObject.set(x, "preventDismissOnResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPagePadding(value: Double): Self = this.set("minPagePadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreventDismissOnLostFocus(value: Boolean): Self = this.set("preventDismissOnLostFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreventDismissOnResize(value: Boolean): Self = this.set("preventDismissOnResize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreventDismissOnScroll(value: Boolean): Self = this.set("preventDismissOnScroll", value.asInstanceOf[js.Any])
+    def setPreventDismissOnScroll(value: Boolean): Self = StObject.set(x, "preventDismissOnScroll", value.asInstanceOf[js.Any])
   }
 }

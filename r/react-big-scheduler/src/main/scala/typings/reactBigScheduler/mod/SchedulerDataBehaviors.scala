@@ -1,12 +1,13 @@
 package typings.reactBigScheduler.mod
 
 import typings.reactBigScheduler.anon.CellUnit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerDataBehaviors extends js.Object {
+trait SchedulerDataBehaviors extends StObject {
   
   var getCustomDateFunc: js.UndefOr[
     js.Function3[
@@ -28,32 +29,20 @@ object SchedulerDataBehaviors {
   }
   
   @scala.inline
-  implicit class SchedulerDataBehaviorsOps[Self <: SchedulerDataBehaviors] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class SchedulerDataBehaviorsMutableBuilder[Self <: SchedulerDataBehaviors] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setGetCustomDateFunc(
       value: (/* schedulerData */ SchedulerData, /* num */ Double, /* date */ js.UndefOr[String]) => CellUnit
-    ): Self = this.set("getCustomDateFunc", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "getCustomDateFunc", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteGetCustomDateFunc: Self = this.set("getCustomDateFunc", js.undefined)
+    def setGetCustomDateFuncUndefined: Self = StObject.set(x, "getCustomDateFunc", js.undefined)
     
     @scala.inline
-    def setIsNonWorkingTimeFunc(value: (/* schedulerData */ SchedulerData, /* time */ String) => Boolean): Self = this.set("isNonWorkingTimeFunc", js.Any.fromFunction2(value))
+    def setIsNonWorkingTimeFunc(value: (/* schedulerData */ SchedulerData, /* time */ String) => Boolean): Self = StObject.set(x, "isNonWorkingTimeFunc", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteIsNonWorkingTimeFunc: Self = this.set("isNonWorkingTimeFunc", js.undefined)
+    def setIsNonWorkingTimeFuncUndefined: Self = StObject.set(x, "isNonWorkingTimeFunc", js.undefined)
   }
 }

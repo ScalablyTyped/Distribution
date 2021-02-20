@@ -1,15 +1,15 @@
 package typings.thrift.mod
 
 import typings.node.Buffer
-import typings.nodeInt64.mod.^
 import typings.thrift.mod.Thrift.MessageType
 import typings.thrift.mod.Thrift.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TProtocol extends js.Object {
+trait TProtocol extends StObject {
   
   def flush(): Unit = js.native
   
@@ -31,7 +31,7 @@ trait TProtocol extends js.Object {
   
   def readI32(): Double = js.native
   
-  def readI64(): ^ = js.native
+  def readI64(): typings.nodeInt64.mod.^ = js.native
   
   def readListBegin(): TList = js.native
   
@@ -77,7 +77,7 @@ trait TProtocol extends js.Object {
   def writeI32(i32: Double): Unit = js.native
   
   def writeI64(i64: Double): Unit = js.native
-  def writeI64(i64: ^): Unit = js.native
+  def writeI64(i64: typings.nodeInt64.mod.^): Unit = js.native
   
   def writeListBegin(etype: Type, size: Double): Unit = js.native
   

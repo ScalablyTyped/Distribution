@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamsCreateDiscussionCommentInOrgEndpoint extends js.Object {
+trait TeamsCreateDiscussionCommentInOrgEndpoint extends StObject {
   
   /**
     * The discussion comment's body text.
@@ -29,30 +30,18 @@ object TeamsCreateDiscussionCommentInOrgEndpoint {
   }
   
   @scala.inline
-  implicit class TeamsCreateDiscussionCommentInOrgEndpointOps[Self <: TeamsCreateDiscussionCommentInOrgEndpoint] (val x: Self) extends AnyVal {
+  implicit class TeamsCreateDiscussionCommentInOrgEndpointMutableBuilder[Self <: TeamsCreateDiscussionCommentInOrgEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDiscussion_number(value: Double): Self = this.set("discussion_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrg_(value: String): Self = this.set("org", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeam_slug(value: String): Self = this.set("team_slug", value.asInstanceOf[js.Any])
+    def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

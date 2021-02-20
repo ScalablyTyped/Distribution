@@ -2,14 +2,14 @@ package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.configurationMod.configuration.ISdkConfig
 import typings.mendixmodelsdk.transportationMod.ITransportation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/RestTransportation", JSImport.Namespace)
-@js.native
-object restTransportationMod extends js.Object {
+object restTransportationMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/RestTransportation", "RestTransportation")
   @js.native
   class RestTransportation protected () extends ITransportation {
     def this(config: ISdkConfig) = this()

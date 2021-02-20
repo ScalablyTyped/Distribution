@@ -1,11 +1,12 @@
 package typings.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Address extends js.Object {
+trait Address extends StObject {
   
   var city: String = js.native
   
@@ -36,63 +37,51 @@ object Address {
   }
   
   @scala.inline
-  implicit class AddressOps[Self <: Address] (val x: Self) extends AnyVal {
+  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry_code(value: String): Self = this.set("country_code", value.asInstanceOf[js.Any])
+    def setLine2Undefined: Self = StObject.set(x, "line2", js.undefined)
     
     @scala.inline
-    def setLine1(value: String): Self = this.set("line1", value.asInstanceOf[js.Any])
+    def setNormalization_status(value: String): Self = StObject.set(x, "normalization_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostal_code(value: String): Self = this.set("postal_code", value.asInstanceOf[js.Any])
+    def setNormalization_statusUndefined: Self = StObject.set(x, "normalization_status", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine2(value: String): Self = this.set("line2", value.asInstanceOf[js.Any])
+    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
     @scala.inline
-    def deleteLine2: Self = this.set("line2", js.undefined)
+    def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalization_status(value: String): Self = this.set("normalization_status", value.asInstanceOf[js.Any])
+    def setRecipient_name(value: String): Self = StObject.set(x, "recipient_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNormalization_status: Self = this.set("normalization_status", js.undefined)
+    def setRecipient_nameUndefined: Self = StObject.set(x, "recipient_name", js.undefined)
     
     @scala.inline
-    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhone: Self = this.set("phone", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipient_name(value: String): Self = this.set("recipient_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipient_name: Self = this.set("recipient_name", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

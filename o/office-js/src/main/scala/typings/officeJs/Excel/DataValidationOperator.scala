@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataValidationOperator extends js.Object
+sealed trait DataValidationOperator extends StObject
 /**
   *
   * Represents Data validation operator enum.
@@ -14,7 +15,7 @@ sealed trait DataValidationOperator extends js.Object
   */
 @JSGlobal("Excel.DataValidationOperator")
 @js.native
-object DataValidationOperator extends js.Object {
+object DataValidationOperator extends StObject {
   
   @js.native
   sealed trait between extends DataValidationOperator

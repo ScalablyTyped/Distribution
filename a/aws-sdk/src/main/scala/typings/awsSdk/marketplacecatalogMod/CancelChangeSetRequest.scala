@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelChangeSetRequest extends js.Object {
+trait CancelChangeSetRequest extends StObject {
   
   /**
     * Required. The catalog related to the request. Fixed value: AWSMarketplace.
@@ -26,24 +27,12 @@ object CancelChangeSetRequest {
   }
   
   @scala.inline
-  implicit class CancelChangeSetRequestOps[Self <: CancelChangeSetRequest] (val x: Self) extends AnyVal {
+  implicit class CancelChangeSetRequestMutableBuilder[Self <: CancelChangeSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCatalog(value: Catalog): Self = this.set("Catalog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChangeSetId(value: ResourceId): Self = this.set("ChangeSetId", value.asInstanceOf[js.Any])
+    def setChangeSetId(value: ResourceId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
   }
 }

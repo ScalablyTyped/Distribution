@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileMaximizingEventUIParam extends js.Object {
+trait TileMaximizingEventUIParam extends StObject {
   
   /**
     * Used to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing.
@@ -31,36 +32,24 @@ object TileMaximizingEventUIParam {
   }
   
   @scala.inline
-  implicit class TileMaximizingEventUIParamOps[Self <: TileMaximizingEventUIParam] (val x: Self) extends AnyVal {
+  implicit class TileMaximizingEventUIParamMutableBuilder[Self <: TileMaximizingEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinimizingTile(value: js.Any): Self = StObject.set(x, "minimizingTile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinimizingTileUndefined: Self = StObject.set(x, "minimizingTile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimizingTile(value: js.Any): Self = this.set("minimizingTile", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteMinimizingTile: Self = this.set("minimizingTile", js.undefined)
+    def setTile(value: js.Any): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setTile(value: js.Any): Self = this.set("tile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTile: Self = this.set("tile", js.undefined)
+    def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
   }
 }

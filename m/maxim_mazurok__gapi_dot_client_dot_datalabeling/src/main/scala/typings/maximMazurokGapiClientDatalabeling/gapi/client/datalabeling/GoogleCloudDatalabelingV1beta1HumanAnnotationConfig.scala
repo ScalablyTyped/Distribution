@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1HumanAnnotationConfig extends js.Object {
+trait GoogleCloudDatalabelingV1beta1HumanAnnotationConfig extends StObject {
   
   /** Optional. A human-readable description for AnnotatedDataset. The description can be up to 10000 characters long. */
   var annotatedDatasetDescription: js.UndefOr[String] = js.native
@@ -52,75 +53,63 @@ object GoogleCloudDatalabelingV1beta1HumanAnnotationConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1HumanAnnotationConfigOps[Self <: GoogleCloudDatalabelingV1beta1HumanAnnotationConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1HumanAnnotationConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1HumanAnnotationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotatedDatasetDescription(value: String): Self = StObject.set(x, "annotatedDatasetDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotatedDatasetDescriptionUndefined: Self = StObject.set(x, "annotatedDatasetDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotatedDatasetDisplayName(value: String): Self = StObject.set(x, "annotatedDatasetDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotatedDatasetDescription(value: String): Self = this.set("annotatedDatasetDescription", value.asInstanceOf[js.Any])
+    def setAnnotatedDatasetDisplayNameUndefined: Self = StObject.set(x, "annotatedDatasetDisplayName", js.undefined)
     
     @scala.inline
-    def deleteAnnotatedDatasetDescription: Self = this.set("annotatedDatasetDescription", js.undefined)
+    def setContributorEmails(value: js.Array[String]): Self = StObject.set(x, "contributorEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotatedDatasetDisplayName(value: String): Self = this.set("annotatedDatasetDisplayName", value.asInstanceOf[js.Any])
+    def setContributorEmailsUndefined: Self = StObject.set(x, "contributorEmails", js.undefined)
     
     @scala.inline
-    def deleteAnnotatedDatasetDisplayName: Self = this.set("annotatedDatasetDisplayName", js.undefined)
+    def setContributorEmailsVarargs(value: String*): Self = StObject.set(x, "contributorEmails", js.Array(value :_*))
     
     @scala.inline
-    def setContributorEmailsVarargs(value: String*): Self = this.set("contributorEmails", js.Array(value :_*))
+    def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributorEmails(value: js.Array[String]): Self = this.set("contributorEmails", value.asInstanceOf[js.Any])
+    def setInstructionUndefined: Self = StObject.set(x, "instruction", js.undefined)
     
     @scala.inline
-    def deleteContributorEmails: Self = this.set("contributorEmails", js.undefined)
+    def setLabelGroup(value: String): Self = StObject.set(x, "labelGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstruction(value: String): Self = this.set("instruction", value.asInstanceOf[js.Any])
+    def setLabelGroupUndefined: Self = StObject.set(x, "labelGroup", js.undefined)
     
     @scala.inline
-    def deleteInstruction: Self = this.set("instruction", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelGroup(value: String): Self = this.set("labelGroup", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteLabelGroup: Self = this.set("labelGroup", js.undefined)
+    def setQuestionDuration(value: String): Self = StObject.set(x, "questionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setQuestionDurationUndefined: Self = StObject.set(x, "questionDuration", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setReplicaCount(value: Double): Self = StObject.set(x, "replicaCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestionDuration(value: String): Self = this.set("questionDuration", value.asInstanceOf[js.Any])
+    def setReplicaCountUndefined: Self = StObject.set(x, "replicaCount", js.undefined)
     
     @scala.inline
-    def deleteQuestionDuration: Self = this.set("questionDuration", js.undefined)
+    def setUserEmailAddress(value: String): Self = StObject.set(x, "userEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaCount(value: Double): Self = this.set("replicaCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaCount: Self = this.set("replicaCount", js.undefined)
-    
-    @scala.inline
-    def setUserEmailAddress(value: String): Self = this.set("userEmailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEmailAddress: Self = this.set("userEmailAddress", js.undefined)
+    def setUserEmailAddressUndefined: Self = StObject.set(x, "userEmailAddress", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IQuestionPanelDynamicData extends js.Object {
+trait IQuestionPanelDynamicData extends StObject {
   
   def getItemIndex(item: ISurveyData): Double = js.native
   
@@ -35,36 +36,24 @@ object IQuestionPanelDynamicData {
   }
   
   @scala.inline
-  implicit class IQuestionPanelDynamicDataOps[Self <: IQuestionPanelDynamicData] (val x: Self) extends AnyVal {
+  implicit class IQuestionPanelDynamicDataMutableBuilder[Self <: IQuestionPanelDynamicData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetItemIndex(value: ISurveyData => Double): Self = StObject.set(x, "getItemIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPanelItemData(value: ISurveyData => js.Any): Self = StObject.set(x, "getPanelItemData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRootData(value: () => ISurveyData): Self = StObject.set(x, "getRootData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemIndex(value: ISurveyData => Double): Self = this.set("getItemIndex", js.Any.fromFunction1(value))
+    def setGetSharedQuestionFromArray(value: (String, Double) => Question): Self = StObject.set(x, "getSharedQuestionFromArray", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPanelItemData(value: ISurveyData => js.Any): Self = this.set("getPanelItemData", js.Any.fromFunction1(value))
+    def setGetSurvey(value: () => ISurvey): Self = StObject.set(x, "getSurvey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRootData(value: () => ISurveyData): Self = this.set("getRootData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSharedQuestionFromArray(value: (String, Double) => Question): Self = this.set("getSharedQuestionFromArray", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetSurvey(value: () => ISurvey): Self = this.set("getSurvey", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetPanelItemData(value: (ISurveyData, String, js.Any) => js.Any): Self = this.set("setPanelItemData", js.Any.fromFunction3(value))
+    def setSetPanelItemData(value: (ISurveyData, String, js.Any) => js.Any): Self = StObject.set(x, "setPanelItemData", js.Any.fromFunction3(value))
   }
 }

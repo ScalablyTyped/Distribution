@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveFlowSourceRequest extends js.Object {
+trait RemoveFlowSourceRequest extends StObject {
   
   /**
     * The flow that you want to remove a source from.
@@ -26,24 +27,12 @@ object RemoveFlowSourceRequest {
   }
   
   @scala.inline
-  implicit class RemoveFlowSourceRequestOps[Self <: RemoveFlowSourceRequest] (val x: Self) extends AnyVal {
+  implicit class RemoveFlowSourceRequestMutableBuilder[Self <: RemoveFlowSourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFlowArn(value: string): Self = this.set("FlowArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceArn(value: string): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
   }
 }

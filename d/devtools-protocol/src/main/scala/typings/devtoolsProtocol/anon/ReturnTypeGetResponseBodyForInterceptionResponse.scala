@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.anon
 
 import typings.devtoolsProtocol.mod.Protocol.Network.GetResponseBodyForInterceptionRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.GetResponseBodyForInterceptionResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnTypeGetResponseBodyForInterceptionResponse extends js.Object {
+trait ReturnTypeGetResponseBodyForInterceptionResponse extends StObject {
   
   var paramsType: js.Array[GetResponseBodyForInterceptionRequest] = js.native
   
@@ -25,27 +26,15 @@ object ReturnTypeGetResponseBodyForInterceptionResponse {
   }
   
   @scala.inline
-  implicit class ReturnTypeGetResponseBodyForInterceptionResponseOps[Self <: ReturnTypeGetResponseBodyForInterceptionResponse] (val x: Self) extends AnyVal {
+  implicit class ReturnTypeGetResponseBodyForInterceptionResponseMutableBuilder[Self <: ReturnTypeGetResponseBodyForInterceptionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamsType(value: js.Array[GetResponseBodyForInterceptionRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamsTypeVarargs(value: GetResponseBodyForInterceptionRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParamsTypeVarargs(value: GetResponseBodyForInterceptionRequest*): Self = this.set("paramsType", js.Array(value :_*))
-    
-    @scala.inline
-    def setParamsType(value: js.Array[GetResponseBodyForInterceptionRequest]): Self = this.set("paramsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnType(value: GetResponseBodyForInterceptionResponse): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setReturnType(value: GetResponseBodyForInterceptionResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

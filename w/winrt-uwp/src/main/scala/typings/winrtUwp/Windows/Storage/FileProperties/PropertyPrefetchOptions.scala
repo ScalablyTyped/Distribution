@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PropertyPrefetchOptions extends js.Object
+sealed trait PropertyPrefetchOptions extends StObject
 /** Indicates a system-defined group of file properties. */
 @JSGlobal("Windows.Storage.FileProperties.PropertyPrefetchOptions")
 @js.native
-object PropertyPrefetchOptions extends js.Object {
+object PropertyPrefetchOptions extends StObject {
   
   /** A group of basic properties that can be access through a BasicProperties object. */
   @js.native

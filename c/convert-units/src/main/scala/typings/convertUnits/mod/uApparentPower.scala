@@ -1,6 +1,7 @@
 package typings.convertUnits.mod
 
 import typings.convertUnits.convertUnitsStrings.mVA_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.MVA
   - typings.convertUnits.convertUnitsStrings.GVA
 */
-trait uApparentPower extends js.Object
+trait uApparentPower extends StObject
 object uApparentPower {
   
   @scala.inline

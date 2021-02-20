@@ -1,11 +1,12 @@
 package typings.kurentoClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IceCandidatePair extends js.Object {
+trait IceCandidatePair extends StObject {
   
   var componentID: Double = js.native
   
@@ -24,30 +25,18 @@ object IceCandidatePair {
   }
   
   @scala.inline
-  implicit class IceCandidatePairOps[Self <: IceCandidatePair] (val x: Self) extends AnyVal {
+  implicit class IceCandidatePairMutableBuilder[Self <: IceCandidatePair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentID(value: Double): Self = StObject.set(x, "componentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalCandidate(value: String): Self = StObject.set(x, "localCandidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoteCandidate(value: String): Self = StObject.set(x, "remoteCandidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentID(value: Double): Self = this.set("componentID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocalCandidate(value: String): Self = this.set("localCandidate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteCandidate(value: String): Self = this.set("remoteCandidate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreamID(value: String): Self = this.set("streamID", value.asInstanceOf[js.Any])
+    def setStreamID(value: String): Self = StObject.set(x, "streamID", value.asInstanceOf[js.Any])
   }
 }

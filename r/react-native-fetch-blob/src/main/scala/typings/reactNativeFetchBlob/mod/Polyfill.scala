@@ -1,11 +1,12 @@
 package typings.reactNativeFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Polyfill extends js.Object {
+trait Polyfill extends StObject {
   
   var Blob: PolyfillBlob = js.native
   
@@ -38,39 +39,27 @@ object Polyfill {
   }
   
   @scala.inline
-  implicit class PolyfillOps[Self <: Polyfill] (val x: Self) extends AnyVal {
+  implicit class PolyfillMutableBuilder[Self <: Polyfill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlob(value: PolyfillBlob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent(value: PolyfillEvent): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFetch(value: PolyfillFetch): Self = StObject.set(x, "Fetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlob(value: PolyfillBlob): Self = this.set("Blob", value.asInstanceOf[js.Any])
+    def setFile(value: PolyfillFile): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: PolyfillEvent): Self = this.set("Event", value.asInstanceOf[js.Any])
+    def setFileReader(value: PolyfillFileReader): Self = StObject.set(x, "FileReader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetch(value: PolyfillFetch): Self = this.set("Fetch", value.asInstanceOf[js.Any])
+    def setProgressEvent(value: PolyfillProgressEvent): Self = StObject.set(x, "ProgressEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: PolyfillFile): Self = this.set("File", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileReader(value: PolyfillFileReader): Self = this.set("FileReader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgressEvent(value: PolyfillProgressEvent): Self = this.set("ProgressEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXMLHttpRequest(value: PolyfillXMLHttpRequest): Self = this.set("XMLHttpRequest", value.asInstanceOf[js.Any])
+    def setXMLHttpRequest(value: PolyfillXMLHttpRequest): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
   }
 }

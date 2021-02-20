@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setId('field1_id');
   */
 @js.native
-trait Fields extends js.Object {
+trait Fields extends StObject {
   
   def asArray(): js.Array[Field] = js.native
   
@@ -59,48 +60,36 @@ object Fields {
   }
   
   @scala.inline
-  implicit class FieldsOps[Self <: Fields] (val x: Self) extends AnyVal {
+  implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsArray(value: () => js.Array[Field]): Self = StObject.set(x, "asArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuild(value: () => js.Array[_]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForIds(value: js.Array[String] => Fields): Self = StObject.set(x, "forIds", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAsArray(value: () => js.Array[Field]): Self = this.set("asArray", js.Any.fromFunction0(value))
+    def setGetDefaultDimension(value: () => Field | Null): Self = StObject.set(x, "getDefaultDimension", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuild(value: () => js.Array[_]): Self = this.set("build", js.Any.fromFunction0(value))
+    def setGetDefaultMetric(value: () => Field | Null): Self = StObject.set(x, "getDefaultMetric", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForIds(value: js.Array[String] => Fields): Self = this.set("forIds", js.Any.fromFunction1(value))
+    def setGetFieldById(value: String => Field | Null): Self = StObject.set(x, "getFieldById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDefaultDimension(value: () => Field | Null): Self = this.set("getDefaultDimension", js.Any.fromFunction0(value))
+    def setNewDimension(value: () => Field): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultMetric(value: () => Field | Null): Self = this.set("getDefaultMetric", js.Any.fromFunction0(value))
+    def setNewMetric(value: () => Field): Self = StObject.set(x, "newMetric", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFieldById(value: String => Field | Null): Self = this.set("getFieldById", js.Any.fromFunction1(value))
+    def setSetDefaultDimension(value: String => Unit): Self = StObject.set(x, "setDefaultDimension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNewDimension(value: () => Field): Self = this.set("newDimension", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNewMetric(value: () => Field): Self = this.set("newMetric", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDefaultDimension(value: String => Unit): Self = this.set("setDefaultDimension", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDefaultMetric(value: String => Unit): Self = this.set("setDefaultMetric", js.Any.fromFunction1(value))
+    def setSetDefaultMetric(value: String => Unit): Self = StObject.set(x, "setDefaultMetric", js.Any.fromFunction1(value))
   }
 }

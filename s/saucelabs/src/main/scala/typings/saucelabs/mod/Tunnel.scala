@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,144 +59,132 @@ object Tunnel {
   }
   
   @scala.inline
-  implicit class TunnelOps[Self <: Tunnel] (val x: Self) extends AnyVal {
+  implicit class TunnelMutableBuilder[Self <: Tunnel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreation_time(value: Double): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreation_timeUndefined: Self = StObject.set(x, "creation_time", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirect_domains(value: js.Array[String]): Self = StObject.set(x, "direct_domains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDirect_domainsUndefined: Self = StObject.set(x, "direct_domains", js.undefined)
     
     @scala.inline
-    def setCreation_time(value: Double): Self = this.set("creation_time", value.asInstanceOf[js.Any])
+    def setDirect_domainsVarargs(value: String*): Self = StObject.set(x, "direct_domains", js.Array(value :_*))
     
     @scala.inline
-    def deleteCreation_time: Self = this.set("creation_time", js.undefined)
+    def setDomain_names(value: js.Array[String]): Self = StObject.set(x, "domain_names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirect_domainsVarargs(value: String*): Self = this.set("direct_domains", js.Array(value :_*))
+    def setDomain_namesUndefined: Self = StObject.set(x, "domain_names", js.undefined)
     
     @scala.inline
-    def setDirect_domains(value: js.Array[String]): Self = this.set("direct_domains", value.asInstanceOf[js.Any])
+    def setDomain_namesVarargs(value: String*): Self = StObject.set(x, "domain_names", js.Array(value :_*))
     
     @scala.inline
-    def deleteDirect_domains: Self = this.set("direct_domains", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain_namesVarargs(value: String*): Self = this.set("domain_names", js.Array(value :_*))
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setDomain_names(value: js.Array[String]): Self = this.set("domain_names", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomain_names: Self = this.set("domain_names", js.undefined)
+    def setLast_connected(value: Double): Self = StObject.set(x, "last_connected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setLast_connectedUndefined: Self = StObject.set(x, "last_connected", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setLaunch_time(value: Double): Self = StObject.set(x, "launch_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_connected(value: Double): Self = this.set("last_connected", value.asInstanceOf[js.Any])
+    def setLaunch_timeUndefined: Self = StObject.set(x, "launch_time", js.undefined)
     
     @scala.inline
-    def deleteLast_connected: Self = this.set("last_connected", js.undefined)
+    def setMetadata(value: TunnelMetaData): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunch_time(value: Double): Self = this.set("launch_time", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteLaunch_time: Self = this.set("launch_time", js.undefined)
+    def setNo_proxy_caching(value: Boolean): Self = StObject.set(x, "no_proxy_caching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: TunnelMetaData): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNo_proxy_cachingUndefined: Self = StObject.set(x, "no_proxy_caching", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setNo_ssl_bump_domains(value: js.Array[String]): Self = StObject.set(x, "no_ssl_bump_domains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNo_proxy_caching(value: Boolean): Self = this.set("no_proxy_caching", value.asInstanceOf[js.Any])
+    def setNo_ssl_bump_domainsUndefined: Self = StObject.set(x, "no_ssl_bump_domains", js.undefined)
     
     @scala.inline
-    def deleteNo_proxy_caching: Self = this.set("no_proxy_caching", js.undefined)
+    def setNo_ssl_bump_domainsVarargs(value: String*): Self = StObject.set(x, "no_ssl_bump_domains", js.Array(value :_*))
     
     @scala.inline
-    def setNo_ssl_bump_domainsVarargs(value: String*): Self = this.set("no_ssl_bump_domains", js.Array(value :_*))
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNo_ssl_bump_domains(value: js.Array[String]): Self = this.set("no_ssl_bump_domains", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteNo_ssl_bump_domains: Self = this.set("no_ssl_bump_domains", js.undefined)
+    def setShared_tunnel(value: Boolean): Self = StObject.set(x, "shared_tunnel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setShared_tunnelUndefined: Self = StObject.set(x, "shared_tunnel", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setShutdown_time(value: Double): Self = StObject.set(x, "shutdown_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShared_tunnel(value: Boolean): Self = this.set("shared_tunnel", value.asInstanceOf[js.Any])
+    def setShutdown_timeUndefined: Self = StObject.set(x, "shutdown_time", js.undefined)
     
     @scala.inline
-    def deleteShared_tunnel: Self = this.set("shared_tunnel", js.undefined)
+    def setSsh_port(value: Double): Self = StObject.set(x, "ssh_port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShutdown_time(value: Double): Self = this.set("shutdown_time", value.asInstanceOf[js.Any])
+    def setSsh_portUndefined: Self = StObject.set(x, "ssh_port", js.undefined)
     
     @scala.inline
-    def deleteShutdown_time: Self = this.set("shutdown_time", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsh_port(value: Double): Self = this.set("ssh_port", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSsh_port: Self = this.set("ssh_port", js.undefined)
+    def setTunnel_identifier(value: String): Self = StObject.set(x, "tunnel_identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTunnel_identifierUndefined: Self = StObject.set(x, "tunnel_identifier", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUse_caching_proxy(value: Boolean): Self = StObject.set(x, "use_caching_proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTunnel_identifier(value: String): Self = this.set("tunnel_identifier", value.asInstanceOf[js.Any])
+    def setUse_caching_proxyUndefined: Self = StObject.set(x, "use_caching_proxy", js.undefined)
     
     @scala.inline
-    def deleteTunnel_identifier: Self = this.set("tunnel_identifier", js.undefined)
+    def setUse_kgp(value: Boolean): Self = StObject.set(x, "use_kgp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse_caching_proxy(value: Boolean): Self = this.set("use_caching_proxy", value.asInstanceOf[js.Any])
+    def setUse_kgpUndefined: Self = StObject.set(x, "use_kgp", js.undefined)
     
     @scala.inline
-    def deleteUse_caching_proxy: Self = this.set("use_caching_proxy", js.undefined)
+    def setUser_shutdown(value: Boolean): Self = StObject.set(x, "user_shutdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse_kgp(value: Boolean): Self = this.set("use_kgp", value.asInstanceOf[js.Any])
+    def setUser_shutdownUndefined: Self = StObject.set(x, "user_shutdown", js.undefined)
     
     @scala.inline
-    def deleteUse_kgp: Self = this.set("use_kgp", js.undefined)
+    def setVm_version(value: String): Self = StObject.set(x, "vm_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_shutdown(value: Boolean): Self = this.set("user_shutdown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_shutdown: Self = this.set("user_shutdown", js.undefined)
-    
-    @scala.inline
-    def setVm_version(value: String): Self = this.set("vm_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVm_version: Self = this.set("vm_version", js.undefined)
+    def setVm_versionUndefined: Self = StObject.set(x, "vm_version", js.undefined)
   }
 }

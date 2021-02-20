@@ -1,11 +1,12 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth0DecodedHash extends js.Object {
+trait Auth0DecodedHash extends StObject {
   
   var accessToken: js.UndefOr[String] = js.native
   
@@ -34,72 +35,60 @@ object Auth0DecodedHash {
   }
   
   @scala.inline
-  implicit class Auth0DecodedHashOps[Self <: Auth0DecodedHash] (val x: Self) extends AnyVal {
+  implicit class Auth0DecodedHashMutableBuilder[Self <: Auth0DecodedHash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppState(value: js.Any): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setAppStateUndefined: Self = StObject.set(x, "appState", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppState(value: js.Any): Self = this.set("appState", value.asInstanceOf[js.Any])
+    def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
     
     @scala.inline
-    def deleteAppState: Self = this.set("appState", js.undefined)
+    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiresIn(value: Double): Self = this.set("expiresIn", value.asInstanceOf[js.Any])
+    def setIdTokenPayload(value: js.Any): Self = StObject.set(x, "idTokenPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpiresIn: Self = this.set("expiresIn", js.undefined)
+    def setIdTokenPayloadUndefined: Self = StObject.set(x, "idTokenPayload", js.undefined)
     
     @scala.inline
-    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
     @scala.inline
-    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdTokenPayload(value: js.Any): Self = this.set("idTokenPayload", value.asInstanceOf[js.Any])
+    def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
     
     @scala.inline
-    def deleteIdTokenPayload: Self = this.set("idTokenPayload", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshToken(value: String): Self = this.set("refreshToken", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteRefreshToken: Self = this.set("refreshToken", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setTokenType(value: String): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setTokenType(value: String): Self = this.set("tokenType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenType: Self = this.set("tokenType", js.undefined)
+    def setTokenTypeUndefined: Self = StObject.set(x, "tokenType", js.undefined)
   }
 }

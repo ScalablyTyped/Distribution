@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,21 +25,9 @@ object ASPxClientProcessingModeEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientProcessingModeEventArgsOps[Self <: ASPxClientProcessingModeEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientProcessingModeEventArgsMutableBuilder[Self <: ASPxClientProcessingModeEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProcessOnServer(value: Boolean): Self = this.set("processOnServer", value.asInstanceOf[js.Any])
+    def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
   }
 }

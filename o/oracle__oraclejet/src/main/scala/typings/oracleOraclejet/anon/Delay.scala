@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delay extends js.Object {
+trait Delay extends StObject {
   
   var delay: js.UndefOr[String] = js.native
   
@@ -34,72 +35,60 @@ object Delay {
   }
   
   @scala.inline
-  implicit class DelayOps[Self <: Delay] (val x: Self) extends AnyVal {
+  implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: String): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setEndMaxHeight(value: String): Self = StObject.set(x, "endMaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEndMaxHeightUndefined: Self = StObject.set(x, "endMaxHeight", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setEndMaxWidth(value: String): Self = StObject.set(x, "endMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndMaxHeight(value: String): Self = this.set("endMaxHeight", value.asInstanceOf[js.Any])
+    def setEndMaxWidthUndefined: Self = StObject.set(x, "endMaxWidth", js.undefined)
     
     @scala.inline
-    def deleteEndMaxHeight: Self = this.set("endMaxHeight", js.undefined)
+    def setPersist(value: String): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndMaxWidth(value: String): Self = this.set("endMaxWidth", value.asInstanceOf[js.Any])
+    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
     @scala.inline
-    def deleteEndMaxWidth: Self = this.set("endMaxWidth", js.undefined)
+    def setStartMaxHeight(value: String): Self = StObject.set(x, "startMaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersist(value: String): Self = this.set("persist", value.asInstanceOf[js.Any])
+    def setStartMaxHeightUndefined: Self = StObject.set(x, "startMaxHeight", js.undefined)
     
     @scala.inline
-    def deletePersist: Self = this.set("persist", js.undefined)
+    def setStartMaxWidth(value: String): Self = StObject.set(x, "startMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartMaxHeight(value: String): Self = this.set("startMaxHeight", value.asInstanceOf[js.Any])
+    def setStartMaxWidthUndefined: Self = StObject.set(x, "startMaxWidth", js.undefined)
     
     @scala.inline
-    def deleteStartMaxHeight: Self = this.set("startMaxHeight", js.undefined)
+    def setTimingFunction(value: String): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartMaxWidth(value: String): Self = this.set("startMaxWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartMaxWidth: Self = this.set("startMaxWidth", js.undefined)
-    
-    @scala.inline
-    def setTimingFunction(value: String): Self = this.set("timingFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimingFunction: Self = this.set("timingFunction", js.undefined)
+    def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
   }
 }

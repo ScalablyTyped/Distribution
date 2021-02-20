@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/maxBlock", JSImport.Namespace)
-@js.native
-object maxBlockMod extends js.Object {
+object maxBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/maxBlock", "MaxBlock")
   @js.native
   class MaxBlock protected () extends NodeMaterialBlock {
     /**

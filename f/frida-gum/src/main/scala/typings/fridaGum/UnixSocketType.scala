@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.fridaGumStrings.`abstract`
   - typings.fridaGum.fridaGumStrings.`abstract-padded`
 */
-trait UnixSocketType extends js.Object
+trait UnixSocketType extends StObject
 object UnixSocketType {
   
   @scala.inline

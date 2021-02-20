@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfoWindowHandlerMap[T /* <: InfoWindow */] extends js.Object {
+trait InfoWindowHandlerMap[T /* <: InfoWindow */] extends StObject {
   
   /**
     * This event is fired when the close button was clicked.
@@ -63,33 +64,21 @@ object InfoWindowHandlerMap {
   }
   
   @scala.inline
-  implicit class InfoWindowHandlerMapOps[Self <: InfoWindowHandlerMap[_], T /* <: InfoWindow */] (val x: Self with InfoWindowHandlerMap[T]) extends AnyVal {
+  implicit class InfoWindowHandlerMapMutableBuilder[Self <: InfoWindowHandlerMap[_], T /* <: InfoWindow */] (val x: Self with InfoWindowHandlerMap[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseclick(value: () => Unit): Self = StObject.set(x, "closeclick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent_changed(value: () => Unit): Self = StObject.set(x, "content_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomready(value: () => Unit): Self = StObject.set(x, "domready", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCloseclick(value: () => Unit): Self = this.set("closeclick", js.Any.fromFunction0(value))
+    def setPosition_changed(value: () => Unit): Self = StObject.set(x, "position_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContent_changed(value: () => Unit): Self = this.set("content_changed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDomready(value: () => Unit): Self = this.set("domready", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPosition_changed(value: () => Unit): Self = this.set("position_changed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setZindex_changed(value: () => Unit): Self = this.set("zindex_changed", js.Any.fromFunction0(value))
+    def setZindex_changed(value: () => Unit): Self = StObject.set(x, "zindex_changed", js.Any.fromFunction0(value))
   }
 }

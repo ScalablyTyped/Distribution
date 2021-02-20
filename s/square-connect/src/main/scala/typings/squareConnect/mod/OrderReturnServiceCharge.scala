@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderReturnServiceCharge")
 @js.native
-class OrderReturnServiceCharge () extends js.Object {
+class OrderReturnServiceCharge () extends StObject {
   
   /**
     * The amount of a non-percentage based service charge. Exactly one of `percentage` or `amount_money` should be set.

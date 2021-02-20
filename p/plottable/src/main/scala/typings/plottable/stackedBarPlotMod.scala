@@ -4,14 +4,14 @@ import typings.plottable.barPlotMod.Bar
 import typings.plottable.barPlotMod.BarOrientation
 import typings.plottable.formattersMod.Formatter
 import typings.plottable.stackingUtilsMod.IStackingOrder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/plots/stackedBarPlot", JSImport.Namespace)
-@js.native
-object stackedBarPlotMod extends js.Object {
+object stackedBarPlotMod {
   
+  @JSImport("plottable/build/src/plots/stackedBarPlot", "StackedBar")
   @js.native
   /**
     * A StackedBar Plot stacks bars across Datasets based on the primary value of the bars.
@@ -72,9 +72,16 @@ object stackedBarPlotMod extends js.Object {
     def stackingOrder(stackingOrder: IStackingOrder): this.type = js.native
   }
   /* static members */
-  @js.native
-  object StackedBar extends js.Object {
+  object StackedBar {
     
-    var _EXTREMA_LABEL_MARGIN_FROM_BAR: Double = js.native
+    @JSImport("plottable/build/src/plots/stackedBarPlot", "StackedBar")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable/build/src/plots/stackedBarPlot", "StackedBar._EXTREMA_LABEL_MARGIN_FROM_BAR")
+    @js.native
+    def _EXTREMA_LABEL_MARGIN_FROM_BAR: Double = js.native
+    @scala.inline
+    def _EXTREMA_LABEL_MARGIN_FROM_BAR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EXTREMA_LABEL_MARGIN_FROM_BAR")(x.asInstanceOf[js.Any])
   }
 }

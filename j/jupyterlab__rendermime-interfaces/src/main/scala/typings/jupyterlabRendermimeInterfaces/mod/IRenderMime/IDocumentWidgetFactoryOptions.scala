@@ -1,5 +1,6 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to define a document opener that uses its renderer factory.
   */
 @js.native
-trait IDocumentWidgetFactoryOptions extends js.Object {
+trait IDocumentWidgetFactoryOptions extends StObject {
   
   /**
     * The file types for which the factory should be the default.
@@ -59,60 +60,48 @@ object IDocumentWidgetFactoryOptions {
   }
   
   @scala.inline
-  implicit class IDocumentWidgetFactoryOptionsOps[Self <: IDocumentWidgetFactoryOptions] (val x: Self) extends AnyVal {
+  implicit class IDocumentWidgetFactoryOptionsMutableBuilder[Self <: IDocumentWidgetFactoryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultFor(value: js.Array[String]): Self = StObject.set(x, "defaultFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultForUndefined: Self = StObject.set(x, "defaultFor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultForVarargs(value: String*): Self = StObject.set(x, "defaultFor", js.Array(value :_*))
     
     @scala.inline
-    def setFileTypesVarargs(value: String*): Self = this.set("fileTypes", js.Array(value :_*))
+    def setDefaultRendered(value: js.Array[String]): Self = StObject.set(x, "defaultRendered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileTypes(value: js.Array[String]): Self = this.set("fileTypes", value.asInstanceOf[js.Any])
+    def setDefaultRenderedUndefined: Self = StObject.set(x, "defaultRendered", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDefaultRenderedVarargs(value: String*): Self = StObject.set(x, "defaultRendered", js.Array(value :_*))
     
     @scala.inline
-    def setPrimaryFileType(value: String): Self = this.set("primaryFileType", value.asInstanceOf[js.Any])
+    def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultForVarargs(value: String*): Self = this.set("defaultFor", js.Array(value :_*))
+    def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultFor(value: js.Array[String]): Self = this.set("defaultFor", value.asInstanceOf[js.Any])
+    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultFor: Self = this.set("defaultFor", js.undefined)
+    def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
     
     @scala.inline
-    def setDefaultRenderedVarargs(value: String*): Self = this.set("defaultRendered", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRendered(value: js.Array[String]): Self = this.set("defaultRendered", value.asInstanceOf[js.Any])
+    def setPrimaryFileType(value: String): Self = StObject.set(x, "primaryFileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultRendered: Self = this.set("defaultRendered", js.undefined)
+    def setToolbarFactory(value: /* widget */ js.UndefOr[IRenderer] => js.Array[IToolbarItem]): Self = StObject.set(x, "toolbarFactory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelName: Self = this.set("modelName", js.undefined)
-    
-    @scala.inline
-    def setToolbarFactory(value: /* widget */ js.UndefOr[IRenderer] => js.Array[IToolbarItem]): Self = this.set("toolbarFactory", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteToolbarFactory: Self = this.set("toolbarFactory", js.undefined)
+    def setToolbarFactoryUndefined: Self = StObject.set(x, "toolbarFactory", js.undefined)
   }
 }

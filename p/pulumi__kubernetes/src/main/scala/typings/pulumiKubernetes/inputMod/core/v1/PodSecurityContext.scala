@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext.
   */
 @js.native
-trait PodSecurityContext extends js.Object {
+trait PodSecurityContext extends StObject {
   
   /**
     * A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:
@@ -74,84 +75,72 @@ object PodSecurityContext {
   }
   
   @scala.inline
-  implicit class PodSecurityContextOps[Self <: PodSecurityContext] (val x: Self) extends AnyVal {
+  implicit class PodSecurityContextMutableBuilder[Self <: PodSecurityContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFsGroup(value: Input[Double]): Self = StObject.set(x, "fsGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFsGroupChangePolicy(value: Input[String]): Self = StObject.set(x, "fsGroupChangePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFsGroupChangePolicyUndefined: Self = StObject.set(x, "fsGroupChangePolicy", js.undefined)
     
     @scala.inline
-    def setFsGroup(value: Input[Double]): Self = this.set("fsGroup", value.asInstanceOf[js.Any])
+    def setFsGroupUndefined: Self = StObject.set(x, "fsGroup", js.undefined)
     
     @scala.inline
-    def deleteFsGroup: Self = this.set("fsGroup", js.undefined)
+    def setRunAsGroup(value: Input[Double]): Self = StObject.set(x, "runAsGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsGroupChangePolicy(value: Input[String]): Self = this.set("fsGroupChangePolicy", value.asInstanceOf[js.Any])
+    def setRunAsGroupUndefined: Self = StObject.set(x, "runAsGroup", js.undefined)
     
     @scala.inline
-    def deleteFsGroupChangePolicy: Self = this.set("fsGroupChangePolicy", js.undefined)
+    def setRunAsNonRoot(value: Input[Boolean]): Self = StObject.set(x, "runAsNonRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunAsGroup(value: Input[Double]): Self = this.set("runAsGroup", value.asInstanceOf[js.Any])
+    def setRunAsNonRootUndefined: Self = StObject.set(x, "runAsNonRoot", js.undefined)
     
     @scala.inline
-    def deleteRunAsGroup: Self = this.set("runAsGroup", js.undefined)
+    def setRunAsUser(value: Input[Double]): Self = StObject.set(x, "runAsUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunAsNonRoot(value: Input[Boolean]): Self = this.set("runAsNonRoot", value.asInstanceOf[js.Any])
+    def setRunAsUserUndefined: Self = StObject.set(x, "runAsUser", js.undefined)
     
     @scala.inline
-    def deleteRunAsNonRoot: Self = this.set("runAsNonRoot", js.undefined)
+    def setSeLinuxOptions(value: Input[SELinuxOptions]): Self = StObject.set(x, "seLinuxOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunAsUser(value: Input[Double]): Self = this.set("runAsUser", value.asInstanceOf[js.Any])
+    def setSeLinuxOptionsUndefined: Self = StObject.set(x, "seLinuxOptions", js.undefined)
     
     @scala.inline
-    def deleteRunAsUser: Self = this.set("runAsUser", js.undefined)
+    def setSeccompProfile(value: Input[SeccompProfile]): Self = StObject.set(x, "seccompProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeLinuxOptions(value: Input[SELinuxOptions]): Self = this.set("seLinuxOptions", value.asInstanceOf[js.Any])
+    def setSeccompProfileUndefined: Self = StObject.set(x, "seccompProfile", js.undefined)
     
     @scala.inline
-    def deleteSeLinuxOptions: Self = this.set("seLinuxOptions", js.undefined)
+    def setSupplementalGroups(value: Input[js.Array[Input[Double]]]): Self = StObject.set(x, "supplementalGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeccompProfile(value: Input[SeccompProfile]): Self = this.set("seccompProfile", value.asInstanceOf[js.Any])
+    def setSupplementalGroupsUndefined: Self = StObject.set(x, "supplementalGroups", js.undefined)
     
     @scala.inline
-    def deleteSeccompProfile: Self = this.set("seccompProfile", js.undefined)
+    def setSupplementalGroupsVarargs(value: Input[Double]*): Self = StObject.set(x, "supplementalGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSupplementalGroupsVarargs(value: Input[Double]*): Self = this.set("supplementalGroups", js.Array(value :_*))
+    def setSysctls(value: Input[js.Array[Input[Sysctl]]]): Self = StObject.set(x, "sysctls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupplementalGroups(value: Input[js.Array[Input[Double]]]): Self = this.set("supplementalGroups", value.asInstanceOf[js.Any])
+    def setSysctlsUndefined: Self = StObject.set(x, "sysctls", js.undefined)
     
     @scala.inline
-    def deleteSupplementalGroups: Self = this.set("supplementalGroups", js.undefined)
+    def setSysctlsVarargs(value: Input[Sysctl]*): Self = StObject.set(x, "sysctls", js.Array(value :_*))
     
     @scala.inline
-    def setSysctlsVarargs(value: Input[Sysctl]*): Self = this.set("sysctls", js.Array(value :_*))
+    def setWindowsOptions(value: Input[WindowsSecurityContextOptions]): Self = StObject.set(x, "windowsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSysctls(value: Input[js.Array[Input[Sysctl]]]): Self = this.set("sysctls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSysctls: Self = this.set("sysctls", js.undefined)
-    
-    @scala.inline
-    def setWindowsOptions(value: Input[WindowsSecurityContextOptions]): Self = this.set("windowsOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsOptions: Self = this.set("windowsOptions", js.undefined)
+    def setWindowsOptionsUndefined: Self = StObject.set(x, "windowsOptions", js.undefined)
   }
 }

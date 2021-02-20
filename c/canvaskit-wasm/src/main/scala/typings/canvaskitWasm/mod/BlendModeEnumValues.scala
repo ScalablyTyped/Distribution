@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,105 +106,93 @@ object BlendModeEnumValues {
   }
   
   @scala.inline
-  implicit class BlendModeEnumValuesOps[Self <: BlendModeEnumValues] (val x: Self) extends AnyVal {
+  implicit class BlendModeEnumValuesMutableBuilder[Self <: BlendModeEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: BlendMode): Self = StObject.set(x, "Clear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: BlendMode): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorBurn(value: BlendMode): Self = StObject.set(x, "ColorBurn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: BlendMode): Self = this.set("Clear", value.asInstanceOf[js.Any])
+    def setColorDodge(value: BlendMode): Self = StObject.set(x, "ColorDodge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: BlendMode): Self = this.set("Color", value.asInstanceOf[js.Any])
+    def setDarken(value: BlendMode): Self = StObject.set(x, "Darken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorBurn(value: BlendMode): Self = this.set("ColorBurn", value.asInstanceOf[js.Any])
+    def setDifference(value: BlendMode): Self = StObject.set(x, "Difference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorDodge(value: BlendMode): Self = this.set("ColorDodge", value.asInstanceOf[js.Any])
+    def setDst(value: BlendMode): Self = StObject.set(x, "Dst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDarken(value: BlendMode): Self = this.set("Darken", value.asInstanceOf[js.Any])
+    def setDstATop(value: BlendMode): Self = StObject.set(x, "DstATop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDifference(value: BlendMode): Self = this.set("Difference", value.asInstanceOf[js.Any])
+    def setDstIn(value: BlendMode): Self = StObject.set(x, "DstIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDst(value: BlendMode): Self = this.set("Dst", value.asInstanceOf[js.Any])
+    def setDstOut(value: BlendMode): Self = StObject.set(x, "DstOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDstATop(value: BlendMode): Self = this.set("DstATop", value.asInstanceOf[js.Any])
+    def setDstOver(value: BlendMode): Self = StObject.set(x, "DstOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDstIn(value: BlendMode): Self = this.set("DstIn", value.asInstanceOf[js.Any])
+    def setExclusion(value: BlendMode): Self = StObject.set(x, "Exclusion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDstOut(value: BlendMode): Self = this.set("DstOut", value.asInstanceOf[js.Any])
+    def setHardLight(value: BlendMode): Self = StObject.set(x, "HardLight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDstOver(value: BlendMode): Self = this.set("DstOver", value.asInstanceOf[js.Any])
+    def setHue(value: BlendMode): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusion(value: BlendMode): Self = this.set("Exclusion", value.asInstanceOf[js.Any])
+    def setLighten(value: BlendMode): Self = StObject.set(x, "Lighten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardLight(value: BlendMode): Self = this.set("HardLight", value.asInstanceOf[js.Any])
+    def setLuminosity(value: BlendMode): Self = StObject.set(x, "Luminosity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHue(value: BlendMode): Self = this.set("Hue", value.asInstanceOf[js.Any])
+    def setModulate(value: BlendMode): Self = StObject.set(x, "Modulate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLighten(value: BlendMode): Self = this.set("Lighten", value.asInstanceOf[js.Any])
+    def setMultiply(value: BlendMode): Self = StObject.set(x, "Multiply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLuminosity(value: BlendMode): Self = this.set("Luminosity", value.asInstanceOf[js.Any])
+    def setOverlay(value: BlendMode): Self = StObject.set(x, "Overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModulate(value: BlendMode): Self = this.set("Modulate", value.asInstanceOf[js.Any])
+    def setPlus(value: BlendMode): Self = StObject.set(x, "Plus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiply(value: BlendMode): Self = this.set("Multiply", value.asInstanceOf[js.Any])
+    def setSaturation(value: BlendMode): Self = StObject.set(x, "Saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay(value: BlendMode): Self = this.set("Overlay", value.asInstanceOf[js.Any])
+    def setScreen(value: BlendMode): Self = StObject.set(x, "Screen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlus(value: BlendMode): Self = this.set("Plus", value.asInstanceOf[js.Any])
+    def setSoftLight(value: BlendMode): Self = StObject.set(x, "SoftLight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturation(value: BlendMode): Self = this.set("Saturation", value.asInstanceOf[js.Any])
+    def setSrc(value: BlendMode): Self = StObject.set(x, "Src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreen(value: BlendMode): Self = this.set("Screen", value.asInstanceOf[js.Any])
+    def setSrcATop(value: BlendMode): Self = StObject.set(x, "SrcATop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoftLight(value: BlendMode): Self = this.set("SoftLight", value.asInstanceOf[js.Any])
+    def setSrcIn(value: BlendMode): Self = StObject.set(x, "SrcIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: BlendMode): Self = this.set("Src", value.asInstanceOf[js.Any])
+    def setSrcOut(value: BlendMode): Self = StObject.set(x, "SrcOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrcATop(value: BlendMode): Self = this.set("SrcATop", value.asInstanceOf[js.Any])
+    def setSrcOver(value: BlendMode): Self = StObject.set(x, "SrcOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrcIn(value: BlendMode): Self = this.set("SrcIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSrcOut(value: BlendMode): Self = this.set("SrcOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSrcOver(value: BlendMode): Self = this.set("SrcOver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXor(value: BlendMode): Self = this.set("Xor", value.asInstanceOf[js.Any])
+    def setXor(value: BlendMode): Self = StObject.set(x, "Xor", value.asInstanceOf[js.Any])
   }
 }

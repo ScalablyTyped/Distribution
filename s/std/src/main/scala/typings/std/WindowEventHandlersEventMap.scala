@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowEventHandlersEventMap extends js.Object {
+trait WindowEventHandlersEventMap extends StObject {
   
   var afterprint: Event = js.native
   
@@ -65,66 +66,54 @@ object WindowEventHandlersEventMap {
   }
   
   @scala.inline
-  implicit class WindowEventHandlersEventMapOps[Self <: WindowEventHandlersEventMap] (val x: Self) extends AnyVal {
+  implicit class WindowEventHandlersEventMapMutableBuilder[Self <: WindowEventHandlersEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterprint(value: Event): Self = StObject.set(x, "afterprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeprint(value: Event): Self = StObject.set(x, "beforeprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeunload(value: BeforeUnloadEvent): Self = StObject.set(x, "beforeunload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterprint(value: Event): Self = this.set("afterprint", value.asInstanceOf[js.Any])
+    def setHashchange(value: HashChangeEvent): Self = StObject.set(x, "hashchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeprint(value: Event): Self = this.set("beforeprint", value.asInstanceOf[js.Any])
+    def setLanguagechange(value: Event): Self = StObject.set(x, "languagechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeunload(value: BeforeUnloadEvent): Self = this.set("beforeunload", value.asInstanceOf[js.Any])
+    def setMessage(value: MessageEvent[_]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashchange(value: HashChangeEvent): Self = this.set("hashchange", value.asInstanceOf[js.Any])
+    def setMessageerror(value: MessageEvent[_]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguagechange(value: Event): Self = this.set("languagechange", value.asInstanceOf[js.Any])
+    def setOffline(value: Event): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: MessageEvent[_]): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setOnline(value: Event): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageerror(value: MessageEvent[_]): Self = this.set("messageerror", value.asInstanceOf[js.Any])
+    def setPagehide(value: PageTransitionEvent): Self = StObject.set(x, "pagehide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffline(value: Event): Self = this.set("offline", value.asInstanceOf[js.Any])
+    def setPageshow(value: PageTransitionEvent): Self = StObject.set(x, "pageshow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnline(value: Event): Self = this.set("online", value.asInstanceOf[js.Any])
+    def setPopstate(value: PopStateEvent): Self = StObject.set(x, "popstate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagehide(value: PageTransitionEvent): Self = this.set("pagehide", value.asInstanceOf[js.Any])
+    def setRejectionhandled(value: PromiseRejectionEvent): Self = StObject.set(x, "rejectionhandled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageshow(value: PageTransitionEvent): Self = this.set("pageshow", value.asInstanceOf[js.Any])
+    def setStorage(value: StorageEvent): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopstate(value: PopStateEvent): Self = this.set("popstate", value.asInstanceOf[js.Any])
+    def setUnhandledrejection(value: PromiseRejectionEvent): Self = StObject.set(x, "unhandledrejection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectionhandled(value: PromiseRejectionEvent): Self = this.set("rejectionhandled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorage(value: StorageEvent): Self = this.set("storage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnhandledrejection(value: PromiseRejectionEvent): Self = this.set("unhandledrejection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnload(value: Event): Self = this.set("unload", value.asInstanceOf[js.Any])
+    def setUnload(value: Event): Self = StObject.set(x, "unload", value.asInstanceOf[js.Any])
   }
 }

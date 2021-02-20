@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavingsPlansPurchaseRecommendation extends js.Object {
+trait SavingsPlansPurchaseRecommendation extends StObject {
   
   /**
     * The account scope that you want your recommendations for. Amazon Web Services calculates recommendations including the management account and member accounts if the value is set to PAYER. If the value is LINKED, recommendations are calculated for individual member accounts only.
@@ -51,63 +52,51 @@ object SavingsPlansPurchaseRecommendation {
   }
   
   @scala.inline
-  implicit class SavingsPlansPurchaseRecommendationOps[Self <: SavingsPlansPurchaseRecommendation] (val x: Self) extends AnyVal {
+  implicit class SavingsPlansPurchaseRecommendationMutableBuilder[Self <: SavingsPlansPurchaseRecommendation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountScope(value: AccountScope): Self = StObject.set(x, "AccountScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountScopeUndefined: Self = StObject.set(x, "AccountScope", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountScope(value: AccountScope): Self = this.set("AccountScope", value.asInstanceOf[js.Any])
+    def setLookbackPeriodInDaysUndefined: Self = StObject.set(x, "LookbackPeriodInDays", js.undefined)
     
     @scala.inline
-    def deleteAccountScope: Self = this.set("AccountScope", js.undefined)
+    def setPaymentOption(value: PaymentOption): Self = StObject.set(x, "PaymentOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = this.set("LookbackPeriodInDays", value.asInstanceOf[js.Any])
+    def setPaymentOptionUndefined: Self = StObject.set(x, "PaymentOption", js.undefined)
     
     @scala.inline
-    def deleteLookbackPeriodInDays: Self = this.set("LookbackPeriodInDays", js.undefined)
+    def setSavingsPlansPurchaseRecommendationDetails(value: SavingsPlansPurchaseRecommendationDetailList): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentOption(value: PaymentOption): Self = this.set("PaymentOption", value.asInstanceOf[js.Any])
+    def setSavingsPlansPurchaseRecommendationDetailsUndefined: Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", js.undefined)
     
     @scala.inline
-    def deletePaymentOption: Self = this.set("PaymentOption", js.undefined)
+    def setSavingsPlansPurchaseRecommendationDetailsVarargs(value: SavingsPlansPurchaseRecommendationDetail*): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationDetails", js.Array(value :_*))
     
     @scala.inline
-    def setSavingsPlansPurchaseRecommendationDetailsVarargs(value: SavingsPlansPurchaseRecommendationDetail*): Self = this.set("SavingsPlansPurchaseRecommendationDetails", js.Array(value :_*))
+    def setSavingsPlansPurchaseRecommendationSummary(value: SavingsPlansPurchaseRecommendationSummary): Self = StObject.set(x, "SavingsPlansPurchaseRecommendationSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsPlansPurchaseRecommendationDetails(value: SavingsPlansPurchaseRecommendationDetailList): Self = this.set("SavingsPlansPurchaseRecommendationDetails", value.asInstanceOf[js.Any])
+    def setSavingsPlansPurchaseRecommendationSummaryUndefined: Self = StObject.set(x, "SavingsPlansPurchaseRecommendationSummary", js.undefined)
     
     @scala.inline
-    def deleteSavingsPlansPurchaseRecommendationDetails: Self = this.set("SavingsPlansPurchaseRecommendationDetails", js.undefined)
+    def setSavingsPlansType(value: SupportedSavingsPlansType): Self = StObject.set(x, "SavingsPlansType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsPlansPurchaseRecommendationSummary(value: SavingsPlansPurchaseRecommendationSummary): Self = this.set("SavingsPlansPurchaseRecommendationSummary", value.asInstanceOf[js.Any])
+    def setSavingsPlansTypeUndefined: Self = StObject.set(x, "SavingsPlansType", js.undefined)
     
     @scala.inline
-    def deleteSavingsPlansPurchaseRecommendationSummary: Self = this.set("SavingsPlansPurchaseRecommendationSummary", js.undefined)
+    def setTermInYears(value: TermInYears): Self = StObject.set(x, "TermInYears", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsPlansType(value: SupportedSavingsPlansType): Self = this.set("SavingsPlansType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSavingsPlansType: Self = this.set("SavingsPlansType", js.undefined)
-    
-    @scala.inline
-    def setTermInYears(value: TermInYears): Self = this.set("TermInYears", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTermInYears: Self = this.set("TermInYears", js.undefined)
+    def setTermInYearsUndefined: Self = StObject.set(x, "TermInYears", js.undefined)
   }
 }

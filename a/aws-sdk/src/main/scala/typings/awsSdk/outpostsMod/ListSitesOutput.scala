@@ -1,11 +1,12 @@
 package typings.awsSdk.outpostsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSitesOutput extends js.Object {
+trait ListSitesOutput extends StObject {
   
   var NextToken: js.UndefOr[Token] = js.native
   
@@ -20,33 +21,21 @@ object ListSitesOutput {
   }
   
   @scala.inline
-  implicit class ListSitesOutputOps[Self <: ListSitesOutput] (val x: Self) extends AnyVal {
+  implicit class ListSitesOutputMutableBuilder[Self <: ListSitesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSites(value: siteListDefinition): Self = StObject.set(x, "Sites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSitesUndefined: Self = StObject.set(x, "Sites", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSitesVarargs(value: Site*): Self = this.set("Sites", js.Array(value :_*))
-    
-    @scala.inline
-    def setSites(value: siteListDefinition): Self = this.set("Sites", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSites: Self = this.set("Sites", js.undefined)
+    def setSitesVarargs(value: Site*): Self = StObject.set(x, "Sites", js.Array(value :_*))
   }
 }

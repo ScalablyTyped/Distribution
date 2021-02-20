@@ -5,6 +5,7 @@ import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
 import typings.std.ArrayBuffer
 import typings.std.Float32Array
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class HDRTools ()
   extends typings.babylonjs.highDynamicRangeIndexMod.HDRTools
 /* static members */
-@JSImport("babylonjs/Misc/index", "HDRTools")
-@js.native
-object HDRTools extends js.Object {
+object HDRTools {
+  
+  @JSImport("babylonjs/Misc/index", "HDRTools")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns the cubemap information (each faces texture data) extracted from an RGBE texture.
@@ -29,9 +32,15 @@ object HDRTools extends js.Object {
     * @param size The expected size of the extracted cubemap.
     * @return The Cube Map information.
     */
+  @JSImport("babylonjs/Misc/index", "HDRTools.GetCubeMapTextureData")
+  @js.native
   def GetCubeMapTextureData(buffer: ArrayBuffer, size: Double): CubeMapInfo = js.native
   
-  var Ldexp: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "HDRTools.Ldexp")
+  @js.native
+  def Ldexp: js.Any = js.native
+  @scala.inline
+  def Ldexp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ldexp")(x.asInstanceOf[js.Any])
   
   /**
     * Reads header information from an RGBE texture stored in a native array.
@@ -41,6 +50,8 @@ object HDRTools extends js.Object {
     * @param uint8array The binary file stored in  native array.
     * @return The header information.
     */
+  @JSImport("babylonjs/Misc/index", "HDRTools.RGBE_ReadHeader")
+  @js.native
   def RGBE_ReadHeader(uint8array: Uint8Array): HDRInfo = js.native
   
   /**
@@ -54,13 +65,31 @@ object HDRTools extends js.Object {
     * @param hdrInfo The header information of the file.
     * @return The pixels data in RGB right to left up to down order.
     */
+  @JSImport("babylonjs/Misc/index", "HDRTools.RGBE_ReadPixels")
+  @js.native
   def RGBE_ReadPixels(uint8array: Uint8Array, hdrInfo: HDRInfo): Float32Array = js.native
   
-  var RGBE_ReadPixels_NOT_RLE: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "HDRTools.RGBE_ReadPixels_NOT_RLE")
+  @js.native
+  def RGBE_ReadPixels_NOT_RLE: js.Any = js.native
+  @scala.inline
+  def RGBE_ReadPixels_NOT_RLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBE_ReadPixels_NOT_RLE")(x.asInstanceOf[js.Any])
   
-  var RGBE_ReadPixels_RLE: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "HDRTools.RGBE_ReadPixels_RLE")
+  @js.native
+  def RGBE_ReadPixels_RLE: js.Any = js.native
+  @scala.inline
+  def RGBE_ReadPixels_RLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBE_ReadPixels_RLE")(x.asInstanceOf[js.Any])
   
-  var Rgbe2float: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "HDRTools.Rgbe2float")
+  @js.native
+  def Rgbe2float: js.Any = js.native
+  @scala.inline
+  def Rgbe2float_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rgbe2float")(x.asInstanceOf[js.Any])
   
-  var readStringLine: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "HDRTools.readStringLine")
+  @js.native
+  def readStringLine: js.Any = js.native
+  @scala.inline
+  def readStringLine_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readStringLine")(x.asInstanceOf[js.Any])
 }

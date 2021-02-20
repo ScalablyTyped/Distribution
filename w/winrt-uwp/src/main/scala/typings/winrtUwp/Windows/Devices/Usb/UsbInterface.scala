@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the USB interface including its endpoints, the number of alternate settings the interface supports, and gets the entire descriptor set for those settings. It also obtains pipes associated with the endpoints that the interface supports. */
 @js.native
-trait UsbInterface extends js.Object {
+trait UsbInterface extends StObject {
   
   /** Gets an array of objects that represent pipes that the host opened to communicate with bulk IN endpoints defined in the current setting of the USB interface setting. */
   var bulkInPipes: IVectorView[UsbBulkInPipe] = js.native
@@ -47,39 +48,27 @@ object UsbInterface {
   }
   
   @scala.inline
-  implicit class UsbInterfaceOps[Self <: UsbInterface] (val x: Self) extends AnyVal {
+  implicit class UsbInterfaceMutableBuilder[Self <: UsbInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulkInPipes(value: IVectorView[UsbBulkInPipe]): Self = StObject.set(x, "bulkInPipes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulkOutPipes(value: IVectorView[UsbBulkOutPipe]): Self = StObject.set(x, "bulkOutPipes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptors(value: IVectorView[UsbDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkInPipes(value: IVectorView[UsbBulkInPipe]): Self = this.set("bulkInPipes", value.asInstanceOf[js.Any])
+    def setInterfaceNumber(value: Double): Self = StObject.set(x, "interfaceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkOutPipes(value: IVectorView[UsbBulkOutPipe]): Self = this.set("bulkOutPipes", value.asInstanceOf[js.Any])
+    def setInterfaceSettings(value: IVectorView[UsbInterfaceSetting]): Self = StObject.set(x, "interfaceSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptors(value: IVectorView[UsbDescriptor]): Self = this.set("descriptors", value.asInstanceOf[js.Any])
+    def setInterruptInPipes(value: IVectorView[UsbInterruptInPipe]): Self = StObject.set(x, "interruptInPipes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterfaceNumber(value: Double): Self = this.set("interfaceNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterfaceSettings(value: IVectorView[UsbInterfaceSetting]): Self = this.set("interfaceSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterruptInPipes(value: IVectorView[UsbInterruptInPipe]): Self = this.set("interruptInPipes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterruptOutPipes(value: IVectorView[UsbInterruptOutPipe]): Self = this.set("interruptOutPipes", value.asInstanceOf[js.Any])
+    def setInterruptOutPipes(value: IVectorView[UsbInterruptOutPipe]): Self = StObject.set(x, "interruptOutPipes", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.canvasjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartAxisOptions extends js.Object {
+trait ChartAxisOptions extends StObject {
   
   /**
     * Sets the color of Axis line. Axis line color can be a "HTML Color Name" or "hex" code .
@@ -115,102 +116,90 @@ object ChartAxisOptions {
   }
   
   @scala.inline
-  implicit class ChartAxisOptionsOps[Self <: ChartAxisOptions] (val x: Self) extends AnyVal {
+  implicit class ChartAxisOptionsMutableBuilder[Self <: ChartAxisOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineDashType(value: DashType): Self = StObject.set(x, "lineDashType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: String): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setLineDashTypeUndefined: Self = StObject.set(x, "lineDashType", js.undefined)
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setLineThickness(value: Double): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineDashType(value: DashType): Self = this.set("lineDashType", value.asInstanceOf[js.Any])
+    def setLineThicknessUndefined: Self = StObject.set(x, "lineThickness", js.undefined)
     
     @scala.inline
-    def deleteLineDashType: Self = this.set("lineDashType", js.undefined)
+    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineThickness(value: Double): Self = this.set("lineThickness", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLineThickness: Self = this.set("lineThickness", js.undefined)
+    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: Double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
     @scala.inline
-    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum(value: Double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    def setTitleFontColor(value: String): Self = StObject.set(x, "titleFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    def setTitleFontColorUndefined: Self = StObject.set(x, "titleFontColor", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleFontFamily(value: String): Self = StObject.set(x, "titleFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleFontFamilyUndefined: Self = StObject.set(x, "titleFontFamily", js.undefined)
     
     @scala.inline
-    def setTitleFontColor(value: String): Self = this.set("titleFontColor", value.asInstanceOf[js.Any])
+    def setTitleFontSize(value: Double): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitleFontColor: Self = this.set("titleFontColor", js.undefined)
+    def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
     
     @scala.inline
-    def setTitleFontFamily(value: String): Self = this.set("titleFontFamily", value.asInstanceOf[js.Any])
+    def setTitleFontStyle(value: String): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitleFontFamily: Self = this.set("titleFontFamily", js.undefined)
+    def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
     
     @scala.inline
-    def setTitleFontSize(value: Double): Self = this.set("titleFontSize", value.asInstanceOf[js.Any])
+    def setTitleFontWeight(value: String): Self = StObject.set(x, "titleFontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitleFontSize: Self = this.set("titleFontSize", js.undefined)
+    def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
     
     @scala.inline
-    def setTitleFontStyle(value: String): Self = this.set("titleFontStyle", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTitleFontStyle: Self = this.set("titleFontStyle", js.undefined)
+    def setViewportMaximum(value: Double): Self = StObject.set(x, "viewportMaximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleFontWeight(value: String): Self = this.set("titleFontWeight", value.asInstanceOf[js.Any])
+    def setViewportMaximumUndefined: Self = StObject.set(x, "viewportMaximum", js.undefined)
     
     @scala.inline
-    def deleteTitleFontWeight: Self = this.set("titleFontWeight", js.undefined)
+    def setViewportMinimum(value: Double): Self = StObject.set(x, "viewportMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewportMaximum(value: Double): Self = this.set("viewportMaximum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewportMaximum: Self = this.set("viewportMaximum", js.undefined)
-    
-    @scala.inline
-    def setViewportMinimum(value: Double): Self = this.set("viewportMinimum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewportMinimum: Self = this.set("viewportMinimum", js.undefined)
+    def setViewportMinimumUndefined: Self = StObject.set(x, "viewportMinimum", js.undefined)
   }
 }

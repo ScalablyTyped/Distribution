@@ -4,14 +4,13 @@ import typings.heremaps.H.map.Object
 import typings.heremaps.H.mapevents.Behavior.Options
 import typings.heremaps.H.mapevents.Pointer.Button
 import typings.heremaps.H.math.BitMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** mapevents *****/
-@JSGlobal("H.mapevents")
-@js.native
-object mapevents extends js.Object {
+object mapevents {
   
   /**
     * Behavior class uses map events and adds behavior functionality to the map. This allows map panning and zooming via using mouse wheel
@@ -19,6 +18,7 @@ object mapevents extends js.Object {
     * @property WHEELZOOM {number} - Map zooms in or out in respond to mouse wheel events
     * @property DBLTAPZOOM {number} - Map zooms in or out in response to double click or double tap. For double tap if more that one touches are on the screen map will zoom out.
     */
+  @JSGlobal("H.mapevents.Behavior")
   @js.native
   class Behavior protected ()
     extends typings.heremaps.H.mapevents.Behavior {
@@ -30,15 +30,32 @@ object mapevents extends js.Object {
     def this(mapEvents: typings.heremaps.H.mapevents.MapEvents) = this()
     def this(mapEvents: typings.heremaps.H.mapevents.MapEvents, options: Options) = this()
   }
-  /* static members */
-  @js.native
-  object Behavior extends js.Object {
+  object Behavior {
     
-    var DBLTAPZOOM: Double = js.native
+    @JSGlobal("H.mapevents.Behavior")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var DRAGGING: Double = js.native
+    /* static member */
+    @JSGlobal("H.mapevents.Behavior.DBLTAPZOOM")
+    @js.native
+    def DBLTAPZOOM: Double = js.native
+    @scala.inline
+    def DBLTAPZOOM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DBLTAPZOOM")(x.asInstanceOf[js.Any])
     
-    var WHEELZOOM: Double = js.native
+    /* static member */
+    @JSGlobal("H.mapevents.Behavior.DRAGGING")
+    @js.native
+    def DRAGGING: Double = js.native
+    @scala.inline
+    def DRAGGING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAGGING")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSGlobal("H.mapevents.Behavior.WHEELZOOM")
+    @js.native
+    def WHEELZOOM: Double = js.native
+    @scala.inline
+    def WHEELZOOM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHEELZOOM")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -51,6 +68,7 @@ object mapevents extends js.Object {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
+  @JSGlobal("H.mapevents.ContextMenuEvent")
   @js.native
   class ContextMenuEvent protected ()
     extends typings.heremaps.H.mapevents.ContextMenuEvent {
@@ -87,6 +105,7 @@ object mapevents extends js.Object {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
+  @JSGlobal("H.mapevents.Event")
   @js.native
   class Event protected ()
     extends typings.heremaps.H.mapevents.Event {
@@ -125,6 +144,7 @@ object mapevents extends js.Object {
     * circles and on the map object itself. Events are triggered depending on user interaction. Please check the Events Summary section for the list of events fired by this class and by the map
     * objects.
     */
+  @JSGlobal("H.mapevents.MapEvents")
   @js.native
   class MapEvents protected ()
     extends typings.heremaps.H.mapevents.MapEvents {
@@ -145,6 +165,7 @@ object mapevents extends js.Object {
     * @property dragTarget {(H.map.Object | H.Map)} - Object which is currently dragged by the pointer
     * @property button {H.mapevents.Pointer.Button} - Indicates which pointer device button has changed.
     */
+  @JSGlobal("H.mapevents.Pointer")
   @js.native
   class Pointer protected ()
     extends typings.heremaps.H.mapevents.Pointer {
@@ -176,14 +197,14 @@ object mapevents extends js.Object {
       opt_buttons: BitMask
     ) = this()
   }
-  @js.native
-  object Pointer extends js.Object {
+  object Pointer {
     
     /**
       * Types of a button
       */
+    @JSGlobal("H.mapevents.Pointer.Button")
     @js.native
-    object Button extends js.Object {
+    object Button extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.heremaps.H.mapevents.Pointer.Button with Double] = js.native
@@ -209,6 +230,7 @@ object mapevents extends js.Object {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
+  @JSGlobal("H.mapevents.WheelEvent")
   @js.native
   class WheelEvent protected ()
     extends typings.heremaps.H.mapevents.WheelEvent {

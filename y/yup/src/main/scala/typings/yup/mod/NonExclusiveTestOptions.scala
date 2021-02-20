@@ -2,6 +2,7 @@ package typings.yup.mod
 
 import typings.std.Record
 import typings.yup.yupBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

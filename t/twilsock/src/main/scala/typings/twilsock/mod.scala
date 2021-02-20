@@ -1,13 +1,13 @@
 package typings.twilsock
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("twilsock", "TransportUnavailableError")
   @js.native
   class TransportUnavailableError protected ()
     extends typings.twilsock.transportunavailableerrorMod.TransportUnavailableError {
@@ -25,6 +25,7 @@ object mod extends js.Object {
     * @fires Twilsock#stateChanged
     * @fires Twilsock#connectionError
     */
+  @JSImport("twilsock", "Twilsock")
   @js.native
   class Twilsock protected ()
     extends typings.twilsock.clientMod.TwilsockClient {
@@ -47,6 +48,7 @@ object mod extends js.Object {
     * @fires Twilsock#stateChanged
     * @fires Twilsock#connectionError
     */
+  @JSImport("twilsock", "TwilsockClient")
   @js.native
   class TwilsockClient protected ()
     extends typings.twilsock.clientMod.TwilsockClient {
@@ -58,6 +60,7 @@ object mod extends js.Object {
     def this(token: String, productId: String, options: js.Any) = this()
   }
   
+  @JSImport("twilsock", "TwilsockError")
   @js.native
   class TwilsockError protected ()
     extends typings.twilsock.twilsockerrorMod.TwilsockError {

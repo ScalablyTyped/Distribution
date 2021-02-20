@@ -1,12 +1,13 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "TopDownVehicle")
 @js.native
-class TopDownVehicle protected () extends js.Object {
+class TopDownVehicle protected () extends StObject {
   def this(chasisBody: Body) = this()
   def this(chasisBody: Body, options: TopDownVehicleOptions) = this()
   

@@ -1,11 +1,12 @@
 package typings.reactNativeFirebase.mod.RNFirebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserCredential extends js.Object {
+trait UserCredential extends StObject {
   
   var additionalUserInfo: js.UndefOr[AdditionalUserInfo] = js.native
   
@@ -20,27 +21,15 @@ object UserCredential {
   }
   
   @scala.inline
-  implicit class UserCredentialOps[Self <: UserCredential] (val x: Self) extends AnyVal {
+  implicit class UserCredentialMutableBuilder[Self <: UserCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalUserInfo(value: AdditionalUserInfo): Self = StObject.set(x, "additionalUserInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalUserInfoUndefined: Self = StObject.set(x, "additionalUserInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAdditionalUserInfo(value: AdditionalUserInfo): Self = this.set("additionalUserInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdditionalUserInfo: Self = this.set("additionalUserInfo", js.undefined)
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

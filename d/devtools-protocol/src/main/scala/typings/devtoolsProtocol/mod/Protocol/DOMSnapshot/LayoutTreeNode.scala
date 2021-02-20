@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.Rect
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayoutTreeNode extends js.Object {
+trait LayoutTreeNode extends StObject {
   
   /**
     * The bounding box in document coordinates. Note that scroll offset of the document is ignored.
@@ -55,57 +56,45 @@ object LayoutTreeNode {
   }
   
   @scala.inline
-  implicit class LayoutTreeNodeOps[Self <: LayoutTreeNode] (val x: Self) extends AnyVal {
+  implicit class LayoutTreeNodeMutableBuilder[Self <: LayoutTreeNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingBox(value: Rect): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomNodeIndex(value: integer): Self = StObject.set(x, "domNodeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInlineTextNodes(value: js.Array[InlineTextBox]): Self = StObject.set(x, "inlineTextNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: Rect): Self = this.set("boundingBox", value.asInstanceOf[js.Any])
+    def setInlineTextNodesUndefined: Self = StObject.set(x, "inlineTextNodes", js.undefined)
     
     @scala.inline
-    def setDomNodeIndex(value: integer): Self = this.set("domNodeIndex", value.asInstanceOf[js.Any])
+    def setInlineTextNodesVarargs(value: InlineTextBox*): Self = StObject.set(x, "inlineTextNodes", js.Array(value :_*))
     
     @scala.inline
-    def setInlineTextNodesVarargs(value: InlineTextBox*): Self = this.set("inlineTextNodes", js.Array(value :_*))
+    def setIsStackingContext(value: Boolean): Self = StObject.set(x, "isStackingContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineTextNodes(value: js.Array[InlineTextBox]): Self = this.set("inlineTextNodes", value.asInstanceOf[js.Any])
+    def setIsStackingContextUndefined: Self = StObject.set(x, "isStackingContext", js.undefined)
     
     @scala.inline
-    def deleteInlineTextNodes: Self = this.set("inlineTextNodes", js.undefined)
+    def setLayoutText(value: String): Self = StObject.set(x, "layoutText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStackingContext(value: Boolean): Self = this.set("isStackingContext", value.asInstanceOf[js.Any])
+    def setLayoutTextUndefined: Self = StObject.set(x, "layoutText", js.undefined)
     
     @scala.inline
-    def deleteIsStackingContext: Self = this.set("isStackingContext", js.undefined)
+    def setPaintOrder(value: integer): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutText(value: String): Self = this.set("layoutText", value.asInstanceOf[js.Any])
+    def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
     
     @scala.inline
-    def deleteLayoutText: Self = this.set("layoutText", js.undefined)
+    def setStyleIndex(value: integer): Self = StObject.set(x, "styleIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaintOrder(value: integer): Self = this.set("paintOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaintOrder: Self = this.set("paintOrder", js.undefined)
-    
-    @scala.inline
-    def setStyleIndex(value: integer): Self = this.set("styleIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleIndex: Self = this.set("styleIndex", js.undefined)
+    def setStyleIndexUndefined: Self = StObject.set(x, "styleIndex", js.undefined)
   }
 }

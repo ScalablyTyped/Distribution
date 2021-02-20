@@ -1,15 +1,20 @@
 package typings.winrtUwp.Windows.UI.Text.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CoreTextInputScope extends js.Object
+sealed trait CoreTextInputScope extends StObject
 /** Defines constants that specify the set of input scope names. Input scope is used by the text input server and input processors to determine the layout of the Soft Input Panel (SIP), and what type of language model to use. */
 @JSGlobal("Windows.UI.Text.Core.CoreTextInputScope")
 @js.native
-object CoreTextInputScope extends js.Object {
+object CoreTextInputScope extends StObject {
+  
+  /** No input scope is applied. */
+  @js.native
+  sealed trait default extends CoreTextInputScope
   
   /** Expected input is a full postal address. (For example, "One Microsoft Way, Redmond, WA 98052, U.S.A.") */
   @js.native
@@ -98,10 +103,6 @@ object CoreTextInputScope extends js.Object {
   /** Expected input is the year portion of a calendar date. */
   @js.native
   sealed trait dateYear extends CoreTextInputScope
-  
-  /** No input scope is applied. */
-  @js.native
-  sealed trait default extends CoreTextInputScope
   
   /** Expected input is an SMTP form email address (<accountname>@<host>). */
   @js.native

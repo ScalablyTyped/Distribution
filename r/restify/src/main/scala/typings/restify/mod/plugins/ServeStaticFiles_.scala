@@ -1,12 +1,13 @@
 package typings.restify.mod.plugins
 
 import typings.restify.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServeStaticFiles_ extends js.Object {
+trait ServeStaticFiles_ extends StObject {
   
   var etag: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object ServeStaticFiles_ {
   }
   
   @scala.inline
-  implicit class ServeStaticFiles_Ops[Self <: ServeStaticFiles_] (val x: Self) extends AnyVal {
+  implicit class ServeStaticFiles_MutableBuilder[Self <: ServeStaticFiles_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ js.Any) => _): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
-    
-    @scala.inline
-    def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ js.Any) => _): Self = this.set("setHeaders", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteSetHeaders: Self = this.set("setHeaders", js.undefined)
+    def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
   }
 }

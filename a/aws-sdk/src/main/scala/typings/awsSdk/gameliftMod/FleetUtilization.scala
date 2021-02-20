@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FleetUtilization extends js.Object {
+trait FleetUtilization extends StObject {
   
   /**
     * Number of active game sessions currently being hosted on all instances in the fleet.
@@ -41,48 +42,36 @@ object FleetUtilization {
   }
   
   @scala.inline
-  implicit class FleetUtilizationOps[Self <: FleetUtilization] (val x: Self) extends AnyVal {
+  implicit class FleetUtilizationMutableBuilder[Self <: FleetUtilization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveGameSessionCount(value: WholeNumber): Self = StObject.set(x, "ActiveGameSessionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveGameSessionCountUndefined: Self = StObject.set(x, "ActiveGameSessionCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveServerProcessCount(value: WholeNumber): Self = StObject.set(x, "ActiveServerProcessCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveGameSessionCount(value: WholeNumber): Self = this.set("ActiveGameSessionCount", value.asInstanceOf[js.Any])
+    def setActiveServerProcessCountUndefined: Self = StObject.set(x, "ActiveServerProcessCount", js.undefined)
     
     @scala.inline
-    def deleteActiveGameSessionCount: Self = this.set("ActiveGameSessionCount", js.undefined)
+    def setCurrentPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "CurrentPlayerSessionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveServerProcessCount(value: WholeNumber): Self = this.set("ActiveServerProcessCount", value.asInstanceOf[js.Any])
+    def setCurrentPlayerSessionCountUndefined: Self = StObject.set(x, "CurrentPlayerSessionCount", js.undefined)
     
     @scala.inline
-    def deleteActiveServerProcessCount: Self = this.set("ActiveServerProcessCount", js.undefined)
+    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPlayerSessionCount(value: WholeNumber): Self = this.set("CurrentPlayerSessionCount", value.asInstanceOf[js.Any])
+    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
     @scala.inline
-    def deleteCurrentPlayerSessionCount: Self = this.set("CurrentPlayerSessionCount", js.undefined)
+    def setMaximumPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFleetId: Self = this.set("FleetId", js.undefined)
-    
-    @scala.inline
-    def setMaximumPlayerSessionCount(value: WholeNumber): Self = this.set("MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumPlayerSessionCount: Self = this.set("MaximumPlayerSessionCount", js.undefined)
+    def setMaximumPlayerSessionCountUndefined: Self = StObject.set(x, "MaximumPlayerSessionCount", js.undefined)
   }
 }

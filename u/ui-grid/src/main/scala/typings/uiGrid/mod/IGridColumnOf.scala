@@ -1,11 +1,12 @@
 package typings.uiGrid.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGridColumnOf[TEntity] extends js.Object {
+trait IGridColumnOf[TEntity] extends StObject {
   
   /**
     * Initializes a column
@@ -73,7 +74,7 @@ trait IGridColumnOf[TEntity] extends js.Object {
   /** Reference to grid containing the column */
   var grid: IGridInstanceOf[TEntity] = js.native
   
-   // @todo replace with interface for render container
+  // @todo replace with interface for render container
   /** Hides the column by setting colDef.visible = false */
   def hideColumn(): Unit = js.native
   
@@ -153,116 +154,104 @@ object IGridColumnOf {
   }
   
   @scala.inline
-  implicit class IGridColumnOfOps[Self <: IGridColumnOf[_], TEntity] (val x: Self with IGridColumnOf[TEntity]) extends AnyVal {
+  implicit class IGridColumnOfMutableBuilder[Self <: IGridColumnOf[_], TEntity] (val x: Self with IGridColumnOf[TEntity]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColDef(value: IColumnDefOf[TEntity]): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSort(value: ISortInfo): Self = StObject.set(x, "defaultSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultSortUndefined: Self = StObject.set(x, "defaultSort", js.undefined)
     
     @scala.inline
-    def setGridColumn(value: (IColumnDefOf[TEntity], Double, IGridInstanceOf[TEntity]) => Unit): Self = this.set("GridColumn", js.Any.fromFunction3(value))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColDef(value: IColumnDefOf[TEntity]): Self = this.set("colDef", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setGetAggregationText(value: String => Unit): Self = this.set("getAggregationText", js.Any.fromFunction1(value))
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAggregationValue(value: () => String): Self = this.set("getAggregationValue", js.Any.fromFunction0(value))
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def setGetColClass(value: Boolean => String): Self = this.set("getColClass", js.Any.fromFunction1(value))
+    def setFilter(value: IFilterOptions): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetColClassDefinition(value: () => String): Self = this.set("getColClassDefinition", js.Any.fromFunction0(value))
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setGetRenderContainer(value: () => js.Any): Self = this.set("getRenderContainer", js.Any.fromFunction0(value))
+    def setFilters(value: js.Array[IFilterOptions]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: IGridInstanceOf[TEntity]): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def setHideColumn(value: () => Unit): Self = this.set("hideColumn", js.Any.fromFunction0(value))
+    def setFiltersVarargs(value: IFilterOptions*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setIsPinnedLeft(value: () => Boolean): Self = this.set("isPinnedLeft", js.Any.fromFunction0(value))
+    def setGetAggregationText(value: String => Unit): Self = StObject.set(x, "getAggregationText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsPinnedRight(value: () => Boolean): Self = this.set("isPinnedRight", js.Any.fromFunction0(value))
+    def setGetAggregationValue(value: () => String): Self = StObject.set(x, "getAggregationValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetPropertyOrDefault(value: (IColumnDefOf[TEntity], String, js.Any) => Unit): Self = this.set("setPropertyOrDefault", js.Any.fromFunction3(value))
+    def setGetColClass(value: Boolean => String): Self = StObject.set(x, "getColClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowColumn(value: () => Unit): Self = this.set("showColumn", js.Any.fromFunction0(value))
+    def setGetColClassDefinition(value: () => String): Self = StObject.set(x, "getColClassDefinition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUpdateColumnDef(value: (IColumnDefOf[TEntity], Boolean) => Unit): Self = this.set("updateColumnDef", js.Any.fromFunction2(value))
+    def setGetRenderContainer(value: () => js.Any): Self = StObject.set(x, "getRenderContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setGrid(value: IGridInstanceOf[TEntity]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSort(value: ISortInfo): Self = this.set("defaultSort", value.asInstanceOf[js.Any])
+    def setGridColumn(value: (IColumnDefOf[TEntity], Double, IGridInstanceOf[TEntity]) => Unit): Self = StObject.set(x, "GridColumn", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteDefaultSort: Self = this.set("defaultSort", js.undefined)
+    def setHideColumn(value: () => Unit): Self = StObject.set(x, "hideColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIsPinnedLeft(value: () => Boolean): Self = StObject.set(x, "isPinnedLeft", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIsPinnedRight(value: () => Boolean): Self = StObject.set(x, "isPinnedRight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setFilter(value: IFilterOptions): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setSetPropertyOrDefault(value: (IColumnDefOf[TEntity], String, js.Any) => Unit): Self = StObject.set(x, "setPropertyOrDefault", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setShowColumn(value: () => Unit): Self = StObject.set(x, "showColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFiltersVarargs(value: IFilterOptions*): Self = this.set("filters", js.Array(value :_*))
+    def setSort(value: ISortInfo): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: js.Array[IFilterOptions]): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSort(value: ISortInfo): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
     def setSortingAlgorithm(
       value: (/* a */ js.Any, /* b */ js.Any, /* rowA */ IGridRowOf[TEntity], /* rowB */ IGridRowOf[TEntity], /* direction */ String) => Double
-    ): Self = this.set("sortingAlgorithm", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "sortingAlgorithm", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteSortingAlgorithm: Self = this.set("sortingAlgorithm", js.undefined)
+    def setSortingAlgorithmUndefined: Self = StObject.set(x, "sortingAlgorithm", js.undefined)
+    
+    @scala.inline
+    def setUpdateColumnDef(value: (IColumnDefOf[TEntity], Boolean) => Unit): Self = StObject.set(x, "updateColumnDef", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

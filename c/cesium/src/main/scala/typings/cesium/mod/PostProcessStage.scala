@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.ClearColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PostProcessStage")
 @js.native
-class PostProcessStage () extends js.Object {
+class PostProcessStage () extends StObject {
   def this(options: ClearColor) = this()
   
   val clearColor: Color = js.native

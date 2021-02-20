@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.UI.iPad
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,57 +107,45 @@ object PopoverPinchEvent {
   }
   
   @scala.inline
-  implicit class PopoverPinchEventOps[Self <: PopoverPinchEvent] (val x: Self) extends AnyVal {
+  implicit class PopoverPinchEventMutableBuilder[Self <: PopoverPinchEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentSpan(value: Double): Self = StObject.set(x, "currentSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentSpanX(value: Double): Self = StObject.set(x, "currentSpanX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentSpanY(value: Double): Self = StObject.set(x, "currentSpanY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSpan(value: Double): Self = this.set("currentSpan", value.asInstanceOf[js.Any])
+    def setFocusX(value: Double): Self = StObject.set(x, "focusX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSpanX(value: Double): Self = this.set("currentSpanX", value.asInstanceOf[js.Any])
+    def setFocusY(value: Double): Self = StObject.set(x, "focusY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSpanY(value: Double): Self = this.set("currentSpanY", value.asInstanceOf[js.Any])
+    def setInProgress(value: Boolean): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusX(value: Double): Self = this.set("focusX", value.asInstanceOf[js.Any])
+    def setPreviousSpan(value: Double): Self = StObject.set(x, "previousSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusY(value: Double): Self = this.set("focusY", value.asInstanceOf[js.Any])
+    def setPreviousSpanX(value: Double): Self = StObject.set(x, "previousSpanX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInProgress(value: Boolean): Self = this.set("inProgress", value.asInstanceOf[js.Any])
+    def setPreviousSpanY(value: Double): Self = StObject.set(x, "previousSpanY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousSpan(value: Double): Self = this.set("previousSpan", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousSpanX(value: Double): Self = this.set("previousSpanX", value.asInstanceOf[js.Any])
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousSpanY(value: Double): Self = this.set("previousSpanY", value.asInstanceOf[js.Any])
+    def setTimeDelta(value: Double): Self = StObject.set(x, "timeDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeDelta(value: Double): Self = this.set("timeDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVelocity(value: Double): Self = this.set("velocity", value.asInstanceOf[js.Any])
+    def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
   }
 }

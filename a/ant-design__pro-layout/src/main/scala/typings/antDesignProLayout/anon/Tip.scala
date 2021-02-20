@@ -1,11 +1,12 @@
 package typings.antDesignProLayout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tip extends js.Object {
+trait Tip extends StObject {
   
   var tip: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object Tip {
   }
   
   @scala.inline
-  implicit class TipOps[Self <: Tip] (val x: Self) extends AnyVal {
+  implicit class TipMutableBuilder[Self <: Tip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTip(value: String): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTip(value: String): Self = this.set("tip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTip: Self = this.set("tip", js.undefined)
+    def setTipUndefined: Self = StObject.set(x, "tip", js.undefined)
   }
 }

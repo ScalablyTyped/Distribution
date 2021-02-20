@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentDetailsBase extends js.Object {
+trait PaymentDetailsBase extends StObject {
   
   var displayItems: js.UndefOr[js.Array[PaymentItem]] = js.native
   
@@ -22,45 +23,33 @@ object PaymentDetailsBase {
   }
   
   @scala.inline
-  implicit class PaymentDetailsBaseOps[Self <: PaymentDetailsBase] (val x: Self) extends AnyVal {
+  implicit class PaymentDetailsBaseMutableBuilder[Self <: PaymentDetailsBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayItems(value: js.Array[PaymentItem]): Self = StObject.set(x, "displayItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayItemsUndefined: Self = StObject.set(x, "displayItems", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayItemsVarargs(value: PaymentItem*): Self = StObject.set(x, "displayItems", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayItemsVarargs(value: PaymentItem*): Self = this.set("displayItems", js.Array(value :_*))
+    def setModifiers(value: js.Array[PaymentDetailsModifier]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayItems(value: js.Array[PaymentItem]): Self = this.set("displayItems", value.asInstanceOf[js.Any])
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def deleteDisplayItems: Self = this.set("displayItems", js.undefined)
+    def setModifiersVarargs(value: PaymentDetailsModifier*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
     @scala.inline
-    def setModifiersVarargs(value: PaymentDetailsModifier*): Self = this.set("modifiers", js.Array(value :_*))
+    def setShippingOptions(value: js.Array[PaymentShippingOption]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiers(value: js.Array[PaymentDetailsModifier]): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setShippingOptionsUndefined: Self = StObject.set(x, "shippingOptions", js.undefined)
     
     @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
-    
-    @scala.inline
-    def setShippingOptionsVarargs(value: PaymentShippingOption*): Self = this.set("shippingOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setShippingOptions(value: js.Array[PaymentShippingOption]): Self = this.set("shippingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingOptions: Self = this.set("shippingOptions", js.undefined)
+    def setShippingOptionsVarargs(value: PaymentShippingOption*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
   }
 }

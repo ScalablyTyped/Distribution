@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputCaptions extends js.Object {
+trait InputCaptions extends StObject {
   
   /**
     * Source files for the input sidecar captions used during the transcoding process. To omit all sidecar captions, leave CaptionSources blank.
@@ -26,33 +27,21 @@ object InputCaptions {
   }
   
   @scala.inline
-  implicit class InputCaptionsOps[Self <: InputCaptions] (val x: Self) extends AnyVal {
+  implicit class InputCaptionsMutableBuilder[Self <: InputCaptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptionSources(value: CaptionSources): Self = StObject.set(x, "CaptionSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionSourcesUndefined: Self = StObject.set(x, "CaptionSources", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaptionSourcesVarargs(value: CaptionSource*): Self = StObject.set(x, "CaptionSources", js.Array(value :_*))
     
     @scala.inline
-    def setCaptionSourcesVarargs(value: CaptionSource*): Self = this.set("CaptionSources", js.Array(value :_*))
+    def setMergePolicy(value: CaptionMergePolicy): Self = StObject.set(x, "MergePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptionSources(value: CaptionSources): Self = this.set("CaptionSources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaptionSources: Self = this.set("CaptionSources", js.undefined)
-    
-    @scala.inline
-    def setMergePolicy(value: CaptionMergePolicy): Self = this.set("MergePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergePolicy: Self = this.set("MergePolicy", js.undefined)
+    def setMergePolicyUndefined: Self = StObject.set(x, "MergePolicy", js.undefined)
   }
 }

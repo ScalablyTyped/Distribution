@@ -1,12 +1,13 @@
 package typings.stylableWebpackPlugin.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  autoInit :boolean,   getAutoInitModule :any | undefined,   globalInjection :(p : string): string | undefined}> */
 @js.native
-trait PartialautoInitbooleanget extends js.Object {
+trait PartialautoInitbooleanget extends StObject {
   
   var autoInit: js.UndefOr[Boolean] = js.native
   
@@ -23,36 +24,24 @@ object PartialautoInitbooleanget {
   }
   
   @scala.inline
-  implicit class PartialautoInitbooleangetOps[Self <: PartialautoInitbooleanget] (val x: Self) extends AnyVal {
+  implicit class PartialautoInitbooleangetMutableBuilder[Self <: PartialautoInitbooleanget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoInit(value: Boolean): Self = StObject.set(x, "autoInit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoInitUndefined: Self = StObject.set(x, "autoInit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAutoInitModule(value: js.Any): Self = StObject.set(x, "getAutoInitModule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoInit(value: Boolean): Self = this.set("autoInit", value.asInstanceOf[js.Any])
+    def setGetAutoInitModuleUndefined: Self = StObject.set(x, "getAutoInitModule", js.undefined)
     
     @scala.inline
-    def deleteAutoInit: Self = this.set("autoInit", js.undefined)
+    def setGlobalInjection(value: /* p */ String => String): Self = StObject.set(x, "globalInjection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAutoInitModule(value: js.Any): Self = this.set("getAutoInitModule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGetAutoInitModule: Self = this.set("getAutoInitModule", js.undefined)
-    
-    @scala.inline
-    def setGlobalInjection(value: /* p */ String => String): Self = this.set("globalInjection", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGlobalInjection: Self = this.set("globalInjection", js.undefined)
+    def setGlobalInjectionUndefined: Self = StObject.set(x, "globalInjection", js.undefined)
   }
 }

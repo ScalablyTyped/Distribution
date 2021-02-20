@@ -1,11 +1,12 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Skin extends js.Object {
+trait Skin extends StObject {
   
   def addSkin(skin: Skin): Unit = js.native
   
@@ -56,66 +57,54 @@ object Skin {
   }
   
   @scala.inline
-  implicit class SkinOps[Self <: Skin] (val x: Self) extends AnyVal {
+  implicit class SkinMutableBuilder[Self <: Skin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSkin(value: Skin => Unit): Self = StObject.set(x, "addSkin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachAll(value: (Skeleton, Skin) => Unit): Self = StObject.set(x, "attachAll", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachments(value: js.Array[Map[Attachment]]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSkin(value: Skin => Unit): Self = this.set("addSkin", js.Any.fromFunction1(value))
+    def setAttachmentsVarargs(value: Map[Attachment]*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachAll(value: (Skeleton, Skin) => Unit): Self = this.set("attachAll", js.Any.fromFunction2(value))
+    def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsVarargs(value: Map[Attachment]*): Self = this.set("attachments", js.Array(value :_*))
+    def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value :_*))
     
     @scala.inline
-    def setAttachments(value: js.Array[Map[Attachment]]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBonesVarargs(value: BoneData*): Self = this.set("bones", js.Array(value :_*))
+    def setConstraints(value: js.Array[ConstraintData]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBones(value: js.Array[BoneData]): Self = this.set("bones", value.asInstanceOf[js.Any])
+    def setConstraintsVarargs(value: ConstraintData*): Self = StObject.set(x, "constraints", js.Array(value :_*))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setCopySkin(value: Skin => Unit): Self = StObject.set(x, "copySkin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConstraintsVarargs(value: ConstraintData*): Self = this.set("constraints", js.Array(value :_*))
+    def setGetAttachment(value: (Double, String) => Attachment): Self = StObject.set(x, "getAttachment", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setConstraints(value: js.Array[ConstraintData]): Self = this.set("constraints", value.asInstanceOf[js.Any])
+    def setGetAttachments(value: () => js.Array[SkinEntry]): Self = StObject.set(x, "getAttachments", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopySkin(value: Skin => Unit): Self = this.set("copySkin", js.Any.fromFunction1(value))
+    def setGetAttachmentsForSlot(value: (Double, js.Array[SkinEntry]) => Unit): Self = StObject.set(x, "getAttachmentsForSlot", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAttachment(value: (Double, String) => Attachment): Self = this.set("getAttachment", js.Any.fromFunction2(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAttachments(value: () => js.Array[SkinEntry]): Self = this.set("getAttachments", js.Any.fromFunction0(value))
+    def setRemoveAttachment(value: (Double, String) => Unit): Self = StObject.set(x, "removeAttachment", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAttachmentsForSlot(value: (Double, js.Array[SkinEntry]) => Unit): Self = this.set("getAttachmentsForSlot", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveAttachment(value: (Double, String) => Unit): Self = this.set("removeAttachment", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetAttachment(value: (Double, String, Attachment) => Unit): Self = this.set("setAttachment", js.Any.fromFunction3(value))
+    def setSetAttachment(value: (Double, String, Attachment) => Unit): Self = StObject.set(x, "setAttachment", js.Any.fromFunction3(value))
   }
 }

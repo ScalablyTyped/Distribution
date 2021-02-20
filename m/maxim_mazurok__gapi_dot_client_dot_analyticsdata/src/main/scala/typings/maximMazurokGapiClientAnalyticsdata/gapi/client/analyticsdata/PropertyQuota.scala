@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropertyQuota extends js.Object {
+trait PropertyQuota extends StObject {
   
   /** Standard Analytics Properties can send up to 10 concurrent requests; Analytics 360 Properties can use up to 50 concurrent requests. */
   var concurrentRequests: js.UndefOr[QuotaStatus] = js.native
@@ -34,42 +35,30 @@ object PropertyQuota {
   }
   
   @scala.inline
-  implicit class PropertyQuotaOps[Self <: PropertyQuota] (val x: Self) extends AnyVal {
+  implicit class PropertyQuotaMutableBuilder[Self <: PropertyQuota] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcurrentRequests(value: QuotaStatus): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConcurrentRequestsUndefined: Self = StObject.set(x, "concurrentRequests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServerErrorsPerProjectPerHour(value: QuotaStatus): Self = StObject.set(x, "serverErrorsPerProjectPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrentRequests(value: QuotaStatus): Self = this.set("concurrentRequests", value.asInstanceOf[js.Any])
+    def setServerErrorsPerProjectPerHourUndefined: Self = StObject.set(x, "serverErrorsPerProjectPerHour", js.undefined)
     
     @scala.inline
-    def deleteConcurrentRequests: Self = this.set("concurrentRequests", js.undefined)
+    def setTokensPerDay(value: QuotaStatus): Self = StObject.set(x, "tokensPerDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerErrorsPerProjectPerHour(value: QuotaStatus): Self = this.set("serverErrorsPerProjectPerHour", value.asInstanceOf[js.Any])
+    def setTokensPerDayUndefined: Self = StObject.set(x, "tokensPerDay", js.undefined)
     
     @scala.inline
-    def deleteServerErrorsPerProjectPerHour: Self = this.set("serverErrorsPerProjectPerHour", js.undefined)
+    def setTokensPerHour(value: QuotaStatus): Self = StObject.set(x, "tokensPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokensPerDay(value: QuotaStatus): Self = this.set("tokensPerDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokensPerDay: Self = this.set("tokensPerDay", js.undefined)
-    
-    @scala.inline
-    def setTokensPerHour(value: QuotaStatus): Self = this.set("tokensPerHour", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokensPerHour: Self = this.set("tokensPerHour", js.undefined)
+    def setTokensPerHourUndefined: Self = StObject.set(x, "tokensPerHour", js.undefined)
   }
 }

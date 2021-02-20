@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constraints applied to pods.
   */
 @js.native
-trait SchemaMaxPodsConstraint extends js.Object {
+trait SchemaMaxPodsConstraint extends StObject {
   
   /**
     * Constraint enforced on the max num of pods per node.
@@ -24,24 +25,12 @@ object SchemaMaxPodsConstraint {
   }
   
   @scala.inline
-  implicit class SchemaMaxPodsConstraintOps[Self <: SchemaMaxPodsConstraint] (val x: Self) extends AnyVal {
+  implicit class SchemaMaxPodsConstraintMutableBuilder[Self <: SchemaMaxPodsConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxPodsPerNode(value: String): Self = StObject.set(x, "maxPodsPerNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxPodsPerNode(value: String): Self = this.set("maxPodsPerNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxPodsPerNode: Self = this.set("maxPodsPerNode", js.undefined)
+    def setMaxPodsPerNodeUndefined: Self = StObject.set(x, "maxPodsPerNode", js.undefined)
   }
 }

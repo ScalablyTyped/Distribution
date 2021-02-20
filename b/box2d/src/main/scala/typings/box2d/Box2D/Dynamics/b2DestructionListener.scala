@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Dynamics
 
 import typings.box2d.Box2D.Dynamics.Joints.b2Joint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2DestructionListener extends js.Object {
+trait b2DestructionListener extends StObject {
   
   /**
     * Called when any fixture is about to be destroyed due to the destruction of its parent body.
@@ -29,24 +30,12 @@ object b2DestructionListener {
   }
   
   @scala.inline
-  implicit class b2DestructionListenerOps[Self <: b2DestructionListener] (val x: Self) extends AnyVal {
+  implicit class b2DestructionListenerMutableBuilder[Self <: b2DestructionListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSayGoodbyeFixture(value: b2Fixture => Unit): Self = StObject.set(x, "SayGoodbyeFixture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSayGoodbyeFixture(value: b2Fixture => Unit): Self = this.set("SayGoodbyeFixture", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSayGoodbyeJoint(value: b2Joint => Unit): Self = this.set("SayGoodbyeJoint", js.Any.fromFunction1(value))
+    def setSayGoodbyeJoint(value: b2Joint => Unit): Self = StObject.set(x, "SayGoodbyeJoint", js.Any.fromFunction1(value))
   }
 }

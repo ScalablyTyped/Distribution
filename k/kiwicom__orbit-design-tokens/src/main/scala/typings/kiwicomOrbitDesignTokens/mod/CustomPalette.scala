@@ -6,12 +6,13 @@ import typings.kiwicomOrbitDesignTokens.anon.PartialProductColor
 import typings.kiwicomOrbitDesignTokens.anon.PartialSocialColor
 import typings.kiwicomOrbitDesignTokens.anon.PartialStatusColor
 import typings.kiwicomOrbitDesignTokens.anon.PartialWhiteColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomPalette extends js.Object {
+trait CustomPalette extends StObject {
   
   var blue: js.UndefOr[PartialStatusColor] = js.native
   
@@ -40,72 +41,60 @@ object CustomPalette {
   }
   
   @scala.inline
-  implicit class CustomPaletteOps[Self <: CustomPalette] (val x: Self) extends AnyVal {
+  implicit class CustomPaletteMutableBuilder[Self <: CustomPalette] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlue(value: PartialStatusColor): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloud(value: PartialCloudColor): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue(value: PartialStatusColor): Self = this.set("blue", value.asInstanceOf[js.Any])
+    def setCloudUndefined: Self = StObject.set(x, "cloud", js.undefined)
     
     @scala.inline
-    def deleteBlue: Self = this.set("blue", js.undefined)
+    def setGreen(value: PartialStatusColor): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloud(value: PartialCloudColor): Self = this.set("cloud", value.asInstanceOf[js.Any])
+    def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
     
     @scala.inline
-    def deleteCloud: Self = this.set("cloud", js.undefined)
+    def setInk(value: PartialInkColor): Self = StObject.set(x, "ink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen(value: PartialStatusColor): Self = this.set("green", value.asInstanceOf[js.Any])
+    def setInkUndefined: Self = StObject.set(x, "ink", js.undefined)
     
     @scala.inline
-    def deleteGreen: Self = this.set("green", js.undefined)
+    def setOrange(value: PartialStatusColor): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInk(value: PartialInkColor): Self = this.set("ink", value.asInstanceOf[js.Any])
+    def setOrangeUndefined: Self = StObject.set(x, "orange", js.undefined)
     
     @scala.inline
-    def deleteInk: Self = this.set("ink", js.undefined)
+    def setProduct(value: PartialProductColor): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrange(value: PartialStatusColor): Self = this.set("orange", value.asInstanceOf[js.Any])
+    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
     @scala.inline
-    def deleteOrange: Self = this.set("orange", js.undefined)
+    def setRed(value: PartialStatusColor): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: PartialProductColor): Self = this.set("product", value.asInstanceOf[js.Any])
+    def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
     
     @scala.inline
-    def deleteProduct: Self = this.set("product", js.undefined)
+    def setSocial(value: PartialSocialColor): Self = StObject.set(x, "social", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed(value: PartialStatusColor): Self = this.set("red", value.asInstanceOf[js.Any])
+    def setSocialUndefined: Self = StObject.set(x, "social", js.undefined)
     
     @scala.inline
-    def deleteRed: Self = this.set("red", js.undefined)
+    def setWhite(value: PartialWhiteColor): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocial(value: PartialSocialColor): Self = this.set("social", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocial: Self = this.set("social", js.undefined)
-    
-    @scala.inline
-    def setWhite(value: PartialWhiteColor): Self = this.set("white", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhite: Self = this.set("white", js.undefined)
+    def setWhiteUndefined: Self = StObject.set(x, "white", js.undefined)
   }
 }

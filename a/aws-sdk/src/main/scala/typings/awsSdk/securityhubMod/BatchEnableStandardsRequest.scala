@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchEnableStandardsRequest extends js.Object {
+trait BatchEnableStandardsRequest extends StObject {
   
   /**
     * The list of standards checks to enable.
@@ -21,24 +22,12 @@ object BatchEnableStandardsRequest {
   }
   
   @scala.inline
-  implicit class BatchEnableStandardsRequestOps[Self <: BatchEnableStandardsRequest] (val x: Self) extends AnyVal {
+  implicit class BatchEnableStandardsRequestMutableBuilder[Self <: BatchEnableStandardsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStandardsSubscriptionRequests(value: StandardsSubscriptionRequests): Self = StObject.set(x, "StandardsSubscriptionRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStandardsSubscriptionRequestsVarargs(value: StandardsSubscriptionRequest*): Self = this.set("StandardsSubscriptionRequests", js.Array(value :_*))
-    
-    @scala.inline
-    def setStandardsSubscriptionRequests(value: StandardsSubscriptionRequests): Self = this.set("StandardsSubscriptionRequests", value.asInstanceOf[js.Any])
+    def setStandardsSubscriptionRequestsVarargs(value: StandardsSubscriptionRequest*): Self = StObject.set(x, "StandardsSubscriptionRequests", js.Array(value :_*))
   }
 }

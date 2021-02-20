@@ -2,12 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskGroupRevision extends js.Object {
+trait TaskGroupRevision extends StObject {
   
   var changeType: AuditAction = js.native
   
@@ -40,39 +41,27 @@ object TaskGroupRevision {
   }
   
   @scala.inline
-  implicit class TaskGroupRevisionOps[Self <: TaskGroupRevision] (val x: Self) extends AnyVal {
+  implicit class TaskGroupRevisionMutableBuilder[Self <: TaskGroupRevision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeType(value: AuditAction): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: AuditAction): Self = this.set("changeType", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedBy(value: IdentityRef): Self = this.set("changedBy", value.asInstanceOf[js.Any])
+    def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedDate(value: Date): Self = this.set("changedDate", value.asInstanceOf[js.Any])
+    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileId(value: Double): Self = this.set("fileId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevision(value: Double): Self = this.set("revision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskGroupId(value: String): Self = this.set("taskGroupId", value.asInstanceOf[js.Any])
+    def setTaskGroupId(value: String): Self = StObject.set(x, "taskGroupId", value.asInstanceOf[js.Any])
   }
 }

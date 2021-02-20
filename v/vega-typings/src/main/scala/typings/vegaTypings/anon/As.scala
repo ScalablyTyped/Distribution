@@ -1,11 +1,12 @@
 package typings.vegaTypings.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait As extends js.Object {
+trait As extends StObject {
   
   var as: js.Array[String] = js.native
   
@@ -24,42 +25,30 @@ object As {
   }
   
   @scala.inline
-  implicit class AsOps[Self <: As] (val x: Self) extends AnyVal {
+  implicit class AsMutableBuilder[Self <: As] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: js.Array[String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCross(value: Boolean): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsVarargs(value: String*): Self = this.set("as", js.Array(value :_*))
+    def setCrossUndefined: Self = StObject.set(x, "cross", js.undefined)
     
     @scala.inline
-    def setAs(value: js.Array[String]): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setOps(value: js.Array[String]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpsVarargs(value: String*): Self = this.set("ops", js.Array(value :_*))
-    
-    @scala.inline
-    def setOps(value: js.Array[String]): Self = this.set("ops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCross(value: Boolean): Self = this.set("cross", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCross: Self = this.set("cross", js.undefined)
+    def setOpsVarargs(value: String*): Self = StObject.set(x, "ops", js.Array(value :_*))
   }
 }

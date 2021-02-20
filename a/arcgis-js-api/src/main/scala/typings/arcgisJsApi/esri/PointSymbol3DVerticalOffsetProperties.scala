@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object PointSymbol3DVerticalOffsetProperties {
   }
   
   @scala.inline
-  implicit class PointSymbol3DVerticalOffsetPropertiesOps[Self <: PointSymbol3DVerticalOffsetProperties] (val x: Self) extends AnyVal {
+  implicit class PointSymbol3DVerticalOffsetPropertiesMutableBuilder[Self <: PointSymbol3DVerticalOffsetProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxWorldLength(value: Double): Self = StObject.set(x, "maxWorldLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxWorldLengthUndefined: Self = StObject.set(x, "maxWorldLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinWorldLength(value: Double): Self = StObject.set(x, "minWorldLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWorldLength(value: Double): Self = this.set("maxWorldLength", value.asInstanceOf[js.Any])
+    def setMinWorldLengthUndefined: Self = StObject.set(x, "minWorldLength", js.undefined)
     
     @scala.inline
-    def deleteMaxWorldLength: Self = this.set("maxWorldLength", js.undefined)
+    def setScreenLength(value: Double): Self = StObject.set(x, "screenLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWorldLength(value: Double): Self = this.set("minWorldLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinWorldLength: Self = this.set("minWorldLength", js.undefined)
-    
-    @scala.inline
-    def setScreenLength(value: Double): Self = this.set("screenLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenLength: Self = this.set("screenLength", js.undefined)
+    def setScreenLengthUndefined: Self = StObject.set(x, "screenLength", js.undefined)
   }
 }

@@ -1,17 +1,18 @@
 package typings.toobusyJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("toobusy-js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Main export function.
     * @return True if node process is too busy.
     */
+  @JSImport("toobusy-js", JSImport.Namespace)
+  @js.native
   def apply(): Boolean = js.native
   
   /**
@@ -21,13 +22,19 @@ object mod extends js.Object {
     * @param  [newInterval] New interval to set. If not provided, will return the existing interval.
     * @return               New or existing interval.
     */
+  @JSImport("toobusy-js", "interval")
+  @js.native
   def interval(): Double = js.native
+  @JSImport("toobusy-js", "interval")
+  @js.native
   def interval(newInterval: Double): Double = js.native
   
   /**
     * Returns last lag reading from last check interval.
     * @return Lag in ms.
     */
+  @JSImport("toobusy-js", "lag")
+  @js.native
   def lag(): Double = js.native
   
   /**
@@ -41,7 +48,11 @@ object mod extends js.Object {
     * @param  [newLag] New maxLag (highwater) threshold.
     * @return          New or existing maxLag (highwater) threshold.
     */
+  @JSImport("toobusy-js", "maxLag")
+  @js.native
   def maxLag(): Double = js.native
+  @JSImport("toobusy-js", "maxLag")
+  @js.native
   def maxLag(newLag: Double): Double = js.native
   
   /**
@@ -50,7 +61,11 @@ object mod extends js.Object {
     * @param fn                 Function of form onLag(value: number) => void
     * @param [threshold=maxLag] Optional minimum lag value for events to be emitted
     */
+  @JSImport("toobusy-js", "onLag")
+  @js.native
   def onLag(fn: js.Function1[/* lag */ Double, Unit]): Unit = js.native
+  @JSImport("toobusy-js", "onLag")
+  @js.native
   def onLag(fn: js.Function1[/* lag */ Double, Unit], threshold: Double): Unit = js.native
   
   /**
@@ -59,6 +74,8 @@ object mod extends js.Object {
     * Not necessary to call this manually, only do this if you know what you're doing. `unref()` is called
     * on toobusy's check interval, so it will never keep the server open.
     */
+  @JSImport("toobusy-js", "shutdown")
+  @js.native
   def shutdown(): Unit = js.native
   
   /**
@@ -70,8 +87,14 @@ object mod extends js.Object {
     * @param  [newFactor] New smoothing factor.
     * @return             New or existing smoothing factor.
     */
+  @JSImport("toobusy-js", "smoothingFactor")
+  @js.native
   def smoothingFactor(): Double = js.native
+  @JSImport("toobusy-js", "smoothingFactor")
+  @js.native
   def smoothingFactor(newFactor: Double): Double = js.native
   
+  @JSImport("toobusy-js", "started")
+  @js.native
   def started(): Boolean = js.native
 }

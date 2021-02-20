@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DimensionOrderBy extends js.Object {
+trait DimensionOrderBy extends StObject {
   
   /** A dimension name in the request to order by. */
   var dimensionName: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object DimensionOrderBy {
   }
   
   @scala.inline
-  implicit class DimensionOrderByOps[Self <: DimensionOrderBy] (val x: Self) extends AnyVal {
+  implicit class DimensionOrderByMutableBuilder[Self <: DimensionOrderBy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderType(value: String): Self = StObject.set(x, "orderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionName(value: String): Self = this.set("dimensionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimensionName: Self = this.set("dimensionName", js.undefined)
-    
-    @scala.inline
-    def setOrderType(value: String): Self = this.set("orderType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderType: Self = this.set("orderType", js.undefined)
+    def setOrderTypeUndefined: Self = StObject.set(x, "orderType", js.undefined)
   }
 }

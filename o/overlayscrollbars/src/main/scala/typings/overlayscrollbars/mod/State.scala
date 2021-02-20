@@ -5,12 +5,13 @@ import typings.overlayscrollbars.anon.Height
 import typings.overlayscrollbars.anon.XBoolean
 import typings.overlayscrollbars.anon.XNumber
 import typings.overlayscrollbars.anon.Xs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait State extends js.Object {
+trait State extends StObject {
   
   var autoUpdate: Boolean = js.native
   
@@ -61,57 +62,45 @@ object State {
   }
   
   @scala.inline
-  implicit class StateOps[Self <: State] (val x: Self) extends AnyVal {
+  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentScrollSize(value: Height): Self = StObject.set(x, "contentScrollSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpdate(value: Boolean): Self = this.set("autoUpdate", value.asInstanceOf[js.Any])
+    def setDocumentMixed(value: Boolean): Self = StObject.set(x, "documentMixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentScrollSize(value: Height): Self = this.set("contentScrollSize", value.asInstanceOf[js.Any])
+    def setHasOverflow(value: XBoolean): Self = StObject.set(x, "hasOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroyed(value: Boolean): Self = this.set("destroyed", value.asInstanceOf[js.Any])
+    def setHeightAuto(value: Boolean): Self = StObject.set(x, "heightAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentMixed(value: Boolean): Self = this.set("documentMixed", value.asInstanceOf[js.Any])
+    def setHideOverflow(value: Xs): Self = StObject.set(x, "hideOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasOverflow(value: XBoolean): Self = this.set("hasOverflow", value.asInstanceOf[js.Any])
+    def setHostSize(value: Height): Self = StObject.set(x, "hostSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightAuto(value: Boolean): Self = this.set("heightAuto", value.asInstanceOf[js.Any])
+    def setOverflowAmount(value: XNumber): Self = StObject.set(x, "overflowAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideOverflow(value: Xs): Self = this.set("hideOverflow", value.asInstanceOf[js.Any])
+    def setPadding(value: B): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostSize(value: Height): Self = this.set("hostSize", value.asInstanceOf[js.Any])
+    def setSleeping(value: Boolean): Self = StObject.set(x, "sleeping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowAmount(value: XNumber): Self = this.set("overflowAmount", value.asInstanceOf[js.Any])
+    def setViewportSize(value: Height): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: B): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSleeping(value: Boolean): Self = this.set("sleeping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewportSize(value: Height): Self = this.set("viewportSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidthAuto(value: Boolean): Self = this.set("widthAuto", value.asInstanceOf[js.Any])
+    def setWidthAuto(value: Boolean): Self = StObject.set(x, "widthAuto", value.asInstanceOf[js.Any])
   }
 }

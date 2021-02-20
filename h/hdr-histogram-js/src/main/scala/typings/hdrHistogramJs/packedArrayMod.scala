@@ -1,15 +1,15 @@
 package typings.hdrHistogramJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hdr-histogram-js/packedarray/PackedArray", JSImport.Namespace)
-@js.native
-object packedArrayMod extends js.Object {
+object packedArrayMod {
   
+  @JSImport("hdr-histogram-js/packedarray/PackedArray", "PackedArray")
   @js.native
-  class PackedArray protected () extends js.Object {
+  class PackedArray protected () extends StObject {
     def this(virtualLength: Double) = this()
     def this(virtualLength: Double, initialPhysicalLength: Double) = this()
     

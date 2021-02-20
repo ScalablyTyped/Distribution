@@ -1,12 +1,13 @@
 package typings.sipJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/version", JSImport.Namespace)
-@js.native
-object versionMod extends js.Object {
+object versionMod {
   
+  @JSImport("sip.js/lib/version", "LIBRARY_VERSION")
+  @js.native
   val LIBRARY_VERSION: /* "0.17.1" */ String = js.native
 }

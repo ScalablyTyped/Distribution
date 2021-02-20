@@ -6,16 +6,16 @@ import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/prePassConfiguration", JSImport.Namespace)
-@js.native
-object prePassConfigurationMod extends js.Object {
+object prePassConfigurationMod {
   
+  @JSImport("babylonjs/Materials/prePassConfiguration", "PrePassConfiguration")
   @js.native
-  class PrePassConfiguration () extends js.Object {
+  class PrePassConfiguration () extends StObject {
     
     /**
       * Binds the material data.
@@ -46,19 +46,22 @@ object prePassConfigurationMod extends js.Object {
     var previousWorldMatrices: NumberDictionary[Matrix] = js.native
   }
   /* static members */
-  @js.native
-  object PrePassConfiguration extends js.Object {
+  object PrePassConfiguration {
     
     /**
       * Add the required samplers to the current list.
       * @param samplers defines the current sampler list.
       */
+    @JSImport("babylonjs/Materials/prePassConfiguration", "PrePassConfiguration.AddSamplers")
+    @js.native
     def AddSamplers(samplers: js.Array[String]): Unit = js.native
     
     /**
       * Add the required uniforms to the current list.
       * @param uniforms defines the current uniform list.
       */
+    @JSImport("babylonjs/Materials/prePassConfiguration", "PrePassConfiguration.AddUniforms")
+    @js.native
     def AddUniforms(uniforms: js.Array[String]): Unit = js.native
   }
 }

@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,36 +21,24 @@ object AnimationPlaybackEventInit {
   }
   
   @scala.inline
-  implicit class AnimationPlaybackEventInitOps[Self <: AnimationPlaybackEventInit] (val x: Self) extends AnyVal {
+  implicit class AnimationPlaybackEventInitMutableBuilder[Self <: AnimationPlaybackEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setTimelineTime(value: Double): Self = StObject.set(x, "timelineTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrentTime: Self = this.set("currentTime", js.undefined)
+    def setTimelineTimeNull: Self = StObject.set(x, "timelineTime", null)
     
     @scala.inline
-    def setCurrentTimeNull: Self = this.set("currentTime", null)
-    
-    @scala.inline
-    def setTimelineTime(value: Double): Self = this.set("timelineTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimelineTime: Self = this.set("timelineTime", js.undefined)
-    
-    @scala.inline
-    def setTimelineTimeNull: Self = this.set("timelineTime", null)
+    def setTimelineTimeUndefined: Self = StObject.set(x, "timelineTime", js.undefined)
   }
 }

@@ -3,12 +3,13 @@ package typings.algoliaClientSearch.mod
 import typings.algoliaClientSearch.algoliaClientSearchStrings.full
 import typings.algoliaClientSearch.algoliaClientSearchStrings.none
 import typings.algoliaClientSearch.algoliaClientSearchStrings.partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnippetMatch extends js.Object {
+trait SnippetMatch extends StObject {
   
   val matchLevel: none | partial | full = js.native
   
@@ -23,24 +24,12 @@ object SnippetMatch {
   }
   
   @scala.inline
-  implicit class SnippetMatchOps[Self <: SnippetMatch] (val x: Self) extends AnyVal {
+  implicit class SnippetMatchMutableBuilder[Self <: SnippetMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchLevel(value: none | partial | full): Self = StObject.set(x, "matchLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMatchLevel(value: none | partial | full): Self = this.set("matchLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

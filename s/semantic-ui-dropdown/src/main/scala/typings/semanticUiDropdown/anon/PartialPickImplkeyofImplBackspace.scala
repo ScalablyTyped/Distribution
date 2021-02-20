@@ -1,13 +1,14 @@
 package typings.semanticUiDropdown.anon
 
 import typings.semanticUiDropdown.semanticUiDropdownBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.KeySettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.KeySettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplBackspace extends js.Object {
+trait PartialPickImplkeyofImplBackspace extends StObject {
   
   var backspace: js.UndefOr[Double] = js.native
   
@@ -40,84 +41,72 @@ object PartialPickImplkeyofImplBackspace {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplBackspaceOps[Self <: PartialPickImplkeyofImplBackspace] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplBackspaceMutableBuilder[Self <: PartialPickImplkeyofImplBackspace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackspace(value: Double): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackspaceUndefined: Self = StObject.set(x, "backspace", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteKey(value: Double): Self = StObject.set(x, "deleteKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackspace(value: Double): Self = this.set("backspace", value.asInstanceOf[js.Any])
+    def setDeleteKeyUndefined: Self = StObject.set(x, "deleteKey", js.undefined)
     
     @scala.inline
-    def deleteBackspace: Self = this.set("backspace", js.undefined)
+    def setDelimiter(value: Double | `false`): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteKey(value: Double): Self = this.set("deleteKey", value.asInstanceOf[js.Any])
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def deleteDeleteKey: Self = this.set("deleteKey", js.undefined)
+    def setDownArrow(value: Double): Self = StObject.set(x, "downArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: Double | `false`): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setDownArrowUndefined: Self = StObject.set(x, "downArrow", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownArrow(value: Double): Self = this.set("downArrow", value.asInstanceOf[js.Any])
+    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
     @scala.inline
-    def deleteDownArrow: Self = this.set("downArrow", js.undefined)
+    def setEscape(value: Double): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnter(value: Double): Self = this.set("enter", value.asInstanceOf[js.Any])
+    def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
     @scala.inline
-    def deleteEnter: Self = this.set("enter", js.undefined)
+    def setLeftArrow(value: Double): Self = StObject.set(x, "leftArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscape(value: Double): Self = this.set("escape", value.asInstanceOf[js.Any])
+    def setLeftArrowUndefined: Self = StObject.set(x, "leftArrow", js.undefined)
     
     @scala.inline
-    def deleteEscape: Self = this.set("escape", js.undefined)
+    def setPageDown(value: Double): Self = StObject.set(x, "pageDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftArrow(value: Double): Self = this.set("leftArrow", value.asInstanceOf[js.Any])
+    def setPageDownUndefined: Self = StObject.set(x, "pageDown", js.undefined)
     
     @scala.inline
-    def deleteLeftArrow: Self = this.set("leftArrow", js.undefined)
+    def setPageUp(value: Double): Self = StObject.set(x, "pageUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageDown(value: Double): Self = this.set("pageDown", value.asInstanceOf[js.Any])
+    def setPageUpUndefined: Self = StObject.set(x, "pageUp", js.undefined)
     
     @scala.inline
-    def deletePageDown: Self = this.set("pageDown", js.undefined)
+    def setRightArrow(value: Double): Self = StObject.set(x, "rightArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageUp(value: Double): Self = this.set("pageUp", value.asInstanceOf[js.Any])
+    def setRightArrowUndefined: Self = StObject.set(x, "rightArrow", js.undefined)
     
     @scala.inline
-    def deletePageUp: Self = this.set("pageUp", js.undefined)
+    def setUpArrow(value: Double): Self = StObject.set(x, "upArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightArrow(value: Double): Self = this.set("rightArrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightArrow: Self = this.set("rightArrow", js.undefined)
-    
-    @scala.inline
-    def setUpArrow(value: Double): Self = this.set("upArrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpArrow: Self = this.set("upArrow", js.undefined)
+    def setUpArrowUndefined: Self = StObject.set(x, "upArrow", js.undefined)
   }
 }

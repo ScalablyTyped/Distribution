@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.list
 import typings.arcgisJsApi.arcgisJsApiStrings.preview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,24 +26,12 @@ object AttachmentsContentProperties {
   }
   
   @scala.inline
-  implicit class AttachmentsContentPropertiesOps[Self <: AttachmentsContentProperties] (val x: Self) extends AnyVal {
+  implicit class AttachmentsContentPropertiesMutableBuilder[Self <: AttachmentsContentProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayType(value: preview | list): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisplayType(value: preview | list): Self = this.set("displayType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayType: Self = this.set("displayType", js.undefined)
+    def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
   }
 }

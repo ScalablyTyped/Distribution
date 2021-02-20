@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object TileModeEnumValues {
   }
   
   @scala.inline
-  implicit class TileModeEnumValuesOps[Self <: TileModeEnumValues] (val x: Self) extends AnyVal {
+  implicit class TileModeEnumValuesMutableBuilder[Self <: TileModeEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClamp(value: TileMode): Self = StObject.set(x, "Clamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecal(value: TileMode): Self = StObject.set(x, "Decal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMirror(value: TileMode): Self = StObject.set(x, "Mirror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClamp(value: TileMode): Self = this.set("Clamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDecal(value: TileMode): Self = this.set("Decal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMirror(value: TileMode): Self = this.set("Mirror", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeat(value: TileMode): Self = this.set("Repeat", value.asInstanceOf[js.Any])
+    def setRepeat(value: TileMode): Self = StObject.set(x, "Repeat", value.asInstanceOf[js.Any])
   }
 }

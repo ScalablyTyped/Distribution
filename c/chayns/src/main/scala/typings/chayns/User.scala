@@ -1,11 +1,12 @@
 package typings.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   var FacebookID: String = js.native
   
@@ -35,36 +36,24 @@ object User {
   }
   
   @scala.inline
-  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFacebookID(value: String): Self = StObject.set(x, "FacebookID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacebookID(value: String): Self = this.set("FacebookID", value.asInstanceOf[js.Any])
+    def setPersonID(value: String): Self = StObject.set(x, "PersonID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstName(value: String): Self = this.set("FirstName", value.asInstanceOf[js.Any])
+    def setUserFullName(value: String): Self = StObject.set(x, "UserFullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastName(value: String): Self = this.set("LastName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPersonID(value: String): Self = this.set("PersonID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserFullName(value: String): Self = this.set("UserFullName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserID(value: Double): Self = this.set("UserID", value.asInstanceOf[js.Any])
+    def setUserID(value: Double): Self = StObject.set(x, "UserID", value.asInstanceOf[js.Any])
   }
 }

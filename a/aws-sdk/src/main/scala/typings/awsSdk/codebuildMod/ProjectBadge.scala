@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectBadge extends js.Object {
+trait ProjectBadge extends StObject {
   
   /**
     * Set this to true to generate a publicly accessible URL for your project's build badge.
@@ -26,30 +27,18 @@ object ProjectBadge {
   }
   
   @scala.inline
-  implicit class ProjectBadgeOps[Self <: ProjectBadge] (val x: Self) extends AnyVal {
+  implicit class ProjectBadgeMutableBuilder[Self <: ProjectBadge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadgeEnabled(value: Boolean): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadgeEnabledUndefined: Self = StObject.set(x, "badgeEnabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBadgeRequestUrl(value: String): Self = StObject.set(x, "badgeRequestUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeEnabled(value: Boolean): Self = this.set("badgeEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBadgeEnabled: Self = this.set("badgeEnabled", js.undefined)
-    
-    @scala.inline
-    def setBadgeRequestUrl(value: String): Self = this.set("badgeRequestUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBadgeRequestUrl: Self = this.set("badgeRequestUrl", js.undefined)
+    def setBadgeRequestUrlUndefined: Self = StObject.set(x, "badgeRequestUrl", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.anon.PartialLayout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Frame extends js.Object {
+trait Frame extends StObject {
   
   /**
     * The name of the frame into which this frame's properties are merged
@@ -60,42 +61,30 @@ object Frame {
   }
   
   @scala.inline
-  implicit class FrameOps[Self <: Frame] (val x: Self) extends AnyVal {
+  implicit class FrameMutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseframe(value: String): Self = StObject.set(x, "baseframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setBaseframe(value: String): Self = this.set("baseframe", value.asInstanceOf[js.Any])
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: Data*): Self = this.set("data", js.Array(value :_*))
+    def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[Data]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setTraces(value: js.Array[Double]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: PartialLayout): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTracesVarargs(value: Double*): Self = this.set("traces", js.Array(value :_*))
-    
-    @scala.inline
-    def setTraces(value: js.Array[Double]): Self = this.set("traces", value.asInstanceOf[js.Any])
+    def setTracesVarargs(value: Double*): Self = StObject.set(x, "traces", js.Array(value :_*))
   }
 }

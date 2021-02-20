@@ -3,12 +3,13 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Cache
 import typings.vexflow.anon.Xmax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Glyph extends js.Object {
+trait Glyph extends StObject {
   
   def getContext(): IRenderContext = js.native
   
@@ -53,51 +54,39 @@ object Glyph {
   }
   
   @scala.inline
-  implicit class GlyphOps[Self <: Glyph] (val x: Self) extends AnyVal {
+  implicit class GlyphMutableBuilder[Self <: Glyph] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMetrics(value: () => Xmax): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRender(value: (IRenderContext, Double, Double) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetContext(value: () => IRenderContext): Self = this.set("getContext", js.Any.fromFunction0(value))
+    def setRenderToStave(value: Double => Unit): Self = StObject.set(x, "renderToStave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMetrics(value: () => Xmax): Self = this.set("getMetrics", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRender(value: (IRenderContext, Double, Double) => Unit): Self = this.set("render", js.Any.fromFunction3(value))
+    def setSetContext(value: IRenderContext => Glyph): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderToStave(value: Double => Unit): Self = this.set("renderToStave", js.Any.fromFunction1(value))
+    def setSetOptions(value: Cache => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setSetStave(value: Stave => Glyph): Self = StObject.set(x, "setStave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetContext(value: IRenderContext => Glyph): Self = this.set("setContext", js.Any.fromFunction1(value))
+    def setSetWidth(value: Double => Glyph): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOptions(value: Cache => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
+    def setSetXShift(value: Double => Glyph): Self = StObject.set(x, "setXShift", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetStave(value: Stave => Glyph): Self = this.set("setStave", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetWidth(value: Double => Glyph): Self = this.set("setWidth", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetXShift(value: Double => Glyph): Self = this.set("setXShift", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetYShift(value: Double => Glyph): Self = this.set("setYShift", js.Any.fromFunction1(value))
+    def setSetYShift(value: Double => Glyph): Self = StObject.set(x, "setYShift", js.Any.fromFunction1(value))
   }
 }

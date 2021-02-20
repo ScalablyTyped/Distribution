@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompleteQueryResponse extends js.Object {
+trait CompleteQueryResponse extends StObject {
   
   /** Results of the matching job/company candidates. */
   var completionResults: js.UndefOr[js.Array[CompletionResult]] = js.native
@@ -22,33 +23,21 @@ object CompleteQueryResponse {
   }
   
   @scala.inline
-  implicit class CompleteQueryResponseOps[Self <: CompleteQueryResponse] (val x: Self) extends AnyVal {
+  implicit class CompleteQueryResponseMutableBuilder[Self <: CompleteQueryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletionResults(value: js.Array[CompletionResult]): Self = StObject.set(x, "completionResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionResultsUndefined: Self = StObject.set(x, "completionResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletionResultsVarargs(value: CompletionResult*): Self = StObject.set(x, "completionResults", js.Array(value :_*))
     
     @scala.inline
-    def setCompletionResultsVarargs(value: CompletionResult*): Self = this.set("completionResults", js.Array(value :_*))
+    def setMetadata(value: ResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionResults(value: js.Array[CompletionResult]): Self = this.set("completionResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompletionResults: Self = this.set("completionResults", js.undefined)
-    
-    @scala.inline
-    def setMetadata(value: ResponseMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

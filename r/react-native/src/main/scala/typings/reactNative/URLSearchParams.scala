@@ -1,6 +1,7 @@
 package typings.reactNative
 
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Based on definitions of lib.dom and lib.dom.iterable
   */
 @js.native
-trait URLSearchParams extends js.Object {
+trait URLSearchParams extends StObject {
   
   def append(name: String, value: String): Unit = js.native
   

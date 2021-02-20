@@ -1,11 +1,12 @@
 package typings.rxjsCompat.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler extends js.Object {
+trait FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler extends StObject {
   
   def apply[T](windowTimeSpan: Double): js.Any = js.native
   def apply[T](

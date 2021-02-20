@@ -16,13 +16,14 @@ import typings.winrtUwp.Windows.Storage.Search.QueryOptions
 import typings.winrtUwp.Windows.Storage.Search.StorageFileQueryResult
 import typings.winrtUwp.Windows.Storage.Search.StorageFolderQueryResult
 import typings.winrtUwp.Windows.Storage.Search.StorageItemQueryResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages folders and their contents and provides information about them. */
 @js.native
-trait StorageFolder extends js.Object {
+trait StorageFolder extends StObject {
   
   /**
     * Indicates whether the current folder supports the specified QueryOptions .

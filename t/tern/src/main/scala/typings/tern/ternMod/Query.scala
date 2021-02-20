@@ -8,6 +8,7 @@ import typings.tern.ternStrings.files
 import typings.tern.ternStrings.properties
 import typings.tern.ternStrings.refs
 import typings.tern.ternStrings.rename
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,62 +23,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tern.ternMod.PropertiesQuery
   - typings.tern.ternMod.DefinitionQuery
 */
-trait Query extends js.Object
+trait Query extends StObject
 object Query {
   
   @scala.inline
-  def CompletionsQuery(end: Double | Position, file: String, `type`: completions): Query = {
+  def CompletionsQuery(end: Double | Position, file: String, `type`: completions): typings.tern.ternMod.CompletionsQuery = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
+    __obj.asInstanceOf[typings.tern.ternMod.CompletionsQuery]
   }
   
   @scala.inline
-  def DefinitionQuery(end: Double | Position, file: String, `type`: definition): Query = {
+  def DefinitionQuery(end: Double | Position, file: String, `type`: definition): typings.tern.ternMod.DefinitionQuery = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
+    __obj.asInstanceOf[typings.tern.ternMod.DefinitionQuery]
   }
   
   @scala.inline
-  def RenameQuery(end: Double | Position, file: String, newName: String, `type`: rename): Query = {
+  def DocumentationQuery(end: Double | Position, file: String, `type`: documentation): typings.tern.ternMod.DocumentationQuery = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.tern.ternMod.DocumentationQuery]
+  }
+  
+  @scala.inline
+  def FilesQuery(`type`: files): typings.tern.ternMod.FilesQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.tern.ternMod.FilesQuery]
+  }
+  
+  @scala.inline
+  def PropertiesQuery(`type`: properties): typings.tern.ternMod.PropertiesQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.tern.ternMod.PropertiesQuery]
+  }
+  
+  @scala.inline
+  def RefsQuery(end: Double | Position, file: String, `type`: refs): typings.tern.ternMod.RefsQuery = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.tern.ternMod.RefsQuery]
+  }
+  
+  @scala.inline
+  def RenameQuery(end: Double | Position, file: String, newName: String, `type`: rename): typings.tern.ternMod.RenameQuery = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], newName = newName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
+    __obj.asInstanceOf[typings.tern.ternMod.RenameQuery]
   }
   
   @scala.inline
-  def FilesQuery(`type`: files): Query = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
-  }
-  
-  @scala.inline
-  def TypeQuery(end: Double | Position, file: String, `type`: `type`): Query = {
+  def TypeQuery(end: Double | Position, file: String, `type`: `type`): typings.tern.ternMod.TypeQuery = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
-  }
-  
-  @scala.inline
-  def RefsQuery(end: Double | Position, file: String, `type`: refs): Query = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
-  }
-  
-  @scala.inline
-  def PropertiesQuery(`type`: properties): Query = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
-  }
-  
-  @scala.inline
-  def DocumentationQuery(end: Double | Position, file: String, `type`: documentation): Query = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
+    __obj.asInstanceOf[typings.tern.ternMod.TypeQuery]
   }
 }

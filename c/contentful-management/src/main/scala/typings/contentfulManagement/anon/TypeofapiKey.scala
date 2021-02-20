@@ -5,12 +5,13 @@ import typings.contentfulManagement.apiKeyMod.ApiKey
 import typings.contentfulManagement.apiKeyMod.ApiKeyProps
 import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofapiKey extends js.Object {
+trait TypeofapiKey extends StObject {
   
   def wrapApiKey(http: AxiosInstance, data: ApiKeyProps): ApiKey = js.native
   
@@ -28,24 +29,12 @@ object TypeofapiKey {
   }
   
   @scala.inline
-  implicit class TypeofapiKeyOps[Self <: TypeofapiKey] (val x: Self) extends AnyVal {
+  implicit class TypeofapiKeyMutableBuilder[Self <: TypeofapiKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWrapApiKey(value: (AxiosInstance, ApiKeyProps) => ApiKey): Self = StObject.set(x, "wrapApiKey", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapApiKey(value: (AxiosInstance, ApiKeyProps) => ApiKey): Self = this.set("wrapApiKey", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWrapApiKeyCollection(value: (AxiosInstance, CollectionProp[ApiKeyProps]) => Collection[ApiKey, ApiKeyProps]): Self = this.set("wrapApiKeyCollection", js.Any.fromFunction2(value))
+    def setWrapApiKeyCollection(value: (AxiosInstance, CollectionProp[ApiKeyProps]) => Collection[ApiKey, ApiKeyProps]): Self = StObject.set(x, "wrapApiKeyCollection", js.Any.fromFunction2(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.webAnimationsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webAnimationsJs.webAnimationsJsStrings.both
   - typings.webAnimationsJs.webAnimationsJsStrings.auto
 */
-trait AnimationEffectTimingFillMode extends js.Object
+trait AnimationEffectTimingFillMode extends StObject
 object AnimationEffectTimingFillMode {
   
   @scala.inline

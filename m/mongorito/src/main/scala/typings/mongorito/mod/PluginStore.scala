@@ -1,11 +1,12 @@
 package typings.mongorito.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginStore extends js.Object {
+trait PluginStore extends StObject {
   
   def dispatch(arg: js.Any): js.Any = js.native
   
@@ -24,33 +25,21 @@ object PluginStore {
   }
   
   @scala.inline
-  implicit class PluginStoreOps[Self <: PluginStore] (val x: Self) extends AnyVal {
+  implicit class PluginStoreMutableBuilder[Self <: PluginStore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispatch(value: js.Any => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispatch(value: js.Any => js.Any): Self = this.set("dispatch", js.Any.fromFunction1(value))
+    def setModelClass(value: ModelClass): Self = StObject.set(x, "modelClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetState(value: () => State): Self = this.set("getState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setModelClass(value: ModelClass): Self = this.set("modelClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModel(value: Model): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

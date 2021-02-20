@@ -2,6 +2,7 @@ package typings.stylus.mod.Stylus.Nodes
 
 import typings.stylus.anon.Column
 import typings.stylus.mod.Stylus.Dictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,36 +63,24 @@ object Object {
   }
   
   @scala.inline
-  implicit class ObjectOps[Self <: Object] (val x: Self) extends AnyVal {
+  implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: java.lang.String => Node): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHas(value: java.lang.String => scala.Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: java.lang.String => Node): Self = this.set("get", js.Any.fromFunction1(value))
+    def setSet(value: (java.lang.String, Node) => Object): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHas(value: java.lang.String => scala.Boolean): Self = this.set("has", js.Any.fromFunction1(value))
+    def setToBlock(value: () => java.lang.String): Self = StObject.set(x, "toBlock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSet(value: (java.lang.String, Node) => Object): Self = this.set("set", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setToBlock(value: () => java.lang.String): Self = this.set("toBlock", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVals(value: Dictionary[Node]): Self = this.set("vals", value.asInstanceOf[js.Any])
+    def setVals(value: Dictionary[Node]): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.jsrsasign.jsrsasign
 
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +65,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * var pem = KEYUTIL.getPEM(publicKeyObj);
   */
 @js.native
-trait KEYUTIL extends js.Object {
+trait KEYUTIL extends StObject {
   
   /**
     * get RSAKey/DSA/ECDSA public key object from hexadecimal string of PKCS#8 public key
@@ -288,63 +289,51 @@ object KEYUTIL {
   }
   
   @scala.inline
-  implicit class KEYUTILOps[Self <: KEYUTIL] (val x: Self) extends AnyVal {
+  implicit class KEYUTILMutableBuilder[Self <: KEYUTIL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecryptKeyB64(value: (String, String, String, String) => String): Self = StObject.set(x, "decryptKeyB64", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDecryptedKeyHex(value: (String, String) => String): Self = StObject.set(x, "getDecryptedKeyHex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEncryptedPKCS5PEMFromPrvKeyHex(value: (String, String, String, String, String) => String): Self = StObject.set(x, "getEncryptedPKCS5PEMFromPrvKeyHex", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set_getKeyFromPublicPKCS8Hex(value: String => RSAKey | ECDSA): Self = this.set("_getKeyFromPublicPKCS8Hex", js.Any.fromFunction1(value))
+    def setGetKeyAndUnusedIvByPasscodeAndIvsalt(value: (String, String, String) => String): Self = StObject.set(x, "getKeyAndUnusedIvByPasscodeAndIvsalt", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set_getPlainPKCS8HexFromEncryptedPKCS8PEM(value: (String, String) => String): Self = this.set("_getPlainPKCS8HexFromEncryptedPKCS8PEM", js.Any.fromFunction2(value))
+    def setGetKeyFromEncryptedPKCS8PEM(value: (String, String) => RSAKey | ECDSA): Self = StObject.set(x, "getKeyFromEncryptedPKCS8PEM", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDecryptKeyB64(value: (String, String, String, String) => String): Self = this.set("decryptKeyB64", js.Any.fromFunction4(value))
+    def setGetKeyFromPlainPrivatePKCS8Hex(value: String => RSAKey | DSA | ECDSA): Self = StObject.set(x, "getKeyFromPlainPrivatePKCS8Hex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDecryptedKeyHex(value: (String, String) => String): Self = this.set("getDecryptedKeyHex", js.Any.fromFunction2(value))
+    def setGetKeyFromPlainPrivatePKCS8PEM(value: String => RSAKey | ECDSA): Self = StObject.set(x, "getKeyFromPlainPrivatePKCS8PEM", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEncryptedPKCS5PEMFromPrvKeyHex(value: (String, String, String, String, String) => String): Self = this.set("getEncryptedPKCS5PEMFromPrvKeyHex", js.Any.fromFunction5(value))
+    def setGetPBKDF2KeyHexFromParam(value: (PKCS8Info, String) => String): Self = StObject.set(x, "getPBKDF2KeyHexFromParam", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetKeyAndUnusedIvByPasscodeAndIvsalt(value: (String, String, String) => String): Self = this.set("getKeyAndUnusedIvByPasscodeAndIvsalt", js.Any.fromFunction3(value))
+    def setParseHexOfEncryptedPKCS8(value: String => PKCS8Info): Self = StObject.set(x, "parseHexOfEncryptedPKCS8", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetKeyFromEncryptedPKCS8PEM(value: (String, String) => RSAKey | ECDSA): Self = this.set("getKeyFromEncryptedPKCS8PEM", js.Any.fromFunction2(value))
+    def setParsePKCS5PEM(value: String => String): Self = StObject.set(x, "parsePKCS5PEM", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetKeyFromPlainPrivatePKCS8Hex(value: String => RSAKey | DSA | ECDSA): Self = this.set("getKeyFromPlainPrivatePKCS8Hex", js.Any.fromFunction1(value))
+    def setParsePlainPrivatePKCS8Hex(value: String => PrivatePKCS8HexResult): Self = StObject.set(x, "parsePlainPrivatePKCS8Hex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetKeyFromPlainPrivatePKCS8PEM(value: String => RSAKey | ECDSA): Self = this.set("getKeyFromPlainPrivatePKCS8PEM", js.Any.fromFunction1(value))
+    def setParsePublicPKCS8Hex(value: String => PublicPKCS8HexResult): Self = StObject.set(x, "parsePublicPKCS8Hex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPBKDF2KeyHexFromParam(value: (PKCS8Info, String) => String): Self = this.set("getPBKDF2KeyHexFromParam", js.Any.fromFunction2(value))
+    def setParsePublicRawRSAKeyHex(value: String => PublicRawRSAKeyHexResult): Self = StObject.set(x, "parsePublicRawRSAKeyHex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseHexOfEncryptedPKCS8(value: String => PKCS8Info): Self = this.set("parseHexOfEncryptedPKCS8", js.Any.fromFunction1(value))
+    def set_getKeyFromPublicPKCS8Hex(value: String => RSAKey | ECDSA): Self = StObject.set(x, "_getKeyFromPublicPKCS8Hex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParsePKCS5PEM(value: String => String): Self = this.set("parsePKCS5PEM", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParsePlainPrivatePKCS8Hex(value: String => PrivatePKCS8HexResult): Self = this.set("parsePlainPrivatePKCS8Hex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParsePublicPKCS8Hex(value: String => PublicPKCS8HexResult): Self = this.set("parsePublicPKCS8Hex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParsePublicRawRSAKeyHex(value: String => PublicRawRSAKeyHexResult): Self = this.set("parsePublicRawRSAKeyHex", js.Any.fromFunction1(value))
+    def set_getPlainPKCS8HexFromEncryptedPKCS8PEM(value: (String, String) => String): Self = StObject.set(x, "_getPlainPKCS8HexFromEncryptedPKCS8PEM", js.Any.fromFunction2(value))
   }
 }

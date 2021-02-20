@@ -1,11 +1,12 @@
 package typings.dndCore.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitCoordsPayload extends js.Object {
+trait InitCoordsPayload extends StObject {
   
   var clientOffset: XYCoord | Null = js.native
   
@@ -20,30 +21,18 @@ object InitCoordsPayload {
   }
   
   @scala.inline
-  implicit class InitCoordsPayloadOps[Self <: InitCoordsPayload] (val x: Self) extends AnyVal {
+  implicit class InitCoordsPayloadMutableBuilder[Self <: InitCoordsPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientOffsetNull: Self = StObject.set(x, "clientOffset", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceClientOffset(value: XYCoord): Self = StObject.set(x, "sourceClientOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientOffset(value: XYCoord): Self = this.set("clientOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientOffsetNull: Self = this.set("clientOffset", null)
-    
-    @scala.inline
-    def setSourceClientOffset(value: XYCoord): Self = this.set("sourceClientOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceClientOffsetNull: Self = this.set("sourceClientOffset", null)
+    def setSourceClientOffsetNull: Self = StObject.set(x, "sourceClientOffset", null)
   }
 }

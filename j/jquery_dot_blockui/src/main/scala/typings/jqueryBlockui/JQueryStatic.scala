@@ -1,11 +1,12 @@
 package typings.jqueryBlockui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
   
   /** block user activity for the page */
   var blockUI: js.UndefOr[JQBlockUIStatic] = js.native
@@ -22,30 +23,18 @@ object JQueryStatic {
   }
   
   @scala.inline
-  implicit class JQueryStaticOps[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockUI(value: JQBlockUIStatic): Self = StObject.set(x, "blockUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockUIUndefined: Self = StObject.set(x, "blockUI", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnblockUI(value: JQBlockUIStatic): Self = StObject.set(x, "unblockUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockUI(value: JQBlockUIStatic): Self = this.set("blockUI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockUI: Self = this.set("blockUI", js.undefined)
-    
-    @scala.inline
-    def setUnblockUI(value: JQBlockUIStatic): Self = this.set("unblockUI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnblockUI: Self = this.set("unblockUI", js.undefined)
+    def setUnblockUIUndefined: Self = StObject.set(x, "unblockUI", js.undefined)
   }
 }

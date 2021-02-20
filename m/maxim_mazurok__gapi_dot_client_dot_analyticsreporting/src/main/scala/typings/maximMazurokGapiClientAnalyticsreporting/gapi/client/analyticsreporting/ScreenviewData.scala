@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScreenviewData extends js.Object {
+trait ScreenviewData extends StObject {
   
   /** The application name. */
   var appName: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object ScreenviewData {
   }
   
   @scala.inline
-  implicit class ScreenviewDataOps[Self <: ScreenviewData] (val x: Self) extends AnyVal {
+  implicit class ScreenviewDataMutableBuilder[Self <: ScreenviewData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMobileDeviceBranding(value: String): Self = StObject.set(x, "mobileDeviceBranding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
+    def setMobileDeviceBrandingUndefined: Self = StObject.set(x, "mobileDeviceBranding", js.undefined)
     
     @scala.inline
-    def deleteAppName: Self = this.set("appName", js.undefined)
+    def setMobileDeviceModel(value: String): Self = StObject.set(x, "mobileDeviceModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileDeviceBranding(value: String): Self = this.set("mobileDeviceBranding", value.asInstanceOf[js.Any])
+    def setMobileDeviceModelUndefined: Self = StObject.set(x, "mobileDeviceModel", js.undefined)
     
     @scala.inline
-    def deleteMobileDeviceBranding: Self = this.set("mobileDeviceBranding", js.undefined)
+    def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileDeviceModel(value: String): Self = this.set("mobileDeviceModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMobileDeviceModel: Self = this.set("mobileDeviceModel", js.undefined)
-    
-    @scala.inline
-    def setScreenName(value: String): Self = this.set("screenName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenName: Self = this.set("screenName", js.undefined)
+    def setScreenNameUndefined: Self = StObject.set(x, "screenName", js.undefined)
   }
 }

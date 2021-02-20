@@ -1,6 +1,7 @@
 package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * before final release.
   */
 @js.native
-trait SchemaClusterMetrics extends js.Object {
+trait SchemaClusterMetrics extends StObject {
   
   /**
     * The HDFS metrics.
@@ -32,30 +33,18 @@ object SchemaClusterMetrics {
   }
   
   @scala.inline
-  implicit class SchemaClusterMetricsOps[Self <: SchemaClusterMetrics] (val x: Self) extends AnyVal {
+  implicit class SchemaClusterMetricsMutableBuilder[Self <: SchemaClusterMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHdfsMetrics(value: StringDictionary[String]): Self = StObject.set(x, "hdfsMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHdfsMetricsUndefined: Self = StObject.set(x, "hdfsMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setYarnMetrics(value: StringDictionary[String]): Self = StObject.set(x, "yarnMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHdfsMetrics(value: StringDictionary[String]): Self = this.set("hdfsMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHdfsMetrics: Self = this.set("hdfsMetrics", js.undefined)
-    
-    @scala.inline
-    def setYarnMetrics(value: StringDictionary[String]): Self = this.set("yarnMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYarnMetrics: Self = this.set("yarnMetrics", js.undefined)
+    def setYarnMetricsUndefined: Self = StObject.set(x, "yarnMetrics", js.undefined)
   }
 }

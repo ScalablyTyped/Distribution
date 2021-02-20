@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains information regarding the outcome of a successful connection.execute().
   */
 @js.native
-trait Result[T] extends js.Object {
+trait Result[T] extends StObject {
   
   /**
     * This property will be defined if the executed statement returned Implicit Results. Depending on the value of resultSet it will either be an array,
@@ -82,69 +83,57 @@ object Result {
   }
   
   @scala.inline
-  implicit class ResultOps[Self <: Result[_], T] (val x: Self with Result[T]) extends AnyVal {
+  implicit class ResultMutableBuilder[Self <: Result[_], T] (val x: Self with Result[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImplicitResults(value: js.Array[js.Array[T] | ResultSet[T]]): Self = StObject.set(x, "implicitResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImplicitResultsUndefined: Self = StObject.set(x, "implicitResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImplicitResultsVarargs(value: (js.Array[T] | ResultSet[T])*): Self = StObject.set(x, "implicitResults", js.Array(value :_*))
     
     @scala.inline
-    def setImplicitResultsVarargs(value: (js.Array[T] | ResultSet[T])*): Self = this.set("implicitResults", js.Array(value :_*))
+    def setLastRowid(value: String): Self = StObject.set(x, "lastRowid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplicitResults(value: js.Array[js.Array[T] | ResultSet[T]]): Self = this.set("implicitResults", value.asInstanceOf[js.Any])
+    def setLastRowidUndefined: Self = StObject.set(x, "lastRowid", js.undefined)
     
     @scala.inline
-    def deleteImplicitResults: Self = this.set("implicitResults", js.undefined)
+    def setMetaData(value: js.Array[Metadata[T]]): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRowid(value: String): Self = this.set("lastRowid", value.asInstanceOf[js.Any])
+    def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
     
     @scala.inline
-    def deleteLastRowid: Self = this.set("lastRowid", js.undefined)
+    def setMetaDataVarargs(value: Metadata[T]*): Self = StObject.set(x, "metaData", js.Array(value :_*))
     
     @scala.inline
-    def setMetaDataVarargs(value: Metadata[T]*): Self = this.set("metaData", js.Array(value :_*))
+    def setOutBinds(value: T): Self = StObject.set(x, "outBinds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaData(value: js.Array[Metadata[T]]): Self = this.set("metaData", value.asInstanceOf[js.Any])
+    def setOutBindsUndefined: Self = StObject.set(x, "outBinds", js.undefined)
     
     @scala.inline
-    def deleteMetaData: Self = this.set("metaData", js.undefined)
+    def setResultSet(value: ResultSet[T]): Self = StObject.set(x, "resultSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutBinds(value: T): Self = this.set("outBinds", value.asInstanceOf[js.Any])
+    def setResultSetUndefined: Self = StObject.set(x, "resultSet", js.undefined)
     
     @scala.inline
-    def deleteOutBinds: Self = this.set("outBinds", js.undefined)
+    def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSet(value: ResultSet[T]): Self = this.set("resultSet", value.asInstanceOf[js.Any])
+    def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResultSet: Self = this.set("resultSet", js.undefined)
+    def setRowsAffectedUndefined: Self = StObject.set(x, "rowsAffected", js.undefined)
     
     @scala.inline
-    def setRowsVarargs(value: T*): Self = this.set("rows", js.Array(value :_*))
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def setRows(value: js.Array[T]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
-    
-    @scala.inline
-    def setRowsAffected(value: Double): Self = this.set("rowsAffected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowsAffected: Self = this.set("rowsAffected", js.undefined)
+    def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

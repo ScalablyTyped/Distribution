@@ -1,12 +1,13 @@
 package typings.amapJsApiPlaceSearch.anon
 
 import typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.SCENIC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scenic extends js.Object {
+trait Scenic extends StObject {
   
   var deep_type: SCENIC = js.native
   
@@ -24,24 +25,12 @@ object Scenic {
   }
   
   @scala.inline
-  implicit class ScenicOps[Self <: Scenic] (val x: Self) extends AnyVal {
+  implicit class ScenicMutableBuilder[Self <: Scenic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeep_type(value: SCENIC): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeep_type(value: SCENIC): Self = this.set("deep_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScenic(value: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Scenic): Self = this.set("scenic", value.asInstanceOf[js.Any])
+    def setScenic(value: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Scenic): Self = StObject.set(x, "scenic", value.asInstanceOf[js.Any])
   }
 }

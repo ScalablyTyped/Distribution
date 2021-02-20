@@ -5,12 +5,13 @@ import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatLocaleInternal
 import typings.std.Intl.NumberFormat
 import typings.std.Record
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDefaultLocale extends js.Object {
+trait GetDefaultLocale extends StObject {
   
   var availableLocales: Set[String] = js.native
   
@@ -40,39 +41,27 @@ object GetDefaultLocale {
   }
   
   @scala.inline
-  implicit class GetDefaultLocaleOps[Self <: GetDefaultLocale] (val x: Self) extends AnyVal {
+  implicit class GetDefaultLocaleMutableBuilder[Self <: GetDefaultLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyDigitsData(value: Record[String, Double]): Self = StObject.set(x, "currencyDigitsData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDefaultLocale(value: () => String): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAvailableLocales(value: Set[String]): Self = this.set("availableLocales", value.asInstanceOf[js.Any])
+    def setGetInternalSlots(value: NumberFormat => NumberFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCurrencyDigitsData(value: Record[String, Double]): Self = this.set("currencyDigitsData", value.asInstanceOf[js.Any])
+    def setLocaleData(value: Record[String, js.UndefOr[NumberFormatLocaleInternalData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDefaultLocale(value: () => String): Self = this.set("getDefaultLocale", js.Any.fromFunction0(value))
+    def setNumberingSystemNames(value: js.Array[String]): Self = StObject.set(x, "numberingSystemNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInternalSlots(value: NumberFormat => NumberFormatInternal): Self = this.set("getInternalSlots", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLocaleData(value: Record[String, js.UndefOr[NumberFormatLocaleInternalData]]): Self = this.set("localeData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberingSystemNamesVarargs(value: String*): Self = this.set("numberingSystemNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setNumberingSystemNames(value: js.Array[String]): Self = this.set("numberingSystemNames", value.asInstanceOf[js.Any])
+    def setNumberingSystemNamesVarargs(value: String*): Self = StObject.set(x, "numberingSystemNames", js.Array(value :_*))
   }
 }

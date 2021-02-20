@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminCreateUserConfigType extends js.Object {
+trait AdminCreateUserConfigType extends StObject {
   
   /**
     * Set to True if only the administrator is allowed to create user profiles. Set to False if users can sign themselves up via an app.
@@ -31,36 +32,24 @@ object AdminCreateUserConfigType {
   }
   
   @scala.inline
-  implicit class AdminCreateUserConfigTypeOps[Self <: AdminCreateUserConfigType] (val x: Self) extends AnyVal {
+  implicit class AdminCreateUserConfigTypeMutableBuilder[Self <: AdminCreateUserConfigType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAdminCreateUserOnly(value: BooleanType): Self = StObject.set(x, "AllowAdminCreateUserOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAdminCreateUserOnlyUndefined: Self = StObject.set(x, "AllowAdminCreateUserOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInviteMessageTemplate(value: MessageTemplateType): Self = StObject.set(x, "InviteMessageTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAdminCreateUserOnly(value: BooleanType): Self = this.set("AllowAdminCreateUserOnly", value.asInstanceOf[js.Any])
+    def setInviteMessageTemplateUndefined: Self = StObject.set(x, "InviteMessageTemplate", js.undefined)
     
     @scala.inline
-    def deleteAllowAdminCreateUserOnly: Self = this.set("AllowAdminCreateUserOnly", js.undefined)
+    def setUnusedAccountValidityDays(value: AdminCreateUserUnusedAccountValidityDaysType): Self = StObject.set(x, "UnusedAccountValidityDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInviteMessageTemplate(value: MessageTemplateType): Self = this.set("InviteMessageTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInviteMessageTemplate: Self = this.set("InviteMessageTemplate", js.undefined)
-    
-    @scala.inline
-    def setUnusedAccountValidityDays(value: AdminCreateUserUnusedAccountValidityDaysType): Self = this.set("UnusedAccountValidityDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnusedAccountValidityDays: Self = this.set("UnusedAccountValidityDays", js.undefined)
+    def setUnusedAccountValidityDaysUndefined: Self = StObject.set(x, "UnusedAccountValidityDays", js.undefined)
   }
 }

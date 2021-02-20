@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientSqladmin.anon.Callback
 import typings.maximMazurokGapiClientSqladmin.anon.Host
 import typings.maximMazurokGapiClientSqladmin.anon.Name
 import typings.maximMazurokGapiClientSqladmin.anon.OauthtokenPrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsersResource extends js.Object {
+trait UsersResource extends StObject {
   
   /** Deletes a user from a Cloud SQL instance. */
   def delete(): Request[Operation] = js.native

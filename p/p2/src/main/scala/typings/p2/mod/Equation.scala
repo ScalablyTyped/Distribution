@@ -1,12 +1,13 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Equation")
 @js.native
-class Equation protected () extends js.Object {
+class Equation protected () extends StObject {
   def this(bodyA: Body, bodyB: Body) = this()
   def this(bodyA: Body, bodyB: Body, minForce: Double) = this()
   def this(bodyA: Body, bodyB: Body, minForce: js.UndefOr[scala.Nothing], maxForce: Double) = this()
@@ -65,11 +66,21 @@ class Equation protected () extends js.Object {
   def update(): Unit = js.native
 }
 /* static members */
-@JSImport("p2", "Equation")
-@js.native
-object Equation extends js.Object {
+object Equation {
   
-  var DEFAULT_RELAXATION: Double = js.native
+  @JSImport("p2", "Equation")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var DEFAULT_STIFFNESS: Double = js.native
+  @JSImport("p2", "Equation.DEFAULT_RELAXATION")
+  @js.native
+  def DEFAULT_RELAXATION: Double = js.native
+  @scala.inline
+  def DEFAULT_RELAXATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_RELAXATION")(x.asInstanceOf[js.Any])
+  
+  @JSImport("p2", "Equation.DEFAULT_STIFFNESS")
+  @js.native
+  def DEFAULT_STIFFNESS: Double = js.native
+  @scala.inline
+  def DEFAULT_STIFFNESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_STIFFNESS")(x.asInstanceOf[js.Any])
 }

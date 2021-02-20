@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttMessagesActions extends js.Object {
+trait GanttMessagesActions extends StObject {
   
   var addChild: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object GanttMessagesActions {
   }
   
   @scala.inline
-  implicit class GanttMessagesActionsOps[Self <: GanttMessagesActions] (val x: Self) extends AnyVal {
+  implicit class GanttMessagesActionsMutableBuilder[Self <: GanttMessagesActions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddChild(value: String): Self = StObject.set(x, "addChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddChildUndefined: Self = StObject.set(x, "addChild", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppend(value: String): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddChild(value: String): Self = this.set("addChild", value.asInstanceOf[js.Any])
+    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
     @scala.inline
-    def deleteAddChild: Self = this.set("addChild", js.undefined)
+    def setInsertAfter(value: String): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppend(value: String): Self = this.set("append", value.asInstanceOf[js.Any])
+    def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
     
     @scala.inline
-    def deleteAppend: Self = this.set("append", js.undefined)
+    def setInsertBefore(value: String): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertAfter(value: String): Self = this.set("insertAfter", value.asInstanceOf[js.Any])
+    def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
     @scala.inline
-    def deleteInsertAfter: Self = this.set("insertAfter", js.undefined)
+    def setPdf(value: String): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertBefore(value: String): Self = this.set("insertBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsertBefore: Self = this.set("insertBefore", js.undefined)
-    
-    @scala.inline
-    def setPdf(value: String): Self = this.set("pdf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePdf: Self = this.set("pdf", js.undefined)
+    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
   }
 }

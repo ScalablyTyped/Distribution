@@ -1,5 +1,6 @@
 package typings.shopifyBuy.ShopifyBuy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,60 +83,48 @@ object Product {
   }
   
   @scala.inline
-  implicit class ProductOps[Self <: Product] (val x: Self) extends AnyVal {
+  implicit class ProductMutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: Image*): Self = this.set("images", js.Array(value :_*))
+    def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setImages(value: js.Array[Image]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setSelectedVariant(value: ProductVariant): Self = StObject.set(x, "selectedVariant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsVarargs(value: Option*): Self = this.set("options", js.Array(value :_*))
+    def setSelectedVariantImage(value: Image): Self = StObject.set(x, "selectedVariantImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[Option]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSelections(value: js.Array[String]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedVariant(value: ProductVariant): Self = this.set("selectedVariant", value.asInstanceOf[js.Any])
+    def setSelectionsVarargs(value: String*): Self = StObject.set(x, "selections", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedVariantImage(value: Image): Self = this.set("selectedVariantImage", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionsVarargs(value: String*): Self = this.set("selections", js.Array(value :_*))
+    def setVariants(value: js.Array[ProductVariant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelections(value: js.Array[String]): Self = this.set("selections", value.asInstanceOf[js.Any])
+    def setVariantsVarargs(value: ProductVariant*): Self = StObject.set(x, "variants", js.Array(value :_*))
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariantsVarargs(value: ProductVariant*): Self = this.set("variants", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariants(value: js.Array[ProductVariant]): Self = this.set("variants", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVendor(value: String): Self = this.set("vendor", value.asInstanceOf[js.Any])
+    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
   }
 }

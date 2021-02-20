@@ -1,12 +1,13 @@
 package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphQLFieldDefinition extends js.Object {
+trait GraphQLFieldDefinition extends StObject {
   
   var args: js.Array[GraphQLArgument] = js.native
   
@@ -30,47 +31,35 @@ object GraphQLFieldDefinition {
   }
   
   @scala.inline
-  implicit class GraphQLFieldDefinitionOps[Self <: GraphQLFieldDefinition] (val x: Self) extends AnyVal {
+  implicit class GraphQLFieldDefinitionMutableBuilder[Self <: GraphQLFieldDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[GraphQLArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: GraphQLArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeprecationReason(value: String): Self = StObject.set(x, "deprecationReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: GraphQLArgument*): Self = this.set("args", js.Array(value :_*))
+    def setDeprecationReasonUndefined: Self = StObject.set(x, "deprecationReason", js.undefined)
     
     @scala.inline
-    def setArgs(value: js.Array[GraphQLArgument]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: GraphQLOutputType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeprecationReason(value: String): Self = this.set("deprecationReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeprecationReason: Self = this.set("deprecationReason", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResolve(
       value: (/* source */ js.Any, /* args */ StringDictionary[js.Any], /* context */ js.Any, /* info */ GraphQLResolveInfo) => js.Any
-    ): Self = this.set("resolve", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "resolve", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+    
+    @scala.inline
+    def setType(value: GraphQLOutputType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

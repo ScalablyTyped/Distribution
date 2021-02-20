@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaSourceState extends js.Object
+sealed trait MediaSourceState extends StObject
 /** Specifies the state of a MediaSource . */
 @JSGlobal("Windows.Media.Core.MediaSourceState")
 @js.native
-object MediaSourceState extends js.Object {
+object MediaSourceState extends StObject {
   
   /** The MediaSource has been closed. */
   @js.native

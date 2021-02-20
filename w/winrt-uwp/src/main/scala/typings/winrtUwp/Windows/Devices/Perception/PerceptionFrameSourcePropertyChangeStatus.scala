@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Perception
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PerceptionFrameSourcePropertyChangeStatus extends js.Object
+sealed trait PerceptionFrameSourcePropertyChangeStatus extends StObject
 /** Indicates the status of a property change that an app requested of a frame source. */
 @JSGlobal("Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus")
 @js.native
-object PerceptionFrameSourcePropertyChangeStatus extends js.Object {
+object PerceptionFrameSourcePropertyChangeStatus extends StObject {
   
   /** The requested property change was accepted by the frame source. */
   @js.native

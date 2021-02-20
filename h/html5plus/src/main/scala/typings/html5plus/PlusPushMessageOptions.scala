@@ -3,6 +3,7 @@ package typings.html5plus
 import typings.html5plus.html5plusStrings.none
 import typings.html5plus.html5plusStrings.system
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
   */
 @js.native
-trait PlusPushMessageOptions extends js.Object {
+trait PlusPushMessageOptions extends StObject {
   
   /**
     * 要启动流应用的appid
@@ -85,60 +86,48 @@ object PlusPushMessageOptions {
   }
   
   @scala.inline
-  implicit class PlusPushMessageOptionsOps[Self <: PlusPushMessageOptions] (val x: Self) extends AnyVal {
+  implicit class PlusPushMessageOptionsMutableBuilder[Self <: PlusPushMessageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCover(value: Boolean): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppid(value: String): Self = this.set("appid", value.asInstanceOf[js.Any])
+    def setCoverUndefined: Self = StObject.set(x, "cover", js.undefined)
     
     @scala.inline
-    def deleteAppid: Self = this.set("appid", js.undefined)
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCover(value: Boolean): Self = this.set("cover", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteCover: Self = this.set("cover", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setSound(value: system | none): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSound(value: system | none): Self = this.set("sound", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSound: Self = this.set("sound", js.undefined)
+    def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setWhen(value: Date): Self = this.set("when", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhen: Self = this.set("when", js.undefined)
+    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

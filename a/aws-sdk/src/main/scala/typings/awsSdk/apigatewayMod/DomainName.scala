@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainName extends js.Object {
+trait DomainName extends StObject {
   
   /**
     * The reference to an AWS-managed certificate that will be used by edge-optimized endpoint for this domain name. AWS Certificate Manager is the only supported source.
@@ -96,114 +97,102 @@ object DomainName {
   }
   
   @scala.inline
-  implicit class DomainNameOps[Self <: DomainName] (val x: Self) extends AnyVal {
+  implicit class DomainNameMutableBuilder[Self <: DomainName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateArn(value: String): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateName(value: String): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateArn(value: String): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    def setCertificateNameUndefined: Self = StObject.set(x, "certificateName", js.undefined)
     
     @scala.inline
-    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    def setCertificateUploadDate(value: Timestamp): Self = StObject.set(x, "certificateUploadDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateName(value: String): Self = this.set("certificateName", value.asInstanceOf[js.Any])
+    def setCertificateUploadDateUndefined: Self = StObject.set(x, "certificateUploadDate", js.undefined)
     
     @scala.inline
-    def deleteCertificateName: Self = this.set("certificateName", js.undefined)
+    def setDistributionDomainName(value: String): Self = StObject.set(x, "distributionDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateUploadDate(value: Timestamp): Self = this.set("certificateUploadDate", value.asInstanceOf[js.Any])
+    def setDistributionDomainNameUndefined: Self = StObject.set(x, "distributionDomainName", js.undefined)
     
     @scala.inline
-    def deleteCertificateUploadDate: Self = this.set("certificateUploadDate", js.undefined)
+    def setDistributionHostedZoneId(value: String): Self = StObject.set(x, "distributionHostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionDomainName(value: String): Self = this.set("distributionDomainName", value.asInstanceOf[js.Any])
+    def setDistributionHostedZoneIdUndefined: Self = StObject.set(x, "distributionHostedZoneId", js.undefined)
     
     @scala.inline
-    def deleteDistributionDomainName: Self = this.set("distributionDomainName", js.undefined)
+    def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionHostedZoneId(value: String): Self = this.set("distributionHostedZoneId", value.asInstanceOf[js.Any])
+    def setDomainNameStatus(value: DomainNameStatus): Self = StObject.set(x, "domainNameStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDistributionHostedZoneId: Self = this.set("distributionHostedZoneId", js.undefined)
+    def setDomainNameStatusMessage(value: String): Self = StObject.set(x, "domainNameStatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    def setDomainNameStatusMessageUndefined: Self = StObject.set(x, "domainNameStatusMessage", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    def setDomainNameStatusUndefined: Self = StObject.set(x, "domainNameStatus", js.undefined)
     
     @scala.inline
-    def setDomainNameStatus(value: DomainNameStatus): Self = this.set("domainNameStatus", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
     @scala.inline
-    def deleteDomainNameStatus: Self = this.set("domainNameStatus", js.undefined)
+    def setEndpointConfiguration(value: EndpointConfiguration): Self = StObject.set(x, "endpointConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainNameStatusMessage(value: String): Self = this.set("domainNameStatusMessage", value.asInstanceOf[js.Any])
+    def setEndpointConfigurationUndefined: Self = StObject.set(x, "endpointConfiguration", js.undefined)
     
     @scala.inline
-    def deleteDomainNameStatusMessage: Self = this.set("domainNameStatusMessage", js.undefined)
+    def setMutualTlsAuthentication(value: MutualTlsAuthentication): Self = StObject.set(x, "mutualTlsAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointConfiguration(value: EndpointConfiguration): Self = this.set("endpointConfiguration", value.asInstanceOf[js.Any])
+    def setMutualTlsAuthenticationUndefined: Self = StObject.set(x, "mutualTlsAuthentication", js.undefined)
     
     @scala.inline
-    def deleteEndpointConfiguration: Self = this.set("endpointConfiguration", js.undefined)
+    def setRegionalCertificateArn(value: String): Self = StObject.set(x, "regionalCertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutualTlsAuthentication(value: MutualTlsAuthentication): Self = this.set("mutualTlsAuthentication", value.asInstanceOf[js.Any])
+    def setRegionalCertificateArnUndefined: Self = StObject.set(x, "regionalCertificateArn", js.undefined)
     
     @scala.inline
-    def deleteMutualTlsAuthentication: Self = this.set("mutualTlsAuthentication", js.undefined)
+    def setRegionalCertificateName(value: String): Self = StObject.set(x, "regionalCertificateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionalCertificateArn(value: String): Self = this.set("regionalCertificateArn", value.asInstanceOf[js.Any])
+    def setRegionalCertificateNameUndefined: Self = StObject.set(x, "regionalCertificateName", js.undefined)
     
     @scala.inline
-    def deleteRegionalCertificateArn: Self = this.set("regionalCertificateArn", js.undefined)
+    def setRegionalDomainName(value: String): Self = StObject.set(x, "regionalDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionalCertificateName(value: String): Self = this.set("regionalCertificateName", value.asInstanceOf[js.Any])
+    def setRegionalDomainNameUndefined: Self = StObject.set(x, "regionalDomainName", js.undefined)
     
     @scala.inline
-    def deleteRegionalCertificateName: Self = this.set("regionalCertificateName", js.undefined)
+    def setRegionalHostedZoneId(value: String): Self = StObject.set(x, "regionalHostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionalDomainName(value: String): Self = this.set("regionalDomainName", value.asInstanceOf[js.Any])
+    def setRegionalHostedZoneIdUndefined: Self = StObject.set(x, "regionalHostedZoneId", js.undefined)
     
     @scala.inline
-    def deleteRegionalDomainName: Self = this.set("regionalDomainName", js.undefined)
+    def setSecurityPolicy(value: SecurityPolicy): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionalHostedZoneId(value: String): Self = this.set("regionalHostedZoneId", value.asInstanceOf[js.Any])
+    def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
     
     @scala.inline
-    def deleteRegionalHostedZoneId: Self = this.set("regionalHostedZoneId", js.undefined)
+    def setTags(value: MapOfStringToString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityPolicy(value: SecurityPolicy): Self = this.set("securityPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityPolicy: Self = this.set("securityPolicy", js.undefined)
-    
-    @scala.inline
-    def setTags(value: MapOfStringToString): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

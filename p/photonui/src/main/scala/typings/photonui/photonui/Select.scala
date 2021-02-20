@@ -1,5 +1,6 @@
 package typings.photonui.photonui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Select extends Widget {
   
-   // string (maybe)
+  // string (maybe)
   def addChild(widget: Widget): Unit = js.native
   def addChild(widget: Widget, layoutOptions: js.Any): Unit = js.native
   
@@ -30,12 +31,12 @@ trait Select extends Widget {
   
   var popupMinWidth: Double = js.native
   
-   // readonly
+  // readonly
   var popupOffsetHeight: Double = js.native
   
   var popupOffsetWidth: Double = js.native
   
-   // readonly
+  // readonly
   var popupPadding: Double = js.native
   
   var popupWidth: Double = js.native

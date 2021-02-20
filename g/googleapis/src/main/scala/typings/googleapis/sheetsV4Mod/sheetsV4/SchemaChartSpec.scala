@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The specifications of a chart.
   */
 @js.native
-trait SchemaChartSpec extends js.Object {
+trait SchemaChartSpec extends StObject {
   
   /**
     * The alternative text that describes the chart.  This is often used for
@@ -120,132 +121,120 @@ object SchemaChartSpec {
   }
   
   @scala.inline
-  implicit class SchemaChartSpecOps[Self <: SchemaChartSpec] (val x: Self) extends AnyVal {
+  implicit class SchemaChartSpecMutableBuilder[Self <: SchemaChartSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltTextUndefined: Self = StObject.set(x, "altText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: SchemaColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltText(value: String): Self = this.set("altText", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAltText: Self = this.set("altText", js.undefined)
+    def setBasicChart(value: SchemaBasicChartSpec): Self = StObject.set(x, "basicChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: SchemaColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBasicChartUndefined: Self = StObject.set(x, "basicChart", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBubbleChart(value: SchemaBubbleChartSpec): Self = StObject.set(x, "bubbleChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicChart(value: SchemaBasicChartSpec): Self = this.set("basicChart", value.asInstanceOf[js.Any])
+    def setBubbleChartUndefined: Self = StObject.set(x, "bubbleChart", js.undefined)
     
     @scala.inline
-    def deleteBasicChart: Self = this.set("basicChart", js.undefined)
+    def setCandlestickChart(value: SchemaCandlestickChartSpec): Self = StObject.set(x, "candlestickChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleChart(value: SchemaBubbleChartSpec): Self = this.set("bubbleChart", value.asInstanceOf[js.Any])
+    def setCandlestickChartUndefined: Self = StObject.set(x, "candlestickChart", js.undefined)
     
     @scala.inline
-    def deleteBubbleChart: Self = this.set("bubbleChart", js.undefined)
+    def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandlestickChart(value: SchemaCandlestickChartSpec): Self = this.set("candlestickChart", value.asInstanceOf[js.Any])
+    def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
     
     @scala.inline
-    def deleteCandlestickChart: Self = this.set("candlestickChart", js.undefined)
+    def setHiddenDimensionStrategy(value: String): Self = StObject.set(x, "hiddenDimensionStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontName(value: String): Self = this.set("fontName", value.asInstanceOf[js.Any])
+    def setHiddenDimensionStrategyUndefined: Self = StObject.set(x, "hiddenDimensionStrategy", js.undefined)
     
     @scala.inline
-    def deleteFontName: Self = this.set("fontName", js.undefined)
+    def setHistogramChart(value: SchemaHistogramChartSpec): Self = StObject.set(x, "histogramChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenDimensionStrategy(value: String): Self = this.set("hiddenDimensionStrategy", value.asInstanceOf[js.Any])
+    def setHistogramChartUndefined: Self = StObject.set(x, "histogramChart", js.undefined)
     
     @scala.inline
-    def deleteHiddenDimensionStrategy: Self = this.set("hiddenDimensionStrategy", js.undefined)
+    def setMaximized(value: Boolean): Self = StObject.set(x, "maximized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistogramChart(value: SchemaHistogramChartSpec): Self = this.set("histogramChart", value.asInstanceOf[js.Any])
+    def setMaximizedUndefined: Self = StObject.set(x, "maximized", js.undefined)
     
     @scala.inline
-    def deleteHistogramChart: Self = this.set("histogramChart", js.undefined)
+    def setOrgChart(value: SchemaOrgChartSpec): Self = StObject.set(x, "orgChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximized(value: Boolean): Self = this.set("maximized", value.asInstanceOf[js.Any])
+    def setOrgChartUndefined: Self = StObject.set(x, "orgChart", js.undefined)
     
     @scala.inline
-    def deleteMaximized: Self = this.set("maximized", js.undefined)
+    def setPieChart(value: SchemaPieChartSpec): Self = StObject.set(x, "pieChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgChart(value: SchemaOrgChartSpec): Self = this.set("orgChart", value.asInstanceOf[js.Any])
+    def setPieChartUndefined: Self = StObject.set(x, "pieChart", js.undefined)
     
     @scala.inline
-    def deleteOrgChart: Self = this.set("orgChart", js.undefined)
+    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieChart(value: SchemaPieChartSpec): Self = this.set("pieChart", value.asInstanceOf[js.Any])
+    def setSubtitleTextFormat(value: SchemaTextFormat): Self = StObject.set(x, "subtitleTextFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePieChart: Self = this.set("pieChart", js.undefined)
+    def setSubtitleTextFormatUndefined: Self = StObject.set(x, "subtitleTextFormat", js.undefined)
     
     @scala.inline
-    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    def setSubtitleTextPosition(value: SchemaTextPosition): Self = StObject.set(x, "subtitleTextPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    def setSubtitleTextPositionUndefined: Self = StObject.set(x, "subtitleTextPosition", js.undefined)
     
     @scala.inline
-    def setSubtitleTextFormat(value: SchemaTextFormat): Self = this.set("subtitleTextFormat", value.asInstanceOf[js.Any])
+    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     @scala.inline
-    def deleteSubtitleTextFormat: Self = this.set("subtitleTextFormat", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitleTextPosition(value: SchemaTextPosition): Self = this.set("subtitleTextPosition", value.asInstanceOf[js.Any])
+    def setTitleTextFormat(value: SchemaTextFormat): Self = StObject.set(x, "titleTextFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubtitleTextPosition: Self = this.set("subtitleTextPosition", js.undefined)
+    def setTitleTextFormatUndefined: Self = StObject.set(x, "titleTextFormat", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleTextPosition(value: SchemaTextPosition): Self = StObject.set(x, "titleTextPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleTextPositionUndefined: Self = StObject.set(x, "titleTextPosition", js.undefined)
     
     @scala.inline
-    def setTitleTextFormat(value: SchemaTextFormat): Self = this.set("titleTextFormat", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTitleTextFormat: Self = this.set("titleTextFormat", js.undefined)
+    def setTreemapChart(value: SchemaTreemapChartSpec): Self = StObject.set(x, "treemapChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleTextPosition(value: SchemaTextPosition): Self = this.set("titleTextPosition", value.asInstanceOf[js.Any])
+    def setTreemapChartUndefined: Self = StObject.set(x, "treemapChart", js.undefined)
     
     @scala.inline
-    def deleteTitleTextPosition: Self = this.set("titleTextPosition", js.undefined)
+    def setWaterfallChart(value: SchemaWaterfallChartSpec): Self = StObject.set(x, "waterfallChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreemapChart(value: SchemaTreemapChartSpec): Self = this.set("treemapChart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreemapChart: Self = this.set("treemapChart", js.undefined)
-    
-    @scala.inline
-    def setWaterfallChart(value: SchemaWaterfallChartSpec): Self = this.set("waterfallChart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaterfallChart: Self = this.set("waterfallChart", js.undefined)
+    def setWaterfallChartUndefined: Self = StObject.set(x, "waterfallChart", js.undefined)
   }
 }

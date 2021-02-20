@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDirectConnectGatewaysResult extends js.Object {
+trait DescribeDirectConnectGatewaysResult extends StObject {
   
   /**
     * The Direct Connect gateways.
@@ -26,33 +27,21 @@ object DescribeDirectConnectGatewaysResult {
   }
   
   @scala.inline
-  implicit class DescribeDirectConnectGatewaysResultOps[Self <: DescribeDirectConnectGatewaysResult] (val x: Self) extends AnyVal {
+  implicit class DescribeDirectConnectGatewaysResultMutableBuilder[Self <: DescribeDirectConnectGatewaysResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectConnectGateways(value: DirectConnectGatewayList): Self = StObject.set(x, "directConnectGateways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectConnectGatewaysUndefined: Self = StObject.set(x, "directConnectGateways", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectConnectGatewaysVarargs(value: DirectConnectGateway*): Self = StObject.set(x, "directConnectGateways", js.Array(value :_*))
     
     @scala.inline
-    def setDirectConnectGatewaysVarargs(value: DirectConnectGateway*): Self = this.set("directConnectGateways", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectConnectGateways(value: DirectConnectGatewayList): Self = this.set("directConnectGateways", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectConnectGateways: Self = this.set("directConnectGateways", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

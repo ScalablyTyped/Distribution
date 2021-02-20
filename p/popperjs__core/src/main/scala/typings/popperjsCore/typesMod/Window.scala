@@ -3,12 +3,13 @@ package typings.popperjsCore.typesMod
 import typings.popperjsCore.anon.FnCall
 import typings.std.CSSStyleDeclaration
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Window extends js.Object {
+trait Window extends StObject {
   
   var Element: typings.std.Element = js.native
   

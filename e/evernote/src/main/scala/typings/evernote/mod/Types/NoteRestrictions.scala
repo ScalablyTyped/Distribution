@@ -1,13 +1,14 @@
 package typings.evernote.mod.Types
 
 import typings.evernote.anon.NoEmail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.NoteRestrictions")
 @js.native
-class NoteRestrictions () extends js.Object {
+class NoteRestrictions () extends StObject {
   def this(args: NoEmail) = this()
   
   var noEmail: js.UndefOr[Boolean] = js.native

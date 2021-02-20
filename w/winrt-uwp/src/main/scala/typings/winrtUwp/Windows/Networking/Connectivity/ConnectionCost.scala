@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to property values that indicate the current cost of a network connection. */
 @js.native
-trait ConnectionCost extends js.Object {
+trait ConnectionCost extends StObject {
   
   /** Gets a value that indicates if a connection is approaching the data usage allowance specified by the data plan. */
   var approachingDataLimit: Boolean = js.native
@@ -38,33 +39,21 @@ object ConnectionCost {
   }
   
   @scala.inline
-  implicit class ConnectionCostOps[Self <: ConnectionCost] (val x: Self) extends AnyVal {
+  implicit class ConnectionCostMutableBuilder[Self <: ConnectionCost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproachingDataLimit(value: Boolean): Self = StObject.set(x, "approachingDataLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundDataUsageRestricted(value: Boolean): Self = StObject.set(x, "backgroundDataUsageRestricted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkCostType(value: NetworkCostType): Self = StObject.set(x, "networkCostType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproachingDataLimit(value: Boolean): Self = this.set("approachingDataLimit", value.asInstanceOf[js.Any])
+    def setOverDataLimit(value: Boolean): Self = StObject.set(x, "overDataLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundDataUsageRestricted(value: Boolean): Self = this.set("backgroundDataUsageRestricted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNetworkCostType(value: NetworkCostType): Self = this.set("networkCostType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverDataLimit(value: Boolean): Self = this.set("overDataLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoaming(value: Boolean): Self = this.set("roaming", value.asInstanceOf[js.Any])
+    def setRoaming(value: Boolean): Self = StObject.set(x, "roaming", value.asInstanceOf[js.Any])
   }
 }

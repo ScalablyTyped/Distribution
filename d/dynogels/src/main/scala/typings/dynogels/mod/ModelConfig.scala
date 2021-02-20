@@ -1,12 +1,13 @@
 package typings.dynogels.mod
 
 import typings.dynogels.mod.AWS.DynamoDB
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelConfig extends js.Object {
+trait ModelConfig extends StObject {
   
   var docClient: js.UndefOr[js.Any] = js.native
   
@@ -23,36 +24,24 @@ object ModelConfig {
   }
   
   @scala.inline
-  implicit class ModelConfigOps[Self <: ModelConfig] (val x: Self) extends AnyVal {
+  implicit class ModelConfigMutableBuilder[Self <: ModelConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocClient(value: js.Any): Self = StObject.set(x, "docClient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocClientUndefined: Self = StObject.set(x, "docClient", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamodb(value: DynamoDB): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocClient(value: js.Any): Self = this.set("docClient", value.asInstanceOf[js.Any])
+    def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
     
     @scala.inline
-    def deleteDocClient: Self = this.set("docClient", js.undefined)
+    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamodb(value: DynamoDB): Self = this.set("dynamodb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDynamodb: Self = this.set("dynamodb", js.undefined)
-    
-    @scala.inline
-    def setTableName(value: String): Self = this.set("tableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("tableName", js.undefined)
+    def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
   }
 }

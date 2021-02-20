@@ -3,14 +3,14 @@ package typings.agGrid
 import typings.agGrid.beanStubMod.BeanStub
 import typings.agGrid.gridPanelMod.GridPanel
 import typings.agGrid.iRowModelMod.IRowModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowModels/paginationProxy", JSImport.Namespace)
-@js.native
-object paginationProxyMod extends js.Object {
+object paginationProxyMod {
   
+  @JSImport("ag-grid/dist/lib/rowModels/paginationProxy", "PaginationAutoPageSizeService")
   @js.native
   class PaginationAutoPageSizeService () extends BeanStub {
     
@@ -33,6 +33,7 @@ object paginationProxyMod extends js.Object {
     var scrollVisibleService: js.Any = js.native
   }
   
+  @JSImport("ag-grid/dist/lib/rowModels/paginationProxy", "PaginationProxy")
   @js.native
   class PaginationProxy ()
     extends BeanStub

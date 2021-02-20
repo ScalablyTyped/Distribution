@@ -4,16 +4,16 @@ import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.mathSizeMod.ISize
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/thinTexture", JSImport.Namespace)
-@js.native
-object thinTextureMod extends js.Object {
+object thinTextureMod {
   
+  @JSImport("babylonjs/Materials/Textures/thinTexture", "ThinTexture")
   @js.native
-  class ThinTexture protected () extends js.Object {
+  class ThinTexture protected () extends StObject {
     /**
       * Instantiates a new ThinTexture.
       * Base class of all the textures in babylon.

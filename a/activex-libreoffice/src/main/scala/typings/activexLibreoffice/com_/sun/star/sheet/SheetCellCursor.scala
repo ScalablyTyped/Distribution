@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.com_.sun.star.table.XCellCursor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

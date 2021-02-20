@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrandEmailContent extends js.Object {
+trait BrandEmailContent extends StObject {
   
   /**
     * Deprecated.
@@ -36,42 +37,30 @@ object BrandEmailContent {
   }
   
   @scala.inline
-  implicit class BrandEmailContentOps[Self <: BrandEmailContent] (val x: Self) extends AnyVal {
+  implicit class BrandEmailContentMutableBuilder[Self <: BrandEmailContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailContentType(value: String): Self = StObject.set(x, "emailContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setEmailContentTypeUndefined: Self = StObject.set(x, "emailContentType", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setEmailToLink(value: String): Self = StObject.set(x, "emailToLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailContentType(value: String): Self = this.set("emailContentType", value.asInstanceOf[js.Any])
+    def setEmailToLinkUndefined: Self = StObject.set(x, "emailToLink", js.undefined)
     
     @scala.inline
-    def deleteEmailContentType: Self = this.set("emailContentType", js.undefined)
+    def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailToLink(value: String): Self = this.set("emailToLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmailToLink: Self = this.set("emailToLink", js.undefined)
-    
-    @scala.inline
-    def setLinkText(value: String): Self = this.set("linkText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkText: Self = this.set("linkText", js.undefined)
+    def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
   }
 }

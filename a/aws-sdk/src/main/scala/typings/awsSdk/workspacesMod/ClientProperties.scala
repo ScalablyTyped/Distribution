@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientProperties extends js.Object {
+trait ClientProperties extends StObject {
   
   /**
     * Specifies whether users can cache their credentials on the Amazon WorkSpaces client. When enabled, users can choose to reconnect to their WorkSpaces without re-entering their credentials. 
@@ -21,24 +22,12 @@ object ClientProperties {
   }
   
   @scala.inline
-  implicit class ClientPropertiesOps[Self <: ClientProperties] (val x: Self) extends AnyVal {
+  implicit class ClientPropertiesMutableBuilder[Self <: ClientProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReconnectEnabled(value: ReconnectEnum): Self = StObject.set(x, "ReconnectEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReconnectEnabled(value: ReconnectEnum): Self = this.set("ReconnectEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReconnectEnabled: Self = this.set("ReconnectEnabled", js.undefined)
+    def setReconnectEnabledUndefined: Self = StObject.set(x, "ReconnectEnabled", js.undefined)
   }
 }

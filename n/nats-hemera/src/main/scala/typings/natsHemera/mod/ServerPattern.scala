@@ -1,6 +1,7 @@
 package typings.natsHemera.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,33 +27,21 @@ object ServerPattern {
   }
   
   @scala.inline
-  implicit class ServerPatternOps[Self <: ServerPattern] (val x: Self) extends AnyVal {
+  implicit class ServerPatternMutableBuilder[Self <: ServerPattern] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxMessages$(value: Double): Self = StObject.set(x, "maxMessages$", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxMessages$Undefined: Self = StObject.set(x, "maxMessages$", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPubsub$(value: Boolean): Self = StObject.set(x, "pubsub$", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def setPubsub$Undefined: Self = StObject.set(x, "pubsub$", js.undefined)
     
     @scala.inline
-    def setMaxMessages$(value: Double): Self = this.set("maxMessages$", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxMessages$: Self = this.set("maxMessages$", js.undefined)
-    
-    @scala.inline
-    def setPubsub$(value: Boolean): Self = this.set("pubsub$", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubsub$: Self = this.set("pubsub$", js.undefined)
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

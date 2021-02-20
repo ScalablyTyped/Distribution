@@ -11,12 +11,13 @@ import typings.chui.anon.Icons
 import typings.chui.anon.Id
 import typings.chui.anon.Loop
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChocolateChipStatic extends js.Object {
+trait ChocolateChipStatic extends StObject {
   
   /**
     * Bind the values of data-models to elements with data-controllers: <input id='myText' data-controller='input-value' type='text'></li><h3 data-model='input-value'></h3>.

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersioningConfiguration extends js.Object {
+trait VersioningConfiguration extends StObject {
   
   /**
     * How many versions of dataset contents are kept. The unlimited parameter must be false.
@@ -26,30 +27,18 @@ object VersioningConfiguration {
   }
   
   @scala.inline
-  implicit class VersioningConfigurationOps[Self <: VersioningConfiguration] (val x: Self) extends AnyVal {
+  implicit class VersioningConfigurationMutableBuilder[Self <: VersioningConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxVersions(value: MaxVersions): Self = StObject.set(x, "maxVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxVersionsUndefined: Self = StObject.set(x, "maxVersions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnlimited(value: UnlimitedVersioning): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVersions(value: MaxVersions): Self = this.set("maxVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxVersions: Self = this.set("maxVersions", js.undefined)
-    
-    @scala.inline
-    def setUnlimited(value: UnlimitedVersioning): Self = this.set("unlimited", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnlimited: Self = this.set("unlimited", js.undefined)
+    def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
   }
 }

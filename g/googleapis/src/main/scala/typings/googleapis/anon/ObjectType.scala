@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectType extends js.Object {
+trait ObjectType extends StObject {
   
   var content: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object ObjectType {
   }
   
   @scala.inline
-  implicit class ObjectTypeOps[Self <: ObjectType] (val x: Self) extends AnyVal {
+  implicit class ObjectTypeMutableBuilder[Self <: ObjectType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setOriginalContent(value: String): Self = StObject.set(x, "originalContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectType: Self = this.set("objectType", js.undefined)
-    
-    @scala.inline
-    def setOriginalContent(value: String): Self = this.set("originalContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalContent: Self = this.set("originalContent", js.undefined)
+    def setOriginalContentUndefined: Self = StObject.set(x, "originalContent", js.undefined)
   }
 }

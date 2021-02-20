@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains properties for the MediaStreamSample . */
 @js.native
-trait MediaStreamSamplePropertySet extends js.Object {
+trait MediaStreamSamplePropertySet extends StObject {
   
   /** Removes all items from the property set. */
   def clear(): Unit = js.native
@@ -75,42 +76,30 @@ object MediaStreamSamplePropertySet {
   }
   
   @scala.inline
-  implicit class MediaStreamSamplePropertySetOps[Self <: MediaStreamSamplePropertySet] (val x: Self) extends AnyVal {
+  implicit class MediaStreamSamplePropertySetMutableBuilder[Self <: MediaStreamSamplePropertySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetView(value: () => IMapView[String, _]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = this.set("first", js.Any.fromFunction0(value))
+    def setInsert(value: (String, js.Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetView(value: () => IMapView[String, _]): Self = this.set("getView", js.Any.fromFunction0(value))
+    def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasKey(value: String => Boolean): Self = this.set("hasKey", js.Any.fromFunction1(value))
+    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsert(value: (String, js.Any) => Boolean): Self = this.set("insert", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLookup(value: String => js.Any): Self = this.set("lookup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: String => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

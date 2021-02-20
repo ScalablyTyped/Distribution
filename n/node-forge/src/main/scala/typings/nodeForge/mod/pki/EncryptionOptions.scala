@@ -9,12 +9,13 @@ import typings.nodeForge.nodeForgeStrings.sha224
 import typings.nodeForge.nodeForgeStrings.sha256
 import typings.nodeForge.nodeForgeStrings.sha384
 import typings.nodeForge.nodeForgeStrings.sha512
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncryptionOptions extends js.Object {
+trait EncryptionOptions extends StObject {
   
   var algorithm: js.UndefOr[aes128 | aes192 | aes256 | `3des`] = js.native
   
@@ -35,48 +36,36 @@ object EncryptionOptions {
   }
   
   @scala.inline
-  implicit class EncryptionOptionsOps[Self <: EncryptionOptions] (val x: Self) extends AnyVal {
+  implicit class EncryptionOptionsMutableBuilder[Self <: EncryptionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: aes128 | aes192 | aes256 | `3des`): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: aes128 | aes192 | aes256 | `3des`): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setPrfAlgorithm(value: sha1 | sha224 | sha256 | sha384 | sha512): Self = StObject.set(x, "prfAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegacy(value: Boolean): Self = this.set("legacy", value.asInstanceOf[js.Any])
+    def setPrfAlgorithmUndefined: Self = StObject.set(x, "prfAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteLegacy: Self = this.set("legacy", js.undefined)
+    def setSaltSize(value: Double): Self = StObject.set(x, "saltSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrfAlgorithm(value: sha1 | sha224 | sha256 | sha384 | sha512): Self = this.set("prfAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrfAlgorithm: Self = this.set("prfAlgorithm", js.undefined)
-    
-    @scala.inline
-    def setSaltSize(value: Double): Self = this.set("saltSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaltSize: Self = this.set("saltSize", js.undefined)
+    def setSaltSizeUndefined: Self = StObject.set(x, "saltSize", js.undefined)
   }
 }

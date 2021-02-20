@@ -1,11 +1,12 @@
 package typings.leafletGeosearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenStreetMapProviderOptionsPolygonOutput extends js.Object {
+trait OpenStreetMapProviderOptionsPolygonOutput extends StObject {
   
   var polygon_geojson: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object OpenStreetMapProviderOptionsPolygonOutput {
   }
   
   @scala.inline
-  implicit class OpenStreetMapProviderOptionsPolygonOutputOps[Self <: OpenStreetMapProviderOptionsPolygonOutput] (val x: Self) extends AnyVal {
+  implicit class OpenStreetMapProviderOptionsPolygonOutputMutableBuilder[Self <: OpenStreetMapProviderOptionsPolygonOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolygon_geojson(value: Double): Self = StObject.set(x, "polygon_geojson", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolygon_geojsonUndefined: Self = StObject.set(x, "polygon_geojson", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolygon_kml(value: Double): Self = StObject.set(x, "polygon_kml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygon_geojson(value: Double): Self = this.set("polygon_geojson", value.asInstanceOf[js.Any])
+    def setPolygon_kmlUndefined: Self = StObject.set(x, "polygon_kml", js.undefined)
     
     @scala.inline
-    def deletePolygon_geojson: Self = this.set("polygon_geojson", js.undefined)
+    def setPolygon_svg(value: Double): Self = StObject.set(x, "polygon_svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygon_kml(value: Double): Self = this.set("polygon_kml", value.asInstanceOf[js.Any])
+    def setPolygon_svgUndefined: Self = StObject.set(x, "polygon_svg", js.undefined)
     
     @scala.inline
-    def deletePolygon_kml: Self = this.set("polygon_kml", js.undefined)
+    def setPolygon_text(value: Double): Self = StObject.set(x, "polygon_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygon_svg(value: Double): Self = this.set("polygon_svg", value.asInstanceOf[js.Any])
+    def setPolygon_textUndefined: Self = StObject.set(x, "polygon_text", js.undefined)
     
     @scala.inline
-    def deletePolygon_svg: Self = this.set("polygon_svg", js.undefined)
+    def setPolygon_threshold(value: String): Self = StObject.set(x, "polygon_threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygon_text(value: Double): Self = this.set("polygon_text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolygon_text: Self = this.set("polygon_text", js.undefined)
-    
-    @scala.inline
-    def setPolygon_threshold(value: String): Self = this.set("polygon_threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolygon_threshold: Self = this.set("polygon_threshold", js.undefined)
+    def setPolygon_thresholdUndefined: Self = StObject.set(x, "polygon_threshold", js.undefined)
   }
 }

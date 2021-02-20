@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStructuralType extends js.Object {
+trait IStructuralType extends StObject {
   
   var complexProperties: js.Array[DataProperty] = js.native
   
@@ -38,51 +39,39 @@ object IStructuralType {
   }
   
   @scala.inline
-  implicit class IStructuralTypeOps[Self <: IStructuralType] (val x: Self) extends AnyVal {
+  implicit class IStructuralTypeMutableBuilder[Self <: IStructuralType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplexProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "complexProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplexPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "complexProperties", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "dataProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplexPropertiesVarargs(value: DataProperty*): Self = this.set("complexProperties", js.Array(value :_*))
+    def setDataPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "dataProperties", js.Array(value :_*))
     
     @scala.inline
-    def setComplexProperties(value: js.Array[DataProperty]): Self = this.set("complexProperties", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataPropertiesVarargs(value: DataProperty*): Self = this.set("dataProperties", js.Array(value :_*))
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataProperties(value: js.Array[DataProperty]): Self = this.set("dataProperties", value.asInstanceOf[js.Any])
+    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setUnmappedProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "unmappedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setUnmappedPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "unmappedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setShortName(value: String): Self = this.set("shortName", value.asInstanceOf[js.Any])
+    def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnmappedPropertiesVarargs(value: DataProperty*): Self = this.set("unmappedProperties", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnmappedProperties(value: js.Array[DataProperty]): Self = this.set("unmappedProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidatorsVarargs(value: Validator*): Self = this.set("validators", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidators(value: js.Array[Validator]): Self = this.set("validators", value.asInstanceOf[js.Any])
+    def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
   }
 }

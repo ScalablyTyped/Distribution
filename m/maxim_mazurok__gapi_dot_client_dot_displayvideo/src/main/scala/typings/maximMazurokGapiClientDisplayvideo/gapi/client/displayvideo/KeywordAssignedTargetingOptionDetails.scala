@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeywordAssignedTargetingOptionDetails extends js.Object {
+trait KeywordAssignedTargetingOptionDetails extends StObject {
   
   /**
     * Required. The keyword, for example `car insurance`. Positive keyword cannot be offensive word. Must be UTF-8 encoded with a maximum size of 255 bytes. Maximum number of characters
@@ -25,30 +26,18 @@ object KeywordAssignedTargetingOptionDetails {
   }
   
   @scala.inline
-  implicit class KeywordAssignedTargetingOptionDetailsOps[Self <: KeywordAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  implicit class KeywordAssignedTargetingOptionDetailsMutableBuilder[Self <: KeywordAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyword(value: String): Self = this.set("keyword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyword: Self = this.set("keyword", js.undefined)
-    
-    @scala.inline
-    def setNegative(value: Boolean): Self = this.set("negative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNegative: Self = this.set("negative", js.undefined)
+    def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
   }
 }

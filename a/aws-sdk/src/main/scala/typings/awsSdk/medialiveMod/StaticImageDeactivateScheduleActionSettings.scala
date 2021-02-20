@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaticImageDeactivateScheduleActionSettings extends js.Object {
+trait StaticImageDeactivateScheduleActionSettings extends StObject {
   
   /**
     * The time in milliseconds for the image to fade out. Default is 0 (no fade-out).
@@ -26,30 +27,18 @@ object StaticImageDeactivateScheduleActionSettings {
   }
   
   @scala.inline
-  implicit class StaticImageDeactivateScheduleActionSettingsOps[Self <: StaticImageDeactivateScheduleActionSettings] (val x: Self) extends AnyVal {
+  implicit class StaticImageDeactivateScheduleActionSettingsMutableBuilder[Self <: StaticImageDeactivateScheduleActionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFadeOut(value: integerMin0): Self = StObject.set(x, "FadeOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFadeOutUndefined: Self = StObject.set(x, "FadeOut", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayer(value: integerMin0Max7): Self = StObject.set(x, "Layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeOut(value: integerMin0): Self = this.set("FadeOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFadeOut: Self = this.set("FadeOut", js.undefined)
-    
-    @scala.inline
-    def setLayer(value: integerMin0Max7): Self = this.set("Layer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayer: Self = this.set("Layer", js.undefined)
+    def setLayerUndefined: Self = StObject.set(x, "Layer", js.undefined)
   }
 }

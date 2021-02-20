@@ -1,16 +1,26 @@
 package typings.pkijs
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pkijs/src/CertificateChainValidationEngine", JSImport.Namespace)
-@js.native
-object certificateChainValidationEngineMod extends js.Object {
+object certificateChainValidationEngineMod {
+  
+  @JSImport("pkijs/src/CertificateChainValidationEngine", JSImport.Default)
+  @js.native
+  /**
+    * Constructor for CertificateChainValidationEngine class
+    * @param {*} [parameters={}]
+    * @property {any} [schema] asn1js parsed value
+    */
+  class default () extends CertificateChainValidationEngine {
+    def this(parameters: js.Any) = this()
+  }
   
   @js.native
-  trait CertificateChainValidationEngine extends js.Object {
+  trait CertificateChainValidationEngine extends StObject {
     
     var certs: js.Array[typings.pkijs.certificateMod.default] = js.native
     
@@ -31,15 +41,5 @@ object certificateChainValidationEngineMod extends js.Object {
       */
     def verify(): js.Thenable[_] = js.native
     def verify(parameters: js.Any): js.Thenable[_] = js.native
-  }
-  
-  @js.native
-  /**
-    * Constructor for CertificateChainValidationEngine class
-    * @param {*} [parameters={}]
-    * @property {any} [schema] asn1js parsed value
-    */
-  class default () extends CertificateChainValidationEngine {
-    def this(parameters: js.Any) = this()
   }
 }

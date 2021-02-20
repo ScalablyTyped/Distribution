@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientVision.anon.Name
 import typings.maximMazurokGapiClientVision.anon.PageSize
 import typings.maximMazurokGapiClientVision.anon.ReferenceImageId
 import typings.maximMazurokGapiClientVision.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReferenceImagesResource extends js.Object {
+trait ReferenceImagesResource extends StObject {
   
   /**
     * Creates and returns a new ReferenceImage resource. The `bounding_poly` field is optional. If `bounding_poly` is not specified, the system will try to detect regions of interest in

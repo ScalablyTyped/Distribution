@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distribution extends js.Object {
+trait Distribution extends StObject {
   
   /**
     * Required in the Cloud Monitoring API v3. The values for each bucket specified in bucket_options. The sum of the values in bucketCounts must equal the value in the count field of the
@@ -45,66 +46,54 @@ object Distribution {
   }
   
   @scala.inline
-  implicit class DistributionOps[Self <: Distribution] (val x: Self) extends AnyVal {
+  implicit class DistributionMutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketCounts(value: js.Array[String]): Self = StObject.set(x, "bucketCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketCountsUndefined: Self = StObject.set(x, "bucketCounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value :_*))
     
     @scala.inline
-    def setBucketCountsVarargs(value: String*): Self = this.set("bucketCounts", js.Array(value :_*))
+    def setBucketOptions(value: BucketOptions): Self = StObject.set(x, "bucketOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketCounts(value: js.Array[String]): Self = this.set("bucketCounts", value.asInstanceOf[js.Any])
+    def setBucketOptionsUndefined: Self = StObject.set(x, "bucketOptions", js.undefined)
     
     @scala.inline
-    def deleteBucketCounts: Self = this.set("bucketCounts", js.undefined)
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketOptions(value: BucketOptions): Self = this.set("bucketOptions", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteBucketOptions: Self = this.set("bucketOptions", js.undefined)
+    def setExemplars(value: js.Array[Exemplar]): Self = StObject.set(x, "exemplars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setExemplarsUndefined: Self = StObject.set(x, "exemplars", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setExemplarsVarargs(value: Exemplar*): Self = StObject.set(x, "exemplars", js.Array(value :_*))
     
     @scala.inline
-    def setExemplarsVarargs(value: Exemplar*): Self = this.set("exemplars", js.Array(value :_*))
+    def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExemplars(value: js.Array[Exemplar]): Self = this.set("exemplars", value.asInstanceOf[js.Any])
+    def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
     
     @scala.inline
-    def deleteExemplars: Self = this.set("exemplars", js.undefined)
+    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMean(value: Double): Self = this.set("mean", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteMean: Self = this.set("mean", js.undefined)
+    def setSumOfSquaredDeviation(value: Double): Self = StObject.set(x, "sumOfSquaredDeviation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
-    
-    @scala.inline
-    def setSumOfSquaredDeviation(value: Double): Self = this.set("sumOfSquaredDeviation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSumOfSquaredDeviation: Self = this.set("sumOfSquaredDeviation", js.undefined)
+    def setSumOfSquaredDeviationUndefined: Self = StObject.set(x, "sumOfSquaredDeviation", js.undefined)
   }
 }

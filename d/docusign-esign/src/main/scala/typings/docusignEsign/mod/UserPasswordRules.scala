@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPasswordRules extends js.Object {
+trait UserPasswordRules extends StObject {
   
   /**
     * Contains details about the password rules for the user.
@@ -28,30 +29,18 @@ object UserPasswordRules {
   }
   
   @scala.inline
-  implicit class UserPasswordRulesOps[Self <: UserPasswordRules] (val x: Self) extends AnyVal {
+  implicit class UserPasswordRulesMutableBuilder[Self <: UserPasswordRules] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPasswordRules(value: AccountPasswordRules): Self = StObject.set(x, "passwordRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPasswordRulesUndefined: Self = StObject.set(x, "passwordRules", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordRules(value: AccountPasswordRules): Self = this.set("passwordRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasswordRules: Self = this.set("passwordRules", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

@@ -398,6 +398,7 @@ import typings.csstype.mod.WordSpacingProperty
 import typings.csstype.mod.WordWrapProperty
 import typings.csstype.mod.WritingModeProperty
 import typings.csstype.mod.ZoomProperty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -2934,212 +2935,185 @@ object SystemCssProperties {
   }
   
   @scala.inline
-  implicit class SystemCssPropertiesOps[Self <: SystemCssProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlignContentVarargs(value: (js.UndefOr[AlignContentProperty] | Null)*): Self = this.set("alignContent", js.Array(value :_*))
-    
-    @scala.inline
-    def setAlignContentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AlignContentProperty]]): Self = this.set("alignContent", js.Any.fromFunction1(value))
+  implicit class SystemCssPropertiesMutableBuilder[Self <: SystemCssProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAlignContent(
       value: ResponsiveStyleValue[js.UndefOr[AlignContentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignContentProperty]]]) | SystemStyleObject
-    ): Self = this.set("alignContent", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlignContent: Self = this.set("alignContent", js.undefined)
+    def setAlignContentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AlignContentProperty]]): Self = StObject.set(x, "alignContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlignContentNull: Self = this.set("alignContent", null)
+    def setAlignContentNull: Self = StObject.set(x, "alignContent", null)
     
     @scala.inline
-    def setAlignItemsVarargs(value: (js.UndefOr[AlignItemsProperty] | Null)*): Self = this.set("alignItems", js.Array(value :_*))
+    def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
     
     @scala.inline
-    def setAlignItemsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AlignItemsProperty]]): Self = this.set("alignItems", js.Any.fromFunction1(value))
+    def setAlignContentVarargs(value: (js.UndefOr[AlignContentProperty] | Null)*): Self = StObject.set(x, "alignContent", js.Array(value :_*))
     
     @scala.inline
     def setAlignItems(
       value: ResponsiveStyleValue[js.UndefOr[AlignItemsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignItemsProperty]]]) | SystemStyleObject
-    ): Self = this.set("alignItems", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlignItems: Self = this.set("alignItems", js.undefined)
+    def setAlignItemsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AlignItemsProperty]]): Self = StObject.set(x, "alignItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlignItemsNull: Self = this.set("alignItems", null)
+    def setAlignItemsNull: Self = StObject.set(x, "alignItems", null)
     
     @scala.inline
-    def setAlignSelfVarargs(value: (js.UndefOr[AlignSelfProperty] | Null)*): Self = this.set("alignSelf", js.Array(value :_*))
+    def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
     @scala.inline
-    def setAlignSelfFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AlignSelfProperty]]): Self = this.set("alignSelf", js.Any.fromFunction1(value))
+    def setAlignItemsVarargs(value: (js.UndefOr[AlignItemsProperty] | Null)*): Self = StObject.set(x, "alignItems", js.Array(value :_*))
     
     @scala.inline
     def setAlignSelf(
       value: ResponsiveStyleValue[js.UndefOr[AlignSelfProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignSelfProperty]]]) | SystemStyleObject
-    ): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    def setAlignSelfFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AlignSelfProperty]]): Self = StObject.set(x, "alignSelf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlignSelfNull: Self = this.set("alignSelf", null)
+    def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
     
     @scala.inline
-    def setAlignTracksVarargs(value: (js.UndefOr[AlignTracksProperty] | Null)*): Self = this.set("alignTracks", js.Array(value :_*))
+    def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
     
     @scala.inline
-    def setAlignTracksFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AlignTracksProperty]]): Self = this.set("alignTracks", js.Any.fromFunction1(value))
+    def setAlignSelfVarargs(value: (js.UndefOr[AlignSelfProperty] | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
     
     @scala.inline
     def setAlignTracks(
       value: ResponsiveStyleValue[js.UndefOr[AlignTracksProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignTracksProperty]]]) | SystemStyleObject
-    ): Self = this.set("alignTracks", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "alignTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlignTracks: Self = this.set("alignTracks", js.undefined)
+    def setAlignTracksFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AlignTracksProperty]]): Self = StObject.set(x, "alignTracks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlignTracksNull: Self = this.set("alignTracks", null)
+    def setAlignTracksNull: Self = StObject.set(x, "alignTracks", null)
     
     @scala.inline
-    def setAlignmentBaselineVarargs(value: (js.UndefOr[AlignmentBaselineProperty] | Null)*): Self = this.set("alignmentBaseline", js.Array(value :_*))
+    def setAlignTracksUndefined: Self = StObject.set(x, "alignTracks", js.undefined)
     
     @scala.inline
-    def setAlignmentBaselineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AlignmentBaselineProperty]]): Self = this.set("alignmentBaseline", js.Any.fromFunction1(value))
+    def setAlignTracksVarargs(value: (js.UndefOr[AlignTracksProperty] | Null)*): Self = StObject.set(x, "alignTracks", js.Array(value :_*))
     
     @scala.inline
     def setAlignmentBaseline(
       value: ResponsiveStyleValue[js.UndefOr[AlignmentBaselineProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignmentBaselineProperty]]]) | SystemStyleObject
-    ): Self = this.set("alignmentBaseline", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlignmentBaseline: Self = this.set("alignmentBaseline", js.undefined)
+    def setAlignmentBaselineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AlignmentBaselineProperty]]): Self = StObject.set(x, "alignmentBaseline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlignmentBaselineNull: Self = this.set("alignmentBaseline", null)
+    def setAlignmentBaselineNull: Self = StObject.set(x, "alignmentBaseline", null)
     
     @scala.inline
-    def setAllVarargs(value: (js.UndefOr[Globals] | Null)*): Self = this.set("all", js.Array(value :_*))
+    def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
     
     @scala.inline
-    def setAllFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[Globals]]): Self = this.set("all", js.Any.fromFunction1(value))
+    def setAlignmentBaselineVarargs(value: (js.UndefOr[AlignmentBaselineProperty] | Null)*): Self = StObject.set(x, "alignmentBaseline", js.Array(value :_*))
     
     @scala.inline
     def setAll(
       value: ResponsiveStyleValue[js.UndefOr[Globals]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[Globals]]]) | SystemStyleObject
-    ): Self = this.set("all", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setAllFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[Globals]]): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllNull: Self = this.set("all", null)
+    def setAllNull: Self = StObject.set(x, "all", null)
     
     @scala.inline
-    def setAnimationVarargs(value: (js.UndefOr[AnimationProperty] | Null)*): Self = this.set("animation", js.Array(value :_*))
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def setAnimationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationProperty]]): Self = this.set("animation", js.Any.fromFunction1(value))
+    def setAllVarargs(value: (js.UndefOr[Globals] | Null)*): Self = StObject.set(x, "all", js.Array(value :_*))
     
     @scala.inline
     def setAnimation(
       value: ResponsiveStyleValue[js.UndefOr[AnimationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AnimationProperty]]]) | SystemStyleObject
-    ): Self = this.set("animation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
-    
-    @scala.inline
-    def setAnimationNull: Self = this.set("animation", null)
-    
-    @scala.inline
-    def setAnimationDelayVarargs(value: (js.UndefOr[GlobalsString] | Null)*): Self = this.set("animationDelay", js.Array(value :_*))
-    
-    @scala.inline
-    def setAnimationDelayFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsString]]): Self = this.set("animationDelay", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAnimationDelay(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsString]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsString]]]) | SystemStyleObject
-    ): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    def setAnimationDelayFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsString]]): Self = StObject.set(x, "animationDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationDelayNull: Self = this.set("animationDelay", null)
+    def setAnimationDelayNull: Self = StObject.set(x, "animationDelay", null)
     
     @scala.inline
-    def setAnimationDirectionVarargs(value: (js.UndefOr[AnimationDirectionProperty] | Null)*): Self = this.set("animationDirection", js.Array(value :_*))
+    def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
     
     @scala.inline
-    def setAnimationDirectionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationDirectionProperty]]): Self = this.set("animationDirection", js.Any.fromFunction1(value))
+    def setAnimationDelayVarargs(value: (js.UndefOr[GlobalsString] | Null)*): Self = StObject.set(x, "animationDelay", js.Array(value :_*))
     
     @scala.inline
     def setAnimationDirection(
       value: ResponsiveStyleValue[js.UndefOr[AnimationDirectionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AnimationDirectionProperty]]]) | SystemStyleObject
-    ): Self = this.set("animationDirection", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationDirection: Self = this.set("animationDirection", js.undefined)
+    def setAnimationDirectionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationDirectionProperty]]): Self = StObject.set(x, "animationDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationDirectionNull: Self = this.set("animationDirection", null)
+    def setAnimationDirectionNull: Self = StObject.set(x, "animationDirection", null)
     
     @scala.inline
-    def setAnimationDurationVarargs(value: (js.UndefOr[GlobalsString] | Null)*): Self = this.set("animationDuration", js.Array(value :_*))
+    def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
     
     @scala.inline
-    def setAnimationDurationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsString]]): Self = this.set("animationDuration", js.Any.fromFunction1(value))
+    def setAnimationDirectionVarargs(value: (js.UndefOr[AnimationDirectionProperty] | Null)*): Self = StObject.set(x, "animationDirection", js.Array(value :_*))
     
     @scala.inline
     def setAnimationDuration(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsString]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsString]]]) | SystemStyleObject
-    ): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setAnimationDurationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsString]]): Self = StObject.set(x, "animationDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationDurationNull: Self = this.set("animationDuration", null)
+    def setAnimationDurationNull: Self = StObject.set(x, "animationDuration", null)
     
     @scala.inline
-    def setAnimationFillModeVarargs(value: (js.UndefOr[AnimationFillModeProperty] | Null)*): Self = this.set("animationFillMode", js.Array(value :_*))
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def setAnimationFillModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationFillModeProperty]]): Self = this.set("animationFillMode", js.Any.fromFunction1(value))
+    def setAnimationDurationVarargs(value: (js.UndefOr[GlobalsString] | Null)*): Self = StObject.set(x, "animationDuration", js.Array(value :_*))
     
     @scala.inline
     def setAnimationFillMode(
       value: ResponsiveStyleValue[js.UndefOr[AnimationFillModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AnimationFillModeProperty]]]) | SystemStyleObject
-    ): Self = this.set("animationFillMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationFillMode: Self = this.set("animationFillMode", js.undefined)
+    def setAnimationFillModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationFillModeProperty]]): Self = StObject.set(x, "animationFillMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationFillModeNull: Self = this.set("animationFillMode", null)
+    def setAnimationFillModeNull: Self = StObject.set(x, "animationFillMode", null)
     
     @scala.inline
-    def setAnimationIterationCountVarargs(value: (js.UndefOr[AnimationIterationCountProperty] | Null)*): Self = this.set("animationIterationCount", js.Array(value :_*))
+    def setAnimationFillModeUndefined: Self = StObject.set(x, "animationFillMode", js.undefined)
     
     @scala.inline
-    def setAnimationIterationCountFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationIterationCountProperty]]): Self = this.set("animationIterationCount", js.Any.fromFunction1(value))
+    def setAnimationFillModeVarargs(value: (js.UndefOr[AnimationFillModeProperty] | Null)*): Self = StObject.set(x, "animationFillMode", js.Array(value :_*))
+    
+    @scala.inline
+    def setAnimationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationProperty]]): Self = StObject.set(x, "animation", js.Any.fromFunction1(value))
     
     @scala.inline
     def setAnimationIterationCount(
@@ -3147,53 +3121,56 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[AnimationIterationCountProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("animationIterationCount", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationIterationCount: Self = this.set("animationIterationCount", js.undefined)
+    def setAnimationIterationCountFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationIterationCountProperty]]): Self = StObject.set(x, "animationIterationCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationIterationCountNull: Self = this.set("animationIterationCount", null)
+    def setAnimationIterationCountNull: Self = StObject.set(x, "animationIterationCount", null)
     
     @scala.inline
-    def setAnimationNameVarargs(value: (js.UndefOr[AnimationNameProperty] | Null)*): Self = this.set("animationName", js.Array(value :_*))
+    def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
     
     @scala.inline
-    def setAnimationNameFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationNameProperty]]): Self = this.set("animationName", js.Any.fromFunction1(value))
+    def setAnimationIterationCountVarargs(value: (js.UndefOr[AnimationIterationCountProperty] | Null)*): Self = StObject.set(x, "animationIterationCount", js.Array(value :_*))
     
     @scala.inline
     def setAnimationName(
       value: ResponsiveStyleValue[js.UndefOr[AnimationNameProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AnimationNameProperty]]]) | SystemStyleObject
-    ): Self = this.set("animationName", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationName: Self = this.set("animationName", js.undefined)
+    def setAnimationNameFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationNameProperty]]): Self = StObject.set(x, "animationName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationNameNull: Self = this.set("animationName", null)
+    def setAnimationNameNull: Self = StObject.set(x, "animationName", null)
     
     @scala.inline
-    def setAnimationPlayStateVarargs(value: (js.UndefOr[AnimationPlayStateProperty] | Null)*): Self = this.set("animationPlayState", js.Array(value :_*))
+    def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
     
     @scala.inline
-    def setAnimationPlayStateFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationPlayStateProperty]]): Self = this.set("animationPlayState", js.Any.fromFunction1(value))
+    def setAnimationNameVarargs(value: (js.UndefOr[AnimationNameProperty] | Null)*): Self = StObject.set(x, "animationName", js.Array(value :_*))
+    
+    @scala.inline
+    def setAnimationNull: Self = StObject.set(x, "animation", null)
     
     @scala.inline
     def setAnimationPlayState(
       value: ResponsiveStyleValue[js.UndefOr[AnimationPlayStateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AnimationPlayStateProperty]]]) | SystemStyleObject
-    ): Self = this.set("animationPlayState", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationPlayState: Self = this.set("animationPlayState", js.undefined)
+    def setAnimationPlayStateFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationPlayStateProperty]]): Self = StObject.set(x, "animationPlayState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationPlayStateNull: Self = this.set("animationPlayState", null)
+    def setAnimationPlayStateNull: Self = StObject.set(x, "animationPlayState", null)
     
     @scala.inline
-    def setAnimationTimingFunctionVarargs(value: (js.UndefOr[AnimationTimingFunctionProperty] | Null)*): Self = this.set("animationTimingFunction", js.Array(value :_*))
+    def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
     
     @scala.inline
-    def setAnimationTimingFunctionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationTimingFunctionProperty]]): Self = this.set("animationTimingFunction", js.Any.fromFunction1(value))
+    def setAnimationPlayStateVarargs(value: (js.UndefOr[AnimationPlayStateProperty] | Null)*): Self = StObject.set(x, "animationPlayState", js.Array(value :_*))
     
     @scala.inline
     def setAnimationTimingFunction(
@@ -3201,87 +3178,93 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[AnimationTimingFunctionProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("animationTimingFunction", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationTimingFunction: Self = this.set("animationTimingFunction", js.undefined)
+    def setAnimationTimingFunctionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AnimationTimingFunctionProperty]]): Self = StObject.set(x, "animationTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationTimingFunctionNull: Self = this.set("animationTimingFunction", null)
+    def setAnimationTimingFunctionNull: Self = StObject.set(x, "animationTimingFunction", null)
     
     @scala.inline
-    def setAppearanceVarargs(value: (js.UndefOr[AppearanceProperty] | Null)*): Self = this.set("appearance", js.Array(value :_*))
+    def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
     
     @scala.inline
-    def setAppearanceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AppearanceProperty]]): Self = this.set("appearance", js.Any.fromFunction1(value))
+    def setAnimationTimingFunctionVarargs(value: (js.UndefOr[AnimationTimingFunctionProperty] | Null)*): Self = StObject.set(x, "animationTimingFunction", js.Array(value :_*))
+    
+    @scala.inline
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    @scala.inline
+    def setAnimationVarargs(value: (js.UndefOr[AnimationProperty] | Null)*): Self = StObject.set(x, "animation", js.Array(value :_*))
     
     @scala.inline
     def setAppearance(
       value: ResponsiveStyleValue[js.UndefOr[AppearanceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AppearanceProperty]]]) | SystemStyleObject
-    ): Self = this.set("appearance", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppearance: Self = this.set("appearance", js.undefined)
+    def setAppearanceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AppearanceProperty]]): Self = StObject.set(x, "appearance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppearanceNull: Self = this.set("appearance", null)
+    def setAppearanceNull: Self = StObject.set(x, "appearance", null)
     
     @scala.inline
-    def setAspectRatioVarargs(value: (js.UndefOr[AspectRatioProperty] | Null)*): Self = this.set("aspectRatio", js.Array(value :_*))
+    def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
     @scala.inline
-    def setAspectRatioFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AspectRatioProperty]]): Self = this.set("aspectRatio", js.Any.fromFunction1(value))
+    def setAppearanceVarargs(value: (js.UndefOr[AppearanceProperty] | Null)*): Self = StObject.set(x, "appearance", js.Array(value :_*))
     
     @scala.inline
     def setAspectRatio(
       value: ResponsiveStyleValue[js.UndefOr[AspectRatioProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AspectRatioProperty]]]) | SystemStyleObject
-    ): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
+    def setAspectRatioFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[AspectRatioProperty]]): Self = StObject.set(x, "aspectRatio", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAspectRatioNull: Self = this.set("aspectRatio", null)
+    def setAspectRatioNull: Self = StObject.set(x, "aspectRatio", null)
     
     @scala.inline
-    def setBackdropFilterVarargs(value: (js.UndefOr[BackdropFilterProperty] | Null)*): Self = this.set("backdropFilter", js.Array(value :_*))
+    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
     @scala.inline
-    def setBackdropFilterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackdropFilterProperty]]): Self = this.set("backdropFilter", js.Any.fromFunction1(value))
+    def setAspectRatioVarargs(value: (js.UndefOr[AspectRatioProperty] | Null)*): Self = StObject.set(x, "aspectRatio", js.Array(value :_*))
     
     @scala.inline
     def setBackdropFilter(
       value: ResponsiveStyleValue[js.UndefOr[BackdropFilterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackdropFilterProperty]]]) | SystemStyleObject
-    ): Self = this.set("backdropFilter", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backdropFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackdropFilter: Self = this.set("backdropFilter", js.undefined)
+    def setBackdropFilterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackdropFilterProperty]]): Self = StObject.set(x, "backdropFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackdropFilterNull: Self = this.set("backdropFilter", null)
+    def setBackdropFilterNull: Self = StObject.set(x, "backdropFilter", null)
     
     @scala.inline
-    def setBackfaceVisibilityVarargs(value: (js.UndefOr[BackfaceVisibilityProperty] | Null)*): Self = this.set("backfaceVisibility", js.Array(value :_*))
+    def setBackdropFilterUndefined: Self = StObject.set(x, "backdropFilter", js.undefined)
     
     @scala.inline
-    def setBackfaceVisibilityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackfaceVisibilityProperty]]): Self = this.set("backfaceVisibility", js.Any.fromFunction1(value))
+    def setBackdropFilterVarargs(value: (js.UndefOr[BackdropFilterProperty] | Null)*): Self = StObject.set(x, "backdropFilter", js.Array(value :_*))
     
     @scala.inline
     def setBackfaceVisibility(
       value: ResponsiveStyleValue[js.UndefOr[BackfaceVisibilityProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackfaceVisibilityProperty]]]) | SystemStyleObject
-    ): Self = this.set("backfaceVisibility", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackfaceVisibility: Self = this.set("backfaceVisibility", js.undefined)
+    def setBackfaceVisibilityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackfaceVisibilityProperty]]): Self = StObject.set(x, "backfaceVisibility", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackfaceVisibilityNull: Self = this.set("backfaceVisibility", null)
+    def setBackfaceVisibilityNull: Self = StObject.set(x, "backfaceVisibility", null)
     
     @scala.inline
-    def setBackgroundVarargs(value: ((js.UndefOr[BackgroundProperty[Double | String]]) | Null)*): Self = this.set("background", js.Array(value :_*))
+    def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
     
     @scala.inline
-    def setBackgroundFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundProperty[Double | String]]]): Self = this.set("background", js.Any.fromFunction1(value))
+    def setBackfaceVisibilityVarargs(value: (js.UndefOr[BackfaceVisibilityProperty] | Null)*): Self = StObject.set(x, "backfaceVisibility", js.Array(value :_*))
     
     @scala.inline
     def setBackground(
@@ -3289,123 +3272,115 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BackgroundProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("background", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
-    
-    @scala.inline
-    def setBackgroundNull: Self = this.set("background", null)
-    
-    @scala.inline
-    def setBackgroundAttachmentVarargs(value: (js.UndefOr[BackgroundAttachmentProperty] | Null)*): Self = this.set("backgroundAttachment", js.Array(value :_*))
-    
-    @scala.inline
-    def setBackgroundAttachmentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundAttachmentProperty]]): Self = this.set("backgroundAttachment", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBackgroundAttachment(
       value: ResponsiveStyleValue[js.UndefOr[BackgroundAttachmentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundAttachmentProperty]]]) | SystemStyleObject
-    ): Self = this.set("backgroundAttachment", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundAttachment: Self = this.set("backgroundAttachment", js.undefined)
+    def setBackgroundAttachmentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundAttachmentProperty]]): Self = StObject.set(x, "backgroundAttachment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundAttachmentNull: Self = this.set("backgroundAttachment", null)
+    def setBackgroundAttachmentNull: Self = StObject.set(x, "backgroundAttachment", null)
     
     @scala.inline
-    def setBackgroundBlendModeVarargs(value: (js.UndefOr[BackgroundBlendModeProperty] | Null)*): Self = this.set("backgroundBlendMode", js.Array(value :_*))
+    def setBackgroundAttachmentUndefined: Self = StObject.set(x, "backgroundAttachment", js.undefined)
     
     @scala.inline
-    def setBackgroundBlendModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundBlendModeProperty]]): Self = this.set("backgroundBlendMode", js.Any.fromFunction1(value))
+    def setBackgroundAttachmentVarargs(value: (js.UndefOr[BackgroundAttachmentProperty] | Null)*): Self = StObject.set(x, "backgroundAttachment", js.Array(value :_*))
     
     @scala.inline
     def setBackgroundBlendMode(
       value: ResponsiveStyleValue[js.UndefOr[BackgroundBlendModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundBlendModeProperty]]]) | SystemStyleObject
-    ): Self = this.set("backgroundBlendMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundBlendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundBlendMode: Self = this.set("backgroundBlendMode", js.undefined)
+    def setBackgroundBlendModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundBlendModeProperty]]): Self = StObject.set(x, "backgroundBlendMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundBlendModeNull: Self = this.set("backgroundBlendMode", null)
+    def setBackgroundBlendModeNull: Self = StObject.set(x, "backgroundBlendMode", null)
     
     @scala.inline
-    def setBackgroundClipVarargs(value: (js.UndefOr[BackgroundClipProperty] | Null)*): Self = this.set("backgroundClip", js.Array(value :_*))
+    def setBackgroundBlendModeUndefined: Self = StObject.set(x, "backgroundBlendMode", js.undefined)
     
     @scala.inline
-    def setBackgroundClipFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundClipProperty]]): Self = this.set("backgroundClip", js.Any.fromFunction1(value))
+    def setBackgroundBlendModeVarargs(value: (js.UndefOr[BackgroundBlendModeProperty] | Null)*): Self = StObject.set(x, "backgroundBlendMode", js.Array(value :_*))
     
     @scala.inline
     def setBackgroundClip(
       value: ResponsiveStyleValue[js.UndefOr[BackgroundClipProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundClipProperty]]]) | SystemStyleObject
-    ): Self = this.set("backgroundClip", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundClip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundClip: Self = this.set("backgroundClip", js.undefined)
+    def setBackgroundClipFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundClipProperty]]): Self = StObject.set(x, "backgroundClip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundClipNull: Self = this.set("backgroundClip", null)
+    def setBackgroundClipNull: Self = StObject.set(x, "backgroundClip", null)
     
     @scala.inline
-    def setBackgroundColorVarargs(value: (js.UndefOr[BackgroundColorProperty] | Null)*): Self = this.set("backgroundColor", js.Array(value :_*))
+    def setBackgroundClipUndefined: Self = StObject.set(x, "backgroundClip", js.undefined)
     
     @scala.inline
-    def setBackgroundColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty]]): Self = this.set("backgroundColor", js.Any.fromFunction1(value))
+    def setBackgroundClipVarargs(value: (js.UndefOr[BackgroundClipProperty] | Null)*): Self = StObject.set(x, "backgroundClip", js.Array(value :_*))
     
     @scala.inline
     def setBackgroundColor(
       value: ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBackgroundColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty]]): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundColorNull: Self = this.set("backgroundColor", null)
+    def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
     
     @scala.inline
-    def setBackgroundImageVarargs(value: (js.UndefOr[BackgroundImageProperty] | Null)*): Self = this.set("backgroundImage", js.Array(value :_*))
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def setBackgroundImageFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundImageProperty]]): Self = this.set("backgroundImage", js.Any.fromFunction1(value))
+    def setBackgroundColorVarargs(value: (js.UndefOr[BackgroundColorProperty] | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setBackgroundFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundProperty[Double | String]]]): Self = StObject.set(x, "background", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBackgroundImage(
       value: ResponsiveStyleValue[js.UndefOr[BackgroundImageProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundImageProperty]]]) | SystemStyleObject
-    ): Self = this.set("backgroundImage", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundImage: Self = this.set("backgroundImage", js.undefined)
+    def setBackgroundImageFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundImageProperty]]): Self = StObject.set(x, "backgroundImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundImageNull: Self = this.set("backgroundImage", null)
+    def setBackgroundImageNull: Self = StObject.set(x, "backgroundImage", null)
     
     @scala.inline
-    def setBackgroundOriginVarargs(value: (js.UndefOr[BackgroundOriginProperty] | Null)*): Self = this.set("backgroundOrigin", js.Array(value :_*))
+    def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
     @scala.inline
-    def setBackgroundOriginFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundOriginProperty]]): Self = this.set("backgroundOrigin", js.Any.fromFunction1(value))
+    def setBackgroundImageVarargs(value: (js.UndefOr[BackgroundImageProperty] | Null)*): Self = StObject.set(x, "backgroundImage", js.Array(value :_*))
+    
+    @scala.inline
+    def setBackgroundNull: Self = StObject.set(x, "background", null)
     
     @scala.inline
     def setBackgroundOrigin(
       value: ResponsiveStyleValue[js.UndefOr[BackgroundOriginProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundOriginProperty]]]) | SystemStyleObject
-    ): Self = this.set("backgroundOrigin", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundOrigin: Self = this.set("backgroundOrigin", js.undefined)
+    def setBackgroundOriginFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundOriginProperty]]): Self = StObject.set(x, "backgroundOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundOriginNull: Self = this.set("backgroundOrigin", null)
+    def setBackgroundOriginNull: Self = StObject.set(x, "backgroundOrigin", null)
     
     @scala.inline
-    def setBackgroundPositionVarargs(value: ((js.UndefOr[BackgroundPositionProperty[Double | String]]) | Null)*): Self = this.set("backgroundPosition", js.Array(value :_*))
+    def setBackgroundOriginUndefined: Self = StObject.set(x, "backgroundOrigin", js.undefined)
     
     @scala.inline
-    def setBackgroundPositionFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundPositionProperty[Double | String]]]
-    ): Self = this.set("backgroundPosition", js.Any.fromFunction1(value))
+    def setBackgroundOriginVarargs(value: (js.UndefOr[BackgroundOriginProperty] | Null)*): Self = StObject.set(x, "backgroundOrigin", js.Array(value :_*))
     
     @scala.inline
     def setBackgroundPosition(
@@ -3413,21 +3388,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BackgroundPositionProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("backgroundPosition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundPosition: Self = this.set("backgroundPosition", js.undefined)
+    def setBackgroundPositionFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundPositionProperty[Double | String]]]
+    ): Self = StObject.set(x, "backgroundPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundPositionNull: Self = this.set("backgroundPosition", null)
+    def setBackgroundPositionNull: Self = StObject.set(x, "backgroundPosition", null)
     
     @scala.inline
-    def setBackgroundPositionXVarargs(value: ((js.UndefOr[BackgroundPositionXProperty[Double | String]]) | Null)*): Self = this.set("backgroundPositionX", js.Array(value :_*))
+    def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
     @scala.inline
-    def setBackgroundPositionXFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundPositionXProperty[Double | String]]]
-    ): Self = this.set("backgroundPositionX", js.Any.fromFunction1(value))
+    def setBackgroundPositionVarargs(value: ((js.UndefOr[BackgroundPositionProperty[Double | String]]) | Null)*): Self = StObject.set(x, "backgroundPosition", js.Array(value :_*))
     
     @scala.inline
     def setBackgroundPositionX(
@@ -3435,21 +3410,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BackgroundPositionXProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("backgroundPositionX", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundPositionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundPositionX: Self = this.set("backgroundPositionX", js.undefined)
+    def setBackgroundPositionXFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundPositionXProperty[Double | String]]]
+    ): Self = StObject.set(x, "backgroundPositionX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundPositionXNull: Self = this.set("backgroundPositionX", null)
+    def setBackgroundPositionXNull: Self = StObject.set(x, "backgroundPositionX", null)
     
     @scala.inline
-    def setBackgroundPositionYVarargs(value: ((js.UndefOr[BackgroundPositionYProperty[Double | String]]) | Null)*): Self = this.set("backgroundPositionY", js.Array(value :_*))
+    def setBackgroundPositionXUndefined: Self = StObject.set(x, "backgroundPositionX", js.undefined)
     
     @scala.inline
-    def setBackgroundPositionYFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundPositionYProperty[Double | String]]]
-    ): Self = this.set("backgroundPositionY", js.Any.fromFunction1(value))
+    def setBackgroundPositionXVarargs(value: ((js.UndefOr[BackgroundPositionXProperty[Double | String]]) | Null)*): Self = StObject.set(x, "backgroundPositionX", js.Array(value :_*))
     
     @scala.inline
     def setBackgroundPositionY(
@@ -3457,38 +3432,38 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BackgroundPositionYProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("backgroundPositionY", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundPositionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundPositionY: Self = this.set("backgroundPositionY", js.undefined)
+    def setBackgroundPositionYFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundPositionYProperty[Double | String]]]
+    ): Self = StObject.set(x, "backgroundPositionY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundPositionYNull: Self = this.set("backgroundPositionY", null)
+    def setBackgroundPositionYNull: Self = StObject.set(x, "backgroundPositionY", null)
     
     @scala.inline
-    def setBackgroundRepeatVarargs(value: (js.UndefOr[BackgroundRepeatProperty] | Null)*): Self = this.set("backgroundRepeat", js.Array(value :_*))
+    def setBackgroundPositionYUndefined: Self = StObject.set(x, "backgroundPositionY", js.undefined)
     
     @scala.inline
-    def setBackgroundRepeatFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundRepeatProperty]]): Self = this.set("backgroundRepeat", js.Any.fromFunction1(value))
+    def setBackgroundPositionYVarargs(value: ((js.UndefOr[BackgroundPositionYProperty[Double | String]]) | Null)*): Self = StObject.set(x, "backgroundPositionY", js.Array(value :_*))
     
     @scala.inline
     def setBackgroundRepeat(
       value: ResponsiveStyleValue[js.UndefOr[BackgroundRepeatProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundRepeatProperty]]]) | SystemStyleObject
-    ): Self = this.set("backgroundRepeat", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundRepeat: Self = this.set("backgroundRepeat", js.undefined)
+    def setBackgroundRepeatFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundRepeatProperty]]): Self = StObject.set(x, "backgroundRepeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundRepeatNull: Self = this.set("backgroundRepeat", null)
+    def setBackgroundRepeatNull: Self = StObject.set(x, "backgroundRepeat", null)
     
     @scala.inline
-    def setBackgroundSizeVarargs(value: ((js.UndefOr[BackgroundSizeProperty[Double | String]]) | Null)*): Self = this.set("backgroundSize", js.Array(value :_*))
+    def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
     @scala.inline
-    def setBackgroundSizeFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundSizeProperty[Double | String]]]
-    ): Self = this.set("backgroundSize", js.Any.fromFunction1(value))
+    def setBackgroundRepeatVarargs(value: (js.UndefOr[BackgroundRepeatProperty] | Null)*): Self = StObject.set(x, "backgroundRepeat", js.Array(value :_*))
     
     @scala.inline
     def setBackgroundSize(
@@ -3496,21 +3471,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BackgroundSizeProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("backgroundSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundSize: Self = this.set("backgroundSize", js.undefined)
+    def setBackgroundSizeFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundSizeProperty[Double | String]]]
+    ): Self = StObject.set(x, "backgroundSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackgroundSizeNull: Self = this.set("backgroundSize", null)
+    def setBackgroundSizeNull: Self = StObject.set(x, "backgroundSize", null)
     
     @scala.inline
-    def setBaselineShiftVarargs(value: ((js.UndefOr[BaselineShiftProperty[Double | String]]) | Null)*): Self = this.set("baselineShift", js.Array(value :_*))
+    def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
     
     @scala.inline
-    def setBaselineShiftFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BaselineShiftProperty[Double | String]]]
-    ): Self = this.set("baselineShift", js.Any.fromFunction1(value))
+    def setBackgroundSizeVarargs(value: ((js.UndefOr[BackgroundSizeProperty[Double | String]]) | Null)*): Self = StObject.set(x, "backgroundSize", js.Array(value :_*))
+    
+    @scala.inline
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    @scala.inline
+    def setBackgroundVarargs(value: ((js.UndefOr[BackgroundProperty[Double | String]]) | Null)*): Self = StObject.set(x, "background", js.Array(value :_*))
     
     @scala.inline
     def setBaselineShift(
@@ -3518,21 +3499,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BaselineShiftProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("baselineShift", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaselineShift: Self = this.set("baselineShift", js.undefined)
+    def setBaselineShiftFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BaselineShiftProperty[Double | String]]]
+    ): Self = StObject.set(x, "baselineShift", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBaselineShiftNull: Self = this.set("baselineShift", null)
+    def setBaselineShiftNull: Self = StObject.set(x, "baselineShift", null)
     
     @scala.inline
-    def setBgVarargs(value: (js.UndefOr[js.Array[BackgroundColorProperty] | BackgroundColorProperty | Null])*): Self = this.set("bg", js.Array(value :_*))
+    def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
     
     @scala.inline
-    def setBgFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty | js.Array[BackgroundColorProperty]]]
-    ): Self = this.set("bg", js.Any.fromFunction1(value))
+    def setBaselineShiftVarargs(value: ((js.UndefOr[BaselineShiftProperty[Double | String]]) | Null)*): Self = StObject.set(x, "baselineShift", js.Array(value :_*))
     
     @scala.inline
     def setBg(
@@ -3540,36 +3521,38 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty | js.Array[BackgroundColorProperty]]]
         ]) | SystemStyleObject
-    ): Self = this.set("bg", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBg: Self = this.set("bg", js.undefined)
+    def setBgFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty | js.Array[BackgroundColorProperty]]]
+    ): Self = StObject.set(x, "bg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBgNull: Self = this.set("bg", null)
+    def setBgNull: Self = StObject.set(x, "bg", null)
     
     @scala.inline
-    def setBlockOverflowVarargs(value: (js.UndefOr[BlockOverflowProperty] | Null)*): Self = this.set("blockOverflow", js.Array(value :_*))
+    def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
     @scala.inline
-    def setBlockOverflowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BlockOverflowProperty]]): Self = this.set("blockOverflow", js.Any.fromFunction1(value))
+    def setBgVarargs(value: (js.UndefOr[js.Array[BackgroundColorProperty] | BackgroundColorProperty | Null])*): Self = StObject.set(x, "bg", js.Array(value :_*))
     
     @scala.inline
     def setBlockOverflow(
       value: ResponsiveStyleValue[js.UndefOr[BlockOverflowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BlockOverflowProperty]]]) | SystemStyleObject
-    ): Self = this.set("blockOverflow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "blockOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockOverflow: Self = this.set("blockOverflow", js.undefined)
+    def setBlockOverflowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BlockOverflowProperty]]): Self = StObject.set(x, "blockOverflow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBlockOverflowNull: Self = this.set("blockOverflow", null)
+    def setBlockOverflowNull: Self = StObject.set(x, "blockOverflow", null)
     
     @scala.inline
-    def setBlockSizeVarargs(value: ((js.UndefOr[BlockSizeProperty[Double | String]]) | Null)*): Self = this.set("blockSize", js.Array(value :_*))
+    def setBlockOverflowUndefined: Self = StObject.set(x, "blockOverflow", js.undefined)
     
     @scala.inline
-    def setBlockSizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BlockSizeProperty[Double | String]]]): Self = this.set("blockSize", js.Any.fromFunction1(value))
+    def setBlockOverflowVarargs(value: (js.UndefOr[BlockOverflowProperty] | Null)*): Self = StObject.set(x, "blockOverflow", js.Array(value :_*))
     
     @scala.inline
     def setBlockSize(
@@ -3577,19 +3560,19 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BlockSizeProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("blockSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockSize: Self = this.set("blockSize", js.undefined)
+    def setBlockSizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BlockSizeProperty[Double | String]]]): Self = StObject.set(x, "blockSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBlockSizeNull: Self = this.set("blockSize", null)
+    def setBlockSizeNull: Self = StObject.set(x, "blockSize", null)
     
     @scala.inline
-    def setBorderVarargs(value: ((js.UndefOr[BorderProperty[Double | String]]) | Null)*): Self = this.set("border", js.Array(value :_*))
+    def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
     
     @scala.inline
-    def setBorderFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderProperty[Double | String]]]): Self = this.set("border", js.Any.fromFunction1(value))
+    def setBlockSizeVarargs(value: ((js.UndefOr[BlockSizeProperty[Double | String]]) | Null)*): Self = StObject.set(x, "blockSize", js.Array(value :_*))
     
     @scala.inline
     def setBorder(
@@ -3597,21 +3580,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("border", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
-    
-    @scala.inline
-    def setBorderNull: Self = this.set("border", null)
-    
-    @scala.inline
-    def setBorderBlockVarargs(value: ((js.UndefOr[BorderBlockProperty[Double | String]]) | Null)*): Self = this.set("borderBlock", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderBlockFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockProperty[Double | String]]]
-    ): Self = this.set("borderBlock", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderBlock(
@@ -3619,38 +3588,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBlockProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderBlock: Self = this.set("borderBlock", js.undefined)
-    
-    @scala.inline
-    def setBorderBlockNull: Self = this.set("borderBlock", null)
-    
-    @scala.inline
-    def setBorderBlockColorVarargs(value: (js.UndefOr[BorderBlockColorProperty] | Null)*): Self = this.set("borderBlockColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderBlockColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockColorProperty]]): Self = this.set("borderBlockColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "borderBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderBlockColor(
       value: ResponsiveStyleValue[js.UndefOr[BorderBlockColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBlockColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderBlockColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBlockColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockColor: Self = this.set("borderBlockColor", js.undefined)
+    def setBorderBlockColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockColorProperty]]): Self = StObject.set(x, "borderBlockColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockColorNull: Self = this.set("borderBlockColor", null)
+    def setBorderBlockColorNull: Self = StObject.set(x, "borderBlockColor", null)
     
     @scala.inline
-    def setBorderBlockEndVarargs(value: ((js.UndefOr[BorderBlockEndProperty[Double | String]]) | Null)*): Self = this.set("borderBlockEnd", js.Array(value :_*))
+    def setBorderBlockColorUndefined: Self = StObject.set(x, "borderBlockColor", js.undefined)
     
     @scala.inline
-    def setBorderBlockEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockEndProperty[Double | String]]]
-    ): Self = this.set("borderBlockEnd", js.Any.fromFunction1(value))
+    def setBorderBlockColorVarargs(value: (js.UndefOr[BorderBlockColorProperty] | Null)*): Self = StObject.set(x, "borderBlockColor", js.Array(value :_*))
     
     @scala.inline
     def setBorderBlockEnd(
@@ -3658,55 +3613,55 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBlockEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBlockEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderBlockEnd: Self = this.set("borderBlockEnd", js.undefined)
-    
-    @scala.inline
-    def setBorderBlockEndNull: Self = this.set("borderBlockEnd", null)
-    
-    @scala.inline
-    def setBorderBlockEndColorVarargs(value: (js.UndefOr[BorderBlockEndColorProperty] | Null)*): Self = this.set("borderBlockEndColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderBlockEndColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockEndColorProperty]]): Self = this.set("borderBlockEndColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "borderBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderBlockEndColor(
       value: ResponsiveStyleValue[js.UndefOr[BorderBlockEndColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBlockEndColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderBlockEndColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBlockEndColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockEndColor: Self = this.set("borderBlockEndColor", js.undefined)
+    def setBorderBlockEndColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockEndColorProperty]]): Self = StObject.set(x, "borderBlockEndColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockEndColorNull: Self = this.set("borderBlockEndColor", null)
+    def setBorderBlockEndColorNull: Self = StObject.set(x, "borderBlockEndColor", null)
     
     @scala.inline
-    def setBorderBlockEndStyleVarargs(value: (js.UndefOr[BorderBlockEndStyleProperty] | Null)*): Self = this.set("borderBlockEndStyle", js.Array(value :_*))
+    def setBorderBlockEndColorUndefined: Self = StObject.set(x, "borderBlockEndColor", js.undefined)
     
     @scala.inline
-    def setBorderBlockEndStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockEndStyleProperty]]): Self = this.set("borderBlockEndStyle", js.Any.fromFunction1(value))
+    def setBorderBlockEndColorVarargs(value: (js.UndefOr[BorderBlockEndColorProperty] | Null)*): Self = StObject.set(x, "borderBlockEndColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderBlockEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderBlockEnd", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setBorderBlockEndNull: Self = StObject.set(x, "borderBlockEnd", null)
     
     @scala.inline
     def setBorderBlockEndStyle(
       value: ResponsiveStyleValue[js.UndefOr[BorderBlockEndStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBlockEndStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderBlockEndStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBlockEndStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockEndStyle: Self = this.set("borderBlockEndStyle", js.undefined)
+    def setBorderBlockEndStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockEndStyleProperty]]): Self = StObject.set(x, "borderBlockEndStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockEndStyleNull: Self = this.set("borderBlockEndStyle", null)
+    def setBorderBlockEndStyleNull: Self = StObject.set(x, "borderBlockEndStyle", null)
     
     @scala.inline
-    def setBorderBlockEndWidthVarargs(value: ((js.UndefOr[BorderBlockEndWidthProperty[Double | String]]) | Null)*): Self = this.set("borderBlockEndWidth", js.Array(value :_*))
+    def setBorderBlockEndStyleUndefined: Self = StObject.set(x, "borderBlockEndStyle", js.undefined)
     
     @scala.inline
-    def setBorderBlockEndWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockEndWidthProperty[Double | String]]]
-    ): Self = this.set("borderBlockEndWidth", js.Any.fromFunction1(value))
+    def setBorderBlockEndStyleVarargs(value: (js.UndefOr[BorderBlockEndStyleProperty] | Null)*): Self = StObject.set(x, "borderBlockEndStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderBlockEndUndefined: Self = StObject.set(x, "borderBlockEnd", js.undefined)
+    
+    @scala.inline
+    def setBorderBlockEndVarargs(value: ((js.UndefOr[BorderBlockEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderBlockEnd", js.Array(value :_*))
     
     @scala.inline
     def setBorderBlockEndWidth(
@@ -3714,21 +3669,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBlockEndWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBlockEndWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBlockEndWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockEndWidth: Self = this.set("borderBlockEndWidth", js.undefined)
+    def setBorderBlockEndWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockEndWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderBlockEndWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockEndWidthNull: Self = this.set("borderBlockEndWidth", null)
+    def setBorderBlockEndWidthNull: Self = StObject.set(x, "borderBlockEndWidth", null)
     
     @scala.inline
-    def setBorderBlockStartVarargs(value: ((js.UndefOr[BorderBlockStartProperty[Double | String]]) | Null)*): Self = this.set("borderBlockStart", js.Array(value :_*))
+    def setBorderBlockEndWidthUndefined: Self = StObject.set(x, "borderBlockEndWidth", js.undefined)
     
     @scala.inline
-    def setBorderBlockStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockStartProperty[Double | String]]]
-    ): Self = this.set("borderBlockStart", js.Any.fromFunction1(value))
+    def setBorderBlockEndWidthVarargs(value: ((js.UndefOr[BorderBlockEndWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderBlockEndWidth", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderBlockFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderBlock", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setBorderBlockNull: Self = StObject.set(x, "borderBlock", null)
     
     @scala.inline
     def setBorderBlockStart(
@@ -3736,19 +3699,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBlockStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBlockStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderBlockStart: Self = this.set("borderBlockStart", js.undefined)
-    
-    @scala.inline
-    def setBorderBlockStartNull: Self = this.set("borderBlockStart", null)
-    
-    @scala.inline
-    def setBorderBlockStartColorVarargs(value: (js.UndefOr[BorderBlockStartColorProperty] | Null)*): Self = this.set("borderBlockStartColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderBlockStartColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockStartColorProperty]]): Self = this.set("borderBlockStartColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "borderBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderBlockStartColor(
@@ -3756,19 +3707,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBlockStartColorProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBlockStartColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBlockStartColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockStartColor: Self = this.set("borderBlockStartColor", js.undefined)
+    def setBorderBlockStartColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockStartColorProperty]]): Self = StObject.set(x, "borderBlockStartColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockStartColorNull: Self = this.set("borderBlockStartColor", null)
+    def setBorderBlockStartColorNull: Self = StObject.set(x, "borderBlockStartColor", null)
     
     @scala.inline
-    def setBorderBlockStartStyleVarargs(value: (js.UndefOr[BorderBlockStartStyleProperty] | Null)*): Self = this.set("borderBlockStartStyle", js.Array(value :_*))
+    def setBorderBlockStartColorUndefined: Self = StObject.set(x, "borderBlockStartColor", js.undefined)
     
     @scala.inline
-    def setBorderBlockStartStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockStartStyleProperty]]): Self = this.set("borderBlockStartStyle", js.Any.fromFunction1(value))
+    def setBorderBlockStartColorVarargs(value: (js.UndefOr[BorderBlockStartColorProperty] | Null)*): Self = StObject.set(x, "borderBlockStartColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderBlockStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderBlockStart", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setBorderBlockStartNull: Self = StObject.set(x, "borderBlockStart", null)
     
     @scala.inline
     def setBorderBlockStartStyle(
@@ -3776,21 +3735,25 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBlockStartStyleProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBlockStartStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBlockStartStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockStartStyle: Self = this.set("borderBlockStartStyle", js.undefined)
+    def setBorderBlockStartStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockStartStyleProperty]]): Self = StObject.set(x, "borderBlockStartStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockStartStyleNull: Self = this.set("borderBlockStartStyle", null)
+    def setBorderBlockStartStyleNull: Self = StObject.set(x, "borderBlockStartStyle", null)
     
     @scala.inline
-    def setBorderBlockStartWidthVarargs(value: ((js.UndefOr[BorderBlockStartWidthProperty[Double | String]]) | Null)*): Self = this.set("borderBlockStartWidth", js.Array(value :_*))
+    def setBorderBlockStartStyleUndefined: Self = StObject.set(x, "borderBlockStartStyle", js.undefined)
     
     @scala.inline
-    def setBorderBlockStartWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockStartWidthProperty[Double | String]]]
-    ): Self = this.set("borderBlockStartWidth", js.Any.fromFunction1(value))
+    def setBorderBlockStartStyleVarargs(value: (js.UndefOr[BorderBlockStartStyleProperty] | Null)*): Self = StObject.set(x, "borderBlockStartStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderBlockStartUndefined: Self = StObject.set(x, "borderBlockStart", js.undefined)
+    
+    @scala.inline
+    def setBorderBlockStartVarargs(value: ((js.UndefOr[BorderBlockStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderBlockStart", js.Array(value :_*))
     
     @scala.inline
     def setBorderBlockStartWidth(
@@ -3798,38 +3761,44 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBlockStartWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBlockStartWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBlockStartWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockStartWidth: Self = this.set("borderBlockStartWidth", js.undefined)
+    def setBorderBlockStartWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockStartWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderBlockStartWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockStartWidthNull: Self = this.set("borderBlockStartWidth", null)
+    def setBorderBlockStartWidthNull: Self = StObject.set(x, "borderBlockStartWidth", null)
     
     @scala.inline
-    def setBorderBlockStyleVarargs(value: (js.UndefOr[BorderBlockStyleProperty] | Null)*): Self = this.set("borderBlockStyle", js.Array(value :_*))
+    def setBorderBlockStartWidthUndefined: Self = StObject.set(x, "borderBlockStartWidth", js.undefined)
     
     @scala.inline
-    def setBorderBlockStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockStyleProperty]]): Self = this.set("borderBlockStyle", js.Any.fromFunction1(value))
+    def setBorderBlockStartWidthVarargs(value: ((js.UndefOr[BorderBlockStartWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderBlockStartWidth", js.Array(value :_*))
     
     @scala.inline
     def setBorderBlockStyle(
       value: ResponsiveStyleValue[js.UndefOr[BorderBlockStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBlockStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderBlockStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBlockStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockStyle: Self = this.set("borderBlockStyle", js.undefined)
+    def setBorderBlockStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockStyleProperty]]): Self = StObject.set(x, "borderBlockStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockStyleNull: Self = this.set("borderBlockStyle", null)
+    def setBorderBlockStyleNull: Self = StObject.set(x, "borderBlockStyle", null)
     
     @scala.inline
-    def setBorderBlockWidthVarargs(value: ((js.UndefOr[BorderBlockWidthProperty[Double | String]]) | Null)*): Self = this.set("borderBlockWidth", js.Array(value :_*))
+    def setBorderBlockStyleUndefined: Self = StObject.set(x, "borderBlockStyle", js.undefined)
     
     @scala.inline
-    def setBorderBlockWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockWidthProperty[Double | String]]]
-    ): Self = this.set("borderBlockWidth", js.Any.fromFunction1(value))
+    def setBorderBlockStyleVarargs(value: (js.UndefOr[BorderBlockStyleProperty] | Null)*): Self = StObject.set(x, "borderBlockStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderBlockUndefined: Self = StObject.set(x, "borderBlock", js.undefined)
+    
+    @scala.inline
+    def setBorderBlockVarargs(value: ((js.UndefOr[BorderBlockProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderBlock", js.Array(value :_*))
     
     @scala.inline
     def setBorderBlockWidth(
@@ -3837,21 +3806,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBlockWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBlockWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBlockWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockWidth: Self = this.set("borderBlockWidth", js.undefined)
+    def setBorderBlockWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBlockWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderBlockWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockWidthNull: Self = this.set("borderBlockWidth", null)
+    def setBorderBlockWidthNull: Self = StObject.set(x, "borderBlockWidth", null)
     
     @scala.inline
-    def setBorderBottomVarargs(value: ((js.UndefOr[BorderBottomProperty[Double | String]]) | Null)*): Self = this.set("borderBottom", js.Array(value :_*))
+    def setBorderBlockWidthUndefined: Self = StObject.set(x, "borderBlockWidth", js.undefined)
     
     @scala.inline
-    def setBorderBottomFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomProperty[Double | String]]]
-    ): Self = this.set("borderBottom", js.Any.fromFunction1(value))
+    def setBorderBlockWidthVarargs(value: ((js.UndefOr[BorderBlockWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderBlockWidth", js.Array(value :_*))
     
     @scala.inline
     def setBorderBottom(
@@ -3859,38 +3828,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBottomProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBottom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderBottom: Self = this.set("borderBottom", js.undefined)
-    
-    @scala.inline
-    def setBorderBottomNull: Self = this.set("borderBottom", null)
-    
-    @scala.inline
-    def setBorderBottomColorVarargs(value: (js.UndefOr[BorderBottomColorProperty] | Null)*): Self = this.set("borderBottomColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderBottomColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomColorProperty]]): Self = this.set("borderBottomColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderBottomColor(
       value: ResponsiveStyleValue[js.UndefOr[BorderBottomColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBottomColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderBottomColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBottomColor: Self = this.set("borderBottomColor", js.undefined)
+    def setBorderBottomColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomColorProperty]]): Self = StObject.set(x, "borderBottomColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBottomColorNull: Self = this.set("borderBottomColor", null)
+    def setBorderBottomColorNull: Self = StObject.set(x, "borderBottomColor", null)
     
     @scala.inline
-    def setBorderBottomLeftRadiusVarargs(value: ((js.UndefOr[BorderBottomLeftRadiusProperty[Double | String]]) | Null)*): Self = this.set("borderBottomLeftRadius", js.Array(value :_*))
+    def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
     
     @scala.inline
-    def setBorderBottomLeftRadiusFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomLeftRadiusProperty[Double | String]]]
-    ): Self = this.set("borderBottomLeftRadius", js.Any.fromFunction1(value))
+    def setBorderBottomColorVarargs(value: (js.UndefOr[BorderBottomColorProperty] | Null)*): Self = StObject.set(x, "borderBottomColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderBottomFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderBottom", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBorderBottomLeftRadius(
@@ -3898,21 +3858,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBottomLeftRadiusProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBottomLeftRadius", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBottomLeftRadius: Self = this.set("borderBottomLeftRadius", js.undefined)
+    def setBorderBottomLeftRadiusFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomLeftRadiusProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderBottomLeftRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBottomLeftRadiusNull: Self = this.set("borderBottomLeftRadius", null)
+    def setBorderBottomLeftRadiusNull: Self = StObject.set(x, "borderBottomLeftRadius", null)
     
     @scala.inline
-    def setBorderBottomRightRadiusVarargs(value: ((js.UndefOr[BorderBottomRightRadiusProperty[Double | String]]) | Null)*): Self = this.set("borderBottomRightRadius", js.Array(value :_*))
+    def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
     
     @scala.inline
-    def setBorderBottomRightRadiusFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomRightRadiusProperty[Double | String]]]
-    ): Self = this.set("borderBottomRightRadius", js.Any.fromFunction1(value))
+    def setBorderBottomLeftRadiusVarargs(value: ((js.UndefOr[BorderBottomLeftRadiusProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderBottomLeftRadius", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderBottomNull: Self = StObject.set(x, "borderBottom", null)
     
     @scala.inline
     def setBorderBottomRightRadius(
@@ -3920,38 +3883,44 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBottomRightRadiusProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBottomRightRadius", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBottomRightRadius: Self = this.set("borderBottomRightRadius", js.undefined)
+    def setBorderBottomRightRadiusFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomRightRadiusProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderBottomRightRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBottomRightRadiusNull: Self = this.set("borderBottomRightRadius", null)
+    def setBorderBottomRightRadiusNull: Self = StObject.set(x, "borderBottomRightRadius", null)
     
     @scala.inline
-    def setBorderBottomStyleVarargs(value: (js.UndefOr[BorderBottomStyleProperty] | Null)*): Self = this.set("borderBottomStyle", js.Array(value :_*))
+    def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
     
     @scala.inline
-    def setBorderBottomStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomStyleProperty]]): Self = this.set("borderBottomStyle", js.Any.fromFunction1(value))
+    def setBorderBottomRightRadiusVarargs(value: ((js.UndefOr[BorderBottomRightRadiusProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderBottomRightRadius", js.Array(value :_*))
     
     @scala.inline
     def setBorderBottomStyle(
       value: ResponsiveStyleValue[js.UndefOr[BorderBottomStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBottomStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderBottomStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBottomStyle: Self = this.set("borderBottomStyle", js.undefined)
+    def setBorderBottomStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomStyleProperty]]): Self = StObject.set(x, "borderBottomStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBottomStyleNull: Self = this.set("borderBottomStyle", null)
+    def setBorderBottomStyleNull: Self = StObject.set(x, "borderBottomStyle", null)
     
     @scala.inline
-    def setBorderBottomWidthVarargs(value: ((js.UndefOr[BorderBottomWidthProperty[Double | String]]) | Null)*): Self = this.set("borderBottomWidth", js.Array(value :_*))
+    def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
     
     @scala.inline
-    def setBorderBottomWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomWidthProperty[Double | String]]]
-    ): Self = this.set("borderBottomWidth", js.Any.fromFunction1(value))
+    def setBorderBottomStyleVarargs(value: (js.UndefOr[BorderBottomStyleProperty] | Null)*): Self = StObject.set(x, "borderBottomStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+    
+    @scala.inline
+    def setBorderBottomVarargs(value: ((js.UndefOr[BorderBottomProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
     
     @scala.inline
     def setBorderBottomWidth(
@@ -3959,55 +3928,55 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderBottomWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderBottomWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBottomWidth: Self = this.set("borderBottomWidth", js.undefined)
+    def setBorderBottomWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderBottomWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderBottomWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBottomWidthNull: Self = this.set("borderBottomWidth", null)
+    def setBorderBottomWidthNull: Self = StObject.set(x, "borderBottomWidth", null)
     
     @scala.inline
-    def setBorderCollapseVarargs(value: (js.UndefOr[BorderCollapseProperty] | Null)*): Self = this.set("borderCollapse", js.Array(value :_*))
+    def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
     
     @scala.inline
-    def setBorderCollapseFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderCollapseProperty]]): Self = this.set("borderCollapse", js.Any.fromFunction1(value))
+    def setBorderBottomWidthVarargs(value: ((js.UndefOr[BorderBottomWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderBottomWidth", js.Array(value :_*))
     
     @scala.inline
     def setBorderCollapse(
       value: ResponsiveStyleValue[js.UndefOr[BorderCollapseProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderCollapseProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderCollapse", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderCollapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderCollapse: Self = this.set("borderCollapse", js.undefined)
+    def setBorderCollapseFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderCollapseProperty]]): Self = StObject.set(x, "borderCollapse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderCollapseNull: Self = this.set("borderCollapse", null)
+    def setBorderCollapseNull: Self = StObject.set(x, "borderCollapse", null)
     
     @scala.inline
-    def setBorderColorVarargs(value: (js.UndefOr[BorderColorProperty] | Null)*): Self = this.set("borderColor", js.Array(value :_*))
+    def setBorderCollapseUndefined: Self = StObject.set(x, "borderCollapse", js.undefined)
     
     @scala.inline
-    def setBorderColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderColorProperty]]): Self = this.set("borderColor", js.Any.fromFunction1(value))
+    def setBorderCollapseVarargs(value: (js.UndefOr[BorderCollapseProperty] | Null)*): Self = StObject.set(x, "borderCollapse", js.Array(value :_*))
     
     @scala.inline
     def setBorderColor(
       value: ResponsiveStyleValue[js.UndefOr[BorderColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setBorderColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderColorProperty]]): Self = StObject.set(x, "borderColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderColorNull: Self = this.set("borderColor", null)
+    def setBorderColorNull: Self = StObject.set(x, "borderColor", null)
     
     @scala.inline
-    def setBorderEndEndRadiusVarargs(value: ((js.UndefOr[BorderEndEndRadiusProperty[Double | String]]) | Null)*): Self = this.set("borderEndEndRadius", js.Array(value :_*))
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def setBorderEndEndRadiusFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderEndEndRadiusProperty[Double | String]]]
-    ): Self = this.set("borderEndEndRadius", js.Any.fromFunction1(value))
+    def setBorderColorVarargs(value: (js.UndefOr[BorderColorProperty] | Null)*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
     
     @scala.inline
     def setBorderEndEndRadius(
@@ -4015,21 +3984,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderEndEndRadiusProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderEndEndRadius", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderEndEndRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderEndEndRadius: Self = this.set("borderEndEndRadius", js.undefined)
+    def setBorderEndEndRadiusFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderEndEndRadiusProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderEndEndRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderEndEndRadiusNull: Self = this.set("borderEndEndRadius", null)
+    def setBorderEndEndRadiusNull: Self = StObject.set(x, "borderEndEndRadius", null)
     
     @scala.inline
-    def setBorderEndStartRadiusVarargs(value: ((js.UndefOr[BorderEndStartRadiusProperty[Double | String]]) | Null)*): Self = this.set("borderEndStartRadius", js.Array(value :_*))
+    def setBorderEndEndRadiusUndefined: Self = StObject.set(x, "borderEndEndRadius", js.undefined)
     
     @scala.inline
-    def setBorderEndStartRadiusFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderEndStartRadiusProperty[Double | String]]]
-    ): Self = this.set("borderEndStartRadius", js.Any.fromFunction1(value))
+    def setBorderEndEndRadiusVarargs(value: ((js.UndefOr[BorderEndEndRadiusProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderEndEndRadius", js.Array(value :_*))
     
     @scala.inline
     def setBorderEndStartRadius(
@@ -4037,38 +4006,35 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderEndStartRadiusProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderEndStartRadius", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderEndStartRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderEndStartRadius: Self = this.set("borderEndStartRadius", js.undefined)
+    def setBorderEndStartRadiusFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderEndStartRadiusProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderEndStartRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderEndStartRadiusNull: Self = this.set("borderEndStartRadius", null)
+    def setBorderEndStartRadiusNull: Self = StObject.set(x, "borderEndStartRadius", null)
     
     @scala.inline
-    def setBorderImageVarargs(value: (js.UndefOr[BorderImageProperty] | Null)*): Self = this.set("borderImage", js.Array(value :_*))
+    def setBorderEndStartRadiusUndefined: Self = StObject.set(x, "borderEndStartRadius", js.undefined)
     
     @scala.inline
-    def setBorderImageFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageProperty]]): Self = this.set("borderImage", js.Any.fromFunction1(value))
+    def setBorderEndStartRadiusVarargs(value: ((js.UndefOr[BorderEndStartRadiusProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderEndStartRadius", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderProperty[Double | String]]]): Self = StObject.set(x, "border", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBorderImage(
       value: ResponsiveStyleValue[js.UndefOr[BorderImageProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderImageProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderImage", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderImage: Self = this.set("borderImage", js.undefined)
+    def setBorderImageFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageProperty]]): Self = StObject.set(x, "borderImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderImageNull: Self = this.set("borderImage", null)
-    
-    @scala.inline
-    def setBorderImageOutsetVarargs(value: ((js.UndefOr[BorderImageOutsetProperty[Double | String]]) | Null)*): Self = this.set("borderImageOutset", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderImageOutsetFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageOutsetProperty[Double | String]]]
-    ): Self = this.set("borderImageOutset", js.Any.fromFunction1(value))
+    def setBorderImageNull: Self = StObject.set(x, "borderImage", null)
     
     @scala.inline
     def setBorderImageOutset(
@@ -4076,72 +4042,78 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderImageOutsetProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderImageOutset", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderImageOutset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderImageOutset: Self = this.set("borderImageOutset", js.undefined)
+    def setBorderImageOutsetFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageOutsetProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderImageOutset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderImageOutsetNull: Self = this.set("borderImageOutset", null)
+    def setBorderImageOutsetNull: Self = StObject.set(x, "borderImageOutset", null)
     
     @scala.inline
-    def setBorderImageRepeatVarargs(value: (js.UndefOr[BorderImageRepeatProperty] | Null)*): Self = this.set("borderImageRepeat", js.Array(value :_*))
+    def setBorderImageOutsetUndefined: Self = StObject.set(x, "borderImageOutset", js.undefined)
     
     @scala.inline
-    def setBorderImageRepeatFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageRepeatProperty]]): Self = this.set("borderImageRepeat", js.Any.fromFunction1(value))
+    def setBorderImageOutsetVarargs(value: ((js.UndefOr[BorderImageOutsetProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderImageOutset", js.Array(value :_*))
     
     @scala.inline
     def setBorderImageRepeat(
       value: ResponsiveStyleValue[js.UndefOr[BorderImageRepeatProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderImageRepeatProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderImageRepeat", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderImageRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderImageRepeat: Self = this.set("borderImageRepeat", js.undefined)
+    def setBorderImageRepeatFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageRepeatProperty]]): Self = StObject.set(x, "borderImageRepeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderImageRepeatNull: Self = this.set("borderImageRepeat", null)
+    def setBorderImageRepeatNull: Self = StObject.set(x, "borderImageRepeat", null)
     
     @scala.inline
-    def setBorderImageSliceVarargs(value: (js.UndefOr[BorderImageSliceProperty] | Null)*): Self = this.set("borderImageSlice", js.Array(value :_*))
+    def setBorderImageRepeatUndefined: Self = StObject.set(x, "borderImageRepeat", js.undefined)
     
     @scala.inline
-    def setBorderImageSliceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageSliceProperty]]): Self = this.set("borderImageSlice", js.Any.fromFunction1(value))
+    def setBorderImageRepeatVarargs(value: (js.UndefOr[BorderImageRepeatProperty] | Null)*): Self = StObject.set(x, "borderImageRepeat", js.Array(value :_*))
     
     @scala.inline
     def setBorderImageSlice(
       value: ResponsiveStyleValue[js.UndefOr[BorderImageSliceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderImageSliceProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderImageSlice", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderImageSlice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderImageSlice: Self = this.set("borderImageSlice", js.undefined)
+    def setBorderImageSliceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageSliceProperty]]): Self = StObject.set(x, "borderImageSlice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderImageSliceNull: Self = this.set("borderImageSlice", null)
+    def setBorderImageSliceNull: Self = StObject.set(x, "borderImageSlice", null)
     
     @scala.inline
-    def setBorderImageSourceVarargs(value: (js.UndefOr[BorderImageSourceProperty] | Null)*): Self = this.set("borderImageSource", js.Array(value :_*))
+    def setBorderImageSliceUndefined: Self = StObject.set(x, "borderImageSlice", js.undefined)
     
     @scala.inline
-    def setBorderImageSourceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageSourceProperty]]): Self = this.set("borderImageSource", js.Any.fromFunction1(value))
+    def setBorderImageSliceVarargs(value: (js.UndefOr[BorderImageSliceProperty] | Null)*): Self = StObject.set(x, "borderImageSlice", js.Array(value :_*))
     
     @scala.inline
     def setBorderImageSource(
       value: ResponsiveStyleValue[js.UndefOr[BorderImageSourceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderImageSourceProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderImageSource", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderImageSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderImageSource: Self = this.set("borderImageSource", js.undefined)
+    def setBorderImageSourceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageSourceProperty]]): Self = StObject.set(x, "borderImageSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderImageSourceNull: Self = this.set("borderImageSource", null)
+    def setBorderImageSourceNull: Self = StObject.set(x, "borderImageSource", null)
     
     @scala.inline
-    def setBorderImageWidthVarargs(value: ((js.UndefOr[BorderImageWidthProperty[Double | String]]) | Null)*): Self = this.set("borderImageWidth", js.Array(value :_*))
+    def setBorderImageSourceUndefined: Self = StObject.set(x, "borderImageSource", js.undefined)
     
     @scala.inline
-    def setBorderImageWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageWidthProperty[Double | String]]]
-    ): Self = this.set("borderImageWidth", js.Any.fromFunction1(value))
+    def setBorderImageSourceVarargs(value: (js.UndefOr[BorderImageSourceProperty] | Null)*): Self = StObject.set(x, "borderImageSource", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderImageUndefined: Self = StObject.set(x, "borderImage", js.undefined)
+    
+    @scala.inline
+    def setBorderImageVarargs(value: (js.UndefOr[BorderImageProperty] | Null)*): Self = StObject.set(x, "borderImage", js.Array(value :_*))
     
     @scala.inline
     def setBorderImageWidth(
@@ -4149,21 +4121,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderImageWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderImageWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderImageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderImageWidth: Self = this.set("borderImageWidth", js.undefined)
+    def setBorderImageWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderImageWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderImageWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderImageWidthNull: Self = this.set("borderImageWidth", null)
+    def setBorderImageWidthNull: Self = StObject.set(x, "borderImageWidth", null)
     
     @scala.inline
-    def setBorderInlineVarargs(value: ((js.UndefOr[BorderInlineProperty[Double | String]]) | Null)*): Self = this.set("borderInline", js.Array(value :_*))
+    def setBorderImageWidthUndefined: Self = StObject.set(x, "borderImageWidth", js.undefined)
     
     @scala.inline
-    def setBorderInlineFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineProperty[Double | String]]]
-    ): Self = this.set("borderInline", js.Any.fromFunction1(value))
+    def setBorderImageWidthVarargs(value: ((js.UndefOr[BorderImageWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderImageWidth", js.Array(value :_*))
     
     @scala.inline
     def setBorderInline(
@@ -4171,38 +4143,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderInlineProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderInline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderInline: Self = this.set("borderInline", js.undefined)
-    
-    @scala.inline
-    def setBorderInlineNull: Self = this.set("borderInline", null)
-    
-    @scala.inline
-    def setBorderInlineColorVarargs(value: (js.UndefOr[BorderInlineColorProperty] | Null)*): Self = this.set("borderInlineColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderInlineColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineColorProperty]]): Self = this.set("borderInlineColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "borderInline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderInlineColor(
       value: ResponsiveStyleValue[js.UndefOr[BorderInlineColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderInlineColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderInlineColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderInlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderInlineColor: Self = this.set("borderInlineColor", js.undefined)
+    def setBorderInlineColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineColorProperty]]): Self = StObject.set(x, "borderInlineColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderInlineColorNull: Self = this.set("borderInlineColor", null)
+    def setBorderInlineColorNull: Self = StObject.set(x, "borderInlineColor", null)
     
     @scala.inline
-    def setBorderInlineEndVarargs(value: ((js.UndefOr[BorderInlineEndProperty[Double | String]]) | Null)*): Self = this.set("borderInlineEnd", js.Array(value :_*))
+    def setBorderInlineColorUndefined: Self = StObject.set(x, "borderInlineColor", js.undefined)
     
     @scala.inline
-    def setBorderInlineEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineEndProperty[Double | String]]]
-    ): Self = this.set("borderInlineEnd", js.Any.fromFunction1(value))
+    def setBorderInlineColorVarargs(value: (js.UndefOr[BorderInlineColorProperty] | Null)*): Self = StObject.set(x, "borderInlineColor", js.Array(value :_*))
     
     @scala.inline
     def setBorderInlineEnd(
@@ -4210,55 +4168,55 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderInlineEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderInlineEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderInlineEnd: Self = this.set("borderInlineEnd", js.undefined)
-    
-    @scala.inline
-    def setBorderInlineEndNull: Self = this.set("borderInlineEnd", null)
-    
-    @scala.inline
-    def setBorderInlineEndColorVarargs(value: (js.UndefOr[BorderInlineEndColorProperty] | Null)*): Self = this.set("borderInlineEndColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderInlineEndColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineEndColorProperty]]): Self = this.set("borderInlineEndColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "borderInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderInlineEndColor(
       value: ResponsiveStyleValue[js.UndefOr[BorderInlineEndColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderInlineEndColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderInlineEndColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderInlineEndColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderInlineEndColor: Self = this.set("borderInlineEndColor", js.undefined)
+    def setBorderInlineEndColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineEndColorProperty]]): Self = StObject.set(x, "borderInlineEndColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderInlineEndColorNull: Self = this.set("borderInlineEndColor", null)
+    def setBorderInlineEndColorNull: Self = StObject.set(x, "borderInlineEndColor", null)
     
     @scala.inline
-    def setBorderInlineEndStyleVarargs(value: (js.UndefOr[BorderInlineEndStyleProperty] | Null)*): Self = this.set("borderInlineEndStyle", js.Array(value :_*))
+    def setBorderInlineEndColorUndefined: Self = StObject.set(x, "borderInlineEndColor", js.undefined)
     
     @scala.inline
-    def setBorderInlineEndStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineEndStyleProperty]]): Self = this.set("borderInlineEndStyle", js.Any.fromFunction1(value))
+    def setBorderInlineEndColorVarargs(value: (js.UndefOr[BorderInlineEndColorProperty] | Null)*): Self = StObject.set(x, "borderInlineEndColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderInlineEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderInlineEnd", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setBorderInlineEndNull: Self = StObject.set(x, "borderInlineEnd", null)
     
     @scala.inline
     def setBorderInlineEndStyle(
       value: ResponsiveStyleValue[js.UndefOr[BorderInlineEndStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderInlineEndStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderInlineEndStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderInlineEndStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderInlineEndStyle: Self = this.set("borderInlineEndStyle", js.undefined)
+    def setBorderInlineEndStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineEndStyleProperty]]): Self = StObject.set(x, "borderInlineEndStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderInlineEndStyleNull: Self = this.set("borderInlineEndStyle", null)
+    def setBorderInlineEndStyleNull: Self = StObject.set(x, "borderInlineEndStyle", null)
     
     @scala.inline
-    def setBorderInlineEndWidthVarargs(value: ((js.UndefOr[BorderInlineEndWidthProperty[Double | String]]) | Null)*): Self = this.set("borderInlineEndWidth", js.Array(value :_*))
+    def setBorderInlineEndStyleUndefined: Self = StObject.set(x, "borderInlineEndStyle", js.undefined)
     
     @scala.inline
-    def setBorderInlineEndWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineEndWidthProperty[Double | String]]]
-    ): Self = this.set("borderInlineEndWidth", js.Any.fromFunction1(value))
+    def setBorderInlineEndStyleVarargs(value: (js.UndefOr[BorderInlineEndStyleProperty] | Null)*): Self = StObject.set(x, "borderInlineEndStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderInlineEndUndefined: Self = StObject.set(x, "borderInlineEnd", js.undefined)
+    
+    @scala.inline
+    def setBorderInlineEndVarargs(value: ((js.UndefOr[BorderInlineEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderInlineEnd", js.Array(value :_*))
     
     @scala.inline
     def setBorderInlineEndWidth(
@@ -4266,21 +4224,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderInlineEndWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderInlineEndWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderInlineEndWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderInlineEndWidth: Self = this.set("borderInlineEndWidth", js.undefined)
+    def setBorderInlineEndWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineEndWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderInlineEndWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderInlineEndWidthNull: Self = this.set("borderInlineEndWidth", null)
+    def setBorderInlineEndWidthNull: Self = StObject.set(x, "borderInlineEndWidth", null)
     
     @scala.inline
-    def setBorderInlineStartVarargs(value: ((js.UndefOr[BorderInlineStartProperty[Double | String]]) | Null)*): Self = this.set("borderInlineStart", js.Array(value :_*))
+    def setBorderInlineEndWidthUndefined: Self = StObject.set(x, "borderInlineEndWidth", js.undefined)
     
     @scala.inline
-    def setBorderInlineStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineStartProperty[Double | String]]]
-    ): Self = this.set("borderInlineStart", js.Any.fromFunction1(value))
+    def setBorderInlineEndWidthVarargs(value: ((js.UndefOr[BorderInlineEndWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderInlineEndWidth", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderInlineFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderInline", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setBorderInlineNull: Self = StObject.set(x, "borderInline", null)
     
     @scala.inline
     def setBorderInlineStart(
@@ -4288,19 +4254,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderInlineStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderInlineStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderInlineStart: Self = this.set("borderInlineStart", js.undefined)
-    
-    @scala.inline
-    def setBorderInlineStartNull: Self = this.set("borderInlineStart", null)
-    
-    @scala.inline
-    def setBorderInlineStartColorVarargs(value: (js.UndefOr[BorderInlineStartColorProperty] | Null)*): Self = this.set("borderInlineStartColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderInlineStartColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineStartColorProperty]]): Self = this.set("borderInlineStartColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "borderInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderInlineStartColor(
@@ -4308,19 +4262,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderInlineStartColorProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderInlineStartColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderInlineStartColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderInlineStartColor: Self = this.set("borderInlineStartColor", js.undefined)
+    def setBorderInlineStartColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineStartColorProperty]]): Self = StObject.set(x, "borderInlineStartColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderInlineStartColorNull: Self = this.set("borderInlineStartColor", null)
+    def setBorderInlineStartColorNull: Self = StObject.set(x, "borderInlineStartColor", null)
     
     @scala.inline
-    def setBorderInlineStartStyleVarargs(value: (js.UndefOr[BorderInlineStartStyleProperty] | Null)*): Self = this.set("borderInlineStartStyle", js.Array(value :_*))
+    def setBorderInlineStartColorUndefined: Self = StObject.set(x, "borderInlineStartColor", js.undefined)
     
     @scala.inline
-    def setBorderInlineStartStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineStartStyleProperty]]): Self = this.set("borderInlineStartStyle", js.Any.fromFunction1(value))
+    def setBorderInlineStartColorVarargs(value: (js.UndefOr[BorderInlineStartColorProperty] | Null)*): Self = StObject.set(x, "borderInlineStartColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderInlineStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderInlineStart", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setBorderInlineStartNull: Self = StObject.set(x, "borderInlineStart", null)
     
     @scala.inline
     def setBorderInlineStartStyle(
@@ -4328,21 +4290,25 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderInlineStartStyleProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderInlineStartStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderInlineStartStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderInlineStartStyle: Self = this.set("borderInlineStartStyle", js.undefined)
+    def setBorderInlineStartStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineStartStyleProperty]]): Self = StObject.set(x, "borderInlineStartStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderInlineStartStyleNull: Self = this.set("borderInlineStartStyle", null)
+    def setBorderInlineStartStyleNull: Self = StObject.set(x, "borderInlineStartStyle", null)
     
     @scala.inline
-    def setBorderInlineStartWidthVarargs(value: ((js.UndefOr[BorderInlineStartWidthProperty[Double | String]]) | Null)*): Self = this.set("borderInlineStartWidth", js.Array(value :_*))
+    def setBorderInlineStartStyleUndefined: Self = StObject.set(x, "borderInlineStartStyle", js.undefined)
     
     @scala.inline
-    def setBorderInlineStartWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineStartWidthProperty[Double | String]]]
-    ): Self = this.set("borderInlineStartWidth", js.Any.fromFunction1(value))
+    def setBorderInlineStartStyleVarargs(value: (js.UndefOr[BorderInlineStartStyleProperty] | Null)*): Self = StObject.set(x, "borderInlineStartStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderInlineStartUndefined: Self = StObject.set(x, "borderInlineStart", js.undefined)
+    
+    @scala.inline
+    def setBorderInlineStartVarargs(value: ((js.UndefOr[BorderInlineStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderInlineStart", js.Array(value :_*))
     
     @scala.inline
     def setBorderInlineStartWidth(
@@ -4350,38 +4316,44 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderInlineStartWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderInlineStartWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderInlineStartWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderInlineStartWidth: Self = this.set("borderInlineStartWidth", js.undefined)
+    def setBorderInlineStartWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineStartWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderInlineStartWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderInlineStartWidthNull: Self = this.set("borderInlineStartWidth", null)
+    def setBorderInlineStartWidthNull: Self = StObject.set(x, "borderInlineStartWidth", null)
     
     @scala.inline
-    def setBorderInlineStyleVarargs(value: (js.UndefOr[BorderInlineStyleProperty] | Null)*): Self = this.set("borderInlineStyle", js.Array(value :_*))
+    def setBorderInlineStartWidthUndefined: Self = StObject.set(x, "borderInlineStartWidth", js.undefined)
     
     @scala.inline
-    def setBorderInlineStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineStyleProperty]]): Self = this.set("borderInlineStyle", js.Any.fromFunction1(value))
+    def setBorderInlineStartWidthVarargs(value: ((js.UndefOr[BorderInlineStartWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderInlineStartWidth", js.Array(value :_*))
     
     @scala.inline
     def setBorderInlineStyle(
       value: ResponsiveStyleValue[js.UndefOr[BorderInlineStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderInlineStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderInlineStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderInlineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderInlineStyle: Self = this.set("borderInlineStyle", js.undefined)
+    def setBorderInlineStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineStyleProperty]]): Self = StObject.set(x, "borderInlineStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderInlineStyleNull: Self = this.set("borderInlineStyle", null)
+    def setBorderInlineStyleNull: Self = StObject.set(x, "borderInlineStyle", null)
     
     @scala.inline
-    def setBorderInlineWidthVarargs(value: ((js.UndefOr[BorderInlineWidthProperty[Double | String]]) | Null)*): Self = this.set("borderInlineWidth", js.Array(value :_*))
+    def setBorderInlineStyleUndefined: Self = StObject.set(x, "borderInlineStyle", js.undefined)
     
     @scala.inline
-    def setBorderInlineWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineWidthProperty[Double | String]]]
-    ): Self = this.set("borderInlineWidth", js.Any.fromFunction1(value))
+    def setBorderInlineStyleVarargs(value: (js.UndefOr[BorderInlineStyleProperty] | Null)*): Self = StObject.set(x, "borderInlineStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderInlineUndefined: Self = StObject.set(x, "borderInline", js.undefined)
+    
+    @scala.inline
+    def setBorderInlineVarargs(value: ((js.UndefOr[BorderInlineProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderInline", js.Array(value :_*))
     
     @scala.inline
     def setBorderInlineWidth(
@@ -4389,19 +4361,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderInlineWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderInlineWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderInlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderInlineWidth: Self = this.set("borderInlineWidth", js.undefined)
+    def setBorderInlineWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderInlineWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderInlineWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderInlineWidthNull: Self = this.set("borderInlineWidth", null)
+    def setBorderInlineWidthNull: Self = StObject.set(x, "borderInlineWidth", null)
     
     @scala.inline
-    def setBorderLeftVarargs(value: ((js.UndefOr[BorderLeftProperty[Double | String]]) | Null)*): Self = this.set("borderLeft", js.Array(value :_*))
+    def setBorderInlineWidthUndefined: Self = StObject.set(x, "borderInlineWidth", js.undefined)
     
     @scala.inline
-    def setBorderLeftFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderLeftProperty[Double | String]]]): Self = this.set("borderLeft", js.Any.fromFunction1(value))
+    def setBorderInlineWidthVarargs(value: ((js.UndefOr[BorderInlineWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderInlineWidth", js.Array(value :_*))
     
     @scala.inline
     def setBorderLeft(
@@ -4409,55 +4383,53 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderLeftProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderLeft: Self = this.set("borderLeft", js.undefined)
-    
-    @scala.inline
-    def setBorderLeftNull: Self = this.set("borderLeft", null)
-    
-    @scala.inline
-    def setBorderLeftColorVarargs(value: (js.UndefOr[BorderLeftColorProperty] | Null)*): Self = this.set("borderLeftColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderLeftColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderLeftColorProperty]]): Self = this.set("borderLeftColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderLeftColor(
       value: ResponsiveStyleValue[js.UndefOr[BorderLeftColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderLeftColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderLeftColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderLeftColor: Self = this.set("borderLeftColor", js.undefined)
+    def setBorderLeftColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderLeftColorProperty]]): Self = StObject.set(x, "borderLeftColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderLeftColorNull: Self = this.set("borderLeftColor", null)
+    def setBorderLeftColorNull: Self = StObject.set(x, "borderLeftColor", null)
     
     @scala.inline
-    def setBorderLeftStyleVarargs(value: (js.UndefOr[BorderLeftStyleProperty] | Null)*): Self = this.set("borderLeftStyle", js.Array(value :_*))
+    def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
     
     @scala.inline
-    def setBorderLeftStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderLeftStyleProperty]]): Self = this.set("borderLeftStyle", js.Any.fromFunction1(value))
+    def setBorderLeftColorVarargs(value: (js.UndefOr[BorderLeftColorProperty] | Null)*): Self = StObject.set(x, "borderLeftColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderLeftFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderLeftProperty[Double | String]]]): Self = StObject.set(x, "borderLeft", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setBorderLeftNull: Self = StObject.set(x, "borderLeft", null)
     
     @scala.inline
     def setBorderLeftStyle(
       value: ResponsiveStyleValue[js.UndefOr[BorderLeftStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderLeftStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderLeftStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderLeftStyle: Self = this.set("borderLeftStyle", js.undefined)
+    def setBorderLeftStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderLeftStyleProperty]]): Self = StObject.set(x, "borderLeftStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderLeftStyleNull: Self = this.set("borderLeftStyle", null)
+    def setBorderLeftStyleNull: Self = StObject.set(x, "borderLeftStyle", null)
     
     @scala.inline
-    def setBorderLeftWidthVarargs(value: ((js.UndefOr[BorderLeftWidthProperty[Double | String]]) | Null)*): Self = this.set("borderLeftWidth", js.Array(value :_*))
+    def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
     
     @scala.inline
-    def setBorderLeftWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderLeftWidthProperty[Double | String]]]
-    ): Self = this.set("borderLeftWidth", js.Any.fromFunction1(value))
+    def setBorderLeftStyleVarargs(value: (js.UndefOr[BorderLeftStyleProperty] | Null)*): Self = StObject.set(x, "borderLeftStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+    
+    @scala.inline
+    def setBorderLeftVarargs(value: ((js.UndefOr[BorderLeftProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
     
     @scala.inline
     def setBorderLeftWidth(
@@ -4465,21 +4437,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderLeftWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderLeftWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderLeftWidth: Self = this.set("borderLeftWidth", js.undefined)
+    def setBorderLeftWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderLeftWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderLeftWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderLeftWidthNull: Self = this.set("borderLeftWidth", null)
+    def setBorderLeftWidthNull: Self = StObject.set(x, "borderLeftWidth", null)
     
     @scala.inline
-    def setBorderRadiusVarargs(value: ((js.UndefOr[BorderRadiusProperty[Double | String]]) | Null)*): Self = this.set("borderRadius", js.Array(value :_*))
+    def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
     
     @scala.inline
-    def setBorderRadiusFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderRadiusProperty[Double | String]]]
-    ): Self = this.set("borderRadius", js.Any.fromFunction1(value))
+    def setBorderLeftWidthVarargs(value: ((js.UndefOr[BorderLeftWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderLeftWidth", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderNull: Self = StObject.set(x, "border", null)
     
     @scala.inline
     def setBorderRadius(
@@ -4487,21 +4462,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderRadiusProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    def setBorderRadiusFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderRadiusProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderRadiusNull: Self = this.set("borderRadius", null)
+    def setBorderRadiusNull: Self = StObject.set(x, "borderRadius", null)
     
     @scala.inline
-    def setBorderRightVarargs(value: ((js.UndefOr[BorderRightProperty[Double | String]]) | Null)*): Self = this.set("borderRight", js.Array(value :_*))
+    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def setBorderRightFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderRightProperty[Double | String]]]
-    ): Self = this.set("borderRight", js.Any.fromFunction1(value))
+    def setBorderRadiusVarargs(value: ((js.UndefOr[BorderRadiusProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
     
     @scala.inline
     def setBorderRight(
@@ -4509,55 +4484,55 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderRightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderRight: Self = this.set("borderRight", js.undefined)
-    
-    @scala.inline
-    def setBorderRightNull: Self = this.set("borderRight", null)
-    
-    @scala.inline
-    def setBorderRightColorVarargs(value: (js.UndefOr[BorderRightColorProperty] | Null)*): Self = this.set("borderRightColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderRightColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderRightColorProperty]]): Self = this.set("borderRightColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderRightColor(
       value: ResponsiveStyleValue[js.UndefOr[BorderRightColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderRightColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderRightColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderRightColor: Self = this.set("borderRightColor", js.undefined)
+    def setBorderRightColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderRightColorProperty]]): Self = StObject.set(x, "borderRightColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderRightColorNull: Self = this.set("borderRightColor", null)
+    def setBorderRightColorNull: Self = StObject.set(x, "borderRightColor", null)
     
     @scala.inline
-    def setBorderRightStyleVarargs(value: (js.UndefOr[BorderRightStyleProperty] | Null)*): Self = this.set("borderRightStyle", js.Array(value :_*))
+    def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
     
     @scala.inline
-    def setBorderRightStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderRightStyleProperty]]): Self = this.set("borderRightStyle", js.Any.fromFunction1(value))
+    def setBorderRightColorVarargs(value: (js.UndefOr[BorderRightColorProperty] | Null)*): Self = StObject.set(x, "borderRightColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderRightFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderRightProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderRight", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setBorderRightNull: Self = StObject.set(x, "borderRight", null)
     
     @scala.inline
     def setBorderRightStyle(
       value: ResponsiveStyleValue[js.UndefOr[BorderRightStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderRightStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderRightStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderRightStyle: Self = this.set("borderRightStyle", js.undefined)
+    def setBorderRightStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderRightStyleProperty]]): Self = StObject.set(x, "borderRightStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderRightStyleNull: Self = this.set("borderRightStyle", null)
+    def setBorderRightStyleNull: Self = StObject.set(x, "borderRightStyle", null)
     
     @scala.inline
-    def setBorderRightWidthVarargs(value: ((js.UndefOr[BorderRightWidthProperty[Double | String]]) | Null)*): Self = this.set("borderRightWidth", js.Array(value :_*))
+    def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
     
     @scala.inline
-    def setBorderRightWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderRightWidthProperty[Double | String]]]
-    ): Self = this.set("borderRightWidth", js.Any.fromFunction1(value))
+    def setBorderRightStyleVarargs(value: (js.UndefOr[BorderRightStyleProperty] | Null)*): Self = StObject.set(x, "borderRightStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
+    
+    @scala.inline
+    def setBorderRightVarargs(value: ((js.UndefOr[BorderRightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderRight", js.Array(value :_*))
     
     @scala.inline
     def setBorderRightWidth(
@@ -4565,21 +4540,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderRightWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderRightWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderRightWidth: Self = this.set("borderRightWidth", js.undefined)
+    def setBorderRightWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderRightWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderRightWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderRightWidthNull: Self = this.set("borderRightWidth", null)
+    def setBorderRightWidthNull: Self = StObject.set(x, "borderRightWidth", null)
     
     @scala.inline
-    def setBorderSpacingVarargs(value: ((js.UndefOr[BorderSpacingProperty[Double | String]]) | Null)*): Self = this.set("borderSpacing", js.Array(value :_*))
+    def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
     
     @scala.inline
-    def setBorderSpacingFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderSpacingProperty[Double | String]]]
-    ): Self = this.set("borderSpacing", js.Any.fromFunction1(value))
+    def setBorderRightWidthVarargs(value: ((js.UndefOr[BorderRightWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderRightWidth", js.Array(value :_*))
     
     @scala.inline
     def setBorderSpacing(
@@ -4587,21 +4562,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderSpacingProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderSpacing", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderSpacing: Self = this.set("borderSpacing", js.undefined)
+    def setBorderSpacingFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderSpacingProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderSpacing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderSpacingNull: Self = this.set("borderSpacing", null)
+    def setBorderSpacingNull: Self = StObject.set(x, "borderSpacing", null)
     
     @scala.inline
-    def setBorderStartEndRadiusVarargs(value: ((js.UndefOr[BorderStartEndRadiusProperty[Double | String]]) | Null)*): Self = this.set("borderStartEndRadius", js.Array(value :_*))
+    def setBorderSpacingUndefined: Self = StObject.set(x, "borderSpacing", js.undefined)
     
     @scala.inline
-    def setBorderStartEndRadiusFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderStartEndRadiusProperty[Double | String]]]
-    ): Self = this.set("borderStartEndRadius", js.Any.fromFunction1(value))
+    def setBorderSpacingVarargs(value: ((js.UndefOr[BorderSpacingProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderSpacing", js.Array(value :_*))
     
     @scala.inline
     def setBorderStartEndRadius(
@@ -4609,21 +4584,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderStartEndRadiusProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderStartEndRadius", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderStartEndRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderStartEndRadius: Self = this.set("borderStartEndRadius", js.undefined)
+    def setBorderStartEndRadiusFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderStartEndRadiusProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderStartEndRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderStartEndRadiusNull: Self = this.set("borderStartEndRadius", null)
+    def setBorderStartEndRadiusNull: Self = StObject.set(x, "borderStartEndRadius", null)
     
     @scala.inline
-    def setBorderStartStartRadiusVarargs(value: ((js.UndefOr[BorderStartStartRadiusProperty[Double | String]]) | Null)*): Self = this.set("borderStartStartRadius", js.Array(value :_*))
+    def setBorderStartEndRadiusUndefined: Self = StObject.set(x, "borderStartEndRadius", js.undefined)
     
     @scala.inline
-    def setBorderStartStartRadiusFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderStartStartRadiusProperty[Double | String]]]
-    ): Self = this.set("borderStartStartRadius", js.Any.fromFunction1(value))
+    def setBorderStartEndRadiusVarargs(value: ((js.UndefOr[BorderStartEndRadiusProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderStartEndRadius", js.Array(value :_*))
     
     @scala.inline
     def setBorderStartStartRadius(
@@ -4631,36 +4606,38 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderStartStartRadiusProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderStartStartRadius", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderStartStartRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderStartStartRadius: Self = this.set("borderStartStartRadius", js.undefined)
+    def setBorderStartStartRadiusFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderStartStartRadiusProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderStartStartRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderStartStartRadiusNull: Self = this.set("borderStartStartRadius", null)
+    def setBorderStartStartRadiusNull: Self = StObject.set(x, "borderStartStartRadius", null)
     
     @scala.inline
-    def setBorderStyleVarargs(value: (js.UndefOr[BorderStyleProperty] | Null)*): Self = this.set("borderStyle", js.Array(value :_*))
+    def setBorderStartStartRadiusUndefined: Self = StObject.set(x, "borderStartStartRadius", js.undefined)
     
     @scala.inline
-    def setBorderStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderStyleProperty]]): Self = this.set("borderStyle", js.Any.fromFunction1(value))
+    def setBorderStartStartRadiusVarargs(value: ((js.UndefOr[BorderStartStartRadiusProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderStartStartRadius", js.Array(value :_*))
     
     @scala.inline
     def setBorderStyle(
       value: ResponsiveStyleValue[js.UndefOr[BorderStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderStyle: Self = this.set("borderStyle", js.undefined)
+    def setBorderStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderStyleProperty]]): Self = StObject.set(x, "borderStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderStyleNull: Self = this.set("borderStyle", null)
+    def setBorderStyleNull: Self = StObject.set(x, "borderStyle", null)
     
     @scala.inline
-    def setBorderTopVarargs(value: ((js.UndefOr[BorderTopProperty[Double | String]]) | Null)*): Self = this.set("borderTop", js.Array(value :_*))
+    def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
     @scala.inline
-    def setBorderTopFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopProperty[Double | String]]]): Self = this.set("borderTop", js.Any.fromFunction1(value))
+    def setBorderStyleVarargs(value: (js.UndefOr[BorderStyleProperty] | Null)*): Self = StObject.set(x, "borderStyle", js.Array(value :_*))
     
     @scala.inline
     def setBorderTop(
@@ -4668,38 +4645,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderTopProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderTop: Self = this.set("borderTop", js.undefined)
-    
-    @scala.inline
-    def setBorderTopNull: Self = this.set("borderTop", null)
-    
-    @scala.inline
-    def setBorderTopColorVarargs(value: (js.UndefOr[BorderTopColorProperty] | Null)*): Self = this.set("borderTopColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderTopColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopColorProperty]]): Self = this.set("borderTopColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderTopColor(
       value: ResponsiveStyleValue[js.UndefOr[BorderTopColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderTopColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderTopColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderTopColor: Self = this.set("borderTopColor", js.undefined)
+    def setBorderTopColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopColorProperty]]): Self = StObject.set(x, "borderTopColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderTopColorNull: Self = this.set("borderTopColor", null)
+    def setBorderTopColorNull: Self = StObject.set(x, "borderTopColor", null)
     
     @scala.inline
-    def setBorderTopLeftRadiusVarargs(value: ((js.UndefOr[BorderTopLeftRadiusProperty[Double | String]]) | Null)*): Self = this.set("borderTopLeftRadius", js.Array(value :_*))
+    def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
     
     @scala.inline
-    def setBorderTopLeftRadiusFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopLeftRadiusProperty[Double | String]]]
-    ): Self = this.set("borderTopLeftRadius", js.Any.fromFunction1(value))
+    def setBorderTopColorVarargs(value: (js.UndefOr[BorderTopColorProperty] | Null)*): Self = StObject.set(x, "borderTopColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderTopFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopProperty[Double | String]]]): Self = StObject.set(x, "borderTop", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBorderTopLeftRadius(
@@ -4707,21 +4673,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderTopLeftRadiusProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderTopLeftRadius", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderTopLeftRadius: Self = this.set("borderTopLeftRadius", js.undefined)
+    def setBorderTopLeftRadiusFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopLeftRadiusProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderTopLeftRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderTopLeftRadiusNull: Self = this.set("borderTopLeftRadius", null)
+    def setBorderTopLeftRadiusNull: Self = StObject.set(x, "borderTopLeftRadius", null)
     
     @scala.inline
-    def setBorderTopRightRadiusVarargs(value: ((js.UndefOr[BorderTopRightRadiusProperty[Double | String]]) | Null)*): Self = this.set("borderTopRightRadius", js.Array(value :_*))
+    def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
     
     @scala.inline
-    def setBorderTopRightRadiusFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopRightRadiusProperty[Double | String]]]
-    ): Self = this.set("borderTopRightRadius", js.Any.fromFunction1(value))
+    def setBorderTopLeftRadiusVarargs(value: ((js.UndefOr[BorderTopLeftRadiusProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderTopLeftRadius", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderTopNull: Self = StObject.set(x, "borderTop", null)
     
     @scala.inline
     def setBorderTopRightRadius(
@@ -4729,38 +4698,44 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderTopRightRadiusProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderTopRightRadius", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderTopRightRadius: Self = this.set("borderTopRightRadius", js.undefined)
+    def setBorderTopRightRadiusFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopRightRadiusProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderTopRightRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderTopRightRadiusNull: Self = this.set("borderTopRightRadius", null)
+    def setBorderTopRightRadiusNull: Self = StObject.set(x, "borderTopRightRadius", null)
     
     @scala.inline
-    def setBorderTopStyleVarargs(value: (js.UndefOr[BorderTopStyleProperty] | Null)*): Self = this.set("borderTopStyle", js.Array(value :_*))
+    def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
     
     @scala.inline
-    def setBorderTopStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopStyleProperty]]): Self = this.set("borderTopStyle", js.Any.fromFunction1(value))
+    def setBorderTopRightRadiusVarargs(value: ((js.UndefOr[BorderTopRightRadiusProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderTopRightRadius", js.Array(value :_*))
     
     @scala.inline
     def setBorderTopStyle(
       value: ResponsiveStyleValue[js.UndefOr[BorderTopStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderTopStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("borderTopStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderTopStyle: Self = this.set("borderTopStyle", js.undefined)
+    def setBorderTopStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopStyleProperty]]): Self = StObject.set(x, "borderTopStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderTopStyleNull: Self = this.set("borderTopStyle", null)
+    def setBorderTopStyleNull: Self = StObject.set(x, "borderTopStyle", null)
     
     @scala.inline
-    def setBorderTopWidthVarargs(value: ((js.UndefOr[BorderTopWidthProperty[Double | String]]) | Null)*): Self = this.set("borderTopWidth", js.Array(value :_*))
+    def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
     
     @scala.inline
-    def setBorderTopWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopWidthProperty[Double | String]]]
-    ): Self = this.set("borderTopWidth", js.Any.fromFunction1(value))
+    def setBorderTopStyleVarargs(value: (js.UndefOr[BorderTopStyleProperty] | Null)*): Self = StObject.set(x, "borderTopStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+    
+    @scala.inline
+    def setBorderTopVarargs(value: ((js.UndefOr[BorderTopProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderTop", js.Array(value :_*))
     
     @scala.inline
     def setBorderTopWidth(
@@ -4768,21 +4743,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderTopWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderTopWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderTopWidth: Self = this.set("borderTopWidth", js.undefined)
+    def setBorderTopWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderTopWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderTopWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderTopWidthNull: Self = this.set("borderTopWidth", null)
+    def setBorderTopWidthNull: Self = StObject.set(x, "borderTopWidth", null)
     
     @scala.inline
-    def setBorderWidthVarargs(value: ((js.UndefOr[BorderWidthProperty[Double | String]]) | Null)*): Self = this.set("borderWidth", js.Array(value :_*))
+    def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
     
     @scala.inline
-    def setBorderWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderWidthProperty[Double | String]]]
-    ): Self = this.set("borderWidth", js.Any.fromFunction1(value))
+    def setBorderTopWidthVarargs(value: ((js.UndefOr[BorderTopWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderTopWidth", js.Array(value :_*))
+    
+    @scala.inline
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    @scala.inline
+    def setBorderVarargs(value: ((js.UndefOr[BorderProperty[Double | String]]) | Null)*): Self = StObject.set(x, "border", js.Array(value :_*))
     
     @scala.inline
     def setBorderWidth(
@@ -4790,19 +4771,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BorderWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setBorderWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BorderWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "borderWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderWidthNull: Self = this.set("borderWidth", null)
+    def setBorderWidthNull: Self = StObject.set(x, "borderWidth", null)
     
     @scala.inline
-    def setBottomVarargs(value: ((js.UndefOr[BottomProperty[Double | String]]) | Null)*): Self = this.set("bottom", js.Array(value :_*))
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def setBottomFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BottomProperty[Double | String]]]): Self = this.set("bottom", js.Any.fromFunction1(value))
+    def setBorderWidthVarargs(value: ((js.UndefOr[BorderWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "borderWidth", js.Array(value :_*))
     
     @scala.inline
     def setBottom(
@@ -4810,42 +4793,36 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[BottomProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setBottomFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BottomProperty[Double | String]]]): Self = StObject.set(x, "bottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBottomNull: Self = this.set("bottom", null)
+    def setBottomNull: Self = StObject.set(x, "bottom", null)
     
     @scala.inline
-    def setBoxDecorationBreakVarargs(value: (js.UndefOr[BoxDecorationBreakProperty] | Null)*): Self = this.set("boxDecorationBreak", js.Array(value :_*))
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def setBoxDecorationBreakFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BoxDecorationBreakProperty]]): Self = this.set("boxDecorationBreak", js.Any.fromFunction1(value))
+    def setBottomVarargs(value: ((js.UndefOr[BottomProperty[Double | String]]) | Null)*): Self = StObject.set(x, "bottom", js.Array(value :_*))
     
     @scala.inline
     def setBoxDecorationBreak(
       value: ResponsiveStyleValue[js.UndefOr[BoxDecorationBreakProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BoxDecorationBreakProperty]]]) | SystemStyleObject
-    ): Self = this.set("boxDecorationBreak", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "boxDecorationBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxDecorationBreak: Self = this.set("boxDecorationBreak", js.undefined)
+    def setBoxDecorationBreakFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BoxDecorationBreakProperty]]): Self = StObject.set(x, "boxDecorationBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBoxDecorationBreakNull: Self = this.set("boxDecorationBreak", null)
+    def setBoxDecorationBreakNull: Self = StObject.set(x, "boxDecorationBreak", null)
     
     @scala.inline
-    def setBoxShadowVarargs(value: ((js.UndefOr[js.Any | Double]) | Null)*): Self = this.set("boxShadow", js.Array(value :_*))
+    def setBoxDecorationBreakUndefined: Self = StObject.set(x, "boxDecorationBreak", js.undefined)
     
     @scala.inline
-    def setBoxShadowFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
-          ]
-        ]
-    ): Self = this.set("boxShadow", js.Any.fromFunction1(value))
+    def setBoxDecorationBreakVarargs(value: (js.UndefOr[BoxDecorationBreakProperty] | Null)*): Self = StObject.set(x, "boxDecorationBreak", js.Array(value :_*))
     
     @scala.inline
     def setBoxShadow(
@@ -4861,291 +4838,297 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("boxShadow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxShadow: Self = this.set("boxShadow", js.undefined)
+    def setBoxShadowFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+          ]
+        ]
+    ): Self = StObject.set(x, "boxShadow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBoxShadowNull: Self = this.set("boxShadow", null)
+    def setBoxShadowNull: Self = StObject.set(x, "boxShadow", null)
     
     @scala.inline
-    def setBoxSizingVarargs(value: (js.UndefOr[BoxSizingProperty] | Null)*): Self = this.set("boxSizing", js.Array(value :_*))
+    def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
     @scala.inline
-    def setBoxSizingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BoxSizingProperty]]): Self = this.set("boxSizing", js.Any.fromFunction1(value))
+    def setBoxShadowVarargs(value: ((js.UndefOr[js.Any | Double]) | Null)*): Self = StObject.set(x, "boxShadow", js.Array(value :_*))
     
     @scala.inline
     def setBoxSizing(
       value: ResponsiveStyleValue[js.UndefOr[BoxSizingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BoxSizingProperty]]]) | SystemStyleObject
-    ): Self = this.set("boxSizing", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxSizing: Self = this.set("boxSizing", js.undefined)
+    def setBoxSizingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BoxSizingProperty]]): Self = StObject.set(x, "boxSizing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBoxSizingNull: Self = this.set("boxSizing", null)
+    def setBoxSizingNull: Self = StObject.set(x, "boxSizing", null)
     
     @scala.inline
-    def setBreakAfterVarargs(value: (js.UndefOr[BreakAfterProperty] | Null)*): Self = this.set("breakAfter", js.Array(value :_*))
+    def setBoxSizingUndefined: Self = StObject.set(x, "boxSizing", js.undefined)
     
     @scala.inline
-    def setBreakAfterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BreakAfterProperty]]): Self = this.set("breakAfter", js.Any.fromFunction1(value))
+    def setBoxSizingVarargs(value: (js.UndefOr[BoxSizingProperty] | Null)*): Self = StObject.set(x, "boxSizing", js.Array(value :_*))
     
     @scala.inline
     def setBreakAfter(
       value: ResponsiveStyleValue[js.UndefOr[BreakAfterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BreakAfterProperty]]]) | SystemStyleObject
-    ): Self = this.set("breakAfter", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "breakAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBreakAfter: Self = this.set("breakAfter", js.undefined)
+    def setBreakAfterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BreakAfterProperty]]): Self = StObject.set(x, "breakAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBreakAfterNull: Self = this.set("breakAfter", null)
+    def setBreakAfterNull: Self = StObject.set(x, "breakAfter", null)
     
     @scala.inline
-    def setBreakBeforeVarargs(value: (js.UndefOr[BreakBeforeProperty] | Null)*): Self = this.set("breakBefore", js.Array(value :_*))
+    def setBreakAfterUndefined: Self = StObject.set(x, "breakAfter", js.undefined)
     
     @scala.inline
-    def setBreakBeforeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BreakBeforeProperty]]): Self = this.set("breakBefore", js.Any.fromFunction1(value))
+    def setBreakAfterVarargs(value: (js.UndefOr[BreakAfterProperty] | Null)*): Self = StObject.set(x, "breakAfter", js.Array(value :_*))
     
     @scala.inline
     def setBreakBefore(
       value: ResponsiveStyleValue[js.UndefOr[BreakBeforeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BreakBeforeProperty]]]) | SystemStyleObject
-    ): Self = this.set("breakBefore", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "breakBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBreakBefore: Self = this.set("breakBefore", js.undefined)
+    def setBreakBeforeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BreakBeforeProperty]]): Self = StObject.set(x, "breakBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBreakBeforeNull: Self = this.set("breakBefore", null)
+    def setBreakBeforeNull: Self = StObject.set(x, "breakBefore", null)
     
     @scala.inline
-    def setBreakInsideVarargs(value: (js.UndefOr[BreakInsideProperty] | Null)*): Self = this.set("breakInside", js.Array(value :_*))
+    def setBreakBeforeUndefined: Self = StObject.set(x, "breakBefore", js.undefined)
     
     @scala.inline
-    def setBreakInsideFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BreakInsideProperty]]): Self = this.set("breakInside", js.Any.fromFunction1(value))
+    def setBreakBeforeVarargs(value: (js.UndefOr[BreakBeforeProperty] | Null)*): Self = StObject.set(x, "breakBefore", js.Array(value :_*))
     
     @scala.inline
     def setBreakInside(
       value: ResponsiveStyleValue[js.UndefOr[BreakInsideProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BreakInsideProperty]]]) | SystemStyleObject
-    ): Self = this.set("breakInside", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "breakInside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBreakInside: Self = this.set("breakInside", js.undefined)
+    def setBreakInsideFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[BreakInsideProperty]]): Self = StObject.set(x, "breakInside", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBreakInsideNull: Self = this.set("breakInside", null)
+    def setBreakInsideNull: Self = StObject.set(x, "breakInside", null)
     
     @scala.inline
-    def setCaptionSideVarargs(value: (js.UndefOr[CaptionSideProperty] | Null)*): Self = this.set("captionSide", js.Array(value :_*))
+    def setBreakInsideUndefined: Self = StObject.set(x, "breakInside", js.undefined)
     
     @scala.inline
-    def setCaptionSideFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CaptionSideProperty]]): Self = this.set("captionSide", js.Any.fromFunction1(value))
+    def setBreakInsideVarargs(value: (js.UndefOr[BreakInsideProperty] | Null)*): Self = StObject.set(x, "breakInside", js.Array(value :_*))
     
     @scala.inline
     def setCaptionSide(
       value: ResponsiveStyleValue[js.UndefOr[CaptionSideProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CaptionSideProperty]]]) | SystemStyleObject
-    ): Self = this.set("captionSide", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "captionSide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaptionSide: Self = this.set("captionSide", js.undefined)
+    def setCaptionSideFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CaptionSideProperty]]): Self = StObject.set(x, "captionSide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaptionSideNull: Self = this.set("captionSide", null)
+    def setCaptionSideNull: Self = StObject.set(x, "captionSide", null)
     
     @scala.inline
-    def setCaretColorVarargs(value: (js.UndefOr[CaretColorProperty] | Null)*): Self = this.set("caretColor", js.Array(value :_*))
+    def setCaptionSideUndefined: Self = StObject.set(x, "captionSide", js.undefined)
     
     @scala.inline
-    def setCaretColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CaretColorProperty]]): Self = this.set("caretColor", js.Any.fromFunction1(value))
+    def setCaptionSideVarargs(value: (js.UndefOr[CaptionSideProperty] | Null)*): Self = StObject.set(x, "captionSide", js.Array(value :_*))
     
     @scala.inline
     def setCaretColor(
       value: ResponsiveStyleValue[js.UndefOr[CaretColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CaretColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("caretColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaretColor: Self = this.set("caretColor", js.undefined)
+    def setCaretColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CaretColorProperty]]): Self = StObject.set(x, "caretColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaretColorNull: Self = this.set("caretColor", null)
+    def setCaretColorNull: Self = StObject.set(x, "caretColor", null)
     
     @scala.inline
-    def setClearVarargs(value: (js.UndefOr[ClearProperty] | Null)*): Self = this.set("clear", js.Array(value :_*))
+    def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
     
     @scala.inline
-    def setClearFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ClearProperty]]): Self = this.set("clear", js.Any.fromFunction1(value))
+    def setCaretColorVarargs(value: (js.UndefOr[CaretColorProperty] | Null)*): Self = StObject.set(x, "caretColor", js.Array(value :_*))
     
     @scala.inline
     def setClear(
       value: ResponsiveStyleValue[js.UndefOr[ClearProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ClearProperty]]]) | SystemStyleObject
-    ): Self = this.set("clear", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setClearFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ClearProperty]]): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearNull: Self = this.set("clear", null)
+    def setClearNull: Self = StObject.set(x, "clear", null)
     
     @scala.inline
-    def setClipVarargs(value: (js.UndefOr[ClipProperty] | Null)*): Self = this.set("clip", js.Array(value :_*))
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def setClipFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ClipProperty]]): Self = this.set("clip", js.Any.fromFunction1(value))
+    def setClearVarargs(value: (js.UndefOr[ClearProperty] | Null)*): Self = StObject.set(x, "clear", js.Array(value :_*))
     
     @scala.inline
     def setClip(
       value: ResponsiveStyleValue[js.UndefOr[ClipProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ClipProperty]]]) | SystemStyleObject
-    ): Self = this.set("clip", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClip: Self = this.set("clip", js.undefined)
+    def setClipFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ClipProperty]]): Self = StObject.set(x, "clip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClipNull: Self = this.set("clip", null)
-    
-    @scala.inline
-    def setClipPathVarargs(value: (js.UndefOr[ClipPathProperty] | Null)*): Self = this.set("clipPath", js.Array(value :_*))
-    
-    @scala.inline
-    def setClipPathFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ClipPathProperty]]): Self = this.set("clipPath", js.Any.fromFunction1(value))
+    def setClipNull: Self = StObject.set(x, "clip", null)
     
     @scala.inline
     def setClipPath(
       value: ResponsiveStyleValue[js.UndefOr[ClipPathProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ClipPathProperty]]]) | SystemStyleObject
-    ): Self = this.set("clipPath", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClipPath: Self = this.set("clipPath", js.undefined)
+    def setClipPathFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ClipPathProperty]]): Self = StObject.set(x, "clipPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClipPathNull: Self = this.set("clipPath", null)
+    def setClipPathNull: Self = StObject.set(x, "clipPath", null)
     
     @scala.inline
-    def setClipRuleVarargs(value: (js.UndefOr[ClipRuleProperty] | Null)*): Self = this.set("clipRule", js.Array(value :_*))
+    def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
     
     @scala.inline
-    def setClipRuleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ClipRuleProperty]]): Self = this.set("clipRule", js.Any.fromFunction1(value))
+    def setClipPathVarargs(value: (js.UndefOr[ClipPathProperty] | Null)*): Self = StObject.set(x, "clipPath", js.Array(value :_*))
     
     @scala.inline
     def setClipRule(
       value: ResponsiveStyleValue[js.UndefOr[ClipRuleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ClipRuleProperty]]]) | SystemStyleObject
-    ): Self = this.set("clipRule", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClipRule: Self = this.set("clipRule", js.undefined)
+    def setClipRuleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ClipRuleProperty]]): Self = StObject.set(x, "clipRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClipRuleNull: Self = this.set("clipRule", null)
+    def setClipRuleNull: Self = StObject.set(x, "clipRule", null)
     
     @scala.inline
-    def setColorVarargs(value: (js.UndefOr[ColorProperty] | Null)*): Self = this.set("color", js.Array(value :_*))
+    def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
     
     @scala.inline
-    def setColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColorProperty]]): Self = this.set("color", js.Any.fromFunction1(value))
+    def setClipRuleVarargs(value: (js.UndefOr[ClipRuleProperty] | Null)*): Self = StObject.set(x, "clipRule", js.Array(value :_*))
+    
+    @scala.inline
+    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    
+    @scala.inline
+    def setClipVarargs(value: (js.UndefOr[ClipProperty] | Null)*): Self = StObject.set(x, "clip", js.Array(value :_*))
     
     @scala.inline
     def setColor(
       value: ResponsiveStyleValue[js.UndefOr[ColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
-    
-    @scala.inline
-    def setColorNull: Self = this.set("color", null)
-    
-    @scala.inline
-    def setColorAdjustVarargs(value: (js.UndefOr[ColorAdjustProperty] | Null)*): Self = this.set("colorAdjust", js.Array(value :_*))
-    
-    @scala.inline
-    def setColorAdjustFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColorAdjustProperty]]): Self = this.set("colorAdjust", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColorAdjust(
       value: ResponsiveStyleValue[js.UndefOr[ColorAdjustProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColorAdjustProperty]]]) | SystemStyleObject
-    ): Self = this.set("colorAdjust", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "colorAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorAdjust: Self = this.set("colorAdjust", js.undefined)
+    def setColorAdjustFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColorAdjustProperty]]): Self = StObject.set(x, "colorAdjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColorAdjustNull: Self = this.set("colorAdjust", null)
+    def setColorAdjustNull: Self = StObject.set(x, "colorAdjust", null)
     
     @scala.inline
-    def setColorInterpolationVarargs(value: (js.UndefOr[ColorInterpolationProperty] | Null)*): Self = this.set("colorInterpolation", js.Array(value :_*))
+    def setColorAdjustUndefined: Self = StObject.set(x, "colorAdjust", js.undefined)
     
     @scala.inline
-    def setColorInterpolationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColorInterpolationProperty]]): Self = this.set("colorInterpolation", js.Any.fromFunction1(value))
+    def setColorAdjustVarargs(value: (js.UndefOr[ColorAdjustProperty] | Null)*): Self = StObject.set(x, "colorAdjust", js.Array(value :_*))
+    
+    @scala.inline
+    def setColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColorProperty]]): Self = StObject.set(x, "color", js.Any.fromFunction1(value))
     
     @scala.inline
     def setColorInterpolation(
       value: ResponsiveStyleValue[js.UndefOr[ColorInterpolationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColorInterpolationProperty]]]) | SystemStyleObject
-    ): Self = this.set("colorInterpolation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorInterpolation: Self = this.set("colorInterpolation", js.undefined)
+    def setColorInterpolationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColorInterpolationProperty]]): Self = StObject.set(x, "colorInterpolation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColorInterpolationNull: Self = this.set("colorInterpolation", null)
+    def setColorInterpolationNull: Self = StObject.set(x, "colorInterpolation", null)
     
     @scala.inline
-    def setColorRenderingVarargs(value: (js.UndefOr[ColorRenderingProperty] | Null)*): Self = this.set("colorRendering", js.Array(value :_*))
+    def setColorInterpolationUndefined: Self = StObject.set(x, "colorInterpolation", js.undefined)
     
     @scala.inline
-    def setColorRenderingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColorRenderingProperty]]): Self = this.set("colorRendering", js.Any.fromFunction1(value))
+    def setColorInterpolationVarargs(value: (js.UndefOr[ColorInterpolationProperty] | Null)*): Self = StObject.set(x, "colorInterpolation", js.Array(value :_*))
+    
+    @scala.inline
+    def setColorNull: Self = StObject.set(x, "color", null)
     
     @scala.inline
     def setColorRendering(
       value: ResponsiveStyleValue[js.UndefOr[ColorRenderingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColorRenderingProperty]]]) | SystemStyleObject
-    ): Self = this.set("colorRendering", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "colorRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorRendering: Self = this.set("colorRendering", js.undefined)
+    def setColorRenderingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColorRenderingProperty]]): Self = StObject.set(x, "colorRendering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColorRenderingNull: Self = this.set("colorRendering", null)
+    def setColorRenderingNull: Self = StObject.set(x, "colorRendering", null)
     
     @scala.inline
-    def setColumnCountVarargs(value: (js.UndefOr[ColumnCountProperty] | Null)*): Self = this.set("columnCount", js.Array(value :_*))
+    def setColorRenderingUndefined: Self = StObject.set(x, "colorRendering", js.undefined)
     
     @scala.inline
-    def setColumnCountFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnCountProperty]]): Self = this.set("columnCount", js.Any.fromFunction1(value))
+    def setColorRenderingVarargs(value: (js.UndefOr[ColorRenderingProperty] | Null)*): Self = StObject.set(x, "colorRendering", js.Array(value :_*))
+    
+    @scala.inline
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    @scala.inline
+    def setColorVarargs(value: (js.UndefOr[ColorProperty] | Null)*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
     def setColumnCount(
       value: ResponsiveStyleValue[js.UndefOr[ColumnCountProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColumnCountProperty]]]) | SystemStyleObject
-    ): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    def setColumnCountFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnCountProperty]]): Self = StObject.set(x, "columnCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnCountNull: Self = this.set("columnCount", null)
+    def setColumnCountNull: Self = StObject.set(x, "columnCount", null)
     
     @scala.inline
-    def setColumnFillVarargs(value: (js.UndefOr[ColumnFillProperty] | Null)*): Self = this.set("columnFill", js.Array(value :_*))
+    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
     @scala.inline
-    def setColumnFillFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnFillProperty]]): Self = this.set("columnFill", js.Any.fromFunction1(value))
+    def setColumnCountVarargs(value: (js.UndefOr[ColumnCountProperty] | Null)*): Self = StObject.set(x, "columnCount", js.Array(value :_*))
     
     @scala.inline
     def setColumnFill(
       value: ResponsiveStyleValue[js.UndefOr[ColumnFillProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColumnFillProperty]]]) | SystemStyleObject
-    ): Self = this.set("columnFill", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columnFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnFill: Self = this.set("columnFill", js.undefined)
+    def setColumnFillFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnFillProperty]]): Self = StObject.set(x, "columnFill", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnFillNull: Self = this.set("columnFill", null)
+    def setColumnFillNull: Self = StObject.set(x, "columnFill", null)
     
     @scala.inline
-    def setColumnGapVarargs(value: ((js.UndefOr[ColumnGapProperty[Double | String]]) | Null)*): Self = this.set("columnGap", js.Array(value :_*))
+    def setColumnFillUndefined: Self = StObject.set(x, "columnFill", js.undefined)
     
     @scala.inline
-    def setColumnGapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnGapProperty[Double | String]]]): Self = this.set("columnGap", js.Any.fromFunction1(value))
+    def setColumnFillVarargs(value: (js.UndefOr[ColumnFillProperty] | Null)*): Self = StObject.set(x, "columnFill", js.Array(value :_*))
     
     @scala.inline
     def setColumnGap(
@@ -5153,19 +5136,19 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ColumnGapProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("columnGap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnGap: Self = this.set("columnGap", js.undefined)
+    def setColumnGapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnGapProperty[Double | String]]]): Self = StObject.set(x, "columnGap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnGapNull: Self = this.set("columnGap", null)
+    def setColumnGapNull: Self = StObject.set(x, "columnGap", null)
     
     @scala.inline
-    def setColumnRuleVarargs(value: ((js.UndefOr[ColumnRuleProperty[Double | String]]) | Null)*): Self = this.set("columnRule", js.Array(value :_*))
+    def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
     
     @scala.inline
-    def setColumnRuleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnRuleProperty[Double | String]]]): Self = this.set("columnRule", js.Any.fromFunction1(value))
+    def setColumnGapVarargs(value: ((js.UndefOr[ColumnGapProperty[Double | String]]) | Null)*): Self = StObject.set(x, "columnGap", js.Array(value :_*))
     
     @scala.inline
     def setColumnRule(
@@ -5173,55 +5156,53 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ColumnRuleProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("columnRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnRule: Self = this.set("columnRule", js.undefined)
-    
-    @scala.inline
-    def setColumnRuleNull: Self = this.set("columnRule", null)
-    
-    @scala.inline
-    def setColumnRuleColorVarargs(value: (js.UndefOr[ColumnRuleColorProperty] | Null)*): Self = this.set("columnRuleColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setColumnRuleColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnRuleColorProperty]]): Self = this.set("columnRuleColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnRuleColor(
       value: ResponsiveStyleValue[js.UndefOr[ColumnRuleColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColumnRuleColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("columnRuleColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columnRuleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnRuleColor: Self = this.set("columnRuleColor", js.undefined)
+    def setColumnRuleColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnRuleColorProperty]]): Self = StObject.set(x, "columnRuleColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnRuleColorNull: Self = this.set("columnRuleColor", null)
+    def setColumnRuleColorNull: Self = StObject.set(x, "columnRuleColor", null)
     
     @scala.inline
-    def setColumnRuleStyleVarargs(value: (js.UndefOr[ColumnRuleStyleProperty] | Null)*): Self = this.set("columnRuleStyle", js.Array(value :_*))
+    def setColumnRuleColorUndefined: Self = StObject.set(x, "columnRuleColor", js.undefined)
     
     @scala.inline
-    def setColumnRuleStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnRuleStyleProperty]]): Self = this.set("columnRuleStyle", js.Any.fromFunction1(value))
+    def setColumnRuleColorVarargs(value: (js.UndefOr[ColumnRuleColorProperty] | Null)*): Self = StObject.set(x, "columnRuleColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setColumnRuleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnRuleProperty[Double | String]]]): Self = StObject.set(x, "columnRule", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setColumnRuleNull: Self = StObject.set(x, "columnRule", null)
     
     @scala.inline
     def setColumnRuleStyle(
       value: ResponsiveStyleValue[js.UndefOr[ColumnRuleStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColumnRuleStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("columnRuleStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columnRuleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnRuleStyle: Self = this.set("columnRuleStyle", js.undefined)
+    def setColumnRuleStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnRuleStyleProperty]]): Self = StObject.set(x, "columnRuleStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnRuleStyleNull: Self = this.set("columnRuleStyle", null)
+    def setColumnRuleStyleNull: Self = StObject.set(x, "columnRuleStyle", null)
     
     @scala.inline
-    def setColumnRuleWidthVarargs(value: ((js.UndefOr[ColumnRuleWidthProperty[Double | String]]) | Null)*): Self = this.set("columnRuleWidth", js.Array(value :_*))
+    def setColumnRuleStyleUndefined: Self = StObject.set(x, "columnRuleStyle", js.undefined)
     
     @scala.inline
-    def setColumnRuleWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnRuleWidthProperty[Double | String]]]
-    ): Self = this.set("columnRuleWidth", js.Any.fromFunction1(value))
+    def setColumnRuleStyleVarargs(value: (js.UndefOr[ColumnRuleStyleProperty] | Null)*): Self = StObject.set(x, "columnRuleStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setColumnRuleUndefined: Self = StObject.set(x, "columnRule", js.undefined)
+    
+    @scala.inline
+    def setColumnRuleVarargs(value: ((js.UndefOr[ColumnRuleProperty[Double | String]]) | Null)*): Self = StObject.set(x, "columnRule", js.Array(value :_*))
     
     @scala.inline
     def setColumnRuleWidth(
@@ -5229,38 +5210,38 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ColumnRuleWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("columnRuleWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columnRuleWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnRuleWidth: Self = this.set("columnRuleWidth", js.undefined)
+    def setColumnRuleWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnRuleWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "columnRuleWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnRuleWidthNull: Self = this.set("columnRuleWidth", null)
+    def setColumnRuleWidthNull: Self = StObject.set(x, "columnRuleWidth", null)
     
     @scala.inline
-    def setColumnSpanVarargs(value: (js.UndefOr[ColumnSpanProperty] | Null)*): Self = this.set("columnSpan", js.Array(value :_*))
+    def setColumnRuleWidthUndefined: Self = StObject.set(x, "columnRuleWidth", js.undefined)
     
     @scala.inline
-    def setColumnSpanFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnSpanProperty]]): Self = this.set("columnSpan", js.Any.fromFunction1(value))
+    def setColumnRuleWidthVarargs(value: ((js.UndefOr[ColumnRuleWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "columnRuleWidth", js.Array(value :_*))
     
     @scala.inline
     def setColumnSpan(
       value: ResponsiveStyleValue[js.UndefOr[ColumnSpanProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColumnSpanProperty]]]) | SystemStyleObject
-    ): Self = this.set("columnSpan", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnSpan: Self = this.set("columnSpan", js.undefined)
+    def setColumnSpanFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnSpanProperty]]): Self = StObject.set(x, "columnSpan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnSpanNull: Self = this.set("columnSpan", null)
+    def setColumnSpanNull: Self = StObject.set(x, "columnSpan", null)
     
     @scala.inline
-    def setColumnWidthVarargs(value: ((js.UndefOr[ColumnWidthProperty[Double | String]]) | Null)*): Self = this.set("columnWidth", js.Array(value :_*))
+    def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
     
     @scala.inline
-    def setColumnWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnWidthProperty[Double | String]]]
-    ): Self = this.set("columnWidth", js.Any.fromFunction1(value))
+    def setColumnSpanVarargs(value: (js.UndefOr[ColumnSpanProperty] | Null)*): Self = StObject.set(x, "columnSpan", js.Array(value :_*))
     
     @scala.inline
     def setColumnWidth(
@@ -5268,19 +5249,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ColumnWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    def setColumnWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "columnWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnWidthNull: Self = this.set("columnWidth", null)
+    def setColumnWidthNull: Self = StObject.set(x, "columnWidth", null)
     
     @scala.inline
-    def setColumnsVarargs(value: ((js.UndefOr[ColumnsProperty[Double | String]]) | Null)*): Self = this.set("columns", js.Array(value :_*))
+    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
     @scala.inline
-    def setColumnsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnsProperty[Double | String]]]): Self = this.set("columns", js.Any.fromFunction1(value))
+    def setColumnWidthVarargs(value: ((js.UndefOr[ColumnWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "columnWidth", js.Array(value :_*))
     
     @scala.inline
     def setColumns(
@@ -5288,257 +5271,257 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ColumnsProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("columns", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setColumnsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ColumnsProperty[Double | String]]]): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnsNull: Self = this.set("columns", null)
+    def setColumnsNull: Self = StObject.set(x, "columns", null)
     
     @scala.inline
-    def setContainVarargs(value: (js.UndefOr[ContainProperty] | Null)*): Self = this.set("contain", js.Array(value :_*))
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def setContainFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ContainProperty]]): Self = this.set("contain", js.Any.fromFunction1(value))
+    def setColumnsVarargs(value: ((js.UndefOr[ColumnsProperty[Double | String]]) | Null)*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
     def setContain(
       value: ResponsiveStyleValue[js.UndefOr[ContainProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ContainProperty]]]) | SystemStyleObject
-    ): Self = this.set("contain", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContain: Self = this.set("contain", js.undefined)
+    def setContainFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ContainProperty]]): Self = StObject.set(x, "contain", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainNull: Self = this.set("contain", null)
+    def setContainNull: Self = StObject.set(x, "contain", null)
     
     @scala.inline
-    def setContentVarargs(value: (js.UndefOr[ContentProperty] | Null)*): Self = this.set("content", js.Array(value :_*))
+    def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
     
     @scala.inline
-    def setContentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ContentProperty]]): Self = this.set("content", js.Any.fromFunction1(value))
+    def setContainVarargs(value: (js.UndefOr[ContainProperty] | Null)*): Self = StObject.set(x, "contain", js.Array(value :_*))
     
     @scala.inline
     def setContent(
       value: ResponsiveStyleValue[js.UndefOr[ContentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ContentProperty]]]) | SystemStyleObject
-    ): Self = this.set("content", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setContentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ContentProperty]]): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContentNull: Self = this.set("content", null)
+    def setContentNull: Self = StObject.set(x, "content", null)
     
     @scala.inline
-    def setCounterIncrementVarargs(value: (js.UndefOr[CounterIncrementProperty] | Null)*): Self = this.set("counterIncrement", js.Array(value :_*))
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setCounterIncrementFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CounterIncrementProperty]]): Self = this.set("counterIncrement", js.Any.fromFunction1(value))
+    def setContentVarargs(value: (js.UndefOr[ContentProperty] | Null)*): Self = StObject.set(x, "content", js.Array(value :_*))
     
     @scala.inline
     def setCounterIncrement(
       value: ResponsiveStyleValue[js.UndefOr[CounterIncrementProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CounterIncrementProperty]]]) | SystemStyleObject
-    ): Self = this.set("counterIncrement", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCounterIncrement: Self = this.set("counterIncrement", js.undefined)
+    def setCounterIncrementFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CounterIncrementProperty]]): Self = StObject.set(x, "counterIncrement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCounterIncrementNull: Self = this.set("counterIncrement", null)
+    def setCounterIncrementNull: Self = StObject.set(x, "counterIncrement", null)
     
     @scala.inline
-    def setCounterResetVarargs(value: (js.UndefOr[CounterResetProperty] | Null)*): Self = this.set("counterReset", js.Array(value :_*))
+    def setCounterIncrementUndefined: Self = StObject.set(x, "counterIncrement", js.undefined)
     
     @scala.inline
-    def setCounterResetFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CounterResetProperty]]): Self = this.set("counterReset", js.Any.fromFunction1(value))
+    def setCounterIncrementVarargs(value: (js.UndefOr[CounterIncrementProperty] | Null)*): Self = StObject.set(x, "counterIncrement", js.Array(value :_*))
     
     @scala.inline
     def setCounterReset(
       value: ResponsiveStyleValue[js.UndefOr[CounterResetProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CounterResetProperty]]]) | SystemStyleObject
-    ): Self = this.set("counterReset", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "counterReset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCounterReset: Self = this.set("counterReset", js.undefined)
+    def setCounterResetFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CounterResetProperty]]): Self = StObject.set(x, "counterReset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCounterResetNull: Self = this.set("counterReset", null)
+    def setCounterResetNull: Self = StObject.set(x, "counterReset", null)
     
     @scala.inline
-    def setCounterSetVarargs(value: (js.UndefOr[CounterSetProperty] | Null)*): Self = this.set("counterSet", js.Array(value :_*))
+    def setCounterResetUndefined: Self = StObject.set(x, "counterReset", js.undefined)
     
     @scala.inline
-    def setCounterSetFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CounterSetProperty]]): Self = this.set("counterSet", js.Any.fromFunction1(value))
+    def setCounterResetVarargs(value: (js.UndefOr[CounterResetProperty] | Null)*): Self = StObject.set(x, "counterReset", js.Array(value :_*))
     
     @scala.inline
     def setCounterSet(
       value: ResponsiveStyleValue[js.UndefOr[CounterSetProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CounterSetProperty]]]) | SystemStyleObject
-    ): Self = this.set("counterSet", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "counterSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCounterSet: Self = this.set("counterSet", js.undefined)
+    def setCounterSetFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CounterSetProperty]]): Self = StObject.set(x, "counterSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCounterSetNull: Self = this.set("counterSet", null)
+    def setCounterSetNull: Self = StObject.set(x, "counterSet", null)
     
     @scala.inline
-    def setCursorVarargs(value: (js.UndefOr[CursorProperty] | Null)*): Self = this.set("cursor", js.Array(value :_*))
+    def setCounterSetUndefined: Self = StObject.set(x, "counterSet", js.undefined)
     
     @scala.inline
-    def setCursorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CursorProperty]]): Self = this.set("cursor", js.Any.fromFunction1(value))
+    def setCounterSetVarargs(value: (js.UndefOr[CounterSetProperty] | Null)*): Self = StObject.set(x, "counterSet", js.Array(value :_*))
     
     @scala.inline
     def setCursor(
       value: ResponsiveStyleValue[js.UndefOr[CursorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CursorProperty]]]) | SystemStyleObject
-    ): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setCursorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[CursorProperty]]): Self = StObject.set(x, "cursor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCursorNull: Self = this.set("cursor", null)
+    def setCursorNull: Self = StObject.set(x, "cursor", null)
     
     @scala.inline
-    def setDirectionVarargs(value: (js.UndefOr[DirectionProperty] | Null)*): Self = this.set("direction", js.Array(value :_*))
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def setDirectionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[DirectionProperty]]): Self = this.set("direction", js.Any.fromFunction1(value))
+    def setCursorVarargs(value: (js.UndefOr[CursorProperty] | Null)*): Self = StObject.set(x, "cursor", js.Array(value :_*))
     
     @scala.inline
     def setDirection(
       value: ResponsiveStyleValue[js.UndefOr[DirectionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[DirectionProperty]]]) | SystemStyleObject
-    ): Self = this.set("direction", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setDirectionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[DirectionProperty]]): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirectionNull: Self = this.set("direction", null)
+    def setDirectionNull: Self = StObject.set(x, "direction", null)
     
     @scala.inline
-    def setDisplayVarargs(value: (js.UndefOr[DisplayProperty] | Null)*): Self = this.set("display", js.Array(value :_*))
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setDisplayFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[DisplayProperty]]): Self = this.set("display", js.Any.fromFunction1(value))
+    def setDirectionVarargs(value: (js.UndefOr[DirectionProperty] | Null)*): Self = StObject.set(x, "direction", js.Array(value :_*))
     
     @scala.inline
     def setDisplay(
       value: ResponsiveStyleValue[js.UndefOr[DisplayProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[DisplayProperty]]]) | SystemStyleObject
-    ): Self = this.set("display", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setDisplayFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[DisplayProperty]]): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisplayNull: Self = this.set("display", null)
+    def setDisplayNull: Self = StObject.set(x, "display", null)
     
     @scala.inline
-    def setDominantBaselineVarargs(value: (js.UndefOr[DominantBaselineProperty] | Null)*): Self = this.set("dominantBaseline", js.Array(value :_*))
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def setDominantBaselineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[DominantBaselineProperty]]): Self = this.set("dominantBaseline", js.Any.fromFunction1(value))
+    def setDisplayVarargs(value: (js.UndefOr[DisplayProperty] | Null)*): Self = StObject.set(x, "display", js.Array(value :_*))
     
     @scala.inline
     def setDominantBaseline(
       value: ResponsiveStyleValue[js.UndefOr[DominantBaselineProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[DominantBaselineProperty]]]) | SystemStyleObject
-    ): Self = this.set("dominantBaseline", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dominantBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDominantBaseline: Self = this.set("dominantBaseline", js.undefined)
+    def setDominantBaselineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[DominantBaselineProperty]]): Self = StObject.set(x, "dominantBaseline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDominantBaselineNull: Self = this.set("dominantBaseline", null)
+    def setDominantBaselineNull: Self = StObject.set(x, "dominantBaseline", null)
     
     @scala.inline
-    def setEmptyCellsVarargs(value: (js.UndefOr[EmptyCellsProperty] | Null)*): Self = this.set("emptyCells", js.Array(value :_*))
+    def setDominantBaselineUndefined: Self = StObject.set(x, "dominantBaseline", js.undefined)
     
     @scala.inline
-    def setEmptyCellsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[EmptyCellsProperty]]): Self = this.set("emptyCells", js.Any.fromFunction1(value))
+    def setDominantBaselineVarargs(value: (js.UndefOr[DominantBaselineProperty] | Null)*): Self = StObject.set(x, "dominantBaseline", js.Array(value :_*))
     
     @scala.inline
     def setEmptyCells(
       value: ResponsiveStyleValue[js.UndefOr[EmptyCellsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[EmptyCellsProperty]]]) | SystemStyleObject
-    ): Self = this.set("emptyCells", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "emptyCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmptyCells: Self = this.set("emptyCells", js.undefined)
+    def setEmptyCellsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[EmptyCellsProperty]]): Self = StObject.set(x, "emptyCells", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEmptyCellsNull: Self = this.set("emptyCells", null)
+    def setEmptyCellsNull: Self = StObject.set(x, "emptyCells", null)
     
     @scala.inline
-    def setFillVarargs(value: (js.UndefOr[FillProperty] | Null)*): Self = this.set("fill", js.Array(value :_*))
+    def setEmptyCellsUndefined: Self = StObject.set(x, "emptyCells", js.undefined)
     
     @scala.inline
-    def setFillFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FillProperty]]): Self = this.set("fill", js.Any.fromFunction1(value))
+    def setEmptyCellsVarargs(value: (js.UndefOr[EmptyCellsProperty] | Null)*): Self = StObject.set(x, "emptyCells", js.Array(value :_*))
     
     @scala.inline
     def setFill(
       value: ResponsiveStyleValue[js.UndefOr[FillProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FillProperty]]]) | SystemStyleObject
-    ): Self = this.set("fill", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setFillFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FillProperty]]): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFillNull: Self = this.set("fill", null)
-    
-    @scala.inline
-    def setFillOpacityVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = this.set("fillOpacity", js.Array(value :_*))
-    
-    @scala.inline
-    def setFillOpacityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = this.set("fillOpacity", js.Any.fromFunction1(value))
+    def setFillNull: Self = StObject.set(x, "fill", null)
     
     @scala.inline
     def setFillOpacity(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-    ): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    def setFillOpacityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = StObject.set(x, "fillOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFillOpacityNull: Self = this.set("fillOpacity", null)
+    def setFillOpacityNull: Self = StObject.set(x, "fillOpacity", null)
     
     @scala.inline
-    def setFillRuleVarargs(value: (js.UndefOr[FillRuleProperty] | Null)*): Self = this.set("fillRule", js.Array(value :_*))
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def setFillRuleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FillRuleProperty]]): Self = this.set("fillRule", js.Any.fromFunction1(value))
+    def setFillOpacityVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = StObject.set(x, "fillOpacity", js.Array(value :_*))
     
     @scala.inline
     def setFillRule(
       value: ResponsiveStyleValue[js.UndefOr[FillRuleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FillRuleProperty]]]) | SystemStyleObject
-    ): Self = this.set("fillRule", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFillRule: Self = this.set("fillRule", js.undefined)
+    def setFillRuleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FillRuleProperty]]): Self = StObject.set(x, "fillRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFillRuleNull: Self = this.set("fillRule", null)
+    def setFillRuleNull: Self = StObject.set(x, "fillRule", null)
     
     @scala.inline
-    def setFilterVarargs(value: (js.UndefOr[FilterProperty] | Null)*): Self = this.set("filter", js.Array(value :_*))
+    def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
     
     @scala.inline
-    def setFilterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FilterProperty]]): Self = this.set("filter", js.Any.fromFunction1(value))
+    def setFillRuleVarargs(value: (js.UndefOr[FillRuleProperty] | Null)*): Self = StObject.set(x, "fillRule", js.Array(value :_*))
+    
+    @scala.inline
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    @scala.inline
+    def setFillVarargs(value: (js.UndefOr[FillProperty] | Null)*): Self = StObject.set(x, "fill", js.Array(value :_*))
     
     @scala.inline
     def setFilter(
       value: ResponsiveStyleValue[js.UndefOr[FilterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FilterProperty]]]) | SystemStyleObject
-    ): Self = this.set("filter", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FilterProperty]]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilterNull: Self = this.set("filter", null)
+    def setFilterNull: Self = StObject.set(x, "filter", null)
     
     @scala.inline
-    def setFlexVarargs(value: ((js.UndefOr[FlexProperty[Double | String]]) | Null)*): Self = this.set("flex", js.Array(value :_*))
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setFlexFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FlexProperty[Double | String]]]): Self = this.set("flex", js.Any.fromFunction1(value))
+    def setFilterVarargs(value: (js.UndefOr[FilterProperty] | Null)*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
     @scala.inline
     def setFlex(
@@ -5546,19 +5529,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[FlexProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("flex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlex: Self = this.set("flex", js.undefined)
-    
-    @scala.inline
-    def setFlexNull: Self = this.set("flex", null)
-    
-    @scala.inline
-    def setFlexBasisVarargs(value: ((js.UndefOr[FlexBasisProperty[Double | String]]) | Null)*): Self = this.set("flexBasis", js.Array(value :_*))
-    
-    @scala.inline
-    def setFlexBasisFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FlexBasisProperty[Double | String]]]): Self = this.set("flexBasis", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFlexBasis(
@@ -5566,257 +5537,263 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[FlexBasisProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("flexBasis", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlexBasis: Self = this.set("flexBasis", js.undefined)
+    def setFlexBasisFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FlexBasisProperty[Double | String]]]): Self = StObject.set(x, "flexBasis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlexBasisNull: Self = this.set("flexBasis", null)
+    def setFlexBasisNull: Self = StObject.set(x, "flexBasis", null)
     
     @scala.inline
-    def setFlexDirectionVarargs(value: (js.UndefOr[FlexDirectionProperty] | Null)*): Self = this.set("flexDirection", js.Array(value :_*))
+    def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
     
     @scala.inline
-    def setFlexDirectionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FlexDirectionProperty]]): Self = this.set("flexDirection", js.Any.fromFunction1(value))
+    def setFlexBasisVarargs(value: ((js.UndefOr[FlexBasisProperty[Double | String]]) | Null)*): Self = StObject.set(x, "flexBasis", js.Array(value :_*))
     
     @scala.inline
     def setFlexDirection(
       value: ResponsiveStyleValue[js.UndefOr[FlexDirectionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FlexDirectionProperty]]]) | SystemStyleObject
-    ): Self = this.set("flexDirection", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlexDirection: Self = this.set("flexDirection", js.undefined)
+    def setFlexDirectionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FlexDirectionProperty]]): Self = StObject.set(x, "flexDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlexDirectionNull: Self = this.set("flexDirection", null)
+    def setFlexDirectionNull: Self = StObject.set(x, "flexDirection", null)
     
     @scala.inline
-    def setFlexFlowVarargs(value: (js.UndefOr[FlexFlowProperty] | Null)*): Self = this.set("flexFlow", js.Array(value :_*))
+    def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
     
     @scala.inline
-    def setFlexFlowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FlexFlowProperty]]): Self = this.set("flexFlow", js.Any.fromFunction1(value))
+    def setFlexDirectionVarargs(value: (js.UndefOr[FlexDirectionProperty] | Null)*): Self = StObject.set(x, "flexDirection", js.Array(value :_*))
     
     @scala.inline
     def setFlexFlow(
       value: ResponsiveStyleValue[js.UndefOr[FlexFlowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FlexFlowProperty]]]) | SystemStyleObject
-    ): Self = this.set("flexFlow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlexFlow: Self = this.set("flexFlow", js.undefined)
+    def setFlexFlowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FlexFlowProperty]]): Self = StObject.set(x, "flexFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlexFlowNull: Self = this.set("flexFlow", null)
+    def setFlexFlowNull: Self = StObject.set(x, "flexFlow", null)
     
     @scala.inline
-    def setFlexGrowVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = this.set("flexGrow", js.Array(value :_*))
+    def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
     
     @scala.inline
-    def setFlexGrowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = this.set("flexGrow", js.Any.fromFunction1(value))
+    def setFlexFlowVarargs(value: (js.UndefOr[FlexFlowProperty] | Null)*): Self = StObject.set(x, "flexFlow", js.Array(value :_*))
+    
+    @scala.inline
+    def setFlexFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FlexProperty[Double | String]]]): Self = StObject.set(x, "flex", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFlexGrow(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-    ): Self = this.set("flexGrow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlexGrow: Self = this.set("flexGrow", js.undefined)
+    def setFlexGrowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = StObject.set(x, "flexGrow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlexGrowNull: Self = this.set("flexGrow", null)
+    def setFlexGrowNull: Self = StObject.set(x, "flexGrow", null)
     
     @scala.inline
-    def setFlexShrinkVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = this.set("flexShrink", js.Array(value :_*))
+    def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
     
     @scala.inline
-    def setFlexShrinkFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = this.set("flexShrink", js.Any.fromFunction1(value))
+    def setFlexGrowVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = StObject.set(x, "flexGrow", js.Array(value :_*))
+    
+    @scala.inline
+    def setFlexNull: Self = StObject.set(x, "flex", null)
     
     @scala.inline
     def setFlexShrink(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-    ): Self = this.set("flexShrink", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlexShrink: Self = this.set("flexShrink", js.undefined)
+    def setFlexShrinkFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = StObject.set(x, "flexShrink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlexShrinkNull: Self = this.set("flexShrink", null)
+    def setFlexShrinkNull: Self = StObject.set(x, "flexShrink", null)
     
     @scala.inline
-    def setFlexWrapVarargs(value: (js.UndefOr[FlexWrapProperty] | Null)*): Self = this.set("flexWrap", js.Array(value :_*))
+    def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
     
     @scala.inline
-    def setFlexWrapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FlexWrapProperty]]): Self = this.set("flexWrap", js.Any.fromFunction1(value))
+    def setFlexShrinkVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = StObject.set(x, "flexShrink", js.Array(value :_*))
+    
+    @scala.inline
+    def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+    
+    @scala.inline
+    def setFlexVarargs(value: ((js.UndefOr[FlexProperty[Double | String]]) | Null)*): Self = StObject.set(x, "flex", js.Array(value :_*))
     
     @scala.inline
     def setFlexWrap(
       value: ResponsiveStyleValue[js.UndefOr[FlexWrapProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FlexWrapProperty]]]) | SystemStyleObject
-    ): Self = this.set("flexWrap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlexWrap: Self = this.set("flexWrap", js.undefined)
+    def setFlexWrapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FlexWrapProperty]]): Self = StObject.set(x, "flexWrap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlexWrapNull: Self = this.set("flexWrap", null)
+    def setFlexWrapNull: Self = StObject.set(x, "flexWrap", null)
     
     @scala.inline
-    def setFloatVarargs(value: (js.UndefOr[FloatProperty] | Null)*): Self = this.set("float", js.Array(value :_*))
+    def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
     
     @scala.inline
-    def setFloatFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FloatProperty]]): Self = this.set("float", js.Any.fromFunction1(value))
+    def setFlexWrapVarargs(value: (js.UndefOr[FlexWrapProperty] | Null)*): Self = StObject.set(x, "flexWrap", js.Array(value :_*))
     
     @scala.inline
     def setFloat(
       value: ResponsiveStyleValue[js.UndefOr[FloatProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FloatProperty]]]) | SystemStyleObject
-    ): Self = this.set("float", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloat: Self = this.set("float", js.undefined)
+    def setFloatFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FloatProperty]]): Self = StObject.set(x, "float", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFloatNull: Self = this.set("float", null)
+    def setFloatNull: Self = StObject.set(x, "float", null)
     
     @scala.inline
-    def setFloodColorVarargs(value: (js.UndefOr[FloodColorProperty] | Null)*): Self = this.set("floodColor", js.Array(value :_*))
+    def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
     
     @scala.inline
-    def setFloodColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FloodColorProperty]]): Self = this.set("floodColor", js.Any.fromFunction1(value))
+    def setFloatVarargs(value: (js.UndefOr[FloatProperty] | Null)*): Self = StObject.set(x, "float", js.Array(value :_*))
     
     @scala.inline
     def setFloodColor(
       value: ResponsiveStyleValue[js.UndefOr[FloodColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FloodColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("floodColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "floodColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloodColor: Self = this.set("floodColor", js.undefined)
+    def setFloodColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FloodColorProperty]]): Self = StObject.set(x, "floodColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFloodColorNull: Self = this.set("floodColor", null)
+    def setFloodColorNull: Self = StObject.set(x, "floodColor", null)
     
     @scala.inline
-    def setFloodOpacityVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = this.set("floodOpacity", js.Array(value :_*))
+    def setFloodColorUndefined: Self = StObject.set(x, "floodColor", js.undefined)
     
     @scala.inline
-    def setFloodOpacityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = this.set("floodOpacity", js.Any.fromFunction1(value))
+    def setFloodColorVarargs(value: (js.UndefOr[FloodColorProperty] | Null)*): Self = StObject.set(x, "floodColor", js.Array(value :_*))
     
     @scala.inline
     def setFloodOpacity(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-    ): Self = this.set("floodOpacity", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "floodOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloodOpacity: Self = this.set("floodOpacity", js.undefined)
+    def setFloodOpacityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = StObject.set(x, "floodOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFloodOpacityNull: Self = this.set("floodOpacity", null)
+    def setFloodOpacityNull: Self = StObject.set(x, "floodOpacity", null)
     
     @scala.inline
-    def setFontVarargs(value: (js.UndefOr[FontProperty] | Null)*): Self = this.set("font", js.Array(value :_*))
+    def setFloodOpacityUndefined: Self = StObject.set(x, "floodOpacity", js.undefined)
     
     @scala.inline
-    def setFontFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontProperty]]): Self = this.set("font", js.Any.fromFunction1(value))
+    def setFloodOpacityVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = StObject.set(x, "floodOpacity", js.Array(value :_*))
     
     @scala.inline
     def setFont(
       value: ResponsiveStyleValue[js.UndefOr[FontProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontProperty]]]) | SystemStyleObject
-    ): Self = this.set("font", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
-    
-    @scala.inline
-    def setFontNull: Self = this.set("font", null)
-    
-    @scala.inline
-    def setFontFamilyVarargs(value: (js.UndefOr[FontFamilyProperty] | Null)*): Self = this.set("fontFamily", js.Array(value :_*))
-    
-    @scala.inline
-    def setFontFamilyFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontFamilyProperty]]): Self = this.set("fontFamily", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFontFamily(
       value: ResponsiveStyleValue[js.UndefOr[FontFamilyProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontFamilyProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontFamilyFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontFamilyProperty]]): Self = StObject.set(x, "fontFamily", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontFamilyNull: Self = this.set("fontFamily", null)
+    def setFontFamilyNull: Self = StObject.set(x, "fontFamily", null)
     
     @scala.inline
-    def setFontFeatureSettingsVarargs(value: (js.UndefOr[FontFeatureSettingsProperty] | Null)*): Self = this.set("fontFeatureSettings", js.Array(value :_*))
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def setFontFeatureSettingsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontFeatureSettingsProperty]]): Self = this.set("fontFeatureSettings", js.Any.fromFunction1(value))
+    def setFontFamilyVarargs(value: (js.UndefOr[FontFamilyProperty] | Null)*): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
     
     @scala.inline
     def setFontFeatureSettings(
       value: ResponsiveStyleValue[js.UndefOr[FontFeatureSettingsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontFeatureSettingsProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontFeatureSettings", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontFeatureSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontFeatureSettings: Self = this.set("fontFeatureSettings", js.undefined)
+    def setFontFeatureSettingsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontFeatureSettingsProperty]]): Self = StObject.set(x, "fontFeatureSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontFeatureSettingsNull: Self = this.set("fontFeatureSettings", null)
+    def setFontFeatureSettingsNull: Self = StObject.set(x, "fontFeatureSettings", null)
     
     @scala.inline
-    def setFontKerningVarargs(value: (js.UndefOr[FontKerningProperty] | Null)*): Self = this.set("fontKerning", js.Array(value :_*))
+    def setFontFeatureSettingsUndefined: Self = StObject.set(x, "fontFeatureSettings", js.undefined)
     
     @scala.inline
-    def setFontKerningFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontKerningProperty]]): Self = this.set("fontKerning", js.Any.fromFunction1(value))
+    def setFontFeatureSettingsVarargs(value: (js.UndefOr[FontFeatureSettingsProperty] | Null)*): Self = StObject.set(x, "fontFeatureSettings", js.Array(value :_*))
+    
+    @scala.inline
+    def setFontFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontProperty]]): Self = StObject.set(x, "font", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFontKerning(
       value: ResponsiveStyleValue[js.UndefOr[FontKerningProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontKerningProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontKerning", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontKerning: Self = this.set("fontKerning", js.undefined)
+    def setFontKerningFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontKerningProperty]]): Self = StObject.set(x, "fontKerning", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontKerningNull: Self = this.set("fontKerning", null)
+    def setFontKerningNull: Self = StObject.set(x, "fontKerning", null)
     
     @scala.inline
-    def setFontLanguageOverrideVarargs(value: (js.UndefOr[FontLanguageOverrideProperty] | Null)*): Self = this.set("fontLanguageOverride", js.Array(value :_*))
+    def setFontKerningUndefined: Self = StObject.set(x, "fontKerning", js.undefined)
     
     @scala.inline
-    def setFontLanguageOverrideFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontLanguageOverrideProperty]]): Self = this.set("fontLanguageOverride", js.Any.fromFunction1(value))
+    def setFontKerningVarargs(value: (js.UndefOr[FontKerningProperty] | Null)*): Self = StObject.set(x, "fontKerning", js.Array(value :_*))
     
     @scala.inline
     def setFontLanguageOverride(
       value: ResponsiveStyleValue[js.UndefOr[FontLanguageOverrideProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontLanguageOverrideProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontLanguageOverride", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontLanguageOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontLanguageOverride: Self = this.set("fontLanguageOverride", js.undefined)
+    def setFontLanguageOverrideFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontLanguageOverrideProperty]]): Self = StObject.set(x, "fontLanguageOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontLanguageOverrideNull: Self = this.set("fontLanguageOverride", null)
+    def setFontLanguageOverrideNull: Self = StObject.set(x, "fontLanguageOverride", null)
     
     @scala.inline
-    def setFontOpticalSizingVarargs(value: (js.UndefOr[FontOpticalSizingProperty] | Null)*): Self = this.set("fontOpticalSizing", js.Array(value :_*))
+    def setFontLanguageOverrideUndefined: Self = StObject.set(x, "fontLanguageOverride", js.undefined)
     
     @scala.inline
-    def setFontOpticalSizingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontOpticalSizingProperty]]): Self = this.set("fontOpticalSizing", js.Any.fromFunction1(value))
+    def setFontLanguageOverrideVarargs(value: (js.UndefOr[FontLanguageOverrideProperty] | Null)*): Self = StObject.set(x, "fontLanguageOverride", js.Array(value :_*))
+    
+    @scala.inline
+    def setFontNull: Self = StObject.set(x, "font", null)
     
     @scala.inline
     def setFontOpticalSizing(
       value: ResponsiveStyleValue[js.UndefOr[FontOpticalSizingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontOpticalSizingProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontOpticalSizing", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontOpticalSizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontOpticalSizing: Self = this.set("fontOpticalSizing", js.undefined)
+    def setFontOpticalSizingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontOpticalSizingProperty]]): Self = StObject.set(x, "fontOpticalSizing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontOpticalSizingNull: Self = this.set("fontOpticalSizing", null)
+    def setFontOpticalSizingNull: Self = StObject.set(x, "fontOpticalSizing", null)
     
     @scala.inline
-    def setFontSizeVarargs(value: ((js.UndefOr[FontSizeProperty[Double | String]]) | Null)*): Self = this.set("fontSize", js.Array(value :_*))
+    def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
     
     @scala.inline
-    def setFontSizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontSizeProperty[Double | String]]]): Self = this.set("fontSize", js.Any.fromFunction1(value))
+    def setFontOpticalSizingVarargs(value: (js.UndefOr[FontOpticalSizingProperty] | Null)*): Self = StObject.set(x, "fontOpticalSizing", js.Array(value :_*))
     
     @scala.inline
     def setFontSize(
@@ -5824,36 +5801,36 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[FontSizeProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("fontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
-    
-    @scala.inline
-    def setFontSizeNull: Self = this.set("fontSize", null)
-    
-    @scala.inline
-    def setFontSizeAdjustVarargs(value: (js.UndefOr[FontSizeAdjustProperty] | Null)*): Self = this.set("fontSizeAdjust", js.Array(value :_*))
-    
-    @scala.inline
-    def setFontSizeAdjustFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontSizeAdjustProperty]]): Self = this.set("fontSizeAdjust", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFontSizeAdjust(
       value: ResponsiveStyleValue[js.UndefOr[FontSizeAdjustProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontSizeAdjustProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontSizeAdjust", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSizeAdjust: Self = this.set("fontSizeAdjust", js.undefined)
+    def setFontSizeAdjustFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontSizeAdjustProperty]]): Self = StObject.set(x, "fontSizeAdjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontSizeAdjustNull: Self = this.set("fontSizeAdjust", null)
+    def setFontSizeAdjustNull: Self = StObject.set(x, "fontSizeAdjust", null)
     
     @scala.inline
-    def setFontSmoothVarargs(value: ((js.UndefOr[FontSmoothProperty[Double | String]]) | Null)*): Self = this.set("fontSmooth", js.Array(value :_*))
+    def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
     
     @scala.inline
-    def setFontSmoothFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontSmoothProperty[Double | String]]]): Self = this.set("fontSmooth", js.Any.fromFunction1(value))
+    def setFontSizeAdjustVarargs(value: (js.UndefOr[FontSizeAdjustProperty] | Null)*): Self = StObject.set(x, "fontSizeAdjust", js.Array(value :_*))
+    
+    @scala.inline
+    def setFontSizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontSizeProperty[Double | String]]]): Self = StObject.set(x, "fontSize", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
+    
+    @scala.inline
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    @scala.inline
+    def setFontSizeVarargs(value: ((js.UndefOr[FontSizeProperty[Double | String]]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
     
     @scala.inline
     def setFontSmooth(
@@ -5861,172 +5838,178 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[FontSmoothProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("fontSmooth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontSmooth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSmooth: Self = this.set("fontSmooth", js.undefined)
+    def setFontSmoothFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontSmoothProperty[Double | String]]]): Self = StObject.set(x, "fontSmooth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontSmoothNull: Self = this.set("fontSmooth", null)
+    def setFontSmoothNull: Self = StObject.set(x, "fontSmooth", null)
     
     @scala.inline
-    def setFontStretchVarargs(value: (js.UndefOr[FontStretchProperty] | Null)*): Self = this.set("fontStretch", js.Array(value :_*))
+    def setFontSmoothUndefined: Self = StObject.set(x, "fontSmooth", js.undefined)
     
     @scala.inline
-    def setFontStretchFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontStretchProperty]]): Self = this.set("fontStretch", js.Any.fromFunction1(value))
+    def setFontSmoothVarargs(value: ((js.UndefOr[FontSmoothProperty[Double | String]]) | Null)*): Self = StObject.set(x, "fontSmooth", js.Array(value :_*))
     
     @scala.inline
     def setFontStretch(
       value: ResponsiveStyleValue[js.UndefOr[FontStretchProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontStretchProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontStretch", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontStretch: Self = this.set("fontStretch", js.undefined)
+    def setFontStretchFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontStretchProperty]]): Self = StObject.set(x, "fontStretch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontStretchNull: Self = this.set("fontStretch", null)
+    def setFontStretchNull: Self = StObject.set(x, "fontStretch", null)
     
     @scala.inline
-    def setFontStyleVarargs(value: (js.UndefOr[FontStyleProperty] | Null)*): Self = this.set("fontStyle", js.Array(value :_*))
+    def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
     
     @scala.inline
-    def setFontStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontStyleProperty]]): Self = this.set("fontStyle", js.Any.fromFunction1(value))
+    def setFontStretchVarargs(value: (js.UndefOr[FontStretchProperty] | Null)*): Self = StObject.set(x, "fontStretch", js.Array(value :_*))
     
     @scala.inline
     def setFontStyle(
       value: ResponsiveStyleValue[js.UndefOr[FontStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setFontStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontStyleProperty]]): Self = StObject.set(x, "fontStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontStyleNull: Self = this.set("fontStyle", null)
+    def setFontStyleNull: Self = StObject.set(x, "fontStyle", null)
     
     @scala.inline
-    def setFontSynthesisVarargs(value: (js.UndefOr[FontSynthesisProperty] | Null)*): Self = this.set("fontSynthesis", js.Array(value :_*))
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def setFontSynthesisFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontSynthesisProperty]]): Self = this.set("fontSynthesis", js.Any.fromFunction1(value))
+    def setFontStyleVarargs(value: (js.UndefOr[FontStyleProperty] | Null)*): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
     
     @scala.inline
     def setFontSynthesis(
       value: ResponsiveStyleValue[js.UndefOr[FontSynthesisProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontSynthesisProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontSynthesis", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontSynthesis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSynthesis: Self = this.set("fontSynthesis", js.undefined)
+    def setFontSynthesisFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontSynthesisProperty]]): Self = StObject.set(x, "fontSynthesis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontSynthesisNull: Self = this.set("fontSynthesis", null)
+    def setFontSynthesisNull: Self = StObject.set(x, "fontSynthesis", null)
     
     @scala.inline
-    def setFontVariantVarargs(value: (js.UndefOr[FontVariantProperty] | Null)*): Self = this.set("fontVariant", js.Array(value :_*))
+    def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
     
     @scala.inline
-    def setFontVariantFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantProperty]]): Self = this.set("fontVariant", js.Any.fromFunction1(value))
+    def setFontSynthesisVarargs(value: (js.UndefOr[FontSynthesisProperty] | Null)*): Self = StObject.set(x, "fontSynthesis", js.Array(value :_*))
+    
+    @scala.inline
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    @scala.inline
+    def setFontVarargs(value: (js.UndefOr[FontProperty] | Null)*): Self = StObject.set(x, "font", js.Array(value :_*))
     
     @scala.inline
     def setFontVariant(
       value: ResponsiveStyleValue[js.UndefOr[FontVariantProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontVariant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFontVariant: Self = this.set("fontVariant", js.undefined)
-    
-    @scala.inline
-    def setFontVariantNull: Self = this.set("fontVariant", null)
-    
-    @scala.inline
-    def setFontVariantCapsVarargs(value: (js.UndefOr[FontVariantCapsProperty] | Null)*): Self = this.set("fontVariantCaps", js.Array(value :_*))
-    
-    @scala.inline
-    def setFontVariantCapsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantCapsProperty]]): Self = this.set("fontVariantCaps", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFontVariantCaps(
       value: ResponsiveStyleValue[js.UndefOr[FontVariantCapsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantCapsProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontVariantCaps", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontVariantCaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontVariantCaps: Self = this.set("fontVariantCaps", js.undefined)
+    def setFontVariantCapsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantCapsProperty]]): Self = StObject.set(x, "fontVariantCaps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontVariantCapsNull: Self = this.set("fontVariantCaps", null)
+    def setFontVariantCapsNull: Self = StObject.set(x, "fontVariantCaps", null)
     
     @scala.inline
-    def setFontVariantEastAsianVarargs(value: (js.UndefOr[FontVariantEastAsianProperty] | Null)*): Self = this.set("fontVariantEastAsian", js.Array(value :_*))
+    def setFontVariantCapsUndefined: Self = StObject.set(x, "fontVariantCaps", js.undefined)
     
     @scala.inline
-    def setFontVariantEastAsianFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantEastAsianProperty]]): Self = this.set("fontVariantEastAsian", js.Any.fromFunction1(value))
+    def setFontVariantCapsVarargs(value: (js.UndefOr[FontVariantCapsProperty] | Null)*): Self = StObject.set(x, "fontVariantCaps", js.Array(value :_*))
     
     @scala.inline
     def setFontVariantEastAsian(
       value: ResponsiveStyleValue[js.UndefOr[FontVariantEastAsianProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantEastAsianProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontVariantEastAsian", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontVariantEastAsian: Self = this.set("fontVariantEastAsian", js.undefined)
+    def setFontVariantEastAsianFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantEastAsianProperty]]): Self = StObject.set(x, "fontVariantEastAsian", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontVariantEastAsianNull: Self = this.set("fontVariantEastAsian", null)
+    def setFontVariantEastAsianNull: Self = StObject.set(x, "fontVariantEastAsian", null)
     
     @scala.inline
-    def setFontVariantLigaturesVarargs(value: (js.UndefOr[FontVariantLigaturesProperty] | Null)*): Self = this.set("fontVariantLigatures", js.Array(value :_*))
+    def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
     
     @scala.inline
-    def setFontVariantLigaturesFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantLigaturesProperty]]): Self = this.set("fontVariantLigatures", js.Any.fromFunction1(value))
+    def setFontVariantEastAsianVarargs(value: (js.UndefOr[FontVariantEastAsianProperty] | Null)*): Self = StObject.set(x, "fontVariantEastAsian", js.Array(value :_*))
+    
+    @scala.inline
+    def setFontVariantFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantProperty]]): Self = StObject.set(x, "fontVariant", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFontVariantLigatures(
       value: ResponsiveStyleValue[js.UndefOr[FontVariantLigaturesProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantLigaturesProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontVariantLigatures", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontVariantLigatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontVariantLigatures: Self = this.set("fontVariantLigatures", js.undefined)
+    def setFontVariantLigaturesFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantLigaturesProperty]]): Self = StObject.set(x, "fontVariantLigatures", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontVariantLigaturesNull: Self = this.set("fontVariantLigatures", null)
+    def setFontVariantLigaturesNull: Self = StObject.set(x, "fontVariantLigatures", null)
     
     @scala.inline
-    def setFontVariantNumericVarargs(value: (js.UndefOr[FontVariantNumericProperty] | Null)*): Self = this.set("fontVariantNumeric", js.Array(value :_*))
+    def setFontVariantLigaturesUndefined: Self = StObject.set(x, "fontVariantLigatures", js.undefined)
     
     @scala.inline
-    def setFontVariantNumericFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantNumericProperty]]): Self = this.set("fontVariantNumeric", js.Any.fromFunction1(value))
+    def setFontVariantLigaturesVarargs(value: (js.UndefOr[FontVariantLigaturesProperty] | Null)*): Self = StObject.set(x, "fontVariantLigatures", js.Array(value :_*))
+    
+    @scala.inline
+    def setFontVariantNull: Self = StObject.set(x, "fontVariant", null)
     
     @scala.inline
     def setFontVariantNumeric(
       value: ResponsiveStyleValue[js.UndefOr[FontVariantNumericProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantNumericProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontVariantNumeric", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontVariantNumeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontVariantNumeric: Self = this.set("fontVariantNumeric", js.undefined)
+    def setFontVariantNumericFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantNumericProperty]]): Self = StObject.set(x, "fontVariantNumeric", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontVariantNumericNull: Self = this.set("fontVariantNumeric", null)
+    def setFontVariantNumericNull: Self = StObject.set(x, "fontVariantNumeric", null)
     
     @scala.inline
-    def setFontVariantPositionVarargs(value: (js.UndefOr[FontVariantPositionProperty] | Null)*): Self = this.set("fontVariantPosition", js.Array(value :_*))
+    def setFontVariantNumericUndefined: Self = StObject.set(x, "fontVariantNumeric", js.undefined)
     
     @scala.inline
-    def setFontVariantPositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantPositionProperty]]): Self = this.set("fontVariantPosition", js.Any.fromFunction1(value))
+    def setFontVariantNumericVarargs(value: (js.UndefOr[FontVariantNumericProperty] | Null)*): Self = StObject.set(x, "fontVariantNumeric", js.Array(value :_*))
     
     @scala.inline
     def setFontVariantPosition(
       value: ResponsiveStyleValue[js.UndefOr[FontVariantPositionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantPositionProperty]]]) | SystemStyleObject
-    ): Self = this.set("fontVariantPosition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontVariantPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontVariantPosition: Self = this.set("fontVariantPosition", js.undefined)
+    def setFontVariantPositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariantPositionProperty]]): Self = StObject.set(x, "fontVariantPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontVariantPositionNull: Self = this.set("fontVariantPosition", null)
+    def setFontVariantPositionNull: Self = StObject.set(x, "fontVariantPosition", null)
     
     @scala.inline
-    def setFontVariationSettingsVarargs(value: (js.UndefOr[FontVariationSettingsProperty] | Null)*): Self = this.set("fontVariationSettings", js.Array(value :_*))
+    def setFontVariantPositionUndefined: Self = StObject.set(x, "fontVariantPosition", js.undefined)
     
     @scala.inline
-    def setFontVariationSettingsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariationSettingsProperty]]): Self = this.set("fontVariationSettings", js.Any.fromFunction1(value))
+    def setFontVariantPositionVarargs(value: (js.UndefOr[FontVariantPositionProperty] | Null)*): Self = StObject.set(x, "fontVariantPosition", js.Array(value :_*))
+    
+    @scala.inline
+    def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
+    
+    @scala.inline
+    def setFontVariantVarargs(value: (js.UndefOr[FontVariantProperty] | Null)*): Self = StObject.set(x, "fontVariant", js.Array(value :_*))
     
     @scala.inline
     def setFontVariationSettings(
@@ -6034,25 +6017,19 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[FontVariationSettingsProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("fontVariationSettings", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontVariationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontVariationSettings: Self = this.set("fontVariationSettings", js.undefined)
+    def setFontVariationSettingsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[FontVariationSettingsProperty]]): Self = StObject.set(x, "fontVariationSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontVariationSettingsNull: Self = this.set("fontVariationSettings", null)
+    def setFontVariationSettingsNull: Self = StObject.set(x, "fontVariationSettings", null)
     
     @scala.inline
-    def setFontWeightVarargs(value: ((js.UndefOr[js.Any | String]) | Null)*): Self = this.set("fontWeight", js.Array(value :_*))
+    def setFontVariationSettingsUndefined: Self = StObject.set(x, "fontVariationSettings", js.undefined)
     
     @scala.inline
-    def setFontWeightFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | String
-          ]
-        ]
-    ): Self = this.set("fontWeight", js.Any.fromFunction1(value))
+    def setFontVariationSettingsVarargs(value: (js.UndefOr[FontVariationSettingsProperty] | Null)*): Self = StObject.set(x, "fontVariationSettings", js.Array(value :_*))
     
     @scala.inline
     def setFontWeight(
@@ -6068,36 +6045,42 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setFontWeightFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | String
+          ]
+        ]
+    ): Self = StObject.set(x, "fontWeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontWeightNull: Self = this.set("fontWeight", null)
+    def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
     
     @scala.inline
-    def setGapVarargs(value: ((js.UndefOr[GapProperty[Double | String]]) | Null)*): Self = this.set("gap", js.Array(value :_*))
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def setGapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GapProperty[Double | String]]]): Self = this.set("gap", js.Any.fromFunction1(value))
+    def setFontWeightVarargs(value: ((js.UndefOr[js.Any | String]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
     
     @scala.inline
     def setGap(
       value: (ResponsiveStyleValue[js.UndefOr[GapProperty[Double | String]]]) | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GapProperty[Double | String]]]]) | SystemStyleObject
-    ): Self = this.set("gap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGap: Self = this.set("gap", js.undefined)
+    def setGapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GapProperty[Double | String]]]): Self = StObject.set(x, "gap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGapNull: Self = this.set("gap", null)
+    def setGapNull: Self = StObject.set(x, "gap", null)
     
     @scala.inline
-    def setGlyphOrientationVerticalVarargs(value: (js.UndefOr[GlyphOrientationVerticalProperty] | Null)*): Self = this.set("glyphOrientationVertical", js.Array(value :_*))
+    def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
     @scala.inline
-    def setGlyphOrientationVerticalFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlyphOrientationVerticalProperty]]): Self = this.set("glyphOrientationVertical", js.Any.fromFunction1(value))
+    def setGapVarargs(value: ((js.UndefOr[GapProperty[Double | String]]) | Null)*): Self = StObject.set(x, "gap", js.Array(value :_*))
     
     @scala.inline
     def setGlyphOrientationVertical(
@@ -6105,55 +6088,41 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[GlyphOrientationVerticalProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("glyphOrientationVertical", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlyphOrientationVertical: Self = this.set("glyphOrientationVertical", js.undefined)
+    def setGlyphOrientationVerticalFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlyphOrientationVerticalProperty]]): Self = StObject.set(x, "glyphOrientationVertical", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGlyphOrientationVerticalNull: Self = this.set("glyphOrientationVertical", null)
+    def setGlyphOrientationVerticalNull: Self = StObject.set(x, "glyphOrientationVertical", null)
     
     @scala.inline
-    def setGridVarargs(value: (js.UndefOr[GridProperty] | Null)*): Self = this.set("grid", js.Array(value :_*))
+    def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
     
     @scala.inline
-    def setGridFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridProperty]]): Self = this.set("grid", js.Any.fromFunction1(value))
+    def setGlyphOrientationVerticalVarargs(value: (js.UndefOr[GlyphOrientationVerticalProperty] | Null)*): Self = StObject.set(x, "glyphOrientationVertical", js.Array(value :_*))
     
     @scala.inline
     def setGrid(
       value: ResponsiveStyleValue[js.UndefOr[GridProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridProperty]]]) | SystemStyleObject
-    ): Self = this.set("grid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
-    
-    @scala.inline
-    def setGridNull: Self = this.set("grid", null)
-    
-    @scala.inline
-    def setGridAreaVarargs(value: (js.UndefOr[GridAreaProperty] | Null)*): Self = this.set("gridArea", js.Array(value :_*))
-    
-    @scala.inline
-    def setGridAreaFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridAreaProperty]]): Self = this.set("gridArea", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGridArea(
       value: ResponsiveStyleValue[js.UndefOr[GridAreaProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridAreaProperty]]]) | SystemStyleObject
-    ): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    def setGridAreaFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridAreaProperty]]): Self = StObject.set(x, "gridArea", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridAreaNull: Self = this.set("gridArea", null)
+    def setGridAreaNull: Self = StObject.set(x, "gridArea", null)
     
     @scala.inline
-    def setGridAutoColumnsVarargs(value: ((js.UndefOr[GridAutoColumnsProperty[Double | String]]) | Null)*): Self = this.set("gridAutoColumns", js.Array(value :_*))
+    def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
     
     @scala.inline
-    def setGridAutoColumnsFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridAutoColumnsProperty[Double | String]]]
-    ): Self = this.set("gridAutoColumns", js.Any.fromFunction1(value))
+    def setGridAreaVarargs(value: (js.UndefOr[GridAreaProperty] | Null)*): Self = StObject.set(x, "gridArea", js.Array(value :_*))
     
     @scala.inline
     def setGridAutoColumns(
@@ -6161,38 +6130,38 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[GridAutoColumnsProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("gridAutoColumns", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridAutoColumns: Self = this.set("gridAutoColumns", js.undefined)
+    def setGridAutoColumnsFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridAutoColumnsProperty[Double | String]]]
+    ): Self = StObject.set(x, "gridAutoColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridAutoColumnsNull: Self = this.set("gridAutoColumns", null)
+    def setGridAutoColumnsNull: Self = StObject.set(x, "gridAutoColumns", null)
     
     @scala.inline
-    def setGridAutoFlowVarargs(value: (js.UndefOr[GridAutoFlowProperty] | Null)*): Self = this.set("gridAutoFlow", js.Array(value :_*))
+    def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
     
     @scala.inline
-    def setGridAutoFlowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridAutoFlowProperty]]): Self = this.set("gridAutoFlow", js.Any.fromFunction1(value))
+    def setGridAutoColumnsVarargs(value: ((js.UndefOr[GridAutoColumnsProperty[Double | String]]) | Null)*): Self = StObject.set(x, "gridAutoColumns", js.Array(value :_*))
     
     @scala.inline
     def setGridAutoFlow(
       value: ResponsiveStyleValue[js.UndefOr[GridAutoFlowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridAutoFlowProperty]]]) | SystemStyleObject
-    ): Self = this.set("gridAutoFlow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridAutoFlow: Self = this.set("gridAutoFlow", js.undefined)
+    def setGridAutoFlowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridAutoFlowProperty]]): Self = StObject.set(x, "gridAutoFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridAutoFlowNull: Self = this.set("gridAutoFlow", null)
+    def setGridAutoFlowNull: Self = StObject.set(x, "gridAutoFlow", null)
     
     @scala.inline
-    def setGridAutoRowsVarargs(value: ((js.UndefOr[GridAutoRowsProperty[Double | String]]) | Null)*): Self = this.set("gridAutoRows", js.Array(value :_*))
+    def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
     
     @scala.inline
-    def setGridAutoRowsFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridAutoRowsProperty[Double | String]]]
-    ): Self = this.set("gridAutoRows", js.Any.fromFunction1(value))
+    def setGridAutoFlowVarargs(value: (js.UndefOr[GridAutoFlowProperty] | Null)*): Self = StObject.set(x, "gridAutoFlow", js.Array(value :_*))
     
     @scala.inline
     def setGridAutoRows(
@@ -6200,157 +6169,151 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[GridAutoRowsProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("gridAutoRows", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridAutoRows: Self = this.set("gridAutoRows", js.undefined)
+    def setGridAutoRowsFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridAutoRowsProperty[Double | String]]]
+    ): Self = StObject.set(x, "gridAutoRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridAutoRowsNull: Self = this.set("gridAutoRows", null)
+    def setGridAutoRowsNull: Self = StObject.set(x, "gridAutoRows", null)
     
     @scala.inline
-    def setGridColumnVarargs(value: (js.UndefOr[GridColumnProperty] | Null)*): Self = this.set("gridColumn", js.Array(value :_*))
+    def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
     
     @scala.inline
-    def setGridColumnFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridColumnProperty]]): Self = this.set("gridColumn", js.Any.fromFunction1(value))
+    def setGridAutoRowsVarargs(value: ((js.UndefOr[GridAutoRowsProperty[Double | String]]) | Null)*): Self = StObject.set(x, "gridAutoRows", js.Array(value :_*))
     
     @scala.inline
     def setGridColumn(
       value: ResponsiveStyleValue[js.UndefOr[GridColumnProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridColumnProperty]]]) | SystemStyleObject
-    ): Self = this.set("gridColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGridColumn: Self = this.set("gridColumn", js.undefined)
-    
-    @scala.inline
-    def setGridColumnNull: Self = this.set("gridColumn", null)
-    
-    @scala.inline
-    def setGridColumnEndVarargs(value: (js.UndefOr[GridColumnEndProperty] | Null)*): Self = this.set("gridColumnEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setGridColumnEndFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridColumnEndProperty]]): Self = this.set("gridColumnEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGridColumnEnd(
       value: ResponsiveStyleValue[js.UndefOr[GridColumnEndProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridColumnEndProperty]]]) | SystemStyleObject
-    ): Self = this.set("gridColumnEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridColumnEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridColumnEnd: Self = this.set("gridColumnEnd", js.undefined)
+    def setGridColumnEndFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridColumnEndProperty]]): Self = StObject.set(x, "gridColumnEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridColumnEndNull: Self = this.set("gridColumnEnd", null)
+    def setGridColumnEndNull: Self = StObject.set(x, "gridColumnEnd", null)
     
     @scala.inline
-    def setGridColumnStartVarargs(value: (js.UndefOr[GridColumnStartProperty] | Null)*): Self = this.set("gridColumnStart", js.Array(value :_*))
+    def setGridColumnEndUndefined: Self = StObject.set(x, "gridColumnEnd", js.undefined)
     
     @scala.inline
-    def setGridColumnStartFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridColumnStartProperty]]): Self = this.set("gridColumnStart", js.Any.fromFunction1(value))
+    def setGridColumnEndVarargs(value: (js.UndefOr[GridColumnEndProperty] | Null)*): Self = StObject.set(x, "gridColumnEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setGridColumnFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridColumnProperty]]): Self = StObject.set(x, "gridColumn", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGridColumnNull: Self = StObject.set(x, "gridColumn", null)
     
     @scala.inline
     def setGridColumnStart(
       value: ResponsiveStyleValue[js.UndefOr[GridColumnStartProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridColumnStartProperty]]]) | SystemStyleObject
-    ): Self = this.set("gridColumnStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridColumnStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridColumnStart: Self = this.set("gridColumnStart", js.undefined)
+    def setGridColumnStartFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridColumnStartProperty]]): Self = StObject.set(x, "gridColumnStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridColumnStartNull: Self = this.set("gridColumnStart", null)
+    def setGridColumnStartNull: Self = StObject.set(x, "gridColumnStart", null)
     
     @scala.inline
-    def setGridRowVarargs(value: (js.UndefOr[GridRowProperty] | Null)*): Self = this.set("gridRow", js.Array(value :_*))
+    def setGridColumnStartUndefined: Self = StObject.set(x, "gridColumnStart", js.undefined)
     
     @scala.inline
-    def setGridRowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridRowProperty]]): Self = this.set("gridRow", js.Any.fromFunction1(value))
+    def setGridColumnStartVarargs(value: (js.UndefOr[GridColumnStartProperty] | Null)*): Self = StObject.set(x, "gridColumnStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
+    
+    @scala.inline
+    def setGridColumnVarargs(value: (js.UndefOr[GridColumnProperty] | Null)*): Self = StObject.set(x, "gridColumn", js.Array(value :_*))
+    
+    @scala.inline
+    def setGridFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridProperty]]): Self = StObject.set(x, "grid", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGridNull: Self = StObject.set(x, "grid", null)
     
     @scala.inline
     def setGridRow(
       value: ResponsiveStyleValue[js.UndefOr[GridRowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridRowProperty]]]) | SystemStyleObject
-    ): Self = this.set("gridRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGridRow: Self = this.set("gridRow", js.undefined)
-    
-    @scala.inline
-    def setGridRowNull: Self = this.set("gridRow", null)
-    
-    @scala.inline
-    def setGridRowEndVarargs(value: (js.UndefOr[GridRowEndProperty] | Null)*): Self = this.set("gridRowEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setGridRowEndFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridRowEndProperty]]): Self = this.set("gridRowEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGridRowEnd(
       value: ResponsiveStyleValue[js.UndefOr[GridRowEndProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridRowEndProperty]]]) | SystemStyleObject
-    ): Self = this.set("gridRowEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridRowEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridRowEnd: Self = this.set("gridRowEnd", js.undefined)
+    def setGridRowEndFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridRowEndProperty]]): Self = StObject.set(x, "gridRowEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridRowEndNull: Self = this.set("gridRowEnd", null)
+    def setGridRowEndNull: Self = StObject.set(x, "gridRowEnd", null)
     
     @scala.inline
-    def setGridRowStartVarargs(value: (js.UndefOr[GridRowStartProperty] | Null)*): Self = this.set("gridRowStart", js.Array(value :_*))
+    def setGridRowEndUndefined: Self = StObject.set(x, "gridRowEnd", js.undefined)
     
     @scala.inline
-    def setGridRowStartFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridRowStartProperty]]): Self = this.set("gridRowStart", js.Any.fromFunction1(value))
+    def setGridRowEndVarargs(value: (js.UndefOr[GridRowEndProperty] | Null)*): Self = StObject.set(x, "gridRowEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setGridRowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridRowProperty]]): Self = StObject.set(x, "gridRow", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGridRowNull: Self = StObject.set(x, "gridRow", null)
     
     @scala.inline
     def setGridRowStart(
       value: ResponsiveStyleValue[js.UndefOr[GridRowStartProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridRowStartProperty]]]) | SystemStyleObject
-    ): Self = this.set("gridRowStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridRowStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridRowStart: Self = this.set("gridRowStart", js.undefined)
+    def setGridRowStartFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridRowStartProperty]]): Self = StObject.set(x, "gridRowStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridRowStartNull: Self = this.set("gridRowStart", null)
+    def setGridRowStartNull: Self = StObject.set(x, "gridRowStart", null)
     
     @scala.inline
-    def setGridTemplateVarargs(value: (js.UndefOr[GridTemplateProperty] | Null)*): Self = this.set("gridTemplate", js.Array(value :_*))
+    def setGridRowStartUndefined: Self = StObject.set(x, "gridRowStart", js.undefined)
     
     @scala.inline
-    def setGridTemplateFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridTemplateProperty]]): Self = this.set("gridTemplate", js.Any.fromFunction1(value))
+    def setGridRowStartVarargs(value: (js.UndefOr[GridRowStartProperty] | Null)*): Self = StObject.set(x, "gridRowStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
+    
+    @scala.inline
+    def setGridRowVarargs(value: (js.UndefOr[GridRowProperty] | Null)*): Self = StObject.set(x, "gridRow", js.Array(value :_*))
     
     @scala.inline
     def setGridTemplate(
       value: ResponsiveStyleValue[js.UndefOr[GridTemplateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridTemplateProperty]]]) | SystemStyleObject
-    ): Self = this.set("gridTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGridTemplate: Self = this.set("gridTemplate", js.undefined)
-    
-    @scala.inline
-    def setGridTemplateNull: Self = this.set("gridTemplate", null)
-    
-    @scala.inline
-    def setGridTemplateAreasVarargs(value: (js.UndefOr[GridTemplateAreasProperty] | Null)*): Self = this.set("gridTemplateAreas", js.Array(value :_*))
-    
-    @scala.inline
-    def setGridTemplateAreasFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridTemplateAreasProperty]]): Self = this.set("gridTemplateAreas", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "gridTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGridTemplateAreas(
       value: ResponsiveStyleValue[js.UndefOr[GridTemplateAreasProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridTemplateAreasProperty]]]) | SystemStyleObject
-    ): Self = this.set("gridTemplateAreas", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridTemplateAreas: Self = this.set("gridTemplateAreas", js.undefined)
+    def setGridTemplateAreasFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridTemplateAreasProperty]]): Self = StObject.set(x, "gridTemplateAreas", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridTemplateAreasNull: Self = this.set("gridTemplateAreas", null)
+    def setGridTemplateAreasNull: Self = StObject.set(x, "gridTemplateAreas", null)
     
     @scala.inline
-    def setGridTemplateColumnsVarargs(value: ((js.UndefOr[GridTemplateColumnsProperty[Double | String]]) | Null)*): Self = this.set("gridTemplateColumns", js.Array(value :_*))
+    def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
     
     @scala.inline
-    def setGridTemplateColumnsFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridTemplateColumnsProperty[Double | String]]]
-    ): Self = this.set("gridTemplateColumns", js.Any.fromFunction1(value))
+    def setGridTemplateAreasVarargs(value: (js.UndefOr[GridTemplateAreasProperty] | Null)*): Self = StObject.set(x, "gridTemplateAreas", js.Array(value :_*))
     
     @scala.inline
     def setGridTemplateColumns(
@@ -6358,21 +6321,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[GridTemplateColumnsProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("gridTemplateColumns", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridTemplateColumns: Self = this.set("gridTemplateColumns", js.undefined)
+    def setGridTemplateColumnsFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridTemplateColumnsProperty[Double | String]]]
+    ): Self = StObject.set(x, "gridTemplateColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridTemplateColumnsNull: Self = this.set("gridTemplateColumns", null)
+    def setGridTemplateColumnsNull: Self = StObject.set(x, "gridTemplateColumns", null)
     
     @scala.inline
-    def setGridTemplateRowsVarargs(value: ((js.UndefOr[GridTemplateRowsProperty[Double | String]]) | Null)*): Self = this.set("gridTemplateRows", js.Array(value :_*))
+    def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
     
     @scala.inline
-    def setGridTemplateRowsFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridTemplateRowsProperty[Double | String]]]
-    ): Self = this.set("gridTemplateRows", js.Any.fromFunction1(value))
+    def setGridTemplateColumnsVarargs(value: ((js.UndefOr[GridTemplateColumnsProperty[Double | String]]) | Null)*): Self = StObject.set(x, "gridTemplateColumns", js.Array(value :_*))
+    
+    @scala.inline
+    def setGridTemplateFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridTemplateProperty]]): Self = StObject.set(x, "gridTemplate", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGridTemplateNull: Self = StObject.set(x, "gridTemplate", null)
     
     @scala.inline
     def setGridTemplateRows(
@@ -6380,36 +6349,50 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[GridTemplateRowsProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("gridTemplateRows", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridTemplateRows: Self = this.set("gridTemplateRows", js.undefined)
+    def setGridTemplateRowsFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GridTemplateRowsProperty[Double | String]]]
+    ): Self = StObject.set(x, "gridTemplateRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridTemplateRowsNull: Self = this.set("gridTemplateRows", null)
+    def setGridTemplateRowsNull: Self = StObject.set(x, "gridTemplateRows", null)
     
     @scala.inline
-    def setHangingPunctuationVarargs(value: (js.UndefOr[HangingPunctuationProperty] | Null)*): Self = this.set("hangingPunctuation", js.Array(value :_*))
+    def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
     
     @scala.inline
-    def setHangingPunctuationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[HangingPunctuationProperty]]): Self = this.set("hangingPunctuation", js.Any.fromFunction1(value))
+    def setGridTemplateRowsVarargs(value: ((js.UndefOr[GridTemplateRowsProperty[Double | String]]) | Null)*): Self = StObject.set(x, "gridTemplateRows", js.Array(value :_*))
+    
+    @scala.inline
+    def setGridTemplateUndefined: Self = StObject.set(x, "gridTemplate", js.undefined)
+    
+    @scala.inline
+    def setGridTemplateVarargs(value: (js.UndefOr[GridTemplateProperty] | Null)*): Self = StObject.set(x, "gridTemplate", js.Array(value :_*))
+    
+    @scala.inline
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    @scala.inline
+    def setGridVarargs(value: (js.UndefOr[GridProperty] | Null)*): Self = StObject.set(x, "grid", js.Array(value :_*))
     
     @scala.inline
     def setHangingPunctuation(
       value: ResponsiveStyleValue[js.UndefOr[HangingPunctuationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[HangingPunctuationProperty]]]) | SystemStyleObject
-    ): Self = this.set("hangingPunctuation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "hangingPunctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHangingPunctuation: Self = this.set("hangingPunctuation", js.undefined)
+    def setHangingPunctuationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[HangingPunctuationProperty]]): Self = StObject.set(x, "hangingPunctuation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHangingPunctuationNull: Self = this.set("hangingPunctuation", null)
+    def setHangingPunctuationNull: Self = StObject.set(x, "hangingPunctuation", null)
     
     @scala.inline
-    def setHeightVarargs(value: ((js.UndefOr[HeightProperty[Double | String]]) | Null)*): Self = this.set("height", js.Array(value :_*))
+    def setHangingPunctuationUndefined: Self = StObject.set(x, "hangingPunctuation", js.undefined)
     
     @scala.inline
-    def setHeightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[HeightProperty[Double | String]]]): Self = this.set("height", js.Any.fromFunction1(value))
+    def setHangingPunctuationVarargs(value: (js.UndefOr[HangingPunctuationProperty] | Null)*): Self = StObject.set(x, "hangingPunctuation", js.Array(value :_*))
     
     @scala.inline
     def setHeight(
@@ -6417,104 +6400,104 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[HeightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("height", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHeightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[HeightProperty[Double | String]]]): Self = StObject.set(x, "height", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeightNull: Self = this.set("height", null)
+    def setHeightNull: Self = StObject.set(x, "height", null)
     
     @scala.inline
-    def setHyphensVarargs(value: (js.UndefOr[HyphensProperty] | Null)*): Self = this.set("hyphens", js.Array(value :_*))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setHyphensFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[HyphensProperty]]): Self = this.set("hyphens", js.Any.fromFunction1(value))
+    def setHeightVarargs(value: ((js.UndefOr[HeightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "height", js.Array(value :_*))
     
     @scala.inline
     def setHyphens(
       value: ResponsiveStyleValue[js.UndefOr[HyphensProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[HyphensProperty]]]) | SystemStyleObject
-    ): Self = this.set("hyphens", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHyphens: Self = this.set("hyphens", js.undefined)
+    def setHyphensFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[HyphensProperty]]): Self = StObject.set(x, "hyphens", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHyphensNull: Self = this.set("hyphens", null)
+    def setHyphensNull: Self = StObject.set(x, "hyphens", null)
     
     @scala.inline
-    def setImageOrientationVarargs(value: (js.UndefOr[ImageOrientationProperty] | Null)*): Self = this.set("imageOrientation", js.Array(value :_*))
+    def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
     
     @scala.inline
-    def setImageOrientationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ImageOrientationProperty]]): Self = this.set("imageOrientation", js.Any.fromFunction1(value))
+    def setHyphensVarargs(value: (js.UndefOr[HyphensProperty] | Null)*): Self = StObject.set(x, "hyphens", js.Array(value :_*))
     
     @scala.inline
     def setImageOrientation(
       value: ResponsiveStyleValue[js.UndefOr[ImageOrientationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ImageOrientationProperty]]]) | SystemStyleObject
-    ): Self = this.set("imageOrientation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "imageOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageOrientation: Self = this.set("imageOrientation", js.undefined)
+    def setImageOrientationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ImageOrientationProperty]]): Self = StObject.set(x, "imageOrientation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImageOrientationNull: Self = this.set("imageOrientation", null)
+    def setImageOrientationNull: Self = StObject.set(x, "imageOrientation", null)
     
     @scala.inline
-    def setImageRenderingVarargs(value: (js.UndefOr[ImageRenderingProperty] | Null)*): Self = this.set("imageRendering", js.Array(value :_*))
+    def setImageOrientationUndefined: Self = StObject.set(x, "imageOrientation", js.undefined)
     
     @scala.inline
-    def setImageRenderingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ImageRenderingProperty]]): Self = this.set("imageRendering", js.Any.fromFunction1(value))
+    def setImageOrientationVarargs(value: (js.UndefOr[ImageOrientationProperty] | Null)*): Self = StObject.set(x, "imageOrientation", js.Array(value :_*))
     
     @scala.inline
     def setImageRendering(
       value: ResponsiveStyleValue[js.UndefOr[ImageRenderingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ImageRenderingProperty]]]) | SystemStyleObject
-    ): Self = this.set("imageRendering", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "imageRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageRendering: Self = this.set("imageRendering", js.undefined)
+    def setImageRenderingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ImageRenderingProperty]]): Self = StObject.set(x, "imageRendering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImageRenderingNull: Self = this.set("imageRendering", null)
+    def setImageRenderingNull: Self = StObject.set(x, "imageRendering", null)
     
     @scala.inline
-    def setImageResolutionVarargs(value: (js.UndefOr[ImageResolutionProperty] | Null)*): Self = this.set("imageResolution", js.Array(value :_*))
+    def setImageRenderingUndefined: Self = StObject.set(x, "imageRendering", js.undefined)
     
     @scala.inline
-    def setImageResolutionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ImageResolutionProperty]]): Self = this.set("imageResolution", js.Any.fromFunction1(value))
+    def setImageRenderingVarargs(value: (js.UndefOr[ImageRenderingProperty] | Null)*): Self = StObject.set(x, "imageRendering", js.Array(value :_*))
     
     @scala.inline
     def setImageResolution(
       value: ResponsiveStyleValue[js.UndefOr[ImageResolutionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ImageResolutionProperty]]]) | SystemStyleObject
-    ): Self = this.set("imageResolution", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "imageResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageResolution: Self = this.set("imageResolution", js.undefined)
+    def setImageResolutionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ImageResolutionProperty]]): Self = StObject.set(x, "imageResolution", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImageResolutionNull: Self = this.set("imageResolution", null)
+    def setImageResolutionNull: Self = StObject.set(x, "imageResolution", null)
     
     @scala.inline
-    def setInitialLetterVarargs(value: (js.UndefOr[InitialLetterProperty] | Null)*): Self = this.set("initialLetter", js.Array(value :_*))
+    def setImageResolutionUndefined: Self = StObject.set(x, "imageResolution", js.undefined)
     
     @scala.inline
-    def setInitialLetterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InitialLetterProperty]]): Self = this.set("initialLetter", js.Any.fromFunction1(value))
+    def setImageResolutionVarargs(value: (js.UndefOr[ImageResolutionProperty] | Null)*): Self = StObject.set(x, "imageResolution", js.Array(value :_*))
     
     @scala.inline
     def setInitialLetter(
       value: ResponsiveStyleValue[js.UndefOr[InitialLetterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[InitialLetterProperty]]]) | SystemStyleObject
-    ): Self = this.set("initialLetter", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "initialLetter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialLetter: Self = this.set("initialLetter", js.undefined)
+    def setInitialLetterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InitialLetterProperty]]): Self = StObject.set(x, "initialLetter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitialLetterNull: Self = this.set("initialLetter", null)
+    def setInitialLetterNull: Self = StObject.set(x, "initialLetter", null)
     
     @scala.inline
-    def setInlineSizeVarargs(value: ((js.UndefOr[InlineSizeProperty[Double | String]]) | Null)*): Self = this.set("inlineSize", js.Array(value :_*))
+    def setInitialLetterUndefined: Self = StObject.set(x, "initialLetter", js.undefined)
     
     @scala.inline
-    def setInlineSizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InlineSizeProperty[Double | String]]]): Self = this.set("inlineSize", js.Any.fromFunction1(value))
+    def setInitialLetterVarargs(value: (js.UndefOr[InitialLetterProperty] | Null)*): Self = StObject.set(x, "initialLetter", js.Array(value :_*))
     
     @scala.inline
     def setInlineSize(
@@ -6522,19 +6505,19 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[InlineSizeProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("inlineSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInlineSize: Self = this.set("inlineSize", js.undefined)
+    def setInlineSizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InlineSizeProperty[Double | String]]]): Self = StObject.set(x, "inlineSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInlineSizeNull: Self = this.set("inlineSize", null)
+    def setInlineSizeNull: Self = StObject.set(x, "inlineSize", null)
     
     @scala.inline
-    def setInsetVarargs(value: ((js.UndefOr[InsetProperty[Double | String]]) | Null)*): Self = this.set("inset", js.Array(value :_*))
+    def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
     
     @scala.inline
-    def setInsetFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetProperty[Double | String]]]): Self = this.set("inset", js.Any.fromFunction1(value))
+    def setInlineSizeVarargs(value: ((js.UndefOr[InlineSizeProperty[Double | String]]) | Null)*): Self = StObject.set(x, "inlineSize", js.Array(value :_*))
     
     @scala.inline
     def setInset(
@@ -6542,19 +6525,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[InsetProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("inset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInset: Self = this.set("inset", js.undefined)
-    
-    @scala.inline
-    def setInsetNull: Self = this.set("inset", null)
-    
-    @scala.inline
-    def setInsetBlockVarargs(value: ((js.UndefOr[InsetBlockProperty[Double | String]]) | Null)*): Self = this.set("insetBlock", js.Array(value :_*))
-    
-    @scala.inline
-    def setInsetBlockFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetBlockProperty[Double | String]]]): Self = this.set("insetBlock", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInsetBlock(
@@ -6562,21 +6533,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[InsetBlockProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("insetBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsetBlock: Self = this.set("insetBlock", js.undefined)
-    
-    @scala.inline
-    def setInsetBlockNull: Self = this.set("insetBlock", null)
-    
-    @scala.inline
-    def setInsetBlockEndVarargs(value: ((js.UndefOr[InsetBlockEndProperty[Double | String]]) | Null)*): Self = this.set("insetBlockEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setInsetBlockEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetBlockEndProperty[Double | String]]]
-    ): Self = this.set("insetBlockEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInsetBlockEnd(
@@ -6584,21 +6541,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[InsetBlockEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("insetBlockEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInsetBlockEnd: Self = this.set("insetBlockEnd", js.undefined)
+    def setInsetBlockEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetBlockEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "insetBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsetBlockEndNull: Self = this.set("insetBlockEnd", null)
+    def setInsetBlockEndNull: Self = StObject.set(x, "insetBlockEnd", null)
     
     @scala.inline
-    def setInsetBlockStartVarargs(value: ((js.UndefOr[InsetBlockStartProperty[Double | String]]) | Null)*): Self = this.set("insetBlockStart", js.Array(value :_*))
+    def setInsetBlockEndUndefined: Self = StObject.set(x, "insetBlockEnd", js.undefined)
     
     @scala.inline
-    def setInsetBlockStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetBlockStartProperty[Double | String]]]
-    ): Self = this.set("insetBlockStart", js.Any.fromFunction1(value))
+    def setInsetBlockEndVarargs(value: ((js.UndefOr[InsetBlockEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "insetBlockEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setInsetBlockFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetBlockProperty[Double | String]]]): Self = StObject.set(x, "insetBlock", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setInsetBlockNull: Self = StObject.set(x, "insetBlock", null)
     
     @scala.inline
     def setInsetBlockStart(
@@ -6606,21 +6569,30 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[InsetBlockStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("insetBlockStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "insetBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInsetBlockStart: Self = this.set("insetBlockStart", js.undefined)
+    def setInsetBlockStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetBlockStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "insetBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsetBlockStartNull: Self = this.set("insetBlockStart", null)
+    def setInsetBlockStartNull: Self = StObject.set(x, "insetBlockStart", null)
     
     @scala.inline
-    def setInsetInlineVarargs(value: ((js.UndefOr[InsetInlineProperty[Double | String]]) | Null)*): Self = this.set("insetInline", js.Array(value :_*))
+    def setInsetBlockStartUndefined: Self = StObject.set(x, "insetBlockStart", js.undefined)
     
     @scala.inline
-    def setInsetInlineFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetInlineProperty[Double | String]]]
-    ): Self = this.set("insetInline", js.Any.fromFunction1(value))
+    def setInsetBlockStartVarargs(value: ((js.UndefOr[InsetBlockStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "insetBlockStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setInsetBlockUndefined: Self = StObject.set(x, "insetBlock", js.undefined)
+    
+    @scala.inline
+    def setInsetBlockVarargs(value: ((js.UndefOr[InsetBlockProperty[Double | String]]) | Null)*): Self = StObject.set(x, "insetBlock", js.Array(value :_*))
+    
+    @scala.inline
+    def setInsetFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetProperty[Double | String]]]): Self = StObject.set(x, "inset", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInsetInline(
@@ -6628,21 +6600,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[InsetInlineProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("insetInline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsetInline: Self = this.set("insetInline", js.undefined)
-    
-    @scala.inline
-    def setInsetInlineNull: Self = this.set("insetInline", null)
-    
-    @scala.inline
-    def setInsetInlineEndVarargs(value: ((js.UndefOr[InsetInlineEndProperty[Double | String]]) | Null)*): Self = this.set("insetInlineEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setInsetInlineEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetInlineEndProperty[Double | String]]]
-    ): Self = this.set("insetInlineEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInsetInlineEnd(
@@ -6650,21 +6608,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[InsetInlineEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("insetInlineEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInsetInlineEnd: Self = this.set("insetInlineEnd", js.undefined)
+    def setInsetInlineEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetInlineEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "insetInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsetInlineEndNull: Self = this.set("insetInlineEnd", null)
+    def setInsetInlineEndNull: Self = StObject.set(x, "insetInlineEnd", null)
     
     @scala.inline
-    def setInsetInlineStartVarargs(value: ((js.UndefOr[InsetInlineStartProperty[Double | String]]) | Null)*): Self = this.set("insetInlineStart", js.Array(value :_*))
+    def setInsetInlineEndUndefined: Self = StObject.set(x, "insetInlineEnd", js.undefined)
     
     @scala.inline
-    def setInsetInlineStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetInlineStartProperty[Double | String]]]
-    ): Self = this.set("insetInlineStart", js.Any.fromFunction1(value))
+    def setInsetInlineEndVarargs(value: ((js.UndefOr[InsetInlineEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "insetInlineEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setInsetInlineFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetInlineProperty[Double | String]]]
+    ): Self = StObject.set(x, "insetInline", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setInsetInlineNull: Self = StObject.set(x, "insetInline", null)
     
     @scala.inline
     def setInsetInlineStart(
@@ -6672,104 +6638,121 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[InsetInlineStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("insetInlineStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInsetInlineStart: Self = this.set("insetInlineStart", js.undefined)
+    def setInsetInlineStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[InsetInlineStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "insetInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsetInlineStartNull: Self = this.set("insetInlineStart", null)
+    def setInsetInlineStartNull: Self = StObject.set(x, "insetInlineStart", null)
     
     @scala.inline
-    def setIsolationVarargs(value: (js.UndefOr[IsolationProperty] | Null)*): Self = this.set("isolation", js.Array(value :_*))
+    def setInsetInlineStartUndefined: Self = StObject.set(x, "insetInlineStart", js.undefined)
     
     @scala.inline
-    def setIsolationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[IsolationProperty]]): Self = this.set("isolation", js.Any.fromFunction1(value))
+    def setInsetInlineStartVarargs(value: ((js.UndefOr[InsetInlineStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "insetInlineStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setInsetInlineUndefined: Self = StObject.set(x, "insetInline", js.undefined)
+    
+    @scala.inline
+    def setInsetInlineVarargs(value: ((js.UndefOr[InsetInlineProperty[Double | String]]) | Null)*): Self = StObject.set(x, "insetInline", js.Array(value :_*))
+    
+    @scala.inline
+    def setInsetNull: Self = StObject.set(x, "inset", null)
+    
+    @scala.inline
+    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    
+    @scala.inline
+    def setInsetVarargs(value: ((js.UndefOr[InsetProperty[Double | String]]) | Null)*): Self = StObject.set(x, "inset", js.Array(value :_*))
     
     @scala.inline
     def setIsolation(
       value: ResponsiveStyleValue[js.UndefOr[IsolationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[IsolationProperty]]]) | SystemStyleObject
-    ): Self = this.set("isolation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "isolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsolation: Self = this.set("isolation", js.undefined)
+    def setIsolationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[IsolationProperty]]): Self = StObject.set(x, "isolation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsolationNull: Self = this.set("isolation", null)
+    def setIsolationNull: Self = StObject.set(x, "isolation", null)
     
     @scala.inline
-    def setJustifyContentVarargs(value: (js.UndefOr[JustifyContentProperty] | Null)*): Self = this.set("justifyContent", js.Array(value :_*))
+    def setIsolationUndefined: Self = StObject.set(x, "isolation", js.undefined)
     
     @scala.inline
-    def setJustifyContentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[JustifyContentProperty]]): Self = this.set("justifyContent", js.Any.fromFunction1(value))
+    def setIsolationVarargs(value: (js.UndefOr[IsolationProperty] | Null)*): Self = StObject.set(x, "isolation", js.Array(value :_*))
     
     @scala.inline
     def setJustifyContent(
       value: ResponsiveStyleValue[js.UndefOr[JustifyContentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[JustifyContentProperty]]]) | SystemStyleObject
-    ): Self = this.set("justifyContent", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJustifyContent: Self = this.set("justifyContent", js.undefined)
+    def setJustifyContentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[JustifyContentProperty]]): Self = StObject.set(x, "justifyContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJustifyContentNull: Self = this.set("justifyContent", null)
+    def setJustifyContentNull: Self = StObject.set(x, "justifyContent", null)
     
     @scala.inline
-    def setJustifyItemsVarargs(value: (js.UndefOr[JustifyItemsProperty] | Null)*): Self = this.set("justifyItems", js.Array(value :_*))
+    def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     
     @scala.inline
-    def setJustifyItemsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[JustifyItemsProperty]]): Self = this.set("justifyItems", js.Any.fromFunction1(value))
+    def setJustifyContentVarargs(value: (js.UndefOr[JustifyContentProperty] | Null)*): Self = StObject.set(x, "justifyContent", js.Array(value :_*))
     
     @scala.inline
     def setJustifyItems(
       value: ResponsiveStyleValue[js.UndefOr[JustifyItemsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[JustifyItemsProperty]]]) | SystemStyleObject
-    ): Self = this.set("justifyItems", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJustifyItems: Self = this.set("justifyItems", js.undefined)
+    def setJustifyItemsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[JustifyItemsProperty]]): Self = StObject.set(x, "justifyItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJustifyItemsNull: Self = this.set("justifyItems", null)
+    def setJustifyItemsNull: Self = StObject.set(x, "justifyItems", null)
     
     @scala.inline
-    def setJustifySelfVarargs(value: (js.UndefOr[JustifySelfProperty] | Null)*): Self = this.set("justifySelf", js.Array(value :_*))
+    def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
     
     @scala.inline
-    def setJustifySelfFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[JustifySelfProperty]]): Self = this.set("justifySelf", js.Any.fromFunction1(value))
+    def setJustifyItemsVarargs(value: (js.UndefOr[JustifyItemsProperty] | Null)*): Self = StObject.set(x, "justifyItems", js.Array(value :_*))
     
     @scala.inline
     def setJustifySelf(
       value: ResponsiveStyleValue[js.UndefOr[JustifySelfProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[JustifySelfProperty]]]) | SystemStyleObject
-    ): Self = this.set("justifySelf", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJustifySelf: Self = this.set("justifySelf", js.undefined)
+    def setJustifySelfFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[JustifySelfProperty]]): Self = StObject.set(x, "justifySelf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJustifySelfNull: Self = this.set("justifySelf", null)
+    def setJustifySelfNull: Self = StObject.set(x, "justifySelf", null)
     
     @scala.inline
-    def setJustifyTracksVarargs(value: (js.UndefOr[JustifyTracksProperty] | Null)*): Self = this.set("justifyTracks", js.Array(value :_*))
+    def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
     
     @scala.inline
-    def setJustifyTracksFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[JustifyTracksProperty]]): Self = this.set("justifyTracks", js.Any.fromFunction1(value))
+    def setJustifySelfVarargs(value: (js.UndefOr[JustifySelfProperty] | Null)*): Self = StObject.set(x, "justifySelf", js.Array(value :_*))
     
     @scala.inline
     def setJustifyTracks(
       value: ResponsiveStyleValue[js.UndefOr[JustifyTracksProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[JustifyTracksProperty]]]) | SystemStyleObject
-    ): Self = this.set("justifyTracks", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "justifyTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJustifyTracks: Self = this.set("justifyTracks", js.undefined)
+    def setJustifyTracksFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[JustifyTracksProperty]]): Self = StObject.set(x, "justifyTracks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJustifyTracksNull: Self = this.set("justifyTracks", null)
+    def setJustifyTracksNull: Self = StObject.set(x, "justifyTracks", null)
     
     @scala.inline
-    def setLeftVarargs(value: ((js.UndefOr[LeftProperty[Double | String]]) | Null)*): Self = this.set("left", js.Array(value :_*))
+    def setJustifyTracksUndefined: Self = StObject.set(x, "justifyTracks", js.undefined)
     
     @scala.inline
-    def setLeftFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LeftProperty[Double | String]]]): Self = this.set("left", js.Any.fromFunction1(value))
+    def setJustifyTracksVarargs(value: (js.UndefOr[JustifyTracksProperty] | Null)*): Self = StObject.set(x, "justifyTracks", js.Array(value :_*))
     
     @scala.inline
     def setLeft(
@@ -6777,21 +6760,19 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[LeftProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("left", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setLeftFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LeftProperty[Double | String]]]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLeftNull: Self = this.set("left", null)
+    def setLeftNull: Self = StObject.set(x, "left", null)
     
     @scala.inline
-    def setLetterSpacingVarargs(value: ((js.UndefOr[LetterSpacingProperty[Double | String]]) | Null)*): Self = this.set("letterSpacing", js.Array(value :_*))
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def setLetterSpacingFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LetterSpacingProperty[Double | String]]]
-    ): Self = this.set("letterSpacing", js.Any.fromFunction1(value))
+    def setLeftVarargs(value: ((js.UndefOr[LeftProperty[Double | String]]) | Null)*): Self = StObject.set(x, "left", js.Array(value :_*))
     
     @scala.inline
     def setLetterSpacing(
@@ -6799,70 +6780,72 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[LetterSpacingProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    def setLetterSpacingFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LetterSpacingProperty[Double | String]]]
+    ): Self = StObject.set(x, "letterSpacing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLetterSpacingNull: Self = this.set("letterSpacing", null)
+    def setLetterSpacingNull: Self = StObject.set(x, "letterSpacing", null)
     
     @scala.inline
-    def setLightingColorVarargs(value: (js.UndefOr[LightingColorProperty] | Null)*): Self = this.set("lightingColor", js.Array(value :_*))
+    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
     @scala.inline
-    def setLightingColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LightingColorProperty]]): Self = this.set("lightingColor", js.Any.fromFunction1(value))
+    def setLetterSpacingVarargs(value: ((js.UndefOr[LetterSpacingProperty[Double | String]]) | Null)*): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
     
     @scala.inline
     def setLightingColor(
       value: ResponsiveStyleValue[js.UndefOr[LightingColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[LightingColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("lightingColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lightingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLightingColor: Self = this.set("lightingColor", js.undefined)
+    def setLightingColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LightingColorProperty]]): Self = StObject.set(x, "lightingColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLightingColorNull: Self = this.set("lightingColor", null)
+    def setLightingColorNull: Self = StObject.set(x, "lightingColor", null)
     
     @scala.inline
-    def setLineBreakVarargs(value: (js.UndefOr[LineBreakProperty] | Null)*): Self = this.set("lineBreak", js.Array(value :_*))
+    def setLightingColorUndefined: Self = StObject.set(x, "lightingColor", js.undefined)
     
     @scala.inline
-    def setLineBreakFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LineBreakProperty]]): Self = this.set("lineBreak", js.Any.fromFunction1(value))
+    def setLightingColorVarargs(value: (js.UndefOr[LightingColorProperty] | Null)*): Self = StObject.set(x, "lightingColor", js.Array(value :_*))
     
     @scala.inline
     def setLineBreak(
       value: ResponsiveStyleValue[js.UndefOr[LineBreakProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[LineBreakProperty]]]) | SystemStyleObject
-    ): Self = this.set("lineBreak", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineBreak: Self = this.set("lineBreak", js.undefined)
+    def setLineBreakFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LineBreakProperty]]): Self = StObject.set(x, "lineBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLineBreakNull: Self = this.set("lineBreak", null)
+    def setLineBreakNull: Self = StObject.set(x, "lineBreak", null)
     
     @scala.inline
-    def setLineClampVarargs(value: (js.UndefOr[LineClampProperty] | Null)*): Self = this.set("lineClamp", js.Array(value :_*))
+    def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
     
     @scala.inline
-    def setLineClampFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LineClampProperty]]): Self = this.set("lineClamp", js.Any.fromFunction1(value))
+    def setLineBreakVarargs(value: (js.UndefOr[LineBreakProperty] | Null)*): Self = StObject.set(x, "lineBreak", js.Array(value :_*))
     
     @scala.inline
     def setLineClamp(
       value: ResponsiveStyleValue[js.UndefOr[LineClampProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[LineClampProperty]]]) | SystemStyleObject
-    ): Self = this.set("lineClamp", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineClamp: Self = this.set("lineClamp", js.undefined)
+    def setLineClampFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LineClampProperty]]): Self = StObject.set(x, "lineClamp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLineClampNull: Self = this.set("lineClamp", null)
+    def setLineClampNull: Self = StObject.set(x, "lineClamp", null)
     
     @scala.inline
-    def setLineHeightVarargs(value: ((js.UndefOr[LineHeightProperty[Double | String]]) | Null)*): Self = this.set("lineHeight", js.Array(value :_*))
+    def setLineClampUndefined: Self = StObject.set(x, "lineClamp", js.undefined)
     
     @scala.inline
-    def setLineHeightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LineHeightProperty[Double | String]]]): Self = this.set("lineHeight", js.Any.fromFunction1(value))
+    def setLineClampVarargs(value: (js.UndefOr[LineClampProperty] | Null)*): Self = StObject.set(x, "lineClamp", js.Array(value :_*))
     
     @scala.inline
     def setLineHeight(
@@ -6870,21 +6853,13 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[LineHeightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setLineHeightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LineHeightProperty[Double | String]]]): Self = StObject.set(x, "lineHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLineHeightNull: Self = this.set("lineHeight", null)
-    
-    @scala.inline
-    def setLineHeightStepVarargs(value: ((js.UndefOr[LineHeightStepProperty[Double | String]]) | Null)*): Self = this.set("lineHeightStep", js.Array(value :_*))
-    
-    @scala.inline
-    def setLineHeightStepFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LineHeightStepProperty[Double | String]]]
-    ): Self = this.set("lineHeightStep", js.Any.fromFunction1(value))
+    def setLineHeightNull: Self = StObject.set(x, "lineHeight", null)
     
     @scala.inline
     def setLineHeightStep(
@@ -6892,95 +6867,95 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[LineHeightStepProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("lineHeightStep", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lineHeightStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineHeightStep: Self = this.set("lineHeightStep", js.undefined)
+    def setLineHeightStepFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[LineHeightStepProperty[Double | String]]]
+    ): Self = StObject.set(x, "lineHeightStep", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLineHeightStepNull: Self = this.set("lineHeightStep", null)
+    def setLineHeightStepNull: Self = StObject.set(x, "lineHeightStep", null)
     
     @scala.inline
-    def setListStyleVarargs(value: (js.UndefOr[ListStyleProperty] | Null)*): Self = this.set("listStyle", js.Array(value :_*))
+    def setLineHeightStepUndefined: Self = StObject.set(x, "lineHeightStep", js.undefined)
     
     @scala.inline
-    def setListStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ListStyleProperty]]): Self = this.set("listStyle", js.Any.fromFunction1(value))
+    def setLineHeightStepVarargs(value: ((js.UndefOr[LineHeightStepProperty[Double | String]]) | Null)*): Self = StObject.set(x, "lineHeightStep", js.Array(value :_*))
+    
+    @scala.inline
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    
+    @scala.inline
+    def setLineHeightVarargs(value: ((js.UndefOr[LineHeightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
     
     @scala.inline
     def setListStyle(
       value: ResponsiveStyleValue[js.UndefOr[ListStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ListStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("listStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListStyle: Self = this.set("listStyle", js.undefined)
-    
-    @scala.inline
-    def setListStyleNull: Self = this.set("listStyle", null)
-    
-    @scala.inline
-    def setListStyleImageVarargs(value: (js.UndefOr[ListStyleImageProperty] | Null)*): Self = this.set("listStyleImage", js.Array(value :_*))
-    
-    @scala.inline
-    def setListStyleImageFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ListStyleImageProperty]]): Self = this.set("listStyleImage", js.Any.fromFunction1(value))
+    def setListStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ListStyleProperty]]): Self = StObject.set(x, "listStyle", js.Any.fromFunction1(value))
     
     @scala.inline
     def setListStyleImage(
       value: ResponsiveStyleValue[js.UndefOr[ListStyleImageProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ListStyleImageProperty]]]) | SystemStyleObject
-    ): Self = this.set("listStyleImage", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "listStyleImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListStyleImage: Self = this.set("listStyleImage", js.undefined)
+    def setListStyleImageFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ListStyleImageProperty]]): Self = StObject.set(x, "listStyleImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setListStyleImageNull: Self = this.set("listStyleImage", null)
+    def setListStyleImageNull: Self = StObject.set(x, "listStyleImage", null)
     
     @scala.inline
-    def setListStylePositionVarargs(value: (js.UndefOr[ListStylePositionProperty] | Null)*): Self = this.set("listStylePosition", js.Array(value :_*))
+    def setListStyleImageUndefined: Self = StObject.set(x, "listStyleImage", js.undefined)
     
     @scala.inline
-    def setListStylePositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ListStylePositionProperty]]): Self = this.set("listStylePosition", js.Any.fromFunction1(value))
+    def setListStyleImageVarargs(value: (js.UndefOr[ListStyleImageProperty] | Null)*): Self = StObject.set(x, "listStyleImage", js.Array(value :_*))
+    
+    @scala.inline
+    def setListStyleNull: Self = StObject.set(x, "listStyle", null)
     
     @scala.inline
     def setListStylePosition(
       value: ResponsiveStyleValue[js.UndefOr[ListStylePositionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ListStylePositionProperty]]]) | SystemStyleObject
-    ): Self = this.set("listStylePosition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "listStylePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListStylePosition: Self = this.set("listStylePosition", js.undefined)
+    def setListStylePositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ListStylePositionProperty]]): Self = StObject.set(x, "listStylePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setListStylePositionNull: Self = this.set("listStylePosition", null)
+    def setListStylePositionNull: Self = StObject.set(x, "listStylePosition", null)
     
     @scala.inline
-    def setListStyleTypeVarargs(value: (js.UndefOr[ListStyleTypeProperty] | Null)*): Self = this.set("listStyleType", js.Array(value :_*))
+    def setListStylePositionUndefined: Self = StObject.set(x, "listStylePosition", js.undefined)
     
     @scala.inline
-    def setListStyleTypeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ListStyleTypeProperty]]): Self = this.set("listStyleType", js.Any.fromFunction1(value))
+    def setListStylePositionVarargs(value: (js.UndefOr[ListStylePositionProperty] | Null)*): Self = StObject.set(x, "listStylePosition", js.Array(value :_*))
     
     @scala.inline
     def setListStyleType(
       value: ResponsiveStyleValue[js.UndefOr[ListStyleTypeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ListStyleTypeProperty]]]) | SystemStyleObject
-    ): Self = this.set("listStyleType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListStyleType: Self = this.set("listStyleType", js.undefined)
+    def setListStyleTypeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ListStyleTypeProperty]]): Self = StObject.set(x, "listStyleType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setListStyleTypeNull: Self = this.set("listStyleType", null)
+    def setListStyleTypeNull: Self = StObject.set(x, "listStyleType", null)
     
     @scala.inline
-    def setMVarargs(
-      value: (js.UndefOr[
-          (js.Array[MarginProperty[Double | String]]) | (MarginProperty[Double | String]) | Null
-        ])*
-    ): Self = this.set("m", js.Array(value :_*))
+    def setListStyleTypeUndefined: Self = StObject.set(x, "listStyleType", js.undefined)
     
     @scala.inline
-    def setMFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[(MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])]
-        ]
-    ): Self = this.set("m", js.Any.fromFunction1(value))
+    def setListStyleTypeVarargs(value: (js.UndefOr[ListStyleTypeProperty] | Null)*): Self = StObject.set(x, "listStyleType", js.Array(value :_*))
+    
+    @scala.inline
+    def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
+    
+    @scala.inline
+    def setListStyleVarargs(value: (js.UndefOr[ListStyleProperty] | Null)*): Self = StObject.set(x, "listStyle", js.Array(value :_*))
     
     @scala.inline
     def setM(
@@ -6992,19 +6967,27 @@ object SystemCssProperties {
             js.UndefOr[(MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("m", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteM: Self = this.set("m", js.undefined)
+    def setMFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[(MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])]
+        ]
+    ): Self = StObject.set(x, "m", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMNull: Self = this.set("m", null)
+    def setMNull: Self = StObject.set(x, "m", null)
     
     @scala.inline
-    def setMarginVarargs(value: ((js.UndefOr[MarginProperty[Double | String]]) | Null)*): Self = this.set("margin", js.Array(value :_*))
+    def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
     @scala.inline
-    def setMarginFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginProperty[Double | String]]]): Self = this.set("margin", js.Any.fromFunction1(value))
+    def setMVarargs(
+      value: (js.UndefOr[
+          (js.Array[MarginProperty[Double | String]]) | (MarginProperty[Double | String]) | Null
+        ])*
+    ): Self = StObject.set(x, "m", js.Array(value :_*))
     
     @scala.inline
     def setMargin(
@@ -7012,21 +6995,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("margin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
-    
-    @scala.inline
-    def setMarginNull: Self = this.set("margin", null)
-    
-    @scala.inline
-    def setMarginBlockVarargs(value: ((js.UndefOr[MarginBlockProperty[Double | String]]) | Null)*): Self = this.set("marginBlock", js.Array(value :_*))
-    
-    @scala.inline
-    def setMarginBlockFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginBlockProperty[Double | String]]]
-    ): Self = this.set("marginBlock", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMarginBlock(
@@ -7034,21 +7003,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginBlockProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("marginBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarginBlock: Self = this.set("marginBlock", js.undefined)
-    
-    @scala.inline
-    def setMarginBlockNull: Self = this.set("marginBlock", null)
-    
-    @scala.inline
-    def setMarginBlockEndVarargs(value: ((js.UndefOr[MarginBlockEndProperty[Double | String]]) | Null)*): Self = this.set("marginBlockEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setMarginBlockEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginBlockEndProperty[Double | String]]]
-    ): Self = this.set("marginBlockEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMarginBlockEnd(
@@ -7056,21 +7011,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginBlockEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("marginBlockEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginBlockEnd: Self = this.set("marginBlockEnd", js.undefined)
+    def setMarginBlockEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginBlockEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "marginBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginBlockEndNull: Self = this.set("marginBlockEnd", null)
+    def setMarginBlockEndNull: Self = StObject.set(x, "marginBlockEnd", null)
     
     @scala.inline
-    def setMarginBlockStartVarargs(value: ((js.UndefOr[MarginBlockStartProperty[Double | String]]) | Null)*): Self = this.set("marginBlockStart", js.Array(value :_*))
+    def setMarginBlockEndUndefined: Self = StObject.set(x, "marginBlockEnd", js.undefined)
     
     @scala.inline
-    def setMarginBlockStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginBlockStartProperty[Double | String]]]
-    ): Self = this.set("marginBlockStart", js.Any.fromFunction1(value))
+    def setMarginBlockEndVarargs(value: ((js.UndefOr[MarginBlockEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "marginBlockEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setMarginBlockFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginBlockProperty[Double | String]]]
+    ): Self = StObject.set(x, "marginBlock", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setMarginBlockNull: Self = StObject.set(x, "marginBlock", null)
     
     @scala.inline
     def setMarginBlockStart(
@@ -7078,21 +7041,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginBlockStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("marginBlockStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginBlockStart: Self = this.set("marginBlockStart", js.undefined)
+    def setMarginBlockStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginBlockStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "marginBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginBlockStartNull: Self = this.set("marginBlockStart", null)
+    def setMarginBlockStartNull: Self = StObject.set(x, "marginBlockStart", null)
     
     @scala.inline
-    def setMarginBottomVarargs(value: ((js.UndefOr[MarginBottomProperty[Double | String]]) | Null)*): Self = this.set("marginBottom", js.Array(value :_*))
+    def setMarginBlockStartUndefined: Self = StObject.set(x, "marginBlockStart", js.undefined)
     
     @scala.inline
-    def setMarginBottomFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginBottomProperty[Double | String]]]
-    ): Self = this.set("marginBottom", js.Any.fromFunction1(value))
+    def setMarginBlockStartVarargs(value: ((js.UndefOr[MarginBlockStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "marginBlockStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setMarginBlockUndefined: Self = StObject.set(x, "marginBlock", js.undefined)
+    
+    @scala.inline
+    def setMarginBlockVarargs(value: ((js.UndefOr[MarginBlockProperty[Double | String]]) | Null)*): Self = StObject.set(x, "marginBlock", js.Array(value :_*))
     
     @scala.inline
     def setMarginBottom(
@@ -7100,21 +7069,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginBottomProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    def setMarginBottomFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginBottomProperty[Double | String]]]
+    ): Self = StObject.set(x, "marginBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginBottomNull: Self = this.set("marginBottom", null)
+    def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
     
     @scala.inline
-    def setMarginInlineVarargs(value: ((js.UndefOr[MarginInlineProperty[Double | String]]) | Null)*): Self = this.set("marginInline", js.Array(value :_*))
+    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
     @scala.inline
-    def setMarginInlineFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginInlineProperty[Double | String]]]
-    ): Self = this.set("marginInline", js.Any.fromFunction1(value))
+    def setMarginBottomVarargs(value: ((js.UndefOr[MarginBottomProperty[Double | String]]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+    
+    @scala.inline
+    def setMarginFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginProperty[Double | String]]]): Self = StObject.set(x, "margin", js.Any.fromFunction1(value))
     
     @scala.inline
     def setMarginInline(
@@ -7122,21 +7094,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginInlineProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("marginInline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarginInline: Self = this.set("marginInline", js.undefined)
-    
-    @scala.inline
-    def setMarginInlineNull: Self = this.set("marginInline", null)
-    
-    @scala.inline
-    def setMarginInlineEndVarargs(value: ((js.UndefOr[MarginInlineEndProperty[Double | String]]) | Null)*): Self = this.set("marginInlineEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setMarginInlineEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginInlineEndProperty[Double | String]]]
-    ): Self = this.set("marginInlineEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "marginInline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMarginInlineEnd(
@@ -7144,21 +7102,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginInlineEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("marginInlineEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginInlineEnd: Self = this.set("marginInlineEnd", js.undefined)
+    def setMarginInlineEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginInlineEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "marginInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginInlineEndNull: Self = this.set("marginInlineEnd", null)
+    def setMarginInlineEndNull: Self = StObject.set(x, "marginInlineEnd", null)
     
     @scala.inline
-    def setMarginInlineStartVarargs(value: ((js.UndefOr[MarginInlineStartProperty[Double | String]]) | Null)*): Self = this.set("marginInlineStart", js.Array(value :_*))
+    def setMarginInlineEndUndefined: Self = StObject.set(x, "marginInlineEnd", js.undefined)
     
     @scala.inline
-    def setMarginInlineStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginInlineStartProperty[Double | String]]]
-    ): Self = this.set("marginInlineStart", js.Any.fromFunction1(value))
+    def setMarginInlineEndVarargs(value: ((js.UndefOr[MarginInlineEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "marginInlineEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setMarginInlineFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginInlineProperty[Double | String]]]
+    ): Self = StObject.set(x, "marginInline", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setMarginInlineNull: Self = StObject.set(x, "marginInline", null)
     
     @scala.inline
     def setMarginInlineStart(
@@ -7166,19 +7132,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginInlineStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("marginInlineStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginInlineStart: Self = this.set("marginInlineStart", js.undefined)
+    def setMarginInlineStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginInlineStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "marginInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginInlineStartNull: Self = this.set("marginInlineStart", null)
+    def setMarginInlineStartNull: Self = StObject.set(x, "marginInlineStart", null)
     
     @scala.inline
-    def setMarginLeftVarargs(value: ((js.UndefOr[MarginLeftProperty[Double | String]]) | Null)*): Self = this.set("marginLeft", js.Array(value :_*))
+    def setMarginInlineStartUndefined: Self = StObject.set(x, "marginInlineStart", js.undefined)
     
     @scala.inline
-    def setMarginLeftFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginLeftProperty[Double | String]]]): Self = this.set("marginLeft", js.Any.fromFunction1(value))
+    def setMarginInlineStartVarargs(value: ((js.UndefOr[MarginInlineStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "marginInlineStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setMarginInlineUndefined: Self = StObject.set(x, "marginInline", js.undefined)
+    
+    @scala.inline
+    def setMarginInlineVarargs(value: ((js.UndefOr[MarginInlineProperty[Double | String]]) | Null)*): Self = StObject.set(x, "marginInline", js.Array(value :_*))
     
     @scala.inline
     def setMarginLeft(
@@ -7186,21 +7160,22 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginLeftProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setMarginLeftFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginLeftProperty[Double | String]]]): Self = StObject.set(x, "marginLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginLeftNull: Self = this.set("marginLeft", null)
+    def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
     
     @scala.inline
-    def setMarginRightVarargs(value: ((js.UndefOr[MarginRightProperty[Double | String]]) | Null)*): Self = this.set("marginRight", js.Array(value :_*))
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def setMarginRightFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginRightProperty[Double | String]]]
-    ): Self = this.set("marginRight", js.Any.fromFunction1(value))
+    def setMarginLeftVarargs(value: ((js.UndefOr[MarginLeftProperty[Double | String]]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+    
+    @scala.inline
+    def setMarginNull: Self = StObject.set(x, "margin", null)
     
     @scala.inline
     def setMarginRight(
@@ -7208,19 +7183,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginRightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    def setMarginRightFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginRightProperty[Double | String]]]
+    ): Self = StObject.set(x, "marginRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginRightNull: Self = this.set("marginRight", null)
+    def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
     
     @scala.inline
-    def setMarginTopVarargs(value: ((js.UndefOr[MarginTopProperty[Double | String]]) | Null)*): Self = this.set("marginTop", js.Array(value :_*))
+    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
     @scala.inline
-    def setMarginTopFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginTopProperty[Double | String]]]): Self = this.set("marginTop", js.Any.fromFunction1(value))
+    def setMarginRightVarargs(value: ((js.UndefOr[MarginRightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
     
     @scala.inline
     def setMarginTop(
@@ -7228,29 +7205,25 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MarginTopProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setMarginTopFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarginTopProperty[Double | String]]]): Self = StObject.set(x, "marginTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginTopNull: Self = this.set("marginTop", null)
+    def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
     
     @scala.inline
-    def setMarginXVarargs(
-      value: (js.UndefOr[
-          (js.Array[MarginLeftProperty[Double | String]]) | (MarginLeftProperty[Double | String]) | Null
-        ])*
-    ): Self = this.set("marginX", js.Array(value :_*))
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def setMarginXFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
-          ]
-        ]
-    ): Self = this.set("marginX", js.Any.fromFunction1(value))
+    def setMarginTopVarargs(value: ((js.UndefOr[MarginTopProperty[Double | String]]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+    
+    @scala.inline
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    @scala.inline
+    def setMarginVarargs(value: ((js.UndefOr[MarginProperty[Double | String]]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
     def setMarginX(
@@ -7266,29 +7239,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("marginX", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginX: Self = this.set("marginX", js.undefined)
-    
-    @scala.inline
-    def setMarginXNull: Self = this.set("marginX", null)
-    
-    @scala.inline
-    def setMarginYVarargs(
-      value: (js.UndefOr[
-          (js.Array[MarginTopProperty[Double | String]]) | (MarginTopProperty[Double | String]) | Null
-        ])*
-    ): Self = this.set("marginY", js.Array(value :_*))
-    
-    @scala.inline
-    def setMarginYFunction1(
+    def setMarginXFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
+            (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
           ]
         ]
-    ): Self = this.set("marginY", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "marginX", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setMarginXNull: Self = StObject.set(x, "marginX", null)
+    
+    @scala.inline
+    def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
+    
+    @scala.inline
+    def setMarginXVarargs(
+      value: (js.UndefOr[
+          (js.Array[MarginLeftProperty[Double | String]]) | (MarginLeftProperty[Double | String]) | Null
+        ])*
+    ): Self = StObject.set(x, "marginX", js.Array(value :_*))
     
     @scala.inline
     def setMarginY(
@@ -7304,87 +7277,97 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("marginY", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginY: Self = this.set("marginY", js.undefined)
+    def setMarginYFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
+          ]
+        ]
+    ): Self = StObject.set(x, "marginY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginYNull: Self = this.set("marginY", null)
+    def setMarginYNull: Self = StObject.set(x, "marginY", null)
     
     @scala.inline
-    def setMarkerVarargs(value: (js.UndefOr[MarkerProperty] | Null)*): Self = this.set("marker", js.Array(value :_*))
+    def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
     
     @scala.inline
-    def setMarkerFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarkerProperty]]): Self = this.set("marker", js.Any.fromFunction1(value))
+    def setMarginYVarargs(
+      value: (js.UndefOr[
+          (js.Array[MarginTopProperty[Double | String]]) | (MarginTopProperty[Double | String]) | Null
+        ])*
+    ): Self = StObject.set(x, "marginY", js.Array(value :_*))
     
     @scala.inline
     def setMarker(
       value: ResponsiveStyleValue[js.UndefOr[MarkerProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MarkerProperty]]]) | SystemStyleObject
-    ): Self = this.set("marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
-    
-    @scala.inline
-    def setMarkerNull: Self = this.set("marker", null)
-    
-    @scala.inline
-    def setMarkerEndVarargs(value: (js.UndefOr[MarkerEndProperty] | Null)*): Self = this.set("markerEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setMarkerEndFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarkerEndProperty]]): Self = this.set("markerEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMarkerEnd(
       value: ResponsiveStyleValue[js.UndefOr[MarkerEndProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MarkerEndProperty]]]) | SystemStyleObject
-    ): Self = this.set("markerEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarkerEnd: Self = this.set("markerEnd", js.undefined)
+    def setMarkerEndFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarkerEndProperty]]): Self = StObject.set(x, "markerEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarkerEndNull: Self = this.set("markerEnd", null)
+    def setMarkerEndNull: Self = StObject.set(x, "markerEnd", null)
     
     @scala.inline
-    def setMarkerMidVarargs(value: (js.UndefOr[MarkerMidProperty] | Null)*): Self = this.set("markerMid", js.Array(value :_*))
+    def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
     
     @scala.inline
-    def setMarkerMidFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarkerMidProperty]]): Self = this.set("markerMid", js.Any.fromFunction1(value))
+    def setMarkerEndVarargs(value: (js.UndefOr[MarkerEndProperty] | Null)*): Self = StObject.set(x, "markerEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setMarkerFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarkerProperty]]): Self = StObject.set(x, "marker", js.Any.fromFunction1(value))
     
     @scala.inline
     def setMarkerMid(
       value: ResponsiveStyleValue[js.UndefOr[MarkerMidProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MarkerMidProperty]]]) | SystemStyleObject
-    ): Self = this.set("markerMid", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "markerMid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarkerMid: Self = this.set("markerMid", js.undefined)
+    def setMarkerMidFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarkerMidProperty]]): Self = StObject.set(x, "markerMid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarkerMidNull: Self = this.set("markerMid", null)
+    def setMarkerMidNull: Self = StObject.set(x, "markerMid", null)
     
     @scala.inline
-    def setMarkerStartVarargs(value: (js.UndefOr[MarkerStartProperty] | Null)*): Self = this.set("markerStart", js.Array(value :_*))
+    def setMarkerMidUndefined: Self = StObject.set(x, "markerMid", js.undefined)
     
     @scala.inline
-    def setMarkerStartFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarkerStartProperty]]): Self = this.set("markerStart", js.Any.fromFunction1(value))
+    def setMarkerMidVarargs(value: (js.UndefOr[MarkerMidProperty] | Null)*): Self = StObject.set(x, "markerMid", js.Array(value :_*))
+    
+    @scala.inline
+    def setMarkerNull: Self = StObject.set(x, "marker", null)
     
     @scala.inline
     def setMarkerStart(
       value: ResponsiveStyleValue[js.UndefOr[MarkerStartProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MarkerStartProperty]]]) | SystemStyleObject
-    ): Self = this.set("markerStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "markerStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarkerStart: Self = this.set("markerStart", js.undefined)
+    def setMarkerStartFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MarkerStartProperty]]): Self = StObject.set(x, "markerStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarkerStartNull: Self = this.set("markerStart", null)
+    def setMarkerStartNull: Self = StObject.set(x, "markerStart", null)
     
     @scala.inline
-    def setMaskVarargs(value: ((js.UndefOr[MaskProperty[Double | String]]) | Null)*): Self = this.set("mask", js.Array(value :_*))
+    def setMarkerStartUndefined: Self = StObject.set(x, "markerStart", js.undefined)
     
     @scala.inline
-    def setMaskFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskProperty[Double | String]]]): Self = this.set("mask", js.Any.fromFunction1(value))
+    def setMarkerStartVarargs(value: (js.UndefOr[MarkerStartProperty] | Null)*): Self = StObject.set(x, "markerStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    
+    @scala.inline
+    def setMarkerVarargs(value: (js.UndefOr[MarkerProperty] | Null)*): Self = StObject.set(x, "marker", js.Array(value :_*))
     
     @scala.inline
     def setMask(
@@ -7392,55 +7375,35 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MaskProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("mask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
-    
-    @scala.inline
-    def setMaskNull: Self = this.set("mask", null)
-    
-    @scala.inline
-    def setMaskBorderVarargs(value: (js.UndefOr[MaskBorderProperty] | Null)*): Self = this.set("maskBorder", js.Array(value :_*))
-    
-    @scala.inline
-    def setMaskBorderFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderProperty]]): Self = this.set("maskBorder", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMaskBorder(
       value: ResponsiveStyleValue[js.UndefOr[MaskBorderProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskBorderProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskBorder", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskBorder: Self = this.set("maskBorder", js.undefined)
-    
-    @scala.inline
-    def setMaskBorderNull: Self = this.set("maskBorder", null)
-    
-    @scala.inline
-    def setMaskBorderModeVarargs(value: (js.UndefOr[MaskBorderModeProperty] | Null)*): Self = this.set("maskBorderMode", js.Array(value :_*))
-    
-    @scala.inline
-    def setMaskBorderModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderModeProperty]]): Self = this.set("maskBorderMode", js.Any.fromFunction1(value))
+    def setMaskBorderFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderProperty]]): Self = StObject.set(x, "maskBorder", js.Any.fromFunction1(value))
     
     @scala.inline
     def setMaskBorderMode(
       value: ResponsiveStyleValue[js.UndefOr[MaskBorderModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskBorderModeProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskBorderMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskBorderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskBorderMode: Self = this.set("maskBorderMode", js.undefined)
+    def setMaskBorderModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderModeProperty]]): Self = StObject.set(x, "maskBorderMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskBorderModeNull: Self = this.set("maskBorderMode", null)
+    def setMaskBorderModeNull: Self = StObject.set(x, "maskBorderMode", null)
     
     @scala.inline
-    def setMaskBorderOutsetVarargs(value: ((js.UndefOr[MaskBorderOutsetProperty[Double | String]]) | Null)*): Self = this.set("maskBorderOutset", js.Array(value :_*))
+    def setMaskBorderModeUndefined: Self = StObject.set(x, "maskBorderMode", js.undefined)
     
     @scala.inline
-    def setMaskBorderOutsetFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderOutsetProperty[Double | String]]]
-    ): Self = this.set("maskBorderOutset", js.Any.fromFunction1(value))
+    def setMaskBorderModeVarargs(value: (js.UndefOr[MaskBorderModeProperty] | Null)*): Self = StObject.set(x, "maskBorderMode", js.Array(value :_*))
+    
+    @scala.inline
+    def setMaskBorderNull: Self = StObject.set(x, "maskBorder", null)
     
     @scala.inline
     def setMaskBorderOutset(
@@ -7448,72 +7411,78 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MaskBorderOutsetProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("maskBorderOutset", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskBorderOutset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskBorderOutset: Self = this.set("maskBorderOutset", js.undefined)
+    def setMaskBorderOutsetFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderOutsetProperty[Double | String]]]
+    ): Self = StObject.set(x, "maskBorderOutset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskBorderOutsetNull: Self = this.set("maskBorderOutset", null)
+    def setMaskBorderOutsetNull: Self = StObject.set(x, "maskBorderOutset", null)
     
     @scala.inline
-    def setMaskBorderRepeatVarargs(value: (js.UndefOr[MaskBorderRepeatProperty] | Null)*): Self = this.set("maskBorderRepeat", js.Array(value :_*))
+    def setMaskBorderOutsetUndefined: Self = StObject.set(x, "maskBorderOutset", js.undefined)
     
     @scala.inline
-    def setMaskBorderRepeatFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderRepeatProperty]]): Self = this.set("maskBorderRepeat", js.Any.fromFunction1(value))
+    def setMaskBorderOutsetVarargs(value: ((js.UndefOr[MaskBorderOutsetProperty[Double | String]]) | Null)*): Self = StObject.set(x, "maskBorderOutset", js.Array(value :_*))
     
     @scala.inline
     def setMaskBorderRepeat(
       value: ResponsiveStyleValue[js.UndefOr[MaskBorderRepeatProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskBorderRepeatProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskBorderRepeat", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskBorderRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskBorderRepeat: Self = this.set("maskBorderRepeat", js.undefined)
+    def setMaskBorderRepeatFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderRepeatProperty]]): Self = StObject.set(x, "maskBorderRepeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskBorderRepeatNull: Self = this.set("maskBorderRepeat", null)
+    def setMaskBorderRepeatNull: Self = StObject.set(x, "maskBorderRepeat", null)
     
     @scala.inline
-    def setMaskBorderSliceVarargs(value: (js.UndefOr[MaskBorderSliceProperty] | Null)*): Self = this.set("maskBorderSlice", js.Array(value :_*))
+    def setMaskBorderRepeatUndefined: Self = StObject.set(x, "maskBorderRepeat", js.undefined)
     
     @scala.inline
-    def setMaskBorderSliceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderSliceProperty]]): Self = this.set("maskBorderSlice", js.Any.fromFunction1(value))
+    def setMaskBorderRepeatVarargs(value: (js.UndefOr[MaskBorderRepeatProperty] | Null)*): Self = StObject.set(x, "maskBorderRepeat", js.Array(value :_*))
     
     @scala.inline
     def setMaskBorderSlice(
       value: ResponsiveStyleValue[js.UndefOr[MaskBorderSliceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskBorderSliceProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskBorderSlice", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskBorderSlice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskBorderSlice: Self = this.set("maskBorderSlice", js.undefined)
+    def setMaskBorderSliceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderSliceProperty]]): Self = StObject.set(x, "maskBorderSlice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskBorderSliceNull: Self = this.set("maskBorderSlice", null)
+    def setMaskBorderSliceNull: Self = StObject.set(x, "maskBorderSlice", null)
     
     @scala.inline
-    def setMaskBorderSourceVarargs(value: (js.UndefOr[MaskBorderSourceProperty] | Null)*): Self = this.set("maskBorderSource", js.Array(value :_*))
+    def setMaskBorderSliceUndefined: Self = StObject.set(x, "maskBorderSlice", js.undefined)
     
     @scala.inline
-    def setMaskBorderSourceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderSourceProperty]]): Self = this.set("maskBorderSource", js.Any.fromFunction1(value))
+    def setMaskBorderSliceVarargs(value: (js.UndefOr[MaskBorderSliceProperty] | Null)*): Self = StObject.set(x, "maskBorderSlice", js.Array(value :_*))
     
     @scala.inline
     def setMaskBorderSource(
       value: ResponsiveStyleValue[js.UndefOr[MaskBorderSourceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskBorderSourceProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskBorderSource", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskBorderSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskBorderSource: Self = this.set("maskBorderSource", js.undefined)
+    def setMaskBorderSourceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderSourceProperty]]): Self = StObject.set(x, "maskBorderSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskBorderSourceNull: Self = this.set("maskBorderSource", null)
+    def setMaskBorderSourceNull: Self = StObject.set(x, "maskBorderSource", null)
     
     @scala.inline
-    def setMaskBorderWidthVarargs(value: ((js.UndefOr[MaskBorderWidthProperty[Double | String]]) | Null)*): Self = this.set("maskBorderWidth", js.Array(value :_*))
+    def setMaskBorderSourceUndefined: Self = StObject.set(x, "maskBorderSource", js.undefined)
     
     @scala.inline
-    def setMaskBorderWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderWidthProperty[Double | String]]]
-    ): Self = this.set("maskBorderWidth", js.Any.fromFunction1(value))
+    def setMaskBorderSourceVarargs(value: (js.UndefOr[MaskBorderSourceProperty] | Null)*): Self = StObject.set(x, "maskBorderSource", js.Array(value :_*))
+    
+    @scala.inline
+    def setMaskBorderUndefined: Self = StObject.set(x, "maskBorder", js.undefined)
+    
+    @scala.inline
+    def setMaskBorderVarargs(value: (js.UndefOr[MaskBorderProperty] | Null)*): Self = StObject.set(x, "maskBorder", js.Array(value :_*))
     
     @scala.inline
     def setMaskBorderWidth(
@@ -7521,106 +7490,112 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MaskBorderWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("maskBorderWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskBorderWidth: Self = this.set("maskBorderWidth", js.undefined)
+    def setMaskBorderWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskBorderWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "maskBorderWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskBorderWidthNull: Self = this.set("maskBorderWidth", null)
+    def setMaskBorderWidthNull: Self = StObject.set(x, "maskBorderWidth", null)
     
     @scala.inline
-    def setMaskClipVarargs(value: (js.UndefOr[MaskClipProperty] | Null)*): Self = this.set("maskClip", js.Array(value :_*))
+    def setMaskBorderWidthUndefined: Self = StObject.set(x, "maskBorderWidth", js.undefined)
     
     @scala.inline
-    def setMaskClipFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskClipProperty]]): Self = this.set("maskClip", js.Any.fromFunction1(value))
+    def setMaskBorderWidthVarargs(value: ((js.UndefOr[MaskBorderWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "maskBorderWidth", js.Array(value :_*))
     
     @scala.inline
     def setMaskClip(
       value: ResponsiveStyleValue[js.UndefOr[MaskClipProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskClipProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskClip", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskClip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskClip: Self = this.set("maskClip", js.undefined)
+    def setMaskClipFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskClipProperty]]): Self = StObject.set(x, "maskClip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskClipNull: Self = this.set("maskClip", null)
+    def setMaskClipNull: Self = StObject.set(x, "maskClip", null)
     
     @scala.inline
-    def setMaskCompositeVarargs(value: (js.UndefOr[MaskCompositeProperty] | Null)*): Self = this.set("maskComposite", js.Array(value :_*))
+    def setMaskClipUndefined: Self = StObject.set(x, "maskClip", js.undefined)
     
     @scala.inline
-    def setMaskCompositeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskCompositeProperty]]): Self = this.set("maskComposite", js.Any.fromFunction1(value))
+    def setMaskClipVarargs(value: (js.UndefOr[MaskClipProperty] | Null)*): Self = StObject.set(x, "maskClip", js.Array(value :_*))
     
     @scala.inline
     def setMaskComposite(
       value: ResponsiveStyleValue[js.UndefOr[MaskCompositeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskCompositeProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskComposite", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskComposite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskComposite: Self = this.set("maskComposite", js.undefined)
+    def setMaskCompositeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskCompositeProperty]]): Self = StObject.set(x, "maskComposite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskCompositeNull: Self = this.set("maskComposite", null)
+    def setMaskCompositeNull: Self = StObject.set(x, "maskComposite", null)
     
     @scala.inline
-    def setMaskImageVarargs(value: (js.UndefOr[MaskImageProperty] | Null)*): Self = this.set("maskImage", js.Array(value :_*))
+    def setMaskCompositeUndefined: Self = StObject.set(x, "maskComposite", js.undefined)
     
     @scala.inline
-    def setMaskImageFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskImageProperty]]): Self = this.set("maskImage", js.Any.fromFunction1(value))
+    def setMaskCompositeVarargs(value: (js.UndefOr[MaskCompositeProperty] | Null)*): Self = StObject.set(x, "maskComposite", js.Array(value :_*))
+    
+    @scala.inline
+    def setMaskFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskProperty[Double | String]]]): Self = StObject.set(x, "mask", js.Any.fromFunction1(value))
     
     @scala.inline
     def setMaskImage(
       value: ResponsiveStyleValue[js.UndefOr[MaskImageProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskImageProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskImage", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskImage: Self = this.set("maskImage", js.undefined)
+    def setMaskImageFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskImageProperty]]): Self = StObject.set(x, "maskImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskImageNull: Self = this.set("maskImage", null)
+    def setMaskImageNull: Self = StObject.set(x, "maskImage", null)
     
     @scala.inline
-    def setMaskModeVarargs(value: (js.UndefOr[MaskModeProperty] | Null)*): Self = this.set("maskMode", js.Array(value :_*))
+    def setMaskImageUndefined: Self = StObject.set(x, "maskImage", js.undefined)
     
     @scala.inline
-    def setMaskModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskModeProperty]]): Self = this.set("maskMode", js.Any.fromFunction1(value))
+    def setMaskImageVarargs(value: (js.UndefOr[MaskImageProperty] | Null)*): Self = StObject.set(x, "maskImage", js.Array(value :_*))
     
     @scala.inline
     def setMaskMode(
       value: ResponsiveStyleValue[js.UndefOr[MaskModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskModeProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskMode: Self = this.set("maskMode", js.undefined)
+    def setMaskModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskModeProperty]]): Self = StObject.set(x, "maskMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskModeNull: Self = this.set("maskMode", null)
+    def setMaskModeNull: Self = StObject.set(x, "maskMode", null)
     
     @scala.inline
-    def setMaskOriginVarargs(value: (js.UndefOr[MaskOriginProperty] | Null)*): Self = this.set("maskOrigin", js.Array(value :_*))
+    def setMaskModeUndefined: Self = StObject.set(x, "maskMode", js.undefined)
     
     @scala.inline
-    def setMaskOriginFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskOriginProperty]]): Self = this.set("maskOrigin", js.Any.fromFunction1(value))
+    def setMaskModeVarargs(value: (js.UndefOr[MaskModeProperty] | Null)*): Self = StObject.set(x, "maskMode", js.Array(value :_*))
+    
+    @scala.inline
+    def setMaskNull: Self = StObject.set(x, "mask", null)
     
     @scala.inline
     def setMaskOrigin(
       value: ResponsiveStyleValue[js.UndefOr[MaskOriginProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskOriginProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskOrigin", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskOrigin: Self = this.set("maskOrigin", js.undefined)
+    def setMaskOriginFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskOriginProperty]]): Self = StObject.set(x, "maskOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskOriginNull: Self = this.set("maskOrigin", null)
+    def setMaskOriginNull: Self = StObject.set(x, "maskOrigin", null)
     
     @scala.inline
-    def setMaskPositionVarargs(value: ((js.UndefOr[MaskPositionProperty[Double | String]]) | Null)*): Self = this.set("maskPosition", js.Array(value :_*))
+    def setMaskOriginUndefined: Self = StObject.set(x, "maskOrigin", js.undefined)
     
     @scala.inline
-    def setMaskPositionFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskPositionProperty[Double | String]]]
-    ): Self = this.set("maskPosition", js.Any.fromFunction1(value))
+    def setMaskOriginVarargs(value: (js.UndefOr[MaskOriginProperty] | Null)*): Self = StObject.set(x, "maskOrigin", js.Array(value :_*))
     
     @scala.inline
     def setMaskPosition(
@@ -7628,36 +7603,38 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MaskPositionProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("maskPosition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskPosition: Self = this.set("maskPosition", js.undefined)
+    def setMaskPositionFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskPositionProperty[Double | String]]]
+    ): Self = StObject.set(x, "maskPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskPositionNull: Self = this.set("maskPosition", null)
+    def setMaskPositionNull: Self = StObject.set(x, "maskPosition", null)
     
     @scala.inline
-    def setMaskRepeatVarargs(value: (js.UndefOr[MaskRepeatProperty] | Null)*): Self = this.set("maskRepeat", js.Array(value :_*))
+    def setMaskPositionUndefined: Self = StObject.set(x, "maskPosition", js.undefined)
     
     @scala.inline
-    def setMaskRepeatFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskRepeatProperty]]): Self = this.set("maskRepeat", js.Any.fromFunction1(value))
+    def setMaskPositionVarargs(value: ((js.UndefOr[MaskPositionProperty[Double | String]]) | Null)*): Self = StObject.set(x, "maskPosition", js.Array(value :_*))
     
     @scala.inline
     def setMaskRepeat(
       value: ResponsiveStyleValue[js.UndefOr[MaskRepeatProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskRepeatProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskRepeat", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskRepeat: Self = this.set("maskRepeat", js.undefined)
+    def setMaskRepeatFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskRepeatProperty]]): Self = StObject.set(x, "maskRepeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskRepeatNull: Self = this.set("maskRepeat", null)
+    def setMaskRepeatNull: Self = StObject.set(x, "maskRepeat", null)
     
     @scala.inline
-    def setMaskSizeVarargs(value: ((js.UndefOr[MaskSizeProperty[Double | String]]) | Null)*): Self = this.set("maskSize", js.Array(value :_*))
+    def setMaskRepeatUndefined: Self = StObject.set(x, "maskRepeat", js.undefined)
     
     @scala.inline
-    def setMaskSizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskSizeProperty[Double | String]]]): Self = this.set("maskSize", js.Any.fromFunction1(value))
+    def setMaskRepeatVarargs(value: (js.UndefOr[MaskRepeatProperty] | Null)*): Self = StObject.set(x, "maskRepeat", js.Array(value :_*))
     
     @scala.inline
     def setMaskSize(
@@ -7665,72 +7642,76 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MaskSizeProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("maskSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskSize: Self = this.set("maskSize", js.undefined)
+    def setMaskSizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskSizeProperty[Double | String]]]): Self = StObject.set(x, "maskSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskSizeNull: Self = this.set("maskSize", null)
+    def setMaskSizeNull: Self = StObject.set(x, "maskSize", null)
     
     @scala.inline
-    def setMaskTypeVarargs(value: (js.UndefOr[MaskTypeProperty] | Null)*): Self = this.set("maskType", js.Array(value :_*))
+    def setMaskSizeUndefined: Self = StObject.set(x, "maskSize", js.undefined)
     
     @scala.inline
-    def setMaskTypeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskTypeProperty]]): Self = this.set("maskType", js.Any.fromFunction1(value))
+    def setMaskSizeVarargs(value: ((js.UndefOr[MaskSizeProperty[Double | String]]) | Null)*): Self = StObject.set(x, "maskSize", js.Array(value :_*))
     
     @scala.inline
     def setMaskType(
       value: ResponsiveStyleValue[js.UndefOr[MaskTypeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskTypeProperty]]]) | SystemStyleObject
-    ): Self = this.set("maskType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskType: Self = this.set("maskType", js.undefined)
+    def setMaskTypeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaskTypeProperty]]): Self = StObject.set(x, "maskType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskTypeNull: Self = this.set("maskType", null)
+    def setMaskTypeNull: Self = StObject.set(x, "maskType", null)
     
     @scala.inline
-    def setMasonryAutoFlowVarargs(value: (js.UndefOr[MasonryAutoFlowProperty] | Null)*): Self = this.set("masonryAutoFlow", js.Array(value :_*))
+    def setMaskTypeUndefined: Self = StObject.set(x, "maskType", js.undefined)
     
     @scala.inline
-    def setMasonryAutoFlowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MasonryAutoFlowProperty]]): Self = this.set("masonryAutoFlow", js.Any.fromFunction1(value))
+    def setMaskTypeVarargs(value: (js.UndefOr[MaskTypeProperty] | Null)*): Self = StObject.set(x, "maskType", js.Array(value :_*))
+    
+    @scala.inline
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    
+    @scala.inline
+    def setMaskVarargs(value: ((js.UndefOr[MaskProperty[Double | String]]) | Null)*): Self = StObject.set(x, "mask", js.Array(value :_*))
     
     @scala.inline
     def setMasonryAutoFlow(
       value: ResponsiveStyleValue[js.UndefOr[MasonryAutoFlowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MasonryAutoFlowProperty]]]) | SystemStyleObject
-    ): Self = this.set("masonryAutoFlow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "masonryAutoFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMasonryAutoFlow: Self = this.set("masonryAutoFlow", js.undefined)
+    def setMasonryAutoFlowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MasonryAutoFlowProperty]]): Self = StObject.set(x, "masonryAutoFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMasonryAutoFlowNull: Self = this.set("masonryAutoFlow", null)
+    def setMasonryAutoFlowNull: Self = StObject.set(x, "masonryAutoFlow", null)
     
     @scala.inline
-    def setMathStyleVarargs(value: (js.UndefOr[MathStyleProperty] | Null)*): Self = this.set("mathStyle", js.Array(value :_*))
+    def setMasonryAutoFlowUndefined: Self = StObject.set(x, "masonryAutoFlow", js.undefined)
     
     @scala.inline
-    def setMathStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MathStyleProperty]]): Self = this.set("mathStyle", js.Any.fromFunction1(value))
+    def setMasonryAutoFlowVarargs(value: (js.UndefOr[MasonryAutoFlowProperty] | Null)*): Self = StObject.set(x, "masonryAutoFlow", js.Array(value :_*))
     
     @scala.inline
     def setMathStyle(
       value: ResponsiveStyleValue[js.UndefOr[MathStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MathStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("mathStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mathStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMathStyle: Self = this.set("mathStyle", js.undefined)
+    def setMathStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MathStyleProperty]]): Self = StObject.set(x, "mathStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMathStyleNull: Self = this.set("mathStyle", null)
+    def setMathStyleNull: Self = StObject.set(x, "mathStyle", null)
     
     @scala.inline
-    def setMaxBlockSizeVarargs(value: ((js.UndefOr[MaxBlockSizeProperty[Double | String]]) | Null)*): Self = this.set("maxBlockSize", js.Array(value :_*))
+    def setMathStyleUndefined: Self = StObject.set(x, "mathStyle", js.undefined)
     
     @scala.inline
-    def setMaxBlockSizeFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaxBlockSizeProperty[Double | String]]]
-    ): Self = this.set("maxBlockSize", js.Any.fromFunction1(value))
+    def setMathStyleVarargs(value: (js.UndefOr[MathStyleProperty] | Null)*): Self = StObject.set(x, "mathStyle", js.Array(value :_*))
     
     @scala.inline
     def setMaxBlockSize(
@@ -7738,19 +7719,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MaxBlockSizeProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("maxBlockSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxBlockSize: Self = this.set("maxBlockSize", js.undefined)
+    def setMaxBlockSizeFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaxBlockSizeProperty[Double | String]]]
+    ): Self = StObject.set(x, "maxBlockSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxBlockSizeNull: Self = this.set("maxBlockSize", null)
+    def setMaxBlockSizeNull: Self = StObject.set(x, "maxBlockSize", null)
     
     @scala.inline
-    def setMaxHeightVarargs(value: ((js.UndefOr[MaxHeightProperty[Double | String]]) | Null)*): Self = this.set("maxHeight", js.Array(value :_*))
+    def setMaxBlockSizeUndefined: Self = StObject.set(x, "maxBlockSize", js.undefined)
     
     @scala.inline
-    def setMaxHeightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaxHeightProperty[Double | String]]]): Self = this.set("maxHeight", js.Any.fromFunction1(value))
+    def setMaxBlockSizeVarargs(value: ((js.UndefOr[MaxBlockSizeProperty[Double | String]]) | Null)*): Self = StObject.set(x, "maxBlockSize", js.Array(value :_*))
     
     @scala.inline
     def setMaxHeight(
@@ -7758,21 +7741,19 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MaxHeightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setMaxHeightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaxHeightProperty[Double | String]]]): Self = StObject.set(x, "maxHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxHeightNull: Self = this.set("maxHeight", null)
+    def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
     
     @scala.inline
-    def setMaxInlineSizeVarargs(value: ((js.UndefOr[MaxInlineSizeProperty[Double | String]]) | Null)*): Self = this.set("maxInlineSize", js.Array(value :_*))
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def setMaxInlineSizeFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaxInlineSizeProperty[Double | String]]]
-    ): Self = this.set("maxInlineSize", js.Any.fromFunction1(value))
+    def setMaxHeightVarargs(value: ((js.UndefOr[MaxHeightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
     
     @scala.inline
     def setMaxInlineSize(
@@ -7780,36 +7761,38 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MaxInlineSizeProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("maxInlineSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maxInlineSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxInlineSize: Self = this.set("maxInlineSize", js.undefined)
+    def setMaxInlineSizeFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaxInlineSizeProperty[Double | String]]]
+    ): Self = StObject.set(x, "maxInlineSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxInlineSizeNull: Self = this.set("maxInlineSize", null)
+    def setMaxInlineSizeNull: Self = StObject.set(x, "maxInlineSize", null)
     
     @scala.inline
-    def setMaxLinesVarargs(value: (js.UndefOr[MaxLinesProperty] | Null)*): Self = this.set("maxLines", js.Array(value :_*))
+    def setMaxInlineSizeUndefined: Self = StObject.set(x, "maxInlineSize", js.undefined)
     
     @scala.inline
-    def setMaxLinesFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaxLinesProperty]]): Self = this.set("maxLines", js.Any.fromFunction1(value))
+    def setMaxInlineSizeVarargs(value: ((js.UndefOr[MaxInlineSizeProperty[Double | String]]) | Null)*): Self = StObject.set(x, "maxInlineSize", js.Array(value :_*))
     
     @scala.inline
     def setMaxLines(
       value: ResponsiveStyleValue[js.UndefOr[MaxLinesProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaxLinesProperty]]]) | SystemStyleObject
-    ): Self = this.set("maxLines", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxLines: Self = this.set("maxLines", js.undefined)
+    def setMaxLinesFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaxLinesProperty]]): Self = StObject.set(x, "maxLines", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxLinesNull: Self = this.set("maxLines", null)
+    def setMaxLinesNull: Self = StObject.set(x, "maxLines", null)
     
     @scala.inline
-    def setMaxWidthVarargs(value: ((js.UndefOr[MaxWidthProperty[Double | String]]) | Null)*): Self = this.set("maxWidth", js.Array(value :_*))
+    def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
     
     @scala.inline
-    def setMaxWidthFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaxWidthProperty[Double | String]]]): Self = this.set("maxWidth", js.Any.fromFunction1(value))
+    def setMaxLinesVarargs(value: (js.UndefOr[MaxLinesProperty] | Null)*): Self = StObject.set(x, "maxLines", js.Array(value :_*))
     
     @scala.inline
     def setMaxWidth(
@@ -7817,29 +7800,19 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MaxWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setMaxWidthFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MaxWidthProperty[Double | String]]]): Self = StObject.set(x, "maxWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxWidthNull: Self = this.set("maxWidth", null)
+    def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
     
     @scala.inline
-    def setMbVarargs(
-      value: (js.UndefOr[
-          (js.Array[MarginBottomProperty[Double | String]]) | (MarginBottomProperty[Double | String]) | Null
-        ])*
-    ): Self = this.set("mb", js.Array(value :_*))
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def setMbFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (MarginBottomProperty[Double | String]) | (js.Array[MarginBottomProperty[Double | String]])
-          ]
-        ]
-    ): Self = this.set("mb", js.Any.fromFunction1(value))
+    def setMaxWidthVarargs(value: ((js.UndefOr[MaxWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
     
     @scala.inline
     def setMb(
@@ -7855,21 +7828,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("mb", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMb: Self = this.set("mb", js.undefined)
+    def setMbFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (MarginBottomProperty[Double | String]) | (js.Array[MarginBottomProperty[Double | String]])
+          ]
+        ]
+    ): Self = StObject.set(x, "mb", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMbNull: Self = this.set("mb", null)
+    def setMbNull: Self = StObject.set(x, "mb", null)
     
     @scala.inline
-    def setMinBlockSizeVarargs(value: ((js.UndefOr[MinBlockSizeProperty[Double | String]]) | Null)*): Self = this.set("minBlockSize", js.Array(value :_*))
+    def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
     
     @scala.inline
-    def setMinBlockSizeFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MinBlockSizeProperty[Double | String]]]
-    ): Self = this.set("minBlockSize", js.Any.fromFunction1(value))
+    def setMbVarargs(
+      value: (js.UndefOr[
+          (js.Array[MarginBottomProperty[Double | String]]) | (MarginBottomProperty[Double | String]) | Null
+        ])*
+    ): Self = StObject.set(x, "mb", js.Array(value :_*))
     
     @scala.inline
     def setMinBlockSize(
@@ -7877,19 +7858,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MinBlockSizeProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("minBlockSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minBlockSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinBlockSize: Self = this.set("minBlockSize", js.undefined)
+    def setMinBlockSizeFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MinBlockSizeProperty[Double | String]]]
+    ): Self = StObject.set(x, "minBlockSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinBlockSizeNull: Self = this.set("minBlockSize", null)
+    def setMinBlockSizeNull: Self = StObject.set(x, "minBlockSize", null)
     
     @scala.inline
-    def setMinHeightVarargs(value: ((js.UndefOr[MinHeightProperty[Double | String]]) | Null)*): Self = this.set("minHeight", js.Array(value :_*))
+    def setMinBlockSizeUndefined: Self = StObject.set(x, "minBlockSize", js.undefined)
     
     @scala.inline
-    def setMinHeightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MinHeightProperty[Double | String]]]): Self = this.set("minHeight", js.Any.fromFunction1(value))
+    def setMinBlockSizeVarargs(value: ((js.UndefOr[MinBlockSizeProperty[Double | String]]) | Null)*): Self = StObject.set(x, "minBlockSize", js.Array(value :_*))
     
     @scala.inline
     def setMinHeight(
@@ -7897,21 +7880,19 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MinHeightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setMinHeightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MinHeightProperty[Double | String]]]): Self = StObject.set(x, "minHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinHeightNull: Self = this.set("minHeight", null)
+    def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
     
     @scala.inline
-    def setMinInlineSizeVarargs(value: ((js.UndefOr[MinInlineSizeProperty[Double | String]]) | Null)*): Self = this.set("minInlineSize", js.Array(value :_*))
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def setMinInlineSizeFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MinInlineSizeProperty[Double | String]]]
-    ): Self = this.set("minInlineSize", js.Any.fromFunction1(value))
+    def setMinHeightVarargs(value: ((js.UndefOr[MinHeightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "minHeight", js.Array(value :_*))
     
     @scala.inline
     def setMinInlineSize(
@@ -7919,19 +7900,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MinInlineSizeProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("minInlineSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minInlineSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinInlineSize: Self = this.set("minInlineSize", js.undefined)
+    def setMinInlineSizeFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MinInlineSizeProperty[Double | String]]]
+    ): Self = StObject.set(x, "minInlineSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinInlineSizeNull: Self = this.set("minInlineSize", null)
+    def setMinInlineSizeNull: Self = StObject.set(x, "minInlineSize", null)
     
     @scala.inline
-    def setMinWidthVarargs(value: ((js.UndefOr[MinWidthProperty[Double | String]]) | Null)*): Self = this.set("minWidth", js.Array(value :_*))
+    def setMinInlineSizeUndefined: Self = StObject.set(x, "minInlineSize", js.undefined)
     
     @scala.inline
-    def setMinWidthFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MinWidthProperty[Double | String]]]): Self = this.set("minWidth", js.Any.fromFunction1(value))
+    def setMinInlineSizeVarargs(value: ((js.UndefOr[MinInlineSizeProperty[Double | String]]) | Null)*): Self = StObject.set(x, "minInlineSize", js.Array(value :_*))
     
     @scala.inline
     def setMinWidth(
@@ -7939,46 +7922,36 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[MinWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setMinWidthFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MinWidthProperty[Double | String]]]): Self = StObject.set(x, "minWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinWidthNull: Self = this.set("minWidth", null)
+    def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
     
     @scala.inline
-    def setMixBlendModeVarargs(value: (js.UndefOr[MixBlendModeProperty] | Null)*): Self = this.set("mixBlendMode", js.Array(value :_*))
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def setMixBlendModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MixBlendModeProperty]]): Self = this.set("mixBlendMode", js.Any.fromFunction1(value))
+    def setMinWidthVarargs(value: ((js.UndefOr[MinWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "minWidth", js.Array(value :_*))
     
     @scala.inline
     def setMixBlendMode(
       value: ResponsiveStyleValue[js.UndefOr[MixBlendModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MixBlendModeProperty]]]) | SystemStyleObject
-    ): Self = this.set("mixBlendMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mixBlendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMixBlendMode: Self = this.set("mixBlendMode", js.undefined)
+    def setMixBlendModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[MixBlendModeProperty]]): Self = StObject.set(x, "mixBlendMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMixBlendModeNull: Self = this.set("mixBlendMode", null)
+    def setMixBlendModeNull: Self = StObject.set(x, "mixBlendMode", null)
     
     @scala.inline
-    def setMlVarargs(
-      value: (js.UndefOr[
-          (js.Array[MarginLeftProperty[Double | String]]) | (MarginLeftProperty[Double | String]) | Null
-        ])*
-    ): Self = this.set("ml", js.Array(value :_*))
+    def setMixBlendModeUndefined: Self = StObject.set(x, "mixBlendMode", js.undefined)
     
     @scala.inline
-    def setMlFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
-          ]
-        ]
-    ): Self = this.set("ml", js.Any.fromFunction1(value))
+    def setMixBlendModeVarargs(value: (js.UndefOr[MixBlendModeProperty] | Null)*): Self = StObject.set(x, "mixBlendMode", js.Array(value :_*))
     
     @scala.inline
     def setMl(
@@ -7994,19 +7967,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("ml", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMl: Self = this.set("ml", js.undefined)
+    def setMlFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
+          ]
+        ]
+    ): Self = StObject.set(x, "ml", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMlNull: Self = this.set("ml", null)
+    def setMlNull: Self = StObject.set(x, "ml", null)
     
     @scala.inline
-    def setMotionVarargs(value: ((js.UndefOr[OffsetProperty[Double | String]]) | Null)*): Self = this.set("motion", js.Array(value :_*))
+    def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
     
     @scala.inline
-    def setMotionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetProperty[Double | String]]]): Self = this.set("motion", js.Any.fromFunction1(value))
+    def setMlVarargs(
+      value: (js.UndefOr[
+          (js.Array[MarginLeftProperty[Double | String]]) | (MarginLeftProperty[Double | String]) | Null
+        ])*
+    ): Self = StObject.set(x, "ml", js.Array(value :_*))
     
     @scala.inline
     def setMotion(
@@ -8014,21 +7997,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[OffsetProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("motion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMotion: Self = this.set("motion", js.undefined)
-    
-    @scala.inline
-    def setMotionNull: Self = this.set("motion", null)
-    
-    @scala.inline
-    def setMotionDistanceVarargs(value: ((js.UndefOr[OffsetDistanceProperty[Double | String]]) | Null)*): Self = this.set("motionDistance", js.Array(value :_*))
-    
-    @scala.inline
-    def setMotionDistanceFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetDistanceProperty[Double | String]]]
-    ): Self = this.set("motionDistance", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMotionDistance(
@@ -8036,63 +8005,67 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[OffsetDistanceProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("motionDistance", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "motionDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMotionDistance: Self = this.set("motionDistance", js.undefined)
+    def setMotionDistanceFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetDistanceProperty[Double | String]]]
+    ): Self = StObject.set(x, "motionDistance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMotionDistanceNull: Self = this.set("motionDistance", null)
+    def setMotionDistanceNull: Self = StObject.set(x, "motionDistance", null)
     
     @scala.inline
-    def setMotionPathVarargs(value: (js.UndefOr[OffsetPathProperty] | Null)*): Self = this.set("motionPath", js.Array(value :_*))
+    def setMotionDistanceUndefined: Self = StObject.set(x, "motionDistance", js.undefined)
     
     @scala.inline
-    def setMotionPathFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]]): Self = this.set("motionPath", js.Any.fromFunction1(value))
+    def setMotionDistanceVarargs(value: ((js.UndefOr[OffsetDistanceProperty[Double | String]]) | Null)*): Self = StObject.set(x, "motionDistance", js.Array(value :_*))
+    
+    @scala.inline
+    def setMotionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetProperty[Double | String]]]): Self = StObject.set(x, "motion", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setMotionNull: Self = StObject.set(x, "motion", null)
     
     @scala.inline
     def setMotionPath(
       value: ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]]]) | SystemStyleObject
-    ): Self = this.set("motionPath", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "motionPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMotionPath: Self = this.set("motionPath", js.undefined)
+    def setMotionPathFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]]): Self = StObject.set(x, "motionPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMotionPathNull: Self = this.set("motionPath", null)
+    def setMotionPathNull: Self = StObject.set(x, "motionPath", null)
     
     @scala.inline
-    def setMotionRotationVarargs(value: (js.UndefOr[OffsetRotateProperty] | Null)*): Self = this.set("motionRotation", js.Array(value :_*))
+    def setMotionPathUndefined: Self = StObject.set(x, "motionPath", js.undefined)
     
     @scala.inline
-    def setMotionRotationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]): Self = this.set("motionRotation", js.Any.fromFunction1(value))
+    def setMotionPathVarargs(value: (js.UndefOr[OffsetPathProperty] | Null)*): Self = StObject.set(x, "motionPath", js.Array(value :_*))
     
     @scala.inline
     def setMotionRotation(
       value: ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]]) | SystemStyleObject
-    ): Self = this.set("motionRotation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "motionRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMotionRotation: Self = this.set("motionRotation", js.undefined)
+    def setMotionRotationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]): Self = StObject.set(x, "motionRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMotionRotationNull: Self = this.set("motionRotation", null)
+    def setMotionRotationNull: Self = StObject.set(x, "motionRotation", null)
     
     @scala.inline
-    def setMrVarargs(
-      value: (js.UndefOr[
-          (js.Array[MarginRightProperty[Double | String]]) | (MarginRightProperty[Double | String]) | Null
-        ])*
-    ): Self = this.set("mr", js.Array(value :_*))
+    def setMotionRotationUndefined: Self = StObject.set(x, "motionRotation", js.undefined)
     
     @scala.inline
-    def setMrFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (MarginRightProperty[Double | String]) | (js.Array[MarginRightProperty[Double | String]])
-          ]
-        ]
-    ): Self = this.set("mr", js.Any.fromFunction1(value))
+    def setMotionRotationVarargs(value: (js.UndefOr[OffsetRotateProperty] | Null)*): Self = StObject.set(x, "motionRotation", js.Array(value :_*))
+    
+    @scala.inline
+    def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
+    
+    @scala.inline
+    def setMotionVarargs(value: ((js.UndefOr[OffsetProperty[Double | String]]) | Null)*): Self = StObject.set(x, "motion", js.Array(value :_*))
     
     @scala.inline
     def setMr(
@@ -8108,29 +8081,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("mr", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMr: Self = this.set("mr", js.undefined)
-    
-    @scala.inline
-    def setMrNull: Self = this.set("mr", null)
-    
-    @scala.inline
-    def setMtVarargs(
-      value: (js.UndefOr[
-          (js.Array[MarginTopProperty[Double | String]]) | (MarginTopProperty[Double | String]) | Null
-        ])*
-    ): Self = this.set("mt", js.Array(value :_*))
-    
-    @scala.inline
-    def setMtFunction1(
+    def setMrFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
+            (MarginRightProperty[Double | String]) | (js.Array[MarginRightProperty[Double | String]])
           ]
         ]
-    ): Self = this.set("mt", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "mr", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setMrNull: Self = StObject.set(x, "mr", null)
+    
+    @scala.inline
+    def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
+    
+    @scala.inline
+    def setMrVarargs(
+      value: (js.UndefOr[
+          (js.Array[MarginRightProperty[Double | String]]) | (MarginRightProperty[Double | String]) | Null
+        ])*
+    ): Self = StObject.set(x, "mr", js.Array(value :_*))
     
     @scala.inline
     def setMt(
@@ -8146,29 +8119,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("mt", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMt: Self = this.set("mt", js.undefined)
-    
-    @scala.inline
-    def setMtNull: Self = this.set("mt", null)
-    
-    @scala.inline
-    def setMxVarargs(
-      value: (js.UndefOr[
-          (js.Array[MarginLeftProperty[Double | String]]) | (MarginLeftProperty[Double | String]) | Null
-        ])*
-    ): Self = this.set("mx", js.Array(value :_*))
-    
-    @scala.inline
-    def setMxFunction1(
+    def setMtFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
+            (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
           ]
         ]
-    ): Self = this.set("mx", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "mt", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setMtNull: Self = StObject.set(x, "mt", null)
+    
+    @scala.inline
+    def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
+    
+    @scala.inline
+    def setMtVarargs(
+      value: (js.UndefOr[
+          (js.Array[MarginTopProperty[Double | String]]) | (MarginTopProperty[Double | String]) | Null
+        ])*
+    ): Self = StObject.set(x, "mt", js.Array(value :_*))
     
     @scala.inline
     def setMx(
@@ -8184,29 +8157,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("mx", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMx: Self = this.set("mx", js.undefined)
-    
-    @scala.inline
-    def setMxNull: Self = this.set("mx", null)
-    
-    @scala.inline
-    def setMyVarargs(
-      value: (js.UndefOr[
-          (js.Array[MarginTopProperty[Double | String]]) | (MarginTopProperty[Double | String]) | Null
-        ])*
-    ): Self = this.set("my", js.Array(value :_*))
-    
-    @scala.inline
-    def setMyFunction1(
+    def setMxFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
+            (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
           ]
         ]
-    ): Self = this.set("my", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "mx", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setMxNull: Self = StObject.set(x, "mx", null)
+    
+    @scala.inline
+    def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
+    
+    @scala.inline
+    def setMxVarargs(
+      value: (js.UndefOr[
+          (js.Array[MarginLeftProperty[Double | String]]) | (MarginLeftProperty[Double | String]) | Null
+        ])*
+    ): Self = StObject.set(x, "mx", js.Array(value :_*))
     
     @scala.inline
     def setMy(
@@ -8222,38 +8195,46 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("my", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMy: Self = this.set("my", js.undefined)
+    def setMyFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
+          ]
+        ]
+    ): Self = StObject.set(x, "my", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMyNull: Self = this.set("my", null)
+    def setMyNull: Self = StObject.set(x, "my", null)
     
     @scala.inline
-    def setObjectFitVarargs(value: (js.UndefOr[ObjectFitProperty] | Null)*): Self = this.set("objectFit", js.Array(value :_*))
+    def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
     @scala.inline
-    def setObjectFitFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ObjectFitProperty]]): Self = this.set("objectFit", js.Any.fromFunction1(value))
+    def setMyVarargs(
+      value: (js.UndefOr[
+          (js.Array[MarginTopProperty[Double | String]]) | (MarginTopProperty[Double | String]) | Null
+        ])*
+    ): Self = StObject.set(x, "my", js.Array(value :_*))
     
     @scala.inline
     def setObjectFit(
       value: ResponsiveStyleValue[js.UndefOr[ObjectFitProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ObjectFitProperty]]]) | SystemStyleObject
-    ): Self = this.set("objectFit", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObjectFit: Self = this.set("objectFit", js.undefined)
+    def setObjectFitFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ObjectFitProperty]]): Self = StObject.set(x, "objectFit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setObjectFitNull: Self = this.set("objectFit", null)
+    def setObjectFitNull: Self = StObject.set(x, "objectFit", null)
     
     @scala.inline
-    def setObjectPositionVarargs(value: ((js.UndefOr[ObjectPositionProperty[Double | String]]) | Null)*): Self = this.set("objectPosition", js.Array(value :_*))
+    def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
     
     @scala.inline
-    def setObjectPositionFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ObjectPositionProperty[Double | String]]]
-    ): Self = this.set("objectPosition", js.Any.fromFunction1(value))
+    def setObjectFitVarargs(value: (js.UndefOr[ObjectFitProperty] | Null)*): Self = StObject.set(x, "objectFit", js.Array(value :_*))
     
     @scala.inline
     def setObjectPosition(
@@ -8261,19 +8242,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ObjectPositionProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("objectPosition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "objectPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObjectPosition: Self = this.set("objectPosition", js.undefined)
+    def setObjectPositionFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ObjectPositionProperty[Double | String]]]
+    ): Self = StObject.set(x, "objectPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setObjectPositionNull: Self = this.set("objectPosition", null)
+    def setObjectPositionNull: Self = StObject.set(x, "objectPosition", null)
     
     @scala.inline
-    def setOffsetVarargs(value: ((js.UndefOr[OffsetProperty[Double | String]]) | Null)*): Self = this.set("offset", js.Array(value :_*))
+    def setObjectPositionUndefined: Self = StObject.set(x, "objectPosition", js.undefined)
     
     @scala.inline
-    def setOffsetFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetProperty[Double | String]]]): Self = this.set("offset", js.Any.fromFunction1(value))
+    def setObjectPositionVarargs(value: ((js.UndefOr[ObjectPositionProperty[Double | String]]) | Null)*): Self = StObject.set(x, "objectPosition", js.Array(value :_*))
     
     @scala.inline
     def setOffset(
@@ -8281,21 +8264,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[OffsetProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
-    
-    @scala.inline
-    def setOffsetNull: Self = this.set("offset", null)
-    
-    @scala.inline
-    def setOffsetAnchorVarargs(value: ((js.UndefOr[OffsetAnchorProperty[Double | String]]) | Null)*): Self = this.set("offsetAnchor", js.Array(value :_*))
-    
-    @scala.inline
-    def setOffsetAnchorFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetAnchorProperty[Double | String]]]
-    ): Self = this.set("offsetAnchor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOffsetAnchor(
@@ -8303,21 +8272,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[OffsetAnchorProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("offsetAnchor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "offsetAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetAnchor: Self = this.set("offsetAnchor", js.undefined)
+    def setOffsetAnchorFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetAnchorProperty[Double | String]]]
+    ): Self = StObject.set(x, "offsetAnchor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetAnchorNull: Self = this.set("offsetAnchor", null)
+    def setOffsetAnchorNull: Self = StObject.set(x, "offsetAnchor", null)
     
     @scala.inline
-    def setOffsetDistanceVarargs(value: ((js.UndefOr[OffsetDistanceProperty[Double | String]]) | Null)*): Self = this.set("offsetDistance", js.Array(value :_*))
+    def setOffsetAnchorUndefined: Self = StObject.set(x, "offsetAnchor", js.undefined)
     
     @scala.inline
-    def setOffsetDistanceFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetDistanceProperty[Double | String]]]
-    ): Self = this.set("offsetDistance", js.Any.fromFunction1(value))
+    def setOffsetAnchorVarargs(value: ((js.UndefOr[OffsetAnchorProperty[Double | String]]) | Null)*): Self = StObject.set(x, "offsetAnchor", js.Array(value :_*))
     
     @scala.inline
     def setOffsetDistance(
@@ -8325,121 +8294,135 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[OffsetDistanceProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("offsetDistance", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "offsetDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetDistance: Self = this.set("offsetDistance", js.undefined)
+    def setOffsetDistanceFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetDistanceProperty[Double | String]]]
+    ): Self = StObject.set(x, "offsetDistance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetDistanceNull: Self = this.set("offsetDistance", null)
+    def setOffsetDistanceNull: Self = StObject.set(x, "offsetDistance", null)
     
     @scala.inline
-    def setOffsetPathVarargs(value: (js.UndefOr[OffsetPathProperty] | Null)*): Self = this.set("offsetPath", js.Array(value :_*))
+    def setOffsetDistanceUndefined: Self = StObject.set(x, "offsetDistance", js.undefined)
     
     @scala.inline
-    def setOffsetPathFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]]): Self = this.set("offsetPath", js.Any.fromFunction1(value))
+    def setOffsetDistanceVarargs(value: ((js.UndefOr[OffsetDistanceProperty[Double | String]]) | Null)*): Self = StObject.set(x, "offsetDistance", js.Array(value :_*))
+    
+    @scala.inline
+    def setOffsetFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetProperty[Double | String]]]): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOffsetNull: Self = StObject.set(x, "offset", null)
     
     @scala.inline
     def setOffsetPath(
       value: ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]]]) | SystemStyleObject
-    ): Self = this.set("offsetPath", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "offsetPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetPath: Self = this.set("offsetPath", js.undefined)
+    def setOffsetPathFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]]): Self = StObject.set(x, "offsetPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetPathNull: Self = this.set("offsetPath", null)
+    def setOffsetPathNull: Self = StObject.set(x, "offsetPath", null)
     
     @scala.inline
-    def setOffsetRotateVarargs(value: (js.UndefOr[OffsetRotateProperty] | Null)*): Self = this.set("offsetRotate", js.Array(value :_*))
+    def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
     
     @scala.inline
-    def setOffsetRotateFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]): Self = this.set("offsetRotate", js.Any.fromFunction1(value))
+    def setOffsetPathVarargs(value: (js.UndefOr[OffsetPathProperty] | Null)*): Self = StObject.set(x, "offsetPath", js.Array(value :_*))
     
     @scala.inline
     def setOffsetRotate(
       value: ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]]) | SystemStyleObject
-    ): Self = this.set("offsetRotate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetRotate: Self = this.set("offsetRotate", js.undefined)
+    def setOffsetRotateFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]): Self = StObject.set(x, "offsetRotate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetRotateNull: Self = this.set("offsetRotate", null)
+    def setOffsetRotateNull: Self = StObject.set(x, "offsetRotate", null)
     
     @scala.inline
-    def setOffsetRotationVarargs(value: (js.UndefOr[OffsetRotateProperty] | Null)*): Self = this.set("offsetRotation", js.Array(value :_*))
+    def setOffsetRotateUndefined: Self = StObject.set(x, "offsetRotate", js.undefined)
     
     @scala.inline
-    def setOffsetRotationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]): Self = this.set("offsetRotation", js.Any.fromFunction1(value))
+    def setOffsetRotateVarargs(value: (js.UndefOr[OffsetRotateProperty] | Null)*): Self = StObject.set(x, "offsetRotate", js.Array(value :_*))
     
     @scala.inline
     def setOffsetRotation(
       value: ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]]) | SystemStyleObject
-    ): Self = this.set("offsetRotation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "offsetRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetRotation: Self = this.set("offsetRotation", js.undefined)
+    def setOffsetRotationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]): Self = StObject.set(x, "offsetRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetRotationNull: Self = this.set("offsetRotation", null)
+    def setOffsetRotationNull: Self = StObject.set(x, "offsetRotation", null)
     
     @scala.inline
-    def setOpacityVarargs(value: (js.UndefOr[OpacityProperty] | Null)*): Self = this.set("opacity", js.Array(value :_*))
+    def setOffsetRotationUndefined: Self = StObject.set(x, "offsetRotation", js.undefined)
     
     @scala.inline
-    def setOpacityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OpacityProperty]]): Self = this.set("opacity", js.Any.fromFunction1(value))
+    def setOffsetRotationVarargs(value: (js.UndefOr[OffsetRotateProperty] | Null)*): Self = StObject.set(x, "offsetRotation", js.Array(value :_*))
+    
+    @scala.inline
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    @scala.inline
+    def setOffsetVarargs(value: ((js.UndefOr[OffsetProperty[Double | String]]) | Null)*): Self = StObject.set(x, "offset", js.Array(value :_*))
     
     @scala.inline
     def setOpacity(
       value: ResponsiveStyleValue[js.UndefOr[OpacityProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OpacityProperty]]]) | SystemStyleObject
-    ): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setOpacityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OpacityProperty]]): Self = StObject.set(x, "opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpacityNull: Self = this.set("opacity", null)
+    def setOpacityNull: Self = StObject.set(x, "opacity", null)
     
     @scala.inline
-    def setOrderVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = this.set("order", js.Array(value :_*))
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def setOrderFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = this.set("order", js.Any.fromFunction1(value))
+    def setOpacityVarargs(value: (js.UndefOr[OpacityProperty] | Null)*): Self = StObject.set(x, "opacity", js.Array(value :_*))
     
     @scala.inline
     def setOrder(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-    ): Self = this.set("order", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setOrderFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOrderNull: Self = this.set("order", null)
+    def setOrderNull: Self = StObject.set(x, "order", null)
     
     @scala.inline
-    def setOrphansVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = this.set("orphans", js.Array(value :_*))
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setOrphansFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = this.set("orphans", js.Any.fromFunction1(value))
+    def setOrderVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = StObject.set(x, "order", js.Array(value :_*))
     
     @scala.inline
     def setOrphans(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-    ): Self = this.set("orphans", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "orphans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrphans: Self = this.set("orphans", js.undefined)
+    def setOrphansFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = StObject.set(x, "orphans", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOrphansNull: Self = this.set("orphans", null)
+    def setOrphansNull: Self = StObject.set(x, "orphans", null)
     
     @scala.inline
-    def setOutlineVarargs(value: ((js.UndefOr[OutlineProperty[Double | String]]) | Null)*): Self = this.set("outline", js.Array(value :_*))
+    def setOrphansUndefined: Self = StObject.set(x, "orphans", js.undefined)
     
     @scala.inline
-    def setOutlineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OutlineProperty[Double | String]]]): Self = this.set("outline", js.Any.fromFunction1(value))
+    def setOrphansVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = StObject.set(x, "orphans", js.Array(value :_*))
     
     @scala.inline
     def setOutline(
@@ -8447,38 +8430,30 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[OutlineProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("outline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
-    
-    @scala.inline
-    def setOutlineNull: Self = this.set("outline", null)
-    
-    @scala.inline
-    def setOutlineColorVarargs(value: (js.UndefOr[OutlineColorProperty] | Null)*): Self = this.set("outlineColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutlineColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OutlineColorProperty]]): Self = this.set("outlineColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOutlineColor(
       value: ResponsiveStyleValue[js.UndefOr[OutlineColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OutlineColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    def setOutlineColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OutlineColorProperty]]): Self = StObject.set(x, "outlineColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOutlineColorNull: Self = this.set("outlineColor", null)
+    def setOutlineColorNull: Self = StObject.set(x, "outlineColor", null)
     
     @scala.inline
-    def setOutlineOffsetVarargs(value: ((js.UndefOr[OutlineOffsetProperty[Double | String]]) | Null)*): Self = this.set("outlineOffset", js.Array(value :_*))
+    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
     @scala.inline
-    def setOutlineOffsetFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OutlineOffsetProperty[Double | String]]]
-    ): Self = this.set("outlineOffset", js.Any.fromFunction1(value))
+    def setOutlineColorVarargs(value: (js.UndefOr[OutlineColorProperty] | Null)*): Self = StObject.set(x, "outlineColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setOutlineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OutlineProperty[Double | String]]]): Self = StObject.set(x, "outline", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOutlineNull: Self = StObject.set(x, "outline", null)
     
     @scala.inline
     def setOutlineOffset(
@@ -8486,38 +8461,44 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[OutlineOffsetProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("outlineOffset", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutlineOffset: Self = this.set("outlineOffset", js.undefined)
+    def setOutlineOffsetFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OutlineOffsetProperty[Double | String]]]
+    ): Self = StObject.set(x, "outlineOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOutlineOffsetNull: Self = this.set("outlineOffset", null)
+    def setOutlineOffsetNull: Self = StObject.set(x, "outlineOffset", null)
     
     @scala.inline
-    def setOutlineStyleVarargs(value: (js.UndefOr[OutlineStyleProperty] | Null)*): Self = this.set("outlineStyle", js.Array(value :_*))
+    def setOutlineOffsetUndefined: Self = StObject.set(x, "outlineOffset", js.undefined)
     
     @scala.inline
-    def setOutlineStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OutlineStyleProperty]]): Self = this.set("outlineStyle", js.Any.fromFunction1(value))
+    def setOutlineOffsetVarargs(value: ((js.UndefOr[OutlineOffsetProperty[Double | String]]) | Null)*): Self = StObject.set(x, "outlineOffset", js.Array(value :_*))
     
     @scala.inline
     def setOutlineStyle(
       value: ResponsiveStyleValue[js.UndefOr[OutlineStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OutlineStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("outlineStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "outlineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutlineStyle: Self = this.set("outlineStyle", js.undefined)
+    def setOutlineStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OutlineStyleProperty]]): Self = StObject.set(x, "outlineStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOutlineStyleNull: Self = this.set("outlineStyle", null)
+    def setOutlineStyleNull: Self = StObject.set(x, "outlineStyle", null)
     
     @scala.inline
-    def setOutlineWidthVarargs(value: ((js.UndefOr[OutlineWidthProperty[Double | String]]) | Null)*): Self = this.set("outlineWidth", js.Array(value :_*))
+    def setOutlineStyleUndefined: Self = StObject.set(x, "outlineStyle", js.undefined)
     
     @scala.inline
-    def setOutlineWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OutlineWidthProperty[Double | String]]]
-    ): Self = this.set("outlineWidth", js.Any.fromFunction1(value))
+    def setOutlineStyleVarargs(value: (js.UndefOr[OutlineStyleProperty] | Null)*): Self = StObject.set(x, "outlineStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    
+    @scala.inline
+    def setOutlineVarargs(value: ((js.UndefOr[OutlineProperty[Double | String]]) | Null)*): Self = StObject.set(x, "outline", js.Array(value :_*))
     
     @scala.inline
     def setOutlineWidth(
@@ -8525,172 +8506,162 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[OutlineWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("outlineWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutlineWidth: Self = this.set("outlineWidth", js.undefined)
+    def setOutlineWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OutlineWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "outlineWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOutlineWidthNull: Self = this.set("outlineWidth", null)
+    def setOutlineWidthNull: Self = StObject.set(x, "outlineWidth", null)
     
     @scala.inline
-    def setOverflowVarargs(value: (js.UndefOr[OverflowProperty] | Null)*): Self = this.set("overflow", js.Array(value :_*))
+    def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
     
     @scala.inline
-    def setOverflowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowProperty]]): Self = this.set("overflow", js.Any.fromFunction1(value))
+    def setOutlineWidthVarargs(value: ((js.UndefOr[OutlineWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "outlineWidth", js.Array(value :_*))
     
     @scala.inline
     def setOverflow(
       value: ResponsiveStyleValue[js.UndefOr[OverflowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowProperty]]]) | SystemStyleObject
-    ): Self = this.set("overflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverflow: Self = this.set("overflow", js.undefined)
-    
-    @scala.inline
-    def setOverflowNull: Self = this.set("overflow", null)
-    
-    @scala.inline
-    def setOverflowAnchorVarargs(value: (js.UndefOr[OverflowAnchorProperty] | Null)*): Self = this.set("overflowAnchor", js.Array(value :_*))
-    
-    @scala.inline
-    def setOverflowAnchorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowAnchorProperty]]): Self = this.set("overflowAnchor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOverflowAnchor(
       value: ResponsiveStyleValue[js.UndefOr[OverflowAnchorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowAnchorProperty]]]) | SystemStyleObject
-    ): Self = this.set("overflowAnchor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowAnchor: Self = this.set("overflowAnchor", js.undefined)
+    def setOverflowAnchorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowAnchorProperty]]): Self = StObject.set(x, "overflowAnchor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverflowAnchorNull: Self = this.set("overflowAnchor", null)
+    def setOverflowAnchorNull: Self = StObject.set(x, "overflowAnchor", null)
     
     @scala.inline
-    def setOverflowBlockVarargs(value: (js.UndefOr[OverflowBlockProperty] | Null)*): Self = this.set("overflowBlock", js.Array(value :_*))
+    def setOverflowAnchorUndefined: Self = StObject.set(x, "overflowAnchor", js.undefined)
     
     @scala.inline
-    def setOverflowBlockFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowBlockProperty]]): Self = this.set("overflowBlock", js.Any.fromFunction1(value))
+    def setOverflowAnchorVarargs(value: (js.UndefOr[OverflowAnchorProperty] | Null)*): Self = StObject.set(x, "overflowAnchor", js.Array(value :_*))
     
     @scala.inline
     def setOverflowBlock(
       value: ResponsiveStyleValue[js.UndefOr[OverflowBlockProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowBlockProperty]]]) | SystemStyleObject
-    ): Self = this.set("overflowBlock", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowBlock: Self = this.set("overflowBlock", js.undefined)
+    def setOverflowBlockFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowBlockProperty]]): Self = StObject.set(x, "overflowBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverflowBlockNull: Self = this.set("overflowBlock", null)
+    def setOverflowBlockNull: Self = StObject.set(x, "overflowBlock", null)
     
     @scala.inline
-    def setOverflowClipBoxVarargs(value: (js.UndefOr[OverflowClipBoxProperty] | Null)*): Self = this.set("overflowClipBox", js.Array(value :_*))
+    def setOverflowBlockUndefined: Self = StObject.set(x, "overflowBlock", js.undefined)
     
     @scala.inline
-    def setOverflowClipBoxFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowClipBoxProperty]]): Self = this.set("overflowClipBox", js.Any.fromFunction1(value))
+    def setOverflowBlockVarargs(value: (js.UndefOr[OverflowBlockProperty] | Null)*): Self = StObject.set(x, "overflowBlock", js.Array(value :_*))
     
     @scala.inline
     def setOverflowClipBox(
       value: ResponsiveStyleValue[js.UndefOr[OverflowClipBoxProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowClipBoxProperty]]]) | SystemStyleObject
-    ): Self = this.set("overflowClipBox", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowClipBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowClipBox: Self = this.set("overflowClipBox", js.undefined)
+    def setOverflowClipBoxFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowClipBoxProperty]]): Self = StObject.set(x, "overflowClipBox", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverflowClipBoxNull: Self = this.set("overflowClipBox", null)
+    def setOverflowClipBoxNull: Self = StObject.set(x, "overflowClipBox", null)
     
     @scala.inline
-    def setOverflowInlineVarargs(value: (js.UndefOr[OverflowInlineProperty] | Null)*): Self = this.set("overflowInline", js.Array(value :_*))
+    def setOverflowClipBoxUndefined: Self = StObject.set(x, "overflowClipBox", js.undefined)
     
     @scala.inline
-    def setOverflowInlineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowInlineProperty]]): Self = this.set("overflowInline", js.Any.fromFunction1(value))
+    def setOverflowClipBoxVarargs(value: (js.UndefOr[OverflowClipBoxProperty] | Null)*): Self = StObject.set(x, "overflowClipBox", js.Array(value :_*))
+    
+    @scala.inline
+    def setOverflowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowProperty]]): Self = StObject.set(x, "overflow", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOverflowInline(
       value: ResponsiveStyleValue[js.UndefOr[OverflowInlineProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowInlineProperty]]]) | SystemStyleObject
-    ): Self = this.set("overflowInline", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowInline: Self = this.set("overflowInline", js.undefined)
+    def setOverflowInlineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowInlineProperty]]): Self = StObject.set(x, "overflowInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverflowInlineNull: Self = this.set("overflowInline", null)
+    def setOverflowInlineNull: Self = StObject.set(x, "overflowInline", null)
     
     @scala.inline
-    def setOverflowWrapVarargs(value: (js.UndefOr[OverflowWrapProperty] | Null)*): Self = this.set("overflowWrap", js.Array(value :_*))
+    def setOverflowInlineUndefined: Self = StObject.set(x, "overflowInline", js.undefined)
     
     @scala.inline
-    def setOverflowWrapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowWrapProperty]]): Self = this.set("overflowWrap", js.Any.fromFunction1(value))
+    def setOverflowInlineVarargs(value: (js.UndefOr[OverflowInlineProperty] | Null)*): Self = StObject.set(x, "overflowInline", js.Array(value :_*))
+    
+    @scala.inline
+    def setOverflowNull: Self = StObject.set(x, "overflow", null)
+    
+    @scala.inline
+    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    
+    @scala.inline
+    def setOverflowVarargs(value: (js.UndefOr[OverflowProperty] | Null)*): Self = StObject.set(x, "overflow", js.Array(value :_*))
     
     @scala.inline
     def setOverflowWrap(
       value: ResponsiveStyleValue[js.UndefOr[OverflowWrapProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowWrapProperty]]]) | SystemStyleObject
-    ): Self = this.set("overflowWrap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowWrap: Self = this.set("overflowWrap", js.undefined)
+    def setOverflowWrapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowWrapProperty]]): Self = StObject.set(x, "overflowWrap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverflowWrapNull: Self = this.set("overflowWrap", null)
+    def setOverflowWrapNull: Self = StObject.set(x, "overflowWrap", null)
     
     @scala.inline
-    def setOverflowXVarargs(value: (js.UndefOr[OverflowXProperty] | Null)*): Self = this.set("overflowX", js.Array(value :_*))
+    def setOverflowWrapUndefined: Self = StObject.set(x, "overflowWrap", js.undefined)
     
     @scala.inline
-    def setOverflowXFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowXProperty]]): Self = this.set("overflowX", js.Any.fromFunction1(value))
+    def setOverflowWrapVarargs(value: (js.UndefOr[OverflowWrapProperty] | Null)*): Self = StObject.set(x, "overflowWrap", js.Array(value :_*))
     
     @scala.inline
     def setOverflowX(
       value: ResponsiveStyleValue[js.UndefOr[OverflowXProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowXProperty]]]) | SystemStyleObject
-    ): Self = this.set("overflowX", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowX: Self = this.set("overflowX", js.undefined)
+    def setOverflowXFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowXProperty]]): Self = StObject.set(x, "overflowX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverflowXNull: Self = this.set("overflowX", null)
+    def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
     
     @scala.inline
-    def setOverflowYVarargs(value: (js.UndefOr[OverflowYProperty] | Null)*): Self = this.set("overflowY", js.Array(value :_*))
+    def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
     
     @scala.inline
-    def setOverflowYFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowYProperty]]): Self = this.set("overflowY", js.Any.fromFunction1(value))
+    def setOverflowXVarargs(value: (js.UndefOr[OverflowXProperty] | Null)*): Self = StObject.set(x, "overflowX", js.Array(value :_*))
     
     @scala.inline
     def setOverflowY(
       value: ResponsiveStyleValue[js.UndefOr[OverflowYProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowYProperty]]]) | SystemStyleObject
-    ): Self = this.set("overflowY", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowY: Self = this.set("overflowY", js.undefined)
+    def setOverflowYFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverflowYProperty]]): Self = StObject.set(x, "overflowY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverflowYNull: Self = this.set("overflowY", null)
+    def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
     
     @scala.inline
-    def setOverscrollBehaviorVarargs(value: (js.UndefOr[OverscrollBehaviorProperty] | Null)*): Self = this.set("overscrollBehavior", js.Array(value :_*))
+    def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
     
     @scala.inline
-    def setOverscrollBehaviorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorProperty]]): Self = this.set("overscrollBehavior", js.Any.fromFunction1(value))
+    def setOverflowYVarargs(value: (js.UndefOr[OverflowYProperty] | Null)*): Self = StObject.set(x, "overflowY", js.Array(value :_*))
     
     @scala.inline
     def setOverscrollBehavior(
       value: ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorProperty]]]) | SystemStyleObject
-    ): Self = this.set("overscrollBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverscrollBehavior: Self = this.set("overscrollBehavior", js.undefined)
-    
-    @scala.inline
-    def setOverscrollBehaviorNull: Self = this.set("overscrollBehavior", null)
-    
-    @scala.inline
-    def setOverscrollBehaviorBlockVarargs(value: (js.UndefOr[OverscrollBehaviorBlockProperty] | Null)*): Self = this.set("overscrollBehaviorBlock", js.Array(value :_*))
-    
-    @scala.inline
-    def setOverscrollBehaviorBlockFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorBlockProperty]]): Self = this.set("overscrollBehaviorBlock", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "overscrollBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOverscrollBehaviorBlock(
@@ -8698,19 +8669,22 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorBlockProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("overscrollBehaviorBlock", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overscrollBehaviorBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverscrollBehaviorBlock: Self = this.set("overscrollBehaviorBlock", js.undefined)
+    def setOverscrollBehaviorBlockFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorBlockProperty]]): Self = StObject.set(x, "overscrollBehaviorBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverscrollBehaviorBlockNull: Self = this.set("overscrollBehaviorBlock", null)
+    def setOverscrollBehaviorBlockNull: Self = StObject.set(x, "overscrollBehaviorBlock", null)
     
     @scala.inline
-    def setOverscrollBehaviorInlineVarargs(value: (js.UndefOr[OverscrollBehaviorInlineProperty] | Null)*): Self = this.set("overscrollBehaviorInline", js.Array(value :_*))
+    def setOverscrollBehaviorBlockUndefined: Self = StObject.set(x, "overscrollBehaviorBlock", js.undefined)
     
     @scala.inline
-    def setOverscrollBehaviorInlineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorInlineProperty]]): Self = this.set("overscrollBehaviorInline", js.Any.fromFunction1(value))
+    def setOverscrollBehaviorBlockVarargs(value: (js.UndefOr[OverscrollBehaviorBlockProperty] | Null)*): Self = StObject.set(x, "overscrollBehaviorBlock", js.Array(value :_*))
+    
+    @scala.inline
+    def setOverscrollBehaviorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorProperty]]): Self = StObject.set(x, "overscrollBehavior", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOverscrollBehaviorInline(
@@ -8718,63 +8692,62 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorInlineProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("overscrollBehaviorInline", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overscrollBehaviorInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverscrollBehaviorInline: Self = this.set("overscrollBehaviorInline", js.undefined)
+    def setOverscrollBehaviorInlineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorInlineProperty]]): Self = StObject.set(x, "overscrollBehaviorInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverscrollBehaviorInlineNull: Self = this.set("overscrollBehaviorInline", null)
+    def setOverscrollBehaviorInlineNull: Self = StObject.set(x, "overscrollBehaviorInline", null)
     
     @scala.inline
-    def setOverscrollBehaviorXVarargs(value: (js.UndefOr[OverscrollBehaviorXProperty] | Null)*): Self = this.set("overscrollBehaviorX", js.Array(value :_*))
+    def setOverscrollBehaviorInlineUndefined: Self = StObject.set(x, "overscrollBehaviorInline", js.undefined)
     
     @scala.inline
-    def setOverscrollBehaviorXFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorXProperty]]): Self = this.set("overscrollBehaviorX", js.Any.fromFunction1(value))
+    def setOverscrollBehaviorInlineVarargs(value: (js.UndefOr[OverscrollBehaviorInlineProperty] | Null)*): Self = StObject.set(x, "overscrollBehaviorInline", js.Array(value :_*))
+    
+    @scala.inline
+    def setOverscrollBehaviorNull: Self = StObject.set(x, "overscrollBehavior", null)
+    
+    @scala.inline
+    def setOverscrollBehaviorUndefined: Self = StObject.set(x, "overscrollBehavior", js.undefined)
+    
+    @scala.inline
+    def setOverscrollBehaviorVarargs(value: (js.UndefOr[OverscrollBehaviorProperty] | Null)*): Self = StObject.set(x, "overscrollBehavior", js.Array(value :_*))
     
     @scala.inline
     def setOverscrollBehaviorX(
       value: ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorXProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorXProperty]]]) | SystemStyleObject
-    ): Self = this.set("overscrollBehaviorX", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overscrollBehaviorX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverscrollBehaviorX: Self = this.set("overscrollBehaviorX", js.undefined)
+    def setOverscrollBehaviorXFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorXProperty]]): Self = StObject.set(x, "overscrollBehaviorX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverscrollBehaviorXNull: Self = this.set("overscrollBehaviorX", null)
+    def setOverscrollBehaviorXNull: Self = StObject.set(x, "overscrollBehaviorX", null)
     
     @scala.inline
-    def setOverscrollBehaviorYVarargs(value: (js.UndefOr[OverscrollBehaviorYProperty] | Null)*): Self = this.set("overscrollBehaviorY", js.Array(value :_*))
+    def setOverscrollBehaviorXUndefined: Self = StObject.set(x, "overscrollBehaviorX", js.undefined)
     
     @scala.inline
-    def setOverscrollBehaviorYFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorYProperty]]): Self = this.set("overscrollBehaviorY", js.Any.fromFunction1(value))
+    def setOverscrollBehaviorXVarargs(value: (js.UndefOr[OverscrollBehaviorXProperty] | Null)*): Self = StObject.set(x, "overscrollBehaviorX", js.Array(value :_*))
     
     @scala.inline
     def setOverscrollBehaviorY(
       value: ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorYProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorYProperty]]]) | SystemStyleObject
-    ): Self = this.set("overscrollBehaviorY", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overscrollBehaviorY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverscrollBehaviorY: Self = this.set("overscrollBehaviorY", js.undefined)
+    def setOverscrollBehaviorYFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorYProperty]]): Self = StObject.set(x, "overscrollBehaviorY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverscrollBehaviorYNull: Self = this.set("overscrollBehaviorY", null)
+    def setOverscrollBehaviorYNull: Self = StObject.set(x, "overscrollBehaviorY", null)
     
     @scala.inline
-    def setPVarargs(
-      value: (js.UndefOr[
-          (js.Array[PaddingProperty[Double | String]]) | Null | (PaddingProperty[Double | String])
-        ])*
-    ): Self = this.set("p", js.Array(value :_*))
+    def setOverscrollBehaviorYUndefined: Self = StObject.set(x, "overscrollBehaviorY", js.undefined)
     
     @scala.inline
-    def setPFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (PaddingProperty[Double | String]) | (js.Array[PaddingProperty[Double | String]])
-          ]
-        ]
-    ): Self = this.set("p", js.Any.fromFunction1(value))
+    def setOverscrollBehaviorYVarargs(value: (js.UndefOr[OverscrollBehaviorYProperty] | Null)*): Self = StObject.set(x, "overscrollBehaviorY", js.Array(value :_*))
     
     @scala.inline
     def setP(
@@ -8790,19 +8763,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("p", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
+    def setPFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (PaddingProperty[Double | String]) | (js.Array[PaddingProperty[Double | String]])
+          ]
+        ]
+    ): Self = StObject.set(x, "p", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPNull: Self = this.set("p", null)
+    def setPNull: Self = StObject.set(x, "p", null)
     
     @scala.inline
-    def setPaddingVarargs(value: ((js.UndefOr[PaddingProperty[Double | String]]) | Null)*): Self = this.set("padding", js.Array(value :_*))
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
     @scala.inline
-    def setPaddingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingProperty[Double | String]]]): Self = this.set("padding", js.Any.fromFunction1(value))
+    def setPVarargs(
+      value: (js.UndefOr[
+          (js.Array[PaddingProperty[Double | String]]) | Null | (PaddingProperty[Double | String])
+        ])*
+    ): Self = StObject.set(x, "p", js.Array(value :_*))
     
     @scala.inline
     def setPadding(
@@ -8810,21 +8793,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
-    
-    @scala.inline
-    def setPaddingNull: Self = this.set("padding", null)
-    
-    @scala.inline
-    def setPaddingBlockVarargs(value: ((js.UndefOr[PaddingBlockProperty[Double | String]]) | Null)*): Self = this.set("paddingBlock", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaddingBlockFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingBlockProperty[Double | String]]]
-    ): Self = this.set("paddingBlock", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPaddingBlock(
@@ -8832,21 +8801,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingBlockProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingBlock: Self = this.set("paddingBlock", js.undefined)
-    
-    @scala.inline
-    def setPaddingBlockNull: Self = this.set("paddingBlock", null)
-    
-    @scala.inline
-    def setPaddingBlockEndVarargs(value: ((js.UndefOr[PaddingBlockEndProperty[Double | String]]) | Null)*): Self = this.set("paddingBlockEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaddingBlockEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingBlockEndProperty[Double | String]]]
-    ): Self = this.set("paddingBlockEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPaddingBlockEnd(
@@ -8854,21 +8809,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingBlockEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingBlockEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingBlockEnd: Self = this.set("paddingBlockEnd", js.undefined)
+    def setPaddingBlockEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingBlockEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "paddingBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaddingBlockEndNull: Self = this.set("paddingBlockEnd", null)
+    def setPaddingBlockEndNull: Self = StObject.set(x, "paddingBlockEnd", null)
     
     @scala.inline
-    def setPaddingBlockStartVarargs(value: ((js.UndefOr[PaddingBlockStartProperty[Double | String]]) | Null)*): Self = this.set("paddingBlockStart", js.Array(value :_*))
+    def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
     
     @scala.inline
-    def setPaddingBlockStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingBlockStartProperty[Double | String]]]
-    ): Self = this.set("paddingBlockStart", js.Any.fromFunction1(value))
+    def setPaddingBlockEndVarargs(value: ((js.UndefOr[PaddingBlockEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "paddingBlockEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setPaddingBlockFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingBlockProperty[Double | String]]]
+    ): Self = StObject.set(x, "paddingBlock", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setPaddingBlockNull: Self = StObject.set(x, "paddingBlock", null)
     
     @scala.inline
     def setPaddingBlockStart(
@@ -8876,21 +8839,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingBlockStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingBlockStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingBlockStart: Self = this.set("paddingBlockStart", js.undefined)
+    def setPaddingBlockStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingBlockStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "paddingBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaddingBlockStartNull: Self = this.set("paddingBlockStart", null)
+    def setPaddingBlockStartNull: Self = StObject.set(x, "paddingBlockStart", null)
     
     @scala.inline
-    def setPaddingBottomVarargs(value: ((js.UndefOr[PaddingBottomProperty[Double | String]]) | Null)*): Self = this.set("paddingBottom", js.Array(value :_*))
+    def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
     
     @scala.inline
-    def setPaddingBottomFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingBottomProperty[Double | String]]]
-    ): Self = this.set("paddingBottom", js.Any.fromFunction1(value))
+    def setPaddingBlockStartVarargs(value: ((js.UndefOr[PaddingBlockStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "paddingBlockStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setPaddingBlockUndefined: Self = StObject.set(x, "paddingBlock", js.undefined)
+    
+    @scala.inline
+    def setPaddingBlockVarargs(value: ((js.UndefOr[PaddingBlockProperty[Double | String]]) | Null)*): Self = StObject.set(x, "paddingBlock", js.Array(value :_*))
     
     @scala.inline
     def setPaddingBottom(
@@ -8898,21 +8867,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingBottomProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingBottom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingBottom: Self = this.set("paddingBottom", js.undefined)
+    def setPaddingBottomFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingBottomProperty[Double | String]]]
+    ): Self = StObject.set(x, "paddingBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaddingBottomNull: Self = this.set("paddingBottom", null)
+    def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
     
     @scala.inline
-    def setPaddingInlineVarargs(value: ((js.UndefOr[PaddingInlineProperty[Double | String]]) | Null)*): Self = this.set("paddingInline", js.Array(value :_*))
+    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
     @scala.inline
-    def setPaddingInlineFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingInlineProperty[Double | String]]]
-    ): Self = this.set("paddingInline", js.Any.fromFunction1(value))
+    def setPaddingBottomVarargs(value: ((js.UndefOr[PaddingBottomProperty[Double | String]]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+    
+    @scala.inline
+    def setPaddingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingProperty[Double | String]]]): Self = StObject.set(x, "padding", js.Any.fromFunction1(value))
     
     @scala.inline
     def setPaddingInline(
@@ -8920,21 +8892,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingInlineProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingInline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingInline: Self = this.set("paddingInline", js.undefined)
-    
-    @scala.inline
-    def setPaddingInlineNull: Self = this.set("paddingInline", null)
-    
-    @scala.inline
-    def setPaddingInlineEndVarargs(value: ((js.UndefOr[PaddingInlineEndProperty[Double | String]]) | Null)*): Self = this.set("paddingInlineEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaddingInlineEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingInlineEndProperty[Double | String]]]
-    ): Self = this.set("paddingInlineEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPaddingInlineEnd(
@@ -8942,21 +8900,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingInlineEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingInlineEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingInlineEnd: Self = this.set("paddingInlineEnd", js.undefined)
+    def setPaddingInlineEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingInlineEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "paddingInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaddingInlineEndNull: Self = this.set("paddingInlineEnd", null)
+    def setPaddingInlineEndNull: Self = StObject.set(x, "paddingInlineEnd", null)
     
     @scala.inline
-    def setPaddingInlineStartVarargs(value: ((js.UndefOr[PaddingInlineStartProperty[Double | String]]) | Null)*): Self = this.set("paddingInlineStart", js.Array(value :_*))
+    def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
     
     @scala.inline
-    def setPaddingInlineStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingInlineStartProperty[Double | String]]]
-    ): Self = this.set("paddingInlineStart", js.Any.fromFunction1(value))
+    def setPaddingInlineEndVarargs(value: ((js.UndefOr[PaddingInlineEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "paddingInlineEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setPaddingInlineFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingInlineProperty[Double | String]]]
+    ): Self = StObject.set(x, "paddingInline", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setPaddingInlineNull: Self = StObject.set(x, "paddingInline", null)
     
     @scala.inline
     def setPaddingInlineStart(
@@ -8964,21 +8930,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingInlineStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingInlineStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingInlineStart: Self = this.set("paddingInlineStart", js.undefined)
+    def setPaddingInlineStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingInlineStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "paddingInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaddingInlineStartNull: Self = this.set("paddingInlineStart", null)
+    def setPaddingInlineStartNull: Self = StObject.set(x, "paddingInlineStart", null)
     
     @scala.inline
-    def setPaddingLeftVarargs(value: ((js.UndefOr[PaddingLeftProperty[Double | String]]) | Null)*): Self = this.set("paddingLeft", js.Array(value :_*))
+    def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
     
     @scala.inline
-    def setPaddingLeftFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingLeftProperty[Double | String]]]
-    ): Self = this.set("paddingLeft", js.Any.fromFunction1(value))
+    def setPaddingInlineStartVarargs(value: ((js.UndefOr[PaddingInlineStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "paddingInlineStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setPaddingInlineUndefined: Self = StObject.set(x, "paddingInline", js.undefined)
+    
+    @scala.inline
+    def setPaddingInlineVarargs(value: ((js.UndefOr[PaddingInlineProperty[Double | String]]) | Null)*): Self = StObject.set(x, "paddingInline", js.Array(value :_*))
     
     @scala.inline
     def setPaddingLeft(
@@ -8986,21 +8958,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingLeftProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingLeft", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingLeft: Self = this.set("paddingLeft", js.undefined)
+    def setPaddingLeftFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingLeftProperty[Double | String]]]
+    ): Self = StObject.set(x, "paddingLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaddingLeftNull: Self = this.set("paddingLeft", null)
+    def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
     
     @scala.inline
-    def setPaddingRightVarargs(value: ((js.UndefOr[PaddingRightProperty[Double | String]]) | Null)*): Self = this.set("paddingRight", js.Array(value :_*))
+    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
     @scala.inline
-    def setPaddingRightFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingRightProperty[Double | String]]]
-    ): Self = this.set("paddingRight", js.Any.fromFunction1(value))
+    def setPaddingLeftVarargs(value: ((js.UndefOr[PaddingLeftProperty[Double | String]]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+    
+    @scala.inline
+    def setPaddingNull: Self = StObject.set(x, "padding", null)
     
     @scala.inline
     def setPaddingRight(
@@ -9008,19 +8983,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingRightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingRight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingRight: Self = this.set("paddingRight", js.undefined)
+    def setPaddingRightFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingRightProperty[Double | String]]]
+    ): Self = StObject.set(x, "paddingRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaddingRightNull: Self = this.set("paddingRight", null)
+    def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
     
     @scala.inline
-    def setPaddingTopVarargs(value: ((js.UndefOr[PaddingTopProperty[Double | String]]) | Null)*): Self = this.set("paddingTop", js.Array(value :_*))
+    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
     @scala.inline
-    def setPaddingTopFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingTopProperty[Double | String]]]): Self = this.set("paddingTop", js.Any.fromFunction1(value))
+    def setPaddingRightVarargs(value: ((js.UndefOr[PaddingRightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
     
     @scala.inline
     def setPaddingTop(
@@ -9028,29 +9005,25 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PaddingTopProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingTop", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingTop: Self = this.set("paddingTop", js.undefined)
+    def setPaddingTopFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaddingTopProperty[Double | String]]]): Self = StObject.set(x, "paddingTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaddingTopNull: Self = this.set("paddingTop", null)
+    def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
     
     @scala.inline
-    def setPaddingXVarargs(
-      value: (js.UndefOr[
-          (js.Array[PaddingLeftProperty[Double | String]]) | Null | (PaddingLeftProperty[Double | String])
-        ])*
-    ): Self = this.set("paddingX", js.Array(value :_*))
+    def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
     @scala.inline
-    def setPaddingXFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
-          ]
-        ]
-    ): Self = this.set("paddingX", js.Any.fromFunction1(value))
+    def setPaddingTopVarargs(value: ((js.UndefOr[PaddingTopProperty[Double | String]]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+    
+    @scala.inline
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    @scala.inline
+    def setPaddingVarargs(value: ((js.UndefOr[PaddingProperty[Double | String]]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
     @scala.inline
     def setPaddingX(
@@ -9066,29 +9039,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingX", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingX: Self = this.set("paddingX", js.undefined)
-    
-    @scala.inline
-    def setPaddingXNull: Self = this.set("paddingX", null)
-    
-    @scala.inline
-    def setPaddingYVarargs(
-      value: (js.UndefOr[
-          (js.Array[PaddingTopProperty[Double | String]]) | Null | (PaddingTopProperty[Double | String])
-        ])*
-    ): Self = this.set("paddingY", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaddingYFunction1(
+    def setPaddingXFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
+            (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
           ]
         ]
-    ): Self = this.set("paddingY", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "paddingX", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
+    
+    @scala.inline
+    def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
+    
+    @scala.inline
+    def setPaddingXVarargs(
+      value: (js.UndefOr[
+          (js.Array[PaddingLeftProperty[Double | String]]) | Null | (PaddingLeftProperty[Double | String])
+        ])*
+    ): Self = StObject.set(x, "paddingX", js.Array(value :_*))
     
     @scala.inline
     def setPaddingY(
@@ -9104,97 +9077,97 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("paddingY", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingY: Self = this.set("paddingY", js.undefined)
+    def setPaddingYFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
+          ]
+        ]
+    ): Self = StObject.set(x, "paddingY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaddingYNull: Self = this.set("paddingY", null)
+    def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
     
     @scala.inline
-    def setPageBreakAfterVarargs(value: (js.UndefOr[PageBreakAfterProperty] | Null)*): Self = this.set("pageBreakAfter", js.Array(value :_*))
+    def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
     @scala.inline
-    def setPageBreakAfterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PageBreakAfterProperty]]): Self = this.set("pageBreakAfter", js.Any.fromFunction1(value))
+    def setPaddingYVarargs(
+      value: (js.UndefOr[
+          (js.Array[PaddingTopProperty[Double | String]]) | Null | (PaddingTopProperty[Double | String])
+        ])*
+    ): Self = StObject.set(x, "paddingY", js.Array(value :_*))
     
     @scala.inline
     def setPageBreakAfter(
       value: ResponsiveStyleValue[js.UndefOr[PageBreakAfterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PageBreakAfterProperty]]]) | SystemStyleObject
-    ): Self = this.set("pageBreakAfter", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageBreakAfter: Self = this.set("pageBreakAfter", js.undefined)
+    def setPageBreakAfterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PageBreakAfterProperty]]): Self = StObject.set(x, "pageBreakAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageBreakAfterNull: Self = this.set("pageBreakAfter", null)
+    def setPageBreakAfterNull: Self = StObject.set(x, "pageBreakAfter", null)
     
     @scala.inline
-    def setPageBreakBeforeVarargs(value: (js.UndefOr[PageBreakBeforeProperty] | Null)*): Self = this.set("pageBreakBefore", js.Array(value :_*))
+    def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
     
     @scala.inline
-    def setPageBreakBeforeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PageBreakBeforeProperty]]): Self = this.set("pageBreakBefore", js.Any.fromFunction1(value))
+    def setPageBreakAfterVarargs(value: (js.UndefOr[PageBreakAfterProperty] | Null)*): Self = StObject.set(x, "pageBreakAfter", js.Array(value :_*))
     
     @scala.inline
     def setPageBreakBefore(
       value: ResponsiveStyleValue[js.UndefOr[PageBreakBeforeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PageBreakBeforeProperty]]]) | SystemStyleObject
-    ): Self = this.set("pageBreakBefore", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageBreakBefore: Self = this.set("pageBreakBefore", js.undefined)
+    def setPageBreakBeforeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PageBreakBeforeProperty]]): Self = StObject.set(x, "pageBreakBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageBreakBeforeNull: Self = this.set("pageBreakBefore", null)
+    def setPageBreakBeforeNull: Self = StObject.set(x, "pageBreakBefore", null)
     
     @scala.inline
-    def setPageBreakInsideVarargs(value: (js.UndefOr[PageBreakInsideProperty] | Null)*): Self = this.set("pageBreakInside", js.Array(value :_*))
+    def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
     
     @scala.inline
-    def setPageBreakInsideFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PageBreakInsideProperty]]): Self = this.set("pageBreakInside", js.Any.fromFunction1(value))
+    def setPageBreakBeforeVarargs(value: (js.UndefOr[PageBreakBeforeProperty] | Null)*): Self = StObject.set(x, "pageBreakBefore", js.Array(value :_*))
     
     @scala.inline
     def setPageBreakInside(
       value: ResponsiveStyleValue[js.UndefOr[PageBreakInsideProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PageBreakInsideProperty]]]) | SystemStyleObject
-    ): Self = this.set("pageBreakInside", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageBreakInside: Self = this.set("pageBreakInside", js.undefined)
+    def setPageBreakInsideFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PageBreakInsideProperty]]): Self = StObject.set(x, "pageBreakInside", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageBreakInsideNull: Self = this.set("pageBreakInside", null)
+    def setPageBreakInsideNull: Self = StObject.set(x, "pageBreakInside", null)
     
     @scala.inline
-    def setPaintOrderVarargs(value: (js.UndefOr[PaintOrderProperty] | Null)*): Self = this.set("paintOrder", js.Array(value :_*))
+    def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
     
     @scala.inline
-    def setPaintOrderFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaintOrderProperty]]): Self = this.set("paintOrder", js.Any.fromFunction1(value))
+    def setPageBreakInsideVarargs(value: (js.UndefOr[PageBreakInsideProperty] | Null)*): Self = StObject.set(x, "pageBreakInside", js.Array(value :_*))
     
     @scala.inline
     def setPaintOrder(
       value: ResponsiveStyleValue[js.UndefOr[PaintOrderProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PaintOrderProperty]]]) | SystemStyleObject
-    ): Self = this.set("paintOrder", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaintOrder: Self = this.set("paintOrder", js.undefined)
+    def setPaintOrderFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PaintOrderProperty]]): Self = StObject.set(x, "paintOrder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaintOrderNull: Self = this.set("paintOrder", null)
+    def setPaintOrderNull: Self = StObject.set(x, "paintOrder", null)
     
     @scala.inline
-    def setPbVarargs(
-      value: (js.UndefOr[
-          (js.Array[PaddingBottomProperty[Double | String]]) | Null | (PaddingBottomProperty[Double | String])
-        ])*
-    ): Self = this.set("pb", js.Array(value :_*))
+    def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
     
     @scala.inline
-    def setPbFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (PaddingBottomProperty[Double | String]) | (js.Array[PaddingBottomProperty[Double | String]])
-          ]
-        ]
-    ): Self = this.set("pb", js.Any.fromFunction1(value))
+    def setPaintOrderVarargs(value: (js.UndefOr[PaintOrderProperty] | Null)*): Self = StObject.set(x, "paintOrder", js.Array(value :_*))
     
     @scala.inline
     def setPb(
@@ -9210,21 +9183,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("pb", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePb: Self = this.set("pb", js.undefined)
+    def setPbFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (PaddingBottomProperty[Double | String]) | (js.Array[PaddingBottomProperty[Double | String]])
+          ]
+        ]
+    ): Self = StObject.set(x, "pb", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPbNull: Self = this.set("pb", null)
+    def setPbNull: Self = StObject.set(x, "pb", null)
     
     @scala.inline
-    def setPerspectiveVarargs(value: ((js.UndefOr[PerspectiveProperty[Double | String]]) | Null)*): Self = this.set("perspective", js.Array(value :_*))
+    def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
     
     @scala.inline
-    def setPerspectiveFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PerspectiveProperty[Double | String]]]
-    ): Self = this.set("perspective", js.Any.fromFunction1(value))
+    def setPbVarargs(
+      value: (js.UndefOr[
+          (js.Array[PaddingBottomProperty[Double | String]]) | Null | (PaddingBottomProperty[Double | String])
+        ])*
+    ): Self = StObject.set(x, "pb", js.Array(value :_*))
     
     @scala.inline
     def setPerspective(
@@ -9232,21 +9213,15 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PerspectiveProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("perspective", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePerspective: Self = this.set("perspective", js.undefined)
+    def setPerspectiveFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PerspectiveProperty[Double | String]]]
+    ): Self = StObject.set(x, "perspective", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPerspectiveNull: Self = this.set("perspective", null)
-    
-    @scala.inline
-    def setPerspectiveOriginVarargs(value: ((js.UndefOr[PerspectiveOriginProperty[Double | String]]) | Null)*): Self = this.set("perspectiveOrigin", js.Array(value :_*))
-    
-    @scala.inline
-    def setPerspectiveOriginFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PerspectiveOriginProperty[Double | String]]]
-    ): Self = this.set("perspectiveOrigin", js.Any.fromFunction1(value))
+    def setPerspectiveNull: Self = StObject.set(x, "perspective", null)
     
     @scala.inline
     def setPerspectiveOrigin(
@@ -9254,29 +9229,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[PerspectiveOriginProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("perspectiveOrigin", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "perspectiveOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePerspectiveOrigin: Self = this.set("perspectiveOrigin", js.undefined)
+    def setPerspectiveOriginFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PerspectiveOriginProperty[Double | String]]]
+    ): Self = StObject.set(x, "perspectiveOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPerspectiveOriginNull: Self = this.set("perspectiveOrigin", null)
+    def setPerspectiveOriginNull: Self = StObject.set(x, "perspectiveOrigin", null)
     
     @scala.inline
-    def setPlVarargs(
-      value: (js.UndefOr[
-          (js.Array[PaddingLeftProperty[Double | String]]) | Null | (PaddingLeftProperty[Double | String])
-        ])*
-    ): Self = this.set("pl", js.Array(value :_*))
+    def setPerspectiveOriginUndefined: Self = StObject.set(x, "perspectiveOrigin", js.undefined)
     
     @scala.inline
-    def setPlFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
-          ]
-        ]
-    ): Self = this.set("pl", js.Any.fromFunction1(value))
+    def setPerspectiveOriginVarargs(value: ((js.UndefOr[PerspectiveOriginProperty[Double | String]]) | Null)*): Self = StObject.set(x, "perspectiveOrigin", js.Array(value :_*))
+    
+    @scala.inline
+    def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
+    
+    @scala.inline
+    def setPerspectiveVarargs(value: ((js.UndefOr[PerspectiveProperty[Double | String]]) | Null)*): Self = StObject.set(x, "perspective", js.Array(value :_*))
     
     @scala.inline
     def setPl(
@@ -9292,114 +9265,114 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("pl", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePl: Self = this.set("pl", js.undefined)
+    def setPlFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
+          ]
+        ]
+    ): Self = StObject.set(x, "pl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlNull: Self = this.set("pl", null)
+    def setPlNull: Self = StObject.set(x, "pl", null)
     
     @scala.inline
-    def setPlaceContentVarargs(value: (js.UndefOr[PlaceContentProperty] | Null)*): Self = this.set("placeContent", js.Array(value :_*))
+    def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
     
     @scala.inline
-    def setPlaceContentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PlaceContentProperty]]): Self = this.set("placeContent", js.Any.fromFunction1(value))
+    def setPlVarargs(
+      value: (js.UndefOr[
+          (js.Array[PaddingLeftProperty[Double | String]]) | Null | (PaddingLeftProperty[Double | String])
+        ])*
+    ): Self = StObject.set(x, "pl", js.Array(value :_*))
     
     @scala.inline
     def setPlaceContent(
       value: ResponsiveStyleValue[js.UndefOr[PlaceContentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PlaceContentProperty]]]) | SystemStyleObject
-    ): Self = this.set("placeContent", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "placeContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaceContent: Self = this.set("placeContent", js.undefined)
+    def setPlaceContentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PlaceContentProperty]]): Self = StObject.set(x, "placeContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlaceContentNull: Self = this.set("placeContent", null)
+    def setPlaceContentNull: Self = StObject.set(x, "placeContent", null)
     
     @scala.inline
-    def setPlaceItemsVarargs(value: (js.UndefOr[PlaceItemsProperty] | Null)*): Self = this.set("placeItems", js.Array(value :_*))
+    def setPlaceContentUndefined: Self = StObject.set(x, "placeContent", js.undefined)
     
     @scala.inline
-    def setPlaceItemsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PlaceItemsProperty]]): Self = this.set("placeItems", js.Any.fromFunction1(value))
+    def setPlaceContentVarargs(value: (js.UndefOr[PlaceContentProperty] | Null)*): Self = StObject.set(x, "placeContent", js.Array(value :_*))
     
     @scala.inline
     def setPlaceItems(
       value: ResponsiveStyleValue[js.UndefOr[PlaceItemsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PlaceItemsProperty]]]) | SystemStyleObject
-    ): Self = this.set("placeItems", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "placeItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaceItems: Self = this.set("placeItems", js.undefined)
+    def setPlaceItemsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PlaceItemsProperty]]): Self = StObject.set(x, "placeItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlaceItemsNull: Self = this.set("placeItems", null)
+    def setPlaceItemsNull: Self = StObject.set(x, "placeItems", null)
     
     @scala.inline
-    def setPlaceSelfVarargs(value: (js.UndefOr[PlaceSelfProperty] | Null)*): Self = this.set("placeSelf", js.Array(value :_*))
+    def setPlaceItemsUndefined: Self = StObject.set(x, "placeItems", js.undefined)
     
     @scala.inline
-    def setPlaceSelfFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PlaceSelfProperty]]): Self = this.set("placeSelf", js.Any.fromFunction1(value))
+    def setPlaceItemsVarargs(value: (js.UndefOr[PlaceItemsProperty] | Null)*): Self = StObject.set(x, "placeItems", js.Array(value :_*))
     
     @scala.inline
     def setPlaceSelf(
       value: ResponsiveStyleValue[js.UndefOr[PlaceSelfProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PlaceSelfProperty]]]) | SystemStyleObject
-    ): Self = this.set("placeSelf", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "placeSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaceSelf: Self = this.set("placeSelf", js.undefined)
+    def setPlaceSelfFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PlaceSelfProperty]]): Self = StObject.set(x, "placeSelf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlaceSelfNull: Self = this.set("placeSelf", null)
+    def setPlaceSelfNull: Self = StObject.set(x, "placeSelf", null)
     
     @scala.inline
-    def setPointerEventsVarargs(value: (js.UndefOr[PointerEventsProperty] | Null)*): Self = this.set("pointerEvents", js.Array(value :_*))
+    def setPlaceSelfUndefined: Self = StObject.set(x, "placeSelf", js.undefined)
     
     @scala.inline
-    def setPointerEventsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PointerEventsProperty]]): Self = this.set("pointerEvents", js.Any.fromFunction1(value))
+    def setPlaceSelfVarargs(value: (js.UndefOr[PlaceSelfProperty] | Null)*): Self = StObject.set(x, "placeSelf", js.Array(value :_*))
     
     @scala.inline
     def setPointerEvents(
       value: ResponsiveStyleValue[js.UndefOr[PointerEventsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PointerEventsProperty]]]) | SystemStyleObject
-    ): Self = this.set("pointerEvents", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePointerEvents: Self = this.set("pointerEvents", js.undefined)
+    def setPointerEventsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PointerEventsProperty]]): Self = StObject.set(x, "pointerEvents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPointerEventsNull: Self = this.set("pointerEvents", null)
+    def setPointerEventsNull: Self = StObject.set(x, "pointerEvents", null)
     
     @scala.inline
-    def setPositionVarargs(value: (js.UndefOr[PositionProperty] | Null)*): Self = this.set("position", js.Array(value :_*))
+    def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
     @scala.inline
-    def setPositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PositionProperty]]): Self = this.set("position", js.Any.fromFunction1(value))
+    def setPointerEventsVarargs(value: (js.UndefOr[PointerEventsProperty] | Null)*): Self = StObject.set(x, "pointerEvents", js.Array(value :_*))
     
     @scala.inline
     def setPosition(
       value: ResponsiveStyleValue[js.UndefOr[PositionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PositionProperty]]]) | SystemStyleObject
-    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[PositionProperty]]): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPositionNull: Self = this.set("position", null)
+    def setPositionNull: Self = StObject.set(x, "position", null)
     
     @scala.inline
-    def setPrVarargs(
-      value: (js.UndefOr[
-          (js.Array[PaddingRightProperty[Double | String]]) | Null | (PaddingRightProperty[Double | String])
-        ])*
-    ): Self = this.set("pr", js.Array(value :_*))
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setPrFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (PaddingRightProperty[Double | String]) | (js.Array[PaddingRightProperty[Double | String]])
-          ]
-        ]
-    ): Self = this.set("pr", js.Any.fromFunction1(value))
+    def setPositionVarargs(value: (js.UndefOr[PositionProperty] | Null)*): Self = StObject.set(x, "position", js.Array(value :_*))
     
     @scala.inline
     def setPr(
@@ -9415,29 +9388,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("pr", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePr: Self = this.set("pr", js.undefined)
-    
-    @scala.inline
-    def setPrNull: Self = this.set("pr", null)
-    
-    @scala.inline
-    def setPtVarargs(
-      value: (js.UndefOr[
-          (js.Array[PaddingTopProperty[Double | String]]) | Null | (PaddingTopProperty[Double | String])
-        ])*
-    ): Self = this.set("pt", js.Array(value :_*))
-    
-    @scala.inline
-    def setPtFunction1(
+    def setPrFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
+            (PaddingRightProperty[Double | String]) | (js.Array[PaddingRightProperty[Double | String]])
           ]
         ]
-    ): Self = this.set("pt", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "pr", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setPrNull: Self = StObject.set(x, "pr", null)
+    
+    @scala.inline
+    def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
+    
+    @scala.inline
+    def setPrVarargs(
+      value: (js.UndefOr[
+          (js.Array[PaddingRightProperty[Double | String]]) | Null | (PaddingRightProperty[Double | String])
+        ])*
+    ): Self = StObject.set(x, "pr", js.Array(value :_*))
     
     @scala.inline
     def setPt(
@@ -9453,29 +9426,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("pt", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePt: Self = this.set("pt", js.undefined)
-    
-    @scala.inline
-    def setPtNull: Self = this.set("pt", null)
-    
-    @scala.inline
-    def setPxVarargs(
-      value: (js.UndefOr[
-          (js.Array[PaddingLeftProperty[Double | String]]) | Null | (PaddingLeftProperty[Double | String])
-        ])*
-    ): Self = this.set("px", js.Array(value :_*))
-    
-    @scala.inline
-    def setPxFunction1(
+    def setPtFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
+            (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
           ]
         ]
-    ): Self = this.set("px", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "pt", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setPtNull: Self = StObject.set(x, "pt", null)
+    
+    @scala.inline
+    def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+    
+    @scala.inline
+    def setPtVarargs(
+      value: (js.UndefOr[
+          (js.Array[PaddingTopProperty[Double | String]]) | Null | (PaddingTopProperty[Double | String])
+        ])*
+    ): Self = StObject.set(x, "pt", js.Array(value :_*))
     
     @scala.inline
     def setPx(
@@ -9491,29 +9464,29 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("px", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePx: Self = this.set("px", js.undefined)
-    
-    @scala.inline
-    def setPxNull: Self = this.set("px", null)
-    
-    @scala.inline
-    def setPyVarargs(
-      value: (js.UndefOr[
-          (js.Array[PaddingTopProperty[Double | String]]) | Null | (PaddingTopProperty[Double | String])
-        ])*
-    ): Self = this.set("py", js.Array(value :_*))
-    
-    @scala.inline
-    def setPyFunction1(
+    def setPxFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
+            (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
           ]
         ]
-    ): Self = this.set("py", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "px", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setPxNull: Self = StObject.set(x, "px", null)
+    
+    @scala.inline
+    def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
+    
+    @scala.inline
+    def setPxVarargs(
+      value: (js.UndefOr[
+          (js.Array[PaddingLeftProperty[Double | String]]) | Null | (PaddingLeftProperty[Double | String])
+        ])*
+    ): Self = StObject.set(x, "px", js.Array(value :_*))
     
     @scala.inline
     def setPy(
@@ -9529,53 +9502,63 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("py", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePy: Self = this.set("py", js.undefined)
+    def setPyFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
+          ]
+        ]
+    ): Self = StObject.set(x, "py", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPyNull: Self = this.set("py", null)
+    def setPyNull: Self = StObject.set(x, "py", null)
     
     @scala.inline
-    def setQuotesVarargs(value: (js.UndefOr[QuotesProperty] | Null)*): Self = this.set("quotes", js.Array(value :_*))
+    def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
     
     @scala.inline
-    def setQuotesFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[QuotesProperty]]): Self = this.set("quotes", js.Any.fromFunction1(value))
+    def setPyVarargs(
+      value: (js.UndefOr[
+          (js.Array[PaddingTopProperty[Double | String]]) | Null | (PaddingTopProperty[Double | String])
+        ])*
+    ): Self = StObject.set(x, "py", js.Array(value :_*))
     
     @scala.inline
     def setQuotes(
       value: ResponsiveStyleValue[js.UndefOr[QuotesProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[QuotesProperty]]]) | SystemStyleObject
-    ): Self = this.set("quotes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuotes: Self = this.set("quotes", js.undefined)
+    def setQuotesFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[QuotesProperty]]): Self = StObject.set(x, "quotes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setQuotesNull: Self = this.set("quotes", null)
+    def setQuotesNull: Self = StObject.set(x, "quotes", null)
     
     @scala.inline
-    def setResizeVarargs(value: (js.UndefOr[ResizeProperty] | Null)*): Self = this.set("resize", js.Array(value :_*))
+    def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
     
     @scala.inline
-    def setResizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ResizeProperty]]): Self = this.set("resize", js.Any.fromFunction1(value))
+    def setQuotesVarargs(value: (js.UndefOr[QuotesProperty] | Null)*): Self = StObject.set(x, "quotes", js.Array(value :_*))
     
     @scala.inline
     def setResize(
       value: ResponsiveStyleValue[js.UndefOr[ResizeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ResizeProperty]]]) | SystemStyleObject
-    ): Self = this.set("resize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setResizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ResizeProperty]]): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResizeNull: Self = this.set("resize", null)
+    def setResizeNull: Self = StObject.set(x, "resize", null)
     
     @scala.inline
-    def setRightVarargs(value: ((js.UndefOr[RightProperty[Double | String]]) | Null)*): Self = this.set("right", js.Array(value :_*))
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def setRightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RightProperty[Double | String]]]): Self = this.set("right", js.Any.fromFunction1(value))
+    def setResizeVarargs(value: (js.UndefOr[ResizeProperty] | Null)*): Self = StObject.set(x, "resize", js.Array(value :_*))
     
     @scala.inline
     def setRight(
@@ -9583,36 +9566,36 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[RightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("right", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setRightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RightProperty[Double | String]]]): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRightNull: Self = this.set("right", null)
+    def setRightNull: Self = StObject.set(x, "right", null)
     
     @scala.inline
-    def setRotateVarargs(value: (js.UndefOr[RotateProperty] | Null)*): Self = this.set("rotate", js.Array(value :_*))
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def setRotateFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RotateProperty]]): Self = this.set("rotate", js.Any.fromFunction1(value))
+    def setRightVarargs(value: ((js.UndefOr[RightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "right", js.Array(value :_*))
     
     @scala.inline
     def setRotate(
       value: ResponsiveStyleValue[js.UndefOr[RotateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[RotateProperty]]]) | SystemStyleObject
-    ): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setRotateFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RotateProperty]]): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRotateNull: Self = this.set("rotate", null)
+    def setRotateNull: Self = StObject.set(x, "rotate", null)
     
     @scala.inline
-    def setRowGapVarargs(value: ((js.UndefOr[RowGapProperty[Double | String]]) | Null)*): Self = this.set("rowGap", js.Array(value :_*))
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def setRowGapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RowGapProperty[Double | String]]]): Self = this.set("rowGap", js.Any.fromFunction1(value))
+    def setRotateVarargs(value: (js.UndefOr[RotateProperty] | Null)*): Self = StObject.set(x, "rotate", js.Array(value :_*))
     
     @scala.inline
     def setRowGap(
@@ -9620,106 +9603,104 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[RowGapProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("rowGap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowGap: Self = this.set("rowGap", js.undefined)
+    def setRowGapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RowGapProperty[Double | String]]]): Self = StObject.set(x, "rowGap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRowGapNull: Self = this.set("rowGap", null)
+    def setRowGapNull: Self = StObject.set(x, "rowGap", null)
     
     @scala.inline
-    def setRubyAlignVarargs(value: (js.UndefOr[RubyAlignProperty] | Null)*): Self = this.set("rubyAlign", js.Array(value :_*))
+    def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
     
     @scala.inline
-    def setRubyAlignFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RubyAlignProperty]]): Self = this.set("rubyAlign", js.Any.fromFunction1(value))
+    def setRowGapVarargs(value: ((js.UndefOr[RowGapProperty[Double | String]]) | Null)*): Self = StObject.set(x, "rowGap", js.Array(value :_*))
     
     @scala.inline
     def setRubyAlign(
       value: ResponsiveStyleValue[js.UndefOr[RubyAlignProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[RubyAlignProperty]]]) | SystemStyleObject
-    ): Self = this.set("rubyAlign", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "rubyAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRubyAlign: Self = this.set("rubyAlign", js.undefined)
+    def setRubyAlignFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RubyAlignProperty]]): Self = StObject.set(x, "rubyAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRubyAlignNull: Self = this.set("rubyAlign", null)
+    def setRubyAlignNull: Self = StObject.set(x, "rubyAlign", null)
     
     @scala.inline
-    def setRubyMergeVarargs(value: (js.UndefOr[RubyMergeProperty] | Null)*): Self = this.set("rubyMerge", js.Array(value :_*))
+    def setRubyAlignUndefined: Self = StObject.set(x, "rubyAlign", js.undefined)
     
     @scala.inline
-    def setRubyMergeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RubyMergeProperty]]): Self = this.set("rubyMerge", js.Any.fromFunction1(value))
+    def setRubyAlignVarargs(value: (js.UndefOr[RubyAlignProperty] | Null)*): Self = StObject.set(x, "rubyAlign", js.Array(value :_*))
     
     @scala.inline
     def setRubyMerge(
       value: ResponsiveStyleValue[js.UndefOr[RubyMergeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[RubyMergeProperty]]]) | SystemStyleObject
-    ): Self = this.set("rubyMerge", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "rubyMerge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRubyMerge: Self = this.set("rubyMerge", js.undefined)
+    def setRubyMergeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RubyMergeProperty]]): Self = StObject.set(x, "rubyMerge", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRubyMergeNull: Self = this.set("rubyMerge", null)
+    def setRubyMergeNull: Self = StObject.set(x, "rubyMerge", null)
     
     @scala.inline
-    def setRubyPositionVarargs(value: (js.UndefOr[RubyPositionProperty] | Null)*): Self = this.set("rubyPosition", js.Array(value :_*))
+    def setRubyMergeUndefined: Self = StObject.set(x, "rubyMerge", js.undefined)
     
     @scala.inline
-    def setRubyPositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RubyPositionProperty]]): Self = this.set("rubyPosition", js.Any.fromFunction1(value))
+    def setRubyMergeVarargs(value: (js.UndefOr[RubyMergeProperty] | Null)*): Self = StObject.set(x, "rubyMerge", js.Array(value :_*))
     
     @scala.inline
     def setRubyPosition(
       value: ResponsiveStyleValue[js.UndefOr[RubyPositionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[RubyPositionProperty]]]) | SystemStyleObject
-    ): Self = this.set("rubyPosition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "rubyPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRubyPosition: Self = this.set("rubyPosition", js.undefined)
+    def setRubyPositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[RubyPositionProperty]]): Self = StObject.set(x, "rubyPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRubyPositionNull: Self = this.set("rubyPosition", null)
+    def setRubyPositionNull: Self = StObject.set(x, "rubyPosition", null)
     
     @scala.inline
-    def setScaleVarargs(value: (js.UndefOr[ScaleProperty] | Null)*): Self = this.set("scale", js.Array(value :_*))
+    def setRubyPositionUndefined: Self = StObject.set(x, "rubyPosition", js.undefined)
     
     @scala.inline
-    def setScaleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScaleProperty]]): Self = this.set("scale", js.Any.fromFunction1(value))
+    def setRubyPositionVarargs(value: (js.UndefOr[RubyPositionProperty] | Null)*): Self = StObject.set(x, "rubyPosition", js.Array(value :_*))
     
     @scala.inline
     def setScale(
       value: ResponsiveStyleValue[js.UndefOr[ScaleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScaleProperty]]]) | SystemStyleObject
-    ): Self = this.set("scale", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScaleProperty]]): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScaleNull: Self = this.set("scale", null)
+    def setScaleNull: Self = StObject.set(x, "scale", null)
     
     @scala.inline
-    def setScrollBehaviorVarargs(value: (js.UndefOr[ScrollBehaviorProperty] | Null)*): Self = this.set("scrollBehavior", js.Array(value :_*))
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def setScrollBehaviorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollBehaviorProperty]]): Self = this.set("scrollBehavior", js.Any.fromFunction1(value))
+    def setScaleVarargs(value: (js.UndefOr[ScaleProperty] | Null)*): Self = StObject.set(x, "scale", js.Array(value :_*))
     
     @scala.inline
     def setScrollBehavior(
       value: ResponsiveStyleValue[js.UndefOr[ScrollBehaviorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollBehaviorProperty]]]) | SystemStyleObject
-    ): Self = this.set("scrollBehavior", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollBehavior: Self = this.set("scrollBehavior", js.undefined)
+    def setScrollBehaviorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollBehaviorProperty]]): Self = StObject.set(x, "scrollBehavior", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollBehaviorNull: Self = this.set("scrollBehavior", null)
+    def setScrollBehaviorNull: Self = StObject.set(x, "scrollBehavior", null)
     
     @scala.inline
-    def setScrollMarginVarargs(value: ((js.UndefOr[ScrollMarginProperty[Double | String]]) | Null)*): Self = this.set("scrollMargin", js.Array(value :_*))
+    def setScrollBehaviorUndefined: Self = StObject.set(x, "scrollBehavior", js.undefined)
     
     @scala.inline
-    def setScrollMarginFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginProperty[Double | String]]]
-    ): Self = this.set("scrollMargin", js.Any.fromFunction1(value))
+    def setScrollBehaviorVarargs(value: (js.UndefOr[ScrollBehaviorProperty] | Null)*): Self = StObject.set(x, "scrollBehavior", js.Array(value :_*))
     
     @scala.inline
     def setScrollMargin(
@@ -9727,21 +9708,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollMargin: Self = this.set("scrollMargin", js.undefined)
-    
-    @scala.inline
-    def setScrollMarginNull: Self = this.set("scrollMargin", null)
-    
-    @scala.inline
-    def setScrollMarginBlockVarargs(value: ((js.UndefOr[ScrollMarginBlockProperty[Double | String]]) | Null)*): Self = this.set("scrollMarginBlock", js.Array(value :_*))
-    
-    @scala.inline
-    def setScrollMarginBlockFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockProperty[Double | String]]]
-    ): Self = this.set("scrollMarginBlock", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScrollMarginBlock(
@@ -9749,21 +9716,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMarginBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollMarginBlock: Self = this.set("scrollMarginBlock", js.undefined)
-    
-    @scala.inline
-    def setScrollMarginBlockNull: Self = this.set("scrollMarginBlock", null)
-    
-    @scala.inline
-    def setScrollMarginBlockEndVarargs(value: ((js.UndefOr[ScrollMarginBlockEndProperty[Double | String]]) | Null)*): Self = this.set("scrollMarginBlockEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setScrollMarginBlockEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockEndProperty[Double | String]]]
-    ): Self = this.set("scrollMarginBlockEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "scrollMarginBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScrollMarginBlockEnd(
@@ -9771,21 +9724,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMarginBlockEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollMarginBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollMarginBlockEnd: Self = this.set("scrollMarginBlockEnd", js.undefined)
+    def setScrollMarginBlockEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMarginBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollMarginBlockEndNull: Self = this.set("scrollMarginBlockEnd", null)
+    def setScrollMarginBlockEndNull: Self = StObject.set(x, "scrollMarginBlockEnd", null)
     
     @scala.inline
-    def setScrollMarginBlockStartVarargs(value: ((js.UndefOr[ScrollMarginBlockStartProperty[Double | String]]) | Null)*): Self = this.set("scrollMarginBlockStart", js.Array(value :_*))
+    def setScrollMarginBlockEndUndefined: Self = StObject.set(x, "scrollMarginBlockEnd", js.undefined)
     
     @scala.inline
-    def setScrollMarginBlockStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockStartProperty[Double | String]]]
-    ): Self = this.set("scrollMarginBlockStart", js.Any.fromFunction1(value))
+    def setScrollMarginBlockEndVarargs(value: ((js.UndefOr[ScrollMarginBlockEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMarginBlockEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollMarginBlockFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMarginBlock", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setScrollMarginBlockNull: Self = StObject.set(x, "scrollMarginBlock", null)
     
     @scala.inline
     def setScrollMarginBlockStart(
@@ -9793,21 +9754,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMarginBlockStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollMarginBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollMarginBlockStart: Self = this.set("scrollMarginBlockStart", js.undefined)
+    def setScrollMarginBlockStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMarginBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollMarginBlockStartNull: Self = this.set("scrollMarginBlockStart", null)
+    def setScrollMarginBlockStartNull: Self = StObject.set(x, "scrollMarginBlockStart", null)
     
     @scala.inline
-    def setScrollMarginBottomVarargs(value: ((js.UndefOr[ScrollMarginBottomProperty[Double | String]]) | Null)*): Self = this.set("scrollMarginBottom", js.Array(value :_*))
+    def setScrollMarginBlockStartUndefined: Self = StObject.set(x, "scrollMarginBlockStart", js.undefined)
     
     @scala.inline
-    def setScrollMarginBottomFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginBottomProperty[Double | String]]]
-    ): Self = this.set("scrollMarginBottom", js.Any.fromFunction1(value))
+    def setScrollMarginBlockStartVarargs(value: ((js.UndefOr[ScrollMarginBlockStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMarginBlockStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollMarginBlockUndefined: Self = StObject.set(x, "scrollMarginBlock", js.undefined)
+    
+    @scala.inline
+    def setScrollMarginBlockVarargs(value: ((js.UndefOr[ScrollMarginBlockProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMarginBlock", js.Array(value :_*))
     
     @scala.inline
     def setScrollMarginBottom(
@@ -9815,21 +9782,26 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginBottomProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMarginBottom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollMarginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollMarginBottom: Self = this.set("scrollMarginBottom", js.undefined)
+    def setScrollMarginBottomFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginBottomProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMarginBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollMarginBottomNull: Self = this.set("scrollMarginBottom", null)
+    def setScrollMarginBottomNull: Self = StObject.set(x, "scrollMarginBottom", null)
     
     @scala.inline
-    def setScrollMarginInlineVarargs(value: ((js.UndefOr[ScrollMarginInlineProperty[Double | String]]) | Null)*): Self = this.set("scrollMarginInline", js.Array(value :_*))
+    def setScrollMarginBottomUndefined: Self = StObject.set(x, "scrollMarginBottom", js.undefined)
     
     @scala.inline
-    def setScrollMarginInlineFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineProperty[Double | String]]]
-    ): Self = this.set("scrollMarginInline", js.Any.fromFunction1(value))
+    def setScrollMarginBottomVarargs(value: ((js.UndefOr[ScrollMarginBottomProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMarginBottom", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollMarginFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMargin", js.Any.fromFunction1(value))
     
     @scala.inline
     def setScrollMarginInline(
@@ -9837,21 +9809,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMarginInline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollMarginInline: Self = this.set("scrollMarginInline", js.undefined)
-    
-    @scala.inline
-    def setScrollMarginInlineNull: Self = this.set("scrollMarginInline", null)
-    
-    @scala.inline
-    def setScrollMarginInlineEndVarargs(value: ((js.UndefOr[ScrollMarginInlineEndProperty[Double | String]]) | Null)*): Self = this.set("scrollMarginInlineEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setScrollMarginInlineEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineEndProperty[Double | String]]]
-    ): Self = this.set("scrollMarginInlineEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "scrollMarginInline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScrollMarginInlineEnd(
@@ -9859,21 +9817,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMarginInlineEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollMarginInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollMarginInlineEnd: Self = this.set("scrollMarginInlineEnd", js.undefined)
+    def setScrollMarginInlineEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMarginInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollMarginInlineEndNull: Self = this.set("scrollMarginInlineEnd", null)
+    def setScrollMarginInlineEndNull: Self = StObject.set(x, "scrollMarginInlineEnd", null)
     
     @scala.inline
-    def setScrollMarginInlineStartVarargs(value: ((js.UndefOr[ScrollMarginInlineStartProperty[Double | String]]) | Null)*): Self = this.set("scrollMarginInlineStart", js.Array(value :_*))
+    def setScrollMarginInlineEndUndefined: Self = StObject.set(x, "scrollMarginInlineEnd", js.undefined)
     
     @scala.inline
-    def setScrollMarginInlineStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineStartProperty[Double | String]]]
-    ): Self = this.set("scrollMarginInlineStart", js.Any.fromFunction1(value))
+    def setScrollMarginInlineEndVarargs(value: ((js.UndefOr[ScrollMarginInlineEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMarginInlineEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollMarginInlineFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMarginInline", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setScrollMarginInlineNull: Self = StObject.set(x, "scrollMarginInline", null)
     
     @scala.inline
     def setScrollMarginInlineStart(
@@ -9881,21 +9847,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMarginInlineStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollMarginInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollMarginInlineStart: Self = this.set("scrollMarginInlineStart", js.undefined)
+    def setScrollMarginInlineStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMarginInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollMarginInlineStartNull: Self = this.set("scrollMarginInlineStart", null)
+    def setScrollMarginInlineStartNull: Self = StObject.set(x, "scrollMarginInlineStart", null)
     
     @scala.inline
-    def setScrollMarginLeftVarargs(value: ((js.UndefOr[ScrollMarginLeftProperty[Double | String]]) | Null)*): Self = this.set("scrollMarginLeft", js.Array(value :_*))
+    def setScrollMarginInlineStartUndefined: Self = StObject.set(x, "scrollMarginInlineStart", js.undefined)
     
     @scala.inline
-    def setScrollMarginLeftFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginLeftProperty[Double | String]]]
-    ): Self = this.set("scrollMarginLeft", js.Any.fromFunction1(value))
+    def setScrollMarginInlineStartVarargs(value: ((js.UndefOr[ScrollMarginInlineStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMarginInlineStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollMarginInlineUndefined: Self = StObject.set(x, "scrollMarginInline", js.undefined)
+    
+    @scala.inline
+    def setScrollMarginInlineVarargs(value: ((js.UndefOr[ScrollMarginInlineProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMarginInline", js.Array(value :_*))
     
     @scala.inline
     def setScrollMarginLeft(
@@ -9903,21 +9875,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginLeftProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMarginLeft", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollMarginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollMarginLeft: Self = this.set("scrollMarginLeft", js.undefined)
+    def setScrollMarginLeftFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginLeftProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMarginLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollMarginLeftNull: Self = this.set("scrollMarginLeft", null)
+    def setScrollMarginLeftNull: Self = StObject.set(x, "scrollMarginLeft", null)
     
     @scala.inline
-    def setScrollMarginRightVarargs(value: ((js.UndefOr[ScrollMarginRightProperty[Double | String]]) | Null)*): Self = this.set("scrollMarginRight", js.Array(value :_*))
+    def setScrollMarginLeftUndefined: Self = StObject.set(x, "scrollMarginLeft", js.undefined)
     
     @scala.inline
-    def setScrollMarginRightFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginRightProperty[Double | String]]]
-    ): Self = this.set("scrollMarginRight", js.Any.fromFunction1(value))
+    def setScrollMarginLeftVarargs(value: ((js.UndefOr[ScrollMarginLeftProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMarginLeft", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollMarginNull: Self = StObject.set(x, "scrollMargin", null)
     
     @scala.inline
     def setScrollMarginRight(
@@ -9925,21 +9900,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginRightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMarginRight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollMarginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollMarginRight: Self = this.set("scrollMarginRight", js.undefined)
+    def setScrollMarginRightFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginRightProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMarginRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollMarginRightNull: Self = this.set("scrollMarginRight", null)
+    def setScrollMarginRightNull: Self = StObject.set(x, "scrollMarginRight", null)
     
     @scala.inline
-    def setScrollMarginTopVarargs(value: ((js.UndefOr[ScrollMarginTopProperty[Double | String]]) | Null)*): Self = this.set("scrollMarginTop", js.Array(value :_*))
+    def setScrollMarginRightUndefined: Self = StObject.set(x, "scrollMarginRight", js.undefined)
     
     @scala.inline
-    def setScrollMarginTopFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginTopProperty[Double | String]]]
-    ): Self = this.set("scrollMarginTop", js.Any.fromFunction1(value))
+    def setScrollMarginRightVarargs(value: ((js.UndefOr[ScrollMarginRightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMarginRight", js.Array(value :_*))
     
     @scala.inline
     def setScrollMarginTop(
@@ -9947,21 +9922,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginTopProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollMarginTop", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollMarginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollMarginTop: Self = this.set("scrollMarginTop", js.undefined)
+    def setScrollMarginTopFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginTopProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollMarginTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollMarginTopNull: Self = this.set("scrollMarginTop", null)
+    def setScrollMarginTopNull: Self = StObject.set(x, "scrollMarginTop", null)
     
     @scala.inline
-    def setScrollPaddingVarargs(value: ((js.UndefOr[ScrollPaddingProperty[Double | String]]) | Null)*): Self = this.set("scrollPadding", js.Array(value :_*))
+    def setScrollMarginTopUndefined: Self = StObject.set(x, "scrollMarginTop", js.undefined)
     
     @scala.inline
-    def setScrollPaddingFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingProperty[Double | String]]]
-    ): Self = this.set("scrollPadding", js.Any.fromFunction1(value))
+    def setScrollMarginTopVarargs(value: ((js.UndefOr[ScrollMarginTopProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMarginTop", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
+    
+    @scala.inline
+    def setScrollMarginVarargs(value: ((js.UndefOr[ScrollMarginProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollMargin", js.Array(value :_*))
     
     @scala.inline
     def setScrollPadding(
@@ -9969,21 +9950,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollPadding: Self = this.set("scrollPadding", js.undefined)
-    
-    @scala.inline
-    def setScrollPaddingNull: Self = this.set("scrollPadding", null)
-    
-    @scala.inline
-    def setScrollPaddingBlockVarargs(value: ((js.UndefOr[ScrollPaddingBlockProperty[Double | String]]) | Null)*): Self = this.set("scrollPaddingBlock", js.Array(value :_*))
-    
-    @scala.inline
-    def setScrollPaddingBlockFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockProperty[Double | String]]]
-    ): Self = this.set("scrollPaddingBlock", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScrollPaddingBlock(
@@ -9991,21 +9958,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPaddingBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollPaddingBlock: Self = this.set("scrollPaddingBlock", js.undefined)
-    
-    @scala.inline
-    def setScrollPaddingBlockNull: Self = this.set("scrollPaddingBlock", null)
-    
-    @scala.inline
-    def setScrollPaddingBlockEndVarargs(value: ((js.UndefOr[ScrollPaddingBlockEndProperty[Double | String]]) | Null)*): Self = this.set("scrollPaddingBlockEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setScrollPaddingBlockEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockEndProperty[Double | String]]]
-    ): Self = this.set("scrollPaddingBlockEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "scrollPaddingBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScrollPaddingBlockEnd(
@@ -10013,21 +9966,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPaddingBlockEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollPaddingBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollPaddingBlockEnd: Self = this.set("scrollPaddingBlockEnd", js.undefined)
+    def setScrollPaddingBlockEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPaddingBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollPaddingBlockEndNull: Self = this.set("scrollPaddingBlockEnd", null)
+    def setScrollPaddingBlockEndNull: Self = StObject.set(x, "scrollPaddingBlockEnd", null)
     
     @scala.inline
-    def setScrollPaddingBlockStartVarargs(value: ((js.UndefOr[ScrollPaddingBlockStartProperty[Double | String]]) | Null)*): Self = this.set("scrollPaddingBlockStart", js.Array(value :_*))
+    def setScrollPaddingBlockEndUndefined: Self = StObject.set(x, "scrollPaddingBlockEnd", js.undefined)
     
     @scala.inline
-    def setScrollPaddingBlockStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockStartProperty[Double | String]]]
-    ): Self = this.set("scrollPaddingBlockStart", js.Any.fromFunction1(value))
+    def setScrollPaddingBlockEndVarargs(value: ((js.UndefOr[ScrollPaddingBlockEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPaddingBlockEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollPaddingBlockFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPaddingBlock", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setScrollPaddingBlockNull: Self = StObject.set(x, "scrollPaddingBlock", null)
     
     @scala.inline
     def setScrollPaddingBlockStart(
@@ -10035,21 +9996,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPaddingBlockStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollPaddingBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollPaddingBlockStart: Self = this.set("scrollPaddingBlockStart", js.undefined)
+    def setScrollPaddingBlockStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPaddingBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollPaddingBlockStartNull: Self = this.set("scrollPaddingBlockStart", null)
+    def setScrollPaddingBlockStartNull: Self = StObject.set(x, "scrollPaddingBlockStart", null)
     
     @scala.inline
-    def setScrollPaddingBottomVarargs(value: ((js.UndefOr[ScrollPaddingBottomProperty[Double | String]]) | Null)*): Self = this.set("scrollPaddingBottom", js.Array(value :_*))
+    def setScrollPaddingBlockStartUndefined: Self = StObject.set(x, "scrollPaddingBlockStart", js.undefined)
     
     @scala.inline
-    def setScrollPaddingBottomFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingBottomProperty[Double | String]]]
-    ): Self = this.set("scrollPaddingBottom", js.Any.fromFunction1(value))
+    def setScrollPaddingBlockStartVarargs(value: ((js.UndefOr[ScrollPaddingBlockStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPaddingBlockStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollPaddingBlockUndefined: Self = StObject.set(x, "scrollPaddingBlock", js.undefined)
+    
+    @scala.inline
+    def setScrollPaddingBlockVarargs(value: ((js.UndefOr[ScrollPaddingBlockProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPaddingBlock", js.Array(value :_*))
     
     @scala.inline
     def setScrollPaddingBottom(
@@ -10057,21 +10024,26 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingBottomProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPaddingBottom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollPaddingBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollPaddingBottom: Self = this.set("scrollPaddingBottom", js.undefined)
+    def setScrollPaddingBottomFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingBottomProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPaddingBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollPaddingBottomNull: Self = this.set("scrollPaddingBottom", null)
+    def setScrollPaddingBottomNull: Self = StObject.set(x, "scrollPaddingBottom", null)
     
     @scala.inline
-    def setScrollPaddingInlineVarargs(value: ((js.UndefOr[ScrollPaddingInlineProperty[Double | String]]) | Null)*): Self = this.set("scrollPaddingInline", js.Array(value :_*))
+    def setScrollPaddingBottomUndefined: Self = StObject.set(x, "scrollPaddingBottom", js.undefined)
     
     @scala.inline
-    def setScrollPaddingInlineFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineProperty[Double | String]]]
-    ): Self = this.set("scrollPaddingInline", js.Any.fromFunction1(value))
+    def setScrollPaddingBottomVarargs(value: ((js.UndefOr[ScrollPaddingBottomProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPaddingBottom", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollPaddingFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPadding", js.Any.fromFunction1(value))
     
     @scala.inline
     def setScrollPaddingInline(
@@ -10079,21 +10051,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPaddingInline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollPaddingInline: Self = this.set("scrollPaddingInline", js.undefined)
-    
-    @scala.inline
-    def setScrollPaddingInlineNull: Self = this.set("scrollPaddingInline", null)
-    
-    @scala.inline
-    def setScrollPaddingInlineEndVarargs(value: ((js.UndefOr[ScrollPaddingInlineEndProperty[Double | String]]) | Null)*): Self = this.set("scrollPaddingInlineEnd", js.Array(value :_*))
-    
-    @scala.inline
-    def setScrollPaddingInlineEndFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineEndProperty[Double | String]]]
-    ): Self = this.set("scrollPaddingInlineEnd", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "scrollPaddingInline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScrollPaddingInlineEnd(
@@ -10101,21 +10059,29 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineEndProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPaddingInlineEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollPaddingInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollPaddingInlineEnd: Self = this.set("scrollPaddingInlineEnd", js.undefined)
+    def setScrollPaddingInlineEndFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineEndProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPaddingInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollPaddingInlineEndNull: Self = this.set("scrollPaddingInlineEnd", null)
+    def setScrollPaddingInlineEndNull: Self = StObject.set(x, "scrollPaddingInlineEnd", null)
     
     @scala.inline
-    def setScrollPaddingInlineStartVarargs(value: ((js.UndefOr[ScrollPaddingInlineStartProperty[Double | String]]) | Null)*): Self = this.set("scrollPaddingInlineStart", js.Array(value :_*))
+    def setScrollPaddingInlineEndUndefined: Self = StObject.set(x, "scrollPaddingInlineEnd", js.undefined)
     
     @scala.inline
-    def setScrollPaddingInlineStartFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineStartProperty[Double | String]]]
-    ): Self = this.set("scrollPaddingInlineStart", js.Any.fromFunction1(value))
+    def setScrollPaddingInlineEndVarargs(value: ((js.UndefOr[ScrollPaddingInlineEndProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPaddingInlineEnd", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollPaddingInlineFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPaddingInline", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setScrollPaddingInlineNull: Self = StObject.set(x, "scrollPaddingInline", null)
     
     @scala.inline
     def setScrollPaddingInlineStart(
@@ -10123,21 +10089,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineStartProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPaddingInlineStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollPaddingInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollPaddingInlineStart: Self = this.set("scrollPaddingInlineStart", js.undefined)
+    def setScrollPaddingInlineStartFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineStartProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPaddingInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollPaddingInlineStartNull: Self = this.set("scrollPaddingInlineStart", null)
+    def setScrollPaddingInlineStartNull: Self = StObject.set(x, "scrollPaddingInlineStart", null)
     
     @scala.inline
-    def setScrollPaddingLeftVarargs(value: ((js.UndefOr[ScrollPaddingLeftProperty[Double | String]]) | Null)*): Self = this.set("scrollPaddingLeft", js.Array(value :_*))
+    def setScrollPaddingInlineStartUndefined: Self = StObject.set(x, "scrollPaddingInlineStart", js.undefined)
     
     @scala.inline
-    def setScrollPaddingLeftFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingLeftProperty[Double | String]]]
-    ): Self = this.set("scrollPaddingLeft", js.Any.fromFunction1(value))
+    def setScrollPaddingInlineStartVarargs(value: ((js.UndefOr[ScrollPaddingInlineStartProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPaddingInlineStart", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollPaddingInlineUndefined: Self = StObject.set(x, "scrollPaddingInline", js.undefined)
+    
+    @scala.inline
+    def setScrollPaddingInlineVarargs(value: ((js.UndefOr[ScrollPaddingInlineProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPaddingInline", js.Array(value :_*))
     
     @scala.inline
     def setScrollPaddingLeft(
@@ -10145,21 +10117,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingLeftProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPaddingLeft", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollPaddingLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollPaddingLeft: Self = this.set("scrollPaddingLeft", js.undefined)
+    def setScrollPaddingLeftFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingLeftProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPaddingLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollPaddingLeftNull: Self = this.set("scrollPaddingLeft", null)
+    def setScrollPaddingLeftNull: Self = StObject.set(x, "scrollPaddingLeft", null)
     
     @scala.inline
-    def setScrollPaddingRightVarargs(value: ((js.UndefOr[ScrollPaddingRightProperty[Double | String]]) | Null)*): Self = this.set("scrollPaddingRight", js.Array(value :_*))
+    def setScrollPaddingLeftUndefined: Self = StObject.set(x, "scrollPaddingLeft", js.undefined)
     
     @scala.inline
-    def setScrollPaddingRightFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingRightProperty[Double | String]]]
-    ): Self = this.set("scrollPaddingRight", js.Any.fromFunction1(value))
+    def setScrollPaddingLeftVarargs(value: ((js.UndefOr[ScrollPaddingLeftProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPaddingLeft", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollPaddingNull: Self = StObject.set(x, "scrollPadding", null)
     
     @scala.inline
     def setScrollPaddingRight(
@@ -10167,21 +10142,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingRightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPaddingRight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollPaddingRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollPaddingRight: Self = this.set("scrollPaddingRight", js.undefined)
+    def setScrollPaddingRightFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingRightProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPaddingRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollPaddingRightNull: Self = this.set("scrollPaddingRight", null)
+    def setScrollPaddingRightNull: Self = StObject.set(x, "scrollPaddingRight", null)
     
     @scala.inline
-    def setScrollPaddingTopVarargs(value: ((js.UndefOr[ScrollPaddingTopProperty[Double | String]]) | Null)*): Self = this.set("scrollPaddingTop", js.Array(value :_*))
+    def setScrollPaddingRightUndefined: Self = StObject.set(x, "scrollPaddingRight", js.undefined)
     
     @scala.inline
-    def setScrollPaddingTopFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingTopProperty[Double | String]]]
-    ): Self = this.set("scrollPaddingTop", js.Any.fromFunction1(value))
+    def setScrollPaddingRightVarargs(value: ((js.UndefOr[ScrollPaddingRightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPaddingRight", js.Array(value :_*))
     
     @scala.inline
     def setScrollPaddingTop(
@@ -10189,38 +10164,44 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollPaddingTopProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollPaddingTop", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollPaddingTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollPaddingTop: Self = this.set("scrollPaddingTop", js.undefined)
+    def setScrollPaddingTopFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollPaddingTopProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollPaddingTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollPaddingTopNull: Self = this.set("scrollPaddingTop", null)
+    def setScrollPaddingTopNull: Self = StObject.set(x, "scrollPaddingTop", null)
     
     @scala.inline
-    def setScrollSnapAlignVarargs(value: (js.UndefOr[ScrollSnapAlignProperty] | Null)*): Self = this.set("scrollSnapAlign", js.Array(value :_*))
+    def setScrollPaddingTopUndefined: Self = StObject.set(x, "scrollPaddingTop", js.undefined)
     
     @scala.inline
-    def setScrollSnapAlignFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollSnapAlignProperty]]): Self = this.set("scrollSnapAlign", js.Any.fromFunction1(value))
+    def setScrollPaddingTopVarargs(value: ((js.UndefOr[ScrollPaddingTopProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPaddingTop", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollPaddingUndefined: Self = StObject.set(x, "scrollPadding", js.undefined)
+    
+    @scala.inline
+    def setScrollPaddingVarargs(value: ((js.UndefOr[ScrollPaddingProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollPadding", js.Array(value :_*))
     
     @scala.inline
     def setScrollSnapAlign(
       value: ResponsiveStyleValue[js.UndefOr[ScrollSnapAlignProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollSnapAlignProperty]]]) | SystemStyleObject
-    ): Self = this.set("scrollSnapAlign", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollSnapAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSnapAlign: Self = this.set("scrollSnapAlign", js.undefined)
+    def setScrollSnapAlignFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollSnapAlignProperty]]): Self = StObject.set(x, "scrollSnapAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapAlignNull: Self = this.set("scrollSnapAlign", null)
+    def setScrollSnapAlignNull: Self = StObject.set(x, "scrollSnapAlign", null)
     
     @scala.inline
-    def setScrollSnapMarginVarargs(value: ((js.UndefOr[ScrollMarginProperty[Double | String]]) | Null)*): Self = this.set("scrollSnapMargin", js.Array(value :_*))
+    def setScrollSnapAlignUndefined: Self = StObject.set(x, "scrollSnapAlign", js.undefined)
     
     @scala.inline
-    def setScrollSnapMarginFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginProperty[Double | String]]]
-    ): Self = this.set("scrollSnapMargin", js.Any.fromFunction1(value))
+    def setScrollSnapAlignVarargs(value: (js.UndefOr[ScrollSnapAlignProperty] | Null)*): Self = StObject.set(x, "scrollSnapAlign", js.Array(value :_*))
     
     @scala.inline
     def setScrollSnapMargin(
@@ -10228,21 +10209,7 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollSnapMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollSnapMargin: Self = this.set("scrollSnapMargin", js.undefined)
-    
-    @scala.inline
-    def setScrollSnapMarginNull: Self = this.set("scrollSnapMargin", null)
-    
-    @scala.inline
-    def setScrollSnapMarginBottomVarargs(value: ((js.UndefOr[ScrollMarginBottomProperty[Double | String]]) | Null)*): Self = this.set("scrollSnapMarginBottom", js.Array(value :_*))
-    
-    @scala.inline
-    def setScrollSnapMarginBottomFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginBottomProperty[Double | String]]]
-    ): Self = this.set("scrollSnapMarginBottom", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "scrollSnapMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScrollSnapMarginBottom(
@@ -10250,21 +10217,26 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginBottomProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollSnapMarginBottom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollSnapMarginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSnapMarginBottom: Self = this.set("scrollSnapMarginBottom", js.undefined)
+    def setScrollSnapMarginBottomFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginBottomProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollSnapMarginBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapMarginBottomNull: Self = this.set("scrollSnapMarginBottom", null)
+    def setScrollSnapMarginBottomNull: Self = StObject.set(x, "scrollSnapMarginBottom", null)
     
     @scala.inline
-    def setScrollSnapMarginLeftVarargs(value: ((js.UndefOr[ScrollMarginLeftProperty[Double | String]]) | Null)*): Self = this.set("scrollSnapMarginLeft", js.Array(value :_*))
+    def setScrollSnapMarginBottomUndefined: Self = StObject.set(x, "scrollSnapMarginBottom", js.undefined)
     
     @scala.inline
-    def setScrollSnapMarginLeftFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginLeftProperty[Double | String]]]
-    ): Self = this.set("scrollSnapMarginLeft", js.Any.fromFunction1(value))
+    def setScrollSnapMarginBottomVarargs(value: ((js.UndefOr[ScrollMarginBottomProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollSnapMarginBottom", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollSnapMarginFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollSnapMargin", js.Any.fromFunction1(value))
     
     @scala.inline
     def setScrollSnapMarginLeft(
@@ -10272,21 +10244,24 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginLeftProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollSnapMarginLeft", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollSnapMarginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSnapMarginLeft: Self = this.set("scrollSnapMarginLeft", js.undefined)
+    def setScrollSnapMarginLeftFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginLeftProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollSnapMarginLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapMarginLeftNull: Self = this.set("scrollSnapMarginLeft", null)
+    def setScrollSnapMarginLeftNull: Self = StObject.set(x, "scrollSnapMarginLeft", null)
     
     @scala.inline
-    def setScrollSnapMarginRightVarargs(value: ((js.UndefOr[ScrollMarginRightProperty[Double | String]]) | Null)*): Self = this.set("scrollSnapMarginRight", js.Array(value :_*))
+    def setScrollSnapMarginLeftUndefined: Self = StObject.set(x, "scrollSnapMarginLeft", js.undefined)
     
     @scala.inline
-    def setScrollSnapMarginRightFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginRightProperty[Double | String]]]
-    ): Self = this.set("scrollSnapMarginRight", js.Any.fromFunction1(value))
+    def setScrollSnapMarginLeftVarargs(value: ((js.UndefOr[ScrollMarginLeftProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollSnapMarginLeft", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollSnapMarginNull: Self = StObject.set(x, "scrollSnapMargin", null)
     
     @scala.inline
     def setScrollSnapMarginRight(
@@ -10294,21 +10269,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginRightProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollSnapMarginRight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollSnapMarginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSnapMarginRight: Self = this.set("scrollSnapMarginRight", js.undefined)
+    def setScrollSnapMarginRightFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginRightProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollSnapMarginRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapMarginRightNull: Self = this.set("scrollSnapMarginRight", null)
+    def setScrollSnapMarginRightNull: Self = StObject.set(x, "scrollSnapMarginRight", null)
     
     @scala.inline
-    def setScrollSnapMarginTopVarargs(value: ((js.UndefOr[ScrollMarginTopProperty[Double | String]]) | Null)*): Self = this.set("scrollSnapMarginTop", js.Array(value :_*))
+    def setScrollSnapMarginRightUndefined: Self = StObject.set(x, "scrollSnapMarginRight", js.undefined)
     
     @scala.inline
-    def setScrollSnapMarginTopFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginTopProperty[Double | String]]]
-    ): Self = this.set("scrollSnapMarginTop", js.Any.fromFunction1(value))
+    def setScrollSnapMarginRightVarargs(value: ((js.UndefOr[ScrollMarginRightProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollSnapMarginRight", js.Array(value :_*))
     
     @scala.inline
     def setScrollSnapMarginTop(
@@ -10316,123 +10291,129 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ScrollMarginTopProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("scrollSnapMarginTop", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollSnapMarginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSnapMarginTop: Self = this.set("scrollSnapMarginTop", js.undefined)
+    def setScrollSnapMarginTopFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollMarginTopProperty[Double | String]]]
+    ): Self = StObject.set(x, "scrollSnapMarginTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapMarginTopNull: Self = this.set("scrollSnapMarginTop", null)
+    def setScrollSnapMarginTopNull: Self = StObject.set(x, "scrollSnapMarginTop", null)
     
     @scala.inline
-    def setScrollSnapStopVarargs(value: (js.UndefOr[ScrollSnapStopProperty] | Null)*): Self = this.set("scrollSnapStop", js.Array(value :_*))
+    def setScrollSnapMarginTopUndefined: Self = StObject.set(x, "scrollSnapMarginTop", js.undefined)
     
     @scala.inline
-    def setScrollSnapStopFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollSnapStopProperty]]): Self = this.set("scrollSnapStop", js.Any.fromFunction1(value))
+    def setScrollSnapMarginTopVarargs(value: ((js.UndefOr[ScrollMarginTopProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollSnapMarginTop", js.Array(value :_*))
+    
+    @scala.inline
+    def setScrollSnapMarginUndefined: Self = StObject.set(x, "scrollSnapMargin", js.undefined)
+    
+    @scala.inline
+    def setScrollSnapMarginVarargs(value: ((js.UndefOr[ScrollMarginProperty[Double | String]]) | Null)*): Self = StObject.set(x, "scrollSnapMargin", js.Array(value :_*))
     
     @scala.inline
     def setScrollSnapStop(
       value: ResponsiveStyleValue[js.UndefOr[ScrollSnapStopProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollSnapStopProperty]]]) | SystemStyleObject
-    ): Self = this.set("scrollSnapStop", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollSnapStop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSnapStop: Self = this.set("scrollSnapStop", js.undefined)
+    def setScrollSnapStopFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollSnapStopProperty]]): Self = StObject.set(x, "scrollSnapStop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapStopNull: Self = this.set("scrollSnapStop", null)
+    def setScrollSnapStopNull: Self = StObject.set(x, "scrollSnapStop", null)
     
     @scala.inline
-    def setScrollSnapTypeVarargs(value: (js.UndefOr[ScrollSnapTypeProperty] | Null)*): Self = this.set("scrollSnapType", js.Array(value :_*))
+    def setScrollSnapStopUndefined: Self = StObject.set(x, "scrollSnapStop", js.undefined)
     
     @scala.inline
-    def setScrollSnapTypeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollSnapTypeProperty]]): Self = this.set("scrollSnapType", js.Any.fromFunction1(value))
+    def setScrollSnapStopVarargs(value: (js.UndefOr[ScrollSnapStopProperty] | Null)*): Self = StObject.set(x, "scrollSnapStop", js.Array(value :_*))
     
     @scala.inline
     def setScrollSnapType(
       value: ResponsiveStyleValue[js.UndefOr[ScrollSnapTypeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollSnapTypeProperty]]]) | SystemStyleObject
-    ): Self = this.set("scrollSnapType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollSnapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSnapType: Self = this.set("scrollSnapType", js.undefined)
+    def setScrollSnapTypeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollSnapTypeProperty]]): Self = StObject.set(x, "scrollSnapType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapTypeNull: Self = this.set("scrollSnapType", null)
+    def setScrollSnapTypeNull: Self = StObject.set(x, "scrollSnapType", null)
     
     @scala.inline
-    def setScrollbarColorVarargs(value: (js.UndefOr[ScrollbarColorProperty] | Null)*): Self = this.set("scrollbarColor", js.Array(value :_*))
+    def setScrollSnapTypeUndefined: Self = StObject.set(x, "scrollSnapType", js.undefined)
     
     @scala.inline
-    def setScrollbarColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollbarColorProperty]]): Self = this.set("scrollbarColor", js.Any.fromFunction1(value))
+    def setScrollSnapTypeVarargs(value: (js.UndefOr[ScrollSnapTypeProperty] | Null)*): Self = StObject.set(x, "scrollSnapType", js.Array(value :_*))
     
     @scala.inline
     def setScrollbarColor(
       value: ResponsiveStyleValue[js.UndefOr[ScrollbarColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollbarColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("scrollbarColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollbarColor: Self = this.set("scrollbarColor", js.undefined)
+    def setScrollbarColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollbarColorProperty]]): Self = StObject.set(x, "scrollbarColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollbarColorNull: Self = this.set("scrollbarColor", null)
+    def setScrollbarColorNull: Self = StObject.set(x, "scrollbarColor", null)
     
     @scala.inline
-    def setScrollbarGutterVarargs(value: (js.UndefOr[ScrollbarGutterProperty] | Null)*): Self = this.set("scrollbarGutter", js.Array(value :_*))
+    def setScrollbarColorUndefined: Self = StObject.set(x, "scrollbarColor", js.undefined)
     
     @scala.inline
-    def setScrollbarGutterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollbarGutterProperty]]): Self = this.set("scrollbarGutter", js.Any.fromFunction1(value))
+    def setScrollbarColorVarargs(value: (js.UndefOr[ScrollbarColorProperty] | Null)*): Self = StObject.set(x, "scrollbarColor", js.Array(value :_*))
     
     @scala.inline
     def setScrollbarGutter(
       value: ResponsiveStyleValue[js.UndefOr[ScrollbarGutterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollbarGutterProperty]]]) | SystemStyleObject
-    ): Self = this.set("scrollbarGutter", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollbarGutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollbarGutter: Self = this.set("scrollbarGutter", js.undefined)
+    def setScrollbarGutterFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollbarGutterProperty]]): Self = StObject.set(x, "scrollbarGutter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollbarGutterNull: Self = this.set("scrollbarGutter", null)
+    def setScrollbarGutterNull: Self = StObject.set(x, "scrollbarGutter", null)
     
     @scala.inline
-    def setScrollbarWidthVarargs(value: (js.UndefOr[ScrollbarWidthProperty] | Null)*): Self = this.set("scrollbarWidth", js.Array(value :_*))
+    def setScrollbarGutterUndefined: Self = StObject.set(x, "scrollbarGutter", js.undefined)
     
     @scala.inline
-    def setScrollbarWidthFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollbarWidthProperty]]): Self = this.set("scrollbarWidth", js.Any.fromFunction1(value))
+    def setScrollbarGutterVarargs(value: (js.UndefOr[ScrollbarGutterProperty] | Null)*): Self = StObject.set(x, "scrollbarGutter", js.Array(value :_*))
     
     @scala.inline
     def setScrollbarWidth(
       value: ResponsiveStyleValue[js.UndefOr[ScrollbarWidthProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollbarWidthProperty]]]) | SystemStyleObject
-    ): Self = this.set("scrollbarWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollbarWidth: Self = this.set("scrollbarWidth", js.undefined)
+    def setScrollbarWidthFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ScrollbarWidthProperty]]): Self = StObject.set(x, "scrollbarWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollbarWidthNull: Self = this.set("scrollbarWidth", null)
+    def setScrollbarWidthNull: Self = StObject.set(x, "scrollbarWidth", null)
     
     @scala.inline
-    def setShapeImageThresholdVarargs(value: (js.UndefOr[ShapeImageThresholdProperty] | Null)*): Self = this.set("shapeImageThreshold", js.Array(value :_*))
+    def setScrollbarWidthUndefined: Self = StObject.set(x, "scrollbarWidth", js.undefined)
     
     @scala.inline
-    def setShapeImageThresholdFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ShapeImageThresholdProperty]]): Self = this.set("shapeImageThreshold", js.Any.fromFunction1(value))
+    def setScrollbarWidthVarargs(value: (js.UndefOr[ScrollbarWidthProperty] | Null)*): Self = StObject.set(x, "scrollbarWidth", js.Array(value :_*))
     
     @scala.inline
     def setShapeImageThreshold(
       value: ResponsiveStyleValue[js.UndefOr[ShapeImageThresholdProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ShapeImageThresholdProperty]]]) | SystemStyleObject
-    ): Self = this.set("shapeImageThreshold", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shapeImageThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShapeImageThreshold: Self = this.set("shapeImageThreshold", js.undefined)
+    def setShapeImageThresholdFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ShapeImageThresholdProperty]]): Self = StObject.set(x, "shapeImageThreshold", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShapeImageThresholdNull: Self = this.set("shapeImageThreshold", null)
+    def setShapeImageThresholdNull: Self = StObject.set(x, "shapeImageThreshold", null)
     
     @scala.inline
-    def setShapeMarginVarargs(value: ((js.UndefOr[ShapeMarginProperty[Double | String]]) | Null)*): Self = this.set("shapeMargin", js.Array(value :_*))
+    def setShapeImageThresholdUndefined: Self = StObject.set(x, "shapeImageThreshold", js.undefined)
     
     @scala.inline
-    def setShapeMarginFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ShapeMarginProperty[Double | String]]]
-    ): Self = this.set("shapeMargin", js.Any.fromFunction1(value))
+    def setShapeImageThresholdVarargs(value: (js.UndefOr[ShapeImageThresholdProperty] | Null)*): Self = StObject.set(x, "shapeImageThreshold", js.Array(value :_*))
     
     @scala.inline
     def setShapeMargin(
@@ -10440,106 +10421,94 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[ShapeMarginProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("shapeMargin", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shapeMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShapeMargin: Self = this.set("shapeMargin", js.undefined)
+    def setShapeMarginFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ShapeMarginProperty[Double | String]]]
+    ): Self = StObject.set(x, "shapeMargin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShapeMarginNull: Self = this.set("shapeMargin", null)
+    def setShapeMarginNull: Self = StObject.set(x, "shapeMargin", null)
     
     @scala.inline
-    def setShapeOutsideVarargs(value: (js.UndefOr[ShapeOutsideProperty] | Null)*): Self = this.set("shapeOutside", js.Array(value :_*))
+    def setShapeMarginUndefined: Self = StObject.set(x, "shapeMargin", js.undefined)
     
     @scala.inline
-    def setShapeOutsideFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ShapeOutsideProperty]]): Self = this.set("shapeOutside", js.Any.fromFunction1(value))
+    def setShapeMarginVarargs(value: ((js.UndefOr[ShapeMarginProperty[Double | String]]) | Null)*): Self = StObject.set(x, "shapeMargin", js.Array(value :_*))
     
     @scala.inline
     def setShapeOutside(
       value: ResponsiveStyleValue[js.UndefOr[ShapeOutsideProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ShapeOutsideProperty]]]) | SystemStyleObject
-    ): Self = this.set("shapeOutside", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShapeOutside: Self = this.set("shapeOutside", js.undefined)
+    def setShapeOutsideFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ShapeOutsideProperty]]): Self = StObject.set(x, "shapeOutside", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShapeOutsideNull: Self = this.set("shapeOutside", null)
+    def setShapeOutsideNull: Self = StObject.set(x, "shapeOutside", null)
     
     @scala.inline
-    def setShapeRenderingVarargs(value: (js.UndefOr[ShapeRenderingProperty] | Null)*): Self = this.set("shapeRendering", js.Array(value :_*))
+    def setShapeOutsideUndefined: Self = StObject.set(x, "shapeOutside", js.undefined)
     
     @scala.inline
-    def setShapeRenderingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ShapeRenderingProperty]]): Self = this.set("shapeRendering", js.Any.fromFunction1(value))
+    def setShapeOutsideVarargs(value: (js.UndefOr[ShapeOutsideProperty] | Null)*): Self = StObject.set(x, "shapeOutside", js.Array(value :_*))
     
     @scala.inline
     def setShapeRendering(
       value: ResponsiveStyleValue[js.UndefOr[ShapeRenderingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ShapeRenderingProperty]]]) | SystemStyleObject
-    ): Self = this.set("shapeRendering", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShapeRendering: Self = this.set("shapeRendering", js.undefined)
+    def setShapeRenderingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ShapeRenderingProperty]]): Self = StObject.set(x, "shapeRendering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShapeRenderingNull: Self = this.set("shapeRendering", null)
+    def setShapeRenderingNull: Self = StObject.set(x, "shapeRendering", null)
     
     @scala.inline
-    def setStopColorVarargs(value: (js.UndefOr[StopColorProperty] | Null)*): Self = this.set("stopColor", js.Array(value :_*))
+    def setShapeRenderingUndefined: Self = StObject.set(x, "shapeRendering", js.undefined)
     
     @scala.inline
-    def setStopColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StopColorProperty]]): Self = this.set("stopColor", js.Any.fromFunction1(value))
+    def setShapeRenderingVarargs(value: (js.UndefOr[ShapeRenderingProperty] | Null)*): Self = StObject.set(x, "shapeRendering", js.Array(value :_*))
     
     @scala.inline
     def setStopColor(
       value: ResponsiveStyleValue[js.UndefOr[StopColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[StopColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("stopColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStopColor: Self = this.set("stopColor", js.undefined)
+    def setStopColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StopColorProperty]]): Self = StObject.set(x, "stopColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStopColorNull: Self = this.set("stopColor", null)
+    def setStopColorNull: Self = StObject.set(x, "stopColor", null)
     
     @scala.inline
-    def setStopOpacityVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = this.set("stopOpacity", js.Array(value :_*))
+    def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
     
     @scala.inline
-    def setStopOpacityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = this.set("stopOpacity", js.Any.fromFunction1(value))
+    def setStopColorVarargs(value: (js.UndefOr[StopColorProperty] | Null)*): Self = StObject.set(x, "stopColor", js.Array(value :_*))
     
     @scala.inline
     def setStopOpacity(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-    ): Self = this.set("stopOpacity", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStopOpacity: Self = this.set("stopOpacity", js.undefined)
+    def setStopOpacityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = StObject.set(x, "stopOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStopOpacityNull: Self = this.set("stopOpacity", null)
+    def setStopOpacityNull: Self = StObject.set(x, "stopOpacity", null)
     
     @scala.inline
-    def setStrokeVarargs(value: (js.UndefOr[StrokeProperty] | Null)*): Self = this.set("stroke", js.Array(value :_*))
+    def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
     
     @scala.inline
-    def setStrokeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeProperty]]): Self = this.set("stroke", js.Any.fromFunction1(value))
+    def setStopOpacityVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = StObject.set(x, "stopOpacity", js.Array(value :_*))
     
     @scala.inline
     def setStroke(
       value: ResponsiveStyleValue[js.UndefOr[StrokeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[StrokeProperty]]]) | SystemStyleObject
-    ): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
-    
-    @scala.inline
-    def setStrokeNull: Self = this.set("stroke", null)
-    
-    @scala.inline
-    def setStrokeDasharrayVarargs(value: ((js.UndefOr[StrokeDasharrayProperty[Double | String]]) | Null)*): Self = this.set("strokeDasharray", js.Array(value :_*))
-    
-    @scala.inline
-    def setStrokeDasharrayFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeDasharrayProperty[Double | String]]]
-    ): Self = this.set("strokeDasharray", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStrokeDasharray(
@@ -10547,21 +10516,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[StrokeDasharrayProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("strokeDasharray", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeDasharray: Self = this.set("strokeDasharray", js.undefined)
+    def setStrokeDasharrayFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeDasharrayProperty[Double | String]]]
+    ): Self = StObject.set(x, "strokeDasharray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeDasharrayNull: Self = this.set("strokeDasharray", null)
+    def setStrokeDasharrayNull: Self = StObject.set(x, "strokeDasharray", null)
     
     @scala.inline
-    def setStrokeDashoffsetVarargs(value: ((js.UndefOr[StrokeDashoffsetProperty[Double | String]]) | Null)*): Self = this.set("strokeDashoffset", js.Array(value :_*))
+    def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
     
     @scala.inline
-    def setStrokeDashoffsetFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeDashoffsetProperty[Double | String]]]
-    ): Self = this.set("strokeDashoffset", js.Any.fromFunction1(value))
+    def setStrokeDasharrayVarargs(value: ((js.UndefOr[StrokeDasharrayProperty[Double | String]]) | Null)*): Self = StObject.set(x, "strokeDasharray", js.Array(value :_*))
     
     @scala.inline
     def setStrokeDashoffset(
@@ -10569,89 +10538,101 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[StrokeDashoffsetProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("strokeDashoffset", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeDashoffset: Self = this.set("strokeDashoffset", js.undefined)
+    def setStrokeDashoffsetFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeDashoffsetProperty[Double | String]]]
+    ): Self = StObject.set(x, "strokeDashoffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeDashoffsetNull: Self = this.set("strokeDashoffset", null)
+    def setStrokeDashoffsetNull: Self = StObject.set(x, "strokeDashoffset", null)
     
     @scala.inline
-    def setStrokeLinecapVarargs(value: (js.UndefOr[StrokeLinecapProperty] | Null)*): Self = this.set("strokeLinecap", js.Array(value :_*))
+    def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
     
     @scala.inline
-    def setStrokeLinecapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeLinecapProperty]]): Self = this.set("strokeLinecap", js.Any.fromFunction1(value))
+    def setStrokeDashoffsetVarargs(value: ((js.UndefOr[StrokeDashoffsetProperty[Double | String]]) | Null)*): Self = StObject.set(x, "strokeDashoffset", js.Array(value :_*))
+    
+    @scala.inline
+    def setStrokeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeProperty]]): Self = StObject.set(x, "stroke", js.Any.fromFunction1(value))
     
     @scala.inline
     def setStrokeLinecap(
       value: ResponsiveStyleValue[js.UndefOr[StrokeLinecapProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[StrokeLinecapProperty]]]) | SystemStyleObject
-    ): Self = this.set("strokeLinecap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeLinecap: Self = this.set("strokeLinecap", js.undefined)
+    def setStrokeLinecapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeLinecapProperty]]): Self = StObject.set(x, "strokeLinecap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeLinecapNull: Self = this.set("strokeLinecap", null)
+    def setStrokeLinecapNull: Self = StObject.set(x, "strokeLinecap", null)
     
     @scala.inline
-    def setStrokeLinejoinVarargs(value: (js.UndefOr[StrokeLinejoinProperty] | Null)*): Self = this.set("strokeLinejoin", js.Array(value :_*))
+    def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
     
     @scala.inline
-    def setStrokeLinejoinFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeLinejoinProperty]]): Self = this.set("strokeLinejoin", js.Any.fromFunction1(value))
+    def setStrokeLinecapVarargs(value: (js.UndefOr[StrokeLinecapProperty] | Null)*): Self = StObject.set(x, "strokeLinecap", js.Array(value :_*))
     
     @scala.inline
     def setStrokeLinejoin(
       value: ResponsiveStyleValue[js.UndefOr[StrokeLinejoinProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[StrokeLinejoinProperty]]]) | SystemStyleObject
-    ): Self = this.set("strokeLinejoin", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeLinejoin: Self = this.set("strokeLinejoin", js.undefined)
+    def setStrokeLinejoinFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeLinejoinProperty]]): Self = StObject.set(x, "strokeLinejoin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeLinejoinNull: Self = this.set("strokeLinejoin", null)
+    def setStrokeLinejoinNull: Self = StObject.set(x, "strokeLinejoin", null)
     
     @scala.inline
-    def setStrokeMiterlimitVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = this.set("strokeMiterlimit", js.Array(value :_*))
+    def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
     
     @scala.inline
-    def setStrokeMiterlimitFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = this.set("strokeMiterlimit", js.Any.fromFunction1(value))
+    def setStrokeLinejoinVarargs(value: (js.UndefOr[StrokeLinejoinProperty] | Null)*): Self = StObject.set(x, "strokeLinejoin", js.Array(value :_*))
     
     @scala.inline
     def setStrokeMiterlimit(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-    ): Self = this.set("strokeMiterlimit", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeMiterlimit: Self = this.set("strokeMiterlimit", js.undefined)
+    def setStrokeMiterlimitFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = StObject.set(x, "strokeMiterlimit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeMiterlimitNull: Self = this.set("strokeMiterlimit", null)
+    def setStrokeMiterlimitNull: Self = StObject.set(x, "strokeMiterlimit", null)
     
     @scala.inline
-    def setStrokeOpacityVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = this.set("strokeOpacity", js.Array(value :_*))
+    def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
     
     @scala.inline
-    def setStrokeOpacityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = this.set("strokeOpacity", js.Any.fromFunction1(value))
+    def setStrokeMiterlimitVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = StObject.set(x, "strokeMiterlimit", js.Array(value :_*))
+    
+    @scala.inline
+    def setStrokeNull: Self = StObject.set(x, "stroke", null)
     
     @scala.inline
     def setStrokeOpacity(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-    ): Self = this.set("strokeOpacity", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeOpacity: Self = this.set("strokeOpacity", js.undefined)
+    def setStrokeOpacityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = StObject.set(x, "strokeOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeOpacityNull: Self = this.set("strokeOpacity", null)
+    def setStrokeOpacityNull: Self = StObject.set(x, "strokeOpacity", null)
     
     @scala.inline
-    def setStrokeWidthVarargs(value: ((js.UndefOr[StrokeWidthProperty[Double | String]]) | Null)*): Self = this.set("strokeWidth", js.Array(value :_*))
+    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
     @scala.inline
-    def setStrokeWidthFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeWidthProperty[Double | String]]]
-    ): Self = this.set("strokeWidth", js.Any.fromFunction1(value))
+    def setStrokeOpacityVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = StObject.set(x, "strokeOpacity", js.Array(value :_*))
+    
+    @scala.inline
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    @scala.inline
+    def setStrokeVarargs(value: (js.UndefOr[StrokeProperty] | Null)*): Self = StObject.set(x, "stroke", js.Array(value :_*))
     
     @scala.inline
     def setStrokeWidth(
@@ -10659,19 +10640,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[StrokeWidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setStrokeWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[StrokeWidthProperty[Double | String]]]
+    ): Self = StObject.set(x, "strokeWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeWidthNull: Self = this.set("strokeWidth", null)
+    def setStrokeWidthNull: Self = StObject.set(x, "strokeWidth", null)
     
     @scala.inline
-    def setTabSizeVarargs(value: ((js.UndefOr[TabSizeProperty[Double | String]]) | Null)*): Self = this.set("tabSize", js.Array(value :_*))
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
     @scala.inline
-    def setTabSizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TabSizeProperty[Double | String]]]): Self = this.set("tabSize", js.Any.fromFunction1(value))
+    def setStrokeWidthVarargs(value: ((js.UndefOr[StrokeWidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "strokeWidth", js.Array(value :_*))
     
     @scala.inline
     def setTabSize(
@@ -10679,106 +10662,104 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TabSizeProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("tabSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabSize: Self = this.set("tabSize", js.undefined)
+    def setTabSizeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TabSizeProperty[Double | String]]]): Self = StObject.set(x, "tabSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTabSizeNull: Self = this.set("tabSize", null)
+    def setTabSizeNull: Self = StObject.set(x, "tabSize", null)
     
     @scala.inline
-    def setTableLayoutVarargs(value: (js.UndefOr[TableLayoutProperty] | Null)*): Self = this.set("tableLayout", js.Array(value :_*))
+    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
     
     @scala.inline
-    def setTableLayoutFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TableLayoutProperty]]): Self = this.set("tableLayout", js.Any.fromFunction1(value))
+    def setTabSizeVarargs(value: ((js.UndefOr[TabSizeProperty[Double | String]]) | Null)*): Self = StObject.set(x, "tabSize", js.Array(value :_*))
     
     @scala.inline
     def setTableLayout(
       value: ResponsiveStyleValue[js.UndefOr[TableLayoutProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TableLayoutProperty]]]) | SystemStyleObject
-    ): Self = this.set("tableLayout", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tableLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableLayout: Self = this.set("tableLayout", js.undefined)
+    def setTableLayoutFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TableLayoutProperty]]): Self = StObject.set(x, "tableLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTableLayoutNull: Self = this.set("tableLayout", null)
+    def setTableLayoutNull: Self = StObject.set(x, "tableLayout", null)
     
     @scala.inline
-    def setTextAlignVarargs(value: (js.UndefOr[TextAlignProperty] | Null)*): Self = this.set("textAlign", js.Array(value :_*))
+    def setTableLayoutUndefined: Self = StObject.set(x, "tableLayout", js.undefined)
     
     @scala.inline
-    def setTextAlignFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextAlignProperty]]): Self = this.set("textAlign", js.Any.fromFunction1(value))
+    def setTableLayoutVarargs(value: (js.UndefOr[TableLayoutProperty] | Null)*): Self = StObject.set(x, "tableLayout", js.Array(value :_*))
     
     @scala.inline
     def setTextAlign(
       value: ResponsiveStyleValue[js.UndefOr[TextAlignProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextAlignProperty]]]) | SystemStyleObject
-    ): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
-    
-    @scala.inline
-    def setTextAlignNull: Self = this.set("textAlign", null)
-    
-    @scala.inline
-    def setTextAlignLastVarargs(value: (js.UndefOr[TextAlignLastProperty] | Null)*): Self = this.set("textAlignLast", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextAlignLastFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextAlignLastProperty]]): Self = this.set("textAlignLast", js.Any.fromFunction1(value))
+    def setTextAlignFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextAlignProperty]]): Self = StObject.set(x, "textAlign", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTextAlignLast(
       value: ResponsiveStyleValue[js.UndefOr[TextAlignLastProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextAlignLastProperty]]]) | SystemStyleObject
-    ): Self = this.set("textAlignLast", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textAlignLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextAlignLast: Self = this.set("textAlignLast", js.undefined)
+    def setTextAlignLastFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextAlignLastProperty]]): Self = StObject.set(x, "textAlignLast", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextAlignLastNull: Self = this.set("textAlignLast", null)
+    def setTextAlignLastNull: Self = StObject.set(x, "textAlignLast", null)
     
     @scala.inline
-    def setTextAnchorVarargs(value: (js.UndefOr[TextAnchorProperty] | Null)*): Self = this.set("textAnchor", js.Array(value :_*))
+    def setTextAlignLastUndefined: Self = StObject.set(x, "textAlignLast", js.undefined)
     
     @scala.inline
-    def setTextAnchorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextAnchorProperty]]): Self = this.set("textAnchor", js.Any.fromFunction1(value))
+    def setTextAlignLastVarargs(value: (js.UndefOr[TextAlignLastProperty] | Null)*): Self = StObject.set(x, "textAlignLast", js.Array(value :_*))
+    
+    @scala.inline
+    def setTextAlignNull: Self = StObject.set(x, "textAlign", null)
+    
+    @scala.inline
+    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    
+    @scala.inline
+    def setTextAlignVarargs(value: (js.UndefOr[TextAlignProperty] | Null)*): Self = StObject.set(x, "textAlign", js.Array(value :_*))
     
     @scala.inline
     def setTextAnchor(
       value: ResponsiveStyleValue[js.UndefOr[TextAnchorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextAnchorProperty]]]) | SystemStyleObject
-    ): Self = this.set("textAnchor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextAnchor: Self = this.set("textAnchor", js.undefined)
+    def setTextAnchorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextAnchorProperty]]): Self = StObject.set(x, "textAnchor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextAnchorNull: Self = this.set("textAnchor", null)
+    def setTextAnchorNull: Self = StObject.set(x, "textAnchor", null)
     
     @scala.inline
-    def setTextCombineUprightVarargs(value: (js.UndefOr[TextCombineUprightProperty] | Null)*): Self = this.set("textCombineUpright", js.Array(value :_*))
+    def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
     
     @scala.inline
-    def setTextCombineUprightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextCombineUprightProperty]]): Self = this.set("textCombineUpright", js.Any.fromFunction1(value))
+    def setTextAnchorVarargs(value: (js.UndefOr[TextAnchorProperty] | Null)*): Self = StObject.set(x, "textAnchor", js.Array(value :_*))
     
     @scala.inline
     def setTextCombineUpright(
       value: ResponsiveStyleValue[js.UndefOr[TextCombineUprightProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextCombineUprightProperty]]]) | SystemStyleObject
-    ): Self = this.set("textCombineUpright", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textCombineUpright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextCombineUpright: Self = this.set("textCombineUpright", js.undefined)
+    def setTextCombineUprightFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextCombineUprightProperty]]): Self = StObject.set(x, "textCombineUpright", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextCombineUprightNull: Self = this.set("textCombineUpright", null)
+    def setTextCombineUprightNull: Self = StObject.set(x, "textCombineUpright", null)
     
     @scala.inline
-    def setTextDecorationVarargs(value: ((js.UndefOr[TextDecorationProperty[Double | String]]) | Null)*): Self = this.set("textDecoration", js.Array(value :_*))
+    def setTextCombineUprightUndefined: Self = StObject.set(x, "textCombineUpright", js.undefined)
     
     @scala.inline
-    def setTextDecorationFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationProperty[Double | String]]]
-    ): Self = this.set("textDecoration", js.Any.fromFunction1(value))
+    def setTextCombineUprightVarargs(value: (js.UndefOr[TextCombineUprightProperty] | Null)*): Self = StObject.set(x, "textCombineUpright", js.Array(value :_*))
     
     @scala.inline
     def setTextDecoration(
@@ -10786,70 +10767,57 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TextDecorationProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
-    
-    @scala.inline
-    def setTextDecorationNull: Self = this.set("textDecoration", null)
-    
-    @scala.inline
-    def setTextDecorationColorVarargs(value: (js.UndefOr[TextDecorationColorProperty] | Null)*): Self = this.set("textDecorationColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextDecorationColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationColorProperty]]): Self = this.set("textDecorationColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTextDecorationColor(
       value: ResponsiveStyleValue[js.UndefOr[TextDecorationColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextDecorationColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("textDecorationColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextDecorationColor: Self = this.set("textDecorationColor", js.undefined)
+    def setTextDecorationColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationColorProperty]]): Self = StObject.set(x, "textDecorationColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextDecorationColorNull: Self = this.set("textDecorationColor", null)
+    def setTextDecorationColorNull: Self = StObject.set(x, "textDecorationColor", null)
     
     @scala.inline
-    def setTextDecorationLineVarargs(value: (js.UndefOr[TextDecorationLineProperty] | Null)*): Self = this.set("textDecorationLine", js.Array(value :_*))
+    def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
     
     @scala.inline
-    def setTextDecorationLineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationLineProperty]]): Self = this.set("textDecorationLine", js.Any.fromFunction1(value))
+    def setTextDecorationColorVarargs(value: (js.UndefOr[TextDecorationColorProperty] | Null)*): Self = StObject.set(x, "textDecorationColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setTextDecorationFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationProperty[Double | String]]]
+    ): Self = StObject.set(x, "textDecoration", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTextDecorationLine(
       value: ResponsiveStyleValue[js.UndefOr[TextDecorationLineProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextDecorationLineProperty]]]) | SystemStyleObject
-    ): Self = this.set("textDecorationLine", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextDecorationLine: Self = this.set("textDecorationLine", js.undefined)
+    def setTextDecorationLineFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationLineProperty]]): Self = StObject.set(x, "textDecorationLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextDecorationLineNull: Self = this.set("textDecorationLine", null)
+    def setTextDecorationLineNull: Self = StObject.set(x, "textDecorationLine", null)
     
     @scala.inline
-    def setTextDecorationSkipVarargs(value: (js.UndefOr[TextDecorationSkipProperty] | Null)*): Self = this.set("textDecorationSkip", js.Array(value :_*))
+    def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
     
     @scala.inline
-    def setTextDecorationSkipFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationSkipProperty]]): Self = this.set("textDecorationSkip", js.Any.fromFunction1(value))
+    def setTextDecorationLineVarargs(value: (js.UndefOr[TextDecorationLineProperty] | Null)*): Self = StObject.set(x, "textDecorationLine", js.Array(value :_*))
+    
+    @scala.inline
+    def setTextDecorationNull: Self = StObject.set(x, "textDecoration", null)
     
     @scala.inline
     def setTextDecorationSkip(
       value: ResponsiveStyleValue[js.UndefOr[TextDecorationSkipProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextDecorationSkipProperty]]]) | SystemStyleObject
-    ): Self = this.set("textDecorationSkip", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextDecorationSkip: Self = this.set("textDecorationSkip", js.undefined)
-    
-    @scala.inline
-    def setTextDecorationSkipNull: Self = this.set("textDecorationSkip", null)
-    
-    @scala.inline
-    def setTextDecorationSkipInkVarargs(value: (js.UndefOr[TextDecorationSkipInkProperty] | Null)*): Self = this.set("textDecorationSkipInk", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextDecorationSkipInkFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationSkipInkProperty]]): Self = this.set("textDecorationSkipInk", js.Any.fromFunction1(value))
+    def setTextDecorationSkipFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationSkipProperty]]): Self = StObject.set(x, "textDecorationSkip", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTextDecorationSkipInk(
@@ -10857,38 +10825,45 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TextDecorationSkipInkProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("textDecorationSkipInk", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textDecorationSkipInk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextDecorationSkipInk: Self = this.set("textDecorationSkipInk", js.undefined)
+    def setTextDecorationSkipInkFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationSkipInkProperty]]): Self = StObject.set(x, "textDecorationSkipInk", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextDecorationSkipInkNull: Self = this.set("textDecorationSkipInk", null)
+    def setTextDecorationSkipInkNull: Self = StObject.set(x, "textDecorationSkipInk", null)
     
     @scala.inline
-    def setTextDecorationStyleVarargs(value: (js.UndefOr[TextDecorationStyleProperty] | Null)*): Self = this.set("textDecorationStyle", js.Array(value :_*))
+    def setTextDecorationSkipInkUndefined: Self = StObject.set(x, "textDecorationSkipInk", js.undefined)
     
     @scala.inline
-    def setTextDecorationStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationStyleProperty]]): Self = this.set("textDecorationStyle", js.Any.fromFunction1(value))
+    def setTextDecorationSkipInkVarargs(value: (js.UndefOr[TextDecorationSkipInkProperty] | Null)*): Self = StObject.set(x, "textDecorationSkipInk", js.Array(value :_*))
+    
+    @scala.inline
+    def setTextDecorationSkipNull: Self = StObject.set(x, "textDecorationSkip", null)
+    
+    @scala.inline
+    def setTextDecorationSkipUndefined: Self = StObject.set(x, "textDecorationSkip", js.undefined)
+    
+    @scala.inline
+    def setTextDecorationSkipVarargs(value: (js.UndefOr[TextDecorationSkipProperty] | Null)*): Self = StObject.set(x, "textDecorationSkip", js.Array(value :_*))
     
     @scala.inline
     def setTextDecorationStyle(
       value: ResponsiveStyleValue[js.UndefOr[TextDecorationStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextDecorationStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("textDecorationStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextDecorationStyle: Self = this.set("textDecorationStyle", js.undefined)
+    def setTextDecorationStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationStyleProperty]]): Self = StObject.set(x, "textDecorationStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextDecorationStyleNull: Self = this.set("textDecorationStyle", null)
+    def setTextDecorationStyleNull: Self = StObject.set(x, "textDecorationStyle", null)
     
     @scala.inline
-    def setTextDecorationThicknessVarargs(value: ((js.UndefOr[TextDecorationThicknessProperty[Double | String]]) | Null)*): Self = this.set("textDecorationThickness", js.Array(value :_*))
+    def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
     
     @scala.inline
-    def setTextDecorationThicknessFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationThicknessProperty[Double | String]]]
-    ): Self = this.set("textDecorationThickness", js.Any.fromFunction1(value))
+    def setTextDecorationStyleVarargs(value: (js.UndefOr[TextDecorationStyleProperty] | Null)*): Self = StObject.set(x, "textDecorationStyle", js.Array(value :_*))
     
     @scala.inline
     def setTextDecorationThickness(
@@ -10896,21 +10871,27 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TextDecorationThicknessProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("textDecorationThickness", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textDecorationThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextDecorationThickness: Self = this.set("textDecorationThickness", js.undefined)
-    
-    @scala.inline
-    def setTextDecorationThicknessNull: Self = this.set("textDecorationThickness", null)
-    
-    @scala.inline
-    def setTextDecorationWidthVarargs(value: ((js.UndefOr[TextDecorationThicknessProperty[Double | String]]) | Null)*): Self = this.set("textDecorationWidth", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextDecorationWidthFunction1(
+    def setTextDecorationThicknessFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationThicknessProperty[Double | String]]]
-    ): Self = this.set("textDecorationWidth", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "textDecorationThickness", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setTextDecorationThicknessNull: Self = StObject.set(x, "textDecorationThickness", null)
+    
+    @scala.inline
+    def setTextDecorationThicknessUndefined: Self = StObject.set(x, "textDecorationThickness", js.undefined)
+    
+    @scala.inline
+    def setTextDecorationThicknessVarargs(value: ((js.UndefOr[TextDecorationThicknessProperty[Double | String]]) | Null)*): Self = StObject.set(x, "textDecorationThickness", js.Array(value :_*))
+    
+    @scala.inline
+    def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
+    
+    @scala.inline
+    def setTextDecorationVarargs(value: ((js.UndefOr[TextDecorationProperty[Double | String]]) | Null)*): Self = StObject.set(x, "textDecoration", js.Array(value :_*))
     
     @scala.inline
     def setTextDecorationWidth(
@@ -10918,87 +10899,89 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TextDecorationThicknessProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("textDecorationWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textDecorationWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextDecorationWidth: Self = this.set("textDecorationWidth", js.undefined)
+    def setTextDecorationWidthFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextDecorationThicknessProperty[Double | String]]]
+    ): Self = StObject.set(x, "textDecorationWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextDecorationWidthNull: Self = this.set("textDecorationWidth", null)
+    def setTextDecorationWidthNull: Self = StObject.set(x, "textDecorationWidth", null)
     
     @scala.inline
-    def setTextEmphasisVarargs(value: (js.UndefOr[TextEmphasisProperty] | Null)*): Self = this.set("textEmphasis", js.Array(value :_*))
+    def setTextDecorationWidthUndefined: Self = StObject.set(x, "textDecorationWidth", js.undefined)
     
     @scala.inline
-    def setTextEmphasisFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextEmphasisProperty]]): Self = this.set("textEmphasis", js.Any.fromFunction1(value))
+    def setTextDecorationWidthVarargs(value: ((js.UndefOr[TextDecorationThicknessProperty[Double | String]]) | Null)*): Self = StObject.set(x, "textDecorationWidth", js.Array(value :_*))
     
     @scala.inline
     def setTextEmphasis(
       value: ResponsiveStyleValue[js.UndefOr[TextEmphasisProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextEmphasisProperty]]]) | SystemStyleObject
-    ): Self = this.set("textEmphasis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextEmphasis: Self = this.set("textEmphasis", js.undefined)
-    
-    @scala.inline
-    def setTextEmphasisNull: Self = this.set("textEmphasis", null)
-    
-    @scala.inline
-    def setTextEmphasisColorVarargs(value: (js.UndefOr[TextEmphasisColorProperty] | Null)*): Self = this.set("textEmphasisColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextEmphasisColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextEmphasisColorProperty]]): Self = this.set("textEmphasisColor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTextEmphasisColor(
       value: ResponsiveStyleValue[js.UndefOr[TextEmphasisColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextEmphasisColorProperty]]]) | SystemStyleObject
-    ): Self = this.set("textEmphasisColor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textEmphasisColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextEmphasisColor: Self = this.set("textEmphasisColor", js.undefined)
+    def setTextEmphasisColorFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextEmphasisColorProperty]]): Self = StObject.set(x, "textEmphasisColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextEmphasisColorNull: Self = this.set("textEmphasisColor", null)
+    def setTextEmphasisColorNull: Self = StObject.set(x, "textEmphasisColor", null)
     
     @scala.inline
-    def setTextEmphasisPositionVarargs(value: (js.UndefOr[GlobalsString] | Null)*): Self = this.set("textEmphasisPosition", js.Array(value :_*))
+    def setTextEmphasisColorUndefined: Self = StObject.set(x, "textEmphasisColor", js.undefined)
     
     @scala.inline
-    def setTextEmphasisPositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsString]]): Self = this.set("textEmphasisPosition", js.Any.fromFunction1(value))
+    def setTextEmphasisColorVarargs(value: (js.UndefOr[TextEmphasisColorProperty] | Null)*): Self = StObject.set(x, "textEmphasisColor", js.Array(value :_*))
+    
+    @scala.inline
+    def setTextEmphasisFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextEmphasisProperty]]): Self = StObject.set(x, "textEmphasis", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setTextEmphasisNull: Self = StObject.set(x, "textEmphasis", null)
     
     @scala.inline
     def setTextEmphasisPosition(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsString]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsString]]]) | SystemStyleObject
-    ): Self = this.set("textEmphasisPosition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textEmphasisPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextEmphasisPosition: Self = this.set("textEmphasisPosition", js.undefined)
+    def setTextEmphasisPositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsString]]): Self = StObject.set(x, "textEmphasisPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextEmphasisPositionNull: Self = this.set("textEmphasisPosition", null)
+    def setTextEmphasisPositionNull: Self = StObject.set(x, "textEmphasisPosition", null)
     
     @scala.inline
-    def setTextEmphasisStyleVarargs(value: (js.UndefOr[TextEmphasisStyleProperty] | Null)*): Self = this.set("textEmphasisStyle", js.Array(value :_*))
+    def setTextEmphasisPositionUndefined: Self = StObject.set(x, "textEmphasisPosition", js.undefined)
     
     @scala.inline
-    def setTextEmphasisStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextEmphasisStyleProperty]]): Self = this.set("textEmphasisStyle", js.Any.fromFunction1(value))
+    def setTextEmphasisPositionVarargs(value: (js.UndefOr[GlobalsString] | Null)*): Self = StObject.set(x, "textEmphasisPosition", js.Array(value :_*))
     
     @scala.inline
     def setTextEmphasisStyle(
       value: ResponsiveStyleValue[js.UndefOr[TextEmphasisStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextEmphasisStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("textEmphasisStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textEmphasisStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextEmphasisStyle: Self = this.set("textEmphasisStyle", js.undefined)
+    def setTextEmphasisStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextEmphasisStyleProperty]]): Self = StObject.set(x, "textEmphasisStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextEmphasisStyleNull: Self = this.set("textEmphasisStyle", null)
+    def setTextEmphasisStyleNull: Self = StObject.set(x, "textEmphasisStyle", null)
     
     @scala.inline
-    def setTextIndentVarargs(value: ((js.UndefOr[TextIndentProperty[Double | String]]) | Null)*): Self = this.set("textIndent", js.Array(value :_*))
+    def setTextEmphasisStyleUndefined: Self = StObject.set(x, "textEmphasisStyle", js.undefined)
     
     @scala.inline
-    def setTextIndentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextIndentProperty[Double | String]]]): Self = this.set("textIndent", js.Any.fromFunction1(value))
+    def setTextEmphasisStyleVarargs(value: (js.UndefOr[TextEmphasisStyleProperty] | Null)*): Self = StObject.set(x, "textEmphasisStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setTextEmphasisUndefined: Self = StObject.set(x, "textEmphasis", js.undefined)
+    
+    @scala.inline
+    def setTextEmphasisVarargs(value: (js.UndefOr[TextEmphasisProperty] | Null)*): Self = StObject.set(x, "textEmphasis", js.Array(value :_*))
     
     @scala.inline
     def setTextIndent(
@@ -11006,140 +10989,138 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TextIndentProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("textIndent", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextIndent: Self = this.set("textIndent", js.undefined)
+    def setTextIndentFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextIndentProperty[Double | String]]]): Self = StObject.set(x, "textIndent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextIndentNull: Self = this.set("textIndent", null)
+    def setTextIndentNull: Self = StObject.set(x, "textIndent", null)
     
     @scala.inline
-    def setTextJustifyVarargs(value: (js.UndefOr[TextJustifyProperty] | Null)*): Self = this.set("textJustify", js.Array(value :_*))
+    def setTextIndentUndefined: Self = StObject.set(x, "textIndent", js.undefined)
     
     @scala.inline
-    def setTextJustifyFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextJustifyProperty]]): Self = this.set("textJustify", js.Any.fromFunction1(value))
+    def setTextIndentVarargs(value: ((js.UndefOr[TextIndentProperty[Double | String]]) | Null)*): Self = StObject.set(x, "textIndent", js.Array(value :_*))
     
     @scala.inline
     def setTextJustify(
       value: ResponsiveStyleValue[js.UndefOr[TextJustifyProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextJustifyProperty]]]) | SystemStyleObject
-    ): Self = this.set("textJustify", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textJustify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextJustify: Self = this.set("textJustify", js.undefined)
+    def setTextJustifyFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextJustifyProperty]]): Self = StObject.set(x, "textJustify", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextJustifyNull: Self = this.set("textJustify", null)
+    def setTextJustifyNull: Self = StObject.set(x, "textJustify", null)
     
     @scala.inline
-    def setTextOrientationVarargs(value: (js.UndefOr[TextOrientationProperty] | Null)*): Self = this.set("textOrientation", js.Array(value :_*))
+    def setTextJustifyUndefined: Self = StObject.set(x, "textJustify", js.undefined)
     
     @scala.inline
-    def setTextOrientationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextOrientationProperty]]): Self = this.set("textOrientation", js.Any.fromFunction1(value))
+    def setTextJustifyVarargs(value: (js.UndefOr[TextJustifyProperty] | Null)*): Self = StObject.set(x, "textJustify", js.Array(value :_*))
     
     @scala.inline
     def setTextOrientation(
       value: ResponsiveStyleValue[js.UndefOr[TextOrientationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextOrientationProperty]]]) | SystemStyleObject
-    ): Self = this.set("textOrientation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextOrientation: Self = this.set("textOrientation", js.undefined)
+    def setTextOrientationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextOrientationProperty]]): Self = StObject.set(x, "textOrientation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextOrientationNull: Self = this.set("textOrientation", null)
+    def setTextOrientationNull: Self = StObject.set(x, "textOrientation", null)
     
     @scala.inline
-    def setTextOverflowVarargs(value: (js.UndefOr[TextOverflowProperty] | Null)*): Self = this.set("textOverflow", js.Array(value :_*))
+    def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
     
     @scala.inline
-    def setTextOverflowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextOverflowProperty]]): Self = this.set("textOverflow", js.Any.fromFunction1(value))
+    def setTextOrientationVarargs(value: (js.UndefOr[TextOrientationProperty] | Null)*): Self = StObject.set(x, "textOrientation", js.Array(value :_*))
     
     @scala.inline
     def setTextOverflow(
       value: ResponsiveStyleValue[js.UndefOr[TextOverflowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextOverflowProperty]]]) | SystemStyleObject
-    ): Self = this.set("textOverflow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextOverflow: Self = this.set("textOverflow", js.undefined)
+    def setTextOverflowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextOverflowProperty]]): Self = StObject.set(x, "textOverflow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextOverflowNull: Self = this.set("textOverflow", null)
+    def setTextOverflowNull: Self = StObject.set(x, "textOverflow", null)
     
     @scala.inline
-    def setTextRenderingVarargs(value: (js.UndefOr[TextRenderingProperty] | Null)*): Self = this.set("textRendering", js.Array(value :_*))
+    def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
     
     @scala.inline
-    def setTextRenderingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextRenderingProperty]]): Self = this.set("textRendering", js.Any.fromFunction1(value))
+    def setTextOverflowVarargs(value: (js.UndefOr[TextOverflowProperty] | Null)*): Self = StObject.set(x, "textOverflow", js.Array(value :_*))
     
     @scala.inline
     def setTextRendering(
       value: ResponsiveStyleValue[js.UndefOr[TextRenderingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextRenderingProperty]]]) | SystemStyleObject
-    ): Self = this.set("textRendering", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextRendering: Self = this.set("textRendering", js.undefined)
+    def setTextRenderingFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextRenderingProperty]]): Self = StObject.set(x, "textRendering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextRenderingNull: Self = this.set("textRendering", null)
+    def setTextRenderingNull: Self = StObject.set(x, "textRendering", null)
     
     @scala.inline
-    def setTextShadowVarargs(value: (js.UndefOr[TextShadowProperty] | Null)*): Self = this.set("textShadow", js.Array(value :_*))
+    def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
     
     @scala.inline
-    def setTextShadowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextShadowProperty]]): Self = this.set("textShadow", js.Any.fromFunction1(value))
+    def setTextRenderingVarargs(value: (js.UndefOr[TextRenderingProperty] | Null)*): Self = StObject.set(x, "textRendering", js.Array(value :_*))
     
     @scala.inline
     def setTextShadow(
       value: ResponsiveStyleValue[js.UndefOr[TextShadowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextShadowProperty]]]) | SystemStyleObject
-    ): Self = this.set("textShadow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextShadow: Self = this.set("textShadow", js.undefined)
+    def setTextShadowFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextShadowProperty]]): Self = StObject.set(x, "textShadow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextShadowNull: Self = this.set("textShadow", null)
+    def setTextShadowNull: Self = StObject.set(x, "textShadow", null)
     
     @scala.inline
-    def setTextSizeAdjustVarargs(value: (js.UndefOr[TextSizeAdjustProperty] | Null)*): Self = this.set("textSizeAdjust", js.Array(value :_*))
+    def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
     
     @scala.inline
-    def setTextSizeAdjustFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextSizeAdjustProperty]]): Self = this.set("textSizeAdjust", js.Any.fromFunction1(value))
+    def setTextShadowVarargs(value: (js.UndefOr[TextShadowProperty] | Null)*): Self = StObject.set(x, "textShadow", js.Array(value :_*))
     
     @scala.inline
     def setTextSizeAdjust(
       value: ResponsiveStyleValue[js.UndefOr[TextSizeAdjustProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextSizeAdjustProperty]]]) | SystemStyleObject
-    ): Self = this.set("textSizeAdjust", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textSizeAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextSizeAdjust: Self = this.set("textSizeAdjust", js.undefined)
+    def setTextSizeAdjustFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextSizeAdjustProperty]]): Self = StObject.set(x, "textSizeAdjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextSizeAdjustNull: Self = this.set("textSizeAdjust", null)
+    def setTextSizeAdjustNull: Self = StObject.set(x, "textSizeAdjust", null)
     
     @scala.inline
-    def setTextTransformVarargs(value: (js.UndefOr[TextTransformProperty] | Null)*): Self = this.set("textTransform", js.Array(value :_*))
+    def setTextSizeAdjustUndefined: Self = StObject.set(x, "textSizeAdjust", js.undefined)
     
     @scala.inline
-    def setTextTransformFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextTransformProperty]]): Self = this.set("textTransform", js.Any.fromFunction1(value))
+    def setTextSizeAdjustVarargs(value: (js.UndefOr[TextSizeAdjustProperty] | Null)*): Self = StObject.set(x, "textSizeAdjust", js.Array(value :_*))
     
     @scala.inline
     def setTextTransform(
       value: ResponsiveStyleValue[js.UndefOr[TextTransformProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextTransformProperty]]]) | SystemStyleObject
-    ): Self = this.set("textTransform", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextTransform: Self = this.set("textTransform", js.undefined)
+    def setTextTransformFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextTransformProperty]]): Self = StObject.set(x, "textTransform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextTransformNull: Self = this.set("textTransform", null)
+    def setTextTransformNull: Self = StObject.set(x, "textTransform", null)
     
     @scala.inline
-    def setTextUnderlineOffsetVarargs(value: ((js.UndefOr[TextUnderlineOffsetProperty[Double | String]]) | Null)*): Self = this.set("textUnderlineOffset", js.Array(value :_*))
+    def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
     
     @scala.inline
-    def setTextUnderlineOffsetFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextUnderlineOffsetProperty[Double | String]]]
-    ): Self = this.set("textUnderlineOffset", js.Any.fromFunction1(value))
+    def setTextTransformVarargs(value: (js.UndefOr[TextTransformProperty] | Null)*): Self = StObject.set(x, "textTransform", js.Array(value :_*))
     
     @scala.inline
     def setTextUnderlineOffset(
@@ -11147,19 +11128,21 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TextUnderlineOffsetProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("textUnderlineOffset", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textUnderlineOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextUnderlineOffset: Self = this.set("textUnderlineOffset", js.undefined)
+    def setTextUnderlineOffsetFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextUnderlineOffsetProperty[Double | String]]]
+    ): Self = StObject.set(x, "textUnderlineOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextUnderlineOffsetNull: Self = this.set("textUnderlineOffset", null)
+    def setTextUnderlineOffsetNull: Self = StObject.set(x, "textUnderlineOffset", null)
     
     @scala.inline
-    def setTextUnderlinePositionVarargs(value: (js.UndefOr[TextUnderlinePositionProperty] | Null)*): Self = this.set("textUnderlinePosition", js.Array(value :_*))
+    def setTextUnderlineOffsetUndefined: Self = StObject.set(x, "textUnderlineOffset", js.undefined)
     
     @scala.inline
-    def setTextUnderlinePositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextUnderlinePositionProperty]]): Self = this.set("textUnderlinePosition", js.Any.fromFunction1(value))
+    def setTextUnderlineOffsetVarargs(value: ((js.UndefOr[TextUnderlineOffsetProperty[Double | String]]) | Null)*): Self = StObject.set(x, "textUnderlineOffset", js.Array(value :_*))
     
     @scala.inline
     def setTextUnderlinePosition(
@@ -11167,89 +11150,81 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TextUnderlinePositionProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("textUnderlinePosition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textUnderlinePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextUnderlinePosition: Self = this.set("textUnderlinePosition", js.undefined)
+    def setTextUnderlinePositionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TextUnderlinePositionProperty]]): Self = StObject.set(x, "textUnderlinePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextUnderlinePositionNull: Self = this.set("textUnderlinePosition", null)
+    def setTextUnderlinePositionNull: Self = StObject.set(x, "textUnderlinePosition", null)
     
     @scala.inline
-    def setTopVarargs(value: ((js.UndefOr[TopProperty[Double | String]]) | Null)*): Self = this.set("top", js.Array(value :_*))
+    def setTextUnderlinePositionUndefined: Self = StObject.set(x, "textUnderlinePosition", js.undefined)
     
     @scala.inline
-    def setTopFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TopProperty[Double | String]]]): Self = this.set("top", js.Any.fromFunction1(value))
+    def setTextUnderlinePositionVarargs(value: (js.UndefOr[TextUnderlinePositionProperty] | Null)*): Self = StObject.set(x, "textUnderlinePosition", js.Array(value :_*))
     
     @scala.inline
     def setTop(
       value: (ResponsiveStyleValue[js.UndefOr[TopProperty[Double | String]]]) | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TopProperty[Double | String]]]]) | SystemStyleObject
-    ): Self = this.set("top", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TopProperty[Double | String]]]): Self = StObject.set(x, "top", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTopNull: Self = this.set("top", null)
+    def setTopNull: Self = StObject.set(x, "top", null)
     
     @scala.inline
-    def setTouchActionVarargs(value: (js.UndefOr[TouchActionProperty] | Null)*): Self = this.set("touchAction", js.Array(value :_*))
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def setTouchActionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TouchActionProperty]]): Self = this.set("touchAction", js.Any.fromFunction1(value))
+    def setTopVarargs(value: ((js.UndefOr[TopProperty[Double | String]]) | Null)*): Self = StObject.set(x, "top", js.Array(value :_*))
     
     @scala.inline
     def setTouchAction(
       value: ResponsiveStyleValue[js.UndefOr[TouchActionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TouchActionProperty]]]) | SystemStyleObject
-    ): Self = this.set("touchAction", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTouchAction: Self = this.set("touchAction", js.undefined)
+    def setTouchActionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TouchActionProperty]]): Self = StObject.set(x, "touchAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTouchActionNull: Self = this.set("touchAction", null)
+    def setTouchActionNull: Self = StObject.set(x, "touchAction", null)
     
     @scala.inline
-    def setTransformVarargs(value: (js.UndefOr[TransformProperty] | Null)*): Self = this.set("transform", js.Array(value :_*))
+    def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
     
     @scala.inline
-    def setTransformFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransformProperty]]): Self = this.set("transform", js.Any.fromFunction1(value))
+    def setTouchActionVarargs(value: (js.UndefOr[TouchActionProperty] | Null)*): Self = StObject.set(x, "touchAction", js.Array(value :_*))
     
     @scala.inline
     def setTransform(
       value: ResponsiveStyleValue[js.UndefOr[TransformProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TransformProperty]]]) | SystemStyleObject
-    ): Self = this.set("transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
-    
-    @scala.inline
-    def setTransformNull: Self = this.set("transform", null)
-    
-    @scala.inline
-    def setTransformBoxVarargs(value: (js.UndefOr[TransformBoxProperty] | Null)*): Self = this.set("transformBox", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransformBoxFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransformBoxProperty]]): Self = this.set("transformBox", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTransformBox(
       value: ResponsiveStyleValue[js.UndefOr[TransformBoxProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TransformBoxProperty]]]) | SystemStyleObject
-    ): Self = this.set("transformBox", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transformBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransformBox: Self = this.set("transformBox", js.undefined)
+    def setTransformBoxFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransformBoxProperty]]): Self = StObject.set(x, "transformBox", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransformBoxNull: Self = this.set("transformBox", null)
+    def setTransformBoxNull: Self = StObject.set(x, "transformBox", null)
     
     @scala.inline
-    def setTransformOriginVarargs(value: ((js.UndefOr[TransformOriginProperty[Double | String]]) | Null)*): Self = this.set("transformOrigin", js.Array(value :_*))
+    def setTransformBoxUndefined: Self = StObject.set(x, "transformBox", js.undefined)
     
     @scala.inline
-    def setTransformOriginFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransformOriginProperty[Double | String]]]
-    ): Self = this.set("transformOrigin", js.Any.fromFunction1(value))
+    def setTransformBoxVarargs(value: (js.UndefOr[TransformBoxProperty] | Null)*): Self = StObject.set(x, "transformBox", js.Array(value :_*))
+    
+    @scala.inline
+    def setTransformFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransformProperty]]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setTransformNull: Self = StObject.set(x, "transform", null)
     
     @scala.inline
     def setTransformOrigin(
@@ -11257,104 +11232,106 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TransformOriginProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("transformOrigin", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransformOrigin: Self = this.set("transformOrigin", js.undefined)
+    def setTransformOriginFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransformOriginProperty[Double | String]]]
+    ): Self = StObject.set(x, "transformOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransformOriginNull: Self = this.set("transformOrigin", null)
+    def setTransformOriginNull: Self = StObject.set(x, "transformOrigin", null)
     
     @scala.inline
-    def setTransformStyleVarargs(value: (js.UndefOr[TransformStyleProperty] | Null)*): Self = this.set("transformStyle", js.Array(value :_*))
+    def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
     
     @scala.inline
-    def setTransformStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransformStyleProperty]]): Self = this.set("transformStyle", js.Any.fromFunction1(value))
+    def setTransformOriginVarargs(value: ((js.UndefOr[TransformOriginProperty[Double | String]]) | Null)*): Self = StObject.set(x, "transformOrigin", js.Array(value :_*))
     
     @scala.inline
     def setTransformStyle(
       value: ResponsiveStyleValue[js.UndefOr[TransformStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TransformStyleProperty]]]) | SystemStyleObject
-    ): Self = this.set("transformStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transformStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransformStyle: Self = this.set("transformStyle", js.undefined)
+    def setTransformStyleFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransformStyleProperty]]): Self = StObject.set(x, "transformStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransformStyleNull: Self = this.set("transformStyle", null)
+    def setTransformStyleNull: Self = StObject.set(x, "transformStyle", null)
     
     @scala.inline
-    def setTransitionVarargs(value: (js.UndefOr[TransitionProperty] | Null)*): Self = this.set("transition", js.Array(value :_*))
+    def setTransformStyleUndefined: Self = StObject.set(x, "transformStyle", js.undefined)
     
     @scala.inline
-    def setTransitionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransitionProperty]]): Self = this.set("transition", js.Any.fromFunction1(value))
+    def setTransformStyleVarargs(value: (js.UndefOr[TransformStyleProperty] | Null)*): Self = StObject.set(x, "transformStyle", js.Array(value :_*))
+    
+    @scala.inline
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    
+    @scala.inline
+    def setTransformVarargs(value: (js.UndefOr[TransformProperty] | Null)*): Self = StObject.set(x, "transform", js.Array(value :_*))
     
     @scala.inline
     def setTransition(
       value: ResponsiveStyleValue[js.UndefOr[TransitionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TransitionProperty]]]) | SystemStyleObject
-    ): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
-    
-    @scala.inline
-    def setTransitionNull: Self = this.set("transition", null)
-    
-    @scala.inline
-    def setTransitionDelayVarargs(value: (js.UndefOr[GlobalsString] | Null)*): Self = this.set("transitionDelay", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransitionDelayFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsString]]): Self = this.set("transitionDelay", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTransitionDelay(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsString]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsString]]]) | SystemStyleObject
-    ): Self = this.set("transitionDelay", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionDelay: Self = this.set("transitionDelay", js.undefined)
+    def setTransitionDelayFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsString]]): Self = StObject.set(x, "transitionDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransitionDelayNull: Self = this.set("transitionDelay", null)
+    def setTransitionDelayNull: Self = StObject.set(x, "transitionDelay", null)
     
     @scala.inline
-    def setTransitionDurationVarargs(value: (js.UndefOr[GlobalsString] | Null)*): Self = this.set("transitionDuration", js.Array(value :_*))
+    def setTransitionDelayUndefined: Self = StObject.set(x, "transitionDelay", js.undefined)
     
     @scala.inline
-    def setTransitionDurationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsString]]): Self = this.set("transitionDuration", js.Any.fromFunction1(value))
+    def setTransitionDelayVarargs(value: (js.UndefOr[GlobalsString] | Null)*): Self = StObject.set(x, "transitionDelay", js.Array(value :_*))
     
     @scala.inline
     def setTransitionDuration(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsString]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsString]]]) | SystemStyleObject
-    ): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    def setTransitionDurationFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsString]]): Self = StObject.set(x, "transitionDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransitionDurationNull: Self = this.set("transitionDuration", null)
+    def setTransitionDurationNull: Self = StObject.set(x, "transitionDuration", null)
     
     @scala.inline
-    def setTransitionPropertyVarargs(value: (js.UndefOr[TransitionPropertyProperty] | Null)*): Self = this.set("transitionProperty", js.Array(value :_*))
+    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
     @scala.inline
-    def setTransitionPropertyFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransitionPropertyProperty]]): Self = this.set("transitionProperty", js.Any.fromFunction1(value))
+    def setTransitionDurationVarargs(value: (js.UndefOr[GlobalsString] | Null)*): Self = StObject.set(x, "transitionDuration", js.Array(value :_*))
+    
+    @scala.inline
+    def setTransitionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransitionProperty]]): Self = StObject.set(x, "transition", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setTransitionNull: Self = StObject.set(x, "transition", null)
     
     @scala.inline
     def setTransitionProperty(
       value: ResponsiveStyleValue[js.UndefOr[TransitionPropertyProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TransitionPropertyProperty]]]) | SystemStyleObject
-    ): Self = this.set("transitionProperty", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transitionProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionProperty: Self = this.set("transitionProperty", js.undefined)
+    def setTransitionPropertyFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransitionPropertyProperty]]): Self = StObject.set(x, "transitionProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransitionPropertyNull: Self = this.set("transitionProperty", null)
+    def setTransitionPropertyNull: Self = StObject.set(x, "transitionProperty", null)
     
     @scala.inline
-    def setTransitionTimingFunctionVarargs(value: (js.UndefOr[TransitionTimingFunctionProperty] | Null)*): Self = this.set("transitionTimingFunction", js.Array(value :_*))
+    def setTransitionPropertyUndefined: Self = StObject.set(x, "transitionProperty", js.undefined)
     
     @scala.inline
-    def setTransitionTimingFunctionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransitionTimingFunctionProperty]]): Self = this.set("transitionTimingFunction", js.Any.fromFunction1(value))
+    def setTransitionPropertyVarargs(value: (js.UndefOr[TransitionPropertyProperty] | Null)*): Self = StObject.set(x, "transitionProperty", js.Array(value :_*))
     
     @scala.inline
     def setTransitionTimingFunction(
@@ -11362,19 +11339,25 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TransitionTimingFunctionProperty]]
         ]) | SystemStyleObject
-    ): Self = this.set("transitionTimingFunction", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transitionTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionTimingFunction: Self = this.set("transitionTimingFunction", js.undefined)
+    def setTransitionTimingFunctionFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TransitionTimingFunctionProperty]]): Self = StObject.set(x, "transitionTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransitionTimingFunctionNull: Self = this.set("transitionTimingFunction", null)
+    def setTransitionTimingFunctionNull: Self = StObject.set(x, "transitionTimingFunction", null)
     
     @scala.inline
-    def setTranslateVarargs(value: ((js.UndefOr[TranslateProperty[Double | String]]) | Null)*): Self = this.set("translate", js.Array(value :_*))
+    def setTransitionTimingFunctionUndefined: Self = StObject.set(x, "transitionTimingFunction", js.undefined)
     
     @scala.inline
-    def setTranslateFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TranslateProperty[Double | String]]]): Self = this.set("translate", js.Any.fromFunction1(value))
+    def setTransitionTimingFunctionVarargs(value: (js.UndefOr[TransitionTimingFunctionProperty] | Null)*): Self = StObject.set(x, "transitionTimingFunction", js.Array(value :_*))
+    
+    @scala.inline
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    
+    @scala.inline
+    def setTransitionVarargs(value: (js.UndefOr[TransitionProperty] | Null)*): Self = StObject.set(x, "transition", js.Array(value :_*))
     
     @scala.inline
     def setTranslate(
@@ -11382,72 +11365,70 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[TranslateProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("translate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTranslate: Self = this.set("translate", js.undefined)
+    def setTranslateFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[TranslateProperty[Double | String]]]): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTranslateNull: Self = this.set("translate", null)
+    def setTranslateNull: Self = StObject.set(x, "translate", null)
     
     @scala.inline
-    def setUnicodeBidiVarargs(value: (js.UndefOr[UnicodeBidiProperty] | Null)*): Self = this.set("unicodeBidi", js.Array(value :_*))
+    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
     @scala.inline
-    def setUnicodeBidiFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[UnicodeBidiProperty]]): Self = this.set("unicodeBidi", js.Any.fromFunction1(value))
+    def setTranslateVarargs(value: ((js.UndefOr[TranslateProperty[Double | String]]) | Null)*): Self = StObject.set(x, "translate", js.Array(value :_*))
     
     @scala.inline
     def setUnicodeBidi(
       value: ResponsiveStyleValue[js.UndefOr[UnicodeBidiProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[UnicodeBidiProperty]]]) | SystemStyleObject
-    ): Self = this.set("unicodeBidi", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnicodeBidi: Self = this.set("unicodeBidi", js.undefined)
+    def setUnicodeBidiFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[UnicodeBidiProperty]]): Self = StObject.set(x, "unicodeBidi", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUnicodeBidiNull: Self = this.set("unicodeBidi", null)
+    def setUnicodeBidiNull: Self = StObject.set(x, "unicodeBidi", null)
     
     @scala.inline
-    def setUserSelectVarargs(value: (js.UndefOr[UserSelectProperty] | Null)*): Self = this.set("userSelect", js.Array(value :_*))
+    def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
     
     @scala.inline
-    def setUserSelectFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[UserSelectProperty]]): Self = this.set("userSelect", js.Any.fromFunction1(value))
+    def setUnicodeBidiVarargs(value: (js.UndefOr[UnicodeBidiProperty] | Null)*): Self = StObject.set(x, "unicodeBidi", js.Array(value :_*))
     
     @scala.inline
     def setUserSelect(
       value: ResponsiveStyleValue[js.UndefOr[UserSelectProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[UserSelectProperty]]]) | SystemStyleObject
-    ): Self = this.set("userSelect", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserSelect: Self = this.set("userSelect", js.undefined)
+    def setUserSelectFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[UserSelectProperty]]): Self = StObject.set(x, "userSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUserSelectNull: Self = this.set("userSelect", null)
+    def setUserSelectNull: Self = StObject.set(x, "userSelect", null)
     
     @scala.inline
-    def setVectorEffectVarargs(value: (js.UndefOr[VectorEffectProperty] | Null)*): Self = this.set("vectorEffect", js.Array(value :_*))
+    def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     
     @scala.inline
-    def setVectorEffectFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[VectorEffectProperty]]): Self = this.set("vectorEffect", js.Any.fromFunction1(value))
+    def setUserSelectVarargs(value: (js.UndefOr[UserSelectProperty] | Null)*): Self = StObject.set(x, "userSelect", js.Array(value :_*))
     
     @scala.inline
     def setVectorEffect(
       value: ResponsiveStyleValue[js.UndefOr[VectorEffectProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[VectorEffectProperty]]]) | SystemStyleObject
-    ): Self = this.set("vectorEffect", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVectorEffect: Self = this.set("vectorEffect", js.undefined)
+    def setVectorEffectFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[VectorEffectProperty]]): Self = StObject.set(x, "vectorEffect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVectorEffectNull: Self = this.set("vectorEffect", null)
+    def setVectorEffectNull: Self = StObject.set(x, "vectorEffect", null)
     
     @scala.inline
-    def setVerticalAlignVarargs(value: ((js.UndefOr[VerticalAlignProperty[Double | String]]) | Null)*): Self = this.set("verticalAlign", js.Array(value :_*))
+    def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
     
     @scala.inline
-    def setVerticalAlignFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[VerticalAlignProperty[Double | String]]]
-    ): Self = this.set("verticalAlign", js.Any.fromFunction1(value))
+    def setVectorEffectVarargs(value: (js.UndefOr[VectorEffectProperty] | Null)*): Self = StObject.set(x, "vectorEffect", js.Array(value :_*))
     
     @scala.inline
     def setVerticalAlign(
@@ -11455,70 +11436,72 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[VerticalAlignProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setVerticalAlignFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[VerticalAlignProperty[Double | String]]]
+    ): Self = StObject.set(x, "verticalAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVerticalAlignNull: Self = this.set("verticalAlign", null)
+    def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
     
     @scala.inline
-    def setVisibilityVarargs(value: (js.UndefOr[VisibilityProperty] | Null)*): Self = this.set("visibility", js.Array(value :_*))
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     @scala.inline
-    def setVisibilityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[VisibilityProperty]]): Self = this.set("visibility", js.Any.fromFunction1(value))
+    def setVerticalAlignVarargs(value: ((js.UndefOr[VerticalAlignProperty[Double | String]]) | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
     
     @scala.inline
     def setVisibility(
       value: ResponsiveStyleValue[js.UndefOr[VisibilityProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[VisibilityProperty]]]) | SystemStyleObject
-    ): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[VisibilityProperty]]): Self = StObject.set(x, "visibility", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisibilityNull: Self = this.set("visibility", null)
+    def setVisibilityNull: Self = StObject.set(x, "visibility", null)
     
     @scala.inline
-    def setWhiteSpaceVarargs(value: (js.UndefOr[WhiteSpaceProperty] | Null)*): Self = this.set("whiteSpace", js.Array(value :_*))
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
     @scala.inline
-    def setWhiteSpaceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WhiteSpaceProperty]]): Self = this.set("whiteSpace", js.Any.fromFunction1(value))
+    def setVisibilityVarargs(value: (js.UndefOr[VisibilityProperty] | Null)*): Self = StObject.set(x, "visibility", js.Array(value :_*))
     
     @scala.inline
     def setWhiteSpace(
       value: ResponsiveStyleValue[js.UndefOr[WhiteSpaceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WhiteSpaceProperty]]]) | SystemStyleObject
-    ): Self = this.set("whiteSpace", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWhiteSpace: Self = this.set("whiteSpace", js.undefined)
+    def setWhiteSpaceFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WhiteSpaceProperty]]): Self = StObject.set(x, "whiteSpace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWhiteSpaceNull: Self = this.set("whiteSpace", null)
+    def setWhiteSpaceNull: Self = StObject.set(x, "whiteSpace", null)
     
     @scala.inline
-    def setWidowsVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = this.set("widows", js.Array(value :_*))
+    def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
     
     @scala.inline
-    def setWidowsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = this.set("widows", js.Any.fromFunction1(value))
+    def setWhiteSpaceVarargs(value: (js.UndefOr[WhiteSpaceProperty] | Null)*): Self = StObject.set(x, "whiteSpace", js.Array(value :_*))
     
     @scala.inline
     def setWidows(
       value: ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-    ): Self = this.set("widows", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "widows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidows: Self = this.set("widows", js.undefined)
+    def setWidowsFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]): Self = StObject.set(x, "widows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWidowsNull: Self = this.set("widows", null)
+    def setWidowsNull: Self = StObject.set(x, "widows", null)
     
     @scala.inline
-    def setWidthVarargs(value: ((js.UndefOr[WidthProperty[Double | String]]) | Null)*): Self = this.set("width", js.Array(value :_*))
+    def setWidowsUndefined: Self = StObject.set(x, "widows", js.undefined)
     
     @scala.inline
-    def setWidthFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WidthProperty[Double | String]]]): Self = this.set("width", js.Any.fromFunction1(value))
+    def setWidowsVarargs(value: (js.UndefOr[GlobalsNumber] | Null)*): Self = StObject.set(x, "widows", js.Array(value :_*))
     
     @scala.inline
     def setWidth(
@@ -11526,55 +11509,53 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[WidthProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("width", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WidthProperty[Double | String]]]): Self = StObject.set(x, "width", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWidthNull: Self = this.set("width", null)
+    def setWidthNull: Self = StObject.set(x, "width", null)
     
     @scala.inline
-    def setWillChangeVarargs(value: (js.UndefOr[WillChangeProperty] | Null)*): Self = this.set("willChange", js.Array(value :_*))
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def setWillChangeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WillChangeProperty]]): Self = this.set("willChange", js.Any.fromFunction1(value))
+    def setWidthVarargs(value: ((js.UndefOr[WidthProperty[Double | String]]) | Null)*): Self = StObject.set(x, "width", js.Array(value :_*))
     
     @scala.inline
     def setWillChange(
       value: ResponsiveStyleValue[js.UndefOr[WillChangeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WillChangeProperty]]]) | SystemStyleObject
-    ): Self = this.set("willChange", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "willChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWillChange: Self = this.set("willChange", js.undefined)
+    def setWillChangeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WillChangeProperty]]): Self = StObject.set(x, "willChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWillChangeNull: Self = this.set("willChange", null)
+    def setWillChangeNull: Self = StObject.set(x, "willChange", null)
     
     @scala.inline
-    def setWordBreakVarargs(value: (js.UndefOr[WordBreakProperty] | Null)*): Self = this.set("wordBreak", js.Array(value :_*))
+    def setWillChangeUndefined: Self = StObject.set(x, "willChange", js.undefined)
     
     @scala.inline
-    def setWordBreakFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WordBreakProperty]]): Self = this.set("wordBreak", js.Any.fromFunction1(value))
+    def setWillChangeVarargs(value: (js.UndefOr[WillChangeProperty] | Null)*): Self = StObject.set(x, "willChange", js.Array(value :_*))
     
     @scala.inline
     def setWordBreak(
       value: ResponsiveStyleValue[js.UndefOr[WordBreakProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WordBreakProperty]]]) | SystemStyleObject
-    ): Self = this.set("wordBreak", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWordBreak: Self = this.set("wordBreak", js.undefined)
+    def setWordBreakFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WordBreakProperty]]): Self = StObject.set(x, "wordBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWordBreakNull: Self = this.set("wordBreak", null)
+    def setWordBreakNull: Self = StObject.set(x, "wordBreak", null)
     
     @scala.inline
-    def setWordSpacingVarargs(value: ((js.UndefOr[WordSpacingProperty[Double | String]]) | Null)*): Self = this.set("wordSpacing", js.Array(value :_*))
+    def setWordBreakUndefined: Self = StObject.set(x, "wordBreak", js.undefined)
     
     @scala.inline
-    def setWordSpacingFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WordSpacingProperty[Double | String]]]
-    ): Self = this.set("wordSpacing", js.Any.fromFunction1(value))
+    def setWordBreakVarargs(value: (js.UndefOr[WordBreakProperty] | Null)*): Self = StObject.set(x, "wordBreak", js.Array(value :_*))
     
     @scala.inline
     def setWordSpacing(
@@ -11582,59 +11563,55 @@ object SystemCssProperties {
           /* theme */ js.Any, 
           ResponsiveStyleValue[js.UndefOr[WordSpacingProperty[Double | String]]]
         ]) | SystemStyleObject
-    ): Self = this.set("wordSpacing", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWordSpacing: Self = this.set("wordSpacing", js.undefined)
+    def setWordSpacingFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WordSpacingProperty[Double | String]]]
+    ): Self = StObject.set(x, "wordSpacing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWordSpacingNull: Self = this.set("wordSpacing", null)
+    def setWordSpacingNull: Self = StObject.set(x, "wordSpacing", null)
     
     @scala.inline
-    def setWordWrapVarargs(value: (js.UndefOr[WordWrapProperty] | Null)*): Self = this.set("wordWrap", js.Array(value :_*))
+    def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
     
     @scala.inline
-    def setWordWrapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WordWrapProperty]]): Self = this.set("wordWrap", js.Any.fromFunction1(value))
+    def setWordSpacingVarargs(value: ((js.UndefOr[WordSpacingProperty[Double | String]]) | Null)*): Self = StObject.set(x, "wordSpacing", js.Array(value :_*))
     
     @scala.inline
     def setWordWrap(
       value: ResponsiveStyleValue[js.UndefOr[WordWrapProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WordWrapProperty]]]) | SystemStyleObject
-    ): Self = this.set("wordWrap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWordWrap: Self = this.set("wordWrap", js.undefined)
+    def setWordWrapFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WordWrapProperty]]): Self = StObject.set(x, "wordWrap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWordWrapNull: Self = this.set("wordWrap", null)
+    def setWordWrapNull: Self = StObject.set(x, "wordWrap", null)
     
     @scala.inline
-    def setWritingModeVarargs(value: (js.UndefOr[WritingModeProperty] | Null)*): Self = this.set("writingMode", js.Array(value :_*))
+    def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
     
     @scala.inline
-    def setWritingModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WritingModeProperty]]): Self = this.set("writingMode", js.Any.fromFunction1(value))
+    def setWordWrapVarargs(value: (js.UndefOr[WordWrapProperty] | Null)*): Self = StObject.set(x, "wordWrap", js.Array(value :_*))
     
     @scala.inline
     def setWritingMode(
       value: ResponsiveStyleValue[js.UndefOr[WritingModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WritingModeProperty]]]) | SystemStyleObject
-    ): Self = this.set("writingMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWritingMode: Self = this.set("writingMode", js.undefined)
+    def setWritingModeFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[WritingModeProperty]]): Self = StObject.set(x, "writingMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWritingModeNull: Self = this.set("writingMode", null)
+    def setWritingModeNull: Self = StObject.set(x, "writingMode", null)
     
     @scala.inline
-    def setZIndexVarargs(value: ((js.UndefOr[js.Any | String]) | Null)*): Self = this.set("zIndex", js.Array(value :_*))
+    def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
     
     @scala.inline
-    def setZIndexFunction1(
-      value: /* theme */ js.Any => ResponsiveStyleValue[
-          js.UndefOr[
-            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | String
-          ]
-        ]
-    ): Self = this.set("zIndex", js.Any.fromFunction1(value))
+    def setWritingModeVarargs(value: (js.UndefOr[WritingModeProperty] | Null)*): Self = StObject.set(x, "writingMode", js.Array(value :_*))
     
     @scala.inline
     def setZIndex(
@@ -11650,29 +11627,41 @@ object SystemCssProperties {
             ]
           ]
         ]) | SystemStyleObject
-    ): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexFunction1(
+      value: /* theme */ js.Any => ResponsiveStyleValue[
+          js.UndefOr[
+            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | String
+          ]
+        ]
+    ): Self = StObject.set(x, "zIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setZIndexNull: Self = this.set("zIndex", null)
+    def setZIndexNull: Self = StObject.set(x, "zIndex", null)
     
     @scala.inline
-    def setZoomVarargs(value: (js.UndefOr[ZoomProperty] | Null)*): Self = this.set("zoom", js.Array(value :_*))
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
     @scala.inline
-    def setZoomFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ZoomProperty]]): Self = this.set("zoom", js.Any.fromFunction1(value))
+    def setZIndexVarargs(value: ((js.UndefOr[js.Any | String]) | Null)*): Self = StObject.set(x, "zIndex", js.Array(value :_*))
     
     @scala.inline
     def setZoom(
       value: ResponsiveStyleValue[js.UndefOr[ZoomProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ZoomProperty]]]) | SystemStyleObject
-    ): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomFunction1(value: /* theme */ js.Any => ResponsiveStyleValue[js.UndefOr[ZoomProperty]]): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setZoomNull: Self = this.set("zoom", null)
+    def setZoomNull: Self = StObject.set(x, "zoom", null)
+    
+    @scala.inline
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    
+    @scala.inline
+    def setZoomVarargs(value: (js.UndefOr[ZoomProperty] | Null)*): Self = StObject.set(x, "zoom", js.Array(value :_*))
   }
 }

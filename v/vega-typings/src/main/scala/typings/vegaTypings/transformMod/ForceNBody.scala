@@ -2,6 +2,7 @@ package typings.vegaTypings.transformMod
 
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.nbody
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,45 +29,33 @@ object ForceNBody {
   }
   
   @scala.inline
-  implicit class ForceNBodyOps[Self <: ForceNBody] (val x: Self) extends AnyVal {
+  implicit class ForceNBodyMutableBuilder[Self <: ForceNBody] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistanceMax(value: Double | SignalRef): Self = StObject.set(x, "distanceMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceMaxUndefined: Self = StObject.set(x, "distanceMax", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistanceMin(value: Double | SignalRef): Self = StObject.set(x, "distanceMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: nbody): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setDistanceMinUndefined: Self = StObject.set(x, "distanceMin", js.undefined)
     
     @scala.inline
-    def setDistanceMax(value: Double | SignalRef): Self = this.set("distanceMax", value.asInstanceOf[js.Any])
+    def setForce(value: nbody): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDistanceMax: Self = this.set("distanceMax", js.undefined)
+    def setStrength(value: Double | SignalRef): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceMin(value: Double | SignalRef): Self = this.set("distanceMin", value.asInstanceOf[js.Any])
+    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
     
     @scala.inline
-    def deleteDistanceMin: Self = this.set("distanceMin", js.undefined)
+    def setTheta(value: Double | SignalRef): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrength(value: Double | SignalRef): Self = this.set("strength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrength: Self = this.set("strength", js.undefined)
-    
-    @scala.inline
-    def setTheta(value: Double | SignalRef): Self = this.set("theta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheta: Self = this.set("theta", js.undefined)
+    def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
   }
 }

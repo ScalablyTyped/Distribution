@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,30 +76,18 @@ object XTextInputStream {
   }
   
   @scala.inline
-  implicit class XTextInputStreamOps[Self <: XTextInputStream] (val x: Self) extends AnyVal {
+  implicit class XTextInputStreamMutableBuilder[Self <: XTextInputStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsEOF(value: () => Boolean): Self = StObject.set(x, "isEOF", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadLine(value: () => String): Self = StObject.set(x, "readLine", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadString(value: (SeqEquiv[String], Boolean) => String): Self = StObject.set(x, "readString", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsEOF(value: () => Boolean): Self = this.set("isEOF", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadLine(value: () => String): Self = this.set("readLine", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadString(value: (SeqEquiv[String], Boolean) => String): Self = this.set("readString", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetEncoding(value: String => Unit): Self = this.set("setEncoding", js.Any.fromFunction1(value))
+    def setSetEncoding(value: String => Unit): Self = StObject.set(x, "setEncoding", js.Any.fromFunction1(value))
   }
 }

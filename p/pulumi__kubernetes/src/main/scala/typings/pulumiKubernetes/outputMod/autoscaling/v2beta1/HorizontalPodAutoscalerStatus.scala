@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.autoscaling.v2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * HorizontalPodAutoscalerStatus describes the current status of a horizontal pod autoscaler.
   */
 @js.native
-trait HorizontalPodAutoscalerStatus extends js.Object {
+trait HorizontalPodAutoscalerStatus extends StObject {
   
   /**
     * conditions is the set of conditions required for this autoscaler to scale its target, and indicates whether or not those conditions are met.
@@ -56,42 +57,30 @@ object HorizontalPodAutoscalerStatus {
   }
   
   @scala.inline
-  implicit class HorizontalPodAutoscalerStatusOps[Self <: HorizontalPodAutoscalerStatus] (val x: Self) extends AnyVal {
+  implicit class HorizontalPodAutoscalerStatusMutableBuilder[Self <: HorizontalPodAutoscalerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: js.Array[HorizontalPodAutoscalerCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsVarargs(value: HorizontalPodAutoscalerCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentMetrics(value: js.Array[MetricStatus]): Self = StObject.set(x, "currentMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: HorizontalPodAutoscalerCondition*): Self = this.set("conditions", js.Array(value :_*))
+    def setCurrentMetricsVarargs(value: MetricStatus*): Self = StObject.set(x, "currentMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setConditions(value: js.Array[HorizontalPodAutoscalerCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setCurrentReplicas(value: Double): Self = StObject.set(x, "currentReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentMetricsVarargs(value: MetricStatus*): Self = this.set("currentMetrics", js.Array(value :_*))
+    def setDesiredReplicas(value: Double): Self = StObject.set(x, "desiredReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentMetrics(value: js.Array[MetricStatus]): Self = this.set("currentMetrics", value.asInstanceOf[js.Any])
+    def setLastScaleTime(value: String): Self = StObject.set(x, "lastScaleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentReplicas(value: Double): Self = this.set("currentReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDesiredReplicas(value: Double): Self = this.set("desiredReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastScaleTime(value: String): Self = this.set("lastScaleTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObservedGeneration(value: Double): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
+    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
   }
 }

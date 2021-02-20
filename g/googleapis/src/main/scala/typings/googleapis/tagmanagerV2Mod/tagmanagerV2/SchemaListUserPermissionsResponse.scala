@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * List user permissions response.
   */
 @js.native
-trait SchemaListUserPermissionsResponse extends js.Object {
+trait SchemaListUserPermissionsResponse extends StObject {
   
   /**
     * Continuation token for fetching the next page of results.
@@ -29,33 +30,21 @@ object SchemaListUserPermissionsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListUserPermissionsResponseOps[Self <: SchemaListUserPermissionsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListUserPermissionsResponseMutableBuilder[Self <: SchemaListUserPermissionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserPermission(value: js.Array[SchemaUserPermission]): Self = StObject.set(x, "userPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setUserPermissionUndefined: Self = StObject.set(x, "userPermission", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setUserPermissionVarargs(value: SchemaUserPermission*): Self = this.set("userPermission", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserPermission(value: js.Array[SchemaUserPermission]): Self = this.set("userPermission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPermission: Self = this.set("userPermission", js.undefined)
+    def setUserPermissionVarargs(value: SchemaUserPermission*): Self = StObject.set(x, "userPermission", js.Array(value :_*))
   }
 }

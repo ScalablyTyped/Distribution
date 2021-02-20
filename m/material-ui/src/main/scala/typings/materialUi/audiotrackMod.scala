@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/image/audiotrack", JSImport.Namespace)
-@js.native
-object audiotrackMod extends js.Object {
+object audiotrackMod {
   
+  @JSImport("material-ui/svg-icons/image/audiotrack", JSImport.Default)
+  @js.native
+  class default () extends ImageAudiotrack
+  
+  @JSImport("material-ui/svg-icons/image/audiotrack", "ImageAudiotrack")
   @js.native
   class ImageAudiotrack ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceConfig extends js.Object {
+trait SourceConfig extends StObject {
   
   /** The crowding configuration for the source. */
   var crowdingConfig: js.UndefOr[SourceCrowdingConfig] = js.native
@@ -25,36 +26,24 @@ object SourceConfig {
   }
   
   @scala.inline
-  implicit class SourceConfigOps[Self <: SourceConfig] (val x: Self) extends AnyVal {
+  implicit class SourceConfigMutableBuilder[Self <: SourceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrowdingConfig(value: SourceCrowdingConfig): Self = StObject.set(x, "crowdingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrowdingConfigUndefined: Self = StObject.set(x, "crowdingConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScoringConfig(value: SourceScoringConfig): Self = StObject.set(x, "scoringConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrowdingConfig(value: SourceCrowdingConfig): Self = this.set("crowdingConfig", value.asInstanceOf[js.Any])
+    def setScoringConfigUndefined: Self = StObject.set(x, "scoringConfig", js.undefined)
     
     @scala.inline
-    def deleteCrowdingConfig: Self = this.set("crowdingConfig", js.undefined)
+    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoringConfig(value: SourceScoringConfig): Self = this.set("scoringConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScoringConfig: Self = this.set("scoringConfig", js.undefined)
-    
-    @scala.inline
-    def setSource(value: Source): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

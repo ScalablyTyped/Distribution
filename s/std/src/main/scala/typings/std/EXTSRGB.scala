@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EXTSRGB extends js.Object {
+trait EXTSRGB extends StObject {
   
   val FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT: GLenum = js.native
   
@@ -29,30 +30,18 @@ object EXTSRGB {
   }
   
   @scala.inline
-  implicit class EXTSRGBOps[Self <: EXTSRGB] (val x: Self) extends AnyVal {
+  implicit class EXTSRGBMutableBuilder[Self <: EXTSRGB] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT(value: GLenum): Self = StObject.set(x, "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSRGB8_ALPHA8_EXT(value: GLenum): Self = StObject.set(x, "SRGB8_ALPHA8_EXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSRGB_ALPHA_EXT(value: GLenum): Self = StObject.set(x, "SRGB_ALPHA_EXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT(value: GLenum): Self = this.set("FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSRGB8_ALPHA8_EXT(value: GLenum): Self = this.set("SRGB8_ALPHA8_EXT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSRGB_ALPHA_EXT(value: GLenum): Self = this.set("SRGB_ALPHA_EXT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSRGB_EXT(value: GLenum): Self = this.set("SRGB_EXT", value.asInstanceOf[js.Any])
+    def setSRGB_EXT(value: GLenum): Self = StObject.set(x, "SRGB_EXT", value.asInstanceOf[js.Any])
   }
 }

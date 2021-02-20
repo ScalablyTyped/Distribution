@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.Dimension
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is triggered whenever the weather changes. It contains information about the weather it is changing to.
   */
 @js.native
-trait IWeatherChangedEventData extends js.Object {
+trait IWeatherChangedEventData extends StObject {
   
   /**
     * The name of the dimension where the weather change happened
@@ -35,27 +36,15 @@ object IWeatherChangedEventData {
   }
   
   @scala.inline
-  implicit class IWeatherChangedEventDataOps[Self <: IWeatherChangedEventData] (val x: Self) extends AnyVal {
+  implicit class IWeatherChangedEventDataMutableBuilder[Self <: IWeatherChangedEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimension(value: Dimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLightning(value: Boolean): Self = StObject.set(x, "lightning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDimension(value: Dimension): Self = this.set("dimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLightning(value: Boolean): Self = this.set("lightning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRaining(value: Boolean): Self = this.set("raining", value.asInstanceOf[js.Any])
+    def setRaining(value: Boolean): Self = StObject.set(x, "raining", value.asInstanceOf[js.Any])
   }
 }

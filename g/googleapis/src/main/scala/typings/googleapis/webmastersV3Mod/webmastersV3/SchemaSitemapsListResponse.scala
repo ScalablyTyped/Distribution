@@ -1,5 +1,6 @@
 package typings.googleapis.webmastersV3Mod.webmastersV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * List of sitemaps.
   */
 @js.native
-trait SchemaSitemapsListResponse extends js.Object {
+trait SchemaSitemapsListResponse extends StObject {
   
   /**
     * Contains detailed information about a specific URL submitted as a
@@ -25,27 +26,15 @@ object SchemaSitemapsListResponse {
   }
   
   @scala.inline
-  implicit class SchemaSitemapsListResponseOps[Self <: SchemaSitemapsListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaSitemapsListResponseMutableBuilder[Self <: SchemaSitemapsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSitemap(value: js.Array[SchemaWmxSitemap]): Self = StObject.set(x, "sitemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSitemapUndefined: Self = StObject.set(x, "sitemap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSitemapVarargs(value: SchemaWmxSitemap*): Self = this.set("sitemap", js.Array(value :_*))
-    
-    @scala.inline
-    def setSitemap(value: js.Array[SchemaWmxSitemap]): Self = this.set("sitemap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSitemap: Self = this.set("sitemap", js.undefined)
+    def setSitemapVarargs(value: SchemaWmxSitemap*): Self = StObject.set(x, "sitemap", js.Array(value :_*))
   }
 }

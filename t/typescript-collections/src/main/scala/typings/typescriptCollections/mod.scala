@@ -1,21 +1,22 @@
 package typings.typescriptCollections
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.typescriptCollections.bstreekvMod.default
+import typings.typescriptCollections.bstreeMod.default
 import typings.typescriptCollections.utilMod.ICompareFunction
 import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-collections", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("typescript-collections", "BSTree")
   @js.native
-  class BSTree[T] () extends default[T, T]
+  class BSTree[T] () extends default[T]
   
+  @JSImport("typescript-collections", "BSTreeKV")
   @js.native
   /**
     * Creates an empty binary search tree.
@@ -52,10 +53,12 @@ object mod extends js.Object {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class BSTreeKV[K, V /* <: K */] () extends default[K, V] {
+  class BSTreeKV[K, V /* <: K */] ()
+    extends typings.typescriptCollections.bstreekvMod.default[K, V] {
     def this(compareFunction: ICompareFunction[K]) = this()
   }
   
+  @JSImport("typescript-collections", "Bag")
   @js.native
   /**
     * Creates an empty bag.
@@ -81,6 +84,7 @@ object mod extends js.Object {
     def this(toStrFunction: js.Function1[/* item */ T, String]) = this()
   }
   
+  @JSImport("typescript-collections", "DefaultDictionary")
   @js.native
   class DefaultDictionary[K, V] protected ()
     extends typings.typescriptCollections.factoryDictionaryMod.default[K, V] {
@@ -116,6 +120,7 @@ object mod extends js.Object {
     def this(defaultFactoryFunction: js.Function0[V], toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
+  @JSImport("typescript-collections", "Dictionary")
   @js.native
   /**
     * Creates an empty dictionary.
@@ -140,6 +145,7 @@ object mod extends js.Object {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
+  @JSImport("typescript-collections", "FactoryDictionary")
   @js.native
   class FactoryDictionary[K, V] protected ()
     extends typings.typescriptCollections.factoryDictionaryMod.default[K, V] {
@@ -175,6 +181,7 @@ object mod extends js.Object {
     def this(defaultFactoryFunction: js.Function0[V], toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
+  @JSImport("typescript-collections", "Heap")
   @js.native
   /**
     * Creates an empty Heap.
@@ -224,12 +231,14 @@ object mod extends js.Object {
     def this(compareFunction: ICompareFunction[T]) = this()
   }
   
+  @JSImport("typescript-collections", "LinkedDictionary")
   @js.native
   class LinkedDictionary[K, V] ()
     extends typings.typescriptCollections.linkedDictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
+  @JSImport("typescript-collections", "LinkedList")
   @js.native
   /**
     * Creates an empty Linked List.
@@ -240,6 +249,7 @@ object mod extends js.Object {
   class LinkedList[T] ()
     extends typings.typescriptCollections.linkedListMod.default[T]
   
+  @JSImport("typescript-collections", "MultiDictionary")
   @js.native
   /**
     * Creates an empty multi dictionary.
@@ -303,6 +313,7 @@ object mod extends js.Object {
     ) = this()
   }
   
+  @JSImport("typescript-collections", "MultiRootTree")
   @js.native
   class MultiRootTree ()
     extends typings.typescriptCollections.multiRootTreeMod.default {
@@ -311,6 +322,7 @@ object mod extends js.Object {
     def this(rootIds: js.Array[String], nodes: StringDictionary[js.Array[String]]) = this()
   }
   
+  @JSImport("typescript-collections", "PriorityQueue")
   @js.native
   /**
     * Creates an empty priority queue.
@@ -341,6 +353,7 @@ object mod extends js.Object {
     def this(compareFunction: ICompareFunction[T]) = this()
   }
   
+  @JSImport("typescript-collections", "Queue")
   @js.native
   /**
     * Creates an empty queue.
@@ -352,6 +365,7 @@ object mod extends js.Object {
   class Queue[T] ()
     extends typings.typescriptCollections.queueMod.default[T]
   
+  @JSImport("typescript-collections", "Set")
   @js.native
   /**
     * Creates an empty set.
@@ -376,6 +390,7 @@ object mod extends js.Object {
     def this(toStringFunction: js.Function1[/* item */ T, String]) = this()
   }
   
+  @JSImport("typescript-collections", "Stack")
   @js.native
   /**
     * Creates an empty Stack.
@@ -387,59 +402,113 @@ object mod extends js.Object {
   class Stack[T] ()
     extends typings.typescriptCollections.stackMod.default[T]
   
-  @js.native
-  object arrays extends js.Object {
+  object arrays {
     
+    @JSImport("typescript-collections", "arrays.contains")
+    @js.native
     def contains[T](array: js.Array[T], item: T): Boolean = js.native
+    @JSImport("typescript-collections", "arrays.contains")
+    @js.native
     def contains[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
     
+    @JSImport("typescript-collections", "arrays.copy")
+    @js.native
     def copy[T](array: js.Array[T]): js.Array[T] = js.native
     
-    def equals[T](array1: js.Array[T], array2: js.Array[T]): Boolean = js.native
-    def equals[T](array1: js.Array[T], array2: js.Array[T], equalsFunction: IEqualsFunction[T]): Boolean = js.native
+    @JSImport("typescript-collections", "arrays.equals")
+    @js.native
+    def equals_[T](array1: js.Array[T], array2: js.Array[T]): Boolean = js.native
+    @JSImport("typescript-collections", "arrays.equals")
+    @js.native
+    def equals_[T](array1: js.Array[T], array2: js.Array[T], equalsFunction: IEqualsFunction[T]): Boolean = js.native
     
+    @JSImport("typescript-collections", "arrays.forEach")
+    @js.native
     def forEach[T](array: js.Array[T], callback: ILoopFunction[T]): Unit = js.native
     
+    @JSImport("typescript-collections", "arrays.frequency")
+    @js.native
     def frequency[T](array: js.Array[T], item: T): Double = js.native
+    @JSImport("typescript-collections", "arrays.frequency")
+    @js.native
     def frequency[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
     
+    @JSImport("typescript-collections", "arrays.indexOf")
+    @js.native
     def indexOf[T](array: js.Array[T], item: T): Double = js.native
+    @JSImport("typescript-collections", "arrays.indexOf")
+    @js.native
     def indexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
     
+    @JSImport("typescript-collections", "arrays.lastIndexOf")
+    @js.native
     def lastIndexOf[T](array: js.Array[T], item: T): Double = js.native
+    @JSImport("typescript-collections", "arrays.lastIndexOf")
+    @js.native
     def lastIndexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
     
+    @JSImport("typescript-collections", "arrays.remove")
+    @js.native
     def remove[T](array: js.Array[T], item: T): Boolean = js.native
+    @JSImport("typescript-collections", "arrays.remove")
+    @js.native
     def remove[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
     
+    @JSImport("typescript-collections", "arrays.swap")
+    @js.native
     def swap[T](array: js.Array[T], i: Double, j: Double): Boolean = js.native
     
-    def toString[T](array: js.Array[T]): String = js.native
+    @JSImport("typescript-collections", "arrays.toString")
+    @js.native
+    def toString_[T](array: js.Array[T]): String = js.native
   }
   
-  @js.native
-  object util extends js.Object {
+  object util {
     
+    @JSImport("typescript-collections", "util.compareToEquals")
+    @js.native
     def compareToEquals[T](compareFunction: ICompareFunction[T]): IEqualsFunction[T] = js.native
     
+    @JSImport("typescript-collections", "util.defaultCompare")
+    @js.native
     def defaultCompare[T](a: T, b: T): Double = js.native
     
+    @JSImport("typescript-collections", "util.defaultEquals")
+    @js.native
     def defaultEquals[T](a: T, b: T): Boolean = js.native
     
+    @JSImport("typescript-collections", "util.defaultToString")
+    @js.native
     def defaultToString(item: js.Any): String = js.native
     
+    @JSImport("typescript-collections", "util.has")
+    @js.native
     def has(obj: js.Any, prop: js.Any): js.Any = js.native
     
+    @JSImport("typescript-collections", "util.isFunction")
+    @js.native
     def isFunction(func: js.Any): Boolean = js.native
     
+    @JSImport("typescript-collections", "util.isString")
+    @js.native
     def isString(obj: js.Any): Boolean = js.native
     
+    @JSImport("typescript-collections", "util.isUndefined")
+    @js.native
     def isUndefined(obj: js.Any): /* is undefined */ Boolean = js.native
     
+    @JSImport("typescript-collections", "util.makeString")
+    @js.native
     def makeString[T](item: T): String = js.native
+    @JSImport("typescript-collections", "util.makeString")
+    @js.native
     def makeString[T](item: T, join: String): String = js.native
     
+    @JSImport("typescript-collections", "util.reverseCompareFunction")
+    @js.native
     def reverseCompareFunction[T](): ICompareFunction[T] = js.native
+    @JSImport("typescript-collections", "util.reverseCompareFunction")
+    @js.native
     def reverseCompareFunction[T](compareFunction: ICompareFunction[T]): ICompareFunction[T] = js.native
   }
 }

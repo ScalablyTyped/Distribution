@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationApplicationConfigurationSqlApplicationConfiguration extends js.Object {
+trait ApplicationApplicationConfigurationSqlApplicationConfiguration extends StObject {
   
   /**
     * The input stream used by the application.
@@ -33,39 +34,27 @@ object ApplicationApplicationConfigurationSqlApplicationConfiguration {
   }
   
   @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationOps[Self <: ApplicationApplicationConfigurationSqlApplicationConfiguration] (val x: Self) extends AnyVal {
+  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputs(value: js.Array[ApplicationApplicationConfigurationSqlApplicationConfigurationOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: ApplicationApplicationConfigurationSqlApplicationConfigurationInput): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setOutputsVarargs(value: ApplicationApplicationConfigurationSqlApplicationConfigurationOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
     @scala.inline
-    def setOutputsVarargs(value: ApplicationApplicationConfigurationSqlApplicationConfigurationOutput*): Self = this.set("outputs", js.Array(value :_*))
+    def setReferenceDataSource(value: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource): Self = StObject.set(x, "referenceDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: js.Array[ApplicationApplicationConfigurationSqlApplicationConfigurationOutput]): Self = this.set("outputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputs: Self = this.set("outputs", js.undefined)
-    
-    @scala.inline
-    def setReferenceDataSource(value: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource): Self = this.set("referenceDataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferenceDataSource: Self = this.set("referenceDataSource", js.undefined)
+    def setReferenceDataSourceUndefined: Self = StObject.set(x, "referenceDataSource", js.undefined)
   }
 }

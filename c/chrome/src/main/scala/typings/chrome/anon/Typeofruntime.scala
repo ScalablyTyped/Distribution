@@ -15,12 +15,13 @@ import typings.chrome.chrome.runtime.RuntimeRestartRequiredEvent
 import typings.chrome.chrome.runtime.RuntimeUpdateAvailableEvent
 import typings.chrome.chrome.runtime.UpdateCheckDetails
 import typings.filesystem.DirectoryEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofruntime extends js.Object {
+trait Typeofruntime extends StObject {
   
   def connect(): Port = js.native
   def connect(connectInfo: ConnectInfo): Port = js.native

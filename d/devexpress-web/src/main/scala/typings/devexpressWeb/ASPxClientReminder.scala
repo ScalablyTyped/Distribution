@@ -1,6 +1,7 @@
 package typings.devexpressWeb
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a client-side equivalent of the Reminder class.
   */
 @js.native
-trait ASPxClientReminder extends js.Object {
+trait ASPxClientReminder extends StObject {
   
   /**
     * Switches the reminder off for the associated appointment.
@@ -59,36 +60,24 @@ object ASPxClientReminder {
   }
   
   @scala.inline
-  implicit class ASPxClientReminderOps[Self <: ASPxClientReminder] (val x: Self) extends AnyVal {
+  implicit class ASPxClientReminderMutableBuilder[Self <: ASPxClientReminder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDismiss(value: () => Unit): Self = StObject.set(x, "Dismiss", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAlertTime(value: () => Date): Self = StObject.set(x, "GetAlertTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCustomField(value: String => js.Any): Self = StObject.set(x, "GetCustomField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDismiss(value: () => Unit): Self = this.set("Dismiss", js.Any.fromFunction0(value))
+    def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAlertTime(value: () => Date): Self = this.set("GetAlertTime", js.Any.fromFunction0(value))
+    def setGetTimeBeforeStart(value: () => Date): Self = StObject.set(x, "GetTimeBeforeStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCustomField(value: String => js.Any): Self = this.set("GetCustomField", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetId(value: () => String): Self = this.set("GetId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTimeBeforeStart(value: () => Date): Self = this.set("GetTimeBeforeStart", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSnooze(value: Double => Unit): Self = this.set("Snooze", js.Any.fromFunction1(value))
+    def setSnooze(value: Double => Unit): Self = StObject.set(x, "Snooze", js.Any.fromFunction1(value))
   }
 }

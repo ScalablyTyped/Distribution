@@ -1,15 +1,15 @@
 package typings.grampsRestHelpers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@gramps/rest-helpers", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@gramps/rest-helpers", "GraphQLConnector")
   @js.native
-  class GraphQLConnector () extends js.Object {
+  class GraphQLConnector () extends StObject {
     
     var apiBaseUri: String = js.native
     
@@ -32,8 +32,9 @@ object mod extends js.Object {
     var request: js.Any = js.native
   }
   
+  @JSImport("@gramps/rest-helpers", "GraphQLModel")
   @js.native
-  class GraphQLModel protected () extends js.Object {
+  class GraphQLModel protected () extends StObject {
     def this(has: js.Any) = this()
     
     var connector: GraphQLConnector = js.native

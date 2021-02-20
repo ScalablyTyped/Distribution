@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,33 +76,21 @@ object XInterfaceAttributeTypeDescription2 {
   }
   
   @scala.inline
-  implicit class XInterfaceAttributeTypeDescription2Ops[Self <: XInterfaceAttributeTypeDescription2] (val x: Self) extends AnyVal {
+  implicit class XInterfaceAttributeTypeDescription2MutableBuilder[Self <: XInterfaceAttributeTypeDescription2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "GetExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetGetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "getGetExceptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "getSetExceptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetExceptions(value: SafeArray[XCompoundTypeDescription]): Self = this.set("GetExceptions", value.asInstanceOf[js.Any])
+    def setIsBound(value: () => Boolean): Self = StObject.set(x, "isBound", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetExceptions(value: SafeArray[XCompoundTypeDescription]): Self = this.set("SetExceptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetGetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = this.set("getGetExceptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = this.set("getSetExceptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsBound(value: () => Boolean): Self = this.set("isBound", js.Any.fromFunction0(value))
+    def setSetExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "SetExceptions", value.asInstanceOf[js.Any])
   }
 }

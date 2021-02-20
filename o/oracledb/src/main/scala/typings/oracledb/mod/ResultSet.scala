@@ -1,6 +1,7 @@
 package typings.oracledb.mod
 
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://oracle.github.io/node-oracledb/doc/api.html#resultsethandling
   */
 @js.native
-trait ResultSet[T] extends js.Object {
+trait ResultSet[T] extends StObject {
   
   /**
     * Closes a ResultSet. Applications should always call this at the end of fetch or when no more rows are needed.

@@ -1,12 +1,13 @@
 package typings.cordovaPluginXSocialsharing
 
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocialSharing extends js.Object {
+trait SocialSharing extends StObject {
   
   def available(callback: js.Function1[/* available */ Boolean, Unit]): Unit = js.native
   

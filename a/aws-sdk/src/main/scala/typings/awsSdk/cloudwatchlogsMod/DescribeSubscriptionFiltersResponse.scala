@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSubscriptionFiltersResponse extends js.Object {
+trait DescribeSubscriptionFiltersResponse extends StObject {
   
   var nextToken: js.UndefOr[NextToken] = js.native
   
@@ -23,33 +24,21 @@ object DescribeSubscriptionFiltersResponse {
   }
   
   @scala.inline
-  implicit class DescribeSubscriptionFiltersResponseOps[Self <: DescribeSubscriptionFiltersResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeSubscriptionFiltersResponseMutableBuilder[Self <: DescribeSubscriptionFiltersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscriptionFilters(value: SubscriptionFilters): Self = StObject.set(x, "subscriptionFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setSubscriptionFiltersUndefined: Self = StObject.set(x, "subscriptionFilters", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionFiltersVarargs(value: SubscriptionFilter*): Self = this.set("subscriptionFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscriptionFilters(value: SubscriptionFilters): Self = this.set("subscriptionFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionFilters: Self = this.set("subscriptionFilters", js.undefined)
+    def setSubscriptionFiltersVarargs(value: SubscriptionFilter*): Self = StObject.set(x, "subscriptionFilters", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UniformSharding extends js.Object {
+trait UniformSharding extends StObject {
   
   /**
     * Required. Total number of shards. When any physical devices are selected, the number must be >= 1 and <= 50. When no physical devices are selected, the number must be >= 1 and <=
@@ -22,24 +23,12 @@ object UniformSharding {
   }
   
   @scala.inline
-  implicit class UniformShardingOps[Self <: UniformSharding] (val x: Self) extends AnyVal {
+  implicit class UniformShardingMutableBuilder[Self <: UniformSharding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumShards(value: Double): Self = StObject.set(x, "numShards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNumShards(value: Double): Self = this.set("numShards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumShards: Self = this.set("numShards", js.undefined)
+    def setNumShardsUndefined: Self = StObject.set(x, "numShards", js.undefined)
   }
 }

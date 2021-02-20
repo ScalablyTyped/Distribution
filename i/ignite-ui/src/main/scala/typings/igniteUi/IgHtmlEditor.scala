@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -170,186 +171,174 @@ object IgHtmlEditor {
   }
   
   @scala.inline
-  implicit class IgHtmlEditorOps[Self <: IgHtmlEditor] (val x: Self) extends AnyVal {
+  implicit class IgHtmlEditorMutableBuilder[Self <: IgHtmlEditor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionExecuted(value: (/* event */ Event, /* ui */ ActionExecutedEventUIParam) => Unit): Self = StObject.set(x, "actionExecuted", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionExecutedUndefined: Self = StObject.set(x, "actionExecuted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionExecuting(value: (/* event */ Event, /* ui */ ActionExecutingEventUIParam) => Unit): Self = StObject.set(x, "actionExecuting", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setActionExecuted(value: (/* event */ Event, /* ui */ ActionExecutedEventUIParam) => Unit): Self = this.set("actionExecuted", js.Any.fromFunction2(value))
+    def setActionExecutingUndefined: Self = StObject.set(x, "actionExecuting", js.undefined)
     
     @scala.inline
-    def deleteActionExecuted: Self = this.set("actionExecuted", js.undefined)
+    def setCopy(value: (/* event */ Event, /* ui */ CopyEventUIParam) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setActionExecuting(value: (/* event */ Event, /* ui */ ActionExecutingEventUIParam) => Unit): Self = this.set("actionExecuting", js.Any.fromFunction2(value))
+    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
     @scala.inline
-    def deleteActionExecuting: Self = this.set("actionExecuting", js.undefined)
+    def setCustomToolbars(value: js.Array[_]): Self = StObject.set(x, "customToolbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: (/* event */ Event, /* ui */ CopyEventUIParam) => Unit): Self = this.set("copy", js.Any.fromFunction2(value))
+    def setCustomToolbarsUndefined: Self = StObject.set(x, "customToolbars", js.undefined)
     
     @scala.inline
-    def deleteCopy: Self = this.set("copy", js.undefined)
+    def setCustomToolbarsVarargs(value: js.Any*): Self = StObject.set(x, "customToolbars", js.Array(value :_*))
     
     @scala.inline
-    def setCustomToolbarsVarargs(value: js.Any*): Self = this.set("customToolbars", js.Array(value :_*))
+    def setCut(value: (/* event */ Event, /* ui */ CutEventUIParam) => Unit): Self = StObject.set(x, "cut", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCustomToolbars(value: js.Array[_]): Self = this.set("customToolbars", value.asInstanceOf[js.Any])
+    def setCutUndefined: Self = StObject.set(x, "cut", js.undefined)
     
     @scala.inline
-    def deleteCustomToolbars: Self = this.set("customToolbars", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCut(value: (/* event */ Event, /* ui */ CutEventUIParam) => Unit): Self = this.set("cut", js.Any.fromFunction2(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteCut: Self = this.set("cut", js.undefined)
+    def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputName(value: String): Self = this.set("inputName", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteInputName: Self = this.set("inputName", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setPaste(value: (/* event */ Event, /* ui */ PasteEventUIParam) => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setRedo(value: (/* event */ Event, /* ui */ RedoEventUIParam) => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPaste(value: (/* event */ Event, /* ui */ PasteEventUIParam) => Unit): Self = this.set("paste", js.Any.fromFunction2(value))
+    def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
     
     @scala.inline
-    def deletePaste: Self = this.set("paste", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedo(value: (/* event */ Event, /* ui */ RedoEventUIParam) => Unit): Self = this.set("redo", js.Any.fromFunction2(value))
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deleteRedo: Self = this.set("redo", js.undefined)
+    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = StObject.set(x, "rendered", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setRendering(value: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit): Self = StObject.set(x, "rendering", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = this.set("rendered", js.Any.fromFunction2(value))
+    def setRenderingUndefined: Self = StObject.set(x, "rendering", js.undefined)
     
     @scala.inline
-    def deleteRendered: Self = this.set("rendered", js.undefined)
+    def setShowCopyPasteToolbar(value: Boolean): Self = StObject.set(x, "showCopyPasteToolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRendering(value: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit): Self = this.set("rendering", js.Any.fromFunction2(value))
+    def setShowCopyPasteToolbarUndefined: Self = StObject.set(x, "showCopyPasteToolbar", js.undefined)
     
     @scala.inline
-    def deleteRendering: Self = this.set("rendering", js.undefined)
+    def setShowFormattingToolbar(value: Boolean): Self = StObject.set(x, "showFormattingToolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCopyPasteToolbar(value: Boolean): Self = this.set("showCopyPasteToolbar", value.asInstanceOf[js.Any])
+    def setShowFormattingToolbarUndefined: Self = StObject.set(x, "showFormattingToolbar", js.undefined)
     
     @scala.inline
-    def deleteShowCopyPasteToolbar: Self = this.set("showCopyPasteToolbar", js.undefined)
+    def setShowInsertObjectToolbar(value: Boolean): Self = StObject.set(x, "showInsertObjectToolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFormattingToolbar(value: Boolean): Self = this.set("showFormattingToolbar", value.asInstanceOf[js.Any])
+    def setShowInsertObjectToolbarUndefined: Self = StObject.set(x, "showInsertObjectToolbar", js.undefined)
     
     @scala.inline
-    def deleteShowFormattingToolbar: Self = this.set("showFormattingToolbar", js.undefined)
+    def setShowTextToolbar(value: Boolean): Self = StObject.set(x, "showTextToolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowInsertObjectToolbar(value: Boolean): Self = this.set("showInsertObjectToolbar", value.asInstanceOf[js.Any])
+    def setShowTextToolbarUndefined: Self = StObject.set(x, "showTextToolbar", js.undefined)
     
     @scala.inline
-    def deleteShowInsertObjectToolbar: Self = this.set("showInsertObjectToolbar", js.undefined)
+    def setToolbarCollapsed(value: (/* event */ Event, /* ui */ ToolbarCollapsedEventUIParam) => Unit): Self = StObject.set(x, "toolbarCollapsed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setShowTextToolbar(value: Boolean): Self = this.set("showTextToolbar", value.asInstanceOf[js.Any])
+    def setToolbarCollapsedUndefined: Self = StObject.set(x, "toolbarCollapsed", js.undefined)
     
     @scala.inline
-    def deleteShowTextToolbar: Self = this.set("showTextToolbar", js.undefined)
+    def setToolbarCollapsing(value: (/* event */ Event, /* ui */ ToolbarCollapsingEventUIParam) => Unit): Self = StObject.set(x, "toolbarCollapsing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setToolbarCollapsed(value: (/* event */ Event, /* ui */ ToolbarCollapsedEventUIParam) => Unit): Self = this.set("toolbarCollapsed", js.Any.fromFunction2(value))
+    def setToolbarCollapsingUndefined: Self = StObject.set(x, "toolbarCollapsing", js.undefined)
     
     @scala.inline
-    def deleteToolbarCollapsed: Self = this.set("toolbarCollapsed", js.undefined)
+    def setToolbarExpanded(value: (/* event */ Event, /* ui */ ToolbarExpandedEventUIParam) => Unit): Self = StObject.set(x, "toolbarExpanded", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setToolbarCollapsing(value: (/* event */ Event, /* ui */ ToolbarCollapsingEventUIParam) => Unit): Self = this.set("toolbarCollapsing", js.Any.fromFunction2(value))
+    def setToolbarExpandedUndefined: Self = StObject.set(x, "toolbarExpanded", js.undefined)
     
     @scala.inline
-    def deleteToolbarCollapsing: Self = this.set("toolbarCollapsing", js.undefined)
+    def setToolbarExpanding(value: (/* event */ Event, /* ui */ ToolbarExpandingEventUIParam) => Unit): Self = StObject.set(x, "toolbarExpanding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setToolbarExpanded(value: (/* event */ Event, /* ui */ ToolbarExpandedEventUIParam) => Unit): Self = this.set("toolbarExpanded", js.Any.fromFunction2(value))
+    def setToolbarExpandingUndefined: Self = StObject.set(x, "toolbarExpanding", js.undefined)
     
     @scala.inline
-    def deleteToolbarExpanded: Self = this.set("toolbarExpanded", js.undefined)
+    def setToolbarSettings(value: js.Array[_]): Self = StObject.set(x, "toolbarSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolbarExpanding(value: (/* event */ Event, /* ui */ ToolbarExpandingEventUIParam) => Unit): Self = this.set("toolbarExpanding", js.Any.fromFunction2(value))
+    def setToolbarSettingsUndefined: Self = StObject.set(x, "toolbarSettings", js.undefined)
     
     @scala.inline
-    def deleteToolbarExpanding: Self = this.set("toolbarExpanding", js.undefined)
+    def setToolbarSettingsVarargs(value: js.Any*): Self = StObject.set(x, "toolbarSettings", js.Array(value :_*))
     
     @scala.inline
-    def setToolbarSettingsVarargs(value: js.Any*): Self = this.set("toolbarSettings", js.Array(value :_*))
+    def setUndo(value: (/* event */ Event, /* ui */ UndoEventUIParam) => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setToolbarSettings(value: js.Array[_]): Self = this.set("toolbarSettings", value.asInstanceOf[js.Any])
+    def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
     
     @scala.inline
-    def deleteToolbarSettings: Self = this.set("toolbarSettings", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndo(value: (/* event */ Event, /* ui */ UndoEventUIParam) => Unit): Self = this.set("undo", js.Any.fromFunction2(value))
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteUndo: Self = this.set("undo", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setWorkspaceResized(value: (/* event */ Event, /* ui */ WorkspaceResizedEventUIParam) => Unit): Self = StObject.set(x, "workspaceResized", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceResized(value: (/* event */ Event, /* ui */ WorkspaceResizedEventUIParam) => Unit): Self = this.set("workspaceResized", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteWorkspaceResized: Self = this.set("workspaceResized", js.undefined)
+    def setWorkspaceResizedUndefined: Self = StObject.set(x, "workspaceResized", js.undefined)
   }
 }

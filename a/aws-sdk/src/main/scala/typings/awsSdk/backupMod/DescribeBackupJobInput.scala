@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeBackupJobInput extends js.Object {
+trait DescribeBackupJobInput extends StObject {
   
   /**
     * Uniquely identifies a request to AWS Backup to back up a resource.
@@ -21,21 +22,9 @@ object DescribeBackupJobInput {
   }
   
   @scala.inline
-  implicit class DescribeBackupJobInputOps[Self <: DescribeBackupJobInput] (val x: Self) extends AnyVal {
+  implicit class DescribeBackupJobInputMutableBuilder[Self <: DescribeBackupJobInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackupJobId(value: String): Self = this.set("BackupJobId", value.asInstanceOf[js.Any])
+    def setBackupJobId(value: String): Self = StObject.set(x, "BackupJobId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1ListModelsResponse extends js.Object {
+trait GoogleCloudMlV1ListModelsResponse extends StObject {
   
   /** The list of models. */
   var models: js.UndefOr[js.Array[GoogleCloudMlV1Model]] = js.native
@@ -22,33 +23,21 @@ object GoogleCloudMlV1ListModelsResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1ListModelsResponseOps[Self <: GoogleCloudMlV1ListModelsResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1ListModelsResponseMutableBuilder[Self <: GoogleCloudMlV1ListModelsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModels(value: js.Array[GoogleCloudMlV1Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelsVarargs(value: GoogleCloudMlV1Model*): Self = StObject.set(x, "models", js.Array(value :_*))
     
     @scala.inline
-    def setModelsVarargs(value: GoogleCloudMlV1Model*): Self = this.set("models", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModels(value: js.Array[GoogleCloudMlV1Model]): Self = this.set("models", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModels: Self = this.set("models", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

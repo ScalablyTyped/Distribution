@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopySnapshotRequest extends js.Object {
+trait CopySnapshotRequest extends StObject {
   
   /**
     * The date of the source automatic snapshot to copy. Use the get auto snapshots operation to identify the dates of the available automatic snapshots. Constraints:   Must be specified in YYYY-MM-DD format.   This parameter cannot be defined together with the use latest restorable auto snapshot parameter. The restore date and use latest restorable auto snapshot parameters are mutually exclusive.   Define this parameter only when copying an automatic snapshot as a manual snapshot. For more information, see the Lightsail Dev Guide.  
@@ -46,48 +47,36 @@ object CopySnapshotRequest {
   }
   
   @scala.inline
-  implicit class CopySnapshotRequestOps[Self <: CopySnapshotRequest] (val x: Self) extends AnyVal {
+  implicit class CopySnapshotRequestMutableBuilder[Self <: CopySnapshotRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRestoreDate(value: String): Self = StObject.set(x, "restoreDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRestoreDateUndefined: Self = StObject.set(x, "restoreDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceRegion(value: RegionName): Self = StObject.set(x, "sourceRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceRegion(value: RegionName): Self = this.set("sourceRegion", value.asInstanceOf[js.Any])
+    def setSourceResourceName(value: String): Self = StObject.set(x, "sourceResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetSnapshotName(value: ResourceName): Self = this.set("targetSnapshotName", value.asInstanceOf[js.Any])
+    def setSourceResourceNameUndefined: Self = StObject.set(x, "sourceResourceName", js.undefined)
     
     @scala.inline
-    def setRestoreDate(value: String): Self = this.set("restoreDate", value.asInstanceOf[js.Any])
+    def setSourceSnapshotName(value: ResourceName): Self = StObject.set(x, "sourceSnapshotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRestoreDate: Self = this.set("restoreDate", js.undefined)
+    def setSourceSnapshotNameUndefined: Self = StObject.set(x, "sourceSnapshotName", js.undefined)
     
     @scala.inline
-    def setSourceResourceName(value: String): Self = this.set("sourceResourceName", value.asInstanceOf[js.Any])
+    def setTargetSnapshotName(value: ResourceName): Self = StObject.set(x, "targetSnapshotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceResourceName: Self = this.set("sourceResourceName", js.undefined)
+    def setUseLatestRestorableAutoSnapshot(value: Boolean): Self = StObject.set(x, "useLatestRestorableAutoSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSnapshotName(value: ResourceName): Self = this.set("sourceSnapshotName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceSnapshotName: Self = this.set("sourceSnapshotName", js.undefined)
-    
-    @scala.inline
-    def setUseLatestRestorableAutoSnapshot(value: Boolean): Self = this.set("useLatestRestorableAutoSnapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLatestRestorableAutoSnapshot: Self = this.set("useLatestRestorableAutoSnapshot", js.undefined)
+    def setUseLatestRestorableAutoSnapshotUndefined: Self = StObject.set(x, "useLatestRestorableAutoSnapshot", js.undefined)
   }
 }

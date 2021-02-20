@@ -1,15 +1,15 @@
 package typings.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewEncapsulation extends js.Object
+sealed trait ViewEncapsulation extends StObject
 @JSImport("@angular/core", "ViewEncapsulation")
 @js.native
-object ViewEncapsulation extends js.Object {
+object ViewEncapsulation extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ViewEncapsulation with Double] = js.native
@@ -24,16 +24,14 @@ object ViewEncapsulation extends js.Object {
     */
   @js.native
   sealed trait Emulated extends ViewEncapsulation
-  /* 0 */ @js.native
-  object Emulated extends TopLevel[Emulated with Double]
+  /* 0 */ val Emulated: typings.angularCore.mod.ViewEncapsulation.Emulated with Double = js.native
   
   /**
     * Don't provide any template or style encapsulation.
     */
   @js.native
   sealed trait None extends ViewEncapsulation
-  /* 2 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 2 */ val None: typings.angularCore.mod.ViewEncapsulation.None with Double = js.native
   
   /**
     * Use Shadow DOM to encapsulate styles.
@@ -44,6 +42,5 @@ object ViewEncapsulation extends js.Object {
     */
   @js.native
   sealed trait ShadowDom extends ViewEncapsulation
-  /* 3 */ @js.native
-  object ShadowDom extends TopLevel[ShadowDom with Double]
+  /* 3 */ val ShadowDom: typings.angularCore.mod.ViewEncapsulation.ShadowDom with Double = js.native
 }

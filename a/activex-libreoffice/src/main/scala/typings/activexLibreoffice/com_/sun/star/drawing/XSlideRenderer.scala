@@ -3,13 +3,14 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.awt.XBitmap
 import typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Create preview bitmaps for single slides. */
 @js.native
-trait XSlideRenderer extends js.Object {
+trait XSlideRenderer extends StObject {
   
   /**
     * Return a size that has the given aspect ratio and shares either the width or the height with the given maximum size.
@@ -54,29 +55,17 @@ object XSlideRenderer {
   }
   
   @scala.inline
-  implicit class XSlideRendererOps[Self <: XSlideRenderer] (val x: Self) extends AnyVal {
+  implicit class XSlideRendererMutableBuilder[Self <: XSlideRenderer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculatePreviewSize(value: (Double, Size) => Size): Self = StObject.set(x, "calculatePreviewSize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCalculatePreviewSize(value: (Double, Size) => Size): Self = this.set("calculatePreviewSize", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCreatePreview(value: (XDrawPage, Size, Double) => XBitmap): Self = this.set("createPreview", js.Any.fromFunction3(value))
+    def setCreatePreview(value: (XDrawPage, Size, Double) => XBitmap): Self = StObject.set(x, "createPreview", js.Any.fromFunction3(value))
     
     @scala.inline
     def setCreatePreviewForCanvas(
       value: (XDrawPage, Size, Double, XCanvas) => typings.activexLibreoffice.com_.sun.star.rendering.XBitmap
-    ): Self = this.set("createPreviewForCanvas", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "createPreviewForCanvas", js.Any.fromFunction4(value))
   }
 }

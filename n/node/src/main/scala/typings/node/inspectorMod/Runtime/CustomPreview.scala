@@ -1,5 +1,6 @@
 package typings.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @experimental
   */
 @js.native
-trait CustomPreview extends js.Object {
+trait CustomPreview extends StObject {
   
   var bindRemoteObjectFunctionId: RemoteObjectId = js.native
   
@@ -34,36 +35,24 @@ object CustomPreview {
   }
   
   @scala.inline
-  implicit class CustomPreviewOps[Self <: CustomPreview] (val x: Self) extends AnyVal {
+  implicit class CustomPreviewMutableBuilder[Self <: CustomPreview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindRemoteObjectFunctionId(value: RemoteObjectId): Self = StObject.set(x, "bindRemoteObjectFunctionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigObjectId(value: RemoteObjectId): Self = StObject.set(x, "configObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigObjectIdUndefined: Self = StObject.set(x, "configObjectId", js.undefined)
     
     @scala.inline
-    def setBindRemoteObjectFunctionId(value: RemoteObjectId): Self = this.set("bindRemoteObjectFunctionId", value.asInstanceOf[js.Any])
+    def setFormatterObjectId(value: RemoteObjectId): Self = StObject.set(x, "formatterObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatterObjectId(value: RemoteObjectId): Self = this.set("formatterObjectId", value.asInstanceOf[js.Any])
+    def setHasBody(value: Boolean): Self = StObject.set(x, "hasBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasBody(value: Boolean): Self = this.set("hasBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConfigObjectId(value: RemoteObjectId): Self = this.set("configObjectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigObjectId: Self = this.set("configObjectId", js.undefined)
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MixedInstancesPolicy extends js.Object {
+trait MixedInstancesPolicy extends StObject {
   
   /**
     * Specifies the instances distribution. If not provided, the value for each parameter in InstancesDistribution uses a default value.
@@ -26,30 +27,18 @@ object MixedInstancesPolicy {
   }
   
   @scala.inline
-  implicit class MixedInstancesPolicyOps[Self <: MixedInstancesPolicy] (val x: Self) extends AnyVal {
+  implicit class MixedInstancesPolicyMutableBuilder[Self <: MixedInstancesPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstancesDistribution(value: InstancesDistribution): Self = StObject.set(x, "InstancesDistribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstancesDistributionUndefined: Self = StObject.set(x, "InstancesDistribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesDistribution(value: InstancesDistribution): Self = this.set("InstancesDistribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstancesDistribution: Self = this.set("InstancesDistribution", js.undefined)
-    
-    @scala.inline
-    def setLaunchTemplate(value: LaunchTemplate): Self = this.set("LaunchTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchTemplate: Self = this.set("LaunchTemplate", js.undefined)
+    def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
 @js.native
-trait SjclCipherParams extends js.Object {
+trait SjclCipherParams extends StObject {
   
   var adata: js.UndefOr[String] = js.native
   
@@ -31,60 +32,48 @@ object SjclCipherParams {
   }
   
   @scala.inline
-  implicit class SjclCipherParamsOps[Self <: SjclCipherParams] (val x: Self) extends AnyVal {
+  implicit class SjclCipherParamsMutableBuilder[Self <: SjclCipherParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdata(value: String): Self = StObject.set(x, "adata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdataUndefined: Self = StObject.set(x, "adata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdata(value: String): Self = this.set("adata", value.asInstanceOf[js.Any])
+    def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
     
     @scala.inline
-    def deleteAdata: Self = this.set("adata", js.undefined)
+    def setIter(value: Double): Self = StObject.set(x, "iter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCipher(value: String): Self = this.set("cipher", value.asInstanceOf[js.Any])
+    def setIterUndefined: Self = StObject.set(x, "iter", js.undefined)
     
     @scala.inline
-    def deleteCipher: Self = this.set("cipher", js.undefined)
+    def setKs(value: Double): Self = StObject.set(x, "ks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIter(value: Double): Self = this.set("iter", value.asInstanceOf[js.Any])
+    def setKsUndefined: Self = StObject.set(x, "ks", js.undefined)
     
     @scala.inline
-    def deleteIter: Self = this.set("iter", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKs(value: Double): Self = this.set("ks", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteKs: Self = this.set("ks", js.undefined)
+    def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTs(value: Double): Self = this.set("ts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTs: Self = this.set("ts", js.undefined)
-    
-    @scala.inline
-    def setV(value: Double): Self = this.set("v", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteV: Self = this.set("v", js.undefined)
+    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

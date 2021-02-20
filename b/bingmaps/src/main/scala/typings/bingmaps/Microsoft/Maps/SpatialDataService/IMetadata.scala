@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMetadata extends js.Object {
+trait IMetadata extends StObject {
   
   /** The approximate total surface area (in square kilometers) covered by all the polygons that comprise this entity. */
   var AreaSqKm: String = js.native
@@ -40,33 +41,21 @@ object IMetadata {
   }
   
   @scala.inline
-  implicit class IMetadataOps[Self <: IMetadata] (val x: Self) extends AnyVal {
+  implicit class IMetadataMutableBuilder[Self <: IMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreaSqKm(value: String): Self = StObject.set(x, "AreaSqKm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBestMapViewBox(value: String): Self = StObject.set(x, "BestMapViewBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOfficialCulture(value: String): Self = StObject.set(x, "OfficialCulture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaSqKm(value: String): Self = this.set("AreaSqKm", value.asInstanceOf[js.Any])
+    def setPopulationClass(value: String): Self = StObject.set(x, "PopulationClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBestMapViewBox(value: String): Self = this.set("BestMapViewBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOfficialCulture(value: String): Self = this.set("OfficialCulture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopulationClass(value: String): Self = this.set("PopulationClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegionalCulture(value: String): Self = this.set("RegionalCulture", value.asInstanceOf[js.Any])
+    def setRegionalCulture(value: String): Self = StObject.set(x, "RegionalCulture", value.asInstanceOf[js.Any])
   }
 }

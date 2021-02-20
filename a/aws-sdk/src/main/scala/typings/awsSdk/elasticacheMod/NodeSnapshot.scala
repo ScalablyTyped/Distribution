@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeSnapshot extends js.Object {
+trait NodeSnapshot extends StObject {
   
   /**
     * A unique identifier for the source cluster.
@@ -51,60 +52,48 @@ object NodeSnapshot {
   }
   
   @scala.inline
-  implicit class NodeSnapshotOps[Self <: NodeSnapshot] (val x: Self) extends AnyVal {
+  implicit class NodeSnapshotMutableBuilder[Self <: NodeSnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheNodeCreateTime(value: TStamp): Self = StObject.set(x, "CacheNodeCreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    def setCacheNodeCreateTimeUndefined: Self = StObject.set(x, "CacheNodeCreateTime", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    def setCacheNodeId(value: String): Self = StObject.set(x, "CacheNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheNodeCreateTime(value: TStamp): Self = this.set("CacheNodeCreateTime", value.asInstanceOf[js.Any])
+    def setCacheNodeIdUndefined: Self = StObject.set(x, "CacheNodeId", js.undefined)
     
     @scala.inline
-    def deleteCacheNodeCreateTime: Self = this.set("CacheNodeCreateTime", js.undefined)
+    def setCacheSize(value: String): Self = StObject.set(x, "CacheSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheNodeId(value: String): Self = this.set("CacheNodeId", value.asInstanceOf[js.Any])
+    def setCacheSizeUndefined: Self = StObject.set(x, "CacheSize", js.undefined)
     
     @scala.inline
-    def deleteCacheNodeId: Self = this.set("CacheNodeId", js.undefined)
+    def setNodeGroupConfiguration(value: NodeGroupConfiguration): Self = StObject.set(x, "NodeGroupConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheSize(value: String): Self = this.set("CacheSize", value.asInstanceOf[js.Any])
+    def setNodeGroupConfigurationUndefined: Self = StObject.set(x, "NodeGroupConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCacheSize: Self = this.set("CacheSize", js.undefined)
+    def setNodeGroupId(value: String): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeGroupConfiguration(value: NodeGroupConfiguration): Self = this.set("NodeGroupConfiguration", value.asInstanceOf[js.Any])
+    def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
     
     @scala.inline
-    def deleteNodeGroupConfiguration: Self = this.set("NodeGroupConfiguration", js.undefined)
+    def setSnapshotCreateTime(value: TStamp): Self = StObject.set(x, "SnapshotCreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeGroupId(value: String): Self = this.set("NodeGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeGroupId: Self = this.set("NodeGroupId", js.undefined)
-    
-    @scala.inline
-    def setSnapshotCreateTime(value: TStamp): Self = this.set("SnapshotCreateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotCreateTime: Self = this.set("SnapshotCreateTime", js.undefined)
+    def setSnapshotCreateTimeUndefined: Self = StObject.set(x, "SnapshotCreateTime", js.undefined)
   }
 }

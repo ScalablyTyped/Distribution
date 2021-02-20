@@ -1,5 +1,6 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * controls Firebase Hosting serving behavior
   */
 @js.native
-trait SchemaSiteConfig extends js.Object {
+trait SchemaSiteConfig extends StObject {
   
   /**
     * The number of FINALIZED versions that will be held for a site before
@@ -29,24 +30,12 @@ object SchemaSiteConfig {
   }
   
   @scala.inline
-  implicit class SchemaSiteConfigOps[Self <: SchemaSiteConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaSiteConfigMutableBuilder[Self <: SchemaSiteConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxVersions(value: String): Self = StObject.set(x, "maxVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxVersions(value: String): Self = this.set("maxVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxVersions: Self = this.set("maxVersions", js.undefined)
+    def setMaxVersionsUndefined: Self = StObject.set(x, "maxVersions", js.undefined)
   }
 }

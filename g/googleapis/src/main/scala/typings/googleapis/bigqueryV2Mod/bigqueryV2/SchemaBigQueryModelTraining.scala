@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaBigQueryModelTraining extends js.Object {
+trait SchemaBigQueryModelTraining extends StObject {
   
   /**
     * [Output-only, Beta] Index of current ML training iteration. Updated
@@ -30,30 +31,18 @@ object SchemaBigQueryModelTraining {
   }
   
   @scala.inline
-  implicit class SchemaBigQueryModelTrainingOps[Self <: SchemaBigQueryModelTraining] (val x: Self) extends AnyVal {
+  implicit class SchemaBigQueryModelTrainingMutableBuilder[Self <: SchemaBigQueryModelTraining] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpectedTotalIterations(value: String): Self = StObject.set(x, "expectedTotalIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentIteration(value: Double): Self = this.set("currentIteration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrentIteration: Self = this.set("currentIteration", js.undefined)
-    
-    @scala.inline
-    def setExpectedTotalIterations(value: String): Self = this.set("expectedTotalIterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpectedTotalIterations: Self = this.set("expectedTotalIterations", js.undefined)
+    def setExpectedTotalIterationsUndefined: Self = StObject.set(x, "expectedTotalIterations", js.undefined)
   }
 }

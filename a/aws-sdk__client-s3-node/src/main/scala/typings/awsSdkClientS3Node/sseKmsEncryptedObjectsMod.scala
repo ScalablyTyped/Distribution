@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_SseKmsEncryptedObjects", JSImport.Namespace)
-@js.native
-object sseKmsEncryptedObjectsMod extends js.Object {
+object sseKmsEncryptedObjectsMod {
   
-  @JSName("_SseKmsEncryptedObjects")
+  @JSImport("@aws-sdk/client-s3-node/model/_SseKmsEncryptedObjects", "_SseKmsEncryptedObjects")
+  @js.native
   val SseKmsEncryptedObjects: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

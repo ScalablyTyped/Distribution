@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiskLayoutData extends js.Object {
+trait DiskLayoutData extends StObject {
   
   var bytesPerSector: Double = js.native
   
@@ -68,72 +69,60 @@ object DiskLayoutData {
   }
   
   @scala.inline
-  implicit class DiskLayoutDataOps[Self <: DiskLayoutData] (val x: Self) extends AnyVal {
+  implicit class DiskLayoutDataMutableBuilder[Self <: DiskLayoutData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesPerSector(value: Double): Self = StObject.set(x, "bytesPerSector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirmwareRevision(value: String): Self = StObject.set(x, "firmwareRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesPerSector(value: Double): Self = this.set("bytesPerSector", value.asInstanceOf[js.Any])
+    def setInterfaceType(value: String): Self = StObject.set(x, "interfaceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: String): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirmwareRevision(value: String): Self = this.set("firmwareRevision", value.asInstanceOf[js.Any])
+    def setSectorsPerTrack(value: Double): Self = StObject.set(x, "sectorsPerTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterfaceType(value: String): Self = this.set("interfaceType", value.asInstanceOf[js.Any])
+    def setSerialNum(value: String): Self = StObject.set(x, "serialNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSectorsPerTrack(value: Double): Self = this.set("sectorsPerTrack", value.asInstanceOf[js.Any])
+    def setSmartData(value: SmartData): Self = StObject.set(x, "smartData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNum(value: String): Self = this.set("serialNum", value.asInstanceOf[js.Any])
+    def setSmartDataUndefined: Self = StObject.set(x, "smartData", js.undefined)
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSmartStatus(value: String): Self = StObject.set(x, "smartStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmartStatus(value: String): Self = this.set("smartStatus", value.asInstanceOf[js.Any])
+    def setTotalCylinders(value: Double): Self = StObject.set(x, "totalCylinders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalCylinders(value: Double): Self = this.set("totalCylinders", value.asInstanceOf[js.Any])
+    def setTotalHeads(value: Double): Self = StObject.set(x, "totalHeads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalHeads(value: Double): Self = this.set("totalHeads", value.asInstanceOf[js.Any])
+    def setTotalSectors(value: Double): Self = StObject.set(x, "totalSectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalSectors(value: Double): Self = this.set("totalSectors", value.asInstanceOf[js.Any])
+    def setTotalTracks(value: Double): Self = StObject.set(x, "totalTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalTracks(value: Double): Self = this.set("totalTracks", value.asInstanceOf[js.Any])
+    def setTracksPerCylinder(value: Double): Self = StObject.set(x, "tracksPerCylinder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracksPerCylinder(value: Double): Self = this.set("tracksPerCylinder", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVendor(value: String): Self = this.set("vendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmartData(value: SmartData): Self = this.set("smartData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmartData: Self = this.set("smartData", js.undefined)
+    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
   }
 }

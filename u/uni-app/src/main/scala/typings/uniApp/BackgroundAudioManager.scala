@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundAudioManager extends js.Object {
+trait BackgroundAudioManager extends StObject {
   
   /**
     * 音频缓冲的时间点，仅保证当前播放时间点到此时间点内容已缓冲

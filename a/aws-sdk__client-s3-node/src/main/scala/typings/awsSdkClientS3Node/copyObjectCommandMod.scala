@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesCopyObjectInputMod.CopyObjectInput
 import typings.awsSdkClientS3Node.typesCopyObjectOutputMod.CopyObjectOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/CopyObjectCommand", JSImport.Namespace)
-@js.native
-object copyObjectCommandMod extends js.Object {
+object copyObjectCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/CopyObjectCommand", "CopyObjectCommand")
   @js.native
   class CopyObjectCommand protected () extends Command[
           InputTypesUnion, 

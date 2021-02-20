@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceRequirements extends js.Object {
+trait ResourceRequirements extends StObject {
   
   var Limits: js.UndefOr[ResourceLimits] = js.native
   
@@ -20,30 +21,18 @@ object ResourceRequirements {
   }
   
   @scala.inline
-  implicit class ResourceRequirementsOps[Self <: ResourceRequirements] (val x: Self) extends AnyVal {
+  implicit class ResourceRequirementsMutableBuilder[Self <: ResourceRequirements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimits(value: ResourceLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservations(value: Resources): Self = StObject.set(x, "Reservations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimits(value: ResourceLimits): Self = this.set("Limits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimits: Self = this.set("Limits", js.undefined)
-    
-    @scala.inline
-    def setReservations(value: Resources): Self = this.set("Reservations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservations: Self = this.set("Reservations", js.undefined)
+    def setReservationsUndefined: Self = StObject.set(x, "Reservations", js.undefined)
   }
 }

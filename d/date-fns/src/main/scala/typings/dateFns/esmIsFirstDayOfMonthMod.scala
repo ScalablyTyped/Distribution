@@ -1,18 +1,20 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/isFirstDayOfMonth", JSImport.Namespace)
-@js.native
-object esmIsFirstDayOfMonthMod extends js.Object {
+object esmIsFirstDayOfMonthMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/esm/isFirstDayOfMonth", JSImport.Default)
+    @js.native
     def apply(date: Double): Boolean = js.native
+    @JSImport("date-fns/esm/isFirstDayOfMonth", JSImport.Default)
+    @js.native
     def apply(date: Date): Boolean = js.native
   }
 }

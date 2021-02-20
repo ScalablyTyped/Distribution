@@ -1,18 +1,21 @@
 package typings.diagnosticChannel
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("diagnostic-channel/dist/src/patchRequire", JSImport.Namespace)
-@js.native
-object patchRequireMod extends js.Object {
+object patchRequireMod {
   
+  @JSImport("diagnostic-channel/dist/src/patchRequire", "makePatchingRequire")
+  @js.native
   def makePatchingRequire(knownPatches: IModulePatchMap): js.Function1[/* moduleId */ String, _] = js.native
   
+  type IModulePatchMap = StringDictionary[js.Array[IModulePatcher]]
+  
   @js.native
-  trait IModulePatcher extends js.Object {
+  trait IModulePatcher extends StObject {
     
     def patch(module: js.Any, path: String): js.Any = js.native
     @JSName("patch")
@@ -20,8 +23,6 @@ object patchRequireMod extends js.Object {
     
     var versionSpecifier: String = js.native
   }
-  
-  type IModulePatchMap = StringDictionary[js.Array[IModulePatcher]]
   
   type PatchFunction = js.Function2[/* module */ js.Any, /* path */ String, js.Any]
 }

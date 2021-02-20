@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.drawing.framework.XResource
 import typings.activexLibreoffice.com_.sun.star.drawing.framework.XResourceId
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,57 +120,45 @@ object XSlideSorterBase {
   }
   
   @scala.inline
-  implicit class XSlideSorterBaseOps[Self <: XSlideSorterBase] (val x: Self) extends AnyVal {
+  implicit class XSlideSorterBaseMutableBuilder[Self <: XSlideSorterBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentSlides(value: XIndexAccess): Self = StObject.set(x, "DocumentSlides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlightColor(value: Color): Self = StObject.set(x, "HighlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("BackgroundColor", value.asInstanceOf[js.Any])
+    def setIsCenterSelection(value: Boolean): Self = StObject.set(x, "IsCenterSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentSlides(value: XIndexAccess): Self = this.set("DocumentSlides", value.asInstanceOf[js.Any])
+    def setIsHighlightCurrentSlide(value: Boolean): Self = StObject.set(x, "IsHighlightCurrentSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightColor(value: Color): Self = this.set("HighlightColor", value.asInstanceOf[js.Any])
+    def setIsOrientationVertical(value: Boolean): Self = StObject.set(x, "IsOrientationVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCenterSelection(value: Boolean): Self = this.set("IsCenterSelection", value.asInstanceOf[js.Any])
+    def setIsShowFocus(value: Boolean): Self = StObject.set(x, "IsShowFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHighlightCurrentSlide(value: Boolean): Self = this.set("IsHighlightCurrentSlide", value.asInstanceOf[js.Any])
+    def setIsShowSelection(value: Boolean): Self = StObject.set(x, "IsShowSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOrientationVertical(value: Boolean): Self = this.set("IsOrientationVertical", value.asInstanceOf[js.Any])
+    def setIsSmoothScrolling(value: Boolean): Self = StObject.set(x, "IsSmoothScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsShowFocus(value: Boolean): Self = this.set("IsShowFocus", value.asInstanceOf[js.Any])
+    def setIsSuspendPreviewUpdatesDuringFullScreenPresentation(value: Boolean): Self = StObject.set(x, "IsSuspendPreviewUpdatesDuringFullScreenPresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsShowSelection(value: Boolean): Self = this.set("IsShowSelection", value.asInstanceOf[js.Any])
+    def setIsUIReadOnly(value: Boolean): Self = StObject.set(x, "IsUIReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSmoothScrolling(value: Boolean): Self = this.set("IsSmoothScrolling", value.asInstanceOf[js.Any])
+    def setSelectionColor(value: Color): Self = StObject.set(x, "SelectionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSuspendPreviewUpdatesDuringFullScreenPresentation(value: Boolean): Self = this.set("IsSuspendPreviewUpdatesDuringFullScreenPresentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsUIReadOnly(value: Boolean): Self = this.set("IsUIReadOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionColor(value: Color): Self = this.set("SelectionColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextColor(value: Color): Self = this.set("TextColor", value.asInstanceOf[js.Any])
+    def setTextColor(value: Color): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
   }
 }

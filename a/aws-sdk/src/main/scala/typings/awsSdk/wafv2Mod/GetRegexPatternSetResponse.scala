@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRegexPatternSetResponse extends js.Object {
+trait GetRegexPatternSetResponse extends StObject {
   
   /**
     * A token used for optimistic locking. AWS WAF returns a token to your get and list requests, to mark the state of the entity at the time of the request. To make changes to the entity associated with the token, you provide the token to operations like update and delete. AWS WAF uses the token to ensure that no changes have been made to the entity since you last retrieved it. If a change has been made, the update fails with a WAFOptimisticLockException. If this happens, perform another get, and use the new token returned by that operation. 
@@ -26,30 +27,18 @@ object GetRegexPatternSetResponse {
   }
   
   @scala.inline
-  implicit class GetRegexPatternSetResponseOps[Self <: GetRegexPatternSetResponse] (val x: Self) extends AnyVal {
+  implicit class GetRegexPatternSetResponseMutableBuilder[Self <: GetRegexPatternSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLockTokenUndefined: Self = StObject.set(x, "LockToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegexPatternSet(value: RegexPatternSet): Self = StObject.set(x, "RegexPatternSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockToken(value: LockToken): Self = this.set("LockToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLockToken: Self = this.set("LockToken", js.undefined)
-    
-    @scala.inline
-    def setRegexPatternSet(value: RegexPatternSet): Self = this.set("RegexPatternSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegexPatternSet: Self = this.set("RegexPatternSet", js.undefined)
+    def setRegexPatternSetUndefined: Self = StObject.set(x, "RegexPatternSet", js.undefined)
   }
 }

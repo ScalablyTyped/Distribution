@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait List extends js.Object {
+trait List extends StObject {
   
   /** The ID of the list. */
   var listId: js.UndefOr[String] = js.native
@@ -30,34 +31,22 @@ object List {
   }
   
   @scala.inline
-  implicit class ListOps[Self <: List] (val x: Self) extends AnyVal {
+  implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setListId(value: String): Self = this.set("listId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListId: Self = this.set("listId", js.undefined)
+    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
     @scala.inline
     def setNestingLevel(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.NestingLevel}
       */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List with TopLevel[js.Any]
-    ): Self = this.set("nestingLevel", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNestingLevel: Self = this.set("nestingLevel", js.undefined)
+    def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,16 +42,18 @@ class Batch () extends IBatch {
   var transactions_Batch: js.Array[ITransaction] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "Batch")
-@js.native
-object Batch extends js.Object {
+object Batch {
   
   /**
     * Creates a new Batch instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Batch instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "Batch.create")
+  @js.native
   def create(): Batch = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Batch.create")
+  @js.native
   def create(properties: IBatch): Batch = js.native
   
   /**
@@ -61,9 +64,17 @@ object Batch extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "Batch.decode")
+  @js.native
   def decode(reader: Reader): Batch = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Batch.decode")
+  @js.native
   def decode(reader: Reader, length: Double): Batch = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Batch.decode")
+  @js.native
   def decode(reader: Uint8Array): Batch = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Batch.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): Batch = js.native
   
   /**
@@ -73,7 +84,11 @@ object Batch extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "Batch.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): Batch = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Batch.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): Batch = js.native
   
   /**
@@ -82,7 +97,11 @@ object Batch extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "Batch.encode")
+  @js.native
   def encode(message: IBatch): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Batch.encode")
+  @js.native
   def encode(message: IBatch, writer: Writer): Writer = js.native
   
   /**
@@ -91,7 +110,11 @@ object Batch extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "Batch.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IBatch): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Batch.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IBatch, writer: Writer): Writer = js.native
   
   /**
@@ -99,6 +122,8 @@ object Batch extends js.Object {
     * @param object Plain object
     * @returns Batch
     */
+  @JSImport("sawtooth-sdk/protobuf", "Batch.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): Batch = js.native
   
   /**
@@ -107,7 +132,11 @@ object Batch extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "Batch.toObject")
+  @js.native
   def toObject(message: Batch): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Batch.toObject")
+  @js.native
   def toObject(message: Batch, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -115,5 +144,7 @@ object Batch extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "Batch.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

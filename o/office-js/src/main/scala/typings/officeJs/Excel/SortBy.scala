@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SortBy extends js.Object
+sealed trait SortBy extends StObject
 /**
   *
   * Represents the sort direction.
@@ -14,7 +15,7 @@ sealed trait SortBy extends js.Object
   */
 @JSGlobal("Excel.SortBy")
 @js.native
-object SortBy extends js.Object {
+object SortBy extends StObject {
   
   /**
     * Ascending sort. Smallest to largest or A to Z.

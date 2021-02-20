@@ -2,6 +2,7 @@ package typings.box2d.Box2D.Dynamics.Joints
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,48 +92,36 @@ object b2PulleyJointDef {
   }
   
   @scala.inline
-  implicit class b2PulleyJointDefOps[Self <: b2PulleyJointDef] (val x: Self) extends AnyVal {
+  implicit class b2PulleyJointDefMutableBuilder[Self <: b2PulleyJointDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroundAnchorA(value: b2Vec2): Self = StObject.set(x, "groundAnchorA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroundAnchorB(value: b2Vec2): Self = StObject.set(x, "groundAnchorB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialize(value: (b2Body, b2Body, b2Vec2, b2Vec2, b2Vec2, b2Vec2) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setInitialize(value: (b2Body, b2Body, b2Vec2, b2Vec2, b2Vec2, b2Vec2) => Unit): Self = this.set("Initialize", js.Any.fromFunction6(value))
+    def setLengthA(value: Double): Self = StObject.set(x, "lengthA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundAnchorA(value: b2Vec2): Self = this.set("groundAnchorA", value.asInstanceOf[js.Any])
+    def setLengthB(value: Double): Self = StObject.set(x, "lengthB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundAnchorB(value: b2Vec2): Self = this.set("groundAnchorB", value.asInstanceOf[js.Any])
+    def setLocalAnchorA(value: b2Vec2): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthA(value: Double): Self = this.set("lengthA", value.asInstanceOf[js.Any])
+    def setLocalAnchorB(value: b2Vec2): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthB(value: Double): Self = this.set("lengthB", value.asInstanceOf[js.Any])
+    def setMaxLengthA(value: Double): Self = StObject.set(x, "maxLengthA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAnchorA(value: b2Vec2): Self = this.set("localAnchorA", value.asInstanceOf[js.Any])
+    def setMaxLengthB(value: Double): Self = StObject.set(x, "maxLengthB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAnchorB(value: b2Vec2): Self = this.set("localAnchorB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxLengthA(value: Double): Self = this.set("maxLengthA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxLengthB(value: Double): Self = this.set("maxLengthB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRatio(value: Double): Self = this.set("ratio", value.asInstanceOf[js.Any])
+    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
   }
 }

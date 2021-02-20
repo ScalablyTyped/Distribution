@@ -17,15 +17,15 @@ import typings.frctlFractal.frctlFractalStrings.static
 import typings.frctlFractal.frctlFractalStrings.staticDotmount
 import typings.frctlFractal.frctlFractalStrings.styles
 import typings.frctlFractal.frctlFractalStrings.version
-import typings.node.eventsMod.EventEmitter
+import typings.frctlFractal.mod.fractal.core.mixins.ConfigurableEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.frctlFractal.mod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @JSImport("@frctl/fractal", "WebTheme")
+@JSImport("@frctl/fractal", "WebTheme")
 @js.native
-class WebTheme protected () extends EventEmitter {
+class WebTheme protected () extends ConfigurableEmitter[WebThemeOptions] {
   def this(viewPaths: js.Array[String]) = this()
   def this(viewPaths: js.Array[String], options: WebThemeOptions) = this()
   
@@ -38,17 +38,7 @@ class WebTheme protected () extends EventEmitter {
   
   def addStatic(path: String, mount: String): Unit = js.native
   
-  def config(): WebThemeOptions = js.native
-  def config(config: WebThemeOptions): this.type = js.native
-  
   def errorView(): String = js.native
-  
-  def get[K /* <: /* keyof T */ String */, V](path: K): js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
-  ] = js.native
-  def get[K /* <: /* keyof T */ String */, V](path: K, defaultValue: V): js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
-  ] = js.native
   
   @JSName("getOption")
   def getOption_favicon(key: favicon): js.UndefOr[String] = js.native
@@ -87,12 +77,6 @@ class WebTheme protected () extends EventEmitter {
   def resolvers(): js.Any = js.native
   
   def routes(): js.Array[_] = js.native
-  
-  def set[K /* <: /* keyof T */ String */](path: K): this.type = js.native
-  def set[K /* <: /* keyof T */ String */](
-    path: K,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-  ): this.type = js.native
   
   def setErrorView(view: String): Unit = js.native
   

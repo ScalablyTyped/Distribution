@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIap.gapi.client.iap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListIdentityAwareProxyClientsResponse extends js.Object {
+trait ListIdentityAwareProxyClientsResponse extends StObject {
   
   /** Clients existing in the brand. */
   var identityAwareProxyClients: js.UndefOr[js.Array[IdentityAwareProxyClient]] = js.native
@@ -22,33 +23,21 @@ object ListIdentityAwareProxyClientsResponse {
   }
   
   @scala.inline
-  implicit class ListIdentityAwareProxyClientsResponseOps[Self <: ListIdentityAwareProxyClientsResponse] (val x: Self) extends AnyVal {
+  implicit class ListIdentityAwareProxyClientsResponseMutableBuilder[Self <: ListIdentityAwareProxyClientsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityAwareProxyClients(value: js.Array[IdentityAwareProxyClient]): Self = StObject.set(x, "identityAwareProxyClients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityAwareProxyClientsUndefined: Self = StObject.set(x, "identityAwareProxyClients", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityAwareProxyClientsVarargs(value: IdentityAwareProxyClient*): Self = StObject.set(x, "identityAwareProxyClients", js.Array(value :_*))
     
     @scala.inline
-    def setIdentityAwareProxyClientsVarargs(value: IdentityAwareProxyClient*): Self = this.set("identityAwareProxyClients", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityAwareProxyClients(value: js.Array[IdentityAwareProxyClient]): Self = this.set("identityAwareProxyClients", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityAwareProxyClients: Self = this.set("identityAwareProxyClients", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

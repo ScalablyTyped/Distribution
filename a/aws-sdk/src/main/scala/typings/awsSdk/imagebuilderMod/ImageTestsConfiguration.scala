@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageTestsConfiguration extends js.Object {
+trait ImageTestsConfiguration extends StObject {
   
   /**
     * Defines if tests should be executed when building this image.
@@ -26,30 +27,18 @@ object ImageTestsConfiguration {
   }
   
   @scala.inline
-  implicit class ImageTestsConfigurationOps[Self <: ImageTestsConfiguration] (val x: Self) extends AnyVal {
+  implicit class ImageTestsConfigurationMutableBuilder[Self <: ImageTestsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageTestsEnabled(value: NullableBoolean): Self = StObject.set(x, "imageTestsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageTestsEnabledUndefined: Self = StObject.set(x, "imageTestsEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeoutMinutes(value: ImageTestsTimeoutMinutes): Self = StObject.set(x, "timeoutMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageTestsEnabled(value: NullableBoolean): Self = this.set("imageTestsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageTestsEnabled: Self = this.set("imageTestsEnabled", js.undefined)
-    
-    @scala.inline
-    def setTimeoutMinutes(value: ImageTestsTimeoutMinutes): Self = this.set("timeoutMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutMinutes: Self = this.set("timeoutMinutes", js.undefined)
+    def setTimeoutMinutesUndefined: Self = StObject.set(x, "timeoutMinutes", js.undefined)
   }
 }

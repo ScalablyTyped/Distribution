@@ -1,6 +1,7 @@
 package typings.saucelabs.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,36 +29,24 @@ object Active {
   }
   
   @scala.inline
-  implicit class ActiveOps[Self <: Active] (val x: Self) extends AnyVal {
+  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseline(value: Dictkey): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setBaseline_url(value: String): Self = StObject.set(x, "baseline_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseline_url(value: String): Self = this.set("baseline_url", value.asInstanceOf[js.Any])
+    def setRegime_end(value: Double): Self = StObject.set(x, "regime_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegime_end(value: Double): Self = this.set("regime_end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegime_start(value: Double): Self = this.set("regime_start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBaseline(value: Dictkey): Self = this.set("baseline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBaseline: Self = this.set("baseline", js.undefined)
+    def setRegime_start(value: Double): Self = StObject.set(x, "regime_start", value.asInstanceOf[js.Any])
   }
 }

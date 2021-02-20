@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedirectAllRequestsTo extends js.Object {
+trait RedirectAllRequestsTo extends StObject {
   
   /**
     * Name of the host where requests are redirected.
@@ -26,27 +27,15 @@ object RedirectAllRequestsTo {
   }
   
   @scala.inline
-  implicit class RedirectAllRequestsToOps[Self <: RedirectAllRequestsTo] (val x: Self) extends AnyVal {
+  implicit class RedirectAllRequestsToMutableBuilder[Self <: RedirectAllRequestsTo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostName(value: HostName): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHostName(value: HostName): Self = this.set("HostName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: Protocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
   }
 }

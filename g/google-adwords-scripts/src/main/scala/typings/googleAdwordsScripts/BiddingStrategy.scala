@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +23,6 @@ trait BiddingStrategy extends hasStats {
   
   def shoppingAdGroups(): AdWordsSelector[AdWordsEntity] = js.native
   
-   // TODO: ShoppingAdGroup
+  // TODO: ShoppingAdGroup
   def shoppingCampaigns(): AdWordsSelector[AdWordsEntity] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the terminal's set of buffers.
   */
 @js.native
-trait IBufferNamespace extends js.Object {
+trait IBufferNamespace extends StObject {
   
   /**
     * The active buffer, this will either be the normal or alternate buffers.

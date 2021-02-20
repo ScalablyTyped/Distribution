@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lags extends js.Object {
+trait Lags extends StObject {
   
   /**
     * The LAGs.
@@ -21,27 +22,15 @@ object Lags {
   }
   
   @scala.inline
-  implicit class LagsOps[Self <: Lags] (val x: Self) extends AnyVal {
+  implicit class LagsMutableBuilder[Self <: Lags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLags(value: LagList): Self = StObject.set(x, "lags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLagsUndefined: Self = StObject.set(x, "lags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLagsVarargs(value: Lag*): Self = this.set("lags", js.Array(value :_*))
-    
-    @scala.inline
-    def setLags(value: LagList): Self = this.set("lags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLags: Self = this.set("lags", js.undefined)
+    def setLagsVarargs(value: Lag*): Self = StObject.set(x, "lags", js.Array(value :_*))
   }
 }

@@ -3,13 +3,14 @@ package typings.tuyaPanelKit.anon
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.tuyaPanelKit.nativeTypesMod.ServerContainerRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/native/ServerContext.ServerContextType & {  children :react.react.ReactNode} & react.react.RefAttributes<tuya-panel-kit.tuya-panel-kit/@react-navigation/native/types.ServerContainerRef> */
 @js.native
-trait ServerContextTypechildren extends js.Object {
+trait ServerContextTypechildren extends StObject {
   
   var children: ReactNode = js.native
   
@@ -28,51 +29,39 @@ object ServerContextTypechildren {
   }
   
   @scala.inline
-  implicit class ServerContextTypechildrenOps[Self <: ServerContextTypechildren] (val x: Self) extends AnyVal {
+  implicit class ServerContextTypechildrenMutableBuilder[Self <: ServerContextTypechildren] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setKeyNull: Self = StObject.set(x, "key", null)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setKey(value: typings.react.mod.Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLocation(value: Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setKeyNull: Self = this.set("key", null)
+    def setRef(value: Ref[ServerContainerRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Pathname): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setRefFunction1(value: /* instance */ ServerContainerRef | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setRefNull: Self = StObject.set(x, "ref", null)
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ ServerContainerRef | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRef(value: Ref[ServerContainerRef]): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
-    
-    @scala.inline
-    def setRefNull: Self = this.set("ref", null)
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.angularCommon.httpHttpMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/common/http/http", "HttpHeaders")
 @js.native
 /**  Constructs a new HTTP header object with the given values.*/
-class HttpHeaders () extends js.Object {
+class HttpHeaders () extends StObject {
   def this(headers: String) = this()
   def this(headers: StringDictionary[String | js.Array[String]]) = this()
   

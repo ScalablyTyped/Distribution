@@ -1,55 +1,65 @@
 package typings.materialChips
 
-import typings.materialChips.adapterMod.MDCChipSetAdapter
-import typings.materialChips.anon.CHIPSELECTOR
-import typings.materialChips.anon.CHOICE
 import typings.materialChips.anon.PartialMDCChipSetAdapter
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/chips/chip-set/index", JSImport.Namespace)
-@js.native
-object indexMod extends js.Object {
+object indexMod {
   
+  @JSImport("@material/chips/chip-set/index", "MDCChipSet")
   @js.native
-  class MDCChipSet ()
-    extends typings.materialChips.componentMod.MDCChipSet
+  class MDCChipSet protected ()
+    extends typings.materialChips.componentMod.MDCChipSet {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: typings.materialChips.foundationMod.MDCChipSetFoundation, args: js.Any*) = this()
+  }
   /* static members */
-  @js.native
-  object MDCChipSet extends js.Object {
+  object MDCChipSet {
     
+    @JSImport("@material/chips/chip-set/index", "MDCChipSet.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialChips.componentMod.MDCChipSet = js.native
   }
   
+  @JSImport("@material/chips/chip-set/index", "MDCChipSetFoundation")
   @js.native
   class MDCChipSetFoundation ()
     extends typings.materialChips.foundationMod.MDCChipSetFoundation {
     def this(adapter: PartialMDCChipSetAdapter) = this()
   }
-  /* static members */
-  @js.native
-  object MDCChipSetFoundation extends js.Object {
+  
+  object chipSetCssClasses {
     
-    def cssClasses: CHOICE = js.native
+    @JSImport("@material/chips/chip-set/index", "chipSetCssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    def defaultAdapter: MDCChipSetAdapter = js.native
+    @JSImport("@material/chips/chip-set/index", "chipSetCssClasses.CHOICE")
+    @js.native
+    def CHOICE: String = js.native
+    @scala.inline
+    def CHOICE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHOICE")(x.asInstanceOf[js.Any])
     
-    def strings: CHIPSELECTOR = js.native
+    @JSImport("@material/chips/chip-set/index", "chipSetCssClasses.FILTER")
+    @js.native
+    def FILTER: String = js.native
+    @scala.inline
+    def FILTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILTER")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object chipSetCssClasses extends js.Object {
+  object chipSetStrings {
     
-    var CHOICE: String = js.native
+    @JSImport("@material/chips/chip-set/index", "chipSetStrings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var FILTER: String = js.native
-  }
-  
-  @js.native
-  object chipSetStrings extends js.Object {
-    
-    var CHIP_SELECTOR: String = js.native
+    @JSImport("@material/chips/chip-set/index", "chipSetStrings.CHIP_SELECTOR")
+    @js.native
+    def CHIP_SELECTOR: String = js.native
+    @scala.inline
+    def CHIP_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHIP_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

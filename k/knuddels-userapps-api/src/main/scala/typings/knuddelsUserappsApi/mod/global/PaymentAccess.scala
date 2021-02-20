@@ -2,6 +2,7 @@ package typings.knuddelsUserappsApi.mod.global
 
 import typings.knuddelsUserappsApi.anon.CustomMessage
 import typings.knuddelsUserappsApi.anon.NewKnuddelPayout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("PaymentAccess")
 @js.native
-class PaymentAccess () extends js.Object {
+class PaymentAccess () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/PaymentAccess.html#method_requestKnuddelBuyBonusInfos

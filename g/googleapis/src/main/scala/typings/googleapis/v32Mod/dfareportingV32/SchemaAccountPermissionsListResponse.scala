@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Account Permission List Response
   */
 @js.native
-trait SchemaAccountPermissionsListResponse extends js.Object {
+trait SchemaAccountPermissionsListResponse extends StObject {
   
   /**
     * Account permission collection.
@@ -30,33 +31,21 @@ object SchemaAccountPermissionsListResponse {
   }
   
   @scala.inline
-  implicit class SchemaAccountPermissionsListResponseOps[Self <: SchemaAccountPermissionsListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountPermissionsListResponseMutableBuilder[Self <: SchemaAccountPermissionsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountPermissions(value: js.Array[SchemaAccountPermission]): Self = StObject.set(x, "accountPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountPermissionsUndefined: Self = StObject.set(x, "accountPermissions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountPermissionsVarargs(value: SchemaAccountPermission*): Self = StObject.set(x, "accountPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setAccountPermissionsVarargs(value: SchemaAccountPermission*): Self = this.set("accountPermissions", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountPermissions(value: js.Array[SchemaAccountPermission]): Self = this.set("accountPermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountPermissions: Self = this.set("accountPermissions", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

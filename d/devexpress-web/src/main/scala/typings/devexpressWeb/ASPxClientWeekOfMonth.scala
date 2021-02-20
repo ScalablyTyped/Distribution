@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains number of weeks in a month in which the event occurs.
   */
 @js.native
-trait ASPxClientWeekOfMonth extends js.Object {
+trait ASPxClientWeekOfMonth extends StObject {
   
   /**
     * The recurring event will occur once a month, on the specified day or days of the first week in the month.
@@ -49,36 +50,24 @@ object ASPxClientWeekOfMonth {
   }
   
   @scala.inline
-  implicit class ASPxClientWeekOfMonthOps[Self <: ASPxClientWeekOfMonth] (val x: Self) extends AnyVal {
+  implicit class ASPxClientWeekOfMonthMutableBuilder[Self <: ASPxClientWeekOfMonth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirst(value: Double): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFourth(value: Double): Self = StObject.set(x, "Fourth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLast(value: Double): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: Double): Self = this.set("First", value.asInstanceOf[js.Any])
+    def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFourth(value: Double): Self = this.set("Fourth", value.asInstanceOf[js.Any])
+    def setSecond(value: Double): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast(value: Double): Self = this.set("Last", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: Double): Self = this.set("None", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecond(value: Double): Self = this.set("Second", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThird(value: Double): Self = this.set("Third", value.asInstanceOf[js.Any])
+    def setThird(value: Double): Self = StObject.set(x, "Third", value.asInstanceOf[js.Any])
   }
 }

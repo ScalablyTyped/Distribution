@@ -1,15 +1,15 @@
 package typings.firebaseDatabase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/util/EventEmitter", JSImport.Namespace)
-@js.native
-object eventEmitterMod extends js.Object {
+object eventEmitterMod {
   
+  @JSImport("@firebase/database/dist/src/core/util/EventEmitter", "EventEmitter")
   @js.native
-  abstract class EventEmitter protected () extends js.Object {
+  abstract class EventEmitter protected () extends StObject {
     /**
       * @param {!Array.<string>} allowedEvents_
       */

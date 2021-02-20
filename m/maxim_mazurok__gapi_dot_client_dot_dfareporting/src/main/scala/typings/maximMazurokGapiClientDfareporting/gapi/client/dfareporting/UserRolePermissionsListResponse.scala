@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserRolePermissionsListResponse extends js.Object {
+trait UserRolePermissionsListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#userRolePermissionsListResponse". */
   var kind: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object UserRolePermissionsListResponse {
   }
   
   @scala.inline
-  implicit class UserRolePermissionsListResponseOps[Self <: UserRolePermissionsListResponse] (val x: Self) extends AnyVal {
+  implicit class UserRolePermissionsListResponseMutableBuilder[Self <: UserRolePermissionsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserRolePermissions(value: js.Array[UserRolePermission]): Self = StObject.set(x, "userRolePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setUserRolePermissionsUndefined: Self = StObject.set(x, "userRolePermissions", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setUserRolePermissionsVarargs(value: UserRolePermission*): Self = this.set("userRolePermissions", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserRolePermissions(value: js.Array[UserRolePermission]): Self = this.set("userRolePermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRolePermissions: Self = this.set("userRolePermissions", js.undefined)
+    def setUserRolePermissionsVarargs(value: UserRolePermission*): Self = StObject.set(x, "userRolePermissions", js.Array(value :_*))
   }
 }

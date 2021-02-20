@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryResult extends js.Object {
+trait QueryResult extends StObject {
   
   /**
     * Contains the facet results. A FacetResult contains the counts for each attribute key that was specified in the Facets input parameter.
@@ -36,48 +37,36 @@ object QueryResult {
   }
   
   @scala.inline
-  implicit class QueryResultOps[Self <: QueryResult] (val x: Self) extends AnyVal {
+  implicit class QueryResultMutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFacetResults(value: FacetResultList): Self = StObject.set(x, "FacetResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFacetResultsUndefined: Self = StObject.set(x, "FacetResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacetResultsVarargs(value: FacetResult*): Self = StObject.set(x, "FacetResults", js.Array(value :_*))
     
     @scala.inline
-    def setFacetResultsVarargs(value: FacetResult*): Self = this.set("FacetResults", js.Array(value :_*))
+    def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetResults(value: FacetResultList): Self = this.set("FacetResults", value.asInstanceOf[js.Any])
+    def setQueryIdUndefined: Self = StObject.set(x, "QueryId", js.undefined)
     
     @scala.inline
-    def deleteFacetResults: Self = this.set("FacetResults", js.undefined)
+    def setResultItems(value: QueryResultItemList): Self = StObject.set(x, "ResultItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryId(value: QueryId): Self = this.set("QueryId", value.asInstanceOf[js.Any])
+    def setResultItemsUndefined: Self = StObject.set(x, "ResultItems", js.undefined)
     
     @scala.inline
-    def deleteQueryId: Self = this.set("QueryId", js.undefined)
+    def setResultItemsVarargs(value: QueryResultItem*): Self = StObject.set(x, "ResultItems", js.Array(value :_*))
     
     @scala.inline
-    def setResultItemsVarargs(value: QueryResultItem*): Self = this.set("ResultItems", js.Array(value :_*))
+    def setTotalNumberOfResults(value: Integer): Self = StObject.set(x, "TotalNumberOfResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultItems(value: QueryResultItemList): Self = this.set("ResultItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultItems: Self = this.set("ResultItems", js.undefined)
-    
-    @scala.inline
-    def setTotalNumberOfResults(value: Integer): Self = this.set("TotalNumberOfResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalNumberOfResults: Self = this.set("TotalNumberOfResults", js.undefined)
+    def setTotalNumberOfResultsUndefined: Self = StObject.set(x, "TotalNumberOfResults", js.undefined)
   }
 }

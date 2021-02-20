@@ -1,11 +1,12 @@
 package typings.validator.mod.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsEmailOptions extends js.Object {
+trait IsEmailOptions extends StObject {
   
   /**
     * If `allow_display_name` is set to `true`, the validator will also match `Display Name <email-address>`.
@@ -66,60 +67,48 @@ object IsEmailOptions {
   }
   
   @scala.inline
-  implicit class IsEmailOptionsOps[Self <: IsEmailOptions] (val x: Self) extends AnyVal {
+  implicit class IsEmailOptionsMutableBuilder[Self <: IsEmailOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_display_name(value: Boolean): Self = StObject.set(x, "allow_display_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_display_nameUndefined: Self = StObject.set(x, "allow_display_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllow_ip_domain(value: Boolean): Self = StObject.set(x, "allow_ip_domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_display_name(value: Boolean): Self = this.set("allow_display_name", value.asInstanceOf[js.Any])
+    def setAllow_ip_domainUndefined: Self = StObject.set(x, "allow_ip_domain", js.undefined)
     
     @scala.inline
-    def deleteAllow_display_name: Self = this.set("allow_display_name", js.undefined)
+    def setAllow_utf8_local_part(value: Boolean): Self = StObject.set(x, "allow_utf8_local_part", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_ip_domain(value: Boolean): Self = this.set("allow_ip_domain", value.asInstanceOf[js.Any])
+    def setAllow_utf8_local_partUndefined: Self = StObject.set(x, "allow_utf8_local_part", js.undefined)
     
     @scala.inline
-    def deleteAllow_ip_domain: Self = this.set("allow_ip_domain", js.undefined)
+    def setDomain_specific_validation(value: Boolean): Self = StObject.set(x, "domain_specific_validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_utf8_local_part(value: Boolean): Self = this.set("allow_utf8_local_part", value.asInstanceOf[js.Any])
+    def setDomain_specific_validationUndefined: Self = StObject.set(x, "domain_specific_validation", js.undefined)
     
     @scala.inline
-    def deleteAllow_utf8_local_part: Self = this.set("allow_utf8_local_part", js.undefined)
+    def setIgnore_max_length(value: Boolean): Self = StObject.set(x, "ignore_max_length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain_specific_validation(value: Boolean): Self = this.set("domain_specific_validation", value.asInstanceOf[js.Any])
+    def setIgnore_max_lengthUndefined: Self = StObject.set(x, "ignore_max_length", js.undefined)
     
     @scala.inline
-    def deleteDomain_specific_validation: Self = this.set("domain_specific_validation", js.undefined)
+    def setRequire_display_name(value: Boolean): Self = StObject.set(x, "require_display_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore_max_length(value: Boolean): Self = this.set("ignore_max_length", value.asInstanceOf[js.Any])
+    def setRequire_display_nameUndefined: Self = StObject.set(x, "require_display_name", js.undefined)
     
     @scala.inline
-    def deleteIgnore_max_length: Self = this.set("ignore_max_length", js.undefined)
+    def setRequire_tld(value: Boolean): Self = StObject.set(x, "require_tld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire_display_name(value: Boolean): Self = this.set("require_display_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequire_display_name: Self = this.set("require_display_name", js.undefined)
-    
-    @scala.inline
-    def setRequire_tld(value: Boolean): Self = this.set("require_tld", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequire_tld: Self = this.set("require_tld", js.undefined)
+    def setRequire_tldUndefined: Self = StObject.set(x, "require_tld", js.undefined)
   }
 }

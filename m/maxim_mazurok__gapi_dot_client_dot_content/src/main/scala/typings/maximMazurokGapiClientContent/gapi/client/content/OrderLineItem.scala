@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderLineItem extends js.Object {
+trait OrderLineItem extends StObject {
   
   /** Price and tax adjustments applied on the line item. */
   var adjustments: js.UndefOr[js.Array[OrderLineItemAdjustment]] = js.native
@@ -73,138 +74,126 @@ object OrderLineItem {
   }
   
   @scala.inline
-  implicit class OrderLineItemOps[Self <: OrderLineItem] (val x: Self) extends AnyVal {
+  implicit class OrderLineItemMutableBuilder[Self <: OrderLineItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustments(value: js.Array[OrderLineItemAdjustment]): Self = StObject.set(x, "adjustments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjustmentsUndefined: Self = StObject.set(x, "adjustments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdjustmentsVarargs(value: OrderLineItemAdjustment*): Self = StObject.set(x, "adjustments", js.Array(value :_*))
     
     @scala.inline
-    def setAdjustmentsVarargs(value: OrderLineItemAdjustment*): Self = this.set("adjustments", js.Array(value :_*))
+    def setAnnotations(value: js.Array[OrderMerchantProvidedAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustments(value: js.Array[OrderLineItemAdjustment]): Self = this.set("adjustments", value.asInstanceOf[js.Any])
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def deleteAdjustments: Self = this.set("adjustments", js.undefined)
+    def setAnnotationsVarargs(value: OrderMerchantProvidedAnnotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotationsVarargs(value: OrderMerchantProvidedAnnotation*): Self = this.set("annotations", js.Array(value :_*))
+    def setCancellations(value: js.Array[OrderCancellation]): Self = StObject.set(x, "cancellations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: js.Array[OrderMerchantProvidedAnnotation]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setCancellationsUndefined: Self = StObject.set(x, "cancellations", js.undefined)
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setCancellationsVarargs(value: OrderCancellation*): Self = StObject.set(x, "cancellations", js.Array(value :_*))
     
     @scala.inline
-    def setCancellationsVarargs(value: OrderCancellation*): Self = this.set("cancellations", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancellations(value: js.Array[OrderCancellation]): Self = this.set("cancellations", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCancellations: Self = this.set("cancellations", js.undefined)
+    def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setProduct(value: OrderLineItemProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: Price): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
     @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setQuantityCanceled(value: Double): Self = StObject.set(x, "quantityCanceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: OrderLineItemProduct): Self = this.set("product", value.asInstanceOf[js.Any])
+    def setQuantityCanceledUndefined: Self = StObject.set(x, "quantityCanceled", js.undefined)
     
     @scala.inline
-    def deleteProduct: Self = this.set("product", js.undefined)
+    def setQuantityDelivered(value: Double): Self = StObject.set(x, "quantityDelivered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantityCanceled(value: Double): Self = this.set("quantityCanceled", value.asInstanceOf[js.Any])
+    def setQuantityDeliveredUndefined: Self = StObject.set(x, "quantityDelivered", js.undefined)
     
     @scala.inline
-    def deleteQuantityCanceled: Self = this.set("quantityCanceled", js.undefined)
+    def setQuantityOrdered(value: Double): Self = StObject.set(x, "quantityOrdered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantityDelivered(value: Double): Self = this.set("quantityDelivered", value.asInstanceOf[js.Any])
+    def setQuantityOrderedUndefined: Self = StObject.set(x, "quantityOrdered", js.undefined)
     
     @scala.inline
-    def deleteQuantityDelivered: Self = this.set("quantityDelivered", js.undefined)
+    def setQuantityPending(value: Double): Self = StObject.set(x, "quantityPending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantityOrdered(value: Double): Self = this.set("quantityOrdered", value.asInstanceOf[js.Any])
+    def setQuantityPendingUndefined: Self = StObject.set(x, "quantityPending", js.undefined)
     
     @scala.inline
-    def deleteQuantityOrdered: Self = this.set("quantityOrdered", js.undefined)
+    def setQuantityReadyForPickup(value: Double): Self = StObject.set(x, "quantityReadyForPickup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantityPending(value: Double): Self = this.set("quantityPending", value.asInstanceOf[js.Any])
+    def setQuantityReadyForPickupUndefined: Self = StObject.set(x, "quantityReadyForPickup", js.undefined)
     
     @scala.inline
-    def deleteQuantityPending: Self = this.set("quantityPending", js.undefined)
+    def setQuantityReturned(value: Double): Self = StObject.set(x, "quantityReturned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantityReadyForPickup(value: Double): Self = this.set("quantityReadyForPickup", value.asInstanceOf[js.Any])
+    def setQuantityReturnedUndefined: Self = StObject.set(x, "quantityReturned", js.undefined)
     
     @scala.inline
-    def deleteQuantityReadyForPickup: Self = this.set("quantityReadyForPickup", js.undefined)
+    def setQuantityShipped(value: Double): Self = StObject.set(x, "quantityShipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantityReturned(value: Double): Self = this.set("quantityReturned", value.asInstanceOf[js.Any])
+    def setQuantityShippedUndefined: Self = StObject.set(x, "quantityShipped", js.undefined)
     
     @scala.inline
-    def deleteQuantityReturned: Self = this.set("quantityReturned", js.undefined)
+    def setQuantityUndeliverable(value: Double): Self = StObject.set(x, "quantityUndeliverable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantityShipped(value: Double): Self = this.set("quantityShipped", value.asInstanceOf[js.Any])
+    def setQuantityUndeliverableUndefined: Self = StObject.set(x, "quantityUndeliverable", js.undefined)
     
     @scala.inline
-    def deleteQuantityShipped: Self = this.set("quantityShipped", js.undefined)
+    def setReturnInfo(value: OrderLineItemReturnInfo): Self = StObject.set(x, "returnInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantityUndeliverable(value: Double): Self = this.set("quantityUndeliverable", value.asInstanceOf[js.Any])
+    def setReturnInfoUndefined: Self = StObject.set(x, "returnInfo", js.undefined)
     
     @scala.inline
-    def deleteQuantityUndeliverable: Self = this.set("quantityUndeliverable", js.undefined)
+    def setReturns(value: js.Array[OrderReturn]): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnInfo(value: OrderLineItemReturnInfo): Self = this.set("returnInfo", value.asInstanceOf[js.Any])
+    def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
     
     @scala.inline
-    def deleteReturnInfo: Self = this.set("returnInfo", js.undefined)
+    def setReturnsVarargs(value: OrderReturn*): Self = StObject.set(x, "returns", js.Array(value :_*))
     
     @scala.inline
-    def setReturnsVarargs(value: OrderReturn*): Self = this.set("returns", js.Array(value :_*))
+    def setShippingDetails(value: OrderLineItemShippingDetails): Self = StObject.set(x, "shippingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturns(value: js.Array[OrderReturn]): Self = this.set("returns", value.asInstanceOf[js.Any])
+    def setShippingDetailsUndefined: Self = StObject.set(x, "shippingDetails", js.undefined)
     
     @scala.inline
-    def deleteReturns: Self = this.set("returns", js.undefined)
+    def setTax(value: Price): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingDetails(value: OrderLineItemShippingDetails): Self = this.set("shippingDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingDetails: Self = this.set("shippingDetails", js.undefined)
-    
-    @scala.inline
-    def setTax(value: Price): Self = this.set("tax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTax: Self = this.set("tax", js.undefined)
+    def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListV2LoggingLevelsResponse extends js.Object {
+trait ListV2LoggingLevelsResponse extends StObject {
   
   /**
     * The logging configuration for a target.
@@ -26,33 +27,21 @@ object ListV2LoggingLevelsResponse {
   }
   
   @scala.inline
-  implicit class ListV2LoggingLevelsResponseOps[Self <: ListV2LoggingLevelsResponse] (val x: Self) extends AnyVal {
+  implicit class ListV2LoggingLevelsResponseMutableBuilder[Self <: ListV2LoggingLevelsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogTargetConfigurations(value: LogTargetConfigurations): Self = StObject.set(x, "logTargetConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogTargetConfigurationsUndefined: Self = StObject.set(x, "logTargetConfigurations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogTargetConfigurationsVarargs(value: LogTargetConfiguration*): Self = StObject.set(x, "logTargetConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setLogTargetConfigurationsVarargs(value: LogTargetConfiguration*): Self = this.set("logTargetConfigurations", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogTargetConfigurations(value: LogTargetConfigurations): Self = this.set("logTargetConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogTargetConfigurations: Self = this.set("logTargetConfigurations", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

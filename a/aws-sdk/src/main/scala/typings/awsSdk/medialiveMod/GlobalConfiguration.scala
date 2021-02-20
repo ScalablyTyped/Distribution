@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalConfiguration extends js.Object {
+trait GlobalConfiguration extends StObject {
   
   /**
     * Value to set the initial audio gain for the Live Event.
@@ -48,54 +49,42 @@ object GlobalConfiguration {
   }
   
   @scala.inline
-  implicit class GlobalConfigurationOps[Self <: GlobalConfiguration] (val x: Self) extends AnyVal {
+  implicit class GlobalConfigurationMutableBuilder[Self <: GlobalConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialAudioGain(value: integerMinNegative60Max60): Self = StObject.set(x, "InitialAudioGain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialAudioGainUndefined: Self = StObject.set(x, "InitialAudioGain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputEndAction(value: GlobalConfigurationInputEndAction): Self = StObject.set(x, "InputEndAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialAudioGain(value: integerMinNegative60Max60): Self = this.set("InitialAudioGain", value.asInstanceOf[js.Any])
+    def setInputEndActionUndefined: Self = StObject.set(x, "InputEndAction", js.undefined)
     
     @scala.inline
-    def deleteInitialAudioGain: Self = this.set("InitialAudioGain", js.undefined)
+    def setInputLossBehavior(value: InputLossBehavior): Self = StObject.set(x, "InputLossBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputEndAction(value: GlobalConfigurationInputEndAction): Self = this.set("InputEndAction", value.asInstanceOf[js.Any])
+    def setInputLossBehaviorUndefined: Self = StObject.set(x, "InputLossBehavior", js.undefined)
     
     @scala.inline
-    def deleteInputEndAction: Self = this.set("InputEndAction", js.undefined)
+    def setOutputLockingMode(value: GlobalConfigurationOutputLockingMode): Self = StObject.set(x, "OutputLockingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputLossBehavior(value: InputLossBehavior): Self = this.set("InputLossBehavior", value.asInstanceOf[js.Any])
+    def setOutputLockingModeUndefined: Self = StObject.set(x, "OutputLockingMode", js.undefined)
     
     @scala.inline
-    def deleteInputLossBehavior: Self = this.set("InputLossBehavior", js.undefined)
+    def setOutputTimingSource(value: GlobalConfigurationOutputTimingSource): Self = StObject.set(x, "OutputTimingSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputLockingMode(value: GlobalConfigurationOutputLockingMode): Self = this.set("OutputLockingMode", value.asInstanceOf[js.Any])
+    def setOutputTimingSourceUndefined: Self = StObject.set(x, "OutputTimingSource", js.undefined)
     
     @scala.inline
-    def deleteOutputLockingMode: Self = this.set("OutputLockingMode", js.undefined)
+    def setSupportLowFramerateInputs(value: GlobalConfigurationLowFramerateInputs): Self = StObject.set(x, "SupportLowFramerateInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputTimingSource(value: GlobalConfigurationOutputTimingSource): Self = this.set("OutputTimingSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputTimingSource: Self = this.set("OutputTimingSource", js.undefined)
-    
-    @scala.inline
-    def setSupportLowFramerateInputs(value: GlobalConfigurationLowFramerateInputs): Self = this.set("SupportLowFramerateInputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportLowFramerateInputs: Self = this.set("SupportLowFramerateInputs", js.undefined)
+    def setSupportLowFramerateInputsUndefined: Self = StObject.set(x, "SupportLowFramerateInputs", js.undefined)
   }
 }

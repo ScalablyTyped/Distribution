@@ -2,16 +2,16 @@ package typings.guacamoleClient
 
 import typings.guacamoleClient.guacCommonMod.Mimetype
 import typings.guacamoleClient.inputStreamMod.InputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/AudioPlayer", JSImport.Namespace)
-@js.native
-object audioPlayerMod extends js.Object {
+object audioPlayerMod {
   
+  @JSImport("guacamole-client/lib/AudioPlayer", "AudioPlayer")
   @js.native
-  class AudioPlayer () extends js.Object {
+  class AudioPlayer () extends StObject {
     
     /**
       * Notifies this Guacamole.AudioPlayer that all audio up to the current
@@ -22,8 +22,7 @@ object audioPlayerMod extends js.Object {
     def sync(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object AudioPlayer extends js.Object {
+  object AudioPlayer {
     
     /**
       * Returns an instance of Guacamole.AudioPlayer providing support for the given
@@ -35,6 +34,8 @@ object audioPlayerMod extends js.Object {
       * @return A Guacamole.AudioPlayer instance supporting the given mimetype and
       * reading from the given stream, or null if support for the given mimetype is absent.
       */
+    @JSImport("guacamole-client/lib/AudioPlayer", "AudioPlayer.getInstance")
+    @js.native
     def getInstance(stream: InputStream, mimetype: Mimetype): AudioPlayer | Null = js.native
     
     /**
@@ -47,6 +48,8 @@ object audioPlayerMod extends js.Object {
       * however (see https://tools.ietf.org/html/rfc4856).
       * @returns A list of all mimetypes supported by any built-in Guacamole.AudioPlayer, excluding any parameters.
       */
+    @JSImport("guacamole-client/lib/AudioPlayer", "AudioPlayer.getSupportedTypes")
+    @js.native
     def getSupportedTypes(): js.Array[Mimetype] = js.native
   }
 }

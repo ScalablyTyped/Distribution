@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnswerInlineQueryOptions extends js.Object {
+trait AnswerInlineQueryOptions extends StObject {
   
   var cache_time: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object AnswerInlineQueryOptions {
   }
   
   @scala.inline
-  implicit class AnswerInlineQueryOptionsOps[Self <: AnswerInlineQueryOptions] (val x: Self) extends AnyVal {
+  implicit class AnswerInlineQueryOptionsMutableBuilder[Self <: AnswerInlineQueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCache_time(value: Double): Self = StObject.set(x, "cache_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCache_timeUndefined: Self = StObject.set(x, "cache_time", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIs_personal(value: Boolean): Self = StObject.set(x, "is_personal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache_time(value: Double): Self = this.set("cache_time", value.asInstanceOf[js.Any])
+    def setIs_personalUndefined: Self = StObject.set(x, "is_personal", js.undefined)
     
     @scala.inline
-    def deleteCache_time: Self = this.set("cache_time", js.undefined)
+    def setNext_offset(value: String): Self = StObject.set(x, "next_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_personal(value: Boolean): Self = this.set("is_personal", value.asInstanceOf[js.Any])
+    def setNext_offsetUndefined: Self = StObject.set(x, "next_offset", js.undefined)
     
     @scala.inline
-    def deleteIs_personal: Self = this.set("is_personal", js.undefined)
+    def setSwitch_pm_parameter(value: String): Self = StObject.set(x, "switch_pm_parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext_offset(value: String): Self = this.set("next_offset", value.asInstanceOf[js.Any])
+    def setSwitch_pm_parameterUndefined: Self = StObject.set(x, "switch_pm_parameter", js.undefined)
     
     @scala.inline
-    def deleteNext_offset: Self = this.set("next_offset", js.undefined)
+    def setSwitch_pm_text(value: String): Self = StObject.set(x, "switch_pm_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwitch_pm_parameter(value: String): Self = this.set("switch_pm_parameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwitch_pm_parameter: Self = this.set("switch_pm_parameter", js.undefined)
-    
-    @scala.inline
-    def setSwitch_pm_text(value: String): Self = this.set("switch_pm_text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwitch_pm_text: Self = this.set("switch_pm_text", js.undefined)
+    def setSwitch_pm_textUndefined: Self = StObject.set(x, "switch_pm_text", js.undefined)
   }
 }

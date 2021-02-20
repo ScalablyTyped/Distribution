@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideUser extends js.Object {
+trait GlideUser extends StObject {
   
   def getCompanyID(): String = js.native
   
@@ -59,60 +60,48 @@ object GlideUser {
   }
   
   @scala.inline
-  implicit class GlideUserOps[Self <: GlideUser] (val x: Self) extends AnyVal {
+  implicit class GlideUserMutableBuilder[Self <: GlideUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCompanyID(value: () => String): Self = StObject.set(x, "getCompanyID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDisplayName(value: () => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDomainID(value: () => String): Self = StObject.set(x, "getDomainID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCompanyID(value: () => String): Self = this.set("getCompanyID", js.Any.fromFunction0(value))
+    def setGetEmail(value: () => String): Self = StObject.set(x, "getEmail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayName(value: () => String): Self = this.set("getDisplayName", js.Any.fromFunction0(value))
+    def setGetFirstName(value: () => String): Self = StObject.set(x, "getFirstName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDomainID(value: () => String): Self = this.set("getDomainID", js.Any.fromFunction0(value))
+    def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEmail(value: () => String): Self = this.set("getEmail", js.Any.fromFunction0(value))
+    def setGetLastName(value: () => String): Self = StObject.set(x, "getLastName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFirstName(value: () => String): Self = this.set("getFirstName", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetID(value: () => String): Self = this.set("getID", js.Any.fromFunction0(value))
+    def setGetPreference(value: String => String): Self = StObject.set(x, "getPreference", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLastName(value: () => String): Self = this.set("getLastName", js.Any.fromFunction0(value))
+    def setGetRoles(value: () => js.Array[String]): Self = StObject.set(x, "getRoles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetUserRoles(value: () => js.Array[String]): Self = StObject.set(x, "getUserRoles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPreference(value: String => String): Self = this.set("getPreference", js.Any.fromFunction1(value))
+    def setHasRole(value: String => Boolean): Self = StObject.set(x, "hasRole", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRoles(value: () => js.Array[String]): Self = this.set("getRoles", js.Any.fromFunction0(value))
+    def setIsMemberOf(value: String => Boolean): Self = StObject.set(x, "isMemberOf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUserRoles(value: () => js.Array[String]): Self = this.set("getUserRoles", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasRole(value: String => Boolean): Self = this.set("hasRole", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsMemberOf(value: String => Boolean): Self = this.set("isMemberOf", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSavePreference(value: (String, String) => Unit): Self = this.set("savePreference", js.Any.fromFunction2(value))
+    def setSavePreference(value: (String, String) => Unit): Self = StObject.set(x, "savePreference", js.Any.fromFunction2(value))
   }
 }

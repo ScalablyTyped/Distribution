@@ -3,12 +3,13 @@ package typings.mjmlReact.mod
 import typings.csstype.mod.BackgroundColorProperty
 import typings.mjmlReact.mjmlReactStrings.left
 import typings.mjmlReact.mjmlReactStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MjmlAccordionElementProps extends js.Object {
+trait MjmlAccordionElementProps extends StObject {
   
   var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
   
@@ -39,78 +40,66 @@ object MjmlAccordionElementProps {
   }
   
   @scala.inline
-  implicit class MjmlAccordionElementPropsOps[Self <: MjmlAccordionElementProps] (val x: Self) extends AnyVal {
+  implicit class MjmlAccordionElementPropsMutableBuilder[Self <: MjmlAccordionElementProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: BackgroundColorProperty): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setIconAlign(value: String): Self = StObject.set(x, "iconAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setIconAlignUndefined: Self = StObject.set(x, "iconAlign", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setIconHeight(value: String): Self = StObject.set(x, "iconHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconAlign(value: String): Self = this.set("iconAlign", value.asInstanceOf[js.Any])
+    def setIconHeightUndefined: Self = StObject.set(x, "iconHeight", js.undefined)
     
     @scala.inline
-    def deleteIconAlign: Self = this.set("iconAlign", js.undefined)
+    def setIconPosition(value: left | right): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconHeight(value: String): Self = this.set("iconHeight", value.asInstanceOf[js.Any])
+    def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
     
     @scala.inline
-    def deleteIconHeight: Self = this.set("iconHeight", js.undefined)
+    def setIconUnwrappedAlt(value: String): Self = StObject.set(x, "iconUnwrappedAlt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconPosition(value: left | right): Self = this.set("iconPosition", value.asInstanceOf[js.Any])
+    def setIconUnwrappedAltUndefined: Self = StObject.set(x, "iconUnwrappedAlt", js.undefined)
     
     @scala.inline
-    def deleteIconPosition: Self = this.set("iconPosition", js.undefined)
+    def setIconUnwrappedUrl(value: String): Self = StObject.set(x, "iconUnwrappedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUnwrappedAlt(value: String): Self = this.set("iconUnwrappedAlt", value.asInstanceOf[js.Any])
+    def setIconUnwrappedUrlUndefined: Self = StObject.set(x, "iconUnwrappedUrl", js.undefined)
     
     @scala.inline
-    def deleteIconUnwrappedAlt: Self = this.set("iconUnwrappedAlt", js.undefined)
+    def setIconWidth(value: String): Self = StObject.set(x, "iconWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUnwrappedUrl(value: String): Self = this.set("iconUnwrappedUrl", value.asInstanceOf[js.Any])
+    def setIconWidthUndefined: Self = StObject.set(x, "iconWidth", js.undefined)
     
     @scala.inline
-    def deleteIconUnwrappedUrl: Self = this.set("iconUnwrappedUrl", js.undefined)
+    def setIconWrappedAlt(value: String): Self = StObject.set(x, "iconWrappedAlt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconWidth(value: String): Self = this.set("iconWidth", value.asInstanceOf[js.Any])
+    def setIconWrappedAltUndefined: Self = StObject.set(x, "iconWrappedAlt", js.undefined)
     
     @scala.inline
-    def deleteIconWidth: Self = this.set("iconWidth", js.undefined)
+    def setIconWrappedUrl(value: String): Self = StObject.set(x, "iconWrappedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconWrappedAlt(value: String): Self = this.set("iconWrappedAlt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconWrappedAlt: Self = this.set("iconWrappedAlt", js.undefined)
-    
-    @scala.inline
-    def setIconWrappedUrl(value: String): Self = this.set("iconWrappedUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconWrappedUrl: Self = this.set("iconWrappedUrl", js.undefined)
+    def setIconWrappedUrlUndefined: Self = StObject.set(x, "iconWrappedUrl", js.undefined)
   }
 }

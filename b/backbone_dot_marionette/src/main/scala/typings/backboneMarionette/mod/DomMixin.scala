@@ -1,11 +1,12 @@
 package typings.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomMixin extends js.Object {
+trait DomMixin extends StObject {
   
   var appendChildren: js.Any = js.native
   
@@ -44,45 +45,33 @@ object DomMixin {
   }
   
   @scala.inline
-  implicit class DomMixinOps[Self <: DomMixin] (val x: Self) extends AnyVal {
+  implicit class DomMixinMutableBuilder[Self <: DomMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendChildren(value: js.Any): Self = StObject.set(x, "appendChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeEl(value: js.Any): Self = StObject.set(x, "beforeEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateBuffer(value: js.Any): Self = StObject.set(x, "createBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendChildren(value: js.Any): Self = this.set("appendChildren", value.asInstanceOf[js.Any])
+    def setDetachContents(value: js.Any): Self = StObject.set(x, "detachContents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeEl(value: js.Any): Self = this.set("beforeEl", value.asInstanceOf[js.Any])
+    def setDetachEl(value: js.Any): Self = StObject.set(x, "detachEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateBuffer(value: js.Any): Self = this.set("createBuffer", value.asInstanceOf[js.Any])
+    def setFindEls(value: js.Any): Self = StObject.set(x, "findEls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetachContents(value: js.Any): Self = this.set("detachContents", value.asInstanceOf[js.Any])
+    def setRemoveEl(value: js.Any): Self = StObject.set(x, "removeEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetachEl(value: js.Any): Self = this.set("detachEl", value.asInstanceOf[js.Any])
+    def setReplaceEl(value: js.Any): Self = StObject.set(x, "replaceEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindEls(value: js.Any): Self = this.set("findEls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveEl(value: js.Any): Self = this.set("removeEl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplaceEl(value: js.Any): Self = this.set("replaceEl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetInnerContent(value: js.Any): Self = this.set("setInnerContent", value.asInstanceOf[js.Any])
+    def setSetInnerContent(value: js.Any): Self = StObject.set(x, "setInnerContent", value.asInstanceOf[js.Any])
   }
 }

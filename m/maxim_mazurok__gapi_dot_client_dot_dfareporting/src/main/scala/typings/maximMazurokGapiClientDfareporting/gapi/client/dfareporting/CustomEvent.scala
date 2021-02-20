@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomEvent extends js.Object {
+trait CustomEvent extends StObject {
   
   /** Annotate a click event. This field is mutually exclusive with insertEvent and annotateImpressionEvent. This or insertEvent and annotateImpressionEvent is a required field. */
   var annotateClickEvent: js.UndefOr[CustomEventClickAnnotation] = js.native
@@ -46,75 +47,63 @@ object CustomEvent {
   }
   
   @scala.inline
-  implicit class CustomEventOps[Self <: CustomEvent] (val x: Self) extends AnyVal {
+  implicit class CustomEventMutableBuilder[Self <: CustomEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotateClickEvent(value: CustomEventClickAnnotation): Self = StObject.set(x, "annotateClickEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotateClickEventUndefined: Self = StObject.set(x, "annotateClickEvent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotateImpressionEvent(value: CustomEventImpressionAnnotation): Self = StObject.set(x, "annotateImpressionEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotateClickEvent(value: CustomEventClickAnnotation): Self = this.set("annotateClickEvent", value.asInstanceOf[js.Any])
+    def setAnnotateImpressionEventUndefined: Self = StObject.set(x, "annotateImpressionEvent", js.undefined)
     
     @scala.inline
-    def deleteAnnotateClickEvent: Self = this.set("annotateClickEvent", js.undefined)
+    def setCustomVariables(value: js.Array[CustomVariable]): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotateImpressionEvent(value: CustomEventImpressionAnnotation): Self = this.set("annotateImpressionEvent", value.asInstanceOf[js.Any])
+    def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
     
     @scala.inline
-    def deleteAnnotateImpressionEvent: Self = this.set("annotateImpressionEvent", js.undefined)
+    def setCustomVariablesVarargs(value: CustomVariable*): Self = StObject.set(x, "customVariables", js.Array(value :_*))
     
     @scala.inline
-    def setCustomVariablesVarargs(value: CustomVariable*): Self = this.set("customVariables", js.Array(value :_*))
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomVariables(value: js.Array[CustomVariable]): Self = this.set("customVariables", value.asInstanceOf[js.Any])
+    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
     @scala.inline
-    def deleteCustomVariables: Self = this.set("customVariables", js.undefined)
+    def setFloodlightConfigurationId(value: String): Self = StObject.set(x, "floodlightConfigurationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    def setFloodlightConfigurationIdUndefined: Self = StObject.set(x, "floodlightConfigurationId", js.undefined)
     
     @scala.inline
-    def deleteEventType: Self = this.set("eventType", js.undefined)
+    def setInsertEvent(value: CustomEventInsert): Self = StObject.set(x, "insertEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightConfigurationId(value: String): Self = this.set("floodlightConfigurationId", value.asInstanceOf[js.Any])
+    def setInsertEventUndefined: Self = StObject.set(x, "insertEvent", js.undefined)
     
     @scala.inline
-    def deleteFloodlightConfigurationId: Self = this.set("floodlightConfigurationId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertEvent(value: CustomEventInsert): Self = this.set("insertEvent", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInsertEvent: Self = this.set("insertEvent", js.undefined)
+    def setOrdinal(value: String): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setTimestampMicros(value: String): Self = StObject.set(x, "timestampMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrdinal(value: String): Self = this.set("ordinal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrdinal: Self = this.set("ordinal", js.undefined)
-    
-    @scala.inline
-    def setTimestampMicros(value: String): Self = this.set("timestampMicros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampMicros: Self = this.set("timestampMicros", js.undefined)
+    def setTimestampMicrosUndefined: Self = StObject.set(x, "timestampMicros", js.undefined)
   }
 }

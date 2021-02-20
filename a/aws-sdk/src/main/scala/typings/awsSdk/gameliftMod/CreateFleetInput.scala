@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFleetInput extends js.Object {
+trait CreateFleetInput extends StObject {
   
   /**
     * A unique identifier for a build to be deployed on the new fleet. You can use either the build ID or ARN value. The custom game server build must have been successfully uploaded to Amazon GameLift and be in a READY status. This fleet setting cannot be changed once the fleet is created. 
@@ -111,138 +112,126 @@ object CreateFleetInput {
   }
   
   @scala.inline
-  implicit class CreateFleetInputOps[Self <: CreateFleetInput] (val x: Self) extends AnyVal {
+  implicit class CreateFleetInputMutableBuilder[Self <: CreateFleetInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildIdUndefined: Self = StObject.set(x, "BuildId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateConfiguration(value: CertificateConfiguration): Self = StObject.set(x, "CertificateConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEC2InstanceType(value: EC2InstanceType): Self = this.set("EC2InstanceType", value.asInstanceOf[js.Any])
+    def setCertificateConfigurationUndefined: Self = StObject.set(x, "CertificateConfiguration", js.undefined)
     
     @scala.inline
-    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDescription(value: NonZeroAndMaxString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildId(value: BuildIdOrArn): Self = this.set("BuildId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteBuildId: Self = this.set("BuildId", js.undefined)
+    def setEC2InboundPermissions(value: IpPermissionsList): Self = StObject.set(x, "EC2InboundPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateConfiguration(value: CertificateConfiguration): Self = this.set("CertificateConfiguration", value.asInstanceOf[js.Any])
+    def setEC2InboundPermissionsUndefined: Self = StObject.set(x, "EC2InboundPermissions", js.undefined)
     
     @scala.inline
-    def deleteCertificateConfiguration: Self = this.set("CertificateConfiguration", js.undefined)
+    def setEC2InboundPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "EC2InboundPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: NonZeroAndMaxString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEC2InstanceType(value: EC2InstanceType): Self = StObject.set(x, "EC2InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setFleetType(value: FleetType): Self = StObject.set(x, "FleetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEC2InboundPermissionsVarargs(value: IpPermission*): Self = this.set("EC2InboundPermissions", js.Array(value :_*))
+    def setFleetTypeUndefined: Self = StObject.set(x, "FleetType", js.undefined)
     
     @scala.inline
-    def setEC2InboundPermissions(value: IpPermissionsList): Self = this.set("EC2InboundPermissions", value.asInstanceOf[js.Any])
+    def setInstanceRoleArn(value: NonEmptyString): Self = StObject.set(x, "InstanceRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEC2InboundPermissions: Self = this.set("EC2InboundPermissions", js.undefined)
+    def setInstanceRoleArnUndefined: Self = StObject.set(x, "InstanceRoleArn", js.undefined)
     
     @scala.inline
-    def setFleetType(value: FleetType): Self = this.set("FleetType", value.asInstanceOf[js.Any])
+    def setLogPaths(value: StringList): Self = StObject.set(x, "LogPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFleetType: Self = this.set("FleetType", js.undefined)
+    def setLogPathsUndefined: Self = StObject.set(x, "LogPaths", js.undefined)
     
     @scala.inline
-    def setInstanceRoleArn(value: NonEmptyString): Self = this.set("InstanceRoleArn", value.asInstanceOf[js.Any])
+    def setLogPathsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "LogPaths", js.Array(value :_*))
     
     @scala.inline
-    def deleteInstanceRoleArn: Self = this.set("InstanceRoleArn", js.undefined)
+    def setMetricGroups(value: MetricGroupList): Self = StObject.set(x, "MetricGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogPathsVarargs(value: NonZeroAndMaxString*): Self = this.set("LogPaths", js.Array(value :_*))
+    def setMetricGroupsUndefined: Self = StObject.set(x, "MetricGroups", js.undefined)
     
     @scala.inline
-    def setLogPaths(value: StringList): Self = this.set("LogPaths", value.asInstanceOf[js.Any])
+    def setMetricGroupsVarargs(value: MetricGroup*): Self = StObject.set(x, "MetricGroups", js.Array(value :_*))
     
     @scala.inline
-    def deleteLogPaths: Self = this.set("LogPaths", js.undefined)
+    def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricGroupsVarargs(value: MetricGroup*): Self = this.set("MetricGroups", js.Array(value :_*))
+    def setNewGameSessionProtectionPolicy(value: ProtectionPolicy): Self = StObject.set(x, "NewGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricGroups(value: MetricGroupList): Self = this.set("MetricGroups", value.asInstanceOf[js.Any])
+    def setNewGameSessionProtectionPolicyUndefined: Self = StObject.set(x, "NewGameSessionProtectionPolicy", js.undefined)
     
     @scala.inline
-    def deleteMetricGroups: Self = this.set("MetricGroups", js.undefined)
+    def setPeerVpcAwsAccountId(value: NonZeroAndMaxString): Self = StObject.set(x, "PeerVpcAwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewGameSessionProtectionPolicy(value: ProtectionPolicy): Self = this.set("NewGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
+    def setPeerVpcAwsAccountIdUndefined: Self = StObject.set(x, "PeerVpcAwsAccountId", js.undefined)
     
     @scala.inline
-    def deleteNewGameSessionProtectionPolicy: Self = this.set("NewGameSessionProtectionPolicy", js.undefined)
+    def setPeerVpcId(value: NonZeroAndMaxString): Self = StObject.set(x, "PeerVpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerVpcAwsAccountId(value: NonZeroAndMaxString): Self = this.set("PeerVpcAwsAccountId", value.asInstanceOf[js.Any])
+    def setPeerVpcIdUndefined: Self = StObject.set(x, "PeerVpcId", js.undefined)
     
     @scala.inline
-    def deletePeerVpcAwsAccountId: Self = this.set("PeerVpcAwsAccountId", js.undefined)
+    def setResourceCreationLimitPolicy(value: ResourceCreationLimitPolicy): Self = StObject.set(x, "ResourceCreationLimitPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerVpcId(value: NonZeroAndMaxString): Self = this.set("PeerVpcId", value.asInstanceOf[js.Any])
+    def setResourceCreationLimitPolicyUndefined: Self = StObject.set(x, "ResourceCreationLimitPolicy", js.undefined)
     
     @scala.inline
-    def deletePeerVpcId: Self = this.set("PeerVpcId", js.undefined)
+    def setRuntimeConfiguration(value: RuntimeConfiguration): Self = StObject.set(x, "RuntimeConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceCreationLimitPolicy(value: ResourceCreationLimitPolicy): Self = this.set("ResourceCreationLimitPolicy", value.asInstanceOf[js.Any])
+    def setRuntimeConfigurationUndefined: Self = StObject.set(x, "RuntimeConfiguration", js.undefined)
     
     @scala.inline
-    def deleteResourceCreationLimitPolicy: Self = this.set("ResourceCreationLimitPolicy", js.undefined)
+    def setScriptId(value: ScriptIdOrArn): Self = StObject.set(x, "ScriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntimeConfiguration(value: RuntimeConfiguration): Self = this.set("RuntimeConfiguration", value.asInstanceOf[js.Any])
+    def setScriptIdUndefined: Self = StObject.set(x, "ScriptId", js.undefined)
     
     @scala.inline
-    def deleteRuntimeConfiguration: Self = this.set("RuntimeConfiguration", js.undefined)
+    def setServerLaunchParameters(value: NonZeroAndMaxString): Self = StObject.set(x, "ServerLaunchParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptId(value: ScriptIdOrArn): Self = this.set("ScriptId", value.asInstanceOf[js.Any])
+    def setServerLaunchParametersUndefined: Self = StObject.set(x, "ServerLaunchParameters", js.undefined)
     
     @scala.inline
-    def deleteScriptId: Self = this.set("ScriptId", js.undefined)
+    def setServerLaunchPath(value: NonZeroAndMaxString): Self = StObject.set(x, "ServerLaunchPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerLaunchParameters(value: NonZeroAndMaxString): Self = this.set("ServerLaunchParameters", value.asInstanceOf[js.Any])
+    def setServerLaunchPathUndefined: Self = StObject.set(x, "ServerLaunchPath", js.undefined)
     
     @scala.inline
-    def deleteServerLaunchParameters: Self = this.set("ServerLaunchParameters", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerLaunchPath(value: NonZeroAndMaxString): Self = this.set("ServerLaunchPath", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteServerLaunchPath: Self = this.set("ServerLaunchPath", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

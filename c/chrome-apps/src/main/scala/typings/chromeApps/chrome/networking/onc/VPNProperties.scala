@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VPNProperties[M /* <: ManagedObject */, B, S] extends js.Object {
+trait VPNProperties[M /* <: ManagedObject */, B, S] extends StObject {
   
   /** Whether the VPN network should be connected automatically. */
   var AutoConnect: js.UndefOr[B] = js.native
@@ -30,36 +31,24 @@ object VPNProperties {
   }
   
   @scala.inline
-  implicit class VPNPropertiesOps[Self <: VPNProperties[_, _, _], M /* <: ManagedObject */, B, S] (val x: Self with (VPNProperties[M, B, S])) extends AnyVal {
+  implicit class VPNPropertiesMutableBuilder[Self <: VPNProperties[_, _, _], M /* <: ManagedObject */, B, S] (val x: Self with (VPNProperties[M, B, S])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost(value: S): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoConnect(value: B): Self = this.set("AutoConnect", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
     @scala.inline
-    def deleteAutoConnect: Self = this.set("AutoConnect", js.undefined)
+    def setType(value: S): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: S): Self = this.set("Host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHost: Self = this.set("Host", js.undefined)
-    
-    @scala.inline
-    def setType(value: S): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

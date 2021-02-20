@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,33 +25,21 @@ object PivotTransportWithObjectOperations {
   }
   
   @scala.inline
-  implicit class PivotTransportWithObjectOperationsOps[Self <: PivotTransportWithObjectOperations] (val x: Self) extends AnyVal {
+  implicit class PivotTransportWithObjectOperationsMutableBuilder[Self <: PivotTransportWithObjectOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: PivotTransportConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiscover(value: PivotTransportDiscover): Self = StObject.set(x, "discover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiscoverUndefined: Self = StObject.set(x, "discover", js.undefined)
     
     @scala.inline
-    def setConnection(value: PivotTransportConnection): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setRead(value: DataSourceTransportRead): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscover(value: PivotTransportDiscover): Self = this.set("discover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiscover: Self = this.set("discover", js.undefined)
-    
-    @scala.inline
-    def setRead(value: DataSourceTransportRead): Self = this.set("read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadBLECharacteristicValueSuccess extends js.Object {
+trait ReadBLECharacteristicValueSuccess extends StObject {
   
   /**
     * 错误码
@@ -26,30 +27,18 @@ object ReadBLECharacteristicValueSuccess {
   }
   
   @scala.inline
-  implicit class ReadBLECharacteristicValueSuccessOps[Self <: ReadBLECharacteristicValueSuccess] (val x: Self) extends AnyVal {
+  implicit class ReadBLECharacteristicValueSuccessMutableBuilder[Self <: ReadBLECharacteristicValueSuccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrCode(value: String): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrCodeUndefined: Self = StObject.set(x, "errCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrCode(value: String): Self = this.set("errCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrCode: Self = this.set("errCode", js.undefined)
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrMsg: Self = this.set("errMsg", js.undefined)
+    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
   }
 }

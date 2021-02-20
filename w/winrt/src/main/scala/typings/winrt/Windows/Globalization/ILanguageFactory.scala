@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Globalization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILanguageFactory extends js.Object {
+trait ILanguageFactory extends StObject {
   
   def createLanguage(languageTag: String): Language = js.native
 }
@@ -18,21 +19,9 @@ object ILanguageFactory {
   }
   
   @scala.inline
-  implicit class ILanguageFactoryOps[Self <: ILanguageFactory] (val x: Self) extends AnyVal {
+  implicit class ILanguageFactoryMutableBuilder[Self <: ILanguageFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateLanguage(value: String => Language): Self = this.set("createLanguage", js.Any.fromFunction1(value))
+    def setCreateLanguage(value: String => Language): Self = StObject.set(x, "createLanguage", js.Any.fromFunction1(value))
   }
 }

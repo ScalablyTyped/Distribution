@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SegmentFilterClause extends js.Object {
+trait SegmentFilterClause extends StObject {
   
   /** Dimension Filter for the segment definition. */
   var dimensionFilter: js.UndefOr[SegmentDimensionFilter] = js.native
@@ -25,36 +26,24 @@ object SegmentFilterClause {
   }
   
   @scala.inline
-  implicit class SegmentFilterClauseOps[Self <: SegmentFilterClause] (val x: Self) extends AnyVal {
+  implicit class SegmentFilterClauseMutableBuilder[Self <: SegmentFilterClause] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionFilter(value: SegmentDimensionFilter): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionFilterUndefined: Self = StObject.set(x, "dimensionFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricFilter(value: SegmentMetricFilter): Self = StObject.set(x, "metricFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionFilter(value: SegmentDimensionFilter): Self = this.set("dimensionFilter", value.asInstanceOf[js.Any])
+    def setMetricFilterUndefined: Self = StObject.set(x, "metricFilter", js.undefined)
     
     @scala.inline
-    def deleteDimensionFilter: Self = this.set("dimensionFilter", js.undefined)
+    def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricFilter(value: SegmentMetricFilter): Self = this.set("metricFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricFilter: Self = this.set("metricFilter", js.undefined)
-    
-    @scala.inline
-    def setNot(value: Boolean): Self = this.set("not", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNot: Self = this.set("not", js.undefined)
+    def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
   }
 }

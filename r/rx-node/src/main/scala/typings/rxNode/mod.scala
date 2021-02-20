@@ -6,19 +6,20 @@ import typings.node.NodeJS.WritableStream
 import typings.rx.Rx.Disposable
 import typings.rx.Rx.Observable
 import typings.rxNode.RxNode.PublishableEventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rx-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Converts a flowing readline stream to an Observable sequence.
     * @param {Stream} stream A stream to convert to a observable sequence.
     * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'end' events.
     */
+  @JSImport("rx-node", "fromReadLineStream")
+  @js.native
   def fromReadLineStream[T](stream: ReadableStream): Observable[T] = js.native
   
   /**
@@ -27,7 +28,11 @@ object mod extends js.Object {
     * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
     * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'end' events.
     */
+  @JSImport("rx-node", "fromReadableStream")
+  @js.native
   def fromReadableStream[T](stream: ReadableStream): Observable[T] = js.native
+  @JSImport("rx-node", "fromReadableStream")
+  @js.native
   def fromReadableStream[T](stream: ReadableStream, dataEventName: String): Observable[T] = js.native
   
   /**
@@ -37,9 +42,17 @@ object mod extends js.Object {
     * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
     * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and finish events like `end` or `finish`.
     */
+  @JSImport("rx-node", "fromStream")
+  @js.native
   def fromStream[T](stream: ReadableStream): Observable[T] = js.native
+  @JSImport("rx-node", "fromStream")
+  @js.native
   def fromStream[T](stream: ReadableStream, finishEventName: js.UndefOr[scala.Nothing], dataEventName: String): Observable[T] = js.native
+  @JSImport("rx-node", "fromStream")
+  @js.native
   def fromStream[T](stream: ReadableStream, finishEventName: String): Observable[T] = js.native
+  @JSImport("rx-node", "fromStream")
+  @js.native
   def fromStream[T](stream: ReadableStream, finishEventName: String, dataEventName: String): Observable[T] = js.native
   
   /**
@@ -48,7 +61,11 @@ object mod extends js.Object {
     * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
     * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.
     */
+  @JSImport("rx-node", "fromTransformStream")
+  @js.native
   def fromTransformStream[T](stream: ReadWriteStream): Observable[T] = js.native
+  @JSImport("rx-node", "fromTransformStream")
+  @js.native
   def fromTransformStream[T](stream: ReadWriteStream, dataEventName: String): Observable[T] = js.native
   
   /**
@@ -56,6 +73,8 @@ object mod extends js.Object {
     * @param {Stream} stream A stream to convert to a observable sequence.
     * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.
     */
+  @JSImport("rx-node", "fromWritableStream")
+  @js.native
   def fromWritableStream[T](stream: WritableStream): Observable[T] = js.native
   
   /**
@@ -66,6 +85,8 @@ object mod extends js.Object {
     * @param {String} eventName The event name to emit onNext calls.
     * @returns {EventEmitter} An EventEmitter which emits the given eventName for each onNext call in addition to 'error' and 'end' events.
     */
+  @JSImport("rx-node", "toEventEmitter")
+  @js.native
   def toEventEmitter[T](observable: Observable[T], eventName: String): PublishableEventEmitter = js.native
   
   /**
@@ -75,5 +96,7 @@ object mod extends js.Object {
     * @param {String} [encoding] The encoding of the item to write.
     * @returns {Disposable} The subscription handle.
     */
+  @JSImport("rx-node", "writeToStream")
+  @js.native
   def writeToStream[T](observable: Observable[T], stream: WritableStream, encoding: String): Disposable = js.native
 }

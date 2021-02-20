@@ -3,12 +3,13 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.ClassNameMap
 import typings.materialUiCore.withStylesMod.StyleRules
 import typings.materialUiCore.withStylesMod.StyleRulesCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Classes[T /* <: String | StyleRules[String] | StyleRulesCallback[String] */] extends js.Object {
+trait Classes[T /* <: String | StyleRules[String] | StyleRulesCallback[String] */] extends StObject {
   
   var classes: ClassNameMap[_ | T] = js.native
 }
@@ -21,21 +22,9 @@ object Classes {
   }
   
   @scala.inline
-  implicit class ClassesOps[Self <: Classes[_], T /* <: String | StyleRules[String] | StyleRulesCallback[String] */] (val x: Self with Classes[T]) extends AnyVal {
+  implicit class ClassesMutableBuilder[Self <: Classes[_], T /* <: String | StyleRules[String] | StyleRulesCallback[String] */] (val x: Self with Classes[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClasses(value: ClassNameMap[_ | T]): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setClasses(value: ClassNameMap[_ | T]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
   }
 }

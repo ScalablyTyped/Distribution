@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 * Scope Options for Model.scope
 */
 @js.native
-trait ScopeOptions extends js.Object {
+trait ScopeOptions extends StObject {
   
   /**
     * The scope(s) to apply. Scopes can either be passed as consecutive arguments, or as an array of arguments.
@@ -28,24 +29,12 @@ object ScopeOptions {
   }
   
   @scala.inline
-  implicit class ScopeOptionsOps[Self <: ScopeOptions] (val x: Self) extends AnyVal {
+  implicit class ScopeOptionsMutableBuilder[Self <: ScopeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethod(value: String | js.Array[_]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMethodVarargs(value: js.Any*): Self = this.set("method", js.Array(value :_*))
-    
-    @scala.inline
-    def setMethod(value: String | js.Array[_]): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setMethodVarargs(value: js.Any*): Self = StObject.set(x, "method", js.Array(value :_*))
   }
 }

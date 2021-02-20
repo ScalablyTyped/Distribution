@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,175 +48,237 @@ class VirtualScroll protected ()
   
   def splitHeights(e: js.Any): js.Any = js.native
 }
-@JSImport("rc-easyui", "VirtualScroll")
-@js.native
-object VirtualScroll extends js.Object {
+object VirtualScroll {
   
-  @js.native
-  object contextTypes extends js.Object {
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "VirtualScroll.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.contextTypes.locale
+      @JSImport("rc-easyui", "VirtualScroll.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "VirtualScroll.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.contextTypes.t
+      @JSImport("rc-easyui", "VirtualScroll.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.data")
+    @js.native
     val data: js.Array[js.Any] = js.native
     
-    val `lazy`: Boolean = js.native
-    
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.maxDivHeight")
+    @js.native
     val maxDivHeight: Double = js.native
     
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.maxVisibleHeight")
+    @js.native
     val maxVisibleHeight: Double = js.native
     
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.onBodyScroll")
+    @js.native
     def onBodyScroll(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.onPageChange")
+    @js.native
     def onPageChange(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.onUpdate")
+    @js.native
     def onUpdate(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.pageNumber")
+    @js.native
     val pageNumber: Double = js.native
     
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.pageSize")
+    @js.native
     val pageSize: Double = js.native
     
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.rowHeight")
+    @js.native
     val rowHeight: Double = js.native
     
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.total")
+    @js.native
     val total: Double = js.native
+    
+    @JSImport("rc-easyui", "VirtualScroll.defaultProps.lazy")
+    @js.native
+    val `lazy`: Boolean = js.native
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object data extends js.Object {
+    object data {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.data")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.data
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.data.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object `lazy` extends js.Object {
+    object maxDivHeight {
       
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
-      
-      // Circular reference from rc_easyui.VirtualScroll.propTypes.lazy
-      val isRequired: js.Any = js.native
-    }
-    
-    @js.native
-    object maxDivHeight extends js.Object {
-      
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.maxDivHeight")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.maxDivHeight
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.maxDivHeight.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object maxVisibleHeight extends js.Object {
+    object maxVisibleHeight {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.maxVisibleHeight")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.maxVisibleHeight
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.maxVisibleHeight.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onPageChange extends js.Object {
+    object onPageChange {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.onPageChange")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.onPageChange
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.onPageChange.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onUpdate extends js.Object {
+    object onUpdate {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.onUpdate")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.onUpdate
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.onUpdate.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object pageNumber extends js.Object {
+    object pageNumber {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.pageNumber")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.pageNumber
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.pageNumber.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object pageSize extends js.Object {
+    object pageSize {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.pageSize")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.pageSize
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.pageSize.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object renderItem extends js.Object {
+    object renderItem {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.renderItem")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.renderItem
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.renderItem.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object renderItems extends js.Object {
+    object renderItems {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.renderItems")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.renderItems
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.renderItems.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object reset extends js.Object {
+    object reset {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.reset")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.reset
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.reset.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object rowHeight extends js.Object {
+    object rowHeight {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.rowHeight")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.rowHeight
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.rowHeight.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object total extends js.Object {
+    object total {
       
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.total")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.VirtualScroll.propTypes.total
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.total.isRequired")
+      @js.native
+      val isRequired: js.Any = js.native
+    }
+    
+    object `lazy` {
+      
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.lazy")
+      @js.native
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      
+      // Circular reference from rc_easyui.VirtualScroll.propTypes.lazy
+      @JSImport("rc-easyui", "VirtualScroll.propTypes.lazy.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

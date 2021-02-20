@@ -1,11 +1,12 @@
 package typings.feflowCli
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hook extends js.Object {
+trait Hook extends StObject {
   
   /**
     * Hook will execute befor any command
@@ -24,21 +25,9 @@ object Hook {
   }
   
   @scala.inline
-  implicit class HookOps[Self <: Hook] (val x: Self) extends AnyVal {
+  implicit class HookMutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHook(value: (String, js.Function0[Unit]) => Unit): Self = this.set("hook", js.Any.fromFunction2(value))
+    def setHook(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "hook", js.Any.fromFunction2(value))
   }
 }

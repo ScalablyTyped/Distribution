@@ -1,14 +1,14 @@
 package typings.xhrMock
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xhr-mock/lib/MockError", JSImport.Namespace)
-@js.native
-object mockErrorMod extends js.Object {
+object mockErrorMod {
   
+  @JSImport("xhr-mock/lib/MockError", "MockError")
   @js.native
   class MockError protected () extends Error {
     def this(message: String) = this()

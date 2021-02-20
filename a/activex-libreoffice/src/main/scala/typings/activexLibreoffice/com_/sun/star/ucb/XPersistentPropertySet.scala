@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,30 +67,18 @@ object XPersistentPropertySet {
   }
   
   @scala.inline
-  implicit class XPersistentPropertySetOps[Self <: XPersistentPropertySet] (val x: Self) extends AnyVal {
+  implicit class XPersistentPropertySetMutableBuilder[Self <: XPersistentPropertySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetKey(value: () => String): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRegistry(value: () => XPropertySetRegistry): Self = StObject.set(x, "getRegistry", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegistry(value: XPropertySetRegistry): Self = this.set("Registry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetKey(value: () => String): Self = this.set("getKey", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRegistry(value: () => XPropertySetRegistry): Self = this.set("getRegistry", js.Any.fromFunction0(value))
+    def setRegistry(value: XPropertySetRegistry): Self = StObject.set(x, "Registry", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.braintree.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("braintree", "ApplePayCard")
 @js.native
 class ApplePayCard () extends PaymentMethod {
+  
+  var default: Boolean = js.native
   
   var bin: String = js.native
   
@@ -18,8 +21,6 @@ class ApplePayCard () extends PaymentMethod {
   var createdAt: Date = js.native
   
   var customerId: String = js.native
-  
-  var default: Boolean = js.native
   
   var expirationMonth: String = js.native
   

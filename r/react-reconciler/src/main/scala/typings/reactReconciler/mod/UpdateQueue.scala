@@ -1,11 +1,12 @@
 package typings.reactReconciler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateQueue[State] extends js.Object {
+trait UpdateQueue[State] extends StObject {
   
   var baseState: State = js.native
   
@@ -34,69 +35,57 @@ object UpdateQueue {
   }
   
   @scala.inline
-  implicit class UpdateQueueOps[Self <: UpdateQueue[_], State] (val x: Self with UpdateQueue[State]) extends AnyVal {
+  implicit class UpdateQueueMutableBuilder[Self <: UpdateQueue[_], State] (val x: Self with UpdateQueue[State]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseState(value: State): Self = StObject.set(x, "baseState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstCapturedEffect(value: Update[State]): Self = StObject.set(x, "firstCapturedEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstCapturedEffectNull: Self = StObject.set(x, "firstCapturedEffect", null)
     
     @scala.inline
-    def setBaseState(value: State): Self = this.set("baseState", value.asInstanceOf[js.Any])
+    def setFirstCapturedUpdate(value: Update[State]): Self = StObject.set(x, "firstCapturedUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstCapturedEffect(value: Update[State]): Self = this.set("firstCapturedEffect", value.asInstanceOf[js.Any])
+    def setFirstCapturedUpdateNull: Self = StObject.set(x, "firstCapturedUpdate", null)
     
     @scala.inline
-    def setFirstCapturedEffectNull: Self = this.set("firstCapturedEffect", null)
+    def setFirstEffect(value: Update[State]): Self = StObject.set(x, "firstEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstCapturedUpdate(value: Update[State]): Self = this.set("firstCapturedUpdate", value.asInstanceOf[js.Any])
+    def setFirstEffectNull: Self = StObject.set(x, "firstEffect", null)
     
     @scala.inline
-    def setFirstCapturedUpdateNull: Self = this.set("firstCapturedUpdate", null)
+    def setFirstUpdate(value: Update[State]): Self = StObject.set(x, "firstUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstEffect(value: Update[State]): Self = this.set("firstEffect", value.asInstanceOf[js.Any])
+    def setFirstUpdateNull: Self = StObject.set(x, "firstUpdate", null)
     
     @scala.inline
-    def setFirstEffectNull: Self = this.set("firstEffect", null)
+    def setLastCapturedEffect(value: Update[State]): Self = StObject.set(x, "lastCapturedEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstUpdate(value: Update[State]): Self = this.set("firstUpdate", value.asInstanceOf[js.Any])
+    def setLastCapturedEffectNull: Self = StObject.set(x, "lastCapturedEffect", null)
     
     @scala.inline
-    def setFirstUpdateNull: Self = this.set("firstUpdate", null)
+    def setLastCapturedUpdate(value: Update[State]): Self = StObject.set(x, "lastCapturedUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastCapturedEffect(value: Update[State]): Self = this.set("lastCapturedEffect", value.asInstanceOf[js.Any])
+    def setLastCapturedUpdateNull: Self = StObject.set(x, "lastCapturedUpdate", null)
     
     @scala.inline
-    def setLastCapturedEffectNull: Self = this.set("lastCapturedEffect", null)
+    def setLastEffect(value: Update[State]): Self = StObject.set(x, "lastEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastCapturedUpdate(value: Update[State]): Self = this.set("lastCapturedUpdate", value.asInstanceOf[js.Any])
+    def setLastEffectNull: Self = StObject.set(x, "lastEffect", null)
     
     @scala.inline
-    def setLastCapturedUpdateNull: Self = this.set("lastCapturedUpdate", null)
+    def setLastUpdate(value: Update[State]): Self = StObject.set(x, "lastUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEffect(value: Update[State]): Self = this.set("lastEffect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastEffectNull: Self = this.set("lastEffect", null)
-    
-    @scala.inline
-    def setLastUpdate(value: Update[State]): Self = this.set("lastUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastUpdateNull: Self = this.set("lastUpdate", null)
+    def setLastUpdateNull: Self = StObject.set(x, "lastUpdate", null)
   }
 }

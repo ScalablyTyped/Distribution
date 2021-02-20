@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.personaTypesMod
 
 import typings.uifabricMergeStyles.istyleMod.IStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPersonaCoinStyles extends js.Object {
+trait IPersonaCoinStyles extends StObject {
   
   var coin: IStyle = js.native
   
@@ -27,63 +28,51 @@ object IPersonaCoinStyles {
   }
   
   @scala.inline
-  implicit class IPersonaCoinStylesOps[Self <: IPersonaCoinStyles] (val x: Self) extends AnyVal {
+  implicit class IPersonaCoinStylesMutableBuilder[Self <: IPersonaCoinStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoin(value: IStyle): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoinNull: Self = StObject.set(x, "coin", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoinUndefined: Self = StObject.set(x, "coin", js.undefined)
     
     @scala.inline
-    def setCoin(value: IStyle): Self = this.set("coin", value.asInstanceOf[js.Any])
+    def setImage(value: IStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCoin: Self = this.set("coin", js.undefined)
+    def setImageArea(value: IStyle): Self = StObject.set(x, "imageArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoinNull: Self = this.set("coin", null)
+    def setImageAreaNull: Self = StObject.set(x, "imageArea", null)
     
     @scala.inline
-    def setImage(value: IStyle): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setImageAreaUndefined: Self = StObject.set(x, "imageArea", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setImageNull: Self = StObject.set(x, "image", null)
     
     @scala.inline
-    def setImageNull: Self = this.set("image", null)
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def setImageArea(value: IStyle): Self = this.set("imageArea", value.asInstanceOf[js.Any])
+    def setInitials(value: IStyle): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageArea: Self = this.set("imageArea", js.undefined)
+    def setInitialsNull: Self = StObject.set(x, "initials", null)
     
     @scala.inline
-    def setImageAreaNull: Self = this.set("imageArea", null)
+    def setInitialsUndefined: Self = StObject.set(x, "initials", js.undefined)
     
     @scala.inline
-    def setInitials(value: IStyle): Self = this.set("initials", value.asInstanceOf[js.Any])
+    def setSize10WithoutPresenceIcon(value: IStyle): Self = StObject.set(x, "size10WithoutPresenceIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitials: Self = this.set("initials", js.undefined)
+    def setSize10WithoutPresenceIconNull: Self = StObject.set(x, "size10WithoutPresenceIcon", null)
     
     @scala.inline
-    def setInitialsNull: Self = this.set("initials", null)
-    
-    @scala.inline
-    def setSize10WithoutPresenceIcon(value: IStyle): Self = this.set("size10WithoutPresenceIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize10WithoutPresenceIcon: Self = this.set("size10WithoutPresenceIcon", js.undefined)
-    
-    @scala.inline
-    def setSize10WithoutPresenceIconNull: Self = this.set("size10WithoutPresenceIcon", null)
+    def setSize10WithoutPresenceIconUndefined: Self = StObject.set(x, "size10WithoutPresenceIcon", js.undefined)
   }
 }

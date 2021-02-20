@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTeamMemberResult extends js.Object {
+trait UpdateTeamMemberResult extends StObject {
   
   /**
     * The project role granted to the user.
@@ -31,36 +32,24 @@ object UpdateTeamMemberResult {
   }
   
   @scala.inline
-  implicit class UpdateTeamMemberResultOps[Self <: UpdateTeamMemberResult] (val x: Self) extends AnyVal {
+  implicit class UpdateTeamMemberResultMutableBuilder[Self <: UpdateTeamMemberResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjectRole(value: Role): Self = StObject.set(x, "projectRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectRoleUndefined: Self = StObject.set(x, "projectRole", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoteAccessAllowed(value: RemoteAccessAllowed): Self = StObject.set(x, "remoteAccessAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectRole(value: Role): Self = this.set("projectRole", value.asInstanceOf[js.Any])
+    def setRemoteAccessAllowedUndefined: Self = StObject.set(x, "remoteAccessAllowed", js.undefined)
     
     @scala.inline
-    def deleteProjectRole: Self = this.set("projectRole", js.undefined)
+    def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteAccessAllowed(value: RemoteAccessAllowed): Self = this.set("remoteAccessAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoteAccessAllowed: Self = this.set("remoteAccessAllowed", js.undefined)
-    
-    @scala.inline
-    def setUserArn(value: UserArn): Self = this.set("userArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserArn: Self = this.set("userArn", js.undefined)
+    def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
   }
 }

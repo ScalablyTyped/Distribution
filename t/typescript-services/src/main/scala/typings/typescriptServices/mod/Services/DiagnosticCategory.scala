@@ -1,5 +1,6 @@
 package typings.typescriptServices.mod.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,16 +9,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DiagnosticCategory ()
   extends typings.typescriptServices.TypeScript.Services.DiagnosticCategory
-/* static members */
-@JSImport("typescript-services", "Services.DiagnosticCategory")
-@js.native
-object DiagnosticCategory extends js.Object {
+object DiagnosticCategory {
   
-  var error: String = js.native
+  @JSImport("typescript-services", "Services.DiagnosticCategory")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var message: String = js.native
+  /* static member */
+  @JSImport("typescript-services", "Services.DiagnosticCategory.error")
+  @js.native
+  def error: String = js.native
+  @scala.inline
+  def error_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
   
-  var none: String = js.native
+  /* static member */
+  @JSImport("typescript-services", "Services.DiagnosticCategory.message")
+  @js.native
+  def message: String = js.native
+  @scala.inline
+  def message_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
   
-  var warning: String = js.native
+  /* static member */
+  @JSImport("typescript-services", "Services.DiagnosticCategory.none")
+  @js.native
+  def none: String = js.native
+  @scala.inline
+  def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("typescript-services", "Services.DiagnosticCategory.warning")
+  @js.native
+  def warning: String = js.native
+  @scala.inline
+  def warning_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
 }

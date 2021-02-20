@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SimpleOrientation extends js.Object
+sealed trait SimpleOrientation extends StObject
 /** Indicates the orientation of the device. */
 @JSGlobal("Windows.Devices.Sensors.SimpleOrientation")
 @js.native
-object SimpleOrientation extends js.Object {
+object SimpleOrientation extends StObject {
   
   /** The device is face-down and the display is hidden from the user. */
   @js.native

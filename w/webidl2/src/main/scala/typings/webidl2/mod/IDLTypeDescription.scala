@@ -8,6 +8,7 @@ import typings.webidl2.webidl2Strings.Promise
 import typings.webidl2.webidl2Strings._empty
 import typings.webidl2.webidl2Strings.record
 import typings.webidl2.webidl2Strings.sequence
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,47 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webidl2.mod.SingleTypeDescription
   - typings.webidl2.mod.UnionTypeDescription
 */
-trait IDLTypeDescription extends js.Object
+trait IDLTypeDescription extends StObject
 object IDLTypeDescription {
-  
-  @scala.inline
-  def SingleTypeDescription(
-    extAttrs: js.Array[ExtendedAttribute],
-    generic: _empty,
-    idlType: String,
-    nullable: Boolean,
-    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
-    union: `false`
-  ): IDLTypeDescription = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLTypeDescription]
-  }
-  
-  @scala.inline
-  def SequenceTypeDescription(
-    extAttrs: js.Array[ExtendedAttribute],
-    generic: sequence,
-    idlType: js.Array[IDLTypeDescription],
-    nullable: Boolean,
-    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
-    union: `false`
-  ): IDLTypeDescription = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLTypeDescription]
-  }
-  
-  @scala.inline
-  def PromiseTypeDescription(
-    extAttrs: js.Array[ExtendedAttribute],
-    generic: Promise,
-    idlType: js.Array[IDLTypeDescription],
-    nullable: Boolean,
-    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
-    union: `false`
-  ): IDLTypeDescription = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLTypeDescription]
-  }
   
   @scala.inline
   def FrozenArrayTypeDescription(
@@ -67,22 +29,9 @@ object IDLTypeDescription {
     nullable: Boolean,
     parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
     union: `false`
-  ): IDLTypeDescription = {
+  ): typings.webidl2.mod.FrozenArrayTypeDescription = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLTypeDescription]
-  }
-  
-  @scala.inline
-  def RecordTypeDescription(
-    extAttrs: js.Array[ExtendedAttribute],
-    generic: record,
-    idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
-    nullable: Boolean,
-    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
-    union: `false`
-  ): IDLTypeDescription = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLTypeDescription]
+    __obj.asInstanceOf[typings.webidl2.mod.FrozenArrayTypeDescription]
   }
   
   @scala.inline
@@ -93,9 +42,61 @@ object IDLTypeDescription {
     nullable: Boolean,
     parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
     union: `false`
-  ): IDLTypeDescription = {
+  ): typings.webidl2.mod.ObservableArrayTypeDescription = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLTypeDescription]
+    __obj.asInstanceOf[typings.webidl2.mod.ObservableArrayTypeDescription]
+  }
+  
+  @scala.inline
+  def PromiseTypeDescription(
+    extAttrs: js.Array[ExtendedAttribute],
+    generic: Promise,
+    idlType: js.Array[IDLTypeDescription],
+    nullable: Boolean,
+    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
+    union: `false`
+  ): typings.webidl2.mod.PromiseTypeDescription = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.webidl2.mod.PromiseTypeDescription]
+  }
+  
+  @scala.inline
+  def RecordTypeDescription(
+    extAttrs: js.Array[ExtendedAttribute],
+    generic: record,
+    idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
+    nullable: Boolean,
+    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
+    union: `false`
+  ): typings.webidl2.mod.RecordTypeDescription = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.webidl2.mod.RecordTypeDescription]
+  }
+  
+  @scala.inline
+  def SequenceTypeDescription(
+    extAttrs: js.Array[ExtendedAttribute],
+    generic: sequence,
+    idlType: js.Array[IDLTypeDescription],
+    nullable: Boolean,
+    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
+    union: `false`
+  ): typings.webidl2.mod.SequenceTypeDescription = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.webidl2.mod.SequenceTypeDescription]
+  }
+  
+  @scala.inline
+  def SingleTypeDescription(
+    extAttrs: js.Array[ExtendedAttribute],
+    generic: _empty,
+    idlType: String,
+    nullable: Boolean,
+    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
+    union: `false`
+  ): typings.webidl2.mod.SingleTypeDescription = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.webidl2.mod.SingleTypeDescription]
   }
   
   @scala.inline
@@ -106,8 +107,8 @@ object IDLTypeDescription {
     nullable: Boolean,
     parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | typings.webidl2.mod.UnionTypeDescription,
     union: `true`
-  ): IDLTypeDescription = {
+  ): typings.webidl2.mod.UnionTypeDescription = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLTypeDescription]
+    __obj.asInstanceOf[typings.webidl2.mod.UnionTypeDescription]
   }
 }

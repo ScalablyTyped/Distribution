@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaShipmentInvoice extends js.Object {
+trait SchemaShipmentInvoice extends StObject {
   
   /**
     * [required] Invoice summary.
@@ -33,39 +34,27 @@ object SchemaShipmentInvoice {
   }
   
   @scala.inline
-  implicit class SchemaShipmentInvoiceOps[Self <: SchemaShipmentInvoice] (val x: Self) extends AnyVal {
+  implicit class SchemaShipmentInvoiceMutableBuilder[Self <: SchemaShipmentInvoice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvoiceSummary(value: SchemaInvoiceSummary): Self = StObject.set(x, "invoiceSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvoiceSummaryUndefined: Self = StObject.set(x, "invoiceSummary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineItemInvoices(value: js.Array[SchemaShipmentInvoiceLineItemInvoice]): Self = StObject.set(x, "lineItemInvoices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoiceSummary(value: SchemaInvoiceSummary): Self = this.set("invoiceSummary", value.asInstanceOf[js.Any])
+    def setLineItemInvoicesUndefined: Self = StObject.set(x, "lineItemInvoices", js.undefined)
     
     @scala.inline
-    def deleteInvoiceSummary: Self = this.set("invoiceSummary", js.undefined)
+    def setLineItemInvoicesVarargs(value: SchemaShipmentInvoiceLineItemInvoice*): Self = StObject.set(x, "lineItemInvoices", js.Array(value :_*))
     
     @scala.inline
-    def setLineItemInvoicesVarargs(value: SchemaShipmentInvoiceLineItemInvoice*): Self = this.set("lineItemInvoices", js.Array(value :_*))
+    def setShipmentGroupId(value: String): Self = StObject.set(x, "shipmentGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineItemInvoices(value: js.Array[SchemaShipmentInvoiceLineItemInvoice]): Self = this.set("lineItemInvoices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineItemInvoices: Self = this.set("lineItemInvoices", js.undefined)
-    
-    @scala.inline
-    def setShipmentGroupId(value: String): Self = this.set("shipmentGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipmentGroupId: Self = this.set("shipmentGroupId", js.undefined)
+    def setShipmentGroupIdUndefined: Self = StObject.set(x, "shipmentGroupId", js.undefined)
   }
 }

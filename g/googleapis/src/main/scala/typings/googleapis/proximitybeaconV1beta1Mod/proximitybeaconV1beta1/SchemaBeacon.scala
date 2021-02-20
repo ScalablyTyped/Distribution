@@ -1,6 +1,7 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details of a beacon device.
   */
 @js.native
-trait SchemaBeacon extends js.Object {
+trait SchemaBeacon extends StObject {
   
   /**
     * The identifier of a beacon as advertised by it. This field must be
@@ -106,84 +107,72 @@ object SchemaBeacon {
   }
   
   @scala.inline
-  implicit class SchemaBeaconOps[Self <: SchemaBeacon] (val x: Self) extends AnyVal {
+  implicit class SchemaBeaconMutableBuilder[Self <: SchemaBeacon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertisedId(value: SchemaAdvertisedId): Self = StObject.set(x, "advertisedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertisedIdUndefined: Self = StObject.set(x, "advertisedId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeaconName(value: String): Self = StObject.set(x, "beaconName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertisedId(value: SchemaAdvertisedId): Self = this.set("advertisedId", value.asInstanceOf[js.Any])
+    def setBeaconNameUndefined: Self = StObject.set(x, "beaconName", js.undefined)
     
     @scala.inline
-    def deleteAdvertisedId: Self = this.set("advertisedId", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeaconName(value: String): Self = this.set("beaconName", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBeaconName: Self = this.set("beaconName", js.undefined)
+    def setEphemeralIdRegistration(value: SchemaEphemeralIdRegistration): Self = StObject.set(x, "ephemeralIdRegistration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEphemeralIdRegistrationUndefined: Self = StObject.set(x, "ephemeralIdRegistration", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setExpectedStability(value: String): Self = StObject.set(x, "expectedStability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEphemeralIdRegistration(value: SchemaEphemeralIdRegistration): Self = this.set("ephemeralIdRegistration", value.asInstanceOf[js.Any])
+    def setExpectedStabilityUndefined: Self = StObject.set(x, "expectedStability", js.undefined)
     
     @scala.inline
-    def deleteEphemeralIdRegistration: Self = this.set("ephemeralIdRegistration", js.undefined)
+    def setIndoorLevel(value: SchemaIndoorLevel): Self = StObject.set(x, "indoorLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedStability(value: String): Self = this.set("expectedStability", value.asInstanceOf[js.Any])
+    def setIndoorLevelUndefined: Self = StObject.set(x, "indoorLevel", js.undefined)
     
     @scala.inline
-    def deleteExpectedStability: Self = this.set("expectedStability", js.undefined)
+    def setLatLng(value: SchemaLatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndoorLevel(value: SchemaIndoorLevel): Self = this.set("indoorLevel", value.asInstanceOf[js.Any])
+    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
     
     @scala.inline
-    def deleteIndoorLevel: Self = this.set("indoorLevel", js.undefined)
+    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatLng(value: SchemaLatLng): Self = this.set("latLng", value.asInstanceOf[js.Any])
+    def setPlaceIdUndefined: Self = StObject.set(x, "placeId", js.undefined)
     
     @scala.inline
-    def deleteLatLng: Self = this.set("latLng", js.undefined)
+    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceId(value: String): Self = this.set("placeId", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deletePlaceId: Self = this.set("placeId", js.undefined)
+    def setProvisioningKey(value: String): Self = StObject.set(x, "provisioningKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setProvisioningKeyUndefined: Self = StObject.set(x, "provisioningKey", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningKey(value: String): Self = this.set("provisioningKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisioningKey: Self = this.set("provisioningKey", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

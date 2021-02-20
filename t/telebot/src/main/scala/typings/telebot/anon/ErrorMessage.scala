@@ -1,11 +1,12 @@
 package typings.telebot.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorMessage extends js.Object {
+trait ErrorMessage extends StObject {
   
   var errorMessage: js.UndefOr[String] = js.native
   
@@ -20,33 +21,21 @@ object ErrorMessage {
   }
   
   @scala.inline
-  implicit class ErrorMessageOps[Self <: ErrorMessage] (val x: Self) extends AnyVal {
+  implicit class ErrorMessageMutableBuilder[Self <: ErrorMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShippingOptions(value: js.Array[_]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setShippingOptionsUndefined: Self = StObject.set(x, "shippingOptions", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
-    
-    @scala.inline
-    def setShippingOptionsVarargs(value: js.Any*): Self = this.set("shippingOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setShippingOptions(value: js.Array[_]): Self = this.set("shippingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingOptions: Self = this.set("shippingOptions", js.undefined)
+    def setShippingOptionsVarargs(value: js.Any*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
   }
 }

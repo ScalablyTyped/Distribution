@@ -19,6 +19,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.style.XStyle
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -182,72 +183,60 @@ object Shape {
   }
   
   @scala.inline
-  implicit class ShapeOps[Self <: Shape] (val x: Self) extends AnyVal {
+  implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHyperlink(value: String): Self = StObject.set(x, "Hyperlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "InteropGrabBag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayerID(value: Double): Self = StObject.set(x, "LayerID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlink(value: String): Self = this.set("Hyperlink", value.asInstanceOf[js.Any])
+    def setLayerName(value: String): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteropGrabBag(value: SafeArray[PropertyValue]): Self = this.set("InteropGrabBag", value.asInstanceOf[js.Any])
+    def setMoveProtect(value: Boolean): Self = StObject.set(x, "MoveProtect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerID(value: Double): Self = this.set("LayerID", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerName(value: String): Self = this.set("LayerName", value.asInstanceOf[js.Any])
+    def setNavigationOrder(value: Double): Self = StObject.set(x, "NavigationOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveProtect(value: Boolean): Self = this.set("MoveProtect", value.asInstanceOf[js.Any])
+    def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRelativeHeight(value: Double): Self = StObject.set(x, "RelativeHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationOrder(value: Double): Self = this.set("NavigationOrder", value.asInstanceOf[js.Any])
+    def setRelativeHeightRelation(value: Double): Self = StObject.set(x, "RelativeHeightRelation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintable(value: Boolean): Self = this.set("Printable", value.asInstanceOf[js.Any])
+    def setRelativeWidth(value: Double): Self = StObject.set(x, "RelativeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeHeight(value: Double): Self = this.set("RelativeHeight", value.asInstanceOf[js.Any])
+    def setRelativeWidthRelation(value: Double): Self = StObject.set(x, "RelativeWidthRelation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeHeightRelation(value: Double): Self = this.set("RelativeHeightRelation", value.asInstanceOf[js.Any])
+    def setShapeUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "ShapeUserDefinedAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeWidth(value: Double): Self = this.set("RelativeWidth", value.asInstanceOf[js.Any])
+    def setSizeProtect(value: Boolean): Self = StObject.set(x, "SizeProtect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeWidthRelation(value: Double): Self = this.set("RelativeWidthRelation", value.asInstanceOf[js.Any])
+    def setStyle(value: XStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeUserDefinedAttributes(value: XNameContainer): Self = this.set("ShapeUserDefinedAttributes", value.asInstanceOf[js.Any])
+    def setTransformation(value: HomogenMatrix3): Self = StObject.set(x, "Transformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeProtect(value: Boolean): Self = this.set("SizeProtect", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: XStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransformation(value: HomogenMatrix3): Self = this.set("Transformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZOrder(value: Double): Self = this.set("ZOrder", value.asInstanceOf[js.Any])
+    def setZOrder(value: Double): Self = StObject.set(x, "ZOrder", value.asInstanceOf[js.Any])
   }
 }

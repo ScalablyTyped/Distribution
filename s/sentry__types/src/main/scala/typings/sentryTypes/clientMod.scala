@@ -9,16 +9,15 @@ import typings.sentryTypes.optionsMod.Options
 import typings.sentryTypes.scopeMod.Scope
 import typings.sentryTypes.sessionMod.Session
 import typings.sentryTypes.severityMod.Severity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/types/dist/client", JSImport.Namespace)
-@js.native
-object clientMod extends js.Object {
+object clientMod {
   
   @js.native
-  trait Client[O /* <: Options */] extends js.Object {
+  trait Client[O /* <: Options */] extends StObject {
     
     /**
       * Captures a manually created event and sends it to Sentry.

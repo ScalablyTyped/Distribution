@@ -19,12 +19,13 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.UPC_A
 import typings.wechatMiniprogram.wechatMiniprogramStrings.UPC_E
 import typings.wechatMiniprogram.wechatMiniprogramStrings.UPC_EAN_EXTENSION
 import typings.wechatMiniprogram.wechatMiniprogramStrings.WX_CODE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScanCodeSuccessCallbackResult extends js.Object {
+trait ScanCodeSuccessCallbackResult extends StObject {
   
   /** 所扫码的字符集 */
   var charSet: String = js.native
@@ -80,38 +81,26 @@ object ScanCodeSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class ScanCodeSuccessCallbackResultOps[Self <: ScanCodeSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class ScanCodeSuccessCallbackResultMutableBuilder[Self <: ScanCodeSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharSet(value: String): Self = this.set("charSet", value.asInstanceOf[js.Any])
+    def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawData(value: String): Self = this.set("rawData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: String): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setScanType(
       value: QR_CODE | AZTEC | CODABAR | CODE_39 | CODE_93 | CODE_128 | DATA_MATRIX | EAN_8 | EAN_13 | ITF | MAXICODE | PDF_417 | RSS_14 | RSS_EXPANDED | UPC_A | UPC_E | UPC_EAN_EXTENSION | WX_CODE | CODE_25
-    ): Self = this.set("scanType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
   }
 }

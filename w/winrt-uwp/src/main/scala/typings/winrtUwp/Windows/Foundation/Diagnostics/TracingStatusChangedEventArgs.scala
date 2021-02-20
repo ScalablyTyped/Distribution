@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the TracingStatusChanged event. */
 @js.native
-trait TracingStatusChangedEventArgs extends js.Object {
+trait TracingStatusChangedEventArgs extends StObject {
   
   /** Gets a value that indicates whether tracing is active. */
   var enabled: Boolean = js.native
@@ -23,24 +24,12 @@ object TracingStatusChangedEventArgs {
   }
   
   @scala.inline
-  implicit class TracingStatusChangedEventArgsOps[Self <: TracingStatusChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class TracingStatusChangedEventArgsMutableBuilder[Self <: TracingStatusChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTraceLevel(value: CausalityTraceLevel): Self = this.set("traceLevel", value.asInstanceOf[js.Any])
+    def setTraceLevel(value: CausalityTraceLevel): Self = StObject.set(x, "traceLevel", value.asInstanceOf[js.Any])
   }
 }

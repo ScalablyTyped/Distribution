@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesListBucketMetricsConfigurationsInputMod.L
 import typings.awsSdkClientS3Node.typesListBucketMetricsConfigurationsOutputMod.ListBucketMetricsConfigurationsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/ListBucketMetricsConfigurationsCommand", JSImport.Namespace)
-@js.native
-object listBucketMetricsConfigurationsCommandMod extends js.Object {
+object listBucketMetricsConfigurationsCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/ListBucketMetricsConfigurationsCommand", "ListBucketMetricsConfigurationsCommand")
   @js.native
   class ListBucketMetricsConfigurationsCommand protected () extends Command[
           InputTypesUnion, 

@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EsamSettings extends js.Object {
+trait EsamSettings extends StObject {
   
   /**
     * Specifies an ESAM ManifestConfirmConditionNotification XML as per OC-SP-ESAM-API-I03-131025. The transcoder uses the manifest conditioning instructions that you provide in the setting MCC XML (mccXml).
@@ -31,36 +32,24 @@ object EsamSettings {
   }
   
   @scala.inline
-  implicit class EsamSettingsOps[Self <: EsamSettings] (val x: Self) extends AnyVal {
+  implicit class EsamSettingsMutableBuilder[Self <: EsamSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManifestConfirmConditionNotification(value: EsamManifestConfirmConditionNotification): Self = StObject.set(x, "ManifestConfirmConditionNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManifestConfirmConditionNotificationUndefined: Self = StObject.set(x, "ManifestConfirmConditionNotification", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseSignalPreroll(value: integerMin0Max30000): Self = StObject.set(x, "ResponseSignalPreroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestConfirmConditionNotification(value: EsamManifestConfirmConditionNotification): Self = this.set("ManifestConfirmConditionNotification", value.asInstanceOf[js.Any])
+    def setResponseSignalPrerollUndefined: Self = StObject.set(x, "ResponseSignalPreroll", js.undefined)
     
     @scala.inline
-    def deleteManifestConfirmConditionNotification: Self = this.set("ManifestConfirmConditionNotification", js.undefined)
+    def setSignalProcessingNotification(value: EsamSignalProcessingNotification): Self = StObject.set(x, "SignalProcessingNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseSignalPreroll(value: integerMin0Max30000): Self = this.set("ResponseSignalPreroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseSignalPreroll: Self = this.set("ResponseSignalPreroll", js.undefined)
-    
-    @scala.inline
-    def setSignalProcessingNotification(value: EsamSignalProcessingNotification): Self = this.set("SignalProcessingNotification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignalProcessingNotification: Self = this.set("SignalProcessingNotification", js.undefined)
+    def setSignalProcessingNotificationUndefined: Self = StObject.set(x, "SignalProcessingNotification", js.undefined)
   }
 }

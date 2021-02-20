@@ -1,12 +1,13 @@
 package typings.activexShdocvw.SHDocVw
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** WebBrowser Control */
 @js.native
-trait WebBrowser extends js.Object {
+trait WebBrowser extends StObject {
   
   /** Controls whether address bar is shown (ignored by WebBrowser) */
   var AddressBar: Boolean = js.native

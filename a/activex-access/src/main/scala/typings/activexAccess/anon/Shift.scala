@@ -1,11 +1,12 @@
 package typings.activexAccess.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Shift extends js.Object {
+trait Shift extends StObject {
   
   val FieldList: Double = js.native
   
@@ -22,27 +23,15 @@ object Shift {
   }
   
   @scala.inline
-  implicit class ShiftOps[Self <: Shift] (val x: Self) extends AnyVal {
+  implicit class ShiftMutableBuilder[Self <: Shift] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldList(value: Double): Self = StObject.set(x, "FieldList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyCode(value: Double): Self = StObject.set(x, "KeyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFieldList(value: Double): Self = this.set("FieldList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyCode(value: Double): Self = this.set("KeyCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShift(value: Double): Self = this.set("Shift", value.asInstanceOf[js.Any])
+    def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
   }
 }

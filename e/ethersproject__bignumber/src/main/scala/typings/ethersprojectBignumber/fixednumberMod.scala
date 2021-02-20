@@ -3,23 +3,16 @@ package typings.ethersprojectBignumber
 import typings.ethersprojectBignumber.bignumberMod.BigNumber
 import typings.ethersprojectBignumber.bignumberMod.BigNumberish
 import typings.ethersprojectBytes.mod.BytesLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/bignumber/lib/fixednumber", JSImport.Namespace)
-@js.native
-object fixednumberMod extends js.Object {
+object fixednumberMod {
   
-  def formatFixed(value: BigNumberish): String = js.native
-  def formatFixed(value: BigNumberish, decimals: String): String = js.native
-  def formatFixed(value: BigNumberish, decimals: BigNumberish): String = js.native
-  
-  def parseFixed(value: String): BigNumber = js.native
-  def parseFixed(value: String, decimals: BigNumberish): BigNumber = js.native
-  
+  @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedFormat")
   @js.native
-  class FixedFormat protected () extends js.Object {
+  class FixedFormat protected () extends StObject {
     def this(constructorGuard: js.Any, signed: Boolean, width: Double, decimals: Double) = this()
     
     val _multiplier: String = js.native
@@ -33,14 +26,16 @@ object fixednumberMod extends js.Object {
     val width: Double = js.native
   }
   /* static members */
-  @js.native
-  object FixedFormat extends js.Object {
+  object FixedFormat {
     
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedFormat.from")
+    @js.native
     def from(value: js.Any): FixedFormat = js.native
   }
   
+  @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber")
   @js.native
-  class FixedNumber protected () extends js.Object {
+  class FixedNumber protected () extends StObject {
     def this(constructorGuard: js.Any, hex: String, value: String) = this()
     def this(constructorGuard: js.Any, hex: String, value: String, format: FixedFormat) = this()
     
@@ -82,26 +77,70 @@ object fixednumberMod extends js.Object {
     def toUnsafeFloat(): Double = js.native
   }
   /* static members */
-  @js.native
-  object FixedNumber extends js.Object {
+  object FixedNumber {
     
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.from")
+    @js.native
     def from(value: js.Any): FixedNumber = js.native
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.from")
+    @js.native
     def from(value: js.Any, format: String): FixedNumber = js.native
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.from")
+    @js.native
     def from(value: js.Any, format: FixedFormat): FixedNumber = js.native
     
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromBytes")
+    @js.native
     def fromBytes(value: BytesLike): FixedNumber = js.native
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromBytes")
+    @js.native
     def fromBytes(value: BytesLike, format: String): FixedNumber = js.native
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromBytes")
+    @js.native
     def fromBytes(value: BytesLike, format: FixedFormat): FixedNumber = js.native
     
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromString")
+    @js.native
     def fromString(value: String): FixedNumber = js.native
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromString")
+    @js.native
     def fromString(value: String, format: String): FixedNumber = js.native
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromString")
+    @js.native
     def fromString(value: String, format: FixedFormat): FixedNumber = js.native
     
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromValue")
+    @js.native
     def fromValue(value: BigNumber): FixedNumber = js.native
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromValue")
+    @js.native
     def fromValue(value: BigNumber, decimals: js.UndefOr[BigNumberish], format: String): FixedNumber = js.native
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromValue")
+    @js.native
     def fromValue(value: BigNumber, decimals: js.UndefOr[BigNumberish], format: FixedFormat): FixedNumber = js.native
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromValue")
+    @js.native
     def fromValue(value: BigNumber, decimals: BigNumberish): FixedNumber = js.native
     
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.isFixedNumber")
+    @js.native
     def isFixedNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean = js.native
   }
+  
+  @JSImport("@ethersproject/bignumber/lib/fixednumber", "formatFixed")
+  @js.native
+  def formatFixed(value: BigNumberish): String = js.native
+  @JSImport("@ethersproject/bignumber/lib/fixednumber", "formatFixed")
+  @js.native
+  def formatFixed(value: BigNumberish, decimals: String): String = js.native
+  @JSImport("@ethersproject/bignumber/lib/fixednumber", "formatFixed")
+  @js.native
+  def formatFixed(value: BigNumberish, decimals: BigNumberish): String = js.native
+  
+  @JSImport("@ethersproject/bignumber/lib/fixednumber", "parseFixed")
+  @js.native
+  def parseFixed(value: String): BigNumber = js.native
+  @JSImport("@ethersproject/bignumber/lib/fixednumber", "parseFixed")
+  @js.native
+  def parseFixed(value: String, decimals: BigNumberish): BigNumber = js.native
 }

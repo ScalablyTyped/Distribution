@@ -1,5 +1,6 @@
 package typings.jsforce.describeResultMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsforce.jsforceStrings.address
   - typings.jsforce.jsforceStrings.complexvalue
 */
-trait FieldType extends js.Object
+trait FieldType extends StObject
 object FieldType {
   
   @scala.inline

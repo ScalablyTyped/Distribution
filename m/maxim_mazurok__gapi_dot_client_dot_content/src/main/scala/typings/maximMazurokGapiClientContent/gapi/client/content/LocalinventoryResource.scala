@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientContent.anon.Key
 import typings.maximMazurokGapiClientContent.anon.PrettyPrintProductId
 import typings.maximMazurokGapiClientContent.anon.PrettyPrintQuotaUser
 import typings.maximMazurokGapiClientContent.anon.ProductId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalinventoryResource extends js.Object {
+trait LocalinventoryResource extends StObject {
   
   def custombatch(request: Key, body: LocalinventoryCustomBatchRequest): Request[LocalinventoryCustomBatchResponse] = js.native
   /** Updates local inventory for multiple products or stores in a single request. */

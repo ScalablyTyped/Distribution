@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VideoEncodingQuality extends js.Object
+sealed trait VideoEncodingQuality extends StObject
 /** Determines the video encoding format. */
 @JSGlobal("Windows.Media.MediaProperties.VideoEncodingQuality")
 @js.native
-object VideoEncodingQuality extends js.Object {
+object VideoEncodingQuality extends StObject {
   
   /** Auto fills in the proper settings based on the current camera settings. So when Auto is used, settings that are manually modified are ignored. For example, if you create a preset profile using one the static create methods, such as CreateWmv , and specify Auto as the encoding quality, any changes you make to the properties will be overwritten with values based on the current camera settings. */
   @js.native

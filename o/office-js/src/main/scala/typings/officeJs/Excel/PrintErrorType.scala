@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintErrorType extends js.Object
+sealed trait PrintErrorType extends StObject
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PrintErrorType")
 @js.native
-object PrintErrorType extends js.Object {
+object PrintErrorType extends StObject {
   
   @js.native
   sealed trait asDisplayed extends PrintErrorType

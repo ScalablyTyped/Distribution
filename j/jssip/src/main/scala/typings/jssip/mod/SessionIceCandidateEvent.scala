@@ -1,12 +1,13 @@
 package typings.jssip.mod
 
 import typings.std.RTCIceCandidate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionIceCandidateEvent extends js.Object {
+trait SessionIceCandidateEvent extends StObject {
   
   var candidate: RTCIceCandidate = js.native
   
@@ -21,24 +22,12 @@ object SessionIceCandidateEvent {
   }
   
   @scala.inline
-  implicit class SessionIceCandidateEventOps[Self <: SessionIceCandidateEvent] (val x: Self) extends AnyVal {
+  implicit class SessionIceCandidateEventMutableBuilder[Self <: SessionIceCandidateEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCandidate(value: RTCIceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCandidate(value: RTCIceCandidate): Self = this.set("candidate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReady(value: () => Unit): Self = this.set("ready", js.Any.fromFunction0(value))
+    def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
   }
 }

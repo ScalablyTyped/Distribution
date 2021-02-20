@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.logging
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.2
   */
 @js.native
-trait XSimpleLogRing extends js.Object {
+trait XSimpleLogRing extends StObject {
   
   /**
     * allows to get the collected messages from the logger
@@ -45,27 +46,15 @@ object XSimpleLogRing {
   }
   
   @scala.inline
-  implicit class XSimpleLogRingOps[Self <: XSimpleLogRing] (val x: Self) extends AnyVal {
+  implicit class XSimpleLogRingMutableBuilder[Self <: XSimpleLogRing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectedLog(value: SafeArray[String]): Self = StObject.set(x, "CollectedLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCollectedLog(value: () => SafeArray[String]): Self = StObject.set(x, "getCollectedLog", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCollectedLog(value: SafeArray[String]): Self = this.set("CollectedLog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetCollectedLog(value: () => SafeArray[String]): Self = this.set("getCollectedLog", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLogString(value: String => Unit): Self = this.set("logString", js.Any.fromFunction1(value))
+    def setLogString(value: String => Unit): Self = StObject.set(x, "logString", js.Any.fromFunction1(value))
   }
 }

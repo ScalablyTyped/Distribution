@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```
   */
 @js.native
-trait PaymentDataCallbacks extends js.Object {
+trait PaymentDataCallbacks extends StObject {
   
   /**
     * This method is called when a payment is authorized in the payment
@@ -48,34 +49,22 @@ object PaymentDataCallbacks {
   }
   
   @scala.inline
-  implicit class PaymentDataCallbacksOps[Self <: PaymentDataCallbacks] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class PaymentDataCallbacksMutableBuilder[Self <: PaymentDataCallbacks] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setOnPaymentAuthorized(
       value: /* paymentData */ PaymentData => js.Promise[PaymentAuthorizationResult] | PaymentAuthorizationResult
-    ): Self = this.set("onPaymentAuthorized", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onPaymentAuthorized", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPaymentAuthorized: Self = this.set("onPaymentAuthorized", js.undefined)
+    def setOnPaymentAuthorizedUndefined: Self = StObject.set(x, "onPaymentAuthorized", js.undefined)
     
     @scala.inline
     def setOnPaymentDataChanged(
       value: /* intermediatePaymentData */ IntermediatePaymentData => js.Promise[PaymentDataRequestUpdate] | PaymentDataRequestUpdate
-    ): Self = this.set("onPaymentDataChanged", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onPaymentDataChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPaymentDataChanged: Self = this.set("onPaymentDataChanged", js.undefined)
+    def setOnPaymentDataChangedUndefined: Self = StObject.set(x, "onPaymentDataChanged", js.undefined)
   }
 }

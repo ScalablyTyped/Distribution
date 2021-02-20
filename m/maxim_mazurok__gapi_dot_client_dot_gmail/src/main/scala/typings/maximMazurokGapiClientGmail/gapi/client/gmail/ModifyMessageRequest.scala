@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyMessageRequest extends js.Object {
+trait ModifyMessageRequest extends StObject {
   
   /** A list of IDs of labels to add to this message. */
   var addLabelIds: js.UndefOr[js.Array[String]] = js.native
@@ -22,36 +23,24 @@ object ModifyMessageRequest {
   }
   
   @scala.inline
-  implicit class ModifyMessageRequestOps[Self <: ModifyMessageRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyMessageRequestMutableBuilder[Self <: ModifyMessageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
     
     @scala.inline
-    def setAddLabelIdsVarargs(value: String*): Self = this.set("addLabelIds", js.Array(value :_*))
+    def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddLabelIds(value: js.Array[String]): Self = this.set("addLabelIds", value.asInstanceOf[js.Any])
+    def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
     
     @scala.inline
-    def deleteAddLabelIds: Self = this.set("addLabelIds", js.undefined)
-    
-    @scala.inline
-    def setRemoveLabelIdsVarargs(value: String*): Self = this.set("removeLabelIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoveLabelIds(value: js.Array[String]): Self = this.set("removeLabelIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveLabelIds: Self = this.set("removeLabelIds", js.undefined)
+    def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
   }
 }

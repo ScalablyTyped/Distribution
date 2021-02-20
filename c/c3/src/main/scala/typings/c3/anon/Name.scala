@@ -1,12 +1,13 @@
 package typings.c3.anon
 
 import typings.c3.mod.Primitive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Name extends js.Object {
+trait Name extends StObject {
   
   /**
     * Set format for the name of each data in tooltip.
@@ -53,40 +54,28 @@ object Name {
   }
   
   @scala.inline
-  implicit class NameOps[Self <: Name] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setName(
       value: (/* name */ String, /* ratio */ js.UndefOr[Double], /* id */ String, /* index */ Double) => String
-    ): Self = this.set("name", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "name", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setTitle(value: (/* x */ Primitive, /* index */ Double) => String): Self = this.set("title", js.Any.fromFunction2(value))
+    def setTitle(value: (/* x */ Primitive, /* index */ Double) => String): Self = StObject.set(x, "title", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
     def setValue(
       value: (/* value */ Primitive, /* ratio */ js.UndefOr[Double], /* id */ String, /* index */ Double) => js.UndefOr[String]
-    ): Self = this.set("value", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "value", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

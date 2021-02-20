@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,30 +47,18 @@ object XWindowListener {
   }
   
   @scala.inline
-  implicit class XWindowListenerOps[Self <: XWindowListener] (val x: Self) extends AnyVal {
+  implicit class XWindowListenerMutableBuilder[Self <: XWindowListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWindowHidden(value: EventObject => Unit): Self = StObject.set(x, "windowHidden", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWindowMoved(value: WindowEvent => Unit): Self = StObject.set(x, "windowMoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWindowResized(value: WindowEvent => Unit): Self = StObject.set(x, "windowResized", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWindowHidden(value: EventObject => Unit): Self = this.set("windowHidden", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWindowMoved(value: WindowEvent => Unit): Self = this.set("windowMoved", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWindowResized(value: WindowEvent => Unit): Self = this.set("windowResized", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWindowShown(value: EventObject => Unit): Self = this.set("windowShown", js.Any.fromFunction1(value))
+    def setWindowShown(value: EventObject => Unit): Self = StObject.set(x, "windowShown", js.Any.fromFunction1(value))
   }
 }

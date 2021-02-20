@@ -1,11 +1,12 @@
 package typings.rollup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeshakingOptions extends js.Object {
+trait TreeshakingOptions extends StObject {
   
   var annotations: js.UndefOr[Boolean] = js.native
   
@@ -29,66 +30,54 @@ object TreeshakingOptions {
   }
   
   @scala.inline
-  implicit class TreeshakingOptionsOps[Self <: TreeshakingOptions] (val x: Self) extends AnyVal {
+  implicit class TreeshakingOptionsMutableBuilder[Self <: TreeshakingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotations(value: Boolean): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModuleSideEffects(value: ModuleSideEffectsOption): Self = StObject.set(x, "moduleSideEffects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: Boolean): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setModuleSideEffectsFunction2(value: (/* id */ String, /* external */ Boolean) => Boolean): Self = StObject.set(x, "moduleSideEffects", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setModuleSideEffectsUndefined: Self = StObject.set(x, "moduleSideEffects", js.undefined)
     
     @scala.inline
-    def setModuleSideEffectsFunction2(value: (/* id */ String, /* external */ Boolean) => Boolean): Self = this.set("moduleSideEffects", js.Any.fromFunction2(value))
+    def setModuleSideEffectsVarargs(value: String*): Self = StObject.set(x, "moduleSideEffects", js.Array(value :_*))
     
     @scala.inline
-    def setModuleSideEffectsVarargs(value: String*): Self = this.set("moduleSideEffects", js.Array(value :_*))
+    def setPropertyReadSideEffects(value: Boolean): Self = StObject.set(x, "propertyReadSideEffects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleSideEffects(value: ModuleSideEffectsOption): Self = this.set("moduleSideEffects", value.asInstanceOf[js.Any])
+    def setPropertyReadSideEffectsUndefined: Self = StObject.set(x, "propertyReadSideEffects", js.undefined)
     
     @scala.inline
-    def deleteModuleSideEffects: Self = this.set("moduleSideEffects", js.undefined)
+    def setPureExternalModules(value: PureModulesOption): Self = StObject.set(x, "pureExternalModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyReadSideEffects(value: Boolean): Self = this.set("propertyReadSideEffects", value.asInstanceOf[js.Any])
+    def setPureExternalModulesFunction1(value: /* id */ String => js.UndefOr[Boolean | Null]): Self = StObject.set(x, "pureExternalModules", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePropertyReadSideEffects: Self = this.set("propertyReadSideEffects", js.undefined)
+    def setPureExternalModulesUndefined: Self = StObject.set(x, "pureExternalModules", js.undefined)
     
     @scala.inline
-    def setPureExternalModulesVarargs(value: String*): Self = this.set("pureExternalModules", js.Array(value :_*))
+    def setPureExternalModulesVarargs(value: String*): Self = StObject.set(x, "pureExternalModules", js.Array(value :_*))
     
     @scala.inline
-    def setPureExternalModulesFunction1(value: /* id */ String => js.UndefOr[Boolean | Null]): Self = this.set("pureExternalModules", js.Any.fromFunction1(value))
+    def setTryCatchDeoptimization(value: Boolean): Self = StObject.set(x, "tryCatchDeoptimization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPureExternalModules(value: PureModulesOption): Self = this.set("pureExternalModules", value.asInstanceOf[js.Any])
+    def setTryCatchDeoptimizationUndefined: Self = StObject.set(x, "tryCatchDeoptimization", js.undefined)
     
     @scala.inline
-    def deletePureExternalModules: Self = this.set("pureExternalModules", js.undefined)
+    def setUnknownGlobalSideEffects(value: Boolean): Self = StObject.set(x, "unknownGlobalSideEffects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTryCatchDeoptimization(value: Boolean): Self = this.set("tryCatchDeoptimization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTryCatchDeoptimization: Self = this.set("tryCatchDeoptimization", js.undefined)
-    
-    @scala.inline
-    def setUnknownGlobalSideEffects(value: Boolean): Self = this.set("unknownGlobalSideEffects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknownGlobalSideEffects: Self = this.set("unknownGlobalSideEffects", js.undefined)
+    def setUnknownGlobalSideEffectsUndefined: Self = StObject.set(x, "unknownGlobalSideEffects", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteImagePermissionsRequest extends js.Object {
+trait DeleteImagePermissionsRequest extends StObject {
   
   /**
     * The name of the private image.
@@ -26,24 +27,12 @@ object DeleteImagePermissionsRequest {
   }
   
   @scala.inline
-  implicit class DeleteImagePermissionsRequestOps[Self <: DeleteImagePermissionsRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteImagePermissionsRequestMutableBuilder[Self <: DeleteImagePermissionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharedAccountId(value: AwsAccountId): Self = this.set("SharedAccountId", value.asInstanceOf[js.Any])
+    def setSharedAccountId(value: AwsAccountId): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
   }
 }

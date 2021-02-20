@@ -2,12 +2,13 @@ package typings.qlikEngineapi.anon
 
 import typings.qlikEngineapi.EngineAPI.ISourceKeyRecord
 import typings.qlikEngineapi.EngineAPI.ITableRecord
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Qk extends js.Object {
+trait Qk extends StObject {
   
   var qk: js.Array[ISourceKeyRecord] = js.native
   
@@ -22,30 +23,18 @@ object Qk {
   }
   
   @scala.inline
-  implicit class QkOps[Self <: Qk] (val x: Self) extends AnyVal {
+  implicit class QkMutableBuilder[Self <: Qk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQk(value: js.Array[ISourceKeyRecord]): Self = StObject.set(x, "qk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQkVarargs(value: ISourceKeyRecord*): Self = StObject.set(x, "qk", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQtr(value: js.Array[ITableRecord]): Self = StObject.set(x, "qtr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQkVarargs(value: ISourceKeyRecord*): Self = this.set("qk", js.Array(value :_*))
-    
-    @scala.inline
-    def setQk(value: js.Array[ISourceKeyRecord]): Self = this.set("qk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQtrVarargs(value: ITableRecord*): Self = this.set("qtr", js.Array(value :_*))
-    
-    @scala.inline
-    def setQtr(value: js.Array[ITableRecord]): Self = this.set("qtr", value.asInstanceOf[js.Any])
+    def setQtrVarargs(value: ITableRecord*): Self = StObject.set(x, "qtr", js.Array(value :_*))
   }
 }

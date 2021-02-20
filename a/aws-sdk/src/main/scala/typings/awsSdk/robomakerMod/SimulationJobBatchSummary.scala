@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimulationJobBatchSummary extends js.Object {
+trait SimulationJobBatchSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the batch.
@@ -51,60 +52,48 @@ object SimulationJobBatchSummary {
   }
   
   @scala.inline
-  implicit class SimulationJobBatchSummaryOps[Self <: SimulationJobBatchSummary] (val x: Self) extends AnyVal {
+  implicit class SimulationJobBatchSummaryMutableBuilder[Self <: SimulationJobBatchSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setCreatedRequestCount(value: Integer): Self = StObject.set(x, "createdRequestCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setCreatedRequestCountUndefined: Self = StObject.set(x, "createdRequestCount", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setFailedRequestCount(value: Integer): Self = StObject.set(x, "failedRequestCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedRequestCount(value: Integer): Self = this.set("createdRequestCount", value.asInstanceOf[js.Any])
+    def setFailedRequestCountUndefined: Self = StObject.set(x, "failedRequestCount", js.undefined)
     
     @scala.inline
-    def deleteCreatedRequestCount: Self = this.set("createdRequestCount", js.undefined)
+    def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedRequestCount(value: Integer): Self = this.set("failedRequestCount", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteFailedRequestCount: Self = this.set("failedRequestCount", js.undefined)
+    def setPendingRequestCount(value: Integer): Self = StObject.set(x, "pendingRequestCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: LastUpdatedAt): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    def setPendingRequestCountUndefined: Self = StObject.set(x, "pendingRequestCount", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    def setStatus(value: SimulationJobBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingRequestCount(value: Integer): Self = this.set("pendingRequestCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePendingRequestCount: Self = this.set("pendingRequestCount", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: SimulationJobBatchStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

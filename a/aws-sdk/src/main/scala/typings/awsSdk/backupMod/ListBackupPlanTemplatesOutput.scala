@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBackupPlanTemplatesOutput extends js.Object {
+trait ListBackupPlanTemplatesOutput extends StObject {
   
   /**
     * An array of template list items containing metadata about your saved templates.
@@ -26,33 +27,21 @@ object ListBackupPlanTemplatesOutput {
   }
   
   @scala.inline
-  implicit class ListBackupPlanTemplatesOutputOps[Self <: ListBackupPlanTemplatesOutput] (val x: Self) extends AnyVal {
+  implicit class ListBackupPlanTemplatesOutputMutableBuilder[Self <: ListBackupPlanTemplatesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupPlanTemplatesList(value: BackupPlanTemplatesList): Self = StObject.set(x, "BackupPlanTemplatesList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupPlanTemplatesListUndefined: Self = StObject.set(x, "BackupPlanTemplatesList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupPlanTemplatesListVarargs(value: BackupPlanTemplatesListMember*): Self = StObject.set(x, "BackupPlanTemplatesList", js.Array(value :_*))
     
     @scala.inline
-    def setBackupPlanTemplatesListVarargs(value: BackupPlanTemplatesListMember*): Self = this.set("BackupPlanTemplatesList", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupPlanTemplatesList(value: BackupPlanTemplatesList): Self = this.set("BackupPlanTemplatesList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackupPlanTemplatesList: Self = this.set("BackupPlanTemplatesList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientAndroidenterprise.anon.Approved
 import typings.maximMazurokGapiClientAndroidenterprise.anon.CallbackEnterpriseId
 import typings.maximMazurokGapiClientAndroidenterprise.anon.LanguageCode
 import typings.maximMazurokGapiClientAndroidenterprise.anon.ProductId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductsResource extends js.Object {
+trait ProductsResource extends StObject {
   
   /**
     * Approves the specified product and the relevant app permissions, if any. The maximum number of products that you can approve per enterprise customer is 1,000. To learn how to use

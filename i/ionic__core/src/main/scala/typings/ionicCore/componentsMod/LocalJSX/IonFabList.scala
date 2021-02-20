@@ -4,12 +4,13 @@ import typings.ionicCore.ionicCoreStrings.bottom
 import typings.ionicCore.ionicCoreStrings.end
 import typings.ionicCore.ionicCoreStrings.start
 import typings.ionicCore.ionicCoreStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonFabList extends js.Object {
+trait IonFabList extends StObject {
   
   /**
     * If `true`, the fab list will show all fab buttons in the list.
@@ -30,30 +31,18 @@ object IonFabList {
   }
   
   @scala.inline
-  implicit class IonFabListOps[Self <: IonFabList] (val x: Self) extends AnyVal {
+  implicit class IonFabListMutableBuilder[Self <: IonFabList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivatedUndefined: Self = StObject.set(x, "activated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSide(value: start | end | top | bottom): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivated(value: Boolean): Self = this.set("activated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivated: Self = this.set("activated", js.undefined)
-    
-    @scala.inline
-    def setSide(value: start | end | top | bottom): Self = this.set("side", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSide: Self = this.set("side", js.undefined)
+    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
   }
 }

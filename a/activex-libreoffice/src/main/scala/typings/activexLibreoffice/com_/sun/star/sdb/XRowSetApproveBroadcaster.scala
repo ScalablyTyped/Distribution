@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sdb
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,24 +32,12 @@ object XRowSetApproveBroadcaster {
   }
   
   @scala.inline
-  implicit class XRowSetApproveBroadcasterOps[Self <: XRowSetApproveBroadcaster] (val x: Self) extends AnyVal {
+  implicit class XRowSetApproveBroadcasterMutableBuilder[Self <: XRowSetApproveBroadcaster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRowSetApproveListener(value: XRowSetApproveListener => Unit): Self = StObject.set(x, "addRowSetApproveListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddRowSetApproveListener(value: XRowSetApproveListener => Unit): Self = this.set("addRowSetApproveListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveRowSetApproveListener(value: XRowSetApproveListener => Unit): Self = this.set("removeRowSetApproveListener", js.Any.fromFunction1(value))
+    def setRemoveRowSetApproveListener(value: XRowSetApproveListener => Unit): Self = StObject.set(x, "removeRowSetApproveListener", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelSpecification extends js.Object {
+trait ChannelSpecification extends StObject {
   
   /**
     * A brief description of the channel.
@@ -46,54 +47,42 @@ object ChannelSpecification {
   }
   
   @scala.inline
-  implicit class ChannelSpecificationOps[Self <: ChannelSpecification] (val x: Self) extends AnyVal {
+  implicit class ChannelSpecificationMutableBuilder[Self <: ChannelSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsRequired(value: Boolean): Self = StObject.set(x, "IsRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ChannelName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setIsRequiredUndefined: Self = StObject.set(x, "IsRequired", js.undefined)
     
     @scala.inline
-    def setSupportedContentTypesVarargs(value: ContentType*): Self = this.set("SupportedContentTypes", js.Array(value :_*))
+    def setName(value: ChannelName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedContentTypes(value: ContentTypes): Self = this.set("SupportedContentTypes", value.asInstanceOf[js.Any])
+    def setSupportedCompressionTypes(value: CompressionTypes): Self = StObject.set(x, "SupportedCompressionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedInputModesVarargs(value: TrainingInputMode*): Self = this.set("SupportedInputModes", js.Array(value :_*))
+    def setSupportedCompressionTypesUndefined: Self = StObject.set(x, "SupportedCompressionTypes", js.undefined)
     
     @scala.inline
-    def setSupportedInputModes(value: InputModes): Self = this.set("SupportedInputModes", value.asInstanceOf[js.Any])
+    def setSupportedCompressionTypesVarargs(value: CompressionType*): Self = StObject.set(x, "SupportedCompressionTypes", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: EntityDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setSupportedContentTypes(value: ContentTypes): Self = StObject.set(x, "SupportedContentTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setSupportedContentTypesVarargs(value: ContentType*): Self = StObject.set(x, "SupportedContentTypes", js.Array(value :_*))
     
     @scala.inline
-    def setIsRequired(value: Boolean): Self = this.set("IsRequired", value.asInstanceOf[js.Any])
+    def setSupportedInputModes(value: InputModes): Self = StObject.set(x, "SupportedInputModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsRequired: Self = this.set("IsRequired", js.undefined)
-    
-    @scala.inline
-    def setSupportedCompressionTypesVarargs(value: CompressionType*): Self = this.set("SupportedCompressionTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedCompressionTypes(value: CompressionTypes): Self = this.set("SupportedCompressionTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedCompressionTypes: Self = this.set("SupportedCompressionTypes", js.undefined)
+    def setSupportedInputModesVarargs(value: TrainingInputMode*): Self = StObject.set(x, "SupportedInputModes", js.Array(value :_*))
   }
 }

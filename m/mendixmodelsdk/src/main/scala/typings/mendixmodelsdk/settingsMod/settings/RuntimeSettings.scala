@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,16 +87,20 @@ class RuntimeSettings protected () extends ProjectSettingsPart {
   def useDeprecatedClientForWebServiceCalls: Boolean = js.native
   def useDeprecatedClientForWebServiceCalls_=(newValue: Boolean): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/settings", "settings.RuntimeSettings")
-@js.native
-object RuntimeSettings extends js.Object {
+object RuntimeSettings {
+  
+  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.RuntimeSettings")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new RuntimeSettings instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.RuntimeSettings.create")
+  @js.native
   def create(model: IModel): RuntimeSettings = js.native
   
   /**
@@ -103,9 +108,22 @@ object RuntimeSettings extends js.Object {
     * The new RuntimeSettings will be automatically stored in the 'settingsParts' property
     * of the parent ProjectSettings element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.RuntimeSettings.createIn")
+  @js.native
   def createIn(container: ProjectSettings): RuntimeSettings = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.RuntimeSettings.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.RuntimeSettings.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

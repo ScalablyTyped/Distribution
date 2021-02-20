@@ -2,12 +2,13 @@ package typings.asana.mod.resources
 
 import typings.asana.anon.AsanaBaseUrl
 import typings.asana.anon.Data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceList[T /* <: Resource */] extends js.Object {
+trait ResourceList[T /* <: typings.asana.mod.resources.Resource */] extends StObject {
   
   var _dispatcher: AsanaBaseUrl = js.native
   
@@ -26,7 +27,7 @@ trait ResourceList[T /* <: Resource */] extends js.Object {
 object ResourceList {
   
   @scala.inline
-  def apply[T /* <: Resource */](
+  def apply[T /* <: typings.asana.mod.resources.Resource */](
     _dispatcher: AsanaBaseUrl,
     _response: Data[T],
     data: js.Array[T],
@@ -37,33 +38,21 @@ object ResourceList {
   }
   
   @scala.inline
-  implicit class ResourceListOps[Self <: ResourceList[_], T /* <: Resource */] (val x: Self with ResourceList[T]) extends AnyVal {
+  implicit class ResourceListMutableBuilder[Self <: ResourceList[_], T /* <: typings.asana.mod.resources.Resource */] (val x: Self with ResourceList[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextPage(value: () => typings.bluebird.mod.^[ResourceList[T] | Null]): Self = StObject.set(x, "nextPage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_dispatcher(value: AsanaBaseUrl): Self = this.set("_dispatcher", value.asInstanceOf[js.Any])
+    def set_dispatcher(value: AsanaBaseUrl): Self = StObject.set(x, "_dispatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_response(value: Data[T]): Self = this.set("_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataVarargs(value: T*): Self = this.set("data", js.Array(value :_*))
-    
-    @scala.inline
-    def setData(value: js.Array[T]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextPage(value: () => typings.bluebird.mod.^[ResourceList[T] | Null]): Self = this.set("nextPage", js.Any.fromFunction0(value))
+    def set_response(value: Data[T]): Self = StObject.set(x, "_response", value.asInstanceOf[js.Any])
   }
 }

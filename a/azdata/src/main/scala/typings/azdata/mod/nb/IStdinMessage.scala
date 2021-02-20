@@ -2,6 +2,7 @@ package typings.azdata.mod.nb
 
 import typings.azdata.anon.Password
 import typings.azdata.azdataStrings.stdin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,24 +31,12 @@ object IStdinMessage {
   }
   
   @scala.inline
-  implicit class IStdinMessageOps[Self <: IStdinMessage] (val x: Self) extends AnyVal {
+  implicit class IStdinMessageMutableBuilder[Self <: IStdinMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: stdin): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannel(value: stdin): Self = this.set("channel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContent(value: Password): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContent(value: Password): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.Streams.IInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,30 +41,18 @@ object IUploadOperation {
   }
   
   @scala.inline
-  implicit class IUploadOperationOps[Self <: IUploadOperation] (val x: Self) extends AnyVal {
+  implicit class IUploadOperationMutableBuilder[Self <: IUploadOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachAsync(value: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = StObject.set(x, "attachAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProgress(value: BackgroundUploadProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceFile(value: IStorageFile): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachAsync(value: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = this.set("attachAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setProgress(value: BackgroundUploadProgress): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceFile(value: IStorageFile): Self = this.set("sourceFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartAsync(value: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = this.set("startAsync", js.Any.fromFunction0(value))
+    def setStartAsync(value: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
   }
 }

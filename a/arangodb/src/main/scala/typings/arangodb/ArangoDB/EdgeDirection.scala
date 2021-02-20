@@ -1,5 +1,6 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arangodb.arangodbStrings.inbound
   - typings.arangodb.arangodbStrings.outbound
 */
-trait EdgeDirection extends js.Object
+trait EdgeDirection extends StObject
 object EdgeDirection {
   
   @scala.inline

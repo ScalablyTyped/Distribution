@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrefixListEntry extends js.Object {
+trait PrefixListEntry extends StObject {
   
   /**
     * The CIDR block.
@@ -26,30 +27,18 @@ object PrefixListEntry {
   }
   
   @scala.inline
-  implicit class PrefixListEntryOps[Self <: PrefixListEntry] (val x: Self) extends AnyVal {
+  implicit class PrefixListEntryMutableBuilder[Self <: PrefixListEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrUndefined: Self = StObject.set(x, "Cidr", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidr(value: String): Self = this.set("Cidr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCidr: Self = this.set("Cidr", js.undefined)
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

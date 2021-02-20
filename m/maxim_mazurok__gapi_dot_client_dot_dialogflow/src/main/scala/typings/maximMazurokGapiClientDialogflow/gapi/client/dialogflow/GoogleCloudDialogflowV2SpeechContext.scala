@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2SpeechContext extends js.Object {
+trait GoogleCloudDialogflowV2SpeechContext extends StObject {
   
   /**
     * Optional. Boost for this context compared to other contexts: * If the boost is positive, Dialogflow will increase the probability that the phrases in this context are recognized
@@ -30,33 +31,21 @@ object GoogleCloudDialogflowV2SpeechContext {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2SpeechContextOps[Self <: GoogleCloudDialogflowV2SpeechContext] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2SpeechContextMutableBuilder[Self <: GoogleCloudDialogflowV2SpeechContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoostUndefined: Self = StObject.set(x, "boost", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhrases(value: js.Array[String]): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoost(value: Double): Self = this.set("boost", value.asInstanceOf[js.Any])
+    def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
     
     @scala.inline
-    def deleteBoost: Self = this.set("boost", js.undefined)
-    
-    @scala.inline
-    def setPhrasesVarargs(value: String*): Self = this.set("phrases", js.Array(value :_*))
-    
-    @scala.inline
-    def setPhrases(value: js.Array[String]): Self = this.set("phrases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhrases: Self = this.set("phrases", js.undefined)
+    def setPhrasesVarargs(value: String*): Self = StObject.set(x, "phrases", js.Array(value :_*))
   }
 }

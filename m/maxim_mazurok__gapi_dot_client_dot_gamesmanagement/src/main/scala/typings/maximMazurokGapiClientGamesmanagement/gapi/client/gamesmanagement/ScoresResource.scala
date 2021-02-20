@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientGamesmanagement.anon.Alt
 import typings.maximMazurokGapiClientGamesmanagement.anon.LeaderboardId
 import typings.maximMazurokGapiClientGamesmanagement.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScoresResource extends js.Object {
+trait ScoresResource extends StObject {
   
   /** Resets scores for the leaderboard with the given ID for the currently authenticated player. This method is only accessible to whitelisted tester accounts for your application. */
   def reset(): Request[PlayerScoreResetResponse] = js.native

@@ -6,13 +6,35 @@ import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.mediaStreamMod.MediaStreamDeliveryPriority.ADAPTIVE_VIA_MSE
 import typings.playable.mediaStreamMod.MediaStreamDeliveryPriority.FORCED
 import typings.playable.playbackEngineTypesMod.IParsedPlayableSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/adapters/hls", JSImport.Namespace)
-@js.native
-object hlsMod extends js.Object {
+object hlsMod {
+  
+  @JSImport("playable/dist/src/adapters/hls", JSImport.Default)
+  @js.native
+  class default protected () extends HlsAdapter {
+    def this(eventEmitter: IEventEmitter) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("playable/dist/src/adapters/hls", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("playable/dist/src/adapters/hls", "default.DEFAULT_HLS_CONFIG")
+    @js.native
+    def DEFAULT_HLS_CONFIG: js.Any = js.native
+    @scala.inline
+    def DEFAULT_HLS_CONFIG_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_HLS_CONFIG")(x.asInstanceOf[js.Any])
+    
+    @JSImport("playable/dist/src/adapters/hls", "default.isSupported")
+    @js.native
+    def isSupported(): Boolean = js.native
+  }
   
   @js.native
   trait HlsAdapter extends IPlaybackAdapter {
@@ -76,18 +98,5 @@ object hlsMod extends js.Object {
     def syncWithLiveTime_MHlsAdapter: Double = js.native
     
     var videoElement: js.Any = js.native
-  }
-  
-  @js.native
-  class default protected () extends HlsAdapter {
-    def this(eventEmitter: IEventEmitter) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var DEFAULT_HLS_CONFIG: js.Any = js.native
-    
-    def isSupported(): Boolean = js.native
   }
 }

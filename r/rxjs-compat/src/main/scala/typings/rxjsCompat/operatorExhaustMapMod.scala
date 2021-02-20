@@ -1,13 +1,14 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/exhaustMap", JSImport.Namespace)
-@js.native
-object operatorExhaustMapMod extends js.Object {
+object operatorExhaustMapMod {
   
+  @JSImport("rxjs-compat/operator/exhaustMap", "exhaustMap")
+  @js.native
   def exhaustMap[T, R](
     project: js.Function2[
       /* value */ T, 

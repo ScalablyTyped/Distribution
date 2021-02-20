@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamingComputationConfig extends js.Object {
+trait StreamingComputationConfig extends StObject {
   
   /** Unique identifier for this computation. */
   var computationId: js.UndefOr[String] = js.native
@@ -36,55 +37,43 @@ object StreamingComputationConfig {
   }
   
   @scala.inline
-  implicit class StreamingComputationConfigOps[Self <: StreamingComputationConfig] (val x: Self) extends AnyVal {
+  implicit class StreamingComputationConfigMutableBuilder[Self <: StreamingComputationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstructions(value: js.Array[ParallelInstruction]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputationId(value: String): Self = this.set("computationId", value.asInstanceOf[js.Any])
+    def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
     
     @scala.inline
-    def deleteComputationId: Self = this.set("computationId", js.undefined)
+    def setInstructionsVarargs(value: ParallelInstruction*): Self = StObject.set(x, "instructions", js.Array(value :_*))
     
     @scala.inline
-    def setInstructionsVarargs(value: ParallelInstruction*): Self = this.set("instructions", js.Array(value :_*))
+    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstructions(value: js.Array[ParallelInstruction]): Self = this.set("instructions", value.asInstanceOf[js.Any])
+    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
     @scala.inline
-    def deleteInstructions: Self = this.set("instructions", js.undefined)
+    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageName: Self = this.set("stageName", js.undefined)
-    
-    @scala.inline
-    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemName: Self = this.set("systemName", js.undefined)
+    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
     @scala.inline
     def setTransformUserNameToStateFamily(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig with TopLevel[js.Any]
-    ): Self = this.set("transformUserNameToStateFamily", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transformUserNameToStateFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransformUserNameToStateFamily: Self = this.set("transformUserNameToStateFamily", js.undefined)
+    def setTransformUserNameToStateFamilyUndefined: Self = StObject.set(x, "transformUserNameToStateFamily", js.undefined)
   }
 }

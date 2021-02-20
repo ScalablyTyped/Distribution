@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGPathSegList extends js.Object {
+trait SVGPathSegList extends StObject {
   
   @JSName("MSHTML.SVGPathSegList_typekey")
   var MSHTMLDotSVGPathSegList_typekey: SVGPathSegList = js.native
@@ -46,45 +47,33 @@ object SVGPathSegList {
   }
   
   @scala.inline
-  implicit class SVGPathSegListOps[Self <: SVGPathSegList] (val x: Self) extends AnyVal {
+  implicit class SVGPathSegListMutableBuilder[Self <: SVGPathSegList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendItem(value: SVGPathSeg => SVGPathSeg): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItem(value: Double => SVGPathSeg): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMSHTMLDotSVGPathSegList_typekey(value: SVGPathSegList): Self = this.set("MSHTML.SVGPathSegList_typekey", value.asInstanceOf[js.Any])
+    def setInitialize(value: SVGPathSeg => SVGPathSeg): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendItem(value: SVGPathSeg => SVGPathSeg): Self = this.set("appendItem", js.Any.fromFunction1(value))
+    def setInsertItemBefore(value: (SVGPathSeg, Double) => SVGPathSeg): Self = StObject.set(x, "insertItemBefore", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setMSHTMLDotSVGPathSegList_typekey(value: SVGPathSegList): Self = StObject.set(x, "MSHTML.SVGPathSegList_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItem(value: Double => SVGPathSeg): Self = this.set("getItem", js.Any.fromFunction1(value))
+    def setNumberOfItems(value: Double): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialize(value: SVGPathSeg => SVGPathSeg): Self = this.set("initialize", js.Any.fromFunction1(value))
+    def setRemoveItem(value: Double => SVGPathSeg): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertItemBefore(value: (SVGPathSeg, Double) => SVGPathSeg): Self = this.set("insertItemBefore", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setNumberOfItems(value: Double): Self = this.set("numberOfItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveItem(value: Double => SVGPathSeg): Self = this.set("removeItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceItem(value: (SVGPathSeg, Double) => SVGPathSeg): Self = this.set("replaceItem", js.Any.fromFunction2(value))
+    def setReplaceItem(value: (SVGPathSeg, Double) => SVGPathSeg): Self = StObject.set(x, "replaceItem", js.Any.fromFunction2(value))
   }
 }

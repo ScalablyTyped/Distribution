@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISceneComponent extends js.Object {
+trait ISceneComponent extends StObject {
   
   /**
     * Disposes the component and the associated ressources.
@@ -42,33 +43,21 @@ object ISceneComponent {
   }
   
   @scala.inline
-  implicit class ISceneComponentOps[Self <: ISceneComponent] (val x: Self) extends AnyVal {
+  implicit class ISceneComponentMutableBuilder[Self <: ISceneComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRebuild(value: () => Unit): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRebuild(value: () => Unit): Self = this.set("rebuild", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRegister(value: () => Unit): Self = this.set("register", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setScene(value: Scene): Self = this.set("scene", value.asInstanceOf[js.Any])
+    def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
   }
 }

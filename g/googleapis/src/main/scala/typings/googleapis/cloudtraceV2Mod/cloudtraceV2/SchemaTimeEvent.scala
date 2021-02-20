@@ -1,5 +1,6 @@
 package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A time-stamped annotation or message event in the Span.
   */
 @js.native
-trait SchemaTimeEvent extends js.Object {
+trait SchemaTimeEvent extends StObject {
   
   /**
     * Text annotation with a set of attributes.
@@ -34,36 +35,24 @@ object SchemaTimeEvent {
   }
   
   @scala.inline
-  implicit class SchemaTimeEventOps[Self <: SchemaTimeEvent] (val x: Self) extends AnyVal {
+  implicit class SchemaTimeEventMutableBuilder[Self <: SchemaTimeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation(value: SchemaAnnotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageEvent(value: SchemaMessageEvent): Self = StObject.set(x, "messageEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotation(value: SchemaAnnotation): Self = this.set("annotation", value.asInstanceOf[js.Any])
+    def setMessageEventUndefined: Self = StObject.set(x, "messageEvent", js.undefined)
     
     @scala.inline
-    def deleteAnnotation: Self = this.set("annotation", js.undefined)
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageEvent(value: SchemaMessageEvent): Self = this.set("messageEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageEvent: Self = this.set("messageEvent", js.undefined)
-    
-    @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

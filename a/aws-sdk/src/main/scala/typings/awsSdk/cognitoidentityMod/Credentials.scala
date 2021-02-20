@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Credentials extends js.Object {
+trait Credentials extends StObject {
   
   /**
     * The Access Key portion of the credentials.
@@ -36,42 +37,30 @@ object Credentials {
   }
   
   @scala.inline
-  implicit class CredentialsOps[Self <: Credentials] (val x: Self) extends AnyVal {
+  implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyId(value: AccessKeyString): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiration(value: DateType): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKeyId(value: AccessKeyString): Self = this.set("AccessKeyId", value.asInstanceOf[js.Any])
+    def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
     
     @scala.inline
-    def deleteAccessKeyId: Self = this.set("AccessKeyId", js.undefined)
+    def setSecretKey(value: SecretKeyString): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: DateType): Self = this.set("Expiration", value.asInstanceOf[js.Any])
+    def setSecretKeyUndefined: Self = StObject.set(x, "SecretKey", js.undefined)
     
     @scala.inline
-    def deleteExpiration: Self = this.set("Expiration", js.undefined)
+    def setSessionToken(value: SessionTokenString): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretKey(value: SecretKeyString): Self = this.set("SecretKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretKey: Self = this.set("SecretKey", js.undefined)
-    
-    @scala.inline
-    def setSessionToken(value: SessionTokenString): Self = this.set("SessionToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionToken: Self = this.set("SessionToken", js.undefined)
+    def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
   }
 }

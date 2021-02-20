@@ -1,11 +1,12 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JoystickOption extends js.Object {
+trait JoystickOption extends StObject {
   
   var invert: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object JoystickOption {
   }
   
   @scala.inline
-  implicit class JoystickOptionOps[Self <: JoystickOption] (val x: Self) extends AnyVal {
+  implicit class JoystickOptionMutableBuilder[Self <: JoystickOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvertX(value: Boolean): Self = StObject.set(x, "invertX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinsVarargs(value: String*): Self = this.set("pins", js.Array(value :_*))
+    def setInvertXUndefined: Self = StObject.set(x, "invertX", js.undefined)
     
     @scala.inline
-    def setPins(value: js.Array[String]): Self = this.set("pins", value.asInstanceOf[js.Any])
+    def setInvertY(value: Boolean): Self = StObject.set(x, "invertY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvert(value: Boolean): Self = this.set("invert", value.asInstanceOf[js.Any])
+    def setInvertYUndefined: Self = StObject.set(x, "invertY", js.undefined)
     
     @scala.inline
-    def deleteInvert: Self = this.set("invert", js.undefined)
+    def setPins(value: js.Array[String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvertX(value: Boolean): Self = this.set("invertX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvertX: Self = this.set("invertX", js.undefined)
-    
-    @scala.inline
-    def setInvertY(value: Boolean): Self = this.set("invertY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvertY: Self = this.set("invertY", js.undefined)
+    def setPinsVarargs(value: String*): Self = StObject.set(x, "pins", js.Array(value :_*))
   }
 }

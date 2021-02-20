@@ -1,11 +1,12 @@
 package typings.dockerode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailingStreak extends js.Object {
+trait FailingStreak extends StObject {
   
   var FailingStreak: Double = js.native
   
@@ -22,30 +23,18 @@ object FailingStreak {
   }
   
   @scala.inline
-  implicit class FailingStreakOps[Self <: FailingStreak] (val x: Self) extends AnyVal {
+  implicit class FailingStreakMutableBuilder[Self <: FailingStreak] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailingStreak(value: Double): Self = StObject.set(x, "FailingStreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLog(value: js.Array[End]): Self = StObject.set(x, "Log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogVarargs(value: End*): Self = StObject.set(x, "Log", js.Array(value :_*))
     
     @scala.inline
-    def setFailingStreak(value: Double): Self = this.set("FailingStreak", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogVarargs(value: End*): Self = this.set("Log", js.Array(value :_*))
-    
-    @scala.inline
-    def setLog(value: js.Array[End]): Self = this.set("Log", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

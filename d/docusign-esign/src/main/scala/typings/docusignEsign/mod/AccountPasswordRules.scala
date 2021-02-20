@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountPasswordRules extends js.Object {
+trait AccountPasswordRules extends StObject {
   
   /**
     * When set to **true**, passwords expire. The default value is `false`.
@@ -150,141 +151,129 @@ object AccountPasswordRules {
   }
   
   @scala.inline
-  implicit class AccountPasswordRulesOps[Self <: AccountPasswordRules] (val x: Self) extends AnyVal {
+  implicit class AccountPasswordRulesMutableBuilder[Self <: AccountPasswordRules] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirePassword(value: String): Self = StObject.set(x, "expirePassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirePasswordDays(value: String): Self = StObject.set(x, "expirePasswordDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirePasswordDaysMetadata(value: AccountPasswordExpirePasswordDays): Self = StObject.set(x, "expirePasswordDaysMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirePassword(value: String): Self = this.set("expirePassword", value.asInstanceOf[js.Any])
+    def setExpirePasswordDaysMetadataUndefined: Self = StObject.set(x, "expirePasswordDaysMetadata", js.undefined)
     
     @scala.inline
-    def deleteExpirePassword: Self = this.set("expirePassword", js.undefined)
+    def setExpirePasswordDaysUndefined: Self = StObject.set(x, "expirePasswordDays", js.undefined)
     
     @scala.inline
-    def setExpirePasswordDays(value: String): Self = this.set("expirePasswordDays", value.asInstanceOf[js.Any])
+    def setExpirePasswordUndefined: Self = StObject.set(x, "expirePassword", js.undefined)
     
     @scala.inline
-    def deleteExpirePasswordDays: Self = this.set("expirePasswordDays", js.undefined)
+    def setLockoutDurationMinutes(value: String): Self = StObject.set(x, "lockoutDurationMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirePasswordDaysMetadata(value: AccountPasswordExpirePasswordDays): Self = this.set("expirePasswordDaysMetadata", value.asInstanceOf[js.Any])
+    def setLockoutDurationMinutesMetadata(value: AccountPasswordLockoutDurationMinutes): Self = StObject.set(x, "lockoutDurationMinutesMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirePasswordDaysMetadata: Self = this.set("expirePasswordDaysMetadata", js.undefined)
+    def setLockoutDurationMinutesMetadataUndefined: Self = StObject.set(x, "lockoutDurationMinutesMetadata", js.undefined)
     
     @scala.inline
-    def setLockoutDurationMinutes(value: String): Self = this.set("lockoutDurationMinutes", value.asInstanceOf[js.Any])
+    def setLockoutDurationMinutesUndefined: Self = StObject.set(x, "lockoutDurationMinutes", js.undefined)
     
     @scala.inline
-    def deleteLockoutDurationMinutes: Self = this.set("lockoutDurationMinutes", js.undefined)
+    def setLockoutDurationType(value: String): Self = StObject.set(x, "lockoutDurationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockoutDurationMinutesMetadata(value: AccountPasswordLockoutDurationMinutes): Self = this.set("lockoutDurationMinutesMetadata", value.asInstanceOf[js.Any])
+    def setLockoutDurationTypeMetadata(value: AccountPasswordLockoutDurationType): Self = StObject.set(x, "lockoutDurationTypeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockoutDurationMinutesMetadata: Self = this.set("lockoutDurationMinutesMetadata", js.undefined)
+    def setLockoutDurationTypeMetadataUndefined: Self = StObject.set(x, "lockoutDurationTypeMetadata", js.undefined)
     
     @scala.inline
-    def setLockoutDurationType(value: String): Self = this.set("lockoutDurationType", value.asInstanceOf[js.Any])
+    def setLockoutDurationTypeUndefined: Self = StObject.set(x, "lockoutDurationType", js.undefined)
     
     @scala.inline
-    def deleteLockoutDurationType: Self = this.set("lockoutDurationType", js.undefined)
+    def setMinimumPasswordAgeDays(value: String): Self = StObject.set(x, "minimumPasswordAgeDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockoutDurationTypeMetadata(value: AccountPasswordLockoutDurationType): Self = this.set("lockoutDurationTypeMetadata", value.asInstanceOf[js.Any])
+    def setMinimumPasswordAgeDaysMetadata(value: AccountPasswordMinimumPasswordAgeDays): Self = StObject.set(x, "minimumPasswordAgeDaysMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockoutDurationTypeMetadata: Self = this.set("lockoutDurationTypeMetadata", js.undefined)
+    def setMinimumPasswordAgeDaysMetadataUndefined: Self = StObject.set(x, "minimumPasswordAgeDaysMetadata", js.undefined)
     
     @scala.inline
-    def setMinimumPasswordAgeDays(value: String): Self = this.set("minimumPasswordAgeDays", value.asInstanceOf[js.Any])
+    def setMinimumPasswordAgeDaysUndefined: Self = StObject.set(x, "minimumPasswordAgeDays", js.undefined)
     
     @scala.inline
-    def deleteMinimumPasswordAgeDays: Self = this.set("minimumPasswordAgeDays", js.undefined)
+    def setMinimumPasswordLength(value: String): Self = StObject.set(x, "minimumPasswordLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumPasswordAgeDaysMetadata(value: AccountPasswordMinimumPasswordAgeDays): Self = this.set("minimumPasswordAgeDaysMetadata", value.asInstanceOf[js.Any])
+    def setMinimumPasswordLengthMetadata(value: AccountMinimumPasswordLength): Self = StObject.set(x, "minimumPasswordLengthMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumPasswordAgeDaysMetadata: Self = this.set("minimumPasswordAgeDaysMetadata", js.undefined)
+    def setMinimumPasswordLengthMetadataUndefined: Self = StObject.set(x, "minimumPasswordLengthMetadata", js.undefined)
     
     @scala.inline
-    def setMinimumPasswordLength(value: String): Self = this.set("minimumPasswordLength", value.asInstanceOf[js.Any])
+    def setMinimumPasswordLengthUndefined: Self = StObject.set(x, "minimumPasswordLength", js.undefined)
     
     @scala.inline
-    def deleteMinimumPasswordLength: Self = this.set("minimumPasswordLength", js.undefined)
+    def setPasswordIncludeDigit(value: String): Self = StObject.set(x, "passwordIncludeDigit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumPasswordLengthMetadata(value: AccountMinimumPasswordLength): Self = this.set("minimumPasswordLengthMetadata", value.asInstanceOf[js.Any])
+    def setPasswordIncludeDigitOrSpecialCharacter(value: String): Self = StObject.set(x, "passwordIncludeDigitOrSpecialCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumPasswordLengthMetadata: Self = this.set("minimumPasswordLengthMetadata", js.undefined)
+    def setPasswordIncludeDigitOrSpecialCharacterUndefined: Self = StObject.set(x, "passwordIncludeDigitOrSpecialCharacter", js.undefined)
     
     @scala.inline
-    def setPasswordIncludeDigit(value: String): Self = this.set("passwordIncludeDigit", value.asInstanceOf[js.Any])
+    def setPasswordIncludeDigitUndefined: Self = StObject.set(x, "passwordIncludeDigit", js.undefined)
     
     @scala.inline
-    def deletePasswordIncludeDigit: Self = this.set("passwordIncludeDigit", js.undefined)
+    def setPasswordIncludeLowerCase(value: String): Self = StObject.set(x, "passwordIncludeLowerCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordIncludeDigitOrSpecialCharacter(value: String): Self = this.set("passwordIncludeDigitOrSpecialCharacter", value.asInstanceOf[js.Any])
+    def setPasswordIncludeLowerCaseUndefined: Self = StObject.set(x, "passwordIncludeLowerCase", js.undefined)
     
     @scala.inline
-    def deletePasswordIncludeDigitOrSpecialCharacter: Self = this.set("passwordIncludeDigitOrSpecialCharacter", js.undefined)
+    def setPasswordIncludeSpecialCharacter(value: String): Self = StObject.set(x, "passwordIncludeSpecialCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordIncludeLowerCase(value: String): Self = this.set("passwordIncludeLowerCase", value.asInstanceOf[js.Any])
+    def setPasswordIncludeSpecialCharacterUndefined: Self = StObject.set(x, "passwordIncludeSpecialCharacter", js.undefined)
     
     @scala.inline
-    def deletePasswordIncludeLowerCase: Self = this.set("passwordIncludeLowerCase", js.undefined)
+    def setPasswordIncludeUpperCase(value: String): Self = StObject.set(x, "passwordIncludeUpperCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordIncludeSpecialCharacter(value: String): Self = this.set("passwordIncludeSpecialCharacter", value.asInstanceOf[js.Any])
+    def setPasswordIncludeUpperCaseUndefined: Self = StObject.set(x, "passwordIncludeUpperCase", js.undefined)
     
     @scala.inline
-    def deletePasswordIncludeSpecialCharacter: Self = this.set("passwordIncludeSpecialCharacter", js.undefined)
+    def setPasswordStrengthType(value: String): Self = StObject.set(x, "passwordStrengthType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordIncludeUpperCase(value: String): Self = this.set("passwordIncludeUpperCase", value.asInstanceOf[js.Any])
+    def setPasswordStrengthTypeMetadata(value: AccountPasswordStrengthType): Self = StObject.set(x, "passwordStrengthTypeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePasswordIncludeUpperCase: Self = this.set("passwordIncludeUpperCase", js.undefined)
+    def setPasswordStrengthTypeMetadataUndefined: Self = StObject.set(x, "passwordStrengthTypeMetadata", js.undefined)
     
     @scala.inline
-    def setPasswordStrengthType(value: String): Self = this.set("passwordStrengthType", value.asInstanceOf[js.Any])
+    def setPasswordStrengthTypeUndefined: Self = StObject.set(x, "passwordStrengthType", js.undefined)
     
     @scala.inline
-    def deletePasswordStrengthType: Self = this.set("passwordStrengthType", js.undefined)
-    
-    @scala.inline
-    def setPasswordStrengthTypeMetadata(value: AccountPasswordStrengthType): Self = this.set("passwordStrengthTypeMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasswordStrengthTypeMetadata: Self = this.set("passwordStrengthTypeMetadata", js.undefined)
-    
-    @scala.inline
-    def setQuestionsRequired(value: String): Self = this.set("questionsRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuestionsRequired: Self = this.set("questionsRequired", js.undefined)
+    def setQuestionsRequired(value: String): Self = StObject.set(x, "questionsRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQuestionsRequiredMetadata(
       value: /* Information about the number of password questions required (0 to 4) to confirm a user's identity when a user needs to reset their password.
       */ AccountPasswordQuestionsRequired
-    ): Self = this.set("questionsRequiredMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "questionsRequiredMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuestionsRequiredMetadata: Self = this.set("questionsRequiredMetadata", js.undefined)
+    def setQuestionsRequiredMetadataUndefined: Self = StObject.set(x, "questionsRequiredMetadata", js.undefined)
+    
+    @scala.inline
+    def setQuestionsRequiredUndefined: Self = StObject.set(x, "questionsRequired", js.undefined)
   }
 }

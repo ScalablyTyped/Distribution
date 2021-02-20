@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a device. This class allows access to well-known device properties as well as additional properties specified during device enumeration. */
 @js.native
-trait DeviceInformation extends js.Object {
+trait DeviceInformation extends StObject {
   
   /** The physical location of the device in its enclosure. For example, it may describe the location of a webcam inside a laptop. */
   var enclosureLocation: EnclosureLocation = js.native
@@ -73,51 +74,39 @@ object DeviceInformation {
   }
   
   @scala.inline
-  implicit class DeviceInformationOps[Self <: DeviceInformation] (val x: Self) extends AnyVal {
+  implicit class DeviceInformationMutableBuilder[Self <: DeviceInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnclosureLocation(value: EnclosureLocation): Self = StObject.set(x, "enclosureLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetGlyphThumbnailAsync(value: () => IPromiseWithIAsyncOperation[DeviceThumbnail]): Self = StObject.set(x, "getGlyphThumbnailAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetThumbnailAsync(value: () => IPromiseWithIAsyncOperation[DeviceThumbnail]): Self = StObject.set(x, "getThumbnailAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnclosureLocation(value: EnclosureLocation): Self = this.set("enclosureLocation", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetGlyphThumbnailAsync(value: () => IPromiseWithIAsyncOperation[DeviceThumbnail]): Self = this.set("getGlyphThumbnailAsync", js.Any.fromFunction0(value))
+    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetThumbnailAsync(value: () => IPromiseWithIAsyncOperation[DeviceThumbnail]): Self = this.set("getThumbnailAsync", js.Any.fromFunction0(value))
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKind(value: DeviceInformationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setPairing(value: DeviceInformationPairing): Self = StObject.set(x, "pairing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: DeviceInformationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setProperties(value: IMapView[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPairing(value: DeviceInformationPairing): Self = this.set("pairing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: IMapView[String, _]): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: DeviceInformationUpdate => Unit): Self = this.set("update", js.Any.fromFunction1(value))
+    def setUpdate(value: DeviceInformationUpdate => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

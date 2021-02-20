@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompleteMultipartUploadInput extends js.Object {
+trait CompleteMultipartUploadInput extends StObject {
   
   /**
     * The AccountId value is the AWS account ID of the account that owns the vault. You can either specify an AWS account ID or optionally a single '-' (hyphen), in which case Amazon S3 Glacier uses the AWS account ID associated with the credentials used to sign the request. If you use an account ID, do not include any hyphens ('-') in the ID.
@@ -41,39 +42,27 @@ object CompleteMultipartUploadInput {
   }
   
   @scala.inline
-  implicit class CompleteMultipartUploadInputOps[Self <: CompleteMultipartUploadInput] (val x: Self) extends AnyVal {
+  implicit class CompleteMultipartUploadInputMutableBuilder[Self <: CompleteMultipartUploadInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveSize(value: String): Self = StObject.set(x, "archiveSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArchiveSizeUndefined: Self = StObject.set(x, "archiveSize", js.undefined)
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadId(value: String): Self = this.set("uploadId", value.asInstanceOf[js.Any])
+    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
     @scala.inline
-    def setVaultName(value: String): Self = this.set("vaultName", value.asInstanceOf[js.Any])
+    def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveSize(value: String): Self = this.set("archiveSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArchiveSize: Self = this.set("archiveSize", js.undefined)
-    
-    @scala.inline
-    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

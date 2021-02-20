@@ -7,16 +7,16 @@ import typings.sipJs.subscriptionStateMod.SubscriptionState
 import typings.sipJs.subscriptionSubscribeOptionsMod.SubscriptionSubscribeOptions
 import typings.sipJs.subscriptionUnsubscribeOptionsMod.SubscriptionUnsubscribeOptions
 import typings.sipJs.userAgentMod.UserAgent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/subscription", JSImport.Namespace)
-@js.native
-object subscriptionMod extends js.Object {
+object subscriptionMod {
   
+  @JSImport("sip.js/lib/api/subscription", "Subscription")
   @js.native
-  abstract class Subscription protected () extends js.Object {
+  abstract class Subscription protected () extends StObject {
     /**
       * Constructor.
       * @param userAgent - User agent. See {@link UserAgent} for details.

@@ -3,6 +3,7 @@ package typings.exceljs.mod
 import typings.exceljs.anon.Left
 import typings.exceljs.exceljsStrings.gradient
 import typings.exceljs.exceljsStrings.path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,33 +38,21 @@ object FillGradientPath {
   }
   
   @scala.inline
-  implicit class FillGradientPathOps[Self <: FillGradientPath] (val x: Self) extends AnyVal {
+  implicit class FillGradientPathMutableBuilder[Self <: FillGradientPath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Left): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGradient(value: path): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStops(value: js.Array[GradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: Left): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setStopsVarargs(value: GradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
     @scala.inline
-    def setGradient(value: path): Self = this.set("gradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopsVarargs(value: GradientStop*): Self = this.set("stops", js.Array(value :_*))
-    
-    @scala.inline
-    def setStops(value: js.Array[GradientStop]): Self = this.set("stops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: gradient): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: gradient): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

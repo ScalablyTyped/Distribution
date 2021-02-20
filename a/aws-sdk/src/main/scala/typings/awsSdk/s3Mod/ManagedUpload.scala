@@ -1,6 +1,7 @@
 package typings.awsSdk.s3Mod
 
 import typings.awsSdk.managedUploadMod.ManagedUpload.ManagedUploadOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,19 +16,29 @@ class ManagedUpload protected ()
   def this(options: ManagedUploadOptions) = this()
 }
 /* static members */
-@JSImport("aws-sdk/clients/s3", "ManagedUpload")
-@js.native
-object ManagedUpload extends js.Object {
+object ManagedUpload {
+  
+  @JSImport("aws-sdk/clients/s3", "ManagedUpload")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Default value: 10000
     */
-  var maxTotalParts: Double = js.native
+  @JSImport("aws-sdk/clients/s3", "ManagedUpload.maxTotalParts")
+  @js.native
+  def maxTotalParts: Double = js.native
+  @scala.inline
+  def maxTotalParts_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxTotalParts")(x.asInstanceOf[js.Any])
   
   /**
     * Returns the minimum number of bytes for an individual part upload.
     * Note: Minimum allowed size is 5 MB.
     * 1024 * 5
     */
-  var minPartSize: Double = js.native
+  @JSImport("aws-sdk/clients/s3", "ManagedUpload.minPartSize")
+  @js.native
+  def minPartSize: Double = js.native
+  @scala.inline
+  def minPartSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPartSize")(x.asInstanceOf[js.Any])
 }

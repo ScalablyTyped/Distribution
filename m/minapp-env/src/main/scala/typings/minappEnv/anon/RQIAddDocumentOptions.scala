@@ -2,13 +2,14 @@ package typings.minappEnv.anon
 
 import typings.minappEnv.DB.IDocumentData
 import typings.minappEnv.ICloudConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined minapp-env.RQ<minapp-env.DB.IAddDocumentOptions> */
 @js.native
-trait RQIAddDocumentOptions extends js.Object {
+trait RQIAddDocumentOptions extends StObject {
   
   var config: js.UndefOr[ICloudConfig] = js.native
   
@@ -23,27 +24,15 @@ object RQIAddDocumentOptions {
   }
   
   @scala.inline
-  implicit class RQIAddDocumentOptionsOps[Self <: RQIAddDocumentOptions] (val x: Self) extends AnyVal {
+  implicit class RQIAddDocumentOptionsMutableBuilder[Self <: RQIAddDocumentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: IDocumentData): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConfig(value: ICloudConfig): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setData(value: IDocumentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

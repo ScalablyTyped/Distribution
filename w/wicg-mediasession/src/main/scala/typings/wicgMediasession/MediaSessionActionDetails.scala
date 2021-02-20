@@ -1,11 +1,12 @@
 package typings.wicgMediasession
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaSessionActionDetails extends js.Object {
+trait MediaSessionActionDetails extends StObject {
   
   // The action that the handler is associated with
   var action: MediaSessionAction = js.native
@@ -28,39 +29,27 @@ object MediaSessionActionDetails {
   }
   
   @scala.inline
-  implicit class MediaSessionActionDetailsOps[Self <: MediaSessionActionDetails] (val x: Self) extends AnyVal {
+  implicit class MediaSessionActionDetailsMutableBuilder[Self <: MediaSessionActionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: MediaSessionAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFastSeek(value: Boolean): Self = StObject.set(x, "fastSeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFastSeekUndefined: Self = StObject.set(x, "fastSeek", js.undefined)
     
     @scala.inline
-    def setAction(value: MediaSessionAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setSeekOffset(value: Double): Self = StObject.set(x, "seekOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastSeek(value: Boolean): Self = this.set("fastSeek", value.asInstanceOf[js.Any])
+    def setSeekOffsetUndefined: Self = StObject.set(x, "seekOffset", js.undefined)
     
     @scala.inline
-    def deleteFastSeek: Self = this.set("fastSeek", js.undefined)
+    def setSeekTime(value: Double): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeekOffset(value: Double): Self = this.set("seekOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeekOffset: Self = this.set("seekOffset", js.undefined)
-    
-    @scala.inline
-    def setSeekTime(value: Double): Self = this.set("seekTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeekTime: Self = this.set("seekTime", js.undefined)
+    def setSeekTimeUndefined: Self = StObject.set(x, "seekTime", js.undefined)
   }
 }

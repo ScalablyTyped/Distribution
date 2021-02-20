@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.view
 
 import typings.activexLibreoffice.com_.sun.star.awt.XDevice
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 1.1.2
   */
 @js.native
-trait RenderOptions extends js.Object {
+trait RenderOptions extends StObject {
   
   /**
     * indicates that the current page is the first page to be exported.
@@ -67,33 +68,21 @@ object RenderOptions {
   }
   
   @scala.inline
-  implicit class RenderOptionsOps[Self <: RenderOptions] (val x: Self) extends AnyVal {
+  implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsFirstPage(value: Boolean): Self = StObject.set(x, "IsFirstPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLastPage(value: Boolean): Self = StObject.set(x, "IsLastPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSkipEmptyPages(value: Boolean): Self = StObject.set(x, "IsSkipEmptyPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFirstPage(value: Boolean): Self = this.set("IsFirstPage", value.asInstanceOf[js.Any])
+    def setPageRange(value: String): Self = StObject.set(x, "PageRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLastPage(value: Boolean): Self = this.set("IsLastPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSkipEmptyPages(value: Boolean): Self = this.set("IsSkipEmptyPages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageRange(value: String): Self = this.set("PageRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderDevice(value: XDevice): Self = this.set("RenderDevice", value.asInstanceOf[js.Any])
+    def setRenderDevice(value: XDevice): Self = StObject.set(x, "RenderDevice", value.asInstanceOf[js.Any])
   }
 }

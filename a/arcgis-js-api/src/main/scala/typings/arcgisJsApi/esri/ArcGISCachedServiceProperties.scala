@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcGISCachedServiceProperties extends js.Object {
+trait ArcGISCachedServiceProperties extends StObject {
   
   /**
     * The copyright text as defined by the service.
@@ -30,30 +31,18 @@ object ArcGISCachedServiceProperties {
   }
   
   @scala.inline
-  implicit class ArcGISCachedServicePropertiesOps[Self <: ArcGISCachedServiceProperties] (val x: Self) extends AnyVal {
+  implicit class ArcGISCachedServicePropertiesMutableBuilder[Self <: ArcGISCachedServiceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
-    
-    @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = this.set("tileInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileInfo: Self = this.set("tileInfo", js.undefined)
+    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
   }
 }

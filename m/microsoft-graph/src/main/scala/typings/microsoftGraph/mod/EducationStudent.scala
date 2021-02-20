@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EducationStudent extends js.Object {
+trait EducationStudent extends StObject {
   
   // Birth date of the student.
   var birthDate: js.UndefOr[NullableOption[String]] = js.native
@@ -34,72 +35,60 @@ object EducationStudent {
   }
   
   @scala.inline
-  implicit class EducationStudentOps[Self <: EducationStudent] (val x: Self) extends AnyVal {
+  implicit class EducationStudentMutableBuilder[Self <: EducationStudent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBirthDate(value: NullableOption[String]): Self = StObject.set(x, "birthDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBirthDateNull: Self = StObject.set(x, "birthDate", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBirthDateUndefined: Self = StObject.set(x, "birthDate", js.undefined)
     
     @scala.inline
-    def setBirthDate(value: NullableOption[String]): Self = this.set("birthDate", value.asInstanceOf[js.Any])
+    def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBirthDate: Self = this.set("birthDate", js.undefined)
+    def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
     @scala.inline
-    def setBirthDateNull: Self = this.set("birthDate", null)
+    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
     @scala.inline
-    def setExternalId(value: NullableOption[String]): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    def setGender(value: NullableOption[EducationGender]): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    def setGenderNull: Self = StObject.set(x, "gender", null)
     
     @scala.inline
-    def setExternalIdNull: Self = this.set("externalId", null)
+    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
     @scala.inline
-    def setGender(value: NullableOption[EducationGender]): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setGrade(value: NullableOption[String]): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGender: Self = this.set("gender", js.undefined)
+    def setGradeNull: Self = StObject.set(x, "grade", null)
     
     @scala.inline
-    def setGenderNull: Self = this.set("gender", null)
+    def setGradeUndefined: Self = StObject.set(x, "grade", js.undefined)
     
     @scala.inline
-    def setGrade(value: NullableOption[String]): Self = this.set("grade", value.asInstanceOf[js.Any])
+    def setGraduationYear(value: NullableOption[String]): Self = StObject.set(x, "graduationYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrade: Self = this.set("grade", js.undefined)
+    def setGraduationYearNull: Self = StObject.set(x, "graduationYear", null)
     
     @scala.inline
-    def setGradeNull: Self = this.set("grade", null)
+    def setGraduationYearUndefined: Self = StObject.set(x, "graduationYear", js.undefined)
     
     @scala.inline
-    def setGraduationYear(value: NullableOption[String]): Self = this.set("graduationYear", value.asInstanceOf[js.Any])
+    def setStudentNumber(value: NullableOption[String]): Self = StObject.set(x, "studentNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGraduationYear: Self = this.set("graduationYear", js.undefined)
+    def setStudentNumberNull: Self = StObject.set(x, "studentNumber", null)
     
     @scala.inline
-    def setGraduationYearNull: Self = this.set("graduationYear", null)
-    
-    @scala.inline
-    def setStudentNumber(value: NullableOption[String]): Self = this.set("studentNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStudentNumber: Self = this.set("studentNumber", js.undefined)
-    
-    @scala.inline
-    def setStudentNumberNull: Self = this.set("studentNumber", null)
+    def setStudentNumberUndefined: Self = StObject.set(x, "studentNumber", js.undefined)
   }
 }

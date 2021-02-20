@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.deployment
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.3
   */
 @js.native
-trait XPackageInformationProvider extends js.Object {
+trait XPackageInformationProvider extends StObject {
   
   /** returns a list of all installed extension with their version. */
   val ExtensionList: SafeArray[SafeArray[String]] = js.native
@@ -44,30 +45,18 @@ object XPackageInformationProvider {
   }
   
   @scala.inline
-  implicit class XPackageInformationProviderOps[Self <: XPackageInformationProvider] (val x: Self) extends AnyVal {
+  implicit class XPackageInformationProviderMutableBuilder[Self <: XPackageInformationProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensionList(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ExtensionList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetExtensionList(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getExtensionList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPackageLocation(value: String => String): Self = StObject.set(x, "getPackageLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtensionList(value: SafeArray[SafeArray[String]]): Self = this.set("ExtensionList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetExtensionList(value: () => SafeArray[SafeArray[String]]): Self = this.set("getExtensionList", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPackageLocation(value: String => String): Self = this.set("getPackageLocation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsUpdateAvailable(value: String => SafeArray[SafeArray[String]]): Self = this.set("isUpdateAvailable", js.Any.fromFunction1(value))
+    def setIsUpdateAvailable(value: String => SafeArray[SafeArray[String]]): Self = StObject.set(x, "isUpdateAvailable", js.Any.fromFunction1(value))
   }
 }

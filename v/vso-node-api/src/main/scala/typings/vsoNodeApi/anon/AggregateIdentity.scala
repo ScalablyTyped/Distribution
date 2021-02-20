@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregateIdentity extends js.Object {
+trait AggregateIdentity extends StObject {
   
   var aggregateIdentity: scala.Double = js.native
   
@@ -29,30 +30,18 @@ object AggregateIdentity {
   }
   
   @scala.inline
-  implicit class AggregateIdentityOps[Self <: AggregateIdentity] (val x: Self) extends AnyVal {
+  implicit class AggregateIdentityMutableBuilder[Self <: AggregateIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateIdentity(value: scala.Double): Self = StObject.set(x, "aggregateIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportedIdentity(value: scala.Double): Self = StObject.set(x, "importedIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateIdentity(value: scala.Double): Self = this.set("aggregateIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImportedIdentity(value: scala.Double): Self = this.set("importedIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceIdentity(value: scala.Double): Self = this.set("serviceIdentity", value.asInstanceOf[js.Any])
+    def setServiceIdentity(value: scala.Double): Self = StObject.set(x, "serviceIdentity", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.sparkpost.mod
 import typings.sparkpost.anon.Emailrfc822
 import typings.sparkpost.anon.Listid
 import typings.sparkpost.anon.Templateid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTransmission extends js.Object {
+trait CreateTransmission extends StObject {
   
   /**
     * Recipients to discreetly receive a carbon copy of the transmission
@@ -55,84 +56,72 @@ object CreateTransmission {
   }
   
   @scala.inline
-  implicit class CreateTransmissionOps[Self <: CreateTransmission] (val x: Self) extends AnyVal {
+  implicit class CreateTransmissionMutableBuilder[Self <: CreateTransmission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBcc(value: js.Array[Recipient]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBccVarargs(value: Recipient*): Self = StObject.set(x, "bcc", js.Array(value :_*))
     
     @scala.inline
-    def setContent(value: InlineContent | Templateid | Emailrfc822): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBccVarargs(value: Recipient*): Self = this.set("bcc", js.Array(value :_*))
+    def setCampaign_idUndefined: Self = StObject.set(x, "campaign_id", js.undefined)
     
     @scala.inline
-    def setBcc(value: js.Array[Recipient]): Self = this.set("bcc", value.asInstanceOf[js.Any])
+    def setCc(value: js.Array[Recipient]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBcc: Self = this.set("bcc", js.undefined)
+    def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
     
     @scala.inline
-    def setCampaign_id(value: String): Self = this.set("campaign_id", value.asInstanceOf[js.Any])
+    def setCcVarargs(value: Recipient*): Self = StObject.set(x, "cc", js.Array(value :_*))
     
     @scala.inline
-    def deleteCampaign_id: Self = this.set("campaign_id", js.undefined)
+    def setContent(value: InlineContent | Templateid | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcVarargs(value: Recipient*): Self = this.set("cc", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCc(value: js.Array[Recipient]): Self = this.set("cc", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCc: Self = this.set("cc", js.undefined)
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setOptions(value: TransmissionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setRecipients(value: js.Array[Recipient] | Listid): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: TransmissionOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientsVarargs(value: Recipient*): Self = this.set("recipients", js.Array(value :_*))
+    def setReturn_path(value: String): Self = StObject.set(x, "return_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipients(value: js.Array[Recipient] | Listid): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    def setReturn_pathUndefined: Self = StObject.set(x, "return_path", js.undefined)
     
     @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_path(value: String): Self = this.set("return_path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_path: Self = this.set("return_path", js.undefined)
-    
-    @scala.inline
-    def setSubstitution_data(value: js.Any): Self = this.set("substitution_data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubstitution_data: Self = this.set("substitution_data", js.undefined)
+    def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
   }
 }

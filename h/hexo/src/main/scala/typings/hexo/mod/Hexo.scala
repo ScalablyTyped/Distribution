@@ -17,6 +17,7 @@ import typings.hexo.hexoStrings.ready
 import typings.hexo.hexoStrings.skip
 import typings.hexo.hexoStrings.update
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

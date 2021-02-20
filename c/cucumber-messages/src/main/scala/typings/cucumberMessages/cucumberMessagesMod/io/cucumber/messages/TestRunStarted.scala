@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,17 +26,19 @@ class TestRunStarted () extends ITestRunStarted {
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-/* static members */
-@JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted")
-@js.native
-object TestRunStarted extends js.Object {
+object TestRunStarted {
   
   /**
     * Creates a new TestRunStarted instance using the specified properties.
     * @param [properties] Properties to set
     * @returns TestRunStarted instance
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.create")
+  @js.native
   def create(): TestRunStarted = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.create")
+  @js.native
   def create(properties: ITestRunStarted): TestRunStarted = js.native
   
   /**
@@ -46,9 +49,18 @@ object TestRunStarted extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.decode")
+  @js.native
   def decode(reader: Reader): TestRunStarted = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.decode")
+  @js.native
   def decode(reader: Reader, length: Double): TestRunStarted = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.decode")
+  @js.native
   def decode(reader: Uint8Array): TestRunStarted = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): TestRunStarted = js.native
   
   /**
@@ -58,7 +70,12 @@ object TestRunStarted extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): TestRunStarted = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): TestRunStarted = js.native
   
   /**
@@ -67,7 +84,12 @@ object TestRunStarted extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.encode")
+  @js.native
   def encode(message: ITestRunStarted): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.encode")
+  @js.native
   def encode(message: ITestRunStarted, writer: Writer): Writer = js.native
   
   /**
@@ -76,7 +98,12 @@ object TestRunStarted extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ITestRunStarted): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ITestRunStarted, writer: Writer): Writer = js.native
   
   /**
@@ -84,6 +111,9 @@ object TestRunStarted extends js.Object {
     * @param object Plain object
     * @returns TestRunStarted
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): TestRunStarted = js.native
   
   /**
@@ -92,7 +122,12 @@ object TestRunStarted extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.toObject")
+  @js.native
   def toObject(message: TestRunStarted): StringDictionary[js.Any] = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.toObject")
+  @js.native
   def toObject(message: TestRunStarted, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -100,5 +135,8 @@ object TestRunStarted extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.TestRunStarted.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

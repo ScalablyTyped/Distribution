@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientCompute.anon.QuotaUserReservation
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserResource
 import typings.maximMazurokGapiClientCompute.anon.RequestIdReservation
 import typings.maximMazurokGapiClientCompute.anon.UserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservationsResource extends js.Object {
+trait ReservationsResource extends StObject {
   
   /** Retrieves an aggregated list of reservations. */
   def aggregatedList(): Request[ReservationAggregatedList] = js.native

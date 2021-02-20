@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Globalization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a single Japanese word (a "reading") that has been extracted from a Japanese string by JapanesePhoneticAnalyzer . */
 @js.native
-trait JapanesePhoneme extends js.Object {
+trait JapanesePhoneme extends StObject {
   
   /** Gets the text to display for this Japanese word. */
   var displayText: String = js.native
@@ -26,27 +27,15 @@ object JapanesePhoneme {
   }
   
   @scala.inline
-  implicit class JapanesePhonemeOps[Self <: JapanesePhoneme] (val x: Self) extends AnyVal {
+  implicit class JapanesePhonemeMutableBuilder[Self <: JapanesePhoneme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPhraseStart(value: Boolean): Self = StObject.set(x, "isPhraseStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisplayText(value: String): Self = this.set("displayText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPhraseStart(value: Boolean): Self = this.set("isPhraseStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYomiText(value: String): Self = this.set("yomiText", value.asInstanceOf[js.Any])
+    def setYomiText(value: String): Self = StObject.set(x, "yomiText", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,72 +35,60 @@ object IosDeviceFeaturesConfiguration {
   }
   
   @scala.inline
-  implicit class IosDeviceFeaturesConfigurationOps[Self <: IosDeviceFeaturesConfiguration] (val x: Self) extends AnyVal {
+  implicit class IosDeviceFeaturesConfigurationMutableBuilder[Self <: IosDeviceFeaturesConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetTagTemplate(value: NullableOption[String]): Self = StObject.set(x, "assetTagTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetTagTemplateNull: Self = StObject.set(x, "assetTagTemplate", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetTagTemplateUndefined: Self = StObject.set(x, "assetTagTemplate", js.undefined)
     
     @scala.inline
-    def setAssetTagTemplate(value: NullableOption[String]): Self = this.set("assetTagTemplate", value.asInstanceOf[js.Any])
+    def setHomeScreenDockIcons(value: NullableOption[js.Array[IosHomeScreenItem]]): Self = StObject.set(x, "homeScreenDockIcons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssetTagTemplate: Self = this.set("assetTagTemplate", js.undefined)
+    def setHomeScreenDockIconsNull: Self = StObject.set(x, "homeScreenDockIcons", null)
     
     @scala.inline
-    def setAssetTagTemplateNull: Self = this.set("assetTagTemplate", null)
+    def setHomeScreenDockIconsUndefined: Self = StObject.set(x, "homeScreenDockIcons", js.undefined)
     
     @scala.inline
-    def setHomeScreenDockIconsVarargs(value: IosHomeScreenItem*): Self = this.set("homeScreenDockIcons", js.Array(value :_*))
+    def setHomeScreenDockIconsVarargs(value: IosHomeScreenItem*): Self = StObject.set(x, "homeScreenDockIcons", js.Array(value :_*))
     
     @scala.inline
-    def setHomeScreenDockIcons(value: NullableOption[js.Array[IosHomeScreenItem]]): Self = this.set("homeScreenDockIcons", value.asInstanceOf[js.Any])
+    def setHomeScreenPages(value: NullableOption[js.Array[IosHomeScreenPage]]): Self = StObject.set(x, "homeScreenPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHomeScreenDockIcons: Self = this.set("homeScreenDockIcons", js.undefined)
+    def setHomeScreenPagesNull: Self = StObject.set(x, "homeScreenPages", null)
     
     @scala.inline
-    def setHomeScreenDockIconsNull: Self = this.set("homeScreenDockIcons", null)
+    def setHomeScreenPagesUndefined: Self = StObject.set(x, "homeScreenPages", js.undefined)
     
     @scala.inline
-    def setHomeScreenPagesVarargs(value: IosHomeScreenPage*): Self = this.set("homeScreenPages", js.Array(value :_*))
+    def setHomeScreenPagesVarargs(value: IosHomeScreenPage*): Self = StObject.set(x, "homeScreenPages", js.Array(value :_*))
     
     @scala.inline
-    def setHomeScreenPages(value: NullableOption[js.Array[IosHomeScreenPage]]): Self = this.set("homeScreenPages", value.asInstanceOf[js.Any])
+    def setLockScreenFootnote(value: NullableOption[String]): Self = StObject.set(x, "lockScreenFootnote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHomeScreenPages: Self = this.set("homeScreenPages", js.undefined)
+    def setLockScreenFootnoteNull: Self = StObject.set(x, "lockScreenFootnote", null)
     
     @scala.inline
-    def setHomeScreenPagesNull: Self = this.set("homeScreenPages", null)
+    def setLockScreenFootnoteUndefined: Self = StObject.set(x, "lockScreenFootnote", js.undefined)
     
     @scala.inline
-    def setLockScreenFootnote(value: NullableOption[String]): Self = this.set("lockScreenFootnote", value.asInstanceOf[js.Any])
+    def setNotificationSettings(value: NullableOption[js.Array[IosNotificationSettings]]): Self = StObject.set(x, "notificationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockScreenFootnote: Self = this.set("lockScreenFootnote", js.undefined)
+    def setNotificationSettingsNull: Self = StObject.set(x, "notificationSettings", null)
     
     @scala.inline
-    def setLockScreenFootnoteNull: Self = this.set("lockScreenFootnote", null)
+    def setNotificationSettingsUndefined: Self = StObject.set(x, "notificationSettings", js.undefined)
     
     @scala.inline
-    def setNotificationSettingsVarargs(value: IosNotificationSettings*): Self = this.set("notificationSettings", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotificationSettings(value: NullableOption[js.Array[IosNotificationSettings]]): Self = this.set("notificationSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationSettings: Self = this.set("notificationSettings", js.undefined)
-    
-    @scala.inline
-    def setNotificationSettingsNull: Self = this.set("notificationSettings", null)
+    def setNotificationSettingsVarargs(value: IosNotificationSettings*): Self = StObject.set(x, "notificationSettings", js.Array(value :_*))
   }
 }

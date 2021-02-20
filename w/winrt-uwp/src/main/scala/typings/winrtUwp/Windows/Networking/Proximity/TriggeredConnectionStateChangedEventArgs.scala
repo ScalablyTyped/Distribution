@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.Proximity
 
 import typings.winrtUwp.Windows.Networking.Sockets.StreamSocket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains properties that the TriggeredConnectionStateChanged event passes to an application. */
 @js.native
-trait TriggeredConnectionStateChangedEventArgs extends js.Object {
+trait TriggeredConnectionStateChangedEventArgs extends StObject {
   
   /** Gets the unique identifier for the connection in progress. */
   var id: Double = js.native
@@ -27,27 +28,15 @@ object TriggeredConnectionStateChangedEventArgs {
   }
   
   @scala.inline
-  implicit class TriggeredConnectionStateChangedEventArgsOps[Self <: TriggeredConnectionStateChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class TriggeredConnectionStateChangedEventArgsMutableBuilder[Self <: TriggeredConnectionStateChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSocket(value: StreamSocket): Self = this.set("socket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: TriggeredConnectState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: TriggeredConnectState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

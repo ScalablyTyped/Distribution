@@ -7,12 +7,13 @@ import typings.astTypes.kindsMod.TSModuleBlockKind
 import typings.astTypes.kindsMod.TSModuleDeclarationKind
 import typings.astTypes.kindsMod.TSQualifiedNameKind
 import typings.astTypes.namedTypesMod.namedTypes.TSModuleDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TSModuleDeclarationBuilder extends js.Object {
+trait TSModuleDeclarationBuilder extends StObject {
   
   def apply(id: IdentifierKind): TSModuleDeclaration = js.native
   def apply(id: IdentifierKind, body: TSModuleBlockKind): TSModuleDeclaration = js.native

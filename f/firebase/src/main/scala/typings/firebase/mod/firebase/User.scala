@@ -13,6 +13,7 @@ import typings.firebase.mod.firebase.auth.MultiFactorInfo
 import typings.firebase.mod.firebase.auth.MultiFactorSession
 import typings.firebase.mod.firebase.auth.UserCredential
 import typings.firebase.mod.firebase.auth.UserMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -848,16 +849,14 @@ trait User extends UserInfo {
   def verifyBeforeUpdateEmail(newEmail: String): js.Promise[Unit] = js.native
   def verifyBeforeUpdateEmail(newEmail: String, actionCodeSettings: ActionCodeSettings): js.Promise[Unit] = js.native
 }
-@JSImport("firebase", "firebase.User")
-@js.native
-object User extends js.Object {
+object User {
   
   /**
     * This is the interface that defines the multi-factor related properties and
     * operations pertaining to a {@link firebase.User}.
     */
   @js.native
-  trait MultiFactorUser extends js.Object {
+  trait MultiFactorUser extends StObject {
     
     /**
       * Enrolls a second factor as identified by the

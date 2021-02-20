@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindingStatisticsSortCriteria extends js.Object {
+trait FindingStatisticsSortCriteria extends StObject {
   
   /**
     * The grouping to sort the results by. Valid values are: count, sort the results by the number of findings in each group of results; and, groupKey, sort the results by the name of each group of results.
@@ -26,30 +27,18 @@ object FindingStatisticsSortCriteria {
   }
   
   @scala.inline
-  implicit class FindingStatisticsSortCriteriaOps[Self <: FindingStatisticsSortCriteria] (val x: Self) extends AnyVal {
+  implicit class FindingStatisticsSortCriteriaMutableBuilder[Self <: FindingStatisticsSortCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: FindingStatisticsSortAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: FindingStatisticsSortAttributeName): Self = this.set("attributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeName: Self = this.set("attributeName", js.undefined)
-    
-    @scala.inline
-    def setOrderBy(value: OrderBy): Self = this.set("orderBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,36 +29,24 @@ object AgentNotebookHistoryResult {
   }
   
   @scala.inline
-  implicit class AgentNotebookHistoryResultOps[Self <: AgentNotebookHistoryResult] (val x: Self) extends AnyVal {
+  implicit class AgentNotebookHistoryResultMutableBuilder[Self <: AgentNotebookHistoryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistories(value: js.Array[AgentNotebookHistoryInfo]): Self = StObject.set(x, "histories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHistoriesVarargs(value: AgentNotebookHistoryInfo*): Self = StObject.set(x, "histories", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchedules(value: js.Array[AgentJobScheduleInfo]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoriesVarargs(value: AgentNotebookHistoryInfo*): Self = this.set("histories", js.Array(value :_*))
+    def setSchedulesVarargs(value: AgentJobScheduleInfo*): Self = StObject.set(x, "schedules", js.Array(value :_*))
     
     @scala.inline
-    def setHistories(value: js.Array[AgentNotebookHistoryInfo]): Self = this.set("histories", value.asInstanceOf[js.Any])
+    def setSteps(value: js.Array[AgentJobStepInfo]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedulesVarargs(value: AgentJobScheduleInfo*): Self = this.set("schedules", js.Array(value :_*))
-    
-    @scala.inline
-    def setSchedules(value: js.Array[AgentJobScheduleInfo]): Self = this.set("schedules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepsVarargs(value: AgentJobStepInfo*): Self = this.set("steps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSteps(value: js.Array[AgentJobStepInfo]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    def setStepsVarargs(value: AgentJobStepInfo*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

@@ -1,15 +1,12 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("DataTransfer")
 @js.native
 class DataTransfer ()
   extends typings.std.DataTransfer
-@JSGlobal("DataTransfer")
-@js.native
-object DataTransfer
-  extends Instantiable0[typings.std.DataTransfer]

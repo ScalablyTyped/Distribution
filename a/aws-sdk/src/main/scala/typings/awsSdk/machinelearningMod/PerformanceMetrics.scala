@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerformanceMetrics extends js.Object {
+trait PerformanceMetrics extends StObject {
   
   var Properties: js.UndefOr[PerformanceMetricsProperties] = js.native
 }
@@ -18,24 +19,12 @@ object PerformanceMetrics {
   }
   
   @scala.inline
-  implicit class PerformanceMetricsOps[Self <: PerformanceMetrics] (val x: Self) extends AnyVal {
+  implicit class PerformanceMetricsMutableBuilder[Self <: PerformanceMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProperties(value: PerformanceMetricsProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProperties(value: PerformanceMetricsProperties): Self = this.set("Properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("Properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
   }
 }

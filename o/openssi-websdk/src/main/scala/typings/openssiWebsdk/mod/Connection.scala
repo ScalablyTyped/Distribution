@@ -1,11 +1,12 @@
 package typings.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Connection extends js.Object {
+trait Connection extends StObject {
   
   var id: String = js.native
   
@@ -28,42 +29,30 @@ object Connection {
   }
   
   @scala.inline
-  implicit class ConnectionOps[Self <: Connection] (val x: Self) extends AnyVal {
+  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocal(value: ConnectionAgent): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: Properties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setRemote(value: ConnectionAgent): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
     
     @scala.inline
-    def setState(value: ConnectionState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal(value: ConnectionAgent): Self = this.set("local", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocal: Self = this.set("local", js.undefined)
-    
-    @scala.inline
-    def setRemote(value: ConnectionAgent): Self = this.set("remote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemote: Self = this.set("remote", js.undefined)
+    def setState(value: ConnectionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

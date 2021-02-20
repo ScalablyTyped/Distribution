@@ -2,12 +2,13 @@ package typings.reactBootstrapTable.mod
 
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertModalHeaderProps extends js.Object {
+trait InsertModalHeaderProps extends StObject {
   
   /**
     * Callback function to call prior to closing the Insert Modal window.
@@ -48,54 +49,42 @@ object InsertModalHeaderProps {
   }
   
   @scala.inline
-  implicit class InsertModalHeaderPropsOps[Self <: InsertModalHeaderProps] (val x: Self) extends AnyVal {
+  implicit class InsertModalHeaderPropsMutableBuilder[Self <: InsertModalHeaderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeClose(value: /* e */ SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeClose(value: /* e */ SyntheticEvent[_, Event] => Unit): Self = this.set("beforeClose", js.Any.fromFunction1(value))
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteBeforeClose: Self = this.set("beforeClose", js.undefined)
+    def setHideClose(value: Boolean): Self = StObject.set(x, "hideClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setHideCloseUndefined: Self = StObject.set(x, "hideClose", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setOnModalClose(value: /* closeModal */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onModalClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideClose(value: Boolean): Self = this.set("hideClose", value.asInstanceOf[js.Any])
+    def setOnModalCloseUndefined: Self = StObject.set(x, "onModalClose", js.undefined)
     
     @scala.inline
-    def deleteHideClose: Self = this.set("hideClose", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnModalClose(value: /* closeModal */ js.Function0[Unit] => Unit): Self = this.set("onModalClose", js.Any.fromFunction1(value))
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteOnModalClose: Self = this.set("onModalClose", js.undefined)
+    def setVersion(value: BootstrapVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: BootstrapVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionConstructionOptions extends js.Object {
+trait RegionConstructionOptions extends StObject {
   
   /**
     * Prevents error on missing element. (undocumented)
@@ -40,42 +41,30 @@ object RegionConstructionOptions {
   }
   
   @scala.inline
-  implicit class RegionConstructionOptionsOps[Self <: RegionConstructionOptions] (val x: Self) extends AnyVal {
+  implicit class RegionConstructionOptionsMutableBuilder[Self <: RegionConstructionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMissingEl(value: Boolean): Self = StObject.set(x, "allowMissingEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowMissingElUndefined: Self = StObject.set(x, "allowMissingEl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEl(value: js.Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMissingEl(value: Boolean): Self = this.set("allowMissingEl", value.asInstanceOf[js.Any])
+    def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     
     @scala.inline
-    def deleteAllowMissingEl: Self = this.set("allowMissingEl", js.undefined)
+    def setParentEl(value: String): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEl(value: js.Any): Self = this.set("el", value.asInstanceOf[js.Any])
+    def setParentElUndefined: Self = StObject.set(x, "parentEl", js.undefined)
     
     @scala.inline
-    def deleteEl: Self = this.set("el", js.undefined)
+    def setReplaceElement(value: String): Self = StObject.set(x, "replaceElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentEl(value: String): Self = this.set("parentEl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentEl: Self = this.set("parentEl", js.undefined)
-    
-    @scala.inline
-    def setReplaceElement(value: String): Self = this.set("replaceElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceElement: Self = this.set("replaceElement", js.undefined)
+    def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
   }
 }

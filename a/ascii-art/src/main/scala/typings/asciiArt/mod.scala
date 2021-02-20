@@ -1,38 +1,58 @@
 package typings.asciiArt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ascii-art", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("ascii-art", "Figlet")
+  @js.native
   val Figlet: js.Any = js.native
   
-  @JSName("Image")
+  @JSImport("ascii-art", "Image")
+  @js.native
   val Image_ : js.Any = js.native
   
+  @JSImport("ascii-art", "artwork")
+  @js.native
   val artwork: ArtworkType = js.native
   
+  @JSImport("ascii-art", "font")
+  @js.native
   val font: FontType = js.native
   
+  @JSImport("ascii-art", "image")
+  @js.native
   val image: ImageType = js.native
   
+  @JSImport("ascii-art", "join")
+  @js.native
   val join: JoinType = js.native
   
+  @JSImport("ascii-art", "lines")
+  @js.native
   val lines: LinesType = js.native
   
+  @JSImport("ascii-art", "overlay")
+  @js.native
   val overlay: OverlayType = js.native
   
+  @JSImport("ascii-art", "strings")
+  @js.native
   val strings: StringsType = js.native
   
+  @JSImport("ascii-art", "style")
+  @js.native
   val style: StyleType = js.native
   
+  @JSImport("ascii-art", "table")
+  @js.native
   val table: TableType = js.native
   
   @js.native
-  trait Art extends js.Object {
+  trait Art extends StObject {
     
     def artwork(options: js.Object): Art = js.native
     def artwork(options: js.Object, callback: Cb): Art = js.native

@@ -3,6 +3,7 @@ package typings.qIo
 import org.scalablytyped.runtime.Instantiable0
 import typings.node.Buffer
 import typings.qIo.Qio.Reader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

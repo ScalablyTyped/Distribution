@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1ClassificationMetadata extends js.Object {
+trait GoogleCloudDatalabelingV1beta1ClassificationMetadata extends StObject {
   
   /** Whether the classification task is multi-label or not. */
   var isMultiLabel: js.UndefOr[Boolean] = js.native
@@ -19,24 +20,12 @@ object GoogleCloudDatalabelingV1beta1ClassificationMetadata {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ClassificationMetadataOps[Self <: GoogleCloudDatalabelingV1beta1ClassificationMetadata] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1ClassificationMetadataMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ClassificationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsMultiLabel(value: Boolean): Self = StObject.set(x, "isMultiLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsMultiLabel(value: Boolean): Self = this.set("isMultiLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsMultiLabel: Self = this.set("isMultiLabel", js.undefined)
+    def setIsMultiLabelUndefined: Self = StObject.set(x, "isMultiLabel", js.undefined)
   }
 }

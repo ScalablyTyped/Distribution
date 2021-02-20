@@ -2,6 +2,7 @@ package typings.stylus.mod.Stylus
 
 import typings.node.eventsMod.EventEmitter
 import typings.stylus.mod.Stylus.Nodes.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

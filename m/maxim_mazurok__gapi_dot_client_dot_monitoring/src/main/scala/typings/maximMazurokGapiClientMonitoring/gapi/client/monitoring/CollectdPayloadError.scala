@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectdPayloadError extends js.Object {
+trait CollectdPayloadError extends StObject {
   
   /** Records the error status for the payload. If this field is present, the partial errors for nested values won't be populated. */
   var error: js.UndefOr[Status] = js.native
@@ -25,39 +26,27 @@ object CollectdPayloadError {
   }
   
   @scala.inline
-  implicit class CollectdPayloadErrorOps[Self <: CollectdPayloadError] (val x: Self) extends AnyVal {
+  implicit class CollectdPayloadErrorMutableBuilder[Self <: CollectdPayloadError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Status): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setValueErrors(value: js.Array[CollectdValueError]): Self = StObject.set(x, "valueErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setValueErrorsUndefined: Self = StObject.set(x, "valueErrors", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
-    
-    @scala.inline
-    def setValueErrorsVarargs(value: CollectdValueError*): Self = this.set("valueErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setValueErrors(value: js.Array[CollectdValueError]): Self = this.set("valueErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueErrors: Self = this.set("valueErrors", js.undefined)
+    def setValueErrorsVarargs(value: CollectdValueError*): Self = StObject.set(x, "valueErrors", js.Array(value :_*))
   }
 }

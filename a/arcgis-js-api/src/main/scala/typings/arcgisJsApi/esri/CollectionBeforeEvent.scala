@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionBeforeEvent[T] extends js.Object {
+trait CollectionBeforeEvent[T] extends StObject {
   
   var item: T = js.native
   
@@ -20,24 +21,12 @@ object CollectionBeforeEvent {
   }
   
   @scala.inline
-  implicit class CollectionBeforeEventOps[Self <: CollectionBeforeEvent[_], T] (val x: Self with CollectionBeforeEvent[T]) extends AnyVal {
+  implicit class CollectionBeforeEventMutableBuilder[Self <: CollectionBeforeEvent[_], T] (val x: Self with CollectionBeforeEvent[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItem(value: T): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = this.set("preventDefault", js.Any.fromFunction0(value))
+    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
   }
 }

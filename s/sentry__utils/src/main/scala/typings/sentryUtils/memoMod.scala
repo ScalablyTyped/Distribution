@@ -1,15 +1,15 @@
 package typings.sentryUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/utils/dist/memo", JSImport.Namespace)
-@js.native
-object memoMod extends js.Object {
+object memoMod {
   
+  @JSImport("@sentry/utils/dist/memo", "Memo")
   @js.native
-  class Memo () extends js.Object {
+  class Memo () extends StObject {
     
     /** Determines if WeakSet is available */
     val _hasWeakSet: js.Any = js.native

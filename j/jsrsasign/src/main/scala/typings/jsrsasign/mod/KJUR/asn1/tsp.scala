@@ -1,9 +1,7 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
-import typings.jsrsasign.anon.AddInfoNotAvailable
 import typings.jsrsasign.anon.Certreq
 import typings.jsrsasign.anon.Failinfo
-import typings.jsrsasign.anon.Granted
 import typings.jsrsasign.anon.HashValue
 import typings.jsrsasign.anon.Mi
 import typings.jsrsasign.anon.Micros
@@ -14,6 +12,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,48 +29,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - easily generate CMS SignedData
   * - APIs are very similar to BouncyCastle library ASN.1 classes. So easy to learn.
   */
-@JSImport("jsrsasign", "KJUR.asn1.tsp")
-@js.native
-object tsp extends js.Object {
-  
-  /**
-    * parse hexadecimal string of MessageImprint
-    * @param hexadecimal string of MessageImprint
-    * @return JSON object of parsed parameters
-    * @description
-    * This method parses a hexadecimal string of MessageImprint
-    * and returns parsed their fields:
-    * @example
-    * var json = KJUR.asn1.tsp.TSPUtil.parseMessageImprint("302602...");
-    * // resulted DUMP of above 'json':
-    * {hashAlg: 'sha256',          // MessageImprint hashAlg
-    *  hashValue: 'a1a2a3a4...'}   // MessageImprint hashValue
-    */
-  def parseMessageImprint(miHex: String): typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint = js.native
-  
-  /**
-    * parse hexadecimal string of TimeStampReq
-    * @param hexadecimal string of TimeStampReq
-    * @return JSON object of parsed parameters
-    * @description
-    * This method parses a hexadecimal string of TimeStampReq
-    * and returns parsed their fields:
-    * @example
-    * var json = KJUR.asn1.tsp.TSPUtil.parseTimeStampReq("302602...");
-    * // resulted DUMP of above 'json':
-    * {mi: {hashAlg: 'sha256',          // MessageImprint hashAlg
-    *       hashValue: 'a1a2a3a4...'},  // MessageImprint hashValue
-    *  policy: '1.2.3.4.5',             // tsaPolicy (OPTION)
-    *  nonce: '9abcf318...',            // nonce (OPTION)
-    *  certreq: true}                   // certReq (OPTION)
-    */
-  def parseTimeStampReq(reqHex: String): Certreq = js.native
+object tsp {
   
   /**
     * abstract class for TimeStampToken generator
     * @param params associative array of parameters
     * @description
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.AbstractTSAAdapter")
   @js.native
   class AbstractTSAAdapter ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.AbstractTSAAdapter
@@ -91,6 +56,7 @@ object tsp extends js.Object {
     *                                 millis: 500,
     *                                 micros: 500});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.Accuracy")
   @js.native
   class Accuracy ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.Accuracy {
@@ -112,6 +78,7 @@ object tsp extends js.Object {
     *
     * Those values are provided by initial parameters.
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.FixedTSAAdapter")
   @js.native
   class FixedTSAAdapter ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.FixedTSAAdapter {
@@ -131,6 +98,7 @@ object tsp extends js.Object {
     * o = new KJUR.asn1.tsp.MessageImprint({hashAlg: 'sha1',
     *                                       hashValue: '1f3dea...'});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.MessageImprint")
   @js.native
   class MessageImprint ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint {
@@ -153,17 +121,70 @@ object tsp extends js.Object {
     *    systemFailure          (25) }
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo")
   @js.native
   class PKIFailureInfo ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: IntegerParam) = this()
     def this(params: NameParam) = this()
   }
-  /* static members */
-  @js.native
-  object PKIFailureInfo extends js.Object {
+  object PKIFailureInfo {
     
-    val valueList: AddInfoNotAvailable = js.native
+    /* static member */
+    object valueList {
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo.valueList")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo.valueList.addInfoNotAvailable")
+      @js.native
+      def addInfoNotAvailable: Double = js.native
+      @scala.inline
+      def addInfoNotAvailable_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addInfoNotAvailable")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo.valueList.badAlg")
+      @js.native
+      def badAlg: Double = js.native
+      @scala.inline
+      def badAlg_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badAlg")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo.valueList.badDataFormat")
+      @js.native
+      def badDataFormat: Double = js.native
+      @scala.inline
+      def badDataFormat_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badDataFormat")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo.valueList.badRequest")
+      @js.native
+      def badRequest: Double = js.native
+      @scala.inline
+      def badRequest_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badRequest")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo.valueList.systemFailure")
+      @js.native
+      def systemFailure: Double = js.native
+      @scala.inline
+      def systemFailure_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("systemFailure")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo.valueList.timeNotAvailable")
+      @js.native
+      def timeNotAvailable: Double = js.native
+      @scala.inline
+      def timeNotAvailable_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeNotAvailable")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo.valueList.unacceptedExtension")
+      @js.native
+      def unacceptedExtension: Double = js.native
+      @scala.inline
+      def unacceptedExtension_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unacceptedExtension")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo.valueList.unacceptedPolicy")
+      @js.native
+      def unacceptedPolicy: Double = js.native
+      @scala.inline
+      def unacceptedPolicy_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unacceptedPolicy")(x.asInstanceOf[js.Any])
+    }
   }
   
   /**
@@ -175,6 +196,7 @@ object tsp extends js.Object {
     *    SIZE (1..MAX) OF UTF8String }
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFreeText")
   @js.native
   class PKIFreeText ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
@@ -195,16 +217,58 @@ object tsp extends js.Object {
     *    revocationNotification (5) }
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatus")
   @js.native
   class PKIStatus ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: NameParam) = this()
   }
-  /* static members */
-  @js.native
-  object PKIStatus extends js.Object {
+  object PKIStatus {
     
-    val valueList: Granted = js.native
+    /* static member */
+    object valueList {
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatus.valueList")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatus.valueList.granted")
+      @js.native
+      def granted: Double = js.native
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatus.valueList.grantedWithMods")
+      @js.native
+      def grantedWithMods: Double = js.native
+      @scala.inline
+      def grantedWithMods_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grantedWithMods")(x.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def granted_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("granted")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatus.valueList.rejection")
+      @js.native
+      def rejection: Double = js.native
+      @scala.inline
+      def rejection_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rejection")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatus.valueList.revocationNotification")
+      @js.native
+      def revocationNotification: Double = js.native
+      @scala.inline
+      def revocationNotification_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("revocationNotification")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatus.valueList.revocationWarning")
+      @js.native
+      def revocationWarning: Double = js.native
+      @scala.inline
+      def revocationWarning_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("revocationWarning")(x.asInstanceOf[js.Any])
+      
+      @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatus.valueList.waiting")
+      @js.native
+      def waiting: Double = js.native
+      @scala.inline
+      def waiting_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waiting")(x.asInstanceOf[js.Any])
+    }
   }
   
   /**
@@ -218,6 +282,7 @@ object tsp extends js.Object {
     *    failInfo                PKIFailureInfo  OPTIONAL  }
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatusInfo")
   @js.native
   class PKIStatusInfo ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
@@ -229,14 +294,14 @@ object tsp extends js.Object {
     * @param params associative array of parameters
     * @description
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.SimpleTSAAdapter")
   @js.native
   class SimpleTSAAdapter ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.SimpleTSAAdapter {
     def this(initParams: SigAlg) = this()
   }
   
-  @js.native
-  object TSPUtil extends js.Object {
+  object TSPUtil {
     
     /**
       * generate TimeStampToken ASN.1 object specified by JSON parameters
@@ -245,7 +310,11 @@ object tsp extends js.Object {
       * @description
       * @example
       */
+    @JSImport("jsrsasign", "KJUR.asn1.tsp.TSPUtil.newTimeStampToken")
+    @js.native
     def newTimeStampToken(): SignedData = js.native
+    @JSImport("jsrsasign", "KJUR.asn1.tsp.TSPUtil.newTimeStampToken")
+    @js.native
     def newTimeStampToken(param: SignerCert): SignedData = js.native
   }
   
@@ -277,6 +346,7 @@ object tsp extends js.Object {
     *     tsa:       {str: '/C=US/O=TSA1'}   // OPTION
     * });
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.TSTInfo")
   @js.native
   class TSTInfo protected ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.TSTInfo {
@@ -297,6 +367,7 @@ object tsp extends js.Object {
     *    extensions       [0] IMPLICIT Extensions   OPTIONAL  }
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.TimeStampReq")
   @js.native
   class TimeStampReq ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.TimeStampReq {
@@ -313,9 +384,47 @@ object tsp extends js.Object {
     *    timeStampToken          TimeStampToken     OPTIONAL  }
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.TimeStampResp")
   @js.native
   class TimeStampResp ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: Status) = this()
   }
+  
+  /**
+    * parse hexadecimal string of MessageImprint
+    * @param hexadecimal string of MessageImprint
+    * @return JSON object of parsed parameters
+    * @description
+    * This method parses a hexadecimal string of MessageImprint
+    * and returns parsed their fields:
+    * @example
+    * var json = KJUR.asn1.tsp.TSPUtil.parseMessageImprint("302602...");
+    * // resulted DUMP of above 'json':
+    * {hashAlg: 'sha256',          // MessageImprint hashAlg
+    *  hashValue: 'a1a2a3a4...'}   // MessageImprint hashValue
+    */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.parseMessageImprint")
+  @js.native
+  def parseMessageImprint(miHex: String): typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint = js.native
+  
+  /**
+    * parse hexadecimal string of TimeStampReq
+    * @param hexadecimal string of TimeStampReq
+    * @return JSON object of parsed parameters
+    * @description
+    * This method parses a hexadecimal string of TimeStampReq
+    * and returns parsed their fields:
+    * @example
+    * var json = KJUR.asn1.tsp.TSPUtil.parseTimeStampReq("302602...");
+    * // resulted DUMP of above 'json':
+    * {mi: {hashAlg: 'sha256',          // MessageImprint hashAlg
+    *       hashValue: 'a1a2a3a4...'},  // MessageImprint hashValue
+    *  policy: '1.2.3.4.5',             // tsaPolicy (OPTION)
+    *  nonce: '9abcf318...',            // nonce (OPTION)
+    *  certreq: true}                   // certReq (OPTION)
+    */
+  @JSImport("jsrsasign", "KJUR.asn1.tsp.parseTimeStampReq")
+  @js.native
+  def parseTimeStampReq(reqHex: String): Certreq = js.native
 }

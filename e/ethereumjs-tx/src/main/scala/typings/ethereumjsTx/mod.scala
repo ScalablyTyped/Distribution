@@ -7,14 +7,14 @@ import typings.ethereumjsTx.typesMod.PrefixedHexString
 import typings.ethereumjsTx.typesMod.TransactionOptions
 import typings.ethereumjsTx.typesMod.TxData
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ethereumjs-tx", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("ethereumjs-tx", "FakeTransaction")
   @js.native
   class FakeTransaction () extends default {
     def this(data: js.Array[BufferLike]) = this()
@@ -28,6 +28,7 @@ object mod extends js.Object {
     def this(data: Buffer, opts: TransactionOptions) = this()
   }
   
+  @JSImport("ethereumjs-tx", "Transaction")
   @js.native
   /**
     * Creates a new transaction from an object with its fields' values.

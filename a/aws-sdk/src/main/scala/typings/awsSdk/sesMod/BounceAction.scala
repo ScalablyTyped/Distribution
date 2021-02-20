@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BounceAction extends js.Object {
+trait BounceAction extends StObject {
   
   /**
     * Human-readable text to include in the bounce message.
@@ -41,39 +42,27 @@ object BounceAction {
   }
   
   @scala.inline
-  implicit class BounceActionOps[Self <: BounceAction] (val x: Self) extends AnyVal {
+  implicit class BounceActionMutableBuilder[Self <: BounceAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: BounceMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSender(value: Address): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSmtpReplyCode(value: BounceSmtpReplyCode): Self = StObject.set(x, "SmtpReplyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: BounceMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setStatusCode(value: BounceStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSender(value: Address): Self = this.set("Sender", value.asInstanceOf[js.Any])
+    def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
     
     @scala.inline
-    def setSmtpReplyCode(value: BounceSmtpReplyCode): Self = this.set("SmtpReplyCode", value.asInstanceOf[js.Any])
+    def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: BounceStatusCode): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
-    
-    @scala.inline
-    def setTopicArn(value: AmazonResourceName): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

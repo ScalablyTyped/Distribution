@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationBehavior extends js.Object {
+trait AnimationBehavior extends StObject {
   
   var Accumulate: MsoAnimAccumulate = js.native
   
@@ -67,66 +68,54 @@ object AnimationBehavior {
   }
   
   @scala.inline
-  implicit class AnimationBehaviorOps[Self <: AnimationBehavior] (val x: Self) extends AnyVal {
+  implicit class AnimationBehaviorMutableBuilder[Self <: AnimationBehavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccumulate(value: MsoAnimAccumulate): Self = StObject.set(x, "Accumulate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditive(value: MsoAnimAdditive): Self = StObject.set(x, "Additive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccumulate(value: MsoAnimAccumulate): Self = this.set("Accumulate", value.asInstanceOf[js.Any])
+    def setColorEffect(value: ColorEffect): Self = StObject.set(x, "ColorEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditive(value: MsoAnimAdditive): Self = this.set("Additive", value.asInstanceOf[js.Any])
+    def setCommandEffect(value: CommandEffect): Self = StObject.set(x, "CommandEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColorEffect(value: ColorEffect): Self = this.set("ColorEffect", value.asInstanceOf[js.Any])
+    def setFilterEffect(value: FilterEffect): Self = StObject.set(x, "FilterEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandEffect(value: CommandEffect): Self = this.set("CommandEffect", value.asInstanceOf[js.Any])
+    def setMotionEffect(value: MotionEffect): Self = StObject.set(x, "MotionEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterEffect(value: FilterEffect): Self = this.set("FilterEffect", value.asInstanceOf[js.Any])
+    def setPowerPointDotAnimationBehavior_typekey(value: AnimationBehavior): Self = StObject.set(x, "PowerPoint.AnimationBehavior_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotionEffect(value: MotionEffect): Self = this.set("MotionEffect", value.asInstanceOf[js.Any])
+    def setPropertyEffect(value: PropertyEffect): Self = StObject.set(x, "PropertyEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setRotationEffect(value: RotationEffect): Self = StObject.set(x, "RotationEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotAnimationBehavior_typekey(value: AnimationBehavior): Self = this.set("PowerPoint.AnimationBehavior_typekey", value.asInstanceOf[js.Any])
+    def setScaleEffect(value: ScaleEffect): Self = StObject.set(x, "ScaleEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyEffect(value: PropertyEffect): Self = this.set("PropertyEffect", value.asInstanceOf[js.Any])
+    def setSetEffect(value: SetEffect): Self = StObject.set(x, "SetEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationEffect(value: RotationEffect): Self = this.set("RotationEffect", value.asInstanceOf[js.Any])
+    def setTiming(value: Timing): Self = StObject.set(x, "Timing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleEffect(value: ScaleEffect): Self = this.set("ScaleEffect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetEffect(value: SetEffect): Self = this.set("SetEffect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiming(value: Timing): Self = this.set("Timing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MsoAnimType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: MsoAnimType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

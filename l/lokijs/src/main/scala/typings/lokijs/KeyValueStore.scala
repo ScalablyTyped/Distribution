@@ -4,12 +4,13 @@ import typings.lokijs.anon.Found
 import typings.lokijs.lokijsNumbers.`-1`
 import typings.lokijs.lokijsNumbers.`0`
 import typings.lokijs.lokijsNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyValueStore extends js.Object {
+trait KeyValueStore extends StObject {
   
   def bs(): js.Function2[/* array */ js.Array[_], /* item */ js.Any, Found] = js.native
   
@@ -42,45 +43,33 @@ object KeyValueStore {
   }
   
   @scala.inline
-  implicit class KeyValueStoreOps[Self <: KeyValueStore] (val x: Self) extends AnyVal {
+  implicit class KeyValueStoreMutableBuilder[Self <: KeyValueStore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBs(value: () => js.Function2[/* array */ js.Array[_], /* item */ js.Any, Found]): Self = StObject.set(x, "bs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: js.Any => js.Array[_]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeys(value: js.Array[_]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBs(value: () => js.Function2[/* array */ js.Array[_], /* item */ js.Any, Found]): Self = this.set("bs", js.Any.fromFunction0(value))
+    def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
     @scala.inline
-    def setGet(value: js.Any => js.Array[_]): Self = this.set("get", js.Any.fromFunction1(value))
+    def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setKeysVarargs(value: js.Any*): Self = this.set("keys", js.Array(value :_*))
+    def setSetSort(value: js.Function2[/* target */ js.Any, /* test */ js.Any, _] => Unit): Self = StObject.set(x, "setSort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeys(value: js.Array[_]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    def setSort(value: (js.Any, js.Any) => `-1` | `0` | `1`): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSet(value: (js.Any, js.Any) => Unit): Self = this.set("set", js.Any.fromFunction2(value))
+    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSort(value: js.Function2[/* target */ js.Any, /* test */ js.Any, _] => Unit): Self = this.set("setSort", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSort(value: (js.Any, js.Any) => `-1` | `0` | `1`): Self = this.set("sort", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[_]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

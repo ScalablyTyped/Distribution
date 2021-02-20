@@ -1,11 +1,12 @@
 package typings.jqueryBlockui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQBlockUIOptions extends js.Object {
+trait JQBlockUIOptions extends StObject {
   
   /** 
     * allow body element to be stetched in ie6; this makes blocking look better
@@ -110,180 +111,168 @@ object JQBlockUIOptions {
   }
   
   @scala.inline
-  implicit class JQBlockUIOptionsOps[Self <: JQBlockUIOptions] (val x: Self) extends AnyVal {
+  implicit class JQBlockUIOptionsMutableBuilder[Self <: JQBlockUIOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowBodyStretch(value: Boolean): Self = StObject.set(x, "allowBodyStretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowBodyStretchUndefined: Self = StObject.set(x, "allowBodyStretch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseZ(value: Double): Self = StObject.set(x, "baseZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowBodyStretch(value: Boolean): Self = this.set("allowBodyStretch", value.asInstanceOf[js.Any])
+    def setBaseZUndefined: Self = StObject.set(x, "baseZ", js.undefined)
     
     @scala.inline
-    def deleteAllowBodyStretch: Self = this.set("allowBodyStretch", js.undefined)
+    def setBindEvents(value: Boolean): Self = StObject.set(x, "bindEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseZ(value: Double): Self = this.set("baseZ", value.asInstanceOf[js.Any])
+    def setBindEventsUndefined: Self = StObject.set(x, "bindEvents", js.undefined)
     
     @scala.inline
-    def deleteBaseZ: Self = this.set("baseZ", js.undefined)
+    def setBlockMsgClass(value: String): Self = StObject.set(x, "blockMsgClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindEvents(value: Boolean): Self = this.set("bindEvents", value.asInstanceOf[js.Any])
+    def setBlockMsgClassUndefined: Self = StObject.set(x, "blockMsgClass", js.undefined)
     
     @scala.inline
-    def deleteBindEvents: Self = this.set("bindEvents", js.undefined)
+    def setCenterX(value: Boolean): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockMsgClass(value: String): Self = this.set("blockMsgClass", value.asInstanceOf[js.Any])
+    def setCenterXUndefined: Self = StObject.set(x, "centerX", js.undefined)
     
     @scala.inline
-    def deleteBlockMsgClass: Self = this.set("blockMsgClass", js.undefined)
+    def setCenterY(value: Boolean): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterX(value: Boolean): Self = this.set("centerX", value.asInstanceOf[js.Any])
+    def setCenterYUndefined: Self = StObject.set(x, "centerY", js.undefined)
     
     @scala.inline
-    def deleteCenterX: Self = this.set("centerX", js.undefined)
+    def setConstrainTabKey(value: Boolean): Self = StObject.set(x, "constrainTabKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterY(value: Boolean): Self = this.set("centerY", value.asInstanceOf[js.Any])
+    def setConstrainTabKeyUndefined: Self = StObject.set(x, "constrainTabKey", js.undefined)
     
     @scala.inline
-    def deleteCenterY: Self = this.set("centerY", js.undefined)
+    def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstrainTabKey(value: Boolean): Self = this.set("constrainTabKey", value.asInstanceOf[js.Any])
+    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def deleteConstrainTabKey: Self = this.set("constrainTabKey", js.undefined)
+    def setCursorReset(value: String): Self = StObject.set(x, "cursorReset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCss(value: js.Any): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setCursorResetUndefined: Self = StObject.set(x, "cursorReset", js.undefined)
     
     @scala.inline
-    def deleteCss: Self = this.set("css", js.undefined)
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorReset(value: String): Self = this.set("cursorReset", value.asInstanceOf[js.Any])
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteCursorReset: Self = this.set("cursorReset", js.undefined)
+    def setFadeIn(value: Double): Self = StObject.set(x, "fadeIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setFadeInUndefined: Self = StObject.set(x, "fadeIn", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setFadeOut(value: Double): Self = StObject.set(x, "fadeOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeIn(value: Double): Self = this.set("fadeIn", value.asInstanceOf[js.Any])
+    def setFadeOutUndefined: Self = StObject.set(x, "fadeOut", js.undefined)
     
     @scala.inline
-    def deleteFadeIn: Self = this.set("fadeIn", js.undefined)
+    def setFocusInput(value: Boolean): Self = StObject.set(x, "focusInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeOut(value: Double): Self = this.set("fadeOut", value.asInstanceOf[js.Any])
+    def setFocusInputUndefined: Self = StObject.set(x, "focusInput", js.undefined)
     
     @scala.inline
-    def deleteFadeOut: Self = this.set("fadeOut", js.undefined)
+    def setForceIframe(value: Boolean): Self = StObject.set(x, "forceIframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusInput(value: Boolean): Self = this.set("focusInput", value.asInstanceOf[js.Any])
+    def setForceIframeUndefined: Self = StObject.set(x, "forceIframe", js.undefined)
     
     @scala.inline
-    def deleteFocusInput: Self = this.set("focusInput", js.undefined)
+    def setGrowlCSS(value: js.Any): Self = StObject.set(x, "growlCSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceIframe(value: Boolean): Self = this.set("forceIframe", value.asInstanceOf[js.Any])
+    def setGrowlCSSUndefined: Self = StObject.set(x, "growlCSS", js.undefined)
     
     @scala.inline
-    def deleteForceIframe: Self = this.set("forceIframe", js.undefined)
+    def setIframeSrc(value: String): Self = StObject.set(x, "iframeSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrowlCSS(value: js.Any): Self = this.set("growlCSS", value.asInstanceOf[js.Any])
+    def setIframeSrcUndefined: Self = StObject.set(x, "iframeSrc", js.undefined)
     
     @scala.inline
-    def deleteGrowlCSS: Self = this.set("growlCSS", js.undefined)
+    def setIgnoreIfBlocked(value: Boolean): Self = StObject.set(x, "ignoreIfBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframeSrc(value: String): Self = this.set("iframeSrc", value.asInstanceOf[js.Any])
+    def setIgnoreIfBlockedUndefined: Self = StObject.set(x, "ignoreIfBlocked", js.undefined)
     
     @scala.inline
-    def deleteIframeSrc: Self = this.set("iframeSrc", js.undefined)
+    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreIfBlocked(value: Boolean): Self = this.set("ignoreIfBlocked", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteIgnoreIfBlocked: Self = this.set("ignoreIfBlocked", js.undefined)
+    def setOnBlock(value: () => Unit): Self = StObject.set(x, "onBlock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMessage(value: js.Any): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setOnBlockUndefined: Self = StObject.set(x, "onBlock", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setOnUnblock(value: (/* element */ js.Any, /* options */ js.Any) => Unit): Self = StObject.set(x, "onUnblock", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnBlock(value: () => Unit): Self = this.set("onBlock", js.Any.fromFunction0(value))
+    def setOnUnblockUndefined: Self = StObject.set(x, "onUnblock", js.undefined)
     
     @scala.inline
-    def deleteOnBlock: Self = this.set("onBlock", js.undefined)
+    def setOverlayCSS(value: js.Any): Self = StObject.set(x, "overlayCSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUnblock(value: (/* element */ js.Any, /* options */ js.Any) => Unit): Self = this.set("onUnblock", js.Any.fromFunction2(value))
+    def setOverlayCSSUndefined: Self = StObject.set(x, "overlayCSS", js.undefined)
     
     @scala.inline
-    def deleteOnUnblock: Self = this.set("onUnblock", js.undefined)
+    def setQuirksmodeOffsetHack(value: Double): Self = StObject.set(x, "quirksmodeOffsetHack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayCSS(value: js.Any): Self = this.set("overlayCSS", value.asInstanceOf[js.Any])
+    def setQuirksmodeOffsetHackUndefined: Self = StObject.set(x, "quirksmodeOffsetHack", js.undefined)
     
     @scala.inline
-    def deleteOverlayCSS: Self = this.set("overlayCSS", js.undefined)
+    def setShowOverlay(value: Boolean): Self = StObject.set(x, "showOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuirksmodeOffsetHack(value: Double): Self = this.set("quirksmodeOffsetHack", value.asInstanceOf[js.Any])
+    def setShowOverlayUndefined: Self = StObject.set(x, "showOverlay", js.undefined)
     
     @scala.inline
-    def deleteQuirksmodeOffsetHack: Self = this.set("quirksmodeOffsetHack", js.undefined)
+    def setTheme(value: Boolean): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOverlay(value: Boolean): Self = this.set("showOverlay", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteShowOverlay: Self = this.set("showOverlay", js.undefined)
+    def setThemedCSS(value: js.Any): Self = StObject.set(x, "themedCSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: Boolean): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setThemedCSSUndefined: Self = StObject.set(x, "themedCSS", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThemedCSS(value: js.Any): Self = this.set("themedCSS", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteThemedCSS: Self = this.set("themedCSS", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

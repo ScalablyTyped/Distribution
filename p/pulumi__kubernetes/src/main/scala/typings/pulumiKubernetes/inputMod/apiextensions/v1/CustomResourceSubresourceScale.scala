@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.apiextensions.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomResourceSubresourceScale defines how to serve the scale subresource for CustomResources.
   */
 @js.native
-trait CustomResourceSubresourceScale extends js.Object {
+trait CustomResourceSubresourceScale extends StObject {
   
   /**
     * labelSelectorPath defines the JSON path inside of a custom resource that corresponds to Scale `status.selector`. Only JSON paths without the array notation are allowed. Must be a JSON Path under `.status` or `.spec`. Must be set to work with HorizontalPodAutoscaler. The field pointed by this JSON path must be a string field (not a complex selector struct) which contains a serialized label selector in string form. More info: https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions#scale-subresource If there is no value under the given path in the custom resource, the `status.selector` value in the `/scale` subresource will default to the empty string.
@@ -35,30 +36,18 @@ object CustomResourceSubresourceScale {
   }
   
   @scala.inline
-  implicit class CustomResourceSubresourceScaleOps[Self <: CustomResourceSubresourceScale] (val x: Self) extends AnyVal {
+  implicit class CustomResourceSubresourceScaleMutableBuilder[Self <: CustomResourceSubresourceScale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelSelectorPath(value: Input[String]): Self = StObject.set(x, "labelSelectorPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelSelectorPathUndefined: Self = StObject.set(x, "labelSelectorPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpecReplicasPath(value: Input[String]): Self = StObject.set(x, "specReplicasPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecReplicasPath(value: Input[String]): Self = this.set("specReplicasPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusReplicasPath(value: Input[String]): Self = this.set("statusReplicasPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabelSelectorPath(value: Input[String]): Self = this.set("labelSelectorPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelSelectorPath: Self = this.set("labelSelectorPath", js.undefined)
+    def setStatusReplicasPath(value: Input[String]): Self = StObject.set(x, "statusReplicasPath", value.asInstanceOf[js.Any])
   }
 }

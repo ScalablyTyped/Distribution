@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageReportSubscription extends js.Object {
+trait UsageReportSubscription extends StObject {
   
   /**
     * The time when the last usage report was generated.
@@ -36,45 +37,33 @@ object UsageReportSubscription {
   }
   
   @scala.inline
-  implicit class UsageReportSubscriptionOps[Self <: UsageReportSubscription] (val x: Self) extends AnyVal {
+  implicit class UsageReportSubscriptionMutableBuilder[Self <: UsageReportSubscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastGeneratedReportDate(value: Timestamp): Self = StObject.set(x, "LastGeneratedReportDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastGeneratedReportDateUndefined: Self = StObject.set(x, "LastGeneratedReportDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastGeneratedReportDate(value: Timestamp): Self = this.set("LastGeneratedReportDate", value.asInstanceOf[js.Any])
+    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
     @scala.inline
-    def deleteLastGeneratedReportDate: Self = this.set("LastGeneratedReportDate", js.undefined)
+    def setSchedule(value: UsageReportSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BucketName(value: String): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
     @scala.inline
-    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
+    def setSubscriptionErrors(value: LastReportGenerationExecutionErrors): Self = StObject.set(x, "SubscriptionErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: UsageReportSchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setSubscriptionErrorsUndefined: Self = StObject.set(x, "SubscriptionErrors", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("Schedule", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionErrorsVarargs(value: LastReportGenerationExecutionError*): Self = this.set("SubscriptionErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscriptionErrors(value: LastReportGenerationExecutionErrors): Self = this.set("SubscriptionErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionErrors: Self = this.set("SubscriptionErrors", js.undefined)
+    def setSubscriptionErrorsVarargs(value: LastReportGenerationExecutionError*): Self = StObject.set(x, "SubscriptionErrors", js.Array(value :_*))
   }
 }

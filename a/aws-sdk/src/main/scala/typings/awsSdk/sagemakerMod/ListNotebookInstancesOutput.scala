@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListNotebookInstancesOutput extends js.Object {
+trait ListNotebookInstancesOutput extends StObject {
   
   /**
     * If the response to the previous ListNotebookInstances request was truncated, Amazon SageMaker returns this token. To retrieve the next set of notebook instances, use the token in the next request.
@@ -26,33 +27,21 @@ object ListNotebookInstancesOutput {
   }
   
   @scala.inline
-  implicit class ListNotebookInstancesOutputOps[Self <: ListNotebookInstancesOutput] (val x: Self) extends AnyVal {
+  implicit class ListNotebookInstancesOutputMutableBuilder[Self <: ListNotebookInstancesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotebookInstances(value: NotebookInstanceSummaryList): Self = StObject.set(x, "NotebookInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setNotebookInstancesUndefined: Self = StObject.set(x, "NotebookInstances", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setNotebookInstancesVarargs(value: NotebookInstanceSummary*): Self = this.set("NotebookInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotebookInstances(value: NotebookInstanceSummaryList): Self = this.set("NotebookInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotebookInstances: Self = this.set("NotebookInstances", js.undefined)
+    def setNotebookInstancesVarargs(value: NotebookInstanceSummary*): Self = StObject.set(x, "NotebookInstances", js.Array(value :_*))
   }
 }

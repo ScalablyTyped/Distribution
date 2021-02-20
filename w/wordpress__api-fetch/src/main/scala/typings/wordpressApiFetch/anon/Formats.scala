@@ -1,12 +1,13 @@
 package typings.wordpressApiFetch.anon
 
 import typings.wordpressApiFetch.mod.Schema.PostFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Formats extends js.Object {
+trait Formats extends StObject {
   
   var formats: js.Array[PostFormat] = js.native
   
@@ -25,30 +26,18 @@ object Formats {
   }
   
   @scala.inline
-  implicit class FormatsOps[Self <: Formats] (val x: Self) extends AnyVal {
+  implicit class FormatsMutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormats(value: js.Array[PostFormat]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatsVarargs(value: PostFormat*): Self = StObject.set(x, "formats", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setPost-thumbnails`(value: Boolean): Self = StObject.set(x, "post-thumbnails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatsVarargs(value: PostFormat*): Self = this.set("formats", js.Array(value :_*))
-    
-    @scala.inline
-    def setFormats(value: js.Array[PostFormat]): Self = this.set("formats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setPost-thumbnails`(value: Boolean): Self = this.set("post-thumbnails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setResponsive-embeds`(value: Boolean): Self = this.set("responsive-embeds", value.asInstanceOf[js.Any])
+    def `setResponsive-embeds`(value: Boolean): Self = StObject.set(x, "responsive-embeds", value.asInstanceOf[js.Any])
   }
 }

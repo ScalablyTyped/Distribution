@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * supported by Cloud Run.
   */
 @js.native
-trait SchemaServiceSpecPinnedType extends js.Object {
+trait SchemaServiceSpecPinnedType extends StObject {
   
   /**
     * The configuration for this service.
@@ -32,30 +33,18 @@ object SchemaServiceSpecPinnedType {
   }
   
   @scala.inline
-  implicit class SchemaServiceSpecPinnedTypeOps[Self <: SchemaServiceSpecPinnedType] (val x: Self) extends AnyVal {
+  implicit class SchemaServiceSpecPinnedTypeMutableBuilder[Self <: SchemaServiceSpecPinnedType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: SchemaConfigurationSpec): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevisionName(value: String): Self = StObject.set(x, "revisionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: SchemaConfigurationSpec): Self = this.set("configuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
-    
-    @scala.inline
-    def setRevisionName(value: String): Self = this.set("revisionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionName: Self = this.set("revisionName", js.undefined)
+    def setRevisionNameUndefined: Self = StObject.set(x, "revisionName", js.undefined)
   }
 }

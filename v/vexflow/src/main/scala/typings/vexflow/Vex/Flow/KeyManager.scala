@@ -2,12 +2,13 @@ package typings.vexflow.Vex.Flow
 
 import typings.vexflow.anon.AccidentalNote
 import typings.vexflow.anon.Change
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyManager extends js.Object {
+trait KeyManager extends StObject {
   
   def getAccidental(key: String): AccidentalNote = js.native
   
@@ -34,33 +35,21 @@ object KeyManager {
   }
   
   @scala.inline
-  implicit class KeyManagerOps[Self <: KeyManager] (val x: Self) extends AnyVal {
+  implicit class KeyManagerMutableBuilder[Self <: KeyManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAccidental(value: String => AccidentalNote): Self = StObject.set(x, "getAccidental", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetKey(value: () => String): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReset(value: () => KeyManager): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccidental(value: String => AccidentalNote): Self = this.set("getAccidental", js.Any.fromFunction1(value))
+    def setSelectNote(value: String => Change): Self = StObject.set(x, "selectNote", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetKey(value: () => String): Self = this.set("getKey", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => KeyManager): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSelectNote(value: String => Change): Self = this.set("selectNote", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetKey(value: String => KeyManager): Self = this.set("setKey", js.Any.fromFunction1(value))
+    def setSetKey(value: String => KeyManager): Self = StObject.set(x, "setKey", js.Any.fromFunction1(value))
   }
 }

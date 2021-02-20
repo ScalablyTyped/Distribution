@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopTrackingHeapObjectsRequest extends js.Object {
+trait StopTrackingHeapObjectsRequest extends StObject {
   
   /**
     * If true 'reportHeapSnapshotProgress' events will be generated while snapshot is being taken
@@ -24,30 +25,18 @@ object StopTrackingHeapObjectsRequest {
   }
   
   @scala.inline
-  implicit class StopTrackingHeapObjectsRequestOps[Self <: StopTrackingHeapObjectsRequest] (val x: Self) extends AnyVal {
+  implicit class StopTrackingHeapObjectsRequestMutableBuilder[Self <: StopTrackingHeapObjectsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTreatGlobalObjectsAsRoots(value: Boolean): Self = StObject.set(x, "treatGlobalObjectsAsRoots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportProgress(value: Boolean): Self = this.set("reportProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportProgress: Self = this.set("reportProgress", js.undefined)
-    
-    @scala.inline
-    def setTreatGlobalObjectsAsRoots(value: Boolean): Self = this.set("treatGlobalObjectsAsRoots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreatGlobalObjectsAsRoots: Self = this.set("treatGlobalObjectsAsRoots", js.undefined)
+    def setTreatGlobalObjectsAsRootsUndefined: Self = StObject.set(x, "treatGlobalObjectsAsRoots", js.undefined)
   }
 }

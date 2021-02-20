@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinderPatternInfo extends js.Object {
+trait FinderPatternInfo extends StObject {
   
   val BottomLeft: AlignmentPattern = js.native
   
@@ -22,27 +23,15 @@ object FinderPatternInfo {
   }
   
   @scala.inline
-  implicit class FinderPatternInfoOps[Self <: FinderPatternInfo] (val x: Self) extends AnyVal {
+  implicit class FinderPatternInfoMutableBuilder[Self <: FinderPatternInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomLeft(value: AlignmentPattern): Self = StObject.set(x, "BottomLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTopLeft(value: AlignmentPattern): Self = StObject.set(x, "TopLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBottomLeft(value: AlignmentPattern): Self = this.set("BottomLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopLeft(value: AlignmentPattern): Self = this.set("TopLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopRight(value: AlignmentPattern): Self = this.set("TopRight", value.asInstanceOf[js.Any])
+    def setTopRight(value: AlignmentPattern): Self = StObject.set(x, "TopRight", value.asInstanceOf[js.Any])
   }
 }

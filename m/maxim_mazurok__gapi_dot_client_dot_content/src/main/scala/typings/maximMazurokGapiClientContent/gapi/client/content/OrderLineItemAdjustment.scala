@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderLineItemAdjustment extends js.Object {
+trait OrderLineItemAdjustment extends StObject {
   
   /** Adjustment for total price of the line item. */
   var priceAdjustment: js.UndefOr[Price] = js.native
@@ -25,36 +26,24 @@ object OrderLineItemAdjustment {
   }
   
   @scala.inline
-  implicit class OrderLineItemAdjustmentOps[Self <: OrderLineItemAdjustment] (val x: Self) extends AnyVal {
+  implicit class OrderLineItemAdjustmentMutableBuilder[Self <: OrderLineItemAdjustment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPriceAdjustment(value: Price): Self = StObject.set(x, "priceAdjustment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPriceAdjustmentUndefined: Self = StObject.set(x, "priceAdjustment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTaxAdjustment(value: Price): Self = StObject.set(x, "taxAdjustment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceAdjustment(value: Price): Self = this.set("priceAdjustment", value.asInstanceOf[js.Any])
+    def setTaxAdjustmentUndefined: Self = StObject.set(x, "taxAdjustment", js.undefined)
     
     @scala.inline
-    def deletePriceAdjustment: Self = this.set("priceAdjustment", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaxAdjustment(value: Price): Self = this.set("taxAdjustment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaxAdjustment: Self = this.set("taxAdjustment", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

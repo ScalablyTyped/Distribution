@@ -1,6 +1,7 @@
 package typings.antvComponent.typesMod
 
 import typings.antvGBase.interfacesMod.IGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,45 +42,33 @@ object GridBaseCfg {
   }
   
   @scala.inline
-  implicit class GridBaseCfgOps[Self <: GridBaseCfg] (val x: Self) extends AnyVal {
+  implicit class GridBaseCfgMutableBuilder[Self <: GridBaseCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternateColor(value: String | js.Array[String]): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateColorUndefined: Self = StObject.set(x, "alternateColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternateColorVarargs(value: String*): Self = StObject.set(x, "alternateColor", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: GridItem*): Self = this.set("items", js.Array(value :_*))
+    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[GridItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
     @scala.inline
-    def setAlternateColorVarargs(value: String*): Self = this.set("alternateColor", js.Array(value :_*))
+    def setItems(value: js.Array[GridItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternateColor(value: String | js.Array[String]): Self = this.set("alternateColor", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: GridItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def deleteAlternateColor: Self = this.set("alternateColor", js.undefined)
+    def setLine(value: GridLineCfg): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosed(value: Boolean): Self = this.set("closed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClosed: Self = this.set("closed", js.undefined)
-    
-    @scala.inline
-    def setLine(value: GridLineCfg): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

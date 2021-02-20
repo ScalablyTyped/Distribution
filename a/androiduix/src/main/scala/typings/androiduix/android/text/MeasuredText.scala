@@ -2,12 +2,13 @@ package typings.androiduix.android.text
 
 import typings.androiduix.android.graphics.Paint.FontMetricsInt
 import typings.androiduix.android.text.style.MetricAffectingSpan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeasuredText extends js.Object {
+trait MeasuredText extends StObject {
   
   def addStyleRun(paint: TextPaint, len: Double, fm: FontMetricsInt): Double = js.native
   def addStyleRun(paint: TextPaint, spans: js.Array[MetricAffectingSpan], len: Double, fm: FontMetricsInt): Double = js.native

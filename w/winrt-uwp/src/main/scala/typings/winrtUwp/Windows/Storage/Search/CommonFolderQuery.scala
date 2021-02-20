@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.Search
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CommonFolderQuery extends js.Object
+sealed trait CommonFolderQuery extends StObject
 /** Specifies how to group files into folders in the query results and determines whether the query is shallow or deep. Query results for deep queries include all files in all of the subfolders of the current folder, grouped into folders according to the specified option. */
 @JSGlobal("Windows.Storage.Search.CommonFolderQuery")
 @js.native
-object CommonFolderQuery extends js.Object {
+object CommonFolderQuery extends StObject {
   
   /** A shallow list of the folders in the current folder, similar to the view that File Explorer provides. */
   @js.native

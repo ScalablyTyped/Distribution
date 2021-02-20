@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IScriptSnapshotShim extends js.Object {
+trait IScriptSnapshotShim extends StObject {
   
   def getLength(): Double = js.native
   
@@ -29,30 +30,18 @@ object IScriptSnapshotShim {
   }
   
   @scala.inline
-  implicit class IScriptSnapshotShimOps[Self <: IScriptSnapshotShim] (val x: Self) extends AnyVal {
+  implicit class IScriptSnapshotShimMutableBuilder[Self <: IScriptSnapshotShim] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLineStartPositions(value: () => String): Self = StObject.set(x, "getLineStartPositions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetText(value: (Double, Double) => String): Self = StObject.set(x, "getText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLineStartPositions(value: () => String): Self = this.set("getLineStartPositions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetText(value: (Double, Double) => String): Self = this.set("getText", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetTextChangeRangeSinceVersion(value: Double => String): Self = this.set("getTextChangeRangeSinceVersion", js.Any.fromFunction1(value))
+    def setGetTextChangeRangeSinceVersion(value: Double => String): Self = StObject.set(x, "getTextChangeRangeSinceVersion", js.Any.fromFunction1(value))
   }
 }

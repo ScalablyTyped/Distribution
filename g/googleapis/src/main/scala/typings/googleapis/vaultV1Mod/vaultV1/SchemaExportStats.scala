@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Stats of an export.
   */
 @js.native
-trait SchemaExportStats extends js.Object {
+trait SchemaExportStats extends StObject {
   
   /**
     * The number of documents already processed by the export.
@@ -34,36 +35,24 @@ object SchemaExportStats {
   }
   
   @scala.inline
-  implicit class SchemaExportStatsOps[Self <: SchemaExportStats] (val x: Self) extends AnyVal {
+  implicit class SchemaExportStatsMutableBuilder[Self <: SchemaExportStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportedArtifactCount(value: String): Self = StObject.set(x, "exportedArtifactCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportedArtifactCountUndefined: Self = StObject.set(x, "exportedArtifactCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeInBytes(value: String): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportedArtifactCount(value: String): Self = this.set("exportedArtifactCount", value.asInstanceOf[js.Any])
+    def setSizeInBytesUndefined: Self = StObject.set(x, "sizeInBytes", js.undefined)
     
     @scala.inline
-    def deleteExportedArtifactCount: Self = this.set("exportedArtifactCount", js.undefined)
+    def setTotalArtifactCount(value: String): Self = StObject.set(x, "totalArtifactCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeInBytes(value: String): Self = this.set("sizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeInBytes: Self = this.set("sizeInBytes", js.undefined)
-    
-    @scala.inline
-    def setTotalArtifactCount(value: String): Self = this.set("totalArtifactCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalArtifactCount: Self = this.set("totalArtifactCount", js.undefined)
+    def setTotalArtifactCountUndefined: Self = StObject.set(x, "totalArtifactCount", js.undefined)
   }
 }

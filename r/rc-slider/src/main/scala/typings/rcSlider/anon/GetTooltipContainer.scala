@@ -1,11 +1,12 @@
 package typings.rcSlider.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTooltipContainer extends js.Object {
+trait GetTooltipContainer extends StObject {
   
   def getTooltipContainer(node: js.Any): js.Any = js.native
   
@@ -26,30 +27,18 @@ object GetTooltipContainer {
   }
   
   @scala.inline
-  implicit class GetTooltipContainerOps[Self <: GetTooltipContainer] (val x: Self) extends AnyVal {
+  implicit class GetTooltipContainerMutableBuilder[Self <: GetTooltipContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTooltipContainer(value: js.Any => js.Any): Self = StObject.set(x, "getTooltipContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleStyle(value: js.Array[js.Object]): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandleStyleVarargs(value: js.Object*): Self = StObject.set(x, "handleStyle", js.Array(value :_*))
     
     @scala.inline
-    def setGetTooltipContainer(value: js.Any => js.Any): Self = this.set("getTooltipContainer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHandleStyleVarargs(value: js.Object*): Self = this.set("handleStyle", js.Array(value :_*))
-    
-    @scala.inline
-    def setHandleStyle(value: js.Array[js.Object]): Self = this.set("handleStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTipFormatter(value: Double => Double): Self = this.set("tipFormatter", js.Any.fromFunction1(value))
+    def setTipFormatter(value: Double => Double): Self = StObject.set(x, "tipFormatter", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.apps.v1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DaemonSetStatus represents the current status of a daemon set.
   */
 @js.native
-trait DaemonSetStatus extends js.Object {
+trait DaemonSetStatus extends StObject {
   
   /**
     * Count of hash collisions for the DaemonSet. The DaemonSet controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ControllerRevision.
@@ -80,51 +81,39 @@ object DaemonSetStatus {
   }
   
   @scala.inline
-  implicit class DaemonSetStatusOps[Self <: DaemonSetStatus] (val x: Self) extends AnyVal {
+  implicit class DaemonSetStatusMutableBuilder[Self <: DaemonSetStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollisionCount(value: Double): Self = StObject.set(x, "collisionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditions(value: js.Array[DaemonSetCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionsVarargs(value: DaemonSetCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setCollisionCount(value: Double): Self = this.set("collisionCount", value.asInstanceOf[js.Any])
+    def setCurrentNumberScheduled(value: Double): Self = StObject.set(x, "currentNumberScheduled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: DaemonSetCondition*): Self = this.set("conditions", js.Array(value :_*))
+    def setDesiredNumberScheduled(value: Double): Self = StObject.set(x, "desiredNumberScheduled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[DaemonSetCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setNumberAvailable(value: Double): Self = StObject.set(x, "numberAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentNumberScheduled(value: Double): Self = this.set("currentNumberScheduled", value.asInstanceOf[js.Any])
+    def setNumberMisscheduled(value: Double): Self = StObject.set(x, "numberMisscheduled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredNumberScheduled(value: Double): Self = this.set("desiredNumberScheduled", value.asInstanceOf[js.Any])
+    def setNumberReady(value: Double): Self = StObject.set(x, "numberReady", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberAvailable(value: Double): Self = this.set("numberAvailable", value.asInstanceOf[js.Any])
+    def setNumberUnavailable(value: Double): Self = StObject.set(x, "numberUnavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberMisscheduled(value: Double): Self = this.set("numberMisscheduled", value.asInstanceOf[js.Any])
+    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberReady(value: Double): Self = this.set("numberReady", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberUnavailable(value: Double): Self = this.set("numberUnavailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObservedGeneration(value: Double): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedNumberScheduled(value: Double): Self = this.set("updatedNumberScheduled", value.asInstanceOf[js.Any])
+    def setUpdatedNumberScheduled(value: Double): Self = StObject.set(x, "updatedNumberScheduled", value.asInstanceOf[js.Any])
   }
 }

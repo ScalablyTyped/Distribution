@@ -1,12 +1,15 @@
 package typings.xdomain
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var xdomain: IXDomain = js.native
+  @JSGlobal("xdomain")
+  @js.native
+  def xdomain: IXDomain = js.native
+  @scala.inline
+  def xdomain_=(x: IXDomain): Unit = js.Dynamic.global.updateDynamic("xdomain")(x.asInstanceOf[js.Any])
 }

@@ -6,14 +6,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/screenSpaceReflectionPostProcess", JSImport.Namespace)
-@js.native
-object screenSpaceReflectionPostProcessMod extends js.Object {
+object screenSpaceReflectionPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/screenSpaceReflectionPostProcess", "ScreenSpaceReflectionPostProcess")
   @js.native
   class ScreenSpaceReflectionPostProcess protected () extends PostProcess {
     /**
@@ -112,10 +112,11 @@ object screenSpaceReflectionPostProcessMod extends js.Object {
     var threshold: Double = js.native
   }
   /* static members */
-  @js.native
-  object ScreenSpaceReflectionPostProcess extends js.Object {
+  object ScreenSpaceReflectionPostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/screenSpaceReflectionPostProcess", "ScreenSpaceReflectionPostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): ScreenSpaceReflectionPostProcess = js.native
   }
 }

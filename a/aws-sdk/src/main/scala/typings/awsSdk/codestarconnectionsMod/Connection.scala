@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarconnectionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Connection extends js.Object {
+trait Connection extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the connection. The ARN is used as the connection reference when the connection is shared between AWS services.  The ARN is never reused if the connection is deleted. 
@@ -46,54 +47,42 @@ object Connection {
   }
   
   @scala.inline
-  implicit class ConnectionOps[Self <: Connection] (val x: Self) extends AnyVal {
+  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionArnUndefined: Self = StObject.set(x, "ConnectionArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionArn(value: ConnectionArn): Self = this.set("ConnectionArn", value.asInstanceOf[js.Any])
+    def setConnectionNameUndefined: Self = StObject.set(x, "ConnectionName", js.undefined)
     
     @scala.inline
-    def deleteConnectionArn: Self = this.set("ConnectionArn", js.undefined)
+    def setConnectionStatus(value: ConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionName(value: ConnectionName): Self = this.set("ConnectionName", value.asInstanceOf[js.Any])
+    def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
     
     @scala.inline
-    def deleteConnectionName: Self = this.set("ConnectionName", js.undefined)
+    def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionStatus(value: ConnectionStatus): Self = this.set("ConnectionStatus", value.asInstanceOf[js.Any])
+    def setHostArnUndefined: Self = StObject.set(x, "HostArn", js.undefined)
     
     @scala.inline
-    def deleteConnectionStatus: Self = this.set("ConnectionStatus", js.undefined)
+    def setOwnerAccountId(value: AccountId): Self = StObject.set(x, "OwnerAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostArn(value: HostArn): Self = this.set("HostArn", value.asInstanceOf[js.Any])
+    def setOwnerAccountIdUndefined: Self = StObject.set(x, "OwnerAccountId", js.undefined)
     
     @scala.inline
-    def deleteHostArn: Self = this.set("HostArn", js.undefined)
+    def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerAccountId(value: AccountId): Self = this.set("OwnerAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerAccountId: Self = this.set("OwnerAccountId", js.undefined)
-    
-    @scala.inline
-    def setProviderType(value: ProviderType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderType: Self = this.set("ProviderType", js.undefined)
+    def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
   }
 }

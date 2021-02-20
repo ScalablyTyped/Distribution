@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,54 +53,42 @@ object ParamsResourcePagesUpdate {
   }
   
   @scala.inline
-  implicit class ParamsResourcePagesUpdateOps[Self <: ParamsResourcePagesUpdate] (val x: Self) extends AnyVal {
+  implicit class ParamsResourcePagesUpdateMutableBuilder[Self <: ParamsResourcePagesUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlogId(value: String): Self = this.set("blogId", value.asInstanceOf[js.Any])
+    def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
     
     @scala.inline
-    def deleteBlogId: Self = this.set("blogId", js.undefined)
+    def setPublish(value: Boolean): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageId(value: String): Self = this.set("pageId", value.asInstanceOf[js.Any])
+    def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
     
     @scala.inline
-    def deletePageId: Self = this.set("pageId", js.undefined)
+    def setRequestBody(value: SchemaPage): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublish(value: Boolean): Self = this.set("publish", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deletePublish: Self = this.set("publish", js.undefined)
+    def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaPage): Self = this.set("requestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
-    
-    @scala.inline
-    def setRevert(value: Boolean): Self = this.set("revert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevert: Self = this.set("revert", js.undefined)
+    def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
   }
 }

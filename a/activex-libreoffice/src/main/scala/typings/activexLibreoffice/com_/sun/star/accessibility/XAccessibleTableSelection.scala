@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object XAccessibleTableSelection {
   }
   
   @scala.inline
-  implicit class XAccessibleTableSelectionOps[Self <: XAccessibleTableSelection] (val x: Self) extends AnyVal {
+  implicit class XAccessibleTableSelectionMutableBuilder[Self <: XAccessibleTableSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSelectColumn(value: Double => Boolean): Self = StObject.set(x, "selectColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectRow(value: Double => Boolean): Self = StObject.set(x, "selectRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnselectColumn(value: Double => Boolean): Self = StObject.set(x, "unselectColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectColumn(value: Double => Boolean): Self = this.set("selectColumn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectRow(value: Double => Boolean): Self = this.set("selectRow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnselectColumn(value: Double => Boolean): Self = this.set("unselectColumn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnselectRow(value: Double => Boolean): Self = this.set("unselectRow", js.Any.fromFunction1(value))
+    def setUnselectRow(value: Double => Boolean): Self = StObject.set(x, "unselectRow", js.Any.fromFunction1(value))
   }
 }

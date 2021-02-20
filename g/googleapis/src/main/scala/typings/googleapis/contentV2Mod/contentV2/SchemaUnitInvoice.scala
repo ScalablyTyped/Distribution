@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaUnitInvoice extends js.Object {
+trait SchemaUnitInvoice extends StObject {
   
   /**
     * Additional charges for a unit, e.g. shipping costs.
@@ -36,51 +37,39 @@ object SchemaUnitInvoice {
   }
   
   @scala.inline
-  implicit class SchemaUnitInvoiceOps[Self <: SchemaUnitInvoice] (val x: Self) extends AnyVal {
+  implicit class SchemaUnitInvoiceMutableBuilder[Self <: SchemaUnitInvoice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalCharges(value: js.Array[SchemaUnitInvoiceAdditionalCharge]): Self = StObject.set(x, "additionalCharges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalChargesUndefined: Self = StObject.set(x, "additionalCharges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalChargesVarargs(value: SchemaUnitInvoiceAdditionalCharge*): Self = StObject.set(x, "additionalCharges", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalChargesVarargs(value: SchemaUnitInvoiceAdditionalCharge*): Self = this.set("additionalCharges", js.Array(value :_*))
+    def setPromotions(value: js.Array[SchemaPromotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalCharges(value: js.Array[SchemaUnitInvoiceAdditionalCharge]): Self = this.set("additionalCharges", value.asInstanceOf[js.Any])
+    def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
     
     @scala.inline
-    def deleteAdditionalCharges: Self = this.set("additionalCharges", js.undefined)
+    def setPromotionsVarargs(value: SchemaPromotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
     
     @scala.inline
-    def setPromotionsVarargs(value: SchemaPromotion*): Self = this.set("promotions", js.Array(value :_*))
+    def setUnitPricePretax(value: SchemaPrice): Self = StObject.set(x, "unitPricePretax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotions(value: js.Array[SchemaPromotion]): Self = this.set("promotions", value.asInstanceOf[js.Any])
+    def setUnitPricePretaxUndefined: Self = StObject.set(x, "unitPricePretax", js.undefined)
     
     @scala.inline
-    def deletePromotions: Self = this.set("promotions", js.undefined)
+    def setUnitPriceTaxes(value: js.Array[SchemaUnitInvoiceTaxLine]): Self = StObject.set(x, "unitPriceTaxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitPricePretax(value: SchemaPrice): Self = this.set("unitPricePretax", value.asInstanceOf[js.Any])
+    def setUnitPriceTaxesUndefined: Self = StObject.set(x, "unitPriceTaxes", js.undefined)
     
     @scala.inline
-    def deleteUnitPricePretax: Self = this.set("unitPricePretax", js.undefined)
-    
-    @scala.inline
-    def setUnitPriceTaxesVarargs(value: SchemaUnitInvoiceTaxLine*): Self = this.set("unitPriceTaxes", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnitPriceTaxes(value: js.Array[SchemaUnitInvoiceTaxLine]): Self = this.set("unitPriceTaxes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitPriceTaxes: Self = this.set("unitPriceTaxes", js.undefined)
+    def setUnitPriceTaxesVarargs(value: SchemaUnitInvoiceTaxLine*): Self = StObject.set(x, "unitPriceTaxes", js.Array(value :_*))
   }
 }

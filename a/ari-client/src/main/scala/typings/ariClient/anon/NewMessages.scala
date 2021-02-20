@@ -1,11 +1,12 @@
 package typings.ariClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewMessages extends js.Object {
+trait NewMessages extends StObject {
   
   var mailboxName: String = js.native
   
@@ -22,27 +23,15 @@ object NewMessages {
   }
   
   @scala.inline
-  implicit class NewMessagesOps[Self <: NewMessages] (val x: Self) extends AnyVal {
+  implicit class NewMessagesMutableBuilder[Self <: NewMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMailboxName(value: String): Self = StObject.set(x, "mailboxName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewMessages(value: Double): Self = StObject.set(x, "newMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMailboxName(value: String): Self = this.set("mailboxName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewMessages(value: Double): Self = this.set("newMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldMessages(value: Double): Self = this.set("oldMessages", value.asInstanceOf[js.Any])
+    def setOldMessages(value: Double): Self = StObject.set(x, "oldMessages", value.asInstanceOf[js.Any])
   }
 }

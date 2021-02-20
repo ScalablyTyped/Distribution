@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadURLOptions extends js.Object {
+trait LoadURLOptions extends StObject {
   
   /**
     * Base url (with trailing path separator) for files to be loaded by the data url.
@@ -40,51 +41,39 @@ object LoadURLOptions {
   }
   
   @scala.inline
-  implicit class LoadURLOptionsOps[Self <: LoadURLOptions] (val x: Self) extends AnyVal {
+  implicit class LoadURLOptionsMutableBuilder[Self <: LoadURLOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseURLForDataURL(value: String): Self = StObject.set(x, "baseURLForDataURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseURLForDataURLUndefined: Self = StObject.set(x, "baseURLForDataURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraHeaders(value: String): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseURLForDataURL(value: String): Self = this.set("baseURLForDataURL", value.asInstanceOf[js.Any])
+    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
     @scala.inline
-    def deleteBaseURLForDataURL: Self = this.set("baseURLForDataURL", js.undefined)
+    def setHttpReferrer(value: String | Referrer): Self = StObject.set(x, "httpReferrer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraHeaders(value: String): Self = this.set("extraHeaders", value.asInstanceOf[js.Any])
+    def setHttpReferrerUndefined: Self = StObject.set(x, "httpReferrer", js.undefined)
     
     @scala.inline
-    def deleteExtraHeaders: Self = this.set("extraHeaders", js.undefined)
+    def setPostData(value: js.Array[UploadBlob | UploadFile | UploadRawData]): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpReferrer(value: String | Referrer): Self = this.set("httpReferrer", value.asInstanceOf[js.Any])
+    def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     
     @scala.inline
-    def deleteHttpReferrer: Self = this.set("httpReferrer", js.undefined)
+    def setPostDataVarargs(value: (UploadBlob | UploadFile | UploadRawData)*): Self = StObject.set(x, "postData", js.Array(value :_*))
     
     @scala.inline
-    def setPostDataVarargs(value: (UploadBlob | UploadFile | UploadRawData)*): Self = this.set("postData", js.Array(value :_*))
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostData(value: js.Array[UploadBlob | UploadFile | UploadRawData]): Self = this.set("postData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostData: Self = this.set("postData", js.undefined)
-    
-    @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
   }
 }

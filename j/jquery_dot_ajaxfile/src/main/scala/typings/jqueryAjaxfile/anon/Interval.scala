@@ -1,11 +1,12 @@
 package typings.jqueryAjaxfile.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Interval extends js.Object {
+trait Interval extends StObject {
   
   /**
     * The rate (in milliseconds) at which animations fire.
@@ -34,36 +35,24 @@ object Interval {
   }
   
   @scala.inline
-  implicit class IntervalOps[Self <: Interval] (val x: Self) extends AnyVal {
+  implicit class IntervalMutableBuilder[Self <: Interval] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOff(value: Boolean): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpeeds(value: Fast): Self = StObject.set(x, "speeds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOff(value: Boolean): Self = this.set("off", value.asInstanceOf[js.Any])
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSpeeds(value: Fast): Self = this.set("speeds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStep(value: js.Any): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTick(value: () => Unit): Self = this.set("tick", js.Any.fromFunction0(value))
+    def setTick(value: () => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction0(value))
   }
 }

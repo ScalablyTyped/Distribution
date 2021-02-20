@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProfilerSessionStoppedParams extends js.Object {
+trait ProfilerSessionStoppedParams extends StObject {
   
   var ownerUri: String = js.native
   
@@ -20,24 +21,12 @@ object ProfilerSessionStoppedParams {
   }
   
   @scala.inline
-  implicit class ProfilerSessionStoppedParamsOps[Self <: ProfilerSessionStoppedParams] (val x: Self) extends AnyVal {
+  implicit class ProfilerSessionStoppedParamsMutableBuilder[Self <: ProfilerSessionStoppedParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOwnerUri(value: String): Self = this.set("ownerUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionId(value: Double): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    def setSessionId(value: Double): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

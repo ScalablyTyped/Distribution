@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string} */
 @js.native
-trait typeinStylestring extends js.Object {
+trait typeinStylestring extends StObject {
   
   var body1: String = js.native
   
@@ -81,81 +82,69 @@ object typeinStylestring {
   }
   
   @scala.inline
-  implicit class typeinStylestringOps[Self <: typeinStylestring] (val x: Self) extends AnyVal {
+  implicit class typeinStylestringMutableBuilder[Self <: typeinStylestring] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody1(value: String): Self = StObject.set(x, "body1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBody2(value: String): Self = StObject.set(x, "body2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody1(value: String): Self = this.set("body1", value.asInstanceOf[js.Any])
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody2(value: String): Self = this.set("body2", value.asInstanceOf[js.Any])
+    def setDisplay1(value: String): Self = StObject.set(x, "display1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: String): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setDisplay2(value: String): Self = StObject.set(x, "display2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setDisplay3(value: String): Self = StObject.set(x, "display3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay1(value: String): Self = this.set("display1", value.asInstanceOf[js.Any])
+    def setDisplay4(value: String): Self = StObject.set(x, "display4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay2(value: String): Self = this.set("display2", value.asInstanceOf[js.Any])
+    def setH1(value: String): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay3(value: String): Self = this.set("display3", value.asInstanceOf[js.Any])
+    def setH2(value: String): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay4(value: String): Self = this.set("display4", value.asInstanceOf[js.Any])
+    def setH3(value: String): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH1(value: String): Self = this.set("h1", value.asInstanceOf[js.Any])
+    def setH4(value: String): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH2(value: String): Self = this.set("h2", value.asInstanceOf[js.Any])
+    def setH5(value: String): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH3(value: String): Self = this.set("h3", value.asInstanceOf[js.Any])
+    def setH6(value: String): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH4(value: String): Self = this.set("h4", value.asInstanceOf[js.Any])
+    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH5(value: String): Self = this.set("h5", value.asInstanceOf[js.Any])
+    def setOverline(value: String): Self = StObject.set(x, "overline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH6(value: String): Self = this.set("h6", value.asInstanceOf[js.Any])
+    def setSrOnly(value: String): Self = StObject.set(x, "srOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadline(value: String): Self = this.set("headline", value.asInstanceOf[js.Any])
+    def setSubheading(value: String): Self = StObject.set(x, "subheading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverline(value: String): Self = this.set("overline", value.asInstanceOf[js.Any])
+    def setSubtitle1(value: String): Self = StObject.set(x, "subtitle1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrOnly(value: String): Self = this.set("srOnly", value.asInstanceOf[js.Any])
+    def setSubtitle2(value: String): Self = StObject.set(x, "subtitle2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubheading(value: String): Self = this.set("subheading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtitle1(value: String): Self = this.set("subtitle1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtitle2(value: String): Self = this.set("subtitle2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

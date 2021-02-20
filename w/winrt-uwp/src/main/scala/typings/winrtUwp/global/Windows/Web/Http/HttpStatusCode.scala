@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Web.Http
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Contains the values of status codes defined for HTTP in the response to an HTTP request. */
 @JSGlobal("Windows.Web.Http.HttpStatusCode")
 @js.native
-object HttpStatusCode extends js.Object {
+object HttpStatusCode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Web.Http.HttpStatusCode with Double] = js.native

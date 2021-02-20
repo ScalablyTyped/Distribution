@@ -4,6 +4,7 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IAsyncAction
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.WinRTError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,33 +53,21 @@ object IPlayReadySecureStopServiceRequest {
   }
   
   @scala.inline
-  implicit class IPlayReadySecureStopServiceRequestOps[Self <: IPlayReadySecureStopServiceRequest] (val x: Self) extends AnyVal {
+  implicit class IPlayReadySecureStopServiceRequestMutableBuilder[Self <: IPlayReadySecureStopServiceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPublisherCertificate(value: Double): Self = StObject.set(x, "publisherCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSessionID(value: String): Self = StObject.set(x, "sessionID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisherCertificate(value: Double): Self = this.set("publisherCertificate", value.asInstanceOf[js.Any])
+    def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionID(value: String): Self = this.set("sessionID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopped(value: Boolean): Self = this.set("stopped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateTime(value: Date): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: Date): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
   }
 }

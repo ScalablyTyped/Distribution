@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,24 +44,12 @@ object XCommandInfoChangeNotifier {
   }
   
   @scala.inline
-  implicit class XCommandInfoChangeNotifierOps[Self <: XCommandInfoChangeNotifier] (val x: Self) extends AnyVal {
+  implicit class XCommandInfoChangeNotifierMutableBuilder[Self <: XCommandInfoChangeNotifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCommandInfoChangeListener(value: XCommandInfoChangeListener => Unit): Self = StObject.set(x, "addCommandInfoChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddCommandInfoChangeListener(value: XCommandInfoChangeListener => Unit): Self = this.set("addCommandInfoChangeListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveCommandInfoChangeListener(value: XCommandInfoChangeListener => Unit): Self = this.set("removeCommandInfoChangeListener", js.Any.fromFunction1(value))
+    def setRemoveCommandInfoChangeListener(value: XCommandInfoChangeListener => Unit): Self = StObject.set(x, "removeCommandInfoChangeListener", js.Any.fromFunction1(value))
   }
 }

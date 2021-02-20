@@ -7,14 +7,14 @@ import typings.pulumiKubernetes.v1beta1PodSecurityPolicyMod.PodSecurityPolicyArg
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/policy/v1beta1", JSImport.Namespace)
-@js.native
-object policyV1beta1Mod extends js.Object {
+object policyV1beta1Mod {
   
+  @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudget")
   @js.native
   class PodDisruptionBudget protected ()
     extends typings.pulumiKubernetes.podDisruptionBudgetMod.PodDisruptionBudget {
@@ -31,8 +31,7 @@ object policyV1beta1Mod extends js.Object {
     def this(name: String, args: PodDisruptionBudgetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object PodDisruptionBudget extends js.Object {
+  object PodDisruptionBudget {
     
     /**
       * Get an existing PodDisruptionBudget resource's state with the given name, ID, and optional extra
@@ -42,16 +41,23 @@ object policyV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudget.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.podDisruptionBudgetMod.PodDisruptionBudget = js.native
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudget.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.podDisruptionBudgetMod.PodDisruptionBudget = js.native
     
     /**
       * Returns true if the given object is an instance of PodDisruptionBudget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudget.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podDisruptionBudget.PodDisruptionBudget */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudgetList")
   @js.native
   class PodDisruptionBudgetList protected ()
     extends typings.pulumiKubernetes.podDisruptionBudgetListMod.PodDisruptionBudgetList {
@@ -68,8 +74,7 @@ object policyV1beta1Mod extends js.Object {
     def this(name: String, args: PodDisruptionBudgetListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object PodDisruptionBudgetList extends js.Object {
+  object PodDisruptionBudgetList {
     
     /**
       * Get an existing PodDisruptionBudgetList resource's state with the given name, ID, and optional extra
@@ -79,16 +84,23 @@ object policyV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudgetList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.podDisruptionBudgetListMod.PodDisruptionBudgetList = js.native
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudgetList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.podDisruptionBudgetListMod.PodDisruptionBudgetList = js.native
     
     /**
       * Returns true if the given object is an instance of PodDisruptionBudgetList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudgetList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podDisruptionBudgetList.PodDisruptionBudgetList */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicy")
   @js.native
   class PodSecurityPolicy protected ()
     extends typings.pulumiKubernetes.v1beta1PodSecurityPolicyMod.PodSecurityPolicy {
@@ -105,8 +117,7 @@ object policyV1beta1Mod extends js.Object {
     def this(name: String, args: PodSecurityPolicyArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object PodSecurityPolicy extends js.Object {
+  object PodSecurityPolicy {
     
     /**
       * Get an existing PodSecurityPolicy resource's state with the given name, ID, and optional extra
@@ -116,16 +127,23 @@ object policyV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicy.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1PodSecurityPolicyMod.PodSecurityPolicy = js.native
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicy.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1PodSecurityPolicyMod.PodSecurityPolicy = js.native
     
     /**
       * Returns true if the given object is an instance of PodSecurityPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicy.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podSecurityPolicy.PodSecurityPolicy */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicyList")
   @js.native
   class PodSecurityPolicyList protected ()
     extends typings.pulumiKubernetes.v1beta1PodSecurityPolicyListMod.PodSecurityPolicyList {
@@ -142,8 +160,7 @@ object policyV1beta1Mod extends js.Object {
     def this(name: String, args: PodSecurityPolicyListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object PodSecurityPolicyList extends js.Object {
+  object PodSecurityPolicyList {
     
     /**
       * Get an existing PodSecurityPolicyList resource's state with the given name, ID, and optional extra
@@ -153,13 +170,19 @@ object policyV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicyList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = js.native
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicyList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = js.native
     
     /**
       * Returns true if the given object is an instance of PodSecurityPolicyList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicyList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podSecurityPolicyList.PodSecurityPolicyList */ Boolean = js.native
   }
 }

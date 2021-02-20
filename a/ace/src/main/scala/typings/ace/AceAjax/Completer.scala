@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Completer extends js.Object {
+trait Completer extends StObject {
   
   /**
     * Provides possible completion results asynchronously using the given callback.
@@ -32,27 +33,15 @@ object Completer {
   }
   
   @scala.inline
-  implicit class CompleterOps[Self <: Completer] (val x: Self) extends AnyVal {
+  implicit class CompleterMutableBuilder[Self <: Completer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCompletions(value: (Editor, IEditSession, Position, String, CompletionCallback) => Unit): Self = StObject.set(x, "getCompletions", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDocTooltip(value: /* item */ Completion => Unit): Self = StObject.set(x, "getDocTooltip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetCompletions(value: (Editor, IEditSession, Position, String, CompletionCallback) => Unit): Self = this.set("getCompletions", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setGetDocTooltip(value: /* item */ Completion => Unit): Self = this.set("getDocTooltip", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetDocTooltip: Self = this.set("getDocTooltip", js.undefined)
+    def setGetDocTooltipUndefined: Self = StObject.set(x, "getDocTooltip", js.undefined)
   }
 }

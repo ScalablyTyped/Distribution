@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateThingResponse extends js.Object {
+trait CreateThingResponse extends StObject {
   
   /**
     * The ARN of the new thing.
@@ -31,36 +32,24 @@ object CreateThingResponse {
   }
   
   @scala.inline
-  implicit class CreateThingResponseOps[Self <: CreateThingResponse] (val x: Self) extends AnyVal {
+  implicit class CreateThingResponseMutableBuilder[Self <: CreateThingResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThingArnUndefined: Self = StObject.set(x, "thingArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThingId(value: ThingId): Self = StObject.set(x, "thingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingArn(value: ThingArn): Self = this.set("thingArn", value.asInstanceOf[js.Any])
+    def setThingIdUndefined: Self = StObject.set(x, "thingId", js.undefined)
     
     @scala.inline
-    def deleteThingArn: Self = this.set("thingArn", js.undefined)
+    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingId(value: ThingId): Self = this.set("thingId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingId: Self = this.set("thingId", js.undefined)
-    
-    @scala.inline
-    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingName: Self = this.set("thingName", js.undefined)
+    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
   }
 }

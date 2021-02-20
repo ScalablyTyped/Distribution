@@ -2,14 +2,20 @@ package typings.materialTopAppBar
 
 import typings.materialTopAppBar.anon.PartialMDCTopAppBarAdapte
 import typings.materialTopAppBar.materialTopAppBarMod.MDCTopAppBarBaseFoundation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/top-app-bar/short/foundation", JSImport.Namespace)
-@js.native
-object shortFoundationMod extends js.Object {
+object shortFoundationMod {
   
+  @JSImport("@material/top-app-bar/short/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCShortTopAppBarFoundation {
+    def this(adapter: PartialMDCTopAppBarAdapte) = this()
+  }
+  
+  @JSImport("@material/top-app-bar/short/foundation", "MDCShortTopAppBarFoundation")
   @js.native
   class MDCShortTopAppBarFoundation () extends MDCTopAppBarBaseFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
@@ -24,10 +30,5 @@ object shortFoundationMod extends js.Object {
       * @param value When `true`, bar will always be collapsed. When `false`, bar may collapse or expand based on scroll.
       */
     def setAlwaysCollapsed(value: Boolean): Unit = js.native
-  }
-  
-  @js.native
-  class default () extends MDCShortTopAppBarFoundation {
-    def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
 }

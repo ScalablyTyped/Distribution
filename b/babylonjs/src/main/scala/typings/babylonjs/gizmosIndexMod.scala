@@ -12,14 +12,14 @@ import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/index", JSImport.Namespace)
-@js.native
-object gizmosIndexMod extends js.Object {
+object gizmosIndexMod {
   
+  @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo")
   @js.native
   class AxisDragGizmo protected ()
     extends typings.babylonjs.axisDragGizmoMod.AxisDragGizmo {
@@ -88,24 +88,34 @@ object gizmosIndexMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object AxisDragGizmo extends js.Object {
+  object AxisDragGizmo {
     
     /** @hidden */
+    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo._CreateArrow")
+    @js.native
     def _CreateArrow(scene: Scene, material: StandardMaterial): TransformNode = js.native
+    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo._CreateArrow")
+    @js.native
     def _CreateArrow(
       scene: Scene,
       material: StandardMaterial,
       thickness: js.UndefOr[scala.Nothing],
       isCollider: Boolean
     ): TransformNode = js.native
+    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo._CreateArrow")
+    @js.native
     def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double): TransformNode = js.native
+    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo._CreateArrow")
+    @js.native
     def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double, isCollider: Boolean): TransformNode = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo._CreateArrowInstance")
+    @js.native
     def _CreateArrowInstance(scene: Scene, arrow: TransformNode): TransformNode = js.native
   }
   
+  @JSImport("babylonjs/Gizmos/index", "AxisScaleGizmo")
   @js.native
   class AxisScaleGizmo protected ()
     extends typings.babylonjs.axisScaleGizmoMod.AxisScaleGizmo {
@@ -174,6 +184,7 @@ object gizmosIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Gizmos/index", "BoundingBoxGizmo")
   @js.native
   /**
     * Creates an BoundingBoxGizmo
@@ -187,17 +198,19 @@ object gizmosIndexMod extends js.Object {
     def this(color: Color3, gizmoLayer: UtilityLayerRenderer) = this()
   }
   /* static members */
-  @js.native
-  object BoundingBoxGizmo extends js.Object {
+  object BoundingBoxGizmo {
     
     /**
       * Makes a mesh not pickable and wraps the mesh inside of a bounding box mesh that is pickable. (This is useful to avoid picking within complex geometry)
       * @param mesh the mesh to wrap in the bounding box mesh and make not pickable
       * @returns the bounding box mesh with the passed in mesh as a child
       */
+    @JSImport("babylonjs/Gizmos/index", "BoundingBoxGizmo.MakeNotPickableAndWrapInBoundingBox")
+    @js.native
     def MakeNotPickableAndWrapInBoundingBox(mesh: Mesh): Mesh = js.native
   }
   
+  @JSImport("babylonjs/Gizmos/index", "CameraGizmo")
   @js.native
   /**
     * Creates a CameraGizmo
@@ -208,16 +221,32 @@ object gizmosIndexMod extends js.Object {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
   }
   /* static members */
-  @js.native
-  object CameraGizmo extends js.Object {
+  object CameraGizmo {
     
-    var _CreateCameraFrustum: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/index", "CameraGizmo")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _CreateCameraMesh: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/index", "CameraGizmo._CreateCameraFrustum")
+    @js.native
+    def _CreateCameraFrustum: js.Any = js.native
+    @scala.inline
+    def _CreateCameraFrustum_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraFrustum")(x.asInstanceOf[js.Any])
     
-    var _Scale: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/index", "CameraGizmo._CreateCameraMesh")
+    @js.native
+    def _CreateCameraMesh: js.Any = js.native
+    @scala.inline
+    def _CreateCameraMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraMesh")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Gizmos/index", "CameraGizmo._Scale")
+    @js.native
+    def _Scale: js.Any = js.native
+    @scala.inline
+    def _Scale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Gizmos/index", "Gizmo")
   @js.native
   /**
     * Creates a gizmo
@@ -229,8 +258,7 @@ object gizmosIndexMod extends js.Object {
     gizmoLayer: UtilityLayerRenderer) = this()
   }
   /* static members */
-  @js.native
-  object Gizmo extends js.Object {
+  object Gizmo {
     
     /**
       * Subscribes to pointer up, down, and hover events. Used for responsive gizmos.
@@ -238,9 +266,12 @@ object gizmosIndexMod extends js.Object {
       * @param gizmoAxisCache Gizmo axis definition used for reactive gizmo UI
       * @returns {Observer<PointerInfo>} pointerObserver
       */
+    @JSImport("babylonjs/Gizmos/index", "Gizmo.GizmoAxisPointerObserver")
+    @js.native
     def GizmoAxisPointerObserver(gizmoLayer: UtilityLayerRenderer, gizmoAxisCache: Map[Mesh, GizmoAxisCache]): Observer[PointerInfo] = js.native
   }
   
+  @JSImport("babylonjs/Gizmos/index", "GizmoManager")
   @js.native
   class GizmoManager protected ()
     extends typings.babylonjs.gizmoManagerMod.GizmoManager {
@@ -281,6 +312,7 @@ object gizmosIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Gizmos/index", "LightGizmo")
   @js.native
   /**
     * Creates a LightGizmo
@@ -291,25 +323,53 @@ object gizmosIndexMod extends js.Object {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
   }
   /* static members */
-  @js.native
-  object LightGizmo extends js.Object {
+  object LightGizmo {
     
-    var _CreateDirectionalLightMesh: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/index", "LightGizmo")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _CreateHemisphericLightMesh: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/index", "LightGizmo._CreateDirectionalLightMesh")
+    @js.native
+    def _CreateDirectionalLightMesh: js.Any = js.native
+    @scala.inline
+    def _CreateDirectionalLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateDirectionalLightMesh")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Gizmos/index", "LightGizmo._CreateHemisphericLightMesh")
+    @js.native
+    def _CreateHemisphericLightMesh: js.Any = js.native
+    @scala.inline
+    def _CreateHemisphericLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateHemisphericLightMesh")(x.asInstanceOf[js.Any])
     
     /**
       * Creates the lines for a light mesh
       */
-    var _CreateLightLines: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/index", "LightGizmo._CreateLightLines")
+    @js.native
+    def _CreateLightLines: js.Any = js.native
+    @scala.inline
+    def _CreateLightLines_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateLightLines")(x.asInstanceOf[js.Any])
     
-    var _CreatePointLightMesh: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/index", "LightGizmo._CreatePointLightMesh")
+    @js.native
+    def _CreatePointLightMesh: js.Any = js.native
+    @scala.inline
+    def _CreatePointLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreatePointLightMesh")(x.asInstanceOf[js.Any])
     
-    var _CreateSpotLightMesh: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/index", "LightGizmo._CreateSpotLightMesh")
+    @js.native
+    def _CreateSpotLightMesh: js.Any = js.native
+    @scala.inline
+    def _CreateSpotLightMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateSpotLightMesh")(x.asInstanceOf[js.Any])
     
-    var _Scale: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/index", "LightGizmo._Scale")
+    @js.native
+    def _Scale: js.Any = js.native
+    @scala.inline
+    def _Scale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Gizmos/index", "PlaneDragGizmo")
   @js.native
   class PlaneDragGizmo protected ()
     extends typings.babylonjs.planeDragGizmoMod.PlaneDragGizmo {
@@ -349,13 +409,15 @@ object gizmosIndexMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object PlaneDragGizmo extends js.Object {
+  object PlaneDragGizmo {
     
     /** @hidden */
+    @JSImport("babylonjs/Gizmos/index", "PlaneDragGizmo._CreatePlane")
+    @js.native
     def _CreatePlane(scene: Scene, material: StandardMaterial): TransformNode = js.native
   }
   
+  @JSImport("babylonjs/Gizmos/index", "PlaneRotationGizmo")
   @js.native
   class PlaneRotationGizmo protected ()
     extends typings.babylonjs.planeRotationGizmoMod.PlaneRotationGizmo {
@@ -379,12 +441,20 @@ object gizmosIndexMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object PlaneRotationGizmo extends js.Object {
+  object PlaneRotationGizmo {
     
-    var _CircleConstants: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/index", "PlaneRotationGizmo")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Gizmos/index", "PlaneRotationGizmo._CircleConstants")
+    @js.native
+    def _CircleConstants: js.Any = js.native
+    @scala.inline
+    def _CircleConstants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CircleConstants")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Gizmos/index", "PositionGizmo")
   @js.native
   /**
     * Creates a PositionGizmo
@@ -418,6 +488,7 @@ object gizmosIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Gizmos/index", "RotationGizmo")
   @js.native
   /**
     * Creates a RotationGizmo
@@ -605,6 +676,7 @@ object gizmosIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Gizmos/index", "ScaleGizmo")
   @js.native
   /**
     * Creates a ScaleGizmo

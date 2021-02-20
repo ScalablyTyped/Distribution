@@ -1,12 +1,13 @@
 package typings.jqueryMockjax
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MockJaxSettings extends js.Object {
+trait MockJaxSettings extends StObject {
   
   var contentType: js.UndefOr[String] = js.native
   
@@ -71,186 +72,174 @@ object MockJaxSettings {
   }
   
   @scala.inline
-  implicit class MockJaxSettingsOps[Self <: MockJaxSettings] (val x: Self) extends AnyVal {
+  implicit class MockJaxSettingsMutableBuilder[Self <: MockJaxSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setHeaders(value: MockJaxSettingsHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setIsTimeout(value: Boolean): Self = StObject.set(x, "isTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: MockJaxSettingsHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setIsTimeoutUndefined: Self = StObject.set(x, "isTimeout", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTimeout(value: Boolean): Self = this.set("isTimeout", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
     @scala.inline
-    def deleteIsTimeout: Self = this.set("isTimeout", js.undefined)
+    def setLogLevelMethods(value: js.Array[String]): Self = StObject.set(x, "logLevelMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: String): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    def setLogLevelMethodsUndefined: Self = StObject.set(x, "logLevelMethods", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    def setLogLevelMethodsVarargs(value: String*): Self = StObject.set(x, "logLevelMethods", js.Array(value :_*))
     
     @scala.inline
-    def setLogLevelMethodsVarargs(value: String*): Self = this.set("logLevelMethods", js.Array(value :_*))
+    def setLogger(value: MockJaxStandardLogger | MockJaxCustomLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevelMethods(value: js.Array[String]): Self = this.set("logLevelMethods", value.asInstanceOf[js.Any])
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def deleteLogLevelMethods: Self = this.set("logLevelMethods", js.undefined)
+    def setLogging(value: Boolean | Double): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogger(value: MockJaxStandardLogger | MockJaxCustomLogger): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Boolean | Double): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setOnAfterComplete(value: js.Function): Self = StObject.set(x, "onAfterComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setOnAfterCompleteUndefined: Self = StObject.set(x, "onAfterComplete", js.undefined)
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setOnAfterError(value: js.Function): Self = StObject.set(x, "onAfterError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAfterComplete(value: js.Function): Self = this.set("onAfterComplete", value.asInstanceOf[js.Any])
+    def setOnAfterErrorUndefined: Self = StObject.set(x, "onAfterError", js.undefined)
     
     @scala.inline
-    def deleteOnAfterComplete: Self = this.set("onAfterComplete", js.undefined)
+    def setOnAfterSuccess(value: js.Function): Self = StObject.set(x, "onAfterSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAfterError(value: js.Function): Self = this.set("onAfterError", value.asInstanceOf[js.Any])
+    def setOnAfterSuccessUndefined: Self = StObject.set(x, "onAfterSuccess", js.undefined)
     
     @scala.inline
-    def deleteOnAfterError: Self = this.set("onAfterError", js.undefined)
+    def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAfterSuccess(value: js.Function): Self = this.set("onAfterSuccess", value.asInstanceOf[js.Any])
+    def setProxyType(value: String): Self = StObject.set(x, "proxyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnAfterSuccess: Self = this.set("onAfterSuccess", js.undefined)
+    def setProxyTypeUndefined: Self = StObject.set(x, "proxyType", js.undefined)
     
     @scala.inline
-    def setProxy(value: String): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
     @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
+    def setResponse(value: (/* settings */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setProxyType(value: String): Self = this.set("proxyType", value.asInstanceOf[js.Any])
+    def setResponseText(value: String | js.Object): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProxyType: Self = this.set("proxyType", js.undefined)
+    def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
     
     @scala.inline
-    def setResponse(value: (/* settings */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = this.set("response", js.Any.fromFunction2(value))
+    def setResponseTime(value: Double): Self = StObject.set(x, "responseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setResponseTimeUndefined: Self = StObject.set(x, "responseTime", js.undefined)
     
     @scala.inline
-    def setResponseText(value: String | js.Object): Self = this.set("responseText", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def deleteResponseText: Self = this.set("responseText", js.undefined)
+    def setResponseXml(value: String): Self = StObject.set(x, "responseXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseTime(value: Double): Self = this.set("responseTime", value.asInstanceOf[js.Any])
+    def setResponseXmlUndefined: Self = StObject.set(x, "responseXml", js.undefined)
     
     @scala.inline
-    def deleteResponseTime: Self = this.set("responseTime", js.undefined)
+    def setRetainAjaxCalls(value: Boolean): Self = StObject.set(x, "retainAjaxCalls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseXml(value: String): Self = this.set("responseXml", value.asInstanceOf[js.Any])
+    def setRetainAjaxCallsUndefined: Self = StObject.set(x, "retainAjaxCalls", js.undefined)
     
     @scala.inline
-    def deleteResponseXml: Self = this.set("responseXml", js.undefined)
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetainAjaxCalls(value: Boolean): Self = this.set("retainAjaxCalls", value.asInstanceOf[js.Any])
+    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRetainAjaxCalls: Self = this.set("retainAjaxCalls", js.undefined)
+    def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
     
     @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setThrowUnmocked(value: Boolean): Self = StObject.set(x, "throwUnmocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusText(value: String): Self = this.set("statusText", value.asInstanceOf[js.Any])
+    def setThrowUnmockedUndefined: Self = StObject.set(x, "throwUnmocked", js.undefined)
     
     @scala.inline
-    def deleteStatusText: Self = this.set("statusText", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrowUnmocked(value: Boolean): Self = this.set("throwUnmocked", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteThrowUnmocked: Self = this.set("throwUnmocked", js.undefined)
+    def setUrl(value: String | RegExp): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUrlParams(value: js.Array[String]): Self = StObject.set(x, "urlParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUrlParamsUndefined: Self = StObject.set(x, "urlParams", js.undefined)
     
     @scala.inline
-    def setUrl(value: String | RegExp): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrlParamsVarargs(value: String*): Self = StObject.set(x, "urlParams", js.Array(value :_*))
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setUrlParamsVarargs(value: String*): Self = this.set("urlParams", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrlParams(value: js.Array[String]): Self = this.set("urlParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlParams: Self = this.set("urlParams", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

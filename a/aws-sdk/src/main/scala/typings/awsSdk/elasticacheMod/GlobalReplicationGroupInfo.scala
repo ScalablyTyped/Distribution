@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalReplicationGroupInfo extends js.Object {
+trait GlobalReplicationGroupInfo extends StObject {
   
   /**
     * The name of the Global Datastore
@@ -26,30 +27,18 @@ object GlobalReplicationGroupInfo {
   }
   
   @scala.inline
-  implicit class GlobalReplicationGroupInfoOps[Self <: GlobalReplicationGroupInfo] (val x: Self) extends AnyVal {
+  implicit class GlobalReplicationGroupInfoMutableBuilder[Self <: GlobalReplicationGroupInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalReplicationGroupIdUndefined: Self = StObject.set(x, "GlobalReplicationGroupId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalReplicationGroupMemberRole(value: String): Self = StObject.set(x, "GlobalReplicationGroupMemberRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = this.set("GlobalReplicationGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlobalReplicationGroupId: Self = this.set("GlobalReplicationGroupId", js.undefined)
-    
-    @scala.inline
-    def setGlobalReplicationGroupMemberRole(value: String): Self = this.set("GlobalReplicationGroupMemberRole", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlobalReplicationGroupMemberRole: Self = this.set("GlobalReplicationGroupMemberRole", js.undefined)
+    def setGlobalReplicationGroupMemberRoleUndefined: Self = StObject.set(x, "GlobalReplicationGroupMemberRole", js.undefined)
   }
 }

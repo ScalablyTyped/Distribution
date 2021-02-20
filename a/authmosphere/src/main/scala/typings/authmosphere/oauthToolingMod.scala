@@ -6,13 +6,12 @@ import typings.authmosphere.loggerMod.Logger
 import typings.authmosphere.oauthconfigMod.OAuthConfig
 import typings.authmosphere.tokenMod.Token
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("authmosphere/lib/src/oauth-tooling", JSImport.Namespace)
-@js.native
-object oauthToolingMod extends js.Object {
+object oauthToolingMod {
   
   /**
     * Returns URI to request authorization code with the given parameters.
@@ -23,7 +22,11 @@ object oauthToolingMod extends js.Object {
     * @param queryParams - optional set of key-value pairs which will be added as query parameters to the request
     * @returns {string}
     */
+  @JSImport("authmosphere/lib/src/oauth-tooling", "createAuthCodeRequestUri")
+  @js.native
   def createAuthCodeRequestUri(authorizationEndpoint: String, redirectUri: String, clientId: String): String = js.native
+  @JSImport("authmosphere/lib/src/oauth-tooling", "createAuthCodeRequestUri")
+  @js.native
   def createAuthCodeRequestUri(
     authorizationEndpoint: String,
     redirectUri: String,
@@ -41,7 +44,11 @@ object oauthToolingMod extends js.Object {
     * @param logger - optional logger
     * @returns {Promise<T>}
     */
+  @JSImport("authmosphere/lib/src/oauth-tooling", "getAccessToken")
+  @js.native
   def getAccessToken(options: OAuthConfig): js.Promise[Token[Record[String, _]]] = js.native
+  @JSImport("authmosphere/lib/src/oauth-tooling", "getAccessToken")
+  @js.native
   def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[Record[String, _]]] = js.native
   
   /**
@@ -57,5 +64,7 @@ object oauthToolingMod extends js.Object {
     *
     * @returns { Promise<Token<T>> }
     */
+  @JSImport("authmosphere/lib/src/oauth-tooling", "getTokenInfo")
+  @js.native
   val getTokenInfo: GetTokenInfo[Record[String, js.Any]] = js.native
 }

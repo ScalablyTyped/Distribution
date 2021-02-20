@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAppInstanceUserResponse extends js.Object {
+trait DescribeAppInstanceUserResponse extends StObject {
   
   /**
     * The name of the app instance user.
@@ -21,24 +22,12 @@ object DescribeAppInstanceUserResponse {
   }
   
   @scala.inline
-  implicit class DescribeAppInstanceUserResponseOps[Self <: DescribeAppInstanceUserResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAppInstanceUserResponseMutableBuilder[Self <: DescribeAppInstanceUserResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppInstanceUser(value: AppInstanceUser): Self = StObject.set(x, "AppInstanceUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppInstanceUser(value: AppInstanceUser): Self = this.set("AppInstanceUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppInstanceUser: Self = this.set("AppInstanceUser", js.undefined)
+    def setAppInstanceUserUndefined: Self = StObject.set(x, "AppInstanceUser", js.undefined)
   }
 }

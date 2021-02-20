@@ -11,6 +11,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.value
 import typings.std.HTMLElement
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,49 +69,37 @@ object TickConfig {
   }
   
   @scala.inline
-  implicit class TickConfigOps[Self <: TickConfig] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMode(value: count | percent | position): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: Double | js.Array[Double]): Self = this.set("values", value.asInstanceOf[js.Any])
+  implicit class TickConfigMutableBuilder[Self <: TickConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setLabelFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String
-    ): Self = this.set("labelFormatFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "labelFormatFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteLabelFormatFunction: Self = this.set("labelFormatFunction", js.undefined)
+    def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
     
     @scala.inline
-    def setLabelsVisible(value: Boolean): Self = this.set("labelsVisible", value.asInstanceOf[js.Any])
+    def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelsVisible: Self = this.set("labelsVisible", js.undefined)
+    def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
+    
+    @scala.inline
+    def setMode(value: count | percent | position): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTickCreatedFunction(
       value: (/* value */ Double, /* tickElement */ HTMLElement, /* labelElement */ js.UndefOr[HTMLElement]) => Unit
-    ): Self = this.set("tickCreatedFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "tickCreatedFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteTickCreatedFunction: Self = this.set("tickCreatedFunction", js.undefined)
+    def setTickCreatedFunctionUndefined: Self = StObject.set(x, "tickCreatedFunction", js.undefined)
+    
+    @scala.inline
+    def setValues(value: Double | js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

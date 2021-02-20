@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTaskDefinitionsResponse extends js.Object {
+trait ListTaskDefinitionsResponse extends StObject {
   
   /**
     * The nextToken value to include in a future ListTaskDefinitions request. When the results of a ListTaskDefinitions request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
@@ -26,33 +27,21 @@ object ListTaskDefinitionsResponse {
   }
   
   @scala.inline
-  implicit class ListTaskDefinitionsResponseOps[Self <: ListTaskDefinitionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListTaskDefinitionsResponseMutableBuilder[Self <: ListTaskDefinitionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTaskDefinitionArns(value: StringList): Self = StObject.set(x, "taskDefinitionArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setTaskDefinitionArnsUndefined: Self = StObject.set(x, "taskDefinitionArns", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setTaskDefinitionArnsVarargs(value: String*): Self = this.set("taskDefinitionArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setTaskDefinitionArns(value: StringList): Self = this.set("taskDefinitionArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskDefinitionArns: Self = this.set("taskDefinitionArns", js.undefined)
+    def setTaskDefinitionArnsVarargs(value: String*): Self = StObject.set(x, "taskDefinitionArns", js.Array(value :_*))
   }
 }

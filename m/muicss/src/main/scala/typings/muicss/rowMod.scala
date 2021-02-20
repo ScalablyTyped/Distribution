@@ -2,14 +2,14 @@ package typings.muicss
 
 import typings.muicss.reactMod.RowProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("muicss/lib/react/row", JSImport.Namespace)
-@js.native
-object rowMod extends js.Object {
+object rowMod {
   
+  @JSImport("muicss/lib/react/row", JSImport.Default)
   @js.native
   class default ()
     extends Component[RowProps, js.Object, js.Any]

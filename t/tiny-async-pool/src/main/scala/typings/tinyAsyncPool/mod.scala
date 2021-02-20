@@ -1,12 +1,11 @@
 package typings.tinyAsyncPool
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tiny-async-pool", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Runs multiple promise-returning & async functions in a limited concurrency pool.
@@ -22,6 +21,8 @@ object mod extends js.Object {
     * @template IN Type of the input array
     * @template OUT Type of the resolves of the promises
     */
+  @JSImport("tiny-async-pool", JSImport.Namespace)
+  @js.native
   def apply[IN, OUT](
     poolLimit: Double,
     array: js.Array[IN],

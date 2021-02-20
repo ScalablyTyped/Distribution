@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,7 @@ class MorphTargetManager ()
   def this(scene: Nullable[typings.babylonjs.BABYLON.Scene]) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.MorphTargetManager")
-@js.native
-object MorphTargetManager extends js.Object {
+object MorphTargetManager {
   
   /**
     * Creates a new MorphTargetManager from serialized data
@@ -26,5 +25,7 @@ object MorphTargetManager extends js.Object {
     * @param scene defines the hosting scene
     * @returns the new MorphTargetManager
     */
+  @JSGlobal("BABYLON.MorphTargetManager.Parse")
+  @js.native
   def Parse(serializationObject: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.MorphTargetManager = js.native
 }

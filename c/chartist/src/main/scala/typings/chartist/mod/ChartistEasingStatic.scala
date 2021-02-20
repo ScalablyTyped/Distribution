@@ -1,11 +1,12 @@
 package typings.chartist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartistEasingStatic extends js.Object {
+trait ChartistEasingStatic extends StObject {
   
   var easeInBack: IChartistEasingDefinition = js.native
   
@@ -89,90 +90,78 @@ object ChartistEasingStatic {
   }
   
   @scala.inline
-  implicit class ChartistEasingStaticOps[Self <: ChartistEasingStatic] (val x: Self) extends AnyVal {
+  implicit class ChartistEasingStaticMutableBuilder[Self <: ChartistEasingStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEaseInBack(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEaseInCirc(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInCirc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEaseInCubic(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInCubic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInBack(value: IChartistEasingDefinition): Self = this.set("easeInBack", value.asInstanceOf[js.Any])
+    def setEaseInExpo(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInExpo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInCirc(value: IChartistEasingDefinition): Self = this.set("easeInCirc", value.asInstanceOf[js.Any])
+    def setEaseInOutBack(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInOutBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInCubic(value: IChartistEasingDefinition): Self = this.set("easeInCubic", value.asInstanceOf[js.Any])
+    def setEaseInOutCirc(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInOutCirc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInExpo(value: IChartistEasingDefinition): Self = this.set("easeInExpo", value.asInstanceOf[js.Any])
+    def setEaseInOutCubic(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInOutCubic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInOutBack(value: IChartistEasingDefinition): Self = this.set("easeInOutBack", value.asInstanceOf[js.Any])
+    def setEaseInOutExpo(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInOutExpo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInOutCirc(value: IChartistEasingDefinition): Self = this.set("easeInOutCirc", value.asInstanceOf[js.Any])
+    def setEaseInOutQuad(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInOutQuad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInOutCubic(value: IChartistEasingDefinition): Self = this.set("easeInOutCubic", value.asInstanceOf[js.Any])
+    def setEaseInOutQuart(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInOutQuart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInOutExpo(value: IChartistEasingDefinition): Self = this.set("easeInOutExpo", value.asInstanceOf[js.Any])
+    def setEaseInOutQuint(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInOutQuint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInOutQuad(value: IChartistEasingDefinition): Self = this.set("easeInOutQuad", value.asInstanceOf[js.Any])
+    def setEaseInOutSine(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInOutSine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInOutQuart(value: IChartistEasingDefinition): Self = this.set("easeInOutQuart", value.asInstanceOf[js.Any])
+    def setEaseInQuad(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInQuad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInOutQuint(value: IChartistEasingDefinition): Self = this.set("easeInOutQuint", value.asInstanceOf[js.Any])
+    def setEaseInQuart(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInQuart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInOutSine(value: IChartistEasingDefinition): Self = this.set("easeInOutSine", value.asInstanceOf[js.Any])
+    def setEaseInQuint(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInQuint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInQuad(value: IChartistEasingDefinition): Self = this.set("easeInQuad", value.asInstanceOf[js.Any])
+    def setEaseInSine(value: IChartistEasingDefinition): Self = StObject.set(x, "easeInSine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInQuart(value: IChartistEasingDefinition): Self = this.set("easeInQuart", value.asInstanceOf[js.Any])
+    def setEaseOutBack(value: IChartistEasingDefinition): Self = StObject.set(x, "easeOutBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInQuint(value: IChartistEasingDefinition): Self = this.set("easeInQuint", value.asInstanceOf[js.Any])
+    def setEaseOutCirc(value: IChartistEasingDefinition): Self = StObject.set(x, "easeOutCirc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInSine(value: IChartistEasingDefinition): Self = this.set("easeInSine", value.asInstanceOf[js.Any])
+    def setEaseOutCubic(value: IChartistEasingDefinition): Self = StObject.set(x, "easeOutCubic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseOutBack(value: IChartistEasingDefinition): Self = this.set("easeOutBack", value.asInstanceOf[js.Any])
+    def setEaseOutExpo(value: IChartistEasingDefinition): Self = StObject.set(x, "easeOutExpo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseOutCirc(value: IChartistEasingDefinition): Self = this.set("easeOutCirc", value.asInstanceOf[js.Any])
+    def setEaseOutQuad(value: IChartistEasingDefinition): Self = StObject.set(x, "easeOutQuad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseOutCubic(value: IChartistEasingDefinition): Self = this.set("easeOutCubic", value.asInstanceOf[js.Any])
+    def setEaseOutQuart(value: IChartistEasingDefinition): Self = StObject.set(x, "easeOutQuart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseOutExpo(value: IChartistEasingDefinition): Self = this.set("easeOutExpo", value.asInstanceOf[js.Any])
+    def setEaseOutQuint(value: IChartistEasingDefinition): Self = StObject.set(x, "easeOutQuint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseOutQuad(value: IChartistEasingDefinition): Self = this.set("easeOutQuad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEaseOutQuart(value: IChartistEasingDefinition): Self = this.set("easeOutQuart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEaseOutQuint(value: IChartistEasingDefinition): Self = this.set("easeOutQuint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEaseOutSine(value: IChartistEasingDefinition): Self = this.set("easeOutSine", value.asInstanceOf[js.Any])
+    def setEaseOutSine(value: IChartistEasingDefinition): Self = StObject.set(x, "easeOutSine", value.asInstanceOf[js.Any])
   }
 }

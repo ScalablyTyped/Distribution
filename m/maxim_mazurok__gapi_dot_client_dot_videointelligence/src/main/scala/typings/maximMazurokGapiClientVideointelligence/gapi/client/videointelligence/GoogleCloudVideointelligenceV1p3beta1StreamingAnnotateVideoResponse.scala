@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse extends js.Object {
+trait GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse extends StObject {
   
   /** Streaming annotation results. */
   var annotationResults: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults] = js.native
@@ -28,36 +29,24 @@ object GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponseOps[Self <: GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponseMutableBuilder[Self <: GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationResults(value: GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults): Self = StObject.set(x, "annotationResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationResultsUndefined: Self = StObject.set(x, "annotationResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationResultsUri(value: String): Self = StObject.set(x, "annotationResultsUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationResults(value: GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults): Self = this.set("annotationResults", value.asInstanceOf[js.Any])
+    def setAnnotationResultsUriUndefined: Self = StObject.set(x, "annotationResultsUri", js.undefined)
     
     @scala.inline
-    def deleteAnnotationResults: Self = this.set("annotationResults", js.undefined)
+    def setError(value: GoogleRpcStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationResultsUri(value: String): Self = this.set("annotationResultsUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnnotationResultsUri: Self = this.set("annotationResultsUri", js.undefined)
-    
-    @scala.inline
-    def setError(value: GoogleRpcStatus): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
   }
 }

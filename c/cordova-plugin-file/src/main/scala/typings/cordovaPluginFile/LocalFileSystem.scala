@@ -1,14 +1,15 @@
 package typings.cordovaPluginFile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LocalFileSystem extends js.Object
+sealed trait LocalFileSystem extends StObject
 @JSGlobal("LocalFileSystem")
 @js.native
-object LocalFileSystem extends js.Object {
+object LocalFileSystem extends StObject {
   
   @js.native
   sealed trait PERSISTENT extends LocalFileSystem

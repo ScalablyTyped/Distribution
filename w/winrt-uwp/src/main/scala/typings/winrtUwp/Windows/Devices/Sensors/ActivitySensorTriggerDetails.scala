@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents details about the sensor triggering. */
 @js.native
-trait ActivitySensorTriggerDetails extends js.Object {
+trait ActivitySensorTriggerDetails extends StObject {
   
   /**
     * Reads reports about the sensor triggering.
@@ -24,21 +25,9 @@ object ActivitySensorTriggerDetails {
   }
   
   @scala.inline
-  implicit class ActivitySensorTriggerDetailsOps[Self <: ActivitySensorTriggerDetails] (val x: Self) extends AnyVal {
+  implicit class ActivitySensorTriggerDetailsMutableBuilder[Self <: ActivitySensorTriggerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReadReports(value: () => IVectorView[ActivitySensorReadingChangeReport]): Self = this.set("readReports", js.Any.fromFunction0(value))
+    def setReadReports(value: () => IVectorView[ActivitySensorReadingChangeReport]): Self = StObject.set(x, "readReports", js.Any.fromFunction0(value))
   }
 }

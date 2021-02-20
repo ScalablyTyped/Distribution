@@ -1,5 +1,6 @@
 package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A set of options for the Instrument class.
   */
 @js.native
-trait InstrumentOptionsObject extends js.Object {
+trait InstrumentOptionsObject extends StObject {
   
   /**
     * A list of allowed frequencies for this instrument. If trying to play
@@ -49,51 +50,39 @@ object InstrumentOptionsObject {
   }
   
   @scala.inline
-  implicit class InstrumentOptionsObjectOps[Self <: InstrumentOptionsObject] (val x: Self) extends AnyVal {
+  implicit class InstrumentOptionsObjectMutableBuilder[Self <: InstrumentOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedFrequencies(value: js.Array[Double]): Self = StObject.set(x, "allowedFrequencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedFrequenciesUndefined: Self = StObject.set(x, "allowedFrequencies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedFrequenciesVarargs(value: Double*): Self = StObject.set(x, "allowedFrequencies", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedFrequenciesVarargs(value: Double*): Self = this.set("allowedFrequencies", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedFrequencies(value: js.Array[Double]): Self = this.set("allowedFrequencies", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteAllowedFrequencies: Self = this.set("allowedFrequencies", js.undefined)
+    def setOscillator(value: OscillatorOptionsObject): Self = StObject.set(x, "oscillator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOscillatorUndefined: Self = StObject.set(x, "oscillator", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPlayCallbackInterval(value: Double): Self = StObject.set(x, "playCallbackInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOscillator(value: OscillatorOptionsObject): Self = this.set("oscillator", value.asInstanceOf[js.Any])
+    def setPlayCallbackIntervalUndefined: Self = StObject.set(x, "playCallbackInterval", js.undefined)
     
     @scala.inline
-    def deleteOscillator: Self = this.set("oscillator", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayCallbackInterval(value: Double): Self = this.set("playCallbackInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayCallbackInterval: Self = this.set("playCallbackInterval", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

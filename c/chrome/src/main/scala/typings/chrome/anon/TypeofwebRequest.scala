@@ -8,12 +8,13 @@ import typings.chrome.chrome.webRequest.WebRequestHeadersSynchronousEvent
 import typings.chrome.chrome.webRequest.WebResponseCacheEvent
 import typings.chrome.chrome.webRequest.WebResponseErrorEvent
 import typings.chrome.chrome.webRequest.WebResponseHeadersEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofwebRequest extends js.Object {
+trait TypeofwebRequest extends StObject {
   
   var MAX_HANDLER_BEHAVIOR_CHANGED_CALLS_PER_10_MINUTES: Double = js.native
   

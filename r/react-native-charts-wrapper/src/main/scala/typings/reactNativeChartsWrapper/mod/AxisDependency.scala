@@ -1,5 +1,6 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT
   - typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT
 */
-trait AxisDependency extends js.Object
+trait AxisDependency extends StObject
 object AxisDependency {
   
   @scala.inline

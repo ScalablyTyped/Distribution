@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountBillingPlan extends js.Object {
+trait AccountBillingPlan extends StObject {
   
   /**
     * Reserved for DocuSign.
@@ -149,153 +150,141 @@ object AccountBillingPlan {
   }
   
   @scala.inline
-  implicit class AccountBillingPlanOps[Self <: AccountBillingPlan] (val x: Self) extends AnyVal {
+  implicit class AccountBillingPlanMutableBuilder[Self <: AccountBillingPlan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOns(value: js.Array[AddOn]): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddOnsVarargs(value: AddOn*): Self = StObject.set(x, "addOns", js.Array(value :_*))
     
     @scala.inline
-    def setAddOnsVarargs(value: AddOn*): Self = this.set("addOns", js.Array(value :_*))
+    def setCanCancelRenewal(value: String): Self = StObject.set(x, "canCancelRenewal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOns(value: js.Array[AddOn]): Self = this.set("addOns", value.asInstanceOf[js.Any])
+    def setCanCancelRenewalUndefined: Self = StObject.set(x, "canCancelRenewal", js.undefined)
     
     @scala.inline
-    def deleteAddOns: Self = this.set("addOns", js.undefined)
+    def setCanUpgrade(value: String): Self = StObject.set(x, "canUpgrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanCancelRenewal(value: String): Self = this.set("canCancelRenewal", value.asInstanceOf[js.Any])
+    def setCanUpgradeUndefined: Self = StObject.set(x, "canUpgrade", js.undefined)
     
     @scala.inline
-    def deleteCanCancelRenewal: Self = this.set("canCancelRenewal", js.undefined)
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanUpgrade(value: String): Self = this.set("canUpgrade", value.asInstanceOf[js.Any])
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def deleteCanUpgrade: Self = this.set("canUpgrade", js.undefined)
+    def setDowngradePlanInformation(value: DowngradePlanUpdateResponse): Self = StObject.set(x, "downgradePlanInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setDowngradePlanInformationUndefined: Self = StObject.set(x, "downgradePlanInformation", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setEnableSupport(value: String): Self = StObject.set(x, "enableSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDowngradePlanInformation(value: DowngradePlanUpdateResponse): Self = this.set("downgradePlanInformation", value.asInstanceOf[js.Any])
+    def setEnableSupportUndefined: Self = StObject.set(x, "enableSupport", js.undefined)
     
     @scala.inline
-    def deleteDowngradePlanInformation: Self = this.set("downgradePlanInformation", js.undefined)
+    def setIncludedSeats(value: String): Self = StObject.set(x, "includedSeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSupport(value: String): Self = this.set("enableSupport", value.asInstanceOf[js.Any])
+    def setIncludedSeatsUndefined: Self = StObject.set(x, "includedSeats", js.undefined)
     
     @scala.inline
-    def deleteEnableSupport: Self = this.set("enableSupport", js.undefined)
+    def setIncrementalSeats(value: String): Self = StObject.set(x, "incrementalSeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedSeats(value: String): Self = this.set("includedSeats", value.asInstanceOf[js.Any])
+    def setIncrementalSeatsUndefined: Self = StObject.set(x, "incrementalSeats", js.undefined)
     
     @scala.inline
-    def deleteIncludedSeats: Self = this.set("includedSeats", js.undefined)
+    def setIsDowngrade(value: String): Self = StObject.set(x, "isDowngrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementalSeats(value: String): Self = this.set("incrementalSeats", value.asInstanceOf[js.Any])
+    def setIsDowngradeUndefined: Self = StObject.set(x, "isDowngrade", js.undefined)
     
     @scala.inline
-    def deleteIncrementalSeats: Self = this.set("incrementalSeats", js.undefined)
+    def setOtherDiscountPercent(value: String): Self = StObject.set(x, "otherDiscountPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDowngrade(value: String): Self = this.set("isDowngrade", value.asInstanceOf[js.Any])
+    def setOtherDiscountPercentUndefined: Self = StObject.set(x, "otherDiscountPercent", js.undefined)
     
     @scala.inline
-    def deleteIsDowngrade: Self = this.set("isDowngrade", js.undefined)
+    def setPaymentCycle(value: String): Self = StObject.set(x, "paymentCycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherDiscountPercent(value: String): Self = this.set("otherDiscountPercent", value.asInstanceOf[js.Any])
+    def setPaymentCycleUndefined: Self = StObject.set(x, "paymentCycle", js.undefined)
     
     @scala.inline
-    def deleteOtherDiscountPercent: Self = this.set("otherDiscountPercent", js.undefined)
+    def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentCycle(value: String): Self = this.set("paymentCycle", value.asInstanceOf[js.Any])
+    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
     
     @scala.inline
-    def deletePaymentCycle: Self = this.set("paymentCycle", js.undefined)
+    def setPerSeatPrice(value: String): Self = StObject.set(x, "perSeatPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethod(value: String): Self = this.set("paymentMethod", value.asInstanceOf[js.Any])
+    def setPerSeatPriceUndefined: Self = StObject.set(x, "perSeatPrice", js.undefined)
     
     @scala.inline
-    def deletePaymentMethod: Self = this.set("paymentMethod", js.undefined)
+    def setPlanClassification(value: String): Self = StObject.set(x, "planClassification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerSeatPrice(value: String): Self = this.set("perSeatPrice", value.asInstanceOf[js.Any])
+    def setPlanClassificationUndefined: Self = StObject.set(x, "planClassification", js.undefined)
     
     @scala.inline
-    def deletePerSeatPrice: Self = this.set("perSeatPrice", js.undefined)
+    def setPlanFeatureSets(value: js.Array[FeatureSet]): Self = StObject.set(x, "planFeatureSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanClassification(value: String): Self = this.set("planClassification", value.asInstanceOf[js.Any])
+    def setPlanFeatureSetsUndefined: Self = StObject.set(x, "planFeatureSets", js.undefined)
     
     @scala.inline
-    def deletePlanClassification: Self = this.set("planClassification", js.undefined)
+    def setPlanFeatureSetsVarargs(value: FeatureSet*): Self = StObject.set(x, "planFeatureSets", js.Array(value :_*))
     
     @scala.inline
-    def setPlanFeatureSetsVarargs(value: FeatureSet*): Self = this.set("planFeatureSets", js.Array(value :_*))
+    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanFeatureSets(value: js.Array[FeatureSet]): Self = this.set("planFeatureSets", value.asInstanceOf[js.Any])
+    def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
     
     @scala.inline
-    def deletePlanFeatureSets: Self = this.set("planFeatureSets", js.undefined)
+    def setPlanName(value: String): Self = StObject.set(x, "planName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanId(value: String): Self = this.set("planId", value.asInstanceOf[js.Any])
+    def setPlanNameUndefined: Self = StObject.set(x, "planName", js.undefined)
     
     @scala.inline
-    def deletePlanId: Self = this.set("planId", js.undefined)
+    def setRenewalStatus(value: String): Self = StObject.set(x, "renewalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanName(value: String): Self = this.set("planName", value.asInstanceOf[js.Any])
+    def setRenewalStatusUndefined: Self = StObject.set(x, "renewalStatus", js.undefined)
     
     @scala.inline
-    def deletePlanName: Self = this.set("planName", js.undefined)
+    def setSeatDiscounts(value: js.Array[SeatDiscount]): Self = StObject.set(x, "seatDiscounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenewalStatus(value: String): Self = this.set("renewalStatus", value.asInstanceOf[js.Any])
+    def setSeatDiscountsUndefined: Self = StObject.set(x, "seatDiscounts", js.undefined)
     
     @scala.inline
-    def deleteRenewalStatus: Self = this.set("renewalStatus", js.undefined)
+    def setSeatDiscountsVarargs(value: SeatDiscount*): Self = StObject.set(x, "seatDiscounts", js.Array(value :_*))
     
     @scala.inline
-    def setSeatDiscountsVarargs(value: SeatDiscount*): Self = this.set("seatDiscounts", js.Array(value :_*))
+    def setSupportIncidentFee(value: String): Self = StObject.set(x, "supportIncidentFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeatDiscounts(value: js.Array[SeatDiscount]): Self = this.set("seatDiscounts", value.asInstanceOf[js.Any])
+    def setSupportIncidentFeeUndefined: Self = StObject.set(x, "supportIncidentFee", js.undefined)
     
     @scala.inline
-    def deleteSeatDiscounts: Self = this.set("seatDiscounts", js.undefined)
+    def setSupportPlanFee(value: String): Self = StObject.set(x, "supportPlanFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportIncidentFee(value: String): Self = this.set("supportIncidentFee", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportIncidentFee: Self = this.set("supportIncidentFee", js.undefined)
-    
-    @scala.inline
-    def setSupportPlanFee(value: String): Self = this.set("supportPlanFee", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportPlanFee: Self = this.set("supportPlanFee", js.undefined)
+    def setSupportPlanFeeUndefined: Self = StObject.set(x, "supportPlanFee", js.undefined)
   }
 }

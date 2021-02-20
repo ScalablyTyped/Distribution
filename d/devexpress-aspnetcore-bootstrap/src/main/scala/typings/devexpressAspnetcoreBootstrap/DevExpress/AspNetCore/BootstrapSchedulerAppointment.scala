@@ -1,12 +1,13 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapSchedulerAppointment extends js.Object {
+trait BootstrapSchedulerAppointment extends StObject {
   
   def addResource(resourceId: js.Object): Unit = js.native
   
@@ -119,126 +120,114 @@ object BootstrapSchedulerAppointment {
   }
   
   @scala.inline
-  implicit class BootstrapSchedulerAppointmentOps[Self <: BootstrapSchedulerAppointment] (val x: Self) extends AnyVal {
+  implicit class BootstrapSchedulerAppointmentMutableBuilder[Self <: BootstrapSchedulerAppointment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddResource(value: js.Object => Unit): Self = StObject.set(x, "addResource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppointmentType(value: BootstrapSchedulerAppointmentType): Self = StObject.set(x, "appointmentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddResource(value: js.Object => Unit): Self = this.set("addResource", js.Any.fromFunction1(value))
+    def setGetAllDay(value: () => Boolean): Self = StObject.set(x, "getAllDay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAppointmentId(value: String): Self = this.set("appointmentId", value.asInstanceOf[js.Any])
+    def setGetAppointmentType(value: () => BootstrapSchedulerAppointmentType): Self = StObject.set(x, "getAppointmentType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAppointmentType(value: BootstrapSchedulerAppointmentType): Self = this.set("appointmentType", value.asInstanceOf[js.Any])
+    def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllDay(value: () => Boolean): Self = this.set("getAllDay", js.Any.fromFunction0(value))
+    def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAppointmentType(value: () => BootstrapSchedulerAppointmentType): Self = this.set("getAppointmentType", js.Any.fromFunction0(value))
+    def setGetEnd(value: () => Date): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDescription(value: () => String): Self = this.set("getDescription", js.Any.fromFunction0(value))
+    def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDuration(value: () => Double): Self = this.set("getDuration", js.Any.fromFunction0(value))
+    def setGetLabelId(value: () => Double): Self = StObject.set(x, "getLabelId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnd(value: () => Date): Self = this.set("getEnd", js.Any.fromFunction0(value))
+    def setGetLocation(value: () => String): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => js.Any): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetRecurrenceInfo(value: () => BootstrapSchedulerRecurrenceInfo | Null): Self = StObject.set(x, "getRecurrenceInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelId(value: () => Double): Self = this.set("getLabelId", js.Any.fromFunction0(value))
+    def setGetRecurrencePattern(value: () => BootstrapSchedulerAppointment | Null): Self = StObject.set(x, "getRecurrencePattern", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocation(value: () => String): Self = this.set("getLocation", js.Any.fromFunction0(value))
+    def setGetResource(value: Double => js.Any): Self = StObject.set(x, "getResource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRecurrenceInfo(value: () => BootstrapSchedulerRecurrenceInfo | Null): Self = this.set("getRecurrenceInfo", js.Any.fromFunction0(value))
+    def setGetStart(value: () => Date): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRecurrencePattern(value: () => BootstrapSchedulerAppointment | Null): Self = this.set("getRecurrencePattern", js.Any.fromFunction0(value))
+    def setGetStatusId(value: () => Double): Self = StObject.set(x, "getStatusId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetResource(value: Double => js.Any): Self = this.set("getResource", js.Any.fromFunction1(value))
+    def setGetSubject(value: () => String): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStart(value: () => Date): Self = this.set("getStart", js.Any.fromFunction0(value))
+    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStatusId(value: () => Double): Self = this.set("getStatusId", js.Any.fromFunction0(value))
+    def setInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSubject(value: () => String): Self = this.set("getSubject", js.Any.fromFunction0(value))
+    def setIntervalNull: Self = StObject.set(x, "interval", null)
     
     @scala.inline
-    def setInstance(value: js.Any): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setLabelIndex(value: Double): Self = StObject.set(x, "labelIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelIndex(value: Double): Self = this.set("labelIndex", value.asInstanceOf[js.Any])
+    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesVarargs(value: String*): Self = this.set("resources", js.Array(value :_*))
+    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setResources(value: js.Array[String]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setSetAllDay(value: Boolean => Unit): Self = StObject.set(x, "setAllDay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAllDay(value: Boolean => Unit): Self = this.set("setAllDay", js.Any.fromFunction1(value))
+    def setSetAppointmentType(value: BootstrapSchedulerAppointmentType => Unit): Self = StObject.set(x, "setAppointmentType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAppointmentType(value: BootstrapSchedulerAppointmentType => Unit): Self = this.set("setAppointmentType", js.Any.fromFunction1(value))
+    def setSetDescription(value: String => Unit): Self = StObject.set(x, "setDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDescription(value: String => Unit): Self = this.set("setDescription", js.Any.fromFunction1(value))
+    def setSetDuration(value: Double => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDuration(value: Double => Unit): Self = this.set("setDuration", js.Any.fromFunction1(value))
+    def setSetEnd(value: Date => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnd(value: Date => Unit): Self = this.set("setEnd", js.Any.fromFunction1(value))
+    def setSetId(value: js.Any => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetId(value: js.Any => Unit): Self = this.set("setId", js.Any.fromFunction1(value))
+    def setSetLabelId(value: Double => Unit): Self = StObject.set(x, "setLabelId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLabelId(value: Double => Unit): Self = this.set("setLabelId", js.Any.fromFunction1(value))
+    def setSetLocation(value: String => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLocation(value: String => Unit): Self = this.set("setLocation", js.Any.fromFunction1(value))
+    def setSetRecurrenceInfo(value: BootstrapSchedulerRecurrenceInfo => Unit): Self = StObject.set(x, "setRecurrenceInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRecurrenceInfo(value: BootstrapSchedulerRecurrenceInfo => Unit): Self = this.set("setRecurrenceInfo", js.Any.fromFunction1(value))
+    def setSetStart(value: Date => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetStart(value: Date => Unit): Self = this.set("setStart", js.Any.fromFunction1(value))
+    def setSetStatusId(value: Double => Unit): Self = StObject.set(x, "setStatusId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetStatusId(value: Double => Unit): Self = this.set("setStatusId", js.Any.fromFunction1(value))
+    def setSetSubject(value: String => Unit): Self = StObject.set(x, "setSubject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSubject(value: String => Unit): Self = this.set("setSubject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStatusIndex(value: Double): Self = this.set("statusIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterval(value: BootstrapTimeInterval): Self = this.set("interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntervalNull: Self = this.set("interval", null)
+    def setStatusIndex(value: Double): Self = StObject.set(x, "statusIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.kendoUi.global.kendo.ui
 
 import typings.kendoUi.kendo.ui.DropTargetOptions
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +14,10 @@ class DropTarget protected ()
   def this(element: Element) = this()
   def this(element: Element, options: DropTargetOptions) = this()
 }
-/* static members */
-@JSGlobal("kendo.ui.DropTarget")
-@js.native
-object DropTarget extends js.Object {
+object DropTarget {
   
+  /* static member */
+  @JSGlobal("kendo.ui.DropTarget.destroyGroup")
+  @js.native
   def destroyGroup(groupName: String): Unit = js.native
 }

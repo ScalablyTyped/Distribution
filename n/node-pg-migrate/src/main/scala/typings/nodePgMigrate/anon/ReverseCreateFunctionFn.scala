@@ -5,12 +5,13 @@ import typings.nodePgMigrate.functionsTypesMod.FunctionOptions
 import typings.nodePgMigrate.functionsTypesMod.FunctionParam
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseCreateFunctionFn extends js.Object {
+trait ReverseCreateFunctionFn extends StObject {
   
   def reverse(
     functionName: typings.nodePgMigrate.generalTypesMod.Name,

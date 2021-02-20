@@ -2,16 +2,14 @@ package typings.luminoAlgorithm
 
 import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/algorithm/types/take", JSImport.Namespace)
-@js.native
-object takeMod extends js.Object {
+object takeMod {
   
-  def take[T](`object`: IterableOrArrayLike[T], count: Double): IIterator[T] = js.native
-  
+  @JSImport("@lumino/algorithm/types/take", "TakeIterator")
   @js.native
   class TakeIterator[T] protected () extends IIterator[T] {
     /**
@@ -27,4 +25,8 @@ object takeMod extends js.Object {
     
     var _source: js.Any = js.native
   }
+  
+  @JSImport("@lumino/algorithm/types/take", "take")
+  @js.native
+  def take[T](`object`: IterableOrArrayLike[T], count: Double): IIterator[T] = js.native
 }

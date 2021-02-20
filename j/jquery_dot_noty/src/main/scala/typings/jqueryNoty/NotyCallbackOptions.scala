@@ -1,11 +1,12 @@
 package typings.jqueryNoty
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotyCallbackOptions extends js.Object {
+trait NotyCallbackOptions extends StObject {
   
   var afterClose: js.UndefOr[js.Function] = js.native
   
@@ -26,48 +27,36 @@ object NotyCallbackOptions {
   }
   
   @scala.inline
-  implicit class NotyCallbackOptionsOps[Self <: NotyCallbackOptions] (val x: Self) extends AnyVal {
+  implicit class NotyCallbackOptionsMutableBuilder[Self <: NotyCallbackOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterClose(value: js.Function): Self = StObject.set(x, "afterClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterShow(value: js.Function): Self = StObject.set(x, "afterShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterClose(value: js.Function): Self = this.set("afterClose", value.asInstanceOf[js.Any])
+    def setAfterShowUndefined: Self = StObject.set(x, "afterShow", js.undefined)
     
     @scala.inline
-    def deleteAfterClose: Self = this.set("afterClose", js.undefined)
+    def setOnClose(value: js.Function): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterShow(value: js.Function): Self = this.set("afterShow", value.asInstanceOf[js.Any])
+    def setOnCloseClick(value: js.Function): Self = StObject.set(x, "onCloseClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfterShow: Self = this.set("afterShow", js.undefined)
+    def setOnCloseClickUndefined: Self = StObject.set(x, "onCloseClick", js.undefined)
     
     @scala.inline
-    def setOnClose(value: js.Function): Self = this.set("onClose", value.asInstanceOf[js.Any])
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOnShow(value: js.Function): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCloseClick(value: js.Function): Self = this.set("onCloseClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnCloseClick: Self = this.set("onCloseClick", js.undefined)
-    
-    @scala.inline
-    def setOnShow(value: js.Function): Self = this.set("onShow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
   }
 }

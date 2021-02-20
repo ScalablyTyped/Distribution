@@ -2,6 +2,7 @@ package typings.firefoxWebextBrowser.global.browser
 
 import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.networkStatus.NetworkLinkInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Not allowed in: Content scripts, Devtools pages
   */
-@JSGlobal("browser.networkStatus")
-@js.native
-object networkStatus extends js.Object {
+object networkStatus {
   
   /* networkStatus functions */
   /** Returns the $(ref:NetworkLinkInfo} of the current network connection. */
+  @JSGlobal("browser.networkStatus.getLinkInfo")
+  @js.native
   def getLinkInfo(): js.Promise[NetworkLinkInfo] = js.native
   
   /* networkStatus events */
   /** Fired when the network connection state changes. */
+  @JSGlobal("browser.networkStatus.onConnectionChanged")
+  @js.native
   val onConnectionChanged: WebExtEvent[js.Function1[/* details */ NetworkLinkInfo, Unit]] = js.native
 }

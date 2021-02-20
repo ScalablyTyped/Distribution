@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,38 +35,26 @@ object CIMLineCallout {
   }
   
   @scala.inline
-  implicit class CIMLineCalloutOps[Self <: CIMLineCallout] (val x: Self) extends AnyVal {
+  implicit class CIMLineCalloutMutableBuilder[Self <: CIMLineCallout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeaderLineSymbol(value: CIMLineSymbol): Self = StObject.set(x, "leaderLineSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGap(value: Double): Self = this.set("gap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGap: Self = this.set("gap", js.undefined)
-    
-    @scala.inline
-    def setLeaderLineSymbol(value: CIMLineSymbol): Self = this.set("leaderLineSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLeaderLineSymbol: Self = this.set("leaderLineSymbol", js.undefined)
+    def setLeaderLineSymbolUndefined: Self = StObject.set(x, "leaderLineSymbol", js.undefined)
     
     @scala.inline
     def setLineStyle(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LeaderLineStyle * / any */ String
-    ): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
   }
 }

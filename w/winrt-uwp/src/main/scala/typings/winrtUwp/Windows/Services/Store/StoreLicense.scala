@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Services.Store
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides license info for an add-on that is associated with the current app. */
 @js.native
-trait StoreLicense extends js.Object {
+trait StoreLicense extends StObject {
   
   /** Gets the expiration date and time for the add-on license. */
   var expirationDate: Date = js.native
@@ -39,33 +40,21 @@ object StoreLicense {
   }
   
   @scala.inline
-  implicit class StoreLicenseOps[Self <: StoreLicense] (val x: Self) extends AnyVal {
+  implicit class StoreLicenseMutableBuilder[Self <: StoreLicense] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInAppOfferToken(value: String): Self = StObject.set(x, "inAppOfferToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: Date): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedJsonData(value: String): Self = this.set("extendedJsonData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInAppOfferToken(value: String): Self = this.set("inAppOfferToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkuStoreId(value: String): Self = this.set("skuStoreId", value.asInstanceOf[js.Any])
+    def setSkuStoreId(value: String): Self = StObject.set(x, "skuStoreId", value.asInstanceOf[js.Any])
   }
 }

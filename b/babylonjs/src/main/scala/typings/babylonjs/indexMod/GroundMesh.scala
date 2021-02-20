@@ -1,5 +1,6 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ class GroundMesh protected ()
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "GroundMesh")
-@js.native
-object GroundMesh extends js.Object {
+object GroundMesh {
   
   /**
     * Parses a serialized ground mesh
@@ -21,5 +20,7 @@ object GroundMesh extends js.Object {
     * @param scene the scene to create the ground mesh in
     * @returns the created ground mesh
     */
+  @JSImport("babylonjs/index", "GroundMesh.Parse")
+  @js.native
   def Parse(parsedMesh: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.groundMeshMod.GroundMesh = js.native
 }

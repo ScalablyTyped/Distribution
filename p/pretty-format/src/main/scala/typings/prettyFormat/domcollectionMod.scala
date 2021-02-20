@@ -1,20 +1,24 @@
 package typings.prettyFormat
 
+import org.scalablytyped.runtime.Shortcut
 import typings.prettyFormat.typesMod.Config
 import typings.prettyFormat.typesMod.NewPlugin
 import typings.prettyFormat.typesMod.Printer
 import typings.prettyFormat.typesMod.Refs
 import typings.prettyFormat.typesMod.Test
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pretty-format/build/plugins/DOMCollection", JSImport.Namespace)
-@js.native
-object domcollectionMod extends js.Object {
+object domcollectionMod extends Shortcut {
   
+  @JSImport("pretty-format/build/plugins/DOMCollection", JSImport.Default)
+  @js.native
   val default: NewPlugin = js.native
   
+  @JSImport("pretty-format/build/plugins/DOMCollection", "serialize")
+  @js.native
   val serialize: js.Function6[
     /* val */ js.Any, 
     /* config */ Config, 
@@ -25,5 +29,12 @@ object domcollectionMod extends js.Object {
     String
   ] = js.native
   
+  @JSImport("pretty-format/build/plugins/DOMCollection", "test")
+  @js.native
   val test: Test = js.native
+  
+  type _To = NewPlugin
+  
+  /* This means you don't have to write `default`, but can instead just say `domcollectionMod.foo` */
+  override def _to: NewPlugin = default
 }

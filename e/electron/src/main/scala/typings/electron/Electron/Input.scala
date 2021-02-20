@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Input extends js.Object {
+trait Input extends StObject {
   
   /**
     * Equivalent to KeyboardEvent.altKey.
@@ -72,45 +73,33 @@ object Input {
   }
   
   @scala.inline
-  implicit class InputOps[Self <: Input] (val x: Self) extends AnyVal {
+  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControl(value: Boolean): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlt(value: Boolean): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setIsAutoRepeat(value: Boolean): Self = StObject.set(x, "isAutoRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl(value: Boolean): Self = this.set("control", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutoRepeat(value: Boolean): Self = this.set("isAutoRepeat", value.asInstanceOf[js.Any])
+    def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComposing(value: Boolean): Self = this.set("isComposing", value.asInstanceOf[js.Any])
+    def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeta(value: Boolean): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShift(value: Boolean): Self = this.set("shift", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

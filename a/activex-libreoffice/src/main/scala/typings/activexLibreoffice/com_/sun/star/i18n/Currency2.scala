@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,21 +39,9 @@ object Currency2 {
   }
   
   @scala.inline
-  implicit class Currency2Ops[Self <: Currency2] (val x: Self) extends AnyVal {
+  implicit class Currency2MutableBuilder[Self <: Currency2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLegacyOnly(value: Boolean): Self = this.set("LegacyOnly", value.asInstanceOf[js.Any])
+    def setLegacyOnly(value: Boolean): Self = StObject.set(x, "LegacyOnly", value.asInstanceOf[js.Any])
   }
 }

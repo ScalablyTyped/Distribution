@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchTemplatePlacementRequest extends js.Object {
+trait LaunchTemplatePlacementRequest extends StObject {
   
   /**
     * The affinity setting for an instance on a Dedicated Host.
@@ -56,66 +57,54 @@ object LaunchTemplatePlacementRequest {
   }
   
   @scala.inline
-  implicit class LaunchTemplatePlacementRequestOps[Self <: LaunchTemplatePlacementRequest] (val x: Self) extends AnyVal {
+  implicit class LaunchTemplatePlacementRequestMutableBuilder[Self <: LaunchTemplatePlacementRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffinity(value: String): Self = StObject.set(x, "Affinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffinityUndefined: Self = StObject.set(x, "Affinity", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffinity(value: String): Self = this.set("Affinity", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteAffinity: Self = this.set("Affinity", js.undefined)
+    def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setHostId(value: DedicatedHostId): Self = StObject.set(x, "HostId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: PlacementGroupName): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setHostIdUndefined: Self = StObject.set(x, "HostId", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    def setHostResourceGroupArn(value: String): Self = StObject.set(x, "HostResourceGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostId(value: DedicatedHostId): Self = this.set("HostId", value.asInstanceOf[js.Any])
+    def setHostResourceGroupArnUndefined: Self = StObject.set(x, "HostResourceGroupArn", js.undefined)
     
     @scala.inline
-    def deleteHostId: Self = this.set("HostId", js.undefined)
+    def setPartitionNumber(value: Integer): Self = StObject.set(x, "PartitionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostResourceGroupArn(value: String): Self = this.set("HostResourceGroupArn", value.asInstanceOf[js.Any])
+    def setPartitionNumberUndefined: Self = StObject.set(x, "PartitionNumber", js.undefined)
     
     @scala.inline
-    def deleteHostResourceGroupArn: Self = this.set("HostResourceGroupArn", js.undefined)
+    def setSpreadDomain(value: String): Self = StObject.set(x, "SpreadDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionNumber(value: Integer): Self = this.set("PartitionNumber", value.asInstanceOf[js.Any])
+    def setSpreadDomainUndefined: Self = StObject.set(x, "SpreadDomain", js.undefined)
     
     @scala.inline
-    def deletePartitionNumber: Self = this.set("PartitionNumber", js.undefined)
+    def setTenancy(value: Tenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadDomain(value: String): Self = this.set("SpreadDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadDomain: Self = this.set("SpreadDomain", js.undefined)
-    
-    @scala.inline
-    def setTenancy(value: Tenancy): Self = this.set("Tenancy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenancy: Self = this.set("Tenancy", js.undefined)
+    def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
   }
 }

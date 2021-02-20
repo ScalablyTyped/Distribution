@@ -2,17 +2,23 @@ package typings.xhrMock
 
 import typings.std.EventTarget
 import typings.std.ProgressEventInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xhr-mock/lib/MockProgressEvent", JSImport.Namespace)
-@js.native
-object mockProgressEventMod extends js.Object {
+object mockProgressEventMod {
+  
+  @JSImport("xhr-mock/lib/MockProgressEvent", JSImport.Default)
+  @js.native
+  class default protected () extends MockProgressEvent {
+    def this(`type`: String) = this()
+    def this(`type`: String, eventInitDict: ProgressEventInit) = this()
+  }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.std.Event because Already inherited
-  - typings.std.ProgressEvent because var conflicts: cancelBubble, returnValue. Inlined lengthComputable, loaded, target_ProgressEvent, total */ @js.native
+  - typings.std.ProgressEvent because var conflicts: cancelBubble, returnValue. Inlined target_ProgressEvent, total, loaded, lengthComputable */ @js.native
   trait MockProgressEvent
     extends typings.xhrMock.mockEventMod.default {
     
@@ -33,11 +39,5 @@ object mockProgressEventMod extends js.Object {
     val target_ProgressEvent: EventTarget | Null = js.native
     
     val total: Double = js.native
-  }
-  
-  @js.native
-  class default protected () extends MockProgressEvent {
-    def this(`type`: String) = this()
-    def this(`type`: String, eventInitDict: ProgressEventInit) = this()
   }
 }

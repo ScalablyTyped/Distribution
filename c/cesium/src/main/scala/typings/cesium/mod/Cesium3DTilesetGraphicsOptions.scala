@@ -1,11 +1,12 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cesium3DTilesetGraphicsOptions extends js.Object {
+trait Cesium3DTilesetGraphicsOptions extends StObject {
   
   /**
     * A number or Property specifying the maximum screen space error used to drive level of detail refinement.
@@ -32,36 +33,24 @@ object Cesium3DTilesetGraphicsOptions {
   }
   
   @scala.inline
-  implicit class Cesium3DTilesetGraphicsOptionsOps[Self <: Cesium3DTilesetGraphicsOptions] (val x: Self) extends AnyVal {
+  implicit class Cesium3DTilesetGraphicsOptionsMutableBuilder[Self <: Cesium3DTilesetGraphicsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumScreenSpaceError(value: Double | Property): Self = StObject.set(x, "maximumScreenSpaceError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumScreenSpaceErrorUndefined: Self = StObject.set(x, "maximumScreenSpaceError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShow(value: Boolean | Property): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumScreenSpaceError(value: Double | Property): Self = this.set("maximumScreenSpaceError", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteMaximumScreenSpaceError: Self = this.set("maximumScreenSpaceError", js.undefined)
+    def setUri(value: String | Property): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean | Property): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String | Property): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

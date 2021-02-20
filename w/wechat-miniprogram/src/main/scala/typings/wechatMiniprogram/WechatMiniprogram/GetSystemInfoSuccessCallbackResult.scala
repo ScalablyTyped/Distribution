@@ -2,12 +2,13 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import typings.wechatMiniprogram.wechatMiniprogramStrings.dark
 import typings.wechatMiniprogram.wechatMiniprogramStrings.light
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSystemInfoSuccessCallbackResult extends js.Object {
+trait GetSystemInfoSuccessCallbackResult extends StObject {
   
   /** 客户端基础库版本
     *
@@ -177,108 +178,96 @@ object GetSystemInfoSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class GetSystemInfoSuccessCallbackResultOps[Self <: GetSystemInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class GetSystemInfoSuccessCallbackResultMutableBuilder[Self <: GetSystemInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbumAuthorized(value: Boolean): Self = StObject.set(x, "albumAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBenchmarkLevel(value: Double): Self = StObject.set(x, "benchmarkLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBluetoothEnabled(value: Boolean): Self = StObject.set(x, "bluetoothEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSDKVersion(value: String): Self = this.set("SDKVersion", value.asInstanceOf[js.Any])
+    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumAuthorized(value: Boolean): Self = this.set("albumAuthorized", value.asInstanceOf[js.Any])
+    def setCameraAuthorized(value: Boolean): Self = StObject.set(x, "cameraAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBenchmarkLevel(value: Double): Self = this.set("benchmarkLevel", value.asInstanceOf[js.Any])
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBluetoothEnabled(value: Boolean): Self = this.set("bluetoothEnabled", value.asInstanceOf[js.Any])
+    def setFontSizeSetting(value: Double): Self = StObject.set(x, "fontSizeSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraAuthorized(value: Boolean): Self = this.set("cameraAuthorized", value.asInstanceOf[js.Any])
+    def setLocationAuthorized(value: Boolean): Self = StObject.set(x, "locationAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+    def setLocationEnabled(value: Boolean): Self = StObject.set(x, "locationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSizeSetting(value: Double): Self = this.set("fontSizeSetting", value.asInstanceOf[js.Any])
+    def setMicrophoneAuthorized(value: Boolean): Self = StObject.set(x, "microphoneAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationAuthorized(value: Boolean): Self = this.set("locationAuthorized", value.asInstanceOf[js.Any])
+    def setNotificationAlertAuthorized(value: Boolean): Self = StObject.set(x, "notificationAlertAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationEnabled(value: Boolean): Self = this.set("locationEnabled", value.asInstanceOf[js.Any])
+    def setNotificationAuthorized(value: Boolean): Self = StObject.set(x, "notificationAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMicrophoneAuthorized(value: Boolean): Self = this.set("microphoneAuthorized", value.asInstanceOf[js.Any])
+    def setNotificationBadgeAuthorized(value: Boolean): Self = StObject.set(x, "notificationBadgeAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setNotificationSoundAuthorized(value: Boolean): Self = StObject.set(x, "notificationSoundAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationAlertAuthorized(value: Boolean): Self = this.set("notificationAlertAuthorized", value.asInstanceOf[js.Any])
+    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationAuthorized(value: Boolean): Self = this.set("notificationAuthorized", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationBadgeAuthorized(value: Boolean): Self = this.set("notificationBadgeAuthorized", value.asInstanceOf[js.Any])
+    def setSDKVersion(value: String): Self = StObject.set(x, "SDKVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationSoundAuthorized(value: Boolean): Self = this.set("notificationSoundAuthorized", value.asInstanceOf[js.Any])
+    def setSafeArea(value: SafeAreaResult): Self = StObject.set(x, "safeArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelRatio(value: Double): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    def setScreenHeight(value: Double): Self = StObject.set(x, "screenHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setScreenWidth(value: Double): Self = StObject.set(x, "screenWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeArea(value: SafeAreaResult): Self = this.set("safeArea", value.asInstanceOf[js.Any])
+    def setStatusBarHeight(value: Double): Self = StObject.set(x, "statusBarHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenHeight(value: Double): Self = this.set("screenHeight", value.asInstanceOf[js.Any])
+    def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenWidth(value: Double): Self = this.set("screenWidth", value.asInstanceOf[js.Any])
+    def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusBarHeight(value: Double): Self = this.set("statusBarHeight", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def setSystem(value: String): Self = this.set("system", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setWifiEnabled(value: Boolean): Self = StObject.set(x, "wifiEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWifiEnabled(value: Boolean): Self = this.set("wifiEnabled", value.asInstanceOf[js.Any])
+    def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowHeight(value: Double): Self = this.set("windowHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowWidth(value: Double): Self = this.set("windowWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTheme(value: dark | light): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLaunchTemplateInstanceMarketOption extends js.Object {
+trait GetLaunchTemplateInstanceMarketOption extends StObject {
   
   var marketType: String = js.native
   
@@ -20,27 +21,15 @@ object GetLaunchTemplateInstanceMarketOption {
   }
   
   @scala.inline
-  implicit class GetLaunchTemplateInstanceMarketOptionOps[Self <: GetLaunchTemplateInstanceMarketOption] (val x: Self) extends AnyVal {
+  implicit class GetLaunchTemplateInstanceMarketOptionMutableBuilder[Self <: GetLaunchTemplateInstanceMarketOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarketType(value: String): Self = StObject.set(x, "marketType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpotOptions(value: js.Array[GetLaunchTemplateInstanceMarketOptionSpotOption]): Self = StObject.set(x, "spotOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMarketType(value: String): Self = this.set("marketType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpotOptionsVarargs(value: GetLaunchTemplateInstanceMarketOptionSpotOption*): Self = this.set("spotOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpotOptions(value: js.Array[GetLaunchTemplateInstanceMarketOptionSpotOption]): Self = this.set("spotOptions", value.asInstanceOf[js.Any])
+    def setSpotOptionsVarargs(value: GetLaunchTemplateInstanceMarketOptionSpotOption*): Self = StObject.set(x, "spotOptions", js.Array(value :_*))
   }
 }

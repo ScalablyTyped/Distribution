@@ -3,12 +3,13 @@ package typings.amapJsSdk.anon
 import typings.amapJsSdk.AMap.LngLat
 import typings.amapJsSdk.AMap.Pixel
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsDestination extends js.Object {
+trait AsDestination extends StObject {
   
   var asDestination: js.UndefOr[Boolean] = js.native
   
@@ -45,96 +46,84 @@ object AsDestination {
   }
   
   @scala.inline
-  implicit class AsDestinationOps[Self <: AsDestination] (val x: Self) extends AnyVal {
+  implicit class AsDestinationMutableBuilder[Self <: AsDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsDestination(value: Boolean): Self = StObject.set(x, "asDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsDestinationUndefined: Self = StObject.set(x, "asDestination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsOrigin(value: Boolean): Self = StObject.set(x, "asOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsDestination(value: Boolean): Self = this.set("asDestination", value.asInstanceOf[js.Any])
+    def setAsOriginUndefined: Self = StObject.set(x, "asOrigin", js.undefined)
     
     @scala.inline
-    def deleteAsDestination: Self = this.set("asDestination", js.undefined)
+    def setAutoMove(value: Boolean): Self = StObject.set(x, "autoMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsOrigin(value: Boolean): Self = this.set("asOrigin", value.asInstanceOf[js.Any])
+    def setAutoMoveUndefined: Self = StObject.set(x, "autoMove", js.undefined)
     
     @scala.inline
-    def deleteAsOrigin: Self = this.set("asOrigin", js.undefined)
+    def setCloseWhenClickMap(value: Boolean): Self = StObject.set(x, "closeWhenClickMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMove(value: Boolean): Self = this.set("autoMove", value.asInstanceOf[js.Any])
+    def setCloseWhenClickMapUndefined: Self = StObject.set(x, "closeWhenClickMap", js.undefined)
     
     @scala.inline
-    def deleteAutoMove: Self = this.set("autoMove", js.undefined)
+    def setContent(value: String | HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseWhenClickMap(value: Boolean): Self = this.set("closeWhenClickMap", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteCloseWhenClickMap: Self = this.set("closeWhenClickMap", js.undefined)
+    def setDriving(value: Boolean): Self = StObject.set(x, "driving", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String | HTMLElement): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setDrivingUndefined: Self = StObject.set(x, "driving", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriving(value: Boolean): Self = this.set("driving", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteDriving: Self = this.set("driving", js.undefined)
+    def setPanel(value: String | HTMLElement): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Pixel): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setPlaceSearch(value: Boolean): Self = StObject.set(x, "placeSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanel(value: String | HTMLElement): Self = this.set("panel", value.asInstanceOf[js.Any])
+    def setPlaceSearchUndefined: Self = StObject.set(x, "placeSearch", js.undefined)
     
     @scala.inline
-    def deletePanel: Self = this.set("panel", js.undefined)
+    def setPosition(value: LngLat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceSearch(value: Boolean): Self = this.set("placeSearch", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePlaceSearch: Self = this.set("placeSearch", js.undefined)
+    def setSearchRadius(value: Double): Self = StObject.set(x, "searchRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: LngLat): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setSearchRadiusUndefined: Self = StObject.set(x, "searchRadius", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setTransit(value: Boolean): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchRadius(value: Double): Self = this.set("searchRadius", value.asInstanceOf[js.Any])
+    def setTransitUndefined: Self = StObject.set(x, "transit", js.undefined)
     
     @scala.inline
-    def deleteSearchRadius: Self = this.set("searchRadius", js.undefined)
+    def setWalking(value: Boolean): Self = StObject.set(x, "walking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransit(value: Boolean): Self = this.set("transit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransit: Self = this.set("transit", js.undefined)
-    
-    @scala.inline
-    def setWalking(value: Boolean): Self = this.set("walking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWalking: Self = this.set("walking", js.undefined)
+    def setWalkingUndefined: Self = StObject.set(x, "walking", js.undefined)
   }
 }

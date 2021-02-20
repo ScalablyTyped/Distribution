@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CommandRunTestStep. */
 @js.native
-trait ICommandRunTestStep extends js.Object {
+trait ICommandRunTestStep extends StObject {
   
   /** CommandRunTestStep actionId */
   var actionId: js.UndefOr[String | Null] = js.native
@@ -32,66 +33,54 @@ object ICommandRunTestStep {
   }
   
   @scala.inline
-  implicit class ICommandRunTestStepOps[Self <: ICommandRunTestStep] (val x: Self) extends AnyVal {
+  implicit class ICommandRunTestStepMutableBuilder[Self <: ICommandRunTestStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionIdNull: Self = StObject.set(x, "actionId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
     @scala.inline
-    def setActionId(value: String): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    def setPickleStepArgument(value: IPickleStepArgument): Self = StObject.set(x, "pickleStepArgument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionId: Self = this.set("actionId", js.undefined)
+    def setPickleStepArgumentNull: Self = StObject.set(x, "pickleStepArgument", null)
     
     @scala.inline
-    def setActionIdNull: Self = this.set("actionId", null)
+    def setPickleStepArgumentUndefined: Self = StObject.set(x, "pickleStepArgument", js.undefined)
     
     @scala.inline
-    def setPickleStepArgument(value: IPickleStepArgument): Self = this.set("pickleStepArgument", value.asInstanceOf[js.Any])
+    def setStepDefinitionId(value: String): Self = StObject.set(x, "stepDefinitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePickleStepArgument: Self = this.set("pickleStepArgument", js.undefined)
+    def setStepDefinitionIdNull: Self = StObject.set(x, "stepDefinitionId", null)
     
     @scala.inline
-    def setPickleStepArgumentNull: Self = this.set("pickleStepArgument", null)
+    def setStepDefinitionIdUndefined: Self = StObject.set(x, "stepDefinitionId", js.undefined)
     
     @scala.inline
-    def setStepDefinitionId(value: String): Self = this.set("stepDefinitionId", value.asInstanceOf[js.Any])
+    def setStepMatchArguments(value: js.Array[IStepMatchArgument]): Self = StObject.set(x, "stepMatchArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStepDefinitionId: Self = this.set("stepDefinitionId", js.undefined)
+    def setStepMatchArgumentsNull: Self = StObject.set(x, "stepMatchArguments", null)
     
     @scala.inline
-    def setStepDefinitionIdNull: Self = this.set("stepDefinitionId", null)
+    def setStepMatchArgumentsUndefined: Self = StObject.set(x, "stepMatchArguments", js.undefined)
     
     @scala.inline
-    def setStepMatchArgumentsVarargs(value: IStepMatchArgument*): Self = this.set("stepMatchArguments", js.Array(value :_*))
+    def setStepMatchArgumentsVarargs(value: IStepMatchArgument*): Self = StObject.set(x, "stepMatchArguments", js.Array(value :_*))
     
     @scala.inline
-    def setStepMatchArguments(value: js.Array[IStepMatchArgument]): Self = this.set("stepMatchArguments", value.asInstanceOf[js.Any])
+    def setTestCaseId(value: String): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStepMatchArguments: Self = this.set("stepMatchArguments", js.undefined)
+    def setTestCaseIdNull: Self = StObject.set(x, "testCaseId", null)
     
     @scala.inline
-    def setStepMatchArgumentsNull: Self = this.set("stepMatchArguments", null)
-    
-    @scala.inline
-    def setTestCaseId(value: String): Self = this.set("testCaseId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestCaseId: Self = this.set("testCaseId", js.undefined)
-    
-    @scala.inline
-    def setTestCaseIdNull: Self = this.set("testCaseId", null)
+    def setTestCaseIdUndefined: Self = StObject.set(x, "testCaseId", js.undefined)
   }
 }

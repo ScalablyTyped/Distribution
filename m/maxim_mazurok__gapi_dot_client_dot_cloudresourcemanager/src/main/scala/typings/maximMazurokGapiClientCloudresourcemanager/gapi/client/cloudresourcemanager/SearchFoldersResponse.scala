@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudresourcemanager.gapi.client.cloudresourcemanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchFoldersResponse extends js.Object {
+trait SearchFoldersResponse extends StObject {
   
   /** A possibly paginated folder search results. the specified parent resource. */
   var folders: js.UndefOr[js.Array[Folder]] = js.native
@@ -22,33 +23,21 @@ object SearchFoldersResponse {
   }
   
   @scala.inline
-  implicit class SearchFoldersResponseOps[Self <: SearchFoldersResponse] (val x: Self) extends AnyVal {
+  implicit class SearchFoldersResponseMutableBuilder[Self <: SearchFoldersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFolders(value: js.Array[Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFoldersVarargs(value: Folder*): Self = StObject.set(x, "folders", js.Array(value :_*))
     
     @scala.inline
-    def setFoldersVarargs(value: Folder*): Self = this.set("folders", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolders(value: js.Array[Folder]): Self = this.set("folders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFolders: Self = this.set("folders", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

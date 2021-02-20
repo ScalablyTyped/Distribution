@@ -2,6 +2,7 @@ package typings.minecraftScriptingTypesShared
 
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.entity
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.item_entity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,27 +34,15 @@ object IEntity {
   }
   
   @scala.inline
-  implicit class IEntityOps[Self <: IEntity] (val x: Self) extends AnyVal {
+  implicit class IEntityMutableBuilder[Self <: IEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set__identifier__(value: String): Self = this.set("__identifier__", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set__type__(value: entity | item_entity): Self = this.set("__type__", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def set__type__(value: entity | item_entity): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

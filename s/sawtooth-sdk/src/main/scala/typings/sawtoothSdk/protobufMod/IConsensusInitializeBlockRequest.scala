@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConsensusInitializeBlockRequest extends js.Object {
+trait IConsensusInitializeBlockRequest extends StObject {
   
   /** ConsensusInitializeBlockRequest previousId */
   var previousId: js.UndefOr[Uint8Array | Null] = js.native
@@ -20,27 +21,15 @@ object IConsensusInitializeBlockRequest {
   }
   
   @scala.inline
-  implicit class IConsensusInitializeBlockRequestOps[Self <: IConsensusInitializeBlockRequest] (val x: Self) extends AnyVal {
+  implicit class IConsensusInitializeBlockRequestMutableBuilder[Self <: IConsensusInitializeBlockRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreviousId(value: Uint8Array): Self = StObject.set(x, "previousId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreviousIdNull: Self = StObject.set(x, "previousId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPreviousId(value: Uint8Array): Self = this.set("previousId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousId: Self = this.set("previousId", js.undefined)
-    
-    @scala.inline
-    def setPreviousIdNull: Self = this.set("previousId", null)
+    def setPreviousIdUndefined: Self = StObject.set(x, "previousId", js.undefined)
   }
 }

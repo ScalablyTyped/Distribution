@@ -1,28 +1,29 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/interaction/Property", JSImport.Namespace)
-@js.native
-object propertyMod extends js.Object {
+object propertyMod {
   
+  @JSImport("ol/interaction/Property", JSImport.Default)
   @js.native
-  sealed trait Property extends js.Object
-  @js.native
-  object Property extends js.Object {
-    
-    @js.native
-    sealed trait ACTIVE extends Property
-  }
-  
-  @js.native
-  object default extends js.Object {
+  object default extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Property with String] = js.native
     
     /* "active" */ val ACTIVE: typings.ol.propertyMod.Property.ACTIVE with String = js.native
+  }
+  
+  @js.native
+  sealed trait Property extends StObject
+  @JSImport("ol/interaction/Property", "Property")
+  @js.native
+  object Property extends StObject {
+    
+    @js.native
+    sealed trait ACTIVE extends Property
   }
 }

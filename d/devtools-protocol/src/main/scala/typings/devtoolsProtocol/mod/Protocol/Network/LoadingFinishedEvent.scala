@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadingFinishedEvent extends js.Object {
+trait LoadingFinishedEvent extends StObject {
   
   /**
     * Total number of bytes received for this request.
@@ -37,33 +38,21 @@ object LoadingFinishedEvent {
   }
   
   @scala.inline
-  implicit class LoadingFinishedEventOps[Self <: LoadingFinishedEvent] (val x: Self) extends AnyVal {
+  implicit class LoadingFinishedEventMutableBuilder[Self <: LoadingFinishedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncodedDataLength(value: Double): Self = StObject.set(x, "encodedDataLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShouldReportCorbBlocking(value: Boolean): Self = StObject.set(x, "shouldReportCorbBlocking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodedDataLength(value: Double): Self = this.set("encodedDataLength", value.asInstanceOf[js.Any])
+    def setShouldReportCorbBlockingUndefined: Self = StObject.set(x, "shouldReportCorbBlocking", js.undefined)
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShouldReportCorbBlocking(value: Boolean): Self = this.set("shouldReportCorbBlocking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShouldReportCorbBlocking: Self = this.set("shouldReportCorbBlocking", js.undefined)
+    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

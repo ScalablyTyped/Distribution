@@ -1,5 +1,6 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("cesium", "Cesium3DTilesetGraphics")
 @js.native
-class Cesium3DTilesetGraphics () extends js.Object {
+class Cesium3DTilesetGraphics () extends StObject {
   def this(options: Cesium3DTilesetGraphicsOptions) = this()
   
   def clone(result: Cesium3DTilesetGraphics): Cesium3DTilesetGraphics = js.native

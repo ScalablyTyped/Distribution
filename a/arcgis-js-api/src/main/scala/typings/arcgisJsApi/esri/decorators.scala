@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait decorators extends js.Object {
+trait decorators extends StObject {
   
   /**
     * A property decorator that creates a two-way binding between the property it decorates and an inner property of one of its members.

@@ -1,12 +1,13 @@
 package typings.ionic.definitionsMod
 
 import typings.ionicCliFramework.mod.BaseConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IIntegration[T /* <: ProjectIntegration */] extends js.Object {
+trait IIntegration[T /* <: ProjectIntegration */] extends StObject {
   
   def add(details: IntegrationAddDetails): js.Promise[Unit] = js.native
   

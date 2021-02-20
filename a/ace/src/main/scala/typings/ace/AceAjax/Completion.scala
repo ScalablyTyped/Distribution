@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Completion extends js.Object {
+trait Completion extends StObject {
   
   var caption: js.UndefOr[String] = js.native
   
@@ -32,60 +33,48 @@ object Completion {
   }
   
   @scala.inline
-  implicit class CompletionOps[Self <: Completion] (val x: Self) extends AnyVal {
+  implicit class CompletionMutableBuilder[Self <: Completion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocHTML(value: String): Self = StObject.set(x, "docHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: String): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setDocHTMLUndefined: Self = StObject.set(x, "docHTML", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setExactMatch(value: Double): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocHTML(value: String): Self = this.set("docHTML", value.asInstanceOf[js.Any])
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocHTML: Self = this.set("docHTML", js.undefined)
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def setExactMatch(value: Double): Self = this.set("exactMatch", value.asInstanceOf[js.Any])
+    def setSnippet(value: js.Any): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExactMatch: Self = this.set("exactMatch", js.undefined)
+    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
     @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setSnippet(value: js.Any): Self = this.set("snippet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnippet: Self = this.set("snippet", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

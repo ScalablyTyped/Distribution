@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BannerImageUrl extends js.Object {
+trait BannerImageUrl extends StObject {
   
   var bannerImageUrl: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object BannerImageUrl {
   }
   
   @scala.inline
-  implicit class BannerImageUrlOps[Self <: BannerImageUrl] (val x: Self) extends AnyVal {
+  implicit class BannerImageUrlMutableBuilder[Self <: BannerImageUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBannerImageUrl(value: String): Self = StObject.set(x, "bannerImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBannerImageUrlUndefined: Self = StObject.set(x, "bannerImageUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBannerImageUrl(value: String): Self = this.set("bannerImageUrl", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteBannerImageUrl: Self = this.set("bannerImageUrl", js.undefined)
+    def setSeriesId(value: String): Self = StObject.set(x, "seriesId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setSeriesIdUndefined: Self = StObject.set(x, "seriesId", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setSeriesType(value: String): Self = StObject.set(x, "seriesType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesId(value: String): Self = this.set("seriesId", value.asInstanceOf[js.Any])
+    def setSeriesTypeUndefined: Self = StObject.set(x, "seriesType", js.undefined)
     
     @scala.inline
-    def deleteSeriesId: Self = this.set("seriesId", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesType(value: String): Self = this.set("seriesType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeriesType: Self = this.set("seriesType", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

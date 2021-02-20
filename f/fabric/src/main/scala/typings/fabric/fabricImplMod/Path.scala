@@ -1,6 +1,7 @@
 package typings.fabric.fabricImplMod
 
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,14 +30,20 @@ class Path () extends Object {
   var pathOffset: Point = js.native
 }
 /* static members */
-@JSImport("fabric/fabric-impl", "Path")
-@js.native
-object Path extends js.Object {
+object Path {
+  
+  @JSImport("fabric/fabric-impl", "Path")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * List of attribute names to account for when parsing SVG element (used by `fabric.Polygon.fromElement`)
     */
-  var ATTRIBUTE_NAMES: js.Array[String] = js.native
+  @JSImport("fabric/fabric-impl", "Path.ATTRIBUTE_NAMES")
+  @js.native
+  def ATTRIBUTE_NAMES: js.Array[String] = js.native
+  @scala.inline
+  def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
   
   /**
     * Creates an instance of fabric.Path from an SVG <path> element
@@ -44,12 +51,18 @@ object Path extends js.Object {
     * @param callback Callback to invoke when an fabric.Path instance is created
     * @param [options] Options object
     */
+  @JSImport("fabric/fabric-impl", "Path.fromElement")
+  @js.native
   def fromElement(element: SVGElement, callback: js.Function): Path = js.native
+  @JSImport("fabric/fabric-impl", "Path.fromElement")
+  @js.native
   def fromElement(element: SVGElement, callback: js.Function, options: IPathOptions): Path = js.native
   
   /**
     * Creates an instance of fabric.Path from an object
     * @param callback Callback to invoke when an fabric.Path instance is created
     */
+  @JSImport("fabric/fabric-impl", "Path.fromObject")
+  @js.native
   def fromObject(`object`: js.Any, callback: js.Function): Path = js.native
 }

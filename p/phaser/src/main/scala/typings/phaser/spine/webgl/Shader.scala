@@ -5,6 +5,7 @@ import typings.phaser.spine.Disposable
 import typings.phaser.spine.Restorable
 import typings.std.WebGLProgram
 import typings.std.WebGLUniformLocation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,111 +120,99 @@ object Shader {
   }
   
   @scala.inline
-  implicit class ShaderOps[Self <: Shader] (val x: Self) extends AnyVal {
+  implicit class ShaderMutableBuilder[Self <: Shader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompile(value: js.Any): Self = StObject.set(x, "compile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompileProgram(value: js.Any): Self = StObject.set(x, "compileProgram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBind(value: () => Unit): Self = this.set("bind", js.Any.fromFunction0(value))
+    def setCompileShader(value: js.Any): Self = StObject.set(x, "compileShader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompile(value: js.Any): Self = this.set("compile", value.asInstanceOf[js.Any])
+    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompileProgram(value: js.Any): Self = this.set("compileProgram", value.asInstanceOf[js.Any])
+    def setFragmentShader(value: js.Any): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompileShader(value: js.Any): Self = this.set("compileShader", value.asInstanceOf[js.Any])
+    def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setFsSource(value: js.Any): Self = StObject.set(x, "fsSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentShader(value: js.Any): Self = this.set("fragmentShader", value.asInstanceOf[js.Any])
+    def setGetAttributeLocation(value: String => Double): Self = StObject.set(x, "getAttributeLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFs(value: js.Any): Self = this.set("fs", value.asInstanceOf[js.Any])
+    def setGetFragmentShader(value: () => String): Self = StObject.set(x, "getFragmentShader", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFsSource(value: js.Any): Self = this.set("fsSource", value.asInstanceOf[js.Any])
+    def setGetFragmentSource(value: () => String): Self = StObject.set(x, "getFragmentSource", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAttributeLocation(value: String => Double): Self = this.set("getAttributeLocation", js.Any.fromFunction1(value))
+    def setGetProgram(value: () => WebGLProgram): Self = StObject.set(x, "getProgram", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFragmentShader(value: () => String): Self = this.set("getFragmentShader", js.Any.fromFunction0(value))
+    def setGetUniformLocation(value: String => WebGLUniformLocation): Self = StObject.set(x, "getUniformLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFragmentSource(value: () => String): Self = this.set("getFragmentSource", js.Any.fromFunction0(value))
+    def setGetVertexShader(value: () => String): Self = StObject.set(x, "getVertexShader", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetProgram(value: () => WebGLProgram): Self = this.set("getProgram", js.Any.fromFunction0(value))
+    def setGetVertexShaderSource(value: () => String): Self = StObject.set(x, "getVertexShaderSource", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetUniformLocation(value: String => WebGLUniformLocation): Self = this.set("getUniformLocation", js.Any.fromFunction1(value))
+    def setProgram(value: js.Any): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVertexShader(value: () => String): Self = this.set("getVertexShader", js.Any.fromFunction0(value))
+    def setSetUniform2f(value: (String, Double, Double) => Unit): Self = StObject.set(x, "setUniform2f", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetVertexShaderSource(value: () => String): Self = this.set("getVertexShaderSource", js.Any.fromFunction0(value))
+    def setSetUniform2x2f(value: (String, ArrayLike[Double]) => Unit): Self = StObject.set(x, "setUniform2x2f", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setProgram(value: js.Any): Self = this.set("program", value.asInstanceOf[js.Any])
+    def setSetUniform3f(value: (String, Double, Double, Double) => Unit): Self = StObject.set(x, "setUniform3f", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setSetUniform2f(value: (String, Double, Double) => Unit): Self = this.set("setUniform2f", js.Any.fromFunction3(value))
+    def setSetUniform3x3f(value: (String, ArrayLike[Double]) => Unit): Self = StObject.set(x, "setUniform3x3f", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetUniform2x2f(value: (String, ArrayLike[Double]) => Unit): Self = this.set("setUniform2x2f", js.Any.fromFunction2(value))
+    def setSetUniform4f(value: (String, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setUniform4f", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setSetUniform3f(value: (String, Double, Double, Double) => Unit): Self = this.set("setUniform3f", js.Any.fromFunction4(value))
+    def setSetUniform4x4f(value: (String, ArrayLike[Double]) => Unit): Self = StObject.set(x, "setUniform4x4f", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetUniform3x3f(value: (String, ArrayLike[Double]) => Unit): Self = this.set("setUniform3x3f", js.Any.fromFunction2(value))
+    def setSetUniformf(value: (String, Double) => Unit): Self = StObject.set(x, "setUniformf", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetUniform4f(value: (String, Double, Double, Double, Double) => Unit): Self = this.set("setUniform4f", js.Any.fromFunction5(value))
+    def setSetUniformi(value: (String, Double) => Unit): Self = StObject.set(x, "setUniformi", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetUniform4x4f(value: (String, ArrayLike[Double]) => Unit): Self = this.set("setUniform4x4f", js.Any.fromFunction2(value))
+    def setTmp2x2(value: js.Any): Self = StObject.set(x, "tmp2x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetUniformf(value: (String, Double) => Unit): Self = this.set("setUniformf", js.Any.fromFunction2(value))
+    def setTmp3x3(value: js.Any): Self = StObject.set(x, "tmp3x3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetUniformi(value: (String, Double) => Unit): Self = this.set("setUniformi", js.Any.fromFunction2(value))
+    def setTmp4x4(value: js.Any): Self = StObject.set(x, "tmp4x4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTmp2x2(value: js.Any): Self = this.set("tmp2x2", value.asInstanceOf[js.Any])
+    def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTmp3x3(value: js.Any): Self = this.set("tmp3x3", value.asInstanceOf[js.Any])
+    def setVertexShader(value: js.Any): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTmp4x4(value: js.Any): Self = this.set("tmp4x4", value.asInstanceOf[js.Any])
+    def setVs(value: js.Any): Self = StObject.set(x, "vs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnbind(value: () => Unit): Self = this.set("unbind", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVertexShader(value: js.Any): Self = this.set("vertexShader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVs(value: js.Any): Self = this.set("vs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVsSource(value: js.Any): Self = this.set("vsSource", value.asInstanceOf[js.Any])
+    def setVsSource(value: js.Any): Self = StObject.set(x, "vsSource", value.asInstanceOf[js.Any])
   }
 }

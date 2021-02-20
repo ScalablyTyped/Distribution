@@ -3,6 +3,7 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.tms
 import typings.mapboxGl.mapboxGlStrings.vector
 import typings.mapboxGl.mapboxGlStrings.xyz
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,75 +42,63 @@ object VectorSource {
   }
   
   @scala.inline
-  implicit class VectorSourceOps[Self <: VectorSource] (val x: Self) extends AnyVal {
+  implicit class VectorSourceMutableBuilder[Self <: VectorSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: vector): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def setAttribution(value: String): Self = this.set("attribution", value.asInstanceOf[js.Any])
+    def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def deleteAttribution: Self = this.set("attribution", js.undefined)
+    def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsVarargs(value: Double*): Self = this.set("bounds", js.Array(value :_*))
+    def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
     
     @scala.inline
-    def setBounds(value: js.Array[Double]): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
     
     @scala.inline
-    def setMaxzoom(value: Double): Self = this.set("maxzoom", value.asInstanceOf[js.Any])
+    def setPromoteId(value: PromoteIdSpecification): Self = StObject.set(x, "promoteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxzoom: Self = this.set("maxzoom", js.undefined)
+    def setPromoteIdUndefined: Self = StObject.set(x, "promoteId", js.undefined)
     
     @scala.inline
-    def setMinzoom(value: Double): Self = this.set("minzoom", value.asInstanceOf[js.Any])
+    def setScheme(value: xyz | tms): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinzoom: Self = this.set("minzoom", js.undefined)
+    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
     @scala.inline
-    def setPromoteId(value: PromoteIdSpecification): Self = this.set("promoteId", value.asInstanceOf[js.Any])
+    def setTiles(value: js.Array[String]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePromoteId: Self = this.set("promoteId", js.undefined)
+    def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
     @scala.inline
-    def setScheme(value: xyz | tms): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value :_*))
     
     @scala.inline
-    def deleteScheme: Self = this.set("scheme", js.undefined)
+    def setType(value: vector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTilesVarargs(value: String*): Self = this.set("tiles", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiles(value: js.Array[String]): Self = this.set("tiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiles: Self = this.set("tiles", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

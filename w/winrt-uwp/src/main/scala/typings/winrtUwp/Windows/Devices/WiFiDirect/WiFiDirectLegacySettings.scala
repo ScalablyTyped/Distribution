@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
 import typings.winrtUwp.Windows.Security.Credentials.PasswordCredential
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Settings governing "legacy" mode (non-Wi-Fi Direct connections to the access point being advertised.) */
 @js.native
-trait WiFiDirectLegacySettings extends js.Object {
+trait WiFiDirectLegacySettings extends StObject {
   
   /** Gets or sets a value specifying whether "legacy mode" is enabled. When enabled, this mode causes this device to act as a normal Wi-Fi access point, and is intended to support devices which do not support connection via Wi-Fi Direct. */
   var isEnabled: Boolean = js.native
@@ -27,27 +28,15 @@ object WiFiDirectLegacySettings {
   }
   
   @scala.inline
-  implicit class WiFiDirectLegacySettingsOps[Self <: WiFiDirectLegacySettings] (val x: Self) extends AnyVal {
+  implicit class WiFiDirectLegacySettingsMutableBuilder[Self <: WiFiDirectLegacySettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPassphrase(value: PasswordCredential): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPassphrase(value: PasswordCredential): Self = this.set("passphrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSsid(value: String): Self = this.set("ssid", value.asInstanceOf[js.Any])
+    def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
   }
 }

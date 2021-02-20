@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSharedProjectsOutput extends js.Object {
+trait ListSharedProjectsOutput extends StObject {
   
   /**
     *  During a previous call, the maximum number of items that can be returned is the value specified in maxResults. If there more items in the list, then a unique string called a nextToken is returned. To get the next batch of items in the list, call this operation again, adding the next token to the call. To get all of the items in the list, keep calling this operation with each subsequent next token that is returned, until no more next tokens are returned. 
@@ -26,33 +27,21 @@ object ListSharedProjectsOutput {
   }
   
   @scala.inline
-  implicit class ListSharedProjectsOutputOps[Self <: ListSharedProjectsOutput] (val x: Self) extends AnyVal {
+  implicit class ListSharedProjectsOutputMutableBuilder[Self <: ListSharedProjectsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjects(value: ProjectArns): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setProjectsVarargs(value: NonEmptyString*): Self = this.set("projects", js.Array(value :_*))
-    
-    @scala.inline
-    def setProjects(value: ProjectArns): Self = this.set("projects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjects: Self = this.set("projects", js.undefined)
+    def setProjectsVarargs(value: NonEmptyString*): Self = StObject.set(x, "projects", js.Array(value :_*))
   }
 }

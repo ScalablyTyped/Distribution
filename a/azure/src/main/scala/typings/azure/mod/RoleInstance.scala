@@ -1,12 +1,13 @@
 package typings.azure.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoleInstance extends js.Object {
+trait RoleInstance extends StObject {
   
   var endpoints: StringDictionary[RoleInstanceEndpoint] = js.native
   
@@ -30,30 +31,18 @@ object RoleInstance {
   }
   
   @scala.inline
-  implicit class RoleInstanceOps[Self <: RoleInstance] (val x: Self) extends AnyVal {
+  implicit class RoleInstanceMutableBuilder[Self <: RoleInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoints(value: StringDictionary[RoleInstanceEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaultDomain(value: String): Self = StObject.set(x, "faultDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: StringDictionary[RoleInstanceEndpoint]): Self = this.set("endpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFaultDomain(value: String): Self = this.set("faultDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateDomain(value: String): Self = this.set("updateDomain", value.asInstanceOf[js.Any])
+    def setUpdateDomain(value: String): Self = StObject.set(x, "updateDomain", value.asInstanceOf[js.Any])
   }
 }

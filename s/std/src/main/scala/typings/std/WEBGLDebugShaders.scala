@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WEBGLDebugShaders extends js.Object {
+trait WEBGLDebugShaders extends StObject {
   
   def getTranslatedShaderSource(shader: WebGLShader): java.lang.String = js.native
 }
@@ -18,21 +19,9 @@ object WEBGLDebugShaders {
   }
   
   @scala.inline
-  implicit class WEBGLDebugShadersOps[Self <: WEBGLDebugShaders] (val x: Self) extends AnyVal {
+  implicit class WEBGLDebugShadersMutableBuilder[Self <: WEBGLDebugShaders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetTranslatedShaderSource(value: WebGLShader => java.lang.String): Self = this.set("getTranslatedShaderSource", js.Any.fromFunction1(value))
+    def setGetTranslatedShaderSource(value: WebGLShader => java.lang.String): Self = StObject.set(x, "getTranslatedShaderSource", js.Any.fromFunction1(value))
   }
 }

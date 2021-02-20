@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param camera - The CameraComponent that this event was originally raised via.
   */
 @js.native
-trait ElementInputEvent extends js.Object {
+trait ElementInputEvent extends StObject {
   
   /**
     * The CameraComponent that this event was originally raised via.
@@ -50,30 +51,18 @@ object ElementInputEvent {
   }
   
   @scala.inline
-  implicit class ElementInputEventOps[Self <: ElementInputEvent] (val x: Self) extends AnyVal {
+  implicit class ElementInputEventMutableBuilder[Self <: ElementInputEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCamera(value: CameraComponent): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElement(value: ElementComponent): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: MouseEvent | TouchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera(value: CameraComponent): Self = this.set("camera", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setElement(value: ElementComponent): Self = this.set("element", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent(value: MouseEvent | TouchEvent): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = this.set("stopPropagation", js.Any.fromFunction0(value))
+    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

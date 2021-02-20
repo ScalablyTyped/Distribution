@@ -1,12 +1,13 @@
 package typings.braintree.mod
 
 import typings.braintree.anon.AllowVaulting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentMethodGateway extends js.Object {
+trait PaymentMethodGateway extends StObject {
   
   def create(request: PaymentMethodCreateRequest): js.Promise[ValidatedResponse[PaymentMethod]] = js.native
   
@@ -36,36 +37,24 @@ object PaymentMethodGateway {
   }
   
   @scala.inline
-  implicit class PaymentMethodGatewayOps[Self <: PaymentMethodGateway] (val x: Self) extends AnyVal {
+  implicit class PaymentMethodGatewayMutableBuilder[Self <: PaymentMethodGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: PaymentMethodCreateRequest => js.Promise[ValidatedResponse[PaymentMethod]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFind(value: String => js.Promise[PaymentMethod]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreate(value: PaymentMethodCreateRequest => js.Promise[ValidatedResponse[PaymentMethod]]): Self = this.set("create", js.Any.fromFunction1(value))
+    def setGrant(value: (String, AllowVaulting) => js.Promise[ValidatedResponse[PaymentMethodNonce]]): Self = StObject.set(x, "grant", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDelete(value: String => js.Promise[Unit]): Self = this.set("delete", js.Any.fromFunction1(value))
+    def setRevoke(value: String => js.Promise[Unit]): Self = StObject.set(x, "revoke", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFind(value: String => js.Promise[PaymentMethod]): Self = this.set("find", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGrant(value: (String, AllowVaulting) => js.Promise[ValidatedResponse[PaymentMethodNonce]]): Self = this.set("grant", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRevoke(value: String => js.Promise[Unit]): Self = this.set("revoke", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: (String, PaymentMethodUpdateRequest) => js.Promise[ValidatedResponse[PaymentMethod]]): Self = this.set("update", js.Any.fromFunction2(value))
+    def setUpdate(value: (String, PaymentMethodUpdateRequest) => js.Promise[ValidatedResponse[PaymentMethod]]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

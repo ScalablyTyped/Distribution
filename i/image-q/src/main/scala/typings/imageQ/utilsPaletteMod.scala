@@ -3,18 +3,16 @@ package typings.imageQ
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.pointContainerMod.PointContainer
 import typings.imageQ.pointMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/utils/palette", JSImport.Namespace)
-@js.native
-object utilsPaletteMod extends js.Object {
+object utilsPaletteMod {
   
-  def hueGroup(hue: Double, segmentsNumber: Double): Double = js.native
-  
+  @JSImport("image-q/dist/utils/palette", "Palette")
   @js.native
-  class Palette () extends js.Object {
+  class Palette () extends StObject {
     
     var _i32idx: js.Any = js.native
     
@@ -36,4 +34,8 @@ object utilsPaletteMod extends js.Object {
     
     def sort(): Unit = js.native
   }
+  
+  @JSImport("image-q/dist/utils/palette", "hueGroup")
+  @js.native
+  def hueGroup(hue: Double, segmentsNumber: Double): Double = js.native
 }

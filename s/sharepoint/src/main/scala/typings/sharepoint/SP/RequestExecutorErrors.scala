@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RequestExecutorErrors extends js.Object
+sealed trait RequestExecutorErrors extends StObject
 @JSGlobal("SP.RequestExecutorErrors")
 @js.native
-object RequestExecutorErrors extends js.Object {
+object RequestExecutorErrors extends StObject {
   
   @js.native
   sealed trait domainDoesNotMatch extends RequestExecutorErrors

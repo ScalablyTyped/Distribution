@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ecs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig extends js.Object {
+trait TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig extends StObject {
   
   /**
     * The access point ID to use. If an access point is specified, the root directory value will be relative to the directory set for the access point. If specified, transit encryption must be enabled in the EFSVolumeConfiguration.
@@ -26,30 +27,18 @@ object TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig {
   }
   
   @scala.inline
-  implicit class TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOps[Self <: TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig] (val x: Self) extends AnyVal {
+  implicit class TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigMutableBuilder[Self <: TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPointId(value: String): Self = StObject.set(x, "accessPointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessPointIdUndefined: Self = StObject.set(x, "accessPointId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIam(value: String): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPointId(value: String): Self = this.set("accessPointId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessPointId: Self = this.set("accessPointId", js.undefined)
-    
-    @scala.inline
-    def setIam(value: String): Self = this.set("iam", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIam: Self = this.set("iam", js.undefined)
+    def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
   }
 }

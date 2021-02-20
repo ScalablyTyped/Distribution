@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,39 +23,27 @@ object DeviceComplianceScheduledActionForRule {
   }
   
   @scala.inline
-  implicit class DeviceComplianceScheduledActionForRuleOps[Self <: DeviceComplianceScheduledActionForRule] (val x: Self) extends AnyVal {
+  implicit class DeviceComplianceScheduledActionForRuleMutableBuilder[Self <: DeviceComplianceScheduledActionForRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRuleName(value: NullableOption[String]): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleNameNull: Self = StObject.set(x, "ruleName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
     
     @scala.inline
-    def setRuleName(value: NullableOption[String]): Self = this.set("ruleName", value.asInstanceOf[js.Any])
+    def setScheduledActionConfigurations(value: NullableOption[js.Array[DeviceComplianceActionItem]]): Self = StObject.set(x, "scheduledActionConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuleName: Self = this.set("ruleName", js.undefined)
+    def setScheduledActionConfigurationsNull: Self = StObject.set(x, "scheduledActionConfigurations", null)
     
     @scala.inline
-    def setRuleNameNull: Self = this.set("ruleName", null)
+    def setScheduledActionConfigurationsUndefined: Self = StObject.set(x, "scheduledActionConfigurations", js.undefined)
     
     @scala.inline
-    def setScheduledActionConfigurationsVarargs(value: DeviceComplianceActionItem*): Self = this.set("scheduledActionConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setScheduledActionConfigurations(value: NullableOption[js.Array[DeviceComplianceActionItem]]): Self = this.set("scheduledActionConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledActionConfigurations: Self = this.set("scheduledActionConfigurations", js.undefined)
-    
-    @scala.inline
-    def setScheduledActionConfigurationsNull: Self = this.set("scheduledActionConfigurations", null)
+    def setScheduledActionConfigurationsVarargs(value: DeviceComplianceActionItem*): Self = StObject.set(x, "scheduledActionConfigurations", js.Array(value :_*))
   }
 }

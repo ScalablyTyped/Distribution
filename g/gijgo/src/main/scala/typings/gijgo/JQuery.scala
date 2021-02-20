@@ -20,12 +20,13 @@ import typings.gijgo.Types.TimePicker
 import typings.gijgo.Types.TimePickerSettings
 import typings.gijgo.Types.Tree
 import typings.gijgo.Types.TreeSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def checkbox(settings: CheckboxSettings): Checkbox = js.native
   

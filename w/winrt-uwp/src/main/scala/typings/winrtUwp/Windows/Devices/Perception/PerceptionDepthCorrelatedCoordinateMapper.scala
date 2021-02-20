@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Devices.Perception
 import typings.winrtUwp.Windows.Foundation.Point
 import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.anon.TargetCoordinates
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides convenience methods to map pixel coordinates in camera image space to depth image space. */
 @js.native
-trait PerceptionDepthCorrelatedCoordinateMapper extends js.Object {
+trait PerceptionDepthCorrelatedCoordinateMapper extends StObject {
   
   /**
     * Maps all pixels in an image from camera image space to depth image space.
@@ -54,30 +55,18 @@ object PerceptionDepthCorrelatedCoordinateMapper {
   }
   
   @scala.inline
-  implicit class PerceptionDepthCorrelatedCoordinateMapperOps[Self <: PerceptionDepthCorrelatedCoordinateMapper] (val x: Self) extends AnyVal {
+  implicit class PerceptionDepthCorrelatedCoordinateMapperMutableBuilder[Self <: PerceptionDepthCorrelatedCoordinateMapper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMapAllPixelsToTargetAsync(value: PerceptionDepthFrame => TargetCoordinates): Self = StObject.set(x, "mapAllPixelsToTargetAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMapPixelToTarget(value: (Point, PerceptionDepthFrame) => Point): Self = StObject.set(x, "mapPixelToTarget", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapPixelsToTarget(value: (Point, PerceptionDepthFrame) => Point): Self = StObject.set(x, "mapPixelsToTarget", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMapAllPixelsToTargetAsync(value: PerceptionDepthFrame => TargetCoordinates): Self = this.set("mapAllPixelsToTargetAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMapPixelToTarget(value: (Point, PerceptionDepthFrame) => Point): Self = this.set("mapPixelToTarget", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMapPixelsToTarget(value: (Point, PerceptionDepthFrame) => Point): Self = this.set("mapPixelsToTarget", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMapRegionOfPixelsToTargetAsync(value: (Rect, PerceptionDepthFrame) => TargetCoordinates): Self = this.set("mapRegionOfPixelsToTargetAsync", js.Any.fromFunction2(value))
+    def setMapRegionOfPixelsToTargetAsync(value: (Rect, PerceptionDepthFrame) => TargetCoordinates): Self = StObject.set(x, "mapRegionOfPixelsToTargetAsync", js.Any.fromFunction2(value))
   }
 }

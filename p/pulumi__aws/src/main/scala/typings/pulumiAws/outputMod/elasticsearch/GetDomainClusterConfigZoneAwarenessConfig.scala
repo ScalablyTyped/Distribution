@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.elasticsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDomainClusterConfigZoneAwarenessConfig extends js.Object {
+trait GetDomainClusterConfigZoneAwarenessConfig extends StObject {
   
   /**
     * Number of availability zones used.
@@ -21,21 +22,9 @@ object GetDomainClusterConfigZoneAwarenessConfig {
   }
   
   @scala.inline
-  implicit class GetDomainClusterConfigZoneAwarenessConfigOps[Self <: GetDomainClusterConfigZoneAwarenessConfig] (val x: Self) extends AnyVal {
+  implicit class GetDomainClusterConfigZoneAwarenessConfigMutableBuilder[Self <: GetDomainClusterConfigZoneAwarenessConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAvailabilityZoneCount(value: Double): Self = this.set("availabilityZoneCount", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneCount(value: Double): Self = StObject.set(x, "availabilityZoneCount", value.asInstanceOf[js.Any])
   }
 }

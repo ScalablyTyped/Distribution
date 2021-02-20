@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The CreateCollectdTimeSeries response.
   */
 @js.native
-trait SchemaCreateCollectdTimeSeriesResponse extends js.Object {
+trait SchemaCreateCollectdTimeSeriesResponse extends StObject {
   
   /**
     * Records the error status for points that were not written due to an
@@ -26,27 +27,15 @@ object SchemaCreateCollectdTimeSeriesResponse {
   }
   
   @scala.inline
-  implicit class SchemaCreateCollectdTimeSeriesResponseOps[Self <: SchemaCreateCollectdTimeSeriesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateCollectdTimeSeriesResponseMutableBuilder[Self <: SchemaCreateCollectdTimeSeriesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayloadErrors(value: js.Array[SchemaCollectdPayloadError]): Self = StObject.set(x, "payloadErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayloadErrorsUndefined: Self = StObject.set(x, "payloadErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPayloadErrorsVarargs(value: SchemaCollectdPayloadError*): Self = this.set("payloadErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setPayloadErrors(value: js.Array[SchemaCollectdPayloadError]): Self = this.set("payloadErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayloadErrors: Self = this.set("payloadErrors", js.undefined)
+    def setPayloadErrorsVarargs(value: SchemaCollectdPayloadError*): Self = StObject.set(x, "payloadErrors", js.Array(value :_*))
   }
 }

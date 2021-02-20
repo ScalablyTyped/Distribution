@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageBreak extends js.Object {
+trait PageBreak extends StObject {
   
   @JSName("Access.PageBreak_typekey")
   var AccessDotPageBreak_typekey: PageBreak = js.native

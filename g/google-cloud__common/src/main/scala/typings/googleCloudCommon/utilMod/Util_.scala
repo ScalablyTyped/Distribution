@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.googleCloudCommon.anon.TypeofApiError
 import typings.std.Error
 import typings.teenyRequest.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/common/build/src/util", "Util")
 @js.native
-class Util_ () extends js.Object {
+class Util_ () extends StObject {
   
   var ApiError: TypeofApiError = js.native
   

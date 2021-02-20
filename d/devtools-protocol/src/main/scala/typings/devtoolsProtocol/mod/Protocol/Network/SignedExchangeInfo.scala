@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignedExchangeInfo extends js.Object {
+trait SignedExchangeInfo extends StObject {
   
   /**
     * Errors occurred while handling the signed exchagne.
@@ -36,42 +37,30 @@ object SignedExchangeInfo {
   }
   
   @scala.inline
-  implicit class SignedExchangeInfoOps[Self <: SignedExchangeInfo] (val x: Self) extends AnyVal {
+  implicit class SignedExchangeInfoMutableBuilder[Self <: SignedExchangeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrors(value: js.Array[SignedExchangeError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsVarargs(value: SignedExchangeError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setOuterResponse(value: Response): Self = this.set("outerResponse", value.asInstanceOf[js.Any])
+    def setHeader(value: SignedExchangeHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsVarargs(value: SignedExchangeError*): Self = this.set("errors", js.Array(value :_*))
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setErrors(value: js.Array[SignedExchangeError]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setOuterResponse(value: Response): Self = StObject.set(x, "outerResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setSecurityDetails(value: SecurityDetails): Self = StObject.set(x, "securityDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: SignedExchangeHeader): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
-    
-    @scala.inline
-    def setSecurityDetails(value: SecurityDetails): Self = this.set("securityDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityDetails: Self = this.set("securityDetails", js.undefined)
+    def setSecurityDetailsUndefined: Self = StObject.set(x, "securityDetails", js.undefined)
   }
 }

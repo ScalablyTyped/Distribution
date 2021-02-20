@@ -1,12 +1,13 @@
 package typings.openpgp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "LocalStore")
 @js.native
-class LocalStore protected () extends js.Object {
+class LocalStore protected () extends StObject {
   /**
     * The class that deals with storage of the keyring.
     * Currently the only option is to use HTML5 local storage.

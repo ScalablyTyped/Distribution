@@ -1,6 +1,7 @@
 package typings.azdata.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,66 +56,54 @@ object IConnectionProfile {
   }
   
   @scala.inline
-  implicit class IConnectionProfileOps[Self <: IConnectionProfile] (val x: Self) extends AnyVal {
+  implicit class IConnectionProfileMutableBuilder[Self <: IConnectionProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAzureTenantId(value: String): Self = StObject.set(x, "azureTenantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAzureTenantIdUndefined: Self = StObject.set(x, "azureTenantId", js.undefined)
     
     @scala.inline
-    def setAuthenticationType(value: String): Self = this.set("authenticationType", value.asInstanceOf[js.Any])
+    def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionName(value: String): Self = this.set("connectionName", value.asInstanceOf[js.Any])
+    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    def setGroupFullName(value: String): Self = StObject.set(x, "groupFullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setGroupFullNameUndefined: Self = StObject.set(x, "groupFullName", js.undefined)
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderName(value: String): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     @scala.inline
-    def setSavePassword(value: Boolean): Self = this.set("savePassword", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveProfile(value: Boolean): Self = this.set("saveProfile", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerName(value: String): Self = this.set("serverName", value.asInstanceOf[js.Any])
+    def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
+    def setSavePassword(value: Boolean): Self = StObject.set(x, "savePassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzureTenantId(value: String): Self = this.set("azureTenantId", value.asInstanceOf[js.Any])
+    def setSaveProfile(value: Boolean): Self = StObject.set(x, "saveProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAzureTenantId: Self = this.set("azureTenantId", js.undefined)
+    def setServerName(value: String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupFullName(value: String): Self = this.set("groupFullName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupFullName: Self = this.set("groupFullName", js.undefined)
-    
-    @scala.inline
-    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

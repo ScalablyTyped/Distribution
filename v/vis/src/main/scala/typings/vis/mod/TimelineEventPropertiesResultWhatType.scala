@@ -1,5 +1,6 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vis.visStrings.`custom-time`
   - typings.vis.visStrings.`current-time`
 */
-trait TimelineEventPropertiesResultWhatType extends js.Object
+trait TimelineEventPropertiesResultWhatType extends StObject
 object TimelineEventPropertiesResultWhatType {
   
   @scala.inline

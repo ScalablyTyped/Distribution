@@ -30,6 +30,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.single
 import typings.oracleOraclejet.oracleOraclejetStrings.touchStart
 import typings.oracleOraclejet.oracleOraclejetStrings.x
 import typings.oracleOraclejet.oracleOraclejetStrings.y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,141 +140,129 @@ object ojDiagramSettableProperties {
   }
   
   @scala.inline
-  implicit class ojDiagramSettablePropertiesOps[Self <: ojDiagramSettableProperties[_, _, _, _], K1, K2, D1, D2] (val x: Self with (ojDiagramSettableProperties[K1, K2, D1, D2])) extends AnyVal {
+  implicit class ojDiagramSettablePropertiesMutableBuilder[Self <: ojDiagramSettableProperties[_, _, _, _], K1, K2, D1, D2] (val x: Self with (ojDiagramSettableProperties[K1, K2, D1, D2])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationOnDataChange(value: auto | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationOnDisplay(value: auto | none): Self = StObject.set(x, "animationOnDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationOnDataChange(value: auto | none): Self = this.set("animationOnDataChange", value.asInstanceOf[js.Any])
+    def setDnd(value: Drop): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationOnDisplay(value: auto | none): Self = this.set("animationOnDisplay", value.asInstanceOf[js.Any])
+    def setExpanded(value: KeySet[K1]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setFocusRenderer(value: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit): Self = StObject.set(x, "focusRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDnd(value: Drop): Self = this.set("dnd", value.asInstanceOf[js.Any])
+    def setFocusRendererNull: Self = StObject.set(x, "focusRenderer", null)
     
     @scala.inline
-    def setExpanded(value: KeySet[K1]): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    def setHiddenCategories(value: js.Array[String]): Self = StObject.set(x, "hiddenCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenCategoriesVarargs(value: String*): Self = this.set("hiddenCategories", js.Array(value :_*))
+    def setHiddenCategoriesVarargs(value: String*): Self = StObject.set(x, "hiddenCategories", js.Array(value :_*))
     
     @scala.inline
-    def setHiddenCategories(value: js.Array[String]): Self = this.set("hiddenCategories", value.asInstanceOf[js.Any])
+    def setHighlightMatch(value: any | all): Self = StObject.set(x, "highlightMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightMatch(value: any | all): Self = this.set("highlightMatch", value.asInstanceOf[js.Any])
+    def setHighlightedCategories(value: js.Array[String]): Self = StObject.set(x, "highlightedCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightedCategoriesVarargs(value: String*): Self = this.set("highlightedCategories", js.Array(value :_*))
+    def setHighlightedCategoriesVarargs(value: String*): Self = StObject.set(x, "highlightedCategories", js.Array(value :_*))
     
     @scala.inline
-    def setHighlightedCategories(value: js.Array[String]): Self = this.set("highlightedCategories", value.asInstanceOf[js.Any])
+    def setHoverBehavior(value: dim | none): Self = StObject.set(x, "hoverBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverBehavior(value: dim | none): Self = this.set("hoverBehavior", value.asInstanceOf[js.Any])
+    def setHoverRenderer(value: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit): Self = StObject.set(x, "hoverRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLayout(value: DvtDiagramLayoutContext => Unit): Self = this.set("layout", js.Any.fromFunction1(value))
+    def setHoverRendererNull: Self = StObject.set(x, "hoverRenderer", null)
     
     @scala.inline
-    def setLinkHighlightMode(value: linkAndNodes | link): Self = this.set("linkHighlightMode", value.asInstanceOf[js.Any])
+    def setLayout(value: DvtDiagramLayoutContext => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setLinkData(value: DataProvider[K2, D2]): Self = StObject.set(x, "linkData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setLinkDataNull: Self = StObject.set(x, "linkData", null)
     
     @scala.inline
-    def setNodeHighlightMode(value: nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node): Self = this.set("nodeHighlightMode", value.asInstanceOf[js.Any])
+    def setLinkHighlightMode(value: linkAndNodes | link): Self = StObject.set(x, "linkHighlightMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverview(value: Halign): Self = this.set("overview", value.asInstanceOf[js.Any])
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanDirection(value: typings.oracleOraclejet.oracleOraclejetStrings.x | y | auto): Self = this.set("panDirection", value.asInstanceOf[js.Any])
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanning(value: auto | none): Self = this.set("panning", value.asInstanceOf[js.Any])
+    def setNodeData(value: DataProvider[K1, D1]): Self = StObject.set(x, "nodeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotedLinkBehavior(value: none | full | `lazy`): Self = this.set("promotedLinkBehavior", value.asInstanceOf[js.Any])
+    def setNodeDataNull: Self = StObject.set(x, "nodeData", null)
     
     @scala.inline
-    def setRenderer(value: RendererContext[K1, D1] => InsertSVGElement): Self = this.set("renderer", js.Any.fromFunction1(value))
+    def setNodeHighlightMode(value: nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node): Self = StObject.set(x, "nodeHighlightMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionVarargs(value: (K1 | K2)*): Self = this.set("selection", js.Array(value :_*))
+    def setOverview(value: Halign): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelection(value: js.Array[K1 | K2]): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setPanDirection(value: typings.oracleOraclejet.oracleOraclejetStrings.x | y | auto): Self = StObject.set(x, "panDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionMode(value: single | multiple | none): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    def setPanning(value: auto | none): Self = StObject.set(x, "panning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleDefaults(value: AnimationDuration): Self = this.set("styleDefaults", value.asInstanceOf[js.Any])
+    def setPromotedLinkBehavior(value: none | full | `lazy`): Self = StObject.set(x, "promotedLinkBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: `5`[K1, K2, D1, D2]): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setRenderer(value: RendererContext[K1, D1] => InsertSVGElement): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTouchResponse(value: touchStart | auto): Self = this.set("touchResponse", value.asInstanceOf[js.Any])
+    def setSelection(value: js.Array[K1 | K2]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslations(value: LabelClearSelection): Self = this.set("translations", value.asInstanceOf[js.Any])
+    def setSelectionMode(value: single | multiple | none): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZooming(value: auto | none): Self = this.set("zooming", value.asInstanceOf[js.Any])
+    def setSelectionRenderer(value: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFocusRenderer(value: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit): Self = this.set("focusRenderer", js.Any.fromFunction1(value))
+    def setSelectionRendererNull: Self = StObject.set(x, "selectionRenderer", null)
     
     @scala.inline
-    def setFocusRendererNull: Self = this.set("focusRenderer", null)
+    def setSelectionVarargs(value: (K1 | K2)*): Self = StObject.set(x, "selection", js.Array(value :_*))
     
     @scala.inline
-    def setHoverRenderer(value: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit): Self = this.set("hoverRenderer", js.Any.fromFunction1(value))
+    def setStyleDefaults(value: AnimationDuration): Self = StObject.set(x, "styleDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverRendererNull: Self = this.set("hoverRenderer", null)
+    def setTooltip(value: `5`[K1, K2, D1, D2]): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkData(value: DataProvider[K2, D2]): Self = this.set("linkData", value.asInstanceOf[js.Any])
+    def setTouchResponse(value: touchStart | auto): Self = StObject.set(x, "touchResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkDataNull: Self = this.set("linkData", null)
+    def setTranslations(value: LabelClearSelection): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeData(value: DataProvider[K1, D1]): Self = this.set("nodeData", value.asInstanceOf[js.Any])
+    def setZoomRenderer(value: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit): Self = StObject.set(x, "zoomRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNodeDataNull: Self = this.set("nodeData", null)
+    def setZoomRendererNull: Self = StObject.set(x, "zoomRenderer", null)
     
     @scala.inline
-    def setSelectionRenderer(value: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit): Self = this.set("selectionRenderer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectionRendererNull: Self = this.set("selectionRenderer", null)
-    
-    @scala.inline
-    def setZoomRenderer(value: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit): Self = this.set("zoomRenderer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setZoomRendererNull: Self = this.set("zoomRenderer", null)
+    def setZooming(value: auto | none): Self = StObject.set(x, "zooming", value.asInstanceOf[js.Any])
   }
 }

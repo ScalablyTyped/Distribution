@@ -1,11 +1,12 @@
 package typings.reactNativeZssRichTextEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RichTextEditorProps extends js.Object {
+trait RichTextEditorProps extends StObject {
   
   var contentInset: ContentInset = js.native
   
@@ -54,48 +55,36 @@ object RichTextEditorProps {
   }
   
   @scala.inline
-  implicit class RichTextEditorPropsOps[Self <: RichTextEditorProps] (val x: Self) extends AnyVal {
+  implicit class RichTextEditorPropsMutableBuilder[Self <: RichTextEditorProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentInset(value: ContentInset): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentPlaceholder(value: String): Self = StObject.set(x, "contentPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomCSS(value: RichTextStyles): Self = StObject.set(x, "customCSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentInset(value: ContentInset): Self = this.set("contentInset", value.asInstanceOf[js.Any])
+    def setEditorInitializedCallback(value: () => Unit): Self = StObject.set(x, "editorInitializedCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContentPlaceholder(value: String): Self = this.set("contentPlaceholder", value.asInstanceOf[js.Any])
+    def setEnableOnChange(value: Boolean): Self = StObject.set(x, "enableOnChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomCSS(value: RichTextStyles): Self = this.set("customCSS", value.asInstanceOf[js.Any])
+    def setFooterHeight(value: Double): Self = StObject.set(x, "footerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorInitializedCallback(value: () => Unit): Self = this.set("editorInitializedCallback", js.Any.fromFunction0(value))
+    def setHiddenTitle(value: Boolean): Self = StObject.set(x, "hiddenTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableOnChange(value: Boolean): Self = this.set("enableOnChange", value.asInstanceOf[js.Any])
+    def setInitialContentHTML(value: String): Self = StObject.set(x, "initialContentHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterHeight(value: Double): Self = this.set("footerHeight", value.asInstanceOf[js.Any])
+    def setInitialTitleHTML(value: String): Self = StObject.set(x, "initialTitleHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenTitle(value: Boolean): Self = this.set("hiddenTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialContentHTML(value: String): Self = this.set("initialContentHTML", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialTitleHTML(value: String): Self = this.set("initialTitleHTML", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitlePlaceholder(value: String): Self = this.set("titlePlaceholder", value.asInstanceOf[js.Any])
+    def setTitlePlaceholder(value: String): Self = StObject.set(x, "titlePlaceholder", value.asInstanceOf[js.Any])
   }
 }

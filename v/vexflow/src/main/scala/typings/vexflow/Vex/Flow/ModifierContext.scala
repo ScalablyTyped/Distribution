@@ -2,12 +2,13 @@ package typings.vexflow.Vex.Flow
 
 import typings.vexflow.anon.Extraleftpx
 import typings.vexflow.anon.Leftshift
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifierContext extends js.Object {
+trait ModifierContext extends StObject {
   
   def addModifier(modifier: Modifier): ModifierContext = js.native
   
@@ -46,45 +47,33 @@ object ModifierContext {
   }
   
   @scala.inline
-  implicit class ModifierContextOps[Self <: ModifierContext] (val x: Self) extends AnyVal {
+  implicit class ModifierContextMutableBuilder[Self <: ModifierContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddModifier(value: Modifier => ModifierContext): Self = StObject.set(x, "addModifier", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetExtraLeftPx(value: () => Double): Self = StObject.set(x, "getExtraLeftPx", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetExtraRightPx(value: () => Double): Self = StObject.set(x, "getExtraRightPx", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddModifier(value: Modifier => ModifierContext): Self = this.set("addModifier", js.Any.fromFunction1(value))
+    def setGetMetrics(value: () => Extraleftpx): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetExtraLeftPx(value: () => Double): Self = this.set("getExtraLeftPx", js.Any.fromFunction0(value))
+    def setGetModifiers(value: String => js.Array[Modifier]): Self = StObject.set(x, "getModifiers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetExtraRightPx(value: () => Double): Self = this.set("getExtraRightPx", js.Any.fromFunction0(value))
+    def setGetState(value: () => Leftshift): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMetrics(value: () => Extraleftpx): Self = this.set("getMetrics", js.Any.fromFunction0(value))
+    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetModifiers(value: String => js.Array[Modifier]): Self = this.set("getModifiers", js.Any.fromFunction1(value))
+    def setPostFormat(value: () => Unit): Self = StObject.set(x, "postFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetState(value: () => Leftshift): Self = this.set("getState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = this.set("getWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPostFormat(value: () => Unit): Self = this.set("postFormat", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPreFormat(value: () => Unit): Self = this.set("preFormat", js.Any.fromFunction0(value))
+    def setPreFormat(value: () => Unit): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
   }
 }

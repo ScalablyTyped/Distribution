@@ -2,18 +2,19 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNative.mod.Image
 import typings.reactNative.mod.ImageResolvedAssetSource
 import typings.reactNative.mod.ImageSourcePropType
+import typings.reactNative.mod._Image
 import typings.reactNative.reactNativeStrings.disk
 import typings.reactNative.reactNativeStrings.diskSlashmemory
 import typings.reactNative.reactNativeStrings.memory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofImage extends Instantiable0[Image] {
+trait TypeofImage extends Instantiable0[_Image] {
   
   var abortPrefetch: js.UndefOr[js.Function1[/* requestId */ Double, Unit]] = js.native
   

@@ -1,11 +1,12 @@
 package typings.apolloProtobufjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IParserResult extends js.Object {
+trait IParserResult extends StObject {
   
   /** Package name, if declared */
   @JSName("package")
@@ -32,51 +33,39 @@ object IParserResult {
   }
   
   @scala.inline
-  implicit class IParserResultOps[Self <: IParserResult] (val x: Self) extends AnyVal {
+  implicit class IParserResultMutableBuilder[Self <: IParserResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
-    def setRoot(value: Root): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRoot(value: Root): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_package(value: String): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
     
     @scala.inline
-    def setImportsVarargs(value: String*): Self = this.set("imports", js.Array(value :_*))
+    def setWeakImports(value: js.Array[String]): Self = StObject.set(x, "weakImports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImports(value: js.Array[String]): Self = this.set("imports", value.asInstanceOf[js.Any])
+    def setWeakImportsUndefined: Self = StObject.set(x, "weakImports", js.undefined)
     
     @scala.inline
-    def deleteImports: Self = this.set("imports", js.undefined)
+    def setWeakImportsVarargs(value: String*): Self = StObject.set(x, "weakImports", js.Array(value :_*))
     
     @scala.inline
-    def setSyntax(value: String): Self = this.set("syntax", value.asInstanceOf[js.Any])
+    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSyntax: Self = this.set("syntax", js.undefined)
-    
-    @scala.inline
-    def setWeakImportsVarargs(value: String*): Self = this.set("weakImports", js.Array(value :_*))
-    
-    @scala.inline
-    def setWeakImports(value: js.Array[String]): Self = this.set("weakImports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeakImports: Self = this.set("weakImports", js.undefined)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

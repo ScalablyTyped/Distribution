@@ -1,6 +1,7 @@
 package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.IReferenceResolverHost
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +16,11 @@ class ReferenceResolver protected ()
     useCaseSensitiveFileResolution: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.ReferenceResolver")
-@js.native
-object ReferenceResolver extends js.Object {
+object ReferenceResolver {
   
+  /* static member */
+  @JSGlobal("TypeScript.ReferenceResolver.resolve")
+  @js.native
   def resolve(
     inputFileNames: js.Array[String],
     host: IReferenceResolverHost,

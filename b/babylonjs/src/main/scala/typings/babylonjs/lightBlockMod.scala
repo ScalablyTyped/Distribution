@@ -4,14 +4,14 @@ import typings.babylonjs.lightMod.Light
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/Dual/lightBlock", JSImport.Namespace)
-@js.native
-object lightBlockMod extends js.Object {
+object lightBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Dual/lightBlock", "LightBlock")
   @js.native
   class LightBlock protected () extends NodeMaterialBlock {
     /**

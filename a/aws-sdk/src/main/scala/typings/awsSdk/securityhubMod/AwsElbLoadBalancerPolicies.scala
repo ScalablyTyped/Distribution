@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsElbLoadBalancerPolicies extends js.Object {
+trait AwsElbLoadBalancerPolicies extends StObject {
   
   /**
     * The stickiness policies that are created using CreateAppCookieStickinessPolicy.
@@ -31,45 +32,33 @@ object AwsElbLoadBalancerPolicies {
   }
   
   @scala.inline
-  implicit class AwsElbLoadBalancerPoliciesOps[Self <: AwsElbLoadBalancerPolicies] (val x: Self) extends AnyVal {
+  implicit class AwsElbLoadBalancerPoliciesMutableBuilder[Self <: AwsElbLoadBalancerPolicies] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppCookieStickinessPolicies(value: AwsElbAppCookieStickinessPolicies): Self = StObject.set(x, "AppCookieStickinessPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppCookieStickinessPoliciesUndefined: Self = StObject.set(x, "AppCookieStickinessPolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppCookieStickinessPoliciesVarargs(value: AwsElbAppCookieStickinessPolicy*): Self = StObject.set(x, "AppCookieStickinessPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setAppCookieStickinessPoliciesVarargs(value: AwsElbAppCookieStickinessPolicy*): Self = this.set("AppCookieStickinessPolicies", js.Array(value :_*))
+    def setLbCookieStickinessPolicies(value: AwsElbLbCookieStickinessPolicies): Self = StObject.set(x, "LbCookieStickinessPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppCookieStickinessPolicies(value: AwsElbAppCookieStickinessPolicies): Self = this.set("AppCookieStickinessPolicies", value.asInstanceOf[js.Any])
+    def setLbCookieStickinessPoliciesUndefined: Self = StObject.set(x, "LbCookieStickinessPolicies", js.undefined)
     
     @scala.inline
-    def deleteAppCookieStickinessPolicies: Self = this.set("AppCookieStickinessPolicies", js.undefined)
+    def setLbCookieStickinessPoliciesVarargs(value: AwsElbLbCookieStickinessPolicy*): Self = StObject.set(x, "LbCookieStickinessPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setLbCookieStickinessPoliciesVarargs(value: AwsElbLbCookieStickinessPolicy*): Self = this.set("LbCookieStickinessPolicies", js.Array(value :_*))
+    def setOtherPolicies(value: StringList): Self = StObject.set(x, "OtherPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLbCookieStickinessPolicies(value: AwsElbLbCookieStickinessPolicies): Self = this.set("LbCookieStickinessPolicies", value.asInstanceOf[js.Any])
+    def setOtherPoliciesUndefined: Self = StObject.set(x, "OtherPolicies", js.undefined)
     
     @scala.inline
-    def deleteLbCookieStickinessPolicies: Self = this.set("LbCookieStickinessPolicies", js.undefined)
-    
-    @scala.inline
-    def setOtherPoliciesVarargs(value: NonEmptyString*): Self = this.set("OtherPolicies", js.Array(value :_*))
-    
-    @scala.inline
-    def setOtherPolicies(value: StringList): Self = this.set("OtherPolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOtherPolicies: Self = this.set("OtherPolicies", js.undefined)
+    def setOtherPoliciesVarargs(value: NonEmptyString*): Self = StObject.set(x, "OtherPolicies", js.Array(value :_*))
   }
 }

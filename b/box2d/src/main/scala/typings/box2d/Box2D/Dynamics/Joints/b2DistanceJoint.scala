@@ -2,6 +2,7 @@ package typings.box2d.Box2D.Dynamics.Joints
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,36 +73,24 @@ object b2DistanceJoint {
   }
   
   @scala.inline
-  implicit class b2DistanceJointOps[Self <: b2DistanceJoint] (val x: Self) extends AnyVal {
+  implicit class b2DistanceJointMutableBuilder[Self <: b2DistanceJoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDampingRatio(value: () => Double): Self = StObject.set(x, "GetDampingRatio", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFrequency(value: () => Double): Self = StObject.set(x, "GetFrequency", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLength(value: () => Double): Self = StObject.set(x, "GetLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDampingRatio(value: () => Double): Self = this.set("GetDampingRatio", js.Any.fromFunction0(value))
+    def setSetDampingRatio(value: Double => Unit): Self = StObject.set(x, "SetDampingRatio", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFrequency(value: () => Double): Self = this.set("GetFrequency", js.Any.fromFunction0(value))
+    def setSetFrequency(value: Double => Unit): Self = StObject.set(x, "SetFrequency", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("GetLength", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDampingRatio(value: Double => Unit): Self = this.set("SetDampingRatio", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFrequency(value: Double => Unit): Self = this.set("SetFrequency", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLength(value: Double => Unit): Self = this.set("SetLength", js.Any.fromFunction1(value))
+    def setSetLength(value: Double => Unit): Self = StObject.set(x, "SetLength", js.Any.fromFunction1(value))
   }
 }

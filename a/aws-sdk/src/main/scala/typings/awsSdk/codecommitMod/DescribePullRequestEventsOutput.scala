@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePullRequestEventsOutput extends js.Object {
+trait DescribePullRequestEventsOutput extends StObject {
   
   /**
     * An enumeration token that can be used in a request to return the next batch of the results.
@@ -26,30 +27,18 @@ object DescribePullRequestEventsOutput {
   }
   
   @scala.inline
-  implicit class DescribePullRequestEventsOutputOps[Self <: DescribePullRequestEventsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribePullRequestEventsOutputMutableBuilder[Self <: DescribePullRequestEventsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPullRequestEvents(value: PullRequestEventList): Self = StObject.set(x, "pullRequestEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequestEventsVarargs(value: PullRequestEvent*): Self = this.set("pullRequestEvents", js.Array(value :_*))
-    
-    @scala.inline
-    def setPullRequestEvents(value: PullRequestEventList): Self = this.set("pullRequestEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setPullRequestEventsVarargs(value: PullRequestEvent*): Self = StObject.set(x, "pullRequestEvents", js.Array(value :_*))
   }
 }

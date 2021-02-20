@@ -4,14 +4,14 @@ import typings.uirouterCore.interfaceMod.Disposable
 import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
 import typings.uirouterCore.paramsMod.ParamTypes
 import typings.uirouterCore.routerMod.UIRouter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/url/urlConfig", JSImport.Namespace)
-@js.native
-object urlConfigMod extends js.Object {
+object urlConfigMod {
   
+  @JSImport("@uirouter/core/lib/url/urlConfig", "UrlConfig")
   @js.native
   class UrlConfig protected () extends Disposable {
     /** @internal */ def this(/** @internal */ router: UIRouter) = this()

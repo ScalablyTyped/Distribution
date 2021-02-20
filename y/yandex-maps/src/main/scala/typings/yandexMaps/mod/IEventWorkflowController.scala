@@ -1,5 +1,6 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,34 +35,22 @@ object IEventWorkflowController {
   }
   
   @scala.inline
-  implicit class IEventWorkflowControllerOps[Self <: IEventWorkflowController] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class IEventWorkflowControllerMutableBuilder[Self <: IEventWorkflowController] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setOnAfterEventFiring(
       value: (/* events */ IEventManager[js.Object], /* type */ String, /* event */ js.UndefOr[IEvent[js.Object, js.Object]]) => Unit
-    ): Self = this.set("onAfterEventFiring", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onAfterEventFiring", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnAfterEventFiring: Self = this.set("onAfterEventFiring", js.undefined)
+    def setOnAfterEventFiringUndefined: Self = StObject.set(x, "onAfterEventFiring", js.undefined)
     
     @scala.inline
     def setOnBeforeEventFiring(
       value: (/* events */ IEventManager[js.Object], /* type */ String, /* event */ js.UndefOr[IEvent[js.Object, js.Object]]) => Unit
-    ): Self = this.set("onBeforeEventFiring", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onBeforeEventFiring", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnBeforeEventFiring: Self = this.set("onBeforeEventFiring", js.undefined)
+    def setOnBeforeEventFiringUndefined: Self = StObject.set(x, "onBeforeEventFiring", js.undefined)
   }
 }

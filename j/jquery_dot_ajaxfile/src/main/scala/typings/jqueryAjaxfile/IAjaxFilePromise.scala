@@ -1,11 +1,12 @@
 package typings.jqueryAjaxfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAjaxFilePromise[T] extends js.Object {
+trait IAjaxFilePromise[T] extends StObject {
   
   def abord(): Unit = js.native
   

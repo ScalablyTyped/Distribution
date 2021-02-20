@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-gax
 
-Typings are for version 1.14.2
+Typings are for version 2.9.2
 
 ## Library description:
 Google API Extensions
@@ -10,9 +10,9 @@ Google API Extensions
 | ------------------ | :-------------: |
 | Full name          | google-gax |
 | Keywords           | grpc |
-| # releases         | 59 |
-| # dependents       | 52 |
-| # downloads        | 38986136 |
+| # releases         | 190 |
+| # dependents       | 99 |
+| # downloads        | 88482562 |
 | # stars            | 0 |
 
 ## Links

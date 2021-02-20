@@ -1,5 +1,6 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * product purchase.
   */
 @js.native
-trait SchemaProductPurchase extends js.Object {
+trait SchemaProductPurchase extends StObject {
   
   /**
     * The consumption state of the inapp product. Possible values are:   - Yet
@@ -64,60 +65,48 @@ object SchemaProductPurchase {
   }
   
   @scala.inline
-  implicit class SchemaProductPurchaseOps[Self <: SchemaProductPurchase] (val x: Self) extends AnyVal {
+  implicit class SchemaProductPurchaseMutableBuilder[Self <: SchemaProductPurchase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumptionState(value: Double): Self = StObject.set(x, "consumptionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumptionStateUndefined: Self = StObject.set(x, "consumptionState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumptionState(value: Double): Self = this.set("consumptionState", value.asInstanceOf[js.Any])
+    def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
     
     @scala.inline
-    def deleteConsumptionState: Self = this.set("consumptionState", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperPayload(value: String): Self = this.set("developerPayload", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDeveloperPayload: Self = this.set("developerPayload", js.undefined)
+    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPurchaseState(value: Double): Self = StObject.set(x, "purchaseState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    def setPurchaseStateUndefined: Self = StObject.set(x, "purchaseState", js.undefined)
     
     @scala.inline
-    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    def setPurchaseTimeMillis(value: String): Self = StObject.set(x, "purchaseTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseState(value: Double): Self = this.set("purchaseState", value.asInstanceOf[js.Any])
+    def setPurchaseTimeMillisUndefined: Self = StObject.set(x, "purchaseTimeMillis", js.undefined)
     
     @scala.inline
-    def deletePurchaseState: Self = this.set("purchaseState", js.undefined)
+    def setPurchaseType(value: Double): Self = StObject.set(x, "purchaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseTimeMillis(value: String): Self = this.set("purchaseTimeMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurchaseTimeMillis: Self = this.set("purchaseTimeMillis", js.undefined)
-    
-    @scala.inline
-    def setPurchaseType(value: Double): Self = this.set("purchaseType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurchaseType: Self = this.set("purchaseType", js.undefined)
+    def setPurchaseTypeUndefined: Self = StObject.set(x, "purchaseType", js.undefined)
   }
 }

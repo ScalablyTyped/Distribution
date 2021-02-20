@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,132 +55,120 @@ object FormatCodeSettings {
   }
   
   @scala.inline
-  implicit class FormatCodeSettingsOps[Self <: FormatCodeSettings] (val x: Self) extends AnyVal {
+  implicit class FormatCodeSettingsMutableBuilder[Self <: FormatCodeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndentMultiLineObjectLiteralBeginningOnBlankLine(value: Boolean): Self = StObject.set(x, "indentMultiLineObjectLiteralBeginningOnBlankLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndentMultiLineObjectLiteralBeginningOnBlankLineUndefined: Self = StObject.set(x, "indentMultiLineObjectLiteralBeginningOnBlankLine", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertSpaceAfterCommaDelimiter(value: Boolean): Self = StObject.set(x, "insertSpaceAfterCommaDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentMultiLineObjectLiteralBeginningOnBlankLine(value: Boolean): Self = this.set("indentMultiLineObjectLiteralBeginningOnBlankLine", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterCommaDelimiterUndefined: Self = StObject.set(x, "insertSpaceAfterCommaDelimiter", js.undefined)
     
     @scala.inline
-    def deleteIndentMultiLineObjectLiteralBeginningOnBlankLine: Self = this.set("indentMultiLineObjectLiteralBeginningOnBlankLine", js.undefined)
+    def setInsertSpaceAfterConstructor(value: Boolean): Self = StObject.set(x, "insertSpaceAfterConstructor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterCommaDelimiter(value: Boolean): Self = this.set("insertSpaceAfterCommaDelimiter", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterConstructorUndefined: Self = StObject.set(x, "insertSpaceAfterConstructor", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterCommaDelimiter: Self = this.set("insertSpaceAfterCommaDelimiter", js.undefined)
+    def setInsertSpaceAfterFunctionKeywordForAnonymousFunctions(value: Boolean): Self = StObject.set(x, "insertSpaceAfterFunctionKeywordForAnonymousFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterConstructor(value: Boolean): Self = this.set("insertSpaceAfterConstructor", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterFunctionKeywordForAnonymousFunctionsUndefined: Self = StObject.set(x, "insertSpaceAfterFunctionKeywordForAnonymousFunctions", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterConstructor: Self = this.set("insertSpaceAfterConstructor", js.undefined)
+    def setInsertSpaceAfterKeywordsInControlFlowStatements(value: Boolean): Self = StObject.set(x, "insertSpaceAfterKeywordsInControlFlowStatements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterFunctionKeywordForAnonymousFunctions(value: Boolean): Self = this.set("insertSpaceAfterFunctionKeywordForAnonymousFunctions", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterKeywordsInControlFlowStatementsUndefined: Self = StObject.set(x, "insertSpaceAfterKeywordsInControlFlowStatements", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterFunctionKeywordForAnonymousFunctions: Self = this.set("insertSpaceAfterFunctionKeywordForAnonymousFunctions", js.undefined)
+    def setInsertSpaceAfterOpeningAndBeforeClosingEmptyBraces(value: Boolean): Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingEmptyBraces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterKeywordsInControlFlowStatements(value: Boolean): Self = this.set("insertSpaceAfterKeywordsInControlFlowStatements", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterOpeningAndBeforeClosingEmptyBracesUndefined: Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingEmptyBraces", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterKeywordsInControlFlowStatements: Self = this.set("insertSpaceAfterKeywordsInControlFlowStatements", js.undefined)
+    def setInsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces(value: Boolean): Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterOpeningAndBeforeClosingEmptyBraces(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingEmptyBraces", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBracesUndefined: Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterOpeningAndBeforeClosingEmptyBraces: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingEmptyBraces", js.undefined)
+    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyBraces(value: Boolean): Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyBracesUndefined: Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces", js.undefined)
+    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets(value: Boolean): Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyBraces(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyBracketsUndefined: Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces", js.undefined)
+    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis(value: Boolean): Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesisUndefined: Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets", js.undefined)
+    def setInsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces(value: Boolean): Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterOpeningAndBeforeClosingTemplateStringBracesUndefined: Self = StObject.set(x, "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis", js.undefined)
+    def setInsertSpaceAfterSemicolonInForStatements(value: Boolean): Self = StObject.set(x, "insertSpaceAfterSemicolonInForStatements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterSemicolonInForStatementsUndefined: Self = StObject.set(x, "insertSpaceAfterSemicolonInForStatements", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces", js.undefined)
+    def setInsertSpaceAfterTypeAssertion(value: Boolean): Self = StObject.set(x, "insertSpaceAfterTypeAssertion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterSemicolonInForStatements(value: Boolean): Self = this.set("insertSpaceAfterSemicolonInForStatements", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterTypeAssertionUndefined: Self = StObject.set(x, "insertSpaceAfterTypeAssertion", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterSemicolonInForStatements: Self = this.set("insertSpaceAfterSemicolonInForStatements", js.undefined)
+    def setInsertSpaceBeforeAndAfterBinaryOperators(value: Boolean): Self = StObject.set(x, "insertSpaceBeforeAndAfterBinaryOperators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterTypeAssertion(value: Boolean): Self = this.set("insertSpaceAfterTypeAssertion", value.asInstanceOf[js.Any])
+    def setInsertSpaceBeforeAndAfterBinaryOperatorsUndefined: Self = StObject.set(x, "insertSpaceBeforeAndAfterBinaryOperators", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceAfterTypeAssertion: Self = this.set("insertSpaceAfterTypeAssertion", js.undefined)
+    def setInsertSpaceBeforeFunctionParenthesis(value: Boolean): Self = StObject.set(x, "insertSpaceBeforeFunctionParenthesis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceBeforeAndAfterBinaryOperators(value: Boolean): Self = this.set("insertSpaceBeforeAndAfterBinaryOperators", value.asInstanceOf[js.Any])
+    def setInsertSpaceBeforeFunctionParenthesisUndefined: Self = StObject.set(x, "insertSpaceBeforeFunctionParenthesis", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceBeforeAndAfterBinaryOperators: Self = this.set("insertSpaceBeforeAndAfterBinaryOperators", js.undefined)
+    def setInsertSpaceBeforeTypeAnnotation(value: Boolean): Self = StObject.set(x, "insertSpaceBeforeTypeAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceBeforeFunctionParenthesis(value: Boolean): Self = this.set("insertSpaceBeforeFunctionParenthesis", value.asInstanceOf[js.Any])
+    def setInsertSpaceBeforeTypeAnnotationUndefined: Self = StObject.set(x, "insertSpaceBeforeTypeAnnotation", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceBeforeFunctionParenthesis: Self = this.set("insertSpaceBeforeFunctionParenthesis", js.undefined)
+    def setPlaceOpenBraceOnNewLineForControlBlocks(value: Boolean): Self = StObject.set(x, "placeOpenBraceOnNewLineForControlBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceBeforeTypeAnnotation(value: Boolean): Self = this.set("insertSpaceBeforeTypeAnnotation", value.asInstanceOf[js.Any])
+    def setPlaceOpenBraceOnNewLineForControlBlocksUndefined: Self = StObject.set(x, "placeOpenBraceOnNewLineForControlBlocks", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaceBeforeTypeAnnotation: Self = this.set("insertSpaceBeforeTypeAnnotation", js.undefined)
+    def setPlaceOpenBraceOnNewLineForFunctions(value: Boolean): Self = StObject.set(x, "placeOpenBraceOnNewLineForFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceOpenBraceOnNewLineForControlBlocks(value: Boolean): Self = this.set("placeOpenBraceOnNewLineForControlBlocks", value.asInstanceOf[js.Any])
+    def setPlaceOpenBraceOnNewLineForFunctionsUndefined: Self = StObject.set(x, "placeOpenBraceOnNewLineForFunctions", js.undefined)
     
     @scala.inline
-    def deletePlaceOpenBraceOnNewLineForControlBlocks: Self = this.set("placeOpenBraceOnNewLineForControlBlocks", js.undefined)
+    def setSemicolons(value: SemicolonPreference): Self = StObject.set(x, "semicolons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceOpenBraceOnNewLineForFunctions(value: Boolean): Self = this.set("placeOpenBraceOnNewLineForFunctions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceOpenBraceOnNewLineForFunctions: Self = this.set("placeOpenBraceOnNewLineForFunctions", js.undefined)
-    
-    @scala.inline
-    def setSemicolons(value: SemicolonPreference): Self = this.set("semicolons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSemicolons: Self = this.set("semicolons", js.undefined)
+    def setSemicolonsUndefined: Self = StObject.set(x, "semicolons", js.undefined)
   }
 }

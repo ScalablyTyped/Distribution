@@ -1,7 +1,7 @@
 package typings.pixiJs.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.pixiJs.anon.FontName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,10 +37,19 @@ class BitmapText protected ()
   extends typings.pixiJs.PIXI.BitmapText {
   def this(text: String, style: FontName) = this()
 }
-/* static members */
-@JSImport("pixi.js", "BitmapText")
-@js.native
-object BitmapText extends js.Object {
+object BitmapText {
+  
+  /**
+    * Register a bitmap font with data and a texture.
+    *
+    * @deprecated since 5.3.0
+    * @see PIXI.BitmapFont.install
+    * @static
+    */
+  /* static member */
+  @JSImport("pixi.js", "BitmapText.registerFont")
+  @js.native
+  def registerFont(): Unit = js.native
   
   /**
     * Get the list of installed fonts.
@@ -51,14 +60,6 @@ object BitmapText extends js.Object {
     * @readonly
     * @member {Object.<string, PIXI.BitmapFont>}
     */
-  val fonts: StringDictionary[typings.pixiJs.PIXI.BitmapFont] = js.native
-  
-  /**
-    * Register a bitmap font with data and a texture.
-    *
-    * @deprecated since 5.3.0
-    * @see PIXI.BitmapFont.install
-    * @static
-    */
-  def registerFont(): Unit = js.native
+  /* static member */
+  object fonts
 }

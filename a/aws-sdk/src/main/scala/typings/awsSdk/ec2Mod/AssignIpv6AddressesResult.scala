@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssignIpv6AddressesResult extends js.Object {
+trait AssignIpv6AddressesResult extends StObject {
   
   /**
     * The IPv6 addresses assigned to the network interface.
@@ -26,33 +27,21 @@ object AssignIpv6AddressesResult {
   }
   
   @scala.inline
-  implicit class AssignIpv6AddressesResultOps[Self <: AssignIpv6AddressesResult] (val x: Self) extends AnyVal {
+  implicit class AssignIpv6AddressesResultMutableBuilder[Self <: AssignIpv6AddressesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignedIpv6Addresses(value: Ipv6AddressList): Self = StObject.set(x, "AssignedIpv6Addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignedIpv6AddressesUndefined: Self = StObject.set(x, "AssignedIpv6Addresses", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignedIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "AssignedIpv6Addresses", js.Array(value :_*))
     
     @scala.inline
-    def setAssignedIpv6AddressesVarargs(value: String*): Self = this.set("AssignedIpv6Addresses", js.Array(value :_*))
+    def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignedIpv6Addresses(value: Ipv6AddressList): Self = this.set("AssignedIpv6Addresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssignedIpv6Addresses: Self = this.set("AssignedIpv6Addresses", js.undefined)
-    
-    @scala.inline
-    def setNetworkInterfaceId(value: String): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkInterfaceId: Self = this.set("NetworkInterfaceId", js.undefined)
+    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.awsSdk.allMod
 
 import typings.awsSdk.mediapackageMod.ClientConfiguration
 import typings.awsSdk.mediapackageMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

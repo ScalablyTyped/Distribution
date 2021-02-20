@@ -1,11 +1,12 @@
 package typings.lokijs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveNonSerializable extends js.Object {
+trait RemoveNonSerializable extends StObject {
   
   var removeNonSerializable: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object RemoveNonSerializable {
   }
   
   @scala.inline
-  implicit class RemoveNonSerializableOps[Self <: RemoveNonSerializable] (val x: Self) extends AnyVal {
+  implicit class RemoveNonSerializableMutableBuilder[Self <: RemoveNonSerializable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemoveNonSerializable(value: Boolean): Self = StObject.set(x, "removeNonSerializable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRemoveNonSerializable(value: Boolean): Self = this.set("removeNonSerializable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveNonSerializable: Self = this.set("removeNonSerializable", js.undefined)
+    def setRemoveNonSerializableUndefined: Self = StObject.set(x, "removeNonSerializable", js.undefined)
   }
 }

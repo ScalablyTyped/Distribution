@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGPathElement extends js.Object {
+trait SVGPathElement extends StObject {
   
   @JSName("MSHTML.SVGPathElement_typekey")
   var MSHTMLDotSVGPathElement_typekey: SVGPathElement = js.native
@@ -164,147 +165,135 @@ object SVGPathElement {
   }
   
   @scala.inline
-  implicit class SVGPathElementOps[Self <: SVGPathElement] (val x: Self) extends AnyVal {
+  implicit class SVGPathElementMutableBuilder[Self <: SVGPathElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimatedNormalizedPathSegList(value: SVGPathSegList): Self = StObject.set(x, "animatedNormalizedPathSegList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedPathSegList(value: SVGPathSegList): Self = StObject.set(x, "animatedPathSegList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateSVGPathSegArcAbs(value: (Double, Double, Double, Double, Double, Boolean, Boolean) => ISVGPathSegArcAbs): Self = StObject.set(x, "createSVGPathSegArcAbs", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setMSHTMLDotSVGPathElement_typekey(value: SVGPathElement): Self = this.set("MSHTML.SVGPathElement_typekey", value.asInstanceOf[js.Any])
+    def setCreateSVGPathSegArcRel(value: (Double, Double, Double, Double, Double, Boolean, Boolean) => ISVGPathSegArcRel): Self = StObject.set(x, "createSVGPathSegArcRel", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setAnimatedNormalizedPathSegList(value: SVGPathSegList): Self = this.set("animatedNormalizedPathSegList", value.asInstanceOf[js.Any])
+    def setCreateSVGPathSegClosePath(value: () => ISVGPathSegClosePath): Self = StObject.set(x, "createSVGPathSegClosePath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAnimatedPathSegList(value: SVGPathSegList): Self = this.set("animatedPathSegList", value.asInstanceOf[js.Any])
+    def setCreateSVGPathSegCurvetoCubicAbs(value: (Double, Double, Double, Double, Double, Double) => ISVGPathSegCurvetoCubicAbs): Self = StObject.set(x, "createSVGPathSegCurvetoCubicAbs", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setCreateSVGPathSegArcAbs(value: (Double, Double, Double, Double, Double, Boolean, Boolean) => ISVGPathSegArcAbs): Self = this.set("createSVGPathSegArcAbs", js.Any.fromFunction7(value))
+    def setCreateSVGPathSegCurvetoCubicRel(value: (Double, Double, Double, Double, Double, Double) => ISVGPathSegCurvetoCubicRel): Self = StObject.set(x, "createSVGPathSegCurvetoCubicRel", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setCreateSVGPathSegArcRel(value: (Double, Double, Double, Double, Double, Boolean, Boolean) => ISVGPathSegArcRel): Self = this.set("createSVGPathSegArcRel", js.Any.fromFunction7(value))
+    def setCreateSVGPathSegCurvetoCubicSmoothAbs(value: (Double, Double, Double, Double) => ISVGPathSegCurvetoCubicSmoothAbs): Self = StObject.set(x, "createSVGPathSegCurvetoCubicSmoothAbs", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setCreateSVGPathSegClosePath(value: () => ISVGPathSegClosePath): Self = this.set("createSVGPathSegClosePath", js.Any.fromFunction0(value))
+    def setCreateSVGPathSegCurvetoCubicSmoothRel(value: (Double, Double, Double, Double) => ISVGPathSegCurvetoCubicSmoothRel): Self = StObject.set(x, "createSVGPathSegCurvetoCubicSmoothRel", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setCreateSVGPathSegCurvetoCubicAbs(value: (Double, Double, Double, Double, Double, Double) => ISVGPathSegCurvetoCubicAbs): Self = this.set("createSVGPathSegCurvetoCubicAbs", js.Any.fromFunction6(value))
+    def setCreateSVGPathSegCurvetoQuadraticAbs(value: (Double, Double, Double, Double) => ISVGPathSegCurvetoQuadraticAbs): Self = StObject.set(x, "createSVGPathSegCurvetoQuadraticAbs", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setCreateSVGPathSegCurvetoCubicRel(value: (Double, Double, Double, Double, Double, Double) => ISVGPathSegCurvetoCubicRel): Self = this.set("createSVGPathSegCurvetoCubicRel", js.Any.fromFunction6(value))
+    def setCreateSVGPathSegCurvetoQuadraticRel(value: (Double, Double, Double, Double) => ISVGPathSegCurvetoQuadraticRel): Self = StObject.set(x, "createSVGPathSegCurvetoQuadraticRel", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setCreateSVGPathSegCurvetoCubicSmoothAbs(value: (Double, Double, Double, Double) => ISVGPathSegCurvetoCubicSmoothAbs): Self = this.set("createSVGPathSegCurvetoCubicSmoothAbs", js.Any.fromFunction4(value))
+    def setCreateSVGPathSegCurvetoQuadraticSmoothAbs(value: (Double, Double) => ISVGPathSegCurvetoQuadraticSmoothAbs): Self = StObject.set(x, "createSVGPathSegCurvetoQuadraticSmoothAbs", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateSVGPathSegCurvetoCubicSmoothRel(value: (Double, Double, Double, Double) => ISVGPathSegCurvetoCubicSmoothRel): Self = this.set("createSVGPathSegCurvetoCubicSmoothRel", js.Any.fromFunction4(value))
+    def setCreateSVGPathSegCurvetoQuadraticSmoothRel(value: (Double, Double) => ISVGPathSegCurvetoQuadraticSmoothRel): Self = StObject.set(x, "createSVGPathSegCurvetoQuadraticSmoothRel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateSVGPathSegCurvetoQuadraticAbs(value: (Double, Double, Double, Double) => ISVGPathSegCurvetoQuadraticAbs): Self = this.set("createSVGPathSegCurvetoQuadraticAbs", js.Any.fromFunction4(value))
+    def setCreateSVGPathSegLinetoAbs(value: (Double, Double) => ISVGPathSegLinetoAbs): Self = StObject.set(x, "createSVGPathSegLinetoAbs", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateSVGPathSegCurvetoQuadraticRel(value: (Double, Double, Double, Double) => ISVGPathSegCurvetoQuadraticRel): Self = this.set("createSVGPathSegCurvetoQuadraticRel", js.Any.fromFunction4(value))
+    def setCreateSVGPathSegLinetoHorizontalAbs(value: Double => ISVGPathSegLinetoHorizontalAbs): Self = StObject.set(x, "createSVGPathSegLinetoHorizontalAbs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateSVGPathSegCurvetoQuadraticSmoothAbs(value: (Double, Double) => ISVGPathSegCurvetoQuadraticSmoothAbs): Self = this.set("createSVGPathSegCurvetoQuadraticSmoothAbs", js.Any.fromFunction2(value))
+    def setCreateSVGPathSegLinetoHorizontalRel(value: Double => ISVGPathSegLinetoHorizontalRel): Self = StObject.set(x, "createSVGPathSegLinetoHorizontalRel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateSVGPathSegCurvetoQuadraticSmoothRel(value: (Double, Double) => ISVGPathSegCurvetoQuadraticSmoothRel): Self = this.set("createSVGPathSegCurvetoQuadraticSmoothRel", js.Any.fromFunction2(value))
+    def setCreateSVGPathSegLinetoRel(value: (Double, Double) => ISVGPathSegLinetoRel): Self = StObject.set(x, "createSVGPathSegLinetoRel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateSVGPathSegLinetoAbs(value: (Double, Double) => ISVGPathSegLinetoAbs): Self = this.set("createSVGPathSegLinetoAbs", js.Any.fromFunction2(value))
+    def setCreateSVGPathSegLinetoVerticalAbs(value: Double => ISVGPathSegLinetoVerticalAbs): Self = StObject.set(x, "createSVGPathSegLinetoVerticalAbs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateSVGPathSegLinetoHorizontalAbs(value: Double => ISVGPathSegLinetoHorizontalAbs): Self = this.set("createSVGPathSegLinetoHorizontalAbs", js.Any.fromFunction1(value))
+    def setCreateSVGPathSegLinetoVerticalRel(value: Double => ISVGPathSegLinetoVerticalRel): Self = StObject.set(x, "createSVGPathSegLinetoVerticalRel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateSVGPathSegLinetoHorizontalRel(value: Double => ISVGPathSegLinetoHorizontalRel): Self = this.set("createSVGPathSegLinetoHorizontalRel", js.Any.fromFunction1(value))
+    def setCreateSVGPathSegMovetoAbs(value: (Double, Double) => ISVGPathSegMovetoAbs): Self = StObject.set(x, "createSVGPathSegMovetoAbs", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateSVGPathSegLinetoRel(value: (Double, Double) => ISVGPathSegLinetoRel): Self = this.set("createSVGPathSegLinetoRel", js.Any.fromFunction2(value))
+    def setCreateSVGPathSegMovetoRel(value: (Double, Double) => ISVGPathSegMovetoRel): Self = StObject.set(x, "createSVGPathSegMovetoRel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateSVGPathSegLinetoVerticalAbs(value: Double => ISVGPathSegLinetoVerticalAbs): Self = this.set("createSVGPathSegLinetoVerticalAbs", js.Any.fromFunction1(value))
+    def setFarthestViewportElement(value: ISVGElement): Self = StObject.set(x, "farthestViewportElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSVGPathSegLinetoVerticalRel(value: Double => ISVGPathSegLinetoVerticalRel): Self = this.set("createSVGPathSegLinetoVerticalRel", js.Any.fromFunction1(value))
+    def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSVGPathSegMovetoAbs(value: (Double, Double) => ISVGPathSegMovetoAbs): Self = this.set("createSVGPathSegMovetoAbs", js.Any.fromFunction2(value))
+    def setGetBBox(value: () => SVGRect): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateSVGPathSegMovetoRel(value: (Double, Double) => ISVGPathSegMovetoRel): Self = this.set("createSVGPathSegMovetoRel", js.Any.fromFunction2(value))
+    def setGetCTM(value: () => SVGMatrix): Self = StObject.set(x, "getCTM", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFarthestViewportElement(value: ISVGElement): Self = this.set("farthestViewportElement", value.asInstanceOf[js.Any])
+    def setGetPathSegAtLength(value: Double => Double): Self = StObject.set(x, "getPathSegAtLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFocusable(value: SVGAnimatedEnumeration): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    def setGetPointAtLength(value: Double => SVGPoint): Self = StObject.set(x, "getPointAtLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBBox(value: () => SVGRect): Self = this.set("getBBox", js.Any.fromFunction0(value))
+    def setGetScreenCTM(value: () => SVGMatrix): Self = StObject.set(x, "getScreenCTM", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCTM(value: () => SVGMatrix): Self = this.set("getCTM", js.Any.fromFunction0(value))
+    def setGetTotalLength(value: () => Double): Self = StObject.set(x, "getTotalLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPathSegAtLength(value: Double => Double): Self = this.set("getPathSegAtLength", js.Any.fromFunction1(value))
+    def setGetTransformToElement(value: ISVGElement => SVGMatrix): Self = StObject.set(x, "getTransformToElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPointAtLength(value: Double => SVGPoint): Self = this.set("getPointAtLength", js.Any.fromFunction1(value))
+    def setHasExtension(value: String => Boolean): Self = StObject.set(x, "hasExtension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetScreenCTM(value: () => SVGMatrix): Self = this.set("getScreenCTM", js.Any.fromFunction0(value))
+    def setMSHTMLDotSVGPathElement_typekey(value: SVGPathElement): Self = StObject.set(x, "MSHTML.SVGPathElement_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTotalLength(value: () => Double): Self = this.set("getTotalLength", js.Any.fromFunction0(value))
+    def setNearestViewportElement(value: ISVGElement): Self = StObject.set(x, "nearestViewportElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTransformToElement(value: ISVGElement => SVGMatrix): Self = this.set("getTransformToElement", js.Any.fromFunction1(value))
+    def setNormalizedPathSegList(value: SVGPathSegList): Self = StObject.set(x, "normalizedPathSegList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasExtension(value: String => Boolean): Self = this.set("hasExtension", js.Any.fromFunction1(value))
+    def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNearestViewportElement(value: ISVGElement): Self = this.set("nearestViewportElement", value.asInstanceOf[js.Any])
+    def setPathLength(value: SVGAnimatedNumber): Self = StObject.set(x, "pathLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizedPathSegList(value: SVGPathSegList): Self = this.set("normalizedPathSegList", value.asInstanceOf[js.Any])
+    def setPathSegList(value: SVGPathSegList): Self = StObject.set(x, "pathSegList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerSVGElement(value: ISVGSVGElement): Self = this.set("ownerSVGElement", value.asInstanceOf[js.Any])
+    def setRequiredExtensions(value: SVGStringList): Self = StObject.set(x, "requiredExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathLength(value: SVGAnimatedNumber): Self = this.set("pathLength", value.asInstanceOf[js.Any])
+    def setRequiredFeatures(value: SVGStringList): Self = StObject.set(x, "requiredFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathSegList(value: SVGPathSegList): Self = this.set("pathSegList", value.asInstanceOf[js.Any])
+    def setSystemLanguage(value: SVGStringList): Self = StObject.set(x, "systemLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredExtensions(value: SVGStringList): Self = this.set("requiredExtensions", value.asInstanceOf[js.Any])
+    def setTransform(value: SVGAnimatedTransformList): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredFeatures(value: SVGStringList): Self = this.set("requiredFeatures", value.asInstanceOf[js.Any])
+    def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemLanguage(value: SVGStringList): Self = this.set("systemLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransform(value: SVGAnimatedTransformList): Self = this.set("transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewportElement(value: ISVGElement): Self = this.set("viewportElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXmlbase(value: String): Self = this.set("xmlbase", value.asInstanceOf[js.Any])
+    def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
   }
 }

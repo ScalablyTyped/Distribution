@@ -1,14 +1,14 @@
 package typings.imageQ
 
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/distance/pngQuant", JSImport.Namespace)
-@js.native
-object pngQuantMod extends js.Object {
+object pngQuantMod {
   
+  @JSImport("image-q/dist/distance/pngQuant", "PNGQUANT")
   @js.native
   class PNGQUANT () extends AbstractDistanceCalculator {
     

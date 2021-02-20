@@ -1,11 +1,12 @@
 package typings.tryghostContentApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeInjection extends js.Object {
+trait CodeInjection extends StObject {
   
   var codeinjection_foot: js.UndefOr[Nullable[String]] = js.native
   
@@ -20,36 +21,24 @@ object CodeInjection {
   }
   
   @scala.inline
-  implicit class CodeInjectionOps[Self <: CodeInjection] (val x: Self) extends AnyVal {
+  implicit class CodeInjectionMutableBuilder[Self <: CodeInjection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeinjection_foot(value: Nullable[String]): Self = StObject.set(x, "codeinjection_foot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeinjection_footNull: Self = StObject.set(x, "codeinjection_foot", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeinjection_footUndefined: Self = StObject.set(x, "codeinjection_foot", js.undefined)
     
     @scala.inline
-    def setCodeinjection_foot(value: Nullable[String]): Self = this.set("codeinjection_foot", value.asInstanceOf[js.Any])
+    def setCodeinjection_head(value: Nullable[String]): Self = StObject.set(x, "codeinjection_head", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodeinjection_foot: Self = this.set("codeinjection_foot", js.undefined)
+    def setCodeinjection_headNull: Self = StObject.set(x, "codeinjection_head", null)
     
     @scala.inline
-    def setCodeinjection_footNull: Self = this.set("codeinjection_foot", null)
-    
-    @scala.inline
-    def setCodeinjection_head(value: Nullable[String]): Self = this.set("codeinjection_head", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeinjection_head: Self = this.set("codeinjection_head", js.undefined)
-    
-    @scala.inline
-    def setCodeinjection_headNull: Self = this.set("codeinjection_head", null)
+    def setCodeinjection_headUndefined: Self = StObject.set(x, "codeinjection_head", js.undefined)
   }
 }

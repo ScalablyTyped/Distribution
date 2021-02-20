@@ -2,6 +2,7 @@ package typings.reactNativeMaterialKit.mod
 
 import typings.reactNative.mod.TouchableWithoutFeedbackProps
 import typings.reactNativeMaterialKit.anon.Checked
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,90 +43,78 @@ object MKSwitchProperties {
   }
   
   @scala.inline
-  implicit class MKSwitchPropertiesOps[Self <: MKSwitchProperties] (val x: Self) extends AnyVal {
+  implicit class MKSwitchPropertiesMutableBuilder[Self <: MKSwitchProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffColor(value: String): Self = StObject.set(x, "offColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setOffColorUndefined: Self = StObject.set(x, "offColor", js.undefined)
     
     @scala.inline
-    def deleteChecked: Self = this.set("checked", js.undefined)
+    def setOnCheckedChange(value: /* opts */ Checked => Unit): Self = StObject.set(x, "onCheckedChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffColor(value: String): Self = this.set("offColor", value.asInstanceOf[js.Any])
+    def setOnCheckedChangeUndefined: Self = StObject.set(x, "onCheckedChange", js.undefined)
     
     @scala.inline
-    def deleteOffColor: Self = this.set("offColor", js.undefined)
+    def setOnColor(value: String): Self = StObject.set(x, "onColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCheckedChange(value: /* opts */ Checked => Unit): Self = this.set("onCheckedChange", js.Any.fromFunction1(value))
+    def setOnColorUndefined: Self = StObject.set(x, "onColor", js.undefined)
     
     @scala.inline
-    def deleteOnCheckedChange: Self = this.set("onCheckedChange", js.undefined)
+    def setRippleAniDuration(value: Double): Self = StObject.set(x, "rippleAniDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnColor(value: String): Self = this.set("onColor", value.asInstanceOf[js.Any])
+    def setRippleAniDurationUndefined: Self = StObject.set(x, "rippleAniDuration", js.undefined)
     
     @scala.inline
-    def deleteOnColor: Self = this.set("onColor", js.undefined)
+    def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRippleAniDuration(value: Double): Self = this.set("rippleAniDuration", value.asInstanceOf[js.Any])
+    def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
     
     @scala.inline
-    def deleteRippleAniDuration: Self = this.set("rippleAniDuration", js.undefined)
+    def setThumbAniDuration(value: Double): Self = StObject.set(x, "thumbAniDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRippleColor(value: String): Self = this.set("rippleColor", value.asInstanceOf[js.Any])
+    def setThumbAniDurationUndefined: Self = StObject.set(x, "thumbAniDuration", js.undefined)
     
     @scala.inline
-    def deleteRippleColor: Self = this.set("rippleColor", js.undefined)
+    def setThumbOffColor(value: String): Self = StObject.set(x, "thumbOffColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbAniDuration(value: Double): Self = this.set("thumbAniDuration", value.asInstanceOf[js.Any])
+    def setThumbOffColorUndefined: Self = StObject.set(x, "thumbOffColor", js.undefined)
     
     @scala.inline
-    def deleteThumbAniDuration: Self = this.set("thumbAniDuration", js.undefined)
+    def setThumbOnColor(value: String): Self = StObject.set(x, "thumbOnColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbOffColor(value: String): Self = this.set("thumbOffColor", value.asInstanceOf[js.Any])
+    def setThumbOnColorUndefined: Self = StObject.set(x, "thumbOnColor", js.undefined)
     
     @scala.inline
-    def deleteThumbOffColor: Self = this.set("thumbOffColor", js.undefined)
+    def setThumbRadius(value: Double): Self = StObject.set(x, "thumbRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbOnColor(value: String): Self = this.set("thumbOnColor", value.asInstanceOf[js.Any])
+    def setThumbRadiusUndefined: Self = StObject.set(x, "thumbRadius", js.undefined)
     
     @scala.inline
-    def deleteThumbOnColor: Self = this.set("thumbOnColor", js.undefined)
+    def setTrackLength(value: Double): Self = StObject.set(x, "trackLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbRadius(value: Double): Self = this.set("thumbRadius", value.asInstanceOf[js.Any])
+    def setTrackLengthUndefined: Self = StObject.set(x, "trackLength", js.undefined)
     
     @scala.inline
-    def deleteThumbRadius: Self = this.set("thumbRadius", js.undefined)
+    def setTrackSize(value: Double): Self = StObject.set(x, "trackSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackLength(value: Double): Self = this.set("trackLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackLength: Self = this.set("trackLength", js.undefined)
-    
-    @scala.inline
-    def setTrackSize(value: Double): Self = this.set("trackSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackSize: Self = this.set("trackSize", js.undefined)
+    def setTrackSizeUndefined: Self = StObject.set(x, "trackSize", js.undefined)
   }
 }

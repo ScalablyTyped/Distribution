@@ -1,12 +1,13 @@
 package typings.reactOnsenui.anon
 
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSource[T] extends js.Object {
+trait DataSource[T] extends StObject {
   
   var dataSource: js.UndefOr[js.Array[T]] = js.native
   
@@ -27,51 +28,39 @@ object DataSource {
   }
   
   @scala.inline
-  implicit class DataSourceOps[Self <: DataSource[_], T] (val x: Self with DataSource[T]) extends AnyVal {
+  implicit class DataSourceMutableBuilder[Self <: DataSource[_], T] (val x: Self with DataSource[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSource(value: js.Array[T]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceVarargs(value: T*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourceVarargs(value: T*): Self = this.set("dataSource", js.Array(value :_*))
+    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Array[T]): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setRenderFooter(value: () => js.UndefOr[Element]): Self = StObject.set(x, "renderFooter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setModifier(value: String): Self = this.set("modifier", value.asInstanceOf[js.Any])
+    def setRenderFooterUndefined: Self = StObject.set(x, "renderFooter", js.undefined)
     
     @scala.inline
-    def deleteModifier: Self = this.set("modifier", js.undefined)
+    def setRenderHeader(value: () => js.UndefOr[Element]): Self = StObject.set(x, "renderHeader", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRenderFooter(value: () => js.UndefOr[Element]): Self = this.set("renderFooter", js.Any.fromFunction0(value))
+    def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
     
     @scala.inline
-    def deleteRenderFooter: Self = this.set("renderFooter", js.undefined)
+    def setRenderRow(value: (/* row */ T, /* index */ js.UndefOr[Double]) => js.UndefOr[Element]): Self = StObject.set(x, "renderRow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRenderHeader(value: () => js.UndefOr[Element]): Self = this.set("renderHeader", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteRenderHeader: Self = this.set("renderHeader", js.undefined)
-    
-    @scala.inline
-    def setRenderRow(value: (/* row */ T, /* index */ js.UndefOr[Double]) => js.UndefOr[Element]): Self = this.set("renderRow", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteRenderRow: Self = this.set("renderRow", js.undefined)
+    def setRenderRowUndefined: Self = StObject.set(x, "renderRow", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CPUInfo extends js.Object {
+trait CPUInfo extends StObject {
   
   /** description of the device processor ie '1.8 GHz hexa core 64-bit ARMv8-A' */
   var cpuProcessor: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object CPUInfo {
   }
   
   @scala.inline
-  implicit class CPUInfoOps[Self <: CPUInfo] (val x: Self) extends AnyVal {
+  implicit class CPUInfoMutableBuilder[Self <: CPUInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpuProcessor(value: String): Self = StObject.set(x, "cpuProcessor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpuProcessorUndefined: Self = StObject.set(x, "cpuProcessor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpuSpeedInGhz(value: Double): Self = StObject.set(x, "cpuSpeedInGhz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuProcessor(value: String): Self = this.set("cpuProcessor", value.asInstanceOf[js.Any])
+    def setCpuSpeedInGhzUndefined: Self = StObject.set(x, "cpuSpeedInGhz", js.undefined)
     
     @scala.inline
-    def deleteCpuProcessor: Self = this.set("cpuProcessor", js.undefined)
+    def setNumberOfCores(value: Double): Self = StObject.set(x, "numberOfCores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuSpeedInGhz(value: Double): Self = this.set("cpuSpeedInGhz", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCpuSpeedInGhz: Self = this.set("cpuSpeedInGhz", js.undefined)
-    
-    @scala.inline
-    def setNumberOfCores(value: Double): Self = this.set("numberOfCores", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfCores: Self = this.set("numberOfCores", js.undefined)
+    def setNumberOfCoresUndefined: Self = StObject.set(x, "numberOfCores", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.googleapis.booksV1Mod.booksV1
 
 import typings.googleapis.anon.AcquirePermission
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaFamilyInfo extends js.Object {
+trait SchemaFamilyInfo extends StObject {
   
   /**
     * Resource type.
@@ -27,30 +28,18 @@ object SchemaFamilyInfo {
   }
   
   @scala.inline
-  implicit class SchemaFamilyInfoOps[Self <: SchemaFamilyInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaFamilyInfoMutableBuilder[Self <: SchemaFamilyInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembership(value: AcquirePermission): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setMembership(value: AcquirePermission): Self = this.set("membership", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMembership: Self = this.set("membership", js.undefined)
+    def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
   }
 }

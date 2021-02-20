@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGames.gapi.client.games
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatsResponse extends js.Object {
+trait StatsResponse extends StObject {
   
   /** Average session length in minutes of the player. E.g., 1, 30, 60, ... . Not populated if there is not enough information. */
   var avg_session_length_minutes: js.UndefOr[Double] = js.native
@@ -55,84 +56,72 @@ object StatsResponse {
   }
   
   @scala.inline
-  implicit class StatsResponseOps[Self <: StatsResponse] (val x: Self) extends AnyVal {
+  implicit class StatsResponseMutableBuilder[Self <: StatsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvg_session_length_minutes(value: Double): Self = StObject.set(x, "avg_session_length_minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvg_session_length_minutesUndefined: Self = StObject.set(x, "avg_session_length_minutes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChurn_probability(value: Double): Self = StObject.set(x, "churn_probability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvg_session_length_minutes(value: Double): Self = this.set("avg_session_length_minutes", value.asInstanceOf[js.Any])
+    def setChurn_probabilityUndefined: Self = StObject.set(x, "churn_probability", js.undefined)
     
     @scala.inline
-    def deleteAvg_session_length_minutes: Self = this.set("avg_session_length_minutes", js.undefined)
+    def setDays_since_last_played(value: Double): Self = StObject.set(x, "days_since_last_played", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChurn_probability(value: Double): Self = this.set("churn_probability", value.asInstanceOf[js.Any])
+    def setDays_since_last_playedUndefined: Self = StObject.set(x, "days_since_last_played", js.undefined)
     
     @scala.inline
-    def deleteChurn_probability: Self = this.set("churn_probability", js.undefined)
+    def setHigh_spender_probability(value: Double): Self = StObject.set(x, "high_spender_probability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDays_since_last_played(value: Double): Self = this.set("days_since_last_played", value.asInstanceOf[js.Any])
+    def setHigh_spender_probabilityUndefined: Self = StObject.set(x, "high_spender_probability", js.undefined)
     
     @scala.inline
-    def deleteDays_since_last_played: Self = this.set("days_since_last_played", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigh_spender_probability(value: Double): Self = this.set("high_spender_probability", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteHigh_spender_probability: Self = this.set("high_spender_probability", js.undefined)
+    def setNum_purchases(value: Double): Self = StObject.set(x, "num_purchases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNum_purchasesUndefined: Self = StObject.set(x, "num_purchases", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNum_sessions(value: Double): Self = StObject.set(x, "num_sessions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_purchases(value: Double): Self = this.set("num_purchases", value.asInstanceOf[js.Any])
+    def setNum_sessionsUndefined: Self = StObject.set(x, "num_sessions", js.undefined)
     
     @scala.inline
-    def deleteNum_purchases: Self = this.set("num_purchases", js.undefined)
+    def setNum_sessions_percentile(value: Double): Self = StObject.set(x, "num_sessions_percentile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_sessions(value: Double): Self = this.set("num_sessions", value.asInstanceOf[js.Any])
+    def setNum_sessions_percentileUndefined: Self = StObject.set(x, "num_sessions_percentile", js.undefined)
     
     @scala.inline
-    def deleteNum_sessions: Self = this.set("num_sessions", js.undefined)
+    def setSpend_percentile(value: Double): Self = StObject.set(x, "spend_percentile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_sessions_percentile(value: Double): Self = this.set("num_sessions_percentile", value.asInstanceOf[js.Any])
+    def setSpend_percentileUndefined: Self = StObject.set(x, "spend_percentile", js.undefined)
     
     @scala.inline
-    def deleteNum_sessions_percentile: Self = this.set("num_sessions_percentile", js.undefined)
+    def setSpend_probability(value: Double): Self = StObject.set(x, "spend_probability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpend_percentile(value: Double): Self = this.set("spend_percentile", value.asInstanceOf[js.Any])
+    def setSpend_probabilityUndefined: Self = StObject.set(x, "spend_probability", js.undefined)
     
     @scala.inline
-    def deleteSpend_percentile: Self = this.set("spend_percentile", js.undefined)
+    def setTotal_spend_next_28_days(value: Double): Self = StObject.set(x, "total_spend_next_28_days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpend_probability(value: Double): Self = this.set("spend_probability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpend_probability: Self = this.set("spend_probability", js.undefined)
-    
-    @scala.inline
-    def setTotal_spend_next_28_days(value: Double): Self = this.set("total_spend_next_28_days", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal_spend_next_28_days: Self = this.set("total_spend_next_28_days", js.undefined)
+    def setTotal_spend_next_28_daysUndefined: Self = StObject.set(x, "total_spend_next_28_days", js.undefined)
   }
 }

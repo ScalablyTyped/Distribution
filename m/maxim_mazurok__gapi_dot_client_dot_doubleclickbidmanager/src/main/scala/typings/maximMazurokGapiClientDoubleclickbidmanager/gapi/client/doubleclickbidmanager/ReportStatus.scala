@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doubleclickbidmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportStatus extends js.Object {
+trait ReportStatus extends StObject {
   
   /** If the report failed, this records the cause. */
   var failure: js.UndefOr[ReportFailure] = js.native
@@ -28,42 +29,30 @@ object ReportStatus {
   }
   
   @scala.inline
-  implicit class ReportStatusOps[Self <: ReportStatus] (val x: Self) extends AnyVal {
+  implicit class ReportStatusMutableBuilder[Self <: ReportStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailure(value: ReportFailure): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinishTimeMs(value: String): Self = StObject.set(x, "finishTimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailure(value: ReportFailure): Self = this.set("failure", value.asInstanceOf[js.Any])
+    def setFinishTimeMsUndefined: Self = StObject.set(x, "finishTimeMs", js.undefined)
     
     @scala.inline
-    def deleteFailure: Self = this.set("failure", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishTimeMs(value: String): Self = this.set("finishTimeMs", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFinishTimeMs: Self = this.set("finishTimeMs", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

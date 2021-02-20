@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMatchmakingOutput extends js.Object {
+trait DescribeMatchmakingOutput extends StObject {
   
   /**
     * A collection of existing matchmaking ticket objects matching the request.
@@ -21,27 +22,15 @@ object DescribeMatchmakingOutput {
   }
   
   @scala.inline
-  implicit class DescribeMatchmakingOutputOps[Self <: DescribeMatchmakingOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeMatchmakingOutputMutableBuilder[Self <: DescribeMatchmakingOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTicketList(value: MatchmakingTicketList): Self = StObject.set(x, "TicketList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTicketListUndefined: Self = StObject.set(x, "TicketList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTicketListVarargs(value: MatchmakingTicket*): Self = this.set("TicketList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTicketList(value: MatchmakingTicketList): Self = this.set("TicketList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTicketList: Self = this.set("TicketList", js.undefined)
+    def setTicketListVarargs(value: MatchmakingTicket*): Self = StObject.set(x, "TicketList", js.Array(value :_*))
   }
 }

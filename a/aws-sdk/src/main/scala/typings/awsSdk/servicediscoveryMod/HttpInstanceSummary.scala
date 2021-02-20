@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpInstanceSummary extends js.Object {
+trait HttpInstanceSummary extends StObject {
   
   /**
     * If you included any attributes when you registered the instance, the values of those attributes.
@@ -41,48 +42,36 @@ object HttpInstanceSummary {
   }
   
   @scala.inline
-  implicit class HttpInstanceSummaryOps[Self <: HttpInstanceSummary] (val x: Self) extends AnyVal {
+  implicit class HttpInstanceSummaryMutableBuilder[Self <: HttpInstanceSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthStatus(value: HealthStatus): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setHealthStatusUndefined: Self = StObject.set(x, "HealthStatus", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setInstanceId(value: ResourceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthStatus(value: HealthStatus): Self = this.set("HealthStatus", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteHealthStatus: Self = this.set("HealthStatus", js.undefined)
+    def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "NamespaceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: ResourceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setNamespaceNameUndefined: Self = StObject.set(x, "NamespaceName", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceName(value: NamespaceName): Self = this.set("NamespaceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaceName: Self = this.set("NamespaceName", js.undefined)
-    
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
   }
 }

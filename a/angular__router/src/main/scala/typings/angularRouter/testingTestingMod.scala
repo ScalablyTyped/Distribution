@@ -13,76 +13,28 @@ import typings.angularRouter.mod.Router
 import typings.angularRouter.mod.Routes
 import typings.angularRouter.mod.UrlHandlingStrategy
 import typings.angularRouter.mod.UrlSerializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router/testing/testing", JSImport.Namespace)
-@js.native
-object testingTestingMod extends js.Object {
+object testingTestingMod {
   
-  def setupTestingRouter(
-    urlSerializer: UrlSerializer,
-    contexts: ChildrenOutletContexts,
-    location: Location,
-    loader: NgModuleFactoryLoader,
-    compiler: Compiler,
-    injector: Injector,
-    routes: js.Array[js.Array[Route]]
-  ): Router = js.native
-  def setupTestingRouter(
-    urlSerializer: UrlSerializer,
-    contexts: ChildrenOutletContexts,
-    location: Location,
-    loader: NgModuleFactoryLoader,
-    compiler: Compiler,
-    injector: Injector,
-    routes: js.Array[js.Array[Route]],
-    opts: js.UndefOr[scala.Nothing],
-    urlHandlingStrategy: UrlHandlingStrategy
-  ): Router = js.native
-  def setupTestingRouter(
-    urlSerializer: UrlSerializer,
-    contexts: ChildrenOutletContexts,
-    location: Location,
-    loader: NgModuleFactoryLoader,
-    compiler: Compiler,
-    injector: Injector,
-    routes: js.Array[js.Array[Route]],
-    opts: ExtraOptions
-  ): Router = js.native
-  def setupTestingRouter(
-    urlSerializer: UrlSerializer,
-    contexts: ChildrenOutletContexts,
-    location: Location,
-    loader: NgModuleFactoryLoader,
-    compiler: Compiler,
-    injector: Injector,
-    routes: js.Array[js.Array[Route]],
-    opts: ExtraOptions,
-    urlHandlingStrategy: UrlHandlingStrategy
-  ): Router = js.native
-  def setupTestingRouter(
-    urlSerializer: UrlSerializer,
-    contexts: ChildrenOutletContexts,
-    location: Location,
-    loader: NgModuleFactoryLoader,
-    compiler: Compiler,
-    injector: Injector,
-    routes: js.Array[js.Array[Route]],
-    urlHandlingStrategy: UrlHandlingStrategy
-  ): Router = js.native
-  
+  @JSImport("@angular/router/testing/testing", "RouterTestingModule")
   @js.native
-  class RouterTestingModule () extends js.Object
+  class RouterTestingModule () extends StObject
   /* static members */
-  @js.native
-  object RouterTestingModule extends js.Object {
+  object RouterTestingModule {
     
+    @JSImport("@angular/router/testing/testing", "RouterTestingModule.withRoutes")
+    @js.native
     def withRoutes(routes: Routes): ModuleWithProviders[RouterTestingModule] = js.native
+    @JSImport("@angular/router/testing/testing", "RouterTestingModule.withRoutes")
+    @js.native
     def withRoutes(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterTestingModule] = js.native
   }
   
+  @JSImport("@angular/router/testing/testing", "SpyNgModuleFactoryLoader")
   @js.native
   class SpyNgModuleFactoryLoader protected () extends NgModuleFactoryLoader {
     def this(compiler: Compiler) = this()
@@ -103,4 +55,66 @@ object testingTestingMod extends js.Object {
       */
     def stubbedModules_=(modules: StringDictionary[js.Any]): Unit = js.native
   }
+  
+  @JSImport("@angular/router/testing/testing", "setupTestingRouter")
+  @js.native
+  def setupTestingRouter(
+    urlSerializer: UrlSerializer,
+    contexts: ChildrenOutletContexts,
+    location: Location,
+    loader: NgModuleFactoryLoader,
+    compiler: Compiler,
+    injector: Injector,
+    routes: js.Array[js.Array[Route]]
+  ): Router = js.native
+  @JSImport("@angular/router/testing/testing", "setupTestingRouter")
+  @js.native
+  def setupTestingRouter(
+    urlSerializer: UrlSerializer,
+    contexts: ChildrenOutletContexts,
+    location: Location,
+    loader: NgModuleFactoryLoader,
+    compiler: Compiler,
+    injector: Injector,
+    routes: js.Array[js.Array[Route]],
+    opts: js.UndefOr[scala.Nothing],
+    urlHandlingStrategy: UrlHandlingStrategy
+  ): Router = js.native
+  @JSImport("@angular/router/testing/testing", "setupTestingRouter")
+  @js.native
+  def setupTestingRouter(
+    urlSerializer: UrlSerializer,
+    contexts: ChildrenOutletContexts,
+    location: Location,
+    loader: NgModuleFactoryLoader,
+    compiler: Compiler,
+    injector: Injector,
+    routes: js.Array[js.Array[Route]],
+    opts: ExtraOptions
+  ): Router = js.native
+  @JSImport("@angular/router/testing/testing", "setupTestingRouter")
+  @js.native
+  def setupTestingRouter(
+    urlSerializer: UrlSerializer,
+    contexts: ChildrenOutletContexts,
+    location: Location,
+    loader: NgModuleFactoryLoader,
+    compiler: Compiler,
+    injector: Injector,
+    routes: js.Array[js.Array[Route]],
+    opts: ExtraOptions,
+    urlHandlingStrategy: UrlHandlingStrategy
+  ): Router = js.native
+  @JSImport("@angular/router/testing/testing", "setupTestingRouter")
+  @js.native
+  def setupTestingRouter(
+    urlSerializer: UrlSerializer,
+    contexts: ChildrenOutletContexts,
+    location: Location,
+    loader: NgModuleFactoryLoader,
+    compiler: Compiler,
+    injector: Injector,
+    routes: js.Array[js.Array[Route]],
+    urlHandlingStrategy: UrlHandlingStrategy
+  ): Router = js.native
 }

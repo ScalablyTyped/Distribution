@@ -1,11 +1,12 @@
 package typings.vueMarkdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Codeblock extends js.Object {
+trait Codeblock extends StObject {
   
   var code_block: js.Any = js.native
   
@@ -44,45 +45,33 @@ object Codeblock {
   }
   
   @scala.inline
-  implicit class CodeblockOps[Self <: Codeblock] (val x: Self) extends AnyVal {
+  implicit class CodeblockMutableBuilder[Self <: Codeblock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode_block(value: js.Any): Self = StObject.set(x, "code_block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode_inline(value: js.Any): Self = StObject.set(x, "code_inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFence(value: js.Any): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode_block(value: js.Any): Self = this.set("code_block", value.asInstanceOf[js.Any])
+    def setHardbreak(value: js.Any): Self = StObject.set(x, "hardbreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode_inline(value: js.Any): Self = this.set("code_inline", value.asInstanceOf[js.Any])
+    def setHtml_block(value: js.Any): Self = StObject.set(x, "html_block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFence(value: js.Any): Self = this.set("fence", value.asInstanceOf[js.Any])
+    def setHtml_inline(value: js.Any): Self = StObject.set(x, "html_inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardbreak(value: js.Any): Self = this.set("hardbreak", value.asInstanceOf[js.Any])
+    def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_block(value: js.Any): Self = this.set("html_block", value.asInstanceOf[js.Any])
+    def setSoftbreak(value: js.Any): Self = StObject.set(x, "softbreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_inline(value: js.Any): Self = this.set("html_inline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImage(value: js.Any): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoftbreak(value: js.Any): Self = this.set("softbreak", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: js.Any): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

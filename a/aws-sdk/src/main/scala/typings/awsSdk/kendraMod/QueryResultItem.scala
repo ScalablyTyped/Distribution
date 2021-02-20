@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryResultItem extends js.Object {
+trait QueryResultItem extends StObject {
   
   /**
     * One or more additional attributes associated with the query result.
@@ -61,78 +62,66 @@ object QueryResultItem {
   }
   
   @scala.inline
-  implicit class QueryResultItemOps[Self <: QueryResultItem] (val x: Self) extends AnyVal {
+  implicit class QueryResultItemMutableBuilder[Self <: QueryResultItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalAttributes(value: AdditionalResultAttributeList): Self = StObject.set(x, "AdditionalAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalAttributesUndefined: Self = StObject.set(x, "AdditionalAttributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalAttributesVarargs(value: AdditionalResultAttribute*): Self = StObject.set(x, "AdditionalAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalAttributesVarargs(value: AdditionalResultAttribute*): Self = this.set("AdditionalAttributes", js.Array(value :_*))
+    def setDocumentAttributes(value: DocumentAttributeList): Self = StObject.set(x, "DocumentAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalAttributes(value: AdditionalResultAttributeList): Self = this.set("AdditionalAttributes", value.asInstanceOf[js.Any])
+    def setDocumentAttributesUndefined: Self = StObject.set(x, "DocumentAttributes", js.undefined)
     
     @scala.inline
-    def deleteAdditionalAttributes: Self = this.set("AdditionalAttributes", js.undefined)
+    def setDocumentAttributesVarargs(value: DocumentAttribute*): Self = StObject.set(x, "DocumentAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentAttributesVarargs(value: DocumentAttribute*): Self = this.set("DocumentAttributes", js.Array(value :_*))
+    def setDocumentExcerpt(value: TextWithHighlights): Self = StObject.set(x, "DocumentExcerpt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentAttributes(value: DocumentAttributeList): Self = this.set("DocumentAttributes", value.asInstanceOf[js.Any])
+    def setDocumentExcerptUndefined: Self = StObject.set(x, "DocumentExcerpt", js.undefined)
     
     @scala.inline
-    def deleteDocumentAttributes: Self = this.set("DocumentAttributes", js.undefined)
+    def setDocumentId(value: DocumentId): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentExcerpt(value: TextWithHighlights): Self = this.set("DocumentExcerpt", value.asInstanceOf[js.Any])
+    def setDocumentIdUndefined: Self = StObject.set(x, "DocumentId", js.undefined)
     
     @scala.inline
-    def deleteDocumentExcerpt: Self = this.set("DocumentExcerpt", js.undefined)
+    def setDocumentTitle(value: TextWithHighlights): Self = StObject.set(x, "DocumentTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: DocumentId): Self = this.set("DocumentId", value.asInstanceOf[js.Any])
+    def setDocumentTitleUndefined: Self = StObject.set(x, "DocumentTitle", js.undefined)
     
     @scala.inline
-    def deleteDocumentId: Self = this.set("DocumentId", js.undefined)
+    def setDocumentURI(value: Url): Self = StObject.set(x, "DocumentURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentTitle(value: TextWithHighlights): Self = this.set("DocumentTitle", value.asInstanceOf[js.Any])
+    def setDocumentURIUndefined: Self = StObject.set(x, "DocumentURI", js.undefined)
     
     @scala.inline
-    def deleteDocumentTitle: Self = this.set("DocumentTitle", js.undefined)
+    def setId(value: ResultId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentURI(value: Url): Self = this.set("DocumentURI", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteDocumentURI: Self = this.set("DocumentURI", js.undefined)
+    def setScoreAttributes(value: ScoreAttributes): Self = StObject.set(x, "ScoreAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ResultId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setScoreAttributesUndefined: Self = StObject.set(x, "ScoreAttributes", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setType(value: QueryResultType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoreAttributes(value: ScoreAttributes): Self = this.set("ScoreAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScoreAttributes: Self = this.set("ScoreAttributes", js.undefined)
-    
-    @scala.inline
-    def setType(value: QueryResultType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.angularForms.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormBuilder")
 @js.native
-class FormBuilder () extends js.Object {
+class FormBuilder () extends StObject {
   
   /**
     * Constructs a new `FormArray` from the given array of configurations,

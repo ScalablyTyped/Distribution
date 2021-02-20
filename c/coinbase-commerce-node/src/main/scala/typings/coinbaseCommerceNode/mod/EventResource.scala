@@ -7,6 +7,7 @@ import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonfaile
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonpending
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonresolved
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @link
   */
 @js.native
-trait EventResource[T] extends js.Object {
+trait EventResource[T] extends StObject {
   
   /**
     * API version of the `data` payload.
@@ -67,38 +68,26 @@ object EventResource {
   }
   
   @scala.inline
-  implicit class EventResourceOps[Self <: EventResource[_], T] (val x: Self with EventResource[T]) extends AnyVal {
+  implicit class EventResourceMutableBuilder[Self <: EventResource[_], T] (val x: Self with EventResource[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi_version(value: String): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated_at(value: Timestamp): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi_version(value: String): Self = this.set("api_version", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: Timestamp): Self = this.set("created_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResource(value: event): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResource(value: event): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setType(
       value: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

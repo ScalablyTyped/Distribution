@@ -1,12 +1,13 @@
 package typings.workboxCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-core/skipWaiting", JSImport.Namespace)
-@js.native
-object skipWaitingMod extends js.Object {
+object skipWaitingMod {
   
+  @JSImport("workbox-core/skipWaiting", "skipWaiting")
+  @js.native
   def skipWaiting(): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachmentItem extends js.Object {
+trait AttachmentItem extends StObject {
   
   // The type of attachment. Possible values are: file, item, reference. Required.
   var attachmentType: js.UndefOr[NullableOption[AttachmentType]] = js.native
@@ -34,63 +35,51 @@ object AttachmentItem {
   }
   
   @scala.inline
-  implicit class AttachmentItemOps[Self <: AttachmentItem] (val x: Self) extends AnyVal {
+  implicit class AttachmentItemMutableBuilder[Self <: AttachmentItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentType(value: NullableOption[AttachmentType]): Self = StObject.set(x, "attachmentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentTypeNull: Self = StObject.set(x, "attachmentType", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentTypeUndefined: Self = StObject.set(x, "attachmentType", js.undefined)
     
     @scala.inline
-    def setAttachmentType(value: NullableOption[AttachmentType]): Self = this.set("attachmentType", value.asInstanceOf[js.Any])
+    def setContentType(value: NullableOption[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachmentType: Self = this.set("attachmentType", js.undefined)
+    def setContentTypeNull: Self = StObject.set(x, "contentType", null)
     
     @scala.inline
-    def setAttachmentTypeNull: Self = this.set("attachmentType", null)
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setContentType(value: NullableOption[String]): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setIsInline(value: NullableOption[Boolean]): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setIsInlineNull: Self = StObject.set(x, "isInline", null)
     
     @scala.inline
-    def setContentTypeNull: Self = this.set("contentType", null)
+    def setIsInlineUndefined: Self = StObject.set(x, "isInline", js.undefined)
     
     @scala.inline
-    def setIsInline(value: NullableOption[Boolean]): Self = this.set("isInline", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsInline: Self = this.set("isInline", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setIsInlineNull: Self = this.set("isInline", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSize(value: NullableOption[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSizeNull: Self = StObject.set(x, "size", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
-    
-    @scala.inline
-    def setSize(value: NullableOption[Double]): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setSizeNull: Self = this.set("size", null)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

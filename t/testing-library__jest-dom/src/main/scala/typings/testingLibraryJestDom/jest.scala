@@ -7,16 +7,15 @@ import typings.std.ReturnType
 import typings.std.SVGElement
 import typings.testingLibraryJestDom.anon.Exact
 import typings.testingLibraryJestDom.anon.NormalizeWhitespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("jest")
-@js.native
-object jest extends js.Object {
+object jest {
   
   @js.native
-  trait Matchers[R, T] extends js.Object {
+  trait Matchers[R, T] extends StObject {
     
     /**
       * @description

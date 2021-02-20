@@ -1,12 +1,13 @@
 package typings.activexOutlook.anon
 
 import typings.activexOutlook.Outlook.PropertyPages
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FolderPages extends js.Object {
+trait FolderPages extends StObject {
   
   val Folder: typings.activexOutlook.Outlook.Folder = js.native
   
@@ -21,24 +22,12 @@ object FolderPages {
   }
   
   @scala.inline
-  implicit class FolderPagesOps[Self <: FolderPages] (val x: Self) extends AnyVal {
+  implicit class FolderPagesMutableBuilder[Self <: FolderPages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFolder(value: typings.activexOutlook.Outlook.Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFolder(value: typings.activexOutlook.Outlook.Folder): Self = this.set("Folder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPages(value: PropertyPages): Self = this.set("Pages", value.asInstanceOf[js.Any])
+    def setPages(value: PropertyPages): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
   }
 }

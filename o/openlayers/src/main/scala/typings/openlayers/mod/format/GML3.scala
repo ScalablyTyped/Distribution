@@ -4,6 +4,7 @@ import typings.openlayers.mod.geom.Geometry
 import typings.openlayers.mod.olx.format.GMLOptions
 import typings.openlayers.mod.olx.format.WriteOptions
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

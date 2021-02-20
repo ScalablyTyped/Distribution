@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fingerprint extends js.Object {
+trait Fingerprint extends StObject {
   
   /** Required. The layer ID of the final layer in the Docker image's v1 representation. */
   var v1Name: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object Fingerprint {
   }
   
   @scala.inline
-  implicit class FingerprintOps[Self <: Fingerprint] (val x: Self) extends AnyVal {
+  implicit class FingerprintMutableBuilder[Self <: Fingerprint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setV1Name(value: String): Self = StObject.set(x, "v1Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setV1NameUndefined: Self = StObject.set(x, "v1Name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setV2Blob(value: js.Array[String]): Self = StObject.set(x, "v2Blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV1Name(value: String): Self = this.set("v1Name", value.asInstanceOf[js.Any])
+    def setV2BlobUndefined: Self = StObject.set(x, "v2Blob", js.undefined)
     
     @scala.inline
-    def deleteV1Name: Self = this.set("v1Name", js.undefined)
+    def setV2BlobVarargs(value: String*): Self = StObject.set(x, "v2Blob", js.Array(value :_*))
     
     @scala.inline
-    def setV2BlobVarargs(value: String*): Self = this.set("v2Blob", js.Array(value :_*))
+    def setV2Name(value: String): Self = StObject.set(x, "v2Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV2Blob(value: js.Array[String]): Self = this.set("v2Blob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteV2Blob: Self = this.set("v2Blob", js.undefined)
-    
-    @scala.inline
-    def setV2Name(value: String): Self = this.set("v2Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteV2Name: Self = this.set("v2Name", js.undefined)
+    def setV2NameUndefined: Self = StObject.set(x, "v2Name", js.undefined)
   }
 }

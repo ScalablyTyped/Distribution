@@ -2,14 +2,13 @@ package typings.elasticApmNode.mod
 
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Inlined from @types/connect - start
-@JSImport("elastic-apm-node", "Connect")
-@js.native
-object Connect extends js.Object {
+object Connect {
   
   type ErrorHandleFunction = js.Function4[
     /* err */ js.Any, 

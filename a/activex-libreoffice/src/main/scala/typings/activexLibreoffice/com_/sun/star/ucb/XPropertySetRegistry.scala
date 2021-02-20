@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,24 +45,12 @@ object XPropertySetRegistry {
   }
   
   @scala.inline
-  implicit class XPropertySetRegistryOps[Self <: XPropertySetRegistry] (val x: Self) extends AnyVal {
+  implicit class XPropertySetRegistryMutableBuilder[Self <: XPropertySetRegistry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpenPropertySet(value: (String, Boolean) => XPersistentPropertySet): Self = StObject.set(x, "openPropertySet", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpenPropertySet(value: (String, Boolean) => XPersistentPropertySet): Self = this.set("openPropertySet", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemovePropertySet(value: String => Unit): Self = this.set("removePropertySet", js.Any.fromFunction1(value))
+    def setRemovePropertySet(value: String => Unit): Self = StObject.set(x, "removePropertySet", js.Any.fromFunction1(value))
   }
 }

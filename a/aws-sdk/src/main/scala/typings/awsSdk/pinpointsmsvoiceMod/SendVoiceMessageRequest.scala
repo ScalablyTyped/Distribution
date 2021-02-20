@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointsmsvoiceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendVoiceMessageRequest extends js.Object {
+trait SendVoiceMessageRequest extends StObject {
   
   /**
     * The phone number that appears on recipients' devices when they receive the message.
@@ -38,48 +39,36 @@ object SendVoiceMessageRequest {
   }
   
   @scala.inline
-  implicit class SendVoiceMessageRequestOps[Self <: SendVoiceMessageRequest] (val x: Self) extends AnyVal {
+  implicit class SendVoiceMessageRequestMutableBuilder[Self <: SendVoiceMessageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallerId(value: String): Self = StObject.set(x, "CallerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallerIdUndefined: Self = StObject.set(x, "CallerId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationSetName(value: WordCharactersWithDelimiters): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallerId(value: String): Self = this.set("CallerId", value.asInstanceOf[js.Any])
+    def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
     
     @scala.inline
-    def deleteCallerId: Self = this.set("CallerId", js.undefined)
+    def setContent(value: VoiceMessageContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationSetName(value: WordCharactersWithDelimiters): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
     @scala.inline
-    def deleteConfigurationSetName: Self = this.set("ConfigurationSetName", js.undefined)
+    def setDestinationPhoneNumber(value: NonEmptyString): Self = StObject.set(x, "DestinationPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: VoiceMessageContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setDestinationPhoneNumberUndefined: Self = StObject.set(x, "DestinationPhoneNumber", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("Content", js.undefined)
+    def setOriginationPhoneNumber(value: NonEmptyString): Self = StObject.set(x, "OriginationPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationPhoneNumber(value: NonEmptyString): Self = this.set("DestinationPhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationPhoneNumber: Self = this.set("DestinationPhoneNumber", js.undefined)
-    
-    @scala.inline
-    def setOriginationPhoneNumber(value: NonEmptyString): Self = this.set("OriginationPhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginationPhoneNumber: Self = this.set("OriginationPhoneNumber", js.undefined)
+    def setOriginationPhoneNumberUndefined: Self = StObject.set(x, "OriginationPhoneNumber", js.undefined)
   }
 }

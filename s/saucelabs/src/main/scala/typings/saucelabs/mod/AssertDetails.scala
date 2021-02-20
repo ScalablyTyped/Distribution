@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,66 +35,54 @@ object AssertDetails {
   }
   
   @scala.inline
-  implicit class AssertDetailsOps[Self <: AssertDetails] (val x: Self) extends AnyVal {
+  implicit class AssertDetailsMutableBuilder[Self <: AssertDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatetime(value: String): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseline(value: Double): Self = this.set("baseline", value.asInstanceOf[js.Any])
+    def setDatetimeUndefined: Self = StObject.set(x, "datetime", js.undefined)
     
     @scala.inline
-    def deleteBaseline: Self = this.set("baseline", js.undefined)
+    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatetime(value: String): Self = this.set("datetime", value.asInstanceOf[js.Any])
+    def setJob_idUndefined: Self = StObject.set(x, "job_id", js.undefined)
     
     @scala.inline
-    def deleteDatetime: Self = this.set("datetime", js.undefined)
+    def setLower_boundary(value: Double): Self = StObject.set(x, "lower_boundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJob_id(value: String): Self = this.set("job_id", value.asInstanceOf[js.Any])
+    def setLower_boundaryUndefined: Self = StObject.set(x, "lower_boundary", js.undefined)
     
     @scala.inline
-    def deleteJob_id: Self = this.set("job_id", js.undefined)
+    def setOrder_index(value: Double): Self = StObject.set(x, "order_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLower_boundary(value: Double): Self = this.set("lower_boundary", value.asInstanceOf[js.Any])
+    def setOrder_indexUndefined: Self = StObject.set(x, "order_index", js.undefined)
     
     @scala.inline
-    def deleteLower_boundary: Self = this.set("lower_boundary", js.undefined)
+    def setOutlier(value: OutlierDetails): Self = StObject.set(x, "outlier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder_index(value: Double): Self = this.set("order_index", value.asInstanceOf[js.Any])
+    def setOutlierUndefined: Self = StObject.set(x, "outlier", js.undefined)
     
     @scala.inline
-    def deleteOrder_index: Self = this.set("order_index", js.undefined)
+    def setReal_value(value: Double): Self = StObject.set(x, "real_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlier(value: OutlierDetails): Self = this.set("outlier", value.asInstanceOf[js.Any])
+    def setReal_valueUndefined: Self = StObject.set(x, "real_value", js.undefined)
     
     @scala.inline
-    def deleteOutlier: Self = this.set("outlier", js.undefined)
+    def setUpper_boundary(value: Double): Self = StObject.set(x, "upper_boundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReal_value(value: Double): Self = this.set("real_value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReal_value: Self = this.set("real_value", js.undefined)
-    
-    @scala.inline
-    def setUpper_boundary(value: Double): Self = this.set("upper_boundary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpper_boundary: Self = this.set("upper_boundary", js.undefined)
+    def setUpper_boundaryUndefined: Self = StObject.set(x, "upper_boundary", js.undefined)
   }
 }

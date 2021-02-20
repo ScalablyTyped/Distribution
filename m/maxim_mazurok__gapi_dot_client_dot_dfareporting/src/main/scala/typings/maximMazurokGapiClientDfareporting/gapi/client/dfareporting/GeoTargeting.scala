@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoTargeting extends js.Object {
+trait GeoTargeting extends StObject {
   
   /**
     * Cities to be targeted. For each city only dartId is required. The other fields are populated automatically when the ad is inserted or updated. If targeting a city, do not target or
@@ -49,69 +50,57 @@ object GeoTargeting {
   }
   
   @scala.inline
-  implicit class GeoTargetingOps[Self <: GeoTargeting] (val x: Self) extends AnyVal {
+  implicit class GeoTargetingMutableBuilder[Self <: GeoTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCities(value: js.Array[City]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value :_*))
     
     @scala.inline
-    def setCitiesVarargs(value: City*): Self = this.set("cities", js.Array(value :_*))
+    def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCities(value: js.Array[City]): Self = this.set("cities", value.asInstanceOf[js.Any])
+    def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
     @scala.inline
-    def deleteCities: Self = this.set("cities", js.undefined)
+    def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value :_*))
     
     @scala.inline
-    def setCountriesVarargs(value: Country*): Self = this.set("countries", js.Array(value :_*))
+    def setExcludeCountries(value: Boolean): Self = StObject.set(x, "excludeCountries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountries(value: js.Array[Country]): Self = this.set("countries", value.asInstanceOf[js.Any])
+    def setExcludeCountriesUndefined: Self = StObject.set(x, "excludeCountries", js.undefined)
     
     @scala.inline
-    def deleteCountries: Self = this.set("countries", js.undefined)
+    def setMetros(value: js.Array[Metro]): Self = StObject.set(x, "metros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeCountries(value: Boolean): Self = this.set("excludeCountries", value.asInstanceOf[js.Any])
+    def setMetrosUndefined: Self = StObject.set(x, "metros", js.undefined)
     
     @scala.inline
-    def deleteExcludeCountries: Self = this.set("excludeCountries", js.undefined)
+    def setMetrosVarargs(value: Metro*): Self = StObject.set(x, "metros", js.Array(value :_*))
     
     @scala.inline
-    def setMetrosVarargs(value: Metro*): Self = this.set("metros", js.Array(value :_*))
+    def setPostalCodes(value: js.Array[PostalCode]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetros(value: js.Array[Metro]): Self = this.set("metros", value.asInstanceOf[js.Any])
+    def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
     
     @scala.inline
-    def deleteMetros: Self = this.set("metros", js.undefined)
+    def setPostalCodesVarargs(value: PostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
     
     @scala.inline
-    def setPostalCodesVarargs(value: PostalCode*): Self = this.set("postalCodes", js.Array(value :_*))
+    def setRegions(value: js.Array[Region]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCodes(value: js.Array[PostalCode]): Self = this.set("postalCodes", value.asInstanceOf[js.Any])
+    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
     @scala.inline
-    def deletePostalCodes: Self = this.set("postalCodes", js.undefined)
-    
-    @scala.inline
-    def setRegionsVarargs(value: Region*): Self = this.set("regions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegions(value: js.Array[Region]): Self = this.set("regions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegions: Self = this.set("regions", js.undefined)
+    def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

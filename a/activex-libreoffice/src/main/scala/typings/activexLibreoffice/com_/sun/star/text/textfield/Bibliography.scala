@@ -7,12 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import typings.activexLibreoffice.com_.sun.star.text.DependentTextField
 import typings.activexLibreoffice.com_.sun.star.text.TextContentAnchorType
-import typings.activexLibreoffice.com_.sun.star.text.TextField_
 import typings.activexLibreoffice.com_.sun.star.text.WrapTextMode
-import typings.activexLibreoffice.com_.sun.star.text.XDependentTextField
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TextField
   */
 @js.native
-trait Bibliography
-  extends TextField_
-     with XDependentTextField {
+trait Bibliography extends DependentTextField {
   
   /** contains the bibliography fields of the text field. */
   var Fields: SafeArray[PropertyValue] = js.native
@@ -66,21 +64,9 @@ object Bibliography {
   }
   
   @scala.inline
-  implicit class BibliographyOps[Self <: Bibliography] (val x: Self) extends AnyVal {
+  implicit class BibliographyMutableBuilder[Self <: Bibliography] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFields(value: SafeArray[PropertyValue]): Self = this.set("Fields", value.asInstanceOf[js.Any])
+    def setFields(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
   }
 }

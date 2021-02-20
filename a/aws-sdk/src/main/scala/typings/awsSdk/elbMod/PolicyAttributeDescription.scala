@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyAttributeDescription extends js.Object {
+trait PolicyAttributeDescription extends StObject {
   
   /**
     * The name of the attribute.
@@ -26,30 +27,18 @@ object PolicyAttributeDescription {
   }
   
   @scala.inline
-  implicit class PolicyAttributeDescriptionOps[Self <: PolicyAttributeDescription] (val x: Self) extends AnyVal {
+  implicit class PolicyAttributeDescriptionMutableBuilder[Self <: PolicyAttributeDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeValue(value: AttributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: AttributeName): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
-    
-    @scala.inline
-    def setAttributeValue(value: AttributeValue): Self = this.set("AttributeValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeValue: Self = this.set("AttributeValue", js.undefined)
+    def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
   }
 }

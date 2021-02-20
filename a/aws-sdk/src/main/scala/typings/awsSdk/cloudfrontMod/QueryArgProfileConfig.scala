@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryArgProfileConfig extends js.Object {
+trait QueryArgProfileConfig extends StObject {
   
   /**
     * Flag to set if you want a request to be forwarded to the origin even if the profile specified by the field-level encryption query argument, fle-profile, is unknown.
@@ -26,27 +27,15 @@ object QueryArgProfileConfig {
   }
   
   @scala.inline
-  implicit class QueryArgProfileConfigOps[Self <: QueryArgProfileConfig] (val x: Self) extends AnyVal {
+  implicit class QueryArgProfileConfigMutableBuilder[Self <: QueryArgProfileConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForwardWhenQueryArgProfileIsUnknown(value: Boolean): Self = StObject.set(x, "ForwardWhenQueryArgProfileIsUnknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryArgProfiles(value: QueryArgProfiles): Self = StObject.set(x, "QueryArgProfiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForwardWhenQueryArgProfileIsUnknown(value: Boolean): Self = this.set("ForwardWhenQueryArgProfileIsUnknown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryArgProfiles(value: QueryArgProfiles): Self = this.set("QueryArgProfiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryArgProfiles: Self = this.set("QueryArgProfiles", js.undefined)
+    def setQueryArgProfilesUndefined: Self = StObject.set(x, "QueryArgProfiles", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SparklineOptions extends js.Object {
+trait SparklineOptions extends StObject {
   
   var autoBind: js.UndefOr[Boolean] = js.native
   
@@ -84,231 +85,219 @@ object SparklineOptions {
   }
   
   @scala.inline
-  implicit class SparklineOptionsOps[Self <: SparklineOptions] (val x: Self) extends AnyVal {
+  implicit class SparklineOptionsMutableBuilder[Self <: SparklineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisDefaults(value: js.Any): Self = StObject.set(x, "axisDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setAxisDefaultsUndefined: Self = StObject.set(x, "axisDefaults", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setAxisLabelClick(value: /* e */ SparklineAxisLabelClickEvent => Unit): Self = StObject.set(x, "axisLabelClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAxisDefaults(value: js.Any): Self = this.set("axisDefaults", value.asInstanceOf[js.Any])
+    def setAxisLabelClickUndefined: Self = StObject.set(x, "axisLabelClick", js.undefined)
     
     @scala.inline
-    def deleteAxisDefaults: Self = this.set("axisDefaults", js.undefined)
+    def setCategoryAxis(value: SparklineCategoryAxisItem | js.Array[SparklineCategoryAxisItem]): Self = StObject.set(x, "categoryAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisLabelClick(value: /* e */ SparklineAxisLabelClickEvent => Unit): Self = this.set("axisLabelClick", js.Any.fromFunction1(value))
+    def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
     
     @scala.inline
-    def deleteAxisLabelClick: Self = this.set("axisLabelClick", js.undefined)
+    def setCategoryAxisVarargs(value: SparklineCategoryAxisItem*): Self = StObject.set(x, "categoryAxis", js.Array(value :_*))
     
     @scala.inline
-    def setCategoryAxisVarargs(value: SparklineCategoryAxisItem*): Self = this.set("categoryAxis", js.Array(value :_*))
+    def setChartArea(value: SparklineChartArea): Self = StObject.set(x, "chartArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryAxis(value: SparklineCategoryAxisItem | js.Array[SparklineCategoryAxisItem]): Self = this.set("categoryAxis", value.asInstanceOf[js.Any])
+    def setChartAreaUndefined: Self = StObject.set(x, "chartArea", js.undefined)
     
     @scala.inline
-    def deleteCategoryAxis: Self = this.set("categoryAxis", js.undefined)
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartArea(value: SparklineChartArea): Self = this.set("chartArea", value.asInstanceOf[js.Any])
+    def setDataBound(value: /* e */ SparklineEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteChartArea: Self = this.set("chartArea", js.undefined)
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def setDataBound(value: /* e */ SparklineEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDrag(value: /* e */ SparklineDragEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDragEnd(value: /* e */ SparklineDragEndEvent => Unit): Self = StObject.set(x, "dragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDragEndUndefined: Self = StObject.set(x, "dragEnd", js.undefined)
     
     @scala.inline
-    def setDrag(value: /* e */ SparklineDragEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setDragStart(value: /* e */ SparklineDragStartEvent => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
     
     @scala.inline
-    def setDragEnd(value: /* e */ SparklineDragEndEvent => Unit): Self = this.set("dragEnd", js.Any.fromFunction1(value))
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDragEnd: Self = this.set("dragEnd", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragStart(value: /* e */ SparklineDragStartEvent => Unit): Self = this.set("dragStart", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDragStart: Self = this.set("dragStart", js.undefined)
+    def setPaneRender(value: /* e */ SparklinePaneRenderEvent => Unit): Self = StObject.set(x, "paneRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPaneRenderUndefined: Self = StObject.set(x, "paneRender", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPlotArea(value: SparklinePlotArea): Self = StObject.set(x, "plotArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaneRender(value: /* e */ SparklinePaneRenderEvent => Unit): Self = this.set("paneRender", js.Any.fromFunction1(value))
+    def setPlotAreaClick(value: /* e */ SparklinePlotAreaClickEvent => Unit): Self = StObject.set(x, "plotAreaClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaneRender: Self = this.set("paneRender", js.undefined)
+    def setPlotAreaClickUndefined: Self = StObject.set(x, "plotAreaClick", js.undefined)
     
     @scala.inline
-    def setPlotArea(value: SparklinePlotArea): Self = this.set("plotArea", value.asInstanceOf[js.Any])
+    def setPlotAreaHover(value: /* e */ SparklinePlotAreaHoverEvent => Unit): Self = StObject.set(x, "plotAreaHover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePlotArea: Self = this.set("plotArea", js.undefined)
+    def setPlotAreaHoverUndefined: Self = StObject.set(x, "plotAreaHover", js.undefined)
     
     @scala.inline
-    def setPlotAreaClick(value: /* e */ SparklinePlotAreaClickEvent => Unit): Self = this.set("plotAreaClick", js.Any.fromFunction1(value))
+    def setPlotAreaLeave(value: /* e */ SparklinePlotAreaLeaveEvent => Unit): Self = StObject.set(x, "plotAreaLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePlotAreaClick: Self = this.set("plotAreaClick", js.undefined)
+    def setPlotAreaLeaveUndefined: Self = StObject.set(x, "plotAreaLeave", js.undefined)
     
     @scala.inline
-    def setPlotAreaHover(value: /* e */ SparklinePlotAreaHoverEvent => Unit): Self = this.set("plotAreaHover", js.Any.fromFunction1(value))
+    def setPlotAreaUndefined: Self = StObject.set(x, "plotArea", js.undefined)
     
     @scala.inline
-    def deletePlotAreaHover: Self = this.set("plotAreaHover", js.undefined)
+    def setPointWidth(value: Double): Self = StObject.set(x, "pointWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlotAreaLeave(value: /* e */ SparklinePlotAreaLeaveEvent => Unit): Self = this.set("plotAreaLeave", js.Any.fromFunction1(value))
+    def setPointWidthUndefined: Self = StObject.set(x, "pointWidth", js.undefined)
     
     @scala.inline
-    def deletePlotAreaLeave: Self = this.set("plotAreaLeave", js.undefined)
+    def setRenderAs(value: String): Self = StObject.set(x, "renderAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointWidth(value: Double): Self = this.set("pointWidth", value.asInstanceOf[js.Any])
+    def setRenderAsUndefined: Self = StObject.set(x, "renderAs", js.undefined)
     
     @scala.inline
-    def deletePointWidth: Self = this.set("pointWidth", js.undefined)
+    def setSeries(value: js.Array[SparklineSeriesItem]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderAs(value: String): Self = this.set("renderAs", value.asInstanceOf[js.Any])
+    def setSeriesClick(value: /* e */ SparklineSeriesClickEvent => Unit): Self = StObject.set(x, "seriesClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRenderAs: Self = this.set("renderAs", js.undefined)
+    def setSeriesClickUndefined: Self = StObject.set(x, "seriesClick", js.undefined)
     
     @scala.inline
-    def setSeriesVarargs(value: SparklineSeriesItem*): Self = this.set("series", js.Array(value :_*))
+    def setSeriesColors(value: js.Any): Self = StObject.set(x, "seriesColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: js.Array[SparklineSeriesItem]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSeriesColorsUndefined: Self = StObject.set(x, "seriesColors", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSeriesDefaults(value: SparklineSeriesDefaults): Self = StObject.set(x, "seriesDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesClick(value: /* e */ SparklineSeriesClickEvent => Unit): Self = this.set("seriesClick", js.Any.fromFunction1(value))
+    def setSeriesDefaultsUndefined: Self = StObject.set(x, "seriesDefaults", js.undefined)
     
     @scala.inline
-    def deleteSeriesClick: Self = this.set("seriesClick", js.undefined)
+    def setSeriesHover(value: /* e */ SparklineSeriesHoverEvent => Unit): Self = StObject.set(x, "seriesHover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSeriesColors(value: js.Any): Self = this.set("seriesColors", value.asInstanceOf[js.Any])
+    def setSeriesHoverUndefined: Self = StObject.set(x, "seriesHover", js.undefined)
     
     @scala.inline
-    def deleteSeriesColors: Self = this.set("seriesColors", js.undefined)
+    def setSeriesLeave(value: /* e */ SparklineSeriesLeaveEvent => Unit): Self = StObject.set(x, "seriesLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSeriesDefaults(value: SparklineSeriesDefaults): Self = this.set("seriesDefaults", value.asInstanceOf[js.Any])
+    def setSeriesLeaveUndefined: Self = StObject.set(x, "seriesLeave", js.undefined)
     
     @scala.inline
-    def deleteSeriesDefaults: Self = this.set("seriesDefaults", js.undefined)
+    def setSeriesOver(value: /* e */ SparklineSeriesOverEvent => Unit): Self = StObject.set(x, "seriesOver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSeriesHover(value: /* e */ SparklineSeriesHoverEvent => Unit): Self = this.set("seriesHover", js.Any.fromFunction1(value))
+    def setSeriesOverUndefined: Self = StObject.set(x, "seriesOver", js.undefined)
     
     @scala.inline
-    def deleteSeriesHover: Self = this.set("seriesHover", js.undefined)
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def setSeriesLeave(value: /* e */ SparklineSeriesLeaveEvent => Unit): Self = this.set("seriesLeave", js.Any.fromFunction1(value))
+    def setSeriesVarargs(value: SparklineSeriesItem*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def deleteSeriesLeave: Self = this.set("seriesLeave", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesOver(value: /* e */ SparklineSeriesOverEvent => Unit): Self = this.set("seriesOver", js.Any.fromFunction1(value))
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteSeriesOver: Self = this.set("seriesOver", js.undefined)
+    def setTooltip(value: SparklineTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setTransitions(value: Boolean): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: SparklineTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitions(value: Boolean): Self = this.set("transitions", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTransitions: Self = this.set("transitions", js.undefined)
+    def setValueAxis(value: SparklineValueAxisItem | js.Array[SparklineValueAxisItem]): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setValueAxisVarargs(value: SparklineValueAxisItem*): Self = StObject.set(x, "valueAxis", js.Array(value :_*))
     
     @scala.inline
-    def setValueAxisVarargs(value: SparklineValueAxisItem*): Self = this.set("valueAxis", js.Array(value :_*))
+    def setZoom(value: /* e */ SparklineZoomEvent => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValueAxis(value: SparklineValueAxisItem | js.Array[SparklineValueAxisItem]): Self = this.set("valueAxis", value.asInstanceOf[js.Any])
+    def setZoomEnd(value: /* e */ SparklineZoomEndEvent => Unit): Self = StObject.set(x, "zoomEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteValueAxis: Self = this.set("valueAxis", js.undefined)
+    def setZoomEndUndefined: Self = StObject.set(x, "zoomEnd", js.undefined)
     
     @scala.inline
-    def setZoom(value: /* e */ SparklineZoomEvent => Unit): Self = this.set("zoom", js.Any.fromFunction1(value))
+    def setZoomStart(value: /* e */ SparklineZoomStartEvent => Unit): Self = StObject.set(x, "zoomStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomStartUndefined: Self = StObject.set(x, "zoomStart", js.undefined)
     
     @scala.inline
-    def setZoomEnd(value: /* e */ SparklineZoomEndEvent => Unit): Self = this.set("zoomEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteZoomEnd: Self = this.set("zoomEnd", js.undefined)
-    
-    @scala.inline
-    def setZoomStart(value: /* e */ SparklineZoomStartEvent => Unit): Self = this.set("zoomStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteZoomStart: Self = this.set("zoomStart", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

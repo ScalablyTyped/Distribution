@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduledUpdateGroupAction extends js.Object {
+trait ScheduledUpdateGroupAction extends StObject {
   
   /**
     * The name of the Auto Scaling group.
@@ -66,78 +67,66 @@ object ScheduledUpdateGroupAction {
   }
   
   @scala.inline
-  implicit class ScheduledUpdateGroupActionOps[Self <: ScheduledUpdateGroupAction] (val x: Self) extends AnyVal {
+  implicit class ScheduledUpdateGroupActionMutableBuilder[Self <: ScheduledUpdateGroupAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = StObject.set(x, "DesiredCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    def setDesiredCapacityUndefined: Self = StObject.set(x, "DesiredCapacity", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingGroupName: Self = this.set("AutoScalingGroupName", js.undefined)
+    def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = this.set("DesiredCapacity", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteDesiredCapacity: Self = this.set("DesiredCapacity", js.undefined)
+    def setMaxSize(value: AutoScalingGroupMaxSize): Self = StObject.set(x, "MaxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: TimestampType): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "MaxSize", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setMinSize(value: AutoScalingGroupMinSize): Self = StObject.set(x, "MinSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: AutoScalingGroupMaxSize): Self = this.set("MaxSize", value.asInstanceOf[js.Any])
+    def setMinSizeUndefined: Self = StObject.set(x, "MinSize", js.undefined)
     
     @scala.inline
-    def deleteMaxSize: Self = this.set("MaxSize", js.undefined)
+    def setRecurrence(value: XmlStringMaxLen255): Self = StObject.set(x, "Recurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: AutoScalingGroupMinSize): Self = this.set("MinSize", value.asInstanceOf[js.Any])
+    def setRecurrenceUndefined: Self = StObject.set(x, "Recurrence", js.undefined)
     
     @scala.inline
-    def deleteMinSize: Self = this.set("MinSize", js.undefined)
+    def setScheduledActionARN(value: ResourceName): Self = StObject.set(x, "ScheduledActionARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrence(value: XmlStringMaxLen255): Self = this.set("Recurrence", value.asInstanceOf[js.Any])
+    def setScheduledActionARNUndefined: Self = StObject.set(x, "ScheduledActionARN", js.undefined)
     
     @scala.inline
-    def deleteRecurrence: Self = this.set("Recurrence", js.undefined)
+    def setScheduledActionName(value: XmlStringMaxLen255): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledActionARN(value: ResourceName): Self = this.set("ScheduledActionARN", value.asInstanceOf[js.Any])
+    def setScheduledActionNameUndefined: Self = StObject.set(x, "ScheduledActionName", js.undefined)
     
     @scala.inline
-    def deleteScheduledActionARN: Self = this.set("ScheduledActionARN", js.undefined)
+    def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledActionName(value: XmlStringMaxLen255): Self = this.set("ScheduledActionName", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteScheduledActionName: Self = this.set("ScheduledActionName", js.undefined)
+    def setTime(value: TimestampType): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: TimestampType): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
-    
-    @scala.inline
-    def setTime(value: TimestampType): Self = this.set("Time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("Time", js.undefined)
+    def setTimeUndefined: Self = StObject.set(x, "Time", js.undefined)
   }
 }

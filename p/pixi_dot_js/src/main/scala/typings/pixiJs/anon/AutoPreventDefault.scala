@@ -1,11 +1,12 @@
 package typings.pixiJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoPreventDefault extends js.Object {
+trait AutoPreventDefault extends StObject {
   
   var autoPreventDefault: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object AutoPreventDefault {
   }
   
   @scala.inline
-  implicit class AutoPreventDefaultOps[Self <: AutoPreventDefault] (val x: Self) extends AnyVal {
+  implicit class AutoPreventDefaultMutableBuilder[Self <: AutoPreventDefault] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPreventDefault(value: Boolean): Self = StObject.set(x, "autoPreventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPreventDefaultUndefined: Self = StObject.set(x, "autoPreventDefault", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInteractionFrequency(value: Double): Self = StObject.set(x, "interactionFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPreventDefault(value: Boolean): Self = this.set("autoPreventDefault", value.asInstanceOf[js.Any])
+    def setInteractionFrequencyUndefined: Self = StObject.set(x, "interactionFrequency", js.undefined)
     
     @scala.inline
-    def deleteAutoPreventDefault: Self = this.set("autoPreventDefault", js.undefined)
+    def setUseSystemTicker(value: Double): Self = StObject.set(x, "useSystemTicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractionFrequency(value: Double): Self = this.set("interactionFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInteractionFrequency: Self = this.set("interactionFrequency", js.undefined)
-    
-    @scala.inline
-    def setUseSystemTicker(value: Double): Self = this.set("useSystemTicker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseSystemTicker: Self = this.set("useSystemTicker", js.undefined)
+    def setUseSystemTickerUndefined: Self = StObject.set(x, "useSystemTicker", js.undefined)
   }
 }

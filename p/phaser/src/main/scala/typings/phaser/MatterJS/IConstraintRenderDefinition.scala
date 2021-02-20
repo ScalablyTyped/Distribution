@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConstraintRenderDefinition extends js.Object {
+trait IConstraintRenderDefinition extends StObject {
   
   /**
     * A hex color value that defines the color to use when rendering the anchors.
@@ -91,72 +92,60 @@ object IConstraintRenderDefinition {
   }
   
   @scala.inline
-  implicit class IConstraintRenderDefinitionOps[Self <: IConstraintRenderDefinition] (val x: Self) extends AnyVal {
+  implicit class IConstraintRenderDefinitionMutableBuilder[Self <: IConstraintRenderDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorColor(value: Double): Self = StObject.set(x, "anchorColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorColorUndefined: Self = StObject.set(x, "anchorColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorSize(value: Double): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorColor(value: Double): Self = this.set("anchorColor", value.asInstanceOf[js.Any])
+    def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
     
     @scala.inline
-    def deleteAnchorColor: Self = this.set("anchorColor", js.undefined)
+    def setAnchors(value: Boolean): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorSize(value: Double): Self = this.set("anchorSize", value.asInstanceOf[js.Any])
+    def setAnchorsUndefined: Self = StObject.set(x, "anchors", js.undefined)
     
     @scala.inline
-    def deleteAnchorSize: Self = this.set("anchorSize", js.undefined)
+    def setLineColor(value: Double): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchors(value: Boolean): Self = this.set("anchors", value.asInstanceOf[js.Any])
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def deleteAnchors: Self = this.set("anchors", js.undefined)
+    def setLineOpacity(value: Double): Self = StObject.set(x, "lineOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: Double): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setLineOpacityUndefined: Self = StObject.set(x, "lineOpacity", js.undefined)
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setLineThickness(value: Double): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineOpacity(value: Double): Self = this.set("lineOpacity", value.asInstanceOf[js.Any])
+    def setLineThicknessUndefined: Self = StObject.set(x, "lineThickness", js.undefined)
     
     @scala.inline
-    def deleteLineOpacity: Self = this.set("lineOpacity", js.undefined)
+    def setPinSize(value: Double): Self = StObject.set(x, "pinSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineThickness(value: Double): Self = this.set("lineThickness", value.asInstanceOf[js.Any])
+    def setPinSizeUndefined: Self = StObject.set(x, "pinSize", js.undefined)
     
     @scala.inline
-    def deleteLineThickness: Self = this.set("lineThickness", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinSize(value: Double): Self = this.set("pinSize", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deletePinSize: Self = this.set("pinSize", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

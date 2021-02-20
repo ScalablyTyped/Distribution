@@ -5,6 +5,7 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.Blob
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

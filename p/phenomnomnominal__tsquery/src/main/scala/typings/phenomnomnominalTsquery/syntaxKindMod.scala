@@ -1,17 +1,14 @@
 package typings.phenomnomnominalTsquery
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.typescript.mod.SyntaxKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@phenomnomnominal/tsquery/dist/src/syntax-kind", JSImport.Namespace)
-@js.native
-object syntaxKindMod extends js.Object {
+object syntaxKindMod {
   
-  def syntaxKindName(kind: SyntaxKind): String = js.native
-  
+  @JSImport("@phenomnomnominal/tsquery/dist/src/syntax-kind", "syntaxKindName")
   @js.native
-  object syntaxKindMap extends /* key */ StringDictionary[String]
+  def syntaxKindName(kind: SyntaxKind): String = js.native
 }

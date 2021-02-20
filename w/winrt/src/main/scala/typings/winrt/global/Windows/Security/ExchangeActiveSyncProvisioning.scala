@@ -1,27 +1,30 @@
 package typings.winrt.global.Windows.Security
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning")
-@js.native
-object ExchangeActiveSyncProvisioning extends js.Object {
+object ExchangeActiveSyncProvisioning {
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation")
   @js.native
   class EasClientDeviceInformation ()
     extends typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy")
   @js.native
   class EasClientSecurityPolicy ()
     extends typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults")
   @js.native
   class EasComplianceResults ()
     extends typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasDisallowConvenienceLogonResult")
   @js.native
-  object EasDisallowConvenienceLogonResult extends js.Object {
+  object EasDisallowConvenienceLogonResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -37,8 +40,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
     /* 3 */ val requestedPolicyIsStricter: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasDisallowConvenienceLogonResult.requestedPolicyIsStricter with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult")
   @js.native
-  object EasMaxInactivityTimeLockResult extends js.Object {
+  object EasMaxInactivityTimeLockResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -56,8 +60,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
     /* 3 */ val requestedPolicyIsStricter: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult.requestedPolicyIsStricter with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult")
   @js.native
-  object EasMaxPasswordFailedAttemptsResult extends js.Object {
+  object EasMaxPasswordFailedAttemptsResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -75,8 +80,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
     /* 3 */ val requestedPolicyIsStricter: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.requestedPolicyIsStricter with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordComplexCharactersResult")
   @js.native
-  object EasMinPasswordComplexCharactersResult extends js.Object {
+  object EasMinPasswordComplexCharactersResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -114,8 +120,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
     /* 8 */ val userCannotChangePassword: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordComplexCharactersResult.userCannotChangePassword with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordLengthResult")
   @js.native
-  object EasMinPasswordLengthResult extends js.Object {
+  object EasMinPasswordLengthResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -153,8 +160,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
     /* 8 */ val userCannotChangePassword: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordLengthResult.userCannotChangePassword with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult")
   @js.native
-  object EasPasswordExpirationResult extends js.Object {
+  object EasPasswordExpirationResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -180,8 +188,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
     /* 6 */ val userCannotChangePassword: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.userCannotChangePassword with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordHistoryResult")
   @js.native
-  object EasPasswordHistoryResult extends js.Object {
+  object EasPasswordHistoryResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -199,8 +208,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
     /* 3 */ val requestedPolicyIsStricter: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordHistoryResult.requestedPolicyIsStricter with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult")
   @js.native
-  object EasRequireEncryptionResult extends js.Object {
+  object EasRequireEncryptionResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[

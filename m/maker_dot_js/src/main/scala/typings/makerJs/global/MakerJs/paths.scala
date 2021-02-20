@@ -3,17 +3,17 @@ package typings.makerJs.global.MakerJs
 import typings.makerJs.MakerJs.IPathArc
 import typings.makerJs.MakerJs.IPathLine
 import typings.makerJs.MakerJs.IPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MakerJs.paths")
-@js.native
-object paths extends js.Object {
+object paths {
   
   /**
     * Class for arc path.
     */
+  @JSGlobal("MakerJs.paths.Arc")
   @js.native
   class Arc protected ()
     extends typings.makerJs.MakerJs.paths.Arc {
@@ -60,6 +60,7 @@ object paths extends js.Object {
     *
     * @param arc Arc to use as the basic for the chord.
     */
+  @JSGlobal("MakerJs.paths.Chord")
   @js.native
   class Chord protected ()
     extends typings.makerJs.MakerJs.paths.Chord {
@@ -69,6 +70,7 @@ object paths extends js.Object {
   /**
     * Class for circle path.
     */
+  @JSGlobal("MakerJs.paths.Circle")
   @js.native
   class Circle protected ()
     extends typings.makerJs.MakerJs.paths.Circle {
@@ -125,6 +127,7 @@ object paths extends js.Object {
   /**
     * Class for line path.
     */
+  @JSGlobal("MakerJs.paths.Line")
   @js.native
   class Line protected ()
     extends typings.makerJs.MakerJs.paths.Line {
@@ -150,6 +153,7 @@ object paths extends js.Object {
     * @param distance Distance between parallel and original line.
     * @param nearPoint Any point to determine which side of the line to place the parallel.
     */
+  @JSGlobal("MakerJs.paths.Parallel")
   @js.native
   class Parallel protected ()
     extends typings.makerJs.MakerJs.paths.Parallel {

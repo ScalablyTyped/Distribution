@@ -5,14 +5,14 @@ import typings.pulumiAws.devicefarmProjectMod.ProjectState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/devicefarm", JSImport.Namespace)
-@js.native
-object devicefarmMod extends js.Object {
+object devicefarmMod {
   
+  @JSImport("@pulumi/aws/devicefarm", "Project")
   @js.native
   class Project protected ()
     extends typings.pulumiAws.devicefarmProjectMod.Project {
@@ -29,8 +29,7 @@ object devicefarmMod extends js.Object {
     def this(name: String, args: ProjectArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Project extends js.Object {
+  object Project {
     
     /**
       * Get an existing Project resource's state with the given name, ID, and optional extra
@@ -41,15 +40,25 @@ object devicefarmMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/devicefarm", "Project.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.devicefarmProjectMod.Project = js.native
+    @JSImport("@pulumi/aws/devicefarm", "Project.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.devicefarmProjectMod.Project = js.native
+    @JSImport("@pulumi/aws/devicefarm", "Project.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ProjectState): typings.pulumiAws.devicefarmProjectMod.Project = js.native
+    @JSImport("@pulumi/aws/devicefarm", "Project.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ProjectState, opts: CustomResourceOptions): typings.pulumiAws.devicefarmProjectMod.Project = js.native
     
     /**
       * Returns true if the given object is an instance of Project.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/devicefarm", "Project.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/devicefarm/project.Project */ Boolean = js.native
   }
 }

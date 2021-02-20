@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobConfigurationTableCopy extends js.Object {
+trait JobConfigurationTableCopy extends StObject {
   
   /**
     * [Optional] Specifies whether the job is allowed to create new tables. The following values are supported: CREATE_IF_NEEDED: If the table does not exist, BigQuery creates the table.
@@ -49,69 +50,57 @@ object JobConfigurationTableCopy {
   }
   
   @scala.inline
-  implicit class JobConfigurationTableCopyOps[Self <: JobConfigurationTableCopy] (val x: Self) extends AnyVal {
+  implicit class JobConfigurationTableCopyMutableBuilder[Self <: JobConfigurationTableCopy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDisposition(value: String): Self = StObject.set(x, "createDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDispositionUndefined: Self = StObject.set(x, "createDisposition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDisposition(value: String): Self = this.set("createDisposition", value.asInstanceOf[js.Any])
+    def setDestinationEncryptionConfigurationUndefined: Self = StObject.set(x, "destinationEncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCreateDisposition: Self = this.set("createDisposition", js.undefined)
+    def setDestinationExpirationTime(value: js.Any): Self = StObject.set(x, "destinationExpirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
+    def setDestinationExpirationTimeUndefined: Self = StObject.set(x, "destinationExpirationTime", js.undefined)
     
     @scala.inline
-    def deleteDestinationEncryptionConfiguration: Self = this.set("destinationEncryptionConfiguration", js.undefined)
+    def setDestinationTable(value: TableReference): Self = StObject.set(x, "destinationTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationExpirationTime(value: js.Any): Self = this.set("destinationExpirationTime", value.asInstanceOf[js.Any])
+    def setDestinationTableUndefined: Self = StObject.set(x, "destinationTable", js.undefined)
     
     @scala.inline
-    def deleteDestinationExpirationTime: Self = this.set("destinationExpirationTime", js.undefined)
+    def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationTable(value: TableReference): Self = this.set("destinationTable", value.asInstanceOf[js.Any])
+    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
     @scala.inline
-    def deleteDestinationTable: Self = this.set("destinationTable", js.undefined)
+    def setSourceTable(value: TableReference): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: String): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
     
     @scala.inline
-    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    def setSourceTables(value: js.Array[TableReference]): Self = StObject.set(x, "sourceTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceTable(value: TableReference): Self = this.set("sourceTable", value.asInstanceOf[js.Any])
+    def setSourceTablesUndefined: Self = StObject.set(x, "sourceTables", js.undefined)
     
     @scala.inline
-    def deleteSourceTable: Self = this.set("sourceTable", js.undefined)
+    def setSourceTablesVarargs(value: TableReference*): Self = StObject.set(x, "sourceTables", js.Array(value :_*))
     
     @scala.inline
-    def setSourceTablesVarargs(value: TableReference*): Self = this.set("sourceTables", js.Array(value :_*))
+    def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceTables(value: js.Array[TableReference]): Self = this.set("sourceTables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceTables: Self = this.set("sourceTables", js.undefined)
-    
-    @scala.inline
-    def setWriteDisposition(value: String): Self = this.set("writeDisposition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteDisposition: Self = this.set("writeDisposition", js.undefined)
+    def setWriteDispositionUndefined: Self = StObject.set(x, "writeDisposition", js.undefined)
   }
 }

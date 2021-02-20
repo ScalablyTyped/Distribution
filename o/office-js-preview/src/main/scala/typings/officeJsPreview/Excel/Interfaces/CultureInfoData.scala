@@ -1,12 +1,13 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `cultureInfo.toJSON()`. */
 @js.native
-trait CultureInfoData extends js.Object {
+trait CultureInfoData extends StObject {
   
   /**
     *
@@ -41,36 +42,24 @@ object CultureInfoData {
   }
   
   @scala.inline
-  implicit class CultureInfoDataOps[Self <: CultureInfoData] (val x: Self) extends AnyVal {
+  implicit class CultureInfoDataMutableBuilder[Self <: CultureInfoData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatetimeFormat(value: DatetimeFormatInfoData): Self = StObject.set(x, "datetimeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatetimeFormatUndefined: Self = StObject.set(x, "datetimeFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatetimeFormat(value: DatetimeFormatInfoData): Self = this.set("datetimeFormat", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDatetimeFormat: Self = this.set("datetimeFormat", js.undefined)
+    def setNumberFormat(value: NumberFormatInfoData): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNumberFormat(value: NumberFormatInfoData): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.plotlyJs.plotlyJsStrings.bottom
 import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delta extends js.Object {
+trait Delta extends StObject {
   
   var decreasing: Symbol = js.native
   
@@ -40,36 +41,24 @@ object Delta {
   }
   
   @scala.inline
-  implicit class DeltaOps[Self <: Delta] (val x: Self) extends AnyVal {
+  implicit class DeltaMutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecreasing(value: Symbol): Self = StObject.set(x, "decreasing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncreasing(value: Symbol): Self = StObject.set(x, "increasing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: top | bottom | left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecreasing(value: Symbol): Self = this.set("decreasing", value.asInstanceOf[js.Any])
+    def setReference(value: Double): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncreasing(value: Symbol): Self = this.set("increasing", value.asInstanceOf[js.Any])
+    def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: top | bottom | left | right): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReference(value: Double): Self = this.set("reference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelative(value: Boolean): Self = this.set("relative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueformat(value: String): Self = this.set("valueformat", value.asInstanceOf[js.Any])
+    def setValueformat(value: String): Self = StObject.set(x, "valueformat", value.asInstanceOf[js.Any])
   }
 }

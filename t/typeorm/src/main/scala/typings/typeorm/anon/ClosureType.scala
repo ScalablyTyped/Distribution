@@ -4,12 +4,13 @@ import typings.typeorm.columnMetadataArgsMod.ColumnMetadataArgs
 import typings.typeorm.columnMetadataMod.ColumnMetadata
 import typings.typeorm.typeormStrings.ancestor
 import typings.typeorm.typeormStrings.descendant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClosureType extends js.Object {
+trait ClosureType extends StObject {
   
   var args: ColumnMetadataArgs = js.native
   
@@ -42,63 +43,51 @@ object ClosureType {
   }
   
   @scala.inline
-  implicit class ClosureTypeOps[Self <: ClosureType] (val x: Self) extends AnyVal {
+  implicit class ClosureTypeMutableBuilder[Self <: ClosureType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: ColumnMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClosureType(value: ancestor | descendant): Self = StObject.set(x, "closureType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClosureTypeUndefined: Self = StObject.set(x, "closureType", js.undefined)
     
     @scala.inline
-    def setArgs(value: ColumnMetadataArgs): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setConnection(value: typings.typeorm.connectionMod.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: typings.typeorm.connectionMod.Connection): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setEmbeddedMetadata(value: typings.typeorm.embeddedMetadataMod.EmbeddedMetadata): Self = StObject.set(x, "embeddedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = this.set("entityMetadata", value.asInstanceOf[js.Any])
+    def setEmbeddedMetadataUndefined: Self = StObject.set(x, "embeddedMetadata", js.undefined)
     
     @scala.inline
-    def setClosureType(value: ancestor | descendant): Self = this.set("closureType", value.asInstanceOf[js.Any])
+    def setEntityMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClosureType: Self = this.set("closureType", js.undefined)
+    def setMaterializedPath(value: Boolean): Self = StObject.set(x, "materializedPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedMetadata(value: typings.typeorm.embeddedMetadataMod.EmbeddedMetadata): Self = this.set("embeddedMetadata", value.asInstanceOf[js.Any])
+    def setMaterializedPathUndefined: Self = StObject.set(x, "materializedPath", js.undefined)
     
     @scala.inline
-    def deleteEmbeddedMetadata: Self = this.set("embeddedMetadata", js.undefined)
+    def setNestedSetLeft(value: Boolean): Self = StObject.set(x, "nestedSetLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterializedPath(value: Boolean): Self = this.set("materializedPath", value.asInstanceOf[js.Any])
+    def setNestedSetLeftUndefined: Self = StObject.set(x, "nestedSetLeft", js.undefined)
     
     @scala.inline
-    def deleteMaterializedPath: Self = this.set("materializedPath", js.undefined)
+    def setNestedSetRight(value: Boolean): Self = StObject.set(x, "nestedSetRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedSetLeft(value: Boolean): Self = this.set("nestedSetLeft", value.asInstanceOf[js.Any])
+    def setNestedSetRightUndefined: Self = StObject.set(x, "nestedSetRight", js.undefined)
     
     @scala.inline
-    def deleteNestedSetLeft: Self = this.set("nestedSetLeft", js.undefined)
+    def setReferencedColumn(value: ColumnMetadata): Self = StObject.set(x, "referencedColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedSetRight(value: Boolean): Self = this.set("nestedSetRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNestedSetRight: Self = this.set("nestedSetRight", js.undefined)
-    
-    @scala.inline
-    def setReferencedColumn(value: ColumnMetadata): Self = this.set("referencedColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferencedColumn: Self = this.set("referencedColumn", js.undefined)
+    def setReferencedColumnUndefined: Self = StObject.set(x, "referencedColumn", js.undefined)
   }
 }

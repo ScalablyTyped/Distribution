@@ -1,11 +1,12 @@
 package typings.awsSdk.worklinkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDevicePolicyConfigurationResponse extends js.Object {
+trait DescribeDevicePolicyConfigurationResponse extends StObject {
   
   /**
     * The certificate chain, including intermediate certificates and the root certificate authority certificate used to issue device certificates.
@@ -21,24 +22,12 @@ object DescribeDevicePolicyConfigurationResponse {
   }
   
   @scala.inline
-  implicit class DescribeDevicePolicyConfigurationResponseOps[Self <: DescribeDevicePolicyConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDevicePolicyConfigurationResponseMutableBuilder[Self <: DescribeDevicePolicyConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceCaCertificate(value: Certificate): Self = StObject.set(x, "DeviceCaCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceCaCertificate(value: Certificate): Self = this.set("DeviceCaCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceCaCertificate: Self = this.set("DeviceCaCertificate", js.undefined)
+    def setDeviceCaCertificateUndefined: Self = StObject.set(x, "DeviceCaCertificate", js.undefined)
   }
 }

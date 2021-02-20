@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionSettings extends js.Object {
+trait ConnectionSettings extends StObject {
   
   /**
     * The time, in seconds, that the connection is allowed to be idle (no data has been sent over the connection) before it is closed by the load balancer.
@@ -21,21 +22,9 @@ object ConnectionSettings {
   }
   
   @scala.inline
-  implicit class ConnectionSettingsOps[Self <: ConnectionSettings] (val x: Self) extends AnyVal {
+  implicit class ConnectionSettingsMutableBuilder[Self <: ConnectionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIdleTimeout(value: IdleTimeout): Self = this.set("IdleTimeout", value.asInstanceOf[js.Any])
+    def setIdleTimeout(value: IdleTimeout): Self = StObject.set(x, "IdleTimeout", value.asInstanceOf[js.Any])
   }
 }

@@ -1,17 +1,17 @@
 package typings.opentelemetrySemanticConventions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/semantic-conventions", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val ExceptionEventName: /* "exception" */ String = js.native
-  
-  @js.native
-  object DatabaseAttribute extends js.Object {
+  object DatabaseAttribute {
+    
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The name of the keyspace being accessed. To be used instead of the generic db.name attribute.
@@ -19,7 +19,11 @@ object mod extends js.Object {
       * @remarks
       * Required.
       */
-    var DB_CASSANDRA_KEYSPACE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_CASSANDRA_KEYSPACE")
+    @js.native
+    def DB_CASSANDRA_KEYSPACE: String = js.native
+    @scala.inline
+    def DB_CASSANDRA_KEYSPACE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_CASSANDRA_KEYSPACE")(x.asInstanceOf[js.Any])
     
     /**
       * The connection string used to connect to the database.
@@ -28,7 +32,11 @@ object mod extends js.Object {
       * @remarks
       * Optional.
       */
-    var DB_CONNECTION_STRING: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_CONNECTION_STRING")
+    @js.native
+    def DB_CONNECTION_STRING: String = js.native
+    @scala.inline
+    def DB_CONNECTION_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_CONNECTION_STRING")(x.asInstanceOf[js.Any])
     
     /**
       * The [HBase namespace](https://hbase.apache.org/book.html#_namespace) being accessed.
@@ -37,10 +45,18 @@ object mod extends js.Object {
       * @remarks
       * Required.
       */
-    var DB_HBASE_NAMESPACE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_HBASE_NAMESPACE")
+    @js.native
+    def DB_HBASE_NAMESPACE: String = js.native
+    @scala.inline
+    def DB_HBASE_NAMESPACE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_HBASE_NAMESPACE")(x.asInstanceOf[js.Any])
     
     /** Deprecated. Not in spec. */
-    var DB_INSTANCE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_INSTANCE")
+    @js.native
+    def DB_INSTANCE: String = js.native
+    @scala.inline
+    def DB_INSTANCE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_INSTANCE")(x.asInstanceOf[js.Any])
     
     /**
       * The fully-qualified class name of the Java Database Connectivity (JDBC) driver used to connect,
@@ -49,7 +65,11 @@ object mod extends js.Object {
       * @remarks
       * Optional.
       */
-    var DB_JDBC_DRIVER_CLASSNAME: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_JDBC_DRIVER_CLASSNAME")
+    @js.native
+    def DB_JDBC_DRIVER_CLASSNAME: String = js.native
+    @scala.inline
+    def DB_JDBC_DRIVER_CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_JDBC_DRIVER_CLASSNAME")(x.asInstanceOf[js.Any])
     
     /**
       * The collection being accessed within the database stated in db.name.
@@ -57,7 +77,11 @@ object mod extends js.Object {
       * @remarks
       * Required.
       */
-    var DB_MONGODB_COLLECTION: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_MONGODB_COLLECTION")
+    @js.native
+    def DB_MONGODB_COLLECTION: String = js.native
+    @scala.inline
+    def DB_MONGODB_COLLECTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_MONGODB_COLLECTION")(x.asInstanceOf[js.Any])
     
     /**
       * The instance name connecting to.
@@ -67,7 +91,11 @@ object mod extends js.Object {
       * If setting a `db.mssql.instance_name`,
       * `net.peer.port` is no longer required (but still recommended if non-standard)
       */
-    var DB_MSSSQL_INSTANCE_NAME: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_MSSSQL_INSTANCE_NAME")
+    @js.native
+    def DB_MSSSQL_INSTANCE_NAME: String = js.native
+    @scala.inline
+    def DB_MSSSQL_INSTANCE_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_MSSSQL_INSTANCE_NAME")(x.asInstanceOf[js.Any])
     
     /**
       * If no [tech-specific attribute](https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/trace/semantic_conventions/database.md#call-level-attributes-for-specific-technologies)
@@ -79,7 +107,11 @@ object mod extends js.Object {
       * @remarks
       * Required if applicable and no more specific attribute is defined.
       */
-    var DB_NAME: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_NAME")
+    @js.native
+    def DB_NAME: String = js.native
+    @scala.inline
+    def DB_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_NAME")(x.asInstanceOf[js.Any])
     
     /**
       * The name of the operation being executed,
@@ -92,7 +124,11 @@ object mod extends js.Object {
       * @remarks
       * Required if db.statement is not applicable.
       */
-    var DB_OPERATION: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_OPERATION")
+    @js.native
+    def DB_OPERATION: String = js.native
+    @scala.inline
+    def DB_OPERATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_OPERATION")(x.asInstanceOf[js.Any])
     
     /**
       * The index of the database being accessed as used in the [SELECT command](https://redis.io/commands/select),
@@ -101,7 +137,11 @@ object mod extends js.Object {
       * @remarks
       * Required if other than the default database (0).
       */
-    var DB_REDIS_DATABASE_INDEX: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_REDIS_DATABASE_INDEX")
+    @js.native
+    def DB_REDIS_DATABASE_INDEX: String = js.native
+    @scala.inline
+    def DB_REDIS_DATABASE_INDEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_REDIS_DATABASE_INDEX")(x.asInstanceOf[js.Any])
     
     /**
       * The database statement being executed.
@@ -112,7 +152,11 @@ object mod extends js.Object {
       * @remarks
       * Required if applicable.
       */
-    var DB_STATEMENT: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_STATEMENT")
+    @js.native
+    def DB_STATEMENT: String = js.native
+    @scala.inline
+    def DB_STATEMENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_STATEMENT")(x.asInstanceOf[js.Any])
     
     /**
       * An identifier for the database management system (DBMS) product being used.
@@ -120,13 +164,25 @@ object mod extends js.Object {
       * @remarks
       * Required.
       */
-    var DB_SYSTEM: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_SYSTEM")
+    @js.native
+    def DB_SYSTEM: String = js.native
+    @scala.inline
+    def DB_SYSTEM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_SYSTEM")(x.asInstanceOf[js.Any])
     
     /** Deprecated. Not in spec. */
-    var DB_TYPE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_TYPE")
+    @js.native
+    def DB_TYPE: String = js.native
+    @scala.inline
+    def DB_TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_TYPE")(x.asInstanceOf[js.Any])
     
     /** Deprecated. Not in spec. */
-    var DB_URL: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_URL")
+    @js.native
+    def DB_URL: String = js.native
+    @scala.inline
+    def DB_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_URL")(x.asInstanceOf[js.Any])
     
     /**
       * Username for accessing the database, e.g., "readonly_user" or "reporting_user".
@@ -134,89 +190,242 @@ object mod extends js.Object {
       * @remarks
       * Optional.
       */
-    var DB_USER: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "DatabaseAttribute.DB_USER")
+    @js.native
+    def DB_USER: String = js.native
+    @scala.inline
+    def DB_USER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DB_USER")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object ExceptionAttribute extends js.Object {
+  object ExceptionAttribute {
     
-    var MESSAGE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "ExceptionAttribute")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var STACKTRACE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "ExceptionAttribute.MESSAGE")
+    @js.native
+    def MESSAGE: String = js.native
+    @scala.inline
+    def MESSAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MESSAGE")(x.asInstanceOf[js.Any])
     
-    var TYPE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "ExceptionAttribute.STACKTRACE")
+    @js.native
+    def STACKTRACE: String = js.native
+    @scala.inline
+    def STACKTRACE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STACKTRACE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@opentelemetry/semantic-conventions", "ExceptionAttribute.TYPE")
+    @js.native
+    def TYPE: String = js.native
+    @scala.inline
+    def TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@opentelemetry/semantic-conventions", "ExceptionEventName")
   @js.native
-  object GeneralAttribute extends js.Object {
+  val ExceptionEventName: /* "exception" */ String = js.native
+  
+  object GeneralAttribute {
     
-    var INPROC: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var IP_TCP: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.INPROC")
+    @js.native
+    def INPROC: String = js.native
+    @scala.inline
+    def INPROC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPROC")(x.asInstanceOf[js.Any])
     
-    var IP_UDP: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.IP_TCP")
+    @js.native
+    def IP_TCP: String = js.native
+    @scala.inline
+    def IP_TCP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IP_TCP")(x.asInstanceOf[js.Any])
     
-    var NET_HOST_IP: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.IP_UDP")
+    @js.native
+    def IP_UDP: String = js.native
+    @scala.inline
+    def IP_UDP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IP_UDP")(x.asInstanceOf[js.Any])
     
-    var NET_HOST_NAME: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_HOST_IP")
+    @js.native
+    def NET_HOST_IP: String = js.native
+    @scala.inline
+    def NET_HOST_IP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_HOST_IP")(x.asInstanceOf[js.Any])
     
-    var NET_HOST_PORT: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_HOST_NAME")
+    @js.native
+    def NET_HOST_NAME: String = js.native
+    @scala.inline
+    def NET_HOST_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_HOST_NAME")(x.asInstanceOf[js.Any])
     
-    var NET_PEER_ADDRESS: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_HOST_PORT")
+    @js.native
+    def NET_HOST_PORT: String = js.native
+    @scala.inline
+    def NET_HOST_PORT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_HOST_PORT")(x.asInstanceOf[js.Any])
     
-    var NET_PEER_HOSTNAME: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_PEER_ADDRESS")
+    @js.native
+    def NET_PEER_ADDRESS: String = js.native
+    @scala.inline
+    def NET_PEER_ADDRESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_PEER_ADDRESS")(x.asInstanceOf[js.Any])
     
-    var NET_PEER_IP: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_PEER_HOSTNAME")
+    @js.native
+    def NET_PEER_HOSTNAME: String = js.native
+    @scala.inline
+    def NET_PEER_HOSTNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_PEER_HOSTNAME")(x.asInstanceOf[js.Any])
     
-    var NET_PEER_IPV4: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_PEER_IP")
+    @js.native
+    def NET_PEER_IP: String = js.native
     
-    var NET_PEER_IPV6: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_PEER_IPV4")
+    @js.native
+    def NET_PEER_IPV4: String = js.native
+    @scala.inline
+    def NET_PEER_IPV4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_PEER_IPV4")(x.asInstanceOf[js.Any])
     
-    var NET_PEER_NAME: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_PEER_IPV6")
+    @js.native
+    def NET_PEER_IPV6: String = js.native
+    @scala.inline
+    def NET_PEER_IPV6_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_PEER_IPV6")(x.asInstanceOf[js.Any])
     
-    var NET_PEER_PORT: String = js.native
+    @scala.inline
+    def NET_PEER_IP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_PEER_IP")(x.asInstanceOf[js.Any])
     
-    var NET_PEER_SERVICE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_PEER_NAME")
+    @js.native
+    def NET_PEER_NAME: String = js.native
+    @scala.inline
+    def NET_PEER_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_PEER_NAME")(x.asInstanceOf[js.Any])
     
-    var NET_TRANSPORT: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_PEER_PORT")
+    @js.native
+    def NET_PEER_PORT: String = js.native
+    @scala.inline
+    def NET_PEER_PORT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_PEER_PORT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_PEER_SERVICE")
+    @js.native
+    def NET_PEER_SERVICE: String = js.native
+    @scala.inline
+    def NET_PEER_SERVICE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_PEER_SERVICE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@opentelemetry/semantic-conventions", "GeneralAttribute.NET_TRANSPORT")
+    @js.native
+    def NET_TRANSPORT: String = js.native
+    @scala.inline
+    def NET_TRANSPORT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NET_TRANSPORT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object HttpAttribute extends js.Object {
+  object HttpAttribute {
     
-    var HTTP_CLIENT_IP: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var HTTP_ERROR_MESSAGE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_CLIENT_IP")
+    @js.native
+    def HTTP_CLIENT_IP: String = js.native
+    @scala.inline
+    def HTTP_CLIENT_IP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_CLIENT_IP")(x.asInstanceOf[js.Any])
     
-    var HTTP_ERROR_NAME: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_ERROR_MESSAGE")
+    @js.native
+    def HTTP_ERROR_MESSAGE: String = js.native
+    @scala.inline
+    def HTTP_ERROR_MESSAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_ERROR_MESSAGE")(x.asInstanceOf[js.Any])
     
-    var HTTP_FLAVOR: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_ERROR_NAME")
+    @js.native
+    def HTTP_ERROR_NAME: String = js.native
+    @scala.inline
+    def HTTP_ERROR_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_ERROR_NAME")(x.asInstanceOf[js.Any])
     
-    var HTTP_HOST: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_FLAVOR")
+    @js.native
+    def HTTP_FLAVOR: String = js.native
+    @scala.inline
+    def HTTP_FLAVOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_FLAVOR")(x.asInstanceOf[js.Any])
     
-    var HTTP_METHOD: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_HOST")
+    @js.native
+    def HTTP_HOST: String = js.native
+    @scala.inline
+    def HTTP_HOST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_HOST")(x.asInstanceOf[js.Any])
     
-    var HTTP_RESPONSE_CONTENT_LENGTH: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_METHOD")
+    @js.native
+    def HTTP_METHOD: String = js.native
+    @scala.inline
+    def HTTP_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_METHOD")(x.asInstanceOf[js.Any])
     
-    var HTTP_ROUTE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_RESPONSE_CONTENT_LENGTH")
+    @js.native
+    def HTTP_RESPONSE_CONTENT_LENGTH: String = js.native
+    @scala.inline
+    def HTTP_RESPONSE_CONTENT_LENGTH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_RESPONSE_CONTENT_LENGTH")(x.asInstanceOf[js.Any])
     
-    var HTTP_SCHEME: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_ROUTE")
+    @js.native
+    def HTTP_ROUTE: String = js.native
+    @scala.inline
+    def HTTP_ROUTE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_ROUTE")(x.asInstanceOf[js.Any])
     
-    var HTTP_SERVER_NAME: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_SCHEME")
+    @js.native
+    def HTTP_SCHEME: String = js.native
+    @scala.inline
+    def HTTP_SCHEME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_SCHEME")(x.asInstanceOf[js.Any])
     
-    var HTTP_STATUS_CODE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_SERVER_NAME")
+    @js.native
+    def HTTP_SERVER_NAME: String = js.native
+    @scala.inline
+    def HTTP_SERVER_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_SERVER_NAME")(x.asInstanceOf[js.Any])
     
-    var HTTP_STATUS_TEXT: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_STATUS_CODE")
+    @js.native
+    def HTTP_STATUS_CODE: String = js.native
+    @scala.inline
+    def HTTP_STATUS_CODE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_STATUS_CODE")(x.asInstanceOf[js.Any])
     
-    var HTTP_TARGET: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_STATUS_TEXT")
+    @js.native
+    def HTTP_STATUS_TEXT: String = js.native
+    @scala.inline
+    def HTTP_STATUS_TEXT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_STATUS_TEXT")(x.asInstanceOf[js.Any])
     
-    var HTTP_URL: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_TARGET")
+    @js.native
+    def HTTP_TARGET: String = js.native
+    @scala.inline
+    def HTTP_TARGET_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_TARGET")(x.asInstanceOf[js.Any])
     
-    var HTTP_USER_AGENT: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_URL")
+    @js.native
+    def HTTP_URL: String = js.native
+    @scala.inline
+    def HTTP_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_URL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@opentelemetry/semantic-conventions", "HttpAttribute.HTTP_USER_AGENT")
+    @js.native
+    def HTTP_USER_AGENT: String = js.native
+    @scala.inline
+    def HTTP_USER_AGENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_USER_AGENT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object OperatingSystem extends js.Object {
+  object OperatingSystem {
+    
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystem")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Human readable (not intended to be parsed) OS version information.
@@ -225,7 +434,11 @@ object mod extends js.Object {
       * @remarks
       * Required if applicable.
       */
-    var DESCRIPTION: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystem.DESCRIPTION")
+    @js.native
+    def DESCRIPTION: String = js.native
+    @scala.inline
+    def DESCRIPTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DESCRIPTION")(x.asInstanceOf[js.Any])
     
     /**
       * The operating system type.
@@ -235,48 +448,126 @@ object mod extends js.Object {
       * @remarks
       * Required.
       */
-    var TYPE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystem.TYPE")
+    @js.native
+    def TYPE: String = js.native
+    @scala.inline
+    def TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object OperatingSystemValues extends js.Object {
+  object OperatingSystemValues {
     
-    var AIX: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var DARWIN: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.AIX")
+    @js.native
+    def AIX: String = js.native
+    @scala.inline
+    def AIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AIX")(x.asInstanceOf[js.Any])
     
-    var DRAGONFLYBSD: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.DARWIN")
+    @js.native
+    def DARWIN: String = js.native
+    @scala.inline
+    def DARWIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARWIN")(x.asInstanceOf[js.Any])
     
-    var FREEBSD: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.DRAGONFLYBSD")
+    @js.native
+    def DRAGONFLYBSD: String = js.native
+    @scala.inline
+    def DRAGONFLYBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAGONFLYBSD")(x.asInstanceOf[js.Any])
     
-    var HPUX: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.FREEBSD")
+    @js.native
+    def FREEBSD: String = js.native
+    @scala.inline
+    def FREEBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FREEBSD")(x.asInstanceOf[js.Any])
     
-    var LINUX: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.HPUX")
+    @js.native
+    def HPUX: String = js.native
+    @scala.inline
+    def HPUX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HPUX")(x.asInstanceOf[js.Any])
     
-    var NETBSD: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.LINUX")
+    @js.native
+    def LINUX: String = js.native
+    @scala.inline
+    def LINUX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
     
-    var OPENBSD: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.NETBSD")
+    @js.native
+    def NETBSD: String = js.native
+    @scala.inline
+    def NETBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NETBSD")(x.asInstanceOf[js.Any])
     
-    var SOLARIS: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.OPENBSD")
+    @js.native
+    def OPENBSD: String = js.native
+    @scala.inline
+    def OPENBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENBSD")(x.asInstanceOf[js.Any])
     
-    var WINDOWS: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.SOLARIS")
+    @js.native
+    def SOLARIS: String = js.native
+    @scala.inline
+    def SOLARIS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SOLARIS")(x.asInstanceOf[js.Any])
     
-    var ZOS: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.WINDOWS")
+    @js.native
+    def WINDOWS: String = js.native
+    @scala.inline
+    def WINDOWS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@opentelemetry/semantic-conventions", "OperatingSystemValues.ZOS")
+    @js.native
+    def ZOS: String = js.native
+    @scala.inline
+    def ZOS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZOS")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object RpcAttribute extends js.Object {
+  object RpcAttribute {
     
-    var GRPC_ERROR_MESSAGE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "RpcAttribute")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var GRPC_ERROR_NAME: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "RpcAttribute.GRPC_ERROR_MESSAGE")
+    @js.native
+    def GRPC_ERROR_MESSAGE: String = js.native
+    @scala.inline
+    def GRPC_ERROR_MESSAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRPC_ERROR_MESSAGE")(x.asInstanceOf[js.Any])
     
-    var GRPC_KIND: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "RpcAttribute.GRPC_ERROR_NAME")
+    @js.native
+    def GRPC_ERROR_NAME: String = js.native
+    @scala.inline
+    def GRPC_ERROR_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRPC_ERROR_NAME")(x.asInstanceOf[js.Any])
     
-    var GRPC_METHOD: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "RpcAttribute.GRPC_KIND")
+    @js.native
+    def GRPC_KIND: String = js.native
+    @scala.inline
+    def GRPC_KIND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRPC_KIND")(x.asInstanceOf[js.Any])
     
-    var GRPC_STATUS_CODE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "RpcAttribute.GRPC_METHOD")
+    @js.native
+    def GRPC_METHOD: String = js.native
+    @scala.inline
+    def GRPC_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRPC_METHOD")(x.asInstanceOf[js.Any])
     
-    var RPC_SERVICE: String = js.native
+    @JSImport("@opentelemetry/semantic-conventions", "RpcAttribute.GRPC_STATUS_CODE")
+    @js.native
+    def GRPC_STATUS_CODE: String = js.native
+    @scala.inline
+    def GRPC_STATUS_CODE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRPC_STATUS_CODE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@opentelemetry/semantic-conventions", "RpcAttribute.RPC_SERVICE")
+    @js.native
+    def RPC_SERVICE: String = js.native
+    @scala.inline
+    def RPC_SERVICE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RPC_SERVICE")(x.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.beforeScriptExecution
 import typings.devtoolsProtocol.devtoolsProtocolStrings.beforeScriptWithSourceMapExecution
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetInstrumentationBreakpointRequest extends js.Object {
+trait SetInstrumentationBreakpointRequest extends StObject {
   
   /**
     * Instrumentation name. (SetInstrumentationBreakpointRequestInstrumentation enum)
@@ -23,21 +24,9 @@ object SetInstrumentationBreakpointRequest {
   }
   
   @scala.inline
-  implicit class SetInstrumentationBreakpointRequestOps[Self <: SetInstrumentationBreakpointRequest] (val x: Self) extends AnyVal {
+  implicit class SetInstrumentationBreakpointRequestMutableBuilder[Self <: SetInstrumentationBreakpointRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstrumentation(value: beforeScriptExecution | beforeScriptWithSourceMapExecution): Self = this.set("instrumentation", value.asInstanceOf[js.Any])
+    def setInstrumentation(value: beforeScriptExecution | beforeScriptWithSourceMapExecution): Self = StObject.set(x, "instrumentation", value.asInstanceOf[js.Any])
   }
 }

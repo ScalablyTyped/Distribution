@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PowerFormFormDataEnvelope extends js.Object {
+trait PowerFormFormDataEnvelope extends StObject {
   
   /**
     * The envelope's GUID.
@@ -28,33 +29,21 @@ object PowerFormFormDataEnvelope {
   }
   
   @scala.inline
-  implicit class PowerFormFormDataEnvelopeOps[Self <: PowerFormFormDataEnvelope] (val x: Self) extends AnyVal {
+  implicit class PowerFormFormDataEnvelopeMutableBuilder[Self <: PowerFormFormDataEnvelope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecipients(value: js.Array[PowerFormFormDataRecipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeId(value: String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
-    
-    @scala.inline
-    def setRecipientsVarargs(value: PowerFormFormDataRecipient*): Self = this.set("recipients", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecipients(value: js.Array[PowerFormFormDataRecipient]): Self = this.set("recipients", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    def setRecipientsVarargs(value: PowerFormFormDataRecipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3OrderUpdate extends js.Object {
+trait GoogleActionsOrdersV3OrderUpdate extends StObject {
   
   var order: js.UndefOr[GoogleActionsOrdersV3Order] = js.native
   
@@ -52,48 +53,36 @@ object GoogleActionsOrdersV3OrderUpdate {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3OrderUpdateOps[Self <: GoogleActionsOrdersV3OrderUpdate] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3OrderUpdateMutableBuilder[Self <: GoogleActionsOrdersV3OrderUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrder(value: GoogleActionsOrdersV3Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: GoogleActionsOrdersV3Order): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setType(value: GoogleActionsOrdersV3OrderUpdateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: GoogleActionsOrdersV3OrderUpdateType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUserNotification(value: GoogleActionsOrdersV3OrderUpdateUserNotification): Self = StObject.set(x, "userNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
-    
-    @scala.inline
-    def setUserNotification(value: GoogleActionsOrdersV3OrderUpdateUserNotification): Self = this.set("userNotification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserNotification: Self = this.set("userNotification", js.undefined)
+    def setUserNotificationUndefined: Self = StObject.set(x, "userNotification", js.undefined)
   }
 }

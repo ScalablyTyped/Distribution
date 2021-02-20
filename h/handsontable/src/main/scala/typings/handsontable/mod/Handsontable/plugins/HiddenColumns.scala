@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,39 +55,27 @@ object HiddenColumns {
   }
   
   @scala.inline
-  implicit class HiddenColumnsOps[Self <: HiddenColumns] (val x: Self) extends AnyVal {
+  implicit class HiddenColumnsMutableBuilder[Self <: HiddenColumns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHiddenColumns(value: () => js.Array[Double]): Self = StObject.set(x, "getHiddenColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideColumn(value: Double => Unit): Self = StObject.set(x, "hideColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideColumns(value: js.Array[Double] => Unit): Self = StObject.set(x, "hideColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHiddenColumns(value: () => js.Array[Double]): Self = this.set("getHiddenColumns", js.Any.fromFunction0(value))
+    def setIsHidden(value: Double => Boolean): Self = StObject.set(x, "isHidden", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideColumn(value: Double => Unit): Self = this.set("hideColumn", js.Any.fromFunction1(value))
+    def setIsValidConfig(value: js.Array[Double] => Boolean): Self = StObject.set(x, "isValidConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideColumns(value: js.Array[Double] => Unit): Self = this.set("hideColumns", js.Any.fromFunction1(value))
+    def setShowColumn(value: Double => Unit): Self = StObject.set(x, "showColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsHidden(value: Double => Boolean): Self = this.set("isHidden", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsValidConfig(value: js.Array[Double] => Boolean): Self = this.set("isValidConfig", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowColumn(value: Double => Unit): Self = this.set("showColumn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowColumns(value: js.Array[Double] => Unit): Self = this.set("showColumns", js.Any.fromFunction1(value))
+    def setShowColumns(value: js.Array[Double] => Unit): Self = StObject.set(x, "showColumns", js.Any.fromFunction1(value))
   }
 }

@@ -1,16 +1,16 @@
 package typings.twilioChat
 
 import typings.twilioChat.channelMod.Channel.NotificationLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-chat/lib/synclistdescriptor", JSImport.Namespace)
-@js.native
-object synclistdescriptorMod extends js.Object {
+object synclistdescriptorMod {
   
+  @JSImport("twilio-chat/lib/synclistdescriptor", "SyncListDescriptor")
   @js.native
-  class SyncListDescriptor protected () extends js.Object {
+  class SyncListDescriptor protected () extends StObject {
     /**
       * @param {Object} sync list descriptor data object
       * @private

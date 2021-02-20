@@ -1,5 +1,6 @@
 package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options allows customized resource handling by Deployment Manager.
   */
 @js.native
-trait SchemaOptions extends js.Object {
+trait SchemaOptions extends StObject {
   
   /**
     * Options regarding how to thread async requests.
@@ -45,48 +46,36 @@ object SchemaOptions {
   }
   
   @scala.inline
-  implicit class SchemaOptionsOps[Self <: SchemaOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaOptionsMutableBuilder[Self <: SchemaOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncOptions(value: js.Array[SchemaAsyncOptions]): Self = StObject.set(x, "asyncOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncOptionsUndefined: Self = StObject.set(x, "asyncOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsyncOptionsVarargs(value: SchemaAsyncOptions*): Self = StObject.set(x, "asyncOptions", js.Array(value :_*))
     
     @scala.inline
-    def setAsyncOptionsVarargs(value: SchemaAsyncOptions*): Self = this.set("asyncOptions", js.Array(value :_*))
+    def setInputMappings(value: js.Array[SchemaInputMapping]): Self = StObject.set(x, "inputMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncOptions(value: js.Array[SchemaAsyncOptions]): Self = this.set("asyncOptions", value.asInstanceOf[js.Any])
+    def setInputMappingsUndefined: Self = StObject.set(x, "inputMappings", js.undefined)
     
     @scala.inline
-    def deleteAsyncOptions: Self = this.set("asyncOptions", js.undefined)
+    def setInputMappingsVarargs(value: SchemaInputMapping*): Self = StObject.set(x, "inputMappings", js.Array(value :_*))
     
     @scala.inline
-    def setInputMappingsVarargs(value: SchemaInputMapping*): Self = this.set("inputMappings", js.Array(value :_*))
+    def setValidationOptions(value: SchemaValidationOptions): Self = StObject.set(x, "validationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputMappings(value: js.Array[SchemaInputMapping]): Self = this.set("inputMappings", value.asInstanceOf[js.Any])
+    def setValidationOptionsUndefined: Self = StObject.set(x, "validationOptions", js.undefined)
     
     @scala.inline
-    def deleteInputMappings: Self = this.set("inputMappings", js.undefined)
+    def setVirtualProperties(value: String): Self = StObject.set(x, "virtualProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationOptions(value: SchemaValidationOptions): Self = this.set("validationOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationOptions: Self = this.set("validationOptions", js.undefined)
-    
-    @scala.inline
-    def setVirtualProperties(value: String): Self = this.set("virtualProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualProperties: Self = this.set("virtualProperties", js.undefined)
+    def setVirtualPropertiesUndefined: Self = StObject.set(x, "virtualProperties", js.undefined)
   }
 }

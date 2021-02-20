@@ -1,11 +1,12 @@
 package typings.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropertyHyphen extends js.Object {
+trait PropertyHyphen extends StObject {
   
   var inherits: js.UndefOr[PropertyInheritsProperty] = js.native
   
@@ -22,36 +23,24 @@ object PropertyHyphen {
   }
   
   @scala.inline
-  implicit class PropertyHyphenOps[Self <: PropertyHyphen] (val x: Self) extends AnyVal {
+  implicit class PropertyHyphenMutableBuilder[Self <: PropertyHyphen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInherits(value: PropertyInheritsProperty): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setInitial-value`(value: String): Self = StObject.set(x, "initial-value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInherits(value: PropertyInheritsProperty): Self = this.set("inherits", value.asInstanceOf[js.Any])
+    def `setInitial-valueUndefined`: Self = StObject.set(x, "initial-value", js.undefined)
     
     @scala.inline
-    def deleteInherits: Self = this.set("inherits", js.undefined)
+    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInitial-value`(value: String): Self = this.set("initial-value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteInitial-value`: Self = this.set("initial-value", js.undefined)
-    
-    @scala.inline
-    def setSyntax(value: String): Self = this.set("syntax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyntax: Self = this.set("syntax", js.undefined)
+    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
   }
 }

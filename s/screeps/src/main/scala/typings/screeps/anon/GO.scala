@@ -6,12 +6,13 @@ import typings.screeps.screepsStrings.UH2O
 import typings.screeps.screepsStrings.UHO2
 import typings.screeps.screepsStrings.ZH2O
 import typings.screeps.screepsStrings.ZHO2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GO extends js.Object {
+trait GO extends StObject {
   
   var GH: typings.screeps.screepsStrings.GH2O = js.native
   
@@ -53,48 +54,36 @@ object GO {
   }
   
   @scala.inline
-  implicit class GOOps[Self <: GO] (val x: Self) extends AnyVal {
+  implicit class GOMutableBuilder[Self <: GO] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGH(value: typings.screeps.screepsStrings.GH2O): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGO(value: typings.screeps.screepsStrings.GHO2): Self = StObject.set(x, "GO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKH(value: KH2O): Self = StObject.set(x, "KH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGH(value: typings.screeps.screepsStrings.GH2O): Self = this.set("GH", value.asInstanceOf[js.Any])
+    def setKO(value: typings.screeps.screepsStrings.KHO2): Self = StObject.set(x, "KO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGO(value: typings.screeps.screepsStrings.GHO2): Self = this.set("GO", value.asInstanceOf[js.Any])
+    def setLH(value: LH2O): Self = StObject.set(x, "LH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKH(value: KH2O): Self = this.set("KH", value.asInstanceOf[js.Any])
+    def setLO(value: typings.screeps.screepsStrings.LHO2): Self = StObject.set(x, "LO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKO(value: typings.screeps.screepsStrings.KHO2): Self = this.set("KO", value.asInstanceOf[js.Any])
+    def setUH(value: UH2O): Self = StObject.set(x, "UH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLH(value: LH2O): Self = this.set("LH", value.asInstanceOf[js.Any])
+    def setUO(value: UHO2): Self = StObject.set(x, "UO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLO(value: typings.screeps.screepsStrings.LHO2): Self = this.set("LO", value.asInstanceOf[js.Any])
+    def setZH(value: ZH2O): Self = StObject.set(x, "ZH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUH(value: UH2O): Self = this.set("UH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUO(value: UHO2): Self = this.set("UO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZH(value: ZH2O): Self = this.set("ZH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZO(value: ZHO2): Self = this.set("ZO", value.asInstanceOf[js.Any])
+    def setZO(value: ZHO2): Self = StObject.set(x, "ZO", value.asInstanceOf[js.Any])
   }
 }

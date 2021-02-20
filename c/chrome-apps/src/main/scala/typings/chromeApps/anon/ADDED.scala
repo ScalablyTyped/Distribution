@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chromeAppsStrings.added_
 import typings.chromeApps.chromeAppsStrings.deleted_
 import typings.chromeApps.chromeAppsStrings.updated_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ADDED extends js.Object {
+trait ADDED extends StObject {
   
   var ADDED: added_ = js.native
   
@@ -25,27 +26,15 @@ object ADDED {
   }
   
   @scala.inline
-  implicit class ADDEDOps[Self <: ADDED] (val x: Self) extends AnyVal {
+  implicit class ADDEDMutableBuilder[Self <: ADDED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADDED(value: added_): Self = StObject.set(x, "ADDED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDELETED(value: deleted_): Self = StObject.set(x, "DELETED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setADDED(value: added_): Self = this.set("ADDED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDELETED(value: deleted_): Self = this.set("DELETED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUPDATED(value: updated_): Self = this.set("UPDATED", value.asInstanceOf[js.Any])
+    def setUPDATED(value: updated_): Self = StObject.set(x, "UPDATED", value.asInstanceOf[js.Any])
   }
 }

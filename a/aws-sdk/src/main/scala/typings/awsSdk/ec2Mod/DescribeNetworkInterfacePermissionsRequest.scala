@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeNetworkInterfacePermissionsRequest extends js.Object {
+trait DescribeNetworkInterfacePermissionsRequest extends StObject {
   
   /**
     * One or more filters.    network-interface-permission.network-interface-permission-id - The ID of the permission.    network-interface-permission.network-interface-id - The ID of the network interface.    network-interface-permission.aws-account-id - The AWS account ID.    network-interface-permission.aws-service - The AWS service.    network-interface-permission.permission - The type of permission (INSTANCE-ATTACH | EIP-ASSOCIATE).  
@@ -36,48 +37,36 @@ object DescribeNetworkInterfacePermissionsRequest {
   }
   
   @scala.inline
-  implicit class DescribeNetworkInterfacePermissionsRequestOps[Self <: DescribeNetworkInterfacePermissionsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeNetworkInterfacePermissionsRequestMutableBuilder[Self <: DescribeNetworkInterfacePermissionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setMaxResults(value: DescribeNetworkInterfacePermissionsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setNetworkInterfacePermissionIds(value: NetworkInterfacePermissionIdList): Self = StObject.set(x, "NetworkInterfacePermissionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: DescribeNetworkInterfacePermissionsMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNetworkInterfacePermissionIdsUndefined: Self = StObject.set(x, "NetworkInterfacePermissionIds", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNetworkInterfacePermissionIdsVarargs(value: NetworkInterfacePermissionId*): Self = StObject.set(x, "NetworkInterfacePermissionIds", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkInterfacePermissionIdsVarargs(value: NetworkInterfacePermissionId*): Self = this.set("NetworkInterfacePermissionIds", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfacePermissionIds(value: NetworkInterfacePermissionIdList): Self = this.set("NetworkInterfacePermissionIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkInterfacePermissionIds: Self = this.set("NetworkInterfacePermissionIds", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

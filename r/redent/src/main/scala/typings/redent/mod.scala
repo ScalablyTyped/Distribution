@@ -1,12 +1,11 @@
 package typings.redent
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redent", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   [Strip redundant indentation](https://github.com/sindresorhus/strip-indent) and [indent the string](https://github.com/sindresorhus/indent-string).
@@ -19,9 +18,17 @@ object mod extends js.Object {
   //=> '\n foo\n   bar\n'
   ```
   */
+  @JSImport("redent", JSImport.Namespace)
+  @js.native
   def apply(string: String): String = js.native
+  @JSImport("redent", JSImport.Namespace)
+  @js.native
   def apply(string: String, count: js.UndefOr[scala.Nothing], options: Options): String = js.native
+  @JSImport("redent", JSImport.Namespace)
+  @js.native
   def apply(string: String, count: Double): String = js.native
+  @JSImport("redent", JSImport.Namespace)
+  @js.native
   def apply(string: String, count: Double, options: Options): String = js.native
   
   type Options = typings.indentString.mod.Options

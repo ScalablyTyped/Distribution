@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`draw-complete`
 import typings.arcgisJsApi.arcgisJsApiStrings.`vertex-add`
 import typings.arcgisJsApi.arcgisJsApiStrings.click
 import typings.arcgisJsApi.arcgisJsApiStrings.freehand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

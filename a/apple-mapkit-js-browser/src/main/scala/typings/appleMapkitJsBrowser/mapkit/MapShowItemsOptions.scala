@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options that determine map parameters used when showing items.
   */
 @js.native
-trait MapShowItemsOptions extends js.Object {
+trait MapShowItemsOptions extends StObject {
   
   /**
     * A Boolean value that determines whether the map is animated as the map
@@ -35,36 +36,24 @@ object MapShowItemsOptions {
   }
   
   @scala.inline
-  implicit class MapShowItemsOptionsOps[Self <: MapShowItemsOptions] (val x: Self) extends AnyVal {
+  implicit class MapShowItemsOptionsMutableBuilder[Self <: MapShowItemsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumSpan(value: CoordinateSpan): Self = StObject.set(x, "minimumSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setMinimumSpanUndefined: Self = StObject.set(x, "minimumSpan", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumSpan(value: CoordinateSpan): Self = this.set("minimumSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumSpan: Self = this.set("minimumSpan", js.undefined)
-    
-    @scala.inline
-    def setPadding(value: Padding): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

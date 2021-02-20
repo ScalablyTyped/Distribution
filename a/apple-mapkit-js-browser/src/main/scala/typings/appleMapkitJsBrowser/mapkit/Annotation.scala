@@ -3,6 +3,7 @@ package typings.appleMapkitJsBrowser.mapkit
 import typings.appleMapkitJsBrowser.anon.Height
 import typings.std.DOMPoint
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The base annotation object, used for creating custom annotations.
   */
 @js.native
-trait Annotation extends js.Object {
+trait Annotation extends StObject {
   
   /**
     * Adds an event listener to handle events triggered by user interactions

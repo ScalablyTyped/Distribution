@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides members related to Batch Edit Mode
   */
 @js.native
-trait ASPxClientGridViewBatchEditApi extends js.Object {
+trait ASPxClientGridViewBatchEditApi extends StObject {
   
   /**
     * Adds a new row when ASPxGridView is in Batch Edit mode.

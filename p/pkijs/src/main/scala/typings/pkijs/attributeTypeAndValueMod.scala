@@ -2,16 +2,35 @@ package typings.pkijs
 
 import typings.asn1js.mod.ObjectIdentifier
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pkijs/src/AttributeTypeAndValue", JSImport.Namespace)
-@js.native
-object attributeTypeAndValueMod extends js.Object {
+object attributeTypeAndValueMod {
+  
+  @JSImport("pkijs/src/AttributeTypeAndValue", JSImport.Default)
+  @js.native
+  class default () extends AttributeTypeAndValue {
+    def this(params: js.Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("pkijs/src/AttributeTypeAndValue", "default.defaultValues")
+    @js.native
+    def defaultValues(memberName: String): js.Any = js.native
+    
+    @JSImport("pkijs/src/AttributeTypeAndValue", "default.schema")
+    @js.native
+    def schema(): js.Any = js.native
+    @JSImport("pkijs/src/AttributeTypeAndValue", "default.schema")
+    @js.native
+    def schema(parameters: js.Any): js.Any = js.native
+  }
   
   @js.native
-  trait AttributeTypeAndValue extends js.Object {
+  trait AttributeTypeAndValue extends StObject {
     
     def fromSchema(schema: js.Any): Unit = js.native
     
@@ -45,19 +64,5 @@ object attributeTypeAndValueMod extends js.Object {
       * @memberOf AttributeTypeAndValue
       */
     var value: js.Any = js.native
-  }
-  
-  @js.native
-  class default () extends AttributeTypeAndValue {
-    def this(params: js.Any) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def defaultValues(memberName: String): js.Any = js.native
-    
-    def schema(): js.Any = js.native
-    def schema(parameters: js.Any): js.Any = js.native
   }
 }

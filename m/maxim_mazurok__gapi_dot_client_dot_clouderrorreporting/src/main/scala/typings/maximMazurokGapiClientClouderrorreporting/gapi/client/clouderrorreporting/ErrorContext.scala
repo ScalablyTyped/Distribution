@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClouderrorreporting.gapi.client.clouderrorreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorContext extends js.Object {
+trait ErrorContext extends StObject {
   
   /** The HTTP request which was processed when the error was triggered. */
   var httpRequest: js.UndefOr[HttpRequestContext] = js.native
@@ -35,45 +36,33 @@ object ErrorContext {
   }
   
   @scala.inline
-  implicit class ErrorContextOps[Self <: ErrorContext] (val x: Self) extends AnyVal {
+  implicit class ErrorContextMutableBuilder[Self <: ErrorContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpRequest(value: HttpRequestContext): Self = StObject.set(x, "httpRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpRequestUndefined: Self = StObject.set(x, "httpRequest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportLocation(value: SourceLocation): Self = StObject.set(x, "reportLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRequest(value: HttpRequestContext): Self = this.set("httpRequest", value.asInstanceOf[js.Any])
+    def setReportLocationUndefined: Self = StObject.set(x, "reportLocation", js.undefined)
     
     @scala.inline
-    def deleteHttpRequest: Self = this.set("httpRequest", js.undefined)
+    def setSourceReferences(value: js.Array[SourceReference]): Self = StObject.set(x, "sourceReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportLocation(value: SourceLocation): Self = this.set("reportLocation", value.asInstanceOf[js.Any])
+    def setSourceReferencesUndefined: Self = StObject.set(x, "sourceReferences", js.undefined)
     
     @scala.inline
-    def deleteReportLocation: Self = this.set("reportLocation", js.undefined)
+    def setSourceReferencesVarargs(value: SourceReference*): Self = StObject.set(x, "sourceReferences", js.Array(value :_*))
     
     @scala.inline
-    def setSourceReferencesVarargs(value: SourceReference*): Self = this.set("sourceReferences", js.Array(value :_*))
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceReferences(value: js.Array[SourceReference]): Self = this.set("sourceReferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceReferences: Self = this.set("sourceReferences", js.undefined)
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

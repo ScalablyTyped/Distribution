@@ -1,15 +1,12 @@
 package typings.reduxPersist
 
-import typings.react.mod.Component
 import typings.reduxPersist.integrationReactMod.PersistGateProps
-import typings.reduxPersist.integrationReactMod.PersistorGateState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-persist/lib/integration/react", JSImport.Namespace)
-@js.native
-object libIntegrationReactMod extends js.Object {
+object libIntegrationReactMod {
   
   /**
     * Entry point of your react application to allow it persist a given store @see Persistor and its configuration.
@@ -17,7 +14,15 @@ object libIntegrationReactMod extends js.Object {
     * @see PersistGateProps
     * @see PersistGateState
     */
+  @JSImport("redux-persist/lib/integration/react", "PersistGate")
   @js.native
-  class PersistGate ()
-    extends Component[PersistGateProps, PersistorGateState, js.Any]
+  class PersistGate protected ()
+    extends typings.reduxPersist.integrationReactMod.PersistGate {
+    def this(props: PersistGateProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: PersistGateProps, context: js.Any) = this()
+  }
 }

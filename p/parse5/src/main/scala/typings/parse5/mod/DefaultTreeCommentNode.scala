@@ -1,6 +1,7 @@
 package typings.parse5.mod
 
 import typings.parse5.parse5Strings.Numbersigncomment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object DefaultTreeCommentNode {
   }
   
   @scala.inline
-  implicit class DefaultTreeCommentNodeOps[Self <: DefaultTreeCommentNode] (val x: Self) extends AnyVal {
+  implicit class DefaultTreeCommentNodeMutableBuilder[Self <: DefaultTreeCommentNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeName(value: Numbersigncomment): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeName(value: Numbersigncomment): Self = this.set("nodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceCodeLocation(value: Location): Self = this.set("sourceCodeLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceCodeLocation: Self = this.set("sourceCodeLocation", js.undefined)
+    def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
   }
 }

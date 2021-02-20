@@ -1,5 +1,6 @@
 package typings.mdast.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mdast.mdastStrings.collapsed
   - typings.mdast.mdastStrings.full
 */
-trait ReferenceType extends js.Object
+trait ReferenceType extends StObject
 object ReferenceType {
   
   @scala.inline

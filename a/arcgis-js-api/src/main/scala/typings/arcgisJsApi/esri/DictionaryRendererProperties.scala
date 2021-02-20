@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.dictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,54 +63,42 @@ object DictionaryRendererProperties {
   }
   
   @scala.inline
-  implicit class DictionaryRendererPropertiesOps[Self <: DictionaryRendererProperties] (val x: Self) extends AnyVal {
+  implicit class DictionaryRendererPropertiesMutableBuilder[Self <: DictionaryRendererProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldMap(value: HashMap[String]): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: js.Any): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setFieldMapUndefined: Self = StObject.set(x, "fieldMap", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setScaleExpression(value: String): Self = StObject.set(x, "scaleExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldMap(value: HashMap[String]): Self = this.set("fieldMap", value.asInstanceOf[js.Any])
+    def setScaleExpressionTitle(value: String): Self = StObject.set(x, "scaleExpressionTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFieldMap: Self = this.set("fieldMap", js.undefined)
+    def setScaleExpressionTitleUndefined: Self = StObject.set(x, "scaleExpressionTitle", js.undefined)
     
     @scala.inline
-    def setScaleExpression(value: String): Self = this.set("scaleExpression", value.asInstanceOf[js.Any])
+    def setScaleExpressionUndefined: Self = StObject.set(x, "scaleExpression", js.undefined)
     
     @scala.inline
-    def deleteScaleExpression: Self = this.set("scaleExpression", js.undefined)
+    def setType(value: dictionary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleExpressionTitle(value: String): Self = this.set("scaleExpressionTitle", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteScaleExpressionTitle: Self = this.set("scaleExpressionTitle", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: dictionary): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

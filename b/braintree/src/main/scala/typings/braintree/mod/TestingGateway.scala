@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestingGateway extends js.Object {
+trait TestingGateway extends StObject {
   
   def settle(transactionId: String): js.Promise[ValidatedResponse[Transaction]] = js.native
   
@@ -32,33 +33,21 @@ object TestingGateway {
   }
   
   @scala.inline
-  implicit class TestingGatewayOps[Self <: TestingGateway] (val x: Self) extends AnyVal {
+  implicit class TestingGatewayMutableBuilder[Self <: TestingGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSettle(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSettlementConfirm(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settlementConfirm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSettlementDecline(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settlementDecline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSettle(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = this.set("settle", js.Any.fromFunction1(value))
+    def setSettlementOperationWithEnvironmentCheck(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settlementOperationWithEnvironmentCheck", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSettlementConfirm(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = this.set("settlementConfirm", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSettlementDecline(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = this.set("settlementDecline", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSettlementOperationWithEnvironmentCheck(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = this.set("settlementOperationWithEnvironmentCheck", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSettlementPending(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = this.set("settlementPending", js.Any.fromFunction1(value))
+    def setSettlementPending(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settlementPending", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChatMessagePolicyViolationPolicyTip extends js.Object {
+trait ChatMessagePolicyViolationPolicyTip extends StObject {
   
   /**
     * The URL a user can visit to read about the data loss prevention policies for the organization. (ie, policies about what
@@ -31,48 +32,36 @@ object ChatMessagePolicyViolationPolicyTip {
   }
   
   @scala.inline
-  implicit class ChatMessagePolicyViolationPolicyTipOps[Self <: ChatMessagePolicyViolationPolicyTip] (val x: Self) extends AnyVal {
+  implicit class ChatMessagePolicyViolationPolicyTipMutableBuilder[Self <: ChatMessagePolicyViolationPolicyTip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceUrl(value: NullableOption[String]): Self = StObject.set(x, "complianceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceUrlNull: Self = StObject.set(x, "complianceUrl", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceUrlUndefined: Self = StObject.set(x, "complianceUrl", js.undefined)
     
     @scala.inline
-    def setComplianceUrl(value: NullableOption[String]): Self = this.set("complianceUrl", value.asInstanceOf[js.Any])
+    def setGeneralText(value: NullableOption[String]): Self = StObject.set(x, "generalText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComplianceUrl: Self = this.set("complianceUrl", js.undefined)
+    def setGeneralTextNull: Self = StObject.set(x, "generalText", null)
     
     @scala.inline
-    def setComplianceUrlNull: Self = this.set("complianceUrl", null)
+    def setGeneralTextUndefined: Self = StObject.set(x, "generalText", js.undefined)
     
     @scala.inline
-    def setGeneralText(value: NullableOption[String]): Self = this.set("generalText", value.asInstanceOf[js.Any])
+    def setMatchedConditionDescriptions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "matchedConditionDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeneralText: Self = this.set("generalText", js.undefined)
+    def setMatchedConditionDescriptionsNull: Self = StObject.set(x, "matchedConditionDescriptions", null)
     
     @scala.inline
-    def setGeneralTextNull: Self = this.set("generalText", null)
+    def setMatchedConditionDescriptionsUndefined: Self = StObject.set(x, "matchedConditionDescriptions", js.undefined)
     
     @scala.inline
-    def setMatchedConditionDescriptionsVarargs(value: String*): Self = this.set("matchedConditionDescriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setMatchedConditionDescriptions(value: NullableOption[js.Array[String]]): Self = this.set("matchedConditionDescriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchedConditionDescriptions: Self = this.set("matchedConditionDescriptions", js.undefined)
-    
-    @scala.inline
-    def setMatchedConditionDescriptionsNull: Self = this.set("matchedConditionDescriptions", null)
+    def setMatchedConditionDescriptionsVarargs(value: String*): Self = StObject.set(x, "matchedConditionDescriptions", js.Array(value :_*))
   }
 }

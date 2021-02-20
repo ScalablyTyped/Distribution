@@ -1,12 +1,13 @@
 package typings.chromeApps.chrome.networking.onc
 
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellularBase extends js.Object {
+trait CellularBase extends StObject {
   
   /** Carrier account activation state. */
   var ActivationState: js.UndefOr[ActivationStateType] = js.native
@@ -32,48 +33,36 @@ object CellularBase {
   }
   
   @scala.inline
-  implicit class CellularBaseOps[Self <: CellularBase] (val x: Self) extends AnyVal {
+  implicit class CellularBaseMutableBuilder[Self <: CellularBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationState(value: ActivationStateType): Self = StObject.set(x, "ActivationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationStateUndefined: Self = StObject.set(x, "ActivationState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkTechnology(value: String): Self = StObject.set(x, "NetworkTechnology", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationState(value: ActivationStateType): Self = this.set("ActivationState", value.asInstanceOf[js.Any])
+    def setNetworkTechnologyUndefined: Self = StObject.set(x, "NetworkTechnology", js.undefined)
     
     @scala.inline
-    def deleteActivationState: Self = this.set("ActivationState", js.undefined)
+    def setRoamingState(value: String): Self = StObject.set(x, "RoamingState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkTechnology(value: String): Self = this.set("NetworkTechnology", value.asInstanceOf[js.Any])
+    def setRoamingStateUndefined: Self = StObject.set(x, "RoamingState", js.undefined)
     
     @scala.inline
-    def deleteNetworkTechnology: Self = this.set("NetworkTechnology", js.undefined)
+    def setSIMPresent(value: Boolean): Self = StObject.set(x, "SIMPresent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoamingState(value: String): Self = this.set("RoamingState", value.asInstanceOf[js.Any])
+    def setSIMPresentUndefined: Self = StObject.set(x, "SIMPresent", js.undefined)
     
     @scala.inline
-    def deleteRoamingState: Self = this.set("RoamingState", js.undefined)
+    def setSignalStrength(value: integer): Self = StObject.set(x, "SignalStrength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSIMPresent(value: Boolean): Self = this.set("SIMPresent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSIMPresent: Self = this.set("SIMPresent", js.undefined)
-    
-    @scala.inline
-    def setSignalStrength(value: integer): Self = this.set("SignalStrength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignalStrength: Self = this.set("SignalStrength", js.undefined)
+    def setSignalStrengthUndefined: Self = StObject.set(x, "SignalStrength", js.undefined)
   }
 }

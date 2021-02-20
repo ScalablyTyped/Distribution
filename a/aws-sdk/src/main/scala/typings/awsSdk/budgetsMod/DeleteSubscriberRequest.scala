@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteSubscriberRequest extends js.Object {
+trait DeleteSubscriberRequest extends StObject {
   
   /**
     * The accountId that is associated with the budget whose subscriber you want to delete.
@@ -36,30 +37,18 @@ object DeleteSubscriberRequest {
   }
   
   @scala.inline
-  implicit class DeleteSubscriberRequestOps[Self <: DeleteSubscriberRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteSubscriberRequestMutableBuilder[Self <: DeleteSubscriberRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotification(value: Notification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = this.set("BudgetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotification(value: Notification): Self = this.set("Notification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriber(value: Subscriber): Self = this.set("Subscriber", value.asInstanceOf[js.Any])
+    def setSubscriber(value: Subscriber): Self = StObject.set(x, "Subscriber", value.asInstanceOf[js.Any])
   }
 }

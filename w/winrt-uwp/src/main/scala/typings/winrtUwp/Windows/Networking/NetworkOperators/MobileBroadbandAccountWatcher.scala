@@ -8,13 +8,14 @@ import typings.winrtUwp.winrtUwpStrings.accountremoved
 import typings.winrtUwp.winrtUwpStrings.accountupdated
 import typings.winrtUwp.winrtUwpStrings.enumerationcompleted
 import typings.winrtUwp.winrtUwpStrings.stopped
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information regarding availability of and updates to Mobile Broadband Accounts. */
 @js.native
-trait MobileBroadbandAccountWatcher extends js.Object {
+trait MobileBroadbandAccountWatcher extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

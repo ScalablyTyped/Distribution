@@ -1,26 +1,34 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("XMLHttpRequest")
 @js.native
 class XMLHttpRequest ()
   extends typings.std.XMLHttpRequest
-@JSGlobal("XMLHttpRequest")
-@js.native
-object XMLHttpRequest
-  extends Instantiable0[typings.std.XMLHttpRequest] {
+object XMLHttpRequest {
   
+  @JSGlobal("XMLHttpRequest.DONE")
+  @js.native
   val DONE: Double = js.native
   
+  @JSGlobal("XMLHttpRequest.HEADERS_RECEIVED")
+  @js.native
   val HEADERS_RECEIVED: Double = js.native
   
+  @JSGlobal("XMLHttpRequest.LOADING")
+  @js.native
   val LOADING: Double = js.native
   
+  @JSGlobal("XMLHttpRequest.OPENED")
+  @js.native
   val OPENED: Double = js.native
   
+  @JSGlobal("XMLHttpRequest.UNSENT")
+  @js.native
   val UNSENT: Double = js.native
 }

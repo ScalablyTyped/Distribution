@@ -1,12 +1,13 @@
 package typings.rax.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Context via RenderProps
 @js.native
-trait ProviderProps[T] extends js.Object {
+trait ProviderProps[T] extends StObject {
   
   var children: js.UndefOr[RaxNode] = js.native
   
@@ -21,30 +22,18 @@ object ProviderProps {
   }
   
   @scala.inline
-  implicit class ProviderPropsOps[Self <: ProviderProps[_], T] (val x: Self with ProviderProps[T]) extends AnyVal {
+  implicit class ProviderPropsMutableBuilder[Self <: ProviderProps[_], T] (val x: Self with ProviderProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: RaxNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenNull: Self = StObject.set(x, "children", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setValue(value: T): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChildren(value: RaxNode): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
-    
-    @scala.inline
-    def setChildrenNull: Self = this.set("children", null)
+    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

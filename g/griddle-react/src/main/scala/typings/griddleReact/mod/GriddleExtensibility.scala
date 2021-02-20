@@ -1,11 +1,12 @@
 package typings.griddleReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GriddleExtensibility extends js.Object {
+trait GriddleExtensibility extends StObject {
   
   var components: js.UndefOr[GriddleComponents] = js.native
   
@@ -32,66 +33,54 @@ object GriddleExtensibility {
   }
   
   @scala.inline
-  implicit class GriddleExtensibilityOps[Self <: GriddleExtensibility] (val x: Self) extends AnyVal {
+  implicit class GriddleExtensibilityMutableBuilder[Self <: GriddleExtensibility] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponents(value: GriddleComponents): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvents(value: GriddleEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: GriddleComponents): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteComponents: Self = this.set("components", js.undefined)
+    def setListeners(value: PropertyBag[Listener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: GriddleEvents): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setReducer(value: PropertyBag[Reducer]): Self = StObject.set(x, "reducer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListeners(value: PropertyBag[Listener]): Self = this.set("listeners", value.asInstanceOf[js.Any])
+    def setReducerUndefined: Self = StObject.set(x, "reducer", js.undefined)
     
     @scala.inline
-    def deleteListeners: Self = this.set("listeners", js.undefined)
+    def setRenderProperties(value: GriddleRenderProperties): Self = StObject.set(x, "renderProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReducer(value: PropertyBag[Reducer]): Self = this.set("reducer", value.asInstanceOf[js.Any])
+    def setRenderPropertiesUndefined: Self = StObject.set(x, "renderProperties", js.undefined)
     
     @scala.inline
-    def deleteReducer: Self = this.set("reducer", js.undefined)
+    def setSelectors(value: PropertyBag[Selector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderProperties(value: GriddleRenderProperties): Self = this.set("renderProperties", value.asInstanceOf[js.Any])
+    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
     @scala.inline
-    def deleteRenderProperties: Self = this.set("renderProperties", js.undefined)
+    def setSettingsComponentObjects(value: PropertyBag[SettingsComponentObject]): Self = StObject.set(x, "settingsComponentObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectors(value: PropertyBag[Selector]): Self = this.set("selectors", value.asInstanceOf[js.Any])
+    def setSettingsComponentObjectsUndefined: Self = StObject.set(x, "settingsComponentObjects", js.undefined)
     
     @scala.inline
-    def deleteSelectors: Self = this.set("selectors", js.undefined)
+    def setStyleConfig(value: GriddleStyleConfig): Self = StObject.set(x, "styleConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettingsComponentObjects(value: PropertyBag[SettingsComponentObject]): Self = this.set("settingsComponentObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettingsComponentObjects: Self = this.set("settingsComponentObjects", js.undefined)
-    
-    @scala.inline
-    def setStyleConfig(value: GriddleStyleConfig): Self = this.set("styleConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleConfig: Self = this.set("styleConfig", js.undefined)
+    def setStyleConfigUndefined: Self = StObject.set(x, "styleConfig", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.jointjs.mod.g
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jointjs.jointjsStrings.top
   - typings.jointjs.jointjsStrings.bottom
 */
-trait RectangleSide extends js.Object
+trait RectangleSide extends StObject
 object RectangleSide {
   
   @scala.inline

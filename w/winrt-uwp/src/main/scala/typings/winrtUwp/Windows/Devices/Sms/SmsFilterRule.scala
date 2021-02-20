@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes an SMS filtering rule. */
 @js.native
-trait SmsFilterRule extends js.Object {
+trait SmsFilterRule extends StObject {
   
   /** A list of broadcast channels that match this rule. */
   var broadcastChannels: IVector[Double] = js.native
@@ -71,57 +72,45 @@ object SmsFilterRule {
   }
   
   @scala.inline
-  implicit class SmsFilterRuleOps[Self <: SmsFilterRule] (val x: Self) extends AnyVal {
+  implicit class SmsFilterRuleMutableBuilder[Self <: SmsFilterRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadcastChannels(value: IVector[Double]): Self = StObject.set(x, "broadcastChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadcastTypes(value: IVector[SmsBroadcastType]): Self = StObject.set(x, "broadcastTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcastChannels(value: IVector[Double]): Self = this.set("broadcastChannels", value.asInstanceOf[js.Any])
+    def setDeviceIds(value: IVector[String]): Self = StObject.set(x, "deviceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcastTypes(value: IVector[SmsBroadcastType]): Self = this.set("broadcastTypes", value.asInstanceOf[js.Any])
+    def setImsiPrefixes(value: IVector[String]): Self = StObject.set(x, "imsiPrefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellularClass(value: CellularClass): Self = this.set("cellularClass", value.asInstanceOf[js.Any])
+    def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceIds(value: IVector[String]): Self = this.set("deviceIds", value.asInstanceOf[js.Any])
+    def setPortNumbers(value: IVector[Double]): Self = StObject.set(x, "portNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImsiPrefixes(value: IVector[String]): Self = this.set("imsiPrefixes", value.asInstanceOf[js.Any])
+    def setProtocolIds(value: IVector[Double]): Self = StObject.set(x, "protocolIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageType(value: SmsMessageType): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setSenderNumbers(value: IVector[String]): Self = StObject.set(x, "senderNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortNumbers(value: IVector[Double]): Self = this.set("portNumbers", value.asInstanceOf[js.Any])
+    def setTeleserviceIds(value: IVector[Double]): Self = StObject.set(x, "teleserviceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolIds(value: IVector[Double]): Self = this.set("protocolIds", value.asInstanceOf[js.Any])
+    def setTextMessagePrefixes(value: IVector[String]): Self = StObject.set(x, "textMessagePrefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderNumbers(value: IVector[String]): Self = this.set("senderNumbers", value.asInstanceOf[js.Any])
+    def setWapApplicationIds(value: IVector[String]): Self = StObject.set(x, "wapApplicationIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeleserviceIds(value: IVector[Double]): Self = this.set("teleserviceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextMessagePrefixes(value: IVector[String]): Self = this.set("textMessagePrefixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWapApplicationIds(value: IVector[String]): Self = this.set("wapApplicationIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWapContentTypes(value: IVector[String]): Self = this.set("wapContentTypes", value.asInstanceOf[js.Any])
+    def setWapContentTypes(value: IVector[String]): Self = StObject.set(x, "wapContentTypes", value.asInstanceOf[js.Any])
   }
 }

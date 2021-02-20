@@ -1,11 +1,12 @@
 package typings.storybookAddonKnobs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Callback extends js.Object {
+trait Callback extends StObject {
   
   var callback: js.UndefOr[js.Function0[_]] = js.native
   
@@ -28,48 +29,36 @@ object Callback {
   }
   
   @scala.inline
-  implicit class CallbackOps[Self <: Callback] (val x: Self) extends AnyVal {
+  implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: () => _): Self = this.set("callback", js.Any.fromFunction0(value))
+    def setHideLabelUndefined: Self = StObject.set(x, "hideLabel", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideLabel(value: Boolean): Self = this.set("hideLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideLabel: Self = this.set("hideLabel", js.undefined)
-    
-    @scala.inline
-    def setUsed(value: Boolean): Self = this.set("used", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsed: Self = this.set("used", js.undefined)
+    def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
   }
 }

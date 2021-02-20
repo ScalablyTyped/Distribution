@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Service extends js.Object {
+trait Service extends StObject {
   
   /** Type used for App Engine services. */
   var appEngine: js.UndefOr[AppEngine] = js.native
@@ -40,66 +41,54 @@ object Service {
   }
   
   @scala.inline
-  implicit class ServiceOps[Self <: Service] (val x: Self) extends AnyVal {
+  implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppEngine(value: AppEngine): Self = StObject.set(x, "appEngine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppEngineUndefined: Self = StObject.set(x, "appEngine", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudEndpoints(value: CloudEndpoints): Self = StObject.set(x, "cloudEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppEngine(value: AppEngine): Self = this.set("appEngine", value.asInstanceOf[js.Any])
+    def setCloudEndpointsUndefined: Self = StObject.set(x, "cloudEndpoints", js.undefined)
     
     @scala.inline
-    def deleteAppEngine: Self = this.set("appEngine", js.undefined)
+    def setClusterIstio(value: ClusterIstio): Self = StObject.set(x, "clusterIstio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudEndpoints(value: CloudEndpoints): Self = this.set("cloudEndpoints", value.asInstanceOf[js.Any])
+    def setClusterIstioUndefined: Self = StObject.set(x, "clusterIstio", js.undefined)
     
     @scala.inline
-    def deleteCloudEndpoints: Self = this.set("cloudEndpoints", js.undefined)
+    def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIstio(value: ClusterIstio): Self = this.set("clusterIstio", value.asInstanceOf[js.Any])
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def deleteClusterIstio: Self = this.set("clusterIstio", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: js.Any): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setMeshIstio(value: MeshIstio): Self = StObject.set(x, "meshIstio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setMeshIstioUndefined: Self = StObject.set(x, "meshIstio", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshIstio(value: MeshIstio): Self = this.set("meshIstio", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMeshIstio: Self = this.set("meshIstio", js.undefined)
+    def setTelemetry(value: Telemetry): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTelemetry(value: Telemetry): Self = this.set("telemetry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTelemetry: Self = this.set("telemetry", js.undefined)
+    def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
   }
 }

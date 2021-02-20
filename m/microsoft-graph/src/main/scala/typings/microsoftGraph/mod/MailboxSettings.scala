@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MailboxSettings extends js.Object {
+trait MailboxSettings extends StObject {
   
   // Folder ID of an archive folder for the user.
   var archiveFolder: js.UndefOr[NullableOption[String]] = js.native
@@ -44,90 +45,78 @@ object MailboxSettings {
   }
   
   @scala.inline
-  implicit class MailboxSettingsOps[Self <: MailboxSettings] (val x: Self) extends AnyVal {
+  implicit class MailboxSettingsMutableBuilder[Self <: MailboxSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchiveFolder(value: NullableOption[String]): Self = StObject.set(x, "archiveFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveFolderNull: Self = StObject.set(x, "archiveFolder", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArchiveFolderUndefined: Self = StObject.set(x, "archiveFolder", js.undefined)
     
     @scala.inline
-    def setArchiveFolder(value: NullableOption[String]): Self = this.set("archiveFolder", value.asInstanceOf[js.Any])
+    def setAutomaticRepliesSetting(value: NullableOption[AutomaticRepliesSetting]): Self = StObject.set(x, "automaticRepliesSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArchiveFolder: Self = this.set("archiveFolder", js.undefined)
+    def setAutomaticRepliesSettingNull: Self = StObject.set(x, "automaticRepliesSetting", null)
     
     @scala.inline
-    def setArchiveFolderNull: Self = this.set("archiveFolder", null)
+    def setAutomaticRepliesSettingUndefined: Self = StObject.set(x, "automaticRepliesSetting", js.undefined)
     
     @scala.inline
-    def setAutomaticRepliesSetting(value: NullableOption[AutomaticRepliesSetting]): Self = this.set("automaticRepliesSetting", value.asInstanceOf[js.Any])
+    def setDateFormat(value: NullableOption[String]): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutomaticRepliesSetting: Self = this.set("automaticRepliesSetting", js.undefined)
+    def setDateFormatNull: Self = StObject.set(x, "dateFormat", null)
     
     @scala.inline
-    def setAutomaticRepliesSettingNull: Self = this.set("automaticRepliesSetting", null)
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def setDateFormat(value: NullableOption[String]): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDelegateMeetingMessageDeliveryOptions(value: NullableOption[DelegateMeetingMessageDeliveryOptions]): Self = StObject.set(x, "delegateMeetingMessageDeliveryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setDelegateMeetingMessageDeliveryOptionsNull: Self = StObject.set(x, "delegateMeetingMessageDeliveryOptions", null)
     
     @scala.inline
-    def setDateFormatNull: Self = this.set("dateFormat", null)
+    def setDelegateMeetingMessageDeliveryOptionsUndefined: Self = StObject.set(x, "delegateMeetingMessageDeliveryOptions", js.undefined)
     
     @scala.inline
-    def setDelegateMeetingMessageDeliveryOptions(value: NullableOption[DelegateMeetingMessageDeliveryOptions]): Self = this.set("delegateMeetingMessageDeliveryOptions", value.asInstanceOf[js.Any])
+    def setLanguage(value: NullableOption[LocaleInfo]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelegateMeetingMessageDeliveryOptions: Self = this.set("delegateMeetingMessageDeliveryOptions", js.undefined)
+    def setLanguageNull: Self = StObject.set(x, "language", null)
     
     @scala.inline
-    def setDelegateMeetingMessageDeliveryOptionsNull: Self = this.set("delegateMeetingMessageDeliveryOptions", null)
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def setLanguage(value: NullableOption[LocaleInfo]): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setTimeFormat(value: NullableOption[String]): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setTimeFormatNull: Self = StObject.set(x, "timeFormat", null)
     
     @scala.inline
-    def setLanguageNull: Self = this.set("language", null)
+    def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
     
     @scala.inline
-    def setTimeFormat(value: NullableOption[String]): Self = this.set("timeFormat", value.asInstanceOf[js.Any])
+    def setTimeZone(value: NullableOption[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeFormat: Self = this.set("timeFormat", js.undefined)
+    def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
     
     @scala.inline
-    def setTimeFormatNull: Self = this.set("timeFormat", null)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
     @scala.inline
-    def setTimeZone(value: NullableOption[String]): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    def setWorkingHours(value: NullableOption[WorkingHours]): Self = StObject.set(x, "workingHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setWorkingHoursNull: Self = StObject.set(x, "workingHours", null)
     
     @scala.inline
-    def setTimeZoneNull: Self = this.set("timeZone", null)
-    
-    @scala.inline
-    def setWorkingHours(value: NullableOption[WorkingHours]): Self = this.set("workingHours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkingHours: Self = this.set("workingHours", js.undefined)
-    
-    @scala.inline
-    def setWorkingHoursNull: Self = this.set("workingHours", null)
+    def setWorkingHoursUndefined: Self = StObject.set(x, "workingHours", js.undefined)
   }
 }

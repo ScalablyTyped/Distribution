@@ -1,11 +1,12 @@
 package typings.surveyKnockout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Other extends js.Object {
+trait Other extends StObject {
   
   var control: String = js.native
   
@@ -22,27 +23,15 @@ object Other {
   }
   
   @scala.inline
-  implicit class OtherOps[Self <: Other] (val x: Self) extends AnyVal {
+  implicit class OtherMutableBuilder[Self <: Other] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other_ <: js.Any](other: Other_): Self with Other_ = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other_]
+    def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setControl(value: String): Self = this.set("control", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOther(value: String): Self = this.set("other", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

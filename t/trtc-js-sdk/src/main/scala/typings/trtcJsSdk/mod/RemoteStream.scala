@@ -2,6 +2,7 @@ package typings.trtcJsSdk.mod
 
 import typings.trtcJsSdk.trtcJsSdkStrings.auxiliary
 import typings.trtcJsSdk.trtcJsSdkStrings.main
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

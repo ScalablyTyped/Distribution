@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrokerSummary extends js.Object {
+trait BrokerSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the broker.
@@ -56,66 +57,54 @@ object BrokerSummary {
   }
   
   @scala.inline
-  implicit class BrokerSummaryOps[Self <: BrokerSummary] (val x: Self) extends AnyVal {
+  implicit class BrokerSummaryMutableBuilder[Self <: BrokerSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrokerArn(value: string): Self = StObject.set(x, "BrokerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrokerArnUndefined: Self = StObject.set(x, "BrokerArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerArn(value: string): Self = this.set("BrokerArn", value.asInstanceOf[js.Any])
+    def setBrokerIdUndefined: Self = StObject.set(x, "BrokerId", js.undefined)
     
     @scala.inline
-    def deleteBrokerArn: Self = this.set("BrokerArn", js.undefined)
+    def setBrokerName(value: string): Self = StObject.set(x, "BrokerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    def setBrokerNameUndefined: Self = StObject.set(x, "BrokerName", js.undefined)
     
     @scala.inline
-    def deleteBrokerId: Self = this.set("BrokerId", js.undefined)
+    def setBrokerState(value: BrokerState): Self = StObject.set(x, "BrokerState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerName(value: string): Self = this.set("BrokerName", value.asInstanceOf[js.Any])
+    def setBrokerStateUndefined: Self = StObject.set(x, "BrokerState", js.undefined)
     
     @scala.inline
-    def deleteBrokerName: Self = this.set("BrokerName", js.undefined)
+    def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerState(value: BrokerState): Self = this.set("BrokerState", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
     @scala.inline
-    def deleteBrokerState: Self = this.set("BrokerState", js.undefined)
+    def setDeploymentMode(value: DeploymentMode): Self = StObject.set(x, "DeploymentMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: timestampIso8601): Self = this.set("Created", value.asInstanceOf[js.Any])
+    def setDeploymentModeUndefined: Self = StObject.set(x, "DeploymentMode", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("Created", js.undefined)
+    def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentMode(value: DeploymentMode): Self = this.set("DeploymentMode", value.asInstanceOf[js.Any])
+    def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
     
     @scala.inline
-    def deleteDeploymentMode: Self = this.set("DeploymentMode", js.undefined)
+    def setHostInstanceType(value: string): Self = StObject.set(x, "HostInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineType(value: EngineType): Self = this.set("EngineType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEngineType: Self = this.set("EngineType", js.undefined)
-    
-    @scala.inline
-    def setHostInstanceType(value: string): Self = this.set("HostInstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostInstanceType: Self = this.set("HostInstanceType", js.undefined)
+    def setHostInstanceTypeUndefined: Self = StObject.set(x, "HostInstanceType", js.undefined)
   }
 }

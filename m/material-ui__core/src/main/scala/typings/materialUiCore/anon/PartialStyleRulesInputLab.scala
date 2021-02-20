@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/InputLabel.InputLabelClassKey>> */
 @js.native
-trait PartialStyleRulesInputLab extends js.Object {
+trait PartialStyleRulesInputLab extends StObject {
   
   var animated: js.UndefOr[CSSProperties] = js.native
   
@@ -40,84 +41,72 @@ object PartialStyleRulesInputLab {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesInputLabOps[Self <: PartialStyleRulesInputLab] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesInputLabMutableBuilder[Self <: PartialStyleRulesInputLab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: CSSProperties): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: CSSProperties): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setError(value: CSSProperties): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: CSSProperties): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFilled(value: CSSProperties): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: CSSProperties): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setFocused(value: CSSProperties): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilled(value: CSSProperties): Self = this.set("filled", value.asInstanceOf[js.Any])
+    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
     @scala.inline
-    def deleteFilled: Self = this.set("filled", js.undefined)
+    def setFormControl(value: CSSProperties): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: CSSProperties): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setFormControlUndefined: Self = StObject.set(x, "formControl", js.undefined)
     
     @scala.inline
-    def deleteFocused: Self = this.set("focused", js.undefined)
+    def setMarginDense(value: CSSProperties): Self = StObject.set(x, "marginDense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormControl(value: CSSProperties): Self = this.set("formControl", value.asInstanceOf[js.Any])
+    def setMarginDenseUndefined: Self = StObject.set(x, "marginDense", js.undefined)
     
     @scala.inline
-    def deleteFormControl: Self = this.set("formControl", js.undefined)
+    def setOutlined(value: CSSProperties): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginDense(value: CSSProperties): Self = this.set("marginDense", value.asInstanceOf[js.Any])
+    def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
     
     @scala.inline
-    def deleteMarginDense: Self = this.set("marginDense", js.undefined)
+    def setRequired(value: CSSProperties): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlined(value: CSSProperties): Self = this.set("outlined", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteOutlined: Self = this.set("outlined", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: CSSProperties): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setShrink(value: CSSProperties): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setShrink(value: CSSProperties): Self = this.set("shrink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShrink: Self = this.set("shrink", js.undefined)
+    def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
   }
 }

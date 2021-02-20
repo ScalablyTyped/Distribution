@@ -1,5 +1,6 @@
 package typings.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param cnstr The connection string for your cluster.
   * @param options The options object.
   */
-class Cluster () extends js.Object {
+class Cluster () extends StObject {
   def this(cnstr: String) = this()
   def this(cnstr: js.UndefOr[scala.Nothing], options: ClusterConstructorOptions) = this()
   def this(cnstr: String, options: ClusterConstructorOptions) = this()

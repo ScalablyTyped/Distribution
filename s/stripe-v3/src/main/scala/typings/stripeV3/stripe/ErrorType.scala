@@ -1,5 +1,6 @@
 package typings.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stripeV3.stripeV3Strings.rate_limit_error
   - typings.stripeV3.stripeV3Strings.validation_error
 */
-trait ErrorType extends js.Object
+trait ErrorType extends StObject
 object ErrorType {
   
   @scala.inline

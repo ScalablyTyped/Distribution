@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,33 +12,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientPopupControlResizeState ()
   extends typings.devexpressWeb.ASPxClientPopupControlResizeState
-/* static members */
-@JSGlobal("ASPxClientPopupControlResizeState")
-@js.native
-object ASPxClientPopupControlResizeState extends js.Object {
+object ASPxClientPopupControlResizeState {
   
   /**
     * A window has been collapsed. Returns 1.
     */
+  /* static member */
+  @JSGlobal("ASPxClientPopupControlResizeState.Collapsed")
+  @js.native
   val Collapsed: Double = js.native
   
   /**
     * A window has been expanded. Returns 2.
     */
+  /* static member */
+  @JSGlobal("ASPxClientPopupControlResizeState.Expanded")
+  @js.native
   val Expanded: Double = js.native
   
   /**
     * A window has been maximized. Returns 3.
     */
+  /* static member */
+  @JSGlobal("ASPxClientPopupControlResizeState.Maximized")
+  @js.native
   val Maximized: Double = js.native
   
   /**
     * A window has been resized. Returns 0.
     */
+  /* static member */
+  @JSGlobal("ASPxClientPopupControlResizeState.Resized")
+  @js.native
   val Resized: Double = js.native
   
   /**
     * A window has been restored after maximizing. Returns 4.
     */
+  /* static member */
+  @JSGlobal("ASPxClientPopupControlResizeState.RestoredAfterMaximized")
+  @js.native
   val RestoredAfterMaximized: Double = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetImportResponse extends js.Object {
+trait GetImportResponse extends StObject {
   
   /**
     * A timestamp for the date and time that the import job was created.
@@ -51,63 +52,51 @@ object GetImportResponse {
   }
   
   @scala.inline
-  implicit class GetImportResponseOps[Self <: GetImportResponse] (val x: Self) extends AnyVal {
+  implicit class GetImportResponseMutableBuilder[Self <: GetImportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureReason(value: StringList): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    def setFailureReasonVarargs(value: String*): Self = StObject.set(x, "failureReason", js.Array(value :_*))
     
     @scala.inline
-    def setFailureReasonVarargs(value: String*): Self = this.set("failureReason", js.Array(value :_*))
+    def setImportId(value: String): Self = StObject.set(x, "importId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: StringList): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    def setImportIdUndefined: Self = StObject.set(x, "importId", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    def setImportStatus(value: ImportStatus): Self = StObject.set(x, "importStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportId(value: String): Self = this.set("importId", value.asInstanceOf[js.Any])
+    def setImportStatusUndefined: Self = StObject.set(x, "importStatus", js.undefined)
     
     @scala.inline
-    def deleteImportId: Self = this.set("importId", js.undefined)
+    def setMergeStrategy(value: MergeStrategy): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportStatus(value: ImportStatus): Self = this.set("importStatus", value.asInstanceOf[js.Any])
+    def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
     
     @scala.inline
-    def deleteImportStatus: Self = this.set("importStatus", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeStrategy(value: MergeStrategy): Self = this.set("mergeStrategy", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMergeStrategy: Self = this.set("mergeStrategy", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

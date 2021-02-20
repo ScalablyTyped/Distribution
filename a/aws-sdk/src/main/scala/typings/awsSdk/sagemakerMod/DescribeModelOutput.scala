@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeModelOutput extends js.Object {
+trait DescribeModelOutput extends StObject {
   
   /**
     * The containers in the inference pipeline.
@@ -56,57 +57,45 @@ object DescribeModelOutput {
   }
   
   @scala.inline
-  implicit class DescribeModelOutputOps[Self <: DescribeModelOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeModelOutputMutableBuilder[Self <: DescribeModelOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainers(value: ContainerDefinitionList): Self = StObject.set(x, "Containers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainersUndefined: Self = StObject.set(x, "Containers", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainersVarargs(value: ContainerDefinition*): Self = StObject.set(x, "Containers", js.Array(value :_*))
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = this.set("ExecutionRoleArn", value.asInstanceOf[js.Any])
+    def setEnableNetworkIsolation(value: Boolean): Self = StObject.set(x, "EnableNetworkIsolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelArn(value: ModelArn): Self = this.set("ModelArn", value.asInstanceOf[js.Any])
+    def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "EnableNetworkIsolation", js.undefined)
     
     @scala.inline
-    def setModelName(value: ModelName): Self = this.set("ModelName", value.asInstanceOf[js.Any])
+    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainersVarargs(value: ContainerDefinition*): Self = this.set("Containers", js.Array(value :_*))
+    def setModelArn(value: ModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainers(value: ContainerDefinitionList): Self = this.set("Containers", value.asInstanceOf[js.Any])
+    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainers: Self = this.set("Containers", js.undefined)
+    def setPrimaryContainer(value: ContainerDefinition): Self = StObject.set(x, "PrimaryContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableNetworkIsolation(value: Boolean): Self = this.set("EnableNetworkIsolation", value.asInstanceOf[js.Any])
+    def setPrimaryContainerUndefined: Self = StObject.set(x, "PrimaryContainer", js.undefined)
     
     @scala.inline
-    def deleteEnableNetworkIsolation: Self = this.set("EnableNetworkIsolation", js.undefined)
+    def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryContainer(value: ContainerDefinition): Self = this.set("PrimaryContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryContainer: Self = this.set("PrimaryContainer", js.undefined)
-    
-    @scala.inline
-    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

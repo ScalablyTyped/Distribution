@@ -17,6 +17,7 @@ import typings.activexLibreoffice.com_.sun.star.drawing.HomogenMatrix3
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.style.XStyle
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -245,90 +246,78 @@ object Shape {
   }
   
   @scala.inline
-  implicit class ShapeOps[Self <: Shape] (val x: Self) extends AnyVal {
+  implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorFrame(value: XTextFrame): Self = StObject.set(x, "AnchorFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorPageNo(value: Double): Self = StObject.set(x, "AnchorPageNo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorType(value: TextContentAnchorType): Self = StObject.set(x, "AnchorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorFrame(value: XTextFrame): Self = this.set("AnchorFrame", value.asInstanceOf[js.Any])
+    def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorPageNo(value: Double): Self = this.set("AnchorPageNo", value.asInstanceOf[js.Any])
+    def setContourOutside(value: Boolean): Self = StObject.set(x, "ContourOutside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorType(value: TextContentAnchorType): Self = this.set("AnchorType", value.asInstanceOf[js.Any])
+    def setEndPositionInHoriL2R(value: Point): Self = StObject.set(x, "EndPositionInHoriL2R", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomMargin(value: Double): Self = this.set("BottomMargin", value.asInstanceOf[js.Any])
+    def setHoriOrient(value: Double): Self = StObject.set(x, "HoriOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContourOutside(value: Boolean): Self = this.set("ContourOutside", value.asInstanceOf[js.Any])
+    def setHoriOrientPosition(value: Double): Self = StObject.set(x, "HoriOrientPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPositionInHoriL2R(value: Point): Self = this.set("EndPositionInHoriL2R", value.asInstanceOf[js.Any])
+    def setHoriOrientRelation(value: Double): Self = StObject.set(x, "HoriOrientRelation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoriOrient(value: Double): Self = this.set("HoriOrient", value.asInstanceOf[js.Any])
+    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoriOrientPosition(value: Double): Self = this.set("HoriOrientPosition", value.asInstanceOf[js.Any])
+    def setOpaque(value: Boolean): Self = StObject.set(x, "Opaque", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoriOrientRelation(value: Double): Self = this.set("HoriOrientRelation", value.asInstanceOf[js.Any])
+    def setPositionLayoutDir(value: Double): Self = StObject.set(x, "PositionLayoutDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftMargin(value: Double): Self = this.set("LeftMargin", value.asInstanceOf[js.Any])
+    def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpaque(value: Boolean): Self = this.set("Opaque", value.asInstanceOf[js.Any])
+    def setStartPositionInHoriL2R(value: Point): Self = StObject.set(x, "StartPositionInHoriL2R", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionLayoutDir(value: Double): Self = this.set("PositionLayoutDir", value.asInstanceOf[js.Any])
+    def setSurround(value: WrapTextMode): Self = StObject.set(x, "Surround", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightMargin(value: Double): Self = this.set("RightMargin", value.asInstanceOf[js.Any])
+    def setSurroundAnchorOnly(value: Boolean): Self = StObject.set(x, "SurroundAnchorOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPositionInHoriL2R(value: Point): Self = this.set("StartPositionInHoriL2R", value.asInstanceOf[js.Any])
+    def setSurroundContour(value: Boolean): Self = StObject.set(x, "SurroundContour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurround(value: WrapTextMode): Self = this.set("Surround", value.asInstanceOf[js.Any])
+    def setTextRange(value: XTextRange): Self = StObject.set(x, "TextRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurroundAnchorOnly(value: Boolean): Self = this.set("SurroundAnchorOnly", value.asInstanceOf[js.Any])
+    def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurroundContour(value: Boolean): Self = this.set("SurroundContour", value.asInstanceOf[js.Any])
+    def setTransformationInHoriL2R(value: HomogenMatrix3): Self = StObject.set(x, "TransformationInHoriL2R", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextRange(value: XTextRange): Self = this.set("TextRange", value.asInstanceOf[js.Any])
+    def setVertOrient(value: Double): Self = StObject.set(x, "VertOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopMargin(value: Double): Self = this.set("TopMargin", value.asInstanceOf[js.Any])
+    def setVertOrientPosition(value: Double): Self = StObject.set(x, "VertOrientPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformationInHoriL2R(value: HomogenMatrix3): Self = this.set("TransformationInHoriL2R", value.asInstanceOf[js.Any])
+    def setVertOrientRelation(value: Double): Self = StObject.set(x, "VertOrientRelation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertOrient(value: Double): Self = this.set("VertOrient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertOrientPosition(value: Double): Self = this.set("VertOrientPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertOrientRelation(value: Double): Self = this.set("VertOrientRelation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrapInfluenceOnPosition(value: Double): Self = this.set("WrapInfluenceOnPosition", value.asInstanceOf[js.Any])
+    def setWrapInfluenceOnPosition(value: Double): Self = StObject.set(x, "WrapInfluenceOnPosition", value.asInstanceOf[js.Any])
   }
 }

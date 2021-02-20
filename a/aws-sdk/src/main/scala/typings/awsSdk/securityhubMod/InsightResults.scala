@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightResults extends js.Object {
+trait InsightResults extends StObject {
   
   /**
     * The attribute that the findings are grouped by for the insight whose results are returned by the GetInsightResults operation.
@@ -31,30 +32,18 @@ object InsightResults {
   }
   
   @scala.inline
-  implicit class InsightResultsOps[Self <: InsightResults] (val x: Self) extends AnyVal {
+  implicit class InsightResultsMutableBuilder[Self <: InsightResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupByAttribute(value: NonEmptyString): Self = StObject.set(x, "GroupByAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsightArn(value: NonEmptyString): Self = StObject.set(x, "InsightArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultValues(value: InsightResultValueList): Self = StObject.set(x, "ResultValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByAttribute(value: NonEmptyString): Self = this.set("GroupByAttribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInsightArn(value: NonEmptyString): Self = this.set("InsightArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultValuesVarargs(value: InsightResultValue*): Self = this.set("ResultValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setResultValues(value: InsightResultValueList): Self = this.set("ResultValues", value.asInstanceOf[js.Any])
+    def setResultValuesVarargs(value: InsightResultValue*): Self = StObject.set(x, "ResultValues", js.Array(value :_*))
   }
 }

@@ -5,12 +5,13 @@ import typings.contentfulManagement.assetMod.Asset
 import typings.contentfulManagement.assetMod.AssetProps
 import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofasset extends js.Object {
+trait Typeofasset extends StObject {
   
   def wrapAsset(http: AxiosInstance, data: AssetProps): Asset = js.native
   
@@ -28,24 +29,12 @@ object Typeofasset {
   }
   
   @scala.inline
-  implicit class TypeofassetOps[Self <: Typeofasset] (val x: Self) extends AnyVal {
+  implicit class TypeofassetMutableBuilder[Self <: Typeofasset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWrapAsset(value: (AxiosInstance, AssetProps) => Asset): Self = StObject.set(x, "wrapAsset", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapAsset(value: (AxiosInstance, AssetProps) => Asset): Self = this.set("wrapAsset", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWrapAssetCollection(value: (AxiosInstance, CollectionProp[AssetProps]) => Collection[Asset, AssetProps]): Self = this.set("wrapAssetCollection", js.Any.fromFunction2(value))
+    def setWrapAssetCollection(value: (AxiosInstance, CollectionProp[AssetProps]) => Collection[Asset, AssetProps]): Self = StObject.set(x, "wrapAssetCollection", js.Any.fromFunction2(value))
   }
 }

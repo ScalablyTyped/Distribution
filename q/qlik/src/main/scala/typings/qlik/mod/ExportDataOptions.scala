@@ -5,12 +5,13 @@ import typings.qlik.qlikStrings.CSV_C
 import typings.qlik.qlikStrings.CSV_T
 import typings.qlik.qlikStrings.OOXML
 import typings.qlik.qlikStrings.P
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportDataOptions extends js.Object {
+trait ExportDataOptions extends StObject {
   
   var download: Boolean = js.native
   
@@ -29,33 +30,21 @@ object ExportDataOptions {
   }
   
   @scala.inline
-  implicit class ExportDataOptionsOps[Self <: ExportDataOptions] (val x: Self) extends AnyVal {
+  implicit class ExportDataOptionsMutableBuilder[Self <: ExportDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def setDownload(value: Boolean): Self = this.set("download", value.asInstanceOf[js.Any])
+    def setFormat(value: OOXML | CSV_C | CSV_T): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: OOXML | CSV_C | CSV_T): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: A | P): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setState(value: A | P): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

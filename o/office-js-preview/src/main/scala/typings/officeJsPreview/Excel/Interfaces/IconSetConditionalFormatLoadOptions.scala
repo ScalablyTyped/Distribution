@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait IconSetConditionalFormatLoadOptions extends js.Object {
+trait IconSetConditionalFormatLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -60,48 +61,36 @@ object IconSetConditionalFormatLoadOptions {
   }
   
   @scala.inline
-  implicit class IconSetConditionalFormatLoadOptionsOps[Self <: IconSetConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
+  implicit class IconSetConditionalFormatLoadOptionsMutableBuilder[Self <: IconSetConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCriteria(value: Boolean): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setReverseIconOrder(value: Boolean): Self = StObject.set(x, "reverseIconOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteria(value: Boolean): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    def setReverseIconOrderUndefined: Self = StObject.set(x, "reverseIconOrder", js.undefined)
     
     @scala.inline
-    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    def setShowIconOnly(value: Boolean): Self = StObject.set(x, "showIconOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverseIconOrder(value: Boolean): Self = this.set("reverseIconOrder", value.asInstanceOf[js.Any])
+    def setShowIconOnlyUndefined: Self = StObject.set(x, "showIconOnly", js.undefined)
     
     @scala.inline
-    def deleteReverseIconOrder: Self = this.set("reverseIconOrder", js.undefined)
+    def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowIconOnly(value: Boolean): Self = this.set("showIconOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowIconOnly: Self = this.set("showIconOnly", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: Boolean): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

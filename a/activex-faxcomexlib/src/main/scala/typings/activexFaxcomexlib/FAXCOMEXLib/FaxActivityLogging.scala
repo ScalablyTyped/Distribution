@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxActivityLogging Class */
 @js.native
-trait FaxActivityLogging extends js.Object {
+trait FaxActivityLogging extends StObject {
   
   /** Activity log database files path */
   var DatabasePath: String = js.native
@@ -43,36 +44,24 @@ object FaxActivityLogging {
   }
   
   @scala.inline
-  implicit class FaxActivityLoggingOps[Self <: FaxActivityLogging] (val x: Self) extends AnyVal {
+  implicit class FaxActivityLoggingMutableBuilder[Self <: FaxActivityLogging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabasePath(value: String): Self = StObject.set(x, "DatabasePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFAXCOMEXLibDotFaxActivityLogging_typekey(value: FaxActivityLogging): Self = StObject.set(x, "FAXCOMEXLib.FaxActivityLogging_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogIncoming(value: Boolean): Self = StObject.set(x, "LogIncoming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabasePath(value: String): Self = this.set("DatabasePath", value.asInstanceOf[js.Any])
+    def setLogOutgoing(value: Boolean): Self = StObject.set(x, "LogOutgoing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxActivityLogging_typekey(value: FaxActivityLogging): Self = this.set("FAXCOMEXLib.FaxActivityLogging_typekey", value.asInstanceOf[js.Any])
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLogIncoming(value: Boolean): Self = this.set("LogIncoming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogOutgoing(value: Boolean): Self = this.set("LogOutgoing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("Refresh", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
+    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
   }
 }

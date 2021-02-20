@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Border extends js.Object {
+trait Border extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -55,54 +56,42 @@ object Border {
   }
   
   @scala.inline
-  implicit class BorderOps[Self <: Border] (val x: Self) extends AnyVal {
+  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtStyle(value: WdPageBorderArt): Self = StObject.set(x, "ArtStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtWidth(value: Double): Self = StObject.set(x, "ArtWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setColor(value: WdColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtStyle(value: WdPageBorderArt): Self = this.set("ArtStyle", value.asInstanceOf[js.Any])
+    def setColorIndex(value: WdColorIndex): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtWidth(value: Double): Self = this.set("ArtWidth", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: WdColor): Self = this.set("Color", value.asInstanceOf[js.Any])
+    def setInside(value: Boolean): Self = StObject.set(x, "Inside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorIndex(value: WdColorIndex): Self = this.set("ColorIndex", value.asInstanceOf[js.Any])
+    def setLineStyle(value: WdLineStyle): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setLineWidth(value: WdLineWidth): Self = StObject.set(x, "LineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInside(value: Boolean): Self = this.set("Inside", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: WdLineStyle): Self = this.set("LineStyle", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: WdLineWidth): Self = this.set("LineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotBorder_typekey(value: Border): Self = this.set("Word.Border_typekey", value.asInstanceOf[js.Any])
+    def setWordDotBorder_typekey(value: Border): Self = StObject.set(x, "Word.Border_typekey", value.asInstanceOf[js.Any])
   }
 }

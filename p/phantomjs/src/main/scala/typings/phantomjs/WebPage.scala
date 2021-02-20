@@ -1,12 +1,13 @@
 package typings.phantomjs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebPage extends js.Object {
+trait WebPage extends StObject {
   
   // Functions
   def addCookie(cookie: Cookie): Boolean = js.native
@@ -18,10 +19,10 @@ trait WebPage extends js.Object {
   
   def childFramesCount(): Double = js.native
   
-    // DEPRECATED
+  // DEPRECATED
   def childFramesName(): String = js.native
   
-    // DEPRECATED
+  // DEPRECATED
   def clearCookies(): Unit = js.native
   
   var clipRect: ClipRect = js.native
@@ -39,7 +40,7 @@ trait WebPage extends js.Object {
   
   var customHeaders: StringDictionary[String] = js.native
   
-    // DEPRECATED
+  // DEPRECATED
   def deleteCookie(cookieName: String): Boolean = js.native
   
   def evaluate(fn: js.Function, args: js.Any*): js.Any = js.native
@@ -50,7 +51,7 @@ trait WebPage extends js.Object {
   
   var event: js.Any = js.native
   
-   // :TODO: elaborate this when documentation improves
+  // :TODO: elaborate this when documentation improves
   var focusedFrameName: String = js.native
   
   var frameContent: String = js.native
@@ -67,7 +68,7 @@ trait WebPage extends js.Object {
   
   var framesName: js.Any = js.native
   
-   // :TODO: elaborate this when documentation improves
+  // :TODO: elaborate this when documentation improves
   def getPage(windowName: String): WebPage = js.native
   
   def go(index: Double): Unit = js.native
@@ -89,7 +90,7 @@ trait WebPage extends js.Object {
   def javaScriptConsoleMessageSent(msg: String, lineNum: Double): Unit = js.native
   def javaScriptConsoleMessageSent(msg: String, lineNum: Double, sourceId: String): Unit = js.native
   
-   // :TODO: elaborate this when documentation improves
+  // :TODO: elaborate this when documentation improves
   var libraryPath: String = js.native
   
   def loadFinished(status: String): Unit = js.native
@@ -109,7 +110,7 @@ trait WebPage extends js.Object {
   
   var onCallback: js.Function = js.native
   
-    // EXPERIMENTAL
+  // EXPERIMENTAL
   def onClosing(closingPage: WebPage): js.Any = js.native
   
   def onConfirm(msg: String): Boolean = js.native
@@ -161,10 +162,10 @@ trait WebPage extends js.Object {
   
   def rawPageCreated(newPage: WebPage): Unit = js.native
   
-   // :TODO: elaborate this when documentation improves
+  // :TODO: elaborate this when documentation improves
   def release(): Unit = js.native
   
-    // DEPRECATED
+  // DEPRECATED
   def reload(): Unit = js.native
   
   def render(filename: String): Unit = js.native
@@ -233,12 +234,12 @@ trait WebPage extends js.Object {
   
   def switchToMainFrame(): Unit = js.native
   
-    // DEPRECATED
+  // DEPRECATED
   def switchToParentFrame(): Unit = js.native
   
   var title: String = js.native
   
-    // DEPRECATED
+  // DEPRECATED
   def uploadFile(selector: String, filename: String): Unit = js.native
   
   var url: String = js.native

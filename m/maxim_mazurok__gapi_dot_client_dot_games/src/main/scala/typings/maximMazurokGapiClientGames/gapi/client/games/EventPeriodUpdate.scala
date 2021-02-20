@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGames.gapi.client.games
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventPeriodUpdate extends js.Object {
+trait EventPeriodUpdate extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#eventPeriodUpdate`. */
   var kind: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object EventPeriodUpdate {
   }
   
   @scala.inline
-  implicit class EventPeriodUpdateOps[Self <: EventPeriodUpdate] (val x: Self) extends AnyVal {
+  implicit class EventPeriodUpdateMutableBuilder[Self <: EventPeriodUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimePeriod(value: EventPeriodRange): Self = StObject.set(x, "timePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setTimePeriodUndefined: Self = StObject.set(x, "timePeriod", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setUpdates(value: js.Array[EventUpdateRequest]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePeriod(value: EventPeriodRange): Self = this.set("timePeriod", value.asInstanceOf[js.Any])
+    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
     @scala.inline
-    def deleteTimePeriod: Self = this.set("timePeriod", js.undefined)
-    
-    @scala.inline
-    def setUpdatesVarargs(value: EventUpdateRequest*): Self = this.set("updates", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdates(value: js.Array[EventUpdateRequest]): Self = this.set("updates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdates: Self = this.set("updates", js.undefined)
+    def setUpdatesVarargs(value: EventUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.androiduix.android.view
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VelocityTracker extends js.Object {
+trait VelocityTracker extends StObject {
   
   def addMovement(ev: MotionEvent): Unit = js.native
   

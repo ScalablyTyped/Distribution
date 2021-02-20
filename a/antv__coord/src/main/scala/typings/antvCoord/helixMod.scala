@@ -1,13 +1,18 @@
 package typings.antvCoord
 
 import typings.antvCoord.interfaceMod.PolarCfg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/coord/lib/coord/helix", JSImport.Namespace)
-@js.native
-object helixMod extends js.Object {
+object helixMod {
+  
+  @JSImport("@antv/coord/lib/coord/helix", JSImport.Default)
+  @js.native
+  class default protected () extends Helix {
+    def this(cfg: PolarCfg) = this()
+  }
   
   @js.native
   trait Helix
@@ -16,10 +21,5 @@ object helixMod extends js.Object {
     var a: js.Any = js.native
     
     var d: js.Any = js.native
-  }
-  
-  @js.native
-  class default protected () extends Helix {
-    def this(cfg: PolarCfg) = this()
   }
 }

@@ -1,7 +1,8 @@
 package typings.moment.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _CalendarKey extends js.Object
+trait _CalendarKey extends StObject

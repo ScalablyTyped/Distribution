@@ -1,13 +1,12 @@
 package typings.twilioChat
 
 import typings.twilioChat.paginatorMod.Paginator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-chat/lib/syncpaginator", JSImport.Namespace)
-@js.native
-object syncpaginatorMod extends js.Object {
+object syncpaginatorMod {
   
   /**
     * @classdesc Pagination helper class for Sync
@@ -16,6 +15,7 @@ object syncpaginatorMod extends js.Object {
     * @property {boolean} hasNextPage
     * @property {boolean} hasPrevPage
     */
+  @JSImport("twilio-chat/lib/syncpaginator", "SyncPaginator")
   @js.native
   class SyncPaginator[T] protected () extends Paginator[T] {
     /**

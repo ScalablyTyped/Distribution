@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,48 +43,36 @@ object CIMMarkerPlacementAtRatioPositions {
   }
   
   @scala.inline
-  implicit class CIMMarkerPlacementAtRatioPositionsOps[Self <: CIMMarkerPlacementAtRatioPositions] (val x: Self) extends AnyVal {
+  implicit class CIMMarkerPlacementAtRatioPositionsMutableBuilder[Self <: CIMMarkerPlacementAtRatioPositions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginPosition(value: Double): Self = StObject.set(x, "beginPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginPositionUndefined: Self = StObject.set(x, "beginPosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtRatioPositions): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
     @scala.inline
-    def setBeginPosition(value: Double): Self = this.set("beginPosition", value.asInstanceOf[js.Any])
+    def setFlipFirst(value: Boolean): Self = StObject.set(x, "flipFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeginPosition: Self = this.set("beginPosition", js.undefined)
+    def setFlipFirstUndefined: Self = StObject.set(x, "flipFirst", js.undefined)
     
     @scala.inline
-    def setEndPosition(value: Double): Self = this.set("endPosition", value.asInstanceOf[js.Any])
+    def setPositionArray(value: js.Array[Double]): Self = StObject.set(x, "positionArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndPosition: Self = this.set("endPosition", js.undefined)
+    def setPositionArrayUndefined: Self = StObject.set(x, "positionArray", js.undefined)
     
     @scala.inline
-    def setFlipFirst(value: Boolean): Self = this.set("flipFirst", value.asInstanceOf[js.Any])
+    def setPositionArrayVarargs(value: Double*): Self = StObject.set(x, "positionArray", js.Array(value :_*))
     
     @scala.inline
-    def deleteFlipFirst: Self = this.set("flipFirst", js.undefined)
-    
-    @scala.inline
-    def setPositionArrayVarargs(value: Double*): Self = this.set("positionArray", js.Array(value :_*))
-    
-    @scala.inline
-    def setPositionArray(value: js.Array[Double]): Self = this.set("positionArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositionArray: Self = this.set("positionArray", js.undefined)
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtRatioPositions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

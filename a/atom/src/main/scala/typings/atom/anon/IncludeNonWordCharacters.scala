@@ -1,12 +1,13 @@
 package typings.atom.anon
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncludeNonWordCharacters extends js.Object {
+trait IncludeNonWordCharacters extends StObject {
   
   var includeNonWordCharacters: js.UndefOr[Boolean] = js.native
   
@@ -21,30 +22,18 @@ object IncludeNonWordCharacters {
   }
   
   @scala.inline
-  implicit class IncludeNonWordCharactersOps[Self <: IncludeNonWordCharacters] (val x: Self) extends AnyVal {
+  implicit class IncludeNonWordCharactersMutableBuilder[Self <: IncludeNonWordCharacters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeNonWordCharacters(value: Boolean): Self = StObject.set(x, "includeNonWordCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeNonWordCharactersUndefined: Self = StObject.set(x, "includeNonWordCharacters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWordRegex(value: RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNonWordCharacters(value: Boolean): Self = this.set("includeNonWordCharacters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeNonWordCharacters: Self = this.set("includeNonWordCharacters", js.undefined)
-    
-    @scala.inline
-    def setWordRegex(value: RegExp): Self = this.set("wordRegex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordRegex: Self = this.set("wordRegex", js.undefined)
+    def setWordRegexUndefined: Self = StObject.set(x, "wordRegex", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartSeriesItemErrorBars extends js.Object {
+trait ChartSeriesItemErrorBars extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object ChartSeriesItemErrorBars {
   }
   
   @scala.inline
-  implicit class ChartSeriesItemErrorBarsOps[Self <: ChartSeriesItemErrorBars] (val x: Self) extends AnyVal {
+  implicit class ChartSeriesItemErrorBarsMutableBuilder[Self <: ChartSeriesItemErrorBars] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndCaps(value: Boolean): Self = StObject.set(x, "endCaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setEndCapsUndefined: Self = StObject.set(x, "endCaps", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setLine(value: ChartSeriesItemErrorBarsLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCaps(value: Boolean): Self = this.set("endCaps", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteEndCaps: Self = this.set("endCaps", js.undefined)
+    def setValue(value: String | Double | js.Any | js.Function): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: ChartSeriesItemErrorBarsLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setVisual(value: js.Function): Self = StObject.set(x, "visual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String | Double | js.Any | js.Function): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setXValue(value: String | Double | js.Any | js.Function): Self = StObject.set(x, "xValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisual(value: js.Function): Self = this.set("visual", value.asInstanceOf[js.Any])
+    def setXValueUndefined: Self = StObject.set(x, "xValue", js.undefined)
     
     @scala.inline
-    def deleteVisual: Self = this.set("visual", js.undefined)
+    def setYValue(value: String | Double | js.Any | js.Function): Self = StObject.set(x, "yValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXValue(value: String | Double | js.Any | js.Function): Self = this.set("xValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXValue: Self = this.set("xValue", js.undefined)
-    
-    @scala.inline
-    def setYValue(value: String | Double | js.Any | js.Function): Self = this.set("yValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYValue: Self = this.set("yValue", js.undefined)
+    def setYValueUndefined: Self = StObject.set(x, "yValue", js.undefined)
   }
 }

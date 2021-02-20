@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskProvider[T /* <: Task */] extends js.Object {
+trait TaskProvider[T /* <: Task */] extends StObject {
   
   /**
     * Provides tasks.
@@ -41,24 +42,12 @@ object TaskProvider {
   }
   
   @scala.inline
-  implicit class TaskProviderOps[Self <: TaskProvider[_], T /* <: Task */] (val x: Self with TaskProvider[T]) extends AnyVal {
+  implicit class TaskProviderMutableBuilder[Self <: TaskProvider[_], T /* <: Task */] (val x: Self with TaskProvider[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvideTasks(value: CancellationToken => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideTasks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvideTasks(value: CancellationToken => ProviderResult[js.Array[T]]): Self = this.set("provideTasks", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResolveTask(value: (T, CancellationToken) => ProviderResult[T]): Self = this.set("resolveTask", js.Any.fromFunction2(value))
+    def setResolveTask(value: (T, CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveTask", js.Any.fromFunction2(value))
   }
 }

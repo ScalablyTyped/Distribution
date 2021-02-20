@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketPermissionConfiguration extends js.Object {
+trait BucketPermissionConfiguration extends StObject {
   
   /**
     * The account-level permissions settings that apply to the bucket.
@@ -26,30 +27,18 @@ object BucketPermissionConfiguration {
   }
   
   @scala.inline
-  implicit class BucketPermissionConfigurationOps[Self <: BucketPermissionConfiguration] (val x: Self) extends AnyVal {
+  implicit class BucketPermissionConfigurationMutableBuilder[Self <: BucketPermissionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountLevelPermissions(value: AccountLevelPermissions): Self = StObject.set(x, "accountLevelPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountLevelPermissionsUndefined: Self = StObject.set(x, "accountLevelPermissions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketLevelPermissions(value: BucketLevelPermissions): Self = StObject.set(x, "bucketLevelPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountLevelPermissions(value: AccountLevelPermissions): Self = this.set("accountLevelPermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountLevelPermissions: Self = this.set("accountLevelPermissions", js.undefined)
-    
-    @scala.inline
-    def setBucketLevelPermissions(value: BucketLevelPermissions): Self = this.set("bucketLevelPermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketLevelPermissions: Self = this.set("bucketLevelPermissions", js.undefined)
+    def setBucketLevelPermissionsUndefined: Self = StObject.set(x, "bucketLevelPermissions", js.undefined)
   }
 }

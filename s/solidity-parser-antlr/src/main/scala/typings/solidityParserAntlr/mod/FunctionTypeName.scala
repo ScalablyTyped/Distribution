@@ -1,5 +1,6 @@
 package typings.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,39 +38,27 @@ object FunctionTypeName {
   }
   
   @scala.inline
-  implicit class FunctionTypeNameOps[Self <: FunctionTypeName] (val x: Self) extends AnyVal {
+  implicit class FunctionTypeNameMutableBuilder[Self <: FunctionTypeName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterTypes(value: js.Array[TypeName]): Self = StObject.set(x, "parameterTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterTypesVarargs(value: TypeName*): Self = StObject.set(x, "parameterTypes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnTypes(value: js.Array[TypeName]): Self = StObject.set(x, "returnTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterTypesVarargs(value: TypeName*): Self = this.set("parameterTypes", js.Array(value :_*))
+    def setReturnTypesVarargs(value: TypeName*): Self = StObject.set(x, "returnTypes", js.Array(value :_*))
     
     @scala.inline
-    def setParameterTypes(value: js.Array[TypeName]): Self = this.set("parameterTypes", value.asInstanceOf[js.Any])
+    def setStateMutability(value: String): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnTypesVarargs(value: TypeName*): Self = this.set("returnTypes", js.Array(value :_*))
+    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionTypeName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnTypes(value: js.Array[TypeName]): Self = this.set("returnTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStateMutability(value: String): Self = this.set("stateMutability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionTypeName): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

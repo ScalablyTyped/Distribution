@@ -1,15 +1,15 @@
 package typings.imageQ
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/image/spaceFillingCurves/hilbertCurve", JSImport.Namespace)
-@js.native
-object hilbertCurveMod extends js.Object {
+object hilbertCurveMod {
   
+  @JSImport("image-q/dist/image/spaceFillingCurves/hilbertCurve", "HilbertCurveBase")
   @js.native
-  class HilbertCurveBase () extends js.Object {
+  class HilbertCurveBase () extends StObject {
     
     var _callback: js.Any = js.native
     

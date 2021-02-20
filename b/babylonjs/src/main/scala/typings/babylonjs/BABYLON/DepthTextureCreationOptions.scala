@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DepthTextureCreationOptions extends js.Object {
+trait DepthTextureCreationOptions extends StObject {
   
   /** Specifies whether or not bilinear filtering is enable on the texture */
   var bilinearFiltering: js.UndefOr[Boolean] = js.native
@@ -28,42 +29,30 @@ object DepthTextureCreationOptions {
   }
   
   @scala.inline
-  implicit class DepthTextureCreationOptionsOps[Self <: DepthTextureCreationOptions] (val x: Self) extends AnyVal {
+  implicit class DepthTextureCreationOptionsMutableBuilder[Self <: DepthTextureCreationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilinearFiltering(value: Boolean): Self = StObject.set(x, "bilinearFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBilinearFilteringUndefined: Self = StObject.set(x, "bilinearFiltering", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComparisonFunction(value: Double): Self = StObject.set(x, "comparisonFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilinearFiltering(value: Boolean): Self = this.set("bilinearFiltering", value.asInstanceOf[js.Any])
+    def setComparisonFunctionUndefined: Self = StObject.set(x, "comparisonFunction", js.undefined)
     
     @scala.inline
-    def deleteBilinearFiltering: Self = this.set("bilinearFiltering", js.undefined)
+    def setGenerateStencil(value: Boolean): Self = StObject.set(x, "generateStencil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparisonFunction(value: Double): Self = this.set("comparisonFunction", value.asInstanceOf[js.Any])
+    def setGenerateStencilUndefined: Self = StObject.set(x, "generateStencil", js.undefined)
     
     @scala.inline
-    def deleteComparisonFunction: Self = this.set("comparisonFunction", js.undefined)
+    def setIsCube(value: Boolean): Self = StObject.set(x, "isCube", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateStencil(value: Boolean): Self = this.set("generateStencil", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenerateStencil: Self = this.set("generateStencil", js.undefined)
-    
-    @scala.inline
-    def setIsCube(value: Boolean): Self = this.set("isCube", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsCube: Self = this.set("isCube", js.undefined)
+    def setIsCubeUndefined: Self = StObject.set(x, "isCube", js.undefined)
   }
 }

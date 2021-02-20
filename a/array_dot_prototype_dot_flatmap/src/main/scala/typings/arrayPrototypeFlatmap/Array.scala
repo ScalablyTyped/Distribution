@@ -1,11 +1,12 @@
 package typings.arrayPrototypeFlatmap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Array[T] extends js.Object {
+trait Array[T] extends StObject {
   
   def flatMap[U, R /* <: js.UndefOr[js.Object] */](
     fn: js.ThisFunction3[/* this */ R, /* x */ T, /* index */ Double, /* array */ this.type, ReadonlyArray[U]]

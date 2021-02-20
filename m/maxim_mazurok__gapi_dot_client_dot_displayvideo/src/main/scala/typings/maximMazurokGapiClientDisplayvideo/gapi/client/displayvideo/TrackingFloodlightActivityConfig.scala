@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrackingFloodlightActivityConfig extends js.Object {
+trait TrackingFloodlightActivityConfig extends StObject {
   
   /** Required. The ID of the Floodlight activity. */
   var floodlightActivityId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object TrackingFloodlightActivityConfig {
   }
   
   @scala.inline
-  implicit class TrackingFloodlightActivityConfigOps[Self <: TrackingFloodlightActivityConfig] (val x: Self) extends AnyVal {
+  implicit class TrackingFloodlightActivityConfigMutableBuilder[Self <: TrackingFloodlightActivityConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostClickLookbackWindowDays(value: Double): Self = StObject.set(x, "postClickLookbackWindowDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityId(value: String): Self = this.set("floodlightActivityId", value.asInstanceOf[js.Any])
+    def setPostClickLookbackWindowDaysUndefined: Self = StObject.set(x, "postClickLookbackWindowDays", js.undefined)
     
     @scala.inline
-    def deleteFloodlightActivityId: Self = this.set("floodlightActivityId", js.undefined)
+    def setPostViewLookbackWindowDays(value: Double): Self = StObject.set(x, "postViewLookbackWindowDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostClickLookbackWindowDays(value: Double): Self = this.set("postClickLookbackWindowDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostClickLookbackWindowDays: Self = this.set("postClickLookbackWindowDays", js.undefined)
-    
-    @scala.inline
-    def setPostViewLookbackWindowDays(value: Double): Self = this.set("postViewLookbackWindowDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostViewLookbackWindowDays: Self = this.set("postViewLookbackWindowDays", js.undefined)
+    def setPostViewLookbackWindowDaysUndefined: Self = StObject.set(x, "postViewLookbackWindowDays", js.undefined)
   }
 }

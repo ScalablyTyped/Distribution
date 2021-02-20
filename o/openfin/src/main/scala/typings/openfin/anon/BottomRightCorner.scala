@@ -1,11 +1,12 @@
 package typings.openfin.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BottomRightCorner extends js.Object {
+trait BottomRightCorner extends StObject {
   
   var bottomRightCorner: Double = js.native
   
@@ -22,30 +23,18 @@ object BottomRightCorner {
   }
   
   @scala.inline
-  implicit class BottomRightCornerOps[Self <: BottomRightCorner] (val x: Self) extends AnyVal {
+  implicit class BottomRightCornerMutableBuilder[Self <: BottomRightCorner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomRightCorner(value: Double): Self = StObject.set(x, "bottomRightCorner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSides(value: Left): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSidesUndefined: Self = StObject.set(x, "sides", js.undefined)
     
     @scala.inline
-    def setBottomRightCorner(value: Double): Self = this.set("bottomRightCorner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSides(value: Left): Self = this.set("sides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSides: Self = this.set("sides", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

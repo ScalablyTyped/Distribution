@@ -1,17 +1,17 @@
 package typings.emberData
 
-import typings.emberData.mod.DS.JSONAPISerializer
+import typings.emberData.mod.default.JSONAPISerializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember-data/serializers/json-api", JSImport.Namespace)
-@js.native
-object serializersJsonApiMod extends js.Object {
+object serializersJsonApiMod {
   
   /**
     * Ember Data 2.0 Serializer:
     */
+  @JSImport("ember-data/serializers/json-api", JSImport.Default)
   @js.native
   class default () extends JSONAPISerializer
 }

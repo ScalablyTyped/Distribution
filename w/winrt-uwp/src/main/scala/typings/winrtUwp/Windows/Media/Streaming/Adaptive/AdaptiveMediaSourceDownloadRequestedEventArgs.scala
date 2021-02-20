@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the DownloadRequested event. */
 @js.native
-trait AdaptiveMediaSourceDownloadRequestedEventArgs extends js.Object {
+trait AdaptiveMediaSourceDownloadRequestedEventArgs extends StObject {
   
   /**
     * Gets a deferral that can be used to defer the completion of the DownloadRequested event so that the app can asynchronously download media content.
@@ -46,36 +47,24 @@ object AdaptiveMediaSourceDownloadRequestedEventArgs {
   }
   
   @scala.inline
-  implicit class AdaptiveMediaSourceDownloadRequestedEventArgsOps[Self <: AdaptiveMediaSourceDownloadRequestedEventArgs] (val x: Self) extends AnyVal {
+  implicit class AdaptiveMediaSourceDownloadRequestedEventArgsMutableBuilder[Self <: AdaptiveMediaSourceDownloadRequestedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDeferral(value: () => AdaptiveMediaSourceDownloadRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceByteRangeLength(value: Double): Self = StObject.set(x, "resourceByteRangeLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceByteRangeOffset(value: Double): Self = StObject.set(x, "resourceByteRangeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDeferral(value: () => AdaptiveMediaSourceDownloadRequestedDeferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
+    def setResourceType(value: AdaptiveMediaSourceResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceByteRangeLength(value: Double): Self = this.set("resourceByteRangeLength", value.asInstanceOf[js.Any])
+    def setResourceUri(value: Uri): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceByteRangeOffset(value: Double): Self = this.set("resourceByteRangeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceType(value: AdaptiveMediaSourceResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceUri(value: Uri): Self = this.set("resourceUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: AdaptiveMediaSourceDownloadResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResult(value: AdaptiveMediaSourceDownloadResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompatibleFields extends js.Object {
+trait CompatibleFields extends StObject {
   
   /** Contains items that are compatible to be selected for a report of type "CROSS_DIMENSION_REACH". */
   var crossDimensionReachReportCompatibleFields: js.UndefOr[CrossDimensionReachReportCompatibleFields] = js.native
@@ -40,66 +41,54 @@ object CompatibleFields {
   }
   
   @scala.inline
-  implicit class CompatibleFieldsOps[Self <: CompatibleFields] (val x: Self) extends AnyVal {
+  implicit class CompatibleFieldsMutableBuilder[Self <: CompatibleFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrossDimensionReachReportCompatibleFields(value: CrossDimensionReachReportCompatibleFields): Self = StObject.set(x, "crossDimensionReachReportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrossDimensionReachReportCompatibleFieldsUndefined: Self = StObject.set(x, "crossDimensionReachReportCompatibleFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloodlightReportCompatibleFields(value: FloodlightReportCompatibleFields): Self = StObject.set(x, "floodlightReportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossDimensionReachReportCompatibleFields(value: CrossDimensionReachReportCompatibleFields): Self = this.set("crossDimensionReachReportCompatibleFields", value.asInstanceOf[js.Any])
+    def setFloodlightReportCompatibleFieldsUndefined: Self = StObject.set(x, "floodlightReportCompatibleFields", js.undefined)
     
     @scala.inline
-    def deleteCrossDimensionReachReportCompatibleFields: Self = this.set("crossDimensionReachReportCompatibleFields", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightReportCompatibleFields(value: FloodlightReportCompatibleFields): Self = this.set("floodlightReportCompatibleFields", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFloodlightReportCompatibleFields: Self = this.set("floodlightReportCompatibleFields", js.undefined)
+    def setPathAttributionReportCompatibleFields(value: PathReportCompatibleFields): Self = StObject.set(x, "pathAttributionReportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPathAttributionReportCompatibleFieldsUndefined: Self = StObject.set(x, "pathAttributionReportCompatibleFields", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPathReportCompatibleFields(value: PathReportCompatibleFields): Self = StObject.set(x, "pathReportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathAttributionReportCompatibleFields(value: PathReportCompatibleFields): Self = this.set("pathAttributionReportCompatibleFields", value.asInstanceOf[js.Any])
+    def setPathReportCompatibleFieldsUndefined: Self = StObject.set(x, "pathReportCompatibleFields", js.undefined)
     
     @scala.inline
-    def deletePathAttributionReportCompatibleFields: Self = this.set("pathAttributionReportCompatibleFields", js.undefined)
+    def setPathToConversionReportCompatibleFields(value: PathToConversionReportCompatibleFields): Self = StObject.set(x, "pathToConversionReportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathReportCompatibleFields(value: PathReportCompatibleFields): Self = this.set("pathReportCompatibleFields", value.asInstanceOf[js.Any])
+    def setPathToConversionReportCompatibleFieldsUndefined: Self = StObject.set(x, "pathToConversionReportCompatibleFields", js.undefined)
     
     @scala.inline
-    def deletePathReportCompatibleFields: Self = this.set("pathReportCompatibleFields", js.undefined)
+    def setReachReportCompatibleFields(value: ReachReportCompatibleFields): Self = StObject.set(x, "reachReportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathToConversionReportCompatibleFields(value: PathToConversionReportCompatibleFields): Self = this.set("pathToConversionReportCompatibleFields", value.asInstanceOf[js.Any])
+    def setReachReportCompatibleFieldsUndefined: Self = StObject.set(x, "reachReportCompatibleFields", js.undefined)
     
     @scala.inline
-    def deletePathToConversionReportCompatibleFields: Self = this.set("pathToConversionReportCompatibleFields", js.undefined)
+    def setReportCompatibleFields(value: ReportCompatibleFields): Self = StObject.set(x, "reportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReachReportCompatibleFields(value: ReachReportCompatibleFields): Self = this.set("reachReportCompatibleFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReachReportCompatibleFields: Self = this.set("reachReportCompatibleFields", js.undefined)
-    
-    @scala.inline
-    def setReportCompatibleFields(value: ReportCompatibleFields): Self = this.set("reportCompatibleFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportCompatibleFields: Self = this.set("reportCompatibleFields", js.undefined)
+    def setReportCompatibleFieldsUndefined: Self = StObject.set(x, "reportCompatibleFields", js.undefined)
   }
 }

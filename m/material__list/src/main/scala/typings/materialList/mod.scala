@@ -1,45 +1,34 @@
 package typings.materialList
 
-import typings.materialList.adapterMod.MDCListAdapter
-import typings.materialList.anon.ACTIONEVENT
-import typings.materialList.anon.LISTITEMACTIVATEDCLASS
 import typings.materialList.anon.PartialMDCListAdapter
-import typings.materialList.anon.TYPEAHEADBUFFERCLEARTIMEOUTMS
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/list", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@material/list", "MDCList")
   @js.native
-  class MDCList ()
-    extends typings.materialList.componentMod.MDCList
+  class MDCList protected ()
+    extends typings.materialList.componentMod.MDCList {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: typings.materialList.foundationMod.MDCListFoundation, args: js.Any*) = this()
+  }
   /* static members */
-  @js.native
-  object MDCList extends js.Object {
+  object MDCList {
     
+    @JSImport("@material/list", "MDCList.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialList.componentMod.MDCList = js.native
   }
   
+  @JSImport("@material/list", "MDCListFoundation")
   @js.native
   class MDCListFoundation ()
     extends typings.materialList.foundationMod.MDCListFoundation {
     def this(adapter: PartialMDCListAdapter) = this()
-  }
-  /* static members */
-  @js.native
-  object MDCListFoundation extends js.Object {
-    
-    def cssClasses: LISTITEMACTIVATEDCLASS = js.native
-    
-    def defaultAdapter: MDCListAdapter = js.native
-    
-    def numbers: TYPEAHEADBUFFERCLEARTIMEOUTMS = js.native
-    
-    def strings: ACTIONEVENT = js.native
   }
   
   /**
@@ -64,63 +53,168 @@ object mod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var LIST_ITEM_ACTIVATED_CLASS: String = js.native
+    @JSImport("@material/list", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var LIST_ITEM_CLASS: String = js.native
+    @JSImport("@material/list", "cssClasses.LIST_ITEM_ACTIVATED_CLASS")
+    @js.native
+    def LIST_ITEM_ACTIVATED_CLASS: String = js.native
+    @scala.inline
+    def LIST_ITEM_ACTIVATED_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_ITEM_ACTIVATED_CLASS")(x.asInstanceOf[js.Any])
     
-    var LIST_ITEM_DISABLED_CLASS: String = js.native
+    @JSImport("@material/list", "cssClasses.LIST_ITEM_CLASS")
+    @js.native
+    def LIST_ITEM_CLASS: String = js.native
+    @scala.inline
+    def LIST_ITEM_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_ITEM_CLASS")(x.asInstanceOf[js.Any])
     
-    var LIST_ITEM_PRIMARY_TEXT_CLASS: String = js.native
+    @JSImport("@material/list", "cssClasses.LIST_ITEM_DISABLED_CLASS")
+    @js.native
+    def LIST_ITEM_DISABLED_CLASS: String = js.native
+    @scala.inline
+    def LIST_ITEM_DISABLED_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_ITEM_DISABLED_CLASS")(x.asInstanceOf[js.Any])
     
-    var LIST_ITEM_SELECTED_CLASS: String = js.native
+    @JSImport("@material/list", "cssClasses.LIST_ITEM_PRIMARY_TEXT_CLASS")
+    @js.native
+    def LIST_ITEM_PRIMARY_TEXT_CLASS: String = js.native
+    @scala.inline
+    def LIST_ITEM_PRIMARY_TEXT_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_ITEM_PRIMARY_TEXT_CLASS")(x.asInstanceOf[js.Any])
     
-    var LIST_ITEM_TEXT_CLASS: String = js.native
+    @JSImport("@material/list", "cssClasses.LIST_ITEM_SELECTED_CLASS")
+    @js.native
+    def LIST_ITEM_SELECTED_CLASS: String = js.native
+    @scala.inline
+    def LIST_ITEM_SELECTED_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_ITEM_SELECTED_CLASS")(x.asInstanceOf[js.Any])
     
-    var ROOT: String = js.native
+    @JSImport("@material/list", "cssClasses.LIST_ITEM_TEXT_CLASS")
+    @js.native
+    def LIST_ITEM_TEXT_CLASS: String = js.native
+    @scala.inline
+    def LIST_ITEM_TEXT_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_ITEM_TEXT_CLASS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/list", "cssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    @scala.inline
+    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object numbers extends js.Object {
+  object numbers {
     
-    var TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS: Double = js.native
+    @JSImport("@material/list", "numbers")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var UNSET_INDEX: Double = js.native
+    @JSImport("@material/list", "numbers.TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS")
+    @js.native
+    def TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS: Double = js.native
+    @scala.inline
+    def TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/list", "numbers.UNSET_INDEX")
+    @js.native
+    def UNSET_INDEX: Double = js.native
+    @scala.inline
+    def UNSET_INDEX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSET_INDEX")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var ACTION_EVENT: String = js.native
+    @JSImport("@material/list", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ARIA_CHECKED: String = js.native
+    @JSImport("@material/list", "strings.ACTION_EVENT")
+    @js.native
+    def ACTION_EVENT: String = js.native
+    @scala.inline
+    def ACTION_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTION_EVENT")(x.asInstanceOf[js.Any])
     
-    var ARIA_CHECKED_CHECKBOX_SELECTOR: String = js.native
+    @JSImport("@material/list", "strings.ARIA_CHECKED")
+    @js.native
+    def ARIA_CHECKED: String = js.native
+    @scala.inline
+    def ARIA_CHECKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED")(x.asInstanceOf[js.Any])
     
-    var ARIA_CHECKED_RADIO_SELECTOR: String = js.native
+    @JSImport("@material/list", "strings.ARIA_CHECKED_CHECKBOX_SELECTOR")
+    @js.native
+    def ARIA_CHECKED_CHECKBOX_SELECTOR: String = js.native
+    @scala.inline
+    def ARIA_CHECKED_CHECKBOX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED_CHECKBOX_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var ARIA_CURRENT: String = js.native
+    @JSImport("@material/list", "strings.ARIA_CHECKED_RADIO_SELECTOR")
+    @js.native
+    def ARIA_CHECKED_RADIO_SELECTOR: String = js.native
+    @scala.inline
+    def ARIA_CHECKED_RADIO_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED_RADIO_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var ARIA_DISABLED: String = js.native
+    @JSImport("@material/list", "strings.ARIA_CURRENT")
+    @js.native
+    def ARIA_CURRENT: String = js.native
+    @scala.inline
+    def ARIA_CURRENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CURRENT")(x.asInstanceOf[js.Any])
     
-    var ARIA_ORIENTATION: String = js.native
+    @JSImport("@material/list", "strings.ARIA_DISABLED")
+    @js.native
+    def ARIA_DISABLED: String = js.native
+    @scala.inline
+    def ARIA_DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_DISABLED")(x.asInstanceOf[js.Any])
     
-    var ARIA_ORIENTATION_HORIZONTAL: String = js.native
+    @JSImport("@material/list", "strings.ARIA_ORIENTATION")
+    @js.native
+    def ARIA_ORIENTATION: String = js.native
+    @scala.inline
+    def ARIA_ORIENTATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_ORIENTATION")(x.asInstanceOf[js.Any])
     
-    var ARIA_ROLE_CHECKBOX_SELECTOR: String = js.native
+    @JSImport("@material/list", "strings.ARIA_ORIENTATION_HORIZONTAL")
+    @js.native
+    def ARIA_ORIENTATION_HORIZONTAL: String = js.native
+    @scala.inline
+    def ARIA_ORIENTATION_HORIZONTAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_ORIENTATION_HORIZONTAL")(x.asInstanceOf[js.Any])
     
-    var ARIA_SELECTED: String = js.native
+    @JSImport("@material/list", "strings.ARIA_ROLE_CHECKBOX_SELECTOR")
+    @js.native
+    def ARIA_ROLE_CHECKBOX_SELECTOR: String = js.native
+    @scala.inline
+    def ARIA_ROLE_CHECKBOX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_ROLE_CHECKBOX_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var CHECKBOX_RADIO_SELECTOR: String = js.native
+    @JSImport("@material/list", "strings.ARIA_SELECTED")
+    @js.native
+    def ARIA_SELECTED: String = js.native
+    @scala.inline
+    def ARIA_SELECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_SELECTED")(x.asInstanceOf[js.Any])
     
-    var CHECKBOX_SELECTOR: String = js.native
+    @JSImport("@material/list", "strings.CHECKBOX_RADIO_SELECTOR")
+    @js.native
+    def CHECKBOX_RADIO_SELECTOR: String = js.native
+    @scala.inline
+    def CHECKBOX_RADIO_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKBOX_RADIO_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var CHILD_ELEMENTS_TO_TOGGLE_TABINDEX: String = js.native
+    @JSImport("@material/list", "strings.CHECKBOX_SELECTOR")
+    @js.native
+    def CHECKBOX_SELECTOR: String = js.native
+    @scala.inline
+    def CHECKBOX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKBOX_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var FOCUSABLE_CHILD_ELEMENTS: String = js.native
+    @JSImport("@material/list", "strings.CHILD_ELEMENTS_TO_TOGGLE_TABINDEX")
+    @js.native
+    def CHILD_ELEMENTS_TO_TOGGLE_TABINDEX: String = js.native
+    @scala.inline
+    def CHILD_ELEMENTS_TO_TOGGLE_TABINDEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHILD_ELEMENTS_TO_TOGGLE_TABINDEX")(x.asInstanceOf[js.Any])
     
-    var RADIO_SELECTOR: String = js.native
+    @JSImport("@material/list", "strings.FOCUSABLE_CHILD_ELEMENTS")
+    @js.native
+    def FOCUSABLE_CHILD_ELEMENTS: String = js.native
+    @scala.inline
+    def FOCUSABLE_CHILD_ELEMENTS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUSABLE_CHILD_ELEMENTS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/list", "strings.RADIO_SELECTOR")
+    @js.native
+    def RADIO_SELECTOR: String = js.native
+    @scala.inline
+    def RADIO_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RADIO_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

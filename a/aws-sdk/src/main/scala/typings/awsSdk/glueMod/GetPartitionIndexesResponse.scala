@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPartitionIndexesResponse extends js.Object {
+trait GetPartitionIndexesResponse extends StObject {
   
   /**
     * A continuation token, present if the current list segment is not the last.
@@ -26,33 +27,21 @@ object GetPartitionIndexesResponse {
   }
   
   @scala.inline
-  implicit class GetPartitionIndexesResponseOps[Self <: GetPartitionIndexesResponse] (val x: Self) extends AnyVal {
+  implicit class GetPartitionIndexesResponseMutableBuilder[Self <: GetPartitionIndexesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartitionIndexDescriptorList(value: PartitionIndexDescriptorList): Self = StObject.set(x, "PartitionIndexDescriptorList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPartitionIndexDescriptorListUndefined: Self = StObject.set(x, "PartitionIndexDescriptorList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPartitionIndexDescriptorListVarargs(value: PartitionIndexDescriptor*): Self = this.set("PartitionIndexDescriptorList", js.Array(value :_*))
-    
-    @scala.inline
-    def setPartitionIndexDescriptorList(value: PartitionIndexDescriptorList): Self = this.set("PartitionIndexDescriptorList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionIndexDescriptorList: Self = this.set("PartitionIndexDescriptorList", js.undefined)
+    def setPartitionIndexDescriptorListVarargs(value: PartitionIndexDescriptor*): Self = StObject.set(x, "PartitionIndexDescriptorList", js.Array(value :_*))
   }
 }

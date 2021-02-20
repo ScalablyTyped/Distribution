@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GSuitePrincipal extends js.Object {
+trait GSuitePrincipal extends StObject {
   
   /** This principal represents all users of the G Suite domain of the customer. */
   var gsuiteDomain: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object GSuitePrincipal {
   }
   
   @scala.inline
-  implicit class GSuitePrincipalOps[Self <: GSuitePrincipal] (val x: Self) extends AnyVal {
+  implicit class GSuitePrincipalMutableBuilder[Self <: GSuitePrincipal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGsuiteDomain(value: Boolean): Self = StObject.set(x, "gsuiteDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGsuiteDomainUndefined: Self = StObject.set(x, "gsuiteDomain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGsuiteGroupEmail(value: String): Self = StObject.set(x, "gsuiteGroupEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGsuiteDomain(value: Boolean): Self = this.set("gsuiteDomain", value.asInstanceOf[js.Any])
+    def setGsuiteGroupEmailUndefined: Self = StObject.set(x, "gsuiteGroupEmail", js.undefined)
     
     @scala.inline
-    def deleteGsuiteDomain: Self = this.set("gsuiteDomain", js.undefined)
+    def setGsuiteUserEmail(value: String): Self = StObject.set(x, "gsuiteUserEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGsuiteGroupEmail(value: String): Self = this.set("gsuiteGroupEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGsuiteGroupEmail: Self = this.set("gsuiteGroupEmail", js.undefined)
-    
-    @scala.inline
-    def setGsuiteUserEmail(value: String): Self = this.set("gsuiteUserEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGsuiteUserEmail: Self = this.set("gsuiteUserEmail", js.undefined)
+    def setGsuiteUserEmailUndefined: Self = StObject.set(x, "gsuiteUserEmail", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.node.childProcessMod
 
 import typings.node.processMod.global.NodeJS.Signals
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpawnSyncReturns[T] extends js.Object {
+trait SpawnSyncReturns[T] extends StObject {
   
   var error: js.UndefOr[Error] = js.native
   
@@ -32,51 +33,39 @@ object SpawnSyncReturns {
   }
   
   @scala.inline
-  implicit class SpawnSyncReturnsOps[Self <: SpawnSyncReturns[_], T] (val x: Self with SpawnSyncReturns[T]) extends AnyVal {
+  implicit class SpawnSyncReturnsMutableBuilder[Self <: SpawnSyncReturns[_], T] (val x: Self with SpawnSyncReturns[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputVarargs(value: String*): Self = this.set("output", js.Array(value :_*))
+    def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
     
     @scala.inline
-    def setOutput(value: js.Array[String]): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPid(value: Double): Self = this.set("pid", value.asInstanceOf[js.Any])
+    def setSignal(value: Signals): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStderr(value: T): Self = this.set("stderr", value.asInstanceOf[js.Any])
+    def setSignalNull: Self = StObject.set(x, "signal", null)
     
     @scala.inline
-    def setStdout(value: T): Self = this.set("stdout", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setStderr(value: T): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignal(value: Signals): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignalNull: Self = this.set("signal", null)
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStdout(value: T): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
   }
 }

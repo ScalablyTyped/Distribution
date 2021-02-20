@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.sheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes how to sort a single {@link DataPilotField} */
 @js.native
-trait DataPilotFieldSortInfo extends js.Object {
+trait DataPilotFieldSortInfo extends StObject {
   
   /** contains the data field to sort by if the Mode is DATA */
   var Field: String = js.native
@@ -29,27 +30,15 @@ object DataPilotFieldSortInfo {
   }
   
   @scala.inline
-  implicit class DataPilotFieldSortInfoOps[Self <: DataPilotFieldSortInfo] (val x: Self) extends AnyVal {
+  implicit class DataPilotFieldSortInfoMutableBuilder[Self <: DataPilotFieldSortInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: String): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setField(value: String): Self = this.set("Field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsAscending(value: Boolean): Self = this.set("IsAscending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: Double): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }
 }

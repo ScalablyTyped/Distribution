@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeParameterDeclaration extends NamedDeclaration {
   
+  val default: js.UndefOr[TypeNode] = js.native
+  
   /** Note: Consider calling `getEffectiveConstraintOfTypeParameter` */
   val constraint: js.UndefOr[TypeNode] = js.native
-  
-  val default: js.UndefOr[TypeNode] = js.native
   
   var expression: js.UndefOr[Expression] = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComplianceSummaryItem extends js.Object {
+trait ComplianceSummaryItem extends StObject {
   
   /**
     * The type of compliance item. For example, the compliance type can be Association, Patch, or Custom:string.
@@ -31,36 +32,24 @@ object ComplianceSummaryItem {
   }
   
   @scala.inline
-  implicit class ComplianceSummaryItemOps[Self <: ComplianceSummaryItem] (val x: Self) extends AnyVal {
+  implicit class ComplianceSummaryItemMutableBuilder[Self <: ComplianceSummaryItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceType(value: ComplianceTypeName): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompliantSummary(value: CompliantSummary): Self = StObject.set(x, "CompliantSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceType(value: ComplianceTypeName): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    def setCompliantSummaryUndefined: Self = StObject.set(x, "CompliantSummary", js.undefined)
     
     @scala.inline
-    def deleteComplianceType: Self = this.set("ComplianceType", js.undefined)
+    def setNonCompliantSummary(value: NonCompliantSummary): Self = StObject.set(x, "NonCompliantSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompliantSummary(value: CompliantSummary): Self = this.set("CompliantSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompliantSummary: Self = this.set("CompliantSummary", js.undefined)
-    
-    @scala.inline
-    def setNonCompliantSummary(value: NonCompliantSummary): Self = this.set("NonCompliantSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonCompliantSummary: Self = this.set("NonCompliantSummary", js.undefined)
+    def setNonCompliantSummaryUndefined: Self = StObject.set(x, "NonCompliantSummary", js.undefined)
   }
 }

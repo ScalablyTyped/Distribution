@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumeStatistics extends js.Object {
+trait VolumeStatistics extends StObject {
   
   /**
     * The total number of emails that arrived in recipients' inboxes.
@@ -36,42 +37,30 @@ object VolumeStatistics {
   }
   
   @scala.inline
-  implicit class VolumeStatisticsOps[Self <: VolumeStatistics] (val x: Self) extends AnyVal {
+  implicit class VolumeStatisticsMutableBuilder[Self <: VolumeStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInboxRawCount(value: Volume): Self = StObject.set(x, "InboxRawCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInboxRawCountUndefined: Self = StObject.set(x, "InboxRawCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectedInbox(value: Volume): Self = StObject.set(x, "ProjectedInbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboxRawCount(value: Volume): Self = this.set("InboxRawCount", value.asInstanceOf[js.Any])
+    def setProjectedInboxUndefined: Self = StObject.set(x, "ProjectedInbox", js.undefined)
     
     @scala.inline
-    def deleteInboxRawCount: Self = this.set("InboxRawCount", js.undefined)
+    def setProjectedSpam(value: Volume): Self = StObject.set(x, "ProjectedSpam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectedInbox(value: Volume): Self = this.set("ProjectedInbox", value.asInstanceOf[js.Any])
+    def setProjectedSpamUndefined: Self = StObject.set(x, "ProjectedSpam", js.undefined)
     
     @scala.inline
-    def deleteProjectedInbox: Self = this.set("ProjectedInbox", js.undefined)
+    def setSpamRawCount(value: Volume): Self = StObject.set(x, "SpamRawCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectedSpam(value: Volume): Self = this.set("ProjectedSpam", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectedSpam: Self = this.set("ProjectedSpam", js.undefined)
-    
-    @scala.inline
-    def setSpamRawCount(value: Volume): Self = this.set("SpamRawCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpamRawCount: Self = this.set("SpamRawCount", js.undefined)
+    def setSpamRawCountUndefined: Self = StObject.set(x, "SpamRawCount", js.undefined)
   }
 }

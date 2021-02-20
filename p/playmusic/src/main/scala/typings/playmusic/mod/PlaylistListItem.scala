@@ -1,11 +1,12 @@
 package typings.playmusic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaylistListItem extends js.Object {
+trait PlaylistListItem extends StObject {
   
   var accessControlled: js.UndefOr[Boolean] = js.native
   
@@ -42,96 +43,84 @@ object PlaylistListItem {
   }
   
   @scala.inline
-  implicit class PlaylistListItemOps[Self <: PlaylistListItem] (val x: Self) extends AnyVal {
+  implicit class PlaylistListItemMutableBuilder[Self <: PlaylistListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlled(value: Boolean): Self = StObject.set(x, "accessControlled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlledUndefined: Self = StObject.set(x, "accessControlled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlled(value: Boolean): Self = this.set("accessControlled", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteAccessControlled: Self = this.set("accessControlled", js.undefined)
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLastModifiedTimestamp(value: String): Self = StObject.set(x, "lastModifiedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLastModifiedTimestampUndefined: Self = StObject.set(x, "lastModifiedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTimestamp(value: String): Self = this.set("lastModifiedTimestamp", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedTimestamp: Self = this.set("lastModifiedTimestamp", js.undefined)
+    def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOwnerProfilePhotoUrl(value: String): Self = StObject.set(x, "ownerProfilePhotoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerName(value: String): Self = this.set("ownerName", value.asInstanceOf[js.Any])
+    def setOwnerProfilePhotoUrlUndefined: Self = StObject.set(x, "ownerProfilePhotoUrl", js.undefined)
     
     @scala.inline
-    def deleteOwnerName: Self = this.set("ownerName", js.undefined)
+    def setRecentTimestamp(value: String): Self = StObject.set(x, "recentTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerProfilePhotoUrl(value: String): Self = this.set("ownerProfilePhotoUrl", value.asInstanceOf[js.Any])
+    def setRecentTimestampUndefined: Self = StObject.set(x, "recentTimestamp", js.undefined)
     
     @scala.inline
-    def deleteOwnerProfilePhotoUrl: Self = this.set("ownerProfilePhotoUrl", js.undefined)
+    def setShareToken(value: String): Self = StObject.set(x, "shareToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecentTimestamp(value: String): Self = this.set("recentTimestamp", value.asInstanceOf[js.Any])
+    def setShareTokenUndefined: Self = StObject.set(x, "shareToken", js.undefined)
     
     @scala.inline
-    def deleteRecentTimestamp: Self = this.set("recentTimestamp", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareToken(value: String): Self = this.set("shareToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareToken: Self = this.set("shareToken", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

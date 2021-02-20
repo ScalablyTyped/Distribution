@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Explanation extends js.Object {
+trait Explanation extends StObject {
   
   /** Attribution of feature. */
   var attribution: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object Explanation {
   }
   
   @scala.inline
-  implicit class ExplanationOps[Self <: Explanation] (val x: Self) extends AnyVal {
+  implicit class ExplanationMutableBuilder[Self <: Explanation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribution(value: Double): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribution(value: Double): Self = this.set("attribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttribution: Self = this.set("attribution", js.undefined)
-    
-    @scala.inline
-    def setFeatureName(value: String): Self = this.set("featureName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatureName: Self = this.set("featureName", js.undefined)
+    def setFeatureNameUndefined: Self = StObject.set(x, "featureName", js.undefined)
   }
 }

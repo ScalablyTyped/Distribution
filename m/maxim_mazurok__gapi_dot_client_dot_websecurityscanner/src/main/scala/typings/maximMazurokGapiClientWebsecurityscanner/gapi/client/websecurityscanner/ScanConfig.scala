@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurityscanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScanConfig extends js.Object {
+trait ScanConfig extends StObject {
   
   /** The authentication configuration. If specified, service will use the authentication configuration during scanning. */
   var authentication: js.UndefOr[Authentication] = js.native
@@ -55,96 +56,84 @@ object ScanConfig {
   }
   
   @scala.inline
-  implicit class ScanConfigOps[Self <: ScanConfig] (val x: Self) extends AnyVal {
+  implicit class ScanConfigMutableBuilder[Self <: ScanConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthentication(value: Authentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlacklistPatterns(value: js.Array[String]): Self = StObject.set(x, "blacklistPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthentication(value: Authentication): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    def setBlacklistPatternsUndefined: Self = StObject.set(x, "blacklistPatterns", js.undefined)
     
     @scala.inline
-    def deleteAuthentication: Self = this.set("authentication", js.undefined)
+    def setBlacklistPatternsVarargs(value: String*): Self = StObject.set(x, "blacklistPatterns", js.Array(value :_*))
     
     @scala.inline
-    def setBlacklistPatternsVarargs(value: String*): Self = this.set("blacklistPatterns", js.Array(value :_*))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlacklistPatterns(value: js.Array[String]): Self = this.set("blacklistPatterns", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteBlacklistPatterns: Self = this.set("blacklistPatterns", js.undefined)
+    def setExportToSecurityCommandCenter(value: String): Self = StObject.set(x, "exportToSecurityCommandCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setExportToSecurityCommandCenterUndefined: Self = StObject.set(x, "exportToSecurityCommandCenter", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setManagedScan(value: Boolean): Self = StObject.set(x, "managedScan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportToSecurityCommandCenter(value: String): Self = this.set("exportToSecurityCommandCenter", value.asInstanceOf[js.Any])
+    def setManagedScanUndefined: Self = StObject.set(x, "managedScan", js.undefined)
     
     @scala.inline
-    def deleteExportToSecurityCommandCenter: Self = this.set("exportToSecurityCommandCenter", js.undefined)
+    def setMaxQps(value: Double): Self = StObject.set(x, "maxQps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedScan(value: Boolean): Self = this.set("managedScan", value.asInstanceOf[js.Any])
+    def setMaxQpsUndefined: Self = StObject.set(x, "maxQps", js.undefined)
     
     @scala.inline
-    def deleteManagedScan: Self = this.set("managedScan", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxQps(value: Double): Self = this.set("maxQps", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaxQps: Self = this.set("maxQps", js.undefined)
+    def setRiskLevel(value: String): Self = StObject.set(x, "riskLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRiskLevelUndefined: Self = StObject.set(x, "riskLevel", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSchedule(value: Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiskLevel(value: String): Self = this.set("riskLevel", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def deleteRiskLevel: Self = this.set("riskLevel", js.undefined)
+    def setStartingUrls(value: js.Array[String]): Self = StObject.set(x, "startingUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: Schedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setStartingUrlsUndefined: Self = StObject.set(x, "startingUrls", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setStartingUrlsVarargs(value: String*): Self = StObject.set(x, "startingUrls", js.Array(value :_*))
     
     @scala.inline
-    def setStartingUrlsVarargs(value: String*): Self = this.set("startingUrls", js.Array(value :_*))
+    def setStaticIpScan(value: Boolean): Self = StObject.set(x, "staticIpScan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartingUrls(value: js.Array[String]): Self = this.set("startingUrls", value.asInstanceOf[js.Any])
+    def setStaticIpScanUndefined: Self = StObject.set(x, "staticIpScan", js.undefined)
     
     @scala.inline
-    def deleteStartingUrls: Self = this.set("startingUrls", js.undefined)
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticIpScan(value: Boolean): Self = this.set("staticIpScan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticIpScan: Self = this.set("staticIpScan", js.undefined)
-    
-    @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
   }
 }

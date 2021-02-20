@@ -1,11 +1,12 @@
 package typings.mdast.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alternative extends js.Object {
+trait Alternative extends StObject {
   
   var alt: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object Alternative {
   }
   
   @scala.inline
-  implicit class AlternativeOps[Self <: Alternative] (val x: Self) extends AnyVal {
+  implicit class AlternativeMutableBuilder[Self <: Alternative] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
   }
 }

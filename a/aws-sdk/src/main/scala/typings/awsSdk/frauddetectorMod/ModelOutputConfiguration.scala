@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelOutputConfiguration extends js.Object {
+trait ModelOutputConfiguration extends StObject {
   
   /**
     * A map of CSV index values in the SageMaker response to the Amazon Fraud Detector variables. 
@@ -31,33 +32,21 @@ object ModelOutputConfiguration {
   }
   
   @scala.inline
-  implicit class ModelOutputConfigurationOps[Self <: ModelOutputConfiguration] (val x: Self) extends AnyVal {
+  implicit class ModelOutputConfigurationMutableBuilder[Self <: ModelOutputConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCsvIndexToVariableMap(value: CsvIndexToVariableMap): Self = StObject.set(x, "csvIndexToVariableMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCsvIndexToVariableMapUndefined: Self = StObject.set(x, "csvIndexToVariableMap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: ModelOutputDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ModelOutputDataFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setJsonKeyToVariableMap(value: JsonKeyToVariableMap): Self = StObject.set(x, "jsonKeyToVariableMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsvIndexToVariableMap(value: CsvIndexToVariableMap): Self = this.set("csvIndexToVariableMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCsvIndexToVariableMap: Self = this.set("csvIndexToVariableMap", js.undefined)
-    
-    @scala.inline
-    def setJsonKeyToVariableMap(value: JsonKeyToVariableMap): Self = this.set("jsonKeyToVariableMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJsonKeyToVariableMap: Self = this.set("jsonKeyToVariableMap", js.undefined)
+    def setJsonKeyToVariableMapUndefined: Self = StObject.set(x, "jsonKeyToVariableMap", js.undefined)
   }
 }

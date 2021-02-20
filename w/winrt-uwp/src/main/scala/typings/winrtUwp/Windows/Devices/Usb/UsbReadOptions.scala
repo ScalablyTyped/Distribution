@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UsbReadOptions extends js.Object
+sealed trait UsbReadOptions extends StObject
 /** Defines constants for configuration flags that can be set for a USB pipe that the host opens for a USB bulk IN endpoint. */
 @JSGlobal("Windows.Devices.Usb.UsbReadOptions")
 @js.native
-object UsbReadOptions extends js.Object {
+object UsbReadOptions extends StObject {
   
   /** Allows read requests from a device that returns more data than requested by the caller. */
   @js.native

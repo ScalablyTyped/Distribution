@@ -1,12 +1,13 @@
 package typings.azureArmResource.resourceModelsMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentPropertiesExtended extends js.Object {
+trait DeploymentPropertiesExtended extends StObject {
   
   /**
     * The correlation ID of the deployment.
@@ -83,102 +84,90 @@ object DeploymentPropertiesExtended {
   }
   
   @scala.inline
-  implicit class DeploymentPropertiesExtendedOps[Self <: DeploymentPropertiesExtended] (val x: Self) extends AnyVal {
+  implicit class DeploymentPropertiesExtendedMutableBuilder[Self <: DeploymentPropertiesExtended] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebugSetting(value: DebugSetting): Self = StObject.set(x, "debugSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrelationId(value: String): Self = this.set("correlationId", value.asInstanceOf[js.Any])
+    def setDebugSettingUndefined: Self = StObject.set(x, "debugSetting", js.undefined)
     
     @scala.inline
-    def deleteCorrelationId: Self = this.set("correlationId", js.undefined)
+    def setDependencies(value: js.Array[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugSetting(value: DebugSetting): Self = this.set("debugSetting", value.asInstanceOf[js.Any])
+    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
     @scala.inline
-    def deleteDebugSetting: Self = this.set("debugSetting", js.undefined)
+    def setDependenciesVarargs(value: Dependency*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
     @scala.inline
-    def setDependenciesVarargs(value: Dependency*): Self = this.set("dependencies", js.Array(value :_*))
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencies(value: js.Array[Dependency]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    def setOnErrorDeployment(value: OnErrorDeploymentExtended): Self = StObject.set(x, "onErrorDeployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOnErrorDeploymentUndefined: Self = StObject.set(x, "onErrorDeployment", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setOutputs(value: js.Any): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnErrorDeployment(value: OnErrorDeploymentExtended): Self = this.set("onErrorDeployment", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
     @scala.inline
-    def deleteOnErrorDeployment: Self = this.set("onErrorDeployment", js.undefined)
+    def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: js.Any): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setParametersLink(value: ParametersLink): Self = StObject.set(x, "parametersLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    def setParametersLinkUndefined: Self = StObject.set(x, "parametersLink", js.undefined)
     
     @scala.inline
-    def setParameters(value: js.Any): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParametersLink(value: ParametersLink): Self = this.set("parametersLink", value.asInstanceOf[js.Any])
+    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
     @scala.inline
-    def deleteParametersLink: Self = this.set("parametersLink", js.undefined)
+    def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
     @scala.inline
-    def setProvidersVarargs(value: Provider*): Self = this.set("providers", js.Array(value :_*))
+    def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviders(value: js.Array[Provider]): Self = this.set("providers", value.asInstanceOf[js.Any])
+    def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
     
     @scala.inline
-    def deleteProviders: Self = this.set("providers", js.undefined)
+    def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningState(value: String): Self = this.set("provisioningState", value.asInstanceOf[js.Any])
+    def setTemplateLink(value: TemplateLink): Self = StObject.set(x, "templateLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProvisioningState: Self = this.set("provisioningState", js.undefined)
+    def setTemplateLinkUndefined: Self = StObject.set(x, "templateLink", js.undefined)
     
     @scala.inline
-    def setTemplate(value: js.Any): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateLink(value: TemplateLink): Self = this.set("templateLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateLink: Self = this.set("templateLink", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

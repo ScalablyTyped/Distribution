@@ -1,5 +1,6 @@
 package typings.restify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,4 +33,12 @@ package object mod {
   ]
   
   type RequestHandlerType = typings.restify.mod.RequestHandler | js.Array[typings.restify.mod.RequestHandler]
+  
+  @scala.inline
+  def createServer(): typings.restify.mod.Server = typings.restify.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.restify.mod.Server]
+  @scala.inline
+  def createServer(options: typings.restify.mod.ServerOptions): typings.restify.mod.Server = typings.restify.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.Server]
+  
+  @scala.inline
+  def formatters: typings.restify.mod.Formatters_ = typings.restify.mod.^.asInstanceOf[js.Dynamic].selectDynamic("formatters").asInstanceOf[typings.restify.mod.Formatters_]
 }

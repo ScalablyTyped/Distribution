@@ -1,12 +1,13 @@
 package typings.googlemaps.global.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.maps.GeocoderLocationType")
 @js.native
-object GeocoderLocationType extends js.Object {
+object GeocoderLocationType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.googlemaps.google.maps.GeocoderLocationType with String] = js.native

@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SparkAxes extends js.Object {
+trait SparkAxes extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -37,36 +38,24 @@ object SparkAxes {
   }
   
   @scala.inline
-  implicit class SparkAxesOps[Self <: SparkAxes] (val x: Self) extends AnyVal {
+  implicit class SparkAxesMutableBuilder[Self <: SparkAxes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcelDotSparkAxes_typekey(value: SparkAxes): Self = StObject.set(x, "Excel.SparkAxes_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setHorizontal(value: SparkHorizontalAxis): Self = StObject.set(x, "Horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotSparkAxes_typekey(value: SparkAxes): Self = this.set("Excel.SparkAxes_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHorizontal(value: SparkHorizontalAxis): Self = this.set("Horizontal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertical(value: SparkVerticalAxis): Self = this.set("Vertical", value.asInstanceOf[js.Any])
+    def setVertical(value: SparkVerticalAxis): Self = StObject.set(x, "Vertical", value.asInstanceOf[js.Any])
   }
 }

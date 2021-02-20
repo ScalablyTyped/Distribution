@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateXssMatchSetRequest extends js.Object {
+trait UpdateXssMatchSetRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
@@ -31,30 +32,18 @@ object UpdateXssMatchSetRequest {
   }
   
   @scala.inline
-  implicit class UpdateXssMatchSetRequestOps[Self <: UpdateXssMatchSetRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateXssMatchSetRequestMutableBuilder[Self <: UpdateXssMatchSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUpdates(value: XssMatchSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdatesVarargs(value: XssMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
     
     @scala.inline
-    def setChangeToken(value: ChangeToken): Self = this.set("ChangeToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatesVarargs(value: XssMatchSetUpdate*): Self = this.set("Updates", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdates(value: XssMatchSetUpdates): Self = this.set("Updates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXssMatchSetId(value: ResourceId): Self = this.set("XssMatchSetId", value.asInstanceOf[js.Any])
+    def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
   }
 }

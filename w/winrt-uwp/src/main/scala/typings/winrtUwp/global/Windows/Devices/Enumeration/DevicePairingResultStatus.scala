@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The result of the pairing action with an Association Endpoint (AEP) device object. For more information about AEP objects, see DeviceInformationKind . */
 @JSGlobal("Windows.Devices.Enumeration.DevicePairingResultStatus")
 @js.native
-object DevicePairingResultStatus extends js.Object {
+object DevicePairingResultStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

@@ -1,12 +1,13 @@
 package typings.activexOffice.Office
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sync extends js.Object {
+trait Sync extends StObject {
   
   val Application: js.Any = js.native
   
@@ -59,57 +60,45 @@ object Sync {
   }
   
   @scala.inline
-  implicit class SyncOps[Self <: Sync] (val x: Self) extends AnyVal {
+  implicit class SyncMutableBuilder[Self <: Sync] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorType(value: MsoSyncErrorType): Self = StObject.set(x, "ErrorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setGetUpdate(value: () => Unit): Self = StObject.set(x, "GetUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setLastSyncTime(value: VarDate): Self = StObject.set(x, "LastSyncTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorType(value: MsoSyncErrorType): Self = this.set("ErrorType", value.asInstanceOf[js.Any])
+    def setOfficeDotSync_typekey(value: Sync): Self = StObject.set(x, "Office.Sync_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetUpdate(value: () => Unit): Self = this.set("GetUpdate", js.Any.fromFunction0(value))
+    def setOpenVersion(value: MsoSyncVersionType => Unit): Self = StObject.set(x, "OpenVersion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLastSyncTime(value: VarDate): Self = this.set("LastSyncTime", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfficeDotSync_typekey(value: Sync): Self = this.set("Office.Sync_typekey", value.asInstanceOf[js.Any])
+    def setPutUpdate(value: () => Unit): Self = StObject.set(x, "PutUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOpenVersion(value: MsoSyncVersionType => Unit): Self = this.set("OpenVersion", js.Any.fromFunction1(value))
+    def setResolveConflict(value: MsoSyncConflictResolutionType => Unit): Self = StObject.set(x, "ResolveConflict", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setStatus(value: MsoSyncStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPutUpdate(value: () => Unit): Self = this.set("PutUpdate", js.Any.fromFunction0(value))
+    def setUnsuspend(value: () => Unit): Self = StObject.set(x, "Unsuspend", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setResolveConflict(value: MsoSyncConflictResolutionType => Unit): Self = this.set("ResolveConflict", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStatus(value: MsoSyncStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnsuspend(value: () => Unit): Self = this.set("Unsuspend", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWorkspaceLastChangedBy(value: String): Self = this.set("WorkspaceLastChangedBy", value.asInstanceOf[js.Any])
+    def setWorkspaceLastChangedBy(value: String): Self = StObject.set(x, "WorkspaceLastChangedBy", value.asInstanceOf[js.Any])
   }
 }

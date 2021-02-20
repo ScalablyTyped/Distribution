@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeListMessages extends js.Object {
+trait TreeListMessages extends StObject {
   
   var commands: js.UndefOr[TreeListMessagesCommands] = js.native
   
@@ -26,48 +27,36 @@ object TreeListMessages {
   }
   
   @scala.inline
-  implicit class TreeListMessagesOps[Self <: TreeListMessages] (val x: Self) extends AnyVal {
+  implicit class TreeListMessagesMutableBuilder[Self <: TreeListMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommands(value: TreeListMessagesCommands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommands(value: TreeListMessagesCommands): Self = this.set("commands", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteCommands: Self = this.set("commands", js.undefined)
+    def setNoRows(value: String): Self = StObject.set(x, "noRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: String): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setNoRowsUndefined: Self = StObject.set(x, "noRows", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setRequestFailed(value: String): Self = StObject.set(x, "requestFailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoRows(value: String): Self = this.set("noRows", value.asInstanceOf[js.Any])
+    def setRequestFailedUndefined: Self = StObject.set(x, "requestFailed", js.undefined)
     
     @scala.inline
-    def deleteNoRows: Self = this.set("noRows", js.undefined)
+    def setRetry(value: String): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestFailed(value: String): Self = this.set("requestFailed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestFailed: Self = this.set("requestFailed", js.undefined)
-    
-    @scala.inline
-    def setRetry(value: String): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactPlayer.lazyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileConfig extends js.Object {
+trait FileConfig extends StObject {
   
   var attributes: js.UndefOr[js.Object] = js.native
   
@@ -34,75 +35,63 @@ object FileConfig {
   }
   
   @scala.inline
-  implicit class FileConfigOps[Self <: FileConfig] (val x: Self) extends AnyVal {
+  implicit class FileConfigMutableBuilder[Self <: FileConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDashVersion(value: String): Self = StObject.set(x, "dashVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Object): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setDashVersionUndefined: Self = StObject.set(x, "dashVersion", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setForceAudio(value: Boolean): Self = StObject.set(x, "forceAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashVersion(value: String): Self = this.set("dashVersion", value.asInstanceOf[js.Any])
+    def setForceAudioUndefined: Self = StObject.set(x, "forceAudio", js.undefined)
     
     @scala.inline
-    def deleteDashVersion: Self = this.set("dashVersion", js.undefined)
+    def setForceDASH(value: Boolean): Self = StObject.set(x, "forceDASH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceAudio(value: Boolean): Self = this.set("forceAudio", value.asInstanceOf[js.Any])
+    def setForceDASHUndefined: Self = StObject.set(x, "forceDASH", js.undefined)
     
     @scala.inline
-    def deleteForceAudio: Self = this.set("forceAudio", js.undefined)
+    def setForceHLS(value: Boolean): Self = StObject.set(x, "forceHLS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceDASH(value: Boolean): Self = this.set("forceDASH", value.asInstanceOf[js.Any])
+    def setForceHLSUndefined: Self = StObject.set(x, "forceHLS", js.undefined)
     
     @scala.inline
-    def deleteForceDASH: Self = this.set("forceDASH", js.undefined)
+    def setForceVideo(value: Boolean): Self = StObject.set(x, "forceVideo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceHLS(value: Boolean): Self = this.set("forceHLS", value.asInstanceOf[js.Any])
+    def setForceVideoUndefined: Self = StObject.set(x, "forceVideo", js.undefined)
     
     @scala.inline
-    def deleteForceHLS: Self = this.set("forceHLS", js.undefined)
+    def setHlsOptions(value: js.Object): Self = StObject.set(x, "hlsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceVideo(value: Boolean): Self = this.set("forceVideo", value.asInstanceOf[js.Any])
+    def setHlsOptionsUndefined: Self = StObject.set(x, "hlsOptions", js.undefined)
     
     @scala.inline
-    def deleteForceVideo: Self = this.set("forceVideo", js.undefined)
+    def setHlsVersion(value: String): Self = StObject.set(x, "hlsVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHlsOptions(value: js.Object): Self = this.set("hlsOptions", value.asInstanceOf[js.Any])
+    def setHlsVersionUndefined: Self = StObject.set(x, "hlsVersion", js.undefined)
     
     @scala.inline
-    def deleteHlsOptions: Self = this.set("hlsOptions", js.undefined)
+    def setTracks(value: js.Array[TrackProps]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHlsVersion(value: String): Self = this.set("hlsVersion", value.asInstanceOf[js.Any])
+    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
     @scala.inline
-    def deleteHlsVersion: Self = this.set("hlsVersion", js.undefined)
-    
-    @scala.inline
-    def setTracksVarargs(value: TrackProps*): Self = this.set("tracks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTracks(value: js.Array[TrackProps]): Self = this.set("tracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracks: Self = this.set("tracks", js.undefined)
+    def setTracksVarargs(value: TrackProps*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

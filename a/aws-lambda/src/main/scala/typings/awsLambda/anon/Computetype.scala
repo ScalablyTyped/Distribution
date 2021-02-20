@@ -3,12 +3,13 @@ package typings.awsLambda.anon
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentComputeType
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentPullCredentialsType
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Computetype extends js.Object {
+trait Computetype extends StObject {
   
   var `compute-type`: CodeBuildEnvironmentComputeType = js.native
   
@@ -41,42 +42,30 @@ object Computetype {
   }
   
   @scala.inline
-  implicit class ComputetypeOps[Self <: Computetype] (val x: Self) extends AnyVal {
+  implicit class ComputetypeMutableBuilder[Self <: Computetype] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setCompute-type`(value: CodeBuildEnvironmentComputeType): Self = StObject.set(x, "compute-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setEnvironment-variables`(value: js.Array[Name]): Self = StObject.set(x, "environment-variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setEnvironment-variablesVarargs`(value: Name*): Self = StObject.set(x, "environment-variables", js.Array(value :_*))
     
     @scala.inline
-    def `setCompute-type`(value: CodeBuildEnvironmentComputeType): Self = this.set("compute-type", value.asInstanceOf[js.Any])
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setEnvironment-variablesVarargs`(value: Name*): Self = this.set("environment-variables", js.Array(value :_*))
+    def `setImage-pull-credentials-type`(value: CodeBuildEnvironmentPullCredentialsType): Self = StObject.set(x, "image-pull-credentials-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setEnvironment-variables`(value: js.Array[Name]): Self = this.set("environment-variables", value.asInstanceOf[js.Any])
+    def `setImage-pull-credentials-typeUndefined`: Self = StObject.set(x, "image-pull-credentials-type", js.undefined)
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def `setPrivileged-mode`(value: Boolean): Self = StObject.set(x, "privileged-mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrivileged-mode`(value: Boolean): Self = this.set("privileged-mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: CodeBuildEnvironmentType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setImage-pull-credentials-type`(value: CodeBuildEnvironmentPullCredentialsType): Self = this.set("image-pull-credentials-type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteImage-pull-credentials-type`: Self = this.set("image-pull-credentials-type", js.undefined)
+    def setType(value: CodeBuildEnvironmentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

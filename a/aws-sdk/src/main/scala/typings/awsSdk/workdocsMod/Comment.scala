@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Comment extends js.Object {
+trait Comment extends StObject {
   
   /**
     * The ID of the comment.
@@ -61,69 +62,57 @@ object Comment {
   }
   
   @scala.inline
-  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommentId(value: CommentIdType): Self = StObject.set(x, "CommentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContributor(value: User): Self = StObject.set(x, "Contributor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContributorUndefined: Self = StObject.set(x, "Contributor", js.undefined)
     
     @scala.inline
-    def setCommentId(value: CommentIdType): Self = this.set("CommentId", value.asInstanceOf[js.Any])
+    def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributor(value: User): Self = this.set("Contributor", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteContributor: Self = this.set("Contributor", js.undefined)
+    def setParentId(value: CommentIdType): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: TimestampType): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setRecipientId(value: IdType): Self = StObject.set(x, "RecipientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: CommentIdType): Self = this.set("ParentId", value.asInstanceOf[js.Any])
+    def setRecipientIdUndefined: Self = StObject.set(x, "RecipientId", js.undefined)
     
     @scala.inline
-    def deleteParentId: Self = this.set("ParentId", js.undefined)
+    def setStatus(value: CommentStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientId(value: IdType): Self = this.set("RecipientId", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteRecipientId: Self = this.set("RecipientId", js.undefined)
+    def setText(value: CommentTextType): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: CommentStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setThreadId(value: CommentIdType): Self = StObject.set(x, "ThreadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: CommentTextType): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setThreadIdUndefined: Self = StObject.set(x, "ThreadId", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("Text", js.undefined)
+    def setVisibility(value: CommentVisibilityType): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadId(value: CommentIdType): Self = this.set("ThreadId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreadId: Self = this.set("ThreadId", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: CommentVisibilityType): Self = this.set("Visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("Visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
   }
 }

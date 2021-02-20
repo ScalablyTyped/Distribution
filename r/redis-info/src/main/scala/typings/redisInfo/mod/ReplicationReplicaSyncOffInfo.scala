@@ -1,12 +1,13 @@
 package typings.redisInfo.mod
 
 import typings.redisInfo.mod.Flag.OFF
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationReplicaSyncOffInfo extends js.Object {
+trait ReplicationReplicaSyncOffInfo extends StObject {
   
   var master_sync_in_progress: OFF = js.native
 }
@@ -19,21 +20,9 @@ object ReplicationReplicaSyncOffInfo {
   }
   
   @scala.inline
-  implicit class ReplicationReplicaSyncOffInfoOps[Self <: ReplicationReplicaSyncOffInfo] (val x: Self) extends AnyVal {
+  implicit class ReplicationReplicaSyncOffInfoMutableBuilder[Self <: ReplicationReplicaSyncOffInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaster_sync_in_progress(value: OFF): Self = this.set("master_sync_in_progress", value.asInstanceOf[js.Any])
+    def setMaster_sync_in_progress(value: OFF): Self = StObject.set(x, "master_sync_in_progress", value.asInstanceOf[js.Any])
   }
 }

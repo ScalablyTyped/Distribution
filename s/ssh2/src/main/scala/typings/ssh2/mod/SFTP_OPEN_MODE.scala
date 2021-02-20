@@ -1,13 +1,14 @@
 package typings.ssh2.mod
 
 import typings.ssh2Streams.mod.SFTPStream.OPEN_MODE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssh2", "SFTP_OPEN_MODE")
 @js.native
-object SFTP_OPEN_MODE extends js.Object {
+object SFTP_OPEN_MODE extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OPEN_MODE with Double] = js.native

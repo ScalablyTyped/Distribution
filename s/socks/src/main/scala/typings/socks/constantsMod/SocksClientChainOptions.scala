@@ -2,6 +2,7 @@ package typings.socks.constantsMod
 
 import typings.socks.socksBooleans.`false`
 import typings.socks.socksStrings.connect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SocksClient chain connection options.
   */
 @js.native
-trait SocksClientChainOptions extends js.Object {
+trait SocksClientChainOptions extends StObject {
   
   var command: connect = js.native
   
@@ -31,42 +32,30 @@ object SocksClientChainOptions {
   }
   
   @scala.inline
-  implicit class SocksClientChainOptionsOps[Self <: SocksClientChainOptions] (val x: Self) extends AnyVal {
+  implicit class SocksClientChainOptionsMutableBuilder[Self <: SocksClientChainOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: connect): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestination(value: SocksRemoteHost): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProxies(value: js.Array[SocksProxy]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: connect): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setProxiesVarargs(value: SocksProxy*): Self = StObject.set(x, "proxies", js.Array(value :_*))
     
     @scala.inline
-    def setDestination(value: SocksRemoteHost): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setRandomizeChain(value: `false`): Self = StObject.set(x, "randomizeChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxiesVarargs(value: SocksProxy*): Self = this.set("proxies", js.Array(value :_*))
+    def setRandomizeChainUndefined: Self = StObject.set(x, "randomizeChain", js.undefined)
     
     @scala.inline
-    def setProxies(value: js.Array[SocksProxy]): Self = this.set("proxies", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRandomizeChain(value: `false`): Self = this.set("randomizeChain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRandomizeChain: Self = this.set("randomizeChain", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

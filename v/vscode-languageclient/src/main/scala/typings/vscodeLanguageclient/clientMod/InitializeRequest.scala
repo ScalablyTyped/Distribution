@@ -5,14 +5,15 @@ import typings.vscodeLanguageserverProtocol.protocolMod.InitializeResult
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressParams
 import typings.vscodeLanguageserverProtocol.protocolMod._InitializeParams
 import typings.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.WorkspaceFoldersInitializeParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient/lib/client", "InitializeRequest")
-@js.native
-object InitializeRequest extends js.Object {
+object InitializeRequest {
   
+  @JSImport("vscode-languageclient/lib/client", "InitializeRequest.type")
+  @js.native
   val `type`: ProtocolRequestType[
     _InitializeParams with WorkspaceFoldersInitializeParams with WorkDoneProgressParams, 
     InitializeResult[js.Any], 

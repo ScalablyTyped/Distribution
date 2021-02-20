@@ -16,32 +16,55 @@ import typings.node.anon.`3`
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.WriteFileOptions
 import typings.node.urlMod.Url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsonfile", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("jsonfile", "readFile")
+  @js.native
   def readFile(file: Path): js.Promise[_] = js.native
+  @JSImport("jsonfile", "readFile")
+  @js.native
   def readFile(file: Path, callback: ReadCallback): Unit = js.native
+  @JSImport("jsonfile", "readFile")
+  @js.native
   def readFile(file: Path, options: JFReadOptions): js.Promise[_] = js.native
+  @JSImport("jsonfile", "readFile")
+  @js.native
   def readFile(file: Path, options: JFReadOptions, callback: ReadCallback): Unit = js.native
   
+  @JSImport("jsonfile", "readFileSync")
+  @js.native
   def readFileSync(file: Path): js.Any = js.native
+  @JSImport("jsonfile", "readFileSync")
+  @js.native
   def readFileSync(file: Path, options: JFReadOptions): js.Any = js.native
   
+  @JSImport("jsonfile", "writeFile")
+  @js.native
   def writeFile(file: Path, obj: js.Any): js.Promise[Unit] = js.native
+  @JSImport("jsonfile", "writeFile")
+  @js.native
   def writeFile(file: Path, obj: js.Any, callback: WriteCallback): Unit = js.native
+  @JSImport("jsonfile", "writeFile")
+  @js.native
   def writeFile(file: Path, obj: js.Any, options: JFWriteOptions): js.Promise[Unit] = js.native
+  @JSImport("jsonfile", "writeFile")
+  @js.native
   def writeFile(file: Path, obj: js.Any, options: JFWriteOptions, callback: WriteCallback): Unit = js.native
   
+  @JSImport("jsonfile", "writeFileSync")
+  @js.native
   def writeFileSync(file: Path, obj: js.Any): Unit = js.native
+  @JSImport("jsonfile", "writeFileSync")
+  @js.native
   def writeFileSync(file: Path, obj: js.Any, options: JFWriteOptions): Unit = js.native
   
   @js.native
-  trait FS extends js.Object {
+  trait FS extends StObject {
     
     var readFile: TypeoffsReadFile = js.native
     

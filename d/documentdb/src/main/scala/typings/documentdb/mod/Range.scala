@@ -1,12 +1,13 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("documentdb", "Range")
 @js.native
-class Range protected () extends js.Object {
+class Range protected () extends StObject {
   /**
     * DEPRECATED
     *

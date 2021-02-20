@@ -1,13 +1,16 @@
 package typings.antvScale
 
 import typings.antvScale.typesMod.ScaleType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/scale/lib/identity", JSImport.Namespace)
-@js.native
-object identityMod extends js.Object {
+object identityMod {
+  
+  @JSImport("@antv/scale/lib/identity", JSImport.Default)
+  @js.native
+  class default () extends Identity
   
   @js.native
   trait Identity
@@ -18,7 +21,4 @@ object identityMod extends js.Object {
     @JSName("type")
     val type_Identity: ScaleType = js.native
   }
-  
-  @js.native
-  class default () extends Identity
 }

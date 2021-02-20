@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Director extends js.Object {
+trait Director extends StObject {
   
   /**
     * Whether the person is a director of the account’s legal entity. Currently only required for accounts in the EU.
@@ -51,54 +52,42 @@ object Director {
   }
   
   @scala.inline
-  implicit class DirectorOps[Self <: Director] (val x: Self) extends AnyVal {
+  implicit class DirectorMutableBuilder[Self <: Director] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirector(value: Boolean): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectorUndefined: Self = StObject.set(x, "director", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutive(value: Boolean): Self = StObject.set(x, "executive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirector(value: Boolean): Self = this.set("director", value.asInstanceOf[js.Any])
+    def setExecutiveUndefined: Self = StObject.set(x, "executive", js.undefined)
     
     @scala.inline
-    def deleteDirector: Self = this.set("director", js.undefined)
+    def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutive(value: Boolean): Self = this.set("executive", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteExecutive: Self = this.set("executive", js.undefined)
+    def setPercent_ownership(value: Double): Self = StObject.set(x, "percent_ownership", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Boolean): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPercent_ownershipUndefined: Self = StObject.set(x, "percent_ownership", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setRepresentative(value: Boolean): Self = StObject.set(x, "representative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercent_ownership(value: Double): Self = this.set("percent_ownership", value.asInstanceOf[js.Any])
+    def setRepresentativeUndefined: Self = StObject.set(x, "representative", js.undefined)
     
     @scala.inline
-    def deletePercent_ownership: Self = this.set("percent_ownership", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepresentative(value: Boolean): Self = this.set("representative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepresentative: Self = this.set("representative", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

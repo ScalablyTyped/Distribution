@@ -1,39 +1,54 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/observable/RangeObservable", JSImport.Namespace)
-@js.native
-object rangeObservableMod extends js.Object {
+object rangeObservableMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @js.native
-  class RangeObservable[T] () extends js.Object
-  /* static members */
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs-compat/observable/RangeObservable", "RangeObservable")
   @js.native
-  object RangeObservable extends js.Object {
+  class RangeObservable[T] () extends StObject
+  /* static members */
+  object RangeObservable {
     
+    @JSImport("rxjs-compat/observable/RangeObservable", "RangeObservable.create")
+    @js.native
     def create(): js.Any = js.native
+    @JSImport("rxjs-compat/observable/RangeObservable", "RangeObservable.create")
+    @js.native
     def create(
       start: js.UndefOr[scala.Nothing],
       count: js.UndefOr[scala.Nothing],
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = js.native
+    @JSImport("rxjs-compat/observable/RangeObservable", "RangeObservable.create")
+    @js.native
     def create(start: js.UndefOr[scala.Nothing], count: Double): js.Any = js.native
+    @JSImport("rxjs-compat/observable/RangeObservable", "RangeObservable.create")
+    @js.native
     def create(
       start: js.UndefOr[scala.Nothing],
       count: Double,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = js.native
+    @JSImport("rxjs-compat/observable/RangeObservable", "RangeObservable.create")
+    @js.native
     def create(start: Double): js.Any = js.native
+    @JSImport("rxjs-compat/observable/RangeObservable", "RangeObservable.create")
+    @js.native
     def create(
       start: Double,
       count: js.UndefOr[scala.Nothing],
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = js.native
+    @JSImport("rxjs-compat/observable/RangeObservable", "RangeObservable.create")
+    @js.native
     def create(start: Double, count: Double): js.Any = js.native
+    @JSImport("rxjs-compat/observable/RangeObservable", "RangeObservable.create")
+    @js.native
     def create(
       start: Double,
       count: Double,

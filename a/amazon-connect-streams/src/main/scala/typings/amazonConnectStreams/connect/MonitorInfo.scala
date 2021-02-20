@@ -1,12 +1,13 @@
 package typings.amazonConnectStreams.connect
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitorInfo extends js.Object {
+trait MonitorInfo extends StObject {
   
   val agentName: String = js.native
   
@@ -23,27 +24,15 @@ object MonitorInfo {
   }
   
   @scala.inline
-  implicit class MonitorInfoOps[Self <: MonitorInfo] (val x: Self) extends AnyVal {
+  implicit class MonitorInfoMutableBuilder[Self <: MonitorInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentName(value: String): Self = StObject.set(x, "agentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerName(value: String): Self = StObject.set(x, "customerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAgentName(value: String): Self = this.set("agentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomerName(value: String): Self = this.set("customerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJoinTime(value: Date): Self = this.set("joinTime", value.asInstanceOf[js.Any])
+    def setJoinTime(value: Date): Self = StObject.set(x, "joinTime", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object was created.
   */
 @js.native
-trait SchemaCreate extends js.Object {
+trait SchemaCreate extends StObject {
   
   /**
     * If present, indicates the object was created by copying an existing Drive
@@ -37,36 +38,24 @@ object SchemaCreate {
   }
   
   @scala.inline
-  implicit class SchemaCreateOps[Self <: SchemaCreate] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateMutableBuilder[Self <: SchemaCreate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: SchemaCopy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNew(value: SchemaNew): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: SchemaCopy): Self = this.set("copy", value.asInstanceOf[js.Any])
+    def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
     
     @scala.inline
-    def deleteCopy: Self = this.set("copy", js.undefined)
+    def setUpload(value: SchemaUpload): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew(value: SchemaNew): Self = this.set("new", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNew: Self = this.set("new", js.undefined)
-    
-    @scala.inline
-    def setUpload(value: SchemaUpload): Self = this.set("upload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpload: Self = this.set("upload", js.undefined)
+    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
   }
 }

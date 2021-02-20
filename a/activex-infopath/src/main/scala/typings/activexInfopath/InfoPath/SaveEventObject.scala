@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SaveEventObject extends js.Object {
+trait SaveEventObject extends StObject {
   
   val FileName: String = js.native
   
@@ -40,39 +41,27 @@ object SaveEventObject {
   }
   
   @scala.inline
-  implicit class SaveEventObjectOps[Self <: SaveEventObject] (val x: Self) extends AnyVal {
+  implicit class SaveEventObjectMutableBuilder[Self <: SaveEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoPathDotSaveEventObject_typekey(value: SaveEventObject): Self = StObject.set(x, "InfoPath.SaveEventObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsCancelled(value: Boolean): Self = StObject.set(x, "IsCancelled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("FileName", value.asInstanceOf[js.Any])
+    def setIsSaveAs(value: Boolean): Self = StObject.set(x, "IsSaveAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPathDotSaveEventObject_typekey(value: SaveEventObject): Self = this.set("InfoPath.SaveEventObject_typekey", value.asInstanceOf[js.Any])
+    def setPerformSaveOperation(value: () => Boolean): Self = StObject.set(x, "PerformSaveOperation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsCancelled(value: Boolean): Self = this.set("IsCancelled", value.asInstanceOf[js.Any])
+    def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSaveAs(value: Boolean): Self = this.set("IsSaveAs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPerformSaveOperation(value: () => Boolean): Self = this.set("PerformSaveOperation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReturnStatus(value: Boolean): Self = this.set("ReturnStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = this.set("XDocument", value.asInstanceOf[js.Any])
+    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.amapJsApi.anon
 
 import typings.amapJsApi.AMap.GeoJSON.GeoJSONObject
 import typings.amapJsApi.amapJsApiStrings.Feature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,27 +26,15 @@ object Geometry {
   }
   
   @scala.inline
-  implicit class GeometryOps[Self <: Geometry] (val x: Self) extends AnyVal {
+  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeometry(value: typings.amapJsApi.AMap.GeoJSON.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGeometry(value: typings.amapJsApi.AMap.GeoJSON.Geometry): Self = this.set("geometry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Feature): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Feature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,13 +10,14 @@ import typings.stripe.mod.orders.IOrderCreationOptions
 import typings.stripe.mod.orders.IOrderListOptions
 import typings.stripe.mod.orders.IOrderPayOptions
 import typings.stripe.mod.orders.IOrderUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Orders")
 @js.native
-class Orders () extends js.Object {
+class Orders () extends StObject {
   
   def create(data: IOrderCreationOptions): js.Promise[IOrder] = js.native
   /**

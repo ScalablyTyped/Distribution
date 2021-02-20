@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataReader extends js.Object {
+trait DataReader extends StObject {
   
   var _dataByteOffset: js.Any = js.native
   
@@ -74,45 +75,33 @@ object DataReader {
   }
   
   @scala.inline
-  implicit class DataReaderOps[Self <: DataReader] (val x: Self) extends AnyVal {
+  implicit class DataReaderMutableBuilder[Self <: DataReader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: IDataBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByteOffset(value: Double): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadAsync(value: Double => js.Promise[Unit]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_dataByteOffset(value: js.Any): Self = this.set("_dataByteOffset", value.asInstanceOf[js.Any])
+    def setReadString(value: Double => String): Self = StObject.set(x, "readString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_dataView(value: js.Any): Self = this.set("_dataView", value.asInstanceOf[js.Any])
+    def setReadUint32(value: () => Double): Self = StObject.set(x, "readUint32", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuffer(value: IDataBuffer): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setReadUint8Array(value: Double => Uint8Array): Self = StObject.set(x, "readUint8Array", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setByteOffset(value: Double): Self = this.set("byteOffset", value.asInstanceOf[js.Any])
+    def setSkipBytes(value: Double => Unit): Self = StObject.set(x, "skipBytes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadAsync(value: Double => js.Promise[Unit]): Self = this.set("loadAsync", js.Any.fromFunction1(value))
+    def set_dataByteOffset(value: js.Any): Self = StObject.set(x, "_dataByteOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadString(value: Double => String): Self = this.set("readString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReadUint32(value: () => Double): Self = this.set("readUint32", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadUint8Array(value: Double => Uint8Array): Self = this.set("readUint8Array", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSkipBytes(value: Double => Unit): Self = this.set("skipBytes", js.Any.fromFunction1(value))
+    def set_dataView(value: js.Any): Self = StObject.set(x, "_dataView", value.asInstanceOf[js.Any])
   }
 }

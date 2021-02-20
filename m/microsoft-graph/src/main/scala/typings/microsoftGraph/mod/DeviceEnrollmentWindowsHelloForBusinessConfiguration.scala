@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,90 +53,78 @@ object DeviceEnrollmentWindowsHelloForBusinessConfiguration {
   }
   
   @scala.inline
-  implicit class DeviceEnrollmentWindowsHelloForBusinessConfigurationOps[Self <: DeviceEnrollmentWindowsHelloForBusinessConfiguration] (val x: Self) extends AnyVal {
+  implicit class DeviceEnrollmentWindowsHelloForBusinessConfigurationMutableBuilder[Self <: DeviceEnrollmentWindowsHelloForBusinessConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnhancedBiometricsState(value: Enablement): Self = StObject.set(x, "enhancedBiometricsState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnhancedBiometricsStateUndefined: Self = StObject.set(x, "enhancedBiometricsState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPinExpirationInDays(value: Double): Self = StObject.set(x, "pinExpirationInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhancedBiometricsState(value: Enablement): Self = this.set("enhancedBiometricsState", value.asInstanceOf[js.Any])
+    def setPinExpirationInDaysUndefined: Self = StObject.set(x, "pinExpirationInDays", js.undefined)
     
     @scala.inline
-    def deleteEnhancedBiometricsState: Self = this.set("enhancedBiometricsState", js.undefined)
+    def setPinLowercaseCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = StObject.set(x, "pinLowercaseCharactersUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinExpirationInDays(value: Double): Self = this.set("pinExpirationInDays", value.asInstanceOf[js.Any])
+    def setPinLowercaseCharactersUsageUndefined: Self = StObject.set(x, "pinLowercaseCharactersUsage", js.undefined)
     
     @scala.inline
-    def deletePinExpirationInDays: Self = this.set("pinExpirationInDays", js.undefined)
+    def setPinMaximumLength(value: Double): Self = StObject.set(x, "pinMaximumLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinLowercaseCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = this.set("pinLowercaseCharactersUsage", value.asInstanceOf[js.Any])
+    def setPinMaximumLengthUndefined: Self = StObject.set(x, "pinMaximumLength", js.undefined)
     
     @scala.inline
-    def deletePinLowercaseCharactersUsage: Self = this.set("pinLowercaseCharactersUsage", js.undefined)
+    def setPinMinimumLength(value: Double): Self = StObject.set(x, "pinMinimumLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinMaximumLength(value: Double): Self = this.set("pinMaximumLength", value.asInstanceOf[js.Any])
+    def setPinMinimumLengthUndefined: Self = StObject.set(x, "pinMinimumLength", js.undefined)
     
     @scala.inline
-    def deletePinMaximumLength: Self = this.set("pinMaximumLength", js.undefined)
+    def setPinPreviousBlockCount(value: Double): Self = StObject.set(x, "pinPreviousBlockCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinMinimumLength(value: Double): Self = this.set("pinMinimumLength", value.asInstanceOf[js.Any])
+    def setPinPreviousBlockCountUndefined: Self = StObject.set(x, "pinPreviousBlockCount", js.undefined)
     
     @scala.inline
-    def deletePinMinimumLength: Self = this.set("pinMinimumLength", js.undefined)
+    def setPinSpecialCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = StObject.set(x, "pinSpecialCharactersUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinPreviousBlockCount(value: Double): Self = this.set("pinPreviousBlockCount", value.asInstanceOf[js.Any])
+    def setPinSpecialCharactersUsageUndefined: Self = StObject.set(x, "pinSpecialCharactersUsage", js.undefined)
     
     @scala.inline
-    def deletePinPreviousBlockCount: Self = this.set("pinPreviousBlockCount", js.undefined)
+    def setPinUppercaseCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = StObject.set(x, "pinUppercaseCharactersUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinSpecialCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = this.set("pinSpecialCharactersUsage", value.asInstanceOf[js.Any])
+    def setPinUppercaseCharactersUsageUndefined: Self = StObject.set(x, "pinUppercaseCharactersUsage", js.undefined)
     
     @scala.inline
-    def deletePinSpecialCharactersUsage: Self = this.set("pinSpecialCharactersUsage", js.undefined)
+    def setRemotePassportEnabled(value: Boolean): Self = StObject.set(x, "remotePassportEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinUppercaseCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = this.set("pinUppercaseCharactersUsage", value.asInstanceOf[js.Any])
+    def setRemotePassportEnabledUndefined: Self = StObject.set(x, "remotePassportEnabled", js.undefined)
     
     @scala.inline
-    def deletePinUppercaseCharactersUsage: Self = this.set("pinUppercaseCharactersUsage", js.undefined)
+    def setSecurityDeviceRequired(value: Boolean): Self = StObject.set(x, "securityDeviceRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemotePassportEnabled(value: Boolean): Self = this.set("remotePassportEnabled", value.asInstanceOf[js.Any])
+    def setSecurityDeviceRequiredUndefined: Self = StObject.set(x, "securityDeviceRequired", js.undefined)
     
     @scala.inline
-    def deleteRemotePassportEnabled: Self = this.set("remotePassportEnabled", js.undefined)
+    def setState(value: Enablement): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityDeviceRequired(value: Boolean): Self = this.set("securityDeviceRequired", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteSecurityDeviceRequired: Self = this.set("securityDeviceRequired", js.undefined)
+    def setUnlockWithBiometricsEnabled(value: Boolean): Self = StObject.set(x, "unlockWithBiometricsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: Enablement): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setUnlockWithBiometricsEnabled(value: Boolean): Self = this.set("unlockWithBiometricsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnlockWithBiometricsEnabled: Self = this.set("unlockWithBiometricsEnabled", js.undefined)
+    def setUnlockWithBiometricsEnabledUndefined: Self = StObject.set(x, "unlockWithBiometricsEnabled", js.undefined)
   }
 }

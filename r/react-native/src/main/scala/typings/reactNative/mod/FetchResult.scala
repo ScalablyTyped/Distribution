@@ -3,12 +3,13 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.UIBackgroundFetchResultFailed
 import typings.reactNative.reactNativeStrings.UIBackgroundFetchResultNewData
 import typings.reactNative.reactNativeStrings.UIBackgroundFetchResultNoData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FetchResult extends js.Object {
+trait FetchResult extends StObject {
   
   var NewData: UIBackgroundFetchResultNewData = js.native
   
@@ -29,27 +30,15 @@ object FetchResult {
   }
   
   @scala.inline
-  implicit class FetchResultOps[Self <: FetchResult] (val x: Self) extends AnyVal {
+  implicit class FetchResultMutableBuilder[Self <: FetchResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewData(value: UIBackgroundFetchResultNewData): Self = StObject.set(x, "NewData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoData(value: UIBackgroundFetchResultNoData): Self = StObject.set(x, "NoData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewData(value: UIBackgroundFetchResultNewData): Self = this.set("NewData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoData(value: UIBackgroundFetchResultNoData): Self = this.set("NoData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultFailed(value: UIBackgroundFetchResultFailed): Self = this.set("ResultFailed", value.asInstanceOf[js.Any])
+    def setResultFailed(value: UIBackgroundFetchResultFailed): Self = StObject.set(x, "ResultFailed", value.asInstanceOf[js.Any])
   }
 }

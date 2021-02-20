@@ -4,12 +4,13 @@ import typings.restify.mod.Next
 import typings.restify.mod.Request
 import typings.restify.mod.RequestHandler
 import typings.restify.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HandlerCandidate extends js.Object {
+trait HandlerCandidate extends StObject {
   
   var contentType: js.UndefOr[String | js.Array[String]] = js.native
   
@@ -26,45 +27,33 @@ object HandlerCandidate {
   }
   
   @scala.inline
-  implicit class HandlerCandidateOps[Self <: HandlerCandidate] (val x: Self) extends AnyVal {
+  implicit class HandlerCandidateMutableBuilder[Self <: HandlerCandidate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String | js.Array[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value :_*))
     
     @scala.inline
-    def setHandlerVarargs(value: RequestHandler*): Self = this.set("handler", js.Array(value :_*))
+    def setHandler(value: RequestHandler | js.Array[RequestHandler]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandlerFunction3(value: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any): Self = this.set("handler", js.Any.fromFunction3(value))
+    def setHandlerFunction3(value: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setHandler(value: RequestHandler | js.Array[RequestHandler]): Self = this.set("handler", value.asInstanceOf[js.Any])
+    def setHandlerVarargs(value: RequestHandler*): Self = StObject.set(x, "handler", js.Array(value :_*))
     
     @scala.inline
-    def setContentTypeVarargs(value: String*): Self = this.set("contentType", js.Array(value :_*))
+    def setVersion(value: String | js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String | js.Array[String]): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
-    
-    @scala.inline
-    def setVersionVarargs(value: String*): Self = this.set("version", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersion(value: String | js.Array[String]): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

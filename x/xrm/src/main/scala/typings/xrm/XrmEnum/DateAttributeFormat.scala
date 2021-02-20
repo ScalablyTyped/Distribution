@@ -2,6 +2,7 @@ package typings.xrm.XrmEnum
 
 import typings.xrm.xrmStrings.date
 import typings.xrm.xrmStrings.datetime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.date
   - typings.xrm.xrmStrings.datetime
 */
-trait DateAttributeFormat extends js.Object
+trait DateAttributeFormat extends StObject
 object DateAttributeFormat {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.ava.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThrowsAssertion extends js.Object {
+trait ThrowsAssertion extends StObject {
   
   /**
   	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.

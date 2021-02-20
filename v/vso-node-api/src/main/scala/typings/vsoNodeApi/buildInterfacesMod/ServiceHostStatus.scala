@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ServiceHostStatus extends js.Object
+sealed trait ServiceHostStatus extends StObject
 @JSImport("vso-node-api/interfaces/BuildInterfaces", "ServiceHostStatus")
 @js.native
-object ServiceHostStatus extends js.Object {
+object ServiceHostStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ServiceHostStatus with Double] = js.native
@@ -19,14 +19,12 @@ object ServiceHostStatus extends js.Object {
     */
   @js.native
   sealed trait Offline extends ServiceHostStatus
-  /* 2 */ @js.native
-  object Offline extends TopLevel[Offline with Double]
+  /* 2 */ val Offline: typings.vsoNodeApi.buildInterfacesMod.ServiceHostStatus.Offline with Double = js.native
   
   /**
     * The service host is currently connected and accepting commands.
     */
   @js.native
   sealed trait Online extends ServiceHostStatus
-  /* 1 */ @js.native
-  object Online extends TopLevel[Online with Double]
+  /* 1 */ val Online: typings.vsoNodeApi.buildInterfacesMod.ServiceHostStatus.Online with Double = js.native
 }

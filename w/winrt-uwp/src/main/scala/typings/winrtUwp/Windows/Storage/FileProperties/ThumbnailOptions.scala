@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ThumbnailOptions extends js.Object
+sealed trait ThumbnailOptions extends StObject
 /** Describes the behavior used to retrieve and adjust thumbnails, including the size and quality of the image and how quickly the thumbnail image is retrieved. */
 @JSGlobal("Windows.Storage.FileProperties.ThumbnailOptions")
 @js.native
-object ThumbnailOptions extends js.Object {
+object ThumbnailOptions extends StObject {
   
   /** No options. */
   @js.native

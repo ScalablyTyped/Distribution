@@ -1,11 +1,12 @@
 package typings.awsSdk.qldbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JournalS3ExportDescription extends js.Object {
+trait JournalS3ExportDescription extends StObject {
   
   /**
     * The exclusive end date and time for the range of journal contents that are specified in the original export request.
@@ -62,42 +63,30 @@ object JournalS3ExportDescription {
   }
   
   @scala.inline
-  implicit class JournalS3ExportDescriptionOps[Self <: JournalS3ExportDescription] (val x: Self) extends AnyVal {
+  implicit class JournalS3ExportDescriptionMutableBuilder[Self <: JournalS3ExportDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusiveEndTime(value: Timestamp): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportCreationTime(value: Timestamp): Self = StObject.set(x, "ExportCreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportId(value: UniqueId): Self = StObject.set(x, "ExportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusiveEndTime(value: Timestamp): Self = this.set("ExclusiveEndTime", value.asInstanceOf[js.Any])
+    def setInclusiveStartTime(value: Timestamp): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportCreationTime(value: Timestamp): Self = this.set("ExportCreationTime", value.asInstanceOf[js.Any])
+    def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportId(value: UniqueId): Self = this.set("ExportId", value.asInstanceOf[js.Any])
+    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclusiveStartTime(value: Timestamp): Self = this.set("InclusiveStartTime", value.asInstanceOf[js.Any])
+    def setS3ExportConfiguration(value: S3ExportConfiguration): Self = StObject.set(x, "S3ExportConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLedgerName(value: LedgerName): Self = this.set("LedgerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: Arn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3ExportConfiguration(value: S3ExportConfiguration): Self = this.set("S3ExportConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: ExportStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatus(value: ExportStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

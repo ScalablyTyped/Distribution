@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a way to tag existing user contacts with additional information, specifying that your app can perform some SupportedOperations for this particular contact. */
 @js.native
-trait ContactAnnotation extends js.Object {
+trait ContactAnnotation extends StObject {
   
   /** Gets the ID for the parent ContactAnnotationList that this ContactAnnotation is contained within. */
   var annotationListId: String = js.native
@@ -47,39 +48,27 @@ object ContactAnnotation {
   }
   
   @scala.inline
-  implicit class ContactAnnotationOps[Self <: ContactAnnotation] (val x: Self) extends AnyVal {
+  implicit class ContactAnnotationMutableBuilder[Self <: ContactAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationListId(value: String): Self = StObject.set(x, "annotationListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationListId(value: String): Self = this.set("annotationListId", value.asInstanceOf[js.Any])
+    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactId(value: String): Self = this.set("contactId", value.asInstanceOf[js.Any])
+    def setProviderProperties(value: ValueSet): Self = StObject.set(x, "providerProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDisabled(value: Boolean): Self = this.set("isDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProviderProperties(value: ValueSet): Self = this.set("providerProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteId(value: String): Self = this.set("remoteId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedOperations(value: ContactAnnotationOperations): Self = this.set("supportedOperations", value.asInstanceOf[js.Any])
+    def setSupportedOperations(value: ContactAnnotationOperations): Self = StObject.set(x, "supportedOperations", value.asInstanceOf[js.Any])
   }
 }

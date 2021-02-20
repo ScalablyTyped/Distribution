@@ -1,12 +1,13 @@
 package typings.hapiJoi.mod
 
 import typings.hapiJoi.hapiJoiBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HierarchySeparatorOptions extends js.Object {
+trait HierarchySeparatorOptions extends StObject {
   
   /**
     * overrides the default `.` hierarchy separator. Set to false to treat the key as a literal value.
@@ -24,24 +25,12 @@ object HierarchySeparatorOptions {
   }
   
   @scala.inline
-  implicit class HierarchySeparatorOptionsOps[Self <: HierarchySeparatorOptions] (val x: Self) extends AnyVal {
+  implicit class HierarchySeparatorOptionsMutableBuilder[Self <: HierarchySeparatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSeparator(value: String | `false`): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSeparator(value: String | `false`): Self = this.set("separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeparator: Self = this.set("separator", js.undefined)
+    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

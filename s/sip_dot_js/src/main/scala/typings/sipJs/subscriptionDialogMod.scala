@@ -10,16 +10,16 @@ import typings.sipJs.subscribeMod.OutgoingSubscribeRequestDelegate
 import typings.sipJs.subscriptionSubscriptionDelegateMod.SubscriptionDelegate
 import typings.sipJs.subscriptionSubscriptionMod.SubscriptionState
 import typings.sipJs.userAgentCoreUserAgentCoreMod.UserAgentCore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/dialogs/subscription-dialog", JSImport.Namespace)
-@js.native
-object subscriptionDialogMod extends js.Object {
+object subscriptionDialogMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.sipJs.subscriptionSubscriptionMod.Subscription because var conflicts: id. Inlined delegate, subscriptionExpires, subscriptionState, autoRefresh, subscribe, subscribe, subscribe, subscribe, refresh, unsubscribe */ @js.native
+  - typings.sipJs.subscriptionSubscriptionMod.Subscription because var conflicts: id. Inlined delegate, subscriptionExpires, subscriptionState, autoRefresh, subscribe, subscribe, subscribe, subscribe, refresh, unsubscribe */ @JSImport("sip.js/lib/core/dialogs/subscription-dialog", "SubscriptionDialog")
+  @js.native
   class SubscriptionDialog protected () extends Dialog {
     def this(
       subscriptionEvent: String,
@@ -157,8 +157,7 @@ object subscriptionDialogMod extends js.Object {
     def unsubscribe(): OutgoingSubscribeRequest = js.native
   }
   /* static members */
-  @js.native
-  object SubscriptionDialog extends js.Object {
+  object SubscriptionDialog {
     
     /**
       * When a UAC receives a response that establishes a dialog, it
@@ -168,6 +167,8 @@ object subscriptionDialogMod extends js.Object {
       * @param outgoingRequestMessage - Outgoing request message for dialog.
       * @param incomingResponseMessage - Incoming response message creating dialog.
       */
+    @JSImport("sip.js/lib/core/dialogs/subscription-dialog", "SubscriptionDialog.initialDialogStateForSubscription")
+    @js.native
     def initialDialogStateForSubscription(
       outgoingSubscribeRequestMessage: OutgoingRequestMessage,
       incomingNotifyRequestMessage: IncomingRequestMessage

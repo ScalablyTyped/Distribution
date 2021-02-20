@@ -1,5 +1,6 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to check entries against lists.
   */
 @js.native
-trait SchemaFindThreatMatchesRequest extends js.Object {
+trait SchemaFindThreatMatchesRequest extends StObject {
   
   /**
     * The client metadata.
@@ -29,30 +30,18 @@ object SchemaFindThreatMatchesRequest {
   }
   
   @scala.inline
-  implicit class SchemaFindThreatMatchesRequestOps[Self <: SchemaFindThreatMatchesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaFindThreatMatchesRequestMutableBuilder[Self <: SchemaFindThreatMatchesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: SchemaClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThreatInfo(value: SchemaThreatInfo): Self = StObject.set(x, "threatInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: SchemaClientInfo): Self = this.set("client", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
-    
-    @scala.inline
-    def setThreatInfo(value: SchemaThreatInfo): Self = this.set("threatInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatInfo: Self = this.set("threatInfo", js.undefined)
+    def setThreatInfoUndefined: Self = StObject.set(x, "threatInfo", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableFooter extends js.Object {
+trait MUIDataTableFooter extends StObject {
   
   var changePage: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
   
@@ -28,54 +29,42 @@ object MUIDataTableFooter {
   }
   
   @scala.inline
-  implicit class MUIDataTableFooterOps[Self <: MUIDataTableFooter] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableFooterMutableBuilder[Self <: MUIDataTableFooter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangePage(value: /* e */ js.Any => _): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangePageUndefined: Self = StObject.set(x, "changePage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeRowsPerPage(value: /* e */ js.Any => _): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangePage(value: /* e */ js.Any => _): Self = this.set("changePage", js.Any.fromFunction1(value))
+    def setChangeRowsPerPageUndefined: Self = StObject.set(x, "changeRowsPerPage", js.undefined)
     
     @scala.inline
-    def deleteChangePage: Self = this.set("changePage", js.undefined)
+    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeRowsPerPage(value: /* e */ js.Any => _): Self = this.set("changeRowsPerPage", js.Any.fromFunction1(value))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteChangeRowsPerPage: Self = this.set("changeRowsPerPage", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setRowsPerPage(value: Double): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowCount: Self = this.set("rowCount", js.undefined)
-    
-    @scala.inline
-    def setRowsPerPage(value: Double): Self = this.set("rowsPerPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowsPerPage: Self = this.set("rowsPerPage", js.undefined)
+    def setRowsPerPageUndefined: Self = StObject.set(x, "rowsPerPage", js.undefined)
   }
 }

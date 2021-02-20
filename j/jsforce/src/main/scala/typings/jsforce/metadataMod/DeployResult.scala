@@ -1,11 +1,12 @@
 package typings.jsforce.metadataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeployResult extends js.Object {
+trait DeployResult extends StObject {
   
   var checkOnly: Boolean = js.native
   
@@ -72,96 +73,84 @@ object DeployResult {
   }
   
   @scala.inline
-  implicit class DeployResultOps[Self <: DeployResult] (val x: Self) extends AnyVal {
+  implicit class DeployResultMutableBuilder[Self <: DeployResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckOnly(value: Boolean): Self = StObject.set(x, "checkOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedDate(value: String): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckOnly(value: Boolean): Self = this.set("checkOnly", value.asInstanceOf[js.Any])
+    def setDetails(value: js.Array[js.Object]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedDate(value: String): Self = this.set("completedDate", value.asInstanceOf[js.Any])
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def setCreatedDate(value: String): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDetailsVarargs(value: js.Object*): Self = StObject.set(x, "details", js.Array(value :_*))
     
     @scala.inline
-    def setDone(value: Boolean): Self = this.set("done", value.asInstanceOf[js.Any])
+    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: String): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def setNumberComponentErrors(value: Double): Self = this.set("numberComponentErrors", value.asInstanceOf[js.Any])
+    def setErrorStatusCode(value: String): Self = StObject.set(x, "errorStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberComponentsDeployed(value: Double): Self = this.set("numberComponentsDeployed", value.asInstanceOf[js.Any])
+    def setErrorStatusCodeUndefined: Self = StObject.set(x, "errorStatusCode", js.undefined)
     
     @scala.inline
-    def setNumberComponentsTotal(value: Double): Self = this.set("numberComponentsTotal", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberTestErrors(value: Double): Self = this.set("numberTestErrors", value.asInstanceOf[js.Any])
+    def setIgnoreWarnings(value: Boolean): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberTestsCompleted(value: Double): Self = this.set("numberTestsCompleted", value.asInstanceOf[js.Any])
+    def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
     
     @scala.inline
-    def setNumberTestsTotal(value: Double): Self = this.set("numberTestsTotal", value.asInstanceOf[js.Any])
+    def setLastModifiedDate(value: String): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    def setNumberComponentErrors(value: Double): Self = StObject.set(x, "numberComponentErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setNumberComponentsDeployed(value: Double): Self = StObject.set(x, "numberComponentsDeployed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setNumberComponentsTotal(value: Double): Self = StObject.set(x, "numberComponentsTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailsVarargs(value: js.Object*): Self = this.set("details", js.Array(value :_*))
+    def setNumberTestErrors(value: Double): Self = StObject.set(x, "numberTestErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: js.Array[js.Object]): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setNumberTestsCompleted(value: Double): Self = StObject.set(x, "numberTestsCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setNumberTestsTotal(value: Double): Self = StObject.set(x, "numberTestsTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setRollbackOnError(value: Boolean): Self = StObject.set(x, "rollbackOnError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setRollbackOnErrorUndefined: Self = StObject.set(x, "rollbackOnError", js.undefined)
     
     @scala.inline
-    def setErrorStatusCode(value: String): Self = this.set("errorStatusCode", value.asInstanceOf[js.Any])
+    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorStatusCode: Self = this.set("errorStatusCode", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreWarnings(value: Boolean): Self = this.set("ignoreWarnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreWarnings: Self = this.set("ignoreWarnings", js.undefined)
-    
-    @scala.inline
-    def setRollbackOnError(value: Boolean): Self = this.set("rollbackOnError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRollbackOnError: Self = this.set("rollbackOnError", js.undefined)
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintenanceWindowStepFunctionsParameters extends js.Object {
+trait MaintenanceWindowStepFunctionsParameters extends StObject {
   
   /**
     * The inputs for the STEP_FUNCTIONS task.
@@ -26,30 +27,18 @@ object MaintenanceWindowStepFunctionsParameters {
   }
   
   @scala.inline
-  implicit class MaintenanceWindowStepFunctionsParametersOps[Self <: MaintenanceWindowStepFunctionsParameters] (val x: Self) extends AnyVal {
+  implicit class MaintenanceWindowStepFunctionsParametersMutableBuilder[Self <: MaintenanceWindowStepFunctionsParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput(value: MaintenanceWindowStepFunctionsInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: MaintenanceWindowStepFunctionsName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: MaintenanceWindowStepFunctionsInput): Self = this.set("Input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput: Self = this.set("Input", js.undefined)
-    
-    @scala.inline
-    def setName(value: MaintenanceWindowStepFunctionsName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

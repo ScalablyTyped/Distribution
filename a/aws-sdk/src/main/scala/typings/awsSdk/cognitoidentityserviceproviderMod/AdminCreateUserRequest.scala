@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminCreateUserRequest extends js.Object {
+trait AdminCreateUserRequest extends StObject {
   
   /**
     * A map of custom key-value pairs that you can provide as input for any custom workflows that this action triggers.  You create custom workflows by assigning AWS Lambda functions to user pool triggers. When you use the AdminCreateUser API action, Amazon Cognito invokes the function that is assigned to the pre sign-up trigger. When Amazon Cognito invokes this function, it passes a JSON payload, which the function receives as input. This payload contains a clientMetadata attribute, which provides the data that you assigned to the ClientMetadata parameter in your AdminCreateUser request. In your function code in AWS Lambda, you can process the clientMetadata value to enhance your workflow for your specific needs. For more information, see Customizing User Pool Workflows with Lambda Triggers in the Amazon Cognito Developer Guide.  Take the following limitations into consideration when you use the ClientMetadata parameter:   Amazon Cognito does not store the ClientMetadata value. This data is available only to AWS Lambda triggers that are assigned to a user pool to support custom workflows. If your user pool configuration does not include triggers, the ClientMetadata parameter serves no purpose.   Amazon Cognito does not validate the ClientMetadata value.   Amazon Cognito does not encrypt the the ClientMetadata value, so don't use it to provide sensitive information.   
@@ -61,75 +62,63 @@ object AdminCreateUserRequest {
   }
   
   @scala.inline
-  implicit class AdminCreateUserRequestOps[Self <: AdminCreateUserRequest] (val x: Self) extends AnyVal {
+  implicit class AdminCreateUserRequestMutableBuilder[Self <: AdminCreateUserRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesiredDeliveryMediums(value: DeliveryMediumListType): Self = StObject.set(x, "DesiredDeliveryMediums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    def setDesiredDeliveryMediumsUndefined: Self = StObject.set(x, "DesiredDeliveryMediums", js.undefined)
     
     @scala.inline
-    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    def setDesiredDeliveryMediumsVarargs(value: DeliveryMediumType*): Self = StObject.set(x, "DesiredDeliveryMediums", js.Array(value :_*))
     
     @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = this.set("ClientMetadata", value.asInstanceOf[js.Any])
+    def setForceAliasCreation(value: ForceAliasCreation): Self = StObject.set(x, "ForceAliasCreation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientMetadata: Self = this.set("ClientMetadata", js.undefined)
+    def setForceAliasCreationUndefined: Self = StObject.set(x, "ForceAliasCreation", js.undefined)
     
     @scala.inline
-    def setDesiredDeliveryMediumsVarargs(value: DeliveryMediumType*): Self = this.set("DesiredDeliveryMediums", js.Array(value :_*))
+    def setMessageAction(value: MessageActionType): Self = StObject.set(x, "MessageAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredDeliveryMediums(value: DeliveryMediumListType): Self = this.set("DesiredDeliveryMediums", value.asInstanceOf[js.Any])
+    def setMessageActionUndefined: Self = StObject.set(x, "MessageAction", js.undefined)
     
     @scala.inline
-    def deleteDesiredDeliveryMediums: Self = this.set("DesiredDeliveryMediums", js.undefined)
+    def setTemporaryPassword(value: PasswordType): Self = StObject.set(x, "TemporaryPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceAliasCreation(value: ForceAliasCreation): Self = this.set("ForceAliasCreation", value.asInstanceOf[js.Any])
+    def setTemporaryPasswordUndefined: Self = StObject.set(x, "TemporaryPassword", js.undefined)
     
     @scala.inline
-    def deleteForceAliasCreation: Self = this.set("ForceAliasCreation", js.undefined)
+    def setUserAttributes(value: AttributeListType): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageAction(value: MessageActionType): Self = this.set("MessageAction", value.asInstanceOf[js.Any])
+    def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
     
     @scala.inline
-    def deleteMessageAction: Self = this.set("MessageAction", js.undefined)
+    def setUserAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "UserAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setTemporaryPassword(value: PasswordType): Self = this.set("TemporaryPassword", value.asInstanceOf[js.Any])
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemporaryPassword: Self = this.set("TemporaryPassword", js.undefined)
+    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAttributesVarargs(value: AttributeType*): Self = this.set("UserAttributes", js.Array(value :_*))
+    def setValidationData(value: AttributeListType): Self = StObject.set(x, "ValidationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAttributes(value: AttributeListType): Self = this.set("UserAttributes", value.asInstanceOf[js.Any])
+    def setValidationDataUndefined: Self = StObject.set(x, "ValidationData", js.undefined)
     
     @scala.inline
-    def deleteUserAttributes: Self = this.set("UserAttributes", js.undefined)
-    
-    @scala.inline
-    def setValidationDataVarargs(value: AttributeType*): Self = this.set("ValidationData", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidationData(value: AttributeListType): Self = this.set("ValidationData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationData: Self = this.set("ValidationData", js.undefined)
+    def setValidationDataVarargs(value: AttributeType*): Self = StObject.set(x, "ValidationData", js.Array(value :_*))
   }
 }

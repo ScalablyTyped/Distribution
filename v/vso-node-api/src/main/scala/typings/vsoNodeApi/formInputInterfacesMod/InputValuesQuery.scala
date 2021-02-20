@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.formInputInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputValuesQuery extends js.Object {
+trait InputValuesQuery extends StObject {
   
   var currentValues: StringDictionary[String] = js.native
   
@@ -29,30 +30,18 @@ object InputValuesQuery {
   }
   
   @scala.inline
-  implicit class InputValuesQueryOps[Self <: InputValuesQuery] (val x: Self) extends AnyVal {
+  implicit class InputValuesQueryMutableBuilder[Self <: InputValuesQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentValues(value: StringDictionary[String]): Self = StObject.set(x, "currentValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputValues(value: js.Array[InputValues]): Self = StObject.set(x, "inputValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputValuesVarargs(value: InputValues*): Self = StObject.set(x, "inputValues", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentValues(value: StringDictionary[String]): Self = this.set("currentValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputValuesVarargs(value: InputValues*): Self = this.set("inputValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputValues(value: js.Array[InputValues]): Self = this.set("inputValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResource(value: js.Any): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

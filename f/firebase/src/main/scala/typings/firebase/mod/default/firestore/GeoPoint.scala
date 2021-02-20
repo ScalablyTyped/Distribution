@@ -1,12 +1,13 @@
 package typings.firebase.mod.default.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("firebase", "firestore.GeoPoint")
+@JSImport("firebase", "default.firestore.GeoPoint")
 @js.native
-class GeoPoint protected () extends js.Object {
+class GeoPoint protected () extends StObject {
   /**
     * Creates a new immutable GeoPoint object with the provided latitude and
     * longitude values.

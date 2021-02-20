@@ -3,13 +3,12 @@ package typings.tablesorter
 import typings.tablesorter.html5FormatterMod.Html5Formatter
 import typings.tablesorter.select2FormatterMod.Select2Formatter
 import typings.tablesorter.uiformatterMod.UIFormatter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/Filtering/Formatter/FilterFormatter", JSImport.Namespace)
-@js.native
-object filterFormatterMod extends js.Object {
+object filterFormatterMod {
   
   @js.native
   trait FilterFormatter

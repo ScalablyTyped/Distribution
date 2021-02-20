@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Message type to initiate a read-only transaction.
   */
 @js.native
-trait SchemaReadOnly extends js.Object {
+trait SchemaReadOnly extends StObject {
   
   /**
     * Executes all reads at a timestamp that is `exact_staleness` old. The
@@ -78,54 +79,42 @@ object SchemaReadOnly {
   }
   
   @scala.inline
-  implicit class SchemaReadOnlyOps[Self <: SchemaReadOnly] (val x: Self) extends AnyVal {
+  implicit class SchemaReadOnlyMutableBuilder[Self <: SchemaReadOnly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExactStaleness(value: String): Self = StObject.set(x, "exactStaleness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExactStalenessUndefined: Self = StObject.set(x, "exactStaleness", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxStaleness(value: String): Self = StObject.set(x, "maxStaleness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExactStaleness(value: String): Self = this.set("exactStaleness", value.asInstanceOf[js.Any])
+    def setMaxStalenessUndefined: Self = StObject.set(x, "maxStaleness", js.undefined)
     
     @scala.inline
-    def deleteExactStaleness: Self = this.set("exactStaleness", js.undefined)
+    def setMinReadTimestamp(value: String): Self = StObject.set(x, "minReadTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxStaleness(value: String): Self = this.set("maxStaleness", value.asInstanceOf[js.Any])
+    def setMinReadTimestampUndefined: Self = StObject.set(x, "minReadTimestamp", js.undefined)
     
     @scala.inline
-    def deleteMaxStaleness: Self = this.set("maxStaleness", js.undefined)
+    def setReadTimestamp(value: String): Self = StObject.set(x, "readTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinReadTimestamp(value: String): Self = this.set("minReadTimestamp", value.asInstanceOf[js.Any])
+    def setReadTimestampUndefined: Self = StObject.set(x, "readTimestamp", js.undefined)
     
     @scala.inline
-    def deleteMinReadTimestamp: Self = this.set("minReadTimestamp", js.undefined)
+    def setReturnReadTimestamp(value: Boolean): Self = StObject.set(x, "returnReadTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTimestamp(value: String): Self = this.set("readTimestamp", value.asInstanceOf[js.Any])
+    def setReturnReadTimestampUndefined: Self = StObject.set(x, "returnReadTimestamp", js.undefined)
     
     @scala.inline
-    def deleteReadTimestamp: Self = this.set("readTimestamp", js.undefined)
+    def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnReadTimestamp(value: Boolean): Self = this.set("returnReadTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnReadTimestamp: Self = this.set("returnReadTimestamp", js.undefined)
-    
-    @scala.inline
-    def setStrong(value: Boolean): Self = this.set("strong", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrong: Self = this.set("strong", js.undefined)
+    def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Lists the DICOM stores in the given dataset.
   */
 @js.native
-trait SchemaListDicomStoresResponse extends js.Object {
+trait SchemaListDicomStoresResponse extends StObject {
   
   /**
     * The returned DICOM stores. Won&#39;t be more DICOM stores than the value
@@ -31,33 +32,21 @@ object SchemaListDicomStoresResponse {
   }
   
   @scala.inline
-  implicit class SchemaListDicomStoresResponseOps[Self <: SchemaListDicomStoresResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListDicomStoresResponseMutableBuilder[Self <: SchemaListDicomStoresResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDicomStores(value: js.Array[SchemaDicomStore]): Self = StObject.set(x, "dicomStores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDicomStoresUndefined: Self = StObject.set(x, "dicomStores", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDicomStoresVarargs(value: SchemaDicomStore*): Self = StObject.set(x, "dicomStores", js.Array(value :_*))
     
     @scala.inline
-    def setDicomStoresVarargs(value: SchemaDicomStore*): Self = this.set("dicomStores", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDicomStores(value: js.Array[SchemaDicomStore]): Self = this.set("dicomStores", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDicomStores: Self = this.set("dicomStores", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

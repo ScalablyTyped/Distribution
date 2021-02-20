@@ -2,14 +2,14 @@ package typings.ts3NodejsLibrary
 
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.ConnectionParams
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.QueryProtocolInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts3-nodejs-library/lib/transport/protocols/raw", JSImport.Namespace)
-@js.native
-object rawMod extends js.Object {
+object rawMod {
   
+  @JSImport("ts3-nodejs-library/lib/transport/protocols/raw", "ProtocolRAW")
   @js.native
   class ProtocolRAW protected () extends QueryProtocolInterface {
     def this(config: ConnectionParams) = this()

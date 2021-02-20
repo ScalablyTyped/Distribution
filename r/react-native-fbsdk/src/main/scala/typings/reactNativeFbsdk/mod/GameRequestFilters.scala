@@ -1,5 +1,6 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.app_users
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.app_non_users
 */
-trait GameRequestFilters extends js.Object
+trait GameRequestFilters extends StObject
 object GameRequestFilters {
   
   @scala.inline

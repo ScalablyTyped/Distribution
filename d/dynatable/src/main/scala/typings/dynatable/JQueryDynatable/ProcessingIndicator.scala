@@ -1,12 +1,13 @@
 package typings.dynatable.JQueryDynatable
 
 import typings.dynatable.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessingIndicator extends js.Object {
+trait ProcessingIndicator extends StObject {
   
   /** Insert the processing indicator inside the page */
   def attach(): Unit = js.native
@@ -50,36 +51,24 @@ object ProcessingIndicator {
   }
   
   @scala.inline
-  implicit class ProcessingIndicatorOps[Self <: ProcessingIndicator] (val x: Self) extends AnyVal {
+  implicit class ProcessingIndicatorMutableBuilder[Self <: ProcessingIndicator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreate(value: () => JQuery): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttach(value: () => Unit): Self = this.set("attach", js.Any.fromFunction0(value))
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreate(value: () => JQuery): Self = this.set("create", js.Any.fromFunction0(value))
+    def setPosition(value: () => JQuery): Self = StObject.set(x, "position", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPosition(value: () => JQuery): Self = this.set("position", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

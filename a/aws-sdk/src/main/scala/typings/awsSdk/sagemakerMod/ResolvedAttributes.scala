@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolvedAttributes extends js.Object {
+trait ResolvedAttributes extends StObject {
   
   var AutoMLJobObjective: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobObjective] = js.native
   
@@ -25,36 +26,24 @@ object ResolvedAttributes {
   }
   
   @scala.inline
-  implicit class ResolvedAttributesOps[Self <: ResolvedAttributes] (val x: Self) extends AnyVal {
+  implicit class ResolvedAttributesMutableBuilder[Self <: ResolvedAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoMLJobObjective(value: AutoMLJobObjective): Self = StObject.set(x, "AutoMLJobObjective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoMLJobObjectiveUndefined: Self = StObject.set(x, "AutoMLJobObjective", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletionCriteria(value: AutoMLJobCompletionCriteria): Self = StObject.set(x, "CompletionCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMLJobObjective(value: AutoMLJobObjective): Self = this.set("AutoMLJobObjective", value.asInstanceOf[js.Any])
+    def setCompletionCriteriaUndefined: Self = StObject.set(x, "CompletionCriteria", js.undefined)
     
     @scala.inline
-    def deleteAutoMLJobObjective: Self = this.set("AutoMLJobObjective", js.undefined)
+    def setProblemType(value: ProblemType): Self = StObject.set(x, "ProblemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionCriteria(value: AutoMLJobCompletionCriteria): Self = this.set("CompletionCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompletionCriteria: Self = this.set("CompletionCriteria", js.undefined)
-    
-    @scala.inline
-    def setProblemType(value: ProblemType): Self = this.set("ProblemType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProblemType: Self = this.set("ProblemType", js.undefined)
+    def setProblemTypeUndefined: Self = StObject.set(x, "ProblemType", js.undefined)
   }
 }

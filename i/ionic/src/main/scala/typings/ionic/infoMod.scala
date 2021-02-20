@@ -1,14 +1,17 @@
 package typings.ionic
 
 import typings.ionic.commandMod.Command
+import typings.ionic.definitionsMod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/info", JSImport.Namespace)
-@js.native
-object infoMod extends js.Object {
+object infoMod {
   
+  @JSImport("ionic/commands/info", "InfoCommand")
   @js.native
-  class InfoCommand () extends Command
+  class InfoCommand protected () extends Command {
+    def this(namespace: INamespace) = this()
+  }
 }

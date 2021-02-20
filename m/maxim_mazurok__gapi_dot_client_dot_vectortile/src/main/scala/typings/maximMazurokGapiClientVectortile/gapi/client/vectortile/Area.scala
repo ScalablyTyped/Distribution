@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Area extends js.Object {
+trait Area extends StObject {
   
   /** True if the polygon is not entirely internal to the feature that it belongs to: that is, some of the edges are bordering another feature. */
   var hasExternalEdges: js.UndefOr[Boolean] = js.native
@@ -52,69 +53,57 @@ object Area {
   }
   
   @scala.inline
-  implicit class AreaOps[Self <: Area] (val x: Self) extends AnyVal {
+  implicit class AreaMutableBuilder[Self <: Area] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasExternalEdges(value: Boolean): Self = StObject.set(x, "hasExternalEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasExternalEdgesUndefined: Self = StObject.set(x, "hasExternalEdges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInternalEdges(value: js.Array[Double]): Self = StObject.set(x, "internalEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasExternalEdges(value: Boolean): Self = this.set("hasExternalEdges", value.asInstanceOf[js.Any])
+    def setInternalEdgesUndefined: Self = StObject.set(x, "internalEdges", js.undefined)
     
     @scala.inline
-    def deleteHasExternalEdges: Self = this.set("hasExternalEdges", js.undefined)
+    def setInternalEdgesVarargs(value: Double*): Self = StObject.set(x, "internalEdges", js.Array(value :_*))
     
     @scala.inline
-    def setInternalEdgesVarargs(value: Double*): Self = this.set("internalEdges", js.Array(value :_*))
+    def setLoopBreaks(value: js.Array[Double]): Self = StObject.set(x, "loopBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalEdges(value: js.Array[Double]): Self = this.set("internalEdges", value.asInstanceOf[js.Any])
+    def setLoopBreaksUndefined: Self = StObject.set(x, "loopBreaks", js.undefined)
     
     @scala.inline
-    def deleteInternalEdges: Self = this.set("internalEdges", js.undefined)
+    def setLoopBreaksVarargs(value: Double*): Self = StObject.set(x, "loopBreaks", js.Array(value :_*))
     
     @scala.inline
-    def setLoopBreaksVarargs(value: Double*): Self = this.set("loopBreaks", js.Array(value :_*))
+    def setTriangleIndices(value: js.Array[Double]): Self = StObject.set(x, "triangleIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoopBreaks(value: js.Array[Double]): Self = this.set("loopBreaks", value.asInstanceOf[js.Any])
+    def setTriangleIndicesUndefined: Self = StObject.set(x, "triangleIndices", js.undefined)
     
     @scala.inline
-    def deleteLoopBreaks: Self = this.set("loopBreaks", js.undefined)
+    def setTriangleIndicesVarargs(value: Double*): Self = StObject.set(x, "triangleIndices", js.Array(value :_*))
     
     @scala.inline
-    def setTriangleIndicesVarargs(value: Double*): Self = this.set("triangleIndices", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriangleIndices(value: js.Array[Double]): Self = this.set("triangleIndices", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTriangleIndices: Self = this.set("triangleIndices", js.undefined)
+    def setVertexOffsets(value: Vertex2DList): Self = StObject.set(x, "vertexOffsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVertexOffsetsUndefined: Self = StObject.set(x, "vertexOffsets", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertexOffsets(value: Vertex2DList): Self = this.set("vertexOffsets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertexOffsets: Self = this.set("vertexOffsets", js.undefined)
-    
-    @scala.inline
-    def setZOrder(value: Double): Self = this.set("zOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZOrder: Self = this.set("zOrder", js.undefined)
+    def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
   }
 }

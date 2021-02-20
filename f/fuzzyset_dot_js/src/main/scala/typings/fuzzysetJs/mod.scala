@@ -1,71 +1,102 @@
 package typings.fuzzysetJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fuzzyset.js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(
     source: js.UndefOr[scala.Nothing],
     useLevenshtein: js.UndefOr[scala.Nothing],
     gramSizeLower: js.UndefOr[scala.Nothing],
     gramSizeUpper: Double
   ): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(
     source: js.UndefOr[scala.Nothing],
     useLevenshtein: js.UndefOr[scala.Nothing],
     gramSizeLower: Double
   ): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(
     source: js.UndefOr[scala.Nothing],
     useLevenshtein: js.UndefOr[scala.Nothing],
     gramSizeLower: Double,
     gramSizeUpper: Double
   ): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(source: js.UndefOr[scala.Nothing], useLevenshtein: Boolean): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(
     source: js.UndefOr[scala.Nothing],
     useLevenshtein: Boolean,
     gramSizeLower: js.UndefOr[scala.Nothing],
     gramSizeUpper: Double
   ): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(source: js.UndefOr[scala.Nothing], useLevenshtein: Boolean, gramSizeLower: Double): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(
     source: js.UndefOr[scala.Nothing],
     useLevenshtein: Boolean,
     gramSizeLower: Double,
     gramSizeUpper: Double
   ): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(source: js.Array[String]): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(
     source: js.Array[String],
     useLevenshtein: js.UndefOr[scala.Nothing],
     gramSizeLower: js.UndefOr[scala.Nothing],
     gramSizeUpper: Double
   ): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(source: js.Array[String], useLevenshtein: js.UndefOr[scala.Nothing], gramSizeLower: Double): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(
     source: js.Array[String],
     useLevenshtein: js.UndefOr[scala.Nothing],
     gramSizeLower: Double,
     gramSizeUpper: Double
   ): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(source: js.Array[String], useLevenshtein: Boolean): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(
     source: js.Array[String],
     useLevenshtein: Boolean,
     gramSizeLower: js.UndefOr[scala.Nothing],
     gramSizeUpper: Double
   ): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(source: js.Array[String], useLevenshtein: Boolean, gramSizeLower: Double): FuzzySet = js.native
+  @JSImport("fuzzyset.js", JSImport.Namespace)
+  @js.native
   def apply(source: js.Array[String], useLevenshtein: Boolean, gramSizeLower: Double, gramSizeUpper: Double): FuzzySet = js.native
   
   @js.native
-  trait FuzzySet extends js.Object {
+  trait FuzzySet extends StObject {
     
     def add(value: String): Boolean = js.native
     

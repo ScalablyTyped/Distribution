@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.locationRepositoryStoryResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationRepositoryStoryResponseStoryLocationsItem extends js.Object {
+trait LocationRepositoryStoryResponseStoryLocationsItem extends StObject {
   
   var height: String = js.native
   
@@ -47,48 +48,36 @@ object LocationRepositoryStoryResponseStoryLocationsItem {
   }
   
   @scala.inline
-  implicit class LocationRepositoryStoryResponseStoryLocationsItemOps[Self <: LocationRepositoryStoryResponseStoryLocationsItem] (val x: Self) extends AnyVal {
+  implicit class LocationRepositoryStoryResponseStoryLocationsItemMutableBuilder[Self <: LocationRepositoryStoryResponseStoryLocationsItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIs_hidden(value: Double): Self = StObject.set(x, "is_hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIs_pinned(value: Double): Self = StObject.set(x, "is_pinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIs_sticker(value: Double): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_hidden(value: Double): Self = this.set("is_hidden", value.asInstanceOf[js.Any])
+    def setLocation(value: LocationRepositoryStoryResponseLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_pinned(value: Double): Self = this.set("is_pinned", value.asInstanceOf[js.Any])
+    def setRotation(value: Double | String): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_sticker(value: Double): Self = this.set("is_sticker", value.asInstanceOf[js.Any])
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: LocationRepositoryStoryResponseLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setX(value: String | Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double | String): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: String | Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: String): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.mailgunJs.mod
 
 import typings.mailgunJs.mod.lists.Member
 import typings.mailgunJs.mod.lists.Members
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lists_ extends js.Object {
+trait Lists_ extends StObject {
   
   def delete(): js.Promise[DeleteResponse] = js.native
   def delete(callback: js.Function2[/* error */ Error, /* body */ DeleteResponse, Unit]): js.Promise[DeleteResponse] = js.native

@@ -5,14 +5,14 @@ import typings.pulumiAws.kinesisanalyticsv2ApplicationMod.ApplicationState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "kinesisanalyticsv2")
-@js.native
-object kinesisanalyticsv2 extends js.Object {
+object kinesisanalyticsv2 {
   
+  @JSImport("@pulumi/aws", "kinesisanalyticsv2.Application")
   @js.native
   class Application protected ()
     extends typings.pulumiAws.kinesisanalyticsv2Mod.Application {
@@ -27,8 +27,7 @@ object kinesisanalyticsv2 extends js.Object {
     def this(name: String, args: ApplicationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Application extends js.Object {
+  object Application {
     
     /**
       * Get an existing Application resource's state with the given name, ID, and optional extra
@@ -39,15 +38,25 @@ object kinesisanalyticsv2 extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "kinesisanalyticsv2.Application.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = js.native
+    @JSImport("@pulumi/aws", "kinesisanalyticsv2.Application.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = js.native
+    @JSImport("@pulumi/aws", "kinesisanalyticsv2.Application.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ApplicationState): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = js.native
+    @JSImport("@pulumi/aws", "kinesisanalyticsv2.Application.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): typings.pulumiAws.kinesisanalyticsv2ApplicationMod.Application = js.native
     
     /**
       * Returns true if the given object is an instance of Application.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "kinesisanalyticsv2.Application.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean = js.native
   }
 }

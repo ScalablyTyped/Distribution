@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StockChartOptions extends js.Object {
+trait StockChartOptions extends StObject {
   
   var autoBind: js.UndefOr[Boolean] = js.native
   
@@ -112,318 +113,306 @@ object StockChartOptions {
   }
   
   @scala.inline
-  implicit class StockChartOptionsOps[Self <: StockChartOptions] (val x: Self) extends AnyVal {
+  implicit class StockChartOptionsMutableBuilder[Self <: StockChartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisDefaults(value: js.Any): Self = StObject.set(x, "axisDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setAxisDefaultsUndefined: Self = StObject.set(x, "axisDefaults", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setAxisLabelClick(value: /* e */ StockChartAxisLabelClickEvent => Unit): Self = StObject.set(x, "axisLabelClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAxisDefaults(value: js.Any): Self = this.set("axisDefaults", value.asInstanceOf[js.Any])
+    def setAxisLabelClickUndefined: Self = StObject.set(x, "axisLabelClick", js.undefined)
     
     @scala.inline
-    def deleteAxisDefaults: Self = this.set("axisDefaults", js.undefined)
+    def setCategoryAxis(value: StockChartCategoryAxisItem | js.Array[StockChartCategoryAxisItem]): Self = StObject.set(x, "categoryAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisLabelClick(value: /* e */ StockChartAxisLabelClickEvent => Unit): Self = this.set("axisLabelClick", js.Any.fromFunction1(value))
+    def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
     
     @scala.inline
-    def deleteAxisLabelClick: Self = this.set("axisLabelClick", js.undefined)
+    def setCategoryAxisVarargs(value: StockChartCategoryAxisItem*): Self = StObject.set(x, "categoryAxis", js.Array(value :_*))
     
     @scala.inline
-    def setCategoryAxisVarargs(value: StockChartCategoryAxisItem*): Self = this.set("categoryAxis", js.Array(value :_*))
+    def setChartArea(value: StockChartChartArea): Self = StObject.set(x, "chartArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryAxis(value: StockChartCategoryAxisItem | js.Array[StockChartCategoryAxisItem]): Self = this.set("categoryAxis", value.asInstanceOf[js.Any])
+    def setChartAreaUndefined: Self = StObject.set(x, "chartArea", js.undefined)
     
     @scala.inline
-    def deleteCategoryAxis: Self = this.set("categoryAxis", js.undefined)
+    def setDataBound(value: /* e */ StockChartEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChartArea(value: StockChartChartArea): Self = this.set("chartArea", value.asInstanceOf[js.Any])
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteChartArea: Self = this.set("chartArea", js.undefined)
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: /* e */ StockChartEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDateField(value: String): Self = StObject.set(x, "dateField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDateFieldUndefined: Self = StObject.set(x, "dateField", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDrag(value: /* e */ StockChartDragEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateField(value: String): Self = this.set("dateField", value.asInstanceOf[js.Any])
+    def setDragEnd(value: /* e */ StockChartDragEndEvent => Unit): Self = StObject.set(x, "dragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDateField: Self = this.set("dateField", js.undefined)
+    def setDragEndUndefined: Self = StObject.set(x, "dragEnd", js.undefined)
     
     @scala.inline
-    def setDrag(value: /* e */ StockChartDragEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setDragStart(value: /* e */ StockChartDragStartEvent => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
     
     @scala.inline
-    def setDragEnd(value: /* e */ StockChartDragEndEvent => Unit): Self = this.set("dragEnd", js.Any.fromFunction1(value))
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDragEnd: Self = this.set("dragEnd", js.undefined)
+    def setLegend(value: StockChartLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragStart(value: /* e */ StockChartDragStartEvent => Unit): Self = this.set("dragStart", js.Any.fromFunction1(value))
+    def setLegendItemClick(value: /* e */ StockChartLegendItemClickEvent => Unit): Self = StObject.set(x, "legendItemClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDragStart: Self = this.set("dragStart", js.undefined)
+    def setLegendItemClickUndefined: Self = StObject.set(x, "legendItemClick", js.undefined)
     
     @scala.inline
-    def setLegend(value: StockChartLegend): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setLegendItemHover(value: /* e */ StockChartLegendItemHoverEvent => Unit): Self = StObject.set(x, "legendItemHover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setLegendItemHoverUndefined: Self = StObject.set(x, "legendItemHover", js.undefined)
     
     @scala.inline
-    def setLegendItemClick(value: /* e */ StockChartLegendItemClickEvent => Unit): Self = this.set("legendItemClick", js.Any.fromFunction1(value))
+    def setLegendItemLeave(value: /* e */ StockChartLegendItemLeaveEvent => Unit): Self = StObject.set(x, "legendItemLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLegendItemClick: Self = this.set("legendItemClick", js.undefined)
+    def setLegendItemLeaveUndefined: Self = StObject.set(x, "legendItemLeave", js.undefined)
     
     @scala.inline
-    def setLegendItemHover(value: /* e */ StockChartLegendItemHoverEvent => Unit): Self = this.set("legendItemHover", js.Any.fromFunction1(value))
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteLegendItemHover: Self = this.set("legendItemHover", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendItemLeave(value: /* e */ StockChartLegendItemLeaveEvent => Unit): Self = this.set("legendItemLeave", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLegendItemLeave: Self = this.set("legendItemLeave", js.undefined)
+    def setNavigator(value: StockChartNavigator): Self = StObject.set(x, "navigator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNavigatorUndefined: Self = StObject.set(x, "navigator", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNoteClick(value: /* e */ StockChartNoteClickEvent => Unit): Self = StObject.set(x, "noteClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNavigator(value: StockChartNavigator): Self = this.set("navigator", value.asInstanceOf[js.Any])
+    def setNoteClickUndefined: Self = StObject.set(x, "noteClick", js.undefined)
     
     @scala.inline
-    def deleteNavigator: Self = this.set("navigator", js.undefined)
+    def setNoteHover(value: /* e */ StockChartNoteHoverEvent => Unit): Self = StObject.set(x, "noteHover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNoteClick(value: /* e */ StockChartNoteClickEvent => Unit): Self = this.set("noteClick", js.Any.fromFunction1(value))
+    def setNoteHoverUndefined: Self = StObject.set(x, "noteHover", js.undefined)
     
     @scala.inline
-    def deleteNoteClick: Self = this.set("noteClick", js.undefined)
+    def setNoteLeave(value: /* e */ StockChartNoteLeaveEvent => Unit): Self = StObject.set(x, "noteLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNoteHover(value: /* e */ StockChartNoteHoverEvent => Unit): Self = this.set("noteHover", js.Any.fromFunction1(value))
+    def setNoteLeaveUndefined: Self = StObject.set(x, "noteLeave", js.undefined)
     
     @scala.inline
-    def deleteNoteHover: Self = this.set("noteHover", js.undefined)
+    def setPaneRender(value: /* e */ StockChartPaneRenderEvent => Unit): Self = StObject.set(x, "paneRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNoteLeave(value: /* e */ StockChartNoteLeaveEvent => Unit): Self = this.set("noteLeave", js.Any.fromFunction1(value))
+    def setPaneRenderUndefined: Self = StObject.set(x, "paneRender", js.undefined)
     
     @scala.inline
-    def deleteNoteLeave: Self = this.set("noteLeave", js.undefined)
+    def setPanes(value: js.Array[StockChartPane]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaneRender(value: /* e */ StockChartPaneRenderEvent => Unit): Self = this.set("paneRender", js.Any.fromFunction1(value))
+    def setPanesUndefined: Self = StObject.set(x, "panes", js.undefined)
     
     @scala.inline
-    def deletePaneRender: Self = this.set("paneRender", js.undefined)
+    def setPanesVarargs(value: StockChartPane*): Self = StObject.set(x, "panes", js.Array(value :_*))
     
     @scala.inline
-    def setPanesVarargs(value: StockChartPane*): Self = this.set("panes", js.Array(value :_*))
+    def setPdf(value: StockChartPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanes(value: js.Array[StockChartPane]): Self = this.set("panes", value.asInstanceOf[js.Any])
+    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
     @scala.inline
-    def deletePanes: Self = this.set("panes", js.undefined)
+    def setPersistSeriesVisibility(value: Boolean): Self = StObject.set(x, "persistSeriesVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPdf(value: StockChartPdf): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    def setPersistSeriesVisibilityUndefined: Self = StObject.set(x, "persistSeriesVisibility", js.undefined)
     
     @scala.inline
-    def deletePdf: Self = this.set("pdf", js.undefined)
+    def setPlotArea(value: StockChartPlotArea): Self = StObject.set(x, "plotArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistSeriesVisibility(value: Boolean): Self = this.set("persistSeriesVisibility", value.asInstanceOf[js.Any])
+    def setPlotAreaClick(value: /* e */ StockChartPlotAreaClickEvent => Unit): Self = StObject.set(x, "plotAreaClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePersistSeriesVisibility: Self = this.set("persistSeriesVisibility", js.undefined)
+    def setPlotAreaClickUndefined: Self = StObject.set(x, "plotAreaClick", js.undefined)
     
     @scala.inline
-    def setPlotArea(value: StockChartPlotArea): Self = this.set("plotArea", value.asInstanceOf[js.Any])
+    def setPlotAreaHover(value: /* e */ StockChartPlotAreaHoverEvent => Unit): Self = StObject.set(x, "plotAreaHover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePlotArea: Self = this.set("plotArea", js.undefined)
+    def setPlotAreaHoverUndefined: Self = StObject.set(x, "plotAreaHover", js.undefined)
     
     @scala.inline
-    def setPlotAreaClick(value: /* e */ StockChartPlotAreaClickEvent => Unit): Self = this.set("plotAreaClick", js.Any.fromFunction1(value))
+    def setPlotAreaLeave(value: /* e */ StockChartPlotAreaLeaveEvent => Unit): Self = StObject.set(x, "plotAreaLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePlotAreaClick: Self = this.set("plotAreaClick", js.undefined)
+    def setPlotAreaLeaveUndefined: Self = StObject.set(x, "plotAreaLeave", js.undefined)
     
     @scala.inline
-    def setPlotAreaHover(value: /* e */ StockChartPlotAreaHoverEvent => Unit): Self = this.set("plotAreaHover", js.Any.fromFunction1(value))
+    def setPlotAreaUndefined: Self = StObject.set(x, "plotArea", js.undefined)
     
     @scala.inline
-    def deletePlotAreaHover: Self = this.set("plotAreaHover", js.undefined)
+    def setRender(value: /* e */ StockChartRenderEvent => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlotAreaLeave(value: /* e */ StockChartPlotAreaLeaveEvent => Unit): Self = this.set("plotAreaLeave", js.Any.fromFunction1(value))
+    def setRenderAs(value: String): Self = StObject.set(x, "renderAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlotAreaLeave: Self = this.set("plotAreaLeave", js.undefined)
+    def setRenderAsUndefined: Self = StObject.set(x, "renderAs", js.undefined)
     
     @scala.inline
-    def setRender(value: /* e */ StockChartRenderEvent => Unit): Self = this.set("render", js.Any.fromFunction1(value))
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setSelect(value: /* e */ StockChartSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderAs(value: String): Self = this.set("renderAs", value.asInstanceOf[js.Any])
+    def setSelectEnd(value: /* e */ StockChartSelectEndEvent => Unit): Self = StObject.set(x, "selectEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRenderAs: Self = this.set("renderAs", js.undefined)
+    def setSelectEndUndefined: Self = StObject.set(x, "selectEnd", js.undefined)
     
     @scala.inline
-    def setSelect(value: /* e */ StockChartSelectEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    def setSelectStart(value: /* e */ StockChartSelectStartEvent => Unit): Self = StObject.set(x, "selectStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSelectStartUndefined: Self = StObject.set(x, "selectStart", js.undefined)
     
     @scala.inline
-    def setSelectEnd(value: /* e */ StockChartSelectEndEvent => Unit): Self = this.set("selectEnd", js.Any.fromFunction1(value))
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteSelectEnd: Self = this.set("selectEnd", js.undefined)
+    def setSeries(value: js.Array[StockChartSeriesItem]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectStart(value: /* e */ StockChartSelectStartEvent => Unit): Self = this.set("selectStart", js.Any.fromFunction1(value))
+    def setSeriesClick(value: /* e */ StockChartSeriesClickEvent => Unit): Self = StObject.set(x, "seriesClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSelectStart: Self = this.set("selectStart", js.undefined)
+    def setSeriesClickUndefined: Self = StObject.set(x, "seriesClick", js.undefined)
     
     @scala.inline
-    def setSeriesVarargs(value: StockChartSeriesItem*): Self = this.set("series", js.Array(value :_*))
+    def setSeriesColors(value: js.Any): Self = StObject.set(x, "seriesColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: js.Array[StockChartSeriesItem]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSeriesColorsUndefined: Self = StObject.set(x, "seriesColors", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSeriesDefaults(value: StockChartSeriesDefaults): Self = StObject.set(x, "seriesDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesClick(value: /* e */ StockChartSeriesClickEvent => Unit): Self = this.set("seriesClick", js.Any.fromFunction1(value))
+    def setSeriesDefaultsUndefined: Self = StObject.set(x, "seriesDefaults", js.undefined)
     
     @scala.inline
-    def deleteSeriesClick: Self = this.set("seriesClick", js.undefined)
+    def setSeriesHover(value: /* e */ StockChartSeriesHoverEvent => Unit): Self = StObject.set(x, "seriesHover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSeriesColors(value: js.Any): Self = this.set("seriesColors", value.asInstanceOf[js.Any])
+    def setSeriesHoverUndefined: Self = StObject.set(x, "seriesHover", js.undefined)
     
     @scala.inline
-    def deleteSeriesColors: Self = this.set("seriesColors", js.undefined)
+    def setSeriesLeave(value: /* e */ StockChartSeriesLeaveEvent => Unit): Self = StObject.set(x, "seriesLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSeriesDefaults(value: StockChartSeriesDefaults): Self = this.set("seriesDefaults", value.asInstanceOf[js.Any])
+    def setSeriesLeaveUndefined: Self = StObject.set(x, "seriesLeave", js.undefined)
     
     @scala.inline
-    def deleteSeriesDefaults: Self = this.set("seriesDefaults", js.undefined)
+    def setSeriesOver(value: /* e */ StockChartSeriesOverEvent => Unit): Self = StObject.set(x, "seriesOver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSeriesHover(value: /* e */ StockChartSeriesHoverEvent => Unit): Self = this.set("seriesHover", js.Any.fromFunction1(value))
+    def setSeriesOverUndefined: Self = StObject.set(x, "seriesOver", js.undefined)
     
     @scala.inline
-    def deleteSeriesHover: Self = this.set("seriesHover", js.undefined)
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def setSeriesLeave(value: /* e */ StockChartSeriesLeaveEvent => Unit): Self = this.set("seriesLeave", js.Any.fromFunction1(value))
+    def setSeriesVarargs(value: StockChartSeriesItem*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def deleteSeriesLeave: Self = this.set("seriesLeave", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesOver(value: /* e */ StockChartSeriesOverEvent => Unit): Self = this.set("seriesOver", js.Any.fromFunction1(value))
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteSeriesOver: Self = this.set("seriesOver", js.undefined)
+    def setTitle(value: StockChartTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setTooltip(value: StockChartTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: StockChartTitle): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTransitions(value: Boolean): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: StockChartTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setValueAxis(value: StockChartValueAxisItem | js.Array[StockChartValueAxisItem]): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitions(value: Boolean): Self = this.set("transitions", value.asInstanceOf[js.Any])
+    def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
     
     @scala.inline
-    def deleteTransitions: Self = this.set("transitions", js.undefined)
+    def setValueAxisVarargs(value: StockChartValueAxisItem*): Self = StObject.set(x, "valueAxis", js.Array(value :_*))
     
     @scala.inline
-    def setValueAxisVarargs(value: StockChartValueAxisItem*): Self = this.set("valueAxis", js.Array(value :_*))
+    def setZoom(value: /* e */ StockChartZoomEvent => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValueAxis(value: StockChartValueAxisItem | js.Array[StockChartValueAxisItem]): Self = this.set("valueAxis", value.asInstanceOf[js.Any])
+    def setZoomEnd(value: /* e */ StockChartZoomEndEvent => Unit): Self = StObject.set(x, "zoomEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteValueAxis: Self = this.set("valueAxis", js.undefined)
+    def setZoomEndUndefined: Self = StObject.set(x, "zoomEnd", js.undefined)
     
     @scala.inline
-    def setZoom(value: /* e */ StockChartZoomEvent => Unit): Self = this.set("zoom", js.Any.fromFunction1(value))
+    def setZoomStart(value: /* e */ StockChartZoomStartEvent => Unit): Self = StObject.set(x, "zoomStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomStartUndefined: Self = StObject.set(x, "zoomStart", js.undefined)
     
     @scala.inline
-    def setZoomEnd(value: /* e */ StockChartZoomEndEvent => Unit): Self = this.set("zoomEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteZoomEnd: Self = this.set("zoomEnd", js.undefined)
-    
-    @scala.inline
-    def setZoomStart(value: /* e */ StockChartZoomStartEvent => Unit): Self = this.set("zoomStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteZoomStart: Self = this.set("zoomStart", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

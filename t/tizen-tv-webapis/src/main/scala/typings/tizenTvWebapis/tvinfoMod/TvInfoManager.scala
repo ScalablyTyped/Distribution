@@ -4,12 +4,13 @@ import typings.tizenTvWebapis.anon.ACCESSIBILITYFOCUSZOOM
 import typings.tizenTvWebapis.anon.AUDIOLANGUAGECODEAFR
 import typings.tizenTvWebapis.anon.TVVIEWERBGEXECUTABLE
 import typings.tizenTvWebapis.anon.TVVIEWERBGNOTEXECUTABLE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TvInfoManager extends js.Object {
+trait TvInfoManager extends StObject {
   
   /**
     * Defines constants for TV information keys.
@@ -132,54 +133,42 @@ object TvInfoManager {
   }
   
   @scala.inline
-  implicit class TvInfoManagerOps[Self <: TvInfoManager] (val x: Self) extends AnyVal {
+  implicit class TvInfoManagerMutableBuilder[Self <: TvInfoManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCaptionChangeListener(value: (TvInfoMenuKey, TvInfoCaptionChangeCallback) => Double): Self = StObject.set(x, "addCaptionChangeListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMenuValue(value: TvInfoMenuKey => TvInfoMenuValue): Self = StObject.set(x, "getMenuValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTvInfoValue(value: TvInfoKey => TvInfoValue): Self = StObject.set(x, "getTvInfoValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTvInfoKey(value: TVVIEWERBGEXECUTABLE): Self = this.set("TvInfoKey", value.asInstanceOf[js.Any])
+    def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTvInfoMenuKey(value: ACCESSIBILITYFOCUSZOOM): Self = this.set("TvInfoMenuKey", value.asInstanceOf[js.Any])
+    def setIsTvsPicSizeResized(value: () => Boolean): Self = StObject.set(x, "isTvsPicSizeResized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTvInfoMenuValue(value: AUDIOLANGUAGECODEAFR): Self = this.set("TvInfoMenuValue", value.asInstanceOf[js.Any])
+    def setRegisterInAppCaptionControl(value: Boolean => Unit): Self = StObject.set(x, "registerInAppCaptionControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTvInfoValue(value: TVVIEWERBGNOTEXECUTABLE): Self = this.set("TvInfoValue", value.asInstanceOf[js.Any])
+    def setRemoveCaptionChangeListener(value: Double => Unit): Self = StObject.set(x, "removeCaptionChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCaptionChangeListener(value: (TvInfoMenuKey, TvInfoCaptionChangeCallback) => Double): Self = this.set("addCaptionChangeListener", js.Any.fromFunction2(value))
+    def setShowCaption(value: Boolean => Unit): Self = StObject.set(x, "showCaption", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMenuValue(value: TvInfoMenuKey => TvInfoMenuValue): Self = this.set("getMenuValue", js.Any.fromFunction1(value))
+    def setTvInfoKey(value: TVVIEWERBGEXECUTABLE): Self = StObject.set(x, "TvInfoKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTvInfoValue(value: TvInfoKey => TvInfoValue): Self = this.set("getTvInfoValue", js.Any.fromFunction1(value))
+    def setTvInfoMenuKey(value: ACCESSIBILITYFOCUSZOOM): Self = StObject.set(x, "TvInfoMenuKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVersion(value: () => String): Self = this.set("getVersion", js.Any.fromFunction0(value))
+    def setTvInfoMenuValue(value: AUDIOLANGUAGECODEAFR): Self = StObject.set(x, "TvInfoMenuValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTvsPicSizeResized(value: () => Boolean): Self = this.set("isTvsPicSizeResized", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRegisterInAppCaptionControl(value: Boolean => Unit): Self = this.set("registerInAppCaptionControl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveCaptionChangeListener(value: Double => Unit): Self = this.set("removeCaptionChangeListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowCaption(value: Boolean => Unit): Self = this.set("showCaption", js.Any.fromFunction1(value))
+    def setTvInfoValue(value: TVVIEWERBGNOTEXECUTABLE): Self = StObject.set(x, "TvInfoValue", value.asInstanceOf[js.Any])
   }
 }

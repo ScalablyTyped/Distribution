@@ -7,14 +7,14 @@ import typings.ionicCore.pickerInterfaceMod.PickerButton
 import typings.ionicCore.pickerInterfaceMod.PickerColumn
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/picker/picker", JSImport.Namespace)
-@js.native
-object pickerMod extends js.Object {
+object pickerMod {
   
+  @JSImport("@ionic/core/dist/types/components/picker/picker", "Picker")
   @js.native
   class Picker ()
     extends ComponentInterface

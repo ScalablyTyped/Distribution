@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedAppDiagnosticStatus extends js.Object {
+trait ManagedAppDiagnosticStatus extends StObject {
   
   // Instruction on how to mitigate a failed validation
   var mitigationInstruction: js.UndefOr[NullableOption[String]] = js.native
@@ -25,45 +26,33 @@ object ManagedAppDiagnosticStatus {
   }
   
   @scala.inline
-  implicit class ManagedAppDiagnosticStatusOps[Self <: ManagedAppDiagnosticStatus] (val x: Self) extends AnyVal {
+  implicit class ManagedAppDiagnosticStatusMutableBuilder[Self <: ManagedAppDiagnosticStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMitigationInstruction(value: NullableOption[String]): Self = StObject.set(x, "mitigationInstruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMitigationInstructionNull: Self = StObject.set(x, "mitigationInstruction", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMitigationInstructionUndefined: Self = StObject.set(x, "mitigationInstruction", js.undefined)
     
     @scala.inline
-    def setMitigationInstruction(value: NullableOption[String]): Self = this.set("mitigationInstruction", value.asInstanceOf[js.Any])
+    def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMitigationInstruction: Self = this.set("mitigationInstruction", js.undefined)
+    def setStateNull: Self = StObject.set(x, "state", null)
     
     @scala.inline
-    def setMitigationInstructionNull: Self = this.set("mitigationInstruction", null)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setState(value: NullableOption[String]): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setValidationName(value: NullableOption[String]): Self = StObject.set(x, "validationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setValidationNameNull: Self = StObject.set(x, "validationName", null)
     
     @scala.inline
-    def setStateNull: Self = this.set("state", null)
-    
-    @scala.inline
-    def setValidationName(value: NullableOption[String]): Self = this.set("validationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationName: Self = this.set("validationName", js.undefined)
-    
-    @scala.inline
-    def setValidationNameNull: Self = this.set("validationName", null)
+    def setValidationNameUndefined: Self = StObject.set(x, "validationName", js.undefined)
   }
 }

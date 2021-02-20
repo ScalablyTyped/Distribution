@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes network types for provisioned network connectivity profiles. */
 @JSGlobal("Windows.Networking.NetworkOperators.ProfileMediaType")
 @js.native
-object ProfileMediaType extends js.Object {
+object ProfileMediaType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

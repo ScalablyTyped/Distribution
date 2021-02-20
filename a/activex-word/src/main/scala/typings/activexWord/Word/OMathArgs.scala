@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OMathArgs extends js.Object {
+trait OMathArgs extends StObject {
   
   def Add(): OMath = js.native
   def Add(BeforeArg: js.Any): OMath = js.native

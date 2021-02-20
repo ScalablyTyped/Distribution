@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoginUrl extends js.Object {
+trait LoginUrl extends StObject {
   
   var bot_username: js.UndefOr[String] = js.native
   
@@ -24,39 +25,27 @@ object LoginUrl {
   }
   
   @scala.inline
-  implicit class LoginUrlOps[Self <: LoginUrl] (val x: Self) extends AnyVal {
+  implicit class LoginUrlMutableBuilder[Self <: LoginUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBot_username(value: String): Self = StObject.set(x, "bot_username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBot_usernameUndefined: Self = StObject.set(x, "bot_username", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForward_text(value: String): Self = StObject.set(x, "forward_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setForward_textUndefined: Self = StObject.set(x, "forward_text", js.undefined)
     
     @scala.inline
-    def setBot_username(value: String): Self = this.set("bot_username", value.asInstanceOf[js.Any])
+    def setRequest_write_acces(value: Boolean): Self = StObject.set(x, "request_write_acces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBot_username: Self = this.set("bot_username", js.undefined)
+    def setRequest_write_accesUndefined: Self = StObject.set(x, "request_write_acces", js.undefined)
     
     @scala.inline
-    def setForward_text(value: String): Self = this.set("forward_text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForward_text: Self = this.set("forward_text", js.undefined)
-    
-    @scala.inline
-    def setRequest_write_acces(value: Boolean): Self = this.set("request_write_acces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest_write_acces: Self = this.set("request_write_acces", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

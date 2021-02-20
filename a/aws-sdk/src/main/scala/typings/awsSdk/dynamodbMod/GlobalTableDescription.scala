@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalTableDescription extends js.Object {
+trait GlobalTableDescription extends StObject {
   
   /**
     * The creation time of the global table.
@@ -41,51 +42,39 @@ object GlobalTableDescription {
   }
   
   @scala.inline
-  implicit class GlobalTableDescriptionOps[Self <: GlobalTableDescription] (val x: Self) extends AnyVal {
+  implicit class GlobalTableDescriptionMutableBuilder[Self <: GlobalTableDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalTableArn(value: GlobalTableArnString): Self = StObject.set(x, "GlobalTableArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDateTime(value: Date): Self = this.set("CreationDateTime", value.asInstanceOf[js.Any])
+    def setGlobalTableArnUndefined: Self = StObject.set(x, "GlobalTableArn", js.undefined)
     
     @scala.inline
-    def deleteCreationDateTime: Self = this.set("CreationDateTime", js.undefined)
+    def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalTableArn(value: GlobalTableArnString): Self = this.set("GlobalTableArn", value.asInstanceOf[js.Any])
+    def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
     
     @scala.inline
-    def deleteGlobalTableArn: Self = this.set("GlobalTableArn", js.undefined)
+    def setGlobalTableStatus(value: GlobalTableStatus): Self = StObject.set(x, "GlobalTableStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalTableName(value: TableName): Self = this.set("GlobalTableName", value.asInstanceOf[js.Any])
+    def setGlobalTableStatusUndefined: Self = StObject.set(x, "GlobalTableStatus", js.undefined)
     
     @scala.inline
-    def deleteGlobalTableName: Self = this.set("GlobalTableName", js.undefined)
+    def setReplicationGroup(value: ReplicaDescriptionList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalTableStatus(value: GlobalTableStatus): Self = this.set("GlobalTableStatus", value.asInstanceOf[js.Any])
+    def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
     
     @scala.inline
-    def deleteGlobalTableStatus: Self = this.set("GlobalTableStatus", js.undefined)
-    
-    @scala.inline
-    def setReplicationGroupVarargs(value: ReplicaDescription*): Self = this.set("ReplicationGroup", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicationGroup(value: ReplicaDescriptionList): Self = this.set("ReplicationGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationGroup: Self = this.set("ReplicationGroup", js.undefined)
+    def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
   }
 }

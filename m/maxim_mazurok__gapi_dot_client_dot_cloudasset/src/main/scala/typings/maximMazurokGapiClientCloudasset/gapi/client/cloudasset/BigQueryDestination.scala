@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BigQueryDestination extends js.Object {
+trait BigQueryDestination extends StObject {
   
   /**
     * Required. The BigQuery dataset in format "projects/projectId/datasets/datasetId", to which the snapshot result should be exported. If this dataset does not exist, the export call
@@ -55,48 +56,36 @@ object BigQueryDestination {
   }
   
   @scala.inline
-  implicit class BigQueryDestinationOps[Self <: BigQueryDestination] (val x: Self) extends AnyVal {
+  implicit class BigQueryDestinationMutableBuilder[Self <: BigQueryDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: String): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
+    def setPartitionSpec(value: PartitionSpec): Self = StObject.set(x, "partitionSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setPartitionSpecUndefined: Self = StObject.set(x, "partitionSpec", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setSeparateTablesPerAssetType(value: Boolean): Self = StObject.set(x, "separateTablesPerAssetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionSpec(value: PartitionSpec): Self = this.set("partitionSpec", value.asInstanceOf[js.Any])
+    def setSeparateTablesPerAssetTypeUndefined: Self = StObject.set(x, "separateTablesPerAssetType", js.undefined)
     
     @scala.inline
-    def deletePartitionSpec: Self = this.set("partitionSpec", js.undefined)
+    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparateTablesPerAssetType(value: Boolean): Self = this.set("separateTablesPerAssetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeparateTablesPerAssetType: Self = this.set("separateTablesPerAssetType", js.undefined)
-    
-    @scala.inline
-    def setTable(value: String): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

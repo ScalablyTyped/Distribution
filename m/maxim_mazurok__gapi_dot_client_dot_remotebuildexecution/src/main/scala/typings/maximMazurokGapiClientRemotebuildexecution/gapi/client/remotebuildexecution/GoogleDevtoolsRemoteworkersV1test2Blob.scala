@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDevtoolsRemoteworkersV1test2Blob extends js.Object {
+trait GoogleDevtoolsRemoteworkersV1test2Blob extends StObject {
   
   /** The contents of the blob. */
   var contents: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GoogleDevtoolsRemoteworkersV1test2Blob {
   }
   
   @scala.inline
-  implicit class GoogleDevtoolsRemoteworkersV1test2BlobOps[Self <: GoogleDevtoolsRemoteworkersV1test2Blob] (val x: Self) extends AnyVal {
+  implicit class GoogleDevtoolsRemoteworkersV1test2BlobMutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2Blob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDigest(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContents(value: String): Self = this.set("contents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContents: Self = this.set("contents", js.undefined)
-    
-    @scala.inline
-    def setDigest(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = this.set("digest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDigest: Self = this.set("digest", js.undefined)
+    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
   }
 }

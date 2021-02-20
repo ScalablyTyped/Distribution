@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProvisionedProductPlanOutput extends js.Object {
+trait CreateProvisionedProductPlanOutput extends StObject {
   
   /**
     * The plan identifier.
@@ -41,48 +42,36 @@ object CreateProvisionedProductPlanOutput {
   }
   
   @scala.inline
-  implicit class CreateProvisionedProductPlanOutputOps[Self <: CreateProvisionedProductPlanOutput] (val x: Self) extends AnyVal {
+  implicit class CreateProvisionedProductPlanOutputMutableBuilder[Self <: CreateProvisionedProductPlanOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlanId(value: Id): Self = StObject.set(x, "PlanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlanIdUndefined: Self = StObject.set(x, "PlanId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlanName(value: ProvisionedProductPlanName): Self = StObject.set(x, "PlanName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanId(value: Id): Self = this.set("PlanId", value.asInstanceOf[js.Any])
+    def setPlanNameUndefined: Self = StObject.set(x, "PlanName", js.undefined)
     
     @scala.inline
-    def deletePlanId: Self = this.set("PlanId", js.undefined)
+    def setProvisionProductId(value: Id): Self = StObject.set(x, "ProvisionProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanName(value: ProvisionedProductPlanName): Self = this.set("PlanName", value.asInstanceOf[js.Any])
+    def setProvisionProductIdUndefined: Self = StObject.set(x, "ProvisionProductId", js.undefined)
     
     @scala.inline
-    def deletePlanName: Self = this.set("PlanName", js.undefined)
+    def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionProductId(value: Id): Self = this.set("ProvisionProductId", value.asInstanceOf[js.Any])
+    def setProvisionedProductNameUndefined: Self = StObject.set(x, "ProvisionedProductName", js.undefined)
     
     @scala.inline
-    def deleteProvisionProductId: Self = this.set("ProvisionProductId", js.undefined)
+    def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedProductName(value: ProvisionedProductName): Self = this.set("ProvisionedProductName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisionedProductName: Self = this.set("ProvisionedProductName", js.undefined)
-    
-    @scala.inline
-    def setProvisioningArtifactId(value: Id): Self = this.set("ProvisioningArtifactId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisioningArtifactId: Self = this.set("ProvisioningArtifactId", js.undefined)
+    def setProvisioningArtifactIdUndefined: Self = StObject.set(x, "ProvisioningArtifactId", js.undefined)
   }
 }

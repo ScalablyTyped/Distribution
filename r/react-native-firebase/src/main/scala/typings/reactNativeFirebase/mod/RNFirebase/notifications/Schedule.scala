@@ -4,12 +4,13 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.day
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.hour
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.minute
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.week
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Schedule extends js.Object {
+trait Schedule extends StObject {
   
   var fireDate: Double = js.native
   
@@ -24,27 +25,15 @@ object Schedule {
   }
   
   @scala.inline
-  implicit class ScheduleOps[Self <: Schedule] (val x: Self) extends AnyVal {
+  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFireDate(value: Double): Self = StObject.set(x, "fireDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepeatInterval(value: minute | hour | day | week): Self = StObject.set(x, "repeatInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFireDate(value: Double): Self = this.set("fireDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeatInterval(value: minute | hour | day | week): Self = this.set("repeatInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepeatInterval: Self = this.set("repeatInterval", js.undefined)
+    def setRepeatIntervalUndefined: Self = StObject.set(x, "repeatInterval", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a FHIR store.
   */
 @js.native
-trait SchemaFhirStore extends js.Object {
+trait SchemaFhirStore extends StObject {
   
   /**
     * Whether to disable referential integrity in this FHIR store. This field
@@ -92,60 +93,48 @@ object SchemaFhirStore {
   }
   
   @scala.inline
-  implicit class SchemaFhirStoreOps[Self <: SchemaFhirStore] (val x: Self) extends AnyVal {
+  implicit class SchemaFhirStoreMutableBuilder[Self <: SchemaFhirStore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableReferentialIntegrity(value: Boolean): Self = StObject.set(x, "disableReferentialIntegrity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableReferentialIntegrityUndefined: Self = StObject.set(x, "disableReferentialIntegrity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableResourceVersioning(value: Boolean): Self = StObject.set(x, "disableResourceVersioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableReferentialIntegrity(value: Boolean): Self = this.set("disableReferentialIntegrity", value.asInstanceOf[js.Any])
+    def setDisableResourceVersioningUndefined: Self = StObject.set(x, "disableResourceVersioning", js.undefined)
     
     @scala.inline
-    def deleteDisableReferentialIntegrity: Self = this.set("disableReferentialIntegrity", js.undefined)
+    def setEnableHistoryImport(value: Boolean): Self = StObject.set(x, "enableHistoryImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableResourceVersioning(value: Boolean): Self = this.set("disableResourceVersioning", value.asInstanceOf[js.Any])
+    def setEnableHistoryImportUndefined: Self = StObject.set(x, "enableHistoryImport", js.undefined)
     
     @scala.inline
-    def deleteDisableResourceVersioning: Self = this.set("disableResourceVersioning", js.undefined)
+    def setEnableUpdateCreate(value: Boolean): Self = StObject.set(x, "enableUpdateCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHistoryImport(value: Boolean): Self = this.set("enableHistoryImport", value.asInstanceOf[js.Any])
+    def setEnableUpdateCreateUndefined: Self = StObject.set(x, "enableUpdateCreate", js.undefined)
     
     @scala.inline
-    def deleteEnableHistoryImport: Self = this.set("enableHistoryImport", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableUpdateCreate(value: Boolean): Self = this.set("enableUpdateCreate", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteEnableUpdateCreate: Self = this.set("enableUpdateCreate", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setNotificationConfig(value: SchemaNotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNotificationConfig(value: SchemaNotificationConfig): Self = this.set("notificationConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationConfig: Self = this.set("notificationConfig", js.undefined)
+    def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
   }
 }

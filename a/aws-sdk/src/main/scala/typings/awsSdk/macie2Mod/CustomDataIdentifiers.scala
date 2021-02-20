@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomDataIdentifiers extends js.Object {
+trait CustomDataIdentifiers extends StObject {
   
   /**
     * The custom data identifiers that detected the data, and the number of occurrences of the data that each identifier detected.
@@ -26,33 +27,21 @@ object CustomDataIdentifiers {
   }
   
   @scala.inline
-  implicit class CustomDataIdentifiersOps[Self <: CustomDataIdentifiers] (val x: Self) extends AnyVal {
+  implicit class CustomDataIdentifiersMutableBuilder[Self <: CustomDataIdentifiers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetections(value: CustomDetections): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectionsVarargs(value: CustomDetection*): Self = StObject.set(x, "detections", js.Array(value :_*))
     
     @scala.inline
-    def setDetectionsVarargs(value: CustomDetection*): Self = this.set("detections", js.Array(value :_*))
+    def setTotalCount(value: long): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetections(value: CustomDetections): Self = this.set("detections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetections: Self = this.set("detections", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: long): Self = this.set("totalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

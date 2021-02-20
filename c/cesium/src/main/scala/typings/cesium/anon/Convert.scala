@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.Matrix4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Convert extends js.Object {
+trait Convert extends StObject {
   
   var convert: js.UndefOr[Boolean] = js.native
   
@@ -26,42 +27,30 @@ object Convert {
   }
   
   @scala.inline
-  implicit class ConvertOps[Self <: Convert] (val x: Self) extends AnyVal {
+  implicit class ConvertMutableBuilder[Self <: Convert] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination(value: Cartesian3 | typings.cesium.mod.Rectangle): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert(value: Boolean): Self = this.set("convert", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def deleteConvert: Self = this.set("convert", js.undefined)
+    def setEndTransform(value: Matrix4): Self = StObject.set(x, "endTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: Cartesian3 | typings.cesium.mod.Rectangle): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setEndTransformUndefined: Self = StObject.set(x, "endTransform", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setOrientation(value: Direction | Heading): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTransform(value: Matrix4): Self = this.set("endTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTransform: Self = this.set("endTransform", js.undefined)
-    
-    @scala.inline
-    def setOrientation(value: Direction | Heading): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

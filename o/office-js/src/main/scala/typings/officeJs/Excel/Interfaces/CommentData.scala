@@ -5,13 +5,14 @@ import typings.officeJs.Excel.ContentType
 import typings.officeJs.officeJsStrings.Mention
 import typings.officeJs.officeJsStrings.Plain
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `comment.toJSON()`. */
 @js.native
-trait CommentData extends js.Object {
+trait CommentData extends StObject {
   
   /**
     *
@@ -102,84 +103,72 @@ object CommentData {
   }
   
   @scala.inline
-  implicit class CommentDataOps[Self <: CommentData] (val x: Self) extends AnyVal {
+  implicit class CommentDataMutableBuilder[Self <: CommentData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorEmail(value: String): Self = StObject.set(x, "authorEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorEmailUndefined: Self = StObject.set(x, "authorEmail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorEmail(value: String): Self = this.set("authorEmail", value.asInstanceOf[js.Any])
+    def setAuthorNameUndefined: Self = StObject.set(x, "authorName", js.undefined)
     
     @scala.inline
-    def deleteAuthorEmail: Self = this.set("authorEmail", js.undefined)
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorName(value: String): Self = this.set("authorName", value.asInstanceOf[js.Any])
+    def setContentType(value: ContentType | Plain | Mention): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthorName: Self = this.set("authorName", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: ContentType | Plain | Mention): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Date): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setMentions(value: js.Array[CommentMention]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMentionsVarargs(value: CommentMention*): Self = StObject.set(x, "mentions", js.Array(value :_*))
     
     @scala.inline
-    def setMentionsVarargs(value: CommentMention*): Self = this.set("mentions", js.Array(value :_*))
+    def setReplies(value: js.Array[CommentReplyData]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMentions(value: js.Array[CommentMention]): Self = this.set("mentions", value.asInstanceOf[js.Any])
+    def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
     @scala.inline
-    def deleteMentions: Self = this.set("mentions", js.undefined)
+    def setRepliesVarargs(value: CommentReplyData*): Self = StObject.set(x, "replies", js.Array(value :_*))
     
     @scala.inline
-    def setRepliesVarargs(value: CommentReplyData*): Self = this.set("replies", js.Array(value :_*))
+    def setResolved(value: Boolean): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplies(value: js.Array[CommentReplyData]): Self = this.set("replies", value.asInstanceOf[js.Any])
+    def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
     
     @scala.inline
-    def deleteReplies: Self = this.set("replies", js.undefined)
+    def setRichContent(value: String): Self = StObject.set(x, "richContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolved(value: Boolean): Self = this.set("resolved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolved: Self = this.set("resolved", js.undefined)
-    
-    @scala.inline
-    def setRichContent(value: String): Self = this.set("richContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRichContent: Self = this.set("richContent", js.undefined)
+    def setRichContentUndefined: Self = StObject.set(x, "richContent", js.undefined)
   }
 }

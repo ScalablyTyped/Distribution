@@ -2,6 +2,7 @@ package typings.xstate.typesMod
 
 import typings.xstate.typesMod.ActionTypes.Start
 import typings.xstate.typesMod.ActionTypes.Stop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,21 +23,9 @@ object InvokeActionObject {
   }
   
   @scala.inline
-  implicit class InvokeActionObjectOps[Self <: InvokeActionObject[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (InvokeActionObject[TContext, TEvent])) extends AnyVal {
+  implicit class InvokeActionObjectMutableBuilder[Self <: InvokeActionObject[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (InvokeActionObject[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActivity(value: InvokeDefinition[TContext, TEvent]): Self = this.set("activity", value.asInstanceOf[js.Any])
+    def setActivity(value: InvokeDefinition[TContext, TEvent]): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
   }
 }

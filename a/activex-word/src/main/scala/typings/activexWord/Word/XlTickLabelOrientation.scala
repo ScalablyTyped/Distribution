@@ -5,6 +5,7 @@ import typings.activexWord.activexWordNumbers.`-4128`
 import typings.activexWord.activexWordNumbers.`-4166`
 import typings.activexWord.activexWordNumbers.`-4170`
 import typings.activexWord.activexWordNumbers.`-4171`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`-4171`
   - typings.activexWord.activexWordNumbers.`-4166`
 */
-trait XlTickLabelOrientation extends js.Object
+trait XlTickLabelOrientation extends StObject
 object XlTickLabelOrientation {
   
   @scala.inline

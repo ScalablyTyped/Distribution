@@ -11,6 +11,7 @@ import typings.tedious.tediousStrings.prepared
 import typings.tedious.tediousStrings.requestCompleted
 import typings.tedious.tediousStrings.returnValue
 import typings.tedious.tediousStrings.row
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchdomainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hits extends js.Object {
+trait Hits extends StObject {
   
   /**
     * A cursor that can be used to retrieve the next set of matching documents when you want to page through a large result set.
@@ -36,45 +37,33 @@ object Hits {
   }
   
   @scala.inline
-  implicit class HitsOps[Self <: Hits] (val x: Self) extends AnyVal {
+  implicit class HitsMutableBuilder[Self <: Hits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFound(value: Long): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setHit(value: HitList): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFound(value: Long): Self = this.set("found", value.asInstanceOf[js.Any])
+    def setHitUndefined: Self = StObject.set(x, "hit", js.undefined)
     
     @scala.inline
-    def deleteFound: Self = this.set("found", js.undefined)
+    def setHitVarargs(value: Hit*): Self = StObject.set(x, "hit", js.Array(value :_*))
     
     @scala.inline
-    def setHitVarargs(value: Hit*): Self = this.set("hit", js.Array(value :_*))
+    def setStart(value: Long): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHit(value: HitList): Self = this.set("hit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHit: Self = this.set("hit", js.undefined)
-    
-    @scala.inline
-    def setStart(value: Long): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

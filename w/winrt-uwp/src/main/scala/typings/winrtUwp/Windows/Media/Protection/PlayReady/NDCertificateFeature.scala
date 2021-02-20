@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NDCertificateFeature extends js.Object
+sealed trait NDCertificateFeature extends StObject
 /** Indicates the PlayReady-ND feature to which the certificate controls access. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDCertificateFeature")
 @js.native
-object NDCertificateFeature extends js.Object {
+object NDCertificateFeature extends StObject {
   
   /** Device implements anti-rollback clock. */
   @js.native

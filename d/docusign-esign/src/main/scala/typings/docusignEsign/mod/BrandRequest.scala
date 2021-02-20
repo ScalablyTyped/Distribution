@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrandRequest extends js.Object {
+trait BrandRequest extends StObject {
   
   /**
     * The id of the brand.
@@ -21,24 +22,12 @@ object BrandRequest {
   }
   
   @scala.inline
-  implicit class BrandRequestOps[Self <: BrandRequest] (val x: Self) extends AnyVal {
+  implicit class BrandRequestMutableBuilder[Self <: BrandRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrandId(value: String): Self = StObject.set(x, "brandId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBrandId(value: String): Self = this.set("brandId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBrandId: Self = this.set("brandId", js.undefined)
+    def setBrandIdUndefined: Self = StObject.set(x, "brandId", js.undefined)
   }
 }

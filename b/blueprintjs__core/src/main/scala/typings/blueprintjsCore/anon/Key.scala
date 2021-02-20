@@ -1,11 +1,12 @@
 package typings.blueprintjsCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Key[T /* <: js.Object */] extends js.Object {
+trait Key[T /* <: js.Object */] extends StObject {
   
   var key: /* keyof T */ String = js.native
   
@@ -26,27 +27,15 @@ object Key {
   }
   
   @scala.inline
-  implicit class KeyOps[Self <: Key[_], T /* <: js.Object */] (val x: Self with Key[T]) extends AnyVal {
+  implicit class KeyMutableBuilder[Self <: Key[_], T /* <: js.Object */] (val x: Self with Key[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: /* keyof T */ String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueA(value: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any): Self = StObject.set(x, "valueA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKey(value: /* keyof T */ String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueA(value: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any): Self = this.set("valueA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueB(value: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any): Self = this.set("valueB", value.asInstanceOf[js.Any])
+    def setValueB(value: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any): Self = StObject.set(x, "valueB", value.asInstanceOf[js.Any])
   }
 }

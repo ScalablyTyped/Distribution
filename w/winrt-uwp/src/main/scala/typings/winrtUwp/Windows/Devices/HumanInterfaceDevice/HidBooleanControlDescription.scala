@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a Boolean control for a given HID device. */
 @js.native
-trait HidBooleanControlDescription extends js.Object {
+trait HidBooleanControlDescription extends StObject {
   
   /** Retrieves the identifier for a given Boolean control. */
   var id: Double = js.native
@@ -43,36 +44,24 @@ object HidBooleanControlDescription {
   }
   
   @scala.inline
-  implicit class HidBooleanControlDescriptionOps[Self <: HidBooleanControlDescription] (val x: Self) extends AnyVal {
+  implicit class HidBooleanControlDescriptionMutableBuilder[Self <: HidBooleanControlDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParentCollections(value: IVectorView[HidCollection]): Self = StObject.set(x, "parentCollections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportId(value: Double): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setReportType(value: HidReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentCollections(value: IVectorView[HidCollection]): Self = this.set("parentCollections", value.asInstanceOf[js.Any])
+    def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportId(value: Double): Self = this.set("reportId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReportType(value: HidReportType): Self = this.set("reportType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsageId(value: Double): Self = this.set("usageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsagePage(value: Double): Self = this.set("usagePage", value.asInstanceOf[js.Any])
+    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
   }
 }

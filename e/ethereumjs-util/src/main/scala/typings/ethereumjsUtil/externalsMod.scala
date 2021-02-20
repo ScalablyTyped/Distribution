@@ -9,14 +9,14 @@ import typings.node.Buffer
 import typings.rlp.typesMod.Decoded
 import typings.rlp.typesMod.Input
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ethereumjs-util/dist/externals", JSImport.Namespace)
-@js.native
-object externalsMod extends js.Object {
+object externalsMod {
   
+  @JSImport("ethereumjs-util/dist/externals", "BN")
   @js.native
   class BN protected () extends ^ {
     def this(number: String) = this()
@@ -62,49 +62,79 @@ object externalsMod extends js.Object {
     def this(number: Uint8Array, base: Double, endian: Endianness) = this()
     def this(number: Uint8Array, base: hex, endian: Endianness) = this()
   }
-  /* static members */
-  @js.native
-  object BN extends js.Object {
+  object BN {
     
     /**
       * @description returns true if the supplied object is a BN.js instance
       */
+    /* static member */
+    @JSImport("ethereumjs-util/dist/externals", "BN.isBN")
+    @js.native
     def isBN(b: js.Any): /* is bn.js.bn.js.BN */ Boolean = js.native
     
     /**
       * @description returns the maximum of 2 BN instances.
       */
+    /* static member */
+    @JSImport("ethereumjs-util/dist/externals", "BN.max")
+    @js.native
     def max(left: typings.bnJs.mod.BN, right: typings.bnJs.mod.BN): typings.bnJs.mod.BN = js.native
     
     /**
       * @description returns the minimum of 2 BN instances.
       */
+    /* static member */
+    @JSImport("ethereumjs-util/dist/externals", "BN.min")
+    @js.native
     def min(left: typings.bnJs.mod.BN, right: typings.bnJs.mod.BN): typings.bnJs.mod.BN = js.native
     
     /**
       * @description  create a reduction context  with the Montgomery trick.
       */
+    /* static member */
+    @JSImport("ethereumjs-util/dist/externals", "BN.mont")
+    @js.native
     def mont(num: typings.bnJs.mod.BN): ReductionContext = js.native
     
     /**
       * @description  create a reduction context
       */
+    /* static member */
+    @JSImport("ethereumjs-util/dist/externals", "BN.red")
+    @js.native
     def red(reductionContext: typings.bnJs.mod.BN): ReductionContext = js.native
+    @JSImport("ethereumjs-util/dist/externals", "BN.red")
+    @js.native
     def red(reductionContext: IPrimeName): ReductionContext = js.native
   }
   
-  @js.native
-  object rlp extends js.Object {
+  object rlp {
     
+    @JSImport("ethereumjs-util/dist/externals", "rlp.decode")
+    @js.native
     def decode(input: js.Array[Buffer]): js.Array[Buffer] = js.native
+    @JSImport("ethereumjs-util/dist/externals", "rlp.decode")
+    @js.native
     def decode(input: js.Array[Buffer], stream: Boolean): js.Array[Buffer] = js.native
+    @JSImport("ethereumjs-util/dist/externals", "rlp.decode")
+    @js.native
     def decode(input: Buffer): Buffer = js.native
+    @JSImport("ethereumjs-util/dist/externals", "rlp.decode")
+    @js.native
     def decode(input: Buffer, stream: Boolean): Buffer = js.native
+    @JSImport("ethereumjs-util/dist/externals", "rlp.decode")
+    @js.native
     def decode(input: Input): js.Array[Buffer] | Buffer | Decoded = js.native
+    @JSImport("ethereumjs-util/dist/externals", "rlp.decode")
+    @js.native
     def decode(input: Input, stream: Boolean): js.Array[Buffer] | Buffer | Decoded = js.native
     
+    @JSImport("ethereumjs-util/dist/externals", "rlp.encode")
+    @js.native
     def encode(input: Input): Buffer = js.native
     
+    @JSImport("ethereumjs-util/dist/externals", "rlp.getLength")
+    @js.native
     def getLength(input: Input): Buffer | Double = js.native
   }
 }

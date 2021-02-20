@@ -1,11 +1,12 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LivePlayerContext extends js.Object {
+trait LivePlayerContext extends StObject {
   
   /** 退出全屏 */
   def exitFullScreen(options: BaseOptions[_, _]): Unit = js.native
@@ -45,39 +46,27 @@ object LivePlayerContext {
   }
   
   @scala.inline
-  implicit class LivePlayerContextOps[Self <: LivePlayerContext] (val x: Self) extends AnyVal {
+  implicit class LivePlayerContextMutableBuilder[Self <: LivePlayerContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExitFullScreen(value: BaseOptions[_, _] => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMute(value: BaseOptions[_, _] => Unit): Self = StObject.set(x, "mute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPause(value: BaseOptions[_, _] => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExitFullScreen(value: BaseOptions[_, _] => Unit): Self = this.set("exitFullScreen", js.Any.fromFunction1(value))
+    def setPlay(value: BaseOptions[_, _] => Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMute(value: BaseOptions[_, _] => Unit): Self = this.set("mute", js.Any.fromFunction1(value))
+    def setRequestFullScreen(value: RequestFullScreenOptions => Unit): Self = StObject.set(x, "requestFullScreen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPause(value: BaseOptions[_, _] => Unit): Self = this.set("pause", js.Any.fromFunction1(value))
+    def setResume(value: BaseOptions[_, _] => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlay(value: BaseOptions[_, _] => Unit): Self = this.set("play", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequestFullScreen(value: RequestFullScreenOptions => Unit): Self = this.set("requestFullScreen", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResume(value: BaseOptions[_, _] => Unit): Self = this.set("resume", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStop(value: BaseOptions[_, _] => Unit): Self = this.set("stop", js.Any.fromFunction1(value))
+    def setStop(value: BaseOptions[_, _] => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
   }
 }

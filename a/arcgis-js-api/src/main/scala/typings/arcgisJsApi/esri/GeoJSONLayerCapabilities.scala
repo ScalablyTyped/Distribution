@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,33 +63,21 @@ object GeoJSONLayerCapabilities {
   }
   
   @scala.inline
-  implicit class GeoJSONLayerCapabilitiesOps[Self <: GeoJSONLayerCapabilities] (val x: Self) extends AnyVal {
+  implicit class GeoJSONLayerCapabilitiesMutableBuilder[Self <: GeoJSONLayerCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: GeoJSONLayerCapabilitiesData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditing(value: GeoJSONLayerCapabilitiesEditing): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperations(value: GeoJSONLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: GeoJSONLayerCapabilitiesData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setQuery(value: GeoJSONLayerCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditing(value: GeoJSONLayerCapabilitiesEditing): Self = this.set("editing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperations(value: GeoJSONLayerCapabilitiesOperations): Self = this.set("operations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: GeoJSONLayerCapabilitiesQuery): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryRelated(value: GeoJSONLayerCapabilitiesQueryRelated): Self = this.set("queryRelated", value.asInstanceOf[js.Any])
+    def setQueryRelated(value: GeoJSONLayerCapabilitiesQueryRelated): Self = StObject.set(x, "queryRelated", value.asInstanceOf[js.Any])
   }
 }

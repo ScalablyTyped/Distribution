@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListApprovalRuleTemplatesOutput extends js.Object {
+trait ListApprovalRuleTemplatesOutput extends StObject {
   
   /**
     * The names of all the approval rule templates found in the AWS Region for your AWS account.
@@ -26,33 +27,21 @@ object ListApprovalRuleTemplatesOutput {
   }
   
   @scala.inline
-  implicit class ListApprovalRuleTemplatesOutputOps[Self <: ListApprovalRuleTemplatesOutput] (val x: Self) extends AnyVal {
+  implicit class ListApprovalRuleTemplatesOutputMutableBuilder[Self <: ListApprovalRuleTemplatesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalRuleTemplateNames(value: ApprovalRuleTemplateNameList): Self = StObject.set(x, "approvalRuleTemplateNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalRuleTemplateNamesUndefined: Self = StObject.set(x, "approvalRuleTemplateNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApprovalRuleTemplateNamesVarargs(value: ApprovalRuleTemplateName*): Self = StObject.set(x, "approvalRuleTemplateNames", js.Array(value :_*))
     
     @scala.inline
-    def setApprovalRuleTemplateNamesVarargs(value: ApprovalRuleTemplateName*): Self = this.set("approvalRuleTemplateNames", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalRuleTemplateNames(value: ApprovalRuleTemplateNameList): Self = this.set("approvalRuleTemplateNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApprovalRuleTemplateNames: Self = this.set("approvalRuleTemplateNames", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

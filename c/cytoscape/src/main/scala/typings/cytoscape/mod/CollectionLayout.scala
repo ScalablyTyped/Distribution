@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/layout
   */
 @js.native
-trait CollectionLayout extends js.Object {
+trait CollectionLayout extends StObject {
   
   def createLayout(options: LayoutOptions): Layouts = js.native
   
@@ -39,27 +40,15 @@ object CollectionLayout {
   }
   
   @scala.inline
-  implicit class CollectionLayoutOps[Self <: CollectionLayout] (val x: Self) extends AnyVal {
+  implicit class CollectionLayoutMutableBuilder[Self <: CollectionLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateLayout(value: LayoutOptions => Layouts): Self = StObject.set(x, "createLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayout(value: LayoutOptions => Layouts): Self = StObject.set(x, "layout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateLayout(value: LayoutOptions => Layouts): Self = this.set("createLayout", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLayout(value: LayoutOptions => Layouts): Self = this.set("layout", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMakeLayout(value: LayoutOptions => Layouts): Self = this.set("makeLayout", js.Any.fromFunction1(value))
+    def setMakeLayout(value: LayoutOptions => Layouts): Self = StObject.set(x, "makeLayout", js.Any.fromFunction1(value))
   }
 }

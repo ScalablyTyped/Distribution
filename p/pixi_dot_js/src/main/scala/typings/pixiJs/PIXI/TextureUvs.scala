@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait TextureUvs extends js.Object {
+trait TextureUvs extends StObject {
   
   /**
     * Sets the texture Uvs based on the given frame information.
@@ -108,45 +109,33 @@ object TextureUvs {
   }
   
   @scala.inline
-  implicit class TextureUvsOps[Self <: TextureUvs] (val x: Self) extends AnyVal {
+  implicit class TextureUvsMutableBuilder[Self <: TextureUvs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSet(value: (Rectangle, Rectangle, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: (Rectangle, Rectangle, Double) => Unit): Self = this.set("set", js.Any.fromFunction3(value))
+    def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX0(value: Double): Self = this.set("x0", value.asInstanceOf[js.Any])
+    def setX3(value: Double): Self = StObject.set(x, "x3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX1(value: Double): Self = this.set("x1", value.asInstanceOf[js.Any])
+    def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX2(value: Double): Self = this.set("x2", value.asInstanceOf[js.Any])
+    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX3(value: Double): Self = this.set("x3", value.asInstanceOf[js.Any])
+    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY0(value: Double): Self = this.set("y0", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY1(value: Double): Self = this.set("y1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY2(value: Double): Self = this.set("y2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY3(value: Double): Self = this.set("y3", value.asInstanceOf[js.Any])
+    def setY3(value: Double): Self = StObject.set(x, "y3", value.asInstanceOf[js.Any])
   }
 }

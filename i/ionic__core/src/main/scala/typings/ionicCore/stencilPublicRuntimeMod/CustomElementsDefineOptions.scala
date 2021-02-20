@@ -5,12 +5,13 @@ import typings.std.CustomEvent
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.EventTarget
 import typings.std.FrameRequestCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomElementsDefineOptions extends js.Object {
+trait CustomElementsDefineOptions extends StObject {
   
   var ael: js.UndefOr[
     js.Function4[
@@ -57,79 +58,67 @@ object CustomElementsDefineOptions {
   }
   
   @scala.inline
-  implicit class CustomElementsDefineOptionsOps[Self <: CustomElementsDefineOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class CustomElementsDefineOptionsMutableBuilder[Self <: CustomElementsDefineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAel(
       value: (/* el */ EventTarget, /* eventName */ String, /* listener */ EventListenerOrEventListenerObject, /* options */ Boolean | AddEventListenerOptions) => Unit
-    ): Self = this.set("ael", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "ael", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteAel: Self = this.set("ael", js.undefined)
+    def setAelUndefined: Self = StObject.set(x, "ael", js.undefined)
     
     @scala.inline
-    def setCe(value: (/* eventName */ String, /* opts */ js.UndefOr[js.Any]) => CustomEvent[_]): Self = this.set("ce", js.Any.fromFunction2(value))
+    def setCe(value: (/* eventName */ String, /* opts */ js.UndefOr[js.Any]) => CustomEvent[_]): Self = StObject.set(x, "ce", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteCe: Self = this.set("ce", js.undefined)
+    def setCeUndefined: Self = StObject.set(x, "ce", js.undefined)
     
     @scala.inline
-    def setExcludeVarargs(value: String*): Self = this.set("exclude", js.Array(value :_*))
+    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: js.Array[String]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setJmp(value: /* c */ js.Function => _): Self = this.set("jmp", js.Any.fromFunction1(value))
+    def setJmp(value: /* c */ js.Function => _): Self = StObject.set(x, "jmp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteJmp: Self = this.set("jmp", js.undefined)
+    def setJmpUndefined: Self = StObject.set(x, "jmp", js.undefined)
     
     @scala.inline
-    def setRaf(value: /* c */ FrameRequestCallback => Double): Self = this.set("raf", js.Any.fromFunction1(value))
+    def setRaf(value: /* c */ FrameRequestCallback => Double): Self = StObject.set(x, "raf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRaf: Self = this.set("raf", js.undefined)
+    def setRafUndefined: Self = StObject.set(x, "raf", js.undefined)
     
     @scala.inline
     def setRel(
       value: (/* el */ EventTarget, /* eventName */ String, /* listener */ EventListenerOrEventListenerObject, /* options */ Boolean | AddEventListenerOptions) => Unit
-    ): Self = this.set("rel", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "rel", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteRel: Self = this.set("rel", js.undefined)
+    def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     @scala.inline
-    def setResourcesUrl(value: String): Self = this.set("resourcesUrl", value.asInstanceOf[js.Any])
+    def setResourcesUrl(value: String): Self = StObject.set(x, "resourcesUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourcesUrl: Self = this.set("resourcesUrl", js.undefined)
+    def setResourcesUrlUndefined: Self = StObject.set(x, "resourcesUrl", js.undefined)
     
     @scala.inline
-    def setSyncQueue(value: Boolean): Self = this.set("syncQueue", value.asInstanceOf[js.Any])
+    def setSyncQueue(value: Boolean): Self = StObject.set(x, "syncQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSyncQueue: Self = this.set("syncQueue", js.undefined)
+    def setSyncQueueUndefined: Self = StObject.set(x, "syncQueue", js.undefined)
     
     @scala.inline
-    def setTransformTagName(value: /* tagName */ String => String): Self = this.set("transformTagName", js.Any.fromFunction1(value))
+    def setTransformTagName(value: /* tagName */ String => String): Self = StObject.set(x, "transformTagName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTransformTagName: Self = this.set("transformTagName", js.undefined)
+    def setTransformTagNameUndefined: Self = StObject.set(x, "transformTagName", js.undefined)
   }
 }

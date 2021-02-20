@@ -13,14 +13,14 @@ import typings.jupyterlabServices.messagesMod.MessageType
 import typings.jupyterlabServices.messagesMod.Status
 import typings.jupyterlabServices.restapiMod.ISpecModel
 import typings.luminoSignaling.mod.ISignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/services/lib/kernel/default", JSImport.Namespace)
-@js.native
-object defaultMod extends js.Object {
+object defaultMod {
   
+  @JSImport("@jupyterlab/services/lib/kernel/default", "KernelConnection")
   @js.native
   class KernelConnection protected () extends IKernelConnection {
     /**

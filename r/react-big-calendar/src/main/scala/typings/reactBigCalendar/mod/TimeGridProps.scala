@@ -5,12 +5,13 @@ import typings.reactBigCalendar.anon.Action
 import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
 import typings.std.Date
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeGridProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends js.Object {
+trait TimeGridProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends StObject {
   
   var accessors: js.UndefOr[js.Object] = js.native
   
@@ -92,209 +93,197 @@ object TimeGridProps {
   }
   
   @scala.inline
-  implicit class TimeGridPropsOps[Self <: TimeGridProps[_, _], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self with (TimeGridProps[TEvent, TResource])) extends AnyVal {
+  implicit class TimeGridPropsMutableBuilder[Self <: TimeGridProps[_, _], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self with (TimeGridProps[TEvent, TResource])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessors(value: js.Object): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessorsUndefined: Self = StObject.set(x, "accessors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponents(value: js.Object): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventOffset(value: Double): Self = this.set("eventOffset", value.asInstanceOf[js.Any])
+    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     @scala.inline
-    def setAccessors(value: js.Object): Self = this.set("accessors", value.asInstanceOf[js.Any])
+    def setDayLayoutAlgorithm(value: js.Any): Self = StObject.set(x, "dayLayoutAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessors: Self = this.set("accessors", js.undefined)
+    def setDayLayoutAlgorithmUndefined: Self = StObject.set(x, "dayLayoutAlgorithm", js.undefined)
     
     @scala.inline
-    def setComponents(value: js.Object): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setEventOffset(value: Double): Self = StObject.set(x, "eventOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComponents: Self = this.set("components", js.undefined)
+    def setEvents(value: js.Array[TEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayLayoutAlgorithm(value: js.Any): Self = this.set("dayLayoutAlgorithm", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteDayLayoutAlgorithm: Self = this.set("dayLayoutAlgorithm", js.undefined)
-    
-    @scala.inline
-    def setEventsVarargs(value: TEvent*): Self = this.set("events", js.Array(value :_*))
-    
-    @scala.inline
-    def setEvents(value: js.Array[TEvent]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setEventsVarargs(value: TEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
     def setGetDrilldownView(
       value: (/* targetDate */ Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => Unit
-    ): Self = this.set("getDrilldownView", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "getDrilldownView", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteGetDrilldownView: Self = this.set("getDrilldownView", js.undefined)
+    def setGetDrilldownViewNull: Self = StObject.set(x, "getDrilldownView", null)
     
     @scala.inline
-    def setGetDrilldownViewNull: Self = this.set("getDrilldownView", null)
+    def setGetDrilldownViewUndefined: Self = StObject.set(x, "getDrilldownView", js.undefined)
     
     @scala.inline
-    def setGetNow(value: () => Date): Self = this.set("getNow", js.Any.fromFunction0(value))
+    def setGetNow(value: () => Date): Self = StObject.set(x, "getNow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetNow: Self = this.set("getNow", js.undefined)
+    def setGetNowUndefined: Self = StObject.set(x, "getNow", js.undefined)
     
     @scala.inline
-    def setGetters(value: js.Object): Self = this.set("getters", value.asInstanceOf[js.Any])
+    def setGetters(value: js.Object): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetters: Self = this.set("getters", js.undefined)
+    def setGettersUndefined: Self = StObject.set(x, "getters", js.undefined)
     
     @scala.inline
-    def setLocalizer(value: js.Object): Self = this.set("localizer", value.asInstanceOf[js.Any])
+    def setLocalizer(value: js.Object): Self = StObject.set(x, "localizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocalizer: Self = this.set("localizer", js.undefined)
+    def setLocalizerUndefined: Self = StObject.set(x, "localizer", js.undefined)
     
     @scala.inline
-    def setLongPressThreshold(value: Double): Self = this.set("longPressThreshold", value.asInstanceOf[js.Any])
+    def setLongPressThreshold(value: Double): Self = StObject.set(x, "longPressThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLongPressThreshold: Self = this.set("longPressThreshold", js.undefined)
+    def setLongPressThresholdUndefined: Self = StObject.set(x, "longPressThreshold", js.undefined)
     
     @scala.inline
-    def setMax(value: stringOrDate): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMax(value: stringOrDate): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setMin(value: stringOrDate): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMin(value: stringOrDate): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setOnDoubleClickEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = this.set("onDoubleClickEvent", js.Any.fromFunction2(value))
+    def setOnDoubleClickEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = StObject.set(x, "onDoubleClickEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnDoubleClickEvent: Self = this.set("onDoubleClickEvent", js.undefined)
+    def setOnDoubleClickEventUndefined: Self = StObject.set(x, "onDoubleClickEvent", js.undefined)
     
     @scala.inline
-    def setOnDrillDown(value: (/* date */ Date, /* view */ View) => Unit): Self = this.set("onDrillDown", js.Any.fromFunction2(value))
+    def setOnDrillDown(value: (/* date */ Date, /* view */ View) => Unit): Self = StObject.set(x, "onDrillDown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnDrillDown: Self = this.set("onDrillDown", js.undefined)
+    def setOnDrillDownUndefined: Self = StObject.set(x, "onDrillDown", js.undefined)
     
     @scala.inline
-    def setOnKeyPressEvent(value: /* repeated */ js.Any => _): Self = this.set("onKeyPressEvent", js.Any.fromFunction1(value))
+    def setOnKeyPressEvent(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onKeyPressEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnKeyPressEvent: Self = this.set("onKeyPressEvent", js.undefined)
+    def setOnKeyPressEventUndefined: Self = StObject.set(x, "onKeyPressEvent", js.undefined)
     
     @scala.inline
-    def setOnNavigate(value: /* action */ NavigateAction => Unit): Self = this.set("onNavigate", js.Any.fromFunction1(value))
+    def setOnNavigate(value: /* action */ NavigateAction => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnNavigate: Self = this.set("onNavigate", js.undefined)
+    def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
     
     @scala.inline
-    def setOnSelectEnd(value: /* repeated */ js.Any => _): Self = this.set("onSelectEnd", js.Any.fromFunction1(value))
+    def setOnSelectEnd(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onSelectEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnSelectEnd: Self = this.set("onSelectEnd", js.undefined)
+    def setOnSelectEndUndefined: Self = StObject.set(x, "onSelectEnd", js.undefined)
     
     @scala.inline
-    def setOnSelectEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = this.set("onSelectEvent", js.Any.fromFunction2(value))
+    def setOnSelectEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = StObject.set(x, "onSelectEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnSelectEvent: Self = this.set("onSelectEvent", js.undefined)
+    def setOnSelectEventUndefined: Self = StObject.set(x, "onSelectEvent", js.undefined)
     
     @scala.inline
-    def setOnSelectSlot(value: /* slotInfo */ Action => Unit): Self = this.set("onSelectSlot", js.Any.fromFunction1(value))
+    def setOnSelectSlot(value: /* slotInfo */ Action => Unit): Self = StObject.set(x, "onSelectSlot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnSelectSlot: Self = this.set("onSelectSlot", js.undefined)
+    def setOnSelectSlotUndefined: Self = StObject.set(x, "onSelectSlot", js.undefined)
     
     @scala.inline
-    def setOnSelectStart(value: /* repeated */ js.Any => _): Self = this.set("onSelectStart", js.Any.fromFunction1(value))
+    def setOnSelectStart(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onSelectStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnSelectStart: Self = this.set("onSelectStart", js.undefined)
+    def setOnSelectStartUndefined: Self = StObject.set(x, "onSelectStart", js.undefined)
     
     @scala.inline
-    def setRangeVarargs(value: js.Any*): Self = this.set("range", js.Array(value :_*))
+    def setRange(value: js.Array[_]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: js.Array[_]): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeVarargs(value: js.Any*): Self = StObject.set(x, "range", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: TResource*): Self = this.set("resources", js.Array(value :_*))
+    def setResources(value: js.Array[TResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[TResource]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
+    def setResourcesVarargs(value: TResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setRtl(value: Boolean): Self = this.set("rtl", value.asInstanceOf[js.Any])
+    def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRtl: Self = this.set("rtl", js.undefined)
+    def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
     
     @scala.inline
-    def setScrollToTime(value: Date): Self = this.set("scrollToTime", value.asInstanceOf[js.Any])
+    def setScrollToTime(value: Date): Self = StObject.set(x, "scrollToTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollToTime: Self = this.set("scrollToTime", js.undefined)
+    def setScrollToTimeUndefined: Self = StObject.set(x, "scrollToTime", js.undefined)
     
     @scala.inline
-    def setSelectable(value: Boolean | ignoreEvents): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setSelectable(value: Boolean | ignoreEvents): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     @scala.inline
-    def setSelected(value: js.Object): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelected(value: js.Object): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def setShowMultiDayTimes(value: Boolean): Self = this.set("showMultiDayTimes", value.asInstanceOf[js.Any])
+    def setShowMultiDayTimes(value: Boolean): Self = StObject.set(x, "showMultiDayTimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowMultiDayTimes: Self = this.set("showMultiDayTimes", js.undefined)
+    def setShowMultiDayTimesUndefined: Self = StObject.set(x, "showMultiDayTimes", js.undefined)
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def setTimeslots(value: Double): Self = this.set("timeslots", value.asInstanceOf[js.Any])
+    def setTimeslots(value: Double): Self = StObject.set(x, "timeslots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeslots: Self = this.set("timeslots", js.undefined)
+    def setTimeslotsUndefined: Self = StObject.set(x, "timeslots", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

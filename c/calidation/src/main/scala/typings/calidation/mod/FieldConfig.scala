@@ -1,11 +1,12 @@
 package typings.calidation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldConfig[T /* <: js.Object */] extends js.Object {
+trait FieldConfig[T /* <: js.Object */] extends StObject {
   
   var isBlacklisted: js.UndefOr[BlacklistValidator[T]] = js.native
   
@@ -40,126 +41,114 @@ object FieldConfig {
   }
   
   @scala.inline
-  implicit class FieldConfigOps[Self <: FieldConfig[_], T /* <: js.Object */] (val x: Self with FieldConfig[T]) extends AnyVal {
+  implicit class FieldConfigMutableBuilder[Self <: FieldConfig[_], T /* <: js.Object */] (val x: Self with FieldConfig[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsBlacklisted(value: BlacklistValidator[T]): Self = StObject.set(x, "isBlacklisted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsBlacklistedFunction1(value: /* context */ ValidatorContext[T] => BlacklistValidatorConfig[T]): Self = StObject.set(x, "isBlacklisted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsBlacklistedUndefined: Self = StObject.set(x, "isBlacklisted", js.undefined)
     
     @scala.inline
-    def setIsBlacklistedFunction1(value: /* context */ ValidatorContext[T] => BlacklistValidatorConfig[T]): Self = this.set("isBlacklisted", js.Any.fromFunction1(value))
+    def setIsEmail(value: SimpleValidator[T]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBlacklisted(value: BlacklistValidator[T]): Self = this.set("isBlacklisted", value.asInstanceOf[js.Any])
+    def setIsEmailFunction1(value: /* context */ ValidatorContext[T] => SimpleValidatorConfig[T]): Self = StObject.set(x, "isEmail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsBlacklisted: Self = this.set("isBlacklisted", js.undefined)
+    def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
     
     @scala.inline
-    def setIsEmailFunction1(value: /* context */ ValidatorContext[T] => SimpleValidatorConfig[T]): Self = this.set("isEmail", js.Any.fromFunction1(value))
+    def setIsEqual(value: ValueValidator[_, T]): Self = StObject.set(x, "isEqual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEmail(value: SimpleValidator[T]): Self = this.set("isEmail", value.asInstanceOf[js.Any])
+    def setIsEqualFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[_, T]): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsEmail: Self = this.set("isEmail", js.undefined)
+    def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
     
     @scala.inline
-    def setIsEqualFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[_, T]): Self = this.set("isEqual", js.Any.fromFunction1(value))
+    def setIsExactLength(value: LengthValidator[T]): Self = StObject.set(x, "isExactLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEqual(value: ValueValidator[_, T]): Self = this.set("isEqual", value.asInstanceOf[js.Any])
+    def setIsExactLengthFunction1(value: /* context */ ValidatorContext[T] => LengthValidatorConfig[T]): Self = StObject.set(x, "isExactLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsEqual: Self = this.set("isEqual", js.undefined)
+    def setIsExactLengthUndefined: Self = StObject.set(x, "isExactLength", js.undefined)
     
     @scala.inline
-    def setIsExactLengthFunction1(value: /* context */ ValidatorContext[T] => LengthValidatorConfig[T]): Self = this.set("isExactLength", js.Any.fromFunction1(value))
+    def setIsGreaterThan(value: ValueValidator[Double, T]): Self = StObject.set(x, "isGreaterThan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExactLength(value: LengthValidator[T]): Self = this.set("isExactLength", value.asInstanceOf[js.Any])
+    def setIsGreaterThanFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[Double, T]): Self = StObject.set(x, "isGreaterThan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsExactLength: Self = this.set("isExactLength", js.undefined)
+    def setIsGreaterThanUndefined: Self = StObject.set(x, "isGreaterThan", js.undefined)
     
     @scala.inline
-    def setIsGreaterThanFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[Double, T]): Self = this.set("isGreaterThan", js.Any.fromFunction1(value))
+    def setIsLessThan(value: ValueValidator[Double, T]): Self = StObject.set(x, "isLessThan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGreaterThan(value: ValueValidator[Double, T]): Self = this.set("isGreaterThan", value.asInstanceOf[js.Any])
+    def setIsLessThanFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[Double, T]): Self = StObject.set(x, "isLessThan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsGreaterThan: Self = this.set("isGreaterThan", js.undefined)
+    def setIsLessThanUndefined: Self = StObject.set(x, "isLessThan", js.undefined)
     
     @scala.inline
-    def setIsLessThanFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[Double, T]): Self = this.set("isLessThan", js.Any.fromFunction1(value))
+    def setIsMaxLength(value: LengthValidator[T]): Self = StObject.set(x, "isMaxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLessThan(value: ValueValidator[Double, T]): Self = this.set("isLessThan", value.asInstanceOf[js.Any])
+    def setIsMaxLengthFunction1(value: /* context */ ValidatorContext[T] => LengthValidatorConfig[T]): Self = StObject.set(x, "isMaxLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsLessThan: Self = this.set("isLessThan", js.undefined)
+    def setIsMaxLengthUndefined: Self = StObject.set(x, "isMaxLength", js.undefined)
     
     @scala.inline
-    def setIsMaxLengthFunction1(value: /* context */ ValidatorContext[T] => LengthValidatorConfig[T]): Self = this.set("isMaxLength", js.Any.fromFunction1(value))
+    def setIsMinLength(value: LengthValidator[T]): Self = StObject.set(x, "isMinLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMaxLength(value: LengthValidator[T]): Self = this.set("isMaxLength", value.asInstanceOf[js.Any])
+    def setIsMinLengthFunction1(value: /* context */ ValidatorContext[T] => LengthValidatorConfig[T]): Self = StObject.set(x, "isMinLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsMaxLength: Self = this.set("isMaxLength", js.undefined)
+    def setIsMinLengthUndefined: Self = StObject.set(x, "isMinLength", js.undefined)
     
     @scala.inline
-    def setIsMinLengthFunction1(value: /* context */ ValidatorContext[T] => LengthValidatorConfig[T]): Self = this.set("isMinLength", js.Any.fromFunction1(value))
+    def setIsNumber(value: SimpleValidator[T]): Self = StObject.set(x, "isNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMinLength(value: LengthValidator[T]): Self = this.set("isMinLength", value.asInstanceOf[js.Any])
+    def setIsNumberFunction1(value: /* context */ ValidatorContext[T] => SimpleValidatorConfig[T]): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsMinLength: Self = this.set("isMinLength", js.undefined)
+    def setIsNumberUndefined: Self = StObject.set(x, "isNumber", js.undefined)
     
     @scala.inline
-    def setIsNumberFunction1(value: /* context */ ValidatorContext[T] => SimpleValidatorConfig[T]): Self = this.set("isNumber", js.Any.fromFunction1(value))
+    def setIsRegexMatch(value: RegexValidator[T]): Self = StObject.set(x, "isRegexMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNumber(value: SimpleValidator[T]): Self = this.set("isNumber", value.asInstanceOf[js.Any])
+    def setIsRegexMatchFunction1(value: /* context */ ValidatorContext[T] => RegexValidatorConfig[T]): Self = StObject.set(x, "isRegexMatch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsNumber: Self = this.set("isNumber", js.undefined)
+    def setIsRegexMatchUndefined: Self = StObject.set(x, "isRegexMatch", js.undefined)
     
     @scala.inline
-    def setIsRegexMatchFunction1(value: /* context */ ValidatorContext[T] => RegexValidatorConfig[T]): Self = this.set("isRegexMatch", js.Any.fromFunction1(value))
+    def setIsRequired(value: SimpleValidator[T]): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRegexMatch(value: RegexValidator[T]): Self = this.set("isRegexMatch", value.asInstanceOf[js.Any])
+    def setIsRequiredFunction1(value: /* context */ ValidatorContext[T] => SimpleValidatorConfig[T]): Self = StObject.set(x, "isRequired", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsRegexMatch: Self = this.set("isRegexMatch", js.undefined)
+    def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
     
     @scala.inline
-    def setIsRequiredFunction1(value: /* context */ ValidatorContext[T] => SimpleValidatorConfig[T]): Self = this.set("isRequired", js.Any.fromFunction1(value))
+    def setIsWhitelisted(value: WhitelistValidator[T]): Self = StObject.set(x, "isWhitelisted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRequired(value: SimpleValidator[T]): Self = this.set("isRequired", value.asInstanceOf[js.Any])
+    def setIsWhitelistedFunction1(value: /* context */ ValidatorContext[T] => RegexValidatorConfig[T]): Self = StObject.set(x, "isWhitelisted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsRequired: Self = this.set("isRequired", js.undefined)
-    
-    @scala.inline
-    def setIsWhitelistedFunction1(value: /* context */ ValidatorContext[T] => RegexValidatorConfig[T]): Self = this.set("isWhitelisted", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsWhitelisted(value: WhitelistValidator[T]): Self = this.set("isWhitelisted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsWhitelisted: Self = this.set("isWhitelisted", js.undefined)
+    def setIsWhitelistedUndefined: Self = StObject.set(x, "isWhitelisted", js.undefined)
   }
 }

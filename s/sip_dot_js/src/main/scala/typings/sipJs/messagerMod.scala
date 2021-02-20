@@ -4,16 +4,16 @@ import typings.sipJs.coreMod.URI
 import typings.sipJs.messagerMessageOptionsMod.MessagerMessageOptions
 import typings.sipJs.messagerOptionsMod.MessagerOptions
 import typings.sipJs.userAgentMod.UserAgent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/messager", JSImport.Namespace)
-@js.native
-object messagerMod extends js.Object {
+object messagerMod {
   
+  @JSImport("sip.js/lib/api/messager", "Messager")
   @js.native
-  class Messager protected () extends js.Object {
+  class Messager protected () extends StObject {
     /**
       * Constructs a new instance of the `Messager` class.
       * @param userAgent - User agent. See {@link UserAgent} for details.

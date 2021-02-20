@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.TSMappedType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,48 +35,36 @@ object TSMappedType_ {
   }
   
   @scala.inline
-  implicit class TSMappedType_Ops[Self <: TSMappedType_] (val x: Self) extends AnyVal {
+  implicit class TSMappedType_MutableBuilder[Self <: TSMappedType_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNameType(value: TSType): Self = StObject.set(x, "nameType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameTypeNull: Self = StObject.set(x, "nameType", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TSMappedType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setOptionalNull: Self = StObject.set(x, "optional", null)
     
     @scala.inline
-    def setTypeParameter(value: TSTypeParameter_): Self = this.set("typeParameter", value.asInstanceOf[js.Any])
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameType(value: TSType): Self = this.set("nameType", value.asInstanceOf[js.Any])
+    def setReadonlyNull: Self = StObject.set(x, "readonly", null)
     
     @scala.inline
-    def setNameTypeNull: Self = this.set("nameType", null)
+    def setType(value: TSMappedType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalNull: Self = this.set("optional", null)
+    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadonlyNull: Self = this.set("readonly", null)
-    
-    @scala.inline
-    def setTypeAnnotation(value: TSType): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeAnnotationNull: Self = this.set("typeAnnotation", null)
+    def setTypeParameter(value: TSTypeParameter_): Self = StObject.set(x, "typeParameter", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListChannelMessagesRequest extends js.Object {
+trait ListChannelMessagesRequest extends StObject {
   
   /**
     * The ARN of the channel.
@@ -46,51 +47,39 @@ object ListChannelMessagesRequest {
   }
   
   @scala.inline
-  implicit class ListChannelMessagesRequestOps[Self <: ListChannelMessagesRequest] (val x: Self) extends AnyVal {
+  implicit class ListChannelMessagesRequestMutableBuilder[Self <: ListChannelMessagesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def setChannelArn(value: ChimeArn): Self = this.set("ChannelArn", value.asInstanceOf[js.Any])
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNotAfter(value: Timestamp): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNotBefore(value: Timestamp): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAfter(value: Timestamp): Self = this.set("NotAfter", value.asInstanceOf[js.Any])
+    def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
     
     @scala.inline
-    def deleteNotAfter: Self = this.set("NotAfter", js.undefined)
+    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotBefore(value: Timestamp): Self = this.set("NotBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotBefore: Self = this.set("NotBefore", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

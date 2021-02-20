@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamicSourceSplit extends js.Object {
+trait DynamicSourceSplit extends StObject {
   
   /** Primary part (continued to be processed by worker). Specified relative to the previously-current source. Becomes current. */
   var primary: js.UndefOr[DerivedSource] = js.native
@@ -22,30 +23,18 @@ object DynamicSourceSplit {
   }
   
   @scala.inline
-  implicit class DynamicSourceSplitOps[Self <: DynamicSourceSplit] (val x: Self) extends AnyVal {
+  implicit class DynamicSourceSplitMutableBuilder[Self <: DynamicSourceSplit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrimary(value: DerivedSource): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResidual(value: DerivedSource): Self = StObject.set(x, "residual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: DerivedSource): Self = this.set("primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
-    
-    @scala.inline
-    def setResidual(value: DerivedSource): Self = this.set("residual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResidual: Self = this.set("residual", js.undefined)
+    def setResidualUndefined: Self = StObject.set(x, "residual", js.undefined)
   }
 }

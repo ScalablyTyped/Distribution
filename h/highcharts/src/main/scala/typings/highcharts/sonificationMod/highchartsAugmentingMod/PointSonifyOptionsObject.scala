@@ -1,5 +1,6 @@
 package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options for sonifying a point.
   */
 @js.native
-trait PointSonifyOptionsObject extends js.Object {
+trait PointSonifyOptionsObject extends StObject {
   
   /**
     * Optionally provide the minimum/maximum values for the points. If this
@@ -38,36 +39,24 @@ object PointSonifyOptionsObject {
   }
   
   @scala.inline
-  implicit class PointSonifyOptionsObjectOps[Self <: PointSonifyOptionsObject] (val x: Self) extends AnyVal {
+  implicit class PointSonifyOptionsObjectMutableBuilder[Self <: PointSonifyOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataExtremes(value: js.Object): Self = StObject.set(x, "dataExtremes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataExtremesUndefined: Self = StObject.set(x, "dataExtremes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstruments(value: js.Array[PointInstrumentObject]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstrumentsVarargs(value: PointInstrumentObject*): Self = this.set("instruments", js.Array(value :_*))
+    def setInstrumentsVarargs(value: PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value :_*))
     
     @scala.inline
-    def setInstruments(value: js.Array[PointInstrumentObject]): Self = this.set("instruments", value.asInstanceOf[js.Any])
+    def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataExtremes(value: js.Object): Self = this.set("dataExtremes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataExtremes: Self = this.set("dataExtremes", js.undefined)
-    
-    @scala.inline
-    def setOnEnd(value: js.Function): Self = this.set("onEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
+    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
   }
 }

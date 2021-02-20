@@ -5,33 +5,60 @@ import typings.baconjs.eventMod.Event
 import typings.baconjs.observableMod.EventStream
 import typings.baconjs.replyMod.Reply
 import typings.baconjs.typesMod.EventSink
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baconjs/types/buffer", JSImport.Namespace)
-@js.native
-object bufferMod extends js.Object {
+object bufferMod {
   
+  @JSImport("baconjs/types/buffer", "buffer")
+  @js.native
   def buffer[V](src: EventStream[V]): EventStream[js.Array[V]] = js.native
+  @JSImport("baconjs/types/buffer", "buffer")
+  @js.native
   def buffer[V](src: EventStream[V], onInput: js.UndefOr[scala.Nothing], onFlush: BufferHandler[V]): EventStream[js.Array[V]] = js.native
+  @JSImport("baconjs/types/buffer", "buffer")
+  @js.native
   def buffer[V](src: EventStream[V], onInput: BufferHandler[V]): EventStream[js.Array[V]] = js.native
+  @JSImport("baconjs/types/buffer", "buffer")
+  @js.native
   def buffer[V](src: EventStream[V], onInput: BufferHandler[V], onFlush: BufferHandler[V]): EventStream[js.Array[V]] = js.native
   
+  @JSImport("baconjs/types/buffer", "bufferWithCount")
+  @js.native
   def bufferWithCount[V](src: EventStream[V], count: Double): EventStream[js.Array[V]] = js.native
   
+  @JSImport("baconjs/types/buffer", "bufferWithTime")
+  @js.native
   def bufferWithTime[V](src: EventStream[V], delay: Double): EventStream[js.Array[V]] = js.native
+  @JSImport("baconjs/types/buffer", "bufferWithTime")
+  @js.native
   def bufferWithTime[V](src: EventStream[V], delay: DelayFunction): EventStream[js.Array[V]] = js.native
   
+  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
+  @js.native
   def bufferWithTimeOrCount[V](src: EventStream[V]): EventStream[js.Array[V]] = js.native
+  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
+  @js.native
   def bufferWithTimeOrCount[V](src: EventStream[V], delay: js.UndefOr[scala.Nothing], count: Double): EventStream[js.Array[V]] = js.native
+  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
+  @js.native
   def bufferWithTimeOrCount[V](src: EventStream[V], delay: Double): EventStream[js.Array[V]] = js.native
+  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
+  @js.native
   def bufferWithTimeOrCount[V](src: EventStream[V], delay: Double, count: Double): EventStream[js.Array[V]] = js.native
+  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
+  @js.native
   def bufferWithTimeOrCount[V](src: EventStream[V], delay: DelayFunction): EventStream[js.Array[V]] = js.native
+  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
+  @js.native
   def bufferWithTimeOrCount[V](src: EventStream[V], delay: DelayFunction, count: Double): EventStream[js.Array[V]] = js.native
   
+  type BufferHandler[V] = js.Function1[/* buffer */ Buffer_[V], js.Any]
+  
   @js.native
-  trait Buffer_[V] extends js.Object {
+  trait Buffer_[V] extends StObject {
     
     var delay: js.UndefOr[DelayFunction] = js.native
     
@@ -57,8 +84,6 @@ object bufferMod extends js.Object {
     
     var values: js.Array[V] = js.native
   }
-  
-  type BufferHandler[V] = js.Function1[/* buffer */ Buffer_[V], js.Any]
   
   type DelayFunction = js.Function1[/* f */ VoidFunction, js.Any]
   

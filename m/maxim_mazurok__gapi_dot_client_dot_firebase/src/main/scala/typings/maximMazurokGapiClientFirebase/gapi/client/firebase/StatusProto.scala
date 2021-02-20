@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatusProto extends js.Object {
+trait StatusProto extends StObject {
   
   /** The canonical error code (see codes.proto) that most closely corresponds to this status. May be missing. */
   var canonicalCode: js.UndefOr[Double] = js.native
@@ -31,48 +32,36 @@ object StatusProto {
   }
   
   @scala.inline
-  implicit class StatusProtoOps[Self <: StatusProto] (val x: Self) extends AnyVal {
+  implicit class StatusProtoMutableBuilder[Self <: StatusProto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanonicalCode(value: Double): Self = StObject.set(x, "canonicalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanonicalCodeUndefined: Self = StObject.set(x, "canonicalCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanonicalCode(value: Double): Self = this.set("canonicalCode", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def deleteCanonicalCode: Self = this.set("canonicalCode", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setMessageSet(value: js.Any): Self = StObject.set(x, "messageSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setMessageSetUndefined: Self = StObject.set(x, "messageSet", js.undefined)
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageSet(value: js.Any): Self = this.set("messageSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageSet: Self = this.set("messageSet", js.undefined)
-    
-    @scala.inline
-    def setSpace(value: String): Self = this.set("space", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpace: Self = this.set("space", js.undefined)
+    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
   }
 }

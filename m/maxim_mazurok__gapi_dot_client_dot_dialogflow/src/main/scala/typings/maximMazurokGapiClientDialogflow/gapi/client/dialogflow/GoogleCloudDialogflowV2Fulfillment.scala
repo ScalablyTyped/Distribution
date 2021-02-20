@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2Fulfillment extends js.Object {
+trait GoogleCloudDialogflowV2Fulfillment extends StObject {
   
   /** Optional. The human-readable name of the fulfillment, unique within the agent. */
   var displayName: js.UndefOr[String] = js.native
@@ -31,51 +32,39 @@ object GoogleCloudDialogflowV2Fulfillment {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2FulfillmentOps[Self <: GoogleCloudDialogflowV2Fulfillment] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2FulfillmentMutableBuilder[Self <: GoogleCloudDialogflowV2Fulfillment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setFeatures(value: js.Array[GoogleCloudDialogflowV2FulfillmentFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setFeaturesVarargs(value: GoogleCloudDialogflowV2FulfillmentFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: GoogleCloudDialogflowV2FulfillmentFeature*): Self = this.set("features", js.Array(value :_*))
+    def setGenericWebService(value: GoogleCloudDialogflowV2FulfillmentGenericWebService): Self = StObject.set(x, "genericWebService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[GoogleCloudDialogflowV2FulfillmentFeature]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setGenericWebServiceUndefined: Self = StObject.set(x, "genericWebService", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenericWebService(value: GoogleCloudDialogflowV2FulfillmentGenericWebService): Self = this.set("genericWebService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenericWebService: Self = this.set("genericWebService", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

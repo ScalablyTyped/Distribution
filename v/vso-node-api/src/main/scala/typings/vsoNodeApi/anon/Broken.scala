@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Broken extends js.Object {
+trait Broken extends StObject {
   
   var approved: scala.Double = js.native
   
@@ -35,36 +36,24 @@ object Broken {
   }
   
   @scala.inline
-  implicit class BrokenOps[Self <: Broken] (val x: Self) extends AnyVal {
+  implicit class BrokenMutableBuilder[Self <: Broken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroken(value: scala.Double): Self = StObject.set(x, "broken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotApplicable(value: scala.Double): Self = StObject.set(x, "notApplicable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproved(value: scala.Double): Self = this.set("approved", value.asInstanceOf[js.Any])
+    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroken(value: scala.Double): Self = this.set("broken", value.asInstanceOf[js.Any])
+    def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotApplicable(value: scala.Double): Self = this.set("notApplicable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueued(value: scala.Double): Self = this.set("queued", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRejected(value: scala.Double): Self = this.set("rejected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunning(value: scala.Double): Self = this.set("running", value.asInstanceOf[js.Any])
+    def setRunning(value: scala.Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
   }
 }

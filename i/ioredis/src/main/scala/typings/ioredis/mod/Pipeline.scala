@@ -20,12 +20,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import typings.std.Map
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pipeline extends js.Object {
+trait Pipeline extends StObject {
   
   def append(key: KeyType, value: ValueType): Pipeline = js.native
   def append(key: KeyType, value: ValueType, callback: Callback[Double]): Pipeline = js.native

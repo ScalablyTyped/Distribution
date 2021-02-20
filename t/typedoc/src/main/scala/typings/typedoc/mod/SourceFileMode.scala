@@ -1,12 +1,13 @@
 package typings.typedoc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "SourceFileMode")
 @js.native
-object SourceFileMode extends js.Object {
+object SourceFileMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typedoc.optionsDeclarationMod.SourceFileMode with Double] = js.native

@@ -4,16 +4,19 @@ import typings.mobx.observablearrayMod.IObservableArray
 import typings.mobxStateTree.hookMod.IHooksGetter
 import typings.mobxStateTree.typeMod.IAnyType
 import typings.mobxStateTree.typeMod.IType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-state-tree/dist/types/complex-types/array", JSImport.Namespace)
-@js.native
-object arrayMod extends js.Object {
+object arrayMod {
   
+  @JSImport("mobx-state-tree/dist/types/complex-types/array", "array")
+  @js.native
   def array[IT /* <: IAnyType */](subtype: IT): IArrayType[IT] = js.native
   
+  @JSImport("mobx-state-tree/dist/types/complex-types/array", "isArrayType")
+  @js.native
   def isArrayType[Items /* <: IAnyType */](`type`: IAnyType): /* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/array.IArrayType<Items> */ Boolean = js.native
   
   @js.native

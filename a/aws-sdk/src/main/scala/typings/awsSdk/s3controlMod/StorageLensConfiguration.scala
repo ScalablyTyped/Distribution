@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageLensConfiguration extends js.Object {
+trait StorageLensConfiguration extends StObject {
   
   /**
     * A container for all the account-level configurations of your S3 Storage Lens configuration.
@@ -56,57 +57,45 @@ object StorageLensConfiguration {
   }
   
   @scala.inline
-  implicit class StorageLensConfigurationOps[Self <: StorageLensConfiguration] (val x: Self) extends AnyVal {
+  implicit class StorageLensConfigurationMutableBuilder[Self <: StorageLensConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountLevel(value: AccountLevel): Self = StObject.set(x, "AccountLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsOrg(value: StorageLensAwsOrg): Self = StObject.set(x, "AwsOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsOrgUndefined: Self = StObject.set(x, "AwsOrg", js.undefined)
     
     @scala.inline
-    def setAccountLevel(value: AccountLevel): Self = this.set("AccountLevel", value.asInstanceOf[js.Any])
+    def setDataExport(value: StorageLensDataExport): Self = StObject.set(x, "DataExport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ConfigId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setDataExportUndefined: Self = StObject.set(x, "DataExport", js.undefined)
     
     @scala.inline
-    def setIsEnabled(value: IsEnabled): Self = this.set("IsEnabled", value.asInstanceOf[js.Any])
+    def setExclude(value: Exclude): Self = StObject.set(x, "Exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsOrg(value: StorageLensAwsOrg): Self = this.set("AwsOrg", value.asInstanceOf[js.Any])
+    def setExcludeUndefined: Self = StObject.set(x, "Exclude", js.undefined)
     
     @scala.inline
-    def deleteAwsOrg: Self = this.set("AwsOrg", js.undefined)
+    def setId(value: ConfigId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataExport(value: StorageLensDataExport): Self = this.set("DataExport", value.asInstanceOf[js.Any])
+    def setInclude(value: Include): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataExport: Self = this.set("DataExport", js.undefined)
+    def setIncludeUndefined: Self = StObject.set(x, "Include", js.undefined)
     
     @scala.inline
-    def setExclude(value: Exclude): Self = this.set("Exclude", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExclude: Self = this.set("Exclude", js.undefined)
+    def setStorageLensArn(value: StorageLensArn): Self = StObject.set(x, "StorageLensArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: Include): Self = this.set("Include", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude: Self = this.set("Include", js.undefined)
-    
-    @scala.inline
-    def setStorageLensArn(value: StorageLensArn): Self = this.set("StorageLensArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageLensArn: Self = this.set("StorageLensArn", js.undefined)
+    def setStorageLensArnUndefined: Self = StObject.set(x, "StorageLensArn", js.undefined)
   }
 }

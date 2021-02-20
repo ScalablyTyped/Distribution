@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultipleGetObjectsResponse[TObject] extends js.Object {
+trait MultipleGetObjectsResponse[TObject] extends StObject {
   
   /**
     * The list of objects.
@@ -21,24 +22,12 @@ object MultipleGetObjectsResponse {
   }
   
   @scala.inline
-  implicit class MultipleGetObjectsResponseOps[Self <: MultipleGetObjectsResponse[_], TObject] (val x: Self with MultipleGetObjectsResponse[TObject]) extends AnyVal {
+  implicit class MultipleGetObjectsResponseMutableBuilder[Self <: MultipleGetObjectsResponse[_], TObject] (val x: Self with MultipleGetObjectsResponse[TObject]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResults(value: js.Array[TObject with ObjectWithObjectID]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResultsVarargs(value: (TObject with ObjectWithObjectID)*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[TObject with ObjectWithObjectID]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setResultsVarargs(value: (TObject with ObjectWithObjectID)*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

@@ -1,16 +1,16 @@
 package typings.formatjsIntlDatetimeformat
 
-import org.scalablytyped.runtime.TopLevel
 import typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormatOptions
 import typings.formatjsIntlDatetimeformat.coreMod.DateTimeFormatConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/intl-datetimeformat/lib", JSImport.Namespace)
-@js.native
-object libMod extends js.Object {
+object libMod {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("@formatjs/intl-datetimeformat/lib", "DateTimeFormat")
   @js.native
   class DateTimeFormat ()
     extends typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat {
@@ -20,6 +20,7 @@ object libMod extends js.Object {
     def this(locales: String, options: DateTimeFormatOptions) = this()
     def this(locales: js.Array[String], options: DateTimeFormatOptions) = this()
   }
+  @JSImport("@formatjs/intl-datetimeformat/lib", "DateTimeFormat")
   @js.native
-  object DateTimeFormat extends TopLevel[DateTimeFormatConstructor]
+  val DateTimeFormat: DateTimeFormatConstructor = js.native
 }

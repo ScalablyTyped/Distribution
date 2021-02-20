@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.3
   */
 @js.native
-trait XStringKeyMap extends js.Object {
+trait XStringKeyMap extends StObject {
   
   /** the number of elements in the map. */
   var Count: Double = js.native
@@ -70,36 +71,24 @@ object XStringKeyMap {
   }
   
   @scala.inline
-  implicit class XStringKeyMapOps[Self <: XStringKeyMap] (val x: Self) extends AnyVal {
+  implicit class XStringKeyMapMutableBuilder[Self <: XStringKeyMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetKeyByIndex(value: Double => String): Self = StObject.set(x, "getKeyByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetValue(value: String => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setGetValueByIndex(value: Double => js.Any): Self = StObject.set(x, "getValueByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetKeyByIndex(value: Double => String): Self = this.set("getKeyByIndex", js.Any.fromFunction1(value))
+    def setHasValue(value: String => Boolean): Self = StObject.set(x, "hasValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValue(value: String => js.Any): Self = this.set("getValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetValueByIndex(value: Double => js.Any): Self = this.set("getValueByIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHasValue(value: String => Boolean): Self = this.set("hasValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInsertValue(value: (String, js.Any) => Unit): Self = this.set("insertValue", js.Any.fromFunction2(value))
+    def setInsertValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "insertValue", js.Any.fromFunction2(value))
   }
 }

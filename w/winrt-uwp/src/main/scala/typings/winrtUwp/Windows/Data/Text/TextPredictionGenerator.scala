@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Data.Text
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Predicts Japanese words based on a phonetic characters prefix. */
 @js.native
-trait TextPredictionGenerator extends js.Object {
+trait TextPredictionGenerator extends StObject {
   
   /**
     * Asynchronously gets a list of candidate words based on the provided phonetic characters prefix.

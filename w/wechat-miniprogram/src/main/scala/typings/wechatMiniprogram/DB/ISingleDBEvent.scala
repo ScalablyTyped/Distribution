@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram.DB
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISingleDBEvent extends js.Object {
+trait ISingleDBEvent extends StObject {
   
   var dataType: DataType = js.native
   
@@ -31,48 +32,36 @@ object ISingleDBEvent {
   }
   
   @scala.inline
-  implicit class ISingleDBEventOps[Self <: ISingleDBEvent] (val x: Self) extends AnyVal {
+  implicit class ISingleDBEventMutableBuilder[Self <: ISingleDBEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataType(value: DataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoc(value: Record[String, _]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocId(value: String): Self = StObject.set(x, "docId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: DataType): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc(value: Record[String, _]): Self = this.set("doc", value.asInstanceOf[js.Any])
+    def setQueueType(value: QueueType): Self = StObject.set(x, "queueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocId(value: String): Self = this.set("docId", value.asInstanceOf[js.Any])
+    def setRemovedFields(value: js.Array[String]): Self = StObject.set(x, "removedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRemovedFieldsUndefined: Self = StObject.set(x, "removedFields", js.undefined)
     
     @scala.inline
-    def setQueueType(value: QueueType): Self = this.set("queueType", value.asInstanceOf[js.Any])
+    def setRemovedFieldsVarargs(value: String*): Self = StObject.set(x, "removedFields", js.Array(value :_*))
     
     @scala.inline
-    def setRemovedFieldsVarargs(value: String*): Self = this.set("removedFields", js.Array(value :_*))
+    def setUpdatedFields(value: Record[String, _]): Self = StObject.set(x, "updatedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemovedFields(value: js.Array[String]): Self = this.set("removedFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemovedFields: Self = this.set("removedFields", js.undefined)
-    
-    @scala.inline
-    def setUpdatedFields(value: Record[String, _]): Self = this.set("updatedFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedFields: Self = this.set("updatedFields", js.undefined)
+    def setUpdatedFieldsUndefined: Self = StObject.set(x, "updatedFields", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendWorkerMessagesResponse extends js.Object {
+trait SendWorkerMessagesResponse extends StObject {
   
   /** The servers response to the worker messages. */
   var workerMessageResponses: js.UndefOr[js.Array[WorkerMessageResponse]] = js.native
@@ -19,27 +20,15 @@ object SendWorkerMessagesResponse {
   }
   
   @scala.inline
-  implicit class SendWorkerMessagesResponseOps[Self <: SendWorkerMessagesResponse] (val x: Self) extends AnyVal {
+  implicit class SendWorkerMessagesResponseMutableBuilder[Self <: SendWorkerMessagesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkerMessageResponses(value: js.Array[WorkerMessageResponse]): Self = StObject.set(x, "workerMessageResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWorkerMessageResponsesUndefined: Self = StObject.set(x, "workerMessageResponses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkerMessageResponsesVarargs(value: WorkerMessageResponse*): Self = this.set("workerMessageResponses", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkerMessageResponses(value: js.Array[WorkerMessageResponse]): Self = this.set("workerMessageResponses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerMessageResponses: Self = this.set("workerMessageResponses", js.undefined)
+    def setWorkerMessageResponsesVarargs(value: WorkerMessageResponse*): Self = StObject.set(x, "workerMessageResponses", js.Array(value :_*))
   }
 }

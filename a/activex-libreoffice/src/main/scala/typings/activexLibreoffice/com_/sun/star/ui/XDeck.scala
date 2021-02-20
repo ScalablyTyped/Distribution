@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since LibreOffice 5.1
   */
 @js.native
-trait XDeck extends js.Object {
+trait XDeck extends StObject {
   
   /** The deck identifier */
   val Id: String = js.native
@@ -94,66 +95,54 @@ object XDeck {
   }
   
   @scala.inline
-  implicit class XDeckOps[Self <: XDeck] (val x: Self) extends AnyVal {
+  implicit class XDeckMutableBuilder[Self <: XDeck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: Boolean => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOrderIndex(value: () => Double): Self = StObject.set(x, "getOrderIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setGetPanels(value: () => XPanels): Self = StObject.set(x, "getPanels", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOrderIndex(value: Double): Self = this.set("OrderIndex", value.asInstanceOf[js.Any])
+    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPanels(value: XPanels): Self = this.set("Panels", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
+    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActivate(value: Boolean => Unit): Self = this.set("activate", js.Any.fromFunction1(value))
+    def setMoveDown(value: () => Unit): Self = StObject.set(x, "moveDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setMoveFirst(value: () => Unit): Self = StObject.set(x, "moveFirst", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOrderIndex(value: () => Double): Self = this.set("getOrderIndex", js.Any.fromFunction0(value))
+    def setMoveLast(value: () => Unit): Self = StObject.set(x, "moveLast", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPanels(value: () => XPanels): Self = this.set("getPanels", js.Any.fromFunction0(value))
+    def setMoveUp(value: () => Unit): Self = StObject.set(x, "moveUp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    def setOrderIndex(value: Double): Self = StObject.set(x, "OrderIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: () => Boolean): Self = this.set("isActive", js.Any.fromFunction0(value))
+    def setPanels(value: XPanels): Self = StObject.set(x, "Panels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveDown(value: () => Unit): Self = this.set("moveDown", js.Any.fromFunction0(value))
+    def setSetOrderIndex(value: Double => Unit): Self = StObject.set(x, "setOrderIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveFirst(value: () => Unit): Self = this.set("moveFirst", js.Any.fromFunction0(value))
+    def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveLast(value: () => Unit): Self = this.set("moveLast", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMoveUp(value: () => Unit): Self = this.set("moveUp", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetOrderIndex(value: Double => Unit): Self = this.set("setOrderIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTitle(value: String => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

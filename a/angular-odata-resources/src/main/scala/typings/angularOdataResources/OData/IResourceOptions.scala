@@ -1,6 +1,7 @@
 package typings.angularOdataResources.OData
 
 import typings.angularOdataResources.anon.Method
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Currently supported options for the $resource factory options argument.
   */
 @js.native
-trait IResourceOptions extends js.Object {
+trait IResourceOptions extends StObject {
   
   var isodatav4: js.UndefOr[Boolean] = js.native
   
@@ -29,36 +30,24 @@ object IResourceOptions {
   }
   
   @scala.inline
-  implicit class IResourceOptionsOps[Self <: IResourceOptions] (val x: Self) extends AnyVal {
+  implicit class IResourceOptionsMutableBuilder[Self <: IResourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsodatav4(value: Boolean): Self = StObject.set(x, "isodatav4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsodatav4Undefined: Self = StObject.set(x, "isodatav4", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOdata(value: Method): Self = StObject.set(x, "odata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsodatav4(value: Boolean): Self = this.set("isodatav4", value.asInstanceOf[js.Any])
+    def setOdataUndefined: Self = StObject.set(x, "odata", js.undefined)
     
     @scala.inline
-    def deleteIsodatav4: Self = this.set("isodatav4", js.undefined)
+    def setStripTrailingSlashes(value: Boolean): Self = StObject.set(x, "stripTrailingSlashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOdata(value: Method): Self = this.set("odata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOdata: Self = this.set("odata", js.undefined)
-    
-    @scala.inline
-    def setStripTrailingSlashes(value: Boolean): Self = this.set("stripTrailingSlashes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripTrailingSlashes: Self = this.set("stripTrailingSlashes", js.undefined)
+    def setStripTrailingSlashesUndefined: Self = StObject.set(x, "stripTrailingSlashes", js.undefined)
   }
 }

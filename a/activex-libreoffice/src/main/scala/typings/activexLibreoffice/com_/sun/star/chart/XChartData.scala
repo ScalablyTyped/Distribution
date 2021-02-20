@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.chart
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,33 +65,21 @@ object XChartData {
   }
   
   @scala.inline
-  implicit class XChartDataOps[Self <: XChartData] (val x: Self) extends AnyVal {
+  implicit class XChartDataMutableBuilder[Self <: XChartData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddChartDataChangeEventListener(value: XChartDataChangeEventListener => Unit): Self = StObject.set(x, "addChartDataChangeEventListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNotANumber(value: () => Double): Self = StObject.set(x, "getNotANumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsNotANumber(value: Double => Boolean): Self = StObject.set(x, "isNotANumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNotANumber(value: Double): Self = this.set("NotANumber", value.asInstanceOf[js.Any])
+    def setNotANumber(value: Double): Self = StObject.set(x, "NotANumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddChartDataChangeEventListener(value: XChartDataChangeEventListener => Unit): Self = this.set("addChartDataChangeEventListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetNotANumber(value: () => Double): Self = this.set("getNotANumber", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsNotANumber(value: Double => Boolean): Self = this.set("isNotANumber", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveChartDataChangeEventListener(value: XChartDataChangeEventListener => Unit): Self = this.set("removeChartDataChangeEventListener", js.Any.fromFunction1(value))
+    def setRemoveChartDataChangeEventListener(value: XChartDataChangeEventListener => Unit): Self = StObject.set(x, "removeChartDataChangeEventListener", js.Any.fromFunction1(value))
   }
 }

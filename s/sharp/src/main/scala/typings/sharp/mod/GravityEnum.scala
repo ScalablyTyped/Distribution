@@ -1,11 +1,12 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GravityEnum extends js.Object {
+trait GravityEnum extends StObject {
   
   var center: Double = js.native
   
@@ -47,48 +48,36 @@ object GravityEnum {
   }
   
   @scala.inline
-  implicit class GravityEnumOps[Self <: GravityEnum] (val x: Self) extends AnyVal {
+  implicit class GravityEnumMutableBuilder[Self <: GravityEnum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Double): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCentre(value: Double): Self = StObject.set(x, "centre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEast(value: Double): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: Double): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setNorth(value: Double): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCentre(value: Double): Self = this.set("centre", value.asInstanceOf[js.Any])
+    def setNortheast(value: Double): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEast(value: Double): Self = this.set("east", value.asInstanceOf[js.Any])
+    def setNorthwest(value: Double): Self = StObject.set(x, "northwest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNorth(value: Double): Self = this.set("north", value.asInstanceOf[js.Any])
+    def setSouth(value: Double): Self = StObject.set(x, "south", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNortheast(value: Double): Self = this.set("northeast", value.asInstanceOf[js.Any])
+    def setSoutheast(value: Double): Self = StObject.set(x, "southeast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNorthwest(value: Double): Self = this.set("northwest", value.asInstanceOf[js.Any])
+    def setSouthwest(value: Double): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSouth(value: Double): Self = this.set("south", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoutheast(value: Double): Self = this.set("southeast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSouthwest(value: Double): Self = this.set("southwest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWest(value: Double): Self = this.set("west", value.asInstanceOf[js.Any])
+    def setWest(value: Double): Self = StObject.set(x, "west", value.asInstanceOf[js.Any])
   }
 }

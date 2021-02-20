@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultServerDataPushOperationsAsync extends js.Object {
+trait IVaultServerDataPushOperationsAsync extends StObject {
   
   def CloneVaultForServerDataPush(ServerDataPushSink: IServerDataPushSink): Unit = js.native
   def CloneVaultForServerDataPush(

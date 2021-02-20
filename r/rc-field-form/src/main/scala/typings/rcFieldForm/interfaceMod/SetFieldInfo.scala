@@ -1,6 +1,7 @@
 package typings.rcFieldForm.interfaceMod
 
 import typings.rcFieldForm.rcFieldFormStrings.setField
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object SetFieldInfo {
   }
   
   @scala.inline
-  implicit class SetFieldInfoOps[Self <: SetFieldInfo] (val x: Self) extends AnyVal {
+  implicit class SetFieldInfoMutableBuilder[Self <: SetFieldInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: FieldData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: FieldData): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: setField): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: setField): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

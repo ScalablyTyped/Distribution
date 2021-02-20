@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.languages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IExpandedMonarchLanguageAction extends js.Object {
+trait IExpandedMonarchLanguageAction extends StObject {
   
   /**
     * @open or @close
@@ -61,75 +62,63 @@ object IExpandedMonarchLanguageAction {
   }
   
   @scala.inline
-  implicit class IExpandedMonarchLanguageActionOps[Self <: IExpandedMonarchLanguageAction] (val x: Self) extends AnyVal {
+  implicit class IExpandedMonarchLanguageActionMutableBuilder[Self <: IExpandedMonarchLanguageAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBracket(value: String): Self = StObject.set(x, "bracket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBracketUndefined: Self = StObject.set(x, "bracket", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCases(value: js.Object): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBracket(value: String): Self = this.set("bracket", value.asInstanceOf[js.Any])
+    def setCasesUndefined: Self = StObject.set(x, "cases", js.undefined)
     
     @scala.inline
-    def deleteBracket: Self = this.set("bracket", js.undefined)
+    def setGoBack(value: Double): Self = StObject.set(x, "goBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCases(value: js.Object): Self = this.set("cases", value.asInstanceOf[js.Any])
+    def setGoBackUndefined: Self = StObject.set(x, "goBack", js.undefined)
     
     @scala.inline
-    def deleteCases: Self = this.set("cases", js.undefined)
+    def setGroup(value: js.Array[IMonarchLanguageAction]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoBack(value: Double): Self = this.set("goBack", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteGoBack: Self = this.set("goBack", js.undefined)
+    def setGroupVarargs(value: IMonarchLanguageAction*): Self = StObject.set(x, "group", js.Array(value :_*))
     
     @scala.inline
-    def setGroupVarargs(value: IMonarchLanguageAction*): Self = this.set("group", js.Array(value :_*))
+    def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: js.Array[IMonarchLanguageAction]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: String): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setNextEmbedded(value: String): Self = StObject.set(x, "nextEmbedded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setNextEmbeddedUndefined: Self = StObject.set(x, "nextEmbedded", js.undefined)
     
     @scala.inline
-    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setSwitchTo(value: String): Self = StObject.set(x, "switchTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextEmbedded(value: String): Self = this.set("nextEmbedded", value.asInstanceOf[js.Any])
+    def setSwitchToUndefined: Self = StObject.set(x, "switchTo", js.undefined)
     
     @scala.inline
-    def deleteNextEmbedded: Self = this.set("nextEmbedded", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwitchTo(value: String): Self = this.set("switchTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwitchTo: Self = this.set("switchTo", js.undefined)
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

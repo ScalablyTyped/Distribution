@@ -1,11 +1,12 @@
 package typings.dc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CapMixin[T] extends js.Object {
+trait CapMixin[T] extends StObject {
   
   def cap(): Double = js.native
   def cap(t: Double): T = js.native

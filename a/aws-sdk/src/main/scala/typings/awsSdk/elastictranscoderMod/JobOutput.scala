@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobOutput extends js.Object {
+trait JobOutput extends StObject {
   
   /**
     * The album art to be associated with the output file, if any.
@@ -121,150 +122,138 @@ object JobOutput {
   }
   
   @scala.inline
-  implicit class JobOutputOps[Self <: JobOutput] (val x: Self) extends AnyVal {
+  implicit class JobOutputMutableBuilder[Self <: JobOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbumArt(value: JobAlbumArt): Self = StObject.set(x, "AlbumArt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbumArtUndefined: Self = StObject.set(x, "AlbumArt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppliedColorSpaceConversion(value: String): Self = StObject.set(x, "AppliedColorSpaceConversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumArt(value: JobAlbumArt): Self = this.set("AlbumArt", value.asInstanceOf[js.Any])
+    def setAppliedColorSpaceConversionUndefined: Self = StObject.set(x, "AppliedColorSpaceConversion", js.undefined)
     
     @scala.inline
-    def deleteAlbumArt: Self = this.set("AlbumArt", js.undefined)
+    def setCaptions(value: Captions): Self = StObject.set(x, "Captions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppliedColorSpaceConversion(value: String): Self = this.set("AppliedColorSpaceConversion", value.asInstanceOf[js.Any])
+    def setCaptionsUndefined: Self = StObject.set(x, "Captions", js.undefined)
     
     @scala.inline
-    def deleteAppliedColorSpaceConversion: Self = this.set("AppliedColorSpaceConversion", js.undefined)
+    def setComposition(value: Composition): Self = StObject.set(x, "Composition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptions(value: Captions): Self = this.set("Captions", value.asInstanceOf[js.Any])
+    def setCompositionUndefined: Self = StObject.set(x, "Composition", js.undefined)
     
     @scala.inline
-    def deleteCaptions: Self = this.set("Captions", js.undefined)
+    def setCompositionVarargs(value: Clip*): Self = StObject.set(x, "Composition", js.Array(value :_*))
     
     @scala.inline
-    def setCompositionVarargs(value: Clip*): Self = this.set("Composition", js.Array(value :_*))
+    def setDuration(value: NullableLong): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComposition(value: Composition): Self = this.set("Composition", value.asInstanceOf[js.Any])
+    def setDurationMillis(value: NullableLong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComposition: Self = this.set("Composition", js.undefined)
+    def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
     
     @scala.inline
-    def setDuration(value: NullableLong): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationMillis(value: NullableLong): Self = this.set("DurationMillis", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def deleteDurationMillis: Self = this.set("DurationMillis", js.undefined)
+    def setFileSize(value: NullableLong): Self = StObject.set(x, "FileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setFileSizeUndefined: Self = StObject.set(x, "FileSize", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setFrameRate(value: FloatString): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSize(value: NullableLong): Self = this.set("FileSize", value.asInstanceOf[js.Any])
+    def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
     
     @scala.inline
-    def deleteFileSize: Self = this.set("FileSize", js.undefined)
+    def setHeight(value: NullableInteger): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: FloatString): Self = this.set("FrameRate", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
     @scala.inline
-    def deleteFrameRate: Self = this.set("FrameRate", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: NullableInteger): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("Height", js.undefined)
+    def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setPresetId(value: Id): Self = StObject.set(x, "PresetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Key): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setPresetIdUndefined: Self = StObject.set(x, "PresetId", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setRotate(value: Rotate): Self = StObject.set(x, "Rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresetId(value: Id): Self = this.set("PresetId", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "Rotate", js.undefined)
     
     @scala.inline
-    def deletePresetId: Self = this.set("PresetId", js.undefined)
+    def setSegmentDuration(value: FloatString): Self = StObject.set(x, "SegmentDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: Rotate): Self = this.set("Rotate", value.asInstanceOf[js.Any])
+    def setSegmentDurationUndefined: Self = StObject.set(x, "SegmentDuration", js.undefined)
     
     @scala.inline
-    def deleteRotate: Self = this.set("Rotate", js.undefined)
+    def setStatus(value: JobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentDuration(value: FloatString): Self = this.set("SegmentDuration", value.asInstanceOf[js.Any])
+    def setStatusDetail(value: Description): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSegmentDuration: Self = this.set("SegmentDuration", js.undefined)
+    def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
     
     @scala.inline
-    def setStatus(value: JobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setThumbnailEncryption(value: Encryption): Self = StObject.set(x, "ThumbnailEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusDetail(value: Description): Self = this.set("StatusDetail", value.asInstanceOf[js.Any])
+    def setThumbnailEncryptionUndefined: Self = StObject.set(x, "ThumbnailEncryption", js.undefined)
     
     @scala.inline
-    def deleteStatusDetail: Self = this.set("StatusDetail", js.undefined)
+    def setThumbnailPattern(value: ThumbnailPattern): Self = StObject.set(x, "ThumbnailPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailEncryption(value: Encryption): Self = this.set("ThumbnailEncryption", value.asInstanceOf[js.Any])
+    def setThumbnailPatternUndefined: Self = StObject.set(x, "ThumbnailPattern", js.undefined)
     
     @scala.inline
-    def deleteThumbnailEncryption: Self = this.set("ThumbnailEncryption", js.undefined)
+    def setWatermarks(value: JobWatermarks): Self = StObject.set(x, "Watermarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailPattern(value: ThumbnailPattern): Self = this.set("ThumbnailPattern", value.asInstanceOf[js.Any])
+    def setWatermarksUndefined: Self = StObject.set(x, "Watermarks", js.undefined)
     
     @scala.inline
-    def deleteThumbnailPattern: Self = this.set("ThumbnailPattern", js.undefined)
+    def setWatermarksVarargs(value: JobWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value :_*))
     
     @scala.inline
-    def setWatermarksVarargs(value: JobWatermark*): Self = this.set("Watermarks", js.Array(value :_*))
+    def setWidth(value: NullableInteger): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWatermarks(value: JobWatermarks): Self = this.set("Watermarks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatermarks: Self = this.set("Watermarks", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: NullableInteger): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("Width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

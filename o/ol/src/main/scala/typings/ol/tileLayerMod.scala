@@ -6,13 +6,19 @@ import typings.ol.pluggableMapMod.FrameState
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/renderer/canvas/TileLayer", JSImport.Namespace)
-@js.native
-object tileLayerMod extends js.Object {
+object tileLayerMod {
+  
+  @JSImport("ol/renderer/canvas/TileLayer", JSImport.Default)
+  @js.native
+  class default protected () extends CanvasTileLayerRenderer {
+    def this(tileLayer: typings.ol.tileMod.default) = this()
+    def this(tileLayer: typings.ol.vectorTileMod.default) = this()
+  }
   
   @js.native
   trait CanvasTileLayerRenderer
@@ -90,11 +96,5 @@ object tileLayerMod extends js.Object {
       tileSource: typings.ol.sourceTileMod.default,
       tile: typings.ol.olTileMod.default
     ): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends CanvasTileLayerRenderer {
-    def this(tileLayer: typings.ol.tileMod.default) = this()
-    def this(tileLayer: typings.ol.vectorTileMod.default) = this()
   }
 }

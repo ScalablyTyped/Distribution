@@ -1,5 +1,6 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An enumeration of Media commands that the transport bar buttons support.
   **/
 @js.native
-trait MediaCommand extends js.Object {
+trait MediaCommand extends StObject {
   
   var audioTracks: String = js.native
   
@@ -80,78 +81,66 @@ object MediaCommand {
   }
   
   @scala.inline
-  implicit class MediaCommandOps[Self <: MediaCommand] (val x: Self) extends AnyVal {
+  implicit class MediaCommandMutableBuilder[Self <: MediaCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioTracks(value: String): Self = StObject.set(x, "audioTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCast(value: String): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChapterSkipBack(value: String): Self = StObject.set(x, "chapterSkipBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioTracks(value: String): Self = this.set("audioTracks", value.asInstanceOf[js.Any])
+    def setChapterSkipForward(value: String): Self = StObject.set(x, "chapterSkipForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCast(value: String): Self = this.set("cast", value.asInstanceOf[js.Any])
+    def setClosedCaptions(value: String): Self = StObject.set(x, "closedCaptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChapterSkipBack(value: String): Self = this.set("chapterSkipBack", value.asInstanceOf[js.Any])
+    def setFastForward(value: String): Self = StObject.set(x, "fastForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChapterSkipForward(value: String): Self = this.set("chapterSkipForward", value.asInstanceOf[js.Any])
+    def setGoToLive(value: String): Self = StObject.set(x, "goToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosedCaptions(value: String): Self = this.set("closedCaptions", value.asInstanceOf[js.Any])
+    def setNextTrack(value: String): Self = StObject.set(x, "nextTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastForward(value: String): Self = this.set("fastForward", value.asInstanceOf[js.Any])
+    def setPause(value: String): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoToLive(value: String): Self = this.set("goToLive", value.asInstanceOf[js.Any])
+    def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextTrack(value: String): Self = this.set("nextTrack", value.asInstanceOf[js.Any])
+    def setPlayFromBeginning(value: String): Self = StObject.set(x, "playFromBeginning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPause(value: String): Self = this.set("pause", value.asInstanceOf[js.Any])
+    def setPlaybackRate(value: String): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlay(value: String): Self = this.set("play", value.asInstanceOf[js.Any])
+    def setPreviousTrack(value: String): Self = StObject.set(x, "previousTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayFromBeginning(value: String): Self = this.set("playFromBeginning", value.asInstanceOf[js.Any])
+    def setRewind(value: String): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaybackRate(value: String): Self = this.set("playbackRate", value.asInstanceOf[js.Any])
+    def setSeek(value: String): Self = StObject.set(x, "seek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousTrack(value: String): Self = this.set("previousTrack", value.asInstanceOf[js.Any])
+    def setStop(value: String): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRewind(value: String): Self = this.set("rewind", value.asInstanceOf[js.Any])
+    def setTimeSkipBack(value: String): Self = StObject.set(x, "timeSkipBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeek(value: String): Self = this.set("seek", value.asInstanceOf[js.Any])
+    def setTimeSkipForward(value: String): Self = StObject.set(x, "timeSkipForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStop(value: String): Self = this.set("stop", value.asInstanceOf[js.Any])
+    def setVolume(value: String): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeSkipBack(value: String): Self = this.set("timeSkipBack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeSkipForward(value: String): Self = this.set("timeSkipForward", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolume(value: String): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoom(value: String): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

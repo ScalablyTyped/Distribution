@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBucketIntelligentTieringConfigurationsRequest extends js.Object {
+trait ListBucketIntelligentTieringConfigurationsRequest extends StObject {
   
   /**
     * The name of the Amazon S3 bucket whose configuration you want to modify or retrieve.
@@ -26,27 +27,15 @@ object ListBucketIntelligentTieringConfigurationsRequest {
   }
   
   @scala.inline
-  implicit class ListBucketIntelligentTieringConfigurationsRequestOps[Self <: ListBucketIntelligentTieringConfigurationsRequest] (val x: Self) extends AnyVal {
+  implicit class ListBucketIntelligentTieringConfigurationsRequestMutableBuilder[Self <: ListBucketIntelligentTieringConfigurationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContinuationToken(value: Token): Self = this.set("ContinuationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContinuationToken: Self = this.set("ContinuationToken", js.undefined)
+    def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
   }
 }

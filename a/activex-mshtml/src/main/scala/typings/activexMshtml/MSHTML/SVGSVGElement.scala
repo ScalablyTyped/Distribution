@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGSVGElement extends js.Object {
+trait SVGSVGElement extends StObject {
   
   @JSName("MSHTML.SVGSVGElement_typekey")
   var MSHTMLDotSVGSVGElement_typekey: SVGSVGElement = js.native
@@ -199,198 +200,186 @@ object SVGSVGElement {
   }
   
   @scala.inline
-  implicit class SVGSVGElementOps[Self <: SVGSVGElement] (val x: Self) extends AnyVal {
+  implicit class SVGSVGElementMutableBuilder[Self <: SVGSVGElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationsPaused(value: () => Boolean): Self = StObject.set(x, "animationsPaused", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckEnclosure(value: (ISVGElement, SVGRect) => Boolean): Self = StObject.set(x, "checkEnclosure", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckIntersection(value: (ISVGElement, SVGRect) => Boolean): Self = StObject.set(x, "checkIntersection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMSHTMLDotSVGSVGElement_typekey(value: SVGSVGElement): Self = this.set("MSHTML.SVGSVGElement_typekey", value.asInstanceOf[js.Any])
+    def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationsPaused(value: () => Boolean): Self = this.set("animationsPaused", js.Any.fromFunction0(value))
+    def setContentScriptType(value: String): Self = StObject.set(x, "contentScriptType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckEnclosure(value: (ISVGElement, SVGRect) => Boolean): Self = this.set("checkEnclosure", js.Any.fromFunction2(value))
+    def setContentStyleType(value: String): Self = StObject.set(x, "contentStyleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckIntersection(value: (ISVGElement, SVGRect) => Boolean): Self = this.set("checkIntersection", js.Any.fromFunction2(value))
+    def setCreateSVGAngle(value: () => SVGAngle): Self = StObject.set(x, "createSVGAngle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClassName(value: SVGAnimatedString): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCreateSVGLength(value: () => SVGLength): Self = StObject.set(x, "createSVGLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContentScriptType(value: String): Self = this.set("contentScriptType", value.asInstanceOf[js.Any])
+    def setCreateSVGMatrix(value: () => SVGMatrix): Self = StObject.set(x, "createSVGMatrix", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContentStyleType(value: String): Self = this.set("contentStyleType", value.asInstanceOf[js.Any])
+    def setCreateSVGNumber(value: () => SVGNumber): Self = StObject.set(x, "createSVGNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateSVGAngle(value: () => SVGAngle): Self = this.set("createSVGAngle", js.Any.fromFunction0(value))
+    def setCreateSVGPoint(value: () => SVGPoint): Self = StObject.set(x, "createSVGPoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateSVGLength(value: () => SVGLength): Self = this.set("createSVGLength", js.Any.fromFunction0(value))
+    def setCreateSVGRect(value: () => SVGRect): Self = StObject.set(x, "createSVGRect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateSVGMatrix(value: () => SVGMatrix): Self = this.set("createSVGMatrix", js.Any.fromFunction0(value))
+    def setCreateSVGTransform(value: () => SVGTransform): Self = StObject.set(x, "createSVGTransform", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateSVGNumber(value: () => SVGNumber): Self = this.set("createSVGNumber", js.Any.fromFunction0(value))
+    def setCreateSVGTransformFromMatrix(value: SVGMatrix => SVGTransform): Self = StObject.set(x, "createSVGTransformFromMatrix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateSVGPoint(value: () => SVGPoint): Self = this.set("createSVGPoint", js.Any.fromFunction0(value))
+    def setCurrentScale(value: Double): Self = StObject.set(x, "currentScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSVGRect(value: () => SVGRect): Self = this.set("createSVGRect", js.Any.fromFunction0(value))
+    def setCurrentTranslate(value: SVGPoint): Self = StObject.set(x, "currentTranslate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSVGTransform(value: () => SVGTransform): Self = this.set("createSVGTransform", js.Any.fromFunction0(value))
+    def setCurrentView(value: ISVGViewSpec): Self = StObject.set(x, "currentView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSVGTransformFromMatrix(value: SVGMatrix => SVGTransform): Self = this.set("createSVGTransformFromMatrix", js.Any.fromFunction1(value))
+    def setDeselectAll(value: () => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentScale(value: Double): Self = this.set("currentScale", value.asInstanceOf[js.Any])
+    def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = StObject.set(x, "externalResourcesRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTranslate(value: SVGPoint): Self = this.set("currentTranslate", value.asInstanceOf[js.Any])
+    def setFarthestViewportElement(value: ISVGElement): Self = StObject.set(x, "farthestViewportElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentView(value: ISVGViewSpec): Self = this.set("currentView", value.asInstanceOf[js.Any])
+    def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeselectAll(value: () => Unit): Self = this.set("deselectAll", js.Any.fromFunction0(value))
+    def setForceRedraw(value: () => Unit): Self = StObject.set(x, "forceRedraw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = this.set("externalResourcesRequired", value.asInstanceOf[js.Any])
+    def setGetBBox(value: () => SVGRect): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFarthestViewportElement(value: ISVGElement): Self = this.set("farthestViewportElement", value.asInstanceOf[js.Any])
+    def setGetCTM(value: () => SVGMatrix): Self = StObject.set(x, "getCTM", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFocusable(value: SVGAnimatedEnumeration): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    def setGetCurrentTime(value: () => Double): Self = StObject.set(x, "getCurrentTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceRedraw(value: () => Unit): Self = this.set("forceRedraw", js.Any.fromFunction0(value))
+    def setGetElementById(value: String => IHTMLElement): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBBox(value: () => SVGRect): Self = this.set("getBBox", js.Any.fromFunction0(value))
+    def setGetEnclosureList(value: (SVGRect, ISVGElement) => js.Any): Self = StObject.set(x, "getEnclosureList", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCTM(value: () => SVGMatrix): Self = this.set("getCTM", js.Any.fromFunction0(value))
+    def setGetIntersectionList(value: (SVGRect, ISVGElement) => js.Any): Self = StObject.set(x, "getIntersectionList", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCurrentTime(value: () => Double): Self = this.set("getCurrentTime", js.Any.fromFunction0(value))
+    def setGetScreenCTM(value: () => SVGMatrix): Self = StObject.set(x, "getScreenCTM", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetElementById(value: String => IHTMLElement): Self = this.set("getElementById", js.Any.fromFunction1(value))
+    def setGetTransformToElement(value: ISVGElement => SVGMatrix): Self = StObject.set(x, "getTransformToElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEnclosureList(value: (SVGRect, ISVGElement) => js.Any): Self = this.set("getEnclosureList", js.Any.fromFunction2(value))
+    def setHasExtension(value: String => Boolean): Self = StObject.set(x, "hasExtension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetIntersectionList(value: (SVGRect, ISVGElement) => js.Any): Self = this.set("getIntersectionList", js.Any.fromFunction2(value))
+    def setHeight(value: SVGAnimatedLength): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetScreenCTM(value: () => SVGMatrix): Self = this.set("getScreenCTM", js.Any.fromFunction0(value))
+    def setMSHTMLDotSVGSVGElement_typekey(value: SVGSVGElement): Self = StObject.set(x, "MSHTML.SVGSVGElement_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTransformToElement(value: ISVGElement => SVGMatrix): Self = this.set("getTransformToElement", js.Any.fromFunction1(value))
+    def setNearestViewportElement(value: ISVGElement): Self = StObject.set(x, "nearestViewportElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasExtension(value: String => Boolean): Self = this.set("hasExtension", js.Any.fromFunction1(value))
+    def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: SVGAnimatedLength): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPauseAnimations(value: () => Unit): Self = StObject.set(x, "pauseAnimations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNearestViewportElement(value: ISVGElement): Self = this.set("nearestViewportElement", value.asInstanceOf[js.Any])
+    def setPixelUnitToMillimeterX(value: Double): Self = StObject.set(x, "pixelUnitToMillimeterX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerSVGElement(value: ISVGSVGElement): Self = this.set("ownerSVGElement", value.asInstanceOf[js.Any])
+    def setPixelUnitToMillimeterY(value: Double): Self = StObject.set(x, "pixelUnitToMillimeterY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPauseAnimations(value: () => Unit): Self = this.set("pauseAnimations", js.Any.fromFunction0(value))
+    def setPreserveAspectRatio(value: SVGAnimatedPreserveAspectRatio): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelUnitToMillimeterX(value: Double): Self = this.set("pixelUnitToMillimeterX", value.asInstanceOf[js.Any])
+    def setRequiredExtensions(value: SVGStringList): Self = StObject.set(x, "requiredExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelUnitToMillimeterY(value: Double): Self = this.set("pixelUnitToMillimeterY", value.asInstanceOf[js.Any])
+    def setRequiredFeatures(value: SVGStringList): Self = StObject.set(x, "requiredFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveAspectRatio(value: SVGAnimatedPreserveAspectRatio): Self = this.set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    def setScreenPixelToMillimeterX(value: Double): Self = StObject.set(x, "screenPixelToMillimeterX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredExtensions(value: SVGStringList): Self = this.set("requiredExtensions", value.asInstanceOf[js.Any])
+    def setScreenPixelToMillimeterY(value: Double): Self = StObject.set(x, "screenPixelToMillimeterY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredFeatures(value: SVGStringList): Self = this.set("requiredFeatures", value.asInstanceOf[js.Any])
+    def setSetCurrentTime(value: Double => Unit): Self = StObject.set(x, "setCurrentTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScreenPixelToMillimeterX(value: Double): Self = this.set("screenPixelToMillimeterX", value.asInstanceOf[js.Any])
+    def setSuspendRedraw(value: Double => Double): Self = StObject.set(x, "suspendRedraw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScreenPixelToMillimeterY(value: Double): Self = this.set("screenPixelToMillimeterY", value.asInstanceOf[js.Any])
+    def setSystemLanguage(value: SVGStringList): Self = StObject.set(x, "systemLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetCurrentTime(value: Double => Unit): Self = this.set("setCurrentTime", js.Any.fromFunction1(value))
+    def setUnpauseAnimations(value: () => Unit): Self = StObject.set(x, "unpauseAnimations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSuspendRedraw(value: Double => Double): Self = this.set("suspendRedraw", js.Any.fromFunction1(value))
+    def setUnsuspendRedraw(value: Double => Unit): Self = StObject.set(x, "unsuspendRedraw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSystemLanguage(value: SVGStringList): Self = this.set("systemLanguage", value.asInstanceOf[js.Any])
+    def setUnsuspendRedrawAll(value: () => Unit): Self = StObject.set(x, "unsuspendRedrawAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUnpauseAnimations(value: () => Unit): Self = this.set("unpauseAnimations", js.Any.fromFunction0(value))
+    def setUseCurrentView(value: Boolean): Self = StObject.set(x, "useCurrentView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnsuspendRedraw(value: Double => Unit): Self = this.set("unsuspendRedraw", js.Any.fromFunction1(value))
+    def setViewBox(value: SVGAnimatedRect): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnsuspendRedrawAll(value: () => Unit): Self = this.set("unsuspendRedrawAll", js.Any.fromFunction0(value))
+    def setViewport(value: SVGRect): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCurrentView(value: Boolean): Self = this.set("useCurrentView", value.asInstanceOf[js.Any])
+    def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewBox(value: SVGAnimatedRect): Self = this.set("viewBox", value.asInstanceOf[js.Any])
+    def setWidth(value: SVGAnimatedLength): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewport(value: SVGRect): Self = this.set("viewport", value.asInstanceOf[js.Any])
+    def setX(value: SVGAnimatedLength): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewportElement(value: ISVGElement): Self = this.set("viewportElement", value.asInstanceOf[js.Any])
+    def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: SVGAnimatedLength): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXmllang(value: String): Self = StObject.set(x, "xmllang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: SVGAnimatedLength): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setXmlspace(value: String): Self = StObject.set(x, "xmlspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXmlbase(value: String): Self = this.set("xmlbase", value.asInstanceOf[js.Any])
+    def setY(value: SVGAnimatedLength): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXmllang(value: String): Self = this.set("xmllang", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXmlspace(value: String): Self = this.set("xmlspace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: SVGAnimatedLength): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomAndPan(value: Double): Self = this.set("zoomAndPan", value.asInstanceOf[js.Any])
+    def setZoomAndPan(value: Double): Self = StObject.set(x, "zoomAndPan", value.asInstanceOf[js.Any])
   }
 }

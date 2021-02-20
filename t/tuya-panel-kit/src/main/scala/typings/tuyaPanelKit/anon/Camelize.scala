@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Camelize extends js.Object {
+trait Camelize extends StObject {
   
   def camelize(str: String): String = js.native
   
@@ -29,30 +30,18 @@ object Camelize {
   }
   
   @scala.inline
-  implicit class CamelizeOps[Self <: Camelize] (val x: Self) extends AnyVal {
+  implicit class CamelizeMutableBuilder[Self <: Camelize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCamelize(value: String => String): Self = StObject.set(x, "camelize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHexStringToBinString(value: String => String): Self = StObject.set(x, "hexStringToBinString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHexStringToNumber(value: String => js.Array[Double]): Self = StObject.set(x, "hexStringToNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCamelize(value: String => String): Self = this.set("camelize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHexStringToBinString(value: String => String): Self = this.set("hexStringToBinString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHexStringToNumber(value: String => js.Array[Double]): Self = this.set("hexStringToNumber", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStrToHexString(value: String => String): Self = this.set("strToHexString", js.Any.fromFunction1(value))
+    def setStrToHexString(value: String => String): Self = StObject.set(x, "strToHexString", js.Any.fromFunction1(value))
   }
 }

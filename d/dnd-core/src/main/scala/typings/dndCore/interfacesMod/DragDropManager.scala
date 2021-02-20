@@ -1,11 +1,12 @@
 package typings.dndCore.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragDropManager extends js.Object {
+trait DragDropManager extends StObject {
   
   def dispatch(action: js.Any): Unit = js.native
   
@@ -32,33 +33,21 @@ object DragDropManager {
   }
   
   @scala.inline
-  implicit class DragDropManagerOps[Self <: DragDropManager] (val x: Self) extends AnyVal {
+  implicit class DragDropManagerMutableBuilder[Self <: DragDropManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispatch(value: js.Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetActions(value: () => DragDropActions): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBackend(value: () => Backend): Self = StObject.set(x, "getBackend", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDispatch(value: js.Any => Unit): Self = this.set("dispatch", js.Any.fromFunction1(value))
+    def setGetMonitor(value: () => DragDropMonitor): Self = StObject.set(x, "getMonitor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActions(value: () => DragDropActions): Self = this.set("getActions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetBackend(value: () => Backend): Self = this.set("getBackend", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMonitor(value: () => DragDropMonitor): Self = this.set("getMonitor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRegistry(value: () => HandlerRegistry): Self = this.set("getRegistry", js.Any.fromFunction0(value))
+    def setGetRegistry(value: () => HandlerRegistry): Self = StObject.set(x, "getRegistry", js.Any.fromFunction0(value))
   }
 }

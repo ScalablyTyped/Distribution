@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsConfigurationType extends js.Object {
+trait AnalyticsConfigurationType extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an Amazon Pinpoint project. You can use the Amazon Pinpoint project for Pinpoint integration with the chosen User Pool Client. Amazon Cognito publishes events to the pinpoint project declared by the app ARN.
@@ -41,48 +42,36 @@ object AnalyticsConfigurationType {
   }
   
   @scala.inline
-  implicit class AnalyticsConfigurationTypeOps[Self <: AnalyticsConfigurationType] (val x: Self) extends AnyVal {
+  implicit class AnalyticsConfigurationTypeMutableBuilder[Self <: AnalyticsConfigurationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationArn(value: ArnType): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationArnUndefined: Self = StObject.set(x, "ApplicationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationId(value: HexStringType): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationArn(value: ArnType): Self = this.set("ApplicationArn", value.asInstanceOf[js.Any])
+    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
     @scala.inline
-    def deleteApplicationArn: Self = this.set("ApplicationArn", js.undefined)
+    def setExternalId(value: StringType): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: HexStringType): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    def setRoleArn(value: ArnType): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: StringType): Self = this.set("ExternalId", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
     @scala.inline
-    def deleteExternalId: Self = this.set("ExternalId", js.undefined)
+    def setUserDataShared(value: BooleanType): Self = StObject.set(x, "UserDataShared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: ArnType): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
-    
-    @scala.inline
-    def setUserDataShared(value: BooleanType): Self = this.set("UserDataShared", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDataShared: Self = this.set("UserDataShared", js.undefined)
+    def setUserDataSharedUndefined: Self = StObject.set(x, "UserDataShared", js.undefined)
   }
 }

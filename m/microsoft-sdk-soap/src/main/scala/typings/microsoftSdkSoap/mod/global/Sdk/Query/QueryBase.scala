@@ -2,13 +2,14 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Query
 
 import typings.microsoftSdkSoap.mod.global.Sdk.Collection
 import typings.microsoftSdkSoap.mod.global.Sdk.ColumnSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Query.QueryBase")
 @js.native
-class QueryBase protected () extends js.Object {
+class QueryBase protected () extends StObject {
   /**
     * Internal Use Only.
     * @param type An Abstract class for different query classes to inherit from.

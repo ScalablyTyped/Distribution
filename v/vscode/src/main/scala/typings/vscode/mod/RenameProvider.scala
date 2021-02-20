@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.vscode.anon.Placeholder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenameProvider extends js.Object {
+trait RenameProvider extends StObject {
   
   /**
     * Optional function for resolving and validating a position *before* running rename. The result can
@@ -54,29 +55,17 @@ object RenameProvider {
   }
   
   @scala.inline
-  implicit class RenameProviderOps[Self <: RenameProvider] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvideRenameEdits(value: (TextDocument, Position, String, CancellationToken) => ProviderResult[WorkspaceEdit]): Self = this.set("provideRenameEdits", js.Any.fromFunction4(value))
+  implicit class RenameProviderMutableBuilder[Self <: RenameProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setPrepareRename(
       value: (/* document */ TextDocument, /* position */ Position, /* token */ CancellationToken) => ProviderResult[Range | Placeholder]
-    ): Self = this.set("prepareRename", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "prepareRename", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deletePrepareRename: Self = this.set("prepareRename", js.undefined)
+    def setPrepareRenameUndefined: Self = StObject.set(x, "prepareRename", js.undefined)
+    
+    @scala.inline
+    def setProvideRenameEdits(value: (TextDocument, Position, String, CancellationToken) => ProviderResult[WorkspaceEdit]): Self = StObject.set(x, "provideRenameEdits", js.Any.fromFunction4(value))
   }
 }

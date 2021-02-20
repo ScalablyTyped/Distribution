@@ -8,13 +8,14 @@ import typings.winrtUwp.winrtUwpStrings.enumerationcompleted
 import typings.winrtUwp.winrtUwpStrings.sourceadded
 import typings.winrtUwp.winrtUwpStrings.sourceremoved
 import typings.winrtUwp.winrtUwpStrings.stopped
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Monitors changes to the list of depth frame sources, and provides notifications when the list changes. */
 @js.native
-trait PerceptionDepthFrameSourceWatcher extends js.Object {
+trait PerceptionDepthFrameSourceWatcher extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

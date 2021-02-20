@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -154,183 +155,171 @@ object VisionPrescriptionDispense {
   }
   
   @scala.inline
-  implicit class VisionPrescriptionDispenseOps[Self <: VisionPrescriptionDispense] (val x: Self) extends AnyVal {
+  implicit class VisionPrescriptionDispenseMutableBuilder[Self <: VisionPrescriptionDispense] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: decimal): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxis(value: integer): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_add(value: Element): Self = this.set("_add", value.asInstanceOf[js.Any])
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def delete_add: Self = this.set("_add", js.undefined)
+    def setBackCurve(value: decimal): Self = StObject.set(x, "backCurve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_axis(value: Element): Self = this.set("_axis", value.asInstanceOf[js.Any])
+    def setBackCurveUndefined: Self = StObject.set(x, "backCurve", js.undefined)
     
     @scala.inline
-    def delete_axis: Self = this.set("_axis", js.undefined)
+    def setBase(value: code): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_backCurve(value: Element): Self = this.set("_backCurve", value.asInstanceOf[js.Any])
+    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     @scala.inline
-    def delete_backCurve: Self = this.set("_backCurve", js.undefined)
+    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_base(value: Element): Self = this.set("_base", value.asInstanceOf[js.Any])
+    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
     @scala.inline
-    def delete_base: Self = this.set("_base", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_brand(value: Element): Self = this.set("_brand", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def delete_brand: Self = this.set("_brand", js.undefined)
+    def setCylinder(value: decimal): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_color(value: Element): Self = this.set("_color", value.asInstanceOf[js.Any])
+    def setCylinderUndefined: Self = StObject.set(x, "cylinder", js.undefined)
     
     @scala.inline
-    def delete_color: Self = this.set("_color", js.undefined)
+    def setDiameter(value: decimal): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_cylinder(value: Element): Self = this.set("_cylinder", value.asInstanceOf[js.Any])
+    def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
     
     @scala.inline
-    def delete_cylinder: Self = this.set("_cylinder", js.undefined)
+    def setDuration(value: Quantity): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_diameter(value: Element): Self = this.set("_diameter", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def delete_diameter: Self = this.set("_diameter", js.undefined)
+    def setEye(value: code): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_eye(value: Element): Self = this.set("_eye", value.asInstanceOf[js.Any])
+    def setEyeUndefined: Self = StObject.set(x, "eye", js.undefined)
     
     @scala.inline
-    def delete_eye: Self = this.set("_eye", js.undefined)
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_power(value: Element): Self = this.set("_power", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def delete_power: Self = this.set("_power", js.undefined)
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def set_prism(value: Element): Self = this.set("_prism", value.asInstanceOf[js.Any])
+    def setPower(value: decimal): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_prism: Self = this.set("_prism", js.undefined)
+    def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
     
     @scala.inline
-    def set_sphere(value: Element): Self = this.set("_sphere", value.asInstanceOf[js.Any])
+    def setPrism(value: decimal): Self = StObject.set(x, "prism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sphere: Self = this.set("_sphere", js.undefined)
+    def setPrismUndefined: Self = StObject.set(x, "prism", js.undefined)
     
     @scala.inline
-    def setAdd(value: decimal): Self = this.set("add", value.asInstanceOf[js.Any])
+    def setProduct(value: CodeableConcept): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
     @scala.inline
-    def setAxis(value: integer): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setSphere(value: decimal): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setSphereUndefined: Self = StObject.set(x, "sphere", js.undefined)
     
     @scala.inline
-    def setBackCurve(value: decimal): Self = this.set("backCurve", value.asInstanceOf[js.Any])
+    def set_add(value: Element): Self = StObject.set(x, "_add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackCurve: Self = this.set("backCurve", js.undefined)
+    def set_addUndefined: Self = StObject.set(x, "_add", js.undefined)
     
     @scala.inline
-    def setBase(value: code): Self = this.set("base", value.asInstanceOf[js.Any])
+    def set_axis(value: Element): Self = StObject.set(x, "_axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBase: Self = this.set("base", js.undefined)
+    def set_axisUndefined: Self = StObject.set(x, "_axis", js.undefined)
     
     @scala.inline
-    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def set_backCurve(value: Element): Self = StObject.set(x, "_backCurve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrand: Self = this.set("brand", js.undefined)
+    def set_backCurveUndefined: Self = StObject.set(x, "_backCurve", js.undefined)
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def set_base(value: Element): Self = StObject.set(x, "_base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def set_baseUndefined: Self = StObject.set(x, "_base", js.undefined)
     
     @scala.inline
-    def setCylinder(value: decimal): Self = this.set("cylinder", value.asInstanceOf[js.Any])
+    def set_brand(value: Element): Self = StObject.set(x, "_brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCylinder: Self = this.set("cylinder", js.undefined)
+    def set_brandUndefined: Self = StObject.set(x, "_brand", js.undefined)
     
     @scala.inline
-    def setDiameter(value: decimal): Self = this.set("diameter", value.asInstanceOf[js.Any])
+    def set_color(value: Element): Self = StObject.set(x, "_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDiameter: Self = this.set("diameter", js.undefined)
+    def set_colorUndefined: Self = StObject.set(x, "_color", js.undefined)
     
     @scala.inline
-    def setDuration(value: Quantity): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def set_cylinder(value: Element): Self = StObject.set(x, "_cylinder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def set_cylinderUndefined: Self = StObject.set(x, "_cylinder", js.undefined)
     
     @scala.inline
-    def setEye(value: code): Self = this.set("eye", value.asInstanceOf[js.Any])
+    def set_diameter(value: Element): Self = StObject.set(x, "_diameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEye: Self = this.set("eye", js.undefined)
+    def set_diameterUndefined: Self = StObject.set(x, "_diameter", js.undefined)
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def set_eye(value: Element): Self = StObject.set(x, "_eye", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def set_eyeUndefined: Self = StObject.set(x, "_eye", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def set_power(value: Element): Self = StObject.set(x, "_power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPower(value: decimal): Self = this.set("power", value.asInstanceOf[js.Any])
+    def set_powerUndefined: Self = StObject.set(x, "_power", js.undefined)
     
     @scala.inline
-    def deletePower: Self = this.set("power", js.undefined)
+    def set_prism(value: Element): Self = StObject.set(x, "_prism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrism(value: decimal): Self = this.set("prism", value.asInstanceOf[js.Any])
+    def set_prismUndefined: Self = StObject.set(x, "_prism", js.undefined)
     
     @scala.inline
-    def deletePrism: Self = this.set("prism", js.undefined)
+    def set_sphere(value: Element): Self = StObject.set(x, "_sphere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: CodeableConcept): Self = this.set("product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProduct: Self = this.set("product", js.undefined)
-    
-    @scala.inline
-    def setSphere(value: decimal): Self = this.set("sphere", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSphere: Self = this.set("sphere", js.undefined)
+    def set_sphereUndefined: Self = StObject.set(x, "_sphere", js.undefined)
   }
 }

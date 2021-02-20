@@ -1,11 +1,12 @@
 package typings.openidClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevokeExtras extends js.Object {
+trait RevokeExtras extends StObject {
   
   /**
     * extra client assertion payload parameters to be sent as part of a client JWT assertion.
@@ -27,30 +28,18 @@ object RevokeExtras {
   }
   
   @scala.inline
-  implicit class RevokeExtrasOps[Self <: RevokeExtras] (val x: Self) extends AnyVal {
+  implicit class RevokeExtrasMutableBuilder[Self <: RevokeExtras] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientAssertionPayloadUndefined: Self = StObject.set(x, "clientAssertionPayload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevokeBody(value: js.Object): Self = StObject.set(x, "revokeBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientAssertionPayload(value: js.Object): Self = this.set("clientAssertionPayload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientAssertionPayload: Self = this.set("clientAssertionPayload", js.undefined)
-    
-    @scala.inline
-    def setRevokeBody(value: js.Object): Self = this.set("revokeBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevokeBody: Self = this.set("revokeBody", js.undefined)
+    def setRevokeBodyUndefined: Self = StObject.set(x, "revokeBody", js.undefined)
   }
 }

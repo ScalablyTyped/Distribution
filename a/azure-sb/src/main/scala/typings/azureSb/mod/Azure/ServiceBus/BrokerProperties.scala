@@ -1,12 +1,13 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.IBrokerProperties> */
 @js.native
-trait BrokerProperties extends js.Object {
+trait BrokerProperties extends StObject {
   
   var CorrelationId: js.UndefOr[String] = js.native
   
@@ -37,78 +38,66 @@ object BrokerProperties {
   }
   
   @scala.inline
-  implicit class BrokerPropertiesOps[Self <: BrokerProperties] (val x: Self) extends AnyVal {
+  implicit class BrokerPropertiesMutableBuilder[Self <: BrokerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrelationId(value: String): Self = StObject.set(x, "CorrelationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorrelationIdUndefined: Self = StObject.set(x, "CorrelationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrelationId(value: String): Self = this.set("CorrelationId", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
     @scala.inline
-    def deleteCorrelationId: Self = this.set("CorrelationId", js.undefined)
+    def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("Label", js.undefined)
+    def setPartitionKey(value: String): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: String): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    def setPartitionKeyUndefined: Self = StObject.set(x, "PartitionKey", js.undefined)
     
     @scala.inline
-    def deleteMessageId: Self = this.set("MessageId", js.undefined)
+    def setReplyTo(value: String): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionKey(value: String): Self = this.set("PartitionKey", value.asInstanceOf[js.Any])
+    def setReplyToSessionId(value: String): Self = StObject.set(x, "ReplyToSessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePartitionKey: Self = this.set("PartitionKey", js.undefined)
+    def setReplyToSessionIdUndefined: Self = StObject.set(x, "ReplyToSessionId", js.undefined)
     
     @scala.inline
-    def setReplyTo(value: String): Self = this.set("ReplyTo", value.asInstanceOf[js.Any])
+    def setReplyToUndefined: Self = StObject.set(x, "ReplyTo", js.undefined)
     
     @scala.inline
-    def deleteReplyTo: Self = this.set("ReplyTo", js.undefined)
+    def setScheduledEnqueueTimeUtc(value: String): Self = StObject.set(x, "ScheduledEnqueueTimeUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyToSessionId(value: String): Self = this.set("ReplyToSessionId", value.asInstanceOf[js.Any])
+    def setScheduledEnqueueTimeUtcUndefined: Self = StObject.set(x, "ScheduledEnqueueTimeUtc", js.undefined)
     
     @scala.inline
-    def deleteReplyToSessionId: Self = this.set("ReplyToSessionId", js.undefined)
+    def setSessionId(value: String): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledEnqueueTimeUtc(value: String): Self = this.set("ScheduledEnqueueTimeUtc", value.asInstanceOf[js.Any])
+    def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
     
     @scala.inline
-    def deleteScheduledEnqueueTimeUtc: Self = this.set("ScheduledEnqueueTimeUtc", js.undefined)
+    def setTimeToLive(value: String): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionId(value: String): Self = this.set("SessionId", value.asInstanceOf[js.Any])
+    def setTimeToLiveUndefined: Self = StObject.set(x, "TimeToLive", js.undefined)
     
     @scala.inline
-    def deleteSessionId: Self = this.set("SessionId", js.undefined)
+    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeToLive(value: String): Self = this.set("TimeToLive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToLive: Self = this.set("TimeToLive", js.undefined)
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("To", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("To", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }
 }

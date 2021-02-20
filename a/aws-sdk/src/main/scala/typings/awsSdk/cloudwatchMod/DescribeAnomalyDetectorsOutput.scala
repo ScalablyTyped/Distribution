@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAnomalyDetectorsOutput extends js.Object {
+trait DescribeAnomalyDetectorsOutput extends StObject {
   
   /**
     * The list of anomaly detection models returned by the operation.
@@ -26,33 +27,21 @@ object DescribeAnomalyDetectorsOutput {
   }
   
   @scala.inline
-  implicit class DescribeAnomalyDetectorsOutputOps[Self <: DescribeAnomalyDetectorsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeAnomalyDetectorsOutputMutableBuilder[Self <: DescribeAnomalyDetectorsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnomalyDetectors(value: AnomalyDetectors): Self = StObject.set(x, "AnomalyDetectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnomalyDetectorsUndefined: Self = StObject.set(x, "AnomalyDetectors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnomalyDetectorsVarargs(value: AnomalyDetector*): Self = StObject.set(x, "AnomalyDetectors", js.Array(value :_*))
     
     @scala.inline
-    def setAnomalyDetectorsVarargs(value: AnomalyDetector*): Self = this.set("AnomalyDetectors", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnomalyDetectors(value: AnomalyDetectors): Self = this.set("AnomalyDetectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnomalyDetectors: Self = this.set("AnomalyDetectors", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

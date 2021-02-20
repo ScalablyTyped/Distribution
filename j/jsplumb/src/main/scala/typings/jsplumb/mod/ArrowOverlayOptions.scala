@@ -1,5 +1,6 @@
 package typings.jsplumb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ArrowOverlayOptions extends OverlayOptions {
   
-   // 0.5
+  // 0.5
   var direction: js.UndefOr[Double] = js.native
   
-   // 1
+  // 1
   var foldback: js.UndefOr[Double] = js.native
   
-   // 20
+  // 20
   var length: js.UndefOr[Double] = js.native
   
-   // 20
+  // 20
   var location: js.UndefOr[Double] = js.native
   
-   // 0.623
+  // 0.623
   var paintStyle: js.UndefOr[PaintStyle] = js.native
   
   var width: js.UndefOr[Double] = js.native
@@ -33,54 +34,42 @@ object ArrowOverlayOptions {
   }
   
   @scala.inline
-  implicit class ArrowOverlayOptionsOps[Self <: ArrowOverlayOptions] (val x: Self) extends AnyVal {
+  implicit class ArrowOverlayOptionsMutableBuilder[Self <: ArrowOverlayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFoldback(value: Double): Self = StObject.set(x, "foldback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setFoldbackUndefined: Self = StObject.set(x, "foldback", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFoldback(value: Double): Self = this.set("foldback", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteFoldback: Self = this.set("foldback", js.undefined)
+    def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setPaintStyle(value: PaintStyle): Self = StObject.set(x, "paintStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Double): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPaintStyleUndefined: Self = StObject.set(x, "paintStyle", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaintStyle(value: PaintStyle): Self = this.set("paintStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaintStyle: Self = this.set("paintStyle", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

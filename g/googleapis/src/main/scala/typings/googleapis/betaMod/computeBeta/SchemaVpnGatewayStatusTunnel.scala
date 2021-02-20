@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains some information about a VPN tunnel.
   */
 @js.native
-trait SchemaVpnGatewayStatusTunnel extends js.Object {
+trait SchemaVpnGatewayStatusTunnel extends StObject {
   
   /**
     * The VPN gateway interface this VPN tunnel is associated with.
@@ -35,36 +36,24 @@ object SchemaVpnGatewayStatusTunnel {
   }
   
   @scala.inline
-  implicit class SchemaVpnGatewayStatusTunnelOps[Self <: SchemaVpnGatewayStatusTunnel] (val x: Self) extends AnyVal {
+  implicit class SchemaVpnGatewayStatusTunnelMutableBuilder[Self <: SchemaVpnGatewayStatusTunnel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalGatewayInterface(value: Double): Self = StObject.set(x, "localGatewayInterface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalGatewayInterfaceUndefined: Self = StObject.set(x, "localGatewayInterface", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeerGatewayInterface(value: Double): Self = StObject.set(x, "peerGatewayInterface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalGatewayInterface(value: Double): Self = this.set("localGatewayInterface", value.asInstanceOf[js.Any])
+    def setPeerGatewayInterfaceUndefined: Self = StObject.set(x, "peerGatewayInterface", js.undefined)
     
     @scala.inline
-    def deleteLocalGatewayInterface: Self = this.set("localGatewayInterface", js.undefined)
+    def setTunnelUrl(value: String): Self = StObject.set(x, "tunnelUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerGatewayInterface(value: Double): Self = this.set("peerGatewayInterface", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeerGatewayInterface: Self = this.set("peerGatewayInterface", js.undefined)
-    
-    @scala.inline
-    def setTunnelUrl(value: String): Self = this.set("tunnelUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTunnelUrl: Self = this.set("tunnelUrl", js.undefined)
+    def setTunnelUrlUndefined: Self = StObject.set(x, "tunnelUrl", js.undefined)
   }
 }

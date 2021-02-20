@@ -1,12 +1,13 @@
 package typings.grommet.anon
 
 import typings.grommet.utilsMod.ColorType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Continent extends js.Object {
+trait Continent extends StObject {
   
   var color: js.UndefOr[ColorType] = js.native
   
@@ -25,42 +26,30 @@ object Continent {
   }
   
   @scala.inline
-  implicit class ContinentOps[Self <: Continent] (val x: Self) extends AnyVal {
+  implicit class ContinentMutableBuilder[Self <: Continent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinent(value: Base): Self = StObject.set(x, "continent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorType): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setContinentUndefined: Self = StObject.set(x, "continent", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setHover(value: `3`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinent(value: Base): Self = this.set("continent", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteContinent: Self = this.set("continent", js.undefined)
+    def setPlace(value: Base): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: `3`): Self = this.set("hover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
-    
-    @scala.inline
-    def setPlace(value: Base): Self = this.set("place", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlace: Self = this.set("place", js.undefined)
+    def setPlaceUndefined: Self = StObject.set(x, "place", js.undefined)
   }
 }

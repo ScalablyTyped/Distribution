@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Autocomplete extends js.Object {
+trait Autocomplete extends StObject {
   
   def search(
     keyword: String,
@@ -23,23 +24,11 @@ object Autocomplete {
   }
   
   @scala.inline
-  implicit class AutocompleteOps[Self <: Autocomplete] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class AutocompleteMutableBuilder[Self <: Autocomplete] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setSearch(
       value: (String, js.Function2[/* status */ String, /* result */ String | AutocompleteResult, Unit]) => Unit
-    ): Self = this.set("search", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
   }
 }

@@ -1,15 +1,15 @@
 package typings.three.constantsMod
 
+import typings.three.constantsMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GLSLVersion extends js.Object
-@JSImport("three/src/constants", "GLSLVersion")
-@js.native
-object GLSLVersion extends js.Object {
+sealed trait GLSLVersion extends StObject
+object GLSLVersion {
   
-  @JSBracketAccess
-  def apply(value: scala.Nothing): js.UndefOr[GLSLVersion with scala.Nothing] = js.native
+  @scala.inline
+  def apply(value: scala.Nothing): js.UndefOr[GLSLVersion with scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("GLSLVersion")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[GLSLVersion with scala.Nothing]]
 }

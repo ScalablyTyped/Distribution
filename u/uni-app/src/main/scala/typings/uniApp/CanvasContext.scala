@@ -17,12 +17,13 @@ import typings.uniApp.uniAppStrings.right
 import typings.uniApp.uniAppStrings.round
 import typings.uniApp.uniAppStrings.square
 import typings.uniApp.uniAppStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasContext extends js.Object {
+trait CanvasContext extends StObject {
   
   /**
     * 画一条弧线

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeliveryOptions extends js.Object {
+trait DeliveryOptions extends StObject {
   
   /**
     * The name of the dedicated IP pool that you want to associate with the configuration set.
@@ -26,30 +27,18 @@ object DeliveryOptions {
   }
   
   @scala.inline
-  implicit class DeliveryOptionsOps[Self <: DeliveryOptions] (val x: Self) extends AnyVal {
+  implicit class DeliveryOptionsMutableBuilder[Self <: DeliveryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSendingPoolName(value: PoolName): Self = StObject.set(x, "SendingPoolName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSendingPoolNameUndefined: Self = StObject.set(x, "SendingPoolName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTlsPolicy(value: TlsPolicy): Self = StObject.set(x, "TlsPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendingPoolName(value: PoolName): Self = this.set("SendingPoolName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendingPoolName: Self = this.set("SendingPoolName", js.undefined)
-    
-    @scala.inline
-    def setTlsPolicy(value: TlsPolicy): Self = this.set("TlsPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTlsPolicy: Self = this.set("TlsPolicy", js.undefined)
+    def setTlsPolicyUndefined: Self = StObject.set(x, "TlsPolicy", js.undefined)
   }
 }

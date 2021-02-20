@@ -1,11 +1,12 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManyToManyRelationshipMetadata extends js.Object {
+trait ManyToManyRelationshipMetadata extends StObject {
   
   var Entity1AssociatedMenuConfiguration: AssociatedMenuConfiguration = js.native
   
@@ -68,69 +69,57 @@ object ManyToManyRelationshipMetadata {
   }
   
   @scala.inline
-  implicit class ManyToManyRelationshipMetadataOps[Self <: ManyToManyRelationshipMetadata] (val x: Self) extends AnyVal {
+  implicit class ManyToManyRelationshipMetadataMutableBuilder[Self <: ManyToManyRelationshipMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity1AssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = StObject.set(x, "Entity1AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntity1IntersectAttribute(value: String): Self = StObject.set(x, "Entity1IntersectAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntity1LogicalName(value: String): Self = StObject.set(x, "Entity1LogicalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity1AssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = this.set("Entity1AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
+    def setEntity2AssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = StObject.set(x, "Entity2AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity1IntersectAttribute(value: String): Self = this.set("Entity1IntersectAttribute", value.asInstanceOf[js.Any])
+    def setEntity2IntersectAttribute(value: String): Self = StObject.set(x, "Entity2IntersectAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity1LogicalName(value: String): Self = this.set("Entity1LogicalName", value.asInstanceOf[js.Any])
+    def setEntity2LogicalName(value: String): Self = StObject.set(x, "Entity2LogicalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity2AssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = this.set("Entity2AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
+    def setHasChanged(value: Boolean): Self = StObject.set(x, "HasChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity2IntersectAttribute(value: String): Self = this.set("Entity2IntersectAttribute", value.asInstanceOf[js.Any])
+    def setIntersectEntityName(value: String): Self = StObject.set(x, "IntersectEntityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity2LogicalName(value: String): Self = this.set("Entity2LogicalName", value.asInstanceOf[js.Any])
+    def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasChanged(value: Boolean): Self = this.set("HasChanged", value.asInstanceOf[js.Any])
+    def setIsCustomRelationship(value: Boolean): Self = StObject.set(x, "IsCustomRelationship", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersectEntityName(value: String): Self = this.set("IntersectEntityName", value.asInstanceOf[js.Any])
+    def setIsCustomizable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsCustomizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntroducedVersion(value: js.Any): Self = this.set("IntroducedVersion", value.asInstanceOf[js.Any])
+    def setIsManaged(value: Boolean): Self = StObject.set(x, "IsManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCustomRelationship(value: Boolean): Self = this.set("IsCustomRelationship", value.asInstanceOf[js.Any])
+    def setIsValidForAdvancedFind(value: Boolean): Self = StObject.set(x, "IsValidForAdvancedFind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCustomizable(value: ManagedProperty[Boolean]): Self = this.set("IsCustomizable", value.asInstanceOf[js.Any])
+    def setMetadataId(value: String): Self = StObject.set(x, "MetadataId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsManaged(value: Boolean): Self = this.set("IsManaged", value.asInstanceOf[js.Any])
+    def setRelationshipType(value: RelationshipType): Self = StObject.set(x, "RelationshipType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValidForAdvancedFind(value: Boolean): Self = this.set("IsValidForAdvancedFind", value.asInstanceOf[js.Any])
+    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataId(value: String): Self = this.set("MetadataId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelationshipType(value: RelationshipType): Self = this.set("RelationshipType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemaName(value: String): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecurityTypes(value: SecurityType): Self = this.set("SecurityTypes", value.asInstanceOf[js.Any])
+    def setSecurityTypes(value: SecurityType): Self = StObject.set(x, "SecurityTypes", value.asInstanceOf[js.Any])
   }
 }

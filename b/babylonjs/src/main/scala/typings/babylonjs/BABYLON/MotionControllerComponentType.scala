@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babylonjs.babylonjsStrings.thumbstick
   - typings.babylonjs.babylonjsStrings.button
 */
-trait MotionControllerComponentType extends js.Object
+trait MotionControllerComponentType extends StObject
 object MotionControllerComponentType {
   
   @scala.inline

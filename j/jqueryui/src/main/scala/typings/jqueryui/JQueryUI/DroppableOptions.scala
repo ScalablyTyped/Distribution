@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,66 +33,54 @@ object DroppableOptions {
   }
   
   @scala.inline
-  implicit class DroppableOptionsOps[Self <: DroppableOptions] (val x: Self) extends AnyVal {
+  implicit class DroppableOptionsMutableBuilder[Self <: DroppableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: js.Any): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccept(value: js.Any): Self = this.set("accept", value.asInstanceOf[js.Any])
+    def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
     
     @scala.inline
-    def deleteAccept: Self = this.set("accept", js.undefined)
+    def setAddClasses(value: Boolean): Self = StObject.set(x, "addClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveClass(value: String): Self = this.set("activeClass", value.asInstanceOf[js.Any])
+    def setAddClassesUndefined: Self = StObject.set(x, "addClasses", js.undefined)
     
     @scala.inline
-    def deleteActiveClass: Self = this.set("activeClass", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddClasses(value: Boolean): Self = this.set("addClasses", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteAddClasses: Self = this.set("addClasses", js.undefined)
+    def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreedy(value: Boolean): Self = this.set("greedy", value.asInstanceOf[js.Any])
+    def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
     
     @scala.inline
-    def deleteGreedy: Self = this.set("greedy", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverClass(value: String): Self = this.set("hoverClass", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteHoverClass: Self = this.set("hoverClass", js.undefined)
+    def setTolerance(value: String): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setTolerance(value: String): Self = this.set("tolerance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTolerance: Self = this.set("tolerance", js.undefined)
+    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
   }
 }

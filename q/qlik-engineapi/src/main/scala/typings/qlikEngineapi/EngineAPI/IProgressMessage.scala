@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ProgressMessage...
   */
 @js.native
-trait IProgressMessage extends js.Object {
+trait IProgressMessage extends StObject {
   
   /**
     * Code number to the corresponding localized message string.
@@ -29,27 +30,15 @@ object IProgressMessage {
   }
   
   @scala.inline
-  implicit class IProgressMessageOps[Self <: IProgressMessage] (val x: Self) extends AnyVal {
+  implicit class IProgressMessageMutableBuilder[Self <: IProgressMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQMessageCode(value: Double): Self = StObject.set(x, "qMessageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQMessageParameters(value: js.Array[String]): Self = StObject.set(x, "qMessageParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQMessageCode(value: Double): Self = this.set("qMessageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQMessageParametersVarargs(value: String*): Self = this.set("qMessageParameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setQMessageParameters(value: js.Array[String]): Self = this.set("qMessageParameters", value.asInstanceOf[js.Any])
+    def setQMessageParametersVarargs(value: String*): Self = StObject.set(x, "qMessageParameters", js.Array(value :_*))
   }
 }

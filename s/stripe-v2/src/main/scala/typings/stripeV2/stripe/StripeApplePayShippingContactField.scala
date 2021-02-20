@@ -1,5 +1,6 @@
 package typings.stripeV2.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stripeV2.stripeV2Strings.postalAddress
   - typings.stripeV2.stripeV2Strings.name
 */
-trait StripeApplePayShippingContactField extends js.Object
+trait StripeApplePayShippingContactField extends StObject
 object StripeApplePayShippingContactField {
   
   @scala.inline

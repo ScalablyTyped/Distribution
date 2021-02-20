@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnId extends js.Object {
+trait ColumnId extends StObject {
   
   var columnId: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object ColumnId {
   }
   
   @scala.inline
-  implicit class ColumnIdOps[Self <: ColumnId] (val x: Self) extends AnyVal {
+  implicit class ColumnIdMutableBuilder[Self <: ColumnId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableIndex(value: Double): Self = StObject.set(x, "tableIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnId(value: Double): Self = this.set("columnId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnId: Self = this.set("columnId", js.undefined)
-    
-    @scala.inline
-    def setTableIndex(value: Double): Self = this.set("tableIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableIndex: Self = this.set("tableIndex", js.undefined)
+    def setTableIndexUndefined: Self = StObject.set(x, "tableIndex", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ProgressData...
   */
 @js.native
-trait IProgressData extends js.Object {
+trait IProgressData extends StObject {
   
   /**
     * This property is not used.
@@ -102,60 +103,48 @@ object IProgressData {
   }
   
   @scala.inline
-  implicit class IProgressDataOps[Self <: IProgressData] (val x: Self) extends AnyVal {
+  implicit class IProgressDataMutableBuilder[Self <: IProgressData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQCompleted(value: Double): Self = StObject.set(x, "qCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQErrorData(value: js.Array[IErrorData]): Self = StObject.set(x, "qErrorData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQErrorDataVarargs(value: IErrorData*): Self = StObject.set(x, "qErrorData", js.Array(value :_*))
     
     @scala.inline
-    def setQCompleted(value: Double): Self = this.set("qCompleted", value.asInstanceOf[js.Any])
+    def setQFinished(value: Boolean): Self = StObject.set(x, "qFinished", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQErrorDataVarargs(value: IErrorData*): Self = this.set("qErrorData", js.Array(value :_*))
+    def setQKB(value: Double): Self = StObject.set(x, "qKB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQErrorData(value: js.Array[IErrorData]): Self = this.set("qErrorData", value.asInstanceOf[js.Any])
+    def setQMillisecs(value: Double): Self = StObject.set(x, "qMillisecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFinished(value: Boolean): Self = this.set("qFinished", value.asInstanceOf[js.Any])
+    def setQPersistentProgress(value: String): Self = StObject.set(x, "qPersistentProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQKB(value: Double): Self = this.set("qKB", value.asInstanceOf[js.Any])
+    def setQPersistentProgressMessages(value: js.Array[IProgressMessage]): Self = StObject.set(x, "qPersistentProgressMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMillisecs(value: Double): Self = this.set("qMillisecs", value.asInstanceOf[js.Any])
+    def setQPersistentProgressMessagesVarargs(value: IProgressMessage*): Self = StObject.set(x, "qPersistentProgressMessages", js.Array(value :_*))
     
     @scala.inline
-    def setQPersistentProgress(value: String): Self = this.set("qPersistentProgress", value.asInstanceOf[js.Any])
+    def setQStarted(value: Boolean): Self = StObject.set(x, "qStarted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQPersistentProgressMessagesVarargs(value: IProgressMessage*): Self = this.set("qPersistentProgressMessages", js.Array(value :_*))
+    def setQTotal(value: Double): Self = StObject.set(x, "qTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQPersistentProgressMessages(value: js.Array[IProgressMessage]): Self = this.set("qPersistentProgressMessages", value.asInstanceOf[js.Any])
+    def setQTransientProgress(value: String): Self = StObject.set(x, "qTransientProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQStarted(value: Boolean): Self = this.set("qStarted", value.asInstanceOf[js.Any])
+    def setQTransientProgressMessage(value: IProgressMessage): Self = StObject.set(x, "qTransientProgressMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQTotal(value: Double): Self = this.set("qTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTransientProgress(value: String): Self = this.set("qTransientProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTransientProgressMessage(value: IProgressMessage): Self = this.set("qTransientProgressMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQUserInteractionWanted(value: Boolean): Self = this.set("qUserInteractionWanted", value.asInstanceOf[js.Any])
+    def setQUserInteractionWanted(value: Boolean): Self = StObject.set(x, "qUserInteractionWanted", value.asInstanceOf[js.Any])
   }
 }

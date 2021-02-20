@@ -1,11 +1,12 @@
 package typings.reactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentLength extends js.Object {
+trait ContentLength extends StObject {
   
   var contentLength: Double = js.native
   
@@ -24,30 +25,18 @@ object ContentLength {
   }
   
   @scala.inline
-  implicit class ContentLengthOps[Self <: ContentLength] (val x: Self) extends AnyVal {
+  implicit class ContentLengthMutableBuilder[Self <: ContentLength] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRenderedRows(value: Double): Self = StObject.set(x, "renderedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLength(value: Double): Self = this.set("contentLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderedRows(value: Double): Self = this.set("renderedRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalRows(value: Double): Self = this.set("totalRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleRows(value: Double): Self = this.set("visibleRows", value.asInstanceOf[js.Any])
+    def setVisibleRows(value: Double): Self = StObject.set(x, "visibleRows", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about vulnerable request parameters.
   */
 @js.native
-trait SchemaVulnerableParameters extends js.Object {
+trait SchemaVulnerableParameters extends StObject {
   
   /**
     * The vulnerable parameter names.
@@ -24,27 +25,15 @@ object SchemaVulnerableParameters {
   }
   
   @scala.inline
-  implicit class SchemaVulnerableParametersOps[Self <: SchemaVulnerableParameters] (val x: Self) extends AnyVal {
+  implicit class SchemaVulnerableParametersMutableBuilder[Self <: SchemaVulnerableParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterNames(value: js.Array[String]): Self = StObject.set(x, "parameterNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterNamesUndefined: Self = StObject.set(x, "parameterNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameterNamesVarargs(value: String*): Self = this.set("parameterNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameterNames(value: js.Array[String]): Self = this.set("parameterNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterNames: Self = this.set("parameterNames", js.undefined)
+    def setParameterNamesVarargs(value: String*): Self = StObject.set(x, "parameterNames", js.Array(value :_*))
   }
 }

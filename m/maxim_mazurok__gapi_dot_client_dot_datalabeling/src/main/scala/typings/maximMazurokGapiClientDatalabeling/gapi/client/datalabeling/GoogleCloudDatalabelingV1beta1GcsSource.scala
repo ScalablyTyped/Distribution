@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1GcsSource extends js.Object {
+trait GoogleCloudDatalabelingV1beta1GcsSource extends StObject {
   
   /** Required. The input URI of source file. This must be a Cloud Storage path (`gs://...`). */
   var inputUri: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudDatalabelingV1beta1GcsSource {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1GcsSourceOps[Self <: GoogleCloudDatalabelingV1beta1GcsSource] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1GcsSourceMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1GcsSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputUri(value: String): Self = this.set("inputUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputUri: Self = this.set("inputUri", js.undefined)
-    
-    @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

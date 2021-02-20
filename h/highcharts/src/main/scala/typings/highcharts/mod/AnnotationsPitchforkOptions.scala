@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationsPitchforkOptions extends js.Object {
+trait AnnotationsPitchforkOptions extends StObject {
   
   var controlPointOptions: js.UndefOr[AnnotationsPitchforkControlPointOptions] = js.native
   
@@ -37,42 +38,30 @@ object AnnotationsPitchforkOptions {
   }
   
   @scala.inline
-  implicit class AnnotationsPitchforkOptionsOps[Self <: AnnotationsPitchforkOptions] (val x: Self) extends AnyVal {
+  implicit class AnnotationsPitchforkOptionsMutableBuilder[Self <: AnnotationsPitchforkOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlPointOptions(value: AnnotationsPitchforkControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlPointOptionsUndefined: Self = StObject.set(x, "controlPointOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelOptions(value: AnnotationsPitchforkLabelOptions): Self = StObject.set(x, "labelOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlPointOptions(value: AnnotationsPitchforkControlPointOptions): Self = this.set("controlPointOptions", value.asInstanceOf[js.Any])
+    def setLabelOptionsUndefined: Self = StObject.set(x, "labelOptions", js.undefined)
     
     @scala.inline
-    def deleteControlPointOptions: Self = this.set("controlPointOptions", js.undefined)
+    def setShapeOptions(value: AnnotationsPitchforkShapeOptions): Self = StObject.set(x, "shapeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelOptions(value: AnnotationsPitchforkLabelOptions): Self = this.set("labelOptions", value.asInstanceOf[js.Any])
+    def setShapeOptionsUndefined: Self = StObject.set(x, "shapeOptions", js.undefined)
     
     @scala.inline
-    def deleteLabelOptions: Self = this.set("labelOptions", js.undefined)
+    def setTypeOptions(value: AnnotationsPitchforkTypeOptions): Self = StObject.set(x, "typeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeOptions(value: AnnotationsPitchforkShapeOptions): Self = this.set("shapeOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShapeOptions: Self = this.set("shapeOptions", js.undefined)
-    
-    @scala.inline
-    def setTypeOptions(value: AnnotationsPitchforkTypeOptions): Self = this.set("typeOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeOptions: Self = this.set("typeOptions", js.undefined)
+    def setTypeOptionsUndefined: Self = StObject.set(x, "typeOptions", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.reactBeautifulDnd
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,4 +70,7 @@ package object mod {
   ]
   
   type TypeId = typings.reactBeautifulDnd.mod.Id
+  
+  @scala.inline
+  def resetServerContext(): scala.Unit = typings.reactBeautifulDnd.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetServerContext")().asInstanceOf[scala.Unit]
 }

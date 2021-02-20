@@ -1,12 +1,13 @@
 package typings.activexExcel.anon
 
 import typings.activexExcel.Excel.PivotTable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValueChangeStart extends js.Object {
+trait ValueChangeStart extends StObject {
   
   val Sh: js.Any = js.native
   
@@ -25,30 +26,18 @@ object ValueChangeStart {
   }
   
   @scala.inline
-  implicit class ValueChangeStartOps[Self <: ValueChangeStart] (val x: Self) extends AnyVal {
+  implicit class ValueChangeStartMutableBuilder[Self <: ValueChangeStart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSh(value: js.Any): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetPivotTable(value: PivotTable): Self = StObject.set(x, "TargetPivotTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueChangeEnd(value: Double): Self = StObject.set(x, "ValueChangeEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSh(value: js.Any): Self = this.set("Sh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetPivotTable(value: PivotTable): Self = this.set("TargetPivotTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueChangeEnd(value: Double): Self = this.set("ValueChangeEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueChangeStart(value: Double): Self = this.set("ValueChangeStart", value.asInstanceOf[js.Any])
+    def setValueChangeStart(value: Double): Self = StObject.set(x, "ValueChangeStart", value.asInstanceOf[js.Any])
   }
 }

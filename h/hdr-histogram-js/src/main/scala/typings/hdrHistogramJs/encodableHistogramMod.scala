@@ -1,13 +1,13 @@
 package typings.hdrHistogramJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hdr-histogram-js/EncodableHistogram", JSImport.Namespace)
-@js.native
-object encodableHistogramMod extends js.Object {
+object encodableHistogramMod {
   
+  @JSImport("hdr-histogram-js/EncodableHistogram", "EncodableHistogram")
   @js.native
-  abstract class EncodableHistogram () extends js.Object
+  abstract class EncodableHistogram () extends StObject
 }

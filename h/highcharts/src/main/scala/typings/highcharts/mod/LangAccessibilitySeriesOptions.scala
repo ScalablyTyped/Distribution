@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangAccessibilitySeriesOptions extends js.Object {
+trait LangAccessibilitySeriesOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) User supplied description text.
@@ -59,54 +60,42 @@ object LangAccessibilitySeriesOptions {
   }
   
   @scala.inline
-  implicit class LangAccessibilitySeriesOptionsOps[Self <: LangAccessibilitySeriesOptions] (val x: Self) extends AnyVal {
+  implicit class LangAccessibilitySeriesOptionsMutableBuilder[Self <: LangAccessibilitySeriesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNullPointValue(value: String): Self = StObject.set(x, "nullPointValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNullPointValueUndefined: Self = StObject.set(x, "nullPointValue", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPointAnnotationsDescription(value: String): Self = StObject.set(x, "pointAnnotationsDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullPointValue(value: String): Self = this.set("nullPointValue", value.asInstanceOf[js.Any])
+    def setPointAnnotationsDescriptionUndefined: Self = StObject.set(x, "pointAnnotationsDescription", js.undefined)
     
     @scala.inline
-    def deleteNullPointValue: Self = this.set("nullPointValue", js.undefined)
+    def setSummary(value: LangAccessibilitySeriesSummaryOptions): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointAnnotationsDescription(value: String): Self = this.set("pointAnnotationsDescription", value.asInstanceOf[js.Any])
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
     @scala.inline
-    def deletePointAnnotationsDescription: Self = this.set("pointAnnotationsDescription", js.undefined)
+    def setXAxisDescription(value: String): Self = StObject.set(x, "xAxisDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: LangAccessibilitySeriesSummaryOptions): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setXAxisDescriptionUndefined: Self = StObject.set(x, "xAxisDescription", js.undefined)
     
     @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
+    def setYAxisDescription(value: String): Self = StObject.set(x, "yAxisDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxisDescription(value: String): Self = this.set("xAxisDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAxisDescription: Self = this.set("xAxisDescription", js.undefined)
-    
-    @scala.inline
-    def setYAxisDescription(value: String): Self = this.set("yAxisDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxisDescription: Self = this.set("yAxisDescription", js.undefined)
+    def setYAxisDescriptionUndefined: Self = StObject.set(x, "yAxisDescription", js.undefined)
   }
 }

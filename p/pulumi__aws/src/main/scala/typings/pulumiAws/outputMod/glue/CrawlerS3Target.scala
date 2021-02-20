@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CrawlerS3Target extends js.Object {
+trait CrawlerS3Target extends StObject {
   
   /**
     * The name of the connection to use to connect to the JDBC target.
@@ -31,36 +32,24 @@ object CrawlerS3Target {
   }
   
   @scala.inline
-  implicit class CrawlerS3TargetOps[Self <: CrawlerS3Target] (val x: Self) extends AnyVal {
+  implicit class CrawlerS3TargetMutableBuilder[Self <: CrawlerS3Target] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionNameUndefined: Self = StObject.set(x, "connectionName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusions(value: js.Array[String]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
     
     @scala.inline
-    def setConnectionName(value: String): Self = this.set("connectionName", value.asInstanceOf[js.Any])
+    def setExclusionsVarargs(value: String*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
     
     @scala.inline
-    def deleteConnectionName: Self = this.set("connectionName", js.undefined)
-    
-    @scala.inline
-    def setExclusionsVarargs(value: String*): Self = this.set("exclusions", js.Array(value :_*))
-    
-    @scala.inline
-    def setExclusions(value: js.Array[String]): Self = this.set("exclusions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusions: Self = this.set("exclusions", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

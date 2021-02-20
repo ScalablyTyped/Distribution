@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INavigationEnginePlugin extends js.Object {
+trait INavigationEnginePlugin extends StObject {
   
   /**
     * build the navmesh from a previously saved state using getNavmeshData
@@ -194,84 +195,72 @@ object INavigationEnginePlugin {
   }
   
   @scala.inline
-  implicit class INavigationEnginePluginOps[Self <: INavigationEnginePlugin] (val x: Self) extends AnyVal {
+  implicit class INavigationEnginePluginMutableBuilder[Self <: INavigationEnginePlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildFromNavmeshData(value: Uint8Array => Unit): Self = StObject.set(x, "buildFromNavmeshData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputePath(value: (Vector3, Vector3) => js.Array[Vector3]): Self = StObject.set(x, "computePath", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateCrowd(value: (Double, Double, Scene) => ICrowd): Self = StObject.set(x, "createCrowd", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setBuildFromNavmeshData(value: Uint8Array => Unit): Self = this.set("buildFromNavmeshData", js.Any.fromFunction1(value))
+    def setCreateDebugNavMesh(value: Scene => Mesh): Self = StObject.set(x, "createDebugNavMesh", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComputePath(value: (Vector3, Vector3) => js.Array[Vector3]): Self = this.set("computePath", js.Any.fromFunction2(value))
+    def setCreateNavMesh(value: (js.Array[Mesh], INavMeshParameters) => Unit): Self = StObject.set(x, "createNavMesh", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateCrowd(value: (Double, Double, Scene) => ICrowd): Self = this.set("createCrowd", js.Any.fromFunction3(value))
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateDebugNavMesh(value: Scene => Mesh): Self = this.set("createDebugNavMesh", js.Any.fromFunction1(value))
+    def setGetClosestPoint(value: Vector3 => Vector3): Self = StObject.set(x, "getClosestPoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateNavMesh(value: (js.Array[Mesh], INavMeshParameters) => Unit): Self = this.set("createNavMesh", js.Any.fromFunction2(value))
+    def setGetClosestPointToRef(value: (Vector3, Vector3) => Unit): Self = StObject.set(x, "getClosestPointToRef", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setGetDefaultQueryExtent(value: () => Vector3): Self = StObject.set(x, "getDefaultQueryExtent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClosestPoint(value: Vector3 => Vector3): Self = this.set("getClosestPoint", js.Any.fromFunction1(value))
+    def setGetDefaultQueryExtentToRef(value: Vector3 => Unit): Self = StObject.set(x, "getDefaultQueryExtentToRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetClosestPointToRef(value: (Vector3, Vector3) => Unit): Self = this.set("getClosestPointToRef", js.Any.fromFunction2(value))
+    def setGetMaximumSubStepCount(value: () => Double): Self = StObject.set(x, "getMaximumSubStepCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultQueryExtent(value: () => Vector3): Self = this.set("getDefaultQueryExtent", js.Any.fromFunction0(value))
+    def setGetNavmeshData(value: () => Uint8Array): Self = StObject.set(x, "getNavmeshData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultQueryExtentToRef(value: Vector3 => Unit): Self = this.set("getDefaultQueryExtentToRef", js.Any.fromFunction1(value))
+    def setGetRandomPointAround(value: (Vector3, Double) => Vector3): Self = StObject.set(x, "getRandomPointAround", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetMaximumSubStepCount(value: () => Double): Self = this.set("getMaximumSubStepCount", js.Any.fromFunction0(value))
+    def setGetRandomPointAroundToRef(value: (Vector3, Double, Vector3) => Unit): Self = StObject.set(x, "getRandomPointAroundToRef", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetNavmeshData(value: () => Uint8Array): Self = this.set("getNavmeshData", js.Any.fromFunction0(value))
+    def setGetTimeStep(value: () => Double): Self = StObject.set(x, "getTimeStep", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRandomPointAround(value: (Vector3, Double) => Vector3): Self = this.set("getRandomPointAround", js.Any.fromFunction2(value))
+    def setIsSupported(value: () => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRandomPointAroundToRef(value: (Vector3, Double, Vector3) => Unit): Self = this.set("getRandomPointAroundToRef", js.Any.fromFunction3(value))
+    def setMoveAlong(value: (Vector3, Vector3) => Vector3): Self = StObject.set(x, "moveAlong", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetTimeStep(value: () => Double): Self = this.set("getTimeStep", js.Any.fromFunction0(value))
+    def setMoveAlongToRef(value: (Vector3, Vector3, Vector3) => Unit): Self = StObject.set(x, "moveAlongToRef", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setIsSupported(value: () => Boolean): Self = this.set("isSupported", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveAlong(value: (Vector3, Vector3) => Vector3): Self = this.set("moveAlong", js.Any.fromFunction2(value))
+    def setSetDefaultQueryExtent(value: Vector3 => Unit): Self = StObject.set(x, "setDefaultQueryExtent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveAlongToRef(value: (Vector3, Vector3, Vector3) => Unit): Self = this.set("moveAlongToRef", js.Any.fromFunction3(value))
+    def setSetMaximumSubStepCount(value: Double => Unit): Self = StObject.set(x, "setMaximumSubStepCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetDefaultQueryExtent(value: Vector3 => Unit): Self = this.set("setDefaultQueryExtent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMaximumSubStepCount(value: Double => Unit): Self = this.set("setMaximumSubStepCount", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTimeStep(value: Double => Unit): Self = this.set("setTimeStep", js.Any.fromFunction1(value))
+    def setSetTimeStep(value: Double => Unit): Self = StObject.set(x, "setTimeStep", js.Any.fromFunction1(value))
   }
 }

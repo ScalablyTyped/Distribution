@@ -4,6 +4,7 @@ import typings.activexVbide.activexVbideNumbers.`0`
 import typings.activexVbide.activexVbideNumbers.`1`
 import typings.activexVbide.activexVbideNumbers.`2`
 import typings.activexVbide.activexVbideNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexVbide.activexVbideNumbers.`0`
   - typings.activexVbide.activexVbideNumbers.`2`
 */
-trait vbextProcKind extends js.Object
+trait vbextProcKind extends StObject
 object vbextProcKind {
   
   @scala.inline

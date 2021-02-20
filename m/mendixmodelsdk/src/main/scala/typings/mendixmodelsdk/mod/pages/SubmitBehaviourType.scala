@@ -1,19 +1,34 @@
 package typings.mendixmodelsdk.mod.pages
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.SubmitBehaviourType")
 @js.native
-class SubmitBehaviourType ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.SubmitBehaviourType
-/* static members */
-@JSImport("mendixmodelsdk", "pages.SubmitBehaviourType")
-@js.native
-object SubmitBehaviourType extends js.Object {
+class SubmitBehaviourType protected ()
+  extends typings.mendixmodelsdk.allModelClassesMod.pages.SubmitBehaviourType {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object SubmitBehaviourType {
   
-  var OnEndEditing: typings.mendixmodelsdk.pagesMod.pages.SubmitBehaviourType = js.native
+  @JSImport("mendixmodelsdk", "pages.SubmitBehaviourType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var WhileEditing: typings.mendixmodelsdk.pagesMod.pages.SubmitBehaviourType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SubmitBehaviourType.OnEndEditing")
+  @js.native
+  def OnEndEditing: typings.mendixmodelsdk.pagesMod.pages.SubmitBehaviourType = js.native
+  @scala.inline
+  def OnEndEditing_=(x: typings.mendixmodelsdk.pagesMod.pages.SubmitBehaviourType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnEndEditing")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SubmitBehaviourType.WhileEditing")
+  @js.native
+  def WhileEditing: typings.mendixmodelsdk.pagesMod.pages.SubmitBehaviourType = js.native
+  @scala.inline
+  def WhileEditing_=(x: typings.mendixmodelsdk.pagesMod.pages.SubmitBehaviourType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WhileEditing")(x.asInstanceOf[js.Any])
 }

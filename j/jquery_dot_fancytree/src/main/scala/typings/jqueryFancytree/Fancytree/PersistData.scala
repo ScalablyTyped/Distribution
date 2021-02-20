@@ -1,11 +1,12 @@
 package typings.jqueryFancytree.Fancytree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PersistData extends js.Object {
+trait PersistData extends StObject {
   
   var active: String | Null = js.native
   
@@ -24,42 +25,30 @@ object PersistData {
   }
   
   @scala.inline
-  implicit class PersistDataOps[Self <: PersistData] (val x: Self) extends AnyVal {
+  implicit class PersistDataMutableBuilder[Self <: PersistData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveNull: Self = StObject.set(x, "active", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpanded(value: js.Array[String]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedVarargs(value: String*): Self = this.set("expanded", js.Array(value :_*))
+    def setExpandedVarargs(value: String*): Self = StObject.set(x, "expanded", js.Array(value :_*))
     
     @scala.inline
-    def setExpanded(value: js.Array[String]): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedVarargs(value: String*): Self = this.set("selected", js.Array(value :_*))
+    def setFocusNull: Self = StObject.set(x, "focus", null)
     
     @scala.inline
-    def setSelected(value: js.Array[String]): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelected(value: js.Array[String]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActiveNull: Self = this.set("active", null)
-    
-    @scala.inline
-    def setFocus(value: String): Self = this.set("focus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFocusNull: Self = this.set("focus", null)
+    def setSelectedVarargs(value: String*): Self = StObject.set(x, "selected", js.Array(value :_*))
   }
 }

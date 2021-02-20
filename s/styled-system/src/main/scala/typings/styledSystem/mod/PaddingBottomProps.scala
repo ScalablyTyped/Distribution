@@ -1,12 +1,13 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'pb' | 'paddingBottom'> */
 @js.native
-trait PaddingBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait PaddingBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   var paddingBottom: js.UndefOr[
     ResponsiveValue[
@@ -31,22 +32,7 @@ object PaddingBottomProps {
   }
   
   @scala.inline
-  implicit class PaddingBottomPropsOps[Self <: PaddingBottomProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with PaddingBottomProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPaddingBottomVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = this.set("paddingBottom", js.Array(value :_*))
+  implicit class PaddingBottomPropsMutableBuilder[Self <: PaddingBottomProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with PaddingBottomProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setPaddingBottom(
@@ -54,16 +40,16 @@ object PaddingBottomProps {
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
           ThemeType
         ]
-    ): Self = this.set("paddingBottom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingBottom: Self = this.set("paddingBottom", js.undefined)
+    def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
     
     @scala.inline
-    def setPaddingBottomNull: Self = this.set("paddingBottom", null)
+    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
     @scala.inline
-    def setPbVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = this.set("pb", js.Array(value :_*))
+    def setPaddingBottomVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
     
     @scala.inline
     def setPb(
@@ -71,12 +57,15 @@ object PaddingBottomProps {
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
           ThemeType
         ]
-    ): Self = this.set("pb", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePb: Self = this.set("pb", js.undefined)
+    def setPbNull: Self = StObject.set(x, "pb", null)
     
     @scala.inline
-    def setPbNull: Self = this.set("pb", null)
+    def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
+    
+    @scala.inline
+    def setPbVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContactSettings extends js.Object {
+trait ContactSettings extends StObject {
   
   /** Required. The administrative contact for the `Registration`. */
   var adminContact: js.UndefOr[Contact] = js.native
@@ -31,42 +32,30 @@ object ContactSettings {
   }
   
   @scala.inline
-  implicit class ContactSettingsOps[Self <: ContactSettings] (val x: Self) extends AnyVal {
+  implicit class ContactSettingsMutableBuilder[Self <: ContactSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminContact(value: Contact): Self = StObject.set(x, "adminContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminContactUndefined: Self = StObject.set(x, "adminContact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivacy(value: String): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminContact(value: Contact): Self = this.set("adminContact", value.asInstanceOf[js.Any])
+    def setPrivacyUndefined: Self = StObject.set(x, "privacy", js.undefined)
     
     @scala.inline
-    def deleteAdminContact: Self = this.set("adminContact", js.undefined)
+    def setRegistrantContact(value: Contact): Self = StObject.set(x, "registrantContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivacy(value: String): Self = this.set("privacy", value.asInstanceOf[js.Any])
+    def setRegistrantContactUndefined: Self = StObject.set(x, "registrantContact", js.undefined)
     
     @scala.inline
-    def deletePrivacy: Self = this.set("privacy", js.undefined)
+    def setTechnicalContact(value: Contact): Self = StObject.set(x, "technicalContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistrantContact(value: Contact): Self = this.set("registrantContact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistrantContact: Self = this.set("registrantContact", js.undefined)
-    
-    @scala.inline
-    def setTechnicalContact(value: Contact): Self = this.set("technicalContact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTechnicalContact: Self = this.set("technicalContact", js.undefined)
+    def setTechnicalContactUndefined: Self = StObject.set(x, "technicalContact", js.undefined)
   }
 }

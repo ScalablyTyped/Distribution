@@ -7,6 +7,7 @@ import typings.html5plus.html5plusStrings.scheme
 import typings.html5plus.html5plusStrings.shortcut
 import typings.html5plus.html5plusStrings.silent
 import typings.html5plus.html5plusStrings.stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
   */
 @js.native
-trait PlusRuntime extends js.Object {
+trait PlusRuntime extends StObject {
   
   /**
     * JSON对象，打开第三方程序参数

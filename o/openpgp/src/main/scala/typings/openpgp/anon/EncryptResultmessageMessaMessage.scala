@@ -1,12 +1,13 @@
 package typings.openpgp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined openpgp.openpgp.EncryptResult & {  message :openpgp.openpgp.message.Message,   signature :openpgp.openpgp.signature.Signature} */
 @js.native
-trait EncryptResultmessageMessaMessage extends js.Object {
+trait EncryptResultmessageMessaMessage extends StObject {
   
   var message: typings.openpgp.mod.message.Message = js.native
   
@@ -27,27 +28,15 @@ object EncryptResultmessageMessaMessage {
   }
   
   @scala.inline
-  implicit class EncryptResultmessageMessaMessageOps[Self <: EncryptResultmessageMessaMessage] (val x: Self) extends AnyVal {
+  implicit class EncryptResultmessageMessaMessageMutableBuilder[Self <: EncryptResultmessageMessaMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: typings.openpgp.mod.message.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSessionKey(value: AeadAlgorithm): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessage(value: typings.openpgp.mod.message.Message): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionKey(value: AeadAlgorithm): Self = this.set("sessionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignature(value: typings.openpgp.mod.signature.Signature): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setSignature(value: typings.openpgp.mod.signature.Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

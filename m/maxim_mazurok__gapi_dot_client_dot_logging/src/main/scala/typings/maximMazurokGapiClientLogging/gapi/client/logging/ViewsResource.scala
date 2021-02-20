@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientLogging.anon.Callback
 import typings.maximMazurokGapiClientLogging.anon.Fields
 import typings.maximMazurokGapiClientLogging.anon.Key
 import typings.maximMazurokGapiClientLogging.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewsResource extends js.Object {
+trait ViewsResource extends StObject {
   
   /** Creates a view over logs in a bucket. A bucket may contain a maximum of 50 views. */
   def create(request: Alt): Request[LogView] = js.native

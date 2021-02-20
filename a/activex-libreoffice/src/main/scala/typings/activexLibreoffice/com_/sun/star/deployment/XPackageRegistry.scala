@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.deployment
 
 import typings.activexLibreoffice.com_.sun.star.ucb.XCommandEnvironment
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait XPackageRegistry extends js.Object {
+trait XPackageRegistry extends StObject {
   
   /**
     * gets the supported XPackageTypeInfos.
@@ -69,30 +70,18 @@ object XPackageRegistry {
   }
   
   @scala.inline
-  implicit class XPackageRegistryOps[Self <: XPackageRegistry] (val x: Self) extends AnyVal {
+  implicit class XPackageRegistryMutableBuilder[Self <: XPackageRegistry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindPackage(value: (String, String, Boolean, String, XCommandEnvironment) => XPackage): Self = StObject.set(x, "bindPackage", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSupportedPackageTypes(value: () => SafeArray[XPackageTypeInfo]): Self = StObject.set(x, "getSupportedPackageTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageRemoved(value: (String, String) => Unit): Self = StObject.set(x, "packageRemoved", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSupportedPackageTypes(value: SafeArray[XPackageTypeInfo]): Self = this.set("SupportedPackageTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBindPackage(value: (String, String, Boolean, String, XCommandEnvironment) => XPackage): Self = this.set("bindPackage", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setGetSupportedPackageTypes(value: () => SafeArray[XPackageTypeInfo]): Self = this.set("getSupportedPackageTypes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPackageRemoved(value: (String, String) => Unit): Self = this.set("packageRemoved", js.Any.fromFunction2(value))
+    def setSupportedPackageTypes(value: SafeArray[XPackageTypeInfo]): Self = StObject.set(x, "SupportedPackageTypes", value.asInstanceOf[js.Any])
   }
 }

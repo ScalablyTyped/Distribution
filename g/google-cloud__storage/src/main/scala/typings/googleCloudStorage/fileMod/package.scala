@@ -1,5 +1,6 @@
 package typings.googleCloudStorage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -147,6 +148,9 @@ package object fileMod {
   type RotateEncryptionKeyOptions = java.lang.String | typings.node.Buffer | typings.googleCloudStorage.fileMod.EncryptionKeyOptions
   
   type RotateEncryptionKeyResponse = typings.googleCloudStorage.fileMod.CopyResponse
+  
+  @scala.inline
+  def STORAGE_POST_POLICY_BASE_URL: /* "https://storage.googleapis.com" */ java.lang.String = typings.googleCloudStorage.fileMod.^.asInstanceOf[js.Dynamic].selectDynamic("STORAGE_POST_POLICY_BASE_URL").asInstanceOf[/* "https://storage.googleapis.com" */ java.lang.String]
   
   type SaveCallback = js.Function1[/* err */ js.UndefOr[typings.std.Error | scala.Null], scala.Unit]
   

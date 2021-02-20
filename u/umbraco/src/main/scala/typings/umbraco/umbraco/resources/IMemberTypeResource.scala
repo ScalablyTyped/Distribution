@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.resources
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description Loads in data for member types
   **/
 @js.native
-trait IMemberTypeResource extends js.Object {
+trait IMemberTypeResource extends StObject {
   
   //return all member types
   def getTypes(): js.Any = js.native
@@ -24,21 +25,9 @@ object IMemberTypeResource {
   }
   
   @scala.inline
-  implicit class IMemberTypeResourceOps[Self <: IMemberTypeResource] (val x: Self) extends AnyVal {
+  implicit class IMemberTypeResourceMutableBuilder[Self <: IMemberTypeResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetTypes(value: () => js.Any): Self = this.set("getTypes", js.Any.fromFunction0(value))
+    def setGetTypes(value: () => js.Any): Self = StObject.set(x, "getTypes", js.Any.fromFunction0(value))
   }
 }

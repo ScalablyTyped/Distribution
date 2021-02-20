@@ -5,6 +5,7 @@ import typings.pulumiAws.spotFleetRequestMod.SpotFleetRequestState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class SpotFleetRequest protected ()
   def this(name: String, args: SpotFleetRequestArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws", "ec2.SpotFleetRequest")
-@js.native
-object SpotFleetRequest extends js.Object {
+object SpotFleetRequest {
   
   /**
     * Get an existing SpotFleetRequest resource's state with the given name, ID, and optional extra
@@ -37,14 +36,24 @@ object SpotFleetRequest extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws", "ec2.SpotFleetRequest.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.spotFleetRequestMod.SpotFleetRequest = js.native
+  @JSImport("@pulumi/aws", "ec2.SpotFleetRequest.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.spotFleetRequestMod.SpotFleetRequest = js.native
+  @JSImport("@pulumi/aws", "ec2.SpotFleetRequest.get")
+  @js.native
   def get(name: String, id: Input[ID], state: SpotFleetRequestState): typings.pulumiAws.spotFleetRequestMod.SpotFleetRequest = js.native
+  @JSImport("@pulumi/aws", "ec2.SpotFleetRequest.get")
+  @js.native
   def get(name: String, id: Input[ID], state: SpotFleetRequestState, opts: CustomResourceOptions): typings.pulumiAws.spotFleetRequestMod.SpotFleetRequest = js.native
   
   /**
     * Returns true if the given object is an instance of SpotFleetRequest.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws", "ec2.SpotFleetRequest.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/spotFleetRequest.SpotFleetRequest */ Boolean = js.native
 }

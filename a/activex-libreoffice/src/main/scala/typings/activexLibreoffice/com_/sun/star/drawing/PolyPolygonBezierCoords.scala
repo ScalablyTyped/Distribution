@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the coordinates for a poly polygon Bezier. */
 @js.native
-trait PolyPolygonBezierCoords extends js.Object {
+trait PolyPolygonBezierCoords extends StObject {
   
   var Coordinates: PointSequenceSequence = js.native
   
@@ -21,30 +22,18 @@ object PolyPolygonBezierCoords {
   }
   
   @scala.inline
-  implicit class PolyPolygonBezierCoordsOps[Self <: PolyPolygonBezierCoords] (val x: Self) extends AnyVal {
+  implicit class PolyPolygonBezierCoordsMutableBuilder[Self <: PolyPolygonBezierCoords] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordinates(value: PointSequenceSequence): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordinatesVarargs(value: PointSequence*): Self = StObject.set(x, "Coordinates", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlags(value: FlagSequenceSequence): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinatesVarargs(value: PointSequence*): Self = this.set("Coordinates", js.Array(value :_*))
-    
-    @scala.inline
-    def setCoordinates(value: PointSequenceSequence): Self = this.set("Coordinates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlagsVarargs(value: FlagSequence*): Self = this.set("Flags", js.Array(value :_*))
-    
-    @scala.inline
-    def setFlags(value: FlagSequenceSequence): Self = this.set("Flags", value.asInstanceOf[js.Any])
+    def setFlagsVarargs(value: FlagSequence*): Self = StObject.set(x, "Flags", js.Array(value :_*))
   }
 }

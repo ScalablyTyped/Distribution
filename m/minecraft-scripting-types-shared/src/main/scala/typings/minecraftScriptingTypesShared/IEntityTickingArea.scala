@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesShared
 
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.entity_ticking_area
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,24 +28,12 @@ object IEntityTickingArea {
   }
   
   @scala.inline
-  implicit class IEntityTickingAreaOps[Self <: IEntityTickingArea] (val x: Self) extends AnyVal {
+  implicit class IEntityTickingAreaMutableBuilder[Self <: IEntityTickingArea] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity_ticking_area_id(value: Int64): Self = StObject.set(x, "entity_ticking_area_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set__type__(value: entity_ticking_area): Self = this.set("__type__", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntity_ticking_area_id(value: Int64): Self = this.set("entity_ticking_area_id", value.asInstanceOf[js.Any])
+    def set__type__(value: entity_ticking_area): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

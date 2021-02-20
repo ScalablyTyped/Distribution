@@ -1,46 +1,53 @@
 package typings.cssElementQueries
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("css-element-queries/src/ElementQueries", JSImport.Namespace)
-@js.native
-object elementQueriesMod extends js.Object {
+object elementQueriesMod {
   
-  @js.native
-  class ElementQueries () extends js.Object
-  /* static members */
-  @js.native
-  object ElementQueries extends js.Object {
-    
-    /**
-      * Parses all available CSS and attach ResizeSensor to those elements which have rules attached.
-      * Make sure this is called after 'load' event, because CSS files are not ready when domReady is fired.
-      */
-    def init(): Unit = js.native
-    
-    /**
-      * Attaches to DOMLoadContent
-      */
-    def listen(): Unit = js.native
-  }
-  
+  @JSImport("css-element-queries/src/ElementQueries", JSImport.Default)
   @js.native
   class default () extends ElementQueries
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
     /**
       * Parses all available CSS and attach ResizeSensor to those elements which have rules attached.
       * Make sure this is called after 'load' event, because CSS files are not ready when domReady is fired.
       */
+    @JSImport("css-element-queries/src/ElementQueries", "default.init")
+    @js.native
     def init(): Unit = js.native
     
     /**
       * Attaches to DOMLoadContent
       */
+    @JSImport("css-element-queries/src/ElementQueries", "default.listen")
+    @js.native
+    def listen(): Unit = js.native
+  }
+  
+  @JSImport("css-element-queries/src/ElementQueries", "ElementQueries")
+  @js.native
+  class ElementQueries () extends StObject
+  /* static members */
+  object ElementQueries {
+    
+    /**
+      * Parses all available CSS and attach ResizeSensor to those elements which have rules attached.
+      * Make sure this is called after 'load' event, because CSS files are not ready when domReady is fired.
+      */
+    @JSImport("css-element-queries/src/ElementQueries", "ElementQueries.init")
+    @js.native
+    def init(): Unit = js.native
+    
+    /**
+      * Attaches to DOMLoadContent
+      */
+    @JSImport("css-element-queries/src/ElementQueries", "ElementQueries.listen")
+    @js.native
     def listen(): Unit = js.native
   }
 }

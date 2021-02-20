@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactListOtherAppWriteAccess extends js.Object
+sealed trait ContactListOtherAppWriteAccess extends StObject
 /** Specifies the level of contact write access granted to other apps. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactListOtherAppWriteAccess")
 @js.native
-object ContactListOtherAppWriteAccess extends js.Object {
+object ContactListOtherAppWriteAccess extends StObject {
   
   /** No write access is granted. */
   @js.native

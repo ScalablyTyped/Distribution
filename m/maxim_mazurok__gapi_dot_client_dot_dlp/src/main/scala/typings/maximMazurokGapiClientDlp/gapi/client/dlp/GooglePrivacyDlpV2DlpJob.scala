@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2DlpJob extends js.Object {
+trait GooglePrivacyDlpV2DlpJob extends StObject {
   
   /** Time when the job was created. */
   var createTime: js.UndefOr[String] = js.native
@@ -46,81 +47,69 @@ object GooglePrivacyDlpV2DlpJob {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2DlpJobOps[Self <: GooglePrivacyDlpV2DlpJob] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2DlpJobMutableBuilder[Self <: GooglePrivacyDlpV2DlpJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setErrors(value: js.Array[GooglePrivacyDlpV2Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setErrorsVarargs(value: GooglePrivacyDlpV2Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: GooglePrivacyDlpV2Error*): Self = this.set("errors", js.Array(value :_*))
+    def setInspectDetails(value: GooglePrivacyDlpV2InspectDataSourceDetails): Self = StObject.set(x, "inspectDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Array[GooglePrivacyDlpV2Error]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setInspectDetailsUndefined: Self = StObject.set(x, "inspectDetails", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setJobTriggerName(value: String): Self = StObject.set(x, "jobTriggerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspectDetails(value: GooglePrivacyDlpV2InspectDataSourceDetails): Self = this.set("inspectDetails", value.asInstanceOf[js.Any])
+    def setJobTriggerNameUndefined: Self = StObject.set(x, "jobTriggerName", js.undefined)
     
     @scala.inline
-    def deleteInspectDetails: Self = this.set("inspectDetails", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobTriggerName(value: String): Self = this.set("jobTriggerName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteJobTriggerName: Self = this.set("jobTriggerName", js.undefined)
+    def setRiskDetails(value: GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails): Self = StObject.set(x, "riskDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRiskDetailsUndefined: Self = StObject.set(x, "riskDetails", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiskDetails(value: GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails): Self = this.set("riskDetails", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteRiskDetails: Self = this.set("riskDetails", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

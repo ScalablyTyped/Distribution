@@ -6,12 +6,13 @@ import typings.acmeClient.acmeClientStrings.invalid
 import typings.acmeClient.acmeClientStrings.pending
 import typings.acmeClient.acmeClientStrings.revoked
 import typings.acmeClient.acmeClientStrings.valid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Authorization extends js.Object {
+trait Authorization extends StObject {
   
   var challenges: js.Array[Challenge] = js.native
   
@@ -36,42 +37,30 @@ object Authorization {
   }
   
   @scala.inline
-  implicit class AuthorizationOps[Self <: Authorization] (val x: Self) extends AnyVal {
+  implicit class AuthorizationMutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChallenges(value: js.Array[Challenge]): Self = StObject.set(x, "challenges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChallengesVarargs(value: Challenge*): Self = StObject.set(x, "challenges", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallengesVarargs(value: Challenge*): Self = this.set("challenges", js.Array(value :_*))
+    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
     @scala.inline
-    def setChallenges(value: js.Array[Challenge]): Self = this.set("challenges", value.asInstanceOf[js.Any])
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setStatus(value: pending | valid | invalid | deactivated | expired | revoked): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: pending | valid | invalid | deactivated | expired | revoked): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setWildcard(value: Boolean): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires(value: String): Self = this.set("expires", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpires: Self = this.set("expires", js.undefined)
-    
-    @scala.inline
-    def setWildcard(value: Boolean): Self = this.set("wildcard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWildcard: Self = this.set("wildcard", js.undefined)
+    def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
   }
 }

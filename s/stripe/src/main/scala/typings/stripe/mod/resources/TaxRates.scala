@@ -4,18 +4,21 @@ import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.taxRates.ITaxRate
 import typings.stripe.mod.taxRates.ITaxRateCreationOptions
 import typings.stripe.mod.taxRates.ITaxRateUpdateOptions
 import typings.stripe.mod.taxRates.ItaxRateSearchOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.TaxRates")
 @js.native
-class TaxRates () extends StripeResource {
+class TaxRates protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   /**
     * Creates a new tax rate.

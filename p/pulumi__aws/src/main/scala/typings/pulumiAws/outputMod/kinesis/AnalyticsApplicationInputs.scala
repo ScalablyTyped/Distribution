@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsApplicationInputs extends js.Object {
+trait AnalyticsApplicationInputs extends StObject {
   
   /**
     * The ARN of the Kinesis Analytics Application.
@@ -66,60 +67,48 @@ object AnalyticsApplicationInputs {
   }
   
   @scala.inline
-  implicit class AnalyticsApplicationInputsOps[Self <: AnalyticsApplicationInputs] (val x: Self) extends AnyVal {
+  implicit class AnalyticsApplicationInputsMutableBuilder[Self <: AnalyticsApplicationInputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKinesisFirehose(value: AnalyticsApplicationInputsKinesisFirehose): Self = StObject.set(x, "kinesisFirehose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKinesisFirehoseUndefined: Self = StObject.set(x, "kinesisFirehose", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKinesisStream(value: AnalyticsApplicationInputsKinesisStream): Self = StObject.set(x, "kinesisStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePrefix(value: String): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    def setKinesisStreamUndefined: Self = StObject.set(x, "kinesisStream", js.undefined)
     
     @scala.inline
-    def setParallelism(value: AnalyticsApplicationInputsParallelism): Self = this.set("parallelism", value.asInstanceOf[js.Any])
+    def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: AnalyticsApplicationInputsSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setParallelism(value: AnalyticsApplicationInputsParallelism): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartingPositionConfigurationsVarargs(value: AnalyticsApplicationInputsStartingPositionConfiguration*): Self = this.set("startingPositionConfigurations", js.Array(value :_*))
+    def setProcessingConfiguration(value: AnalyticsApplicationInputsProcessingConfiguration): Self = StObject.set(x, "processingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartingPositionConfigurations(value: js.Array[AnalyticsApplicationInputsStartingPositionConfiguration]): Self = this.set("startingPositionConfigurations", value.asInstanceOf[js.Any])
+    def setProcessingConfigurationUndefined: Self = StObject.set(x, "processingConfiguration", js.undefined)
     
     @scala.inline
-    def setStreamNamesVarargs(value: String*): Self = this.set("streamNames", js.Array(value :_*))
+    def setSchema(value: AnalyticsApplicationInputsSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamNames(value: js.Array[String]): Self = this.set("streamNames", value.asInstanceOf[js.Any])
+    def setStartingPositionConfigurations(value: js.Array[AnalyticsApplicationInputsStartingPositionConfiguration]): Self = StObject.set(x, "startingPositionConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisFirehose(value: AnalyticsApplicationInputsKinesisFirehose): Self = this.set("kinesisFirehose", value.asInstanceOf[js.Any])
+    def setStartingPositionConfigurationsVarargs(value: AnalyticsApplicationInputsStartingPositionConfiguration*): Self = StObject.set(x, "startingPositionConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def deleteKinesisFirehose: Self = this.set("kinesisFirehose", js.undefined)
+    def setStreamNames(value: js.Array[String]): Self = StObject.set(x, "streamNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisStream(value: AnalyticsApplicationInputsKinesisStream): Self = this.set("kinesisStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisStream: Self = this.set("kinesisStream", js.undefined)
-    
-    @scala.inline
-    def setProcessingConfiguration(value: AnalyticsApplicationInputsProcessingConfiguration): Self = this.set("processingConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessingConfiguration: Self = this.set("processingConfiguration", js.undefined)
+    def setStreamNamesVarargs(value: String*): Self = StObject.set(x, "streamNames", js.Array(value :_*))
   }
 }

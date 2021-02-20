@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,51 +48,39 @@ object SimpleExpressionNode {
   }
   
   @scala.inline
-  implicit class SimpleExpressionNodeOps[Self <: SimpleExpressionNode] (val x: Self) extends AnyVal {
+  implicit class SimpleExpressionNodeMutableBuilder[Self <: SimpleExpressionNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoisted(value: JSChildNode): Self = StObject.set(x, "hoisted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoistedUndefined: Self = StObject.set(x, "hoisted", js.undefined)
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setIdentifiers(value: js.Array[String]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConstant(value: Boolean): Self = this.set("isConstant", value.asInstanceOf[js.Any])
+    def setIdentifiersUndefined: Self = StObject.set(x, "identifiers", js.undefined)
     
     @scala.inline
-    def setIsStatic(value: Boolean): Self = this.set("isStatic", value.asInstanceOf[js.Any])
+    def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: `4`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setIsConstant(value: Boolean): Self = StObject.set(x, "isConstant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoisted(value: JSChildNode): Self = this.set("hoisted", value.asInstanceOf[js.Any])
+    def setIsRuntimeConstant(value: Boolean): Self = StObject.set(x, "isRuntimeConstant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHoisted: Self = this.set("hoisted", js.undefined)
+    def setIsRuntimeConstantUndefined: Self = StObject.set(x, "isRuntimeConstant", js.undefined)
     
     @scala.inline
-    def setIdentifiersVarargs(value: String*): Self = this.set("identifiers", js.Array(value :_*))
+    def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifiers(value: js.Array[String]): Self = this.set("identifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentifiers: Self = this.set("identifiers", js.undefined)
-    
-    @scala.inline
-    def setIsRuntimeConstant(value: Boolean): Self = this.set("isRuntimeConstant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsRuntimeConstant: Self = this.set("isRuntimeConstant", js.undefined)
+    def setType(value: `4`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

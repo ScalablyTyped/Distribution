@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Phase extends js.Object {
+trait Phase extends StObject {
   
   var lineLength: Double = js.native
   
@@ -22,30 +23,18 @@ object Phase {
   }
   
   @scala.inline
-  implicit class PhaseOps[Self <: Phase] (val x: Self) extends AnyVal {
+  implicit class PhaseMutableBuilder[Self <: Phase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineLength(value: Double): Self = StObject.set(x, "lineLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPhase(value: Double): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     
     @scala.inline
-    def setLineLength(value: Double): Self = this.set("lineLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpaceLength(value: Double): Self = this.set("spaceLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhase(value: Double): Self = this.set("phase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhase: Self = this.set("phase", js.undefined)
+    def setSpaceLength(value: Double): Self = StObject.set(x, "spaceLength", value.asInstanceOf[js.Any])
   }
 }

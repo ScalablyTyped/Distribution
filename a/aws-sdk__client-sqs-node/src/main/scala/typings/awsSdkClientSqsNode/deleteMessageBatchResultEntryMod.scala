@@ -1,13 +1,13 @@
 package typings.awsSdkClientSqsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/model/_DeleteMessageBatchResultEntry", JSImport.Namespace)
-@js.native
-object deleteMessageBatchResultEntryMod extends js.Object {
+object deleteMessageBatchResultEntryMod {
   
-  @JSName("_DeleteMessageBatchResultEntry")
+  @JSImport("@aws-sdk/client-sqs-node/model/_DeleteMessageBatchResultEntry", "_DeleteMessageBatchResultEntry")
+  @js.native
   val DeleteMessageBatchResultEntry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

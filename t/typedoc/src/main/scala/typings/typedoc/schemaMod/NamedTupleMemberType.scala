@@ -1,5 +1,6 @@
 package typings.typedoc.schemaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.NamedTupleMember, 'type'> */
 @js.native
-trait NamedTupleMemberType extends js.Object {
+trait NamedTupleMemberType extends StObject {
   
   var element: ModelToObject[typings.typedoc.typesAbstractMod.Type] = js.native
   
@@ -32,36 +33,24 @@ object NamedTupleMemberType {
   }
   
   @scala.inline
-  implicit class NamedTupleMemberTypeOps[Self <: NamedTupleMemberType] (val x: Self) extends AnyVal {
+  implicit class NamedTupleMemberTypeMutableBuilder[Self <: NamedTupleMemberType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: ModelToObject[typings.typedoc.typesAbstractMod.Type]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "element", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementVarargs(value: _ModelToObject[js.Any]*): Self = this.set("element", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: ModelToObject[typings.typedoc.typesAbstractMod.Type]): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setType(value: (ModelToObject[/* "named-tuple-member" */ String]) | (/* "named-tuple-member" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOptional(value: Boolean): Self = this.set("isOptional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: (ModelToObject[/* "named-tuple-member" */ String]) | (/* "named-tuple-member" */ String)): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

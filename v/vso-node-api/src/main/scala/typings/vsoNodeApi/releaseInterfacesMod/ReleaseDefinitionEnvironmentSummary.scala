@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseDefinitionEnvironmentSummary extends js.Object {
+trait ReleaseDefinitionEnvironmentSummary extends StObject {
   
   var id: Double = js.native
   
@@ -22,30 +23,18 @@ object ReleaseDefinitionEnvironmentSummary {
   }
   
   @scala.inline
-  implicit class ReleaseDefinitionEnvironmentSummaryOps[Self <: ReleaseDefinitionEnvironmentSummary] (val x: Self) extends AnyVal {
+  implicit class ReleaseDefinitionEnvironmentSummaryMutableBuilder[Self <: ReleaseDefinitionEnvironmentSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastReleases(value: js.Array[ReleaseShallowReference]): Self = StObject.set(x, "lastReleases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastReleasesVarargs(value: ReleaseShallowReference*): Self = StObject.set(x, "lastReleases", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastReleasesVarargs(value: ReleaseShallowReference*): Self = this.set("lastReleases", js.Array(value :_*))
-    
-    @scala.inline
-    def setLastReleases(value: js.Array[ReleaseShallowReference]): Self = this.set("lastReleases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

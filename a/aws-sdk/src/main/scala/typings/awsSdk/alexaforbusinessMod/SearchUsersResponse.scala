@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchUsersResponse extends js.Object {
+trait SearchUsersResponse extends StObject {
   
   /**
     * The token returned to indicate that there is more data available.
@@ -31,39 +32,27 @@ object SearchUsersResponse {
   }
   
   @scala.inline
-  implicit class SearchUsersResponseOps[Self <: SearchUsersResponse] (val x: Self) extends AnyVal {
+  implicit class SearchUsersResponseMutableBuilder[Self <: SearchUsersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setUsers(value: UserDataList): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalCount(value: TotalCount): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
+    def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
     @scala.inline
-    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
-    
-    @scala.inline
-    def setUsersVarargs(value: UserData*): Self = this.set("Users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: UserDataList): Self = this.set("Users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsers: Self = this.set("Users", js.undefined)
+    def setUsersVarargs(value: UserData*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

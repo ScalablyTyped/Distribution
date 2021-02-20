@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointsmsvoiceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateConfigurationSetEventDestinationRequest extends js.Object {
+trait CreateConfigurationSetEventDestinationRequest extends StObject {
   
   /**
     * ConfigurationSetName
@@ -28,33 +29,21 @@ object CreateConfigurationSetEventDestinationRequest {
   }
   
   @scala.inline
-  implicit class CreateConfigurationSetEventDestinationRequestOps[Self <: CreateConfigurationSetEventDestinationRequest] (val x: Self) extends AnyVal {
+  implicit class CreateConfigurationSetEventDestinationRequestMutableBuilder[Self <: CreateConfigurationSetEventDestinationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSetName(value: _String): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventDestination(value: EventDestinationDefinition): Self = StObject.set(x, "EventDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventDestinationName(value: NonEmptyString): Self = StObject.set(x, "EventDestinationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationSetName(value: _String): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    def setEventDestinationNameUndefined: Self = StObject.set(x, "EventDestinationName", js.undefined)
     
     @scala.inline
-    def setEventDestination(value: EventDestinationDefinition): Self = this.set("EventDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventDestination: Self = this.set("EventDestination", js.undefined)
-    
-    @scala.inline
-    def setEventDestinationName(value: NonEmptyString): Self = this.set("EventDestinationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventDestinationName: Self = this.set("EventDestinationName", js.undefined)
+    def setEventDestinationUndefined: Self = StObject.set(x, "EventDestination", js.undefined)
   }
 }

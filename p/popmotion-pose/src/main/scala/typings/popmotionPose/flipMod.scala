@@ -5,14 +5,15 @@ import typings.popmotionPose.libTypesMod.PoserState
 import typings.popmotionPose.typesMod.DomPopmotionPoser
 import typings.popmotionPose.typesMod.TransitionDefinition
 import typings.popmotionPose.typesMod.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion-pose/lib/dom/flip", JSImport.Namespace)
-@js.native
-object flipMod extends js.Object {
+object flipMod {
   
+  @JSImport("popmotion-pose/lib/dom/flip", "flipPose")
+  @js.native
   def flipPose(
     props: PoserState[
       Value, 
@@ -29,6 +30,8 @@ object flipMod extends js.Object {
     TransitionDefinition
   ] = js.native
   
+  @JSImport("popmotion-pose/lib/dom/flip", "isFlipPose")
+  @js.native
   def isFlipPose(
     flip: Boolean,
     key: String,
@@ -40,6 +43,8 @@ object flipMod extends js.Object {
     ]
   ): Boolean = js.native
   
+  @JSImport("popmotion-pose/lib/dom/flip", "setValue")
+  @js.native
   def setValue(
     hasValuesProps: PoserState[
       Value, 

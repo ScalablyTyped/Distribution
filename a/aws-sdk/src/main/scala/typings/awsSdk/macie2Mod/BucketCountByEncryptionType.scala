@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketCountByEncryptionType extends js.Object {
+trait BucketCountByEncryptionType extends StObject {
   
   /**
     *  The total number of buckets that use an AWS Key Management Service (AWS KMS) customer master key (CMK) to encrypt objects. These buckets use AWS managed AWS KMS (AWS-KMS) encryption or customer managed AWS KMS (SSE-KMS) encryption.
@@ -31,36 +32,24 @@ object BucketCountByEncryptionType {
   }
   
   @scala.inline
-  implicit class BucketCountByEncryptionTypeOps[Self <: BucketCountByEncryptionType] (val x: Self) extends AnyVal {
+  implicit class BucketCountByEncryptionTypeMutableBuilder[Self <: BucketCountByEncryptionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKmsManaged(value: long): Self = StObject.set(x, "kmsManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKmsManagedUndefined: Self = StObject.set(x, "kmsManaged", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3Managed(value: long): Self = StObject.set(x, "s3Managed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsManaged(value: long): Self = this.set("kmsManaged", value.asInstanceOf[js.Any])
+    def setS3ManagedUndefined: Self = StObject.set(x, "s3Managed", js.undefined)
     
     @scala.inline
-    def deleteKmsManaged: Self = this.set("kmsManaged", js.undefined)
+    def setUnencrypted(value: long): Self = StObject.set(x, "unencrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Managed(value: long): Self = this.set("s3Managed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Managed: Self = this.set("s3Managed", js.undefined)
-    
-    @scala.inline
-    def setUnencrypted(value: long): Self = this.set("unencrypted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnencrypted: Self = this.set("unencrypted", js.undefined)
+    def setUnencryptedUndefined: Self = StObject.set(x, "unencrypted", js.undefined)
   }
 }

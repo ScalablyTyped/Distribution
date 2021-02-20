@@ -1,6 +1,7 @@
 package typings.extjs.Ext.layout
 
 import typings.extjs.Ext.layout.container.IVBox
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,66 +42,54 @@ object IAccordionLayout {
   }
   
   @scala.inline
-  implicit class IAccordionLayoutOps[Self <: IAccordionLayout] (val x: Self) extends AnyVal {
+  implicit class IAccordionLayoutMutableBuilder[Self <: IAccordionLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveOnTop(value: Boolean): Self = StObject.set(x, "activeOnTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveOnTopUndefined: Self = StObject.set(x, "activeOnTop", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveOnTop(value: Boolean): Self = this.set("activeOnTop", value.asInstanceOf[js.Any])
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def deleteActiveOnTop: Self = this.set("activeOnTop", js.undefined)
+    def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setCollapseFirst(value: Boolean): Self = StObject.set(x, "collapseFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWidth(value: Boolean): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    def setCollapseFirstUndefined: Self = StObject.set(x, "collapseFirst", js.undefined)
     
     @scala.inline
-    def deleteAutoWidth: Self = this.set("autoWidth", js.undefined)
+    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseFirst(value: Boolean): Self = this.set("collapseFirst", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteCollapseFirst: Self = this.set("collapseFirst", js.undefined)
+    def setHideCollapseTool(value: Boolean): Self = StObject.set(x, "hideCollapseTool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setHideCollapseToolUndefined: Self = StObject.set(x, "hideCollapseTool", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideCollapseTool(value: Boolean): Self = this.set("hideCollapseTool", value.asInstanceOf[js.Any])
+    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
     @scala.inline
-    def deleteHideCollapseTool: Self = this.set("hideCollapseTool", js.undefined)
+    def setTitleCollapse(value: Boolean): Self = StObject.set(x, "titleCollapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMulti: Self = this.set("multi", js.undefined)
-    
-    @scala.inline
-    def setTitleCollapse(value: Boolean): Self = this.set("titleCollapse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleCollapse: Self = this.set("titleCollapse", js.undefined)
+    def setTitleCollapseUndefined: Self = StObject.set(x, "titleCollapse", js.undefined)
   }
 }

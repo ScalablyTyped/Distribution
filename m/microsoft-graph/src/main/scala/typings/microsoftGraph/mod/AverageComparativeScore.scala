@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AverageComparativeScore extends js.Object {
+trait AverageComparativeScore extends StObject {
   
   // Average score within specified basis.
   var averageScore: js.UndefOr[NullableOption[Double]] = js.native
@@ -22,36 +23,24 @@ object AverageComparativeScore {
   }
   
   @scala.inline
-  implicit class AverageComparativeScoreOps[Self <: AverageComparativeScore] (val x: Self) extends AnyVal {
+  implicit class AverageComparativeScoreMutableBuilder[Self <: AverageComparativeScore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageScore(value: NullableOption[Double]): Self = StObject.set(x, "averageScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageScoreNull: Self = StObject.set(x, "averageScore", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAverageScoreUndefined: Self = StObject.set(x, "averageScore", js.undefined)
     
     @scala.inline
-    def setAverageScore(value: NullableOption[Double]): Self = this.set("averageScore", value.asInstanceOf[js.Any])
+    def setBasis(value: NullableOption[String]): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageScore: Self = this.set("averageScore", js.undefined)
+    def setBasisNull: Self = StObject.set(x, "basis", null)
     
     @scala.inline
-    def setAverageScoreNull: Self = this.set("averageScore", null)
-    
-    @scala.inline
-    def setBasis(value: NullableOption[String]): Self = this.set("basis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBasis: Self = this.set("basis", js.undefined)
-    
-    @scala.inline
-    def setBasisNull: Self = this.set("basis", null)
+    def setBasisUndefined: Self = StObject.set(x, "basis", js.undefined)
   }
 }

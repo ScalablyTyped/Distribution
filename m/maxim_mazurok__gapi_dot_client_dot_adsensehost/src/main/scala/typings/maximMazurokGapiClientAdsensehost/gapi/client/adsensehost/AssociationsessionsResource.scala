@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientAdsensehost.gapi.client.adsensehost
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAdsensehost.anon.CallbackUrl
 import typings.maximMazurokGapiClientAdsensehost.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociationsessionsResource extends js.Object {
+trait AssociationsessionsResource extends StObject {
   
   /** Create an association session for initiating an association with an AdSense user. */
   def start(): Request[AssociationSession] = js.native

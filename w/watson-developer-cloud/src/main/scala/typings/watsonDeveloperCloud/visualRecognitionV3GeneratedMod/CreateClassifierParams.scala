@@ -4,13 +4,14 @@ import typings.ibmCloudSdkCore.helperMod.FileObject
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createClassifier` operation. */
 @js.native
-trait CreateClassifierParams extends js.Object {
+trait CreateClassifierParams extends StObject {
   
   var headers: js.UndefOr[js.Object] = js.native
   
@@ -37,48 +38,36 @@ object CreateClassifierParams {
   }
   
   @scala.inline
-  implicit class CreateClassifierParamsOps[Self <: CreateClassifierParams] (val x: Self) extends AnyVal {
+  implicit class CreateClassifierParamsMutableBuilder[Self <: CreateClassifierParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNegative_examples(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "negative_examples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositive_examples(value: Map[String, ReadableStream | FileObject | Buffer]): Self = this.set("positive_examples", value.asInstanceOf[js.Any])
+    def setNegative_examplesUndefined: Self = StObject.set(x, "negative_examples", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setNegative_examples_filename(value: String): Self = StObject.set(x, "negative_examples_filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setNegative_examples_filenameUndefined: Self = StObject.set(x, "negative_examples_filename", js.undefined)
     
     @scala.inline
-    def setNegative_examples(value: ReadableStream | FileObject | Buffer): Self = this.set("negative_examples", value.asInstanceOf[js.Any])
+    def setPositive_examples(value: Map[String, ReadableStream | FileObject | Buffer]): Self = StObject.set(x, "positive_examples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNegative_examples: Self = this.set("negative_examples", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegative_examples_filename(value: String): Self = this.set("negative_examples_filename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNegative_examples_filename: Self = this.set("negative_examples_filename", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

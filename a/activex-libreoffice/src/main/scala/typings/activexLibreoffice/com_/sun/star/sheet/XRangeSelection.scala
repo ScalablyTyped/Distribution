@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,36 +56,24 @@ object XRangeSelection {
   }
   
   @scala.inline
-  implicit class XRangeSelectionOps[Self <: XRangeSelection] (val x: Self) extends AnyVal {
+  implicit class XRangeSelectionMutableBuilder[Self <: XRangeSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortRangeSelection(value: () => Unit): Self = StObject.set(x, "abortRangeSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRangeSelectionChangeListener(value: XRangeSelectionChangeListener => Unit): Self = StObject.set(x, "addRangeSelectionChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddRangeSelectionListener(value: XRangeSelectionListener => Unit): Self = StObject.set(x, "addRangeSelectionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAbortRangeSelection(value: () => Unit): Self = this.set("abortRangeSelection", js.Any.fromFunction0(value))
+    def setRemoveRangeSelectionChangeListener(value: XRangeSelectionChangeListener => Unit): Self = StObject.set(x, "removeRangeSelectionChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRangeSelectionChangeListener(value: XRangeSelectionChangeListener => Unit): Self = this.set("addRangeSelectionChangeListener", js.Any.fromFunction1(value))
+    def setRemoveRangeSelectionListener(value: XRangeSelectionListener => Unit): Self = StObject.set(x, "removeRangeSelectionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRangeSelectionListener(value: XRangeSelectionListener => Unit): Self = this.set("addRangeSelectionListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveRangeSelectionChangeListener(value: XRangeSelectionChangeListener => Unit): Self = this.set("removeRangeSelectionChangeListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveRangeSelectionListener(value: XRangeSelectionListener => Unit): Self = this.set("removeRangeSelectionListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartRangeSelection(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("startRangeSelection", js.Any.fromFunction1(value))
+    def setStartRangeSelection(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "startRangeSelection", js.Any.fromFunction1(value))
   }
 }

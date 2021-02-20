@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.autoscaling.v2beta2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * MetricSpec specifies how to scale based on a single metric (only `type` and one other matching field should be set at once).
   */
 @js.native
-trait MetricSpec extends js.Object {
+trait MetricSpec extends StObject {
   
   /**
     * external refers to a global metric that is not associated with any Kubernetes object. It allows autoscaling based on information coming from components running outside of cluster (for example length of queue in cloud messaging service, or QPS from loadbalancer running outside of cluster).
@@ -46,45 +47,33 @@ object MetricSpec {
   }
   
   @scala.inline
-  implicit class MetricSpecOps[Self <: MetricSpec] (val x: Self) extends AnyVal {
+  implicit class MetricSpecMutableBuilder[Self <: MetricSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternal(value: Input[ExternalMetricSource]): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObject(value: Input[ObjectMetricSource]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
     @scala.inline
-    def setExternal(value: Input[ExternalMetricSource]): Self = this.set("external", value.asInstanceOf[js.Any])
+    def setPods(value: Input[PodsMetricSource]): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternal: Self = this.set("external", js.undefined)
+    def setPodsUndefined: Self = StObject.set(x, "pods", js.undefined)
     
     @scala.inline
-    def setObject(value: Input[ObjectMetricSource]): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setResource(value: Input[ResourceMetricSource]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObject: Self = this.set("object", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def setPods(value: Input[PodsMetricSource]): Self = this.set("pods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePods: Self = this.set("pods", js.undefined)
-    
-    @scala.inline
-    def setResource(value: Input[ResourceMetricSource]): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

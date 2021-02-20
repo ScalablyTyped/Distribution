@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceTransportParameterMapData extends js.Object {
+trait DataSourceTransportParameterMapData extends StObject {
   
   var aggregate: js.UndefOr[js.Array[DataSourceParameterMapDataAggregate]] = js.native
   
@@ -34,84 +35,72 @@ object DataSourceTransportParameterMapData {
   }
   
   @scala.inline
-  implicit class DataSourceTransportParameterMapDataOps[Self <: DataSourceTransportParameterMapData] (val x: Self) extends AnyVal {
+  implicit class DataSourceTransportParameterMapDataMutableBuilder[Self <: DataSourceTransportParameterMapData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregate(value: js.Array[DataSourceParameterMapDataAggregate]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregateVarargs(value: DataSourceParameterMapDataAggregate*): Self = StObject.set(x, "aggregate", js.Array(value :_*))
     
     @scala.inline
-    def setAggregateVarargs(value: DataSourceParameterMapDataAggregate*): Self = this.set("aggregate", js.Array(value :_*))
+    def setFilter(value: DataSourceParameterMapDataFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregate(value: js.Array[DataSourceParameterMapDataAggregate]): Self = this.set("aggregate", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteAggregate: Self = this.set("aggregate", js.undefined)
+    def setGroup(value: js.Array[DataSourceParameterMapDataGroup]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: DataSourceParameterMapDataFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setGroupVarargs(value: DataSourceParameterMapDataGroup*): Self = StObject.set(x, "group", js.Array(value :_*))
     
     @scala.inline
-    def setGroupVarargs(value: DataSourceParameterMapDataGroup*): Self = this.set("group", js.Array(value :_*))
+    def setModels(value: js.Array[Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: js.Array[DataSourceParameterMapDataGroup]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value :_*))
     
     @scala.inline
-    def setModelsVarargs(value: Model*): Self = this.set("models", js.Array(value :_*))
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModels(value: js.Array[Model]): Self = this.set("models", value.asInstanceOf[js.Any])
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModels: Self = this.set("models", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setSort(value: js.Array[DataSourceParameterMapDataSort]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip(value: Double): Self = this.set("skip", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setSortVarargs(value: DataSourceParameterMapDataSort*): Self = StObject.set(x, "sort", js.Array(value :_*))
     
     @scala.inline
-    def setSortVarargs(value: DataSourceParameterMapDataSort*): Self = this.set("sort", js.Array(value :_*))
+    def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: js.Array[DataSourceParameterMapDataSort]): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
-    
-    @scala.inline
-    def setTake(value: Double): Self = this.set("take", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTake: Self = this.set("take", js.undefined)
+    def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
   }
 }

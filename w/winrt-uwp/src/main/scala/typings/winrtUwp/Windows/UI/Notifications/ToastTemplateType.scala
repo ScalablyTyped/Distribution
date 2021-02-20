@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ToastTemplateType extends js.Object
+sealed trait ToastTemplateType extends StObject
 /** Specifies the template to use in a toast notification. */
 @JSGlobal("Windows.UI.Notifications.ToastTemplateType")
 @js.native
-object ToastTemplateType extends js.Object {
+object ToastTemplateType extends StObject {
   
   /** A large image and a single string wrapped across three lines of text. */
   @js.native

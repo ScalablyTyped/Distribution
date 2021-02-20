@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,33 +44,21 @@ object XLayoutConstrains {
   }
   
   @scala.inline
-  implicit class XLayoutConstrainsOps[Self <: XLayoutConstrains] (val x: Self) extends AnyVal {
+  implicit class XLayoutConstrainsMutableBuilder[Self <: XLayoutConstrains] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalcAdjustedSize(value: Size => Size): Self = StObject.set(x, "calcAdjustedSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMinimumSize(value: () => Size): Self = StObject.set(x, "getMinimumSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPreferredSize(value: () => Size): Self = StObject.set(x, "getPreferredSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMinimumSize(value: Size): Self = this.set("MinimumSize", value.asInstanceOf[js.Any])
+    def setMinimumSize(value: Size): Self = StObject.set(x, "MinimumSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredSize(value: Size): Self = this.set("PreferredSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCalcAdjustedSize(value: Size => Size): Self = this.set("calcAdjustedSize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetMinimumSize(value: () => Size): Self = this.set("getMinimumSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPreferredSize(value: () => Size): Self = this.set("getPreferredSize", js.Any.fromFunction0(value))
+    def setPreferredSize(value: Size): Self = StObject.set(x, "PreferredSize", value.asInstanceOf[js.Any])
   }
 }

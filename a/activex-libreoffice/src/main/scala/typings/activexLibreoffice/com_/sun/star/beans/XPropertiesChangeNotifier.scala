@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.beans
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,24 +36,12 @@ object XPropertiesChangeNotifier {
   }
   
   @scala.inline
-  implicit class XPropertiesChangeNotifierOps[Self <: XPropertiesChangeNotifier] (val x: Self) extends AnyVal {
+  implicit class XPropertiesChangeNotifierMutableBuilder[Self <: XPropertiesChangeNotifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "addPropertiesChangeListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddPropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = this.set("addPropertiesChangeListener", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemovePropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = this.set("removePropertiesChangeListener", js.Any.fromFunction2(value))
+    def setRemovePropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "removePropertiesChangeListener", js.Any.fromFunction2(value))
   }
 }

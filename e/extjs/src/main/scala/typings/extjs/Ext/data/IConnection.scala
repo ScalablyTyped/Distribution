@@ -1,6 +1,7 @@
 package typings.extjs.Ext.data
 
 import typings.extjs.Ext.util.IObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,122 +99,110 @@ object IConnection {
   }
   
   @scala.inline
-  implicit class IConnectionOps[Self <: IConnection] (val x: Self) extends AnyVal {
+  implicit class IConnectionMutableBuilder[Self <: IConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: /* request */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortAll(value: () => Unit): Self = StObject.set(x, "abortAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAbortAllUndefined: Self = StObject.set(x, "abortAll", js.undefined)
     
     @scala.inline
-    def setAbort(value: /* request */ js.UndefOr[js.Any] => Unit): Self = this.set("abort", js.Any.fromFunction1(value))
+    def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
     @scala.inline
-    def deleteAbort: Self = this.set("abort", js.undefined)
+    def setAutoAbort(value: Boolean): Self = StObject.set(x, "autoAbort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortAll(value: () => Unit): Self = this.set("abortAll", js.Any.fromFunction0(value))
+    def setAutoAbortUndefined: Self = StObject.set(x, "autoAbort", js.undefined)
     
     @scala.inline
-    def deleteAbortAll: Self = this.set("abortAll", js.undefined)
+    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAbort(value: Boolean): Self = this.set("autoAbort", value.asInstanceOf[js.Any])
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def deleteAutoAbort: Self = this.set("autoAbort", js.undefined)
+    def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
     @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
+    def setDefaultHeaders(value: js.Any): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCors(value: Boolean): Self = this.set("cors", value.asInstanceOf[js.Any])
+    def setDefaultHeadersUndefined: Self = StObject.set(x, "defaultHeaders", js.undefined)
     
     @scala.inline
-    def deleteCors: Self = this.set("cors", js.undefined)
+    def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHeaders(value: js.Any): Self = this.set("defaultHeaders", value.asInstanceOf[js.Any])
+    def setDisableCachingParam(value: String): Self = StObject.set(x, "disableCachingParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultHeaders: Self = this.set("defaultHeaders", js.undefined)
+    def setDisableCachingParamUndefined: Self = StObject.set(x, "disableCachingParam", js.undefined)
     
     @scala.inline
-    def setDisableCaching(value: Boolean): Self = this.set("disableCaching", value.asInstanceOf[js.Any])
+    def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
     
     @scala.inline
-    def deleteDisableCaching: Self = this.set("disableCaching", js.undefined)
+    def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableCachingParam(value: String): Self = this.set("disableCachingParam", value.asInstanceOf[js.Any])
+    def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
     
     @scala.inline
-    def deleteDisableCachingParam: Self = this.set("disableCachingParam", js.undefined)
+    def setIsLoading(value: /* request */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtraParams(value: js.Any): Self = this.set("extraParams", value.asInstanceOf[js.Any])
+    def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
     
     @scala.inline
-    def deleteExtraParams: Self = this.set("extraParams", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLoading(value: /* request */ js.UndefOr[js.Any] => Boolean): Self = this.set("isLoading", js.Any.fromFunction1(value))
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteIsLoading: Self = this.set("isLoading", js.undefined)
+    def setParseStatus(value: /* status */ js.UndefOr[Double] => _): Self = StObject.set(x, "parseStatus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setParseStatusUndefined: Self = StObject.set(x, "parseStatus", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setRequest(value: /* options */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseStatus(value: /* status */ js.UndefOr[Double] => _): Self = this.set("parseStatus", js.Any.fromFunction1(value))
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteParseStatus: Self = this.set("parseStatus", js.undefined)
+    def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRequest(value: /* options */ js.UndefOr[js.Any] => _): Self = this.set("request", js.Any.fromFunction1(value))
+    def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _): Self = this.set("setOptions", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSetOptions: Self = this.set("setOptions", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
     def setUpload(
       value: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("upload", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "upload", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteUpload: Self = this.set("upload", js.undefined)
+    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     
     @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

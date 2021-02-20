@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DynamicFilterCriteria extends js.Object
+sealed trait DynamicFilterCriteria extends StObject
 /**
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.DynamicFilterCriteria")
 @js.native
-object DynamicFilterCriteria extends js.Object {
+object DynamicFilterCriteria extends StObject {
   
   @js.native
   sealed trait aboveAverage extends DynamicFilterCriteria

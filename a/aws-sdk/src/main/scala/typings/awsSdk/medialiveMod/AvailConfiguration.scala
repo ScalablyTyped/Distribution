@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AvailConfiguration extends js.Object {
+trait AvailConfiguration extends StObject {
   
   /**
     * Ad avail settings.
@@ -21,24 +22,12 @@ object AvailConfiguration {
   }
   
   @scala.inline
-  implicit class AvailConfigurationOps[Self <: AvailConfiguration] (val x: Self) extends AnyVal {
+  implicit class AvailConfigurationMutableBuilder[Self <: AvailConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailSettings(value: AvailSettings): Self = StObject.set(x, "AvailSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAvailSettings(value: AvailSettings): Self = this.set("AvailSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailSettings: Self = this.set("AvailSettings", js.undefined)
+    def setAvailSettingsUndefined: Self = StObject.set(x, "AvailSettings", js.undefined)
   }
 }

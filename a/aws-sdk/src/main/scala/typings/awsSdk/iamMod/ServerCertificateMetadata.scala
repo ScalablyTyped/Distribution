@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerCertificateMetadata extends js.Object {
+trait ServerCertificateMetadata extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) specifying the server certificate. For more information about ARNs and how to use them in policies, see IAM Identifiers in the IAM User Guide. 
@@ -51,42 +52,30 @@ object ServerCertificateMetadata {
   }
   
   @scala.inline
-  implicit class ServerCertificateMetadataOps[Self <: ServerCertificateMetadata] (val x: Self) extends AnyVal {
+  implicit class ServerCertificateMetadataMutableBuilder[Self <: ServerCertificateMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpiration(value: dateType): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
     
     @scala.inline
-    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setServerCertificateId(value: idType): Self = StObject.set(x, "ServerCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertificateId(value: idType): Self = this.set("ServerCertificateId", value.asInstanceOf[js.Any])
+    def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertificateName(value: serverCertificateNameType): Self = this.set("ServerCertificateName", value.asInstanceOf[js.Any])
+    def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: dateType): Self = this.set("Expiration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiration: Self = this.set("Expiration", js.undefined)
-    
-    @scala.inline
-    def setUploadDate(value: dateType): Self = this.set("UploadDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadDate: Self = this.set("UploadDate", js.undefined)
+    def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
   }
 }

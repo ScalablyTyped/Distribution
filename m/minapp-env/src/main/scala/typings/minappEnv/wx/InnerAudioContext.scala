@@ -1,5 +1,6 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +41,7 @@ innerAudioContext.onError((res) => {
 })
 ``` */
 @js.native
-trait InnerAudioContext extends js.Object {
+trait InnerAudioContext extends StObject {
   
   /** 是否自动开始播放，默认为 `false` */
   var autoplay: Boolean = js.native
@@ -285,123 +286,111 @@ object InnerAudioContext {
   }
   
   @scala.inline
-  implicit class InnerAudioContextOps[Self <: InnerAudioContext] (val x: Self) extends AnyVal {
+  implicit class InnerAudioContextMutableBuilder[Self <: InnerAudioContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuffered(value: Double): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuffered(value: Double): Self = this.set("buffered", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setObeyMuteSwitch(value: Boolean): Self = StObject.set(x, "obeyMuteSwitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setOffCanplay(value: OffCanplayCallback => Unit): Self = StObject.set(x, "offCanplay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setOffEnded(value: OffEndedCallback => Unit): Self = StObject.set(x, "offEnded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setObeyMuteSwitch(value: Boolean): Self = this.set("obeyMuteSwitch", value.asInstanceOf[js.Any])
+    def setOffError(value: OffErrorCallback => Unit): Self = StObject.set(x, "offError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffCanplay(value: OffCanplayCallback => Unit): Self = this.set("offCanplay", js.Any.fromFunction1(value))
+    def setOffPause(value: OffPauseCallback => Unit): Self = StObject.set(x, "offPause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffEnded(value: OffEndedCallback => Unit): Self = this.set("offEnded", js.Any.fromFunction1(value))
+    def setOffPlay(value: OffPlayCallback => Unit): Self = StObject.set(x, "offPlay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffError(value: OffErrorCallback => Unit): Self = this.set("offError", js.Any.fromFunction1(value))
+    def setOffSeeked(value: OffSeekedCallback => Unit): Self = StObject.set(x, "offSeeked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffPause(value: OffPauseCallback => Unit): Self = this.set("offPause", js.Any.fromFunction1(value))
+    def setOffSeeking(value: OffSeekingCallback => Unit): Self = StObject.set(x, "offSeeking", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffPlay(value: OffPlayCallback => Unit): Self = this.set("offPlay", js.Any.fromFunction1(value))
+    def setOffStop(value: OffStopCallback => Unit): Self = StObject.set(x, "offStop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffSeeked(value: OffSeekedCallback => Unit): Self = this.set("offSeeked", js.Any.fromFunction1(value))
+    def setOffTimeUpdate(value: OffTimeUpdateCallback => Unit): Self = StObject.set(x, "offTimeUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffSeeking(value: OffSeekingCallback => Unit): Self = this.set("offSeeking", js.Any.fromFunction1(value))
+    def setOffWaiting(value: OffWaitingCallback => Unit): Self = StObject.set(x, "offWaiting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffStop(value: OffStopCallback => Unit): Self = this.set("offStop", js.Any.fromFunction1(value))
+    def setOnCanplay(value: InnerAudioContextOnCanplayCallback => Unit): Self = StObject.set(x, "onCanplay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffTimeUpdate(value: OffTimeUpdateCallback => Unit): Self = this.set("offTimeUpdate", js.Any.fromFunction1(value))
+    def setOnEnded(value: InnerAudioContextOnEndedCallback => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffWaiting(value: OffWaitingCallback => Unit): Self = this.set("offWaiting", js.Any.fromFunction1(value))
+    def setOnError(value: InnerAudioContextOnErrorCallback => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCanplay(value: InnerAudioContextOnCanplayCallback => Unit): Self = this.set("onCanplay", js.Any.fromFunction1(value))
+    def setOnPause(value: InnerAudioContextOnPauseCallback => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEnded(value: InnerAudioContextOnEndedCallback => Unit): Self = this.set("onEnded", js.Any.fromFunction1(value))
+    def setOnPlay(value: InnerAudioContextOnPlayCallback => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: InnerAudioContextOnErrorCallback => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnSeeked(value: InnerAudioContextOnSeekedCallback => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPause(value: InnerAudioContextOnPauseCallback => Unit): Self = this.set("onPause", js.Any.fromFunction1(value))
+    def setOnSeeking(value: InnerAudioContextOnSeekingCallback => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPlay(value: InnerAudioContextOnPlayCallback => Unit): Self = this.set("onPlay", js.Any.fromFunction1(value))
+    def setOnStop(value: InnerAudioContextOnStopCallback => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSeeked(value: InnerAudioContextOnSeekedCallback => Unit): Self = this.set("onSeeked", js.Any.fromFunction1(value))
+    def setOnTimeUpdate(value: InnerAudioContextOnTimeUpdateCallback => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSeeking(value: InnerAudioContextOnSeekingCallback => Unit): Self = this.set("onSeeking", js.Any.fromFunction1(value))
+    def setOnWaiting(value: InnerAudioContextOnWaitingCallback => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnStop(value: InnerAudioContextOnStopCallback => Unit): Self = this.set("onStop", js.Any.fromFunction1(value))
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnTimeUpdate(value: InnerAudioContextOnTimeUpdateCallback => Unit): Self = this.set("onTimeUpdate", js.Any.fromFunction1(value))
+    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnWaiting(value: InnerAudioContextOnWaitingCallback => Unit): Self = this.set("onWaiting", js.Any.fromFunction1(value))
+    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("play", js.Any.fromFunction0(value))
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeek(value: Double => Unit): Self = this.set("seek", js.Any.fromFunction1(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

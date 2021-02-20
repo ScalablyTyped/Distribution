@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/TargetsRequiredException", JSImport.Namespace)
-@js.native
-object targetsRequiredExceptionMod extends js.Object {
+object targetsRequiredExceptionMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/TargetsRequiredException", "TargetsRequiredException")
+  @js.native
   val TargetsRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

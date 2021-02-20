@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalVolumeResourceData extends js.Object {
+trait LocalVolumeResourceData extends StObject {
   
   /**
     * The absolute local path of the resource inside the Lambda environment.
@@ -31,36 +32,24 @@ object LocalVolumeResourceData {
   }
   
   @scala.inline
-  implicit class LocalVolumeResourceDataOps[Self <: LocalVolumeResourceData] (val x: Self) extends AnyVal {
+  implicit class LocalVolumeResourceDataMutableBuilder[Self <: LocalVolumeResourceData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationPathUndefined: Self = StObject.set(x, "DestinationPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupOwnerSetting(value: GroupOwnerSetting): Self = StObject.set(x, "GroupOwnerSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationPath(value: string): Self = this.set("DestinationPath", value.asInstanceOf[js.Any])
+    def setGroupOwnerSettingUndefined: Self = StObject.set(x, "GroupOwnerSetting", js.undefined)
     
     @scala.inline
-    def deleteDestinationPath: Self = this.set("DestinationPath", js.undefined)
+    def setSourcePath(value: string): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupOwnerSetting(value: GroupOwnerSetting): Self = this.set("GroupOwnerSetting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupOwnerSetting: Self = this.set("GroupOwnerSetting", js.undefined)
-    
-    @scala.inline
-    def setSourcePath(value: string): Self = this.set("SourcePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcePath: Self = this.set("SourcePath", js.undefined)
+    def setSourcePathUndefined: Self = StObject.set(x, "SourcePath", js.undefined)
   }
 }

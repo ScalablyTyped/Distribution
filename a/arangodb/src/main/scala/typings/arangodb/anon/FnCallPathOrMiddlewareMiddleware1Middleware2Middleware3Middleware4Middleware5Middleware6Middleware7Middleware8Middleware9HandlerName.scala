@@ -3,12 +3,13 @@ package typings.arangodb.anon
 import typings.arangodb.Foxx.Endpoint
 import typings.arangodb.Foxx.Handler
 import typings.arangodb.Foxx.SimpleMiddleware
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName extends js.Object {
+trait FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName extends StObject {
   
   def apply(handler: Handler): Endpoint = js.native
   def apply(handler: Handler, name: String): Endpoint = js.native

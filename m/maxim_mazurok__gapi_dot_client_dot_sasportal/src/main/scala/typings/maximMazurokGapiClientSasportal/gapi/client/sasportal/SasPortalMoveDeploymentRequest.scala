@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSasportal.gapi.client.sasportal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SasPortalMoveDeploymentRequest extends js.Object {
+trait SasPortalMoveDeploymentRequest extends StObject {
   
   /** Required. The name of the new parent resource Node or Customer to reparent the deployment under. */
   var destination: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object SasPortalMoveDeploymentRequest {
   }
   
   @scala.inline
-  implicit class SasPortalMoveDeploymentRequestOps[Self <: SasPortalMoveDeploymentRequest] (val x: Self) extends AnyVal {
+  implicit class SasPortalMoveDeploymentRequestMutableBuilder[Self <: SasPortalMoveDeploymentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
   }
 }

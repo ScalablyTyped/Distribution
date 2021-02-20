@@ -1,11 +1,12 @@
 package typings.reactInstantsearchDom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoiceSearchHelper extends js.Object {
+trait VoiceSearchHelper extends StObject {
   
   def dispose(): Unit = js.native
   
@@ -32,33 +33,21 @@ object VoiceSearchHelper {
   }
   
   @scala.inline
-  implicit class VoiceSearchHelperOps[Self <: VoiceSearchHelper] (val x: Self) extends AnyVal {
+  implicit class VoiceSearchHelperMutableBuilder[Self <: VoiceSearchHelper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetState(value: () => VoiceListeningState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsBrowserSupported(value: () => Boolean): Self = StObject.set(x, "isBrowserSupported", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setIsListening(value: () => Boolean): Self = StObject.set(x, "isListening", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetState(value: () => VoiceListeningState): Self = this.set("getState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsBrowserSupported(value: () => Boolean): Self = this.set("isBrowserSupported", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsListening(value: () => Boolean): Self = this.set("isListening", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToggleListening(value: () => Unit): Self = this.set("toggleListening", js.Any.fromFunction0(value))
+    def setToggleListening(value: () => Unit): Self = StObject.set(x, "toggleListening", js.Any.fromFunction0(value))
   }
 }

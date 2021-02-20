@@ -6,16 +6,18 @@ import typings.materialDrawer.utilMod.MDCDrawerFocusTrapFactory
 import typings.materialList.componentMod.MDCList
 import typings.materialList.componentMod.MDCListFactory
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/drawer/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/drawer/component", "MDCDrawer")
   @js.native
-  class MDCDrawer () extends MDCComponent[MDCDismissibleDrawerFoundation] {
+  class MDCDrawer protected () extends MDCComponent[MDCDismissibleDrawerFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCDismissibleDrawerFoundation, args: js.Any*) = this()
     
     def initialize(): Unit = js.native
     def initialize(focusTrapFactory: js.UndefOr[scala.Nothing], listFactory: MDCListFactory): Unit = js.native
@@ -35,9 +37,10 @@ object componentMod extends js.Object {
     def open_=(isOpen: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCDrawer extends js.Object {
+  object MDCDrawer {
     
+    @JSImport("@material/drawer/component", "MDCDrawer.attachTo")
+    @js.native
     def attachTo(root: Element): MDCDrawer = js.native
   }
 }

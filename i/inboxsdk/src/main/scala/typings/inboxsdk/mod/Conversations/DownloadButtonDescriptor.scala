@@ -1,11 +1,12 @@
 package typings.inboxsdk.mod.Conversations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadButtonDescriptor extends js.Object {
+trait DownloadButtonDescriptor extends StObject {
   
   var downloadFilename: js.UndefOr[String] = js.native
   
@@ -24,36 +25,24 @@ object DownloadButtonDescriptor {
   }
   
   @scala.inline
-  implicit class DownloadButtonDescriptorOps[Self <: DownloadButtonDescriptor] (val x: Self) extends AnyVal {
+  implicit class DownloadButtonDescriptorMutableBuilder[Self <: DownloadButtonDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadFilename(value: String): Self = StObject.set(x, "downloadFilename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadFilenameUndefined: Self = StObject.set(x, "downloadFilename", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadUrl(value: String): Self = this.set("downloadUrl", value.asInstanceOf[js.Any])
+    def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClick(value: js.Any => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOpenInNewTab(value: Boolean): Self = StObject.set(x, "openInNewTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadFilename(value: String): Self = this.set("downloadFilename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDownloadFilename: Self = this.set("downloadFilename", js.undefined)
-    
-    @scala.inline
-    def setOpenInNewTab(value: Boolean): Self = this.set("openInNewTab", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenInNewTab: Self = this.set("openInNewTab", js.undefined)
+    def setOpenInNewTabUndefined: Self = StObject.set(x, "openInNewTab", js.undefined)
   }
 }

@@ -6,12 +6,13 @@ import typings.atom.atomStrings.down
 import typings.atom.atomStrings.left_
 import typings.atom.atomStrings.right_
 import typings.atom.atomStrings.up
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceOpenOptions extends js.Object {
+trait WorkspaceOpenOptions extends StObject {
   
   /**
     *  A boolean indicating whether to call Pane::activateItem on containing pane.
@@ -74,66 +75,54 @@ object WorkspaceOpenOptions {
   }
   
   @scala.inline
-  implicit class WorkspaceOpenOptionsOps[Self <: WorkspaceOpenOptions] (val x: Self) extends AnyVal {
+  implicit class WorkspaceOpenOptionsMutableBuilder[Self <: WorkspaceOpenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivateItem(value: Boolean): Self = StObject.set(x, "activateItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivateItemUndefined: Self = StObject.set(x, "activateItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivatePane(value: Boolean): Self = StObject.set(x, "activatePane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivateItem(value: Boolean): Self = this.set("activateItem", value.asInstanceOf[js.Any])
+    def setActivatePaneUndefined: Self = StObject.set(x, "activatePane", js.undefined)
     
     @scala.inline
-    def deleteActivateItem: Self = this.set("activateItem", js.undefined)
+    def setInitialColumn(value: Double): Self = StObject.set(x, "initialColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatePane(value: Boolean): Self = this.set("activatePane", value.asInstanceOf[js.Any])
+    def setInitialColumnUndefined: Self = StObject.set(x, "initialColumn", js.undefined)
     
     @scala.inline
-    def deleteActivatePane: Self = this.set("activatePane", js.undefined)
+    def setInitialLine(value: Double): Self = StObject.set(x, "initialLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialColumn(value: Double): Self = this.set("initialColumn", value.asInstanceOf[js.Any])
+    def setInitialLineUndefined: Self = StObject.set(x, "initialLine", js.undefined)
     
     @scala.inline
-    def deleteInitialColumn: Self = this.set("initialColumn", js.undefined)
+    def setLocation(value: left_ | right_ | bottom_ | center): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialLine(value: Double): Self = this.set("initialLine", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteInitialLine: Self = this.set("initialLine", js.undefined)
+    def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: left_ | right_ | bottom_ | center): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setSearchAllPanes(value: Boolean): Self = StObject.set(x, "searchAllPanes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending(value: Boolean): Self = this.set("pending", value.asInstanceOf[js.Any])
+    def setSearchAllPanesUndefined: Self = StObject.set(x, "searchAllPanes", js.undefined)
     
     @scala.inline
-    def deletePending: Self = this.set("pending", js.undefined)
+    def setSplit(value: left_ | right_ | up | down): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchAllPanes(value: Boolean): Self = this.set("searchAllPanes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchAllPanes: Self = this.set("searchAllPanes", js.undefined)
-    
-    @scala.inline
-    def setSplit(value: left_ | right_ | up | down): Self = this.set("split", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplit: Self = this.set("split", js.undefined)
+    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
   }
 }

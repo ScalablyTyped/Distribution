@@ -1,12 +1,13 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
 import typings.openui5.sap.ui.model.Sorter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortExpression extends js.Object {
+trait SortExpression extends StObject {
   
   /**
     * Add a condition to the order by expression. It replaces any previously specifiedsort order for the
@@ -71,39 +72,27 @@ object SortExpression {
   }
   
   @scala.inline
-  implicit class SortExpressionOps[Self <: SortExpression] (val x: Self) extends AnyVal {
+  implicit class SortExpressionMutableBuilder[Self <: SortExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSorter(value: (String, js.Any) => SortExpression): Self = StObject.set(x, "addSorter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEntityType(value: () => EntityType): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddSorter(value: (String, js.Any) => SortExpression): Self = this.set("addSorter", js.Any.fromFunction2(value))
+    def setGetExpressionAsUI5Sorter(value: () => Sorter): Self = StObject.set(x, "getExpressionAsUI5Sorter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setGetExpressionsAsUI5SorterArray(value: () => js.Array[Sorter]): Self = StObject.set(x, "getExpressionsAsUI5SorterArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEntityType(value: () => EntityType): Self = this.set("getEntityType", js.Any.fromFunction0(value))
+    def setGetURIOrderByOptionValue(value: js.Any => String): Self = StObject.set(x, "getURIOrderByOptionValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetExpressionAsUI5Sorter(value: () => Sorter): Self = this.set("getExpressionAsUI5Sorter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetExpressionsAsUI5SorterArray(value: () => js.Array[Sorter]): Self = this.set("getExpressionsAsUI5SorterArray", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetURIOrderByOptionValue(value: js.Any => String): Self = this.set("getURIOrderByOptionValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveSorter(value: String => Unit): Self = this.set("removeSorter", js.Any.fromFunction1(value))
+    def setRemoveSorter(value: String => Unit): Self = StObject.set(x, "removeSorter", js.Any.fromFunction1(value))
   }
 }

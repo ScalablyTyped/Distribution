@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleMapsUnityClientInfo extends js.Object {
+trait GoogleMapsUnityClientInfo extends StObject {
   
   /** API client name and version. For example, the SDK calling the API. The exact format is up to the client. */
   var apiClient: js.UndefOr[String] = js.native
@@ -43,66 +44,54 @@ object GoogleMapsUnityClientInfo {
   }
   
   @scala.inline
-  implicit class GoogleMapsUnityClientInfoOps[Self <: GoogleMapsUnityClientInfo] (val x: Self) extends AnyVal {
+  implicit class GoogleMapsUnityClientInfoMutableBuilder[Self <: GoogleMapsUnityClientInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiClient(value: String): Self = StObject.set(x, "apiClient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiClientUndefined: Self = StObject.set(x, "apiClient", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiClient(value: String): Self = this.set("apiClient", value.asInstanceOf[js.Any])
+    def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
     
     @scala.inline
-    def deleteApiClient: Self = this.set("apiClient", js.undefined)
+    def setApplicationVersion(value: String): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: String): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    def setDeviceModel(value: String): Self = StObject.set(x, "deviceModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationVersion(value: String): Self = this.set("applicationVersion", value.asInstanceOf[js.Any])
+    def setDeviceModelUndefined: Self = StObject.set(x, "deviceModel", js.undefined)
     
     @scala.inline
-    def deleteApplicationVersion: Self = this.set("applicationVersion", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceModel(value: String): Self = this.set("deviceModel", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteDeviceModel: Self = this.set("deviceModel", js.undefined)
+    def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setOperatingSystemBuild(value: String): Self = StObject.set(x, "operatingSystemBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setOperatingSystemBuildUndefined: Self = StObject.set(x, "operatingSystemBuild", js.undefined)
     
     @scala.inline
-    def setOperatingSystem(value: String): Self = this.set("operatingSystem", value.asInstanceOf[js.Any])
+    def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
     
     @scala.inline
-    def deleteOperatingSystem: Self = this.set("operatingSystem", js.undefined)
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatingSystemBuild(value: String): Self = this.set("operatingSystemBuild", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatingSystemBuild: Self = this.set("operatingSystemBuild", js.undefined)
-    
-    @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

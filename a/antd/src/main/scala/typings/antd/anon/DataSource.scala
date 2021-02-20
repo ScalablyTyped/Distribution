@@ -1,11 +1,12 @@
 package typings.antd.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSource extends js.Object {
+trait DataSource extends StObject {
   
   var dataSource: js.Array[scala.Nothing] = js.native
   
@@ -22,30 +23,18 @@ object DataSource {
   }
   
   @scala.inline
-  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSource(value: js.Array[scala.Nothing]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceVarargs(value: scala.Nothing*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceVarargs(value: scala.Nothing*): Self = this.set("dataSource", js.Array(value :_*))
-    
-    @scala.inline
-    def setDataSource(value: js.Array[scala.Nothing]): Self = this.set("dataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowSearch(value: Boolean): Self = this.set("showSearch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleText(value: String): Self = this.set("titleText", value.asInstanceOf[js.Any])
+    def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
   }
 }

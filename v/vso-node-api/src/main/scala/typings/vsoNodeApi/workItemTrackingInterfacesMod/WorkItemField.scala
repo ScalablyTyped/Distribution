@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,51 +81,39 @@ object WorkItemField {
   }
   
   @scala.inline
-  implicit class WorkItemFieldOps[Self <: WorkItemField] (val x: Self) extends AnyVal {
+  implicit class WorkItemFieldMutableBuilder[Self <: WorkItemField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsIdentity(value: Boolean): Self = StObject.set(x, "isIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsPicklist(value: Boolean): Self = StObject.set(x, "isPicklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIsPicklistSuggested(value: Boolean): Self = StObject.set(x, "isPicklistSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIdentity(value: Boolean): Self = this.set("isIdentity", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPicklist(value: Boolean): Self = this.set("isPicklist", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPicklistSuggested(value: Boolean): Self = this.set("isPicklistSuggested", value.asInstanceOf[js.Any])
+    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSupportedOperations(value: js.Array[WorkItemFieldOperation]): Self = StObject.set(x, "supportedOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setSupportedOperationsVarargs(value: WorkItemFieldOperation*): Self = StObject.set(x, "supportedOperations", js.Array(value :_*))
     
     @scala.inline
-    def setReferenceName(value: String): Self = this.set("referenceName", value.asInstanceOf[js.Any])
+    def setType(value: FieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedOperationsVarargs(value: WorkItemFieldOperation*): Self = this.set("supportedOperations", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedOperations(value: js.Array[WorkItemFieldOperation]): Self = this.set("supportedOperations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: FieldType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsage(value: FieldUsage): Self = this.set("usage", value.asInstanceOf[js.Any])
+    def setUsage(value: FieldUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
   }
 }

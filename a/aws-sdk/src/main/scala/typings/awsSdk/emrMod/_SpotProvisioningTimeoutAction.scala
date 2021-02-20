@@ -1,7 +1,8 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _SpotProvisioningTimeoutAction extends js.Object
+trait _SpotProvisioningTimeoutAction extends StObject

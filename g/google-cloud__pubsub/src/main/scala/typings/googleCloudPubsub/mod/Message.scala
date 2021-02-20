@@ -1,10 +1,11 @@
 package typings.googleCloudPubsub.mod
 
-import typings.googleCloudPubsub.pubsubMod.google.pubsub.v1.IReceivedMessage
+import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IReceivedMessage
 import typings.googleCloudPubsub.subscriberMod.Subscriber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/pubsub", "Message")
 @js.native
@@ -18,4 +19,3 @@ class Message protected ()
     */
   def this(sub: Subscriber, hasAckIdMessageDeliveryAttempt: IReceivedMessage) = this()
 }
-

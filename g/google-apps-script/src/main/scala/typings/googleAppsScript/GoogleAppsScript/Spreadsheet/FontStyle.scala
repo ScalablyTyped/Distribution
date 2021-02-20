@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleAppsScript.googleAppsScriptStrings.normal
   - typings.googleAppsScript.googleAppsScriptStrings.italic
 */
-trait FontStyle extends js.Object
+trait FontStyle extends StObject
 object FontStyle {
   
   @scala.inline

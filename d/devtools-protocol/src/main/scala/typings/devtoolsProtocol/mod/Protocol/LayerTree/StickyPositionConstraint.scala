@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.LayerTree
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StickyPositionConstraint extends js.Object {
+trait StickyPositionConstraint extends StObject {
   
   /**
     * Layout rectangle of the containing block of the sticky element
@@ -37,36 +38,24 @@ object StickyPositionConstraint {
   }
   
   @scala.inline
-  implicit class StickyPositionConstraintOps[Self <: StickyPositionConstraint] (val x: Self) extends AnyVal {
+  implicit class StickyPositionConstraintMutableBuilder[Self <: StickyPositionConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainingBlockRect(value: Rect): Self = StObject.set(x, "containingBlockRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNearestLayerShiftingContainingBlock(value: LayerId): Self = StObject.set(x, "nearestLayerShiftingContainingBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNearestLayerShiftingContainingBlockUndefined: Self = StObject.set(x, "nearestLayerShiftingContainingBlock", js.undefined)
     
     @scala.inline
-    def setContainingBlockRect(value: Rect): Self = this.set("containingBlockRect", value.asInstanceOf[js.Any])
+    def setNearestLayerShiftingStickyBox(value: LayerId): Self = StObject.set(x, "nearestLayerShiftingStickyBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStickyBoxRect(value: Rect): Self = this.set("stickyBoxRect", value.asInstanceOf[js.Any])
+    def setNearestLayerShiftingStickyBoxUndefined: Self = StObject.set(x, "nearestLayerShiftingStickyBox", js.undefined)
     
     @scala.inline
-    def setNearestLayerShiftingContainingBlock(value: LayerId): Self = this.set("nearestLayerShiftingContainingBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNearestLayerShiftingContainingBlock: Self = this.set("nearestLayerShiftingContainingBlock", js.undefined)
-    
-    @scala.inline
-    def setNearestLayerShiftingStickyBox(value: LayerId): Self = this.set("nearestLayerShiftingStickyBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNearestLayerShiftingStickyBox: Self = this.set("nearestLayerShiftingStickyBox", js.undefined)
+    def setStickyBoxRect(value: Rect): Self = StObject.set(x, "stickyBoxRect", value.asInstanceOf[js.Any])
   }
 }

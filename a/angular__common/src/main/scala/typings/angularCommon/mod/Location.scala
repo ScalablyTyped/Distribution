@@ -1,13 +1,14 @@
 package typings.angularCommon.mod
 
 import typings.rxjs.typesMod.SubscriptionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "Location")
 @js.native
-class Location protected () extends js.Object {
+class Location protected () extends StObject {
   def this(platformStrategy: LocationStrategy, platformLocation: PlatformLocation) = this()
   
   /**
@@ -130,9 +131,7 @@ class Location protected () extends js.Object {
   def subscribe(onNext: js.Function1[/* value */ PopStateEvent, Unit], onThrow: Null, onReturn: js.Function0[Unit]): SubscriptionLike = js.native
 }
 /* static members */
-@JSImport("@angular/common", "Location")
-@js.native
-object Location extends js.Object {
+object Location {
   
   /**
     * Joins two parts of a URL with a slash if needed.
@@ -143,6 +142,8 @@ object Location extends js.Object {
     *
     * @returns The joined URL string.
     */
+  @JSImport("@angular/common", "Location.joinWithSlash")
+  @js.native
   def joinWithSlash(start: String, end: String): String = js.native
   
   /**
@@ -152,6 +153,8 @@ object Location extends js.Object {
     *
     * @returns The normalized URL parameters string.
     */
+  @JSImport("@angular/common", "Location.normalizeQueryParams")
+  @js.native
   def normalizeQueryParams(params: String): String = js.native
   
   /**
@@ -163,5 +166,7 @@ object Location extends js.Object {
     *
     * @returns The URL string, modified if needed.
     */
+  @JSImport("@angular/common", "Location.stripTrailingSlash")
+  @js.native
   def stripTrailingSlash(url: String): String = js.native
 }

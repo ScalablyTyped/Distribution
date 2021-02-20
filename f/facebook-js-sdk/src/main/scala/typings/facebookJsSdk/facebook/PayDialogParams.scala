@@ -2,6 +2,7 @@ package typings.facebookJsSdk.facebook
 
 import typings.facebookJsSdk.facebookJsSdkStrings.pay
 import typings.facebookJsSdk.facebookJsSdkStrings.purchaseitem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,63 +37,51 @@ object PayDialogParams {
   }
   
   @scala.inline
-  implicit class PayDialogParamsOps[Self <: PayDialogParams] (val x: Self) extends AnyVal {
+  implicit class PayDialogParamsMutableBuilder[Self <: PayDialogParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: purchaseitem): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethod(value: pay): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPricepoint_id(value: String): Self = StObject.set(x, "pricepoint_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: purchaseitem): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setPricepoint_idUndefined: Self = StObject.set(x, "pricepoint_id", js.undefined)
     
     @scala.inline
-    def setMethod(value: pay): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
+    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricepoint_id(value: String): Self = this.set("pricepoint_id", value.asInstanceOf[js.Any])
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def deletePricepoint_id: Self = this.set("pricepoint_id", js.undefined)
+    def setQuantity_max(value: Double): Self = StObject.set(x, "quantity_max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity(value: Double): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setQuantity_maxUndefined: Self = StObject.set(x, "quantity_max", js.undefined)
     
     @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setQuantity_min(value: Double): Self = StObject.set(x, "quantity_min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity_max(value: Double): Self = this.set("quantity_max", value.asInstanceOf[js.Any])
+    def setQuantity_minUndefined: Self = StObject.set(x, "quantity_min", js.undefined)
     
     @scala.inline
-    def deleteQuantity_max: Self = this.set("quantity_max", js.undefined)
+    def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity_min(value: Double): Self = this.set("quantity_min", value.asInstanceOf[js.Any])
+    def setRequest_idUndefined: Self = StObject.set(x, "request_id", js.undefined)
     
     @scala.inline
-    def deleteQuantity_min: Self = this.set("quantity_min", js.undefined)
+    def setTest_currency(value: String): Self = StObject.set(x, "test_currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest_id(value: String): Self = this.set("request_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest_id: Self = this.set("request_id", js.undefined)
-    
-    @scala.inline
-    def setTest_currency(value: String): Self = this.set("test_currency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTest_currency: Self = this.set("test_currency", js.undefined)
+    def setTest_currencyUndefined: Self = StObject.set(x, "test_currency", js.undefined)
   }
 }

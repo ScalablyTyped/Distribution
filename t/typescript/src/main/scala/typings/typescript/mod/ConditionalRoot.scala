@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalRoot extends js.Object {
+trait ConditionalRoot extends StObject {
   
   var aliasSymbol: js.UndefOr[Symbol] = js.native
   
@@ -34,69 +35,57 @@ object ConditionalRoot {
   }
   
   @scala.inline
-  implicit class ConditionalRootOps[Self <: ConditionalRoot] (val x: Self) extends AnyVal {
+  implicit class ConditionalRootMutableBuilder[Self <: ConditionalRoot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasSymbol(value: Symbol): Self = StObject.set(x, "aliasSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasSymbolUndefined: Self = StObject.set(x, "aliasSymbol", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasTypeArguments(value: js.Array[Type]): Self = StObject.set(x, "aliasTypeArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckType(value: Type): Self = this.set("checkType", value.asInstanceOf[js.Any])
+    def setAliasTypeArgumentsUndefined: Self = StObject.set(x, "aliasTypeArguments", js.undefined)
     
     @scala.inline
-    def setExtendsType(value: Type): Self = this.set("extendsType", value.asInstanceOf[js.Any])
+    def setAliasTypeArgumentsVarargs(value: Type*): Self = StObject.set(x, "aliasTypeArguments", js.Array(value :_*))
     
     @scala.inline
-    def setIsDistributive(value: Boolean): Self = this.set("isDistributive", value.asInstanceOf[js.Any])
+    def setCheckType(value: Type): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: ConditionalTypeNode): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setExtendsType(value: Type): Self = StObject.set(x, "extendsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasSymbol(value: Symbol): Self = this.set("aliasSymbol", value.asInstanceOf[js.Any])
+    def setInferTypeParameters(value: js.Array[TypeParameter]): Self = StObject.set(x, "inferTypeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAliasSymbol: Self = this.set("aliasSymbol", js.undefined)
+    def setInferTypeParametersUndefined: Self = StObject.set(x, "inferTypeParameters", js.undefined)
     
     @scala.inline
-    def setAliasTypeArgumentsVarargs(value: Type*): Self = this.set("aliasTypeArguments", js.Array(value :_*))
+    def setInferTypeParametersVarargs(value: TypeParameter*): Self = StObject.set(x, "inferTypeParameters", js.Array(value :_*))
     
     @scala.inline
-    def setAliasTypeArguments(value: js.Array[Type]): Self = this.set("aliasTypeArguments", value.asInstanceOf[js.Any])
+    def setInstantiations(value: Map[Type]): Self = StObject.set(x, "instantiations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAliasTypeArguments: Self = this.set("aliasTypeArguments", js.undefined)
+    def setInstantiationsUndefined: Self = StObject.set(x, "instantiations", js.undefined)
     
     @scala.inline
-    def setInferTypeParametersVarargs(value: TypeParameter*): Self = this.set("inferTypeParameters", js.Array(value :_*))
+    def setIsDistributive(value: Boolean): Self = StObject.set(x, "isDistributive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInferTypeParameters(value: js.Array[TypeParameter]): Self = this.set("inferTypeParameters", value.asInstanceOf[js.Any])
+    def setNode(value: ConditionalTypeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInferTypeParameters: Self = this.set("inferTypeParameters", js.undefined)
+    def setOuterTypeParameters(value: js.Array[TypeParameter]): Self = StObject.set(x, "outerTypeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstantiations(value: Map[Type]): Self = this.set("instantiations", value.asInstanceOf[js.Any])
+    def setOuterTypeParametersUndefined: Self = StObject.set(x, "outerTypeParameters", js.undefined)
     
     @scala.inline
-    def deleteInstantiations: Self = this.set("instantiations", js.undefined)
-    
-    @scala.inline
-    def setOuterTypeParametersVarargs(value: TypeParameter*): Self = this.set("outerTypeParameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setOuterTypeParameters(value: js.Array[TypeParameter]): Self = this.set("outerTypeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOuterTypeParameters: Self = this.set("outerTypeParameters", js.undefined)
+    def setOuterTypeParametersVarargs(value: TypeParameter*): Self = StObject.set(x, "outerTypeParameters", js.Array(value :_*))
   }
 }

@@ -3,13 +3,14 @@ package typings.opentypeJs.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.ArrayBuffer
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("opentype.js", "Font")
 @js.native
-class Font protected () extends js.Object {
+class Font protected () extends StObject {
   def this(options: FontConstructorOptions) = this()
   
   var ascender: Double = js.native

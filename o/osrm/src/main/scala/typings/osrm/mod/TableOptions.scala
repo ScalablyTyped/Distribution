@@ -2,6 +2,7 @@ package typings.osrm.mod
 
 import typings.osrm.osrmStrings.distance
 import typings.osrm.osrmStrings.duration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,45 +39,33 @@ object TableOptions {
   }
   
   @scala.inline
-  implicit class TableOptionsOps[Self <: TableOptions] (val x: Self) extends AnyVal {
+  implicit class TableOptionsMutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotations(value: js.Array[duration | distance]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationsVarargs(value: (duration | distance)*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotationsVarargs(value: (duration | distance)*): Self = this.set("annotations", js.Array(value :_*))
+    def setDestinations(value: js.Array[Double]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: js.Array[duration | distance]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setDestinationsVarargs(value: Double*): Self = StObject.set(x, "destinations", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationsVarargs(value: Double*): Self = this.set("destinations", js.Array(value :_*))
+    def setSources(value: js.Array[Double]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinations(value: js.Array[Double]): Self = this.set("destinations", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def deleteDestinations: Self = this.set("destinations", js.undefined)
-    
-    @scala.inline
-    def setSourcesVarargs(value: Double*): Self = this.set("sources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSources(value: js.Array[Double]): Self = this.set("sources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setSourcesVarargs(value: Double*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

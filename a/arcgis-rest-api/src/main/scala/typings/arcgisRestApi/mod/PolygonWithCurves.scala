@@ -1,5 +1,6 @@
 package typings.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object PolygonWithCurves {
   }
   
   @scala.inline
-  implicit class PolygonWithCurvesOps[Self <: PolygonWithCurves] (val x: Self) extends AnyVal {
+  implicit class PolygonWithCurvesMutableBuilder[Self <: PolygonWithCurves] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurveRings(value: js.Array[js.Array[Position | JsonCurve]]): Self = StObject.set(x, "curveRings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurveRingsVarargs(value: (js.Array[Position | JsonCurve])*): Self = this.set("curveRings", js.Array(value :_*))
-    
-    @scala.inline
-    def setCurveRings(value: js.Array[js.Array[Position | JsonCurve]]): Self = this.set("curveRings", value.asInstanceOf[js.Any])
+    def setCurveRingsVarargs(value: (js.Array[Position | JsonCurve])*): Self = StObject.set(x, "curveRings", js.Array(value :_*))
   }
 }

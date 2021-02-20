@@ -1,11 +1,12 @@
 package typings.openidClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StrategyOptions[TClient /* <: Client */] extends js.Object {
+trait StrategyOptions[TClient /* <: Client */] extends StObject {
   
   var client: TClient = js.native
   
@@ -46,51 +47,39 @@ object StrategyOptions {
   }
   
   @scala.inline
-  implicit class StrategyOptionsOps[Self <: StrategyOptions[_], TClient /* <: Client */] (val x: Self with StrategyOptions[TClient]) extends AnyVal {
+  implicit class StrategyOptionsMutableBuilder[Self <: StrategyOptions[_], TClient /* <: Client */] (val x: Self with StrategyOptions[TClient]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: TClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtras(value: CallbackExtras): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
     
     @scala.inline
-    def setClient(value: TClient): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setParams(value: AuthorizationParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtras(value: CallbackExtras): Self = this.set("extras", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteExtras: Self = this.set("extras", js.undefined)
+    def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: AuthorizationParameters): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassReqToCallback(value: Boolean): Self = this.set("passReqToCallback", value.asInstanceOf[js.Any])
+    def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
     
     @scala.inline
-    def deletePassReqToCallback: Self = this.set("passReqToCallback", js.undefined)
+    def setUsePKCE(value: Boolean | String): Self = StObject.set(x, "usePKCE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionKey(value: String): Self = this.set("sessionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionKey: Self = this.set("sessionKey", js.undefined)
-    
-    @scala.inline
-    def setUsePKCE(value: Boolean | String): Self = this.set("usePKCE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePKCE: Self = this.set("usePKCE", js.undefined)
+    def setUsePKCEUndefined: Self = StObject.set(x, "usePKCE", js.undefined)
   }
 }

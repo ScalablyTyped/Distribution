@@ -1,6 +1,7 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.requirementsMod.TransactionRequirementsArgument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object GoogleActionsV2TransactionRequirementsCheckResult {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2TransactionRequirementsCheckResultOps[Self <: GoogleActionsV2TransactionRequirementsCheckResult] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2TransactionRequirementsCheckResultMutableBuilder[Self <: GoogleActionsV2TransactionRequirementsCheckResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResultType(value: GoogleActionsV2TransactionRequirementsCheckResultResultType): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResultType(value: GoogleActionsV2TransactionRequirementsCheckResultResultType): Self = this.set("resultType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultType: Self = this.set("resultType", js.undefined)
+    def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
   }
 }

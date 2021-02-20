@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EbsBlockDevice extends js.Object {
+trait EbsBlockDevice extends StObject {
   
   /**
     * The device name that is exposed to the instance, such as /dev/sdh.
@@ -26,30 +27,18 @@ object EbsBlockDevice {
   }
   
   @scala.inline
-  implicit class EbsBlockDeviceOps[Self <: EbsBlockDevice] (val x: Self) extends AnyVal {
+  implicit class EbsBlockDeviceMutableBuilder[Self <: EbsBlockDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevice(value: String): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceUndefined: Self = StObject.set(x, "Device", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVolumeSpecification(value: VolumeSpecification): Self = StObject.set(x, "VolumeSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: String): Self = this.set("Device", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDevice: Self = this.set("Device", js.undefined)
-    
-    @scala.inline
-    def setVolumeSpecification(value: VolumeSpecification): Self = this.set("VolumeSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeSpecification: Self = this.set("VolumeSpecification", js.undefined)
+    def setVolumeSpecificationUndefined: Self = StObject.set(x, "VolumeSpecification", js.undefined)
   }
 }

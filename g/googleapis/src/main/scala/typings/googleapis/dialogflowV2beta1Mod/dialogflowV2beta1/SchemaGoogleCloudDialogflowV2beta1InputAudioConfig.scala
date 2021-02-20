@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Instructs the speech recognizer how to process the audio content.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1InputAudioConfig extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1InputAudioConfig extends StObject {
   
   /**
     * Required. Audio encoding of the audio content to process.
@@ -62,51 +63,39 @@ object SchemaGoogleCloudDialogflowV2beta1InputAudioConfig {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1InputAudioConfigOps[Self <: SchemaGoogleCloudDialogflowV2beta1InputAudioConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1InputAudioConfigMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1InputAudioConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioEncoding(value: String): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioEncodingUndefined: Self = StObject.set(x, "audioEncoding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioEncoding(value: String): Self = this.set("audioEncoding", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteAudioEncoding: Self = this.set("audioEncoding", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setPhraseHints(value: js.Array[String]): Self = StObject.set(x, "phraseHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setPhraseHintsUndefined: Self = StObject.set(x, "phraseHints", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setPhraseHintsVarargs(value: String*): Self = StObject.set(x, "phraseHints", js.Array(value :_*))
     
     @scala.inline
-    def setPhraseHintsVarargs(value: String*): Self = this.set("phraseHints", js.Array(value :_*))
+    def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhraseHints(value: js.Array[String]): Self = this.set("phraseHints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhraseHints: Self = this.set("phraseHints", js.undefined)
-    
-    @scala.inline
-    def setSampleRateHertz(value: Double): Self = this.set("sampleRateHertz", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRateHertz: Self = this.set("sampleRateHertz", js.undefined)
+    def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShareDetails extends js.Object {
+trait ShareDetails extends StObject {
   
   /**
     * List of errors.
@@ -26,36 +27,24 @@ object ShareDetails {
   }
   
   @scala.inline
-  implicit class ShareDetailsOps[Self <: ShareDetails] (val x: Self) extends AnyVal {
+  implicit class ShareDetailsMutableBuilder[Self <: ShareDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShareErrors(value: ShareErrors): Self = StObject.set(x, "ShareErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShareErrorsUndefined: Self = StObject.set(x, "ShareErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShareErrorsVarargs(value: ShareError*): Self = StObject.set(x, "ShareErrors", js.Array(value :_*))
     
     @scala.inline
-    def setShareErrorsVarargs(value: ShareError*): Self = this.set("ShareErrors", js.Array(value :_*))
+    def setSuccessfulShares(value: SuccessfulShares): Self = StObject.set(x, "SuccessfulShares", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareErrors(value: ShareErrors): Self = this.set("ShareErrors", value.asInstanceOf[js.Any])
+    def setSuccessfulSharesUndefined: Self = StObject.set(x, "SuccessfulShares", js.undefined)
     
     @scala.inline
-    def deleteShareErrors: Self = this.set("ShareErrors", js.undefined)
-    
-    @scala.inline
-    def setSuccessfulSharesVarargs(value: AccountId*): Self = this.set("SuccessfulShares", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuccessfulShares(value: SuccessfulShares): Self = this.set("SuccessfulShares", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessfulShares: Self = this.set("SuccessfulShares", js.undefined)
+    def setSuccessfulSharesVarargs(value: AccountId*): Self = StObject.set(x, "SuccessfulShares", js.Array(value :_*))
   }
 }

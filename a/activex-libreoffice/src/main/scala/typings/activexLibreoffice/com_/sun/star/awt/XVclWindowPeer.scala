@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,45 +78,33 @@ object XVclWindowPeer {
   }
   
   @scala.inline
-  implicit class XVclWindowPeerOps[Self <: XVclWindowPeer] (val x: Self) extends AnyVal {
+  implicit class XVclWindowPeerMutableBuilder[Self <: XVclWindowPeer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableClipSiblings(value: Boolean => Unit): Self = StObject.set(x, "enableClipSiblings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetProperty(value: String => js.Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStyles(value: (Double, js.Array[FontDescriptor], js.Array[Color], js.Array[Color]) => Unit): Self = StObject.set(x, "getStyles", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setEnableClipSiblings(value: Boolean => Unit): Self = this.set("enableClipSiblings", js.Any.fromFunction1(value))
+    def setIsChild(value: XWindowPeer => Boolean): Self = StObject.set(x, "isChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetProperty(value: String => js.Any): Self = this.set("getProperty", js.Any.fromFunction1(value))
+    def setIsDesignMode(value: () => Boolean): Self = StObject.set(x, "isDesignMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStyles(value: (Double, js.Array[FontDescriptor], js.Array[Color], js.Array[Color]) => Unit): Self = this.set("getStyles", js.Any.fromFunction4(value))
+    def setSetControlFont(value: FontDescriptor => Unit): Self = StObject.set(x, "setControlFont", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsChild(value: XWindowPeer => Boolean): Self = this.set("isChild", js.Any.fromFunction1(value))
+    def setSetDesignMode(value: Boolean => Unit): Self = StObject.set(x, "setDesignMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsDesignMode(value: () => Boolean): Self = this.set("isDesignMode", js.Any.fromFunction0(value))
+    def setSetForeground(value: Color => Unit): Self = StObject.set(x, "setForeground", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetControlFont(value: FontDescriptor => Unit): Self = this.set("setControlFont", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDesignMode(value: Boolean => Unit): Self = this.set("setDesignMode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetForeground(value: Color => Unit): Self = this.set("setForeground", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetProperty(value: (String, js.Any) => Unit): Self = this.set("setProperty", js.Any.fromFunction2(value))
+    def setSetProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction2(value))
   }
 }

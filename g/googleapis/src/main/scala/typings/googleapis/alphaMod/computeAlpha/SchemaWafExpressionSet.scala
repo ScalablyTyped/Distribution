@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaWafExpressionSet extends js.Object {
+trait SchemaWafExpressionSet extends StObject {
   
   /**
     * A list of alternate IDs. The format should be: - E.g. XSS-stable Generic
@@ -35,42 +36,30 @@ object SchemaWafExpressionSet {
   }
   
   @scala.inline
-  implicit class SchemaWafExpressionSetOps[Self <: SchemaWafExpressionSet] (val x: Self) extends AnyVal {
+  implicit class SchemaWafExpressionSetMutableBuilder[Self <: SchemaWafExpressionSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
     @scala.inline
-    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    def setExpressions(value: js.Array[SchemaWafExpressionSetExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
     @scala.inline
-    def deleteAliases: Self = this.set("aliases", js.undefined)
+    def setExpressionsVarargs(value: SchemaWafExpressionSetExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
     
     @scala.inline
-    def setExpressionsVarargs(value: SchemaWafExpressionSetExpression*): Self = this.set("expressions", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressions(value: js.Array[SchemaWafExpressionSetExpression]): Self = this.set("expressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpressions: Self = this.set("expressions", js.undefined)
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

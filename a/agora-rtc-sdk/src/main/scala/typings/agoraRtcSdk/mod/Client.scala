@@ -67,6 +67,7 @@ import typings.agoraRtcSdk.anon.Type
 import typings.agoraRtcSdk.anon.Uid
 import typings.agoraRtcSdk.anon.Video
 import typings.agoraRtcSdk.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,7 +78,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The Client object is created by the {@link createClient} method and represents the local client.
   */
 @js.native
-trait Client extends js.Object {
+trait Client extends StObject {
   
   /**
     * Injects an Online Media Stream to a Live Broadcast

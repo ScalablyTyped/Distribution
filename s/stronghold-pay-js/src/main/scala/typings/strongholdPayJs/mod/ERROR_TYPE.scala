@@ -1,12 +1,13 @@
 package typings.strongholdPayJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stronghold-pay-js", "ERROR_TYPE")
 @js.native
-object ERROR_TYPE extends js.Object {
+object ERROR_TYPE extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.strongholdPayJs.mod.global.Stronghold.ERROR_TYPE with String] = js.native

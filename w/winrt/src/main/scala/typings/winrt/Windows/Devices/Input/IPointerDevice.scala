@@ -2,12 +2,13 @@ package typings.winrt.Windows.Devices.Input
 
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPointerDevice extends js.Object {
+trait IPointerDevice extends StObject {
   
   var isIntegrated: Boolean = js.native
   
@@ -37,36 +38,24 @@ object IPointerDevice {
   }
   
   @scala.inline
-  implicit class IPointerDeviceOps[Self <: IPointerDevice] (val x: Self) extends AnyVal {
+  implicit class IPointerDeviceMutableBuilder[Self <: IPointerDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsIntegrated(value: Boolean): Self = StObject.set(x, "isIntegrated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxContacts(value: Double): Self = StObject.set(x, "maxContacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhysicalDeviceRect(value: Rect): Self = StObject.set(x, "physicalDeviceRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIntegrated(value: Boolean): Self = this.set("isIntegrated", value.asInstanceOf[js.Any])
+    def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxContacts(value: Double): Self = this.set("maxContacts", value.asInstanceOf[js.Any])
+    def setScreenRect(value: Rect): Self = StObject.set(x, "screenRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalDeviceRect(value: Rect): Self = this.set("physicalDeviceRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointerDeviceType(value: PointerDeviceType): Self = this.set("pointerDeviceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScreenRect(value: Rect): Self = this.set("screenRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedUsages(value: IVectorView[PointerDeviceUsage]): Self = this.set("supportedUsages", value.asInstanceOf[js.Any])
+    def setSupportedUsages(value: IVectorView[PointerDeviceUsage]): Self = StObject.set(x, "supportedUsages", value.asInstanceOf[js.Any])
   }
 }

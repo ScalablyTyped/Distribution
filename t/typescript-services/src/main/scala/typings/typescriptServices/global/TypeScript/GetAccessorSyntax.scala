@@ -2,6 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +21,11 @@ class GetAccessorSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.GetAccessorSyntax")
-@js.native
-object GetAccessorSyntax extends js.Object {
+object GetAccessorSyntax {
   
+  /* static member */
+  @JSGlobal("TypeScript.GetAccessorSyntax.create")
+  @js.native
   def create(
     getKeyword: ISyntaxToken,
     propertyName: ISyntaxToken,
@@ -32,5 +33,8 @@ object GetAccessorSyntax extends js.Object {
     block: typings.typescriptServices.TypeScript.BlockSyntax
   ): typings.typescriptServices.TypeScript.GetAccessorSyntax = js.native
   
+  /* static member */
+  @JSGlobal("TypeScript.GetAccessorSyntax.create1")
+  @js.native
   def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.GetAccessorSyntax = js.native
 }

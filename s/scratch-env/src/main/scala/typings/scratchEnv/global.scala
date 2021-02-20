@@ -1,16 +1,16 @@
 package typings.scratchEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   /** Indicate the scope for a reporter's value. */
+  @JSGlobal("ReporterScope")
   @js.native
-  object ReporterScope extends js.Object {
+  object ReporterScope extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.scratchEnv.ReporterScope with String] = js.native
@@ -20,12 +20,12 @@ object global extends js.Object {
     /* "target" */ val TARGET: typings.scratchEnv.ReporterScope.TARGET with String = js.native
   }
   
-  @js.native
-  object Scratch extends js.Object {
+  object Scratch {
     
     /** Block argument types. */
+    @JSGlobal("Scratch.ArgumentType")
     @js.native
-    object ArgumentType extends js.Object {
+    object ArgumentType extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.scratchEnv.Scratch.ArgumentType with String] = js.native
@@ -48,8 +48,9 @@ object global extends js.Object {
     }
     
     /** Types of blocks. */
+    @JSGlobal("Scratch.BlockType")
     @js.native
-    object BlockType extends js.Object {
+    object BlockType extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.scratchEnv.Scratch.BlockType with String] = js.native
@@ -72,8 +73,9 @@ object global extends js.Object {
     }
     
     /** Default types of target supported by the VM. */
+    @JSGlobal("Scratch.TargetType")
     @js.native
-    object TargetType extends js.Object {
+    object TargetType extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.scratchEnv.Scratch.TargetType with String] = js.native
@@ -83,14 +85,16 @@ object global extends js.Object {
       /* "stage" */ val STAGE: typings.scratchEnv.Scratch.TargetType.STAGE with String = js.native
     }
     
-    @js.native
-    object extensions extends js.Object {
+    object extensions {
       
       /** Register an extension. */
+      @JSGlobal("Scratch.extensions.register")
+      @js.native
       def register(extension: typings.scratchEnv.ScratchExtension): Unit = js.native
     }
   }
   
+  @JSGlobal("ScratchExtension")
   @js.native
   class ScratchExtension ()
     extends typings.scratchEnv.ScratchExtension

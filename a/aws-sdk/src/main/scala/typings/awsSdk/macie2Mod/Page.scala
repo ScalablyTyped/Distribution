@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Page extends js.Object {
+trait Page extends StObject {
   
   /**
     * The line that contains the data, and the position of the data on that line.
@@ -31,36 +32,24 @@ object Page {
   }
   
   @scala.inline
-  implicit class PageOps[Self <: Page] (val x: Self) extends AnyVal {
+  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineRange(value: Range): Self = StObject.set(x, "lineRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineRangeUndefined: Self = StObject.set(x, "lineRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetRange(value: Range): Self = StObject.set(x, "offsetRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineRange(value: Range): Self = this.set("lineRange", value.asInstanceOf[js.Any])
+    def setOffsetRangeUndefined: Self = StObject.set(x, "offsetRange", js.undefined)
     
     @scala.inline
-    def deleteLineRange: Self = this.set("lineRange", js.undefined)
+    def setPageNumber(value: long): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetRange(value: Range): Self = this.set("offsetRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetRange: Self = this.set("offsetRange", js.undefined)
-    
-    @scala.inline
-    def setPageNumber(value: long): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageNumber: Self = this.set("pageNumber", js.undefined)
+    def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchAssociateScramSecretRequest extends js.Object {
+trait BatchAssociateScramSecretRequest extends StObject {
   
   /**
     * 
@@ -30,27 +31,15 @@ object BatchAssociateScramSecretRequest {
   }
   
   @scala.inline
-  implicit class BatchAssociateScramSecretRequestOps[Self <: BatchAssociateScramSecretRequest] (val x: Self) extends AnyVal {
+  implicit class BatchAssociateScramSecretRequestMutableBuilder[Self <: BatchAssociateScramSecretRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecretArnList(value: listOfString): Self = StObject.set(x, "SecretArnList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretArnListVarargs(value: string*): Self = this.set("SecretArnList", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecretArnList(value: listOfString): Self = this.set("SecretArnList", value.asInstanceOf[js.Any])
+    def setSecretArnListVarargs(value: string*): Self = StObject.set(x, "SecretArnList", js.Array(value :_*))
   }
 }

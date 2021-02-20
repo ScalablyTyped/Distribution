@@ -1,5 +1,6 @@
 package typings.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,23 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Extended String API.
   */
-@JSImport("playcanvas", "string")
-@js.native
-object string extends js.Object {
+object string {
   
   /**
     * All ASCII letters.
     */
+  @JSImport("playcanvas", "string.ASCII_LETTERS")
+  @js.native
   val ASCII_LETTERS: String = js.native
   
   /**
     * All lowercase letters.
     */
+  @JSImport("playcanvas", "string.ASCII_LOWERCASE")
+  @js.native
   val ASCII_LOWERCASE: String = js.native
   
   /**
     * All uppercase letters.
     */
+  @JSImport("playcanvas", "string.ASCII_UPPERCASE")
+  @js.native
   val ASCII_UPPERCASE: String = js.native
   
   /**
@@ -35,7 +40,11 @@ object string extends js.Object {
     * @param [arguments] - All other arguments are substituted into the string.
     * @returns The formatted string.
     */
+  @JSImport("playcanvas", "string.format")
+  @js.native
   def format(s: String): String = js.native
+  @JSImport("playcanvas", "string.format")
+  @js.native
   def format(s: String, arguments: js.Any): String = js.native
   
   /**
@@ -44,6 +53,8 @@ object string extends js.Object {
     * @param args - The code points to convert to a string.
     * @returns The converted string.
     */
+  @JSImport("playcanvas", "string.fromCodePoint")
+  @js.native
   def fromCodePoint(args: Double*): String = js.native
   
   /**
@@ -53,7 +64,11 @@ object string extends js.Object {
     * @param [i] - The index in the string.
     * @returns The code point value for the character in the string.
     */
+  @JSImport("playcanvas", "string.getCodePoint")
+  @js.native
   def getCodePoint(string: String): Double = js.native
+  @JSImport("playcanvas", "string.getCodePoint")
+  @js.native
   def getCodePoint(string: String, i: Double): Double = js.native
   
   /**
@@ -61,6 +76,8 @@ object string extends js.Object {
     * @param string - The string to get code points from.
     * @returns The code points in the string.
     */
+  @JSImport("playcanvas", "string.getCodePoints")
+  @js.native
   def getCodePoints(string: String): js.Array[Double] = js.native
   
   /**
@@ -69,6 +86,8 @@ object string extends js.Object {
     * @param string - The string to break into symbols.
     * @returns The symbols in the string.
     */
+  @JSImport("playcanvas", "string.getSymbols")
+  @js.native
   def getSymbols(string: String): js.Array[String] = js.native
   
   /**
@@ -79,6 +98,10 @@ object string extends js.Object {
     * @param [strict] - In strict mode an Exception is thrown if s is not an accepted string value. Defaults to false.
     * @returns The converted value.
     */
+  @JSImport("playcanvas", "string.toBool")
+  @js.native
   def toBool(s: String): Boolean = js.native
+  @JSImport("playcanvas", "string.toBool")
+  @js.native
   def toBool(s: String, strict: Boolean): Boolean = js.native
 }

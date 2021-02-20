@@ -1,5 +1,6 @@
 package typings.redisInfo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,4 +14,7 @@ package object mod {
   type ReplicationInfo = typings.redisInfo.mod.BaseReplicationInfo with (typings.redisInfo.mod.ReplicationMasterInfo | typings.redisInfo.mod.ReplicationReplicaInfo)
   
   type ReplicationReplicaInfo = typings.redisInfo.mod.BaseReplicationReplicaInfo with (typings.redisInfo.mod.ReplicationReplicaSyncOnInfo | typings.redisInfo.mod.ReplicationReplicaSyncOffInfo) with (typings.redisInfo.mod.ReplicationReplicaLinkUpInfo | typings.redisInfo.mod.ReplicationReplicaLinkDownInfo)
+  
+  @scala.inline
+  def parse(info: java.lang.String): typings.redisInfo.mod.RedisInfo = typings.redisInfo.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parse")(info.asInstanceOf[js.Any]).asInstanceOf[typings.redisInfo.mod.RedisInfo]
 }

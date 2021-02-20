@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobFlowExecutionStatusDetail extends js.Object {
+trait JobFlowExecutionStatusDetail extends StObject {
   
   /**
     * The creation date and time of the job flow.
@@ -46,48 +47,36 @@ object JobFlowExecutionStatusDetail {
   }
   
   @scala.inline
-  implicit class JobFlowExecutionStatusDetailOps[Self <: JobFlowExecutionStatusDetail] (val x: Self) extends AnyVal {
+  implicit class JobFlowExecutionStatusDetailMutableBuilder[Self <: JobFlowExecutionStatusDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
     @scala.inline
-    def setCreationDateTime(value: Date): Self = this.set("CreationDateTime", value.asInstanceOf[js.Any])
+    def setLastStateChangeReason(value: XmlString): Self = StObject.set(x, "LastStateChangeReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: JobFlowExecutionState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setLastStateChangeReasonUndefined: Self = StObject.set(x, "LastStateChangeReason", js.undefined)
     
     @scala.inline
-    def setEndDateTime(value: Date): Self = this.set("EndDateTime", value.asInstanceOf[js.Any])
+    def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndDateTime: Self = this.set("EndDateTime", js.undefined)
+    def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
     
     @scala.inline
-    def setLastStateChangeReason(value: XmlString): Self = this.set("LastStateChangeReason", value.asInstanceOf[js.Any])
+    def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastStateChangeReason: Self = this.set("LastStateChangeReason", js.undefined)
+    def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
     
     @scala.inline
-    def setReadyDateTime(value: Date): Self = this.set("ReadyDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadyDateTime: Self = this.set("ReadyDateTime", js.undefined)
-    
-    @scala.inline
-    def setStartDateTime(value: Date): Self = this.set("StartDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDateTime: Self = this.set("StartDateTime", js.undefined)
+    def setState(value: JobFlowExecutionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

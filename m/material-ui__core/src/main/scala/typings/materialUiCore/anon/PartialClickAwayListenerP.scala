@@ -8,13 +8,14 @@ import typings.materialUiCore.materialUiCoreStrings.onTouchEnd
 import typings.materialUiCore.materialUiCoreStrings.onTouchStart
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/ClickAwayListener.ClickAwayListenerProps> */
 @js.native
-trait PartialClickAwayListenerP extends js.Object {
+trait PartialClickAwayListenerP extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.native
   
@@ -33,42 +34,30 @@ object PartialClickAwayListenerP {
   }
   
   @scala.inline
-  implicit class PartialClickAwayListenerPOps[Self <: PartialClickAwayListenerP] (val x: Self) extends AnyVal {
+  implicit class PartialClickAwayListenerPMutableBuilder[Self <: PartialClickAwayListenerP] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMouseEvent(value: onClick | onMouseDown | onMouseUp | `false`): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setMouseEventUndefined: Self = StObject.set(x, "mouseEvent", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setOnClickAway(value: /* event */ ChangeEvent[js.Object] => Unit): Self = StObject.set(x, "onClickAway", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseEvent(value: onClick | onMouseDown | onMouseUp | `false`): Self = this.set("mouseEvent", value.asInstanceOf[js.Any])
+    def setOnClickAwayUndefined: Self = StObject.set(x, "onClickAway", js.undefined)
     
     @scala.inline
-    def deleteMouseEvent: Self = this.set("mouseEvent", js.undefined)
+    def setTouchEvent(value: onTouchStart | onTouchEnd | `false`): Self = StObject.set(x, "touchEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClickAway(value: /* event */ ChangeEvent[js.Object] => Unit): Self = this.set("onClickAway", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnClickAway: Self = this.set("onClickAway", js.undefined)
-    
-    @scala.inline
-    def setTouchEvent(value: onTouchStart | onTouchEnd | `false`): Self = this.set("touchEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchEvent: Self = this.set("touchEvent", js.undefined)
+    def setTouchEventUndefined: Self = StObject.set(x, "touchEvent", js.undefined)
   }
 }

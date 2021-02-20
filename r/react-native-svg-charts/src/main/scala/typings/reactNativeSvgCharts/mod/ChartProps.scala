@@ -9,12 +9,13 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSvgCharts.anon.Bottom
 import typings.reactNativeSvgCharts.anon.PartialPathProps
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartProps[T] extends js.Object {
+trait ChartProps[T] extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.native
   
@@ -67,147 +68,135 @@ object ChartProps {
   }
   
   @scala.inline
-  implicit class ChartPropsOps[Self <: ChartProps[_], T] (val x: Self with ChartProps[T]) extends AnyVal {
+  implicit class ChartPropsMutableBuilder[Self <: ChartProps[_], T] (val x: Self with ChartProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: T*): Self = this.set("data", js.Array(value :_*))
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[T]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setContentInset(value: Bottom): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setContentInsetUndefined: Self = StObject.set(x, "contentInset", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setCurve(value: /* context */ CanvasRenderingContext2D | Path_ => CurveGenerator): Self = StObject.set(x, "curve", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentInset(value: Bottom): Self = this.set("contentInset", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def deleteContentInset: Self = this.set("contentInset", js.undefined)
+    def setGridMax(value: Double): Self = StObject.set(x, "gridMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurve(value: /* context */ CanvasRenderingContext2D | Path_ => CurveGenerator): Self = this.set("curve", js.Any.fromFunction1(value))
+    def setGridMaxUndefined: Self = StObject.set(x, "gridMax", js.undefined)
     
     @scala.inline
-    def deleteCurve: Self = this.set("curve", js.undefined)
+    def setGridMin(value: Double): Self = StObject.set(x, "gridMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridMax(value: Double): Self = this.set("gridMax", value.asInstanceOf[js.Any])
+    def setGridMinUndefined: Self = StObject.set(x, "gridMin", js.undefined)
     
     @scala.inline
-    def deleteGridMax: Self = this.set("gridMax", js.undefined)
+    def setGridProps(value: GridProps[_]): Self = StObject.set(x, "gridProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridMin(value: Double): Self = this.set("gridMin", value.asInstanceOf[js.Any])
+    def setGridPropsUndefined: Self = StObject.set(x, "gridProps", js.undefined)
     
     @scala.inline
-    def deleteGridMin: Self = this.set("gridMin", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridProps(value: GridProps[_]): Self = this.set("gridProps", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGridProps: Self = this.set("gridProps", js.undefined)
+    def setNumberOfTicks(value: Double): Self = StObject.set(x, "numberOfTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setNumberOfTicksUndefined: Self = StObject.set(x, "numberOfTicks", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfTicks(value: Double): Self = this.set("numberOfTicks", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteNumberOfTicks: Self = this.set("numberOfTicks", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSvg(value: PartialPathProps): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvg(value: PartialPathProps): Self = this.set("svg", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteSvg: Self = this.set("svg", js.undefined)
+    def setXAccessor(value: /* props */ AccessorFunctionProps[T] => Double): Self = StObject.set(x, "xAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXAccessorUndefined: Self = StObject.set(x, "xAccessor", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setXMax(value: Double): Self = StObject.set(x, "xMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAccessor(value: /* props */ AccessorFunctionProps[T] => Double): Self = this.set("xAccessor", js.Any.fromFunction1(value))
+    def setXMaxUndefined: Self = StObject.set(x, "xMax", js.undefined)
     
     @scala.inline
-    def deleteXAccessor: Self = this.set("xAccessor", js.undefined)
+    def setXMin(value: Double): Self = StObject.set(x, "xMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXMax(value: Double): Self = this.set("xMax", value.asInstanceOf[js.Any])
+    def setXMinUndefined: Self = StObject.set(x, "xMin", js.undefined)
     
     @scala.inline
-    def deleteXMax: Self = this.set("xMax", js.undefined)
+    def setXScale(value: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any]): Self = StObject.set(x, "xScale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setXMin(value: Double): Self = this.set("xMin", value.asInstanceOf[js.Any])
+    def setXScaleUndefined: Self = StObject.set(x, "xScale", js.undefined)
     
     @scala.inline
-    def deleteXMin: Self = this.set("xMin", js.undefined)
+    def setYAccessor(value: /* props */ AccessorFunctionProps[T] => Double): Self = StObject.set(x, "yAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setXScale(value: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any]): Self = this.set("xScale", js.Any.fromFunction0(value))
+    def setYAccessorUndefined: Self = StObject.set(x, "yAccessor", js.undefined)
     
     @scala.inline
-    def deleteXScale: Self = this.set("xScale", js.undefined)
+    def setYMax(value: Double): Self = StObject.set(x, "yMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYAccessor(value: /* props */ AccessorFunctionProps[T] => Double): Self = this.set("yAccessor", js.Any.fromFunction1(value))
+    def setYMaxUndefined: Self = StObject.set(x, "yMax", js.undefined)
     
     @scala.inline
-    def deleteYAccessor: Self = this.set("yAccessor", js.undefined)
+    def setYMin(value: Double): Self = StObject.set(x, "yMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYMax(value: Double): Self = this.set("yMax", value.asInstanceOf[js.Any])
+    def setYMinUndefined: Self = StObject.set(x, "yMin", js.undefined)
     
     @scala.inline
-    def deleteYMax: Self = this.set("yMax", js.undefined)
+    def setYScale(value: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any]): Self = StObject.set(x, "yScale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setYMin(value: Double): Self = this.set("yMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYMin: Self = this.set("yMin", js.undefined)
-    
-    @scala.inline
-    def setYScale(value: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any]): Self = this.set("yScale", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteYScale: Self = this.set("yScale", js.undefined)
+    def setYScaleUndefined: Self = StObject.set(x, "yScale", js.undefined)
   }
 }

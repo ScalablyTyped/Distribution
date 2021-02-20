@@ -1,12 +1,13 @@
 package typings.sinon.mod
 
 import typings.sinon.anon.PartialSinonExposeOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonAssert extends js.Object {
+trait SinonAssert extends StObject {
   
   /**
     * Passes if spy was always called with obj as its this value.
@@ -222,7 +223,7 @@ trait SinonAssert extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
   ): Unit = js.native
   
-   // Overridable
+  // Overridable
   // Methods
   /**
     * Passes if spy was never called
@@ -230,7 +231,7 @@ trait SinonAssert extends js.Object {
     */
   def notCalled(spy: SinonSpy[_, _]): Unit = js.native
   
-   // Overridable
+  // Overridable
   /**
     * Called every time assertion passes.
     * Default implementation does nothing.

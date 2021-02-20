@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelConversionRequest extends js.Object {
+trait CancelConversionRequest extends StObject {
   
   /**
     * The ID of the conversion task.
@@ -31,33 +32,21 @@ object CancelConversionRequest {
   }
   
   @scala.inline
-  implicit class CancelConversionRequestOps[Self <: CancelConversionRequest] (val x: Self) extends AnyVal {
+  implicit class CancelConversionRequestMutableBuilder[Self <: CancelConversionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversionTaskId(value: ConversionTaskId): Self = StObject.set(x, "ConversionTaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setConversionTaskId(value: ConversionTaskId): Self = this.set("ConversionTaskId", value.asInstanceOf[js.Any])
+    def setReasonMessage(value: String): Self = StObject.set(x, "ReasonMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
-    
-    @scala.inline
-    def setReasonMessage(value: String): Self = this.set("ReasonMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasonMessage: Self = this.set("ReasonMessage", js.undefined)
+    def setReasonMessageUndefined: Self = StObject.set(x, "ReasonMessage", js.undefined)
   }
 }

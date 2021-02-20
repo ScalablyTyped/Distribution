@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageStatistics extends js.Object {
+trait UsageStatistics extends StObject {
   
   /**
     * The usage statistic sum organized by account ID.
@@ -36,54 +37,42 @@ object UsageStatistics {
   }
   
   @scala.inline
-  implicit class UsageStatisticsOps[Self <: UsageStatistics] (val x: Self) extends AnyVal {
+  implicit class UsageStatisticsMutableBuilder[Self <: UsageStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSumByAccount(value: UsageAccountResultList): Self = StObject.set(x, "SumByAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSumByAccountUndefined: Self = StObject.set(x, "SumByAccount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSumByAccountVarargs(value: UsageAccountResult*): Self = StObject.set(x, "SumByAccount", js.Array(value :_*))
     
     @scala.inline
-    def setSumByAccountVarargs(value: UsageAccountResult*): Self = this.set("SumByAccount", js.Array(value :_*))
+    def setSumByDataSource(value: UsageDataSourceResultList): Self = StObject.set(x, "SumByDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSumByAccount(value: UsageAccountResultList): Self = this.set("SumByAccount", value.asInstanceOf[js.Any])
+    def setSumByDataSourceUndefined: Self = StObject.set(x, "SumByDataSource", js.undefined)
     
     @scala.inline
-    def deleteSumByAccount: Self = this.set("SumByAccount", js.undefined)
+    def setSumByDataSourceVarargs(value: UsageDataSourceResult*): Self = StObject.set(x, "SumByDataSource", js.Array(value :_*))
     
     @scala.inline
-    def setSumByDataSourceVarargs(value: UsageDataSourceResult*): Self = this.set("SumByDataSource", js.Array(value :_*))
+    def setSumByResource(value: UsageResourceResultList): Self = StObject.set(x, "SumByResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSumByDataSource(value: UsageDataSourceResultList): Self = this.set("SumByDataSource", value.asInstanceOf[js.Any])
+    def setSumByResourceUndefined: Self = StObject.set(x, "SumByResource", js.undefined)
     
     @scala.inline
-    def deleteSumByDataSource: Self = this.set("SumByDataSource", js.undefined)
+    def setSumByResourceVarargs(value: UsageResourceResult*): Self = StObject.set(x, "SumByResource", js.Array(value :_*))
     
     @scala.inline
-    def setSumByResourceVarargs(value: UsageResourceResult*): Self = this.set("SumByResource", js.Array(value :_*))
+    def setTopResources(value: UsageResourceResultList): Self = StObject.set(x, "TopResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSumByResource(value: UsageResourceResultList): Self = this.set("SumByResource", value.asInstanceOf[js.Any])
+    def setTopResourcesUndefined: Self = StObject.set(x, "TopResources", js.undefined)
     
     @scala.inline
-    def deleteSumByResource: Self = this.set("SumByResource", js.undefined)
-    
-    @scala.inline
-    def setTopResourcesVarargs(value: UsageResourceResult*): Self = this.set("TopResources", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopResources(value: UsageResourceResultList): Self = this.set("TopResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopResources: Self = this.set("TopResources", js.undefined)
+    def setTopResourcesVarargs(value: UsageResourceResult*): Self = StObject.set(x, "TopResources", js.Array(value :_*))
   }
 }

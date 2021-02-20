@@ -2,14 +2,14 @@ package typings.sentryBrowser
 
 import typings.sentryBrowser.anon.Key
 import typings.sentryTypes.integrationMod.Integration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/browser/dist/integrations/linkederrors", JSImport.Namespace)
-@js.native
-object linkederrorsMod extends js.Object {
+object linkederrorsMod {
   
+  @JSImport("@sentry/browser/dist/integrations/linkederrors", "LinkedErrors")
   @js.native
   /**
     * @inheritDoc
@@ -43,12 +43,19 @@ object linkederrorsMod extends js.Object {
     def setupOnce(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object LinkedErrors extends js.Object {
+  object LinkedErrors {
+    
+    @JSImport("@sentry/browser/dist/integrations/linkederrors", "LinkedErrors")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    var id: String = js.native
+    @JSImport("@sentry/browser/dist/integrations/linkederrors", "LinkedErrors.id")
+    @js.native
+    def id: String = js.native
+    @scala.inline
+    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRowConfig extends js.Object {
+trait IRowConfig extends StObject {
   
   def afterSelectionChangeCallback(): Unit = js.native
   
@@ -44,51 +45,39 @@ object IRowConfig {
   }
   
   @scala.inline
-  implicit class IRowConfigOps[Self <: IRowConfig] (val x: Self) extends AnyVal {
+  implicit class IRowConfigMutableBuilder[Self <: IRowConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterSelectionChangeCallback(value: () => Unit): Self = StObject.set(x, "afterSelectionChangeCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeSelectionChangeCallback(value: () => Unit): Self = StObject.set(x, "beforeSelectionChangeCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableCellSelection(value: Boolean): Self = StObject.set(x, "enableCellSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterSelectionChangeCallback(value: () => Unit): Self = this.set("afterSelectionChangeCallback", js.Any.fromFunction0(value))
+    def setEnableRowSelection(value: Boolean): Self = StObject.set(x, "enableRowSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeSelectionChangeCallback(value: () => Unit): Self = this.set("beforeSelectionChangeCallback", js.Any.fromFunction0(value))
+    def setJqueryUITheme(value: Boolean): Self = StObject.set(x, "jqueryUITheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCellSelection(value: Boolean): Self = this.set("enableCellSelection", value.asInstanceOf[js.Any])
+    def setRowClasses(value: js.Array[String]): Self = StObject.set(x, "rowClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRowSelection(value: Boolean): Self = this.set("enableRowSelection", value.asInstanceOf[js.Any])
+    def setRowClassesVarargs(value: String*): Self = StObject.set(x, "rowClasses", js.Array(value :_*))
     
     @scala.inline
-    def setJqueryUITheme(value: Boolean): Self = this.set("jqueryUITheme", value.asInstanceOf[js.Any])
+    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowClassesVarargs(value: String*): Self = this.set("rowClasses", js.Array(value :_*))
+    def setSelectWithCheckboxOnly(value: Boolean): Self = StObject.set(x, "selectWithCheckboxOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowClasses(value: js.Array[String]): Self = this.set("rowClasses", value.asInstanceOf[js.Any])
+    def setSelectedItems(value: js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeight(value: Double): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectWithCheckboxOnly(value: Boolean): Self = this.set("selectWithCheckboxOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedItemsVarargs(value: js.Any*): Self = this.set("selectedItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedItems(value: js.Array[_]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
+    def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
   }
 }

@@ -1,19 +1,19 @@
 package typings.winrtUwp.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes for managing media rendering. */
-@JSGlobal("Windows.Media.Render")
-@js.native
-object Render extends js.Object {
+object Render {
   
   @js.native
-  sealed trait AudioRenderCategory extends js.Object
+  sealed trait AudioRenderCategory extends StObject
   /** Describes the purpose of the audio information in an audio stream. */
+  @JSGlobal("Windows.Media.Render.AudioRenderCategory")
   @js.native
-  object AudioRenderCategory extends js.Object {
+  object AudioRenderCategory extends StObject {
     
     /** Audio is for system or application notifications, for example ring tones. */
     @js.native

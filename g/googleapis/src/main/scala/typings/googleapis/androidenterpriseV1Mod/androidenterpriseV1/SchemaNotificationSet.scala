@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * account authenticated for the request.
   */
 @js.native
-trait SchemaNotificationSet extends js.Object {
+trait SchemaNotificationSet extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -39,39 +40,27 @@ object SchemaNotificationSet {
   }
   
   @scala.inline
-  implicit class SchemaNotificationSetOps[Self <: SchemaNotificationSet] (val x: Self) extends AnyVal {
+  implicit class SchemaNotificationSetMutableBuilder[Self <: SchemaNotificationSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotification(value: js.Array[SchemaNotification]): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNotificationSetId(value: String): Self = StObject.set(x, "notificationSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNotificationSetIdUndefined: Self = StObject.set(x, "notificationSetId", js.undefined)
     
     @scala.inline
-    def setNotificationVarargs(value: SchemaNotification*): Self = this.set("notification", js.Array(value :_*))
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def setNotification(value: js.Array[SchemaNotification]): Self = this.set("notification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
-    
-    @scala.inline
-    def setNotificationSetId(value: String): Self = this.set("notificationSetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationSetId: Self = this.set("notificationSetId", js.undefined)
+    def setNotificationVarargs(value: SchemaNotification*): Self = StObject.set(x, "notification", js.Array(value :_*))
   }
 }

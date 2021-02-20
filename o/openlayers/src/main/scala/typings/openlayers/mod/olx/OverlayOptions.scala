@@ -4,6 +4,7 @@ import typings.openlayers.mod.Coordinate_
 import typings.openlayers.mod.OverlayPositioning
 import typings.openlayers.mod.olx.animation.PanOptions
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Object literal with config options for the overlay.
   */
 @js.native
-trait OverlayOptions extends js.Object {
+trait OverlayOptions extends StObject {
   
   var autoPan: js.UndefOr[Boolean] = js.native
   
@@ -43,81 +44,69 @@ object OverlayOptions {
   }
   
   @scala.inline
-  implicit class OverlayOptionsOps[Self <: OverlayOptions] (val x: Self) extends AnyVal {
+  implicit class OverlayOptionsMutableBuilder[Self <: OverlayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPan(value: Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPanAnimation(value: PanOptions): Self = StObject.set(x, "autoPanAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoPanAnimationUndefined: Self = StObject.set(x, "autoPanAnimation", js.undefined)
     
     @scala.inline
-    def setAutoPan(value: Boolean): Self = this.set("autoPan", value.asInstanceOf[js.Any])
+    def setAutoPanMargin(value: Double): Self = StObject.set(x, "autoPanMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoPan: Self = this.set("autoPan", js.undefined)
+    def setAutoPanMarginUndefined: Self = StObject.set(x, "autoPanMargin", js.undefined)
     
     @scala.inline
-    def setAutoPanAnimation(value: PanOptions): Self = this.set("autoPanAnimation", value.asInstanceOf[js.Any])
+    def setAutoPanUndefined: Self = StObject.set(x, "autoPan", js.undefined)
     
     @scala.inline
-    def deleteAutoPanAnimation: Self = this.set("autoPanAnimation", js.undefined)
+    def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPanMargin(value: Double): Self = this.set("autoPanMargin", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteAutoPanMargin: Self = this.set("autoPanMargin", js.undefined)
+    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: Element): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setInsertFirst(value: Boolean): Self = StObject.set(x, "insertFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double | String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertFirst(value: Boolean): Self = this.set("insertFirst", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteInsertFirst: Self = this.set("insertFirst", js.undefined)
+    def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
     
     @scala.inline
-    def setOffsetVarargs(value: Double*): Self = this.set("offset", js.Array(value :_*))
+    def setPosition(value: Coordinate_): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: js.Array[Double]): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setPositioning(value: OverlayPositioning | String): Self = StObject.set(x, "positioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Coordinate_): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPositioningUndefined: Self = StObject.set(x, "positioning", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setStopEvent(value: Boolean): Self = StObject.set(x, "stopEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositioning(value: OverlayPositioning | String): Self = this.set("positioning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositioning: Self = this.set("positioning", js.undefined)
-    
-    @scala.inline
-    def setStopEvent(value: Boolean): Self = this.set("stopEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopEvent: Self = this.set("stopEvent", js.undefined)
+    def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
   }
 }

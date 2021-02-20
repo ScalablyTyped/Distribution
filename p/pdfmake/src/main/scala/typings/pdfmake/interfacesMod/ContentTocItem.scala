@@ -1,5 +1,6 @@
 package typings.pdfmake.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,51 +29,39 @@ object ContentTocItem {
   }
   
   @scala.inline
-  implicit class ContentTocItemOps[Self <: ContentTocItem] (val x: Self) extends AnyVal {
+  implicit class ContentTocItemMutableBuilder[Self <: ContentTocItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setText(value: String | ContentTocItem): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTocItem(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "tocItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTocItemVarargs(value: String*): Self = StObject.set(x, "tocItem", js.Array(value :_*))
     
     @scala.inline
-    def setText(value: String | ContentTocItem): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTocMargin(value: Margins): Self = StObject.set(x, "tocMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTocItemVarargs(value: String*): Self = this.set("tocItem", js.Array(value :_*))
+    def setTocMarginUndefined: Self = StObject.set(x, "tocMargin", js.undefined)
     
     @scala.inline
-    def setTocItem(value: Boolean | String | js.Array[String]): Self = this.set("tocItem", value.asInstanceOf[js.Any])
+    def setTocNumberStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "tocNumberStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTocMargin(value: Margins): Self = this.set("tocMargin", value.asInstanceOf[js.Any])
+    def setTocNumberStyleUndefined: Self = StObject.set(x, "tocNumberStyle", js.undefined)
     
     @scala.inline
-    def deleteTocMargin: Self = this.set("tocMargin", js.undefined)
+    def setTocNumberStyleVarargs(value: String*): Self = StObject.set(x, "tocNumberStyle", js.Array(value :_*))
     
     @scala.inline
-    def setTocNumberStyleVarargs(value: String*): Self = this.set("tocNumberStyle", js.Array(value :_*))
+    def setTocStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "tocStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTocNumberStyle(value: String | js.Array[String] | Style): Self = this.set("tocNumberStyle", value.asInstanceOf[js.Any])
+    def setTocStyleUndefined: Self = StObject.set(x, "tocStyle", js.undefined)
     
     @scala.inline
-    def deleteTocNumberStyle: Self = this.set("tocNumberStyle", js.undefined)
-    
-    @scala.inline
-    def setTocStyleVarargs(value: String*): Self = this.set("tocStyle", js.Array(value :_*))
-    
-    @scala.inline
-    def setTocStyle(value: String | js.Array[String] | Style): Self = this.set("tocStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTocStyle: Self = this.set("tocStyle", js.undefined)
+    def setTocStyleVarargs(value: String*): Self = StObject.set(x, "tocStyle", js.Array(value :_*))
   }
 }

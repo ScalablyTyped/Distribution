@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SamplingStatisticsDocument extends js.Object {
+trait SamplingStatisticsDocument extends StObject {
   
   /**
     * The number of requests recorded with borrowed reservoir quota.
@@ -52,39 +53,27 @@ object SamplingStatisticsDocument {
   }
   
   @scala.inline
-  implicit class SamplingStatisticsDocumentOps[Self <: SamplingStatisticsDocument] (val x: Self) extends AnyVal {
+  implicit class SamplingStatisticsDocumentMutableBuilder[Self <: SamplingStatisticsDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorrowCount(value: BorrowCount): Self = StObject.set(x, "BorrowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorrowCountUndefined: Self = StObject.set(x, "BorrowCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientID(value: ClientID): Self = StObject.set(x, "ClientID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientID(value: ClientID): Self = this.set("ClientID", value.asInstanceOf[js.Any])
+    def setRequestCount(value: RequestCount): Self = StObject.set(x, "RequestCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestCount(value: RequestCount): Self = this.set("RequestCount", value.asInstanceOf[js.Any])
+    def setRuleName(value: RuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleName(value: RuleName): Self = this.set("RuleName", value.asInstanceOf[js.Any])
+    def setSampledCount(value: SampledCount): Self = StObject.set(x, "SampledCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampledCount(value: SampledCount): Self = this.set("SampledCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBorrowCount(value: BorrowCount): Self = this.set("BorrowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorrowCount: Self = this.set("BorrowCount", js.undefined)
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListEntitiesRequest extends js.Object {
+trait ListEntitiesRequest extends StObject {
   
   /**
     * The catalog related to the request. Fixed value: AWSMarketplace 
@@ -46,51 +47,39 @@ object ListEntitiesRequest {
   }
   
   @scala.inline
-  implicit class ListEntitiesRequestOps[Self <: ListEntitiesRequest] (val x: Self) extends AnyVal {
+  implicit class ListEntitiesRequestMutableBuilder[Self <: ListEntitiesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityType(value: EntityType): Self = StObject.set(x, "EntityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterList(value: FilterList): Self = StObject.set(x, "FilterList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalog(value: Catalog): Self = this.set("Catalog", value.asInstanceOf[js.Any])
+    def setFilterListUndefined: Self = StObject.set(x, "FilterList", js.undefined)
     
     @scala.inline
-    def setEntityType(value: EntityType): Self = this.set("EntityType", value.asInstanceOf[js.Any])
+    def setFilterListVarargs(value: Filter*): Self = StObject.set(x, "FilterList", js.Array(value :_*))
     
     @scala.inline
-    def setFilterListVarargs(value: Filter*): Self = this.set("FilterList", js.Array(value :_*))
+    def setMaxResults(value: MaxResultInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterList(value: FilterList): Self = this.set("FilterList", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteFilterList: Self = this.set("FilterList", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResultInteger): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setSort(value: Sort): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSort(value: Sort): Self = this.set("Sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("Sort", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "Sort", js.undefined)
   }
 }

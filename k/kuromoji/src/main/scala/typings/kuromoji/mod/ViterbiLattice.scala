@@ -1,11 +1,12 @@
 package typings.kuromoji.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViterbiLattice extends js.Object {
+trait ViterbiLattice extends StObject {
   
   def append(node: ViterbiNode): Unit = js.native
   
@@ -20,24 +21,12 @@ object ViterbiLattice {
   }
   
   @scala.inline
-  implicit class ViterbiLatticeOps[Self <: ViterbiLattice] (val x: Self) extends AnyVal {
+  implicit class ViterbiLatticeMutableBuilder[Self <: ViterbiLattice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: ViterbiNode => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppend(value: ViterbiNode => Unit): Self = this.set("append", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAppendEos(value: () => Unit): Self = this.set("appendEos", js.Any.fromFunction0(value))
+    def setAppendEos(value: () => Unit): Self = StObject.set(x, "appendEos", js.Any.fromFunction0(value))
   }
 }

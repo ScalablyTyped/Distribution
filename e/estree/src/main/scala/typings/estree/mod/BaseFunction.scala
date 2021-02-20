@@ -1,5 +1,6 @@
 package typings.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,39 +29,27 @@ object BaseFunction {
   }
   
   @scala.inline
-  implicit class BaseFunctionOps[Self <: BaseFunction] (val x: Self) extends AnyVal {
+  implicit class BaseFunctionMutableBuilder[Self <: BaseFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: BlockStatement | Expression): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: BlockStatement | Expression): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setGenerator(value: Boolean): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: Pattern*): Self = this.set("params", js.Array(value :_*))
+    def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
     
     @scala.inline
-    def setParams(value: js.Array[Pattern]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setParams(value: js.Array[Pattern]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
-    
-    @scala.inline
-    def setGenerator(value: Boolean): Self = this.set("generator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenerator: Self = this.set("generator", js.undefined)
+    def setParamsVarargs(value: Pattern*): Self = StObject.set(x, "params", js.Array(value :_*))
   }
 }

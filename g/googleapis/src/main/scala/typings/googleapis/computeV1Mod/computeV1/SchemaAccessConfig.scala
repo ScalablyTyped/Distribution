@@ -1,5 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Only one access config per instance is supported.
   */
 @js.native
-trait SchemaAccessConfig extends js.Object {
+trait SchemaAccessConfig extends StObject {
   
   /**
     * [Output Only] Type of the resource. Always compute#accessConfig for
@@ -69,60 +70,48 @@ object SchemaAccessConfig {
   }
   
   @scala.inline
-  implicit class SchemaAccessConfigOps[Self <: SchemaAccessConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaAccessConfigMutableBuilder[Self <: SchemaAccessConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNatIP(value: String): Self = StObject.set(x, "natIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNatIPUndefined: Self = StObject.set(x, "natIP", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNetworkTier(value: String): Self = StObject.set(x, "networkTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatIP(value: String): Self = this.set("natIP", value.asInstanceOf[js.Any])
+    def setNetworkTierUndefined: Self = StObject.set(x, "networkTier", js.undefined)
     
     @scala.inline
-    def deleteNatIP: Self = this.set("natIP", js.undefined)
+    def setPublicPtrDomainName(value: String): Self = StObject.set(x, "publicPtrDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkTier(value: String): Self = this.set("networkTier", value.asInstanceOf[js.Any])
+    def setPublicPtrDomainNameUndefined: Self = StObject.set(x, "publicPtrDomainName", js.undefined)
     
     @scala.inline
-    def deleteNetworkTier: Self = this.set("networkTier", js.undefined)
+    def setSetPublicPtr(value: Boolean): Self = StObject.set(x, "setPublicPtr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicPtrDomainName(value: String): Self = this.set("publicPtrDomainName", value.asInstanceOf[js.Any])
+    def setSetPublicPtrUndefined: Self = StObject.set(x, "setPublicPtr", js.undefined)
     
     @scala.inline
-    def deletePublicPtrDomainName: Self = this.set("publicPtrDomainName", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPublicPtr(value: Boolean): Self = this.set("setPublicPtr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetPublicPtr: Self = this.set("setPublicPtr", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

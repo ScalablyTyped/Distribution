@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.DialProtocol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DialAppLaunchResult extends js.Object
+sealed trait DialAppLaunchResult extends StObject
 /** The result of attempting to launch an app on a remote device. */
 @JSGlobal("Windows.Media.DialProtocol.DialAppLaunchResult")
 @js.native
-object DialAppLaunchResult extends js.Object {
+object DialAppLaunchResult extends StObject {
   
   /** The app failed to launch. */
   @js.native

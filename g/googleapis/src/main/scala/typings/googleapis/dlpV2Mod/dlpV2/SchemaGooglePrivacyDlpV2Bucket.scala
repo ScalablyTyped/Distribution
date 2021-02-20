@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Bucket is represented as a range, along with replacement values.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2Bucket extends js.Object {
+trait SchemaGooglePrivacyDlpV2Bucket extends StObject {
   
   /**
     * Upper bound of the range, exclusive; type must match min.
@@ -36,36 +37,24 @@ object SchemaGooglePrivacyDlpV2Bucket {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2BucketOps[Self <: SchemaGooglePrivacyDlpV2Bucket] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2BucketMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Bucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMin(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setReplacementValue(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "replacementValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
-    
-    @scala.inline
-    def setReplacementValue(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("replacementValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplacementValue: Self = this.set("replacementValue", js.undefined)
+    def setReplacementValueUndefined: Self = StObject.set(x, "replacementValue", js.undefined)
   }
 }

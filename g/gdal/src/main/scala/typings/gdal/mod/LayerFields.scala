@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerFields extends js.Object {
+trait LayerFields extends StObject {
   
   def add(`def`: js.Array[FieldDefn]): Unit = js.native
   def add(`def`: js.Array[FieldDefn], approx: Boolean): Unit = js.native

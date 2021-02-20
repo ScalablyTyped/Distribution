@@ -1,6 +1,7 @@
 package typings.ssh2Streams.mod
 
 import typings.ssh2Streams.ssh2StreamsStrings.`forwarded-tcpip`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,33 +35,21 @@ object ForwardedTcpipChannelInfo {
   }
   
   @scala.inline
-  implicit class ForwardedTcpipChannelInfoOps[Self <: ForwardedTcpipChannelInfo] (val x: Self) extends AnyVal {
+  implicit class ForwardedTcpipChannelInfoMutableBuilder[Self <: ForwardedTcpipChannelInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: TcpipChannelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPacketSize(value: Double): Self = StObject.set(x, "packetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSender(value: Double): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: TcpipChannelData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setType(value: `forwarded-tcpip`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacketSize(value: Double): Self = this.set("packetSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSender(value: Double): Self = this.set("sender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `forwarded-tcpip`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindow(value: Double): Self = this.set("window", value.asInstanceOf[js.Any])
+    def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

@@ -6,13 +6,14 @@ import typings.stremioAddonSdk.anon.metaMetaDetailCache
 import typings.stremioAddonSdk.anon.metasArrayMetaPreviewCach
 import typings.stremioAddonSdk.anon.streamsArrayStreamCache
 import typings.stremioAddonSdk.anon.subtitlesArraySubtitleCac
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stremio-addon-sdk", "addonBuilder")
 @js.native
-class addonBuilder protected () extends js.Object {
+class addonBuilder protected () extends StObject {
   /**
     * Creates an addon builder object with a given manifest.
     */

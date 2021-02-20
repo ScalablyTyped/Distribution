@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientAnalytics.anon.CustomDimensionId
 import typings.maximMazurokGapiClientAnalytics.anon.IgnoreCustomDataSourceLinks
 import typings.maximMazurokGapiClientAnalytics.anon.Startindex
 import typings.maximMazurokGapiClientAnalytics.anon.WebPropertyId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomDimensionsResource extends js.Object {
+trait CustomDimensionsResource extends StObject {
   
   /** Get a custom dimension to which the user has access. */
   def get(): Request[CustomDimension] = js.native

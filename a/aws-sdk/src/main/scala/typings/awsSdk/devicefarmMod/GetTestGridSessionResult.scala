@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTestGridSessionResult extends js.Object {
+trait GetTestGridSessionResult extends StObject {
   
   /**
     * The TestGridSession that was requested.
@@ -21,24 +22,12 @@ object GetTestGridSessionResult {
   }
   
   @scala.inline
-  implicit class GetTestGridSessionResultOps[Self <: GetTestGridSessionResult] (val x: Self) extends AnyVal {
+  implicit class GetTestGridSessionResultMutableBuilder[Self <: GetTestGridSessionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTestGridSession(value: TestGridSession): Self = StObject.set(x, "testGridSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTestGridSession(value: TestGridSession): Self = this.set("testGridSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestGridSession: Self = this.set("testGridSession", js.undefined)
+    def setTestGridSessionUndefined: Self = StObject.set(x, "testGridSession", js.undefined)
   }
 }

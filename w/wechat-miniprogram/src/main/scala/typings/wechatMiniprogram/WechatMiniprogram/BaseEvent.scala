@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 基础事件参数 */
 @js.native
-trait BaseEvent[Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] extends js.Object {
+trait BaseEvent[Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] extends StObject {
   
   /** 事件绑定的当前组件 */
   var currentTarget: Target[CurrentTargetDataset] = js.native
@@ -38,36 +39,24 @@ object BaseEvent {
   }
   
   @scala.inline
-  implicit class BaseEventOps[Self <: BaseEvent[_, _, _], Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self with (BaseEvent[Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
+  implicit class BaseEventMutableBuilder[Self <: BaseEvent[_, _, _], Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self with (BaseEvent[Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentTarget(value: Target[CurrentTargetDataset]): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMark(value: Mark): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
     
     @scala.inline
-    def setCurrentTarget(value: Target[CurrentTargetDataset]): Self = this.set("currentTarget", value.asInstanceOf[js.Any])
+    def setTarget(value: Target[TargetDataset]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Target[TargetDataset]): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMark(value: Mark): Self = this.set("mark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMark: Self = this.set("mark", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

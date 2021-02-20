@@ -1,11 +1,12 @@
 package typings.slackMock.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InteractiveButtons[T] extends js.Object {
+trait InteractiveButtons[T] extends StObject {
   
   def addResponse(opts: InteractiveButtonOptions[T]): Unit = js.native
   
@@ -29,33 +30,21 @@ object InteractiveButtons {
   }
   
   @scala.inline
-  implicit class InteractiveButtonsOps[Self <: InteractiveButtons[_], T] (val x: Self with InteractiveButtons[T]) extends AnyVal {
+  implicit class InteractiveButtonsMutableBuilder[Self <: InteractiveButtons[_], T] (val x: Self with InteractiveButtons[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddResponse(value: InteractiveButtonOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalls(value: js.Array[InteractiveButtonCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallsVarargs(value: InteractiveButtonCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
     @scala.inline
-    def setAddResponse(value: InteractiveButtonOptions[T] => Unit): Self = this.set("addResponse", js.Any.fromFunction1(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCallsVarargs(value: InteractiveButtonCall[T]*): Self = this.set("calls", js.Array(value :_*))
-    
-    @scala.inline
-    def setCalls(value: js.Array[InteractiveButtonCall[T]]): Self = this.set("calls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSend(value: (InteractiveButtonUrl, T) => js.Promise[Unit]): Self = this.set("send", js.Any.fromFunction2(value))
+    def setSend(value: (InteractiveButtonUrl, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
   }
 }

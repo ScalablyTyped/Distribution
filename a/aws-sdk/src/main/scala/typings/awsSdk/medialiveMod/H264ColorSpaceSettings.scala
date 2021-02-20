@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait H264ColorSpaceSettings extends js.Object {
+trait H264ColorSpaceSettings extends StObject {
   
   var ColorSpacePassthroughSettings: js.UndefOr[typings.awsSdk.medialiveMod.ColorSpacePassthroughSettings] = js.native
   
@@ -22,36 +23,24 @@ object H264ColorSpaceSettings {
   }
   
   @scala.inline
-  implicit class H264ColorSpaceSettingsOps[Self <: H264ColorSpaceSettings] (val x: Self) extends AnyVal {
+  implicit class H264ColorSpaceSettingsMutableBuilder[Self <: H264ColorSpaceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorSpacePassthroughSettings(value: ColorSpacePassthroughSettings): Self = StObject.set(x, "ColorSpacePassthroughSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorSpacePassthroughSettingsUndefined: Self = StObject.set(x, "ColorSpacePassthroughSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRec601Settings(value: Rec601Settings): Self = StObject.set(x, "Rec601Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpacePassthroughSettings(value: ColorSpacePassthroughSettings): Self = this.set("ColorSpacePassthroughSettings", value.asInstanceOf[js.Any])
+    def setRec601SettingsUndefined: Self = StObject.set(x, "Rec601Settings", js.undefined)
     
     @scala.inline
-    def deleteColorSpacePassthroughSettings: Self = this.set("ColorSpacePassthroughSettings", js.undefined)
+    def setRec709Settings(value: Rec709Settings): Self = StObject.set(x, "Rec709Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRec601Settings(value: Rec601Settings): Self = this.set("Rec601Settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRec601Settings: Self = this.set("Rec601Settings", js.undefined)
-    
-    @scala.inline
-    def setRec709Settings(value: Rec709Settings): Self = this.set("Rec709Settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRec709Settings: Self = this.set("Rec709Settings", js.undefined)
+    def setRec709SettingsUndefined: Self = StObject.set(x, "Rec709Settings", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemporalAsset extends js.Object {
+trait TemporalAsset extends StObject {
   
   /** An asset in Google Cloud. */
   var asset: js.UndefOr[Asset] = js.native
@@ -31,48 +32,36 @@ object TemporalAsset {
   }
   
   @scala.inline
-  implicit class TemporalAssetOps[Self <: TemporalAsset] (val x: Self) extends AnyVal {
+  implicit class TemporalAssetMutableBuilder[Self <: TemporalAsset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset(value: Asset): Self = this.set("asset", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteAsset: Self = this.set("asset", js.undefined)
+    def setPriorAsset(value: Asset): Self = StObject.set(x, "priorAsset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setPriorAssetState(value: String): Self = StObject.set(x, "priorAssetState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setPriorAssetStateUndefined: Self = StObject.set(x, "priorAssetState", js.undefined)
     
     @scala.inline
-    def setPriorAsset(value: Asset): Self = this.set("priorAsset", value.asInstanceOf[js.Any])
+    def setPriorAssetUndefined: Self = StObject.set(x, "priorAsset", js.undefined)
     
     @scala.inline
-    def deletePriorAsset: Self = this.set("priorAsset", js.undefined)
+    def setWindow(value: TimeWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriorAssetState(value: String): Self = this.set("priorAssetState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriorAssetState: Self = this.set("priorAssetState", js.undefined)
-    
-    @scala.inline
-    def setWindow(value: TimeWindow): Self = this.set("window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
+    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

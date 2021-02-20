@@ -1,12 +1,13 @@
 package typings.nodeRedRuntime.anon
 
 import typings.nodeRedRuntime.mod.ProjectUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowUnrelatedHistories extends js.Object {
+trait AllowUnrelatedHistories extends StObject {
   
   var allowUnrelatedHistories: js.UndefOr[Boolean] = js.native
   
@@ -27,45 +28,33 @@ object AllowUnrelatedHistories {
   }
   
   @scala.inline
-  implicit class AllowUnrelatedHistoriesOps[Self <: AllowUnrelatedHistories] (val x: Self) extends AnyVal {
+  implicit class AllowUnrelatedHistoriesMutableBuilder[Self <: AllowUnrelatedHistories] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowUnrelatedHistories(value: Boolean): Self = StObject.set(x, "allowUnrelatedHistories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUnrelatedHistoriesUndefined: Self = StObject.set(x, "allowUnrelatedHistories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemote(value: String): Self = this.set("remote", value.asInstanceOf[js.Any])
+    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUnrelatedHistories(value: Boolean): Self = this.set("allowUnrelatedHistories", value.asInstanceOf[js.Any])
+    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
     
     @scala.inline
-    def deleteAllowUnrelatedHistories: Self = this.set("allowUnrelatedHistories", js.undefined)
+    def setTrack(value: Boolean): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReq(value: js.Object): Self = this.set("req", value.asInstanceOf[js.Any])
+    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
     @scala.inline
-    def deleteReq: Self = this.set("req", js.undefined)
+    def setUser(value: ProjectUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrack(value: Boolean): Self = this.set("track", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrack: Self = this.set("track", js.undefined)
-    
-    @scala.inline
-    def setUser(value: ProjectUser): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

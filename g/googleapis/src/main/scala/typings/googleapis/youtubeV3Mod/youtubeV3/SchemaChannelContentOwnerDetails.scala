@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for YouTube Partners linked with the channel.
   */
 @js.native
-trait SchemaChannelContentOwnerDetails extends js.Object {
+trait SchemaChannelContentOwnerDetails extends StObject {
   
   /**
     * The ID of the content owner linked to the channel.
@@ -31,30 +32,18 @@ object SchemaChannelContentOwnerDetails {
   }
   
   @scala.inline
-  implicit class SchemaChannelContentOwnerDetailsOps[Self <: SchemaChannelContentOwnerDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaChannelContentOwnerDetailsMutableBuilder[Self <: SchemaChannelContentOwnerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentOwner(value: String): Self = StObject.set(x, "contentOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentOwnerUndefined: Self = StObject.set(x, "contentOwner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeLinked(value: String): Self = StObject.set(x, "timeLinked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentOwner(value: String): Self = this.set("contentOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentOwner: Self = this.set("contentOwner", js.undefined)
-    
-    @scala.inline
-    def setTimeLinked(value: String): Self = this.set("timeLinked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeLinked: Self = this.set("timeLinked", js.undefined)
+    def setTimeLinkedUndefined: Self = StObject.set(x, "timeLinked", js.undefined)
   }
 }

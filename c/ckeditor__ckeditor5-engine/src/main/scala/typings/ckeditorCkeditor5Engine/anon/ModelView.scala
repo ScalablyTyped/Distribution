@@ -3,12 +3,13 @@ package typings.ckeditorCkeditor5Engine.anon
 import typings.ckeditorCkeditor5Engine.mod.view.Element
 import typings.ckeditorCkeditor5Engine.mod.view.MatcherPattern
 import typings.ckeditorCkeditor5Utils.mod.PriorityString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelView extends js.Object {
+trait ModelView extends StObject {
   
   var converterPriority: js.UndefOr[PriorityString] = js.native
   
@@ -25,33 +26,21 @@ object ModelView {
   }
   
   @scala.inline
-  implicit class ModelViewOps[Self <: ModelView] (val x: Self) extends AnyVal {
+  implicit class ModelViewMutableBuilder[Self <: ModelView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConverterPriority(value: PriorityString): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConverterPriorityUndefined: Self = StObject.set(x, "converterPriority", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModel(value: String | js.Function): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String | js.Function): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setView(value: MatcherPattern): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewFunction1(value: /* element */ Element => Null | Attribute): Self = this.set("view", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setView(value: MatcherPattern): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConverterPriority(value: PriorityString): Self = this.set("converterPriority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConverterPriority: Self = this.set("converterPriority", js.undefined)
+    def setViewFunction1(value: /* element */ Element => Null | Attribute): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
   }
 }

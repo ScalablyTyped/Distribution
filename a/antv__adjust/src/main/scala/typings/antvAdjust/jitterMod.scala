@@ -1,12 +1,15 @@
 package typings.antvAdjust
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/adjust/lib/adjusts/jitter", JSImport.Namespace)
-@js.native
-object jitterMod extends js.Object {
+object jitterMod {
+  
+  @JSImport("@antv/adjust/lib/adjusts/jitter", JSImport.Default)
+  @js.native
+  class default () extends Jitter
   
   @js.native
   trait Jitter
@@ -16,7 +19,4 @@ object jitterMod extends js.Object {
     
     var getAdjustOffset: js.Any = js.native
   }
-  
-  @js.native
-  class default () extends Jitter
 }

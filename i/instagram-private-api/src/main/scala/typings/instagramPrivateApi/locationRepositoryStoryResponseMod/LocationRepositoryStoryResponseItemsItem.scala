@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.locationRepositoryStoryResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationRepositoryStoryResponseItemsItem extends js.Object {
+trait LocationRepositoryStoryResponseItemsItem extends StObject {
   
   var can_reply: Boolean = js.native
   
@@ -119,168 +120,156 @@ object LocationRepositoryStoryResponseItemsItem {
   }
   
   @scala.inline
-  implicit class LocationRepositoryStoryResponseItemsItemOps[Self <: LocationRepositoryStoryResponseItemsItem] (val x: Self) extends AnyVal {
+  implicit class LocationRepositoryStoryResponseItemsItemMutableBuilder[Self <: LocationRepositoryStoryResponseItemsItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCan_reply(value: Boolean): Self = StObject.set(x, "can_reply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCan_reshare(value: Boolean): Self = StObject.set(x, "can_reshare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCan_viewer_save(value: Boolean): Self = StObject.set(x, "can_viewer_save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_reply(value: Boolean): Self = this.set("can_reply", value.asInstanceOf[js.Any])
+    def setCaption(value: Null): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_reshare(value: Boolean): Self = this.set("can_reshare", value.asInstanceOf[js.Any])
+    def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_viewer_save(value: Boolean): Self = this.set("can_viewer_save", value.asInstanceOf[js.Any])
+    def setCaption_position(value: Double): Self = StObject.set(x, "caption_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: Null): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setClient_cache_key(value: String): Self = StObject.set(x, "client_cache_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption_is_edited(value: Boolean): Self = this.set("caption_is_edited", value.asInstanceOf[js.Any])
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption_position(value: Double): Self = this.set("caption_position", value.asInstanceOf[js.Any])
+    def setDevice_timestamp(value: String): Self = StObject.set(x, "device_timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_cache_key(value: String): Self = this.set("client_cache_key", value.asInstanceOf[js.Any])
+    def setExpiring_at(value: Double): Self = StObject.set(x, "expiring_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setFilter_type(value: Double): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice_timestamp(value: String): Self = this.set("device_timestamp", value.asInstanceOf[js.Any])
+    def setHas_audio(value: Boolean): Self = StObject.set(x, "has_audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiring_at(value: Double): Self = this.set("expiring_at", value.asInstanceOf[js.Any])
+    def setHas_audioUndefined: Self = StObject.set(x, "has_audio", js.undefined)
     
     @scala.inline
-    def setFilter_type(value: Double): Self = this.set("filter_type", value.asInstanceOf[js.Any])
+    def setHas_shared_to_fb(value: Double): Self = StObject.set(x, "has_shared_to_fb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_shared_to_fb(value: Double): Self = this.set("has_shared_to_fb", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImage_versions2(value: LocationRepositoryStoryResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage_versions2(value: LocationRepositoryStoryResponseImageVersions2): Self = this.set("image_versions2", value.asInstanceOf[js.Any])
+    def setImported_taken_at(value: Double): Self = StObject.set(x, "imported_taken_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImported_taken_at(value: Double): Self = this.set("imported_taken_at", value.asInstanceOf[js.Any])
+    def setIs_dash_eligible(value: Double): Self = StObject.set(x, "is_dash_eligible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_pride_media(value: Boolean): Self = this.set("is_pride_media", value.asInstanceOf[js.Any])
+    def setIs_dash_eligibleUndefined: Self = StObject.set(x, "is_dash_eligible", js.undefined)
     
     @scala.inline
-    def setIs_reel_media(value: Boolean): Self = this.set("is_reel_media", value.asInstanceOf[js.Any])
+    def setIs_pride_media(value: Boolean): Self = StObject.set(x, "is_pride_media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_type(value: Double): Self = this.set("media_type", value.asInstanceOf[js.Any])
+    def setIs_reel_media(value: Boolean): Self = StObject.set(x, "is_reel_media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganic_tracking_token(value: String): Self = this.set("organic_tracking_token", value.asInstanceOf[js.Any])
+    def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_height(value: Double): Self = this.set("original_height", value.asInstanceOf[js.Any])
+    def setNumber_of_qualities(value: Double): Self = StObject.set(x, "number_of_qualities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_width(value: Double): Self = this.set("original_width", value.asInstanceOf[js.Any])
+    def setNumber_of_qualitiesUndefined: Self = StObject.set(x, "number_of_qualities", js.undefined)
     
     @scala.inline
-    def setPhoto_of_you(value: Boolean): Self = this.set("photo_of_you", value.asInstanceOf[js.Any])
+    def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow_one_tap_fb_share_tooltip(value: Boolean): Self = this.set("show_one_tap_fb_share_tooltip", value.asInstanceOf[js.Any])
+    def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_locationsVarargs(value: LocationRepositoryStoryResponseStoryLocationsItem*): Self = this.set("story_locations", js.Array(value :_*))
+    def setPhoto_of_you(value: Boolean): Self = StObject.set(x, "photo_of_you", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_locations(value: js.Array[LocationRepositoryStoryResponseStoryLocationsItem]): Self = this.set("story_locations", value.asInstanceOf[js.Any])
+    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupports_reel_reactions(value: Boolean): Self = this.set("supports_reel_reactions", value.asInstanceOf[js.Any])
+    def setReel_mentions(value: js.Array[LocationRepositoryStoryResponseReelMentionsItem]): Self = StObject.set(x, "reel_mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaken_at(value: Double): Self = this.set("taken_at", value.asInstanceOf[js.Any])
+    def setReel_mentionsUndefined: Self = StObject.set(x, "reel_mentions", js.undefined)
     
     @scala.inline
-    def setUser(value: LocationRepositoryStoryResponseUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setReel_mentionsVarargs(value: LocationRepositoryStoryResponseReelMentionsItem*): Self = StObject.set(x, "reel_mentions", js.Array(value :_*))
     
     @scala.inline
-    def setHas_audio(value: Boolean): Self = this.set("has_audio", value.asInstanceOf[js.Any])
+    def setShow_one_tap_fb_share_tooltip(value: Boolean): Self = StObject.set(x, "show_one_tap_fb_share_tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHas_audio: Self = this.set("has_audio", js.undefined)
+    def setStory_hashtags(value: js.Array[LocationRepositoryStoryResponseStoryHashtagsItem]): Self = StObject.set(x, "story_hashtags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_dash_eligible(value: Double): Self = this.set("is_dash_eligible", value.asInstanceOf[js.Any])
+    def setStory_hashtagsUndefined: Self = StObject.set(x, "story_hashtags", js.undefined)
     
     @scala.inline
-    def deleteIs_dash_eligible: Self = this.set("is_dash_eligible", js.undefined)
+    def setStory_hashtagsVarargs(value: LocationRepositoryStoryResponseStoryHashtagsItem*): Self = StObject.set(x, "story_hashtags", js.Array(value :_*))
     
     @scala.inline
-    def setNumber_of_qualities(value: Double): Self = this.set("number_of_qualities", value.asInstanceOf[js.Any])
+    def setStory_locations(value: js.Array[LocationRepositoryStoryResponseStoryLocationsItem]): Self = StObject.set(x, "story_locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumber_of_qualities: Self = this.set("number_of_qualities", js.undefined)
+    def setStory_locationsVarargs(value: LocationRepositoryStoryResponseStoryLocationsItem*): Self = StObject.set(x, "story_locations", js.Array(value :_*))
     
     @scala.inline
-    def setReel_mentionsVarargs(value: LocationRepositoryStoryResponseReelMentionsItem*): Self = this.set("reel_mentions", js.Array(value :_*))
+    def setSupports_reel_reactions(value: Boolean): Self = StObject.set(x, "supports_reel_reactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReel_mentions(value: js.Array[LocationRepositoryStoryResponseReelMentionsItem]): Self = this.set("reel_mentions", value.asInstanceOf[js.Any])
+    def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReel_mentions: Self = this.set("reel_mentions", js.undefined)
+    def setUser(value: LocationRepositoryStoryResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_hashtagsVarargs(value: LocationRepositoryStoryResponseStoryHashtagsItem*): Self = this.set("story_hashtags", js.Array(value :_*))
+    def setVideo_codec(value: String): Self = StObject.set(x, "video_codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStory_hashtags(value: js.Array[LocationRepositoryStoryResponseStoryHashtagsItem]): Self = this.set("story_hashtags", value.asInstanceOf[js.Any])
+    def setVideo_codecUndefined: Self = StObject.set(x, "video_codec", js.undefined)
     
     @scala.inline
-    def deleteStory_hashtags: Self = this.set("story_hashtags", js.undefined)
+    def setVideo_dash_manifest(value: String): Self = StObject.set(x, "video_dash_manifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_codec(value: String): Self = this.set("video_codec", value.asInstanceOf[js.Any])
+    def setVideo_dash_manifestUndefined: Self = StObject.set(x, "video_dash_manifest", js.undefined)
     
     @scala.inline
-    def deleteVideo_codec: Self = this.set("video_codec", js.undefined)
+    def setVideo_duration(value: Double): Self = StObject.set(x, "video_duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_dash_manifest(value: String): Self = this.set("video_dash_manifest", value.asInstanceOf[js.Any])
+    def setVideo_durationUndefined: Self = StObject.set(x, "video_duration", js.undefined)
     
     @scala.inline
-    def deleteVideo_dash_manifest: Self = this.set("video_dash_manifest", js.undefined)
+    def setVideo_versions(value: js.Array[LocationRepositoryStoryResponseVideoVersionsItem]): Self = StObject.set(x, "video_versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_duration(value: Double): Self = this.set("video_duration", value.asInstanceOf[js.Any])
+    def setVideo_versionsUndefined: Self = StObject.set(x, "video_versions", js.undefined)
     
     @scala.inline
-    def deleteVideo_duration: Self = this.set("video_duration", js.undefined)
-    
-    @scala.inline
-    def setVideo_versionsVarargs(value: LocationRepositoryStoryResponseVideoVersionsItem*): Self = this.set("video_versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVideo_versions(value: js.Array[LocationRepositoryStoryResponseVideoVersionsItem]): Self = this.set("video_versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo_versions: Self = this.set("video_versions", js.undefined)
+    def setVideo_versionsVarargs(value: LocationRepositoryStoryResponseVideoVersionsItem*): Self = StObject.set(x, "video_versions", js.Array(value :_*))
   }
 }

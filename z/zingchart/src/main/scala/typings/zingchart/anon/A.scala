@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait A extends js.Object {
+trait A extends StObject {
   
   @JSName("`%A`")
   var GraveaccentPercentsignAGraveaccent: js.UndefOr[js.Any] = js.native
@@ -85,102 +86,90 @@ object A {
   }
   
   @scala.inline
-  implicit class AOps[Self <: A] (val x: Self) extends AnyVal {
+  implicit class AMutableBuilder[Self <: A] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraveaccentPercentsignAGraveaccent(value: js.Any): Self = StObject.set(x, "`%A`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsignAGraveaccent(value: js.Any): Self = this.set("`%A`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsignAGraveaccentUndefined: Self = StObject.set(x, "`%A`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsignAGraveaccent: Self = this.set("`%A`", js.undefined)
+    def setGraveaccentPercentsignDGraveaccent(value: js.Any): Self = StObject.set(x, "`%D`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsignDGraveaccent(value: js.Any): Self = this.set("`%D`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsignDGraveaccentUndefined: Self = StObject.set(x, "`%D`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsignDGraveaccent: Self = this.set("`%D`", js.undefined)
+    def setGraveaccentPercentsignGGraveaccent(value: js.Any): Self = StObject.set(x, "`%G`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsignGGraveaccent(value: js.Any): Self = this.set("`%G`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsignGGraveaccentUndefined: Self = StObject.set(x, "`%G`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsignGGraveaccent: Self = this.set("`%G`", js.undefined)
+    def setGraveaccentPercentsignHGraveaccent(value: js.Any): Self = StObject.set(x, "`%H`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsignHGraveaccent(value: js.Any): Self = this.set("`%H`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsignHGraveaccentUndefined: Self = StObject.set(x, "`%H`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsignHGraveaccent: Self = this.set("`%H`", js.undefined)
+    def setGraveaccentPercentsignMGraveaccent(value: js.Any): Self = StObject.set(x, "`%M`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsignMGraveaccent(value: js.Any): Self = this.set("`%M`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsignMGraveaccentUndefined: Self = StObject.set(x, "`%M`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsignMGraveaccent: Self = this.set("`%M`", js.undefined)
+    def setGraveaccentPercentsignYGraveaccent(value: js.Any): Self = StObject.set(x, "`%Y`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsignYGraveaccent(value: js.Any): Self = this.set("`%Y`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsignYGraveaccentUndefined: Self = StObject.set(x, "`%Y`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsignYGraveaccent: Self = this.set("`%Y`", js.undefined)
+    def setGraveaccentPercentsignddGraveaccent(value: js.Any): Self = StObject.set(x, "`%dd`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsignddGraveaccent(value: js.Any): Self = this.set("`%dd`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsignddGraveaccentUndefined: Self = StObject.set(x, "`%dd`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsignddGraveaccent: Self = this.set("`%dd`", js.undefined)
+    def setGraveaccentPercentsigniGraveaccent(value: js.Any): Self = StObject.set(x, "`%i`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsigniGraveaccent(value: js.Any): Self = this.set("`%i`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsigniGraveaccentUndefined: Self = StObject.set(x, "`%i`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsigniGraveaccent: Self = this.set("`%i`", js.undefined)
+    def setGraveaccentPercentsignmmGraveaccent(value: js.Any): Self = StObject.set(x, "`%mm`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsignmmGraveaccent(value: js.Any): Self = this.set("`%mm`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsignmmGraveaccentUndefined: Self = StObject.set(x, "`%mm`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsignmmGraveaccent: Self = this.set("`%mm`", js.undefined)
+    def setGraveaccentPercentsignqGraveaccent(value: js.Any): Self = StObject.set(x, "`%q`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsignqGraveaccent(value: js.Any): Self = this.set("`%q`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsignqGraveaccentUndefined: Self = StObject.set(x, "`%q`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsignqGraveaccent: Self = this.set("`%q`", js.undefined)
+    def setGraveaccentPercentsignsGraveaccent(value: js.Any): Self = StObject.set(x, "`%s`", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraveaccentPercentsignsGraveaccent(value: js.Any): Self = this.set("`%s`", value.asInstanceOf[js.Any])
+    def setGraveaccentPercentsignsGraveaccentUndefined: Self = StObject.set(x, "`%s`", js.undefined)
     
     @scala.inline
-    def deleteGraveaccentPercentsignsGraveaccent: Self = this.set("`%s`", js.undefined)
+    def setGuide(value: LinewidthVisible): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: String): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setGuideUndefined: Self = StObject.set(x, "guide", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setItem(value: Borderradiustopright): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuide(value: LinewidthVisible): Self = this.set("guide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGuide: Self = this.set("guide", js.undefined)
-    
-    @scala.inline
-    def setItem(value: Borderradiustopright): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

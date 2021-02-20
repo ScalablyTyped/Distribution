@@ -3,14 +3,14 @@ package typings.ow
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ow/dist/source/predicates/date", JSImport.Namespace)
-@js.native
-object dateMod extends js.Object {
+object dateMod {
   
+  @JSImport("ow/dist/source/predicates/date", "DatePredicate")
   @js.native
   /**
     @hidden

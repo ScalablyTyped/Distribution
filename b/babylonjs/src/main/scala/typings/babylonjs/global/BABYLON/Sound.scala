@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.ISoundOptions
 import typings.babylonjs.BABYLON.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,9 +35,7 @@ class Sound protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.Sound")
-@js.native
-object Sound extends js.Object {
+object Sound {
   
   /**
     * Parse a JSON representation of a sound to innstantiate in a given scene
@@ -46,7 +45,11 @@ object Sound extends js.Object {
     * @param sourceSound Define a cound place holder if do not need to instantiate a new one
     * @returns the newly parsed sound
     */
+  @JSGlobal("BABYLON.Sound.Parse")
+  @js.native
   def Parse(parsedSound: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.Sound = js.native
+  @JSGlobal("BABYLON.Sound.Parse")
+  @js.native
   def Parse(
     parsedSound: js.Any,
     scene: typings.babylonjs.BABYLON.Scene,
@@ -55,5 +58,7 @@ object Sound extends js.Object {
   ): typings.babylonjs.BABYLON.Sound = js.native
   
   /** @hidden */
+  @JSGlobal("BABYLON.Sound._SceneComponentInitialization")
+  @js.native
   def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = js.native
 }

@@ -2,6 +2,7 @@ package typings.reactNativeCalendars.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.simple
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object DotMarkingProps {
   }
   
   @scala.inline
-  implicit class DotMarkingPropsOps[Self <: DotMarkingProps] (val x: Self) extends AnyVal {
+  implicit class DotMarkingPropsMutableBuilder[Self <: DotMarkingProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarkedDates(value: StringDictionary[DotMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkingType(value: simple): Self = StObject.set(x, "markingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMarkedDates(value: StringDictionary[DotMarking]): Self = this.set("markedDates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMarkingType(value: simple): Self = this.set("markingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarkingType: Self = this.set("markingType", js.undefined)
+    def setMarkingTypeUndefined: Self = StObject.set(x, "markingType", js.undefined)
   }
 }

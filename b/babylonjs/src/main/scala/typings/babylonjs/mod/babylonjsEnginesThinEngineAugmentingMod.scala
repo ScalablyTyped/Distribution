@@ -18,17 +18,16 @@ import typings.std.ArrayBufferView
 import typings.std.HTMLImageElement
 import typings.std.ImageData
 import typings.std.OffscreenCanvas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("babylonjs", "babylonjs/Engines/thinEngine")
-@js.native
-object babylonjsEnginesThinEngineAugmentingMod extends js.Object {
+object babylonjsEnginesThinEngineAugmentingMod {
   
   @js.native
-  trait ThinEngine extends js.Object {
+  trait ThinEngine extends StObject {
     
     /** @hidden */
     def _cascadeLoadFiles(

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppointmentParticipantResponse extends js.Object
+sealed trait AppointmentParticipantResponse extends StObject
 /** Specifies the response from a participant concerning an appointment invitation. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentParticipantResponse")
 @js.native
-object AppointmentParticipantResponse extends js.Object {
+object AppointmentParticipantResponse extends StObject {
   
   /** The participant accepted the appointment invitation. */
   @js.native

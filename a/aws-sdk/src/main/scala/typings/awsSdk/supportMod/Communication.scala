@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Communication extends js.Object {
+trait Communication extends StObject {
   
   /**
     * Information about the attachments to the case communication.
@@ -41,51 +42,39 @@ object Communication {
   }
   
   @scala.inline
-  implicit class CommunicationOps[Self <: Communication] (val x: Self) extends AnyVal {
+  implicit class CommunicationMutableBuilder[Self <: Communication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentSet(value: AttachmentSet): Self = StObject.set(x, "attachmentSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentSetUndefined: Self = StObject.set(x, "attachmentSet", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentSetVarargs(value: AttachmentDetails*): Self = StObject.set(x, "attachmentSet", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentSetVarargs(value: AttachmentDetails*): Self = this.set("attachmentSet", js.Array(value :_*))
+    def setBody(value: CommunicationBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentSet(value: AttachmentSet): Self = this.set("attachmentSet", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteAttachmentSet: Self = this.set("attachmentSet", js.undefined)
+    def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: CommunicationBody): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setSubmittedBy(value: SubmittedBy): Self = StObject.set(x, "submittedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseId(value: CaseId): Self = this.set("caseId", value.asInstanceOf[js.Any])
+    def setSubmittedByUndefined: Self = StObject.set(x, "submittedBy", js.undefined)
     
     @scala.inline
-    def deleteCaseId: Self = this.set("caseId", js.undefined)
+    def setTimeCreated(value: TimeCreated): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmittedBy(value: SubmittedBy): Self = this.set("submittedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmittedBy: Self = this.set("submittedBy", js.undefined)
-    
-    @scala.inline
-    def setTimeCreated(value: TimeCreated): Self = this.set("timeCreated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeCreated: Self = this.set("timeCreated", js.undefined)
+    def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
   }
 }

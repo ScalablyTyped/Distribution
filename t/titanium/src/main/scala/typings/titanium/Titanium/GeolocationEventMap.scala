@@ -1,6 +1,7 @@
 package typings.titanium.Titanium
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,36 +37,24 @@ object GeolocationEventMap {
   }
   
   @scala.inline
-  implicit class GeolocationEventMapOps[Self <: GeolocationEventMap] (val x: Self) extends AnyVal {
+  implicit class GeolocationEventMapMutableBuilder[Self <: GeolocationEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorization(value: GeolocationAuthorizationEvent): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalibration(value: GeolocationCalibrationEvent): Self = StObject.set(x, "calibration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeading(value: GeolocationHeadingEvent): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorization(value: GeolocationAuthorizationEvent): Self = this.set("authorization", value.asInstanceOf[js.Any])
+    def setLocation(value: GeolocationLocationEvent): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalibration(value: GeolocationCalibrationEvent): Self = this.set("calibration", value.asInstanceOf[js.Any])
+    def setLocationupdatepaused(value: GeolocationLocationupdatepausedEvent): Self = StObject.set(x, "locationupdatepaused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: GeolocationHeadingEvent): Self = this.set("heading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: GeolocationLocationEvent): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocationupdatepaused(value: GeolocationLocationupdatepausedEvent): Self = this.set("locationupdatepaused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocationupdateresumed(value: GeolocationLocationupdateresumedEvent): Self = this.set("locationupdateresumed", value.asInstanceOf[js.Any])
+    def setLocationupdateresumed(value: GeolocationLocationupdateresumedEvent): Self = StObject.set(x, "locationupdateresumed", value.asInstanceOf[js.Any])
   }
 }

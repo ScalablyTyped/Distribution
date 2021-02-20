@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetWorkflowRunRequest extends js.Object {
+trait GetWorkflowRunRequest extends StObject {
   
   /**
     * Specifies whether to include the workflow graph in response or not.
@@ -31,30 +32,18 @@ object GetWorkflowRunRequest {
   }
   
   @scala.inline
-  implicit class GetWorkflowRunRequestOps[Self <: GetWorkflowRunRequest] (val x: Self) extends AnyVal {
+  implicit class GetWorkflowRunRequestMutableBuilder[Self <: GetWorkflowRunRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeGraph(value: NullableBoolean): Self = StObject.set(x, "IncludeGraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeGraphUndefined: Self = StObject.set(x, "IncludeGraph", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunId(value: IdString): Self = this.set("RunId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeGraph(value: NullableBoolean): Self = this.set("IncludeGraph", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeGraph: Self = this.set("IncludeGraph", js.undefined)
+    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
   }
 }

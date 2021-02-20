@@ -2,6 +2,7 @@ package typings.typeorm.mod
 
 import typings.typeorm.mongodbTypingsMod.ChangeStreamOptions
 import typings.typeorm.mongodbTypingsMod.Collection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageInserter extends js.Object {
+trait ImageInserter extends StObject {
   
   /**
     * Specify the images that you want to overlay on your video. The images must be PNG or TGA files.
@@ -21,27 +22,15 @@ object ImageInserter {
   }
   
   @scala.inline
-  implicit class ImageInserterOps[Self <: ImageInserter] (val x: Self) extends AnyVal {
+  implicit class ImageInserterMutableBuilder[Self <: ImageInserter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsertableImages(value: listOfInsertableImage): Self = StObject.set(x, "InsertableImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertableImagesUndefined: Self = StObject.set(x, "InsertableImages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInsertableImagesVarargs(value: InsertableImage*): Self = this.set("InsertableImages", js.Array(value :_*))
-    
-    @scala.inline
-    def setInsertableImages(value: listOfInsertableImage): Self = this.set("InsertableImages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsertableImages: Self = this.set("InsertableImages", js.undefined)
+    def setInsertableImagesVarargs(value: InsertableImage*): Self = StObject.set(x, "InsertableImages", js.Array(value :_*))
   }
 }

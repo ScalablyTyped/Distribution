@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,36 +50,24 @@ object IVisualizationHyperCubeDef {
   }
   
   @scala.inline
-  implicit class IVisualizationHyperCubeDefOps[Self <: IVisualizationHyperCubeDef] (val x: Self) extends AnyVal {
+  implicit class IVisualizationHyperCubeDefMutableBuilder[Self <: IVisualizationHyperCubeDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomErrorMessage(value: ICustomErrorMessage): Self = StObject.set(x, "customErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDimensions(value: js.Array[IHyperCubeDimensionDef]): Self = StObject.set(x, "qDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQDimensionsVarargs(value: IHyperCubeDimensionDef*): Self = StObject.set(x, "qDimensions", js.Array(value :_*))
     
     @scala.inline
-    def setCustomErrorMessage(value: ICustomErrorMessage): Self = this.set("customErrorMessage", value.asInstanceOf[js.Any])
+    def setQLayoutExclude(value: js.Any): Self = StObject.set(x, "qLayoutExclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDimensionsVarargs(value: IHyperCubeDimensionDef*): Self = this.set("qDimensions", js.Array(value :_*))
+    def setQMeasures(value: js.Array[IHyperCubeMeasureDef]): Self = StObject.set(x, "qMeasures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDimensions(value: js.Array[IHyperCubeDimensionDef]): Self = this.set("qDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQLayoutExclude(value: js.Any): Self = this.set("qLayoutExclude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQMeasuresVarargs(value: IHyperCubeMeasureDef*): Self = this.set("qMeasures", js.Array(value :_*))
-    
-    @scala.inline
-    def setQMeasures(value: js.Array[IHyperCubeMeasureDef]): Self = this.set("qMeasures", value.asInstanceOf[js.Any])
+    def setQMeasuresVarargs(value: IHyperCubeMeasureDef*): Self = StObject.set(x, "qMeasures", js.Array(value :_*))
   }
 }

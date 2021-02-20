@@ -1,12 +1,13 @@
 package typings.paypalRestSdk.mod.invoice
 
 import typings.paypalRestSdk.mod.Currency
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvoiceItem extends js.Object {
+trait InvoiceItem extends StObject {
   
   var date: js.UndefOr[String] = js.native
   
@@ -33,57 +34,45 @@ object InvoiceItem {
   }
   
   @scala.inline
-  implicit class InvoiceItemOps[Self <: InvoiceItem] (val x: Self) extends AnyVal {
+  implicit class InvoiceItemMutableBuilder[Self <: InvoiceItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setQuantity(value: Double): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setDiscount(value: Cost): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit_price(value: Currency): Self = this.set("unit_price", value.asInstanceOf[js.Any])
+    def setDiscountUndefined: Self = StObject.set(x, "discount", js.undefined)
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setTax(value: Tax): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
     
     @scala.inline
-    def setDiscount(value: Cost): Self = this.set("discount", value.asInstanceOf[js.Any])
+    def setUnit_of_measure(value: String): Self = StObject.set(x, "unit_of_measure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDiscount: Self = this.set("discount", js.undefined)
+    def setUnit_of_measureUndefined: Self = StObject.set(x, "unit_of_measure", js.undefined)
     
     @scala.inline
-    def setTax(value: Tax): Self = this.set("tax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTax: Self = this.set("tax", js.undefined)
-    
-    @scala.inline
-    def setUnit_of_measure(value: String): Self = this.set("unit_of_measure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit_of_measure: Self = this.set("unit_of_measure", js.undefined)
+    def setUnit_price(value: Currency): Self = StObject.set(x, "unit_price", value.asInstanceOf[js.Any])
   }
 }

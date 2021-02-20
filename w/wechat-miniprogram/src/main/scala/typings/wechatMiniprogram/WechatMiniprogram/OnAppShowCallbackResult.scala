@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnAppShowCallbackResult extends js.Object {
+trait OnAppShowCallbackResult extends StObject {
   
   /** 小程序切前台的路径 (代码包路径) */
   var path: String = js.native
@@ -31,36 +32,24 @@ object OnAppShowCallbackResult {
   }
   
   @scala.inline
-  implicit class OnAppShowCallbackResultOps[Self <: OnAppShowCallbackResult] (val x: Self) extends AnyVal {
+  implicit class OnAppShowCallbackResultMutableBuilder[Self <: OnAppShowCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuery(value: IAnyObject): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferrerInfo(value: ReferrerInfo): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setScene(value: Double): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: IAnyObject): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferrerInfo(value: ReferrerInfo): Self = this.set("referrerInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScene(value: Double): Self = this.set("scene", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShareTicket(value: String): Self = this.set("shareTicket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareTicket: Self = this.set("shareTicket", js.undefined)
+    def setShareTicketUndefined: Self = StObject.set(x, "shareTicket", js.undefined)
   }
 }

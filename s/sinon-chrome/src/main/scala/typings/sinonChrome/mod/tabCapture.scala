@@ -1,17 +1,32 @@
 package typings.sinonChrome.mod
 
 import typings.sinonChrome.mod.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "tabCapture")
-@js.native
-object tabCapture extends js.Object {
+object tabCapture {
   
-  var capture: SinonChromeStub = js.native
+  @JSImport("sinon-chrome", "tabCapture")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var getCapturedTabs: SinonChromeStub = js.native
+  @JSImport("sinon-chrome", "tabCapture.capture")
+  @js.native
+  def capture: SinonChromeStub = js.native
+  @scala.inline
+  def capture_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capture")(x.asInstanceOf[js.Any])
   
-  var onStatusChanged: Event = js.native
+  @JSImport("sinon-chrome", "tabCapture.getCapturedTabs")
+  @js.native
+  def getCapturedTabs: SinonChromeStub = js.native
+  @scala.inline
+  def getCapturedTabs_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCapturedTabs")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "tabCapture.onStatusChanged")
+  @js.native
+  def onStatusChanged: Event = js.native
+  @scala.inline
+  def onStatusChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStatusChanged")(x.asInstanceOf[js.Any])
 }

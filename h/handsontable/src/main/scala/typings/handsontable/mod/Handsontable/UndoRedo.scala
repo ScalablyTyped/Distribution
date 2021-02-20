@@ -1,12 +1,13 @@
 package typings.handsontable.mod.Handsontable
 
 import typings.handsontable.mod.Handsontable.plugins.UndoRedoAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UndoRedo extends js.Object {
+trait UndoRedo extends StObject {
   
   def clear(): Unit = js.native
   
@@ -48,54 +49,42 @@ object UndoRedo {
   }
   
   @scala.inline
-  implicit class UndoRedoOps[Self <: UndoRedo] (val x: Self) extends AnyVal {
+  implicit class UndoRedoMutableBuilder[Self <: UndoRedo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDone(value: UndoRedoAction => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoneActions(value: js.Array[UndoRedoAction]): Self = StObject.set(x, "doneActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setDoneActionsVarargs(value: UndoRedoAction*): Self = StObject.set(x, "doneActions", js.Array(value :_*))
     
     @scala.inline
-    def setDone(value: UndoRedoAction => Unit): Self = this.set("done", js.Any.fromFunction1(value))
+    def setIgnoreNewActions(value: Boolean): Self = StObject.set(x, "ignoreNewActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoneActionsVarargs(value: UndoRedoAction*): Self = this.set("doneActions", js.Array(value :_*))
+    def setInstance(value: typings.handsontable.mod.Handsontable): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoneActions(value: js.Array[UndoRedoAction]): Self = this.set("doneActions", value.asInstanceOf[js.Any])
+    def setIsRedoAvailable(value: () => Boolean): Self = StObject.set(x, "isRedoAvailable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIgnoreNewActions(value: Boolean): Self = this.set("ignoreNewActions", value.asInstanceOf[js.Any])
+    def setIsUndoAvailable(value: () => Boolean): Self = StObject.set(x, "isUndoAvailable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInstance(value: typings.handsontable.mod.Handsontable): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsRedoAvailable(value: () => Boolean): Self = this.set("isRedoAvailable", js.Any.fromFunction0(value))
+    def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsUndoAvailable(value: () => Boolean): Self = this.set("isUndoAvailable", js.Any.fromFunction0(value))
+    def setUndoneActions(value: js.Array[UndoRedoAction]): Self = StObject.set(x, "undoneActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedo(value: () => Unit): Self = this.set("redo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUndo(value: () => Unit): Self = this.set("undo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUndoneActionsVarargs(value: UndoRedoAction*): Self = this.set("undoneActions", js.Array(value :_*))
-    
-    @scala.inline
-    def setUndoneActions(value: js.Array[UndoRedoAction]): Self = this.set("undoneActions", value.asInstanceOf[js.Any])
+    def setUndoneActionsVarargs(value: UndoRedoAction*): Self = StObject.set(x, "undoneActions", js.Array(value :_*))
   }
 }

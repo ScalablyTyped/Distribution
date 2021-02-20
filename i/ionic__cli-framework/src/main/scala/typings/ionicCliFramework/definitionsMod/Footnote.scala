@@ -1,5 +1,6 @@
 package typings.ionicCliFramework.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ionicCliFramework.definitionsMod.TextFootnote
   - typings.ionicCliFramework.definitionsMod.LinkFootnote
 */
-trait Footnote extends js.Object
+trait Footnote extends StObject
 object Footnote {
   
   @scala.inline
-  def TextFootnote(id: String | Double, text: String): Footnote = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Footnote]
+  def LinkFootnote(id: String | Double, url: String): typings.ionicCliFramework.definitionsMod.LinkFootnote = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.ionicCliFramework.definitionsMod.LinkFootnote]
   }
   
   @scala.inline
-  def LinkFootnote(id: String | Double, url: String): Footnote = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Footnote]
+  def TextFootnote(id: String | Double, text: String): typings.ionicCliFramework.definitionsMod.TextFootnote = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.ionicCliFramework.definitionsMod.TextFootnote]
   }
 }

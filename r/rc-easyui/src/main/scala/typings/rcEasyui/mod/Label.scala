@@ -2,6 +2,7 @@ package typings.rcEasyui.mod
 
 import typings.rcEasyui.anon.AlignString
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,30 +14,41 @@ class Label protected ()
   def this(args: js.Any*) = this()
 }
 /* static members */
-@JSImport("rc-easyui", "Label")
-@js.native
-object Label extends js.Object {
+object Label {
   
-  var defaultProps: AlignString = js.native
-  
+  @JSImport("rc-easyui", "Label")
   @js.native
-  object propTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("rc-easyui", "Label.defaultProps")
+  @js.native
+  def defaultProps: AlignString = js.native
+  @scala.inline
+  def defaultProps_=(x: AlignString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  object propTypes {
     
-    @js.native
-    object align extends js.Object {
+    object align {
       
+      @JSImport("rc-easyui", "Label.propTypes.align")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Label.propTypes.align
+      @JSImport("rc-easyui", "Label.propTypes.align.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object htmlFor extends js.Object {
+    object htmlFor {
       
+      @JSImport("rc-easyui", "Label.propTypes.htmlFor")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Label.propTypes.htmlFor
+      @JSImport("rc-easyui", "Label.propTypes.htmlFor.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

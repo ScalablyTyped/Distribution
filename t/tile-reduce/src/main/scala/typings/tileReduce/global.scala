@@ -1,15 +1,13 @@
 package typings.tileReduce
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object TileReduce extends js.Object {
+  object TileReduce {
     
     /**
       * Tile Reduce
@@ -34,6 +32,8 @@ object global extends js.Object {
       *     console.log('starting')
       * })
       */
+    @JSGlobal("TileReduce")
+    @js.native
     def apply(options: Options): Events = js.native
   }
 }

@@ -1,15 +1,14 @@
 package typings.reactNativeFirebase.mod.RNFirebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-firebase", "RNFirebase.iid")
-@js.native
-object iid extends js.Object {
+object iid {
   
   @js.native
-  trait InstanceId extends js.Object {
+  trait InstanceId extends StObject {
     
     def delete(): js.Promise[Unit] = js.native
     

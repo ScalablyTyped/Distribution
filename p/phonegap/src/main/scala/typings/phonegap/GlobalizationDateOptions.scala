@@ -1,11 +1,12 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalizationDateOptions extends js.Object {
+trait GlobalizationDateOptions extends StObject {
   
   var formatLength: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object GlobalizationDateOptions {
   }
   
   @scala.inline
-  implicit class GlobalizationDateOptionsOps[Self <: GlobalizationDateOptions] (val x: Self) extends AnyVal {
+  implicit class GlobalizationDateOptionsMutableBuilder[Self <: GlobalizationDateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatLength(value: String): Self = StObject.set(x, "formatLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatLengthUndefined: Self = StObject.set(x, "formatLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatLength(value: String): Self = this.set("formatLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormatLength: Self = this.set("formatLength", js.undefined)
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

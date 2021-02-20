@@ -1,11 +1,12 @@
 package typings.ionicCore.componentsMod.Components
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonMenuToggle extends js.Object {
+trait IonMenuToggle extends StObject {
   
   /**
     * Automatically hides the content when the corresponding menu is not active.  By default, it's `true`. Change it to `false` in order to keep `ion-menu-toggle` always visible regardless the state of the menu.
@@ -26,27 +27,15 @@ object IonMenuToggle {
   }
   
   @scala.inline
-  implicit class IonMenuToggleOps[Self <: IonMenuToggle] (val x: Self) extends AnyVal {
+  implicit class IonMenuToggleMutableBuilder[Self <: IonMenuToggle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMenu(value: String): Self = this.set("menu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMenu: Self = this.set("menu", js.undefined)
+    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
   }
 }

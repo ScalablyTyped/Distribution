@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An action executed during setup.
   */
 @js.native
-trait SchemaSetupAction extends js.Object {
+trait SchemaSetupAction extends StObject {
   
   /**
     * Description of this action.
@@ -34,36 +35,24 @@ object SchemaSetupAction {
   }
   
   @scala.inline
-  implicit class SchemaSetupActionOps[Self <: SchemaSetupAction] (val x: Self) extends AnyVal {
+  implicit class SchemaSetupActionMutableBuilder[Self <: SchemaSetupAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: SchemaUserFacingMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchApp(value: SchemaLaunchAppAction): Self = StObject.set(x, "launchApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: SchemaUserFacingMessage): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLaunchAppUndefined: Self = StObject.set(x, "launchApp", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setTitle(value: SchemaUserFacingMessage): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchApp(value: SchemaLaunchAppAction): Self = this.set("launchApp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchApp: Self = this.set("launchApp", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: SchemaUserFacingMessage): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

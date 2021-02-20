@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian2
 import typings.cesium.mod.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableCheckIfAllPixelsAreTransparent extends js.Object {
+trait DisableCheckIfAllPixelsAreTransparent extends StObject {
   
   var disableCheckIfAllPixelsAreTransparent: js.UndefOr[Boolean] = js.native
   
@@ -24,33 +25,21 @@ object DisableCheckIfAllPixelsAreTransparent {
   }
   
   @scala.inline
-  implicit class DisableCheckIfAllPixelsAreTransparentOps[Self <: DisableCheckIfAllPixelsAreTransparent] (val x: Self) extends AnyVal {
+  implicit class DisableCheckIfAllPixelsAreTransparentMutableBuilder[Self <: DisableCheckIfAllPixelsAreTransparent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableCheckIfAllPixelsAreTransparent(value: Boolean): Self = StObject.set(x, "disableCheckIfAllPixelsAreTransparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableCheckIfAllPixelsAreTransparentUndefined: Self = StObject.set(x, "disableCheckIfAllPixelsAreTransparent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMissingImageUrl(value: Resource | String): Self = StObject.set(x, "missingImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissingImageUrl(value: Resource | String): Self = this.set("missingImageUrl", value.asInstanceOf[js.Any])
+    def setPixelsToCheck(value: js.Array[Cartesian2]): Self = StObject.set(x, "pixelsToCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelsToCheckVarargs(value: Cartesian2*): Self = this.set("pixelsToCheck", js.Array(value :_*))
-    
-    @scala.inline
-    def setPixelsToCheck(value: js.Array[Cartesian2]): Self = this.set("pixelsToCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisableCheckIfAllPixelsAreTransparent(value: Boolean): Self = this.set("disableCheckIfAllPixelsAreTransparent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableCheckIfAllPixelsAreTransparent: Self = this.set("disableCheckIfAllPixelsAreTransparent", js.undefined)
+    def setPixelsToCheckVarargs(value: Cartesian2*): Self = StObject.set(x, "pixelsToCheck", js.Array(value :_*))
   }
 }

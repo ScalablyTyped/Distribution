@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes a single promoted item.
   */
 @js.native
-trait SchemaPromotedItem extends js.Object {
+trait SchemaPromotedItem extends StObject {
   
   /**
     * A custom message to display for this promotion. This field is currently
@@ -43,42 +44,30 @@ object SchemaPromotedItem {
   }
   
   @scala.inline
-  implicit class SchemaPromotedItemOps[Self <: SchemaPromotedItem] (val x: Self) extends AnyVal {
+  implicit class SchemaPromotedItemMutableBuilder[Self <: SchemaPromotedItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: SchemaPromotedItemId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMessage(value: String): Self = this.set("customMessage", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCustomMessage: Self = this.set("customMessage", js.undefined)
+    def setPromotedByContentOwner(value: Boolean): Self = StObject.set(x, "promotedByContentOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: SchemaPromotedItemId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPromotedByContentOwnerUndefined: Self = StObject.set(x, "promotedByContentOwner", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setTiming(value: SchemaInvideoTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotedByContentOwner(value: Boolean): Self = this.set("promotedByContentOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromotedByContentOwner: Self = this.set("promotedByContentOwner", js.undefined)
-    
-    @scala.inline
-    def setTiming(value: SchemaInvideoTiming): Self = this.set("timing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiming: Self = this.set("timing", js.undefined)
+    def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
   }
 }

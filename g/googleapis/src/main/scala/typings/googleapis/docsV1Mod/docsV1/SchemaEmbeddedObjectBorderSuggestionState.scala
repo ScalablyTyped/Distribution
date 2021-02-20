@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * new suggested value.
   */
 @js.native
-trait SchemaEmbeddedObjectBorderSuggestionState extends js.Object {
+trait SchemaEmbeddedObjectBorderSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to color.
@@ -41,42 +42,30 @@ object SchemaEmbeddedObjectBorderSuggestionState {
   }
   
   @scala.inline
-  implicit class SchemaEmbeddedObjectBorderSuggestionStateOps[Self <: SchemaEmbeddedObjectBorderSuggestionState] (val x: Self) extends AnyVal {
+  implicit class SchemaEmbeddedObjectBorderSuggestionStateMutableBuilder[Self <: SchemaEmbeddedObjectBorderSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorSuggested(value: Boolean): Self = StObject.set(x, "colorSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorSuggestedUndefined: Self = StObject.set(x, "colorSuggested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDashStyleSuggested(value: Boolean): Self = StObject.set(x, "dashStyleSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSuggested(value: Boolean): Self = this.set("colorSuggested", value.asInstanceOf[js.Any])
+    def setDashStyleSuggestedUndefined: Self = StObject.set(x, "dashStyleSuggested", js.undefined)
     
     @scala.inline
-    def deleteColorSuggested: Self = this.set("colorSuggested", js.undefined)
+    def setPropertyStateSuggested(value: Boolean): Self = StObject.set(x, "propertyStateSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashStyleSuggested(value: Boolean): Self = this.set("dashStyleSuggested", value.asInstanceOf[js.Any])
+    def setPropertyStateSuggestedUndefined: Self = StObject.set(x, "propertyStateSuggested", js.undefined)
     
     @scala.inline
-    def deleteDashStyleSuggested: Self = this.set("dashStyleSuggested", js.undefined)
+    def setWidthSuggested(value: Boolean): Self = StObject.set(x, "widthSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyStateSuggested(value: Boolean): Self = this.set("propertyStateSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyStateSuggested: Self = this.set("propertyStateSuggested", js.undefined)
-    
-    @scala.inline
-    def setWidthSuggested(value: Boolean): Self = this.set("widthSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthSuggested: Self = this.set("widthSuggested", js.undefined)
+    def setWidthSuggestedUndefined: Self = StObject.set(x, "widthSuggested", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.inspection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0.3
   */
 @js.native
-trait PropertyCategoryDescriptor extends js.Object {
+trait PropertyCategoryDescriptor extends StObject {
   
   /** provides a help URL to be associated with a category */
   var HelpURL: String = js.native
@@ -37,27 +38,15 @@ object PropertyCategoryDescriptor {
   }
   
   @scala.inline
-  implicit class PropertyCategoryDescriptorOps[Self <: PropertyCategoryDescriptor] (val x: Self) extends AnyVal {
+  implicit class PropertyCategoryDescriptorMutableBuilder[Self <: PropertyCategoryDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProgrammaticName(value: String): Self = StObject.set(x, "ProgrammaticName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgrammaticName(value: String): Self = this.set("ProgrammaticName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUIName(value: String): Self = this.set("UIName", value.asInstanceOf[js.Any])
+    def setUIName(value: String): Self = StObject.set(x, "UIName", value.asInstanceOf[js.Any])
   }
 }

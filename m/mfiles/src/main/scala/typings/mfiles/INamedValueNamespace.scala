@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INamedValueNamespace extends js.Object {
+trait INamedValueNamespace extends StObject {
   
   def Clone(): INamedValueNamespace = js.native
   
@@ -22,27 +23,15 @@ object INamedValueNamespace {
   }
   
   @scala.inline
-  implicit class INamedValueNamespaceOps[Self <: INamedValueNamespace] (val x: Self) extends AnyVal {
+  implicit class INamedValueNamespaceMutableBuilder[Self <: INamedValueNamespace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => INamedValueNamespace): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamedValues(value: INamedValues): Self = StObject.set(x, "NamedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClone(value: () => INamedValueNamespace): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNamedValues(value: INamedValues): Self = this.set("NamedValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamespaceName(value: String): Self = this.set("NamespaceName", value.asInstanceOf[js.Any])
+    def setNamespaceName(value: String): Self = StObject.set(x, "NamespaceName", value.asInstanceOf[js.Any])
   }
 }

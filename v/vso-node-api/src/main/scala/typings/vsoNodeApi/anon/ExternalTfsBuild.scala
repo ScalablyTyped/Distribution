@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExternalTfsBuild extends js.Object {
+trait ExternalTfsBuild extends StObject {
   
   var build: scala.Double = js.native
   
@@ -50,51 +51,39 @@ object ExternalTfsBuild {
   }
   
   @scala.inline
-  implicit class ExternalTfsBuildOps[Self <: ExternalTfsBuild] (val x: Self) extends AnyVal {
+  implicit class ExternalTfsBuildMutableBuilder[Self <: ExternalTfsBuild] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: scala.Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalTfsBuild(value: scala.Double): Self = StObject.set(x, "externalTfsBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: scala.Double): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setFileShare(value: scala.Double): Self = StObject.set(x, "fileShare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: scala.Double): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setGitHub(value: scala.Double): Self = StObject.set(x, "gitHub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalTfsBuild(value: scala.Double): Self = this.set("externalTfsBuild", value.asInstanceOf[js.Any])
+    def setJenkins(value: scala.Double): Self = StObject.set(x, "jenkins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileShare(value: scala.Double): Self = this.set("fileShare", value.asInstanceOf[js.Any])
+    def setNuget(value: scala.Double): Self = StObject.set(x, "nuget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGitHub(value: scala.Double): Self = this.set("gitHub", value.asInstanceOf[js.Any])
+    def setTFGit(value: scala.Double): Self = StObject.set(x, "tFGit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJenkins(value: scala.Double): Self = this.set("jenkins", value.asInstanceOf[js.Any])
+    def setTfsOnPrem(value: scala.Double): Self = StObject.set(x, "tfsOnPrem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNuget(value: scala.Double): Self = this.set("nuget", value.asInstanceOf[js.Any])
+    def setTfvc(value: scala.Double): Self = StObject.set(x, "tfvc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTFGit(value: scala.Double): Self = this.set("tFGit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTfsOnPrem(value: scala.Double): Self = this.set("tfsOnPrem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTfvc(value: scala.Double): Self = this.set("tfvc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXamlBuild(value: scala.Double): Self = this.set("xamlBuild", value.asInstanceOf[js.Any])
+    def setXamlBuild(value: scala.Double): Self = StObject.set(x, "xamlBuild", value.asInstanceOf[js.Any])
   }
 }

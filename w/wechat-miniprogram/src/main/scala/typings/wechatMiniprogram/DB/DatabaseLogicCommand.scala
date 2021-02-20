@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.DB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabaseLogicCommand extends js.Object {
+trait DatabaseLogicCommand extends StObject {
   
   def and(expressions: DatabaseLogicCommand*): DatabaseLogicCommand = js.native
   
@@ -29,30 +30,18 @@ object DatabaseLogicCommand {
   }
   
   @scala.inline
-  implicit class DatabaseLogicCommandOps[Self <: DatabaseLogicCommand] (val x: Self) extends AnyVal {
+  implicit class DatabaseLogicCommandMutableBuilder[Self <: DatabaseLogicCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnd(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNor(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "nor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNot(value: DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "not", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnd(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = this.set("and", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNor(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = this.set("nor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNot(value: DatabaseLogicCommand => DatabaseLogicCommand): Self = this.set("not", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOr(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = this.set("or", js.Any.fromFunction1(value))
+    def setOr(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
   }
 }

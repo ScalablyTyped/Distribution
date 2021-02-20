@@ -1,5 +1,6 @@
 package typings.gitana.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,16 +31,30 @@ class Cluster protected () extends DataStore {
   def waitForJobCompletion(jobId: String, callback: jobCallback[this.type]): Cluster = js.native
   def waitForJobCompletion(jobId: String, callback: jobCallback[this.type], progressCallback: js.Any): Cluster = js.native
 }
-/* static members */
-@JSImport("gitana", "Cluster")
-@js.native
-object Cluster extends js.Object {
+object Cluster {
   
+  /* static member */
+  @JSImport("gitana", "Cluster.extend")
+  @js.native
   def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = js.native
   
+  /* static member */
+  @JSImport("gitana", "Cluster.forEach")
+  @js.native
   def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = js.native
   
+  /* static member */
+  @JSImport("gitana", "Cluster.implement")
+  @js.native
   def implement(args: js.Any*): js.Any = js.native
   
-  def valueOf(`type`: js.Any): js.Any = js.native
+  /* static member */
+  @JSImport("gitana", "Cluster.toString")
+  @js.native
+  def toString_(): js.Any = js.native
+  
+  /* static member */
+  @JSImport("gitana", "Cluster.valueOf")
+  @js.native
+  def valueOf_(`type`: js.Any): js.Any = js.native
 }

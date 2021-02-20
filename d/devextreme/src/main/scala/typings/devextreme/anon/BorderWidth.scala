@@ -27,12 +27,13 @@ import typings.devextreme.devextremeStrings.pie
 import typings.devextreme.devextremeStrings.single_
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
 import typings.devextreme.mod.DevExpress.viz.MapLayerElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderWidth extends js.Object {
+trait BorderWidth extends StObject {
   
   var borderColor: js.UndefOr[String] = js.native
   
@@ -103,202 +104,190 @@ object BorderWidth {
   }
   
   @scala.inline
-  implicit class BorderWidthOps[Self <: BorderWidth] (val x: Self) extends AnyVal {
+  implicit class BorderWidthMutableBuilder[Self <: BorderWidth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setColorGroupingField(value: String): Self = StObject.set(x, "colorGroupingField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setColorGroupingFieldUndefined: Self = StObject.set(x, "colorGroupingField", js.undefined)
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setColorGroups(value: js.Array[Double]): Self = StObject.set(x, "colorGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorGroupsUndefined: Self = StObject.set(x, "colorGroups", js.undefined)
     
     @scala.inline
-    def setColorGroupingField(value: String): Self = this.set("colorGroupingField", value.asInstanceOf[js.Any])
+    def setColorGroupsVarargs(value: Double*): Self = StObject.set(x, "colorGroups", js.Array(value :_*))
     
     @scala.inline
-    def deleteColorGroupingField: Self = this.set("colorGroupingField", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setColorGroupsVarargs(value: Double*): Self = this.set("colorGroups", js.Array(value :_*))
+    def setCustomize(value: /* elements */ js.Array[MapLayerElement] => _): Self = StObject.set(x, "customize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColorGroups(value: js.Array[Double]): Self = this.set("colorGroups", value.asInstanceOf[js.Any])
+    def setCustomizeUndefined: Self = StObject.set(x, "customize", js.undefined)
     
     @scala.inline
-    def deleteColorGroups: Self = this.set("colorGroups", js.undefined)
+    def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomize(value: /* elements */ js.Array[MapLayerElement] => _): Self = this.set("customize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteCustomize: Self = this.set("customize", js.undefined)
-    
-    @scala.inline
-    def setDataField(value: String): Self = this.set("dataField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataField: Self = this.set("dataField", js.undefined)
-    
-    @scala.inline
-    def setDataSourceVarargs(value: js.Any*): Self = this.set("dataSource", js.Array(value :_*))
+    def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
     
     @scala.inline
     def setDataSource(
       value: js.Any | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions | String | js.Array[_]
-    ): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def setElementType(value: bubble | dot | image | pie): Self = this.set("elementType", value.asInstanceOf[js.Any])
+    def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
     @scala.inline
-    def deleteElementType: Self = this.set("elementType", js.undefined)
+    def setElementType(value: bubble | dot | image | pie): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverEnabled(value: Boolean): Self = this.set("hoverEnabled", value.asInstanceOf[js.Any])
+    def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
     
     @scala.inline
-    def deleteHoverEnabled: Self = this.set("hoverEnabled", js.undefined)
+    def setHoverEnabled(value: Boolean): Self = StObject.set(x, "hoverEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoveredBorderColor(value: String): Self = this.set("hoveredBorderColor", value.asInstanceOf[js.Any])
+    def setHoverEnabledUndefined: Self = StObject.set(x, "hoverEnabled", js.undefined)
     
     @scala.inline
-    def deleteHoveredBorderColor: Self = this.set("hoveredBorderColor", js.undefined)
+    def setHoveredBorderColor(value: String): Self = StObject.set(x, "hoveredBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoveredBorderWidth(value: Double): Self = this.set("hoveredBorderWidth", value.asInstanceOf[js.Any])
+    def setHoveredBorderColorUndefined: Self = StObject.set(x, "hoveredBorderColor", js.undefined)
     
     @scala.inline
-    def deleteHoveredBorderWidth: Self = this.set("hoveredBorderWidth", js.undefined)
+    def setHoveredBorderWidth(value: Double): Self = StObject.set(x, "hoveredBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoveredColor(value: String): Self = this.set("hoveredColor", value.asInstanceOf[js.Any])
+    def setHoveredBorderWidthUndefined: Self = StObject.set(x, "hoveredBorderWidth", js.undefined)
     
     @scala.inline
-    def deleteHoveredColor: Self = this.set("hoveredColor", js.undefined)
+    def setHoveredColor(value: String): Self = StObject.set(x, "hoveredColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: DataFieldEnabled): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setHoveredColorUndefined: Self = StObject.set(x, "hoveredColor", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabel(value: DataFieldEnabled): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaletteVarargs(value: String*): Self = this.set("palette", js.Array(value :_*))
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
     def setPalette(
       value: js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-    ): Self = this.set("palette", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePalette: Self = this.set("palette", js.undefined)
+    def setPaletteSize(value: Double): Self = StObject.set(x, "paletteSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaletteSize(value: Double): Self = this.set("paletteSize", value.asInstanceOf[js.Any])
+    def setPaletteSizeUndefined: Self = StObject.set(x, "paletteSize", js.undefined)
     
     @scala.inline
-    def deletePaletteSize: Self = this.set("paletteSize", js.undefined)
+    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
     @scala.inline
-    def setSelectedBorderColor(value: String): Self = this.set("selectedBorderColor", value.asInstanceOf[js.Any])
+    def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value :_*))
     
     @scala.inline
-    def deleteSelectedBorderColor: Self = this.set("selectedBorderColor", js.undefined)
+    def setSelectedBorderColor(value: String): Self = StObject.set(x, "selectedBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedBorderWidth(value: Double): Self = this.set("selectedBorderWidth", value.asInstanceOf[js.Any])
+    def setSelectedBorderColorUndefined: Self = StObject.set(x, "selectedBorderColor", js.undefined)
     
     @scala.inline
-    def deleteSelectedBorderWidth: Self = this.set("selectedBorderWidth", js.undefined)
+    def setSelectedBorderWidth(value: Double): Self = StObject.set(x, "selectedBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedColor(value: String): Self = this.set("selectedColor", value.asInstanceOf[js.Any])
+    def setSelectedBorderWidthUndefined: Self = StObject.set(x, "selectedBorderWidth", js.undefined)
     
     @scala.inline
-    def deleteSelectedColor: Self = this.set("selectedColor", js.undefined)
+    def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionMode(value: multiple | none | single_): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
     
     @scala.inline
-    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    def setSelectionMode(value: multiple | none | single_): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeGroupingField(value: String): Self = this.set("sizeGroupingField", value.asInstanceOf[js.Any])
+    def setSizeGroupingField(value: String): Self = StObject.set(x, "sizeGroupingField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSizeGroupingField: Self = this.set("sizeGroupingField", js.undefined)
+    def setSizeGroupingFieldUndefined: Self = StObject.set(x, "sizeGroupingField", js.undefined)
     
     @scala.inline
-    def setSizeGroupsVarargs(value: Double*): Self = this.set("sizeGroups", js.Array(value :_*))
+    def setSizeGroups(value: js.Array[Double]): Self = StObject.set(x, "sizeGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeGroups(value: js.Array[Double]): Self = this.set("sizeGroups", value.asInstanceOf[js.Any])
+    def setSizeGroupsUndefined: Self = StObject.set(x, "sizeGroups", js.undefined)
     
     @scala.inline
-    def deleteSizeGroups: Self = this.set("sizeGroups", js.undefined)
+    def setSizeGroupsVarargs(value: Double*): Self = StObject.set(x, "sizeGroups", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: area | line | marker): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setType(value: area | line | marker): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

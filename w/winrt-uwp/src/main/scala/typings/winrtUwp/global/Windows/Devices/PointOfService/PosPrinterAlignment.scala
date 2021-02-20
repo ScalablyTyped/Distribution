@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes the possible horizontal alignments of the text that a point-of-service printer prints on the page. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterAlignment")
 @js.native
-object PosPrinterAlignment extends js.Object {
+object PosPrinterAlignment extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.PointOfService.PosPrinterAlignment with Double] = js.native

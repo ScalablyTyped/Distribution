@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Script extends js.Object {
+trait Script extends StObject {
   
   /**
     * A time stamp indicating when this data object was created. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
@@ -48,60 +49,48 @@ object Script {
   }
   
   @scala.inline
-  implicit class ScriptOps[Self <: Script] (val x: Self) extends AnyVal {
+  implicit class ScriptMutableBuilder[Self <: Script] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setScriptArn(value: ScriptArn): Self = StObject.set(x, "ScriptArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setScriptArnUndefined: Self = StObject.set(x, "ScriptArn", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "ScriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptArn(value: ScriptArn): Self = this.set("ScriptArn", value.asInstanceOf[js.Any])
+    def setScriptIdUndefined: Self = StObject.set(x, "ScriptId", js.undefined)
     
     @scala.inline
-    def deleteScriptArn: Self = this.set("ScriptArn", js.undefined)
+    def setSizeOnDisk(value: PositiveLong): Self = StObject.set(x, "SizeOnDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("ScriptId", value.asInstanceOf[js.Any])
+    def setSizeOnDiskUndefined: Self = StObject.set(x, "SizeOnDisk", js.undefined)
     
     @scala.inline
-    def deleteScriptId: Self = this.set("ScriptId", js.undefined)
+    def setStorageLocation(value: S3Location): Self = StObject.set(x, "StorageLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeOnDisk(value: PositiveLong): Self = this.set("SizeOnDisk", value.asInstanceOf[js.Any])
+    def setStorageLocationUndefined: Self = StObject.set(x, "StorageLocation", js.undefined)
     
     @scala.inline
-    def deleteSizeOnDisk: Self = this.set("SizeOnDisk", js.undefined)
+    def setVersion(value: NonZeroAndMaxString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageLocation(value: S3Location): Self = this.set("StorageLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageLocation: Self = this.set("StorageLocation", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: NonZeroAndMaxString): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

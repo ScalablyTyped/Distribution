@@ -2,13 +2,14 @@ package typings.mongodb.mod
 
 import typings.mongodb.anon.End
 import typings.mongodb.anon.Revision
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "GridFSBucket")
 @js.native
-class GridFSBucket protected () extends js.Object {
+class GridFSBucket protected () extends StObject {
   def this(db: Db) = this()
   def this(db: Db, options: GridFSBucketOptions) = this()
   

@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,60 +53,48 @@ object IBase {
   }
   
   @scala.inline
-  implicit class IBaseOps[Self <: IBase] (val x: Self) extends AnyVal {
+  implicit class IBaseMutableBuilder[Self <: IBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallOverridden(value: /* args */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "callOverridden", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallOverriddenUndefined: Self = StObject.set(x, "callOverridden", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallParent(value: /* args */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "callParent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCallOverridden(value: /* args */ js.UndefOr[js.Any] => _): Self = this.set("callOverridden", js.Any.fromFunction1(value))
+    def setCallParentUndefined: Self = StObject.set(x, "callParent", js.undefined)
     
     @scala.inline
-    def deleteCallOverridden: Self = this.set("callOverridden", js.undefined)
+    def setCallSuper(value: /* args */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "callSuper", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCallParent(value: /* args */ js.UndefOr[js.Any] => _): Self = this.set("callParent", js.Any.fromFunction1(value))
+    def setCallSuperUndefined: Self = StObject.set(x, "callSuper", js.undefined)
     
     @scala.inline
-    def deleteCallParent: Self = this.set("callParent", js.undefined)
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCallSuper(value: /* args */ js.UndefOr[js.Any] => _): Self = this.set("callSuper", js.Any.fromFunction1(value))
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteCallSuper: Self = this.set("callSuper", js.undefined)
+    def setGetInitialConfig(value: /* name */ js.UndefOr[java.lang.String] => _): Self = StObject.set(x, "getInitialConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setGetInitialConfigUndefined: Self = StObject.set(x, "getInitialConfig", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setInitConfig(value: /* instanceConfig */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "initConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetInitialConfig(value: /* name */ js.UndefOr[java.lang.String] => _): Self = this.set("getInitialConfig", js.Any.fromFunction1(value))
+    def setInitConfigUndefined: Self = StObject.set(x, "initConfig", js.undefined)
     
     @scala.inline
-    def deleteGetInitialConfig: Self = this.set("getInitialConfig", js.undefined)
+    def setSelf(value: IClass): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitConfig(value: /* instanceConfig */ js.UndefOr[js.Any] => _): Self = this.set("initConfig", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteInitConfig: Self = this.set("initConfig", js.undefined)
-    
-    @scala.inline
-    def setSelf(value: IClass): Self = this.set("self", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelf: Self = this.set("self", js.undefined)
+    def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
   }
 }

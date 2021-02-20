@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represent the delivery info about a chat recipient. */
 @js.native
-trait ChatRecipientDeliveryInfo extends js.Object {
+trait ChatRecipientDeliveryInfo extends StObject {
   
   /** Gets or sets the time the message was sent to the recipient. */
   var deliveryTime: Date = js.native
@@ -51,42 +52,30 @@ object ChatRecipientDeliveryInfo {
   }
   
   @scala.inline
-  implicit class ChatRecipientDeliveryInfoOps[Self <: ChatRecipientDeliveryInfo] (val x: Self) extends AnyVal {
+  implicit class ChatRecipientDeliveryInfoMutableBuilder[Self <: ChatRecipientDeliveryInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryTime(value: Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsErrorPermanent(value: Boolean): Self = StObject.set(x, "isErrorPermanent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadTime(value: Date): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryTime(value: Date): Self = this.set("deliveryTime", value.asInstanceOf[js.Any])
+    def setStatus(value: ChatMessageStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsErrorPermanent(value: Boolean): Self = this.set("isErrorPermanent", value.asInstanceOf[js.Any])
+    def setTransportAddress(value: String): Self = StObject.set(x, "transportAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTime(value: Date): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    def setTransportErrorCode(value: Double): Self = StObject.set(x, "transportErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ChatMessageStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTransportErrorCodeCategory(value: ChatTransportErrorCodeCategory): Self = StObject.set(x, "transportErrorCodeCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransportAddress(value: String): Self = this.set("transportAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportErrorCode(value: Double): Self = this.set("transportErrorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportErrorCodeCategory(value: ChatTransportErrorCodeCategory): Self = this.set("transportErrorCodeCategory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportInterpretedErrorCode(value: ChatTransportInterpretedErrorCode): Self = this.set("transportInterpretedErrorCode", value.asInstanceOf[js.Any])
+    def setTransportInterpretedErrorCode(value: ChatTransportInterpretedErrorCode): Self = StObject.set(x, "transportInterpretedErrorCode", value.asInstanceOf[js.Any])
   }
 }

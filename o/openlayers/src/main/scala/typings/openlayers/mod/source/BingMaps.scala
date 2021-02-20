@@ -2,6 +2,7 @@ package typings.openlayers.mod.source
 
 import typings.openlayers.mod.Attribution
 import typings.openlayers.mod.olx.source.BingMapsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,10 +26,11 @@ class BingMaps protected () extends TileImage {
     */
   def this(options: BingMapsOptions) = this()
 }
-/* static members */
-@JSImport("openlayers", "source.BingMaps")
-@js.native
-object BingMaps extends js.Object {
+object BingMaps {
+  
+  @JSImport("openlayers", "source.BingMaps")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The attribution containing a link to the Microsoft® Bing™ Maps Platform APIs’
@@ -36,5 +38,10 @@ object BingMaps extends js.Object {
     * @const
     * @api
     */
-  var TOS_ATTRIBUTION: Attribution = js.native
+  /* static member */
+  @JSImport("openlayers", "source.BingMaps.TOS_ATTRIBUTION")
+  @js.native
+  def TOS_ATTRIBUTION: Attribution = js.native
+  @scala.inline
+  def TOS_ATTRIBUTION_=(x: Attribution): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOS_ATTRIBUTION")(x.asInstanceOf[js.Any])
 }

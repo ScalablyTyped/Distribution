@@ -1,17 +1,17 @@
 package typings.keepNetworkTbtcJs
 
 import typings.keepNetworkTbtcJs.anon.Locktime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@keep-network/tbtc.js/src/lib/BitcoinTxParser", JSImport.Namespace)
-@js.native
-object bitcoinTxParserMod extends js.Object {
+object bitcoinTxParserMod {
   
-  @js.native
-  object BitcoinTxParser extends js.Object {
+  object BitcoinTxParser {
     
+    @JSImport("@keep-network/tbtc.js/src/lib/BitcoinTxParser", "BitcoinTxParser.parse")
+    @js.native
     def parse(rawTx: js.Any): Locktime = js.native
   }
 }

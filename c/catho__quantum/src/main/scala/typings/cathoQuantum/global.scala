@@ -36,16 +36,19 @@ import typings.cathoQuantum.textAreaMod.TextAreaProps
 import typings.cathoQuantum.toggleMod.ToggleProps
 import typings.cathoQuantum.tooltipMod.TooltipProps
 import typings.styledComponents.styledComponentsMod.StyledComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  @JSGlobal("Accordion")
+  @js.native
   val Accordion: StyledComponent[Instantiable0[default], AccordionProps, js.Object, scala.Nothing] = js.native
   
+  @JSGlobal("Alert")
+  @js.native
   val Alert: StyledComponent[
     Instantiable0[typings.cathoQuantum.alertMod.default], 
     AlertProps, 
@@ -53,6 +56,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Badge")
+  @js.native
   val Badge: StyledComponent[
     Instantiable0[typings.cathoQuantum.badgeMod.default], 
     BadgeProps, 
@@ -60,10 +65,16 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Button")
+  @js.native
   val Button: StyledComponent[TypeofButtonComponent, ButtonProps, js.Object, scala.Nothing] = js.native
   
+  @JSGlobal("Card")
+  @js.native
   val Card: StyledComponent[TypeofCardComponent, Props, js.Object, scala.Nothing] = js.native
   
+  @JSGlobal("Checkbox")
+  @js.native
   val Checkbox: StyledComponent[
     Instantiable0[typings.cathoQuantum.checkboxMod.Checkbox], 
     CheckboxProps, 
@@ -71,8 +82,12 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("CheckboxGroup")
+  @js.native
   val CheckboxGroup: StyledComponent[TypeofCheckboxGroupCompon, CheckboxGroupProps, js.Object, scala.Nothing] = js.native
   
+  @JSGlobal("CircularLoader")
+  @js.native
   val CircularLoader: StyledComponent[
     Instantiable0[typings.cathoQuantum.circularLoaderMod.default], 
     CircularLoaderProps, 
@@ -80,8 +95,12 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Col")
+  @js.native
   val Col: StyledComponent[Instantiable0[typings.cathoQuantum.gridMod.Col], ColProps, js.Object, scala.Nothing] = js.native
   
+  @JSGlobal("Container")
+  @js.native
   val Container: StyledComponent[
     Instantiable0[typings.cathoQuantum.gridMod.Container], 
     ContainerProps, 
@@ -89,6 +108,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Dropdown")
+  @js.native
   val Dropdown: StyledComponent[
     Instantiable0[typings.cathoQuantum.dropdownMod.default], 
     DropdownProps, 
@@ -96,6 +117,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Hamburger")
+  @js.native
   val Hamburger: StyledComponent[
     Instantiable0[typings.cathoQuantum.hamburgerMod.default], 
     HamburgerProps, 
@@ -103,6 +126,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Input")
+  @js.native
   val Input: StyledComponent[
     Instantiable0[typings.cathoQuantum.inputMod.default], 
     InputProps, 
@@ -110,8 +135,12 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Modal")
+  @js.native
   val Modal: StyledComponent[TypeofModalComponent, ModalProps, js.Object, scala.Nothing] = js.native
   
+  @JSGlobal("Pagination")
+  @js.native
   val Pagination: StyledComponent[
     Instantiable0[typings.cathoQuantum.paginationMod.default], 
     PaginationProps, 
@@ -119,6 +148,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Popover")
+  @js.native
   val Popover: StyledComponent[
     Instantiable0[typings.cathoQuantum.popoverMod.default], 
     PopoverProps, 
@@ -126,6 +157,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("ProgressBar")
+  @js.native
   val ProgressBar: StyledComponent[
     Instantiable0[typings.cathoQuantum.progressBarMod.default], 
     ProgressBarProps, 
@@ -133,8 +166,12 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("RadioGroup")
+  @js.native
   val RadioGroup: StyledComponent[TypeofRadioGroupComponent, RadioGroupProps, js.Object, scala.Nothing] = js.native
   
+  @JSGlobal("RangeSlider")
+  @js.native
   val RangeSlider: StyledComponent[
     Instantiable0[typings.cathoQuantum.rangeSliderMod.default], 
     RangeSliderProps, 
@@ -142,8 +179,12 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Row")
+  @js.native
   val Row: StyledComponent[Instantiable0[typings.cathoQuantum.gridMod.Row], RowProps, js.Object, scala.Nothing] = js.native
   
+  @JSGlobal("SnackBar")
+  @js.native
   val SnackBar: StyledComponent[
     Instantiable0[typings.cathoQuantum.snackBarMod.default], 
     SnackBarProps, 
@@ -151,6 +192,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("SocialButton")
+  @js.native
   val SocialButton: StyledComponent[
     Instantiable0[typings.cathoQuantum.socialButtonMod.default], 
     SocialButtonProps, 
@@ -158,6 +201,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Socials")
+  @js.native
   val Socials: StyledComponent[
     Instantiable0[typings.cathoQuantum.socialsMod.default], 
     SocialsProps, 
@@ -165,6 +210,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("TabbedView")
+  @js.native
   val TabbedView: StyledComponent[
     Instantiable0[typings.cathoQuantum.tabbedViewMod.TabbedView], 
     TabbedViewProps, 
@@ -172,8 +219,12 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Tag")
+  @js.native
   val Tag: StyledComponent[Instantiable0[typings.cathoQuantum.tagMod.default], TagProps, js.Object, scala.Nothing] = js.native
   
+  @JSGlobal("TextArea")
+  @js.native
   val TextArea: StyledComponent[
     Instantiable0[typings.cathoQuantum.textAreaMod.default], 
     TextAreaProps, 
@@ -181,6 +232,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Toggle")
+  @js.native
   val Toggle: StyledComponent[
     Instantiable0[typings.cathoQuantum.toggleMod.default], 
     ToggleProps, 
@@ -188,6 +241,8 @@ object global extends js.Object {
     scala.Nothing
   ] = js.native
   
+  @JSGlobal("Tooltip")
+  @js.native
   val Tooltip: StyledComponent[
     Instantiable0[typings.cathoQuantum.tooltipMod.default], 
     TooltipProps, 

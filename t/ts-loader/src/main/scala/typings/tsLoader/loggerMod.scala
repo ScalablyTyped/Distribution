@@ -1,44 +1,42 @@
 package typings.tsLoader
 
-import org.scalablytyped.runtime.TopLevel
 import typings.chalk.mod.Chalk
 import typings.tsLoader.interfacesMod.LoaderOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-loader/dist/logger", JSImport.Namespace)
-@js.native
-object loggerMod extends js.Object {
-  
-  def makeLogger(loaderOptions: LoaderOptions, colors: Chalk): Logger = js.native
+object loggerMod {
   
   @js.native
-  sealed trait LogLevel extends js.Object
+  sealed trait LogLevel extends StObject
+  @JSImport("ts-loader/dist/logger", "LogLevel")
   @js.native
-  object LogLevel extends js.Object {
+  object LogLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
     
     @js.native
     sealed trait ERROR extends LogLevel
-    /* 3 */ @js.native
-    object ERROR extends TopLevel[ERROR with Double]
+    /* 3 */ val ERROR: typings.tsLoader.loggerMod.LogLevel.ERROR with Double = js.native
     
     @js.native
     sealed trait INFO extends LogLevel
-    /* 1 */ @js.native
-    object INFO extends TopLevel[INFO with Double]
+    /* 1 */ val INFO: typings.tsLoader.loggerMod.LogLevel.INFO with Double = js.native
     
     @js.native
     sealed trait WARN extends LogLevel
-    /* 2 */ @js.native
-    object WARN extends TopLevel[WARN with Double]
+    /* 2 */ val WARN: typings.tsLoader.loggerMod.LogLevel.WARN with Double = js.native
   }
   
+  @JSImport("ts-loader/dist/logger", "makeLogger")
   @js.native
-  trait Logger extends js.Object {
+  def makeLogger(loaderOptions: LoaderOptions, colors: Chalk): Logger = js.native
+  
+  @js.native
+  trait Logger extends StObject {
     
     def log(message: String): Unit = js.native
     

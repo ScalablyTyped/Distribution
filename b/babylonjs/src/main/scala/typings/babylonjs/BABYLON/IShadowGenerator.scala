@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.PartialuseInstancesboolea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IShadowGenerator extends js.Object {
+trait IShadowGenerator extends StObject {
   
   /**
     * Binds the shadow related information inside of an effect (information like near, far, darkness...

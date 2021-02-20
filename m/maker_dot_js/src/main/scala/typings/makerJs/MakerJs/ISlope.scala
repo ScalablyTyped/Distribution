@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Slope and y-intercept of a line.
   */
 @js.native
-trait ISlope extends js.Object {
+trait ISlope extends StObject {
   
   /**
     * Boolean to see if line has slope or is vertical.
@@ -39,36 +40,24 @@ object ISlope {
   }
   
   @scala.inline
-  implicit class ISlopeOps[Self <: ISlope] (val x: Self) extends AnyVal {
+  implicit class ISlopeMutableBuilder[Self <: ISlope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasSlope(value: Boolean): Self = StObject.set(x, "hasSlope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLine(value: IPathLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSlope(value: Double): Self = StObject.set(x, "slope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSlope(value: Boolean): Self = this.set("hasSlope", value.asInstanceOf[js.Any])
+    def setSlopeUndefined: Self = StObject.set(x, "slope", js.undefined)
     
     @scala.inline
-    def setLine(value: IPathLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setYIntercept(value: Double): Self = StObject.set(x, "yIntercept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlope(value: Double): Self = this.set("slope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlope: Self = this.set("slope", js.undefined)
-    
-    @scala.inline
-    def setYIntercept(value: Double): Self = this.set("yIntercept", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYIntercept: Self = this.set("yIntercept", js.undefined)
+    def setYInterceptUndefined: Self = StObject.set(x, "yIntercept", js.undefined)
   }
 }

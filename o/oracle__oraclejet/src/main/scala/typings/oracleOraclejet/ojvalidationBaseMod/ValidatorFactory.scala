@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.ojvalidationBaseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidatorFactory[V] extends js.Object {
+trait ValidatorFactory[V] extends StObject {
   
   // static VALIDATOR_TYPE_DATERESTRICTION: string;
   // static VALIDATOR_TYPE_DATETIMERANGE: string;

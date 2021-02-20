@@ -1,5 +1,6 @@
 package typings.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object ArtistAlbumsParams {
   }
   
   @scala.inline
-  implicit class ArtistAlbumsParamsOps[Self <: ArtistAlbumsParams] (val x: Self) extends AnyVal {
+  implicit class ArtistAlbumsParamsMutableBuilder[Self <: ArtistAlbumsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setG_album_name(value: TBoolean): Self = StObject.set(x, "g_album_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setG_album_nameUndefined: Self = StObject.set(x, "g_album_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS_release_date(value: TSort): Self = StObject.set(x, "s_release_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setG_album_name(value: TBoolean): Self = this.set("g_album_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteG_album_name: Self = this.set("g_album_name", js.undefined)
-    
-    @scala.inline
-    def setS_release_date(value: TSort): Self = this.set("s_release_date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS_release_date: Self = this.set("s_release_date", js.undefined)
+    def setS_release_dateUndefined: Self = StObject.set(x, "s_release_date", js.undefined)
   }
 }

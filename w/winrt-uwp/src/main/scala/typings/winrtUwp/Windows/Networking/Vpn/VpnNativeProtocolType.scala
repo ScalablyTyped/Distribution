@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VpnNativeProtocolType extends js.Object
+sealed trait VpnNativeProtocolType extends StObject
 /** Specifies the native protocol types. */
 @JSGlobal("Windows.Networking.Vpn.VpnNativeProtocolType")
 @js.native
-object VpnNativeProtocolType extends js.Object {
+object VpnNativeProtocolType extends StObject {
   
   /** Internet Protocol Security Internet Key Exchange v2 (IPsec IKEv2) */
   @js.native

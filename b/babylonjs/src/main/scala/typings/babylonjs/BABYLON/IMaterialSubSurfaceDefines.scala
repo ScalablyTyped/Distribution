@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMaterialSubSurfaceDefines extends js.Object {
+trait IMaterialSubSurfaceDefines extends StObject {
   
   var SS_ALBEDOFORREFRACTIONTINT: Boolean = js.native
   
@@ -69,69 +70,57 @@ object IMaterialSubSurfaceDefines {
   }
   
   @scala.inline
-  implicit class IMaterialSubSurfaceDefinesOps[Self <: IMaterialSubSurfaceDefines] (val x: Self) extends AnyVal {
+  implicit class IMaterialSubSurfaceDefinesMutableBuilder[Self <: IMaterialSubSurfaceDefines] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSS_ALBEDOFORREFRACTIONTINT(value: Boolean): Self = StObject.set(x, "SS_ALBEDOFORREFRACTIONTINT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSS_GAMMAREFRACTION(value: Boolean): Self = StObject.set(x, "SS_GAMMAREFRACTION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSS_LINEARSPECULARREFRACTION(value: Boolean): Self = StObject.set(x, "SS_LINEARSPECULARREFRACTION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_ALBEDOFORREFRACTIONTINT(value: Boolean): Self = this.set("SS_ALBEDOFORREFRACTIONTINT", value.asInstanceOf[js.Any])
+    def setSS_LINKREFRACTIONTOTRANSPARENCY(value: Boolean): Self = StObject.set(x, "SS_LINKREFRACTIONTOTRANSPARENCY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_GAMMAREFRACTION(value: Boolean): Self = this.set("SS_GAMMAREFRACTION", value.asInstanceOf[js.Any])
+    def setSS_LODINREFRACTIONALPHA(value: Boolean): Self = StObject.set(x, "SS_LODINREFRACTIONALPHA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_LINEARSPECULARREFRACTION(value: Boolean): Self = this.set("SS_LINEARSPECULARREFRACTION", value.asInstanceOf[js.Any])
+    def setSS_MASK_FROM_THICKNESS_TEXTURE(value: Boolean): Self = StObject.set(x, "SS_MASK_FROM_THICKNESS_TEXTURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_LINKREFRACTIONTOTRANSPARENCY(value: Boolean): Self = this.set("SS_LINKREFRACTIONTOTRANSPARENCY", value.asInstanceOf[js.Any])
+    def setSS_MASK_FROM_THICKNESS_TEXTURE_GLTF(value: Boolean): Self = StObject.set(x, "SS_MASK_FROM_THICKNESS_TEXTURE_GLTF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_LODINREFRACTIONALPHA(value: Boolean): Self = this.set("SS_LODINREFRACTIONALPHA", value.asInstanceOf[js.Any])
+    def setSS_REFRACTION(value: Boolean): Self = StObject.set(x, "SS_REFRACTION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_MASK_FROM_THICKNESS_TEXTURE(value: Boolean): Self = this.set("SS_MASK_FROM_THICKNESS_TEXTURE", value.asInstanceOf[js.Any])
+    def setSS_REFRACTIONMAP_3D(value: Boolean): Self = StObject.set(x, "SS_REFRACTIONMAP_3D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_MASK_FROM_THICKNESS_TEXTURE_GLTF(value: Boolean): Self = this.set("SS_MASK_FROM_THICKNESS_TEXTURE_GLTF", value.asInstanceOf[js.Any])
+    def setSS_REFRACTIONMAP_OPPOSITEZ(value: Boolean): Self = StObject.set(x, "SS_REFRACTIONMAP_OPPOSITEZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_REFRACTION(value: Boolean): Self = this.set("SS_REFRACTION", value.asInstanceOf[js.Any])
+    def setSS_RGBDREFRACTION(value: Boolean): Self = StObject.set(x, "SS_RGBDREFRACTION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_REFRACTIONMAP_3D(value: Boolean): Self = this.set("SS_REFRACTIONMAP_3D", value.asInstanceOf[js.Any])
+    def setSS_SCATTERING(value: Boolean): Self = StObject.set(x, "SS_SCATTERING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_REFRACTIONMAP_OPPOSITEZ(value: Boolean): Self = this.set("SS_REFRACTIONMAP_OPPOSITEZ", value.asInstanceOf[js.Any])
+    def setSS_THICKNESSANDMASK_TEXTURE(value: Boolean): Self = StObject.set(x, "SS_THICKNESSANDMASK_TEXTURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_RGBDREFRACTION(value: Boolean): Self = this.set("SS_RGBDREFRACTION", value.asInstanceOf[js.Any])
+    def setSS_THICKNESSANDMASK_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "SS_THICKNESSANDMASK_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_SCATTERING(value: Boolean): Self = this.set("SS_SCATTERING", value.asInstanceOf[js.Any])
+    def setSS_TRANSLUCENCY(value: Boolean): Self = StObject.set(x, "SS_TRANSLUCENCY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_THICKNESSANDMASK_TEXTURE(value: Boolean): Self = this.set("SS_THICKNESSANDMASK_TEXTURE", value.asInstanceOf[js.Any])
+    def setSUBSURFACE(value: Boolean): Self = StObject.set(x, "SUBSURFACE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSS_THICKNESSANDMASK_TEXTUREDIRECTUV(value: Double): Self = this.set("SS_THICKNESSANDMASK_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSS_TRANSLUCENCY(value: Boolean): Self = this.set("SS_TRANSLUCENCY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSUBSURFACE(value: Boolean): Self = this.set("SUBSURFACE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_areTexturesDirty(value: Boolean): Self = this.set("_areTexturesDirty", value.asInstanceOf[js.Any])
+    def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpotProvisioningSpecification extends js.Object {
+trait SpotProvisioningSpecification extends StObject {
   
   /**
     *  Specifies the strategy to use in launching Spot instance fleets. Currently, the only option is capacity-optimized (the default), which launches instances from Spot instance pools with optimal capacity for the number of instances that are launching. 
@@ -36,36 +37,24 @@ object SpotProvisioningSpecification {
   }
   
   @scala.inline
-  implicit class SpotProvisioningSpecificationOps[Self <: SpotProvisioningSpecification] (val x: Self) extends AnyVal {
+  implicit class SpotProvisioningSpecificationMutableBuilder[Self <: SpotProvisioningSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationStrategy(value: SpotProvisioningAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocationStrategyUndefined: Self = StObject.set(x, "AllocationStrategy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockDurationMinutes(value: WholeNumber): Self = StObject.set(x, "BlockDurationMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutAction(value: SpotProvisioningTimeoutAction): Self = this.set("TimeoutAction", value.asInstanceOf[js.Any])
+    def setBlockDurationMinutesUndefined: Self = StObject.set(x, "BlockDurationMinutes", js.undefined)
     
     @scala.inline
-    def setTimeoutDurationMinutes(value: WholeNumber): Self = this.set("TimeoutDurationMinutes", value.asInstanceOf[js.Any])
+    def setTimeoutAction(value: SpotProvisioningTimeoutAction): Self = StObject.set(x, "TimeoutAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationStrategy(value: SpotProvisioningAllocationStrategy): Self = this.set("AllocationStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllocationStrategy: Self = this.set("AllocationStrategy", js.undefined)
-    
-    @scala.inline
-    def setBlockDurationMinutes(value: WholeNumber): Self = this.set("BlockDurationMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockDurationMinutes: Self = this.set("BlockDurationMinutes", js.undefined)
+    def setTimeoutDurationMinutes(value: WholeNumber): Self = StObject.set(x, "TimeoutDurationMinutes", value.asInstanceOf[js.Any])
   }
 }

@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.queryRunnerMod.QueryRunner
 import typings.typeorm.subjectMod.Subject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/persistence/tree/ClosureSubjectExecutor", JSImport.Namespace)
-@js.native
-object closureSubjectExecutorMod extends js.Object {
+object closureSubjectExecutorMod {
   
+  @JSImport("typeorm/browser/persistence/tree/ClosureSubjectExecutor", "ClosureSubjectExecutor")
   @js.native
-  class ClosureSubjectExecutor protected () extends js.Object {
+  class ClosureSubjectExecutor protected () extends StObject {
     def this(queryRunner: QueryRunner) = this()
     
     /**

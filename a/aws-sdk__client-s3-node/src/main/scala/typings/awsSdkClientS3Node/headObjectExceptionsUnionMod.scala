@@ -1,13 +1,12 @@
 package typings.awsSdkClientS3Node
 
 import typings.awsSdkClientS3Node.typesNoSuchKeyMod.NoSuchKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/types/HeadObjectExceptionsUnion", JSImport.Namespace)
-@js.native
-object headObjectExceptionsUnionMod extends js.Object {
+object headObjectExceptionsUnionMod {
   
   type HeadObjectExceptionsUnion = NoSuchKey
 }

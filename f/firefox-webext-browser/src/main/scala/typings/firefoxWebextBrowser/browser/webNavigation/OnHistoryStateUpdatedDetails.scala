@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.webNavigation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnHistoryStateUpdatedDetails extends js.Object {
+trait OnHistoryStateUpdatedDetails extends StObject {
   
   /**
     * 0 indicates the navigation happens in the tab content window; a positive value indicates navigation in a subframe. Frame IDs are unique within a tab.
@@ -47,51 +48,39 @@ object OnHistoryStateUpdatedDetails {
   }
   
   @scala.inline
-  implicit class OnHistoryStateUpdatedDetailsOps[Self <: OnHistoryStateUpdatedDetails] (val x: Self) extends AnyVal {
+  implicit class OnHistoryStateUpdatedDetailsMutableBuilder[Self <: OnHistoryStateUpdatedDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
     
     @scala.inline
-    def setFrameId(value: Double): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
+    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    def setTransitionQualifiers(value: js.Array[TransitionQualifier]): Self = StObject.set(x, "transitionQualifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTransitionQualifiersUndefined: Self = StObject.set(x, "transitionQualifiers", js.undefined)
     
     @scala.inline
-    def setProcessId(value: Double): Self = this.set("processId", value.asInstanceOf[js.Any])
+    def setTransitionQualifiersVarargs(value: TransitionQualifier*): Self = StObject.set(x, "transitionQualifiers", js.Array(value :_*))
     
     @scala.inline
-    def deleteProcessId: Self = this.set("processId", js.undefined)
+    def setTransitionType(value: TransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionQualifiersVarargs(value: TransitionQualifier*): Self = this.set("transitionQualifiers", js.Array(value :_*))
+    def setTransitionTypeUndefined: Self = StObject.set(x, "transitionType", js.undefined)
     
     @scala.inline
-    def setTransitionQualifiers(value: js.Array[TransitionQualifier]): Self = this.set("transitionQualifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitionQualifiers: Self = this.set("transitionQualifiers", js.undefined)
-    
-    @scala.inline
-    def setTransitionType(value: TransitionType): Self = this.set("transitionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitionType: Self = this.set("transitionType", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

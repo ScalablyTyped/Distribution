@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cloudfront
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionOriginGroupMember extends js.Object {
+trait DistributionOriginGroupMember extends StObject {
   
   /**
     * The unique identifier of the member origin
@@ -22,21 +23,9 @@ object DistributionOriginGroupMember {
   }
   
   @scala.inline
-  implicit class DistributionOriginGroupMemberOps[Self <: DistributionOriginGroupMember] (val x: Self) extends AnyVal {
+  implicit class DistributionOriginGroupMemberMutableBuilder[Self <: DistributionOriginGroupMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOriginId(value: Input[String]): Self = this.set("originId", value.asInstanceOf[js.Any])
+    def setOriginId(value: Input[String]): Self = StObject.set(x, "originId", value.asInstanceOf[js.Any])
   }
 }

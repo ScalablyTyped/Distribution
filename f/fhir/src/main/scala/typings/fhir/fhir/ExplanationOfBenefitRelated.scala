@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,36 +35,24 @@ object ExplanationOfBenefitRelated {
   }
   
   @scala.inline
-  implicit class ExplanationOfBenefitRelatedOps[Self <: ExplanationOfBenefitRelated] (val x: Self) extends AnyVal {
+  implicit class ExplanationOfBenefitRelatedMutableBuilder[Self <: ExplanationOfBenefitRelated] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClaim(value: Reference): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClaimUndefined: Self = StObject.set(x, "claim", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReference(value: Identifier): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaim(value: Reference): Self = this.set("claim", value.asInstanceOf[js.Any])
+    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
     @scala.inline
-    def deleteClaim: Self = this.set("claim", js.undefined)
+    def setRelationship(value: CodeableConcept): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReference(value: Identifier): Self = this.set("reference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReference: Self = this.set("reference", js.undefined)
-    
-    @scala.inline
-    def setRelationship(value: CodeableConcept): Self = this.set("relationship", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationship: Self = this.set("relationship", js.undefined)
+    def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
   }
 }

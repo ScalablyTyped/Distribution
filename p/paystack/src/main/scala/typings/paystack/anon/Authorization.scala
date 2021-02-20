@@ -1,12 +1,13 @@
 package typings.paystack.anon
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Authorization extends js.Object {
+trait Authorization extends StObject {
   
   var authorization: String = js.native
   
@@ -25,33 +26,21 @@ object Authorization {
   }
   
   @scala.inline
-  implicit class AuthorizationOps[Self <: Authorization] (val x: Self) extends AnyVal {
+  implicit class AuthorizationMutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorization(value: String): Self = this.set("authorization", value.asInstanceOf[js.Any])
+    def setStart_date(value: Date): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomer(value: String): Self = this.set("customer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlan(value: String): Self = this.set("plan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_date(value: Date): Self = this.set("start_date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart_date: Self = this.set("start_date", js.undefined)
+    def setStart_dateUndefined: Self = StObject.set(x, "start_date", js.undefined)
   }
 }

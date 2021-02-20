@@ -4,6 +4,7 @@ import typings.html5plus.html5plusStrings.bd09
 import typings.html5plus.html5plusStrings.bd09ll
 import typings.html5plus.html5plusStrings.gcj02
 import typings.html5plus.html5plusStrings.wgs84
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
 @js.native
-trait PlusMapsCoordinateConvertOptions extends js.Object {
+trait PlusMapsCoordinateConvertOptions extends StObject {
   
   /**
     * 源数据的坐标系类型
@@ -38,24 +39,12 @@ object PlusMapsCoordinateConvertOptions {
   }
   
   @scala.inline
-  implicit class PlusMapsCoordinateConvertOptionsOps[Self <: PlusMapsCoordinateConvertOptions] (val x: Self) extends AnyVal {
+  implicit class PlusMapsCoordinateConvertOptionsMutableBuilder[Self <: PlusMapsCoordinateConvertOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordType(value: wgs84 | gcj02 | bd09 | bd09ll): Self = StObject.set(x, "coordType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCoordType(value: wgs84 | gcj02 | bd09 | bd09ll): Self = this.set("coordType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoordType: Self = this.set("coordType", js.undefined)
+    def setCoordTypeUndefined: Self = StObject.set(x, "coordType", js.undefined)
   }
 }

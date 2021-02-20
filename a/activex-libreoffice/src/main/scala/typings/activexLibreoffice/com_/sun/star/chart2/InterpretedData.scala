@@ -2,13 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 
 import typings.activexLibreoffice.com_.sun.star.chart2.data.XLabeledDataSequence
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers tooling to interpret different data sources in a structural and chart-type-dependent way. */
 @js.native
-trait InterpretedData extends js.Object {
+trait InterpretedData extends StObject {
   
   var Categories: XLabeledDataSequence = js.native
   
@@ -23,24 +24,12 @@ object InterpretedData {
   }
   
   @scala.inline
-  implicit class InterpretedDataOps[Self <: InterpretedData] (val x: Self) extends AnyVal {
+  implicit class InterpretedDataMutableBuilder[Self <: InterpretedData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: XLabeledDataSequence): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCategories(value: XLabeledDataSequence): Self = this.set("Categories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeries(value: SafeArray[SafeArray[XDataSeries]]): Self = this.set("Series", value.asInstanceOf[js.Any])
+    def setSeries(value: SafeArray[SafeArray[XDataSeries]]): Self = StObject.set(x, "Series", value.asInstanceOf[js.Any])
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientKinesisBrowser.typesDescribeStreamSummaryInputMod.Des
 import typings.awsSdkClientKinesisBrowser.typesDescribeStreamSummaryOutputMod.DescribeStreamSummaryOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/commands/DescribeStreamSummaryCommand", JSImport.Namespace)
-@js.native
-object describeStreamSummaryCommandMod extends js.Object {
+object describeStreamSummaryCommandMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/commands/DescribeStreamSummaryCommand", "DescribeStreamSummaryCommand")
   @js.native
   class DescribeStreamSummaryCommand protected () extends Command[
           InputTypesUnion, 

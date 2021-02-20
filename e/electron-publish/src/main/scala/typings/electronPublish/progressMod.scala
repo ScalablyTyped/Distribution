@@ -1,15 +1,15 @@
 package typings.electronPublish
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("electron-publish/out/progress", JSImport.Namespace)
-@js.native
-object progressMod extends js.Object {
+object progressMod {
   
+  @JSImport("electron-publish/out/progress", "ProgressBar")
   @js.native
-  abstract class ProgressBar protected () extends js.Object {
+  abstract class ProgressBar protected () extends StObject {
     /**
       * Initialize a `ProgressBar` with the given `fmt` string and `options` or`total`.
       *
@@ -85,8 +85,9 @@ object progressMod extends js.Object {
     var width: js.Any = js.native
   }
   
+  @JSImport("electron-publish/out/progress", "ProgressCallback")
   @js.native
-  class ProgressCallback protected () extends js.Object {
+  class ProgressCallback protected () extends StObject {
     def this(progressBar: ProgressBar) = this()
     
     var nextUpdate: js.Any = js.native

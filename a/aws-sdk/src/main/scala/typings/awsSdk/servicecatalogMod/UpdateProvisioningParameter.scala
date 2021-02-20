@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateProvisioningParameter extends js.Object {
+trait UpdateProvisioningParameter extends StObject {
   
   /**
     * The parameter key.
@@ -31,36 +32,24 @@ object UpdateProvisioningParameter {
   }
   
   @scala.inline
-  implicit class UpdateProvisioningParameterOps[Self <: UpdateProvisioningParameter] (val x: Self) extends AnyVal {
+  implicit class UpdateProvisioningParameterMutableBuilder[Self <: UpdateProvisioningParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: ParameterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUsePreviousValue(value: UsePreviousValue): Self = StObject.set(x, "UsePreviousValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: ParameterKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setUsePreviousValueUndefined: Self = StObject.set(x, "UsePreviousValue", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setValue(value: ParameterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsePreviousValue(value: UsePreviousValue): Self = this.set("UsePreviousValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePreviousValue: Self = this.set("UsePreviousValue", js.undefined)
-    
-    @scala.inline
-    def setValue(value: ParameterValue): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

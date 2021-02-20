@@ -9,16 +9,16 @@ import typings.uirouterCore.routerMod.UIRouter
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration
 import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
 import typings.uirouterCore.urlMatcherMod.UrlMatcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/url/urlMatcherFactory", JSImport.Namespace)
-@js.native
-object urlMatcherFactoryMod extends js.Object {
+object urlMatcherFactoryMod {
   
+  @JSImport("@uirouter/core/lib/url/urlMatcherFactory", "ParamFactory")
   @js.native
-  class ParamFactory protected () extends js.Object {
+  class ParamFactory protected () extends StObject {
     def this(router: UIRouter) = this()
     
     def fromConfig(id: String, `type`: ParamType, state: StateDeclaration): Param = js.native
@@ -30,8 +30,9 @@ object urlMatcherFactoryMod extends js.Object {
     var router: js.Any = js.native
   }
   
+  @JSImport("@uirouter/core/lib/url/urlMatcherFactory", "UrlMatcherFactory")
   @js.native
-  class UrlMatcherFactory protected () extends js.Object {
+  class UrlMatcherFactory protected () extends StObject {
     def this(/** @internal */ router: UIRouter) = this()
     
     /** @internal */

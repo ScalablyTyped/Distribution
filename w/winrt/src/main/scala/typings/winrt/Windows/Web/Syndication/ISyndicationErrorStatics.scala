@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Web.Syndication
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISyndicationErrorStatics extends js.Object {
+trait ISyndicationErrorStatics extends StObject {
   
   def getStatus(hresult: Double): SyndicationErrorStatus = js.native
 }
@@ -18,21 +19,9 @@ object ISyndicationErrorStatics {
   }
   
   @scala.inline
-  implicit class ISyndicationErrorStaticsOps[Self <: ISyndicationErrorStatics] (val x: Self) extends AnyVal {
+  implicit class ISyndicationErrorStaticsMutableBuilder[Self <: ISyndicationErrorStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetStatus(value: Double => SyndicationErrorStatus): Self = this.set("getStatus", js.Any.fromFunction1(value))
+    def setGetStatus(value: Double => SyndicationErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
   }
 }

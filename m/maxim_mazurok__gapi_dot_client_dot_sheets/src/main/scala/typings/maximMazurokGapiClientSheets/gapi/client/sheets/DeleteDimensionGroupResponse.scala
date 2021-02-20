@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteDimensionGroupResponse extends js.Object {
+trait DeleteDimensionGroupResponse extends StObject {
   
   /** All groups of a dimension after deleting a group from that dimension. */
   var dimensionGroups: js.UndefOr[js.Array[DimensionGroup]] = js.native
@@ -19,27 +20,15 @@ object DeleteDimensionGroupResponse {
   }
   
   @scala.inline
-  implicit class DeleteDimensionGroupResponseOps[Self <: DeleteDimensionGroupResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteDimensionGroupResponseMutableBuilder[Self <: DeleteDimensionGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "dimensionGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDimensionGroupsVarargs(value: DimensionGroup*): Self = this.set("dimensionGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setDimensionGroups(value: js.Array[DimensionGroup]): Self = this.set("dimensionGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimensionGroups: Self = this.set("dimensionGroups", js.undefined)
+    def setDimensionGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
   }
 }

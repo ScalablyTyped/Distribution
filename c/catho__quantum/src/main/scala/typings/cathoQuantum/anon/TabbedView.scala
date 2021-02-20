@@ -1,11 +1,12 @@
 package typings.cathoQuantum.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabbedView extends js.Object {
+trait TabbedView extends StObject {
   
   var tabbedView: js.UndefOr[js.Object] = js.native
 }
@@ -18,24 +19,12 @@ object TabbedView {
   }
   
   @scala.inline
-  implicit class TabbedViewOps[Self <: TabbedView] (val x: Self) extends AnyVal {
+  implicit class TabbedViewMutableBuilder[Self <: TabbedView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTabbedView(value: js.Object): Self = StObject.set(x, "tabbedView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTabbedView(value: js.Object): Self = this.set("tabbedView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabbedView: Self = this.set("tabbedView", js.undefined)
+    def setTabbedViewUndefined: Self = StObject.set(x, "tabbedView", js.undefined)
   }
 }

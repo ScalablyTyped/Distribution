@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.workInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimelineIterationStatusCode extends js.Object
+sealed trait TimelineIterationStatusCode extends StObject
 @JSImport("vso-node-api/interfaces/WorkInterfaces", "TimelineIterationStatusCode")
 @js.native
-object TimelineIterationStatusCode extends js.Object {
+object TimelineIterationStatusCode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimelineIterationStatusCode with Double] = js.native
@@ -19,14 +19,12 @@ object TimelineIterationStatusCode extends js.Object {
     */
   @js.native
   sealed trait IsOverlapping extends TimelineIterationStatusCode
-  /* 1 */ @js.native
-  object IsOverlapping extends TopLevel[IsOverlapping with Double]
+  /* 1 */ val IsOverlapping: typings.vsoNodeApi.workInterfacesMod.TimelineIterationStatusCode.IsOverlapping with Double = js.native
   
   /**
     * No error - iteration data is good.
     */
   @js.native
   sealed trait OK extends TimelineIterationStatusCode
-  /* 0 */ @js.native
-  object OK extends TopLevel[OK with Double]
+  /* 0 */ val OK: typings.vsoNodeApi.workInterfacesMod.TimelineIterationStatusCode.OK with Double = js.native
 }

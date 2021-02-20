@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVolumesRequest extends js.Object {
+trait DescribeVolumesRequest extends StObject {
   
   /**
     * The instance ID. If you use this parameter, DescribeVolumes returns descriptions of the volumes associated with the specified instance.
@@ -36,45 +37,33 @@ object DescribeVolumesRequest {
   }
   
   @scala.inline
-  implicit class DescribeVolumesRequestOps[Self <: DescribeVolumesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeVolumesRequestMutableBuilder[Self <: DescribeVolumesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRaidArrayId(value: String): Self = StObject.set(x, "RaidArrayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setRaidArrayIdUndefined: Self = StObject.set(x, "RaidArrayId", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaidArrayId(value: String): Self = this.set("RaidArrayId", value.asInstanceOf[js.Any])
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
     
     @scala.inline
-    def deleteRaidArrayId: Self = this.set("RaidArrayId", js.undefined)
+    def setVolumeIds(value: Strings): Self = StObject.set(x, "VolumeIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    def setVolumeIdsUndefined: Self = StObject.set(x, "VolumeIds", js.undefined)
     
     @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
-    
-    @scala.inline
-    def setVolumeIdsVarargs(value: String*): Self = this.set("VolumeIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumeIds(value: Strings): Self = this.set("VolumeIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeIds: Self = this.set("VolumeIds", js.undefined)
+    def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "VolumeIds", js.Array(value :_*))
   }
 }

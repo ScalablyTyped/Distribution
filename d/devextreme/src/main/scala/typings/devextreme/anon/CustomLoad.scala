@@ -4,12 +4,13 @@ import typings.devextreme.devextremeStrings.custom
 import typings.devextreme.devextremeStrings.localStorage
 import typings.devextreme.devextremeStrings.sessionStorage
 import typings.devextreme.mod.global.JQueryPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomLoad extends js.Object {
+trait CustomLoad extends StObject {
   
   var customLoad: js.UndefOr[js.Function0[typings.devextreme.mod.global.Promise[_] | JQueryPromise[_]]] = js.native
   
@@ -32,54 +33,42 @@ object CustomLoad {
   }
   
   @scala.inline
-  implicit class CustomLoadOps[Self <: CustomLoad] (val x: Self) extends AnyVal {
+  implicit class CustomLoadMutableBuilder[Self <: CustomLoad] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomLoad(value: () => typings.devextreme.mod.global.Promise[_] | JQueryPromise[_]): Self = StObject.set(x, "customLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomLoadUndefined: Self = StObject.set(x, "customLoad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomSave(value: /* state */ js.Any => _): Self = StObject.set(x, "customSave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCustomLoad(value: () => typings.devextreme.mod.global.Promise[_] | JQueryPromise[_]): Self = this.set("customLoad", js.Any.fromFunction0(value))
+    def setCustomSaveUndefined: Self = StObject.set(x, "customSave", js.undefined)
     
     @scala.inline
-    def deleteCustomLoad: Self = this.set("customLoad", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomSave(value: /* state */ js.Any => _): Self = this.set("customSave", js.Any.fromFunction1(value))
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteCustomSave: Self = this.set("customSave", js.undefined)
+    def setSavingTimeout(value: Double): Self = StObject.set(x, "savingTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setSavingTimeoutUndefined: Self = StObject.set(x, "savingTimeout", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingTimeout(value: Double): Self = this.set("savingTimeout", value.asInstanceOf[js.Any])
+    def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
     
     @scala.inline
-    def deleteSavingTimeout: Self = this.set("savingTimeout", js.undefined)
+    def setType(value: custom | localStorage | sessionStorage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageKey(value: String): Self = this.set("storageKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageKey: Self = this.set("storageKey", js.undefined)
-    
-    @scala.inline
-    def setType(value: custom | localStorage | sessionStorage): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

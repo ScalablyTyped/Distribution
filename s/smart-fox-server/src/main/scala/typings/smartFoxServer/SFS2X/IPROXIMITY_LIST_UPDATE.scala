@@ -2,12 +2,13 @@ package typings.smartFoxServer.SFS2X
 
 import typings.smartFoxServer.SFS2X.Entities.MMOItem
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPROXIMITY_LIST_UPDATE extends js.Object {
+trait IPROXIMITY_LIST_UPDATE extends StObject {
   
   var addedItems: js.Array[MMOItem] = js.native
   
@@ -31,42 +32,30 @@ object IPROXIMITY_LIST_UPDATE {
   }
   
   @scala.inline
-  implicit class IPROXIMITY_LIST_UPDATEOps[Self <: IPROXIMITY_LIST_UPDATE] (val x: Self) extends AnyVal {
+  implicit class IPROXIMITY_LIST_UPDATEMutableBuilder[Self <: IPROXIMITY_LIST_UPDATE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddedItems(value: js.Array[MMOItem]): Self = StObject.set(x, "addedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedItemsVarargs(value: MMOItem*): Self = StObject.set(x, "addedItems", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddedUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "addedUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedItemsVarargs(value: MMOItem*): Self = this.set("addedItems", js.Array(value :_*))
+    def setAddedUsersVarargs(value: SFSUser*): Self = StObject.set(x, "addedUsers", js.Array(value :_*))
     
     @scala.inline
-    def setAddedItems(value: js.Array[MMOItem]): Self = this.set("addedItems", value.asInstanceOf[js.Any])
+    def setRemovedItems(value: js.Array[MMOItem]): Self = StObject.set(x, "removedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedUsersVarargs(value: SFSUser*): Self = this.set("addedUsers", js.Array(value :_*))
+    def setRemovedItemsVarargs(value: MMOItem*): Self = StObject.set(x, "removedItems", js.Array(value :_*))
     
     @scala.inline
-    def setAddedUsers(value: js.Array[SFSUser]): Self = this.set("addedUsers", value.asInstanceOf[js.Any])
+    def setRemovedUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "removedUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemovedItemsVarargs(value: MMOItem*): Self = this.set("removedItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemovedItems(value: js.Array[MMOItem]): Self = this.set("removedItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemovedUsersVarargs(value: SFSUser*): Self = this.set("removedUsers", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemovedUsers(value: js.Array[SFSUser]): Self = this.set("removedUsers", value.asInstanceOf[js.Any])
+    def setRemovedUsersVarargs(value: SFSUser*): Self = StObject.set(x, "removedUsers", js.Array(value :_*))
   }
 }

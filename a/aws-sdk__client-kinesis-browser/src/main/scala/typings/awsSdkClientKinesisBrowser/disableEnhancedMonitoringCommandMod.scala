@@ -7,14 +7,14 @@ import typings.awsSdkClientKinesisBrowser.typesDisableEnhancedMonitoringInputMod
 import typings.awsSdkClientKinesisBrowser.typesDisableEnhancedMonitoringOutputMod.DisableEnhancedMonitoringOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/commands/DisableEnhancedMonitoringCommand", JSImport.Namespace)
-@js.native
-object disableEnhancedMonitoringCommandMod extends js.Object {
+object disableEnhancedMonitoringCommandMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/commands/DisableEnhancedMonitoringCommand", "DisableEnhancedMonitoringCommand")
   @js.native
   class DisableEnhancedMonitoringCommand protected () extends Command[
           InputTypesUnion, 

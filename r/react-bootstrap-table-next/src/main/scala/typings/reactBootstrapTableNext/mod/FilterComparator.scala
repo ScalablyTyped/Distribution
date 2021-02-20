@@ -1,17 +1,18 @@
 package typings.reactBootstrapTableNext.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FilterComparator extends js.Object
+sealed trait FilterComparator extends StObject
 /**
   * Filter comparators used for table filters
   */
 @JSImport("react-bootstrap-table-next", "FilterComparator")
 @js.native
-object FilterComparator extends js.Object {
+object FilterComparator extends StObject {
   
   @js.native
   sealed trait EQ extends FilterComparator

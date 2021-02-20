@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionConfiguration extends js.Object {
+trait FunctionConfiguration extends StObject {
   
   /**
     * The name of the DataSource.
@@ -56,66 +57,54 @@ object FunctionConfiguration {
   }
   
   @scala.inline
-  implicit class FunctionConfigurationOps[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
+  implicit class FunctionConfigurationMutableBuilder[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceName(value: ResourceName): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceName(value: ResourceName): Self = this.set("dataSourceName", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDataSourceName: Self = this.set("dataSourceName", js.undefined)
+    def setFunctionArn(value: String): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFunctionArnUndefined: Self = StObject.set(x, "functionArn", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFunctionId(value: String): Self = StObject.set(x, "functionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionArn(value: String): Self = this.set("functionArn", value.asInstanceOf[js.Any])
+    def setFunctionIdUndefined: Self = StObject.set(x, "functionId", js.undefined)
     
     @scala.inline
-    def deleteFunctionArn: Self = this.set("functionArn", js.undefined)
+    def setFunctionVersion(value: String): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionId(value: String): Self = this.set("functionId", value.asInstanceOf[js.Any])
+    def setFunctionVersionUndefined: Self = StObject.set(x, "functionVersion", js.undefined)
     
     @scala.inline
-    def deleteFunctionId: Self = this.set("functionId", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionVersion(value: String): Self = this.set("functionVersion", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFunctionVersion: Self = this.set("functionVersion", js.undefined)
+    def setRequestMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "requestMappingTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRequestMappingTemplateUndefined: Self = StObject.set(x, "requestMappingTemplate", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setResponseMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestMappingTemplate(value: MappingTemplate): Self = this.set("requestMappingTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestMappingTemplate: Self = this.set("requestMappingTemplate", js.undefined)
-    
-    @scala.inline
-    def setResponseMappingTemplate(value: MappingTemplate): Self = this.set("responseMappingTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseMappingTemplate: Self = this.set("responseMappingTemplate", js.undefined)
+    def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
   }
 }

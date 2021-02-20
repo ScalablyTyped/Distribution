@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepExecutionFilter extends js.Object {
+trait StepExecutionFilter extends StObject {
   
   /**
     * One or more keys to limit the results. Valid filter keys include the following: StepName, Action, StepExecutionId, StepExecutionStatus, StartTimeBefore, StartTimeAfter.
@@ -26,27 +27,15 @@ object StepExecutionFilter {
   }
   
   @scala.inline
-  implicit class StepExecutionFilterOps[Self <: StepExecutionFilter] (val x: Self) extends AnyVal {
+  implicit class StepExecutionFilterMutableBuilder[Self <: StepExecutionFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: StepExecutionFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValues(value: StepExecutionFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKey(value: StepExecutionFilterKey): Self = this.set("Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: StepExecutionFilterValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: StepExecutionFilterValueList): Self = this.set("Values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: StepExecutionFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

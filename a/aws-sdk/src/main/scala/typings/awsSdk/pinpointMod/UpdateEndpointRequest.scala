@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateEndpointRequest extends js.Object {
+trait UpdateEndpointRequest extends StObject {
   
   /**
     * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
@@ -28,27 +29,15 @@ object UpdateEndpointRequest {
   }
   
   @scala.inline
-  implicit class UpdateEndpointRequestOps[Self <: UpdateEndpointRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateEndpointRequestMutableBuilder[Self <: UpdateEndpointRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointId(value: string): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndpointId(value: string): Self = this.set("EndpointId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndpointRequest(value: EndpointRequest): Self = this.set("EndpointRequest", value.asInstanceOf[js.Any])
+    def setEndpointRequest(value: EndpointRequest): Self = StObject.set(x, "EndpointRequest", value.asInstanceOf[js.Any])
   }
 }

@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientRedis.anon.Oauthtoken
 import typings.maximMazurokGapiClientRedis.anon.PrettyPrint
 import typings.maximMazurokGapiClientRedis.anon.QuotaUser
 import typings.maximMazurokGapiClientRedis.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancesResource extends js.Object {
+trait InstancesResource extends StObject {
   
   /**
     * Creates a Redis instance based on the specified tier and memory size. By default, the instance is accessible from the project's [default

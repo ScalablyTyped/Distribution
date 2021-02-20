@@ -1,30 +1,60 @@
 package typings.reactSpinners
 
-import typings.react.mod.Component
-import typings.reactSpinners.anon.RequiredLoaderSizeProps
+import typings.react.mod.PureComponent
+import typings.reactSpinners.interfacesMod.LengthType
 import typings.reactSpinners.interfacesMod.LoaderSizeProps
+import typings.reactSpinners.interfacesMod.PrecompiledCss
 import typings.reactSpinners.interfacesMod.StyleFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-spinners/ClockLoader", JSImport.Namespace)
-@js.native
-object clockLoaderMod extends js.Object {
+object clockLoaderMod {
   
+  @JSImport("react-spinners/ClockLoader", JSImport.Default)
   @js.native
-  trait Loader
-    extends Component[LoaderSizeProps, js.Object, js.Any] {
+  class default () extends Loader
+  object default {
     
-    var wrapper: StyleFunction = js.native
+    /* static member */
+    /* Inlined std.Required<react-spinners.react-spinners/interfaces.LoaderSizeProps> */
+    object defaultProps {
+      
+      @JSImport("react-spinners/ClockLoader", "default.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("react-spinners/ClockLoader", "default.defaultProps.color")
+      @js.native
+      def color: String = js.native
+      @scala.inline
+      def color_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-spinners/ClockLoader", "default.defaultProps.css")
+      @js.native
+      def css: String | PrecompiledCss = js.native
+      @scala.inline
+      def css_=(x: String | PrecompiledCss): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("css")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-spinners/ClockLoader", "default.defaultProps.loading")
+      @js.native
+      def loading: Boolean = js.native
+      @scala.inline
+      def loading_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loading")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-spinners/ClockLoader", "default.defaultProps.size")
+      @js.native
+      def size: LengthType = js.native
+      @scala.inline
+      def size_=(x: LengthType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
-  class default () extends Loader
-  /* static members */
-  @js.native
-  object default extends js.Object {
+  trait Loader
+    extends PureComponent[LoaderSizeProps, js.Object, js.Any] {
     
-    var defaultProps: RequiredLoaderSizeProps = js.native
+    var wrapper: StyleFunction = js.native
   }
 }

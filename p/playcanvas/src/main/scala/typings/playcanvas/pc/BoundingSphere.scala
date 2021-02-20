@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [radius] - The radius of the bounding sphere. Defaults to 0.5.
   */
 @js.native
-trait BoundingSphere extends js.Object {
+trait BoundingSphere extends StObject {
   
   /**
     * Test if a Bounding Sphere is overlapping, enveloping, or inside this Bounding Sphere.

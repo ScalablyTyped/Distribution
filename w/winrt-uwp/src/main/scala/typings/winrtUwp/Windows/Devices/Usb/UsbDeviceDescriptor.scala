@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Derives information from the USB device descriptor of the device. For an explanation of the device descriptor, see Table 9.8 in the Universal Serial Bus Specification. */
 @js.native
-trait UsbDeviceDescriptor extends js.Object {
+trait UsbDeviceDescriptor extends StObject {
   
   /** Gets the bcdDeviceRevision field of the USB device descriptor. The value indicates the revision number defined by the device and is a binary-coded decimal number. */
   var bcdDeviceRevision: Double = js.native
@@ -42,36 +43,24 @@ object UsbDeviceDescriptor {
   }
   
   @scala.inline
-  implicit class UsbDeviceDescriptorOps[Self <: UsbDeviceDescriptor] (val x: Self) extends AnyVal {
+  implicit class UsbDeviceDescriptorMutableBuilder[Self <: UsbDeviceDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBcdDeviceRevision(value: Double): Self = StObject.set(x, "bcdDeviceRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBcdUsb(value: Double): Self = StObject.set(x, "bcdUsb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxPacketSize0(value: Double): Self = StObject.set(x, "maxPacketSize0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBcdDeviceRevision(value: Double): Self = this.set("bcdDeviceRevision", value.asInstanceOf[js.Any])
+    def setNumberOfConfigurations(value: Double): Self = StObject.set(x, "numberOfConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBcdUsb(value: Double): Self = this.set("bcdUsb", value.asInstanceOf[js.Any])
+    def setProductId(value: Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPacketSize0(value: Double): Self = this.set("maxPacketSize0", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfConfigurations(value: Double): Self = this.set("numberOfConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProductId(value: Double): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVendorId(value: Double): Self = this.set("vendorId", value.asInstanceOf[js.Any])
+    def setVendorId(value: Double): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
   }
 }

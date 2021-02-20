@@ -3,6 +3,7 @@ package typings.kiiCloudSdk.KiiCloud
 import typings.kiiCloudSdk.anon.`5`
 import typings.kiiCloudSdk.anon.`6`
 import typings.kiiCloudSdk.anon.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a KiiBucket object
   */
 @js.native
-trait KiiBucket extends js.Object {
+trait KiiBucket extends StObject {
   
   /**
     * Get the ACL handle for this bucket

@@ -1,7 +1,6 @@
 package typings.antvGBase
 
 import typings.antvGBase.anon.X
-import typings.antvGBase.containerMod.Container
 import typings.antvGBase.typesMod.CanvasCfg
 import typings.antvGBase.typesMod.Cursor
 import typings.antvGBase.typesMod.Point
@@ -9,13 +8,18 @@ import typings.antvGBase.typesMod.Renderer
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g-base/lib/abstract/canvas", JSImport.Namespace)
-@js.native
-object canvasMod extends js.Object {
+object canvasMod {
+  
+  @JSImport("@antv/g-base/lib/abstract/canvas", JSImport.Default)
+  @js.native
+  abstract class default protected () extends Canvas {
+    def this(cfg: CanvasCfg) = this()
+  }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.antvGBase.interfacesMod.IObservable because Already inherited
@@ -23,7 +27,8 @@ object canvasMod extends js.Object {
   - typings.antvGBase.interfacesMod.IElement because Already inherited
   - typings.antvGBase.interfacesMod.IContainer because Already inherited
   - typings.antvGBase.interfacesMod.ICanvas because var conflicts: cfg, destroyed. Inlined getRenderer, getCursor, setCursor, changeSize, getPointByEvent, getClientByEvent, getPointByClient, getClientByPoint, draw */ @js.native
-  trait Canvas extends Container {
+  trait Canvas
+    extends typings.antvGBase.containerMod.default {
     
     /**
       * 改变画布大小
@@ -146,10 +151,5 @@ object canvasMod extends js.Object {
       * @param {number} height 高度
       */
     def setDOMSize(width: Double, height: Double): Unit = js.native
-  }
-  
-  @js.native
-  abstract class default protected () extends Canvas {
-    def this(cfg: CanvasCfg) = this()
   }
 }

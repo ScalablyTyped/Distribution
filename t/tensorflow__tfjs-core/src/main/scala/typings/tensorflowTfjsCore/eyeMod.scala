@@ -2,14 +2,15 @@ package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.DataType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/eye", JSImport.Namespace)
-@js.native
-object eyeMod extends js.Object {
+object eyeMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/eye", "eye")
+  @js.native
   val eye: js.Function4[
     /* numRows */ Double, 
     /* numColumns */ js.UndefOr[Double], 

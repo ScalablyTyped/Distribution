@@ -1,11 +1,12 @@
 package typings.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyThumbs extends js.Object {
+trait FancyThumbs extends StObject {
   
   @JSName("$button")
   var $button: js.UndefOr[JQuery] = js.native
@@ -59,69 +60,57 @@ object FancyThumbs {
   }
   
   @scala.inline
-  implicit class FancyThumbsOps[Self <: FancyThumbs] (val x: Self) extends AnyVal {
+  implicit class FancyThumbsMutableBuilder[Self <: FancyThumbs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$button(value: JQuery): Self = StObject.set(x, "$button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$buttonUndefined: Self = StObject.set(x, "$button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$grid(value: JQuery): Self = StObject.set(x, "$grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: () => Unit): Self = this.set("create", js.Any.fromFunction0(value))
+    def set$gridUndefined: Self = StObject.set(x, "$grid", js.undefined)
     
     @scala.inline
-    def setFocus(value: Double => Unit): Self = this.set("focus", js.Any.fromFunction1(value))
+    def set$list(value: JQuery): Self = StObject.set(x, "$list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def set$listUndefined: Self = StObject.set(x, "$list", js.undefined)
     
     @scala.inline
-    def setInit(value: FancyBoxInstance => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInstance(value: FancyBoxInstance): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setFocus(value: Double => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("isVisible", value.asInstanceOf[js.Any])
+    def setInit(value: FancyBoxInstance => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpts(value: FancyThumbsOptions): Self = this.set("opts", value.asInstanceOf[js.Any])
+    def setInstance(value: FancyBoxInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggle(value: () => Unit): Self = this.set("toggle", js.Any.fromFunction0(value))
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+    def setOpts(value: FancyThumbsOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$button(value: JQuery): Self = this.set("$button", value.asInstanceOf[js.Any])
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def delete$button: Self = this.set("$button", js.undefined)
+    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set$grid(value: JQuery): Self = this.set("$grid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$grid: Self = this.set("$grid", js.undefined)
-    
-    @scala.inline
-    def set$list(value: JQuery): Self = this.set("$list", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$list: Self = this.set("$list", js.undefined)
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

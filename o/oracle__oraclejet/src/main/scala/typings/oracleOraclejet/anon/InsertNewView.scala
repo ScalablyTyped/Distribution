@@ -1,12 +1,13 @@
 package typings.oracleOraclejet.anon
 
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertNewView extends js.Object {
+trait InsertNewView extends StObject {
   
   def insertNewView(): js.UndefOr[scala.Nothing] = js.native
   
@@ -45,48 +46,36 @@ object InsertNewView {
   }
   
   @scala.inline
-  implicit class InsertNewViewOps[Self <: InsertNewView] (val x: Self) extends AnyVal {
+  implicit class InsertNewViewMutableBuilder[Self <: InsertNewView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsertNewView(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "insertNewView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsInitial(value: Boolean): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewViewModel(value: js.Object): Self = StObject.set(x, "newViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertNewView(value: () => js.UndefOr[scala.Nothing]): Self = this.set("insertNewView", js.Any.fromFunction0(value))
+    def setNewViewParent(value: Node): Self = StObject.set(x, "newViewParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInitial(value: Boolean): Self = this.set("isInitial", value.asInstanceOf[js.Any])
+    def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewViewModel(value: js.Object): Self = this.set("newViewModel", value.asInstanceOf[js.Any])
+    def setOldDomNodes(value: js.Array[_]): Self = StObject.set(x, "oldDomNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewViewParent(value: Node): Self = this.set("newViewParent", value.asInstanceOf[js.Any])
+    def setOldDomNodesVarargs(value: js.Any*): Self = StObject.set(x, "oldDomNodes", js.Array(value :_*))
     
     @scala.inline
-    def setNode(value: Node): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setOldViewModel(value: js.Object): Self = StObject.set(x, "oldViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldDomNodesVarargs(value: js.Any*): Self = this.set("oldDomNodes", js.Array(value :_*))
+    def setOldViewParent(value: Node): Self = StObject.set(x, "oldViewParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldDomNodes(value: js.Array[_]): Self = this.set("oldDomNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldViewModel(value: js.Object): Self = this.set("oldViewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldViewParent(value: Node): Self = this.set("oldViewParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveOldView(value: () => js.UndefOr[scala.Nothing]): Self = this.set("removeOldView", js.Any.fromFunction0(value))
+    def setRemoveOldView(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "removeOldView", js.Any.fromFunction0(value))
   }
 }

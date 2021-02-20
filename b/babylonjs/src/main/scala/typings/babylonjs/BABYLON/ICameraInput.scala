@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICameraInput[TCamera /* <: Camera */] extends js.Object {
+trait ICameraInput[TCamera /* <: Camera */] extends StObject {
   
   /**
     * Attach the input controls to a specific dom element to get the input from.

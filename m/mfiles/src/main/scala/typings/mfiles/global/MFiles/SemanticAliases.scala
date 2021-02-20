@@ -1,14 +1,12 @@
 package typings.mfiles.global.MFiles
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.mfiles.ISemanticAliases
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.SemanticAliases")
 @js.native
 class SemanticAliases () extends ISemanticAliases
-@JSGlobal("MFiles.SemanticAliases")
-@js.native
-object SemanticAliases extends Instantiable0[ISemanticAliases]

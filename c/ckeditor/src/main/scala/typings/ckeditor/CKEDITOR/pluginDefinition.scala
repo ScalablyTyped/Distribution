@@ -1,11 +1,12 @@
 package typings.ckeditor.CKEDITOR
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait pluginDefinition extends js.Object {
+trait pluginDefinition extends StObject {
   
   var afterInit: js.UndefOr[js.Function1[/* editor */ editor, _]] = js.native
   
@@ -30,66 +31,54 @@ object pluginDefinition {
   }
   
   @scala.inline
-  implicit class pluginDefinitionOps[Self <: pluginDefinition] (val x: Self) extends AnyVal {
+  implicit class pluginDefinitionMutableBuilder[Self <: pluginDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterInit(value: /* editor */ editor => _): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeInit(value: /* editor */ editor => _): Self = StObject.set(x, "beforeInit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterInit(value: /* editor */ editor => _): Self = this.set("afterInit", js.Any.fromFunction1(value))
+    def setBeforeInitUndefined: Self = StObject.set(x, "beforeInit", js.undefined)
     
     @scala.inline
-    def deleteAfterInit: Self = this.set("afterInit", js.undefined)
+    def setHidpi(value: Boolean): Self = StObject.set(x, "hidpi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeInit(value: /* editor */ editor => _): Self = this.set("beforeInit", js.Any.fromFunction1(value))
+    def setHidpiUndefined: Self = StObject.set(x, "hidpi", js.undefined)
     
     @scala.inline
-    def deleteBeforeInit: Self = this.set("beforeInit", js.undefined)
+    def setInit(value: /* editor */ editor => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHidpi(value: Boolean): Self = this.set("hidpi", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteHidpi: Self = this.set("hidpi", js.undefined)
+    def setLang(value: String | js.Array[String]): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: /* editor */ editor => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setLangVarargs(value: String*): Self = StObject.set(x, "lang", js.Array(value :_*))
     
     @scala.inline
-    def setLangVarargs(value: String*): Self = this.set("lang", js.Array(value :_*))
+    def setOnLoad(value: () => _): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLang(value: String | js.Array[String]): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setRequires(value: String | js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoad(value: () => _): Self = this.set("onLoad", js.Any.fromFunction0(value))
+    def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
     
     @scala.inline
-    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
-    
-    @scala.inline
-    def setRequiresVarargs(value: String*): Self = this.set("requires", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequires(value: String | js.Array[String]): Self = this.set("requires", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequires: Self = this.set("requires", js.undefined)
+    def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
   }
 }

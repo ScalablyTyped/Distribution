@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikEngineapi.qlikEngineapiStrings.PRIMARY_KEY
   - typings.qlikEngineapi.qlikEngineapiStrings.PERFECT_KEY
 */
-trait TableRecordKeyType extends js.Object
+trait TableRecordKeyType extends StObject
 object TableRecordKeyType {
   
   @scala.inline

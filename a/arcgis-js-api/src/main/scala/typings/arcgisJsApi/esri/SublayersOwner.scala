@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SublayersOwner extends js.Object {
+trait SublayersOwner extends StObject {
   
   /**
     * Returns a deep clone of a map service's [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) as defined by the service.
@@ -30,24 +31,12 @@ object SublayersOwner {
   }
   
   @scala.inline
-  implicit class SublayersOwnerOps[Self <: SublayersOwner] (val x: Self) extends AnyVal {
+  implicit class SublayersOwnerMutableBuilder[Self <: SublayersOwner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateServiceSublayers(value: () => Collection[Sublayer]): Self = StObject.set(x, "createServiceSublayers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateServiceSublayers(value: () => Collection[Sublayer]): Self = this.set("createServiceSublayers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFindSublayerById(value: Double => Sublayer): Self = this.set("findSublayerById", js.Any.fromFunction1(value))
+    def setFindSublayerById(value: Double => Sublayer): Self = StObject.set(x, "findSublayerById", js.Any.fromFunction1(value))
   }
 }

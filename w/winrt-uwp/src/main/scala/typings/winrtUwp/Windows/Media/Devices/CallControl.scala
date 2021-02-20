@@ -8,13 +8,14 @@ import typings.winrtUwp.winrtUwpStrings.dialrequested
 import typings.winrtUwp.winrtUwpStrings.hanguprequested
 import typings.winrtUwp.winrtUwpStrings.keypadpressed
 import typings.winrtUwp.winrtUwpStrings.redialrequested
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the properties, commands and events for handling calls on a telephony related device. */
 @js.native
-trait CallControl extends js.Object {
+trait CallControl extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

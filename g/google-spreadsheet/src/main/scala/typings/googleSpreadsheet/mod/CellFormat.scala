@@ -1,11 +1,12 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellFormat extends js.Object {
+trait CellFormat extends StObject {
   
   /**
     * @description
@@ -96,51 +97,39 @@ object CellFormat {
   }
   
   @scala.inline
-  implicit class CellFormatOps[Self <: CellFormat] (val x: Self) extends AnyVal {
+  implicit class CellFormatMutableBuilder[Self <: CellFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorders(value: Borders): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHorizontalAlignment(value: HorizontalAlign): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setHyperlinkDisplayType(value: HyperlinkDisplayType): Self = StObject.set(x, "hyperlinkDisplayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorders(value: Borders): Self = this.set("borders", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: NumberFormat): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlignment(value: HorizontalAlign): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlinkDisplayType(value: HyperlinkDisplayType): Self = this.set("hyperlinkDisplayType", value.asInstanceOf[js.Any])
+    def setTextDirection(value: TextDirection): Self = StObject.set(x, "textDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormat(value: NumberFormat): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    def setTextFormat(value: TextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Padding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setTextRotation(value: TextRotation): Self = StObject.set(x, "textRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDirection(value: TextDirection): Self = this.set("textDirection", value.asInstanceOf[js.Any])
+    def setVerticalAlignment(value: VerticalAlign): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextFormat(value: TextFormat): Self = this.set("textFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextRotation(value: TextRotation): Self = this.set("textRotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalAlignment(value: VerticalAlign): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrapStrategy(value: WrapStrategy): Self = this.set("wrapStrategy", value.asInstanceOf[js.Any])
+    def setWrapStrategy(value: WrapStrategy): Self = StObject.set(x, "wrapStrategy", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.fortawesomeFontawesomeSvgCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`9x`
   - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`10x`
 */
-trait SizeProp extends js.Object
+trait SizeProp extends StObject
 object SizeProp {
   
   @scala.inline

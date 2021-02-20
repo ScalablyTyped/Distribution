@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFilterResponse extends js.Object {
+trait CreateFilterResponse extends StObject {
   
   /**
     * The ARN of the new filter.
@@ -21,24 +22,12 @@ object CreateFilterResponse {
   }
   
   @scala.inline
-  implicit class CreateFilterResponseOps[Self <: CreateFilterResponse] (val x: Self) extends AnyVal {
+  implicit class CreateFilterResponseMutableBuilder[Self <: CreateFilterResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilterArn(value: Arn): Self = this.set("filterArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterArn: Self = this.set("filterArn", js.undefined)
+    def setFilterArnUndefined: Self = StObject.set(x, "filterArn", js.undefined)
   }
 }

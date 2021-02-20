@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientReceiptGetRequest extends js.Object {
+trait IClientReceiptGetRequest extends StObject {
   
   /** ClientReceiptGetRequest transactionIds */
   var transactionIds: js.UndefOr[js.Array[String] | Null] = js.native
@@ -19,30 +20,18 @@ object IClientReceiptGetRequest {
   }
   
   @scala.inline
-  implicit class IClientReceiptGetRequestOps[Self <: IClientReceiptGetRequest] (val x: Self) extends AnyVal {
+  implicit class IClientReceiptGetRequestMutableBuilder[Self <: IClientReceiptGetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTransactionIds(value: js.Array[String]): Self = StObject.set(x, "transactionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransactionIdsNull: Self = StObject.set(x, "transactionIds", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransactionIdsUndefined: Self = StObject.set(x, "transactionIds", js.undefined)
     
     @scala.inline
-    def setTransactionIdsVarargs(value: String*): Self = this.set("transactionIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransactionIds(value: js.Array[String]): Self = this.set("transactionIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionIds: Self = this.set("transactionIds", js.undefined)
-    
-    @scala.inline
-    def setTransactionIdsNull: Self = this.set("transactionIds", null)
+    def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value :_*))
   }
 }

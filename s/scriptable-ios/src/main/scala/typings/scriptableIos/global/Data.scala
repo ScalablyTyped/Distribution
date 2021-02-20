@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Data ()
   extends typings.scriptableIos.Data
-/* static members */
-@JSGlobal("Data")
-@js.native
-object Data extends js.Object {
+object Data {
   
   /**
     * _Creates data from base64 encoded string._
@@ -24,6 +22,9 @@ object Data extends js.Object {
     * @param base64String - Base64 encoded string to create data from.
     * @see https://docs.scriptable.app/data/#frombase64string
     */
+  /* static member */
+  @JSGlobal("Data.fromBase64String")
+  @js.native
   def fromBase64String(base64String: String): typings.scriptableIos.Data = js.native
   
   /**
@@ -33,6 +34,9 @@ object Data extends js.Object {
     * @param filePath - Path of file to read data from.
     * @see https://docs.scriptable.app/data/#fromfile
     */
+  /* static member */
+  @JSGlobal("Data.fromFile")
+  @js.native
   def fromFile(filePath: String): typings.scriptableIos.Data = js.native
   
   /**
@@ -40,6 +44,9 @@ object Data extends js.Object {
     * @param image - JPEG image to convert to data.
     * @see https://docs.scriptable.app/data/#fromjpeg
     */
+  /* static member */
+  @JSGlobal("Data.fromJPEG")
+  @js.native
   def fromJPEG(image: typings.scriptableIos.Image): typings.scriptableIos.Data = js.native
   
   /**
@@ -47,6 +54,9 @@ object Data extends js.Object {
     * @param image - PNG image to convert to data.
     * @see https://docs.scriptable.app/data/#frompng
     */
+  /* static member */
+  @JSGlobal("Data.fromPNG")
+  @js.native
   def fromPNG(image: typings.scriptableIos.Image): typings.scriptableIos.Data = js.native
   
   /**
@@ -56,5 +66,8 @@ object Data extends js.Object {
     * @param string - String to create data from.
     * @see https://docs.scriptable.app/data/#fromstring
     */
+  /* static member */
+  @JSGlobal("Data.fromString")
+  @js.native
   def fromString(string: String): typings.scriptableIos.Data = js.native
 }

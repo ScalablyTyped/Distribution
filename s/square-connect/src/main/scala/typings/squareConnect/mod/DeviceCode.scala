@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "DeviceCode")
 @js.native
-class DeviceCode () extends js.Object {
+class DeviceCode () extends StObject {
   
   /**
     * The unique code that can be used to login.

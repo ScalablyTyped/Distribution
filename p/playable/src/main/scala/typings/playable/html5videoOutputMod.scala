@@ -8,13 +8,37 @@ import typings.playable.playbackEngineTypesMod.IVideoOutput
 import typings.playable.playbackEngineTypesMod.PlayableMediaSource
 import typings.playable.playbackEngineTypesMod.PreloadType
 import typings.std.TimeRanges
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/playback-engine/output/native/html5video-output", JSImport.Namespace)
-@js.native
-object html5videoOutputMod extends js.Object {
+object html5videoOutputMod {
+  
+  @JSImport("playable/dist/src/modules/playback-engine/output/native/html5video-output", JSImport.Default)
+  @js.native
+  class default protected () extends NativeOutput {
+    def this(hasEventEmitterConfigAvailablePlaybackAdapters: AvailablePlaybackAdapters) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("playable/dist/src/modules/playback-engine/output/native/html5video-output", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("playable/dist/src/modules/playback-engine/output/native/html5video-output", "default.dependencies")
+    @js.native
+    def dependencies: js.Array[String] = js.native
+    @scala.inline
+    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    
+    @JSImport("playable/dist/src/modules/playback-engine/output/native/html5video-output", "default.moduleName")
+    @js.native
+    def moduleName: String = js.native
+    @scala.inline
+    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait NativeOutput extends IVideoOutput {
@@ -119,18 +143,5 @@ object html5videoOutputMod extends js.Object {
     
     @JSName("volume")
     def volume_MNativeOutput: Double = js.native
-  }
-  
-  @js.native
-  class default protected () extends NativeOutput {
-    def this(hasEventEmitterConfigAvailablePlaybackAdapters: AvailablePlaybackAdapters) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var dependencies: js.Array[String] = js.native
-    
-    var moduleName: String = js.native
   }
 }

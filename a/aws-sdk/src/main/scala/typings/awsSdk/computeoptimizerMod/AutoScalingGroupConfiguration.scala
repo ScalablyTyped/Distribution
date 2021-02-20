@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoScalingGroupConfiguration extends js.Object {
+trait AutoScalingGroupConfiguration extends StObject {
   
   /**
     * The desired capacity, or number of instances, for the Auto Scaling group.
@@ -36,42 +37,30 @@ object AutoScalingGroupConfiguration {
   }
   
   @scala.inline
-  implicit class AutoScalingGroupConfigurationOps[Self <: AutoScalingGroupConfiguration] (val x: Self) extends AnyVal {
+  implicit class AutoScalingGroupConfigurationMutableBuilder[Self <: AutoScalingGroupConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredCapacity(value: DesiredCapacity): Self = StObject.set(x, "desiredCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredCapacityUndefined: Self = StObject.set(x, "desiredCapacity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceType(value: InstanceType): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredCapacity(value: DesiredCapacity): Self = this.set("desiredCapacity", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
     @scala.inline
-    def deleteDesiredCapacity: Self = this.set("desiredCapacity", js.undefined)
+    def setMaxSize(value: MaxSize): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: InstanceType): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    def setMinSize(value: MinSize): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: MaxSize): Self = this.set("maxSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
-    
-    @scala.inline
-    def setMinSize(value: MinSize): Self = this.set("minSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
   }
 }

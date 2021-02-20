@@ -1,11 +1,12 @@
 package typings.clearbladejsClient.CbClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Analytics extends js.Object {
+trait Analytics extends StObject {
   
   var URI: String = js.native
   
@@ -44,45 +45,33 @@ object Analytics {
   }
   
   @scala.inline
-  implicit class AnalyticsOps[Self <: Analytics] (val x: Self) extends AnyVal {
+  implicit class AnalyticsMutableBuilder[Self <: Analytics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCount(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getCount", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEventList(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getEventList", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEventTotals(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getEventTotals", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setURI(value: String): Self = this.set("URI", value.asInstanceOf[js.Any])
+    def setGetStorage(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getStorage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCount(value: (QueryFilter, CbCallback) => Unit): Self = this.set("getCount", js.Any.fromFunction2(value))
+    def setGetUserEvents(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getUserEvents", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetEventList(value: (QueryFilter, CbCallback) => Unit): Self = this.set("getEventList", js.Any.fromFunction2(value))
+    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetEventTotals(value: (QueryFilter, CbCallback) => Unit): Self = this.set("getEventTotals", js.Any.fromFunction2(value))
+    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStorage(value: (QueryFilter, CbCallback) => Unit): Self = this.set("getStorage", js.Any.fromFunction2(value))
+    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetUserEvents(value: (QueryFilter, CbCallback) => Unit): Self = this.set("getUserEvents", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSystemKey(value: String): Self = this.set("systemKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemSecret(value: String): Self = this.set("systemSecret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: APIUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

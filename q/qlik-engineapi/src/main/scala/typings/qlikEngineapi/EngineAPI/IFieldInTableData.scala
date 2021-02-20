@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * FieldInTableData...
   */
 @js.native
-trait IFieldInTableData extends js.Object {
+trait IFieldInTableData extends StObject {
   
   /**
     * Comment related to the field.
@@ -125,75 +126,63 @@ object IFieldInTableData {
   }
   
   @scala.inline
-  implicit class IFieldInTableDataOps[Self <: IFieldInTableData] (val x: Self) extends AnyVal {
+  implicit class IFieldInTableDataMutableBuilder[Self <: IFieldInTableData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQComment(value: String): Self = StObject.set(x, "qComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDerivedFields(value: IDerivedFieldsInTableData): Self = StObject.set(x, "qDerivedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQHasDuplicates(value: Boolean): Self = StObject.set(x, "qHasDuplicates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQComment(value: String): Self = this.set("qComment", value.asInstanceOf[js.Any])
+    def setQHasNull(value: Boolean): Self = StObject.set(x, "qHasNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDerivedFields(value: IDerivedFieldsInTableData): Self = this.set("qDerivedFields", value.asInstanceOf[js.Any])
+    def setQHasWild(value: Boolean): Self = StObject.set(x, "qHasWild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHasDuplicates(value: Boolean): Self = this.set("qHasDuplicates", value.asInstanceOf[js.Any])
+    def setQInformationDensity(value: Double): Self = StObject.set(x, "qInformationDensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHasNull(value: Boolean): Self = this.set("qHasNull", value.asInstanceOf[js.Any])
+    def setQIsSynthetic(value: Boolean): Self = StObject.set(x, "qIsSynthetic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHasWild(value: Boolean): Self = this.set("qHasWild", value.asInstanceOf[js.Any])
+    def setQKeyType(value: TableRecordKeyType): Self = StObject.set(x, "qKeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQInformationDensity(value: Double): Self = this.set("qInformationDensity", value.asInstanceOf[js.Any])
+    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsSynthetic(value: Boolean): Self = this.set("qIsSynthetic", value.asInstanceOf[js.Any])
+    def setQOriginalFields(value: js.Array[String]): Self = StObject.set(x, "qOriginalFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQKeyType(value: TableRecordKeyType): Self = this.set("qKeyType", value.asInstanceOf[js.Any])
+    def setQOriginalFieldsVarargs(value: String*): Self = StObject.set(x, "qOriginalFields", js.Array(value :_*))
     
     @scala.inline
-    def setQName(value: String): Self = this.set("qName", value.asInstanceOf[js.Any])
+    def setQPresent(value: Boolean): Self = StObject.set(x, "qPresent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQOriginalFieldsVarargs(value: String*): Self = this.set("qOriginalFields", js.Array(value :_*))
+    def setQSubsetRatio(value: Double): Self = StObject.set(x, "qSubsetRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQOriginalFields(value: js.Array[String]): Self = this.set("qOriginalFields", value.asInstanceOf[js.Any])
+    def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQPresent(value: Boolean): Self = this.set("qPresent", value.asInstanceOf[js.Any])
+    def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
     
     @scala.inline
-    def setQSubsetRatio(value: Double): Self = this.set("qSubsetRatio", value.asInstanceOf[js.Any])
+    def setQnNonNulls(value: Double): Self = StObject.set(x, "qnNonNulls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQTagsVarargs(value: String*): Self = this.set("qTags", js.Array(value :_*))
+    def setQnPresentDistinctValues(value: Double): Self = StObject.set(x, "qnPresentDistinctValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQTags(value: js.Array[String]): Self = this.set("qTags", value.asInstanceOf[js.Any])
+    def setQnRows(value: Double): Self = StObject.set(x, "qnRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQnNonNulls(value: Double): Self = this.set("qnNonNulls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQnPresentDistinctValues(value: Double): Self = this.set("qnPresentDistinctValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQnRows(value: Double): Self = this.set("qnRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQnTotalDistinctValues(value: Double): Self = this.set("qnTotalDistinctValues", value.asInstanceOf[js.Any])
+    def setQnTotalDistinctValues(value: Double): Self = StObject.set(x, "qnTotalDistinctValues", value.asInstanceOf[js.Any])
   }
 }

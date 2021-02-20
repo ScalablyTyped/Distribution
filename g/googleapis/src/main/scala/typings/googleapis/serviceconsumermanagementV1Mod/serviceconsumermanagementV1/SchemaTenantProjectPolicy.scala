@@ -1,5 +1,6 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * project.
   */
 @js.native
-trait SchemaTenantProjectPolicy extends js.Object {
+trait SchemaTenantProjectPolicy extends StObject {
   
   /**
     * Policy bindings to be applied to the tenant project, in addition to the
@@ -29,27 +30,15 @@ object SchemaTenantProjectPolicy {
   }
   
   @scala.inline
-  implicit class SchemaTenantProjectPolicyOps[Self <: SchemaTenantProjectPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaTenantProjectPolicyMutableBuilder[Self <: SchemaTenantProjectPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyBindings(value: js.Array[SchemaPolicyBinding]): Self = StObject.set(x, "policyBindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyBindingsUndefined: Self = StObject.set(x, "policyBindings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyBindingsVarargs(value: SchemaPolicyBinding*): Self = this.set("policyBindings", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicyBindings(value: js.Array[SchemaPolicyBinding]): Self = this.set("policyBindings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyBindings: Self = this.set("policyBindings", js.undefined)
+    def setPolicyBindingsVarargs(value: SchemaPolicyBinding*): Self = StObject.set(x, "policyBindings", js.Array(value :_*))
   }
 }

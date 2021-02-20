@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoCodecSettings extends js.Object {
+trait VideoCodecSettings extends StObject {
   
   var FrameCaptureSettings: js.UndefOr[typings.awsSdk.medialiveMod.FrameCaptureSettings] = js.native
   
@@ -24,42 +25,30 @@ object VideoCodecSettings {
   }
   
   @scala.inline
-  implicit class VideoCodecSettingsOps[Self <: VideoCodecSettings] (val x: Self) extends AnyVal {
+  implicit class VideoCodecSettingsMutableBuilder[Self <: VideoCodecSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameCaptureSettings(value: FrameCaptureSettings): Self = StObject.set(x, "FrameCaptureSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameCaptureSettingsUndefined: Self = StObject.set(x, "FrameCaptureSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setH264Settings(value: H264Settings): Self = StObject.set(x, "H264Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameCaptureSettings(value: FrameCaptureSettings): Self = this.set("FrameCaptureSettings", value.asInstanceOf[js.Any])
+    def setH264SettingsUndefined: Self = StObject.set(x, "H264Settings", js.undefined)
     
     @scala.inline
-    def deleteFrameCaptureSettings: Self = this.set("FrameCaptureSettings", js.undefined)
+    def setH265Settings(value: H265Settings): Self = StObject.set(x, "H265Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH264Settings(value: H264Settings): Self = this.set("H264Settings", value.asInstanceOf[js.Any])
+    def setH265SettingsUndefined: Self = StObject.set(x, "H265Settings", js.undefined)
     
     @scala.inline
-    def deleteH264Settings: Self = this.set("H264Settings", js.undefined)
+    def setMpeg2Settings(value: Mpeg2Settings): Self = StObject.set(x, "Mpeg2Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH265Settings(value: H265Settings): Self = this.set("H265Settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteH265Settings: Self = this.set("H265Settings", js.undefined)
-    
-    @scala.inline
-    def setMpeg2Settings(value: Mpeg2Settings): Self = this.set("Mpeg2Settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMpeg2Settings: Self = this.set("Mpeg2Settings", js.undefined)
+    def setMpeg2SettingsUndefined: Self = StObject.set(x, "Mpeg2Settings", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a group of Contact objects and server search status. */
 @js.native
-trait ContactBatch extends js.Object {
+trait ContactBatch extends StObject {
   
   /** Gets the list of Contact objects returned by a search operation. */
   var contacts: IVectorView[Contact] = js.native
@@ -24,24 +25,12 @@ object ContactBatch {
   }
   
   @scala.inline
-  implicit class ContactBatchOps[Self <: ContactBatch] (val x: Self) extends AnyVal {
+  implicit class ContactBatchMutableBuilder[Self <: ContactBatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContacts(value: IVectorView[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContacts(value: IVectorView[Contact]): Self = this.set("contacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: ContactBatchStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: ContactBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

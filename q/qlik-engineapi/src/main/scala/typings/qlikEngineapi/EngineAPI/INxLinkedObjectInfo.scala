@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxLinkedObjectInfo...
   */
 @js.native
-trait INxLinkedObjectInfo extends js.Object {
+trait INxLinkedObjectInfo extends StObject {
   
   /**
     * Information about the linked object.
@@ -32,24 +33,12 @@ object INxLinkedObjectInfo {
   }
   
   @scala.inline
-  implicit class INxLinkedObjectInfoOps[Self <: INxLinkedObjectInfo] (val x: Self) extends AnyVal {
+  implicit class INxLinkedObjectInfoMutableBuilder[Self <: INxLinkedObjectInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQInfo(value: INxInfo): Self = this.set("qInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQRootId(value: String): Self = this.set("qRootId", value.asInstanceOf[js.Any])
+    def setQRootId(value: String): Self = StObject.set(x, "qRootId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.pulumiPulumi.automationStackMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestroyResult extends js.Object {
+trait DestroyResult extends StObject {
   
   var stderr: String = js.native
   
@@ -22,27 +23,15 @@ object DestroyResult {
   }
   
   @scala.inline
-  implicit class DestroyResultOps[Self <: DestroyResult] (val x: Self) extends AnyVal {
+  implicit class DestroyResultMutableBuilder[Self <: DestroyResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStderr(value: String): Self = this.set("stderr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStdout(value: String): Self = this.set("stdout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummary(value: UpdateSummary): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setSummary(value: UpdateSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

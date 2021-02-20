@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tree extends js.Object {
+trait Tree extends StObject {
   
   var none: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object Tree {
   }
   
   @scala.inline
-  implicit class TreeOps[Self <: Tree] (val x: Self) extends AnyVal {
+  implicit class TreeMutableBuilder[Self <: Tree] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTree(value: scala.Double): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkItem(value: scala.Double): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setWorkItemLink(value: scala.Double): Self = StObject.set(x, "workItemLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTree(value: scala.Double): Self = this.set("tree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItem(value: scala.Double): Self = this.set("workItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemLink(value: scala.Double): Self = this.set("workItemLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemTypeExtension(value: scala.Double): Self = this.set("workItemTypeExtension", value.asInstanceOf[js.Any])
+    def setWorkItemTypeExtension(value: scala.Double): Self = StObject.set(x, "workItemTypeExtension", value.asInstanceOf[js.Any])
   }
 }

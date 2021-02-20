@@ -2,13 +2,14 @@ package typings.tuyaPanelKit.anon
 
 import typings.tuyaPanelKit.routersTypesMod.PartialRoute
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  stale :true | undefined,   routes :std.Array<tuya-panel-kit.tuya-panel-kit/@react-navigation/core.PartialRoute<tuya-panel-kit.tuya-panel-kit/@react-navigation/core.Route<string, object | undefined>>>}> */
 @js.native
-trait Readonlystaletrueundefine extends js.Object {
+trait Readonlystaletrueundefine extends StObject {
   
   val routes: js.Array[
     PartialRoute[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]
@@ -29,34 +30,22 @@ object Readonlystaletrueundefine {
   }
   
   @scala.inline
-  implicit class ReadonlystaletrueundefineOps[Self <: Readonlystaletrueundefine] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRoutesVarargs(value: (PartialRoute[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]])*): Self = this.set("routes", js.Array(value :_*))
+  implicit class ReadonlystaletrueundefineMutableBuilder[Self <: Readonlystaletrueundefine] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setRoutes(
       value: js.Array[
           PartialRoute[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]
         ]
-    ): Self = this.set("routes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStale(value: `true`): Self = this.set("stale", value.asInstanceOf[js.Any])
+    def setRoutesVarargs(value: (PartialRoute[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]])*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
     @scala.inline
-    def deleteStale: Self = this.set("stale", js.undefined)
+    def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.std.stdStrings.error
 import typings.std.stdStrings.update
 import typings.std.stdStrings.updateend
 import typings.std.stdStrings.updatestart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

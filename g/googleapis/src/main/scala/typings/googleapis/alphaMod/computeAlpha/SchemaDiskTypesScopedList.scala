@@ -1,12 +1,13 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import typings.googleapis.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDiskTypesScopedList extends js.Object {
+trait SchemaDiskTypesScopedList extends StObject {
   
   /**
     * [Output Only] A list of disk types contained in this scope.
@@ -28,33 +29,21 @@ object SchemaDiskTypesScopedList {
   }
   
   @scala.inline
-  implicit class SchemaDiskTypesScopedListOps[Self <: SchemaDiskTypesScopedList] (val x: Self) extends AnyVal {
+  implicit class SchemaDiskTypesScopedListMutableBuilder[Self <: SchemaDiskTypesScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiskTypes(value: js.Array[SchemaDiskType]): Self = StObject.set(x, "diskTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiskTypesUndefined: Self = StObject.set(x, "diskTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiskTypesVarargs(value: SchemaDiskType*): Self = StObject.set(x, "diskTypes", js.Array(value :_*))
     
     @scala.inline
-    def setDiskTypesVarargs(value: SchemaDiskType*): Self = this.set("diskTypes", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskTypes(value: js.Array[SchemaDiskType]): Self = this.set("diskTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiskTypes: Self = this.set("diskTypes", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataBarBorder extends js.Object {
+trait DataBarBorder extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -37,36 +38,24 @@ object DataBarBorder {
   }
   
   @scala.inline
-  implicit class DataBarBorderOps[Self <: DataBarBorder] (val x: Self) extends AnyVal {
+  implicit class DataBarBorderMutableBuilder[Self <: DataBarBorder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: FormatColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotDataBarBorder_typekey(value: DataBarBorder): Self = StObject.set(x, "Excel.DataBarBorder_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: FormatColor): Self = this.set("Color", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExcelDotDataBarBorder_typekey(value: DataBarBorder): Self = this.set("Excel.DataBarBorder_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: XlDataBarBorderType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: XlDataBarBorderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,15 @@
 package typings.sharepoint.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContextualColor extends js.Object
+sealed trait ContextualColor extends StObject
 @JSGlobal("CUI.ContextualColor")
 @js.native
-object ContextualColor extends js.Object {
+object ContextualColor extends StObject {
   
   @js.native
   sealed trait darkBlue extends ContextualColor

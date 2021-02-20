@@ -1,11 +1,12 @@
 package typings.braintreeWeb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowNewBrowserTab extends js.Object {
+trait AllowNewBrowserTab extends StObject {
   
   var allowNewBrowserTab: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object AllowNewBrowserTab {
   }
   
   @scala.inline
-  implicit class AllowNewBrowserTabOps[Self <: AllowNewBrowserTab] (val x: Self) extends AnyVal {
+  implicit class AllowNewBrowserTabMutableBuilder[Self <: AllowNewBrowserTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNewBrowserTab(value: Boolean): Self = StObject.set(x, "allowNewBrowserTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowNewBrowserTabUndefined: Self = StObject.set(x, "allowNewBrowserTab", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowNewBrowserTab(value: Boolean): Self = this.set("allowNewBrowserTab", value.asInstanceOf[js.Any])
+    def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
     
     @scala.inline
-    def deleteAllowNewBrowserTab: Self = this.set("allowNewBrowserTab", js.undefined)
+    def setClient(value: typings.braintreeWeb.clientMod.Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorization(value: String): Self = this.set("authorization", value.asInstanceOf[js.Any])
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def deleteAuthorization: Self = this.set("authorization", js.undefined)
+    def setDeepLinkReturnUrl(value: String): Self = StObject.set(x, "deepLinkReturnUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: typings.braintreeWeb.clientMod.Client): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setDeepLinkReturnUrlUndefined: Self = StObject.set(x, "deepLinkReturnUrl", js.undefined)
     
     @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
+    def setIgnoreHistoryChanges(value: Boolean): Self = StObject.set(x, "ignoreHistoryChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepLinkReturnUrl(value: String): Self = this.set("deepLinkReturnUrl", value.asInstanceOf[js.Any])
+    def setIgnoreHistoryChangesUndefined: Self = StObject.set(x, "ignoreHistoryChanges", js.undefined)
     
     @scala.inline
-    def deleteDeepLinkReturnUrl: Self = this.set("deepLinkReturnUrl", js.undefined)
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreHistoryChanges(value: Boolean): Self = this.set("ignoreHistoryChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreHistoryChanges: Self = this.set("ignoreHistoryChanges", js.undefined)
-    
-    @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
   }
 }

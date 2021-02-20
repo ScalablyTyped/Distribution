@@ -1,108 +1,316 @@
 package typings.lodashEs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-es/object.default", JSImport.Namespace)
-@js.native
-object objectDefaultMod extends js.Object {
+object objectDefaultMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var assign: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assign */ js.Any = js.native
+    @JSImport("lodash-es/object.default", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var assignIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assignIn */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.assign")
+    @js.native
+    def assign: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assign */ js.Any = js.native
     
-    var assignInWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assignInWith */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.assignIn")
+    @js.native
+    def assignIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assignIn */ js.Any = js.native
     
-    var assignWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assignWith */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.assignInWith")
+    @js.native
+    def assignInWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assignInWith */ js.Any = js.native
+    @scala.inline
+    def assignInWith_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assignInWith */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assignInWith")(x.asInstanceOf[js.Any])
     
-    var at: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof at */ js.Any = js.native
+    @scala.inline
+    def assignIn_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assignIn */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assignIn")(x.asInstanceOf[js.Any])
     
-    var create: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof create */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.assignWith")
+    @js.native
+    def assignWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assignWith */ js.Any = js.native
+    @scala.inline
+    def assignWith_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assignWith */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assignWith")(x.asInstanceOf[js.Any])
     
-    var defaults: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof defaults */ js.Any = js.native
+    @scala.inline
+    def assign_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assign */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assign")(x.asInstanceOf[js.Any])
     
-    var defaultsDeep: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof defaultsDeep */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.at")
+    @js.native
+    def at: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof at */ js.Any = js.native
+    @scala.inline
+    def at_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof at */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("at")(x.asInstanceOf[js.Any])
     
-    var entries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof entries */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.create")
+    @js.native
+    def create: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof create */ js.Any = js.native
+    @scala.inline
+    def create_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof create */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
     
-    var entriesIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof entriesIn */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.defaults")
+    @js.native
+    def defaults: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof defaults */ js.Any = js.native
     
-    var extend: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof extend */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.defaultsDeep")
+    @js.native
+    def defaultsDeep: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof defaultsDeep */ js.Any = js.native
+    @scala.inline
+    def defaultsDeep_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof defaultsDeep */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultsDeep")(x.asInstanceOf[js.Any])
     
-    var extendWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof extendWith */ js.Any = js.native
+    @scala.inline
+    def defaults_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof defaults */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
     
-    var findKey: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof findKey */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.entries")
+    @js.native
+    def entries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof entries */ js.Any = js.native
     
-    var findLastKey: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof findLastKey */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.entriesIn")
+    @js.native
+    def entriesIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof entriesIn */ js.Any = js.native
+    @scala.inline
+    def entriesIn_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof entriesIn */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entriesIn")(x.asInstanceOf[js.Any])
     
-    var forIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forIn */ js.Any = js.native
+    @scala.inline
+    def entries_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof entries */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entries")(x.asInstanceOf[js.Any])
     
-    var forInRight: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forInRight */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.extend")
+    @js.native
+    def extend: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof extend */ js.Any = js.native
     
-    var forOwn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forOwn */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.extendWith")
+    @js.native
+    def extendWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof extendWith */ js.Any = js.native
+    @scala.inline
+    def extendWith_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof extendWith */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extendWith")(x.asInstanceOf[js.Any])
     
-    var forOwnRight: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forOwnRight */ js.Any = js.native
+    @scala.inline
+    def extend_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof extend */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extend")(x.asInstanceOf[js.Any])
     
-    var functions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof functions */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.findKey")
+    @js.native
+    def findKey: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof findKey */ js.Any = js.native
+    @scala.inline
+    def findKey_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof findKey */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findKey")(x.asInstanceOf[js.Any])
     
-    var functionsIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof functionsIn */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.findLastKey")
+    @js.native
+    def findLastKey: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof findLastKey */ js.Any = js.native
+    @scala.inline
+    def findLastKey_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof findLastKey */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findLastKey")(x.asInstanceOf[js.Any])
     
-    var get: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof get */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.forIn")
+    @js.native
+    def forIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forIn */ js.Any = js.native
     
-    var has: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof has */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.forInRight")
+    @js.native
+    def forInRight: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forInRight */ js.Any = js.native
+    @scala.inline
+    def forInRight_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forInRight */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forInRight")(x.asInstanceOf[js.Any])
     
-    var hasIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof hasIn */ js.Any = js.native
+    @scala.inline
+    def forIn_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forIn */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forIn")(x.asInstanceOf[js.Any])
     
-    var invert: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof invert */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.forOwn")
+    @js.native
+    def forOwn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forOwn */ js.Any = js.native
     
-    var invertBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof invertBy */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.forOwnRight")
+    @js.native
+    def forOwnRight: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forOwnRight */ js.Any = js.native
+    @scala.inline
+    def forOwnRight_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forOwnRight */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forOwnRight")(x.asInstanceOf[js.Any])
     
-    var invoke: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof invoke */ js.Any = js.native
+    @scala.inline
+    def forOwn_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof forOwn */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forOwn")(x.asInstanceOf[js.Any])
     
-    var keys: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof keys */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.functions")
+    @js.native
+    def functions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof functions */ js.Any = js.native
     
-    var keysIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof keysIn */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.functionsIn")
+    @js.native
+    def functionsIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof functionsIn */ js.Any = js.native
+    @scala.inline
+    def functionsIn_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof functionsIn */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("functionsIn")(x.asInstanceOf[js.Any])
     
-    var mapKeys: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mapKeys */ js.Any = js.native
+    @scala.inline
+    def functions_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof functions */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("functions")(x.asInstanceOf[js.Any])
     
-    var mapValues: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mapValues */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.get")
+    @js.native
+    def get: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof get */ js.Any = js.native
+    @scala.inline
+    def get_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof get */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
     
-    var merge: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof merge */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.has")
+    @js.native
+    def has: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof has */ js.Any = js.native
     
-    var mergeWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mergeWith */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.hasIn")
+    @js.native
+    def hasIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof hasIn */ js.Any = js.native
+    @scala.inline
+    def hasIn_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof hasIn */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasIn")(x.asInstanceOf[js.Any])
     
-    var omit: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof omit */ js.Any = js.native
+    @scala.inline
+    def has_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof has */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("has")(x.asInstanceOf[js.Any])
     
-    var omitBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof omitBy */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.invert")
+    @js.native
+    def invert: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof invert */ js.Any = js.native
     
-    var pick: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pick */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.invertBy")
+    @js.native
+    def invertBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof invertBy */ js.Any = js.native
+    @scala.inline
+    def invertBy_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof invertBy */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invertBy")(x.asInstanceOf[js.Any])
     
-    var pickBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pickBy */ js.Any = js.native
+    @scala.inline
+    def invert_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof invert */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invert")(x.asInstanceOf[js.Any])
     
-    var result: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof result */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.invoke")
+    @js.native
+    def invoke: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof invoke */ js.Any = js.native
+    @scala.inline
+    def invoke_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof invoke */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invoke")(x.asInstanceOf[js.Any])
     
-    var set: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof set */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.keys")
+    @js.native
+    def keys: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof keys */ js.Any = js.native
     
-    var setWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof setWith */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.keysIn")
+    @js.native
+    def keysIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof keysIn */ js.Any = js.native
+    @scala.inline
+    def keysIn_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof keysIn */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keysIn")(x.asInstanceOf[js.Any])
     
-    var toPairs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toPairs */ js.Any = js.native
+    @scala.inline
+    def keys_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof keys */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keys")(x.asInstanceOf[js.Any])
     
-    var toPairsIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toPairsIn */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.mapKeys")
+    @js.native
+    def mapKeys: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mapKeys */ js.Any = js.native
+    @scala.inline
+    def mapKeys_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mapKeys */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapKeys")(x.asInstanceOf[js.Any])
     
-    var transform: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof transform */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.mapValues")
+    @js.native
+    def mapValues: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mapValues */ js.Any = js.native
+    @scala.inline
+    def mapValues_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mapValues */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapValues")(x.asInstanceOf[js.Any])
     
-    var unset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unset */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.merge")
+    @js.native
+    def merge: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof merge */ js.Any = js.native
     
-    var update: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof update */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.mergeWith")
+    @js.native
+    def mergeWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mergeWith */ js.Any = js.native
+    @scala.inline
+    def mergeWith_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mergeWith */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mergeWith")(x.asInstanceOf[js.Any])
     
-    var updateWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof updateWith */ js.Any = js.native
+    @scala.inline
+    def merge_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof merge */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("merge")(x.asInstanceOf[js.Any])
     
-    var values: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof values */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.omit")
+    @js.native
+    def omit: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof omit */ js.Any = js.native
     
-    var valuesIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof valuesIn */ js.Any = js.native
+    @JSImport("lodash-es/object.default", "default.omitBy")
+    @js.native
+    def omitBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof omitBy */ js.Any = js.native
+    @scala.inline
+    def omitBy_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof omitBy */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("omitBy")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def omit_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof omit */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("omit")(x.asInstanceOf[js.Any])
+    
+    @JSImport("lodash-es/object.default", "default.pick")
+    @js.native
+    def pick: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pick */ js.Any = js.native
+    
+    @JSImport("lodash-es/object.default", "default.pickBy")
+    @js.native
+    def pickBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pickBy */ js.Any = js.native
+    @scala.inline
+    def pickBy_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pickBy */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pickBy")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def pick_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pick */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pick")(x.asInstanceOf[js.Any])
+    
+    @JSImport("lodash-es/object.default", "default.result")
+    @js.native
+    def result: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof result */ js.Any = js.native
+    @scala.inline
+    def result_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof result */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("result")(x.asInstanceOf[js.Any])
+    
+    @JSImport("lodash-es/object.default", "default.set")
+    @js.native
+    def set: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof set */ js.Any = js.native
+    
+    @JSImport("lodash-es/object.default", "default.setWith")
+    @js.native
+    def setWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof setWith */ js.Any = js.native
+    @scala.inline
+    def setWith_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof setWith */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setWith")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof set */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
+    
+    @JSImport("lodash-es/object.default", "default.toPairs")
+    @js.native
+    def toPairs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toPairs */ js.Any = js.native
+    
+    @JSImport("lodash-es/object.default", "default.toPairsIn")
+    @js.native
+    def toPairsIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toPairsIn */ js.Any = js.native
+    @scala.inline
+    def toPairsIn_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toPairsIn */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toPairsIn")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def toPairs_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toPairs */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toPairs")(x.asInstanceOf[js.Any])
+    
+    @JSImport("lodash-es/object.default", "default.transform")
+    @js.native
+    def transform: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof transform */ js.Any = js.native
+    @scala.inline
+    def transform_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof transform */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transform")(x.asInstanceOf[js.Any])
+    
+    @JSImport("lodash-es/object.default", "default.unset")
+    @js.native
+    def unset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unset */ js.Any = js.native
+    @scala.inline
+    def unset_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unset */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unset")(x.asInstanceOf[js.Any])
+    
+    @JSImport("lodash-es/object.default", "default.update")
+    @js.native
+    def update: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof update */ js.Any = js.native
+    
+    @JSImport("lodash-es/object.default", "default.updateWith")
+    @js.native
+    def updateWith: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof updateWith */ js.Any = js.native
+    @scala.inline
+    def updateWith_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof updateWith */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updateWith")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def update_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof update */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("update")(x.asInstanceOf[js.Any])
+    
+    @JSImport("lodash-es/object.default", "default.values")
+    @js.native
+    def values: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof values */ js.Any = js.native
+    
+    @JSImport("lodash-es/object.default", "default.valuesIn")
+    @js.native
+    def valuesIn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof valuesIn */ js.Any = js.native
+    @scala.inline
+    def valuesIn_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof valuesIn */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valuesIn")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def values_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof values */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
   }
 }

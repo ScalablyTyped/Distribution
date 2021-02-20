@@ -1,12 +1,13 @@
 package typings.vegaTypings.encodeMod
 
 import typings.vegaTypings.anon.Test
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThetaProperty extends js.Object {
+trait ThetaProperty extends StObject {
   
   var theta: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
 }
@@ -19,27 +20,15 @@ object ThetaProperty {
   }
   
   @scala.inline
-  implicit class ThetaPropertyOps[Self <: ThetaProperty] (val x: Self) extends AnyVal {
+  implicit class ThetaPropertyMutableBuilder[Self <: ThetaProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTheta(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setThetaVarargs(value: (Test with NumericValueRef)*): Self = this.set("theta", js.Array(value :_*))
-    
-    @scala.inline
-    def setTheta(value: ProductionRule[NumericValueRef]): Self = this.set("theta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheta: Self = this.set("theta", js.undefined)
+    def setThetaVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "theta", js.Array(value :_*))
   }
 }

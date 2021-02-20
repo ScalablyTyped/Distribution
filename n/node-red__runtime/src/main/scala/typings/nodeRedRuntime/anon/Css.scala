@@ -1,11 +1,12 @@
 package typings.nodeRedRuntime.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Css extends js.Object {
+trait Css extends StObject {
   
   /**
     * Absolute path to custom css file
@@ -36,45 +37,33 @@ object Css {
   }
   
   @scala.inline
-  implicit class CssOps[Self <: Css] (val x: Self) extends AnyVal {
+  implicit class CssMutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCss(value: String): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
     
     @scala.inline
-    def deleteCss: Self = this.set("css", js.undefined)
+    def setScripts(value: js.Array[String]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFavicon(value: String): Self = this.set("favicon", value.asInstanceOf[js.Any])
+    def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
     @scala.inline
-    def deleteFavicon: Self = this.set("favicon", js.undefined)
+    def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
     
     @scala.inline
-    def setScriptsVarargs(value: String*): Self = this.set("scripts", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScripts(value: js.Array[String]): Self = this.set("scripts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScripts: Self = this.set("scripts", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.typescript.mod
 
 import typings.typescript.anon.TypeArguments
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeChecker extends js.Object {
+trait TypeChecker extends StObject {
   
   /** Follow all aliases to get the original symbol. */
   def getAliasedSymbol(symbol: Symbol): Symbol = js.native

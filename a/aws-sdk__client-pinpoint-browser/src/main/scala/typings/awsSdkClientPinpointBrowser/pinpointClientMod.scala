@@ -5,16 +5,16 @@ import typings.awsSdkClientPinpointBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientPinpointBrowser.pinpointConfigurationMod.PinpointConfiguration
 import typings.awsSdkClientPinpointBrowser.pinpointConfigurationMod.PinpointResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/PinpointClient", JSImport.Namespace)
-@js.native
-object pinpointClientMod extends js.Object {
+object pinpointClientMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/PinpointClient", "PinpointClient")
   @js.native
-  class PinpointClient protected () extends js.Object {
+  class PinpointClient protected () extends StObject {
     def this(configuration: PinpointConfiguration) = this()
     
     val config: PinpointResolvedConfiguration = js.native

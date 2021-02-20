@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram.Component
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FullProperty[T /* <: PropertyType */] extends js.Object {
+trait FullProperty[T /* <: PropertyType */] extends StObject {
   
   /** 属性值被更改时的响应函数 */
   var observer: js.UndefOr[
@@ -36,27 +37,7 @@ object FullProperty {
   }
   
   @scala.inline
-  implicit class FullPropertyOps[Self <: FullProperty[_], T /* <: PropertyType */] (val x: Self with FullProperty[T]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: T): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObserverFunction3(
-      value: (/* newVal */ ValueType[T], /* oldVal */ ValueType[T], /* changedPath */ js.Array[String | Double]) => Unit
-    ): Self = this.set("observer", js.Any.fromFunction3(value))
+  implicit class FullPropertyMutableBuilder[Self <: FullProperty[_], T /* <: PropertyType */] (val x: Self with FullProperty[T]) extends AnyVal {
     
     @scala.inline
     def setObserver(
@@ -66,27 +47,35 @@ object FullProperty {
           /* changedPath */ js.Array[String | Double], 
           Unit
         ])
-    ): Self = this.set("observer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObserver: Self = this.set("observer", js.undefined)
+    def setObserverFunction3(
+      value: (/* newVal */ ValueType[T], /* oldVal */ ValueType[T], /* changedPath */ js.Array[String | Double]) => Unit
+    ): Self = StObject.set(x, "observer", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOptionalTypesVarargs(value: ShortProperty*): Self = this.set("optionalTypes", js.Array(value :_*))
+    def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
     
     @scala.inline
-    def setOptionalTypes(value: js.Array[ShortProperty]): Self = this.set("optionalTypes", value.asInstanceOf[js.Any])
+    def setOptionalTypes(value: js.Array[ShortProperty]): Self = StObject.set(x, "optionalTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptionalTypes: Self = this.set("optionalTypes", js.undefined)
+    def setOptionalTypesUndefined: Self = StObject.set(x, "optionalTypes", js.undefined)
     
     @scala.inline
-    def setValueVarargs(value: js.Any*): Self = this.set("value", js.Array(value :_*))
+    def setOptionalTypesVarargs(value: ShortProperty*): Self = StObject.set(x, "optionalTypes", js.Array(value :_*))
     
     @scala.inline
-    def setValue(value: ValueType[T]): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValue(value: ValueType[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    @scala.inline
+    def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

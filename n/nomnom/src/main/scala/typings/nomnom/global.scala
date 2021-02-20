@@ -1,24 +1,25 @@
 package typings.nomnom
 
 import typings.nomnom.NomnomInternal.Parser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @JSName("_nomnom")
-  var nomnom: Parser = js.native
-  
+  @JSGlobal("_nomnom")
   @js.native
-  object NomnomInternal extends js.Object {
+  def nomnom: Parser = js.native
+  
+  @scala.inline
+  def nomnom_=(x: Parser): Unit = js.Dynamic.global.updateDynamic("_nomnom")(x.asInstanceOf[js.Any])
+  
+  object NomnomInternal {
     
     /**
       * The command-line parser.
       */
-    @js.native
-    object Parser extends js.Object
+    object Parser
   }
 }

@@ -1,14 +1,14 @@
 package typings.tensorflowTfjsBackendWebgl
 
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/batchnorm_gpu", JSImport.Namespace)
-@js.native
-object batchnormGpuMod extends js.Object {
+object batchnormGpuMod {
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/batchnorm_gpu", "BatchNormProgram")
   @js.native
   class BatchNormProgram protected () extends GPGPUProgram {
     def this(

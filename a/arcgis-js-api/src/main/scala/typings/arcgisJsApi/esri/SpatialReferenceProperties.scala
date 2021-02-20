@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpatialReferenceProperties extends js.Object {
+trait SpatialReferenceProperties extends StObject {
   
   /**
     * An [image coordinate system](https://developers.arcgis.com/rest/services-reference/raster-ics.htm) defines the spatial reference used to display the image in its original coordinates without distortion, map transformations or ortho-rectification.
@@ -37,36 +38,24 @@ object SpatialReferenceProperties {
   }
   
   @scala.inline
-  implicit class SpatialReferencePropertiesOps[Self <: SpatialReferenceProperties] (val x: Self) extends AnyVal {
+  implicit class SpatialReferencePropertiesMutableBuilder[Self <: SpatialReferenceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageCoordinateSystem(value: js.Any): Self = StObject.set(x, "imageCoordinateSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageCoordinateSystemUndefined: Self = StObject.set(x, "imageCoordinateSystem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageCoordinateSystem(value: js.Any): Self = this.set("imageCoordinateSystem", value.asInstanceOf[js.Any])
+    def setWkidUndefined: Self = StObject.set(x, "wkid", js.undefined)
     
     @scala.inline
-    def deleteImageCoordinateSystem: Self = this.set("imageCoordinateSystem", js.undefined)
+    def setWkt(value: String): Self = StObject.set(x, "wkt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWkid(value: Double): Self = this.set("wkid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWkid: Self = this.set("wkid", js.undefined)
-    
-    @scala.inline
-    def setWkt(value: String): Self = this.set("wkt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWkt: Self = this.set("wkt", js.undefined)
+    def setWktUndefined: Self = StObject.set(x, "wkt", js.undefined)
   }
 }

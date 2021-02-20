@@ -1,30 +1,33 @@
 package typings.akuminaCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("akumina-core", "AppParts")
-@js.native
-object AppParts extends js.Object {
+object AppParts {
   
+  @JSImport("akumina-core", "AppParts.Banner")
   @js.native
-  class Banner protected () extends js.Object {
+  class Banner protected () extends StObject {
     def this(options: js.Any) = this()
   }
   
+  @JSImport("akumina-core", "AppParts.Calendar")
   @js.native
-  class Calendar protected () extends js.Object {
+  class Calendar protected () extends StObject {
     def this(options: js.Any) = this()
   }
   
+  @JSImport("akumina-core", "AppParts.CompanyCalendar")
   @js.native
-  class CompanyCalendar protected () extends js.Object {
+  class CompanyCalendar protected () extends StObject {
     def this(options: js.Any) = this()
   }
   
+  @JSImport("akumina-core", "AppParts.Traffic")
   @js.native
-  class Traffic protected () extends js.Object {
+  class Traffic protected () extends StObject {
     def this(options: js.Any) = this()
   }
 }

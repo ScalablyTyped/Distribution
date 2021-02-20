@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,44 +70,33 @@ object XAtomServer {
     acquire: () => Unit,
     getAtom: (Double, String, Boolean) => Double,
     getAtomDescriptions: SeqEquiv[AtomClassRequest] => SafeArray[String],
-    getClass: Double => SafeArray[AtomDescription],
+    getClass_ : Double => SafeArray[AtomDescription],
     getClasses: SeqEquiv[Double] => SafeArray[SafeArray[AtomDescription]],
     getRecentAtoms: (Double, Double) => SafeArray[AtomDescription],
     queryInterface: `type` => js.Any,
     release: () => Unit
   ): XAtomServer = {
-    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAtom = js.Any.fromFunction3(getAtom), getAtomDescriptions = js.Any.fromFunction1(getAtomDescriptions), getClass = js.Any.fromFunction1(getClass), getClasses = js.Any.fromFunction1(getClasses), getRecentAtoms = js.Any.fromFunction2(getRecentAtoms), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
+    val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAtom = js.Any.fromFunction3(getAtom), getAtomDescriptions = js.Any.fromFunction1(getAtomDescriptions), getClasses = js.Any.fromFunction1(getClasses), getRecentAtoms = js.Any.fromFunction2(getRecentAtoms), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
+    __obj.updateDynamic("getClass")(js.Any.fromFunction1(getClass_))
     __obj.asInstanceOf[XAtomServer]
   }
   
   @scala.inline
-  implicit class XAtomServerOps[Self <: XAtomServer] (val x: Self) extends AnyVal {
+  implicit class XAtomServerMutableBuilder[Self <: XAtomServer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAtom(value: (Double, String, Boolean) => Double): Self = StObject.set(x, "getAtom", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAtomDescriptions(value: SeqEquiv[AtomClassRequest] => SafeArray[String]): Self = StObject.set(x, "getAtomDescriptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetClass_(value: Double => SafeArray[AtomDescription]): Self = StObject.set(x, "getClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAtom(value: (Double, String, Boolean) => Double): Self = this.set("getAtom", js.Any.fromFunction3(value))
+    def setGetClasses(value: SeqEquiv[Double] => SafeArray[SafeArray[AtomDescription]]): Self = StObject.set(x, "getClasses", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAtomDescriptions(value: SeqEquiv[AtomClassRequest] => SafeArray[String]): Self = this.set("getAtomDescriptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetClass(value: Double => SafeArray[AtomDescription]): Self = this.set("getClass", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetClasses(value: SeqEquiv[Double] => SafeArray[SafeArray[AtomDescription]]): Self = this.set("getClasses", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRecentAtoms(value: (Double, Double) => SafeArray[AtomDescription]): Self = this.set("getRecentAtoms", js.Any.fromFunction2(value))
+    def setGetRecentAtoms(value: (Double, Double) => SafeArray[AtomDescription]): Self = StObject.set(x, "getRecentAtoms", js.Any.fromFunction2(value))
   }
 }

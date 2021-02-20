@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,36 +36,24 @@ object GradientColorObject {
   }
   
   @scala.inline
-  implicit class GradientColorObjectOps[Self <: GradientColorObject] (val x: Self) extends AnyVal {
+  implicit class GradientColorObjectMutableBuilder[Self <: GradientColorObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinearGradient(value: LinearGradientColorObject): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinearGradientUndefined: Self = StObject.set(x, "linearGradient", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRadialGradient(value: RadialGradientColorObject): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopsVarargs(value: GradientColorStopObject*): Self = this.set("stops", js.Array(value :_*))
+    def setRadialGradientUndefined: Self = StObject.set(x, "radialGradient", js.undefined)
     
     @scala.inline
-    def setStops(value: js.Array[GradientColorStopObject]): Self = this.set("stops", value.asInstanceOf[js.Any])
+    def setStops(value: js.Array[GradientColorStopObject]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearGradient(value: LinearGradientColorObject): Self = this.set("linearGradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinearGradient: Self = this.set("linearGradient", js.undefined)
-    
-    @scala.inline
-    def setRadialGradient(value: RadialGradientColorObject): Self = this.set("radialGradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadialGradient: Self = this.set("radialGradient", js.undefined)
+    def setStopsVarargs(value: GradientColorStopObject*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

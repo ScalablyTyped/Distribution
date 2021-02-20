@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Checkrunurl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsListJobsForWorkflowRunResponseData extends js.Object {
+trait ActionsListJobsForWorkflowRunResponseData extends StObject {
   
   var jobs: js.Array[Checkrunurl] = js.native
   
@@ -21,27 +22,15 @@ object ActionsListJobsForWorkflowRunResponseData {
   }
   
   @scala.inline
-  implicit class ActionsListJobsForWorkflowRunResponseDataOps[Self <: ActionsListJobsForWorkflowRunResponseData] (val x: Self) extends AnyVal {
+  implicit class ActionsListJobsForWorkflowRunResponseDataMutableBuilder[Self <: ActionsListJobsForWorkflowRunResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobs(value: js.Array[Checkrunurl]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobsVarargs(value: Checkrunurl*): Self = StObject.set(x, "jobs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobsVarargs(value: Checkrunurl*): Self = this.set("jobs", js.Array(value :_*))
-    
-    @scala.inline
-    def setJobs(value: js.Array[Checkrunurl]): Self = this.set("jobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.next.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaxAge extends js.Object {
+trait MaxAge extends StObject {
   
   /**
     * Specifies the number (in seconds) for the preview session to last for.
@@ -24,24 +25,12 @@ object MaxAge {
   }
   
   @scala.inline
-  implicit class MaxAgeOps[Self <: MaxAge] (val x: Self) extends AnyVal {
+  implicit class MaxAgeMutableBuilder[Self <: MaxAge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
   }
 }

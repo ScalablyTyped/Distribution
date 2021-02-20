@@ -1,11 +1,12 @@
 package typings.dynatable.JQueryDynatable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Features extends js.Object {
+trait Features extends StObject {
   
   /**
     * Enable the pagination feature
@@ -61,54 +62,42 @@ object Features {
   }
   
   @scala.inline
-  implicit class FeaturesOps[Self <: Features] (val x: Self) extends AnyVal {
+  implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaginate(value: Boolean): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPerPageSelect(value: Boolean): Self = StObject.set(x, "perPageSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginate(value: Boolean): Self = this.set("paginate", value.asInstanceOf[js.Any])
+    def setPerPageSelectUndefined: Self = StObject.set(x, "perPageSelect", js.undefined)
     
     @scala.inline
-    def deletePaginate: Self = this.set("paginate", js.undefined)
+    def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerPageSelect(value: Boolean): Self = this.set("perPageSelect", value.asInstanceOf[js.Any])
+    def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
     
     @scala.inline
-    def deletePerPageSelect: Self = this.set("perPageSelect", js.undefined)
+    def setRecordCount(value: Boolean): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushState(value: Boolean): Self = this.set("pushState", value.asInstanceOf[js.Any])
+    def setRecordCountUndefined: Self = StObject.set(x, "recordCount", js.undefined)
     
     @scala.inline
-    def deletePushState: Self = this.set("pushState", js.undefined)
+    def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordCount(value: Boolean): Self = this.set("recordCount", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteRecordCount: Self = this.set("recordCount", js.undefined)
+    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: Boolean): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
-    
-    @scala.inline
-    def setSort(value: Boolean): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

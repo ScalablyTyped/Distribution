@@ -1,12 +1,11 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Script")
-@js.native
-object Script extends js.Object {
+object Script {
   
   /**
     * An enumeration that identifies which categories of authorized services Apps Script is able to
@@ -35,8 +34,9 @@ object Script extends js.Object {
     *       menu.addToUi();
     *     }
     */
+  @JSGlobal("GoogleAppsScript.Script.AuthMode")
   @js.native
-  object AuthMode extends js.Object {
+  object AuthMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.AuthMode with Double] = js.native
@@ -53,8 +53,9 @@ object Script extends js.Object {
   /**
     * An enumeration denoting the authorization status of a script.
     */
+  @JSGlobal("GoogleAppsScript.Script.AuthorizationStatus")
   @js.native
-  object AuthorizationStatus extends js.Object {
+  object AuthorizationStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.AuthorizationStatus with Double] = js.native
@@ -67,8 +68,9 @@ object Script extends js.Object {
   /**
     * An enumeration denoting the type of triggered event.
     */
+  @JSGlobal("GoogleAppsScript.Script.EventType")
   @js.native
-  object EventType extends js.Object {
+  object EventType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.EventType with Double] = js.native
@@ -90,8 +92,9 @@ object Script extends js.Object {
     * An enumeration that indicates how the script came to be installed as an add-on for the current
     * user.
     */
+  @JSGlobal("GoogleAppsScript.Script.InstallationSource")
   @js.native
-  object InstallationSource extends js.Object {
+  object InstallationSource extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.InstallationSource with Double] = js.native
@@ -106,8 +109,9 @@ object Script extends js.Object {
   /**
     * An enumeration denoting the source of the event that causes the trigger to fire.
     */
+  @JSGlobal("GoogleAppsScript.Script.TriggerSource")
   @js.native
-  object TriggerSource extends js.Object {
+  object TriggerSource extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource with Double] = js.native

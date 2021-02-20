@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "RevokeTokenRequest")
 @js.native
-class RevokeTokenRequest () extends js.Object {
+class RevokeTokenRequest () extends StObject {
   
   /**
     * The access token of the merchant whose token you want to revoke.

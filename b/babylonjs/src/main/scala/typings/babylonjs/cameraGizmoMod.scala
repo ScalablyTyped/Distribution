@@ -6,14 +6,14 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.standardMaterialMod.StandardMaterial
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/cameraGizmo", JSImport.Namespace)
-@js.native
-object cameraGizmoMod extends js.Object {
+object cameraGizmoMod {
   
+  @JSImport("babylonjs/Gizmos/cameraGizmo", "CameraGizmo")
   @js.native
   /**
     * Creates a CameraGizmo
@@ -55,13 +55,28 @@ object cameraGizmoMod extends js.Object {
     var onClickedObservable: Observable[Camera] = js.native
   }
   /* static members */
-  @js.native
-  object CameraGizmo extends js.Object {
+  object CameraGizmo {
     
-    var _CreateCameraFrustum: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/cameraGizmo", "CameraGizmo")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _CreateCameraMesh: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/cameraGizmo", "CameraGizmo._CreateCameraFrustum")
+    @js.native
+    def _CreateCameraFrustum: js.Any = js.native
+    @scala.inline
+    def _CreateCameraFrustum_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraFrustum")(x.asInstanceOf[js.Any])
     
-    var _Scale: js.Any = js.native
+    @JSImport("babylonjs/Gizmos/cameraGizmo", "CameraGizmo._CreateCameraMesh")
+    @js.native
+    def _CreateCameraMesh: js.Any = js.native
+    @scala.inline
+    def _CreateCameraMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraMesh")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Gizmos/cameraGizmo", "CameraGizmo._Scale")
+    @js.native
+    def _Scale: js.Any = js.native
+    @scala.inline
+    def _Scale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
   }
 }

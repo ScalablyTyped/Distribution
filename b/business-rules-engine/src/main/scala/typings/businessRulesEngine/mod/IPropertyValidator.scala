@@ -1,11 +1,12 @@
 package typings.businessRulesEngine.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPropertyValidator extends js.Object {
+trait IPropertyValidator extends StObject {
   
   var customMessage: js.UndefOr[IErrorCustomMessage] = js.native
   
@@ -22,33 +23,21 @@ object IPropertyValidator {
   }
   
   @scala.inline
-  implicit class IPropertyValidatorOps[Self <: IPropertyValidator] (val x: Self) extends AnyVal {
+  implicit class IPropertyValidatorMutableBuilder[Self <: IPropertyValidator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomMessage(value: (/* config */ js.Any, /* args */ js.Any) => String): Self = StObject.set(x, "customMessage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsAcceptable(value: js.Any => Boolean): Self = StObject.set(x, "isAcceptable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsAcceptable(value: js.Any => Boolean): Self = this.set("isAcceptable", js.Any.fromFunction1(value))
+    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMessage(value: (/* config */ js.Any, /* args */ js.Any) => String): Self = this.set("customMessage", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteCustomMessage: Self = this.set("customMessage", js.undefined)
-    
-    @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagName: Self = this.set("tagName", js.undefined)
+    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }

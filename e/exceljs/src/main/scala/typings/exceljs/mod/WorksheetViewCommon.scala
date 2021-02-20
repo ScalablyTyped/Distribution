@@ -1,11 +1,12 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorksheetViewCommon extends js.Object {
+trait WorksheetViewCommon extends StObject {
   
   /**
   	 * The currently selected cell
@@ -61,39 +62,27 @@ object WorksheetViewCommon {
   }
   
   @scala.inline
-  implicit class WorksheetViewCommonOps[Self <: WorksheetViewCommon] (val x: Self) extends AnyVal {
+  implicit class WorksheetViewCommonMutableBuilder[Self <: WorksheetViewCommon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRightToLeft(value: Boolean): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveCell(value: String): Self = this.set("activeCell", value.asInstanceOf[js.Any])
+    def setShowRowColHeaders(value: Boolean): Self = StObject.set(x, "showRowColHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightToLeft(value: Boolean): Self = this.set("rightToLeft", value.asInstanceOf[js.Any])
+    def setShowRuler(value: Boolean): Self = StObject.set(x, "showRuler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGridLines(value: Boolean): Self = this.set("showGridLines", value.asInstanceOf[js.Any])
+    def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRowColHeaders(value: Boolean): Self = this.set("showRowColHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowRuler(value: Boolean): Self = this.set("showRuler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomScale(value: Double): Self = this.set("zoomScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomScaleNormal(value: Double): Self = this.set("zoomScaleNormal", value.asInstanceOf[js.Any])
+    def setZoomScaleNormal(value: Double): Self = StObject.set(x, "zoomScaleNormal", value.asInstanceOf[js.Any])
   }
 }

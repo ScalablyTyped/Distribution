@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LongPressActionsSuccessData extends js.Object {
+trait LongPressActionsSuccessData extends StObject {
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
@@ -26,30 +27,18 @@ object LongPressActionsSuccessData {
   }
   
   @scala.inline
-  implicit class LongPressActionsSuccessDataOps[Self <: LongPressActionsSuccessData] (val x: Self) extends AnyVal {
+  implicit class LongPressActionsSuccessDataMutableBuilder[Self <: LongPressActionsSuccessData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
-    
-    @scala.inline
-    def setTapIndex(value: Double): Self = this.set("tapIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTapIndex: Self = this.set("tapIndex", js.undefined)
+    def setTapIndexUndefined: Self = StObject.set(x, "tapIndex", js.undefined)
   }
 }

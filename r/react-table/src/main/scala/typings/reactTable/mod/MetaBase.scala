@@ -1,11 +1,12 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetaBase[D /* <: js.Object */] extends js.Object {
+trait MetaBase[D /* <: js.Object */] extends StObject {
   
   var instance: TableInstance[D] = js.native
   
@@ -20,24 +21,12 @@ object MetaBase {
   }
   
   @scala.inline
-  implicit class MetaBaseOps[Self <: MetaBase[_], D /* <: js.Object */] (val x: Self with MetaBase[D]) extends AnyVal {
+  implicit class MetaBaseMutableBuilder[Self <: MetaBase[_], D /* <: js.Object */] (val x: Self with MetaBase[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstance(value: TableInstance[D]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstance(value: TableInstance[D]): Self = this.set("instance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserProps(value: js.Any): Self = this.set("userProps", value.asInstanceOf[js.Any])
+    def setUserProps(value: js.Any): Self = StObject.set(x, "userProps", value.asInstanceOf[js.Any])
   }
 }

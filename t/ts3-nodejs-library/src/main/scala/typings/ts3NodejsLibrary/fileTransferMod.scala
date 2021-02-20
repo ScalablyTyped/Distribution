@@ -1,16 +1,16 @@
 package typings.ts3NodejsLibrary
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts3-nodejs-library/lib/transport/FileTransfer", JSImport.Namespace)
-@js.native
-object fileTransferMod extends js.Object {
+object fileTransferMod {
   
+  @JSImport("ts3-nodejs-library/lib/transport/FileTransfer", "FileTransfer")
   @js.native
-  class FileTransfer protected () extends js.Object {
+  class FileTransfer protected () extends StObject {
     /**
       * Initializes a File Transfer
       * @param host TeamSpeak's File transfer Host

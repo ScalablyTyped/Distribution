@@ -2,13 +2,12 @@ package typings.sentryTypes
 
 import typings.sentryTypes.eventMod.Event
 import typings.sentryTypes.eventMod.EventHint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/types/dist/eventprocessor", JSImport.Namespace)
-@js.native
-object eventprocessorMod extends js.Object {
+object eventprocessorMod {
   
   type EventProcessor = js.Function2[
     /* event */ Event, 

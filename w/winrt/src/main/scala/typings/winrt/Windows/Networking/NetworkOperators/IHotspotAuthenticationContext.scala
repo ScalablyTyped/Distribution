@@ -4,12 +4,13 @@ import typings.std.Uint8Array
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Networking.Connectivity.NetworkAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHotspotAuthenticationContext extends js.Object {
+trait IHotspotAuthenticationContext extends StObject {
   
   def abortAuthentication(markAsManual: Boolean): Unit = js.native
   
@@ -48,45 +49,33 @@ object IHotspotAuthenticationContext {
   }
   
   @scala.inline
-  implicit class IHotspotAuthenticationContextOps[Self <: IHotspotAuthenticationContext] (val x: Self) extends AnyVal {
+  implicit class IHotspotAuthenticationContextMutableBuilder[Self <: IHotspotAuthenticationContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortAuthentication(value: Boolean => Unit): Self = StObject.set(x, "abortAuthentication", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationUrl(value: Uri): Self = StObject.set(x, "authenticationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssueCredentials(value: (String, String, String, Boolean) => Unit): Self = StObject.set(x, "issueCredentials", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setAbortAuthentication(value: Boolean => Unit): Self = this.set("abortAuthentication", js.Any.fromFunction1(value))
+    def setNetworkAdapter(value: NetworkAdapter): Self = StObject.set(x, "networkAdapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationUrl(value: Uri): Self = this.set("authenticationUrl", value.asInstanceOf[js.Any])
+    def setRedirectMessageUrl(value: Uri): Self = StObject.set(x, "redirectMessageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssueCredentials(value: (String, String, String, Boolean) => Unit): Self = this.set("issueCredentials", js.Any.fromFunction4(value))
+    def setRedirectMessageXml(value: XmlDocument): Self = StObject.set(x, "redirectMessageXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkAdapter(value: NetworkAdapter): Self = this.set("networkAdapter", value.asInstanceOf[js.Any])
+    def setSkipAuthentication(value: () => Unit): Self = StObject.set(x, "skipAuthentication", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRedirectMessageUrl(value: Uri): Self = this.set("redirectMessageUrl", value.asInstanceOf[js.Any])
+    def setTriggerAttentionRequired(value: (String, String) => Unit): Self = StObject.set(x, "triggerAttentionRequired", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRedirectMessageXml(value: XmlDocument): Self = this.set("redirectMessageXml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkipAuthentication(value: () => Unit): Self = this.set("skipAuthentication", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTriggerAttentionRequired(value: (String, String) => Unit): Self = this.set("triggerAttentionRequired", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWirelessNetworkId(value: Uint8Array): Self = this.set("wirelessNetworkId", value.asInstanceOf[js.Any])
+    def setWirelessNetworkId(value: Uint8Array): Self = StObject.set(x, "wirelessNetworkId", value.asInstanceOf[js.Any])
   }
 }

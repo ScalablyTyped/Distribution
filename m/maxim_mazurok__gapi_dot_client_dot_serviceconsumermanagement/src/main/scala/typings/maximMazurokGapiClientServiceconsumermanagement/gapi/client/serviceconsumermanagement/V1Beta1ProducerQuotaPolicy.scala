@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait V1Beta1ProducerQuotaPolicy extends js.Object {
+trait V1Beta1ProducerQuotaPolicy extends StObject {
   
   /** The cloud resource container at which the quota policy is created. The format is {container_type}/{container_number} */
   var container: js.UndefOr[String] = js.native
@@ -52,58 +53,46 @@ object V1Beta1ProducerQuotaPolicy {
   }
   
   @scala.inline
-  implicit class V1Beta1ProducerQuotaPolicyOps[Self <: V1Beta1ProducerQuotaPolicy] (val x: Self) extends AnyVal {
+  implicit class V1Beta1ProducerQuotaPolicyMutableBuilder[Self <: V1Beta1ProducerQuotaPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
     def setDimensions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1ProducerQuotaPolicy with TopLevel[js.Any]
-    ): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def setMetric(value: String): Self = this.set("metric", value.asInstanceOf[js.Any])
+    def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetric: Self = this.set("metric", js.undefined)
+    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setPolicyValue(value: String): Self = this.set("policyValue", value.asInstanceOf[js.Any])
+    def setPolicyValue(value: String): Self = StObject.set(x, "policyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolicyValue: Self = this.set("policyValue", js.undefined)
+    def setPolicyValueUndefined: Self = StObject.set(x, "policyValue", js.undefined)
     
     @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

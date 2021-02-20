@@ -1,14 +1,15 @@
 package typings.pPipe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-pipe", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   // Fallbacks if more than 9 functions are passed as input (not type-safe).
+  @JSImport("p-pipe", JSImport.Namespace)
+  @js.native
   def apply(functions: (UnaryFunction[_, _])*): Pipeline[_, _] = js.native
   /**
   Compose promise-returning & async functions into a reusable pipeline.
@@ -26,19 +27,29 @@ object mod extends js.Object {
   })();
   ```
   */
+  @JSImport("p-pipe", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ReturnType](f1: UnaryFunction[ValueType, ReturnType]): Pipeline[ValueType, ReturnType] = js.native
+  @JSImport("p-pipe", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ResultValue1, ReturnType](f1: UnaryFunction[ValueType, ResultValue1], f2: UnaryFunction[ResultValue1, ReturnType]): Pipeline[ValueType, ReturnType] = js.native
+  @JSImport("p-pipe", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ResultValue1, ResultValue2, ReturnType](
     f1: UnaryFunction[ValueType, ResultValue1],
     f2: UnaryFunction[ResultValue1, ResultValue2],
     f3: UnaryFunction[ResultValue2, ReturnType]
   ): Pipeline[ValueType, ReturnType] = js.native
+  @JSImport("p-pipe", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ResultValue1, ResultValue2, ResultValue3, ReturnType](
     f1: UnaryFunction[ValueType, ResultValue1],
     f2: UnaryFunction[ResultValue1, ResultValue2],
     f3: UnaryFunction[ResultValue2, ResultValue3],
     f4: UnaryFunction[ResultValue3, ReturnType]
   ): Pipeline[ValueType, ReturnType] = js.native
+  @JSImport("p-pipe", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ResultValue1, ResultValue2, ResultValue3, ResultValue4, ReturnType](
     f1: UnaryFunction[ValueType, ResultValue1],
     f2: UnaryFunction[ResultValue1, ResultValue2],
@@ -46,6 +57,8 @@ object mod extends js.Object {
     f4: UnaryFunction[ResultValue3, ResultValue4],
     f5: UnaryFunction[ResultValue4, ReturnType]
   ): Pipeline[ValueType, ReturnType] = js.native
+  @JSImport("p-pipe", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ResultValue1, ResultValue2, ResultValue3, ResultValue4, ResultValue5, ReturnType](
     f1: UnaryFunction[ValueType, ResultValue1],
     f2: UnaryFunction[ResultValue1, ResultValue2],
@@ -54,6 +67,8 @@ object mod extends js.Object {
     f5: UnaryFunction[ResultValue4, ResultValue5],
     f6: UnaryFunction[ResultValue5, ReturnType]
   ): Pipeline[ValueType, ReturnType] = js.native
+  @JSImport("p-pipe", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ResultValue1, ResultValue2, ResultValue3, ResultValue4, ResultValue5, ResultValue6, ReturnType](
     f1: UnaryFunction[ValueType, ResultValue1],
     f2: UnaryFunction[ResultValue1, ResultValue2],
@@ -63,6 +78,8 @@ object mod extends js.Object {
     f6: UnaryFunction[ResultValue5, ResultValue6],
     f7: UnaryFunction[ResultValue6, ReturnType]
   ): Pipeline[ValueType, ReturnType] = js.native
+  @JSImport("p-pipe", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ResultValue1, ResultValue2, ResultValue3, ResultValue4, ResultValue5, ResultValue6, ResultValue7, ReturnType](
     f1: UnaryFunction[ValueType, ResultValue1],
     f2: UnaryFunction[ResultValue1, ResultValue2],
@@ -73,6 +90,8 @@ object mod extends js.Object {
     f7: UnaryFunction[ResultValue6, ResultValue7],
     f8: UnaryFunction[ResultValue7, ReturnType]
   ): Pipeline[ValueType, ReturnType] = js.native
+  @JSImport("p-pipe", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ResultValue1, ResultValue2, ResultValue3, ResultValue4, ResultValue5, ResultValue6, ResultValue7, ResultValue8, ReturnType](
     f1: UnaryFunction[ValueType, ResultValue1],
     f2: UnaryFunction[ResultValue1, ResultValue2],

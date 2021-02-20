@@ -1,6 +1,7 @@
 package typings.w3cCssTypedObjectModelLevel1
 
 import typings.std.DOMMatrix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,21 +20,9 @@ object CSSSkewY {
   }
   
   @scala.inline
-  implicit class CSSSkewYOps[Self <: CSSSkewY] (val x: Self) extends AnyVal {
+  implicit class CSSSkewYMutableBuilder[Self <: CSSSkewY] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAy(value: CSSNumericValue): Self = this.set("ay", value.asInstanceOf[js.Any])
+    def setAy(value: CSSNumericValue): Self = StObject.set(x, "ay", value.asInstanceOf[js.Any])
   }
 }

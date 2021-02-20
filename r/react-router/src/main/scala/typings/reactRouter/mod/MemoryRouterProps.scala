@@ -2,12 +2,13 @@ package typings.reactRouter.mod
 
 import typings.history.mod.LocationDescriptor
 import typings.history.mod.LocationState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemoryRouterProps extends js.Object {
+trait MemoryRouterProps extends StObject {
   
   var getUserConfirmation: js.UndefOr[
     js.Function2[/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit], Unit]
@@ -28,45 +29,33 @@ object MemoryRouterProps {
   }
   
   @scala.inline
-  implicit class MemoryRouterPropsOps[Self <: MemoryRouterProps] (val x: Self) extends AnyVal {
+  implicit class MemoryRouterPropsMutableBuilder[Self <: MemoryRouterProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialEntries(value: js.Array[LocationDescriptor[LocationState]]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = this.set("getUserConfirmation", js.Any.fromFunction2(value))
+    def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
     
     @scala.inline
-    def deleteGetUserConfirmation: Self = this.set("getUserConfirmation", js.undefined)
+    def setInitialEntriesVarargs(value: LocationDescriptor[LocationState]*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
     
     @scala.inline
-    def setInitialEntriesVarargs(value: LocationDescriptor[LocationState]*): Self = this.set("initialEntries", js.Array(value :_*))
+    def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialEntries(value: js.Array[LocationDescriptor[LocationState]]): Self = this.set("initialEntries", value.asInstanceOf[js.Any])
+    def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
     
     @scala.inline
-    def deleteInitialEntries: Self = this.set("initialEntries", js.undefined)
+    def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialIndex(value: Double): Self = this.set("initialIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialIndex: Self = this.set("initialIndex", js.undefined)
-    
-    @scala.inline
-    def setKeyLength(value: Double): Self = this.set("keyLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyLength: Self = this.set("keyLength", js.undefined)
+    def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
   }
 }

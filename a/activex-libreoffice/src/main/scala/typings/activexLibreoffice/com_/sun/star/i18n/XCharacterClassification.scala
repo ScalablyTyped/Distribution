@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,48 +108,36 @@ object XCharacterClassification {
   }
   
   @scala.inline
-  implicit class XCharacterClassificationOps[Self <: XCharacterClassification] (val x: Self) extends AnyVal {
+  implicit class XCharacterClassificationMutableBuilder[Self <: XCharacterClassification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCharacterDirection(value: (String, Double) => Double): Self = StObject.set(x, "getCharacterDirection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCharacterType(value: (String, Double, Locale) => Double): Self = StObject.set(x, "getCharacterType", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetScript(value: (String, Double) => Double): Self = StObject.set(x, "getScript", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCharacterDirection(value: (String, Double) => Double): Self = this.set("getCharacterDirection", js.Any.fromFunction2(value))
+    def setGetStringType(value: (String, Double, Double, Locale) => Double): Self = StObject.set(x, "getStringType", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetCharacterType(value: (String, Double, Locale) => Double): Self = this.set("getCharacterType", js.Any.fromFunction3(value))
+    def setGetType(value: (String, Double) => Double): Self = StObject.set(x, "getType", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetScript(value: (String, Double) => Double): Self = this.set("getScript", js.Any.fromFunction2(value))
+    def setParseAnyToken(value: (String, Double, Locale, Double, String, Double, String) => ParseResult): Self = StObject.set(x, "parseAnyToken", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setGetStringType(value: (String, Double, Double, Locale) => Double): Self = this.set("getStringType", js.Any.fromFunction4(value))
+    def setParsePredefinedToken(value: (Double, String, Double, Locale, Double, String, Double, String) => ParseResult): Self = StObject.set(x, "parsePredefinedToken", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setGetType(value: (String, Double) => Double): Self = this.set("getType", js.Any.fromFunction2(value))
+    def setToLower(value: (String, Double, Double, Locale) => String): Self = StObject.set(x, "toLower", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setParseAnyToken(value: (String, Double, Locale, Double, String, Double, String) => ParseResult): Self = this.set("parseAnyToken", js.Any.fromFunction7(value))
+    def setToTitle(value: (String, Double, Double, Locale) => String): Self = StObject.set(x, "toTitle", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setParsePredefinedToken(value: (Double, String, Double, Locale, Double, String, Double, String) => ParseResult): Self = this.set("parsePredefinedToken", js.Any.fromFunction8(value))
-    
-    @scala.inline
-    def setToLower(value: (String, Double, Double, Locale) => String): Self = this.set("toLower", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setToTitle(value: (String, Double, Double, Locale) => String): Self = this.set("toTitle", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setToUpper(value: (String, Double, Double, Locale) => String): Self = this.set("toUpper", js.Any.fromFunction4(value))
+    def setToUpper(value: (String, Double, Double, Locale) => String): Self = StObject.set(x, "toUpper", js.Any.fromFunction4(value))
   }
 }

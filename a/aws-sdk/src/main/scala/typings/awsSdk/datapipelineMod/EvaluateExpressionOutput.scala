@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EvaluateExpressionOutput extends js.Object {
+trait EvaluateExpressionOutput extends StObject {
   
   /**
     * The evaluated expression.
@@ -21,21 +22,9 @@ object EvaluateExpressionOutput {
   }
   
   @scala.inline
-  implicit class EvaluateExpressionOutputOps[Self <: EvaluateExpressionOutput] (val x: Self) extends AnyVal {
+  implicit class EvaluateExpressionOutputMutableBuilder[Self <: EvaluateExpressionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvaluatedExpression(value: longString): Self = this.set("evaluatedExpression", value.asInstanceOf[js.Any])
+    def setEvaluatedExpression(value: longString): Self = StObject.set(x, "evaluatedExpression", value.asInstanceOf[js.Any])
   }
 }

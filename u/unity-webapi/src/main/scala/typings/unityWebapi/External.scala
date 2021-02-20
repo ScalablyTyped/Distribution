@@ -1,11 +1,12 @@
 package typings.unityWebapi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait External extends js.Object {
+trait External extends StObject {
   
   def getUnityObject(version: Double): Unity = js.native
 }
@@ -18,21 +19,9 @@ object External {
   }
   
   @scala.inline
-  implicit class ExternalOps[Self <: External] (val x: Self) extends AnyVal {
+  implicit class ExternalMutableBuilder[Self <: External] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetUnityObject(value: Double => Unity): Self = this.set("getUnityObject", js.Any.fromFunction1(value))
+    def setGetUnityObject(value: Double => Unity): Self = StObject.set(x, "getUnityObject", js.Any.fromFunction1(value))
   }
 }

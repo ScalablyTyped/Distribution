@@ -2,6 +2,7 @@ package typings.senchaTouch.global.Ext
 
 import typings.senchaTouch.Ext.IComponent
 import typings.senchaTouch.Ext.IContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +12,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ComponentQuery ()
   extends typings.senchaTouch.Ext.ComponentQuery
 /* static members */
-@JSGlobal("Ext.ComponentQuery")
-@js.native
-object ComponentQuery extends js.Object {
+object ComponentQuery {
   
   /** [Method] Tests whether the passed Component matches the selector string
     * @param component Ext.Component The Component to test.
     * @param selector String The selector string to test against.
     * @returns Boolean true if the Component matches the selector.
     */
+  @JSGlobal("Ext.ComponentQuery.is")
+  @js.native
   def is(): Boolean = js.native
+  @JSGlobal("Ext.ComponentQuery.is")
+  @js.native
   def is(component: js.UndefOr[scala.Nothing], selector: java.lang.String): Boolean = js.native
+  @JSGlobal("Ext.ComponentQuery.is")
+  @js.native
   def is(component: IComponent): Boolean = js.native
+  @JSGlobal("Ext.ComponentQuery.is")
+  @js.native
   def is(component: IComponent, selector: java.lang.String): Boolean = js.native
   
   /** [Method] Returns an array of matched Components from within the passed root object
@@ -30,8 +37,16 @@ object ComponentQuery extends js.Object {
     * @param root Ext.Container The Container within which to perform the query. If omitted, all Components within the document are included in the search. This parameter may also be an array of Components to filter according to the selector.
     * @returns Ext.Component[] The matched Components.
     */
+  @JSGlobal("Ext.ComponentQuery.query")
+  @js.native
   def query(): typings.senchaTouch.Ext.Array = js.native
+  @JSGlobal("Ext.ComponentQuery.query")
+  @js.native
   def query(selector: js.UndefOr[scala.Nothing], root: IContainer): typings.senchaTouch.Ext.Array = js.native
+  @JSGlobal("Ext.ComponentQuery.query")
+  @js.native
   def query(selector: java.lang.String): typings.senchaTouch.Ext.Array = js.native
+  @JSGlobal("Ext.ComponentQuery.query")
+  @js.native
   def query(selector: java.lang.String, root: IContainer): typings.senchaTouch.Ext.Array = js.native
 }

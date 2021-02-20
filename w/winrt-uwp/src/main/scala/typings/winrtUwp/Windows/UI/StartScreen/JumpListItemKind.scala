@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.StartScreen
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JumpListItemKind extends js.Object
+sealed trait JumpListItemKind extends StObject
 /** Specifies the kind of jump list item. */
 @JSGlobal("Windows.UI.StartScreen.JumpListItemKind")
 @js.native
-object JumpListItemKind extends js.Object {
+object JumpListItemKind extends StObject {
   
   /** Indicates a jump list item that includes arguments. */
   @js.native

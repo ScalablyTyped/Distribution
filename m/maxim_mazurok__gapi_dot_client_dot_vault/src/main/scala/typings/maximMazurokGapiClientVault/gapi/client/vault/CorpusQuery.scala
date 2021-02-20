@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVault.gapi.client.vault
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CorpusQuery extends js.Object {
+trait CorpusQuery extends StObject {
   
   /** Details pertaining to Drive holds. If set, corpus must be Drive. */
   var driveQuery: js.UndefOr[HeldDriveQuery] = js.native
@@ -28,42 +29,30 @@ object CorpusQuery {
   }
   
   @scala.inline
-  implicit class CorpusQueryOps[Self <: CorpusQuery] (val x: Self) extends AnyVal {
+  implicit class CorpusQueryMutableBuilder[Self <: CorpusQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriveQuery(value: HeldDriveQuery): Self = StObject.set(x, "driveQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDriveQueryUndefined: Self = StObject.set(x, "driveQuery", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupsQuery(value: HeldGroupsQuery): Self = StObject.set(x, "groupsQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveQuery(value: HeldDriveQuery): Self = this.set("driveQuery", value.asInstanceOf[js.Any])
+    def setGroupsQueryUndefined: Self = StObject.set(x, "groupsQuery", js.undefined)
     
     @scala.inline
-    def deleteDriveQuery: Self = this.set("driveQuery", js.undefined)
+    def setHangoutsChatQuery(value: HeldHangoutsChatQuery): Self = StObject.set(x, "hangoutsChatQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsQuery(value: HeldGroupsQuery): Self = this.set("groupsQuery", value.asInstanceOf[js.Any])
+    def setHangoutsChatQueryUndefined: Self = StObject.set(x, "hangoutsChatQuery", js.undefined)
     
     @scala.inline
-    def deleteGroupsQuery: Self = this.set("groupsQuery", js.undefined)
+    def setMailQuery(value: HeldMailQuery): Self = StObject.set(x, "mailQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHangoutsChatQuery(value: HeldHangoutsChatQuery): Self = this.set("hangoutsChatQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHangoutsChatQuery: Self = this.set("hangoutsChatQuery", js.undefined)
-    
-    @scala.inline
-    def setMailQuery(value: HeldMailQuery): Self = this.set("mailQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMailQuery: Self = this.set("mailQuery", js.undefined)
+    def setMailQueryUndefined: Self = StObject.set(x, "mailQuery", js.undefined)
   }
 }

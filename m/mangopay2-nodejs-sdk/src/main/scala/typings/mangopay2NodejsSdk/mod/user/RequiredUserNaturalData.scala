@@ -1,5 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.user
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CountryOfResidence
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Email
 */
-trait RequiredUserNaturalData extends js.Object
+trait RequiredUserNaturalData extends StObject
 object RequiredUserNaturalData {
   
   @scala.inline

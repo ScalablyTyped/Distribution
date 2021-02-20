@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1ListDatasetsResponse extends js.Object {
+trait GoogleCloudDatalabelingV1beta1ListDatasetsResponse extends StObject {
   
   /** The list of datasets to return. */
   var datasets: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1Dataset]] = js.native
@@ -22,33 +23,21 @@ object GoogleCloudDatalabelingV1beta1ListDatasetsResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ListDatasetsResponseOps[Self <: GoogleCloudDatalabelingV1beta1ListDatasetsResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1ListDatasetsResponseMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ListDatasetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasets(value: js.Array[GoogleCloudDatalabelingV1beta1Dataset]): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatasetsVarargs(value: GoogleCloudDatalabelingV1beta1Dataset*): Self = StObject.set(x, "datasets", js.Array(value :_*))
     
     @scala.inline
-    def setDatasetsVarargs(value: GoogleCloudDatalabelingV1beta1Dataset*): Self = this.set("datasets", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasets(value: js.Array[GoogleCloudDatalabelingV1beta1Dataset]): Self = this.set("datasets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDatasets: Self = this.set("datasets", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,15 +13,26 @@ class Pager protected ()
   extends typings.ejWebAll.ej.Pager {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Pager.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Pager.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.Pager")
-@js.native
-object Pager extends js.Object {
+object Pager {
   
-  var Locale: js.Any = js.native
+  @JSGlobal("ej.Pager")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var fn: typings.ejWebAll.ej.Pager = js.native
+  /* static member */
+  @JSGlobal("ej.Pager.Locale")
+  @js.native
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("ej.Pager.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.Pager = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.Pager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

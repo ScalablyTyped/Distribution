@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Google Tag Manager Macro.
   */
 @js.native
-trait SchemaMacro extends js.Object {
+trait SchemaMacro extends StObject {
   
   /**
     * GTM Account ID.
@@ -89,105 +90,93 @@ object SchemaMacro {
   }
   
   @scala.inline
-  implicit class SchemaMacroOps[Self <: SchemaMacro] (val x: Self) extends AnyVal {
+  implicit class SchemaMacroMutableBuilder[Self <: SchemaMacro] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setDisablingRuleId(value: js.Array[String]): Self = StObject.set(x, "disablingRuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    def setDisablingRuleIdUndefined: Self = StObject.set(x, "disablingRuleId", js.undefined)
     
     @scala.inline
-    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    def setDisablingRuleIdVarargs(value: String*): Self = StObject.set(x, "disablingRuleId", js.Array(value :_*))
     
     @scala.inline
-    def setDisablingRuleIdVarargs(value: String*): Self = this.set("disablingRuleId", js.Array(value :_*))
+    def setEnablingRuleId(value: js.Array[String]): Self = StObject.set(x, "enablingRuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablingRuleId(value: js.Array[String]): Self = this.set("disablingRuleId", value.asInstanceOf[js.Any])
+    def setEnablingRuleIdUndefined: Self = StObject.set(x, "enablingRuleId", js.undefined)
     
     @scala.inline
-    def deleteDisablingRuleId: Self = this.set("disablingRuleId", js.undefined)
+    def setEnablingRuleIdVarargs(value: String*): Self = StObject.set(x, "enablingRuleId", js.Array(value :_*))
     
     @scala.inline
-    def setEnablingRuleIdVarargs(value: String*): Self = this.set("enablingRuleId", js.Array(value :_*))
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablingRuleId(value: js.Array[String]): Self = this.set("enablingRuleId", value.asInstanceOf[js.Any])
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def deleteEnablingRuleId: Self = this.set("enablingRuleId", js.undefined)
+    def setMacroId(value: String): Self = StObject.set(x, "macroId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setMacroIdUndefined: Self = StObject.set(x, "macroId", js.undefined)
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMacroId(value: String): Self = this.set("macroId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMacroId: Self = this.set("macroId", js.undefined)
+    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParameter(value: js.Array[SchemaParameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setParameterVarargs(value: SchemaParameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
     
     @scala.inline
-    def setParameterVarargs(value: SchemaParameter*): Self = this.set("parameter", js.Array(value :_*))
+    def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameter(value: js.Array[SchemaParameter]): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
     
     @scala.inline
-    def deleteParameter: Self = this.set("parameter", js.undefined)
+    def setScheduleEndMs(value: String): Self = StObject.set(x, "scheduleEndMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentFolderId(value: String): Self = this.set("parentFolderId", value.asInstanceOf[js.Any])
+    def setScheduleEndMsUndefined: Self = StObject.set(x, "scheduleEndMs", js.undefined)
     
     @scala.inline
-    def deleteParentFolderId: Self = this.set("parentFolderId", js.undefined)
+    def setScheduleStartMs(value: String): Self = StObject.set(x, "scheduleStartMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleEndMs(value: String): Self = this.set("scheduleEndMs", value.asInstanceOf[js.Any])
+    def setScheduleStartMsUndefined: Self = StObject.set(x, "scheduleStartMs", js.undefined)
     
     @scala.inline
-    def deleteScheduleEndMs: Self = this.set("scheduleEndMs", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleStartMs(value: String): Self = this.set("scheduleStartMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleStartMs: Self = this.set("scheduleStartMs", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

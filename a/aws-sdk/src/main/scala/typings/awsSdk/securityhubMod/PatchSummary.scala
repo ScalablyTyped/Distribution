@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchSummary extends js.Object {
+trait PatchSummary extends StObject {
   
   /**
     * The number of patches from the compliance standard that failed to install.
@@ -71,81 +72,69 @@ object PatchSummary {
   }
   
   @scala.inline
-  implicit class PatchSummaryOps[Self <: PatchSummary] (val x: Self) extends AnyVal {
+  implicit class PatchSummaryMutableBuilder[Self <: PatchSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedCount(value: Integer): Self = StObject.set(x, "FailedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedCountUndefined: Self = StObject.set(x, "FailedCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: NonEmptyString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: NonEmptyString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setInstalledCount(value: Integer): Self = StObject.set(x, "InstalledCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedCount(value: Integer): Self = this.set("FailedCount", value.asInstanceOf[js.Any])
+    def setInstalledCountUndefined: Self = StObject.set(x, "InstalledCount", js.undefined)
     
     @scala.inline
-    def deleteFailedCount: Self = this.set("FailedCount", js.undefined)
+    def setInstalledOtherCount(value: Integer): Self = StObject.set(x, "InstalledOtherCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalledCount(value: Integer): Self = this.set("InstalledCount", value.asInstanceOf[js.Any])
+    def setInstalledOtherCountUndefined: Self = StObject.set(x, "InstalledOtherCount", js.undefined)
     
     @scala.inline
-    def deleteInstalledCount: Self = this.set("InstalledCount", js.undefined)
+    def setInstalledPendingReboot(value: Integer): Self = StObject.set(x, "InstalledPendingReboot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalledOtherCount(value: Integer): Self = this.set("InstalledOtherCount", value.asInstanceOf[js.Any])
+    def setInstalledPendingRebootUndefined: Self = StObject.set(x, "InstalledPendingReboot", js.undefined)
     
     @scala.inline
-    def deleteInstalledOtherCount: Self = this.set("InstalledOtherCount", js.undefined)
+    def setInstalledRejectedCount(value: Integer): Self = StObject.set(x, "InstalledRejectedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalledPendingReboot(value: Integer): Self = this.set("InstalledPendingReboot", value.asInstanceOf[js.Any])
+    def setInstalledRejectedCountUndefined: Self = StObject.set(x, "InstalledRejectedCount", js.undefined)
     
     @scala.inline
-    def deleteInstalledPendingReboot: Self = this.set("InstalledPendingReboot", js.undefined)
+    def setMissingCount(value: Integer): Self = StObject.set(x, "MissingCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalledRejectedCount(value: Integer): Self = this.set("InstalledRejectedCount", value.asInstanceOf[js.Any])
+    def setMissingCountUndefined: Self = StObject.set(x, "MissingCount", js.undefined)
     
     @scala.inline
-    def deleteInstalledRejectedCount: Self = this.set("InstalledRejectedCount", js.undefined)
+    def setOperation(value: NonEmptyString): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissingCount(value: Integer): Self = this.set("MissingCount", value.asInstanceOf[js.Any])
+    def setOperationEndTime(value: NonEmptyString): Self = StObject.set(x, "OperationEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMissingCount: Self = this.set("MissingCount", js.undefined)
+    def setOperationEndTimeUndefined: Self = StObject.set(x, "OperationEndTime", js.undefined)
     
     @scala.inline
-    def setOperation(value: NonEmptyString): Self = this.set("Operation", value.asInstanceOf[js.Any])
+    def setOperationStartTime(value: NonEmptyString): Self = StObject.set(x, "OperationStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperation: Self = this.set("Operation", js.undefined)
+    def setOperationStartTimeUndefined: Self = StObject.set(x, "OperationStartTime", js.undefined)
     
     @scala.inline
-    def setOperationEndTime(value: NonEmptyString): Self = this.set("OperationEndTime", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "Operation", js.undefined)
     
     @scala.inline
-    def deleteOperationEndTime: Self = this.set("OperationEndTime", js.undefined)
+    def setRebootOption(value: NonEmptyString): Self = StObject.set(x, "RebootOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationStartTime(value: NonEmptyString): Self = this.set("OperationStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationStartTime: Self = this.set("OperationStartTime", js.undefined)
-    
-    @scala.inline
-    def setRebootOption(value: NonEmptyString): Self = this.set("RebootOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRebootOption: Self = this.set("RebootOption", js.undefined)
+    def setRebootOptionUndefined: Self = StObject.set(x, "RebootOption", js.undefined)
   }
 }

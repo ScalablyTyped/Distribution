@@ -2,38 +2,43 @@ package typings.winrt.global.Windows.Media
 
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import typings.winrt.Windows.Media.Protection.RenewalStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Protection")
-@js.native
-object Protection extends js.Object {
+object Protection {
   
+  @JSGlobal("Windows.Media.Protection.ComponentLoadFailedEventArgs")
   @js.native
   class ComponentLoadFailedEventArgs ()
     extends typings.winrt.Windows.Media.Protection.ComponentLoadFailedEventArgs
   
+  @JSGlobal("Windows.Media.Protection.ComponentRenewal")
   @js.native
   class ComponentRenewal ()
     extends typings.winrt.Windows.Media.Protection.ComponentRenewal
   /* static members */
-  @js.native
-  object ComponentRenewal extends js.Object {
+  object ComponentRenewal {
     
+    @JSGlobal("Windows.Media.Protection.ComponentRenewal.renewSystemComponentsAsync")
+    @js.native
     def renewSystemComponentsAsync(information: typings.winrt.Windows.Media.Protection.RevocationAndRenewalInformation): IAsyncOperationWithProgress[RenewalStatus, Double] = js.native
   }
   
+  @JSGlobal("Windows.Media.Protection.MediaProtectionManager")
   @js.native
   class MediaProtectionManager ()
     extends typings.winrt.Windows.Media.Protection.MediaProtectionManager
   
+  @JSGlobal("Windows.Media.Protection.MediaProtectionServiceCompletion")
   @js.native
   class MediaProtectionServiceCompletion ()
     extends typings.winrt.Windows.Media.Protection.MediaProtectionServiceCompletion
   
+  @JSGlobal("Windows.Media.Protection.RenewalStatus")
   @js.native
-  object RenewalStatus extends js.Object {
+  object RenewalStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Protection.RenewalStatus with Double] = js.native
@@ -49,16 +54,19 @@ object Protection extends js.Object {
     /* 2 */ val userCancelled: typings.winrt.Windows.Media.Protection.RenewalStatus.userCancelled with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Protection.RevocationAndRenewalInformation")
   @js.native
   class RevocationAndRenewalInformation ()
     extends typings.winrt.Windows.Media.Protection.RevocationAndRenewalInformation
   
+  @JSGlobal("Windows.Media.Protection.RevocationAndRenewalItem")
   @js.native
   class RevocationAndRenewalItem ()
     extends typings.winrt.Windows.Media.Protection.RevocationAndRenewalItem
   
+  @JSGlobal("Windows.Media.Protection.RevocationAndRenewalReasons")
   @js.native
-  object RevocationAndRenewalReasons extends js.Object {
+  object RevocationAndRenewalReasons extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons with Double] = js.native
@@ -94,6 +102,7 @@ object Protection extends js.Object {
     /* 0 */ val userModeComponentLoad: typings.winrt.Windows.Media.Protection.RevocationAndRenewalReasons.userModeComponentLoad with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Protection.ServiceRequestedEventArgs")
   @js.native
   class ServiceRequestedEventArgs ()
     extends typings.winrt.Windows.Media.Protection.ServiceRequestedEventArgs

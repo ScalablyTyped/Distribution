@@ -1,5 +1,6 @@
 package typings.workerbApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.workerbApi.workerbApiStrings.by_label
   - typings.workerbApi.workerbApiStrings.by_placeholder
 */
-trait typeQueryMethods extends js.Object
+trait typeQueryMethods extends StObject
 object typeQueryMethods {
   
   @scala.inline

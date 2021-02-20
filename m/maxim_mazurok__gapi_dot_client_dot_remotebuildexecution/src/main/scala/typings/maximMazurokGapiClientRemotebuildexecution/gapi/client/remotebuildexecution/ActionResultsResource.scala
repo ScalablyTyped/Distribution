@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientRemotebuildexecution.anon.Accesstoken
 import typings.maximMazurokGapiClientRemotebuildexecution.anon.Alt
 import typings.maximMazurokGapiClientRemotebuildexecution.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionResultsResource extends js.Object {
+trait ActionResultsResource extends StObject {
   
   /**
     * Retrieve a cached execution result. Implementations SHOULD ensure that any blobs referenced from the ContentAddressableStorage are available at the time of returning the

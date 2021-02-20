@@ -8,6 +8,7 @@ import typings.trtcJsSdk.trtcJsSdkStrings.motion
 import typings.trtcJsSdk.trtcJsSdkStrings.standard
 import typings.trtcJsSdk.trtcJsSdkStrings.text
 import typings.trtcJsSdk.trtcJsSdkStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

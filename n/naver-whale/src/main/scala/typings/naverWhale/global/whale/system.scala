@@ -1,12 +1,11 @@
 package typings.naverWhale.global.whale
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("whale.system")
-@js.native
-object system extends js.Object {
+object system {
   
   ////////////////////
   // System CPU
@@ -16,8 +15,7 @@ object system extends js.Object {
     * Permissions: "system.cpu"
     * @since Chrome 32.
     */
-  @js.native
-  object cpu extends js.Object
+  object cpu
   
   ////////////////////
   // System Memory
@@ -27,8 +25,7 @@ object system extends js.Object {
     * Permissions:  "system.memory"
     * @since Chrome 32.
     */
-  @js.native
-  object memory extends js.Object
+  object memory
   
   ////////////////////
   // System Storage
@@ -38,6 +35,5 @@ object system extends js.Object {
     * Permissions:  "system.storage"
     * @since Chrome 30.
     */
-  @js.native
-  object storage extends js.Object
+  object storage
 }

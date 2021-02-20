@@ -1,5 +1,6 @@
 package typings.cordovaPluginQrscanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 * deallocate a native QR code scanner and video preview behind the Cordova webview.
 */
 @js.native
-trait QRScanner extends js.Object {
+trait QRScanner extends StObject {
   
   /**
     * Cancels the current scan. If `QRScanner.prepare()` has not been called,

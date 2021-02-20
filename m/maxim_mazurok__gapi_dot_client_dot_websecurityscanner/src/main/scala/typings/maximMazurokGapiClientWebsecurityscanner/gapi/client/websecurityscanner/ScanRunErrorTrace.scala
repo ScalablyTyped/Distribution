@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurityscanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScanRunErrorTrace extends js.Object {
+trait ScanRunErrorTrace extends StObject {
   
   /** Output only. Indicates the error reason code. */
   var code: js.UndefOr[String] = js.native
@@ -31,36 +32,24 @@ object ScanRunErrorTrace {
   }
   
   @scala.inline
-  implicit class ScanRunErrorTraceOps[Self <: ScanRunErrorTrace] (val x: Self) extends AnyVal {
+  implicit class ScanRunErrorTraceMutableBuilder[Self <: ScanRunErrorTrace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMostCommonHttpErrorCode(value: Double): Self = StObject.set(x, "mostCommonHttpErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setMostCommonHttpErrorCodeUndefined: Self = StObject.set(x, "mostCommonHttpErrorCode", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setScanConfigError(value: ScanConfigError): Self = StObject.set(x, "scanConfigError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMostCommonHttpErrorCode(value: Double): Self = this.set("mostCommonHttpErrorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMostCommonHttpErrorCode: Self = this.set("mostCommonHttpErrorCode", js.undefined)
-    
-    @scala.inline
-    def setScanConfigError(value: ScanConfigError): Self = this.set("scanConfigError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanConfigError: Self = this.set("scanConfigError", js.undefined)
+    def setScanConfigErrorUndefined: Self = StObject.set(x, "scanConfigError", js.undefined)
   }
 }

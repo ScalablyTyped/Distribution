@@ -1,11 +1,12 @@
 package typings.scrollmagic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PinSettings extends js.Object {
+trait PinSettings extends StObject {
   
   var pushFollowers: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object PinSettings {
   }
   
   @scala.inline
-  implicit class PinSettingsOps[Self <: PinSettings] (val x: Self) extends AnyVal {
+  implicit class PinSettingsMutableBuilder[Self <: PinSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPushFollowers(value: Boolean): Self = StObject.set(x, "pushFollowers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPushFollowersUndefined: Self = StObject.set(x, "pushFollowers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpacerClass(value: String): Self = StObject.set(x, "spacerClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushFollowers(value: Boolean): Self = this.set("pushFollowers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePushFollowers: Self = this.set("pushFollowers", js.undefined)
-    
-    @scala.inline
-    def setSpacerClass(value: String): Self = this.set("spacerClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacerClass: Self = this.set("spacerClass", js.undefined)
+    def setSpacerClassUndefined: Self = StObject.set(x, "spacerClass", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.reactNativeFirebase.mod
 
 import typings.reactNativeFirebase.mod.RNFirebase.functions.Functions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-firebase.react-native-firebase.FirebaseModuleAndStatics<react-native-firebase.react-native-firebase.RNFirebase.functions.Functions, react-native-firebase.react-native-firebase.RNFirebase.functions.FunctionsStatics> */
 @js.native
-trait FunctionsModule extends js.Object {
+trait FunctionsModule extends StObject {
   
   def apply(): Functions = js.native
   def apply(appOrRegion: js.UndefOr[scala.Nothing], region: String): Functions = js.native

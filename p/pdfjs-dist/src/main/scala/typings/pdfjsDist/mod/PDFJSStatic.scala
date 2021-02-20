@@ -1,11 +1,12 @@
 package typings.pdfjsDist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFJSStatic extends js.Object {
+trait PDFJSStatic extends StObject {
   
   /**
     * yet another viewer, this will render only one page at the time, reducing rendering time
@@ -177,87 +178,75 @@ object PDFJSStatic {
   }
   
   @scala.inline
-  implicit class PDFJSStaticOps[Self <: PDFJSStatic] (val x: Self) extends AnyVal {
+  implicit class PDFJSStaticMutableBuilder[Self <: PDFJSStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCMapPacked(value: Boolean): Self = StObject.set(x, "cMapPacked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCMapUrl(value: String): Self = StObject.set(x, "cMapUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableAutoFetch(value: Boolean): Self = StObject.set(x, "disableAutoFetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPDFSinglePageViewer(value: PDFViewerParams => Unit): Self = this.set("PDFSinglePageViewer", js.Any.fromFunction1(value))
+    def setDisableCreateObjectURL(value: Boolean): Self = StObject.set(x, "disableCreateObjectURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPDFViewer(value: PDFViewerParams => Unit): Self = this.set("PDFViewer", js.Any.fromFunction1(value))
+    def setDisableFontFace(value: Boolean): Self = StObject.set(x, "disableFontFace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCMapPacked(value: Boolean): Self = this.set("cMapPacked", value.asInstanceOf[js.Any])
+    def setDisableFullscreen(value: Boolean): Self = StObject.set(x, "disableFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCMapUrl(value: String): Self = this.set("cMapUrl", value.asInstanceOf[js.Any])
+    def setDisableRange(value: Boolean): Self = StObject.set(x, "disableRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAutoFetch(value: Boolean): Self = this.set("disableAutoFetch", value.asInstanceOf[js.Any])
+    def setDisableStream(value: Boolean): Self = StObject.set(x, "disableStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableCreateObjectURL(value: Boolean): Self = this.set("disableCreateObjectURL", value.asInstanceOf[js.Any])
+    def setDisableTextLayer(value: Boolean): Self = StObject.set(x, "disableTextLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableFontFace(value: Boolean): Self = this.set("disableFontFace", value.asInstanceOf[js.Any])
+    def setDisableWebGL(value: Boolean): Self = StObject.set(x, "disableWebGL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableFullscreen(value: Boolean): Self = this.set("disableFullscreen", value.asInstanceOf[js.Any])
+    def setDisableWorker(value: Boolean): Self = StObject.set(x, "disableWorker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableRange(value: Boolean): Self = this.set("disableRange", value.asInstanceOf[js.Any])
+    def setImageResourcesPath(value: String): Self = StObject.set(x, "imageResourcesPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStream(value: Boolean): Self = this.set("disableStream", value.asInstanceOf[js.Any])
+    def setIsEvalSupported(value: Boolean): Self = StObject.set(x, "isEvalSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableTextLayer(value: Boolean): Self = this.set("disableTextLayer", value.asInstanceOf[js.Any])
+    def setMaxCanvasPixels(value: Double): Self = StObject.set(x, "maxCanvasPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableWebGL(value: Boolean): Self = this.set("disableWebGL", value.asInstanceOf[js.Any])
+    def setMaxImageSize(value: Double): Self = StObject.set(x, "maxImageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableWorker(value: Boolean): Self = this.set("disableWorker", value.asInstanceOf[js.Any])
+    def setOpenExternalLinksInNewWindow(value: Boolean): Self = StObject.set(x, "openExternalLinksInNewWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageResourcesPath(value: String): Self = this.set("imageResourcesPath", value.asInstanceOf[js.Any])
+    def setPDFSinglePageViewer(value: PDFViewerParams => Unit): Self = StObject.set(x, "PDFSinglePageViewer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsEvalSupported(value: Boolean): Self = this.set("isEvalSupported", value.asInstanceOf[js.Any])
+    def setPDFViewer(value: PDFViewerParams => Unit): Self = StObject.set(x, "PDFViewer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxCanvasPixels(value: Double): Self = this.set("maxCanvasPixels", value.asInstanceOf[js.Any])
+    def setPdfBug(value: Boolean): Self = StObject.set(x, "pdfBug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxImageSize(value: Double): Self = this.set("maxImageSize", value.asInstanceOf[js.Any])
+    def setPostMessageTransfers(value: Boolean): Self = StObject.set(x, "postMessageTransfers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenExternalLinksInNewWindow(value: Boolean): Self = this.set("openExternalLinksInNewWindow", value.asInstanceOf[js.Any])
+    def setUseOnlyCssZoom(value: Boolean): Self = StObject.set(x, "useOnlyCssZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPdfBug(value: Boolean): Self = this.set("pdfBug", value.asInstanceOf[js.Any])
+    def setVerbosity(value: Double): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostMessageTransfers(value: Boolean): Self = this.set("postMessageTransfers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseOnlyCssZoom(value: Boolean): Self = this.set("useOnlyCssZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerbosity(value: Double): Self = this.set("verbosity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerSrc(value: String): Self = this.set("workerSrc", value.asInstanceOf[js.Any])
+    def setWorkerSrc(value: String): Self = StObject.set(x, "workerSrc", value.asInstanceOf[js.Any])
   }
 }

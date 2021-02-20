@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelationalDatabaseSnapshot extends js.Object {
+trait RelationalDatabaseSnapshot extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the database snapshot.
@@ -91,111 +92,99 @@ object RelationalDatabaseSnapshot {
   }
   
   @scala.inline
-  implicit class RelationalDatabaseSnapshotOps[Self <: RelationalDatabaseSnapshot] (val x: Self) extends AnyVal {
+  implicit class RelationalDatabaseSnapshotMutableBuilder[Self <: RelationalDatabaseSnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setEngine(value: NonEmptyString): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setEngineVersion(value: NonEmptyString): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: NonEmptyString): Self = this.set("engine", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("engine", js.undefined)
+    def setFromRelationalDatabaseArn(value: NonEmptyString): Self = StObject.set(x, "fromRelationalDatabaseArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: NonEmptyString): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    def setFromRelationalDatabaseArnUndefined: Self = StObject.set(x, "fromRelationalDatabaseArn", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    def setFromRelationalDatabaseBlueprintId(value: String): Self = StObject.set(x, "fromRelationalDatabaseBlueprintId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromRelationalDatabaseArn(value: NonEmptyString): Self = this.set("fromRelationalDatabaseArn", value.asInstanceOf[js.Any])
+    def setFromRelationalDatabaseBlueprintIdUndefined: Self = StObject.set(x, "fromRelationalDatabaseBlueprintId", js.undefined)
     
     @scala.inline
-    def deleteFromRelationalDatabaseArn: Self = this.set("fromRelationalDatabaseArn", js.undefined)
+    def setFromRelationalDatabaseBundleId(value: String): Self = StObject.set(x, "fromRelationalDatabaseBundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromRelationalDatabaseBlueprintId(value: String): Self = this.set("fromRelationalDatabaseBlueprintId", value.asInstanceOf[js.Any])
+    def setFromRelationalDatabaseBundleIdUndefined: Self = StObject.set(x, "fromRelationalDatabaseBundleId", js.undefined)
     
     @scala.inline
-    def deleteFromRelationalDatabaseBlueprintId: Self = this.set("fromRelationalDatabaseBlueprintId", js.undefined)
+    def setFromRelationalDatabaseName(value: NonEmptyString): Self = StObject.set(x, "fromRelationalDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromRelationalDatabaseBundleId(value: String): Self = this.set("fromRelationalDatabaseBundleId", value.asInstanceOf[js.Any])
+    def setFromRelationalDatabaseNameUndefined: Self = StObject.set(x, "fromRelationalDatabaseName", js.undefined)
     
     @scala.inline
-    def deleteFromRelationalDatabaseBundleId: Self = this.set("fromRelationalDatabaseBundleId", js.undefined)
+    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromRelationalDatabaseName(value: NonEmptyString): Self = this.set("fromRelationalDatabaseName", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteFromRelationalDatabaseName: Self = this.set("fromRelationalDatabaseName", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setSizeInGbUndefined: Self = StObject.set(x, "sizeInGb", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setState(value: NonEmptyString): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeInGb(value: integer): Self = this.set("sizeInGb", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteSizeInGb: Self = this.set("sizeInGb", js.undefined)
+    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: NonEmptyString): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

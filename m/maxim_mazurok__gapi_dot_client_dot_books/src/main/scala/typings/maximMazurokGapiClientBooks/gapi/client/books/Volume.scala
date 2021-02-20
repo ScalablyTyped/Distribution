@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientBooks.anon.BuyLink
 import typings.maximMazurokGapiClientBooks.anon.Explanation
 import typings.maximMazurokGapiClientBooks.anon.Layers
 import typings.maximMazurokGapiClientBooks.anon.TextSnippet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Volume extends js.Object {
+trait Volume extends StObject {
   
   /**
     * Any information about a volume related to reading or obtaining that volume text. This information can depend on country (books may be public domain in one country but not in
@@ -62,84 +63,72 @@ object Volume {
   }
   
   @scala.inline
-  implicit class VolumeOps[Self <: Volume] (val x: Self) extends AnyVal {
+  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessInfo(value: AccessViewStatus): Self = StObject.set(x, "accessInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessInfoUndefined: Self = StObject.set(x, "accessInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessInfo(value: AccessViewStatus): Self = this.set("accessInfo", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteAccessInfo: Self = this.set("accessInfo", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLayerInfo(value: Layers): Self = StObject.set(x, "layerInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLayerInfoUndefined: Self = StObject.set(x, "layerInfo", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRecommendedInfo(value: Explanation): Self = StObject.set(x, "recommendedInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerInfo(value: Layers): Self = this.set("layerInfo", value.asInstanceOf[js.Any])
+    def setRecommendedInfoUndefined: Self = StObject.set(x, "recommendedInfo", js.undefined)
     
     @scala.inline
-    def deleteLayerInfo: Self = this.set("layerInfo", js.undefined)
+    def setSaleInfo(value: BuyLink): Self = StObject.set(x, "saleInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendedInfo(value: Explanation): Self = this.set("recommendedInfo", value.asInstanceOf[js.Any])
+    def setSaleInfoUndefined: Self = StObject.set(x, "saleInfo", js.undefined)
     
     @scala.inline
-    def deleteRecommendedInfo: Self = this.set("recommendedInfo", js.undefined)
+    def setSearchInfo(value: TextSnippet): Self = StObject.set(x, "searchInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaleInfo(value: BuyLink): Self = this.set("saleInfo", value.asInstanceOf[js.Any])
+    def setSearchInfoUndefined: Self = StObject.set(x, "searchInfo", js.undefined)
     
     @scala.inline
-    def deleteSaleInfo: Self = this.set("saleInfo", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchInfo(value: TextSnippet): Self = this.set("searchInfo", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteSearchInfo: Self = this.set("searchInfo", js.undefined)
+    def setUserInfo(value: AcquiredTime): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setVolumeInfo(value: AllowAnonLogging): Self = StObject.set(x, "volumeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserInfo(value: AcquiredTime): Self = this.set("userInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInfo: Self = this.set("userInfo", js.undefined)
-    
-    @scala.inline
-    def setVolumeInfo(value: AllowAnonLogging): Self = this.set("volumeInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeInfo: Self = this.set("volumeInfo", js.undefined)
+    def setVolumeInfoUndefined: Self = StObject.set(x, "volumeInfo", js.undefined)
   }
 }

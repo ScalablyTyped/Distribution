@@ -5,12 +5,13 @@ import typings.jqueryValidation.JQueryValidation.ValidationOptions
 import typings.jqueryValidation.JQueryValidation.Validator
 import typings.jqueryValidation.jqueryValidationStrings.add
 import typings.jqueryValidation.jqueryValidationStrings.remove
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * Remove the specified attributes from the first matched element and return them.
@@ -19,7 +20,7 @@ trait JQuery extends js.Object {
     */
   def removeAttrs(attributes: String): js.Any = js.native
   
-   // tslint:disable-line unified-signatures
+  // tslint:disable-line unified-signatures
   /**
     * Returns the validation rules for teh first selected element.
     */
@@ -34,7 +35,7 @@ trait JQuery extends js.Object {
   def rules_add(command: add): js.Any = js.native
   @JSName("rules")
   def rules_add(command: add, rules: RulesDictionary): js.Any = js.native
-   // tslint:disable-line unified-signatures
+  // tslint:disable-line unified-signatures
   /**
     * Removes the specified rules and returns all rules for the first matched element.
     * @param command "remove"

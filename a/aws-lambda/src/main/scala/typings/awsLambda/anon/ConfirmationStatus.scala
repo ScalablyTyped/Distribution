@@ -5,12 +5,13 @@ import typings.awsLambda.awsLambdaStrings.Confirmed_
 import typings.awsLambda.awsLambdaStrings.Denied
 import typings.awsLambda.awsLambdaStrings.None
 import typings.awsLambda.lexMod.LexSlotDetails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfirmationStatus extends js.Object {
+trait ConfirmationStatus extends StObject {
   
   var confirmationStatus: None | Confirmed_ | Denied = js.native
   
@@ -34,30 +35,18 @@ object ConfirmationStatus {
   }
   
   @scala.inline
-  implicit class ConfirmationStatusOps[Self <: ConfirmationStatus] (val x: Self) extends AnyVal {
+  implicit class ConfirmationStatusMutableBuilder[Self <: ConfirmationStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirmationStatus(value: None | Confirmed_ | Denied): Self = StObject.set(x, "confirmationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSlotDetails(value: LexSlotDetails): Self = StObject.set(x, "slotDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmationStatus(value: None | Confirmed_ | Denied): Self = this.set("confirmationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlotDetails(value: LexSlotDetails): Self = this.set("slotDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlots(value: StringDictionary[String | Null]): Self = this.set("slots", value.asInstanceOf[js.Any])
+    def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
   }
 }

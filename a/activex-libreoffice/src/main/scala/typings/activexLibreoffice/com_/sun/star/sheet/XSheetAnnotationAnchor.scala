@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,24 +36,12 @@ object XSheetAnnotationAnchor {
   }
   
   @scala.inline
-  implicit class XSheetAnnotationAnchorOps[Self <: XSheetAnnotationAnchor] (val x: Self) extends AnyVal {
+  implicit class XSheetAnnotationAnchorMutableBuilder[Self <: XSheetAnnotationAnchor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation(value: XSheetAnnotation): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnnotation(value: XSheetAnnotation): Self = this.set("Annotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetAnnotation(value: () => XSheetAnnotation): Self = this.set("getAnnotation", js.Any.fromFunction0(value))
+    def setGetAnnotation(value: () => XSheetAnnotation): Self = StObject.set(x, "getAnnotation", js.Any.fromFunction0(value))
   }
 }

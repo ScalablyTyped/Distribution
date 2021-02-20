@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   var aggregated: AggregatedResource = js.native
   
@@ -22,27 +23,15 @@ object ProjectsResource {
   }
   
   @scala.inline
-  implicit class ProjectsResourceOps[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregated(value: AggregatedResource): Self = StObject.set(x, "aggregated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAggregated(value: AggregatedResource): Self = this.set("aggregated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocations(value: LocationsResource): Self = this.set("locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZones(value: ZonesResource): Self = this.set("zones", value.asInstanceOf[js.Any])
+    def setZones(value: ZonesResource): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
   }
 }

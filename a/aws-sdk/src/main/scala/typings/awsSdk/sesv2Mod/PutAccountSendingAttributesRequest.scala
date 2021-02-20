@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutAccountSendingAttributesRequest extends js.Object {
+trait PutAccountSendingAttributesRequest extends StObject {
   
   /**
     * Enables or disables your account's ability to send email. Set to true to enable email sending, or set to false to disable email sending.  If AWS paused your account's ability to send email, you can't use this operation to resume your account's ability to send email. 
@@ -21,24 +22,12 @@ object PutAccountSendingAttributesRequest {
   }
   
   @scala.inline
-  implicit class PutAccountSendingAttributesRequestOps[Self <: PutAccountSendingAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class PutAccountSendingAttributesRequestMutableBuilder[Self <: PutAccountSendingAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSendingEnabled(value: Enabled): Self = this.set("SendingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendingEnabled: Self = this.set("SendingEnabled", js.undefined)
+    def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
   }
 }

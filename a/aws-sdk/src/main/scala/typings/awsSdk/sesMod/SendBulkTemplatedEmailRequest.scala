@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendBulkTemplatedEmailRequest extends js.Object {
+trait SendBulkTemplatedEmailRequest extends StObject {
   
   /**
     * The name of the configuration set to use when you send an email using SendBulkTemplatedEmail.
@@ -71,84 +72,72 @@ object SendBulkTemplatedEmailRequest {
   }
   
   @scala.inline
-  implicit class SendBulkTemplatedEmailRequestOps[Self <: SendBulkTemplatedEmailRequest] (val x: Self) extends AnyVal {
+  implicit class SendBulkTemplatedEmailRequestMutableBuilder[Self <: SendBulkTemplatedEmailRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultTags(value: MessageTagList): Self = StObject.set(x, "DefaultTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationsVarargs(value: BulkEmailDestination*): Self = this.set("Destinations", js.Array(value :_*))
+    def setDefaultTagsUndefined: Self = StObject.set(x, "DefaultTags", js.undefined)
     
     @scala.inline
-    def setDestinations(value: BulkEmailDestinationList): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    def setDefaultTagsVarargs(value: MessageTag*): Self = StObject.set(x, "DefaultTags", js.Array(value :_*))
     
     @scala.inline
-    def setSource(value: Address): Self = this.set("Source", value.asInstanceOf[js.Any])
+    def setDefaultTemplateData(value: TemplateData): Self = StObject.set(x, "DefaultTemplateData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: TemplateName): Self = this.set("Template", value.asInstanceOf[js.Any])
+    def setDefaultTemplateDataUndefined: Self = StObject.set(x, "DefaultTemplateData", js.undefined)
     
     @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    def setDestinations(value: BulkEmailDestinationList): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigurationSetName: Self = this.set("ConfigurationSetName", js.undefined)
+    def setDestinationsVarargs(value: BulkEmailDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultTagsVarargs(value: MessageTag*): Self = this.set("DefaultTags", js.Array(value :_*))
+    def setReplyToAddresses(value: AddressList): Self = StObject.set(x, "ReplyToAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTags(value: MessageTagList): Self = this.set("DefaultTags", value.asInstanceOf[js.Any])
+    def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
     
     @scala.inline
-    def deleteDefaultTags: Self = this.set("DefaultTags", js.undefined)
+    def setReplyToAddressesVarargs(value: Address*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultTemplateData(value: TemplateData): Self = this.set("DefaultTemplateData", value.asInstanceOf[js.Any])
+    def setReturnPath(value: Address): Self = StObject.set(x, "ReturnPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultTemplateData: Self = this.set("DefaultTemplateData", js.undefined)
+    def setReturnPathArn(value: AmazonResourceName): Self = StObject.set(x, "ReturnPathArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyToAddressesVarargs(value: Address*): Self = this.set("ReplyToAddresses", js.Array(value :_*))
+    def setReturnPathArnUndefined: Self = StObject.set(x, "ReturnPathArn", js.undefined)
     
     @scala.inline
-    def setReplyToAddresses(value: AddressList): Self = this.set("ReplyToAddresses", value.asInstanceOf[js.Any])
+    def setReturnPathUndefined: Self = StObject.set(x, "ReturnPath", js.undefined)
     
     @scala.inline
-    def deleteReplyToAddresses: Self = this.set("ReplyToAddresses", js.undefined)
+    def setSource(value: Address): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnPath(value: Address): Self = this.set("ReturnPath", value.asInstanceOf[js.Any])
+    def setSourceArn(value: AmazonResourceName): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnPath: Self = this.set("ReturnPath", js.undefined)
+    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
     @scala.inline
-    def setReturnPathArn(value: AmazonResourceName): Self = this.set("ReturnPathArn", value.asInstanceOf[js.Any])
+    def setTemplate(value: TemplateName): Self = StObject.set(x, "Template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnPathArn: Self = this.set("ReturnPathArn", js.undefined)
+    def setTemplateArn(value: AmazonResourceName): Self = StObject.set(x, "TemplateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceArn(value: AmazonResourceName): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
-    
-    @scala.inline
-    def setTemplateArn(value: AmazonResourceName): Self = this.set("TemplateArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateArn: Self = this.set("TemplateArn", js.undefined)
+    def setTemplateArnUndefined: Self = StObject.set(x, "TemplateArn", js.undefined)
   }
 }

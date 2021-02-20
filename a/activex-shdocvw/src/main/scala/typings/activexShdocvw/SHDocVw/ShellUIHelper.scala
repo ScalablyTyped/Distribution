@@ -1,11 +1,12 @@
 package typings.activexShdocvw.SHDocVw
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShellUIHelper extends js.Object {
+trait ShellUIHelper extends StObject {
   
   def AddChannel(URL: String): Unit = js.native
   

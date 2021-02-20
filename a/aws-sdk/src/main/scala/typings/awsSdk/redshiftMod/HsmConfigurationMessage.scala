@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HsmConfigurationMessage extends js.Object {
+trait HsmConfigurationMessage extends StObject {
   
   /**
     * A list of HsmConfiguration objects.
@@ -26,33 +27,21 @@ object HsmConfigurationMessage {
   }
   
   @scala.inline
-  implicit class HsmConfigurationMessageOps[Self <: HsmConfigurationMessage] (val x: Self) extends AnyVal {
+  implicit class HsmConfigurationMessageMutableBuilder[Self <: HsmConfigurationMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHsmConfigurations(value: HsmConfigurationList): Self = StObject.set(x, "HsmConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHsmConfigurationsUndefined: Self = StObject.set(x, "HsmConfigurations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHsmConfigurationsVarargs(value: HsmConfiguration*): Self = StObject.set(x, "HsmConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setHsmConfigurationsVarargs(value: HsmConfiguration*): Self = this.set("HsmConfigurations", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmConfigurations(value: HsmConfigurationList): Self = this.set("HsmConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHsmConfigurations: Self = this.set("HsmConfigurations", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

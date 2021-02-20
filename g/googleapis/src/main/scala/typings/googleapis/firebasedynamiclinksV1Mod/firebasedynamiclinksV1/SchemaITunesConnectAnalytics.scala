@@ -1,5 +1,6 @@
 package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Parameters for iTunes Connect App Analytics.
   */
 @js.native
-trait SchemaITunesConnectAnalytics extends js.Object {
+trait SchemaITunesConnectAnalytics extends StObject {
   
   /**
     * Affiliate token used to create affiliate-coded links.
@@ -41,42 +42,30 @@ object SchemaITunesConnectAnalytics {
   }
   
   @scala.inline
-  implicit class SchemaITunesConnectAnalyticsOps[Self <: SchemaITunesConnectAnalytics] (val x: Self) extends AnyVal {
+  implicit class SchemaITunesConnectAnalyticsMutableBuilder[Self <: SchemaITunesConnectAnalytics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAt(value: String): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCt(value: String): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAt(value: String): Self = this.set("at", value.asInstanceOf[js.Any])
+    def setCtUndefined: Self = StObject.set(x, "ct", js.undefined)
     
     @scala.inline
-    def deleteAt: Self = this.set("at", js.undefined)
+    def setMt(value: String): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCt(value: String): Self = this.set("ct", value.asInstanceOf[js.Any])
+    def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
     
     @scala.inline
-    def deleteCt: Self = this.set("ct", js.undefined)
+    def setPt(value: String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMt(value: String): Self = this.set("mt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMt: Self = this.set("mt", js.undefined)
-    
-    @scala.inline
-    def setPt(value: String): Self = this.set("pt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePt: Self = this.set("pt", js.undefined)
+    def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
   }
 }

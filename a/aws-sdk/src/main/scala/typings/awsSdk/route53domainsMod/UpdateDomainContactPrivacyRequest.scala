@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDomainContactPrivacyRequest extends js.Object {
+trait UpdateDomainContactPrivacyRequest extends StObject {
   
   /**
     * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the admin contact.
@@ -36,39 +37,27 @@ object UpdateDomainContactPrivacyRequest {
   }
   
   @scala.inline
-  implicit class UpdateDomainContactPrivacyRequestOps[Self <: UpdateDomainContactPrivacyRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDomainContactPrivacyRequestMutableBuilder[Self <: UpdateDomainContactPrivacyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminPrivacy(value: Boolean): Self = StObject.set(x, "AdminPrivacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminPrivacyUndefined: Self = StObject.set(x, "AdminPrivacy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setRegistrantPrivacy(value: Boolean): Self = StObject.set(x, "RegistrantPrivacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminPrivacy(value: Boolean): Self = this.set("AdminPrivacy", value.asInstanceOf[js.Any])
+    def setRegistrantPrivacyUndefined: Self = StObject.set(x, "RegistrantPrivacy", js.undefined)
     
     @scala.inline
-    def deleteAdminPrivacy: Self = this.set("AdminPrivacy", js.undefined)
+    def setTechPrivacy(value: Boolean): Self = StObject.set(x, "TechPrivacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistrantPrivacy(value: Boolean): Self = this.set("RegistrantPrivacy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistrantPrivacy: Self = this.set("RegistrantPrivacy", js.undefined)
-    
-    @scala.inline
-    def setTechPrivacy(value: Boolean): Self = this.set("TechPrivacy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTechPrivacy: Self = this.set("TechPrivacy", js.undefined)
+    def setTechPrivacyUndefined: Self = StObject.set(x, "TechPrivacy", js.undefined)
   }
 }

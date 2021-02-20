@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Record extends js.Object {
+trait Record extends StObject {
   
   /**
     * The approximate time that the record was inserted into the stream.
@@ -41,39 +42,27 @@ object Record {
   }
   
   @scala.inline
-  implicit class RecordOps[Self <: Record] (val x: Self) extends AnyVal {
+  implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproximateArrivalTimestamp(value: Timestamp): Self = StObject.set(x, "ApproximateArrivalTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproximateArrivalTimestampUndefined: Self = StObject.set(x, "ApproximateArrivalTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Data): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionKey(value: PartitionKey): Self = this.set("PartitionKey", value.asInstanceOf[js.Any])
+    def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
     @scala.inline
-    def setSequenceNumber(value: SequenceNumber): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
+    def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproximateArrivalTimestamp(value: Timestamp): Self = this.set("ApproximateArrivalTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApproximateArrivalTimestamp: Self = this.set("ApproximateArrivalTimestamp", js.undefined)
-    
-    @scala.inline
-    def setEncryptionType(value: EncryptionType): Self = this.set("EncryptionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionType: Self = this.set("EncryptionType", js.undefined)
+    def setSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,17 @@
 package typings.crpc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("crpc", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("crpc", JSImport.Namespace)
+  @js.native
   def apply(baseUrl: String): Client = js.native
+  @JSImport("crpc", JSImport.Namespace)
+  @js.native
   def apply(baseUrl: String, options: js.Object): Client = js.native
   
   type Client = js.Function3[

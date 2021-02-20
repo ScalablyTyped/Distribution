@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimpleCondition extends js.Object {
+trait SimpleCondition extends StObject {
   
   /**
     * The dimension settings for the event that's associated with the activity.
@@ -31,36 +32,24 @@ object SimpleCondition {
   }
   
   @scala.inline
-  implicit class SimpleConditionOps[Self <: SimpleCondition] (val x: Self) extends AnyVal {
+  implicit class SimpleConditionMutableBuilder[Self <: SimpleCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventCondition(value: EventCondition): Self = StObject.set(x, "EventCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventConditionUndefined: Self = StObject.set(x, "EventCondition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentCondition(value: SegmentCondition): Self = StObject.set(x, "SegmentCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventCondition(value: EventCondition): Self = this.set("EventCondition", value.asInstanceOf[js.Any])
+    def setSegmentConditionUndefined: Self = StObject.set(x, "SegmentCondition", js.undefined)
     
     @scala.inline
-    def deleteEventCondition: Self = this.set("EventCondition", js.undefined)
+    def setSegmentDimensions(value: SegmentDimensions): Self = StObject.set(x, "SegmentDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentCondition(value: SegmentCondition): Self = this.set("SegmentCondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentCondition: Self = this.set("SegmentCondition", js.undefined)
-    
-    @scala.inline
-    def setSegmentDimensions(value: SegmentDimensions): Self = this.set("SegmentDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentDimensions: Self = this.set("SegmentDimensions", js.undefined)
+    def setSegmentDimensionsUndefined: Self = StObject.set(x, "SegmentDimensions", js.undefined)
   }
 }

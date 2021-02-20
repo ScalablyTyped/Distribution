@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DimensionProperties extends js.Object {
+trait DimensionProperties extends StObject {
   
   /** Output only. If set, this is a column in a data source sheet. */
   var dataSourceColumnReference: js.UndefOr[DataSourceColumnReference] = js.native
@@ -31,51 +32,39 @@ object DimensionProperties {
   }
   
   @scala.inline
-  implicit class DimensionPropertiesOps[Self <: DimensionProperties] (val x: Self) extends AnyVal {
+  implicit class DimensionPropertiesMutableBuilder[Self <: DimensionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = this.set("dataSourceColumnReference", value.asInstanceOf[js.Any])
+    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
     @scala.inline
-    def deleteDataSourceColumnReference: Self = this.set("dataSourceColumnReference", js.undefined)
+    def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
     
     @scala.inline
-    def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = this.set("developerMetadata", js.Array(value :_*))
+    def setHiddenByFilter(value: Boolean): Self = StObject.set(x, "hiddenByFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = this.set("developerMetadata", value.asInstanceOf[js.Any])
+    def setHiddenByFilterUndefined: Self = StObject.set(x, "hiddenByFilter", js.undefined)
     
     @scala.inline
-    def deleteDeveloperMetadata: Self = this.set("developerMetadata", js.undefined)
+    def setHiddenByUser(value: Boolean): Self = StObject.set(x, "hiddenByUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenByFilter(value: Boolean): Self = this.set("hiddenByFilter", value.asInstanceOf[js.Any])
+    def setHiddenByUserUndefined: Self = StObject.set(x, "hiddenByUser", js.undefined)
     
     @scala.inline
-    def deleteHiddenByFilter: Self = this.set("hiddenByFilter", js.undefined)
+    def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenByUser(value: Boolean): Self = this.set("hiddenByUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHiddenByUser: Self = this.set("hiddenByUser", js.undefined)
-    
-    @scala.inline
-    def setPixelSize(value: Double): Self = this.set("pixelSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePixelSize: Self = this.set("pixelSize", js.undefined)
+    def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
   }
 }

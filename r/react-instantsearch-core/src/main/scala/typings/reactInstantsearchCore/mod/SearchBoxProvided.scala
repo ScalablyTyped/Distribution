@@ -1,11 +1,12 @@
 package typings.reactInstantsearchCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchBoxProvided extends js.Object {
+trait SearchBoxProvided extends StObject {
   
   /** the current query used */
   var currentRefinement: String = js.native
@@ -25,27 +26,15 @@ object SearchBoxProvided {
   }
   
   @scala.inline
-  implicit class SearchBoxProvidedOps[Self <: SearchBoxProvided] (val x: Self) extends AnyVal {
+  implicit class SearchBoxProvidedMutableBuilder[Self <: SearchBoxProvided] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsSearchStalled(value: Boolean): Self = StObject.set(x, "isSearchStalled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentRefinement(value: String): Self = this.set("currentRefinement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSearchStalled(value: Boolean): Self = this.set("isSearchStalled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefine(value: /* repeated */ js.Any => js.Any): Self = this.set("refine", js.Any.fromFunction1(value))
+    def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
   }
 }

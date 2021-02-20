@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICopyrightSource extends js.Object {
+trait ICopyrightSource extends StObject {
   
   /** The copyright string from the source. */
   var Copyright: String = js.native
@@ -25,27 +26,15 @@ object ICopyrightSource {
   }
   
   @scala.inline
-  implicit class ICopyrightSourceOps[Self <: ICopyrightSource] (val x: Self) extends AnyVal {
+  implicit class ICopyrightSourceMutableBuilder[Self <: ICopyrightSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: String): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceID(value: String): Self = StObject.set(x, "SourceID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCopyright(value: String): Self = this.set("Copyright", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceID(value: String): Self = this.set("SourceID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceName(value: String): Self = this.set("SourceName", value.asInstanceOf[js.Any])
+    def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
   }
 }

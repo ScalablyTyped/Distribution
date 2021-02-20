@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldRuleModel extends js.Object {
+trait FieldRuleModel extends StObject {
   
   var actions: js.Array[RuleActionModel] = js.native
   
@@ -35,42 +36,30 @@ object FieldRuleModel {
   }
   
   @scala.inline
-  implicit class FieldRuleModelOps[Self <: FieldRuleModel] (val x: Self) extends AnyVal {
+  implicit class FieldRuleModelMutableBuilder[Self <: FieldRuleModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[RuleActionModel]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: RuleActionModel*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: js.Array[RuleConditionModel]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: RuleActionModel*): Self = this.set("actions", js.Array(value :_*))
+    def setConditionsVarargs(value: RuleConditionModel*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setActions(value: js.Array[RuleActionModel]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: RuleConditionModel*): Self = this.set("conditions", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[RuleConditionModel]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDisabled(value: Boolean): Self = this.set("isDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSystem(value: Boolean): Self = this.set("isSystem", value.asInstanceOf[js.Any])
+    def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
   }
 }

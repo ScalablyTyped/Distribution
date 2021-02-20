@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintStaple extends js.Object
+sealed trait PrintStaple extends StObject
 @JSGlobal("Windows.Graphics.Printing.PrintStaple")
 @js.native
-object PrintStaple extends js.Object {
+object PrintStaple extends StObject {
   
   @js.native
   sealed trait default extends PrintStaple

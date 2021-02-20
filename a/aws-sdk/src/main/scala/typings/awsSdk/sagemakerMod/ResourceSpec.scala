@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceSpec extends js.Object {
+trait ResourceSpec extends StObject {
   
   /**
     * The instance type that the image version runs on.
@@ -31,36 +32,24 @@ object ResourceSpec {
   }
   
   @scala.inline
-  implicit class ResourceSpecOps[Self <: ResourceSpec] (val x: Self) extends AnyVal {
+  implicit class ResourceSpecMutableBuilder[Self <: ResourceSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceType(value: AppInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSageMakerImageArn(value: ImageArn): Self = StObject.set(x, "SageMakerImageArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: AppInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setSageMakerImageArnUndefined: Self = StObject.set(x, "SageMakerImageArn", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setSageMakerImageVersionArn(value: ImageVersionArn): Self = StObject.set(x, "SageMakerImageVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSageMakerImageArn(value: ImageArn): Self = this.set("SageMakerImageArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSageMakerImageArn: Self = this.set("SageMakerImageArn", js.undefined)
-    
-    @scala.inline
-    def setSageMakerImageVersionArn(value: ImageVersionArn): Self = this.set("SageMakerImageVersionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSageMakerImageVersionArn: Self = this.set("SageMakerImageVersionArn", js.undefined)
+    def setSageMakerImageVersionArnUndefined: Self = StObject.set(x, "SageMakerImageVersionArn", js.undefined)
   }
 }

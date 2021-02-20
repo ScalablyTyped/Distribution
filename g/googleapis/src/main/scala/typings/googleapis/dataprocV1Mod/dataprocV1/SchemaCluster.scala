@@ -1,6 +1,7 @@
 package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Compute Engine instances.
   */
 @js.native
-trait SchemaCluster extends js.Object {
+trait SchemaCluster extends StObject {
   
   /**
     * Required. The cluster name. Cluster names within a project must be
@@ -72,69 +73,57 @@ object SchemaCluster {
   }
   
   @scala.inline
-  implicit class SchemaClusterOps[Self <: SchemaCluster] (val x: Self) extends AnyVal {
+  implicit class SchemaClusterMutableBuilder[Self <: SchemaCluster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    def setClusterUuidUndefined: Self = StObject.set(x, "clusterUuid", js.undefined)
     
     @scala.inline
-    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    def setConfig(value: SchemaClusterConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterUuid(value: String): Self = this.set("clusterUuid", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteClusterUuid: Self = this.set("clusterUuid", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: SchemaClusterConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setMetrics(value: SchemaClusterMetrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: SchemaClusterMetrics): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    def setStatus(value: SchemaClusterStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setStatusHistory(value: js.Array[SchemaClusterStatus]): Self = StObject.set(x, "statusHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
     
     @scala.inline
-    def setStatus(value: SchemaClusterStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatusHistoryVarargs(value: SchemaClusterStatus*): Self = StObject.set(x, "statusHistory", js.Array(value :_*))
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusHistoryVarargs(value: SchemaClusterStatus*): Self = this.set("statusHistory", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatusHistory(value: js.Array[SchemaClusterStatus]): Self = this.set("statusHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusHistory: Self = this.set("statusHistory", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

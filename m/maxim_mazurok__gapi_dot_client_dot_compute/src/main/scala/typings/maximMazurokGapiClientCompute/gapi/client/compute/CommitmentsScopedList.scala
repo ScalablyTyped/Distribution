@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommitmentsScopedList extends js.Object {
+trait CommitmentsScopedList extends StObject {
   
   /** [Output Only] A list of commitments contained in this scope. */
   var commitments: js.UndefOr[js.Array[Commitment]] = js.native
@@ -23,33 +24,21 @@ object CommitmentsScopedList {
   }
   
   @scala.inline
-  implicit class CommitmentsScopedListOps[Self <: CommitmentsScopedList] (val x: Self) extends AnyVal {
+  implicit class CommitmentsScopedListMutableBuilder[Self <: CommitmentsScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitments(value: js.Array[Commitment]): Self = StObject.set(x, "commitments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitmentsUndefined: Self = StObject.set(x, "commitments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitmentsVarargs(value: Commitment*): Self = StObject.set(x, "commitments", js.Array(value :_*))
     
     @scala.inline
-    def setCommitmentsVarargs(value: Commitment*): Self = this.set("commitments", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitments(value: js.Array[Commitment]): Self = this.set("commitments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommitments: Self = this.set("commitments", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

@@ -6,12 +6,13 @@ import typings.minappEnv.anon.RQIGetDocumentOptions
 import typings.minappEnv.anon.RQIRemoveSingleDocumentOp
 import typings.minappEnv.anon.RQISetSingleDocumentOptio
 import typings.minappEnv.anon.RQIUpdateSingleDocumentOp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentReference extends js.Object {
+trait DocumentReference extends StObject {
   
   def field(`object`: js.Object): this.type = js.native
   

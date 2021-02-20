@@ -5,16 +5,18 @@ import typings.materialRipple.componentMod.MDCRippleFactory
 import typings.materialTopAppBar.materialTopAppBarMod.MDCTopAppBarBaseFoundation
 import typings.std.Element
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/top-app-bar/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/top-app-bar/component", "MDCTopAppBar")
   @js.native
-  class MDCTopAppBar () extends MDCComponent[MDCTopAppBarBaseFoundation] {
+  class MDCTopAppBar protected () extends MDCComponent[MDCTopAppBarBaseFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCTopAppBarBaseFoundation, args: js.Any*) = this()
     
     def initialize(): Unit = js.native
     def initialize(rippleFactory: MDCRippleFactory): Unit = js.native
@@ -22,9 +24,10 @@ object componentMod extends js.Object {
     def setScrollTarget(target: EventTarget): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCTopAppBar extends js.Object {
+  object MDCTopAppBar {
     
+    @JSImport("@material/top-app-bar/component", "MDCTopAppBar.attachTo")
+    @js.native
     def attachTo(root: Element): MDCTopAppBar = js.native
   }
 }

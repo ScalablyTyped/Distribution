@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ImageryLayerCollection")
 @js.native
-class ImageryLayerCollection () extends js.Object {
+class ImageryLayerCollection () extends StObject {
   
   def add(layer: ImageryLayer): Unit = js.native
   def add(layer: ImageryLayer, index: Double): Unit = js.native

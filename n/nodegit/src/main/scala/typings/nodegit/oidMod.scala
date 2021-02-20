@@ -1,15 +1,15 @@
 package typings.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/oid", JSImport.Namespace)
-@js.native
-object oidMod extends js.Object {
+object oidMod {
   
+  @JSImport("nodegit/oid", "Oid")
   @js.native
-  class Oid () extends js.Object {
+  class Oid () extends StObject {
     
     def cmp(b: Oid): Double = js.native
     
@@ -28,9 +28,10 @@ object oidMod extends js.Object {
     def tostrS(): String = js.native
   }
   /* static members */
-  @js.native
-  object Oid extends js.Object {
+  object Oid {
     
+    @JSImport("nodegit/oid", "Oid.fromString")
+    @js.native
     def fromString(str: String): Oid = js.native
   }
 }

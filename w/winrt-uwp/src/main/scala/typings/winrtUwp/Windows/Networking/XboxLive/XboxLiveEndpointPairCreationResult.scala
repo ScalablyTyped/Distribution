@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.XboxLive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
 @js.native
-trait XboxLiveEndpointPairCreationResult extends js.Object {
+trait XboxLiveEndpointPairCreationResult extends StObject {
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   var deviceAddress: XboxLiveDeviceAddress = js.native
@@ -34,30 +35,18 @@ object XboxLiveEndpointPairCreationResult {
   }
   
   @scala.inline
-  implicit class XboxLiveEndpointPairCreationResultOps[Self <: XboxLiveEndpointPairCreationResult] (val x: Self) extends AnyVal {
+  implicit class XboxLiveEndpointPairCreationResultMutableBuilder[Self <: XboxLiveEndpointPairCreationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceAddress(value: XboxLiveDeviceAddress): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointPair(value: XboxLiveEndpointPair): Self = StObject.set(x, "endpointPair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsExistingPathEvaluation(value: Boolean): Self = StObject.set(x, "isExistingPathEvaluation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceAddress(value: XboxLiveDeviceAddress): Self = this.set("deviceAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndpointPair(value: XboxLiveEndpointPair): Self = this.set("endpointPair", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsExistingPathEvaluation(value: Boolean): Self = this.set("isExistingPathEvaluation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: XboxLiveEndpointPairCreationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: XboxLiveEndpointPairCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSnapshotsMessage extends js.Object {
+trait DescribeSnapshotsMessage extends StObject {
   
   /**
     * A user-supplied cluster identifier. If this parameter is specified, only snapshots associated with that specific cluster are described.
@@ -51,60 +52,48 @@ object DescribeSnapshotsMessage {
   }
   
   @scala.inline
-  implicit class DescribeSnapshotsMessageOps[Self <: DescribeSnapshotsMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeSnapshotsMessageMutableBuilder[Self <: DescribeSnapshotsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
     
     @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setShowNodeGroupConfig(value: BooleanOptional): Self = StObject.set(x, "ShowNodeGroupConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    def setShowNodeGroupConfigUndefined: Self = StObject.set(x, "ShowNodeGroupConfig", js.undefined)
     
     @scala.inline
-    def deleteReplicationGroupId: Self = this.set("ReplicationGroupId", js.undefined)
+    def setSnapshotName(value: String): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowNodeGroupConfig(value: BooleanOptional): Self = this.set("ShowNodeGroupConfig", value.asInstanceOf[js.Any])
+    def setSnapshotNameUndefined: Self = StObject.set(x, "SnapshotName", js.undefined)
     
     @scala.inline
-    def deleteShowNodeGroupConfig: Self = this.set("ShowNodeGroupConfig", js.undefined)
+    def setSnapshotSource(value: String): Self = StObject.set(x, "SnapshotSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotName(value: String): Self = this.set("SnapshotName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotName: Self = this.set("SnapshotName", js.undefined)
-    
-    @scala.inline
-    def setSnapshotSource(value: String): Self = this.set("SnapshotSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotSource: Self = this.set("SnapshotSource", js.undefined)
+    def setSnapshotSourceUndefined: Self = StObject.set(x, "SnapshotSource", js.undefined)
   }
 }

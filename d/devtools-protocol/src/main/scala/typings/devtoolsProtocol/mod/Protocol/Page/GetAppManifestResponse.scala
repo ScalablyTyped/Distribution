@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAppManifestResponse extends js.Object {
+trait GetAppManifestResponse extends StObject {
   
   /**
     * Manifest content.
@@ -33,39 +34,27 @@ object GetAppManifestResponse {
   }
   
   @scala.inline
-  implicit class GetAppManifestResponseOps[Self <: GetAppManifestResponse] (val x: Self) extends AnyVal {
+  implicit class GetAppManifestResponseMutableBuilder[Self <: GetAppManifestResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrors(value: js.Array[AppManifestError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsVarargs(value: AppManifestError*): Self = this.set("errors", js.Array(value :_*))
+    def setErrorsVarargs(value: AppManifestError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrors(value: js.Array[AppManifestError]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setParsed(value: AppManifestParsedProperties): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setParsed(value: AppManifestParsedProperties): Self = this.set("parsed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParsed: Self = this.set("parsed", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

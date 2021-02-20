@@ -1,11 +1,12 @@
 package typings.angularCompiler.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassAttr extends js.Object {
+trait ClassAttr extends StObject {
   
   var classAttr: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object ClassAttr {
   }
   
   @scala.inline
-  implicit class ClassAttrOps[Self <: ClassAttr] (val x: Self) extends AnyVal {
+  implicit class ClassAttrMutableBuilder[Self <: ClassAttr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassAttr(value: String): Self = StObject.set(x, "classAttr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassAttrUndefined: Self = StObject.set(x, "classAttr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyleAttr(value: String): Self = StObject.set(x, "styleAttr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassAttr(value: String): Self = this.set("classAttr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClassAttr: Self = this.set("classAttr", js.undefined)
-    
-    @scala.inline
-    def setStyleAttr(value: String): Self = this.set("styleAttr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleAttr: Self = this.set("styleAttr", js.undefined)
+    def setStyleAttrUndefined: Self = StObject.set(x, "styleAttr", js.undefined)
   }
 }

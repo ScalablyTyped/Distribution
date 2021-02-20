@@ -1,5 +1,6 @@
 package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A change about comments on an object.
   */
 @js.native
-trait SchemaComment extends js.Object {
+trait SchemaComment extends StObject {
   
   /**
     * A change on an assignment.
@@ -39,45 +40,33 @@ object SchemaComment {
   }
   
   @scala.inline
-  implicit class SchemaCommentOps[Self <: SchemaComment] (val x: Self) extends AnyVal {
+  implicit class SchemaCommentMutableBuilder[Self <: SchemaComment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignment(value: SchemaAssignment): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentUndefined: Self = StObject.set(x, "assignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMentionedUsers(value: js.Array[SchemaUser]): Self = StObject.set(x, "mentionedUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignment(value: SchemaAssignment): Self = this.set("assignment", value.asInstanceOf[js.Any])
+    def setMentionedUsersUndefined: Self = StObject.set(x, "mentionedUsers", js.undefined)
     
     @scala.inline
-    def deleteAssignment: Self = this.set("assignment", js.undefined)
+    def setMentionedUsersVarargs(value: SchemaUser*): Self = StObject.set(x, "mentionedUsers", js.Array(value :_*))
     
     @scala.inline
-    def setMentionedUsersVarargs(value: SchemaUser*): Self = this.set("mentionedUsers", js.Array(value :_*))
+    def setPost(value: SchemaPost): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMentionedUsers(value: js.Array[SchemaUser]): Self = this.set("mentionedUsers", value.asInstanceOf[js.Any])
+    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
     @scala.inline
-    def deleteMentionedUsers: Self = this.set("mentionedUsers", js.undefined)
+    def setSuggestion(value: SchemaSuggestion): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPost(value: SchemaPost): Self = this.set("post", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePost: Self = this.set("post", js.undefined)
-    
-    @scala.inline
-    def setSuggestion(value: SchemaSuggestion): Self = this.set("suggestion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestion: Self = this.set("suggestion", js.undefined)
+    def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
   }
 }

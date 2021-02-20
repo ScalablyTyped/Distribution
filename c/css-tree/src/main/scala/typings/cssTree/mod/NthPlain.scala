@@ -1,5 +1,6 @@
 package typings.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object NthPlain {
   }
   
   @scala.inline
-  implicit class NthPlainOps[Self <: NthPlain] (val x: Self) extends AnyVal {
+  implicit class NthPlainMutableBuilder[Self <: NthPlain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNth(value: AnPlusB | Identifier): Self = StObject.set(x, "nth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelector(value: SelectorListPlain): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectorNull: Self = StObject.set(x, "selector", null)
     
     @scala.inline
-    def setNth(value: AnPlusB | Identifier): Self = this.set("nth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Nth): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: SelectorListPlain): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectorNull: Self = this.set("selector", null)
+    def setType(value: typings.cssTree.cssTreeStrings.Nth): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -6,16 +6,16 @@ import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.outputAstMod.ReadVarExpr
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/render3/view/i18n/context", JSImport.Namespace)
-@js.native
-object contextMod extends js.Object {
+object contextMod {
   
+  @JSImport("@angular/compiler/src/render3/view/i18n/context", "I18nContext")
   @js.native
-  class I18nContext protected () extends js.Object {
+  class I18nContext protected () extends StObject {
     def this(index: Double, ref: ReadVarExpr, level: Double, templateIndex: Double, meta: I18nMeta) = this()
     def this(index: Double, ref: ReadVarExpr, level: Double, templateIndex: Null, meta: I18nMeta) = this()
     def this(

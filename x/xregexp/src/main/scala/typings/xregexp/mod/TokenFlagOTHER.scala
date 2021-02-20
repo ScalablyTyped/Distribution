@@ -1,5 +1,6 @@
 package typings.xregexp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xregexp.xregexpStrings._underscore
   - typings.xregexp.xregexpStrings.$
 */
-trait TokenFlagOTHER extends js.Object
+trait TokenFlagOTHER extends StObject
 object TokenFlagOTHER {
   
   @scala.inline

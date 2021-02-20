@@ -1,6 +1,7 @@
 package typings.oracleOraclejet.anon
 
 import typings.oracleOraclejet.ojtableMod.ojTable.RowSelectionEnd
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,27 +22,15 @@ object EndIndexEndKey {
   }
   
   @scala.inline
-  implicit class EndIndexEndKeyOps[Self <: EndIndexEndKey[_], K] (val x: Self with EndIndexEndKey[K]) extends AnyVal {
+  implicit class EndIndexEndKeyMutableBuilder[Self <: EndIndexEndKey[_], K] (val x: Self with EndIndexEndKey[K]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndIndex(value: `24`): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndKey(value: `25`[K]): Self = StObject.set(x, "endKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndIndex(value: `24`): Self = this.set("endIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndKey(value: `25`[K]): Self = this.set("endKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndKey: Self = this.set("endKey", js.undefined)
+    def setEndKeyUndefined: Self = StObject.set(x, "endKey", js.undefined)
   }
 }

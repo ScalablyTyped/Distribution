@@ -1,5 +1,6 @@
 package typings.knuddelsUserappsApi.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("DiceResult")
 @js.native
-class DiceResult () extends js.Object {
+class DiceResult () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/DiceResult.html#method_getDiceConfiguration

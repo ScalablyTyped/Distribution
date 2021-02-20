@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,114 +53,102 @@ object SecureScore {
   }
   
   @scala.inline
-  implicit class SecureScoreOps[Self <: SecureScore] (val x: Self) extends AnyVal {
+  implicit class SecureScoreMutableBuilder[Self <: SecureScore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveUserCount(value: NullableOption[Double]): Self = StObject.set(x, "activeUserCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUserCountNull: Self = StObject.set(x, "activeUserCount", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveUserCountUndefined: Self = StObject.set(x, "activeUserCount", js.undefined)
     
     @scala.inline
-    def setActiveUserCount(value: NullableOption[Double]): Self = this.set("activeUserCount", value.asInstanceOf[js.Any])
+    def setAverageComparativeScores(value: NullableOption[js.Array[AverageComparativeScore]]): Self = StObject.set(x, "averageComparativeScores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveUserCount: Self = this.set("activeUserCount", js.undefined)
+    def setAverageComparativeScoresNull: Self = StObject.set(x, "averageComparativeScores", null)
     
     @scala.inline
-    def setActiveUserCountNull: Self = this.set("activeUserCount", null)
+    def setAverageComparativeScoresUndefined: Self = StObject.set(x, "averageComparativeScores", js.undefined)
     
     @scala.inline
-    def setAverageComparativeScoresVarargs(value: AverageComparativeScore*): Self = this.set("averageComparativeScores", js.Array(value :_*))
+    def setAverageComparativeScoresVarargs(value: AverageComparativeScore*): Self = StObject.set(x, "averageComparativeScores", js.Array(value :_*))
     
     @scala.inline
-    def setAverageComparativeScores(value: NullableOption[js.Array[AverageComparativeScore]]): Self = this.set("averageComparativeScores", value.asInstanceOf[js.Any])
+    def setAzureTenantId(value: String): Self = StObject.set(x, "azureTenantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageComparativeScores: Self = this.set("averageComparativeScores", js.undefined)
+    def setAzureTenantIdUndefined: Self = StObject.set(x, "azureTenantId", js.undefined)
     
     @scala.inline
-    def setAverageComparativeScoresNull: Self = this.set("averageComparativeScores", null)
+    def setControlScores(value: NullableOption[js.Array[ControlScore]]): Self = StObject.set(x, "controlScores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzureTenantId(value: String): Self = this.set("azureTenantId", value.asInstanceOf[js.Any])
+    def setControlScoresNull: Self = StObject.set(x, "controlScores", null)
     
     @scala.inline
-    def deleteAzureTenantId: Self = this.set("azureTenantId", js.undefined)
+    def setControlScoresUndefined: Self = StObject.set(x, "controlScores", js.undefined)
     
     @scala.inline
-    def setControlScoresVarargs(value: ControlScore*): Self = this.set("controlScores", js.Array(value :_*))
+    def setControlScoresVarargs(value: ControlScore*): Self = StObject.set(x, "controlScores", js.Array(value :_*))
     
     @scala.inline
-    def setControlScores(value: NullableOption[js.Array[ControlScore]]): Self = this.set("controlScores", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControlScores: Self = this.set("controlScores", js.undefined)
+    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
     @scala.inline
-    def setControlScoresNull: Self = this.set("controlScores", null)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setCurrentScore(value: NullableOption[Double]): Self = StObject.set(x, "currentScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setCurrentScoreNull: Self = StObject.set(x, "currentScore", null)
     
     @scala.inline
-    def setCreatedDateTimeNull: Self = this.set("createdDateTime", null)
+    def setCurrentScoreUndefined: Self = StObject.set(x, "currentScore", js.undefined)
     
     @scala.inline
-    def setCurrentScore(value: NullableOption[Double]): Self = this.set("currentScore", value.asInstanceOf[js.Any])
+    def setEnabledServices(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "enabledServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrentScore: Self = this.set("currentScore", js.undefined)
+    def setEnabledServicesNull: Self = StObject.set(x, "enabledServices", null)
     
     @scala.inline
-    def setCurrentScoreNull: Self = this.set("currentScore", null)
+    def setEnabledServicesUndefined: Self = StObject.set(x, "enabledServices", js.undefined)
     
     @scala.inline
-    def setEnabledServicesVarargs(value: String*): Self = this.set("enabledServices", js.Array(value :_*))
+    def setEnabledServicesVarargs(value: String*): Self = StObject.set(x, "enabledServices", js.Array(value :_*))
     
     @scala.inline
-    def setEnabledServices(value: NullableOption[js.Array[String]]): Self = this.set("enabledServices", value.asInstanceOf[js.Any])
+    def setLicensedUserCount(value: NullableOption[Double]): Self = StObject.set(x, "licensedUserCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnabledServices: Self = this.set("enabledServices", js.undefined)
+    def setLicensedUserCountNull: Self = StObject.set(x, "licensedUserCount", null)
     
     @scala.inline
-    def setEnabledServicesNull: Self = this.set("enabledServices", null)
+    def setLicensedUserCountUndefined: Self = StObject.set(x, "licensedUserCount", js.undefined)
     
     @scala.inline
-    def setLicensedUserCount(value: NullableOption[Double]): Self = this.set("licensedUserCount", value.asInstanceOf[js.Any])
+    def setMaxScore(value: NullableOption[Double]): Self = StObject.set(x, "maxScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLicensedUserCount: Self = this.set("licensedUserCount", js.undefined)
+    def setMaxScoreNull: Self = StObject.set(x, "maxScore", null)
     
     @scala.inline
-    def setLicensedUserCountNull: Self = this.set("licensedUserCount", null)
+    def setMaxScoreUndefined: Self = StObject.set(x, "maxScore", js.undefined)
     
     @scala.inline
-    def setMaxScore(value: NullableOption[Double]): Self = this.set("maxScore", value.asInstanceOf[js.Any])
+    def setVendorInformation(value: NullableOption[SecurityVendorInformation]): Self = StObject.set(x, "vendorInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxScore: Self = this.set("maxScore", js.undefined)
+    def setVendorInformationNull: Self = StObject.set(x, "vendorInformation", null)
     
     @scala.inline
-    def setMaxScoreNull: Self = this.set("maxScore", null)
-    
-    @scala.inline
-    def setVendorInformation(value: NullableOption[SecurityVendorInformation]): Self = this.set("vendorInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendorInformation: Self = this.set("vendorInformation", js.undefined)
-    
-    @scala.inline
-    def setVendorInformationNull: Self = this.set("vendorInformation", null)
+    def setVendorInformationUndefined: Self = StObject.set(x, "vendorInformation", js.undefined)
   }
 }

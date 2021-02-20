@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamSpecification extends js.Object {
+trait StreamSpecification extends StObject {
   
   /**
     * Indicates whether DynamoDB Streams is enabled (true) or disabled (false) on the table.
@@ -26,27 +27,15 @@ object StreamSpecification {
   }
   
   @scala.inline
-  implicit class StreamSpecificationOps[Self <: StreamSpecification] (val x: Self) extends AnyVal {
+  implicit class StreamSpecificationMutableBuilder[Self <: StreamSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStreamEnabled(value: StreamEnabled): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStreamEnabled(value: StreamEnabled): Self = this.set("StreamEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreamViewType(value: StreamViewType): Self = this.set("StreamViewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamViewType: Self = this.set("StreamViewType", js.undefined)
+    def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
   }
 }

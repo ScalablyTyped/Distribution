@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetWorkspaceStatusResponse extends js.Object {
+trait GetWorkspaceStatusResponse extends StObject {
   
   /** The merge conflict after sync. */
   var mergeConflict: js.UndefOr[js.Array[MergeConflict]] = js.native
@@ -22,36 +23,24 @@ object GetWorkspaceStatusResponse {
   }
   
   @scala.inline
-  implicit class GetWorkspaceStatusResponseOps[Self <: GetWorkspaceStatusResponse] (val x: Self) extends AnyVal {
+  implicit class GetWorkspaceStatusResponseMutableBuilder[Self <: GetWorkspaceStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMergeConflict(value: js.Array[MergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
     
     @scala.inline
-    def setMergeConflictVarargs(value: MergeConflict*): Self = this.set("mergeConflict", js.Array(value :_*))
+    def setWorkspaceChange(value: js.Array[Entity]): Self = StObject.set(x, "workspaceChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeConflict(value: js.Array[MergeConflict]): Self = this.set("mergeConflict", value.asInstanceOf[js.Any])
+    def setWorkspaceChangeUndefined: Self = StObject.set(x, "workspaceChange", js.undefined)
     
     @scala.inline
-    def deleteMergeConflict: Self = this.set("mergeConflict", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceChangeVarargs(value: Entity*): Self = this.set("workspaceChange", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkspaceChange(value: js.Array[Entity]): Self = this.set("workspaceChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceChange: Self = this.set("workspaceChange", js.undefined)
+    def setWorkspaceChangeVarargs(value: Entity*): Self = StObject.set(x, "workspaceChange", js.Array(value :_*))
   }
 }

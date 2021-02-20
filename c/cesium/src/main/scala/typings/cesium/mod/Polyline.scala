@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.Width
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Polyline")
 @js.native
-class Polyline () extends js.Object {
+class Polyline () extends StObject {
   def this(options: Width) = this()
   
   var id: js.Any = js.native

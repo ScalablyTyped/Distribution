@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * gateway or GCP VPN gateway.
   */
 @js.native
-trait SchemaVpnGatewayStatusVpnConnection extends js.Object {
+trait SchemaVpnGatewayStatusVpnConnection extends StObject {
   
   /**
     * URL reference to the peer external VPN gateways to which the VPN tunnels
@@ -45,45 +46,33 @@ object SchemaVpnGatewayStatusVpnConnection {
   }
   
   @scala.inline
-  implicit class SchemaVpnGatewayStatusVpnConnectionOps[Self <: SchemaVpnGatewayStatusVpnConnection] (val x: Self) extends AnyVal {
+  implicit class SchemaVpnGatewayStatusVpnConnectionMutableBuilder[Self <: SchemaVpnGatewayStatusVpnConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPeerExternalGateway(value: String): Self = StObject.set(x, "peerExternalGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPeerExternalGatewayUndefined: Self = StObject.set(x, "peerExternalGateway", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeerGcpGateway(value: String): Self = StObject.set(x, "peerGcpGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerExternalGateway(value: String): Self = this.set("peerExternalGateway", value.asInstanceOf[js.Any])
+    def setPeerGcpGatewayUndefined: Self = StObject.set(x, "peerGcpGateway", js.undefined)
     
     @scala.inline
-    def deletePeerExternalGateway: Self = this.set("peerExternalGateway", js.undefined)
+    def setState(value: SchemaVpnGatewayStatusHighAvailabilityRequirementState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerGcpGateway(value: String): Self = this.set("peerGcpGateway", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deletePeerGcpGateway: Self = this.set("peerGcpGateway", js.undefined)
+    def setTunnels(value: js.Array[SchemaVpnGatewayStatusTunnel]): Self = StObject.set(x, "tunnels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: SchemaVpnGatewayStatusHighAvailabilityRequirementState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTunnelsUndefined: Self = StObject.set(x, "tunnels", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setTunnelsVarargs(value: SchemaVpnGatewayStatusTunnel*): Self = this.set("tunnels", js.Array(value :_*))
-    
-    @scala.inline
-    def setTunnels(value: js.Array[SchemaVpnGatewayStatusTunnel]): Self = this.set("tunnels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTunnels: Self = this.set("tunnels", js.undefined)
+    def setTunnelsVarargs(value: SchemaVpnGatewayStatusTunnel*): Self = StObject.set(x, "tunnels", js.Array(value :_*))
   }
 }

@@ -1,13 +1,14 @@
 package typings.weixinApp.anon
 
 import typings.weixinApp.weixinAppStrings.ok
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  characteristic :{  characteristicId :string,   serviceId :string,   value :std.ArrayBuffer}} & weixin-app.wx.ErrMsgResponse */
 @js.native
-trait characteristiccharacteris extends js.Object {
+trait characteristiccharacteris extends StObject {
   
   var characteristic: CharacteristicId = js.native
   
@@ -23,24 +24,12 @@ object characteristiccharacteris {
   }
   
   @scala.inline
-  implicit class characteristiccharacterisOps[Self <: characteristiccharacteris] (val x: Self) extends AnyVal {
+  implicit class characteristiccharacterisMutableBuilder[Self <: characteristiccharacteris] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacteristic(value: CharacteristicId): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCharacteristic(value: CharacteristicId): Self = this.set("characteristic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrMsg(value: ok | String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+    def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

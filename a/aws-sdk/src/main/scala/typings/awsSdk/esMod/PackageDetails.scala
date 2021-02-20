@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PackageDetails extends js.Object {
+trait PackageDetails extends StObject {
   
   var AvailablePackageVersion: js.UndefOr[PackageVersion] = js.native
   
@@ -55,72 +56,60 @@ object PackageDetails {
   }
   
   @scala.inline
-  implicit class PackageDetailsOps[Self <: PackageDetails] (val x: Self) extends AnyVal {
+  implicit class PackageDetailsMutableBuilder[Self <: PackageDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailablePackageVersion(value: PackageVersion): Self = StObject.set(x, "AvailablePackageVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailablePackageVersionUndefined: Self = StObject.set(x, "AvailablePackageVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailablePackageVersion(value: PackageVersion): Self = this.set("AvailablePackageVersion", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteAvailablePackageVersion: Self = this.set("AvailablePackageVersion", js.undefined)
+    def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setLastUpdatedAt(value: LastUpdated): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetails(value: ErrorDetails): Self = this.set("ErrorDetails", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("ErrorDetails", js.undefined)
+    def setPackageDescription(value: PackageDescription): Self = StObject.set(x, "PackageDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: LastUpdated): Self = this.set("LastUpdatedAt", value.asInstanceOf[js.Any])
+    def setPackageDescriptionUndefined: Self = StObject.set(x, "PackageDescription", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("LastUpdatedAt", js.undefined)
+    def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageDescription(value: PackageDescription): Self = this.set("PackageDescription", value.asInstanceOf[js.Any])
+    def setPackageIDUndefined: Self = StObject.set(x, "PackageID", js.undefined)
     
     @scala.inline
-    def deletePackageDescription: Self = this.set("PackageDescription", js.undefined)
+    def setPackageName(value: PackageName): Self = StObject.set(x, "PackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageID(value: PackageID): Self = this.set("PackageID", value.asInstanceOf[js.Any])
+    def setPackageNameUndefined: Self = StObject.set(x, "PackageName", js.undefined)
     
     @scala.inline
-    def deletePackageID: Self = this.set("PackageID", js.undefined)
+    def setPackageStatus(value: PackageStatus): Self = StObject.set(x, "PackageStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: PackageName): Self = this.set("PackageName", value.asInstanceOf[js.Any])
+    def setPackageStatusUndefined: Self = StObject.set(x, "PackageStatus", js.undefined)
     
     @scala.inline
-    def deletePackageName: Self = this.set("PackageName", js.undefined)
+    def setPackageType(value: PackageType): Self = StObject.set(x, "PackageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageStatus(value: PackageStatus): Self = this.set("PackageStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageStatus: Self = this.set("PackageStatus", js.undefined)
-    
-    @scala.inline
-    def setPackageType(value: PackageType): Self = this.set("PackageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageType: Self = this.set("PackageType", js.undefined)
+    def setPackageTypeUndefined: Self = StObject.set(x, "PackageType", js.undefined)
   }
 }

@@ -1,15 +1,15 @@
 package typings.luminoCoreutils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/coreutils/types/mime", JSImport.Namespace)
-@js.native
-object mimeMod extends js.Object {
+object mimeMod {
   
+  @JSImport("@lumino/coreutils/types/mime", "MimeData")
   @js.native
-  class MimeData () extends js.Object {
+  class MimeData () extends StObject {
     
     var _types: js.Any = js.native
     

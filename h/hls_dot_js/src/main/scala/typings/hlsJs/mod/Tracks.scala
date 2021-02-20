@@ -1,11 +1,12 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tracks extends js.Object {
+trait Tracks extends StObject {
   
   var codec: String = js.native
   
@@ -26,33 +27,21 @@ object Tracks {
   }
   
   @scala.inline
-  implicit class TracksOps[Self <: Tracks] (val x: Self) extends AnyVal {
+  implicit class TracksMutableBuilder[Self <: Tracks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitSegment(value: js.Any): Self = StObject.set(x, "initSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: String): Self = this.set("codec", value.asInstanceOf[js.Any])
+    def setLevelCodec(value: js.Any): Self = StObject.set(x, "levelCodec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitSegment(value: js.Any): Self = this.set("initSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevelCodec(value: js.Any): Self = this.set("levelCodec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

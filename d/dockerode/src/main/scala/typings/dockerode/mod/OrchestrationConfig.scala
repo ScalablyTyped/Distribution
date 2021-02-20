@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrchestrationConfig extends js.Object {
+trait OrchestrationConfig extends StObject {
   
   var TaskHistoryRetentionLimit: js.UndefOr[Double] = js.native
 }
@@ -18,24 +19,12 @@ object OrchestrationConfig {
   }
   
   @scala.inline
-  implicit class OrchestrationConfigOps[Self <: OrchestrationConfig] (val x: Self) extends AnyVal {
+  implicit class OrchestrationConfigMutableBuilder[Self <: OrchestrationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTaskHistoryRetentionLimit(value: Double): Self = StObject.set(x, "TaskHistoryRetentionLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTaskHistoryRetentionLimit(value: Double): Self = this.set("TaskHistoryRetentionLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskHistoryRetentionLimit: Self = this.set("TaskHistoryRetentionLimit", js.undefined)
+    def setTaskHistoryRetentionLimitUndefined: Self = StObject.set(x, "TaskHistoryRetentionLimit", js.undefined)
   }
 }

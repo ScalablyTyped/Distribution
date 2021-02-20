@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointInput extends js.Object {
+trait EndpointInput extends StObject {
   
   /**
     * An endpoint in customer's account which has enabled DataCaptureConfig enabled.
@@ -36,36 +37,24 @@ object EndpointInput {
   }
   
   @scala.inline
-  implicit class EndpointInputOps[Self <: EndpointInput] (val x: Self) extends AnyVal {
+  implicit class EndpointInputMutableBuilder[Self <: EndpointInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalPath(value: ProcessingLocalPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3DataDistributionType(value: ProcessingS3DataDistributionType): Self = StObject.set(x, "S3DataDistributionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointName(value: EndpointName): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    def setS3DataDistributionTypeUndefined: Self = StObject.set(x, "S3DataDistributionType", js.undefined)
     
     @scala.inline
-    def setLocalPath(value: ProcessingLocalPath): Self = this.set("LocalPath", value.asInstanceOf[js.Any])
+    def setS3InputMode(value: ProcessingS3InputMode): Self = StObject.set(x, "S3InputMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3DataDistributionType(value: ProcessingS3DataDistributionType): Self = this.set("S3DataDistributionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3DataDistributionType: Self = this.set("S3DataDistributionType", js.undefined)
-    
-    @scala.inline
-    def setS3InputMode(value: ProcessingS3InputMode): Self = this.set("S3InputMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3InputMode: Self = this.set("S3InputMode", js.undefined)
+    def setS3InputModeUndefined: Self = StObject.set(x, "S3InputMode", js.undefined)
   }
 }

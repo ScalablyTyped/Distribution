@@ -1,16 +1,18 @@
 package typings.ionic
 
 import typings.ionic.coreMod.DeployCoreCommand
+import typings.ionic.definitionsMod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/deploy/manifest", JSImport.Namespace)
-@js.native
-object manifestMod extends js.Object {
+object manifestMod {
   
+  @JSImport("ionic/commands/deploy/manifest", "DeployManifestCommand")
   @js.native
-  class DeployManifestCommand () extends DeployCoreCommand {
+  class DeployManifestCommand protected () extends DeployCoreCommand {
+    def this(namespace: INamespace) = this()
     
     var getFileAndSizeAndHashForFile: js.Any = js.native
     

@@ -1,6 +1,7 @@
 package typings.typescript.mod
 
 import typings.typescript.typescriptBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,30 +24,18 @@ object ReferenceEntry {
   }
   
   @scala.inline
-  implicit class ReferenceEntryOps[Self <: ReferenceEntry] (val x: Self) extends AnyVal {
+  implicit class ReferenceEntryMutableBuilder[Self <: ReferenceEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsDefinition(value: Boolean): Self = StObject.set(x, "isDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsInString(value: `true`): Self = StObject.set(x, "isInString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsInStringUndefined: Self = StObject.set(x, "isInString", js.undefined)
     
     @scala.inline
-    def setIsDefinition(value: Boolean): Self = this.set("isDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsWriteAccess(value: Boolean): Self = this.set("isWriteAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsInString(value: `true`): Self = this.set("isInString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsInString: Self = this.set("isInString", js.undefined)
+    def setIsWriteAccess(value: Boolean): Self = StObject.set(x, "isWriteAccess", value.asInstanceOf[js.Any])
   }
 }

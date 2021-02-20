@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.awt.XControlModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,27 +59,15 @@ object XControlShape {
   }
   
   @scala.inline
-  implicit class XControlShapeOps[Self <: XControlShape] (val x: Self) extends AnyVal {
+  implicit class XControlShapeMutableBuilder[Self <: XControlShape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControl(value: XControlModel): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetControl(value: () => XControlModel): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setControl(value: XControlModel): Self = this.set("Control", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetControl(value: () => XControlModel): Self = this.set("getControl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetControl(value: XControlModel => Unit): Self = this.set("setControl", js.Any.fromFunction1(value))
+    def setSetControl(value: XControlModel => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction1(value))
   }
 }

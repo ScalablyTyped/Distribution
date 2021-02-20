@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchdomainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hit extends js.Object {
+trait Hit extends StObject {
   
   /**
     * The expressions returned from a document that matches the search request.
@@ -36,42 +37,30 @@ object Hit {
   }
   
   @scala.inline
-  implicit class HitOps[Self <: Hit] (val x: Self) extends AnyVal {
+  implicit class HitMutableBuilder[Self <: Hit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExprs(value: Exprs): Self = StObject.set(x, "exprs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExprsUndefined: Self = StObject.set(x, "exprs", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExprs(value: Exprs): Self = this.set("exprs", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteExprs: Self = this.set("exprs", js.undefined)
+    def setHighlights(value: Highlights): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: Fields): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlights(value: Highlights): Self = this.set("highlights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighlights: Self = this.set("highlights", js.undefined)
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

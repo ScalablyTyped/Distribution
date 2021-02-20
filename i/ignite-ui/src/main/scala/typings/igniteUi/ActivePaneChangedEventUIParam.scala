@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivePaneChangedEventUIParam extends js.Object {
+trait ActivePaneChangedEventUIParam extends StObject {
   
   /**
     * Gets the active cell of the new active pane or null if there is no active pane.
@@ -41,48 +42,36 @@ object ActivePaneChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class ActivePaneChangedEventUIParamOps[Self <: ActivePaneChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ActivePaneChangedEventUIParamMutableBuilder[Self <: ActivePaneChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveCellUndefined: Self = StObject.set(x, "activeCell", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewActivePane(value: js.Any): Self = StObject.set(x, "newActivePane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveCell(value: String): Self = this.set("activeCell", value.asInstanceOf[js.Any])
+    def setNewActivePaneUndefined: Self = StObject.set(x, "newActivePane", js.undefined)
     
     @scala.inline
-    def deleteActiveCell: Self = this.set("activeCell", js.undefined)
+    def setOldActivePane(value: js.Any): Self = StObject.set(x, "oldActivePane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewActivePane(value: js.Any): Self = this.set("newActivePane", value.asInstanceOf[js.Any])
+    def setOldActivePaneUndefined: Self = StObject.set(x, "oldActivePane", js.undefined)
     
     @scala.inline
-    def deleteNewActivePane: Self = this.set("newActivePane", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldActivePane(value: js.Any): Self = this.set("oldActivePane", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteOldActivePane: Self = this.set("oldActivePane", js.undefined)
+    def setVisibleRange(value: String): Self = StObject.set(x, "visibleRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setVisibleRange(value: String): Self = this.set("visibleRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleRange: Self = this.set("visibleRange", js.undefined)
+    def setVisibleRangeUndefined: Self = StObject.set(x, "visibleRange", js.undefined)
   }
 }

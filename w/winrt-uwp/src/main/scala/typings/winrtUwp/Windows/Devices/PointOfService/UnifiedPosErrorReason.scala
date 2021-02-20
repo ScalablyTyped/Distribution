@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UnifiedPosErrorReason extends js.Object
+sealed trait UnifiedPosErrorReason extends StObject
 /** Defines the constants that indicates the reason for the error event. */
 @JSGlobal("Windows.Devices.PointOfService.UnifiedPosErrorReason")
 @js.native
-object UnifiedPosErrorReason extends js.Object {
+object UnifiedPosErrorReason extends StObject {
   
   /** The device is busy. */
   @js.native

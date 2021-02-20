@@ -1,12 +1,13 @@
 package typings.uifabricReactHooks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/react-hooks/lib/useForceUpdate", JSImport.Namespace)
-@js.native
-object useForceUpdateMod extends js.Object {
+object useForceUpdateMod {
   
+  @JSImport("@uifabric/react-hooks/lib/useForceUpdate", "useForceUpdate")
+  @js.native
   def useForceUpdate(): js.Function0[Unit] = js.native
 }

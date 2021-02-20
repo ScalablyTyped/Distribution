@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.reflectionTextureBaseBlockMod.ReflectionTextureBaseBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/Dual/reflectionTextureBlock", JSImport.Namespace)
-@js.native
-object reflectionTextureBlockMod extends js.Object {
+object reflectionTextureBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Dual/reflectionTextureBlock", "ReflectionTextureBlock")
   @js.native
   class ReflectionTextureBlock protected () extends ReflectionTextureBaseBlock {
     /**

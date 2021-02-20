@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IShellPaneTab extends js.Object {
+trait IShellPaneTab extends StObject {
   
   val Events: IShellPaneTabEvents = js.native
   
@@ -62,63 +63,51 @@ object IShellPaneTab {
   }
   
   @scala.inline
-  implicit class IShellPaneTabOps[Self <: IShellPaneTab] (val x: Self) extends AnyVal {
+  implicit class IShellPaneTabMutableBuilder[Self <: IShellPaneTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: IShellPaneTabEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsBuiltIn(value: Boolean): Self = StObject.set(x, "IsBuiltIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEvents(value: IShellPaneTabEvents): Self = this.set("Events", value.asInstanceOf[js.Any])
+    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBuiltIn(value: Boolean): Self = this.set("IsBuiltIn", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("Remove", js.Any.fromFunction0(value))
+    def setShowDashboard(value: (String, js.Any) => Unit): Self = StObject.set(x, "ShowDashboard", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelect(value: () => Unit): Self = this.set("Select", js.Any.fromFunction0(value))
+    def setShowEmptyContent(value: () => Unit): Self = StObject.set(x, "ShowEmptyContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("Selected", value.asInstanceOf[js.Any])
+    def setShowFilePreview(value: String => Unit): Self = StObject.set(x, "ShowFilePreview", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowDashboard(value: (String, js.Any) => Unit): Self = this.set("ShowDashboard", js.Any.fromFunction2(value))
+    def setShowObjectVersionProperties(value: IPropertyValuesWithIconClues => Unit): Self = StObject.set(x, "ShowObjectVersionProperties", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowEmptyContent(value: () => Unit): Self = this.set("ShowEmptyContent", js.Any.fromFunction0(value))
+    def setShowPersistentContent(value: Double => Unit): Self = StObject.set(x, "ShowPersistentContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowFilePreview(value: String => Unit): Self = this.set("ShowFilePreview", js.Any.fromFunction1(value))
+    def setShowSSRSReport(value: String => Unit): Self = StObject.set(x, "ShowSSRSReport", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowObjectVersionProperties(value: IPropertyValuesWithIconClues => Unit): Self = this.set("ShowObjectVersionProperties", js.Any.fromFunction1(value))
+    def setTabId(value: String): Self = StObject.set(x, "TabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPersistentContent(value: Double => Unit): Self = this.set("ShowPersistentContent", js.Any.fromFunction1(value))
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSSRSReport(value: String => Unit): Self = this.set("ShowSSRSReport", js.Any.fromFunction1(value))
+    def setUnselect(value: () => Unit): Self = StObject.set(x, "Unselect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTabId(value: String): Self = this.set("TabId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnselect(value: () => Unit): Self = this.set("Unselect", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

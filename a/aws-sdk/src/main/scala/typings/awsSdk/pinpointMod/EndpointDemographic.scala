@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointDemographic extends js.Object {
+trait EndpointDemographic extends StObject {
   
   /**
     * The version of the app that's associated with the endpoint.
@@ -56,66 +57,54 @@ object EndpointDemographic {
   }
   
   @scala.inline
-  implicit class EndpointDemographicOps[Self <: EndpointDemographic] (val x: Self) extends AnyVal {
+  implicit class EndpointDemographicMutableBuilder[Self <: EndpointDemographic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppVersion(value: string): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppVersionUndefined: Self = StObject.set(x, "AppVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocale(value: string): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersion(value: string): Self = this.set("AppVersion", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "Locale", js.undefined)
     
     @scala.inline
-    def deleteAppVersion: Self = this.set("AppVersion", js.undefined)
+    def setMake(value: string): Self = StObject.set(x, "Make", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: string): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    def setMakeUndefined: Self = StObject.set(x, "Make", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("Locale", js.undefined)
+    def setModel(value: string): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMake(value: string): Self = this.set("Make", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
     
     @scala.inline
-    def deleteMake: Self = this.set("Make", js.undefined)
+    def setModelVersion(value: string): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: string): Self = this.set("Model", value.asInstanceOf[js.Any])
+    def setModelVersionUndefined: Self = StObject.set(x, "ModelVersion", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("Model", js.undefined)
+    def setPlatform(value: string): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelVersion(value: string): Self = this.set("ModelVersion", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
     @scala.inline
-    def deleteModelVersion: Self = this.set("ModelVersion", js.undefined)
+    def setPlatformVersion(value: string): Self = StObject.set(x, "PlatformVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: string): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    def setPlatformVersionUndefined: Self = StObject.set(x, "PlatformVersion", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("Platform", js.undefined)
+    def setTimezone(value: string): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformVersion(value: string): Self = this.set("PlatformVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatformVersion: Self = this.set("PlatformVersion", js.undefined)
-    
-    @scala.inline
-    def setTimezone(value: string): Self = this.set("Timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+    def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
   }
 }

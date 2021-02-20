@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotVbpVolumeDivisionStylesOptions extends js.Object {
+trait PlotVbpVolumeDivisionStylesOptions extends StObject {
   
   /**
     * (Highstock) Color of negative volume bars.
@@ -26,30 +27,18 @@ object PlotVbpVolumeDivisionStylesOptions {
   }
   
   @scala.inline
-  implicit class PlotVbpVolumeDivisionStylesOptionsOps[Self <: PlotVbpVolumeDivisionStylesOptions] (val x: Self) extends AnyVal {
+  implicit class PlotVbpVolumeDivisionStylesOptionsMutableBuilder[Self <: PlotVbpVolumeDivisionStylesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNegativeColor(value: ColorString): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPositiveColor(value: ColorString): Self = StObject.set(x, "positiveColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeColor(value: ColorString): Self = this.set("negativeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNegativeColor: Self = this.set("negativeColor", js.undefined)
-    
-    @scala.inline
-    def setPositiveColor(value: ColorString): Self = this.set("positiveColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositiveColor: Self = this.set("positiveColor", js.undefined)
+    def setPositiveColorUndefined: Self = StObject.set(x, "positiveColor", js.undefined)
   }
 }

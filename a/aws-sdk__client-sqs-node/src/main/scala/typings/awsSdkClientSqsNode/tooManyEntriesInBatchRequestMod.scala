@@ -1,12 +1,13 @@
 package typings.awsSdkClientSqsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/model/TooManyEntriesInBatchRequest", JSImport.Namespace)
-@js.native
-object tooManyEntriesInBatchRequestMod extends js.Object {
+object tooManyEntriesInBatchRequestMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/model/TooManyEntriesInBatchRequest", "TooManyEntriesInBatchRequest")
+  @js.native
   val TooManyEntriesInBatchRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.surveysV2Mod.surveysV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifications for the target audience of a survey run through the API.
   */
 @js.native
-trait SchemaSurveyAudience extends js.Object {
+trait SchemaSurveyAudience extends StObject {
   
   /**
     * Optional list of age buckets to target. Supported age buckets are:
@@ -63,60 +64,48 @@ object SchemaSurveyAudience {
   }
   
   @scala.inline
-  implicit class SchemaSurveyAudienceOps[Self <: SchemaSurveyAudience] (val x: Self) extends AnyVal {
+  implicit class SchemaSurveyAudienceMutableBuilder[Self <: SchemaSurveyAudience] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAges(value: js.Array[String]): Self = StObject.set(x, "ages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgesUndefined: Self = StObject.set(x, "ages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgesVarargs(value: String*): Self = StObject.set(x, "ages", js.Array(value :_*))
     
     @scala.inline
-    def setAgesVarargs(value: String*): Self = this.set("ages", js.Array(value :_*))
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAges(value: js.Array[String]): Self = this.set("ages", value.asInstanceOf[js.Any])
+    def setCountrySubdivision(value: String): Self = StObject.set(x, "countrySubdivision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAges: Self = this.set("ages", js.undefined)
+    def setCountrySubdivisionUndefined: Self = StObject.set(x, "countrySubdivision", js.undefined)
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountrySubdivision(value: String): Self = this.set("countrySubdivision", value.asInstanceOf[js.Any])
+    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
     @scala.inline
-    def deleteCountrySubdivision: Self = this.set("countrySubdivision", js.undefined)
+    def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
     @scala.inline
-    def deleteGender: Self = this.set("gender", js.undefined)
+    def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
     @scala.inline
-    def setLanguagesVarargs(value: String*): Self = this.set("languages", js.Array(value :_*))
+    def setPopulationSource(value: String): Self = StObject.set(x, "populationSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguages(value: js.Array[String]): Self = this.set("languages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguages: Self = this.set("languages", js.undefined)
-    
-    @scala.inline
-    def setPopulationSource(value: String): Self = this.set("populationSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePopulationSource: Self = this.set("populationSource", js.undefined)
+    def setPopulationSourceUndefined: Self = StObject.set(x, "populationSource", js.undefined)
   }
 }

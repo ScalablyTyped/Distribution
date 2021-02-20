@@ -1,26 +1,18 @@
 package typings.reactTransitionGroup
 
-import typings.react.mod.Component
 import typings.reactTransitionGroup.configMod.Config
-import typings.reactTransitionGroup.csstransitionMod.CSSTransitionProps
-import typings.reactTransitionGroup.reactTransitionGroupStrings.div
-import typings.reactTransitionGroup.switchTransitionMod.SwitchTransitionProps
-import typings.reactTransitionGroup.transitionGroupMod.TransitionGroupProps
-import typings.reactTransitionGroup.transitionMod.TransitionProps
+import typings.reactTransitionGroup.csstransitionMod.default
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-transition-group", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val config: Config = js.native
-  
+  @JSImport("react-transition-group", "CSSTransition")
   @js.native
-  class CSSTransition[Ref /* <: js.UndefOr[HTMLElement] */] ()
-    extends Component[CSSTransitionProps[Ref], js.Object, js.Any]
+  class CSSTransition[Ref /* <: js.UndefOr[HTMLElement] */] () extends default[Ref]
   
   /**
     * A transition component inspired by the [vue transition modes](https://vuejs.org/v2/guide/transitions.html#Transition-Modes).
@@ -47,9 +39,10 @@ object mod extends js.Object {
     * }
     * ```
     */
+  @JSImport("react-transition-group", "SwitchTransition")
   @js.native
   class SwitchTransition ()
-    extends Component[SwitchTransitionProps, js.Object, js.Any]
+    extends typings.reactTransitionGroup.switchTransitionMod.default
   
   /**
     * The Transition component lets you describe a transition from one component
@@ -92,9 +85,10 @@ object mod extends js.Object {
     * ```
     *
     */
+  @JSImport("react-transition-group", "Transition")
   @js.native
   class Transition[RefElement /* <: js.UndefOr[HTMLElement] */] ()
-    extends Component[TransitionProps[RefElement], js.Object, js.Any]
+    extends typings.reactTransitionGroup.transitionMod.default[RefElement]
   
   /**
     * The `<TransitionGroup>` component manages a set of `<Transition>` components
@@ -153,7 +147,12 @@ object mod extends js.Object {
     * components. This means you can mix and match animations across different
     * list items.
     */
+  @JSImport("react-transition-group", "TransitionGroup")
   @js.native
   class TransitionGroup ()
-    extends Component[TransitionGroupProps[div, js.Any], js.Object, js.Any]
+    extends typings.reactTransitionGroup.transitionGroupMod.default
+  
+  @JSImport("react-transition-group", "config")
+  @js.native
+  val config: Config = js.native
 }

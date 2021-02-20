@@ -1,5 +1,6 @@
 package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * List queries response.
   */
 @js.native
-trait SchemaListQueriesResponse extends js.Object {
+trait SchemaListQueriesResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -30,33 +31,21 @@ object SchemaListQueriesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListQueriesResponseOps[Self <: SchemaListQueriesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListQueriesResponseMutableBuilder[Self <: SchemaListQueriesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueries(value: js.Array[SchemaQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setQueriesVarargs(value: SchemaQuery*): Self = this.set("queries", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueries(value: js.Array[SchemaQuery]): Self = this.set("queries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueries: Self = this.set("queries", js.undefined)
+    def setQueriesVarargs(value: SchemaQuery*): Self = StObject.set(x, "queries", js.Array(value :_*))
   }
 }

@@ -1,14 +1,14 @@
 package typings.signalsJs
 
 import typings.signalsJs.prioritySignalMod.PrioritySignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("signals.js/lib/org/osflash/signals/DeluxeSignal", JSImport.Namespace)
-@js.native
-object deluxeSignalMod extends js.Object {
+object deluxeSignalMod {
   
+  @JSImport("signals.js/lib/org/osflash/signals/DeluxeSignal", "DeluxeSignal")
   @js.native
   class DeluxeSignal protected () extends PrioritySignal {
     def this(target: js.UndefOr[scala.Nothing], valueClasses: js.Any*) = this()

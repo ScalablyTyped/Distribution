@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowsUpdateSettings extends js.Object {
+trait WindowsUpdateSettings extends StObject {
   
   /** Only apply updates of these windows update classifications. If empty, all updates are applied. */
   var classifications: js.UndefOr[js.Array[String]] = js.native
@@ -25,45 +26,33 @@ object WindowsUpdateSettings {
   }
   
   @scala.inline
-  implicit class WindowsUpdateSettingsOps[Self <: WindowsUpdateSettings] (val x: Self) extends AnyVal {
+  implicit class WindowsUpdateSettingsMutableBuilder[Self <: WindowsUpdateSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassifications(value: js.Array[String]): Self = StObject.set(x, "classifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassificationsUndefined: Self = StObject.set(x, "classifications", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassificationsVarargs(value: String*): Self = StObject.set(x, "classifications", js.Array(value :_*))
     
     @scala.inline
-    def setClassificationsVarargs(value: String*): Self = this.set("classifications", js.Array(value :_*))
+    def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassifications(value: js.Array[String]): Self = this.set("classifications", value.asInstanceOf[js.Any])
+    def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
     @scala.inline
-    def deleteClassifications: Self = this.set("classifications", js.undefined)
+    def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
     
     @scala.inline
-    def setExcludesVarargs(value: String*): Self = this.set("excludes", js.Array(value :_*))
+    def setExclusivePatches(value: js.Array[String]): Self = StObject.set(x, "exclusivePatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludes(value: js.Array[String]): Self = this.set("excludes", value.asInstanceOf[js.Any])
+    def setExclusivePatchesUndefined: Self = StObject.set(x, "exclusivePatches", js.undefined)
     
     @scala.inline
-    def deleteExcludes: Self = this.set("excludes", js.undefined)
-    
-    @scala.inline
-    def setExclusivePatchesVarargs(value: String*): Self = this.set("exclusivePatches", js.Array(value :_*))
-    
-    @scala.inline
-    def setExclusivePatches(value: js.Array[String]): Self = this.set("exclusivePatches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusivePatches: Self = this.set("exclusivePatches", js.undefined)
+    def setExclusivePatchesVarargs(value: String*): Self = StObject.set(x, "exclusivePatches", js.Array(value :_*))
   }
 }

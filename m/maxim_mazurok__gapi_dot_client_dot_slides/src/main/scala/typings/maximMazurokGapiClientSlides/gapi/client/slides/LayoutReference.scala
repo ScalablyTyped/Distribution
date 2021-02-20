@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayoutReference extends js.Object {
+trait LayoutReference extends StObject {
   
   /** Layout ID: the object ID of one of the layouts in the presentation. */
   var layoutId: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object LayoutReference {
   }
   
   @scala.inline
-  implicit class LayoutReferenceOps[Self <: LayoutReference] (val x: Self) extends AnyVal {
+  implicit class LayoutReferenceMutableBuilder[Self <: LayoutReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayoutId(value: String): Self = StObject.set(x, "layoutId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayoutIdUndefined: Self = StObject.set(x, "layoutId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPredefinedLayout(value: String): Self = StObject.set(x, "predefinedLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutId(value: String): Self = this.set("layoutId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayoutId: Self = this.set("layoutId", js.undefined)
-    
-    @scala.inline
-    def setPredefinedLayout(value: String): Self = this.set("predefinedLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePredefinedLayout: Self = this.set("predefinedLayout", js.undefined)
+    def setPredefinedLayoutUndefined: Self = StObject.set(x, "predefinedLayout", js.undefined)
   }
 }

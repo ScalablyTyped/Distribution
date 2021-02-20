@@ -6,12 +6,13 @@ import typings.octokitTypes.endpointsMod.PullsMergeResponse405Data
 import typings.octokitTypes.endpointsMod.PullsMergeResponse409Data
 import typings.octokitTypes.endpointsMod.PullsMergeResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersPullsMergeEndpoint extends js.Object {
+trait ParametersPullsMergeEndpoint extends StObject {
   
   var parameters: PullsMergeEndpoint = js.native
   
@@ -32,29 +33,17 @@ object ParametersPullsMergeEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersPullsMergeEndpointOps[Self <: ParametersPullsMergeEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersPullsMergeEndpointMutableBuilder[Self <: ParametersPullsMergeEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: PullsMergeEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: PullsMergeEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: PullsMergeRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setRequest(value: PullsMergeRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResponse(
       value: OctokitResponse[PullsMergeResponseData | PullsMergeResponse405Data | PullsMergeResponse409Data]
-    ): Self = this.set("response", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

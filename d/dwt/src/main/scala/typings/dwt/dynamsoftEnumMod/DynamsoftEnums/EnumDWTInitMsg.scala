@@ -1,41 +1,36 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTInitMsg extends js.Object
+sealed trait EnumDWTInitMsg extends StObject
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_InitMsg")
 @js.native
-object EnumDWTInitMsg extends js.Object {
+object EnumDWTInitMsg extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWTInitMsg with Double] = js.native
   
   @js.native
   sealed trait DownloadError extends EnumDWTInitMsg
-  /* 4 */ @js.native
-  object DownloadError extends TopLevel[DownloadError with Double]
+  /* 4 */ val DownloadError: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTInitMsg.DownloadError with Double = js.native
   
   @js.native
   sealed trait DownloadNotRestartError extends EnumDWTInitMsg
-  /* 5 */ @js.native
-  object DownloadNotRestartError extends TopLevel[DownloadNotRestartError with Double]
+  /* 5 */ val DownloadNotRestartError: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTInitMsg.DownloadNotRestartError with Double = js.native
   
   @js.native
   sealed trait Error extends EnumDWTInitMsg
-  /* 2 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  /* 2 */ val Error: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTInitMsg.Error with Double = js.native
   
   @js.native
   sealed trait Info extends EnumDWTInitMsg
-  /* 1 */ @js.native
-  object Info extends TopLevel[Info with Double]
+  /* 1 */ val Info: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTInitMsg.Info with Double = js.native
   
   @js.native
   sealed trait NotInstalledError extends EnumDWTInitMsg
-  /* 3 */ @js.native
-  object NotInstalledError extends TopLevel[NotInstalledError with Double]
+  /* 3 */ val NotInstalledError: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTInitMsg.NotInstalledError with Double = js.native
 }

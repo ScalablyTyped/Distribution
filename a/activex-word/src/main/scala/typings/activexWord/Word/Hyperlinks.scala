@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hyperlinks extends js.Object {
+trait Hyperlinks extends StObject {
   
   def Add(Anchor: js.Any): Hyperlink = js.native
   def Add(

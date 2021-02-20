@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html)
   */
 @js.native
-trait config extends js.Object {
+trait config extends StObject {
   
   /**
     * The URL for font resources used by the [Font](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#family) class in [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) and [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html) labels.
@@ -86,42 +87,30 @@ object config {
   }
   
   @scala.inline
-  implicit class configOps[Self <: config] (val x: Self) extends AnyVal {
+  implicit class configMutableBuilder[Self <: config] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontsUrl(value: String): Self = StObject.set(x, "fontsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeoRSSServiceUrl(value: String): Self = StObject.set(x, "geoRSSServiceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometryServiceUrl(value: String): Self = StObject.set(x, "geometryServiceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontsUrl(value: String): Self = this.set("fontsUrl", value.asInstanceOf[js.Any])
+    def setKmlServiceUrl(value: String): Self = StObject.set(x, "kmlServiceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoRSSServiceUrl(value: String): Self = this.set("geoRSSServiceUrl", value.asInstanceOf[js.Any])
+    def setLog(value: configLog): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryServiceUrl(value: String): Self = this.set("geometryServiceUrl", value.asInstanceOf[js.Any])
+    def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmlServiceUrl(value: String): Self = this.set("kmlServiceUrl", value.asInstanceOf[js.Any])
+    def setRequest(value: configRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: configLog): Self = this.set("log", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPortalUrl(value: String): Self = this.set("portalUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: configRequest): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkers(value: configWorkers): Self = this.set("workers", value.asInstanceOf[js.Any])
+    def setWorkers(value: configWorkers): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
   }
 }

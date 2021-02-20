@@ -1,11 +1,12 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddLabels extends js.Object {
+trait AddLabels extends StObject {
   
   var addAssignees: `718` = js.native
   
@@ -134,135 +135,123 @@ object AddLabels {
   }
   
   @scala.inline
-  implicit class AddLabelsOps[Self <: AddLabels] (val x: Self) extends AnyVal {
+  implicit class AddLabelsMutableBuilder[Self <: AddLabels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAssignees(value: `718`): Self = StObject.set(x, "addAssignees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddLabels(value: `719`): Self = StObject.set(x, "addLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckUserCanBeAssigned(value: `720`): Self = StObject.set(x, "checkUserCanBeAssigned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddAssignees(value: `718`): Self = this.set("addAssignees", value.asInstanceOf[js.Any])
+    def setCreate(value: `721`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddLabels(value: `719`): Self = this.set("addLabels", value.asInstanceOf[js.Any])
+    def setCreateComment(value: `722`): Self = StObject.set(x, "createComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckUserCanBeAssigned(value: `720`): Self = this.set("checkUserCanBeAssigned", value.asInstanceOf[js.Any])
+    def setCreateLabel(value: `723`): Self = StObject.set(x, "createLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: `721`): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setCreateMilestone(value: `724`): Self = StObject.set(x, "createMilestone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateComment(value: `722`): Self = this.set("createComment", value.asInstanceOf[js.Any])
+    def setDeleteComment(value: `725`): Self = StObject.set(x, "deleteComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateLabel(value: `723`): Self = this.set("createLabel", value.asInstanceOf[js.Any])
+    def setDeleteLabel(value: `726`): Self = StObject.set(x, "deleteLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateMilestone(value: `724`): Self = this.set("createMilestone", value.asInstanceOf[js.Any])
+    def setDeleteMilestone(value: `727`): Self = StObject.set(x, "deleteMilestone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteComment(value: `725`): Self = this.set("deleteComment", value.asInstanceOf[js.Any])
+    def setGet(value: `728`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteLabel(value: `726`): Self = this.set("deleteLabel", value.asInstanceOf[js.Any])
+    def setGetComment(value: `729`): Self = StObject.set(x, "getComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteMilestone(value: `727`): Self = this.set("deleteMilestone", value.asInstanceOf[js.Any])
+    def setGetEvent(value: `730`): Self = StObject.set(x, "getEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: `728`): Self = this.set("get", value.asInstanceOf[js.Any])
+    def setGetLabel(value: `731`): Self = StObject.set(x, "getLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetComment(value: `729`): Self = this.set("getComment", value.asInstanceOf[js.Any])
+    def setGetMilestone(value: `732`): Self = StObject.set(x, "getMilestone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetEvent(value: `730`): Self = this.set("getEvent", value.asInstanceOf[js.Any])
+    def setList(value: `733`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLabel(value: `731`): Self = this.set("getLabel", value.asInstanceOf[js.Any])
+    def setListAssignees(value: `734`): Self = StObject.set(x, "listAssignees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMilestone(value: `732`): Self = this.set("getMilestone", value.asInstanceOf[js.Any])
+    def setListComments(value: `735`): Self = StObject.set(x, "listComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: `733`): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setListCommentsForRepo(value: `736`): Self = StObject.set(x, "listCommentsForRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListAssignees(value: `734`): Self = this.set("listAssignees", value.asInstanceOf[js.Any])
+    def setListEvents(value: `737`): Self = StObject.set(x, "listEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListComments(value: `735`): Self = this.set("listComments", value.asInstanceOf[js.Any])
+    def setListEventsForRepo(value: `738`): Self = StObject.set(x, "listEventsForRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListCommentsForRepo(value: `736`): Self = this.set("listCommentsForRepo", value.asInstanceOf[js.Any])
+    def setListEventsForTimeline(value: `739`): Self = StObject.set(x, "listEventsForTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListEvents(value: `737`): Self = this.set("listEvents", value.asInstanceOf[js.Any])
+    def setListForAuthenticatedUser(value: `740`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListEventsForRepo(value: `738`): Self = this.set("listEventsForRepo", value.asInstanceOf[js.Any])
+    def setListForOrg(value: `741`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListEventsForTimeline(value: `739`): Self = this.set("listEventsForTimeline", value.asInstanceOf[js.Any])
+    def setListForRepo(value: `742`): Self = StObject.set(x, "listForRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListForAuthenticatedUser(value: `740`): Self = this.set("listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setListLabelsForMilestone(value: `743`): Self = StObject.set(x, "listLabelsForMilestone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListForOrg(value: `741`): Self = this.set("listForOrg", value.asInstanceOf[js.Any])
+    def setListLabelsForRepo(value: `744`): Self = StObject.set(x, "listLabelsForRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListForRepo(value: `742`): Self = this.set("listForRepo", value.asInstanceOf[js.Any])
+    def setListLabelsOnIssue(value: `745`): Self = StObject.set(x, "listLabelsOnIssue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListLabelsForMilestone(value: `743`): Self = this.set("listLabelsForMilestone", value.asInstanceOf[js.Any])
+    def setListMilestones(value: `746`): Self = StObject.set(x, "listMilestones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListLabelsForRepo(value: `744`): Self = this.set("listLabelsForRepo", value.asInstanceOf[js.Any])
+    def setLock(value: `747`): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListLabelsOnIssue(value: `745`): Self = this.set("listLabelsOnIssue", value.asInstanceOf[js.Any])
+    def setRemoveAllLabels(value: `748`): Self = StObject.set(x, "removeAllLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListMilestones(value: `746`): Self = this.set("listMilestones", value.asInstanceOf[js.Any])
+    def setRemoveAssignees(value: `749`): Self = StObject.set(x, "removeAssignees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLock(value: `747`): Self = this.set("lock", value.asInstanceOf[js.Any])
+    def setRemoveLabel(value: `750`): Self = StObject.set(x, "removeLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveAllLabels(value: `748`): Self = this.set("removeAllLabels", value.asInstanceOf[js.Any])
+    def setSetLabels(value: `751`): Self = StObject.set(x, "setLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveAssignees(value: `749`): Self = this.set("removeAssignees", value.asInstanceOf[js.Any])
+    def setUnlock(value: `752`): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveLabel(value: `750`): Self = this.set("removeLabel", value.asInstanceOf[js.Any])
+    def setUpdate(value: `753`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetLabels(value: `751`): Self = this.set("setLabels", value.asInstanceOf[js.Any])
+    def setUpdateComment(value: `754`): Self = StObject.set(x, "updateComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnlock(value: `752`): Self = this.set("unlock", value.asInstanceOf[js.Any])
+    def setUpdateLabel(value: `755`): Self = StObject.set(x, "updateLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: `753`): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateComment(value: `754`): Self = this.set("updateComment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateLabel(value: `755`): Self = this.set("updateLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateMilestone(value: `756`): Self = this.set("updateMilestone", value.asInstanceOf[js.Any])
+    def setUpdateMilestone(value: `756`): Self = StObject.set(x, "updateMilestone", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.nwJs.mod.global.NWJSHelpers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * nw.Window.get().on('new-win-policy') callback policy argument object
   */
 @js.native
-trait WinPolicy extends js.Object {
+trait WinPolicy extends StObject {
   
   /**
     * Force the link to be opened in the same frame
@@ -58,36 +59,24 @@ object WinPolicy {
   }
   
   @scala.inline
-  implicit class WinPolicyOps[Self <: WinPolicy] (val x: Self) extends AnyVal {
+  implicit class WinPolicyMutableBuilder[Self <: WinPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceCurrent(value: () => Unit): Self = StObject.set(x, "forceCurrent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceDownload(value: () => Unit): Self = StObject.set(x, "forceDownload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceNewPopup(value: () => Unit): Self = StObject.set(x, "forceNewPopup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceCurrent(value: () => Unit): Self = this.set("forceCurrent", js.Any.fromFunction0(value))
+    def setForceNewWindow(value: () => Unit): Self = StObject.set(x, "forceNewWindow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceDownload(value: () => Unit): Self = this.set("forceDownload", js.Any.fromFunction0(value))
+    def setIgnore(value: () => Unit): Self = StObject.set(x, "ignore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceNewPopup(value: () => Unit): Self = this.set("forceNewPopup", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setForceNewWindow(value: () => Unit): Self = this.set("forceNewWindow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIgnore(value: () => Unit): Self = this.set("ignore", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetNewWindowManifest(value: WindowOption => Unit): Self = this.set("setNewWindowManifest", js.Any.fromFunction1(value))
+    def setSetNewWindowManifest(value: WindowOption => Unit): Self = StObject.set(x, "setNewWindowManifest", js.Any.fromFunction1(value))
   }
 }

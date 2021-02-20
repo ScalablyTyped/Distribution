@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PoseControlled extends js.Object {
+trait PoseControlled extends StObject {
   
   /**
     * The position of the device in babylon space.
@@ -58,45 +59,33 @@ object PoseControlled {
   }
   
   @scala.inline
-  implicit class PoseControlledOps[Self <: PoseControlled] (val x: Self) extends AnyVal {
+  implicit class PoseControlledMutableBuilder[Self <: PoseControlled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevicePosition(value: Vector3): Self = StObject.set(x, "devicePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevicePositionUndefined: Self = StObject.set(x, "devicePosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceRotationQuaternion(value: Quaternion): Self = StObject.set(x, "deviceRotationQuaternion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceRotationQuaternion(value: Quaternion): Self = this.set("deviceRotationQuaternion", value.asInstanceOf[js.Any])
+    def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceScaleFactor(value: Double): Self = this.set("deviceScaleFactor", value.asInstanceOf[js.Any])
+    def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Vector3): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRawPose(value: Nullable[DevicePose]): Self = StObject.set(x, "rawPose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationQuaternion(value: Quaternion): Self = this.set("rotationQuaternion", value.asInstanceOf[js.Any])
+    def setRawPoseNull: Self = StObject.set(x, "rawPose", null)
     
     @scala.inline
-    def setUpdateFromDevice(value: DevicePose => Unit): Self = this.set("updateFromDevice", js.Any.fromFunction1(value))
+    def setRotationQuaternion(value: Quaternion): Self = StObject.set(x, "rotationQuaternion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevicePosition(value: Vector3): Self = this.set("devicePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDevicePosition: Self = this.set("devicePosition", js.undefined)
-    
-    @scala.inline
-    def setRawPose(value: Nullable[DevicePose]): Self = this.set("rawPose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawPoseNull: Self = this.set("rawPose", null)
+    def setUpdateFromDevice(value: DevicePose => Unit): Self = StObject.set(x, "updateFromDevice", js.Any.fromFunction1(value))
   }
 }

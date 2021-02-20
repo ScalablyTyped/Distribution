@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileLayerOptions extends js.Object {
+trait TileLayerOptions extends StObject {
   
   var copyright: js.UndefOr[Copyright] = js.native
   
@@ -24,42 +25,30 @@ object TileLayerOptions {
   }
   
   @scala.inline
-  implicit class TileLayerOptionsOps[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
+  implicit class TileLayerOptionsMutableBuilder[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: Copyright): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTileUrlTemplate(value: String): Self = StObject.set(x, "tileUrlTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: Copyright): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setTileUrlTemplateUndefined: Self = StObject.set(x, "tileUrlTemplate", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setTransparentPng(value: Boolean): Self = StObject.set(x, "transparentPng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileUrlTemplate(value: String): Self = this.set("tileUrlTemplate", value.asInstanceOf[js.Any])
+    def setTransparentPngUndefined: Self = StObject.set(x, "transparentPng", js.undefined)
     
     @scala.inline
-    def deleteTileUrlTemplate: Self = this.set("tileUrlTemplate", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparentPng(value: Boolean): Self = this.set("transparentPng", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransparentPng: Self = this.set("transparentPng", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

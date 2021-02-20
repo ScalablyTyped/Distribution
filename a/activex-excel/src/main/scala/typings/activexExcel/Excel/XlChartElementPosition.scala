@@ -2,6 +2,7 @@ package typings.activexExcel.Excel
 
 import typings.activexExcel.activexExcelNumbers.`-4105`
 import typings.activexExcel.activexExcelNumbers.`-4114`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.activexExcelNumbers.`-4105`
   - typings.activexExcel.activexExcelNumbers.`-4114`
 */
-trait XlChartElementPosition extends js.Object
+trait XlChartElementPosition extends StObject
 object XlChartElementPosition {
   
   @scala.inline

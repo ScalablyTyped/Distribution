@@ -1,5 +1,6 @@
 package typings.microsoftAjax.global.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,15 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class EventArgs ()
   extends typings.microsoftAjax.Sys.EventArgs
-/* static members */
-@JSGlobal("Sys.EventArgs")
-@js.native
-object EventArgs extends js.Object {
+object EventArgs {
+  
+  @JSGlobal("Sys.EventArgs")
+  @js.native
+  val ^ : js.Any = js.native
   
   //#endregion
   //#region Fields
   /**
     * A static object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
     */
-  var Empty: typings.microsoftAjax.Sys.EventArgs = js.native
+  /* static member */
+  @JSGlobal("Sys.EventArgs.Empty")
+  @js.native
+  def Empty: typings.microsoftAjax.Sys.EventArgs = js.native
+  @scala.inline
+  def Empty_=(x: typings.microsoftAjax.Sys.EventArgs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AffectedEntity extends js.Object {
+trait AffectedEntity extends StObject {
   
   /**
     * The 12-digit AWS account number that contains the affected entity.
@@ -56,66 +57,54 @@ object AffectedEntity {
   }
   
   @scala.inline
-  implicit class AffectedEntityOps[Self <: AffectedEntity] (val x: Self) extends AnyVal {
+  implicit class AffectedEntityMutableBuilder[Self <: AffectedEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityArn(value: entityArn): Self = StObject.set(x, "entityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccountId(value: accountId): Self = this.set("awsAccountId", value.asInstanceOf[js.Any])
+    def setEntityArnUndefined: Self = StObject.set(x, "entityArn", js.undefined)
     
     @scala.inline
-    def deleteAwsAccountId: Self = this.set("awsAccountId", js.undefined)
+    def setEntityUrl(value: entityUrl): Self = StObject.set(x, "entityUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityArn(value: entityArn): Self = this.set("entityArn", value.asInstanceOf[js.Any])
+    def setEntityUrlUndefined: Self = StObject.set(x, "entityUrl", js.undefined)
     
     @scala.inline
-    def deleteEntityArn: Self = this.set("entityArn", js.undefined)
+    def setEntityValue(value: entityValue): Self = StObject.set(x, "entityValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityUrl(value: entityUrl): Self = this.set("entityUrl", value.asInstanceOf[js.Any])
+    def setEntityValueUndefined: Self = StObject.set(x, "entityValue", js.undefined)
     
     @scala.inline
-    def deleteEntityUrl: Self = this.set("entityUrl", js.undefined)
+    def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityValue(value: entityValue): Self = this.set("entityValue", value.asInstanceOf[js.Any])
+    def setEventArnUndefined: Self = StObject.set(x, "eventArn", js.undefined)
     
     @scala.inline
-    def deleteEntityValue: Self = this.set("entityValue", js.undefined)
+    def setLastUpdatedTime(value: timestamp): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventArn(value: eventArn): Self = this.set("eventArn", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteEventArn: Self = this.set("eventArn", js.undefined)
+    def setStatusCode(value: entityStatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTime(value: timestamp): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    def setTags(value: tagSet): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: entityStatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
-    
-    @scala.inline
-    def setTags(value: tagSet): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

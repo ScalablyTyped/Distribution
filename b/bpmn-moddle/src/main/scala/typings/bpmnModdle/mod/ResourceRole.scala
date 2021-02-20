@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,33 +33,21 @@ object ResourceRole {
   }
   
   @scala.inline
-  implicit class ResourceRoleOps[Self <: ResourceRole] (val x: Self) extends AnyVal {
+  implicit class ResourceRoleMutableBuilder[Self <: ResourceRole] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceAssignmentExpression(value: ResourceAssignmentExpression): Self = StObject.set(x, "resourceAssignmentExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceParameterBindings(value: js.Array[ResourceParameterBinding]): Self = StObject.set(x, "ResourceParameterBindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceParameterBindingsVarargs(value: ResourceParameterBinding*): Self = this.set("ResourceParameterBindings", js.Array(value :_*))
+    def setResourceParameterBindingsVarargs(value: ResourceParameterBinding*): Self = StObject.set(x, "ResourceParameterBindings", js.Array(value :_*))
     
     @scala.inline
-    def setResourceParameterBindings(value: js.Array[ResourceParameterBinding]): Self = this.set("ResourceParameterBindings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceAssignmentExpression(value: ResourceAssignmentExpression): Self = this.set("resourceAssignmentExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceRef(value: Resource): Self = this.set("resourceRef", value.asInstanceOf[js.Any])
+    def setResourceRef(value: Resource): Self = StObject.set(x, "resourceRef", value.asInstanceOf[js.Any])
   }
 }

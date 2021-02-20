@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateOrganizationalUnitResponse extends js.Object {
+trait UpdateOrganizationalUnitResponse extends StObject {
   
   /**
     * A structure that contains the details about the specified OU, including its new name.
@@ -21,24 +22,12 @@ object UpdateOrganizationalUnitResponse {
   }
   
   @scala.inline
-  implicit class UpdateOrganizationalUnitResponseOps[Self <: UpdateOrganizationalUnitResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateOrganizationalUnitResponseMutableBuilder[Self <: UpdateOrganizationalUnitResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrganizationalUnit(value: OrganizationalUnit): Self = StObject.set(x, "OrganizationalUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrganizationalUnit(value: OrganizationalUnit): Self = this.set("OrganizationalUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationalUnit: Self = this.set("OrganizationalUnit", js.undefined)
+    def setOrganizationalUnitUndefined: Self = StObject.set(x, "OrganizationalUnit", js.undefined)
   }
 }

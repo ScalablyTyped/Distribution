@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITpRegisterRequest extends js.Object {
+trait ITpRegisterRequest extends StObject {
   
   /** TpRegisterRequest family */
   var family: js.UndefOr[String | Null] = js.native
@@ -28,57 +29,45 @@ object ITpRegisterRequest {
   }
   
   @scala.inline
-  implicit class ITpRegisterRequestOps[Self <: ITpRegisterRequest] (val x: Self) extends AnyVal {
+  implicit class ITpRegisterRequestMutableBuilder[Self <: ITpRegisterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFamilyNull: Self = StObject.set(x, "family", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setMaxOccupancy(value: Double): Self = StObject.set(x, "maxOccupancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def setMaxOccupancyNull: Self = StObject.set(x, "maxOccupancy", null)
     
     @scala.inline
-    def setFamilyNull: Self = this.set("family", null)
+    def setMaxOccupancyUndefined: Self = StObject.set(x, "maxOccupancy", js.undefined)
     
     @scala.inline
-    def setMaxOccupancy(value: Double): Self = this.set("maxOccupancy", value.asInstanceOf[js.Any])
+    def setNamespaces(value: js.Array[String]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxOccupancy: Self = this.set("maxOccupancy", js.undefined)
+    def setNamespacesNull: Self = StObject.set(x, "namespaces", null)
     
     @scala.inline
-    def setMaxOccupancyNull: Self = this.set("maxOccupancy", null)
+    def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
     @scala.inline
-    def setNamespacesVarargs(value: String*): Self = this.set("namespaces", js.Array(value :_*))
+    def setNamespacesVarargs(value: String*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
     
     @scala.inline
-    def setNamespaces(value: js.Array[String]): Self = this.set("namespaces", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamespaces: Self = this.set("namespaces", js.undefined)
+    def setVersionNull: Self = StObject.set(x, "version", null)
     
     @scala.inline
-    def setNamespacesNull: Self = this.set("namespaces", null)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionNull: Self = this.set("version", null)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

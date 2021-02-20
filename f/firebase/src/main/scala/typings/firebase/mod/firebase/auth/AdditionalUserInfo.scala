@@ -1,5 +1,6 @@
 package typings.firebase.mod.firebase.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * provider.
   */
 @js.native
-trait AdditionalUserInfo extends js.Object {
+trait AdditionalUserInfo extends StObject {
   
   var isNewUser: Boolean = js.native
   
@@ -28,39 +29,27 @@ object AdditionalUserInfo {
   }
   
   @scala.inline
-  implicit class AdditionalUserInfoOps[Self <: AdditionalUserInfo] (val x: Self) extends AnyVal {
+  implicit class AdditionalUserInfoMutableBuilder[Self <: AdditionalUserInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsNewUser(value: Boolean): Self = StObject.set(x, "isNewUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProfile(value: js.Object): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfileNull: Self = StObject.set(x, "profile", null)
     
     @scala.inline
-    def setIsNewUser(value: Boolean): Self = this.set("isNewUser", value.asInstanceOf[js.Any])
+    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: js.Object): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setUsernameNull: Self = StObject.set(x, "username", null)
     
     @scala.inline
-    def setProfileNull: Self = this.set("profile", null)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
-    
-    @scala.inline
-    def setUsernameNull: Self = this.set("username", null)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

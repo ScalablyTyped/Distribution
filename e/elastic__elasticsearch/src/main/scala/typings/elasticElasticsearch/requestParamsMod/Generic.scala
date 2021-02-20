@@ -1,11 +1,12 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Generic extends js.Object {
+trait Generic extends StObject {
   
   var error_trace: js.UndefOr[Boolean] = js.native
   
@@ -28,57 +29,45 @@ object Generic {
   }
   
   @scala.inline
-  implicit class GenericOps[Self <: Generic] (val x: Self) extends AnyVal {
+  implicit class GenericMutableBuilder[Self <: Generic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError_trace(value: Boolean): Self = StObject.set(x, "error_trace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError_traceUndefined: Self = StObject.set(x, "error_trace", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter_path(value: String | js.Array[String]): Self = StObject.set(x, "filter_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_trace(value: Boolean): Self = this.set("error_trace", value.asInstanceOf[js.Any])
+    def setFilter_pathUndefined: Self = StObject.set(x, "filter_path", js.undefined)
     
     @scala.inline
-    def deleteError_trace: Self = this.set("error_trace", js.undefined)
+    def setFilter_pathVarargs(value: String*): Self = StObject.set(x, "filter_path", js.Array(value :_*))
     
     @scala.inline
-    def setFilter_pathVarargs(value: String*): Self = this.set("filter_path", js.Array(value :_*))
+    def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter_path(value: String | js.Array[String]): Self = this.set("filter_path", value.asInstanceOf[js.Any])
+    def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
     
     @scala.inline
-    def deleteFilter_path: Self = this.set("filter_path", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHuman(value: Boolean): Self = this.set("human", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteHuman: Self = this.set("human", js.undefined)
+    def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPretty(value: Boolean): Self = this.set("pretty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePretty: Self = this.set("pretty", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

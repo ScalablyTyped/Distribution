@@ -1,11 +1,12 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeMenuOption extends js.Object {
+trait TreeMenuOption extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.native
   
@@ -26,51 +27,39 @@ object TreeMenuOption {
   }
   
   @scala.inline
-  implicit class TreeMenuOptionOps[Self <: TreeMenuOption] (val x: Self) extends AnyVal {
+  implicit class TreeMenuOptionMutableBuilder[Self <: TreeMenuOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Array[TreeNode]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setDataVarargs(value: TreeNode*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: TreeNode*): Self = this.set("data", js.Array(value :_*))
+    def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[TreeNode]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setItemCreator(value: (/* li */ JQuery | js.Object, /* item */ TreeNode) => _): Self = StObject.set(x, "itemCreator", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInitialState(value: String): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    def setItemCreatorUndefined: Self = StObject.set(x, "itemCreator", js.undefined)
     
     @scala.inline
-    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    def setItemWrapper(value: Boolean): Self = StObject.set(x, "itemWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCreator(value: (/* li */ JQuery | js.Object, /* item */ TreeNode) => _): Self = this.set("itemCreator", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteItemCreator: Self = this.set("itemCreator", js.undefined)
-    
-    @scala.inline
-    def setItemWrapper(value: Boolean): Self = this.set("itemWrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemWrapper: Self = this.set("itemWrapper", js.undefined)
+    def setItemWrapperUndefined: Self = StObject.set(x, "itemWrapper", js.undefined)
   }
 }

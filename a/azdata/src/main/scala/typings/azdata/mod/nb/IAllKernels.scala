@@ -1,11 +1,12 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAllKernels extends js.Object {
+trait IAllKernels extends StObject {
   
   var defaultKernel: String = js.native
   
@@ -20,27 +21,15 @@ object IAllKernels {
   }
   
   @scala.inline
-  implicit class IAllKernelsOps[Self <: IAllKernels] (val x: Self) extends AnyVal {
+  implicit class IAllKernelsMutableBuilder[Self <: IAllKernels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultKernel(value: String): Self = StObject.set(x, "defaultKernel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKernels(value: js.Array[IKernelSpec]): Self = StObject.set(x, "kernels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultKernel(value: String): Self = this.set("defaultKernel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKernelsVarargs(value: IKernelSpec*): Self = this.set("kernels", js.Array(value :_*))
-    
-    @scala.inline
-    def setKernels(value: js.Array[IKernelSpec]): Self = this.set("kernels", value.asInstanceOf[js.Any])
+    def setKernelsVarargs(value: IKernelSpec*): Self = StObject.set(x, "kernels", js.Array(value :_*))
   }
 }

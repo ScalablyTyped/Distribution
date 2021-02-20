@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.`color-slide-film`
   - typings.ipp.ippStrings.`not-applicable`
 */
-trait InputFilmScanMode extends js.Object
+trait InputFilmScanMode extends StObject
 object InputFilmScanMode {
   
   @scala.inline

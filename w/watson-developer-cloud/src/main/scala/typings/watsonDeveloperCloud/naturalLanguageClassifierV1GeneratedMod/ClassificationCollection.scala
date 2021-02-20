@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Response from the classifier for multiple phrases. */
 @js.native
-trait ClassificationCollection extends js.Object {
+trait ClassificationCollection extends StObject {
   
   /** Unique identifier for this classifier. */
   var classifier_id: js.UndefOr[String] = js.native
@@ -26,39 +27,27 @@ object ClassificationCollection {
   }
   
   @scala.inline
-  implicit class ClassificationCollectionOps[Self <: ClassificationCollection] (val x: Self) extends AnyVal {
+  implicit class ClassificationCollectionMutableBuilder[Self <: ClassificationCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassifier_idUndefined: Self = StObject.set(x, "classifier_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollection(value: js.Array[CollectionItem]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassifier_id(value: String): Self = this.set("classifier_id", value.asInstanceOf[js.Any])
+    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
     @scala.inline
-    def deleteClassifier_id: Self = this.set("classifier_id", js.undefined)
+    def setCollectionVarargs(value: CollectionItem*): Self = StObject.set(x, "collection", js.Array(value :_*))
     
     @scala.inline
-    def setCollectionVarargs(value: CollectionItem*): Self = this.set("collection", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection(value: js.Array[CollectionItem]): Self = this.set("collection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCollection: Self = this.set("collection", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

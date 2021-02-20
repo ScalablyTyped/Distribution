@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "TerminalCheckout")
 @js.native
-class TerminalCheckout () extends js.Object {
+class TerminalCheckout () extends StObject {
   
   /**
     * The amount of money (including tax amount) that the Square Terminal device should try to collect.

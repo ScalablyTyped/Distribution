@@ -1,13 +1,14 @@
 package typings.randomJs
 
 import typings.randomJs.typesMod.Engine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("random-js/dist/distribution/int32", JSImport.Namespace)
-@js.native
-object int32Mod extends js.Object {
+object int32Mod {
   
+  @JSImport("random-js/dist/distribution/int32", "int32")
+  @js.native
   def int32(engine: Engine): Double = js.native
 }

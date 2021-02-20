@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeProjectResponse extends js.Object {
+trait DescribeProjectResponse extends StObject {
   
   /**
     * The date and time that the project was created.
@@ -83,99 +84,87 @@ object DescribeProjectResponse {
   }
   
   @scala.inline
-  implicit class DescribeProjectResponseOps[Self <: DescribeProjectResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeProjectResponseMutableBuilder[Self <: DescribeProjectResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDate(value: Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBy(value: CreatedBy): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ProjectName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
     @scala.inline
-    def setCreateDate(value: Date): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setDatasetNameUndefined: Self = StObject.set(x, "DatasetName", js.undefined)
     
     @scala.inline
-    def setCreatedBy(value: CreatedBy): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    def setLastModifiedBy(value: LastModifiedBy): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
     @scala.inline
-    def setDatasetName(value: DatasetName): Self = this.set("DatasetName", value.asInstanceOf[js.Any])
+    def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDatasetName: Self = this.set("DatasetName", js.undefined)
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def setLastModifiedBy(value: LastModifiedBy): Self = this.set("LastModifiedBy", value.asInstanceOf[js.Any])
+    def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedBy: Self = this.set("LastModifiedBy", js.undefined)
+    def setOpenDate(value: Date): Self = StObject.set(x, "OpenDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: Date): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setOpenDateUndefined: Self = StObject.set(x, "OpenDate", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    def setOpenedBy(value: OpenedBy): Self = StObject.set(x, "OpenedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenDate(value: Date): Self = this.set("OpenDate", value.asInstanceOf[js.Any])
+    def setOpenedByUndefined: Self = StObject.set(x, "OpenedBy", js.undefined)
     
     @scala.inline
-    def deleteOpenDate: Self = this.set("OpenDate", js.undefined)
+    def setRecipeName(value: RecipeName): Self = StObject.set(x, "RecipeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenedBy(value: OpenedBy): Self = this.set("OpenedBy", value.asInstanceOf[js.Any])
+    def setRecipeNameUndefined: Self = StObject.set(x, "RecipeName", js.undefined)
     
     @scala.inline
-    def deleteOpenedBy: Self = this.set("OpenedBy", js.undefined)
+    def setResourceArn(value: Arn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipeName(value: RecipeName): Self = this.set("RecipeName", value.asInstanceOf[js.Any])
+    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
     @scala.inline
-    def deleteRecipeName: Self = this.set("RecipeName", js.undefined)
+    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArn(value: Arn): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
     @scala.inline
-    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    def setSample(value: Sample): Self = StObject.set(x, "Sample", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: Arn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setSampleUndefined: Self = StObject.set(x, "Sample", js.undefined)
     
     @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    def setSessionStatus(value: SessionStatus): Self = StObject.set(x, "SessionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSample(value: Sample): Self = this.set("Sample", value.asInstanceOf[js.Any])
+    def setSessionStatusUndefined: Self = StObject.set(x, "SessionStatus", js.undefined)
     
     @scala.inline
-    def deleteSample: Self = this.set("Sample", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionStatus(value: SessionStatus): Self = this.set("SessionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionStatus: Self = this.set("SessionStatus", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeThingTypeResponse extends js.Object {
+trait DescribeThingTypeResponse extends StObject {
   
   /**
     * The thing type ARN.
@@ -41,48 +42,36 @@ object DescribeThingTypeResponse {
   }
   
   @scala.inline
-  implicit class DescribeThingTypeResponseOps[Self <: DescribeThingTypeResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeThingTypeResponseMutableBuilder[Self <: DescribeThingTypeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setThingTypeArn(value: ThingTypeArn): Self = StObject.set(x, "thingTypeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThingTypeArnUndefined: Self = StObject.set(x, "thingTypeArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThingTypeId(value: ThingTypeId): Self = StObject.set(x, "thingTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingTypeArn(value: ThingTypeArn): Self = this.set("thingTypeArn", value.asInstanceOf[js.Any])
+    def setThingTypeIdUndefined: Self = StObject.set(x, "thingTypeId", js.undefined)
     
     @scala.inline
-    def deleteThingTypeArn: Self = this.set("thingTypeArn", js.undefined)
+    def setThingTypeMetadata(value: ThingTypeMetadata): Self = StObject.set(x, "thingTypeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingTypeId(value: ThingTypeId): Self = this.set("thingTypeId", value.asInstanceOf[js.Any])
+    def setThingTypeMetadataUndefined: Self = StObject.set(x, "thingTypeMetadata", js.undefined)
     
     @scala.inline
-    def deleteThingTypeId: Self = this.set("thingTypeId", js.undefined)
+    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingTypeMetadata(value: ThingTypeMetadata): Self = this.set("thingTypeMetadata", value.asInstanceOf[js.Any])
+    def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
     
     @scala.inline
-    def deleteThingTypeMetadata: Self = this.set("thingTypeMetadata", js.undefined)
+    def setThingTypeProperties(value: ThingTypeProperties): Self = StObject.set(x, "thingTypeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingTypeName: Self = this.set("thingTypeName", js.undefined)
-    
-    @scala.inline
-    def setThingTypeProperties(value: ThingTypeProperties): Self = this.set("thingTypeProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingTypeProperties: Self = this.set("thingTypeProperties", js.undefined)
+    def setThingTypePropertiesUndefined: Self = StObject.set(x, "thingTypeProperties", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.textBuffer.mod.global.TextBuffer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The interface that should be implemented for all "point-compatible" objects. */
 @js.native
-trait PointLike extends js.Object {
+trait PointLike extends StObject {
   
   /** A zero-indexed number representing the column of the Point. */
   var column: Double = js.native
@@ -23,24 +24,12 @@ object PointLike {
   }
   
   @scala.inline
-  implicit class PointLikeOps[Self <: PointLike] (val x: Self) extends AnyVal {
+  implicit class PointLikeMutableBuilder[Self <: PointLike] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRow(value: Double): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

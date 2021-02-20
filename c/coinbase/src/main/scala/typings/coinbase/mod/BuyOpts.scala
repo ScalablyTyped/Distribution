@@ -1,11 +1,12 @@
 package typings.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuyOpts extends js.Object {
+trait BuyOpts extends StObject {
   
   /**
     * Whether or not you would still like to buy if you have to wait for your money to arrive to lock in a price
@@ -51,57 +52,45 @@ object BuyOpts {
   }
   
   @scala.inline
-  implicit class BuyOptsOps[Self <: BuyOpts] (val x: Self) extends AnyVal {
+  implicit class BuyOptsMutableBuilder[Self <: BuyOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgree_btc_amount_varies(value: Boolean): Self = StObject.set(x, "agree_btc_amount_varies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgree_btc_amount_variesUndefined: Self = StObject.set(x, "agree_btc_amount_varies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def setAgree_btc_amount_varies(value: Boolean): Self = this.set("agree_btc_amount_varies", value.asInstanceOf[js.Any])
+    def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAgree_btc_amount_varies: Self = this.set("agree_btc_amount_varies", js.undefined)
+    def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
     
     @scala.inline
-    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit(value: Boolean): Self = this.set("commit", value.asInstanceOf[js.Any])
+    def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
     
     @scala.inline
-    def deleteCommit: Self = this.set("commit", js.undefined)
+    def setQuote(value: Boolean): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayment_method(value: String): Self = this.set("payment_method", value.asInstanceOf[js.Any])
+    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
     
     @scala.inline
-    def deletePayment_method: Self = this.set("payment_method", js.undefined)
+    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuote(value: Boolean): Self = this.set("quote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuote: Self = this.set("quote", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: String): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

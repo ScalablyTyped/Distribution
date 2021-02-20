@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashLayer extends js.Object {
+trait FlashLayer extends StObject {
   
   var color: js.Any = js.native
   
@@ -47,51 +48,39 @@ object FlashLayer {
   }
   
   @scala.inline
-  implicit class FlashLayerOps[Self <: FlashLayer] (val x: Self) extends AnyVal {
+  implicit class FlashLayerMutableBuilder[Self <: FlashLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameCount(value: Double): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrames(value: js.Array[FlashFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: js.Any): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFramesVarargs(value: FlashFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
     @scala.inline
-    def setFrameCount(value: Double): Self = this.set("frameCount", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramesVarargs(value: FlashFrame*): Self = this.set("frames", js.Array(value :_*))
+    def setLayerType(value: String): Self = StObject.set(x, "layerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrames(value: js.Array[FlashFrame]): Self = this.set("frames", value.asInstanceOf[js.Any])
+    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerType(value: String): Self = this.set("layerType", value.asInstanceOf[js.Any])
+    def setOutline(value: Boolean): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
+    def setParentLayer(value: FlashLayer): Self = StObject.set(x, "parentLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutline(value: Boolean): Self = this.set("outline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentLayer(value: FlashLayer): Self = this.set("parentLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.webidl2.mod
 
 import typings.webidl2.webidl2Strings.field
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,39 +44,27 @@ object FieldType {
   }
   
   @scala.inline
-  implicit class FieldTypeOps[Self <: FieldType] (val x: Self) extends AnyVal {
+  implicit class FieldTypeMutableBuilder[Self <: FieldType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: ValueDescription): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultNull: Self = StObject.set(x, "default", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdlType(value: IDLTypeDescription): Self = this.set("idlType", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParent(value: DictionaryType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: DictionaryType): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: field): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefault(value: ValueDescription): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultNull: Self = this.set("default", null)
+    def setType(value: field): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

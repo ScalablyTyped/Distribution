@@ -1,23 +1,30 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.popupTypesMod.IPopupProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Popup", JSImport.Namespace)
-@js.native
-object popupMod extends js.Object {
+object popupMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Popup", "Popup")
   @js.native
   class Popup protected ()
     extends typings.officeUiFabricReact.popupPopupMod.Popup {
     def this(props: IPopupProps) = this()
   }
   /* static members */
-  @js.native
-  object Popup extends js.Object {
+  object Popup {
     
-    var defaultProps: IPopupProps = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Popup", "Popup")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/Popup", "Popup.defaultProps")
+    @js.native
+    def defaultProps: IPopupProps = js.native
+    @scala.inline
+    def defaultProps_=(x: IPopupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

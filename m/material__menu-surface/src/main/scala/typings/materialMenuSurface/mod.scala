@@ -1,20 +1,15 @@
 package typings.materialMenuSurface
 
-import typings.materialMenuSurface.adapterMod.MDCMenuSurfaceAdapter
-import typings.materialMenuSurface.anon.ANCHOR
-import typings.materialMenuSurface.anon.ANCHORTOMENUSURFACEWIDTHRATIO
-import typings.materialMenuSurface.anon.CLOSEDEVENT
 import typings.materialMenuSurface.anon.PartialMDCMenuSurfaceAdap
 import typings.materialMenuSurface.utilMod.CssTransformPropertyName
 import typings.std.Element
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/menu-surface", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Enum for representing an element corner for positioning the menu-surface.
@@ -23,8 +18,9 @@ object mod extends js.Object {
     * to right and RIGHT if the directionality is right to left.
     * Likewise END maps to RIGHT or LEFT depending on the directionality.
     */
+  @JSImport("@material/menu-surface", "Corner")
   @js.native
-  object Corner extends js.Object {
+  object Corner extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.materialMenuSurface.constantsMod.Corner with Double] = js.native
@@ -49,8 +45,9 @@ object mod extends js.Object {
   /**
     * Enum for bits in the {@see Corner) bitmap.
     */
+  @JSImport("@material/menu-surface", "CornerBit")
   @js.native
-  object CornerBit extends js.Object {
+  object CornerBit extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.materialMenuSurface.constantsMod.CornerBit with Double] = js.native
@@ -64,37 +61,30 @@ object mod extends js.Object {
     /* 4 */ val RIGHT: typings.materialMenuSurface.constantsMod.CornerBit.RIGHT with Double = js.native
   }
   
+  @JSImport("@material/menu-surface", "MDCMenuSurface")
   @js.native
-  class MDCMenuSurface ()
-    extends typings.materialMenuSurface.componentMod.MDCMenuSurface
+  class MDCMenuSurface protected ()
+    extends typings.materialMenuSurface.componentMod.MDCMenuSurface {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCMenuSurface extends js.Object {
+  object MDCMenuSurface {
     
+    @JSImport("@material/menu-surface", "MDCMenuSurface.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialMenuSurface.componentMod.MDCMenuSurface = js.native
   }
   
+  @JSImport("@material/menu-surface", "MDCMenuSurfaceFoundation")
   @js.native
   class MDCMenuSurfaceFoundation ()
     extends typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation {
     def this(adapter: PartialMDCMenuSurfaceAdap) = this()
-  }
-  /* static members */
-  @js.native
-  object MDCMenuSurfaceFoundation extends js.Object {
-    
-    def Corner: js.Any = js.native
-    
-    def cssClasses: ANCHOR = js.native
-    
-    /**
-      * @see {@link MDCMenuSurfaceAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCMenuSurfaceAdapter = js.native
-    
-    def numbers: ANCHORTOMENUSURFACEWIDTHRATIO = js.native
-    
-    def strings: CLOSEDEVENT = js.native
   }
   
   /**
@@ -119,57 +109,125 @@ object mod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var ANCHOR: String = js.native
+    @JSImport("@material/menu-surface", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ANIMATING_CLOSED: String = js.native
+    @JSImport("@material/menu-surface", "cssClasses.ANCHOR")
+    @js.native
+    def ANCHOR: String = js.native
+    @scala.inline
+    def ANCHOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANCHOR")(x.asInstanceOf[js.Any])
     
-    var ANIMATING_OPEN: String = js.native
+    @JSImport("@material/menu-surface", "cssClasses.ANIMATING_CLOSED")
+    @js.native
+    def ANIMATING_CLOSED: String = js.native
+    @scala.inline
+    def ANIMATING_CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANIMATING_CLOSED")(x.asInstanceOf[js.Any])
     
-    var FIXED: String = js.native
+    @JSImport("@material/menu-surface", "cssClasses.ANIMATING_OPEN")
+    @js.native
+    def ANIMATING_OPEN: String = js.native
+    @scala.inline
+    def ANIMATING_OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANIMATING_OPEN")(x.asInstanceOf[js.Any])
     
-    var IS_OPEN_BELOW: String = js.native
+    @JSImport("@material/menu-surface", "cssClasses.FIXED")
+    @js.native
+    def FIXED: String = js.native
+    @scala.inline
+    def FIXED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIXED")(x.asInstanceOf[js.Any])
     
-    var OPEN: String = js.native
+    @JSImport("@material/menu-surface", "cssClasses.IS_OPEN_BELOW")
+    @js.native
+    def IS_OPEN_BELOW: String = js.native
+    @scala.inline
+    def IS_OPEN_BELOW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IS_OPEN_BELOW")(x.asInstanceOf[js.Any])
     
-    var ROOT: String = js.native
+    @JSImport("@material/menu-surface", "cssClasses.OPEN")
+    @js.native
+    def OPEN: String = js.native
+    @scala.inline
+    def OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/menu-surface", "cssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    @scala.inline
+    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object numbers extends js.Object {
+  object numbers {
+    
+    @JSImport("@material/menu-surface", "numbers")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** Ratio of anchor width to menu-surface width for switching from corner positioning to center positioning. */
-    var ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO: Double = js.native
+    @JSImport("@material/menu-surface", "numbers.ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO")
+    @js.native
+    def ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO: Double = js.native
+    @scala.inline
+    def ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO")(x.asInstanceOf[js.Any])
     
     /** Margin left to the edge of the viewport when menu-surface is at maximum possible height. Also used as a viewport margin. */
-    var MARGIN_TO_EDGE: Double = js.native
+    @JSImport("@material/menu-surface", "numbers.MARGIN_TO_EDGE")
+    @js.native
+    def MARGIN_TO_EDGE: Double = js.native
+    @scala.inline
+    def MARGIN_TO_EDGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARGIN_TO_EDGE")(x.asInstanceOf[js.Any])
     
     /** Total duration of menu-surface close animation. */
-    var TRANSITION_CLOSE_DURATION: Double = js.native
+    @JSImport("@material/menu-surface", "numbers.TRANSITION_CLOSE_DURATION")
+    @js.native
+    def TRANSITION_CLOSE_DURATION: Double = js.native
+    @scala.inline
+    def TRANSITION_CLOSE_DURATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSITION_CLOSE_DURATION")(x.asInstanceOf[js.Any])
     
     /** Total duration of menu-surface open animation. */
-    var TRANSITION_OPEN_DURATION: Double = js.native
+    @JSImport("@material/menu-surface", "numbers.TRANSITION_OPEN_DURATION")
+    @js.native
+    def TRANSITION_OPEN_DURATION: Double = js.native
+    @scala.inline
+    def TRANSITION_OPEN_DURATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSITION_OPEN_DURATION")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var CLOSED_EVENT: String = js.native
+    @JSImport("@material/menu-surface", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var FOCUSABLE_ELEMENTS: String = js.native
+    @JSImport("@material/menu-surface", "strings.CLOSED_EVENT")
+    @js.native
+    def CLOSED_EVENT: String = js.native
+    @scala.inline
+    def CLOSED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_EVENT")(x.asInstanceOf[js.Any])
     
-    var OPENED_EVENT: String = js.native
+    @JSImport("@material/menu-surface", "strings.FOCUSABLE_ELEMENTS")
+    @js.native
+    def FOCUSABLE_ELEMENTS: String = js.native
+    @scala.inline
+    def FOCUSABLE_ELEMENTS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUSABLE_ELEMENTS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/menu-surface", "strings.OPENED_EVENT")
+    @js.native
+    def OPENED_EVENT: String = js.native
+    @scala.inline
+    def OPENED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENED_EVENT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object util extends js.Object {
+  object util {
     
     /**
       * Returns the name of the correct transform property to use on the current browser.
       */
+    @JSImport("@material/menu-surface", "util.getTransformPropertyName")
+    @js.native
     def getTransformPropertyName(globalObj: Window): CssTransformPropertyName = js.native
+    @JSImport("@material/menu-surface", "util.getTransformPropertyName")
+    @js.native
     def getTransformPropertyName(globalObj: Window, forceRefresh: Boolean): CssTransformPropertyName = js.native
   }
 }

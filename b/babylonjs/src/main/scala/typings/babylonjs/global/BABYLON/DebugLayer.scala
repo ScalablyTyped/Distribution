@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,14 +19,20 @@ class DebugLayer protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.DebugLayer")
-@js.native
-object DebugLayer extends js.Object {
+object DebugLayer {
+  
+  @JSGlobal("BABYLON.DebugLayer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Define the url to get the inspector script from.
     * By default it uses the babylonjs CDN.
     * @ignoreNaming
     */
-  var InspectorURL: String = js.native
+  @JSGlobal("BABYLON.DebugLayer.InspectorURL")
+  @js.native
+  def InspectorURL: String = js.native
+  @scala.inline
+  def InspectorURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InspectorURL")(x.asInstanceOf[js.Any])
 }

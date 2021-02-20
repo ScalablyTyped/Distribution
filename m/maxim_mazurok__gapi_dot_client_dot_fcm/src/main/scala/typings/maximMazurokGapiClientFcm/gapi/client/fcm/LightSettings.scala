@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LightSettings extends js.Object {
+trait LightSettings extends StObject {
   
   /** Required. Set `color` of the LED with [google.type.Color](https://github.com/googleapis/googleapis/blob/master/google/type/color.proto). */
   var color: js.UndefOr[Color] = js.native
@@ -31,36 +32,24 @@ object LightSettings {
   }
   
   @scala.inline
-  implicit class LightSettingsOps[Self <: LightSettings] (val x: Self) extends AnyVal {
+  implicit class LightSettingsMutableBuilder[Self <: LightSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLightOffDuration(value: String): Self = StObject.set(x, "lightOffDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setLightOffDurationUndefined: Self = StObject.set(x, "lightOffDuration", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setLightOnDuration(value: String): Self = StObject.set(x, "lightOnDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightOffDuration(value: String): Self = this.set("lightOffDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLightOffDuration: Self = this.set("lightOffDuration", js.undefined)
-    
-    @scala.inline
-    def setLightOnDuration(value: String): Self = this.set("lightOnDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLightOnDuration: Self = this.set("lightOnDuration", js.undefined)
+    def setLightOnDurationUndefined: Self = StObject.set(x, "lightOnDuration", js.undefined)
   }
 }

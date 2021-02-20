@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The currently provided software environment on the devices under test.
   */
 @js.native
-trait SchemaProvidedSoftwareCatalog extends js.Object {
+trait SchemaProvidedSoftwareCatalog extends StObject {
   
   /**
     * A string representing the current version of Android Test Orchestrator
@@ -26,24 +27,12 @@ object SchemaProvidedSoftwareCatalog {
   }
   
   @scala.inline
-  implicit class SchemaProvidedSoftwareCatalogOps[Self <: SchemaProvidedSoftwareCatalog] (val x: Self) extends AnyVal {
+  implicit class SchemaProvidedSoftwareCatalogMutableBuilder[Self <: SchemaProvidedSoftwareCatalog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrchestratorVersion(value: String): Self = StObject.set(x, "orchestratorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrchestratorVersion(value: String): Self = this.set("orchestratorVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrchestratorVersion: Self = this.set("orchestratorVersion", js.undefined)
+    def setOrchestratorVersionUndefined: Self = StObject.set(x, "orchestratorVersion", js.undefined)
   }
 }

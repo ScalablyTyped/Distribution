@@ -1,5 +1,6 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes the billing configuration for a new tenant project.
   */
 @js.native
-trait SchemaBillingConfig extends js.Object {
+trait SchemaBillingConfig extends StObject {
   
   /**
     * Name of the billing account. For example
@@ -25,24 +26,12 @@ object SchemaBillingConfig {
   }
   
   @scala.inline
-  implicit class SchemaBillingConfigOps[Self <: SchemaBillingConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaBillingConfigMutableBuilder[Self <: SchemaBillingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAccount(value: String): Self = StObject.set(x, "billingAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBillingAccount(value: String): Self = this.set("billingAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingAccount: Self = this.set("billingAccount", js.undefined)
+    def setBillingAccountUndefined: Self = StObject.set(x, "billingAccount", js.undefined)
   }
 }

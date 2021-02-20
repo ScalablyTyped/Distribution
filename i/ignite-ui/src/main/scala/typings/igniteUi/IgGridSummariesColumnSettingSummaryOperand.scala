@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,54 +69,42 @@ object IgGridSummariesColumnSettingSummaryOperand {
   }
   
   @scala.inline
-  implicit class IgGridSummariesColumnSettingSummaryOperandOps[Self <: IgGridSummariesColumnSettingSummaryOperand] (val x: Self) extends AnyVal {
+  implicit class IgGridSummariesColumnSettingSummaryOperandMutableBuilder[Self <: IgGridSummariesColumnSettingSummaryOperand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setRowDisplayLabel(value: String): Self = StObject.set(x, "rowDisplayLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: Double): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setRowDisplayLabelUndefined: Self = StObject.set(x, "rowDisplayLabel", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setSummaryCalculator(value: String): Self = StObject.set(x, "summaryCalculator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowDisplayLabel(value: String): Self = this.set("rowDisplayLabel", value.asInstanceOf[js.Any])
+    def setSummaryCalculatorUndefined: Self = StObject.set(x, "summaryCalculator", js.undefined)
     
     @scala.inline
-    def deleteRowDisplayLabel: Self = this.set("rowDisplayLabel", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummaryCalculator(value: String): Self = this.set("summaryCalculator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaryCalculator: Self = this.set("summaryCalculator", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

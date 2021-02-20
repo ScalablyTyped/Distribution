@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InternalNgModuleRef[T] extends NgModuleRef[T] {
   
-  var _bootstrapComponents: js.Array[Type[_]] = js.native
+  var _bootstrapComponents: js.Array[typings.angularCore.mod.Type[_]] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains information regarding the outcome of a successful connection.executeMany().
   */
 @js.native
-trait Results[T] extends js.Object {
+trait Results[T] extends StObject {
   
   /**
     * An array of error objects that were reported during execution.
@@ -53,51 +54,39 @@ object Results {
   }
   
   @scala.inline
-  implicit class ResultsOps[Self <: Results[_], T] (val x: Self with Results[T]) extends AnyVal {
+  implicit class ResultsMutableBuilder[Self <: Results[_], T] (val x: Self with Results[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchErrors(value: js.Array[DBError]): Self = StObject.set(x, "batchErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchErrorsUndefined: Self = StObject.set(x, "batchErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchErrorsVarargs(value: DBError*): Self = StObject.set(x, "batchErrors", js.Array(value :_*))
     
     @scala.inline
-    def setBatchErrorsVarargs(value: DBError*): Self = this.set("batchErrors", js.Array(value :_*))
+    def setDmlRowCounts(value: js.Array[Double]): Self = StObject.set(x, "dmlRowCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchErrors(value: js.Array[DBError]): Self = this.set("batchErrors", value.asInstanceOf[js.Any])
+    def setDmlRowCountsUndefined: Self = StObject.set(x, "dmlRowCounts", js.undefined)
     
     @scala.inline
-    def deleteBatchErrors: Self = this.set("batchErrors", js.undefined)
+    def setDmlRowCountsVarargs(value: Double*): Self = StObject.set(x, "dmlRowCounts", js.Array(value :_*))
     
     @scala.inline
-    def setDmlRowCountsVarargs(value: Double*): Self = this.set("dmlRowCounts", js.Array(value :_*))
+    def setOutBinds(value: js.Array[T]): Self = StObject.set(x, "outBinds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDmlRowCounts(value: js.Array[Double]): Self = this.set("dmlRowCounts", value.asInstanceOf[js.Any])
+    def setOutBindsUndefined: Self = StObject.set(x, "outBinds", js.undefined)
     
     @scala.inline
-    def deleteDmlRowCounts: Self = this.set("dmlRowCounts", js.undefined)
+    def setOutBindsVarargs(value: T*): Self = StObject.set(x, "outBinds", js.Array(value :_*))
     
     @scala.inline
-    def setOutBindsVarargs(value: T*): Self = this.set("outBinds", js.Array(value :_*))
+    def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutBinds(value: js.Array[T]): Self = this.set("outBinds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutBinds: Self = this.set("outBinds", js.undefined)
-    
-    @scala.inline
-    def setRowsAffected(value: Double): Self = this.set("rowsAffected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowsAffected: Self = this.set("rowsAffected", js.undefined)
+    def setRowsAffectedUndefined: Self = StObject.set(x, "rowsAffected", js.undefined)
   }
 }

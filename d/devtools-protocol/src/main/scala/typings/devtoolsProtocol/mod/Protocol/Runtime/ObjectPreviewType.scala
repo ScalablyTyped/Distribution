@@ -8,6 +8,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.number
 import typings.devtoolsProtocol.devtoolsProtocolStrings.string
 import typings.devtoolsProtocol.devtoolsProtocolStrings.symbol
 import typings.devtoolsProtocol.devtoolsProtocolStrings.undefined
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.symbol
   - typings.devtoolsProtocol.devtoolsProtocolStrings.bigint
 */
-trait ObjectPreviewType extends js.Object
+trait ObjectPreviewType extends StObject
 object ObjectPreviewType {
   
   @scala.inline

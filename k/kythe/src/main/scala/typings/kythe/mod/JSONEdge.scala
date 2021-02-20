@@ -1,12 +1,13 @@
 package typings.kythe.mod
 
 import typings.kythe.kytheStrings.Slash
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONEdge extends js.Object {
+trait JSONEdge extends StObject {
   
   var edge_kind: EdgeKind | OrdinalEdge = js.native
   
@@ -25,30 +26,18 @@ object JSONEdge {
   }
   
   @scala.inline
-  implicit class JSONEdgeOps[Self <: JSONEdge] (val x: Self) extends AnyVal {
+  implicit class JSONEdgeMutableBuilder[Self <: JSONEdge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdge_kind(value: EdgeKind | OrdinalEdge): Self = StObject.set(x, "edge_kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFact_name(value: Slash): Self = StObject.set(x, "fact_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: VName): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdge_kind(value: EdgeKind | OrdinalEdge): Self = this.set("edge_kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFact_name(value: Slash): Self = this.set("fact_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: VName): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: VName): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: VName): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

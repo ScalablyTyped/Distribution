@@ -2,16 +2,16 @@ package typings.nodegit
 
 import typings.nodegit.diffDeltaMod.DiffDelta
 import typings.nodegit.statusFileOptionsMod.StatusFileOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/status-file", JSImport.Namespace)
-@js.native
-object statusFileMod extends js.Object {
+object statusFileMod {
   
+  @JSImport("nodegit/status-file", "StatusFile")
   @js.native
-  class StatusFile protected () extends js.Object {
+  class StatusFile protected () extends StObject {
     def this(args: StatusFileOptions) = this()
     
     def headToIndex(): DiffDelta = js.native

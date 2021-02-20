@@ -1,11 +1,12 @@
 package typings.awsSdk.networkmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeGlobalNetworksRequest extends js.Object {
+trait DescribeGlobalNetworksRequest extends StObject {
   
   /**
     * The IDs of one or more global networks. The maximum is 10.
@@ -31,39 +32,27 @@ object DescribeGlobalNetworksRequest {
   }
   
   @scala.inline
-  implicit class DescribeGlobalNetworksRequestOps[Self <: DescribeGlobalNetworksRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeGlobalNetworksRequestMutableBuilder[Self <: DescribeGlobalNetworksRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalNetworkIds(value: StringList): Self = StObject.set(x, "GlobalNetworkIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalNetworkIdsUndefined: Self = StObject.set(x, "GlobalNetworkIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalNetworkIdsVarargs(value: String*): Self = StObject.set(x, "GlobalNetworkIds", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalNetworkIdsVarargs(value: String*): Self = this.set("GlobalNetworkIds", js.Array(value :_*))
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalNetworkIds(value: StringList): Self = this.set("GlobalNetworkIds", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteGlobalNetworkIds: Self = this.set("GlobalNetworkIds", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

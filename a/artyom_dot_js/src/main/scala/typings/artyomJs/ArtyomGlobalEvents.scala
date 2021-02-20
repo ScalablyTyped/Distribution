@@ -1,11 +1,12 @@
 package typings.artyomJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArtyomGlobalEvents extends js.Object {
+trait ArtyomGlobalEvents extends StObject {
   
   var COMMAND_MATCHED: String = js.native
   
@@ -41,42 +42,30 @@ object ArtyomGlobalEvents {
   }
   
   @scala.inline
-  implicit class ArtyomGlobalEventsOps[Self <: ArtyomGlobalEvents] (val x: Self) extends AnyVal {
+  implicit class ArtyomGlobalEventsMutableBuilder[Self <: ArtyomGlobalEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCOMMAND_MATCHED(value: String): Self = StObject.set(x, "COMMAND_MATCHED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCOMMAND_RECOGNITION_END(value: String): Self = StObject.set(x, "COMMAND_RECOGNITION_END", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCOMMAND_RECOGNITION_START(value: String): Self = StObject.set(x, "COMMAND_RECOGNITION_START", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOMMAND_MATCHED(value: String): Self = this.set("COMMAND_MATCHED", value.asInstanceOf[js.Any])
+    def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOMMAND_RECOGNITION_END(value: String): Self = this.set("COMMAND_RECOGNITION_END", value.asInstanceOf[js.Any])
+    def setNOT_COMMAND_MATCHED(value: String): Self = StObject.set(x, "NOT_COMMAND_MATCHED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOMMAND_RECOGNITION_START(value: String): Self = this.set("COMMAND_RECOGNITION_START", value.asInstanceOf[js.Any])
+    def setSPEECH_SYNTHESIS_END(value: String): Self = StObject.set(x, "SPEECH_SYNTHESIS_END", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setERROR(value: String): Self = this.set("ERROR", value.asInstanceOf[js.Any])
+    def setSPEECH_SYNTHESIS_START(value: String): Self = StObject.set(x, "SPEECH_SYNTHESIS_START", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNOT_COMMAND_MATCHED(value: String): Self = this.set("NOT_COMMAND_MATCHED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSPEECH_SYNTHESIS_END(value: String): Self = this.set("SPEECH_SYNTHESIS_END", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSPEECH_SYNTHESIS_START(value: String): Self = this.set("SPEECH_SYNTHESIS_START", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTEXT_RECOGNIZED(value: String): Self = this.set("TEXT_RECOGNIZED", value.asInstanceOf[js.Any])
+    def setTEXT_RECOGNIZED(value: String): Self = StObject.set(x, "TEXT_RECOGNIZED", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.gitana.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitana", "Platform")
 @js.native
-class Platform protected () extends js.Object {
+class Platform protected () extends StObject {
   def this(cluster: js.Any, `object`: js.Any) = this()
   
   def accessChecks(entries: js.Any, callback: js.Any): js.Any = js.native
@@ -421,16 +422,30 @@ class Platform protected () extends js.Object {
   
   def update(): js.Any = js.native
 }
-/* static members */
-@JSImport("gitana", "Platform")
-@js.native
-object Platform extends js.Object {
+object Platform {
   
+  /* static member */
+  @JSImport("gitana", "Platform.extend")
+  @js.native
   def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = js.native
   
+  /* static member */
+  @JSImport("gitana", "Platform.forEach")
+  @js.native
   def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = js.native
   
+  /* static member */
+  @JSImport("gitana", "Platform.implement")
+  @js.native
   def implement(args: js.Any*): js.Any = js.native
   
-  def valueOf(`type`: js.Any): js.Any = js.native
+  /* static member */
+  @JSImport("gitana", "Platform.toString")
+  @js.native
+  def toString_(): js.Any = js.native
+  
+  /* static member */
+  @JSImport("gitana", "Platform.valueOf")
+  @js.native
+  def valueOf_(`type`: js.Any): js.Any = js.native
 }

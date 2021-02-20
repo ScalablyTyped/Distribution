@@ -16,6 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.activexLibreoffice.com_.sun.star.view.SelectionType
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -289,102 +290,90 @@ object UnoControlGridModel {
   }
   
   @scala.inline
-  implicit class UnoControlGridModelOps[Self <: UnoControlGridModel] (val x: Self) extends AnyVal {
+  implicit class UnoControlGridModelMutableBuilder[Self <: UnoControlGridModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveSelectionBackgroundColor(value: Color): Self = StObject.set(x, "ActiveSelectionBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveSelectionTextColor(value: Color): Self = StObject.set(x, "ActiveSelectionTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnHeaderHeight(value: Double): Self = StObject.set(x, "ColumnHeaderHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveSelectionBackgroundColor(value: Color): Self = this.set("ActiveSelectionBackgroundColor", value.asInstanceOf[js.Any])
+    def setColumnModel(value: XGridColumnModel): Self = StObject.set(x, "ColumnModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveSelectionTextColor(value: Color): Self = this.set("ActiveSelectionTextColor", value.asInstanceOf[js.Any])
+    def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHeaderHeight(value: Double): Self = this.set("ColumnHeaderHeight", value.asInstanceOf[js.Any])
+    def setFontEmphasisMark(value: Double): Self = StObject.set(x, "FontEmphasisMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnModel(value: XGridColumnModel): Self = this.set("ColumnModel", value.asInstanceOf[js.Any])
+    def setFontRelief(value: Double): Self = StObject.set(x, "FontRelief", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontDescriptor(value: FontDescriptor): Self = this.set("FontDescriptor", value.asInstanceOf[js.Any])
+    def setGridDataModel(value: XGridDataModel): Self = StObject.set(x, "GridDataModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontEmphasisMark(value: Double): Self = this.set("FontEmphasisMark", value.asInstanceOf[js.Any])
+    def setGridLineColor(value: Color): Self = StObject.set(x, "GridLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontRelief(value: Double): Self = this.set("FontRelief", value.asInstanceOf[js.Any])
+    def setHScroll(value: Boolean): Self = StObject.set(x, "HScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridDataModel(value: XGridDataModel): Self = this.set("GridDataModel", value.asInstanceOf[js.Any])
+    def setHeaderBackgroundColor(value: Color): Self = StObject.set(x, "HeaderBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridLineColor(value: Color): Self = this.set("GridLineColor", value.asInstanceOf[js.Any])
+    def setHeaderTextColor(value: Color): Self = StObject.set(x, "HeaderTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHScroll(value: Boolean): Self = this.set("HScroll", value.asInstanceOf[js.Any])
+    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderBackgroundColor(value: Color): Self = this.set("HeaderBackgroundColor", value.asInstanceOf[js.Any])
+    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTextColor(value: Color): Self = this.set("HeaderTextColor", value.asInstanceOf[js.Any])
+    def setInactiveSelectionBackgroundColor(value: Color): Self = StObject.set(x, "InactiveSelectionBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    def setInactiveSelectionTextColor(value: Color): Self = StObject.set(x, "InactiveSelectionTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    def setRowBackgroundColors(value: SafeArray[Color]): Self = StObject.set(x, "RowBackgroundColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactiveSelectionBackgroundColor(value: Color): Self = this.set("InactiveSelectionBackgroundColor", value.asInstanceOf[js.Any])
+    def setRowHeaderWidth(value: Double): Self = StObject.set(x, "RowHeaderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactiveSelectionTextColor(value: Color): Self = this.set("InactiveSelectionTextColor", value.asInstanceOf[js.Any])
+    def setRowHeight(value: Double): Self = StObject.set(x, "RowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowBackgroundColors(value: SafeArray[Color]): Self = this.set("RowBackgroundColors", value.asInstanceOf[js.Any])
+    def setSelectionModel(value: SelectionType): Self = StObject.set(x, "SelectionModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeaderWidth(value: Double): Self = this.set("RowHeaderWidth", value.asInstanceOf[js.Any])
+    def setShowColumnHeader(value: Boolean): Self = StObject.set(x, "ShowColumnHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeight(value: Double): Self = this.set("RowHeight", value.asInstanceOf[js.Any])
+    def setShowRowHeader(value: Boolean): Self = StObject.set(x, "ShowRowHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionModel(value: SelectionType): Self = this.set("SelectionModel", value.asInstanceOf[js.Any])
+    def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowColumnHeader(value: Boolean): Self = this.set("ShowColumnHeader", value.asInstanceOf[js.Any])
+    def setTextColor(value: Color): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRowHeader(value: Boolean): Self = this.set("ShowRowHeader", value.asInstanceOf[js.Any])
+    def setTextLineColor(value: Color): Self = StObject.set(x, "TextLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabstop(value: Boolean): Self = this.set("Tabstop", value.asInstanceOf[js.Any])
+    def setUseGridLines(value: Boolean): Self = StObject.set(x, "UseGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor(value: Color): Self = this.set("TextColor", value.asInstanceOf[js.Any])
+    def setVScroll(value: Boolean): Self = StObject.set(x, "VScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextLineColor(value: Color): Self = this.set("TextLineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseGridLines(value: Boolean): Self = this.set("UseGridLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVScroll(value: Boolean): Self = this.set("VScroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlignment): Self = this.set("VerticalAlign", value.asInstanceOf[js.Any])
+    def setVerticalAlign(value: VerticalAlignment): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
   }
 }

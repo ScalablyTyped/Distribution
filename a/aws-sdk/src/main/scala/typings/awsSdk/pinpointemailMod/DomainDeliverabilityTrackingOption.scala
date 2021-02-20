@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainDeliverabilityTrackingOption extends js.Object {
+trait DomainDeliverabilityTrackingOption extends StObject {
   
   /**
     * A verified domain that’s associated with your AWS account and currently has an active Deliverability dashboard subscription.
@@ -31,36 +32,24 @@ object DomainDeliverabilityTrackingOption {
   }
   
   @scala.inline
-  implicit class DomainDeliverabilityTrackingOptionOps[Self <: DomainDeliverabilityTrackingOption] (val x: Self) extends AnyVal {
+  implicit class DomainDeliverabilityTrackingOptionMutableBuilder[Self <: DomainDeliverabilityTrackingOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInboxPlacementTrackingOption(value: InboxPlacementTrackingOption): Self = StObject.set(x, "InboxPlacementTrackingOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: Domain): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    def setInboxPlacementTrackingOptionUndefined: Self = StObject.set(x, "InboxPlacementTrackingOption", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
+    def setSubscriptionStartDate(value: Timestamp): Self = StObject.set(x, "SubscriptionStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboxPlacementTrackingOption(value: InboxPlacementTrackingOption): Self = this.set("InboxPlacementTrackingOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInboxPlacementTrackingOption: Self = this.set("InboxPlacementTrackingOption", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionStartDate(value: Timestamp): Self = this.set("SubscriptionStartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionStartDate: Self = this.set("SubscriptionStartDate", js.undefined)
+    def setSubscriptionStartDateUndefined: Self = StObject.set(x, "SubscriptionStartDate", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.ionic.definitionsMod
 
 import typings.ionic.ionicStrings.`ionic-angular`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,45 +43,33 @@ object IonicAngularBuildOptions {
   }
   
   @scala.inline
-  implicit class IonicAngularBuildOptionsOps[Self <: IonicAngularBuildOptions] (val x: Self) extends AnyVal {
+  implicit class IonicAngularBuildOptionsMutableBuilder[Self <: IonicAngularBuildOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAot(value: Boolean): Self = StObject.set(x, "aot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def setAot(value: Boolean): Self = this.set("aot", value.asInstanceOf[js.Any])
+    def setMinifycss(value: Boolean): Self = StObject.set(x, "minifycss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinifycss(value: Boolean): Self = this.set("minifycss", value.asInstanceOf[js.Any])
+    def setMinifyjs(value: Boolean): Self = StObject.set(x, "minifyjs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinifyjs(value: Boolean): Self = this.set("minifyjs", value.asInstanceOf[js.Any])
+    def setOptimizejs(value: Boolean): Self = StObject.set(x, "optimizejs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizejs(value: Boolean): Self = this.set("optimizejs", value.asInstanceOf[js.Any])
+    def setProd(value: Boolean): Self = StObject.set(x, "prod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProd(value: Boolean): Self = this.set("prod", value.asInstanceOf[js.Any])
+    def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: String): Self = this.set("env", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
-    
-    @scala.inline
-    def setSourcemaps(value: Boolean): Self = this.set("sourcemaps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcemaps: Self = this.set("sourcemaps", js.undefined)
+    def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
   }
 }

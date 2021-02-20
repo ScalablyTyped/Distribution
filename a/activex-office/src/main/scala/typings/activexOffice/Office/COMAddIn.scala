@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait COMAddIn extends js.Object {
+trait COMAddIn extends StObject {
   
   val Application: js.Any = js.native
   
@@ -46,45 +47,33 @@ object COMAddIn {
   }
   
   @scala.inline
-  implicit class COMAddInOps[Self <: COMAddIn] (val x: Self) extends AnyVal {
+  implicit class COMAddInMutableBuilder[Self <: COMAddIn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnect(value: Boolean): Self = StObject.set(x, "Connect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect(value: Boolean): Self = this.set("Connect", value.asInstanceOf[js.Any])
+    def setGuid(value: String): Self = StObject.set(x, "Guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setOfficeDotCOMAddIn_typekey(value: COMAddIn): Self = StObject.set(x, "Office.COMAddIn_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuid(value: String): Self = this.set("Guid", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: js.Any): Self = this.set("Object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOfficeDotCOMAddIn_typekey(value: COMAddIn): Self = this.set("Office.COMAddIn_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgId(value: String): Self = this.set("ProgId", value.asInstanceOf[js.Any])
+    def setProgId(value: String): Self = StObject.set(x, "ProgId", value.asInstanceOf[js.Any])
   }
 }

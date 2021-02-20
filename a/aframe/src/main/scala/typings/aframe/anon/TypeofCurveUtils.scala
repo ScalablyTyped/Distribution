@@ -1,11 +1,12 @@
 package typings.aframe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofCurveUtils extends js.Object {
+trait TypeofCurveUtils extends StObject {
   
   def interpolate(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double = js.native
   
@@ -29,30 +30,18 @@ object TypeofCurveUtils {
   }
   
   @scala.inline
-  implicit class TypeofCurveUtilsOps[Self <: TypeofCurveUtils] (val x: Self) extends AnyVal {
+  implicit class TypeofCurveUtilsMutableBuilder[Self <: TypeofCurveUtils] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterpolate(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "interpolate", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTangentCubicBezier(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "tangentCubicBezier", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTangentQuadraticBezier(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "tangentQuadraticBezier", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setInterpolate(value: (Double, Double, Double, Double, Double) => Double): Self = this.set("interpolate", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setTangentCubicBezier(value: (Double, Double, Double, Double, Double) => Double): Self = this.set("tangentCubicBezier", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setTangentQuadraticBezier(value: (Double, Double, Double, Double) => Double): Self = this.set("tangentQuadraticBezier", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setTangentSpline(value: (Double, Double, Double, Double, Double) => Double): Self = this.set("tangentSpline", js.Any.fromFunction5(value))
+    def setTangentSpline(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "tangentSpline", js.Any.fromFunction5(value))
   }
 }

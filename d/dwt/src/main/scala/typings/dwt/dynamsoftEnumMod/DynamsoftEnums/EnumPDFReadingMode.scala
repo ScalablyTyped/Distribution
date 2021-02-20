@@ -1,31 +1,28 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumPDFReadingMode extends js.Object
+sealed trait EnumPDFReadingMode extends StObject
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumPDFReadingMode")
 @js.native
-object EnumPDFReadingMode extends js.Object {
+object EnumPDFReadingMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumPDFReadingMode with Double] = js.native
   
   @js.native
   sealed trait PDFRM_AUTO extends EnumPDFReadingMode
-  /* 2 */ @js.native
-  object PDFRM_AUTO extends TopLevel[PDFRM_AUTO with Double]
+  /* 2 */ val PDFRM_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumPDFReadingMode.PDFRM_AUTO with Double = js.native
   
   @js.native
   sealed trait PDFRM_RASTER extends EnumPDFReadingMode
-  /* 1 */ @js.native
-  object PDFRM_RASTER extends TopLevel[PDFRM_RASTER with Double]
+  /* 1 */ val PDFRM_RASTER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumPDFReadingMode.PDFRM_RASTER with Double = js.native
   
   @js.native
   sealed trait PDFRM_VECTOR extends EnumPDFReadingMode
-  /* 4 */ @js.native
-  object PDFRM_VECTOR extends TopLevel[PDFRM_VECTOR with Double]
+  /* 4 */ val PDFRM_VECTOR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumPDFReadingMode.PDFRM_VECTOR with Double = js.native
 }

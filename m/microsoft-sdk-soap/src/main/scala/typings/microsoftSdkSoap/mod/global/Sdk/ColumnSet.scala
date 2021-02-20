@@ -1,12 +1,13 @@
 package typings.microsoftSdkSoap.mod.global.Sdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.ColumnSet")
 @js.native
-class ColumnSet protected () extends js.Object {
+class ColumnSet protected () extends StObject {
   /**
     * Specifies the attributes for which non- null values are returned from a query.
     * @param allColumns If Boolean true value is passed as the first parameter all columns will be included. (Not recommended for production code).

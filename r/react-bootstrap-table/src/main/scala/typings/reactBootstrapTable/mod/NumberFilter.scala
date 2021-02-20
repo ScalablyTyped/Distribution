@@ -2,6 +2,7 @@ package typings.reactBootstrapTable.mod
 
 import typings.reactBootstrapTable.anon.Comparator
 import typings.reactBootstrapTable.anon.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,81 +70,69 @@ object NumberFilter {
   }
   
   @scala.inline
-  implicit class NumberFilterOps[Self <: NumberFilter] (val x: Self) extends AnyVal {
+  implicit class NumberFilterMutableBuilder[Self <: NumberFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: Comparator): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: Comparator): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setNumberComparators(value: js.Array[FilterComparator]): Self = StObject.set(x, "numberComparators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setNumberComparatorsUndefined: Self = StObject.set(x, "numberComparators", js.undefined)
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setNumberComparatorsVarargs(value: FilterComparator*): Self = StObject.set(x, "numberComparators", js.Array(value :_*))
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setOptions(value: js.Array[Double]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberComparatorsVarargs(value: FilterComparator*): Self = this.set("numberComparators", js.Array(value :_*))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setNumberComparators(value: js.Array[FilterComparator]): Self = this.set("numberComparators", value.asInstanceOf[js.Any])
+    def setOptionsVarargs(value: Double*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def deleteNumberComparators: Self = this.set("numberComparators", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsVarargs(value: Double*): Self = this.set("options", js.Array(value :_*))
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def setOptions(value: js.Array[Double]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setStyle(value: Number): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setWithoutEmptyComparatorOption(value: Boolean): Self = StObject.set(x, "withoutEmptyComparatorOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: Number): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setWithoutEmptyComparatorOptionUndefined: Self = StObject.set(x, "withoutEmptyComparatorOption", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setWithoutEmptyNumberOption(value: Boolean): Self = StObject.set(x, "withoutEmptyNumberOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithoutEmptyComparatorOption(value: Boolean): Self = this.set("withoutEmptyComparatorOption", value.asInstanceOf[js.Any])
+    def setWithoutEmptyNumberOptionUndefined: Self = StObject.set(x, "withoutEmptyNumberOption", js.undefined)
     
     @scala.inline
-    def deleteWithoutEmptyComparatorOption: Self = this.set("withoutEmptyComparatorOption", js.undefined)
+    def setWithoutEmptyOption(value: Boolean): Self = StObject.set(x, "withoutEmptyOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithoutEmptyNumberOption(value: Boolean): Self = this.set("withoutEmptyNumberOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithoutEmptyNumberOption: Self = this.set("withoutEmptyNumberOption", js.undefined)
-    
-    @scala.inline
-    def setWithoutEmptyOption(value: Boolean): Self = this.set("withoutEmptyOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithoutEmptyOption: Self = this.set("withoutEmptyOption", js.undefined)
+    def setWithoutEmptyOptionUndefined: Self = StObject.set(x, "withoutEmptyOption", js.undefined)
   }
 }

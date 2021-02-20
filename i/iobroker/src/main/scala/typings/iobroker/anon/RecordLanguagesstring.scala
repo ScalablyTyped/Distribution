@@ -1,12 +1,13 @@
 package typings.iobroker.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<iobroker.iobroker/objects.<global>.ioBroker.Languages, string> */
 @js.native
-trait RecordLanguagesstring extends js.Object {
+trait RecordLanguagesstring extends StObject {
   
   var de: String = js.native
   
@@ -49,48 +50,36 @@ object RecordLanguagesstring {
   }
   
   @scala.inline
-  implicit class RecordLanguagesstringOps[Self <: RecordLanguagesstring] (val x: Self) extends AnyVal {
+  implicit class RecordLanguagesstringMutableBuilder[Self <: RecordLanguagesstring] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDe(value: String): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEn(value: String): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEs(value: String): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDe(value: String): Self = this.set("de", value.asInstanceOf[js.Any])
+    def setFr(value: String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEn(value: String): Self = this.set("en", value.asInstanceOf[js.Any])
+    def setIt(value: String): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEs(value: String): Self = this.set("es", value.asInstanceOf[js.Any])
+    def setNl(value: String): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFr(value: String): Self = this.set("fr", value.asInstanceOf[js.Any])
+    def setPl(value: String): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIt(value: String): Self = this.set("it", value.asInstanceOf[js.Any])
+    def setPt(value: String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNl(value: String): Self = this.set("nl", value.asInstanceOf[js.Any])
+    def setRu(value: String): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPl(value: String): Self = this.set("pl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPt(value: String): Self = this.set("pt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRu(value: String): Self = this.set("ru", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setZh-cn`(value: String): Self = this.set("zh-cn", value.asInstanceOf[js.Any])
+    def `setZh-cn`(value: String): Self = StObject.set(x, "zh-cn", value.asInstanceOf[js.Any])
   }
 }

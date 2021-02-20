@@ -10,17 +10,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/cloudhsmv2", JSImport.Namespace)
-@js.native
-object cloudhsmv2Mod extends js.Object {
+object cloudhsmv2Mod {
   
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
-  
+  @JSImport("@pulumi/aws/cloudhsmv2", "Cluster")
   @js.native
   class Cluster protected ()
     extends typings.pulumiAws.clusterMod.Cluster {
@@ -35,8 +32,7 @@ object cloudhsmv2Mod extends js.Object {
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Cluster extends js.Object {
+  object Cluster {
     
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
@@ -47,18 +43,29 @@ object cloudhsmv2Mod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/cloudhsmv2", "Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.clusterMod.Cluster = js.native
+    @JSImport("@pulumi/aws/cloudhsmv2", "Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.clusterMod.Cluster = js.native
+    @JSImport("@pulumi/aws/cloudhsmv2", "Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.clusterMod.Cluster = js.native
+    @JSImport("@pulumi/aws/cloudhsmv2", "Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.clusterMod.Cluster = js.native
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/cloudhsmv2", "Cluster.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/cluster.Cluster */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/cloudhsmv2", "Hsm")
   @js.native
   class Hsm protected ()
     extends typings.pulumiAws.hsmMod.Hsm {
@@ -73,8 +80,7 @@ object cloudhsmv2Mod extends js.Object {
     def this(name: String, args: HsmArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Hsm extends js.Object {
+  object Hsm {
     
     /**
       * Get an existing Hsm resource's state with the given name, ID, and optional extra
@@ -85,15 +91,32 @@ object cloudhsmv2Mod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/cloudhsmv2", "Hsm.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.hsmMod.Hsm = js.native
+    @JSImport("@pulumi/aws/cloudhsmv2", "Hsm.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.hsmMod.Hsm = js.native
+    @JSImport("@pulumi/aws/cloudhsmv2", "Hsm.get")
+    @js.native
     def get(name: String, id: Input[ID], state: HsmState): typings.pulumiAws.hsmMod.Hsm = js.native
+    @JSImport("@pulumi/aws/cloudhsmv2", "Hsm.get")
+    @js.native
     def get(name: String, id: Input[ID], state: HsmState, opts: CustomResourceOptions): typings.pulumiAws.hsmMod.Hsm = js.native
     
     /**
       * Returns true if the given object is an instance of Hsm.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/cloudhsmv2", "Hsm.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/hsm.Hsm */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws/cloudhsmv2", "getCluster")
+  @js.native
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
+  @JSImport("@pulumi/aws/cloudhsmv2", "getCluster")
+  @js.native
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
 }

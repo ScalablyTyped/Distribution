@@ -1,12 +1,13 @@
 package typings.kendoUi.global.kendo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.pdf")
-@js.native
-object pdf extends js.Object {
+object pdf {
   
+  @JSGlobal("kendo.pdf.defineFont")
+  @js.native
   def defineFont(map: js.Any): Unit = js.native
 }

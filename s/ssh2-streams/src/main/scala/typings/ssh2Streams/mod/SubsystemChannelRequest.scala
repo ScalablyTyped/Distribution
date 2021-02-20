@@ -1,6 +1,7 @@
 package typings.ssh2Streams.mod
 
 import typings.ssh2Streams.ssh2StreamsStrings.subsystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object SubsystemChannelRequest {
   }
   
   @scala.inline
-  implicit class SubsystemChannelRequestOps[Self <: SubsystemChannelRequest] (val x: Self) extends AnyVal {
+  implicit class SubsystemChannelRequestMutableBuilder[Self <: SubsystemChannelRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: subsystem): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubsystem(value: String): Self = StObject.set(x, "subsystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipient(value: Double): Self = this.set("recipient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: subsystem): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubsystem(value: String): Self = this.set("subsystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWantReply(value: Boolean): Self = this.set("wantReply", value.asInstanceOf[js.Any])
+    def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
   }
 }

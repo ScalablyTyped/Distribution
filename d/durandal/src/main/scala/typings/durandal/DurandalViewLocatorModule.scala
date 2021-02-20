@@ -1,12 +1,13 @@
 package typings.durandal
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurandalViewLocatorModule extends js.Object {
+trait DurandalViewLocatorModule extends StObject {
   
   /**
     * Converts a module id into a view id. By default the ids are the same.

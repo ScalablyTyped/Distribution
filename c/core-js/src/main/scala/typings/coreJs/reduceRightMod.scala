@@ -1,14 +1,16 @@
 package typings.coreJs
 
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/array/reduce-right", JSImport.Namespace)
-@js.native
-object reduceRightMod extends js.Object {
+object reduceRightMod {
   
+  /* was `typeof core.Array.reduceRight` */
+  @JSImport("core-js/fn/array/reduce-right", JSImport.Namespace)
+  @js.native
   def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
@@ -19,6 +21,8 @@ object reduceRightMod extends js.Object {
       T
     ]
   ): T = js.native
+  @JSImport("core-js/fn/array/reduce-right", JSImport.Namespace)
+  @js.native
   def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[

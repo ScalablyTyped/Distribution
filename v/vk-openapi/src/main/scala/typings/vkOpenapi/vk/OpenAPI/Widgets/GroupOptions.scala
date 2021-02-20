@@ -5,12 +5,13 @@ import typings.vkOpenapi.vkOpenapiNumbers.`1`
 import typings.vkOpenapi.vkOpenapiNumbers.`3`
 import typings.vkOpenapi.vkOpenapiNumbers.`4`
 import typings.vkOpenapi.vkOpenapiStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupOptions extends js.Object {
+trait GroupOptions extends StObject {
   
   var color1: js.UndefOr[String] = js.native
   
@@ -37,66 +38,54 @@ object GroupOptions {
   }
   
   @scala.inline
-  implicit class GroupOptionsOps[Self <: GroupOptions] (val x: Self) extends AnyVal {
+  implicit class GroupOptionsMutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor1(value: String): Self = StObject.set(x, "color1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor1Undefined: Self = StObject.set(x, "color1", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor2(value: String): Self = StObject.set(x, "color2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor1(value: String): Self = this.set("color1", value.asInstanceOf[js.Any])
+    def setColor2Undefined: Self = StObject.set(x, "color2", js.undefined)
     
     @scala.inline
-    def deleteColor1: Self = this.set("color1", js.undefined)
+    def setColor3(value: String): Self = StObject.set(x, "color3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor2(value: String): Self = this.set("color2", value.asInstanceOf[js.Any])
+    def setColor3Undefined: Self = StObject.set(x, "color3", js.undefined)
     
     @scala.inline
-    def deleteColor2: Self = this.set("color2", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor3(value: String): Self = this.set("color3", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteColor3: Self = this.set("color3", js.undefined)
+    def setMode(value: `1` | `3` | `4`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setNo_cover(value: NumericBoolean): Self = StObject.set(x, "no_cover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: `1` | `3` | `4`): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setNo_coverUndefined: Self = StObject.set(x, "no_cover", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setWide(value: NumericBoolean): Self = StObject.set(x, "wide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNo_cover(value: NumericBoolean): Self = this.set("no_cover", value.asInstanceOf[js.Any])
+    def setWideUndefined: Self = StObject.set(x, "wide", js.undefined)
     
     @scala.inline
-    def deleteNo_cover: Self = this.set("no_cover", js.undefined)
+    def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWide(value: NumericBoolean): Self = this.set("wide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWide: Self = this.set("wide", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | auto): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

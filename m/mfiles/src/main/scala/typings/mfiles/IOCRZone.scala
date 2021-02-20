@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFDataType
 import typings.mfiles.MFiles.MFOCRDimensionUnit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOCRZone extends js.Object {
+trait IOCRZone extends StObject {
   
   var Barcode: Boolean = js.native
   
@@ -61,60 +62,48 @@ object IOCRZone {
   }
   
   @scala.inline
-  implicit class IOCRZoneOps[Self <: IOCRZone] (val x: Self) extends AnyVal {
+  implicit class IOCRZoneMutableBuilder[Self <: IOCRZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarcode(value: Boolean): Self = StObject.set(x, "Barcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearOCROptions(value: () => Unit): Self = StObject.set(x, "ClearOCROptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClone(value: () => IOCRZone): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBarcode(value: Boolean): Self = this.set("Barcode", value.asInstanceOf[js.Any])
+    def setDataType(value: MFDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearOCROptions(value: () => Unit): Self = this.set("ClearOCROptions", js.Any.fromFunction0(value))
+    def setDimensionUnit(value: MFOCRDimensionUnit): Self = StObject.set(x, "DimensionUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IOCRZone): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setHasOCROptions(value: Boolean): Self = StObject.set(x, "HasOCROptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: MFDataType): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionUnit(value: MFOCRDimensionUnit): Self = this.set("DimensionUnit", value.asInstanceOf[js.Any])
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasOCROptions(value: Boolean): Self = this.set("HasOCROptions", value.asInstanceOf[js.Any])
+    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setOCROptions(value: IOCROptions): Self = StObject.set(x, "OCROptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("Left", value.asInstanceOf[js.Any])
+    def setSetOCROptions(value: IOCROptions => Unit): Self = StObject.set(x, "SetOCROptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOCROptions(value: IOCROptions): Self = this.set("OCROptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetOCROptions(value: IOCROptions => Unit): Self = this.set("SetOCROptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTop(value: Double): Self = this.set("Top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

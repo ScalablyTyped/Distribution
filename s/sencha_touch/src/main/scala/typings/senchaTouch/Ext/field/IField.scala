@@ -2,6 +2,7 @@ package typings.senchaTouch.Ext.field
 
 import typings.senchaTouch.Ext.IDecorator
 import typings.senchaTouch.Ext.IElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -218,306 +219,294 @@ object IField {
   }
   
   @scala.inline
-  implicit class IFieldOps[Self <: IField] (val x: Self) extends AnyVal {
+  implicit class IFieldMutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearIcon(value: Boolean): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldCls(value: String): Self = StObject.set(x, "fieldCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearIcon(value: Boolean): Self = this.set("clearIcon", value.asInstanceOf[js.Any])
+    def setFieldClsUndefined: Self = StObject.set(x, "fieldCls", js.undefined)
     
     @scala.inline
-    def deleteClearIcon: Self = this.set("clearIcon", js.undefined)
+    def setFieldLabel(value: String): Self = StObject.set(x, "fieldLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldCls(value: String): Self = this.set("fieldCls", value.asInstanceOf[js.Any])
+    def setFieldLabelUndefined: Self = StObject.set(x, "fieldLabel", js.undefined)
     
     @scala.inline
-    def deleteFieldCls: Self = this.set("fieldCls", js.undefined)
+    def setGetClearIcon(value: () => Boolean): Self = StObject.set(x, "getClearIcon", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFieldLabel(value: String): Self = this.set("fieldLabel", value.asInstanceOf[js.Any])
+    def setGetClearIconUndefined: Self = StObject.set(x, "getClearIcon", js.undefined)
     
     @scala.inline
-    def deleteFieldLabel: Self = this.set("fieldLabel", js.undefined)
+    def setGetInputCls(value: () => String): Self = StObject.set(x, "getInputCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClearIcon(value: () => Boolean): Self = this.set("getClearIcon", js.Any.fromFunction0(value))
+    def setGetInputClsUndefined: Self = StObject.set(x, "getInputCls", js.undefined)
     
     @scala.inline
-    def deleteGetClearIcon: Self = this.set("getClearIcon", js.undefined)
+    def setGetInputType(value: () => String): Self = StObject.set(x, "getInputType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInputCls(value: () => String): Self = this.set("getInputCls", js.Any.fromFunction0(value))
+    def setGetInputTypeUndefined: Self = StObject.set(x, "getInputType", js.undefined)
     
     @scala.inline
-    def deleteGetInputCls: Self = this.set("getInputCls", js.undefined)
+    def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInputType(value: () => String): Self = this.set("getInputType", js.Any.fromFunction0(value))
+    def setGetLabelAlign(value: () => String): Self = StObject.set(x, "getLabelAlign", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetInputType: Self = this.set("getInputType", js.undefined)
+    def setGetLabelAlignUndefined: Self = StObject.set(x, "getLabelAlign", js.undefined)
     
     @scala.inline
-    def setGetLabel(value: () => String): Self = this.set("getLabel", js.Any.fromFunction0(value))
+    def setGetLabelCls(value: () => String): Self = StObject.set(x, "getLabelCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetLabel: Self = this.set("getLabel", js.undefined)
+    def setGetLabelClsUndefined: Self = StObject.set(x, "getLabelCls", js.undefined)
     
     @scala.inline
-    def setGetLabelAlign(value: () => String): Self = this.set("getLabelAlign", js.Any.fromFunction0(value))
+    def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
     
     @scala.inline
-    def deleteGetLabelAlign: Self = this.set("getLabelAlign", js.undefined)
+    def setGetLabelWidth(value: () => _): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelCls(value: () => String): Self = this.set("getLabelCls", js.Any.fromFunction0(value))
+    def setGetLabelWidthUndefined: Self = StObject.set(x, "getLabelWidth", js.undefined)
     
     @scala.inline
-    def deleteGetLabelCls: Self = this.set("getLabelCls", js.undefined)
+    def setGetLabelWrap(value: () => Boolean): Self = StObject.set(x, "getLabelWrap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelWidth(value: () => _): Self = this.set("getLabelWidth", js.Any.fromFunction0(value))
+    def setGetLabelWrapUndefined: Self = StObject.set(x, "getLabelWrap", js.undefined)
     
     @scala.inline
-    def deleteGetLabelWidth: Self = this.set("getLabelWidth", js.undefined)
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelWrap(value: () => Boolean): Self = this.set("getLabelWrap", js.Any.fromFunction0(value))
+    def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
     
     @scala.inline
-    def deleteGetLabelWrap: Self = this.set("getLabelWrap", js.undefined)
+    def setGetRequired(value: () => Boolean): Self = StObject.set(x, "getRequired", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetRequiredCls(value: () => String): Self = StObject.set(x, "getRequiredCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetName: Self = this.set("getName", js.undefined)
+    def setGetRequiredClsUndefined: Self = StObject.set(x, "getRequiredCls", js.undefined)
     
     @scala.inline
-    def setGetRequired(value: () => Boolean): Self = this.set("getRequired", js.Any.fromFunction0(value))
+    def setGetRequiredUndefined: Self = StObject.set(x, "getRequired", js.undefined)
     
     @scala.inline
-    def deleteGetRequired: Self = this.set("getRequired", js.undefined)
+    def setGetTabIndex(value: () => Double): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRequiredCls(value: () => String): Self = this.set("getRequiredCls", js.Any.fromFunction0(value))
+    def setGetTabIndexUndefined: Self = StObject.set(x, "getTabIndex", js.undefined)
     
     @scala.inline
-    def deleteGetRequiredCls: Self = this.set("getRequiredCls", js.undefined)
+    def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTabIndex(value: () => Double): Self = this.set("getTabIndex", js.Any.fromFunction0(value))
+    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
     @scala.inline
-    def deleteGetTabIndex: Self = this.set("getTabIndex", js.undefined)
+    def setInputCls(value: String): Self = StObject.set(x, "inputCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValue(value: () => _): Self = this.set("getValue", js.Any.fromFunction0(value))
+    def setInputClsUndefined: Self = StObject.set(x, "inputCls", js.undefined)
     
     @scala.inline
-    def deleteGetValue: Self = this.set("getValue", js.undefined)
+    def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputCls(value: String): Self = this.set("inputCls", value.asInstanceOf[js.Any])
+    def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
     
     @scala.inline
-    def deleteInputCls: Self = this.set("inputCls", js.undefined)
+    def setIsDirty(value: () => Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInputType(value: String): Self = this.set("inputType", value.asInstanceOf[js.Any])
+    def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
     @scala.inline
-    def deleteInputType: Self = this.set("inputType", js.undefined)
+    def setIsField(value: Boolean): Self = StObject.set(x, "isField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDirty(value: () => Boolean): Self = this.set("isDirty", js.Any.fromFunction0(value))
+    def setIsFieldUndefined: Self = StObject.set(x, "isField", js.undefined)
     
     @scala.inline
-    def deleteIsDirty: Self = this.set("isDirty", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsField(value: Boolean): Self = this.set("isField", value.asInstanceOf[js.Any])
+    def setLabelAlign(value: String): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsField: Self = this.set("isField", js.undefined)
+    def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelCls(value: String): Self = StObject.set(x, "labelCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelClsUndefined: Self = StObject.set(x, "labelCls", js.undefined)
     
     @scala.inline
-    def setLabelAlign(value: String): Self = this.set("labelAlign", value.asInstanceOf[js.Any])
+    def setLabelEl(value: IElement): Self = StObject.set(x, "labelEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelAlign: Self = this.set("labelAlign", js.undefined)
+    def setLabelElUndefined: Self = StObject.set(x, "labelEl", js.undefined)
     
     @scala.inline
-    def setLabelCls(value: String): Self = this.set("labelCls", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteLabelCls: Self = this.set("labelCls", js.undefined)
+    def setLabelWidth(value: js.Any): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelEl(value: IElement): Self = this.set("labelEl", value.asInstanceOf[js.Any])
+    def setLabelWidthUndefined: Self = StObject.set(x, "labelWidth", js.undefined)
     
     @scala.inline
-    def deleteLabelEl: Self = this.set("labelEl", js.undefined)
+    def setLabelWrap(value: Boolean): Self = StObject.set(x, "labelWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelWidth(value: js.Any): Self = this.set("labelWidth", value.asInstanceOf[js.Any])
+    def setLabelWrapUndefined: Self = StObject.set(x, "labelWrap", js.undefined)
     
     @scala.inline
-    def deleteLabelWidth: Self = this.set("labelWidth", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelWrap(value: Boolean): Self = this.set("labelWrap", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabelWrap: Self = this.set("labelWrap", js.undefined)
+    def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOriginalValueUndefined: Self = StObject.set(x, "originalValue", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalValue(value: js.Any): Self = this.set("originalValue", value.asInstanceOf[js.Any])
+    def setRequiredCls(value: String): Self = StObject.set(x, "requiredCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOriginalValue: Self = this.set("originalValue", js.undefined)
+    def setRequiredClsUndefined: Self = StObject.set(x, "requiredCls", js.undefined)
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setReset(value: () => IField): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRequiredCls(value: String): Self = this.set("requiredCls", value.asInstanceOf[js.Any])
+    def setResetOriginalValue(value: () => Unit): Self = StObject.set(x, "resetOriginalValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteRequiredCls: Self = this.set("requiredCls", js.undefined)
+    def setResetOriginalValueUndefined: Self = StObject.set(x, "resetOriginalValue", js.undefined)
     
     @scala.inline
-    def setReset(value: () => IField): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setSetClearIcon(value: /* clearIcon */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setClearIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResetOriginalValue(value: () => Unit): Self = this.set("resetOriginalValue", js.Any.fromFunction0(value))
+    def setSetClearIconUndefined: Self = StObject.set(x, "setClearIcon", js.undefined)
     
     @scala.inline
-    def deleteResetOriginalValue: Self = this.set("resetOriginalValue", js.undefined)
+    def setSetInputCls(value: /* inputCls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setInputCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetClearIcon(value: /* clearIcon */ js.UndefOr[Boolean] => Unit): Self = this.set("setClearIcon", js.Any.fromFunction1(value))
+    def setSetInputClsUndefined: Self = StObject.set(x, "setInputCls", js.undefined)
     
     @scala.inline
-    def deleteSetClearIcon: Self = this.set("setClearIcon", js.undefined)
+    def setSetInputType(value: /* inputType */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setInputType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInputCls(value: /* inputCls */ js.UndefOr[String] => Unit): Self = this.set("setInputCls", js.Any.fromFunction1(value))
+    def setSetInputTypeUndefined: Self = StObject.set(x, "setInputType", js.undefined)
     
     @scala.inline
-    def deleteSetInputCls: Self = this.set("setInputCls", js.undefined)
+    def setSetLabel(value: /* label */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInputType(value: /* inputType */ js.UndefOr[String] => Unit): Self = this.set("setInputType", js.Any.fromFunction1(value))
+    def setSetLabelAlign(value: /* labelAlign */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setLabelAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetInputType: Self = this.set("setInputType", js.undefined)
+    def setSetLabelAlignUndefined: Self = StObject.set(x, "setLabelAlign", js.undefined)
     
     @scala.inline
-    def setSetLabel(value: /* label */ js.UndefOr[String] => Unit): Self = this.set("setLabel", js.Any.fromFunction1(value))
+    def setSetLabelCls(value: /* labelCls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setLabelCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetLabel: Self = this.set("setLabel", js.undefined)
+    def setSetLabelClsUndefined: Self = StObject.set(x, "setLabelCls", js.undefined)
     
     @scala.inline
-    def setSetLabelAlign(value: /* labelAlign */ js.UndefOr[String] => Unit): Self = this.set("setLabelAlign", js.Any.fromFunction1(value))
+    def setSetLabelUndefined: Self = StObject.set(x, "setLabel", js.undefined)
     
     @scala.inline
-    def deleteSetLabelAlign: Self = this.set("setLabelAlign", js.undefined)
+    def setSetLabelWidth(value: /* labelWidth */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLabelWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLabelCls(value: /* labelCls */ js.UndefOr[String] => Unit): Self = this.set("setLabelCls", js.Any.fromFunction1(value))
+    def setSetLabelWidthUndefined: Self = StObject.set(x, "setLabelWidth", js.undefined)
     
     @scala.inline
-    def deleteSetLabelCls: Self = this.set("setLabelCls", js.undefined)
+    def setSetLabelWrap(value: /* labelWrap */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setLabelWrap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLabelWidth(value: /* labelWidth */ js.UndefOr[js.Any] => Unit): Self = this.set("setLabelWidth", js.Any.fromFunction1(value))
+    def setSetLabelWrapUndefined: Self = StObject.set(x, "setLabelWrap", js.undefined)
     
     @scala.inline
-    def deleteSetLabelWidth: Self = this.set("setLabelWidth", js.undefined)
+    def setSetName(value: /* name */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLabelWrap(value: /* labelWrap */ js.UndefOr[Boolean] => Unit): Self = this.set("setLabelWrap", js.Any.fromFunction1(value))
+    def setSetNameUndefined: Self = StObject.set(x, "setName", js.undefined)
     
     @scala.inline
-    def deleteSetLabelWrap: Self = this.set("setLabelWrap", js.undefined)
+    def setSetRequired(value: /* required */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setRequired", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetName(value: /* name */ js.UndefOr[String] => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+    def setSetRequiredCls(value: /* requiredCls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setRequiredCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetName: Self = this.set("setName", js.undefined)
+    def setSetRequiredClsUndefined: Self = StObject.set(x, "setRequiredCls", js.undefined)
     
     @scala.inline
-    def setSetRequired(value: /* required */ js.UndefOr[Boolean] => Unit): Self = this.set("setRequired", js.Any.fromFunction1(value))
+    def setSetRequiredUndefined: Self = StObject.set(x, "setRequired", js.undefined)
     
     @scala.inline
-    def deleteSetRequired: Self = this.set("setRequired", js.undefined)
+    def setSetTabIndex(value: /* tabIndex */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTabIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRequiredCls(value: /* requiredCls */ js.UndefOr[String] => Unit): Self = this.set("setRequiredCls", js.Any.fromFunction1(value))
+    def setSetTabIndexUndefined: Self = StObject.set(x, "setTabIndex", js.undefined)
     
     @scala.inline
-    def deleteSetRequiredCls: Self = this.set("setRequiredCls", js.undefined)
+    def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTabIndex(value: /* tabIndex */ js.UndefOr[Double] => Unit): Self = this.set("setTabIndex", js.Any.fromFunction1(value))
+    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
     @scala.inline
-    def deleteSetTabIndex: Self = this.set("setTabIndex", js.undefined)
+    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
     @scala.inline
-    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    def setUseClearIcon(value: String): Self = StObject.set(x, "useClearIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    def setUseClearIconUndefined: Self = StObject.set(x, "useClearIcon", js.undefined)
     
     @scala.inline
-    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseClearIcon(value: String): Self = this.set("useClearIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseClearIcon: Self = this.set("useClearIcon", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Document
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParagraphHeading extends js.Object
+sealed trait ParagraphHeading extends StObject
 /**
   * An enumeration of the standard paragraph headings.
   *
@@ -27,7 +28,7 @@ sealed trait ParagraphHeading extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Document.ParagraphHeading")
 @js.native
-object ParagraphHeading extends js.Object {
+object ParagraphHeading extends StObject {
   
   @js.native
   sealed trait HEADING1 extends ParagraphHeading

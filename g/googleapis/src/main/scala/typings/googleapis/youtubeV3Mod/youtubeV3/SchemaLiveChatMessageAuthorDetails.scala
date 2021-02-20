@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLiveChatMessageAuthorDetails extends js.Object {
+trait SchemaLiveChatMessageAuthorDetails extends StObject {
   
   /**
     * The YouTube channel ID.
@@ -56,66 +57,54 @@ object SchemaLiveChatMessageAuthorDetails {
   }
   
   @scala.inline
-  implicit class SchemaLiveChatMessageAuthorDetailsOps[Self <: SchemaLiveChatMessageAuthorDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaLiveChatMessageAuthorDetailsMutableBuilder[Self <: SchemaLiveChatMessageAuthorDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelUrl(value: String): Self = StObject.set(x, "channelUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setChannelUrlUndefined: Self = StObject.set(x, "channelUrl", js.undefined)
     
     @scala.inline
-    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelUrl(value: String): Self = this.set("channelUrl", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteChannelUrl: Self = this.set("channelUrl", js.undefined)
+    def setIsChatModerator(value: Boolean): Self = StObject.set(x, "isChatModerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIsChatModeratorUndefined: Self = StObject.set(x, "isChatModerator", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIsChatOwner(value: Boolean): Self = StObject.set(x, "isChatOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsChatModerator(value: Boolean): Self = this.set("isChatModerator", value.asInstanceOf[js.Any])
+    def setIsChatOwnerUndefined: Self = StObject.set(x, "isChatOwner", js.undefined)
     
     @scala.inline
-    def deleteIsChatModerator: Self = this.set("isChatModerator", js.undefined)
+    def setIsChatSponsor(value: Boolean): Self = StObject.set(x, "isChatSponsor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsChatOwner(value: Boolean): Self = this.set("isChatOwner", value.asInstanceOf[js.Any])
+    def setIsChatSponsorUndefined: Self = StObject.set(x, "isChatSponsor", js.undefined)
     
     @scala.inline
-    def deleteIsChatOwner: Self = this.set("isChatOwner", js.undefined)
+    def setIsVerified(value: Boolean): Self = StObject.set(x, "isVerified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsChatSponsor(value: Boolean): Self = this.set("isChatSponsor", value.asInstanceOf[js.Any])
+    def setIsVerifiedUndefined: Self = StObject.set(x, "isVerified", js.undefined)
     
     @scala.inline
-    def deleteIsChatSponsor: Self = this.set("isChatSponsor", js.undefined)
+    def setProfileImageUrl(value: String): Self = StObject.set(x, "profileImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVerified(value: Boolean): Self = this.set("isVerified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsVerified: Self = this.set("isVerified", js.undefined)
-    
-    @scala.inline
-    def setProfileImageUrl(value: String): Self = this.set("profileImageUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileImageUrl: Self = this.set("profileImageUrl", js.undefined)
+    def setProfileImageUrlUndefined: Self = StObject.set(x, "profileImageUrl", js.undefined)
   }
 }

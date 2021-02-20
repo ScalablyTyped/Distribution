@@ -1,11 +1,12 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAnchor extends js.Object {
+trait IAnchor extends StObject {
   
   var col: Double = js.native
   
@@ -35,36 +36,24 @@ object IAnchor {
   }
   
   @scala.inline
-  implicit class IAnchorOps[Self <: IAnchor] (val x: Self) extends AnyVal {
+  implicit class IAnchorMutableBuilder[Self <: IAnchor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNativeCol(value: Double): Self = StObject.set(x, "nativeCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNativeColOff(value: Double): Self = StObject.set(x, "nativeColOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCol(value: Double): Self = this.set("col", value.asInstanceOf[js.Any])
+    def setNativeRow(value: Double): Self = StObject.set(x, "nativeRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeCol(value: Double): Self = this.set("nativeCol", value.asInstanceOf[js.Any])
+    def setNativeRowOff(value: Double): Self = StObject.set(x, "nativeRowOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeColOff(value: Double): Self = this.set("nativeColOff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNativeRow(value: Double): Self = this.set("nativeRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNativeRowOff(value: Double): Self = this.set("nativeRowOff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRow(value: Double): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

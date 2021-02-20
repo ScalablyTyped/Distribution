@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about a video stream.
   */
 @js.native
-trait SchemaVideoFileDetailsVideoStream extends js.Object {
+trait SchemaVideoFileDetailsVideoStream extends StObject {
   
   /**
     * The video content&#39;s display aspect ratio, which specifies the aspect
@@ -63,66 +64,54 @@ object SchemaVideoFileDetailsVideoStream {
   }
   
   @scala.inline
-  implicit class SchemaVideoFileDetailsVideoStreamOps[Self <: SchemaVideoFileDetailsVideoStream] (val x: Self) extends AnyVal {
+  implicit class SchemaVideoFileDetailsVideoStreamMutableBuilder[Self <: SchemaVideoFileDetailsVideoStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitrateBps(value: String): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspectRatio(value: Double): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
     
     @scala.inline
-    def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
+    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrateBps(value: String): Self = this.set("bitrateBps", value.asInstanceOf[js.Any])
+    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
     @scala.inline
-    def deleteBitrateBps: Self = this.set("bitrateBps", js.undefined)
+    def setFrameRateFps(value: Double): Self = StObject.set(x, "frameRateFps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: String): Self = this.set("codec", value.asInstanceOf[js.Any])
+    def setFrameRateFpsUndefined: Self = StObject.set(x, "frameRateFps", js.undefined)
     
     @scala.inline
-    def deleteCodec: Self = this.set("codec", js.undefined)
+    def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRateFps(value: Double): Self = this.set("frameRateFps", value.asInstanceOf[js.Any])
+    def setHeightPixelsUndefined: Self = StObject.set(x, "heightPixels", js.undefined)
     
     @scala.inline
-    def deleteFrameRateFps: Self = this.set("frameRateFps", js.undefined)
+    def setRotation(value: String): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightPixels(value: Double): Self = this.set("heightPixels", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteHeightPixels: Self = this.set("heightPixels", js.undefined)
+    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: String): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setWidthPixels(value: Double): Self = StObject.set(x, "widthPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVendor(value: String): Self = this.set("vendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendor: Self = this.set("vendor", js.undefined)
-    
-    @scala.inline
-    def setWidthPixels(value: Double): Self = this.set("widthPixels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthPixels: Self = this.set("widthPixels", js.undefined)
+    def setWidthPixelsUndefined: Self = StObject.set(x, "widthPixels", js.undefined)
   }
 }

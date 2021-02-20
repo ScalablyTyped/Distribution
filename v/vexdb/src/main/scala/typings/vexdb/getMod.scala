@@ -21,26 +21,32 @@ import typings.vexdb.vexdbStrings.rankings
 import typings.vexdb.vexdbStrings.season_rankings
 import typings.vexdb.vexdbStrings.skills
 import typings.vexdb.vexdbStrings.teams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vexdb/out/methods/get", JSImport.Namespace)
-@js.native
-object getMod extends js.Object {
+object getMod {
   
-  @JSName("default")
+  @JSImport("vexdb/out/methods/get", JSImport.Default)
+  @js.native
   def default_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[js.Array[AwardsResponseObject]] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/get", JSImport.Default)
+  @js.native
   def default_events(endpoint: events, params: EventsRequestObject): js.Promise[js.Array[EventsResponseObject]] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/get", JSImport.Default)
+  @js.native
   def default_matches(endpoint: matches, params: MatchesRequestObject): js.Promise[js.Array[MatchesResponseObject]] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/get", JSImport.Default)
+  @js.native
   def default_rankings(endpoint: rankings, params: RankingsRequestObject): js.Promise[js.Array[RankingsResponseObject]] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/get", JSImport.Default)
+  @js.native
   def default_seasonrankings(endpoint: season_rankings, params: SeasonRankingsRequestObject): js.Promise[js.Array[SeasonRankingsResponseObject]] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/get", JSImport.Default)
+  @js.native
   def default_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[js.Array[SkillsResponseObject]] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/get", JSImport.Default)
+  @js.native
   def default_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[js.Array[TeamsResponseObject]] = js.native
 }

@@ -1,15 +1,15 @@
 package typings.events
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("events", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("events", "EventEmitter")
   @js.native
-  class EventEmitter () extends js.Object {
+  class EventEmitter () extends StObject {
     
     def addListener(`type`: String, listener: Listener): this.type = js.native
     def addListener(`type`: Double, listener: Listener): this.type = js.native
@@ -55,12 +55,23 @@ object mod extends js.Object {
     def setMaxListeners(n: Double): this.type = js.native
   }
   /* static members */
-  @js.native
-  object EventEmitter extends js.Object {
+  object EventEmitter {
     
-    var defaultMaxListeners: Double = js.native
+    @JSImport("events", "EventEmitter")
+    @js.native
+    val ^ : js.Any = js.native
     
+    @JSImport("events", "EventEmitter.defaultMaxListeners")
+    @js.native
+    def defaultMaxListeners: Double = js.native
+    @scala.inline
+    def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
+    
+    @JSImport("events", "EventEmitter.listenerCount")
+    @js.native
     def listenerCount(emitter: EventEmitter, `type`: String): Double = js.native
+    @JSImport("events", "EventEmitter.listenerCount")
+    @js.native
     def listenerCount(emitter: EventEmitter, `type`: Double): Double = js.native
   }
   

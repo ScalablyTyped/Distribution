@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/DeleteSweepFontIcon", JSImport.Namespace)
-@js.native
-object deleteSweepFontIconMod extends js.Object {
+object deleteSweepFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/DeleteSweepFontIcon", "DeleteSweepFontIcon")
+  @js.native
   val DeleteSweepFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

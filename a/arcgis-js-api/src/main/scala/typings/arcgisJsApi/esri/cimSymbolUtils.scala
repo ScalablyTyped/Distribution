@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait cimSymbolUtils extends js.Object {
+trait cimSymbolUtils extends StObject {
   
   /**
     * Sets the color of the symbol layers of a CIMSymbol to a given value if the symbol layer is not color locked.
@@ -65,36 +66,24 @@ object cimSymbolUtils {
   }
   
   @scala.inline
-  implicit class cimSymbolUtilsOps[Self <: cimSymbolUtils] (val x: Self) extends AnyVal {
+  implicit class cimSymbolUtilsMutableBuilder[Self <: cimSymbolUtils] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyCIMSymbolColor(value: (CIMSymbol, Color_) => Unit): Self = StObject.set(x, "applyCIMSymbolColor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyCIMSymbolRotation(value: (CIMSymbol, Double) => Unit): Self = StObject.set(x, "applyCIMSymbolRotation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCIMSymbolColor(value: CIMSymbol => Color_): Self = StObject.set(x, "getCIMSymbolColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplyCIMSymbolColor(value: (CIMSymbol, Color_) => Unit): Self = this.set("applyCIMSymbolColor", js.Any.fromFunction2(value))
+    def setGetCIMSymbolRotation(value: CIMSymbol => Double): Self = StObject.set(x, "getCIMSymbolRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplyCIMSymbolRotation(value: (CIMSymbol, Double) => Unit): Self = this.set("applyCIMSymbolRotation", js.Any.fromFunction2(value))
+    def setGetCIMSymbolSize(value: CIMSymbol => Double): Self = StObject.set(x, "getCIMSymbolSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCIMSymbolColor(value: CIMSymbol => Color_): Self = this.set("getCIMSymbolColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetCIMSymbolRotation(value: CIMSymbol => Double): Self = this.set("getCIMSymbolRotation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetCIMSymbolSize(value: CIMSymbol => Double): Self = this.set("getCIMSymbolSize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setScaleCIMSymbolTo(value: (CIMSymbol, Double) => Unit): Self = this.set("scaleCIMSymbolTo", js.Any.fromFunction2(value))
+    def setScaleCIMSymbolTo(value: (CIMSymbol, Double) => Unit): Self = StObject.set(x, "scaleCIMSymbolTo", js.Any.fromFunction2(value))
   }
 }

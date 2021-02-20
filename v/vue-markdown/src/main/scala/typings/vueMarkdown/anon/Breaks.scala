@@ -1,11 +1,12 @@
 package typings.vueMarkdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Breaks extends js.Object {
+trait Breaks extends StObject {
   
   var breaks: Boolean = js.native
   
@@ -44,45 +45,33 @@ object Breaks {
   }
   
   @scala.inline
-  implicit class BreaksOps[Self <: Breaks] (val x: Self) extends AnyVal {
+  implicit class BreaksMutableBuilder[Self <: Breaks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreaks(value: Boolean): Self = this.set("breaks", value.asInstanceOf[js.Any])
+    def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight(value: js.Any): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    def setLinkify(value: Boolean): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: Boolean): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setMaxNesting(value: Double): Self = StObject.set(x, "maxNesting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLangPrefix(value: String): Self = this.set("langPrefix", value.asInstanceOf[js.Any])
+    def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkify(value: Boolean): Self = this.set("linkify", value.asInstanceOf[js.Any])
+    def setTypographer(value: Boolean): Self = StObject.set(x, "typographer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNesting(value: Double): Self = this.set("maxNesting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuotes(value: String): Self = this.set("quotes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypographer(value: Boolean): Self = this.set("typographer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXhtmlOut(value: Boolean): Self = this.set("xhtmlOut", value.asInstanceOf[js.Any])
+    def setXhtmlOut(value: Boolean): Self = StObject.set(x, "xhtmlOut", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,15 @@ package typings.antd
 
 import typings.rcFieldForm.interfaceMod.InternalNamePath
 import typings.react.mod.RefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/form/hooks/useItemRef", JSImport.Namespace)
-@js.native
-object useItemRefMod extends js.Object {
+object useItemRefMod {
   
+  @JSImport("antd/lib/form/hooks/useItemRef", JSImport.Default)
+  @js.native
   def default(): js.Function2[
     /* name */ InternalNamePath, 
     /* children */ js.Any, 

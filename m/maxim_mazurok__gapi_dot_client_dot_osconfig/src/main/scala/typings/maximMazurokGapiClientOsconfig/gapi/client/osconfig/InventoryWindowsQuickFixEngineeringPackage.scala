@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryWindowsQuickFixEngineeringPackage extends js.Object {
+trait InventoryWindowsQuickFixEngineeringPackage extends StObject {
   
   /** A short textual description of the QFE update. */
   var caption: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object InventoryWindowsQuickFixEngineeringPackage {
   }
   
   @scala.inline
-  implicit class InventoryWindowsQuickFixEngineeringPackageOps[Self <: InventoryWindowsQuickFixEngineeringPackage] (val x: Self) extends AnyVal {
+  implicit class InventoryWindowsQuickFixEngineeringPackageMutableBuilder[Self <: InventoryWindowsQuickFixEngineeringPackage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setHotFixId(value: String): Self = StObject.set(x, "hotFixId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHotFixIdUndefined: Self = StObject.set(x, "hotFixId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setInstallTime(value: String): Self = StObject.set(x, "installTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotFixId(value: String): Self = this.set("hotFixId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHotFixId: Self = this.set("hotFixId", js.undefined)
-    
-    @scala.inline
-    def setInstallTime(value: String): Self = this.set("installTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstallTime: Self = this.set("installTime", js.undefined)
+    def setInstallTimeUndefined: Self = StObject.set(x, "installTime", js.undefined)
   }
 }

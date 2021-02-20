@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Line break options passed in calls to {@link XBreakIterator.getLineBreak()} . */
 @js.native
-trait LineBreakUserOptions extends js.Object {
+trait LineBreakUserOptions extends StObject {
   
   var allowHyphenateEnglish: Boolean = js.native
   
@@ -37,33 +38,21 @@ object LineBreakUserOptions {
   }
   
   @scala.inline
-  implicit class LineBreakUserOptionsOps[Self <: LineBreakUserOptions] (val x: Self) extends AnyVal {
+  implicit class LineBreakUserOptionsMutableBuilder[Self <: LineBreakUserOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowHyphenateEnglish(value: Boolean): Self = StObject.set(x, "allowHyphenateEnglish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPunctuationOutsideMargin(value: Boolean): Self = StObject.set(x, "allowPunctuationOutsideMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyForbiddenRules(value: Boolean): Self = StObject.set(x, "applyForbiddenRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHyphenateEnglish(value: Boolean): Self = this.set("allowHyphenateEnglish", value.asInstanceOf[js.Any])
+    def setForbiddenBeginCharacters(value: String): Self = StObject.set(x, "forbiddenBeginCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPunctuationOutsideMargin(value: Boolean): Self = this.set("allowPunctuationOutsideMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApplyForbiddenRules(value: Boolean): Self = this.set("applyForbiddenRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForbiddenBeginCharacters(value: String): Self = this.set("forbiddenBeginCharacters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForbiddenEndCharacters(value: String): Self = this.set("forbiddenEndCharacters", value.asInstanceOf[js.Any])
+    def setForbiddenEndCharacters(value: String): Self = StObject.set(x, "forbiddenEndCharacters", value.asInstanceOf[js.Any])
   }
 }

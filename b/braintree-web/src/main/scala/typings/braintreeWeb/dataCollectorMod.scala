@@ -2,16 +2,15 @@ package typings.braintreeWeb
 
 import typings.braintreeWeb.anon.Kount
 import typings.braintreeWeb.coreMod.callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("braintree-web/modules/data-collector", JSImport.Namespace)
-@js.native
-object dataCollectorMod extends js.Object {
+object dataCollectorMod {
   
   @js.native
-  trait DataCollector extends js.Object {
+  trait DataCollector extends StObject {
     
     var VERSION: String = js.native
     

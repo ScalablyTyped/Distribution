@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InconclusiveDetail extends js.Object {
+trait InconclusiveDetail extends StObject {
   
   /**
     * If the end user aborted the test execution before a pass or fail could be determined. For example, the user pressed ctrl-c which sent a kill signal to the test runner while the test
@@ -31,36 +32,24 @@ object InconclusiveDetail {
   }
   
   @scala.inline
-  implicit class InconclusiveDetailOps[Self <: InconclusiveDetail] (val x: Self) extends AnyVal {
+  implicit class InconclusiveDetailMutableBuilder[Self <: InconclusiveDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortedByUser(value: Boolean): Self = StObject.set(x, "abortedByUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortedByUserUndefined: Self = StObject.set(x, "abortedByUser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasErrorLogs(value: Boolean): Self = StObject.set(x, "hasErrorLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortedByUser(value: Boolean): Self = this.set("abortedByUser", value.asInstanceOf[js.Any])
+    def setHasErrorLogsUndefined: Self = StObject.set(x, "hasErrorLogs", js.undefined)
     
     @scala.inline
-    def deleteAbortedByUser: Self = this.set("abortedByUser", js.undefined)
+    def setInfrastructureFailure(value: Boolean): Self = StObject.set(x, "infrastructureFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasErrorLogs(value: Boolean): Self = this.set("hasErrorLogs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasErrorLogs: Self = this.set("hasErrorLogs", js.undefined)
-    
-    @scala.inline
-    def setInfrastructureFailure(value: Boolean): Self = this.set("infrastructureFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfrastructureFailure: Self = this.set("infrastructureFailure", js.undefined)
+    def setInfrastructureFailureUndefined: Self = StObject.set(x, "infrastructureFailure", js.undefined)
   }
 }

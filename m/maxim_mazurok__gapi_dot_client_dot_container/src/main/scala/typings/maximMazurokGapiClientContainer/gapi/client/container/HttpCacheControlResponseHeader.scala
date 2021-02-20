@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpCacheControlResponseHeader extends js.Object {
+trait HttpCacheControlResponseHeader extends StObject {
   
   /** 14.6 response cache age, in seconds since the response is generated */
   var age: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object HttpCacheControlResponseHeader {
   }
   
   @scala.inline
-  implicit class HttpCacheControlResponseHeaderOps[Self <: HttpCacheControlResponseHeader] (val x: Self) extends AnyVal {
+  implicit class HttpCacheControlResponseHeaderMutableBuilder[Self <: HttpCacheControlResponseHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAge(value: String): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirective(value: String): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAge(value: String): Self = this.set("age", value.asInstanceOf[js.Any])
+    def setDirectiveUndefined: Self = StObject.set(x, "directive", js.undefined)
     
     @scala.inline
-    def deleteAge: Self = this.set("age", js.undefined)
+    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirective(value: String): Self = this.set("directive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirective: Self = this.set("directive", js.undefined)
-    
-    @scala.inline
-    def setExpires(value: String): Self = this.set("expires", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpires: Self = this.set("expires", js.undefined)
+    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
   }
 }

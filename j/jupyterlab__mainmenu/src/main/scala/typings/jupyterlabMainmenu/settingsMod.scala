@@ -3,14 +3,14 @@ package typings.jupyterlabMainmenu
 import typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu
 import typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu
 import typings.luminoWidgets.menuMod.Menu.IOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/mainmenu/lib/settings", JSImport.Namespace)
-@js.native
-object settingsMod extends js.Object {
+object settingsMod {
   
+  @JSImport("@jupyterlab/mainmenu/lib/settings", "SettingsMenu")
   @js.native
   class SettingsMenu protected () extends JupyterLabMenu {
     /**

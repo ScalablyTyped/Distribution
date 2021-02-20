@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOpenIdTokenForDeveloperIdentityInput extends js.Object {
+trait GetOpenIdTokenForDeveloperIdentityInput extends StObject {
   
   /**
     * A unique identifier in the format REGION:GUID.
@@ -36,36 +37,24 @@ object GetOpenIdTokenForDeveloperIdentityInput {
   }
   
   @scala.inline
-  implicit class GetOpenIdTokenForDeveloperIdentityInputOps[Self <: GetOpenIdTokenForDeveloperIdentityInput] (val x: Self) extends AnyVal {
+  implicit class GetOpenIdTokenForDeveloperIdentityInputMutableBuilder[Self <: GetOpenIdTokenForDeveloperIdentityInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = this.set("IdentityPoolId", value.asInstanceOf[js.Any])
+    def setLogins(value: LoginsMap): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogins(value: LoginsMap): Self = this.set("Logins", value.asInstanceOf[js.Any])
+    def setTokenDuration(value: TokenDuration): Self = StObject.set(x, "TokenDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityId(value: IdentityId): Self = this.set("IdentityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityId: Self = this.set("IdentityId", js.undefined)
-    
-    @scala.inline
-    def setTokenDuration(value: TokenDuration): Self = this.set("TokenDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenDuration: Self = this.set("TokenDuration", js.undefined)
+    def setTokenDurationUndefined: Self = StObject.set(x, "TokenDuration", js.undefined)
   }
 }

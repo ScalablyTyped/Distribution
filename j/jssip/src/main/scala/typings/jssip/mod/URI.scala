@@ -1,13 +1,14 @@
 package typings.jssip.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jssip", "URI")
 @js.native
-class URI protected () extends js.Object {
+class URI protected () extends StObject {
   def this(scheme: String, user: String, host: String) = this()
   def this(scheme: String, user: Null, host: String) = this()
   def this(scheme: Null, user: String, host: String) = this()
@@ -200,9 +201,9 @@ class URI protected () extends js.Object {
   
   def toAor(show_port: Boolean): String = js.native
 }
-@JSImport("jssip", "URI")
-@js.native
-object URI extends js.Object {
+object URI {
   
+  @JSImport("jssip", "URI.parse")
+  @js.native
   def parse(uri: String): URI = js.native
 }

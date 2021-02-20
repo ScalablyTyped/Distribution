@@ -1,6 +1,7 @@
 package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,42 +39,30 @@ object RenderContextForm {
   }
   
   @scala.inline
-  implicit class RenderContextFormOps[Self <: RenderContextForm] (val x: Self) extends AnyVal {
+  implicit class RenderContextFormMutableBuilder[Self <: RenderContextForm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCSRCustomLayout(value: Boolean): Self = StObject.set(x, "CSRCustomLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCSRCustomLayoutUndefined: Self = StObject.set(x, "CSRCustomLayout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentItem(value: Item): Self = StObject.set(x, "CurrentItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentItem(value: Item): Self = this.set("CurrentItem", value.asInstanceOf[js.Any])
+    def setFieldControlModes(value: StringDictionary[ClientControlMode]): Self = StObject.set(x, "FieldControlModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldControlModes(value: StringDictionary[ClientControlMode]): Self = this.set("FieldControlModes", value.asInstanceOf[js.Any])
+    def setFormContext(value: ClientFormContext): Self = StObject.set(x, "FormContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormContext(value: ClientFormContext): Self = this.set("FormContext", value.asInstanceOf[js.Any])
+    def setFormUniqueId(value: String): Self = StObject.set(x, "FormUniqueId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormUniqueId(value: String): Self = this.set("FormUniqueId", value.asInstanceOf[js.Any])
+    def setListData(value: ListDataInForm): Self = StObject.set(x, "ListData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListData(value: ListDataInForm): Self = this.set("ListData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListSchema(value: ListSchemaInForm): Self = this.set("ListSchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCSRCustomLayout(value: Boolean): Self = this.set("CSRCustomLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCSRCustomLayout: Self = this.set("CSRCustomLayout", js.undefined)
+    def setListSchema(value: ListSchemaInForm): Self = StObject.set(x, "ListSchema", value.asInstanceOf[js.Any])
   }
 }

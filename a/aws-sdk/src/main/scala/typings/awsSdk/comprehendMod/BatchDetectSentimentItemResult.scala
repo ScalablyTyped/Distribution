@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDetectSentimentItemResult extends js.Object {
+trait BatchDetectSentimentItemResult extends StObject {
   
   /**
     * The zero-based index of the document in the input list.
@@ -31,36 +32,24 @@ object BatchDetectSentimentItemResult {
   }
   
   @scala.inline
-  implicit class BatchDetectSentimentItemResultOps[Self <: BatchDetectSentimentItemResult] (val x: Self) extends AnyVal {
+  implicit class BatchDetectSentimentItemResultMutableBuilder[Self <: BatchDetectSentimentItemResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSentiment(value: SentimentType): Self = StObject.set(x, "Sentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Integer): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setSentimentScore(value: SentimentScore): Self = StObject.set(x, "SentimentScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndex: Self = this.set("Index", js.undefined)
+    def setSentimentScoreUndefined: Self = StObject.set(x, "SentimentScore", js.undefined)
     
     @scala.inline
-    def setSentiment(value: SentimentType): Self = this.set("Sentiment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentiment: Self = this.set("Sentiment", js.undefined)
-    
-    @scala.inline
-    def setSentimentScore(value: SentimentScore): Self = this.set("SentimentScore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentimentScore: Self = this.set("SentimentScore", js.undefined)
+    def setSentimentUndefined: Self = StObject.set(x, "Sentiment", js.undefined)
   }
 }

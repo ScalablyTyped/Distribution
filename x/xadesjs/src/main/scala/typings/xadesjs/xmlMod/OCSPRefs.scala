@@ -1,6 +1,6 @@
 package typings.xadesjs.xmlMod
 
-import typings.xmlCore.mod.XmlCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs/build/types/xml", "OCSPRefs")
 @js.native
 class OCSPRefs ()
-  extends XmlCollection[typings.xadesjs.completeRevocationRefsMod.OCSPRef]
+  extends typings.xadesjs.completeRevocationRefsMod.OCSPRefs {
+  def this(properties: js.Object) = this()
+}

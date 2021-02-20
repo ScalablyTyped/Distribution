@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Fetch
 
 import typings.devtoolsProtocol.mod.Protocol.Network.ErrorReason
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailRequestRequest extends js.Object {
+trait FailRequestRequest extends StObject {
   
   /**
     * Causes the request to fail with the given reason.
@@ -27,24 +28,12 @@ object FailRequestRequest {
   }
   
   @scala.inline
-  implicit class FailRequestRequestOps[Self <: FailRequestRequest] (val x: Self) extends AnyVal {
+  implicit class FailRequestRequestMutableBuilder[Self <: FailRequestRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorReason(value: ErrorReason): Self = StObject.set(x, "errorReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrorReason(value: ErrorReason): Self = this.set("errorReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

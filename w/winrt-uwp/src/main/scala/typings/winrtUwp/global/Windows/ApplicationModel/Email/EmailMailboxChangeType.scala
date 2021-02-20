@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the type of change made to the mailbox item. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxChangeType")
 @js.native
-object EmailMailboxChangeType extends js.Object {
+object EmailMailboxChangeType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

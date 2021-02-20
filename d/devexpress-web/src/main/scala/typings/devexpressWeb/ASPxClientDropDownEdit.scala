@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,27 +95,15 @@ object ASPxClientDropDownEdit {
   }
   
   @scala.inline
-  implicit class ASPxClientDropDownEditOps[Self <: ASPxClientDropDownEdit] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDropDownEditMutableBuilder[Self <: ASPxClientDropDownEdit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDropDownCommandButtonClick(value: ASPxClientEvent[ASPxClientDropDownCommandEventHandler[ASPxClientDropDownEdit]]): Self = StObject.set(x, "DropDownCommandButtonClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetKeyValue(value: () => String): Self = StObject.set(x, "GetKeyValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDropDownCommandButtonClick(value: ASPxClientEvent[ASPxClientDropDownCommandEventHandler[ASPxClientDropDownEdit]]): Self = this.set("DropDownCommandButtonClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetKeyValue(value: () => String): Self = this.set("GetKeyValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetKeyValue(value: String => Unit): Self = this.set("SetKeyValue", js.Any.fromFunction1(value))
+    def setSetKeyValue(value: String => Unit): Self = StObject.set(x, "SetKeyValue", js.Any.fromFunction1(value))
   }
 }

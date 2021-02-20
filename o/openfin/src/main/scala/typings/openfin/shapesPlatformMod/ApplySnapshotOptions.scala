@@ -1,11 +1,12 @@
 package typings.openfin.shapesPlatformMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplySnapshotOptions extends js.Object {
+trait ApplySnapshotOptions extends StObject {
   
   var closeExistingWindows: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object ApplySnapshotOptions {
   }
   
   @scala.inline
-  implicit class ApplySnapshotOptionsOps[Self <: ApplySnapshotOptions] (val x: Self) extends AnyVal {
+  implicit class ApplySnapshotOptionsMutableBuilder[Self <: ApplySnapshotOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseExistingWindows(value: Boolean): Self = StObject.set(x, "closeExistingWindows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseExistingWindowsUndefined: Self = StObject.set(x, "closeExistingWindows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkipOutOfBoundsCheck(value: Boolean): Self = StObject.set(x, "skipOutOfBoundsCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseExistingWindows(value: Boolean): Self = this.set("closeExistingWindows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloseExistingWindows: Self = this.set("closeExistingWindows", js.undefined)
-    
-    @scala.inline
-    def setSkipOutOfBoundsCheck(value: Boolean): Self = this.set("skipOutOfBoundsCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipOutOfBoundsCheck: Self = this.set("skipOutOfBoundsCheck", js.undefined)
+    def setSkipOutOfBoundsCheckUndefined: Self = StObject.set(x, "skipOutOfBoundsCheck", js.undefined)
   }
 }

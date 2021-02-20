@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Module extends js.Object {
+trait Module extends StObject {
   
   var mediaId: String = js.native
   
@@ -24,36 +25,24 @@ object Module {
   }
   
   @scala.inline
-  implicit class ModuleOps[Self <: Module] (val x: Self) extends AnyVal {
+  implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
     @scala.inline
-    def setMediaId(value: String): Self = this.set("mediaId", value.asInstanceOf[js.Any])
+    def setReplyToCommentId(value: String): Self = StObject.set(x, "replyToCommentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setReplyToCommentIdUndefined: Self = StObject.set(x, "replyToCommentId", js.undefined)
     
     @scala.inline
-    def setModule(value: String): Self = this.set("module", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModule: Self = this.set("module", js.undefined)
-    
-    @scala.inline
-    def setReplyToCommentId(value: String): Self = this.set("replyToCommentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyToCommentId: Self = this.set("replyToCommentId", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

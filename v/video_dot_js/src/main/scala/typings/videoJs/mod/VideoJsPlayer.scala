@@ -22,6 +22,7 @@ import typings.videoJs.mod.videojs.TimeRange
 import typings.videoJs.videoJsStrings._empty
 import typings.videoJs.videoJsStrings.maybe
 import typings.videoJs.videoJsStrings.probably
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

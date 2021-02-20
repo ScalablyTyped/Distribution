@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LowFrameRateMessage extends js.Object {
+trait LowFrameRateMessage extends StObject {
   
   var container: Element | String = js.native
   
@@ -23,30 +24,18 @@ object LowFrameRateMessage {
   }
   
   @scala.inline
-  implicit class LowFrameRateMessageOps[Self <: LowFrameRateMessage] (val x: Self) extends AnyVal {
+  implicit class LowFrameRateMessageMutableBuilder[Self <: LowFrameRateMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLowFrameRateMessage(value: String): Self = StObject.set(x, "lowFrameRateMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLowFrameRateMessageUndefined: Self = StObject.set(x, "lowFrameRateMessage", js.undefined)
     
     @scala.inline
-    def setContainer(value: Element | String): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScene(value: typings.cesium.mod.Scene): Self = this.set("scene", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLowFrameRateMessage(value: String): Self = this.set("lowFrameRateMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowFrameRateMessage: Self = this.set("lowFrameRateMessage", js.undefined)
+    def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
   }
 }

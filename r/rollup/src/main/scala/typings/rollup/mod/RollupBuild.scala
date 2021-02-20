@@ -1,11 +1,12 @@
 package typings.rollup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RollupBuild extends js.Object {
+trait RollupBuild extends StObject {
   
   var cache: js.UndefOr[RollupCache] = js.native
   
@@ -30,42 +31,30 @@ object RollupBuild {
   }
   
   @scala.inline
-  implicit class RollupBuildOps[Self <: RollupBuild] (val x: Self) extends AnyVal {
+  implicit class RollupBuildMutableBuilder[Self <: RollupBuild] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCache(value: RollupCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerate(value: OutputOptions => js.Promise[RollupOutput]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGenerate(value: OutputOptions => js.Promise[RollupOutput]): Self = this.set("generate", js.Any.fromFunction1(value))
+    def setGetTimings(value: () => SerializedTimings): Self = StObject.set(x, "getTimings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setWatchFilesVarargs(value: String*): Self = this.set("watchFiles", js.Array(value :_*))
+    def setGetTimingsUndefined: Self = StObject.set(x, "getTimings", js.undefined)
     
     @scala.inline
-    def setWatchFiles(value: js.Array[String]): Self = this.set("watchFiles", value.asInstanceOf[js.Any])
+    def setWatchFiles(value: js.Array[String]): Self = StObject.set(x, "watchFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrite(value: OutputOptions => js.Promise[RollupOutput]): Self = this.set("write", js.Any.fromFunction1(value))
+    def setWatchFilesVarargs(value: String*): Self = StObject.set(x, "watchFiles", js.Array(value :_*))
     
     @scala.inline
-    def setCache(value: RollupCache): Self = this.set("cache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
-    
-    @scala.inline
-    def setGetTimings(value: () => SerializedTimings): Self = this.set("getTimings", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetTimings: Self = this.set("getTimings", js.undefined)
+    def setWrite(value: OutputOptions => js.Promise[RollupOutput]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

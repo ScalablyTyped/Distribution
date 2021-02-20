@@ -1,13 +1,14 @@
 package typings.arangodb
 
 import typings.arangodb.Foxx.Router
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@arangodb/foxx", JSImport.Namespace)
-@js.native
-object arangodbFoxxMod extends js.Object {
+object arangodbFoxxMod {
   
+  @JSImport("@arangodb/foxx", "createRouter")
+  @js.native
   def createRouter(): Router = js.native
 }

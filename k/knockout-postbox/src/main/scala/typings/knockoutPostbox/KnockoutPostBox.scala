@@ -1,11 +1,12 @@
 package typings.knockoutPostbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutPostBox extends js.Object {
+trait KnockoutPostBox extends StObject {
   
   def defaultComparer[T](newValue: T, oldValue: T): Boolean = js.native
   

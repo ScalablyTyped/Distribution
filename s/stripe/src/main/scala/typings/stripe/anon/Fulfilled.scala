@@ -1,12 +1,13 @@
 package typings.stripe.anon
 
 import typings.stripe.mod.IDateFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fulfilled extends js.Object {
+trait Fulfilled extends StObject {
   
   /**
     * A filter on the list based on the object canceled field. The value can be a string with an integer Unix timestamp,
@@ -41,42 +42,30 @@ object Fulfilled {
   }
   
   @scala.inline
-  implicit class FulfilledOps[Self <: Fulfilled] (val x: Self) extends AnyVal {
+  implicit class FulfilledMutableBuilder[Self <: Fulfilled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanceled(value: IDateFilter): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanceledUndefined: Self = StObject.set(x, "canceled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFulfilled(value: IDateFilter): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanceled(value: IDateFilter): Self = this.set("canceled", value.asInstanceOf[js.Any])
+    def setFulfilledUndefined: Self = StObject.set(x, "fulfilled", js.undefined)
     
     @scala.inline
-    def deleteCanceled: Self = this.set("canceled", js.undefined)
+    def setPaid(value: IDateFilter): Self = StObject.set(x, "paid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFulfilled(value: IDateFilter): Self = this.set("fulfilled", value.asInstanceOf[js.Any])
+    def setPaidUndefined: Self = StObject.set(x, "paid", js.undefined)
     
     @scala.inline
-    def deleteFulfilled: Self = this.set("fulfilled", js.undefined)
+    def setReturned(value: IDateFilter): Self = StObject.set(x, "returned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaid(value: IDateFilter): Self = this.set("paid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaid: Self = this.set("paid", js.undefined)
-    
-    @scala.inline
-    def setReturned(value: IDateFilter): Self = this.set("returned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturned: Self = this.set("returned", js.undefined)
+    def setReturnedUndefined: Self = StObject.set(x, "returned", js.undefined)
   }
 }

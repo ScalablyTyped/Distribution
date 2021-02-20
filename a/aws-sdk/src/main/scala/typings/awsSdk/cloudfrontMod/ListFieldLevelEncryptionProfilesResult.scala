@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListFieldLevelEncryptionProfilesResult extends js.Object {
+trait ListFieldLevelEncryptionProfilesResult extends StObject {
   
   /**
     * Returns a list of the field-level encryption profiles that have been created in CloudFront for this account.
@@ -21,24 +22,12 @@ object ListFieldLevelEncryptionProfilesResult {
   }
   
   @scala.inline
-  implicit class ListFieldLevelEncryptionProfilesResultOps[Self <: ListFieldLevelEncryptionProfilesResult] (val x: Self) extends AnyVal {
+  implicit class ListFieldLevelEncryptionProfilesResultMutableBuilder[Self <: ListFieldLevelEncryptionProfilesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldLevelEncryptionProfileList(value: FieldLevelEncryptionProfileList): Self = StObject.set(x, "FieldLevelEncryptionProfileList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFieldLevelEncryptionProfileList(value: FieldLevelEncryptionProfileList): Self = this.set("FieldLevelEncryptionProfileList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldLevelEncryptionProfileList: Self = this.set("FieldLevelEncryptionProfileList", js.undefined)
+    def setFieldLevelEncryptionProfileListUndefined: Self = StObject.set(x, "FieldLevelEncryptionProfileList", js.undefined)
   }
 }

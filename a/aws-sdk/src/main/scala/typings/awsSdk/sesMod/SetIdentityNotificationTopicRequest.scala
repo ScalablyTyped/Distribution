@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetIdentityNotificationTopicRequest extends js.Object {
+trait SetIdentityNotificationTopicRequest extends StObject {
   
   /**
     * The identity (email address or domain) that you want to set the Amazon SNS topic for.  You can only specify a verified identity for this parameter.  You can specify an identity by using its name or by using its Amazon Resource Name (ARN). The following examples are all valid identities: sender@example.com, example.com, arn:aws:ses:us-east-1:123456789012:identity/example.com.
@@ -31,30 +32,18 @@ object SetIdentityNotificationTopicRequest {
   }
   
   @scala.inline
-  implicit class SetIdentityNotificationTopicRequestOps[Self <: SetIdentityNotificationTopicRequest] (val x: Self) extends AnyVal {
+  implicit class SetIdentityNotificationTopicRequestMutableBuilder[Self <: SetIdentityNotificationTopicRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotificationType(value: NotificationType): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSnsTopic(value: NotificationTopic): Self = StObject.set(x, "SnsTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentity(value: Identity): Self = this.set("Identity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotificationType(value: NotificationType): Self = this.set("NotificationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnsTopic(value: NotificationTopic): Self = this.set("SnsTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnsTopic: Self = this.set("SnsTopic", js.undefined)
+    def setSnsTopicUndefined: Self = StObject.set(x, "SnsTopic", js.undefined)
   }
 }

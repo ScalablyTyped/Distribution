@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`13`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,65 +49,53 @@ object VNodeCall {
   }
   
   @scala.inline
-  implicit class VNodeCallOps[Self <: VNodeCall] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisableTracking(value: Boolean): Self = this.set("disableTracking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsBlock(value: Boolean): Self = this.set("isBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String | js.Symbol | CallExpression): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `13`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChildrenVarargs(value: TemplateChildNode*): Self = this.set("children", js.Array(value :_*))
+  implicit class VNodeCallMutableBuilder[Self <: VNodeCall] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setChildren(
       value: js.Array[TemplateChildNode] | TemplateTextChildNode | SlotsExpression | ForRenderListExpression
-    ): Self = this.set("children", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setDirectives(value: DirectiveArguments): Self = this.set("directives", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def deleteDirectives: Self = this.set("directives", js.undefined)
+    def setDirectives(value: DirectiveArguments): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicProps(value: String): Self = this.set("dynamicProps", value.asInstanceOf[js.Any])
+    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
     @scala.inline
-    def deleteDynamicProps: Self = this.set("dynamicProps", js.undefined)
+    def setDisableTracking(value: Boolean): Self = StObject.set(x, "disableTracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatchFlag(value: String): Self = this.set("patchFlag", value.asInstanceOf[js.Any])
+    def setDynamicProps(value: String): Self = StObject.set(x, "dynamicProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePatchFlag: Self = this.set("patchFlag", js.undefined)
+    def setDynamicPropsUndefined: Self = StObject.set(x, "dynamicProps", js.undefined)
     
     @scala.inline
-    def setProps(value: PropsExpression): Self = this.set("props", value.asInstanceOf[js.Any])
+    def setIsBlock(value: Boolean): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProps: Self = this.set("props", js.undefined)
+    def setPatchFlag(value: String): Self = StObject.set(x, "patchFlag", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPatchFlagUndefined: Self = StObject.set(x, "patchFlag", js.undefined)
+    
+    @scala.inline
+    def setProps(value: PropsExpression): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+    
+    @scala.inline
+    def setTag(value: String | js.Symbol | CallExpression): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: `13`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.openssiWebsdk.mod
 
 import typings.openssiWebsdk.anon.Did
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionAgent extends js.Object {
+trait ConnectionAgent extends StObject {
   
   var name: AgentName = js.native
   
@@ -27,33 +28,21 @@ object ConnectionAgent {
   }
   
   @scala.inline
-  implicit class ConnectionAgentOps[Self <: ConnectionAgent] (val x: Self) extends AnyVal {
+  implicit class ConnectionAgentMutableBuilder[Self <: ConnectionAgent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPairwise(value: Did): Self = StObject.set(x, "pairwise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublic(value: Did): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AgentName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPairwise(value: Did): Self = this.set("pairwise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublic(value: Did): Self = this.set("public", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: AgentURL): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: AgentURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.azdata.azdataStrings.dead
   - typings.azdata.azdataStrings.connected
 */
-trait KernelStatus extends js.Object
+trait KernelStatus extends StObject
 object KernelStatus {
   
   @scala.inline

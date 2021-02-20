@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientDlp.anon.Fields
 import typings.maximMazurokGapiClientDlp.anon.Filter
 import typings.maximMazurokGapiClientDlp.anon.Key
 import typings.maximMazurokGapiClientDlp.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DlpJobsResource extends js.Object {
+trait DlpJobsResource extends StObject {
   
   def cancel(request: Key, body: GooglePrivacyDlpV2CancelDlpJobRequest): Request[js.Object] = js.native
   /**

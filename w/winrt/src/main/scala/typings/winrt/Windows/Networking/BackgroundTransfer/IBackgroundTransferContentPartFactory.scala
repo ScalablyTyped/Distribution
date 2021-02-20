@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Networking.BackgroundTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBackgroundTransferContentPartFactory extends js.Object {
+trait IBackgroundTransferContentPartFactory extends StObject {
   
   def createWithName(name: String): BackgroundTransferContentPart = js.native
   
@@ -23,24 +24,12 @@ object IBackgroundTransferContentPartFactory {
   }
   
   @scala.inline
-  implicit class IBackgroundTransferContentPartFactoryOps[Self <: IBackgroundTransferContentPartFactory] (val x: Self) extends AnyVal {
+  implicit class IBackgroundTransferContentPartFactoryMutableBuilder[Self <: IBackgroundTransferContentPartFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateWithName(value: String => BackgroundTransferContentPart): Self = StObject.set(x, "createWithName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateWithName(value: String => BackgroundTransferContentPart): Self = this.set("createWithName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateWithNameAndFileName(value: (String, String) => BackgroundTransferContentPart): Self = this.set("createWithNameAndFileName", js.Any.fromFunction2(value))
+    def setCreateWithNameAndFileName(value: (String, String) => BackgroundTransferContentPart): Self = StObject.set(x, "createWithNameAndFileName", js.Any.fromFunction2(value))
   }
 }

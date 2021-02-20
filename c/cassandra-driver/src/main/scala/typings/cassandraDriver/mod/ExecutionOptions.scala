@@ -6,12 +6,13 @@ import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
 import typings.cassandraDriver.typesMod.types.Long
 import typings.cassandraDriver.typesMod.types.consistencies
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionOptions extends js.Object {
+trait ExecutionOptions extends StObject {
   
   def getCaptureStackTrace(): Boolean = js.native
   
@@ -89,84 +90,72 @@ object ExecutionOptions {
   }
   
   @scala.inline
-  implicit class ExecutionOptionsOps[Self <: ExecutionOptions] (val x: Self) extends AnyVal {
+  implicit class ExecutionOptionsMutableBuilder[Self <: ExecutionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCaptureStackTrace(value: () => Boolean): Self = StObject.set(x, "getCaptureStackTrace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetConsistency(value: () => consistencies): Self = StObject.set(x, "getConsistency", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCustomPayload(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "getCustomPayload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCaptureStackTrace(value: () => Boolean): Self = this.set("getCaptureStackTrace", js.Any.fromFunction0(value))
+    def setGetFetchSize(value: () => Double): Self = StObject.set(x, "getFetchSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConsistency(value: () => consistencies): Self = this.set("getConsistency", js.Any.fromFunction0(value))
+    def setGetFixedHost(value: () => Host): Self = StObject.set(x, "getFixedHost", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCustomPayload(value: () => StringDictionary[js.Any]): Self = this.set("getCustomPayload", js.Any.fromFunction0(value))
+    def setGetHints(value: () => js.Array[js.Array[String] | String]): Self = StObject.set(x, "getHints", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFetchSize(value: () => Double): Self = this.set("getFetchSize", js.Any.fromFunction0(value))
+    def setGetKeyspace(value: () => String): Self = StObject.set(x, "getKeyspace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFixedHost(value: () => Host): Self = this.set("getFixedHost", js.Any.fromFunction0(value))
+    def setGetLoadBalancingPolicy(value: () => LoadBalancingPolicy): Self = StObject.set(x, "getLoadBalancingPolicy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHints(value: () => js.Array[js.Array[String] | String]): Self = this.set("getHints", js.Any.fromFunction0(value))
+    def setGetPageState(value: () => Buffer): Self = StObject.set(x, "getPageState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetKeyspace(value: () => String): Self = this.set("getKeyspace", js.Any.fromFunction0(value))
+    def setGetRawQueryOptions(value: () => QueryOptions): Self = StObject.set(x, "getRawQueryOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLoadBalancingPolicy(value: () => LoadBalancingPolicy): Self = this.set("getLoadBalancingPolicy", js.Any.fromFunction0(value))
+    def setGetReadTimeout(value: () => Double): Self = StObject.set(x, "getReadTimeout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPageState(value: () => Buffer): Self = this.set("getPageState", js.Any.fromFunction0(value))
+    def setGetRetryPolicy(value: () => RetryPolicy): Self = StObject.set(x, "getRetryPolicy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRawQueryOptions(value: () => QueryOptions): Self = this.set("getRawQueryOptions", js.Any.fromFunction0(value))
+    def setGetRoutingKey(value: () => Buffer | js.Array[Buffer]): Self = StObject.set(x, "getRoutingKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetReadTimeout(value: () => Double): Self = this.set("getReadTimeout", js.Any.fromFunction0(value))
+    def setGetSerialConsistency(value: () => consistencies): Self = StObject.set(x, "getSerialConsistency", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRetryPolicy(value: () => RetryPolicy): Self = this.set("getRetryPolicy", js.Any.fromFunction0(value))
+    def setGetTimestamp(value: () => js.UndefOr[Double | Long | Null]): Self = StObject.set(x, "getTimestamp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRoutingKey(value: () => Buffer | js.Array[Buffer]): Self = this.set("getRoutingKey", js.Any.fromFunction0(value))
+    def setIsAutoPage(value: () => Boolean): Self = StObject.set(x, "isAutoPage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSerialConsistency(value: () => consistencies): Self = this.set("getSerialConsistency", js.Any.fromFunction0(value))
+    def setIsBatchCounter(value: () => Boolean): Self = StObject.set(x, "isBatchCounter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTimestamp(value: () => js.UndefOr[Double | Long | Null]): Self = this.set("getTimestamp", js.Any.fromFunction0(value))
+    def setIsBatchLogged(value: () => Boolean): Self = StObject.set(x, "isBatchLogged", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsAutoPage(value: () => Boolean): Self = this.set("isAutoPage", js.Any.fromFunction0(value))
+    def setIsIdempotent(value: () => Boolean): Self = StObject.set(x, "isIdempotent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBatchCounter(value: () => Boolean): Self = this.set("isBatchCounter", js.Any.fromFunction0(value))
+    def setIsPrepared(value: () => Boolean): Self = StObject.set(x, "isPrepared", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBatchLogged(value: () => Boolean): Self = this.set("isBatchLogged", js.Any.fromFunction0(value))
+    def setIsQueryTracing(value: () => Boolean): Self = StObject.set(x, "isQueryTracing", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsIdempotent(value: () => Boolean): Self = this.set("isIdempotent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsPrepared(value: () => Boolean): Self = this.set("isPrepared", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsQueryTracing(value: () => Boolean): Self = this.set("isQueryTracing", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetHints(value: js.Array[String] => Unit): Self = this.set("setHints", js.Any.fromFunction1(value))
+    def setSetHints(value: js.Array[String] => Unit): Self = StObject.set(x, "setHints", js.Any.fromFunction1(value))
   }
 }

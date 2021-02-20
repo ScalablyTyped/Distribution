@@ -10,12 +10,13 @@ import typings.stripe.stripeStrings.failed_other
 import typings.stripe.stripeStrings.pending
 import typings.stripe.stripeStrings.unverified
 import typings.stripe.stripeStrings.verified
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Details extends js.Object {
+trait Details extends StObject {
   
   /**
     * A user-displayable string describing the verification state for the person.
@@ -51,44 +52,32 @@ object Details {
   }
   
   @scala.inline
-  implicit class DetailsOps[Self <: Details] (val x: Self) extends AnyVal {
+  implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
     def setDetails_code(
       value: document_address_mismatch | document_dob_mismatch | document_duplicate_type | document_id_number_mismatch | document_name_mismatch | failed_keyed_identity | failed_other
-    ): Self = this.set("details_code", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "details_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetails_code: Self = this.set("details_code", js.undefined)
+    def setDetails_codeUndefined: Self = StObject.set(x, "details_code", js.undefined)
     
     @scala.inline
-    def setDocument(value: Back): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setDocument(value: Back): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def setStatus(value: unverified | pending | verified): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: unverified | pending | verified): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

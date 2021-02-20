@@ -3,14 +3,14 @@ package typings.stellarSdk
 import typings.stellarSdk.callBuilderMod.CallBuilder
 import typings.stellarSdk.serverApiMod.ServerApi.CollectionPage
 import typings.stellarSdk.serverApiMod.ServerApi.OperationRecord
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stellar-sdk/lib/operation_call_builder", JSImport.Namespace)
-@js.native
-object operationCallBuilderMod extends js.Object {
+object operationCallBuilderMod {
   
+  @JSImport("stellar-sdk/lib/operation_call_builder", "OperationCallBuilder")
   @js.native
   class OperationCallBuilder protected () extends CallBuilder[CollectionPage[OperationRecord]] {
     def this(serverUrl: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URI */ js.Any) = this()

@@ -1,15 +1,44 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.ChildrenArray
 import typings.antDesignReactNative.pickerTypesMod.PickerProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/picker/Picker", JSImport.Namespace)
-@js.native
-object pickerPickerMod extends js.Object {
+object pickerPickerMod {
+  
+  @JSImport("@ant-design/react-native/lib/picker/Picker", JSImport.Default)
+  @js.native
+  class default () extends Picker
+  object default {
+    
+    @JSImport("@ant-design/react-native/lib/picker/Picker", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@ant-design/react-native/lib/picker/Picker", "default.Item")
+    @js.native
+    def Item: js.Any = js.native
+    @scala.inline
+    def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    object defaultProps {
+      
+      @JSImport("@ant-design/react-native/lib/picker/Picker", "default.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("@ant-design/react-native/lib/picker/Picker", "default.defaultProps.children")
+      @js.native
+      def children: js.Array[scala.Nothing] = js.native
+      @scala.inline
+      def children_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+    }
+  }
   
   @js.native
   trait Picker
@@ -19,16 +48,5 @@ object pickerPickerMod extends js.Object {
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MPicker(nextProps: js.Any): Boolean = js.native
-  }
-  
-  @js.native
-  class default () extends Picker
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var Item: js.Any = js.native
-    
-    var defaultProps: ChildrenArray = js.native
   }
 }

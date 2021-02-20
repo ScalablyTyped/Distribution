@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * <Titanium.App.iOS.UserNotificationCenter.getDeliveredNotifications>.
   */
 @js.native
-trait UserNotificationCallbackResponse extends js.Object {
+trait UserNotificationCallbackResponse extends StObject {
   
   /**
     * An array of identifiers used to create notifications.
@@ -26,27 +27,15 @@ object UserNotificationCallbackResponse {
   }
   
   @scala.inline
-  implicit class UserNotificationCallbackResponseOps[Self <: UserNotificationCallbackResponse] (val x: Self) extends AnyVal {
+  implicit class UserNotificationCallbackResponseMutableBuilder[Self <: UserNotificationCallbackResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotifications(value: js.Array[UserNotificationDictionary]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNotificationsVarargs(value: UserNotificationDictionary*): Self = this.set("notifications", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotifications(value: js.Array[UserNotificationDictionary]): Self = this.set("notifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotifications: Self = this.set("notifications", js.undefined)
+    def setNotificationsVarargs(value: UserNotificationDictionary*): Self = StObject.set(x, "notifications", js.Array(value :_*))
   }
 }

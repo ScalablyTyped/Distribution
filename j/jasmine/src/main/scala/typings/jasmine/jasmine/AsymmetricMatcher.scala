@@ -1,11 +1,12 @@
 package typings.jasmine.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsymmetricMatcher[TValue] extends js.Object {
+trait AsymmetricMatcher[TValue] extends StObject {
   
   def asymmetricMatch(other: TValue, customTesters: js.Array[CustomEqualityTester]): Boolean = js.native
   
@@ -20,27 +21,15 @@ object AsymmetricMatcher {
   }
   
   @scala.inline
-  implicit class AsymmetricMatcherOps[Self <: AsymmetricMatcher[_], TValue] (val x: Self with AsymmetricMatcher[TValue]) extends AnyVal {
+  implicit class AsymmetricMatcherMutableBuilder[Self <: AsymmetricMatcher[_], TValue] (val x: Self with AsymmetricMatcher[TValue]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsymmetricMatch(value: (TValue, js.Array[CustomEqualityTester]) => Boolean): Self = StObject.set(x, "asymmetricMatch", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJasmineToString(value: () => String): Self = StObject.set(x, "jasmineToString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAsymmetricMatch(value: (TValue, js.Array[CustomEqualityTester]) => Boolean): Self = this.set("asymmetricMatch", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setJasmineToString(value: () => String): Self = this.set("jasmineToString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteJasmineToString: Self = this.set("jasmineToString", js.undefined)
+    def setJasmineToStringUndefined: Self = StObject.set(x, "jasmineToString", js.undefined)
   }
 }

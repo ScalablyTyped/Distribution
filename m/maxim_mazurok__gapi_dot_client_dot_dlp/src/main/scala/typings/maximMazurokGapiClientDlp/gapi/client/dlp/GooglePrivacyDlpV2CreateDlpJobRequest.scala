@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2CreateDlpJobRequest extends js.Object {
+trait GooglePrivacyDlpV2CreateDlpJobRequest extends StObject {
   
   /** Set to control what and how to inspect. */
   var inspectJob: js.UndefOr[GooglePrivacyDlpV2InspectJobConfig] = js.native
@@ -31,42 +32,30 @@ object GooglePrivacyDlpV2CreateDlpJobRequest {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2CreateDlpJobRequestOps[Self <: GooglePrivacyDlpV2CreateDlpJobRequest] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2CreateDlpJobRequestMutableBuilder[Self <: GooglePrivacyDlpV2CreateDlpJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInspectJob(value: GooglePrivacyDlpV2InspectJobConfig): Self = StObject.set(x, "inspectJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInspectJobUndefined: Self = StObject.set(x, "inspectJob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspectJob(value: GooglePrivacyDlpV2InspectJobConfig): Self = this.set("inspectJob", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def deleteInspectJob: Self = this.set("inspectJob", js.undefined)
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setRiskJob(value: GooglePrivacyDlpV2RiskAnalysisJobConfig): Self = StObject.set(x, "riskJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
-    
-    @scala.inline
-    def setRiskJob(value: GooglePrivacyDlpV2RiskAnalysisJobConfig): Self = this.set("riskJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiskJob: Self = this.set("riskJob", js.undefined)
+    def setRiskJobUndefined: Self = StObject.set(x, "riskJob", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Maxheight extends js.Object {
+trait Maxheight extends StObject {
   
   /**
     * Sets the maximum chart height in pixels. 600 | 400 | 300
@@ -42,48 +43,36 @@ object Maxheight {
   }
   
   @scala.inline
-  implicit class MaxheightOps[Self <: Maxheight] (val x: Self) extends AnyVal {
+  implicit class MaxheightMutableBuilder[Self <: Maxheight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setMax-height`(value: Double): Self = StObject.set(x, "max-height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setMax-heightUndefined`: Self = StObject.set(x, "max-height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setMax-width`(value: Double): Self = StObject.set(x, "max-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-height`(value: Double): Self = this.set("max-height", value.asInstanceOf[js.Any])
+    def `setMax-widthUndefined`: Self = StObject.set(x, "max-width", js.undefined)
     
     @scala.inline
-    def `deleteMax-height`: Self = this.set("max-height", js.undefined)
+    def `setMin-height`(value: Double): Self = StObject.set(x, "min-height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-width`(value: Double): Self = this.set("max-width", value.asInstanceOf[js.Any])
+    def `setMin-heightUndefined`: Self = StObject.set(x, "min-height", js.undefined)
     
     @scala.inline
-    def `deleteMax-width`: Self = this.set("max-width", js.undefined)
+    def `setMin-width`(value: Double): Self = StObject.set(x, "min-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMin-height`(value: Double): Self = this.set("min-height", value.asInstanceOf[js.Any])
+    def `setMin-widthUndefined`: Self = StObject.set(x, "min-width", js.undefined)
     
     @scala.inline
-    def `deleteMin-height`: Self = this.set("min-height", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMin-width`(value: Double): Self = this.set("min-width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteMin-width`: Self = this.set("min-width", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

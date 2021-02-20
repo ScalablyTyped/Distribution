@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,33 +79,21 @@ object XServiceTypeDescription2 {
   }
   
   @scala.inline
-  implicit class XServiceTypeDescription2Ops[Self <: XServiceTypeDescription2] (val x: Self) extends AnyVal {
+  implicit class XServiceTypeDescription2MutableBuilder[Self <: XServiceTypeDescription2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstructors(value: SafeArray[XServiceConstructorDescription]): Self = StObject.set(x, "Constructors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetConstructors(value: () => SafeArray[XServiceConstructorDescription]): Self = StObject.set(x, "getConstructors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetInterface(value: () => XTypeDescription): Self = StObject.set(x, "getInterface", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConstructors(value: SafeArray[XServiceConstructorDescription]): Self = this.set("Constructors", value.asInstanceOf[js.Any])
+    def setInterface(value: XTypeDescription): Self = StObject.set(x, "Interface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterface(value: XTypeDescription): Self = this.set("Interface", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetConstructors(value: () => SafeArray[XServiceConstructorDescription]): Self = this.set("getConstructors", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetInterface(value: () => XTypeDescription): Self = this.set("getInterface", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsSingleInterfaceBased(value: () => Boolean): Self = this.set("isSingleInterfaceBased", js.Any.fromFunction0(value))
+    def setIsSingleInterfaceBased(value: () => Boolean): Self = StObject.set(x, "isSingleInterfaceBased", js.Any.fromFunction0(value))
   }
 }

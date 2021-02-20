@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait editors extends js.Object {
+trait editors extends StObject {
   
   @JSName("$popup")
   var $popup: js.Any = js.native
@@ -59,57 +60,45 @@ object editors {
   }
   
   @scala.inline
-  implicit class editorsOps[Self <: editors] (val x: Self) extends AnyVal {
+  implicit class editorsMutableBuilder[Self <: editors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$popup(value: js.Any): Self = StObject.set(x, "$popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckbox(value: String): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$popup(value: js.Any): Self = this.set("$popup", value.asInstanceOf[js.Any])
+    def setCombo(value: String): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckbox(value: String): Self = this.set("checkbox", value.asInstanceOf[js.Any])
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def `setInline-checkbox`(value: String): Self = StObject.set(x, "inline-checkbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCombo(value: String): Self = this.set("combo", value.asInstanceOf[js.Any])
+    def `setInline-text`(value: String): Self = StObject.set(x, "inline-text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setMultiselect(value: String): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInline-checkbox`(value: String): Self = this.set("inline-checkbox", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInline-text`(value: String): Self = this.set("inline-text", value.asInstanceOf[js.Any])
+    def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiselect(value: String): Self = this.set("multiselect", value.asInstanceOf[js.Any])
+    def setRichselect(value: String): Self = StObject.set(x, "richselect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopup(value: String): Self = this.set("popup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRichselect(value: String): Self = this.set("richselect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelect(value: String): Self = this.set("select", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

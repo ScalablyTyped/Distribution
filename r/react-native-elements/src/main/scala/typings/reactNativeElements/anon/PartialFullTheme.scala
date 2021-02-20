@@ -1,12 +1,13 @@
 package typings.reactNativeElements.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.FullTheme> */
 @js.native
-trait PartialFullTheme extends js.Object {
+trait PartialFullTheme extends StObject {
   
   var Accessory: js.UndefOr[PartialIconPropsPartialIm] = js.native
   
@@ -91,240 +92,228 @@ object PartialFullTheme {
   }
   
   @scala.inline
-  implicit class PartialFullThemeOps[Self <: PartialFullTheme] (val x: Self) extends AnyVal {
+  implicit class PartialFullThemeMutableBuilder[Self <: PartialFullTheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessory(value: PartialIconPropsPartialIm): Self = StObject.set(x, "Accessory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessoryUndefined: Self = StObject.set(x, "Accessory", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAirbnbRating(value: PartialAirbnbRatingProps): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessory(value: PartialIconPropsPartialIm): Self = this.set("Accessory", value.asInstanceOf[js.Any])
+    def setAirbnbRatingUndefined: Self = StObject.set(x, "AirbnbRating", js.undefined)
     
     @scala.inline
-    def deleteAccessory: Self = this.set("Accessory", js.undefined)
+    def setAvatar(value: PartialAvatarProps): Self = StObject.set(x, "Avatar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAirbnbRating(value: PartialAirbnbRatingProps): Self = this.set("AirbnbRating", value.asInstanceOf[js.Any])
+    def setAvatarUndefined: Self = StObject.set(x, "Avatar", js.undefined)
     
     @scala.inline
-    def deleteAirbnbRating: Self = this.set("AirbnbRating", js.undefined)
+    def setBadge(value: PartialBadgeProps): Self = StObject.set(x, "Badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatar(value: PartialAvatarProps): Self = this.set("Avatar", value.asInstanceOf[js.Any])
+    def setBadgeUndefined: Self = StObject.set(x, "Badge", js.undefined)
     
     @scala.inline
-    def deleteAvatar: Self = this.set("Avatar", js.undefined)
+    def setBottomSheet(value: PartialBottomSheetProps): Self = StObject.set(x, "BottomSheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadge(value: PartialBadgeProps): Self = this.set("Badge", value.asInstanceOf[js.Any])
+    def setBottomSheetUndefined: Self = StObject.set(x, "BottomSheet", js.undefined)
     
     @scala.inline
-    def deleteBadge: Self = this.set("Badge", js.undefined)
+    def setButton(value: PartialButtonProps): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomSheet(value: PartialBottomSheetProps): Self = this.set("BottomSheet", value.asInstanceOf[js.Any])
+    def setButtonGroup(value: PartialButtonGroupProps): Self = StObject.set(x, "ButtonGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBottomSheet: Self = this.set("BottomSheet", js.undefined)
+    def setButtonGroupUndefined: Self = StObject.set(x, "ButtonGroup", js.undefined)
     
     @scala.inline
-    def setButton(value: PartialButtonProps): Self = this.set("Button", value.asInstanceOf[js.Any])
+    def setButtonUndefined: Self = StObject.set(x, "Button", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("Button", js.undefined)
+    def setCard(value: PartialCardProps): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonGroup(value: PartialButtonGroupProps): Self = this.set("ButtonGroup", value.asInstanceOf[js.Any])
+    def setCardDivider(value: PartialDividerProps): Self = StObject.set(x, "CardDivider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButtonGroup: Self = this.set("ButtonGroup", js.undefined)
+    def setCardDividerUndefined: Self = StObject.set(x, "CardDivider", js.undefined)
     
     @scala.inline
-    def setCard(value: PartialCardProps): Self = this.set("Card", value.asInstanceOf[js.Any])
+    def setCardFeaturedSubtitle(value: PartialTextProps): Self = StObject.set(x, "CardFeaturedSubtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCard: Self = this.set("Card", js.undefined)
+    def setCardFeaturedSubtitleUndefined: Self = StObject.set(x, "CardFeaturedSubtitle", js.undefined)
     
     @scala.inline
-    def setCardDivider(value: PartialDividerProps): Self = this.set("CardDivider", value.asInstanceOf[js.Any])
+    def setCardFeaturedTitle(value: PartialTextProps): Self = StObject.set(x, "CardFeaturedTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCardDivider: Self = this.set("CardDivider", js.undefined)
+    def setCardFeaturedTitleUndefined: Self = StObject.set(x, "CardFeaturedTitle", js.undefined)
     
     @scala.inline
-    def setCardFeaturedSubtitle(value: PartialTextProps): Self = this.set("CardFeaturedSubtitle", value.asInstanceOf[js.Any])
+    def setCardImage(value: PartialImageProps): Self = StObject.set(x, "CardImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCardFeaturedSubtitle: Self = this.set("CardFeaturedSubtitle", js.undefined)
+    def setCardImageUndefined: Self = StObject.set(x, "CardImage", js.undefined)
     
     @scala.inline
-    def setCardFeaturedTitle(value: PartialTextProps): Self = this.set("CardFeaturedTitle", value.asInstanceOf[js.Any])
+    def setCardTitle(value: PartialTextProps): Self = StObject.set(x, "CardTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCardFeaturedTitle: Self = this.set("CardFeaturedTitle", js.undefined)
+    def setCardTitleUndefined: Self = StObject.set(x, "CardTitle", js.undefined)
     
     @scala.inline
-    def setCardImage(value: PartialImageProps): Self = this.set("CardImage", value.asInstanceOf[js.Any])
+    def setCardUndefined: Self = StObject.set(x, "Card", js.undefined)
     
     @scala.inline
-    def deleteCardImage: Self = this.set("CardImage", js.undefined)
+    def setCheckBox(value: PartialCheckBoxProps): Self = StObject.set(x, "CheckBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardTitle(value: PartialTextProps): Self = this.set("CardTitle", value.asInstanceOf[js.Any])
+    def setCheckBoxUndefined: Self = StObject.set(x, "CheckBox", js.undefined)
     
     @scala.inline
-    def deleteCardTitle: Self = this.set("CardTitle", js.undefined)
+    def setColors(value: RecursivePartialColorsDisabled): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckBox(value: PartialCheckBoxProps): Self = this.set("CheckBox", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteCheckBox: Self = this.set("CheckBox", js.undefined)
+    def setDivider(value: PartialDividerProps): Self = StObject.set(x, "Divider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivider(value: PartialDividerProps): Self = this.set("Divider", value.asInstanceOf[js.Any])
+    def setDividerUndefined: Self = StObject.set(x, "Divider", js.undefined)
     
     @scala.inline
-    def deleteDivider: Self = this.set("Divider", js.undefined)
+    def setHeader(value: PartialHeaderProps): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: PartialHeaderProps): Self = this.set("Header", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("Header", js.undefined)
+    def setIcon(value: PartialIconProps): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: PartialIconProps): Self = this.set("Icon", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("Icon", js.undefined)
+    def setImage(value: PartialImageProps): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: PartialImageProps): Self = this.set("Image", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("Image", js.undefined)
+    def setInput(value: PartialInputProps): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: PartialInputProps): Self = this.set("Input", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("Input", js.undefined)
+    def setListItem(value: PartialListItemPropsAccessibilityActions): Self = StObject.set(x, "ListItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListItem(value: PartialListItemPropsAccessibilityActions): Self = this.set("ListItem", value.asInstanceOf[js.Any])
+    def setListItemButtonGroup(value: PartialButtonGroupProps): Self = StObject.set(x, "ListItemButtonGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListItem: Self = this.set("ListItem", js.undefined)
+    def setListItemButtonGroupUndefined: Self = StObject.set(x, "ListItemButtonGroup", js.undefined)
     
     @scala.inline
-    def setListItemButtonGroup(value: PartialButtonGroupProps): Self = this.set("ListItemButtonGroup", value.asInstanceOf[js.Any])
+    def setListItemCheckBox(value: PartialCheckBoxProps): Self = StObject.set(x, "ListItemCheckBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListItemButtonGroup: Self = this.set("ListItemButtonGroup", js.undefined)
+    def setListItemCheckBoxUndefined: Self = StObject.set(x, "ListItemCheckBox", js.undefined)
     
     @scala.inline
-    def setListItemCheckBox(value: PartialCheckBoxProps): Self = this.set("ListItemCheckBox", value.asInstanceOf[js.Any])
+    def setListItemChevron(value: PartialIconProps): Self = StObject.set(x, "ListItemChevron", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListItemCheckBox: Self = this.set("ListItemCheckBox", js.undefined)
+    def setListItemChevronUndefined: Self = StObject.set(x, "ListItemChevron", js.undefined)
     
     @scala.inline
-    def setListItemChevron(value: PartialIconProps): Self = this.set("ListItemChevron", value.asInstanceOf[js.Any])
+    def setListItemContent(value: PartialViewProperties): Self = StObject.set(x, "ListItemContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListItemChevron: Self = this.set("ListItemChevron", js.undefined)
+    def setListItemContentUndefined: Self = StObject.set(x, "ListItemContent", js.undefined)
     
     @scala.inline
-    def setListItemContent(value: PartialViewProperties): Self = this.set("ListItemContent", value.asInstanceOf[js.Any])
+    def setListItemInput(value: PartialInputProps): Self = StObject.set(x, "ListItemInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListItemContent: Self = this.set("ListItemContent", js.undefined)
+    def setListItemInputUndefined: Self = StObject.set(x, "ListItemInput", js.undefined)
     
     @scala.inline
-    def setListItemInput(value: PartialInputProps): Self = this.set("ListItemInput", value.asInstanceOf[js.Any])
+    def setListItemSubtitle(value: PartialTextProps): Self = StObject.set(x, "ListItemSubtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListItemInput: Self = this.set("ListItemInput", js.undefined)
+    def setListItemSubtitleUndefined: Self = StObject.set(x, "ListItemSubtitle", js.undefined)
     
     @scala.inline
-    def setListItemSubtitle(value: PartialTextProps): Self = this.set("ListItemSubtitle", value.asInstanceOf[js.Any])
+    def setListItemTitle(value: PartialTextProps): Self = StObject.set(x, "ListItemTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListItemSubtitle: Self = this.set("ListItemSubtitle", js.undefined)
+    def setListItemTitleUndefined: Self = StObject.set(x, "ListItemTitle", js.undefined)
     
     @scala.inline
-    def setListItemTitle(value: PartialTextProps): Self = this.set("ListItemTitle", value.asInstanceOf[js.Any])
+    def setListItemUndefined: Self = StObject.set(x, "ListItem", js.undefined)
     
     @scala.inline
-    def deleteListItemTitle: Self = this.set("ListItemTitle", js.undefined)
+    def setOverlay(value: PartialOverlayProps): Self = StObject.set(x, "Overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay(value: PartialOverlayProps): Self = this.set("Overlay", value.asInstanceOf[js.Any])
+    def setOverlayUndefined: Self = StObject.set(x, "Overlay", js.undefined)
     
     @scala.inline
-    def deleteOverlay: Self = this.set("Overlay", js.undefined)
+    def setPricingCard(value: PartialPricingCardProps): Self = StObject.set(x, "PricingCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingCard(value: PartialPricingCardProps): Self = this.set("PricingCard", value.asInstanceOf[js.Any])
+    def setPricingCardUndefined: Self = StObject.set(x, "PricingCard", js.undefined)
     
     @scala.inline
-    def deletePricingCard: Self = this.set("PricingCard", js.undefined)
+    def setRating(value: PartialRatingProps): Self = StObject.set(x, "Rating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRating(value: PartialRatingProps): Self = this.set("Rating", value.asInstanceOf[js.Any])
+    def setRatingUndefined: Self = StObject.set(x, "Rating", js.undefined)
     
     @scala.inline
-    def deleteRating: Self = this.set("Rating", js.undefined)
+    def setSearchBar(value: PartialSearchBarProps): Self = StObject.set(x, "SearchBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchBar(value: PartialSearchBarProps): Self = this.set("SearchBar", value.asInstanceOf[js.Any])
+    def setSearchBarUndefined: Self = StObject.set(x, "SearchBar", js.undefined)
     
     @scala.inline
-    def deleteSearchBar: Self = this.set("SearchBar", js.undefined)
+    def setSlider(value: PartialSliderProps): Self = StObject.set(x, "Slider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlider(value: PartialSliderProps): Self = this.set("Slider", value.asInstanceOf[js.Any])
+    def setSliderUndefined: Self = StObject.set(x, "Slider", js.undefined)
     
     @scala.inline
-    def deleteSlider: Self = this.set("Slider", js.undefined)
+    def setSocialIcon(value: PartialSocialIconProps): Self = StObject.set(x, "SocialIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocialIcon(value: PartialSocialIconProps): Self = this.set("SocialIcon", value.asInstanceOf[js.Any])
+    def setSocialIconUndefined: Self = StObject.set(x, "SocialIcon", js.undefined)
     
     @scala.inline
-    def deleteSocialIcon: Self = this.set("SocialIcon", js.undefined)
+    def setText(value: PartialTextProps): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: PartialTextProps): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("Text", js.undefined)
+    def setTile(value: PartialTileProps): Self = StObject.set(x, "Tile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTile(value: PartialTileProps): Self = this.set("Tile", value.asInstanceOf[js.Any])
+    def setTileUndefined: Self = StObject.set(x, "Tile", js.undefined)
     
     @scala.inline
-    def deleteTile: Self = this.set("Tile", js.undefined)
+    def setTooltip(value: PartialTooltipProps): Self = StObject.set(x, "Tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: PartialTooltipProps): Self = this.set("Tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("Tooltip", js.undefined)
-    
-    @scala.inline
-    def setColors(value: RecursivePartialColorsDisabled): Self = this.set("colors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "Tooltip", js.undefined)
   }
 }

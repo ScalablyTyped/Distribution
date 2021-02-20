@@ -1,12 +1,11 @@
 package typings.qlikEngineapi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   //#region Prototype Interfaces for Class definitions
   //#endregion
@@ -25,10 +24,8 @@ object global extends js.Object {
   //#region VariableListObject
   //#endregion
   //#region FieldListObject
-  @js.native
-  object EngineAPI extends js.Object
+  object EngineAPI
   
   //#endregion
-  @js.native
-  object enigmaJS extends js.Object
+  object enigmaJS
 }

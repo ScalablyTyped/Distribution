@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QualificationRequirement extends js.Object {
+trait QualificationRequirement extends StObject {
   
   /**
     *  Setting this attribute prevents Workers whose Qualifications do not meet this QualificationRequirement from taking the specified action. Valid arguments include "Accept" (Worker cannot accept the HIT, but can preview the HIT and see it in their search results), "PreviewAndAccept" (Worker cannot accept or preview the HIT, but can see the HIT in their search results), and "DiscoverPreviewAndAccept" (Worker cannot accept, preview, or see the HIT in their search results). It's possible for you to create a HIT with multiple QualificationRequirements (which can have different values for the ActionGuarded attribute). In this case, the Worker is only permitted to perform an action when they have met all QualificationRequirements guarding the action. The actions in the order of least restrictive to most restrictive are Discover, Preview and Accept. For example, if a Worker meets all QualificationRequirements that are set to DiscoverPreviewAndAccept, but do not meet all requirements that are set with PreviewAndAccept, then the Worker will be able to Discover, i.e. see the HIT in their search result, but will not be able to Preview or Accept the HIT. ActionsGuarded should not be used in combination with the RequiredToPreview field. 
@@ -46,54 +47,42 @@ object QualificationRequirement {
   }
   
   @scala.inline
-  implicit class QualificationRequirementOps[Self <: QualificationRequirement] (val x: Self) extends AnyVal {
+  implicit class QualificationRequirementMutableBuilder[Self <: QualificationRequirement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionsGuarded(value: HITAccessActions): Self = StObject.set(x, "ActionsGuarded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsGuardedUndefined: Self = StObject.set(x, "ActionsGuarded", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComparator(value: Comparator): Self = StObject.set(x, "Comparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparator(value: Comparator): Self = this.set("Comparator", value.asInstanceOf[js.Any])
+    def setIntegerValues(value: IntegerList): Self = StObject.set(x, "IntegerValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualificationTypeId(value: String): Self = this.set("QualificationTypeId", value.asInstanceOf[js.Any])
+    def setIntegerValuesUndefined: Self = StObject.set(x, "IntegerValues", js.undefined)
     
     @scala.inline
-    def setActionsGuarded(value: HITAccessActions): Self = this.set("ActionsGuarded", value.asInstanceOf[js.Any])
+    def setIntegerValuesVarargs(value: Integer*): Self = StObject.set(x, "IntegerValues", js.Array(value :_*))
     
     @scala.inline
-    def deleteActionsGuarded: Self = this.set("ActionsGuarded", js.undefined)
+    def setLocaleValues(value: LocaleList): Self = StObject.set(x, "LocaleValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegerValuesVarargs(value: Integer*): Self = this.set("IntegerValues", js.Array(value :_*))
+    def setLocaleValuesUndefined: Self = StObject.set(x, "LocaleValues", js.undefined)
     
     @scala.inline
-    def setIntegerValues(value: IntegerList): Self = this.set("IntegerValues", value.asInstanceOf[js.Any])
+    def setLocaleValuesVarargs(value: Locale*): Self = StObject.set(x, "LocaleValues", js.Array(value :_*))
     
     @scala.inline
-    def deleteIntegerValues: Self = this.set("IntegerValues", js.undefined)
+    def setQualificationTypeId(value: String): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleValuesVarargs(value: Locale*): Self = this.set("LocaleValues", js.Array(value :_*))
+    def setRequiredToPreview(value: Boolean): Self = StObject.set(x, "RequiredToPreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleValues(value: LocaleList): Self = this.set("LocaleValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocaleValues: Self = this.set("LocaleValues", js.undefined)
-    
-    @scala.inline
-    def setRequiredToPreview(value: Boolean): Self = this.set("RequiredToPreview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredToPreview: Self = this.set("RequiredToPreview", js.undefined)
+    def setRequiredToPreviewUndefined: Self = StObject.set(x, "RequiredToPreview", js.undefined)
   }
 }

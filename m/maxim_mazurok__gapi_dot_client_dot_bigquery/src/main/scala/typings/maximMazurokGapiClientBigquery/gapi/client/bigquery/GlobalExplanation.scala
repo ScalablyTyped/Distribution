@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalExplanation extends js.Object {
+trait GlobalExplanation extends StObject {
   
   /** Class label for this set of global explanations. Will be empty/null for binary logistic and linear regression models. Sorted alphabetically in descending order. */
   var classLabel: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object GlobalExplanation {
   }
   
   @scala.inline
-  implicit class GlobalExplanationOps[Self <: GlobalExplanation] (val x: Self) extends AnyVal {
+  implicit class GlobalExplanationMutableBuilder[Self <: GlobalExplanation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassLabel(value: String): Self = StObject.set(x, "classLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassLabelUndefined: Self = StObject.set(x, "classLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExplanations(value: js.Array[Explanation]): Self = StObject.set(x, "explanations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassLabel(value: String): Self = this.set("classLabel", value.asInstanceOf[js.Any])
+    def setExplanationsUndefined: Self = StObject.set(x, "explanations", js.undefined)
     
     @scala.inline
-    def deleteClassLabel: Self = this.set("classLabel", js.undefined)
-    
-    @scala.inline
-    def setExplanationsVarargs(value: Explanation*): Self = this.set("explanations", js.Array(value :_*))
-    
-    @scala.inline
-    def setExplanations(value: js.Array[Explanation]): Self = this.set("explanations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExplanations: Self = this.set("explanations", js.undefined)
+    def setExplanationsVarargs(value: Explanation*): Self = StObject.set(x, "explanations", js.Array(value :_*))
   }
 }

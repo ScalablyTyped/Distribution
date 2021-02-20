@@ -1,12 +1,13 @@
 package typings.nextServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("next-server/dist/server/normalize-page-path", JSImport.Namespace)
-@js.native
-object normalizePagePathMod extends js.Object {
+object normalizePagePathMod {
   
+  @JSImport("next-server/dist/server/normalize-page-path", "normalizePagePath")
+  @js.native
   def normalizePagePath(page: String): String = js.native
 }

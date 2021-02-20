@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDomainNameRequest extends js.Object {
+trait CreateDomainNameRequest extends StObject {
   
   /**
     * The domain name.
@@ -36,42 +37,30 @@ object CreateDomainNameRequest {
   }
   
   @scala.inline
-  implicit class CreateDomainNameRequestOps[Self <: CreateDomainNameRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDomainNameRequestMutableBuilder[Self <: CreateDomainNameRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainName(value: StringWithLengthBetween1And512): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainNameConfigurations(value: DomainNameConfigurations): Self = StObject.set(x, "DomainNameConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainNameConfigurationsUndefined: Self = StObject.set(x, "DomainNameConfigurations", js.undefined)
     
     @scala.inline
-    def setDomainName(value: StringWithLengthBetween1And512): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setDomainNameConfigurationsVarargs(value: DomainNameConfiguration*): Self = StObject.set(x, "DomainNameConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setDomainNameConfigurationsVarargs(value: DomainNameConfiguration*): Self = this.set("DomainNameConfigurations", js.Array(value :_*))
+    def setMutualTlsAuthentication(value: MutualTlsAuthenticationInput): Self = StObject.set(x, "MutualTlsAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainNameConfigurations(value: DomainNameConfigurations): Self = this.set("DomainNameConfigurations", value.asInstanceOf[js.Any])
+    def setMutualTlsAuthenticationUndefined: Self = StObject.set(x, "MutualTlsAuthentication", js.undefined)
     
     @scala.inline
-    def deleteDomainNameConfigurations: Self = this.set("DomainNameConfigurations", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutualTlsAuthentication(value: MutualTlsAuthenticationInput): Self = this.set("MutualTlsAuthentication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMutualTlsAuthentication: Self = this.set("MutualTlsAuthentication", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

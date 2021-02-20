@@ -1,16 +1,16 @@
 package typings.blueprintjsCore
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/core/lib/esm/common/interactionMode", JSImport.Namespace)
-@js.native
-object interactionModeMod extends js.Object {
+object interactionModeMod {
   
+  @JSImport("@blueprintjs/core/lib/esm/common/interactionMode", "InteractionModeEngine")
   @js.native
-  class InteractionModeEngine protected () extends js.Object {
+  class InteractionModeEngine protected () extends StObject {
     def this(container: Element, className: String) = this()
     
     var className: js.Any = js.native

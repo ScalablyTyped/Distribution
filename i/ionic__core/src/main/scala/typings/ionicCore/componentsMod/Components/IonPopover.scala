@@ -7,12 +7,13 @@ import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonPopover extends js.Object {
+trait IonPopover extends StObject {
   
   /**
     * If `true`, the popover will animate.

@@ -1,5 +1,6 @@
 package typings.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object LocalSidValueBlockParams {
   }
   
   @scala.inline
-  implicit class LocalSidValueBlockParamsOps[Self <: LocalSidValueBlockParams] (val x: Self) extends AnyVal {
+  implicit class LocalSidValueBlockParamsMutableBuilder[Self <: LocalSidValueBlockParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsFirstSid(value: scala.Boolean): Self = StObject.set(x, "isFirstSid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFirstSidUndefined: Self = StObject.set(x, "isFirstSid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueDec(value: Double): Self = StObject.set(x, "valueDec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFirstSid(value: scala.Boolean): Self = this.set("isFirstSid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsFirstSid: Self = this.set("isFirstSid", js.undefined)
-    
-    @scala.inline
-    def setValueDec(value: Double): Self = this.set("valueDec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueDec: Self = this.set("valueDec", js.undefined)
+    def setValueDecUndefined: Self = StObject.set(x, "valueDec", js.undefined)
   }
 }

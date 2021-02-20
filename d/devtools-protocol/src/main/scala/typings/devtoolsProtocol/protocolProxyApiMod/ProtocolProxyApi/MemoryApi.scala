@@ -7,12 +7,13 @@ import typings.devtoolsProtocol.mod.Protocol.Memory.GetSamplingProfileResponse
 import typings.devtoolsProtocol.mod.Protocol.Memory.SetPressureNotificationsSuppressedRequest
 import typings.devtoolsProtocol.mod.Protocol.Memory.SimulatePressureNotificationRequest
 import typings.devtoolsProtocol.mod.Protocol.Memory.StartSamplingRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemoryApi extends js.Object {
+trait MemoryApi extends StObject {
   
   /**
     * Simulate OomIntervention by purging V8 memory.
@@ -81,48 +82,36 @@ object MemoryApi {
   }
   
   @scala.inline
-  implicit class MemoryApiOps[Self <: MemoryApi] (val x: Self) extends AnyVal {
+  implicit class MemoryApiMutableBuilder[Self <: MemoryApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForciblyPurgeJavaScriptMemory(value: () => js.Promise[Unit]): Self = StObject.set(x, "forciblyPurgeJavaScriptMemory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllTimeSamplingProfile(value: () => js.Promise[GetAllTimeSamplingProfileResponse]): Self = StObject.set(x, "getAllTimeSamplingProfile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBrowserSamplingProfile(value: () => js.Promise[GetBrowserSamplingProfileResponse]): Self = StObject.set(x, "getBrowserSamplingProfile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForciblyPurgeJavaScriptMemory(value: () => js.Promise[Unit]): Self = this.set("forciblyPurgeJavaScriptMemory", js.Any.fromFunction0(value))
+    def setGetDOMCounters(value: () => js.Promise[GetDOMCountersResponse]): Self = StObject.set(x, "getDOMCounters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllTimeSamplingProfile(value: () => js.Promise[GetAllTimeSamplingProfileResponse]): Self = this.set("getAllTimeSamplingProfile", js.Any.fromFunction0(value))
+    def setGetSamplingProfile(value: () => js.Promise[GetSamplingProfileResponse]): Self = StObject.set(x, "getSamplingProfile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBrowserSamplingProfile(value: () => js.Promise[GetBrowserSamplingProfileResponse]): Self = this.set("getBrowserSamplingProfile", js.Any.fromFunction0(value))
+    def setPrepareForLeakDetection(value: () => js.Promise[Unit]): Self = StObject.set(x, "prepareForLeakDetection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDOMCounters(value: () => js.Promise[GetDOMCountersResponse]): Self = this.set("getDOMCounters", js.Any.fromFunction0(value))
+    def setSetPressureNotificationsSuppressed(value: SetPressureNotificationsSuppressedRequest => js.Promise[Unit]): Self = StObject.set(x, "setPressureNotificationsSuppressed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSamplingProfile(value: () => js.Promise[GetSamplingProfileResponse]): Self = this.set("getSamplingProfile", js.Any.fromFunction0(value))
+    def setSimulatePressureNotification(value: SimulatePressureNotificationRequest => js.Promise[Unit]): Self = StObject.set(x, "simulatePressureNotification", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrepareForLeakDetection(value: () => js.Promise[Unit]): Self = this.set("prepareForLeakDetection", js.Any.fromFunction0(value))
+    def setStartSampling(value: StartSamplingRequest => js.Promise[Unit]): Self = StObject.set(x, "startSampling", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPressureNotificationsSuppressed(value: SetPressureNotificationsSuppressedRequest => js.Promise[Unit]): Self = this.set("setPressureNotificationsSuppressed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSimulatePressureNotification(value: SimulatePressureNotificationRequest => js.Promise[Unit]): Self = this.set("simulatePressureNotification", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartSampling(value: StartSamplingRequest => js.Promise[Unit]): Self = this.set("startSampling", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStopSampling(value: () => js.Promise[Unit]): Self = this.set("stopSampling", js.Any.fromFunction0(value))
+    def setStopSampling(value: () => js.Promise[Unit]): Self = StObject.set(x, "stopSampling", js.Any.fromFunction0(value))
   }
 }

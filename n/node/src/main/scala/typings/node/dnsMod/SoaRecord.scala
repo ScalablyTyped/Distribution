@@ -1,11 +1,12 @@
 package typings.node.dnsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoaRecord extends js.Object {
+trait SoaRecord extends StObject {
   
   var expire: Double = js.native
   
@@ -38,39 +39,27 @@ object SoaRecord {
   }
   
   @scala.inline
-  implicit class SoaRecordOps[Self <: SoaRecord] (val x: Self) extends AnyVal {
+  implicit class SoaRecordMutableBuilder[Self <: SoaRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostmaster(value: String): Self = StObject.set(x, "hostmaster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinttl(value: Double): Self = StObject.set(x, "minttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpire(value: Double): Self = this.set("expire", value.asInstanceOf[js.Any])
+    def setNsname(value: String): Self = StObject.set(x, "nsname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostmaster(value: String): Self = this.set("hostmaster", value.asInstanceOf[js.Any])
+    def setRefresh(value: Double): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinttl(value: Double): Self = this.set("minttl", value.asInstanceOf[js.Any])
+    def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNsname(value: String): Self = this.set("nsname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefresh(value: Double): Self = this.set("refresh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetry(value: Double): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSerial(value: Double): Self = this.set("serial", value.asInstanceOf[js.Any])
+    def setSerial(value: Double): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
   }
 }

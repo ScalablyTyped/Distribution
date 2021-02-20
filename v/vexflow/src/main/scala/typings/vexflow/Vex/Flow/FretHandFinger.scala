@@ -2,6 +2,7 @@ package typings.vexflow.Vex.Flow
 
 import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,30 +50,18 @@ object FretHandFinger {
   }
   
   @scala.inline
-  implicit class FretHandFingerOps[Self <: FretHandFinger] (val x: Self) extends AnyVal {
+  implicit class FretHandFingerMutableBuilder[Self <: FretHandFinger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinger(value: Double | String): Self = StObject.set(x, "finger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetFretHandFinger(value: Double => FretHandFinger): Self = StObject.set(x, "setFretHandFinger", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetOffsetX(value: Double => FretHandFinger): Self = StObject.set(x, "setOffsetX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFinger(value: Double | String): Self = this.set("finger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetFretHandFinger(value: Double => FretHandFinger): Self = this.set("setFretHandFinger", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOffsetX(value: Double => FretHandFinger): Self = this.set("setOffsetX", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOffsetY(value: Double => FretHandFinger): Self = this.set("setOffsetY", js.Any.fromFunction1(value))
+    def setSetOffsetY(value: Double => FretHandFinger): Self = StObject.set(x, "setOffsetY", js.Any.fromFunction1(value))
   }
 }

@@ -4,16 +4,16 @@ import typings.agGrid.columnGroupChildMod.ColumnGroupChild
 import typings.agGrid.columnMod.Column
 import typings.agGrid.groupInstanceIdCreatorMod.GroupInstanceIdCreator
 import typings.agGrid.originalColumnGroupChildMod.OriginalColumnGroupChild
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/columnController/displayedGroupCreator", JSImport.Namespace)
-@js.native
-object displayedGroupCreatorMod extends js.Object {
+object displayedGroupCreatorMod {
   
+  @JSImport("ag-grid/dist/lib/columnController/displayedGroupCreator", "DisplayedGroupCreator")
   @js.native
-  class DisplayedGroupCreator () extends js.Object {
+  class DisplayedGroupCreator () extends StObject {
     
     var columnUtils: js.Any = js.native
     

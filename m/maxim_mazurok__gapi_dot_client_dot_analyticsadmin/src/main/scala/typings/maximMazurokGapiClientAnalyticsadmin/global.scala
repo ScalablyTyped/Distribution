@@ -5,33 +5,39 @@ import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.A
 import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.PropertiesResource
 import typings.maximMazurokGapiClientAnalyticsadmin.maximMazurokGapiClientAnalyticsadminStrings.analyticsadmin
 import typings.maximMazurokGapiClientAnalyticsadmin.maximMazurokGapiClientAnalyticsadminStrings.v1alpha
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Google Analytics Admin API v1alpha */
-      def load(name: analyticsadmin, version: v1alpha): js.Thenable[Unit] = js.native
-      def load(name: analyticsadmin, version: v1alpha, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object analyticsadmin extends js.Object {
+      object analyticsadmin {
         
+        @JSGlobal("gapi.client.analyticsadmin.accountSummaries")
+        @js.native
         val accountSummaries: AccountSummariesResource = js.native
         
+        @JSGlobal("gapi.client.analyticsadmin.accounts")
+        @js.native
         val accounts: AccountsResource = js.native
         
+        @JSGlobal("gapi.client.analyticsadmin.properties")
+        @js.native
         val properties: PropertiesResource = js.native
       }
+      
+      /** Load Google Analytics Admin API v1alpha */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: analyticsadmin, version: v1alpha): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: analyticsadmin, version: v1alpha, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

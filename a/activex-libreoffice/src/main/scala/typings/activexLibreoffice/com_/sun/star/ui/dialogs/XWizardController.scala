@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.ui.dialogs
 
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.3
   */
 @js.native
-trait XWizardController extends js.Object {
+trait XWizardController extends StObject {
   
   def canAdvance(): Boolean = js.native
   
@@ -61,36 +62,24 @@ object XWizardController {
   }
   
   @scala.inline
-  implicit class XWizardControllerOps[Self <: XWizardController] (val x: Self) extends AnyVal {
+  implicit class XWizardControllerMutableBuilder[Self <: XWizardController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanAdvance(value: () => Boolean): Self = StObject.set(x, "canAdvance", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfirmFinish(value: () => Boolean): Self = StObject.set(x, "confirmFinish", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatePage(value: (XWindow, Double) => XWizardPage): Self = StObject.set(x, "createPage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCanAdvance(value: () => Boolean): Self = this.set("canAdvance", js.Any.fromFunction0(value))
+    def setGetPageTitle(value: Double => String): Self = StObject.set(x, "getPageTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConfirmFinish(value: () => Boolean): Self = this.set("confirmFinish", js.Any.fromFunction0(value))
+    def setOnActivatePage(value: Double => Unit): Self = StObject.set(x, "onActivatePage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreatePage(value: (XWindow, Double) => XWizardPage): Self = this.set("createPage", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetPageTitle(value: Double => String): Self = this.set("getPageTitle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnActivatePage(value: Double => Unit): Self = this.set("onActivatePage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnDeactivatePage(value: Double => Unit): Self = this.set("onDeactivatePage", js.Any.fromFunction1(value))
+    def setOnDeactivatePage(value: Double => Unit): Self = StObject.set(x, "onDeactivatePage", js.Any.fromFunction1(value))
   }
 }

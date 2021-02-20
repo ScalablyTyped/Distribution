@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object CapabilityStatementMessagingEndpoint {
   }
   
   @scala.inline
-  implicit class CapabilityStatementMessagingEndpointOps[Self <: CapabilityStatementMessagingEndpoint] (val x: Self) extends AnyVal {
+  implicit class CapabilityStatementMessagingEndpointMutableBuilder[Self <: CapabilityStatementMessagingEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: uri): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtocol(value: Coding): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_address(value: Element): Self = StObject.set(x, "_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: uri): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: Coding): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_address(value: Element): Self = this.set("_address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_address: Self = this.set("_address", js.undefined)
+    def set_addressUndefined: Self = StObject.set(x, "_address", js.undefined)
   }
 }

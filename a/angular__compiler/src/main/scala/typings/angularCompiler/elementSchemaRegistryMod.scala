@@ -4,16 +4,16 @@ import typings.angularCompiler.anon.Error
 import typings.angularCompiler.anon.Value
 import typings.angularCompiler.coreMod.SchemaMetadata
 import typings.angularCompiler.coreMod.SecurityContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/schema/element_schema_registry", JSImport.Namespace)
-@js.native
-object elementSchemaRegistryMod extends js.Object {
+object elementSchemaRegistryMod {
   
+  @JSImport("@angular/compiler/src/schema/element_schema_registry", "ElementSchemaRegistry")
   @js.native
-  abstract class ElementSchemaRegistry () extends js.Object {
+  abstract class ElementSchemaRegistry () extends StObject {
     
     def allKnownElementNames(): js.Array[String] = js.native
     

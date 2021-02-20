@@ -2,13 +2,12 @@ package typings.openui5.sap.ui.core
 
 import typings.openui5.anon.TypeofReadyState
 import typings.openui5.sap.ui.base.EventProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.ws")
-@js.native
-object ws extends js.Object {
+object ws {
   
   @js.native
   trait SapPcpWebSocket extends WebSocket {

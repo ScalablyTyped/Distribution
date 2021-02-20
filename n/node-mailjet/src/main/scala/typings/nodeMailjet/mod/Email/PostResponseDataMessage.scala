@@ -1,11 +1,12 @@
 package typings.nodeMailjet.mod.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostResponseDataMessage extends js.Object {
+trait PostResponseDataMessage extends StObject {
   
   val Bcc: js.Array[PostResponseDataTo] = js.native
   
@@ -32,42 +33,30 @@ object PostResponseDataMessage {
   }
   
   @scala.inline
-  implicit class PostResponseDataMessageOps[Self <: PostResponseDataMessage] (val x: Self) extends AnyVal {
+  implicit class PostResponseDataMessageMutableBuilder[Self <: PostResponseDataMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBcc(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBccVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "Bcc", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCc(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBccVarargs(value: PostResponseDataTo*): Self = this.set("Bcc", js.Array(value :_*))
+    def setCcVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "Cc", js.Array(value :_*))
     
     @scala.inline
-    def setBcc(value: js.Array[PostResponseDataTo]): Self = this.set("Bcc", value.asInstanceOf[js.Any])
+    def setCustomID(value: String): Self = StObject.set(x, "CustomID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcVarargs(value: PostResponseDataTo*): Self = this.set("Cc", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCc(value: js.Array[PostResponseDataTo]): Self = this.set("Cc", value.asInstanceOf[js.Any])
+    def setTo(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomID(value: String): Self = this.set("CustomID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToVarargs(value: PostResponseDataTo*): Self = this.set("To", js.Array(value :_*))
-    
-    @scala.inline
-    def setTo(value: js.Array[PostResponseDataTo]): Self = this.set("To", value.asInstanceOf[js.Any])
+    def setToVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "To", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportSnapshotResult extends js.Object {
+trait ImportSnapshotResult extends StObject {
   
   /**
     * A description of the import snapshot task.
@@ -36,45 +37,33 @@ object ImportSnapshotResult {
   }
   
   @scala.inline
-  implicit class ImportSnapshotResultOps[Self <: ImportSnapshotResult] (val x: Self) extends AnyVal {
+  implicit class ImportSnapshotResultMutableBuilder[Self <: ImportSnapshotResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImportTaskId(value: String): Self = StObject.set(x, "ImportTaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setImportTaskIdUndefined: Self = StObject.set(x, "ImportTaskId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setSnapshotTaskDetail(value: SnapshotTaskDetail): Self = StObject.set(x, "SnapshotTaskDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportTaskId(value: String): Self = this.set("ImportTaskId", value.asInstanceOf[js.Any])
+    def setSnapshotTaskDetailUndefined: Self = StObject.set(x, "SnapshotTaskDetail", js.undefined)
     
     @scala.inline
-    def deleteImportTaskId: Self = this.set("ImportTaskId", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotTaskDetail(value: SnapshotTaskDetail): Self = this.set("SnapshotTaskDetail", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSnapshotTaskDetail: Self = this.set("SnapshotTaskDetail", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

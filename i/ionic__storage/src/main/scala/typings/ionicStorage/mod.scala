@@ -3,28 +3,28 @@ package typings.ionicStorage
 import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.ModuleWithProviders
 import typings.ionicStorage.storageMod.StorageConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/storage", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val StorageConfigToken: InjectionToken[js.Any] = js.native
-  
-  def ɵa(storageConfig: StorageConfig, platformID: js.Object): typings.ionicStorage.storageMod.Storage = js.native
-  
+  @JSImport("@ionic/storage", "IonicStorageModule")
   @js.native
-  class IonicStorageModule () extends js.Object
+  class IonicStorageModule () extends StObject
   /* static members */
-  @js.native
-  object IonicStorageModule extends js.Object {
+  object IonicStorageModule {
     
+    @JSImport("@ionic/storage", "IonicStorageModule.forRoot")
+    @js.native
     def forRoot(): ModuleWithProviders[IonicStorageModule] = js.native
+    @JSImport("@ionic/storage", "IonicStorageModule.forRoot")
+    @js.native
     def forRoot(storageConfig: StorageConfig): ModuleWithProviders[IonicStorageModule] = js.native
   }
   
+  @JSImport("@ionic/storage", "Storage")
   @js.native
   class Storage protected ()
     extends typings.ionicStorage.storageMod.Storage {
@@ -37,4 +37,12 @@ object mod extends js.Object {
       */
     def this(config: StorageConfig, platformId: js.Object) = this()
   }
+  
+  @JSImport("@ionic/storage", "StorageConfigToken")
+  @js.native
+  val StorageConfigToken: InjectionToken[js.Any] = js.native
+  
+  @JSImport("@ionic/storage", "\u0275a")
+  @js.native
+  def ɵa(storageConfig: StorageConfig, platformID: js.Object): typings.ionicStorage.storageMod.Storage = js.native
 }

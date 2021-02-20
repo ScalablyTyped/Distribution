@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProtectiveEquipmentPerson extends js.Object {
+trait ProtectiveEquipmentPerson extends StObject {
   
   /**
     * An array of body parts detected on a person's body (including body parts without PPE). 
@@ -36,45 +37,33 @@ object ProtectiveEquipmentPerson {
   }
   
   @scala.inline
-  implicit class ProtectiveEquipmentPersonOps[Self <: ProtectiveEquipmentPerson] (val x: Self) extends AnyVal {
+  implicit class ProtectiveEquipmentPersonMutableBuilder[Self <: ProtectiveEquipmentPerson] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyParts(value: BodyParts): Self = StObject.set(x, "BodyParts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyPartsUndefined: Self = StObject.set(x, "BodyParts", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyPartsVarargs(value: ProtectiveEquipmentBodyPart*): Self = StObject.set(x, "BodyParts", js.Array(value :_*))
     
     @scala.inline
-    def setBodyPartsVarargs(value: ProtectiveEquipmentBodyPart*): Self = this.set("BodyParts", js.Array(value :_*))
+    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyParts(value: BodyParts): Self = this.set("BodyParts", value.asInstanceOf[js.Any])
+    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
     @scala.inline
-    def deleteBodyParts: Self = this.set("BodyParts", js.undefined)
+    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = this.set("BoundingBox", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def deleteBoundingBox: Self = this.set("BoundingBox", js.undefined)
+    def setId(value: UInteger): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
-    
-    @scala.inline
-    def setId(value: UInteger): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

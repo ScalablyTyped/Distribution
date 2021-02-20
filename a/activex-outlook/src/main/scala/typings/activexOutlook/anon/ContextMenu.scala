@@ -1,12 +1,13 @@
 package typings.activexOutlook.anon
 
 import typings.activexOutlook.Outlook.OlContextMenu
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextMenu extends js.Object {
+trait ContextMenu extends StObject {
   
   val ContextMenu: OlContextMenu = js.native
 }
@@ -19,21 +20,9 @@ object ContextMenu {
   }
   
   @scala.inline
-  implicit class ContextMenuOps[Self <: ContextMenu] (val x: Self) extends AnyVal {
+  implicit class ContextMenuMutableBuilder[Self <: ContextMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContextMenu(value: OlContextMenu): Self = this.set("ContextMenu", value.asInstanceOf[js.Any])
+    def setContextMenu(value: OlContextMenu): Self = StObject.set(x, "ContextMenu", value.asInstanceOf[js.Any])
   }
 }

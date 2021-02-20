@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkInterface extends js.Object {
+trait NetworkInterface extends StObject {
   
   /**
     * The ID of the network interface.
@@ -31,36 +32,24 @@ object NetworkInterface {
   }
   
   @scala.inline
-  implicit class NetworkInterfaceOps[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+  implicit class NetworkInterfaceMutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkInterfaceId(value: GenericString): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivateIpAddress(value: GenericString): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaceId(value: GenericString): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
     
     @scala.inline
-    def deleteNetworkInterfaceId: Self = this.set("networkInterfaceId", js.undefined)
+    def setPublicIpAddress(value: GenericString): Self = StObject.set(x, "publicIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateIpAddress(value: GenericString): Self = this.set("privateIpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateIpAddress: Self = this.set("privateIpAddress", js.undefined)
-    
-    @scala.inline
-    def setPublicIpAddress(value: GenericString): Self = this.set("publicIpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicIpAddress: Self = this.set("publicIpAddress", js.undefined)
+    def setPublicIpAddressUndefined: Self = StObject.set(x, "publicIpAddress", js.undefined)
   }
 }

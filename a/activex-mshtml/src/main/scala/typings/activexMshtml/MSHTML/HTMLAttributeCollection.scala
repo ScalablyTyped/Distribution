@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLAttributeCollection extends js.Object {
+trait HTMLAttributeCollection extends StObject {
   
   def apply(): js.Any = js.native
   def apply(name: js.Any): js.Any = js.native

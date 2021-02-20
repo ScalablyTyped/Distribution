@@ -1,5 +1,6 @@
 package typings.parseMockdb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("parse-mockdb", JSImport.Namespace)
 @js.native
-object parseMockdbRequire extends js.Object
+object parseMockdbRequire extends StObject

@@ -1,11 +1,12 @@
 package typings.firebase.mod.firebase.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetOptions extends js.Object {
+trait SetOptions extends StObject {
   
   /**
     * Changes the behavior of a set() call to only replace the values specified
@@ -30,33 +31,21 @@ object SetOptions {
   }
   
   @scala.inline
-  implicit class SetOptionsOps[Self <: SetOptions] (val x: Self) extends AnyVal {
+  implicit class SetOptionsMutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMergeFields(value: js.Array[String | FieldPath]): Self = StObject.set(x, "mergeFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMergeFieldsUndefined: Self = StObject.set(x, "mergeFields", js.undefined)
     
     @scala.inline
-    def setMerge(value: Boolean): Self = this.set("merge", value.asInstanceOf[js.Any])
+    def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "mergeFields", js.Array(value :_*))
     
     @scala.inline
-    def deleteMerge: Self = this.set("merge", js.undefined)
-    
-    @scala.inline
-    def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = this.set("mergeFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setMergeFields(value: js.Array[String | FieldPath]): Self = this.set("mergeFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergeFields: Self = this.set("mergeFields", js.undefined)
+    def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
   }
 }

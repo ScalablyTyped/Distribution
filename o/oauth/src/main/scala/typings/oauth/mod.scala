@@ -10,16 +10,16 @@ import typings.node.httpMod.RequestOptions
 import typings.node.urlMod.UrlWithStringQuery
 import typings.oauth.anon.AccessTokenHttpMethod
 import typings.oauth.anon.Data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("oauth", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("oauth", "OAuth")
   @js.native
-  class OAuth protected () extends js.Object {
+  class OAuth protected () extends StObject {
     def this(
       requestUrl: String,
       accessUrl: String,
@@ -495,8 +495,9 @@ object mod extends js.Object {
     def signUrl(url: String, oauth_token: String, oauth_token_secret: String, method: String): String = js.native
   }
   
+  @JSImport("oauth", "OAuth2")
   @js.native
-  class OAuth2 protected () extends js.Object {
+  class OAuth2 protected () extends StObject {
     def this(clientId: String, clientSecret: String, baseSite: String) = this()
     def this(clientId: String, clientSecret: String, baseSite: String, authorizePath: String) = this()
     def this(
@@ -628,6 +629,7 @@ object mod extends js.Object {
     def useAuthorizationHeaderforGET(useIt: Boolean): Unit = js.native
   }
   
+  @JSImport("oauth", "OAuthEcho")
   @js.native
   class OAuthEcho protected () extends OAuth {
     def this(

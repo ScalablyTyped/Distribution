@@ -1,11 +1,12 @@
 package typings.antDesignProLayout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Appsettingcontentwidthfixed extends js.Object {
+trait Appsettingcontentwidthfixed extends StObject {
   
   @JSName("app.setting.content-width")
   var `appDotsettingDotcontent-width`: String = js.native
@@ -172,111 +173,99 @@ object Appsettingcontentwidthfixed {
   }
   
   @scala.inline
-  implicit class AppsettingcontentwidthfixedOps[Self <: Appsettingcontentwidthfixed] (val x: Self) extends AnyVal {
+  implicit class AppsettingcontentwidthfixedMutableBuilder[Self <: Appsettingcontentwidthfixed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAppDotsettingDotcontent-width`(value: String): Self = StObject.set(x, "app.setting.content-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAppDotsettingDotcontent-widthDotfixed`(value: String): Self = StObject.set(x, "app.setting.content-width.fixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAppDotsettingDotcontent-widthDotfluid`(value: String): Self = StObject.set(x, "app.setting.content-width.fluid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAppDotsettingDotcontent-width`(value: String): Self = this.set("app.setting.content-width", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotcopy(value: String): Self = StObject.set(x, "app.setting.copy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAppDotsettingDotcontent-widthDotfixed`(value: String): Self = this.set("app.setting.content-width.fixed", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotcopyinfo(value: String): Self = StObject.set(x, "app.setting.copyinfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAppDotsettingDotcontent-widthDotfluid`(value: String): Self = this.set("app.setting.content-width.fluid", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotfixedheader(value: String): Self = StObject.set(x, "app.setting.fixedheader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotcopy(value: String): Self = this.set("app.setting.copy", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotfixedsidebar(value: String): Self = StObject.set(x, "app.setting.fixedsidebar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotcopyinfo(value: String): Self = this.set("app.setting.copyinfo", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotfixedsidebarDothint(value: String): Self = StObject.set(x, "app.setting.fixedsidebar.hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotfixedheader(value: String): Self = this.set("app.setting.fixedheader", value.asInstanceOf[js.Any])
+    def setAppDotsettingDothideheader(value: String): Self = StObject.set(x, "app.setting.hideheader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotfixedsidebar(value: String): Self = this.set("app.setting.fixedsidebar", value.asInstanceOf[js.Any])
+    def setAppDotsettingDothideheaderDothint(value: String): Self = StObject.set(x, "app.setting.hideheader.hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotfixedsidebarDothint(value: String): Self = this.set("app.setting.fixedsidebar.hint", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotloading(value: String): Self = StObject.set(x, "app.setting.loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDothideheader(value: String): Self = this.set("app.setting.hideheader", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotmixmenu(value: String): Self = StObject.set(x, "app.setting.mixmenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDothideheaderDothint(value: String): Self = this.set("app.setting.hideheader.hint", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotnavigationmode(value: String): Self = StObject.set(x, "app.setting.navigationmode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotloading(value: String): Self = this.set("app.setting.loading", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotothersettings(value: String): Self = StObject.set(x, "app.setting.othersettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotmixmenu(value: String): Self = this.set("app.setting.mixmenu", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotpagestyle(value: String): Self = StObject.set(x, "app.setting.pagestyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotnavigationmode(value: String): Self = this.set("app.setting.navigationmode", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotpagestyleDotdark(value: String): Self = StObject.set(x, "app.setting.pagestyle.dark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotothersettings(value: String): Self = this.set("app.setting.othersettings", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotpagestyleDotlight(value: String): Self = StObject.set(x, "app.setting.pagestyle.light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotpagestyle(value: String): Self = this.set("app.setting.pagestyle", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotproductionDothint(value: String): Self = StObject.set(x, "app.setting.production.hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotpagestyleDotdark(value: String): Self = this.set("app.setting.pagestyle.dark", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotsidemenu(value: String): Self = StObject.set(x, "app.setting.sidemenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotpagestyleDotlight(value: String): Self = this.set("app.setting.pagestyle.light", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotsplitMenus(value: String): Self = StObject.set(x, "app.setting.splitMenus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotproductionDothint(value: String): Self = this.set("app.setting.production.hint", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotthemecolor(value: String): Self = StObject.set(x, "app.setting.themecolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotsidemenu(value: String): Self = this.set("app.setting.sidemenu", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotthemecolorDotcyan(value: String): Self = StObject.set(x, "app.setting.themecolor.cyan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotsplitMenus(value: String): Self = this.set("app.setting.splitMenus", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotthemecolorDotdaybreak(value: String): Self = StObject.set(x, "app.setting.themecolor.daybreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotthemecolor(value: String): Self = this.set("app.setting.themecolor", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotthemecolorDotdust(value: String): Self = StObject.set(x, "app.setting.themecolor.dust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotthemecolorDotcyan(value: String): Self = this.set("app.setting.themecolor.cyan", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotthemecolorDotgeekblue(value: String): Self = StObject.set(x, "app.setting.themecolor.geekblue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotthemecolorDotdaybreak(value: String): Self = this.set("app.setting.themecolor.daybreak", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotthemecolorDotgreen(value: String): Self = StObject.set(x, "app.setting.themecolor.green", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotthemecolorDotdust(value: String): Self = this.set("app.setting.themecolor.dust", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotthemecolorDotpurple(value: String): Self = StObject.set(x, "app.setting.themecolor.purple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotthemecolorDotgeekblue(value: String): Self = this.set("app.setting.themecolor.geekblue", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotthemecolorDotsunset(value: String): Self = StObject.set(x, "app.setting.themecolor.sunset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotthemecolorDotgreen(value: String): Self = this.set("app.setting.themecolor.green", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotthemecolorDotvolcano(value: String): Self = StObject.set(x, "app.setting.themecolor.volcano", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotthemecolorDotpurple(value: String): Self = this.set("app.setting.themecolor.purple", value.asInstanceOf[js.Any])
+    def setAppDotsettingDottopmenu(value: String): Self = StObject.set(x, "app.setting.topmenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppDotsettingDotthemecolorDotsunset(value: String): Self = this.set("app.setting.themecolor.sunset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppDotsettingDotthemecolorDotvolcano(value: String): Self = this.set("app.setting.themecolor.volcano", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppDotsettingDottopmenu(value: String): Self = this.set("app.setting.topmenu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppDotsettingDotweakmode(value: String): Self = this.set("app.setting.weakmode", value.asInstanceOf[js.Any])
+    def setAppDotsettingDotweakmode(value: String): Self = StObject.set(x, "app.setting.weakmode", value.asInstanceOf[js.Any])
   }
 }

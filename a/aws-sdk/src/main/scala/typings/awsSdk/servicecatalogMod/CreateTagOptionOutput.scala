@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTagOptionOutput extends js.Object {
+trait CreateTagOptionOutput extends StObject {
   
   /**
     * Information about the TagOption.
@@ -21,24 +22,12 @@ object CreateTagOptionOutput {
   }
   
   @scala.inline
-  implicit class CreateTagOptionOutputOps[Self <: CreateTagOptionOutput] (val x: Self) extends AnyVal {
+  implicit class CreateTagOptionOutputMutableBuilder[Self <: CreateTagOptionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTagOptionDetail(value: TagOptionDetail): Self = StObject.set(x, "TagOptionDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTagOptionDetail(value: TagOptionDetail): Self = this.set("TagOptionDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagOptionDetail: Self = this.set("TagOptionDetail", js.undefined)
+    def setTagOptionDetailUndefined: Self = StObject.set(x, "TagOptionDetail", js.undefined)
   }
 }

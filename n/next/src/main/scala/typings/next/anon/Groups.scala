@@ -3,12 +3,13 @@ package typings.next.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.next.routeRegexMod.Group
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Groups extends js.Object {
+trait Groups extends StObject {
   
   var groups: StringDictionary[Group] = js.native
   
@@ -27,36 +28,24 @@ object Groups {
   }
   
   @scala.inline
-  implicit class GroupsOps[Self <: Groups] (val x: Self) extends AnyVal {
+  implicit class GroupsMutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroups(value: StringDictionary[Group]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamedRegex(value: String): Self = StObject.set(x, "namedRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamedRegexUndefined: Self = StObject.set(x, "namedRegex", js.undefined)
     
     @scala.inline
-    def setGroups(value: StringDictionary[Group]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setRe(value: RegExp): Self = StObject.set(x, "re", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRe(value: RegExp): Self = this.set("re", value.asInstanceOf[js.Any])
+    def setRouteKeys(value: StringDictionary[String]): Self = StObject.set(x, "routeKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedRegex(value: String): Self = this.set("namedRegex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamedRegex: Self = this.set("namedRegex", js.undefined)
-    
-    @scala.inline
-    def setRouteKeys(value: StringDictionary[String]): Self = this.set("routeKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouteKeys: Self = this.set("routeKeys", js.undefined)
+    def setRouteKeysUndefined: Self = StObject.set(x, "routeKeys", js.undefined)
   }
 }

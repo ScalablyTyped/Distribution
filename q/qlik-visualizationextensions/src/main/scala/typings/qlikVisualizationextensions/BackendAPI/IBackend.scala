@@ -1,12 +1,13 @@
 package typings.qlikVisualizationextensions.BackendAPI
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBackend extends js.Object {
+trait IBackend extends StObject {
   
   /**
     * Aborts the result of a search in a list object. Clears the existing search and returns the

@@ -1,12 +1,13 @@
 package typings.chromeApps.chrome.runtime
 
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchProvider extends js.Object {
+trait SearchProvider extends StObject {
   
   var alternate_urls: js.UndefOr[js.Array[String]] = js.native
   
@@ -47,108 +48,96 @@ object SearchProvider {
   }
   
   @scala.inline
-  implicit class SearchProviderOps[Self <: SearchProvider] (val x: Self) extends AnyVal {
+  implicit class SearchProviderMutableBuilder[Self <: SearchProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate_urls(value: js.Array[String]): Self = StObject.set(x, "alternate_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternate_urlsUndefined: Self = StObject.set(x, "alternate_urls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternate_urlsVarargs(value: String*): Self = StObject.set(x, "alternate_urls", js.Array(value :_*))
     
     @scala.inline
-    def setSearch_url(value: String): Self = this.set("search_url", value.asInstanceOf[js.Any])
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternate_urlsVarargs(value: String*): Self = this.set("alternate_urls", js.Array(value :_*))
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setAlternate_urls(value: js.Array[String]): Self = this.set("alternate_urls", value.asInstanceOf[js.Any])
+    def setFavicon_url(value: String): Self = StObject.set(x, "favicon_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlternate_urls: Self = this.set("alternate_urls", js.undefined)
+    def setFavicon_urlUndefined: Self = StObject.set(x, "favicon_url", js.undefined)
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setImage_urlUndefined: Self = StObject.set(x, "image_url", js.undefined)
     
     @scala.inline
-    def setFavicon_url(value: String): Self = this.set("favicon_url", value.asInstanceOf[js.Any])
+    def setImage_url_post_params(value: String): Self = StObject.set(x, "image_url_post_params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFavicon_url: Self = this.set("favicon_url", js.undefined)
+    def setImage_url_post_paramsUndefined: Self = StObject.set(x, "image_url_post_params", js.undefined)
     
     @scala.inline
-    def setImage_url(value: String): Self = this.set("image_url", value.asInstanceOf[js.Any])
+    def setInstant_url(value: String): Self = StObject.set(x, "instant_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImage_url: Self = this.set("image_url", js.undefined)
+    def setInstant_urlUndefined: Self = StObject.set(x, "instant_url", js.undefined)
     
     @scala.inline
-    def setImage_url_post_params(value: String): Self = this.set("image_url_post_params", value.asInstanceOf[js.Any])
+    def setInstant_url_post_params(value: String): Self = StObject.set(x, "instant_url_post_params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImage_url_post_params: Self = this.set("image_url_post_params", js.undefined)
+    def setInstant_url_post_paramsUndefined: Self = StObject.set(x, "instant_url_post_params", js.undefined)
     
     @scala.inline
-    def setInstant_url(value: String): Self = this.set("instant_url", value.asInstanceOf[js.Any])
+    def setIs_default(value: Boolean): Self = StObject.set(x, "is_default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstant_url: Self = this.set("instant_url", js.undefined)
+    def setIs_defaultUndefined: Self = StObject.set(x, "is_default", js.undefined)
     
     @scala.inline
-    def setInstant_url_post_params(value: String): Self = this.set("instant_url_post_params", value.asInstanceOf[js.Any])
+    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstant_url_post_params: Self = this.set("instant_url_post_params", js.undefined)
+    def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
     
     @scala.inline
-    def setIs_default(value: Boolean): Self = this.set("is_default", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_default: Self = this.set("is_default", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setKeyword(value: String): Self = this.set("keyword", value.asInstanceOf[js.Any])
+    def setPrepopulated_id(value: integer): Self = StObject.set(x, "prepopulated_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyword: Self = this.set("keyword", js.undefined)
+    def setPrepopulated_idUndefined: Self = StObject.set(x, "prepopulated_id", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSearch_url(value: String): Self = StObject.set(x, "search_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSearch_url_post_params(value: String): Self = StObject.set(x, "search_url_post_params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepopulated_id(value: integer): Self = this.set("prepopulated_id", value.asInstanceOf[js.Any])
+    def setSearch_url_post_paramsUndefined: Self = StObject.set(x, "search_url_post_params", js.undefined)
     
     @scala.inline
-    def deletePrepopulated_id: Self = this.set("prepopulated_id", js.undefined)
+    def setSuggest_url(value: String): Self = StObject.set(x, "suggest_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_url_post_params(value: String): Self = this.set("search_url_post_params", value.asInstanceOf[js.Any])
+    def setSuggest_urlUndefined: Self = StObject.set(x, "suggest_url", js.undefined)
     
     @scala.inline
-    def deleteSearch_url_post_params: Self = this.set("search_url_post_params", js.undefined)
+    def setSuggest_url_post_params(value: String): Self = StObject.set(x, "suggest_url_post_params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggest_url(value: String): Self = this.set("suggest_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggest_url: Self = this.set("suggest_url", js.undefined)
-    
-    @scala.inline
-    def setSuggest_url_post_params(value: String): Self = this.set("suggest_url_post_params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggest_url_post_params: Self = this.set("suggest_url_post_params", js.undefined)
+    def setSuggest_url_post_paramsUndefined: Self = StObject.set(x, "suggest_url_post_params", js.undefined)
   }
 }

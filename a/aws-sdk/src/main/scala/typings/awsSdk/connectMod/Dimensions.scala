@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dimensions extends js.Object {
+trait Dimensions extends StObject {
   
   /**
     * The channel used for grouping and filters.
@@ -26,30 +27,18 @@ object Dimensions {
   }
   
   @scala.inline
-  implicit class DimensionsOps[Self <: Dimensions] (val x: Self) extends AnyVal {
+  implicit class DimensionsMutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelUndefined: Self = StObject.set(x, "Channel", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueue(value: QueueReference): Self = StObject.set(x, "Queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: Channel): Self = this.set("Channel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannel: Self = this.set("Channel", js.undefined)
-    
-    @scala.inline
-    def setQueue(value: QueueReference): Self = this.set("Queue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueue: Self = this.set("Queue", js.undefined)
+    def setQueueUndefined: Self = StObject.set(x, "Queue", js.undefined)
   }
 }

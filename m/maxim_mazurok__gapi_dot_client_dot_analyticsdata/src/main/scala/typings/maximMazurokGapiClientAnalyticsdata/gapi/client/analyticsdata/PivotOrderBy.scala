@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotOrderBy extends js.Object {
+trait PivotOrderBy extends StObject {
   
   /** In the response to order by, order rows by this column. Must be a metric name from the request. */
   var metricName: js.UndefOr[String] = js.native
@@ -25,33 +26,21 @@ object PivotOrderBy {
   }
   
   @scala.inline
-  implicit class PivotOrderByOps[Self <: PivotOrderBy] (val x: Self) extends AnyVal {
+  implicit class PivotOrderByMutableBuilder[Self <: PivotOrderBy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPivotSelections(value: js.Array[PivotSelection]): Self = StObject.set(x, "pivotSelections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: String): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setPivotSelectionsUndefined: Self = StObject.set(x, "pivotSelections", js.undefined)
     
     @scala.inline
-    def deleteMetricName: Self = this.set("metricName", js.undefined)
-    
-    @scala.inline
-    def setPivotSelectionsVarargs(value: PivotSelection*): Self = this.set("pivotSelections", js.Array(value :_*))
-    
-    @scala.inline
-    def setPivotSelections(value: js.Array[PivotSelection]): Self = this.set("pivotSelections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePivotSelections: Self = this.set("pivotSelections", js.undefined)
+    def setPivotSelectionsVarargs(value: PivotSelection*): Self = StObject.set(x, "pivotSelections", js.Array(value :_*))
   }
 }

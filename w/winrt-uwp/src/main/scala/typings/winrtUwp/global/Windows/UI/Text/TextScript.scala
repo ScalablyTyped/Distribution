@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,10 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the character repertoire (typically the script) for a run of character formatting. */
 @JSGlobal("Windows.UI.Text.TextScript")
 @js.native
-object TextScript extends js.Object {
+object TextScript extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.TextScript with Double] = js.native
+  
+  /* 10 */ val default: typings.winrtUwp.Windows.UI.Text.TextScript.default with Double = js.native
   
   /* 40 */ val aboriginal: typings.winrtUwp.Windows.UI.Text.TextScript.aboriginal with Double = js.native
   
@@ -31,8 +34,6 @@ object TextScript extends js.Object {
   /* 39 */ val cherokee: typings.winrtUwp.Windows.UI.Text.TextScript.cherokee with Double = js.native
   
   /* 3 */ val cyrillic: typings.winrtUwp.Windows.UI.Text.TextScript.cyrillic with Double = js.native
-  
-  /* 10 */ val default: typings.winrtUwp.Windows.UI.Text.TextScript.default with Double = js.native
   
   /* 62 */ val deseret: typings.winrtUwp.Windows.UI.Text.TextScript.deseret with Double = js.native
   

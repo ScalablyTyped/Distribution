@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.logging
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,36 +62,24 @@ object XCsvLogFormatter {
   }
   
   @scala.inline
-  implicit class XCsvLogFormatterOps[Self <: XCsvLogFormatter] (val x: Self) extends AnyVal {
+  implicit class XCsvLogFormatterMutableBuilder[Self <: XCsvLogFormatter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnnames(value: SafeArray[String]): Self = StObject.set(x, "Columnnames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatMultiColumn(value: SeqEquiv[String] => String): Self = StObject.set(x, "formatMultiColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogEventNo(value: Boolean): Self = StObject.set(x, "LogEventNo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnnames(value: SafeArray[String]): Self = this.set("Columnnames", value.asInstanceOf[js.Any])
+    def setLogSource(value: Boolean): Self = StObject.set(x, "LogSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogEventNo(value: Boolean): Self = this.set("LogEventNo", value.asInstanceOf[js.Any])
+    def setLogThread(value: Boolean): Self = StObject.set(x, "LogThread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogSource(value: Boolean): Self = this.set("LogSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogThread(value: Boolean): Self = this.set("LogThread", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogTimestamp(value: Boolean): Self = this.set("LogTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormatMultiColumn(value: SeqEquiv[String] => String): Self = this.set("formatMultiColumn", js.Any.fromFunction1(value))
+    def setLogTimestamp(value: Boolean): Self = StObject.set(x, "LogTimestamp", value.asInstanceOf[js.Any])
   }
 }

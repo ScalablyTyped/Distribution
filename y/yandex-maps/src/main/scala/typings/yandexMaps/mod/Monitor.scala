@@ -1,12 +1,13 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "Monitor")
 @js.native
-class Monitor protected () extends js.Object {
+class Monitor protected () extends StObject {
   def this(dataManager: IDataManager) = this()
   def this(dataManager: IOptionManager) = this()
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSAMLProviderResponse extends js.Object {
+trait GetSAMLProviderResponse extends StObject {
   
   /**
     * The date and time when the SAML provider was created.
@@ -31,36 +32,24 @@ object GetSAMLProviderResponse {
   }
   
   @scala.inline
-  implicit class GetSAMLProviderResponseOps[Self <: GetSAMLProviderResponse] (val x: Self) extends AnyVal {
+  implicit class GetSAMLProviderResponseMutableBuilder[Self <: GetSAMLProviderResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSAMLMetadataDocument(value: SAMLMetadataDocumentType): Self = StObject.set(x, "SAMLMetadataDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setSAMLMetadataDocumentUndefined: Self = StObject.set(x, "SAMLMetadataDocument", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setValidUntil(value: dateType): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSAMLMetadataDocument(value: SAMLMetadataDocumentType): Self = this.set("SAMLMetadataDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSAMLMetadataDocument: Self = this.set("SAMLMetadataDocument", js.undefined)
-    
-    @scala.inline
-    def setValidUntil(value: dateType): Self = this.set("ValidUntil", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidUntil: Self = this.set("ValidUntil", js.undefined)
+    def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
   }
 }

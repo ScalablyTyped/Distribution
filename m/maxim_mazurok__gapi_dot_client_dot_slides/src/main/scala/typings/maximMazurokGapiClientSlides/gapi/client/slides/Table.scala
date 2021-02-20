@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Table extends js.Object {
+trait Table extends StObject {
   
   /** Number of columns in the table. */
   var columns: js.UndefOr[Double] = js.native
@@ -40,66 +41,54 @@ object Table {
   }
   
   @scala.inline
-  implicit class TableOps[Self <: Table] (val x: Self) extends AnyVal {
+  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHorizontalBorderRows(value: js.Array[TableBorderRow]): Self = StObject.set(x, "horizontalBorderRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setHorizontalBorderRowsUndefined: Self = StObject.set(x, "horizontalBorderRows", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setHorizontalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "horizontalBorderRows", js.Array(value :_*))
     
     @scala.inline
-    def setHorizontalBorderRowsVarargs(value: TableBorderRow*): Self = this.set("horizontalBorderRows", js.Array(value :_*))
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalBorderRows(value: js.Array[TableBorderRow]): Self = this.set("horizontalBorderRows", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteHorizontalBorderRows: Self = this.set("horizontalBorderRows", js.undefined)
+    def setTableColumns(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "tableColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setTableColumnsUndefined: Self = StObject.set(x, "tableColumns", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setTableColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumns", js.Array(value :_*))
     
     @scala.inline
-    def setTableColumnsVarargs(value: TableColumnProperties*): Self = this.set("tableColumns", js.Array(value :_*))
+    def setTableRows(value: js.Array[TableRow]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableColumns(value: js.Array[TableColumnProperties]): Self = this.set("tableColumns", value.asInstanceOf[js.Any])
+    def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
     
     @scala.inline
-    def deleteTableColumns: Self = this.set("tableColumns", js.undefined)
+    def setTableRowsVarargs(value: TableRow*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
     
     @scala.inline
-    def setTableRowsVarargs(value: TableRow*): Self = this.set("tableRows", js.Array(value :_*))
+    def setVerticalBorderRows(value: js.Array[TableBorderRow]): Self = StObject.set(x, "verticalBorderRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableRows(value: js.Array[TableRow]): Self = this.set("tableRows", value.asInstanceOf[js.Any])
+    def setVerticalBorderRowsUndefined: Self = StObject.set(x, "verticalBorderRows", js.undefined)
     
     @scala.inline
-    def deleteTableRows: Self = this.set("tableRows", js.undefined)
-    
-    @scala.inline
-    def setVerticalBorderRowsVarargs(value: TableBorderRow*): Self = this.set("verticalBorderRows", js.Array(value :_*))
-    
-    @scala.inline
-    def setVerticalBorderRows(value: js.Array[TableBorderRow]): Self = this.set("verticalBorderRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalBorderRows: Self = this.set("verticalBorderRows", js.undefined)
+    def setVerticalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "verticalBorderRows", js.Array(value :_*))
   }
 }

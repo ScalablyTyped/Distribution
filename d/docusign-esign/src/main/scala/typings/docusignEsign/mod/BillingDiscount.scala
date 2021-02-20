@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingDiscount extends js.Object {
+trait BillingDiscount extends StObject {
   
   /**
     * Reserved: TBD
@@ -25,36 +26,24 @@ object BillingDiscount {
   }
   
   @scala.inline
-  implicit class BillingDiscountOps[Self <: BillingDiscount] (val x: Self) extends AnyVal {
+  implicit class BillingDiscountMutableBuilder[Self <: BillingDiscount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginQuantity(value: String): Self = StObject.set(x, "beginQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginQuantityUndefined: Self = StObject.set(x, "beginQuantity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiscount(value: String): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginQuantity(value: String): Self = this.set("beginQuantity", value.asInstanceOf[js.Any])
+    def setDiscountUndefined: Self = StObject.set(x, "discount", js.undefined)
     
     @scala.inline
-    def deleteBeginQuantity: Self = this.set("beginQuantity", js.undefined)
+    def setEndQuantity(value: String): Self = StObject.set(x, "endQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscount(value: String): Self = this.set("discount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiscount: Self = this.set("discount", js.undefined)
-    
-    @scala.inline
-    def setEndQuantity(value: String): Self = this.set("endQuantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndQuantity: Self = this.set("endQuantity", js.undefined)
+    def setEndQuantityUndefined: Self = StObject.set(x, "endQuantity", js.undefined)
   }
 }

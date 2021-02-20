@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.SmartCards
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmartCardPinCharacterPolicyOption extends js.Object
+sealed trait SmartCardPinCharacterPolicyOption extends StObject
 /** Specifies the rules for characters in a smart card personal identification number (PIN). */
 @JSGlobal("Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption")
 @js.native
-object SmartCardPinCharacterPolicyOption extends js.Object {
+object SmartCardPinCharacterPolicyOption extends StObject {
   
   /** Any of the characters in the specified character class can be in the PIN. */
   @js.native

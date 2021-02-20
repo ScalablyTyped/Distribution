@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListDisputeEvidenceResponse")
 @js.native
-class ListDisputeEvidenceResponse () extends js.Object {
+class ListDisputeEvidenceResponse () extends StObject {
   
   /**
     * Information on errors encountered during the request.

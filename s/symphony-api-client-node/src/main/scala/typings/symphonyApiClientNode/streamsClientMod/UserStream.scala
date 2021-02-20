@@ -1,11 +1,12 @@
 package typings.symphonyApiClientNode.streamsClientMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserStream extends js.Object {
+trait UserStream extends StObject {
   
   var active: Boolean = js.native
   
@@ -28,42 +29,30 @@ object UserStream {
   }
   
   @scala.inline
-  implicit class UserStreamOps[Self <: UserStream] (val x: Self) extends AnyVal {
+  implicit class UserStreamMutableBuilder[Self <: UserStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrossPod(value: Boolean): Self = StObject.set(x, "crossPod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setRoomAttributes(value: RoomAttributes): Self = StObject.set(x, "roomAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossPod(value: Boolean): Self = this.set("crossPod", value.asInstanceOf[js.Any])
+    def setRoomAttributesUndefined: Self = StObject.set(x, "roomAttributes", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setStreamAttributes(value: StreamAttributes): Self = StObject.set(x, "streamAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamType(value: StreamType): Self = this.set("streamType", value.asInstanceOf[js.Any])
+    def setStreamAttributesUndefined: Self = StObject.set(x, "streamAttributes", js.undefined)
     
     @scala.inline
-    def setRoomAttributes(value: RoomAttributes): Self = this.set("roomAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomAttributes: Self = this.set("roomAttributes", js.undefined)
-    
-    @scala.inline
-    def setStreamAttributes(value: StreamAttributes): Self = this.set("streamAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamAttributes: Self = this.set("streamAttributes", js.undefined)
+    def setStreamType(value: StreamType): Self = StObject.set(x, "streamType", value.asInstanceOf[js.Any])
   }
 }

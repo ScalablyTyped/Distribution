@@ -1,11 +1,12 @@
 package typings.waypoints
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WaypointGroup extends js.Object {
+trait WaypointGroup extends StObject {
   
   var axis: String = js.native
   
@@ -32,36 +33,24 @@ object WaypointGroup {
   }
   
   @scala.inline
-  implicit class WaypointGroupOps[Self <: WaypointGroup] (val x: Self) extends AnyVal {
+  implicit class WaypointGroupMutableBuilder[Self <: WaypointGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst(value: () => Waypoint): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLast(value: () => Waypoint): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: () => Waypoint): Self = this.set("first", js.Any.fromFunction0(value))
+    def setWaypoints(value: js.Array[Waypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast(value: () => Waypoint): Self = this.set("last", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWaypointsVarargs(value: Waypoint*): Self = this.set("waypoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setWaypoints(value: js.Array[Waypoint]): Self = this.set("waypoints", value.asInstanceOf[js.Any])
+    def setWaypointsVarargs(value: Waypoint*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

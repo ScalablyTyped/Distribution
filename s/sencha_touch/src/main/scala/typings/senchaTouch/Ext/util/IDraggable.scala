@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -127,146 +128,134 @@ object IDraggable {
   }
   
   @scala.inline
-  implicit class IDraggableOps[Self <: IDraggable] (val x: Self) extends AnyVal {
+  implicit class IDraggableMutableBuilder[Self <: IDraggable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisable(value: () => IDraggable): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setEnable(value: () => IDraggable): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisable(value: () => IDraggable): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setGetCls(value: () => String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnable(value: () => IDraggable): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
     @scala.inline
-    def deleteEnable: Self = this.set("enable", js.undefined)
+    def setGetConstraint(value: () => String): Self = StObject.set(x, "getConstraint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCls(value: () => String): Self = this.set("getCls", js.Any.fromFunction0(value))
+    def setGetConstraintUndefined: Self = StObject.set(x, "getConstraint", js.undefined)
     
     @scala.inline
-    def deleteGetCls: Self = this.set("getCls", js.undefined)
+    def setGetDirection(value: () => String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConstraint(value: () => String): Self = this.set("getConstraint", js.Any.fromFunction0(value))
+    def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
     
     @scala.inline
-    def deleteGetConstraint: Self = this.set("getConstraint", js.undefined)
+    def setGetDisabled(value: () => _): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDirection(value: () => String): Self = this.set("getDirection", js.Any.fromFunction0(value))
+    def setGetDisabledUndefined: Self = StObject.set(x, "getDisabled", js.undefined)
     
     @scala.inline
-    def deleteGetDirection: Self = this.set("getDirection", js.undefined)
+    def setGetDraggingCls(value: () => String): Self = StObject.set(x, "getDraggingCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisabled(value: () => _): Self = this.set("getDisabled", js.Any.fromFunction0(value))
+    def setGetDraggingClsUndefined: Self = StObject.set(x, "getDraggingCls", js.undefined)
     
     @scala.inline
-    def deleteGetDisabled: Self = this.set("getDisabled", js.undefined)
+    def setGetElement(value: () => _): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDraggingCls(value: () => String): Self = this.set("getDraggingCls", js.Any.fromFunction0(value))
+    def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
     
     @scala.inline
-    def deleteGetDraggingCls: Self = this.set("getDraggingCls", js.undefined)
+    def setGetInitialOffset(value: () => _): Self = StObject.set(x, "getInitialOffset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetElement(value: () => _): Self = this.set("getElement", js.Any.fromFunction0(value))
+    def setGetInitialOffsetUndefined: Self = StObject.set(x, "getInitialOffset", js.undefined)
     
     @scala.inline
-    def deleteGetElement: Self = this.set("getElement", js.undefined)
+    def setGetTranslatable(value: () => _): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInitialOffset(value: () => _): Self = this.set("getInitialOffset", js.Any.fromFunction0(value))
+    def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)
     
     @scala.inline
-    def deleteGetInitialOffset: Self = this.set("getInitialOffset", js.undefined)
+    def setInitialOffset(value: js.Any): Self = StObject.set(x, "initialOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTranslatable(value: () => _): Self = this.set("getTranslatable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetTranslatable: Self = this.set("getTranslatable", js.undefined)
-    
-    @scala.inline
-    def setInitialOffset(value: js.Any): Self = this.set("initialOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialOffset: Self = this.set("initialOffset", js.undefined)
+    def setInitialOffsetUndefined: Self = StObject.set(x, "initialOffset", js.undefined)
     
     @scala.inline
     def setRelayEvents(
       value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.mixin.IObservable
-    ): Self = this.set("relayEvents", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRelayEvents: Self = this.set("relayEvents", js.undefined)
+    def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
     @scala.inline
-    def setSetCls(value: /* cls */ js.UndefOr[String] => Unit): Self = this.set("setCls", js.Any.fromFunction1(value))
+    def setSetCls(value: /* cls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetCls: Self = this.set("setCls", js.undefined)
+    def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
     @scala.inline
-    def setSetConstraint(value: /* constraint */ js.UndefOr[String] => Unit): Self = this.set("setConstraint", js.Any.fromFunction1(value))
+    def setSetConstraint(value: /* constraint */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setConstraint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetConstraint: Self = this.set("setConstraint", js.undefined)
+    def setSetConstraintUndefined: Self = StObject.set(x, "setConstraint", js.undefined)
     
     @scala.inline
-    def setSetDirection(value: /* direction */ js.UndefOr[String] => Unit): Self = this.set("setDirection", js.Any.fromFunction1(value))
+    def setSetDirection(value: /* direction */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetDirection: Self = this.set("setDirection", js.undefined)
+    def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
     
     @scala.inline
-    def setSetDisabled(value: /* disabled */ js.UndefOr[js.Any] => Unit): Self = this.set("setDisabled", js.Any.fromFunction1(value))
+    def setSetDisabled(value: /* disabled */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetDisabled: Self = this.set("setDisabled", js.undefined)
+    def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
     
     @scala.inline
-    def setSetDraggingCls(value: /* draggingCls */ js.UndefOr[String] => Unit): Self = this.set("setDraggingCls", js.Any.fromFunction1(value))
+    def setSetDraggingCls(value: /* draggingCls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDraggingCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetDraggingCls: Self = this.set("setDraggingCls", js.undefined)
+    def setSetDraggingClsUndefined: Self = StObject.set(x, "setDraggingCls", js.undefined)
     
     @scala.inline
-    def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = this.set("setElement", js.Any.fromFunction1(value))
+    def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetElement: Self = this.set("setElement", js.undefined)
+    def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
     
     @scala.inline
-    def setSetInitialOffset(value: /* initialOffset */ js.UndefOr[js.Any] => Unit): Self = this.set("setInitialOffset", js.Any.fromFunction1(value))
+    def setSetInitialOffset(value: /* initialOffset */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInitialOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetInitialOffset: Self = this.set("setInitialOffset", js.undefined)
+    def setSetInitialOffsetUndefined: Self = StObject.set(x, "setInitialOffset", js.undefined)
     
     @scala.inline
-    def setSetTranslatable(value: /* translatable */ js.UndefOr[js.Any] => Unit): Self = this.set("setTranslatable", js.Any.fromFunction1(value))
+    def setSetTranslatable(value: /* translatable */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetTranslatable: Self = this.set("setTranslatable", js.undefined)
+    def setSetTranslatableUndefined: Self = StObject.set(x, "setTranslatable", js.undefined)
   }
 }

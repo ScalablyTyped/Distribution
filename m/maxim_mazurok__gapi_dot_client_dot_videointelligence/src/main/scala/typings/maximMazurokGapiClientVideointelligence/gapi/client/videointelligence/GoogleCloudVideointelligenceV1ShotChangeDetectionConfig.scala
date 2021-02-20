@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1ShotChangeDetectionConfig extends js.Object {
+trait GoogleCloudVideointelligenceV1ShotChangeDetectionConfig extends StObject {
   
   /** Model to use for shot change detection. Supported values: "builtin/stable" (the default if unset) and "builtin/latest". */
   var model: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object GoogleCloudVideointelligenceV1ShotChangeDetectionConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1ShotChangeDetectionConfigOps[Self <: GoogleCloudVideointelligenceV1ShotChangeDetectionConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1ShotChangeDetectionConfigMutableBuilder[Self <: GoogleCloudVideointelligenceV1ShotChangeDetectionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

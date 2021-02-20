@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -129,66 +130,54 @@ object BootstrapUIWidgetBase {
   }
   
   @scala.inline
-  implicit class BootstrapUIWidgetBaseOps[Self <: BootstrapUIWidgetBase] (val x: Self) extends AnyVal {
+  implicit class BootstrapUIWidgetBaseMutableBuilder[Self <: BootstrapUIWidgetBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisposing(value: ASPxClientEvent[BootstrapUIWidgetDisposingEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "Disposing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawn(value: ASPxClientEvent[BootstrapUIWidgetDrawnEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "Drawn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportTo(value: (String, String) => Unit): Self = StObject.set(x, "ExportTo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDisposing(value: ASPxClientEvent[BootstrapUIWidgetDisposingEventHandler[BootstrapUIWidgetBase]]): Self = this.set("Disposing", value.asInstanceOf[js.Any])
+    def setExported(value: ASPxClientEvent[BootstrapUIWidgetExportedEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "Exported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawn(value: ASPxClientEvent[BootstrapUIWidgetDrawnEventHandler[BootstrapUIWidgetBase]]): Self = this.set("Drawn", value.asInstanceOf[js.Any])
+    def setExporting(value: ASPxClientEvent[BootstrapUIWidgetExportingEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "Exporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportTo(value: (String, String) => Unit): Self = this.set("ExportTo", js.Any.fromFunction2(value))
+    def setFileSaving(value: ASPxClientEvent[BootstrapUIWidgetFileSavingEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "FileSaving", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExported(value: ASPxClientEvent[BootstrapUIWidgetExportedEventHandler[BootstrapUIWidgetBase]]): Self = this.set("Exported", value.asInstanceOf[js.Any])
+    def setGetDataSource(value: () => js.Any): Self = StObject.set(x, "GetDataSource", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExporting(value: ASPxClientEvent[BootstrapUIWidgetExportingEventHandler[BootstrapUIWidgetBase]]): Self = this.set("Exporting", value.asInstanceOf[js.Any])
+    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFileSaving(value: ASPxClientEvent[BootstrapUIWidgetFileSavingEventHandler[BootstrapUIWidgetBase]]): Self = this.set("FileSaving", value.asInstanceOf[js.Any])
+    def setGetInstance(value: () => js.Any): Self = StObject.set(x, "GetInstance", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDataSource(value: () => js.Any): Self = this.set("GetDataSource", js.Any.fromFunction0(value))
+    def setIncidentOccurred(value: ASPxClientEvent[BootstrapUIWidgetErrorEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "IncidentOccurred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = this.set("GetEnabled", js.Any.fromFunction0(value))
+    def setInit(value: ASPxClientEvent[BootstrapUIWidgetInitializedEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "Init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInstance(value: () => js.Any): Self = this.set("GetInstance", js.Any.fromFunction0(value))
+    def setOptionChanged(value: ASPxClientEvent[BootstrapUIWidgetOptionChangedEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "OptionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncidentOccurred(value: ASPxClientEvent[BootstrapUIWidgetErrorEventHandler[BootstrapUIWidgetBase]]): Self = this.set("IncidentOccurred", value.asInstanceOf[js.Any])
+    def setPrint(value: () => Unit): Self = StObject.set(x, "Print", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInit(value: ASPxClientEvent[BootstrapUIWidgetInitializedEventHandler[BootstrapUIWidgetBase]]): Self = this.set("Init", value.asInstanceOf[js.Any])
+    def setSetDataSource(value: js.Any => Unit): Self = StObject.set(x, "SetDataSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOptionChanged(value: ASPxClientEvent[BootstrapUIWidgetOptionChangedEventHandler[BootstrapUIWidgetBase]]): Self = this.set("OptionChanged", value.asInstanceOf[js.Any])
+    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrint(value: () => Unit): Self = this.set("Print", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDataSource(value: js.Any => Unit): Self = this.set("SetDataSource", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = this.set("SetEnabled", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOptions(value: js.Any => Unit): Self = this.set("SetOptions", js.Any.fromFunction1(value))
+    def setSetOptions(value: js.Any => Unit): Self = StObject.set(x, "SetOptions", js.Any.fromFunction1(value))
   }
 }

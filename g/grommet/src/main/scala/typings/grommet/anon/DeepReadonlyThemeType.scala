@@ -1,13 +1,14 @@
 package typings.grommet.anon
 
 import typings.grommet.utilsMod.DeepReadonly
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined grommet.grommet/utils.DeepReadonly<grommet.grommet/themes/base.ThemeType> */
 @js.native
-trait DeepReadonlyThemeType extends js.Object {
+trait DeepReadonlyThemeType extends StObject {
   
   val accordion: js.UndefOr[Panel | DeepReadonly[js.UndefOr[Panel]]] = js.native
   
@@ -100,264 +101,252 @@ object DeepReadonlyThemeType {
   }
   
   @scala.inline
-  implicit class DeepReadonlyThemeTypeOps[Self <: DeepReadonlyThemeType] (val x: Self) extends AnyVal {
+  implicit class DeepReadonlyThemeTypeMutableBuilder[Self <: DeepReadonlyThemeType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccordion(value: Panel | DeepReadonly[js.UndefOr[Panel]]): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchor(value: FontWeight | DeepReadonly[js.UndefOr[FontWeight]]): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccordion(value: Panel | DeepReadonly[js.UndefOr[Panel]]): Self = this.set("accordion", value.asInstanceOf[js.Any])
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def deleteAccordion: Self = this.set("accordion", js.undefined)
+    def setAvatar(value: SizeText | DeepReadonly[js.UndefOr[SizeText]]): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: FontWeight | DeepReadonly[js.UndefOr[FontWeight]]): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setBox(value: ResponsiveBreakpoint | DeepReadonly[js.UndefOr[ResponsiveBreakpoint]]): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatar(value: SizeText | DeepReadonly[js.UndefOr[SizeText]]): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
     
     @scala.inline
-    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    def setButton(value: Default | DeepReadonly[js.UndefOr[Default]]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBox(value: ResponsiveBreakpoint | DeepReadonly[js.UndefOr[ResponsiveBreakpoint]]): Self = this.set("box", value.asInstanceOf[js.Any])
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def deleteBox: Self = this.set("box", js.undefined)
+    def setCalendar(value: Day | DeepReadonly[js.UndefOr[Day]]): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: Default | DeepReadonly[js.UndefOr[Default]]): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setCard(value: BodyContainer | DeepReadonly[js.UndefOr[BodyContainer]]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendar(value: Day | DeepReadonly[js.UndefOr[Day]]): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
     @scala.inline
-    def deleteCalendar: Self = this.set("calendar", js.undefined)
+    def setCarousel(value: AnimationDisabled | DeepReadonly[js.UndefOr[AnimationDisabled]]): Self = StObject.set(x, "carousel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCard(value: BodyContainer | DeepReadonly[js.UndefOr[BodyContainer]]): Self = this.set("card", value.asInstanceOf[js.Any])
+    def setCarouselUndefined: Self = StObject.set(x, "carousel", js.undefined)
     
     @scala.inline
-    def deleteCard: Self = this.set("card", js.undefined)
+    def setChart(value: ColorExtend | DeepReadonly[js.UndefOr[ColorExtend]]): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarousel(value: AnimationDisabled | DeepReadonly[js.UndefOr[AnimationDisabled]]): Self = this.set("carousel", value.asInstanceOf[js.Any])
+    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
     @scala.inline
-    def deleteCarousel: Self = this.set("carousel", js.undefined)
+    def setCheckBox(value: Toggle | DeepReadonly[js.UndefOr[Toggle]]): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: ColorExtend | DeepReadonly[js.UndefOr[ColorExtend]]): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setCheckBoxUndefined: Self = StObject.set(x, "checkBox", js.undefined)
     
     @scala.inline
-    def deleteChart: Self = this.set("chart", js.undefined)
+    def setClock(value: Analog | DeepReadonly[js.UndefOr[Analog]]): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckBox(value: Toggle | DeepReadonly[js.UndefOr[Toggle]]): Self = this.set("checkBox", value.asInstanceOf[js.Any])
+    def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
     
     @scala.inline
-    def deleteCheckBox: Self = this.set("checkBox", js.undefined)
+    def setCollapsible(value: Baseline | DeepReadonly[js.UndefOr[Baseline]]): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClock(value: Analog | DeepReadonly[js.UndefOr[Analog]]): Self = this.set("clock", value.asInstanceOf[js.Any])
+    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
     @scala.inline
-    def deleteClock: Self = this.set("clock", js.undefined)
+    def setDataTable(value: GroupEnd | DeepReadonly[js.UndefOr[GroupEnd]]): Self = StObject.set(x, "dataTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsible(value: Baseline | DeepReadonly[js.UndefOr[Baseline]]): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    def setDataTableUndefined: Self = StObject.set(x, "dataTable", js.undefined)
     
     @scala.inline
-    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    def setDateInput(value: `13` | DeepReadonly[js.UndefOr[`13`]]): Self = StObject.set(x, "dateInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTable(value: GroupEnd | DeepReadonly[js.UndefOr[GroupEnd]]): Self = this.set("dataTable", value.asInstanceOf[js.Any])
+    def setDateInputUndefined: Self = StObject.set(x, "dateInput", js.undefined)
     
     @scala.inline
-    def deleteDataTable: Self = this.set("dataTable", js.undefined)
+    def setDiagram(value: Line | DeepReadonly[js.UndefOr[Line]]): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateInput(value: `13` | DeepReadonly[js.UndefOr[`13`]]): Self = this.set("dateInput", value.asInstanceOf[js.Any])
+    def setDiagramUndefined: Self = StObject.set(x, "diagram", js.undefined)
     
     @scala.inline
-    def deleteDateInput: Self = this.set("dateInput", js.undefined)
+    def setDrop(value: MaxHeight | DeepReadonly[js.UndefOr[MaxHeight]]): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagram(value: Line | DeepReadonly[js.UndefOr[Line]]): Self = this.set("diagram", value.asInstanceOf[js.Any])
+    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
     @scala.inline
-    def deleteDiagram: Self = this.set("diagram", js.undefined)
+    def setFormField(value: Content | DeepReadonly[js.UndefOr[Content]]): Self = StObject.set(x, "formField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrop(value: MaxHeight | DeepReadonly[js.UndefOr[MaxHeight]]): Self = this.set("drop", value.asInstanceOf[js.Any])
+    def setFormFieldUndefined: Self = StObject.set(x, "formField", js.undefined)
     
     @scala.inline
-    def deleteDrop: Self = this.set("drop", js.undefined)
+    def setGlobal(value: Animation | DeepReadonly[js.UndefOr[Animation]]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormField(value: Content | DeepReadonly[js.UndefOr[Content]]): Self = this.set("formField", value.asInstanceOf[js.Any])
+    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
     @scala.inline
-    def deleteFormField: Self = this.set("formField", js.undefined)
+    def setGrommet(value: `14` | DeepReadonly[js.UndefOr[`14`]]): Self = StObject.set(x, "grommet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: Animation | DeepReadonly[js.UndefOr[Animation]]): Self = this.set("global", value.asInstanceOf[js.Any])
+    def setGrommetUndefined: Self = StObject.set(x, "grommet", js.undefined)
     
     @scala.inline
-    def deleteGlobal: Self = this.set("global", js.undefined)
+    def setHeading(value: Extend | DeepReadonly[js.UndefOr[Extend]]): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrommet(value: `14` | DeepReadonly[js.UndefOr[`14`]]): Self = this.set("grommet", value.asInstanceOf[js.Any])
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteGrommet: Self = this.set("grommet", js.undefined)
+    def setIcon(value: `25` | DeepReadonly[js.UndefOr[`25`]]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: Extend | DeepReadonly[js.UndefOr[Extend]]): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setLayer(value: Overlay | DeepReadonly[js.UndefOr[Overlay]]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: `25` | DeepReadonly[js.UndefOr[`25`]]): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setList(value: Item | DeepReadonly[js.UndefOr[Item]]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: Overlay | DeepReadonly[js.UndefOr[Overlay]]): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setMaskedInput(value: `22` | DeepReadonly[js.UndefOr[`22`]]): Self = StObject.set(x, "maskedInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: Item | DeepReadonly[js.UndefOr[Item]]): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setMaskedInputUndefined: Self = StObject.set(x, "maskedInput", js.undefined)
     
     @scala.inline
-    def deleteList: Self = this.set("list", js.undefined)
+    def setMenu(value: Icons | DeepReadonly[js.UndefOr[Icons]]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskedInput(value: `22` | DeepReadonly[js.UndefOr[`22`]]): Self = this.set("maskedInput", value.asInstanceOf[js.Any])
+    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
     @scala.inline
-    def deleteMaskedInput: Self = this.set("maskedInput", js.undefined)
+    def setMeter(value: Colors | DeepReadonly[js.UndefOr[Colors]]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenu(value: Icons | DeepReadonly[js.UndefOr[Icons]]): Self = this.set("menu", value.asInstanceOf[js.Any])
+    def setMeterUndefined: Self = StObject.set(x, "meter", js.undefined)
     
     @scala.inline
-    def deleteMenu: Self = this.set("menu", js.undefined)
+    def setParagraph(value: Xlarge | DeepReadonly[js.UndefOr[Xlarge]]): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeter(value: Colors | DeepReadonly[js.UndefOr[Colors]]): Self = this.set("meter", value.asInstanceOf[js.Any])
+    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
     @scala.inline
-    def deleteMeter: Self = this.set("meter", js.undefined)
+    def setRadioButton(value: Check | DeepReadonly[js.UndefOr[Check]]): Self = StObject.set(x, "radioButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraph(value: Xlarge | DeepReadonly[js.UndefOr[Xlarge]]): Self = this.set("paragraph", value.asInstanceOf[js.Any])
+    def setRadioButtonGroup(value: Container | DeepReadonly[js.UndefOr[Container]]): Self = StObject.set(x, "radioButtonGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParagraph: Self = this.set("paragraph", js.undefined)
+    def setRadioButtonGroupUndefined: Self = StObject.set(x, "radioButtonGroup", js.undefined)
     
     @scala.inline
-    def setRadioButton(value: Check | DeepReadonly[js.UndefOr[Check]]): Self = this.set("radioButton", value.asInstanceOf[js.Any])
+    def setRadioButtonUndefined: Self = StObject.set(x, "radioButton", js.undefined)
     
     @scala.inline
-    def deleteRadioButton: Self = this.set("radioButton", js.undefined)
+    def setRangeInput(value: Thumb | DeepReadonly[js.UndefOr[Thumb]]): Self = StObject.set(x, "rangeInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadioButtonGroup(value: Container | DeepReadonly[js.UndefOr[Container]]): Self = this.set("radioButtonGroup", value.asInstanceOf[js.Any])
+    def setRangeInputUndefined: Self = StObject.set(x, "rangeInput", js.undefined)
     
     @scala.inline
-    def deleteRadioButtonGroup: Self = this.set("radioButtonGroup", js.undefined)
+    def setRangeSelector(value: Edge | DeepReadonly[js.UndefOr[Edge]]): Self = StObject.set(x, "rangeSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeInput(value: Thumb | DeepReadonly[js.UndefOr[Thumb]]): Self = this.set("rangeInput", value.asInstanceOf[js.Any])
+    def setRangeSelectorUndefined: Self = StObject.set(x, "rangeSelector", js.undefined)
     
     @scala.inline
-    def deleteRangeInput: Self = this.set("rangeInput", js.undefined)
+    def setSelect(value: Control | DeepReadonly[js.UndefOr[Control]]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeSelector(value: Edge | DeepReadonly[js.UndefOr[Edge]]): Self = this.set("rangeSelector", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteRangeSelector: Self = this.set("rangeSelector", js.undefined)
+    def setSkipLinks(value: Position | DeepReadonly[js.UndefOr[Position]]): Self = StObject.set(x, "skipLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: Control | DeepReadonly[js.UndefOr[Control]]): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setSkipLinksUndefined: Self = StObject.set(x, "skipLinks", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setTab(value: Hover | DeepReadonly[js.UndefOr[Hover]]): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipLinks(value: Position | DeepReadonly[js.UndefOr[Position]]): Self = this.set("skipLinks", value.asInstanceOf[js.Any])
+    def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
     
     @scala.inline
-    def deleteSkipLinks: Self = this.set("skipLinks", js.undefined)
+    def setTable(value: Footer | DeepReadonly[js.UndefOr[Footer]]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTab(value: Hover | DeepReadonly[js.UndefOr[Hover]]): Self = this.set("tab", value.asInstanceOf[js.Any])
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
     @scala.inline
-    def deleteTab: Self = this.set("tab", js.undefined)
+    def setTabs(value: Header | DeepReadonly[js.UndefOr[Header]]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: Footer | DeepReadonly[js.UndefOr[Footer]]): Self = this.set("table", value.asInstanceOf[js.Any])
+    def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
     
     @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setText(value: Xsmall | DeepReadonly[js.UndefOr[Xsmall]]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabs(value: Header | DeepReadonly[js.UndefOr[Header]]): Self = this.set("tabs", value.asInstanceOf[js.Any])
+    def setTextArea(value: DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]): Self = StObject.set(x, "textArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabs: Self = this.set("tabs", js.undefined)
+    def setTextAreaUndefined: Self = StObject.set(x, "textArea", js.undefined)
     
     @scala.inline
-    def setText(value: Xsmall | DeepReadonly[js.UndefOr[Xsmall]]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTextInput(value: DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]): Self = StObject.set(x, "textInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextInputUndefined: Self = StObject.set(x, "textInput", js.undefined)
     
     @scala.inline
-    def setTextArea(value: DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]): Self = this.set("textArea", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteTextArea: Self = this.set("textArea", js.undefined)
+    def setVideo(value: Captions | DeepReadonly[js.UndefOr[Captions]]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextInput(value: DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]): Self = this.set("textInput", value.asInstanceOf[js.Any])
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
     @scala.inline
-    def deleteTextInput: Self = this.set("textInput", js.undefined)
+    def setWorldMap(value: Continent | DeepReadonly[js.UndefOr[Continent]]): Self = StObject.set(x, "worldMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo(value: Captions | DeepReadonly[js.UndefOr[Captions]]): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
-    
-    @scala.inline
-    def setWorldMap(value: Continent | DeepReadonly[js.UndefOr[Continent]]): Self = this.set("worldMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldMap: Self = this.set("worldMap", js.undefined)
+    def setWorldMapUndefined: Self = StObject.set(x, "worldMap", js.undefined)
   }
 }

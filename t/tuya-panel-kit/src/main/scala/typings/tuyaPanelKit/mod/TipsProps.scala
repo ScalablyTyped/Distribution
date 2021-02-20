@@ -14,12 +14,13 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.bottomRight
 import typings.tuyaPanelKit.tuyaPanelKitStrings.topCenter
 import typings.tuyaPanelKit.tuyaPanelKitStrings.topLeft
 import typings.tuyaPanelKit.tuyaPanelKitStrings.topRight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TipsProps extends js.Object {
+trait TipsProps extends StObject {
   
   var bgColor: js.UndefOr[String] = js.native
   
@@ -52,86 +53,74 @@ object TipsProps {
   }
   
   @scala.inline
-  implicit class TipsPropsOps[Self <: TipsProps] (val x: Self) extends AnyVal {
+  implicit class TipsPropsMutableBuilder[Self <: TipsProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgColor(value: String): Self = this.set("bgColor", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteBgColor: Self = this.set("bgColor", js.undefined)
+    def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
     @scala.inline
-    def setContentStyle(value: StyleProp[ViewStyle]): Self = this.set("contentStyle", value.asInstanceOf[js.Any])
+    def setCornerPosition(value: topLeft | topCenter | topRight | bottomLeft | bottomCenter | bottomRight): Self = StObject.set(x, "cornerPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentStyle: Self = this.set("contentStyle", js.undefined)
-    
-    @scala.inline
-    def setContentStyleNull: Self = this.set("contentStyle", null)
-    
-    @scala.inline
-    def setCornerPosition(value: topLeft | topCenter | topRight | bottomLeft | bottomCenter | bottomRight): Self = this.set("cornerPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCornerPosition: Self = this.set("cornerPosition", js.undefined)
+    def setCornerPositionUndefined: Self = StObject.set(x, "cornerPosition", js.undefined)
     
     @scala.inline
     def setMotionConfig(
       value: MotionScaleFadeInProps | MotionFadeProps | MotionPullUpProps | MotionScalePullDownProps | MotionPushDownProps
-    ): Self = this.set("motionConfig", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMotionConfig: Self = this.set("motionConfig", js.undefined)
+    def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
     
     @scala.inline
-    def setMotionType(value: Fade | PullUp | ScaleFadeIn | ScalePullDown | PushDown): Self = this.set("motionType", value.asInstanceOf[js.Any])
+    def setMotionType(value: Fade | PullUp | ScaleFadeIn | ScalePullDown | PushDown): Self = StObject.set(x, "motionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMotionType: Self = this.set("motionType", js.undefined)
+    def setMotionTypeUndefined: Self = StObject.set(x, "motionType", js.undefined)
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowCorner(value: Boolean): Self = StObject.set(x, "showCorner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCorner(value: Boolean): Self = this.set("showCorner", value.asInstanceOf[js.Any])
+    def setShowCornerUndefined: Self = StObject.set(x, "showCorner", js.undefined)
     
     @scala.inline
-    def deleteShowCorner: Self = this.set("showCorner", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def setTipStyle(value: StyleProp[ViewStyle]): Self = this.set("tipStyle", value.asInstanceOf[js.Any])
+    def setTipStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tipStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTipStyle: Self = this.set("tipStyle", js.undefined)
+    def setTipStyleNull: Self = StObject.set(x, "tipStyle", null)
     
     @scala.inline
-    def setTipStyleNull: Self = this.set("tipStyle", null)
+    def setTipStyleUndefined: Self = StObject.set(x, "tipStyle", js.undefined)
     
     @scala.inline
-    def setWithModal(value: Boolean): Self = this.set("withModal", value.asInstanceOf[js.Any])
+    def setWithModal(value: Boolean): Self = StObject.set(x, "withModal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWithModal: Self = this.set("withModal", js.undefined)
+    def setWithModalUndefined: Self = StObject.set(x, "withModal", js.undefined)
   }
 }

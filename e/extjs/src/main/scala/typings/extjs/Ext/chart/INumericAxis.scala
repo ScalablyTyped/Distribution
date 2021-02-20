@@ -1,5 +1,6 @@
 package typings.extjs.Ext.chart
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,54 +36,42 @@ object INumericAxis {
   }
   
   @scala.inline
-  implicit class INumericAxisOps[Self <: INumericAxis] (val x: Self) extends AnyVal {
+  implicit class INumericAxisMutableBuilder[Self <: INumericAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustMaximumByMajorUnit(value: Boolean): Self = StObject.set(x, "adjustMaximumByMajorUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjustMaximumByMajorUnitUndefined: Self = StObject.set(x, "adjustMaximumByMajorUnit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdjustMinimumByMajorUnit(value: Boolean): Self = StObject.set(x, "adjustMinimumByMajorUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustMaximumByMajorUnit(value: Boolean): Self = this.set("adjustMaximumByMajorUnit", value.asInstanceOf[js.Any])
+    def setAdjustMinimumByMajorUnitUndefined: Self = StObject.set(x, "adjustMinimumByMajorUnit", js.undefined)
     
     @scala.inline
-    def deleteAdjustMaximumByMajorUnit: Self = this.set("adjustMaximumByMajorUnit", js.undefined)
+    def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustMinimumByMajorUnit(value: Boolean): Self = this.set("adjustMinimumByMajorUnit", value.asInstanceOf[js.Any])
+    def setConstrainUndefined: Self = StObject.set(x, "constrain", js.undefined)
     
     @scala.inline
-    def deleteAdjustMinimumByMajorUnit: Self = this.set("adjustMinimumByMajorUnit", js.undefined)
+    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstrain(value: Boolean): Self = this.set("constrain", value.asInstanceOf[js.Any])
+    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
     @scala.inline
-    def deleteConstrain: Self = this.set("constrain", js.undefined)
+    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimals(value: Double): Self = this.set("decimals", value.asInstanceOf[js.Any])
+    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
     @scala.inline
-    def deleteDecimals: Self = this.set("decimals", js.undefined)
+    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: Double): Self = this.set("maximum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximum: Self = this.set("maximum", js.undefined)
-    
-    @scala.inline
-    def setMinimum(value: Double): Self = this.set("minimum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
   }
 }

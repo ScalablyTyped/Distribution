@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an Attachment. */
 @js.native
-trait IAttachment extends js.Object {
+trait IAttachment extends StObject {
   
   /** Attachment data */
   var data: js.UndefOr[String | Null] = js.native
@@ -32,63 +33,51 @@ object IAttachment {
   }
   
   @scala.inline
-  implicit class IAttachmentOps[Self <: IAttachment] (val x: Self) extends AnyVal {
+  implicit class IAttachmentMutableBuilder[Self <: IAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataNull: Self = StObject.set(x, "data", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setMedia(value: IMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setMediaNull: Self = StObject.set(x, "media", null)
     
     @scala.inline
-    def setDataNull: Self = this.set("data", null)
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def setMedia(value: IMedia): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setSource(value: ISourceReference): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setSourceNull: Self = StObject.set(x, "source", null)
     
     @scala.inline
-    def setMediaNull: Self = this.set("media", null)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setSource(value: ISourceReference): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTestCaseStartedId(value: String): Self = StObject.set(x, "testCaseStartedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setTestCaseStartedIdNull: Self = StObject.set(x, "testCaseStartedId", null)
     
     @scala.inline
-    def setSourceNull: Self = this.set("source", null)
+    def setTestCaseStartedIdUndefined: Self = StObject.set(x, "testCaseStartedId", js.undefined)
     
     @scala.inline
-    def setTestCaseStartedId(value: String): Self = this.set("testCaseStartedId", value.asInstanceOf[js.Any])
+    def setTestStepId(value: String): Self = StObject.set(x, "testStepId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTestCaseStartedId: Self = this.set("testCaseStartedId", js.undefined)
+    def setTestStepIdNull: Self = StObject.set(x, "testStepId", null)
     
     @scala.inline
-    def setTestCaseStartedIdNull: Self = this.set("testCaseStartedId", null)
-    
-    @scala.inline
-    def setTestStepId(value: String): Self = this.set("testStepId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestStepId: Self = this.set("testStepId", js.undefined)
-    
-    @scala.inline
-    def setTestStepIdNull: Self = this.set("testStepId", null)
+    def setTestStepIdUndefined: Self = StObject.set(x, "testStepId", js.undefined)
   }
 }

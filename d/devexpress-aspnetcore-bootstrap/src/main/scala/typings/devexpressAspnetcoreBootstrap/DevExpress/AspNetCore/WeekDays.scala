@@ -1,14 +1,15 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WeekDays extends js.Object
+sealed trait WeekDays extends StObject
 @JSGlobal("DevExpress.AspNetCore.WeekDays")
 @js.native
-object WeekDays extends js.Object {
+object WeekDays extends StObject {
   
   @js.native
   sealed trait EveryDay extends WeekDays

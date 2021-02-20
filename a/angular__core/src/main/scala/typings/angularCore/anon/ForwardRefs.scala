@@ -5,12 +5,13 @@ import typings.typescript.mod.AsExpression
 import typings.typescript.mod.CallExpression
 import typings.typescript.mod.ParameterDeclaration
 import typings.typescript.mod.PropertyDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForwardRefs extends js.Object {
+trait ForwardRefs extends StObject {
   
   var forwardRefs: Set[typings.typescript.mod.Identifier] = js.native
   
@@ -31,27 +32,15 @@ object ForwardRefs {
   }
   
   @scala.inline
-  implicit class ForwardRefsOps[Self <: ForwardRefs] (val x: Self) extends AnyVal {
+  implicit class ForwardRefsMutableBuilder[Self <: ForwardRefs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForwardRefs(value: Set[typings.typescript.mod.Identifier]): Self = StObject.set(x, "forwardRefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethodCalls(value: Set[CallExpression]): Self = StObject.set(x, "methodCalls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForwardRefs(value: Set[typings.typescript.mod.Identifier]): Self = this.set("forwardRefs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMethodCalls(value: Set[CallExpression]): Self = this.set("methodCalls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypedNodes(value: Set[ParameterDeclaration | AsExpression | PropertyDeclaration]): Self = this.set("typedNodes", value.asInstanceOf[js.Any])
+    def setTypedNodes(value: Set[ParameterDeclaration | AsExpression | PropertyDeclaration]): Self = StObject.set(x, "typedNodes", value.asInstanceOf[js.Any])
   }
 }

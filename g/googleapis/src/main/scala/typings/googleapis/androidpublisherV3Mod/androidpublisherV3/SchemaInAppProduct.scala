@@ -1,12 +1,13 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInAppProduct extends js.Object {
+trait SchemaInAppProduct extends StObject {
   
   /**
     * The default language of the localized data, as defined by BCP 47. e.g.
@@ -86,90 +87,78 @@ object SchemaInAppProduct {
   }
   
   @scala.inline
-  implicit class SchemaInAppProductOps[Self <: SchemaInAppProduct] (val x: Self) extends AnyVal {
+  implicit class SchemaInAppProductMutableBuilder[Self <: SchemaInAppProduct] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultPrice(value: SchemaPrice): Self = StObject.set(x, "defaultPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLanguage(value: String): Self = this.set("defaultLanguage", value.asInstanceOf[js.Any])
+    def setDefaultPriceUndefined: Self = StObject.set(x, "defaultPrice", js.undefined)
     
     @scala.inline
-    def deleteDefaultLanguage: Self = this.set("defaultLanguage", js.undefined)
+    def setGracePeriod(value: String): Self = StObject.set(x, "gracePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPrice(value: SchemaPrice): Self = this.set("defaultPrice", value.asInstanceOf[js.Any])
+    def setGracePeriodUndefined: Self = StObject.set(x, "gracePeriod", js.undefined)
     
     @scala.inline
-    def deleteDefaultPrice: Self = this.set("defaultPrice", js.undefined)
+    def setListings(value: StringDictionary[SchemaInAppProductListing]): Self = StObject.set(x, "listings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGracePeriod(value: String): Self = this.set("gracePeriod", value.asInstanceOf[js.Any])
+    def setListingsUndefined: Self = StObject.set(x, "listings", js.undefined)
     
     @scala.inline
-    def deleteGracePeriod: Self = this.set("gracePeriod", js.undefined)
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListings(value: StringDictionary[SchemaInAppProductListing]): Self = this.set("listings", value.asInstanceOf[js.Any])
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     @scala.inline
-    def deleteListings: Self = this.set("listings", js.undefined)
+    def setPrices(value: StringDictionary[SchemaPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
     
     @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
+    def setPurchaseType(value: String): Self = StObject.set(x, "purchaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrices(value: StringDictionary[SchemaPrice]): Self = this.set("prices", value.asInstanceOf[js.Any])
+    def setPurchaseTypeUndefined: Self = StObject.set(x, "purchaseType", js.undefined)
     
     @scala.inline
-    def deletePrices: Self = this.set("prices", js.undefined)
+    def setSeason(value: SchemaSeason): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseType(value: String): Self = this.set("purchaseType", value.asInstanceOf[js.Any])
+    def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
     
     @scala.inline
-    def deletePurchaseType: Self = this.set("purchaseType", js.undefined)
+    def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeason(value: SchemaSeason): Self = this.set("season", value.asInstanceOf[js.Any])
+    def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
     
     @scala.inline
-    def deleteSeason: Self = this.set("season", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSku(value: String): Self = this.set("sku", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSku: Self = this.set("sku", js.undefined)
+    def setSubscriptionPeriod(value: String): Self = StObject.set(x, "subscriptionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubscriptionPeriodUndefined: Self = StObject.set(x, "subscriptionPeriod", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTrialPeriod(value: String): Self = StObject.set(x, "trialPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionPeriod(value: String): Self = this.set("subscriptionPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionPeriod: Self = this.set("subscriptionPeriod", js.undefined)
-    
-    @scala.inline
-    def setTrialPeriod(value: String): Self = this.set("trialPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialPeriod: Self = this.set("trialPeriod", js.undefined)
+    def setTrialPeriodUndefined: Self = StObject.set(x, "trialPeriod", js.undefined)
   }
 }

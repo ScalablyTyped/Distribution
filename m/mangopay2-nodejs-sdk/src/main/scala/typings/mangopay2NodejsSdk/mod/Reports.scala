@@ -2,13 +2,14 @@ package typings.mangopay2NodejsSdk.mod
 
 import typings.mangopay2NodejsSdk.mod.report.CreateReport
 import typings.mangopay2NodejsSdk.mod.report.ReportData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Reports")
 @js.native
-class Reports () extends js.Object {
+class Reports () extends StObject {
   
   /**
     * Create a report

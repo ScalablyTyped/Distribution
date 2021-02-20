@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.lang
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,33 +66,21 @@ object XConnectionPointContainer {
   }
   
   @scala.inline
-  implicit class XConnectionPointContainerOps[Self <: XConnectionPointContainer] (val x: Self) extends AnyVal {
+  implicit class XConnectionPointContainerMutableBuilder[Self <: XConnectionPointContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvise(value: (`type`, XInterface) => Unit): Self = StObject.set(x, "advise", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionPointTypes(value: SafeArray[`type`]): Self = StObject.set(x, "ConnectionPointTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetConnectionPointTypes(value: () => SafeArray[`type`]): Self = StObject.set(x, "getConnectionPointTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnectionPointTypes(value: SafeArray[`type`]): Self = this.set("ConnectionPointTypes", value.asInstanceOf[js.Any])
+    def setQueryConnectionPoint(value: `type` => XConnectionPoint): Self = StObject.set(x, "queryConnectionPoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdvise(value: (`type`, XInterface) => Unit): Self = this.set("advise", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetConnectionPointTypes(value: () => SafeArray[`type`]): Self = this.set("getConnectionPointTypes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryConnectionPoint(value: `type` => XConnectionPoint): Self = this.set("queryConnectionPoint", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnadvise(value: (`type`, XInterface) => Unit): Self = this.set("unadvise", js.Any.fromFunction2(value))
+    def setUnadvise(value: (`type`, XInterface) => Unit): Self = StObject.set(x, "unadvise", js.Any.fromFunction2(value))
   }
 }

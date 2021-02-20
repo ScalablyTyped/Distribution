@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITextModelUpdateOptions extends js.Object {
+trait ITextModelUpdateOptions extends StObject {
   
   var indentSize: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object ITextModelUpdateOptions {
   }
   
   @scala.inline
-  implicit class ITextModelUpdateOptionsOps[Self <: ITextModelUpdateOptions] (val x: Self) extends AnyVal {
+  implicit class ITextModelUpdateOptionsMutableBuilder[Self <: ITextModelUpdateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentSize(value: Double): Self = this.set("indentSize", value.asInstanceOf[js.Any])
+    def setInsertSpacesUndefined: Self = StObject.set(x, "insertSpaces", js.undefined)
     
     @scala.inline
-    def deleteIndentSize: Self = this.set("indentSize", js.undefined)
+    def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaces(value: Boolean): Self = this.set("insertSpaces", value.asInstanceOf[js.Any])
+    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaces: Self = this.set("insertSpaces", js.undefined)
+    def setTrimAutoWhitespace(value: Boolean): Self = StObject.set(x, "trimAutoWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabSize(value: Double): Self = this.set("tabSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabSize: Self = this.set("tabSize", js.undefined)
-    
-    @scala.inline
-    def setTrimAutoWhitespace(value: Boolean): Self = this.set("trimAutoWhitespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrimAutoWhitespace: Self = this.set("trimAutoWhitespace", js.undefined)
+    def setTrimAutoWhitespaceUndefined: Self = StObject.set(x, "trimAutoWhitespace", js.undefined)
   }
 }

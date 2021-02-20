@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLiaInventorySettings extends js.Object {
+trait SchemaLiaInventorySettings extends StObject {
   
   /**
     * The email of the contact for the inventory verification process.
@@ -36,42 +37,30 @@ object SchemaLiaInventorySettings {
   }
   
   @scala.inline
-  implicit class SchemaLiaInventorySettingsOps[Self <: SchemaLiaInventorySettings] (val x: Self) extends AnyVal {
+  implicit class SchemaLiaInventorySettingsMutableBuilder[Self <: SchemaLiaInventorySettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInventoryVerificationContactEmail(value: String): Self = StObject.set(x, "inventoryVerificationContactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInventoryVerificationContactEmailUndefined: Self = StObject.set(x, "inventoryVerificationContactEmail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInventoryVerificationContactName(value: String): Self = StObject.set(x, "inventoryVerificationContactName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventoryVerificationContactEmail(value: String): Self = this.set("inventoryVerificationContactEmail", value.asInstanceOf[js.Any])
+    def setInventoryVerificationContactNameUndefined: Self = StObject.set(x, "inventoryVerificationContactName", js.undefined)
     
     @scala.inline
-    def deleteInventoryVerificationContactEmail: Self = this.set("inventoryVerificationContactEmail", js.undefined)
+    def setInventoryVerificationContactStatus(value: String): Self = StObject.set(x, "inventoryVerificationContactStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventoryVerificationContactName(value: String): Self = this.set("inventoryVerificationContactName", value.asInstanceOf[js.Any])
+    def setInventoryVerificationContactStatusUndefined: Self = StObject.set(x, "inventoryVerificationContactStatus", js.undefined)
     
     @scala.inline
-    def deleteInventoryVerificationContactName: Self = this.set("inventoryVerificationContactName", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventoryVerificationContactStatus(value: String): Self = this.set("inventoryVerificationContactStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInventoryVerificationContactStatus: Self = this.set("inventoryVerificationContactStatus", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

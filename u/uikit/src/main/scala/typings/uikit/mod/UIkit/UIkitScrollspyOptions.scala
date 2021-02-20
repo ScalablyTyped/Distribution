@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitScrollspyOptions extends js.Object {
+trait UIkitScrollspyOptions extends StObject {
   
   var cls: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object UIkitScrollspyOptions {
   }
   
   @scala.inline
-  implicit class UIkitScrollspyOptionsOps[Self <: UIkitScrollspyOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitScrollspyOptionsMutableBuilder[Self <: UIkitScrollspyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCls(value: String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCls(value: String): Self = this.set("cls", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteCls: Self = this.set("cls", js.undefined)
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def `setOffset-left`(value: Double): Self = StObject.set(x, "offset-left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def `setOffset-leftUndefined`: Self = StObject.set(x, "offset-left", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def `setOffset-top`(value: Double): Self = StObject.set(x, "offset-top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOffset-left`(value: Double): Self = this.set("offset-left", value.asInstanceOf[js.Any])
+    def `setOffset-topUndefined`: Self = StObject.set(x, "offset-top", js.undefined)
     
     @scala.inline
-    def `deleteOffset-left`: Self = this.set("offset-left", js.undefined)
+    def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOffset-top`(value: Double): Self = this.set("offset-top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteOffset-top`: Self = this.set("offset-top", js.undefined)
-    
-    @scala.inline
-    def setRepeat(value: Boolean): Self = this.set("repeat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
   }
 }

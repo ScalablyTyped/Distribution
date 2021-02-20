@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListOutgoingTypedLinksResponse extends js.Object {
+trait ListOutgoingTypedLinksResponse extends StObject {
   
   /**
     * The pagination token.
@@ -26,33 +27,21 @@ object ListOutgoingTypedLinksResponse {
   }
   
   @scala.inline
-  implicit class ListOutgoingTypedLinksResponseOps[Self <: ListOutgoingTypedLinksResponse] (val x: Self) extends AnyVal {
+  implicit class ListOutgoingTypedLinksResponseMutableBuilder[Self <: ListOutgoingTypedLinksResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypedLinkSpecifiers(value: TypedLinkSpecifierList): Self = StObject.set(x, "TypedLinkSpecifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTypedLinkSpecifiersUndefined: Self = StObject.set(x, "TypedLinkSpecifiers", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTypedLinkSpecifiersVarargs(value: TypedLinkSpecifier*): Self = this.set("TypedLinkSpecifiers", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypedLinkSpecifiers(value: TypedLinkSpecifierList): Self = this.set("TypedLinkSpecifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypedLinkSpecifiers: Self = this.set("TypedLinkSpecifiers", js.undefined)
+    def setTypedLinkSpecifiersVarargs(value: TypedLinkSpecifier*): Self = StObject.set(x, "TypedLinkSpecifiers", js.Array(value :_*))
   }
 }

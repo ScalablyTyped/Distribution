@@ -1,12 +1,13 @@
 package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VariantArgs[TStyle, K /* <: String */, TPropName] extends js.Object {
+trait VariantArgs[TStyle, K /* <: String */, TPropName] extends StObject {
   
   var key: js.UndefOr[String] = js.native
   
@@ -32,46 +33,34 @@ object VariantArgs {
   }
   
   @scala.inline
-  implicit class VariantArgsOps[Self <: VariantArgs[_, _, _], TStyle, K /* <: String */, TPropName] (val x: Self with (VariantArgs[TStyle, K, TPropName])) extends AnyVal {
+  implicit class VariantArgsMutableBuilder[Self <: VariantArgs[_, _, _], TStyle, K /* <: String */, TPropName] (val x: Self with (VariantArgs[TStyle, K, TPropName])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProp(value: TPropName): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProp(value: TPropName): Self = this.set("prop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProp: Self = this.set("prop", js.undefined)
-    
-    @scala.inline
-    def setScale(value: String): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
     def setVariants(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in K ]: TStyle}
       */ typings.styledSystem.styledSystemStrings.VariantArgs with TopLevel[js.Any]
-    ): Self = this.set("variants", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVariants: Self = this.set("variants", js.undefined)
+    def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
   }
 }

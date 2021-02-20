@@ -18,17 +18,22 @@ import typings.typeorm.typeormStrings.rowid
 import typings.typeorm.typeormStrings.string
 import typings.typeorm.typeormStrings.uuid
 import typings.typeorm.valueTransformerMod.ValueTransformer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/metadata/ColumnMetadata", JSImport.Namespace)
-@js.native
-object columnMetadataMod extends js.Object {
+object columnMetadataMod {
   
+  @JSImport("typeorm/browser/metadata/ColumnMetadata", "ColumnMetadata")
   @js.native
-  class ColumnMetadata protected () extends js.Object {
+  class ColumnMetadata protected () extends StObject {
     def this(options: ClosureType) = this()
+    
+    /**
+      * Default database value.
+      */
+    var default: js.UndefOr[js.Any] = js.native
     
     /**
       * Generated column expression. Supports only in MySQL.
@@ -88,11 +93,6 @@ object columnMetadataMod extends js.Object {
       * If property is not in embeds then it returns just database name of the column.
       */
     var databasePath: String = js.native
-    
-    /**
-      * Default database value.
-      */
-    var default: js.UndefOr[js.Any] = js.native
     
     /**
       * Embedded metadata where this column metadata is.

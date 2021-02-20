@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceGroupManagerStatusStateful extends js.Object {
+trait InstanceGroupManagerStatusStateful extends StObject {
   
   /**
     * [Output Only] A bit indicating whether the managed instance group has stateful configuration, that is, if you have configured any items in a stateful policy or in per-instance
@@ -26,30 +27,18 @@ object InstanceGroupManagerStatusStateful {
   }
   
   @scala.inline
-  implicit class InstanceGroupManagerStatusStatefulOps[Self <: InstanceGroupManagerStatusStateful] (val x: Self) extends AnyVal {
+  implicit class InstanceGroupManagerStatusStatefulMutableBuilder[Self <: InstanceGroupManagerStatusStateful] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasStatefulConfig(value: Boolean): Self = StObject.set(x, "hasStatefulConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasStatefulConfigUndefined: Self = StObject.set(x, "hasStatefulConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPerInstanceConfigs(value: InstanceGroupManagerStatusStatefulPerInstanceConfigs): Self = StObject.set(x, "perInstanceConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasStatefulConfig(value: Boolean): Self = this.set("hasStatefulConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasStatefulConfig: Self = this.set("hasStatefulConfig", js.undefined)
-    
-    @scala.inline
-    def setPerInstanceConfigs(value: InstanceGroupManagerStatusStatefulPerInstanceConfigs): Self = this.set("perInstanceConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerInstanceConfigs: Self = this.set("perInstanceConfigs", js.undefined)
+    def setPerInstanceConfigsUndefined: Self = StObject.set(x, "perInstanceConfigs", js.undefined)
   }
 }

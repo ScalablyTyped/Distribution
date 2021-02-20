@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Comment extends js.Object {
+trait Comment extends StObject {
   
   var _end: Double = js.native
   
@@ -44,45 +45,33 @@ object Comment {
   }
   
   @scala.inline
-  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndsLine(value: Boolean): Self = StObject.set(x, "endsLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullText(value: () => String): Self = StObject.set(x, "fullText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_end(value: Double): Self = this.set("_end", value.asInstanceOf[js.Any])
+    def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_start(value: Double): Self = this.set("_start", value.asInstanceOf[js.Any])
+    def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_trivia(value: js.Any): Self = this.set("_trivia", value.asInstanceOf[js.Any])
+    def setStructuralEquals(value: (Comment, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEnd(value: () => Double): Self = this.set("end", js.Any.fromFunction0(value))
+    def set_end(value: Double): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndsLine(value: Boolean): Self = this.set("endsLine", value.asInstanceOf[js.Any])
+    def set_start(value: Double): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullText(value: () => String): Self = this.set("fullText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setKind(value: () => SyntaxKind): Self = this.set("kind", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStart(value: () => Double): Self = this.set("start", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStructuralEquals(value: (Comment, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
+    def set_trivia(value: js.Any): Self = StObject.set(x, "_trivia", value.asInstanceOf[js.Any])
   }
 }

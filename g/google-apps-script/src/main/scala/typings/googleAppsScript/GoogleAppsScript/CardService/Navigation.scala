@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A helper object that controls card navigation. See the card navigation guide for more details.
   */
 @js.native
-trait Navigation extends js.Object {
+trait Navigation extends StObject {
   
   def popCard(): Navigation = js.native
   
@@ -38,36 +39,24 @@ object Navigation {
   }
   
   @scala.inline
-  implicit class NavigationOps[Self <: Navigation] (val x: Self) extends AnyVal {
+  implicit class NavigationMutableBuilder[Self <: Navigation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPopCard(value: () => Navigation): Self = StObject.set(x, "popCard", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPopToNamedCard(value: String => Navigation): Self = StObject.set(x, "popToNamedCard", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPopToRoot(value: () => Navigation): Self = StObject.set(x, "popToRoot", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPopCard(value: () => Navigation): Self = this.set("popCard", js.Any.fromFunction0(value))
+    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPopToNamedCard(value: String => Navigation): Self = this.set("popToNamedCard", js.Any.fromFunction1(value))
+    def setPushCard(value: Card => Navigation): Self = StObject.set(x, "pushCard", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPopToRoot(value: () => Navigation): Self = this.set("popToRoot", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrintJson(value: () => String): Self = this.set("printJson", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPushCard(value: Card => Navigation): Self = this.set("pushCard", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateCard(value: Card => Navigation): Self = this.set("updateCard", js.Any.fromFunction1(value))
+    def setUpdateCard(value: Card => Navigation): Self = StObject.set(x, "updateCard", js.Any.fromFunction1(value))
   }
 }

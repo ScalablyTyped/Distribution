@@ -1,12 +1,13 @@
 package typings.emberTestHelpers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/test-helpers/teardown-rendering-context", JSImport.Namespace)
-@js.native
-object teardownRenderingContextMod extends js.Object {
+object teardownRenderingContextMod {
   
+  @JSImport("@ember/test-helpers/teardown-rendering-context", JSImport.Default)
+  @js.native
   def default(context: js.Object): js.Promise[Unit] = js.native
 }

@@ -1,12 +1,13 @@
 package typings.bootstrapDatepicker
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatepickerCustomFormatOptions extends js.Object {
+trait DatepickerCustomFormatOptions extends StObject {
   
   var toDisplay: js.UndefOr[
     js.Function3[/* date */ String, /* format */ js.Any, /* language */ js.Any, String]
@@ -25,30 +26,18 @@ object DatepickerCustomFormatOptions {
   }
   
   @scala.inline
-  implicit class DatepickerCustomFormatOptionsOps[Self <: DatepickerCustomFormatOptions] (val x: Self) extends AnyVal {
+  implicit class DatepickerCustomFormatOptionsMutableBuilder[Self <: DatepickerCustomFormatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setToDisplay(value: (/* date */ String, /* format */ js.Any, /* language */ js.Any) => String): Self = StObject.set(x, "toDisplay", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setToDisplayUndefined: Self = StObject.set(x, "toDisplay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToValue(value: (/* date */ String, /* format */ js.Any, /* language */ js.Any) => Date): Self = StObject.set(x, "toValue", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setToDisplay(value: (/* date */ String, /* format */ js.Any, /* language */ js.Any) => String): Self = this.set("toDisplay", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteToDisplay: Self = this.set("toDisplay", js.undefined)
-    
-    @scala.inline
-    def setToValue(value: (/* date */ String, /* format */ js.Any, /* language */ js.Any) => Date): Self = this.set("toValue", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteToValue: Self = this.set("toValue", js.undefined)
+    def setToValueUndefined: Self = StObject.set(x, "toValue", js.undefined)
   }
 }

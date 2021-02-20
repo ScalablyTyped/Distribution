@@ -2,6 +2,7 @@ package typings.extjs.Ext.grid
 
 import typings.extjs.Ext.data.IModel
 import typings.extjs.Ext.form.IBasic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,36 +39,24 @@ object IRowEditor {
   }
   
   @scala.inline
-  implicit class IRowEditorOps[Self <: IRowEditor] (val x: Self) extends AnyVal {
+  implicit class IRowEditorMutableBuilder[Self <: IRowEditor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetRefItems(value: () => Unit): Self = StObject.set(x, "getRefItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRefItemsUndefined: Self = StObject.set(x, "getRefItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadRecord(value: /* record */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRefItems(value: () => Unit): Self = this.set("getRefItems", js.Any.fromFunction0(value))
+    def setLoadRecordUndefined: Self = StObject.set(x, "loadRecord", js.undefined)
     
     @scala.inline
-    def deleteGetRefItems: Self = this.set("getRefItems", js.undefined)
+    def setStartEdit(value: (/* record */ js.UndefOr[IModel], /* columnHeader */ js.UndefOr[IModel]) => Unit): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadRecord(value: /* record */ js.UndefOr[js.Any] => IBasic): Self = this.set("loadRecord", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteLoadRecord: Self = this.set("loadRecord", js.undefined)
-    
-    @scala.inline
-    def setStartEdit(value: (/* record */ js.UndefOr[IModel], /* columnHeader */ js.UndefOr[IModel]) => Unit): Self = this.set("startEdit", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteStartEdit: Self = this.set("startEdit", js.undefined)
+    def setStartEditUndefined: Self = StObject.set(x, "startEdit", js.undefined)
   }
 }

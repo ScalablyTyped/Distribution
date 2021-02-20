@@ -15,6 +15,7 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.TypeParam
 import typings.jsrsasign.jsrsasignStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,9 +49,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - `KJUR.asn1.cms.SigningCertificate`
   * - `KJUR.asn1.cms.SigningCertificateV2`
   */
-@JSImport("jsrsasign", "KJUR.asn1.cms")
-@js.native
-object cms extends js.Object {
+object cms {
   
   /**
     * Attribute class for base of CMS attribute
@@ -64,6 +63,7 @@ object cms extends js.Object {
     * AttributeSetValue ::= SET OF ANY
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.Attribute")
   @js.native
   class Attribute ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
@@ -87,14 +87,14 @@ object cms extends js.Object {
     * o.add(new KJUR.asn1.cms.SigningTime()); // add SigningTime attribute
     * hex = o.getEncodedHex();                // get hex encoded ASN.1 data
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.AttributeList")
   @js.native
   class AttributeList ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.AttributeList {
     def this(params: Sorted) = this()
   }
   
-  @js.native
-  object CMSUtil extends js.Object {
+  object CMSUtil {
     
     /**
       * generate SignedData object specified by JSON parameters
@@ -119,7 +119,11 @@ object cms extends js.Object {
       *   }]
       * });
       */
+    @JSImport("jsrsasign", "KJUR.asn1.cms.CMSUtil.SignedData")
+    @js.native
     def SignedData(): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
+    @JSImport("jsrsasign", "KJUR.asn1.cms.CMSUtil.SignedData")
+    @js.native
     def SignedData(param: Certs): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
     
     /**
@@ -146,7 +150,11 @@ object cms extends js.Object {
       *   ]
       * }
       */
+    @JSImport("jsrsasign", "KJUR.asn1.cms.CMSUtil.verifySignedData")
+    @js.native
     def verifySignedData(): IsValid = js.native
+    @JSImport("jsrsasign", "KJUR.asn1.cms.CMSUtil.verifySignedData")
+    @js.native
     def verifySignedData(param: Cms): IsValid = js.native
   }
   
@@ -166,6 +174,7 @@ object cms extends js.Object {
     * seq = new KJUR.asn1.DERSequence({array: a});
     * o = new KJUR.asn1.cms.ContentInfo({type: 'data', obj: seq});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.ContentInfo")
   @js.native
   class ContentInfo ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.ContentInfo {
@@ -188,6 +197,7 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.ContentType({name: 'data'});
     * o = new KJUR.asn1.cms.ContentType({oid: '1.2.840.113549.1.9.16.1.4'});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.ContentType")
   @js.native
   class ContentType ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute {
@@ -214,6 +224,7 @@ object cms extends js.Object {
     * // for detached contents (i.e. data not concluded in eContent)
     * o.isDetached = true;               // false as default
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.EncapsulatedContentInfo")
   @js.native
   class EncapsulatedContentInfo ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.EncapsulatedContentInfo {
@@ -238,6 +249,7 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.IssuerAndSerialNumber({cert: certPEM});
     * o = new KJUR.asn1.cms.IssuerAndSerialNumber(certPEM); // since 1.0.3
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.IssuerAndSerialNumber")
   @js.native
   class IssuerAndSerialNumber ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.IssuerAndSerialNumber {
@@ -260,6 +272,7 @@ object cms extends js.Object {
     * @example
     * o = new KJUR.asn1.cms.MessageDigest({hex: 'a1a2a3a4...'});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.MessageDigest")
   @js.native
   class MessageDigest ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute {
@@ -296,6 +309,7 @@ object cms extends js.Object {
     * sd.signerInfoList[0].sign(prvP8PEM, "SHA256withRSA");
     * hex = sd.getContentInfoEncodedHex();
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.SignedData")
   @js.native
   class SignedData ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData
@@ -322,6 +336,7 @@ object cms extends js.Object {
     * o.dSignedAttrs.add(new KJUR.asn1.cms.SigningTime());
     * o.sign(privteKeyParam, "SHA1withRSA");
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.SignerInfo")
   @js.native
   class SignerInfo ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignerInfo {
@@ -350,6 +365,7 @@ object cms extends js.Object {
     * @example
     * o = new KJUR.asn1.cms.SigningCertificate({array: [certPEM]});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.SigningCertificate")
   @js.native
   class SigningCertificate ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificate {
@@ -385,6 +401,7 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.SigningCertificateV2({array: [certPEM],
     *                                             hashAlg: 'sha512'});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.SigningCertificateV2")
   @js.native
   class SigningCertificateV2 ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificateV2 {
@@ -412,6 +429,7 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.SigningTime({str: '20140517093800Z'}); // specified GeneralizedTime
     * o = new KJUR.asn1.cms.SigningTime({str: '140517093800Z'}); // specified UTCTime
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.SigningTime")
   @js.native
   class SigningTime ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute {

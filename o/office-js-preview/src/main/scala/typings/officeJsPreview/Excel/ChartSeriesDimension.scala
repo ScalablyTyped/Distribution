@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartSeriesDimension extends js.Object
+sealed trait ChartSeriesDimension extends StObject
 /**
   *
   * Represents the dimensions when getting values from chart series.
@@ -14,7 +15,7 @@ sealed trait ChartSeriesDimension extends js.Object
   */
 @JSGlobal("Excel.ChartSeriesDimension")
 @js.native
-object ChartSeriesDimension extends js.Object {
+object ChartSeriesDimension extends StObject {
   
   /**
     * The chart series axis for the bubble sizes in bubble charts.

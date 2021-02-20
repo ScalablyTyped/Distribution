@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSqladmin.anon.Callback
 import typings.maximMazurokGapiClientSqladmin.anon.Instance
 import typings.maximMazurokGapiClientSqladmin.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabasesResource extends js.Object {
+trait DatabasesResource extends StObject {
   
   /** Deletes a database from a Cloud SQL instance. */
   def delete(): Request[Operation] = js.native

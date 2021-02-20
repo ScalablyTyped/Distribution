@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLTxtRange extends js.Object {
+trait IHTMLTxtRange extends StObject {
   
   @JSName("MSHTML.IHTMLTxtRange_typekey")
   var MSHTMLDotIHTMLTxtRange_typekey: IHTMLTxtRange = js.native

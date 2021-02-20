@@ -1,11 +1,12 @@
 package typings.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadioMixinOptions extends js.Object {
+trait RadioMixinOptions extends StObject {
   
   /**
     * Defines the Radio channel that will be used for the requests and/or
@@ -34,36 +35,24 @@ object RadioMixinOptions {
   }
   
   @scala.inline
-  implicit class RadioMixinOptionsOps[Self <: RadioMixinOptions] (val x: Self) extends AnyVal {
+  implicit class RadioMixinOptionsMutableBuilder[Self <: RadioMixinOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRadioEvents(value: js.Any): Self = StObject.set(x, "radioEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelName(value: String): Self = this.set("channelName", value.asInstanceOf[js.Any])
+    def setRadioEventsUndefined: Self = StObject.set(x, "radioEvents", js.undefined)
     
     @scala.inline
-    def deleteChannelName: Self = this.set("channelName", js.undefined)
+    def setRadioRequests(value: js.Any): Self = StObject.set(x, "radioRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadioEvents(value: js.Any): Self = this.set("radioEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadioEvents: Self = this.set("radioEvents", js.undefined)
-    
-    @scala.inline
-    def setRadioRequests(value: js.Any): Self = this.set("radioRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadioRequests: Self = this.set("radioRequests", js.undefined)
+    def setRadioRequestsUndefined: Self = StObject.set(x, "radioRequests", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.twineSugarcube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Override extends js.Object {
+trait Override extends StObject {
   
   /**
     * Allows the destination of passage navigation to be overridden. The callback is passed one parameter, the original
@@ -41,21 +42,9 @@ object Override {
   }
   
   @scala.inline
-  implicit class OverrideOps[Self <: Override] (val x: Self) extends AnyVal {
+  implicit class OverrideMutableBuilder[Self <: Override] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOverride(value: String => js.Any): Self = this.set("override", js.Any.fromFunction1(value))
+    def setOverride(value: String => js.Any): Self = StObject.set(x, "override", js.Any.fromFunction1(value))
   }
 }

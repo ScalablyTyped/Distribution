@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudbilling.gapi.client.cloudbilling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TierRate extends js.Object {
+trait TierRate extends StObject {
   
   /** Usage is priced at this rate only after this amount. Example: start_usage_amount of 10 indicates that the usage will be priced at the unit_price after the first 10 usage_units. */
   var startUsageAmount: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object TierRate {
   }
   
   @scala.inline
-  implicit class TierRateOps[Self <: TierRate] (val x: Self) extends AnyVal {
+  implicit class TierRateMutableBuilder[Self <: TierRate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStartUsageAmount(value: Double): Self = StObject.set(x, "startUsageAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartUsageAmountUndefined: Self = StObject.set(x, "startUsageAmount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnitPrice(value: Money): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartUsageAmount(value: Double): Self = this.set("startUsageAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartUsageAmount: Self = this.set("startUsageAmount", js.undefined)
-    
-    @scala.inline
-    def setUnitPrice(value: Money): Self = this.set("unitPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitPrice: Self = this.set("unitPrice", js.undefined)
+    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
   }
 }

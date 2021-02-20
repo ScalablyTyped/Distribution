@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CPU extends js.Object {
+trait CPU extends StObject {
   
   /**
     * The CPU's architecture (for example, x86 or ARM).
@@ -31,36 +32,24 @@ object CPU {
   }
   
   @scala.inline
-  implicit class CPUOps[Self <: CPU] (val x: Self) extends AnyVal {
+  implicit class CPUMutableBuilder[Self <: CPU] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClock(value: Double): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchitecture(value: String): Self = this.set("architecture", value.asInstanceOf[js.Any])
+    def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
     
     @scala.inline
-    def deleteArchitecture: Self = this.set("architecture", js.undefined)
+    def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClock(value: Double): Self = this.set("clock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClock: Self = this.set("clock", js.undefined)
-    
-    @scala.inline
-    def setFrequency(value: String): Self = this.set("frequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
   }
 }

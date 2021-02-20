@@ -1,5 +1,6 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,72 +35,60 @@ object SendPollOptions {
   }
   
   @scala.inline
-  implicit class SendPollOptionsOps[Self <: SendPollOptions] (val x: Self) extends AnyVal {
+  implicit class SendPollOptionsMutableBuilder[Self <: SendPollOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllows_multiple_answers(value: Boolean): Self = StObject.set(x, "allows_multiple_answers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllows_multiple_answersUndefined: Self = StObject.set(x, "allows_multiple_answers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose_date(value: Double): Self = StObject.set(x, "close_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllows_multiple_answers(value: Boolean): Self = this.set("allows_multiple_answers", value.asInstanceOf[js.Any])
+    def setClose_dateUndefined: Self = StObject.set(x, "close_date", js.undefined)
     
     @scala.inline
-    def deleteAllows_multiple_answers: Self = this.set("allows_multiple_answers", js.undefined)
+    def setCorrect_option_id(value: Double): Self = StObject.set(x, "correct_option_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose_date(value: Double): Self = this.set("close_date", value.asInstanceOf[js.Any])
+    def setCorrect_option_idUndefined: Self = StObject.set(x, "correct_option_id", js.undefined)
     
     @scala.inline
-    def deleteClose_date: Self = this.set("close_date", js.undefined)
+    def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrect_option_id(value: Double): Self = this.set("correct_option_id", value.asInstanceOf[js.Any])
+    def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
     
     @scala.inline
-    def deleteCorrect_option_id: Self = this.set("correct_option_id", js.undefined)
+    def setExplanation_parse_mode(value: ParseMode): Self = StObject.set(x, "explanation_parse_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplanation(value: String): Self = this.set("explanation", value.asInstanceOf[js.Any])
+    def setExplanation_parse_modeUndefined: Self = StObject.set(x, "explanation_parse_mode", js.undefined)
     
     @scala.inline
-    def deleteExplanation: Self = this.set("explanation", js.undefined)
+    def setIs_anonymous(value: Boolean): Self = StObject.set(x, "is_anonymous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplanation_parse_mode(value: ParseMode): Self = this.set("explanation_parse_mode", value.asInstanceOf[js.Any])
+    def setIs_anonymousUndefined: Self = StObject.set(x, "is_anonymous", js.undefined)
     
     @scala.inline
-    def deleteExplanation_parse_mode: Self = this.set("explanation_parse_mode", js.undefined)
+    def setIs_closed(value: Boolean): Self = StObject.set(x, "is_closed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_anonymous(value: Boolean): Self = this.set("is_anonymous", value.asInstanceOf[js.Any])
+    def setIs_closedUndefined: Self = StObject.set(x, "is_closed", js.undefined)
     
     @scala.inline
-    def deleteIs_anonymous: Self = this.set("is_anonymous", js.undefined)
+    def setOpen_period(value: Double): Self = StObject.set(x, "open_period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_closed(value: Boolean): Self = this.set("is_closed", value.asInstanceOf[js.Any])
+    def setOpen_periodUndefined: Self = StObject.set(x, "open_period", js.undefined)
     
     @scala.inline
-    def deleteIs_closed: Self = this.set("is_closed", js.undefined)
+    def setType(value: PollType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen_period(value: Double): Self = this.set("open_period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpen_period: Self = this.set("open_period", js.undefined)
-    
-    @scala.inline
-    def setType(value: PollType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

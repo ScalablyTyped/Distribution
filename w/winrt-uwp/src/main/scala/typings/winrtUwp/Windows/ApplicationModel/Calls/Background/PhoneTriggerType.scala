@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneTriggerType extends js.Object
+sealed trait PhoneTriggerType extends StObject
 /** Indicates a type of event for a phone trigger. */
 @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneTriggerType")
 @js.native
-object PhoneTriggerType extends js.Object {
+object PhoneTriggerType extends StObject {
   
   /** Airplane mode on a phone line was disabled so the phone could make an emergency call. */
   @js.native

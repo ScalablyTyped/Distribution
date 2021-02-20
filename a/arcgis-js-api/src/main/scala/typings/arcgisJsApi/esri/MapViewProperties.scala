@@ -9,6 +9,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.center
 import typings.arcgisJsApi.arcgisJsApiStrings.left
 import typings.arcgisJsApi.arcgisJsApiStrings.right
 import typings.arcgisJsApi.arcgisJsApiStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,83 +100,71 @@ object MapViewProperties {
   }
   
   @scala.inline
-  implicit class MapViewPropertiesOps[Self <: MapViewProperties] (val x: Self) extends AnyVal {
+  implicit class MapViewPropertiesMutableBuilder[Self <: MapViewProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: ColorBackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenter(value: PointProperties | js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: ColorBackgroundProperties): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
     
     @scala.inline
-    def setCenterVarargs(value: Double*): Self = this.set("center", js.Array(value :_*))
+    def setConstraints(value: MapViewConstraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: PointProperties | js.Array[Double]): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraints(value: MapViewConstraints): Self = this.set("constraints", value.asInstanceOf[js.Any])
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def deleteConstraints: Self = this.set("constraints", js.undefined)
+    def setHighlightOptions(value: MapViewHighlightOptionsProperties): Self = StObject.set(x, "highlightOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtent(value: ExtentProperties): Self = this.set("extent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
-    
-    @scala.inline
-    def setHighlightOptions(value: MapViewHighlightOptionsProperties): Self = this.set("highlightOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighlightOptions: Self = this.set("highlightOptions", js.undefined)
+    def setHighlightOptionsUndefined: Self = StObject.set(x, "highlightOptions", js.undefined)
     
     @scala.inline
     def setResizeAlign(
       value: center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right`
-    ): Self = this.set("resizeAlign", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "resizeAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResizeAlign: Self = this.set("resizeAlign", js.undefined)
+    def setResizeAlignUndefined: Self = StObject.set(x, "resizeAlign", js.undefined)
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def setViewpoint(value: ViewpointProperties): Self = this.set("viewpoint", value.asInstanceOf[js.Any])
+    def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewpoint: Self = this.set("viewpoint", js.undefined)
+    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
     
     @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

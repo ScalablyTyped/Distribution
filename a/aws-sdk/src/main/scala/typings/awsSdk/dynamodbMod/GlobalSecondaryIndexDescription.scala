@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalSecondaryIndexDescription extends js.Object {
+trait GlobalSecondaryIndexDescription extends StObject {
   
   /**
     * Indicates whether the index is currently backfilling. Backfilling is the process of reading items from the table and determining whether they can be added to the index. (Not all items will qualify: For example, a partition key cannot have any duplicate values.) If an item can be added to the index, DynamoDB will do so. After all items have been processed, the backfilling operation is complete and Backfilling is false. You can delete an index that is being created during the Backfilling phase when IndexStatus is set to CREATING and Backfilling is true. You can't delete the index that is being created when IndexStatus is set to CREATING and Backfilling is false.   For indexes that were created during a CreateTable operation, the Backfilling attribute does not appear in the DescribeTable output. 
@@ -61,75 +62,63 @@ object GlobalSecondaryIndexDescription {
   }
   
   @scala.inline
-  implicit class GlobalSecondaryIndexDescriptionOps[Self <: GlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
+  implicit class GlobalSecondaryIndexDescriptionMutableBuilder[Self <: GlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackfilling(value: Backfilling): Self = StObject.set(x, "Backfilling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackfillingUndefined: Self = StObject.set(x, "Backfilling", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexArn(value: String): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackfilling(value: Backfilling): Self = this.set("Backfilling", value.asInstanceOf[js.Any])
+    def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
     
     @scala.inline
-    def deleteBackfilling: Self = this.set("Backfilling", js.undefined)
+    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexArn(value: String): Self = this.set("IndexArn", value.asInstanceOf[js.Any])
+    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
     @scala.inline
-    def deleteIndexArn: Self = this.set("IndexArn", js.undefined)
+    def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexSizeBytes(value: Long): Self = this.set("IndexSizeBytes", value.asInstanceOf[js.Any])
+    def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
     
     @scala.inline
-    def deleteIndexSizeBytes: Self = this.set("IndexSizeBytes", js.undefined)
+    def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexStatus(value: IndexStatus): Self = this.set("IndexStatus", value.asInstanceOf[js.Any])
+    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
     @scala.inline
-    def deleteIndexStatus: Self = this.set("IndexStatus", js.undefined)
+    def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCount(value: Long): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
     @scala.inline
-    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
     @scala.inline
-    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
     
     @scala.inline
-    def deleteKeySchema: Self = this.set("KeySchema", js.undefined)
+    def setProvisionedThroughput(value: ProvisionedThroughputDescription): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: Projection): Self = this.set("Projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjection: Self = this.set("Projection", js.undefined)
-    
-    @scala.inline
-    def setProvisionedThroughput(value: ProvisionedThroughputDescription): Self = this.set("ProvisionedThroughput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisionedThroughput: Self = this.set("ProvisionedThroughput", js.undefined)
+    def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
   }
 }

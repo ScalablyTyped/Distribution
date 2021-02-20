@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeScanningListRecentAnalysesEndpoint extends js.Object {
+trait CodeScanningListRecentAnalysesEndpoint extends StObject {
   
   var owner: String = js.native
   
@@ -30,36 +31,24 @@ object CodeScanningListRecentAnalysesEndpoint {
   }
   
   @scala.inline
-  implicit class CodeScanningListRecentAnalysesEndpointOps[Self <: CodeScanningListRecentAnalysesEndpoint] (val x: Self) extends AnyVal {
+  implicit class CodeScanningListRecentAnalysesEndpointMutableBuilder[Self <: CodeScanningListRecentAnalysesEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setTool_name(value: String): Self = StObject.set(x, "tool_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
-    
-    @scala.inline
-    def setTool_name(value: String): Self = this.set("tool_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTool_name: Self = this.set("tool_name", js.undefined)
+    def setTool_nameUndefined: Self = StObject.set(x, "tool_name", js.undefined)
   }
 }

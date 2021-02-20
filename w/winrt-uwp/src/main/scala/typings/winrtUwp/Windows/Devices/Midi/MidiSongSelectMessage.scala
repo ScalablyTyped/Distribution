@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Midi
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a MIDI message that specifies the selected song. */
 @js.native
-trait MidiSongSelectMessage extends js.Object {
+trait MidiSongSelectMessage extends StObject {
   
   /** Gets the array of bytes associated with the MIDI message, including status byte. */
   var rawData: IBuffer = js.native
@@ -31,30 +32,18 @@ object MidiSongSelectMessage {
   }
   
   @scala.inline
-  implicit class MidiSongSelectMessageOps[Self <: MidiSongSelectMessage] (val x: Self) extends AnyVal {
+  implicit class MidiSongSelectMessageMutableBuilder[Self <: MidiSongSelectMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSong(value: Double): Self = StObject.set(x, "song", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawData(value: IBuffer): Self = this.set("rawData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSong(value: Double): Self = this.set("song", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MidiMessageType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

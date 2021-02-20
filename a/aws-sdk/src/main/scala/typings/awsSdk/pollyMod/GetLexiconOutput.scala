@@ -1,11 +1,12 @@
 package typings.awsSdk.pollyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLexiconOutput extends js.Object {
+trait GetLexiconOutput extends StObject {
   
   /**
     * Lexicon object that provides name and the string content of the lexicon. 
@@ -26,30 +27,18 @@ object GetLexiconOutput {
   }
   
   @scala.inline
-  implicit class GetLexiconOutputOps[Self <: GetLexiconOutput] (val x: Self) extends AnyVal {
+  implicit class GetLexiconOutputMutableBuilder[Self <: GetLexiconOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLexicon(value: Lexicon): Self = StObject.set(x, "Lexicon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLexiconAttributes(value: LexiconAttributes): Self = StObject.set(x, "LexiconAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLexiconAttributesUndefined: Self = StObject.set(x, "LexiconAttributes", js.undefined)
     
     @scala.inline
-    def setLexicon(value: Lexicon): Self = this.set("Lexicon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLexicon: Self = this.set("Lexicon", js.undefined)
-    
-    @scala.inline
-    def setLexiconAttributes(value: LexiconAttributes): Self = this.set("LexiconAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLexiconAttributes: Self = this.set("LexiconAttributes", js.undefined)
+    def setLexiconUndefined: Self = StObject.set(x, "Lexicon", js.undefined)
   }
 }

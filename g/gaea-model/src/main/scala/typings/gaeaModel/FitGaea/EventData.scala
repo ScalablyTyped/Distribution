@@ -1,11 +1,12 @@
 package typings.gaeaModel.FitGaea
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventData extends js.Object {
+trait EventData extends StObject {
   
   var event: String = js.native
   
@@ -32,42 +33,30 @@ object EventData {
   }
   
   @scala.inline
-  implicit class EventDataOps[Self <: EventData] (val x: Self) extends AnyVal {
+  implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventData(value: EventActionJumpUrl | EventActionCall | EventActionEvent): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
     
     @scala.inline
-    def setEvent(value: String): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setEventIndex(value: Double): Self = StObject.set(x, "eventIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventIndex(value: Double): Self = this.set("eventIndex", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTypeData(value: EventTriggerEvent): Self = StObject.set(x, "typeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeIndex(value: Double): Self = this.set("typeIndex", value.asInstanceOf[js.Any])
+    def setTypeDataUndefined: Self = StObject.set(x, "typeData", js.undefined)
     
     @scala.inline
-    def setEventData(value: EventActionJumpUrl | EventActionCall | EventActionEvent): Self = this.set("eventData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventData: Self = this.set("eventData", js.undefined)
-    
-    @scala.inline
-    def setTypeData(value: EventTriggerEvent): Self = this.set("typeData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeData: Self = this.set("typeData", js.undefined)
+    def setTypeIndex(value: Double): Self = StObject.set(x, "typeIndex", value.asInstanceOf[js.Any])
   }
 }

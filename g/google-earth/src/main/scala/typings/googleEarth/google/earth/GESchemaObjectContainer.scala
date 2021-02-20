@@ -1,11 +1,12 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GESchemaObjectContainer[T /* <: KmlObject */] extends js.Object {
+trait GESchemaObjectContainer[T /* <: KmlObject */] extends StObject {
   
   /**
     * Adds a node to the end of the list of children of a specified feature.
@@ -68,42 +69,30 @@ object GESchemaObjectContainer {
   }
   
   @scala.inline
-  implicit class GESchemaObjectContainerOps[Self <: GESchemaObjectContainer[_], T /* <: KmlObject */] (val x: Self with GESchemaObjectContainer[T]) extends AnyVal {
+  implicit class GESchemaObjectContainerMutableBuilder[Self <: GESchemaObjectContainer[_], T /* <: KmlObject */] (val x: Self with GESchemaObjectContainer[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendChild(value: T => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetChildNodes(value: () => KmlObjectList[T]): Self = StObject.set(x, "getChildNodes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFirstChild(value: () => T): Self = StObject.set(x, "getFirstChild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAppendChild(value: T => Unit): Self = this.set("appendChild", js.Any.fromFunction1(value))
+    def setGetLastChild(value: () => T): Self = StObject.set(x, "getLastChild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChildNodes(value: () => KmlObjectList[T]): Self = this.set("getChildNodes", js.Any.fromFunction0(value))
+    def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFirstChild(value: () => T): Self = this.set("getFirstChild", js.Any.fromFunction0(value))
+    def setInsertBefore(value: (T, T) => Unit): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetLastChild(value: () => T): Self = this.set("getLastChild", js.Any.fromFunction0(value))
+    def setRemoveChild(value: T => Unit): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasChildNodes(value: () => Boolean): Self = this.set("hasChildNodes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInsertBefore(value: (T, T) => Unit): Self = this.set("insertBefore", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveChild(value: T => Unit): Self = this.set("removeChild", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceChild(value: (T, T) => Unit): Self = this.set("replaceChild", js.Any.fromFunction2(value))
+    def setReplaceChild(value: (T, T) => Unit): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.ucb.XContent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,21 +41,9 @@ object XTransientDocumentsDocumentContentFactory {
   }
   
   @scala.inline
-  implicit class XTransientDocumentsDocumentContentFactoryOps[Self <: XTransientDocumentsDocumentContentFactory] (val x: Self) extends AnyVal {
+  implicit class XTransientDocumentsDocumentContentFactoryMutableBuilder[Self <: XTransientDocumentsDocumentContentFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateDocumentContent(value: XModel => XContent): Self = this.set("createDocumentContent", js.Any.fromFunction1(value))
+    def setCreateDocumentContent(value: XModel => XContent): Self = StObject.set(x, "createDocumentContent", js.Any.fromFunction1(value))
   }
 }

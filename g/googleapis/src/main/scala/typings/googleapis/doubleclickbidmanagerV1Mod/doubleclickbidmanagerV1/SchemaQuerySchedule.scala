@@ -1,5 +1,6 @@
 package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information on how frequently and when to run a query.
   */
 @js.native
-trait SchemaQuerySchedule extends js.Object {
+trait SchemaQuerySchedule extends StObject {
   
   /**
     * Datetime to periodically run the query until.
@@ -42,42 +43,30 @@ object SchemaQuerySchedule {
   }
   
   @scala.inline
-  implicit class SchemaQueryScheduleOps[Self <: SchemaQuerySchedule] (val x: Self) extends AnyVal {
+  implicit class SchemaQueryScheduleMutableBuilder[Self <: SchemaQuerySchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTimeMs(value: String): Self = StObject.set(x, "endTimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeMsUndefined: Self = StObject.set(x, "endTimeMs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimeMs(value: String): Self = this.set("endTimeMs", value.asInstanceOf[js.Any])
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
     @scala.inline
-    def deleteEndTimeMs: Self = this.set("endTimeMs", js.undefined)
+    def setNextRunMinuteOfDay(value: Double): Self = StObject.set(x, "nextRunMinuteOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequency(value: String): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    def setNextRunMinuteOfDayUndefined: Self = StObject.set(x, "nextRunMinuteOfDay", js.undefined)
     
     @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    def setNextRunTimezoneCode(value: String): Self = StObject.set(x, "nextRunTimezoneCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextRunMinuteOfDay(value: Double): Self = this.set("nextRunMinuteOfDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextRunMinuteOfDay: Self = this.set("nextRunMinuteOfDay", js.undefined)
-    
-    @scala.inline
-    def setNextRunTimezoneCode(value: String): Self = this.set("nextRunTimezoneCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextRunTimezoneCode: Self = this.set("nextRunTimezoneCode", js.undefined)
+    def setNextRunTimezoneCodeUndefined: Self = StObject.set(x, "nextRunTimezoneCode", js.undefined)
   }
 }

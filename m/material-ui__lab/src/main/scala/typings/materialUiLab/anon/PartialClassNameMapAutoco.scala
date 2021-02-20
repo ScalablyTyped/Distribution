@@ -1,12 +1,13 @@
 package typings.materialUiLab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/Autocomplete/Autocomplete.AutocompleteClassKey>> */
 @js.native
-trait PartialClassNameMapAutoco extends js.Object {
+trait PartialClassNameMapAutoco extends StObject {
   
   var clearIndicator: js.UndefOr[String] = js.native
   
@@ -59,144 +60,132 @@ object PartialClassNameMapAutoco {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapAutocoOps[Self <: PartialClassNameMapAutoco] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapAutocoMutableBuilder[Self <: PartialClassNameMapAutoco] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearIndicator(value: String): Self = StObject.set(x, "clearIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearIndicatorDirty(value: String): Self = StObject.set(x, "clearIndicatorDirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearIndicatorDirtyUndefined: Self = StObject.set(x, "clearIndicatorDirty", js.undefined)
     
     @scala.inline
-    def setClearIndicator(value: String): Self = this.set("clearIndicator", value.asInstanceOf[js.Any])
+    def setClearIndicatorUndefined: Self = StObject.set(x, "clearIndicator", js.undefined)
     
     @scala.inline
-    def deleteClearIndicator: Self = this.set("clearIndicator", js.undefined)
+    def setEndAdornment(value: String): Self = StObject.set(x, "endAdornment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearIndicatorDirty(value: String): Self = this.set("clearIndicatorDirty", value.asInstanceOf[js.Any])
+    def setEndAdornmentUndefined: Self = StObject.set(x, "endAdornment", js.undefined)
     
     @scala.inline
-    def deleteClearIndicatorDirty: Self = this.set("clearIndicatorDirty", js.undefined)
+    def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAdornment(value: String): Self = this.set("endAdornment", value.asInstanceOf[js.Any])
+    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
     @scala.inline
-    def deleteEndAdornment: Self = this.set("endAdornment", js.undefined)
+    def setGroupLabel(value: String): Self = StObject.set(x, "groupLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: String): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setGroupLabelUndefined: Self = StObject.set(x, "groupLabel", js.undefined)
     
     @scala.inline
-    def deleteFocused: Self = this.set("focused", js.undefined)
+    def setGroupUl(value: String): Self = StObject.set(x, "groupUl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupLabel(value: String): Self = this.set("groupLabel", value.asInstanceOf[js.Any])
+    def setGroupUlUndefined: Self = StObject.set(x, "groupUl", js.undefined)
     
     @scala.inline
-    def deleteGroupLabel: Self = this.set("groupLabel", js.undefined)
+    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupUl(value: String): Self = this.set("groupUl", value.asInstanceOf[js.Any])
+    def setInputFocused(value: String): Self = StObject.set(x, "inputFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupUl: Self = this.set("groupUl", js.undefined)
+    def setInputFocusedUndefined: Self = StObject.set(x, "inputFocused", js.undefined)
     
     @scala.inline
-    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setInputRoot(value: String): Self = StObject.set(x, "inputRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setInputRootUndefined: Self = StObject.set(x, "inputRoot", js.undefined)
     
     @scala.inline
-    def setInputFocused(value: String): Self = this.set("inputFocused", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteInputFocused: Self = this.set("inputFocused", js.undefined)
+    def setListbox(value: String): Self = StObject.set(x, "listbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputRoot(value: String): Self = this.set("inputRoot", value.asInstanceOf[js.Any])
+    def setListboxUndefined: Self = StObject.set(x, "listbox", js.undefined)
     
     @scala.inline
-    def deleteInputRoot: Self = this.set("inputRoot", js.undefined)
+    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListbox(value: String): Self = this.set("listbox", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteListbox: Self = this.set("listbox", js.undefined)
+    def setNoOptions(value: String): Self = StObject.set(x, "noOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: String): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setNoOptionsUndefined: Self = StObject.set(x, "noOptions", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setOption(value: String): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoOptions(value: String): Self = this.set("noOptions", value.asInstanceOf[js.Any])
+    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
     
     @scala.inline
-    def deleteNoOptions: Self = this.set("noOptions", js.undefined)
+    def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOption(value: String): Self = this.set("option", value.asInstanceOf[js.Any])
+    def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
     
     @scala.inline
-    def deleteOption: Self = this.set("option", js.undefined)
+    def setPopper(value: String): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaper(value: String): Self = this.set("paper", value.asInstanceOf[js.Any])
+    def setPopperDisablePortal(value: String): Self = StObject.set(x, "popperDisablePortal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaper: Self = this.set("paper", js.undefined)
+    def setPopperDisablePortalUndefined: Self = StObject.set(x, "popperDisablePortal", js.undefined)
     
     @scala.inline
-    def setPopper(value: String): Self = this.set("popper", value.asInstanceOf[js.Any])
+    def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
     
     @scala.inline
-    def deletePopper: Self = this.set("popper", js.undefined)
+    def setPopupIndicator(value: String): Self = StObject.set(x, "popupIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopperDisablePortal(value: String): Self = this.set("popperDisablePortal", value.asInstanceOf[js.Any])
+    def setPopupIndicatorOpen(value: String): Self = StObject.set(x, "popupIndicatorOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopperDisablePortal: Self = this.set("popperDisablePortal", js.undefined)
+    def setPopupIndicatorOpenUndefined: Self = StObject.set(x, "popupIndicatorOpen", js.undefined)
     
     @scala.inline
-    def setPopupIndicator(value: String): Self = this.set("popupIndicator", value.asInstanceOf[js.Any])
+    def setPopupIndicatorUndefined: Self = StObject.set(x, "popupIndicator", js.undefined)
     
     @scala.inline
-    def deletePopupIndicator: Self = this.set("popupIndicator", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupIndicatorOpen(value: String): Self = this.set("popupIndicatorOpen", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deletePopupIndicatorOpen: Self = this.set("popupIndicatorOpen", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setTagSizeSmall(value: String): Self = StObject.set(x, "tagSizeSmall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setTagSizeSmallUndefined: Self = StObject.set(x, "tagSizeSmall", js.undefined)
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
-    
-    @scala.inline
-    def setTagSizeSmall(value: String): Self = this.set("tagSizeSmall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagSizeSmall: Self = this.set("tagSizeSmall", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

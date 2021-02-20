@@ -4,12 +4,13 @@ import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Media.IMediaExtension
 import typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMediaCaptureVideoPreview extends js.Object {
+trait IMediaCaptureVideoPreview extends StObject {
   
   def startPreviewAsync(): IAsyncAction = js.native
   

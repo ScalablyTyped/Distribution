@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.sdb
 
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.1
   */
 @js.native
-trait XSubDocument extends js.Object {
+trait XSubDocument extends StObject {
   
   /**
     * closes the sub document, if it had previously been opened in either mode
@@ -50,30 +51,18 @@ object XSubDocument {
   }
   
   @scala.inline
-  implicit class XSubDocumentOps[Self <: XSubDocument] (val x: Self) extends AnyVal {
+  implicit class XSubDocumentMutableBuilder[Self <: XSubDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpen(value: () => XComponent): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenDesign(value: () => XComponent): Self = StObject.set(x, "openDesign", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Boolean): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpen(value: () => XComponent): Self = this.set("open", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpenDesign(value: () => XComponent): Self = this.set("openDesign", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStore(value: () => Unit): Self = this.set("store", js.Any.fromFunction0(value))
+    def setStore(value: () => Unit): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
   }
 }

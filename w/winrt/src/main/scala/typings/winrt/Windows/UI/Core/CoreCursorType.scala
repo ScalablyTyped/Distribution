@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CoreCursorType extends js.Object
+sealed trait CoreCursorType extends StObject
 @JSGlobal("Windows.UI.Core.CoreCursorType")
 @js.native
-object CoreCursorType extends js.Object {
+object CoreCursorType extends StObject {
   
   @js.native
   sealed trait arrow extends CoreCursorType

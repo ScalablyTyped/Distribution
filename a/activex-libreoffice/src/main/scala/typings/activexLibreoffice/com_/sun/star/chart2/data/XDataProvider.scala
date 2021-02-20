@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.sheet.XRangeSelection
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,42 +99,30 @@ object XDataProvider {
   }
   
   @scala.inline
-  implicit class XDataProviderOps[Self <: XDataProvider] (val x: Self) extends AnyVal {
+  implicit class XDataProviderMutableBuilder[Self <: XDataProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDataSequenceByRangeRepresentation(value: String => XDataSequence): Self = StObject.set(x, "createDataSequenceByRangeRepresentation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDataSequenceByRangeRepresentationPossible(value: String => Boolean): Self = StObject.set(x, "createDataSequenceByRangeRepresentationPossible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateDataSequenceByValueArray(value: (String, String) => XDataSequence): Self = StObject.set(x, "createDataSequenceByValueArray", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRangeSelection(value: XRangeSelection): Self = this.set("RangeSelection", value.asInstanceOf[js.Any])
+    def setCreateDataSource(value: SeqEquiv[PropertyValue] => XDataSource): Self = StObject.set(x, "createDataSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateDataSequenceByRangeRepresentation(value: String => XDataSequence): Self = this.set("createDataSequenceByRangeRepresentation", js.Any.fromFunction1(value))
+    def setCreateDataSourcePossible(value: SeqEquiv[PropertyValue] => Boolean): Self = StObject.set(x, "createDataSourcePossible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateDataSequenceByRangeRepresentationPossible(value: String => Boolean): Self = this.set("createDataSequenceByRangeRepresentationPossible", js.Any.fromFunction1(value))
+    def setDetectArguments(value: XDataSource => SafeArray[PropertyValue]): Self = StObject.set(x, "detectArguments", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateDataSequenceByValueArray(value: (String, String) => XDataSequence): Self = this.set("createDataSequenceByValueArray", js.Any.fromFunction2(value))
+    def setGetRangeSelection(value: () => XRangeSelection): Self = StObject.set(x, "getRangeSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateDataSource(value: SeqEquiv[PropertyValue] => XDataSource): Self = this.set("createDataSource", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateDataSourcePossible(value: SeqEquiv[PropertyValue] => Boolean): Self = this.set("createDataSourcePossible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDetectArguments(value: XDataSource => SafeArray[PropertyValue]): Self = this.set("detectArguments", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRangeSelection(value: () => XRangeSelection): Self = this.set("getRangeSelection", js.Any.fromFunction0(value))
+    def setRangeSelection(value: XRangeSelection): Self = StObject.set(x, "RangeSelection", value.asInstanceOf[js.Any])
   }
 }

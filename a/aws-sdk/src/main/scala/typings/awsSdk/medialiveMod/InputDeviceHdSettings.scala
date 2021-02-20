@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputDeviceHdSettings extends js.Object {
+trait InputDeviceHdSettings extends StObject {
   
   /**
     * If you specified Auto as the configured input, specifies which of the sources is currently active (SDI or HDMI).
@@ -56,66 +57,54 @@ object InputDeviceHdSettings {
   }
   
   @scala.inline
-  implicit class InputDeviceHdSettingsOps[Self <: InputDeviceHdSettings] (val x: Self) extends AnyVal {
+  implicit class InputDeviceHdSettingsMutableBuilder[Self <: InputDeviceHdSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveInput(value: InputDeviceActiveInput): Self = StObject.set(x, "ActiveInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveInputUndefined: Self = StObject.set(x, "ActiveInput", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfiguredInput(value: InputDeviceConfiguredInput): Self = StObject.set(x, "ConfiguredInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveInput(value: InputDeviceActiveInput): Self = this.set("ActiveInput", value.asInstanceOf[js.Any])
+    def setConfiguredInputUndefined: Self = StObject.set(x, "ConfiguredInput", js.undefined)
     
     @scala.inline
-    def deleteActiveInput: Self = this.set("ActiveInput", js.undefined)
+    def setDeviceState(value: InputDeviceState): Self = StObject.set(x, "DeviceState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguredInput(value: InputDeviceConfiguredInput): Self = this.set("ConfiguredInput", value.asInstanceOf[js.Any])
+    def setDeviceStateUndefined: Self = StObject.set(x, "DeviceState", js.undefined)
     
     @scala.inline
-    def deleteConfiguredInput: Self = this.set("ConfiguredInput", js.undefined)
+    def setFramerate(value: double): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceState(value: InputDeviceState): Self = this.set("DeviceState", value.asInstanceOf[js.Any])
+    def setFramerateUndefined: Self = StObject.set(x, "Framerate", js.undefined)
     
     @scala.inline
-    def deleteDeviceState: Self = this.set("DeviceState", js.undefined)
+    def setHeight(value: integer): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramerate(value: double): Self = this.set("Framerate", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
     @scala.inline
-    def deleteFramerate: Self = this.set("Framerate", js.undefined)
+    def setMaxBitrate(value: integer): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: integer): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("Height", js.undefined)
+    def setScanType(value: InputDeviceScanType): Self = StObject.set(x, "ScanType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBitrate(value: integer): Self = this.set("MaxBitrate", value.asInstanceOf[js.Any])
+    def setScanTypeUndefined: Self = StObject.set(x, "ScanType", js.undefined)
     
     @scala.inline
-    def deleteMaxBitrate: Self = this.set("MaxBitrate", js.undefined)
+    def setWidth(value: integer): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScanType(value: InputDeviceScanType): Self = this.set("ScanType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanType: Self = this.set("ScanType", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: integer): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("Width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

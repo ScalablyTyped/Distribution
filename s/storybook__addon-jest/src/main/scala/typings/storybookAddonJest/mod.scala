@@ -1,13 +1,14 @@
 package typings.storybookAddonJest
 
 import typings.storybookAddonJest.anon.FilesExt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/addon-jest", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@storybook/addon-jest", "withTests")
+  @js.native
   def withTests(userOptions: FilesExt): js.Function1[/* repeated */ js.Any, _] = js.native
 }

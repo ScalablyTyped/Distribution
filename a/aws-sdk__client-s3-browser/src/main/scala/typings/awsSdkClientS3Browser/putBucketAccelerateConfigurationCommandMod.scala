@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Browser.typesPutBucketAccelerateConfigurationInputM
 import typings.awsSdkClientS3Browser.typesPutBucketAccelerateConfigurationOutputMod.PutBucketAccelerateConfigurationOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/PutBucketAccelerateConfigurationCommand", JSImport.Namespace)
-@js.native
-object putBucketAccelerateConfigurationCommandMod extends js.Object {
+object putBucketAccelerateConfigurationCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/PutBucketAccelerateConfigurationCommand", "PutBucketAccelerateConfigurationCommand")
   @js.native
   class PutBucketAccelerateConfigurationCommand protected () extends Command[
           InputTypesUnion, 

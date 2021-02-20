@@ -1,21 +1,18 @@
 package typings.reactPdf
 
 import typings.pdfjsDist.mod.PDFJSStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-pdf/dist/pdfjs-dist", JSImport.Namespace)
-@js.native
-object pdfjsDistMod extends js.Object {
+object pdfjsDistMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    val PDFJS: PDFJSStatic = js.native
-    
+    @JSImport("react-pdf/dist/pdfjs-dist", "default.CMapCompressionType")
     @js.native
-    object CMapCompressionType extends js.Object {
+    object CMapCompressionType extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.pdfjsDist.mod.CMapCompressionType with Double] = js.native
@@ -27,8 +24,13 @@ object pdfjsDistMod extends js.Object {
       /* 2 */ val STREAM: typings.pdfjsDist.mod.CMapCompressionType.STREAM with Double = js.native
     }
     
+    @JSImport("react-pdf/dist/pdfjs-dist", "default.PDFJS")
     @js.native
-    object VerbosityLevel extends js.Object {
+    val PDFJS: PDFJSStatic = js.native
+    
+    @JSImport("react-pdf/dist/pdfjs-dist", "default.VerbosityLevel")
+    @js.native
+    object VerbosityLevel extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.pdfjsDist.mod.VerbosityLevel with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeetingSetting extends js.Object {
+trait MeetingSetting extends StObject {
   
   /**
     * The values that indicate whether the pin is always required.
@@ -21,21 +22,9 @@ object MeetingSetting {
   }
   
   @scala.inline
-  implicit class MeetingSettingOps[Self <: MeetingSetting] (val x: Self) extends AnyVal {
+  implicit class MeetingSettingMutableBuilder[Self <: MeetingSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequirePin(value: RequirePin): Self = this.set("RequirePin", value.asInstanceOf[js.Any])
+    def setRequirePin(value: RequirePin): Self = StObject.set(x, "RequirePin", value.asInstanceOf[js.Any])
   }
 }

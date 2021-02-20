@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListConnectionsResponse extends js.Object {
+trait ListConnectionsResponse extends StObject {
   
   /** The list of people that the requestor is connected to. */
   var connections: js.UndefOr[js.Array[Person]] = js.native
@@ -34,51 +35,39 @@ object ListConnectionsResponse {
   }
   
   @scala.inline
-  implicit class ListConnectionsResponseOps[Self <: ListConnectionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListConnectionsResponseMutableBuilder[Self <: ListConnectionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnections(value: js.Array[Person]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionsVarargs(value: Person*): Self = StObject.set(x, "connections", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionsVarargs(value: Person*): Self = this.set("connections", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnections(value: js.Array[Person]): Self = this.set("connections", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteConnections: Self = this.set("connections", js.undefined)
+    def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextSyncToken(value: String): Self = this.set("nextSyncToken", value.asInstanceOf[js.Any])
+    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
     
     @scala.inline
-    def deleteNextSyncToken: Self = this.set("nextSyncToken", js.undefined)
+    def setTotalPeople(value: Double): Self = StObject.set(x, "totalPeople", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalItems(value: Double): Self = this.set("totalItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalItems: Self = this.set("totalItems", js.undefined)
-    
-    @scala.inline
-    def setTotalPeople(value: Double): Self = this.set("totalPeople", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalPeople: Self = this.set("totalPeople", js.undefined)
+    def setTotalPeopleUndefined: Self = StObject.set(x, "totalPeople", js.undefined)
   }
 }

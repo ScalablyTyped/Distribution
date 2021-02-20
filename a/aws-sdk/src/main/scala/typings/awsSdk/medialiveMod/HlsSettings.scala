@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HlsSettings extends js.Object {
+trait HlsSettings extends StObject {
   
   var AudioOnlyHlsSettings: js.UndefOr[typings.awsSdk.medialiveMod.AudioOnlyHlsSettings] = js.native
   
@@ -22,36 +23,24 @@ object HlsSettings {
   }
   
   @scala.inline
-  implicit class HlsSettingsOps[Self <: HlsSettings] (val x: Self) extends AnyVal {
+  implicit class HlsSettingsMutableBuilder[Self <: HlsSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioOnlyHlsSettings(value: AudioOnlyHlsSettings): Self = StObject.set(x, "AudioOnlyHlsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioOnlyHlsSettingsUndefined: Self = StObject.set(x, "AudioOnlyHlsSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFmp4HlsSettings(value: Fmp4HlsSettings): Self = StObject.set(x, "Fmp4HlsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioOnlyHlsSettings(value: AudioOnlyHlsSettings): Self = this.set("AudioOnlyHlsSettings", value.asInstanceOf[js.Any])
+    def setFmp4HlsSettingsUndefined: Self = StObject.set(x, "Fmp4HlsSettings", js.undefined)
     
     @scala.inline
-    def deleteAudioOnlyHlsSettings: Self = this.set("AudioOnlyHlsSettings", js.undefined)
+    def setStandardHlsSettings(value: StandardHlsSettings): Self = StObject.set(x, "StandardHlsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFmp4HlsSettings(value: Fmp4HlsSettings): Self = this.set("Fmp4HlsSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFmp4HlsSettings: Self = this.set("Fmp4HlsSettings", js.undefined)
-    
-    @scala.inline
-    def setStandardHlsSettings(value: StandardHlsSettings): Self = this.set("StandardHlsSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandardHlsSettings: Self = this.set("StandardHlsSettings", js.undefined)
+    def setStandardHlsSettingsUndefined: Self = StObject.set(x, "StandardHlsSettings", js.undefined)
   }
 }

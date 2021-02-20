@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDomainEndpointOptionsResponse extends js.Object {
+trait UpdateDomainEndpointOptionsResponse extends StObject {
   
   /**
     * The newly-configured domain endpoint options.
@@ -21,24 +22,12 @@ object UpdateDomainEndpointOptionsResponse {
   }
   
   @scala.inline
-  implicit class UpdateDomainEndpointOptionsResponseOps[Self <: UpdateDomainEndpointOptionsResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateDomainEndpointOptionsResponseMutableBuilder[Self <: UpdateDomainEndpointOptionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainEndpointOptions(value: DomainEndpointOptionsStatus): Self = StObject.set(x, "DomainEndpointOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDomainEndpointOptions(value: DomainEndpointOptionsStatus): Self = this.set("DomainEndpointOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainEndpointOptions: Self = this.set("DomainEndpointOptions", js.undefined)
+    def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "DomainEndpointOptions", js.undefined)
   }
 }

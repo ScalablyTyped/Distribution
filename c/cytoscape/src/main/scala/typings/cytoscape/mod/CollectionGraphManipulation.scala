@@ -2,6 +2,7 @@ package typings.cytoscape.mod
 
 import typings.cytoscape.anon.Parent
 import typings.cytoscape.anon.Source
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/graph-manipulation
   */
 @js.native
-trait CollectionGraphManipulation extends js.Object {
+trait CollectionGraphManipulation extends StObject {
   
   /**
     * Get a new collection containing clones (i.e. copies) of the elements in the calling collection.

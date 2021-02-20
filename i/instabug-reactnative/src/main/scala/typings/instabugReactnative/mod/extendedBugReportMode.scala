@@ -1,31 +1,28 @@
 package typings.instabugReactnative.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait extendedBugReportMode extends js.Object
+sealed trait extendedBugReportMode extends StObject
 @JSImport("instabug-reactnative", "extendedBugReportMode")
 @js.native
-object extendedBugReportMode extends js.Object {
+object extendedBugReportMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[extendedBugReportMode with Double] = js.native
   
   @js.native
   sealed trait disabled extends extendedBugReportMode
-  /* 2 */ @js.native
-  object disabled extends TopLevel[disabled with Double]
+  /* 2 */ val disabled: typings.instabugReactnative.mod.extendedBugReportMode.disabled with Double = js.native
   
   @js.native
   sealed trait enabledWithOptionalFields extends extendedBugReportMode
-  /* 1 */ @js.native
-  object enabledWithOptionalFields extends TopLevel[enabledWithOptionalFields with Double]
+  /* 1 */ val enabledWithOptionalFields: typings.instabugReactnative.mod.extendedBugReportMode.enabledWithOptionalFields with Double = js.native
   
   @js.native
   sealed trait enabledWithRequiredFields extends extendedBugReportMode
-  /* 0 */ @js.native
-  object enabledWithRequiredFields extends TopLevel[enabledWithRequiredFields with Double]
+  /* 0 */ val enabledWithRequiredFields: typings.instabugReactnative.mod.extendedBugReportMode.enabledWithRequiredFields with Double = js.native
 }

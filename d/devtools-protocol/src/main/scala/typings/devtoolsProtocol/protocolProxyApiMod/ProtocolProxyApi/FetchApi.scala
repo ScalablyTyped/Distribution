@@ -13,12 +13,13 @@ import typings.devtoolsProtocol.mod.Protocol.Fetch.GetResponseBodyResponse
 import typings.devtoolsProtocol.mod.Protocol.Fetch.RequestPausedEvent
 import typings.devtoolsProtocol.mod.Protocol.Fetch.TakeResponseBodyAsStreamRequest
 import typings.devtoolsProtocol.mod.Protocol.Fetch.TakeResponseBodyAsStreamResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FetchApi extends js.Object {
+trait FetchApi extends StObject {
   
   /**
     * Continues the request, optionally modifying some of its parameters.

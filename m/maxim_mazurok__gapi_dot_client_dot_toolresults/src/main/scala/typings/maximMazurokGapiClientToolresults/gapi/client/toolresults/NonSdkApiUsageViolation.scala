@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NonSdkApiUsageViolation extends js.Object {
+trait NonSdkApiUsageViolation extends StObject {
   
   /** Signatures of a subset of those hidden API's. */
   var apiSignatures: js.UndefOr[js.Array[String]] = js.native
@@ -22,33 +23,21 @@ object NonSdkApiUsageViolation {
   }
   
   @scala.inline
-  implicit class NonSdkApiUsageViolationOps[Self <: NonSdkApiUsageViolation] (val x: Self) extends AnyVal {
+  implicit class NonSdkApiUsageViolationMutableBuilder[Self <: NonSdkApiUsageViolation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiSignatures(value: js.Array[String]): Self = StObject.set(x, "apiSignatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiSignaturesUndefined: Self = StObject.set(x, "apiSignatures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiSignaturesVarargs(value: String*): Self = StObject.set(x, "apiSignatures", js.Array(value :_*))
     
     @scala.inline
-    def setApiSignaturesVarargs(value: String*): Self = this.set("apiSignatures", js.Array(value :_*))
+    def setUniqueApis(value: Double): Self = StObject.set(x, "uniqueApis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiSignatures(value: js.Array[String]): Self = this.set("apiSignatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApiSignatures: Self = this.set("apiSignatures", js.undefined)
-    
-    @scala.inline
-    def setUniqueApis(value: Double): Self = this.set("uniqueApis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueApis: Self = this.set("uniqueApis", js.undefined)
+    def setUniqueApisUndefined: Self = StObject.set(x, "uniqueApis", js.undefined)
   }
 }

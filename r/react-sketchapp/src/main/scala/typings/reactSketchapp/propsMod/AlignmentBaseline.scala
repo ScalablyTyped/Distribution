@@ -1,5 +1,6 @@
 package typings.reactSketchapp.propsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactSketchapp.reactSketchappStrings.`after-edge`
   - typings.reactSketchapp.reactSketchappStrings.hanging
 */
-trait AlignmentBaseline extends js.Object
+trait AlignmentBaseline extends StObject
 object AlignmentBaseline {
   
   @scala.inline

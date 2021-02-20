@@ -1,6 +1,7 @@
 package typings.heremaps.global.H.map
 
 import typings.heremaps.H.map.Object.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,14 @@ class Object ()
   extends typings.heremaps.H.map.Object {
   def this(opt_options: Options) = this()
 }
-/* static members */
-@JSGlobal("H.map.Object")
-@js.native
-object Object extends js.Object {
-  
-  /**
-    * Compares two objects regarding their z-order, useful to sort a list of objects via Array's sort() method
-    * @param first {H.map.Object} - The first object to compare
-    * @param second {H.map.Object} - The second object to compare
-    * @returns {number} - If less then 0 the first object has a lower z-order. If equal 0 booth objects have the same z-order. If greater then 0 the first object has a higher z-order.
-    */
-  def compareZOrder(first: typings.heremaps.H.map.Object, second: typings.heremaps.H.map.Object): Double = js.native
+object Object {
   
   /**
     * The major types of map objects
     */
+  @JSGlobal("H.map.Object.Type")
   @js.native
-  object Type extends js.Object {
+  object Type extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.heremaps.H.map.Object.Type with Double] = js.native
@@ -52,4 +43,15 @@ object Object extends js.Object {
     
     /* 2 */ val SPATIAL: typings.heremaps.H.map.Object.Type.SPATIAL with Double = js.native
   }
+  
+  /**
+    * Compares two objects regarding their z-order, useful to sort a list of objects via Array's sort() method
+    * @param first {H.map.Object} - The first object to compare
+    * @param second {H.map.Object} - The second object to compare
+    * @returns {number} - If less then 0 the first object has a lower z-order. If equal 0 booth objects have the same z-order. If greater then 0 the first object has a higher z-order.
+    */
+  /* static member */
+  @JSGlobal("H.map.Object.compareZOrder")
+  @js.native
+  def compareZOrder(first: typings.heremaps.H.map.Object, second: typings.heremaps.H.map.Object): Double = js.native
 }

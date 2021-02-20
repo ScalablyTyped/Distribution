@@ -1,5 +1,6 @@
 package typings.jqueryAjaxfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   Collection of properties of the current browser
 */
 @js.native
-trait JQuerySupport extends js.Object {
+trait JQuerySupport extends StObject {
   
   var ajax: js.UndefOr[Boolean] = js.native
   
@@ -57,132 +58,120 @@ object JQuerySupport {
   }
   
   @scala.inline
-  implicit class JQuerySupportOps[Self <: JQuerySupport] (val x: Self) extends AnyVal {
+  implicit class JQuerySupportMutableBuilder[Self <: JQuerySupport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjax(value: Boolean): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoxModel(value: Boolean): Self = StObject.set(x, "boxModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjax(value: Boolean): Self = this.set("ajax", value.asInstanceOf[js.Any])
+    def setBoxModelUndefined: Self = StObject.set(x, "boxModel", js.undefined)
     
     @scala.inline
-    def deleteAjax: Self = this.set("ajax", js.undefined)
+    def setChangeBubbles(value: Boolean): Self = StObject.set(x, "changeBubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxModel(value: Boolean): Self = this.set("boxModel", value.asInstanceOf[js.Any])
+    def setChangeBubblesUndefined: Self = StObject.set(x, "changeBubbles", js.undefined)
     
     @scala.inline
-    def deleteBoxModel: Self = this.set("boxModel", js.undefined)
+    def setCheckClone(value: Boolean): Self = StObject.set(x, "checkClone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeBubbles(value: Boolean): Self = this.set("changeBubbles", value.asInstanceOf[js.Any])
+    def setCheckCloneUndefined: Self = StObject.set(x, "checkClone", js.undefined)
     
     @scala.inline
-    def deleteChangeBubbles: Self = this.set("changeBubbles", js.undefined)
+    def setCheckOn(value: Boolean): Self = StObject.set(x, "checkOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckClone(value: Boolean): Self = this.set("checkClone", value.asInstanceOf[js.Any])
+    def setCheckOnUndefined: Self = StObject.set(x, "checkOn", js.undefined)
     
     @scala.inline
-    def deleteCheckClone: Self = this.set("checkClone", js.undefined)
+    def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckOn(value: Boolean): Self = this.set("checkOn", value.asInstanceOf[js.Any])
+    def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
     @scala.inline
-    def deleteCheckOn: Self = this.set("checkOn", js.undefined)
+    def setCssFloat(value: Boolean): Self = StObject.set(x, "cssFloat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCors(value: Boolean): Self = this.set("cors", value.asInstanceOf[js.Any])
+    def setCssFloatUndefined: Self = StObject.set(x, "cssFloat", js.undefined)
     
     @scala.inline
-    def deleteCors: Self = this.set("cors", js.undefined)
+    def setHrefNormalized(value: Boolean): Self = StObject.set(x, "hrefNormalized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssFloat(value: Boolean): Self = this.set("cssFloat", value.asInstanceOf[js.Any])
+    def setHrefNormalizedUndefined: Self = StObject.set(x, "hrefNormalized", js.undefined)
     
     @scala.inline
-    def deleteCssFloat: Self = this.set("cssFloat", js.undefined)
+    def setHtmlSerialize(value: Boolean): Self = StObject.set(x, "htmlSerialize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHrefNormalized(value: Boolean): Self = this.set("hrefNormalized", value.asInstanceOf[js.Any])
+    def setHtmlSerializeUndefined: Self = StObject.set(x, "htmlSerialize", js.undefined)
     
     @scala.inline
-    def deleteHrefNormalized: Self = this.set("hrefNormalized", js.undefined)
+    def setLeadingWhitespace(value: Boolean): Self = StObject.set(x, "leadingWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlSerialize(value: Boolean): Self = this.set("htmlSerialize", value.asInstanceOf[js.Any])
+    def setLeadingWhitespaceUndefined: Self = StObject.set(x, "leadingWhitespace", js.undefined)
     
     @scala.inline
-    def deleteHtmlSerialize: Self = this.set("htmlSerialize", js.undefined)
+    def setNoCloneChecked(value: Boolean): Self = StObject.set(x, "noCloneChecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeadingWhitespace(value: Boolean): Self = this.set("leadingWhitespace", value.asInstanceOf[js.Any])
+    def setNoCloneCheckedUndefined: Self = StObject.set(x, "noCloneChecked", js.undefined)
     
     @scala.inline
-    def deleteLeadingWhitespace: Self = this.set("leadingWhitespace", js.undefined)
+    def setNoCloneEvent(value: Boolean): Self = StObject.set(x, "noCloneEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCloneChecked(value: Boolean): Self = this.set("noCloneChecked", value.asInstanceOf[js.Any])
+    def setNoCloneEventUndefined: Self = StObject.set(x, "noCloneEvent", js.undefined)
     
     @scala.inline
-    def deleteNoCloneChecked: Self = this.set("noCloneChecked", js.undefined)
+    def setOpacity(value: Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCloneEvent(value: Boolean): Self = this.set("noCloneEvent", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteNoCloneEvent: Self = this.set("noCloneEvent", js.undefined)
+    def setOptDisabled(value: Boolean): Self = StObject.set(x, "optDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Boolean): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setOptDisabledUndefined: Self = StObject.set(x, "optDisabled", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setOptSelected(value: Boolean): Self = StObject.set(x, "optSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptDisabled(value: Boolean): Self = this.set("optDisabled", value.asInstanceOf[js.Any])
+    def setOptSelectedUndefined: Self = StObject.set(x, "optSelected", js.undefined)
     
     @scala.inline
-    def deleteOptDisabled: Self = this.set("optDisabled", js.undefined)
+    def setScriptEval(value: () => Boolean): Self = StObject.set(x, "scriptEval", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOptSelected(value: Boolean): Self = this.set("optSelected", value.asInstanceOf[js.Any])
+    def setScriptEvalUndefined: Self = StObject.set(x, "scriptEval", js.undefined)
     
     @scala.inline
-    def deleteOptSelected: Self = this.set("optSelected", js.undefined)
+    def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptEval(value: () => Boolean): Self = this.set("scriptEval", js.Any.fromFunction0(value))
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteScriptEval: Self = this.set("scriptEval", js.undefined)
+    def setSubmitBubbles(value: Boolean): Self = StObject.set(x, "submitBubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: Boolean): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSubmitBubblesUndefined: Self = StObject.set(x, "submitBubbles", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTbody(value: Boolean): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmitBubbles(value: Boolean): Self = this.set("submitBubbles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmitBubbles: Self = this.set("submitBubbles", js.undefined)
-    
-    @scala.inline
-    def setTbody(value: Boolean): Self = this.set("tbody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTbody: Self = this.set("tbody", js.undefined)
+    def setTbodyUndefined: Self = StObject.set(x, "tbody", js.undefined)
   }
 }

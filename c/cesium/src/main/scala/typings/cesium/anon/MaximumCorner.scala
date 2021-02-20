@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.VertexFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaximumCorner extends js.Object {
+trait MaximumCorner extends StObject {
   
   var maximumCorner: Cartesian3 = js.native
   
@@ -24,30 +25,18 @@ object MaximumCorner {
   }
   
   @scala.inline
-  implicit class MaximumCornerOps[Self <: MaximumCorner] (val x: Self) extends AnyVal {
+  implicit class MaximumCornerMutableBuilder[Self <: MaximumCorner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumCorner(value: Cartesian3): Self = StObject.set(x, "maximumCorner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinimumCorner(value: Cartesian3): Self = StObject.set(x, "minimumCorner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumCorner(value: Cartesian3): Self = this.set("maximumCorner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinimumCorner(value: Cartesian3): Self = this.set("minimumCorner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertexFormat(value: VertexFormat): Self = this.set("vertexFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertexFormat: Self = this.set("vertexFormat", js.undefined)
+    def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }
 }

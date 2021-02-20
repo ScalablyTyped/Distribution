@@ -1,5 +1,6 @@
 package typings.googleapis.binaryauthorizationV1beta1Mod.binaryauthorizationV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * created by the user.
   */
 @js.native
-trait SchemaUserOwnedDrydockNote extends js.Object {
+trait SchemaUserOwnedDrydockNote extends StObject {
   
   /**
     * Output only. This field will contain the service account email address
@@ -51,39 +52,27 @@ object SchemaUserOwnedDrydockNote {
   }
   
   @scala.inline
-  implicit class SchemaUserOwnedDrydockNoteOps[Self <: SchemaUserOwnedDrydockNote] (val x: Self) extends AnyVal {
+  implicit class SchemaUserOwnedDrydockNoteMutableBuilder[Self <: SchemaUserOwnedDrydockNote] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegationServiceAccountEmail(value: String): Self = StObject.set(x, "delegationServiceAccountEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelegationServiceAccountEmailUndefined: Self = StObject.set(x, "delegationServiceAccountEmail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoteReference(value: String): Self = StObject.set(x, "noteReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegationServiceAccountEmail(value: String): Self = this.set("delegationServiceAccountEmail", value.asInstanceOf[js.Any])
+    def setNoteReferenceUndefined: Self = StObject.set(x, "noteReference", js.undefined)
     
     @scala.inline
-    def deleteDelegationServiceAccountEmail: Self = this.set("delegationServiceAccountEmail", js.undefined)
+    def setPublicKeys(value: js.Array[SchemaAttestorPublicKey]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteReference(value: String): Self = this.set("noteReference", value.asInstanceOf[js.Any])
+    def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
     @scala.inline
-    def deleteNoteReference: Self = this.set("noteReference", js.undefined)
-    
-    @scala.inline
-    def setPublicKeysVarargs(value: SchemaAttestorPublicKey*): Self = this.set("publicKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setPublicKeys(value: js.Array[SchemaAttestorPublicKey]): Self = this.set("publicKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKeys: Self = this.set("publicKeys", js.undefined)
+    def setPublicKeysVarargs(value: SchemaAttestorPublicKey*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
   }
 }

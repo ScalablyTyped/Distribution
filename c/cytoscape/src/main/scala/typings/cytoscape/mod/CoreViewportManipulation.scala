@@ -2,6 +2,7 @@ package typings.cytoscape.mod
 
 import typings.cytoscape.anon.H
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#core/viewport-manipulation
   */
 @js.native
-trait CoreViewportManipulation extends js.Object {
+trait CoreViewportManipulation extends StObject {
   
   /**
     * Get whether nodes are automatically locked

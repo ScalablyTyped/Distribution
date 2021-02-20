@@ -1,14 +1,15 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StatusPriority extends js.Object
+sealed trait StatusPriority extends StObject
 @JSGlobal("StatusPriority")
 @js.native
-object StatusPriority extends js.Object {
+object StatusPriority extends StObject {
   
   @js.native
   sealed trait blue extends StatusPriority

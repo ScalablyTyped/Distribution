@@ -6,62 +6,161 @@ import typings.geodesy.mod.Dp
 import typings.geodesy.mod.Format
 import typings.geodesy.mod.GeoJSON
 import typings.geodesy.mod.Polygon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("geodesy/latlon-spherical", JSImport.Namespace)
-@js.native
-object latlonSphericalMod extends js.Object {
+object latlonSphericalMod {
+  
+  @JSImport("geodesy/latlon-spherical", JSImport.Default)
+  @js.native
+  class default protected () extends LatLonSpherical {
+    def this(lat: Double, lon: Double) = this()
+  }
+  object default {
+    
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "default.areaOf")
+    @js.native
+    def areaOf(polygon: Polygon[LatLonSpherical]): Double = js.native
+    @JSImport("geodesy/latlon-spherical", "default.areaOf")
+    @js.native
+    def areaOf(polygon: Polygon[LatLonSpherical], radius: Double): Double = js.native
+    
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "default.crossingParallels")
+    @js.native
+    def crossingParallels(point1: LatLonSpherical, point2: LatLonSpherical, latitude: Double): Lon1 | Null = js.native
+    
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "default.intersection")
+    @js.native
+    def intersection(p1: LatLonSpherical, brng1: Double, p2: LatLonSpherical, brng2: Double): LatLonSpherical | Null = js.native
+    
+    @JSImport("geodesy/latlon-spherical", "default.parse")
+    @js.native
+    def parse(lat: String): LatLonSpherical = js.native
+    @JSImport("geodesy/latlon-spherical", "default.parse")
+    @js.native
+    def parse(lat: String, lon: Double): LatLonSpherical = js.native
+    @JSImport("geodesy/latlon-spherical", "default.parse")
+    @js.native
+    def parse(lat: js.Object): LatLonSpherical = js.native
+    @JSImport("geodesy/latlon-spherical", "default.parse")
+    @js.native
+    def parse(lat: js.Object, lon: Double): LatLonSpherical = js.native
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "default.parse")
+    @js.native
+    def parse(lat: Double): LatLonSpherical = js.native
+    @JSImport("geodesy/latlon-spherical", "default.parse")
+    @js.native
+    def parse(lat: Double, lon: Double): LatLonSpherical = js.native
+  }
   
   // tslint:disable-next-line no-unnecessary-class
+  @JSImport("geodesy/latlon-spherical", "Dms")
   @js.native
   class Dms ()
     extends typings.geodesy.dmsMod.default
-  /* static members */
-  @js.native
-  object Dms extends js.Object {
+  object Dms {
     
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "Dms.compassPoint")
+    @js.native
     def compassPoint(bearing: Double): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.compassPoint")
+    @js.native
     def compassPoint(bearing: Double, precision: Precision): String = js.native
     
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "Dms.fromLocale")
+    @js.native
     def fromLocale(str: String): String = js.native
     
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "Dms.parse")
+    @js.native
     def parse(dms: String): Double = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.parse")
+    @js.native
     def parse(dms: Double): Double = js.native
     
-    def separator: String = js.native
-    def separator_=(char: String): Unit = js.native
-    
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "Dms.toBrng")
+    @js.native
     def toBrng(deg: Double): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toBrng")
+    @js.native
     def toBrng(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toBrng")
+    @js.native
     def toBrng(deg: Double, format: Format): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toBrng")
+    @js.native
     def toBrng(deg: Double, format: Format, dp: Dp): String = js.native
     
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "Dms.toDms")
+    @js.native
     def toDms(deg: Double): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toDms")
+    @js.native
     def toDms(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toDms")
+    @js.native
     def toDms(deg: Double, format: Format): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toDms")
+    @js.native
     def toDms(deg: Double, format: Format, dp: Dp): String = js.native
     
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "Dms.toLat")
+    @js.native
     def toLat(deg: Double): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toLat")
+    @js.native
     def toLat(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toLat")
+    @js.native
     def toLat(deg: Double, format: Format): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toLat")
+    @js.native
     def toLat(deg: Double, format: Format, dp: Dp): String = js.native
     
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "Dms.toLocale")
+    @js.native
     def toLocale(str: String): String = js.native
     
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "Dms.toLon")
+    @js.native
     def toLon(deg: Double): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toLon")
+    @js.native
     def toLon(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toLon")
+    @js.native
     def toLon(deg: Double, format: Format): String = js.native
+    @JSImport("geodesy/latlon-spherical", "Dms.toLon")
+    @js.native
     def toLon(deg: Double, format: Format, dp: Dp): String = js.native
     
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "Dms.wrap360")
+    @js.native
     def wrap360(degrees: Double): String = js.native
     
+    /* static member */
+    @JSImport("geodesy/latlon-spherical", "Dms.wrap90")
+    @js.native
     def wrap90(degrees: Double): String = js.native
   }
   
   @js.native
-  trait LatLonSpherical extends js.Object {
+  trait LatLonSpherical extends StObject {
     
     def alongTrackDistanceTo(pathStart: LatLonSpherical, pathEnd: LatLonSpherical): Double = js.native
     def alongTrackDistanceTo(pathStart: LatLonSpherical, pathEnd: LatLonSpherical, radius: Double): Double = js.native
@@ -117,34 +216,5 @@ object latlonSphericalMod extends js.Object {
     def toString(format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toString(format: Format): String = js.native
     def toString(format: Format, dp: Dp): String = js.native
-  }
-  
-  @js.native
-  class default protected () extends LatLonSpherical {
-    def this(lat: Double, lon: Double) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def areaOf(polygon: Polygon[LatLonSpherical]): Double = js.native
-    def areaOf(polygon: Polygon[LatLonSpherical], radius: Double): Double = js.native
-    
-    def crossingParallels(point1: LatLonSpherical, point2: LatLonSpherical, latitude: Double): Lon1 | Null = js.native
-    
-    def intersection(p1: LatLonSpherical, brng1: Double, p2: LatLonSpherical, brng2: Double): LatLonSpherical | Null = js.native
-    
-    def metresToKm: Double = js.native
-    
-    def metresToMiles: Double = js.native
-    
-    def metresToNauticalMiles: Double = js.native
-    
-    def parse(lat: String): LatLonSpherical = js.native
-    def parse(lat: String, lon: Double): LatLonSpherical = js.native
-    def parse(lat: js.Object): LatLonSpherical = js.native
-    def parse(lat: js.Object, lon: Double): LatLonSpherical = js.native
-    def parse(lat: Double): LatLonSpherical = js.native
-    def parse(lat: Double, lon: Double): LatLonSpherical = js.native
   }
 }

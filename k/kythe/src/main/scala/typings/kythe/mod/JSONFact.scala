@@ -1,11 +1,12 @@
 package typings.kythe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONFact extends js.Object {
+trait JSONFact extends StObject {
   
   var fact_name: FactName = js.native
   
@@ -22,27 +23,15 @@ object JSONFact {
   }
   
   @scala.inline
-  implicit class JSONFactOps[Self <: JSONFact] (val x: Self) extends AnyVal {
+  implicit class JSONFactMutableBuilder[Self <: JSONFact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFact_name(value: FactName): Self = StObject.set(x, "fact_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFact_value(value: String): Self = StObject.set(x, "fact_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFact_name(value: FactName): Self = this.set("fact_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFact_value(value: String): Self = this.set("fact_value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: VName): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: VName): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.anon
 
 import typings.devtoolsProtocol.mod.Protocol.Network.GetResponseBodyRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.GetResponseBodyResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnTypeGetResponseBodyResponse extends js.Object {
+trait ReturnTypeGetResponseBodyResponse extends StObject {
   
   var paramsType: js.Array[GetResponseBodyRequest] = js.native
   
@@ -22,27 +23,15 @@ object ReturnTypeGetResponseBodyResponse {
   }
   
   @scala.inline
-  implicit class ReturnTypeGetResponseBodyResponseOps[Self <: ReturnTypeGetResponseBodyResponse] (val x: Self) extends AnyVal {
+  implicit class ReturnTypeGetResponseBodyResponseMutableBuilder[Self <: ReturnTypeGetResponseBodyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamsType(value: js.Array[GetResponseBodyRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamsTypeVarargs(value: GetResponseBodyRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParamsTypeVarargs(value: GetResponseBodyRequest*): Self = this.set("paramsType", js.Array(value :_*))
-    
-    @scala.inline
-    def setParamsType(value: js.Array[GetResponseBodyRequest]): Self = this.set("paramsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnType(value: GetResponseBodyResponse): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setReturnType(value: GetResponseBodyResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

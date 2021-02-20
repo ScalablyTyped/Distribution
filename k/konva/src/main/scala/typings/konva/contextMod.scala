@@ -9,16 +9,16 @@ import typings.std.CanvasPattern
 import typings.std.CanvasRenderingContext2D
 import typings.std.ImageData
 import typings.std.TextMetrics
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("konva/types/Context", JSImport.Namespace)
-@js.native
-object contextMod extends js.Object {
+object contextMod {
   
+  @JSImport("konva/types/Context", "Context")
   @js.native
-  class Context protected () extends js.Object {
+  class Context protected () extends StObject {
     def this(canvas: Canvas) = this()
     
     def _applyGlobalCompositeOperation(node: js.Any): Unit = js.native
@@ -146,11 +146,16 @@ object contextMod extends js.Object {
     def translate(a0: js.Any, a1: js.Any): Unit = js.native
   }
   
+  @JSImport("konva/types/Context", "HitContext")
   @js.native
-  class HitContext () extends Context
+  class HitContext protected () extends Context {
+    def this(canvas: Canvas) = this()
+  }
   
+  @JSImport("konva/types/Context", "SceneContext")
   @js.native
-  class SceneContext () extends Context {
+  class SceneContext protected () extends Context {
+    def this(canvas: Canvas) = this()
     
     def _applyShadow(shape: js.Any): Unit = js.native
     

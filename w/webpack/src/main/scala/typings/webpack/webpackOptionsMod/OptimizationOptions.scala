@@ -9,12 +9,13 @@ import typings.webpack.webpackStrings.named
 import typings.webpack.webpackStrings.natural
 import typings.webpack.webpackStrings.single
 import typings.webpack.webpackStrings.size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptimizationOptions extends js.Object {
+trait OptimizationOptions extends StObject {
   
   /**
   	 * Check for incompatible wasm types when importing/exporting from/to ESM
@@ -140,159 +141,147 @@ object OptimizationOptions {
   }
   
   @scala.inline
-  implicit class OptimizationOptionsOps[Self <: OptimizationOptions] (val x: Self) extends AnyVal {
+  implicit class OptimizationOptionsMutableBuilder[Self <: OptimizationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckWasmTypes(value: Boolean): Self = StObject.set(x, "checkWasmTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckWasmTypesUndefined: Self = StObject.set(x, "checkWasmTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChunkIds(value: natural | named | size | `total-size` | `false`): Self = StObject.set(x, "chunkIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckWasmTypes(value: Boolean): Self = this.set("checkWasmTypes", value.asInstanceOf[js.Any])
+    def setChunkIdsUndefined: Self = StObject.set(x, "chunkIds", js.undefined)
     
     @scala.inline
-    def deleteCheckWasmTypes: Self = this.set("checkWasmTypes", js.undefined)
+    def setConcatenateModules(value: Boolean): Self = StObject.set(x, "concatenateModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkIds(value: natural | named | size | `total-size` | `false`): Self = this.set("chunkIds", value.asInstanceOf[js.Any])
+    def setConcatenateModulesUndefined: Self = StObject.set(x, "concatenateModules", js.undefined)
     
     @scala.inline
-    def deleteChunkIds: Self = this.set("chunkIds", js.undefined)
+    def setFlagIncludedChunks(value: Boolean): Self = StObject.set(x, "flagIncludedChunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcatenateModules(value: Boolean): Self = this.set("concatenateModules", value.asInstanceOf[js.Any])
+    def setFlagIncludedChunksUndefined: Self = StObject.set(x, "flagIncludedChunks", js.undefined)
     
     @scala.inline
-    def deleteConcatenateModules: Self = this.set("concatenateModules", js.undefined)
+    def setHashedModuleIds(value: Boolean): Self = StObject.set(x, "hashedModuleIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagIncludedChunks(value: Boolean): Self = this.set("flagIncludedChunks", value.asInstanceOf[js.Any])
+    def setHashedModuleIdsUndefined: Self = StObject.set(x, "hashedModuleIds", js.undefined)
     
     @scala.inline
-    def deleteFlagIncludedChunks: Self = this.set("flagIncludedChunks", js.undefined)
+    def setMangleWasmImports(value: Boolean): Self = StObject.set(x, "mangleWasmImports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashedModuleIds(value: Boolean): Self = this.set("hashedModuleIds", value.asInstanceOf[js.Any])
+    def setMangleWasmImportsUndefined: Self = StObject.set(x, "mangleWasmImports", js.undefined)
     
     @scala.inline
-    def deleteHashedModuleIds: Self = this.set("hashedModuleIds", js.undefined)
+    def setMergeDuplicateChunks(value: Boolean): Self = StObject.set(x, "mergeDuplicateChunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMangleWasmImports(value: Boolean): Self = this.set("mangleWasmImports", value.asInstanceOf[js.Any])
+    def setMergeDuplicateChunksUndefined: Self = StObject.set(x, "mergeDuplicateChunks", js.undefined)
     
     @scala.inline
-    def deleteMangleWasmImports: Self = this.set("mangleWasmImports", js.undefined)
+    def setMinimize(value: Boolean): Self = StObject.set(x, "minimize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeDuplicateChunks(value: Boolean): Self = this.set("mergeDuplicateChunks", value.asInstanceOf[js.Any])
+    def setMinimizeUndefined: Self = StObject.set(x, "minimize", js.undefined)
     
     @scala.inline
-    def deleteMergeDuplicateChunks: Self = this.set("mergeDuplicateChunks", js.undefined)
+    def setMinimizer(value: js.Array[WebpackPluginInstance | WebpackPluginFunction]): Self = StObject.set(x, "minimizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimize(value: Boolean): Self = this.set("minimize", value.asInstanceOf[js.Any])
+    def setMinimizerUndefined: Self = StObject.set(x, "minimizer", js.undefined)
     
     @scala.inline
-    def deleteMinimize: Self = this.set("minimize", js.undefined)
+    def setMinimizerVarargs(value: (WebpackPluginInstance | WebpackPluginFunction)*): Self = StObject.set(x, "minimizer", js.Array(value :_*))
     
     @scala.inline
-    def setMinimizerVarargs(value: (WebpackPluginInstance | WebpackPluginFunction)*): Self = this.set("minimizer", js.Array(value :_*))
+    def setModuleIds(value: natural | named | hashed | size | `total-size` | `false`): Self = StObject.set(x, "moduleIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimizer(value: js.Array[WebpackPluginInstance | WebpackPluginFunction]): Self = this.set("minimizer", value.asInstanceOf[js.Any])
+    def setModuleIdsUndefined: Self = StObject.set(x, "moduleIds", js.undefined)
     
     @scala.inline
-    def deleteMinimizer: Self = this.set("minimizer", js.undefined)
+    def setNamedChunks(value: Boolean): Self = StObject.set(x, "namedChunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleIds(value: natural | named | hashed | size | `total-size` | `false`): Self = this.set("moduleIds", value.asInstanceOf[js.Any])
+    def setNamedChunksUndefined: Self = StObject.set(x, "namedChunks", js.undefined)
     
     @scala.inline
-    def deleteModuleIds: Self = this.set("moduleIds", js.undefined)
+    def setNamedModules(value: Boolean): Self = StObject.set(x, "namedModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedChunks(value: Boolean): Self = this.set("namedChunks", value.asInstanceOf[js.Any])
+    def setNamedModulesUndefined: Self = StObject.set(x, "namedModules", js.undefined)
     
     @scala.inline
-    def deleteNamedChunks: Self = this.set("namedChunks", js.undefined)
+    def setNoEmitOnErrors(value: Boolean): Self = StObject.set(x, "noEmitOnErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedModules(value: Boolean): Self = this.set("namedModules", value.asInstanceOf[js.Any])
+    def setNoEmitOnErrorsUndefined: Self = StObject.set(x, "noEmitOnErrors", js.undefined)
     
     @scala.inline
-    def deleteNamedModules: Self = this.set("namedModules", js.undefined)
+    def setNodeEnv(value: `false` | String): Self = StObject.set(x, "nodeEnv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoEmitOnErrors(value: Boolean): Self = this.set("noEmitOnErrors", value.asInstanceOf[js.Any])
+    def setNodeEnvUndefined: Self = StObject.set(x, "nodeEnv", js.undefined)
     
     @scala.inline
-    def deleteNoEmitOnErrors: Self = this.set("noEmitOnErrors", js.undefined)
+    def setOccurrenceOrder(value: Boolean): Self = StObject.set(x, "occurrenceOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeEnv(value: `false` | String): Self = this.set("nodeEnv", value.asInstanceOf[js.Any])
+    def setOccurrenceOrderUndefined: Self = StObject.set(x, "occurrenceOrder", js.undefined)
     
     @scala.inline
-    def deleteNodeEnv: Self = this.set("nodeEnv", js.undefined)
+    def setPortableRecords(value: Boolean): Self = StObject.set(x, "portableRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccurrenceOrder(value: Boolean): Self = this.set("occurrenceOrder", value.asInstanceOf[js.Any])
+    def setPortableRecordsUndefined: Self = StObject.set(x, "portableRecords", js.undefined)
     
     @scala.inline
-    def deleteOccurrenceOrder: Self = this.set("occurrenceOrder", js.undefined)
+    def setProvidedExports(value: Boolean): Self = StObject.set(x, "providedExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortableRecords(value: Boolean): Self = this.set("portableRecords", value.asInstanceOf[js.Any])
+    def setProvidedExportsUndefined: Self = StObject.set(x, "providedExports", js.undefined)
     
     @scala.inline
-    def deletePortableRecords: Self = this.set("portableRecords", js.undefined)
+    def setRemoveAvailableModules(value: Boolean): Self = StObject.set(x, "removeAvailableModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidedExports(value: Boolean): Self = this.set("providedExports", value.asInstanceOf[js.Any])
+    def setRemoveAvailableModulesUndefined: Self = StObject.set(x, "removeAvailableModules", js.undefined)
     
     @scala.inline
-    def deleteProvidedExports: Self = this.set("providedExports", js.undefined)
+    def setRemoveEmptyChunks(value: Boolean): Self = StObject.set(x, "removeEmptyChunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveAvailableModules(value: Boolean): Self = this.set("removeAvailableModules", value.asInstanceOf[js.Any])
+    def setRemoveEmptyChunksUndefined: Self = StObject.set(x, "removeEmptyChunks", js.undefined)
     
     @scala.inline
-    def deleteRemoveAvailableModules: Self = this.set("removeAvailableModules", js.undefined)
+    def setRuntimeChunk(value: Boolean | single | multiple | Name): Self = StObject.set(x, "runtimeChunk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveEmptyChunks(value: Boolean): Self = this.set("removeEmptyChunks", value.asInstanceOf[js.Any])
+    def setRuntimeChunkUndefined: Self = StObject.set(x, "runtimeChunk", js.undefined)
     
     @scala.inline
-    def deleteRemoveEmptyChunks: Self = this.set("removeEmptyChunks", js.undefined)
+    def setSideEffects(value: Boolean): Self = StObject.set(x, "sideEffects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntimeChunk(value: Boolean | single | multiple | Name): Self = this.set("runtimeChunk", value.asInstanceOf[js.Any])
+    def setSideEffectsUndefined: Self = StObject.set(x, "sideEffects", js.undefined)
     
     @scala.inline
-    def deleteRuntimeChunk: Self = this.set("runtimeChunk", js.undefined)
+    def setSplitChunks(value: `false` | OptimizationSplitChunksOptions): Self = StObject.set(x, "splitChunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideEffects(value: Boolean): Self = this.set("sideEffects", value.asInstanceOf[js.Any])
+    def setSplitChunksUndefined: Self = StObject.set(x, "splitChunks", js.undefined)
     
     @scala.inline
-    def deleteSideEffects: Self = this.set("sideEffects", js.undefined)
+    def setUsedExports(value: Boolean): Self = StObject.set(x, "usedExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplitChunks(value: `false` | OptimizationSplitChunksOptions): Self = this.set("splitChunks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplitChunks: Self = this.set("splitChunks", js.undefined)
-    
-    @scala.inline
-    def setUsedExports(value: Boolean): Self = this.set("usedExports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsedExports: Self = this.set("usedExports", js.undefined)
+    def setUsedExportsUndefined: Self = StObject.set(x, "usedExports", js.undefined)
   }
 }

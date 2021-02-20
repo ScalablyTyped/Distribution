@@ -1,11 +1,12 @@
 package typings.chance.Chance
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Timezone extends js.Object {
+trait Timezone extends StObject {
   
   var abbr: String = js.native
   
@@ -28,39 +29,27 @@ object Timezone {
   }
   
   @scala.inline
-  implicit class TimezoneOps[Self <: Timezone] (val x: Self) extends AnyVal {
+  implicit class TimezoneMutableBuilder[Self <: Timezone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsdst(value: Boolean): Self = StObject.set(x, "isdst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbbr(value: String): Self = this.set("abbr", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsdst(value: Boolean): Self = this.set("isdst", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setUtc(value: js.Array[String]): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUtcVarargs(value: String*): Self = this.set("utc", js.Array(value :_*))
-    
-    @scala.inline
-    def setUtc(value: js.Array[String]): Self = this.set("utc", value.asInstanceOf[js.Any])
+    def setUtcVarargs(value: String*): Self = StObject.set(x, "utc", js.Array(value :_*))
   }
 }

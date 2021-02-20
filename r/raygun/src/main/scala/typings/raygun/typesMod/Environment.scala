@@ -1,11 +1,12 @@
 package typings.raygun.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Environment extends js.Object {
+trait Environment extends StObject {
   
   var architecture: String = js.native
   
@@ -36,45 +37,33 @@ object Environment {
   }
   
   @scala.inline
-  implicit class EnvironmentOps[Self <: Environment] (val x: Self) extends AnyVal {
+  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailablePhysicalMemory(value: Double): Self = StObject.set(x, "availablePhysicalMemory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchitecture(value: String): Self = this.set("architecture", value.asInstanceOf[js.Any])
+    def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     
     @scala.inline
-    def setAvailablePhysicalMemory(value: Double): Self = this.set("availablePhysicalMemory", value.asInstanceOf[js.Any])
+    def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOsVersion(value: String): Self = this.set("osVersion", value.asInstanceOf[js.Any])
+    def setProcessorCount(value: Double): Self = StObject.set(x, "processorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalPhysicalMemory(value: Double): Self = this.set("totalPhysicalMemory", value.asInstanceOf[js.Any])
+    def setProcessorCountUndefined: Self = StObject.set(x, "processorCount", js.undefined)
     
     @scala.inline
-    def setUtcOffset(value: Double): Self = this.set("utcOffset", value.asInstanceOf[js.Any])
+    def setTotalPhysicalMemory(value: Double): Self = StObject.set(x, "totalPhysicalMemory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu(value: String): Self = this.set("cpu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCpu: Self = this.set("cpu", js.undefined)
-    
-    @scala.inline
-    def setProcessorCount(value: Double): Self = this.set("processorCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessorCount: Self = this.set("processorCount", js.undefined)
+    def setUtcOffset(value: Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
   }
 }

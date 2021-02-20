@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DateFilterCondition extends js.Object
+sealed trait DateFilterCondition extends StObject
 /**
   *
   * Enum representing all accepted conditions by which a date filter can be applied.
@@ -15,7 +16,7 @@ sealed trait DateFilterCondition extends js.Object
   */
 @JSGlobal("Excel.DateFilterCondition")
 @js.native
-object DateFilterCondition extends js.Object {
+object DateFilterCondition extends StObject {
   
   /**
     * Date is after comparator date.

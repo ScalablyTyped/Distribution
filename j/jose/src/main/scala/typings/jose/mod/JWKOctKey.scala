@@ -1,6 +1,7 @@
 package typings.jose.mod
 
 import typings.jose.joseStrings.oct
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,27 +26,15 @@ object JWKOctKey {
   }
   
   @scala.inline
-  implicit class JWKOctKeyOps[Self <: JWKOctKey] (val x: Self) extends AnyVal {
+  implicit class JWKOctKeyMutableBuilder[Self <: JWKOctKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKUndefined: Self = StObject.set(x, "k", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKty(value: oct): Self = this.set("kty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setK(value: String): Self = this.set("k", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteK: Self = this.set("k", js.undefined)
+    def setKty(value: oct): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
   }
 }

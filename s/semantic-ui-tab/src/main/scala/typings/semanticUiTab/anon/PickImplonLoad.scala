@@ -1,13 +1,14 @@
 package typings.semanticUiTab.anon
 
 import typings.semanticUiTab.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'onLoad'> */
 @js.native
-trait PickImplonLoad extends js.Object {
+trait PickImplonLoad extends StObject {
   
   def onLoad(tabPath: String, parameterArray: js.Array[_], historyEvent: js.Any): Unit = js.native
   @JSName("onLoad")

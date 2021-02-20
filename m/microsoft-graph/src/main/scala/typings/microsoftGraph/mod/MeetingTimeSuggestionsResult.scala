@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeetingTimeSuggestionsResult extends js.Object {
+trait MeetingTimeSuggestionsResult extends StObject {
   
   /**
     * A reason for not returning any meeting suggestions. The possible values are: attendeesUnavailable,
@@ -26,39 +27,27 @@ object MeetingTimeSuggestionsResult {
   }
   
   @scala.inline
-  implicit class MeetingTimeSuggestionsResultOps[Self <: MeetingTimeSuggestionsResult] (val x: Self) extends AnyVal {
+  implicit class MeetingTimeSuggestionsResultMutableBuilder[Self <: MeetingTimeSuggestionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmptySuggestionsReason(value: NullableOption[String]): Self = StObject.set(x, "emptySuggestionsReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmptySuggestionsReasonNull: Self = StObject.set(x, "emptySuggestionsReason", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmptySuggestionsReasonUndefined: Self = StObject.set(x, "emptySuggestionsReason", js.undefined)
     
     @scala.inline
-    def setEmptySuggestionsReason(value: NullableOption[String]): Self = this.set("emptySuggestionsReason", value.asInstanceOf[js.Any])
+    def setMeetingTimeSuggestions(value: NullableOption[js.Array[MeetingTimeSuggestion]]): Self = StObject.set(x, "meetingTimeSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmptySuggestionsReason: Self = this.set("emptySuggestionsReason", js.undefined)
+    def setMeetingTimeSuggestionsNull: Self = StObject.set(x, "meetingTimeSuggestions", null)
     
     @scala.inline
-    def setEmptySuggestionsReasonNull: Self = this.set("emptySuggestionsReason", null)
+    def setMeetingTimeSuggestionsUndefined: Self = StObject.set(x, "meetingTimeSuggestions", js.undefined)
     
     @scala.inline
-    def setMeetingTimeSuggestionsVarargs(value: MeetingTimeSuggestion*): Self = this.set("meetingTimeSuggestions", js.Array(value :_*))
-    
-    @scala.inline
-    def setMeetingTimeSuggestions(value: NullableOption[js.Array[MeetingTimeSuggestion]]): Self = this.set("meetingTimeSuggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeetingTimeSuggestions: Self = this.set("meetingTimeSuggestions", js.undefined)
-    
-    @scala.inline
-    def setMeetingTimeSuggestionsNull: Self = this.set("meetingTimeSuggestions", null)
+    def setMeetingTimeSuggestionsVarargs(value: MeetingTimeSuggestion*): Self = StObject.set(x, "meetingTimeSuggestions", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to create a subnetwork in a previously peered service network.
   */
 @js.native
-trait SchemaAddSubnetworkRequest extends js.Object {
+trait SchemaAddSubnetworkRequest extends StObject {
   
   /**
     * Required. A resource that represents the service consumer, such as
@@ -80,69 +81,57 @@ object SchemaAddSubnetworkRequest {
   }
   
   @scala.inline
-  implicit class SchemaAddSubnetworkRequestOps[Self <: SchemaAddSubnetworkRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAddSubnetworkRequestMutableBuilder[Self <: SchemaAddSubnetworkRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumer(value: String): Self = StObject.set(x, "consumer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
     
     @scala.inline
-    def setConsumer(value: String): Self = this.set("consumer", value.asInstanceOf[js.Any])
+    def setConsumerUndefined: Self = StObject.set(x, "consumer", js.undefined)
     
     @scala.inline
-    def deleteConsumer: Self = this.set("consumer", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerNetwork(value: String): Self = this.set("consumerNetwork", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteConsumerNetwork: Self = this.set("consumerNetwork", js.undefined)
+    def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpPrefixLength(value: Double): Self = this.set("ipPrefixLength", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteIpPrefixLength: Self = this.set("ipPrefixLength", js.undefined)
+    def setRequestedAddress(value: String): Self = StObject.set(x, "requestedAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRequestedAddressUndefined: Self = StObject.set(x, "requestedAddress", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedAddress(value: String): Self = this.set("requestedAddress", value.asInstanceOf[js.Any])
+    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
     @scala.inline
-    def deleteRequestedAddress: Self = this.set("requestedAddress", js.undefined)
+    def setSubnetworkUsers(value: js.Array[String]): Self = StObject.set(x, "subnetworkUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    def setSubnetworkUsersUndefined: Self = StObject.set(x, "subnetworkUsers", js.undefined)
     
     @scala.inline
-    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
-    
-    @scala.inline
-    def setSubnetworkUsersVarargs(value: String*): Self = this.set("subnetworkUsers", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubnetworkUsers(value: js.Array[String]): Self = this.set("subnetworkUsers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetworkUsers: Self = this.set("subnetworkUsers", js.undefined)
+    def setSubnetworkUsersVarargs(value: String*): Self = StObject.set(x, "subnetworkUsers", js.Array(value :_*))
   }
 }

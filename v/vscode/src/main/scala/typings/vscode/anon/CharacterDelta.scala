@@ -1,11 +1,12 @@
 package typings.vscode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CharacterDelta extends js.Object {
+trait CharacterDelta extends StObject {
   
   var characterDelta: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object CharacterDelta {
   }
   
   @scala.inline
-  implicit class CharacterDeltaOps[Self <: CharacterDelta] (val x: Self) extends AnyVal {
+  implicit class CharacterDeltaMutableBuilder[Self <: CharacterDelta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacterDelta(value: Double): Self = StObject.set(x, "characterDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharacterDeltaUndefined: Self = StObject.set(x, "characterDelta", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineDelta(value: Double): Self = StObject.set(x, "lineDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterDelta(value: Double): Self = this.set("characterDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCharacterDelta: Self = this.set("characterDelta", js.undefined)
-    
-    @scala.inline
-    def setLineDelta(value: Double): Self = this.set("lineDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineDelta: Self = this.set("lineDelta", js.undefined)
+    def setLineDeltaUndefined: Self = StObject.set(x, "lineDelta", js.undefined)
   }
 }

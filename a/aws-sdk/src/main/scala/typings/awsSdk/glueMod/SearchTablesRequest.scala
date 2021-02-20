@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchTablesRequest extends js.Object {
+trait SearchTablesRequest extends StObject {
   
   /**
     * A unique identifier, consisting of  account_id .
@@ -51,66 +52,54 @@ object SearchTablesRequest {
   }
   
   @scala.inline
-  implicit class SearchTablesRequestOps[Self <: SearchTablesRequest] (val x: Self) extends AnyVal {
+  implicit class SearchTablesRequestMutableBuilder[Self <: SearchTablesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: SearchPropertyPredicates): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+    def setFiltersVarargs(value: PropertyPredicate*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: PropertyPredicate*): Self = this.set("Filters", js.Array(value :_*))
+    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: SearchPropertyPredicates): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: PageSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setResourceShareType(value: ResourceShareType): Self = StObject.set(x, "ResourceShareType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setResourceShareTypeUndefined: Self = StObject.set(x, "ResourceShareType", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSearchText(value: ValueString): Self = StObject.set(x, "SearchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceShareType(value: ResourceShareType): Self = this.set("ResourceShareType", value.asInstanceOf[js.Any])
+    def setSearchTextUndefined: Self = StObject.set(x, "SearchText", js.undefined)
     
     @scala.inline
-    def deleteResourceShareType: Self = this.set("ResourceShareType", js.undefined)
+    def setSortCriteria(value: SortCriteria): Self = StObject.set(x, "SortCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchText(value: ValueString): Self = this.set("SearchText", value.asInstanceOf[js.Any])
+    def setSortCriteriaUndefined: Self = StObject.set(x, "SortCriteria", js.undefined)
     
     @scala.inline
-    def deleteSearchText: Self = this.set("SearchText", js.undefined)
-    
-    @scala.inline
-    def setSortCriteriaVarargs(value: SortCriterion*): Self = this.set("SortCriteria", js.Array(value :_*))
-    
-    @scala.inline
-    def setSortCriteria(value: SortCriteria): Self = this.set("SortCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortCriteria: Self = this.set("SortCriteria", js.undefined)
+    def setSortCriteriaVarargs(value: SortCriterion*): Self = StObject.set(x, "SortCriteria", js.Array(value :_*))
   }
 }

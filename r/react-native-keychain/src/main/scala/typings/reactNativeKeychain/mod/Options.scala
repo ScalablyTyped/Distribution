@@ -1,11 +1,12 @@
 package typings.reactNativeKeychain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var accessControl: js.UndefOr[ACCESS_CONTROL] = js.native
   
@@ -34,72 +35,60 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControl(value: ACCESS_CONTROL): Self = StObject.set(x, "accessControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlUndefined: Self = StObject.set(x, "accessControl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessGroup(value: String): Self = StObject.set(x, "accessGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControl(value: ACCESS_CONTROL): Self = this.set("accessControl", value.asInstanceOf[js.Any])
+    def setAccessGroupUndefined: Self = StObject.set(x, "accessGroup", js.undefined)
     
     @scala.inline
-    def deleteAccessControl: Self = this.set("accessControl", js.undefined)
+    def setAccessible(value: ACCESSIBLE): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessGroup(value: String): Self = this.set("accessGroup", value.asInstanceOf[js.Any])
+    def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
     @scala.inline
-    def deleteAccessGroup: Self = this.set("accessGroup", js.undefined)
+    def setAuthenticationPrompt(value: String | AuthenticationPrompt): Self = StObject.set(x, "authenticationPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessible(value: ACCESSIBLE): Self = this.set("accessible", value.asInstanceOf[js.Any])
+    def setAuthenticationPromptUndefined: Self = StObject.set(x, "authenticationPrompt", js.undefined)
     
     @scala.inline
-    def deleteAccessible: Self = this.set("accessible", js.undefined)
+    def setAuthenticationType(value: AUTHENTICATION_TYPE): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationPrompt(value: String | AuthenticationPrompt): Self = this.set("authenticationPrompt", value.asInstanceOf[js.Any])
+    def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationPrompt: Self = this.set("authenticationPrompt", js.undefined)
+    def setRules(value: SECURITY_RULES): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationType(value: AUTHENTICATION_TYPE): Self = this.set("authenticationType", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationType: Self = this.set("authenticationType", js.undefined)
+    def setSecurityLevel(value: SECURITY_LEVEL): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: SECURITY_RULES): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
     
     @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityLevel(value: SECURITY_LEVEL): Self = this.set("securityLevel", value.asInstanceOf[js.Any])
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def deleteSecurityLevel: Self = this.set("securityLevel", js.undefined)
+    def setStorage(value: STORAGE_TYPE): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
-    
-    @scala.inline
-    def setStorage(value: STORAGE_TYPE): Self = this.set("storage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorage: Self = this.set("storage", js.undefined)
+    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
   }
 }

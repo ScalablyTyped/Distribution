@@ -5,12 +5,13 @@ import typings.cesium.mod.Camera.FlightCompleteCallback
 import typings.cesium.mod.EasingFunction
 import typings.cesium.mod.HeadingPitchRange
 import typings.cesium.mod.Matrix4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Complete extends js.Object {
+trait Complete extends StObject {
   
   var cancel: js.UndefOr[FlightCancelledCallback] = js.native
   
@@ -41,78 +42,66 @@ object Complete {
   }
   
   @scala.inline
-  implicit class CompleteOps[Self <: Complete] (val x: Self) extends AnyVal {
+  implicit class CompleteMutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasingFunctionUndefined: Self = StObject.set(x, "easingFunction", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setEndTransform(value: Matrix4): Self = StObject.set(x, "endTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasingFunction(value: EasingFunction): Self = this.set("easingFunction", value.asInstanceOf[js.Any])
+    def setEndTransformUndefined: Self = StObject.set(x, "endTransform", js.undefined)
     
     @scala.inline
-    def deleteEasingFunction: Self = this.set("easingFunction", js.undefined)
+    def setFlyOverLongitude(value: Double): Self = StObject.set(x, "flyOverLongitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTransform(value: Matrix4): Self = this.set("endTransform", value.asInstanceOf[js.Any])
+    def setFlyOverLongitudeUndefined: Self = StObject.set(x, "flyOverLongitude", js.undefined)
     
     @scala.inline
-    def deleteEndTransform: Self = this.set("endTransform", js.undefined)
+    def setFlyOverLongitudeWeight(value: Double): Self = StObject.set(x, "flyOverLongitudeWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlyOverLongitude(value: Double): Self = this.set("flyOverLongitude", value.asInstanceOf[js.Any])
+    def setFlyOverLongitudeWeightUndefined: Self = StObject.set(x, "flyOverLongitudeWeight", js.undefined)
     
     @scala.inline
-    def deleteFlyOverLongitude: Self = this.set("flyOverLongitude", js.undefined)
+    def setMaximumHeight(value: Double): Self = StObject.set(x, "maximumHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlyOverLongitudeWeight(value: Double): Self = this.set("flyOverLongitudeWeight", value.asInstanceOf[js.Any])
+    def setMaximumHeightUndefined: Self = StObject.set(x, "maximumHeight", js.undefined)
     
     @scala.inline
-    def deleteFlyOverLongitudeWeight: Self = this.set("flyOverLongitudeWeight", js.undefined)
+    def setOffset(value: HeadingPitchRange): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumHeight(value: Double): Self = this.set("maximumHeight", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteMaximumHeight: Self = this.set("maximumHeight", js.undefined)
+    def setPitchAdjustHeight(value: Double): Self = StObject.set(x, "pitchAdjustHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: HeadingPitchRange): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
-    
-    @scala.inline
-    def setPitchAdjustHeight(value: Double): Self = this.set("pitchAdjustHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePitchAdjustHeight: Self = this.set("pitchAdjustHeight", js.undefined)
+    def setPitchAdjustHeightUndefined: Self = StObject.set(x, "pitchAdjustHeight", js.undefined)
   }
 }

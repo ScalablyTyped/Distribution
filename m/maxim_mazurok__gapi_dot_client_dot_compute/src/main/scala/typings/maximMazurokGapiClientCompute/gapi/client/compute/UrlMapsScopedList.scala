@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UrlMapsScopedList extends js.Object {
+trait UrlMapsScopedList extends StObject {
   
   /** A list of UrlMaps contained in this scope. */
   var urlMaps: js.UndefOr[js.Array[UrlMap]] = js.native
@@ -23,33 +24,21 @@ object UrlMapsScopedList {
   }
   
   @scala.inline
-  implicit class UrlMapsScopedListOps[Self <: UrlMapsScopedList] (val x: Self) extends AnyVal {
+  implicit class UrlMapsScopedListMutableBuilder[Self <: UrlMapsScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUrlMaps(value: js.Array[UrlMap]): Self = StObject.set(x, "urlMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUrlMapsUndefined: Self = StObject.set(x, "urlMaps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrlMapsVarargs(value: UrlMap*): Self = StObject.set(x, "urlMaps", js.Array(value :_*))
     
     @scala.inline
-    def setUrlMapsVarargs(value: UrlMap*): Self = this.set("urlMaps", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlMaps(value: js.Array[UrlMap]): Self = this.set("urlMaps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlMaps: Self = this.set("urlMaps", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

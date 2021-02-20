@@ -1,5 +1,6 @@
 package typings.luxon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.luxon.luxonStrings.persian
   - typings.luxon.luxonStrings.roc
 */
-trait CalendarSystem extends js.Object
+trait CalendarSystem extends StObject
 object CalendarSystem {
   
   @scala.inline

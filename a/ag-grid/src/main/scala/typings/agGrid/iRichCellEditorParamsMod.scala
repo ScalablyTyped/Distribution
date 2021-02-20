@@ -4,13 +4,12 @@ import typings.agGrid.anon.InstantiableICellRendererComp
 import typings.agGrid.componentResolverMod.ComponentHolder
 import typings.agGrid.iCellEditorMod.ICellEditorParams
 import typings.agGrid.iCellRendererMod.ICellRendererFunc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/interfaces/iRichCellEditorParams", JSImport.Namespace)
-@js.native
-object iRichCellEditorParamsMod extends js.Object {
+object iRichCellEditorParamsMod {
   
   @js.native
   trait IRichCellEditorParams

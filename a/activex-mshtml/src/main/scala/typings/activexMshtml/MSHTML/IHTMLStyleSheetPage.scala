@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLStyleSheetPage extends js.Object {
+trait IHTMLStyleSheetPage extends StObject {
   
   @JSName("MSHTML.IHTMLStyleSheetPage_typekey")
   var MSHTMLDotIHTMLStyleSheetPage_typekey: IHTMLStyleSheetPage = js.native
@@ -24,27 +25,15 @@ object IHTMLStyleSheetPage {
   }
   
   @scala.inline
-  implicit class IHTMLStyleSheetPageOps[Self <: IHTMLStyleSheetPage] (val x: Self) extends AnyVal {
+  implicit class IHTMLStyleSheetPageMutableBuilder[Self <: IHTMLStyleSheetPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMSHTMLDotIHTMLStyleSheetPage_typekey(value: IHTMLStyleSheetPage): Self = StObject.set(x, "MSHTML.IHTMLStyleSheetPage_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPseudoClass(value: String): Self = StObject.set(x, "pseudoClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotIHTMLStyleSheetPage_typekey(value: IHTMLStyleSheetPage): Self = this.set("MSHTML.IHTMLStyleSheetPage_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPseudoClass(value: String): Self = this.set("pseudoClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

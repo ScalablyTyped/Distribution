@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setPlaceholder("Search for an artist for all songs.");
   */
 @js.native
-trait TextInput extends js.Object {
+trait TextInput extends StObject {
   
   def setAllowOverride(allowOverride: Boolean): TextInput = js.native
   
@@ -49,36 +50,24 @@ object TextInput {
   }
   
   @scala.inline
-  implicit class TextInputOps[Self <: TextInput] (val x: Self) extends AnyVal {
+  implicit class TextInputMutableBuilder[Self <: TextInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetAllowOverride(value: Boolean => TextInput): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetHelpText(value: String => TextInput): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetId(value: String => TextInput): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAllowOverride(value: Boolean => TextInput): Self = this.set("setAllowOverride", js.Any.fromFunction1(value))
+    def setSetIsDynamic(value: Boolean => TextInput): Self = StObject.set(x, "setIsDynamic", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHelpText(value: String => TextInput): Self = this.set("setHelpText", js.Any.fromFunction1(value))
+    def setSetName(value: String => TextInput): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetId(value: String => TextInput): Self = this.set("setId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetIsDynamic(value: Boolean => TextInput): Self = this.set("setIsDynamic", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetName(value: String => TextInput): Self = this.set("setName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPlaceholder(value: String => TextInput): Self = this.set("setPlaceholder", js.Any.fromFunction1(value))
+    def setSetPlaceholder(value: String => TextInput): Self = StObject.set(x, "setPlaceholder", js.Any.fromFunction1(value))
   }
 }

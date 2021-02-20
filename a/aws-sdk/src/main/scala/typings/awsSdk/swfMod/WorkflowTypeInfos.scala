@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowTypeInfos extends js.Object {
+trait WorkflowTypeInfos extends StObject {
   
   /**
     * If a NextPageToken was returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextPageToken. Keep all other arguments unchanged. The configured maximumPageSize determines how many results can be returned in a single call.
@@ -26,30 +27,18 @@ object WorkflowTypeInfos {
   }
   
   @scala.inline
-  implicit class WorkflowTypeInfosOps[Self <: WorkflowTypeInfos] (val x: Self) extends AnyVal {
+  implicit class WorkflowTypeInfosMutableBuilder[Self <: WorkflowTypeInfos] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypeInfos(value: WorkflowTypeInfoList): Self = StObject.set(x, "typeInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeInfosVarargs(value: WorkflowTypeInfo*): Self = this.set("typeInfos", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypeInfos(value: WorkflowTypeInfoList): Self = this.set("typeInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setTypeInfosVarargs(value: WorkflowTypeInfo*): Self = StObject.set(x, "typeInfos", js.Array(value :_*))
   }
 }

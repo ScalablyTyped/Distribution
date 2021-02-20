@@ -1,15 +1,15 @@
 package typings.blockingProxy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("blocking-proxy/built/lib/client", JSImport.Namespace)
-@js.native
-object clientMod extends js.Object {
+object clientMod {
   
+  @JSImport("blocking-proxy/built/lib/client", "BPClient")
   @js.native
-  class BPClient protected () extends js.Object {
+  class BPClient protected () extends StObject {
     def this(bpUrlValue: String) = this()
     
     var hostname: String = js.native

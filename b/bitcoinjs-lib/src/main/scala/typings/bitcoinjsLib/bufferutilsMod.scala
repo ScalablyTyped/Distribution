@@ -1,24 +1,16 @@
 package typings.bitcoinjsLib
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitcoinjs-lib/types/bufferutils", JSImport.Namespace)
-@js.native
-object bufferutilsMod extends js.Object {
+object bufferutilsMod {
   
-  def cloneBuffer(buffer: Buffer): Buffer = js.native
-  
-  def readUInt64LE(buffer: Buffer, offset: Double): Double = js.native
-  
-  def reverseBuffer(buffer: Buffer): Buffer = js.native
-  
-  def writeUInt64LE(buffer: Buffer, value: Double, offset: Double): Double = js.native
-  
+  @JSImport("bitcoinjs-lib/types/bufferutils", "BufferReader")
   @js.native
-  class BufferReader protected () extends js.Object {
+  class BufferReader protected () extends StObject {
     def this(buffer: Buffer) = this()
     def this(buffer: Buffer, offset: Double) = this()
     
@@ -43,8 +35,9 @@ object bufferutilsMod extends js.Object {
     def readVector(): js.Array[Buffer] = js.native
   }
   
+  @JSImport("bitcoinjs-lib/types/bufferutils", "BufferWriter")
   @js.native
-  class BufferWriter protected () extends js.Object {
+  class BufferWriter protected () extends StObject {
     def this(buffer: Buffer) = this()
     def this(buffer: Buffer, offset: Double) = this()
     
@@ -68,4 +61,20 @@ object bufferutilsMod extends js.Object {
     
     def writeVector(vector: js.Array[Buffer]): Unit = js.native
   }
+  
+  @JSImport("bitcoinjs-lib/types/bufferutils", "cloneBuffer")
+  @js.native
+  def cloneBuffer(buffer: Buffer): Buffer = js.native
+  
+  @JSImport("bitcoinjs-lib/types/bufferutils", "readUInt64LE")
+  @js.native
+  def readUInt64LE(buffer: Buffer, offset: Double): Double = js.native
+  
+  @JSImport("bitcoinjs-lib/types/bufferutils", "reverseBuffer")
+  @js.native
+  def reverseBuffer(buffer: Buffer): Buffer = js.native
+  
+  @JSImport("bitcoinjs-lib/types/bufferutils", "writeUInt64LE")
+  @js.native
+  def writeUInt64LE(buffer: Buffer, value: Double, offset: Double): Double = js.native
 }

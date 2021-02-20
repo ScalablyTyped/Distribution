@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * span with format:  projects/PROJECT_ID/traces/TRACE_ID/spans/SPAN_ID
   */
 @js.native
-trait SchemaSpanContext extends js.Object {
+trait SchemaSpanContext extends StObject {
   
   /**
     * The resource name of the span in the following format:
@@ -31,24 +32,12 @@ object SchemaSpanContext {
   }
   
   @scala.inline
-  implicit class SchemaSpanContextOps[Self <: SchemaSpanContext] (val x: Self) extends AnyVal {
+  implicit class SchemaSpanContextMutableBuilder[Self <: SchemaSpanContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpanName(value: String): Self = StObject.set(x, "spanName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSpanName(value: String): Self = this.set("spanName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpanName: Self = this.set("spanName", js.undefined)
+    def setSpanNameUndefined: Self = StObject.set(x, "spanName", js.undefined)
   }
 }

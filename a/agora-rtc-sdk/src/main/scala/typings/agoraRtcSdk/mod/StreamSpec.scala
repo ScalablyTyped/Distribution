@@ -4,6 +4,7 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.application
 import typings.agoraRtcSdk.agoraRtcSdkStrings.screen
 import typings.agoraRtcSdk.agoraRtcSdkStrings.window
 import typings.agoraRtcSdk.anon.AEC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [[include:StreamSpec-example.md]]
   */
 @js.native
-trait StreamSpec extends js.Object {
+trait StreamSpec extends StObject {
   
   /**
     * Marks whether this stream contains an audio track.
@@ -151,96 +152,84 @@ object StreamSpec {
   }
   
   @scala.inline
-  implicit class StreamSpecOps[Self <: StreamSpec] (val x: Self) extends AnyVal {
+  implicit class StreamSpecMutableBuilder[Self <: StreamSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioProcessing(value: AEC): Self = StObject.set(x, "audioProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioProcessingUndefined: Self = StObject.set(x, "audioProcessing", js.undefined)
     
     @scala.inline
-    def setAudio(value: Boolean): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setAudioSource(value: MediaStreamTrack): Self = StObject.set(x, "audioSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo(value: Boolean): Self = this.set("video", value.asInstanceOf[js.Any])
+    def setAudioSourceUndefined: Self = StObject.set(x, "audioSource", js.undefined)
     
     @scala.inline
-    def setAudioProcessing(value: AEC): Self = this.set("audioProcessing", value.asInstanceOf[js.Any])
+    def setCameraId(value: String): Self = StObject.set(x, "cameraId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAudioProcessing: Self = this.set("audioProcessing", js.undefined)
+    def setCameraIdUndefined: Self = StObject.set(x, "cameraId", js.undefined)
     
     @scala.inline
-    def setAudioSource(value: MediaStreamTrack): Self = this.set("audioSource", value.asInstanceOf[js.Any])
+    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAudioSource: Self = this.set("audioSource", js.undefined)
+    def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
     
     @scala.inline
-    def setCameraId(value: String): Self = this.set("cameraId", value.asInstanceOf[js.Any])
+    def setFacingMode(value: String): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCameraId: Self = this.set("cameraId", js.undefined)
+    def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
     
     @scala.inline
-    def setExtensionId(value: String): Self = this.set("extensionId", value.asInstanceOf[js.Any])
+    def setMediaSource(value: screen | application | window): Self = StObject.set(x, "mediaSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensionId: Self = this.set("extensionId", js.undefined)
+    def setMediaSourceUndefined: Self = StObject.set(x, "mediaSource", js.undefined)
     
     @scala.inline
-    def setFacingMode(value: String): Self = this.set("facingMode", value.asInstanceOf[js.Any])
+    def setMicrophoneId(value: String): Self = StObject.set(x, "microphoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFacingMode: Self = this.set("facingMode", js.undefined)
+    def setMicrophoneIdUndefined: Self = StObject.set(x, "microphoneId", js.undefined)
     
     @scala.inline
-    def setMediaSource(value: screen | application | window): Self = this.set("mediaSource", value.asInstanceOf[js.Any])
+    def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMediaSource: Self = this.set("mediaSource", js.undefined)
+    def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
     
     @scala.inline
-    def setMicrophoneId(value: String): Self = this.set("microphoneId", value.asInstanceOf[js.Any])
+    def setScreen(value: Boolean): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMicrophoneId: Self = this.set("microphoneId", js.undefined)
+    def setScreenAudio(value: Boolean): Self = StObject.set(x, "screenAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMirror(value: Boolean): Self = this.set("mirror", value.asInstanceOf[js.Any])
+    def setScreenAudioUndefined: Self = StObject.set(x, "screenAudio", js.undefined)
     
     @scala.inline
-    def deleteMirror: Self = this.set("mirror", js.undefined)
+    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
     
     @scala.inline
-    def setScreen(value: Boolean): Self = this.set("screen", value.asInstanceOf[js.Any])
+    def setStreamID(value: Double | String): Self = StObject.set(x, "streamID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScreen: Self = this.set("screen", js.undefined)
+    def setStreamIDUndefined: Self = StObject.set(x, "streamID", js.undefined)
     
     @scala.inline
-    def setScreenAudio(value: Boolean): Self = this.set("screenAudio", value.asInstanceOf[js.Any])
+    def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScreenAudio: Self = this.set("screenAudio", js.undefined)
+    def setVideoSource(value: MediaStreamTrack): Self = StObject.set(x, "videoSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamID(value: Double | String): Self = this.set("streamID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamID: Self = this.set("streamID", js.undefined)
-    
-    @scala.inline
-    def setVideoSource(value: MediaStreamTrack): Self = this.set("videoSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoSource: Self = this.set("videoSource", js.undefined)
+    def setVideoSourceUndefined: Self = StObject.set(x, "videoSource", js.undefined)
   }
 }

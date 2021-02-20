@@ -1,12 +1,13 @@
 package typings.minappEnv.DB
 
 import typings.minappEnv.ICloudConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Database extends js.Object {
+trait Database extends StObject {
   
   val Geo: typings.minappEnv.DB.Geo = js.native
   
@@ -33,33 +34,21 @@ object Database {
   }
   
   @scala.inline
-  implicit class DatabaseOps[Self <: Database] (val x: Self) extends AnyVal {
+  implicit class DatabaseMutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollection(value: String => CollectionReference): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommand(value: DatabaseCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeo(value: Geo): Self = this.set("Geo", value.asInstanceOf[js.Any])
+    def setGeo(value: Geo): Self = StObject.set(x, "Geo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection(value: String => CollectionReference): Self = this.set("collection", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCommand(value: DatabaseCommand): Self = this.set("command", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConfig(value: ICloudConfig): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerDate(value: () => ServerDate): Self = this.set("serverDate", js.Any.fromFunction0(value))
+    def setServerDate(value: () => ServerDate): Self = StObject.set(x, "serverDate", js.Any.fromFunction0(value))
   }
 }

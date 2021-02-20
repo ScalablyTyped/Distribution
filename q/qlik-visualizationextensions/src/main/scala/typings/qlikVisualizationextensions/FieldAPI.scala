@@ -1,16 +1,15 @@
 package typings.qlikVisualizationextensions
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("FieldAPI")
-@js.native
-object FieldAPI extends js.Object {
+object FieldAPI {
   
   @js.native
-  trait IQField extends js.Object {
+  trait IQField extends StObject {
     
     /**
       * Clears a field selection.
@@ -156,7 +155,7 @@ object FieldAPI extends js.Object {
   }
   
   @js.native
-  trait IQFieldValue extends js.Object {
+  trait IQFieldValue extends StObject {
     
     /**
       * Cell value index.

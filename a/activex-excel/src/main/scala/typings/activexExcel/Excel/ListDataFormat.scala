@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDataFormat extends js.Object {
+trait ListDataFormat extends StObject {
   
   val AllowFillIn: Boolean = js.native
   
@@ -69,75 +70,63 @@ object ListDataFormat {
   }
   
   @scala.inline
-  implicit class ListDataFormatOps[Self <: ListDataFormat] (val x: Self) extends AnyVal {
+  implicit class ListDataFormatMutableBuilder[Self <: ListDataFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFillIn(value: Boolean): Self = StObject.set(x, "AllowFillIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChoices(value: SafeArray[String]): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFillIn(value: Boolean): Self = this.set("AllowFillIn", value.asInstanceOf[js.Any])
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDecimalPlaces(value: Double): Self = StObject.set(x, "DecimalPlaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChoices(value: SafeArray[String]): Self = this.set("Choices", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setExcelDotListDataFormat_typekey(value: ListDataFormat): Self = StObject.set(x, "Excel.ListDataFormat_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalPlaces(value: Double): Self = this.set("DecimalPlaces", value.asInstanceOf[js.Any])
+    def setIsPercent(value: Boolean): Self = StObject.set(x, "IsPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotListDataFormat_typekey(value: ListDataFormat): Self = this.set("Excel.ListDataFormat_typekey", value.asInstanceOf[js.Any])
+    def setMaxCharacters(value: Double): Self = StObject.set(x, "MaxCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPercent(value: Boolean): Self = this.set("IsPercent", value.asInstanceOf[js.Any])
+    def setMaxNumber(value: Double): Self = StObject.set(x, "MaxNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCharacters(value: Double): Self = this.set("MaxCharacters", value.asInstanceOf[js.Any])
+    def setMaxNumberNull: Self = StObject.set(x, "MaxNumber", null)
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setMinNumber(value: Double): Self = StObject.set(x, "MinNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    def setMinNumberNull: Self = StObject.set(x, "MinNumber", null)
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("Required", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: XlListDataType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_Default(value: XlListDataType): Self = this.set("_Default", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLcid(value: Double): Self = this.set("lcid", value.asInstanceOf[js.Any])
+    def setType(value: XlListDataType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNumber(value: Double): Self = this.set("MaxNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxNumberNull: Self = this.set("MaxNumber", null)
-    
-    @scala.inline
-    def setMinNumber(value: Double): Self = this.set("MinNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinNumberNull: Self = this.set("MinNumber", null)
+    def set_Default(value: XlListDataType): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.jointjs.mod.shapes.standard
 
 import typings.jointjs.mod.dia.Graph.Options
 import typings.jointjs.mod.dia.Link.GenericAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

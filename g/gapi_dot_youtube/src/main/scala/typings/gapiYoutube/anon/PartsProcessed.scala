@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartsProcessed extends js.Object {
+trait PartsProcessed extends StObject {
   
   /**
     * The number of parts of the video that YouTube has already processed.
@@ -31,27 +32,15 @@ object PartsProcessed {
   }
   
   @scala.inline
-  implicit class PartsProcessedOps[Self <: PartsProcessed] (val x: Self) extends AnyVal {
+  implicit class PartsProcessedMutableBuilder[Self <: PartsProcessed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPartsProcessed(value: Double): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartsTotal(value: Double): Self = StObject.set(x, "partsTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPartsProcessed(value: Double): Self = this.set("partsProcessed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartsTotal(value: Double): Self = this.set("partsTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeLeftMs(value: Double): Self = this.set("timeLeftMs", value.asInstanceOf[js.Any])
+    def setTimeLeftMs(value: Double): Self = StObject.set(x, "timeLeftMs", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkippedDetail extends js.Object {
+trait SkippedDetail extends StObject {
   
   /** If the App doesn't support the specific API level. */
   var incompatibleAppVersion: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object SkippedDetail {
   }
   
   @scala.inline
-  implicit class SkippedDetailOps[Self <: SkippedDetail] (val x: Self) extends AnyVal {
+  implicit class SkippedDetailMutableBuilder[Self <: SkippedDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncompatibleAppVersion(value: Boolean): Self = StObject.set(x, "incompatibleAppVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncompatibleAppVersionUndefined: Self = StObject.set(x, "incompatibleAppVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncompatibleArchitecture(value: Boolean): Self = StObject.set(x, "incompatibleArchitecture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncompatibleAppVersion(value: Boolean): Self = this.set("incompatibleAppVersion", value.asInstanceOf[js.Any])
+    def setIncompatibleArchitectureUndefined: Self = StObject.set(x, "incompatibleArchitecture", js.undefined)
     
     @scala.inline
-    def deleteIncompatibleAppVersion: Self = this.set("incompatibleAppVersion", js.undefined)
+    def setIncompatibleDevice(value: Boolean): Self = StObject.set(x, "incompatibleDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncompatibleArchitecture(value: Boolean): Self = this.set("incompatibleArchitecture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncompatibleArchitecture: Self = this.set("incompatibleArchitecture", js.undefined)
-    
-    @scala.inline
-    def setIncompatibleDevice(value: Boolean): Self = this.set("incompatibleDevice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncompatibleDevice: Self = this.set("incompatibleDevice", js.undefined)
+    def setIncompatibleDeviceUndefined: Self = StObject.set(x, "incompatibleDevice", js.undefined)
   }
 }

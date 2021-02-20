@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,54 +32,42 @@ object MicrosoftStoreForBusinessApp {
   }
   
   @scala.inline
-  implicit class MicrosoftStoreForBusinessAppOps[Self <: MicrosoftStoreForBusinessApp] (val x: Self) extends AnyVal {
+  implicit class MicrosoftStoreForBusinessAppMutableBuilder[Self <: MicrosoftStoreForBusinessApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLicenseType(value: MicrosoftStoreForBusinessLicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageIdentityName(value: NullableOption[String]): Self = StObject.set(x, "packageIdentityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseType(value: MicrosoftStoreForBusinessLicenseType): Self = this.set("licenseType", value.asInstanceOf[js.Any])
+    def setPackageIdentityNameNull: Self = StObject.set(x, "packageIdentityName", null)
     
     @scala.inline
-    def deleteLicenseType: Self = this.set("licenseType", js.undefined)
+    def setPackageIdentityNameUndefined: Self = StObject.set(x, "packageIdentityName", js.undefined)
     
     @scala.inline
-    def setPackageIdentityName(value: NullableOption[String]): Self = this.set("packageIdentityName", value.asInstanceOf[js.Any])
+    def setProductKey(value: NullableOption[String]): Self = StObject.set(x, "productKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePackageIdentityName: Self = this.set("packageIdentityName", js.undefined)
+    def setProductKeyNull: Self = StObject.set(x, "productKey", null)
     
     @scala.inline
-    def setPackageIdentityNameNull: Self = this.set("packageIdentityName", null)
+    def setProductKeyUndefined: Self = StObject.set(x, "productKey", js.undefined)
     
     @scala.inline
-    def setProductKey(value: NullableOption[String]): Self = this.set("productKey", value.asInstanceOf[js.Any])
+    def setTotalLicenseCount(value: Double): Self = StObject.set(x, "totalLicenseCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProductKey: Self = this.set("productKey", js.undefined)
+    def setTotalLicenseCountUndefined: Self = StObject.set(x, "totalLicenseCount", js.undefined)
     
     @scala.inline
-    def setProductKeyNull: Self = this.set("productKey", null)
+    def setUsedLicenseCount(value: Double): Self = StObject.set(x, "usedLicenseCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalLicenseCount(value: Double): Self = this.set("totalLicenseCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalLicenseCount: Self = this.set("totalLicenseCount", js.undefined)
-    
-    @scala.inline
-    def setUsedLicenseCount(value: Double): Self = this.set("usedLicenseCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsedLicenseCount: Self = this.set("usedLicenseCount", js.undefined)
+    def setUsedLicenseCountUndefined: Self = StObject.set(x, "usedLicenseCount", js.undefined)
   }
 }

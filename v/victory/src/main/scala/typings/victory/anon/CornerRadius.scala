@@ -1,12 +1,13 @@
 package typings.victory.anon
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CornerRadius extends js.Object {
+trait CornerRadius extends StObject {
   
   var cornerRadius: js.UndefOr[Double] = js.native
   
@@ -25,42 +26,30 @@ object CornerRadius {
   }
   
   @scala.inline
-  implicit class CornerRadiusOps[Self <: CornerRadius] (val x: Self) extends AnyVal {
+  implicit class CornerRadiusMutableBuilder[Self <: CornerRadius] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlyoutStyle(value: CSSProperties): Self = StObject.set(x, "flyoutStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCornerRadius(value: Double): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
+    def setFlyoutStyleUndefined: Self = StObject.set(x, "flyoutStyle", js.undefined)
     
     @scala.inline
-    def deleteCornerRadius: Self = this.set("cornerRadius", js.undefined)
+    def setPointerLength(value: Double): Self = StObject.set(x, "pointerLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlyoutStyle(value: CSSProperties): Self = this.set("flyoutStyle", value.asInstanceOf[js.Any])
+    def setPointerLengthUndefined: Self = StObject.set(x, "pointerLength", js.undefined)
     
     @scala.inline
-    def deleteFlyoutStyle: Self = this.set("flyoutStyle", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointerLength(value: Double): Self = this.set("pointerLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointerLength: Self = this.set("pointerLength", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

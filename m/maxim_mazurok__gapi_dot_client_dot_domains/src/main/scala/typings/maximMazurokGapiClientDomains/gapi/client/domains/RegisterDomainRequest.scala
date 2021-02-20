@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterDomainRequest extends js.Object {
+trait RegisterDomainRequest extends StObject {
   
   /** The list of contact notices that the caller acknowledges. The notices required here depend on the values specified in `registration.contact_settings`. */
   var contactNotices: js.UndefOr[js.Array[String]] = js.native
@@ -31,54 +32,42 @@ object RegisterDomainRequest {
   }
   
   @scala.inline
-  implicit class RegisterDomainRequestOps[Self <: RegisterDomainRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterDomainRequestMutableBuilder[Self <: RegisterDomainRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactNotices(value: js.Array[String]): Self = StObject.set(x, "contactNotices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactNoticesUndefined: Self = StObject.set(x, "contactNotices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactNoticesVarargs(value: String*): Self = StObject.set(x, "contactNotices", js.Array(value :_*))
     
     @scala.inline
-    def setContactNoticesVarargs(value: String*): Self = this.set("contactNotices", js.Array(value :_*))
+    def setDomainNotices(value: js.Array[String]): Self = StObject.set(x, "domainNotices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactNotices(value: js.Array[String]): Self = this.set("contactNotices", value.asInstanceOf[js.Any])
+    def setDomainNoticesUndefined: Self = StObject.set(x, "domainNotices", js.undefined)
     
     @scala.inline
-    def deleteContactNotices: Self = this.set("contactNotices", js.undefined)
+    def setDomainNoticesVarargs(value: String*): Self = StObject.set(x, "domainNotices", js.Array(value :_*))
     
     @scala.inline
-    def setDomainNoticesVarargs(value: String*): Self = this.set("domainNotices", js.Array(value :_*))
+    def setRegistration(value: Registration): Self = StObject.set(x, "registration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainNotices(value: js.Array[String]): Self = this.set("domainNotices", value.asInstanceOf[js.Any])
+    def setRegistrationUndefined: Self = StObject.set(x, "registration", js.undefined)
     
     @scala.inline
-    def deleteDomainNotices: Self = this.set("domainNotices", js.undefined)
+    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistration(value: Registration): Self = this.set("registration", value.asInstanceOf[js.Any])
+    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
     
     @scala.inline
-    def deleteRegistration: Self = this.set("registration", js.undefined)
+    def setYearlyPrice(value: Money): Self = StObject.set(x, "yearlyPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateOnly(value: Boolean): Self = this.set("validateOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateOnly: Self = this.set("validateOnly", js.undefined)
-    
-    @scala.inline
-    def setYearlyPrice(value: Money): Self = this.set("yearlyPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYearlyPrice: Self = this.set("yearlyPrice", js.undefined)
+    def setYearlyPriceUndefined: Self = StObject.set(x, "yearlyPrice", js.undefined)
   }
 }

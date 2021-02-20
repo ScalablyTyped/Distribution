@@ -3,12 +3,13 @@ package typings.lodash.fpMod
 import typings.lodash.mod.List
 import typings.lodash.mod.Many
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashFlatMap extends js.Object {
+trait LodashFlatMap extends StObject {
   
   def apply(iteratee: String): js.Array[_] = js.native
   def apply(iteratee: String, collection: js.Object): js.Array[_] = js.native

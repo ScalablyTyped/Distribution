@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEndPointStateOutput extends js.Object {
+trait DescribeEndPointStateOutput extends StObject {
   
   /**
     * Information about the health of the instances.
@@ -21,27 +22,15 @@ object DescribeEndPointStateOutput {
   }
   
   @scala.inline
-  implicit class DescribeEndPointStateOutputOps[Self <: DescribeEndPointStateOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeEndPointStateOutputMutableBuilder[Self <: DescribeEndPointStateOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceStates(value: InstanceStates): Self = StObject.set(x, "InstanceStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceStatesUndefined: Self = StObject.set(x, "InstanceStates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceStatesVarargs(value: InstanceState*): Self = this.set("InstanceStates", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstanceStates(value: InstanceStates): Self = this.set("InstanceStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceStates: Self = this.set("InstanceStates", js.undefined)
+    def setInstanceStatesVarargs(value: InstanceState*): Self = StObject.set(x, "InstanceStates", js.Array(value :_*))
   }
 }

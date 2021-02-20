@@ -5,12 +5,13 @@ import typings.angularMaterial.anon.Left
 import typings.angularMaterial.anon.Open
 import typings.std.Element
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPanelAnimation extends js.Object {
+trait IPanelAnimation extends StObject {
   
   def closeTo(to: String): IPanelAnimation = js.native
   def closeTo(to: Left): IPanelAnimation = js.native

@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.sheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SubTotalDescriptor
   */
 @js.native
-trait SubTotalColumn extends js.Object {
+trait SubTotalColumn extends StObject {
   
   /** the index of the column inside the source data area. */
   var Column: Double = js.native
@@ -26,24 +27,12 @@ object SubTotalColumn {
   }
   
   @scala.inline
-  implicit class SubTotalColumnOps[Self <: SubTotalColumn] (val x: Self) extends AnyVal {
+  implicit class SubTotalColumnMutableBuilder[Self <: SubTotalColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumn(value: Double): Self = this.set("Column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFunction(value: GeneralFunction): Self = this.set("Function", value.asInstanceOf[js.Any])
+    def setFunction(value: GeneralFunction): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
   }
 }

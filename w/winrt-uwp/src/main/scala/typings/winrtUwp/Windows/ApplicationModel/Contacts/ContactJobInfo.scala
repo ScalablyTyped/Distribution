@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents job info for a contact. */
 @js.native
-trait ContactJobInfo extends js.Object {
+trait ContactJobInfo extends StObject {
   
   /** Gets and sets the company address of the job info for a contact. The maximum string length for the company address is 1024 characters. */
   var companyAddress: String = js.native
@@ -50,42 +51,30 @@ object ContactJobInfo {
   }
   
   @scala.inline
-  implicit class ContactJobInfoOps[Self <: ContactJobInfo] (val x: Self) extends AnyVal {
+  implicit class ContactJobInfoMutableBuilder[Self <: ContactJobInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanyAddress(value: String): Self = StObject.set(x, "companyAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompanyYomiName(value: String): Self = StObject.set(x, "companyYomiName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyAddress(value: String): Self = this.set("companyAddress", value.asInstanceOf[js.Any])
+    def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyYomiName(value: String): Self = this.set("companyYomiName", value.asInstanceOf[js.Any])
+    def setManager(value: String): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepartment(value: String): Self = this.set("department", value.asInstanceOf[js.Any])
+    def setOffice(value: String): Self = StObject.set(x, "office", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManager(value: String): Self = this.set("manager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffice(value: String): Self = this.set("office", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

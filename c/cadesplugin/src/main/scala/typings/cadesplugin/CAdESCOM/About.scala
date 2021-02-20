@@ -1,11 +1,12 @@
 package typings.cadesplugin.CAdESCOM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait About extends js.Object {
+trait About extends StObject {
   
   val BuildVersion: Double = js.native
   

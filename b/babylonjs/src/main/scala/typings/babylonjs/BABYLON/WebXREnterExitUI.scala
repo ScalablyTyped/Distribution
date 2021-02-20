@@ -1,6 +1,7 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,39 +52,27 @@ object WebXREnterExitUI {
   }
   
   @scala.inline
-  implicit class WebXREnterExitUIOps[Self <: WebXREnterExitUI] (val x: Self) extends AnyVal {
+  implicit class WebXREnterExitUIMutableBuilder[Self <: WebXREnterExitUI] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveButtonChangedObservable(value: Observable[Nullable[WebXREnterExitUIButton]]): Self = StObject.set(x, "activeButtonChangedObservable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptions(value: WebXREnterExitUIOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverlay(value: HTMLDivElement): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_activeButton(value: js.Any): Self = this.set("_activeButton", value.asInstanceOf[js.Any])
+    def setScene(value: js.Any): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_buttons(value: js.Any): Self = this.set("_buttons", value.asInstanceOf[js.Any])
+    def set_activeButton(value: js.Any): Self = StObject.set(x, "_activeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_updateButtons(value: js.Any): Self = this.set("_updateButtons", value.asInstanceOf[js.Any])
+    def set_buttons(value: js.Any): Self = StObject.set(x, "_buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveButtonChangedObservable(value: Observable[Nullable[WebXREnterExitUIButton]]): Self = this.set("activeButtonChangedObservable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: WebXREnterExitUIOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverlay(value: HTMLDivElement): Self = this.set("overlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScene(value: js.Any): Self = this.set("scene", value.asInstanceOf[js.Any])
+    def set_updateButtons(value: js.Any): Self = StObject.set(x, "_updateButtons", value.asInstanceOf[js.Any])
   }
 }

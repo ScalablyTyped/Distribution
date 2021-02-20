@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IScheduledJobTrigger extends js.Object {
+trait IScheduledJobTrigger extends StObject {
   
   var BeginDay: Double = js.native
   
@@ -50,51 +51,39 @@ object IScheduledJobTrigger {
   }
   
   @scala.inline
-  implicit class IScheduledJobTriggerOps[Self <: IScheduledJobTrigger] (val x: Self) extends AnyVal {
+  implicit class IScheduledJobTriggerMutableBuilder[Self <: IScheduledJobTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginDay(value: Double): Self = StObject.set(x, "BeginDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginMonth(value: Double): Self = StObject.set(x, "BeginMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginYear(value: Double): Self = StObject.set(x, "BeginYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginDay(value: Double): Self = this.set("BeginDay", value.asInstanceOf[js.Any])
+    def setClone(value: () => IScheduledJobTrigger): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeginMonth(value: Double): Self = this.set("BeginMonth", value.asInstanceOf[js.Any])
+    def setEndDay(value: Double): Self = StObject.set(x, "EndDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginYear(value: Double): Self = this.set("BeginYear", value.asInstanceOf[js.Any])
+    def setEndMonth(value: Double): Self = StObject.set(x, "EndMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IScheduledJobTrigger): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setEndYear(value: Double): Self = StObject.set(x, "EndYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDay(value: Double): Self = this.set("EndDay", value.asInstanceOf[js.Any])
+    def setStartHour(value: Double): Self = StObject.set(x, "StartHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndMonth(value: Double): Self = this.set("EndMonth", value.asInstanceOf[js.Any])
+    def setStartMinute(value: Double): Self = StObject.set(x, "StartMinute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndYear(value: Double): Self = this.set("EndYear", value.asInstanceOf[js.Any])
+    def setType(value: ITriggerType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartHour(value: Double): Self = this.set("StartHour", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartMinute(value: Double): Self = this.set("StartMinute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ITriggerType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidEndDate(value: Boolean): Self = this.set("ValidEndDate", value.asInstanceOf[js.Any])
+    def setValidEndDate(value: Boolean): Self = StObject.set(x, "ValidEndDate", value.asInstanceOf[js.Any])
   }
 }

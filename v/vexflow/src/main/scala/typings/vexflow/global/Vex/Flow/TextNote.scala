@@ -1,7 +1,6 @@
 package typings.vexflow.global.Vex.Flow
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.vexflow.anon.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,15 +11,11 @@ class TextNote protected ()
   extends typings.vexflow.Vex.Flow.TextNote {
   def this(text_struct: typings.vexflow.anon.Font) = this()
 }
-@JSGlobal("Vex.Flow.TextNote")
-@js.native
-object TextNote extends js.Object {
+object TextNote {
   
+  @JSGlobal("Vex.Flow.TextNote.Justification")
   @js.native
-  object GLYPHS extends /* name */ StringDictionary[Point]
-  
-  @js.native
-  object Justification extends js.Object {
+  object Justification extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.TextNote.Justification with Double] = js.native

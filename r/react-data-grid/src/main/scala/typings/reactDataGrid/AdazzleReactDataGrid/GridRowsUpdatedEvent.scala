@@ -4,6 +4,7 @@ import typings.reactDataGrid.reactDataGridStrings.cellDrag
 import typings.reactDataGrid.reactDataGridStrings.cellUpdate
 import typings.reactDataGrid.reactDataGridStrings.columnFill
 import typings.reactDataGrid.reactDataGridStrings.copyPaste
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @default T = any
   */
 @js.native
-trait GridRowsUpdatedEvent[T] extends js.Object {
+trait GridRowsUpdatedEvent[T] extends StObject {
   
   /**
     * The action that occurred to trigger this event.
@@ -56,33 +57,21 @@ object GridRowsUpdatedEvent {
   }
   
   @scala.inline
-  implicit class GridRowsUpdatedEventOps[Self <: GridRowsUpdatedEvent[_], T] (val x: Self with GridRowsUpdatedEvent[T]) extends AnyVal {
+  implicit class GridRowsUpdatedEventMutableBuilder[Self <: GridRowsUpdatedEvent[_], T] (val x: Self with GridRowsUpdatedEvent[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: cellUpdate | cellDrag | columnFill | copyPaste): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: cellUpdate | cellDrag | columnFill | copyPaste): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellKey(value: String): Self = this.set("cellKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFromRow(value: Double): Self = this.set("fromRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToRow(value: Double): Self = this.set("toRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated(value: T): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setUpdated(value: T): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

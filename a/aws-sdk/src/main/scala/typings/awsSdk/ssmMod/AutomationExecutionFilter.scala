@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutomationExecutionFilter extends js.Object {
+trait AutomationExecutionFilter extends StObject {
   
   /**
     * One or more keys to limit the results. Valid filter keys include the following: DocumentNamePrefix, ExecutionStatus, ExecutionId, ParentExecutionId, CurrentAction, StartTimeBefore, StartTimeAfter, TargetResourceGroup.
@@ -26,27 +27,15 @@ object AutomationExecutionFilter {
   }
   
   @scala.inline
-  implicit class AutomationExecutionFilterOps[Self <: AutomationExecutionFilter] (val x: Self) extends AnyVal {
+  implicit class AutomationExecutionFilterMutableBuilder[Self <: AutomationExecutionFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: AutomationExecutionFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValues(value: AutomationExecutionFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKey(value: AutomationExecutionFilterKey): Self = this.set("Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: AutomationExecutionFilterValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: AutomationExecutionFilterValueList): Self = this.set("Values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: AutomationExecutionFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

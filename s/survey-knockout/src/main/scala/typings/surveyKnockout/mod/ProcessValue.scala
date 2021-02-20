@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "ProcessValue")
 @js.native
-class ProcessValue () extends js.Object {
+class ProcessValue () extends StObject {
   
   def getFirstName(text: String): String = js.native
   def getFirstName(text: String, obj: js.Any): String = js.native

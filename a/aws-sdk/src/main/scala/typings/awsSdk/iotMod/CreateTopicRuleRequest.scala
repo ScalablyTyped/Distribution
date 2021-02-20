@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTopicRuleRequest extends js.Object {
+trait CreateTopicRuleRequest extends StObject {
   
   /**
     * The name of the rule.
@@ -31,30 +32,18 @@ object CreateTopicRuleRequest {
   }
   
   @scala.inline
-  implicit class CreateTopicRuleRequestOps[Self <: CreateTopicRuleRequest] (val x: Self) extends AnyVal {
+  implicit class CreateTopicRuleRequestMutableBuilder[Self <: CreateTopicRuleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setRuleName(value: RuleName): Self = this.set("ruleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopicRulePayload(value: TopicRulePayload): Self = this.set("topicRulePayload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTags(value: String): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTopicRulePayload(value: TopicRulePayload): Self = StObject.set(x, "topicRulePayload", value.asInstanceOf[js.Any])
   }
 }

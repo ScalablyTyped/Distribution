@@ -1,5 +1,6 @@
 package typings.std.Intl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.lookup
   - typings.std.stdStrings.`best fit`
 */
-trait RelativeTimeFormatLocaleMatcher extends js.Object
+trait RelativeTimeFormatLocaleMatcher extends StObject
 object RelativeTimeFormatLocaleMatcher {
   
   @scala.inline

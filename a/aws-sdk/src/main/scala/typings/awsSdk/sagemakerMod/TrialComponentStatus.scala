@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrialComponentStatus extends js.Object {
+trait TrialComponentStatus extends StObject {
   
   /**
     * If the component failed, a message describing why.
@@ -26,30 +27,18 @@ object TrialComponentStatus {
   }
   
   @scala.inline
-  implicit class TrialComponentStatusOps[Self <: TrialComponentStatus] (val x: Self) extends AnyVal {
+  implicit class TrialComponentStatusMutableBuilder[Self <: TrialComponentStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: TrialComponentStatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrimaryStatus(value: TrialComponentPrimaryStatus): Self = StObject.set(x, "PrimaryStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: TrialComponentStatusMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
-    
-    @scala.inline
-    def setPrimaryStatus(value: TrialComponentPrimaryStatus): Self = this.set("PrimaryStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryStatus: Self = this.set("PrimaryStatus", js.undefined)
+    def setPrimaryStatusUndefined: Self = StObject.set(x, "PrimaryStatus", js.undefined)
   }
 }

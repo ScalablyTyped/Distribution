@@ -1,5 +1,6 @@
 package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NetworkInterface on the corresponding Compute Engine resource.
   */
 @js.native
-trait SchemaNetworkInterface extends js.Object {
+trait SchemaNetworkInterface extends StObject {
   
   /**
     * An array of configurations for this interface. This specifies how this
@@ -37,39 +38,27 @@ object SchemaNetworkInterface {
   }
   
   @scala.inline
-  implicit class SchemaNetworkInterfaceOps[Self <: SchemaNetworkInterface] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworkInterfaceMutableBuilder[Self <: SchemaNetworkInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessConfigs(value: js.Array[SchemaAccessConfig]): Self = StObject.set(x, "accessConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessConfigsUndefined: Self = StObject.set(x, "accessConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessConfigsVarargs(value: SchemaAccessConfig*): Self = StObject.set(x, "accessConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setAccessConfigsVarargs(value: SchemaAccessConfig*): Self = this.set("accessConfigs", js.Array(value :_*))
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessConfigs(value: js.Array[SchemaAccessConfig]): Self = this.set("accessConfigs", value.asInstanceOf[js.Any])
+    def setNetworkIp(value: String): Self = StObject.set(x, "networkIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessConfigs: Self = this.set("accessConfigs", js.undefined)
+    def setNetworkIpUndefined: Self = StObject.set(x, "networkIp", js.undefined)
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
-    
-    @scala.inline
-    def setNetworkIp(value: String): Self = this.set("networkIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkIp: Self = this.set("networkIp", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
   }
 }

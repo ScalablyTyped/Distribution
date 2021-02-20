@@ -3,6 +3,7 @@ package typings.hapiJoi.mod
 import typings.hapiJoi.hapiJoiStrings.all
 import typings.hapiJoi.hapiJoiStrings.any
 import typings.hapiJoi.hapiJoiStrings.one
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

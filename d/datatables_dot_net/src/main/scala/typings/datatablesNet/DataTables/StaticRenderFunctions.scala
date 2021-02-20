@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaticRenderFunctions extends js.Object {
+trait StaticRenderFunctions extends StObject {
   
   /**
     * Will format numeric data (defined by `columns.data`) for display, retaining the original unformatted data for sorting and filtering.

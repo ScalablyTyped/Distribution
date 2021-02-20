@@ -1,14 +1,16 @@
 package typings.emberEngine
 
+import org.scalablytyped.runtime.Shortcut
 import typings.emberEngine.anon.Instantiate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/engine/-private/registry-proxy-mixin", JSImport.Namespace)
-@js.native
-object registryProxyMixinMod extends js.Object {
+object registryProxyMixinMod extends Shortcut {
   
+  @JSImport("@ember/engine/-private/registry-proxy-mixin", JSImport.Default)
+  @js.native
   val default: typings.emberObject.mixinMod.default[RegistryProxyMixin, typings.emberObject.mod.default] = js.native
   
   /**
@@ -16,7 +18,7 @@ object registryProxyMixinMod extends js.Object {
     * registry functionality.
     */
   @js.native
-  trait RegistryProxyMixin extends js.Object {
+  trait RegistryProxyMixin extends StObject {
     
     /**
       * Check if a factory is registered.
@@ -77,4 +79,9 @@ object registryProxyMixinMod extends js.Object {
       */
     def unregister(fullName: String): js.Any = js.native
   }
+  
+  type _To = typings.emberObject.mixinMod.default[RegistryProxyMixin, typings.emberObject.mod.default]
+  
+  /* This means you don't have to write `default`, but can instead just say `registryProxyMixinMod.foo` */
+  override def _to: typings.emberObject.mixinMod.default[RegistryProxyMixin, typings.emberObject.mod.default] = default
 }

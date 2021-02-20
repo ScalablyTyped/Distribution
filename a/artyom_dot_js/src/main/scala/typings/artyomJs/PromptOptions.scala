@@ -1,11 +1,12 @@
 package typings.artyomJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PromptOptions extends js.Object {
+trait PromptOptions extends StObject {
   
   var beforePrompt: js.UndefOr[js.Function] = js.native
   
@@ -30,54 +31,42 @@ object PromptOptions {
   }
   
   @scala.inline
-  implicit class PromptOptionsOps[Self <: PromptOptions] (val x: Self) extends AnyVal {
+  implicit class PromptOptionsMutableBuilder[Self <: PromptOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforePrompt(value: js.Function): Self = StObject.set(x, "beforePrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforePromptUndefined: Self = StObject.set(x, "beforePrompt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnEndPrompt(value: js.Function): Self = StObject.set(x, "onEndPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOnEndPromptUndefined: Self = StObject.set(x, "onEndPrompt", js.undefined)
     
     @scala.inline
-    def setQuestion(value: String): Self = this.set("question", value.asInstanceOf[js.Any])
+    def setOnMatch(value: js.Function): Self = StObject.set(x, "onMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforePrompt(value: js.Function): Self = this.set("beforePrompt", value.asInstanceOf[js.Any])
+    def setOnMatchUndefined: Self = StObject.set(x, "onMatch", js.undefined)
     
     @scala.inline
-    def deleteBeforePrompt: Self = this.set("beforePrompt", js.undefined)
+    def setOnStartPrompt(value: js.Function): Self = StObject.set(x, "onStartPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEndPrompt(value: js.Function): Self = this.set("onEndPrompt", value.asInstanceOf[js.Any])
+    def setOnStartPromptUndefined: Self = StObject.set(x, "onStartPrompt", js.undefined)
     
     @scala.inline
-    def deleteOnEndPrompt: Self = this.set("onEndPrompt", js.undefined)
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMatch(value: js.Function): Self = this.set("onMatch", value.asInstanceOf[js.Any])
+    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnMatch: Self = this.set("onMatch", js.undefined)
+    def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnStartPrompt(value: js.Function): Self = this.set("onStartPrompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnStartPrompt: Self = this.set("onStartPrompt", js.undefined)
-    
-    @scala.inline
-    def setSmart(value: Boolean): Self = this.set("smart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmart: Self = this.set("smart", js.undefined)
+    def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
   }
 }

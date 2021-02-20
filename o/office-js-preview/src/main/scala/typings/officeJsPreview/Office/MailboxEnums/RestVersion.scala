@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RestVersion extends js.Object
+sealed trait RestVersion extends StObject
 /**
   * Specifies the version of the REST API that corresponds to a REST-formatted item ID.
   *
@@ -17,7 +18,7 @@ sealed trait RestVersion extends js.Object
   */
 @JSGlobal("Office.MailboxEnums.RestVersion")
 @js.native
-object RestVersion extends js.Object {
+object RestVersion extends StObject {
   
   /**
     * Beta.

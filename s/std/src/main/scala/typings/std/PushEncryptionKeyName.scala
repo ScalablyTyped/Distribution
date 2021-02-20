@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.auth
   - typings.std.stdStrings.p256dh
 */
-trait PushEncryptionKeyName extends js.Object
+trait PushEncryptionKeyName extends StObject
 object PushEncryptionKeyName {
   
   @scala.inline

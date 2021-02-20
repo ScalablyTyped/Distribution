@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagramLayout extends js.Object {
+trait DiagramLayout extends StObject {
   
   var endRadialAngle: js.UndefOr[Double] = js.native
   
@@ -48,114 +49,102 @@ object DiagramLayout {
   }
   
   @scala.inline
-  implicit class DiagramLayoutOps[Self <: DiagramLayout] (val x: Self) extends AnyVal {
+  implicit class DiagramLayoutMutableBuilder[Self <: DiagramLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndRadialAngle(value: Double): Self = StObject.set(x, "endRadialAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndRadialAngleUndefined: Self = StObject.set(x, "endRadialAngle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrid(value: DiagramLayoutGrid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndRadialAngle(value: Double): Self = this.set("endRadialAngle", value.asInstanceOf[js.Any])
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def deleteEndRadialAngle: Self = this.set("endRadialAngle", js.undefined)
+    def setHorizontalSeparation(value: Double): Self = StObject.set(x, "horizontalSeparation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: DiagramLayoutGrid): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setHorizontalSeparationUndefined: Self = StObject.set(x, "horizontalSeparation", js.undefined)
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalSeparation(value: Double): Self = this.set("horizontalSeparation", value.asInstanceOf[js.Any])
+    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
     @scala.inline
-    def deleteHorizontalSeparation: Self = this.set("horizontalSeparation", js.undefined)
+    def setLayerSeparation(value: Double): Self = StObject.set(x, "layerSeparation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
+    def setLayerSeparationUndefined: Self = StObject.set(x, "layerSeparation", js.undefined)
     
     @scala.inline
-    def deleteIterations: Self = this.set("iterations", js.undefined)
+    def setNodeDistance(value: Double): Self = StObject.set(x, "nodeDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerSeparation(value: Double): Self = this.set("layerSeparation", value.asInstanceOf[js.Any])
+    def setNodeDistanceUndefined: Self = StObject.set(x, "nodeDistance", js.undefined)
     
     @scala.inline
-    def deleteLayerSeparation: Self = this.set("layerSeparation", js.undefined)
+    def setRadialFirstLevelSeparation(value: Double): Self = StObject.set(x, "radialFirstLevelSeparation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeDistance(value: Double): Self = this.set("nodeDistance", value.asInstanceOf[js.Any])
+    def setRadialFirstLevelSeparationUndefined: Self = StObject.set(x, "radialFirstLevelSeparation", js.undefined)
     
     @scala.inline
-    def deleteNodeDistance: Self = this.set("nodeDistance", js.undefined)
+    def setRadialSeparation(value: Double): Self = StObject.set(x, "radialSeparation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadialFirstLevelSeparation(value: Double): Self = this.set("radialFirstLevelSeparation", value.asInstanceOf[js.Any])
+    def setRadialSeparationUndefined: Self = StObject.set(x, "radialSeparation", js.undefined)
     
     @scala.inline
-    def deleteRadialFirstLevelSeparation: Self = this.set("radialFirstLevelSeparation", js.undefined)
+    def setStartRadialAngle(value: Double): Self = StObject.set(x, "startRadialAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadialSeparation(value: Double): Self = this.set("radialSeparation", value.asInstanceOf[js.Any])
+    def setStartRadialAngleUndefined: Self = StObject.set(x, "startRadialAngle", js.undefined)
     
     @scala.inline
-    def deleteRadialSeparation: Self = this.set("radialSeparation", js.undefined)
+    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartRadialAngle(value: Double): Self = this.set("startRadialAngle", value.asInstanceOf[js.Any])
+    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
     @scala.inline
-    def deleteStartRadialAngle: Self = this.set("startRadialAngle", js.undefined)
+    def setTipOverTreeStartLevel(value: Double): Self = StObject.set(x, "tipOverTreeStartLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtype(value: String): Self = this.set("subtype", value.asInstanceOf[js.Any])
+    def setTipOverTreeStartLevelUndefined: Self = StObject.set(x, "tipOverTreeStartLevel", js.undefined)
     
     @scala.inline
-    def deleteSubtype: Self = this.set("subtype", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTipOverTreeStartLevel(value: Double): Self = this.set("tipOverTreeStartLevel", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTipOverTreeStartLevel: Self = this.set("tipOverTreeStartLevel", js.undefined)
+    def setUnderneathHorizontalOffset(value: Double): Self = StObject.set(x, "underneathHorizontalOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUnderneathHorizontalOffsetUndefined: Self = StObject.set(x, "underneathHorizontalOffset", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUnderneathVerticalSeparation(value: Double): Self = StObject.set(x, "underneathVerticalSeparation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderneathHorizontalOffset(value: Double): Self = this.set("underneathHorizontalOffset", value.asInstanceOf[js.Any])
+    def setUnderneathVerticalSeparationUndefined: Self = StObject.set(x, "underneathVerticalSeparation", js.undefined)
     
     @scala.inline
-    def deleteUnderneathHorizontalOffset: Self = this.set("underneathHorizontalOffset", js.undefined)
+    def setUnderneathVerticalTopOffset(value: Double): Self = StObject.set(x, "underneathVerticalTopOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderneathVerticalSeparation(value: Double): Self = this.set("underneathVerticalSeparation", value.asInstanceOf[js.Any])
+    def setUnderneathVerticalTopOffsetUndefined: Self = StObject.set(x, "underneathVerticalTopOffset", js.undefined)
     
     @scala.inline
-    def deleteUnderneathVerticalSeparation: Self = this.set("underneathVerticalSeparation", js.undefined)
+    def setVerticalSeparation(value: Double): Self = StObject.set(x, "verticalSeparation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderneathVerticalTopOffset(value: Double): Self = this.set("underneathVerticalTopOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderneathVerticalTopOffset: Self = this.set("underneathVerticalTopOffset", js.undefined)
-    
-    @scala.inline
-    def setVerticalSeparation(value: Double): Self = this.set("verticalSeparation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalSeparation: Self = this.set("verticalSeparation", js.undefined)
+    def setVerticalSeparationUndefined: Self = StObject.set(x, "verticalSeparation", js.undefined)
   }
 }

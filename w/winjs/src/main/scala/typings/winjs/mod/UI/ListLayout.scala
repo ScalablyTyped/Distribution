@@ -1,5 +1,6 @@
 package typings.winjs.mod.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +20,19 @@ class ListLayout ()
   extends typings.winjs.WinJS.UI.ListLayout {
   def this(options: js.Any) = this()
 }
-/* static members */
-@JSImport("winjs", "UI.ListLayout")
-@js.native
-object ListLayout extends js.Object {
+object ListLayout {
+  
+  @JSImport("winjs", "UI.ListLayout")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSImport("winjs", "UI.ListLayout.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

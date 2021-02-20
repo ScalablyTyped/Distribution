@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignalResourceInput extends js.Object {
+trait SignalResourceInput extends StObject {
   
   /**
     * The logical ID of the resource that you want to signal. The logical ID is the name of the resource that given in the template.
@@ -41,30 +42,18 @@ object SignalResourceInput {
   }
   
   @scala.inline
-  implicit class SignalResourceInputOps[Self <: SignalResourceInput] (val x: Self) extends AnyVal {
+  implicit class SignalResourceInputMutableBuilder[Self <: SignalResourceInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: ResourceSignalStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalResourceId(value: LogicalResourceId): Self = this.set("LogicalResourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = this.set("StackName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: ResourceSignalStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniqueId(value: ResourceSignalUniqueId): Self = this.set("UniqueId", value.asInstanceOf[js.Any])
+    def setUniqueId(value: ResourceSignalUniqueId): Self = StObject.set(x, "UniqueId", value.asInstanceOf[js.Any])
   }
 }

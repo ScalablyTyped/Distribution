@@ -1,11 +1,12 @@
 package typings.awsSdk.accessanalyzerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListArchiveRulesResponse extends js.Object {
+trait ListArchiveRulesResponse extends StObject {
   
   /**
     * A list of archive rules created for the specified analyzer.
@@ -26,30 +27,18 @@ object ListArchiveRulesResponse {
   }
   
   @scala.inline
-  implicit class ListArchiveRulesResponseOps[Self <: ListArchiveRulesResponse] (val x: Self) extends AnyVal {
+  implicit class ListArchiveRulesResponseMutableBuilder[Self <: ListArchiveRulesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchiveRules(value: ArchiveRulesList): Self = StObject.set(x, "archiveRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveRulesVarargs(value: ArchiveRuleSummary*): Self = StObject.set(x, "archiveRules", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: Token): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveRulesVarargs(value: ArchiveRuleSummary*): Self = this.set("archiveRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setArchiveRules(value: ArchiveRulesList): Self = this.set("archiveRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

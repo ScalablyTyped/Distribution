@@ -1,5 +1,6 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.muiDatatables.muiDatatablesStrings.single
   - typings.muiDatatables.muiDatatablesStrings.none
 */
-trait SelectableRows extends js.Object
+trait SelectableRows extends StObject
 object SelectableRows {
   
   @scala.inline

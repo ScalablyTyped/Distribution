@@ -10,12 +10,13 @@ import typings.exceljs.exceljsStrings.min
 import typings.exceljs.exceljsStrings.none_
 import typings.exceljs.exceljsStrings.stdDev
 import typings.exceljs.exceljsStrings.sum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableColumnProperties extends js.Object {
+trait TableColumnProperties extends StObject {
   
   /**
   	  * Switches the filter control in the header
@@ -54,45 +55,33 @@ object TableColumnProperties {
   }
   
   @scala.inline
-  implicit class TableColumnPropertiesOps[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
+  implicit class TableColumnPropertiesMutableBuilder[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterButton(value: Boolean): Self = StObject.set(x, "filterButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterButtonUndefined: Self = StObject.set(x, "filterButton", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTotalsRowFormula(value: String): Self = StObject.set(x, "totalsRowFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterButton(value: Boolean): Self = this.set("filterButton", value.asInstanceOf[js.Any])
+    def setTotalsRowFormulaUndefined: Self = StObject.set(x, "totalsRowFormula", js.undefined)
     
     @scala.inline
-    def deleteFilterButton: Self = this.set("filterButton", js.undefined)
+    def setTotalsRowFunction(value: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom): Self = StObject.set(x, "totalsRowFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalsRowFormula(value: String): Self = this.set("totalsRowFormula", value.asInstanceOf[js.Any])
+    def setTotalsRowFunctionUndefined: Self = StObject.set(x, "totalsRowFunction", js.undefined)
     
     @scala.inline
-    def deleteTotalsRowFormula: Self = this.set("totalsRowFormula", js.undefined)
+    def setTotalsRowLabel(value: String): Self = StObject.set(x, "totalsRowLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalsRowFunction(value: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom): Self = this.set("totalsRowFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalsRowFunction: Self = this.set("totalsRowFunction", js.undefined)
-    
-    @scala.inline
-    def setTotalsRowLabel(value: String): Self = this.set("totalsRowLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalsRowLabel: Self = this.set("totalsRowLabel", js.undefined)
+    def setTotalsRowLabelUndefined: Self = StObject.set(x, "totalsRowLabel", js.undefined)
   }
 }

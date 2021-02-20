@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSearchSuggestionsResponse extends js.Object {
+trait GetSearchSuggestionsResponse extends StObject {
   
   /**
     * A list of property names for a Resource that match a SuggestionQuery.
@@ -21,27 +22,15 @@ object GetSearchSuggestionsResponse {
   }
   
   @scala.inline
-  implicit class GetSearchSuggestionsResponseOps[Self <: GetSearchSuggestionsResponse] (val x: Self) extends AnyVal {
+  implicit class GetSearchSuggestionsResponseMutableBuilder[Self <: GetSearchSuggestionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPropertyNameSuggestions(value: PropertyNameSuggestionList): Self = StObject.set(x, "PropertyNameSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropertyNameSuggestionsUndefined: Self = StObject.set(x, "PropertyNameSuggestions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertyNameSuggestionsVarargs(value: PropertyNameSuggestion*): Self = this.set("PropertyNameSuggestions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPropertyNameSuggestions(value: PropertyNameSuggestionList): Self = this.set("PropertyNameSuggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyNameSuggestions: Self = this.set("PropertyNameSuggestions", js.undefined)
+    def setPropertyNameSuggestionsVarargs(value: PropertyNameSuggestion*): Self = StObject.set(x, "PropertyNameSuggestions", js.Array(value :_*))
   }
 }

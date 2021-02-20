@@ -1,5 +1,6 @@
 package typings.w3cImageCapture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.w3cImageCapture.w3cImageCaptureStrings.off
   - typings.w3cImageCapture.w3cImageCaptureStrings.flash
 */
-trait FillLightMode extends js.Object
+trait FillLightMode extends StObject
 object FillLightMode {
   
   @scala.inline

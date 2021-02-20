@@ -1,5 +1,6 @@
 package typings.googleapis.webmastersV3Mod.webmastersV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * List of crawl error samples.
   */
 @js.native
-trait SchemaUrlCrawlErrorsSamplesListResponse extends js.Object {
+trait SchemaUrlCrawlErrorsSamplesListResponse extends StObject {
   
   /**
     * Information about the sample URL and its crawl error.
@@ -24,27 +25,15 @@ object SchemaUrlCrawlErrorsSamplesListResponse {
   }
   
   @scala.inline
-  implicit class SchemaUrlCrawlErrorsSamplesListResponseOps[Self <: SchemaUrlCrawlErrorsSamplesListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaUrlCrawlErrorsSamplesListResponseMutableBuilder[Self <: SchemaUrlCrawlErrorsSamplesListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUrlCrawlErrorSample(value: js.Array[SchemaUrlCrawlErrorsSample]): Self = StObject.set(x, "urlCrawlErrorSample", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUrlCrawlErrorSampleUndefined: Self = StObject.set(x, "urlCrawlErrorSample", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUrlCrawlErrorSampleVarargs(value: SchemaUrlCrawlErrorsSample*): Self = this.set("urlCrawlErrorSample", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrlCrawlErrorSample(value: js.Array[SchemaUrlCrawlErrorsSample]): Self = this.set("urlCrawlErrorSample", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlCrawlErrorSample: Self = this.set("urlCrawlErrorSample", js.undefined)
+    def setUrlCrawlErrorSampleVarargs(value: SchemaUrlCrawlErrorsSample*): Self = StObject.set(x, "urlCrawlErrorSample", js.Array(value :_*))
   }
 }

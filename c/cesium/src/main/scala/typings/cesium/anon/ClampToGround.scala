@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClampToGround extends js.Object {
+trait ClampToGround extends StObject {
   
   var clampToGround: js.UndefOr[Boolean] = js.native
   
@@ -32,66 +33,54 @@ object ClampToGround {
   }
   
   @scala.inline
-  implicit class ClampToGroundOps[Self <: ClampToGround] (val x: Self) extends AnyVal {
+  implicit class ClampToGroundMutableBuilder[Self <: ClampToGround] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClampToGround(value: Boolean): Self = StObject.set(x, "clampToGround", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClampToGroundUndefined: Self = StObject.set(x, "clampToGround", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: typings.cesium.mod.Color): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClampToGround(value: Boolean): Self = this.set("clampToGround", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteClampToGround: Self = this.set("clampToGround", js.undefined)
+    def setMarkerColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: typings.cesium.mod.Color): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setMarkerColorUndefined: Self = StObject.set(x, "markerColor", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerColor(value: typings.cesium.mod.Color): Self = this.set("markerColor", value.asInstanceOf[js.Any])
+    def setMarkerSizeUndefined: Self = StObject.set(x, "markerSize", js.undefined)
     
     @scala.inline
-    def deleteMarkerColor: Self = this.set("markerColor", js.undefined)
+    def setMarkerSymbol(value: String): Self = StObject.set(x, "markerSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerSize(value: Double): Self = this.set("markerSize", value.asInstanceOf[js.Any])
+    def setMarkerSymbolUndefined: Self = StObject.set(x, "markerSymbol", js.undefined)
     
     @scala.inline
-    def deleteMarkerSize: Self = this.set("markerSize", js.undefined)
+    def setSourceUri(value: String): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerSymbol(value: String): Self = this.set("markerSymbol", value.asInstanceOf[js.Any])
+    def setSourceUriUndefined: Self = StObject.set(x, "sourceUri", js.undefined)
     
     @scala.inline
-    def deleteMarkerSymbol: Self = this.set("markerSymbol", js.undefined)
+    def setStroke(value: typings.cesium.mod.Color): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceUri(value: String): Self = this.set("sourceUri", value.asInstanceOf[js.Any])
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def deleteSourceUri: Self = this.set("sourceUri", js.undefined)
+    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStroke(value: typings.cesium.mod.Color): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
-    
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

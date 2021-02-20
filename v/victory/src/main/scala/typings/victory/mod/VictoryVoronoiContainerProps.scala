@@ -3,6 +3,7 @@ package typings.victory.mod
 import typings.react.mod.ReactElement
 import typings.victory.victoryStrings.x
 import typings.victory.victoryStrings.y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,87 +103,75 @@ object VictoryVoronoiContainerProps {
   }
   
   @scala.inline
-  implicit class VictoryVoronoiContainerPropsOps[Self <: VictoryVoronoiContainerProps] (val x: Self) extends AnyVal {
+  implicit class VictoryVoronoiContainerPropsMutableBuilder[Self <: VictoryVoronoiContainerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivateData(value: Boolean): Self = StObject.set(x, "activateData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivateDataUndefined: Self = StObject.set(x, "activateData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivateLabels(value: Boolean): Self = StObject.set(x, "activateLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivateData(value: Boolean): Self = this.set("activateData", value.asInstanceOf[js.Any])
+    def setActivateLabelsUndefined: Self = StObject.set(x, "activateLabels", js.undefined)
     
     @scala.inline
-    def deleteActivateData: Self = this.set("activateData", js.undefined)
+    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivateLabels(value: Boolean): Self = this.set("activateLabels", value.asInstanceOf[js.Any])
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def deleteActivateLabels: Self = this.set("activateLabels", js.undefined)
+    def setLabelComponent(value: ReactElement): Self = StObject.set(x, "labelComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: Boolean): Self = this.set("disable", value.asInstanceOf[js.Any])
+    def setLabelComponentUndefined: Self = StObject.set(x, "labelComponent", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setLabels(value: (/* point */ js.Any, /* index */ Double, /* points */ js.Array[_]) => String): Self = StObject.set(x, "labels", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setLabelComponent(value: ReactElement): Self = this.set("labelComponent", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteLabelComponent: Self = this.set("labelComponent", js.undefined)
+    def setOnActivated(value: (/* points */ js.Array[_], VictoryVoronoiContainerProps) => Unit): Self = StObject.set(x, "onActivated", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLabels(value: (/* point */ js.Any, /* index */ Double, /* points */ js.Array[_]) => String): Self = this.set("labels", js.Any.fromFunction3(value))
+    def setOnActivatedUndefined: Self = StObject.set(x, "onActivated", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setOnDeactivated(value: (/* points */ js.Array[_], VictoryVoronoiContainerProps) => Unit): Self = StObject.set(x, "onDeactivated", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnActivated(value: (/* points */ js.Array[_], VictoryVoronoiContainerProps) => Unit): Self = this.set("onActivated", js.Any.fromFunction2(value))
+    def setOnDeactivatedUndefined: Self = StObject.set(x, "onDeactivated", js.undefined)
     
     @scala.inline
-    def deleteOnActivated: Self = this.set("onActivated", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDeactivated(value: (/* points */ js.Array[_], VictoryVoronoiContainerProps) => Unit): Self = this.set("onDeactivated", js.Any.fromFunction2(value))
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteOnDeactivated: Self = this.set("onDeactivated", js.undefined)
+    def setVoronoiBlacklist(value: js.Array[String]): Self = StObject.set(x, "voronoiBlacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setVoronoiBlacklistUndefined: Self = StObject.set(x, "voronoiBlacklist", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setVoronoiBlacklistVarargs(value: String*): Self = StObject.set(x, "voronoiBlacklist", js.Array(value :_*))
     
     @scala.inline
-    def setVoronoiBlacklistVarargs(value: String*): Self = this.set("voronoiBlacklist", js.Array(value :_*))
+    def setVoronoiDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "voronoiDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoronoiBlacklist(value: js.Array[String]): Self = this.set("voronoiBlacklist", value.asInstanceOf[js.Any])
+    def setVoronoiDimensionUndefined: Self = StObject.set(x, "voronoiDimension", js.undefined)
     
     @scala.inline
-    def deleteVoronoiBlacklist: Self = this.set("voronoiBlacklist", js.undefined)
+    def setVoronoiPadding(value: Double): Self = StObject.set(x, "voronoiPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoronoiDimension(value: typings.victory.victoryStrings.x | y): Self = this.set("voronoiDimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoronoiDimension: Self = this.set("voronoiDimension", js.undefined)
-    
-    @scala.inline
-    def setVoronoiPadding(value: Double): Self = this.set("voronoiPadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoronoiPadding: Self = this.set("voronoiPadding", js.undefined)
+    def setVoronoiPaddingUndefined: Self = StObject.set(x, "voronoiPadding", js.undefined)
   }
 }

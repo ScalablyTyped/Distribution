@@ -1,6 +1,7 @@
 package typings.cytoscape.mod
 
 import typings.cytoscape.cytoscapeStrings.cose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,63 +86,51 @@ object CoseLayoutOptions {
   }
   
   @scala.inline
-  implicit class CoseLayoutOptionsOps[Self <: CoseLayoutOptions] (val x: Self) extends AnyVal {
+  implicit class CoseLayoutOptionsMutableBuilder[Self <: CoseLayoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentSpacing(value: Double): Self = StObject.set(x, "componentSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoolingFactor(value: Double): Self = StObject.set(x, "coolingFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdgeElasticity(value: js.Any => Double): Self = StObject.set(x, "edgeElasticity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComponentSpacing(value: Double): Self = this.set("componentSpacing", value.asInstanceOf[js.Any])
+    def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoolingFactor(value: Double): Self = this.set("coolingFactor", value.asInstanceOf[js.Any])
+    def setIdealEdgeLength(value: js.Any => Double): Self = StObject.set(x, "idealEdgeLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEdgeElasticity(value: js.Any => Double): Self = this.set("edgeElasticity", js.Any.fromFunction1(value))
+    def setInitialTemp(value: Double): Self = StObject.set(x, "initialTemp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravity(value: Double): Self = this.set("gravity", value.asInstanceOf[js.Any])
+    def setMinTemp(value: Double): Self = StObject.set(x, "minTemp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdealEdgeLength(value: js.Any => Double): Self = this.set("idealEdgeLength", js.Any.fromFunction1(value))
+    def setName(value: cose): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialTemp(value: Double): Self = this.set("initialTemp", value.asInstanceOf[js.Any])
+    def setNestingFactor(value: Double): Self = StObject.set(x, "nestingFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTemp(value: Double): Self = this.set("minTemp", value.asInstanceOf[js.Any])
+    def setNodeOverlap(value: Double): Self = StObject.set(x, "nodeOverlap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: cose): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNodeRepulsion(value: js.Any => Double): Self = StObject.set(x, "nodeRepulsion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNestingFactor(value: Double): Self = this.set("nestingFactor", value.asInstanceOf[js.Any])
+    def setNumIter(value: Double): Self = StObject.set(x, "numIter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeOverlap(value: Double): Self = this.set("nodeOverlap", value.asInstanceOf[js.Any])
+    def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeRepulsion(value: js.Any => Double): Self = this.set("nodeRepulsion", js.Any.fromFunction1(value))
+    def setRefresh(value: Double): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumIter(value: Double): Self = this.set("numIter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRandomize(value: Boolean): Self = this.set("randomize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefresh(value: Double): Self = this.set("refresh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeaver(value: Boolean): Self = this.set("weaver", value.asInstanceOf[js.Any])
+    def setWeaver(value: Boolean): Self = StObject.set(x, "weaver", value.asInstanceOf[js.Any])
   }
 }

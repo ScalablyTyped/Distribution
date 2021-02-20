@@ -1,5 +1,6 @@
 package typings.pgPromise.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Custom-Type Formatting object
 // API: https://github.com/vitaly-t/pg-promise#custom-type-formatting
 @js.native
-trait ICTFObject extends js.Object {
+trait ICTFObject extends StObject {
   
   def toPostgres(a: js.Any): js.Any = js.native
 }
@@ -20,21 +21,9 @@ object ICTFObject {
   }
   
   @scala.inline
-  implicit class ICTFObjectOps[Self <: ICTFObject] (val x: Self) extends AnyVal {
+  implicit class ICTFObjectMutableBuilder[Self <: ICTFObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setToPostgres(value: js.Any => js.Any): Self = this.set("toPostgres", js.Any.fromFunction1(value))
+    def setToPostgres(value: js.Any => js.Any): Self = StObject.set(x, "toPostgres", js.Any.fromFunction1(value))
   }
 }

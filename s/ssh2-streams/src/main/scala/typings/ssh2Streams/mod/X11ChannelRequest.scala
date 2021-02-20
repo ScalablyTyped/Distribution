@@ -1,6 +1,7 @@
 package typings.ssh2Streams.mod
 
 import typings.ssh2Streams.ssh2StreamsStrings.`x11-req`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,39 +40,27 @@ object X11ChannelRequest {
   }
   
   @scala.inline
-  implicit class X11ChannelRequestOps[Self <: X11ChannelRequest] (val x: Self) extends AnyVal {
+  implicit class X11ChannelRequestMutableBuilder[Self <: X11ChannelRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookie(value: String): Self = this.set("cookie", value.asInstanceOf[js.Any])
+    def setRequest(value: `x11-req`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setScreen(value: Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipient(value: Double): Self = this.set("recipient", value.asInstanceOf[js.Any])
+    def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: `x11-req`): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScreen(value: Double): Self = this.set("screen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingle(value: Boolean): Self = this.set("single", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWantReply(value: Boolean): Self = this.set("wantReply", value.asInstanceOf[js.Any])
+    def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
   }
 }

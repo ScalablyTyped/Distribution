@@ -3,12 +3,13 @@ package typings.wepy.anon
 import typings.wepy.wepyStrings.facial
 import typings.wepy.wepyStrings.fingerPrint
 import typings.wepy.wepyStrings.speech
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckAuthMode extends js.Object {
+trait CheckAuthMode extends StObject {
   
   var checkAuthMode: fingerPrint | facial | speech = js.native
 }
@@ -21,21 +22,9 @@ object CheckAuthMode {
   }
   
   @scala.inline
-  implicit class CheckAuthModeOps[Self <: CheckAuthMode] (val x: Self) extends AnyVal {
+  implicit class CheckAuthModeMutableBuilder[Self <: CheckAuthMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCheckAuthMode(value: fingerPrint | facial | speech): Self = this.set("checkAuthMode", value.asInstanceOf[js.Any])
+    def setCheckAuthMode(value: fingerPrint | facial | speech): Self = StObject.set(x, "checkAuthMode", value.asInstanceOf[js.Any])
   }
 }

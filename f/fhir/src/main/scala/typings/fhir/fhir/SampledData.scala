@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,84 +85,72 @@ object SampledData {
   }
   
   @scala.inline
-  implicit class SampledDataOps[Self <: SampledData] (val x: Self) extends AnyVal {
+  implicit class SampledDataMutableBuilder[Self <: SampledData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensions(value: positiveInt): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFactor(value: decimal): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
     @scala.inline
-    def setDimensions(value: positiveInt): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setLowerLimit(value: decimal): Self = StObject.set(x, "lowerLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: Quantity): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setLowerLimitUndefined: Self = StObject.set(x, "lowerLimit", js.undefined)
     
     @scala.inline
-    def setPeriod(value: decimal): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setOrigin(value: Quantity): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_data(value: Element): Self = this.set("_data", value.asInstanceOf[js.Any])
+    def setPeriod(value: decimal): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_data: Self = this.set("_data", js.undefined)
+    def setUpperLimit(value: decimal): Self = StObject.set(x, "upperLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_dimensions(value: Element): Self = this.set("_dimensions", value.asInstanceOf[js.Any])
+    def setUpperLimitUndefined: Self = StObject.set(x, "upperLimit", js.undefined)
     
     @scala.inline
-    def delete_dimensions: Self = this.set("_dimensions", js.undefined)
+    def set_data(value: Element): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_factor(value: Element): Self = this.set("_factor", value.asInstanceOf[js.Any])
+    def set_dataUndefined: Self = StObject.set(x, "_data", js.undefined)
     
     @scala.inline
-    def delete_factor: Self = this.set("_factor", js.undefined)
+    def set_dimensions(value: Element): Self = StObject.set(x, "_dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lowerLimit(value: Element): Self = this.set("_lowerLimit", value.asInstanceOf[js.Any])
+    def set_dimensionsUndefined: Self = StObject.set(x, "_dimensions", js.undefined)
     
     @scala.inline
-    def delete_lowerLimit: Self = this.set("_lowerLimit", js.undefined)
+    def set_factor(value: Element): Self = StObject.set(x, "_factor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_period(value: Element): Self = this.set("_period", value.asInstanceOf[js.Any])
+    def set_factorUndefined: Self = StObject.set(x, "_factor", js.undefined)
     
     @scala.inline
-    def delete_period: Self = this.set("_period", js.undefined)
+    def set_lowerLimit(value: Element): Self = StObject.set(x, "_lowerLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_upperLimit(value: Element): Self = this.set("_upperLimit", value.asInstanceOf[js.Any])
+    def set_lowerLimitUndefined: Self = StObject.set(x, "_lowerLimit", js.undefined)
     
     @scala.inline
-    def delete_upperLimit: Self = this.set("_upperLimit", js.undefined)
+    def set_period(value: Element): Self = StObject.set(x, "_period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactor(value: decimal): Self = this.set("factor", value.asInstanceOf[js.Any])
+    def set_periodUndefined: Self = StObject.set(x, "_period", js.undefined)
     
     @scala.inline
-    def deleteFactor: Self = this.set("factor", js.undefined)
+    def set_upperLimit(value: Element): Self = StObject.set(x, "_upperLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerLimit(value: decimal): Self = this.set("lowerLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowerLimit: Self = this.set("lowerLimit", js.undefined)
-    
-    @scala.inline
-    def setUpperLimit(value: decimal): Self = this.set("upperLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpperLimit: Self = this.set("upperLimit", js.undefined)
+    def set_upperLimitUndefined: Self = StObject.set(x, "_upperLimit", js.undefined)
   }
 }

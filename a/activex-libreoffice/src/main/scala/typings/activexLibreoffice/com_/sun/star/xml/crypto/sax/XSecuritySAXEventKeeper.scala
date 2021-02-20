@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.xml.crypto.sax
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.wrapper.XXMLElementWrapper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,24 +57,12 @@ object XSecuritySAXEventKeeper {
   }
   
   @scala.inline
-  implicit class XSecuritySAXEventKeeperOps[Self <: XSecuritySAXEventKeeper] (val x: Self) extends AnyVal {
+  implicit class XSecuritySAXEventKeeperMutableBuilder[Self <: XSecuritySAXEventKeeper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSecurityElementCollector(value: (ElementMarkPriority, Boolean) => Double): Self = StObject.set(x, "addSecurityElementCollector", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddSecurityElementCollector(value: (ElementMarkPriority, Boolean) => Double): Self = this.set("addSecurityElementCollector", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetSecurityId(value: (Double, Double) => Unit): Self = this.set("setSecurityId", js.Any.fromFunction2(value))
+    def setSetSecurityId(value: (Double, Double) => Unit): Self = StObject.set(x, "setSecurityId", js.Any.fromFunction2(value))
   }
 }

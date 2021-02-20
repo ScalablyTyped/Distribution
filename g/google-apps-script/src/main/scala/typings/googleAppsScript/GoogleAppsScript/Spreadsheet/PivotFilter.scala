@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Access and modify pivot table filters.
   */
 @js.native
-trait PivotFilter extends js.Object {
+trait PivotFilter extends StObject {
   
   def getFilterCriteria(): FilterCriteria = js.native
   
@@ -36,33 +37,21 @@ object PivotFilter {
   }
   
   @scala.inline
-  implicit class PivotFilterOps[Self <: PivotFilter] (val x: Self) extends AnyVal {
+  implicit class PivotFilterMutableBuilder[Self <: PivotFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFilterCriteria(value: () => FilterCriteria): Self = StObject.set(x, "getFilterCriteria", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPivotTable(value: () => PivotTable): Self = StObject.set(x, "getPivotTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSourceDataColumn(value: () => Integer): Self = StObject.set(x, "getSourceDataColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFilterCriteria(value: () => FilterCriteria): Self = this.set("getFilterCriteria", js.Any.fromFunction0(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPivotTable(value: () => PivotTable): Self = this.set("getPivotTable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSourceDataColumn(value: () => Integer): Self = this.set("getSourceDataColumn", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetFilterCriteria(value: FilterCriteria => PivotFilter): Self = this.set("setFilterCriteria", js.Any.fromFunction1(value))
+    def setSetFilterCriteria(value: FilterCriteria => PivotFilter): Self = StObject.set(x, "setFilterCriteria", js.Any.fromFunction1(value))
   }
 }

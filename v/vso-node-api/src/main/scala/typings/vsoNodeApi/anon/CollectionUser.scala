@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionUser extends js.Object {
+trait CollectionUser extends StObject {
   
   var collection_User: scala.Double = js.native
   
@@ -20,24 +21,12 @@ object CollectionUser {
   }
   
   @scala.inline
-  implicit class CollectionUserOps[Self <: CollectionUser] (val x: Self) extends AnyVal {
+  implicit class CollectionUserMutableBuilder[Self <: CollectionUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollection_User(value: scala.Double): Self = StObject.set(x, "collection_User", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCollection_User(value: scala.Double): Self = this.set("collection_User", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProject_Team(value: scala.Double): Self = this.set("project_Team", value.asInstanceOf[js.Any])
+    def setProject_Team(value: scala.Double): Self = StObject.set(x, "project_Team", value.asInstanceOf[js.Any])
   }
 }

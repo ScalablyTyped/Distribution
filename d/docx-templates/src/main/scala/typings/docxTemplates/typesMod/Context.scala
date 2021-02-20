@@ -2,12 +2,13 @@ package typings.docxTemplates.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.docxTemplates.anon.Wp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context extends js.Object {
+trait Context extends StObject {
   
   var buffers: Wp = js.native
   
@@ -82,108 +83,96 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffers(value: Wp): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFCmd(value: Boolean): Self = StObject.set(x, "fCmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffers(value: Wp): Self = this.set("buffers", value.asInstanceOf[js.Any])
+    def setFJump(value: Boolean): Self = StObject.set(x, "fJump", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmd(value: String): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    def setFSeekQuery(value: Boolean): Self = StObject.set(x, "fSeekQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFCmd(value: Boolean): Self = this.set("fCmd", value.asInstanceOf[js.Any])
+    def setGCntIf(value: Double): Self = StObject.set(x, "gCntIf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFJump(value: Boolean): Self = this.set("fJump", value.asInstanceOf[js.Any])
+    def setHtmlId(value: Double): Self = StObject.set(x, "htmlId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFSeekQuery(value: Boolean): Self = this.set("fSeekQuery", value.asInstanceOf[js.Any])
+    def setHtmls(value: Htmls): Self = StObject.set(x, "htmls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGCntIf(value: Double): Self = this.set("gCntIf", value.asInstanceOf[js.Any])
+    def setImageId(value: Double): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlId(value: Double): Self = this.set("htmlId", value.asInstanceOf[js.Any])
+    def setImages(value: Images): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmls(value: Htmls): Self = this.set("htmls", value.asInstanceOf[js.Any])
+    def setJsSandbox(value: js.Object): Self = StObject.set(x, "jsSandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageId(value: Double): Self = this.set("imageId", value.asInstanceOf[js.Any])
+    def setJsSandboxUndefined: Self = StObject.set(x, "jsSandbox", js.undefined)
     
     @scala.inline
-    def setImages(value: Images): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLinkId(value: Double): Self = StObject.set(x, "linkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkId(value: Double): Self = this.set("linkId", value.asInstanceOf[js.Any])
+    def setLinks(value: Links): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: Links): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setLoops(value: js.Array[LoopStatus]): Self = StObject.set(x, "loops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoopsVarargs(value: LoopStatus*): Self = this.set("loops", js.Array(value :_*))
+    def setLoopsVarargs(value: LoopStatus*): Self = StObject.set(x, "loops", js.Array(value :_*))
     
     @scala.inline
-    def setLoops(value: js.Array[LoopStatus]): Self = this.set("loops", value.asInstanceOf[js.Any])
+    def setOptions(value: CreateReportOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: CreateReportOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setPendingHtmlNode(value: TextNode | NonTextNode): Self = StObject.set(x, "pendingHtmlNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShorthands(value: StringDictionary[String]): Self = this.set("shorthands", value.asInstanceOf[js.Any])
+    def setPendingHtmlNodeUndefined: Self = StObject.set(x, "pendingHtmlNode", js.undefined)
     
     @scala.inline
-    def setVars(value: StringDictionary[VarValue]): Self = this.set("vars", value.asInstanceOf[js.Any])
+    def setPendingImageNode(value: NonTextNode): Self = StObject.set(x, "pendingImageNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsSandbox(value: js.Object): Self = this.set("jsSandbox", value.asInstanceOf[js.Any])
+    def setPendingImageNodeUndefined: Self = StObject.set(x, "pendingImageNode", js.undefined)
     
     @scala.inline
-    def deleteJsSandbox: Self = this.set("jsSandbox", js.undefined)
+    def setPendingLinkNode(value: NonTextNode): Self = StObject.set(x, "pendingLinkNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingHtmlNode(value: TextNode | NonTextNode): Self = this.set("pendingHtmlNode", value.asInstanceOf[js.Any])
+    def setPendingLinkNodeUndefined: Self = StObject.set(x, "pendingLinkNode", js.undefined)
     
     @scala.inline
-    def deletePendingHtmlNode: Self = this.set("pendingHtmlNode", js.undefined)
+    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingImageNode(value: NonTextNode): Self = this.set("pendingImageNode", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deletePendingImageNode: Self = this.set("pendingImageNode", js.undefined)
+    def setShorthands(value: StringDictionary[String]): Self = StObject.set(x, "shorthands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingLinkNode(value: NonTextNode): Self = this.set("pendingLinkNode", value.asInstanceOf[js.Any])
+    def setTextRunPropsNode(value: NonTextNode): Self = StObject.set(x, "textRunPropsNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePendingLinkNode: Self = this.set("pendingLinkNode", js.undefined)
+    def setTextRunPropsNodeUndefined: Self = StObject.set(x, "textRunPropsNode", js.undefined)
     
     @scala.inline
-    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
-    
-    @scala.inline
-    def setTextRunPropsNode(value: NonTextNode): Self = this.set("textRunPropsNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextRunPropsNode: Self = this.set("textRunPropsNode", js.undefined)
+    def setVars(value: StringDictionary[VarValue]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
   }
 }

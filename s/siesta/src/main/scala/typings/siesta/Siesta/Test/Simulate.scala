@@ -1,18 +1,17 @@
 package typings.siesta.Siesta.Test
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Siesta.Test.Simulate")
-@js.native
-object Simulate extends js.Object {
+object Simulate {
   
   /**
     * @mixin
     */
   @js.native
-  trait IEvent extends js.Object {
+  trait IEvent extends StObject {
     
     def simulateEvent(el: js.Any, `type`: String): Unit = js.native
     def simulateEvent(el: js.Any, `type`: String, the: js.UndefOr[scala.Nothing], suppressLog: Boolean): Unit = js.native
@@ -26,7 +25,7 @@ object Simulate extends js.Object {
     * @mixin
     */
   @js.native
-  trait IKeyboard extends js.Object {
+  trait IKeyboard extends StObject {
     
     def keyPress(el: js.Any, key: String, options: js.Any): Unit = js.native
     
@@ -50,7 +49,7 @@ object Simulate extends js.Object {
     * @mixin
     */
   @js.native
-  trait IMouse extends js.Object {
+  trait IMouse extends StObject {
     
     def click(): Unit = js.native
     def click(callback: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native

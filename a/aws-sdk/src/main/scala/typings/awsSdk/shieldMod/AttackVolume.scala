@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttackVolume extends js.Object {
+trait AttackVolume extends StObject {
   
   /**
     * A statistics object that uses bits per second as the unit. This is included for network level attacks. 
@@ -31,36 +32,24 @@ object AttackVolume {
   }
   
   @scala.inline
-  implicit class AttackVolumeOps[Self <: AttackVolume] (val x: Self) extends AnyVal {
+  implicit class AttackVolumeMutableBuilder[Self <: AttackVolume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitsPerSecond(value: AttackVolumeStatistics): Self = StObject.set(x, "BitsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitsPerSecondUndefined: Self = StObject.set(x, "BitsPerSecond", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPacketsPerSecond(value: AttackVolumeStatistics): Self = StObject.set(x, "PacketsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitsPerSecond(value: AttackVolumeStatistics): Self = this.set("BitsPerSecond", value.asInstanceOf[js.Any])
+    def setPacketsPerSecondUndefined: Self = StObject.set(x, "PacketsPerSecond", js.undefined)
     
     @scala.inline
-    def deleteBitsPerSecond: Self = this.set("BitsPerSecond", js.undefined)
+    def setRequestsPerSecond(value: AttackVolumeStatistics): Self = StObject.set(x, "RequestsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacketsPerSecond(value: AttackVolumeStatistics): Self = this.set("PacketsPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacketsPerSecond: Self = this.set("PacketsPerSecond", js.undefined)
-    
-    @scala.inline
-    def setRequestsPerSecond(value: AttackVolumeStatistics): Self = this.set("RequestsPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestsPerSecond: Self = this.set("RequestsPerSecond", js.undefined)
+    def setRequestsPerSecondUndefined: Self = StObject.set(x, "RequestsPerSecond", js.undefined)
   }
 }

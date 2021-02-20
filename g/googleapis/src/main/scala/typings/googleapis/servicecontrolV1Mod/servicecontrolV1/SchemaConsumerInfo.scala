@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `ConsumerInfo` provides information about the consumer.
   */
 @js.native
-trait SchemaConsumerInfo extends js.Object {
+trait SchemaConsumerInfo extends StObject {
   
   /**
     * The consumer identity number, can be Google cloud project number, folder
@@ -36,36 +37,24 @@ object SchemaConsumerInfo {
   }
   
   @scala.inline
-  implicit class SchemaConsumerInfoOps[Self <: SchemaConsumerInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaConsumerInfoMutableBuilder[Self <: SchemaConsumerInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumerNumber(value: String): Self = StObject.set(x, "consumerNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerNumberUndefined: Self = StObject.set(x, "consumerNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerNumber(value: String): Self = this.set("consumerNumber", value.asInstanceOf[js.Any])
+    def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
     
     @scala.inline
-    def deleteConsumerNumber: Self = this.set("consumerNumber", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectNumber(value: String): Self = this.set("projectNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectNumber: Self = this.set("projectNumber", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

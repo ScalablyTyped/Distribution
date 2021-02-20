@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.deltasDeltasMod
 
 import typings.mendixmodelsdk.mendixmodelsdkStrings.CREATE_UNIT_TREE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,33 +51,21 @@ object ICreateUnitTreeDelta {
   }
   
   @scala.inline
-  implicit class ICreateUnitTreeDeltaOps[Self <: ICreateUnitTreeDelta] (val x: Self) extends AnyVal {
+  implicit class ICreateUnitTreeDeltaMutableBuilder[Self <: ICreateUnitTreeDelta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainmentName(value: String): Self = StObject.set(x, "containmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    def setDeltaType(value: CREATE_UNIT_TREE): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainmentName(value: String): Self = this.set("containmentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeltaType(value: CREATE_UNIT_TREE): Self = this.set("deltaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnitTree(value: IStructureJSON): Self = this.set("unitTree", value.asInstanceOf[js.Any])
+    def setUnitTree(value: IStructureJSON): Self = StObject.set(x, "unitTree", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,39 +40,27 @@ object ExcludedPlacementList {
   }
   
   @scala.inline
-  implicit class ExcludedPlacementListOps[Self <: ExcludedPlacementList] (val x: Self) extends AnyVal {
+  implicit class ExcludedPlacementListMutableBuilder[Self <: ExcludedPlacementList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddExcludedPlacement(value: String => Unit): Self = StObject.set(x, "addExcludedPlacement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddExcludedPlacements(value: js.Array[String] => Unit): Self = StObject.set(x, "addExcludedPlacements", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaigns(value: () => AdWordsSelector[Campaign]): Self = StObject.set(x, "campaigns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddExcludedPlacement(value: String => Unit): Self = this.set("addExcludedPlacement", js.Any.fromFunction1(value))
+    def setExcludedPlacements(value: () => AdWordsSelector[SharedExcludedPlacement]): Self = StObject.set(x, "excludedPlacements", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddExcludedPlacements(value: js.Array[String] => Unit): Self = this.set("addExcludedPlacements", js.Any.fromFunction1(value))
+    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCampaigns(value: () => AdWordsSelector[Campaign]): Self = this.set("campaigns", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExcludedPlacements(value: () => AdWordsSelector[SharedExcludedPlacement]): Self = this.set("excludedPlacements", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetId(value: () => Double): Self = this.set("getId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetName(value: String => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+    def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

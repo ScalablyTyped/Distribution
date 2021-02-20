@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Data about a specific cell.
   */
 @js.native
-trait SchemaCellData extends js.Object {
+trait SchemaCellData extends StObject {
   
   /**
     * A data validation rule on the cell, if any.  When writing, the new data
@@ -92,81 +93,69 @@ object SchemaCellData {
   }
   
   @scala.inline
-  implicit class SchemaCellDataOps[Self <: SchemaCellData] (val x: Self) extends AnyVal {
+  implicit class SchemaCellDataMutableBuilder[Self <: SchemaCellData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataValidation(value: SchemaDataValidationRule): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataValidationUndefined: Self = StObject.set(x, "dataValidation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffectiveFormat(value: SchemaCellFormat): Self = StObject.set(x, "effectiveFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataValidation(value: SchemaDataValidationRule): Self = this.set("dataValidation", value.asInstanceOf[js.Any])
+    def setEffectiveFormatUndefined: Self = StObject.set(x, "effectiveFormat", js.undefined)
     
     @scala.inline
-    def deleteDataValidation: Self = this.set("dataValidation", js.undefined)
+    def setEffectiveValue(value: SchemaExtendedValue): Self = StObject.set(x, "effectiveValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveFormat(value: SchemaCellFormat): Self = this.set("effectiveFormat", value.asInstanceOf[js.Any])
+    def setEffectiveValueUndefined: Self = StObject.set(x, "effectiveValue", js.undefined)
     
     @scala.inline
-    def deleteEffectiveFormat: Self = this.set("effectiveFormat", js.undefined)
+    def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveValue(value: SchemaExtendedValue): Self = this.set("effectiveValue", value.asInstanceOf[js.Any])
+    def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
     
     @scala.inline
-    def deleteEffectiveValue: Self = this.set("effectiveValue", js.undefined)
+    def setHyperlink(value: String): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedValue(value: String): Self = this.set("formattedValue", value.asInstanceOf[js.Any])
+    def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
     @scala.inline
-    def deleteFormattedValue: Self = this.set("formattedValue", js.undefined)
+    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlink(value: String): Self = this.set("hyperlink", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def deleteHyperlink: Self = this.set("hyperlink", js.undefined)
+    def setPivotTable(value: SchemaPivotTable): Self = StObject.set(x, "pivotTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setPivotTableUndefined: Self = StObject.set(x, "pivotTable", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setTextFormatRuns(value: js.Array[SchemaTextFormatRun]): Self = StObject.set(x, "textFormatRuns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotTable(value: SchemaPivotTable): Self = this.set("pivotTable", value.asInstanceOf[js.Any])
+    def setTextFormatRunsUndefined: Self = StObject.set(x, "textFormatRuns", js.undefined)
     
     @scala.inline
-    def deletePivotTable: Self = this.set("pivotTable", js.undefined)
+    def setTextFormatRunsVarargs(value: SchemaTextFormatRun*): Self = StObject.set(x, "textFormatRuns", js.Array(value :_*))
     
     @scala.inline
-    def setTextFormatRunsVarargs(value: SchemaTextFormatRun*): Self = this.set("textFormatRuns", js.Array(value :_*))
+    def setUserEnteredFormat(value: SchemaCellFormat): Self = StObject.set(x, "userEnteredFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextFormatRuns(value: js.Array[SchemaTextFormatRun]): Self = this.set("textFormatRuns", value.asInstanceOf[js.Any])
+    def setUserEnteredFormatUndefined: Self = StObject.set(x, "userEnteredFormat", js.undefined)
     
     @scala.inline
-    def deleteTextFormatRuns: Self = this.set("textFormatRuns", js.undefined)
+    def setUserEnteredValue(value: SchemaExtendedValue): Self = StObject.set(x, "userEnteredValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserEnteredFormat(value: SchemaCellFormat): Self = this.set("userEnteredFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEnteredFormat: Self = this.set("userEnteredFormat", js.undefined)
-    
-    @scala.inline
-    def setUserEnteredValue(value: SchemaExtendedValue): Self = this.set("userEnteredValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEnteredValue: Self = this.set("userEnteredValue", js.undefined)
+    def setUserEnteredValueUndefined: Self = StObject.set(x, "userEnteredValue", js.undefined)
   }
 }

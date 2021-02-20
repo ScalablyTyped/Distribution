@@ -1,13 +1,12 @@
 package typings.emberData
 
-import typings.emberData.mod.DS.RESTAdapter
+import typings.emberData.mod.default.JSONAPIAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember-data/adapters/json-api", JSImport.Namespace)
-@js.native
-object jsonApiMod extends js.Object {
+object jsonApiMod {
   
   /**
     * The `JSONAPIAdapter` is the default adapter used by Ember Data. It
@@ -15,6 +14,7 @@ object jsonApiMod extends js.Object {
     * requests that follow the [JSON API](http://jsonapi.org/format/)
     * format.
     */
+  @JSImport("ember-data/adapters/json-api", JSImport.Default)
   @js.native
-  class default () extends RESTAdapter
+  class default () extends JSONAPIAdapter
 }

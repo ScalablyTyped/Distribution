@@ -1,5 +1,6 @@
 package typings.jsrsasign.jsrsasign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsrsasign.jsrsasignStrings.PKCS5PRV
   - typings.jsrsasign.jsrsasignStrings.PKCS8PRV
 */
-trait PrivateKeyOutputFormatType extends js.Object
+trait PrivateKeyOutputFormatType extends StObject
 object PrivateKeyOutputFormatType {
   
   @scala.inline

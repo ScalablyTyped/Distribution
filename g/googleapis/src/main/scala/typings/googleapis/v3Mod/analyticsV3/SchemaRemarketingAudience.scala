@@ -2,6 +2,7 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import typings.googleapis.anon.ExcludeConditions
 import typings.googleapis.anon.IncludeConditions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for an Analytics remarketing audience.
   */
 @js.native
-trait SchemaRemarketingAudience extends js.Object {
+trait SchemaRemarketingAudience extends StObject {
   
   /**
     * Account ID to which this remarketing audience belongs.
@@ -96,108 +97,96 @@ object SchemaRemarketingAudience {
   }
   
   @scala.inline
-  implicit class SchemaRemarketingAudienceOps[Self <: SchemaRemarketingAudience] (val x: Self) extends AnyVal {
+  implicit class SchemaRemarketingAudienceMutableBuilder[Self <: SchemaRemarketingAudience] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudienceDefinition(value: IncludeConditions): Self = StObject.set(x, "audienceDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAudienceDefinitionUndefined: Self = StObject.set(x, "audienceDefinition", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAudienceType(value: String): Self = StObject.set(x, "audienceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudienceDefinition(value: IncludeConditions): Self = this.set("audienceDefinition", value.asInstanceOf[js.Any])
+    def setAudienceTypeUndefined: Self = StObject.set(x, "audienceType", js.undefined)
     
     @scala.inline
-    def deleteAudienceDefinition: Self = this.set("audienceDefinition", js.undefined)
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudienceType(value: String): Self = this.set("audienceType", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteAudienceType: Self = this.set("audienceType", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setInternalWebPropertyId(value: String): Self = StObject.set(x, "internalWebPropertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInternalWebPropertyIdUndefined: Self = StObject.set(x, "internalWebPropertyId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalWebPropertyId(value: String): Self = this.set("internalWebPropertyId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInternalWebPropertyId: Self = this.set("internalWebPropertyId", js.undefined)
+    def setLinkedAdAccounts(value: js.Array[SchemaLinkedForeignAccount]): Self = StObject.set(x, "linkedAdAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLinkedAdAccountsUndefined: Self = StObject.set(x, "linkedAdAccounts", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLinkedAdAccountsVarargs(value: SchemaLinkedForeignAccount*): Self = StObject.set(x, "linkedAdAccounts", js.Array(value :_*))
     
     @scala.inline
-    def setLinkedAdAccountsVarargs(value: SchemaLinkedForeignAccount*): Self = this.set("linkedAdAccounts", js.Array(value :_*))
+    def setLinkedViews(value: js.Array[String]): Self = StObject.set(x, "linkedViews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedAdAccounts(value: js.Array[SchemaLinkedForeignAccount]): Self = this.set("linkedAdAccounts", value.asInstanceOf[js.Any])
+    def setLinkedViewsUndefined: Self = StObject.set(x, "linkedViews", js.undefined)
     
     @scala.inline
-    def deleteLinkedAdAccounts: Self = this.set("linkedAdAccounts", js.undefined)
+    def setLinkedViewsVarargs(value: String*): Self = StObject.set(x, "linkedViews", js.Array(value :_*))
     
     @scala.inline
-    def setLinkedViewsVarargs(value: String*): Self = this.set("linkedViews", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedViews(value: js.Array[String]): Self = this.set("linkedViews", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLinkedViews: Self = this.set("linkedViews", js.undefined)
+    def setStateBasedAudienceDefinition(value: ExcludeConditions): Self = StObject.set(x, "stateBasedAudienceDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStateBasedAudienceDefinitionUndefined: Self = StObject.set(x, "stateBasedAudienceDefinition", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateBasedAudienceDefinition(value: ExcludeConditions): Self = this.set("stateBasedAudienceDefinition", value.asInstanceOf[js.Any])
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     @scala.inline
-    def deleteStateBasedAudienceDefinition: Self = this.set("stateBasedAudienceDefinition", js.undefined)
+    def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
-    
-    @scala.inline
-    def setWebPropertyId(value: String): Self = this.set("webPropertyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebPropertyId: Self = this.set("webPropertyId", js.undefined)
+    def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }
 }

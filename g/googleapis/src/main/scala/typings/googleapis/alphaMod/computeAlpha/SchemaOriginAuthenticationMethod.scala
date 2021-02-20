@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration for the origin authentication method.
   */
 @js.native
-trait SchemaOriginAuthenticationMethod extends js.Object {
+trait SchemaOriginAuthenticationMethod extends StObject {
   
   var jwt: js.UndefOr[SchemaJwt] = js.native
 }
@@ -21,24 +22,12 @@ object SchemaOriginAuthenticationMethod {
   }
   
   @scala.inline
-  implicit class SchemaOriginAuthenticationMethodOps[Self <: SchemaOriginAuthenticationMethod] (val x: Self) extends AnyVal {
+  implicit class SchemaOriginAuthenticationMethodMutableBuilder[Self <: SchemaOriginAuthenticationMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJwt(value: SchemaJwt): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJwt(value: SchemaJwt): Self = this.set("jwt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJwt: Self = this.set("jwt", js.undefined)
+    def setJwtUndefined: Self = StObject.set(x, "jwt", js.undefined)
   }
 }

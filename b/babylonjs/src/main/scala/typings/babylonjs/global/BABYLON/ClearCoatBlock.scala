@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,7 @@ class ClearCoatBlock protected ()
   def this(name: String) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.ClearCoatBlock")
-@js.native
-object ClearCoatBlock extends js.Object {
+object ClearCoatBlock {
   
   /**
     * Gets the main code of the block (fragment side)
@@ -31,6 +30,8 @@ object ClearCoatBlock extends js.Object {
     * @param worldNormalVarName name of the variable holding the world normal
     * @returns the shader code
     */
+  @JSGlobal("BABYLON.ClearCoatBlock.GetCode")
+  @js.native
   def GetCode(
     state: typings.babylonjs.BABYLON.NodeMaterialBuildState,
     ccBlock: Nullable[typings.babylonjs.BABYLON.ClearCoatBlock],

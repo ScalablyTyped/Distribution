@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsNode.typesRetireGrantInputMod.RetireGrantInput
 import typings.awsSdkClientKmsNode.typesRetireGrantOutputMod.RetireGrantOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/commands/RetireGrantCommand", JSImport.Namespace)
-@js.native
-object retireGrantCommandMod extends js.Object {
+object retireGrantCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-node/commands/RetireGrantCommand", "RetireGrantCommand")
   @js.native
   class RetireGrantCommand protected () extends Command[
           InputTypesUnion, 

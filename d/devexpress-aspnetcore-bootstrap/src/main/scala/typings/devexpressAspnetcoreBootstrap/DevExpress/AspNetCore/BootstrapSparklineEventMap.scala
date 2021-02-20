@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,48 +49,36 @@ object BootstrapSparklineEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapSparklineEventMapOps[Self <: BootstrapSparklineEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapSparklineEventMapMutableBuilder[Self <: BootstrapSparklineEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisposing(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "disposing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawn(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "drawn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExported(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisposing(value: BootstrapChartEventArgsBase): Self = this.set("disposing", value.asInstanceOf[js.Any])
+    def setExporting(value: BootstrapChartExportEventArgs): Self = StObject.set(x, "exporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawn(value: BootstrapChartEventArgsBase): Self = this.set("drawn", value.asInstanceOf[js.Any])
+    def setFileSaving(value: BootstrapChartExportEventArgs): Self = StObject.set(x, "fileSaving", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExported(value: BootstrapChartEventArgsBase): Self = this.set("exported", value.asInstanceOf[js.Any])
+    def setIncidentOccurred(value: BootstrapChartErrorEventArgs): Self = StObject.set(x, "incidentOccurred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExporting(value: BootstrapChartExportEventArgs): Self = this.set("exporting", value.asInstanceOf[js.Any])
+    def setInit(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSaving(value: BootstrapChartExportEventArgs): Self = this.set("fileSaving", value.asInstanceOf[js.Any])
+    def setOptionChanged(value: BootstrapChartOptionChangedEventArgs): Self = StObject.set(x, "optionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncidentOccurred(value: BootstrapChartErrorEventArgs): Self = this.set("incidentOccurred", value.asInstanceOf[js.Any])
+    def setTooltipHidden(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "tooltipHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: BootstrapChartEventArgsBase): Self = this.set("init", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptionChanged(value: BootstrapChartOptionChangedEventArgs): Self = this.set("optionChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltipHidden(value: BootstrapChartEventArgsBase): Self = this.set("tooltipHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltipShown(value: BootstrapChartEventArgsBase): Self = this.set("tooltipShown", value.asInstanceOf[js.Any])
+    def setTooltipShown(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "tooltipShown", value.asInstanceOf[js.Any])
   }
 }

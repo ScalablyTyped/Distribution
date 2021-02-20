@@ -11,12 +11,13 @@ import typings.reactVirtualized.reactVirtualizedNumbers.`0`
 import typings.reactVirtualized.reactVirtualizedNumbers.`10`
 import typings.reactVirtualized.reactVirtualizedNumbers.`30`
 import typings.reactVirtualized.reactVirtualizedStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableHeader extends js.Object {
+trait DisableHeader extends StObject {
   
   var disableHeader: `false` = js.native
   
@@ -61,51 +62,39 @@ object DisableHeader {
   }
   
   @scala.inline
-  implicit class DisableHeaderOps[Self <: DisableHeader] (val x: Self) extends AnyVal {
+  implicit class DisableHeaderMutableBuilder[Self <: DisableHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableHeader(value: `false`): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEstimatedRowSize(value: `30`): Self = StObject.set(x, "estimatedRowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderHeight(value: `0`): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableHeader(value: `false`): Self = this.set("disableHeader", value.asInstanceOf[js.Any])
+    def setHeaderRowRenderer(value: /* props */ TableHeaderRowProps => ReactNode): Self = StObject.set(x, "headerRowRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEstimatedRowSize(value: `30`): Self = this.set("estimatedRowSize", value.asInstanceOf[js.Any])
+    def setNoRowsRenderer(value: () => Null): Self = StObject.set(x, "noRowsRenderer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHeaderHeight(value: `0`): Self = this.set("headerHeight", value.asInstanceOf[js.Any])
+    def setOnRowsRendered(value: () => Null): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHeaderRowRenderer(value: /* props */ TableHeaderRowProps => ReactNode): Self = this.set("headerRowRenderer", js.Any.fromFunction1(value))
+    def setOnScroll(value: () => Null): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNoRowsRenderer(value: () => Null): Self = this.set("noRowsRenderer", js.Any.fromFunction0(value))
+    def setOverscanRowCount(value: `10`): Self = StObject.set(x, "overscanRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRowsRendered(value: () => Null): Self = this.set("onRowsRendered", js.Any.fromFunction0(value))
+    def setRowRenderer(value: /* props */ TableRowProps => ReactNode): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnScroll(value: () => Null): Self = this.set("onScroll", js.Any.fromFunction0(value))
+    def setScrollToAlignment(value: auto): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanRowCount(value: `10`): Self = this.set("overscanRowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowRenderer(value: /* props */ TableRowProps => ReactNode): Self = this.set("rowRenderer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setScrollToAlignment(value: auto): Self = this.set("scrollToAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollToIndex(value: `-1`): Self = this.set("scrollToIndex", value.asInstanceOf[js.Any])
+    def setScrollToIndex(value: `-1`): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
   }
 }

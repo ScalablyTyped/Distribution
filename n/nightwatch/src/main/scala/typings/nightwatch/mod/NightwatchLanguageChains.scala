@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchLanguageChains extends js.Object {
+trait NightwatchLanguageChains extends StObject {
   
   var and: Expect = js.native
   
@@ -54,54 +55,42 @@ object NightwatchLanguageChains {
   }
   
   @scala.inline
-  implicit class NightwatchLanguageChainsOps[Self <: NightwatchLanguageChains] (val x: Self) extends AnyVal {
+  implicit class NightwatchLanguageChainsMutableBuilder[Self <: NightwatchLanguageChains] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnd(value: Expect): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAt(value: Expect): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBe(value: Expect): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnd(value: Expect): Self = this.set("and", value.asInstanceOf[js.Any])
+    def setBeen(value: Expect): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAt(value: Expect): Self = this.set("at", value.asInstanceOf[js.Any])
+    def setHas(value: Expect): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBe(value: Expect): Self = this.set("be", value.asInstanceOf[js.Any])
+    def setHave(value: Expect): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeen(value: Expect): Self = this.set("been", value.asInstanceOf[js.Any])
+    def setIs(value: Expect): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas(value: Expect): Self = this.set("has", value.asInstanceOf[js.Any])
+    def setOf(value: Expect): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHave(value: Expect): Self = this.set("have", value.asInstanceOf[js.Any])
+    def setThat(value: Expect): Self = StObject.set(x, "that", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs(value: Expect): Self = this.set("is", value.asInstanceOf[js.Any])
+    def setTo(value: Expect): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOf(value: Expect): Self = this.set("of", value.asInstanceOf[js.Any])
+    def setWhich(value: Expect): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThat(value: Expect): Self = this.set("that", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: Expect): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhich(value: Expect): Self = this.set("which", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWith(value: Expect): Self = this.set("with", value.asInstanceOf[js.Any])
+    def setWith(value: Expect): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.emr
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification extends js.Object {
+trait ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification extends StObject {
   
   /**
     * Specifies the strategy to use in launching Spot instance fleets. Currently, the only option is `capacity-optimized` (the default), which launches instances from Spot instance pools with optimal capacity for the number of instances that are launching.
@@ -41,33 +42,21 @@ object ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification {
   }
   
   @scala.inline
-  implicit class ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOps[Self <: ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification] (val x: Self) extends AnyVal {
+  implicit class ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationMutableBuilder[Self <: ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationStrategy(value: Input[String]): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockDurationMinutes(value: Input[Double]): Self = StObject.set(x, "blockDurationMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockDurationMinutesUndefined: Self = StObject.set(x, "blockDurationMinutes", js.undefined)
     
     @scala.inline
-    def setAllocationStrategy(value: Input[String]): Self = this.set("allocationStrategy", value.asInstanceOf[js.Any])
+    def setTimeoutAction(value: Input[String]): Self = StObject.set(x, "timeoutAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutAction(value: Input[String]): Self = this.set("timeoutAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeoutDurationMinutes(value: Input[Double]): Self = this.set("timeoutDurationMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBlockDurationMinutes(value: Input[Double]): Self = this.set("blockDurationMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockDurationMinutes: Self = this.set("blockDurationMinutes", js.undefined)
+    def setTimeoutDurationMinutes(value: Input[Double]): Self = StObject.set(x, "timeoutDurationMinutes", value.asInstanceOf[js.Any])
   }
 }

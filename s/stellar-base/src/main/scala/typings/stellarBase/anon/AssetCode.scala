@@ -1,12 +1,13 @@
 package typings.stellarBase.anon
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetCode extends js.Object {
+trait AssetCode extends StObject {
   
   var assetCode: Buffer = js.native
   
@@ -21,24 +22,12 @@ object AssetCode {
   }
   
   @scala.inline
-  implicit class AssetCodeOps[Self <: AssetCode] (val x: Self) extends AnyVal {
+  implicit class AssetCodeMutableBuilder[Self <: AssetCode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetCode(value: Buffer): Self = StObject.set(x, "assetCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssetCode(value: Buffer): Self = this.set("assetCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIssuer(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setIssuer(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
   }
 }

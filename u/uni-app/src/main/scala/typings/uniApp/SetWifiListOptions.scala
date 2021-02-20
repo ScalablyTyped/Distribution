@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetWifiListOptions extends js.Object {
+trait SetWifiListOptions extends StObject {
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
@@ -36,45 +37,33 @@ object SetWifiListOptions {
   }
   
   @scala.inline
-  implicit class SetWifiListOptionsOps[Self <: SetWifiListOptions] (val x: Self) extends AnyVal {
+  implicit class SetWifiListOptionsMutableBuilder[Self <: SetWifiListOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setWifiList(value: js.Array[WiFiItem]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: () => Unit): Self = this.set("success", js.Any.fromFunction0(value))
+    def setWifiListUndefined: Self = StObject.set(x, "wifiList", js.undefined)
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setWifiListVarargs(value: WiFiItem*): Self = this.set("wifiList", js.Array(value :_*))
-    
-    @scala.inline
-    def setWifiList(value: js.Array[WiFiItem]): Self = this.set("wifiList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWifiList: Self = this.set("wifiList", js.undefined)
+    def setWifiListVarargs(value: WiFiItem*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
   }
 }

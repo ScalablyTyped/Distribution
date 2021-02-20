@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Storage.Search
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.StorageFolder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a query for content properties in the ContentIndexer . */
 @js.native
-trait ContentIndexerQuery extends js.Object {
+trait ContentIndexerQuery extends StObject {
   
   /**
     * Runs the query on the app's indexed content properties.

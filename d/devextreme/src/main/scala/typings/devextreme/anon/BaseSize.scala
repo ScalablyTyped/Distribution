@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.devextremeStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseSize extends js.Object {
+trait BaseSize extends StObject {
   
   var baseSize: js.UndefOr[Double | auto] = js.native
   
@@ -25,42 +26,30 @@ object BaseSize {
   }
   
   @scala.inline
-  implicit class BaseSizeOps[Self <: BaseSize] (val x: Self) extends AnyVal {
+  implicit class BaseSizeMutableBuilder[Self <: BaseSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseSize(value: Double | auto): Self = StObject.set(x, "baseSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseSizeUndefined: Self = StObject.set(x, "baseSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseSize(value: Double | auto): Self = this.set("baseSize", value.asInstanceOf[js.Any])
+    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
     @scala.inline
-    def deleteBaseSize: Self = this.set("baseSize", js.undefined)
+    def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatio(value: Double): Self = this.set("ratio", value.asInstanceOf[js.Any])
+    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
     
     @scala.inline
-    def deleteRatio: Self = this.set("ratio", js.undefined)
+    def setShrink(value: Double): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreen(value: String): Self = this.set("screen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreen: Self = this.set("screen", js.undefined)
-    
-    @scala.inline
-    def setShrink(value: Double): Self = this.set("shrink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShrink: Self = this.set("shrink", js.undefined)
+    def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
   }
 }

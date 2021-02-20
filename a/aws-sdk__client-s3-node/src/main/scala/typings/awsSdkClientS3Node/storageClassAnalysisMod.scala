@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_StorageClassAnalysis", JSImport.Namespace)
-@js.native
-object storageClassAnalysisMod extends js.Object {
+object storageClassAnalysisMod {
   
-  @JSName("_StorageClassAnalysis")
+  @JSImport("@aws-sdk/client-s3-node/model/_StorageClassAnalysis", "_StorageClassAnalysis")
+  @js.native
   val StorageClassAnalysis: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

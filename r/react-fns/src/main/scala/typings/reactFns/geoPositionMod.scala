@@ -2,17 +2,27 @@ package typings.reactFns
 
 import typings.react.mod.ComponentType
 import typings.reactFns.geoPositionGeoPositionMod.GeoPositionProps
+import typings.reactFns.typesMod.SharedRenderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-fns/dist/GeoPosition", JSImport.Namespace)
-@js.native
-object geoPositionMod extends js.Object {
+object geoPositionMod {
   
-  def withGeoPosition[Props](Component: ComponentType[Props with GeoPositionProps]): ComponentType[Props] = js.native
-  
+  @JSImport("react-fns/dist/GeoPosition", "GeoPosition")
   @js.native
-  class GeoPosition ()
-    extends typings.reactFns.geoPositionGeoPositionMod.GeoPosition
+  class GeoPosition protected ()
+    extends typings.reactFns.geoPositionGeoPositionMod.GeoPosition {
+    def this(props: SharedRenderProps[GeoPositionProps]) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: SharedRenderProps[GeoPositionProps], context: js.Any) = this()
+  }
+  
+  @JSImport("react-fns/dist/GeoPosition", "withGeoPosition")
+  @js.native
+  def withGeoPosition[Props](Component: ComponentType[Props with GeoPositionProps]): ComponentType[Props] = js.native
 }

@@ -4,12 +4,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.needsBeginFramesChanged
 import typings.devtoolsProtocol.mod.Protocol.HeadlessExperimental.BeginFrameRequest
 import typings.devtoolsProtocol.mod.Protocol.HeadlessExperimental.BeginFrameResponse
 import typings.devtoolsProtocol.mod.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeadlessExperimentalApi extends js.Object {
+trait HeadlessExperimentalApi extends StObject {
   
   /**
     * Sends a BeginFrame to the target and returns when the frame was completed. Optionally captures a
@@ -54,32 +55,20 @@ object HeadlessExperimentalApi {
   }
   
   @scala.inline
-  implicit class HeadlessExperimentalApiOps[Self <: HeadlessExperimentalApi] (val x: Self) extends AnyVal {
+  implicit class HeadlessExperimentalApiMutableBuilder[Self <: HeadlessExperimentalApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginFrame(value: BeginFrameRequest => js.Promise[BeginFrameResponse]): Self = StObject.set(x, "beginFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBeginFrame(value: BeginFrameRequest => js.Promise[BeginFrameResponse]): Self = this.set("beginFrame", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = this.set("disable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOn(
       value: (needsBeginFramesChanged, js.Function1[/* params */ NeedsBeginFramesChangedEvent, Unit]) => Unit
-    ): Self = this.set("on", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

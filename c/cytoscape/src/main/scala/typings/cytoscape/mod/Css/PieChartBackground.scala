@@ -1,6 +1,7 @@
 package typings.cytoscape.mod.Css
 
 import typings.cytoscape.mod.NodeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#style/pie-chart-background
   */
 @js.native
-trait PieChartBackground extends js.Object {
+trait PieChartBackground extends StObject {
   
   /**
     * The colour of the node’s ith pie chart slice.
@@ -63,42 +64,30 @@ object PieChartBackground {
   }
   
   @scala.inline
-  implicit class PieChartBackgroundOps[Self <: PieChartBackground] (val x: Self) extends AnyVal {
+  implicit class PieChartBackgroundMutableBuilder[Self <: PieChartBackground] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setPie-i-background-color`(value: PropertyValueNode[Colour]): Self = StObject.set(x, "pie-i-background-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setPie-i-background-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "pie-i-background-color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setPie-i-background-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "pie-i-background-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPie-i-background-colorFunction1`(value: NodeSingular => Colour): Self = this.set("pie-i-background-color", js.Any.fromFunction1(value))
+    def `setPie-i-background-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "pie-i-background-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setPie-i-background-color`(value: PropertyValueNode[Colour]): Self = this.set("pie-i-background-color", value.asInstanceOf[js.Any])
+    def `setPie-i-background-size`(value: PropertyValueNode[Double]): Self = StObject.set(x, "pie-i-background-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPie-i-background-opacityFunction1`(value: NodeSingular => Double): Self = this.set("pie-i-background-opacity", js.Any.fromFunction1(value))
+    def `setPie-i-background-sizeFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "pie-i-background-size", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setPie-i-background-opacity`(value: PropertyValueNode[Double]): Self = this.set("pie-i-background-opacity", value.asInstanceOf[js.Any])
+    def `setPie-size`(value: PropertyValueNode[String]): Self = StObject.set(x, "pie-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPie-i-background-sizeFunction1`(value: NodeSingular => Double): Self = this.set("pie-i-background-size", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setPie-i-background-size`(value: PropertyValueNode[Double]): Self = this.set("pie-i-background-size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setPie-sizeFunction1`(value: NodeSingular => String): Self = this.set("pie-size", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setPie-size`(value: PropertyValueNode[String]): Self = this.set("pie-size", value.asInstanceOf[js.Any])
+    def `setPie-sizeFunction1`(value: NodeSingular => String): Self = StObject.set(x, "pie-size", js.Any.fromFunction1(value))
   }
 }

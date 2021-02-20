@@ -6,14 +6,14 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.targetCameraMod.TargetCamera
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/followCamera", JSImport.Namespace)
-@js.native
-object followCameraMod extends js.Object {
+object followCameraMod {
   
+  @JSImport("babylonjs/Cameras/followCamera", "ArcFollowCamera")
   @js.native
   class ArcFollowCamera protected () extends TargetCamera {
     /**
@@ -56,6 +56,7 @@ object followCameraMod extends js.Object {
     var radius: Double = js.native
   }
   
+  @JSImport("babylonjs/Cameras/followCamera", "FollowCamera")
   @js.native
   class FollowCamera protected () extends TargetCamera {
     /**

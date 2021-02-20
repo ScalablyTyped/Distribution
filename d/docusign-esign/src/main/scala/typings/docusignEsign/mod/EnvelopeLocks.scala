@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeLocks extends js.Object {
+trait EnvelopeLocks extends StObject {
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
@@ -64,68 +65,56 @@ object EnvelopeLocks {
   }
   
   @scala.inline
-  implicit class EnvelopeLocksOps[Self <: EnvelopeLocks] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class EnvelopeLocksMutableBuilder[Self <: EnvelopeLocks] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setLockDurationInSeconds(value: String): Self = this.set("lockDurationInSeconds", value.asInstanceOf[js.Any])
+    def setLockDurationInSeconds(value: String): Self = StObject.set(x, "lockDurationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockDurationInSeconds: Self = this.set("lockDurationInSeconds", js.undefined)
+    def setLockDurationInSecondsUndefined: Self = StObject.set(x, "lockDurationInSeconds", js.undefined)
     
     @scala.inline
-    def setLockToken(value: String): Self = this.set("lockToken", value.asInstanceOf[js.Any])
+    def setLockToken(value: String): Self = StObject.set(x, "lockToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockToken: Self = this.set("lockToken", js.undefined)
+    def setLockTokenUndefined: Self = StObject.set(x, "lockToken", js.undefined)
     
     @scala.inline
-    def setLockType(value: String): Self = this.set("lockType", value.asInstanceOf[js.Any])
+    def setLockType(value: String): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockType: Self = this.set("lockType", js.undefined)
+    def setLockTypeUndefined: Self = StObject.set(x, "lockType", js.undefined)
     
     @scala.inline
-    def setLockedByApp(value: String): Self = this.set("lockedByApp", value.asInstanceOf[js.Any])
+    def setLockedByApp(value: String): Self = StObject.set(x, "lockedByApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockedByApp: Self = this.set("lockedByApp", js.undefined)
+    def setLockedByAppUndefined: Self = StObject.set(x, "lockedByApp", js.undefined)
     
     @scala.inline
-    def setLockedByUser(value: UserInfo): Self = this.set("lockedByUser", value.asInstanceOf[js.Any])
+    def setLockedByUser(value: UserInfo): Self = StObject.set(x, "lockedByUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockedByUser: Self = this.set("lockedByUser", js.undefined)
+    def setLockedByUserUndefined: Self = StObject.set(x, "lockedByUser", js.undefined)
     
     @scala.inline
-    def setLockedUntilDateTime(value: String): Self = this.set("lockedUntilDateTime", value.asInstanceOf[js.Any])
+    def setLockedUntilDateTime(value: String): Self = StObject.set(x, "lockedUntilDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockedUntilDateTime: Self = this.set("lockedUntilDateTime", js.undefined)
+    def setLockedUntilDateTimeUndefined: Self = StObject.set(x, "lockedUntilDateTime", js.undefined)
     
     @scala.inline
-    def setUseScratchPad(value: String): Self = this.set("useScratchPad", value.asInstanceOf[js.Any])
+    def setUseScratchPad(value: String): Self = StObject.set(x, "useScratchPad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseScratchPad: Self = this.set("useScratchPad", js.undefined)
+    def setUseScratchPadUndefined: Self = StObject.set(x, "useScratchPad", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/gradients/Reciprocal_grad", JSImport.Namespace)
-@js.native
-object reciprocalGradMod extends js.Object {
+object reciprocalGradMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/gradients/Reciprocal_grad", "reciprocalGradConfig")
+  @js.native
   val reciprocalGradConfig: GradConfig = js.native
 }

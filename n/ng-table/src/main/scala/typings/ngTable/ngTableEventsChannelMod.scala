@@ -5,16 +5,16 @@ import typings.angular.mod.IScope
 import typings.ngTable.ngTableParamsMod.NgTableParams
 import typings.ngTable.pagingMod.IPageButton
 import typings.ngTable.resultsMod.DataResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ng-table/src/core/ngTableEventsChannel", JSImport.Namespace)
-@js.native
-object ngTableEventsChannelMod extends js.Object {
+object ngTableEventsChannelMod {
   
+  @JSImport("ng-table/src/core/ngTableEventsChannel", "NgTableEventsChannel")
   @js.native
-  class NgTableEventsChannel protected () extends js.Object {
+  class NgTableEventsChannel protected () extends StObject {
     def this($rootScope: IRootScopeService) = this()
     
     @JSName("$rootScope")
@@ -175,11 +175,17 @@ object ngTableEventsChannelMod extends js.Object {
     def publishPagesChanged[T](publisher: NgTableParams[T], newPages: js.Array[IPageButton], oldPages: js.Array[IPageButton]): Unit = js.native
   }
   /* static members */
-  @js.native
-  object NgTableEventsChannel extends js.Object {
+  object NgTableEventsChannel {
     
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
+    @JSImport("ng-table/src/core/ngTableEventsChannel", "NgTableEventsChannel")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ng-table/src/core/ngTableEventsChannel", "NgTableEventsChannel.$inject")
+    @js.native
+    def $inject: js.Array[String] = js.native
+    @scala.inline
+    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   type EventSelector[T] = NgTableParams[T] | IEventSelectorFunc

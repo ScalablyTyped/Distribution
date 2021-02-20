@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontFamilyProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait FontFamilyProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   var fontFamily: js.UndefOr[
     ResponsiveValue[
@@ -23,22 +24,7 @@ object FontFamilyProps {
   }
   
   @scala.inline
-  implicit class FontFamilyPropsOps[Self <: FontFamilyProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with FontFamilyProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFontFamilyVarargs(value: (js.Any | Null)*): Self = this.set("fontFamily", js.Array(value :_*))
+  implicit class FontFamilyPropsMutableBuilder[Self <: FontFamilyProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with FontFamilyProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setFontFamily(
@@ -46,12 +32,15 @@ object FontFamilyProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _, 
           ThemeType
         ]
-    ): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontFamilyNull: Self = StObject.set(x, "fontFamily", null)
     
     @scala.inline
-    def setFontFamilyNull: Self = this.set("fontFamily", null)
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    
+    @scala.inline
+    def setFontFamilyVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
   }
 }

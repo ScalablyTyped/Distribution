@@ -10,9 +10,9 @@ This module makes it easy to get started with the Workbox service worker librari
 | ------------------ | :-------------: |
 | Full name          | workbox-sw |
 | Keywords           | workbox, workboxjs, service worker, sw |
-| # releases         | 53 |
-| # dependents       | 17 |
-| # downloads        | 15760586 |
+| # releases         | 31 |
+| # dependents       | 19 |
+| # downloads        | 102463026 |
 | # stars            | 4 |
 
 ## Links

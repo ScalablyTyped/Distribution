@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.std.Range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Controls the entity's explosion, timer until the explosion, and whether the timer is counting down or not.
   */
 @js.native
-trait IExplodeComponent extends js.Object {
+trait IExplodeComponent extends StObject {
   
   /**
     * If true, the explosion will destroy blocks in the explosion radius
@@ -77,42 +78,30 @@ object IExplodeComponent {
   }
   
   @scala.inline
-  implicit class IExplodeComponentOps[Self <: IExplodeComponent] (val x: Self) extends AnyVal {
+  implicit class IExplodeComponentMutableBuilder[Self <: IExplodeComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreaks_blocks(value: Boolean): Self = StObject.set(x, "breaks_blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCausesFire(value: Boolean): Self = StObject.set(x, "causesFire", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroyAffectedByGriefing(value: Boolean): Self = StObject.set(x, "destroyAffectedByGriefing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreaks_blocks(value: Boolean): Self = this.set("breaks_blocks", value.asInstanceOf[js.Any])
+    def setFireAffectedByGriefing(value: Boolean): Self = StObject.set(x, "fireAffectedByGriefing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCausesFire(value: Boolean): Self = this.set("causesFire", value.asInstanceOf[js.Any])
+    def setFuseLength(value: Range): Self = StObject.set(x, "fuseLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroyAffectedByGriefing(value: Boolean): Self = this.set("destroyAffectedByGriefing", value.asInstanceOf[js.Any])
+    def setFuseLit(value: Boolean): Self = StObject.set(x, "fuseLit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFireAffectedByGriefing(value: Boolean): Self = this.set("fireAffectedByGriefing", value.asInstanceOf[js.Any])
+    def setMaxResistance(value: Double): Self = StObject.set(x, "maxResistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFuseLength(value: Range): Self = this.set("fuseLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFuseLit(value: Boolean): Self = this.set("fuseLit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxResistance(value: Double): Self = this.set("maxResistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPower(value: Double): Self = this.set("power", value.asInstanceOf[js.Any])
+    def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
   }
 }

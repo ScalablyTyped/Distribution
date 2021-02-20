@@ -1,11 +1,12 @@
 package typings.spotifyApi.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecentlyPlayedParameterObject extends js.Object {
+trait RecentlyPlayedParameterObject extends StObject {
   
   var after: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object RecentlyPlayedParameterObject {
   }
   
   @scala.inline
-  implicit class RecentlyPlayedParameterObjectOps[Self <: RecentlyPlayedParameterObject] (val x: Self) extends AnyVal {
+  implicit class RecentlyPlayedParameterObjectMutableBuilder[Self <: RecentlyPlayedParameterObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfter(value: Double): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: Double): Self = this.set("before", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
-    
-    @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
   }
 }

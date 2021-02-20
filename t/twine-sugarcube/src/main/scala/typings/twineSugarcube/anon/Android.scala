@@ -1,11 +1,12 @@
 package typings.twineSugarcube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Android extends js.Object {
+trait Android extends StObject {
   
   val Android: Boolean = js.native
   
@@ -35,36 +36,24 @@ object Android {
   }
   
   @scala.inline
-  implicit class AndroidOps[Self <: Android] (val x: Self) extends AnyVal {
+  implicit class AndroidMutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid(value: Boolean): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlackBerry(value: Boolean): Self = StObject.set(x, "BlackBerry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid(value: Boolean): Self = this.set("Android", value.asInstanceOf[js.Any])
+    def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackBerry(value: Boolean): Self = this.set("BlackBerry", value.asInstanceOf[js.Any])
+    def setOpera(value: Boolean): Self = StObject.set(x, "Opera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpera(value: Boolean): Self = this.set("Opera", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindows(value: Boolean): Self = this.set("Windows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAny(value: () => Boolean): Self = this.set("any", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIOS(value: Boolean): Self = this.set("iOS", value.asInstanceOf[js.Any])
+    def setWindows(value: Boolean): Self = StObject.set(x, "Windows", value.asInstanceOf[js.Any])
   }
 }

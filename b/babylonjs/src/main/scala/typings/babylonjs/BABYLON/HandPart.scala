@@ -6,6 +6,7 @@ import typings.babylonjs.babylonjsStrings.middle
 import typings.babylonjs.babylonjsStrings.ring
 import typings.babylonjs.babylonjsStrings.thumb
 import typings.babylonjs.babylonjsStrings.wrist
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babylonjs.babylonjsStrings.ring
   - typings.babylonjs.babylonjsStrings.little
 */
-trait HandPart extends js.Object
+trait HandPart extends StObject
 object HandPart {
   
   /**

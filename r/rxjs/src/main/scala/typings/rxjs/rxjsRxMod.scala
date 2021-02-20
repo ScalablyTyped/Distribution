@@ -1,14 +1,11 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/Rx", JSImport.Namespace)
-@js.native
-object rxjsRxMod extends js.Object {
-  
-  val operators: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _operators */ js.Any = js.native
+object rxjsRxMod {
   
   /**
     * @typedef {Object} Rx.Scheduler
@@ -22,16 +19,43 @@ object rxjsRxMod extends js.Object {
     * @property {Scheduler} animationFrame Schedules work with `requestAnimationFrame`.
     * Use this for synchronizing with the platform's painting
     */
-  @js.native
-  object Scheduler extends js.Object {
+  object Scheduler {
     
-    var animationFrame: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    @JSImport("rxjs/Rx", "Scheduler")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var asap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    @JSImport("rxjs/Rx", "Scheduler.animationFrame")
+    @js.native
+    def animationFrame: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    @scala.inline
+    def animationFrame_=(
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animationFrame")(x.asInstanceOf[js.Any])
     
-    var async: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    @JSImport("rxjs/Rx", "Scheduler.asap")
+    @js.native
+    def asap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    @scala.inline
+    def asap_=(
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asap")(x.asInstanceOf[js.Any])
     
-    var queue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    @JSImport("rxjs/Rx", "Scheduler.async")
+    @js.native
+    def async: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    @scala.inline
+    def async_=(
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("async")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rxjs/Rx", "Scheduler.queue")
+    @js.native
+    def queue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+    @scala.inline
+    def queue_=(
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queue")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -47,13 +71,32 @@ object rxjsRxMod extends js.Object {
     * @property {Symbol|string} iterator The ES6 symbol to use as a property name
     * to retrieve an iterator from an object.
     */
-  @js.native
-  object Symbol extends js.Object {
+  object Symbol {
     
-    var iterator: js.Symbol = js.native
+    @JSImport("rxjs/Rx", "Symbol")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var observable: String | js.Symbol = js.native
+    @JSImport("rxjs/Rx", "Symbol.iterator")
+    @js.native
+    def iterator: js.Symbol = js.native
+    @scala.inline
+    def iterator_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iterator")(x.asInstanceOf[js.Any])
     
-    var rxSubscriber: String | js.Symbol = js.native
+    @JSImport("rxjs/Rx", "Symbol.observable")
+    @js.native
+    def observable: String | js.Symbol = js.native
+    @scala.inline
+    def observable_=(x: String | js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("observable")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rxjs/Rx", "Symbol.rxSubscriber")
+    @js.native
+    def rxSubscriber: String | js.Symbol = js.native
+    @scala.inline
+    def rxSubscriber_=(x: String | js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rxSubscriber")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("rxjs/Rx", "operators")
+  @js.native
+  val operators: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _operators */ js.Any = js.native
 }

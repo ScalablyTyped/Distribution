@@ -9,12 +9,13 @@ import typings.reactNative.reactNativeStrings.landscape
 import typings.reactNative.reactNativeStrings.overFullScreen
 import typings.reactNative.reactNativeStrings.pageSheet
 import typings.reactNative.reactNativeStrings.portrait
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModalPropsIOS extends js.Object {
+trait ModalPropsIOS extends StObject {
   
   /**
     * The `onDismiss` prop allows passing a function that will be called once the modal has been dismissed.
@@ -51,49 +52,37 @@ object ModalPropsIOS {
   }
   
   @scala.inline
-  implicit class ModalPropsIOSOps[Self <: ModalPropsIOS] (val x: Self) extends AnyVal {
+  implicit class ModalPropsIOSMutableBuilder[Self <: ModalPropsIOS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnOrientationChange(value: /* event */ NativeSyntheticEvent[_] => Unit): Self = StObject.set(x, "onOrientationChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDismiss(value: () => Unit): Self = this.set("onDismiss", js.Any.fromFunction0(value))
+    def setOnOrientationChangeUndefined: Self = StObject.set(x, "onOrientationChange", js.undefined)
     
     @scala.inline
-    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    def setPresentationStyle(value: fullScreen | pageSheet | formSheet | overFullScreen): Self = StObject.set(x, "presentationStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOrientationChange(value: /* event */ NativeSyntheticEvent[_] => Unit): Self = this.set("onOrientationChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnOrientationChange: Self = this.set("onOrientationChange", js.undefined)
-    
-    @scala.inline
-    def setPresentationStyle(value: fullScreen | pageSheet | formSheet | overFullScreen): Self = this.set("presentationStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePresentationStyle: Self = this.set("presentationStyle", js.undefined)
-    
-    @scala.inline
-    def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = this.set("supportedOrientations", js.Array(value :_*))
+    def setPresentationStyleUndefined: Self = StObject.set(x, "presentationStyle", js.undefined)
     
     @scala.inline
     def setSupportedOrientations(
       value: js.Array[
           portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
         ]
-    ): Self = this.set("supportedOrientations", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "supportedOrientations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSupportedOrientations: Self = this.set("supportedOrientations", js.undefined)
+    def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
+    
+    @scala.inline
+    def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
   }
 }

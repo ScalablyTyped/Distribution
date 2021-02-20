@@ -1,16 +1,16 @@
 package typings.stylableWebpackPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@stylable/webpack-plugin/cjs/stylable-auto-init-dependency", JSImport.Namespace)
-@js.native
-object stylableAutoInitDependencyMod extends js.Object {
+object stylableAutoInitDependencyMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  class StylableAutoInitDependency protected () extends js.Object {
+  - Dropped any */ @JSImport("@stylable/webpack-plugin/cjs/stylable-auto-init-dependency", "StylableAutoInitDependency")
+  @js.native
+  class StylableAutoInitDependency protected () extends StObject {
     def this(module: js.Any) = this()
     def this(module: js.Any, globalInjection: js.Function1[/* code */ String, String]) = this()
     
@@ -27,8 +27,9 @@ object stylableAutoInitDependencyMod extends js.Object {
     def updateHash(hash: js.Any): Unit = js.native
   }
   
+  @JSImport("@stylable/webpack-plugin/cjs/stylable-auto-init-dependency", "StylableAutoInitDependencyTemplate")
   @js.native
-  class StylableAutoInitDependencyTemplate () extends js.Object {
+  class StylableAutoInitDependencyTemplate () extends StObject {
     
     @JSName("apply")
     def apply(_dep: js.Any, source: js.Any, _runtimeTemplate: js.Any): Unit = js.native

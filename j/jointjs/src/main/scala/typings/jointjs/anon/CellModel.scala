@@ -1,13 +1,20 @@
 package typings.jointjs.anon
 
+import org.scalablytyped.runtime.Instantiable2
+import typings.jointjs.mod.dia.Cell
+import typings.jointjs.mod.dia.Cell.Attributes
+import typings.jointjs.mod.dia.Graph.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellModel extends js.Object {
+trait CellModel extends StObject {
   
-  var cellModel: js.UndefOr[TypeofCell] = js.native
+  var cellModel: js.UndefOr[
+    TypeofCell with (Instantiable2[/* attributes */ js.UndefOr[Attributes], /* opt */ js.UndefOr[Options], Cell])
+  ] = js.native
   
   var cellNamespace: js.UndefOr[js.Any] = js.native
 }
@@ -20,30 +27,20 @@ object CellModel {
   }
   
   @scala.inline
-  implicit class CellModelOps[Self <: CellModel] (val x: Self) extends AnyVal {
+  implicit class CellModelMutableBuilder[Self <: CellModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellModel(
+      value: TypeofCell with (Instantiable2[/* attributes */ js.UndefOr[Attributes], /* opt */ js.UndefOr[Options], Cell])
+    ): Self = StObject.set(x, "cellModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellModelUndefined: Self = StObject.set(x, "cellModel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellNamespace(value: js.Any): Self = StObject.set(x, "cellNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellModel(value: TypeofCell): Self = this.set("cellModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCellModel: Self = this.set("cellModel", js.undefined)
-    
-    @scala.inline
-    def setCellNamespace(value: js.Any): Self = this.set("cellNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCellNamespace: Self = this.set("cellNamespace", js.undefined)
+    def setCellNamespaceUndefined: Self = StObject.set(x, "cellNamespace", js.undefined)
   }
 }

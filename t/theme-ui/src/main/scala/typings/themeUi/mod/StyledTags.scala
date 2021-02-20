@@ -1,5 +1,6 @@
 package typings.themeUi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,4 +36,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.themeUi.themeUiStrings.thematicBreak
   - typings.themeUi.themeUiStrings.root
 */
-trait StyledTags extends js.Object
+trait StyledTags extends StObject

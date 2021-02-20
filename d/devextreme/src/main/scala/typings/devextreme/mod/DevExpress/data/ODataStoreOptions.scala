@@ -7,6 +7,7 @@ import typings.devextreme.devextremeStrings.Int32
 import typings.devextreme.devextremeStrings.Int64
 import typings.devextreme.devextremeStrings.Single
 import typings.devextreme.devextremeStrings.String
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,80 +77,68 @@ object ODataStoreOptions {
   }
   
   @scala.inline
-  implicit class ODataStoreOptionsOps[Self <: ODataStoreOptions] (val x: Self) extends AnyVal {
+  implicit class ODataStoreOptionsMutableBuilder[Self <: ODataStoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeSend(value: /* options */ Async => _): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeserializeDates(value: Boolean): Self = StObject.set(x, "deserializeDates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeSend(value: /* options */ Async => _): Self = this.set("beforeSend", js.Any.fromFunction1(value))
+    def setDeserializeDatesUndefined: Self = StObject.set(x, "deserializeDates", js.undefined)
     
     @scala.inline
-    def deleteBeforeSend: Self = this.set("beforeSend", js.undefined)
+    def setErrorHandler(value: /* e */ ErrorDetails => _): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeserializeDates(value: Boolean): Self = this.set("deserializeDates", value.asInstanceOf[js.Any])
+    def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
     @scala.inline
-    def deleteDeserializeDates: Self = this.set("deserializeDates", js.undefined)
+    def setFieldTypes(value: js.Any): Self = StObject.set(x, "fieldTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorHandler(value: /* e */ ErrorDetails => _): Self = this.set("errorHandler", js.Any.fromFunction1(value))
+    def setFieldTypesUndefined: Self = StObject.set(x, "fieldTypes", js.undefined)
     
     @scala.inline
-    def deleteErrorHandler: Self = this.set("errorHandler", js.undefined)
+    def setFilterToLower(value: Boolean): Self = StObject.set(x, "filterToLower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldTypes(value: js.Any): Self = this.set("fieldTypes", value.asInstanceOf[js.Any])
+    def setFilterToLowerUndefined: Self = StObject.set(x, "filterToLower", js.undefined)
     
     @scala.inline
-    def deleteFieldTypes: Self = this.set("fieldTypes", js.undefined)
+    def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterToLower(value: Boolean): Self = this.set("filterToLower", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterToLower: Self = this.set("filterToLower", js.undefined)
-    
-    @scala.inline
-    def setJsonp(value: Boolean): Self = this.set("jsonp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJsonp: Self = this.set("jsonp", js.undefined)
+    def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
     
     @scala.inline
     def setKeyType(
       value: String | Int32 | Int64 | typings.devextreme.devextremeStrings.Guid | typings.devextreme.devextremeStrings.Boolean | Single | Decimal | js.Any
-    ): Self = this.set("keyType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyType: Self = this.set("keyType", js.undefined)
+    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
     
     @scala.inline
-    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

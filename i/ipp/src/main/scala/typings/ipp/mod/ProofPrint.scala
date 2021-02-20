@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProofPrint extends js.Object {
+trait ProofPrint extends StObject {
   
   var media: js.UndefOr[Media] = js.native
   
@@ -22,36 +23,24 @@ object ProofPrint {
   }
   
   @scala.inline
-  implicit class ProofPrintOps[Self <: ProofPrint] (val x: Self) extends AnyVal {
+  implicit class ProofPrintMutableBuilder[Self <: ProofPrint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
     
     @scala.inline
-    def setMedia(value: Media): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def `setProof-print-copies`(value: Double): Self = StObject.set(x, "proof-print-copies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-col`(value: MediaInterface): Self = this.set("media-col", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteMedia-col`: Self = this.set("media-col", js.undefined)
-    
-    @scala.inline
-    def `setProof-print-copies`(value: Double): Self = this.set("proof-print-copies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteProof-print-copies`: Self = this.set("proof-print-copies", js.undefined)
+    def `setProof-print-copiesUndefined`: Self = StObject.set(x, "proof-print-copies", js.undefined)
   }
 }

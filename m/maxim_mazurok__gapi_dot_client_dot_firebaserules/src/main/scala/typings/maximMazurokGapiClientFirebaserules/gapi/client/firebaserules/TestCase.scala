@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestCase extends js.Object {
+trait TestCase extends StObject {
   
   /** Test expectation. */
   var expectation: js.UndefOr[String] = js.native
@@ -39,57 +40,45 @@ object TestCase {
   }
   
   @scala.inline
-  implicit class TestCaseOps[Self <: TestCase] (val x: Self) extends AnyVal {
+  implicit class TestCaseMutableBuilder[Self <: TestCase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpectation(value: String): Self = StObject.set(x, "expectation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpectationUndefined: Self = StObject.set(x, "expectation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpressionReportLevel(value: String): Self = StObject.set(x, "expressionReportLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectation(value: String): Self = this.set("expectation", value.asInstanceOf[js.Any])
+    def setExpressionReportLevelUndefined: Self = StObject.set(x, "expressionReportLevel", js.undefined)
     
     @scala.inline
-    def deleteExpectation: Self = this.set("expectation", js.undefined)
+    def setFunctionMocks(value: js.Array[FunctionMock]): Self = StObject.set(x, "functionMocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionReportLevel(value: String): Self = this.set("expressionReportLevel", value.asInstanceOf[js.Any])
+    def setFunctionMocksUndefined: Self = StObject.set(x, "functionMocks", js.undefined)
     
     @scala.inline
-    def deleteExpressionReportLevel: Self = this.set("expressionReportLevel", js.undefined)
+    def setFunctionMocksVarargs(value: FunctionMock*): Self = StObject.set(x, "functionMocks", js.Array(value :_*))
     
     @scala.inline
-    def setFunctionMocksVarargs(value: FunctionMock*): Self = this.set("functionMocks", js.Array(value :_*))
+    def setPathEncoding(value: String): Self = StObject.set(x, "pathEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionMocks(value: js.Array[FunctionMock]): Self = this.set("functionMocks", value.asInstanceOf[js.Any])
+    def setPathEncodingUndefined: Self = StObject.set(x, "pathEncoding", js.undefined)
     
     @scala.inline
-    def deleteFunctionMocks: Self = this.set("functionMocks", js.undefined)
+    def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathEncoding(value: String): Self = this.set("pathEncoding", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deletePathEncoding: Self = this.set("pathEncoding", js.undefined)
+    def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: js.Any): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
-    
-    @scala.inline
-    def setResource(value: js.Any): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

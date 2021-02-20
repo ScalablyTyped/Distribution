@@ -1,11 +1,12 @@
 package typings.reactNavigationNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Back extends js.Object {
+trait Back extends StObject {
   
   def back(): Unit = js.native
   
@@ -35,36 +36,24 @@ object Back {
   }
   
   @scala.inline
-  implicit class BackOps[Self <: Back] (val x: Self) extends AnyVal {
+  implicit class BackMutableBuilder[Self <: Back] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBack(value: () => Unit): Self = StObject.set(x, "back", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForward(value: () => Unit): Self = StObject.set(x, "forward", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGo(value: Double => Unit): Self = StObject.set(x, "go", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBack(value: () => Unit): Self = this.set("back", js.Any.fromFunction0(value))
+    def setPushState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setForward(value: () => Unit): Self = this.set("forward", js.Any.fromFunction0(value))
+    def setReplaceState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "replaceState", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGo(value: Double => Unit): Self = this.set("go", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPushState(value: (js.Any, String, String) => Unit): Self = this.set("pushState", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setReplaceState(value: (js.Any, String, String) => Unit): Self = this.set("replaceState", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setState(value: js.Any): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

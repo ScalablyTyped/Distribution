@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarnotificationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListEventTypesFilter extends js.Object {
+trait ListEventTypesFilter extends StObject {
   
   /**
     * The system-generated name of the filter type you want to filter by.
@@ -26,24 +27,12 @@ object ListEventTypesFilter {
   }
   
   @scala.inline
-  implicit class ListEventTypesFilterOps[Self <: ListEventTypesFilter] (val x: Self) extends AnyVal {
+  implicit class ListEventTypesFilterMutableBuilder[Self <: ListEventTypesFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: ListEventTypesFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: ListEventTypesFilterName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: ListEventTypesFilterValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: ListEventTypesFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

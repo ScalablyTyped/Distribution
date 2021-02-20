@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetProvisionedProductOutputsInput extends js.Object {
+trait GetProvisionedProductOutputsInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -46,57 +47,45 @@ object GetProvisionedProductOutputsInput {
   }
   
   @scala.inline
-  implicit class GetProvisionedProductOutputsInputOps[Self <: GetProvisionedProductOutputsInput] (val x: Self) extends AnyVal {
+  implicit class GetProvisionedProductOutputsInputMutableBuilder[Self <: GetProvisionedProductOutputsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputKeys(value: OutputKeys): Self = StObject.set(x, "OutputKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    def setOutputKeysUndefined: Self = StObject.set(x, "OutputKeys", js.undefined)
     
     @scala.inline
-    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    def setOutputKeysVarargs(value: OutputKey*): Self = StObject.set(x, "OutputKeys", js.Array(value :_*))
     
     @scala.inline
-    def setOutputKeysVarargs(value: OutputKey*): Self = this.set("OutputKeys", js.Array(value :_*))
+    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputKeys(value: OutputKeys): Self = this.set("OutputKeys", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
     @scala.inline
-    def deleteOutputKeys: Self = this.set("OutputKeys", js.undefined)
+    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: PageSize): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: PageToken): Self = this.set("PageToken", value.asInstanceOf[js.Any])
+    def setProvisionedProductIdUndefined: Self = StObject.set(x, "ProvisionedProductId", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("PageToken", js.undefined)
+    def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedProductId(value: Id): Self = this.set("ProvisionedProductId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisionedProductId: Self = this.set("ProvisionedProductId", js.undefined)
-    
-    @scala.inline
-    def setProvisionedProductName(value: ProvisionedProductName): Self = this.set("ProvisionedProductName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisionedProductName: Self = this.set("ProvisionedProductName", js.undefined)
+    def setProvisionedProductNameUndefined: Self = StObject.set(x, "ProvisionedProductName", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,69 +35,57 @@ object TestReportWithArtifacts {
   }
   
   @scala.inline
-  implicit class TestReportWithArtifactsOps[Self <: TestReportWithArtifacts] (val x: Self) extends AnyVal {
+  implicit class TestReportWithArtifactsMutableBuilder[Self <: TestReportWithArtifacts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceContextId(value: String): Self = StObject.set(x, "deviceContextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceContextIdUndefined: Self = StObject.set(x, "deviceContextId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceLog(value: String): Self = StObject.set(x, "deviceLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceContextId(value: String): Self = this.set("deviceContextId", value.asInstanceOf[js.Any])
+    def setDeviceLogUndefined: Self = StObject.set(x, "deviceLog", js.undefined)
     
     @scala.inline
-    def deleteDeviceContextId: Self = this.set("deviceContextId", js.undefined)
+    def setFrameworkLog(value: String): Self = StObject.set(x, "frameworkLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceLog(value: String): Self = this.set("deviceLog", value.asInstanceOf[js.Any])
+    def setFrameworkLogUndefined: Self = StObject.set(x, "frameworkLog", js.undefined)
     
     @scala.inline
-    def deleteDeviceLog: Self = this.set("deviceLog", js.undefined)
+    def setReport(value: TestReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameworkLog(value: String): Self = this.set("frameworkLog", value.asInstanceOf[js.Any])
+    def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
     
     @scala.inline
-    def deleteFrameworkLog: Self = this.set("frameworkLog", js.undefined)
+    def setScreenshots(value: js.Array[Entity]): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReport(value: TestReport): Self = this.set("report", value.asInstanceOf[js.Any])
+    def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
     
     @scala.inline
-    def deleteReport: Self = this.set("report", js.undefined)
+    def setScreenshotsVarargs(value: Entity*): Self = StObject.set(x, "screenshots", js.Array(value :_*))
     
     @scala.inline
-    def setScreenshotsVarargs(value: Entity*): Self = this.set("screenshots", js.Array(value :_*))
+    def setTestResult(value: String): Self = StObject.set(x, "testResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenshots(value: js.Array[Entity]): Self = this.set("screenshots", value.asInstanceOf[js.Any])
+    def setTestResultUndefined: Self = StObject.set(x, "testResult", js.undefined)
     
     @scala.inline
-    def deleteScreenshots: Self = this.set("screenshots", js.undefined)
+    def setVideo(value: Entity): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestResult(value: String): Self = this.set("testResult", value.asInstanceOf[js.Any])
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
     @scala.inline
-    def deleteTestResult: Self = this.set("testResult", js.undefined)
+    def setVitalsLog(value: String): Self = StObject.set(x, "vitalsLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo(value: Entity): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
-    
-    @scala.inline
-    def setVitalsLog(value: String): Self = this.set("vitalsLog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVitalsLog: Self = this.set("vitalsLog", js.undefined)
+    def setVitalsLogUndefined: Self = StObject.set(x, "vitalsLog", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Canvas extends js.Object {
+trait Canvas extends StObject {
   
   var edges: StringDictionary[
     js.Function4[/* edge */ Edge, /* source */ Node, /* target */ Node, /* repeated */ js.Any, Unit]
@@ -31,31 +32,19 @@ object Canvas {
   }
   
   @scala.inline
-  implicit class CanvasOps[Self <: Canvas] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class CanvasMutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setEdges(
       value: StringDictionary[
           js.Function4[/* edge */ Edge, /* source */ Node, /* target */ Node, /* repeated */ js.Any, Unit]
         ]
-    ): Self = this.set("edges", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLabels(value: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setNodes(value: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
   }
 }

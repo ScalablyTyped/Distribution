@@ -1,63 +1,74 @@
 package typings.passportSteam
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("passport-steam", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("passport-steam", JSImport.Namespace)
+  @js.native
   def apply(options: js.Any, validate: js.Any): js.Any = js.native
   
   // Circular reference from passport_steam
+  @JSImport("passport-steam", "Strategy")
+  @js.native
   val Strategy: js.Any = js.native
   
-  val version: String = js.native
-  
-  @js.native
-  object prototype extends js.Object {
+  object prototype {
     
-    @js.native
-    object authenticate extends js.Object {
+    object authenticate {
       
+      @JSImport("passport-steam", "prototype.authenticate")
+      @js.native
       def apply(req: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object loadAssociation extends js.Object {
+    object loadAssociation {
       
+      @JSImport("passport-steam", "prototype.loadAssociation")
+      @js.native
       def apply(fn: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object loadDiscoveredInfo extends js.Object {
+    object loadDiscoveredInfo {
       
+      @JSImport("passport-steam", "prototype.loadDiscoveredInfo")
+      @js.native
       def apply(fn: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object loadDiscoveredInformation extends js.Object {
+    object loadDiscoveredInformation {
       
+      @JSImport("passport-steam", "prototype.loadDiscoveredInformation")
+      @js.native
       def apply(fn: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object saveAssociation extends js.Object {
+    object saveAssociation {
       
+      @JSImport("passport-steam", "prototype.saveAssociation")
+      @js.native
       def apply(fn: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object saveDiscoveredInfo extends js.Object {
+    object saveDiscoveredInfo {
       
+      @JSImport("passport-steam", "prototype.saveDiscoveredInfo")
+      @js.native
       def apply(fn: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object saveDiscoveredInformation extends js.Object {
+    object saveDiscoveredInformation {
       
+      @JSImport("passport-steam", "prototype.saveDiscoveredInformation")
+      @js.native
       def apply(fn: js.Any): js.Any = js.native
     }
   }
+  
+  @JSImport("passport-steam", "version")
+  @js.native
+  val version: String = js.native
 }

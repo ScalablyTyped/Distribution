@@ -8,12 +8,13 @@ import typings.handsontable.mod.Handsontable.cellTypes.Numeric
 import typings.handsontable.mod.Handsontable.cellTypes.Password
 import typings.handsontable.mod.Handsontable.cellTypes.Text
 import typings.handsontable.mod.Handsontable.cellTypes.Time
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellTypes_ extends js.Object {
+trait CellTypes_ extends StObject {
   
   var autocomplete: Autocomplete = js.native
   
@@ -58,51 +59,39 @@ object CellTypes_ {
   }
   
   @scala.inline
-  implicit class CellTypes_Ops[Self <: CellTypes_] (val x: Self) extends AnyVal {
+  implicit class CellTypes_MutableBuilder[Self <: CellTypes_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutocomplete(value: Autocomplete): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckbox(value: Checkbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutocomplete(value: Autocomplete): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    def setDropdown(value: Dropdown): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckbox(value: Checkbox): Self = this.set("checkbox", value.asInstanceOf[js.Any])
+    def setGetCellType(value: String => CellTypeObject): Self = StObject.set(x, "getCellType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setHandsontable(value: typings.handsontable.mod.Handsontable.cellTypes.Handsontable): Self = StObject.set(x, "handsontable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropdown(value: Dropdown): Self = this.set("dropdown", value.asInstanceOf[js.Any])
+    def setNumeric(value: Numeric): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCellType(value: String => CellTypeObject): Self = this.set("getCellType", js.Any.fromFunction1(value))
+    def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandsontable(value: typings.handsontable.mod.Handsontable.cellTypes.Handsontable): Self = this.set("handsontable", value.asInstanceOf[js.Any])
+    def setRegisterCellType(value: (String, CellTypeObject) => Unit): Self = StObject.set(x, "registerCellType", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNumeric(value: Numeric): Self = this.set("numeric", value.asInstanceOf[js.Any])
+    def setText(value: Text): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: Password): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegisterCellType(value: (String, CellTypeObject) => Unit): Self = this.set("registerCellType", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setText(value: Text): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Time): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTime(value: Time): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

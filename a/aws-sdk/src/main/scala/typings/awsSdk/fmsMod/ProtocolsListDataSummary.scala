@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProtocolsListDataSummary extends js.Object {
+trait ProtocolsListDataSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the specified protocols list.
@@ -36,45 +37,33 @@ object ProtocolsListDataSummary {
   }
   
   @scala.inline
-  implicit class ProtocolsListDataSummaryOps[Self <: ProtocolsListDataSummary] (val x: Self) extends AnyVal {
+  implicit class ProtocolsListDataSummaryMutableBuilder[Self <: ProtocolsListDataSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListArn(value: ResourceArn): Self = StObject.set(x, "ListArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListArnUndefined: Self = StObject.set(x, "ListArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListArn(value: ResourceArn): Self = this.set("ListArn", value.asInstanceOf[js.Any])
+    def setListIdUndefined: Self = StObject.set(x, "ListId", js.undefined)
     
     @scala.inline
-    def deleteListArn: Self = this.set("ListArn", js.undefined)
+    def setListName(value: ResourceName): Self = StObject.set(x, "ListName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListId(value: ListId): Self = this.set("ListId", value.asInstanceOf[js.Any])
+    def setListNameUndefined: Self = StObject.set(x, "ListName", js.undefined)
     
     @scala.inline
-    def deleteListId: Self = this.set("ListId", js.undefined)
+    def setProtocolsList(value: ProtocolsList): Self = StObject.set(x, "ProtocolsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListName(value: ResourceName): Self = this.set("ListName", value.asInstanceOf[js.Any])
+    def setProtocolsListUndefined: Self = StObject.set(x, "ProtocolsList", js.undefined)
     
     @scala.inline
-    def deleteListName: Self = this.set("ListName", js.undefined)
-    
-    @scala.inline
-    def setProtocolsListVarargs(value: Protocol*): Self = this.set("ProtocolsList", js.Array(value :_*))
-    
-    @scala.inline
-    def setProtocolsList(value: ProtocolsList): Self = this.set("ProtocolsList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocolsList: Self = this.set("ProtocolsList", js.undefined)
+    def setProtocolsListVarargs(value: Protocol*): Self = StObject.set(x, "ProtocolsList", js.Array(value :_*))
   }
 }

@@ -3,12 +3,13 @@ package typings.azdata.mod.nb
 import typings.azdata.anon.UndoStopAfter
 import typings.vscode.Thenable
 import typings.vscode.mod.ViewColumn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotebookEditor extends js.Object {
+trait NotebookEditor extends StObject {
   
   /**
     * Changes the Notebook's kernel. Thenable will resolve only after kernel change is complete.

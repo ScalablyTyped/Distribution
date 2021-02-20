@@ -1,5 +1,6 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,15 +10,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class PolylineGeometry protected () extends Packable {
   def this(options: typings.cesium.anon.ArcType) = this()
 }
-/* static members */
-@JSImport("cesium", "PolylineGeometry")
-@js.native
-object PolylineGeometry extends js.Object {
+object PolylineGeometry {
   
+  /* static member */
+  @JSImport("cesium", "PolylineGeometry.createGeometry")
+  @js.native
   def createGeometry(polylineGeometry: PolylineGeometry): Geometry = js.native
   
+  /* static member */
+  @JSImport("cesium", "PolylineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double]): PolylineGeometry = js.native
+  @JSImport("cesium", "PolylineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: PolylineGeometry): PolylineGeometry = js.native
+  @JSImport("cesium", "PolylineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double): PolylineGeometry = js.native
+  @JSImport("cesium", "PolylineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: PolylineGeometry): PolylineGeometry = js.native
 }

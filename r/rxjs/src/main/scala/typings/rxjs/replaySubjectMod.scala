@@ -2,14 +2,14 @@ package typings.rxjs
 
 import typings.rxjs.subjectMod.Subject
 import typings.rxjs.typesMod.SchedulerLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/ReplaySubject", JSImport.Namespace)
-@js.native
-object replaySubjectMod extends js.Object {
+object replaySubjectMod {
   
+  @JSImport("rxjs/internal/ReplaySubject", "ReplaySubject")
   @js.native
   class ReplaySubject[T] () extends Subject[T] {
     def this(bufferSize: Double) = this()

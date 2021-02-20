@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1Entry extends js.Object {
+trait GoogleCloudDatacatalogV1beta1Entry extends StObject {
   
   /** Specification for a group of BigQuery tables with name pattern `[prefix]YYYYMMDD`. Context: https://cloud.google.com/bigquery/docs/partitioned-tables#partitioning_versus_sharding. */
   var bigqueryDateShardedSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec] = js.native
@@ -74,96 +75,84 @@ object GoogleCloudDatacatalogV1beta1Entry {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1EntryOps[Self <: GoogleCloudDatacatalogV1beta1Entry] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1EntryMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1Entry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBigqueryDateShardedSpec(value: GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec): Self = StObject.set(x, "bigqueryDateShardedSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBigqueryDateShardedSpecUndefined: Self = StObject.set(x, "bigqueryDateShardedSpec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBigqueryTableSpec(value: GoogleCloudDatacatalogV1beta1BigQueryTableSpec): Self = StObject.set(x, "bigqueryTableSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigqueryDateShardedSpec(value: GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec): Self = this.set("bigqueryDateShardedSpec", value.asInstanceOf[js.Any])
+    def setBigqueryTableSpecUndefined: Self = StObject.set(x, "bigqueryTableSpec", js.undefined)
     
     @scala.inline
-    def deleteBigqueryDateShardedSpec: Self = this.set("bigqueryDateShardedSpec", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigqueryTableSpec(value: GoogleCloudDatacatalogV1beta1BigQueryTableSpec): Self = this.set("bigqueryTableSpec", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBigqueryTableSpec: Self = this.set("bigqueryTableSpec", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setGcsFilesetSpec(value: GoogleCloudDatacatalogV1beta1GcsFilesetSpec): Self = StObject.set(x, "gcsFilesetSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setGcsFilesetSpecUndefined: Self = StObject.set(x, "gcsFilesetSpec", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIntegratedSystem(value: String): Self = StObject.set(x, "integratedSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsFilesetSpec(value: GoogleCloudDatacatalogV1beta1GcsFilesetSpec): Self = this.set("gcsFilesetSpec", value.asInstanceOf[js.Any])
+    def setIntegratedSystemUndefined: Self = StObject.set(x, "integratedSystem", js.undefined)
     
     @scala.inline
-    def deleteGcsFilesetSpec: Self = this.set("gcsFilesetSpec", js.undefined)
+    def setLinkedResource(value: String): Self = StObject.set(x, "linkedResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegratedSystem(value: String): Self = this.set("integratedSystem", value.asInstanceOf[js.Any])
+    def setLinkedResourceUndefined: Self = StObject.set(x, "linkedResource", js.undefined)
     
     @scala.inline
-    def deleteIntegratedSystem: Self = this.set("integratedSystem", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedResource(value: String): Self = this.set("linkedResource", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLinkedResource: Self = this.set("linkedResource", js.undefined)
+    def setSchema(value: GoogleCloudDatacatalogV1beta1Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSourceSystemTimestamps(value: GoogleCloudDatacatalogV1beta1SystemTimestamps): Self = StObject.set(x, "sourceSystemTimestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: GoogleCloudDatacatalogV1beta1Schema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSourceSystemTimestampsUndefined: Self = StObject.set(x, "sourceSystemTimestamps", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSystemTimestamps(value: GoogleCloudDatacatalogV1beta1SystemTimestamps): Self = this.set("sourceSystemTimestamps", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSourceSystemTimestamps: Self = this.set("sourceSystemTimestamps", js.undefined)
+    def setUserSpecifiedSystem(value: String): Self = StObject.set(x, "userSpecifiedSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUserSpecifiedSystemUndefined: Self = StObject.set(x, "userSpecifiedSystem", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUserSpecifiedType(value: String): Self = StObject.set(x, "userSpecifiedType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserSpecifiedSystem(value: String): Self = this.set("userSpecifiedSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserSpecifiedSystem: Self = this.set("userSpecifiedSystem", js.undefined)
-    
-    @scala.inline
-    def setUserSpecifiedType(value: String): Self = this.set("userSpecifiedType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserSpecifiedType: Self = this.set("userSpecifiedType", js.undefined)
+    def setUserSpecifiedTypeUndefined: Self = StObject.set(x, "userSpecifiedType", js.undefined)
   }
 }

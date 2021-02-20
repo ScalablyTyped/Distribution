@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The data execution status.
   */
 @js.native
-trait DataExecutionStatus extends js.Object {
+trait DataExecutionStatus extends StObject {
   
   def getErrorCode(): DataExecutionErrorCode = js.native
   
@@ -36,33 +37,21 @@ object DataExecutionStatus {
   }
   
   @scala.inline
-  implicit class DataExecutionStatusOps[Self <: DataExecutionStatus] (val x: Self) extends AnyVal {
+  implicit class DataExecutionStatusMutableBuilder[Self <: DataExecutionStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetErrorCode(value: () => DataExecutionErrorCode): Self = StObject.set(x, "getErrorCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetErrorMessage(value: () => String): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetExecutionState(value: () => DataExecutionState): Self = StObject.set(x, "getExecutionState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetErrorCode(value: () => DataExecutionErrorCode): Self = this.set("getErrorCode", js.Any.fromFunction0(value))
+    def setGetLastRefreshedTime(value: () => Date | Null): Self = StObject.set(x, "getLastRefreshedTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetErrorMessage(value: () => String): Self = this.set("getErrorMessage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetExecutionState(value: () => DataExecutionState): Self = this.set("getExecutionState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLastRefreshedTime(value: () => Date | Null): Self = this.set("getLastRefreshedTime", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsTruncated(value: () => Boolean): Self = this.set("isTruncated", js.Any.fromFunction0(value))
+    def setIsTruncated(value: () => Boolean): Self = StObject.set(x, "isTruncated", js.Any.fromFunction0(value))
   }
 }

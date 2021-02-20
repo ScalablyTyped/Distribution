@@ -1,6 +1,7 @@
 package typings.elasticElasticsearch.requestParamsMod
 
 import typings.elasticElasticsearch.elasticElasticsearchStrings.wait_for
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,30 +24,18 @@ object SecurityDeletePrivileges {
   }
   
   @scala.inline
-  implicit class SecurityDeletePrivilegesOps[Self <: SecurityDeletePrivileges] (val x: Self) extends AnyVal {
+  implicit class SecurityDeletePrivilegesMutableBuilder[Self <: SecurityDeletePrivileges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: String): Self = this.set("application", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefresh(value: wait_for | Boolean): Self = this.set("refresh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
   }
 }

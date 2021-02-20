@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.languages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncodedTokensProvider extends js.Object {
+trait EncodedTokensProvider extends StObject {
   
   /**
     * The initial state of a language. Will be the state passed in to tokenize the first line.
@@ -26,24 +27,12 @@ object EncodedTokensProvider {
   }
   
   @scala.inline
-  implicit class EncodedTokensProviderOps[Self <: EncodedTokensProvider] (val x: Self) extends AnyVal {
+  implicit class EncodedTokensProviderMutableBuilder[Self <: EncodedTokensProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInitialState(value: () => IState): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetInitialState(value: () => IState): Self = this.set("getInitialState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTokenizeEncoded(value: (String, IState) => IEncodedLineTokens): Self = this.set("tokenizeEncoded", js.Any.fromFunction2(value))
+    def setTokenizeEncoded(value: (String, IState) => IEncodedLineTokens): Self = StObject.set(x, "tokenizeEncoded", js.Any.fromFunction2(value))
   }
 }

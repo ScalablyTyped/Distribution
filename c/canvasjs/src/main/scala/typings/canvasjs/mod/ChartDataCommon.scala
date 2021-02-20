@@ -1,12 +1,13 @@
 package typings.canvasjs.mod
 
 import typings.canvasjs.anon.DataSeries
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartDataCommon extends js.Object {
+trait ChartDataCommon extends StObject {
   
   /**
     * Sets the click event handler for dataSeries which is triggered when user clicks on a dataSeries.
@@ -247,204 +248,192 @@ object ChartDataCommon {
   }
   
   @scala.inline
-  implicit class ChartDataCommonOps[Self <: ChartDataCommon] (val x: Self) extends AnyVal {
+  implicit class ChartDataCommonMutableBuilder[Self <: ChartDataCommon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: /* event */ ChartEvent => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setHighlightEnabled(value: Boolean): Self = StObject.set(x, "highlightEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setHighlightEnabledUndefined: Self = StObject.set(x, "highlightEnabled", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setIndexLabel(value: String): Self = StObject.set(x, "indexLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightEnabled(value: Boolean): Self = this.set("highlightEnabled", value.asInstanceOf[js.Any])
+    def setIndexLabelBackgroundColor(value: String): Self = StObject.set(x, "indexLabelBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighlightEnabled: Self = this.set("highlightEnabled", js.undefined)
+    def setIndexLabelBackgroundColorUndefined: Self = StObject.set(x, "indexLabelBackgroundColor", js.undefined)
     
     @scala.inline
-    def setIndexLabel(value: String): Self = this.set("indexLabel", value.asInstanceOf[js.Any])
+    def setIndexLabelFontColor(value: String): Self = StObject.set(x, "indexLabelFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexLabel: Self = this.set("indexLabel", js.undefined)
+    def setIndexLabelFontColorUndefined: Self = StObject.set(x, "indexLabelFontColor", js.undefined)
     
     @scala.inline
-    def setIndexLabelBackgroundColor(value: String): Self = this.set("indexLabelBackgroundColor", value.asInstanceOf[js.Any])
+    def setIndexLabelFontFamily(value: String): Self = StObject.set(x, "indexLabelFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexLabelBackgroundColor: Self = this.set("indexLabelBackgroundColor", js.undefined)
+    def setIndexLabelFontFamilyUndefined: Self = StObject.set(x, "indexLabelFontFamily", js.undefined)
     
     @scala.inline
-    def setIndexLabelFontColor(value: String): Self = this.set("indexLabelFontColor", value.asInstanceOf[js.Any])
+    def setIndexLabelFontSize(value: Double): Self = StObject.set(x, "indexLabelFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexLabelFontColor: Self = this.set("indexLabelFontColor", js.undefined)
+    def setIndexLabelFontSizeUndefined: Self = StObject.set(x, "indexLabelFontSize", js.undefined)
     
     @scala.inline
-    def setIndexLabelFontFamily(value: String): Self = this.set("indexLabelFontFamily", value.asInstanceOf[js.Any])
+    def setIndexLabelFontStyle(value: String): Self = StObject.set(x, "indexLabelFontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexLabelFontFamily: Self = this.set("indexLabelFontFamily", js.undefined)
+    def setIndexLabelFontStyleUndefined: Self = StObject.set(x, "indexLabelFontStyle", js.undefined)
     
     @scala.inline
-    def setIndexLabelFontSize(value: Double): Self = this.set("indexLabelFontSize", value.asInstanceOf[js.Any])
+    def setIndexLabelFontWeight(value: String): Self = StObject.set(x, "indexLabelFontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexLabelFontSize: Self = this.set("indexLabelFontSize", js.undefined)
+    def setIndexLabelFontWeightUndefined: Self = StObject.set(x, "indexLabelFontWeight", js.undefined)
     
     @scala.inline
-    def setIndexLabelFontStyle(value: String): Self = this.set("indexLabelFontStyle", value.asInstanceOf[js.Any])
+    def setIndexLabelFormatter(value: /* e */ DataSeries => String): Self = StObject.set(x, "indexLabelFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIndexLabelFontStyle: Self = this.set("indexLabelFontStyle", js.undefined)
+    def setIndexLabelFormatterUndefined: Self = StObject.set(x, "indexLabelFormatter", js.undefined)
     
     @scala.inline
-    def setIndexLabelFontWeight(value: String): Self = this.set("indexLabelFontWeight", value.asInstanceOf[js.Any])
+    def setIndexLabelLineColor(value: String): Self = StObject.set(x, "indexLabelLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexLabelFontWeight: Self = this.set("indexLabelFontWeight", js.undefined)
+    def setIndexLabelLineColorUndefined: Self = StObject.set(x, "indexLabelLineColor", js.undefined)
     
     @scala.inline
-    def setIndexLabelFormatter(value: /* e */ DataSeries => String): Self = this.set("indexLabelFormatter", js.Any.fromFunction1(value))
+    def setIndexLabelLineDashType(value: DashType): Self = StObject.set(x, "indexLabelLineDashType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexLabelFormatter: Self = this.set("indexLabelFormatter", js.undefined)
+    def setIndexLabelLineDashTypeUndefined: Self = StObject.set(x, "indexLabelLineDashType", js.undefined)
     
     @scala.inline
-    def setIndexLabelLineColor(value: String): Self = this.set("indexLabelLineColor", value.asInstanceOf[js.Any])
+    def setIndexLabelLineThickness(value: Double): Self = StObject.set(x, "indexLabelLineThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexLabelLineColor: Self = this.set("indexLabelLineColor", js.undefined)
+    def setIndexLabelLineThicknessUndefined: Self = StObject.set(x, "indexLabelLineThickness", js.undefined)
     
     @scala.inline
-    def setIndexLabelLineDashType(value: DashType): Self = this.set("indexLabelLineDashType", value.asInstanceOf[js.Any])
+    def setIndexLabelOrientation(value: String): Self = StObject.set(x, "indexLabelOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexLabelLineDashType: Self = this.set("indexLabelLineDashType", js.undefined)
+    def setIndexLabelOrientationUndefined: Self = StObject.set(x, "indexLabelOrientation", js.undefined)
     
     @scala.inline
-    def setIndexLabelLineThickness(value: Double): Self = this.set("indexLabelLineThickness", value.asInstanceOf[js.Any])
+    def setIndexLabelPlacement(value: String): Self = StObject.set(x, "indexLabelPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexLabelLineThickness: Self = this.set("indexLabelLineThickness", js.undefined)
+    def setIndexLabelPlacementUndefined: Self = StObject.set(x, "indexLabelPlacement", js.undefined)
     
     @scala.inline
-    def setIndexLabelOrientation(value: String): Self = this.set("indexLabelOrientation", value.asInstanceOf[js.Any])
+    def setIndexLabelUndefined: Self = StObject.set(x, "indexLabel", js.undefined)
     
     @scala.inline
-    def deleteIndexLabelOrientation: Self = this.set("indexLabelOrientation", js.undefined)
+    def setLegendMarkerBorderColor(value: String): Self = StObject.set(x, "legendMarkerBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexLabelPlacement(value: String): Self = this.set("indexLabelPlacement", value.asInstanceOf[js.Any])
+    def setLegendMarkerBorderColorUndefined: Self = StObject.set(x, "legendMarkerBorderColor", js.undefined)
     
     @scala.inline
-    def deleteIndexLabelPlacement: Self = this.set("indexLabelPlacement", js.undefined)
+    def setLegendMarkerBorderThickness(value: Double): Self = StObject.set(x, "legendMarkerBorderThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendMarkerBorderColor(value: String): Self = this.set("legendMarkerBorderColor", value.asInstanceOf[js.Any])
+    def setLegendMarkerBorderThicknessUndefined: Self = StObject.set(x, "legendMarkerBorderThickness", js.undefined)
     
     @scala.inline
-    def deleteLegendMarkerBorderColor: Self = this.set("legendMarkerBorderColor", js.undefined)
+    def setLegendMarkerColor(value: String): Self = StObject.set(x, "legendMarkerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendMarkerBorderThickness(value: Double): Self = this.set("legendMarkerBorderThickness", value.asInstanceOf[js.Any])
+    def setLegendMarkerColorUndefined: Self = StObject.set(x, "legendMarkerColor", js.undefined)
     
     @scala.inline
-    def deleteLegendMarkerBorderThickness: Self = this.set("legendMarkerBorderThickness", js.undefined)
+    def setLegendMarkerType(value: String): Self = StObject.set(x, "legendMarkerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendMarkerColor(value: String): Self = this.set("legendMarkerColor", value.asInstanceOf[js.Any])
+    def setLegendMarkerTypeUndefined: Self = StObject.set(x, "legendMarkerType", js.undefined)
     
     @scala.inline
-    def deleteLegendMarkerColor: Self = this.set("legendMarkerColor", js.undefined)
+    def setLegendText(value: String): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendMarkerType(value: String): Self = this.set("legendMarkerType", value.asInstanceOf[js.Any])
+    def setLegendTextUndefined: Self = StObject.set(x, "legendText", js.undefined)
     
     @scala.inline
-    def deleteLegendMarkerType: Self = this.set("legendMarkerType", js.undefined)
+    def setMarkerBorderColor(value: String): Self = StObject.set(x, "markerBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendText(value: String): Self = this.set("legendText", value.asInstanceOf[js.Any])
+    def setMarkerBorderColorUndefined: Self = StObject.set(x, "markerBorderColor", js.undefined)
     
     @scala.inline
-    def deleteLegendText: Self = this.set("legendText", js.undefined)
+    def setMarkerBorderThickness(value: Double): Self = StObject.set(x, "markerBorderThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerBorderColor(value: String): Self = this.set("markerBorderColor", value.asInstanceOf[js.Any])
+    def setMarkerBorderThicknessUndefined: Self = StObject.set(x, "markerBorderThickness", js.undefined)
     
     @scala.inline
-    def deleteMarkerBorderColor: Self = this.set("markerBorderColor", js.undefined)
+    def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerBorderThickness(value: Double): Self = this.set("markerBorderThickness", value.asInstanceOf[js.Any])
+    def setMarkerColorUndefined: Self = StObject.set(x, "markerColor", js.undefined)
     
     @scala.inline
-    def deleteMarkerBorderThickness: Self = this.set("markerBorderThickness", js.undefined)
+    def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerColor(value: String): Self = this.set("markerColor", value.asInstanceOf[js.Any])
+    def setMarkerSizeUndefined: Self = StObject.set(x, "markerSize", js.undefined)
     
     @scala.inline
-    def deleteMarkerColor: Self = this.set("markerColor", js.undefined)
+    def setMarkerType(value: String): Self = StObject.set(x, "markerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerSize(value: Double): Self = this.set("markerSize", value.asInstanceOf[js.Any])
+    def setMarkerTypeUndefined: Self = StObject.set(x, "markerType", js.undefined)
     
     @scala.inline
-    def deleteMarkerSize: Self = this.set("markerSize", js.undefined)
+    def setMousemove(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "mousemove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarkerType(value: String): Self = this.set("markerType", value.asInstanceOf[js.Any])
+    def setMousemoveUndefined: Self = StObject.set(x, "mousemove", js.undefined)
     
     @scala.inline
-    def deleteMarkerType: Self = this.set("markerType", js.undefined)
+    def setMouseout(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMousemove(value: /* event */ ChartEvent => Unit): Self = this.set("mousemove", js.Any.fromFunction1(value))
+    def setMouseoutUndefined: Self = StObject.set(x, "mouseout", js.undefined)
     
     @scala.inline
-    def deleteMousemove: Self = this.set("mousemove", js.undefined)
+    def setMouseover(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "mouseover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseout(value: /* event */ ChartEvent => Unit): Self = this.set("mouseout", js.Any.fromFunction1(value))
+    def setMouseoverUndefined: Self = StObject.set(x, "mouseover", js.undefined)
     
     @scala.inline
-    def deleteMouseout: Self = this.set("mouseout", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseover(value: /* event */ ChartEvent => Unit): Self = this.set("mouseover", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMouseover: Self = this.set("mouseover", js.undefined)
+    def setToolTipContent(value: String): Self = StObject.set(x, "toolTipContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setToolTipContent(value: String): Self = this.set("toolTipContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolTipContent: Self = this.set("toolTipContent", js.undefined)
+    def setToolTipContentUndefined: Self = StObject.set(x, "toolTipContent", js.undefined)
   }
 }

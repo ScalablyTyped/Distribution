@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationFolder extends js.Object {
+trait NavigationFolder extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -52,51 +53,39 @@ object NavigationFolder {
   }
   
   @scala.inline
-  implicit class NavigationFolderOps[Self <: NavigationFolder] (val x: Self) extends AnyVal {
+  implicit class NavigationFolderMutableBuilder[Self <: NavigationFolder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFolder(value: Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setIsRemovable(value: Boolean): Self = StObject.set(x, "IsRemovable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setIsSelected(value: Boolean): Self = StObject.set(x, "IsSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolder(value: Folder): Self = this.set("Folder", value.asInstanceOf[js.Any])
+    def setIsSideBySide(value: Boolean): Self = StObject.set(x, "IsSideBySide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRemovable(value: Boolean): Self = this.set("IsRemovable", value.asInstanceOf[js.Any])
+    def setOutlookDotNavigationFolder_typekey(value: NavigationFolder): Self = StObject.set(x, "Outlook.NavigationFolder_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSelected(value: Boolean): Self = this.set("IsSelected", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSideBySide(value: Boolean): Self = this.set("IsSideBySide", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotNavigationFolder_typekey(value: NavigationFolder): Self = this.set("Outlook.NavigationFolder_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("Position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

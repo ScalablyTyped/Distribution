@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkEditLineItemAssignedTargetingOptionsResponse extends js.Object {
+trait BulkEditLineItemAssignedTargetingOptionsResponse extends StObject {
   
   /** The list of assigned targeting options that have been successfully created. This list will be absent if empty. */
   var createdAssignedTargetingOptions: js.UndefOr[js.Array[AssignedTargetingOption]] = js.native
@@ -19,27 +20,15 @@ object BulkEditLineItemAssignedTargetingOptionsResponse {
   }
   
   @scala.inline
-  implicit class BulkEditLineItemAssignedTargetingOptionsResponseOps[Self <: BulkEditLineItemAssignedTargetingOptionsResponse] (val x: Self) extends AnyVal {
+  implicit class BulkEditLineItemAssignedTargetingOptionsResponseMutableBuilder[Self <: BulkEditLineItemAssignedTargetingOptionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "createdAssignedTargetingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAssignedTargetingOptionsUndefined: Self = StObject.set(x, "createdAssignedTargetingOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreatedAssignedTargetingOptionsVarargs(value: AssignedTargetingOption*): Self = this.set("createdAssignedTargetingOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setCreatedAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = this.set("createdAssignedTargetingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatedAssignedTargetingOptions: Self = this.set("createdAssignedTargetingOptions", js.undefined)
+    def setCreatedAssignedTargetingOptionsVarargs(value: AssignedTargetingOption*): Self = StObject.set(x, "createdAssignedTargetingOptions", js.Array(value :_*))
   }
 }

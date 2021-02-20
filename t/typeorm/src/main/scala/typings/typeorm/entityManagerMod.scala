@@ -22,16 +22,16 @@ import typings.typeorm.selectQueryBuilderMod.SelectQueryBuilder
 import typings.typeorm.treeRepositoryMod.TreeRepository
 import typings.typeorm.typingsMod.ObjectID
 import typings.typeorm.updateResultMod.UpdateResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/entity-manager/EntityManager", JSImport.Namespace)
-@js.native
-object entityManagerMod extends js.Object {
+object entityManagerMod {
   
+  @JSImport("typeorm/browser/entity-manager/EntityManager", "EntityManager")
   @js.native
-  class EntityManager protected () extends js.Object {
+  class EntityManager protected () extends StObject {
     def this(connection: Connection) = this()
     def this(connection: Connection, queryRunner: QueryRunner) = this()
     

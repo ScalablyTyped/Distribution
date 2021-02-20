@@ -3,27 +3,37 @@ package typings.arangodb
 import typings.arangodb.Foxx.Endpoint
 import typings.arangodb.Foxx.Handler
 import typings.arangodb.Foxx.SimpleMiddleware
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object Foxx extends js.Object {
+  object Foxx {
     
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(handler: Handler): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(handler: Handler, name: String): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(pathOrMiddleware: String, handler: Handler): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(pathOrMiddleware: String, handler: Handler, name: String): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -31,6 +41,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -38,6 +50,8 @@ object global extends js.Object {
       middleware3: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -46,6 +60,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -54,6 +70,8 @@ object global extends js.Object {
       middleware4: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -63,6 +81,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -72,6 +92,8 @@ object global extends js.Object {
       middleware5: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -82,6 +104,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -92,6 +116,8 @@ object global extends js.Object {
       middleware6: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -103,6 +129,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -114,6 +142,8 @@ object global extends js.Object {
       middleware7: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -126,6 +156,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -138,6 +170,8 @@ object global extends js.Object {
       middleware8: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -151,6 +185,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -164,6 +200,8 @@ object global extends js.Object {
       middleware9: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
@@ -178,16 +216,28 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(pathOrMiddleware: String, middleware: SimpleMiddleware, handler: Handler): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(pathOrMiddleware: String, middleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(pathOrMiddleware: SimpleMiddleware, handler: Handler): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(pathOrMiddleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -195,6 +245,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -202,6 +254,8 @@ object global extends js.Object {
       middleware3: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -210,6 +264,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -218,6 +274,8 @@ object global extends js.Object {
       middleware4: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -227,6 +285,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -236,6 +296,8 @@ object global extends js.Object {
       middleware5: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -246,6 +308,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -256,6 +320,8 @@ object global extends js.Object {
       middleware6: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -267,6 +333,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -278,6 +346,8 @@ object global extends js.Object {
       middleware7: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -290,6 +360,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -302,6 +374,8 @@ object global extends js.Object {
       middleware8: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -315,6 +389,8 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -328,6 +404,8 @@ object global extends js.Object {
       middleware9: SimpleMiddleware,
       handler: Handler
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
@@ -342,7 +420,11 @@ object global extends js.Object {
       handler: Handler,
       name: String
     ): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler): Endpoint = js.native
+    @JSGlobal("Foxx.route")
+    @js.native
     def route(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = js.native
   }
 }

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cognito
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolEmailConfiguration extends js.Object {
+trait UserPoolEmailConfiguration extends StObject {
   
   /**
     * The email delivery method to use. `COGNITO_DEFAULT` for the default email functionality built into Cognito or `DEVELOPER` to use your Amazon SES configuration.
@@ -37,42 +38,30 @@ object UserPoolEmailConfiguration {
   }
   
   @scala.inline
-  implicit class UserPoolEmailConfigurationOps[Self <: UserPoolEmailConfiguration] (val x: Self) extends AnyVal {
+  implicit class UserPoolEmailConfigurationMutableBuilder[Self <: UserPoolEmailConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailSendingAccount(value: Input[String]): Self = StObject.set(x, "emailSendingAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailSendingAccountUndefined: Self = StObject.set(x, "emailSendingAccount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromEmailAddress(value: Input[String]): Self = StObject.set(x, "fromEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailSendingAccount(value: Input[String]): Self = this.set("emailSendingAccount", value.asInstanceOf[js.Any])
+    def setFromEmailAddressUndefined: Self = StObject.set(x, "fromEmailAddress", js.undefined)
     
     @scala.inline
-    def deleteEmailSendingAccount: Self = this.set("emailSendingAccount", js.undefined)
+    def setReplyToEmailAddress(value: Input[String]): Self = StObject.set(x, "replyToEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromEmailAddress(value: Input[String]): Self = this.set("fromEmailAddress", value.asInstanceOf[js.Any])
+    def setReplyToEmailAddressUndefined: Self = StObject.set(x, "replyToEmailAddress", js.undefined)
     
     @scala.inline
-    def deleteFromEmailAddress: Self = this.set("fromEmailAddress", js.undefined)
+    def setSourceArn(value: Input[String]): Self = StObject.set(x, "sourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyToEmailAddress(value: Input[String]): Self = this.set("replyToEmailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyToEmailAddress: Self = this.set("replyToEmailAddress", js.undefined)
-    
-    @scala.inline
-    def setSourceArn(value: Input[String]): Self = this.set("sourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceArn: Self = this.set("sourceArn", js.undefined)
+    def setSourceArnUndefined: Self = StObject.set(x, "sourceArn", js.undefined)
   }
 }

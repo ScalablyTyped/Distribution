@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/text-document/
 @js.native
-trait TextDocument extends js.Object {
+trait TextDocument extends StObject {
   
   val eol: String = js.native
   
@@ -58,66 +59,54 @@ object TextDocument {
   }
   
   @scala.inline
-  implicit class TextDocumentOps[Self <: TextDocument] (val x: Self) extends AnyVal {
+  implicit class TextDocumentMutableBuilder[Self <: TextDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLineRangeForRange(value: Range => Range): Self = StObject.set(x, "getLineRangeForRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTextInRange(value: Range => String): Self = StObject.set(x, "getTextInRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEol(value: String): Self = this.set("eol", value.asInstanceOf[js.Any])
+    def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLineRangeForRange(value: Range => Range): Self = this.set("getLineRangeForRange", js.Any.fromFunction1(value))
+    def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTextInRange(value: Range => String): Self = this.set("getTextInRange", js.Any.fromFunction1(value))
+    def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsClosed(value: Boolean): Self = this.set("isClosed", value.asInstanceOf[js.Any])
+    def setIsRemote(value: Boolean): Self = StObject.set(x, "isRemote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDirty(value: Boolean): Self = this.set("isDirty", value.asInstanceOf[js.Any])
+    def setIsUntitled(value: Boolean): Self = StObject.set(x, "isUntitled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEmpty(value: Boolean): Self = this.set("isEmpty", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRemote(value: Boolean): Self = this.set("isRemote", value.asInstanceOf[js.Any])
+    def setOnDidChangePath(value: js.Function2[TextDocument, /* path */ String | Null, Unit] => Disposable): Self = StObject.set(x, "onDidChangePath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsUntitled(value: Boolean): Self = this.set("isUntitled", value.asInstanceOf[js.Any])
+    def setOnDidChangeSyntax(value: js.Function2[TextDocument, /* syntax */ String | Null, Unit] => Disposable): Self = StObject.set(x, "onDidChangeSyntax", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDidChangePath(value: js.Function2[TextDocument, /* path */ String | Null, Unit] => Disposable): Self = this.set("onDidChangePath", js.Any.fromFunction1(value))
+    def setPathNull: Self = StObject.set(x, "path", null)
     
     @scala.inline
-    def setOnDidChangeSyntax(value: js.Function2[TextDocument, /* syntax */ String | Null, Unit] => Disposable): Self = this.set("onDidChangeSyntax", js.Any.fromFunction1(value))
+    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setSyntaxNull: Self = StObject.set(x, "syntax", null)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathNull: Self = this.set("path", null)
-    
-    @scala.inline
-    def setSyntax(value: String): Self = this.set("syntax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSyntaxNull: Self = this.set("syntax", null)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

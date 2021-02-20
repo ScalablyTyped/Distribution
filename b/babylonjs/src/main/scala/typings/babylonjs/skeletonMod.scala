@@ -15,14 +15,14 @@ import typings.babylonjs.rawTextureMod.RawTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Bones/skeleton", JSImport.Namespace)
-@js.native
-object skeletonMod extends js.Object {
+object skeletonMod {
   
+  @JSImport("babylonjs/Bones/skeleton", "Skeleton")
   @js.native
   class Skeleton protected () extends IAnimatable {
     /**
@@ -343,9 +343,10 @@ object skeletonMod extends js.Object {
     def useTextureToStoreBoneMatrices_=(value: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Skeleton extends js.Object {
+  object Skeleton {
     
+    @JSImport("babylonjs/Bones/skeleton", "Skeleton.MakeAnimationAdditive")
+    @js.native
     def MakeAnimationAdditive(skeleton: Skeleton, referenceFrame: js.UndefOr[scala.Nothing], range: String): Nullable[Skeleton] = js.native
     /**
       * Convert the keyframes for a range of animation on a skeleton to be relative to a given reference frame.
@@ -354,6 +355,8 @@ object skeletonMod extends js.Object {
       * @param range defines the name of the AnimationRange belonging to the Skeleton to convert
       * @returns the original skeleton
       */
+    @JSImport("babylonjs/Bones/skeleton", "Skeleton.MakeAnimationAdditive")
+    @js.native
     def MakeAnimationAdditive(skeleton: Skeleton, referenceFrame: Double, range: String): Nullable[Skeleton] = js.native
     
     /**
@@ -362,6 +365,8 @@ object skeletonMod extends js.Object {
       * @param scene defines the hosting scene
       * @returns a new skeleton
       */
+    @JSImport("babylonjs/Bones/skeleton", "Skeleton.Parse")
+    @js.native
     def Parse(parsedSkeleton: js.Any, scene: Scene): Skeleton = js.native
   }
 }

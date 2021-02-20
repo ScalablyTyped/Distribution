@@ -1,6 +1,7 @@
 package typings.jqueryCookie
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // the set function. This is because the intellisense that shows up after you press comma should be the set first,
 // since that is more common, then the conversion function if user starts typing a parameter with a function type
 @js.native
-trait JQueryCookieStatic extends js.Object {
+trait JQueryCookieStatic extends StObject {
   
   /**
     * Gets an object of cookies as key-value pairs

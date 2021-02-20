@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RespondDecisionTaskCompletedInput extends js.Object {
+trait RespondDecisionTaskCompletedInput extends StObject {
   
   /**
     * The list of decisions (possibly empty) made by the decider while processing this decision task. See the docs for the Decision structure for details.
@@ -31,36 +32,24 @@ object RespondDecisionTaskCompletedInput {
   }
   
   @scala.inline
-  implicit class RespondDecisionTaskCompletedInputOps[Self <: RespondDecisionTaskCompletedInput] (val x: Self) extends AnyVal {
+  implicit class RespondDecisionTaskCompletedInputMutableBuilder[Self <: RespondDecisionTaskCompletedInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecisions(value: DecisionList): Self = StObject.set(x, "decisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecisionsUndefined: Self = StObject.set(x, "decisions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecisionsVarargs(value: Decision*): Self = StObject.set(x, "decisions", js.Array(value :_*))
     
     @scala.inline
-    def setTaskToken(value: TaskToken): Self = this.set("taskToken", value.asInstanceOf[js.Any])
+    def setExecutionContext(value: Data): Self = StObject.set(x, "executionContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecisionsVarargs(value: Decision*): Self = this.set("decisions", js.Array(value :_*))
+    def setExecutionContextUndefined: Self = StObject.set(x, "executionContext", js.undefined)
     
     @scala.inline
-    def setDecisions(value: DecisionList): Self = this.set("decisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDecisions: Self = this.set("decisions", js.undefined)
-    
-    @scala.inline
-    def setExecutionContext(value: Data): Self = this.set("executionContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionContext: Self = this.set("executionContext", js.undefined)
+    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }
 }

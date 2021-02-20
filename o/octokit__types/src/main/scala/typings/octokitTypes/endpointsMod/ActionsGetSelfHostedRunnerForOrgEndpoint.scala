@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsGetSelfHostedRunnerForOrgEndpoint extends js.Object {
+trait ActionsGetSelfHostedRunnerForOrgEndpoint extends StObject {
   
   @JSName("org")
   var org_ : String = js.native
@@ -25,24 +26,12 @@ object ActionsGetSelfHostedRunnerForOrgEndpoint {
   }
   
   @scala.inline
-  implicit class ActionsGetSelfHostedRunnerForOrgEndpointOps[Self <: ActionsGetSelfHostedRunnerForOrgEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActionsGetSelfHostedRunnerForOrgEndpointMutableBuilder[Self <: ActionsGetSelfHostedRunnerForOrgEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrg_(value: String): Self = this.set("org", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunner_id(value: Double): Self = this.set("runner_id", value.asInstanceOf[js.Any])
+    def setRunner_id(value: Double): Self = StObject.set(x, "runner_id", value.asInstanceOf[js.Any])
   }
 }

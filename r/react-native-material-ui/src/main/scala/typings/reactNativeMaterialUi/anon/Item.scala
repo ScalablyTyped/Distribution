@@ -2,12 +2,13 @@ package typings.reactNativeMaterialUi.anon
 
 import typings.reactNativeMaterialUi.mod.TextStyle
 import typings.reactNativeMaterialUi.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Item extends js.Object {
+trait Item extends StObject {
   
   var container: js.UndefOr[ViewStyle] = js.native
   
@@ -30,72 +31,60 @@ object Item {
   }
   
   @scala.inline
-  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerNull: Self = StObject.set(x, "container", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setContainer(value: ViewStyle): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setIcon(value: ViewStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setIconNull: Self = StObject.set(x, "icon", null)
     
     @scala.inline
-    def setContainerNull: Self = this.set("container", null)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setIcon(value: ViewStyle): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setItem(value: ViewStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setItemNull: Self = StObject.set(x, "item", null)
     
     @scala.inline
-    def setIconNull: Self = this.set("icon", null)
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def setItem(value: ViewStyle): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setLabel(value: TextStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setLabelNull: Self = StObject.set(x, "label", null)
     
     @scala.inline
-    def setItemNull: Self = this.set("item", null)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLabel(value: TextStyle): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setSubheader(value: TextStyle): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setSubheaderNull: Self = StObject.set(x, "subheader", null)
     
     @scala.inline
-    def setLabelNull: Self = this.set("label", null)
+    def setSubheaderUndefined: Self = StObject.set(x, "subheader", js.undefined)
     
     @scala.inline
-    def setSubheader(value: TextStyle): Self = this.set("subheader", value.asInstanceOf[js.Any])
+    def setValue(value: TextStyle): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubheader: Self = this.set("subheader", js.undefined)
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def setSubheaderNull: Self = this.set("subheader", null)
-    
-    @scala.inline
-    def setValue(value: TextStyle): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

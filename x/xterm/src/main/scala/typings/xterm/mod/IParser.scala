@@ -1,11 +1,12 @@
 package typings.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IParser extends js.Object {
+trait IParser extends StObject {
   
   /**
     * Adds a handler for CSI escape sequences.
@@ -91,34 +92,22 @@ object IParser {
   }
   
   @scala.inline
-  implicit class IParserOps[Self <: IParser] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class IParserMutableBuilder[Self <: IParser] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setRegisterCsiHandler(
       value: (IFunctionIdentifier, js.Function1[/* params */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable
-    ): Self = this.set("registerCsiHandler", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "registerCsiHandler", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRegisterDcsHandler(
       value: (IFunctionIdentifier, js.Function2[/* data */ String, /* param */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable
-    ): Self = this.set("registerDcsHandler", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "registerDcsHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterEscHandler(value: (IFunctionIdentifier, js.Function0[Boolean]) => IDisposable): Self = this.set("registerEscHandler", js.Any.fromFunction2(value))
+    def setRegisterEscHandler(value: (IFunctionIdentifier, js.Function0[Boolean]) => IDisposable): Self = StObject.set(x, "registerEscHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterOscHandler(value: (Double, js.Function1[/* data */ String, Boolean]) => IDisposable): Self = this.set("registerOscHandler", js.Any.fromFunction2(value))
+    def setRegisterOscHandler(value: (Double, js.Function1[/* data */ String, Boolean]) => IDisposable): Self = StObject.set(x, "registerOscHandler", js.Any.fromFunction2(value))
   }
 }

@@ -4,6 +4,7 @@ import typings.node.anon.Data
 import typings.node.cryptoMod._KeyLike
 import typings.node.fsMod._PathLike
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

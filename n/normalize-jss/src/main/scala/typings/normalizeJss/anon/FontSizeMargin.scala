@@ -1,11 +1,12 @@
 package typings.normalizeJss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontSizeMargin extends js.Object {
+trait FontSizeMargin extends StObject {
   
   var fontSize: String = js.native
   
@@ -20,27 +21,15 @@ object FontSizeMargin {
   }
   
   @scala.inline
-  implicit class FontSizeMarginOps[Self <: FontSizeMargin] (val x: Self) extends AnyVal {
+  implicit class FontSizeMarginMutableBuilder[Self <: FontSizeMargin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMargin(value: js.Array[js.Array[String]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFontSize(value: String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMarginVarargs(value: js.Array[String]*): Self = this.set("margin", js.Array(value :_*))
-    
-    @scala.inline
-    def setMargin(value: js.Array[js.Array[String]]): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMarginVarargs(value: js.Array[String]*): Self = StObject.set(x, "margin", js.Array(value :_*))
   }
 }

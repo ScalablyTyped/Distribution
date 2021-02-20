@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AchievementResetResponse extends js.Object {
+trait AchievementResetResponse extends StObject {
   
   /**
     * The current state of the achievement. This is the same as the initial state of the achievement. Possible values are: - "`HIDDEN`"- Achievement is hidden. - "`REVEALED`" -
@@ -31,42 +32,30 @@ object AchievementResetResponse {
   }
   
   @scala.inline
-  implicit class AchievementResetResponseOps[Self <: AchievementResetResponse] (val x: Self) extends AnyVal {
+  implicit class AchievementResetResponseMutableBuilder[Self <: AchievementResetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentState(value: String): Self = this.set("currentState", value.asInstanceOf[js.Any])
+    def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
     
     @scala.inline
-    def deleteCurrentState: Self = this.set("currentState", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionId(value: String): Self = this.set("definitionId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDefinitionId: Self = this.set("definitionId", js.undefined)
+    def setUpdateOccurred(value: Boolean): Self = StObject.set(x, "updateOccurred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setUpdateOccurred(value: Boolean): Self = this.set("updateOccurred", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateOccurred: Self = this.set("updateOccurred", js.undefined)
+    def setUpdateOccurredUndefined: Self = StObject.set(x, "updateOccurred", js.undefined)
   }
 }

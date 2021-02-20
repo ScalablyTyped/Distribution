@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerInstance extends js.Object {
+trait ContainerInstance extends StObject {
   
   /**
     * This parameter returns true if the agent is connected to Amazon ECS. Registered instances with an agent that may be unhealthy or stopped return false. Only instances connected to an agent can accept placement requests.
@@ -101,135 +102,123 @@ object ContainerInstance {
   }
   
   @scala.inline
-  implicit class ContainerInstanceOps[Self <: ContainerInstance] (val x: Self) extends AnyVal {
+  implicit class ContainerInstanceMutableBuilder[Self <: ContainerInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentConnected(value: Boolean): Self = StObject.set(x, "agentConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentConnectedUndefined: Self = StObject.set(x, "agentConnected", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentUpdateStatus(value: AgentUpdateStatus): Self = StObject.set(x, "agentUpdateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentConnected(value: Boolean): Self = this.set("agentConnected", value.asInstanceOf[js.Any])
+    def setAgentUpdateStatusUndefined: Self = StObject.set(x, "agentUpdateStatus", js.undefined)
     
     @scala.inline
-    def deleteAgentConnected: Self = this.set("agentConnected", js.undefined)
+    def setAttachments(value: Attachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentUpdateStatus(value: AgentUpdateStatus): Self = this.set("agentUpdateStatus", value.asInstanceOf[js.Any])
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def deleteAgentUpdateStatus: Self = this.set("agentUpdateStatus", js.undefined)
+    def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentsVarargs(value: Attachment*): Self = this.set("attachments", js.Array(value :_*))
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: Attachments): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = this.set("attributes", js.Array(value :_*))
+    def setCapacityProviderName(value: String): Self = StObject.set(x, "capacityProviderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setCapacityProviderNameUndefined: Self = StObject.set(x, "capacityProviderName", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setContainerInstanceArn(value: String): Self = StObject.set(x, "containerInstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityProviderName(value: String): Self = this.set("capacityProviderName", value.asInstanceOf[js.Any])
+    def setContainerInstanceArnUndefined: Self = StObject.set(x, "containerInstanceArn", js.undefined)
     
     @scala.inline
-    def deleteCapacityProviderName: Self = this.set("capacityProviderName", js.undefined)
+    def setEc2InstanceId(value: String): Self = StObject.set(x, "ec2InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerInstanceArn(value: String): Self = this.set("containerInstanceArn", value.asInstanceOf[js.Any])
+    def setEc2InstanceIdUndefined: Self = StObject.set(x, "ec2InstanceId", js.undefined)
     
     @scala.inline
-    def deleteContainerInstanceArn: Self = this.set("containerInstanceArn", js.undefined)
+    def setPendingTasksCount(value: Integer): Self = StObject.set(x, "pendingTasksCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2InstanceId(value: String): Self = this.set("ec2InstanceId", value.asInstanceOf[js.Any])
+    def setPendingTasksCountUndefined: Self = StObject.set(x, "pendingTasksCount", js.undefined)
     
     @scala.inline
-    def deleteEc2InstanceId: Self = this.set("ec2InstanceId", js.undefined)
+    def setRegisteredAt(value: Timestamp): Self = StObject.set(x, "registeredAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingTasksCount(value: Integer): Self = this.set("pendingTasksCount", value.asInstanceOf[js.Any])
+    def setRegisteredAtUndefined: Self = StObject.set(x, "registeredAt", js.undefined)
     
     @scala.inline
-    def deletePendingTasksCount: Self = this.set("pendingTasksCount", js.undefined)
+    def setRegisteredResources(value: Resources): Self = StObject.set(x, "registeredResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredAt(value: Timestamp): Self = this.set("registeredAt", value.asInstanceOf[js.Any])
+    def setRegisteredResourcesUndefined: Self = StObject.set(x, "registeredResources", js.undefined)
     
     @scala.inline
-    def deleteRegisteredAt: Self = this.set("registeredAt", js.undefined)
+    def setRegisteredResourcesVarargs(value: Resource*): Self = StObject.set(x, "registeredResources", js.Array(value :_*))
     
     @scala.inline
-    def setRegisteredResourcesVarargs(value: Resource*): Self = this.set("registeredResources", js.Array(value :_*))
+    def setRemainingResources(value: Resources): Self = StObject.set(x, "remainingResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredResources(value: Resources): Self = this.set("registeredResources", value.asInstanceOf[js.Any])
+    def setRemainingResourcesUndefined: Self = StObject.set(x, "remainingResources", js.undefined)
     
     @scala.inline
-    def deleteRegisteredResources: Self = this.set("registeredResources", js.undefined)
+    def setRemainingResourcesVarargs(value: Resource*): Self = StObject.set(x, "remainingResources", js.Array(value :_*))
     
     @scala.inline
-    def setRemainingResourcesVarargs(value: Resource*): Self = this.set("remainingResources", js.Array(value :_*))
+    def setRunningTasksCount(value: Integer): Self = StObject.set(x, "runningTasksCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemainingResources(value: Resources): Self = this.set("remainingResources", value.asInstanceOf[js.Any])
+    def setRunningTasksCountUndefined: Self = StObject.set(x, "runningTasksCount", js.undefined)
     
     @scala.inline
-    def deleteRemainingResources: Self = this.set("remainingResources", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunningTasksCount(value: Integer): Self = this.set("runningTasksCount", value.asInstanceOf[js.Any])
+    def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRunningTasksCount: Self = this.set("runningTasksCount", js.undefined)
+    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusReason(value: String): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setVersion(value: Long): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setVersionInfo(value: VersionInfo): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
     
     @scala.inline
-    def setVersion(value: Long): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionInfo(value: VersionInfo): Self = this.set("versionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionInfo: Self = this.set("versionInfo", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

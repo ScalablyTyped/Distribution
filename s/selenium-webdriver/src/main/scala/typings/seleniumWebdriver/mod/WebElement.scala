@@ -1,5 +1,6 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -282,16 +283,18 @@ class WebElement protected () extends Serializable[IWebElementId] {
   def takeScreenshot(opt_scroll: Boolean): js.Promise[String] = js.native
 }
 /* static members */
-@JSImport("selenium-webdriver", "WebElement")
-@js.native
-object WebElement extends js.Object {
+object WebElement {
   
   /**
     * @param {string} id The raw ID.
     * @param {boolean=} opt_noLegacy Whether to exclude the legacy element key.
     * @return {!Object} The element ID for use with WebDriver's wire protocol.
     */
+  @JSImport("selenium-webdriver", "WebElement.buildId")
+  @js.native
   def buildId(id: String): IWebElementId = js.native
+  @JSImport("selenium-webdriver", "WebElement.buildId")
+  @js.native
   def buildId(id: String, opt_noLegacy: Boolean): IWebElementId = js.native
   
   /**
@@ -302,6 +305,8 @@ object WebElement extends js.Object {
     * @return {!Promise<boolean>} A promise that will be
     *     resolved to whether the two WebElements are equal.
     */
+  @JSImport("selenium-webdriver", "WebElement.equals")
+  @js.native
   def equals(a: WebElement, b: WebElement): js.Promise[Boolean] = js.native
   
   /**
@@ -311,11 +316,15 @@ object WebElement extends js.Object {
     * @return {string} the extracted ID.
     * @throws {TypeError} if the object is not a valid encoded ID.
     */
+  @JSImport("selenium-webdriver", "WebElement.extractId")
+  @js.native
   def extractId(obj: IWebElementId): String = js.native
   
   /**
     * @param {?} obj the object to test.
     * @return {boolean} whether the object is a valid encoded WebElement ID.
     */
+  @JSImport("selenium-webdriver", "WebElement.isId")
+  @js.native
   def isId(obj: IWebElementId): Boolean = js.native
 }

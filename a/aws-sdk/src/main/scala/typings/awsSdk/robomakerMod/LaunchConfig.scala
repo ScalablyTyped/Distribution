@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchConfig extends js.Object {
+trait LaunchConfig extends StObject {
   
   /**
     * The environment variables for the application launch.
@@ -41,42 +42,30 @@ object LaunchConfig {
   }
   
   @scala.inline
-  implicit class LaunchConfigOps[Self <: LaunchConfig] (val x: Self) extends AnyVal {
+  implicit class LaunchConfigMutableBuilder[Self <: LaunchConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentVariables(value: EnvironmentVariableMap): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchFile(value: Command): Self = StObject.set(x, "launchFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchFile(value: Command): Self = this.set("launchFile", value.asInstanceOf[js.Any])
+    def setPackageName(value: Command): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: Command): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    def setPortForwardingConfig(value: PortForwardingConfig): Self = StObject.set(x, "portForwardingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentVariables(value: EnvironmentVariableMap): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    def setPortForwardingConfigUndefined: Self = StObject.set(x, "portForwardingConfig", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    def setStreamUI(value: Boolean): Self = StObject.set(x, "streamUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortForwardingConfig(value: PortForwardingConfig): Self = this.set("portForwardingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortForwardingConfig: Self = this.set("portForwardingConfig", js.undefined)
-    
-    @scala.inline
-    def setStreamUI(value: Boolean): Self = this.set("streamUI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamUI: Self = this.set("streamUI", js.undefined)
+    def setStreamUIUndefined: Self = StObject.set(x, "streamUI", js.undefined)
   }
 }

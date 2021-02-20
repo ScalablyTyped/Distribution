@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFNamedACLType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultNamedACLOperations extends js.Object {
+trait IVaultNamedACLOperations extends StObject {
   
   def AddNamedACLAdmin(NamedACLAdmin: INamedACLAdmin): INamedACLAdmin = js.native
   
@@ -72,63 +73,51 @@ object IVaultNamedACLOperations {
   }
   
   @scala.inline
-  implicit class IVaultNamedACLOperationsOps[Self <: IVaultNamedACLOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultNamedACLOperationsMutableBuilder[Self <: IVaultNamedACLOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddNamedACLAdmin(value: INamedACLAdmin => INamedACLAdmin): Self = StObject.set(x, "AddNamedACLAdmin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMatchingNamedACLForAccessControlList(value: (IAccessControlList, Boolean, Boolean, Boolean) => INamedACL): Self = StObject.set(x, "GetMatchingNamedACLForAccessControlList", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMatchingNamedACLForAccessControlListComponent(value: (IAccessControlListComponent, Boolean, Boolean) => INamedACL): Self = StObject.set(x, "GetMatchingNamedACLForAccessControlListComponent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddNamedACLAdmin(value: INamedACLAdmin => INamedACLAdmin): Self = this.set("AddNamedACLAdmin", js.Any.fromFunction1(value))
+    def setGetNamedACL(value: Double => INamedACL): Self = StObject.set(x, "GetNamedACL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMatchingNamedACLForAccessControlList(value: (IAccessControlList, Boolean, Boolean, Boolean) => INamedACL): Self = this.set("GetMatchingNamedACLForAccessControlList", js.Any.fromFunction4(value))
+    def setGetNamedACLAdmin(value: Double => INamedACLAdmin): Self = StObject.set(x, "GetNamedACLAdmin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMatchingNamedACLForAccessControlListComponent(value: (IAccessControlListComponent, Boolean, Boolean) => INamedACL): Self = this.set("GetMatchingNamedACLForAccessControlListComponent", js.Any.fromFunction3(value))
+    def setGetNamedACLIDByAlias(value: String => Double): Self = StObject.set(x, "GetNamedACLIDByAlias", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNamedACL(value: Double => INamedACL): Self = this.set("GetNamedACL", js.Any.fromFunction1(value))
+    def setGetNamedACLIDByGUID(value: String => Double): Self = StObject.set(x, "GetNamedACLIDByGUID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNamedACLAdmin(value: Double => INamedACLAdmin): Self = this.set("GetNamedACLAdmin", js.Any.fromFunction1(value))
+    def setGetNamedACLWithRefresh(value: (Double, Boolean) => INamedACL): Self = StObject.set(x, "GetNamedACLWithRefresh", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetNamedACLIDByAlias(value: String => Double): Self = this.set("GetNamedACLIDByAlias", js.Any.fromFunction1(value))
+    def setGetNamedACLs(value: () => INamedACLs): Self = StObject.set(x, "GetNamedACLs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNamedACLIDByGUID(value: String => Double): Self = this.set("GetNamedACLIDByGUID", js.Any.fromFunction1(value))
+    def setGetNamedACLsByTypeAdmin(value: MFNamedACLType => INamedACLsAdmin): Self = StObject.set(x, "GetNamedACLsByTypeAdmin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNamedACLWithRefresh(value: (Double, Boolean) => INamedACL): Self = this.set("GetNamedACLWithRefresh", js.Any.fromFunction2(value))
+    def setGetNamedACLsWithRefresh(value: Boolean => INamedACLs): Self = StObject.set(x, "GetNamedACLsWithRefresh", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNamedACLs(value: () => INamedACLs): Self = this.set("GetNamedACLs", js.Any.fromFunction0(value))
+    def setIsNamedACLUsedInAutomaticPermissionsAdmin(value: Double => Boolean): Self = StObject.set(x, "IsNamedACLUsedInAutomaticPermissionsAdmin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNamedACLsByTypeAdmin(value: MFNamedACLType => INamedACLsAdmin): Self = this.set("GetNamedACLsByTypeAdmin", js.Any.fromFunction1(value))
+    def setRemoveNamedACLWithPropagationAdmin(value: (Double, Boolean) => Unit): Self = StObject.set(x, "RemoveNamedACLWithPropagationAdmin", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetNamedACLsWithRefresh(value: Boolean => INamedACLs): Self = this.set("GetNamedACLsWithRefresh", js.Any.fromFunction1(value))
+    def setUpdateNamedACLAdmin(value: INamedACLAdmin => Unit): Self = StObject.set(x, "UpdateNamedACLAdmin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsNamedACLUsedInAutomaticPermissionsAdmin(value: Double => Boolean): Self = this.set("IsNamedACLUsedInAutomaticPermissionsAdmin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveNamedACLWithPropagationAdmin(value: (Double, Boolean) => Unit): Self = this.set("RemoveNamedACLWithPropagationAdmin", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdateNamedACLAdmin(value: INamedACLAdmin => Unit): Self = this.set("UpdateNamedACLAdmin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateNamedACLWithPropagationAdmin(value: (INamedACLAdmin, Boolean, Boolean) => Unit): Self = this.set("UpdateNamedACLWithPropagationAdmin", js.Any.fromFunction3(value))
+    def setUpdateNamedACLWithPropagationAdmin(value: (INamedACLAdmin, Boolean, Boolean) => Unit): Self = StObject.set(x, "UpdateNamedACLWithPropagationAdmin", js.Any.fromFunction3(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApprovalRuleEventMetadata extends js.Object {
+trait ApprovalRuleEventMetadata extends StObject {
   
   /**
     * The content of the approval rule.
@@ -31,36 +32,24 @@ object ApprovalRuleEventMetadata {
   }
   
   @scala.inline
-  implicit class ApprovalRuleEventMetadataOps[Self <: ApprovalRuleEventMetadata] (val x: Self) extends AnyVal {
+  implicit class ApprovalRuleEventMetadataMutableBuilder[Self <: ApprovalRuleEventMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalRuleContent(value: ApprovalRuleContent): Self = StObject.set(x, "approvalRuleContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalRuleContentUndefined: Self = StObject.set(x, "approvalRuleContent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApprovalRuleId(value: ApprovalRuleId): Self = StObject.set(x, "approvalRuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalRuleContent(value: ApprovalRuleContent): Self = this.set("approvalRuleContent", value.asInstanceOf[js.Any])
+    def setApprovalRuleIdUndefined: Self = StObject.set(x, "approvalRuleId", js.undefined)
     
     @scala.inline
-    def deleteApprovalRuleContent: Self = this.set("approvalRuleContent", js.undefined)
+    def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalRuleId(value: ApprovalRuleId): Self = this.set("approvalRuleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApprovalRuleId: Self = this.set("approvalRuleId", js.undefined)
-    
-    @scala.inline
-    def setApprovalRuleName(value: ApprovalRuleName): Self = this.set("approvalRuleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApprovalRuleName: Self = this.set("approvalRuleName", js.undefined)
+    def setApprovalRuleNameUndefined: Self = StObject.set(x, "approvalRuleName", js.undefined)
   }
 }

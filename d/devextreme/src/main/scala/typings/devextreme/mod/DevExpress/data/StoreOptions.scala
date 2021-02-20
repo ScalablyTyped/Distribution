@@ -1,11 +1,12 @@
 package typings.devextreme.mod.DevExpress.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoreOptions[T] extends js.Object {
+trait StoreOptions[T] extends StObject {
   
   /**
     * [descr:Store.Options.errorHandler]
@@ -81,99 +82,87 @@ object StoreOptions {
   }
   
   @scala.inline
-  implicit class StoreOptionsOps[Self <: StoreOptions[_], T] (val x: Self with StoreOptions[T]) extends AnyVal {
+  implicit class StoreOptionsMutableBuilder[Self <: StoreOptions[_], T] (val x: Self with StoreOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorHandler(value: js.Function): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String | js.Array[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorHandler(value: js.Function): Self = this.set("errorHandler", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteErrorHandler: Self = this.set("errorHandler", js.undefined)
+    def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value :_*))
     
     @scala.inline
-    def setKeyVarargs(value: String*): Self = this.set("key", js.Array(value :_*))
+    def setOnInserted(value: (/* values */ js.Any, /* key */ js.Any | String | Double) => _): Self = StObject.set(x, "onInserted", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setKey(value: String | js.Array[String]): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setOnInsertedUndefined: Self = StObject.set(x, "onInserted", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setOnInserting(value: /* values */ js.Any => _): Self = StObject.set(x, "onInserting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnInserted(value: (/* values */ js.Any, /* key */ js.Any | String | Double) => _): Self = this.set("onInserted", js.Any.fromFunction2(value))
+    def setOnInsertingUndefined: Self = StObject.set(x, "onInserting", js.undefined)
     
     @scala.inline
-    def deleteOnInserted: Self = this.set("onInserted", js.undefined)
+    def setOnLoaded(value: /* result */ js.Array[_] => _): Self = StObject.set(x, "onLoaded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnInserting(value: /* values */ js.Any => _): Self = this.set("onInserting", js.Any.fromFunction1(value))
+    def setOnLoadedUndefined: Self = StObject.set(x, "onLoaded", js.undefined)
     
     @scala.inline
-    def deleteOnInserting: Self = this.set("onInserting", js.undefined)
+    def setOnLoading(value: /* loadOptions */ LoadOptions => _): Self = StObject.set(x, "onLoading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnLoaded(value: /* result */ js.Array[_] => _): Self = this.set("onLoaded", js.Any.fromFunction1(value))
+    def setOnLoadingUndefined: Self = StObject.set(x, "onLoading", js.undefined)
     
     @scala.inline
-    def deleteOnLoaded: Self = this.set("onLoaded", js.undefined)
+    def setOnModified(value: js.Function): Self = StObject.set(x, "onModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoading(value: /* loadOptions */ LoadOptions => _): Self = this.set("onLoading", js.Any.fromFunction1(value))
+    def setOnModifiedUndefined: Self = StObject.set(x, "onModified", js.undefined)
     
     @scala.inline
-    def deleteOnLoading: Self = this.set("onLoading", js.undefined)
+    def setOnModifying(value: js.Function): Self = StObject.set(x, "onModifying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnModified(value: js.Function): Self = this.set("onModified", value.asInstanceOf[js.Any])
+    def setOnModifyingUndefined: Self = StObject.set(x, "onModifying", js.undefined)
     
     @scala.inline
-    def deleteOnModified: Self = this.set("onModified", js.undefined)
+    def setOnPush(value: /* changes */ js.Array[_] => _): Self = StObject.set(x, "onPush", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnModifying(value: js.Function): Self = this.set("onModifying", value.asInstanceOf[js.Any])
+    def setOnPushUndefined: Self = StObject.set(x, "onPush", js.undefined)
     
     @scala.inline
-    def deleteOnModifying: Self = this.set("onModifying", js.undefined)
+    def setOnRemoved(value: /* key */ js.Any | String | Double => _): Self = StObject.set(x, "onRemoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPush(value: /* changes */ js.Array[_] => _): Self = this.set("onPush", js.Any.fromFunction1(value))
+    def setOnRemovedUndefined: Self = StObject.set(x, "onRemoved", js.undefined)
     
     @scala.inline
-    def deleteOnPush: Self = this.set("onPush", js.undefined)
+    def setOnRemoving(value: /* key */ js.Any | String | Double => _): Self = StObject.set(x, "onRemoving", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRemoved(value: /* key */ js.Any | String | Double => _): Self = this.set("onRemoved", js.Any.fromFunction1(value))
+    def setOnRemovingUndefined: Self = StObject.set(x, "onRemoving", js.undefined)
     
     @scala.inline
-    def deleteOnRemoved: Self = this.set("onRemoved", js.undefined)
+    def setOnUpdated(value: (/* key */ js.Any | String | Double, /* values */ js.Any) => _): Self = StObject.set(x, "onUpdated", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnRemoving(value: /* key */ js.Any | String | Double => _): Self = this.set("onRemoving", js.Any.fromFunction1(value))
+    def setOnUpdatedUndefined: Self = StObject.set(x, "onUpdated", js.undefined)
     
     @scala.inline
-    def deleteOnRemoving: Self = this.set("onRemoving", js.undefined)
+    def setOnUpdating(value: (/* key */ js.Any | String | Double, /* values */ js.Any) => _): Self = StObject.set(x, "onUpdating", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnUpdated(value: (/* key */ js.Any | String | Double, /* values */ js.Any) => _): Self = this.set("onUpdated", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnUpdated: Self = this.set("onUpdated", js.undefined)
-    
-    @scala.inline
-    def setOnUpdating(value: (/* key */ js.Any | String | Double, /* values */ js.Any) => _): Self = this.set("onUpdating", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnUpdating: Self = this.set("onUpdating", js.undefined)
+    def setOnUpdatingUndefined: Self = StObject.set(x, "onUpdating", js.undefined)
   }
 }

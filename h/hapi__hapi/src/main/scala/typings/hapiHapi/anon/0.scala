@@ -1,12 +1,13 @@
 package typings.hapiHapi.anon
 
 import typings.hapiHapi.hapiHapiBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `0` extends js.Object {
+trait `0` extends StObject {
   
   @JSName("apply")
   var apply: js.UndefOr[Boolean] = js.native
@@ -22,27 +23,15 @@ object `0` {
   }
   
   @scala.inline
-  implicit class `0Ops`[Self <: `0`] (val x: Self) extends AnyVal {
+  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApply(value: Boolean): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtend(value: `true`): Self = this.set("extend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApply(value: Boolean): Self = this.set("apply", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApply: Self = this.set("apply", js.undefined)
+    def setExtend(value: `true`): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
   }
 }

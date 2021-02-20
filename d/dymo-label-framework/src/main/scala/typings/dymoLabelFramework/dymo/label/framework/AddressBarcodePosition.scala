@@ -1,15 +1,16 @@
 package typings.dymoLabelFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AddressBarcodePosition extends js.Object
+sealed trait AddressBarcodePosition extends StObject
 /** Enumeration that specifies where to draw the Intellegent Mail barcode for an Address object. */
 @JSGlobal("dymo.label.framework.AddressBarcodePosition")
 @js.native
-object AddressBarcodePosition extends js.Object {
+object AddressBarcodePosition extends StObject {
   
   /** Indicates to print the barcode above the address. */
   @js.native

@@ -1,6 +1,7 @@
 package typings.mithril.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,27 +26,15 @@ object VnodeDOM {
   }
   
   @scala.inline
-  implicit class VnodeDOMOps[Self <: VnodeDOM[_, _], Attrs, State /* <: Lifecycle[Attrs, State] */] (val x: Self with (VnodeDOM[Attrs, State])) extends AnyVal {
+  implicit class VnodeDOMMutableBuilder[Self <: VnodeDOM[_, _], Attrs, State /* <: Lifecycle[Attrs, State] */] (val x: Self with (VnodeDOM[Attrs, State])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDom(value: Element): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomSize(value: Double): Self = StObject.set(x, "domSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDom(value: Element): Self = this.set("dom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDomSize(value: Double): Self = this.set("domSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomSize: Self = this.set("domSize", js.undefined)
+    def setDomSizeUndefined: Self = StObject.set(x, "domSize", js.undefined)
   }
 }
